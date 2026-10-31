@@ -96,6 +96,10 @@ The proof of the lemma below subdivides squares again and again and needs the fa
 ![[m342-51-2.svg]]
 *(a) If the subdivision never stopped, it would produce nested squares $\sigma_0 \supset \sigma_1 \supset \sigma_2 \supset \cdots$ shrinking to a point $z_0$ of $R$. Inside the $\delta$ neighborhood where the difference quotient of $f$ at $z_0$ is within $\varepsilon$ of $f'(z_0)$ there is a whole square of the sequence (here $\sigma_4$), with $z_0$ as its point $z_j$; so that square is good, a contradiction. (b) Positively oriented boundaries of two adjacent subregions traverse their common side (red) in opposite directions, so the two integrals along it cancel.*
 
+![[m342-51-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The subdivision process in the proof of Lemma §51.2, carried out for $f(z) = e^z$ on the closed unit disk with $\varepsilon = 0.1$ and a starting grid of spacing $\frac12$ (all chosen for the picture; whether a region is good was tested numerically on sample points). At each step the squares and partial squares that are not good (red) have no point $z_j$ satisfying inequality (1), so their whole squares are quartered, and the quarters that meet $R$ are kept. Good regions are never subdivided. The number of regions goes $16 \to 50 \to 130 \to 172$, and after three steps every region is good, so the process stops. The quartering is concentrated on the right, where $e^z$ bends most ($f''$ is largest). Then comes the contradiction argument (schematic, the second figure above): if the process never stopped there would be nested squares $\sigma_0 \supset \sigma_1 \supset \cdots$, each a quarter of the one before and never good, with a common point $z_0$ (Lemma §51.1). The view zooms in, and the disk $|z - z_0| < \delta$ (green, $\delta = 0.26$ here) is where the difference quotient of $f$ at $z_0$ is within $\varepsilon$ of $f'(z_0)$. Once the diagonal of $\sigma_K$ is below $\delta$ (here at $K = 4$, diagonal $0.159$), the whole square lies in that disk, so $z_0$ serves as its $z_j$ and $\sigma_4$ is good, a contradiction.
+
 ## Proof of the Cauchy–Goursat Theorem
 
 > [!remark] Remark: Why It Works

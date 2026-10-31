@@ -138,6 +138,10 @@ The first vector occurs in many other contexts too, so it gets a name.
 
 *Uses:* [[§111 Directional Derivatives and the Gradient Vector#^thm-111-1|§111.1]], [[§111 Directional Derivatives and the Gradient Vector#^def-111-2|Def. §111.2]]
 
+![[m452-7-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Equations (6) and (9) as the direction turns, reused from MATH 452 (Multivariable Analysis). At the point $(1.2, 1.25)$ of a wavy surface chosen for the picture in 452, the unit vector $\mathbf{u} = \langle\cos\theta, \sin\theta\rangle$ (red arrow in the base; the GIF calls the angle $\alpha$) turns once around, and the pale arrow is $\nabla f(1.2, 1.25)$. Left: the curve in which the vertical plane through the point in the direction of $\mathbf{u}$ cuts the surface, with its tangent (red), whose slope is $D_{\mathbf{u}}f$. Right: $D_{\mathbf{u}}f = f_x\cos\theta + f_y\sin\theta$ traced against $\theta$ from $0$ to $2\pi$. The trace is a sinusoid of amplitude $|\nabla f| = 0.434$, because $D_{\mathbf{u}}f = \nabla f \cdot \mathbf{u} = |\nabla f|\cos(\text{angle between }\nabla f\text{ and }\mathbf{u})$. It is largest, $0.434$, when $\mathbf{u}$ points along $\nabla f$ (dashed line), smallest, $-0.434$, in the opposite direction, and $0$ in the two directions perpendicular to $\nabla f$, along the level curve through the point: Theorem §111.4 and Theorem §112.3 in one picture.
+
 ## Functions of Three Variables
 
 > [!definition] Definition §111.3: Directional Derivative in Three Variables
@@ -276,6 +280,10 @@ The first vector occurs in many other contexts too, so it gets a name.
 
 ![[m233-95-1.svg]]
 *[[§111 Directional Derivatives and the Gradient Vector#^ex-111-2|Example §111.2]](a): level curves $xe^y = c$ of $f(x, y) = xe^y$ near $P(2, 0)$. The gradient $\nabla f(2, 0) = \langle 1, 2 \rangle$ (red) is perpendicular to the level curve $xe^y = 2$ through $P$ (bold) and points toward higher values; $f$ increases at the rate $\sqrt5$ in its direction. In the direction of $Q$ (blue) the rate is only $\nabla f \cdot \mathbf{u} = 1$.*
+
+![[m452-7-a2.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Following the gradient, reused from MATH 452 (Multivariable Analysis). On the contour map of $F(x, y) = \frac{x^2}{4} + y^2$ (blue ellipses, the level curves $F = c$; not the function $xe^y$ of the figure above), points start on a small ring around the minimum at the origin and move by steepest ascent: at every moment their velocity is $\nabla F = \langle x/2, 2y\rangle$, the direction of fastest increase of Theorem §111.4. Solving $x' = x/2$, $y' = 2y$ gives the paths $x = x_0e^{t/2}$, $y = y_0e^{2t}$, so $y$ is proportional to $x^4$ along each path (red). The paths cross every level curve at a right angle, since $\nabla F$ is perpendicular to the level curve through each point (Theorem §112.3), and they bend toward the $y$-direction, where the level curves are packed closer and $F$ grows fastest. In Example §111.3 the hiker wants to descend most rapidly, which means moving along $-\nabla f$; the mountain $z = 100 - 4x^2 - 5y^2$ has a peak where this $F$ has a pit, and its paths of steepest descent, along $-\nabla f = \langle 8x, 10y\rangle$, run outward from the peak just as these paths run outward from the pit.
 
 > [!example] Example §111.3: Climbing a Mountain
 > A hiker is walking on a mountain modeled by $z = f(x, y) = 100 - 4x^2 - 5y^2$, where the positive $x$-axis points East and the positive $y$-axis points North.

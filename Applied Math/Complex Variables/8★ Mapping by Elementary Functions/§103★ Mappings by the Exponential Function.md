@@ -70,6 +70,10 @@ The exponential function turns Cartesian coordinates in the $z$ plane into polar
 ![[m342-103-1.svg]]
 *The rectangle $-0.4 \le x \le 0.7$, $\frac\pi6 \le y \le \frac{2\pi}{3}$ under $w = e^z$. Vertical segments (blue) go onto arcs of the circles $\rho = e^x$, horizontal segments (red) onto pieces of the rays $\phi = y$; right angles between grid lines are preserved. The left side $AD$ goes onto the inner arc $A'D'$, of radius $e^{-0.4} \approx 0.67$.*
 
+![[m342-103-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Example §103.4 as one family. A line through $0$ at the angle $\beta$ (red) turns from horizontal to vertical; for $0 < \beta < \pi/2$ it is the line $ay = x$ with $a = \cot\beta$, and its image under $w = e^z$ is the logarithmic spiral $\rho = e^{a\phi}$ (readout). Only the part with $|x| \le 1.4$, $|y| \le 3.6$ is drawn (chosen for the picture), so the image stays in $e^{-1.4} \le \rho \le e^{1.4}$. At $\beta = 0$ the line is the real axis and its image is the ray $\phi = 0$ (Example §103.1). As $\beta$ grows, $a$ falls and the spiral winds more tightly: the image turns through the angle $\phi = y$ while its distance changes only by the factor $e^{a\phi}$. At $\beta = \pi/2$ the line is the imaginary axis, $a = 0$, and the spiral has become the unit circle $\rho = 1$, run around again and again, once for every $2\pi$ of height. The black dot runs along the line and its image runs along the spiral; earlier lines at multiples of $15^\circ$ stay behind with their spirals (blue).
+
 ## A Strip onto a Half Plane
 
 > [!example] Example §103.3: The Strip 0 ≤ y ≤ π

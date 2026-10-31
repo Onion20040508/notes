@@ -339,6 +339,10 @@ Many countries that formerly experienced exponential growth now find their rates
 
 ^def-69-3
 
+![[m233-60-a1.gif|560]]
+
+*(Not from the book; animation added, vault only.)* The logistic model with harvesting of Definition §69.3, $dP/dt = kP(1 - P/M) - c$, with $k = 0.08$ and $M = 1000$ taken from Example §69.1 (the note gives no numbers for this model; the values of $c$ and the initial populations $P(0) = 100, 250, \ldots, 1200$ are chosen for the picture). The harvesting rate $c$ rises from $0$ to $24$. Left: $dP/dt$ as a function of $P$, a downward parabola that sinks by $c$; its zeros are the equilibria $P = 500 \pm \sqrt{500^2 - 12500c}$, the upper one stable (green), the lower one unstable (red), and the arrows on the phase line show where $P$ grows or shrinks. Right: the solution curves (blue), stopping with a cross where a population reaches $0$. As $c$ grows the two equilibria move toward each other, and populations that start below the lower one die out; at $c = kM/4 = 20$ they merge at $P = 500$ (orange, pause), and for $c > 20$ there is no equilibrium at all and every population collapses, however large it starts. A small change in $c$ near $20$ changes the long-run behaviour completely.
+
 > [!definition] Definition §69.4: Logistic Model with a Minimum Population
 > The second modification of the logistic equation (4), with constants $k, M > 0$:
 > - **Minimum population.** For a species that tends to become extinct below a minimum population level $m$ (adults may not be able to find suitable mates),

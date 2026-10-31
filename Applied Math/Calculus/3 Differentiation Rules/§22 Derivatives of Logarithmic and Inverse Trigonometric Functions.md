@@ -54,6 +54,10 @@ The logarithms and the inverse trigonometric functions are inverse functions ([[
 ![[m233-19-1.svg]]
 *[[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-1|Theorem §22.1]] for $f(x) = e^x$ and $f^{-1}(x) = \ln x$. Reflection in $y = x$ carries the point $(1, e)$ to $(e, 1)$ and the tangent line of slope $f'(1) = e$ to a tangent line of slope $1/e$: rise and run trade places. So $(\ln)'(e) = 1/f'(\ln e) = 1/e$, as [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^cor-22-3|Corollary §22.3]] confirms.*
 
+![[m451-29-a2.gif|420]]
+
+*(Not from the book; animation added, vault only.)* The reflection behind Theorem §22.1 in motion, reused from MATH 451 (Single Variable Analysis). The graph of $f(x) = \frac{x^2}{4}$, $x \ge 0$ (blue, one-to-one there), is flipped about the line $y = x$ (dashed), a rotation of the plane about the diagonal seen from the front, and lands on the graph of $f^{-1}(x) = 2\sqrt{x}$ (red); then it flips back. The slope triangle at $(1, \frac14)$, run $2$ and rise $1$ (slope $f'(1) = \frac12$), is carried along and comes out as run $1$ and rise $2$ at $(\frac14, 1)$. In the notation of the theorem, $a = \frac14$ and $f^{-1}(a) = 1$, so $(f^{-1})'(\frac14) = \frac{1}{f'(f^{-1}(\frac14))} = \frac{1}{f'(1)} = 2$. The function differs from the figure above ($e^x$ and $\ln x$), but the mechanism is the same: rise and run trade places, so the slopes are reciprocal.
+
 > [!remark]- Connections
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^thm-29-10|451 Thm. §29.10]] (the Inverse Function Theorem), with the same argument through the sequential definition of the limit. Its example $f(x) = x^3$ at $0$ shows why $f' \ne 0$ is needed.
 

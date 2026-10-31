@@ -241,6 +241,10 @@ For a power series indexed from $n = 0$, B&C takes $S_N(z)$ to be the sum of the
 
 ^ex-61-1
 
+![[m342-61-a1.gif|520]]
+
+*(Not from the book; animation added, vault only.)* The geometric series of Example §61.1 seen through its partial sums $S_N(z) = \sum_{n=0}^{N-1} z^n = (1 - z^N)/(1 - z)$. The point $z = |z|e^{1.2i}$ moves out along a ray (the angle $1.2$ is chosen for the picture), from $|z| = 0.55$ across the unit circle to $|z| = 1.07$. On the right the points $S_1 = 1, S_2, \ldots, S_{50}$ are joined in order, starting from $0$, and the cross marks $1/(1 - z)$. Since $S_N - \frac{1}{1 - z} = -\frac{z^N}{1 - z}$, the $N$-th point lies on the circle about $1/(1 - z)$ of radius $|z|^N/|1 - z|$, and the readout gives this distance for $N = 50$. Inside the unit circle (blue) the radius shrinks geometrically and the path spirals into $1/(1 - z)$. On $|z| = 1$ (orange, held) every $S_N$ lies on the dashed circle of radius $1/|1 - z|$ ($0.886$ here) and the path runs around it forever without settling. Outside (red) the path spirals away. This is the picture of Corollary §69.2 for this series: convergence inside the circle of convergence, divergence outside.
+
 > [!remark]- Connections
 > - The real geometric series and its uses in 451: [[Geometric series]]; the convergence statement is [[§14 Series#^ex-14-4|451 Ex. §14.4]], and [[§82 Series#^thm-82-1|Calc Thm. §82.1]] is the calculus version.
 

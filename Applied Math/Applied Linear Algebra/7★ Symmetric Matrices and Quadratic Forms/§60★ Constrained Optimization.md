@@ -51,6 +51,10 @@ The expanded version is the one commonly used in applications. When the form has
 
 ^ex-60-1
 
+![[m235-50-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The geometric picture at the end of Example §60.1 (Lay's Example 2): the surface $z = 3x_1^2 + 7x_2^2$ (blue, drawn over the unit disk) meets the cylinder $x_1^2 + x_2^2 = 1$ (grey) in a closed curve. A point $\mathbf{x} = (\cos\theta, \sin\theta)$ runs once round the unit circle on the floor, and the red curve traces the height $Q(\mathbf{x}) = 3\cos^2\theta + 7\sin^2\theta$ above it, in 3D on the left and against $\theta$ on the right. The heights stay between $3$ and $7$ and take every value in between. The green dots are the four extreme points: height $7$ over $(0, \pm 1)$, the unit eigenvectors of $\operatorname{diag}(3, 7)$ for the eigenvalue $7$, and height $3$ over $(\pm 1, 0)$, the unit eigenvectors for $3$. So the constrained maximum and minimum of $Q$ are the largest and smallest eigenvalues, as Theorem §60.1 states in general.
+
 > [!definition] Definition §60.1: Constrained Maximum and Minimum of a Quadratic Form
 > For a symmetric matrix $A$, let
 >
@@ -307,3 +311,7 @@ The expanded version is the one commonly used in applications. When the form has
 
 ![[m235-50-1.svg]]
 *[[§60★ Constrained Optimization#^ex-60-5|Example §60.5]]. The feasible set (blue) is a quarter of the region inside the ellipse $4x^2 + 9y^2 = 36$. Utility increases across the indifference curves $xy = 2, 3, 4$; the best schedule is where the highest attainable one, $xy = 3$ (red), touches the constraint curve, at $(3/\sqrt2, \sqrt2) \approx (2.1, 1.4)$. That the two curves are tangent there is the Lagrange condition $\nabla(xy) \parallel \nabla(4x^2 + 9y^2)$.*
+
+![[m452-14-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Reused from Multivariable Analysis (§17, Lagrange multipliers). Example §60.5 after its change of variable $x = 3x_1$, $y = 2x_2$, which turns the budget ellipse into the unit circle (green) and the utility into $6x_1x_2$. The animation plots $f = x_1x_2$ on the circle, which is $\frac16$ of that utility. A point runs around the circle with the indifference curve $x_1x_2 = c$ through it (blue); the right panel shows $f = \frac12\sin 2\theta$ along the circle. Where the level curve crosses the circle, moving along the circle changes $f$. At $\theta = 45^\circ$ the level curve only touches the circle: the gradients are parallel (red) and $f = \frac12$ is the maximum. This is the unit eigenvector $(1/\sqrt2, 1/\sqrt2)$ for the largest eigenvalue $3$ of $A = \begin{bmatrix} 0 & 3 \\ 3 & 0 \end{bmatrix}$ (Theorem §60.1), utility $6 \cdot \frac12 = 3$, and in the original variables the schedule $(3/\sqrt2, \sqrt2)$.

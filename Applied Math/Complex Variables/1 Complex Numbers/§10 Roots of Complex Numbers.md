@@ -240,3 +240,7 @@ An **$n$th root** of a nonzero complex number $z_0$ ($n = 2, 3, \ldots$) is a nu
 
 ![[m342-10-1.svg]]
 *The roots of Examples §10.1–§10.3: the cube roots of $-27$ on $|z| = 3$ (left), the eighth roots of $16$ on $|z| = \sqrt2$ (middle), and the fifth roots of $1 - i$ on $|z| = 2^{1/10}$ (right, with $1 - i$ itself marked in gray). In each case the roots are equally spaced, $2\pi/n$ apart, starting from the principal root $c_0$ (red) at angle $\operatorname{Arg} z_0/n$.*
+
+![[m342-10-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The cube roots $c_k = 3e^{i(\phi + 2k\pi)/3}$ ($k = 0, 1, 2$) of $w_0 = 27e^{i\phi}$, by Theorem §10.2, while $w_0$ goes once around the circle $|w_0| = 27$, starting at $w_0 = 27$. Each root turns by $\phi/3$, a third of the angle of $w_0$. Halfway, at $w_0 = -27$, the roots are $3e^{i\pi/3}$, $-3$, $3e^{-i\pi/3}$ of Example §10.1. When $w_0$ is back at its start the set of roots is the same, but each root has moved one place on: $c_0 \to c_1 \to c_2 \to c_0$ (the rings mark where each started). Then the modulus $\rho$ shrinks to $0$, and the roots, on the circle of radius $\sqrt[3]\rho$, merge at $0$. So no single root can be chosen continuously all the way round $w_0 = 0$; this is the seed of the branch points of §33 and §108.

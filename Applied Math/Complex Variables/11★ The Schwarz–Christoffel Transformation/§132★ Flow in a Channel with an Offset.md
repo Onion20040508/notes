@@ -132,6 +132,10 @@ A channel whose breadth changes abruptly from $\pi$ to $h\pi$ is a degenerate qu
 ![[m342-132-1.svg]]
 *Streamlines of the flow in the channel with an offset, $h = \frac12$: the images under (8) of the rays $\arg z = k\pi/8$, $k = 1, \ldots, 7$, along which $\psi = V_0\theta$ is constant. They crowd together around the corner $w_3$, where the speed is infinite, and spread out in the corner at $w_2$, a stagnation point. Far to the right they are equally spaced across the narrow part, where the speed is $V_0/h = 2V_0$.*
 
+![[m342-132-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Fluid particles in the channel with an offset of Examples §132.1–§132.3, $h = \frac12$, $V_0 = 1$. The streamlines (grey) are the images under (8) of the rays $\arg z = k\pi/8$, $k = 1, \ldots, 7$, of the figure above, plus two rays $\arg z = \pi/16$ and $\pi/40$ near the lower wall (chosen for the picture). Along each streamline the particles are spaced equal times apart: a particle at the point with potential $\phi = \operatorname{Re}F$ moves so that $d\phi/dt = |V|^2$, with the speed $|V|$ from (6). Far upstream they move with speed $V_0$, far downstream with $V_0/h = 2V_0$, so the spacing doubles and the particles on each line pass through the narrow part in the same time as through the wide part. Near the lower wall the particles slow down and bunch up as they come into the inner corner $w_2$, the stagnation point where $V = 0$, then run up the riser and are flung around the outer corner $w_3$, where the speed is infinite, and spread out along the top of the step.
+
 > [!example] Example §132.4: Flow over a Step in a Stream Bed
 > The region of B&C's Fig. 29 (Appendix 2) is the upper half of the $w$ plane above a step: the bed is the half line $v = h$, $u \le 0$ (from $A'$ to $B' = hi$), the segment from $hi$ down to $C' = 0$, and the positive $u$ axis ($C'D'$). (a) Obtain formally the map from the upper half of the $z$ plane, with $B'$, $C'$ the images of $z = -1$, $z = 1$. (b) For the flow of a deep stream with $V \to V_0$ (real) as $|w| \to \infty$, find the velocity and the speed along the bed.
 >

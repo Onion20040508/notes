@@ -256,6 +256,10 @@ The proof of [[§19 Derivatives of Trigonometric Functions#^thm-19-1|Theorem §1
 ![[m233-16-1.svg]]
 *The three lengths in the proof, on the unit circle: $\sin\theta = |BC|$ (blue), $\theta = \text{arc } AB$ (red) and $\tan\theta = |AD|$ (green). As $\theta \to 0$ they become indistinguishable, and dividing $\sin\theta \le \theta \le \tan\theta$ by $\sin\theta$ squeezes $\theta/\sin\theta$ between $1$ and $1/\cos\theta$.*
 
+![[m233-16-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The picture of the proof of [[§19 Derivatives of Trigonometric Functions#^thm-19-6|Theorem §19.6]], with the same colours as the figure: $\sin\theta = |BC|$ (blue), the arc $\theta$ (red) and $\tan\theta = |AD|$ (green). The angle shrinks from $\theta = 0.9$ to $\theta = 0.02$ and the view shrinks with it, so that $\theta$ always has the same length on screen. The three lengths merge into one segment, and the bars on the right show the three lengths divided by $\theta$: at $\theta = 0.9$ they are $0.870$, $1$, $1.400$, at $\theta = 0.02$ all three read $1.000$. That is $\sin\theta < \theta \le \tan\theta$ squeezing $\frac{\sin\theta}{\theta}$ to $1$.
+
 > [!theorem] Theorem §19.7: The Limit of (cos θ − 1) over θ
 > $$
 > \lim_{\theta \to 0} \frac{\cos\theta - 1}{\theta} = 0 .

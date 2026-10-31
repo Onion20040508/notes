@@ -302,6 +302,10 @@ Since $E_T$ and $E_M$ usually have opposite signs and $|E_M| \approx \frac12 |E_
 
 ^ex-57-3
 
+![[m233-50-a1.gif|560]]
+
+*(Not from the book; animation added, vault only.)* The Trapezoidal Rule (blue), the Midpoint Rule (green) and Simpson's Rule (red, parabolas over pairs of subintervals) for $\int_1^2 dx/x = \ln 2$ (Examples §57.1 and §57.3), for $n = 2, 4, 8, 16$. Each panel shows the approximation and its error $E = \ln 2 - (\text{approximation})$; the log plot below collects $|E_T|$, $|E_M|$, $|E_S|$. The values for $n = 4, 8, 16$ are those of the table in Example §57.3 ($M_4 = 0.69121989$, $S_4 = 0.69325397$, …). Notice three things: $E_T$ and $E_M$ have opposite signs with $E_T/E_M \approx -2$ (the Midpoint Rule is about twice as accurate); each doubling of $n$ divides $E_T$ and $E_M$ by about $4$ (Theorem §57.1, $n^2$ in the denominator); and it divides $E_S$ by $12.1$, $14.5$, $15.6$, approaching $16$ (Theorem §57.4, $n^4$). On the log plot the Simpson line is twice as steep.
+
 > [!example] Example §57.4: An Integral with No Elementary Antiderivative
 > Approximate $\displaystyle\int_0^1 e^{x^2}\,dx$ (a) by the Midpoint Rule and (b) by Simpson's Rule, with $n = 10$, and bound the error in each case.
 >

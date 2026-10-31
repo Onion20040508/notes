@@ -141,6 +141,10 @@ In terms of intervals: if $3 - \delta < x < 3 + \delta$ and $x \ne 3$, then $5 -
 ![[m233-9-1.svg]]
 *[[§11 The Precise Definition of a Limit#^ex-11-3|Example §11.3]] with $\varepsilon = 2$. The graph of $y = x^2$ (blue) must stay in the band $7 < y < 11$ (shaded). It does so exactly for $\sqrt7 < x < \sqrt{11}$ (dashed), and the window $|x - 3| < \delta = \min\{1, \frac27\} = \frac27$ (red box) lies inside that interval, so over the window the graph leaves the box only through its sides. The best possible $\delta$ here is $\sqrt{11} - 3 \approx 0.317$, slightly more than $\frac27 \approx 0.286$: the estimate $|x + 3| < 7$ costs little.*
 
+![[m451-17-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Definition §11.1 as the game of the Remark "Reading the Definition", reused from MATH 451 (Single Variable Analysis), where it illustrates continuity. The tolerance $\varepsilon$ is named first and shrinks from $0.3$ to $0.02$ and back; for each $\varepsilon$ the widest $\delta$ that works is computed and the box with sides $x = a \pm \delta$ and $y = L \pm \varepsilon$ is drawn (red), with the band between $y = L - \varepsilon$ and $y = L + \varepsilon$ shaded. Over $(a - \delta, a + \delta)$ the graph stays in the band, leaving the box only through its sides. A smaller $\varepsilon$ forces a smaller $\delta$ (from $\delta \approx 0.66$ at $\varepsilon = 0.3$ down to about $0.06$ at $\varepsilon = 0.04$), but some $\delta$ always exists, and every narrower window would work too. Differences from this note: the GIF writes $x_0$ for $a$ and $f(x_0)$ for $L$, because in 451 it shows continuity, where the limit is the value $f(a)$; the curve is a wavy function chosen for the picture there, not one of the examples here; and the point $x = a$ is not left out (for a continuous $f$ it does no harm).
+
 ## One-Sided Limits
 
 > [!definition] Definition §11.2: Precise Definition of One-Sided Limits

@@ -137,6 +137,10 @@ For example, if $s = f(t)$ is the position of a moving object and the object is 
 ![[m233-26-1.svg]]
 *The Mean Value Theorem and its proof. The tangent at $P(c, f(c))$ (red) is parallel to the secant $AB$ (blue). The auxiliary function $h(x)$ of (4) is the vertical distance from the secant up to the graph (green). It vanishes at $a$ and $b$, and where it is largest its derivative is $0$: that is the point $c$.*
 
+![[m451-29-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The search for the number $c$ of Theorem §29.2, reused from MATH 451 (Single Variable Analysis). A tangent (red) slides along the graph of $f(x) = 0.3 + 1.4x - 0.62x^2$ on $[a, b] = [0.1, 1.9]$ (blue), and the title compares its slope $f'(x) = 1.4 - 1.24x$ with the slope of the secant $AB$ (dashed grey here, blue in the figure above), $\frac{f(b) - f(a)}{b - a} = 0.16$. The tangent slope falls from about $1.15$ through $0.16$ to negative values, and in between it passes the secant slope; it does so at $x = 1$, where the tangent is parallel to $AB$ and the animation comes to rest: $c = 1$ satisfies equation (1). For a quadratic $c$ is always the midpoint of $[a, b]$; for other functions there may be several such $c$, and the theorem promises at least one.
+
 > [!remark]- Connections
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^thm-29-3|451 Thm. §29.3]] (same proof: subtract the chord), with Rolle's Theorem as [[§29 The Mean Value Theorem#^thm-29-2|451 Thm. §29.2]]. Hub: [[Mean Value Theorem]].
 > - The two-function version used to prove l'Hospital's Rule: Cauchy's Mean Value Theorem, [[§31 Indeterminate Forms and L'Hospital's Rule#^thm-31-1|Theorem §31.1]].

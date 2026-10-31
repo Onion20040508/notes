@@ -241,6 +241,10 @@ At a critical point the tangent of the image may degenerate ($w'(t_0) = 0$ in (1
 ![[m342-112-1.svg]]
 *The critical point of $w = 1 + z^2$ (Example §112.4). Rays from $z_0 = 0$ at the angles $0, \pi/8, \pi/4, 3\pi/8, \pi/2$ (left) go to rays from $w_0 = 1$ at twice those angles (right), and the quarter circles $|z| = 0.5, 0.8, 1$ go to half circles of radii $0.25, 0.64, 1$ about $1$. Away from $0$ the grid still meets at right angles; only at the critical point is the angle doubled.*
 
+![[m342-112-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Example §112.4 in motion. In the $z$ plane a ray $re^{i\alpha}$ from the critical point $z_0 = 0$ of $w = 1 + z^2$ (red) turns from $\alpha = 0$ to $\alpha = \pi$, away from the fixed ray $\alpha = 0$ (blue). Its image $1 + r^2e^{2i\alpha}$ is the ray from $w_0 = 1$ at the angle $2\alpha$, which turns twice as fast and makes a full turn while the original ray makes a half turn (readout). The dots at $r = 0.5, 0.8, 1$ go to the points at distances $0.25, 0.64, 1$ from $1$ on the image circles (grey), as in the figure above. So the angle $\alpha$ between the two rays at $0$ becomes $2\alpha$ at $w_0$: Theorem §112.3 with $m = 2$, $\phi_0 = 2\alpha + \arg f''(0) = 2\alpha$.
+
 ## Scale Factor
 
 > [!theorem] Proposition §112.4: The Scale Factor as a Limit of Length Ratios
@@ -274,3 +278,7 @@ Here $|z - z_0|$ is the length of the segment from $z_0$ to $z$, and $|f(z) - f(
 > The angle of rotation $\arg f'(z)$ and the scale factor $|f'(z)|$ vary in general from point to point, but $f'$ is continuous ([[§57 Some Consequences of the Extension#^thm-57-1|Theorem §57.1]]), so at points $z$ near $z_0$ they are approximately $\arg f'(z_0)$ and $|f'(z_0)|$. Hence the image of a small region near $z_0$ **conforms** to the original: it is approximately the original region turned through $\arg f'(z_0)$ and scaled by $|f'(z_0)|$, so it has approximately the same shape. A large region may be transformed into one that bears no resemblance to the original (the strip $0 < y < \pi$ becomes a half plane under $e^z$, [[§103★ Mappings by the Exponential Function#^ex-103-3|Example §103.3]]).
 
 ^rem-112-1
+
+![[m342-112-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The Remark "Small Regions Keep Their Shape" for $w = z^2$ at $z_0 = 1 + 0.5i$ (chosen for the picture), where $f'(z_0) = 2z_0 = 2 + i$, so the scale factor is $|f'(z_0)| = \sqrt5 \approx 2.236$ and the angle of rotation is $\arg f'(z_0) \approx 26.6^\circ$. A square of side $h$ centred at $z_0$ (blue) shrinks from $h = 1$ to $h = 0.02$; both panels are magnified by $1/h$, so the square keeps its size on the left. Its exact image (red) starts as a curved, lopsided quadrilateral, and as $h$ shrinks it settles onto the dashed square, the original square multiplied by $f'(z_0)$: turned through $\arg f'(z_0)$ and scaled by $|f'(z_0)|$. The readout gives the four image side lengths divided by $h$ (for $h = 1$: $2.000, 3.209, 2.859, 1.479$; for $h = 0.02$: $2.227, 2.254, 2.245, 2.218$), which all tend to $\sqrt5$, the limit of length ratios in Proposition §112.4.

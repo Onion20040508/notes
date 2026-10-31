@@ -145,6 +145,10 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ^ex-73-3
 
+![[m233-63-a2.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The four particles of Example §73.3, all on the cubic curve $x = y^3$ (grey), driven by one clock $t$ running from $-2$ to $4$; the traced part is blue and the particle red. (a) $x = t^3$, $y = t$ crosses the whole curve from left to right, and leaves the window when $t > 2$. (b) $x = -t^3$, $y = -t$ does the same from right to left. (c) $x = t^{3/2}$, $y = \sqrt{t}$ does not exist for $t < 0$, starts at the origin at $t = 0$ and runs out along the upper half. (d) $x = e^{-3t}$, $y = e^{-t}$ comes in from the far right (it enters the window at $t = -\ln 2$, where $y = 2$), passes $(1, 1)$ at $t = 0$ and creeps toward the origin: at $t = 4$ it is at $(0.000006, 0.018)$ and it never arrives. One set of points, four different parametric curves: Definition §73.3 seen directly. The window $|x| \le 9$, $|y| \le 2.3$ is chosen for the picture.
+
 > [!example] Example §73.4: Back and Forth on a Parabola
 > Sketch the curve $x = \sin t$, $y = \sin^2 t$.
 >
@@ -227,6 +231,10 @@ Many curves are not graphs $y = f(x)$: a circle, or the path of a particle that 
 
 ![[m233-63-1.svg]]
 *Deriving the cycloid. After the circle (blue) has rotated through $\theta$, it has rolled the distance $|OT| = r\theta$, equal to the arc $PT$ (green) that has been in contact with the line. The coordinates of $P = (x, y)$ are $x = |OT| - |PQ| = r\theta - r\sin\theta$ and $y = |TC| - |QC| = r - r\cos\theta$. The red curve is the arch traced by $P$ for $0 \le \theta \le 2\pi$.*
+
+![[m233-63-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The circle of radius $r = 1$ (blue, with three spokes so that its turning is visible) rolls along the $x$-axis through $\theta = 0$ to $4\pi$, and the point $P$ (red) traces two arches of the cycloid $x = r(\theta - \sin\theta)$, $y = r(1 - \cos\theta)$ of Proposition §73.2. The green segment on the axis is the rolled distance $|OT| = r\theta$, and the green arc $PT$ of the circle is the part that has been in contact with the line; the two always have the same length, which is the rolling-without-slipping step of the proof. After one full turn ($\theta = 2\pi$, $P$ back on the axis at $2\pi r$) the green marks restart from $2\pi r$, and the second arch repeats the first. Notice that $P$ touches the axis at the cusps $x = 0, 2\pi r, 4\pi r$, reaches height $2r$ at $\theta = \pi, 3\pi$, and that the centre $C(r\theta, r)$ moves at constant speed while $P$ nearly stops at the cusps.
 
 > [!remark] Remark: The Cartesian Equation
 > Eliminating $\theta$ is possible but awkward. For $0 \le \theta \le \pi$: $\cos\theta = 1 - y/r$ gives $\theta = \cos^{-1}(1 - y/r)$, and then $r\sin\theta = r\sqrt{1 - (1 - y/r)^2} = \sqrt{2ry - y^2}$, so

@@ -349,6 +349,10 @@ The simplest formula would have $f'(0) = 1$. Since $f'(0) < 1$ for $b = 2$ and $
 ![[m233-14-1.svg]]
 *The exponential functions $2^x$, $e^x$ and $3^x$ all pass through $(0, 1)$. Their tangent lines there (dashed) have slopes $f'(0) \approx 0.693$, exactly $1$, and $\approx 1.099$. The number $e$ is the base for which the slope is exactly $1$; by [[§17 Derivatives of Polynomials and Exponential Functions#^thm-17-5|Theorem §17.5]] the slope of $b^x$ at every other point is then $f'(0)$ times the height.*
 
+![[m233-14-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The base $b$ runs from $1.5$ to $4$ (and back). Left: the graph of $y = b^x$ and its tangent line at $(0, 1)$ (red, dashed), with the line of slope $1$ dotted for comparison. Right: the tangent slope $f'(0) = \lim_{h \to 0} (b^h - 1)/h$ as a function of $b$; by [[§20 The Chain Rule#^thm-20-5|Theorem §20.5]] it is $\ln b$ ($\approx 0.693$ for $b = 2$, $\approx 1.099$ for $b = 3$, as in [[§17 Derivatives of Polynomials and Exponential Functions#^rem-17-2|Remark: The Constants for Base 2 and Base 3]]). The slope is below $1$ for $b < e$ and above $1$ for $b > e$; the animation pauses at $b = e \approx 2.71828$, where the tangent coincides with the slope-$1$ line ([[§17 Derivatives of Polynomials and Exponential Functions#^def-17-2|Definition §17.2]]).
+
 > [!theorem] Theorem §17.6: Derivative of the Natural Exponential Function
 > $$
 > \frac{d}{dx}(e^x) = e^x .

@@ -57,6 +57,10 @@ With limits available, the tangent and velocity problems of [[§7 The Tangent an
 ![[m233-12-1.svg]]
 *[[§14 Derivatives and Rates of Change#^thm-14-1|Theorem §14.1]] in a picture. With $Q = (a + h, f(a + h))$ the secant $PQ$ (blue) has run $h$ and rise $f(a + h) - f(a)$ (green), so its slope is the difference quotient $\big(f(a + h) - f(a)\big)/h$; as $h \to 0$, $Q$ slides along the curve to $P$ and the secant turns into the tangent line at $P$ (red). (The concrete case $y = x^2$ at $(1, 1)$, with numerical secant slopes $3, 2.5, 2.2, \ldots \to 2$, is pictured after [[§7 The Tangent and Velocity Problems#^ex-7-1|Example §7.1]].)*
 
+![[m451-28-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The limit of Definition §14.1 in motion, reused from MATH 451 (Single Variable Analysis). The point $Q(x, f(x))$ moves toward $P(a, f(a))$ with $a = 1$, first from the right ($x$ from about $2.8$ down to $1$), then from the left ($x < 1$ increasing to $1$), and the secant $PQ$ (blue) pivots into the tangent line at $P$ (dashed red); the title shows the secant slope $m_{PQ} = \frac{f(x) - f(a)}{x - a}$. The curve is not the parabola $y = x^2$ of Example §14.1 and Example §7.1 but $f(x) = 0.25 + 0.18x^2$, for which $m_{PQ} = 0.18(x + 1)$ tends to $f'(1) = 0.36$ from above on the right and from below on the left. In the increment notation of Theorem §14.1 the two halves are $h > 0$ and $h < 0$ with $h = x - a \to 0$. The point $x = a$ itself is never used: there the quotient is undefined.
+
 > [!example] Example §14.1: Tangent Lines from the Definition
 > **(a)** Find an equation of the tangent line to the parabola $y = x^2$ at $P(1, 1)$.
 >

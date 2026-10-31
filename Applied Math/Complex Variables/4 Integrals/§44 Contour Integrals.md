@@ -165,6 +165,10 @@ The value does not depend on the parametrization used, for the changes of parame
 
 ^ex-44-1
 
+![[m342-44-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The integral $\int_C \bar z\,dz$ of Example §44.1 ($C$ the right half of $|z| = 2$ from $-2i$ to $2i$) as a sum. The half circle is cut at $z_k = 2e^{i\theta_k}$, $\theta_k = -\frac\pi2 + \frac{k\pi}N$, and the products $\bar z_{k-1}\Delta z_k$ (left endpoints) are added head to tail on the right. For $N = 1, 2, 4$ they are added one at a time, with $\bar z_{k-1}$ (red) and the chord $\Delta z_k$ (blue) shown on the left; then $N = 8, 16, 32, 64$. As $k$ grows the chord turns counterclockwise and $\bar z_{k-1}$ turns clockwise by the same angle, so all $N$ terms are equal, $4(e^{i\pi/N} - 1)$. This is the discrete form of the fact that the integrand of (2), $\bar z(\theta)z'(\theta) = 4i$, is constant. The sums are $-8$, $-8 + 8i$, $-4.686 + 11.314i$, …, $-0.308 + 12.561i$, approaching the value $4\pi i \approx 12.566i$ (star). The sum is a Riemann sum for (2) (not B&C's definition, which is (2) itself).
+
 > [!example] Example §44.2: zᵐ z̄ⁿ Around the Unit Circle
 > Let $m$ and $n$ be integers and $C$ the unit circle $|z| = 1$, counterclockwise. With $z = e^{i\theta}$ $(0 \le \theta \le 2\pi)$, $\bar z = e^{-i\theta}$ and $z' = ie^{i\theta}$, so
 >

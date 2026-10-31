@@ -121,6 +121,10 @@ When the domain is not a closed interval there are no endpoints to compare, and 
 
 ^ex-34-2
 
+![[m233-31-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The 1 L can of [[§34 Optimization Problems#^ex-34-2|Example §34.2]], drawn to scale (left), with radius $r$ running from the optimum down to $3$ cm, up to $10$ cm and back; the height follows from the volume, $h = 1000/(\pi r^2)$. Right: the surface area $A(r) = 2\pi r^2 + 2000/r$ with a moving point. A thin can ($r = 3$, $h = 35.37$) has $A = 723.2$ cm², a flat one ($r = 10$, $h = 3.18$) $A = 828.3$ cm². The minimum $A \approx 553.6$ cm² is at $r = \sqrt[3]{500/\pi} \approx 5.42$ cm, where $h = 10.84 = 2r$ (red): the height equals the diameter, so the can looks "square" from the side.
+
 > [!example] Example §34.3: The Closest Point on a Parabola
 > Find the point on the parabola $y^2 = 2x$ that is closest to the point $(1, 4)$.
 >

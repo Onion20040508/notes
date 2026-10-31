@@ -78,6 +78,10 @@ $$
 ![[m235-39-1.svg]]
 *[[§47 Iterative Estimates for Eigenvalues#^ex-47-1|Example §47.1]]: the vectors $\mathbf{x}, A\mathbf{x}, \ldots, A^4\mathbf{x}$ (dots) and the lines through $\mathbf{0}$ and $A^k\mathbf{x}$ for $k \le 7$ (gray), which close in on the eigenspace line through $\mathbf{v}_1 = (4, 1)$ (blue). The component $-\frac{9}{10}\mathbf{v}_2$ stays fixed while the $\mathbf{v}_1$-component doubles at each step.*
 
+![[m235-39-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* The powers $A^k\mathbf{x}$ of Example §47.1, $A = \begin{bmatrix} 1.8 & .8 \\ .2 & 1.2 \end{bmatrix}$, $\mathbf{x} = (-.5, 1)$, $k = 0, \ldots, 8$, with the view shrunk by the factor $2$ at each step so that the vectors stay on screen. The red arrow $A^k\mathbf{x}$ is split as $\frac{2^k}{10}\mathbf{v}_1$ (blue, along the eigenline of $\lambda_1 = 2$) plus $-\frac{9}{10}\mathbf{v}_2$ (green, $\lambda_2 = 1$). In the shrinking view the blue part keeps its size while the green part, which does not grow, is halved at every step, so the red arrow swings onto the $\mathbf{v}_1$-line; the earlier powers (dots) slide in toward $\mathbf{0}$. The readout gives the table of the example, from $(-.5, 1)$ to $(101.5, 26.5)$, and the ratio of the entries, which climbs from $-0.50$ to $3.83$ on its way to $4$, the ratio for $\mathbf{v}_1 = (4, 1)$. Between two integer steps the picture moves along $\frac{2^t}{10}\mathbf{v}_1 - \frac{9}{10}\mathbf{v}_2$ for real $t$, only to make the motion smooth.
+
 The vectors $(\lambda_1)^{-k}A^k\mathbf{x}$ in (3) converge, but we cannot form them, because $\lambda_1$ is unknown. Instead, scale each $A^k\mathbf{x}$ so that its largest entry is $1$. The resulting sequence $\{\mathbf{x}_k\}$ converges to a multiple of $\mathbf{v}_1$ whose largest entry is $1$. And when $\mathbf{x}_k$ is close to an eigenvector for $\lambda_1$, $A\mathbf{x}_k$ is close to $\lambda_1\mathbf{x}_k$, so its entry of largest absolute value is close to $\lambda_1 \cdot 1$. (Lay omits careful proofs of these two statements.)
 
 > [!remark] Remark: Method — The Power Method for Estimating a Strictly Dominant Eigenvalue

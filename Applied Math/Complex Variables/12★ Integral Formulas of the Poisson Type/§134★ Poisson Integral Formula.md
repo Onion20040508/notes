@@ -133,6 +133,10 @@ Formula (6) defines a linear integral transformation of $u(r_0, \phi)$ into $u(r
 ![[m342-134-1.svg]]
 *The Poisson kernel $P(1, r, \phi - \theta)$ for $r = 0, 0.5, 0.8$. Each curve has mean value $1$ over a period (property (f)); its peak $(1 + r)/(1 - r)$ at $\phi = \theta$ grows and narrows as $z = re^{i\theta}$ approaches the boundary, so that the average (9) is dominated more and more by the boundary values near $\phi = \theta$.*
 
+![[m342-134-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The Poisson kernel (7) with $r_0 = 1$, $P(1, r, \phi - \theta) = (1 - r^2)/(1 - 2r\cos(\phi - \theta) + r^2)$, as $r$ grows from $0$ to $0.8$ (the range of the figure above). On the left the point $z = re^{i\theta}$ (here $\theta = 0$) moves toward the boundary, and the weight $P$ that the formula (6) gives to the boundary value at $e^{i\phi}$ is drawn as the thickness of the rim. On the right, the graph over $\phi - \theta$: at $r = 0$ it is the constant $1$ (property (e)), and as $r$ grows the peak $(1 + r)/(1 - r)$ at $\phi = \theta$ rises to $9$ while the graph narrows and sinks elsewhere. The kernel stays positive (property (a)), and its mean over a period, computed numerically in the readout, stays $1.000$ (property (f)): the shaded area never changes. So $u(r, \theta)$ is always a weighted average of the boundary values, and the weight concentrates more and more on the boundary near $\phi = \theta$.
+
 > [!theorem] Proposition §134.2: Properties of the Poisson Kernel
 > For $r < r_0$:
 >

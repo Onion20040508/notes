@@ -150,6 +150,10 @@ Putting $f_x(a, b) = 0$ and $f_y(a, b) = 0$ in the equation of the tangent plane
 
 ^rem-113-1
 
+![[m452-14-a2.gif|420]]
+
+*(Not from the book; animation added, vault only.)* All cases of Theorem §113.2 in one family, reused from MATH 452 (Multivariable Analysis). The surface is $z = f(x, y) = 0.55(\lambda_1x^2 + \lambda_2y^2)$, with a critical point at the origin, where $f_{xx} = 1.1\lambda_1$, $f_{yy} = 1.1\lambda_2$ and $f_{xy} = 0$, so $D = f_{xx}f_{yy} - f_{xy}^2 = 1.21\,\lambda_1\lambda_2$ (the title gives $f_{xx}$ and $f_{yy}$ as the "Hessian eigenvalues", in the language of 452). First $\lambda_2$ goes from $1$ to $-1$ with $\lambda_1 = 1$: a bowl ($D > 0$, $f_{xx} > 0$, local minimum), then at $\lambda_2 = 0$ a trough with a whole line of minimum points ($D = 0$), then a saddle ($D < 0$). Then $\lambda_1$ goes from $1$ to $-1$ with $\lambda_2 = -1$: saddle, at $\lambda_1 = 0$ a ridge with a whole line of maximum points ($D = 0$ again), and a dome ($D > 0$, $f_{xx} < 0$, local maximum). Only the signs matter, and the shape changes type exactly when $D$ passes through $0$; at those moments the test is silent, as Note 1 says.
+
 > [!example] Example §113.2: Classifying Three Critical Points
 > Find the local maximum and minimum values and saddle points of $f(x, y) = x^4 + y^4 - 4xy + 1$.
 >

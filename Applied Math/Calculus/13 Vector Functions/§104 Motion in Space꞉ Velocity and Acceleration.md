@@ -430,6 +430,10 @@ If $\mathbf{r}(t)$ is the position of a moving particle, its derivative is the v
 
 *Uses:* [[§101 Derivatives and Integrals of Vector Functions#^thm-101-2|§101.2]], [[§101 Derivatives and Integrals of Vector Functions#^thm-101-3|§101.3]], [[§96 The Cross Product#^thm-96-2|§96.2]], [[§96 The Cross Product#^thm-96-8|§96.8]], [[§78 Conic Sections in Polar Coordinates#^thm-78-3|§78.3]], [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-3|§29.3]]
 
+![[m233-89-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Kepler's Second Law (Theorem §104.6, part 2) on the orbit of the proof, $r = ed/(1 + e\cos\theta)$ with the sun at the focus (origin) and perihelion on the positive $x$-axis ($\theta = 0$). The planet runs once around with the real Kepler timing, and the period $T$ is cut into $12$ equal time steps. The sector swept in each step is shaded, blue and red in turn. The sectors near perihelion are short and wide and those near aphelion long and thin, but all have the same area $\pi ab/12 \approx 0.227$. This is the constancy of $|\mathbf{h}| = |\mathbf{r} \times \mathbf{v}| = r^2\,d\theta/dt$ from the proof, since the swept area grows at the rate $\frac12 r^2\,d\theta/dt$. The arrow is the velocity: the planet is fastest at perihelion (speed $\sqrt3 \approx 1.73$ in units of $2\pi a/T$) and slowest at aphelion ($1/\sqrt3 \approx 0.58$). The values $e = 0.5$ and $a = 1$ (so $ed = 0.75$, $b \approx 0.866$) are chosen for the picture.
+
 > [!remark] Remark: What the Proof Uses
 > The proof uses only the vector calculus of Chapters 12 and 13: the product rule for cross products, a constant-length vector being perpendicular to its derivative, and the two triple-product identities. The constant $\mathbf{h} = \mathbf{r} \times \mathbf{v}$ is the angular momentum per unit mass, and its constancy is exactly what the Second Law (equal areas in equal times) expresses. The same argument applies to a moon or satellite moving around a planet, or a comet around a star.
 

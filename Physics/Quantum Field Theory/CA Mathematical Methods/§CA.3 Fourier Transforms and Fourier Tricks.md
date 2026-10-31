@@ -375,6 +375,91 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 
 *Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]]
 
+## The periodic box in space and time
+
+The box of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] postulates the lattice of allowed momenta and works in space only. Cross sections and decay rates (Yu's route) also need the lattice derived from the boundary condition, the count of lattice points in a cell, and the same box in time.
+
+> [!theorem] Theorem §CA.3.10: The Periodic Box in Space and Time
+> Let $L > 0$, $\tilde V = L^3$, and let $\tilde T > 0$ be the length of a time window.
+> 1. (lattice) $e^{ipx}$ on $[-L/2, L/2]$ satisfies $\psi(-L/2) = \psi(L/2)$ if and only if $p \in \frac{2\pi}{L}\mathbb Z$; in three dimensions, $e^{i\mathbf p\cdot\mathbf x}$ is periodic on the cube if and only if $\mathbf p \in \frac{2\pi}{L}\mathbb Z^3$.
+> 2. (counting) For $F$ continuous and rapidly decreasing, as $L \to \infty$,
+>
+> $$
+> \sum_{k\in\mathbb Z}F\Bigl(\frac{2\pi k}{L}\Bigr) \simeq \frac{L}{2\pi}\int dp\,F(p) , \qquad \sum_{\mathbf k\in\mathbb Z^3}F\Bigl(\frac{2\pi\mathbf k}{L}\Bigr) \simeq \frac{L^3}{(2\pi)^3}\int d^3p\,F(\mathbf p) = \tilde V\int\frac{d^3p}{(2\pi)^3}\,F(\mathbf p) :
+> $$
+>
+> a cell $d^3p$ contains $\tilde V\,d^3p/(2\pi)^3$ lattice points.
+> 3. (time) With frequencies $\omega \in \frac{2\pi}{\tilde T}\mathbb Z$ (time treated as a periodic window of length $\tilde T$),
+>
+> $$
+> \int_{-\tilde T/2}^{\tilde T/2}dt\,e^{i(\omega - \omega')t} = \tilde T\,\delta_{\omega\omega'} , \qquad 2\pi\,\delta(\omega - \omega') \leftrightarrow \tilde T\,\delta_{\omega\omega'} , \qquad 2\pi\,\delta(0) \leftrightarrow \tilde T .
+> $$
+>
+> 4. (spacetime) With $p\cdot x = p^0t - \mathbf p\cdot\mathbf x$ and $p$, $p'$ on the product lattice,
+>
+> $$
+> (2\pi)^4\delta^4(p - p') \leftrightarrow \tilde V\tilde T\,\delta_{pp'} , \qquad (2\pi)^4\delta^4(0) \leftrightarrow \int_{\tilde V\times\tilde T}d^4x = \tilde V\tilde T , \qquad \bigl[(2\pi)^4\delta^4(p - p')\bigr]^2 \leftrightarrow \tilde V\tilde T\cdot(2\pi)^4\delta^4(p - p') .
+> $$
+>
+> On all of $\mathbb R$ or $\mathbb R^4$ the left sides of parts 3–4 at coincident arguments have no value ([[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 2–3); parts 3–4 are identities of the box, to be used only in expressions in which $\tilde V$ and $\tilde T$ cancel before the box is removed. Parts 1–2 in three dimensions are the lattice and Step 3 of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], with the lattice derived here.
+>
+> *Source: Yu Zhao-Huan, 量子场论讲义, §6.5.1, pp. 239–241, eqs. (6.278)–(6.282) (the four-dimensional delta function and $(2\pi)^4\delta^{(4)}(0) = \int d^4x = \tilde V\tilde T$), eqs. (6.295)–(6.302) (periodic boundary conditions and the count; Yu cites Zeng Jinyan, Quantum Mechanics I, §4.4.3) (page images checked) · standard*
+
+^thm-ca-3-10
+
+> [!derivation]- Derivation
+> **Step 1** (part 1). With $\psi(x) = e^{ipx}$ (Yu (6.295)–(6.297)),
+>
+> $$
+> \psi\Bigl(-\frac L2\Bigr) = \psi\Bigl(\frac L2\Bigr) \iff e^{-ipL/2} = e^{ipL/2} \iff e^{ipL} = 1 \iff pL = 2\pi k ,\ k \in \mathbb Z \iff p = p_k \equiv \frac{2\pi k}{L} .
+> $$
+>
+> In three dimensions $e^{i\mathbf p\cdot\mathbf x} = e^{ip_1x_1}e^{ip_2x_2}e^{ip_3x_3}$, and periodicity in each coordinate separately gives $\mathbf p = \frac{2\pi}{L}(k_1, k_2, k_3)$ (Yu (6.301)).
+>
+> **Step 2** (part 2, one dimension). The spacing is $\Delta p = p_{k+1} - p_k = \frac{2\pi}{L}$ (Yu (6.298)). Multiply and divide by it:
+>
+> $$
+> \sum_kF(p_k) = \frac{1}{\Delta p}\sum_kF(p_k)\,\Delta p = \frac{L}{2\pi}\sum_kF(p_k)\,\Delta p \simeq \frac{L}{2\pi}\int dp\,F(p) ,
+> $$
+>
+> since $\sum_kF(p_k)\Delta p$ is a Riemann sum of $\int F$ with mesh $\Delta p \to 0$ as $L \to \infty$ (Yu (6.299)–(6.300)).
+>
+> **Step 3** (part 2, three dimensions). The lattice cells are cubes of volume $(\Delta p)^3 = \frac{(2\pi)^3}{L^3} = \frac{(2\pi)^3}{\tilde V}$:
+>
+> $$
+> \sum_{\mathbf k}F(\mathbf p_{\mathbf k}) = \frac{\tilde V}{(2\pi)^3}\sum_{\mathbf k}F(\mathbf p_{\mathbf k})\,(\Delta p)^3 \simeq \frac{\tilde V}{(2\pi)^3}\int d^3p\,F(\mathbf p)
+> $$
+>
+> (Yu (6.302)). With $F$ the indicator of a small cell $d^3p$, the left side counts the lattice points in it: $\tilde V\,d^3p/(2\pi)^3$.
+>
+> **Step 4** (part 3). For $\omega = 2\pi n/\tilde T$, $\omega' = 2\pi n'/\tilde T$: if $n = n'$ the integrand is $1$ and the integral is $\tilde T$; if $n \ne n'$,
+>
+> $$
+> \int_{-\tilde T/2}^{\tilde T/2}dt\,e^{i(\omega - \omega')t} = \frac{e^{i(\omega - \omega')\tilde T/2} - e^{-i(\omega - \omega')\tilde T/2}}{i(\omega - \omega')} = \frac{2\sin\bigl(\pi(n - n')\bigr)}{\omega - \omega'} = 0 .
+> $$
+>
+> Step 2 with $L \to \tilde T$ gives $\sum_\omega \simeq \tilde T\int\frac{d\omega}{2\pi}$, and $\sum_{\omega'}\delta_{\omega\omega'}G(\omega') = G(\omega)$ becomes $\tilde T\int\frac{d\omega'}{2\pi}\,\delta_{\omega\omega'}G(\omega') = G(\omega)$ for every $G$, so $\tilde T\delta_{\omega\omega'}$ stands for $2\pi\delta(\omega - \omega')$ (the argument of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], Step 4). At $\omega = \omega'$: $2\pi\delta(0) \leftrightarrow \tilde T\delta_{\omega\omega} = \tilde T = \int_{-\tilde T/2}^{\tilde T/2}dt\,e^{i0t}$.
+>
+> **Step 5** (part 4). The exponential factorizes, $e^{i(p - p')\cdot x} = e^{i(p^0 - p'^0)t}\,e^{-i(\mathbf p - \mathbf p')\cdot\mathbf x}$, so by Step 4 and [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] (with $\mathbf p - \mathbf p' \to -(\mathbf p - \mathbf p')$, which does not change a Kronecker delta)
+>
+> $$
+> \int_{-\tilde T/2}^{\tilde T/2}dt\int_{\tilde V}d^3x\;e^{i(p - p')\cdot x} = \tilde T\,\delta_{p^0p'^0}\cdot\tilde V\,\delta_{\mathbf p\mathbf p'} = \tilde V\tilde T\,\delta_{pp'} ,
+> $$
+>
+> the box form of $\int d^4x\,e^{i(p - p')\cdot x} = (2\pi)^4\delta^4(p - p')$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]; Yu (6.278)–(6.279)). At $p = p'$ it is $\int d^4x = \tilde V\tilde T$ (Yu (6.282)). For the square, $\delta_{pp'} \in \{0, 1\}$, so $\delta_{pp'}^2 = \delta_{pp'}$ and
+>
+> $$
+> \bigl(\tilde V\tilde T\,\delta_{pp'}\bigr)^2 = (\tilde V\tilde T)^2\,\delta_{pp'} = \tilde V\tilde T\cdot\bigl(\tilde V\tilde T\,\delta_{pp'}\bigr) \leftrightarrow \tilde V\tilde T\cdot(2\pi)^4\delta^4(p - p') .
+> $$
+>
+> **What the derivation shows.**
+> - In the box one factor of a squared delta function is evaluated at the zero that the other enforces, and becomes the spacetime volume $\tilde V\tilde T$; the other stays a delta function.
+> - The count $\tilde V\,d^3p/(2\pi)^3$ and the norm $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ carry the same $\tilde V$; this is why they cancel in rates.
+
+^der-ca-3-10
+
+*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
+
 > [!remark]- Connections
 > - The angular integral is the first step of every position-space propagator: the Wightman function ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]), the scattering Green's function $-e^{ik\rho}/4\pi\rho$ ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]]) and the Yukawa potential ([[§B4.1 The Klein–Gordon Equation#^rem-b4-1-4|REL Remark: Static solutions and the Yukawa potential]]).
 > - Plancherel with $(2\pi)^{-3}$ on the momentum side is why the norm of a one-particle wave packet is $\int\frac{d^3p}{(2\pi)^32E_{\mathbf p}}|g|^2$, and why the number of particles radiated by a source is finite when $\tilde j$ is a Schwartz function ([[§C2b.8 Particle Production by a Classical Source|§C2b.8]]).
@@ -427,4 +512,5 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 >   - Theorem §CA.3.4 (rules): derivatives of plane waves, the transverse current, two degrees of freedom per point — [[§C1.1 Building the Maxwell Action#^ex-c1-1-1|EM Example §C1.1.1]], [[§C1.4 Gauge Fixing and the Two Polarizations#^thm-c1-4-2|EM Theorem §C1.4.2]], [[§C1.4 Gauge Fixing and the Two Polarizations#^thm-c1-4-4|EM Theorem §C1.4.4]].
 >   - Theorem §CA.3.5 (translation, phase; rules in $\mathcal S'$): conservation of the point-charge current in Fourier space — [[§C1.3 Gauge Symmetry and Charge Conservation#^ex-c1-3-1|EM Example §C1.3.1]].
 > - **Used in** (C6a places, Lecture 14): Theorem §CA.3.3 — momentum conservation at a vertex, the momentum-space rules and the tilted vertex integral ([[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|Theorem §C6a.11.1]]); Theorem §CA.3.6 — vertex integrals done before momentum integrals ([[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]]); Theorem §CA.3.7 — relabelling vertices and momenta ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]]).
-> - **Used in** (C6b places, Lecture 15): Theorem §CA.3.3 — the impact-parameter integral $\int d^2b\,e^{-i\mathbf b\cdot\mathbf k} = (2\pi)^2\delta^2$ ([[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]]); Theorem §CA.3.6 — the integrals of the squared wave-packet amplitude exchanged freely (same place).
+> - **Used in** (C6b places, Lecture 15): Theorem §CA.3.3 — the impact-parameter integral $\int d^2b\,e^{-i\mathbf b\cdot\mathbf k} = (2\pi)^2\delta^2$ ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]); Theorem §CA.3.6 — the integrals of the squared wave-packet amplitude exchanged freely (same place).
+> - **Used in** (C6b places, Lecture 15; Yu §6.5): Theorem §CA.3.10 — $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ and the count of box states ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-5|Theorem §C6b.2.5]], [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-2|Theorem §C6b.7.2]]).

@@ -342,3 +342,7 @@ The goal is the point $P$ on which a thin plate of a given shape balances horizo
 > *Stewart: Example 8.3.7*
 
 ^ex-63-4
+
+![[m233-54-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The Theorem of Pappus (Theorem §63.5) for the torus of Example §63.4. A disk of radius $r = 0.7$ whose centre is at distance $R = 2$ from the axis $l$ (values chosen for the picture) revolves once about $l$ and sweeps out the torus. The centroid of the disk is its centre (red dot), which travels around the circle of radius $R$ (red path). The readout multiplies the area $A = \pi r^2 \approx 1.539$ by the distance $d = R\varphi$ travelled so far, $\varphi$ the angle turned; after the full turn $d = 2\pi R$ and $Ad = 2\pi^2 r^2 R \approx 19.34$, the volume of the torus. Each piece of the disk moves along its own circle, the outer pieces farther than the inner ones; Pappus says these differences average out exactly at the centroid.

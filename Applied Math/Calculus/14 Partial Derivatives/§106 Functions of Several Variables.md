@@ -166,6 +166,10 @@ Linear functions of two variables play the role in multivariable calculus that l
 
 ^ex-106-3
 
+![[m233-90-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The level curves of $h(x, y) = 4x^2 + y^2 + 1$ from Example §106.3(b), made by slicing the graph. The horizontal plane $z = k$ (grey) rises from $k = 1$ to $k = 5$ through the elliptic paraboloid $z = 4x^2 + y^2 + 1$ (vertex $(0, 0, 1)$), and cuts it in the red ellipse. That ellipse is dropped onto the $xy$-plane (dashed red), and at $k = 2, 3, 4, 5$ a copy stays behind as a blue level curve: the contour map of Definition §106.4 builds up. Each level curve $4x^2 + y^2 = k - 1$ is an ellipse with semiaxes $\frac12\sqrt{k - 1}$ along $x$ and $\sqrt{k - 1}$ along $y$; for $k = 1$ it is the single point $(0, 0)$, and for $k < 1$ there is none, since the range is $[1, \infty)$. The values of $k$ are equally spaced, but the ellipses crowd together outward, where the paraboloid gets steeper. The vertical scale is compressed by a factor of about $2$ for the picture.
+
 > [!example] Example §106.4: Two Contour Maps from the Exams
 > **(a)** Sketch the level curves of $f(x, y) = y e^x$ for the integers $-3 \le k \le 3$.
 >

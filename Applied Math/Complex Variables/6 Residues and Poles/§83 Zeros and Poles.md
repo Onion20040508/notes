@@ -339,3 +339,7 @@ The converse of Theorem §83.1 also holds: a pole of the quotient comes from a z
 
 ![[m342-83-1.svg]]
 *The square $C_N$ of Example §83.5 for $N = 2$. Its sides pass midway between consecutive poles $n\pi$ of $1/(z^2\sin z)$, so it encloses exactly the poles $n = 0, \pm1, \ldots, \pm N$ (filled) and stays away from all of them, which keeps $|\sin z| \ge 1$ on the contour. As $N$ grows the integral tends to $0$, while the enclosed residues build up the alternating series.*
+
+![[m342-83-a1.gif|520]]
+
+*(Not from the book; animation added, vault only.)* Example §83.5 step by step, for $N = 0, 1, \ldots, 6$ ($N = 0$, the square of half side $\pi/2$ around the origin alone, is added for the start). Left: the square $C_N$ with sides on $x, y = \pm(N + \frac12)\pi$; the view zooms out as it grows. Each step brings in one more pair of poles $\pm N\pi$ of $f(z) = 1/(z^2\sin z)$ (filled red; the hollow ones are still outside), and the sides always pass midway between poles. Top right: the residues inside give $\int_{C_N} f\,dz = 2\pi i\big[\frac16 + 2\sum_{n=1}^{N}\frac{(-1)^n}{n^2\pi^2}\big]$, and the bracket vanishing in the limit is the statement that the partial sums $\sum_{n=1}^{N}(-1)^{n+1}/n^2$ ($1$, $0.75$, $0.8611$, …, $0.8108$ at $N = 6$) approach $\pi^2/12 \approx 0.8225$ (dashed). Bottom right, on a log scale: the modulus of the integral (dots: $1.0472$ at $N = 0$, $0.0492$ at $N = 3$, as in the note, $0.0148$ at $N = 6$) under the ML bound $8/((N + \frac12)\pi)$ (dashed), which tends to $0$ because $|\sin z| \ge 1$ on every $C_N$.

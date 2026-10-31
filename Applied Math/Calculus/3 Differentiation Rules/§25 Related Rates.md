@@ -85,6 +85,10 @@ When air is pumped into a balloon, its volume and its radius both increase, and 
 
 ^ex-25-2
 
+![[m233-22-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The ladder of [[§25 Related Rates#^ex-25-2|Example §25.2]]. The bottom slides out at the constant rate $dx/dt = 4$ ft/s (red arrow below; shown at half speed), from $x = 0.6$ to $x = 9.8$ ft, and the top slides down at $dy/dt = -4x/y$ (red arrow at the wall, length proportional to the speed). The right panel plots $dy/dt$ against $x$. The animation pauses at $x = 6$, $y = 8$, where $dy/dt = -3$ ft/s as in the example. Near the end the top falls faster and faster: at $x = 9.8$ ($y \approx 1.99$) it is $-19.7$ ft/s, and $dy/dt \to -\infty$ as $y \to 0$. (A real ladder leaves the wall before that; the formula only holds while the top touches the wall.)
+
 > [!example] Example §25.3: Filling a Conical Tank
 > A water tank has the shape of an inverted circular cone with base radius $2$ m and height $4$ m. Water is pumped in at $2$ m³/min. How fast is the water level rising when the water is $3$ m deep?
 >
@@ -114,6 +118,10 @@ When air is pumped into a balloon, its volume and its radius both increase, and 
 
 ![[m233-22-1.svg]]
 *The conical tank of [[§25 Related Rates#^ex-25-3|Example §25.3]]. The water (blue) is a smaller cone similar to the tank, so its surface radius and depth are in the ratio $r : h = 2 : 4$ of the tank (the red triangles). This is the relation that eliminates $r$ before differentiating.*
+
+![[m233-22-a2.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The tank of [[§25 Related Rates#^ex-25-3|Example §25.3]] (base radius $2$ m, height $4$ m) fills at $dV/dt = 2$ m³/min, from empty until it is full ($V = \frac{16\pi}{3}$ m³) after $\frac{8\pi}{3} \approx 8.38$ minutes. The water is a cone with $r = h/2$ (red), so $V = \frac{\pi}{12}h^3$ and $h = (24t/\pi)^{1/3}$, plotted on the right with its tangent line. Equal volumes raise the level less and less as the surface widens: $dh/dt = 8/(\pi h^2)$ falls from large values near the tip to $0.159$ m/min at the top. The animation pauses at $h = 3$ m ($t = 9\pi/8 \approx 3.53$ min), where $dh/dt = \frac{8}{9\pi} \approx 0.28$ m/min.
 
 > [!example] Example §25.4: Two Cars Approaching an Intersection
 > Car A travels west at $50$ mi/h and car B travels north at $60$ mi/h, both toward the intersection $C$ of their roads. At what rate are the cars approaching each other when car A is $0.3$ mi and car B is $0.4$ mi from the intersection?

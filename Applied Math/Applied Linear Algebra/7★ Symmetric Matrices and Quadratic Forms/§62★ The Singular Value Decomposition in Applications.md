@@ -164,6 +164,10 @@ The four fundamental subspaces and the singular values provide the final stateme
 
 *Uses:* [[§62★ The Singular Value Decomposition in Applications#^prop-62-3|§62.3]], [[§62★ The Singular Value Decomposition in Applications#^thm-62-1|§62.1]], [[§52 Orthogonal Projections#^thm-52-4|§52.4]], [[§52 Orthogonal Projections#^thm-52-3|§52.3]], [[§54 Least-Squares Problems#^def-54-1|Def. §54.1]] (least-squares solutions), [[§49 Inner Product, Length, and Orthogonality#^thm-49-4|§49.4]] (Pythagorean Theorem)
 
+![[ladr-6.70-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 6.70; Axler's $T$, $T^\dagger$, $\operatorname{range} T$, $\operatorname{null} T$ are Lay's $A$, $A^+$, $\operatorname{Col} A$, $\operatorname{Nul} A$). A rank-one $2 \times 2$ matrix $A = \mathbf{x}\mathbf{u}^T$ (unit $\mathbf{u}$ at $70^\circ$, unit $\mathbf{x}$ at $15^\circ$, chosen for the picture), which is its reduced SVD with $\sigma_1 = 1$. As $\mathbf{b}$ moves around a circle, $\hat{\mathbf{b}} = U_rU_r^T\mathbf{b}$ (blue, right) is its projection onto $\operatorname{Col} A$. The least-squares solutions form the line $A^+\mathbf{b} + \operatorname{Nul} A$ (red dashed, left). $\hat{\mathbf{x}} = A^+\mathbf{b} = (\mathbf{x}\cdot\mathbf{b})\,\mathbf{u}$ is the point of that line in $\operatorname{Row} A$, the one of smallest length, as Theorem §62.4 says.
+
 > [!remark]- Connections
 > - Rigorous treatment: the pseudoinverse $T^\dagger$ is defined in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-68|LADR 6.68]] without the SVD (invert $T$ on $(\operatorname{null} T)^\perp \to \operatorname{range} T$, after projecting), and [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-70|LADR 6.70]] proves exactly [[§62★ The Singular Value Decomposition in Applications#^thm-62-4|Theorem §62.4]], best approximate solution of smallest norm. Its SVD formula, Lay's (10), is [[§27 Singular Value Decomposition#^ladr-7-75|LADR 7.75]]: "swap the singular vectors and invert the positive singular values".
 

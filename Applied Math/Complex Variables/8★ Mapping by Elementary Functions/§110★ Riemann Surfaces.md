@@ -42,6 +42,10 @@ In each example below, a point of a sheet has polar coordinates $r$ and $\theta$
 ![[m342-110-1.svg]]
 *A sketch of the Riemann surface for $\log z$ over the disk $|z| \le 1$, drawn with height $\theta = \operatorname{Im}\log z$: a spiral staircase in which $R_0$ (blue, $0 \le \theta \le 2\pi$) continues smoothly into $R_1$ (red, $2\pi \le \theta \le 4\pi$) and so on. The green path circles the origin once and climbs from $R_0$ onto $R_1$; above any point of the punctured plane lie infinitely many points of the surface, one on each sheet.*
 
+![[m342-110-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* The Riemann surface for $\log z$ of Example §110.1, drawn over $0.15 \le |z| \le 1$ with height $\theta = \operatorname{Im}\log z$ as in the figure above: the sheets $R_0$ (blue, $0 \le \theta \le 2\pi$), $R_1$ (red, $2\pi \le \theta \le 4\pi$) and $R_2$ (orange, $4\pi \le \theta \le 6\pi$), each one glued to the next along the slit over the positive real axis. A point (green) with $r = 0.8$ goes counterclockwise around the origin almost three times while the view turns slowly; its shadow in the $z$ plane (grey circle) only goes round and round the same circle. On the surface the point never comes back: every time its shadow crosses the positive real axis it passes onto the next sheet, and $\theta$, read out together with $\log z = \ln 0.8 + i\theta$, keeps growing. So $\log z$ is single-valued and continuous on the surface, with one point above each $z \ne 0$ on every sheet.
+
 > [!remark]- Connections
 > - The projection of this surface onto the punctured plane is a covering map with infinitely many sheets, [[§31 Covering Spaces#^def-31-2|590 Def. §31.2]] and [[§31 Covering Spaces#^def-31-5|590 Def. §31.5]]; in the $w$ coordinate it is $w \mapsto e^w$ from $\mathbb{C}$ onto $\mathbb{C} \setminus \{0\}$, the complex form of $p\colon \mathbb{R} \to S^1$, [[§31 Covering Spaces#^thm-31-2|590 Thm. §31.2]]. B&C's sheets are the slices of the evenly covered cut plane.
 > - In modern terms a Riemann surface is a connected surface with complex charts, a topological manifold of dimension $2$ ([[§2 Topological Manifolds#^def-2-2|591 Def. §2.2]]) whose transition maps are analytic.
@@ -59,6 +63,10 @@ In each example below, a point of a sheet has polar coordinates $r$ and $\theta$
 
 ![[m342-110-2.svg]]
 *A sketch of the Riemann surface for $z^{1/2}$ over $|z| \le 1$, with height $\operatorname{Im} z^{1/2} = \sqrt r\sin(\theta/2)$: $R_0$ (blue, $0 \le \theta \le 2\pi$) lies above the plane and $R_1$ (red, $2\pi \le \theta \le 4\pi$) below. In space the surface has to pass through itself along the positive real axis, where the two pairs of edges are joined; on the abstract surface these are different points. The green path goes twice around the origin before it closes.*
+
+![[m342-110-a2.gif|420]]
+
+*(Not from the book; animation added, vault only.)* The Riemann surface for $z^{1/2}$ of Example §110.2 over $|z| \le 1$, with height $\operatorname{Im} z^{1/2} = \sqrt r\sin(\theta/2)$ as in the figure above: $R_0$ (blue, $0 \le \theta \le 2\pi$) above the plane and $R_1$ (red, $2\pi \le \theta \le 4\pi$) below. A point (green) with $r = 0.8$ starts on the upper edge of the slit in $R_0$ and goes counterclockwise around the origin twice while the view turns. After one turn ($\theta = 2\pi$) it reaches the black line over the positive real axis and passes onto $R_1$, where $z^{1/2} = -\sqrt{0.8} \approx -0.89$; after the second turn ($\theta = 4\pi$) it passes back onto $R_0$ with $z^{1/2} = +0.89$, and the path closes (readout). In space the two sheets have to cross along the black line, but on the abstract surface the two crossings are different points, distinguished by the sign of $z^{1/2}$. A closed curve around the origin has to wind twice, which is what makes $0$ a branch point (Definition §110.2).
 
 > [!definition] Definition §110.2: Branch Point of a Riemann Surface
 > On the Riemann surface for $z^{1/2}$ the origin is common to both sheets, and a curve around it on the surface must wind around it twice in order to be a closed curve. A point of this kind on a Riemann surface is called a **branch point**.

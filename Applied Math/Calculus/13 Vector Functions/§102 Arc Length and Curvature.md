@@ -325,4 +325,8 @@ This section measures the geometry of a space curve: how long it is, how sharply
 ![[m233-88-1.svg]]
 *The parabola $y = x^2$ (blue), its curvature function $\kappa(x) = 2/(1 + 4x^2)^{3/2}$ (green) and its osculating circle at the origin (red), of radius $1/\kappa(0) = \frac12$ and center $(0, \frac12)$. The curvature is largest at the vertex, where the parabola bends most, and tends to $0$ as the parabola straightens out. Near the origin, circle and parabola bend alike: they share the point, the tangent, the normal and the curvature.*
 
+![[m233-88-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The osculating circle of [[§103 The TNB Frame and Torsion#^def-103-5|Definition §103.5]] carried along the parabola $y = x^2$ of Example §102.4(c),(d), for $-1.05 \le x \le 1.05$. At each point $P = (x, x^2)$ the red circle has radius $1/\kappa$ and its centre (red dot) lies a distance $1/\kappa$ from $P$ along the normal $\mathbf{N}$ (dashed). The green dot rides on the curvature $\kappa(x) = 2/(1 + 4x^2)^{3/2}$ directly below or above $P$. At the vertex the circle is smallest: $\kappa(0) = 2$, radius $\frac12$, centre $(0, \frac12)$, as in the figure. As $P$ moves out, $\kappa$ drops quickly ($0.349$ at $x = 0.74$, $0.159$ at $x = 1.05$) and the circle swells (radius $2.87$, then $6.29$) and runs off the picture, because the parabola straightens out. The circle always hugs the parabola at $P$: it has the same tangent, normal and curvature there.
+
 *The section continues in [[§103 The TNB Frame and Torsion]].*

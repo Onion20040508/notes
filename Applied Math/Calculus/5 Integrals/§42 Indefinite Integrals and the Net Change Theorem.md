@@ -249,6 +249,10 @@ The most important instance concerns motion along a line, and it settles the gue
 ![[m233-37-1.svg]]
 *[[§42 Indefinite Integrals and the Net Change Theorem#^ex-42-3|Example §42.3]]. On $[1, 3]$ the velocity is negative and the particle moves left a distance $\frac{22}{3}$ (orange area); on $[3, 4]$ it moves right $\frac{17}{6}$ (blue area). Displacement counts the orange area negatively, $\frac{17}{6} - \frac{22}{3} = -\frac92$; distance counts both, $\frac{17}{6} + \frac{22}{3} = \frac{61}{6}$.*
 
+![[m233-37-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The particle of [[§42 Indefinite Integrals and the Net Change Theorem#^ex-42-3|Example §42.3]] with $v(t) = t^2 - t - 6$, for $1 \le t \le 4$. Top: its position relative to the start, $s(t) - s(1)$, on two lanes: it moves left while $v < 0$ (orange) until $t = 3$, reaching $-\frac{22}{3}$, then right (blue) to $-\frac92$. Bottom: the area between the graph of $v$ and the $t$-axis fills in with the same colours. The readouts show the displacement $\int_1^t v\,dt$, which counts the orange area negatively and ends at $-\frac92 = -4.5$ m, and the distance $\int_1^t |v|\,dt$, which counts both and ends at $\frac{22}{3} + \frac{17}{6} = \frac{61}{6} \approx 10.167$ m.
+
 > [!example] Example §42.4: Energy from a Power Curve
 > A graph shows the power consumption $P$ (in megawatts) in San Francisco on a day in September, with $t$ in hours starting at midnight. Estimate the energy used that day.
 >

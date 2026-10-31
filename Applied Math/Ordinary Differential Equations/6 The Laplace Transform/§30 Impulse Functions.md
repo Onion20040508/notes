@@ -234,6 +234,10 @@ With [[§30 Impulse Functions#^thm-30-2|Theorem §30.2]], an impulse in the forc
 ![[m331-25-1.svg]]
 *(a) The pulses $d_\tau$ of [[§30 Impulse Functions#^def-30-2|Definition §30.2]] for $\tau = 1, \frac12, \frac14$: narrower and taller, always with area $1$. (b) The responses of the system of [[§30 Impulse Functions#^ex-30-2|Example §30.2]] to the shifted pulses $d_\tau(t - 5)$ (computed with [[§28 Step Functions#^thm-28-2|Theorem §28.2]] from the step response of [[§29 Differential Equations with Discontinuous Forcing Functions#^ex-29-1|Example §29.1]]) approach its response to $\delta(t - 5)$ (blue) as $\tau \to 0^+$. This is the content of [[§30 Impulse Functions#^def-30-4|Definition §30.4]]: the impulse is the limit of short pulses of unit area.*
 
+![[m331-25-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The pulse width $\tau$ shrinks from $1$ to $0.02$. Top left: the shifted unit pulse $d_\tau(t - 5)$ of Definition §30.2, of height $\frac{1}{2\tau}$ (readout; once it leaves the panel an arrow marks it) and area $1$ (shaded) for every $\tau$. Bottom: the response of $2y'' + y' + 2y = d_\tau(t - 5)$, $y(0) = y'(0) = 0$ (red), which is $\frac{1}{2\tau}$ times the difference of two step responses of Example §29.1. It closes in on the response to $\delta(t - 5)$ of Example §30.2 (blue), $y = \frac{2}{\sqrt{15}}u_5(t)e^{-(t - 5)/4}\sin\frac{\sqrt{15}}{4}(t - 5)$, whose maximum is $0.356$. Top right: the derivatives $y'$ on $3 \le t \le 9$. For a wide pulse $y'$ rises gradually while the pulse is on; as $\tau \to 0^+$ the rise gets steeper and becomes the jump of the impulse response from $0$ to $y'(5^+) = \frac12 = k/a$ (Remark: What an Impulse Does to $y'$), while $y$ itself stays continuous.
+
 > [!remark] Remark: What an Impulse Does to y′
 > In [[§30 Impulse Functions#^ex-30-2|Example §30.2]] the derivative jumps by $\frac12 = \frac{1}{a}$, where $a = 2$ is the leading coefficient. In general, for $ay'' + by' + cy = k\delta(t - t_0)$ the solution $y$ is continuous at $t_0$ and
 >

@@ -51,6 +51,10 @@ A basis $\mathcal{B}$ of an $n$-dimensional space $V$ gives each vector $\mathbf
 ![[m235-29-1.svg]]
 *One vector $\mathbf{x}$, two coordinate grids. Left: the grid of $\mathcal{B}$; $\mathbf{x}$ is the diagonal of the parallelogram on $3\mathbf{b}_1$ and $\mathbf{b}_2$, so $[\mathbf{x}]_{\mathcal B} = (3, 1)$. Right: the grid of $\mathcal{C}$ (with $\mathbf{b}_1 = 4\mathbf{c}_1 + \mathbf{c}_2$, $\mathbf{b}_2 = -6\mathbf{c}_1 + \mathbf{c}_2$ as in [[§35 Change of Basis#^ex-35-1|Example §35.1]], drawn for $\mathbf{c}_1 = (0.6, -0.2)$, $\mathbf{c}_2 = (0.2, 0.6)$); the same $\mathbf{x}$ is $6\mathbf{c}_1 + 4\mathbf{c}_2$, so $[\mathbf{x}]_{\mathcal C} = (6, 4)$.*
 
+![[m235-29-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The two panels of the figure turned into one motion, with the same vectors: $\mathbf{b}_1 = (2.6, -0.2)$, $\mathbf{b}_2 = (-3.4, 1.8)$, $\mathbf{c}_1 = (0.6, -0.2)$, $\mathbf{c}_2 = (0.2, 0.6)$, and $\mathbf{x} = 3\mathbf{b}_1 + \mathbf{b}_2$ (red). The vector $\mathbf{x}$ never moves. The grid of $\mathcal{B}$ morphs into the grid of $\mathcal{C}$ (each basis vector moves in a straight line from $\mathbf{b}_i$ to $\mathbf{c}_i$), and the shaded parallelogram always shows $\mathbf{x}$ as a combination of the current basis vectors. Its coordinates run from $[\mathbf{x}]_{\mathcal B} = (3, 1)$ to $[\mathbf{x}]_{\mathcal C} = (6, 4)$; only the two ends are coordinate systems of the example. On the $\mathcal{C}$-grid the old basis vectors come back (green, dashed) as $\mathbf{b}_1 = 4\mathbf{c}_1 + \mathbf{c}_2$ and $\mathbf{b}_2 = -6\mathbf{c}_1 + \mathbf{c}_2$. Their $\mathcal{C}$-coordinates $(4, 1)$ and $(-6, 1)$ are the columns of $P_{\mathcal C \leftarrow \mathcal B}$, and $P_{\mathcal C \leftarrow \mathcal B}(3, 1) = (6, 4)$.
+
 The argument of [[§35 Change of Basis#^ex-35-1|Example §35.1]] works for any two bases.
 
 > [!theorem] Theorem §35.1: The Change-of-Coordinates Matrix

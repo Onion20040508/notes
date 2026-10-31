@@ -185,6 +185,10 @@ However, if there is an analytic continuation $f_3$ of $f_2$ from $D_2$ into a d
 
 ^ex-28-2
 
+![[m342-28-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Example §28.2 on the unit circle, where $\sqrt r = 1$. A point starts at $z_1 = e^{i\pi/4}$ with the value $f_1(z_1) = e^{i\pi/8}$ and moves counterclockwise. The shaded sector is the domain of the function in use: $f_1$ on $0 < \theta < \pi$, then $f_2$ on $\frac\pi2 < \theta < 2\pi$, then $f_3$ on $\pi < \theta < \frac{5\pi}2$; each agrees with the previous one on the overlap, so the value $\sqrt r\,e^{i\theta/2}$ (right) moves on without a jump. After one full turn $\theta$ has grown by $2\pi$, the value has turned only by $\pi$, and $f_3(z_1) = -f_1(z_1)$. Then the direct route: $f_4$ on $-\pi < \theta < \pi$ (red, cut along the negative real axis) carries $f_1$ clockwise across the positive real axis to $-i$, where $f_4(-i) = e^{-i\pi/4}$, the negative of the value $f_2(-i) = e^{i3\pi/4}$ reached counterclockwise (kept in blue). Continuing along different routes gives different functions, so the square root has no single analytic continuation around the origin.
+
 > [!example] Example §28.3: Real Identities Extend to the Plane
 > Accepting that $\cosh^2x - \sinh^2x = 1$ and $\sinh x + \cosh x = e^x$ for real $x$, show that
 >

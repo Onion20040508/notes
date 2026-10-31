@@ -42,6 +42,10 @@ Cutting regions into pieces extends Green's Theorem ([[§130 Green's Theorem#^th
 
 *Uses:* [[§130 Green's Theorem#^thm-130-1|§130.1]], [[§126 Line Integrals#^thm-126-4|§126.4]] (reversing orientation), [[§116 Double Integrals Over General Regions#^thm-116-4|§116.4]] (additivity over regions)
 
+![[m452-16-a2.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The cancellation in the proof of Theorem §131.1, reused from MATH 452 (Multivariable Analysis). A rectangle is cut into $1$, $2$, $4$, $6$ and $24$ rectangular cells, each a simple region with its own positively oriented (counterclockwise) boundary, drawn with small arrows; the cells are first shown pulled apart and then close up. Every interior edge, like the curve $C_3$ of the proof, is shared by two cells and is traversed once in each direction, as $C_3$ and $-C_3$; these pairs cancel (blue, fading), and only the outer boundary $C$ (red) is left. Adding Green's Theorem for the cells therefore gives the line integral over $C$ on one side and, since the double integrals over the cells add up, the double integral over the whole rectangle on the other. The pieces here are rectangles, cut from a region that is itself simple; the theorem allows any finite union of non-overlapping simple regions, and the same bookkeeping drives the cutting argument for regions with holes in the figure below.
+
 > [!example] Example §131.1: Sectors of Annuli
 > **(a) A semiannulus.** Evaluate $\displaystyle\oint_C y^2\,dx + 3xy\,dy$, where $C$ is the boundary of the semiannular region $D$ in the upper half-plane between the circles $x^2 + y^2 = 1$ and $x^2 + y^2 = 4$.
 >
@@ -156,6 +160,10 @@ Cutting regions into pieces extends Green's Theorem ([[§130 Green's Theorem#^th
 > *Stewart: Example 16.4.5*
 
 ^ex-131-2
+
+![[m452-22-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Example §131.2 in motion, reused from MATH 452 (Multivariable Analysis). In the field $\mathbf{F}(x, y) = \frac{-y\,\mathbf{i} + x\,\mathbf{j}}{x^2 + y^2}$ (grey arrows, circulating around the origin, which is removed: hollow dot), a closed loop is dragged from left to right across the plane and deformed on the way, and the title gives $\oint_C \mathbf{F} \cdot d\mathbf{r}$ for its current position. While the loop misses the origin (blue), the integral is $0$: Green's Theorem applies to the region inside the loop, where $\partial Q/\partial x - \partial P/\partial y = 0$. While it encloses the origin (red), the integral is $2\pi \approx 6.2832$, whatever its shape, as the example proves by comparing $C$ with a small circle $C'$. Wobbling the loop changes neither value; only crossing the origin changes it. The field is the same, but 452 writes it as the differential form $\omega = \frac{-y\,dx + x\,dy}{x^2 + y^2}$ on $\mathbb{R}^2 \setminus \{0\}$, so the GIF's titles say $\oint\omega$ for $\oint_C P\,dx + Q\,dy$ and "closed, $d\omega = 0$" for $\partial Q/\partial x = \partial P/\partial y$. A field with this property and a nonzero loop integral cannot be conservative.
 
 > [!remark]- Connections
 > - This field is the angle form $d\theta$ of 452, the standard closed but not exact form: [[Angle form on the punctured plane]], [[§39 Closed and Exact Forms#^prop-39-6|452 Prop. §39.6]]. The value $\frac{1}{2\pi}\oint_C \mathbf{F} \cdot d\mathbf{r}$ is the [[§93 Argument Principle#^def-93-3|winding number]] of $C$ about the origin.

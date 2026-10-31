@@ -205,6 +205,10 @@ Properties of *minimum* values of $|f(z)|$ and $u(x, y)$ are similar; they are t
 
 ^ex-59-1
 
+![[m342-59-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The maximum modulus principle (Theorem §59.3) on Example §59.1: $f(z) = (z + 1)^2$ on the closed triangle with vertices $0$, $2$, $i$. A level $c$ rises from $1$ to $9$, and the set of points of the triangle where $|f(z)| \ge c$ is shaded red; its edge is the arc of the circle $|z + 1| = \sqrt c$ (dashed), since $|f(z)| = |z + 1|^2$ is the squared distance from $-1$. The grey curves are level curves of $|f|$. The red set shrinks toward the vertex $2$, where $|f| = 9$ is the maximum, and at every level it reaches the boundary of the triangle. No island of large values ever appears inside, which is what the theorem forbids for a non-constant analytic function. The minimum $|f(0)| = 1$ is on the boundary too, as Example §59.2 predicts since $f$ has no zero in the triangle.
+
 > [!example] Example §59.2: The Minimum Modulus
 > **(a)** Let a function $f$ be continuous on a closed bounded region $R$, and let it be analytic and not constant throughout the interior of $R$. Assuming that $f(z) \ne 0$ anywhere in $R$, prove that $|f(z)|$ has a *minimum value* $m$ in $R$ which occurs on the boundary of $R$ and never in the interior.
 >

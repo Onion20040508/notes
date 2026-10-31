@@ -94,6 +94,10 @@ The theorem does *not* claim that any of these statements is true for a given fu
 
 ^ex-48-2
 
+![[m342-48-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Example §48.2 as running integrals. The point $z = e^{i\theta}$ goes twice around the unit circle, starting at $z = -1$ ($\theta = -\pi$, as in the example's parametrization). In the middle is the running value of $\int dz/z^2$ from $-1$ to $z$, which equals $F(z) - F(-1) = -1/z - 1$ because $F(z) = -1/z$ is an antiderivative on the punctured plane: it runs around a circle through $0$ and closes after one turn, so $\int_C dz/z^2 = 0$; the second turn retraces the same loop. On the right is the running value of $\int dz/z$, which is $i(\theta + \pi)$: it climbs the imaginary axis to $2\pi i$ after one turn and to $4\pi i$ after two, just as $\log z$ does when it is followed continuously. A value that keeps growing cannot be $F(z) - F(-1)$ for any single-valued $F$, so $1/z$ has no antiderivative on a domain containing the circle.
+
 But a combination of *two* different antiderivatives can be used to evaluate the integral of $1/z$ around $C$.
 
 > [!example] Example §48.3: 1/z Around the Circle with Two Branches of log z

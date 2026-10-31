@@ -200,6 +200,10 @@ The same rules, for sums running from any $i = m$ to $n$, are [[§143 Sigma Nota
 ![[m233-35-1.svg]]
 *[[§39 The Definite Integral#^ex-39-1|Example §39.1]]. The integral of $x^3 - 6x$ over $[0, 3]$ is the net area $A_1 - A_2 = -6.75$: the blue region above the axis counts positively, the orange one below negatively. The dashed rectangles form the Riemann sum $R_6 = -3.9375$; the four below the axis contribute negative terms. With so few rectangles, the error is large.*
 
+![[m233-35-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Riemann sums ([[§39 The Definite Integral#^def-39-3|Definition §39.3]]) for $f(x) = x^3 - 6x$ on $[0, 3]$ ([[§39 The Definite Integral#^ex-39-1|Example §39.1]]); rectangles above the axis are blue and count positively, those below are orange and count negatively. First $n = 6$: the sample points (red) slide from the left endpoints (sum $-8.4375$) to the right endpoints (sum $R_6 = -3.9375$, as in the example). The bar at right shows the current sum (red) inside the band of all possible sums for this $n$, from taking the minimum or the maximum of $f$ on every subinterval: $[-11.27, -1.12]$ for $n = 6$. Then $n = 12, 24, 48, 96$, each with the same slide: the band shrinks to $[-7.06, -6.43]$ for $n = 96$ around the integral $-6.75$ (green), so the choice of sample points stops mattering in the limit ([[§39 The Definite Integral#^thm-39-1|Theorem §39.1]]).
+
 For $f(x) = e^x$ on $[1, 3]$ the same method gives $\int_1^3 e^x\,dx = \lim_{n \to \infty} \frac2n \sum_{i=1}^{n} e^{1 + 2i/n}$, a geometric sum that a computer algebra system evaluates to $e^3 - e$ (Stewart, Example 5.2.4). Integrals of positive functions whose graphs are familiar shapes can be read off as areas:
 
 > [!example] Example §39.2: Integrals as Areas

@@ -102,6 +102,10 @@ The derivative $dy/dx$ is the rate of change of $y$ with respect to $x$ ([[§14 
 ![[m233-20-1.svg]]
 *[[§23 Rates of Change in the Natural and Social Sciences#^ex-23-1|Example §23.1]]: position $s$ (red), velocity $v$ (blue) and acceleration $a$ (green) for $0 \le t \le 5$. The particle reverses direction where $v = 0$ ($t = 1, 3$), and $a = 0$ at $t = 2$. It speeds up on the shaded intervals, where $v$ and $a$ have the same sign, and slows down on the others.*
 
+![[m233-20-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* [[§23 Rates of Change in the Natural and Social Sciences#^ex-23-1|Example §23.1]] in motion. The particle (top) moves along the $s$-axis as $t$ runs from $0$ to $5$, drawn on three lanes: forward from $s = 0$ to $s = 4$, back to $s = 0$, forward to $s = 20$. Below, cursors run along $s$ (red), $v = 3t^2 - 12t + 9$ (blue) and $a = 6t - 12$ (green), with the readouts $s, v, a$. The particle stops and reverses at $t = 1$ and $t = 3$, where $v = 0$. Its trail is orange where it speeds up ($1 < t < 2$ and $t > 3$, where $v$ and $a$ have the same sign: the shaded intervals) and black where it slows down. Total distance $4 + 4 + 20 = 28$ m, net displacement $20$ m.
+
 > [!definition] Definition §23.4: Linear Density
 > **Linear density.** Let the mass of a rod (or piece of wire), measured from its left end to the point $x$, be $m = f(x)$. The mass between $x_1$ and $x_2$ is $\Delta m = f(x_2) - f(x_1)$, and $\Delta m / \Delta x$ is the average density of that part of the rod. The **linear density** at $x_1$ is the limit of these average densities:
 >

@@ -59,6 +59,10 @@ This integral is abbreviated $\int_C \mathbf{F} \cdot d\mathbf{r}$, and it makes
 
 ^def-127-2
 
+![[m452-16-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Definitions §127.1 and §127.2 in motion, reused from MATH 452 (Multivariable Analysis). A particle runs along a plane curve $C$, $\mathbf{r}(t)$ with $0 \le t \le 1$ (blue; the dots are equal steps in $t$, so the parametrization's speed is uneven), through the force field $\mathbf{F} = \langle -0.8(y - 0.75),\ 0.25\sin x\rangle$, chosen for the picture in 452 (grey arrows; the arrow at the particle shows $\mathbf{F}$ there, the red arrow the direction of travel). The title gives $\mathbf{F}(\mathbf{r}(t)) \cdot \mathbf{r}'(t)$, and the lower panel draws the work done so far, $\int_0^t \mathbf{F}(\mathbf{r}(u)) \cdot \mathbf{r}'(u)\,du$, against $t$. The work rises where $\mathbf{F}$ points along the motion, as at the start, and falls where it points against it, as on top of the hump, where the field pushes back toward the left; it even dips below $0$ before ending slightly positive. Only the tangential component $\mathbf{F} \cdot \mathbf{T}$ counts: the part of $\mathbf{F}$ across the curve does no work. The GIF is two-dimensional; Stewart's definitions are stated for fields on $\mathbb{R}^3$, of which this is the special case with no $\mathbf{k}$-components.
+
 > [!remark]- Connections
 > - The work integral in 452: [[§27 Line Integrals and Green's Theorem#^def-27-2|452 Def. §27.2]]. In the language of forms it is the integral of the 1-form $P\,dx + Q\,dy + R\,dz$, computed by pulling it back along $\mathbf{r}$: [[§37 The Algebra of Differential Forms#^ex-37-2|452 Ex. §37.2]], [[§38 The Exterior Derivative#^def-38-2|452 Def. §38.2]].
 

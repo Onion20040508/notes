@@ -160,3 +160,7 @@ The proof uses the Jacobian of the pair of real functions $u$, $v$.
 > *B&C: Sec. 114 (text, the hypothesis f′(z₀) ≠ 0); the example is added*
 
 ^ex-114-3
+
+![[m452-13-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Reused from Multivariable Analysis (§16, the inverse function theorem), where $w = z^2$ appears as the real map $u = x^2 - y^2$, $v = 2xy$ (§14 (1)); here it illustrates Examples §114.2 and §114.3. A small square moves in the $z$ plane and its image moves in the $w$ plane. Away from $0$ the image is again a small square, turned and scaled by $f'(z) = 2z \ne 0$, and the map is one to one near each point, so a local inverse exists there (a branch of $w^{1/2}$, as in Example §114.2). But once around the origin in the $z$ plane is twice around in the $w$ plane, so no single inverse works globally. Then the square moves into the critical point $z_0 = 0$, where the Jacobian $|f'(z)|^2 = 4(x^2 + y^2)$ tends to $0$, and the image is crushed to a point: there is no local inverse at $0$ (Example §114.3).

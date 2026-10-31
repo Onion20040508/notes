@@ -56,6 +56,10 @@ In [[§14 Derivatives and Rates of Change|§14]] the derivative was computed at 
 
 ^ex-15-1
 
+![[m233-13-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* The tangent line (red) slides along $f(x) = x^3 - x$ from $x = -1.5$ to $x = 1.5$, and its slope is plotted directly below as the height of a point, which traces the graph of $f'(x) = 3x^2 - 1$ ([[§15 The Derivative as a Function#^ex-15-1|Example §15.1]]). The readout shows $x$ and the slope. Where the tangent is horizontal, at $x = \pm 1/\sqrt3$ (green), the point below crosses the $x$-axis; where $f$ rises steeply at the ends, $f'$ is large (slope $5.75$ at $x = 1.5$). This is the "from a graph" method of the remark above, done continuously.
+
 > [!example] Example §15.2: The Square Root
 > If $f(x) = \sqrt{x}$, find the derivative of $f$ and state the domain of $f'$.
 >
@@ -242,6 +246,10 @@ In [[§14 Derivatives and Rates of Change|§14]] the derivative was computed at 
 
 ![[m233-13-1.svg]]
 *The three ways for $f$ not to be differentiable at $a$. (a) A corner: the one-sided slopes $\lim_{h \to 0^\pm} \frac{f(a + h) - f(a)}{h}$ (dashed) differ. (b) A jump discontinuity: by [[§15 The Derivative as a Function#^thm-15-1|Theorem §15.1]] there can be no derivative. (c) A vertical tangent: $f$ is continuous at $a$, but the tangent lines (dashed) steepen without bound, here for a graph of the form $y = c + k\sqrt[3]{x - a}$.*
+
+![[m233-13-a2.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The visual test of the remark above ([[§15 The Derivative as a Function#^rem-15-3|Remark: Three Ways to Fail]]). Both graphs are shown in the window $-w \le x \le w$ with equal scales, and $w$ shrinks from $1$ to $0.01$ and back. $y = |x|$ looks exactly the same at every scale, with slopes $-1$ and $1$ on the two sides of a corner that never goes away: it is not differentiable at $0$ ([[§15 The Derivative as a Function#^ex-15-4|Example §15.4]]). $y = x^2$ flattens into its tangent line $y = 0$: at the window's edge its slope is $\pm 2w$, which goes to $0$. Differentiable at $0$ means the graph looks like a line under enough zoom.
 
 ## Higher Derivatives
 

@@ -40,6 +40,10 @@ The characteristic equation of an $n \times n$ matrix has exactly $n$ roots, cou
 
 ^ex-44-1
 
+![[ladr-7.52-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 7.52). The rotation matrix $\begin{bmatrix} \cos\varphi & -\sin\varphi \\ \sin\varphi & \cos\varphi \end{bmatrix}$ as $\varphi$ runs once around (Axler's $\theta$). Over $\mathbb{R}$ it turns the unit square without changing lengths, and no nonzero vector keeps its direction except at $\varphi = 0^\circ$ and $180^\circ$. Over $\mathbb{C}$ its eigenvalues $e^{\pm i\varphi} = \cos\varphi \pm i\sin\varphi$ move around the unit circle as mirror images of each other, and they are real only at those two angles. Example §44.1(a) is the moment $\varphi = 90^\circ$, with eigenvalues $\pm i$.
+
 > [!example] Example §44.2: Complex Eigenvectors
 > Let $A = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}$. Find the eigenvalues of $A$ and a basis for each eigenspace.
 >
@@ -109,6 +113,10 @@ Surprisingly, the matrix of [[§44 Complex Eigenvalues#^ex-44-2|Example §44.2]]
 
 ![[m235-36-1.svg]]
 *The iterates $\mathbf{x}_0, \ldots, \mathbf{x}_8$ (large dots) and $\mathbf{x}_9, \ldots, \mathbf{x}_{60}$ (small dots) of $\mathbf{x}_0 = (2, 0)$ under $A = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}$. Each step is a rotation through about $36.9°$ (the argument of $.8 + .6i$) in the coordinates given by $\operatorname{Re}\mathbf{v}_1$ and $\operatorname{Im}\mathbf{v}_1$ (gray, drawn at half length), so the orbit is an ellipse rather than a circle. The points never repeat exactly ($36.87°$ is not a rational fraction of $360°$); they fill out the ellipse.*
+
+![[m235-36-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The two sides of $\mathbf{x} = P\mathbf{u}$ in Examples §44.3 and §44.4, with $P = [\,\operatorname{Re}\mathbf{v}_1\ \operatorname{Im}\mathbf{v}_1\,] = \begin{bmatrix} -2 & -4 \\ 5 & 0 \end{bmatrix}$. On the left, in the $\mathbf{u}$-plane, the rotation $C = P^{-1}AP = \begin{bmatrix} .8 & -.6 \\ .6 & .8 \end{bmatrix}$ turns the point $\mathbf{u}_0 = P^{-1}\mathbf{x}_0 = (0, -.5)$ by $36.9°$ per step, so the iterates stay on a circle of radius $.5$. On the right, the same points are carried over by $P$: the square grid becomes the slanted grid of $P$, the vectors $\frac12\mathbf{e}_1$, $\frac12\mathbf{e}_2$ become $\frac12\operatorname{Re}\mathbf{v}_1$, $\frac12\operatorname{Im}\mathbf{v}_1$ (green), and the circle becomes the ellipse on which $\mathbf{x}_0 = (2, 0)$, $\mathbf{x}_1 = (1, 1.5)$, $\mathbf{x}_2 = (-.4, 2.4)$, … of $A = \begin{bmatrix} .5 & -.6 \\ .75 & 1.1 \end{bmatrix}$ go round, ten steps in all. Each step of $A$ is one turn of $C$ seen through $P$, and since the columns of $P$ are neither perpendicular nor of equal length, the orbit is an ellipse instead of a circle.
 
 ## Real and Imaginary Parts of Vectors
 
@@ -204,6 +212,10 @@ The next result is the basic "building block" for all real $2 \times 2$ matrices
 ^pf-44-3
 
 *Uses:* [[§64 Complex Numbers#^def-64-6|Def. §64.6]], [[§64 Complex Numbers#^def-64-7|Def. §64.7]], [[§41 The Characteristic Equation#^thm-41-4|§41.4]]
+
+![[ladr-7.33-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 7.33). Proposition §44.3 for the rotation–scaling matrix $C = \begin{bmatrix} 2 & -3 \\ 3 & 2 \end{bmatrix}$ ($a = 2$, $b = 3$). Its eigenvalues are $2 \pm 3i = \sqrt{13}\,e^{\pm i\,56.31^\circ}$, so each application of $C$ turns the plane through $\varphi = 56.31^\circ$ and stretches it by $r = |\lambda| = \sqrt{13}$. The dots are the iterates $C^k\mathbf{x}$ for $\mathbf{x} = (1, 0)$, and the view zooms out by $\sqrt{13}$ per step. The curve between the dots is drawn for orientation only. For the matrix $C$ of Example §44.5 the same picture would turn by $26.6^\circ$ and stretch by $\sqrt5$ per step.
 
 > [!remark]- Connections
 > - See also: [[§96★ Linear Transformations#^prop-96-1|342 Prop. §96.1]] (the map $w = Az$ rotates through $\operatorname{Arg} A$ and scales by $|A|$), [[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]] (the Cauchy–Riemann equations make the Jacobian of an analytic map a rotation–scaling matrix) and [[§112★ Preservation of Angles and Scale Factors#^thm-112-1|342 Thm. §112.1]] (so analytic maps preserve angles where $f' \ne 0$).

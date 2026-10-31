@@ -146,4 +146,8 @@ In [[§32 Summary of Curve Sketching|§32]] the graph was the end product of a c
 
 ^ex-33-4
 
+![[m233-30-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* The family $f(x) = 1/(x^2 + 2x + c)$ of [[§33 Graphing with Calculus and Technology#^ex-33-4|Example §33.4]] as $c$ decreases from $3$ to $-1$ (then runs back). For $c > 1$ there is a single bump with maximum $\big(-1, \frac{1}{c - 1}\big)$ (blue) and inflection points at $x = -1 \pm \sqrt{(c - 1)/3}$ (red): as $c \downarrow 1$ the bump shoots up and the inflection points close in on $x = -1$. At $c = 1$ (pause) the graph is $1/(x + 1)^2$ with one vertical asymptote $x = -1$ (dashed). For $c < 1$ the asymptote splits into $x = -1 \pm \sqrt{1 - c}$, which move apart, and between them hangs a negative arch with local maximum $\frac{1}{c - 1}$ ($-0.5$ at $c = -1$) and no inflection point. Every member has the $x$-axis as horizontal asymptote.
+
 Stewart's Example 4.6.4, $f(x) = \sin(x + \sin 2x)$, is handled the same way, but its critical numbers and inflection points can only be estimated from the graphs of $f'$ and $f''$.

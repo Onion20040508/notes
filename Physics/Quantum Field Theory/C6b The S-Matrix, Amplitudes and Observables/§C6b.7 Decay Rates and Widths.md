@@ -3,26 +3,26 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C6b
-section: C6b.5
+section: C6b.7
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6b.4 Lorentz Invariance and Two-Body Phase Space]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.6 Amplitudes from Correlation Functions]] →
+← [[§C6b.6 Lorentz Invariance and Two-Body Phase Space]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.8 Amplitudes from Correlation Functions]] →
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.8 (Principle "Decay rate", paragraph "Reading the formula", Caution "'Corollary of studying interacting wave function (2nd term)'", eq. (BWprop), Figure "breitwigner", paragraph "Relation to non-relativistic decay", eq. (GammaNR), Principle "The width is invariant; the decay rate is time-dilated", paragraph "Checks (filled in)") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part C, slides 22–23, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 101, 107–108, eqs. (4.62)–(4.64), (4.86) · Yu Zhao-Huan, 量子场论讲义, §6.5.4, eqs. (6.367)–(6.378); §6.5.5, eqs. (6.379)–(6.385); §10.6, eqs. (10.259)–(10.275) · the user's PHY 513 notes, Ch. 15 §15.8, paragraph "Two-body decays (filled in)" · PHY 513, Problem Set 8, Problem 4 (= PS Problem 4.2; the user's solution).*
 
-"The other one that's really important and common is … one to $n$, which does not seem like scattering at all": the decay of one particle into $n$ decay products. The wave-packet construction of [[§C6b.2 Wave Packets and the Cross Section|§C6b.2]] was built around two packets and an impact parameter and does not apply as it stands; the lecture stated the result, the decay rate $d\Gamma = |\mathcal M|^2d\Pi_n/2m_A$ ([[§C6b.5 Decay Rates and Widths#^thm-c6b-5-1|Theorem §C6b.5.1]]), with the same final phase space as before ([[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^def-c6b-4-1|Def. §C6b.4.1]]), and derived here by Yu's box route. For two decay products everything but the direction is fixed ([[§C6b.5 Decay Rates and Widths#^thm-c6b-5-2|Theorem §C6b.5.2]]); the decay $\Phi \to \phi\phi$ of Problem Set 8 is worked as the user solved it ([[§C6b.5 Decay Rates and Widths#^ex-c6b-5-1|Example §C6b.5.1]]). In relativistic physics one quotes the width $\Gamma$, an energy, rather than the lifetime. The width also appears in the propagator of an unstable particle, $i/(p^2 - m^2 + im\Gamma)$ in place of the $+i\varepsilon$ ([[§C6b.5 Decay Rates and Widths#^mod-c6b-5-4|Model §C6b.5.4]]); near its pole this is the non-relativistic exponential decay with the rate time-dilated by $m/E_{\mathbf p}$ ([[§C6b.5 Decay Rates and Widths#^thm-c6b-5-6|Theorem §C6b.5.6]]), and its square is the Breit–Wigner resonance of full width $\Gamma$. Yu treats decay widths in §6.5.4, eqs. (6.367)–(6.378), with box normalization, and the width in the propagator in §10.6, eqs. (10.259)–(10.275), where it is derived from the imaginary part of the self-energy.
+"The other one that's really important and common is … one to $n$, which does not seem like scattering at all": the decay of one particle into $n$ decay products. The wave-packet construction of [[§C6b.4 Wave Packets and the Cross Section|§C6b.4]] was built around two packets and an impact parameter and does not apply as it stands; the lecture stated the result, the decay rate $d\Gamma = |\mathcal M|^2d\Pi_n/2m_A$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]), with the same final phase space as before ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^def-c6b-6-1|Def. §C6b.6.1]]), and derived here by Yu's box route. For two decay products everything but the direction is fixed ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-5|Theorem §C6b.7.5]]); the decay $\Phi \to \phi\phi$ of Problem Set 8 is worked as the user solved it ([[§C6b.7 Decay Rates and Widths#^ex-c6b-7-1|Example §C6b.7.1]]). In relativistic physics one quotes the width $\Gamma$, an energy, rather than the lifetime. The width also appears in the propagator of an unstable particle, $i/(p^2 - m^2 + im\Gamma)$ in place of the $+i\varepsilon$ ([[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|Model §C6b.7.7]]); near its pole this is the non-relativistic exponential decay with the rate time-dilated by $m/E_{\mathbf p}$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-9|Theorem §C6b.7.9]]), and its square is the Breit–Wigner resonance of full width $\Gamma$. Yu treats decay widths in §6.5.4, eqs. (6.367)–(6.378), with box normalization, and the width in the propagator in §10.6, eqs. (10.259)–(10.275), where it is derived from the imaginary part of the self-energy.
 
-*Conventions* ([[Larsen PHY 513]]): $A$ is the decaying particle, mass $m_A$, at rest unless said otherwise; $\Gamma$ (width, rest frame) and $\Gamma_{\rm NR}$ (decay constant of a non-relativistic wave function, any frame) as defined below; $S_{\rm id}$ the identical-particle factor ([[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]); $\tilde V$, $\tilde T$ Yu's volume and duration.
+*Conventions* ([[Larsen PHY 513]]): $A$ is the decaying particle, mass $m_A$, at rest unless said otherwise; $\Gamma$ (width, rest frame) and $\Gamma_{\rm NR}$ (decay constant of a non-relativistic wave function, any frame) as defined below; $S_{\rm id}$ the identical-particle factor ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]]); $\tilde V$, $\tilde T$ Yu's volume and duration.
 
 ## The decay rate
 
-> [!definition] Definition §C6b.5.1: Decay Rate, Width and Lifetime
+> [!definition] Definition §C6b.7.1: Decay Rate, Width and Lifetime
 > The **decay rate** $\Gamma$ of an unstable particle $A$ is the probability per unit time that $A$, at rest, decays (into a specified final state, or into anything for the total rate): $\Gamma = \frac{\text{number of decays per unit time}}{\text{number of }A\text{ particles present}}$. In relativistic contexts it is quoted as the **width**, an energy. The **lifetime** is $\tau = 1/\Gamma$.
 >
 > *Source: PHY 513 Lecture 15, slide 22 ("Another important process: $1 \to n$ 'scattering'. Decay of one particle (to $n$ decay products). Result for relativistic decay width: …"), and transcript ("What you do for decay, at least in relativistic context, is that you give not the decay time, you give the width. The width is an energy") · the user's PHY 513 notes, Ch. 15 §15.8, Principle "Decay rate" (last sentence) · PS §4.5, eq. (4.62) · Yu §6.5.4, eqs. (6.367)–(6.370) ($N(t) = N(0)e^{-\Gamma t}$, $\tau \equiv 1/\Gamma$, 衰变宽度)*
 
-^def-c6b-5-1
+^def-c6b-7-1
 
 The definition is the non-relativistic decay constant of a population of particles at rest ([[§A7.2 Radioactive Decay#^def-a7-2-2|QM Def. §A7.2.2]], [[§A7.2 Radioactive Decay#^thm-a7-2-2|QM Theorem §A7.2.2]]; Yu eqs. (6.367)–(6.370)). Separating variables in $dN = -\Gamma N\,dt$ and integrating by parts for the mean life, with the decay-time density $\Gamma e^{-\Gamma t}$:
 
@@ -30,7 +30,7 @@ $$
 \int_{N(0)}^{N(t)}\frac{dN}{N} = -\Gamma\int_0^tdt' \;\Rightarrow\; N(t) = N(0)\,e^{-\Gamma t} , \qquad \langle t\rangle = \int_0^\infty t\,\Gamma e^{-\Gamma t}\,dt = \bigl[-t\,e^{-\Gamma t}\bigr]_0^\infty + \int_0^\infty e^{-\Gamma t}\,dt = 0 + \frac1\Gamma = \tau .
 $$
 
-> [!theorem] Theorem §C6b.5.1: The Decay Rate Formula
+> [!theorem] Theorem §C6b.7.4: The Decay Rate Formula
 > For a particle $A$ of mass $m_A$ decaying at rest into $n$ particles,
 >
 > $$
@@ -41,7 +41,7 @@ $$
 >
 > *Source: PHY 513 Lecture 15, slide 22 ("Result for relativistic decay width: $d\Gamma = \frac{1}{2m_A}\cdot|\mathcal M|^2\cdot d\Pi_n$ with phase space factor for final $n$ particles: $d\Pi_n = \prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\cdot(2\pi)^4\delta^{(4)}(p_A - \sum_ip_i)$"), and transcript · the user's PHY 513 notes, Ch. 15 §15.8, Principle "Decay rate", eq. (dGamma) (stated, not derived, in the lecture: a theorem here, derived by Yu's route) · PS §4.5, eq. (4.86) · Yu §6.5.4, eqs. (6.373)–(6.377)*
 
-^thm-c6b-5-1
+^thm-c6b-7-4
 
 > [!derivation]- Derivation (Yu's route: box normalization)
 > Put the system in a box of volume $\tilde V$ for a time $\tilde T$ ([[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]); then $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ and $(2\pi)^4\delta^4(0) = \int d^4x = \tilde V\tilde T$ (Yu eq. (6.282)).
@@ -84,15 +84,15 @@ $$
 > dR = \frac{1}{2E_A}\prod_j\frac{d^3p_j}{(2\pi)^32E_j}\,(2\pi)^4\delta^4\Bigl(p_A - \sum_jp_j\Bigr)|\mathcal M|^2 = \frac{1}{2E_A}|\mathcal M|^2\,d\Pi_n .
 > $$
 >
-> **Step 5** (rest frame; identical particles). For $A$ at rest $E_A = \sqrt{\mathbf 0^2 + m_A^2} = m_A$, and the rate is $d\Gamma$ of [[§C6b.5 Decay Rates and Widths#^def-c6b-5-1|Def. §C6b.5.1]]:
+> **Step 5** (rest frame; identical particles). For $A$ at rest $E_A = \sqrt{\mathbf 0^2 + m_A^2} = m_A$, and the rate is $d\Gamma$ of [[§C6b.7 Decay Rates and Widths#^def-c6b-7-1|Def. §C6b.7.1]]:
 >
 > $$
 > d\Gamma = dR\big|_{E_A = m_A} = \frac{1}{2m_A}|\mathcal M|^2\,d\Pi_n , \qquad \Gamma = \frac{1}{S_{\rm id}}\int d\Gamma ,
 > $$
 >
-> since integrating over all final momenta counts each state of identical particles $S_{\rm id}$ times ([[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]; Yu eqs. (6.376)–(6.377)).
+> since integrating over all final momenta counts each state of identical particles $S_{\rm id}$ times ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]]; Yu eqs. (6.376)–(6.377)).
 >
-> ⚑ By-product: $[\Gamma] = 1$ for every $n$. With $N = 1 + n$, $[\mathcal M] = 4 - (1 + n) = 3 - n$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]) and $[d\Pi_n] = 2n - 4$ ([[§C6b.3 Evaluating the Cross Section#^der-c6b-3-3|Derivation §C6b.3.3]], Step 2):
+> ⚑ By-product: $[\Gamma] = 1$ for every $n$. With $N = 1 + n$, $[\mathcal M] = 4 - (1 + n) = 3 - n$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]) and $[d\Pi_n] = 2n - 4$ ([[§C6b.5 Evaluating the Cross Section#^der-c6b-5-3|Derivation §C6b.5.3]], Step 2):
 >
 > $$
 > [d\Gamma] = \Bigl[\frac{1}{2m_A}\Bigr] + 2[\mathcal M] + [d\Pi_n] = -1 + 2(3 - n) + (2n - 4) = 1 :
@@ -100,24 +100,24 @@ $$
 >
 > the width is an energy, as the definition demands.
 >
-> ⚑ By-product: in a frame where $A$ moves, Step 4 gives, with $E_A = \gamma m_A$ and $|\mathcal M|^2d\Pi_n$ invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-4|Theorem §C6b.4.4]]),
+> ⚑ By-product: in a frame where $A$ moves, Step 4 gives, with $E_A = \gamma m_A$ and $|\mathcal M|^2d\Pi_n$ invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-4|Theorem §C6b.6.4]]),
 >
 > $$
 > dR = \frac{1}{2E_A}|\mathcal M|^2d\Pi_n = \frac{m_A}{E_A}\cdot\frac{1}{2m_A}|\mathcal M|^2d\Pi_n = \frac{1}{\gamma}\,d\Gamma ,
 > $$
 >
-> smaller by $1/\gamma$: "in any other frame, this factor would give the usual time dilation" (PS p. 107) → [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-6|Theorem §C6b.5.6]].
+> smaller by $1/\gamma$: "in any other frame, this factor would give the usual time dilation" (PS p. 107) → [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-9|Theorem §C6b.7.9]].
 >
 > **What the derivation shows.**
 > - The decay formula is the cross-section formula with the initial-state factor of a single particle: $\frac{1}{2E_A}$ from its normalization, no flux; "the final phase space … just went on for the ride".
-> - The box route squares a delta function, $(2\pi)^4\delta^4(0) = \tilde V\tilde T$; the factors cancel, which is why the result is finite. A wave-packet derivation for one particle, as in [[§C6b.2 Wave Packets and the Cross Section|§C6b.2]]–[[§C6b.3 Evaluating the Cross Section|§C6b.3]], is "similar" (slide 22) and was not done.
+> - The box route squares a delta function, $(2\pi)^4\delta^4(0) = \tilde V\tilde T$; the factors cancel, which is why the result is finite. A wave-packet derivation for one particle, as in [[§C6b.4 Wave Packets and the Cross Section|§C6b.4]]–[[§C6b.5 Evaluating the Cross Section|§C6b.5]], is "similar" (slide 22) and was not done.
 > - The decay is kinematically possible only if $m_A > \sum_im_i$ (Yu eq. (6.378)): in the rest frame $\delta^4(p_A - \sum p_i)$ requires $m_A = \sum_iE_i \ge \sum_im_i$, with equality only at $\mathbf p_i = 0$ for all $i$; otherwise the delta function has no support.
 
-^der-c6b-5-1
+^der-c6b-7-4
 
-*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]], [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]], [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^def-c6b-4-1|Def. §C6b.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-4|Theorem §C6b.4.4]]
+*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]], [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]], [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^def-c6b-6-1|Def. §C6b.6.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-4|Theorem §C6b.6.4]]
 
-> [!theorem] Theorem §C6b.5.2: Two-Body Decays
+> [!theorem] Theorem §C6b.7.5: Two-Body Decays
 > Let $A$ (mass $m_A$, at rest) decay into two particles of masses $m_1$, $m_2$, $m_A > m_1 + m_2$. Then
 > 1. $\displaystyle\int d\Pi_2\,F = \int d\Omega\,\frac{|\mathbf p_1|}{16\pi^2m_A}\,F$, with $|\mathbf p_1| = |\mathbf p_2| = \frac{\lambda^{1/2}(m_A^2, m_1^2, m_2^2)}{2m_A}$, $E_1 = \frac{m_A^2 + m_1^2 - m_2^2}{2m_A}$; in particular $\displaystyle\int d\Pi_2 = \frac{|\mathbf p_1|}{4\pi m_A}$;
 > 2. if $|\mathcal M|^2$ does not depend on the direction of $\mathbf p_1$,
@@ -134,16 +134,16 @@ $$
 >
 > *Source: Yu §6.5.5, eqs. (6.379)–(6.385) (page image checked: (6.383) boxed, (6.385) the equal-mass form, "如果两个末态粒子是全同粒子，则 $\mathcal S = 2$") · the user's PHY 513 notes, Ch. 15 §15.8 (paragraph "Two-body decays (filled in)", citing "Yu's (6.385)": correct) · PHY 513, Problem Set 8, Problem 4 (the user's $\int d\Pi_2 = p_\ast/(4\pi M)$) · PS §4.5, eqs. (4.81)–(4.82) for the phase space*
 
-^thm-c6b-5-2
+^thm-c6b-7-5
 
 > [!derivation]- Derivation
-> **Step 1** (phase space). The rest frame of $A$ is the centre-of-mass frame of the products, $P = p_A = (m_A, \mathbf 0)$, $E_{\rm cm} = m_A$. [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-5|Theorem §C6b.4.5]] and [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-6|Theorem §C6b.4.6]] with $E_{\rm cm} \to m_A$ give part 1's first two formulas (Yu (6.379)–(6.381)). With $F = 1$ the integrand does not depend on $\Omega$, $\int d\Omega = 4\pi$:
+> **Step 1** (phase space). The rest frame of $A$ is the centre-of-mass frame of the products, $P = p_A = (m_A, \mathbf 0)$, $E_{\rm cm} = m_A$. [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-5|Theorem §C6b.6.5]] and [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-6|Theorem §C6b.6.6]] with $E_{\rm cm} \to m_A$ give part 1's first two formulas (Yu (6.379)–(6.381)). With $F = 1$ the integrand does not depend on $\Omega$, $\int d\Omega = 4\pi$:
 >
 > $$
 > \int d\Pi_2 = 4\pi\,\frac{|\mathbf p_1|}{16\pi^2m_A} = \frac{|\mathbf p_1|}{4\pi m_A} .
 > $$
 >
-> **Step 2** (the width). By [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-1|Theorem §C6b.5.1]] with $n = 2$ and part 1 with $F = |\mathcal M|^2$ constant in $\Omega$:
+> **Step 2** (the width). By [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]] with $n = 2$ and part 1 with $F = |\mathcal M|^2$ constant in $\Omega$:
 >
 > $$
 > \Gamma = \frac{1}{S_{\rm id}}\,\frac{1}{2m_A}\int d\Omega\,\frac{|\mathbf p_1|}{16\pi^2m_A}|\mathcal M|^2 = \frac{1}{S_{\rm id}}\,\frac{1}{2m_A}\cdot4\pi\cdot\frac{|\mathbf p_1|}{16\pi^2m_A}|\mathcal M|^2 = \frac{1}{S_{\rm id}}\,\frac{|\mathbf p_1|}{8\pi m_A^2}|\mathcal M|^2
@@ -165,24 +165,24 @@ $$
 > - A two-body decay at rest has no free kinematics: the energies and $|\mathbf p_1|$ are fixed numbers, and only the direction is integrated.
 > - The phase-space factor vanishes like $\beta$ at threshold $m_A \to m_1 + m_2$.
 
-^der-c6b-5-2
+^der-c6b-7-5
 
-*Uses:* [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-5|Theorem §C6b.4.5]], [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-6|Theorem §C6b.4.6]], [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-1|Theorem §C6b.5.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]
+*Uses:* [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-5|Theorem §C6b.6.5]], [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-6|Theorem §C6b.6.6]], [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]
 
-> [!example] Example §C6b.5.1: Φ → φφ, the Lifetime at Lowest Order
+> [!example] Example §C6b.7.1: Φ → φφ, the Lifetime at Lowest Order
 > For $\mathcal L = \frac12(\partial_\mu\Phi)^2 - \frac12M^2\Phi^2 + \frac12(\partial_\mu\phi)^2 - \frac12m^2\phi^2 - \mu\,\Phi\phi^2$ with $M > 2m$, to lowest order in $\mu$:
 >
 > $$
 > \mathcal M = -2\mu, \qquad \Gamma = \frac{\mu^2}{8\pi M}\sqrt{1 - \frac{4m^2}{M^2}}, \qquad \tau = \frac1\Gamma = \frac{8\pi M^2}{\mu^2\sqrt{M^2 - 4m^2}} .
 > $$
 >
-> **Step 1** (the amplitude). No derivatives, so $\hat{\mathcal H}_I = -\mathcal L_I = \mu\hat\Phi\hat\phi^2$ and $-i\int dt\,\hat H_I = -i\mu\int d^4x\,\hat\Phi_I\hat\phi_I^2$. With $\hat b$, $\hat a$ the annihilators of $\hat\Phi$, $\hat\phi$ and relativistically normalized states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), $|\mathbf K\rangle_\Phi = \sqrt{2E^\Phi_{\mathbf K}}\,\hat b^\dagger_{\mathbf K}|0\rangle$, $|\mathbf p_1\mathbf p_2\rangle = \sqrt{2E_{\mathbf p_1}}\sqrt{2E_{\mathbf p_2}}\,\hat a^\dagger_{\mathbf p_1}\hat a^\dagger_{\mathbf p_2}|0\rangle$ (as needed by [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-1|Theorem §C6b.5.1]]):
+> **Step 1** (the amplitude). No derivatives, so $\hat{\mathcal H}_I = -\mathcal L_I = \mu\hat\Phi\hat\phi^2$ and $-i\int dt\,\hat H_I = -i\mu\int d^4x\,\hat\Phi_I\hat\phi_I^2$. With $\hat b$, $\hat a$ the annihilators of $\hat\Phi$, $\hat\phi$ and relativistically normalized states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), $|\mathbf K\rangle_\Phi = \sqrt{2E^\Phi_{\mathbf K}}\,\hat b^\dagger_{\mathbf K}|0\rangle$, $|\mathbf p_1\mathbf p_2\rangle = \sqrt{2E_{\mathbf p_1}}\sqrt{2E_{\mathbf p_2}}\,\hat a^\dagger_{\mathbf p_1}\hat a^\dagger_{\mathbf p_2}|0\rangle$ (as needed by [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]):
 >
 > $$
 > \mathcal A = \langle\mathbf p_1\mathbf p_2|\,T\Bigl\{\exp\Bigl[-i\mu\int d^4x\,\hat\Phi_I(x)\hat\phi_I(x)^2\Bigr]\Bigr\}|\mathbf K\rangle_\Phi
 > $$
 >
-> ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]; [[§C6b.5 Decay Rates and Widths#^cau-c6b-5-1|Caution: Free states in a decay amplitude]]).
+> ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]; [[§C6b.7 Decay Rates and Widths#^cau-c6b-7-1|Caution: Free states in a decay amplitude]]).
 >
 > **Step 2** (order zero). $\langle\mathbf p_1\mathbf p_2|\mathbf K\rangle_\Phi \propto \langle0|\hat a_{\mathbf p_1}\hat a_{\mathbf p_2}\hat b^\dagger_{\mathbf K}|0\rangle = \langle0|\hat b^\dagger_{\mathbf K}\hat a_{\mathbf p_1}\hat a_{\mathbf p_2}|0\rangle = 0$: different fields commute, and $\hat a|0\rangle = 0$.
 >
@@ -192,7 +192,7 @@ $$
 > \hat\Phi_I^+(x)|\mathbf K\rangle_\Phi = \sqrt{2E^\Phi_{\mathbf K}}\,[\hat\Phi_I^+(x), \hat b^\dagger_{\mathbf K}]|0\rangle = \sqrt{2E^\Phi_{\mathbf K}}\int\frac{d^3q}{(2\pi)^3}\frac{e^{-iq\cdot x}}{\sqrt{2E^\Phi_{\mathbf q}}}(2\pi)^3\delta^3(\mathbf q - \mathbf K)|0\rangle = e^{-iK\cdot x}|0\rangle, \quad K^0 = E^\Phi_{\mathbf K} .
 > $$
 >
-> **Step 4** (order one, the $\phi$ end). In $\hat\phi_I\hat\phi_I = (\hat\phi_I^+ + \hat\phi_I^-)(\hat\phi_I^+ + \hat\phi_I^-)$ acting on $|0\rangle$, terms with $\hat\phi_I^+$ on the right vanish, and $\hat\phi_I^+\hat\phi_I^-|0\rangle = [\hat\phi_I^+, \hat\phi_I^-]|0\rangle$ is a number times $|0\rangle$, orthogonal to $\langle\mathbf p_1\mathbf p_2|$. Only $\hat\phi_I^-\hat\phi_I^-$ remains; each of $\hat a_{\mathbf p_1}$, $\hat a_{\mathbf p_2}$ contracts with one of the two fields, in $2$ ways, each giving $\sqrt{2E_{\mathbf p_i}}[\hat a_{\mathbf p_i}, \hat\phi_I^-(x)] = e^{ip_i\cdot x}$ (the one-particle case of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]; general form [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^lem-c6b-7-4|Lemma §C6b.7.4]]):
+> **Step 4** (order one, the $\phi$ end). In $\hat\phi_I\hat\phi_I = (\hat\phi_I^+ + \hat\phi_I^-)(\hat\phi_I^+ + \hat\phi_I^-)$ acting on $|0\rangle$, terms with $\hat\phi_I^+$ on the right vanish, and $\hat\phi_I^+\hat\phi_I^-|0\rangle = [\hat\phi_I^+, \hat\phi_I^-]|0\rangle$ is a number times $|0\rangle$, orthogonal to $\langle\mathbf p_1\mathbf p_2|$. Only $\hat\phi_I^-\hat\phi_I^-$ remains; each of $\hat a_{\mathbf p_1}$, $\hat a_{\mathbf p_2}$ contracts with one of the two fields, in $2$ ways, each giving $\sqrt{2E_{\mathbf p_i}}[\hat a_{\mathbf p_i}, \hat\phi_I^-(x)] = e^{ip_i\cdot x}$ (the one-particle case of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]; general form [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^lem-c6b-9-4|Lemma §C6b.9.4]]):
 >
 > $$
 > \langle\mathbf p_1\mathbf p_2|\hat\phi_I^-(x)\hat\phi_I^-(x)|0\rangle = e^{ip_1\cdot x}e^{ip_2\cdot x} + e^{ip_2\cdot x}e^{ip_1\cdot x} = 2\,e^{i(p_1 + p_2)\cdot x}, \qquad p_i^0 = E_{\mathbf p_i} .
@@ -204,9 +204,9 @@ $$
 > \mathcal A^{(1)} = -2i\mu\int d^4x\,e^{i(p_1 + p_2 - K)\cdot x} = -2i\mu\,(2\pi)^4\delta^4(K - p_1 - p_2) ,
 > $$
 >
-> and comparing with $\langle f|i\hat T|i\rangle = (2\pi)^4\delta^4(\sum p_{\rm in} - \sum p_{\rm out})\,i\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]): $i\mathcal M = -2i\mu$, $\mathcal M = -2\mu$, momentum independent (no derivatives in the vertex). The $2 = 2!$ is the vertex factor's count of ways to attach two distinct lines to the two $\phi$ legs ([[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-3|Theorem §C6b.6.3]]).
+> and comparing with $\langle f|i\hat T|i\rangle = (2\pi)^4\delta^4(\sum p_{\rm in} - \sum p_{\rm out})\,i\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]): $i\mathcal M = -2i\mu$, $\mathcal M = -2\mu$, momentum independent (no derivatives in the vertex). The $2 = 2!$ is the vertex factor's count of ways to attach two distinct lines to the two $\phi$ legs ([[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-3|Theorem §C6b.8.3]]).
 >
-> **Step 6** (identical particles). $|\mathbf p_1\mathbf p_2\rangle = |\mathbf p_2\mathbf p_1\rangle$, so integrating $\mathbf p_1$ and $\mathbf p_2$ independently counts each final state twice: $S_{\rm id} = 2!$ ([[§C6b.5 Decay Rates and Widths#^thm-c6b-5-1|Theorem §C6b.5.1]]; the $\frac{1}{n!}$ of the $n$-particle measure, [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-7-6|Theorem §C6b.7.6]]).
+> **Step 6** (identical particles). $|\mathbf p_1\mathbf p_2\rangle = |\mathbf p_2\mathbf p_1\rangle$, so integrating $\mathbf p_1$ and $\mathbf p_2$ independently counts each final state twice: $S_{\rm id} = 2!$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]; the $\frac{1}{n!}$ of the $n$-particle measure, [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-9-6|Theorem §C6b.9.6]]).
 >
 > **Step 7** ($\int d\Pi_2$ with $\delta(f(p))$, the user's evaluation). At rest, $\mathbf p_2 = -\mathbf p_1$ by the $\delta^3$, $E_{\mathbf p_2} = E_{\mathbf p_1} \equiv E_p$, $p = |\mathbf p_1|$, and $d^3p_1 = p^2\,dp\,d\Omega$:
 >
@@ -220,7 +220,7 @@ $$
 > \delta(M - 2E_p) = \frac{E_\ast}{2p_\ast}\,\delta(p - p_\ast), \qquad \int d\Pi_2 = 4\pi\cdot\frac{2\pi}{(2\pi)^3}\cdot\frac{p_\ast^2}{4E_\ast^2}\cdot\frac{E_\ast}{2p_\ast} = \frac{p_\ast}{8\pi E_\ast} = \frac{p_\ast}{4\pi M} = \frac{1}{8\pi}\sqrt{1 - \frac{4m^2}{M^2}} ,
 > $$
 >
-> [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-2|Theorem §C6b.5.2]], 3.
+> [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-5|Theorem §C6b.7.5]], 3.
 >
 > **Step 8** (width and lifetime). $|\mathcal M|^2 = 4\mu^2$ is constant:
 >
@@ -228,18 +228,18 @@ $$
 > \Gamma = \frac12\cdot\frac{1}{2M}\cdot4\mu^2\cdot\frac{1}{8\pi}\sqrt{1 - \frac{4m^2}{M^2}} = \frac{\mu^2}{8\pi M}\sqrt{1 - \frac{4m^2}{M^2}}, \qquad \tau = \frac{8\pi M}{\mu^2}\Bigl(1 - \frac{4m^2}{M^2}\Bigr)^{-1/2} = \frac{8\pi M^2}{\mu^2\sqrt{M^2 - 4m^2}} ;
 > $$
 >
-> the same from Theorem §C6b.5.2, 3: $\frac12\frac{4\mu^2}{16\pi M}\beta$. $[\mu] = 1$ ($[\Phi\phi^2] = 3$), $[\Gamma] = 2 - 1 = 1$.
+> the same from Theorem §C6b.7.5, 3: $\frac12\frac{4\mu^2}{16\pi M}\beta$. $[\mu] = 1$ ($[\Phi\phi^2] = 3$), $[\Gamma] = 2 - 1 = 1$.
 >
 > *Source: PHY 513, Problem Set 8, Problem 4 (= PS Problem 4.2; the user's solution, Steps 1–8 as written there) · Yu §6.5.5, eq. (6.385)*
 
-^ex-c6b-5-1
+^ex-c6b-7-1
 
 > [!caution] Caution: Free states in a decay amplitude
-> The user's solution: "The interaction does not switch off, so the free states are not exactly the asymptotic states; to lowest order in $\mu$ this does not matter, the corrections from external legs and the vacuum entering at higher order." For an unstable particle this is the subtlety PS raise (pp. 107–108; [[§C6b.5 Decay Rates and Widths#^cau-c6b-5-2|Caution: "Corollary of studying interacting wave function (2nd term)"]]); beyond lowest order the external legs carry $\sqrt Z$ and the physical mass ([[§C6b.6 Amplitudes from Correlation Functions#^cau-c6b-6-2|§C6b.6, Caution: The rule is stated at lowest order]]); "free" in the $S$-matrix means widely separated ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|§C6b.1, Caution: "Free" means widely separated]]).
+> The user's solution: "The interaction does not switch off, so the free states are not exactly the asymptotic states; to lowest order in $\mu$ this does not matter, the corrections from external legs and the vacuum entering at higher order." For an unstable particle this is the subtlety PS raise (pp. 107–108; [[§C6b.7 Decay Rates and Widths#^cau-c6b-7-2|Caution: "Corollary of studying interacting wave function (2nd term)"]]); beyond lowest order the external legs carry $\sqrt Z$ and the physical mass ([[§C6b.8 Amplitudes from Correlation Functions#^cau-c6b-8-2|§C6b.8, Caution: The rule is stated at lowest order]]); "free" in the $S$-matrix means widely separated ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|§C6b.1, Caution: "Free" means widely separated]]).
 >
 > *Source: PHY 513, Problem Set 8, Problem 4 (the user's solution, paragraph "Amplitude")*
 
-^cau-c6b-5-1
+^cau-c6b-7-1
 
 
 > [!remark] Remark: Reading the decay formula
@@ -247,17 +247,17 @@ $$
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.8 (paragraph "Reading the formula")*
 
-^rem-c6b-5-1
+^rem-c6b-7-1
 
 > [!caution] Caution: "Corollary of studying interacting wave function (2nd term)"
-> Slide 22 gives two routes to [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-1|Theorem §C6b.5.1]]: "Derivation similar (wave packets, square amplitude, …)", or "Corollary of studying interacting wave function (2nd term)". The lecture explained the second: in an interacting theory a one-particle state is not just $\hat a^\dagger|0\rangle$ but "a dagger with all the rest stuff", and studying such states in detail, for other reasons, in the second term, produces the formula "kind of like for free". Concretely, an unstable particle's two-point function develops an imaginary part, and $\Gamma$ is read off from it (Yu eq. (10.265); ★ Remark: Yu's route to the width, below). Neither derivation is done in the course this term. A further subtlety (PS pp. 107–108): an unstable particle cannot be prepared in the infinitely distant past, so the definition of $\mathcal M$ through in and out states "makes no sense in this context"; the formula is nevertheless correct when $\mathcal M$ is computed with the Feynman rules ([[§C6b.6 Amplitudes from Correlation Functions|§C6b.6]]).
+> Slide 22 gives two routes to [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]: "Derivation similar (wave packets, square amplitude, …)", or "Corollary of studying interacting wave function (2nd term)". The lecture explained the second: in an interacting theory a one-particle state is not just $\hat a^\dagger|0\rangle$ but "a dagger with all the rest stuff", and studying such states in detail, for other reasons, in the second term, produces the formula "kind of like for free". Concretely, an unstable particle's two-point function develops an imaginary part, and $\Gamma$ is read off from it (Yu eq. (10.265); ★ Remark: Yu's route to the width, below). Neither derivation is done in the course this term. A further subtlety (PS pp. 107–108): an unstable particle cannot be prepared in the infinitely distant past, so the definition of $\mathcal M$ through in and out states "makes no sense in this context"; the formula is nevertheless correct when $\mathcal M$ is computed with the Feynman rules ([[§C6b.8 Amplitudes from Correlation Functions|§C6b.8]]).
 >
 > *Source: PHY 513 Lecture 15, slide 22 (page image), and transcript · the user's PHY 513 notes, Ch. 15 §15.8, Caution "'Corollary of studying interacting wave function (2nd term)'" · PS §4.5, pp. 107–108*
 
-^cau-c6b-5-2
+^cau-c6b-7-2
 
-> [!theorem]- ★ Theorem §C6b.5.3: Partial Widths Add
-> Let $A$ decay into final-state channels $f$ (distinct particle contents). The **partial width** of channel $f$ is $\Gamma_f = \frac{1}{S_{{\rm id},f}}\int d\Gamma_f$ with $d\Gamma_f$ of [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-1|Theorem §C6b.5.1]] for that channel, and the **branching ratio** is $B_f = \Gamma_f/\Gamma$. Then
+> [!theorem]- ★ Theorem §C6b.7.6: Partial Widths Add
+> Let $A$ decay into final-state channels $f$ (distinct particle contents). The **partial width** of channel $f$ is $\Gamma_f = \frac{1}{S_{{\rm id},f}}\int d\Gamma_f$ with $d\Gamma_f$ of [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]] for that channel, and the **branching ratio** is $B_f = \Gamma_f/\Gamma$. Then
 >
 > $$
 > \Gamma = \sum_f\Gamma_f , \qquad \sum_fB_f = 1 , \qquad \tau = \frac1\Gamma = \frac{1}{\sum_f\Gamma_f} .
@@ -265,29 +265,29 @@ $$
 >
 > *Source: Yu §6.5.4, eqs. (6.371)–(6.372) · PS §4.5, p. 101 ("the reciprocal of the sum of its decay rates into all possible final states") · not in the lecture*
 
-^thm-c6b-5-3
+^thm-c6b-7-6
 
 > [!derivation]- Derivation
-> **Step 1** (channels are orthogonal sectors). States of different particle content are orthogonal, and the identity on the states $A$ can decay into is $\mathbb 1 = \sum_f\mathbb 1_f$ with $\mathbb 1_f = \frac{1}{S_{{\rm id},f}}\int\prod_i\frac{d^3p_i}{(2\pi)^32E_i}|\mathbf p_1\cdots\rangle\langle\mathbf p_1\cdots|$ ([[§C6b.3 Evaluating the Cross Section#^der-c6b-3-4|Derivation §C6b.3.4]], Step 2).
+> **Step 1** (channels are orthogonal sectors). States of different particle content are orthogonal, and the identity on the states $A$ can decay into is $\mathbb 1 = \sum_f\mathbb 1_f$ with $\mathbb 1_f = \frac{1}{S_{{\rm id},f}}\int\prod_i\frac{d^3p_i}{(2\pi)^32E_i}|\mathbf p_1\cdots\rangle\langle\mathbf p_1\cdots|$ ([[§C6b.5 Evaluating the Cross Section#^der-c6b-5-4|Derivation §C6b.5.4]], Step 2).
 >
-> **Step 2** (rates add). The decay probability per unit time of [[§C6b.5 Decay Rates and Widths#^def-c6b-5-1|Def. §C6b.5.1]] is the sum over the sectors of Step 1 of the rate into each, which [[§C6b.5 Decay Rates and Widths#^der-c6b-5-1|Derivation §C6b.5.1]], Steps 3–5, computes sector by sector:
+> **Step 2** (rates add). The decay probability per unit time of [[§C6b.7 Decay Rates and Widths#^def-c6b-7-1|Def. §C6b.7.1]] is the sum over the sectors of Step 1 of the rate into each, which [[§C6b.7 Decay Rates and Widths#^der-c6b-7-4|Derivation §C6b.7.4]], Steps 3–5, computes sector by sector:
 >
 > $$
 > \Gamma = \sum_f\frac{1}{S_{{\rm id},f}}\int\frac{1}{2m_A}|\mathcal M(A \to f)|^2\,d\Pi_{n_f} = \sum_f\Gamma_f .
 > $$
 >
-> **Step 3** (branching ratios and lifetime). Divide by $\Gamma$: $\sum_fB_f = \sum_f\frac{\Gamma_f}{\Gamma} = \frac{\Gamma}{\Gamma} = 1$; and $\tau = 1/\Gamma$ ([[§C6b.5 Decay Rates and Widths#^def-c6b-5-1|Def. §C6b.5.1]]) $= 1/\sum_f\Gamma_f$.
+> **Step 3** (branching ratios and lifetime). Divide by $\Gamma$: $\sum_fB_f = \sum_f\frac{\Gamma_f}{\Gamma} = \frac{\Gamma}{\Gamma} = 1$; and $\tau = 1/\Gamma$ ([[§C6b.7 Decay Rates and Widths#^def-c6b-7-1|Def. §C6b.7.1]]) $= 1/\sum_f\Gamma_f$.
 >
 > **What the derivation shows.**
 > - The total width is a sum of independent channel widths because the final states of different channels are orthogonal; the lifetime is set by the sum, not by any one channel.
 
-^der-c6b-5-3
+^der-c6b-7-6
 
-*Uses:* [[§C6b.5 Decay Rates and Widths#^def-c6b-5-1|Def. §C6b.5.1]], [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-1|Theorem §C6b.5.1]], [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]
+*Uses:* [[§C6b.7 Decay Rates and Widths#^def-c6b-7-1|Def. §C6b.7.1]], [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]], [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]]
 
 ## The width in the propagator
 
-> [!model] Model §C6b.5.4: The Propagator of an Unstable Particle
+> [!model] Model §C6b.7.7: The Propagator of an Unstable Particle
 > Near its mass shell, the propagator of an unstable scalar particle of mass $m$ and width $\Gamma$ is
 >
 > $$
@@ -300,9 +300,9 @@ $$
 >
 > *Source: PHY 513 Lecture 15, slide 23 ("Propagator in QFT with radiative corrections: $\frac{1}{p^2 - m^2 + im\Gamma}$"), and transcript ("you might be more happy if I actually give it dimensions … It's an $i m\Gamma$, where $\Gamma$ is a width") · the user's PHY 513 notes, Ch. 15 §15.8, eq. (BWprop) · PS §4.5, eq. (4.64) · Yu §10.6, eq. (10.270) (derived there from the self-energy, with $Z \simeq 1$)*
 
-^mod-c6b-5-4
+^mod-c6b-7-7
 
-> [!theorem] Theorem §C6b.5.5: The Propagator Near Its Pole
+> [!theorem] Theorem §C6b.7.8: The Propagator Near Its Pole
 > For $p^0$ near $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$,
 >
 > $$
@@ -313,7 +313,7 @@ $$
 >
 > *Source: PHY 513 Lecture 15, slide 23 ("$\frac{1}{p^2 - m^2 + im\Gamma} = \frac{1}{(p^0)^2 - E_{\vec p}^2 + im\Gamma} \simeq \frac{1}{2E_{\vec p}(p^0 - E_{\vec p} + i\frac{m}{E_{\vec p}}\frac{\Gamma}{2})}$. Approximation: $p^0 \sim E_{\vec p} = \sqrt{\vec p^2 + m^2}$."), and transcript · the user's PHY 513 notes, Ch. 15 §15.8, eq. (BWprop), paragraph "Checks (filled in)" · PS §4.5, eq. (4.64)*
 
-^thm-c6b-5-5
+^thm-c6b-7-8
 
 > [!derivation]- Derivation
 > **Step 1** (the first equality). With $E_{\mathbf p}^2 = \mathbf p^2 + m^2$,
@@ -349,11 +349,11 @@ $$
 > **What the derivation shows.**
 > - With $\varepsilon \to m\Gamma$ the pole at $+E_{\mathbf p}$ moves a finite distance below the real axis, where the Feynman prescription had put it infinitesimally ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]).
 
-^der-c6b-5-5
+^der-c6b-7-8
 
-*Uses:* [[§C6b.5 Decay Rates and Widths#^mod-c6b-5-4|Model §C6b.5.4]]
+*Uses:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|Model §C6b.7.7]]
 
-> [!definition] Definition §C6b.5.2: The Non-Relativistic Decay Constant
+> [!definition] Definition §C6b.7.2: The Non-Relativistic Decay Constant
 > In non-relativistic quantum theory a decaying state has an energy with a negative imaginary part; its **decay constant** $\Gamma_{\rm NR}$ is defined by
 >
 > $$
@@ -364,12 +364,12 @@ $$
 >
 > *Source: PHY 513 Lecture 15, slide 23 ("In non-relativistic quantum theory: $\Gamma_{\rm NR}$ is decay constant. Wave function $\psi \sim e^{-iEt} = e^{-iE^0t - \frac{\Gamma_{\rm NR}}{2}t}$ ⇒ $|\psi|^2 = e^{-\Gamma_{\rm NR}t}$"), and transcript ("this wave function … gives me the $e^{-\Gamma t}$ decay instead of the wave function having norm one") · the user's PHY 513 notes, Ch. 15 §15.8 (paragraph "Relation to non-relativistic decay")*
 
-^def-c6b-5-2
+^def-c6b-7-2
 
-Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_i$ of a level coupled to a continuum and $\Gamma = -2\operatorname{Im}\Delta_i$ the golden-rule rate ([[§C9.6 The Interaction Picture and the Atom–Field Interaction#^thm-c9-6-11|QM Theorem §C9.6.11]]); there the energy distribution of the decaying state is a Lorentzian of full width $\Gamma$, the non-relativistic form of [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-7|Theorem §C6b.5.7]].
+Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_i$ of a level coupled to a continuum and $\Gamma = -2\operatorname{Im}\Delta_i$ the golden-rule rate ([[§C9.6 The Interaction Picture and the Atom–Field Interaction#^thm-c9-6-11|QM Theorem §C9.6.11]]); there the energy distribution of the decaying state is a Lorentzian of full width $\Gamma$, the non-relativistic form of [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-10|Theorem §C6b.7.10]].
 
-> [!theorem] Theorem §C6b.5.6: The Width Is Invariant; the Decay Rate Is Time-Dilated
-> The propagator of [[§C6b.5 Decay Rates and Widths#^mod-c6b-5-4|Model §C6b.5.4]], at fixed $\mathbf p$ and for $t > 0$, describes an amplitude $\propto e^{-iE_{\mathbf p}t - \frac{\Gamma_{\rm NR}}{2}t}$ with
+> [!theorem] Theorem §C6b.7.9: The Width Is Invariant; the Decay Rate Is Time-Dilated
+> The propagator of [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|Model §C6b.7.7]], at fixed $\mathbf p$ and for $t > 0$, describes an amplitude $\propto e^{-iE_{\mathbf p}t - \frac{\Gamma_{\rm NR}}{2}t}$ with
 >
 > $$
 > \Gamma_{\rm NR} = \frac{m}{E_{\mathbf p}}\,\Gamma = \frac{\Gamma}{\gamma} .
@@ -379,10 +379,10 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 >
 > *Source: PHY 513 Lecture 15, slide 23 ("Relativistic decay rate has additional time dilatation: $\frac{m}{E_{\vec p}}\Gamma = \Gamma_{\rm NR}$"), and transcript ("our $\Gamma$ here really is a relativistically invariant notion … there's an additional time dilation, non-relativistic quantum mechanics would never take [into account]") · the user's PHY 513 notes, Ch. 15 §15.8, Principle "The width is invariant; the decay rate is time-dilated", eq. (GammaNR) (a derived result: a theorem here) · PS §4.5, p. 101 (after eq. (4.64))*
 
-^thm-c6b-5-6
+^thm-c6b-7-9
 
 > [!derivation]- Derivation
-> **Step 1** (back to time). At fixed $\mathbf p$, the time dependence of the propagator is its Fourier transform in $p^0$ (the convention $f(t) = \int\frac{dp^0}{2\pi}\tilde f(p^0)e^{-ip^0t}$ of [[Larsen PHY 513]]). Near the pole, by [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-5|Theorem §C6b.5.5]], with $a = E_{\mathbf p} - i\frac{\Gamma'}{2}$, $\Gamma' = \frac{m}{E_{\mathbf p}}\Gamma$:
+> **Step 1** (back to time). At fixed $\mathbf p$, the time dependence of the propagator is its Fourier transform in $p^0$ (the convention $f(t) = \int\frac{dp^0}{2\pi}\tilde f(p^0)e^{-ip^0t}$ of [[Larsen PHY 513]]). Near the pole, by [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-8|Theorem §C6b.7.8]], with $a = E_{\mathbf p} - i\frac{\Gamma'}{2}$, $\Gamma' = \frac{m}{E_{\mathbf p}}\Gamma$:
 >
 > $$
 > \int\frac{dp^0}{2\pi}\,e^{-ip^0t}\,\frac{i}{2E_{\mathbf p}(p^0 - a)} .
@@ -396,7 +396,7 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 >
 > (The far pole near $p^0 = -E_{\mathbf p}$, dropped in the approximation, lies above the axis and contributes for $t < 0$, as for $D_F$, [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]].)
 >
-> **Step 3** (compare). Match with $\psi$ of [[§C6b.5 Decay Rates and Widths#^def-c6b-5-2|Def. §C6b.5.2]] term by term:
+> **Step 3** (compare). Match with $\psi$ of [[§C6b.7 Decay Rates and Widths#^def-c6b-7-2|Def. §C6b.7.2]] term by term:
 >
 > $$
 > e^{-iE_{\mathbf p}t}\,e^{-\frac{\Gamma'}{2}t} = e^{-iE^0t - \frac{\Gamma_{\rm NR}}{2}t} \quad\Rightarrow\quad E^0 = E_{\mathbf p} , \qquad \Gamma_{\rm NR} = \Gamma' = \frac{m}{E_{\mathbf p}}\Gamma = \frac{m}{\gamma m}\Gamma = \frac\Gamma\gamma ,
@@ -410,20 +410,20 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > E_{\mathbf 0} = m \quad\Rightarrow\quad \Gamma_{\rm NR} = \frac{m}{m}\Gamma = \Gamma ,
 > $$
 >
-> so $\Gamma$ is the rest-frame decay rate of [[§C6b.5 Decay Rates and Widths#^def-c6b-5-1|Def. §C6b.5.1]]. In another frame the lifetime $1/\Gamma_{\rm NR} = \gamma/\Gamma = \gamma\tau$ is the dilated proper lifetime ([[§A2.1 Time Dilation#^thm-a2-1-2|REL Theorem §A2.1.2]]).
+> so $\Gamma$ is the rest-frame decay rate of [[§C6b.7 Decay Rates and Widths#^def-c6b-7-1|Def. §C6b.7.1]]. In another frame the lifetime $1/\Gamma_{\rm NR} = \gamma/\Gamma = \gamma\tau$ is the dilated proper lifetime ([[§A2.1 Time Dilation#^thm-a2-1-2|REL Theorem §A2.1.2]]).
 >
 > **What the derivation shows.**
 > - Non-relativistic quantum mechanics cannot see the factor $m/E$: there $E \approx m$; "so there's some translation there that occasionally people … can get wrong".
-> - The decay formula of [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-1|Theorem §C6b.5.1]] gives the same factor in a moving frame, $\frac{1}{2E_A}$ instead of $\frac{1}{2m_A}$ (its second ⚑).
+> - The decay formula of [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]] gives the same factor in a moving frame, $\frac{1}{2E_A}$ instead of $\frac{1}{2m_A}$ (its second ⚑).
 
-^der-c6b-5-6
+^der-c6b-7-9
 
-*Uses:* [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-5|Theorem §C6b.5.5]], [[§C6b.5 Decay Rates and Widths#^def-c6b-5-2|Def. §C6b.5.2]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]
+*Uses:* [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-8|Theorem §C6b.7.8]], [[§C6b.7 Decay Rates and Widths#^def-c6b-7-2|Def. §C6b.7.2]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]
 
 *Procedure:* [[P2 Green's Functions by Contour Integration|P2]]
 
-> [!theorem] Theorem §C6b.5.7: The Breit–Wigner Shape and Its Width
-> If the propagator of [[§C6b.5 Decay Rates and Widths#^mod-c6b-5-4|Model §C6b.5.4]] carries the total momentum of a process, $p^2 = s$ (e.g. $s = E_{\rm cm}^2$), the cross section near $\sqrt s = m$ has the factor
+> [!theorem] Theorem §C6b.7.10: The Breit–Wigner Shape and Its Width
+> If the propagator of [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|Model §C6b.7.7]] carries the total momentum of a process, $p^2 = s$ (e.g. $s = E_{\rm cm}^2$), the cross section near $\sqrt s = m$ has the factor
 >
 > $$
 > \Bigl|\frac{1}{s - m^2 + im\Gamma}\Bigr|^2 = \frac{1}{(s - m^2)^2 + m^2\Gamma^2} \simeq \frac{1}{4m^2}\,\frac{1}{(\sqrt s - m)^2 + \Gamma^2/4} ,
@@ -433,7 +433,7 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 >
 > *Source: PHY 513 Lecture 15, transcript ("if you were to take the norm squared of this, you will see that this is a perfectly good … bell shape … the limit where the width goes to zero") · the user's PHY 513 notes, Ch. 15 §15.8, Figure "breitwigner", paragraph "Checks (filled in)" · Yu §10.6, eqs. (10.271)–(10.275) · PS §4.5, eq. (4.63) (the non-relativistic form)*
 
-^thm-c6b-5-7
+^thm-c6b-7-10
 
 > [!derivation]- Derivation
 > **Step 1** (modulus). With $x = s - m^2$, $y = m\Gamma$ real,
@@ -474,26 +474,26 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > - The width of the resonance peak equals the decay rate: an unstable particle "does not have a fixed mass" but a distribution of width $\Gamma$ (Yu p. 482), and the peak height grows like $(m\Gamma)^{-2}$ as the width shrinks.
 > - The same Lorentzian, with $E$ for $\sqrt s$, is PS's non-relativistic Breit–Wigner formula (4.63) and the natural line shape of quantum mechanics ([[§C9.6 The Interaction Picture and the Atom–Field Interaction#^thm-c9-6-11|QM Theorem §C9.6.11]], 4).
 
-^der-c6b-5-7
+^der-c6b-7-10
 
-*Uses:* [[§C6b.5 Decay Rates and Widths#^mod-c6b-5-4|Model §C6b.5.4]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]
+*Uses:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|Model §C6b.7.7]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]
 
 ![[ph-qft-c6-15-1.svg]]
 *The Breit–Wigner shape $\lvert1/(s - m^2 + im\Gamma)\rvert^2$ as a function of $\sqrt s$, for $m/\Gamma = 10$ (solid), normalized to its peak; the full width at half maximum is $\Gamma$. Dashed: half the width (same $m$); as $\Gamma \to 0$ the normalized curve becomes $\delta(\sqrt s - m)$, a stable particle. Added figure, from the user's notes (Figure "breitwigner").*
 
 > [!remark] Remark: Why mΓ, not Γ
-> The term added to $p^2 - m^2$ must be a Lorentz scalar of dimension two; $\Gamma$ alone has dimension one, and $m\Gamma$ is the combination whose pole reproduces the rest-frame decay rate, $\Gamma_{\rm NR} = \Gamma$ at $E_{\mathbf p} = m$ ([[§C6b.5 Decay Rates and Widths#^thm-c6b-5-6|Theorem §C6b.5.6]]). In the lecture: "you might be more happy if I actually give it dimensions … It's an $i\,m\Gamma$." The infinitesimal $i\varepsilon$ of a stable particle is the limit $\Gamma \to 0$; "if it weren't stable, … it actually would make life a little harder for you because this one would be finite."
+> The term added to $p^2 - m^2$ must be a Lorentz scalar of dimension two; $\Gamma$ alone has dimension one, and $m\Gamma$ is the combination whose pole reproduces the rest-frame decay rate, $\Gamma_{\rm NR} = \Gamma$ at $E_{\mathbf p} = m$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-9|Theorem §C6b.7.9]]). In the lecture: "you might be more happy if I actually give it dimensions … It's an $i\,m\Gamma$." The infinitesimal $i\varepsilon$ of a stable particle is the limit $\Gamma \to 0$; "if it weren't stable, … it actually would make life a little harder for you because this one would be finite."
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.8 (paragraph "Checks (filled in)")*
 
-^rem-c6b-5-2
+^rem-c6b-7-2
 
 > [!remark]- ★ Remark: Yu's route to the width
 > Yu derives the width in the propagator in §10.6, beyond this course so far. The optical theorem applied to $A \to A$ gives $2\operatorname{Im}\mathcal M(A \to A) = \sum_f\frac{1}{\mathcal S_f}\int d\Pi_f|\mathcal M(A \to f)|^2 = 2m_A\sum_f\Gamma_f$ (eq. (10.259), using his decay formula (6.377)), so $\operatorname{Im}\mathcal M(A \to A) = m_A\Gamma_A$ (eq. (10.261)). For a scalar the full propagator is $\frac{i}{p^2 - m^2 - \delta m^2 - \Pi(p^2) + i\epsilon}$ with the one-particle-irreducible self-energy $-i\Pi$ (eqs. (10.262)–(10.263)); $i\mathcal M(\phi \to \phi) = -iZ\Pi(m^2)$ (eq. (10.264)) gives $\Gamma = -\frac{Z}{m}\operatorname{Im}\Pi(m^2)$ (eq. (10.265)). With the renormalization conditions moved to the real part (eqs. (10.267)–(10.268)), near the pole $\tilde G^{(2)} \simeq \frac{iZ}{p^2 - m^2 - iZ\operatorname{Im}\Pi(m^2)} = \frac{iZ}{p^2 - m^2 + im\Gamma} \simeq \frac{i}{p^2 - m^2 + im\Gamma}$ (eq. (10.270)), the last step with $Z \simeq 1$; the narrow-width condition is $\Gamma \ll m$ (eq. (10.272)); the Breit–Wigner shape and its limit are eqs. (10.271)–(10.275), and the same $+im\Gamma$ rule for internal lines of vector and Dirac particles follows (box after eq. (10.275)). This is the "corollary of studying interacting wave function" of slide 22, read backwards.
 >
 > *Source: Yu §10.6, pp. 481–483, eqs. (10.259)–(10.275)*
 
-^rem-c6b-5-3
+^rem-c6b-7-3
 
 > [!remark]- Connections
 > - The exponential decay law and the lifetime are the decay constant of radioactive decay, and the width–lifetime relation is the natural line width of quantum mechanics — [[§A7.2 Radioactive Decay#^thm-a7-2-2|QM Theorem §A7.2.2]], [[§A3.5 The Heisenberg Uncertainty Principle#^def-a3-5-1|QM Def. §A3.5.1]].

@@ -176,6 +176,10 @@ The most interesting aspect of a Markov chain is its long-term behavior: what ha
 ![[m235-31-1.svg]]
 *[[§38 Applications to Markov Chains#^ex-38-3|Example §38.3]]: the three entries of $\mathbf{x}_k$ for $k = 0, 1, \ldots, 15$, starting from $\mathbf{x}_0 = (1, 0, 0)$. They level off at the entries $.3$, $.6$, $.1$ of the steady-state vector $\mathbf{q}$ (dashed). At every $k$ the three values add up to $1$.*
 
+![[m235-31-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The chain $\mathbf{x}_{k+1} = P\mathbf{x}_k$ of Example §38.3, with $P = \begin{bmatrix} .5 & .2 & .3 \\ .3 & .8 & .3 \\ .2 & 0 & .4 \end{bmatrix}$, drawn in the triangle of probability vectors $x_1 + x_2 + x_3 = 1$, $x_i \ge 0$, with corners $(1, 0, 0)$, $(0, 1, 0)$, $(0, 0, 1)$. The blue point is the example's chain from $\mathbf{x}_0 = (1, 0, 0)$: $(.5, .3, .2)$, $(.37, .45, .18)$, $(.329, .525, .146)$, …, and the bars on the right show its current entries, in the colours of the static figure, against the dashed levels $.3$, $.6$, $.1$. The orange points start at the other two corners and at the centre $(\frac13, \frac13, \frac13)$ (chosen for the picture). All four chains, with their trails, hop to the same red star $\mathbf{q} = (.3, .6, .1)$ within about ten steps. This is Theorem §38.3 for the regular matrix $P$: the limit does not depend on the initial state. ($P\mathbf{e}_2 = (.2, .8, 0)$ lies on an edge, because $p_{32} = 0$.)
+
 ## Steady-State Vectors
 
 > [!definition] Definition §38.4: Steady-State Vector

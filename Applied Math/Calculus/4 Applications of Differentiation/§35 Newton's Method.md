@@ -57,6 +57,10 @@ Most equations cannot be solved by a formula. There is the quadratic formula, an
 ![[m233-32-1.svg]]
 *Newton's method on a convex increasing curve. The tangent at $(x_1, f(x_1))$ meets the $x$-axis at $x_2$; the tangent at $(x_2, f(x_2))$ meets it at $x_3$, and so on. Each step replaces the curve by its tangent line, and the approximations $x_1 > x_2 > x_3 > \cdots$ close in on the root $r$ from the right.*
 
+![[m451-9-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Definition §35.1 for $f(x) = x^2 - 2$, root $r = \sqrt2$, reused from MATH 451 (Single Variable Analysis), where the same recursion appears as a sequence defined by $t_{n+1} = \frac{t_n^2 + 2}{2t_n}$ (the GIF writes $t_n$ for this note's $x_n$). Formula (2) gives exactly this: $x_n - \frac{x_n^2 - 2}{2x_n} = \frac{x_n^2 + 2}{2x_n}$. Starting from $x_1 = 1$, each step draws the tangent at $(x_n, f(x_n))$ (red) down to the $x$-axis, where it meets it at $x_{n+1}$; then the view zooms in around $\sqrt2$ (the width of the view is shown in the corner, from $1$ down to about $10^{-5}$). The approximations are $x_2 = \frac32$, $x_3 = \frac{17}{12}$, $x_4 = \frac{577}{408}$, $x_5 \approx 1.414213562375$, with errors $|x_n - \sqrt2|$ of about $8.6 \times 10^{-2}$, $2.5 \times 10^{-3}$, $2.1 \times 10^{-6}$ and $1.6 \times 10^{-12}$: the number of correct digits roughly doubles at every step. Since $x_1 = 1$ lies left of the root, the first step overshoots to the right; from $x_2$ on the approximations decrease to $r$ from the right, as in the figure above, and at every zoom the curve looks more and more like its own tangent line.
+
 > [!remark]- Connections
 > - If $x_n \to r$ and $f$, $f'$ are continuous with $f'(r) \ne 0$, letting $n \to \infty$ in (2) gives $r = r - f(r)/f'(r)$, so $f(r) = 0$: a limit of the iteration is a root. This is the argument of [[§9 Limit Theorems for Sequences#^ex-9-6|451 Ex. §9.6]], whose recursion $t_{n+1} = \frac{t_n^2 + 2}{2t_n}$ is Newton's method for $x^2 = 2$.
 
@@ -69,6 +73,10 @@ Most equations cannot be solved by a formula. There is the quadratic formula, an
 > In the first two cases a better initial approximation $x_1$ should be chosen. (Stewart's Exercises 31–34 give such examples.)
 
 ^rem-35-1
+
+![[m233-32-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The third failure in [[§35 Newton's Method#^rem-35-1|Remark: When Newton's Method Fails]]: $f(x) = x^{1/3}$, whose only root is $0$. From each $x_n$ the method goes up to the curve and follows the tangent line down to the $x$-axis; since $f(x_n)/f'(x_n) = 3x_n$, the tangent meets the axis at $x_{n+1} = -2x_n$. Starting from $x_1 = 0.2$ (chosen for the picture) the iterates are $-0.4, 0.8, -1.6, 3.2, -6.4$: they zigzag from side to side and double their distance from the root every step, $|x_n| = 2^{n-1}|x_1| \to \infty$. The curve's vertical tangent at $0$ makes the tangent lines too flat everywhere else.
 
 > [!remark] Remark: Method — Newton's Method
 > 1. Write the equation in the form $f(x) = 0$ and compute $f'(x)$. Write out formula (2) for this $f$, simplified.

@@ -169,6 +169,10 @@ The sum of a power series is a function $f(x) = \sum_{n=0}^{\infty} c_n (x - a)^
 
 ^ex-89-3
 
+![[m451-26-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Example §89.3(b) in motion, reused from MATH 451 (Single Variable Analysis). The partial sums $S_N(x) = \sum_{n=0}^{N} (-1)^n \frac{x^{2n+1}}{2n + 1}$ of the series for $\tan^{-1} x$ (blue, written $\arctan$ in the GIF) are drawn for $N = 0, 1, \ldots, 25$ against $\tan^{-1} x$ itself (black) on $[-1.6, 1.6]$. Inside the interval of convergence $(-1, 1)$ they close in on $\tan^{-1} x$: the readout of $|S_N - \tan^{-1} x|$ at $x = 0.9$ falls from $0.17$ for $N = 0$ to $0.0000$ (to four places) for $N = 25$. For $|x| > 1$ (shaded) the terms $\frac{x^{2n+1}}{2n + 1}$ do not tend to $0$, and the partial sums swing off, up and down in turn, ever more violently: at $x = 1.2$ the error is $124.3$ for $N = 25$. Nothing in the graph of $\tan^{-1} x$, which is smooth everywhere, announces this; the radius of convergence $R = 1$ is inherited from the series for $1/(1 + x^2)$, which is the point of the example. The endpoints $x = \pm1$, where the series still converges (Remark "Gregory's Series and the Endpoints"), are at the edge of the shading.
+
 > [!remark]- Connections
 > - Rigorous treatment of both series: [[§26 Differentiation and Integration of Power Series#^ex-26-4|451 Ex. §26.4]] (the logarithm) and [[§26 Differentiation and Integration of Power Series#^ex-26-3|451 Ex. §26.3]] (the arctangent), by the same term-by-term integration.
 

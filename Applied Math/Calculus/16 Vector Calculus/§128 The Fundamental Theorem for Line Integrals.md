@@ -52,6 +52,10 @@ Part 2 of the Fundamental Theorem of Calculus says $\int_a^b F'(x)\,dx = F(b) - 
 
 So the line integral of a conservative field is computed from the values of the potential function at the endpoints alone; in fact $\int_C \nabla f \cdot d\mathbf{r}$ is the net change in $f$. In particular, if $C_1$ and $C_2$ are smooth curves with the same initial point and the same terminal point, then $\int_{C_1} \nabla f \cdot d\mathbf{r} = \int_{C_2} \nabla f \cdot d\mathbf{r}$.
 
+![[m233-109-a1.gif|560]]
+
+*(Not from the book; animation added, vault only.)* Theorem §128.1 for the field $\mathbf{F} = (3 + 2xy)\,\mathbf{i} + (x^2 - 3y^2)\,\mathbf{j} = \nabla f$, $f(x, y) = 3x + x^2y - y^3$, of [[§129 Conservative Vector Fields and Potential Functions#^ex-129-2|Example §129.2]] (grey arrows: the direction of $\mathbf{F}$; light grey curves: level curves of $f$). Four paths run from $A(-1, 0)$ to $B(1, 1)$: the straight segment (blue), a bulge to the upper left (red), a sag below (orange) and an S-shaped path (green). The right panel plots the work done so far, computed numerically along each path. Along the way the four running works are quite different: the red path even loses work while it climbs against $\mathbf{F}$, and the green one levels off and then climbs. But every path ends at the same value $6 = f(1, 1) - f(-1, 0) = 3 - (-3)$. The work depends only on the endpoints, and the line integral is independent of path. The endpoints and the paths are chosen for the picture.
+
 > [!example] Example §128.1: Work Done by Gravity
 > Find the work done by the gravitational field $\mathbf{F}(\mathbf{x}) = -\dfrac{mMG}{|\mathbf{x}|^3}\,\mathbf{x}$ in moving a particle with mass $m$ from the point $(3, 4, 12)$ to the point $(2, 2, 0)$ along a piecewise-smooth curve $C$.
 >

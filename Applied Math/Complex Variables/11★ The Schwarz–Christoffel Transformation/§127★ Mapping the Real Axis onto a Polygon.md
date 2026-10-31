@@ -106,6 +106,10 @@ By (2) and Proposition §127.1, the unit vector $\tau$ is constant in direction 
 ![[m342-127-1.svg]]
 *How the arguments of Proposition §127.2 build a polygon, for $f'(z) = i(z + 1)^{-1/2}z^{-1/2}(z - 1)^{-1/2}$ ([[§127★ Mapping the Real Axis onto a Polygon#^ex-127-2|Example §127.2]]). Each interval of the $x$ axis (left) goes to the side of the same colour (right), traced in the direction of the arrow. At each of $-1$, $0$, $1$ and at $\infty$ the direction turns left by $\pi/2$, the exterior angle of the square.*
 
+![[m342-127-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Example §127.2 traced in motion. The point $x$ runs along the real axis from $-\infty$ to $\infty$ (left; $x = \tan s$ with $s$ moving at constant speed, so each interval takes the same time), and its image $w = f(x) = \int_0^x f'(t)\,dt$, computed numerically for $f'(z) = i(z + 1)^{-1/2}z^{-1/2}(z - 1)^{-1/2}$, runs along the side of the same colour as in the figure above. The arrow is the direction $\arg f'(x)$ of Proposition §127.2, read out as $\frac\pi2 - \frac\pi2\cdot(\text{number of } x_j \text{ to the right of } x)$: west on $x < -1$, south on $(-1, 0)$, east on $(0, 1)$, north on $x > 1$. It stays fixed while $x$ is between two of the points $-1, 0, 1$ and turns left by the exterior angle $k_j\pi = \pi/2$ as $x$ passes one of them, with a short pause there. At the end $x \to \infty$ and $x \to -\infty$ meet at $w_4 = f(\infty) = b + ib$, where the direction turns from north to west ($k_4 = \frac12$), and the path closes into the square with vertices $bi, 0, b, b + ib$, $b = \frac12 B(\frac14, \frac12) \approx 2.62$ (Example §129.5).
+
 > [!theorem] Proposition §127.3: Conditions on the Exponents
 > Suppose the sides never cross one another and the polygon is positively (counterclockwise) oriented. Then the exterior angle at the vertex $w_n$, the image of $z = \infty$, is
 >

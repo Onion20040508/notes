@@ -54,6 +54,10 @@ The name is justified by the sphere: the exterior $|z| > 1$ of the unit circle c
 ![[m342-17-1.svg]]
 *A vertical cross-section of the Riemann sphere through $N$ and the origin. The line from $N$ through a point $z$ of the plane meets the sphere again at $P$: points outside the unit circle ($z$, red) go to the upper hemisphere, points inside ($z'$, blue) to the lower one. The neighborhood $|z| > 1/\varepsilon$ of $\infty$ (orange, on the plane) corresponds to the orange cap around $N$.*
 
+![[m342-17-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* The Riemann sphere of Definition §17.2 in three dimensions. A point $z$ (blue) spirals outward in the plane through the equator, from $|z| = 0.25$ to $|z| = 3.5$ (spiral chosen for the picture), and its stereographic image $P$ (red, on the line through $N$ and $z$, dashed) is computed from the formula of Remark: Coordinates of the Stereographic Projection. While $|z| < 1$, $P$ stays in the lower hemisphere. It crosses the equator when $z$ crosses the unit circle and then climbs toward $N$, with $|P - N| = 2/\sqrt{|z|^2 + 1}$ (readout) tending to $0$. Then $\varepsilon$ shrinks from $1$ to $0.4$: the neighbourhood $|z| > 1/\varepsilon$ of $\infty$ (Definition §17.3; orange, outside the orange circle, drawn only up to the edge of the square) corresponds to the cap $|P - N| < 2\varepsilon/\sqrt{1 + \varepsilon^2}$ around $N$. At $\varepsilon = 1$ the cap is the upper hemisphere, and as $\varepsilon \to 0$ it shrinks onto $N$.
+
 > [!remark]- Connections
 > - The extended plane is the one-point compactification of $\mathbb{C} = \mathbb{R}^2$, [[§20 Local Compactness#^def-20-3|590 Def. §20.3]], and stereographic projection is the homeomorphism with $S^2$ of [[§20 Local Compactness#^ex-20-7|590 Ex. §20.7]]. There the neighborhoods of $\infty$ are the complements of compact sets. Every compact $C \subseteq \mathbb{C}$ is bounded, hence inside some disk $|z| \le 1/\varepsilon$, so B&C's neighborhoods $|z| > 1/\varepsilon$ form a base for the same topology at $\infty$.
 

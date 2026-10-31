@@ -105,6 +105,10 @@ The orthogonality of the eigenvectors in [[§58★ Diagonalization of Symmetric 
 
 *Uses:* [[§58★ Diagonalization of Symmetric Matrices#^def-58-1|Def. §58.1]], [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-2|§13.2]] ($(AB)^T = B^T A^T$), [[§49 Inner Product, Length, and Orthogonality#^def-49-1|Def. §49.1]] (the inner product $\mathbf{u}^T \mathbf{v}$)
 
+![[ladr-7.29-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 7.29). The eigenvector search of Definition §40.1 (a unit vector $\mathbf{x}$ sweeps half the circle; $A\mathbf{x}$ turns green when $A\mathbf{x} = \lambda\mathbf{x}$) for two matrices. The symmetric matrix with rows $(2, 1)$ and $(1, 2)$ has eigenlines at $45^\circ$ and $135^\circ$, perpendicular as Theorem §58.1 says. The non-symmetric matrix with rows $(2, 1)$ and $(0, 3)$ also has two distinct eigenvalues ($2$ and $3$), but its eigenlines lie at $0^\circ$ and $45^\circ$. So it is diagonalizable but not orthogonally diagonalizable (Theorem §58.2).
+
 > [!remark]- Connections
 > - Rigorous treatment: [[§23 Self-Adjoint and Normal Operators#^ladr-7-22|LADR 7.22]] proves the same for eigenvectors of any normal operator ($T^*T = TT^*$) on a real or complex inner product space; symmetric matrices are the self-adjoint operators on $\mathbb{R}^n$ ([[§23 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]]), and the one-line computation above is $\langle T v_1, v_2 \rangle = \langle v_1, T v_2 \rangle$.
 > - PDE version: [[§29 Sturm–Liouville Problems#^thm-29-2|341 Thm. §29.2]] (eigenfunctions of a Sturm–Liouville problem for different eigenvalues are orthogonal with weight $p$); the self-adjoint differential operator plays the part of the symmetric matrix, [[§29 Sturm–Liouville Problems#^rem-29-3|341 Remark: Self-Adjointness]].
@@ -367,6 +371,10 @@ This is a remarkable statement: in Chapter 5 there was no way to tell at a glanc
 
 ![[m235-48-1.svg]]
 *The symmetric matrix $A = \begin{bmatrix} 7 & 2 \\ 2 & 4 \end{bmatrix}$ of [[§58★ Diagonalization of Symmetric Matrices#^ex-58-3|Example §58.3]] maps the unit circle onto an ellipse. Its orthonormal eigenvectors $\mathbf{u}_1, \mathbf{u}_2$ (red) lie along perpendicular lines (green), and $A$ just stretches them by the eigenvalues $8$ and $3$: these images are the semi-axes of the ellipse. A non-symmetric diagonalizable matrix also stretches along eigenvector lines, but those lines are not perpendicular.*
+
+![[m235-48-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* The spectral decomposition $A = 8\mathbf{u}_1\mathbf{u}_1^T + 3\mathbf{u}_2\mathbf{u}_2^T$ of Example §58.3, $A = \begin{bmatrix} 7 & 2 \\ 2 & 4 \end{bmatrix}$, worked as a construction. A unit vector $\mathbf{x}$ (blue) goes once round the unit circle, starting at $\mathbf{u}_1 = (2, 1)/\sqrt5$. Its components $(\mathbf{u}_1^T\mathbf{x})\mathbf{u}_1$ and $(\mathbf{u}_2^T\mathbf{x})\mathbf{u}_2$ along the perpendicular eigenvector lines (green) are stretched by $8$ and by $3$ (orange arrows) and added by the parallelogram rule (dashed), which gives $A\mathbf{x}$ (red). Its tip traces the ellipse of the figure, with semi-axes $8\mathbf{u}_1$ and $3\mathbf{u}_2$, reached exactly when $\mathbf{x} = \mathbf{u}_1$ or $\mathbf{x} = \mathbf{u}_2$ and one of the two components vanishes (readout). Everywhere else $A\mathbf{x}$ points in a different direction from $\mathbf{x}$, because the two components are stretched by different factors.
 
 > [!remark]- Connections
 > - Rigorous treatment: in the language of [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]] (orthogonal projection $P_U$), (2) reads $T = \sum_\lambda \lambda P_{E(\lambda, T)}$, a sum over the distinct eigenvalues of projections onto the mutually orthogonal eigenspaces; this is how the spectral theorem is stated for self-adjoint operators in infinite dimensions.

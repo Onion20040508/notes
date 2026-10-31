@@ -238,6 +238,10 @@ In engineering and physics, (5) is the **superposition principle**. Think of $\m
 
 ^ex-9-3
 
+![[m452-15-a3.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Reused from Multivariable Analysis (§16, polar map). Example §9.3(d) as a deformation: the straight grid of the $(r, \theta)$-rectangle bends onto the disk and back. The lines $\theta = \mathrm{const}$ become rays from the origin and the lines $r = \mathrm{const}$ become circles, so the image of a straight line is not a straight line, and the map cannot be linear. Equal cells $dr\,d\theta$ also end up with different areas (the outer one is larger), whereas a linear map multiplies every area by the same factor $|\det A|$ (Theorem §28.3). The animation uses the usual polar map $(r\cos\theta, r\sin\theta)$. Lay's $T(r, \theta) = (r\sin\theta, r\cos\theta)$ is its mirror image in the line $x_2 = x_1$, with the same picture reflected.
+
 > [!remark] Remark: Recognizing a Linear Transformation
 > In practice (lecture): $T: \mathbb{R}^n \to \mathbb{R}^m$, $T(\mathbf{x}) = \big(f_1(x_1, \ldots, x_n), \ldots, f_m(x_1, \ldots, x_n)\big)$, is linear if and only if each component $f_i$ is a linear function of the $x$'s with no constant term, $f_i = a_{i1}x_1 + \cdots + a_{in}x_n$ (so $f_i(0, \ldots, 0) = 0$). Then $T(\mathbf{x}) = A\mathbf{x}$ with $A = [a_{ij}]$. "If" is [[§9 Introduction to Linear Transformations#^prop-9-2|Proposition §9.2]]; "only if" follows from [[§10 The Matrix of a Linear Transformation#^thm-10-1|Theorem §10.1]]: a linear $T$ is $\mathbf{x} \mapsto A\mathbf{x}$, and the $i$th entry of $A\mathbf{x}$ is such a linear expression ([[§5 The Matrix Equation Ax = b#^prop-5-4|row–vector rule]]).
 >

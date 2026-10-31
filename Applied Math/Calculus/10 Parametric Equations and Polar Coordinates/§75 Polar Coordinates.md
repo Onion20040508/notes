@@ -193,6 +193,10 @@ Let the pole be the origin and the polar axis the positive $x$-axis.
 ![[m233-65-1.svg]]
 *The four-leaved rose $r = \cos 2\theta$ of [[§75 Polar Coordinates#^ex-75-5|Example §75.5]]. Left: $r$ against $\theta$ in Cartesian coordinates, cut into the eight quarter-periods. Right: the polar curve, with the same numbers. Where $r < 0$ (parts ②, ③, ⑥, ⑦, blue) the point lies on the opposite side of the pole from the ray at angle $\theta$, which is how the leaves along the $y$-axis arise.*
 
+![[m233-65-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The four-leaved rose $r = \cos 2\theta$ of Example §75.5, drawn as $\theta$ runs from $0$ to $2\pi$. Left: the point $(\theta, r)$ moves along the Cartesian graph of $r = \cos 2\theta$. Right: the grey ray at angle $\theta$ turns, and the point of the polar curve sits on it at distance $|r|$, on the ray itself when $r > 0$ (red) and on the opposite ray (dashed) when $r < 0$ (blue). The eight quarter-periods appear in order with the numbers ①–⑧ of the static figure, so you can watch, for example, part ② ($\pi/4 \le \theta \le \pi/2$, $r$ from $0$ to $-1$) being drawn in the third quadrant while the ray points into the first. The two leaves along the $y$-axis are exactly the blue ones, made while $r < 0$.
+
 ## Symmetry
 
 > [!theorem] Theorem §75.3: Symmetry of Polar Curves

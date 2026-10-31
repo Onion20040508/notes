@@ -111,6 +111,10 @@ A linear combination of vectors is a matrix times a vector: $A\mathbf{x}$ is the
 
 *Uses:* [[§5 The Matrix Equation Ax = b#^def-5-1|Def. §5.1]], [[§4 Vector Equations#^thm-4-3|§4.3]]
 
+![[m235-4-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Theorem §5.1 for the system $x_1 + x_2 = 2$, $x_1 - x_2 = 1$ of Example §1.2(a). The weights $(x_1, x_2)$ wander along a path (orange trail, chosen for the picture) and the two panels follow them at the same time. On the left, in the row picture, the point $(x_1, x_2)$ moves among the two lines. On the right, in the column picture, $x_1\mathbf{a}_1$ (green) and $x_2\mathbf{a}_2$ (orange) are added tip to tail with $\mathbf{a}_1 = (1, 1)$ and $\mathbf{a}_2 = (1, -1)$, giving $x_1\mathbf{a}_1 + x_2\mathbf{a}_2 = (x_1 + x_2, x_1 - x_2)$. Equation $i$ holds exactly when entry $i$ of the combination equals $b_i$. So crossing the blue line on the left is crossing the vertical line "first entry $= 2$" on the right, and crossing the red line is crossing "second entry $= 1$". The point reaches the intersection $(\frac32, \frac12)$ at the same moment as the combination reaches $\mathbf{b} = (2, 1)$: the system and the vector equation have the same solution.
+
 So a linear system can be viewed in three equivalent ways, as a matrix equation, a vector equation or a system of equations, and one may switch between them whenever convenient. All three are solved in the same way, by row reducing the augmented matrix (6).
 
 ## Existence of Solutions

@@ -214,6 +214,14 @@ These two closure properties are what will make every span a *subspace* ([[§21 
 
 ^rem-4-2
 
+![[ladr-1.18-a1.gif|400]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 1.18). The one-vector case of the Remark: the multiples $c\mathbf{v}$ of a fixed nonzero vector $\mathbf{v}$ (Axler writes $\lambda x$), for $c$ running from $2$ down to $-2$ and back. Every $c\mathbf{v}$ stays on the dashed line through $\mathbf{0}$ and $\mathbf{v}$. It shrinks to $\mathbf{0}$ at $c = 0$ and points the other way (red) for $c < 0$. So $\operatorname{Span}\{\mathbf{v}\}$ is the whole line through $\mathbf{0}$ in the direction of $\mathbf{v}$, on both sides of the origin.
+
+![[ladr-2.5-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 2.5). The two-vector case of the Remark, in $\mathbb{R}^3$: the combinations $a\mathbf{v}_1 + b\mathbf{v}_2$ of two non-proportional vectors fill a plane through $\mathbf{0}$, drawn with the grid of integer combinations. The path $6\mathbf{v}_1$, then $+5\mathbf{v}_2$, reaches the point $(17, -4, 2)$ of the plane. The point $(17, -4, 5)$, $3$ units above it, is not a combination: when the camera turns until the plane is seen edge-on, it is visibly off the plane. This is the question of Example §4.2 ("in the span or not?"), with Axler's vectors instead of Lay's $\mathbf{v} = (1, 2, 3)$, $\mathbf{w} = (4, 5, 6)$.
+
 > [!example] Example §4.2: In the Span or Not?
 > **(a)** Is $\mathbf{b} = \begin{bmatrix} 1 \\ 1 \\ 1 \end{bmatrix}$ a linear combination of $\mathbf{v} = \begin{bmatrix} 1 \\ 2 \\ 3 \end{bmatrix}$ and $\mathbf{w} = \begin{bmatrix} 4 \\ 5 \\ 6 \end{bmatrix}$?
 >

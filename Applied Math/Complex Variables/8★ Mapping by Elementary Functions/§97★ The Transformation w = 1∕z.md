@@ -62,6 +62,10 @@ The reciprocal $w = 1/z$ is the one genuinely new ingredient of the linear fract
 ![[m342-97-1.svg]]
 *The two steps of $w = 1/z$ for a point $z$ outside the unit circle: the inversion puts $Z$ on the same ray at distance $1/|z|$, inside the circle; the reflection in the real axis then gives $w = \bar Z$, with $|w| = 1/|z|$ and $\arg w = -\arg z$.*
 
+![[m342-97-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Why $1/z$ is continuous on the extended plane (Theorem §97.2), seen on the Riemann sphere of Definition §17.2. Three curves of the $z$ plane, the circle $|z| = 1/2$ (blue) and the lines $x = 1/2$ (red) and $y = 1/2$ (orange) (chosen for the picture), are lifted to the unit sphere by stereographic projection, each point moving along its line toward the north pole $N = \infty$; the lines become circles through $N$, and the inside of the unit circle (dashed equator) becomes the lower hemisphere. The sphere is then turned through $\pi$ about the real axis (black), $(\xi, \eta, \zeta) \mapsto (\xi, -\eta, -\zeta)$: the poles $\infty$ and $0$ trade places and the two hemispheres swap. Projecting back down gives exactly the images under $w = 1/z$: the circle $|w| = 2$, and the circles through $0$ with centres $1$ and $-i$ (radius $1$). A rotation of the sphere is continuous everywhere, $0$ and $\infty$ included, and carries circles on the sphere to circles, which is the picture behind Theorem §97.2 and behind "lines and circles go to lines and circles" (Theorem §98.3). The half turn is the description in the Connections remark of this section.
+
 ## The Extended Plane
 
 The reciprocal is undefined at $0$ and gives no finite value at $\infty$, but the limits ([[§17 Limits Involving the Point at Infinity|§17]]) fix the natural values.

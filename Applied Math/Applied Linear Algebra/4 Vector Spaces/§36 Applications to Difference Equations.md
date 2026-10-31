@@ -148,6 +148,10 @@ If no Casorati matrix is invertible, the signals may or may not be linearly inde
 ![[m235-30-1.svg]]
 *[[§36 Applications to Difference Equations#^ex-36-2|Example §36.2]]. Top: the input $y_k = \cos(\pi k/4)$ (blue stems, sampled from the blue curve) and the filter's output $z_k = y_{k+1}$ (red circles), the same wave shifted one step to the left. Bottom: the input $w_k = \cos(3\pi k/4)$, sampled from a faster wave; the output is $0$ for every $k$ (red circles on the axis).*
 
+![[m235-30-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The low-pass filter of Example §36.2 for every input frequency in between. The input is $y_k = \cos\alpha k$ (blue stems on the faint curve $\cos\alpha t$) with $\alpha$ sweeping from $0$ to $\pi$ and back. The identity used in the note works for any $\alpha$ and gives the output $z_k = \big(\frac12 + \frac{\sqrt2}{2}\cos\alpha\big)\cos\alpha(k + 1)$ (red circles): the input shifted by one step and multiplied by the gain $\frac12 + \frac{\sqrt2}{2}\cos\alpha$, plotted below. At $\alpha = \pi/4$ (held) the gain is $1$ and $z_k = y_{k+1}$: the low frequency passes, as in the note. At $\alpha = 3\pi/4$ (held) the gain is $0$ and the output is the zero sequence: the high frequency is stopped. In between the gain falls steadily. For constant input ($\alpha = 0$) it is $1.21$, and near $\alpha = \pi$ it turns slightly negative ($-0.21$ at $\pi$), so the output is a small inverted copy. The example itself treats only the two frequencies $\pi/4$ and $3\pi/4$; the other frequencies are chosen for the picture.
+
 Solutions of a homogeneous equation are often of the form $y_k = r^k$.
 
 > [!definition] Definition §36.4: Auxiliary Equation

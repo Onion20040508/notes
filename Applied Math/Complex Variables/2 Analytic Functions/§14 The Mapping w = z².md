@@ -224,3 +224,7 @@ When $n$ is a positive integer greater than $2$, the transformation $w = z^n$, o
 
 ![[m342-14-2.svg]]
 *Example §14.3. Left: the rays $\operatorname{Arg} z = \pi/4$ (blue) and $\pi/3$ (green), the circles of radius $1$ (red) and $\frac12$ (orange), and the points $i$, $-1 + i$. Right: their images under $w = z^3$. The angles $\pi/4$ and $\pi/3$ triple to $3\pi/4$ and $\pi$; the radii cube to $1$ and $\frac18$; $i$ goes to $-i$ on the unit circle and $-1 + i$ to $2 + 2i$.*
+
+![[m342-14-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The polar description $\rho = r^n$, $\phi = n\theta$ of Example §14.2 and Proposition §14.3, drawn as a sweep. On the left a ray at angle $\theta$ (blue) turns once around the origin and traces the circles $r = 1$ (red) and $r = \frac12$ (orange) of Example §14.3; on the right the image ray at angle $n\theta$ and the image circles of radii $1$ and $\frac1{2^n}$ are traced at the same time. For $w = z^2$ the sweep pauses at $\theta = \pi/2$: the first quadrant has opened onto the upper half plane. For $w = z^3$ it pauses at $\theta = 2\pi/3$: that sector already covers the whole disk (Proposition §14.3(3)). The image moves $n$ times as fast, so one turn of $z$ covers each image circle $n$ times; each further lap is drawn slightly outside the previous one so that the laps can be counted, and the shading darkens with every lap. The readout counts the laps (2 for $z^2$, 3 for $z^3$, the point of Example §14.3).

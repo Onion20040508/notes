@@ -111,6 +111,10 @@ Now let $S$ be the solid obtained by rotating about the $y$-axis the region boun
 ![[m233-41-1.svg]]
 *The shell method on [[§47 Volumes by Cylindrical Shells#^ex-47-1|Example §47.1]]. (a) A thin strip at distance $x$ from the $y$-axis, of height $f(x)$ and width $\Delta x$, sweeps out a cylindrical shell when rotated about the axis. (b) Cut along a vertical line and flattened, the shell is nearly a slab of length $2\pi x$ (its circumference), height $f(x)$ and thickness $\Delta x$, with volume $2\pi x f(x)\,\Delta x$.*
 
+![[m233-41-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The shell method ([[§47 Volumes by Cylindrical Shells#^thm-47-2|Theorem §47.2]]) on [[§47 Volumes by Cylindrical Shells#^ex-47-1|Example §47.1]], $f(x) = 2x^2 - x^3$ on $[0, 2]$. A thin strip at radius $x = 0.7$ (red; $x$ and the width chosen for the picture) turns about the $y$-axis and sweeps out a cylindrical shell. The shell is then cut and unrolled into a flat slab of length $2\pi x \approx 4.40$, height $f(x) = 0.637$ and thickness $\Delta x$, so its volume is about $2\pi x\, f(x)\,\Delta x$, which is panel (b) of the figure. Finally ten shells with $\Delta x = 0.2$ and radii $x_i = 0.1, 0.3, \dots, 1.9$ fill the solid one by one (the front quarter is cut away to show them nested); their total $\sum 2\pi x_i f(x_i)\,\Delta x \approx 10.136$ is close to the exact $V = \int_0^2 2\pi x\, f(x)\,dx = \frac{16\pi}{5} \approx 10.053$.
+
 > [!remark]- Connections
 > - The general proof: in cylindrical coordinates the solid is $\{0 \le z \le f(r),\ a \le r \le b\}$, and its volume $\int_0^{2\pi} \int_a^b \int_0^{f(r)} r\,dz\,dr\,d\theta = \int_a^b 2\pi r f(r)\,dr$ ([[§122 Triple Integrals in Cylindrical Coordinates#^thm-122-1|Theorem §122.1]]). The factor $r$ is the Jacobian of the change of variables, [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]].
 

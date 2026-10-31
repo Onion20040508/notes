@@ -91,6 +91,10 @@ In one variable, $x$ can approach $a$ only from the left or from the right, and 
 
 ^ex-107-1
 
+![[m452-3-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Example §107.1(b) in motion, reused from MATH 452 (Multivariable Analysis). A line $y = mx$ (red; $k$ in the GIF) turns once around the origin, its angle $\theta$ with the $x$-axis running from $0$ to $\pi$, so $m = \tan\theta$. Over the line the surface is a horizontal segment: $f$ is constant along it, and approaching the origin along the line gives that constant as the limit. The black segment at the origin collects all these limits, and the title gives the height. The GIF is drawn for $\frac{2xy}{x^2 + y^2}$, which is twice the function $f(x, y) = \frac{xy}{x^2 + y^2}$ of this example, so every height in it is doubled: the title's $\frac{2k}{1 + k^2} = \sin 2\theta$ is $2f(x, mx) = \frac{2m}{1 + m^2}$, and its value $1$ over the diagonal $y = x$ ($\theta = \frac\pi4$) is the ridge of height $\frac12$ in the text. For $f$ itself the limits along lines fill $[-\frac12, \frac12]$: $0$ along the axes, $\frac12$ along $y = x$, $-\frac12$ along $y = -x$. Since they are not all equal, the limit does not exist (Theorem §107.1). The heights are also drawn shrunk, at scale $0.55$, to fit the picture.
+
 > [!example] Example §107.2: The Same Limit Along Every Line, but No Limit
 > If $f(x, y) = \dfrac{xy^2}{x^2 + y^4}$, does $\displaystyle\lim_{(x, y) \to (0, 0)} f(x, y)$ exist?
 >
@@ -119,6 +123,10 @@ In one variable, $x$ can approach $a$ only from the left or from the right, and 
 
 ![[m233-91-1.svg]]
 *Why lines miss the value $\frac12$ in [[§107 Limits and Continuity#^ex-107-2|Example §107.2]]. On each parabola $x = \lambda y^2$ the function $f(x, y) = \frac{xy^2}{x^2 + y^4}$ is constant, equal to $\frac{\lambda}{1 + \lambda^2}$: $\frac12$ on $x = y^2$ (green), $-\frac12$ on $x = -y^2$ (red), $\pm\frac{3}{10}$ on $x = \pm 3y^2$ and $x = \pm\frac13 y^2$ (thin). All these parabolas are tangent to the $y$-axis at the origin, so a line $y = mx$ (dashed) meets $x = \lambda y^2$ only at $x = 1/(\lambda m^2)$, away from the origin. Close to the origin a line crosses only parabolas with large $|\lambda|$, where $f$ is close to $0$.*
+
+![[m233-91-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The surface $z = f(x, y) = \frac{xy^2}{x^2 + y^4}$ of Example §107.2 over $|x|, |y| \le 1$, coloured by height (red above $0$, blue below, white at $0$), with the path in the $xy$-plane shown dashed on the floor and in the small inset. First a line through the origin turns through all directions. Along $y = mx$ the surface curve (black) is $f(x, mx) = \frac{m^2x}{1 + m^4x^2}$, and every one of these curves comes down to height $0$ at the origin; along $x = 0$, $f$ is $0$ throughout. A line does reach the value $\frac12$ (black dot), but only where it crosses the parabola $x = y^2$, at $x = 1/m^2$, away from the origin. Then the parabola $x = \lambda y^2$ turns, $\lambda$ running from $-3$ to $3$. On it the surface curve (green) is level at height $\frac{\lambda}{1 + \lambda^2}$ all the way into the origin: $-\frac12$ for $\lambda = -1$ and $\frac12$ for $\lambda = 1$, the green curve of the figure. So arbitrarily close to $(0, 0)$ the function takes every value between $-\frac12$ and $\frac12$, and the limit does not exist.
 
 ## Properties of Limits
 

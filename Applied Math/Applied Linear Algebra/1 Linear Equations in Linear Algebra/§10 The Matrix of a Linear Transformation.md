@@ -47,6 +47,10 @@ The columns of the $n \times n$ identity matrix $I_n$ are the **standard basis v
 
 *Uses:* [[§9 Introduction to Linear Transformations#^prop-9-3|§9.3]] (superposition), [[§5 The Matrix Equation Ax = b#^def-5-1|Def. §5.1]], [[§5 The Matrix Equation Ax = b#^def-5-4|Def. §5.4]]
 
+![[ladr-3.4-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 3.4). Theorem §10.1 as a picture: a linear transformation is fixed by the images of a basis. Here the images $T(\mathbf{e}_1)$, $T(\mathbf{e}_2)$ (Axler's $w_1, w_2$) are moved around, and the whole image grid follows, since $T(x_1\mathbf{e}_1 + x_2\mathbf{e}_2) = x_1T(\mathbf{e}_1) + x_2T(\mathbf{e}_2)$. For instance the red dot is $T(2\mathbf{e}_1 + \mathbf{e}_2) = 2T(\mathbf{e}_1) + T(\mathbf{e}_2)$. Reading the two images off as columns gives the standard matrix $A = [\,T(\mathbf{e}_1)\ \ T(\mathbf{e}_2)\,]$. In one position the two columns are parallel and the grid collapses onto a line: the transformation is still linear but no longer one-to-one (compare Theorem §10.3). The vectors are chosen for the picture.
+
 > [!remark]- Connections
 > - Rigorous treatment: a linear map is determined by its values on a basis, which may be prescribed freely, [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]]; the standard matrix is Axler's $\mathcal{M}(T)$ ([[§9 Matrices#^ladr-3-31|LADR 3.31]]) for the standard bases. Axler allows any bases of any finite-dimensional $V$ and $W$, which Lay reaches in [[§43 Eigenvectors and Linear Transformations#^def-43-1|Definition §43.1]].
 
@@ -129,6 +133,10 @@ A linear transformation of the plane is determined by what it does to $\mathbf{e
 
 ![[m235-9-2.svg]]
 *Four entries of the catalog acting on the unit square (dashed): the image of $\mathbf{e}_1$ is red, the image of $\mathbf{e}_2$ green, and the image of the square is the blue parallelogram they span.*
+
+![[m235-9-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* Five entries of the catalog (Lay's Tables 1–4), each reached from the identity through the matrices $(1 - t)I + tA$, $0 \le t \le 1$, and then released. The red arrow is the first column $T(\mathbf{e}_1)$, the green arrow the second column $T(\mathbf{e}_2)$, and the blue parallelogram they span is the image of the unit square (dashed). The matrix on the right fills in column by column, in the same colours. The reflection through the $x_1$-axis, $\operatorname{diag}(1, 1 - 2t)$, flattens the square at $t = \frac12$ ($\det = 0$) and then flips it: from there on $\det < 0$ and the orientation is reversed. The reflection through $x_2 = x_1$ also passes through a flat square, on the line $x_2 = x_1$, before it swaps $\mathbf{e}_1$ and $\mathbf{e}_2$. The horizontal shear with $k = 1$ slides the top edge sideways and keeps the area $1$. The horizontal contraction with $k = \frac12$ halves the width. The projection onto the $x_1$-axis squashes the square onto the segment from $\mathbf{0}$ to $\mathbf{e}_1$ ($\det = 0$, $T(\mathbf{e}_2) = \mathbf{0}$). The in-between matrices only make the motion visible; they are not catalog entries themselves.
 
 > [!example] Example §10.3: A Shear Followed by a Reflection
 > Let $T: \mathbb{R}^2 \to \mathbb{R}^2$ first perform a horizontal shear that maps $\mathbf{e}_2$ into $\mathbf{e}_2 - .5\mathbf{e}_1$ (leaving $\mathbf{e}_1$ unchanged), and then reflect the result through the $x_2$-axis. Assuming $T$ is linear, find its standard matrix.

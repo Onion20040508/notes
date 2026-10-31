@@ -82,6 +82,10 @@ $A(t) < 1$ however large $t$ is, and $\lim_{t \to \infty} A(t) = 1$. So we say t
 ![[m233-51-1.svg]]
 *Up to $x = t$, the area under $y = 1/x^2$ (blue) is $1 - \frac1t < 1$, while the area under $y = 1/x$ is $\ln t$, which exceeds it by the red area and grows without bound. Both curves tend to $0$; only the faster one encloses a finite area.*
 
+![[m451-36-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The comparison of Example §58.1 and Theorem §58.1 as the upper limit grows, reused from MATH 451 (Single Variable Analysis). The upper limit (called $d$ in the GIF, $t$ in this note) runs from $1$ to $400$. Left: the graphs of $x^{-p}$ for $p = 2$ (blue), $p = 1$ (dashed) and $p = \frac12$ (red), with the area under $1/x^2$ up to $d$ shaded. Right: the running integrals $\int_1^d x^{-p}\,dx$ against $d$ on a logarithmic $d$-axis: $1 - \frac1d \to 1 = \frac{1}{p - 1}$ for $p = 2$, $\ln d$ for $p = 1$ (written $\log d$ in the GIF; a straight line on this axis) and $2(\sqrt d - 1)$ for $p = \frac12$; at $d = 400$ the readouts are $0.998$, $5.99$ and $38.00$. The three curves on the left look alike and all tend to $0$, but only for $p = 2 > 1$ does the running integral level off at a finite value; for $p = 1$ and $p = \frac12$ (so $p \le 1$) it grows without bound, as Theorem §58.1 says.
+
 > [!example] Example §58.2: Evaluating Type 1 Integrals
 > Evaluate **(a)** $\displaystyle\int_{-\infty}^0 x e^x\,dx$ and **(b)** $\displaystyle\int_{-\infty}^\infty \frac{1}{1 + x^2}\,dx$.
 >

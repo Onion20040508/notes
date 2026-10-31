@@ -44,6 +44,10 @@ The unit normal $\mathbf{N}$ and binormal $\mathbf{B}$ complete $\mathbf{T}$ to 
 ![[m233-88-2.svg]]
 *The TNB frame at a point $P$ of the helix $\mathbf{r}(t) = \langle \cos t, \sin t, t \rangle$ ([[§103 The TNB Frame and Torsion#^ex-103-1|Example §103.1]]). $\mathbf{T}$ (red) is tangent to the helix, $\mathbf{N} = \langle -\cos t, -\sin t, 0 \rangle$ (blue) is horizontal and points straight at the $z$-axis, around which the helix turns, and $\mathbf{B} = \mathbf{T} \times \mathbf{N}$ (green) completes the right-handed frame.*
 
+![[m233-88-a2.gif|400]]
+
+*(Not from the book; animation added, vault only.)* The TNB frame of Example §103.1 carried along the helix $\mathbf{r}(t) = \langle \cos t, \sin t, t \rangle$ for one turn, $0.3 \le t \le 2\pi - 0.3$, with the colours of the figure above: $\mathbf{T}$ red, $\mathbf{N}$ blue, $\mathbf{B}$ green. The helix winds on the cylinder $x^2 + y^2 = 1$ (the part behind the axis is grey). The green disc is a piece of the osculating plane, spanned by $\mathbf{T}$ and $\mathbf{N}$ (Definition §103.4), with normal $\mathbf{B}$. As the point moves, $\mathbf{N} = \langle -\cos t, -\sin t, 0 \rangle$ always lies flat and points straight at the $z$-axis (dashed). $\mathbf{T}$ and $\mathbf{B} = \frac{1}{\sqrt2}\langle \sin t, -\cos t, 1 \rangle$ keep the same $45^\circ$ tilt from the vertical. So the frame turns at the same rate all along, which is the constant curvature $\kappa = \frac12$, and the osculating plane tips around the axis at a constant rate, the constant torsion $\tau = \frac12$. The whole picture is the same at every point up to a screw motion of the helix.
+
 > [!definition] Definition §103.3: Normal Plane
 > At a point $P$ of a curve $C$:
 > - the **normal plane** is the plane determined by $\mathbf{N}$ and $\mathbf{B}$; it consists of all lines through $P$ orthogonal to the tangent vector $\mathbf{T}$, so $\mathbf{T}$ (or $\mathbf{r}'$) is a normal vector for it;

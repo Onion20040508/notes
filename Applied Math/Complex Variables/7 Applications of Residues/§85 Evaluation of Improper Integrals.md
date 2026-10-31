@@ -181,6 +181,10 @@ around the positively oriented boundary of the half disk $|z| \le R$, $\operator
 ![[m342-85-1.svg]]
 *The closed contour of Theorem §85.3: the segment $[-R, R]$ and the semicircle $C_R$. Since $q$ has real coefficients, its zeros come in conjugate pairs $z_k$, $\bar z_k$; the contour encloses the ones above the axis (red) once $R$ exceeds their moduli, and none of the ones below (gray).*
 
+![[m342-85-a1.gif|520]]
+
+*(Not from the book; animation added, vault only.)* Theorem §85.3 at work on Example §86.1, $f(z) = 1/(z^6 + 1)$. The half disk grows from $R = 0.3$ to $R = 3$. Left: the segment $[-R, R]$ (blue), the semicircle $C_R$ (red) and the six zeros $c_k$ of $z^6 + 1$ on the unit circle. The three in the upper half plane, $e^{i\pi/6}$, $i$, $e^{5i\pi/6}$, all have modulus $1$, so they are enclosed together as $R$ passes $1$ (filled red). Right: as functions of $R$, the segment integral $\int_{-R}^R f\,dx$ (blue), the arc integral $\int_{C_R} f\,dz$ (red) and $2\pi i\sum\operatorname{Res}$ (orange, dashed); the moment $R = 1$, when poles sit on the contour, is skipped. For $R < 1$ there is no pole inside and the two integrals cancel exactly. For $R > 1$ their sum is $2\pi i(B_0 + B_1 + B_2) = 2\pi/3 \approx 2.0944$ for every $R$, as in equation (3) of the example. The red band is the ML bound $\pi R/(R^6 - 1)$ of Theorem §47.2, which squeezes the arc term to $0$ (at $R = 3$: arc $0.0016$, bound $0.0129$), so the segment integral climbs to $2\pi/3$ (it is $2.0928$ at $R = 3$).
+
 Whether the arc integral tends to zero depends only on the degrees. B&C checks it case by case with the bound of [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|Theorem §47.2]]; here is the general statement, the criterion "$\deg q \ge \deg p + 2$" that the old-final keys quote ([[§86 Example (Evaluation of Improper Integrals)#^ex-86-4|Example §86.4]]).
 
 > [!theorem] Proposition §85.4: The Degree Condition

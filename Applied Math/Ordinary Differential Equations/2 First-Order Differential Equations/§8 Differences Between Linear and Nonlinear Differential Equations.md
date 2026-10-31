@@ -253,6 +253,10 @@ $$
 ![[m331-7-1.svg]]
 *Some solutions of $y' = y^{1/3}$, $y(0) = 0$ ([[§8 Differences Between Linear and Nonlinear Differential Equations#^ex-8-3|Example §8.3]]): $\phi_1$ (blue), $\phi_2$ (green), $\psi = 0$ (black), and the functions $\chi$ that rest on the $t$-axis until a time $t_0$ and then leave it upward or downward (red; here $t_0 = 0.6, 1.2, 1.8$). Every point of the $t$-axis is a branching point, which is possible only because $\partial f/\partial y = \frac13 y^{-2/3}$ blows up there.*
 
+![[m331-7-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The solutions (19) of $y' = y^{1/3}$, $y(0) = 0$ from Example §8.3, with the departure time $t_0$ sliding along the $t$-axis from $0$ to $2.3$. Each red pair $\chi$ rests on the axis until $t_0$ and then leaves it upward or downward as $\pm\big(\frac23(t - t_0)\big)^{3/2}$, tangent to the axis (both one-sided derivatives are $0$ at $t_0$); faint copies stay behind for $t_0 = 0.4, 0.8, \ldots, 2.0$. At $t_0 = 0$ the pair is $\phi_1$ (blue) and $\phi_2$ (green), and $\psi = 0$ is the axis itself. Every point of the axis is a branching point, so the initial value problem has infinitely many solutions; this can happen only because $\partial f/\partial y = \frac13y^{-2/3}$ is not continuous on $y = 0$, where Theorem 2.4.2 does not apply.
+
 ## Interval of Existence
 
 By [[§8 Differences Between Linear and Nonlinear Differential Equations#^thm-8-1|Theorem §8.1]], the solution of a linear problem (1), (2) exists throughout any interval about $t_0$ on which $p$ and $g$ are continuous; vertical asymptotes and other discontinuities of the solution can occur only at discontinuities of $p$ or $g$. In [[§8 Differences Between Linear and Nonlinear Differential Equations#^ex-8-1|Example §8.1]] the solutions $y = t^2 + c/t^2$ are asymptotic to the $y$-axis, matching the discontinuity of $p(t) = 2/t$ at $t = 0$, but have no other point where they fail to exist or to be differentiable. The one exception, $c = 0$, gives $y = t^2$, which is continuous even at $t = 0$: a solution may remain continuous at a discontinuity of the coefficients.
@@ -309,6 +313,10 @@ For a nonlinear problem satisfying the hypotheses of Theorem 2.4.2, the interval
 
 ![[m331-7-2.svg]]
 *Solutions $y = y_0/(1 - y_0 t)$ of $y' = y^2$ for $y_0 = \pm\frac12, \pm1, \pm2$ (same colour for $\pm y_0$), with the vertical asymptotes $t = 1/y_0$ (dashed). Each solution exists only up to its own asymptote, $t < 1/y_0$ for $y_0 > 0$ and $t > 1/y_0$ for $y_0 < 0$, although $f(t, y) = y^2$ is as smooth as can be. The $t$-axis is the solution $y = 0$; by [[§8 Differences Between Linear and Nonlinear Differential Equations#^cor-8-3|Corollary §8.3]] no other solution touches it.*
+
+![[m331-7-a2.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The solutions (25), $y = y_0/(1 - y_0t)$, of $y' = y^2$ from Example §8.4, while the initial value moves continuously from $y_0 = 0.34$ to $3$ and back; the solution with $y_0 > 0$ is blue, the one with $-y_0$ red. Each blows up at its own vertical asymptote $t = 1/y_0$ (dashed), and the bars below show the intervals of existence, $t < 1/y_0$ for $y_0 > 0$ and $t > 1/y_0$ for the negative initial value. As $y_0$ grows the asymptote sweeps in from far away ($2.94$ at $y_0 = 0.34$) to $0.33$ at $y_0 = 3$, and the interval shrinks with it. Nothing in the equation marks these points: $f(t, y) = y^2$ and $\partial f/\partial y = 2y$ are continuous everywhere, and the singularity is set by the initial condition alone.
 
 ## General Solution
 

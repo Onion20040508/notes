@@ -251,6 +251,10 @@ In [[§67 Direction Fields and Euler's Method#^ex-67-2|Example §67.2]] the segm
 ![[m233-58-2.svg]]
 *Euler's method for $y' = x + y$, $y(0) = 1$. With $h = 0.5$ (blue) the first step runs $h = 0.5$ along the tangent at $(0, 1)$ and rises $hF(0, 1) = 0.5$; at $(0.5, 1.5)$ the direction is corrected to slope $2$. With $h = 0.25$ (green) there are four corrections and the polygon stays closer to the exact solution (red). Both lie below it, since the curve is concave upward.*
 
+![[m233-58-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Euler's method (Definition §67.4) for $y' = x + y$, $y(0) = 1$ on $[0, 1]$, with the exact solution $y = 2e^x - x - 1$ in red. With $h = 0.5$ (blue) and then $h = 0.25$ (green) the polygon is drawn step by step: each step runs along the slope $F(x_{n-1}, y_{n-1})$ at its starting point (the dotted line continues that tangent) and stops after the run $h$, where the direction is corrected, $y_n = y_{n-1} + hF(x_{n-1}, y_{n-1})$. Then the polygons for $h = 0.1$, $0.05$ and $0.01$ (orange) are drawn whole. The table collects the estimates of $y(1)$ from the note's table, $2.5$, $2.8828$, $3.1875$, $3.3066$, $3.4096$, against $2e - 2 \approx 3.4366$: the errors $0.937$, $0.554$, $0.249$, $0.130$, $0.027$ roughly halve with $h$, and every polygon lies below the curve, which is concave upward.
+
 > [!example] Example §67.4: Euler's Method for the Circuit
 > In [[§67 Direction Fields and Euler's Method#^ex-67-2|Example §67.2]] (resistance $12\ \Omega$, inductance $4$ H, battery voltage $60$ V, switch closed at $t = 0$), the current $I$ at time $t$ is modeled by the initial-value problem
 >

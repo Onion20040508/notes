@@ -49,6 +49,10 @@ With several branch points, a Riemann surface is built from cuts that join branc
 ![[m342-111-1.svg]]
 *The coordinates used in §111. Left: for $(z^2 - 1)^{1/2}$ the cut (orange) joins the branch points $P_2 = -1$ and $P_1 = 1$, and $\arg f = \frac12(\theta_1 + \theta_2)$; a loop around the whole cut changes $\theta_1$ and $\theta_2$ by $2\pi$ each and leaves $f$ unchanged. Right: for $[z(z^2 - 1)]^{1/2}$ the branch points are $-1, 0, 1$ and $\infty$, and the cuts $L_2$ from $-1$ to $0$ and $L_1$ from $1$ to $\infty$ pair them off.*
 
+![[m342-111-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Example §111.1: $f(z) = (z^2 - 1)^{1/2} = \sqrt{r_1r_2}\exp\frac{i(\theta_1 + \theta_2)}{2}$ followed continuously along three loops, each starting and ending at $z = 1.2i$ (loops chosen for the picture), where $f = \sqrt{2.44}\,i \approx 1.56i$ (white dot "$f$ at start"). The orange segment is the cut joining the branch points $P_2 = -1$ and $P_1 = 1$. A loop around $1$ only (blue) changes $\theta_1$ by $2\pi$ and $\theta_2$ by $0$, so $\arg f$ changes by $\pi$ and the followed value ends at $-f$: the point has crossed onto the other sheet $R_1$. A loop around $-1$ only (red) does the same with $\theta_2$. A loop around both branch points (green) changes each angle by $2\pi$, so $\arg f$ changes by $2\pi$ and the value comes back to $f$: the point stays on $R_0$, which is why the cut can join the two branch points. The readout gives $\Delta\theta_1$, $\Delta\theta_2$ and $\Delta\arg f = \frac12(\Delta\theta_1 + \Delta\theta_2)$ as the point moves.
+
 > [!example] Example §111.2: A Riemann Surface for [z(z² − 1)]^(1/2)
 > Consider
 >

@@ -73,6 +73,10 @@ Rouché's theorem turns the argument principle into a practical tool for locatin
 ![[m342-94-1.svg]]
 *Rouché's theorem for Example §94.1, $f = 3z^3$, $g = z^4 + 6$ on $|z| = 2$. Left: the image of the circle under $f + g = z^4 + 3z^3 + 6$, computed from $z = 2e^{i\theta}$, winds three times counterclockwise around the origin, so $f + g$ has three zeros in $|z| < 2$. Right: the factor $F = 1 + g/f = 1 + z/3 + 2/z^3$ keeps the image inside the disk $|w - 1| < 1$ (dashed), since $|g/f| \le 22/24$ there; it never winds around $0$, so $f + g$ inherits the winding number $3$ of $3z^3$.*
 
+![[m342-94-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Rouché's theorem (Theorem §94.1) as a dog on a leash, for Example §94.1. As $z$ goes once around $|z| = 2$, the walker $f(z) = 3z^3$ (blue) goes three times around the circle $|w| = 24$, and so three times around the tree at $0$ (green). The dog $f(z) + g(z) = z^4 + 3z^3 + 6$ (red) is tied to the walker by the leash $g(z) = z^4 + 6$ (black segment), whose length $|g|$ varies between $10$ and $22$ but always stays below the walker's distance $|f| = 24$ from the tree. So the dog can wander, but it can never get to the other side of the tree on its own; it comes within $2$ of $0$ at the closest. The turn counters end at $3.00$ for both: $f + g$ has the same winding number as $f$, so the same number of zeros in $|z| < 2$, namely the three of $3z^3$ (the triple zero at $0$). Numerically the roots of $z^4 + 3z^3 + 6$ have moduli $1.166$, $1.166$, $1.640$ and $2.693$.
+
 > [!remark] Remark: Method — Counting Zeros with Rouché's Theorem
 > To count the zeros of $h(z)$ in $|z| < r$:
 > 1. **Split** $h = f + g$, with $f$ a single dominant term on $|z| = r$, usually the term $a_kz^k$ with the largest modulus $|a_k|r^k$. Then $f$ has $k$ zeros in $|z| < r$ (all at $0$).
@@ -139,6 +143,10 @@ Rouché's theorem turns the argument principle into a practical tool for locatin
 > *B&C: Sec. 94, Example 2*
 
 ^ex-94-2
+
+![[m590-25-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* Reused from Topology (§33, the fundamental theorem of algebra by winding numbers); here it shows Rouché's condition in Example §94.2 for $P(z) = z^3 + 0.6z$, with $f(z) = z^3$ and $g(z) = 0.6z$ on the circle $|z| = 1$. The loops $f + tg$, $0 \le t \le 1$, are drawn as $t$ runs from $0$ to $1$ and back: the blue loop $f(C) = \{z^3\}$, which winds three times around $0$, slides onto the red loop $P(C)$. Since $|tg(z)| \le 0.6 < 1 = |f(z)|$ on $|z| = 1$, the black segment (the distance from $0$ to the nearest point of the loop) never drops below $1 - 0.6 = 0.4$. So no loop passes through $0$, the winding number stays $3$, and $P$ has as many zeros in $|z| < 1$ as $z^3$ does, namely three ($0$ and $\pm i\sqrt{0.6}$). Here $|g| < |f|$ holds already at $R = 1$, although the crude bound (4) of the example needs $R > 1$.
 
 > [!remark]- Connections
 > - Other proofs of the fundamental theorem of algebra in the vault: the topological one by winding numbers, [[§33 The Fundamental Theorem of Algebra#^thm-33-1|590 Thm. §33.1]] (hub: [[Fundamental Theorem of Algebra (topological proof)]]), which is the same idea as Example §94.2 with $\pi_1(S^1)$ in place of the argument principle; and the statement used in linear algebra, [[§13 Polynomials#^ladr-4-12|LADR 4.12]].

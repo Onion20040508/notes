@@ -3,21 +3,21 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C6b
-section: C6b.3
+section: C6b.5
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6b.2 Wave Packets and the Cross Section]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.4 Lorentz Invariance and Two-Body Phase Space]] →
+← [[§C6b.4 Wave Packets and the Cross Section]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.6 Lorentz Invariance and Two-Body Phase Space]] →
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)", Definition "Classical differential cross section", Figure "classicalxsec", paragraph "Example: the hard sphere (filled in)"), §15.3 (Definition "Wave packets", eq. (twopacket), paragraph "Why $e^{-i\vec b\cdot\vec k_B}$ shifts $B$ by $+\vec b$ (filled in)", Figure "wavepackets", Caution "A slip on the wave-packet slide", eq. (Pb), Definition "The quantum cross section", paragraphs "Why integrate over $\vec b$ (filled in)", "Which final states (filled in)"), §15.4 (eq. (dsigmafull), paragraph "Counting", Derivations "The $\delta$-functions and the one Jacobian", "A $\delta$-function of a function (filled in)", Caution "$1/f'(0)$ on the slide", paragraphs "Integrating over $\bar k_B^z$ instead", "A second zero (filled in)", "Smoothness"), §15.5 (Principle "Cross section for $2\to n$ scattering", paragraph "Reading the formula", Derivation "Dimension check (filled in)", paragraph "Identical particles (filled in)") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slide 8, Part B, slides 11–16, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 99–106 and 108, eqs. (4.59)–(4.61), (4.65)–(4.79) · Yu Zhao-Huan, 量子场论讲义, §6.5.1–§6.5.2, eqs. (6.276)–(6.313), (6.321).*
 
-The quantum cross section of [[§C6b.2 Wave Packets and the Cross Section|§C6b.2]], $d\sigma = \int d^2b\,\mathcal P(\mathbf b)$ ([[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-6|Def. §C6b.2.6]]) for the two-packet state of [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-4|Def. §C6b.2.4]], evaluated; away from the forward direction only $i\hat T$ contributes ([[§C6b.2 Wave Packets and the Cross Section#^lem-c6b-2-4|Lemma §C6b.2.4]]). The result, after fourteen integrals, one Jacobian and an argument from smoothness, is "the longest formula we have in the entire class", [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]]: initial kinematics × $|\mathcal M|^2$ × final phase space. It is done once and never again. Yu reaches the same formula without wave packets: he normalizes the states in a box of volume $\tilde V$, squares the delta function honestly, $(2\pi)^4\delta^4(0) = \tilde V\tilde T$, and divides by the duration and the flux (§6.5.1–§6.5.2, eqs. (6.276)–(6.313)); Remark: Yu's route, at the end.
+The quantum cross section of [[§C6b.4 Wave Packets and the Cross Section|§C6b.4]], $d\sigma = \int d^2b\,\mathcal P(\mathbf b)$ ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]) for the two-packet state of [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-4|Def. §C6b.4.4]], evaluated; away from the forward direction only $i\hat T$ contributes ([[§C6b.4 Wave Packets and the Cross Section#^lem-c6b-4-5|Lemma §C6b.4.5]]). The result, after fourteen integrals, one Jacobian and an argument from smoothness, is "the longest formula we have in the entire class", [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]: initial kinematics × $|\mathcal M|^2$ × final phase space. It is done once and never again. Yu reaches the same formula without wave packets: he normalizes the states in a box of volume $\tilde V$, squares the delta function honestly, $(2\pi)^4\delta^4(0) = \tilde V\tilde T$, and divides by the duration and the flux (§6.5.1–§6.5.2, eqs. (6.276)–(6.313)); Remark: Yu's route, at the end.
 
 *Conventions* ([[Larsen PHY 513]]): beams along the $z$-axis; $\perp$ marks the components $(x, y)$ transverse to it; $E_A \equiv E_{\mathbf k_A} = \sqrt{\mathbf k_A^2 + m_A^2}$ inside integrals and $E_A = E_{\mathbf p_A}$ in final formulas; $\mathbf v = \mathbf k/E$ is the velocity; barred momenta $\bar{\mathbf k}_A$, $\bar{\mathbf k}_B$ label the second, complex-conjugated copy of an amplitude.
 
 ## Doing the integrals
 
-Inserting [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-4|Def. §C6b.2.4]] into [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-5|Def. §C6b.2.5]] and [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-6|Def. §C6b.2.6]], the square brings in a second, complex-conjugated copy of the packet integral, with its own variables $\bar{\mathbf k}_A$, $\bar{\mathbf k}_B$ (slide 13):
+Inserting [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-4|Def. §C6b.4.4]] into [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]] and [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]], the square brings in a second, complex-conjugated copy of the packet integral, with its own variables $\bar{\mathbf k}_A$, $\bar{\mathbf k}_B$ (slide 13):
 
 $$
 \begin{aligned}
@@ -26,7 +26,7 @@ d\sigma = {}&\Bigl(\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\Bigr)\int d^2b\,
 \end{aligned}
 $$
 
-"What a mess!" It comes from "the inconvenient fact" that probabilities are squares of amplitudes. There are 14 integrals, $3 + 3 + 3 + 3$ momenta and 2 components of $\mathbf b$: "six of them will give delta functions, and then that will help us with getting rid of six more. 14 minus 12 is two." The fourteen, and where each goes in [[§C6b.3 Evaluating the Cross Section#^der-c6b-3-2|Derivation §C6b.3.2]]:
+"What a mess!" It comes from "the inconvenient fact" that probabilities are squares of amplitudes. There are 14 integrals, $3 + 3 + 3 + 3$ momenta and 2 components of $\mathbf b$: "six of them will give delta functions, and then that will help us with getting rid of six more. 14 minus 12 is two." The fourteen, and where each goes in [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-2|Derivation §C6b.5.2]]:
 
 | integrals | number | done by | step |
 |---|---|---|---|
@@ -43,9 +43,9 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 >
 > *Source: PHY 513 Lecture 15, slides 13, 15 (page images) · PS §4.5, eq. (4.76) · the user's PHY 513 notes, Ch. 15 §15.4, eq. (dsigmafull)*
 
-^cau-c6b-3-1
+^cau-c6b-5-1
 
-> [!theorem] Theorem §C6b.3.1: The Longitudinal Integrals Give the Velocity Difference
+> [!theorem] Theorem §C6b.5.1: The Longitudinal Integrals Give the Velocity Difference
 > Fix the transverse momenta, let $P^z$ and $E$ be fixed, and write $\bar E_A = \sqrt{\bar{\mathbf k}_A^2 + m_A^2}$, $\bar E_B = \sqrt{\bar{\mathbf k}_B^2 + m_B^2}$. For a smooth $g$, if the constraints have simple zeros,
 >
 > $$
@@ -56,7 +56,7 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 >
 > *Source: PHY 513 Lecture 15, slide 14 ("$= \frac{1}{|\frac{\bar k_A^z}{E_A} - \frac{\bar k_B^z}{E_B}|} = \frac{1}{|\vec v_A - \vec v_B|}$ … Final equality: $\vec k = \gamma m\vec v$, $E = \gamma m$"), and transcript · the user's PHY 513 notes, Ch. 15 §15.4, eq. (jacobian), paragraphs "Integrating over $\bar k_B^z$ instead", "A second zero (filled in)" · PS §4.5, eq. (4.77)*
 
-^thm-c6b-3-1
+^thm-c6b-5-1
 
 > [!derivation]- Derivation
 > **Step 1** (the linear delta). $\delta(\bar k_A^z + \bar k_B^z - P^z)$ does the $\bar k_B^z$ integral with Jacobian 1 ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1): "$\vec{\bar k}_B$ as determined by momentum conservation" (slide 14),
@@ -107,7 +107,7 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 > - The only non-trivial step of the whole computation is one Jacobian, and it is the kinematic velocity difference of the two beams: "you should not actually be shocked that that is part of the kinematics of doing scattering."
 > - Integrating over $\bar k_B^z$ instead, eliminating $\bar k_A^z$, gives $-f'$ and, with the absolute value, the same result.
 
-^der-c6b-3-1
+^der-c6b-5-1
 
 *Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
 
@@ -116,9 +116,9 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 >
 > *Source: PHY 513 Lecture 15, slide 14 (page image) · the user's PHY 513 notes, Ch. 15 §15.4, Caution "$1/f'(0)$ on the slide"*
 
-^cau-c6b-3-2
+^cau-c6b-5-2
 
-> [!theorem] Theorem §C6b.3.2: The Cross Section for 2 → n Scattering
+> [!theorem] Theorem §C6b.5.2: The Cross Section for 2 → n Scattering
 > For narrow wave packets and final states different from the initial state,
 >
 > $$
@@ -129,7 +129,7 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 >
 > *Source: PHY 513 Lecture 15, slide 16 ("Final Result. Collect all factors: $d\sigma = \frac{1}{2E_A2E_B|\vec v_A - \vec v_B|}\cdot|\mathcal M|^2\cdot\bigl(\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\bigr)(2\pi)^4\delta^{(4)}(p_A + p_B - \sum_ip_i)$ … 1st factor: kinematics of initial particles. 3rd and 4th factor: kinematics of final particles. 2nd factor: the amplitude squared $|\mathcal M|^2$. This is dynamical information."), slides 13–15, and transcript · the user's PHY 513 notes, Ch. 15 §15.5, Principle "Cross section for $2\to n$ scattering" (a derived result: a theorem here) · PS §4.5, eq. (4.79) · Yu §6.5.2, eq. (6.320)*
 
-^thm-c6b-3-2
+^thm-c6b-5-2
 
 > [!derivation]- Derivation
 > Start from the 14-fold integral above (the definitions inserted, the square written as the product of the amplitude and its conjugate). The integrals are exchanged freely: the packets are smooth and rapidly decreasing, and every delta function is used against them (the physicists' route of [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]).
@@ -142,7 +142,7 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 >
 > "Because the $A$ particle and the $B$ particle were shifted by $b$ relative to each other … since we integrate all $b$, [the two copies] have to be the same … but only in the transverse directions."
 >
-> **Step 2** (the amplitudes; slide 13, item 2). The final states differ from the initial one, so only $i\hat T$ contributes ([[§C6b.2 Wave Packets and the Cross Section#^lem-c6b-2-4|Lemma §C6b.2.4]]), and by [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]
+> **Step 2** (the amplitudes; slide 13, item 2). The final states differ from the initial one, so only $i\hat T$ contributes ([[§C6b.4 Wave Packets and the Cross Section#^lem-c6b-4-5|Lemma §C6b.4.5]]), and by [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]
 >
 > $$
 > \langle\mathbf p_1\cdots|\mathbf k_A\mathbf k_B\rangle = i\mathcal M\,(2\pi)^4\delta^4\Bigl(k_A + k_B - \sum_ip_i\Bigr), \qquad \langle\mathbf p_1\cdots|\bar{\mathbf k}_A\bar{\mathbf k}_B\rangle^\ast = -i\bar{\mathcal M}^\ast\,(2\pi)^4\delta^4\Bigl(\bar k_A + \bar k_B - \sum_ip_i\Bigr) ,
@@ -174,7 +174,7 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 >
 > Factors of $2\pi$: $(2\pi)^{-2-2+2+2} = 1$.
 >
-> **Step 4** (the longitudinal $\bar k$ integrals; slide 14). What remains of the barred delta function, with the last two barred measures, is [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-1|Theorem §C6b.3.1]] with $E = P^0$:
+> **Step 4** (the longitudinal $\bar k$ integrals; slide 14). What remains of the barred delta function, with the last two barred measures, is [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-1|Theorem §C6b.5.1]] with $E = P^0$:
 >
 > $$
 > \int\frac{d\bar k_A^z\,d\bar k_B^z}{(2\pi)^2}\;(2\pi)^2\delta\bigl(\bar k_A^z + \bar k_B^z - P^z\bigr)\,\delta\bigl(\bar E_A + \bar E_B - P^0\bigr)\,H = \frac{H}{\bigl|\bar v_A^z - \bar v_B^z\bigr|}\bigg|_{\text{contributing zero}} ,
@@ -194,7 +194,7 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 > \bar k_A^z + \bar k_B^z = k_A^z + k_B^z , \qquad \sqrt{\mathbf k_A^{\perp2} + (\bar k_A^z)^2 + m_A^2} + \sqrt{\mathbf k_B^{\perp2} + (\bar k_B^z)^2 + m_B^2} = E_A + E_B ,
 > $$
 >
-> are the two equations that $(k_A^z, k_B^z)$ itself satisfies; their contributing solution is $\bar k_A^z = k_A^z$, $\bar k_B^z = k_B^z$ (the reflected zero is suppressed, ⚑ of [[§C6b.3 Evaluating the Cross Section#^der-c6b-3-1|Derivation §C6b.3.1]]). Hence "simply take $\bar k_A = k_A$, $\bar k_B = k_B$":
+> are the two equations that $(k_A^z, k_B^z)$ itself satisfies; their contributing solution is $\bar k_A^z = k_A^z$, $\bar k_B^z = k_B^z$ (the reflected zero is suppressed, ⚑ of [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-1|Derivation §C6b.5.1]]). Hence "simply take $\bar k_A = k_A$, $\bar k_B = k_B$":
 >
 > $$
 > \bar{\mathbf k}_A = \mathbf k_A , \quad \bar{\mathbf k}_B = \mathbf k_B , \quad \bar E_{A,B} = E_{A,B} , \quad \bar v^z_{A,B} = v^z_{A,B} , \quad \bar{\mathcal M} = \mathcal M .
@@ -220,9 +220,9 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 >
 > ⚑ By-product: the same is done inside the remaining delta function, $\delta^4(k_A + k_B - \sum p_i) \to \delta^4(p_A + p_B - \sum p_i)$; this assumes that the final-state acceptance is smooth on the scale of the packet widths, as for any real detector, which does not resolve the momentum spread of the initial packets (PS p. 106).
 >
-> **Step 8** (normalization; slide 15, last bullet). By [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-3|Def. §C6b.2.3]] each remaining integral is 1, so the right side of Step 7 is $F(p_A, p_B)\cdot1\cdot1$. "It completely collapses, and it's because of smoothness."
+> **Step 8** (normalization; slide 15, last bullet). By [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-3|Def. §C6b.4.3]] each remaining integral is 1, so the right side of Step 7 is $F(p_A, p_B)\cdot1\cdot1$. "It completely collapses, and it's because of smoothness."
 >
-> **Step 9** (read off). With beams along $z$, $|v_A^z - v_B^z| = |\mathbf v_A - \mathbf v_B|$ ([[§C6b.3 Evaluating the Cross Section#^der-c6b-3-1|Derivation §C6b.3.1]], Step 5), and
+> **Step 9** (read off). With beams along $z$, $|v_A^z - v_B^z| = |\mathbf v_A - \mathbf v_B|$ ([[§C6b.5 Evaluating the Cross Section#^der-c6b-5-1|Derivation §C6b.5.1]], Step 5), and
 >
 > $$
 > d\sigma = d\Phi_f\,F(p_A, p_B) = \frac{1}{2E_A\,2E_B\,|\mathbf v_A - \mathbf v_B|}\,|\mathcal M(p_A, p_B \to \{p_i\})|^2\,\Bigl(\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\Bigr)(2\pi)^4\delta^4\Bigl(p_A + p_B - \sum_ip_i\Bigr) :
@@ -235,23 +235,23 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 > - The details of the packets drop out "entirely for free"; only their normalization and their narrowness were used.
 > - The assumptions: narrow packets, smooth $\mathcal M$, forward scattering excluded, a smooth detector acceptance, collinear beams.
 
-^der-c6b-3-2
+^der-c6b-5-2
 
-*Uses:* [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-3|Def. §C6b.2.3]], [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-4|Def. §C6b.2.4]], [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-5|Def. §C6b.2.5]], [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-6|Def. §C6b.2.6]], [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-1|Theorem §C6b.3.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§C6b.2 Wave Packets and the Cross Section#^lem-c6b-2-4|Lemma §C6b.2.4]]
+*Uses:* [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-3|Def. §C6b.4.3]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-4|Def. §C6b.4.4]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]], [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-1|Theorem §C6b.5.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§C6b.4 Wave Packets and the Cross Section#^lem-c6b-4-5|Lemma §C6b.4.5]]
 
 > [!remark] Remark: Reading the formula
-> "Longest formula, not most important." The first factor is the kinematics of the initial state, the energies and the velocity difference of what came in; "it's actually the same kinematics that appears" in mechanics books, classical or non-relativistic, and "has nothing to do with quantum field [theory]". The last factor, the $n$-particle relativistic phase space ([[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^def-c6b-4-1|Def. §C6b.4.1]]), is the kinematics of the final state at fixed total momentum; which features of the final state are measured and which are integrated over "is a separate story". The middle factor is the only place the theory enters: "morally speaking, if you know $M$, it's the thing that you should square and get the probability, because you take your initial state, you expand [it] on a complete set of final states, take the coefficient … and you square it, and then you sum over all the possible final states that you're kind of willing to accept." From now on the work is to compute $\mathcal M$; the conversion to $d\sigma$ is "let me just look it up".
+> "Longest formula, not most important." The first factor is the kinematics of the initial state, the energies and the velocity difference of what came in; "it's actually the same kinematics that appears" in mechanics books, classical or non-relativistic, and "has nothing to do with quantum field [theory]". The last factor, the $n$-particle relativistic phase space ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^def-c6b-6-1|Def. §C6b.6.1]]), is the kinematics of the final state at fixed total momentum; which features of the final state are measured and which are integrated over "is a separate story". The middle factor is the only place the theory enters: "morally speaking, if you know $M$, it's the thing that you should square and get the probability, because you take your initial state, you expand [it] on a complete set of final states, take the coefficient … and you square it, and then you sum over all the possible final states that you're kind of willing to accept." From now on the work is to compute $\mathcal M$; the conversion to $d\sigma$ is "let me just look it up".
 >
 > *Source: PHY 513 Lecture 15, slide 16, and transcript · the user's PHY 513 notes, Ch. 15 §15.5 (paragraph "Reading the formula")*
 
-^rem-c6b-3-1
+^rem-c6b-5-1
 
-> [!theorem] Theorem §C6b.3.3: The Cross Section Is an Area for Every n
+> [!theorem] Theorem §C6b.5.3: The Cross Section Is an Area for Every n
 > With $N = 2 + n$ external particles, $[d\sigma] = -2$ for every $n$: the dimension of an area.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.5, Derivation "Dimension check (filled in)"*
 
-^thm-c6b-3-3
+^thm-c6b-5-3
 
 > [!derivation]- Derivation
 > **Step 1** (the amplitude). By [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]] with $N = 2 + n$,
@@ -281,12 +281,12 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 > **What the derivation shows.**
 > - The growth of $|\mathcal M|^2$'s dimension with $n$ is exactly compensated by the phase space; checked for $n = 1, \dots, 5$ in `qft-C/tools/l15/checks.py`.
 
-^der-c6b-3-3
+^der-c6b-5-3
 
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]], [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]]
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]], [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 
-> [!theorem] Theorem §C6b.3.4: Identical Particles in the Final State
-> [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]] holds as it stands whether or not the final state contains identical particles. If it contains $n_k$ identical particles of species $k$, integrating it over *all* final momenta counts every physical final state $S_{\rm id} = \prod_kn_k!$ times, and the total cross section is
+> [!theorem] Theorem §C6b.5.4: Identical Particles in the Final State
+> [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]] holds as it stands whether or not the final state contains identical particles. If it contains $n_k$ identical particles of species $k$, integrating it over *all* final momenta counts every physical final state $S_{\rm id} = \prod_kn_k!$ times, and the total cross section is
 >
 > $$
 > \sigma = \frac{1}{S_{\rm id}}\int d\sigma .
@@ -296,7 +296,7 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.5 (paragraph "Identical particles (filled in)") · PS §4.5, p. 108 ("divide by $n!$ after integrating over all sets of momenta") · Yu §6.5.1, eqs. (6.305)–(6.306); §6.5.2, eq. (6.321)*
 
-^thm-c6b-3-4
+^thm-c6b-5-4
 
 > [!derivation]- Derivation
 > **Step 1** (the states are symmetric). For identical bosons the creation operators commute ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]), so for every permutation $\pi \in S_n$
@@ -325,13 +325,13 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 >
 > each delta function doing one integral and, by step 1, every permuted state equal to $|\mathbf q_1\cdots\mathbf q_n\rangle$. The identity on the sector is therefore $\frac{1}{n!}\int\prod_j\frac{d^3p_j}{(2\pi)^32E_{\mathbf p_j}}|\mathbf p_1\cdots\rangle\langle\mathbf p_1\cdots|$ (coincident momenta have measure zero).
 >
-> **Step 3** (the total probability). For the scattered state $|\psi\rangle$, the probability of ending in this sector is, with $\mathbb 1_n$ of Step 2 and $\mathcal P$ of [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-5|Def. §C6b.2.5]],
+> **Step 3** (the total probability). For the scattered state $|\psi\rangle$, the probability of ending in this sector is, with $\mathbb 1_n$ of Step 2 and $\mathcal P$ of [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]],
 >
 > $$
 > \langle\psi|\mathbb 1_n|\psi\rangle = \frac{1}{n!}\int\prod_j\frac{d^3p_j}{(2\pi)^32E_{\mathbf p_j}}\;\bigl|\langle\mathbf p_1\cdots\mathbf p_n|\psi\rangle\bigr|^2 = \frac{1}{n!}\int\mathcal P .
 > $$
 >
-> For several species the identity on the sector is the product of the factors, $\prod_k\frac{1}{n_k!} = \frac{1}{S_{\rm id}}$. The integrated cross section inherits the factor through [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-6|Def. §C6b.2.6]]: $\sigma = \frac{1}{S_{\rm id}}\int d\sigma$.
+> For several species the identity on the sector is the product of the factors, $\prod_k\frac{1}{n_k!} = \frac{1}{S_{\rm id}}$. The integrated cross section inherits the factor through [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]: $\sigma = \frac{1}{S_{\rm id}}\int d\sigma$.
 >
 > **Step 4** (no factor locally). In a small region $R$ of phase space around distinct momenta, the permuted region $\pi R$ ($\pi \ne \mathrm{id}$) is disjoint from $R$, so no two points of $R$ describe the same state (Step 1), and $d\sigma$ there is the probability per unit flux without correction.
 >
@@ -339,25 +339,25 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 > - The factor comes from counting final *states*, not from the amplitude: the amplitude for identical particles is computed separately and is already symmetric.
 > - For two identical particles at $2 \to 2$ in the centre-of-mass frame, $\mathbf p_2 = -\mathbf p_1$, and the unit vector $\hat{\mathbf n}(\theta, \varphi) = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$ satisfies $-\hat{\mathbf n}(\theta, \varphi) = \hat{\mathbf n}(\pi - \theta, \varphi + \pi)$; so $|\mathbf p\,\hat{\mathbf n}, -\mathbf p\,\hat{\mathbf n}\rangle = |-\mathbf p\,\hat{\mathbf n}, \mathbf p\,\hat{\mathbf n}\rangle$ (Step 1): the directions $(\theta, \varphi)$ and $(\pi - \theta, \varphi + \pi)$ of $\mathbf p_1$ are the same state, integrating over the full sphere counts it twice, and $S_{\rm id} = 2$.
 
-^der-c6b-3-4
+^der-c6b-5-4
 
-*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-5|Def. §C6b.2.5]], [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-6|Def. §C6b.2.6]]
+*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]
 
-> [!theorem] Theorem §C6b.3.5: The Scattering Probabilities Add Up to One
-> Let $|\psi\rangle$ be a normalized state and assume the out states are complete. Summing over the particle contents of the final state, with $S_{\rm id}$ of [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] for each content,
+> [!theorem] Theorem §C6b.5.5: The Scattering Probabilities Add Up to One
+> Let $|\psi\rangle$ be a normalized state and assume the out states are complete. Summing over the particle contents of the final state, with $S_{\rm id}$ of [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]] for each content,
 >
 > $$
 > \sum_{\text{contents}}\frac{1}{S_{\rm id}}\int\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\;\bigl|{}_{\rm out}\langle\mathbf p_1\mathbf p_2\cdots|\psi\rangle\bigr|^2 = \langle\psi|\psi\rangle = 1 .
 > $$
 >
-> For the two-packet state of [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-4|Def. §C6b.2.4]] with profiles peaked at $\mathbf p_A \ne \mathbf p_B$ (or $A \ne B$), $\langle\phi_A\phi_B|\phi_A\phi_B\rangle = 1$ for every $\mathbf b$, so the $\mathcal P(\mathbf b)$ of [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-5|Def. §C6b.2.5]], integrated over all final momenta and summed over contents with $\frac{1}{S_{\rm id}}$, is 1.
+> For the two-packet state of [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-4|Def. §C6b.4.4]] with profiles peaked at $\mathbf p_A \ne \mathbf p_B$ (or $A \ne B$), $\langle\phi_A\phi_B|\phi_A\phi_B\rangle = 1$ for every $\mathbf b$, so the $\mathcal P(\mathbf b)$ of [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]], integrated over all final momenta and summed over contents with $\frac{1}{S_{\rm id}}$, is 1.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.3 (after eq. (Pb): "the completeness relation for relativistically normalized states") · PS §4.5, p. 103 · the identical-particle factor: PS p. 108, Yu §6.5.1, eq. (6.305)*
 
-^thm-c6b-3-5
+^thm-c6b-5-5
 
 > [!derivation]- Derivation
-> **Step 1** (completeness by sectors). The out states of different particle contents are orthogonal, and in the sector of a content with $S_{\rm id} = \prod_kn_k!$ the identity is ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]] for one particle; [[§C6b.3 Evaluating the Cross Section#^der-c6b-3-4|Derivation §C6b.3.4]], Step 2, for $n$ identical ones)
+> **Step 1** (completeness by sectors). The out states of different particle contents are orthogonal, and in the sector of a content with $S_{\rm id} = \prod_kn_k!$ the identity is ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]] for one particle; [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-4|Derivation §C6b.5.4]], Step 2, for $n$ identical ones)
 >
 > $$
 > \mathbb 1_{\rm content} = \frac{1}{S_{\rm id}}\int\prod_i\frac{d^3p_i}{(2\pi)^3\,2E_i}\;|\mathbf p_1\mathbf p_2\cdots\rangle_{\rm out}\,{}_{\rm out}\langle\mathbf p_1\mathbf p_2\cdots| , \qquad \mathbb 1 = \sum_{\text{contents}}\mathbb 1_{\rm content} .
@@ -380,29 +380,29 @@ Six deltas ($2$ from $\mathbf b$, $4$ from the barred amplitude) do the six $\ba
 >
 > the exchange term (present only for $A = B$) vanishing because $\phi_A$ and $\phi_B$ are peaked at different momenta and do not overlap. The phase $e^{-i\mathbf b\cdot\mathbf k_B}$ has modulus 1 in the direct term, so the norm is 1 for every $\mathbf b$.
 >
-> **Step 4** (read off). With $|\psi\rangle = |\phi_A\phi_B\rangle_{\rm in}$, Steps 2–3 and [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-5|Def. §C6b.2.5]]: $\sum\frac{1}{S_{\rm id}}\int\mathcal P(\mathbf b) = 1$.
+> **Step 4** (read off). With $|\psi\rangle = |\phi_A\phi_B\rangle_{\rm in}$, Steps 2–3 and [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]]: $\sum\frac{1}{S_{\rm id}}\int\mathcal P(\mathbf b) = 1$.
 >
 > **What the derivation shows.**
 > - $\frac{d^3p}{(2\pi)^32E}$ is the measure that makes $\mathcal P$ a probability density; $\frac{1}{S_{\rm id}}$ is needed so that identical final particles are not counted $S_{\rm id}$ times.
 > - The assumption is asymptotic completeness: every state is a superposition of out states.
 
-^der-c6b-3-5
+^der-c6b-5-5
 
-*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-4|Def. §C6b.2.4]], [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-5|Def. §C6b.2.5]], [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]
+*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-4|Def. §C6b.4.4]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]], [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]]
 
 > [!caution] Caution: Names for the identical-particle factor
 > These notes write $S_{\rm id} = \prod_kn_k!$, to keep it apart from the $S$-matrix, the symmetry factor and the bilinear ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]]). The user's notes write $S$; Yu writes $\mathcal S$, 末态对称性因子, and puts it into the total rate (eqs. (6.305)–(6.306)) and $\sigma = \frac{1}{\mathcal S}\int d\sigma$ (eq. (6.321)); PS give the rule in words (p. 108). Yu also writes $\mathcal S = 2$ in §7.3 (eq. (7.123)), next to the diagram symmetry factor (eq. (7.124)).
 >
 > *Source: Yu §6.5.1–§6.5.2, eqs. (6.305)–(6.306), (6.321); §7.3, eqs. (7.123)–(7.124) · PS §4.5, p. 108 · the user's PHY 513 notes, Ch. 15 §15.5*
 
-^cau-c6b-3-3
+^cau-c6b-5-3
 
 > [!remark] Remark: Yu's route
-> Yu derives the same formula without wave packets (§6.5.1–§6.5.2). He writes the transition probability as $P_{fi} = |T_{fi}|^2/(\langle i|i\rangle\langle f|f\rangle)$ (eq. (6.276)), squares the delta function as $[(2\pi)^4\delta^4(p_i - p_f)]^2 = (2\pi)^4\delta^4(0)\cdot(2\pi)^4\delta^4(p_i - p_f)$ (eq. (6.277)) with $(2\pi)^4\delta^4(0) = \int d^4x = \tilde V\tilde T$, the volume of space times the duration (eq. (6.282); the box of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]), and divides by the norms $\langle i|i\rangle = 4E_{\mathcal A}E_{\mathcal B}\tilde V^2$, $\langle f|f\rangle = \prod_j2E_j\tilde V$ (eqs. (6.288)–(6.290)). The rate per unit time (eq. (6.292)), summed over final momenta with $\sum \to \frac{\tilde V}{(2\pi)^3}\int d^3p$ (eqs. (6.295)–(6.302)), gives the total rate (eq. (6.306)); for a beam on a fixed target, $\sigma = \mathcal R/(n_{\mathcal A}n_{\mathcal B}|\mathbf v_{\mathcal B}|)$ (eqs. (6.307)–(6.313)): all powers of $\tilde V$ and $\tilde T$ cancel. The route is shorter; the wave packets show why the $\delta(0)$'s are harmless (no $\delta^4(0)$ appears at all, [[§C6b.3 Evaluating the Cross Section#^der-c6b-3-2|Derivation §C6b.3.2]]). Yu's units: $1\,\mathrm{b} = 10^{-28}\,\mathrm m^2 = 2.568\times10^3\,\mathrm{GeV}^{-2}$, $1\,\mathrm{GeV}^{-2} = 0.3894\,\mathrm{mb}$ (eqs. (6.309)–(6.311)).
+> Yu derives the same formula without wave packets (§6.5.1–§6.5.2). He writes the transition probability as $P_{fi} = |T_{fi}|^2/(\langle i|i\rangle\langle f|f\rangle)$ (eq. (6.276)), squares the delta function as $[(2\pi)^4\delta^4(p_i - p_f)]^2 = (2\pi)^4\delta^4(0)\cdot(2\pi)^4\delta^4(p_i - p_f)$ (eq. (6.277)) with $(2\pi)^4\delta^4(0) = \int d^4x = \tilde V\tilde T$, the volume of space times the duration (eq. (6.282); the box of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]), and divides by the norms $\langle i|i\rangle = 4E_{\mathcal A}E_{\mathcal B}\tilde V^2$, $\langle f|f\rangle = \prod_j2E_j\tilde V$ (eqs. (6.288)–(6.290)). The rate per unit time (eq. (6.292)), summed over final momenta with $\sum \to \frac{\tilde V}{(2\pi)^3}\int d^3p$ (eqs. (6.295)–(6.302)), gives the total rate (eq. (6.306)); for a beam on a fixed target, $\sigma = \mathcal R/(n_{\mathcal A}n_{\mathcal B}|\mathbf v_{\mathcal B}|)$ (eqs. (6.307)–(6.313)): all powers of $\tilde V$ and $\tilde T$ cancel. The route is shorter; the wave packets show why the $\delta(0)$'s are harmless (no $\delta^4(0)$ appears at all, [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-2|Derivation §C6b.5.2]]). Yu's units: $1\,\mathrm{b} = 10^{-28}\,\mathrm m^2 = 2.568\times10^3\,\mathrm{GeV}^{-2}$, $1\,\mathrm{GeV}^{-2} = 0.3894\,\mathrm{mb}$ (eqs. (6.309)–(6.311)).
 >
 > *Source: Yu §6.5.1–§6.5.2, pp. 239–243, eqs. (6.276)–(6.313)*
 
-^rem-c6b-3-2
+^rem-c6b-5-2
 
 > [!remark]- Connections
 > - Yu's box regularization $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ is the four-dimensional version of $(2\pi)^3\delta^3(0) = V$, the same factor that made the zero-point energy and the vacuum bubbles proportional to volumes — [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]].

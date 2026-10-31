@@ -76,6 +76,10 @@ We write $x_1, x_2, \ldots$ for the dependent variables, all functions of $t$, a
 
 *Chain: earlier in [[§25 y″ − y = 0, y″ + 5y′ + 6y = 0, 2t²y″ + 3ty′ − y = 0 and u″ + ⅛u′ + u = 0|Chapter 3]] (the spring of [[§23 Mechanical and Electrical Vibrations#^ex-23-4|Example §23.4]] and [[§24 Forced Periodic Vibrations#^ex-24-2|Example §24.2]]).*
 
+![[m331-27-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Equation (3) of this example, $u'' + \frac18u' + u = 0$, with the initial data $u(0) = 2$, $u'(0) = 0$ of Example §23.4, shown three ways at once for $0 \le t \le 8\pi$. Left: the mass on its spring (displacement drawn downward, "below is positive", at a reduced scale; the dotted line is the equilibrium). Middle: the graph of $x_1 = u(t) = e^{-t/16}\big(2\cos\frac{\sqrt{255}}{16}t + \frac{2}{\sqrt{255}}\sin\frac{\sqrt{255}}{16}t\big)$ being drawn. Right: the point $\mathbf{x} = (x_1, x_2) = (u, u')$ of system (4) moving in the phase plane, with its velocity $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{A} = \begin{pmatrix} 0 & 1 \\ -1 & -\frac18 \end{pmatrix}$ (red arrow). Each oscillation of the mass is one clockwise turn of the point, and the slowly decaying amplitude makes the closed loop of an undamped spring into a spiral toward the equilibrium $\mathbf{0}$: the spiral sink of §38, with eigenvalues $-\frac1{16} \pm \frac{\sqrt{255}}{16}i$, the roots of the characteristic equation.
+
 > [!theorem] Proposition §33.1: An nth-Order Equation as a First-Order System
 > Consider the $n$th order equation
 >

@@ -580,3 +580,7 @@ For instance, the volume $V(r) = \frac43 \pi r^3$ of a sphere is a continuous fu
 > *Stewart: Example 2.5.10*
 
 ^ex-12-5
+
+![[m233-10-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* The narrowing-down of [[§12 Continuity#^ex-12-5|Example §12.5]] for $f(x) = 4x^3 - 6x^2 + 3x - 2$. Points where $f < 0$ are red, where $f > 0$ blue; between a red and a blue point the Intermediate Value Theorem ([[§12 Continuity#^thm-12-10|Theorem §12.10]]) traps a root (green band). First $f(1) = -1$ and $f(2) = 12$; then $f$ is evaluated at $1.1, 1.2, \dots$, the sign changes between $f(1.2) = -0.128$ and $f(1.3) = 0.548$, and the view zooms to $[1.2, 1.3]$; the same in hundredths gives $f(1.22) = -0.007008$, $f(1.23) = 0.056068$, and in thousandths the bracket $(1.221, 1.222)$. Each round gains one decimal place. The star is the exact root $c = \frac12(1 + \sqrt[3]{3}) \approx 1.2211$ found at the end of the example. (The thousandths step goes one round beyond the example.)

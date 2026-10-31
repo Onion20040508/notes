@@ -118,6 +118,10 @@ From here on all flows are irrotational, of incompressible, inviscid fluids of u
 
 *Uses:* [[§124★ Two-Dimensional Fluid Flow#^prop-124-1|§124.1]], [[§124★ Two-Dimensional Fluid Flow#^def-124-2|Def. §124.2]]
 
+![[m452-11-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Reused from Multivariable Analysis (§13, divergence and curl as densities). Only the right panel matters here; the left panel shows the analogous limit for the divergence. The right panel is Proposition §124.2 for the velocity field $V = p + iq$ with $p = -y^3/3$, $q = x^3/3$ (source-free, since $p_x + q_y = 0$). A circle $C_r$ shrinks around $(x_0, y_0) = (1, 0.6)$, and the readout is the circulation divided by the area $\pi r^2$. It tends to $q_x - p_y = x_0^2 + y_0^2 = 1.36$, the curl. B&C's rotation is half of that: $\omega = \frac12(q_x - p_y) = 0.68$, and the mean angular speed $\frac{1}{2\pi r^2}\int_{C_r} V_T\,d\sigma$ of the proposition is half the readout and tends to $\omega$. (For this field $\omega$ is not constant, so the readout really changes with $r$: it is $1.36 + r^2/2$ before halving.)
+
 > [!remark]- Connections
 > - In vector language, $2\omega$ is the $\mathbf k$ component of $\operatorname{curl}(p, q, 0)$, and Proposition §124.2 is the planar case of curl as circulation per unit area, [[§136 Stokes' Theorem#^thm-136-3|Calc Thm. §136.3]]; "irrotational" is [[§132 Curl and Divergence#^def-132-2|Calc Def. §132.2]] and [[§13 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-13-2|452 Def. §13.2]].
 
@@ -213,6 +217,10 @@ Under these assumptions it can be shown that the fluid pressure $P(x, y)$ satisf
 > *B&C: Sec. 124, Equations (3) and (4); the examples are added*
 
 ^ex-124-1
+
+![[m342-124-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The two flows of Example §124.1 side by side, with $\omega_0 = 1/1.5^2$ chosen so that both have the same speed $1/1.5$ on the circle $r = 1.5$ (grey arrows: speeds at $r = 1$ and $r = 2$). A line of fluid particles along the radius $1 \le r \le 2.3$ (blue) is carried by the flow for the time of one orbit at $r = 1.5$. In the rigid rotation (a) it turns as a whole and stays straight; in the point vortex (b) the inner particles, with speed $1/r$, overtake the outer ones and the line winds into a spiral. The red paddle wheel rides the flow at $r = 1.5$ and spins at the local rotation $\omega$, the limiting angular speed of Proposition §124.2 (the orange dot marks one blade). In (a) it spins once per orbit, $\omega = \omega_0$; in (b) it keeps its orientation all the way round, since $\omega = 0$ at every $z \ne 0$, even though the fluid circulates and the circulation around every circle about $0$ is $2\pi$. (The paddle shows the instantaneous rotation rate; a finite blob of fluid in (b) is sheared, as the blue line shows.)
 
 > [!example] Example §124.2: A Source
 > Show that if the velocity potential is $\phi = A\ln r$ $(A > 0)$ for flow in the region $r \ge r_0$, the streamlines (the curves to which the velocity is tangent) are the half lines $\theta = c$ $(r \ge r_0)$, and the rate of flow outward through each complete circle about the origin is $2\pi A$, corresponding to a source of that strength at the origin.

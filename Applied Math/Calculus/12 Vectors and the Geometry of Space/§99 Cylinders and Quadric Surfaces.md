@@ -123,6 +123,10 @@ After planes and spheres, the next surfaces are cylinders and quadric surfaces, 
 ![[m233-85-1.svg]]
 *(a) The hyperbolic paraboloid $z = y^2 - x^2$ of [[§99 Cylinders and Quadric Surfaces#^ex-99-3|Example §99.3]](b): its trace in $x = 0$ is the upward parabola $z = y^2$ (red), its trace in $y = 0$ the downward parabola $z = -x^2$ (green), and the two meet at the saddle point at the origin. (b) The parabolic cylinder $z = 4 - x^2$ of [[§99 Cylinders and Quadric Surfaces#^ex-99-1|Example §99.1]](c): every trace $y = k$ is the same parabola, here $y = 0$ (dashed) and $y = 3$ (red), and the rulings run parallel to the $y$-axis.*
 
+![[m233-85-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The horizontal traces of the hyperbolic paraboloid $z = y^2 - x^2$ of Example §99.3(b), over the square $|x|, |y| \le 1.2$. The plane $z = k$ (grey) moves down from $k = 1$ to $k = -1$ and back. Its intersection with the surface (red) is copied on the right, where it is drawn flat in the $xy$-plane over a few fixed traces (light grey). For $k > 0$ the trace $y^2 - x^2 = k$ is a hyperbola opening along the $y$-axis: the plane cuts the two rising ridges above the $y$-axis. At $k = 0$ it becomes the pair of lines $y = \pm x$ through the saddle point. For $k < 0$ it is a hyperbola opening along the $x$-axis, cut from the two falling sides. Stacking these curves at their heights gives the saddle.
+
 > [!example] Example §99.4: Hyperboloids of One and Two Sheets
 > **(a)** Sketch $\dfrac{x^2}{4} + y^2 - \dfrac{z^2}{4} = 1$. The trace in a horizontal plane $z = k$ is the ellipse $\dfrac{x^2}{4} + y^2 = 1 + \dfrac{k^2}{4}$, which exists for every $k$ and grows with $|k|$. The traces in the $xz$- and $yz$-planes are the hyperbolas
 >

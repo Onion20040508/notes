@@ -143,6 +143,10 @@ $$
 
 ^def-109-4
 
+![[m452-6-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Definition §109.4 and the Remark "Partial Derivatives Are Not Enough" side by side, reused from MATH 452 (Multivariable Analysis). Both panels zoom in on the point of tangency with equal scales on $x$, $y$ and $z$, the window half-width $s$ shrinking from $1$ to $0.01$ and back; red is the tangent plane (left) or the candidate plane (right). Left: a smooth surface chosen for the picture in 452 flattens onto its tangent plane. The largest gap between surface and plane, divided by the distance $\rho = \sqrt{\Delta x^2 + \Delta y^2}$ from the point, falls from $0.57$ to below $0.01$: the error $\varepsilon_1\Delta x + \varepsilon_2\Delta y$ of Definition §109.4 is small even compared with $\rho$ (the Connections remark below shows that this is the same condition). Right: the function of the Remark at the origin, where $f_x(0, 0) = f_y(0, 0) = 0$ and the candidate plane is $z = 0$. Over the diagonal the gap does not shrink at all, so gap divided by step grows like $1/s$ (the readout is $1$ at $s = 1$ and $32$ at $s \approx 0.03$), and the zoomed surface turns into a wall (heights are clipped at the window): no plane approximates it, and $f$ is not differentiable at the origin. The GIF draws $\frac{2xy}{x^2 + y^2}$, twice the function of the Remark, so its gap over $y = x$ is $1$ where the Remark has the value $\frac12$; the conclusion is the same.
+
 In words: $f$ is differentiable at $(a, b)$ when the linear approximation (4) is a good approximation for $(x, y)$ near $(a, b)$, that is, when the tangent plane approximates the graph of $f$ well near the point of tangency. It is often hard to check [[§109 Tangent Planes and Linear Approximations#^def-109-4|Definition §109.4]] directly; the next theorem is the convenient sufficient condition.
 
 > [!remark]- Connections

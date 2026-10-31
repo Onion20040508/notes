@@ -46,6 +46,10 @@ Let $r = \rho$ be an $m$-fold root of the characteristic equation $\det(\mathbf{
 
 *Uses:* [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-35-5|§35.5]] (Hermitian matrices), [[§39★ Fundamental Matrices#^thm-39-7|§39.7]]
 
+![[m591-67-a4.gif|400]]
+
+*(Not from the book; animation added, vault only.)* Reused from Differentiable Manifolds (§68, the flow of the Euler field $x\,\partial_x + y\,\partial_y$, written $\varphi_t(p) = e^tp$ there). In this section's notation it is the system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ with $\mathbf{A} = \mathbf{I}$: the eigenvalue $\rho = 1$ is double and every nonzero vector is an eigenvector, so Proposition §40.1 applies with $\boldsymbol{\xi}^{(1)} = (1, 0)^T$, $\boldsymbol{\xi}^{(2)} = (0, 1)^T$, and every solution is $\mathbf{x}(t) = e^{t}\mathbf{x}(0)$. The animation runs $t$ from $0$ to $1$, back to $-1.2$ and up to $0$ again. A grid of initial points is scaled by $e^t$ about the origin, and each point moves along its own ray from the origin (grey), the trajectory of an eigenvector solution $\boldsymbol{\xi}e^{\rho t}$; the origin (red) is the equilibrium solution. Because the repeated eigenvalue has a full set of eigenvectors, all trajectories are straight rays. Compare the improper node of Example §40.1 below, where only one eigenvector line exists and the other trajectories bend.
+
 > [!remark]- Connections
 > - In Lay's terms the geometric multiplicity of an eigenvalue is at most its algebraic multiplicity, [[§42 Diagonalization#^thm-42-3|235 Thm. §42.3]](a), and the hypothesis here is the case of equality; when this holds for every eigenvalue, $\mathbf{A}$ is diagonalizable ([[§42 Diagonalization#^thm-42-3|235 Thm. §42.3]](b)) and the eigenvector solutions form a fundamental set.
 
@@ -156,6 +160,10 @@ If $\mathbf{A}$ is not Hermitian, $\rho$ may have fewer than $m$ independent eig
 
 ![[m331-34-1.svg]]
 *Phase portrait of [[§40★ Repeated Eigenvalues#^ex-40-1|Example §40.1]], computed from $\mathbf{x}(t) = e^{2t}[\mathbf{I} + t(\mathbf{A} - 2\mathbf{I})]\mathbf{x}(0)$ ([[§40★ Repeated Eigenvalues#^ex-40-2|Example §40.2]]). Green: the eigenvector line $x_2 = -x_1$, carrying $\pm\mathbf{x}^{(1)}$. Red: $\pm\mathbf{x}^{(2)}$, through $(0, \mp1)$ at $t = 0$. Every trajectory leaves the origin tangent to the eigenvector line and turns to run off nearly parallel to it: an unstable improper node. The grey arrows are the direction field $\mathbf{A}\mathbf{x}$.*
+
+![[m331-34-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* The improper node of Example §40.1, $\mathbf{A} = \begin{pmatrix} 1 & -1 \\ 1 & 3 \end{pmatrix}$, with the double eigenvalue $2$ and the single eigenvector line $x_2 = -x_1$ (green), in motion. A ring of $24$ points, of radius $0.6$ at $t = 0$ (chosen for the picture), is carried by $\mathbf{x}(t) = e^{2t}[\mathbf{I} + t(\mathbf{A} - 2\mathbf{I})]\mathbf{x}(0)$ for $-1.6 \le t \le 0.75$, and each point leaves a trail (orange: one point to follow; grey: the trajectories of the figure). At $t = -1.6$ the ring is a tiny segment along the eigenvector line, because for $t \to -\infty$ the term $te^{2t}(\mathbf{A} - 2\mathbf{I})\mathbf{x}(0)$, a multiple of $(1, -1)^T$, dominates. So every trajectory leaves the origin tangent to the green line. As $t$ grows the ellipse opens up and turns, and the points swing around and run off nearly parallel to the same line, half on each side. This is the "leave tangent, turn, run off parallel" behaviour of the caption, with the direction and speed of the motion shown.
 
 > [!definition] Definition §40.1: Improper Node
 > For a $2 \times 2$ system $\mathbf{x}' = \mathbf{A}\mathbf{x}$ whose coefficient matrix has a repeated eigenvalue with only one independent eigenvector, the origin is called an **improper node**. If the eigenvalue is negative, the trajectories are like those of [[§40★ Repeated Eigenvalues#^ex-40-1|Example §40.1]] but traversed inward, and the improper node is [[§37 Homogeneous Linear Systems with Constant Coefficients#^def-37-2|asymptotically stable]]; if it is positive, the node is unstable.

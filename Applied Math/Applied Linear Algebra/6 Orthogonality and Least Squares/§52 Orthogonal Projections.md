@@ -193,6 +193,10 @@ The projection of a vector onto a line ([[§51 Orthogonal Sets#^def-51-3|Definit
 ![[m235-42-1.svg]]
 *The orthogonal projection $\hat{\mathbf{y}} = \operatorname{proj}_W \mathbf{y}$ onto a plane $W$ through $\mathbf{0}$. The component $\mathbf{z} = \mathbf{y} - \hat{\mathbf{y}}$ (red) is orthogonal to $W$ ([[§52 Orthogonal Projections#^thm-52-1|Theorem §52.1]]). For any other $\mathbf{v} \in W$, the triangle $\mathbf{y}, \hat{\mathbf{y}}, \mathbf{v}$ has a right angle at $\hat{\mathbf{y}}$, so its hypotenuse $\|\mathbf{y} - \mathbf{v}\|$ is longer than the leg $\|\mathbf{y} - \hat{\mathbf{y}}\|$ ([[§52 Orthogonal Projections#^thm-52-3|Theorem §52.3]]).*
 
+![[ladr-6.61-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 6.61). The Best Approximation Theorem in motion, for $\mathbf{y} = (1.6, 0.6, 1.6)$ and a plane $W$ through $\mathbf{0}$, as in the figure. A point $\mathbf{v}$ of $W$ (green) spirals in to $\hat{\mathbf{y}} = \operatorname{proj}_W\mathbf{y}$ and back out. The distance $\|\mathbf{y} - \mathbf{v}\|$ (red) is the hypotenuse of a right triangle whose fixed leg is $\|\mathbf{y} - \hat{\mathbf{y}}\| = 1.6$, so it is smallest, $1.6$, exactly at $\mathbf{v} = \hat{\mathbf{y}}$, where the right angle is drawn. This is inequality (3). (Axler writes $v$, $U$, $u$, $P_Uv$ for Lay's $\mathbf{y}$, $W$, $\mathbf{v}$, $\hat{\mathbf{y}}$.)
+
 > [!definition] Definition §52.2: Best Approximation
 > The vector $\hat{\mathbf{y}} = \operatorname{proj}_W \mathbf{y}$ is called the **best approximation to $\mathbf{y}$ by elements of $W$**.
 >

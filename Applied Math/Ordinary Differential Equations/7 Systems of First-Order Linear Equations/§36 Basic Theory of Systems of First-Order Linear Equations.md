@@ -100,6 +100,10 @@ The theory of a system of $n$ first-order linear equations $\mathbf{x}' = \mathb
 
 ^ex-36-1
 
+![[m331-30-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The two solutions of Example §36.1, $\mathbf{x}^{(1)}(t) = (1, 2)^Te^{3t}$ (red) and $\mathbf{x}^{(2)}(t) = (1, -2)^Te^{-t}$ (green), drawn as arrows from the origin as $t$ runs from $-0.8$ to $0.25$ and back. They span a parallelogram (orange) whose signed area is the Wronskian $W[\mathbf{x}^{(1)}, \mathbf{x}^{(2)}](t) = \det(\mathbf{x}^{(1)}, \mathbf{x}^{(2)}) = -4e^{2t}$. It is negative because turning from $\mathbf{x}^{(1)}$ to $\mathbf{x}^{(2)}$ is clockwise. The arrows grow and shrink at different rates ($e^{3t}$ and $e^{-t}$), and the parallelogram becomes long and thin, but it never collapses onto a line, because the two arrows stay on the two different eigenvector lines. Right: $W(t)$ traced (readout) on the curve $c\,e^{(\operatorname{tr}\mathbf{A})t} = -4e^{2t}$ predicted by Abel's formula (15), with $\operatorname{tr}\mathbf{A} = p_{11} + p_{22} = 2$. It equals $-4$ at $t = 0$ and is never $0$, as Theorem §36.3 says.
+
 The nonhomogeneous system (2) is tied to (3) as for a single equation: the difference of two solutions of (2) solves (3) ([[§33 Introduction to Systems of First-Order Linear Equations#^ex-33-3|Example §33.3]], Written HW 6, Problem 1). In vector form, if $\mathbf{x}_1' = \mathbf{P}\mathbf{x}_1 + \mathbf{g}$ and $\mathbf{x}_2' = \mathbf{P}\mathbf{x}_2 + \mathbf{g}$, then $(\mathbf{x}_1 - \mathbf{x}_2)' = \mathbf{P}(\mathbf{x}_1 - \mathbf{x}_2)$. Consequently every solution of (2) is one particular solution plus a solution of (3), the structure of [[§41★ Nonhomogeneous Linear Systems|§41★]] (BDP's Problem 7.4.11), just as for $\mathbf{A}\mathbf{x} = \mathbf{b}$ in [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-35-1|Theorem §35.1]].
 
 ## Fundamental Sets of Solutions

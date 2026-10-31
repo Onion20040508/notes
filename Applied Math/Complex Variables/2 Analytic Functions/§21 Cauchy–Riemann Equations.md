@@ -120,6 +120,10 @@ They are named after A. L. Cauchy (1789–1857), who discovered and used them, a
 
 *Uses:* [[§19 Derivatives#^def-19-1|Def. §19.1]], [[§16 Theorems on Limits#^thm-16-1|§16.1]], [[§15 Limits#^thm-15-1|§15.1]], [[§15 Limits#^cor-15-2|§15.2]], [[§5 Partial Derivatives#^def-5-1|452 Def. §5.1]] (partial derivatives)
 
+![[m342-21-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* What the Cauchy–Riemann equations mean geometrically (the Connections remark above). A small square of side $h = 0.24$ (left) rides around the circle $|z - (1 + 0.75i)| = 0.5$ (chosen for the picture); its bottom side is red and its left side green. In the middle is its image under $w = z^2$, on the right its image under $w = 2x + ixy^2$ of Example §21.1(c). Under $z^2$ the image stays (very nearly) a square: the Jacobian has the form $\begin{pmatrix} a & -b \\ b & a\end{pmatrix}$ with $f'(z_0) = a + ib = 2z_0$, so it only turns the square by $\arg f'(z_0)$ and scales it by $|f'(z_0)|$ (readout; the angle stays $90^\circ$ and the side ratio $1$). Under $2x + ixy^2$ the Jacobian is $\begin{pmatrix} 2 & 0 \\ y^2 & 2xy\end{pmatrix}$, which is not of that form anywhere, and the square is sheared into a parallelogram whose angle (between about $50^\circ$ and $90^\circ$) and side ratio change as it moves. That function is differentiable nowhere.
+
 > [!remark]- Connections
 > - In the language of multivariable calculus: if $f'(z_0) = a + ib$ exists, then $f(z_0 + \Delta z) - f(z_0) = (a + ib)\Delta z + o(|\Delta z|)$, so the map $(x, y) \mapsto (u, v)$ is differentiable at $(x_0, y_0)$ in the sense of [[§7 Differentiability#^def-7-1|452 Def. §7.1]], with Jacobian matrix ([[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]])
 >

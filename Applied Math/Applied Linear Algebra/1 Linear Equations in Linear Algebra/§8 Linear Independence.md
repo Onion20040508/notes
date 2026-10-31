@@ -248,6 +248,10 @@ So for two vectors no row operations are needed: check by inspection whether one
 ![[m235-7-1.svg]]
 *[[§8 Linear Independence#^ex-8-3|Example §8.3]](b): $\mathbf{u}$ and $\mathbf{v}$ span the $x_1x_2$-plane. If $\mathbf{w}$ lies in that plane, $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ is dependent (left); if $\mathbf{w}$ leaves the plane, the set is independent (right).*
 
+![[ladr-9.39-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 9.39, alternating forms). Example §8.3(b) as a motion: a third vector $\mathbf{w}$ (Axler's $v_3$) sinks into the plane spanned by two independent vectors $\mathbf{u}, \mathbf{v}$ (Axler's $v_1, v_2$) and rises out of it again. The readout is the height of $\mathbf{w}$ above the plane, which is the volume of the box on $\mathbf{u}, \mathbf{v}, \mathbf{w}$ up to a constant factor. It is $0$, and the box is flat (red), exactly when $\mathbf{w} \in \operatorname{Span}\{\mathbf{u}, \mathbf{v}\}$, that is, exactly when $\{\mathbf{u}, \mathbf{v}, \mathbf{w}\}$ is linearly dependent. In the example the plane is the $x_1x_2$-plane, and the height is the third entry of $\mathbf{w}$. The vectors in the animation are chosen for the picture.
+
 ## Automatic Dependence
 
 > [!theorem] Theorem §8.6: More Vectors Than Entries Means Dependent

@@ -168,6 +168,10 @@ For $ay'' + by' + cy = g$, divide by $a$ first: the jump in $y''$ is the jump in
 ![[m331-24-2.svg]]
 *Ramp loading of $y'' + 4y = g(t)$. While the load ramps up ($5 < t < 10$) the solution (blue) oscillates about the line $g(t)/4$ (orange, dashed), the quasi-static response; once the load is constant it oscillates about $\frac14$ with the constant amplitude $A = |\sin 5|/20 \approx 0.048$ (dotted band). The amplitude depends on how fast the load was applied.*
 
+![[m331-24-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Example §29.2 with the ramp length $T$ as a parameter, $T$ from $0.5$ to $8$ and back: the load $g$ rises linearly from $0$ to $1$ over $5 \le t \le 5 + T$ (shaded) and then stays at $1$, and the note's case is $T = 5$. Top: the solution $y = \frac1T\big(u_5(t)h(t - 5) - u_{5+T}(t)h(t - 5 - T)\big)$, $h(t) = \frac t4 - \frac18\sin 2t$ (blue), and the quasi-static response $g(t)/4$ (orange, dashed). For $t \ge 5 + T$, by the same sine identity as in the note, $y = \frac14 - \frac{\sin T}{4T}\cos(2t - 10 - T)$, an oscillation of amplitude $A(T) = |\sin T|/(4T)$ about $\frac14$ (dotted band). Bottom: $A(T)$, with a moving dot. A fast ramp leaves almost the full oscillation between $0$ and $\frac12$ of a sudden step ($A = 0.240$ at $T = 0.5$); at $T = 5$, $A = 0.048$ as in the note; and when $T$ is a multiple of the period $\pi$ of the free oscillation the residual oscillation vanishes completely ($T = \pi$, $2\pi$). So "the amplitude depends on how fast the load was applied" is quantified. The formula for general $T$ is not in the note or BDP; it is derived exactly as the case $T = 5$.
+
 > [!example] Example §29.3: A Force Removed at t = 6
 > Solve $y'' + y = g(t)$, $y(0) = 0$, $y'(0) = 0$, where $g(t) = t$ for $0 \le t < 6$ and $g(t) = 0$ for $t \ge 6$.
 >

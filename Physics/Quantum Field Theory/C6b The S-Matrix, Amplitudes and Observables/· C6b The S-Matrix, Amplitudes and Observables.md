@@ -11,29 +11,29 @@ tags: [chapter, quantum-field-theory]
 **Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (16), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (35), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (16), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (36), [[· CA Mathematical Methods|CA Mathematical Methods]] (51)
 **Used by:** [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (1)
 
-C6b computes **$S$-matrix elements and the observables made from them** (Lecture 15 and Problem Set 8; the user's notes, Ch. 15): the $S$-matrix and the invariant amplitude $\mathcal M$ (§C6b.1), the cross section from wave packets and its evaluation (§C6b.2–§C6b.3), Lorentz invariance and two-body phase space (§C6b.4), decay rates and widths (§C6b.5), amplitudes as amputated correlation functions (§C6b.6, [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-1|Theorem §C6b.6.1]]), and particle production by a classical source (§C6b.7). The correlation functions, Wick's theorem and the Feynman rules it starts from are in [[· C6a Interactions and Correlation Functions]]. In Yu's book the material of C6b is in §6.2, §6.5, ch. 7 (the $S$-matrix rules), §10.3 and §10.6.
+C6b computes **$S$-matrix elements and the observables made from them** (Lecture 15 and Problem Set 8; the user's notes, Ch. 15): the $S$-matrix and the invariant amplitude $\mathcal M$ (§C6b.1), the cross section from wave packets and its evaluation (§C6b.4–§C6b.5), Lorentz invariance and two-body phase space (§C6b.6), decay rates and widths (§C6b.7), amplitudes as amputated correlation functions (§C6b.8, [[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-1|Theorem §C6b.8.1]]), and particle production by a classical source (§C6b.9). The correlation functions, Wick's theorem and the Feynman rules it starts from are in [[· C6a Interactions and Correlation Functions]]. In Yu's book the material of C6b is in §6.2, §6.5, ch. 7 (the $S$-matrix rules), §10.3 and §10.6.
 
 ## How C6b relates to Yu
-C6b follows the course (Lecture 15) and the user's notes (Ch. 15), not Yu's chapter split (user decisions, 2026-10-26 and 2026-10-28). For the $S$-matrix, cross sections and decay rates (§C6b.1–§C6b.6, Lecture 15) Yu uses box normalization and squares the delta function, $(2\pi)^4\delta^4(0) = \tilde V\tilde T$, where the course uses wave packets; he derives the width in the propagator from the self-energy (§10.6) and the amputation rule from LSZ (§10.3, §10.5.3). Each section states its Yu correspondence in its opening and, where the route differs, in a "Remark: Yu's route".
+C6b follows the course (Lecture 15) and the user's notes (Ch. 15), not Yu's chapter split (user decisions, 2026-10-26 and 2026-10-28). For the $S$-matrix, cross sections and decay rates (§C6b.1–§C6b.8, Lecture 15) Yu uses box normalization and squares the delta function, $(2\pi)^4\delta^4(0) = \tilde V\tilde T$, where the course uses wave packets; he derives the width in the propagator from the self-energy (§10.6) and the amputation rule from LSZ (§10.3, §10.5.3). Each section states its Yu correspondence in its opening and, where the route differs, in a "Remark: Yu's route".
 
 | Section | Yu § and eqs. | Yu's setting | PS |
 |---|---|---|---|
 | §C6b.1 | §6.2, (6.122)–(6.127); §6.5, (6.272)–(6.275) | $S = U(+\infty, -\infty)$ between asymptotic states; $S = \mathbb I + iT$ | §4.5, (4.70)–(4.73) |
-| §C6b.2 | §6.5.1, (6.276); §6.5.2, (6.308), (6.313), (6.321) | cross section as an event rate per flux; no wave packets | §4.5, (4.59)–(4.61), (4.65)–(4.75) |
-| §C6b.3 | §6.5.1–§6.5.2, (6.276)–(6.313), (6.320)–(6.321) | box normalization, $(2\pi)^4\delta^4(0) = \tilde V\tilde T$; beam on a fixed target | §4.5, (4.76)–(4.79) |
-| §C6b.4 | §6.5.2–§6.5.3, (6.314)–(6.366) | Møller velocity; Källén function | §4.5, (4.80)–(4.85) |
-| §C6b.5 | §6.5.4–§6.5.5, (6.367)–(6.385); §10.6, (10.259)–(10.275) | box route to $\Gamma_f$; width from $\operatorname{Im}\Pi$ | §4.5, (4.62)–(4.64), (4.86) |
-| §C6b.6 | §10.3, (10.107), (10.121); §10.5.2–§10.5.3, (10.224)–(10.235) | LSZ; amputated diagrams with $\sqrt Z$ | §4.5, (4.58); §4.6, p. 108 |
-| §C6b.7 | — (Yu has no classical-source problem) | | Problem 4.1; §2.4, (2.61)–(2.66) |
+| §C6b.4 | §6.5.1, (6.276); §6.5.2, (6.308), (6.313), (6.321) | cross section as an event rate per flux; no wave packets | §4.5, (4.59)–(4.61), (4.65)–(4.75) |
+| §C6b.5 | §6.5.1–§6.5.2, (6.276)–(6.313), (6.320)–(6.321) | box normalization, $(2\pi)^4\delta^4(0) = \tilde V\tilde T$; beam on a fixed target | §4.5, (4.76)–(4.79) |
+| §C6b.6 | §6.5.2–§6.5.3, (6.314)–(6.366) | Møller velocity; Källén function | §4.5, (4.80)–(4.85) |
+| §C6b.7 | §6.5.4–§6.5.5, (6.367)–(6.385); §10.6, (10.259)–(10.275) | box route to $\Gamma_f$; width from $\operatorname{Im}\Pi$ | §4.5, (4.62)–(4.64), (4.86) |
+| §C6b.8 | §10.3, (10.107), (10.121); §10.5.2–§10.5.3, (10.224)–(10.235) | LSZ; amputated diagrams with $\sqrt Z$ | §4.5, (4.58); §4.6, p. 108 |
+| §C6b.9 | — (Yu has no classical-source problem) | | Problem 4.1; §2.4, (2.61)–(2.66) |
 
 ## Sections
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude]] — 513 notes Ch. 15 §15.1; PS §4.5, pp. 102–104
-- [[§C6b.2 Wave Packets and the Cross Section]] — 513 notes Ch. 15 §15.2–§15.3; PS §4.5, pp. 99–105
-- [[§C6b.3 Evaluating the Cross Section]] — 513 notes Ch. 15 §15.4–§15.5; PS §4.5, pp. 104–106, 108
-- [[§C6b.4 Lorentz Invariance and Two-Body Phase Space]] — 513 notes Ch. 15 §15.6–§15.7; PS §4.5, pp. 106–107
-- [[§C6b.5 Decay Rates and Widths]] — 513 notes Ch. 15 §15.8; PS §4.5, pp. 101, 107–108
-- [[§C6b.6 Amplitudes from Correlation Functions]] — 513 notes Ch. 15 §15.9–§15.10; PS §4.5, p. 99; §4.6, p. 108
-- [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route]] — PHY 513 Problem Set 8, Problem 3; PS Problem 4.1
+- [[§C6b.4 Wave Packets and the Cross Section]] — 513 notes Ch. 15 §15.2–§15.3; PS §4.5, pp. 99–105
+- [[§C6b.5 Evaluating the Cross Section]] — 513 notes Ch. 15 §15.4–§15.5; PS §4.5, pp. 104–106, 108
+- [[§C6b.6 Lorentz Invariance and Two-Body Phase Space]] — 513 notes Ch. 15 §15.6–§15.7; PS §4.5, pp. 106–107
+- [[§C6b.7 Decay Rates and Widths]] — 513 notes Ch. 15 §15.8; PS §4.5, pp. 101, 107–108
+- [[§C6b.8 Amplitudes from Correlation Functions]] — 513 notes Ch. 15 §15.9–§15.10; PS §4.5, p. 99; §4.6, p. 108
+- [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route]] — PHY 513 Problem Set 8, Problem 3; PS Problem 4.1
 
 ## Theorems
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|§C6b.1.1]] S-Matrix Elements and the Interaction-Picture Evolution Operator
@@ -41,41 +41,41 @@ C6b follows the course (Lecture 15) and the user's notes (Ch. 15), not Yu's chap
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|§C6b.1.3]] The Mass Dimension of the Amplitude
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|§C6b.1.4]] The Amplitude of Spinless Particles Is Lorentz Invariant
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|§C6b.1.5]] Spinless 2 → 2 Kinematics in Terms of s and t
-- [[§C6b.2 Wave Packets and the Cross Section#^thm-c6b-2-1|§C6b.2.1]] The Normalization Condition Is the Unit Norm
-- [[§C6b.2 Wave Packets and the Cross Section#^thm-c6b-2-2|§C6b.2.2]] The Phase Displaces the Packet by b
-- [[§C6b.2 Wave Packets and the Cross Section#^thm-c6b-2-3|§C6b.2.3]] The Quantum Cross Section Is the Event Rate per Unit Flux
-- [[§C6b.2 Wave Packets and the Cross Section#^lem-c6b-2-4|§C6b.2.4]] Away from the Forward Direction Only iT̂ Contributes
-- [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-1|§C6b.3.1]] The Longitudinal Integrals Give the Velocity Difference
-- [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-2|§C6b.3.2]] The Cross Section for 2 → n Scattering
-- [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-3|§C6b.3.3]] The Cross Section Is an Area for Every n
-- [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-4|§C6b.3.4]] Identical Particles in the Final State
-- [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-5|§C6b.3.5]] The Scattering Probabilities Add Up to One
-- [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-1|§C6b.4.1]] The Flux Factor Is a Component of an Antisymmetric Tensor
-- [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-2|§C6b.4.2]] The Cross Section Transforms Like an Area
-- [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-3|§C6b.4.3]] The Flux Factor in Invariant Form
-- [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-4|§C6b.4.4]] The Phase Space Is Lorentz Invariant
-- [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-5|§C6b.4.5]] Two-Body Phase Space in the Centre-of-Mass Frame
-- [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-6|§C6b.4.6]] The Centre-of-Mass Momentum
-- [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-7|§C6b.4.7]] The 2 → 2 Differential Cross Section in the Centre-of-Mass Frame
-- [[§C6b.4 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-4-8|§C6b.4.8]] All Masses Equal
-- [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-1|§C6b.5.1]] The Decay Rate Formula
-- [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-2|§C6b.5.2]] Two-Body Decays
-- [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-3|§C6b.5.3]] ★ Partial Widths Add
-- [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-5|§C6b.5.5]] The Propagator Near Its Pole
-- [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-6|§C6b.5.6]] The Width Is Invariant; the Decay Rate Is Time-Dilated
-- [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-7|§C6b.5.7]] The Breit–Wigner Shape and Its Width
-- [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-1|§C6b.6.1]] Amplitudes Are Amputated Correlation Functions
-- [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-2|§C6b.6.2]] The Disconnected Pieces of the Free Four-Point Function Do Not Scatter
-- [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-3|§C6b.6.3]] Vertex Factors of a Polynomial Interaction
-- [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-4|§C6b.6.4]] Vertices Saturated by External Lines Give S = 1
-- [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-7-1|§C6b.7.1]] The Vacuum-Persistence Amplitude of a Source
-- [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-7-2|§C6b.7.2]] The No-Particle Probability to Order j²
-- [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-7-3|§C6b.7.3]] The Vacuum Series of a Source Exponentiates
-- [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^lem-c6b-7-4|§C6b.7.4]] Contraction of Fields with Outgoing Particles
-- [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-7-5|§C6b.7.5]] The One-Particle Amplitude
-- [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-7-6|§C6b.7.6]] The Measure on n-Particle States
-- [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-7-7|§C6b.7.7]] The Number of Particles Is Poisson Distributed
-- [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-7-8|§C6b.7.8]] Normalization, Mean and Variance
+- [[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-2|§C6b.4.2]] The Normalization Condition Is the Unit Norm
+- [[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-3|§C6b.4.3]] The Phase Displaces the Packet by b
+- [[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-4|§C6b.4.4]] The Quantum Cross Section Is the Event Rate per Unit Flux
+- [[§C6b.4 Wave Packets and the Cross Section#^lem-c6b-4-5|§C6b.4.5]] Away from the Forward Direction Only iT̂ Contributes
+- [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-1|§C6b.5.1]] The Longitudinal Integrals Give the Velocity Difference
+- [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|§C6b.5.2]] The Cross Section for 2 → n Scattering
+- [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-3|§C6b.5.3]] The Cross Section Is an Area for Every n
+- [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|§C6b.5.4]] Identical Particles in the Final State
+- [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-5|§C6b.5.5]] The Scattering Probabilities Add Up to One
+- [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-1|§C6b.6.1]] The Flux Factor Is a Component of an Antisymmetric Tensor
+- [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-2|§C6b.6.2]] The Cross Section Transforms Like an Area
+- [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-3|§C6b.6.3]] The Flux Factor in Invariant Form
+- [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-4|§C6b.6.4]] The Phase Space Is Lorentz Invariant
+- [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-5|§C6b.6.5]] Two-Body Phase Space in the Centre-of-Mass Frame
+- [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-6|§C6b.6.6]] The Centre-of-Mass Momentum
+- [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-7|§C6b.6.7]] The 2 → 2 Differential Cross Section in the Centre-of-Mass Frame
+- [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-8|§C6b.6.8]] All Masses Equal
+- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|§C6b.7.4]] The Decay Rate Formula
+- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-5|§C6b.7.5]] Two-Body Decays
+- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-6|§C6b.7.6]] ★ Partial Widths Add
+- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-8|§C6b.7.8]] The Propagator Near Its Pole
+- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-9|§C6b.7.9]] The Width Is Invariant; the Decay Rate Is Time-Dilated
+- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-10|§C6b.7.10]] The Breit–Wigner Shape and Its Width
+- [[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-1|§C6b.8.1]] Amplitudes Are Amputated Correlation Functions
+- [[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-2|§C6b.8.2]] The Disconnected Pieces of the Free Four-Point Function Do Not Scatter
+- [[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-3|§C6b.8.3]] Vertex Factors of a Polynomial Interaction
+- [[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-4|§C6b.8.4]] Vertices Saturated by External Lines Give S = 1
+- [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-9-1|§C6b.9.1]] The Vacuum-Persistence Amplitude of a Source
+- [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-9-2|§C6b.9.2]] The No-Particle Probability to Order j²
+- [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-9-3|§C6b.9.3]] The Vacuum Series of a Source Exponentiates
+- [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^lem-c6b-9-4|§C6b.9.4]] Contraction of Fields with Outgoing Particles
+- [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-9-5|§C6b.9.5]] The One-Particle Amplitude
+- [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-9-6|§C6b.9.6]] The Measure on n-Particle States
+- [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-9-7|§C6b.9.7]] The Number of Particles Is Poisson Distributed
+- [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-9-8|§C6b.9.8]] Normalization, Mean and Variance
 
 ## Models
-- [[§C6b.5 Decay Rates and Widths#^mod-c6b-5-4|§C6b.5.4]] The Propagator of an Unstable Particle
+- [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|§C6b.7.7]] The Propagator of an Unstable Particle

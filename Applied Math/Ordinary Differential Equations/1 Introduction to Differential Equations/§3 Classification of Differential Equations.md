@@ -180,6 +180,10 @@ Which method applies to a differential equation depends on what kind of equation
 ![[m331-3-1.svg]]
 *The pendulum released from rest at $\theta = \pi/3$: the nonlinear equation (12) (blue, numerical solution) and its linearization (13) (green, $\theta = \frac{\pi}{3}\cos\sqrt{g/L}\,t$). The linearization predicts the period $2\pi\sqrt{L/g}$; the true period at this amplitude is about $7\%$ longer ($6.74$ instead of $6.28$ in units of $\sqrt{L/g}$, gray marks), so the two drift out of phase.*
 
+![[m331-3-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Two pendulums released from rest at $\theta = \pi/3$: on the left the pendulum equation (12), $\theta'' + \frac{g}{L}\sin\theta = 0$ (blue, numerical solution), on the right its linearization (13), $\theta'' + \frac{g}{L}\theta = 0$ (green, $\theta = \frac{\pi}{3}\cos\sqrt{g/L}\,t$), with $\theta(t)$ traced below against $t\sqrt{g/L}$ for three swings. They start together, but the true pendulum is slower: its period is $6.74$ instead of $2\pi = 6.28$ in units of $\sqrt{L/g}$ (grey marks), because $|\sin\theta| < |\theta|$ gives a weaker restoring force at this amplitude. The lag of about $0.46$ per swing adds up, and after three swings ($t\sqrt{g/L} \approx 20$) the blue pendulum is at its turning point while the green one passes through the bottom: the true pendulum has fallen nearly a quarter period behind.
+
 > [!remark] Remark: Why Linear Equations Come First
 > The theory and methods for linear equations are highly developed, while for nonlinear equations the theory is more complicated and the methods less satisfactory. Fortunately many important problems lead to linear equations or can be approximated by them, as (13) approximates (12). Still, many phenomena cannot be represented adequately by linear equations. Most of this course is about linear equations; nonlinear ones appear in parts of Chapter 2 ([[§6 Separable Differential Equations|§6]], [[§9 Autonomous Differential Equations and Population Dynamics|§9]], [[§11 Exact Differential Equations and Integrating Factors|§11]]).
 

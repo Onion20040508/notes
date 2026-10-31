@@ -124,6 +124,10 @@ To continue, we do not know $\phi(t_1)$, so we use $y_1$ in its place and constr
 ![[m331-10-1.svg]]
 *[[§13 Numerical Approximations꞉ Euler's Method#^ex-13-1|Example §13.1]]: the Euler polygon with $h = 0.2$ (red) and the exact solution $\phi(t) = 14 - 4t - 13e^{-t/2}$ (blue). The first step runs $h = 0.2$ along the tangent at $(0, 1)$ and rises $hf_0 = 0.5$. Because $\phi$ is concave down, each tangent segment overshoots, and the errors accumulate to $0.209$ at $t = 1$.*
 
+![[m331-10-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Euler polygons for the problem (11) of Example §13.1, $y' = 3 - 2t - 0.5y$, $y(0) = 1$, drawn step by step for $h = 0.2$ and then for the step sizes $0.1, 0.05, 0.025, 0.01$ of Example §13.2, against the exact solution $\phi(t) = 14 - 4t - 13e^{-t/2}$ (blue); earlier polygons stay faint. Every polygon lies above $\phi$, because $\phi$ is concave down and each tangent segment overshoots, and each smaller step size brings the polygon closer. The right panel plots the error at $t = 2$ against $h$: $0.2496$, $0.1221$, $0.0604$, $0.0300$, $0.0120$ (the note's $0.0119$ is the difference of the rounded table entries). The points lie on a line through the origin, so halving $h$ halves the error: the error is proportional to $h$, as Proposition §13.1 proves for $y' = 1 - t + y$.
+
 > [!example] Example §13.2: Smaller Steps
 > For the same problem (11), use Euler's method with step sizes $h = 0.1, 0.05, 0.025, 0.01$ (that is, $50, 100, 200, 500$ steps to go from $t = 0$ to $t = 5$), and compare with the exact solution (12) on $0 \le t \le 5$.
 >
@@ -210,6 +214,10 @@ To understand the difference, look again at Euler's method for the general probl
 
 ![[m331-10-2.svg]]
 *Euler's method follows a different solution at each step. (a) For $y' = 3 - 2t - 0.5y$ with $h = 0.5$, the solutions through the successive Euler points (grey) form a converging family, so they crowd together and the Euler points (red) stay near the true solution (blue). (b) For $y' = 4 - t + 2y$ with $h = 0.25$, the family diverges: each Euler point lies on a lower member of the family, and these members fall away from the true solution exponentially.*
+
+![[m331-10-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The two panels of the figure built one Euler step at a time: (a) $y' = 3 - 2t - 0.5y$ with $h = 0.5$, (b) $y' = 4 - t + 2y$ with $h = 0.25$, both from $y(0) = 1$, with the true solution in blue. Each red step runs along the tangent line and lands on a point that lies on a different solution of the equation; that member of the family (17) or (18) is then drawn in grey, and its constant $c$ is shown. In (a) the constant drifts from $-13$ to $-10.369$, but the members $14 - 4t + ce^{-t/2}$ crowd together as $t$ grows, so the early errors are damped out. In (b) $c$ falls from $\frac{11}{4} = 2.75$ to $1.714$. The members $-\frac74 + \frac t2 + ce^{2t}$ fan apart, so each step lands on a lower and lower curve, and at $t = 1.25$ the Euler value is $19.76$ against the true $32.38$. This is the converging/diverging distinction of Definition §13.2.
 
 ## Convergence of Euler's Method
 

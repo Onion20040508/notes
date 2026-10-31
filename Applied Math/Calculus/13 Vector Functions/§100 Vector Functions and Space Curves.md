@@ -213,6 +213,10 @@ A vector function assigns to each number $t$ a vector $\mathbf{r}(t) = \langle f
 
 ^ex-100-4
 
+![[m233-86-a1.gif|560]]
+
+*(Not from the book; animation added, vault only.)* Example §100.4(b) with both parameters read as time on one clock. The particle $\mathbf{r}(t) = \langle 2t, t^2 - 6, -\frac13 t^3 \rangle$ (blue) and the particle $\mathbf{w}(s) = \langle 2, 5, 1 \rangle + s\langle 2, -1, -5 \rangle$ (red) start together at $t = s = 0$ and run until $t = s = 4$, leaving solid trails along their paths (faint). The paths cross at $(6, 3, -9)$ (ring). At time $2$ the red particle passes the crossing while the blue one is still at $\mathbf{r}(2) = (4, -2, -\frac83)$. At time $3$ the blue one arrives there, but the red one has moved on to $\mathbf{w}(3) = (8, 2, -14)$. The graph on the right tracks the distance $|\mathbf{r}(t) - \mathbf{w}(t)|$, which never drops below about $5.14$ (near time $3.25$): the particles never collide. That is why the example solves $\mathbf{r}(t) = \mathbf{w}(s)$ with two parameters, $t = 3$ and $s = 2$, instead of one. The vertical scale of the 3D view is compressed for the picture.
+
 ## Using Technology to Draw Space Curves
 
 > [!remark]- Remark: Visualizing Space Curves

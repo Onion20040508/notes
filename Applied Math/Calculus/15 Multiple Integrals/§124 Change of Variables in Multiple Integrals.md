@@ -54,6 +54,10 @@ $$
 ![[m233-106-1.svg]]
 *[[§124 Change of Variables in Multiple Integrals#^ex-124-1|Example §124.1]]: the transformation $x = u^2 - v^2$, $y = 2uv$ maps the unit square $S$ onto the region $R$ under two parabolic arcs. Each side of $S$ and its image have the same colour; the bottom side $S_1$ and the left side $S_4$ are both folded onto the $x$-axis, on either side of the origin, and $S_2$, $S_3$ become the arcs $x = 1 - y^2/4$ and $x = y^2/4 - 1$, meeting at $(0, 2)$, the image of the corner $(1, 1)$.*
 
+![[m233-106-a1.gif|560]]
+
+*(Not from the book; animation added, vault only.)* Example §124.1 traced one grid line at a time. A point runs along each line of a grid on the unit square $S$ (left), and its image under $T$: $x = u^2 - v^2$, $y = 2uv$ runs along the image curve (right). The sides keep the colours of the figure: $S_1$ blue, $S_2$ red, $S_3$ orange, $S_4$ green. First the horizontal lines $v = c$ for $c = 0, \frac14, \frac12, \frac34, 1$. The bottom side $S_1$ ($v = 0$) goes to the segment $0 \le x \le 1$, and each line $v = c > 0$ goes to the right-opening parabola $x = \frac{y^2}{4c^2} - c^2$, ending with $S_3$, the arc $x = \frac{y^2}{4} - 1$. Then the vertical lines $u = c$. The left side $S_4$ ($u = 0$) is folded onto the segment $-1 \le x \le 0$, and each line $u = c > 0$ goes to the left-opening parabola $x = c^2 - \frac{y^2}{4c^2}$, ending with $S_2$, the arc $x = 1 - \frac{y^2}{4}$. The two families of parabolas cross at right angles and fill the region $R$ between the $x$-axis and $y^2 = 4 - 4x$, $y^2 = 4 + 4x$. The corner $(1, 1)$ goes to the tip $(0, 2)$.
+
 Now consider how a change of variables affects a double integral. Start with a small rectangle $S$ in the $uv$-plane whose lower left corner is $(u_0, v_0)$ and whose dimensions are $\Delta u$ and $\Delta v$. Its image $R = T(S)$ has the boundary point $(x_0, y_0) = T(u_0, v_0)$. Let
 
 $$
@@ -88,6 +92,10 @@ $$
 
 ![[m233-106-2.svg]]
 *Why the Jacobian appears. A small rectangle in the $uv$-plane (left) is mapped by $T$ to a curved quadrilateral (blue, right). Near $(x_0, y_0)$ it is close to the parallelogram (red) spanned by $\Delta u\,\mathbf r_u$ and $\Delta v\,\mathbf r_v$, whose area is $|\mathbf r_u \times \mathbf r_v|\,\Delta u\,\Delta v = |\partial(x, y)/\partial(u, v)|\,\Delta u\,\Delta v$.*
+
+![[m452-15-a6.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The figure "Why the Jacobian appears" with the rectangle shrinking, reused from MATH 452 (Multivariable Analysis). Left: a small rectangle in the $uv$-plane with corner $(u_0, v_0) = (0.5, 0.5)$ and sides $\Delta u = s$, $\Delta v = 0.8s$, where $s$ shrinks from $1$ to $0.02$; both views zoom with it, so the rectangle looks the same size throughout. Right: its image under the transformation (blue), a curved quadrilateral, and the parallelogram spanned by $\Delta u\,\mathbf r_u$ and $\Delta v\,\mathbf r_v$ at the corner (red, dashed). As $s$ shrinks the image straightens into the parallelogram, and the title's ratio of the area of the image to the area of the rectangle falls from $0.7472$ through $0.7152$ and $0.7052$ to $0.7044$, tending to $\left|\frac{\partial(x, y)}{\partial(u, v)}\right| = 0.704$ at $(u_0, v_0)$. This is why $dA = \left|\frac{\partial(x, y)}{\partial(u, v)}\right| du\,dv$ in Theorem §124.1. The transformation is one chosen for the picture in 452, and the GIF uses 452's letters: $\Phi$ for the transformation $T$, $\Phi_u$, $\Phi_v$ for $\mathbf r_u$, $\mathbf r_v$, $J$ for the Jacobian, and $R$ for the small rectangle in the $uv$-plane (not for a region in the $xy$-plane, as in this note).
 
 > [!definition] Definition §124.2: The Jacobian
 > The **Jacobian** of the transformation $T$ given by $x = g(u, v)$ and $y = h(u, v)$ is

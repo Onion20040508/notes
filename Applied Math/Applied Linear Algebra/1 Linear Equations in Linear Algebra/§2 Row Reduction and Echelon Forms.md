@@ -255,6 +255,10 @@ A matrix can be row reduced to many different echelon forms, by different sequen
 
 ^ex-2-3
 
+![[m235-2-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The row reduction of Example §2.3, one operation at a time. In the forward phase, rows 1 and 3 slide past each other (steps 1–2). Then $R_2 - R_1$ creates a zero under the first pivot $3$ (step 3). Row 1 is covered (grey) and $R_3 - \frac32R_2$ clears the column under the pivot $2$ (step 4), which leaves an echelon form with pivot positions (boxed) in columns 1, 2 and 5. In the backward phase, $R_1 - 6R_3$ and $R_2 - 2R_3$ clear the column above the last pivot, $\frac12R_2$ and $R_1 + 9R_2$ give the second column its $1$ and its zero, and $\frac13R_1$ gives the reduced echelon form with $(1, 0, -2, 3, 0, -24)$, $(0, 1, -2, 2, 0, -7)$, $(0, 0, 0, 0, 1, 4)$. In each step the row being replaced is shaded, and its old entries fade into the new ones (red), so only that row changes.
+
 > [!remark]- Remark: Numerical Notes — Partial Pivoting and Operation Counts
 > In step 2 a computer program usually selects as pivot the entry of largest absolute value in the column. This **partial pivoting** reduces roundoff errors.
 >

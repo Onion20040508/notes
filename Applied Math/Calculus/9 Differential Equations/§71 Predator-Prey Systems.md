@@ -176,6 +176,10 @@ Usually it is impossible to find explicit formulas for $R$ and $W$ as functions 
 ![[m233-62-2.svg]]
 *$R(t)$ (blue, left scale) and $W(t)$ (red, right scale) for the solution with $R(0) = 1000$, $W(0) = 40$, computed numerically. One cycle takes about $T \approx 170$ months. The rabbits peak at $t_1 \approx 36$, the wolves at $t_2 \approx 63$, and the rabbits bottom out at $t_3 \approx 110$. The wolf peak trails the rabbit peak by about $27$ months, and the wolf minimum trails the rabbit minimum by about $60$ months; on average the lag is about a quarter cycle.*
 
+![[m233-62-a1.gif|560]]
+
+*(Not from the book; animation added, vault only.)* One trip around the cycle of Example §71.2, for $dR/dt = 0.08R - 0.001RW$, $dW/dt = -0.02W + 0.00002RW$ from $R(0) = 1000$, $W(0) = 40$ (computed numerically). Left: the point $(R(t), W(t))$ runs counterclockwise around the closed phase trajectory about the equilibrium $(1000, 80)$, through $P_0 \to P_1 \to P_2 \to P_3$. Right: cursors move along $R(t)$ (blue, left scale) and $W(t)$ (red, right scale). The label in the phase plane shows which population is rising: the dashed lines $W = 80$ and $R = 1000$ cut the plane into four quadrants, and the four phases of the cycle ($R\uparrow W\uparrow$, $R\downarrow W\uparrow$, $R\downarrow W\downarrow$, $R\uparrow W\downarrow$) are exactly these quadrants, with $R$ turning on $W = 80$ and $W$ turning on $R = 1000$. The rabbits peak at $t_1 \approx 36$ months ($R_{\max} \approx 2803$), the wolves at $t_2 \approx 63$ ($W_{\max} \approx 140.5$), the rabbits bottom out at $t_3 \approx 110$ ($R_{\min} \approx 209.5$), and the cycle closes after $T \approx 170$ months.
+
 > [!remark]- Remark: Why the Trajectories Are Closed
 > Stewart observes that the trajectories *appear* closed. His Exercise 9.6.9 gives the reason. The equation of [[§71 Predator-Prey Systems#^prop-71-1|Proposition §71.1]] is separable ([[§68 Separable Equations#^def-68-1|Definition §68.1]]; solved by [[§68 Separable Equations#^thm-68-1|Theorem §68.1]]):
 >

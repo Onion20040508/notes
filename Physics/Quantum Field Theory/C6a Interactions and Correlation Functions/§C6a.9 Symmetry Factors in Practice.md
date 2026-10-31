@@ -467,7 +467,7 @@ In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $
 > **Step 5** (part 2). [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3: elements of $G_n$ preserve kinds, so a symmetry maps the $\hat\phi$ end of each line to a $\hat\phi$ end; the image of a line has its arrow the same way.
 >
 > **What the derivation shows.**
-> - The $\frac14$ in $\frac\lambda4(\phi^\dagger\phi)^2$ plays the role of the $\frac{1}{4!}$ of $\phi^4$: it is $\frac{1}{|S_2\times S_2|}$, and the vertex factor is again $-i\lambda$ ([[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-3|Theorem §C6b.6.3]]).
+> - The $\frac14$ in $\frac\lambda4(\phi^\dagger\phi)^2$ plays the role of the $\frac{1}{4!}$ of $\phi^4$: it is $\frac{1}{|S_2\times S_2|}$, and the vertex factor is again $-i\lambda$ ([[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-3|Theorem §C6b.8.3]]).
 > - Fewer relabellings are allowed, so fewer can be symmetries: a loop cannot be flipped, and two lines can be exchanged only if they run the same way.
 
 ^der-c6a-9-1

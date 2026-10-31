@@ -158,6 +158,10 @@ The heat index $I = f(T, H)$ is the temperature that it feels like when the actu
 ![[m233-92-1.svg]]
 *[[§108 Partial Derivatives#^ex-108-3|Example §108.3]]: the part of the paraboloid $z = 4 - x^2 - 2y^2$ over the first quadrant. The plane $y = 1$ cuts it in the parabola $C_1$ (blue), whose tangent $T_1$ at $P(1, 1, 1)$ (red) has slope $f_x(1, 1) = -2$ in the $x$-direction. The plane $x = 1$ cuts it in $C_2$ (green), whose tangent $T_2$ (orange) has slope $f_y(1, 1) = -4$ in the $y$-direction.*
 
+![[m452-4-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The reading of Example §108.3 with the point in motion, reused from MATH 452 (Multivariable Analysis). First the point runs along the curve in which the vertical plane $y = 1.25$ cuts the surface (the analogue of $C_1$), with its tangent line, whose slope in the $x$-direction is $f_x$: the title shows it changing from positive values, where the curve climbs, through $0$ at the crest to negative values. Then the point runs along the curve cut by the plane $x = 1.2$ (green, the analogue of $C_2$), whose tangent has slope $f_y$. The dashed line in the base shows the trace of each plane in the $xy$-plane. Each partial derivative sees only its own slice: $f_x$ knows nothing of how $f$ changes in the $y$-direction, and the other way round. The surface is not the paraboloid $z = 4 - x^2 - 2y^2$ of the example but a wavy surface chosen for the picture in 452, $z = 1.05 + 0.40\sin 1.35x + 0.38\cos 1.15y + 0.05x$, so the slopes differ from $-2$ and $-4$.
+
 > [!example] Example §108.4: Implicit Partial Differentiation
 > Find $\partial z / \partial x$ and $\partial z / \partial y$ if $z$ is defined implicitly as a function of $x$ and $y$ by the equation
 >
@@ -300,6 +304,10 @@ If $w = f(x, y, z)$, then $f_x = \partial w / \partial x$ is the rate of change 
 ^pf-108-2
 
 *Uses:* [[§108 Partial Derivatives#^def-108-4|Def. §108.4]], [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-2|§29.2]] (Mean Value Theorem), [[§107 Limits and Continuity#^def-107-3|Def. §107.3]]
+
+![[m452-5-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The second difference of the proof of Theorem §108.2 as the square shrinks, reused from MATH 452 (Multivariable Analysis). Left: the square with corners $(a, b)$ and $(a + h, b + h)$ (labelled $(x_0, y_0)$ in the GIF), with the signs $+$ and $-$ at the corners with which $f$ enters $\Delta(h) = f(a + h, b + h) - f(a + h, b) - f(a, b + h) + f(a, b)$; the GIF writes $I(h, k)$ for $\Delta(h)$ and takes $k = h$, as here. The side $h$ shrinks from $0.8$ to $0.002$. Right: the quotient $\Delta(h)/h^2$ against $h$ (log scale, $h$ decreasing to the right) settles onto the dashed level $f_{xy}(a, b)$: it is $3.291$ for $h = 0.8$, $2.914$ for $h \approx 0.18$ and $2.7506$ for $h = 0.002$. Since the proof shows that the same quotient also tends to $f_{yx}(a, b)$, this one limit is the common value of both mixed partials. The function, $f = e^x\sin y + xy^2$ at $(a, b) = (0.5, 0.8)$, was chosen for the picture in 452, with $f_{xy}(a, b) = f_{yx}(a, b) = e^{0.5}\cos 0.8 + 1.6 \approx 2.7487$.
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§6 Equality of Mixed Partials#^thm-6-1|452 Thm. §6.1]] (on an open rectangle, by the same second-difference argument); hub [[Schwarz–Clairaut Theorem]].

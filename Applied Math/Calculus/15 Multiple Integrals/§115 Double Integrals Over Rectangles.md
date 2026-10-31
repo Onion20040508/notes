@@ -142,6 +142,10 @@ The same limits occur for functions that are not positive (mass, charge, probabi
 ![[m233-98-1.svg]]
 *The Riemann sum of [[§115 Double Integrals Over Rectangles#^ex-115-1|Example §115.1]]. Each box stands on one square $R_{ij}$ and reaches up to the surface $z = 16 - x^2 - 2y^2$ (blue edges) at the upper right corner of its base (red dots): heights $13, 7, 10, 4$. Since $f$ decreases in $x$ and in $y$, the corner $(x_i, y_j)$ is the lowest point of the surface over $R_{ij}$, so every box lies under the surface and $34$ underestimates the volume $48$.*
 
+![[m233-98-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The Riemann sum of Example §115.1 refined, drawn with the axes of the figure above. For $m = n = 2, 4, 8, 16$ the square $R = [0, 2] \times [0, 2]$ is cut into $mn$ squares of area $\Delta A = (2/n)^2$, and on each one a box rises up to the surface $z = 16 - x^2 - 2y^2$ at the upper right corner of its base (red dots, left out for $n = 16$). The total volume of the boxes is $34$, $41.5$, $44.875$ and $46.46875$, the numbers of the example. Every box stays under the surface, because $f$ decreases in $x$ and in $y$, so each sum underestimates. The gap between the box tops and the surface shrinks, and the sums climb toward the volume $48$ of Example §115.5.
+
 > [!example] Example §115.2: A Double Integral Read as a Volume
 > If $R = \{(x, y) \mid -1 \le x \le 1,\ -2 \le y \le 2\}$, evaluate $\displaystyle\iint_R \sqrt{1 - x^2}\,dA$.
 >
@@ -272,6 +276,10 @@ Evaluating a double integral from its definition is even harder than for single 
 
 ![[m233-98-2.svg]]
 *Fubini's Theorem as slicing. The plane through $x$ perpendicular to the $x$-axis cuts the solid under $z = f(x, y)$ in a region (red) of area $A(x) = \int_c^d f(x, y)\,dy$: the inner integral. Stacking these slices from $x = a$ to $x = b$ is the outer integral $\int_a^b A(x)\,dx$, the volume.*
+
+![[m452-15-a4.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The slicing argument of the Remark "Why It Works" in motion, reused from MATH 452 (Multivariable Analysis). Left: the slab through $x$ (red), perpendicular to the $x$-axis, sweeps from $x = a$ to $x = b$ through the solid under a surface $z = f(x, y)$ over a rectangle $R$ (a smooth surface chosen for the picture in 452; the dotted curves show its top edges), and the part already swept is drawn solid (blue). Right: the cross-section area $A(x) = \int_c^d f(x, y)\,dy$, the inner integral, as a function of $x$ (red curve), with the area under its graph shaded up to the current $x$. The title gives $A(x)$ and the volume swept so far, $\int_a^x A(t)\,dt$; at $x = b$ this is the whole volume, $\iint_R f(x, y)\,dA = \int_a^b \int_c^d f(x, y)\,dy\,dx$. So the shaded area on the right equals the volume on the left at every moment: Fubini's Theorem, Theorem §115.3, read as the volume formula $V = \int_a^b A(x)\,dx$.
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§23 Fubini's Theorem#^thm-23-1|452 Thm. §23.1]] (continuous $f$ on a rectangle). Hub: [[Fubini's Theorem]]. The Lebesgue versions, for $f \ge 0$ measurable and for integrable $f$ on $\mathbb{R}^p \times \mathbb{R}^q$: [[§25 Invariance Properties and Fubini's Theorem#^thm-25-3|551 Thm. §25.3]] (Tonelli), [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]] (Fubini).

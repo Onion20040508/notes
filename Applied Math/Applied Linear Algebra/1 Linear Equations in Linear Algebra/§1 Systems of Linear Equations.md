@@ -268,6 +268,10 @@ The strategy is to replace a system by an equivalent system that is easier to so
 ![[m235-1-1.svg]]
 *The three systems of [[§1 Systems of Linear Equations#^ex-1-2|Example §1.2]]. Two lines in the plane meet in one point (a), are parallel (b), or coincide (c). Row reduction detects (b) as the equation $0 = 1$ and (c) as the equation $0 = 0$.*
 
+![[m235-1-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* Theorem §1.2 for the system $x_1 + x_2 = 2$, $x_1 - x_2 = 1$ of Example §1.2(a), with each row replacement done gradually. First $R_2 - tR_1$ for $t$ from $0$ to $1$: the second line $(1 - t)x_1 - (1 + t)x_2 = 1 - 2t$ turns about $(\frac32, \frac12)$ until it is the horizontal line $-2x_2 = -1$. Scaling by $-\frac12$ changes the equation to $x_2 = \frac12$ but not the line. Then $R_1 - sR_2$ for $s$ from $0$ to $1$ turns the first line $x_1 + (1 - s)x_2 = 2 - \frac s2$ until it is the vertical line $x_1 = \frac32$. Every line in between still passes through the black point, since each new equation is a combination of the old ones. So the solution never moves, and the reduced echelon form shows it as the crossing of a vertical and a horizontal line. The dotted lines are the original equations.
+
 ## Existence and Uniqueness Questions
 
 > [!remark] Remark: Two Fundamental Questions About a Linear System

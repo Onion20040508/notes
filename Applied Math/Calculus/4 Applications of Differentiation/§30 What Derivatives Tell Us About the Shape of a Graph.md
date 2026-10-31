@@ -266,6 +266,10 @@ For example, in a population curve $P(t)$ that grows slowly, then quickly, then 
 ![[m233-27-2.svg]]
 *[[§30 What Derivatives Tell Us About the Shape of a Graph#^ex-30-3|Example §30.3]]: $y = x^4 - 4x^3$. At $0$ the tangent is horizontal ($f'(0) = 0$) but there is no extremum: the curve crosses its tangent, since $(0, 0)$ is also an inflection point. The only local extremum is the minimum $(3, -27)$ (blue); the second inflection point is $(2, -16)$ (red). The shading marks where the curve is concave upward.*
 
+![[m233-27-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* The tangent line (red) slides along $y = x^4 - 4x^3$ of [[§30 What Derivatives Tell Us About the Shape of a Graph#^ex-30-3|Example §30.3]] from $x = -1.1$ to $x = 4$, with the readout $f''(x) = 12x(x - 2)$. Near the point of tangency the gap between curve and tangent is green where the curve lies above its tangent (concave upward, $f'' > 0$, the lightly shaded intervals of the figure) and orange where it lies below (concave downward, $0 < x < 2$). The animation pauses at the two inflection points $(0, 0)$ and $(2, -16)$ (red), where the gap changes colour across the point: the curve crosses its tangent, as [[§30 What Derivatives Tell Us About the Shape of a Graph#^def-30-2|Definition §30.2]] says. At $(0, 0)$ the tangent is horizontal, yet there is no extremum; the only local minimum is $(3, -27)$ (blue).
+
 ## Curve Sketching
 
 The first and second derivatives together determine the shape of a graph.

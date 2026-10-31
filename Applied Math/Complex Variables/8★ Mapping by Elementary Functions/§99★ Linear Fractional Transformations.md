@@ -81,6 +81,10 @@ A linear fractional (Möbius) transformation $w = (az + b)/(cz + d)$ is a linear
 
 *Uses:* [[§96★ Linear Transformations#^def-96-1|Def. §96.1]]
 
+![[m342-99-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* The map $w = (3z + 2i)/(iz + 6)$ of Example §99.1, which sends $2, i, -2$ to $1, i, -1$, built from the pieces of Proposition §99.2: with $a = 3$, $b = 2i$, $c = i$, $d = 6$, (3) reads $w = -3i + 20i\cdot\frac{1}{iz + 6}$. The real axis (blue), the circle through $2, i, -2$ (red; centre $-1.5i$, radius $2.5$) and a grid of lines (grey) go through the steps one at a time: turn by $\pi/2$ ($iz$), translate by $6$ ($Z = iz + 6$), invert ($W = 1/Z$), turn by $\pi/2$ and scale by $20$ ($20iW$), translate by $-3i$. The view zooms to follow the picture (watch the tick labels: after the inversion everything is about $0.1$ across). The inversion is shown through the maps $Z \mapsto (Z\cos s + i\sin s)/(iZ\sin s + \cos s)$, $0 \le s \le \pi/2$ (chosen for the picture), each of them linear fractional, so at every moment of every step circles and lines stay circles and lines (Corollary §99.3). At the end the three marked points sit on $1, i, -1$, the red circle has become the unit circle (dashed), and the real axis has become the circle through $\pm1$ with centre $-\frac43i$ and radius $\frac53$.
+
 > [!theorem] Corollary §99.3: Circles and Lines Go to Circles and Lines
 > Every linear fractional transformation transforms circles and lines into circles and lines.
 >

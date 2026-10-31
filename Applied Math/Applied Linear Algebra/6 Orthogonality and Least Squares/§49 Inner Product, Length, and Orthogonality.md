@@ -242,6 +242,10 @@ Length, distance and perpendicularity, familiar in $\mathbb{R}^2$ and $\mathbb{R
 
 ^rem-49-1
 
+![[ladr-6.21-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 6.21, parallelogram equality). The lengths $\|\mathbf{u}\| = 2$ and $\|\mathbf{v}\| = 1.2$ are fixed while the angle between the vectors runs from $20^\circ$ to $160^\circ$. The diagonals have lengths $\|\mathbf{u} + \mathbf{v}\| = \operatorname{dist}(\mathbf{u}, -\mathbf{v})$ (blue) and $\|\mathbf{u} - \mathbf{v}\| = \operatorname{dist}(\mathbf{u}, \mathbf{v})$ (red). By the two formulas of the Remark they differ by $4\,\mathbf{u}\cdot\mathbf{v}$ in their squares, so they are equal exactly at $90^\circ$, where $\mathbf{u}\cdot\mathbf{v} = 0$. Their squares always add up to $2(\|\mathbf{u}\|^2 + \|\mathbf{v}\|^2) = 10.88$: the two diagonals trade length. The vectors are chosen for the picture.
+
 > [!definition] Definition §49.5: Orthogonal Vectors
 > Two vectors $\mathbf{u}$ and $\mathbf{v}$ in $\mathbb{R}^n$ are **orthogonal** (to each other) if $\mathbf{u} \cdot \mathbf{v} = 0$.
 >

@@ -207,6 +207,10 @@ As B&C remarks in a footnote, Theorem §84.4 says that the modulus $|f(z)|$ incr
 
 ^ex-84-2
 
+![[m342-84-a1.gif|520]]
+
+*(Not from the book; animation added, vault only.)* Example §84.2 with the note's value $w_0 = 2 + 3i$, while the view zooms into the essential singular point $0$ of $e^{1/z}$: $\delta$ halves three times, from $0.16$ to $0.02$, and both panels are rescaled with it. Left: the punctured disk $0 < |z| < \delta$ (blue) and the points $z_n = 1/(\operatorname{Log} w_0 + 2n\pi i)$, at each of which $e^{1/z_n} = w_0$ exactly; those inside the disk are red. They all lie on the grey circle $\operatorname{Re}(1/z) = \ln|w_0| \approx 1.28$, which touches the imaginary axis at $0$, and they pile up at $0$ ($|z_1| \approx 0.136$). However small $\delta$ is, infinitely many of them are in the disk; the subtitle names the $|n|$ beyond which all are. Right: the same points in the plane of $\zeta = 1/z$, where they are $\operatorname{Log} w_0 + 2n\pi i$, equally spaced on a vertical line. The disk $0 < |z| < \delta$ becomes the exterior $|\zeta| > 1/\delta$ (shaded), and the grey lines cut the plane into bands of height $2\pi$, each of which $e^{\zeta}$ maps onto the whole punctured $w$ plane. The exterior always contains whole bands, so the picture looks the same at every scale, which is the reason $e^{1/z}$ takes every value $w_0 \ne 0$ near $0$.
+
 > [!example] Example §84.3: Small Semicircles Around a Simple Pole
 > Let $S_r$ be the upper half of the circle of radius $r$ centered at $0$, parametrized by $z(\theta) = re^{i\theta}$, $0 \le \theta \le \pi$. Let $f$ have a simple pole at $0$, and set $B = \operatorname{Res}_{z=0} f$. Prove that $\lim_{r\to0}\int_{S_r} f(z)\,dz = \pi iB$.
 >

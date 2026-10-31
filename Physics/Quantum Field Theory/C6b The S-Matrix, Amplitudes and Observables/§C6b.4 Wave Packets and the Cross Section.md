@@ -3,22 +3,22 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C6b
-section: C6b.2
+section: C6b.4
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6b.1 The S-Matrix and the Invariant Amplitude]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.3 Evaluating the Cross Section]] →
+← [[§C6b.1 The S-Matrix and the Invariant Amplitude]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.5 Evaluating the Cross Section]] →
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)", Definition "Classical differential cross section", Figure "classicalxsec", paragraph "Example: the hard sphere (filled in)"), §15.3 (Definition "Wave packets", eq. (twopacket), paragraph "Why $e^{-i\vec b\cdot\vec k_B}$ shifts $B$ by $+\vec b$ (filled in)", Figure "wavepackets", Caution "A slip on the wave-packet slide", eq. (Pb), Definition "The quantum cross section", paragraphs "Why integrate over $\vec b$ (filled in)", "Which final states (filled in)"), §15.4 (eq. (dsigmafull), paragraph "Counting", Derivations "The $\delta$-functions and the one Jacobian", "A $\delta$-function of a function (filled in)", Caution "$1/f'(0)$ on the slide", paragraphs "Integrating over $\bar k_B^z$ instead", "A second zero (filled in)", "Smoothness"), §15.5 (Principle "Cross section for $2\to n$ scattering", paragraph "Reading the formula", Derivation "Dimension check (filled in)", paragraph "Identical particles (filled in)") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slide 8, Part B, slides 11–16, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 99–106 and 108, eqs. (4.59)–(4.61), (4.65)–(4.79) · Yu Zhao-Huan, 量子场论讲义, §6.5.1–§6.5.2, eqs. (6.276)–(6.313), (6.321).*
 
-What an experiment observes is an event rate, and the cross section is that rate with the set-up divided out ([[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-1|Def. §C6b.2.1]]); classically it is an area in the plane of impact parameters ([[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-2|Def. §C6b.2.2]]). The goal is a quantum, relativistic formula for it in terms of the amplitude $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]. Momentum eigenstates never "come in" from anywhere, and squaring amplitudes between them produces squares of delta functions; so the incoming particles are wave packets, one of them displaced by an impact parameter $\mathbf b$, and the probability of scattering is integrated over $\mathbf b$. This section sets up the definitions: the wave packets ([[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-3|Def. §C6b.2.3]], [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-4|Def. §C6b.2.4]]), the scattering probability at fixed impact parameter ([[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-5|Def. §C6b.2.5]]) and the quantum cross section ([[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-6|Def. §C6b.2.6]]), what it counts ([[§C6b.2 Wave Packets and the Cross Section#^thm-c6b-2-3|Theorem §C6b.2.3]]) and which final states contribute ([[§C6b.2 Wave Packets and the Cross Section#^lem-c6b-2-4|Lemma §C6b.2.4]]). The integrals are done in [[§C6b.3 Evaluating the Cross Section|§C6b.3]], whose result is the cross-section formula [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]].
+What an experiment observes is an event rate, and the cross section is that rate with the set-up divided out ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-1|Def. §C6b.4.1]]); classically it is an area in the plane of impact parameters ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-2|Def. §C6b.4.2]]). The goal is a quantum, relativistic formula for it in terms of the amplitude $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]. Momentum eigenstates never "come in" from anywhere, and squaring amplitudes between them produces squares of delta functions; so the incoming particles are wave packets, one of them displaced by an impact parameter $\mathbf b$, and the probability of scattering is integrated over $\mathbf b$. This section sets up the definitions: the wave packets ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-3|Def. §C6b.4.3]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-4|Def. §C6b.4.4]]), the scattering probability at fixed impact parameter ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]]) and the quantum cross section ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]), what it counts ([[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-4|Theorem §C6b.4.4]]) and which final states contribute ([[§C6b.4 Wave Packets and the Cross Section#^lem-c6b-4-5|Lemma §C6b.4.5]]). The integrals are done in [[§C6b.5 Evaluating the Cross Section|§C6b.5]], whose result is the cross-section formula [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]].
 
 *Conventions* ([[Larsen PHY 513]]): beams along the $z$-axis; $\perp$ marks the components $(x, y)$ transverse to it; $E_A \equiv E_{\mathbf k_A} = \sqrt{\mathbf k_A^2 + m_A^2}$ inside integrals and $E_A = E_{\mathbf p_A}$ in final formulas; $\mathbf v = \mathbf k/E$ is the velocity; barred momenta $\bar{\mathbf k}_A$, $\bar{\mathbf k}_B$ label the second, complex-conjugated copy of an amplitude.
 
 
 ## The cross section: a universal event rate
 
-> [!definition] Definition §C6b.2.1: The Cross Section as a Universal Event Rate
+> [!definition] Definition §C6b.4.1: The Cross Section as a Universal Event Rate
 > The observable of a scattering experiment is an event rate. The **cross section** $\sigma$ is a universal event rate: the rate with the factors of the experimental set-up divided out, independent of the set-up. For a beam of particles $B$ with flux $j_B$ (particles per unit area per unit time) on a target of $N_A$ particles $A$, the number of events in a time $t$ is
 >
 > $$
@@ -29,9 +29,9 @@ What an experiment observes is an event rate, and the cross section is that rate
 >
 > *Source: PHY 513 Lecture 15, slide 8 ("Observable in scattering experiment: event rate. Cross-section $= \sigma$: is a universal event rate. It is independent of experimental set-up."), and transcript ("how many clicks do you get per time … I mean divided by that … the cross section is that universal event rate") · the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)") · Yu §6.5.2, eq. (6.308) · PS §4.5, eqs. (4.59)–(4.61)*
 
-^def-c6b-2-1
+^def-c6b-4-1
 
-> [!definition] Definition §C6b.2.2: The Classical Differential Cross Section
+> [!definition] Definition §C6b.4.2: The Classical Differential Cross Section
 > In classical, non-relativistic mechanics a particle aimed at the target with impact parameter $\mathbf b$ (its transverse offset from a head-on hit, an area element $d^2b$ in **impact-parameter space**) leaves in a definite direction. The differential cross section is the area giving scattering into $d\Omega$:
 >
 > $$
@@ -42,7 +42,7 @@ What an experiment observes is an event rate, and the cross section is that rate
 >
 > *Source: PHY 513 Lecture 15, slide 8 ("Definition in classical, non-relativistic mechanics: $\frac{d\sigma}{d\Omega}$ = area giving scattering into $d\Omega = \frac{d^2b}{d\Omega}$. $d^2b$ is an area in impact parameter space."), and transcript ("The cross section is literally what kind of area should you hit … if you want it out in this final angle") · the user's PHY 513 notes, Ch. 15 §15.2, eq. (classicalxsec)*
 
-^def-c6b-2-2
+^def-c6b-4-2
 
 The user's notes check the definition on the hard sphere, the example worked in Classical Mechanics:
 
@@ -56,13 +56,13 @@ The user's notes check the definition on the hard sphere, the example worked in 
 >
 > *Source: PHY 513 Lecture 15, slide 8 ("Goal: quantum, relativistic formula for $\frac{d\sigma}{d\Omega}$"), and transcript*
 
-^rem-c6b-2-1
+^rem-c6b-4-1
 
 ## Wave packets and the scattering probability
 
 "You're telling me these initial particles have [definite] momentum … What is their position then? There was this Heisenberg business." A momentum eigenstate is spread over all space and is not normalizable ([[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-1|§C2a.4, Caution: Plane-wave states are not normalizable]]); by "momentum $\mathbf p$" we mean "as close as I can get to momentum $\mathbf p$".
 
-> [!definition] Definition §C6b.2.3: Wave Packet
+> [!definition] Definition §C6b.4.3: Wave Packet
 > A smeared initial state: the **wave packet** peaked at $\mathbf k = \mathbf p$ is
 >
 > $$
@@ -73,10 +73,10 @@ The user's notes check the definition on the hard sphere, the example worked in 
 >
 > *Source: PHY 513 Lecture 15, slide 11 ("Smeared initial state: wave packet peaked at $\vec k = \vec p$ … Normalization $\int\frac{d^3k}{(2\pi)^3}|\phi(\vec k)|^2 = 1$"), and transcript ("I'm going to take my energy normalizations and make them part of this") · the user's PHY 513 notes, Ch. 15 §15.3, eq. (wavepacket) · PS §4.5, eqs. (4.65)–(4.66)*
 
-^def-c6b-2-3
+^def-c6b-4-3
 
-> [!theorem] Theorem §C6b.2.1: The Normalization Condition Is the Unit Norm
-> For the wave packet of [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-3|Def. §C6b.2.3]],
+> [!theorem] Theorem §C6b.4.2: The Normalization Condition Is the Unit Norm
+> For the wave packet of [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-3|Def. §C6b.4.3]],
 >
 > $$
 > \langle\phi_{\mathbf p}|\phi_{\mathbf p}\rangle = \int\frac{d^3k}{(2\pi)^3}\,|\phi(\mathbf k)|^2 ,
@@ -86,7 +86,7 @@ The user's notes check the definition on the hard sphere, the example worked in 
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.3 (the check after Definition "Wave packets") · PS §4.5, eq. (4.66)*
 
-^thm-c6b-2-1
+^thm-c6b-4-2
 
 > [!derivation]- Derivation
 > **Step 1** (two copies). With a second integration variable $\mathbf k'$ for the bra,
@@ -112,38 +112,38 @@ The user's notes check the definition on the hard sphere, the example worked in 
 > **What the derivation shows.**
 > - With the course's profile $\phi$, probabilities are computed with the plain measure $\frac{d^3k}{(2\pi)^3}$; with the profile $g = \sqrt{2E}\phi$ of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-3|Def. §C2a.4.3]] the same norm reads $\int\frac{d^3k}{(2\pi)^32E_{\mathbf k}}|g|^2$.
 
-^der-c6b-2-1
+^der-c6b-4-2
 
 *Uses:* [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]]
 
 "Standard scattering: two particle initial state." Not a stationary situation: particle $A$ comes in along the $z$-axis, particle $B$ along a parallel line displaced transversely.
 
-> [!definition] Definition §C6b.2.4: The Two-Packet Initial State
+> [!definition] Definition §C6b.4.4: The Two-Packet Initial State
 > With $A$ at impact parameter $\mathbf 0$ and $B$ shifted transversely by the **impact parameter** $\mathbf b \perp \hat{\mathbf z}$ relative to $A$, the initial state is
 >
 > $$
 > |\phi_A\phi_B\rangle_{\rm in} = \int\frac{d^3k_A}{(2\pi)^3}\frac{d^3k_B}{(2\pi)^3}\;e^{-i\mathbf b\cdot\mathbf k_B}\;\frac{\phi_A(\mathbf k_A)}{\sqrt{2E_A}}\,\frac{\phi_B(\mathbf k_B)}{\sqrt{2E_B}}\;|\mathbf k_A\mathbf k_B\rangle_{\rm in} ,
 > $$
 >
-> with profiles $\phi_A$ peaked at $\mathbf p_A$ and $\phi_B$ peaked at $\mathbf p_B$, each normalized as in [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-3|Def. §C6b.2.3]].
+> with profiles $\phi_A$ peaked at $\mathbf p_A$ and $\phi_B$ peaked at $\mathbf p_B$, each normalized as in [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-3|Def. §C6b.4.3]].
 >
 > *Source: PHY 513 Lecture 15, slide 11 ("Standard scattering: two particle initial state. B shifted transverse by $\vec b$ relative to A (which is at $\vec 0$)"; formula corrected, Caution below), and transcript ("A has impact parameter zero, and B is impact parameter $b$") · the user's PHY 513 notes, Ch. 15 §15.3, eq. (twopacket) · PS §4.5, eq. (4.68)*
 
-^def-c6b-2-4
+^def-c6b-4-4
 
 > [!caution] Caution: A slip on slide 11
 > Slide 11 writes the $B$ factor as $\phi(\vec k_B)/\sqrt{2E_A}$. It is $\phi_B(\mathbf k_B)/\sqrt{2E_B}$: each packet carries its own energy, and the final formula has $2E_A\,2E_B$, not $(2E_A)^2$ (slides 13 and 16 have it right). The slide also uses one profile $\phi$ for both particles; $A$ and $B$ may have different profiles.
 >
 > *Source: PHY 513 Lecture 15, slide 11 (page image) · the user's PHY 513 notes, Ch. 15 §15.3, Caution "A slip on the wave-packet slide" · PS §4.5, eq. (4.68)*
 
-^cau-c6b-2-1
+^cau-c6b-4-1
 
-> [!theorem] Theorem §C6b.2.2: The Phase Displaces the Packet by b
+> [!theorem] Theorem §C6b.4.3: The Phase Displaces the Packet by b
 > Multiplying a momentum profile by $e^{-i\mathbf b\cdot\mathbf k}$ translates the packet by $+\mathbf b$ in space: if $\psi(\mathbf x) = \int\frac{d^3k}{(2\pi)^3}\,\phi(\mathbf k)\,e^{i\mathbf k\cdot\mathbf x}$, then the profile $e^{-i\mathbf b\cdot\mathbf k}\phi(\mathbf k)$ has position-space form $\psi(\mathbf x - \mathbf b)$. Equivalently, $e^{-i\mathbf b\cdot\hat{\mathbf P}}$ is the translation by $\mathbf b$.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.3 (paragraph "Why $e^{-i\vec b\cdot\vec k_B}$ shifts $B$ by $+\vec b$ (filled in)") · PS §4.5, p. 103*
 
-^thm-c6b-2-2
+^thm-c6b-4-3
 
 > [!derivation]- Derivation
 > **Step 1** (substitute and combine the exponents). With $e^{-i\mathbf b\cdot\mathbf k}e^{i\mathbf k\cdot\mathbf x} = e^{i\mathbf k\cdot(\mathbf x - \mathbf b)}$,
@@ -165,16 +165,16 @@ The user's notes check the definition on the hard sphere, the example worked in 
 > multiplying the profile by the phase is acting with $e^{-i\mathbf b\cdot\hat{\mathbf P}}$, the translation operator with the sign of [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]].
 >
 > **What the derivation shows.**
-> - Since $\mathbf b \perp \hat{\mathbf z}$, $b^z = 0$, only $\mathbf k_B^\perp$ enters the phase: $\mathbf b\cdot\mathbf k_B = b^xk_B^x + b^yk_B^y + 0\cdot k_B^z = \mathbf b\cdot\mathbf k_B^\perp$. This is why the $\mathbf b$-integral of [[§C6b.3 Evaluating the Cross Section#^der-c6b-3-2|Derivation §C6b.3.2]], Step 1, constrains only the transverse momenta.
+> - Since $\mathbf b \perp \hat{\mathbf z}$, $b^z = 0$, only $\mathbf k_B^\perp$ enters the phase: $\mathbf b\cdot\mathbf k_B = b^xk_B^x + b^yk_B^y + 0\cdot k_B^z = \mathbf b\cdot\mathbf k_B^\perp$. This is why the $\mathbf b$-integral of [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-2|Derivation §C6b.5.2]], Step 1, constrains only the transverse momenta.
 
-^der-c6b-2-2
+^der-c6b-4-3
 
 *Uses:* [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]]
 
 ![[ph-qft-c6-13-2.svg]]
-*The initial state of Def. §C6b.2.4: packet $A$ moves along the $z$-axis, packet $B$ along a parallel line displaced by the impact parameter $\mathbf b$. Each packet is localized in space and therefore smeared in momentum around $\mathbf p_A$ or $\mathbf p_B$. Drawn in the centre-of-mass frame; nothing in the derivation requires it. Added figure, from the user's notes (Figure "wavepackets"); PS Fig. 4.2 draws many $B$ packets at different $\mathbf b$.*
+*The initial state of Def. §C6b.4.4: packet $A$ moves along the $z$-axis, packet $B$ along a parallel line displaced by the impact parameter $\mathbf b$. Each packet is localized in space and therefore smeared in momentum around $\mathbf p_A$ or $\mathbf p_B$. Drawn in the centre-of-mass frame; nothing in the derivation requires it. Added figure, from the user's notes (Figure "wavepackets"); PS Fig. 4.2 draws many $B$ packets at different $\mathbf b$.*
 
-> [!definition] Definition §C6b.2.5: The Scattering Probability at Fixed Impact Parameter
+> [!definition] Definition §C6b.4.5: The Scattering Probability at Fixed Impact Parameter
 > The probability of scattering into the final phase-space element $\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}$, for a particular impact parameter $\mathbf b$, is
 >
 > $$
@@ -183,11 +183,11 @@ The user's notes check the definition on the hard sphere, the example worked in 
 >
 > *Source: PHY 513 Lecture 15, slide 12 ("Probability of scattering into final phase space $\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}$ … This is for a particular impact parameter $\vec b$"), and transcript ("we take these guys and we kind of expand into linear superposition of possible out states. Coefficient … is some amplitude, and that one we square") · the user's PHY 513 notes, Ch. 15 §15.3, eq. (Pb) · PS §4.5, eq. (4.74)*
 
-^def-c6b-2-5
+^def-c6b-4-5
 
-The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]; [[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]] shows that the probabilities add up to one.
+The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]; [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-5|Theorem §C6b.5.5]] shows that the probabilities add up to one.
 
-> [!definition] Definition §C6b.2.6: The Cross Section from the Scattering Probability
+> [!definition] Definition §C6b.4.6: The Cross Section from the Scattering Probability
 > The (differential) cross section is the scattering probability integrated over all impact parameters:
 >
 > $$
@@ -196,20 +196,20 @@ The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure 
 >
 > *Source: PHY 513 Lecture 15, slide 12 ("Total probability: $\int\mathcal P(\vec b)\,d^2\vec b$. Very quantum: all $d^2b$ contribute to scatter into given $d\Omega$."), slide 13 (the expression is called $d\sigma$), and transcript ("the total probability is the integral over that") · the user's PHY 513 notes, Ch. 15 §15.3, Definition "The quantum cross section", eq. (sigmab) · PS §4.5, eq. (4.75)*
 
-^def-c6b-2-6
+^def-c6b-4-6
 
-> [!theorem] Theorem §C6b.2.3: The Quantum Cross Section Is the Event Rate per Unit Flux
-> Let the $B$ particles arrive at random transverse positions with density $n_B = j_Bt$ per unit area, constant over the range of $\mathbf b$ where $\mathcal P(\mathbf b) \ne 0$. Then the expected number of events per target particle in the final-state element of [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-5|Def. §C6b.2.5]] is
+> [!theorem] Theorem §C6b.4.4: The Quantum Cross Section Is the Event Rate per Unit Flux
+> Let the $B$ particles arrive at random transverse positions with density $n_B = j_Bt$ per unit area, constant over the range of $\mathbf b$ where $\mathcal P(\mathbf b) \ne 0$. Then the expected number of events per target particle in the final-state element of [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]] is
 >
 > $$
 > N_{\rm events} = n_B\int d^2b\;\mathcal P(\mathbf b) = d\sigma\;j_B\,t ,
 > $$
 >
-> [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-1|Def. §C6b.2.1]] with $N_A = 1$ and $d\sigma$ of [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-6|Def. §C6b.2.6]]. If $\mathcal P(\mathbf b) \in \{0, 1\}$ (classical trajectories), $d\sigma$ is the area of the set of impact parameters that end in $d\Omega$, [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-2|Def. §C6b.2.2]].
+> [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-1|Def. §C6b.4.1]] with $N_A = 1$ and $d\sigma$ of [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]. If $\mathcal P(\mathbf b) \in \{0, 1\}$ (classical trajectories), $d\sigma$ is the area of the set of impact parameters that end in $d\Omega$, [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-2|Def. §C6b.4.2]].
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.3 (paragraph "Why integrate over $\vec b$ (filled in)") · PS §4.5, p. 105 · PHY 513 Lecture 15, slide 12, and transcript*
 
-^thm-c6b-2-3
+^thm-c6b-4-4
 
 > [!derivation]- Derivation
 > **Step 1** (sum over the incident particles). Each $B$ particle $i$, at impact parameter $\mathbf b_i$, scatters into the element with probability $\mathcal P(\mathbf b_i)$; the expected number of events is the sum, and the expected number of $B$ particles in $d^2b$ is $n_B\,d^2b$:
@@ -220,7 +220,7 @@ The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure 
 >
 > $n_B$ taken out of the integral because it is constant where $\mathcal P \ne 0$.
 >
-> **Step 2** (insert the definitions). $\int d^2b\,\mathcal P(\mathbf b) = d\sigma$ ([[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-6|Def. §C6b.2.6]]) and $n_B = j_Bt$ (particles per area = flux × time):
+> **Step 2** (insert the definitions). $\int d^2b\,\mathcal P(\mathbf b) = d\sigma$ ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]) and $n_B = j_Bt$ (particles per area = flux × time):
 >
 > $$
 > N_{\rm events} = d\sigma\cdot j_B\,t = d\sigma\cdot N_A\cdot j_B\,t\big|_{N_A = 1} .
@@ -237,11 +237,11 @@ The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure 
 > **What the derivation shows.**
 > - Integrating over $\mathbf b$ is what turns a probability into an area. Quantum mechanically every $\mathbf b$ contributes with its weight $\mathcal P(\mathbf b) \in [0, 1]$; the lecture calls it "very quantum": "it's not a specific $d^2b$ that gives me into my particular final … angle. It's all of them. All of them with a certain probability."
 
-^der-c6b-2-3
+^der-c6b-4-4
 
-*Uses:* [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-1|Def. §C6b.2.1]], [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-2|Def. §C6b.2.2]], [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-5|Def. §C6b.2.5]], [[§C6b.2 Wave Packets and the Cross Section#^def-c6b-2-6|Def. §C6b.2.6]]
+*Uses:* [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-1|Def. §C6b.4.1]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-2|Def. §C6b.4.2]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]
 
-> [!theorem] Lemma §C6b.2.4: Away from the Forward Direction Only iT̂ Contributes
+> [!theorem] Lemma §C6b.4.5: Away from the Forward Direction Only iT̂ Contributes
 > If the final particles differ from the initial ones in number or species, or have momenta $\{\mathbf p_1, \mathbf p_2\} \ne \{\mathbf k_A, \mathbf k_B\}$, then
 >
 > $$
@@ -250,7 +250,7 @@ The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure 
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.3 (paragraph "Which final states (filled in)") · PS §4.5, p. 105 ("we can drop the $\mathbf 1$")*
 
-^lem-c6b-2-4
+^lem-c6b-4-5
 
 > [!derivation]- Derivation
 > **Step 1** (split $\hat S$). By [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]] and [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]],
@@ -272,16 +272,16 @@ The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure 
 > **What the derivation shows.**
 > - "Assuming that we are not interested in the trivial case of forward scattering where no interaction takes place, we can drop the $\mathbf 1$" (PS p. 105): measured final states are always of this kind (away from the forward direction, or different particles).
 
-^der-c6b-2-4
+^der-c6b-4-5
 
 *Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]
 
 > [!caution] Caution: "Total probability" is an area
-> Slide 12 calls $\int\mathcal P(\mathbf b)\,d^2b$ the "total probability"; slide 13 starts the computation of the same expression under the name $d\sigma$. $\mathcal P(\mathbf b)$ is a probability, but its integral over the plane of impact parameters has the dimension of an area: it is the probability summed over impact parameters at unit density, the cross section, not a probability ([[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]]). The user's notes and PS (4.75) call it the cross section.
+> Slide 12 calls $\int\mathcal P(\mathbf b)\,d^2b$ the "total probability"; slide 13 starts the computation of the same expression under the name $d\sigma$. $\mathcal P(\mathbf b)$ is a probability, but its integral over the plane of impact parameters has the dimension of an area: it is the probability summed over impact parameters at unit density, the cross section, not a probability ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-3|Theorem §C6b.5.3]]). The user's notes and PS (4.75) call it the cross section.
 >
 > *Source: PHY 513 Lecture 15, slides 12–13 (page images) · PS §4.5, p. 105, eq. (4.75)*
 
-^cau-c6b-2-2
+^cau-c6b-4-2
 
 > [!remark]- Connections
 > - The quantum cross section keeps the classical number, an area, and changes its meaning from a count of trajectories to an integral of probabilities over impact parameters; quantum mechanics made the same step with a probability current — [[§B4.2 Scattering Cross-Sections and Rutherford Scattering#^def-b4-2-1|CM Def. §B4.2.1]], [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^def-c10-1-1|QM Def. §C10.1.1]].

@@ -172,6 +172,10 @@ If limit (1) exists, the symbol $z \to z_0$ means that $z$ is allowed to approac
 
 ^ex-15-2
 
+![[m342-15-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Example §15.2 in polar form: for $z = re^{i\theta}$, $z/\bar z = e^{2i\theta}$ depends only on the direction. The point $z$ (red, left) runs into $0$ along the rays $\theta = 0$, $\pi/2$, $\pi/4$, $155^\circ$ and $-30^\circ$ (the last two chosen for the picture), and the value $z/\bar z$ (right) sits still on the unit circle during each approach: $1$ along the real axis and $-1$ along the imaginary axis, as in the example, then $i$, and so on. Each ray gives a different limit, so $\lim_{z\to0} z/\bar z$ does not exist (Corollary §15.2). At the end $|z| = 0.05$ is kept fixed and $\theta$ turns through $\pi$: the value runs once around the whole circle, so every value of modulus $1$ is taken in every deleted neighbourhood of $0$.
+
 > [!example] Example §15.3: Two Directions Can Agree Without a Limit
 > Show that
 >

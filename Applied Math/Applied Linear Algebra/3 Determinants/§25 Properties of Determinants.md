@@ -218,6 +218,10 @@ Suppose a square matrix $A$ has been reduced to an echelon form $U$ using only r
 
 *Uses:* [[§25 Properties of Determinants#^prop-25-2|§25.2]]
 
+![[ladr-9.61-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 9.61). Theorem §25.3 seen through areas: the columns of a $2 \times 2$ matrix move along a straight path from a matrix with $\det = 2$ to one with $\det = -2$, and the right panel plots $\det$. The parallelogram of the columns thins out. Halfway it is a segment, where the columns are dependent, $\det = 0$ and the matrix is not invertible. After that it opens again with the opposite orientation (red). So $\det A \ne 0$ exactly when the columns span a genuine parallelogram, which is when $A$ is invertible. That the area is $|\det A|$ is Theorem §28.2.
+
 > [!remark]- Connections
 > - Rigorous treatment: [[§37 Determinants#^ladr-9-50|LADR 9.50]], for operators on any finite-dimensional space, proved from multiplicativity ($1 = \det(TT^{-1})$) and, for the converse, from the fact that a nonzero alternating $n$-form does not vanish on a basis ([[§36 Alternating Multilinear Forms#^ladr-9-39|LADR 9.39]]), with no row reduction.
 > - See also: the determinant test in differential equations, where the determinant is the Wronskian. For $y'' + py' + qy = 0$, two solutions can be combined to meet every pair of initial conditions at $t_0$ if and only if their Wronskian is nonzero there, [[§18 Solutions of Linear Homogeneous Equations; the Wronskian#^thm-18-3|331 Thm. §18.3]]; for $n$ solutions of $\mathbf{x}' = P(t)\mathbf{x}$ with nonzero Wronskian, every solution is a unique combination of them, [[§36 Basic Theory of Systems of First-Order Linear Equations#^thm-36-2|331 Thm. §36.2]].

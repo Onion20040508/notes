@@ -371,6 +371,10 @@ A line in space is determined by a point and a direction vector, a plane by a po
 ![[m233-84-1.svg]]
 *The distance from $P_1$ to the plane is the length of the shadow of $\mathbf{b} = \overrightarrow{P_0P_1}$ on the normal direction $\mathbf{n}$, where $P_0$ is any point of the plane. Moving $P_0$ within the plane changes $\mathbf{b}$ only by a vector perpendicular to $\mathbf{n}$, which leaves $\operatorname{comp}_{\mathbf{n}}\mathbf{b}$ unchanged.*
 
+![[m233-84-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The motion that the caption above describes, for Theorem §98.8, drawn in the same view. The point $P_0$ runs around a loop in the plane, and $\mathbf{b} = \overrightarrow{P_0P_1}$ (blue) swings with it: its length changes between about $2.4$ and $3.8$, and its angle $\theta$ with the normal $\mathbf{n}$ (red) between about $0^\circ$ and $51^\circ$. The part of $\mathbf{b}$ along the plane (dashed, from $P_0$ to the foot of the perpendicular) is perpendicular to $\mathbf{n}$, so only the vertical part counts. The readout $|\mathbf{b}|\cos\theta = \mathrm{comp}_{\mathbf{n}}\mathbf{b}$ stays at $2.40 = D$ the whole time. That is why $D$ does not depend on the choice of $P_0$. The plane is drawn horizontal and $P_1$ is $2.4$ above it, as in the figure; these numbers are chosen for the picture.
+
 > [!remark] Remark: Method — Distances Between Planes and Between Lines
 > 1. **Parallel planes:** choose any point on one plane (set two variables to $0$) and use [[§98 Equations of Lines and Planes#^thm-98-8|Theorem §98.8]] for its distance to the other.
 > 2. **A line parallel to a plane** (direction vector orthogonal to the normal, and a point of the line not on the plane): the distance from any point of the line to the plane.

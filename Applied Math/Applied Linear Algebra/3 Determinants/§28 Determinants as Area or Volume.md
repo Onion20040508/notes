@@ -38,6 +38,10 @@ Lengths, areas and volumes in $\mathbb{R}^2$ and $\mathbb{R}^3$ are taken in the
 ![[m235-22-1.svg]]
 *[[§28 Determinants as Area or Volume#^lem-28-1|Lemma §28.1]] in $\mathbb{R}^2$. Adding $c\,\mathbf{a}_1$ to $\mathbf{a}_2$ slides the top side of the parallelogram along the line $\mathbf{a}_2 + L$, parallel to the base $L$. The blue and the green parallelogram share the base $\mathbf{0}\mathbf{a}_1$ and the height (red), so they have equal area. Algebraically this is a column replacement, which does not change the determinant either.*
 
+![[ladr-9.57-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 9.57). Lemma §28.1 in motion. Axler adds a multiple of the second vector to the first, $\mathbf{v}_1 + c\mathbf{v}_2$; in Lay's notation this is $\mathbf{a}_2 + c\,\mathbf{a}_1$ with the roles of the two columns swapped. As $c$ runs from $0$ to $1.2$, down to $-0.8$ and back, the moving vector (orange) slides the top edge along the dotted line parallel to the base. Base and height stay the same, so the area $2.40$ never changes. This is the column replacement that the proof of Theorem §28.2 uses; the vectors are chosen for the picture.
+
 > [!theorem] Theorem §28.2: Determinants as Area or Volume
 > If $A$ is a $2 \times 2$ matrix, the area of the parallelogram determined by the columns of $A$ is $|\det A|$. If $A$ is a $3 \times 3$ matrix, the volume of the parallelepiped determined by the columns of $A$ is $|\det A|$.
 >
@@ -59,6 +63,10 @@ Lengths, areas and volumes in $\mathbb{R}^2$ and $\mathbb{R}^3$ are taken in the
 ^pf-28-2
 
 *Uses:* [[§28 Determinants as Area or Volume#^lem-28-1|§28.1]], [[§25 Properties of Determinants#^cor-25-5|§25.5]], [[§26 Transposes, Products, and Linearity of Determinants#^cor-26-2|§26.2]], [[§24 Introduction to Determinants#^thm-24-2|§24.2]]
+
+![[m235-22-a1.gif|400]]
+
+*(Not from the book; animation added, vault only.)* The $2 \times 2$ case of the proof of Theorem §28.2, run on the matrix $A = \begin{bmatrix} 2 & 6 \\ 5 & 1 \end{bmatrix}$ of Example §28.1(a), with columns $\mathbf{a}_1 = (2, 5)$ (red) and $\mathbf{a}_2 = (6, 1)$ (green). First the column replacement $\mathbf{a}_2 \leftarrow \mathbf{a}_2 - c\,\mathbf{a}_1$ for $c$ from $0$ to $3$: the tip of $\mathbf{a}_2$ slides along the dashed line through $\mathbf{a}_2$ parallel to $\mathbf{a}_1$ (Lemma §28.1) and ends at $(0, -14)$. Then $\mathbf{a}_1 \leftarrow \mathbf{a}_1 + c\,\mathbf{a}_2$ for $c$ from $0$ to $\frac{5}{14}$: the tip of $\mathbf{a}_1$ slides down the dashed vertical line to $(2, 0)$. The parallelogram ends as the $2 \times 14$ rectangle of the diagonal matrix $\begin{bmatrix} 2 & 0 \\ 0 & -14 \end{bmatrix}$. Throughout, the readout stays at $\det = -28$ and area $28 = |\det A|$: neither operation changes the determinant (Corollary §26.2) or the area (same base, same height).
 
 > [!remark]- Connections
 > - In Calculus the same facts come from the cross product: area $= |\mathbf{a} \times \mathbf{b}|$ ([[§96 The Cross Product#^cor-96-6|Calc Cor. §96.6]]) and volume $= |\mathbf{a} \cdot (\mathbf{b} \times \mathbf{c})| = |\det|$ ([[§97 Triple Products and Torque#^thm-97-2|Calc Thm. §97.2]]); the lecture writes $\det[\mathbf{v}_1 \ \mathbf{v}_2 \ \mathbf{v}_3] = (\mathbf{v}_1 \times \mathbf{v}_2) \cdot \mathbf{v}_3$.
@@ -177,3 +185,7 @@ For a linear transformation $T$ and a set $S$ in its domain, $T(S)$ denotes the 
 
 ![[m235-22-2.svg]]
 *[[§28 Determinants as Area or Volume#^ex-28-2|Example §28.2]](a). The parallelogram $S$ spanned by $\mathbf{b}_1, \mathbf{b}_2$ goes to the parallelogram $T(S)$ spanned by $A\mathbf{b}_1, A\mathbf{b}_2$, the columns of $AB$. Its area is $|\det AB| = |\det A|\,|\det B| = 2 \cdot 14$.*
+
+![[m452-15-a8.gif|440]]
+
+*(Not from the book; animation added, vault only.)* Reused from Multivariable Analysis (§25, change of variables). Theorem §28.3 and Theorem §28.4 in one picture: the unit square and a disk (orange) under the matrices $(1 - t)I + tA$, $A$ with rows $(1, 1.6)$ and $(1.2, 0.4)$, for $t$ from $0$ to $1$ and back. The images of $\mathbf{e}_1$ (blue) and $\mathbf{e}_2$ (red) span the image parallelogram. Both areas, that of the square and that of the disk, are multiplied by the same factor $|\det|$ at every moment, as (5) says for parallelograms and Theorem §28.4 for any region of finite area. At $t \approx 0.58$ the determinant passes through $0$ and the square collapses to a segment. After that it is negative: the parallelogram turns red and the order of the two image vectors is reversed, which $|\det|$ does not see. The matrix is chosen for the picture; Example §28.2(a) has $\det A = 2$.

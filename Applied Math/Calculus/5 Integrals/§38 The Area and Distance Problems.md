@@ -61,6 +61,10 @@ For regions with straight sides, area is easy: a rectangle has area length times
 ![[m233-34-1.svg]]
 *The parabola with $n = 8$: the left-endpoint rectangles (blue) lie under the curve and the right-endpoint rectangles (blue plus red) cover it, so $L_8 < A < R_8$. Slid sideways, the red excess pieces stack into one column of width $\frac18$ and height $f(1) - f(0) = 1$. In general $R_n - L_n = \frac1n$, so the two estimates squeeze down on $A$ as $n \to \infty$.*
 
+![[m451-33-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The sliding argument of the figure above in motion, reused from MATH 451 (Single Variable Analysis), where it proves that monotone functions are integrable. The interval $[a, b] = [0.2, 3.2]$ is cut into $n$ strips of width $\Delta x = \frac{b - a}{n}$; the left-endpoint rectangles are shaded blue, and the red box on top of the $i$th one reaches from $f(x_{i-1})$ up to $f(x_i)$, so blue plus red is the right-endpoint rectangle. The red boxes slide sideways into one column: since $f$ is increasing they stack without overlap, from height $f(a)$ to $f(b)$, so $R_n - L_n = \big(f(b) - f(a)\big)\Delta x$, which the title gives as $1.117$ for $n = 5$ and $0.559$ for $n = 10$. The GIF writes $U$ and $L$ (upper and lower sums, which for an increasing function are $R_n$ and $L_n$) and uses not $y = x^2$ on $[0, 1]$ but an increasing function with a jump at $x = 1.7$, chosen in 451 to show that the jump does no harm; for the parabola of Examples §38.1 and §38.2 the same stacking gives $R_n - L_n = \frac1n\big(f(1) - f(0)\big) = \frac1n$.
+
 To compute the limit we need the sum of the first $n$ squares,
 
 $$
@@ -171,6 +175,10 @@ where $i$ is the index of summation, running from the value below $\Sigma$ to th
 > *Stewart: 5.1, Equations 3 and 4 and Note*
 
 ^thm-38-1
+
+![[m451-32-a2.gif|420]]
+
+*(Not from the book; animation added, vault only.)* Part 4 of Theorem §38.1 for the simplest case, reused from MATH 451 (Single Variable Analysis): $f(x) = x$ on $[0, 1]$, where the area $A = \frac12$ is a triangle, with $n = 1, \ldots, 10$ equal strips and then $n = 12$ up to $40$. The blue staircase is the lower sum, here $L_n = \frac12\big(1 - \frac1n\big)$, and the $n$ red squares of side $\frac1n$ along the diagonal are what the upper sum $R_n = \frac12\big(1 + \frac1n\big)$ adds to it (for an increasing $f$ the lower and upper sums are the left- and right-endpoint sums). Their total area is $R_n - L_n = \frac1n$, which tends to $0$, so $\frac12$ is the only number between all lower and all upper sums. This is the same gap $\frac1n$ as for the parabola in Example §38.2, but the GIF uses the line $y = x$, not $y = x^2$, and writes $U$, $L$ and $P_n$ (the partition into $n$ strips) as in 451.
 
 *Stewart omits the proof ("it can be proved"; "it can be shown"). It rests on the [[§19 Uniform Continuity#^def-19-1|uniform continuity]] of $f$ on $[a, b]$ ([[§19 Uniform Continuity#^thm-19-1|451 Thm. §19.1]]): see [[§32 The Definition of the Riemann Integral#^thm-32-7|451 Thm. §32.7]] for the existence of the limit, and [[§32 The Definition of the Riemann Integral#^thm-32-6|451 Thm. §32.6]] for the equivalence of the limit of sums with the upper/lower-sum description in part 4.*
 

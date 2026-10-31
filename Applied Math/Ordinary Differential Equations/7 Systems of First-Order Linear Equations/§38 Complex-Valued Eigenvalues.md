@@ -87,6 +87,10 @@ Let $\mathbf{A}$ be real. Solutions $\mathbf{x} = \boldsymbol{\xi}e^{rt}$ of $\m
 ![[m331-32-1.svg]]
 *Trajectories computed from the real solutions. (a) Spiral point of [[§38 Complex-Valued Eigenvalues#^ex-38-1|Example §38.1]]: $\mathbf{u}$ through $(1, 0)$ (red), $\mathbf{v}$ through $(0, 1)$ (green), and other combinations $c_1\mathbf{u} + c_2\mathbf{v}$ (blue), all spiraling clockwise into the origin; each circuit shrinks by the factor $e^{-\pi} \approx 0.04$. (b) Center of [[§38 Complex-Valued Eigenvalues#^ex-38-2|Example §38.2]](b), $\mathbf{A} = \begin{pmatrix} -4 & 5 \\ -5 & 4 \end{pmatrix}$ with eigenvalues $\pm 3i$: every trajectory is an ellipse traversed clockwise with period $2\pi/3$; the red one passes through $(1.5, 0)$.*
 
+![[m331-32-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The two portraits of the figure (grey) with a small disk of initial points carried by $\mathbf{x}(t) = e^{\mathbf{A}t}\mathbf{x}(0)$ for $0 \le t \le 2\pi$ (orange: one point to follow; the disks are chosen for the picture). Left, the spiral point of Example §38.1, $\mathbf{A} = \begin{pmatrix} -\frac12 & 1 \\ -1 & -\frac12 \end{pmatrix}$: the disk centred at $(2, 0)$ turns clockwise once around the origin and shrinks by the factor $e^{-t/2}$, to $e^{-\pi} \approx 0.04$ of its size after the full circuit; it stays a disk because $\mathbf{A}$ is $-\frac12$ times the identity plus a rotation. Right, the center of Example §38.2(b), $\mathbf{A} = \begin{pmatrix} -4 & 5 \\ -5 & 4 \end{pmatrix}$, eigenvalues $\pm 3i$: the disk centred at $(1.5, 0)$ runs clockwise around the ellipses (trail: the last part of the motion only). It is sheared into an ellipse on the way, but its area stays the same ($\operatorname{tr}\mathbf{A} = 0$), and it comes back to itself after every period $2\pi/3$, three times during the run, without ever approaching the origin.
+
 > [!theorem] Theorem §38.1: Conjugate Eigenvalues Have Conjugate Eigenvectors
 > Let $\mathbf{A}$ be real, and let $r_1 = \lambda + i\mu$ be an eigenvalue with eigenvector $\boldsymbol{\xi}^{(1)}$. Then $r_2 = \bar r_1 = \lambda - i\mu$ is an eigenvalue with eigenvector $\boldsymbol{\xi}^{(2)} = \overline{\boldsymbol{\xi}^{(1)}}$, and the corresponding solutions
 >
@@ -259,6 +263,10 @@ So the two complex solutions carry the same information, and either one yields t
 
 ^rem-38-2
 
+![[m331-32-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* A point (red) goes once around a loop in the plane of $(\operatorname{tr}\mathbf{A}, \det\mathbf{A})$, and the right panel shows the phase portrait of $\mathbf{x}' = \mathbf{A}\mathbf{x}$ for a matrix with that trace and determinant, with its type and eigenvalues $r = \frac12(\operatorname{tr}\mathbf{A} \pm \sqrt{(\operatorname{tr}\mathbf{A})^2 - 4\det\mathbf{A}})$ above it. The loop starts at a saddle ($\det < 0$). It crosses $\det = 0$ at $\operatorname{tr} = -3$, where one eigenvalue is $0$ and the portrait has a whole line of equilibria (red), and becomes a stable node. It then crosses the parabola $\operatorname{tr}^2 = 4\det$ (equal eigenvalues $-\frac32$, an improper node) into the spiral sinks, and crosses $\operatorname{tr} = 0$ (eigenvalues $\pm 1.79i$, a center) into the spiral sources. On the way back it crosses the parabola again (equal eigenvalues $\frac32$) into the unstable nodes, and crosses $\det = 0$ back into the saddles. These are the three transitions of the remark, and the animation pauses at each crossing. The matrices are chosen for the picture: $\mathbf{A} = \mathbf{T}\begin{pmatrix} \operatorname{tr}/2 & 1 \\ \operatorname{tr}^2/4 - \det & \operatorname{tr}/2 \end{pmatrix}\mathbf{T}^{-1}$ with the fixed $\mathbf{T} = \begin{pmatrix} 1 & 0.35 \\ -0.25 & 1 \end{pmatrix}$, which has the required trace and determinant and depends continuously on them.
+
 > [!example] Example §38.2: Classifying Complex-Eigenvalue Systems
 > For each matrix, find the eigenvalues and an eigenvector, the type of the origin for $\mathbf{Y}' = \mathbf{A}\mathbf{Y}$, and (in (c)) the general solution.
 >
@@ -360,6 +368,10 @@ So the two complex solutions carry the same information, and either one yields t
 ![[m331-32-2.svg]]
 *The phase portraits of system (19) as $\alpha$ increases through the bifurcation values $-4$, $0$, $4$, computed from the exact solutions. At $\alpha = \pm 5$ the eigenvalues are $-1, -4$ and $4, 1$ (red: the slow eigenvector line, along which trajectories meet the origin; green: the fast one). At $\alpha = \pm 2$ they are $\pm 1 \pm i\sqrt3$, and at $\alpha = 0$, $\pm 2i$: the matrix is then a rotation and the trajectories are circles. All rotation is clockwise.*
 
+![[m331-32-a3.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The parameter $\alpha$ of system (19), $\mathbf{x}' = \begin{pmatrix} \alpha & 2 \\ -2 & 0 \end{pmatrix}\mathbf{x}$, runs from $-5$ to $5$. Left: the phase portrait computed from the exact solutions $e^{\mathbf{A}t}\mathbf{x}_0$, through nine fixed starting points, with arrowheads giving the direction of motion. Right: the eigenvalues $r = (\alpha \pm \sqrt{\alpha^2 - 16})/2$ in the complex plane, with the path they have travelled so far. For $\alpha < -4$ they are real and negative: a stable node, whose trajectories enter the origin tangent to the red line of the slow eigenvalue (green: the fast one). At $\alpha = -4$ the two eigenvalues collide at $-2$, leaving a single eigenvector line $x_2 = x_1$ (improper node). For $-4 < \alpha < 4$ they move around the circle $|r| = 2$, since their product is $\det\mathbf{A} = 4$, and the trajectories spiral clockwise: inward for $\alpha < 0$, around closed circles at $\alpha = 0$ (eigenvalues $\pm 2i$, a center), outward for $\alpha > 0$. At $\alpha = 4$ the eigenvalues meet again at $2$ and split along the positive real axis, giving an unstable node ($r = 1, 4$ at $\alpha = 5$). The animation pauses at the bifurcation values $-4$, $0$, $4$ and at the five values of the figure.
+
 ## A Multiple Spring–Mass System
 
 Two masses $m_1$, $m_2$ connected by three springs with constants $k_1$, $k_2$, $k_3$ (the system of [[§33 Introduction to Systems of First-Order Linear Equations#^ex-33-1|Example §33.1]](a)) satisfy, without external forces,
@@ -420,3 +432,7 @@ With $y_1 = x_1$, $y_2 = x_2$, $y_3 = x_1'$, $y_4 = x_2'$ this becomes the first
 > *BDP: Example 7.6.3*
 
 ^ex-38-5
+
+![[m331-32-a4.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The two masses and three springs of Example §38.5 ($m_1 = 2$, $m_2 = \frac94$, $k_1 = 1$, $k_2 = 3$, $k_3 = \frac{15}{4}$) in motion, with the displacements $x_1 = y_1$ (blue) and $x_2 = y_2$ (red) traced below over $0 \le t \le 2\pi$; positive displacement is to the right, and the displacements are drawn at a reduced scale. First the fundamental mode $\mathbf{u}^{(1)}$ ($c_1 = 1$, the other $c_i = 0$): $x_1 = 3\cos t$, $x_2 = 2\cos t$, so the masses move together, the second two-thirds as far, with period $2\pi$. Next the mode $\mathbf{u}^{(2)}$ ($c_3 = 1$): $x_1 = 3\cos 2t$, $x_2 = -4\cos 2t$, so they always move in opposite directions, the second four-thirds as far, and complete two periods $\pi$ in the same time. Last the superposition $\mathbf{u}^{(1)} + \frac12\mathbf{u}^{(2)}$ (chosen for the picture), $x_1 = 3\cos t + \frac32\cos 2t$, $x_2 = 2\cos t - 2\cos 2t$: neither mass moves sinusoidally and the ratio $x_2/x_1$ keeps changing, but the motion is still periodic with period $2\pi$, as every solution (31) is.

@@ -7,11 +7,11 @@ section: C6b.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6a.11 The iε Limit and Vacuum Bubbles]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.2 Wave Packets and the Cross Section]] →
+← [[§C6a.11 The iε Limit and Vacuum Bubbles]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.4 Wave Packets and the Cross Section]] →
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.1 (Definition "The $S$-matrix", paragraphs "'Matrix' is a historical term", "The fundamental observable?", "Relation to Chapter 13 (filled in)", Definition "The invariant amplitude $\mathcal M$", Derivation "Three properties of $\mathcal M$ (filled in)", Principle "Dynamics versus kinematics") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slides 4–7, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 102–104, eqs. (4.70)–(4.73) · Yu Zhao-Huan, 量子场论讲义, §6.2, eqs. (6.122)–(6.127); §6.5, eqs. (6.272)–(6.275).*
 
-Lectures 13–14 built the Feynman rules for correlation functions $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\}|\Omega\rangle$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]). "It's completely the right idea. It's just that … that's not what you really want": nobody measures a correlation function. Lecture 15 asks what we do want to compute, and the answer of particle physics is the cross section and the decay rate. This section sets up the object they are made from. Particles that are widely separated early evolve into particles that are widely separated late; the linear map between the two is the $S$-matrix ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]). Removing the part in which nothing happens and the overall delta function of four-momentum conservation leaves one function, the invariant amplitude $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]), the only place where the dynamics enters. The next sections turn $\mathcal M$ into cross sections ([[§C6b.2 Wave Packets and the Cross Section|§C6b.2]], [[§C6b.3 Evaluating the Cross Section|§C6b.3]], [[§C6b.4 Lorentz Invariance and Two-Body Phase Space|§C6b.4]]) and decay rates ([[§C6b.5 Decay Rates and Widths|§C6b.5]]), and [[§C6b.6 Amplitudes from Correlation Functions|§C6b.6]] states how $\mathcal M$ is read off from the correlation functions of Lecture 14. Yu treats the $S$-matrix in §6.2, eqs. (6.122)–(6.127), defining it as the interaction-picture evolution operator $U(+\infty, -\infty)$ between asymptotic states, and the split $S = \mathbb I + iT$ with the invariant amplitude in §6.5, eqs. (6.272)–(6.275), in the setting of the Dyson series of the $S$-operator.
+Lectures 13–14 built the Feynman rules for correlation functions $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\}|\Omega\rangle$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]). "It's completely the right idea. It's just that … that's not what you really want": nobody measures a correlation function. Lecture 15 asks what we do want to compute, and the answer of particle physics is the cross section and the decay rate. This section sets up the object they are made from. Particles that are widely separated early evolve into particles that are widely separated late; the linear map between the two is the $S$-matrix ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]). Removing the part in which nothing happens and the overall delta function of four-momentum conservation leaves one function, the invariant amplitude $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]), the only place where the dynamics enters. The next sections turn $\mathcal M$ into cross sections ([[§C6b.4 Wave Packets and the Cross Section|§C6b.4]], [[§C6b.5 Evaluating the Cross Section|§C6b.5]], [[§C6b.6 Lorentz Invariance and Two-Body Phase Space|§C6b.6]]) and decay rates ([[§C6b.7 Decay Rates and Widths|§C6b.7]]), and [[§C6b.8 Amplitudes from Correlation Functions|§C6b.8]] states how $\mathcal M$ is read off from the correlation functions of Lecture 14. Yu treats the $S$-matrix in §6.2, eqs. (6.122)–(6.127), defining it as the interaction-picture evolution operator $U(+\infty, -\infty)$ between asymptotic states, and the split $S = \mathbb I + iT$ with the invariant amplitude in §6.5, eqs. (6.272)–(6.275), in the setting of the Dyson series of the $S$-operator.
 
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$; states normalized relativistically, $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); the $S$-matrix and the $T$-matrix are operators and carry hats, $\hat S$, $\hat T$ (the slides write $\mathcal S$, $\mathcal T$: Caution: Names for the S-matrix, the T-matrix and the amplitude, below); $\mathcal M$ is a number.
 
@@ -184,7 +184,7 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 >
 > **What the derivation shows.**
 > - The delta function is forced by symmetry alone, "before we even discuss what theory we're talking about"; only its coefficient knows the dynamics.
-> - The assumption that $C$ is smooth excludes further delta functions, which come from parts of the process in which some particles do not interact at all (disconnected pieces, [[§C6b.6 Amplitudes from Correlation Functions|§C6b.6]]).
+> - The assumption that $C$ is smooth excludes further delta functions, which come from parts of the process in which some particles do not interact at all (disconnected pieces, [[§C6b.8 Amplitudes from Correlation Functions|§C6b.8]]).
 
 ^der-c6b-1-2
 
@@ -204,7 +204,7 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 ^def-c6b-1-3
 
 > [!remark] Remark: What "dynamical" means
-> "By dynamical data, we mean things that depend on … the potentials. It's not something you can just get by energy conservation. It should depend on … what theory [we are talking] about." Everything else in a cross section or a decay rate, the $\mathbb 1$, the delta function, the normalization of the states, the phase space, is kinematics and is the same in every theory. So $\mathcal M$ "is kind of the proper matrix element that we actually really want", and the Feynman rules are rules for computing it ([[§C6b.6 Amplitudes from Correlation Functions|§C6b.6]]).
+> "By dynamical data, we mean things that depend on … the potentials. It's not something you can just get by energy conservation. It should depend on … what theory [we are talking] about." Everything else in a cross section or a decay rate, the $\mathbb 1$, the delta function, the normalization of the states, the phase space, is kinematics and is the same in every theory. So $\mathcal M$ "is kind of the proper matrix element that we actually really want", and the Feynman rules are rules for computing it ([[§C6b.8 Amplitudes from Correlation Functions|§C6b.8]]).
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.1*
 
@@ -247,7 +247,7 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 > $$
 >
 > **What the derivation shows.**
-> - The dimension of $\mathcal M$ is fixed by the number of external particles alone; for $N = 4$ the amplitude is dimensionless, so at lowest order in $\phi^4$ theory it can only be a number times $\lambda$ ([[§C6b.6 Amplitudes from Correlation Functions#^ex-c6b-6-1|Example §C6b.6.1]]).
+> - The dimension of $\mathcal M$ is fixed by the number of external particles alone; for $N = 4$ the amplitude is dimensionless, so at lowest order in $\phi^4$ theory it can only be a number times $\lambda$ ([[§C6b.8 Amplitudes from Correlation Functions#^ex-c6b-8-1|Example §C6b.8.1]]).
 
 ^der-c6b-1-3
 
@@ -374,10 +374,10 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 > From this section on, four different objects are called $S$:
 > 1. the **$S$-matrix** $\hat S$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]), an operator, hatted here;
 > 2. the **symmetry factor** $S = |\operatorname{Aut}|$ of a Feynman diagram ([[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]), a positive integer from overcounted contractions;
-> 3. the **identical-particle factor** $S_{\rm id} = \prod_kn_k!$ for $n_k$ identical particles of species $k$ in a final state ([[§C6b.3 Evaluating the Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]), a positive integer from overcounted final states; the user's notes write $S$, Yu $\mathcal S$ (eq. (6.305));
+> 3. the **identical-particle factor** $S_{\rm id} = \prod_kn_k!$ for $n_k$ identical particles of species $k$ in a final state ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]]), a positive integer from overcounted final states; the user's notes write $S$, Yu $\mathcal S$ (eq. (6.305));
 > 4. the **scalar bilinear** $\mathsf S = \bar\psi\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]), sans-serif.
 >
-> The action $S = \int d^4x\,\mathcal L$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-2|Def. §C1b.2.2]]) is a fifth; the lecture: "probably with a fancy calligraphic $S$ … not to be confused with action". Factors 2 and 3 can occur in the same calculation ([[§C6b.6 Amplitudes from Correlation Functions#^ex-c6b-6-2|Example §C6b.6.2]]: $S = 1$ for the diagram, $S_{\rm id} = 2$ for the final state).
+> The action $S = \int d^4x\,\mathcal L$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-2|Def. §C1b.2.2]]) is a fifth; the lecture: "probably with a fancy calligraphic $S$ … not to be confused with action". Factors 2 and 3 can occur in the same calculation ([[§C6b.8 Amplitudes from Correlation Functions#^ex-c6b-8-2|Example §C6b.8.2]]: $S = 1$ for the diagram, $S_{\rm id} = 2$ for the final state).
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.4 (paragraph "Identical particles (filled in)": "This $S$ is unrelated to the $S$-matrix and to the symmetry factor of a diagram"), PART 2 (e) (notation table) · Yu §6.5, eq. (6.305) · [[§C6a.8 Position-Space Feynman Rules#^cau-c6a-8-1|§C6a.8, Caution: Three S's]]*
 
@@ -403,7 +403,7 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 
 > [!remark]- Connections
 > - In quantum mechanics the same $S$, $T$ split runs with only energy conserved, and the golden rule is its first order — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-1|QM Theorem §C10.1.1]], [[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]].
-> - The problem of relating interacting asymptotic states to free states is the particle version of the vacuum projection of Lecture 13 — [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]; its solution, the LSZ formula, connects $\mathcal M$ to the correlation functions — [[§C6b.6 Amplitudes from Correlation Functions|§C6b.6]], QFT C10 (planned).
+> - The problem of relating interacting asymptotic states to free states is the particle version of the vacuum projection of Lecture 13 — [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]; its solution, the LSZ formula, connects $\mathcal M$ to the correlation functions — [[§C6b.8 Amplitudes from Correlation Functions|§C6b.8]], QFT C10 (planned).
 > - The delta function of four-momentum conservation is the same translation invariance that gives momentum conservation at every vertex of a diagram — [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]].
 > - Lorentz invariance of $\mathcal M$ rests on the relativistic normalization chosen in Lecture 4 — [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]].
 > - Correlation functions and the $S$-matrix are the two observables of the two points of view of Remark: The fundamental observable? — [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]].

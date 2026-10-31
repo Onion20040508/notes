@@ -31,6 +31,10 @@ The length of a curve is defined the way the circumference of a circle is: inscr
 ![[m233-52-1.svg]]
 *A polygonal path $P_0 P_1 \cdots P_n$ (red) inscribed in the curve $y = f(x)$ (blue), with vertices above equally spaced points $x_i$. The length of a polygon is a sum of distances. As $n$ grows, the chords hug the curve more closely, and their total length tends to the length of the curve.*
 
+![[m233-52-a1.gif|540]]
+
+*(Not from the book; animation added, vault only.)* Definition §60.1 carried out for the arc of Example §60.1, $y = x^{3/2}$ from $(1, 1)$ to $(4, 8)$. The inscribed polygon (red) starts as the single chord, of length $L_1 = \sqrt{58} \approx 7.6158$; at each step every side is halved, the new vertices rising from the chord midpoints onto the curve (blue), for $n = 1, 2, 4, \ldots, 64$. The readout $L_n$ climbs to $L = \frac{1}{27}(80\sqrt{10} - 13\sqrt{13}) \approx 7.633705$ and is always below it (a chord is never longer than the arc it spans): $L_{64} = 7.633699$. The log plot on the right shows the gap $L - L_n$, from $0.018$ at $n = 1$ to $0.000006$ at $n = 64$; doubling $n$ divides it by $3.2$, $3.7$, $3.9$, then by almost exactly $4$.
+
 > [!remark] Remark: The Idea Behind the Definition
 > The length of a polygon is the sum of the lengths of its segments, each found from the distance formula. The circumference of a circle is the limit of the perimeters of inscribed regular polygons as the number of sides grows. [[§60 Arc Length#^def-60-1|Definition §60.1]] applies the same idea to any curve. It follows the pattern of the definitions of area ([[§38 The Area and Distance Problems#^def-38-1|Definition §38.1]]) and volume ([[§46 Volumes#^def-46-2|Definition §46.2]]): divide the object into many small parts, approximate each part by something whose size we know, add, and take the limit as $n \to \infty$.
 

@@ -302,6 +302,10 @@ The Divergence Theorem was proved only for simple solid regions, but it can be p
 
 *Uses:* [[§137 The Divergence Theorem#^thm-137-1|§137.1]], [[§132 Curl and Divergence#^def-132-3|Def. §132.3]]
 
+![[m452-11-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The planar analogue of Theorem §137.3, reused from MATH 452 (Multivariable Analysis); the same animation appears after Theorem §136.3. A test circle of radius $a$ (written $\varepsilon$ in the GIF) shrinks around $P_0 = (1, 0.6)$, from $a = 0.9$ to $a = 0.01$, and the views scale with it. In the left panel the outward flux of the plane field $\mathbf{F} = \frac13(x^3\,\mathbf{i} + y^3\,\mathbf{j})$ across the circle, divided by the area $\pi a^2$ of the disk it bounds, falls from $1.765$ through $1.399$ and $1.3605$ to $1.3601$, toward $\operatorname{div}\mathbf{F}(P_0) = x^2 + y^2 = 1.36$. By the normal form of Green's Theorem (Theorem §132.5) the quotient is the average of $\operatorname{div}\mathbf{F}$ over the disk, $1.36 + a^2/2$. This is (9) one dimension down: a circle and a disk in place of the sphere $S_a$ and the ball $B_a$, area in place of the volume $V(B_a)$. The right panel shows the corresponding limit for the curl, circulation per unit area of $\frac13(-y^3\,\mathbf{i} + x^3\,\mathbf{j})$, as in Theorem §136.3. The fields were chosen in 452 so that the divergence is not constant.
+
 > [!remark]- Connections
 > - The same characterization, "divergence is flux density", with the picture of a shrinking test ball: [[§13 The Three Differential Operators꞉ Gradient, Curl, Divergence|452 §13]]. Its physical form is the continuity equation (conservation of mass), [[§29 Conservation of Mass and Laplace's Equation#^thm-29-1|452 Thm. §29.1]].
 

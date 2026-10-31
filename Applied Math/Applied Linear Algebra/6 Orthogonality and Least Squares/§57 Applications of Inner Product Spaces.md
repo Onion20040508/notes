@@ -102,6 +102,10 @@ Three applications show what the inner products of [[§56 Inner Product Spaces|�
 ![[m235-47-1.svg]]
 *[[§57 Applications of Inner Product Spaces#^ex-57-1|Example §57.1]]: the ordinary least-squares line $y = 4 - 0.1x$ (blue) and the weighted one $y = 4.3 + 0.2x$ (red). The weighted fit uses $w = 2$ for the three filled points and $w = 1$ for the two hollow, less reliable ones, so in the weighted SS(E) their squared residuals count $4$ times less.*
 
+![[m235-47-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* The weighted least-squares line of Example §57.1 as the weight changes. The three filled points keep weight $2$, and the weight $w$ of the two hollow points (drawn smaller as $w$ drops) runs from $2$ to $1$; for each $w$ the red line solves the weighted normal equations $(WX)^TWX\boldsymbol\beta = (WX)^TW\mathbf{y}$ with $W = \operatorname{diag}(2, 2, 2, w, w)$, and the thin red segments are the residuals. At $w = 2$ all weights are equal and the line is the ordinary least-squares line $y = 4 - 0.1x$ (dashed blue). As the two low right-hand points count less, the line tilts up on the right, ending at $w = 1$ at the example's $y = \frac{1169}{269} + \frac{55}{269}x \approx 4.3 + 0.20x$. The intermediate weights are chosen for the picture.
+
 ## Trend Analysis of Data
 
 > [!definition] Definition §57.2: Trend Function and Trend Coefficients
@@ -291,6 +295,10 @@ Continuous functions, such as a sound wave, an electric signal or the motion of 
 
 ![[m235-47-2.svg]]
 *[[§57 Applications of Inner Product Spaces#^ex-57-3|Example §57.3]]: $f(t) = t$ (black) and its third-order (left) and fourth-order (right) Fourier approximations (blue). The approximations oscillate around the line and are pulled toward $\pi$ at both ends of $[0, 2\pi]$, where the periodic extension of $f$ jumps from $2\pi$ back to $0$; the error is small in the mean-square sense, not at every point.*
+
+![[m235-47-a2.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The Fourier approximations of Example §57.3 for $n = 0, 1, \ldots, 12$: each step adds the term $-\frac2n\sin nt$ to $\pi - 2\sin t - \sin 2t - \cdots$ (blue), against $f(t) = t$ (black). The bars on the right are the mean square errors $\|f - \operatorname{proj}_W f\|$ for the inner product $\langle f, g\rangle = \int_0^{2\pi} f(t)g(t)\,dt$; by orthogonality they are $\sqrt{2\pi^3/3 - 4\pi\sum_{k \le n} 1/k^2}$, falling from $4.547$ ($n = 0$) to $1.002$ ($n = 12$) and tending to $0$, as Theorem §57.4 states (slowly, because $\sum 1/k^2$ converges to $\pi^2/6$ slowly). Convergence in the mean is not convergence at every point: every approximation equals $\pi$ at both ends (red dots), not $0$ and $2\pi$, and next to the ends the curves overshoot; the orange dot marks the dip below $0$ near $t = 0$, which gets deeper ($-0.32$ at $n = 12$) and narrower instead of going away. This overshoot (the Gibbs phenomenon, tending to about $-0.56$) is beyond the book.
 
 > [!definition] Definition §57.5: Mean Square Error
 > The norm $\|f - \operatorname{proj}_W f\|$ of the difference between $f$ and a Fourier approximation is the **mean square error** of the approximation (*mean*, because the norm is defined by an integral).

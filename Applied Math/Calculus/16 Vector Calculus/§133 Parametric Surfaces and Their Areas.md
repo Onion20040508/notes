@@ -249,6 +249,10 @@ Let $S$ be traced out by $\mathbf{r}(u, v) = x(u, v)\,\mathbf{i} + y(u, v)\,\mat
 
 ^ex-133-4
 
+![[m452-18-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* Part (a) of Example §133.4 as a construction, reused from MATH 452 (Multivariable Analysis): the parameter rectangle is made into the sphere in two steps. First it is rolled into a cylinder, which glues the edges $\theta = 0$ and $\theta = 2\pi$ (red) into one meridian; then the cylinder is pinched, which shrinks its top and bottom edges (orange) to the north and south poles. The grid lines of the rectangle become the grid curves of the text: lines of constant $\theta$ become the meridians, lines of constant $\phi$ the circles of constant latitude. (The camera zooms in as the surface rolls up.) One difference in convention: 452 measures $\varphi$ as latitude, from the equator, with $\varphi \in [-\frac\pi2, \frac\pi2]$, so its rectangle is $[0, 2\pi] \times [-\frac\pi2, \frac\pi2]$ and the pinched edges are $\varphi = \pm\frac\pi2$. Stewart's $\phi$ is the polar angle, measured from the positive $z$-axis, with $D = [0, \pi] \times [0, 2\pi]$; the two are related by $\phi = \frac\pi2 - \varphi$, so the edges that shrink to the poles are $\phi = 0$ (north) and $\phi = \pi$ (south). That these edges collapse to points is why $|\mathbf{r}_\phi \times \mathbf{r}_\theta| = a^2\sin\phi$ vanishes there.
+
 > [!theorem] Theorem §133.2: Surface Area of a Graph
 > For a surface $S$ with equation $z = f(x, y)$, $(x, y) \in D$, where $f$ has continuous partial derivatives,
 >

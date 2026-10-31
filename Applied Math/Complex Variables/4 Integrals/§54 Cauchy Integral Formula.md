@@ -78,6 +78,10 @@ The Cauchy integral formula expresses the value of an analytic function at any p
 ![[m342-54-1.svg]]
 *The proof. The integrand $f(z)/(z - z_0)$ is analytic in the shaded region between $C$ and the small circle $C_\rho$, so the two integrals are equal. On $C_\rho$, $f(z)$ is within $\varepsilon$ of $f(z_0)$ once $\rho$ is small; what remains is $f(z_0)\int_{C_\rho}dz/(z - z_0) = 2\pi i\,f(z_0)$.*
 
+![[m342-54-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The proof of Theorem §54.1, run on Example §54.2(a): $f(z) = e^{-z}$, $z_0 = \pi i/2$, $C$ the square $|x|, |y| \le 2$. First the square deforms into the circle $C_\rho$, $\rho = 0.38$, about $z_0$ (principle of deformation of paths), and its image under $f$ (right, with the view zooming in) shrinks from a large annular sector to a small loop around $f(z_0) = -i$. The readout $\frac1{2\pi i}\int f(z)\,dz/(z - z_0) = -i$, computed numerically, never changes. Then $\rho \to 0.02$: the image $f(C_\rho)$ collapses onto $f(z_0)$, and $\max_{C_\rho}|f(z) - f(z_0)|$ goes to $0$ (it plays the role of $\varepsilon$ in (4)). The mean of $f$ over each circle stays exactly $-i$, which is Gauss's mean value theorem (Theorem §59.1). The scale bar on the right shows the zoom.
+
 > [!remark]- Connections
 > - For a circle $C$ centered at $z_0$, formula (1) says that $f(z_0)$ is the average of $f$ over the circle: Gauss's mean value theorem, [[§59 Maximum Modulus Principle#^thm-59-1|§59.1]]. Its real part is the mean value property of harmonic functions, [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-2|341 Thm. §49.2]], and the Poisson integral formula [[§49 The Poisson Integral Formula and the Mean Value Property#^thm-49-1|341 Thm. §49.1]] is the corresponding statement that a harmonic function in a disk is determined by its boundary values.
 

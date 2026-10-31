@@ -17,6 +17,10 @@ The surface integral of a vector field, $\iint_S \mathbf{F} \cdot d\mathbf{S}$, 
 
 To define surface integrals of vector fields, nonorientable surfaces such as the **Möbius strip** must be ruled out. (Take a long rectangular strip of paper, give it a half-twist, and tape the short edges together. An ant crawling along the middle starting at a point $P$ ends up on the "other side" and then, continuing, back at $P$ without ever crossing an edge: the strip has only one side.)
 
+![[m233-113-a1.gif|560]]
+
+*(Not from the book; animation added, vault only.)* Why the Möbius strip has no orientation (Definition §135.1). A unit normal $\mathbf{n}$ (red) is moved continuously once around the centre circle of a Möbius strip (left) and of an ordinary band (right). Faint arrows mark the start and every $30^\circ$ on the way. On the band, $\mathbf{n}$ stays on the outside and comes back as the same vector it started as, so "outward" is a continuous choice of normal on the whole surface: the band is orientable. On the Möbius strip the half-twist turns the normal over gradually, and after one trip $\mathbf{n}$ comes back to the starting point as $-\mathbf{n}$, on the "other side", without crossing an edge, like the ant of the text. So no continuous choice of unit normal exists, and the strip cannot be oriented. The strip $\langle (1 + v\cos\frac u2)\cos u, (1 + v\cos\frac u2)\sin u, v\sin\frac u2 \rangle$, $|v| \le 0.42$, is chosen for the picture.
+
 > [!definition] Definition §135.1: Oriented Surface
 > Let $S$ be a surface that has a tangent plane at every point $(x, y, z)$ (except at any boundary point). There are two unit normal vectors $\mathbf{n}_1$ and $\mathbf{n}_2 = -\mathbf{n}_1$ at $(x, y, z)$. If it is possible to choose a unit normal vector $\mathbf{n}$ at every such point so that $\mathbf{n}$ varies continuously over $S$, then $S$ is called an **oriented surface**, and the choice of $\mathbf{n}$ provides $S$ with an **orientation**. Every orientable (two-sided) surface has two possible orientations.
 >

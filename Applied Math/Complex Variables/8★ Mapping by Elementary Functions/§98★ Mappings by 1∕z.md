@@ -155,6 +155,10 @@ This section proves the key geometric fact about $w = 1/z$: **it carries circles
 ![[m342-98-1.svg]]
 *Lines $x = c_1$ (blue) and $y = c_2$ (red) and their images under $w = 1/z$, the circles (6) and (7), all through $w = 0$, the image of $\infty$. Arrows show corresponding directions: upward along $x = \frac13$ is clockwise around the right-hand circle of radius $\frac32$; upward along $x = -\frac12$ is counterclockwise around the circle of radius $1$ on the left.*
 
+![[m342-98-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Theorem §98.3 (c) and (d) as a sweep, with the circles (6) and (7) of Example §98.1. A vertical line $x = c$ (blue) moves from $c = -2$ to $c = 2$. Its image under $w = 1/z$ is the circle through $0$ with centre $1/(2c)$ and radius $1/(2|c|)$ (readout): small near $0$ when the line is far away, growing as the line approaches the imaginary axis, which at $c = 0$ goes onto the imaginary axis itself (case (d)), and then reappearing from the other side, shrinking again. Then a horizontal line $y = c$ (red) does the same, with circles centred at $-i/(2c)$, below the $u$ axis for $c > 0$ and above it for $c < 0$. Every image circle passes through $w = 0 = T(\infty)$, the image of the point at infinity of the line. The arrows mark the direction of travel (upward, or to the right) and its image: clockwise around the circle for $c > 0$, counterclockwise for $c < 0$ in the vertical case, as in Example §98.1(a). The lines at $c = \pm\frac12, \pm1, \pm\frac32, \pm2$ (chosen for the picture) stay behind with their images.
+
 > [!example] Example §98.2: A Half Plane Goes onto a Disk
 > Show that $w = 1/z$ maps the half plane $x \ge c_1$ ($c_1 > 0$) onto the disk
 >
@@ -219,6 +223,10 @@ This section proves the key geometric fact about $w = 1/z$: **it carries circles
 > *B&C: Sec. 98, Exercise 13*
 
 ^ex-98-4
+
+![[m342-98-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Example §98.4: under $w = z + 1/z$ the circle $|z| = r_0$ (blue) goes onto the ellipse with semi-axes $a = r_0 + 1/r_0$ and $b = |r_0 - 1/r_0|$ and foci $\pm2$. As $r_0$ falls from $2.2$ to $1$ (chosen for the picture), the circles shrink onto the unit circle (dashed) and the confocal ellipses flatten (readout of $a$ and $b$) until, at $r_0 = 1$, the image is the segment $-2 \le u \le 2$, covered twice. The circles $r_0 = 2.2, 1.8, 1.5, 1.3, 1.15$ stay behind with their nested ellipses, which never cross: the exterior $|z| > 1$ goes one to one onto the plane minus the segment. The red coda goes beyond the book: the circle is moved so that it still passes through $z = 1$ (black dot) and still encloses $z = -1$, with centre first $-0.1$ and then $-0.1 + 0.12i$ and radius $|1 - \text{centre}|$ (chosen for the picture). Its image is a Joukowski airfoil, symmetric for a real centre and cambered for a complex one, with a cusp at $w = 2$, the image of $z = 1$, where $w'(z) = 1 - 1/z^2$ vanishes; this is the map that turns flow around a circle (Example §126.2) into flow around a wing.
 
 > [!example] Example §98.5: The Circle Equation in Complex Form
 > **(a)** Since $x = \frac12(z + \bar z)$ and $y = \frac1{2i}(z - \bar z)$ ([[§6 Complex Conjugates#^prop-6-2|Proposition §6.2]]), multiplying (4) by $2$ and using $1/i = -i$ gives

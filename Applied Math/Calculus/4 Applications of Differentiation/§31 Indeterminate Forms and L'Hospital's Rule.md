@@ -72,6 +72,10 @@ The proof of l'Hospital's Rule, given in Stewart's Appendix F, rests on a genera
 
 *Uses:* [[§29 Rolle's Theorem and the Mean Value Theorem#^thm-29-1|§29.1]] (Rolle's Theorem, twice)
 
+![[m451-30-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Theorem §31.1 as the Mean Value Theorem for a curve, reused from MATH 451 (Single Variable Analysis), where it is called the Generalized Mean Value Theorem. The parameter (called $t$ in the GIF; $x$ in the theorem) runs over $[a, b]$, and the point $(g(t), f(t))$ traces the blue curve, with $g(t)$ on the horizontal and $f(t)$ on the vertical axis; the chord (dashed) joins the end points and has slope $\frac{f(b) - f(a)}{g(b) - g(a)} = 0.216$. The tangent (red) has direction $(g'(t), f'(t))$, so its slope is $\frac{f'(t)}{g'(t)}$, shown in the title; it falls from about $1.8$ through $0.216$ to negative values, and the point comes to rest where it is parallel to the chord, at $t \approx 1.067$ (where $g = 1.523$). That parameter value is the $c$ of the theorem. Here $g' > 0$ throughout, so the curve moves always to the right, as the hypothesis $g'(x) \ne 0$ requires; the functions, $g(t) = t + 0.4t^2$ and $f(t) = 1.1\sin 1.5t + 0.45t + 0.3$ on $[0.15, 2]$, were chosen for the picture in 451. With $g(t) = t$ the curve is the graph of $f$ and the picture is that of the ordinary Mean Value Theorem, Theorem §29.2.
+
 > [!remark]- Connections
 > - Rigorous treatment: [[§29 The Mean Value Theorem#^thm-29-2|451 Thm. §29.2]] gives Rolle's Theorem; the two-function theorem is [[§30 L'Hospital's Rule#^thm-30-2|451 Thm. §30.2]] (Generalized Mean Value Theorem), stated there in the symmetric form $(f(b) - f(a))\,g'(c) = (g(b) - g(a))\,f'(c)$, which needs no hypothesis on $g'$.
 

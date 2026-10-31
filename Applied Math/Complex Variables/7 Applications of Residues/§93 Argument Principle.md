@@ -94,6 +94,10 @@ B&C takes for granted that $\arg w$ can be made to vary continuously along $\Gam
 
 *Uses:* [[§93 Argument Principle#^def-93-2|Def. §93.2]], [[§43 Contours#^prop-43-5|§43.5]], [[§44 Contour Integrals#^def-44-1|Def. §44.1]], [[§41 Derivatives of Functions w(t)#^prop-41-1|§41.1]], [[§42 Definite Integrals of Functions w(t)#^thm-42-2|§42.2]], [[§29 The Mean Value Theorem#^cor-29-4|451 Cor. §29.4]] (vanishing derivative), [[§18 Properties of Continuous Functions#^thm-18-3|451 Thm. §18.3]] (intermediate value theorem)
 
+![[m590-24-a3.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Reused from Topology (§32, lifting and the fundamental group of the circle); here it illustrates Lemma §93.1 as the Connections remark above describes. The loops (blue: twice around the unit circle evenly; red: a wiggly loop, also twice around) play the role of $w(t)/|w(t)|$, and their lifts to the helix are continuous arguments $\phi(t)$, measured in turns: the height on the helix is $\phi/2\pi$. The lift is unique once its starting floor (the choice of $\phi_0$) is fixed. The red argument goes up and down, but both end two floors up, so $\Delta_C\arg = 4\pi$ for both, and the winding number $2$ does not depend on how the loop wiggles.
+
 > [!remark]- Connections
 > - In topology the continuous argument is a **lift** of the loop $w(t)/|w(t)|$ through the covering map $\mathbb{R} \to S^1$, $\phi \mapsto e^{i\phi}$: its existence and uniqueness up to $2\pi\mathbb{Z}$ is the path lifting lemma, [[§32 Lifting and the Fundamental Group of the Circle#^lem-32-1|590 Lem. §32.1]], and the winding number is the class of the loop in $\pi_1(S^1) \cong \mathbb{Z}$, [[§32 Lifting and the Fundamental Group of the Circle#^thm-32-5|590 Thm. §32.5]]. The formula of Lemma §93.1 constructs the lift explicitly for piecewise smooth loops.
 
@@ -242,6 +246,10 @@ Count a zero of order $m_0$ as $m_0$ zeros and a pole of order $m_p$ as $m_p$ po
 
 ![[m342-93-1.svg]]
 *Example §93.1: the unit circle $C$ (left), with the pole of $f(z) = z^2 + 2/z$ inside and its three zeros outside, and its image $\Gamma$ (right), computed from $w = e^{i2\theta} + 2e^{-i\theta}$. As $z$ goes once counterclockwise around $C$, $w$ goes once clockwise around the origin: winding number $Z - P = -1$. The cusps are the images of the points of $C$ where $f' = 0$.*
+
+![[m342-93-a1.gif|520]]
+
+*(Not from the book; animation added, vault only.)* The argument principle (Theorem §93.4) as a count. Part 1 is Example §93.1: $z$ runs once counterclockwise around $|z| = 1$ (left; the pole $0$ is the red cross, the three zeros $\sqrt[3]{2}\,e^{i(\pi + 2k\pi)/3}$ of $z^3 + 2$ are the blue dots outside), and the image $\Gamma$ of $f(z) = z^2 + 2/z$ is traced at the same time (right, green), with the vector from $0$ to $f(z)$ in orange. The running change of argument ends at $\Delta_C\arg f = -2\pi$, so $Z - P = 0 - 1 = -1$: the deltoid with cusps at $3$ and $3e^{\pm 2\pi i/3}$ goes once clockwise around $0$. Part 2 uses $f(z) = (z - 0.6)(z - 2.2i)/(z + 1 + i)$ (chosen for the picture), with zeros of modulus $0.6$ and $2.2$ and a pole of modulus $\sqrt2 \approx 1.41$, and lets the radius of $C_R\colon |z| = R$ grow from $0.3$ to $2.8$. Since $|f|$ ranges from $0$ to $\infty$, the image $f(C_R)$ is drawn as $w/(1 + |w|)$, which keeps the winding about $0$ and sends $w = \infty$ to the dashed unit circle. The winding number of the image about $0$ goes $0 \to 1 \to 0 \to 1$: up by one when $C_R$ passes a zero, when the image curve runs through $0$, and down by one when it passes the pole, when the image runs out to $\infty$. The readout $Z$, $P$, winding $= Z - P$ follows along.
 
 > [!example] Example §93.2: Three Changes of Argument
 > Let $C$ be the unit circle $|z| = 1$, described in the positive sense. Use the argument principle to determine $\Delta_C\arg f(z)$ when

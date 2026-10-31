@@ -141,6 +141,10 @@ Fitting a formula to experimental data is a least-squares problem in disguise. F
 ![[m235-45-1.svg]]
 *[[§55 Applications to Linear Models#^ex-55-1|Example §55.1]]: the least-squares line $y = \frac27 + \frac{5}{14}x$ and the four data points. The residuals are the vertical segments from each data point to the line (red, drawn to scale; at $x = 2$ the point lies on the line); the line minimizes the sum of their squares. It passes through $(\bar{x}, \bar{y}) = (5.5, 2.25)$ ([[§55 Applications to Linear Models#^prop-55-2|Proposition §55.2]]).*
 
+![[m235-45-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* "Least squares" taken literally, for the data $(2, 1)$, $(5, 2)$, $(7, 3)$, $(8, 3)$ of Example §55.1. On the left a trial line $y = \beta_0 + \beta_1x$ (blue) moves, and each residual $y_j - \beta_0 - \beta_1x_j$ is drawn as a red square with that side, so the shaded area is $SS(\beta_0, \beta_1)$, the sum of the squared residuals (readout). On the right the point $(\beta_0, \beta_1)$ moves across the level curves of $SS$, which are long thin ellipses because $SS$ is a quadratic in $(\beta_0, \beta_1)$ with matrix $X^TX = \begin{bmatrix} 4 & 22 \\ 22 & 142 \end{bmatrix}$. It slides downhill from the falling line $y = 3.6 - 0.17x$ ($SS \approx 6.60$) to the bottom of the bowl at $(\beta_0, \beta_1) = (\frac27, \frac5{14})$, where the squares almost vanish: $SS = \frac{1}{14}$, residuals $0, -\frac1{14}, \frac3{14}, -\frac2{14}$, and the line passes through $(\bar{x}, \bar{y}) = (5.5, 2.25)$ (blue square). The starting line and the downhill path are chosen for the picture.
+
 ## The General Linear Model
 
 > [!definition] Definition §55.5: Linear Model; Residual Vector

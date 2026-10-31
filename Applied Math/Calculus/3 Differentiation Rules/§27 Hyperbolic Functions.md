@@ -115,6 +115,10 @@ Certain combinations of $e^x$ and $e^{-x}$ occur so often that they have names: 
 ![[m233-24-1.svg]]
 *Circular and hyperbolic functions. Left: $(\cos t, \sin t)$ on the circle $x^2 + y^2 = 1$; the shaded sector has area $t/2$. Right: $(\cosh t, \sinh t)$ on the hyperbola $x^2 - y^2 = 1$; the shaded hyperbolic sector also has area $t/2$, but as $t \to \infty$ the point runs off along the asymptote $y = x$ (dashed) instead of returning.*
 
+![[m233-24-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The parameter $t$ runs from $0$ to $2.05$ and back. On the left $(\cos t, \sin t)$ moves on the circle $x^2 + y^2 = 1$, on the right $(\cosh t, \sinh t)$ on the hyperbola $x^2 - y^2 = 1$ ([[§27 Hyperbolic Functions#^def-27-1|Definition §27.1]], [[§27 Hyperbolic Functions#^thm-27-1|Theorem §27.1]]: $\cos^2 t + \sin^2 t = 1$ and $\cosh^2 t - \sinh^2 t = 1$). In both pictures the shaded sector has area $t/2$ (checked numerically), so $t$ plays the same role. The circular point comes back around, while the hyperbolic point runs off along the asymptote $y = x$: at $t = 2.05$ it is at $(3.95, 3.82)$.
+
 > [!theorem] Theorem §27.2: Derivatives of Hyperbolic Functions
 > $$
 > \begin{aligned}

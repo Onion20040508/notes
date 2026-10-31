@@ -174,6 +174,10 @@ For a cylinder the cross-sectional area is constant, $A(x) = A$, and [[§46 Volu
 ![[m233-40-1.svg]]
 *[[§46 Volumes#^ex-46-3|Example §46.3]](b). (a) Rotating the red segment at $x$ about the line $y = 2$ sweeps out a washer. Its inner radius is the distance $2 - x$ from the axis to the nearer curve $y = x$, and its outer radius the distance $2 - x^2$ to the farther curve $y = x^2$. (b) The washer's area is the outer disk minus the inner disk.*
 
+![[m233-40-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* [[§46 Volumes#^ex-46-3|Example §46.3]](b) in 3D. First the region between $y = x$ and $y = x^2$, $0 \le x \le 1$ (blue), turns once about the line $y = 2$ (orange, dashed) and sweeps out the solid: the outer surface comes from the parabola $y = x^2$, the inner one from the line $y = x$, and the two meet at $x = 0$ (radius $2$) and $x = 1$ (radius $1$). Then the cross-section at $x$ slides across the solid: it is a washer (red) with inner radius $r_{\rm in} = 2 - x$ and outer radius $r_{\rm out} = 2 - x^2$, swept out by the red segment of the region; at $x = 0.5$, $r_{\rm in} = 1.5$, $r_{\rm out} = 1.75$ and $A(x) = \pi(r_{\rm out}^2 - r_{\rm in}^2) \approx 2.553$. Integrating the washer areas gives $V = \int_0^1 \big[\pi(2 - x^2)^2 - \pi(2 - x)^2\big]\,dx = \frac{8\pi}{15}$.
+
 ## Finding Volume Using Cross-Sectional Area
 
 [[§46 Volumes#^def-46-2|Definition §46.2]] applies to any solid whose cross-sections have areas that are easy to compute, not only to solids of revolution.

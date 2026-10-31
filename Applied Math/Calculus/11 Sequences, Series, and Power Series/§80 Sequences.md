@@ -70,6 +70,10 @@ For example, $1 - \dfrac{n}{n+1} = \dfrac{1}{n+1}$ can be made as small as we li
 ![[m233-69-1.svg]]
 *[[§80 Sequences#^def-80-3|Definition §80.3]] for one $\varepsilon$. The terms (dots) may wander in and out of the band $L - \varepsilon < y < L + \varepsilon$ (green) for a while, but from $a_{N+1}$ on (red) every term lies inside it. A smaller $\varepsilon$ usually needs a larger $N$.*
 
+![[m451-7-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Definition §80.3 for all $\varepsilon$ at once, reused from MATH 451 (Single Variable Analysis): the figure above fixes one $\varepsilon$, here $\varepsilon$ moves. The sequence is $a_n = 1 + (-1)^n\frac{1.2}{n}$ (written $s_n$ in the GIF), with limit $L = 1$, and its terms alternate above and below $1$. The band $L - \varepsilon < y < L + \varepsilon$ (shaded blue here) narrows as $\varepsilon$ shrinks from $0.7$ to $0.032$, then widens again. The dashed line marks where the terms settle into the band for good; the earlier terms (grey) may lie outside and do not matter. Since $|a_n - 1| = \frac{1.2}{n}$, the terms from index $n$ on lie in the band exactly when $n > 1.2/\varepsilon$, so a smaller $\varepsilon$ needs a later index, but one always exists. One difference in convention: the GIF labels the first index inside the band as $N$ (451 asks for $n \ge N$), while this note asks for $n > N$, so Stewart's $N$ is one less than the label. For example, at $\varepsilon = 0.075$ the label reads $N = 17$, and the definition here holds with $N = 16$.
+
 > [!remark]- Connections
 > - Rigorous treatment: [[§7 Limits of Sequences#^def-7-2|451 Def. §7.2]] (the same definition, with $n > N$), where the limit is shown to be unique, [[§7 Limits of Sequences#^thm-7-1|451 Thm. §7.1]].
 > - See also: [[§37 Solution Sets of Linear Difference Equations#^ex-37-2|235 Ex. §37.2]] (the Fibonacci sequence of Remark: Ways to Describe a Sequence solved by linear algebra: $F_k = (\varphi^k - \psi^k)/\sqrt5$, and $F_{k+1}/F_k \to \varphi$).

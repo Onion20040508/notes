@@ -107,6 +107,10 @@ For each fixed $x$ the integral is a number. As $x$ varies, it defines a functio
 ![[m233-36-1.svg]]
 *The proof of FTC1. The blue region is $g(x)$, and the red strip is $g(x + h) - g(x) = \int_x^{x+h} f(t)\,dt$. It contains the rectangle of height $m = f(u)$ and lies inside the rectangle of height $M = f(v)$ over $[x, x + h]$, so the difference quotient lies between $f(u)$ and $f(v)$. As $h \to 0$ both $u$ and $v$ are squeezed to $x$.*
 
+![[m451-34-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Theorem §41.1 in motion, reused from MATH 451 (Single Variable Analysis). As $x$ moves to the right from $a = 0.2$, the area $g(x) = \int_a^x f(t)\,dt$ (blue, top panel) accumulates under the graph of $f$, and the graph of $g$ is drawn in the bottom panel as it goes. The red tangent to the graph of $g$ has slope $f(x)$, the height of the red segment in the top panel: where $f$ is large, $g$ climbs steeply, and where $f$ is small, $g$ levels off. The thin red strip of width $h = 0.12$ is the strip $g(x + h) - g(x) = \int_x^{x+h} f(t)\,dt$ of the figure above, with area close to $f(x)\,h$; the title compares the slope $f(x)$ with the difference quotient $\frac{g(x + h) - g(x)}{h}$ (for instance $0.629$ and $0.612$ at $x = 2.23$). The GIF writes $F$ for the area function that this note and Stewart call $g$, and the integrand, $f(t) = 0.6 + 0.4\sin 1.8t + 0.15t$, was chosen for the picture in 451.
+
 > [!remark]- Connections
 > - Rigorous treatment: [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]. The numbering is swapped there: Stewart's Part 1 is 451's *FTC II* (and Stewart's Part 2 is 451's *FTC I*). The proof uses the same estimate $\big|\frac1h \int_x^{x+h} (f(t) - f(x))\,dt\big| \le \varepsilon$ in place of the Extreme Value Theorem. It needs $f$ only integrable for the continuity of $g$, and continuous at the one point $x$ for $g'(x) = f(x)$. Hub: [[Fundamental Theorem of Calculus]].
 > - Lebesgue version, with no continuity at all: $g' = f$ [[§16 Limits and Positive Parts of Measurable Functions#^def-16-2|almost everywhere]], [[§30 Differentiating the Integral#^thm-30-7|551 Thm. §30.7]].

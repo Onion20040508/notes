@@ -80,6 +80,10 @@ Taylor's Inequality ([[§90 Taylor and Maclaurin Series#^thm-90-4|Theorem §90.4
 
 *Uses:* [[§91 Taylor Series of Important Functions#^thm-91-1|§91.1]], [[§89 Representations of Functions as Power Series#^thm-89-1|§89.1]]
 
+![[m451-31-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Theorem §91.2 in motion, reused from MATH 451 (Single Variable Analysis); the static figure after Theorem §91.1 shows the same for sine. The Maclaurin polynomials of $\cos x$ (red; written $s_N$ in the GIF, $T_N$ in this note), $T_N(x) = \sum_{2n \le N} (-1)^n \frac{x^{2n}}{(2n)!}$ for $N = 0, 2, 4, \ldots, 30$, are drawn against $\cos x$ (black) on $[-11, 11]$. The shaded interval is where $|T_N(x) - \cos x| < 0.01$, read off the title: $|x| < 0.16$ for $N = 0$, $|x| < 3.64$ for $N = 10$, $|x| < 7.39$ for $N = 20$, and the whole window for $N = 30$. Each polynomial follows the cosine for a while and then breaks away, but the good interval keeps growing, as "for all $x$" in (16) requires. Taylor's inequality with $M = 1$ explains the last frame: since $T_{30} = T_{31}$ for the cosine, $|R_{31}(x)| \le \frac{|x|^{32}}{32!} \le \frac{11^{32}}{32!} < 0.01$ on the whole window.
+
 > [!remark]- Connections
 > - Rigorous treatment of (11), (15) and (16): [[§31 Taylor's Theorem#^ex-31-1|451 Ex. §31.1]] (cosine and $e^x$ through the remainder, as here). In 451 the series can instead serve as *definitions* of sine and cosine: [[§26 Differentiation and Integration of Power Series#^ex-26-8|451 Ex. §26.8]].
 > - See also: [[§64 Complex Numbers#^rem-64-1|235 Remark: Euler's Formula]] ($e^{i\varphi} = \cos\varphi + i\sin\varphi$ by splitting the series (11) at $x = i\varphi$ into the series (16) and (15)), and [[§46 Applications to Differential Equations#^def-46-3|235 Def. §46.3]] (the complex exponential $e^{(a+bi)t} = e^{at}(\cos bt + i\sin bt)$, used for complex eigenvalues of $\mathbf{x}' = A\mathbf{x}$).

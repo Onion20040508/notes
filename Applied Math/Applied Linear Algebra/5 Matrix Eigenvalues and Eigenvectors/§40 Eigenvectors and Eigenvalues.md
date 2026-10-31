@@ -28,6 +28,10 @@ A matrix transformation $\mathbf{x} \mapsto A\mathbf{x}$ may move vectors in all
 
 ^rem-40-1
 
+![[m235-32-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* The powers of $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$ applied to the closed first quadrant $\mathbb{R}^2_+$, for $N = 0, 1, \ldots, 5$. Only directions are drawn: the arrows are the unit vectors along $A^N\mathbf{e}_1$ (black) and $A^N\mathbf{e}_2$ (green), and the shaded wedge between them is $A^N(\mathbb{R}^2_+)$. Each step is shown as the continuous change from $I$ to $A$, applied to the previous wedge. The wedge narrows from $90^\circ$ to $19.65^\circ$ (rays through $(1, 4)$ and $(2, 3)$), $4.16^\circ$ (through $(9, 16)$ and $(8, 17)$), $0.82^\circ$, $0.17^\circ$ and $0.03^\circ$, about a factor $5$ each time, and it closes down onto the dashed blue ray through $(1, 2)$, where $A$ multiplies by $\lambda = 5$. The two rays swap sides of that line at every step. This comes from the other eigenvalue $\lambda = -1$ (dashed red line through $(1, -1)$, outside the quadrant). So the eigenvector shows up before any computation, as the one direction that every wedge contains.
+
 > [!remark]- Remark: The Perron–Frobenius Theorem
 > The lecture states the general fact behind the shrinking wedges, without proof: if $A = \begin{bmatrix} a & b \\ c & d \end{bmatrix}$ with $a, b, c, d > 0$, then there are a vector $\mathbf{u} = (u_1, u_2)$ with $u_1, u_2 > 0$ and a number $\lambda > 0$ such that $A\mathbf{u} = \lambda\mathbf{u}$. In L21 a sharper form is stated for matrices with positive entries whose columns sum to $1$: the eigenvalue $1$ has a one-dimensional eigenspace spanned by a vector with positive entries, and every other eigenvalue has absolute value less than $1$. This explains the convergence of regular Markov chains ([[§38 Applications to Markov Chains#^thm-38-3|Theorem §38.3]], Lay's Theorem 18); see [[§42 Diagonalization#^ex-42-5|Example §42.5]].
 >
@@ -46,6 +50,10 @@ A matrix transformation $\mathbf{x} \mapsto A\mathbf{x}$ may move vectors in all
 > *Source: 235 lectures L18, L19*
 
 ^def-40-1
+
+![[ladr-5.8-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 5.8). Definition §40.1 as a search: a unit vector $\mathbf{x}$ sweeps half the circle for three $2 \times 2$ matrices, and $A\mathbf{x}$ turns green when it is a multiple $\lambda\mathbf{x}$ of $\mathbf{x}$; the eigenline found then stays drawn. Left, the matrix with rows $(2, 1)$ and $(1, 2)$: eigenlines at $45^\circ$ ($\lambda = 3$) and $135^\circ$ ($\lambda = 1$). Middle, the quarter-turn with rows $(0, -1)$ and $(1, 0)$: $A\mathbf{x}$ is always at $90^\circ$ to $\mathbf{x}$, so there are no real eigenvectors (Example §44.1). Right, the shear with rows $(1, 1)$ and $(0, 1)$: only the $x_1$-axis is an eigenline. (Axler writes $T$, $v$ for $A$, $\mathbf{x}$.)
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§14 Invariant Subspaces#^ladr-5-5|LADR 5.5]] (eigenvalue), [[§14 Invariant Subspaces#^ladr-5-8|LADR 5.8]] (eigenvector) and [[§14 Invariant Subspaces#^ladr-5-7|LADR 5.7]] ($\lambda$ is an eigenvalue $\Leftrightarrow$ $T - \lambda I$ is not injective $\Leftrightarrow$ not invertible); there for an operator $T$ on any finite-dimensional $V$, where an eigenvector spans a one-dimensional invariant subspace.
@@ -179,6 +187,10 @@ For the matrix of [[§40 Eigenvectors and Eigenvalues#^ex-40-1|Example §40.1]],
 ^pf-40-1
 
 *Uses:* [[§40 Eigenvectors and Eigenvalues#^def-40-1|Def. §40.1]], [[§8 Linear Independence#^thm-8-6|§8.6]] (more vectors than entries are dependent), [[§16 Characterizations of Invertible Matrices#^thm-16-1|§16.1]] (the Invertible Matrix Theorem: (a), (d), (l))
+
+![[ladr-5.41-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 5.41). Theorem §40.1 for the upper triangular matrix with rows $(2, 1)$ and $(0, 5)$. As $\lambda$ sweeps from $0$ to $6$, the unit square is mapped by $A - \lambda I$, which has columns $(2 - \lambda, 0)$ and $(1, 5 - \lambda)$, and the right panel plots the area $|(2 - \lambda)(5 - \lambda)|$ of the image. The image collapses, so that $(A - \lambda I)\mathbf{x} = \mathbf{0}$ has a nontrivial solution, exactly at the diagonal entries. At $\lambda = 2$ the vector $\mathbf{e}_1$ goes to $\mathbf{0}$. At $\lambda = 5$ the square collapses onto the $x_1$-axis and $(1, 3)$ goes to $\mathbf{0}$. These are the eigenvalues, with eigenvectors $\mathbf{e}_1$ and $(1, 3)$.
 
 > [!remark]- Connections
 > - Rigorous treatment: [[§16 Upper-Triangular Matrices#^ladr-5-41|LADR 5.41]] (the eigenvalues of an operator with an upper-triangular matrix are exactly its diagonal entries), proved there without determinants.
@@ -356,6 +368,10 @@ So if $\mathbf{x}_0$ can be written as a combination of eigenvectors, the differ
 ^ex-40-4
 
 *Chain: earlier in [[§39 The Fibonacci Numbers and the City–Suburb Migration#The Fibonacci Numbers|Chapter 4]]*
+
+![[m235-32-a2.gif|440]]
+
+*(Not from the book; animation added, vault only.)* The Fibonacci vectors $\mathbf{v}_n = (F_n, F_{n+1}) = \frac{1}{\sqrt5}(\varphi^n\mathbf{u} - \psi^n\mathbf{v})$ of Example §40.4 for $n = 0, 1, \ldots, 9$, each drawn shrunk by the factor $\varphi^n$ so that they stay on the screen. Rescaled, the component along $\mathbf{u} = (1, \varphi)$ is always the same blue arrow $\frac{1}{\sqrt5}\mathbf{u}$. The component along $\mathbf{v} = (1, \psi)$ (red) becomes $-\frac{1}{\sqrt5}(\psi/\varphi)^n\mathbf{v}$: it changes sign at every step and shrinks by the factor $|\psi/\varphi| \approx 0.382$. So the black arrow $\mathbf{v}_n/\varphi^n$ swings from $(0, 1)$ to alternate sides of the dashed eigenline of $\varphi$ and settles onto it. The readout gives $\mathbf{v}_n$ and the ratio $F_{n+1}/F_n$: $1$, $2$, $1.5$, $1.667$, …, $55/34 = 1.6176$. These ratios are the slopes of $\mathbf{v}_n$, and they tend to the slope $\varphi \approx 1.618$ of the eigenline, as in Example §37.2.
 
 > [!example] Example §40.5: A Power Applied to a Vector
 > Let $A = \begin{bmatrix} 1 & 2 \\ 4 & 3 \end{bmatrix}$. Find $A^{10}\begin{bmatrix} 1 \\ 0 \end{bmatrix}$.

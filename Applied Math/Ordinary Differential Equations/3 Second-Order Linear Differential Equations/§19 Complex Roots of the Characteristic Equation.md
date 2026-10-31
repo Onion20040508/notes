@@ -54,6 +54,10 @@ With $\lambda = -1$, $\mu = 2$ and $t = 3$, for instance, $y_1(3) = e^{-3 + 6i}$
 
 ^rem-19-1
 
+![[m331-15-a1.gif|400]]
+
+*(Not from the book; animation added, vault only.)* The series (8), $e^{it} = \sum (it)^n/n!$, drawn as a chain of vectors in the complex plane: the partial sum $S_N = 1 + it + \frac{(it)^2}{2!} + \cdots + \frac{(it)^N}{N!}$ is the end of a polygon whose $n$th side is the term $(it)^n/n!$. Each new term (red arrow) is the previous one multiplied by $it/n$, so it is turned by $90^\circ$ counterclockwise and scaled by $t/n$, and the polygon spirals inward. For $t = 1$ it closes in on $e^{i} = \cos 1 + i\sin 1$ on the unit circle (green ring); the distance $|S_N - e^{i}|$ is $0.0083$ for $N = 4$ and below $10^{-6}$ by $N = 9$. Then the view zooms out and the same is done for $t = \pi$. Now the first terms grow ($\pi$, $\pi^2/2 \approx 4.93$, $\pi^3/6 \approx 5.17$) and the polygon swings far out before $t/n < 1$ makes the terms shrink and it winds in onto $e^{i\pi} = -1$ (distance $0.0072$ at $N = 10$, $2.2 \times 10^{-5}$ at $N = 14$). Separating the horizontal sides (even $n$) from the vertical ones (odd $n$) gives the two series (9) for $\cos t$ and $\sin t$.
+
 > [!definition] Definition §19.1: The Complex Exponential
 > **Euler's formula** defines, for real $t$,
 >
@@ -292,3 +296,7 @@ The solution (25) can be written down as soon as $\lambda$ and $\mu$ are known; 
 
 ![[m331-15-1.svg]]
 *The three possibilities of [[§19 Complex Roots of the Characteristic Equation#^rem-19-2|Remark: The Sign of λ]], each with $\mu = 3$ and so period $2\pi/3$. (a) $y = e^{-t/2}(2\cos 3t + 3\sin 3t)$ from [[§19 Complex Roots of the Characteristic Equation#^ex-19-1|Example §19.1]], inside the decaying envelope $\pm\sqrt{13}\,e^{-t/2}$ (dashed). (b) $y = e^{t/4}(-2\cos 3t + \frac12\sin 3t)$ from [[§19 Complex Roots of the Characteristic Equation#^ex-19-3|Example §19.3]](a), inside the growing envelope $\pm\sqrt{17/4}\,e^{t/4}$. (c) $y = 2\cos 3t + \frac83\sin 3t$ from [[§19 Complex Roots of the Characteristic Equation#^ex-19-3|Example §19.3]](b), with constant amplitude $\frac{10}{3}$. In each case the envelope is $\pm\sqrt{c_1^2 + c_2^2}\,e^{\lambda t}$.*
+
+![[m331-15-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Where the three cases of Remark: The Sign of λ come from. The complex solution $e^{rt}$ with $r = \lambda + 3i$ (the $\mu = 3$ of the figure) is drawn as a vector in $\mathbb{C}$ for $0 \le t \le 4$: by Euler's formula it equals $e^{\lambda t}(\cos 3t + i\sin 3t)$, so it turns counterclockwise once every $2\pi/3$ while its length $e^{\lambda t}$ changes. On the right its real part $u = e^{\lambda t}\cos 3t$, the solution (23) of Theorem §19.2, is traced against $t$ inside the envelope $\pm e^{\lambda t}$ (dashed); the orange dot is the projection of the tip onto the real axis. For $\lambda = -\frac12$ the tip spirals inward and $u$ is a decaying oscillation (blue). For $\lambda = 0$ it runs around the unit circle and $u = \cos 3t$ keeps a constant amplitude (green). For $\lambda = \frac14$ it spirals outward to length $e^{1} \approx 2.72$ at $t = 4$ and the oscillation grows (red). The colours are those of panels (a), (c), (b) of the figure. The curves shown are $u$ itself ($c_1 = 1$, $c_2 = 0$ in (25)), not the particular solutions of the figure.

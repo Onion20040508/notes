@@ -301,6 +301,10 @@ Given a specific polygon $P$, how many constants in (7) must be determined? Writ
 
 ^ex-128-2
 
+![[m342-128-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Example §128.2 for $n = 3, 4, \ldots, 12$, one $n$ per second. The map $w = \int_0^Z (S^n - 1)^{-2/n}\,dS$ (principal root, as in the example) is computed by numerical quadrature along the rays from $0$. The unit circle (left, bold) goes onto a regular $n$-gon (right) whose vertices $\omega^kw_1$ (red) are the images of the $n$th roots of unity, with exterior angle $2\pi/n$ at each; the circles $|Z| = 0.5, 0.8$ and the rays between the roots (thin) go onto rounded polygons and onto the segments from the centre to the midpoints of the sides. The readout gives $w_1 = \frac1nB(\frac1n, 1 - \frac2n)$: $1.7666$ for the triangle, $1.3110$ for the square, $1.1745$ for the pentagon (the value in the example), down to $1.0248$ for $n = 12$. As $n$ grows the polygon closes in on the unit circle $|w| = 1$ (dashed), and the map itself approaches the identity on the disk, since the integrand tends to $1$ there.
+
 > [!example] Example §128.3: The Limit at Infinity for the Square Map
 > For $f(z) = i\int_0^z(s + 1)^{-1/2}s^{-1/2}(s - 1)^{-1/2}\,ds$ ([[§127★ Mapping the Real Axis onto a Polygon#^ex-127-2|Example §127.2]]), find the order property (5) and check that $f(z)$ has the same limit along the positive real and the positive imaginary axes, as Lemma §128.3 asserts.
 >

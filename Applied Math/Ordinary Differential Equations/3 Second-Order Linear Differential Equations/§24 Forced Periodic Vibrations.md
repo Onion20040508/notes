@@ -195,6 +195,10 @@ The transient lets the solution satisfy any initial conditions. As time goes on,
 ![[m331-20-2.svg]]
 *The amplitude response (13) against $\omega/\omega_0$ for several damping parameters $\Gamma = \gamma^2/(mk)$. Every curve starts at $1$ (the static displacement $F_0/k$) and tends to $0$. For $\Gamma = 1/64$ ([[§24 Forced Periodic Vibrations#^ex-24-2|Example §24.2]]) the peak is $\approx 8.02$, just below $\omega/\omega_0 = 1$; for $\Gamma = 2$ there is no peak. The dashed curve $1/|1 - \omega^2/\omega_0^2|$ is the undamped limit $\Gamma \to 0$.*
 
+![[m331-20-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The steady state $R\cos(\omega t - \delta)$ of Example §24.2, $u'' + \frac18u' + u = 3\cos\omega t$, as the forcing frequency $\omega$ sweeps from $0.2$ to $2.5$ and back. Left: the force divided by $3$ (grey) and the response divided by $R$ (blue) over two forcing periods, drawn against $\omega t$. Both are scaled to height $1$ so that only the phase is compared, and the red arrow is the lag $\delta$. Right: the amplitude $R = 3/\Delta$, $\Delta = \sqrt{(1 - \omega^2)^2 + \omega^2/64}$ (the $\Gamma = 1/64$ curve above, times $F_0/k = 3$), and the phase $\delta$, each with a moving dot. The animation pauses at the example's three frequencies: $\omega = 0.3$ ($R \approx 3.29$, $\delta \approx 0.04$, in phase), $\omega = 1$ ($R = 24$, $\delta = \pi/2$, the response peaks a quarter period after the force) and $\omega = 2$ ($R \approx 1.00$, $\delta \approx 3.06$, nearly opposite). With damping this light, $\delta$ jumps from about $0$ to about $\pi$ in a narrow band around $\omega_0 = 1$ (Remark: The Phase of the Response), and the amplitude peaks in the same band.
+
 > [!definition] Definition §24.2: Resonance
 > For a lightly damped system, the amplitude $R$ of the forced response is large when $\omega$ is near $\omega_0$, even for small forces: by (15), $R_{\max} \approx F_0/(\gamma\omega_0)$, and the smaller $\gamma$, the more pronounced the peak. This phenomenon is called **resonance**.
 >
@@ -361,6 +365,10 @@ The form of its general solution depends on whether $\omega$ equals the natural 
 
 ![[m331-20-1.svg]]
 *(a) The beat of [[§24 Forced Periodic Vibrations#^ex-24-3|Example §24.3]]: $u = 2.778\sin(0.1t)\sin(0.9t)$ (blue) inside the slowly varying amplitude $\pm 2.778\sin(0.1t)$ (red, dashed); one beat lasts $10\pi$. (b) Resonance, [[§24 Forced Periodic Vibrations#^ex-24-4|Example §24.4]](a): $u = \frac{t}{4}\sin t$ between the lines $u = \pm t/4$. As $\omega \to \omega_0$ in (a), the length $2\pi/|\omega_0 - \omega|$ of a beat grows and the first half of each beat approaches the linear growth in (b).*
+
+![[m331-20-a2.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The forcing frequency $\omega$ in $u'' + u = \frac12\cos\omega t$, $u(0) = u'(0) = 0$, rises from $0.6$ to $\omega_0 = 1$. For $\omega < 1$ the solution is $u = \frac{1/2}{1 - \omega^2}(\cos\omega t - \cos t)$ (blue), inside the envelope $\pm\frac{1}{1 - \omega^2}|\sin\frac12(1 - \omega)t|$ (red, dashed); the readouts give the beat length $2\pi/(1 - \omega)$ and the largest amplitude $1/(1 - \omega^2)$. The animation pauses at the two cases of Example §24.3: $\omega = 0.8$ (beat length $10\pi \approx 31.4$, height $2.78$) and $\omega = 0.9$ (length $20\pi$, height $5.26$). As $\omega \to 1$ the beats get longer and taller. Near $t = 0$ every envelope starts out along the lines $\pm t/4$ (dotted), because $\frac{1}{1 - \omega^2}\sin\frac12(1 - \omega)t \approx \frac{t}{2(1 + \omega)}$. At $\omega = 1$ the envelope is the line itself and $u = \frac t4\sin t$ (Example §24.4(a)): the resonant solution is the first half of a beat that never ends.
 
 > [!remark] Remark: Unbounded Growth Is a Limit of the Model
 > Because of the term $t\sin(\omega_0 t)$, (24) predicts unbounded motion whatever the initial conditions. In reality the spring cannot stretch infinitely far, and as soon as $u$ becomes large the model itself fails, since Hooke's law assumes $u$ small. With damping, the response stays bounded ([[§24 Forced Periodic Vibrations#^thm-24-1|Theorem §24.1]]), but by (15) it can still be very large when $\gamma$ is small and $\omega$ is close to $\omega_0$.

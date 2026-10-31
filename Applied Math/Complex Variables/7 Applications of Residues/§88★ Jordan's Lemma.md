@@ -47,6 +47,10 @@ For a Fourier-type integral $\int f(x)e^{iax}\,dx$ the arc estimate of [[§87 Im
 ![[m342-88-1.svg]]
 *Jordan's inequality: on $0 \le \theta \le \pi/2$ the concave curve $y = \sin\theta$ lies above its chord $y = 2\theta/\pi$, and by symmetry above $y = 2(\pi - \theta)/\pi$ on the other half. So $e^{-R\sin\theta}$ is at most $e^{-2R\theta/\pi}$, whose integral is less than $\pi/(2R)$: the integrand is close to $1$ only on intervals of length about $1/R$ at the two ends.*
 
+![[m342-88-a1.gif|520]]
+
+*(Not from the book; animation added, vault only.)* Why Jordan's lemma (Theorem §88.2) beats the ML bound, with $a = 1$ (chosen for the picture). As $R$ grows from $1$ to $40$, the left panel draws the semicircle $C_R$ scaled to unit size, with width and colour showing $|e^{iaz}| = e^{-aR\sin\theta}$ at $z = Re^{i\theta}$; the right panel graphs the same factor over $0 \le \theta \le \pi$, with the bound $e^{-2aR\theta/\pi}$ of Jordan's inequality (blue, dashed; mirrored on $[\pi/2, \pi]$). The factor is close to $1$ only on two ends of width about $1/R$, so the area under it shrinks below $\pi/(aR)$ (the readout: $0.050 < 0.079$ at $R = 40$), while the length $\pi R$ of $C_R$ grows. In the proof the integral is at most $M_R\cdot R\cdot\text{area}$, and $R\times\text{area}$ stays below $\pi$ (it settles near $2$). So $\int_{C_R} f(z)e^{iaz}\,dz \to 0$ as soon as $M_R \to 0$, for instance $M_R \sim 1/R$, where the ML bound $M_R\,\pi R$ would stay near $\pi$.
+
 > [!theorem] Theorem §88.2: Jordan's Lemma
 > Suppose that
 > - (a) a function $f(z)$ is analytic at all points in the upper half plane $y \ge 0$ that are exterior to a circle $|z| = R_0$;

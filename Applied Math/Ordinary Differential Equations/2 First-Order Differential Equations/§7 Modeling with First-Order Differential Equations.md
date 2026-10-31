@@ -184,6 +184,10 @@ Suppose a sum $S_0$ is deposited at an annual **rate of return** $r$, compounded
 
 *Uses:* [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-7|Calc Thm. §22.7]] ($e$ as a limit)
 
+![[m331-6-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The growth factor $S(t)/S_0 = (1 + r/m)^{mt}$ of Proposition §7.2 at $r = 8\%$, drawn as a staircase over $10$ years for $m = 1$ (yearly), $2$, $4$ (quarterly), $12$ (monthly) and $365$ (daily), against the continuously compounded $e^{rt}$ (dashed). Each step is one compounding period of length $1/m$ year, in which the value is multiplied by $1 + r/m$; as $m$ grows the steps get shorter and lower and the staircase climbs onto $e^{rt}$. The right panel collects the values after $10$ years: $2.1589$, $2.1911$, $2.2080$, $2.2196$, $2.2253$, closing in on $e^{0.8} = 2.2255$. The quarterly and daily values are the entries of the table in Remark: How Much Does the Frequency of Compounding Matter?, and the whole range from yearly to continuous is only about $3\%$.
+
 > [!remark]- Connections
 > - See also: [[§24 Exponential Growth and Decay#^cor-24-3|Calc Cor. §24.3]] (Stewart's treatment, with the table of [[§24 Exponential Growth and Decay#^ex-24-4|Calc Ex. §24.4]]) and the limit $\lim_{x \to 0}(1 + x)^{1/x} = e$, [[§22 Derivatives of Logarithmic and Inverse Trigonometric Functions#^thm-22-7|Calc Thm. §22.7]].
 
@@ -407,6 +411,10 @@ $$
 ^pf-7-3
 
 *Uses:* [[§6 Separable Differential Equations#^thm-6-1|§6.1]], [[§7 Modeling with First-Order Differential Equations#^def-7-1|Def. §7.1]]
+
+![[m331-6-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The velocity (30), $v = \sqrt{v_0^2 - 2gR + 2gR^2/(R + x)}$, of the rising body as a function of the altitude $x$, in units of $v_e = \sqrt{2gR}$ and $R$, while the launch velocity $v_0$ increases from $0.3\,v_e$ past $v_e$ (faint: earlier curves). For $v_0 < v_e$ the curve reaches $v = 0$ at the turning point $A_{\max} = v_0^2R/(2gR - v_0^2)$ (31) (red dot), and the right panel plots $A_{\max}/R$ against $v_0/v_e$: it is only $0.28R$ at $v_0 = 0.47\,v_e$ and $4.3R$ at $0.9\,v_e$, but it blows up as $v_0 \to v_e$, which is why the escape velocity (33) is the least velocity for which the body never returns. For $v_0 > v_e$ the velocity never vanishes and tends to $\sqrt{v_0^2 - v_e^2}$ (dotted). With $v_e \approx 11.2$ km/s and $R \approx 6370$ km, $v_0 = 0.9\,v_e \approx 10$ km/s lifts the body to about $27\,000$ km.
 
 > [!remark] Remark: Limits of the Escape-Velocity Model
 > The calculation neglects air resistance, so the actual escape velocity is somewhat higher. On the other hand, launching from a considerable height above sea level reduces it, since both gravity and air resistance (which falls off rapidly with altitude) are then smaller. Also, imparting a large velocity instantaneously may be impractical; space vehicles receive their initial acceleration over several minutes.

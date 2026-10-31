@@ -260,6 +260,10 @@ Since $A$ is symmetric, there is an *orthogonal* $P$ with $P^TAP = D$ diagonal (
 ![[m235-49-1.svg]]
 *The two conics of [[§59★ Quadratic Forms#^ex-59-3|Example §59.3]], with their principal axes (green) and the unit eigenvectors $\mathbf{u}_1, \mathbf{u}_2$ (red) that span them. In the $y_1y_2$ coordinate system each curve is in standard position; the cross-product term $-4x_1x_2$ or $-8x_1x_2$ only records that the axes have been rotated away from the $x_1x_2$ axes.*
 
+![[ladr-9.23-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 9.23). The Principal Axes Theorem as turning coordinates: the axes $y_1, y_2$ turn from $0^\circ$ to $90^\circ$ and back over level curves of two quadratic forms, and the form in the turned coordinates is shown below each panel. The left form has matrix with rows $(3, 1)$, $(1, 3)$ (eigenvalues $4$, $2$) and the right form has matrix with rows $(0, 1)$, $(1, 0)$ (eigenvalues $1$, $-1$), so the cross-product coefficient is $2\cos 2\varphi$ in both. It vanishes exactly at $45^\circ$, when the axes lie on the eigenlines (red), and the forms become $4y_1^2 + 2y_2^2$ and $y_1^2 - y_2^2$. In Example §59.3 the same happens for $5x_1^2 - 4x_1x_2 + 5x_2^2$ at the rotation by $45^\circ$, giving $3y_1^2 + 7y_2^2$. The forms of the animation are chosen for the picture.
+
 ## Classifying Quadratic Forms
 
 For $A$ an $n \times n$ matrix, $Q(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$ is a real-valued function on $\mathbb{R}^n$. For $n = 2$ its graph $z = Q(x_1, x_2)$ is a surface. For $z = 3x_1^2 + 7x_2^2$ it is a bowl (elliptic paraboloid): $Q > 0$ except at $\mathbf{0}$, and the horizontal cross-sections are ellipses. For $z = 3x_1^2$ it is a trough (parabolic cylinder): $Q \ge 0$, with $Q = 0$ along the whole $x_2$-axis. For $z = 3x_1^2 - 7x_2^2$ it is a saddle (hyperbolic paraboloid), with hyperbolas as cross-sections. For $z = -3x_1^2 - 7x_2^2$ it is an upside-down bowl: $Q < 0$ except at $\mathbf{0}$.
@@ -300,6 +304,10 @@ For $A$ an $n \times n$ matrix, $Q(\mathbf{x}) = \mathbf{x}^T A \mathbf{x}$ is a
 ^pf-59-4
 
 *Uses:* [[§59★ Quadratic Forms#^thm-59-2|§59.2]], [[§59★ Quadratic Forms#^def-59-4|Def. §59.4]]
+
+![[m452-14-a2.gif|420]]
+
+*(Not from the book; animation added, vault only.)* Reused from Multivariable Analysis (§18, second-order conditions). The graphs $z = Q(\mathbf{y})$ for quadratic forms without cross-product term, $Q = 0.55(\lambda_1y_1^2 + \lambda_2y_2^2)$, the form (4) of the proof after the principal-axes change of variable. First $\lambda_2$ goes from $1$ to $-1$: the bowl of a positive definite form (the text's $3x_1^2 + 7x_2^2$) flattens into a trough at $\lambda_2 = 0$ (positive semidefinite, like $3x_1^2$) and then becomes a saddle (indefinite, like $3x_1^2 - 7x_2^2$). Then $\lambda_1$ goes from $1$ to $-1$ as well, and the saddle becomes an upside-down bowl (negative definite). Only the signs of the eigenvalues decide the shape, which is Theorem §59.4. The eigenvalues are chosen for the picture.
 
 > [!remark]- Connections
 > - The second derivative test: at a critical point, $f(\mathbf{a} + \mathbf{h}) - f(\mathbf{a}) \approx \frac12 \mathbf{h}^T H \mathbf{h}$ with $H$ the (symmetric) Hessian, so a positive definite Hessian means a local minimum, negative definite a local maximum, indefinite a saddle: [[§18 Second-Order Sufficient Conditions#^def-18-2|452 Def. §18.2]], [[§18 Second-Order Sufficient Conditions#^thm-18-1|452 Thm. §18.1]] (hub [[Second Derivative Test in Several Variables]]); the $2 \times 2$ version with $D = f_{xx}f_{yy} - f_{xy}^2$ is [[§113 Maximum and Minimum Values#^thm-113-2|Calc Thm. §113.2]], and $D = \det H = \lambda_1\lambda_2$ and $f_{xx}$ together decide the signs of the eigenvalues. Determinant tests in $n$ variables: [[§18 Second-Order Sufficient Conditions#^rem-18-9|452 Remark: Sylvester's Criterion]].

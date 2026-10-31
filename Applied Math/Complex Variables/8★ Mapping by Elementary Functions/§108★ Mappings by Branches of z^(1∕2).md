@@ -92,6 +92,10 @@ This is the case $c = 1/2$ of the principal branch of $z^c$, [[§35 The Power Fu
 
 *Uses:* [[§108★ Mappings by Branches of z^(1∕2)#^def-108-2|Def. §108.2]]
 
+![[m342-108-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Proposition §108.1 and Proposition §108.2 on the unit circle (chosen for the picture). The point $z = e^{it}$ goes twice around the origin, starting at $z = 1$. On the right, the two square roots of $z$ move continuously at half the speed: the blue one starts at $F_0(1) = 1$ and the red one at $-1$. After one turn ($t = 2\pi$) they have traded places, and only after two turns are they back where they started, so neither of them can be chosen as a continuous function on a whole circle around $0$. The ring marks the principal value $F_0(z) = \sqrt r\,e^{i\Theta/2}$, $-\pi < \Theta \le \pi$ (extended to the cut as in Proposition §108.2), which always lies in the shaded half plane $\operatorname{Re} w > 0$ (or on its boundary). Each time $z$ crosses the cut $\Theta = \pi$ (orange) the ring jumps from one value to the other, from $i$ to $-i$: the two one-sided limits differ by $2\sqrt{r_0} = 2$, which is the discontinuity of Proposition §108.2.
+
 > [!remark] Remark: Method — Choosing a Branch of z^(1/n) for a Region
 > 1. Choose a ray $\theta = \alpha$ from the branch point that avoids the region (and its boundary, if the boundary is to be mapped continuously).
 > 2. Take the branch with $\alpha < \theta < \alpha + 2\pi$, and fix the sheet by one prescribed value (for example, a positive value on the positive real axis).

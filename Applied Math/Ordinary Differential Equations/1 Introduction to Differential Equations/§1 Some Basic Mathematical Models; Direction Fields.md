@@ -175,6 +175,10 @@ In the absence of predators, assume that a population of field mice grows at a r
 ![[m331-1-1.svg]]
 *Direction fields (gray) of (a) the falling object, $v' = 9.8 - v/5$, and (b) the mice and owls, $p' = p/2 - 450$, with the equilibrium solutions (red) and a few solution curves (blue, from the formulas of [[§2 Solutions of Some Differential Equations#^thm-2-1|Theorem §2.1]]). In (a) the segments all point toward $v = 49$ and the solutions converge to it; in (b) they point away from $p = 900$, and solutions starting near it are pushed off ever faster.*
 
+![[m331-1-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The two direction fields of the figure, (a) $v' = 9.8 - v/5$ and (b) $p' = p/2 - 450$, with solutions released at $t = 0$ from several heights ($v(0) = 40.5, 43, 46, 52, 55, 59.5$ and $p(0) = 860, 885, 895, 905, 915, 940$). Each dot moves along the grey segments, and its orange arrow is the tangent segment of slope $f(t, y)$ at the dot: the field tells the solution which way to go, and the dot leaves its solution curve behind. In (a) the slopes shrink near $v = 49$, so every solution is drawn toward the terminal velocity and slows down as it gets there, $v = 49 + (v(0) - 49)e^{-t/5}$. In (b) the slopes grow away from $p = 900$, so the solutions are pushed off ever faster, $p = 900 + (p(0) - 900)e^{t/2}$, even those that start only $5$ mice from the equilibrium.
+
 > [!remark] Remark: Limitations of the Two Models
 > The falling-object model is valid only while the object falls freely, and only at speeds where drag is roughly proportional to velocity; for fast, large objects a drag proportional to $v^2$ is more accurate. The mouse model eventually predicts negative populations (if $p < 900$) or enormous ones (if $p > 900$). Both predictions are unrealistic, so the model is acceptable only over a fairly short time interval.
 

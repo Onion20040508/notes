@@ -229,6 +229,10 @@ The resemblance of (6) to the general solution of a nonhomogeneous linear differ
 
 ^def-35-4
 
+![[ladr-5.8-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR §14, where the operators are written $T$ and vectors $v$). In this section's notation, a unit vector $\mathbf{x}$ sweeps half of the unit circle and $\mathbf{A}\mathbf{x}$ is drawn with it, for three $2 \times 2$ matrices. Whenever $\mathbf{A}\mathbf{x}$ is a multiple $\lambda\mathbf{x}$ of $\mathbf{x}$ it turns green, and that line of eigenvectors (Definition §35.4) stays drawn. Left: $\mathbf{A}$ with rows $(2, 1)$ and $(1, 2)$, eigenvalues $3$ on the line through $(1, 1)^T$ and $1$ on the line through $(1, -1)^T$. Middle: the rotation by $90^\circ$, rows $(0, -1)$ and $(1, 0)$; $\mathbf{A}\mathbf{x}$ is always perpendicular to $\mathbf{x}$, so there is no real eigenvalue (the eigenvalues are $\pm i$, with complex eigenvectors). Right: the shear with rows $(1, 1)$ and $(0, 1)$; only the $x_1$-axis is an eigenvector line, for the double eigenvalue $1$, the situation of Theorem §35.3 and of §40★. Example §35.3 below has two real eigenvalues, like the left panel, with eigenvector lines through $(1, 1)^T$ ($\lambda = 2$) and $(1, 4)^T$ ($\lambda = -1$).
+
 > [!definition] Definition §35.5: Characteristic Equation
 > Let $\mathbf{A}$ be an $n \times n$ matrix and $\lambda$ a number. By [[§35 Systems of Linear Algebraic Equations; Linear Independence, Eigenvalues, Eigenvectors#^thm-35-1|Theorem §35.1]], (26) has nonzero solutions if and only if
 >

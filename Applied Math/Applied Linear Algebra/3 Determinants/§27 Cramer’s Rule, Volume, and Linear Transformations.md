@@ -99,6 +99,10 @@ This section turns the theory of [[§24 Introduction to Determinants|§24]]–[[
 
 ^ex-27-1
 
+![[m235-22-a2.gif|440]]
+
+*(Not from the book; animation added, vault only.)* The system of Example §27.1(b), $3s\,x_1 - 2x_2 = 4$ (blue) and $-6x_1 + s\,x_2 = 1$ (red), as the parameter $s$ runs from $-4$ to $4$ and back. Both lines turn with $s$, and their intersection (black) is the Cramer's-rule solution $x_1 = \frac{4s + 2}{3(s + 2)(s - 2)}$, $x_2 = \frac{s + 8}{(s + 2)(s - 2)}$. The dotted curves are its track: from $(-.39, .33)$ at $s = -4$, through $(-\frac16, -2)$ at $s = 0$, to $(.5, 1)$ at $s = 4$. The readout gives $\det A = 3s^2 - 12$. As $s$ approaches $\pm 2$ the determinant goes to $0$, the lines become nearly parallel, and the intersection runs off to infinity. At $s = \pm 2$ itself (held) the lines are parallel and distinct, so there is no solution, as row reduction shows in the note ($0 = 5$ for $s = 2$; $-6x_1 - 2x_2 = 4$ and $= 1$ for $s = -2$). Past $\pm 2$ the point comes back from the opposite direction.
+
 > [!example] Example §27.2: Lagrange Interpolation
 > **Problem.** A quadratic $f(x) = Ax^2 + Bx + C$ has $f(1) = 3$, $f(2) = -1$, $f(3) = 2$. Find $f(4)$.
 >

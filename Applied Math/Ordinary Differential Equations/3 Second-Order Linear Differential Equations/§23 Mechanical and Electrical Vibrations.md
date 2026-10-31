@@ -351,6 +351,10 @@ So it is not $\gamma$ alone but the dimensionless ratio $\gamma^2/(4km)$ that de
 ![[m331-19-1.svg]]
 *[[§23 Mechanical and Electrical Vibrations#^ex-23-3|Example §23.3]] with $y(0) = 1$, $y'(0) = 0$. Undamped ($\gamma = 0$, dashed): $y = \cos(\sqrt{5/2}\,t)$. Underdamped ($\gamma = 2$): $y = e^{-t/2}(\cos\frac32 t + \frac13\sin\frac32 t)$ oscillates with decaying amplitude. Critically damped ($\gamma = 2\sqrt{10}$): $y = (1 + \frac{\sqrt{10}}{2}t)e^{-\sqrt{10}\,t/2}$, the fastest return without crossing. Overdamped ($\gamma = 12$): $y \approx 1.088e^{-0.450t} - 0.088e^{-5.550t}$, slowed by its root closer to $0$.*
 
+![[m331-19-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The damping coefficient $\gamma$ of Example §23.3, $2y'' + \gamma y' + 5y = 0$ with $y(0) = 1$, $y'(0) = 0$, increases continuously from $0$ to $12$. The top panel shows the solution (the undamped $\cos(\sqrt{5/2}\,t)$ stays in the background, dashed). The bottom panel shows the two roots $r = (-\gamma \pm \sqrt{\gamma^2 - 40})/4$ in the complex plane. While $\gamma < 2\sqrt{10}$ the roots are complex: they move along the circle $|r| = \sqrt{5/2}$, and their real part $-\gamma/4$ sets the decay (blue, underdamped; $\gamma = 2$ gives $-\frac12 \pm \frac32 i$). At $\gamma = 2\sqrt{10} \approx 6.32$ they meet at the double root $-\sqrt{10}/2 \approx -1.58$ (red, critically damped). After that they split along the real axis (green, overdamped; $-0.45$ and $-5.55$ at $\gamma = 12$). One of the two roots moves back toward $0$, which is why the overdamped solution returns more slowly than the critically damped one.
+
 > [!example] Example §23.4: Small Damping
 > The motion of a spring–mass system is governed by
 >

@@ -233,6 +233,10 @@ The uniqueness argument rests on an inequality that BDP proves inside Example 1;
 ![[m331-11-1.svg]]
 *The first four Picard iterates of [[§14 The Existence and Uniqueness Theorem#^ex-14-1|Example §14.1]], $\phi_1 = t^2$, $\phi_2 = t^2 + t^4/2$, $\phi_3$, $\phi_4$, and the solution $\phi = e^{t^2} - 1$ (dashed). As $n$ increases the iterates stay close to $\phi$ over a gradually increasing interval: $\phi - \phi_n$ is the tail $\sum_{k > n} t^{2k}/k!$, which is tiny for $|t| < 1$ and grows quickly beyond.*
 
+![[m331-11-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The Picard iterates of Example §14.1, $\phi_n(t) = t^2 + \frac{t^4}{2!} + \cdots + \frac{t^{2n}}{n!}$, one per frame for $n = 0, 1, \ldots, 10$ (red, the three previous ones faint), against the solution $\phi = e^{t^2} - 1$ (dashed). The lower panel shows the error $|\phi - \phi_n|$, the tail $\sum_{k > n} t^{2k}/k!$, on a logarithmic scale. The shaded strip is the interval where the error is below $0.05$ (a level chosen for the picture): $|t| < 0.55$ for $n = 1$, $1.00$ for $n = 3$, $1.45$ for $n = 6$ and $1.90$ for $n = 10$. Each iteration widens it, but only slowly, roughly like $\sqrt n$. The iterates converge for every $t$, but not uniformly on the whole line: outside the strip they are still far from $\phi$.
+
 ## The General Case
 
 From now on $f$ and $\partial f/\partial y$ are continuous on the closed rectangle

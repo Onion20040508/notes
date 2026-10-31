@@ -91,6 +91,10 @@ $$
 ![[m342-104-1.svg]]
 *$w = \sin z$ on the half strip $|x| \le \frac\pi2$, $y \ge 0$. The vertical half lines $x = \pm0.4, \pm0.8, \pm1.2$ (blue) go onto the upper halves of hyperbolas with foci $\pm1$, and the positive $y$ axis (green) onto the positive $v$ axis. The base $DB$ (red) goes onto the segment $[-1, 1]$, and the two walls (black) onto the rest of the real axis: the boundary of the strip is unfolded onto the boundary of the half plane.*
 
+![[m342-104-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The Remark "Method — Sweeping a Region by Curves", carried out for $w = \sin z$ on the half strip $|x| \le \pi/2$, $y \ge 0$ (drawn up to $y = 1.8$, chosen for the picture). First a vertical half line $x = c$ (bold blue) sweeps from the left wall to the right wall. By Proposition §104.1 its image is the upper half of the hyperbola branch $u^2/\sin^2 c - v^2/\cos^2 c = 1$ with foci $\pm1$ and vertex $\sin c$ (readout); the branch opens up as $c$ passes $0$, where it is the $v$ axis, and closes down again toward the wall images. The swept part of the strip and its image are shaded, and the lines $x = \pm0.4, \pm0.8, \pm1.2$ of the figure above stay behind: the image curves never cross, and the image fills the upper half plane one curve at a time. Then a horizontal segment $y = b$ (red) rises from the base. By Proposition §105.1 (and Example §105.2) its image is the upper half of the ellipse with the same foci $\pm1$ and semi-axes $\cosh b$, $\sinh b$, which grows out of the segment $[-1, 1]$ (the image of the base) and reaches $\cosh 1.8 \approx 3.11$, $\sinh 1.8 \approx 2.94$. The faint hyperbolas and the red ellipses cross at right angles, as the images of the orthogonal grid lines under a conformal map.
+
 > [!example] Example §104.2: The Right Half of the Strip
 > The right-hand half $0 \le x \le \pi/2$, $y \ge 0$ of the strip goes onto the first quadrant $u \ge 0$, $v \ge 0$.
 >

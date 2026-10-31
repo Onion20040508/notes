@@ -164,6 +164,10 @@ $$
 
 *Uses:* [[§13 Properties of Matrix Multiplication, Powers, and Transposes#^thm-13-1|§13.1]], [[§16 Characterizations of Invertible Matrices#^cor-16-2|§16.2]], [[§80 Sequences#^thm-80-8|Calc Thm. §80.8]] ($s^m \to 0$), [[§81 Monotonic and Bounded Sequences#^thm-81-1|Calc Thm. §81.1]] (bounded monotonic sequences converge)
 
+![[m235-16-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Formula (6), $\mathbf{x} = \mathbf{d} + C\mathbf{d} + C^2\mathbf{d} + \cdots$, for the three-sector economy of Example §19.1 with final demand $\mathbf{d} = (50, 30, 20)$. Each round of demand $C^m\mathbf{d}$ is stacked onto the bars of the three sectors (newest round red, earlier rounds in alternating blues): $C\mathbf{d} = (41, 21, 14)$, $C^2\mathbf{d} = (31.7, 15.9, 10.4)$, and so on, slowly for the first six rounds and then one round per frame up to $m = 25$. The small panel shows the entry sum of each round: $100$, $76$, $58$, $44.3$, …, shrinking by roughly a factor $.76$ per round. Since the column sums of $C$ are less than $1$, $C^m\mathbf{d} \to \mathbf{0}$ (Proposition §19.1). The stacks fill up to the dashed production vector $\mathbf{x} = (I - C)^{-1}\mathbf{d} \approx (225.9, 118.5, 77.8)$ found by row reduction in the example, with $(225.7, 118.4, 77.7)$ after $25$ rounds.
+
 > [!remark]- Connections
 > - (8) is the matrix form of the geometric series $\frac{1}{1 - t} = 1 + t + t^2 + \cdots$ for $|t| < 1$, [[§82 Series#^thm-82-1|Calc Thm. §82.1]]; "column sums less than 1" plays the role of $|t| < 1$ (it says that $C$ has norm less than $1$ in the norm given by the largest absolute column sum, which is the operator norm of $C$, [[§30 Boundedness and Continuity#^def-30-3|556 Def. §30.3]], for the norm $|x_1| + \cdots + |x_n|$ on $\mathbb{R}^n$).
 

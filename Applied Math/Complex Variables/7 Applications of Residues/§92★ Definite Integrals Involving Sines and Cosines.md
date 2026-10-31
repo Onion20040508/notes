@@ -98,6 +98,10 @@ $$
 
 ^ex-92-1
 
+![[m342-92-a1.gif|520]]
+
+*(Not from the book; animation added, vault only.)* Example §92.1 as $a$ runs through $(-1, 1)$, here once around the loop $a = 0.93\sin(2\pi t)$ (the range $|a| \le 0.93$ is chosen for the picture). Left: the unit circle $C$ and the zeros $z_1 = i(-1 + \sqrt{1 - a^2})/a$ (red) and $z_2 = i(-1 - \sqrt{1 - a^2})/a$ (grey) of the denominator of the integrand $\frac{2/a}{z^2 + (2i/a)z - 1}$ obtained with $z = e^{i\theta}$. Both lie on the imaginary axis, and since $|z_1z_2| = 1$, exactly one of them, $z_1$, is inside $C$. For small $|a|$, $z_1$ is near $0$ and $z_2$ is far away (off the view); as $|a|$ grows the two approach the circle from either side ($|z_1| = 0.680$ at $|a| = 0.93$), and they switch to the other half of the axis when $a$ changes sign. Right: the real integrand $1/(1 + a\sin\theta)$ on $[0, 2\pi]$, with its area $2\pi/\sqrt{1 - a^2} = 2\pi iB_1$ in the readout ($7.255$ at $a = \frac12$, $17.094$ at $|a| = 0.93$). As $|a| \to 1$ the pole $z_1$ closes in on $C$, the integrand develops a sharp peak at $\theta = 3\pi/2$ (or $\pi/2$ for $a < 0$), where $1 + a\sin\theta$ comes close to $0$, and the integral blows up.
+
 > [!example] Example §92.2: A Cosine of a Multiple Angle
 > Show that
 >

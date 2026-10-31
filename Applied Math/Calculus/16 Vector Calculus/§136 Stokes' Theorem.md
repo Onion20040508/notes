@@ -225,6 +225,10 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 
 ^ex-136-4
 
+![[m452-20-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Corollary §136.2 in motion, reused from MATH 452 (Multivariable Analysis). The boundary curve $C$, the unit circle in the $xy$-plane traversed counterclockwise seen from above (red), stays fixed, while the oriented capping surface $S$ bulges from almost flat (the unit disk) through the upper hemisphere to a large cap and back, its normal pointing upward and outward so that $C$ is positively oriented. The field is $\mathbf{F} = -y(1 + z)\,\mathbf{i} + x(1 + z)\,\mathbf{j}$, chosen in 452 so that its curl, $\operatorname{curl}\mathbf{F} = -x\,\mathbf{i} - y\,\mathbf{j} + 2(1 + z)\,\mathbf{k}$, is not constant. The colour on the cap is $\operatorname{curl}\mathbf{F} \cdot \mathbf{n}$, red where it is large and blue where it is small; it redistributes as the cap grows (larger near the top, smaller near the rim), but the flux $\iint_S \operatorname{curl}\mathbf{F} \cdot d\mathbf{S}$, computed numerically for every frame and shown in the title, stays $6.2832 = 2\pi$, which is $\int_C \mathbf{F} \cdot d\mathbf{r}$ (on $C$, $z = 0$, and $\int_C -y\,dx + x\,dy = 2\pi$). This is Equation (3) for a whole family of surfaces at once. Example §136.4 makes the same point with a different field and a circle in the plane $x = 0$; there too the flat disk is the easiest cap.
+
 > [!example] Example §136.5: A Cone Meets a Sphere
 > Let $\mathbf{F}(x, y, z) = \langle \sin z, x, \cos y \rangle$. Use Stokes' Theorem to calculate $\int_C \mathbf{F} \cdot d\mathbf{r}$, where $C$ is the curve of intersection of the cone $z = \sqrt{x^2 + y^2}$ and the sphere $x^2 + y^2 + z^2 = 9$.
 >
@@ -294,6 +298,10 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 
 *Uses:* [[§136 Stokes' Theorem#^thm-136-1|§136.1]], [[§136 Stokes' Theorem#^def-136-2|Def. §136.2]], [[§132 Curl and Divergence#^def-132-1|Def. §132.1]], [[§135 Oriented Surfaces and Flux#^def-135-5|Def. §135.5]]
 
+![[m452-11-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The limit (4) of Theorem §136.3 in the plane, reused from MATH 452 (Multivariable Analysis). The test circle $C_a$ of radius $a$ (written $\varepsilon$ in the GIF) shrinks around $P_0 = (1, 0.6)$, from $a = 0.9$ to $a = 0.01$, and the views scale with it, so the circle looks the same size throughout. The right panel is the theorem: for the plane field $\mathbf{v} = \frac13(-y^3\,\mathbf{i} + x^3\,\mathbf{j})$, with $\mathbf{n} = \mathbf{k}$, the circulation per unit area $\frac{1}{\pi a^2}\int_{C_a} \mathbf{v} \cdot d\mathbf{r}$ falls from $1.765$ through $1.399$ and $1.3605$ to $1.3601$, toward $\operatorname{curl}\mathbf{v}(P_0) \cdot \mathbf{k} = x^2 + y^2 = 1.36$ at $P_0$. (By Green's Theorem the quotient is the average of $x^2 + y^2$ over the disk, which is exactly $1.36 + a^2/2$.) The left panel is the same for divergence, the planar analogue of Theorem §137.3: the outward flux of $\frac13(x^3\,\mathbf{i} + y^3\,\mathbf{j})$ across the circle per unit area tends to its divergence $x^2 + y^2 = 1.36$. The arrows show the field on the circle; as the circle shrinks the field looks more and more uniform, and the quotient settles. Differences from the theorem: the GIF is two-dimensional, so the disk $S_a$ lies in the plane and $\mathbf{n} = \mathbf{k}$ is fixed; the fields were chosen in 452 so that the curl and the divergence are not constant.
+
 > [!remark]- Connections
 > - See also: [[§124★ Two-Dimensional Fluid Flow#^prop-124-2|342 Prop. §124.2]] (the planar case: the rotation of a plane flow as the limiting angular speed on small circles).
 
@@ -311,6 +319,10 @@ So the flux of a curl through a surface depends only on the boundary curve. This
 > *Source: 233 Practice Final Exam, Q1(c)*
 
 ^rem-136-3
+
+![[m233-114-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The paddle wheel of the remark, at the origin in the field $\mathbf{F} = \langle z - y, x - z, -x - y \rangle$ of its example, where $\operatorname{curl}\mathbf{F} = \langle 0, 2, 2 \rangle$ (red arrow) everywhere. The axle $\mathbf{n}$ (blue) swings once around a great circle through the direction of $\operatorname{curl}\mathbf{F}$. The orange arrows show $\mathbf{F}$ on a circle around the axle, in the plane perpendicular to $\mathbf{n}$. The wheel turns at a rate proportional to $\operatorname{curl}\mathbf{F} \cdot \mathbf{n} = 2\sqrt2\cos\theta$, where $\theta$ is the angle between $\mathbf{n}$ and $\operatorname{curl}\mathbf{F}$. It spins fastest when $\mathbf{n} = \frac{1}{\sqrt2}(\mathbf{j} + \mathbf{k})$ points along the curl ($\theta = 0$, rate $2\sqrt2 \approx 2.83$), slows down as $\mathbf{n}$ tilts away, stops when $\mathbf{n}$ is perpendicular to the curl ($\theta = 90^\circ$, here $\mathbf{n} = \mathbf{i}$), and spins fastest again, but in the negative sense about $\mathbf{n}$, when $\mathbf{n}$ points against the curl ($\theta = 180^\circ$). (That is the same rotation in space, seen along the reversed axle.) The path of $\mathbf{n}$ and the speed scale are chosen for the picture.
 
 ## Curl-Free Fields on ℝ³ Are Conservative
 

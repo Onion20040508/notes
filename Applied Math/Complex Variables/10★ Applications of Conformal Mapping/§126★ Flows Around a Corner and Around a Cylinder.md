@@ -115,6 +115,10 @@ To avoid an excess of notation, the same symbols $F$, $\phi$ and $\psi$ are used
 ![[m342-126-1.svg]]
 *Left: Example §126.1, streamlines $xy =$ const of $F = Az^2$; the fluid comes down along the $y$ axis and turns the corner, with a stagnation point at $0$. Right: Example §126.2, streamlines $(r - 1/r)\sin\theta = c$ of $F = A(z + 1/z)$ around the unit cylinder; the flow divides at the stagnation point $-1$ and rejoins at $1$, and is fastest at $\pm i$.*
 
+![[m342-126-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Fluid particles carried by the flow around the unit cylinder of Example §126.2, $F = A(z + 1/z)$ with $A = 1$, moving with the velocity $V = \overline{F'(z)} = A(1 - 1/\bar z^2)$ along the streamlines $(r - 1/r)\sin\theta = c$ (grey). The particles start in evenly spaced columns far upstream, so their spacing along a streamline shows the speed: they bunch up and almost stop in front of and behind the cylinder, near the stagnation points $\pm1$ (red), and are pulled apart over the top and bottom, where the speed on the cylinder reaches its maximum $2A$ at $\pm i$. Then the oncoming direction $\alpha$ turns from $0^\circ$ to $60^\circ$ (inset arrow: $V_\infty = Ae^{i\alpha}$), giving the oblique stream of Example §126.4, $F = A(ze^{-i\alpha} + e^{i\alpha}/z)$. Since $\zeta = ze^{-i\alpha}$ turns this flow back into the first one, the whole picture turns with $\alpha$, and the stagnation points $z = \pm e^{i\alpha}$ move round the circle.
+
 ## Two Variations
 
 > [!example] Example §126.3: Flow in a Wedge of Angle π/4

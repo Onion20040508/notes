@@ -64,6 +64,10 @@ The SVD imitates the following property of diagonalization. If $A$ is symmetric,
 ![[m235-51-1.svg]]
 *[[§61★ The Singular Value Decomposition#^ex-61-1|Example §61.1]]: the image of the unit sphere of $\mathbb{R}^3$ under $A$ is the region bounded by an ellipse in $\mathbb{R}^2$. Its semi-axes are $A\mathbf{v}_1 = (18, 6)$ and $A\mathbf{v}_2 = (3, -9)$, perpendicular ([[§61★ The Singular Value Decomposition#^thm-61-3|Theorem §61.3]]), of lengths $\sigma_1 = 6\sqrt{10}$ and $\sigma_2 = 3\sqrt{10}$. The direction $\mathbf{v}_3$ is collapsed to $\mathbf{0}$, so the sphere is flattened onto the plane, filling the inside of the ellipse.*
 
+![[m235-51-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The map $\mathbf{x} \mapsto A\mathbf{x}$ of Example §61.1, $A = \begin{bmatrix} 4 & 11 & 14 \\ 8 & 7 & -2 \end{bmatrix}$, from $\mathbb{R}^3$ to $\mathbb{R}^2$, done gradually. The target plane $\mathbb{R}^2$ is drawn as the floor $z = 0$ of the picture, at scale $1:10$, and every point of the unit sphere moves along $(1 - t)\mathbf{x} + t\,(\frac{1}{10}A\mathbf{x}, 0)$ for $0 \le t \le 1$, so the wire sphere is squashed into the dashed ellipse. The orthonormal eigenvectors of $A^TA$ ride along: $\mathbf{v}_1 = (1, 2, 2)/3$ (red) ends at $A\mathbf{v}_1 = (18, 6)$, the end of the major semi-axis, of length $\sigma_1 = \sqrt{360} = 6\sqrt{10}$; $\mathbf{v}_2 = (-2, -1, 2)/3$ (orange) ends at $A\mathbf{v}_2 = (3, -9)$, the end of the minor semi-axis, of length $\sigma_2 = 3\sqrt{10}$; and $\mathbf{v}_3 = (2, -2, 1)/3$ (green) shrinks to $\mathbf{0}$, the direction in which the sphere is flattened. Unlike a $2 \times 2$ SVD picture, the sphere does not just turn and stretch: one whole direction is lost, and the sphere fills the inside of the ellipse. ($A\mathbf{v}_1 \perp A\mathbf{v}_2$ looks oblique only because the floor is seen in perspective.) The interpolation and the $1:10$ scale are chosen for the picture.
+
 > [!theorem] Proposition §61.1: The Eigenvalues of AᵀA
 > Let $A$ be an $m \times n$ matrix. Then $A^TA$ is symmetric and can be orthogonally diagonalized. If $\{\mathbf{v}_1, \dots, \mathbf{v}_n\}$ is an orthonormal basis for $\mathbb{R}^n$ consisting of eigenvectors of $A^TA$, with eigenvalues $\lambda_1, \dots, \lambda_n$, then
 >
@@ -155,6 +159,10 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in [[§61★ The Singular Value 
 
 *Uses:* [[§61★ The Singular Value Decomposition#^prop-61-1|§61.1]], [[§61★ The Singular Value Decomposition#^def-61-1|Def. §61.1]], [[§51 Orthogonal Sets#^thm-51-1|§51.1]], [[§34 Rank#^def-34-1|Def. §34.1]] (rank)
 
+![[ladr-7.107-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 7.107). An orthonormal pair, drawn as a unit square, is turned through $0^\circ$ to $90^\circ$ and back (dashed: the right singular vectors $\mathbf{v}_1$ at $30^\circ$ and $\mathbf{v}_2$), and its image under a $2 \times 2$ matrix $A$ is shown. The image is a parallelogram whose corner angle changes. It is a rectangle, so that the images of the two vectors are orthogonal, only when the pair is $\mathbf{v}_1, \mathbf{v}_2$, the eigenvectors of $A^TA$: that is Theorem §61.3, $\{A\mathbf{v}_1, A\mathbf{v}_2\}$ orthogonal. The area is multiplied by $\sigma_1\sigma_2 = |\det A| = 1.6$ every time. The matrix is chosen for the picture.
+
 > [!remark]- Remark: Numerical Note — Effective Rank
 > The rank of $A$ may be very sensitive to small changes in its entries. Counting pivot columns does not work well when a computer row reduces $A$: roundoff error often creates an echelon form with full rank. In practice, the most reliable way to estimate the rank of a large matrix is to count its nonzero singular values ([[§61★ The Singular Value Decomposition#^thm-61-3|Theorem §61.3]]), treating extremely small nonzero singular values as zero. The number that remains is the **effective rank** of the matrix.
 
@@ -211,6 +219,10 @@ The vectors $A\mathbf{v}_1$ and $A\mathbf{v}_2$ in [[§61★ The Singular Value 
 ^pf-61-4
 
 *Uses:* [[§61★ The Singular Value Decomposition#^thm-61-3|§61.3]], [[§51 Orthogonal Sets#^thm-51-4|§51.4]], [[§51 Orthogonal Sets#^def-51-5|Def. §51.5]] (orthogonal matrices), [[§53 The Gram–Schmidt Process#^cor-53-2|§53.2]], [[§50 Orthogonal Complements and Angles#^prop-50-3|§50.3]], [[§51 Orthogonal Sets#^thm-51-1|§51.1]] (the extended orthonormal set is independent)
+
+![[ladr-7.70-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 7.70; Axler writes $V^*$, $s_k$, $f_k$ for Lay's $V^T$, $\sigma_k$, $\mathbf{u}_k$). $A = U\Sigma V^T$ for a $2 \times 2$ matrix as three moves on the unit circle and a grid. $V^T$ turns the right singular vectors $\mathbf{v}_1$ (at $30^\circ$) and $\mathbf{v}_2$ onto the axes. $\Sigma$ stretches by $\sigma_1 = 2$ and $\sigma_2 = 0.8$. $U$ turns the ellipse so that $A\mathbf{v}_1 = \sigma_1\mathbf{u}_1$ (at $70^\circ$) and $A\mathbf{v}_2 = \sigma_2\mathbf{u}_2$. Dashed: the final ellipse, whose semi-axes are $\sigma_1\mathbf{u}_1$ and $\sigma_2\mathbf{u}_2$. The matrix is chosen for the picture.
 
 > [!definition] Definition §61.2: Singular Value Decomposition; Singular Vectors
 > Any factorization $A = U\Sigma V^T$, with $U$ and $V$ orthogonal, $\Sigma$ as in (3), and positive diagonal entries in $D$, is called a **singular value decomposition** (or **SVD**) of $A$. The columns of $U$ are called **left singular vectors** of $A$, and the columns of $V$ are called **right singular vectors** of $A$.

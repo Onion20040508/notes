@@ -203,6 +203,10 @@ For quantitative information, solve (7).
 
 *Forward reference: [[§14 The Existence and Uniqueness Theorem#^thm-14-8|Theorem §14.8]] (BDP Theorem 2.4.2) is proved later, in [[§14 The Existence and Uniqueness Theorem|§14]] (BDP 2.8).*
 
+![[m331-8-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The logistic equation (7), $y' = r(1 - y/K)\,y$, with $r = 1$ and $K = 1$ (chosen for the picture), seen two ways at once. On the left is the phase line of Definition §9.5, the vertical $y$-axis, with the parabola $f(y)$ drawn sideways next to it: the equilibria $0$ (red, unstable) and $K$ (green, stable), arrows up on $0 < y < K$ and down on $y > K$. Three dots start at $y_0 = 0.02$, $0.15$ and $1.38$ and slide along the phase line; each one moves at speed $f(y)$, the length of its orange bar. On the right the same three values are drawn against $t$, so they trace the solutions (11). The dots crawl near $0$ and near $K$, where $f$ is small, and move fastest at $K/2$, where $f$ has its maximum $rK/4$. There each rising curve has its inflection point (orange dots; Proposition §9.2: $y'' = f'(y)f(y)$ changes sign where $f' = 0$). The dots below $K$ creep up toward $K$ without reaching it, and the dot above $K$ slides down toward it.
+
 So, for each $y_0 > 0$, the solution approaches the equilibrium solution $y = K$ as $t \to \infty$: after a long time the population is close to the saturation level regardless of its initial size, as long as that is positive, and solutions approach $K$ faster as $r$ increases. By contrast, solutions that start very near zero grow and approach $K$: the only way to make a solution remain near zero is to start *exactly* at zero.
 
 > [!definition] Definition §9.6: Asymptotically Stable and Unstable Equilibria

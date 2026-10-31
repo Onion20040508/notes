@@ -359,6 +359,10 @@ To justify the name, $e^{\mathbf{A}t}$ should also have the algebraic properties
 
 ^rem-39-3
 
+![[m331-33-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* The Picard iterates of this remark for $\mathbf{A} = \begin{pmatrix} 1 & 1 \\ 4 & 1 \end{pmatrix}$ (Example §39.2) and $\mathbf{x}^0 = (1, 0)^T$ (chosen for the picture), $\boldsymbol{\phi}^{(k)}(t) = \big(\mathbf{I} + \mathbf{A}t + \cdots + \mathbf{A}^k\frac{t^k}{k!}\big)\mathbf{x}^0$ for $k = 0, 1, \ldots, 10$, drawn as curves in the phase plane for $-1 \le t \le 0.5$ (blue; the previous iterate faint). The red curve is the trajectory $e^{\mathbf{A}t}\mathbf{x}^0 = \frac12(1, 2)^Te^{3t} + \frac12(1, -2)^Te^{-t}$ over the same times. $\boldsymbol{\phi}^{(0)}$ is the single point $\mathbf{x}^0$ and $\boldsymbol{\phi}^{(1)}(t) = (1 + t, 4t)^T$ is the tangent line at $\mathbf{x}^0$. Each further iterate bends onto the trajectory, first near $t = 0$ and then out to both ends. The readout gives the largest distance from the trajectory on $[-1, 0.5]$: $4.17$, $2.15$, …, $0.004$ at $k = 10$. The iterates are the partial sums of the series (23), so this is $e^{\mathbf{A}t}\mathbf{x}^0$ being assembled term by term.
+
 ## Diagonalizable Matrices
 
 A system of linear equations, algebraic or differential, is hard mainly because it is *coupled*: some equations involve more than one unknown, so all must be solved simultaneously. If each equation involves only one unknown, each can be solved by itself. So one tries to transform the system into an equivalent *uncoupled* one, which means transforming the coefficient matrix $\mathbf{A}$ into a *diagonal* matrix. Eigenvectors do this.
@@ -512,6 +516,10 @@ The columns of $\mathbf{\Psi}(t)$ in (44) are the solutions $\boldsymbol{\xi}^{(
 > *BDP: Examples 7.7.3 and 7.7.4*
 
 ^ex-39-3
+
+![[m331-33-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The flow of $\mathbf{x}' = \mathbf{A}\mathbf{x}$, $\mathbf{A} = \begin{pmatrix} 1 & 1 \\ 4 & 1 \end{pmatrix}$, seen in two coordinate systems, for $0 \le t \le 0.5$ and back. Left, in the coordinates $\mathbf{y}$ of the uncoupled system (46) $y_1' = 3y_1$, $y_2' = -y_2$: a square grid ($|y_1|, |y_2| \le 0.6$, chosen for the picture) is simply stretched by $e^{3t}$ along the $y_1$-axis (red) and shrunk by $e^{-t}$ along the $y_2$-axis (green); the readout shows $e^{\mathbf{D}t} = \operatorname{diag}(e^{3t}, e^{-t})$. Right, the same grid carried over by $\mathbf{x} = \mathbf{T}\mathbf{y}$, $\mathbf{T} = \begin{pmatrix} 1 & 1 \\ 2 & -2 \end{pmatrix}$: a grid of parallelograms with sides along the eigenvectors $\boldsymbol{\xi}^{(1)} = (1, 2)^T$ and $\boldsymbol{\xi}^{(2)} = (1, -2)^T$, which is stretched along $\boldsymbol{\xi}^{(1)}$ and shrunk along $\boldsymbol{\xi}^{(2)}$ in exactly the same way. The orange point is the same solution in both pictures. This is Theorem §39.8: $\mathbf{T}$ changes only the picture, not the dynamics, and $e^{\mathbf{A}t} = \mathbf{T}e^{\mathbf{D}t}\mathbf{T}^{-1}$ says "change to $\mathbf{y}$, flow diagonally, change back".
 
 > [!remark] Remark: Method — Solving x′ = Ax with the Matrix Exponential
 > For a constant matrix $\mathbf{A}$ with $n$ linearly independent eigenvectors:

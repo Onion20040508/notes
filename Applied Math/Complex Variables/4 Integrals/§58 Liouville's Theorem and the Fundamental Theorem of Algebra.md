@@ -39,6 +39,10 @@ Cauchy's inequality bounds $|f'(z_0)|$ by $M_R/R$, where $M_R$ is the maximum of
 
 *Uses:* [[§57 Some Consequences of the Extension#^thm-57-4|§57.4]], [[§25 Analytic Functions#^thm-25-3|§25.3]]
 
+![[m342-58-a1.gif|520]]
+
+*(Not from the book; animation added, vault only.)* Cauchy's inequality (Theorem §57.4) with $n = 1$, $|f'(z_0)| \le M_R/R$, as the radius of the circle $C_R$ about $z_0 = 0$ grows from $0.25$ to $5$ (left). The right panel plots the bound $M_R/R$ on a log scale for three cases. For an entire $f$ with $|f| \le M$ everywhere ($M = 1$ shown, blue), $M_R \le M$ and the bound $M/R$ falls to $0$; since $|f'(0)|$ does not depend on $R$, it must be $0$, and the same at every point: this is the proof of Liouville's theorem (Theorem §58.1). For $f = z$ (green) $M_R = R$ and the bound is exactly $1 = |f'(0)|$ for every $R$, so the inequality is sharp. For $f = e^z$ (red) the maximum of $|e^z|$ on $C_R$ is $e^R$, at $z = R$ (red dot), and $e^R/R$ never drops below $e$ (its minimum, at $R = 1$) and then grows, so the inequality says nothing against $f'(0) = 1$: a non-constant entire function must grow at least like $R$ on large circles, and $e^z$ grows much faster.
+
 In other words, no entire function except a constant is bounded in the complex plane. For instance, $\sin z$ is entire and not constant, so it is unbounded; [[§37 The Trigonometric Functions sin z and cos z#^ex-37-3|Example §37.3]] (a final exam question) also shows this directly, from $|\sin z| \ge |\sinh y|$.
 
 > [!remark]- Connections

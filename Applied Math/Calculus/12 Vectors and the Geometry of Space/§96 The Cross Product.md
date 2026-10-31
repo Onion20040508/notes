@@ -239,6 +239,10 @@ Given two vectors in space, the cross product produces a third vector perpendicu
 ![[m233-83-1.svg]]
 *(a) The parallelogram spanned by $\mathbf{a}$ and $\mathbf{b}$ has base $|\mathbf{a}|$ and height $|\mathbf{b}|\sin\theta$, so its area is $|\mathbf{a} \times \mathbf{b}|$; the vector $\mathbf{a} \times \mathbf{b}$ itself points out of the page, perpendicular to the parallelogram. (b) The parallelepiped spanned by $\mathbf{a}$, $\mathbf{b}$, $\mathbf{c}$: its base has area $|\mathbf{b} \times \mathbf{c}|$, and its height is the length of the projection of $\mathbf{a}$ onto the normal $\mathbf{b} \times \mathbf{c}$ (blue), which is $|\mathbf{a}||\cos\theta|$ ([[§97 Triple Products and Torque#^thm-97-2|Theorem §97.2]]).*
 
+![[m233-83-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Theorem §96.4 and Proposition §96.3 with $\mathbf{a}$ fixed and $\mathbf{b}$ turning once around in the plane of $\mathbf{a}$ (grey), here $\mathbf{a} = \langle 2, 0, 0 \rangle$ and $\mathbf{b} = 1.5\langle \cos\phi, \sin\phi, 0 \rangle$ (chosen for the picture), so that $\mathbf{a} \times \mathbf{b} = \langle 0, 0, 3\sin\phi \rangle$. The blue arrow $\mathbf{a} \times \mathbf{b}$ always stands perpendicular to the plane. Its length is $|\mathbf{a}||\mathbf{b}|\sin\theta$, the area of the shaded parallelogram (Corollary §96.6): $0$ at $\theta = 0$, largest ($3$) at $\theta = 90^\circ$, and $0$ again when $\mathbf{b}$ points opposite to $\mathbf{a}$ ($\theta = 180^\circ$), when the parallelogram collapses (Corollary §96.5). While $\mathbf{b}$ turns counterclockwise from $\mathbf{a}$ (seen from above), the right-hand rule makes $\mathbf{a} \times \mathbf{b}$ point up ($+\mathbf{k}$). Once $\mathbf{b}$ has passed the direction opposite to $\mathbf{a}$, the angle $\theta$ is measured the other way round and $\mathbf{a} \times \mathbf{b}$ points down ($-\mathbf{k}$), with the same length rule.
+
 > [!example] Example §96.2: Normal Vectors and Areas of Triangles
 > **(a)** Find a vector perpendicular to the plane through $P(1, 4, 6)$, $Q(-2, 5, -1)$ and $R(1, -1, 1)$, and the area of the triangle $PQR$.
 >

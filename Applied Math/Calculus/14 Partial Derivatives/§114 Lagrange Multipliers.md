@@ -48,6 +48,10 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 
 *Uses:* [[§110 The Chain Rule#^thm-110-3|§110.3]], [[§110 The Chain Rule#^thm-110-6|§110.6]] (Implicit Function Theorem), [[§112 Tangent Planes to Level Surfaces#^thm-112-1|§112.1]], [[§109 Tangent Planes and Linear Approximations#^thm-109-2|§109.2]], [[§28 Maximum and Minimum Values#^thm-28-2|§28.2]] (Fermat's Theorem)
 
+![[m452-14-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Theorem §114.1 for two variables, reused from MATH 452 (Multivariable Analysis), with $f(x, y) = xy$ on the constraint circle $x^2 + y^2 = 1$; this is not the function $x^2 + 2y^2$ of Example §114.1, which has its own figure below. The GIF calls the constraint function $\varphi$ where this note writes $g$: $g(x, y) = x^2 + y^2$, $k = 1$. A point runs once around the circle (green), with the level curve $xy = c$ of $f$ through it (blue), $\nabla f = \langle y, x\rangle$ (blue arrow) and $\nabla g = \langle 2x, 2y\rangle$ (green arrow), both drawn at half length. Right: the value of $f$ at the point against its polar angle $\theta$, $f = \cos\theta\sin\theta = \frac12\sin 2\theta$. Where the level curve crosses the circle, moving along the circle changes $f$, so the point is not an extreme value on the circle. At $\theta = 45^\circ, 135^\circ, 225^\circ, 315^\circ$ the level curve touches the circle instead: there the two gradients are parallel (both turn red), $\nabla f = \lambda\nabla g$ with $\lambda = \pm\frac12$, and $f = \pm\frac12$ is the maximum or minimum of $f$ on the circle. Equation (1) picks out exactly these four points.
+
 > [!remark]- Connections
 > - Rigorous treatment: [[§17 Optimization and Lagrange Multipliers#^thm-17-2|452 Thm. §17.2]], with the hypothesis $\nabla g \ne \mathbf{0}$ as the "constraint qualification" and the proof through the Implicit Function Theorem; hub [[Method of Lagrange Multipliers]].
 > - See also: [[§60★ Constrained Optimization#^thm-60-1|235 Thm. §60.1]] (the extremes of $\mathbf{x}^TA\mathbf{x}$ on the unit sphere are the largest and smallest eigenvalues of $A$; the Lagrange condition $\nabla f = \lambda\nabla g$ reads $A\mathbf{x} = \lambda\mathbf{x}$, though 235 proves it without calculus), worked in [[§60★ Constrained Optimization#^ex-60-2|235 Ex. §60.2]].
@@ -108,6 +112,10 @@ Many optimization problems ask for the extreme values of a function $f$ subject 
 
 ![[m233-97-1.svg]]
 *[[§114 Lagrange Multipliers#^ex-114-1|Example §114.1]](a): the level curves $x^2 + 2y^2 = c$ of $f$ (ellipses, green) and the constraint circle $x^2 + y^2 = 1$ (red). The ellipse $c = 1$ touches the circle from inside at $(\pm 1, 0)$, the ellipse $c = 2$ from outside at $(0, \pm 1)$; at these four points the gradients of $f$ and $g$ are parallel (arrows). Ellipses with $1 < c < 2$ cross the circle, so $f$ takes all values between $1$ and $2$ on it.*
+
+![[m233-97-a1.gif|470]]
+
+*(Not from the book; animation added, vault only.)* Example §114.1(a) with the level of $f(x, y) = x^2 + 2y^2$ as the moving quantity. The level ellipse $x^2 + 2y^2 = c$ (heavy green) grows from $c = 0.5$ to $c = 2.5$ and then shrinks back; the red curve is the constraint circle $g(x, y) = x^2 + y^2 = 1$. For $c < 1$ the ellipse lies inside the circle and $f$ never takes the value $c$ on it. At $c = 1$ it first touches the circle, at $(\pm1, 0)$, and there $\nabla f = \langle 2x, 4y \rangle$ (green arrow) and $\nabla g = \langle 2x, 2y \rangle$ (red arrow) point the same way, $\nabla f = 1\cdot\nabla g$: the minimum $1$. For $1 < c < 2$ the ellipse crosses the circle at four points, where the two gradients are not parallel, so $f$ still increases along the circle there. At $c = 2$ it last touches the circle, at $(0, \pm1)$, with $\nabla f = 2\,\nabla g$ ($\lambda = 2$): the maximum $2$. For $c > 2$ there is no common point again.
 
 > [!example] Example §114.2: The Box Without a Lid
 > A rectangular box without a lid is to be made from $12$ m² of cardboard. Find the maximum volume of such a box.

@@ -342,6 +342,10 @@ The same assumption is made here: that $F(x, y, z) = 0$ defines $z$ as a differe
 
 ^thm-110-6
 
+![[m452-12-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* Part (a) of Theorem §110.6 for the unit circle, reused from MATH 452 (Multivariable Analysis); the circle is the example used there, not one of the examples of this section. Here $F(x, y) = x^2 + y^2 - 1$, so $F_x = 2x$ and $F_y = 2y$, and a point $(a, b)$ runs once around the circle $F(x, y) = 0$, with $F_y$ and $F_x$ at the point shown in the title. Red: the arc near the point described as a graph $y = f(x)$, over the red interval of the $x$-axis; this is what part (a) promises wherever $F_y(a, b) \ne 0$. Green: the arc as a graph $x = g(y)$, over the green interval of the $y$-axis, which works wherever $F_x(a, b) \ne 0$ (part (a) with the roles of $x$ and $y$ exchanged). As the point approaches $(\pm1, 0)$ the red interval shrinks to nothing: there $F_y = 2b = 0$, the tangent is vertical, and near the point the circle is not the graph of any function of $x$ (two values of $y$ for each $x$ on one side, none on the other). The green description still works there. At $(0, \pm1)$ it is the other way round: $F_x = 0$, and only $y = f(x)$ is available. Where both work, Equation (5) gives the slope $\frac{dy}{dx} = -\frac{F_x}{F_y} = -\frac{x}{y}$.
+
 *Stewart omits the proof ("proved in advanced calculus"); see [[§15 The Implicit Function Theorem#^thm-15-1|452 Thm. §15.1]] for (a) and [[§15 The Implicit Function Theorem#^thm-15-2|452 Thm. §15.2]] for (b).*
 
 > [!remark]- Connections

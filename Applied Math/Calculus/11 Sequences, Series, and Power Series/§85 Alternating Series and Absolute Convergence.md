@@ -89,6 +89,10 @@ The tests so far apply only to series with positive terms. This section handles 
 ![[m233-73-1.svg]]
 *Partial sums of the alternating harmonic series $1 - \frac12 + \frac13 - \cdots$. The odd partial sums (red) decrease and the even ones (green) increase, both towards $s = \ln 2 \approx 0.693$. The sum always lies between two consecutive partial sums, so the error $|s - s_n|$ is less than the next step $b_{n+1}$ (orange, for $n = 8$): this is [[§85 Alternating Series and Absolute Convergence#^thm-85-2|Theorem §85.2]].*
 
+![[m451-15-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The zigzag of the Remark "Why It Works" drawn step by step, reused from MATH 451 (Single Variable Analysis), where it illustrates the key claim of a different proof of Theorem §85.1. The series is the alternating harmonic series of the figure above, $b_n = \frac1n$, but started at its second term: $b_2 - b_3 + b_4 - \cdots = \frac12 - \frac13 + \frac14 - \cdots$. Each arrow is one term, red to the right ($+b_n$) and blue to the left ($-b_n$), and its tip is the next partial sum of this series. By condition (i) each step reverses direction and is no longer than the one before, so the partial sums never leave $[0, b_2] = [0, \frac12]$ (shaded): $0 \le b_2 - b_3 + b_4 - \cdots \le b_2$. The red bar on the axis is the interval between the last two partial sums; it shrinks with the steps (condition (ii)) and always contains the sum, which here is $1 - \ln 2 \approx 0.307$. Applied to the tail after $s_n$, the same inequality says $|s - s_n| \le b_{n+1}$, the estimate of Theorem §85.2. The GIF writes $a_k$ for this note's $b_n$ and starts its tail at index $n = 2$.
+
 > [!remark]- Connections
 > - Rigorous treatment: [[§15 Alternating Series and Integral Tests#^thm-15-1|451 Thm. §15.1]], proved there with the [[§14 Series#^def-14-4|Cauchy criterion]] via the estimate $\big|\sum_{k=n}^{m} (-1)^k a_k\big| \le a_n$, which is also the content of [[§85 Alternating Series and Absolute Convergence#^thm-85-2|Theorem §85.2]].
 
@@ -342,3 +346,7 @@ Whether a convergent series is absolutely or conditionally convergent decides wh
 > (The $n$th terms add as $1 + 0$, $-\frac12 + \frac12 = 0$, $\frac13 + 0$, $-\frac14 - \frac14 = -\frac12$, $\frac15 + 0$, $-\frac16 + \frac16 = 0$, $\frac17 + 0$, $-\frac18 - \frac18 = -\frac14$, …; dropping the zeros leaves (6).) The series (6) contains the same terms as (4), rearranged so that one negative term follows each pair of positive terms, but its sum is different.
 
 ^rem-85-3
+
+![[m233-73-a1.gif|520]]
+
+*(Not from the book; animation added, vault only.)* Theorem §85.4(b) (Riemann) for the conditionally convergent series $1 - \frac12 + \frac13 - \frac14 + \cdots$, whose sum in the usual order is $\ln 2$ (dotted). The rearrangement is built greedily toward a target $r$: take the positive terms $1, \frac13, \frac15, \ldots$ (blue points) until the partial sum passes $r$, then the negative terms $-\frac12, -\frac14, \ldots$ (red points) until it drops below $r$, and repeat. Every term is used exactly once, in order within each sign. First $r = 1.5$, then $r = -0.5$ (targets chosen for the picture), 200 terms each. The partial sums swing around $r$, and the swings shrink because they are never larger than the last term used, which tends to $0$. The proportion of signs adjusts itself: after 200 terms the first run has used 167 positive and 33 negative terms, the second 17 positive and 183 negative. This only works because both $\sum \frac{1}{2k-1}$ and $\sum \frac{1}{2k}$ diverge; for an absolutely convergent series no rearrangement can change the sum (Theorem §85.4(a)).

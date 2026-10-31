@@ -344,3 +344,7 @@ When $A$ is $3 \times 3$, $|\det A|$ is the volume of the parallelepiped determi
 ^ex-41-4
 
 *Chain: earlier in [[§11 Linear Models in Business, Science, and Engineering#^ex-11-3|Chapter 1]] · [[§39 The Fibonacci Numbers and the City–Suburb Migration#City and Suburbs|Chapter 4]]*
+
+![[m235-33-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* Formula (5) of Example §41.4 as motion: $\mathbf{x}_k = .125\begin{bmatrix} 3 \\ 5 \end{bmatrix} + .225(.92)^k\begin{bmatrix} 1 \\ -1 \end{bmatrix}$ for $k = 0, 1, \ldots, 40$. The blue arrow is the component $.125\mathbf{v}_1$ along the eigenvector for $\lambda = 1$, and it never changes. The red arrow is the component along $\mathbf{v}_2 = (1, -1)$, which is multiplied by $.92$ at each step. So the point $\mathbf{x}_k$ slides down the line $x_1 + x_2 = 1$ (the shares always add up to $1$) to the steady state $(.375, .625)$ on the eigenline of $\mathbf{v}_1$, by smaller and smaller steps. The readout gives the populations for the $1\,000\,000$ people of Example §11.3, $\mathbf{x}_0 = (600\,000, 400\,000)$: $582\,000$ / $418\,000$ after one year, $565\,440$ / $434\,560$ after two, and $383\,011$ / $616\,989$ after forty, near the limit $375\,000$ / $625\,000$.

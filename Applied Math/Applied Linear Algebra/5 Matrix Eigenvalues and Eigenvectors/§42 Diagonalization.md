@@ -42,6 +42,10 @@ Powers of a diagonal matrix are trivial to compute, and so are powers of any mat
 
 ^ex-42-1
 
+![[m235-34-a1.gif|560]]
+
+*(Not from the book; animation added, vault only.)* $A = PDP^{-1}$ for $A = \begin{bmatrix} 7 & 2 \\ -4 & 1 \end{bmatrix}$ and $D = \begin{bmatrix} 5 & 0 \\ 0 & 3 \end{bmatrix}$ of Example §42.1(b), read as three moves. Both panels start with the grid of eigenvector coordinates (grey), the eigenvectors $\mathbf{v}_1 = (1, -1)$ for $5$ (blue) and $\mathbf{v}_2 = (-1, 2)$ for $3$ (red), their cell (shaded), and $\mathbf{x} = \mathbf{e}_2 = \mathbf{v}_1 + \mathbf{v}_2$ (black). On the left, $P^{-1}$ carries the eigen-grid onto the standard grid ($\mathbf{x} \to (1, 1)$, its eigen-coordinates), $D$ stretches the axes by $5$ and $3$ ($\to (5, 3)$), and $P$ carries everything back ($\to 5\mathbf{v}_1 + 3\mathbf{v}_2 = (2, 1)$). On the right, $A$ is applied directly through $(1 - t)I + tA$. These matrices have the same eigenvectors, so the eigenlines stay fixed while the cell is stretched along them, and both panels end in the same picture with $A\mathbf{e}_2 = (2, 1)$. Here $P$ has the columns $(1, -1)$ and $(-1, 2)$. That is the note's $P$ with its second column negated, which is again an eigenvector for $3$, gives the same $A = PDP^{-1}$, and has $\det P = 1$, so the moves can be shown continuously without a reflection. The in-between frames only interpolate.
+
 > [!definition] Definition §42.1: Diagonalizable Matrix
 > A square matrix $A$ is said to be **diagonalizable** if $A$ is similar to a diagonal matrix ([[§41 The Characteristic Equation#^def-41-3|Definition §41.3]]), that is, if $A = PDP^{-1}$ for some invertible matrix $P$ and some diagonal matrix $D$. (Equivalently, $P^{-1}AP = D$; the lecture writes $M^{-1}AM = D$ or $B^{-1}AB = D$.)
 >

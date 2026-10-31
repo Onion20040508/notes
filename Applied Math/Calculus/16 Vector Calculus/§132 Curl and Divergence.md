@@ -155,6 +155,10 @@ So if $\operatorname{div}\mathbf{F} \ne 0$, then $\mathbf{F}$ is not the curl of
 
 ^def-132-4
 
+![[m452-11-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The fluid readings of divergence and curl in Definitions §132.2 and §132.4, reused from MATH 452 (Multivariable Analysis). A small square of particles (red dot: one corner) is carried by the flows of three plane fields, time $t$ running from $0$ to $0.75$ and back. Left, the source $\mathbf{F} = x\,\mathbf{i} + y\,\mathbf{j}$, with $\operatorname{div}\mathbf{F} = 2$ and $\operatorname{curl}\mathbf{F} = \mathbf{0}$: the square spreads out and its area grows by the factor $e^{2t}$ (about $3$ at $t \approx 0.56$), but it does not turn. Middle, the rotation $\mathbf{F} = -y\,\mathbf{i} + x\,\mathbf{j}$, with $\operatorname{curl}\mathbf{F} = 2\,\mathbf{k}$ and $\operatorname{div}\mathbf{F} = 0$: the square turns counterclockwise by the angle $t$ (about $32^\circ$ at $t = 0.56$) with its area unchanged, the incompressible case. Right, the uniform flow $\mathbf{F} = \mathbf{i} + 0.4\,\mathbf{j}$, with zero divergence and zero curl: the square only moves. The readouts under each panel give the area factor and the angle turned; the title gives the divergence and the $\mathbf{k}$-component of the curl of the three fields ($2, 0, 0$ and $0, 2, 0$). The fields are those of a figure in 452, viewed as fields on $\mathbb{R}^3$ with no $\mathbf{k}$-component.
+
 > [!example] Example §132.1: Curl and Divergence of One Field
 > Let $\mathbf{F}(x, y, z) = xz\,\mathbf{i} + xyz\,\mathbf{j} - y^2\,\mathbf{k}$.
 >

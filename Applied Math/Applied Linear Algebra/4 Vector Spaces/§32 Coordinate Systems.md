@@ -110,6 +110,10 @@ A basis imposes a coordinate system on a vector space. Every vector is a linear 
 ![[m235-26-1.svg]]
 *[[§32 Coordinate Systems#^ex-32-2|Example §32.2]] on two kinds of graph paper. On the standard grid the point $\mathbf{x}$ has address $(4, 5)$. On the grid built from $\mathbf{b}_1$ (blue lines) and $\mathbf{b}_2$ (green lines), the same point is reached by going $3$ steps along $\mathbf{b}_1$ and then $2$ steps along $\mathbf{b}_2$, so $[\mathbf{x}]_{\mathcal B} = (3, 2)$.*
 
+![[ladr-3.84-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 3.84). Remark: Coordinates as Graph Paper as a motion: one fixed vector $\mathbf{x} = (-1, 0)$ (red), and the standard graph paper morphing into $\mathcal{B}$-graph paper for the basis $\mathbf{b}_1 = (4, 2)$, $\mathbf{b}_2 = (5, 3)$ (Axler's $u_1, u_2$). The point does not move; only its address changes, from $(-1, 0)$ to $[\mathbf{x}]_{\mathcal B} = (-1.5, 1) = P_{\mathcal B}^{-1}\mathbf{x}$. Here $P_{\mathcal B} = [\,\mathbf{b}_1\ \ \mathbf{b}_2\,]$ is the change-of-coordinates matrix of Definition §32.3, with columns $(4, 2)$ and $(5, 3)$. Lay's Example §32.2 is the same computation for $\mathbf{b}_1 = (2, 1)$, $\mathbf{b}_2 = (-1, 1)$ and $\mathbf{x} = (4, 5)$, where $[\mathbf{x}]_{\mathcal B} = (3, 2)$.
+
 The matrix in (3) changes the $\mathcal{B}$-coordinates of a vector into its standard coordinates. The same works for any basis of $\mathbb{R}^n$.
 
 > [!definition] Definition §32.3: Change-of-Coordinates Matrix

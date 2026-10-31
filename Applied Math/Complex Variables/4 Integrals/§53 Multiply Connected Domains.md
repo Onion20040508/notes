@@ -59,6 +59,10 @@ For example, the annulus between two concentric circles, and the domain inside a
 ![[m342-53-1.svg]]
 *The proof for $n = 2$. The cuts $L_1$ (from $C$ to $C_1$), $L_2$ (from $C_1$ to $C_2$) and $L_3$ (from $C_2$ to $C$) split the domain into an upper piece bounded by $\Gamma_1$ and a lower piece bounded by $\Gamma_2$. The upper edges of the cuts (arrows to the right) belong to $\Gamma_1$, the lower edges (arrows to the left) to $\Gamma_2$; together they cancel. What remains is $C$ counterclockwise and $C_1$, $C_2$ clockwise, each with the domain on its left.*
 
+![[m342-53-a1.gif|440]]
+
+*(Not from the book; animation added, vault only.)* Theorem §53.1 and the principle of deformation of paths (Corollary §53.2) for $f(z) = \frac1z + \frac2{z - 2}$ (chosen for the picture), which has the singular points $0$ and $2$. An irregular positively oriented contour $C$ around both points deforms continuously into two small circles joined by a thin channel, the setting of the figure above. The two edges of the channel are traversed in opposite directions and cancel, and what is left is $\int_{C_1} + \int_{C_2} = 2\pi i + 4\pi i$ by Example §45.5. The readout, computed numerically along the moving contour, stays at $6\pi i$ the whole time. Then the contour is pushed across the point $2$. At the moment it passes through $2$ the integral is undefined, and afterwards it is $2\pi i$: the deformation principle holds only while no singular point is crossed.
+
 > [!remark]- Connections
 > - The same cutting argument proves Green's theorem for regions with holes, [[§131 Extended Versions of Green's Theorem#^thm-131-2|Calc Thm. §131.2]]: the outer boundary is counterclockwise and the inner boundaries clockwise, so that the region is always on the left. Applied with the Cauchy–Riemann equations ([[§21 Cauchy–Riemann Equations#^thm-21-1|Theorem §21.1]]), as in the proof of [[§50 Cauchy–Goursat Theorem#^thm-50-2|Theorem §50.2]], that version gives Theorem §53.1 for functions with continuous $f'$. The rigorous Green's theorem, [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]], is stated for a region bounded by one simple closed curve; it extends to regions with holes by the same cutting.
 
@@ -117,6 +121,10 @@ The name comes from the picture: if $C_1$ is continuously deformed into $C_2$, a
 > *B&C: Sec. 53, Example*
 
 ^ex-53-1
+
+![[m452-22-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Reused from Multivariable Analysis (§39, closed and exact forms), where it shows the real form $\omega = (x\,dy - y\,dx)/(x^2 + y^2)$; here it illustrates Example §53.1. A loop is dragged across the punctured plane and deformed on the way. While it misses the origin (blue) the integral is $0$ (Cauchy–Goursat, since $1/z$ is analytic inside the loop). Once it encloses the origin (red), the readout $2\pi$ of the original becomes $\int_C dz/z = 2\pi i$ here: on a closed contour, $\int_C dz/z = \int_C \frac{x\,dx + y\,dy}{x^2 + y^2} + i\int_C \frac{x\,dy - y\,dx}{x^2 + y^2}$, and the real part vanishes because it is exact ($d\ln|z|$), so the $2\pi$ of $\omega$ is the imaginary part. Wobbling the loop changes neither value as long as it does not cross the origin: this is the principle of deformation of paths (Corollary §53.2). For two singular points and the moment the value jumps, see m342-53-a1 above.
 
 > [!example] Example §53.2: Replacing a Square by a Circle
 > Let $C_1$ denote the positively oriented boundary of the square whose sides lie along the lines $x = \pm1$, $y = \pm1$, and let $C_2$ be the positively oriented circle $|z| = 4$. Explain why

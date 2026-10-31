@@ -196,6 +196,10 @@ Functions satisfying the hypotheses of [[§26 Definition of the Laplace Transfor
 
 ^ex-26-2
 
+![[m331-21-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Example §26.2(b) with $a = 1$: the Laplace integral $\int_0^\infty e^{-st}e^{at}\,dt$ of $f(t) = e^{t}$ (grey, dotted) as $s$ increases from $0.5$ to $4$. Left: the integrand $e^{-st}e^{at} = e^{-(s - a)t}$ and the area under it (shaded). For $s < a$ the integrand grows and for $s = a$ it is the constant $1$, so the area over $[0, A]$ grows without bound as $A \to \infty$ and $F(s)$ is not defined (grey band on the right). For $s > a$ the integrand decays and the area is finite, equal to $F(s) = \frac{1}{s - a}$: $1$ at $s = 2$ and $\frac13$ at $s = 4$. Right: the dot traces $F(s) = \frac{1}{s - 1}$, which comes down from infinity at the vertical asymptote $s = a$. This is the restriction "$s > a$" in $\mathcal{L}\{e^{at}\} = \frac{1}{s - a}$.
+
 > [!remark]- Connections
 > - See also: [[§42 Definite Integrals of Functions w(t)#^ex-42-5|342 Ex. §42.5]] (the transform of $1$ for complex $s$ with $\operatorname{Re} s > 0$).
 

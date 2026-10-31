@@ -118,6 +118,10 @@ The Gram–Schmidt process turns any basis $\mathbf{x}_1, \ldots, \mathbf{x}_p$ 
 
 *Uses:* [[§52 Orthogonal Projections#^thm-52-1|§52.1]], [[§51 Orthogonal Sets#^thm-51-1|§51.1]], [[§33 The Dimension of a Vector Space#^thm-33-5|§33.5]] (the Basis Theorem)
 
+![[ladr-6.32-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 6.32). The Gram–Schmidt process on three vectors $\mathbf{x}_1, \mathbf{x}_2, \mathbf{x}_3$ of $\mathbb{R}^3$, chosen for the picture. $\mathbf{x}_2$ loses its projection onto $\mathbf{v}_1$ (green). $\mathbf{x}_3$ loses its projection onto the plane $\operatorname{Span}\{\mathbf{v}_1, \mathbf{v}_2\}$ (blue), which is formula (2) of the proof. Axler normalizes after each step, so his vectors $e_1, e_2, e_3$ are the unit vectors $\mathbf{v}_k/\|\mathbf{v}_k\|$; Lay normalizes only at the end (QR, orthonormal bases). The span condition (1) is visible at every step: the new vector lies in the span of the old ones together with the next $\mathbf{x}$. The camera turns slowly.
+
 > [!remark]- Connections
 > - Rigorous treatment: [[§21 Orthonormal Bases#^ladr-6-32|LADR 6.32]] (Gram–Schmidt for a linearly independent list in any inner product space; Axler normalizes at every step, $e_k = f_k / \|f_k\|$, and proves the same span property (1)).
 > - For a countable linearly independent sequence in a Hilbert space the process runs forever and produces an orthonormal sequence with the same spans: [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|556 Lem. §28.2]].

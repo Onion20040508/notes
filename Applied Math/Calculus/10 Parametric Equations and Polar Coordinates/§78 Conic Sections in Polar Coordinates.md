@@ -93,6 +93,10 @@ tags: [calculus]
 ![[m233-68-1.svg]]
 *The focus–directrix description with the focus at the pole and the directrix $x = d$. For $P(r, \theta)$, $|PF| = r$ and $|Pl| = d - r\cos\theta$ (here $\theta > \pi/2$, so $r\cos\theta < 0$), and the conic is where $|PF| = e|Pl|$. Here $e = 0.6$: an ellipse, with $F$ as its right-hand focus.*
 
+![[m233-68-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The polar conic $r = ed/(1 + e\cos\theta)$ of Theorem §78.3, with the focus $F$ at the pole and the directrix $l$: $x = d$ (blue) fixed at $d = 2$, while the eccentricity slides from $e = 0.3$ up to $1.8$ and back (the value of $d$ and the range of $e$ are chosen for the picture). For $e < 1$ the curve is an ellipse with $F$ as its right-hand focus; it stretches to the left as $e$ grows, opens into a parabola at $e = 1$ (pause), and for $e > 1$ becomes a hyperbola: the branch around $F$ comes from $r > 0$, and the second branch (dashed), to the right of $l$, from the angles where $1 + e\cos\theta < 0$, so $r < 0$; at $e = 1.8$ the two vertices are at $x = 1.29$ and $x = 4.5$. The green segments are $|PF| = r$ and $|Pl| = d - r\cos\theta$ for a running point $P$, and the readout checks $|PF| = e\,|Pl|$ (Theorem §78.1) in every frame.
+
 ## Polar Equations of Conics
 
 To rotate a polar curve, rotate its angle variable.

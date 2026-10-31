@@ -171,6 +171,10 @@ Periodicity means that $e^z$ is completely described by its values on one horizo
 ![[m342-30-1.svg]]
 *The map $w = e^z$ on the strip $-\pi < y \le \pi$. Vertical segments $x = -1, -\frac12, 0, \frac12, 1$ (blue) go to circles of radius $e^x$; horizontal lines $y = k\pi/4$ (red) go to rays at angle $y$ (the lines $y = \pm\frac\pi2$ go to the imaginary axis, $y = 0$ to the positive real axis, and $y = \pi$ to the negative real axis). The strip is carried one to one onto the punctured plane $w \ne 0$, and each further strip of height $2\pi$ covers it again.*
 
+![[m342-30-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The map $w = e^z$ by sweeping, with $|e^z| = e^x$ and $\arg e^z = y$ (Proposition §30.1). First a vertical segment $x = c$, $-\pi < y \le \pi$, moves from $x = -2$ to $x = 1$, and its image, the circle of radius $e^c$, grows from $0.14$ to $2.72$; earlier positions stay faint. The circles crowd toward $0$ but never reach it, which is $e^z \ne 0$. Then a horizontal line $y = c$ (drawn for $-2 \le x \le 1$) rises from $y = -\pi$ to $y = 3\pi$, and its image ray turns with angle $c$. The first strip $-\pi < y \le \pi$ turns the ray once around and fills the punctured plane; the second strip $\pi < y \le 3\pi$ turns it around again over the same rays. This is the periodicity $e^{z + 2\pi i} = e^z$ (Proposition §30.4): every strip of height $2\pi$ is used once. (The $z$ panel is not drawn to scale vertically.)
+
 The figure already shows that $e^z$ takes every nonzero value $w$: once in each strip. This is proved in [[§31 The Logarithmic Function#^thm-31-1|Theorem §31.1]]. In practice an equation $e^z = w_0$ is solved by comparing exponential forms, using [[§10 Roots of Complex Numbers#^prop-10-1|Proposition §10.1]]: *two nonzero complex numbers $r_1e^{i\theta_1}$ and $r_2e^{i\theta_2}$ are equal if and only if $r_1 = r_2$ and $\theta_1 = \theta_2 + 2k\pi$ for some integer $k$.*
 
 > [!remark] Remark: Method — Solving e^g(z) = w₀

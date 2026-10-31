@@ -48,6 +48,10 @@ A picture on a screen is stored as a list of points, the columns of a data matri
 ![[m235-17-1.svg]]
 *[[§20 Applications to Computer Graphics#^ex-20-1|Example §20.1]]. Left: the regular N with its eight vertices. Middle: the sheared N, data matrix $AD$; each vertex moves right by a quarter of its height (dashed: the original). Right: the composite $SA$, which also squeezes the width by the factor $.75$. Only the vertices are transformed; the segments between them are redrawn, which is legitimate because linear maps send segments to segments.*
 
+![[m235-17-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Example §20.1 in motion. The eight vertices of the letter N (columns of $D$) are moved by the matrices $(1 - t)I + tA$ with the shear $A = \begin{bmatrix} 1 & .25 \\ 0 & 1 \end{bmatrix}$, and then by $(1 - t)A + t\,SA$ with $S = \begin{bmatrix} .75 & 0 \\ 0 & 1 \end{bmatrix}$, so that the end result is the composite $SA = \begin{bmatrix} .75 & .1875 \\ 0 & 1 \end{bmatrix}$. In each frame only the vertices are computed, and the segments between them are redrawn (Remark: Why Figures Are Built from Segments). The dashed outline is the original N. Under the shear every vertex moves right by a quarter of its height, so the bottom vertices 1, 2, 4 stay put and the N leans into italics. Vertex 3 (red) goes from $(.5, 6.42)$ to $(2.105, 6.42)$, as computed in the note. The scaling then pulls every $x$-coordinate in by the factor $.75$, and vertex 3 ends at $(1.579, 6.42)$.
+
 > [!remark] Remark: Why Figures Are Built from Segments
 > The standard transformations of computer graphics map line segments onto line segments (for a linear $T$, the segment $\{(1 - t)\mathbf{p} + t\mathbf{q} : 0 \le t \le 1\}$ goes to $\{(1 - t)T(\mathbf{p}) + tT(\mathbf{q})\}$, the segment between the images; Lay's Exercise 27 in Section 1.8, [[§9 Introduction to Linear Transformations|§9]]). So once the vertices of an object have been transformed, their images can be joined by the appropriate segments to produce the image of the whole object. Curved letters are stored with additional formulas for the curves, and curves are often approximated by short segments.
 
@@ -239,6 +243,10 @@ A three-dimensional object is shown on the two-dimensional screen by projecting 
 > *Lay: Example 2.7.8*
 
 ^ex-20-4
+
+![[m235-17-a2.gif|560]]
+
+*(Not from the book; animation added, vault only.)* The perspective projection of Example §20.4, with the box moved along the $z$-axis toward the eye at $(0, 0, 10)$ and back. The shifts of the box are chosen for the picture; the book's position is held. On the left, the side view in the $xz$-plane: the rays from the eye through the top edge $x = 5$ of the near face $z = 5$ (blue) and of the far face $z = 4$ (red) meet the screen $z = 0$ at $x^* = x/(1 - z/10)$. On the right, the image on the screen, near face blue and far face red. As the box approaches the eye both images grow, and the near face is always the larger one, because its scaling factor $1/(1 - z/10)$ is bigger (readout). At the book's position the factors are $2$ and $1/.6$, which give the image vertices $(6, 2)$ and $(8.3, 1.7)$ of the note. When the far face touches the screen ($z = 0$) it is not enlarged at all.
 
 > [!remark]- Remark: Numerical Note
 > Continuous movement of 3D objects requires intensive computation with $4 \times 4$ matrices, particularly when surfaces are rendered realistically with texture and lighting. High-end graphics boards have $4 \times 4$ matrix operations and graphics algorithms built into their chips, and perform the billions of matrix multiplications per second needed for realistic color animation in 3D games. (Further reading: Foley, van Dam, Feiner and Hughes, *Computer Graphics: Principles and Practice*, Chapters 5 and 6.)

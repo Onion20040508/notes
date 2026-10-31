@@ -259,6 +259,10 @@ A common problem in applied mathematics is to approximate a function $f$ in a sp
 
 *Uses:* [[§56 Inner Product Spaces#^prop-56-3|§56.3]], [[§56 Inner Product Spaces#^prop-56-1|§56.1]], [[§56 Inner Product Spaces#^def-56-2|Def. §56.2]]
 
+![[ladr-6.14-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Reused from Linear Algebra (LADR 6.14). The proof of the Cauchy–Schwarz inequality as a picture. Lay projects $\mathbf{v}$ onto $\mathbf{u}$; here a vector of length $1.6$ turns around the origin and is projected onto a fixed vector, which is the same argument with the letters swapped. The projection (blue leg) has length $|\langle \mathbf{u}, \mathbf{v}\rangle|$ divided by the length of the fixed vector. It never exceeds the turning vector, the hypotenuse of the right triangle (Proposition §56.3), and the bars compare the two lengths. They are equal exactly when the orthogonal part vanishes, at $0^\circ$ and $180^\circ$, that is, when the two vectors are linearly dependent. The vectors are chosen for the picture.
+
 In $\mathbb{R}^n$ this is the Cauchy inequality $(u_1v_1 + \cdots + u_nv_n)^2 \le (u_1^2 + \cdots + u_n^2)(v_1^2 + \cdots + v_n^2)$, which the lecture read off from $\mathbf{u} \cdot \mathbf{v} = \|\mathbf{u}\|\,\|\mathbf{v}\|\cos\vartheta$ in $\mathbb{R}^2$ and $\mathbb{R}^3$ ([[§50 Orthogonal Complements and Angles#^rem-50-1|§50, Remark: The Cauchy Inequality]]). The proof above needs no angles, and it is what justifies defining the angle in $\mathbb{R}^n$ by $\cos\vartheta = \mathbf{u} \cdot \mathbf{v} / (\|\mathbf{u}\|\,\|\mathbf{v}\|)$.
 
 > [!theorem] Theorem §56.5: The Triangle Inequality
@@ -364,3 +368,7 @@ In $\mathbb{R}^n$ this is the Cauchy inequality $(u_1v_1 + \cdots + u_nv_n)^2 \l
 > *Lay: Example 6.7.8*
 
 ^ex-56-5
+
+![[m235-46-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The last Gram–Schmidt step of Example §56.5, done continuously in $C[0, 1]$ with $\langle f, g\rangle = \int_0^1 f(t)g(t)\,dt$. The blue curve is $f = 12t^2 - a\,q_1 - c\,q_2$: first $a$ runs from $0$ to $4$ (the whole graph drops by $4$), then $c$ runs from $0$ to $6$ (the line $6q_2 = 12t - 6$ is subtracted, which tilts the graph), ending at $q_3 = 12t^2 - 12t + 2$. The two small panels show the products $f\,q_1$ and $f\,q_2$ with their signed areas (red above, blue below the axis); these areas are the inner products in the readouts. $\langle f, q_1\rangle$ falls from $4$ to $0$ in the first stage while $\langle f, q_2\rangle$ stays at $2$, because $q_1 \perp q_2$; in the second stage $\langle f, q_2\rangle = 2 - c/3$ falls to $0$ (since $\langle q_2, q_2\rangle = \frac13$) and $\langle f, q_1\rangle$ stays $0$. At the end both areas cancel: $q_3$ is orthogonal to $1$ and to $2t - 1$.

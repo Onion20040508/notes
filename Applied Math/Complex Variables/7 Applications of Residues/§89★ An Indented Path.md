@@ -113,6 +113,10 @@ When the integrand has a singular point on the real axis, the contour of §85 mu
 ![[m342-89-1.svg]]
 *The indented contour of Example §89.1: the legs $L_1$, $L_2$ on the real axis, the large semicircle $C_R$ counterclockwise and the small semicircle $C_\rho$ clockwise around the pole of $e^{iz}/z$ at the origin. The pole is outside the contour, so the integral around it is $0$; in the limit $C_\rho$ contributes $-\pi i$ times the residue, half of a full clockwise circle.*
 
+![[m342-89-a1.gif|520]]
+
+*(Not from the book; animation added, vault only.)* The limits in Example §89.1. Left: the indented contour for $e^{iz}/z$, with the legs $L_1$, $L_2$ (blue), the large semicircle $C_R$ (orange) and the small clockwise semicircle $C_\rho$ (red) around the pole at $0$. First $\rho$ shrinks from $1.5$ to $0.02$ with $R = 6$, then $R$ grows from $6$ to $60$ (the view zooms out). Right: the three contributions, which by Cauchy–Goursat add to $0$ (equation (5)). All three happen to be purely imaginary, so they are drawn as a waterfall of imaginary parts: the legs, $2i\int_\rho^R\frac{\sin x}{x}\,dx$, go up, $\int_{C_R}$ adds a little, and $\int_{C_\rho}$ comes back down to $0$. As $\rho \to 0$ the $C_\rho$ term tends to $-\pi i$ times the residue $1$ (Theorem §89.1; $-3.102i$ at $\rho = 0.02$). As $R \to \infty$ the $C_R$ term tends to $0$ by Jordan's lemma ($+0.292i$ at $R = 6$, $-0.032i$ at $R = 60$). So the legs tend to $\pi i$ (the dashed level; $3.133i$ at the end), which is $\int_0^\infty\frac{\sin x}{x}\,dx = \frac\pi2$.
+
 > [!remark]- Connections
 > - Dirichlet's integral is the value at $x = 0$ of the Fourier integral of the rectangular pulse, [[§18 Fourier Integral#^ex-18-2|341 Ex. §18.2]], and it governs the Gibbs overshoot shown there; Powers evaluates it by real methods (Exercise 1.9.6).
 
