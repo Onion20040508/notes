@@ -7,8 +7,8 @@ section: C6b.2
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c, draft]
 ---
-> [!warning] Draft for review — not yet part of the chapter
-> Planned new opening of the cross-section part of C6b (plan `qft-C/C6-RESTRUCTURE-PLAN.md`, §5 and "Demo brief"). The current [[§C6b.4 Wave Packets and the Cross Section|§C6b.4]] is unchanged. Box IDs here (`dr-xs-…`) are provisional.
+> [!warning] Draft — APPLIED 2026-10-31 (kept as a record)
+> Applied in the C6b restructure "Yu's route is the main line" (plan `qft-C/C6-RESTRUCTURE-PLAN.md`, last section; map `qft-C/C6B-YU-MAP.json`): parts (i)–(ii) became [[§C6b.2 Transition Probabilities in a Box|§C6b.2]] and [[§C6b.3 The Cross Section|§C6b.3]] (the annotated formula ends §C6b.3); part (iii) became the opening table of [[§C6b.4 Wave Packets and the Cross Section|§C6b.4]], the careful version; every item of the audit (iv) is fixed in §C6b.1 and §C6b.4–§C6b.7 (and a CA home, [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]). Section numbers in this draft were rewritten by the renumbering (old §C6b.2–§C6b.7 → §C6b.4–§C6b.9); its own box IDs (`dr-xs-…`) were never vault IDs. Do not cite this note; cite the sections above.
 
 *Sources: Yu Zhao-Huan, 量子场论讲义, §6.5.1–§6.5.2, pp. 239–244, eqs. (6.276)–(6.321) (page images checked, PDF pp. 247–252) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 102–106, eqs. (4.65)–(4.80) · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), slides 8, 11–16 · the user's PHY 513 notes, Ch. 15 §15.2–§15.5 and §15.10 (paragraph "Correspondence with Yu").*
 

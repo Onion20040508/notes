@@ -11,13 +11,24 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.8 (Principle "Decay rate", paragraph "Reading the formula", Caution "'Corollary of studying interacting wave function (2nd term)'", eq. (BWprop), Figure "breitwigner", paragraph "Relation to non-relativistic decay", eq. (GammaNR), Principle "The width is invariant; the decay rate is time-dilated", paragraph "Checks (filled in)") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part C, slides 22–23, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 101, 107–108, eqs. (4.62)–(4.64), (4.86) · Yu Zhao-Huan, 量子场论讲义, §6.5.4, eqs. (6.367)–(6.378); §6.5.5, eqs. (6.379)–(6.385); §10.6, eqs. (10.259)–(10.275) · the user's PHY 513 notes, Ch. 15 §15.8, paragraph "Two-body decays (filled in)" · PHY 513, Problem Set 8, Problem 4 (= PS Problem 4.2; the user's solution).*
 
-"The other one that's really important and common is … one to $n$, which does not seem like scattering at all": the decay of one particle into $n$ decay products. The wave-packet construction of [[§C6b.4 Wave Packets and the Cross Section|§C6b.4]] was built around two packets and an impact parameter and does not apply as it stands; the lecture stated the result, the decay rate $d\Gamma = |\mathcal M|^2d\Pi_n/2m_A$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]), with the same final phase space as before ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^def-c6b-6-1|Def. §C6b.6.1]]), and derived here by Yu's box route. For two decay products everything but the direction is fixed ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-5|Theorem §C6b.7.5]]); the decay $\Phi \to \phi\phi$ of Problem Set 8 is worked as the user solved it ([[§C6b.7 Decay Rates and Widths#^ex-c6b-7-1|Example §C6b.7.1]]). In relativistic physics one quotes the width $\Gamma$, an energy, rather than the lifetime. The width also appears in the propagator of an unstable particle, $i/(p^2 - m^2 + im\Gamma)$ in place of the $+i\varepsilon$ ([[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|Model §C6b.7.7]]); near its pole this is the non-relativistic exponential decay with the rate time-dilated by $m/E_{\mathbf p}$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-9|Theorem §C6b.7.9]]), and its square is the Breit–Wigner resonance of full width $\Gamma$. Yu treats decay widths in §6.5.4, eqs. (6.367)–(6.378), with box normalization, and the width in the propagator in §10.6, eqs. (10.259)–(10.275), where it is derived from the imaginary part of the self-energy.
+"The other one that's really important and common is … one to $n$, which does not seem like scattering at all": the decay of one particle into $n$ decay products. The wave-packet construction of [[§C6b.4 Wave Packets and the Cross Section|§C6b.4]] was built around two packets and an impact parameter and does not apply as it stands; the lecture stated the result, the decay rate $d\Gamma = |\mathcal M|^2d\Pi_n/2m_A$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]), with the same final phase space as before ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^def-c6b-6-1|Def. §C6b.6.1]]), and derived here by Yu's box route: the chain of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]] with one initial particle, set up in [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]] and run in [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-2|Theorem §C6b.7.2]]–[[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]. For two decay products everything but the direction is fixed ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-5|Theorem §C6b.7.5]]); the decay $\Phi \to \phi\phi$ of Problem Set 8 is worked as the user solved it ([[§C6b.7 Decay Rates and Widths#^ex-c6b-7-1|Example §C6b.7.1]]). In relativistic physics one quotes the width $\Gamma$, an energy, rather than the lifetime. The width also appears in the propagator of an unstable particle, $i/(p^2 - m^2 + im\Gamma)$ in place of the $+i\varepsilon$ ([[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|Model §C6b.7.7]]); near its pole this is the non-relativistic exponential decay with the rate time-dilated by $m/E_{\mathbf p}$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-9|Theorem §C6b.7.9]]), and its square is the Breit–Wigner resonance of full width $\Gamma$. Yu treats decay widths in §6.5.4, eqs. (6.367)–(6.378), with box normalization, and the width in the propagator in §10.6, eqs. (10.259)–(10.275), where it is derived from the imaginary part of the self-energy.
 
 *Conventions* ([[Larsen PHY 513]]): $A$ is the decaying particle, mass $m_A$, at rest unless said otherwise; $\Gamma$ (width, rest frame) and $\Gamma_{\rm NR}$ (decay constant of a non-relativistic wave function, any frame) as defined below; $S_{\rm id}$ the identical-particle factor ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]]); $\tilde V$, $\tilde T$ Yu's volume and duration.
 
 ## The decay rate
 
+> [!model] Model §C6b.7.1: A Decaying Particle at Rest
+> - *Particle:* one unstable particle $A$ of mass $m_A$, at rest, $p_A = (m_A, \mathbf 0)$ (in a frame where it moves, $E_A = \gamma m_A$); it decays into $n \ge 2$ particles with $m_A > \sum_jm_j$.
+> - *Population:* $N(t)$ particles $A$ at rest, each decaying with the same constant probability $\Gamma$ per unit time, independently of its age and of the others.
+> - *Box:* one decay is computed as in [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]] with one initial particle: a periodic box of volume $\tilde V$, a duration $\tilde T$, the free states $|i\rangle = \sqrt{2E_A}\,\hat a^\dagger_{\mathbf p_A}|0\rangle$ and $|f\rangle = \prod_j\sqrt{2E_j}\,\hat a^\dagger_{\mathbf p_j}|0\rangle$ over the free vacuum $|0\rangle$, and $\hat S = U(+\infty, -\infty)$.
+> - *Applies:* at lowest order in the interaction that makes $A$ decay. An unstable particle cannot be prepared in the infinite past, and the interaction is never switched off, so free states are not its exact asymptotic states; the formula is correct with $\mathcal M$ from the Feynman rules (PS pp. 107–108; [[§C6b.7 Decay Rates and Widths#^cau-c6b-7-1|Caution: Free states in a decay amplitude]], [[§C6b.7 Decay Rates and Widths#^cau-c6b-7-2|Caution: "Corollary of studying interacting wave function (2nd term)"]], below; [[§C6b.8 Amplitudes from Correlation Functions#^cau-c6b-8-2|§C6b.8, Caution: The rule is stated at lowest order]]).
+>
+> *Source: Yu §6.5.4, eqs. (6.367)–(6.378) (page images checked, PDF pp. 258–260) · PHY 513 Lecture 15, slide 22 · PS §4.5, pp. 101, 107–108*
+
+^mod-c6b-7-1
+
 > [!definition] Definition §C6b.7.1: Decay Rate, Width and Lifetime
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]].
 > The **decay rate** $\Gamma$ of an unstable particle $A$ is the probability per unit time that $A$, at rest, decays (into a specified final state, or into anything for the total rate): $\Gamma = \frac{\text{number of decays per unit time}}{\text{number of }A\text{ particles present}}$. In relativistic contexts it is quoted as the **width**, an energy. The **lifetime** is $\tau = 1/\Gamma$.
 >
 > *Source: PHY 513 Lecture 15, slide 22 ("Another important process: $1 \to n$ 'scattering'. Decay of one particle (to $n$ decay products). Result for relativistic decay width: …"), and transcript ("What you do for decay, at least in relativistic context, is that you give not the decay time, you give the width. The width is an energy") · the user's PHY 513 notes, Ch. 15 §15.8, Principle "Decay rate" (last sentence) · PS §4.5, eq. (4.62) · Yu §6.5.4, eqs. (6.367)–(6.370) ($N(t) = N(0)e^{-\Gamma t}$, $\tau \equiv 1/\Gamma$, 衰变宽度)*
@@ -30,21 +41,30 @@ $$
 \int_{N(0)}^{N(t)}\frac{dN}{N} = -\Gamma\int_0^tdt' \;\Rightarrow\; N(t) = N(0)\,e^{-\Gamma t} , \qquad \langle t\rangle = \int_0^\infty t\,\Gamma e^{-\Gamma t}\,dt = \bigl[-t\,e^{-\Gamma t}\bigr]_0^\infty + \int_0^\infty e^{-\Gamma t}\,dt = 0 + \frac1\Gamma = \tau .
 $$
 
-> [!theorem] Theorem §C6b.7.4: The Decay Rate Formula
-> For a particle $A$ of mass $m_A$ decaying at rest into $n$ particles,
+Why a rate is quoted as an energy: with $\hbar = 1$, $[\Gamma] = (\text{time})^{-1} = \text{energy}$. Restoring $\hbar$, the width is $\hbar\Gamma$ and the lifetime $\tau = \hbar/(\hbar\Gamma)$; with $\hbar = 6.582\times10^{-25}\,\mathrm{GeV\,s}$,
+
+$$
+\hbar\Gamma = 1\,\mathrm{GeV} \quad\Longleftrightarrow\quad \tau = \frac{\hbar}{1\,\mathrm{GeV}} = 6.582\times10^{-25}\,\mathrm s ,
+$$
+
+and in the propagator of an unstable particle the same $\Gamma$ is the full width at half maximum of the resonance peak ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-10|Theorem §C6b.7.10]]).
+
+The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]] with one initial particle (Yu §6.5.4): norm and transition probability ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-2|Theorem §C6b.7.2]]), rate per unit time ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-3|Theorem §C6b.7.3]]), counting of the final states and the rest frame ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]).
+
+> [!theorem] Theorem §C6b.7.2: The Transition Probability of One Particle in a Box
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there.
+> With $p_f = \sum_jp_j$ and distinct final momenta,
 >
 > $$
-> d\Gamma = \frac{1}{2m_A}\cdot|\mathcal M(p_A \to \{p_i\})|^2\cdot d\Pi_n , \qquad d\Pi_n = \prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\cdot(2\pi)^4\delta^4\Bigl(p_A - \sum_ip_i\Bigr) ,
+> \langle i|i\rangle = 2E_A\tilde V , \qquad P_{fi} = \frac{|\langle f|i\hat T|i\rangle|^2}{\langle i|i\rangle\langle f|f\rangle} = \frac{\tilde T\,(2\pi)^4\delta^4(p_A - p_f)\,|\mathcal M|^2}{2E_A\prod_{j=1}^n\bigl(2E_j\tilde V\bigr)} .
 > $$
 >
-> with $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]] for one particle in the initial state; the width into a final state with identical particles is $\Gamma = \frac{1}{S_{\rm id}}\int d\Gamma$.
->
-> *Source: PHY 513 Lecture 15, slide 22 ("Result for relativistic decay width: $d\Gamma = \frac{1}{2m_A}\cdot|\mathcal M|^2\cdot d\Pi_n$ with phase space factor for final $n$ particles: $d\Pi_n = \prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\cdot(2\pi)^4\delta^{(4)}(p_A - \sum_ip_i)$"), and transcript · the user's PHY 513 notes, Ch. 15 §15.8, Principle "Decay rate", eq. (dGamma) (stated, not derived, in the lecture: a theorem here, derived by Yu's route) · PS §4.5, eq. (4.86) · Yu §6.5.4, eqs. (6.373)–(6.377)*
+> *Source: Yu §6.5.4, eqs. (6.373)–(6.374) (page image checked)*
 
-^thm-c6b-7-4
+^thm-c6b-7-2
 
-> [!derivation]- Derivation (Yu's route: box normalization)
-> Put the system in a box of volume $\tilde V$ for a time $\tilde T$ ([[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]); then $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ and $(2\pi)^4\delta^4(0) = \int d^4x = \tilde V\tilde T$ (Yu eq. (6.282)).
+> [!derivation]- Derivation
+> The transition probability is [[§C6b.2 Transition Probabilities in a Box#^def-c6b-2-1|Def. §C6b.2.1]], with only $i\hat T$ for $f \ne i$ ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]], 1); the norms are [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]], parts 1 and 3, the squared amplitude [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]], 2, with $p_i = p_A$.
 >
 > **Step 1** (norms). By [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] at coincident momenta, with $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ (Yu eqs. (6.373), (6.290)),
 >
@@ -66,13 +86,58 @@ $$
 > P_{fi} = \frac{|\langle f|i\hat T|i\rangle|^2}{\langle i|i\rangle\langle f|f\rangle} = \frac{\tilde V\tilde T\,(2\pi)^4\delta^4(p_A - p_f)\,|\mathcal M|^2}{2E_A\tilde V\cdot\prod_j(2E_j\tilde V)} = \frac{\tilde T\,(2\pi)^4\delta^4(p_A - p_f)\,|\mathcal M|^2}{2E_A\prod_j(2E_j\tilde V)} .
 > $$
 >
-> **Step 3** (per unit time). $P_{fi}$ grows linearly with $\tilde T$; the rate for a given set of final momenta is (Yu eq. (6.375))
+> **What the derivation shows.**
+> - Only the initial norm differs from scattering: one factor $2E_A\tilde V$ instead of $4E_AE_B\tilde V^2$, so one power of $\tilde V$ less, and no flux will be needed to remove it.
+
+^der-c6b-7-2
+
+*Uses:* [[§C6b.2 Transition Probabilities in a Box#^def-c6b-2-1|Def. §C6b.2.1]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]]
+
+> [!theorem] Theorem §C6b.7.3: The Decay Rate into Fixed Final Momenta
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there, for a duration $\tilde T$ long compared with the decay process but short compared with the lifetime.
+> $P_{fi} \propto \tilde T$, and the transition probability per unit time for one set of final momenta $\{p_j\}$ is
+>
+> $$
+> R_{\{p_j\}} = \frac{P_{fi}}{\tilde T} = \Bigl[2E_A\prod_{j=1}^n\bigl(2E_j\tilde V\bigr)\Bigr]^{-1}(2\pi)^4\delta^4\Bigl(p_A - \sum_{j=1}^np_j\Bigr)\,|\mathcal M|^2 .
+> $$
+>
+> *Source: Yu §6.5.4, eq. (6.375) (page image checked)*
+
+^thm-c6b-7-3
+
+> [!derivation]- Derivation
+> **Step 1** (per unit time). $P_{fi}$ grows linearly with $\tilde T$; the rate for a given set of final momenta is (Yu eq. (6.375))
 >
 > $$
 > \frac{P_{fi}}{\tilde T} = \frac{(2\pi)^4\delta^4(p_A - p_f)\,|\mathcal M|^2}{2E_A\prod_j\bigl(2E_j\tilde V\bigr)} .
 > $$
 >
-> **Step 4** (count the final states). In the box the momenta are discrete, $\mathbf p \in (2\pi/L)\mathbb Z^3$, one state per cell of volume $(2\pi/L)^3 = (2\pi)^3/\tilde V$, so a cell $d^3p_j$ contains $\tilde V\,d^3p_j/(2\pi)^3$ states (Yu eq. (6.302); [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]). Summing the rate over these states multiplies it by $\prod_j\tilde V\frac{d^3p_j}{(2\pi)^3}$, and the $n$ factors $\tilde V$ cancel the $n$ in the denominator:
+> **What the derivation shows.**
+> - The linear growth in $\tilde T$ is what makes a rate meaningful, as for scattering ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4|Theorem §C6b.2.4]]) and for Fermi's golden rule ([[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]]). $\tilde T \ll \tau$ keeps the probability small, so that the population of [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]] is not yet depleted.
+
+^der-c6b-7-3
+
+*Uses:* [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-2|Theorem §C6b.7.2]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4|Theorem §C6b.2.4]]
+
+> [!theorem] Theorem §C6b.7.4: The Decay Rate Formula
+> *Model:* [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there (lowest order in the decaying interaction; [[§C6b.7 Decay Rates and Widths#^cau-c6b-7-1|Caution: Free states in a decay amplitude]]).\n> For a particle $A$ of mass $m_A$ decaying at rest into $n$ particles,
+>
+> $$
+> d\Gamma = \frac{1}{2m_A}\cdot|\mathcal M(p_A \to \{p_i\})|^2\cdot d\Pi_n , \qquad d\Pi_n = \prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\cdot(2\pi)^4\delta^4\Bigl(p_A - \sum_ip_i\Bigr) ,
+> $$
+>
+> with $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]] for one particle in the initial state; the width into a final state with identical particles is $\Gamma = \frac{1}{S_{\rm id}}\int d\Gamma$.
+>
+> *Source: PHY 513 Lecture 15, slide 22 ("Result for relativistic decay width: $d\Gamma = \frac{1}{2m_A}\cdot|\mathcal M|^2\cdot d\Pi_n$ with phase space factor for final $n$ particles: $d\Pi_n = \prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\cdot(2\pi)^4\delta^{(4)}(p_A - \sum_ip_i)$"), and transcript · the user's PHY 513 notes, Ch. 15 §15.8, Principle "Decay rate", eq. (dGamma) (stated, not derived, in the lecture: a theorem here, derived by Yu's route) · PS §4.5, eq. (4.86) · Yu §6.5.4, eqs. (6.373)–(6.377)*
+
+^thm-c6b-7-4
+
+> [!derivation]- Derivation (Yu's route: box normalization)
+> The box of [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]: $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ and $(2\pi)^4\delta^4(0) = \int d^4x = \tilde V\tilde T$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]; Yu eq. (6.282)).
+>
+> **Steps 1–3** (the norms, the transition probability, the rate per unit time) are [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-2|Theorem §C6b.7.2]] and [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-3|Theorem §C6b.7.3]]: $R_{\{p_j\}} = (2\pi)^4\delta^4(p_A - \sum_jp_j)\,|\mathcal M|^2\big/\bigl[2E_A\prod_j(2E_j\tilde V)\bigr]$.
+>
+> **Step 4** (count the final states). In the box the momenta are discrete, $\mathbf p \in (2\pi/L)\mathbb Z^3$, one state per cell of volume $(2\pi/L)^3 = (2\pi)^3/\tilde V$, so a cell $d^3p_j$ contains $\tilde V\,d^3p_j/(2\pi)^3$ states (Yu eq. (6.302); [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-5|Theorem §C6b.2.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]). Summing the rate over these states multiplies it by $\prod_j\tilde V\frac{d^3p_j}{(2\pi)^3}$, and the $n$ factors $\tilde V$ cancel the $n$ in the denominator:
 >
 > $$
 > \prod_j\frac{\tilde V\,d^3p_j}{(2\pi)^3}\cdot\frac{1}{2E_A\prod_j(2E_j\tilde V)} = \frac{1}{2E_A}\prod_j\frac{d^3p_j}{(2\pi)^3\,2E_j} ,
@@ -90,7 +155,7 @@ $$
 > d\Gamma = dR\big|_{E_A = m_A} = \frac{1}{2m_A}|\mathcal M|^2\,d\Pi_n , \qquad \Gamma = \frac{1}{S_{\rm id}}\int d\Gamma ,
 > $$
 >
-> since integrating over all final momenta counts each state of identical particles $S_{\rm id}$ times ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]]; Yu eqs. (6.376)–(6.377)).
+> since integrating over all final momenta counts each state of identical particles $S_{\rm id}$ times ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-7|Theorem §C6b.2.7]] in the box, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]]; Yu eqs. (6.376)–(6.377)).
 >
 > ⚑ By-product: $[\Gamma] = 1$ for every $n$. With $N = 1 + n$, $[\mathcal M] = 4 - (1 + n) = 3 - n$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]) and $[d\Pi_n] = 2n - 4$ ([[§C6b.5 Evaluating the Cross Section#^der-c6b-5-3|Derivation §C6b.5.3]], Step 2):
 >
@@ -294,7 +359,7 @@ $$
 > \frac{i}{p^2 - m^2 + im\Gamma} ,
 > $$
 >
-> the Feynman propagator $\frac{i}{p^2 - m^2 + i\varepsilon}$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]) with the infinitesimal $\varepsilon$ replaced by the finite $m\Gamma$, which radiative corrections produce.
+> the Feynman propagator $\frac{i}{p^2 - m^2 + i\varepsilon}$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]) with the infinitesimal $\varepsilon$ replaced by the finite $m\Gamma$, which radiative corrections produce: the self-energy of an unstable particle has an imaginary part on its mass shell, $Z\operatorname{Im}\Pi(m^2) = -m\Gamma$ (Yu (10.265)), and near the pole the full propagator is $\frac{iZ}{p^2 - m^2 - iZ\operatorname{Im}\Pi(m^2)} = \frac{iZ}{p^2 - m^2 + im\Gamma}$ (Yu (10.270), here with $Z \simeq 1$; beyond the course so far: [[§C6b.7 Decay Rates and Widths#^rem-c6b-7-3|★ Remark: Yu's route to the width]]).
 > - *Assumes:* a narrow width, $\Gamma \ll m$; $p^2$ near $m^2$; the field normalization of the full propagator set to 1.
 > - *Applies to:* resonances, "I hit something and [make] some resonance"; a stable particle is the limit $\Gamma \to 0$.
 >

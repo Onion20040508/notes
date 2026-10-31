@@ -7,11 +7,17 @@ section: C6b.1
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6a.11 The iε Limit and Vacuum Bubbles]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.4 Wave Packets and the Cross Section]] →
+← [[§C6a.11 The iε Limit and Vacuum Bubbles]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.2 Transition Probabilities in a Box]] →
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.1 (Definition "The $S$-matrix", paragraphs "'Matrix' is a historical term", "The fundamental observable?", "Relation to Chapter 13 (filled in)", Definition "The invariant amplitude $\mathcal M$", Derivation "Three properties of $\mathcal M$ (filled in)", Principle "Dynamics versus kinematics") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slides 4–7, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 102–104, eqs. (4.70)–(4.73) · Yu Zhao-Huan, 量子场论讲义, §6.2, eqs. (6.122)–(6.127); §6.5, eqs. (6.272)–(6.275).*
 
-Lectures 13–14 built the Feynman rules for correlation functions $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\}|\Omega\rangle$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]). "It's completely the right idea. It's just that … that's not what you really want": nobody measures a correlation function. Lecture 15 asks what we do want to compute, and the answer of particle physics is the cross section and the decay rate. This section sets up the object they are made from. Particles that are widely separated early evolve into particles that are widely separated late; the linear map between the two is the $S$-matrix ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]). Removing the part in which nothing happens and the overall delta function of four-momentum conservation leaves one function, the invariant amplitude $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]), the only place where the dynamics enters. The next sections turn $\mathcal M$ into cross sections ([[§C6b.4 Wave Packets and the Cross Section|§C6b.4]], [[§C6b.5 Evaluating the Cross Section|§C6b.5]], [[§C6b.6 Lorentz Invariance and Two-Body Phase Space|§C6b.6]]) and decay rates ([[§C6b.7 Decay Rates and Widths|§C6b.7]]), and [[§C6b.8 Amplitudes from Correlation Functions|§C6b.8]] states how $\mathcal M$ is read off from the correlation functions of Lecture 14. Yu treats the $S$-matrix in §6.2, eqs. (6.122)–(6.127), defining it as the interaction-picture evolution operator $U(+\infty, -\infty)$ between asymptotic states, and the split $S = \mathbb I + iT$ with the invariant amplitude in §6.5, eqs. (6.272)–(6.275), in the setting of the Dyson series of the $S$-operator.
+Lectures 13–14 built the Feynman rules for correlation functions $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\}|\Omega\rangle$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]). "It's completely the right idea. It's just that … that's not what you really want": nobody measures a correlation function. Lecture 15 asks what we do want to compute, and the answer of particle physics is the cross section and the decay rate. This section sets up the object they are made from. Particles that are widely separated early evolve into particles that are widely separated late; the linear map between the two is the $S$-matrix ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]). Removing the part in which nothing happens and the overall delta function of four-momentum conservation leaves one function, the invariant amplitude $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]), the only place where the dynamics enters. The next sections turn $\mathcal M$ into cross sections, first by Yu's box route ([[§C6b.2 Transition Probabilities in a Box|§C6b.2]], [[§C6b.3 The Cross Section|§C6b.3]]), then by the course's wave packets ([[§C6b.4 Wave Packets and the Cross Section|§C6b.4]], [[§C6b.5 Evaluating the Cross Section|§C6b.5]]), with Lorentz invariance and two-body phase space in [[§C6b.6 Lorentz Invariance and Two-Body Phase Space|§C6b.6]], and decay rates ([[§C6b.7 Decay Rates and Widths|§C6b.7]]), and [[§C6b.8 Amplitudes from Correlation Functions|§C6b.8]] states how $\mathcal M$ is read off from the correlation functions of Lecture 14. Yu treats the $S$-matrix in §6.2, eqs. (6.122)–(6.127), defining it as the interaction-picture evolution operator $U(+\infty, -\infty)$ between asymptotic states, and the split $S = \mathbb I + iT$ with the invariant amplitude in §6.5, eqs. (6.272)–(6.275), in the setting of the Dyson series of the $S$-operator.
+
+**The setup of this chapter: what is prepared, what is measured, which theory.** Prepared: a few particles with nearly definite momenta, far apart in the far past (two for a scattering, one for a decay). Measured: the particles that emerge in the far future, counted in ranges of momentum; the observables are counting rates, the cross section and the decay rate. The theory: a Hamiltonian $\hat H = \hat H_0 + \hat H_{\rm int}$. Two settings run through C6b, and each formula says which it uses:
+- *the interacting theory* ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], the wave packets of [[§C6b.4 Wave Packets and the Cross Section|§C6b.4]]): the in and out states are states of the full $\hat H$ that look like free, widely separated particles at $\mp\infty$; the vacuum is $|\Omega\rangle$; the interaction is never switched off;
+- *the free-state setting* (Yu's box, [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; the decay chain, [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|Model §C6b.7.1]]; the amplitudes of [[§C6b.8 Amplitudes from Correlation Functions|§C6b.8]]): the in and out states are free Fock states $\sqrt{2E}\,\hat a^\dagger\cdots|0\rangle$ of $\hat H_0$ over the free vacuum $|0\rangle$, and $\hat S = U(+\infty, -\infty)$ in the interaction picture ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]).
+
+The two agree exactly when $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$ (a source or interaction switched on and off, as in [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.9]]); for a permanent interaction they agree at lowest order, and beyond it the external particles carry $\sqrt Z$ and the physical mass ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|Caution: "Free" means widely separated]], below; [[§C6b.8 Amplitudes from Correlation Functions#^cau-c6b-8-2|§C6b.8, Caution: The rule is stated at lowest order]]).
 
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$; states normalized relativistically, $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); the $S$-matrix and the $T$-matrix are operators and carry hats, $\hat S$, $\hat T$ (the slides write $\mathcal S$, $\mathcal T$: Caution: Names for the S-matrix, the T-matrix and the amplitude, below); $\mathcal M$ is a number.
 
@@ -37,6 +43,13 @@ Lectures 13–14 built the Feynman rules for correlation functions $\langle\Omeg
 
 ^cau-c6b-1-1
 
+
+Which states stand in the middle expression of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]: not the in and out states themselves, but states of the interacting theory given at one reference time, wave packets of the particles (PS (4.70)); $e^{-i\hat H\,2T}$ carries the one prepared at $-T$ to the one read at $+T$. They cannot be eigenstates of $\hat H$: if $\hat H|i\rangle = E_i|i\rangle$, then
+$$
+\langle f|e^{-i\hat H\,2T}|i\rangle = \sum_{k\ge0}\frac{(-2iT)^k}{k!}\langle f|\hat H^k|i\rangle = \sum_{k\ge0}\frac{(-2iTE_i)^k}{k!}\langle f|i\rangle = e^{-2iE_iT}\langle f|i\rangle ,
+$$
+a phase times the overlap: nothing would scatter.
+
 > [!remark] Remark: "Matrix" is a historical term
 > "It's back when people … consider[ed] matrices advanced math … Linear operators, they are matrices … We should call it a linear operator. That's really what we mean." Its matrix elements between basis states, $S_{fi} = \langle f|\hat S|i\rangle$, are what Yu arranges into a matrix with $f$ as the row index and $i$ as the column index (eq. (6.123)). The letter is Heisenberg's (*Streumatrix*, scattering matrix).
 >
@@ -54,6 +67,8 @@ Lectures 13–14 built the Feynman rules for correlation functions $\langle\Omeg
 The interaction picture of Lecture 13 gives a second expression for the same matrix elements, between free states, which is Yu's starting point.
 
 > [!theorem] Theorem §C6b.1.1: S-Matrix Elements and the Interaction-Picture Evolution Operator
+> *Setup:* $\hat H = \hat H_0 + \hat H_{\rm int}$, interaction picture; free states. *Applies:* the identity holds for any $\hat H$; it identifies the $\hat S$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]] with $U(+\infty, -\infty)$ between free states, up to the phase, only where free states may replace the in and out states: exactly if $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$, for a permanent interaction at lowest order only ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|Caution: "Free" means widely separated]]; [[§C6b.8 Amplitudes from Correlation Functions#^cau-c6b-8-2|§C6b.8, Caution: The rule is stated at lowest order]]).
+>
 > Let $|i\rangle$, $|f\rangle$ be eigenstates of $\hat H_0$ with energies $E_i$, $E_f$, and let $U(t, t')$ be the evolution operator of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]]. Then
 >
 > $$
@@ -113,6 +128,13 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 > *Source: PHY 513 Lecture 15, slide 6 ("in = out ⇒ nothing happens ⇒ remove '1': $\mathcal S = 1 + i\mathcal T$; in ≠ out ⇒ interactions ⇒ $i\mathcal T$"), and transcript ("one is that sometimes maybe literally nothing happens … the $T$ is the stuff happened part") · the user's PHY 513 notes, Ch. 15 §15.1, eq. (SoneiT) · PS §4.5, eq. (4.72) · Yu §6.5, eqs. (6.272)–(6.274)*
 
 ^def-c6b-1-2
+
+
+Why the $i$ in $\hat S = \mathbb 1 + i\hat T$: in the interaction picture ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]; Yu (6.126), (6.272)) every term of the Dyson series after the first starts with a factor $-i$,
+$$
+\hat S = \sum_{n\ge0}\frac{(-i)^n}{n!}\int dt_1\cdots dt_n\,T\{\hat H_I(t_1)\cdots\hat H_I(t_n)\} = \mathbb 1 - i\int dt\,\hat H_I(t) + O(\hat H_I^2) \quad\Rightarrow\quad i\hat T = -i\int dt\,\hat H_I(t) + O(\hat H_I^2) ,
+$$
+so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ is split off so that $\hat T$ is the interaction itself at first order. Yu: "$iT$ 包含所有 $n \ge 1$ 的项".
 
 > [!theorem] Theorem §C6b.1.2: The S-Matrix Conserves Four-Momentum
 > Assume the theory is translation invariant: the four-momentum $\hat P^\mu = (\hat H, \hat{\mathbf P})$ satisfies $[\hat H, \hat P^\mu] = 0$, and the in and out states are eigenstates of $\hat P^\mu$ with eigenvalues $p_i = \sum_{A, B, \dots}p$ and $p_f = \sum_{1, 2, \dots}p$. Then $[\hat S, \hat P^\mu] = 0$, and every matrix element of $i\hat T$ between such states, as a distribution in the momenta, is of the form
@@ -202,6 +224,13 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 > *Source: PHY 513 Lecture 15, slide 6 ("$\langle\vec p_1\vec p_2\ldots|i\mathcal T|\vec p_A\vec p_B\ldots\rangle = (2\pi)^4\delta^{(4)}(\sum_{A,B,\ldots}p - \sum_{1,2,\ldots}p)\,i\mathcal M$. Amplitude $\mathcal M$ = 'invariant matrix element'. The amplitude is dynamical data."), and transcript ("The coefficient of that we call $M$") · the user's PHY 513 notes, Ch. 15 §15.1, eq. (Mdef) · PS §4.5, eq. (4.73) · Yu §6.5, eq. (6.275)*
 
 ^def-c6b-1-3
+
+
+Where the $(2\pi)^4$ and the $i$ of $i\mathcal M$ come from: at first order $\langle f|i\hat T|i\rangle = -i\int d^4x\,\langle f|\hat{\mathcal H}_I(x)|i\rangle$, and every external particle contributes a plane wave $e^{\pm ip\cdot x}$ ([[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^lem-c6b-9-4|Lemma §C6b.9.4]]), so the vertex integral is ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]])
+$$
+\int d^4x\;e^{i(\sum_{\rm out}p - \sum_{\rm in}p)\cdot x} = (2\pi)^4\delta^4\Bigl(\sum_{\rm in}p - \sum_{\rm out}p\Bigr) .
+$$
+The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal M = -i\lambda$, $\mathcal M = -\lambda$ ([[§C6b.8 Amplitudes from Correlation Functions#^ex-c6b-8-1|Example §C6b.8.1]]); $(2\pi)^4\delta^4(0)$, which squaring this delta function produces, is the spacetime volume of a box, $\tilde V\tilde T$, with $2\pi\delta(0) = \tilde T$ the duration ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]; [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2|Theorem §C6b.2.2]]).
 
 > [!remark] Remark: What "dynamical" means
 > "By dynamical data, we mean things that depend on … the potentials. It's not something you can just get by energy conservation. It should depend on … what theory [we are talking] about." Everything else in a cross section or a decay rate, the $\mathbb 1$, the delta function, the normalization of the states, the phase space, is kinematics and is the same in every theory. So $\mathcal M$ "is kind of the proper matrix element that we actually really want", and the Feynman rules are rules for computing it ([[§C6b.8 Amplitudes from Correlation Functions|§C6b.8]]).
@@ -393,6 +422,19 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 > *Source: PHY 513 Lecture 15, slides 4, 6 · PS §4.5, eqs. (4.71)–(4.73), p. 104 · Yu §6.5, eqs. (6.272)–(6.275) · the user's PHY 513 notes, PART 2 (e)*
 
 ^cau-c6b-1-3
+
+> [!caution] Caution: Four T's
+> From this section on, four objects are written with $T$:
+> 1. the half-duration $T$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], the evolution running from $-T$ to $+T$; PS write the same, and the vacuum bubbles of [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]] are proportional to $2T$;
+> 2. Yu's full duration $\tilde T = 2T$, which appears in the box route ([[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]) as $2\pi\delta(0) = \tilde T$;
+> 3. the $T$-matrix $\hat T$, an operator, hatted ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]]); the slides write $\mathcal T$, which in these notes is time reversal;
+> 4. time ordering $T\{\cdots\}$, as in the time-ordered exponential ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]).
+>
+> The user's notes call $\hat T$ "a third use of $T$, after large time and time ordering"; $\tilde T$ is the fourth.
+>
+> *Source: the user's PHY 513 notes, PART 2 (e) · Yu §6.5.1, eq. (6.282) · PS §4.5, eq. (4.70)*
+
+^cau-c6b-1-4
 
 > [!remark] Remark: Yu's route
 > Yu introduces the $S$-matrix in §6.2 directly in the interaction picture. Particles prepared far apart are "asymptotic states" (渐近态), of the same form as multiparticle states of the free theory; the state $|\Psi(t)\rangle = \lim_{t_0\to-\infty}U(t, t_0)|i\rangle$ (eq. (6.122)) is projected on a final state in the far future, $S_{fi} = \lim\langle f|U(t, t_0)|i\rangle$ (eq. (6.123)), so $S_{fi} = \langle f|S|i\rangle$ (eq. (6.124)) with $S = U(+\infty, -\infty)$ (eq. (6.125)), Dyson's series (eq. (6.126)) and unitarity $S^\dagger S = \mathbb I$ (eq. (6.127)). The course defines $\hat S$ by the full evolution $e^{-i\hat H\,2T}$ between in and out states, as PS do (eqs. (4.70)–(4.71)); the two agree up to a phase between free states ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]). Yu then splits $S = \mathbb I + iT$ in §6.5 because the $n = 0$ term of the Dyson series is $\mathbb I$ ("$iT$ 包含所有 $n \ge 1$ 的项"), which is the course's "nothing happened" part read off the series.

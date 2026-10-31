@@ -15,6 +15,16 @@ A classical source switched on for a finite time leaves the vacuum in a state wi
 
 *Conventions* ([[Larsen PHY 513]]): the source model is [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]], $j$ real, smooth, nonzero only for a finite time, $\hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi(\mathbf x)$; $\tilde j(k) = \int d^4x\,e^{ik\cdot x}j(x)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]) with $k^0 = E_{\mathbf k}$ where stated; **one-particle states $|\mathbf k\rangle = \hat a^\dagger_{\mathbf k}|0\rangle$, not relativistically normalized** ([[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route#^cau-c6b-9-1|Caution: Two normalizations of one-particle states]]); $\lambda$ is the mean number of particles produced (PS's letter; there is no $\phi^4$ coupling in this section); $\hat\phi^\pm$ the positive- and negative-frequency parts ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]).
 
+**Setup and scope: exact, no asymptotic subtleties.** The source of [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]] is nonzero only for a finite time: $j(t, \mathbf x) = 0$ for $t \notin [t_1, t_2]$. Hence the interaction has compact support in time,
+$$
+\hat H(t) = \hat H_0 + \hat H_{\rm int}(t) , \qquad \hat H_{\rm int}(t) = -\int d^3x\,j(t, \mathbf x)\,\hat\phi(\mathbf x) = 0 \quad\text{for } t < t_1 \text{ and } t > t_2 ,
+$$
+so $\hat H = \hat H_0$ at early and late times; the free Fock states $\hat a^\dagger\cdots|0\rangle$ are the exact in and out states and the in and out vacuum is exactly $|0\rangle$ (the interacting vacuum $|\Omega\rangle$ of [[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]] plays no role); and the interaction-picture evolution operator ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]) satisfies $U(t, t') = \mathbb 1$ for $t, t' < t_1$ or $t, t' > t_2$, so
+$$
+\hat S = U(+\infty, -\infty) = U(t_2, t_1) = T\Bigl\{\exp\Bigl[i\int d^4x\,j(x)\,\hat\phi_I(x)\Bigr]\Bigr\}
+$$
+holds exactly, not only at lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]] with $\hat H_{\rm int}(t) \to 0$; no $\sqrt Z$, unlike [[§C6b.8 Amplitudes from Correlation Functions#^cau-c6b-8-2|§C6b.8, Caution: The rule is stated at lowest order]]). The source is classical, so nothing is renormalized.
+
 ## The mathematics used here
 
 A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected part:

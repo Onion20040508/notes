@@ -7,14 +7,58 @@ section: C6b.4
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6b.1 The S-Matrix and the Invariant Amplitude]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.5 Evaluating the Cross Section]] →
+← [[§C6b.3 The Cross Section]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.5 Evaluating the Cross Section]] →
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)", Definition "Classical differential cross section", Figure "classicalxsec", paragraph "Example: the hard sphere (filled in)"), §15.3 (Definition "Wave packets", eq. (twopacket), paragraph "Why $e^{-i\vec b\cdot\vec k_B}$ shifts $B$ by $+\vec b$ (filled in)", Figure "wavepackets", Caution "A slip on the wave-packet slide", eq. (Pb), Definition "The quantum cross section", paragraphs "Why integrate over $\vec b$ (filled in)", "Which final states (filled in)"), §15.4 (eq. (dsigmafull), paragraph "Counting", Derivations "The $\delta$-functions and the one Jacobian", "A $\delta$-function of a function (filled in)", Caution "$1/f'(0)$ on the slide", paragraphs "Integrating over $\bar k_B^z$ instead", "A second zero (filled in)", "Smoothness"), §15.5 (Principle "Cross section for $2\to n$ scattering", paragraph "Reading the formula", Derivation "Dimension check (filled in)", paragraph "Identical particles (filled in)") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slide 8, Part B, slides 11–16, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 99–106 and 108, eqs. (4.59)–(4.61), (4.65)–(4.79) · Yu Zhao-Huan, 量子场论讲义, §6.5.1–§6.5.2, eqs. (6.276)–(6.313), (6.321).*
 
+**The careful version.** This section and [[§C6b.5 Evaluating the Cross Section|§C6b.5]] derive the same cross section as [[§C6b.3 The Cross Section|§C6b.3]], $d\sigma = |\mathcal M|^2d\Pi_n/(2E_A2E_B|\mathbf v_A - \mathbf v_B|)$, the course's way (Lecture 15, Part B): without the box, without $\delta(0)$ and without plane waves. The particles are normalizable wave packets ([[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]), so no state has infinite norm; the offset of $B$ from $A$ is fixed as an impact parameter $\mathbf b$ and then integrated over at unit density, which turns a probability into an area; and the first $\delta^4$ of the squared amplitude is never evaluated at zero but, together with the $\mathbf b$-integral, does the integrals over the second copy of the momenta:
+
+$$
+\text{box: } \sigma = \frac{R}{j_B} , \quad j_B = \frac{|\mathbf v_B|}{\tilde V} \qquad\longleftrightarrow\qquad \text{packets: } d\sigma = \int d^2b\;\mathcal P(\mathbf b) , \quad N_{\rm events} = n_B\int d^2b\,\mathcal P(\mathbf b) ,
+$$
+
+$$
+\text{box: } (2\pi)^4\delta^4(0) = \tilde V\tilde T \qquad\longleftrightarrow\qquad \text{packets: } \int d^2b\,e^{-i\mathbf b\cdot(\mathbf k_B - \bar{\mathbf k}_B)} = (2\pi)^2\delta^2(\mathbf k_B^\perp - \bar{\mathbf k}_B^\perp) \ \text{ and } \ (2\pi)^4\delta^4\Bigl(\bar k_A + \bar k_B - \sum_jp_j\Bigr) .
+$$
+
+Each step of the careful route, the factor of $d\sigma$ it produces (labels (a)–(f) of the annotated formula in [[§C6b.3 The Cross Section|§C6b.3]]), and the step of the box route it replaces:
+
+| careful route | what it does | factor | box step it replaces |
+|---|---|---|---|
+| [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1\|Model §C6b.4.1]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-3\|Def. §C6b.4.3]], [[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-2\|Theorem §C6b.4.2]] | packets $\lvert\phi_{\mathbf p}\rangle = \int\frac{d^3k}{(2\pi)^3}\frac{\phi(\mathbf k)}{\sqrt{2E_{\mathbf k}}}\lvert\mathbf k\rangle$ of norm 1 | (a), through $1/\sqrt{2E}$ | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3\|Theorem §C6b.2.3]]: $\langle i\vert i\rangle = 4E_AE_B\tilde V^2$ |
+| [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-4\|Def. §C6b.4.4]], [[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-3\|Theorem §C6b.4.3]] | the phase $e^{-i\mathbf b\cdot\mathbf k_B}$ displaces $B$ by $\mathbf b \perp \hat{\mathbf z}$ | none: fixes the offset | the uniform position of $B$ in the box, density $1/\tilde V$ ([[§C6b.3 The Cross Section#^thm-c6b-3-3\|Theorem §C6b.3.3]], Step 1) |
+| [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5\|Def. §C6b.4.5]] | $\mathcal P(\mathbf b)$ with the measure $\prod_j\frac{d^3p_j}{(2\pi)^32E_j}$ | (d), (e) | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3\|Theorem §C6b.2.3]], 3 ($\langle f\vert f\rangle$); [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-5\|Theorem §C6b.2.5]] (counting) |
+| [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6\|Def. §C6b.4.6]], [[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-4\|Theorem §C6b.4.4]] | $d\sigma = \int d^2b\,\mathcal P(\mathbf b)$: events per unit flux | the definition of $\sigma$ | [[§C6b.3 The Cross Section#^def-c6b-3-2\|Def. §C6b.3.2]]; [[§C6b.3 The Cross Section#^thm-c6b-3-3\|Theorem §C6b.3.3]]: $\sigma = R/j_B$ |
+| [[§C6b.4 Wave Packets and the Cross Section#^lem-c6b-4-5\|Lemma §C6b.4.5]] | away from the forward direction only $i\hat T$ | none | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2\|Theorem §C6b.2.2]], 1 |
+| [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-2\|Derivation §C6b.5.2]], Step 1 | $\int d^2b\,e^{-i\mathbf b\cdot(\mathbf k_B - \bar{\mathbf k}_B)} = (2\pi)^2\delta^2(\mathbf k_B^\perp - \bar{\mathbf k}_B^\perp)$ | none: the two copies agree transversely | part of $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2\|Theorem §C6b.2.2]]) |
+| [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-2\|Derivation §C6b.5.2]], Step 2 | the amplitude and its conjugate, each with a $\delta^4$ | (c) as $\mathcal M\bar{\mathcal M}^\ast$; (f) | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2\|Theorem §C6b.2.2]], 2: the squared $\delta^4$ |
+| [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-2\|Derivation §C6b.5.2]], Step 3 | transverse parts of the barred $\delta^4$ fix $\bar{\mathbf k}_A^\perp$, $\bar{\mathbf k}_B^\perp$ | none | the transverse part of $\tilde V$ |
+| [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-1\|Theorem §C6b.5.1]] (Step 4) | $\int d\bar k_A^zd\bar k_B^z\,\delta(\cdots)\,\delta(\cdots) = 1/\lvert\bar v_A^z - \bar v_B^z\rvert$ | (b) | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4\|Theorem §C6b.2.4]] (per unit time) and [[§C6b.3 The Cross Section#^thm-c6b-3-3\|Theorem §C6b.3.3]] (per unit flux) |
+| [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-2\|Derivation §C6b.5.2]], Steps 5–6 | $\bar k = k$; $\Phi\bar\Phi = \lvert\phi_A\rvert^2\lvert\phi_B\rvert^2/(2E_A2E_B)$, $\mathcal M\bar{\mathcal M}^\ast = \lvert\mathcal M\rvert^2$ | (a), (c) | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3\|Theorem §C6b.2.3]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2\|Theorem §C6b.2.2]] |
+| [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-2\|Derivation §C6b.5.2]], Steps 7–8 | smoothness: other factors at $p_A$, $p_B$; $\int\frac{d^3k}{(2\pi)^3}\lvert\phi\rvert^2 = 1$ | none: the packet shapes drop out | none: plane waves have sharp momenta from the start |
+| [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-2\|Derivation §C6b.5.2]], Step 9 | read off; the unbarred $\delta^4$ remains | (f) | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-2\|Theorem §C6b.2.2]]: the second $\delta^4$ |
+| [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4\|Theorem §C6b.5.4]] | $\frac{1}{S_{\rm id}}$ from the resolution of the identity | none in $d\sigma$ | [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-7\|Theorem §C6b.2.7]]: counting ordered tuples |
+
+What the careful route adds: no $\delta(0)$ and no box; the impact parameter, and with it the meaning of $\sigma$ as an area; the velocity factor as a Jacobian, in any collinear frame directly; and the assumptions made explicit: narrow packets, smooth $\mathcal M$ and a smooth detector acceptance, no forward scattering.
+
 What an experiment observes is an event rate, and the cross section is that rate with the set-up divided out ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-1|Def. §C6b.4.1]]); classically it is an area in the plane of impact parameters ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-2|Def. §C6b.4.2]]). The goal is a quantum, relativistic formula for it in terms of the amplitude $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]. Momentum eigenstates never "come in" from anywhere, and squaring amplitudes between them produces squares of delta functions; so the incoming particles are wave packets, one of them displaced by an impact parameter $\mathbf b$, and the probability of scattering is integrated over $\mathbf b$. This section sets up the definitions: the wave packets ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-3|Def. §C6b.4.3]], [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-4|Def. §C6b.4.4]]), the scattering probability at fixed impact parameter ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-5|Def. §C6b.4.5]]) and the quantum cross section ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]), what it counts ([[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-4|Theorem §C6b.4.4]]) and which final states contribute ([[§C6b.4 Wave Packets and the Cross Section#^lem-c6b-4-5|Lemma §C6b.4.5]]). The integrals are done in [[§C6b.5 Evaluating the Cross Section|§C6b.5]], whose result is the cross-section formula [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]].
 
-*Conventions* ([[Larsen PHY 513]]): beams along the $z$-axis; $\perp$ marks the components $(x, y)$ transverse to it; $E_A \equiv E_{\mathbf k_A} = \sqrt{\mathbf k_A^2 + m_A^2}$ inside integrals and $E_A = E_{\mathbf p_A}$ in final formulas; $\mathbf v = \mathbf k/E$ is the velocity; barred momenta $\bar{\mathbf k}_A$, $\bar{\mathbf k}_B$ label the second, complex-conjugated copy of an amplitude.
+*Conventions* ([[Larsen PHY 513]]): beams along the $z$-axis; $\perp$ marks the components $(x, y)$ transverse to it; $E_A \equiv E_{\mathbf k_A} = \sqrt{\mathbf k_A^2 + m_A^2}$ inside integrals and $E_A = E_{\mathbf p_A}$ in final formulas; $\mathbf v = \mathbf k/E$ is the velocity, the group velocity $\partial E_{\mathbf k}/\partial\mathbf k = \mathbf k/\sqrt{\mathbf k^2 + m^2}$ of a packet peaked at $\mathbf k$ (for a particle of mass $m$, $\mathbf k = \gamma m\mathbf v$, $E = \gamma m$); barred momenta $\bar{\mathbf k}_A$, $\bar{\mathbf k}_B$ label the second, complex-conjugated copy of an amplitude.
 
+
+## The model
+
+> [!model] Model §C6b.4.1: Colliding Wave Packets
+> - *Particles:* $A$ and $B$ are wave packets, $|\phi_{\mathbf p}\rangle = \int\frac{d^3k}{(2\pi)^3}\frac{\phi(\mathbf k)}{\sqrt{2E_{\mathbf k}}}|\mathbf k\rangle$ with $\int\frac{d^3k}{(2\pi)^3}|\phi|^2 = 1$ (made precise in [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-3|Def. §C6b.4.3]]–[[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-4|Def. §C6b.4.4]]), with profiles $\phi_A$, $\phi_B$ sharply peaked at $\mathbf p_A$, $\mathbf p_B$: their momentum widths $\Delta k$ are small against the scales on which $\mathcal M$, the energies and the velocities vary.
+> - *Beams:* collinear, along the $z$-axis; $B$ is displaced from $A$ by an impact parameter $\mathbf b \perp \hat{\mathbf z}$.
+> - *Incidence:* the $B$ particles arrive at random transverse positions with a density $n_B$ per unit area, constant over the range of $\mathbf b$ where scattering happens.
+> - *Final states:* away from the forward direction (other particles or other momenta than the initial ones); the detector acceptance is smooth on the scale $\Delta k$.
+> - *States and Hamiltonian:* the in and out states are states of the full $\hat H$ that look like free, widely separated particles at $\mp\infty$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]); their overlaps define $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]).
+> - *Applies:* in full to the definition of $d\sigma$; the $\mathcal M$ inserted is computed with free states and the Feynman rules, which is exact if $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$ and, for a permanent interaction, holds at lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|§C6b.1, Caution: "Free" means widely separated]]; [[§C6b.8 Amplitudes from Correlation Functions#^cau-c6b-8-2|§C6b.8, Caution: The rule is stated at lowest order]]).
+>
+> *Source: PHY 513 Lecture 15, slides 11–12, 15, and transcript · PS §4.5, pp. 102–106, eqs. (4.65)–(4.68) · the user's PHY 513 notes, Ch. 15 §15.3*
+
+^mod-c6b-4-1
 
 ## The cross section: a universal event rate
 
@@ -30,6 +74,8 @@ What an experiment observes is an event rate, and the cross section is that rate
 > *Source: PHY 513 Lecture 15, slide 8 ("Observable in scattering experiment: event rate. Cross-section $= \sigma$: is a universal event rate. It is independent of experimental set-up."), and transcript ("how many clicks do you get per time … I mean divided by that … the cross section is that universal event rate") · the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)") · Yu §6.5.2, eq. (6.308) · PS §4.5, eqs. (4.59)–(4.61)*
 
 ^def-c6b-4-1
+
+The count is linear in $N_A$ and in $j_B$ because every event is one $A$ and one $B$ scattering once: the target is thin (the beam is not depleted and nothing scatters twice) and the target particles do not shadow each other. The same definition, written for Yu's beam on a fixed target, is [[§C6b.3 The Cross Section#^def-c6b-3-2|Def. §C6b.3.2]], with these assumptions in [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]].
 
 > [!definition] Definition §C6b.4.2: The Classical Differential Cross Section
 > In classical, non-relativistic mechanics a particle aimed at the target with impact parameter $\mathbf b$ (its transverse offset from a head-on hit, an area element $d^2b$ in **impact-parameter space**) leaves in a definite direction. The differential cross section is the area giving scattering into $d\Omega$:
@@ -61,6 +107,14 @@ The user's notes check the definition on the hard sphere, the example worked in 
 ## Wave packets and the scattering probability
 
 "You're telling me these initial particles have [definite] momentum … What is their position then? There was this Heisenberg business." A momentum eigenstate is spread over all space and is not normalizable ([[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-1|§C2a.4, Caution: Plane-wave states are not normalizable]]); by "momentum $\mathbf p$" we mean "as close as I can get to momentum $\mathbf p$".
+
+Three features of the packet below and where they go. The factor $1/\sqrt{2E_{\mathbf k}}$ absorbs the relativistic normalization of $|\mathbf k\rangle$, so that the norm of the packet is the plain integral $\int\frac{d^3k}{(2\pi)^3}|\phi|^2$ ([[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-2|Theorem §C6b.4.2]]); squared, it becomes the factor $\frac{1}{2E_A2E_B}$ of $d\sigma$ ([[§C6b.5 Evaluating the Cross Section#^der-c6b-5-2|Derivation §C6b.5.2]], Step 6; the box route gets it from $\langle i|i\rangle$, [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-3|Theorem §C6b.2.3]]). The normalization $\int\frac{d^3k}{(2\pi)^3}|\phi|^2 = 1$ is what collapses the six remaining momentum integrals at the end (same derivation, Step 8). "Sharply peaked" means: the width $\Delta k$ of $|\phi|^2$ is small against the momentum scale $K$ on which $\mathcal M$, $E_{\mathbf k}$ and $\mathbf v$ change. For a profile with mean $\mathbf p$, Taylor's theorem gives for a smooth $F$
+
+$$
+\int\frac{d^3k}{(2\pi)^3}|\phi(\mathbf k)|^2F(\mathbf k) = F(\mathbf p) + \nabla F(\mathbf p)\cdot\int\frac{d^3k}{(2\pi)^3}|\phi|^2(\mathbf k - \mathbf p) + O\bigl((\Delta k)^2\,\partial^2F\bigr) = F(\mathbf p)\Bigl[1 + O\Bigl(\frac{(\Delta k)^2}{K^2}\Bigr)\Bigr] ,
+$$
+
+the linear term vanishing because $\int\frac{d^3k}{(2\pi)^3}|\phi|^2(\mathbf k - \mathbf p) = \mathbf 0$ for the mean $\mathbf p$: this is the smoothness step of [[§C6b.5 Evaluating the Cross Section#^der-c6b-5-2|Derivation §C6b.5.2]], Step 7, with its error.
 
 > [!definition] Definition §C6b.4.3: Wave Packet
 > A smeared initial state: the **wave packet** peaked at $\mathbf k = \mathbf p$ is
@@ -118,7 +172,10 @@ The user's notes check the definition on the hard sphere, the example worked in 
 
 "Standard scattering: two particle initial state." Not a stationary situation: particle $A$ comes in along the $z$-axis, particle $B$ along a parallel line displaced transversely.
 
+Why only a transverse shift, and why it is integrated over. A shift $b^z$ along the beam multiplies the profile by $e^{-ib^zk^z}$ and only moves the packet along its own line of flight ([[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]]): the collision happens a time $b^z/|v^z|$ earlier or later, with the same outcome. A transverse shift changes the outcome. The beam fills the transverse plane uniformly ([[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]), so the event count is the integral of the probability over $\mathbf b$ ([[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-4|Theorem §C6b.4.4]]).
+
 > [!definition] Definition §C6b.4.4: The Two-Packet Initial State
+> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; the states $|\mathbf k_A\mathbf k_B\rangle_{\rm in}$ are in states of the full $\hat H$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]).
 > With $A$ at impact parameter $\mathbf 0$ and $B$ shifted transversely by the **impact parameter** $\mathbf b \perp \hat{\mathbf z}$ relative to $A$, the initial state is
 >
 > $$
@@ -174,6 +231,8 @@ The user's notes check the definition on the hard sphere, the example worked in 
 ![[ph-qft-c6-13-2.svg]]
 *The initial state of Def. §C6b.4.4: packet $A$ moves along the $z$-axis, packet $B$ along a parallel line displaced by the impact parameter $\mathbf b$. Each packet is localized in space and therefore smeared in momentum around $\mathbf p_A$ or $\mathbf p_B$. Drawn in the centre-of-mass frame; nothing in the derivation requires it. Added figure, from the user's notes (Figure "wavepackets"); PS Fig. 4.2 draws many $B$ packets at different $\mathbf b$.*
 
+The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure $\frac{d^3p}{(2\pi)^32E_{\mathbf p}}$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]) for each final particle: with it $\mathcal P$ is a probability density, and the probabilities add up to one ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-5|Theorem §C6b.5.5]]). For identical final particles, integrating over all momenta counts each state $S_{\rm id}$ times, and the total needs $\frac{1}{S_{\rm id}}$ ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]]; in the box, [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-7|Theorem §C6b.2.7]]).
+
 > [!definition] Definition §C6b.4.5: The Scattering Probability at Fixed Impact Parameter
 > The probability of scattering into the final phase-space element $\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}$, for a particular impact parameter $\mathbf b$, is
 >
@@ -186,6 +245,8 @@ The user's notes check the definition on the hard sphere, the example worked in 
 ^def-c6b-4-5
 
 The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]; [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-5|Theorem §C6b.5.5]] shows that the probabilities add up to one.
+
+Why the integral over $\mathbf b$ is the cross section, before the definition: with $B$ particles at uniform density $n_B$ per unit area, the expected number of events is $n_B\int d^2b\,\mathcal P(\mathbf b)$, and dividing by $n_B = j_Bt$ (flux times time) leaves $\int d^2b\,\mathcal P(\mathbf b)$, an area: events per unit flux, as [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-1|Def. §C6b.4.1]] demands. [[§C6b.4 Wave Packets and the Cross Section#^thm-c6b-4-4|Theorem §C6b.4.4]] writes this out. In the box the same average is the uniform density $1/\tilde V$ of a plane wave ([[§C6b.3 The Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]]).
 
 > [!definition] Definition §C6b.4.6: The Cross Section from the Scattering Probability
 > The (differential) cross section is the scattering probability integrated over all impact parameters:
