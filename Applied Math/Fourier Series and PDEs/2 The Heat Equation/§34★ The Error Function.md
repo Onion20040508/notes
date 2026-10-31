@@ -161,6 +161,10 @@ $$
 ![[m341-28-1.svg]]
 *The solution $u(x, t) = \operatorname{erf}(x/\sqrt{4kt})$ of Theorem §34.2 on $-2 < x < 2$ for $kt = 0.01$, $0.1$, $1$ and $10$; the initial temperature $\operatorname{sgn}(x)$ is dashed. Every curve passes through the origin with slope $1/\sqrt{\pi kt}$, and as $kt$ increases the graph collapses toward the $x$-axis. The curve for $kt = \frac14$ (not drawn) is the graph of $\operatorname{erf}$ itself.*
 
+![[m341-28-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Theorem §34.2: $u = \operatorname{erf}(x/\sqrt{4kt})$, with $kt$ running from $0.01$ to $10$ (log scale) and back. Left: $u$ against $x$ on $-2 < x < 2$, starting from $\operatorname{sgn}x$ (dashed), with the penetration depth $x = \pm\sqrt{4kt}$ marked in red (Remark: How Fast Heat Penetrates). Right: the same $u$ against $\xi = x/\sqrt{4kt}$. Here every frame lies on one fixed curve $\operatorname{erf}\xi$ (grey), and only the part seen through the window $|x| < 2$ (blue, ending at $|\xi| = 2/\sqrt{4kt}$) changes. The depth marks become the fixed lines $\xi = \pm1$, where $u = \pm\operatorname{erf}1 \approx \pm0.84$. Diffusion has no length scale of its own: the profiles at different times are one profile stretched by $\sqrt{4kt}$, so going twice as deep takes four times as long.
+
 > [!theorem] Corollary §34.3: The Semi-Infinite Rod with Constant Data
 > - (a) $u(x, t) = \operatorname{erf}\big(x/\sqrt{4kt}\big)$ is the solution of $u_{xx} = \frac1ku_t$, $0 < x$, $0 < t$, with $u(0, t) = 0$ and $u(x, 0) = 1$ for $0 < x$.
 > - (b) $u(x, t) = \operatorname{erfc}\big(x/\sqrt{4kt}\big)$ is the solution with zero initial condition and constant boundary condition: $u(0, t) = 1$, $u(x, 0) = 0$ for $0 < x$.

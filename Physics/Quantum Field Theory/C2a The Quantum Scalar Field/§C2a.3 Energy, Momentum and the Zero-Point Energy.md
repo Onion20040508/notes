@@ -172,7 +172,7 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 >
 > with inner products computed from [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]] by moving annihilators to the right, e.g. $\langle0|\hat a_{\mathbf q}\hat a^\dagger_{\mathbf p}|0\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$.
 >
-> *Domain:* free fields, given the split of $\hat\phi$ into $\hat a$ and $\hat a^\dagger$ of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]; that $\mathcal F$ is the whole space (irreducibility) is asserted, not derived, at this level (Streater–Wightman). In interacting theories the vacuum is not this one: the ground state of the full Hamiltonian is the interacting vacuum $|\Omega\rangle$ ([[§C6.4 The Interacting Vacuum and the Two-Point Function#^def-c6-4-1|Def. §C6.4.1]]), obtained from $|0\rangle$ in [[§C6.4 The Interacting Vacuum and the Two-Point Function#^thm-c6-4-2|Theorem §C6.4.2]].
+> *Domain:* free fields, given the split of $\hat\phi$ into $\hat a$ and $\hat a^\dagger$ of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]; that $\mathcal F$ is the whole space (irreducibility) is asserted, not derived, at this level (Streater–Wightman). In interacting theories the vacuum is not this one: the ground state of the full Hamiltonian is the interacting vacuum $|\Omega\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]]), obtained from $|0\rangle$ in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]].
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Principle "What space the operators act on") · PS §2.3, p. 22 · Yu §2.3.4, eqs. (2.148)–(2.149)*
 

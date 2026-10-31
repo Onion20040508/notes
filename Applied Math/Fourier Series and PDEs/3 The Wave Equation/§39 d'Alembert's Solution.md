@@ -222,6 +222,10 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 ![[m341-31-1.svg]]
 *d'Alembert's construction for the plucked string of [[§38 Solution of the Vibrating String Problem#^ex-38-1|Example §38.1]] at $ct = 0.3a$. The odd $2a$-periodic extension $\bar f_o$ is shifted $ct$ to the left (blue) and $ct$ to the right (red, dashed); on $0 < x < a$ (shaded) their average is the string (black), a trapezoid. The two waves are point reflections of each other through the ends $(0, 0)$ and $(a, 0)$, which is how the fixed ends act: a wave arriving at an end comes back inverted.*
 
+![[m341-31-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* d'Alembert's construction for the plucked string of Example §38.1 through one period $0 \le ct/a < 2$, on $-1.3a < x < 2.3a$. The odd $2a$-periodic extension slides to the left as $\bar f_o(x + ct)$ (blue) and to the right as $\bar f_o(x - ct)$ (red, dashed). On the shaded string $0 < x < a$ their average is the solution (black), the travelling trapezoid. The dotted segments join the blue wave at $x = -0.6a$ to the red wave at $x = 0.6a$, and the blue wave at $x = 1.6a$ to the red wave at $x = 0.4a$ (positions chosen for the picture). Both segments always pass through the fixed ends $(0, 0)$ and $(a, 0)$. The two waves are point reflections of each other through the ends at every instant, so their average vanishes there, and whatever runs out past an end comes back in inverted.
+
 > [!remark] Remark: When Formula (13) Is a Classical Solution
 > Formula (13) has continuous second derivatives exactly when $\bar f_o$ and $\bar G_e$ do: $f$ twice continuously differentiable with $f(0) = f(a) = 0$ and $f''(0) = f''(a) = 0$, and $g$ continuously differentiable with $g(0) = g(a) = 0$ (these make the odd and even extensions smooth across the ends). For a plucked string, $f$ has a corner; then (13) still satisfies the initial and boundary conditions and the wave equation away from the lines $x \pm ct =$ (corner position $+ 2ka$), along which the corners travel. It is the physically correct motion, and it equals the series (9), which converges uniformly. This is the precise sense in which the series solutions of [[§38 Solution of the Vibrating String Problem#^thm-38-2|Theorem §38.2]] are solutions.
 
@@ -338,6 +342,10 @@ A form for $u$ is known; the problem is to choose $\psi$ and $\phi$ so that the 
 
 ![[m341-31-2.svg]]
 *The struck string of Example §39.2, $u = \frac12[\bar G_e(x + ct) - \bar G_e(x - ct)]$ at $ct = 0.15a, 0.3a, 0.5a, a, 1.5a$. The string rises smoothly (no corners: the velocity, not the displacement, had the corner), reaches its largest displacement $a/(4c)$ at $ct = a/2$, is flat again at $ct = a$, and is the mirror image at $ct = 1.5a$; the period is $2a/c$.*
+
+![[m341-31-a2.gif|450]]
+
+*(Not from the book; animation added, vault only.)* The struck string of Example §39.2 with $a = c = 1$ (chosen for the picture), through one period $0 \le ct/a < 2$. Top: the displacement $u = \frac12[\bar G_e(x + ct) - \bar G_e(x - ct)]$. It rises smoothly to its largest value $a/(4c)$ at $ct = a/2$ (dotted lines), is flat at $ct = a$ and bulges the other way at $ct = 1.5a$. Bottom: the velocity $u_t = \frac12[\bar g_o(x + ct) + \bar g_o(x - ct)]$, which starts as the triangle $g$ (dashed) and moves exactly like the plucked string, with two corners (red dots) travelling at speed $c$. In the displacement, the matching points (open dots) are only places where the curvature jumps. The corner sits in the velocity, and integrating it once smooths it, which is why the coefficients decay like $1/n^3$ instead of $1/n^2$. The series of Example §38.3 and this formula agree to about $10^{-10}$.
 
 > [!example] Example §39.3: Piecewise Initial Data
 > Solve by d'Alembert's method

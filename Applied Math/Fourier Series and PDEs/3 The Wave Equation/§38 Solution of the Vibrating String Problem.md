@@ -95,6 +95,10 @@ where $a_n$ and $b_n$ are arbitrary: there are two independent solutions. This i
 ![[m341-30-1.svg]]
 *The first three standing waves $\sin(n\pi x/a)\cos(n\pi ct/a)$ at the times when the amplitude factor $\cos(n\pi ct/a)$ is $1$ (blue), $\frac12$, $0$ (gray), $-\frac12$ and $-1$ (red). The shape never changes, only its amplitude; the $n + 1$ nodes (black dots) stay at rest. Mode $n$ completes its oscillation $n$ times as fast as mode $1$.*
 
+![[m341-30-a1.gif|420]]
+
+*(Not from the book; animation added, vault only.)* The first three standing waves $\sin(n\pi x/a)\cos(n\pi ct/a)$, $n = 1, 2, 3$, through one period $0 \le ct/a < 2$ of mode $1$. The dotted envelope $\pm\sin(n\pi x/a)$ never changes: only the amplitude factor $\cos(n\pi ct/a)$ (readout on the right) moves, and the $n + 1$ nodes (black dots) stay at rest. Mode $n$ goes through $n$ oscillations while mode $1$ goes through one, so at $ct/a = 1$ the odd modes are inverted and mode $2$ is upright again. At $t = 2a/c$ all three are back together, which is Proposition §38.4.
+
 ## The Series Solution
 
 By the principle of superposition ([[§25 Example꞉ Fixed End Temperatures#^thm-25-4|Theorem §25.4]]), every finite linear combination of the $u_n$ also satisfies (1) and (2); the combination needs no new constants because the $a_n$ and $b_n$ are arbitrary. Taking an infinite series and requiring the initial conditions leads to the solution.
@@ -214,6 +218,10 @@ By the nature of the problem one expects $f$, at least, to be continuous, with $
 ![[m341-30-2.svg]]
 *The plucked string of Example §38.1 at times $ct = 0, 0.15a, \ldots, a$ (blue to red), computed from $u = \frac12[\bar f_o(x - ct) + \bar f_o(x + ct)]$ (equal to the series (12): its partial sum with 2000 terms differs from it by about $10^{-4}h$). The string is a trapezoid whose flat top descends at constant speed; at $ct = a/2$ it is flat, at $ct = a$ it is the initial triangle turned upside down.*
 
+![[m341-30-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* One full period $0 \le ct/a < 2$ of the plucked string of Example §38.1, drawn from $u = \frac12[\bar f_o(x - ct) + \bar f_o(x + ct)]$ (it differs from the series (12) with 4000 terms by about $5\cdot10^{-5}h$). The corner of the triangle splits into two corners (red dots) that travel apart at speed $c$. They reach the ends at $ct = a/2$, when the string is flat, come back inverted, and meet at $ct = a$ in the upside-down triangle. In the second half-period the string returns through the same shapes. On the right, each odd mode's term $a_n\cos(n\pi ct/a)$ is drawn in units of $|a_n| = 8h/(\pi n)^2$ (values below the bars; the even $a_n$ are $0$). Mode $n$ swings $n$ times per period, and all the bars are back in their starting positions at $ct = 2a$.
+
 > [!theorem] Proposition §38.3: Solution as an Average of Two Shifted Copies of f
 > Let $f$ be continuous and sectionally smooth on $0 \le x \le a$ with $f(0) = f(a) = 0$, let $g \equiv 0$, and let $\bar f_o$ be the odd periodic extension of $f$ with period $2a$, defined for all real arguments. Then the series solution (9) of the vibrating string problem is
 >
@@ -245,6 +253,10 @@ By the nature of the problem one expects $f$, at least, to be continuous, with $
 ^pf-38-3
 
 *Uses:* [[§38 Solution of the Vibrating String Problem#^thm-38-2|§38.2]], [[§11 Even and Odd Functions; Half-Range Expansions#^def-11-2|Def. §11.2]] (odd periodic extension), [[§12 Convergence of Fourier Series#^thm-12-1|§12.1]]
+
+![[m341-30-a3.gif|450]]
+
+*(Not from the book; animation added, vault only.)* The identity used in the proof, $\sin\lambda x\cos\lambda ct = \frac12[\sin\lambda(x - ct) + \sin\lambda(x + ct)]$, for the mode $n = 2$, $\lambda = 2\pi/a$, through one period $0 \le ct/a < 1$ of that mode. The thin blue wave $\frac12\sin\lambda(x - ct)$ travels to the right and the thin red wave $\frac12\sin\lambda(x + ct)$ to the left (the dots mark one crest of each). Their sum (black) does not travel. It stays inside the dotted envelope $\pm\sin\lambda x$, with nodes at $0$, $a/2$, $a$ where the two waves always cancel. At $ct/a = 0.25$ the two waves are exactly opposite and the string is flat. A standing wave is the interference of two equal waves running in opposite directions.
 
 Formula (13) gives $u$ without summing a series, for any $f$, as long as $g \equiv 0$. [[§39 d'Alembert's Solution#^thm-39-3|Theorem §39.3]] generalizes it to any $g$.
 

@@ -160,6 +160,10 @@ In Theorems §14.3 and §10.4, $f$ is only required to be sectionally continuous
 ![[m341-10-1.svg]]
 *Example §10.1: the periodic function $f$ with $f(x) = (\pi - x)/2$ on $(0, 2\pi)$ (blue), with jumps of size $\pi$ at the multiples of $2\pi$, and its integral $\int_0^x f = x(2\pi - x)/4$ (red), which is continuous with corners there. Integration smooths: the coefficients improve from $1/n$ to $1/n^2$, and the series converges uniformly.*
 
+![[m341-10-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Integration smooths, shown as the speed of convergence (Example §14.1, Theorem §14.7). On the left are the partial sums $\sum_{n \le N}\frac{\sin nx}{n}$ of $f(x) = (\pi - x)/2$ on $(0, 2\pi)$; on the right are the partial sums $\frac{\pi^2}{6} - \sum_{n \le N}\frac{\cos nx}{n^2}$ of its integral $x(2\pi - x)/4$, for $N = 1, \ldots, 30$. With coefficients $1/n$ the error next to the jumps stays $\pi/2$ (just right of $0$, $S_N$ is near $0$ while $f$ is near $\pi/2$), so the convergence is not uniform. With coefficients $1/n^2$ the worst error, at the corners $x = 0, 2\pi$, is the tail $\sum_{n > N}1/n^2$ (readout: $0.645$ for $N = 1$, $0.033$ for $N = 30$), which tends to $0$, so the convergence is uniform.
+
 > [!theorem] Theorem §14.5: Uniqueness of Fourier Series
 > If $f(x)$ is periodic and sectionally continuous, its Fourier series is unique. That is to say, only one series can correspond to $f(x)$.
 >

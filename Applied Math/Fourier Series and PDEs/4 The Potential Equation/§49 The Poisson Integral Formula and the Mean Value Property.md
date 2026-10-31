@@ -82,6 +82,11 @@ Summing the series solution of Dirichlet's problem in a disk ([[§48 Potential i
 > The kernel is positive for $r < c$, since $c^2 + r^2 - 2rc\cos\psi \ge (c - r)^2 > 0$. Taking $f \equiv 1$, whose solution is $v \equiv 1$, shows $\frac{1}{2\pi}\int_{-\pi}^{\pi}\frac{c^2 - r^2}{c^2 + r^2 - 2rc\cos\psi}\,d\psi = 1$. So $v(r, \theta)$ is a weighted average of the boundary values, and $\min f \le v \le \max f$: the maximum principle for the disk, read off directly. At $r = 0$ the kernel is identically $1$ and the weighted average is the plain average: the mean value property. As $r \to c$ the weight concentrates near $\phi = \theta$, which is why $v(r, \theta) \to f(\theta)$ at points of continuity of $f$.
 
 ^rem-49-1
+
+![[m341-39-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The Poisson kernel $\frac{1}{2\pi}\frac{1 - r^2}{1 + r^2 - 2r\cos(\theta - \phi)}$ ($c = 1$) drawn as a weight around the boundary circle (the band outside the circle, thickness proportional to the weight) and against $\phi$ on the right, for the half-boundary data of Example §48.1 ($f = 1$ on the red half, $0$ on the blue half). The point $(r, \theta)$ starts at the centre, where the weight is uniform and $v = \frac12$, the plain average. It moves out to $r = 0.85$ at $\theta = \pi/5$, where the weight piles up near the closest boundary point (peak $2\pi\times$ weight $= 12.3$) and $v = 0.937$, close to $f = 1$. Then it moves round to $\theta = 4\pi/5$ over the $f = 0$ half, where $v = 0.063$, and back to the centre. The red share of the weight is exactly $v(r, \theta)$, and it always lies between $\min f$ and $\max f$. The path and $r = 0.85$ are chosen for the picture.
+
 ## Properties of the Solution
 
 > [!theorem] Theorem §49.2: Mean Value Property
@@ -127,6 +132,10 @@ Summing the series solution of Dirichlet's problem in a disk ([[§48 Potential i
 ^pf-49-2
 
 *Uses:* [[§48 Potential in a Disk#^thm-48-2|§48.2]], [[§44 Potential Equation#^thm-44-3|§44.3]], [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], [[§25 More on Uniform Convergence#^thm-25-1|451 Thm. §25.1]]
+
+![[m341-39-a3.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The harmonic function $v$ of Example §48.1 in the unit disk (heat map, red $= 1$, blue $= 0$; grey level curves). First, circles of radius $\rho = 0.03$ to $0.65$ about the fixed point $P = (0.25, 0.15)$: the values of $v$ on the circle (right) vary more and more, but their average stays $0.6592 = v(P)$, Theorem §49.2(b). Then a disk $D$ of radius $0.4$ moves once round the origin. The largest and smallest values of $v$ on the closed disk $D$ (red and blue dots, found on a grid over $D$) always lie on its rim, as the maximum principle (Theorem §49.3) requires, and the circle average still equals $v$ at the centre. The point $P$, the radii and the path are chosen for the picture.
 
 > [!remark]- Connections
 > - The mean value property in $\mathbb{R}^n$, from Green's second identity with the fundamental solution: [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-28-3|452 Ex. §28.3]] (given there as a sketch; the proof of (b) above is a complete two-dimensional version).

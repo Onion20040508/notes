@@ -280,6 +280,10 @@ where $N$, $S$, $E$, $W$ are the indices of the four mesh points adjacent to poi
 ![[m341-59-1.svg]]
 *Example §59.3: the square membrane on a $\frac14$-mesh at time levels $m = 0, 2, 4, 8$, with values in units of $\frac1{64}$ (red discs upward, blue downward, area proportional to the size). The initial bump near $(\frac14, \frac14)$ spreads, reflects from the fixed edges, and after eight steps reappears almost intact at the opposite corner.*
 
+![[m341-59-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The scheme of Example §72.3 ($\Delta x = \Delta y = \frac14$, $\rho^2 = \frac12$, $f = 1$ at $(\frac14, \frac14)$, $g = 0$) stepped through the time levels $m = 0, \ldots, 16$. Values are shown in units of $\frac{1}{64}$, as discs (red up, blue down, area proportional to $|u|$). On the right, $64u_1$ (corner of the pluck) and $64u_9$ (opposite corner) against $m$. Only every other point moves at each level (the checkerboard). By $m = 8$ the bump has reached the opposite corner almost intact ($63$ there, $1$ at the start), as in the table. Continuing the same recursion past the table, it comes back to the starting corner at $m = 16$ ($64u_1 = 60.06$, $64u_9 = 3.94$).
+
 > [!example] Example §72.4: A Membrane Struck in the Middle
 > Solve (14)–(18) with $\Delta x = \Delta y = \frac14$, $\rho^2 = \frac12$, $f \equiv 0$, and $g = 4\sqrt2$ at the center $(\frac12, \frac12)$, $g = 0$ at the other mesh points.
 >

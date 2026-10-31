@@ -220,6 +220,10 @@ Sometimes only part of the solution is of interest. For heat conduction in a sem
 ![[m341-54-1.svg]]
 *The persistent part $u = 1 + \alpha e^{-\sqrt{\omega/2}\,x}\sin(\omega t - \sqrt{\omega/2}\,x)$ of Example §67.2, for $\alpha = \frac12$ and $\omega = 2\pi$, at four instants of one period. Each profile is a wave squeezed into the envelope $1 \pm \alpha e^{-\sqrt{\omega/2}\,x}$ (dashed): the surface oscillation dies out within a few depth units $\sqrt{2/\omega} \approx 0.56$, and deeper points reach their maxima later.*
 
+![[m341-54-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* One period of the persistent part $u = 1 + \alpha e^{-\kappa x}\sin(\omega t - \kappa x)$, $\kappa = \sqrt{\omega/2}$, of Example §67.2 with $\alpha = \frac12$, $\omega = 2\pi$ (the values of the static figure); the GIF loops seamlessly. Left: the profile in depth $x$, a damped wave running into the solid inside the envelope $1 \pm \alpha e^{-\kappa x}$ (dashed). The depth unit $\sqrt{2/\omega} \approx 0.56$ is marked. Right: the temperature over the period at the depths $x = 0$, $0.4$, $0.8$ (the coloured dots on the left). Deeper points swing less (amplitude $\alpha e^{-\kappa x}$) and peak later (phase lag $\kappa x$), so the crest moves inward at speed $\omega/\kappa = \sqrt{2\omega} \approx 3.5$. A few depth units down the temperature hardly varies: the skin depth of diurnal or annual heating.
+
 > [!remark]- Remark: The Branch Point at the Origin
 > Unlike the transforms of [[§66★ Partial Differential Equations|§66★]], $U = F(s)e^{-\sqrt s\,x}$ is not an even function of $\sqrt s$, and $s = 0$ is a branch point, not a pole. $A_0 = \lim_{s\to0}sU = 1$ still gives the correct long-time value, but the rest of the solution need not decay exponentially. For $f(t) = 1$, the solution is $u = \operatorname{erfc}\big(x/(2\sqrt t)\big)$ ([[§34★ The Error Function#^cor-34-3|Corollary §34.3]](b)). It approaches the persistent value $1$ only like $1 - x/\sqrt{\pi t}$. The persistent part computed above is correct, but "transient" here can mean a slow algebraic decay. The points $\pm i\omega$ are ordinary simple poles, where the residue computation is valid.
 
@@ -360,3 +364,7 @@ Sometimes only part of the solution is of interest. For heat conduction in a sem
 
 ![[m341-54-2.svg]]
 *Midpoint displacement $u(\frac12, t)$ of the wire of Example §67.3, driven at its fundamental frequency $\omega = \pi$, from the complete solution (300 terms). The oscillation grows between the lines $\pm 2t/\pi^2$ (dashed), the envelope of the resonance term $-\frac{2t}{\pi^2}\sin(\pi x)\cos(\pi t)$ that comes from the double poles at $s = \pm i\pi$; the bounded terms only distort the first few cycles.*
+
+![[m341-54-a2.gif|450]]
+
+*(Not from the book; animation added, vault only.)* The whole wire of Example §67.3, driven at its fundamental frequency $\omega = \pi$, for $0 \le t \le 10$. The solution (blue) is computed mode by mode, with the uniform force expanded as $1 = \sum_{n\ \mathrm{odd}}\frac{4}{n\pi}\sin n\pi x$ and 200 odd modes; it agrees with the note's closed form to $10^{-7}$. Top: $u(x, t)$ with the resonance term $-\frac{2t}{\pi^2}\sin\pi x\cos\pi t$ (red, dashed) drawn over it, inside the growing envelope $\pm\frac{2t}{\pi^2}\sin\pi x$ (gray). After the first cycle the two can hardly be told apart. The amplitude grows linearly while the shape stays locked to the fundamental mode $\sin\pi x$, because the bounded terms $g(x)\sin\pi t$ and the higher modes stay small. Bottom: the midpoint trace $u(\frac12, t)$ of the static figure, drawn along as the wire moves.

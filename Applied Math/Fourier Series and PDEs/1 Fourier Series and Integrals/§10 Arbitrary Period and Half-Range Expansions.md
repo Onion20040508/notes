@@ -164,3 +164,7 @@ the inequality for $x$ recording that $f$ was defined only on $-a$ to $a$.
 ^ex-10-2
 
 *Continued in [[§11 Even and Odd Functions; Half-Range Expansions]]: even and odd functions, odd and even extensions, and the half-range expansions.*
+
+![[m341-7-a2.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The periodic extension of period $4$ of Example §10.2: the graph on $-2 < x \le 2$ ($-1$ on $(-2, 0]$, $x$ on $(0, 2]$, heavy) is a template, copied one period at a time to the left and to the right (Definition §10.1). Then the partial sums (red) of $\sum\frac{2}{(n\pi)^2}[(-1)^n - 1]\cos\frac{n\pi x}{2} + \sum\frac{1}{n\pi}[1 - 3(-1)^n]\sin\frac{n\pi x}{2}$ run up to $N = 30$. They represent the extended function on the whole line, and at the jumps they tend to the midpoints: $-\frac12$ at $x = 0, \pm4$ and $\frac12$ at $x = \pm2, \pm6$ (dots).

@@ -389,3 +389,7 @@ Two facts about Bessel functions evaluate the integrals in (12) for simple $f$.
 > *Powers: Exercise 5.6.3*
 
 ^ex-57-3
+
+![[m341-46-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Example §57.3 (only the inner half $r < a/2$ initially at $T_0$, wall held at $0$), from the Fourier–Bessel series with 200 terms, for $kt/a^2$ from $0$ to $0.3$. Left: the cross-section as a heat map (white $= 0$, red $= T_0$; the dotted circle is $r = a/2$). Right: the radial profile $v(r, t)/T_0$ (blue) with the initial step dashed. The first frame shows $f$ itself. The heat first spreads outward into the cold ring, while the wall stays at $0$, and then the whole cylinder cools as one mode: the red dashed curve $0.770\,J_0(2.405r/a)\,e^{-5.783kt/a^2}$ (the first term) merges with the full series. The axis value passes $0.244\,T_0$ at $kt/a^2 = 0.2$, as in the note.

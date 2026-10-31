@@ -376,3 +376,7 @@ where $a$ and $c$ are positive constants and $b = a + 1$. Equation (23) is ellip
 > *Powers: Exercise 5.8.5*
 
 ^ex-59-3
+
+![[m341-48-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Example §59.3 with $a = c = 1$, $g = 0$, and a thin shell $f(\rho) = e^{-((\rho - 0.6)/0.09)^2}$ (chosen for the picture), over one period $0 \le t < 2$. Left: a cross-section through the centre (colour clipped at $\pm 1.2$). Top right: $u(\rho, t) = [\tilde F(\rho + t) + \tilde F(\rho - t)]/2\rho$. Bottom right: $w = \rho u$ (blue), the sum of the incoming half $\frac12\tilde F(\rho + ct)$ (red dashed) and the outgoing half $\frac12\tilde F(\rho - ct)$ (orange dashed), an ordinary string with fixed ends. The inward half grows like $1/\rho$ as it focuses, reaching $u(0, t) = \tilde F'(ct) \approx \pm 5.8$ at the centre around $t = 0.6$, and comes back out inverted. The outward half reflects inverted at the wall. At $t = 1$ both meet as one inverted shell at $\rho = 0.4$, and at $t = 2$ the initial shell returns. The formula reproduces the check values of the example ($u(0.5, 0.3) = 0.48$, $u(0, 0.3) = 0.73$, $u(0.2, 0.9) = -1.32$ for $f = 1 - \rho^2$).

@@ -145,6 +145,10 @@ Given $f$ and $g$, it is now a simple matter to construct $f_o$ and $G_e$, and s
 ![[m341-34-1.svg]]
 *The pulse of Example §42.1 on the semi-infinite string ($c = 1$) at $t = 0, 1, 2.5, 3, 5$. It splits into two half pulses; the left one meets the fixed end at $t = 2$, is folded back ($t = 2.5$), cancels momentarily ($t = 3$), and returns inverted, following the right one at the same speed.*
 
+![[m341-34-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The pulse $f(x) = 1 - |x - 3|$ of Example §42.1 on the semi-infinite string ($c = 1$) for $0 \le t \le 6$. The real string $x > 0$ is black. On the shaded image side $x < 0$ the odd extension starts as the image pulse $-f(-x)$ (gray) and moves like a real string. Thin lines: the left-moving half $\frac12f_o(x + t)$ (blue) and the right-moving half $\frac12f_o(x - t)$ (red, dashed), so that $u = \frac12[f_o(x + t) + f_o(x - t)]$. The pulse splits; at $t = 2$ its left half reaches the end just as the right-moving half of the image arrives from the other side. At $t = 2.5$ the string near the end is the small triangle $u = x$, and at $t = 3$ the two halves cancel exactly on $0 < x < 1$. Afterwards the image half is on the real side: an inverted half pulse, centred at $x = 3$ at $t = 6$, following the upright one at $x = 9$.
+
 ## A Moving End
 
 Another problem that can be treated by d'Alembert's method has a boundary condition that is a function of time. For simplicity take zero initial conditions:
@@ -288,6 +292,10 @@ The graph of $\phi$ for negative arguments is that of $h$, reflected and rescale
 ^ex-42-3
 
 *Chain: the Gaussian earlier in [[§19★ Complex Methods#^ex-19-3|Chapter 1]] (its Fourier transform) · [[§36 Heated Section, Half Sine Wave, One-Sided Exponential and Gaussian#The Gaussian|Chapter 2]] (a heat solution).*
+
+![[m341-34-a2.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The Gaussian pulse with a push of Example §42.3, $w(x, 0) = f_1(x)$, $w_t(x, 0) = \alpha f_1'(x)$, with $\alpha = 0.5$ (chosen for the picture), for $0 \le t \le 6$. Top: the two halves $\frac12f_1(x + t)$ (blue) and $\frac12f_1(x - t)$ (red, dashed), and the integral term of d'Alembert's formula $\frac12\int_{x-t}^{x+t}\alpha f_1'(z)\,dz = \frac\alpha2[f_1(x + t) - f_1(x - t)]$ (orange, dotted). Their sum $w = \frac34f_1(x + t) + \frac14f_1(x - t)$ (black) sends three times as much to the left as to the right, and neither bump spreads. The gray band is the window $[x_0 - t, x_0 + t]$ for the point $x_0 = 3$ (chosen). Bottom: the same window as the base of the backward characteristic triangle from $(x_0, t)$ in the $(x, t)$-plane, with the paths $x = \mp t$ of the two bump centres dashed. The value $w(x_0, t)$ (readout) stays near $0$ until the window reaches the right-moving bump, peaks at $0.100$ at $t = 3$ when the bump passes, and falls again afterwards. The domain of dependence grows at speed $c = 1$ (Remark: Finite Speed of Propagation).
 
 > [!example] Example §42.4: The Fourier Integral and d'Alembert's Form Agree
 > Solve the semi-infinite string problem (1)–(4) with $f(x) = xe^{-x}$, $g(x) \equiv 0$, in both forms.

@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.2 (Principle "Vacuum expectation values: complete contractions": the count $(n-1)!!$), §14.5 (Principle "The symmetry factor", Figure "Symmetry factors": the contraction counts) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.3, p. 89; §4.4, pp. 92–93 · Yu Zhao-Huan, 量子场论讲义, §6.3.1, eqs. (6.167)–(6.168); §7.3, eqs. (7.114)–(7.125) · the 493 notes (Group Theory) §25–§27, §29–§30, §41, §55 · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §1–§5, §7 · proofs written here; every count checked by enumeration (`qft-C/tools/l14/enumerate_pairings.py`).*
 
-Wick's theorem turns a vacuum expectation value of free fields into a sum over the ways of grouping the fields in pairs ([[§C6.6 Wick's Theorem|§C6.6]]). Perturbation theory then asks two counting questions: how many pairings give the same formula, and how a sum over pairings splits when some fields are joined to fixed points and others are not. Both are questions about finite sets and permutation groups, with no physics in them. This section answers the first; the second is answered in [[§CA.8 Splitting Pairings and the Exponential Formula|§CA.8]]. Pairings are counted directly. Relabelling vertices and their legs is a group action, so pairings that give the same diagram form an orbit, and orbit–stabilizer ([[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]]) gives their number in terms of the diagram's automorphism group. The group theory is taken from the 493 notes (actions, orbits, stabilizers, semidirect products, the first isomorphism theorem). Statements are made for vertices with four half-edges, the case used so far.
+Wick's theorem turns a vacuum expectation value of free fields into a sum over the ways of grouping the fields in pairs ([[§C6a.6 Wick's Theorem|§C6a.6]]). Perturbation theory then asks two counting questions: how many pairings give the same formula, and how a sum over pairings splits when some fields are joined to fixed points and others are not. Both are questions about finite sets and permutation groups, with no physics in them. This section answers the first; the second is answered in [[§CA.8 Splitting Pairings and the Exponential Formula|§CA.8]]. Pairings are counted directly. Relabelling vertices and their legs is a group action, so pairings that give the same diagram form an orbit, and orbit–stabilizer ([[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]]) gives their number in terms of the diagram's automorphism group. The group theory is taken from the 493 notes (actions, orbits, stabilizers, semidirect products, the first isomorphism theorem). Statements are made for vertices with four half-edges, the case used so far.
 
 ## Pairings
 
@@ -80,7 +80,7 @@ Wick's theorem turns a vacuum expectation value of free fields into a sum over t
 >
 > **What the derivation shows.**
 > - The recursion "choose the partner of the first element, pair the rest" is the order in which contractions are counted by hand.
-> - Used in: the vacuum expectation values of Wick's theorem ([[§C6.6 Wick's Theorem#^thm-c6-6-3|Theorem §C6.6.3]]) and the first-order count $15 = 3 + 12$ ([[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-1|Theorem §C6.7.1]]).
+> - Used in: the vacuum expectation values of Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]) and the first-order count $15 = 3 + 12$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]]).
 
 ^der-ca-7-1
 
@@ -356,7 +356,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 >
 > **What the derivation shows.**
 > - Dividing a sum over all pairings by $n!\,(4!)^n$ leaves $1/S$ per diagram exactly when the summand is constant on orbits.
-> - Used in: the coefficient of a Feynman diagram ([[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]]).
+> - Used in: the coefficient of a Feynman diagram ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]).
 
 ^der-ca-7-5
 
@@ -440,7 +440,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 >
 > **What the derivation shows.**
 > - "Divide by the symmetry factor" is this identity: the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels the size of the group, and each diagram keeps $1/|\operatorname{Aut}|$.
-> - Used in: the coefficient of a Feynman diagram ([[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]]).
+> - Used in: the coefficient of a Feynman diagram ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]).
 
 ^der-ca-7-7
 
@@ -612,15 +612,15 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 ^ex-ca-7-1
 
 > [!remark]- ★ Remark: The same sum is the moment formula of a Gaussian
-> For a centred Gaussian random vector $\xi = (\xi_1, \dots, \xi_{2k})$ with covariance $C_{ij} = \mathbb E[\xi_i\xi_j]$, $\mathbb E[\xi_1\cdots\xi_{2k}] = \sum_{P\in\mathcal P([2k])}\prod_{\{i,j\}\in P}C_{ij}$ and odd moments vanish (Isserlis' theorem). The vacuum values of Wick's theorem have the same form with $C = D_F$ ([[§C6.6 Wick's Theorem#^thm-c6-6-3|Theorem §C6.6.3]]); in the path integral they *are* Gaussian moments ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-4|§C2b.6, Remark: Preview: the propagator as a Gaussian covariance]]; QFT C11, planned). Not used in the course at this stage.
+> For a centred Gaussian random vector $\xi = (\xi_1, \dots, \xi_{2k})$ with covariance $C_{ij} = \mathbb E[\xi_i\xi_j]$, $\mathbb E[\xi_1\cdots\xi_{2k}] = \sum_{P\in\mathcal P([2k])}\prod_{\{i,j\}\in P}C_{ij}$ and odd moments vanish (Isserlis' theorem). The vacuum values of Wick's theorem have the same form with $C = D_F$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]); in the path integral they *are* Gaussian moments ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-4|§C2b.6, Remark: Preview: the propagator as a Gaussian covariance]]; QFT C11, planned). Not used in the course at this stage.
 >
 > *Source: L. Isserlis, Biometrika 12 (1918) 134 (stated, not proved here) · Gaussian integrals: [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]]*
 
 ^rem-ca-7-1
 
 > [!remark]- Connections
-> - Counting pairings is counting the terms of a vacuum expectation value of free fields; $(2k-1)!!$ grows like $\sqrt2\,(2k/e)^k$, which is why perturbation theory is organized by diagrams rather than by terms — [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]], [[§C6.6 Wick's Theorem#^thm-c6-6-3|Theorem §C6.6.3]].
+> - Counting pairings is counting the terms of a vacuum expectation value of free fields; $(2k-1)!!$ grows like $\sqrt2\,(2k/e)^k$, which is why perturbation theory is organized by diagrams rather than by terms — [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]].
 > - The symmetry factor is a stabilizer order, and "divide by $S$" is orbit–stabilizer in disguise; the same counting gives the class equation and Burnside's lemma in group theory — [[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]], [[§30 Orbit–Stabilizer#^thm-30-6|493 Thm. §30.6]].
 > - The relabelling group $(S_4)^n \rtimes S_n$ is a wreath product, $S_4 \wr S_n$ (the user's note's $S_4 \wr S_k$, $k$ the number of vertices; the identification is Step 2 of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^der-ca-7-4|Derivation §CA.7.4]]); the 493 notes construct the semidirect product it is built from — [[§58 Semidirect Products#^def-58-2|493 Def. §58.2]].
-> - The ordered simplex of [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]] produced the $\frac{1}{n!}$ of the Dyson series; here the same $\frac{1}{n!}$ meets the $n!$ relabellings of the vertices — [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]].
-> - **Used in** (C6 places): Definition §CA.7.1 — Wick's theorem for ordinary products ([[§C6.6 Wick's Theorem#^thm-c6-6-4|★ Theorem §C6.6.4]]); Theorem §CA.7.1 — the vacuum values of Wick's theorem, the first-order count and the count at every order ([[§C6.6 Wick's Theorem#^thm-c6-6-3|Theorem §C6.6.3]], [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-1|Theorem §C6.7.1]], [[§C6.7 Feynman Diagrams for Correlation Functions#^thm-c6-7-3|Theorem §C6.7.3]]); Definitions §CA.7.2–§CA.7.5, Lemma §CA.7.3, Theorems §CA.7.4, §CA.7.5 and §CA.7.8 — the coefficient $1/S$ and the position-space rules ([[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]], [[§C6.8 Position-Space Feynman Rules#^thm-c6-8-2|Theorem §C6.8.2]]); Corollary §CA.7.6 — the first-order count 15 = 12 + 3 as two orbits ([[§C6.9 Symmetry Factors in Practice#^ex-c6-9-1|Example §C6.9.1]]); Theorem §CA.7.9 and Example §CA.7.1 — the symmetry factors in practice ([[§C6.9 Symmetry Factors in Practice|§C6.9]], [[§C6.9 Symmetry Factors in Practice#^cau-c6-9-1|§C6.9, Caution: Loops at one vertex are permuted too]]); Theorem §CA.7.7 — "divide by the symmetry factor" ([[§C6.8 Position-Space Feynman Rules#^thm-c6-8-1|Theorem §C6.8.1]]).
+> - The ordered simplex of [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]] produced the $\frac{1}{n!}$ of the Dyson series; here the same $\frac{1}{n!}$ meets the $n!$ relabellings of the vertices — [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]].
+> - **Used in** (C6a places): Definition §CA.7.1 — Wick's theorem for ordinary products ([[§C6a.6 Wick's Theorem#^thm-c6a-6-4|★ Theorem §C6a.6.4]]); Theorem §CA.7.1 — the vacuum values of Wick's theorem, the first-order count and the count at every order ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-3|Theorem §C6a.7.3]]); Definitions §CA.7.2–§CA.7.5, Lemma §CA.7.3, Theorems §CA.7.4, §CA.7.5 and §CA.7.8 — the coefficient $1/S$ and the position-space rules ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]]); Corollary §CA.7.6 — the first-order count 15 = 12 + 3 as two orbits ([[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]]); Theorem §CA.7.9 and Example §CA.7.1 — the symmetry factors in practice ([[§C6a.9 Symmetry Factors in Practice|§C6a.9]], [[§C6a.9 Symmetry Factors in Practice#^cau-c6a-9-1|§C6a.9, Caution: Loops at one vertex are permuted too]]); Theorem §CA.7.7 — "divide by the symmetry factor" ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]).

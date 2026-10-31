@@ -190,6 +190,10 @@ If $f$ is continuous, sectionally smooth and $f(-\pi^+) = f(\pi^-)$, the sum of 
 ![[m341-39-1.svg]]
 *Level curves $v = 0.1, \ldots, 0.9$ of the solution (12) in the disk $c = 1$. The boundary value is $1$ on the right half (red) and $0$ on the left half (blue). Every level curve is a circular arc through the two points $(0, \pm1)$ where the boundary value jumps; the curve $v = \frac12$ is the diameter, and on the $x$-axis $v = \frac12 + \frac2\pi\tan^{-1}x$.*
 
+![[m341-39-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Theorem §48.2 for the data of Example §48.1 ($c = 1$). A circle of radius $r$ grows from the centre to the boundary on the level-curve picture. Top right: $v(r, \theta)$ against $\theta$ along that circle, with the boundary data $f$ dashed. Bottom right: the amplitudes $|a_n|r^n = \frac{2}{n\pi}r^n$ of the odd harmonics (outlines: their values at $r = c$). At $r = 0$ only the constant $a_0 = \frac12$ is left. As $r$ grows, the harmonics switch on in order, the higher ones last because of the factor $(r/c)^n$, and the profile sharpens into the step $f$ at $r = c$. Inside the disk $v$ stays between $0$ and $1$, with no overshoot.
+
 > [!remark]- Connections
 > - Complex-variables version: [[§136★ Examples (Dirichlet Problem for a Disk)#^ex-136-1|342 Ex. §136.1]] (the same split cylinder, rotated a quarter turn, solved by integrating the Poisson kernel in closed form).
 

@@ -6,10 +6,10 @@ chapter: C5b
 tags: [chapter, quantum-field-theory]
 ---
 # C5b The Quantum Spinor Field
-← [[· C5a Spinors and the Dirac Equation]] · ↑ [[Quantum Field Theory]] · [[· C6 Interactions of Quantum Fields]] →
+← [[· C5a Spinors and the Dirac Equation]] · ↑ [[Quantum Field Theory]] · [[· C6a Interactions and Correlation Functions]] →
 
 **Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (26), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (89), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (117), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (7), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (161), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (4), [[· CA Mathematical Methods|CA Mathematical Methods]] (121), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (5)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (1), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (9), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (35), [[· C6 Interactions of Quantum Fields|C6 Interactions of Quantum Fields]] (8), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (74), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (1)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (1), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (9), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (35), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (8), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (74), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (1)
 
 ## Sections
 - [[§C5b.1 Canonical Quantization of the Dirac Field]] — 

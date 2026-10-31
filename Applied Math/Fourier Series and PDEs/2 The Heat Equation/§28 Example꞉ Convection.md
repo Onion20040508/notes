@@ -101,6 +101,10 @@ Either $T(t) \equiv 0$ (which would make $w \equiv 0$) or $\phi(0) = 0$ and $\ka
 ![[m341-22-1.svg]]
 *The graphs of $\tan(\lambda a)$ (blue) and $-\kappa\lambda/h$ (red), here for $\kappa/ha = 0.5$, against $\lambda a$. The intersections (dots) are the eigenvalues: $\lambda_na \approx 2.289$, $5.087$, $8.096$, $11.173$, each just to the right of $(2n - 1)\pi/2$ (dashed) and closer to it as $n$ grows. The intersection at $\lambda = 0$ corresponds to the trivial solution.*
 
+![[m341-22-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The eigenvalue equation (11) in the form $\tan z = -Az$, with $z = \lambda a$ and $A = \kappa/ha$. $A$ runs from $0.01$ to $100$ on a log scale and back. Left: $\tan z$ (blue) and the line $-Az$ (red), which turns from nearly flat to nearly vertical; the dots are the roots $z_1, \ldots, z_4$. For small $A$ (strong convection) they sit just below $n\pi$, the fixed-end values of Theorem §25.2. For large $A$ (weak convection) they sit just above $(2n - 1)\pi/2$ (dotted), the insulated-end values of Theorem §27.1. The readout passes through the values of Example §28.1, e.g. $z_1 = 2.289$ at $A = 0.5$. Right: the first eigenfunction $\sin\lambda_1x$ (normalized to height 1), with its tangent at $x = a$, where $\phi_1'(a)/\phi_1(a) = -h/\kappa$. The slope at the end turns from steep, with $\phi_1(a) \approx 0$ (Dirichlet), to flat (Neumann): the Robin condition interpolates between the two.
+
 > [!remark] Remark: Negative Roots
 > The equation (11) also has negative solutions $-\lambda_n$ (the left side is odd in $\lambda$, and so is the right). They are ignored because they give nothing new: $\sin(-\lambda_nx) = -\sin(\lambda_nx)$ is a multiple of the same eigenfunction, and the eigenvalue $\lambda^2$ is the same.
 

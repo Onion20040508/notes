@@ -281,7 +281,7 @@ By the theorems above, every term of $\mathcal L$ has mass dimension $4$ ([[§C1
 > **What the derivation shows**
 > - Lorentz invariance removed every odd number of derivatives; power counting removed everything beyond two derivatives and four fields; total derivatives and field redefinitions removed the rest. Four numbers remain, one of them ($m$) already in the free theory.
 > - Assumptions: polynomial $\mathcal L$ (locality with finitely many terms), positive kinetic term, $V$ bounded below; the counting is classical ("tree level").
-> - Used next: the free theory ($g = \lambda = 0$) is [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]; the interacting $\phi^4$ theory is [[§C6.1 From Free to Interacting Fields#^mod-c6-1-1|Model §C6.1.1]], whose dimensionless coupling is [[§C6.1 From Free to Interacting Fields#^thm-c6-1-2|Theorem §C6.1.2]]; $\phi^3$ appears in [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-2|Example §C1b.2.2]].
+> - Used next: the free theory ($g = \lambda = 0$) is [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]; the interacting $\phi^4$ theory is [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], whose dimensionless coupling is [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-2|Theorem §C6a.1.2]]; $\phi^3$ appears in [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-2|Example §C1b.2.2]].
 
 ^der-c1b-3-6
 

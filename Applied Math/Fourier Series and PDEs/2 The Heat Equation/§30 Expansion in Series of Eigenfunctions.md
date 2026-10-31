@@ -224,6 +224,10 @@ Notice the similarity to the Fourier series convergence theorem: at a jump the s
 ![[m341-24-1.svg]]
 *Partial sums $\sum_{n=1}^N c_n\sin(n\pi\ln x)$ of the expansion of $f(x) = x$ in Example §30.2, for $b = e$, where $c_n = 2n\pi(1 - (-1)^ne)/(1 + n^2\pi^2)$. Inside $(1, e)$ they approach $x$ (dashed); at both ends every eigenfunction vanishes, so the sums are pinned to $0$ and overshoot near the ends, as a Fourier sine series does for a function that is not zero at the endpoints.*
 
+![[m341-24-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The partial sums $\sum_{n=1}^N c_n\sin(n\pi\ln x)$ of the expansion of $f(x) = x$ in Example §30.2, for $b = e$ and $N = 1, \ldots, 40$, where $c_n = 2n\pi(1 - (-1)^ne)/(1 + n^2\pi^2)$. Inside $(1, e)$ they approach $x$ (dashed). At both ends every eigenfunction vanishes, so the sums stay pinned to $0$ (red dots). Next to the ends, especially $x = e$ where $f$ is largest, they overshoot: the maximum is $3.14$ for $N = 40$, against $f(e) \approx 2.718$. This is the Gibbs behaviour of a sine series for a function that is not zero at the endpoints.
+
 > [!example] Example §30.3: Expanding x² in the Eigenfunctions cos(λₙx)
 > Find the eigenvalues and eigenfunctions of
 >

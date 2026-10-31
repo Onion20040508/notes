@@ -325,3 +325,7 @@ Since the sampled values all come from the interval $-N\pi/\Omega$ to $N\pi/\Ome
 
 ![[m341-16-1.svg]]
 *Example §16.3: the signal $f(t) = (t^2 + 2t)/(1 + t^2)^2$ (dashed) and its sampling reconstructions (4) with $N = 100$, for cutoff $\Omega = 4$ (orange) and $\Omega = 10$ (blue). With $\Omega = 4$ the samples are too sparse to follow the steep rise near $t = 0$ and the reconstruction ripples; with $\Omega = 10$ it is indistinguishable from $f$.*
+
+![[m341-16-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The sampling series (4) for the signal $f(t) = (t^2 + 2t)/(1 + t^2)^2$ of Example §20.3 (dashed). First, with $\Omega = 4$, the terms $f(n\pi/\Omega)\frac{\sin(\Omega t - n\pi)}{\Omega t - n\pi}$ for the samples in $-4 \le t \le 8$ are added from left to right; the newest term is red and the running sum blue. Each sinc passes through its own sample and vanishes at all the others, so the sum rebuilds $f$ one sample at a time. Then the full sum with $N = 100$ is shown while the cutoff changes: down to $\Omega = 2$ (spacing $1.57$, maximum error $0.63$ on $[-4, 8]$, where the samples miss the steep dip and rise near $t = 0$) and up to $\Omega = 10$ (spacing $0.31$, maximum error $0.001$). For $\Omega = 4$ the error is $0.18$, as in the note.

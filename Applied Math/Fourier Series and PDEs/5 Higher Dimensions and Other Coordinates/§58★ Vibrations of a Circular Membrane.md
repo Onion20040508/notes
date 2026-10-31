@@ -300,6 +300,10 @@ The coefficients come from an orthogonality principle.
 ![[m341-47-2.svg]]
 *Frequencies of the lowest modes of a circular membrane (top; label $mn$, blue for the radially symmetric modes $m = 0$, red for the doubly counted modes $m \ge 1$), divided by the fundamental $\alpha_{01}c/a$, against the harmonic frequencies $1, 2, 3, 4$ of a string (bottom).*
 
+![[m341-47-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The plucked string of Example §38.1 (left) next to a radially symmetric drum (right, a cut through a diameter) released from rest in the cone shape $f(r) = 1 - r/a$ (chosen for the picture). The drum's motion is the series of Proposition §58.1 with 300 terms, $a_n = \frac{1}{D_n}\int_0^af(r)J_0(\alpha_nr/a)\,r\,dr$. Time is measured in units of each one's fundamental period $T_1$ ($2a/c$ for the string, $2\pi a/(\alpha_{01}c)$ for the drum), over two periods. Bottom, on a log scale: the relative distance $\|u(\cdot, t) - f\|/\|f\|$ from the initial shape (for the drum with the area weight $r\,dr$). The string's distance drops to exactly $0$ at $t = T_1$ and $2T_1$. The drum's stays above $0.08$ (minimum $0.088$ near $t = 0.96T_1$), and at $t = T_1$ its centre reaches only about $0.74$ of the initial height, because its overtones $\alpha_{0n}/\alpha_{01} = 2.295, 3.598, \ldots$ are not integers (Example §58.1). The radially symmetric modes alone come close to returning near $t = 3T_1$, because $\alpha_{0n} \approx (n - \frac14)\pi$ makes their ratios nearly $(4n - 1)/3$. The modes with $m \ge 1$ (ratios $1.593, 2.136, \ldots$) spoil even that.
+
 > [!example] Example §58.2: Nodal Curves of the Lowest Modes
 > Find the nodal curves of the eigenfunctions $\phi_{mn} = J_m(\lambda_{mn}r)\cos(m\theta)$ for $m = 0, 1, 2$ and $n = 1, 2, 3$.
 >
@@ -321,6 +325,10 @@ The coefficients come from an orthogonality principle.
 
 ![[m341-47-1.svg]]
 *Six eigenfunctions $\phi_{mn} = J_m(\alpha_{mn}r/a)\cos(m\theta)$ of the disk, with their nodal circles and diameters in black; between them $\phi_{mn} > 0$ (blue, $+$) or $\phi_{mn} < 0$ (red, $-$), the shade darker where the largest value of $|\phi_{mn}|$ in the region is larger. Above each, the frequency of the mode relative to the fundamental. Each picture is a snapshot of the corresponding standing wave; half a period later the signs are exchanged.*
+
+![[m341-47-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The drum modes $J_m(\alpha_{mn}r/a)\cos(m\theta)\cos(\alpha_{mn}ct/a)$ for $(m, n) = (0,1), (1,1), (2,1), (0,2)$, each scaled to maximum $1$, run for two periods of the fundamental $(0,1)$ ($x$ marks the direction $\theta = 0$). Red is up, blue down. The nodal curves of Example §58.2 are drawn in black on the membrane and on the base: the diameter $\theta = \pm\frac{\pi}{2}$ for $(1,1)$, the diameters $\theta = \pm\frac{\pi}{4}, \pm\frac{3\pi}{4}$ for $(2,1)$, and the circle $r = (2.405/5.520)a = 0.436a$ for $(0,2)$. These curves stay at rest while the regions between them swing in antiphase. The dials turn once per period of each mode, at the ratios $\alpha_{mn}/\alpha_{01} = 1, 1.593, 2.136, 2.295$. After two fundamental periods only the $(0,1)$ dial is back where it started.
 
 > [!example] Example §58.3: Identifying a Mode from Its Nodal Curves
 > The nodal curves of an eigenfunction $\phi_{mn}(r, \theta)$ of the disk of radius $a$ are the boundary circle, one interior circle of radius about $0.65a$, and three diameters, at $\theta = 0$, $\pi/3$ and $2\pi/3$ (Powers' Figure 10). (a) Find $m$ and $n$. (b) Find the eigenvalue $\lambda_{mn}$. (c) Find $\phi_{mn}$. (d) Find the frequency of the drumhead vibrating in this mode.

@@ -107,6 +107,10 @@ With $u = \phi(x)T(t)$ the heat equation separates as before, $\phi''/\phi = T'/
 ![[m341-27-1.svg]]
 *The solution (6) of Example §33.1 on $-3a < x < 3a$ at the dimensionless times $kt/a^2 = 0.01$, $1$ and $10$, with the initial block (dashed). The values were computed from the closed form $\frac{T_0}{2}\big[\operatorname{erf}\frac{a - x}{\sqrt{4kt}} + \operatorname{erf}\frac{a + x}{\sqrt{4kt}}\big]$ of [[§34★ The Error Function#^ex-34-1|Example §34.1]]. At every $t > 0$ the temperature is positive everywhere, however far from the hot section.*
 
+![[m341-27-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Example §33.1 (hot block $T_0$ on $-a < x < a$) seen through the heat kernel form (7): $u(x,t) = \int G(x - x', t)f(x')\,dx'$. The blue curve is the closed form $\frac{T_0}{2}\big[\operatorname{erf}\frac{a - x}{\sqrt{4kt}} + \operatorname{erf}\frac{a + x}{\sqrt{4kt}}\big]$, with $kt/a^2$ growing from $0.001$ to $10$ (log scale). The red Gaussian is $G(x - x', t)$ as a function of $x'$, drawn with a fixed peak height, centred at a point $x$ that moves back and forth. The red bar marks its width $\pm\sqrt{2kt}$. The shaded part is the fraction of its unit mass lying over the block, which equals $u(x,t)/T_0$ (the red dot). The kernel widens like $\sqrt t$: at first it only sees the block or the cold rod, later it averages over both. The inset shows $\log_{10}(u/T_0)$ for $a < x < 3a$, with the readout $u(3a, t)$. Already at $kt/a^2 = 0.001$ the value is $10^{-436}T_0$, tiny but positive: infinite speed of propagation.
+
 ## The Heat Kernel Form
 
 Starting from the general form of the solution (4), Powers derives a second form.
@@ -216,6 +220,10 @@ The semi-infinite rod of [[§32 Semi-Infinite Rod|§32]] can be treated the same
 ^pf-33-4
 
 *Uses:* [[§33 Infinite Rod#^thm-33-2|§33.2]], [[§33 Infinite Rod#^thm-33-3|§33.3]], [[§32 Semi-Infinite Rod#^thm-32-2|§32.2]]
+
+![[m341-27-a2.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Proposition §33.4 applied to the heated section of Example §32.1 ($T_0$ on $0 < x < b$, end $x = 0$ held at $0$), for $kt/b^2$ from $0.001$ to $1$ (log scale). The rod is continued to $x < 0$ (grey) by the odd image $-T_0$ on $-b < x < 0$. Each block spreads by the heat kernel: the source heat $\frac{T_0}{2}\big[\operatorname{erf}\frac{x}{\sqrt{4kt}} - \operatorname{erf}\frac{x - b}{\sqrt{4kt}}\big]$ (thin blue) and the image $-\frac{T_0}{2}\big[\operatorname{erf}\frac{x + b}{\sqrt{4kt}} - \operatorname{erf}\frac{x}{\sqrt{4kt}}\big]$ (red). Their sum (thick blue on $x > 0$) is the solution $T_0\big[\operatorname{erf}\frac{x}{\sqrt{4kt}} - \frac12\operatorname{erf}\frac{x - b}{\sqrt{4kt}} - \frac12\operatorname{erf}\frac{x + b}{\sqrt{4kt}}\big]$ of Example §32.1. At $x = 0$ the source and the image contribute equal and opposite amounts (readout), so $u(0, t) = 0$ for every $t$: the heat seems to leak out through the cold end, and in this picture it is cancelled there by the image.
 
 ## Examples
 

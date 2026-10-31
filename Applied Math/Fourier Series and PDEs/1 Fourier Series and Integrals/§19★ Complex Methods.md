@@ -287,6 +287,10 @@ The lecture reached (5) and (6) as Powers reached (7) of §18 ([[§18 Fourier In
 ![[m341-15-1.svg]]
 *Example §15.3: the temperature $U_t(x)$ (left) and its Fourier cosine coefficient function $A_t(\lambda)$ (right) at $t = 0$ (blue) and $t = 6$ (red). As heat spreads, $U_t$ widens and flattens while $A_t$ narrows (the high frequencies die first, like $e^{-\lambda^2 t}$). The dashed lines mark the half-widths $\Delta x$ and $\Delta\lambda$; their product stays $2\ln 2$.*
 
+![[m341-15-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The heat flow of Example §19.3(b)–(d) for $0 \le t \le 10$. On the left, $U_t(x) = e^{-x^2/(2(2t + 4))}/\sqrt{2\pi(2t + 4)}$ widens and flattens; on the right, its cosine coefficient function $A_t(\lambda) = \frac1\pi e^{-\lambda^2(t + 2)}$ narrows, because each frequency decays like $e^{-\lambda^2 t}$ and the high ones die first ($t = 0$ dotted). The dashed lines mark the half-widths $\Delta x = \sqrt{(4t + 8)\ln 2}$ (from $2.35$ to $5.77$) and $\Delta\lambda = \sqrt{\ln 2/(t + 2)}$ (from $0.589$ to $0.240$). Their product stays $2\ln 2 \approx 1.386$ throughout: the uncertainty relation is conserved by the motion, and the Gaussian stays Gaussian.
+
 *Chain: the Gaussian returns in [[§36 Heated Section, Half Sine Wave, One-Sided Exponential and Gaussian#The Gaussian|Chapter 2]] (a heat solution) and [[§42★ Wave Equation in Unbounded Regions#^ex-42-3|Chapter 3]] (a pulse on a string).*
 
 > [!remark]- Connections

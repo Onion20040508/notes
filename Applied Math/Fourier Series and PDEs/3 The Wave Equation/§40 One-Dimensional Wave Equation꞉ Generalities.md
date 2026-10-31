@@ -258,6 +258,10 @@ The solution of (11) is $T_n(t) = a_n\cos(\lambda_nct) + b_n\sin(\lambda_nct)$. 
 
 ^ex-40-3
 
+![[m341-32-a1.gif|450]]
+
+*(Not from the book; animation added, vault only.)* The damped string $u_{tt} = u_{xx} - ku_t$ on $0 < x < \pi$ ($c = 1$, $a = \pi$ as in the single-mode part of the example), with the plucked initial shape of Example §38.1 ($h = 1$), $g = 0$ and $k = 0.3$ (chosen for the picture), over $0 \le t \le 4\pi$. Top: the series solution (200 terms, $A_n$ the plucked coefficients, $B_n = \frac k2A_n/\mu_n$) in blue against the undamped string (gray, dashed). Every mode decays like $e^{-kt/2}$ (readout), and the frequencies $\mu_n = \sqrt{n^2 - k^2/4}$ are no longer multiples of $\mu_1$: $\mu_3/\mu_1 = 3.03$. The damped string lags behind, and at $t = 2\pi$ and $4\pi$ it does not come back to a scaled copy of its initial triangle while the undamped one does. Bottom: one mode, $n = 1$, with $T(0) = 1$, $T'(0) = 0$, for $k = 0.3$ (underdamped, inside the dotted envelope $\pm e^{-0.15t}$), $k = 2$ (critical, $\frac k2 = n$) and $k = 4$ (overdamped). Only the underdamped mode oscillates; the critical one dies out fastest without oscillating.
+
 > [!example] Example §40.4: A Nonuniform String That Is Musical
 > Solve $\dfrac{\partial}{\partial x}\Big(x\dfrac{\partial u}{\partial x}\Big) = \dfrac{1}{c^2x}\dfrac{\partial^2u}{\partial t^2}$, $1 < x < 2$, with $u(1, t) = u(2, t) = 0$, $u(x, 0) = f(x)$, $u_t(x, 0) = g(x)$. Here $s(x) = x$ and $p(x) = 1/x$, both positive on $[1, 2]$.
 >

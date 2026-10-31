@@ -5,9 +5,9 @@ tags: [quantum-field-theory, phy513, review]
 ---
 ↑ [[Quantum Field Theory]] · [[PHY 513 Midterm Review|Midterm Review]] · [[PHY 513 Notes Drill|Notes Drill]]
 
-# PHY 513 Problem-Set Drill (PS1–PS7)
+# PHY 513 Problem-Set Drill (PS1–PS8)
 
-Every problem and part of Problem Sets 1–7, all submitted (Problem Set 7 on 2026-10-13), broken into small questions in order. Statements follow Larsen's problem sets (in the notes' notation where marked); the hints point to the homes in the notes and say, neutrally, how the submitted solution went. The midterm (Friday Oct 16) has one short-response problem "of exactly this type" as Problem Set 7, Problem 1 (Problem Set 7 PDF); the plan is in [[PHY 513 Midterm Review]].
+Every problem and part of Problem Sets 1–8, all submitted (Problem Set 7 on 2026-10-13, Problem Set 8 on 2026-10-30; PS8 is final-exam material), broken into small questions in order. Statements follow Larsen's problem sets (in the notes' notation where marked); the hints point to the homes in the notes and say, neutrally, how the submitted solution went. The midterm (Friday Oct 16) has one short-response problem "of exactly this type" as Problem Set 7, Problem 1 (Problem Set 7 PDF); the plan is in [[PHY 513 Midterm Review]].
 
 **How to drill.**
 1. Read the statement and answer the questions top to bottom on paper, closed book.
@@ -2275,6 +2275,167 @@ Argue that any Hermitian, local, Lorentz-scalar operator built from a Dirac spin
 > **Key results.** Parity Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-2|§C9.2.2]] Parity on the Complex Scalar Field, Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-4|§C9.2.4]] Parity on the Adjoint Field, Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-5|§C9.2.5]] Parity on the Derivatives of the Field; Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-1|§C9.10.1]] Charge Conjugation on the Complex Scalar Field, Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-2|§C9.10.2]] Time Reversal on the Complex Scalar Field, Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-3|§C9.10.3]] Charge Conjugation and Time Reversal on the Derivatives, Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-4|§C9.10.4]] The U(1) Current under P, C and T, Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-6|§C9.10.6]] CPT on the Complex Scalar Field; time reversal must be antilinear Theorem [[§C9.8 Time Reversal#^thm-c9-8-1|§C9.8.1]] Time Reversal Must Be Antilinear; part (c): Example [[§C9.9 CPT and the CPT Theorem#^ex-c9-9-2|§C9.9.2]] Why a Hermitian, Local Lorentz Scalar Is CPT Invariant (a Qualitative Argument), Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-6|§C9.9.6]] The CPT Theorem, [[§C9.9 CPT and the CPT Theorem#^der-c9-9-6b|★ Derivation §C9.9.6, beyond the lecture)]].
 >
 > **Difficulty** (a) 3, (b) 2, (c) 3. Submitted solution: (a) a general linear/antilinear step, matching of $e^{\mp ip\cdot x}$, and the commutator argument excluding annihilator-to-creator maps, giving all phases $1$ (the tex source also carries a commented-out note with three reasons why $T$ is antiunitary, not part of the submitted text); (b) $(-1)^\mu J^\mu(\tilde x)$, $-J^\mu(x)$, $(-1)^\mu J^\mu(x_T)$, the $C$ step via bosonic reordering under normal ordering; (c) $\Theta\hat O(x)\Theta^\dagger = (-1)^n\hat O^\dagger(-x)$, then even $n$ and Hermiticity, with a closing remark on the complexified Lorentz group. The vault integrates (a)–(b) in [[§C9.10 C, T and CPT for the Complex Scalar Field|§C9.10]] C, T and CPT for the Complex Scalar Field (Definition [[§C9.10 C, T and CPT for the Complex Scalar Field#^def-c9-10-1|§C9.10.1]] Charge Conjugation on the Hilbert Space of the Complex Scalar Field, Definition [[§C9.10 C, T and CPT for the Complex Scalar Field#^def-c9-10-2|§C9.10.2]] Time Reversal on the Hilbert Space of the Complex Scalar Field, Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-4|§C9.10.4]] The U(1) Current under P, C and T: the same rules for $\hat j^\mu = -J^\mu$) and (c) as Example [[§C9.9 CPT and the CPT Theorem#^ex-c9-9-2|§C9.9.2]] Why a Hermitian, Local Lorentz Scalar Is CPT Invariant (a Qualitative Argument).
+
+## Problem Set 8: Feynman Diagrams (due Nov 1; submitted Oct 30)
+
+### PS8.1 Symmetry factors in φ⁴ theory and with oriented lines
+
+Determine the symmetry factor of each diagram in scalar $\phi^4$ theory: (a) the tadpole on a line ($x$–$z$–$y$ with a loop at $z$); (b) the sunset ($x$ and $y$ on two vertices joined by three lines); (c) the four-point "fish" (two vertices joined by two lines, two external lines on each); (d) the triangle (three vertices joined pairwise, two external lines on each).
+
+*Parts: (b).*
+
+^ps8-1
+
+- [ ] Q1 **[def]** Write the order-$\lambda^n$ term of the numerator and say where $\frac{1}{n!}$ and $\frac{1}{(4!)^n}$ come from.
+- [ ] Q2 **[def]** What is $|G_n|$, and why is $S = |G_n|/N_D = |\operatorname{Stab}(P)|$?
+- [ ] Q3 For each diagram list the choices that build one contraction (which vertex, which legs) and multiply them.
+- [ ] Q4 **[why]** Why can the two vertices of the sunset and of the fish not be exchanged by a symmetry?
+- [ ] Q5 In the triangle, what does exchanging the two internal legs at one vertex do to the pairing? Is the result the same diagram, and is it the same pairing?
+- [ ] Q6 Check each $S$ with the product rule (loops, bundles of parallel lines, vertex permutations).
+
+> [!tip]- Hint: route for the whole problem
+> **Strategy (K11).** Count the contractions $N_D$ producing each diagram and divide $n!\,(4!)^n$ by it; check with the stabilizer: fix the legs joined to external points, then see which permutations of the remaining legs map lines to lines.
+
+#### (b)
+
+For the complex scalar $\mathcal L = \partial_\mu\phi^\dagger\partial^\mu\phi - m^2\phi^\dagger\phi - \frac\lambda4(\phi^\dagger\phi)^2$, propagator $\frac{i}{p^2 - m^2 + i\epsilon}$, vertex $-i\lambda$, lines oriented in the direction of charge flow: find the symmetry factors of (a) the oriented tadpole, (b) the oriented fish with the two internal lines running opposite ways, (c) the oriented sunset with one internal line running against the other two.
+
+^ps8-1-b
+
+- [ ] Q1 **[def]** Which contractions of $\hat\phi$, $\hat\phi^\dagger$ are nonzero? Derive $\langle0|T\{\hat\phi\hat\phi\}|0\rangle = 0$ from the mode expansion.
+- [ ] Q2 **[why]** Why is $\frac14 = \frac{1}{2!\,2!}$ the analogue of $\frac{1}{4!}$?
+- [ ] Q3 For each diagram: which legs are fixed by the external lines, which candidate symmetries remain, and which of them reverse an arrow?
+- [ ] Q4 Compare each $S$ with the real-field diagram of the same shape. Why are they smaller?
+- [ ] Q5 **[conv]** Slide 18 says "In QED the symmetry factor is always $S = 1$". For which diagrams is that true?
+
+> [!tip]- Hint (b): route
+> **Strategy (K11).** Prefactor $\frac{1}{n!}\bigl(\frac14\bigr)^n$ against $|G| = n!\,(2!\,2!)^n$; symmetries may only permute $\hat\phi$ legs among themselves and $\hat\phi^\dagger$ legs among themselves.
+>
+> **Topic and definitions.** T11 (with T5 for the complex field).
+> - Complex mode expansion: Theorem [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|§C2a.5.2]] Mode Expansion of the Complex Field; why lines carry arrows: Theorem [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|§C6a.7.2]] Real-Scalar Lines Are Undirected; Complex-Scalar and Dirac Lines Are Oriented
+> - Relabelling with leg kinds: Definition [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|§CA.8.2]] Labelled Diagrams with General Vertices
+>
+> **Key results.** Theorem [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|§C6a.9.1]] Symmetry Factors with Oriented Lines, Example [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-7|§C6a.9.7]] The Three Oriented Diagrams of Problem Set 8, Problem 1(b) (this problem); Theorem [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|§CA.8.4]] Orbit Counting for General Vertices; [[§C6a.9 Symmetry Factors in Practice#^cau-c6a-9-2|§C6a.9, Caution: "In QED the symmetry factor is always S = 1" holds for diagrams with external points]].
+
+> [!tip]- Hints: definitions, results and your solution for the whole problem
+> **Topic and definitions.** T11.
+> - Symmetry factor: Definition [[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|§C6a.8.1]] Symmetry Factor of a φ⁴ Diagram; relabelling group Definition [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|§CA.7.3]] The Relabelling Group; diagram and automorphism group Definition [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|§CA.7.4]] Diagram, Automorphism Group, Symmetry Factor
+> - Contraction, Wick's theorem: Definition [[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|§C6a.5.1]] Contraction, Theorem [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|§C6a.6.2]] Wick's Theorem
+>
+> **Key results.** Example [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-5|§C6a.9.5]] The Four Diagrams of Problem Set 8, Problem 1(a) (this problem), Example [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|§C6a.9.1]] The First-Order Diagrams, Example [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-4|§C6a.9.4]] Three Second-Order Corrections to the Two-Point Function (sunset, and all 945 second-order contractions); Theorem [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|§C6a.8.1]] The Coefficient of a Diagram Is 1/S; Theorem [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|§CA.7.5]] The Number of Labelled Diagrams of One Diagram; product rule Theorem [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|§CA.7.9]] The Symmetry Factor as a Product.
+>
+> **Difficulty** (a) 2, (b) 2. Submitted solution: (a) both methods for all four diagrams, $S = 2, 6, 2, 1$, with exploded-vertex drawings (legs as dots inside a dashed vertex circle); (b) $|G| = k!\,(2!\,2!)^k$ and arrow preservation, $S = 1, 1, 2$, drawings with filled (in) and open (out) dots. The vault integrates them as Example [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-5|§C6a.9.5]] The Four Diagrams of Problem Set 8, Problem 1(a), Example [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-4|§C6a.9.4]] Three Second-Order Corrections to the Two-Point Function (sunset), Theorem [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|§C6a.9.1]] Symmetry Factors with Oriented Lines, Example [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-7|§C6a.9.7]] The Three Oriented Diagrams of Problem Set 8, Problem 1(b).
+
+### PS8.2 Symmetry factors in cubic–quartic theory
+
+For $\mathcal L = \frac12(\partial_\mu\phi)^2 - \frac{m^2}{2}\phi^2 - \frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4$ (vertices $-ig$, $-i\lambda$), draw all Feynman diagrams for $p_A + p_B \to p_1 + p_2$ to $O(g^2)$ or $O(\lambda)$ (treat $\lambda \sim g^2/m^2$ as the same order).
+
+*Parts: (b), (c).*
+
+^ps8-2
+
+- [ ] Q1 **[def]** Why does a diagram with $n_3$ cubic and $n_4$ quartic vertices come with $g^{n_3}\lambda^{n_4}$? Derive the vertex factor $-ig$ from $-\frac{g}{3!}\phi^3$.
+- [ ] Q2 With two cubic vertices and four external particles, how many internal lines are there?
+- [ ] Q3 **[why]** What happens if one cubic vertex carries three external particles? Why is that diagram excluded from $\mathcal M$?
+- [ ] Q4 List the diagrams by the partner of $p_A$; give the momentum of each internal line.
+- [ ] Q5 **[why]** Why is "$\lambda \sim g^2/m^2$" the right comparison (mass dimensions of $g$ and $\lambda$)?
+
+> [!tip]- Hint: route for the whole problem
+> **Strategy (K8).** Count legs and external lines to get the number of internal lines; then classify by which external particles share a vertex.
+
+#### (b)
+
+For $p_A + p_B \to p_1 + p_2 + p_3$, draw all diagrams of order $O(g\lambda)$ ($O(g^3)$ not needed).
+
+^ps8-2-b
+
+- [ ] Q1 How many legs, external lines and internal lines?
+- [ ] Q2 **[why]** Which distributions of the five external particles over the two vertices give disconnected diagrams?
+- [ ] Q3 Classify the pairs at the cubic vertex (both incoming, mixed, both outgoing) and count each class; check the total against $\binom52$.
+
+> [!tip]- Hint (b): route
+> **Strategy (K8).** Count legs; exclude disconnected placements; a diagram is the choice of the external pair at the cubic vertex.
+>
+> **Topic and definitions.** T11. Definition [[§C6b.6 Amplitudes from Correlation Functions#^def-c6b-6-1|§C6b.6.1]] Diagram of a Scattering Amplitude
+>
+> **Key results.** Example [[§C6b.6 Amplitudes from Correlation Functions#^ex-c6b-6-4|§C6b.6.4]] Cubic–Quartic Theory, 2 → 3 at Order gλ (this problem).
+
+#### (c)
+
+Show that all the diagrams of (b) have symmetry factor 1.
+
+^ps8-2-c
+
+- [ ] Q1 **[def]** What is $|G|$ for one cubic and one quartic vertex, and why are there no vertex permutations?
+- [ ] Q2 **[why]** Why does a stabilizer element fix every leg joined to an external particle?
+- [ ] Q3 Conclude $S = 1$; then check by counting $N_D$.
+
+> [!tip]- Hint (c): route
+> **Strategy (K11).** Stabilizer: external legs are fixed; at each vertex only one leg is left.
+>
+> **Topic and definitions.** T11. Theorem [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|§CA.8.4]] Orbit Counting for General Vertices
+>
+> **Key results.** Theorem [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-4|§C6b.6.4]] Vertices Saturated by External Lines Give S = 1 (this problem's argument as a theorem).
+
+> [!tip]- Hints: definitions, results and your solution for the whole problem
+> **Topic and definitions.** T11.
+> - Diagram of a scattering amplitude: Definition [[§C6b.6 Amplitudes from Correlation Functions#^def-c6b-6-1|§C6b.6.1]] Diagram of a Scattering Amplitude; amputation Theorem [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-1|§C6b.6.1]] Amplitudes Are Amputated Correlation Functions
+> - Vertex factors: Theorem [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-3|§C6b.6.3]] Vertex Factors of a Polynomial Interaction
+>
+> **Key results.** Example [[§C6b.6 Amplitudes from Correlation Functions#^ex-c6b-6-3|§C6b.6.3]] Cubic–Quartic Theory, 2 → 2 at Order g² and λ (this problem); disconnected pieces Theorem [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-2|§C6b.6.2]] The Disconnected Pieces of the Free Four-Point Function Do Not Scatter, [[§C6b.6 Amplitudes from Correlation Functions#^cau-c6b-6-1|§C6b.6, Caution: "Connected" here means fully connected]].
+>
+> **Difficulty** (a) 1, (b) 2, (c) 1. Submitted solution: (a) three exchange diagrams and the contact diagram, each drawn and with the vertices opened into their legs; (b) $1 + 6 + 3 = 10$; (c) the stabilizer argument and $N = 6\cdot24 = 144 = |G|$. The vault integrates them as Definition [[§C6b.6 Amplitudes from Correlation Functions#^def-c6b-6-1|§C6b.6.1]] Diagram of a Scattering Amplitude, Theorem [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-3|§C6b.6.3]] Vertex Factors of a Polynomial Interaction, Theorem [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-4|§C6b.6.4]] Vertices Saturated by External Lines Give S = 1, Example [[§C6b.6 Amplitudes from Correlation Functions#^ex-c6b-6-3|§C6b.6.3]] Cubic–Quartic Theory, 2 → 2 at Order g² and λ, Example [[§C6b.6 Amplitudes from Correlation Functions#^ex-c6b-6-4|§C6b.6.4]] Cubic–Quartic Theory, 2 → 3 at Order gλ.
+
+### PS8.3 Particle production by an external source (PS 4.1)
+
+$H_{\rm int} = -\int d^3x\,j(x)\phi(x)$ with a c-number source $j$ nonzero only for a finite time; $\tilde j(k) = \int d^4x\,e^{ikx}j(x)$. (a) Show $P(0) = |\langle0|T\exp(i\int d^4x\,j\phi_I)|0\rangle|^2$. (b) To order $j^2$, $P(0) = 1 - \lambda + O(j^4)$, $\lambda = \int\frac{d^3k}{(2\pi)^3}\frac{1}{2E_{\mathbf k}}|\tilde j(k)|^2$, $k^0 = E_{\mathbf k}$ (only the real part of the $O(j^2)$ term contributes; the $i\epsilon$ extracts it). (c) Draw the term of (b) as a diagram, represent the whole series diagrammatically and show $P(0) = e^{-\lambda}$. (d) The probability of exactly one particle with momentum $\mathbf k$, to leading order and to all orders. (e) $P(n) = \frac{1}{n!}\lambda^ne^{-\lambda}$. (f) Verify $\sum P(n) = 1$, $\bar N = \lambda$; compute $\langle(N - \bar N)^2\rangle$.
+
+^ps8-3
+
+- [ ] Q1 **[why]** Why are the in- and out-vacua both $|0\rangle$ here, unlike in $\phi^4$ theory?
+- [ ] Q2 Expand the amplitude to order $j^3$. Why do the orders $j$ and $j^3$ vanish?
+- [ ] Q3 Compute $\mathcal A_2$ in momentum space. Where does $\tilde j(-p) = \tilde j(p)^{\ast}$ enter?
+- [ ] Q4 **[why]** Take the real part: which piece of $\frac{1}{p^2 - m^2 + i\varepsilon}$ survives, and why does only the mass shell contribute?
+- [ ] Q5 **[def]** State the Feynman rule of a source vertex. What is the symmetry factor of $m$ disjoint source lines, as a count and as a stabilizer?
+- [ ] Q6 Sum the series. Why is the result exact in $j$?
+- [ ] Q7 **[def]** For $\langle\mathbf k|$ applied to $T\{\hat\phi_I\cdots\}|0\rangle$, which Wick terms survive, and what does each uncontracted field contribute?
+- [ ] Q8 **[conv]** Which normalization of $|\mathbf k\rangle$ does the problem use, and what is the matching measure on $n$-particle states?
+- [ ] Q9 Derive $P(n)$ and the three moments of (f).
+
+> [!tip]- Hints: definitions, results, route, your solution
+> **Topic and definitions.** T11 (with T6 for the source).
+> - Source model: Model [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|§C2b.5.1]] Scalar Field with a Classical Source; interaction picture Definition [[§C6a.2 The Interaction Picture#^def-c6a-2-1|§C6a.2.1]] Interaction-Picture Field; time-ordered exponential Definition [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|§C6a.3.1]] Time-Ordered Exponential
+> - Source vertex: Definition [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^def-c6b-7-1|§C6b.7.1]] Source Vertex; outgoing particles: Lemma [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^lem-c6b-7-4|§C6b.7.4]] Contraction of Fields with Outgoing Particles; [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^cau-c6b-7-1|§C6b.7, Caution: Two normalizations of one-particle states]]
+>
+> **Key results.** [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.7]] Particle Production by a Classical Source: the Diagrammatic Route (this problem: Theorem [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-7-1|§C6b.7.1]] The Vacuum-Persistence Amplitude of a Source–Theorem [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-7-8|§C6b.7.8]] Normalization, Mean and Variance); exponential formula Theorem [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|§CA.8.3]] The Exponential Formula; $i\varepsilon$ limits Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|§CA.6.6]] The iε Limits of the Propagator Denominators; coherent-state route [[§C2b.8 Particle Production by a Classical Source|§C2b.8]] Particle Production by a Classical Source.
+>
+> **Strategy (K13, K11, K9).** Dyson series with c-number weights; Wick; real part via $\delta(p^2 - m^2)$; count pairings of one-legged vertices; contract each outgoing particle with one field.
+>
+> **Difficulty** (a) 1, (b) 2, (c) 2, (d) 3, (e) 3, (f) 1. Submitted solution: all parts as listed, the real part by $\frac{A}{B + iC}$ and a Lorentzian of area $\pi$, $S_m = 2^mm!$ by counting and by stabilizer, the external-state contraction by moving $\hat a$ through $\hat\phi^-$ with commutators, the $n$-particle measure from the overlap. The vault integrates it as [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.7]] Particle Production by a Classical Source: the Diagrammatic Route.
+
+### PS8.4 Two-body decay of a scalar particle (PS 4.2)
+
+$\mathcal L = \frac12(\partial_\mu\Phi)^2 - \frac12M^2\Phi^2 + \frac12(\partial_\mu\phi)^2 - \frac12m^2\phi^2 - \mu\Phi\phi^2$, $M > 2m$: compute the lifetime of $\Phi$ to lowest order in $\mu$, in terms of $\mu$, $m$, $M$.
+
+^ps8-4
+
+- [ ] Q1 **[def]** Write the first-order amplitude $\langle\mathbf p_1\mathbf p_2|(-i\mu\int d^4x\,\hat\Phi_I\hat\phi_I^2)|\mathbf K\rangle$. Why does the zeroth order vanish?
+- [ ] Q2 Which part of $\hat\Phi_I$ and which parts of $\hat\phi_I\hat\phi_I$ contribute? Where does the factor 2 come from?
+- [ ] Q3 **[conv]** Read off $\mathcal M$ from $\langle f|i\hat T|i\rangle = (2\pi)^4\delta^4(\cdots)i\mathcal M$.
+- [ ] Q4 **[why]** Why does the total rate carry $\frac12$?
+- [ ] Q5 Evaluate $\int d\Pi_2$ at rest: the root $p_\ast$, $|f'(p_\ast)|$, the angular integral.
+- [ ] Q6 Give $\Gamma$ and $\tau$; check the dimension of $\mathcal M$ and $\Gamma$.
+- [ ] Q7 **[why]** The interaction never switches off: why may free states be used at this order?
+
+> [!tip]- Hints: definitions, results, route, your solution
+> **Topic and definitions.** T11.
+> - Invariant amplitude Definition [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|§C6b.1.3]] The Invariant Amplitude; decay rate Theorem [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-1|§C6b.5.1]] The Decay Rate Formula; relativistic normalization Definition [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|§C2a.4.1]] Relativistic Normalization
+>
+> **Key results.** Example [[§C6b.5 Decay Rates and Widths#^ex-c6b-5-1|§C6b.5.1]] Φ → φφ, the Lifetime at Lowest Order (this problem); Theorem [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-2|§C6b.5.2]] Two-Body Decays; Theorem [[§C6b.6 Amplitudes from Correlation Functions#^thm-c6b-6-3|§C6b.6.3]] Vertex Factors of a Polynomial Interaction; Lemma [[§C6b.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^lem-c6b-7-4|§C6b.7.4]] Contraction of Fields with Outgoing Particles; [[§C6b.5 Decay Rates and Widths#^cau-c6b-5-1|§C6b.5, Caution: Free states in a decay amplitude]].
+>
+> **Strategy (K13, K9).** First-order matrix element between relativistic states; read off $\mathcal M$; two-body phase space at rest with $\delta(f(p))$; identical-particle $\frac12$.
+>
+> **Difficulty 2.** Submitted solution: the route above with relativistic states, $\mathcal M = -2\mu$, $\int d\Pi_2 = \frac{p_\ast}{4\pi M}$, $\Gamma = \frac{\mu^2}{8\pi M}\sqrt{1 - 4m^2/M^2}$, $\tau = \frac{8\pi M^2}{\mu^2\sqrt{M^2 - 4m^2}}$, with a remark on free versus asymptotic states. The vault integrates it as Example [[§C6b.5 Decay Rates and Widths#^ex-c6b-5-1|§C6b.5.1]] Φ → φφ, the Lifetime at Lowest Order with Theorem [[§C6b.5 Decay Rates and Widths#^thm-c6b-5-2|§C6b.5.2]] Two-Body Decays and [[§C6b.5 Decay Rates and Widths#^cau-c6b-5-1|§C6b.5, Caution: Free states in a decay amplitude]].
 
 ## Technique codes
 The moves named in the hints; where each is used, with the boxes: [[PHY 513 Midterm Review#Techniques: the moves of 513|Midterm Review: Techniques]].

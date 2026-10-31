@@ -297,6 +297,10 @@ $$
 ![[m341-43-1.svg]]
 *The solution (18) for $a = b = 1$, $k = 1$, along the line $y = \frac12$, where $f(x, \frac12) = x/2$ (dashed). The thin gray curve is a partial sum of (15) at $t = 0$, with the Gibbs overshoot at $x = 1$, where $f$ jumps to the boundary value $0$. By $t = 0.005$ the jump is already smoothed out, and by $t = 0.1$ the profile is close to the lowest mode $\sin\pi x$, decaying like $e^{-2\pi^2t}$.*
 
+![[m341-43-a2.gif|420]]
+
+*(Not from the book; animation added, vault only.)* The solution (18) of Example §53.1 on the unit square ($a = b = k = 1$) as a surface. Since $(-1)^{m+n} = (-1)^{m+1}(-1)^{n+1}$, the double series factors into the product of two one-dimensional rod solutions, which is how it was computed (200 terms each). The first frame is the partial sum with $m, n \le 16$ at $t = 0$: it follows $f = xy$ inside, with Gibbs ripples along the edges $x = 1$ and $y = 1$, where $f$ jumps to the boundary value $0$. Then $t$ runs from $0.0003$ to $0.1$ on a logarithmic clock. The cliff at the edges is gone at once, the peak moves inward, and from $t \approx 0.035$ on the surface coincides with the single $(1,1)$ mode $\frac{4}{\pi^2}\sin\pi x\sin\pi y\,e^{-2\pi^2t}$ (red wireframe), which decays without changing shape. The readouts $\max u$ and $\frac{4}{\pi^2}e^{-2\pi^2t}$ agree from then on (e.g. $0.056$ at $t = 0.1$).
+
 > [!example] Example §53.2: Ordering the Double Series
 > A double series is best handled by converting it into a single series, arranging the terms in order of increasing $\lambda_{mn}^2$: the first terms are the most significant, since they decay least rapidly. Order the terms for (a) $a = 2b$, (b) $a = b$, and write the first few terms of (18) in case (b).
 >
@@ -409,3 +413,7 @@ $$
 > - **Nodal lines**, where $u_{mn} = 0$ for all $t$, are the lines $x = ja/m$ ($0 < j < m$) and $y = jb/n$ ($0 < j < n$): for $(1, 2)$ the line $y = b/2$; for $(2, 3)$ the lines $x = a/2$, $y = b/3$, $y = 2b/3$; for $(3, 2)$ the lines $x = a/3$, $x = 2a/3$, $y = b/2$; for $(3, 3)$ the lines $x = a/3$, $2a/3$ and $y = b/3$, $2b/3$ (Exercise 5.3.11). When frequencies coincide, combinations vibrate too, with other nodal lines: on a square, $\phi_{12} + \phi_{21} = 2\sin\frac{\pi x}{a}\sin\frac{\pi y}{a}\big(\cos\frac{\pi y}{a} + \cos\frac{\pi x}{a}\big)$ vanishes along the diagonal $x + y = a$.
 
 ^rem-53-3
+
+![[m341-43-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The standing waves $u_{mn} = \sin(\mu_mx)\sin(\nu_ny)\cos(\lambda_{mn}ct)$ of a square membrane ($a = b = 1$) for $(m, n) = (1,1), (2,1), (1,2), (2,2)$, run for two periods of the fundamental. The colour is the sign of the displacement (red up, blue down). The nodal lines $x = a/2$ (for $(2,1)$), $y = b/2$ (for $(1,2)$) and both (for $(2,2)$) are drawn in black on the membrane and on the base: they never move, and the regions on either side swing in antiphase. The dial in each panel turns once per period of its mode, at $\omega_{mn}/\omega_{11} = \sqrt{(m^2 + n^2)/2} = 1, 1.581, 1.581, 2$. After two fundamental periods the $(1,1)$ and $(2,2)$ dials point up again, while the $(2,1)$ and $(1,2)$ dials have drifted to $3.162$ turns: the overtones are not harmonic.

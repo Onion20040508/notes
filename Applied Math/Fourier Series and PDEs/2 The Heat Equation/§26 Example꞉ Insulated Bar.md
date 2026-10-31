@@ -206,6 +206,10 @@ $$
 ![[m341-20-1.svg]]
 *Example §20.1 with $T_0 = 20$, $T_1 = 100$: $u(x, t)$ as a function of $x$ at $kt/a^2 = 0.001$, $0.01$, $0.1$, $1$. The insulated ends force zero slope ($u_x = 0$) at both ends at every $t > 0$, so the profile bends flat there at once; the area under the curve (the total heat) stays fixed while the profile flattens to the average $a_0 = 60$.*
 
+![[m341-20-a1.gif|450]]
+
+*(Not from the book; animation added, vault only.)* Example §26.1 with $T_0 = 20$, $T_1 = 100$: the initial line $f(x) = 20 + 80x/a$ (dashed), then $u(x,t)$ from the cosine series (400 odd terms) for $kt/a^2$ from $0.0005$ to $1$ on a logarithmic clock. For every $t > 0$ the red ticks at the ends are horizontal and the curve meets them tangentially: $u_x = 0$ at the insulated ends. The shaded area under the curve, divided by $a$, stays $60.0$ in every frame (computed numerically): no heat crosses the ends, so the total heat is conserved while the profile flattens to the average $a_0 = 60$ (dotted). The cold end $x = 0$ passes through the tabulated values $22.9$, $29.0$, $47.9$, $60.0$ at $kt/a^2 = 0.001$, $0.01$, $0.1$, $1$.
+
 > [!example] Example §26.2: Prescribed Heat Flow at Both Ends
 > Consider $u_{xx} = \frac1ku_t$, $0 < x < a$, with $u_x(0, t) = S_0$, $u_x(a, t) = S_1$ and $u(x, 0) = f(x)$.
 >

@@ -336,3 +336,7 @@ In the individual problems for $u_1$ and $u_2$, separation of variables works be
 > *Source: 341 Practice Final, Q9*
 
 ^ex-45-3
+
+![[m341-36-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The part $w = \sin(n\pi x)\,\sinh(n\pi(2 - y))/\sinh(2n\pi)$ of Example §45.3 on $0 < x < 1$, $0 < y < 2$, for $n = 1, 2, 3, 4, 5, 6, 8, \ldots, 20$; the example itself has $n = 20$, and the smaller $n$ are chosen for the picture. Left: $w$ as a heat map (red positive, blue negative). Middle: its amplitude in $y$. Bottom: the strip $0 < y < 0.2$ magnified. The dashed line is the depth $y = 1/(n\pi)$, where the amplitude has dropped to about $e^{-1}$. As $n$ grows, the boundary oscillation reaches a thinner and thinner layer. For $n = 20$ the depth is $0.016$, the amplitude at $y = 0.1$ is $0.0019$ (the "below $0.002$" of the example), and at $y = 1$ it is about $5\times 10^{-28}$.

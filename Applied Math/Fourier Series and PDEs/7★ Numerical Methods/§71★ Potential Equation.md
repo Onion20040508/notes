@@ -244,3 +244,7 @@ The result satisfies (21) only approximately. But the exact solution of the repl
 > *Powers: 7.4, Iterative Methods (text)*
 
 ^ex-71-4
+
+![[m341-58-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The Gauss–Seidel method (Definition §71.2) on the problem of Example §71.1 with a finer mesh than in the note, $\Delta x = \frac1{16}$ (225 unknowns; chosen for the picture), starting from $u = 0$. The tent data $f$ is on the top and bottom edges and $0$ on the sides. Left: the mesh values as a heat map (white $= 0$, blue $= 1$). During the first two sweeps each row (red line) is shown as it is updated, left to right and bottom to top, with each value replaced by the average of its four neighbours using the newest values. After that, one frame per sweep (later every few sweeps), up to 200. Right: the largest change in a sweep on a log scale. The heat spreads in from the hot edges, and the change falls geometrically, below $0.0005$ from sweep 97 on. At that point the centre value is still only $0.315$, against $0.3275$ for the fully converged replacement equations, and even after 200 sweeps it is $0.3273$. As the note says, the iteration slows down on a finer mesh, so a small change per sweep does not mean a small distance from the solution. The converged mesh values $0.2971$, $0.4410$, $0.2287$, $0.3275$ agree with the $\Delta x = \frac1{16}$ row of the table in Example §71.1.

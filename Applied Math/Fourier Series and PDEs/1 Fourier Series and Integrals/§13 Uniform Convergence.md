@@ -92,6 +92,10 @@ There are two important facts about uniform convergence.
 ![[m341-9-1.svg]]
 *Partial sums $S_3$, $S_{11}$ and $S_{41}$ of the square wave (black). Away from the jumps they settle down to $\pm1$; next to each jump they overshoot to about $1.18$, and the overshoot only moves toward the jump as $N$ grows. Convergence is not uniform.*
 
+![[m341-9-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The square-wave partial sums $S_N = \frac4\pi\sum_{n\ \text{odd} \le N}\frac{\sin nx}{n}$ for $N = 1, 3, \ldots, 81$. On the left, $S_N$ on $(-\pi, \pi)$, with the peak next to the jump marked in red and the level $1.179$ dashed. On the right, the strip $0 < x < \pi/4$ next to the jump (shaded on the left) is drawn against $Nx$ instead of $x$. The peak stays at about $1.18$ for every $N$ (the readout gives its height and position) while its position $x$ shrinks toward $0$. So the overshoot does not shrink; it only moves toward the jump. In the rescaled panel the picture freezes onto the limit curve $\frac2\pi\mathrm{Si}(Nx)$ (dotted), whose maximum $\frac2\pi\int_0^\pi\frac{\sin t}{t}\,dt \approx 1.179$ is the overshoot of about $9\%$ of the jump $2$.
+
 On the other hand, for the triangle wave $f(x) = |x|$ (Powers calls it a sawtooth) the maximum deviation occurs at $x = 0$ and tends to zero: the convergence is uniform ([[§13 Uniform Convergence#^ex-13-2|Example §13.2]]). One way of proving uniform convergence is by examining the coefficients.
 
 > [!theorem] Theorem §13.2: Absolutely Summable Coefficients Give Uniform Convergence
@@ -137,6 +141,10 @@ On the other hand, for the triangle wave $f(x) = |x|$ (Powers calls it a sawtoot
 
 ![[m341-9-2.svg]]
 *The triangle wave $|x|$ (black) and its partial sums $S_0 = \pi/2$, $S_1$ and $S_3$. The worst error is always at the corner $x = 0$ (and $\pm\pi$), and it shrinks to zero: the convergence is uniform.*
+
+![[m341-9-a2.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Uniform against pointwise convergence. The grey band is the tube of half-width $\varepsilon = 0.1$ (chosen for the picture) around the square wave (left) and around the triangle wave $|x|$ of Example §13.2 (right), and the partial sums run through $N = 1, 3, \ldots, 41$. The parts of $S_N$ outside the tube are drawn in red. The triangle-wave sums enter the tube for good at $N = 7$, since the worst error $\delta_N = \frac4\pi\sum_{n\ \text{odd},\ n > N}\frac{1}{n^2}$, at the corner $x = 0$, drops below $0.1$ there ($\delta_1 = 0.298$, $\delta_{41} = 0.015$): the convergence is uniform (Theorem §13.2). The square-wave sums leave the tube next to every jump for every $N$, with $\sup|f - S_N| = 1$ (Theorem §13.1).
 
 Another way of proving uniform convergence of a Fourier series is by examining the function that generates it.
 

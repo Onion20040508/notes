@@ -90,6 +90,10 @@ Throughout, the period is $2\pi$; any other period follows by a change of variab
 ![[m341-12-1.svg]]
 *The Dirichlet kernel $D_N(y) = \sin((N + \frac12)y)/(2\sin\frac12 y)$ for $N = 2, 5, 10$. The central peak has height $N + \frac12$ and width about $2\pi/(N + \frac12)$, and the area under the whole curve is always $\pi$ (Lemma §16.1). Away from $y = 0$ the kernel does not become small: it oscillates ever faster between the envelopes $\pm 1/(2|\sin\frac12 y|)$. The convergence proof works because these fast oscillations cancel against any fixed decent function (Lemma §16.3), not because the kernel decays.*
 
+![[m341-12-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The Dirichlet kernel $D_N(y) = \sin((N + \frac12)y)/(2\sin\frac12 y)$ for $N = 1, \ldots, 40$ (top), with the fixed envelopes $\pm 1/(2|\sin\frac12 y|)$ (dashed). The central peak grows to $N + \frac12$, but away from $y = 0$ the kernel does not decay: it oscillates faster and faster between the same envelopes. The bottom panel shows the integrand $f(1 + y)\frac1\pi D_N(y)$ for the sawtooth $f(x) = x$ of Example §9.1 at the point $x = 1$ (chosen for the picture), with positive area in blue and negative area in red; the dotted line is where $f(1 + y)$ jumps. The total area is $S_N(1)$ (readout), which tends to $f(1) = 1$ ($0.773$, $0.956$, $1.014$, $0.991$ for $N = 2, 6, 15, 40$). Away from the peak the fast oscillations cancel against the fixed function $f(1 + y)$: this is the idea of the proof (Remark: The Idea of the Proof).
+
 > [!theorem] Lemma §16.3: Fourier Coefficients Tend to Zero
 > If $\phi(y)$ is sectionally continuous, $-\pi < y < \pi$, then its Fourier coefficients tend to $0$ with $n$:
 >

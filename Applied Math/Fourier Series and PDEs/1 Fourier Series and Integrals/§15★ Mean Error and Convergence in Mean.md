@@ -189,6 +189,10 @@ The actual fact is that, in the limit, the inequality becomes an equality.
 
 *Uses:* [[§15★ Mean Error and Convergence in Mean#^thm-15-3|§15.3]], [[§82 Series#^thm-82-4|Calc Thm. §82.4]] (terms of a convergent series tend to zero)
 
+![[m556-15-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* Reused from 556 (Functional Analysis), where it illustrates the same fact in $L^2[0, 2\pi]$ ($a = \pi$ here). The functions $\sin(nx)/\sqrt\pi$, $n = 1, \ldots, 20$, are orthonormal, any two at distance $\sqrt2$; against a fixed $g$ (gray, $g \propto x^2(2\pi - x)$) the coefficients $\frac1\pi\int_0^{2\pi}g(x)\sin nx\,dx$ (right, up to the factor $\sqrt\pi$) tend to $0$, as Corollary §15.5 says.
+
 This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[§16★ Proof of Convergence#^lem-16-3|Lemma §16.3]]; every sectionally continuous function has $\int f^2$ finite. Properties (8) and Corollary §15.5 are very useful for checking computed values of Fourier coefficients: coefficients that do not tend to zero, or whose squares do not add up to $\frac1a\int f^2$, are wrong.
 
 > [!definition] Definition §15.2: Convergence in the Mean
@@ -217,6 +221,10 @@ This is Lemma 3 of Powers 1.7, used in the proof of the convergence theorem, [[�
 ^pf-15-6
 
 *Uses:* [[§15★ Mean Error and Convergence in Mean#^thm-15-2|§15.2]], [[§15★ Mean Error and Convergence in Mean#^thm-15-4|§15.4]], [[§15★ Mean Error and Convergence in Mean#^def-15-2|Def. §15.2]]
+
+![[m556-20-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* Reused from 556 (Functional Analysis), in complex form ($e_n = e^{inx}/\sqrt{2\pi}$ on $(0, 2\pi)$; $a = \pi$ here). The square wave ($1$ on $(0, \pi)$, $-1$ on $(\pi, 2\pi)$) and its partial sums $S_N$ for $N = 0, 1, 3, \ldots, 25$; right, the coefficient bars. The mean square error $\int(f - S_N)^2$ is the tail of Parseval's sum and falls to $0$ ($1.19$ at $N = 1$, $0.10$ at $N = 25$), although $S_N$ never converges uniformly: convergence in the mean.
 
 > [!remark]- Connections
 > - In Hilbert-space language this is the completeness relation for the trigonometric orthonormal basis, $\sum_n(f, e_n)e_n = f$ in norm: [[§43 The Completeness Relation#^thm-43-2|556 Thm. §43.2]], with the Fourier basis (there in complex form, $e^{in\theta}/\sqrt{2\pi}$ on $[0, 2\pi]$) as [[§43 The Completeness Relation#^ex-43-2|556 Ex. §43.2]].

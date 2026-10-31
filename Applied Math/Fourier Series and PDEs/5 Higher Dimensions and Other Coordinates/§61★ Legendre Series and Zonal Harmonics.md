@@ -182,6 +182,10 @@ These formulas are useful if $P_n(x)$ and $P_n'(x)$ can be evaluated easily, and
 ![[m341-49-2.svg]]
 *Partial sums of Legendre series, computed from Examples §61.1 and §49.3. (a) The step function and its partial sum through $P_9$: it oscillates about $\pm1$, with the largest errors near the jump and near the endpoints, as a Fourier series does. (b) $|x|$ and its partial sum through $P_6$, already close except near the corner at $x = 0$.*
 
+![[m341-49-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The partial sums $\frac32P_1 - \frac78P_3 + \frac{11}{16}P_5 - \cdots$ of the Legendre series of the step function of Example §61.1, through $P_N$ for $N = 1, 3, \ldots, 25$. As for a Fourier series, the sums pass through $0$ at the jump and overshoot next to it (peak $1.18$ for $N = 25$). Unlike a Fourier series, they also miss at the endpoints $x = \pm1$, where every $P_n = \pm1$ and $S_N(1)$ is the partial sum $\sum b_n$ of the coefficients: $S_N(1) - 1 = 0.500, 0.312, 0.246, 0.155$ for $N = 1, 5, 9, 25$, an error that shrinks only slowly (red dots).
+
 *Chain: the triangle wave earlier in [[§21 Sawtooth, Triangle Wave, Parabola, Rectified Sine, Sinc Function and Rectangular Pulse#The Triangle Wave|Chapter 1]] (its Fourier series).*
 
 ## Zonal Harmonics

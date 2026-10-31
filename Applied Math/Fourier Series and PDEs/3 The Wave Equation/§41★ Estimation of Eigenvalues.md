@@ -201,3 +201,7 @@ For instance (Powers' Exercise 3.5.1), if $q \ge 0$ then $N(\phi_1) \ge 0$, so $
 > *Powers: 3.5, Example 1 (the problem); the trial family is added*
 
 ^ex-41-3
+
+![[m341-33-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The trial functions $y_b = x(1 - x)(1 + bx(1 - x))$ of Example §41.3 as $b$ runs from $-1$ to $3$ and then settles at the minimizer $b = \frac{-7 + \sqrt{133}}{4} \approx 1.133$. Left: $y_b$ scaled to height $1$ (blue) against the eigenfunction $\sin\pi x$ (red, dashed), with the largest gap between them (readout). Right: the Rayleigh quotient $R(b) = \frac{6(2b^2 + 14b + 35)}{b^2 + 9b + 21}$ traced along. It starts at $10.615$ for $b = -1$, passes the estimate $10$ of Example §41.1 at $b = 0$, and never goes below the dashed line $\pi^2 \approx 9.86960$ (Theorem §41.2). Its minimum $56 - 4\sqrt{133} \approx 9.86975$ is where the trial curve fits $\sin\pi x$ best (gap $0.0015$). Minimizing over a family of trial functions is the Rayleigh–Ritz idea.

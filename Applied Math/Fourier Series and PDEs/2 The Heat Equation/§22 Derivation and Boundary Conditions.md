@@ -162,6 +162,10 @@ There are two unknowns, $q$ and $u$, in (2). A second relation between them is n
 
 ^rem-22-2
 
+![[m341-17-a1.gif|450]]
+
+*(Not from the book; animation added, vault only.)* The heat equation $u_t = u_{xx}$ on $0 < x < 1$ with both ends held at $0$, starting from the bumpy profile $f(x) = \sin\pi x + 0.45\sin 3\pi x - 0.22\sin 6\pi x$ (chosen for the picture; the solution is then the three-term series $\sum c_n\sin(n\pi x)e^{-n^2\pi^2t}$, exact). Stretches where the graph is concave up ($u_{xx} > 0$) are blue and those where it is concave down are red. The arrows show $u_t = u_{xx}$, rescaled in each frame so that the longest arrow has the same length. Blue stretches rise and red stretches fall: the dip between the peaks fills in, the peaks wear down, and by $t = 0.07$ only one red hump close to $\sin\pi x$ is left, sinking everywhere. The grey dotted curve is the initial profile.
+
 > [!example] Example §22.1: The Equation Alone Does Not Determine the Temperature
 > Each of the functions
 >

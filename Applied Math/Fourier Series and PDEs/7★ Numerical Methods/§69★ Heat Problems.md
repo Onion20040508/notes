@@ -228,6 +228,10 @@ The time step is tied to the square of the space step: halving $\Delta x$ forces
 ![[m341-56-2.svg]]
 *(a) The series solution of Example §69.1 (blue) at $t = \frac2{32}$ and $t = \frac5{32}$, with the explicit scheme on $\Delta x = \frac14$: $r = \frac12$ (red dots) and $r = \frac14$ (green triangles). (b) With $r = 1$ (Example §69.2) the computed values alternate in sign and grow by a factor of about $2.4$ per step.*
 
+![[m341-56-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* The explicit scheme (8) for Example §69.1 ($f(x) = x$, $\Delta x = \frac14$, corner value $u_4(0) = 1$ as in Powers) with $r = \frac14$, $\frac12$ and $1$ side by side, advanced together in time steps of $\frac1{64}$ up to $t = 0.375$. Each panel shows the latest computed level $m$ (red dots) and the series solution at the same time (blue). For $r = \frac14$ and $r = \frac12$ (no negative weight, Corollary §69.2) the dots follow the series and decay with it. The rows match the tables of Examples §69.1 and §69.3. For $r = 1$ the middle weight $1 - 2r = -1$ is negative: the values alternate in sign and grow, reaching the table's $-0.75$, $1.50$, $-1.25$ at $m = 4$ and about $8.5$ at $m = 6$. The panel rescales to keep them in view, so the true solution looks flat there. Each step multiplies the top mode by $\mu = 1 - 4\sin^2\frac{3\pi}{8} \approx -2.41$.
+
 > [!example] Example §69.4: A Convection Boundary Condition Lowers the Limit on r
 > Different problems give different maximum values of $r$. Consider
 >

@@ -52,6 +52,10 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 
 ^rem-18-1
 
+![[m341-14-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* From Fourier series to Fourier integral for the rectangular pulse of Example §18.2 ($f = 1$ for $|x| < 1$, $0$ otherwise). The half-period $a$ grows from $2$ to $40$. Top: the $2a$-periodic extension that the Fourier series on $(-a, a)$ represents; its copies move away until only the pulse is left. Bottom: the series coefficients drawn as bars centred at $\lambda_n = n\pi/a$, of width $\Delta\lambda = \pi/a$ and height $A_a(\lambda_n) = a_n/\Delta\lambda$ (for $a > 1$ this is exactly $A(\lambda_n) = \frac{2\sin\lambda_n}{\pi\lambda_n}$). The coefficients $a_n = \frac\pi aA(\lambda_n)$ themselves tend to $0$ (readout $a_1$), but the bars fill in the curve $A(\lambda)$ (red), so the sum (4) becomes the Riemann sum of the integral (7). The bar heights are $a_n$ divided by $\pi/a$, which is where the factor $\frac1\pi$ in $A(\lambda)$ comes from.
+
 ## The Fourier Integral Theorem
 
 > [!definition] Definition §18.1: Fourier Integral Coefficient Functions
@@ -183,6 +187,10 @@ where $\Delta\lambda = \pi/a = \lambda_{n+1} - \lambda_n$.
 
 ![[m341-14-1.svg]]
 *Example §14.2: the pulse $f$ (dashed) and its truncated Fourier integrals $\int_0^{L}\frac{2\sin\lambda}{\pi\lambda}\cos\lambda x\,d\lambda$ for $L = 4$ and $L = 16$. As $L$ grows they approach $f$ at every point except the jumps, where every truncation passes through the average $\frac12$ (red). Near the jumps they overshoot by about $9\%$ of the jump however large $L$ is (the maximum tends to $\frac12 + \frac1\pi\operatorname{Si}(\pi) \approx 1.09$), the Fourier-integral form of the Gibbs phenomenon.*
+
+![[m341-14-a2.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The truncated Fourier integral $\int_0^L\frac{2\sin\lambda}{\pi\lambda}\cos\lambda x\,d\lambda = \frac1\pi\big(\mathrm{Si}(L(1 + x)) + \mathrm{Si}(L(1 - x))\big)$ of the rectangular pulse (Example §18.2) as the cutoff $L$ grows from $1$ to $40$. Every truncation passes through $\frac12$ at $x = \pm1$ (red dots). Away from the jumps the curves settle onto the pulse (dashed). Next to the jumps the maximum (orange) stays near $\frac12 + \frac1\pi\mathrm{Si}(\pi) \approx 1.09$ (dotted line) however large $L$ is; it only moves toward the jump. This is the Gibbs phenomenon for the Fourier integral, with the same overshoot of about $9\%$ of the jump as for series.
 
 > [!remark]- Connections
 > - See also: [[§89★ An Indented Path#^ex-89-1|342 Ex. §89.1]] (Dirichlet's integral $\int_0^\infty \frac{\sin x}{x}\,dx = \frac\pi2$, the value at $x = 0$, by an indented contour).

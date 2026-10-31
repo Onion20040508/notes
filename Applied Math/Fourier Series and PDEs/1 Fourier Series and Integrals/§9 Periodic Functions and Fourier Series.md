@@ -271,6 +271,10 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 ![[m341-6-1.svg]]
 *The sawtooth of Example §9.1 (black) and the partial sums $S_1 = 2\sin x$, $S_3$ and $S_{10}$ of its Fourier series. Inside $(-\pi, \pi)$ the partial sums approach the line $y = x$; at the jumps $x = \pm\pi$ every partial sum is $0$, the midpoint of the jump, and just inside the jumps they overshoot ([[§13 Uniform Convergence#^rem-13-1|Gibbs' phenomenon]]).*
 
+![[m341-6-a1.gif|480]]
+
+*(Not from the book; animation added, vault only.)* The Fourier series of the sawtooth $f(x) = x$ of Example §9.1, built one term at a time for $N = 1, \ldots, 30$. The next harmonic $b_N\sin Nx$, with $b_n = 2(-1)^{n+1}/n$, is drawn in red below the axis and is then added to $S_{N-1}$ (blue) to give $S_N$; from $N = 7$ on each term is added at once. Each new harmonic corrects the wiggles of the previous sum, and the sums close in on the line $y = x$ inside $(-\pi, \pi)$. At $x = \pm\pi$ every partial sum is $0$ (red dots), the midpoint of the jump. Next to the jump the sums overshoot (orange dot: the peak, $3.60$ for $N = 30$), and the overshoot moves toward the jump instead of disappearing.
+
 > [!example] Example §9.2: Two Periodic Functions from HW 1
 > The following functions are periodic with period $2\pi$. Sketch them on $(-3\pi, 3\pi)$ and find their Fourier series. **(a)** $f(x) = 3x$, $-\pi < x < \pi$. **(b)** $f(x) = x$, $0 < x < 2\pi$.
 >

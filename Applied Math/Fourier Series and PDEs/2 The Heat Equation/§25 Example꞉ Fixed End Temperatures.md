@@ -334,6 +334,10 @@ There are infinitely many product solutions, so an infinite series is needed to 
 ![[m341-19-1.svg]]
 *Example §19.1 with $T_0 = 20$, $T_1 = 100$ ($a = 1$, 400 terms): $u(x, t)$ as a function of $x$ at the dimensionless times $kt/a^2 = 0.001$, $0.01$, $0.1$, $1$. The heat enters from both ends of the initially cold rod; by $kt/a^2 = 1$ the first mode has decayed by $e^{-\pi^2} \approx 5 \times 10^{-5}$ and the profile is indistinguishable from the steady state $v(x) = 20 + 80x/a$ (dashed).*
 
+![[m341-19-a1.gif|500]]
+
+*(Not from the book; animation added, vault only.)* Example §25.1 with $T_0 = 20$, $T_1 = 100$, $a = 1$ (800 terms of (19)), with the dimensionless time $kt/a^2$ running from $10^{-4}$ to $1$ on a logarithmic clock. Left: $u = v + w$ (blue) approaching the steady state $v(x) = 20 + 80x/a$ (dashed); from $kt/a^2 \approx 0.02$ on, the red dotted curve is $v$ plus the first mode alone. Right: the mode amplitudes $|b_n|e^{-n^2\pi^2kt/a^2}$ for $n = 1, \ldots, 25$ on a log scale, with $|b_n| = 240/(n\pi)$ for odd $n$ and $160/(n\pi)$ for even $n$ ($n = 1$ red). The high modes vanish first, since mode $n$ decays $n^2$ times faster than mode $1$. At late times only $n = 1$ is left, and the profile is $v$ plus one sine hump, as the red dotted curve shows. By $kt/a^2 = 1$ even that hump has dropped by $e^{-\pi^2} \approx 5\times10^{-5}$.
+
 The dimensionless combinations $x/a$ and $kt/a^2$ are the only way $x$ and $t$ enter (19): a rod twice as long takes four times as long to reach the same stage.
 
 > [!example] Example §25.2: A Homework Problem from Start to Finish

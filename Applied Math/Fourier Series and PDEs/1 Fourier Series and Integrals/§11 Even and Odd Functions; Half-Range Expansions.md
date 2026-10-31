@@ -222,6 +222,10 @@ If the series converge, they represent periodic functions of period $2a$: the co
 ![[m341-7-1.svg]]
 *Example §7.3: the odd periodic extension $\bar f_o$ (top) and the even periodic extension $\bar f_e$ (bottom) of $f(x) = x$, $0 < x < 1$ (heavy). The odd one is a sawtooth with jumps at the odd integers, where the sine series converges to the midpoint $0$ (dots); the even one is a continuous triangle wave with corners. The sine series represents the top function, the cosine series the bottom one, and both equal $x$ on $0 < x < 1$.*
 
+![[m341-7-a1.gif|460]]
+
+*(Not from the book; animation added, vault only.)* The two half-range expansions of $f(x) = x$, $0 < x < 1$ (Example §11.1), with the extension built before the series. First the graph on $(0, 1)$ (heavy) is carried to $(-1, 0)$: for the odd extension by a half-turn about the origin, $f_o(x) = -f(-x)$ (top), and for the even extension by reflection in the vertical axis, $f_e(x) = f(-x)$ (bottom). Then the template on $(-1, 1)$ is copied with period $2$ (Definition §10.1), which gives a sawtooth $\bar f_o$ and a continuous triangle wave $\bar f_e$. Last, the partial sums (red) of the sine series $\sum -\frac{2\cos n\pi}{n\pi}\sin n\pi x$ and of the cosine series $\frac12 - \sum\frac{2(1 - \cos n\pi)}{n^2\pi^2}\cos n\pi x$ run up to $N = 40$. Both equal $x$ on $(0, 1)$, but only the sine series has jumps, where it passes through the midpoint $0$ (dots) and overshoots. The cosine series hugs the triangle wave everywhere.
+
 > [!example] Example §11.2: Odd and Even Extensions of x²
 > Let $f(x) = x^2$, $0 < x < 1$. Find the Fourier series of its odd and even extensions.
 >
