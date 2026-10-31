@@ -1,0 +1,43 @@
+% ADDED figure (2026-10-31, C6 restructure demo, draft §C6a.0): the pipeline of C6a/C6b as a flow chart with two branches.
+% Generator copy: qft-C/tools/c6demo/ph-qft-c6a-0-1.tex; compile with scripts/compile.sh from ~/Notes/attachments/physics/src/.
+\tikzset{
+  bx/.style={draw=#1, fill=#1!7, rounded corners=3pt, align=center, line width=0.7pt, inner sep=4pt, font=\small},
+  bx/.default=figB,
+  tag/.style={font=\scriptsize\sffamily, text=#1!80!black},
+  tag/.default=figB,
+  ar/.style={-{Stealth[length=2.6mm]}, line width=0.8pt, draw=black!70},
+  al/.style={font=\scriptsize, align=center, text=black!75},
+  hd/.style={font=\small\bfseries, align=center},
+}
+\begin{tikzpicture}
+% ---- common trunk
+\node[bx, minimum width=7.6cm] (n1) at (0,0) {$\mathcal L = \mathcal L_0 + \mathcal L_{\rm int}$, \ $\hat H = \hat H_0 + \hat H_{\rm int}$, \ $\hat H_{\rm int} = \int d^3x\,\hat{\mathcal H}_{\rm int}$\\[1pt] \textcolor{figB!80!black}{\scriptsize\sffamily 1\quad \S C6a.1}};
+\node[bx, minimum width=7.6cm] (n2) at (0,-1.55) {$\hat H_I(t) = e^{i\hat H_0t}\hat H_{\rm int}e^{-i\hat H_0t} = \int d^3x\,\hat{\mathcal H}_{\rm int}\bigl(\hat\phi_I(t, \mathbf x)\bigr)$\\[1pt] \textcolor{figB!80!black}{\scriptsize\sffamily 2\quad \S C6a.2}};
+\node[bx, minimum width=7.6cm] (n3) at (0,-3.1) {$U(t, t') = T\bigl\{\exp\bigl[-i\int_{t'}^{t}dt''\,\hat H_I(t'')\bigr]\bigr\}$ \ (Dyson series)\\[1pt] \textcolor{figB!80!black}{\scriptsize\sffamily 3\quad \S C6a.3}};
+\draw[ar] (n1) -- node[al, right=2pt] {interaction picture} (n2);
+\draw[ar] (n2) -- node[al, right=2pt] {$i\partial_tU = \hat H_I(t)\,U$} (n3);
+% ---- branch 1
+\node[bx, minimum width=6.7cm] (l1) at (-4.5,-6.45) {$\langle\Omega|T\{\hat\phi_H(x_1)\cdots\}|\Omega\rangle$\\[1pt] $= \dfrac{\langle0|T\{\hat\phi_I(x_1)\cdots e^{-i\int\hat H_I}\}|0\rangle}{\langle0|T\{e^{-i\int\hat H_I}\}|0\rangle}$\\[1pt] \textcolor{figB!80!black}{\scriptsize\sffamily 4\quad master formula, \S C6a.4}};
+\node[bx, minimum width=6.7cm] (l2) at (-4.5,-8.5) {$\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_n)\}|0\rangle$\\[1pt] $= \sum_{\text{pairings}}\prod D_F(x_i - x_j)$\\[1pt] \textcolor{figB!80!black}{\scriptsize\sffamily 5\quad normal ordering, Wick, \S C6a.5--\S C6a.6}};
+\node[bx, minimum width=6.7cm] (l3) at (-4.5,-10.3) {diagram $= \dfrac{1}{S}\,(-i\lambda)^n\!\int\! d^4z_1\cdots d^4z_n\prod_{\text{lines}}D_F$\\[1pt] \textcolor{figB!80!black}{\scriptsize\sffamily 6\quad diagrams and rules, \S C6a.7--\S C6a.10}};
+\node[bx=figG, minimum width=6.7cm] (l4) at (-4.5,-12.15) {$\langle\Omega|T\{\hat\phi_H(x_1)\cdots\}|\Omega\rangle$\\ $= \sum$ (diagrams attached to $x_1, \dots$)\\[1pt] \textcolor{figG!80!black}{\scriptsize\sffamily 7\quad bubbles cancel, \S C6a.11}};
+\draw[ar] (n3.south) ++(-1.6,0) -- node[al, left=4pt, pos=0.3] {free fields $\hat\phi_I$, $|0\rangle$;\\ $|\Omega\rangle$ via $T \to \infty(1 - i\varepsilon)$} (l1.north);
+\draw[ar] (l1) -- node[al, right=2pt] {$T\{\cdots\}$ term by term} (l2);
+\draw[ar] (l2) -- node[al, right=2pt] {$\hat H_I = \int\frac{\lambda}{4!}\hat\phi_I^4$} (l3);
+\draw[ar] (l3) -- node[al, right=2pt] {denominator $= \exp(\sum$ bubbles$)$} (l4);
+% ---- branch 2
+\node[bx=figO, minimum width=6.7cm] (r1) at (4.5,-6.45) {$\langle f|\hat S|i\rangle = \lim_{T\to\infty}\langle f|e^{-i\hat H\,2T}|i\rangle$\\ $\simeq \langle f|U(+\infty, -\infty)|i\rangle$ (free states, up to a phase)\\[1pt] \textcolor{figO!80!black}{\scriptsize\sffamily 8\quad \S C6b.1}};
+\node[bx=figO, minimum width=6.7cm] (r2) at (4.5,-8.5) {$\hat S = \mathbf 1 + i\hat T$, \ $\langle f|i\hat T|i\rangle = (2\pi)^4\delta^4(p_i - p_f)\,i\mathcal M$\\[1pt] \textcolor{figO!80!black}{\scriptsize\sffamily 9\quad \S C6b.1}};
+\node[bx=figG, minimum width=6.7cm] (r3) at (4.5,-10.35) {$d\sigma = \dfrac{|\mathcal M|^2\,d\Pi_n}{2E_A\,2E_B\,|\mathbf v_A - \mathbf v_B|}$, \quad $d\Gamma = \dfrac{|\mathcal M|^2\,d\Pi_n}{2m_A}$\\[1pt] \textcolor{figG!80!black}{\scriptsize\sffamily 11\quad \S C6b.2--\S C6b.4 ($d\sigma$), \S C6b.5 ($d\Gamma$)}};
+\node[bx=figG, minimum width=6.7cm] (r4) at (4.5,-12.15) {same $\hat S$, external source: $\hat H_I(t) = -\int d^3x\,j\,\hat\phi_I$,\\ $|i\rangle = |0\rangle$: \ $P(n) = \dfrac{\lambda^n}{n!}\,e^{-\lambda}$\\[1pt] \textcolor{figG!80!black}{\scriptsize\sffamily 12\quad \S C6b.7}};
+\draw[ar] (n3.south) ++(1.6,0) -- node[al, right=4pt, pos=0.3] {in, out states:\\ widely separated particles} (r1.north);
+\draw[ar] (r1) -- node[al, left=2pt] {remove $\mathbf 1$, $\delta^4$} (r2);
+\draw[ar] (r2) -- node[al, left=2pt] {square, kinematics} (r3);
+\draw[ar, dashed] (r1.east) -- ++(0.3,0) |- (r4.east);
+% ---- branch headers
+\node[hd, fill=white, inner sep=1.5pt, text=figB!85!black] at (-4.5,-5.0) {Branch 1: correlation functions (C6a)};
+\node[hd, fill=white, inner sep=1.5pt, text=figO!85!black] at (4.5,-5.0) {Branch 2: $S$-matrix elements (C6b)};
+% ---- bridge
+\draw[ar, draw=figR, line width=1.1pt] (l4.east) to[out=0, in=180] (r2.west);
+\node[al, text=figR!85!black, fill=white, inner sep=1.5pt] at (0,-10.3) {10\\ amputation\\ \S C6b.6};
+\end{tikzpicture}
