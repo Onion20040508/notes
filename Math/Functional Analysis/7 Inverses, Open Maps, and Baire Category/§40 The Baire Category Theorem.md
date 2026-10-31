@@ -145,3 +145,7 @@ Inside any ball there is a smaller closed ball that misses $\overline{E}$ entire
 ![[m556-40-2.svg]]
 
 Each closed ball sits inside the previous one and avoids one more $E_j$; completeness provides a point $x^{\ast}$ in all of them, which therefore lies in no $E_j$.
+
+![[m556-40-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* The construction with six lines $E_1, \ldots, E_6$ (closed and nowhere dense; chosen for the picture). Each step picks a closed ball inside the previous one that misses the next line (red), at most half its radius, and the view zooms with the balls. The radii shrink to $0$, and the centres converge, by completeness, to a point in no $E_j$.

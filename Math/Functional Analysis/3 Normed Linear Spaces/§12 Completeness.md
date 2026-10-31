@@ -199,6 +199,10 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 ![[m556-9-2.svg]]
 *Equivalent Cauchy sequences in the open disk $M$ of [[§12 Completeness#^ex-12-1|Ex. §12.1]]: $x_n$ (blue dots) and $y_n$ (blue squares) both head for the boundary point $p \notin M$, and $d(x_n, y_n) \to 0$ (dotted), so they are one element $[\{x_n\}] = [\{y_n\}]$ of $\overline{M}$, which plays the role of $p$. The sequence $z_n$ (red), heading for $q$, is a different class; a point $x \in M$ is the class of its constant sequence.*
 
+![[m556-9-a1.gif|400]]
+
+*(Not from lecture; animation added, vault only.)* Two Cauchy sequences in the open disk $M$ (chosen for the picture) head for the same boundary point $p \notin M$ by different routes, $x_n$ (blue) along a radius and $y_n$ (green) along a curve, and $d(x_n, y_n) \to 0$ (black segment). They are equivalent, and their common class is the new point $p$ of the completion.
+
 > [!theorem] Proposition §12.3: The Completion is a Complete Metric Space, and $M$ is Dense in It
 > Let $(M, d)$ be a metric space. For Cauchy sequences $\{x_n\}, \{y_n\}$ in $M$ put
 >

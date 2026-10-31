@@ -27,6 +27,10 @@ In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies s
 ![[m556-6-1.svg]]
 *Left: the point $y_0$ lies on the hyperplane $\{\ell = c_0\}$ (red), and $K$ — dashed, since every point of $K$ is interior — lies strictly in the half-space $\{\ell < c_0\}$. Right: $y_0$ may sit on the edge of $K$ (it is still not in $K$); the hyperplane is then a supporting hyperplane, touching $K$'s boundary at $y_0$ without meeting $K$.*
 
+![[m556-6-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $y_0$ (black) goes once around a convex $K$ (chosen for the picture). The separating line $\{\ell = c_0\}$ (red) passes through $y_0$ and keeps $K$ in $\{\ell < c_0\}$; the shaded side is $\{\ell > c_0\}$. Here $\ell$ is taken along $y_0 - q$, $q$ the point of $K$ nearest to $y_0$ (dotted).
+
 > [!proof]+ Proof
 > **Step 1: Reduction to $0 \in K$.** Assume first that $0 \in K$; the general case is Step 4.
 >

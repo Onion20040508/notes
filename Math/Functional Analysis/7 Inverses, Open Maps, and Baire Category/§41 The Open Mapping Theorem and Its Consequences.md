@@ -137,6 +137,10 @@ What matters is that the ball in $Y$ is centered at the origin, not at an arbitr
 
 The successive approximation of Steps 5–6: $Mx_0$ approximates $y_0$ to within $\delta/3$, adding $Mx_1$ to within $\delta/3^2$, and so on; the corrections $x_j$ have $\|x_j\| < 3^{-(j+1)}$, so their sum $x^0$ exists in the Banach space $X$, has $\|x^0\| \le \frac12$, and $Mx^0 = y_0$.
 
+![[m556-41-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* Steps 5–6 for an onto $M$ of the plane (chosen for the picture), with corrections $x_j$ that are only approximately right at each step (error $\sim 3^{-j}$). Right: $Mx_0 + \cdots + Mx_j$ approaches $y_0$, the residual shrinking by about $1/3$ each time (dashed circles of radius $\sim 3^{-(j+1)}$). Left: the corrections, a third of the size each time, so their sum converges.
+
 > [!theorem] Theorem §41.2: Open Mapping Theorem
 > Let $X, Y$ be Banach spaces and $M : X \to Y$ a bounded linear map that is onto (surjective, $R(M) = Y$). Then $M$ is an open map: for every open $O \subset X$, $M(O)$ is open in $Y$.
 >

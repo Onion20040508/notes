@@ -333,3 +333,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 ![[m556-8-1.svg]]
 *The parabola $P$ (red) is removed from the plane. A line through $0$ meets $P$ at most once (red dots), so $0$ can move some distance along every line without leaving $K$ (blue: $|t| < |t^{\ast}|$ on one line): $0$ is an interior point. But the points $(1/n, 1/n^2)$ of $P$ enter every ball $B_r(0)$ (dashed), so $0$ is not a metric interior point.*
+
+![[m556-8-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* First the direction $y$ turns through $180^\circ$: the line $\{ty\}$ meets $P$ at most once, at $t^\ast = y_2/y_1^2$, so $0$ can move by $|t^\ast|$ along it inside $K$ (blue; capped in the drawing). Near the horizontal, $|t^\ast| \to 0$, but it is never $0$. Then balls about $0$ shrink, and each contains a point $(1/n, 1/n^2)$ of $P$ (red): $0$ is interior but not metric interior.

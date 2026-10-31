@@ -23,6 +23,10 @@ Both examples of [[§27 Orthonormal Sets and Bases|§27]] (Example [[§27 Orthon
 > ![[m556-20-2.svg]]
 > *The first step: $y_2$ minus its component $(y_2, e_1)\,e_1$ along $e_1$ leaves $x_2 \perp e_1$, and normalizing gives $e_2$.*
 >
+> ![[m556-20-a2.gif|480]]
+>
+> *(Not from lecture; animation added, vault only.)* Gram–Schmidt in $L^2[-1, 1]$ on $1, x, x^2, x^3$, as functions. Each step subtracts from the next power (dashed) its projections onto the earlier $e_j$ (gray), then normalizes; for example $x^2 - \frac13 \mapsto e_2 \propto 3x^2 - 1$. Right: the orthonormal $e_0, \ldots, e_3$ so far, the normalized Legendre polynomials $\sqrt{(2k+1)/2}\,P_k$.
+>
 > The step-by-step description looks countable, but it need not be: an orthonormal basis $\{e_\alpha\}_{\alpha \in \Lambda}$ need not be countable. The precise argument is [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|Zorn's lemma]], which says “keep adding until nothing more can be added” without any enumeration.
 
 ^rem-28-1

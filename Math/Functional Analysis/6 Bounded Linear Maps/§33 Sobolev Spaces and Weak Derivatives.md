@@ -271,6 +271,10 @@ tags: [functional-analysis, math556]
 ![[m556-33-1.svg]]
 *The board pictures. A corner is harmless: $|x|$ has the bounded weak derivative $\operatorname{sgn} x$. A jump is not: the “derivative” of $\operatorname{sgn} x$ is concentrated at a single point with total mass $2$, which no function can do.*
 
+![[m556-33-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* $|x|$ and $\mathrm{sgn}\,x$ smoothed at scale $\varepsilon$ (as $\sqrt{x^2 + \varepsilon^2}$ and $\tanh(x/\varepsilon)$, chosen for the picture), with their derivatives, for $\varepsilon$ from $0.5$ down to $0.05$ and back. Left: the derivatives tend to $\mathrm{sgn}\,x$ and stay bounded by $1$. Right: the derivatives are spikes of area $2$ and height $1/\varepsilon$, concentrating at $0$, so no function in $L^1_{\mathrm{loc}}$ can be the weak derivative.
+
 > [!remark] Remark: Distributions
 > Wu: what $\operatorname{sgn} x$ does have is a *distributional* derivative, $f' = 2\delta_0$, twice the delta “function” — zero away from the origin, with $\int (2\delta_0)\varphi = 2\varphi(0)$. A distribution is a linear functional on the test functions $C_c^\infty$, continuous in a suitable sense; $\delta_0(\varphi) = \varphi(0)$ is one, and every $L^p$ function defines one by $\varphi \mapsto \int f\varphi$. In this language every $L^p$ function has a distributional derivative, and a weak derivative is a distributional derivative that happens to be an $L^p$ function. Distributions are to come later in the course. (A student asked whether the name has to do with probability distributions: it does not.)
 

@@ -235,3 +235,7 @@ The next theorem says it is the *only* obstruction.
 
 ![[m556-17-2.svg]]
 *The proof in $\mathbb{R}^2$: the unit spheres of $\|\cdot\|_1$ (red), $\|\cdot\|_2$ (blue) and $\|\cdot\|_\infty$ (black). The sides $e_1$, $e_2$ of the square have norm $1$ in all three, but the diagonals $e_1 \pm e_2$ (dashed) cross the three spheres at $\tfrac12$, $\tfrac{1}{\sqrt2}$ and $1$ of their length, so their norms are $2$, $\sqrt2$ and $1$. The parallelogram law needs $\|e_1 + e_2\|^2 + \|e_1 - e_2\|^2 = 4$, which only the round sphere delivers.*
+
+![[m556-17-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The unit sphere of $\|\cdot\|_p$ as $p$ runs from $1$ to $30$, with $e_1, e_2$ and the diagonals $e_1 \pm e_2$. Here $\|e_1 \pm e_2\|_p = 2^{1/p}$, so the sum of the diagonals' squares is $2 \cdot 4^{1/p}$ (right). It equals $4 = 2(\|e_1\|^2 + \|e_2\|^2)$ only at $p = 2$ (green line): the parallelogram law, and with it an inner product, only for $p = 2$.

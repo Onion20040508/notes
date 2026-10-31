@@ -89,6 +89,10 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 ![[m556-24-3.svg]]
 *The tent functions $\varphi_1, \varphi_2, \varphi_4$ (blue) of the proof. All have $\varphi_n(x_0) = 1$ (red), but $\varphi_n$ lives on $[x_0 - \frac1n, x_0 + \frac1n]$ with $0 \le \varphi_n \le 1$, so $\|\varphi_n\|_2^2$ (for $n = 4$ the shaded area under $\varphi_4^2$) is at most the area $\frac2n$ of the dashed box. A bound $|\varphi(x_0)| \le C\|\varphi\|_2$ would force $\varphi_n(x_0) \to 0$.*
 
+![[m556-24-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The tents $\varphi_n$ of the proof for $n = 1, \ldots, 32$: $\varphi_n(x_0) = 1$ (red) always, while $\|\varphi_n\|_2 = \sqrt{2/(3n)}$ (shaded: $\varphi_n^2$; right) tends to $0$. So no bound $|f(x_0)| \le C\|f\|_2$ can hold.
+
 > [!remark]- Connections
 > - The idealization this rules out is the delta function of ODEs, [[§30 Impulse Functions#^def-30-3|331 Def. §30.3]], defined there as a limit of unit pulses (with worked examples).
 > - Used in Quantum Field Theory: the same obstruction for a one-particle state of sharp momentum, which is not normalizable, and the wave packets and smeared fields that replace it — [[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-1|QFT Caution: Plane-wave states are not normalizable]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|QFT Theorem §C2a.4.5]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|QFT Theorem §C2a.4.7]].
@@ -126,6 +130,10 @@ The object that does exist is the family of projections “$\int_B |x\rangle\lan
 
 ![[m556-24-2.svg]]
 *The Born rule, (d): $(E(B)\psi, \psi) = \int_B |\psi(x)|^2\,dx$ is the shaded red area under $|\psi(x)|^2$ over the region $B$ — the probability of finding the particle in $B$.*
+
+![[m556-24-a2.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* For a $\psi$ chosen for the picture ($\|\psi\| = 1$; black: $|\psi|^2$), the window $B = [a, a + 1.2]$ slides across. $(E(B)\psi, \psi) = \int_B |\psi|^2\,dx$ is the shaded area, the probability of finding the particle in $B$; it is largest over the higher peak.
 
 > [!remark] Remark: Reading $\int |x\rangle\langle x|\,dx = \mathbf{1}$
 > The proposition is the rigorous form of the continuous completeness relation. The symbol $\int_B |x\rangle\langle x|\,dx$ means $E(B)$, a genuine bounded operator even though no $|x\rangle$ is a vector; (b) is “$\int_{\mathbb{R}^n} |x\rangle\langle x|\,dx = \mathbf{1}$”; (c) replaces “summing over basis states” by countable additivity over disjoint regions, again in the strong sense; and (d) is the Born rule — the probability of finding the particle in $B$. A map $B \mapsto E(B)$ with these properties is a *projection-valued measure*. The spectral theorem, later in the course, will attach one to every self-adjoint operator: for an operator with a basis of eigenvectors it is $E(B) = \sum_{\lambda_n \in B} |e_n\rangle\langle e_n|$, for position it is the one above, and in general it mixes both. The kets $|x\rangle$ themselves can be given a rigorous meaning as elements of a larger space of distributions, via a rigged Hilbert space $\mathcal{S} \subset L^2 \subset \mathcal{S}'$; that construction is not needed for anything above.

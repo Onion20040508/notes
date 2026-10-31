@@ -171,6 +171,10 @@ So a bounded linear bijection $M$ has a bounded inverse exactly when $M$ is an o
 
 Closedness of a graph, in a picture. Left: the points $(x_n, Mx_n)$ of the graph converge, and the limit lies on the graph. Right: the example above, $Mx = x$ on the polynomials in $C[0,1]$; the Taylor polynomials $x_n$ of $e^t$ give points $(x_n, x_n)$ of the graph converging to $(e^t, e^t)$, which is missing, since $e^t$ is not a polynomial. $M$ is continuous but not closed: its domain is not closed.
 
+![[m556-39-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The right half of the figure in motion: the Taylor polynomials $T_n$ of $e^x$, $n = 0, \ldots, 8$, converge to $e^x$ (red) in $C[0, 1]$, with the error falling below $10^{-6}$ (right). The graph points $(T_n, MT_n) = (T_n, T_n)$ converge to $(e^x, e^x)$, which is not on the graph, since $e^x$ is not a polynomial.
+
 > [!remark] Remark: Why Not “Closed Sets to Closed Sets”
 > A student asked why a closed map is not defined, by analogy with open maps, as one taking closed sets to closed sets. Wu: that is a different notion, not equivalent to this one, and it is not what will be used; the graph definition is.
 > For instance, the projection $P(x, y) = x$ from $\mathbb{R}^2$ to $\mathbb{R}$ is continuous, hence closed in the graph sense, but it maps the closed set $\{ (x, y) : xy = 1 \}$ onto $\mathbb{R} \setminus \{0\}$, which is not closed.

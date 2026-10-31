@@ -120,6 +120,10 @@ Everything from here on uses completeness, and the results are the ones for whic
 ![[m556-18-4.svg]]
 *Uniqueness needs the inner product. The same half-plane $K$ (blue) and the same point $x_0$, with the ball of radius $\operatorname{dist}(x_0, K)$ in two norms (dashed). The round Euclidean ball touches $K$ at a single point $y_0$ (red); the $\ell^1$ ball has a flat edge lying along the boundary of $K$, so every point of that segment (red) is a closest point. The midpoint of two of them is just as close, which the parallelogram law forbids in a Hilbert space.*
 
+![[m556-18-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The half-plane $K = \{x_1 + x_2 \ge 2\}$ of the figure and a point $x_0$ moving on a circle. Left, Euclidean: the ball of radius $\operatorname{dist}(x_0, K)$ touches $K$ at a single point (red), the foot of the perpendicular. Right, $\ell^1$: the ball is a diamond whose edge is parallel to $\partial K$, and it touches along a whole segment of closest points.
+
 > [!remark] Remark: Comparison with Lax
 > The statement and proof are Lax's Theorem 6.2, which assumes $K$ nonempty; the hypothesis is needed (for $K = \varnothing$ the infimum is $+\infty$) and was missing from an earlier version of these notes. Lax also proves the same result in any *uniformly convex* Banach space (§5.2, Theorem 8), where the parallelogram law is replaced by a quantitative form of the strict convexity of the unit ball; Hilbert spaces are the model case. Not covered in lecture.
 

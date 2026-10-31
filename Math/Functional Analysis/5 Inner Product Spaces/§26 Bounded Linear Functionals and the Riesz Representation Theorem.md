@@ -166,6 +166,10 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 ![[m556-19-1.svg]]
 *The kernel $N$, the line $N^\perp$ spanned by $x_0$ (red), and the decomposition $x = kx_0 + y$ that locates $x$ on the level set $\{\ell = \ell(x)\}$ (dashed): $\ell(x)$ sees only the $N^\perp$-component $kx_0$. The representing vector $a$ (blue) is the multiple of $x_0$ normal to $N$.*
 
+![[m556-19-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $\ell(x) = (x, x_0)$ for $x_0 = (1.2, 0.6)$ (chosen for the picture), with $N = \ker\ell$ (blue). As $x$ moves, it splits as $x = kx_0 + y$ with $y \in N$; $\ell(x)$ depends only on $k$, and the level set $\{\ell = \ell(x)\}$ through $x$ (dashed) is the line parallel to $N$.
+
 The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal vector to $N$, a multiple of $x_0$. The level sets $\{\ell = c\}$ are the translates of $N$, and $\ell(x)$ records only which translate $x$ lies on, i.e. the $N^\perp$-component $kx_0$ of $x$.
 
 > [!remark] Remark: Reading the Statement

@@ -119,6 +119,10 @@ For $\ell \in X'$, $\|\ell\|$ is computed as a supremum of $|\ell(x)|$ over $\|x
 ![[m556-36-2.svg]]
 *Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] in $\mathbb{R}^2$ with the norm $\|x\| = |x_1| + |x_2|$, whose unit ball is the blue square. A functional $\ell(x) = c_1 x_1 + c_2 x_2$ has norm $\max(|c_1|, |c_2|)$, and $\|\ell\| \le 1$ means that the ball lies in the strip $|\ell| \le 1$. A norming functional for $y_0$ ($\|\ell\| = 1$, $\ell(y_0) = \|y_0\| = 1$) is a line $\ell = 1$ touching the ball at $y_0$ with the ball on one side — a supporting line. Left: at a point of an edge it is unique. Right: at a corner there are many; this is the non-uniqueness of Hahn–Banach extensions (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]) seen in the plane.*
 
+![[m556-36-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* $\|x\|_1$ for $x = (0.9, 0.5)$ as a maximum: $\ell = (c_1, c_2)$ runs around the dual unit sphere $\max|c_j| = 1$ (the square), and the level line $\{\ell = \ell(x)\}$ through $x$ is drawn. $\ell(x)$ (right) is largest, $1.4 = \|x\|_1$, at the vertex $\ell = (1, 1)$, where the level line supports the blue unit ball.
+
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
 > [!remark] Remark: Duality
@@ -151,6 +155,10 @@ For $\ell \in X'$, $\|\ell\|$ is computed as a supremum of $|\ell(x)|$ over $\|x
 ^ex-36-1
 ![[m556-36-4.svg]]
 *Example [[§36 Duality in Normed Spaces#^ex-36-1|§36.1]]: the values $\ell(a^{(N)}) = 1 - 2^{-N}$ on the unit vectors $a^{(N)} = (1, \ldots, 1, 0, \ldots)$ of $c_0$ increase to $\|\ell\| = 1$. Reaching $1$ would need $|a_n| = 1$ for every $n$, which no element of $c_0$ has: the supremum over the unit ball of $X$ is not attained, while the maximum over the unit ball of $X'$ in Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] always is.*
+
+![[m556-36-a2.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The example step by step: $a^{(N)}$ has $N$ ones (left; gray: the weights $2^{-n}$, doubled for visibility), $\|a^{(N)}\| = 1$, and $\ell(a^{(N)}) = 1 - 2^{-N}$ climbs toward $\|\ell\| = 1$ (right). Only $a_n = 1$ for all $n$ would reach it, and that sequence is not in $c_0$.
 
 > [!theorem] Corollary §36.3: Bounded Functionals Separate Points
 > Let $X$ be a normed linear space. If $x \in X$ and $\ell(x) = 0$ for every $\ell \in X'$, then $x = 0$. Equivalently, for $x \neq x'$ there is $\ell \in X'$ with $\ell(x) \neq \ell(x')$.
@@ -321,6 +329,10 @@ Before going on, Wu derived the dual of $\ell^p$, announced in Lecture 10 (Theor
 ^rem-36-4
 ![[m556-36-3.svg]]
 *Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]] in $\mathbb{R}^2$ for $p = 3$, $p' = \tfrac32$. For $a$ on the unit sphere of $\ell^3$, the maximizing $b_j = |a_j|^{p-2} a_j$ (the remark Why Duality Formulas are Useful) lies on the unit sphere of $\ell^{3/2}$ (dashed), and the line $\sum_j x_j b_j = 1$ touches the $\ell^3$ ball exactly at $a$: by Hölder every $x$ in the ball has $\sum_j x_j b_j \le 1$, with equality at $a$. The maximizer is the normal of the supporting line.*
+
+![[m556-36-a3.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* As $a$ goes around the unit sphere of $\ell^3$ (blue), the maximizing $b_j = |a_j|^{p-2}a_j = |a_j|\,a_j$ moves on the unit sphere of $\ell^{3/2}$ (orange, dashed). The pairing $\sum a_j b_j$ stays $1$, and the line $\sum x_j b_j = 1$ (red) touches the $\ell^3$ sphere at $a$.
 
 > [!remark] Remark: The Dual of $L^p$, Revisited
 > Wu: similarly, for any measure space $(X, \mu)$, e.g. $\Omega \subset \mathbb{R}^n$ with Lebesgue measure, and $1 \le p < \infty$, $(L^p(X, \mu))' = L^{p'}(X, \mu)$; this is Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]. For those who have learned measure theory, the candidate is found with the Radon–Nikodym theorem, and the rest goes as for sequences; Wu left the proof to the class (an outline is given after Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]).

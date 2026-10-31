@@ -81,6 +81,10 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 ![[m556-21-2.svg]]
 *The operator norm of a linear map $T$ of the Euclidean plane: the unit circle of $X$ (blue, left) is mapped onto an ellipse (right). By (a), $\|T\|$ is the largest $\|Tu\|_Y$ over unit vectors $u$ — here the long semi-axis, attained at $u_0$ (red). By (b) and (c), the circle $\|y\|_Y = \|T\|$ (red, dashed) is the smallest circle about $0$ containing the image: every $Tu$ lies inside it, and a smaller $M$ would cut off $Tu_0$.*
 
+![[m556-21-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The map $T$ of the figure, with semi-axes $1.5$ and $0.6$ and the long one at $30^\circ$. As $u$ goes around the unit circle (left), $Tu$ goes around the ellipse (middle), and $\|Tu\|$ is traced (right). Its maximum, $\|T\| = 1.5$, is attained at $u_0 = e_1$ and its opposite; the dashed circle has radius $\|T\|$.
+
 > [!remark]- Connections
 > - Finite-dimensional home: [[§28 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
 > - The same statements for the dual norm in the companion chapter: [[§42 Bras, Kets, and the Riesz Map#^lem-42-1|§42.1]].

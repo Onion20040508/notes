@@ -309,6 +309,10 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 ![[m556-14-2.svg]]
 *The ramps of Step 2 for $n = 2, 4, 8$ on $[a,b]$, with $c$ the midpoint. They differ from one another only near $c$, so they are Cauchy in $L^p$; an $L^p$ limit would have to be $0$ on $[a,c]$ and $1$ on $(c,b]$ — the step function, which is not continuous.*
 
+![[m556-14-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The ramps $f_n$ of Step 2 on $[0, 2]$, $n = 2, 4, \ldots, 128$, each with the next one $f_{2n}$ (dashed) and the shaded difference. $\|f_n - f_{2n}\|_1 = \frac{1}{4n}$ halves at each step (right, log scale), so the ramps are Cauchy in $L^1$. The only candidate limit is the step (faint red), which is not continuous.
+
 > [!remark]- Connections
 > - The measure-theoretic facts (R1)–(R3): [[§23 The Dominated Convergence Theorem#^thm-23-5|551 §23.5]], [[Riesz–Fischer Theorem|551 §35.11]], and [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]](iii) (compactly supported continuous functions dense).
 > - The method as a technique: [[Functional Analysis Problem-Solving Techniques#^ex-t9|Technique T9]] (Incompleteness and Identifying the Completion).

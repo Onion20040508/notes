@@ -252,6 +252,10 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 >
 > ![[m556-5-4.svg]]
 > *For $x = (3, \tfrac32)$, $p_K(x) = \tfrac32$ and $x/p_K(x) = (2, 1)$ lies on the boundary. The level sets $\{p_K = c\}$ are the squares of half-side $2c$; the dashed one is $c = \tfrac12$. (The picture drawn in Lecture 3.)*
+>
+> ![[m556-5-a1.gif|480]]
+>
+> *(Not from lecture; animation added, vault only.)* Left: the square of this example, $K = [-2, 2]^2$; right: an off-centre convex set (chosen for the picture). First $x$ moves around, and $x/p_K(x)$ (red) always lands on $\partial K$, with $p_K(3, \frac32) = \frac32$ as computed above. Then the level sets $\{p_K = c\} = c\,\partial K$ (red) sweep out as $c$ grows from $0.1$ to $1.6$ and back.
 
 ^ex-7-3
 

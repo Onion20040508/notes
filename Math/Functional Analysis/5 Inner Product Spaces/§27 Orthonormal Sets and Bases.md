@@ -388,6 +388,10 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 
 *Uses:* [[§27 Orthonormal Sets and Bases#^def-27-1|Def. §27.1]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
 
+![[m556-20-a1.gif|480]]
+
+*(Not from lecture; animation added, vault only.)* The Fourier basis at work on the square wave $f = 1$ on $(0, \pi)$, $-1$ on $(\pi, 2\pi)$ (chosen for the picture). The partial sums $S_N = \sum_{|n| \le N} (f, e_n)e_n$ for $N = 0, 1, 3, \ldots, 25$. Right: the coefficients $|(f, e_n)|^2 + |(f, e_{-n})|^2$, blue once included. $\|f - S_N\|^2 = \|f\|^2 - \sum_{|n| \le N}|(f, e_n)|^2$ falls from $1.19$ ($N = 1$) to $0.10$ ($N = 25$), and tends to $0$ since the basis is complete.
+
 > [!remark]- Connections
 > - The real trigonometric orthonormal list on $[-\pi, \pi]$ in finite dimensions: [[§21 Orthonormal Bases#^ladr-6-23|LADR 6.23]](d).
 > - Used for the particle on a ring: [[§43 The Completeness Relation#^ex-43-2|Ex. §43.2]].

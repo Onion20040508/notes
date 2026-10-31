@@ -32,6 +32,10 @@ If $B_1$ and $B_2$ denote the closed unit balls of $\|\cdot\|_1$ and $\|\cdot\|_
 ![[m556-10-1.svg]]
 *For the maximum and Euclidean norms on $\mathbb{R}^2$ ([[§11 Normed Linear Spaces#^ex-11-1|Ex. §11.1]]), $\|x\|_\infty \le \|x\|_2 \le \sqrt{2}\,\|x\|_\infty$: the disk contains the dashed square and lies inside the solid one.*
 
+![[m556-10-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* $x$ runs around the Euclidean unit circle: the ratio $\|x\|_2/\|x\|_\infty$ (right) oscillates between $1$, on the axes, and $\sqrt2$, on the diagonals, never outside these constants: the two norms are equivalent.
+
 The constants must work for all $x$ at once: the condition says that the ratio $\|x\|_1 / \|x\|_2$ is bounded above and below on $X \setminus \{0\}$. Its meaning is topological.
 
 > [!theorem] Proposition §14.1: Equivalent Norms Have the Same Convergence
@@ -238,6 +242,10 @@ For a quotient $X / Y$, an equivalence class $[x] = x + Y$ contains many element
 
 ![[m556-10-2.svg]]
 *The quotient norm in the plane: the classes are the translates of $Y$ (gray, with $[x]$ in red), and $\|[x]\|$ is the norm of the point $x'$ of $[x]$ closest to $0$.*
+
+![[m556-10-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* First $x$ slides along its class $[x] = x + Y$ (red): the shortest representative $x'$, and with it $\|[x]\| = \operatorname{dist}(x, Y) = 1.20$, do not change. Then the class itself moves, and $\|[x]\|$ changes with its distance from $Y$.
 
 The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from the origin to the translate $[x]$, i.e. the norm of its closest point. With an inner product that point would be the foot of the perpendicular from $0$ (dashed); without one there is no perpendicular, the infimum need not be attained, and only the number $\inf \|x'\|$ is available. This is the same substitution of “quotient” for “orthogonal complement” as in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]].
 

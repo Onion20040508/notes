@@ -22,6 +22,10 @@ tags: [functional-analysis, math556, companion]
 ![[m556-25-1.svg]]
 *The hydrogen spectrum drawn in the Coulomb well $V = -1/|x|$ (grey). The eigenvalues $E_n = -\frac{1}{2n^2}$ (blue, each drawn over the region where $V < E_n$, with eigenspace dimension $n^2$) accumulate at $0$; above them lies the continuum $[0, \infty)$ (red), which carries no eigenvectors. Because $V \to 0$ at infinity, nothing confines an electron with $E \ge 0$, and the bound states alone span only the proper subspace $Y_{\mathrm{b}}$.*
 
+![[m556-25-a1.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The bound-state energies $E_n = -\frac{1}{2n^2}$ added one at a time, $n = 1, \ldots, 30$, each drawn over the region where $V = -1/|x| < E_n$, with eigenspace dimension $n^2$ marked for the first four. The levels crowd toward $0$, where the continuous spectrum begins.
+
 > [!theorem] Corollary §45.2: Bound States are Not Complete
 > Let $\{\psi_{nlm}\}$ be an orthonormal basis of eigenfunctions of $Y_{\mathrm{b}}$. Then $\{\psi_{nlm}\}$ is not a complete orthonormal set in $L^2(\mathbb{R}^3)$, and there are states $\psi$ with
 >

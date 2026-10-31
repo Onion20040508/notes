@@ -166,6 +166,10 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 ![[m556-13-1.svg]]
 *The unit balls $\{\|x\|_p \le 1\}$ in $\mathbb{R}^2$ increase with $p$; this is (a) for vectors with two nonzero entries. All four norms are equivalent on $\mathbb{R}^2$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-3|§14.3]]), and (c) is the statement that this fails on $\ell^p$.*
 
+![[m556-13-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The unit ball of $\|\cdot\|_p$ for $p$ from $1$ to $40$ (gray: $p = 1$ and $p = 2$): the balls grow with $p$, from the diamond toward the square. Right: $\|x\|_p$ for the fixed $x = (0.8, 0.5)$, decreasing from $1.3$ to $\|x\|_\infty = 0.8$, which is part (a) for this vector.
+
 > [!remark]- Connections
 > - For functions the inclusion runs the other way on sets of finite measure: [[§34 Normed Linear Spaces and Lᵖ Spaces#^cor-34-6|551 §34.6]].
 > - The same unit-ball picture: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-2|551 Ex. §34.2]].

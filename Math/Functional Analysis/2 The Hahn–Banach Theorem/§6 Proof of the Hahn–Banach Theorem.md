@@ -169,6 +169,10 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 ![[m556-4-2.svg]]
 *Steps 3–4 on the real line. Each red number $\ell(y') - p(-x_0 + y')$ is a lower bound for $c = L(x_0)$ and each blue number $p(x_0 + y) - \ell(y)$ an upper bound. Inequality (4) says every red number lies to the left of every blue one, so the supremum of the red numbers is at most the infimum of the blue ones, and the green interval between them is nonempty; any $c$ in it satisfies (3). The proof takes the left endpoint.*
 
+![[m556-4-a1.gif|440]]
+
+*(Not from lecture; animation added, vault only.)* The one-step extension seen in the plane, for $p$ the Euclidean norm, $Y$ the $x_1$-axis and $\ell = \frac12 x_1$ on $Y$ (chosen for the picture). The extensions are $L_c = \frac12 x_1 + c\,x_2$, $c = L_c(e_2)$, and the level line $\{L_c = 1\}$ always passes through $(2, 0)$, where $\ell = 1$. As $c$ moves, the line pivots: $L_c \le p$ exactly while it stays outside the open disk $\{p < 1\}$ (green), that is for $|c| \le \sqrt3/2$, the interval between the red and blue bounds of the figure.
+
 > [!remark]- Connections
 > - The same one-step pattern for complements: [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t3|Technique 3]].
 

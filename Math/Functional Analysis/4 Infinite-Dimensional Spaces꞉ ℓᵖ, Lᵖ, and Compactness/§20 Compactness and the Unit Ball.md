@@ -144,6 +144,10 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 ![[m556-15-1.svg]]
 *The picture drawn in Lecture 6, for $Y$ a line in $\mathbb{R}^2$: $y_0$ is only an almost-closest point, $d \le a = \|x_0 - y_0\| < 2d$, and $z = (x_0 - y_0)/a$ is the unit vector in the same direction. Every point of $Y$ is at distance at least $d/a > \tfrac12$ from $z$; here $z$ lies above the dashed line.*
 
+![[m556-15-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The orthonormal sequence $f_n = \sin(nx)/\sqrt\pi$ on the unit sphere of $L^2[0, 2\pi]$, $n = 1, \ldots, 20$ (previous one faint). Any two are at distance $\sqrt2$, so no subsequence converges, and the closed unit ball is not compact. Yet for a fixed $g$ (gray, $g \propto x^2(2\pi - x)$, chosen for the picture) the coefficients $(f_n, g)$ tend to $0$ (right), as Bessel's inequality forces.
+
 > [!remark]- Connections
 > - In an inner product space the closest point exists ([[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]) and the unit vector can be taken orthogonal: [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], and the remark contrasting the two arguments, [[§25 Projection and Orthogonal Decomposition#^rem-25-6|Remark §25]].
 
