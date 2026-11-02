@@ -49,20 +49,20 @@ Items (1) and (2) together are *existence*: every $q \in U$ has an integral curv
 
 *What the theorem says beyond “there is a path through $q$”* (a student's question). “It says a lot of delicate things.” The time interval is *uniform*: as long as $q \in U$, the curve is defined at least for $|t| < \varepsilon$. And $\varphi$ is smooth as a function of the pair $(t, q)$ on the product $(-\varepsilon, \varepsilon) \times U$: smooth in $t$, as an integral curve must be, but also, for fixed $t$, smooth in the initial condition $q$. Asked whether the image of $\varphi$ is “just a slightly bigger open set around $U$”, Uribe answered: “All of the above can happen.” The examples below show some of the possibilities.
 
-> [!definition] Definition §68.1: Notation: $\varphi_t$ and $\varphi_q$
+> [!definition] Definition §68.1: Notation: $\varphi_t$ and $\varphi^q$
 > In the setting of Theorem [[§68 Local Existence and Uniqueness#^thm-68-1|§68.1]], and likewise of Theorem [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]] below, for fixed $t \in (-\varepsilon, \varepsilon)$ and fixed $q \in U$ write
 >
 > $$
-> \varphi_t(q) := \varphi(t, q), \qquad \varphi_q(t) := \varphi(t, q).
+> \varphi_t(q) := \varphi(t, q), \qquad \varphi^q(t) := \varphi(t, q).
 > $$
 >
-> Then $\varphi_t : U \to M$ is a smooth map, and $\varphi_q : (-\varepsilon, \varepsilon) \to M$ is the integral curve of $\mathbf{X}$ with $\varphi_q(0) = q$: it “starts at $q$”.
+> Then $\varphi_t : U \to M$ is a smooth map, and $\varphi^q : (-\varepsilon, \varepsilon) \to M$ is the integral curve of $\mathbf{X}$ with $\varphi^q(0) = q$: it “starts at $q$”.
 >
 > *Lee: Ch. 9, Flows*
 
 ^def-68-1
 
-“This notation is useful when you want to fix $t$.” For the second one: “we don't use it, but I suppose we could … maybe we should use it. It sounds pedagogical. I actually like it.” The board then used it. The two notations differ only in the letter in the subscript, so whether $\varphi_s$ means a map or a curve is read off from what $s$ is: a time or a point. Lee writes $\theta_t(p)$ and $\theta^{(p)}(t)$ for the two (Chapter 9). In these notes $\varphi$ also names charts $(U, \varphi)$; from here on it is the flow unless a chart is named.
+“This notation is useful when you want to fix $t$.” For the second one: “we don't use it, but I suppose we could … maybe we should use it. It sounds pedagogical. I actually like it.” The board then used it, at first with the point as a subscript, $\varphi_q(t)$. From Lecture 25 on, the point is written as a superscript, $\varphi^q(t)$, as here: “I'm going to put the point $p$ above … it's important psychological notation, because the variable that we choose to pull out, in this case $t$ and in this case $p$, is thought of as a parameter. Logically, it's nothing new.” This also removes the clash between $\varphi_t$ and $\varphi_q$. Lee writes $\theta_t(p)$ and $\theta^{(p)}(t)$ for the two (Chapter 9). In these notes $\varphi$ also names charts $(U, \varphi)$; from here on it is the flow unless a chart is named.
 
 > [!example] Example §68.1: The Rotation Field
 > On $\mathbb{R}^2$ let $\mathbf{X} = -y\, \dfrac{\partial}{\partial x} + x\, \dfrac{\partial}{\partial y}$, “the classical rotation.” By Proposition [[§67 Integral Curves#^prop-67-2|§67.2]] the integral curves solve

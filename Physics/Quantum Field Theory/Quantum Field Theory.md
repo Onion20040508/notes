@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 513 (UMich, F. Larsen, Fall 2026)"]
 textbooks: ["Peskin & Schroeder, An Introduction to Quantum Field Theory", "Yu Zhao-Huan (余钊焕), Lecture Notes on Quantum Field Theory (量子场论讲义)", "Schwartz, Quantum Field Theory and the Standard Model (further reading)"]
 conventions: "[[Larsen PHY 513]]"
-status: "level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C6a (§C6a.1–§C6a.4, Lecture 13: φ⁴ theory, interaction picture, Dyson series, interacting vacuum, master formula; §C6a.5–§C6a.11, Lecture 14), C6b (§C6b.1–§C6b.7, Lecture 15 and Problem Set 8), C9 (§C9.1–§C9.4 parity incl. the scalar field, §C9.5–§C9.9 charge conjugation, physical spin, time reversal and CPT, taught; §C9.10 C, T, CPT of the complex scalar field, Problem Set 7), CA written, CB skeleton (all statements in reading order; proofs being filled)"
+status: "level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C6a (§C6a.1–§C6a.4, Lecture 13: φ⁴ theory, interaction picture, Dyson series, interacting vacuum, master formula; §C6a.5–§C6a.11, Lecture 14; §C6a.12, rules for polynomial interactions), C6b (§C6b.1–§C6b.10, Lecture 15 and Problem Set 8), C9 (§C9.1–§C9.4 parity incl. the scalar field, §C9.5–§C9.9 charge conjugation, physical spin, time reversal and CPT, taught; §C9.10 C, T, CPT of the complex scalar field, Problem Set 7), CA written, CB skeleton (all statements in reading order; proofs being filled)"
 tags: [subject, quantum-field-theory]
 ---
 # Quantum Field Theory
@@ -49,7 +49,7 @@ graph TD
   C1b -->|10| C2a
   C1a -->|20| C2b
   C1b -->|3| C2b
-  C2a -->|87| C2b
+  C2a -->|105| C2b
   C1a -->|54| C3
   C1b -->|20| C3
   C2a -->|34| C3
@@ -65,26 +65,26 @@ graph TD
   C3 -->|26| C5a
   C1b -->|26| C5b
   C2a -->|89| C5b
-  C2b -->|117| C5b
+  C2b -->|119| C5b
   C3 -->|7| C5b
   C4 -->|1| C5b
   C5a -->|161| C5b
   C1b -->|32| C6a
-  C2a -->|34| C6a
-  C2b -->|108| C6a
-  C5b -->|8| C6a
+  C2a -->|62| C6a
+  C2b -->|118| C6a
+  C5b -->|9| C6a
   C1a -->|16| C6b
   C1b -->|1| C6b
-  C2a -->|53| C6b
-  C2b -->|16| C6b
+  C2a -->|67| C6b
+  C2b -->|20| C6b
   C3 -->|6| C6b
-  C6a -->|37| C6b
+  C6a -->|80| C6b
   C1a -->|12| C9
   C1b -->|9| C9
-  C2a -->|53| C9
+  C2a -->|61| C9
   C2b -->|4| C9
   C5a -->|101| C9
-  C5b -->|74| C9
+  C5b -->|81| C9
   C1a -->|2| CA
   C1b -->|3| CA
   C2a -->|7| CA
@@ -118,13 +118,16 @@ graph TD
   C2b -.->|18| C2a
   C3 -.->|3| C2a
   C5b -.->|2| C2a
-  C6a -.->|2| C2a
+  C6a -.->|9| C2a
+  C6b -.->|1| C2a
   CA -.->|197| C2a
-  C6a -.->|2| C2b
+  C6a -.->|16| C2b
   CA -.->|429| C2b
   C4 -.->|5| C3
   C5a -.->|8| C3
   C5b -.->|1| C3
+  C6a -.->|5| C3
+  C6b -.->|5| C3
   C9 -.->|5| C3
   CA -.->|11| C3
   CB -.->|107| C3
@@ -138,18 +141,18 @@ graph TD
   C9 -.->|4| C5b
   CA -.->|121| C5b
   CB -.->|5| C5b
-  C6b -.->|24| C6a
-  CA -.->|92| C6a
+  C6b -.->|26| C6a
+  CA -.->|107| C6a
   CB -.->|9| C6a
-  CA -.->|68| C6b
+  CA -.->|73| C6b
   CA -.->|40| C9
   CB -.->|100| C9
 ```
 
 ## Planned
-Chapters without notes yet (Yu's numbering). C6 Interactions of quantum fields is written through Lecture 15 and Problem Set 8, split on 2026-10-31 into C6a Interactions and Correlation Functions and C6b The S-Matrix, Amplitudes and Observables (C6a: §C6a.1–§C6a.4: φ⁴ theory, the interaction picture, the Dyson series, the interacting vacuum and the master formula; §C6a.5–§C6a.11: normal ordering, Wick's theorem, Feynman diagrams and rules for correlation functions in position and momentum space, symmetry factors, the iε limit and the cancellation of vacuum bubbles, with the combinatorics in §CA.7; C6b: §C6b.1–§C6b.9: the S-matrix and the invariant amplitude, cross sections by Yu's box route (main line, user decision 2026-10-31) and from wave packets, Lorentz invariance and two-body phase space, decay rates and widths, amplitudes as amputated correlation functions, particle production by a classical source); the Feynman propagators of the other fields (Yu §6.4) are planned there.
+Chapters without notes yet (Yu's numbering). C6 Interactions of quantum fields is written through Lecture 15 and Problem Set 8, split on 2026-10-31 into C6a Interactions and Correlation Functions and C6b The S-Matrix, Amplitudes and Observables (C6a: §C6a.1–§C6a.4: φ⁴ theory, the interaction picture, the Dyson series, the interacting vacuum and the master formula; §C6a.5–§C6a.11: normal ordering, Wick's theorem, Feynman diagrams and rules for correlation functions in position and momentum space, symmetry factors, the iε limit and the cancellation of vacuum bubbles, with the combinatorics in §CA.7; §C6a.12: the rules for any polynomial interaction; C6b: §C6b.1–§C6b.10: the S-matrix and the invariant amplitude, matrix elements between particle states and the tree-level rules, cross sections by Yu's box route (main line, user decision 2026-10-31) and from wave packets, Lorentz invariance and two-body phase space, decay rates and widths, amplitudes as amputated correlation functions, particle production by a classical source); the Feynman propagators of the other fields (Yu §6.4) are planned there.
 
 **Level C — PHY 513 (Larsen, Fall 2026; Peskin & Schroeder; Yu)**
-C7 Feynman diagrams (S-matrix rules, Yukawa, QED; the φ⁴ correlation-function diagrams are in C6a §C6a.7–§C6a.11, user decision 2026-10-26) · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields (written: parity §C9.1–§C9.4, charge conjugation §C9.5, physical spin §C9.7, time reversal §C9.8, CPT §C9.9; Majorana fields pending) · C10 The S-matrix and correlation functions (LSZ; the S-matrix, cross sections and decay rates themselves are in C6b §C6b.1–§C6b.8) · C11 Path-integral quantization
+C7 Feynman diagrams (S-matrix rules, Yukawa, QED; the φ⁴ correlation-function diagrams are in C6a §C6a.7–§C6a.11, user decision 2026-10-26) · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields (written: parity §C9.1–§C9.4, charge conjugation §C9.5, physical spin §C9.7, time reversal §C9.8, CPT §C9.9; Majorana fields pending) · C10 The S-matrix and correlation functions (LSZ; the S-matrix, cross sections and decay rates themselves are in C6b §C6b.1–§C6b.9) · C11 Path-integral quantization
 
 **Mathematics chapter CB** (started 2026-10-08; sections renumbered §CB.0–§CB.21 for "option 1", physics refers to mathematics; §CB.1 split on 2026-10-08, its SU(2)/SO(3) part is now §CB.2): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded) and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.3, Bargmann's theorem in §CB.19, Mackey and Wigner–Mackey in §CB.20★); the mathematical statements of C3 moved into CB in batch B1 (2026-10-08; C3 regrouped into §C3.1–§C3.5 with "The mathematics used here" blocks), those of C5a moved in batch B2 (2026-10-08; the Lorentz-algebra section split, now §CB.5–§CB.6; §C5a.0–§C5a.11 and §C9.4 with "The mathematics used here" blocks; §CB.0, linear algebra in components, holds the statements of spinor-space layer 1), and those of C1a and C9 (the matrix groups, the components of the Lorentz group and the identity component, the discrete element of O(3), and the dual space, multilinear tensors and their transformation law) moved in batch B3 (2026-10-08; "The mathematics used here" blocks in §C1a.3–§C1a.7, §C1b.1 and §C9.1; the preview folder of the option-1 demo removed): **option 1 is done**. §CB.21 Grassmann algebras is completed with C11 (the two ★ Grassmann boxes of §C5b.1 move then).

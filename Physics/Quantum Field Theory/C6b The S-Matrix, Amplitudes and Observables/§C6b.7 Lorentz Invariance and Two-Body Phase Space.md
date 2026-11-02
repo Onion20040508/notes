@@ -3,23 +3,23 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C6b
-section: C6b.6
+section: C6b.7
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6b.5 Evaluating the Cross Section]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.7 Decay Rates and Widths]] →
+← [[§C6b.6 Evaluating the Cross Section]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.8 Decay Rates and Widths]] →
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.6 (Derivation "The flux factor as an $\varepsilon$-tensor component", Principle "Same cross section in the CM and target frames", eq. (moller), Caution "$|\vec v_A - \vec v_B|$ is not a relative velocity"), §15.7 (Definition "The $n$-body relativistic phase space", Derivation "Two-body phase space in the CM frame", paragraph "The momentum (filled in)", Principle "$2\to2$ differential cross section in the CM frame", Derivation "The equal-mass case", paragraph "Why $1/E_{\rm cm}^2$") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part C, slides 19–21, 25, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 106–107, eqs. (4.80)–(4.85) · Yu Zhao-Huan, 量子场论讲义, §6.5.2–§6.5.3, eqs. (6.314)–(6.366).*
 
-The cross section of [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]] has three factors. $|\mathcal M|^2$ is Lorentz invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]) and so is the final phase space, but the prefactor $E_AE_B|\mathbf v_A - \mathbf v_B|$ "looks highly not relativistically invariant", and $\sigma$ is an area, not a scalar. Part C of the lecture resolves the puzzle with "a trick: undo the velocities": the flux factor is one component of an antisymmetric tensor, invariant under boosts along the beam and rotating like an area ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-2|Theorem §C6b.6.2]]). It then makes the phase space explicit in the simplest case, two particles in the centre-of-mass frame, and obtains the $2 \to 2$ differential cross section, which for equal masses is $|\mathcal M|^2/(64\pi^2E_{\rm cm}^2)$. Yu reaches the frame independence differently, with the Møller velocity, which is invariant by construction and equals $|\mathbf v_A - \mathbf v_B|$ for collinear beams: that is the main line of these notes, [[§C6b.3 The Cross Section#^def-c6b-3-3|Def. §C6b.3.3]], [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]] (§6.5.2, eqs. (6.314)–(6.331)). His two-body kinematics with the Källén function (§6.5.3, eqs. (6.336)–(6.366)) is compared box by box below; Remark: Yu's route, at the end.
+The cross section of [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]] has three factors. $|\mathcal M|^2$ is Lorentz invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]) and so is the final phase space, but the prefactor $E_AE_B|\mathbf v_A - \mathbf v_B|$ "looks highly not relativistically invariant", and $\sigma$ is an area, not a scalar. Part C of the lecture resolves the puzzle with "a trick: undo the velocities": the flux factor is one component of an antisymmetric tensor, invariant under boosts along the beam and rotating like an area ([[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-2|Theorem §C6b.7.2]]). It then makes the phase space explicit in the simplest case, two particles in the centre-of-mass frame, and obtains the $2 \to 2$ differential cross section, which for equal masses is $|\mathcal M|^2/(64\pi^2E_{\rm cm}^2)$. Yu reaches the frame independence differently, with the Møller velocity, which is invariant by construction and equals $|\mathbf v_A - \mathbf v_B|$ for collinear beams: that is the main line of these notes, [[§C6b.4 The Cross Section#^def-c6b-4-3|Def. §C6b.4.3]], [[§C6b.4 The Cross Section#^thm-c6b-4-4|Theorem §C6b.4.4]], [[§C6b.4 The Cross Section#^thm-c6b-4-5|Theorem §C6b.4.5]] (§6.5.2, eqs. (6.314)–(6.331)). His two-body kinematics with the Källén function (§6.5.3, eqs. (6.336)–(6.366)) is compared box by box below; Remark: Yu's route, at the end.
 
 *Conventions* ([[Larsen PHY 513]]): $\varepsilon^{0123} = +1$, hence $\varepsilon_{0123} = -1$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]; PS have $-1$); $x, y = 1, 2$; collinear beams along $z$; $E_{\rm cm}$ the total energy in the centre-of-mass frame ("c.m.s." on the slides, $E_{\rm CM}$ in Yu); $p_1 \equiv |\mathbf p_1|$.
 
 ## Lorentz invariance of the cross section
 
-Why an $\varepsilon$-tensor: the cross section is an area in the plane transverse to the beam, the plane of the impact parameter $d^2b$ ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]), and the Lorentz-covariant object attached to an oriented plane is an antisymmetric tensor. The component $F_{12} = \varepsilon_{12\mu\nu}p_A^\mu p_B^\nu$ is the one dual to the transverse area element $dx\wedge dy$ ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^der-c6b-6-2|Derivation §C6b.6.2]], Step 3): it is built from the two momenta alone, and it is unchanged by boosts along $z$, exactly as an area in the $xy$-plane is. "Undo the velocities" means writing $E_AE_Bv^z$ as $E_Bp_A^z$, after which the antisymmetric combination is visible.
+Why an $\varepsilon$-tensor: the cross section is an area in the plane transverse to the beam, the plane of the impact parameter $d^2b$ ([[§C6b.5 Wave Packets and the Cross Section#^def-c6b-5-6|Def. §C6b.5.6]]), and the Lorentz-covariant object attached to an oriented plane is an antisymmetric tensor. The component $F_{12} = \varepsilon_{12\mu\nu}p_A^\mu p_B^\nu$ is the one dual to the transverse area element $dx\wedge dy$ ([[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^der-c6b-7-2|Derivation §C6b.7.2]], Step 3): it is built from the two momenta alone, and it is unchanged by boosts along $z$, exactly as an area in the $xy$-plane is. "Undo the velocities" means writing $E_AE_Bv^z$ as $E_Bp_A^z$, after which the antisymmetric combination is visible.
 
-> [!theorem] Theorem §C6b.6.1: The Flux Factor Is a Component of an Antisymmetric Tensor
+> [!theorem] Theorem §C6b.7.1: The Flux Factor Is a Component of an Antisymmetric Tensor
 > For momenta $p_A$, $p_B$ along the $z$-axis,
 >
 > $$
@@ -32,10 +32,10 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 >
 > *Source: PHY 513 Lecture 15, slide 19 ("$E_AE_B(v_A^z - v_B^z) = E_Bp_A^z - E_Ap_B^z = \epsilon_{xy\mu\nu}p_A^\mu p_B^\nu$ ⇒ prefactor transforms like an area"), and transcript ("as we just learned, momentum divided by $E$ gives velocity. That works the other way around as well") · the user's PHY 513 notes, Ch. 15 §15.6, eq. (fluxeps) · PS §4.5, p. 106 (with $|\epsilon_{\mu xy\nu}p_A^\mu p_B^\nu|$)*
 
-^thm-c6b-6-1
+^thm-c6b-7-1
 
 > [!derivation]- Derivation
-> **Step 1** (undo the velocities). $v^z = p^z/E$ ([[§C6b.5 Evaluating the Cross Section#^der-c6b-5-1|Derivation §C6b.5.1]], Step 5), so
+> **Step 1** (undo the velocities). $v^z = p^z/E$ ([[§C6b.6 Evaluating the Cross Section#^der-c6b-6-1|Derivation §C6b.6.1]], Step 5), so
 >
 > $$
 > E_AE_B\bigl(v_A^z - v_B^z\bigr) = E_AE_B\frac{p_A^z}{E_A} - E_AE_B\frac{p_B^z}{E_B} = E_Bp_A^z - E_Ap_B^z .
@@ -67,20 +67,20 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > - With PS's $\varepsilon^{0123} = -1$ the middle expression changes sign; inside the absolute value of the flux factor it does not matter.
 > - Checked numerically at random collinear momenta in `qft-C/tools/l15/checks.py`.
 
-^der-c6b-6-1
+^der-c6b-7-1
 
 *Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]
 
-> [!theorem] Theorem §C6b.6.2: The Cross Section Transforms Like an Area
-> 1. $E_AE_B|\mathbf v_A - \mathbf v_B|$, and hence $d\sigma$ of [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]], is invariant under boosts along the beam axis $z$.
-> 2. Under rotations the flux factor transforms like an area element in the plane transverse to the beam, as $\sigma$ does: $F'_{ij} = R_i{}^kR_j{}^lF_{kl}$, the law of $dx^i\wedge dx^j$, and $\sigma$ is an area in the plane of $d^2b$ ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]). Under a boost along $z$ both are unchanged (part 1).
+> [!theorem] Theorem §C6b.7.2: The Cross Section Transforms Like an Area
+> 1. $E_AE_B|\mathbf v_A - \mathbf v_B|$, and hence $d\sigma$ of [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]], is invariant under boosts along the beam axis $z$.
+> 2. Under rotations the flux factor transforms like an area element in the plane transverse to the beam, as $\sigma$ does: $F'_{ij} = R_i{}^kR_j{}^lF_{kl}$, the law of $dx^i\wedge dx^j$, and $\sigma$ is an area in the plane of $d^2b$ ([[§C6b.5 Wave Packets and the Cross Section#^def-c6b-5-6|Def. §C6b.5.6]]). Under a boost along $z$ both are unchanged (part 1).
 > 3. In particular $d\sigma$ is the same in the centre-of-mass frame ($\mathbf p_{\rm tot} = \mathbf 0$) and in a target frame ($\mathbf p_A = \mathbf 0$ or $\mathbf p_B = \mathbf 0$).
 >
-> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as there, with $|\mathcal M|^2$ Lorentz invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]).
+> *Model:* [[§C6b.5 Wave Packets and the Cross Section#^mod-c6b-5-1|Model §C6b.5.1]]; *applies:* as there, with $|\mathcal M|^2$ Lorentz invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]).
 >
 > *Source: PHY 513 Lecture 15, slide 19 ("Cross-section $\sigma$ really is an 'area', it transforms like one. Application: $d\sigma$ invariant under boosts in $z$-direction. Same in c.m.s. ($\vec p_{\rm tot} = 0$) and target frame ($\vec p_A = 0$ or $\vec p_B = 0$)."), and transcript ("it's not even exactly invariant. It should transform like an area, and it does") · the user's PHY 513 notes, Ch. 15 §15.6, Principle "Same cross section in the CM and target frames" (a derived result: a theorem here) · PS §4.5, p. 106*
 
-^thm-c6b-6-2
+^thm-c6b-7-2
 
 > [!derivation]- Derivation
 > **Step 1** (a boost along $z$). Such a boost acts only on the components $0$, $3$, as the matrix of [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], and leaves $x$, $y$ alone. With $c = \cosh\eta$, $s = \sinh\eta$, each momentum becomes
@@ -89,7 +89,7 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > E' = c\,E + s\,p^z , \qquad p'^z = s\,E + c\,p^z , \qquad \mathbf p'^\perp = \mathbf p^\perp .
 > $$
 >
-> **Step 2** (the component $F_{12}$ is invariant). By [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-1|Theorem §C6b.6.1]], $F_{12} = E_Bp_A^z - E_Ap_B^z$. Insert Step 1 and expand all eight products:
+> **Step 2** (the component $F_{12}$ is invariant). By [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-1|Theorem §C6b.7.1]], $F_{12} = E_Bp_A^z - E_Ap_B^z$. Insert Step 1 and expand all eight products:
 >
 > $$
 > \begin{aligned}
@@ -99,7 +99,7 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > \end{aligned}
 > $$
 >
-> since $\cosh^2\eta - \sinh^2\eta = 1$. In index form this is the determinant rule: restricted to $\mu, \nu \in \{0, 3\}$, $\varepsilon_{12\mu\nu} = -\epsilon_{\mu\nu}$ with the two-dimensional symbol $\epsilon_{03} = 1$ (Step 3 of [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^der-c6b-6-1|Derivation §C6b.6.1]]), and $\epsilon_{\mu\nu}L^\mu{}_\alpha L^\nu{}_\beta = \det L\,\epsilon_{\alpha\beta}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]] in two dimensions) with $\det L = c^2 - s^2 = 1$. For collinear beams $|\mathbf v_A - \mathbf v_B| = |v_A^z - v_B^z|$, so $E_AE_B|\mathbf v_A - \mathbf v_B| = |F_{12}|$ is invariant; $|\mathcal M|^2$ and the phase space are invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-4|Theorem §C6b.6.4]]): part 1.
+> since $\cosh^2\eta - \sinh^2\eta = 1$. In index form this is the determinant rule: restricted to $\mu, \nu \in \{0, 3\}$, $\varepsilon_{12\mu\nu} = -\epsilon_{\mu\nu}$ with the two-dimensional symbol $\epsilon_{03} = 1$ (Step 3 of [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^der-c6b-7-1|Derivation §C6b.7.1]]), and $\epsilon_{\mu\nu}L^\mu{}_\alpha L^\nu{}_\beta = \det L\,\epsilon_{\alpha\beta}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]] in two dimensions) with $\det L = c^2 - s^2 = 1$. For collinear beams $|\mathbf v_A - \mathbf v_B| = |v_A^z - v_B^z|$, so $E_AE_B|\mathbf v_A - \mathbf v_B| = |F_{12}|$ is invariant; $|\mathcal M|^2$ and the phase space are invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]): part 1.
 >
 > **Step 3** (rotations). $F_{\rho\sigma} = \varepsilon_{\rho\sigma\mu\nu}p_A^\mu p_B^\nu$ is an antisymmetric tensor; under a rotation $R$ its spatial components transform as
 >
@@ -107,7 +107,7 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > F'_{ij} = R_i{}^kR_j{}^l\,F_{kl} , \qquad F_{12} = \tfrac12\,\varepsilon_{3jk}F_{jk} ,
 > $$
 >
-> like the components of an area element $dx^i\wedge dx^j$, equivalently like the $z$ component of the axial vector $\frac12\varepsilon_{ijk}F_{jk}$, the normal to the plane. The flux factor is the component $F_{12}$, the area element in the plane transverse to the beam: part 2. The cross section is defined as an area in that plane ([[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-6|Def. §C6b.4.6]]: an integral over $d^2b$).
+> like the components of an area element $dx^i\wedge dx^j$, equivalently like the $z$ component of the axial vector $\frac12\varepsilon_{ijk}F_{jk}$, the normal to the plane. The flux factor is the component $F_{12}$, the area element in the plane transverse to the beam: part 2. The cross section is defined as an area in that plane ([[§C6b.5 Wave Packets and the Cross Section#^def-c6b-5-6|Def. §C6b.5.6]]: an integral over $d^2b$).
 >
 > **Step 4** (frames). The centre-of-mass frame and the rest frames of $A$ or of $B$ are reached from one another by boosts along the common beam axis: with $\tanh\eta = v$ ([[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]]), $\cosh\eta = \gamma$, $\sinh\eta = \gamma v$ in Step 1 gives $p'^z = \gamma(vE + p^z)$, so the boost with $v = -\frac{p_A^z + p_B^z}{E_A + E_B}$ takes the total momentum to zero and the one with $v = -v_A^z$ takes $A$ to rest. Part 1 applies to each: part 3.
 >
@@ -115,27 +115,27 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > - The flux factor is not a Lorentz scalar; the cross section is not either; they transform alike, which is all that is needed.
 > - The same trick, a component transverse to a boost is invariant under it, gave the centre-of-mass momentum in Problem Set 1 — [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-2|Example §C1a.5.2]].
 
-^der-c6b-6-2
+^der-c6b-7-2
 
-*Uses:* [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-1|Theorem §C6b.6.1]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-4|Theorem §C6b.6.4]]
+*Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-1|Theorem §C6b.7.1]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]
 
-> [!theorem] Theorem §C6b.6.3: The Flux Factor in Invariant Form
+> [!theorem] Theorem §C6b.7.3: The Flux Factor in Invariant Form
 > For collinear beams,
 >
 > $$
 > E_AE_B\,|\mathbf v_A - \mathbf v_B| = \sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} ,
 > $$
 >
-> which is manifestly invariant. In general $\frac{1}{E_AE_B}\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = \sqrt{|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2}$, Yu's Møller velocity $v_{\rm Møl}$: this is [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]] of the main line, and the statement here is that theorem multiplied by $E_AE_B$.
+> which is manifestly invariant. In general $\frac{1}{E_AE_B}\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = \sqrt{|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2}$, Yu's Møller velocity $v_{\rm Møl}$: this is [[§C6b.4 The Cross Section#^thm-c6b-4-5|Theorem §C6b.4.5]] of the main line, and the statement here is that theorem multiplied by $E_AE_B$.
 >
 > *Model:* any (kinematics); *applies:* collinear beams for the first equality; any momenta for the second.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.6, eq. (moller) (filled in) · Yu §6.5.2, eqs. (6.315), (6.322)–(6.329)*
 
-^thm-c6b-6-3
+^thm-c6b-7-3
 
 > [!derivation]- Derivation
-> **Steps 1–4** (moved). The algebra, Yu (6.322)–(6.329), is [[§C6b.3 The Cross Section#^der-c6b-3-5|Derivation §C6b.3.5]], Steps 1–5, in the main line: $p_A\cdot p_B = E_AE_B(1 - \mathbf v_A\cdot\mathbf v_B)$, $(1 - \mathbf v_A\cdot\mathbf v_B)^2 = |\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2 + (1 - |\mathbf v_A|^2)(1 - |\mathbf v_B|^2)$, and $E^2(1 - |\mathbf v|^2) = m^2$, which give
+> **Steps 1–4** (moved). The algebra, Yu (6.322)–(6.329), is [[§C6b.4 The Cross Section#^der-c6b-4-5|Derivation §C6b.4.5]], Steps 1–5, in the main line: $p_A\cdot p_B = E_AE_B(1 - \mathbf v_A\cdot\mathbf v_B)$, $(1 - \mathbf v_A\cdot\mathbf v_B)^2 = |\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2 + (1 - |\mathbf v_A|^2)(1 - |\mathbf v_B|^2)$, and $E^2(1 - |\mathbf v|^2) = m^2$, which give
 >
 > $$
 > (p_A\cdot p_B)^2 - m_A^2m_B^2 = E_A^2E_B^2\bigl(|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2\bigr) .
@@ -154,49 +154,49 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > $$
 >
 > **What the derivation shows.**
-> - For collinear beams the flux factor is a function of the invariant $p_A\cdot p_B$ alone, the algebraic reason behind [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-2|Theorem §C6b.6.2]], 1. (For collinear beams $F_{12}^2 = \frac12F_{\rho\sigma}F^{\rho\sigma} = (p_A\cdot p_B)^2 - m_A^2m_B^2$, by the contraction identity $\varepsilon_{\rho\sigma\mu\nu}\varepsilon^{\rho\sigma\alpha\beta} = -2(\delta^\alpha_\mu\delta^\beta_\nu - \delta^\alpha_\nu\delta^\beta_\mu)$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]) and because the other components of $F$ vanish.)
+> - For collinear beams the flux factor is a function of the invariant $p_A\cdot p_B$ alone, the algebraic reason behind [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-2|Theorem §C6b.7.2]], 1. (For collinear beams $F_{12}^2 = \frac12F_{\rho\sigma}F^{\rho\sigma} = (p_A\cdot p_B)^2 - m_A^2m_B^2$, by the contraction identity $\varepsilon_{\rho\sigma\mu\nu}\varepsilon^{\rho\sigma\alpha\beta} = -2(\delta^\alpha_\mu\delta^\beta_\nu - \delta^\alpha_\nu\delta^\beta_\mu)$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]) and because the other components of $F$ vanish.)
 > - Checked numerically in `qft-C/tools/l15/checks.py`.
 
-^der-c6b-6-3
+^der-c6b-7-3
 
-*Uses:* [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-1|Theorem §C6b.6.1]], [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]]
+*Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-1|Theorem §C6b.7.1]], [[§C6b.4 The Cross Section#^thm-c6b-4-5|Theorem §C6b.4.5]]
 
 > [!caution] Caution: The velocity difference is not a relative velocity
 > $|\mathbf v_A - \mathbf v_B|$ is the difference of two velocities measured in the same frame, not the speed of one particle in the rest frame of the other. It is not bounded by 1: for a head-on collision of ultrarelativistic particles in the centre-of-mass frame it approaches 2. Nothing is wrong: it is the rate at which the two flux tubes sweep through each other. Names: PS call it "the relative velocity of the beams as viewed from the laboratory frame" (p. 106); Yu defines $v_{\rm rel} \equiv |\mathbf v_{\mathcal A} - \mathbf v_{\mathcal B}|$, "相对速度" (eq. (6.314)), and notes that for head-on ultrarelativistic beams $v_{\rm rel} = 2$, "no longer a relative velocity in the traditional sense" (p. 246); the true relative speed is the Møller-type invariant $\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2}/(p_A\cdot p_B)$.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.6, Caution "$|\vec v_A - \vec v_B|$ is not a relative velocity" · PS §4.5, p. 106 · Yu §6.5.2, eq. (6.314), p. 246*
 
-^cau-c6b-6-1
+^cau-c6b-7-1
 
 ## Phase space
 
-> [!definition] Definition §C6b.6.1: The n-Particle Relativistic Phase Space
+> [!definition] Definition §C6b.7.1: The n-Particle Relativistic Phase Space
 > The **$n$-particle phase-space factor** of a final state of $n$ particles with total four-momentum $P$ is
 >
 > $$
 > d\Pi_n = \Bigl(\prod_{i=1}^n\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\Bigr)\cdot(2\pi)^4\delta^4\Bigl(P - \sum_ip_i\Bigr) ,
 > $$
 >
-> with $P = p_A + p_B$ for scattering and $P = p_A$ for a decay ([[§C6b.7 Decay Rates and Widths|§C6b.7]]): the kinematics of the $n$ final particles. An explicit $d\Pi_n$ requires a specific final state and coordinate system.
+> with $P = p_A + p_B$ for scattering and $P = p_A$ for a decay ([[§C6b.8 Decay Rates and Widths|§C6b.8]]): the kinematics of the $n$ final particles. An explicit $d\Pi_n$ requires a specific final state and coordinate system.
 >
 > *Model:* any (kinematics); *applies:* the measure of relativistically normalized final states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); independent of the dynamics.
 >
 > *Source: PHY 513 Lecture 15, slide 20 ("The $n$-particle phase space factor $d\Pi_n = (\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i})\cdot(2\pi)^4\delta^{(4)}(p_A + p_B - \sum_ip_i)$"), slide 25 ("The phase space factor is kinematics of $n$ final particles … Explicit $d\Pi_n$: specific final state and coordinate system"), slide 22 (with $p_A$), and transcript ("this whole thing here is sometimes called the $n$ particle relativistic phase space") · the user's PHY 513 notes, Ch. 15 §15.7, eq. (dPin) · PS §4.5, eq. (4.80) ("relativistically invariant $n$-body phase space") · Yu §6.5.2, eq. (6.318) ($n$ 体不变相空间)*
 
-^def-c6b-6-1
+^def-c6b-7-1
 
-The main line defines the same measure with Yu's name, the $n$-body invariant phase space, [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]] (Yu (6.318)).
+The main line defines the same measure with Yu's name, the $n$-body invariant phase space, [[§C6b.4 The Cross Section#^def-c6b-4-4|Def. §C6b.4.4]] (Yu (6.318)).
 
-With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]] reads $d\sigma = \frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}\,|\mathcal M|^2\,d\Pi_n$ (slide 24).
+With it, [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]] reads $d\sigma = \frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}\,|\mathcal M|^2\,d\Pi_n$ (slide 24).
 
-> [!theorem] Theorem §C6b.6.4: The Phase Space Is Lorentz Invariant
+> [!theorem] Theorem §C6b.7.4: The Phase Space Is Lorentz Invariant
 > For every scalar function $F$ of the momenta and every $\Lambda \in SO^+(1, 3)$, $\int d\Pi_n\,F(p_1, \dots, p_n)$ with total momentum $\Lambda P$ equals the same integral of $F(\Lambda p_1, \dots, \Lambda p_n)$ with total momentum $P$: $d\Pi_n$ is an invariant measure on the final states.
 >
 > *Model:* any (kinematics); *applies:* independent of the dynamics.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.6 (first paragraph) and §15.7 (Definition "The $n$-body relativistic phase space": "It is Lorentz invariant") · PS §4.5, p. 106 ("manifestly Lorentz invariant") · Yu §6.5.1, eq. (6.304)*
 
-^thm-c6b-6-4
+^thm-c6b-7-4
 
 > [!derivation]- Derivation
 > **Step 1** (each one-particle factor). By [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]] and [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], substituting $p = \Lambda p'$:
@@ -222,7 +222,7 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 > **What the derivation shows.**
 > - "It is built up from invariant 3-momentum integrals constrained by a 4-momentum delta function" (PS p. 106); the invariance holds for the measure as a whole, not for its explicit form in a chosen frame.
 
-^der-c6b-6-4
+^der-c6b-7-4
 
 *Uses:* [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
 
@@ -231,9 +231,9 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.7*
 
-^rem-c6b-6-1
+^rem-c6b-7-1
 
-> [!theorem] Theorem §C6b.6.5: Two-Body Phase Space in the Centre-of-Mass Frame
+> [!theorem] Theorem §C6b.7.5: Two-Body Phase Space in the Centre-of-Mass Frame
 > For $n = 2$ final particles in the centre-of-mass frame, $P = (E_{\rm cm}, \mathbf 0)$,
 >
 > $$
@@ -246,7 +246,7 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 >
 > *Source: PHY 513 Lecture 15, slide 20 ("Explicit expression for $n = 2$ final particles in cms: … $= \int d\Omega\frac{|\vec p_1|}{16\pi^2E_{\rm cm}}$"), and transcript ("Not that bad") · the user's PHY 513 notes, Ch. 15 §15.7, Derivation "Two-body phase space in the CM frame", eq. (dPi2) · PS §4.5, eqs. (4.81)–(4.82) · Yu §6.5.3, eqs. (6.341)–(6.343)*
 
-^thm-c6b-6-5
+^thm-c6b-7-5
 
 > [!derivation]- Derivation
 > **Step 1** (the spatial delta). With $P = (E_{\rm cm}, \mathbf 0)$, split by components,
@@ -281,7 +281,7 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 > \delta(E_1 + E_2 - E_{\rm cm}) = \frac{\delta(p_1 - p_1^\ast)}{|\partial_{p_1}(E_1 + E_2)|_{p_1^\ast}} = \frac{E_1E_2}{p_1(E_1 + E_2)}\bigg|_{p_1^\ast}\,\delta(p_1 - p_1^\ast) .
 > $$
 >
-> (The plus sign, where [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-1|Theorem §C6b.5.1]] had a minus, is because $\mathbf p_2 = -\mathbf p_1$: $E_2$ also grows with $p_1$. In the lecture, "Still was a minus, but then I've gotten rid of $p_2$ when $p_2$ is minus $p_1$.")
+> (The plus sign, where [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-1|Theorem §C6b.6.1]] had a minus, is because $\mathbf p_2 = -\mathbf p_1$: $E_2$ also grows with $p_1$. In the lecture, "Still was a minus, but then I've gotten rid of $p_2$ when $p_2$ is minus $p_1$.")
 >
 > **Step 4** (collect). Insert Step 3 into Step 2 and do the $p_1$ integral; with $(2\pi)^2\cdot4 = 16\pi^2$ and $E_1 + E_2 = E_{\rm cm}$ at the zero,
 >
@@ -294,12 +294,12 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 > - The zero exists only if $E_{\rm cm} > m_1 + m_2$ (Yu eq. (6.339)): at $p_1 = 0$ the sum $E_1 + E_2$ is $m_1 + m_2$, and it increases with $p_1$.
 > - Checked by smearing the energy delta function in `qft-C/tools/l15/checks.py` ($E_{\rm cm} = 5$, $m_1 = 1.2$, $m_2 = 0.7$).
 
-^der-c6b-6-5
+^der-c6b-7-5
 
-*Uses:* [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^def-c6b-6-1|Def. §C6b.6.1]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
+*Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^def-c6b-7-1|Def. §C6b.7.1]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
 
-> [!theorem] Theorem §C6b.6.6: The Centre-of-Mass Momentum
-> In the setting of [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-5|Theorem §C6b.6.5]],
+> [!theorem] Theorem §C6b.7.6: The Centre-of-Mass Momentum
+> In the setting of [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-5|Theorem §C6b.7.5]],
 >
 > $$
 > |\mathbf p_1| = |\mathbf p_2| = \frac{\sqrt{\bigl[E_{\rm cm}^2 - (m_1 + m_2)^2\bigr]\bigl[E_{\rm cm}^2 - (m_1 - m_2)^2\bigr]}}{2E_{\rm cm}} = \frac{\lambda^{1/2}(E_{\rm cm}^2, m_1^2, m_2^2)}{2E_{\rm cm}} ,
@@ -307,11 +307,11 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 >
 > with the Källén function $\lambda(x, y, z) = x^2 + y^2 + z^2 - 2xy - 2xz - 2yz$, and $E_1 = \frac{E_{\rm cm}^2 + m_1^2 - m_2^2}{2E_{\rm cm}}$.
 >
-> *Model:* any (kinematics); *applies:* as in [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-5|Theorem §C6b.6.5]].
+> *Model:* any (kinematics); *applies:* as in [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-5|Theorem §C6b.7.5]].
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.7 (paragraph "The momentum (filled in)") · Yu §6.5.3, eqs. (6.346)–(6.352)*
 
-^thm-c6b-6-6
+^thm-c6b-7-6
 
 > [!derivation]- Derivation
 > **Step 1** ($E_1$). From $E_1 + E_2 = E_{\rm cm}$ and $E_j^2 = p_1^2 + m_j^2$ (so $E_2^2 = E_1^2 - m_1^2 + m_2^2$), square $E_2 = E_{\rm cm} - E_1$ (Yu eqs. (6.346)–(6.348)):
@@ -349,28 +349,28 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 > **What the derivation shows.**
 > - $|\mathbf p_1|$ is real exactly above threshold, $E_{\rm cm} \ge m_1 + m_2$; the heavier particle takes the larger share of the energy (Yu after eq. (6.349)).
 
-^der-c6b-6-6
+^der-c6b-7-6
 
-*Uses:* [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-5|Theorem §C6b.6.5]]
+*Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-5|Theorem §C6b.7.5]]
 
 ## 2 → 2 scattering in the centre-of-mass frame
 
-> [!theorem] Theorem §C6b.6.7: The 2 → 2 Differential Cross Section in the Centre-of-Mass Frame
+> [!theorem] Theorem §C6b.7.7: The 2 → 2 Differential Cross Section in the Centre-of-Mass Frame
 >
 > $$
 > \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{1}{2E_A\,2E_B\,|\mathbf v_A - \mathbf v_B|}\cdot\frac{|\mathbf p_1|}{16\pi^2E_{\rm cm}}\cdot|\mathcal M|^2 ,
 > $$
 >
-> with $\Omega$ the direction of $\mathbf p_1$ and $|\mathbf p_1|$ of [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-6|Theorem §C6b.6.6]].
+> with $\Omega$ the direction of $\mathbf p_1$ and $|\mathbf p_1|$ of [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-6|Theorem §C6b.7.6]].
 >
-> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]] (or [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]); *applies:* as there; $\mathcal M$ from free states and the Feynman rules is exact in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] and lowest order in [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]].
+> *Model:* [[§C6b.5 Wave Packets and the Cross Section#^mod-c6b-5-1|Model §C6b.5.1]] (or [[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]]); *applies:* as there; $\mathcal M$ from free states and the Feynman rules is exact in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] and lowest order in [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]].
 >
 > *Source: PHY 513 Lecture 15, slide 21 (boxed formula) · the user's PHY 513 notes, Ch. 15 §15.7, Principle "$2\to2$ differential cross section in the CM frame", eq. (dsdOgen) (a derived result: a theorem here) · PS §4.5, eq. (4.84) · Yu §6.5.3, eq. (6.345)*
 
-^thm-c6b-6-7
+^thm-c6b-7-7
 
 > [!derivation]- Derivation
-> **Step 1** (insert the phase space). By [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]] and [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^def-c6b-6-1|Def. §C6b.6.1]], $d\sigma = \frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}|\mathcal M|^2\,d\Pi_2$. For a smooth acceptance $g$ of the final states, [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-5|Theorem §C6b.6.5]] with $F = |\mathcal M|^2g$ gives
+> **Step 1** (insert the phase space). By [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]] and [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^def-c6b-7-1|Def. §C6b.7.1]], $d\sigma = \frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}|\mathcal M|^2\,d\Pi_2$. For a smooth acceptance $g$ of the final states, [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-5|Theorem §C6b.7.5]] with $F = |\mathcal M|^2g$ gives
 >
 > $$
 > \int g\,d\sigma = \frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}\int d\Pi_2\,|\mathcal M|^2g = \int d\Omega\;g(\Omega)\;\frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}\,\frac{|\mathbf p_1|}{16\pi^2E_{\rm cm}}\,|\mathcal M(\Omega)|^2 ,
@@ -383,11 +383,11 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 > **What the derivation shows.**
 > - The initial-state factor has not been simplified: "I still have all the initial stuff, which has its own simplifications, perhaps." For unequal masses the kinematics of the particular situation must be worked out ("you just look it up").
 
-^der-c6b-6-7
+^der-c6b-7-7
 
-*Uses:* [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]], [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-5|Theorem §C6b.6.5]], [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^def-c6b-6-1|Def. §C6b.6.1]]
+*Uses:* [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-5|Theorem §C6b.7.5]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^def-c6b-7-1|Def. §C6b.7.1]]
 
-> [!theorem] Theorem §C6b.6.8: All Masses Equal
+> [!theorem] Theorem §C6b.7.8: All Masses Equal
 > If the four particles of a $2 \to 2$ process have the same mass,
 >
 > $$
@@ -396,11 +396,11 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 >
 > It applies to elastic scattering of identical particles (two in, the same two out) and to any $2 \to 2$ process at energies $E \gg m_i$, where all masses effectively vanish.
 >
-> *Model:* [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as in [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-7|Theorem §C6b.6.7]], all four masses equal.
+> *Model:* [[§C6b.5 Wave Packets and the Cross Section#^mod-c6b-5-1|Model §C6b.5.1]]; *applies:* as in [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-7|Theorem §C6b.7.7]], all four masses equal.
 >
 > *Source: PHY 513 Lecture 15, slide 21 ("If all masses are identical: … $(\frac{d\sigma}{d\Omega})_{\rm c.m.s.} = \frac{1}{64\pi^2E_{\rm c.m.}^2}\cdot|\mathcal M|^2$. Applies in important special cases: 2 particles in, 2 particles out (all identical). High energy $E \gg m_i$ ⇒ all masses effectively vanish."), slide 25, and transcript · the user's PHY 513 notes, Ch. 15 §15.7, eq. (dsdO64), Derivation "The equal-mass case" · PS §4.5, eq. (4.85) · Yu §6.5.3, eq. (6.366)*
 
-^thm-c6b-6-8
+^thm-c6b-7-8
 
 > [!derivation]- Derivation
 > **Step 1** (initial energies). In the centre-of-mass frame $\mathbf p_B = -\mathbf p_A$, and with $m_A = m_B = m$,
@@ -421,7 +421,7 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 > |\mathbf v_A - \mathbf v_B| = 2|\mathbf v_A| = \frac{2|\mathbf p_A|}{E_A} = \frac{2|\mathbf p_1|}{E_{\rm cm}/2} = \frac{4|\mathbf p_1|}{E_{\rm cm}} .
 > $$
 >
-> **Step 4** (insert in [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-7|Theorem §C6b.6.7]]). With $2E_A\,2E_B = E_{\rm cm}\cdot E_{\rm cm}$ (Step 1) and Step 3, the prefactor of $|\mathcal M|^2$ is
+> **Step 4** (insert in [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-7|Theorem §C6b.7.7]]). With $2E_A\,2E_B = E_{\rm cm}\cdot E_{\rm cm}$ (Step 1) and Step 3, the prefactor of $|\mathcal M|^2$ is
 >
 > $$
 > \frac{1}{E_{\rm cm}\cdot E_{\rm cm}\cdot4|\mathbf p_1|/E_{\rm cm}}\cdot\frac{|\mathbf p_1|}{16\pi^2E_{\rm cm}} = \frac{1}{4|\mathbf p_1|E_{\rm cm}}\cdot\frac{|\mathbf p_1|}{16\pi^2E_{\rm cm}} = \frac{1}{64\pi^2E_{\rm cm}^2} .
@@ -438,23 +438,23 @@ With it, [[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]
 > **What the derivation shows.**
 > - The $|\mathbf p_1|$ of the final phase space cancels the one of the initial velocity: "the initial state stuff and the final state stuff nicely sort of combine."
 
-^der-c6b-6-8
+^der-c6b-7-8
 
-*Uses:* [[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-7|Theorem §C6b.6.7]]
+*Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-7|Theorem §C6b.7.7]]
 
 > [!remark] Remark: Why 1/E²: dimensional analysis
-> The result could have been guessed. $d\sigma/d\Omega$ is an area and $\mathcal M$ is dimensionless for $2 \to 2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]), so the prefactor has dimension $(\text{energy})^{-2}$. "If particles do not sort of distinguish each other, kinematically speaking, total energy is [the] only [scale]. So it had to be basically one over the energy squared. All we can discuss is did I get the $64\pi^2$." A total cross section with an energy-independent $|\mathcal M|^2$ therefore falls like $1/E_{\rm cm}^2$ ([[§C6b.8 Amplitudes from Correlation Functions#^ex-c6b-8-2|Example §C6b.8.2]]).
+> The result could have been guessed. $d\sigma/d\Omega$ is an area and $\mathcal M$ is dimensionless for $2 \to 2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]), so the prefactor has dimension $(\text{energy})^{-2}$. "If particles do not sort of distinguish each other, kinematically speaking, total energy is [the] only [scale]. So it had to be basically one over the energy squared. All we can discuss is did I get the $64\pi^2$." A total cross section with an energy-independent $|\mathcal M|^2$ therefore falls like $1/E_{\rm cm}^2$ ([[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-2|Example §C6b.9.2]]).
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.7 (paragraph "Why $1/E_{\rm cm}^2$")*
 
-^rem-c6b-6-2
+^rem-c6b-7-2
 
 > [!remark] Remark: Yu's route
-> In these notes Yu's route to the invariant cross section is the main line, [[§C6b.3 The Cross Section|§C6b.3]] ([[§C6b.3 The Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]]–[[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]). Yu writes the cross section first for a fixed target and then replaces $|\mathbf v_{\mathcal B}|$ by the **Møller velocity** $v_{\rm Møl} = \frac{1}{E_{\mathcal A}E_{\mathcal B}}\sqrt{(p_{\mathcal A}\cdot p_{\mathcal B})^2 - m_{\mathcal A}^2m_{\mathcal B}^2}$ (eq. (6.315)), which makes the incident flux $E_{\mathcal A}E_{\mathcal B}v_{\rm Møl}$ and $\sigma$ Lorentz invariant *by definition* (eq. (6.316)); $d\Pi_n$ is eq. (6.318), $d\sigma$ eq. (6.320). He shows $v_{\rm Møl} = \sqrt{|\mathbf v_{\mathcal A} - \mathbf v_{\mathcal B}|^2 - |\mathbf v_{\mathcal A}\times\mathbf v_{\mathcal B}|^2}$ (eqs. (6.322)–(6.329)), so for collinear beams the two definitions agree ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-3|Theorem §C6b.6.3]]); the course instead derives the transformation law of the flux factor (an area). His $2 \to 2$ kinematics in the centre-of-mass frame: eqs. (6.336)–(6.345) (two-body phase space (6.341)–(6.343), $d\sigma/d\Omega$ (6.345)), the Källén function (6.351) with $d\sigma/d\Omega$ in terms of it (6.353), special cases (6.356)–(6.366), all four masses equal (6.366).
+> In these notes Yu's route to the invariant cross section is the main line, [[§C6b.4 The Cross Section|§C6b.4]] ([[§C6b.4 The Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]]–[[§C6b.4 The Cross Section#^thm-c6b-4-6|Theorem §C6b.4.6]]). Yu writes the cross section first for a fixed target and then replaces $|\mathbf v_{\mathcal B}|$ by the **Møller velocity** $v_{\rm Møl} = \frac{1}{E_{\mathcal A}E_{\mathcal B}}\sqrt{(p_{\mathcal A}\cdot p_{\mathcal B})^2 - m_{\mathcal A}^2m_{\mathcal B}^2}$ (eq. (6.315)), which makes the incident flux $E_{\mathcal A}E_{\mathcal B}v_{\rm Møl}$ and $\sigma$ Lorentz invariant *by definition* (eq. (6.316)); $d\Pi_n$ is eq. (6.318), $d\sigma$ eq. (6.320). He shows $v_{\rm Møl} = \sqrt{|\mathbf v_{\mathcal A} - \mathbf v_{\mathcal B}|^2 - |\mathbf v_{\mathcal A}\times\mathbf v_{\mathcal B}|^2}$ (eqs. (6.322)–(6.329)), so for collinear beams the two definitions agree ([[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-3|Theorem §C6b.7.3]]); the course instead derives the transformation law of the flux factor (an area). His $2 \to 2$ kinematics in the centre-of-mass frame: eqs. (6.336)–(6.345) (two-body phase space (6.341)–(6.343), $d\sigma/d\Omega$ (6.345)), the Källén function (6.351) with $d\sigma/d\Omega$ in terms of it (6.353), special cases (6.356)–(6.366), all four masses equal (6.366).
 >
 > *Source: Yu §6.5.2–§6.5.3, pp. 244–250, eqs. (6.314)–(6.366)*
 
-^rem-c6b-6-3
+^rem-c6b-7-3
 
 > [!remark]- Connections
 > - "A component transverse to a boost is invariant under that boost": the same observation gave the centre-of-mass momentum from one tensor component in two frames — [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-2|Example §C1a.5.2]].

@@ -64,7 +64,7 @@ and a diagram is its drawing:
 *The relabelling group ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]]) acting on one labelled diagram $P$. (a) A leg permutation that maps $P$ to itself: an automorphism ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]]). (b), (c) A leg permutation and a vertex permutation that change $P$ but not its drawing: they move $P$ inside its orbit, the diagram. Orbit–stabilizer gives the count at the bottom ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]]).*
 
 > [!caution] Caution: Three S's
-> $S$ here is the symmetry factor of a diagram. It is not the $S$-matrix $\hat S$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]; $S = U(\infty, -\infty)$ in Yu, eqs. (6.122)–(6.125)), nor the scalar bilinear $\mathsf S = \bar\psi\psi$ (sans-serif in these notes, [[Larsen PHY 513]]). Yu also writes $\mathcal S = 2$ for the factor that divides a cross section with two identical particles in the final state (eq. (7.123)), a different factor with a different origin (double counting of final states, not of contractions), written $S_{\rm id}$ in these notes ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-4|Theorem §C6b.5.4]]). All four are listed in [[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]].
+> $S$ here is the symmetry factor of a diagram. It is not the $S$-matrix $\hat S$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]; $S = U(\infty, -\infty)$ in Yu, eqs. (6.122)–(6.125)), nor the scalar bilinear $\mathsf S = \bar\psi\psi$ (sans-serif in these notes, [[Larsen PHY 513]]). Yu also writes $\mathcal S = 2$ for the factor that divides a cross section with two identical particles in the final state (eq. (7.123)), a different factor with a different origin (double counting of final states, not of contractions), written $S_{\rm id}$ in these notes ([[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-4|Theorem §C6b.6.4]]). All four are listed in [[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]].
 >
 > *Source: Yu §6.2, §7.3 · the user's PHY 513 notes, Ch. 14, Concordance ("$S$ (diagrams): symmetry factor of a Feynman diagram (not the $S$-matrix or the scalar bilinear)")*
 
@@ -216,7 +216,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 > \mathcal L = \tfrac12(\partial_\mu\phi)^2 - \tfrac12m^2\phi^2 - \frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4 ,
 > $$
 >
-> couplings of mass dimension $[g] = 1$, $[\lambda] = 0$ ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-2|Theorem §C6a.1.2]]); vertices $-ig$ and $-i\lambda$ ([[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-3|Theorem §C6b.8.3]]).
+> couplings of mass dimension $[g] = 1$, $[\lambda] = 0$ ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-2|Theorem §C6a.1.2]]); vertices $-ig$ and $-i\lambda$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]).
 >
 > *Assumptions:*
 > 1. Those of [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], assumptions 2–5 (permanent interaction, gapped unique $|\Omega\rangle$, isolated one-particle states, free Fock space as the interaction-picture space).
@@ -237,7 +237,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 > \mathcal L = \partial_\mu\phi^\dagger\,\partial^\mu\phi - m^2\phi^\dagger\phi - \frac{\lambda}{4}(\phi^\dagger\phi)^2 ;
 > $$
 >
-> particles and antiparticles of the same mass $m$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]]); vertex $-i\lambda$ with two $\phi$ and two $\phi^\dagger$ legs ([[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-3|Theorem §C6b.8.3]]); lines oriented from $\phi^\dagger$ to $\phi$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3).
+> particles and antiparticles of the same mass $m$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]]); vertex $-i\lambda$ with two $\phi$ and two $\phi^\dagger$ legs ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]); lines oriented from $\phi^\dagger$ to $\phi$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3).
 >
 > *Assumptions:*
 > 1. Those of [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], assumptions 2–5.
@@ -263,6 +263,8 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 > - *Complex scalar*, $\frac{\lambda}{4}(\hat\phi^\dagger\hat\phi)^2$: two $\hat\phi$ legs and two $\hat\phi^\dagger$ legs per vertex; only $\hat\phi$–$\hat\phi^\dagger$ pairs contract to a nonzero value ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3), so the pairings are restricted to those (the arrows), the leg group is $S_2\times S_2$, $|G| = n!\,(2!\,2!)^n$, matching $\frac{1}{n!}\bigl(\frac14\bigr)^n$; a symmetry preserves every arrow ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]).
 >
 > "In every case … the inverse prefactor is $|G|$, diagrams are orbits, and $S = |G|/N = |\operatorname{Stab}(P)|$."
+>
+> The rules that follow, for any polynomial interaction of real and complex scalars (one line per field type, vertex factor $-ig_t\prod_km_{t,k}!$, $\frac1S$), are stated and derived in [[§C6a.12 Feynman Rules for Polynomial Interactions|§C6a.12]] ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]]).
 >
 > *Source: the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §8, Remark "The same proof for other vertices" · PHY 513, Problem Set 8, Problems 1(b) and 2(c)*
 

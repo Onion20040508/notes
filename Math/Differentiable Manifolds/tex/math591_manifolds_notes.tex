@@ -28861,16 +28861,16 @@ Items~(1) and~(2) together are \emph{existence}: every $q \in U$ has an integral
 
 \emph{What the theorem says beyond ``there is a path through $q$''} (a student's question). ``It says a lot of delicate things.'' The time interval is \emph{uniform}: as long as $q \in U$, the curve is defined at least for $|t| < \varepsilon$. And $\varphi$ is smooth as a function of the pair $(t, q)$ on the product $(-\varepsilon, \varepsilon) \times U$: smooth in $t$, as an integral curve must be, but also, for fixed $t$, smooth in the initial condition $q$. Asked whether the image of $\varphi$ is ``just a slightly bigger open set around $U$'', Uribe answered: ``All of the above can happen.'' The examples below show some of the possibilities.
 
-\begin{defbox}[Notation: $\varphi_t$ and $\varphi_q$]\deflabel{def:flow-notation}
+\begin{defbox}[Notation: $\varphi_t$ and $\varphi^q$]\deflabel{def:flow-notation}
 In the setting of Theorem~\ref{thm:ode-local}, and likewise of Theorem~\ref{thm:ode-local-manifold} below, for fixed $t \in (-\varepsilon, \varepsilon)$ and fixed $q \in U$ write
 \[
-\varphi_t(q) := \varphi(t, q), \qquad \varphi_q(t) := \varphi(t, q).
+\varphi_t(q) := \varphi(t, q), \qquad \varphi^q(t) := \varphi(t, q).
 \]
-Then $\varphi_t : U \to M$ is a smooth map, and $\varphi_q : (-\varepsilon, \varepsilon) \to M$ is the integral curve of $\mathbf{X}$ with $\varphi_q(0) = q$: it ``starts at $q$''.
+Then $\varphi_t : U \to M$ is a smooth map, and $\varphi^q : (-\varepsilon, \varepsilon) \to M$ is the integral curve of $\mathbf{X}$ with $\varphi^q(0) = q$: it ``starts at $q$''.
 \leeref{Ch.~9, \emph{Flows}}
 \end{defbox}
 
-``This notation is useful when you want to fix $t$.'' For the second one: ``we don't use it, but I suppose we could \ldots\ maybe we should use it. It sounds pedagogical. I actually like it.'' The board then used it. The two notations differ only in the letter in the subscript, so whether $\varphi_s$ means a map or a curve is read off from what $s$ is: a time or a point. Lee writes $\theta_t(p)$ and $\theta^{(p)}(t)$ for the two (Chapter~9). In these notes $\varphi$ also names charts $(U, \varphi)$; from here on it is the flow unless a chart is named.
+``This notation is useful when you want to fix $t$.'' For the second one: ``we don't use it, but I suppose we could \ldots\ maybe we should use it. It sounds pedagogical. I actually like it.'' The board then used it, at first with the point as a subscript, $\varphi_q(t)$. From Lecture~25 on, the point is written as a superscript, $\varphi^q(t)$, as here: ``I'm going to put the point $p$ above \ldots\ it's important psychological notation, because the variable that we choose to pull out, in this case $t$ and in this case $p$, is thought of as a parameter. Logically, it's nothing new.'' This also removes the clash between $\varphi_t$ and $\varphi_q$. Lee writes $\theta_t(p)$ and $\theta^{(p)}(t)$ for the two (Chapter~9). In these notes $\varphi$ also names charts $(U, \varphi)$; from here on it is the flow unless a chart is named.
 
 \begin{exbox}[The Rotation Field]\exlabel{ex:rotation-flow}
 On $\mathbb{R}^2$ let $\mathbf{X} = -y\, \dfrac{\partial}{\partial x} + x\, \dfrac{\partial}{\partial y}$, ``the classical rotation.'' By Proposition~\ref{prop:integral-curve-coords} the integral curves solve
@@ -29092,7 +29092,7 @@ On $\mathbb{R}^2$ let $\mathbf{X} = x\, \dfrac{\partial}{\partial x} + y\, \dfra
 % ============================================================================
 \section{Maximal Integral Curves and Flows}\label{sec:flows}
 
-\roadmark{Stage: dynamics}{The maximal integral curve through each point, complete vector fields, and the flow: all maximal curves assembled into one smooth map on an open domain in $\mathbb{R} \times M$.}
+\roadmark{Stage: dynamics}{The maximal integral curve through each point, and the flow: all maximal curves assembled into one smooth map on an open domain in $\mathbb{R} \times M$, which obeys the group law.}
 
 \textit{Lecture 24. ``What this allows us to do'' --- uniqueness on the common domain, Proposition~\ref{prop:global-uniqueness} --- ``is to define the maximal domain of an integral curve, given an initial condition.''}
 
@@ -29109,12 +29109,12 @@ an open interval containing $0$, possibly infinite or semi-infinite. It is the \
 The union is nonempty, since an integral curve starting at $p$ exists (Theorem~\ref{thm:ode-local-manifold}). Each domain $I$ is an open interval containing $0$, ``because it starts at $p$'', so the union is an open interval containing $0$. ``So it's something that is very harmless to take.''
 
 \begin{propbox}[The Maximal Integral Curve]\thmlabel{prop:maximal-curve}
-Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. There is an integral curve $\varphi_p : (\alpha(p), \beta(p)) \to M$ of $\mathbf{X}$ starting at $p$, and every integral curve $c : I \to M$ starting at $p$ satisfies $I \subseteq (\alpha(p), \beta(p))$ and $c = \varphi_p|_I$. So $(\alpha(p), \beta(p))$ is the largest possible domain of such a curve, and $\varphi_p$ is the unique maximal integral curve starting at $p$. This proves Theorem~\ref{thm:maximal-flow}(1).
+Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. There is an integral curve $\varphi^p : (\alpha(p), \beta(p)) \to M$ of $\mathbf{X}$ starting at $p$, and every integral curve $c : I \to M$ starting at $p$ satisfies $I \subseteq (\alpha(p), \beta(p))$ and $c = \varphi^p|_I$. So $(\alpha(p), \beta(p))$ is the largest possible domain of such a curve, and $\varphi^p$ is the unique maximal integral curve starting at $p$. This proves Theorem~\ref{thm:maximal-flow}(1).
 \leeref{Theorem 9.12}
 \end{propbox}
 
 \begin{proof}
-\textit{(Lecture~24: ``How do you define it? Well, I take a point $t$ here. It's in some $I$, so there is some integral curve defined in the neighbourhood of that. I define it by that, and it doesn't matter which $I$ I chose, by the previous lemma.'' Details filled in.)} For $t \in (\alpha(p), \beta(p))$, choose an integral curve $c : I \to M$ starting at $p$ with $t \in I$, and set $\varphi_p(t) = c(t)$. \emph{Well defined:} if $c' : I' \to M$ is another, then $c$ and $c'$ agree at time $0$, so by Proposition~\ref{prop:global-uniqueness} they agree on $I \cap I' \ni t$. \emph{An integral curve:} near each $t$, $\varphi_p$ equals the smooth curve $c$ on the open interval $I \ni t$, so $\varphi_p$ is smooth and $\dot\varphi_p(t) = \dot c(t) = \mathbf{X}_{c(t)} = \mathbf{X}_{\varphi_p(t)}$, since velocity at $t$ only depends on the curve near $t$. And $\varphi_p(0) = p$. \emph{Maximal:} if $c : I \to M$ starts at $p$, then $I$ is one of the domains in the union, so $I \subseteq (\alpha(p), \beta(p))$, and $c = \varphi_p|_I$ by the definition of $\varphi_p$.
+\textit{(Lecture~24: ``How do you define it? Well, I take a point $t$ here. It's in some $I$, so there is some integral curve defined in the neighbourhood of that. I define it by that, and it doesn't matter which $I$ I chose, by the previous lemma.'' Details filled in.)} For $t \in (\alpha(p), \beta(p))$, choose an integral curve $c : I \to M$ starting at $p$ with $t \in I$, and set $\varphi^p(t) = c(t)$. \emph{Well defined:} if $c' : I' \to M$ is another, then $c$ and $c'$ agree at time $0$, so by Proposition~\ref{prop:global-uniqueness} they agree on $I \cap I' \ni t$. \emph{An integral curve:} near each $t$, $\varphi^p$ equals the smooth curve $c$ on the open interval $I \ni t$, so $\varphi^p$ is smooth and $\dot\varphi^p(t) = \dot c(t) = \mathbf{X}_{c(t)} = \mathbf{X}_{\varphi^p(t)}$, since velocity at $t$ only depends on the curve near $t$. And $\varphi^p(0) = p$. \emph{Maximal:} if $c : I \to M$ starts at $p$, then $I$ is one of the domains in the union, so $I \subseteq (\alpha(p), \beta(p))$, and $c = \varphi^p|_I$ by the definition of $\varphi^p$.
 \end{proof}
 
 ``The uniqueness is absolutely fantastic for the theory.'' The maximal domains of the examples: $\mathbb{R}$ for the rotation and Euler fields (Examples~\ref{ex:rotation-flow} and~\ref{ex:euler-field}); $(-\infty, 1/(x_0y_0))$ and $(-\infty, -x_0)$ for the two examples that follow.
@@ -29219,15 +29219,15 @@ translation by time $t$, with $\varphi_t(x_0)|_{t=0} = x_0$. It stays in $M$ exa
 \textit{(Not from lecture; figure added.)} The maximal domains of Example~\ref{ex:half-line}, assembled into the set $\mathcal{D} = \{ (t, x_0) : x_0 < 0,\ t < -x_0 \}$ of Theorem~\ref{thm:maximal-flow}(2), an open set. Compare the flow domain of Example~\ref{ex:finite-escape} above: there $\beta(p) = 1/(x_0y_0)$ blows up as $x_0 \to 0$, here $\beta(x_0) = -x_0$ shrinks to $0$ at the end of $M$. Neither field is complete.
 
 \begin{propbox}[Non-Injective Maximal Integral Curves Are Periodic]\thmlabel{prop:returning-maximal-periodic}
-Let $\mathbf{X} \in \mathfrak{X}(M)$, $p \in M$, and let $\varphi_p : (\alpha(p), \beta(p)) \to M$ be the maximal integral curve of $\mathbf{X}$ starting at $p$. If $\varphi_p$ is not injective, say $\varphi_p(t_1) = \varphi_p(t_2)$ with $T = t_2 - t_1 > 0$, then $(\alpha(p), \beta(p)) = \mathbb{R}$ and
+Let $\mathbf{X} \in \mathfrak{X}(M)$, $p \in M$, and let $\varphi^p : (\alpha(p), \beta(p)) \to M$ be the maximal integral curve of $\mathbf{X}$ starting at $p$. If $\varphi^p$ is not injective, say $\varphi^p(t_1) = \varphi^p(t_2)$ with $T = t_2 - t_1 > 0$, then $(\alpha(p), \beta(p)) = \mathbb{R}$ and
 \[
-\varphi_p(t + T) = \varphi_p(t) \qquad \text{for all } t \in \mathbb{R} .
+\varphi^p(t + T) = \varphi^p(t) \qquad \text{for all } t \in \mathbb{R} .
 \]
 \leeref{Problem 9-1}
 \end{propbox}
 
 \begin{proof}
-\textit{(Not from lecture: Uribe's argument by email, Corollary~\ref{cor:returning-curve-periodic}, completed by maximality.)} Write $I = (\alpha, \beta) = (\alpha(p), \beta(p))$ and $c = \varphi_p$. By Corollary~\ref{cor:returning-curve-periodic},
+\textit{(Not from lecture: Uribe's argument by email, Corollary~\ref{cor:returning-curve-periodic}, completed by maximality.)} Write $I = (\alpha, \beta) = (\alpha(p), \beta(p))$ and $c = \varphi^p$. By Corollary~\ref{cor:returning-curve-periodic},
 \[
 c(s + T) = c(s) \qquad \text{whenever } s \in I \text{ and } s + T \in I . \tag{$\dagger$}
 \]
@@ -29246,6 +29246,156 @@ This is well defined: if $t \in I \cap (I + T)$, then $s = t - T$ has $s \in I$ 
 
 So a maximal integral curve is either injective or periodic and defined for all time. Lee's Problem~9-1 separates out the constant curves, which are periodic with every period.
 
+\textit{Lecture 25. A recap of the flow domain, with the cartoon redrawn: ``I think I drew it correctly the first time at the end of Friday, and then I made a mistake by trying to change it.''} Given $\mathbf{X} \in \mathfrak{X}(M)$, every $p \in M$ has its maximal domain $(\alpha(p), \beta(p)) \ni 0$, which ``can be all of $\mathbb{R}$ --- we're lucky if it is, it simplifies things.'' The flow domain and the flow (Theorem~\ref{thm:maximal-flow}) are
+\[
+\mathcal{D} = \{ (t, p) \in \mathbb{R} \times M : t \in (\alpha(p), \beta(p)) \}, \qquad \varphi : \mathcal{D} \to M, \quad (t, p) \longmapsto \varphi(t, p),
+\]
+where, ``in English'', $\varphi(t, p)$ is the integral curve starting at $p$, evaluated at $t$.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\fill[blue!7] plot[smooth] coordinates {(-2.047,-1.900) (-2.056,-1.836) (-2.065,-1.771) (-2.076,-1.707) (-2.088,-1.642) (-2.099,-1.578) (-2.112,-1.514) (-2.124,-1.449) (-2.137,-1.385) (-2.149,-1.320) (-2.161,-1.256) (-2.173,-1.192) (-2.184,-1.127) (-2.195,-1.063) (-2.204,-0.998) (-2.213,-0.934) (-2.220,-0.869) (-2.226,-0.805) (-2.231,-0.741) (-2.234,-0.676) (-2.235,-0.612) (-2.235,-0.547) (-2.233,-0.483) (-2.229,-0.419) (-2.223,-0.354) (-2.214,-0.290) (-2.204,-0.225) (-2.191,-0.161) (-2.176,-0.097) (-2.159,-0.032) (-2.140,0.032) (-2.118,0.097) (-2.095,0.161) (-2.069,0.225) (-2.040,0.290) (-2.010,0.354) (-1.978,0.419) (-1.943,0.483) (-1.907,0.547) (-1.868,0.612) (-1.828,0.676) (-1.787,0.741) (-1.743,0.805) (-1.699,0.869) (-1.653,0.934) (-1.605,0.998) (-1.557,1.063) (-1.508,1.127) (-1.458,1.192) (-1.408,1.256) (-1.357,1.320) (-1.306,1.385) (-1.255,1.449) (-1.204,1.514) (-1.153,1.578) (-1.102,1.642) (-1.052,1.707) (-1.003,1.771) (-0.954,1.836) (-0.907,1.900)} -- plot[smooth] coordinates {(2.876,1.900) (2.885,1.836) (2.892,1.771) (2.896,1.707) (2.897,1.642) (2.896,1.578) (2.891,1.514) (2.883,1.449) (2.872,1.385) (2.857,1.320) (2.839,1.256) (2.817,1.192) (2.792,1.127) (2.763,1.063) (2.731,0.998) (2.695,0.934) (2.657,0.869) (2.615,0.805) (2.570,0.741) (2.522,0.676) (2.471,0.612) (2.418,0.547) (2.363,0.483) (2.305,0.419) (2.246,0.354) (2.185,0.290) (2.123,0.225) (2.060,0.161) (1.996,0.097) (1.932,0.032) (1.868,-0.032) (1.804,-0.097) (1.740,-0.161) (1.677,-0.225) (1.615,-0.290) (1.554,-0.354) (1.495,-0.419) (1.437,-0.483) (1.382,-0.547) (1.329,-0.612) (1.278,-0.676) (1.230,-0.741) (1.185,-0.805) (1.143,-0.869) (1.105,-0.934) (1.069,-0.998) (1.037,-1.063) (1.008,-1.127) (0.983,-1.192) (0.961,-1.256) (0.943,-1.320) (0.928,-1.385) (0.917,-1.449) (0.909,-1.514) (0.904,-1.578) (0.903,-1.642) (0.904,-1.707) (0.908,-1.771) (0.915,-1.836) (0.924,-1.900)} -- cycle;
+\draw[blue!70!black] plot[smooth] coordinates {(-2.047,-1.900) (-2.056,-1.836) (-2.065,-1.771) (-2.076,-1.707) (-2.088,-1.642) (-2.099,-1.578) (-2.112,-1.514) (-2.124,-1.449) (-2.137,-1.385) (-2.149,-1.320) (-2.161,-1.256) (-2.173,-1.192) (-2.184,-1.127) (-2.195,-1.063) (-2.204,-0.998) (-2.213,-0.934) (-2.220,-0.869) (-2.226,-0.805) (-2.231,-0.741) (-2.234,-0.676) (-2.235,-0.612) (-2.235,-0.547) (-2.233,-0.483) (-2.229,-0.419) (-2.223,-0.354) (-2.214,-0.290) (-2.204,-0.225) (-2.191,-0.161) (-2.176,-0.097) (-2.159,-0.032) (-2.140,0.032) (-2.118,0.097) (-2.095,0.161) (-2.069,0.225) (-2.040,0.290) (-2.010,0.354) (-1.978,0.419) (-1.943,0.483) (-1.907,0.547) (-1.868,0.612) (-1.828,0.676) (-1.787,0.741) (-1.743,0.805) (-1.699,0.869) (-1.653,0.934) (-1.605,0.998) (-1.557,1.063) (-1.508,1.127) (-1.458,1.192) (-1.408,1.256) (-1.357,1.320) (-1.306,1.385) (-1.255,1.449) (-1.204,1.514) (-1.153,1.578) (-1.102,1.642) (-1.052,1.707) (-1.003,1.771) (-0.954,1.836) (-0.907,1.900)}; \draw[blue!70!black] plot[smooth] coordinates {(0.924,-1.900) (0.915,-1.836) (0.908,-1.771) (0.904,-1.707) (0.903,-1.642) (0.904,-1.578) (0.909,-1.514) (0.917,-1.449) (0.928,-1.385) (0.943,-1.320) (0.961,-1.256) (0.983,-1.192) (1.008,-1.127) (1.037,-1.063) (1.069,-0.998) (1.105,-0.934) (1.143,-0.869) (1.185,-0.805) (1.230,-0.741) (1.278,-0.676) (1.329,-0.612) (1.382,-0.547) (1.437,-0.483) (1.495,-0.419) (1.554,-0.354) (1.615,-0.290) (1.677,-0.225) (1.740,-0.161) (1.804,-0.097) (1.868,-0.032) (1.932,0.032) (1.996,0.097) (2.060,0.161) (2.123,0.225) (2.185,0.290) (2.246,0.354) (2.305,0.419) (2.363,0.483) (2.418,0.547) (2.471,0.612) (2.522,0.676) (2.570,0.741) (2.615,0.805) (2.657,0.869) (2.695,0.934) (2.731,0.998) (2.763,1.063) (2.792,1.127) (2.817,1.192) (2.839,1.256) (2.857,1.320) (2.872,1.385) (2.883,1.449) (2.891,1.514) (2.896,1.578) (2.897,1.642) (2.896,1.707) (2.892,1.771) (2.885,1.836) (2.876,1.900)};
+\draw[->, gray!60] (-3.0,0) -- (3.4,0) node[right, font=\scriptsize, text=black] {$\mathbb{R}$};
+\draw[->, gray!60] (0,-2.2) -- (0,2.3) node[above, font=\scriptsize, text=black] {$M$};
+\draw[blue!70!black, thick] (-2.134,-1.4) -- (0.925,-1.4); \draw[blue!70!black, fill=white] (-2.134,-1.4) circle (1.3pt); \draw[blue!70!black, fill=white] (0.925,-1.4) circle (1.3pt);
+\draw[blue!70!black, thick] (-2.233,-0.7) -- (1.260,-0.7); \draw[blue!70!black, fill=white] (-2.233,-0.7) circle (1.3pt); \draw[blue!70!black, fill=white] (1.260,-0.7) circle (1.3pt);
+\draw[blue!70!black, thick] (-1.780,0.75) -- (2.576,0.75); \draw[blue!70!black, fill=white] (-1.780,0.75) circle (1.3pt); \draw[blue!70!black, fill=white] (2.576,0.75) circle (1.3pt);
+\draw[blue!70!black, thick] (-1.254,1.45) -- (2.883,1.45); \draw[blue!70!black, fill=white] (-1.254,1.45) circle (1.3pt); \draw[blue!70!black, fill=white] (2.883,1.45) circle (1.3pt);
+\draw[blue!70!black, very thick] (-2.150,0) -- (1.900,0);
+\fill (0,0) circle (1.3pt); \node[font=\scriptsize, anchor=north east] at (-0.02,-0.02) {$p$};
+\node[font=\scriptsize, below] at (-2.150,-0.05) {$\alpha(p)$}; \node[font=\scriptsize, below] at (1.900,-0.05) {$\beta(p)$};
+\draw[orange!85!black, thick] (-0.55,-0.45) rectangle (0.55,0.45);
+\draw[->, orange!85!black] (0.6,0.6) -- (2.2,2.0) node[right, font=\scriptsize] {flow box $(-\varepsilon, \varepsilon) \times U$};
+\node[font=\scriptsize, blue!70!black] at (-2.2,1.7) {$\mathcal{D}$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Figure after the board.)} Time is horizontal and $M$ vertical here: over each $p$ the open segment $(\alpha(p), \beta(p)) \times \{p\}$, which always contains $(0, p)$; together they fill $\mathcal{D}$. The figure after Lemma~\ref{lem:uniform-time} in \ref{sec:complete-fields} is the same cartoon with the axes exchanged.
+
+\emph{Careful.} ``Our first definition of integral curve was any curve'' $c : I \to M$ with $\dot c(t) = \mathbf{X}_{c(t)}$ for all $t \in I$ (Definition~\ref{def:integral-curve}), so $I$ need not contain $0$: translating an integral curve (Lemma~\ref{lem:translation-rescaling}(1)) gives one whose domain misses $0$. The curve $t \mapsto \varphi^p(t)$, in the notation $\varphi_t(p) = \varphi(t, p) = \varphi^p(t)$ (Definition~\ref{def:flow-notation} and the paragraph after it), is an integral curve that is defined at $t = 0$, where it is $p$. A student asked whether $\varphi$ is the local maps of Theorem~\ref{thm:ode-local-manifold} glued together; ``yes, exactly \ldots\ a uniqueness thing.''
+
+That $\mathcal{D}$ is open and $\varphi$ smooth (Theorem~\ref{thm:maximal-flow}(2)) was not proved in class; the proof, from Lee, is filled in after the theorem.
+
+\begin{defbox}[Flow Box]\deflabel{def:flow-box}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi : \mathcal{D} \to M$, and $p \in M$. A \textbf{flow box} (or \textbf{local domain}) at $p$ is a product $(-\varepsilon, \varepsilon) \times U \subseteq \mathcal{D}$, with $\varepsilon > 0$ and $U$ an open neighbourhood of $p$, on which $\varphi$ is smooth; together with the restriction $\varphi| : (-\varepsilon, \varepsilon) \times U \to M$.
+\leeref{Ch.~9, \emph{Flows}}
+\end{defbox}
+
+``Some people call it a flow box''; Uribe uses both names. ``Locally in $p$, I can always find a little box like that.''
+
+\begin{lembox}[Flow Boxes Exist]\thmlabel{lem:flow-box}
+Let $\mathbf{X} \in \mathfrak{X}(M)$. Every $p \in M$ has a flow box $(-\varepsilon, \varepsilon) \times U$.
+\leeref{Theorem 9.12 (proof)}
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture~25: ``Recall''; the identification with the maximal flow is filled in.)} Theorem~\ref{thm:ode-local-manifold} gives $\varepsilon > 0$, an open $U \ni p$ and a smooth $\varphi' : (-\varepsilon, \varepsilon) \times U \to M$ such that, for $q \in U$, $\varphi'(\cdot, q)$ is an integral curve starting at $q$. By Proposition~\ref{prop:maximal-curve}, $(-\varepsilon, \varepsilon) \subseteq (\alpha(q), \beta(q))$ and $\varphi'(t, q) = \varphi^q(t) = \varphi(t, q)$. So $(-\varepsilon, \varepsilon) \times U \subseteq \mathcal{D}$, and $\varphi$ restricted to it is $\varphi'$, which is smooth.
+\end{proof}
+
+\textit{The flow. Lecture 23, the last minutes: ``Let me tell you the bigger picture of what actually is happening, and then we'll see how much of that we get to prove \ldots\ We'll prove a big chunk of this on Friday.''}
+
+\begin{thmbox}[Maximal Integral Curves and the Flow]\thmlabel{thm:maximal-flow}
+Let $M$ be a smooth manifold and $\mathbf{X} \in \mathfrak{X}(M)$.
+\begin{enumerate}[nosep]
+\item For every $p \in M$ there is a unique \emph{maximal} integral curve of $\mathbf{X}$ starting at $p$, maximal with respect to its domain. Write it $\varphi^p$ and its domain $(\alpha(p), \beta(p))$, where $\alpha(p) \in [-\infty, 0)$ and $\beta(p) \in (0, +\infty]$: ``$\alpha$ or $\beta$ may be $\pm\infty$.''
+\item Let
+\[
+\mathcal{D} = \bigcup_{p \in M} \big(\alpha(p), \beta(p)\big) \times \{p\} \ \subseteq\ \mathbb{R} \times M, \qquad \varphi : \mathcal{D} \longrightarrow M, \quad (t, p) \longmapsto \varphi^p(t).
+\]
+Then $\mathcal{D}$ is open in $\mathbb{R} \times M$, and $\varphi$ is smooth.
+\end{enumerate}
+\leeref{Theorem 9.12}
+\end{thmbox}
+
+\begin{proof}
+\emph{(1)} is Proposition~\ref{prop:maximal-curve} above, proved in Lecture~24. Uribe's indication for (1), in Lecture~23: ``by uniqueness and something called the translation lemma, which is very easy to see,'' there is ``only one way to continue the curve forwards in time and then backwards in time until either you never stop or you run into the edge of the manifold.'' Openness of $\mathcal{D}$ ``is surprisingly long to prove.''
+
+\emph{(2)} \textit{(Lecture~25: ``The big theorem that we're not going to prove in detail \ldots\ but of course it's in Lee, is that $\mathcal{D}$ is open. That actually takes quite a bit of work \ldots\ somehow this is the hard part. And then once you have that, by local ODE theory \ldots\ we get'' the smoothness. Filled in, following Lee's proof of Theorem~9.12; the argument gives openness and smoothness together.)} Let $W$ be the set of $(t, p) \in \mathcal{D}$ that have a neighbourhood of the form $J \times U \subseteq \mathcal{D}$, with $J \subseteq \mathbb{R}$ an open interval containing $0$ and $t$ and $U \subseteq M$ open, on which $\varphi$ is smooth. Every point $(t', p')$ of such a $J \times U$ is again in $W$, with the same $J \times U$, since $J \ni 0, t'$. So $W$ is open in $\mathbb{R} \times M$, and $\varphi$ is smooth on $W$, smoothness being local. It suffices to show $W = \mathcal{D}$.
+
+By the flow boxes of Lemma~\ref{lem:flow-box}, every $p \in M$ has $\varepsilon > 0$ and an open $U \ni p$ with $(-\varepsilon, \varepsilon) \times U \subseteq W$. Suppose $(\tau, p_0) \in \mathcal{D} \setminus W$. Then $\tau \neq 0$; say $\tau > 0$ (for $\tau < 0$ the argument is the same, with the supremum of the times $t \le 0$ where $(t, p_0) \notin W$). Let
+\[
+t_0 = \inf\{ t \ge 0 : (t, p_0) \notin W \} .
+\]
+The flow box at $p_0$ gives $t_0 > 0$; and $t_0 \le \tau$, so $t_0$ lies in the interval $(\alpha(p_0), \beta(p_0))$, which contains $0$ and $\tau$. By the definition of $t_0$, $(t, p_0) \in W$ for $0 \le t < t_0$.
+
+Let $q_0 = \varphi(t_0, p_0)$, and take a flow box $(-\varepsilon, \varepsilon) \times U_0 \subseteq W$ at $q_0$. The curve $\varphi^{p_0}$ is continuous at $t_0$, so there is $t_1$ with $\max(0, t_0 - \varepsilon) < t_1 < t_0$ and $\varphi(t_1, p_0) \in U_0$. As $(t_1, p_0) \in W$, there is $J_1 \times U_1 \subseteq \mathcal{D}$ around it, with $J_1 \ni 0, t_1$, on which $\varphi$ is smooth; shrinking $U_1$, by continuity, $\varphi(\{t_1\} \times U_1) \subseteq U_0$.
+
+Fix $p \in U_1$ and let $q = \varphi_{t_1}(p) \in U_0$. The curve $t \mapsto \varphi_{t - t_1}(q)$ is defined for $|t - t_1| < \varepsilon$ (flow box at $q_0$), it is an integral curve (translation lemma), and at $t = t_1$ it equals $q = \varphi^p(t_1)$. By Proposition~\ref{prop:global-uniqueness} it agrees with $\varphi^p$ on the common domain, and the two together form an integral curve starting at $p$ on the open interval $\tilde J = J_1 \cup (t_1 - \varepsilon, t_1 + \varepsilon)$. By Proposition~\ref{prop:maximal-curve}, $\tilde J \subseteq (\alpha(p), \beta(p))$ and this curve is $\varphi^p$. Hence $\tilde J \times U_1 \subseteq \mathcal{D}$, and
+\[
+\varphi(t, p) = \varphi\big(t - t_1, \varphi(t_1, p)\big) \qquad \text{for } (t, p) \in (t_1 - \varepsilon, t_1 + \varepsilon) \times U_1 ,
+\]
+a composite of smooth maps ($\varphi$ on $J_1 \times U_1$, then $\varphi$ on the flow box $(-\varepsilon, \varepsilon) \times U_0$). So $\varphi$ is smooth on the two open sets $J_1 \times U_1$ and $(t_1 - \varepsilon, t_1 + \varepsilon) \times U_1$, which cover $\tilde J \times U_1$. Now $\tilde J$ is an open interval containing $0$ and every $t \in [0, t_1 + \varepsilon)$, so $(t, p_0) \in W$ for all these $t$. As $t_1 + \varepsilon > t_0$, this contradicts the definition of $t_0$. Hence $W = \mathcal{D}$: $\mathcal{D}$ is open and $\varphi$ is smooth.
+\end{proof}
+
+$\varphi$ is ``just flowing, like we were doing before'', except that the domain of the time variable depends on the point, as in Example~\ref{ex:finite-escape}. The theorem is the local picture of Theorem~\ref{thm:ode-local}, with its rectangles $(-\varepsilon, \varepsilon) \times U$, put together on the whole manifold. In the two examples:
+\begin{itemize}[nosep]
+\item Rotation (Example~\ref{ex:rotation-flow}): $\alpha \equiv -\infty$, $\beta \equiv +\infty$, $\mathcal{D} = \mathbb{R} \times \mathbb{R}^2$.
+\item Escape (Example~\ref{ex:finite-escape}): $\alpha \equiv -\infty$, $\beta(x, y) = 1/(xy)$, so $\mathcal{D} = \{ (t, (x, y)) : x, y > 0,\ t\,xy < 1 \}$, open, and $\varphi(t, (x, y)) = \big(x/(1 - xyt),\ y\big)$, smooth on $\mathcal{D}$.
+\end{itemize}
+
+``So now what I want to show you first is the so-called group law. It's a fantastic thing, and easy to prove.''
+
+\begin{propbox}[The Group Law]\thmlabel{prop:group-law}
+Let $\mathbf{X} \in \mathfrak{X}(M)$, $p \in M$ and $s \in (\alpha(p), \beta(p))$, and put $q = \varphi_s(p)$. Then:
+\begin{enumerate}[nosep]
+\item $(\alpha(q), \beta(q)) = (\alpha(p) - s, \beta(p) - s)$;
+\item $\varphi_t(\varphi_s(p)) = \varphi_{t+s}(p)$ for every $t$ with $t + s \in (\alpha(p), \beta(p))$.
+\end{enumerate}
+\leeref{Theorem 9.12(b)}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~25. On the board: fix $s$; $t \mapsto \varphi_t(\varphi_s(p))$ is an integral curve starting at $\varphi_s(p)$; so is $t \mapsto \varphi_{t+s}(p) = \varphi^p(t + s)$, by the translation lemma (``we're just translating the $t$ variable by $s$''); ``by uniqueness, these curves agree.'' The domains in (1) are filled in.)} Let
+\[
+c(t) = \varphi^p(t + s), \qquad t \in (\alpha(p) - s, \beta(p) - s).
+\]
+By the translation lemma (Lemma~\ref{lem:translation-rescaling}(1)), $c$ is an integral curve of $\mathbf{X}$, and $c(0) = \varphi^p(s) = q$. So $c$ starts at $q$, and by Proposition~\ref{prop:maximal-curve}
+\[
+(\alpha(p) - s, \beta(p) - s) \subseteq (\alpha(q), \beta(q)) \qquad\text{and}\qquad \varphi^q(t) = \varphi^p(t + s) \ \text{ for } t \in (\alpha(p) - s, \beta(p) - s). \tag{$\ast\ast$}
+\]
+In particular $-s \in (\alpha(q), \beta(q))$ and $\varphi_{-s}(q) = \varphi^p(0) = p$. The same argument with $q$ and $-s$ in place of $p$ and $s$ gives $(\alpha(q) + s, \beta(q) + s) \subseteq (\alpha(p), \beta(p))$, that is, $(\alpha(q), \beta(q)) \subseteq (\alpha(p) - s, \beta(p) - s)$. This proves~(1). Then~(2) is $(\ast\ast)$: if $t + s \in (\alpha(p), \beta(p))$, then $\varphi_t(\varphi_s(p)) = \varphi^q(t) = \varphi^p(t + s) = \varphi_{t+s}(p)$.
+\end{proof}
+
+\begin{corbox}[Flows Commute with Themselves]\thmlabel{cor:flow-commute}
+When $s$, $t$ and $s + t$ all lie in $(\alpha(p), \beta(p))$,
+\[
+\varphi_t\big(\varphi_s(p)\big) = \varphi_s\big(\varphi_t(p)\big) = \varphi_{t + s}(p) .
+\]
+\end{corbox}
+
+\begin{proof}
+Proposition~\ref{prop:group-law} for the pair $(s, t)$, and for the pair $(t, s)$, as $s + t = t + s$.
+\end{proof}
+
+``You always have to worry about when things are defined.''
+
+\begin{center}
+\begin{tikzpicture}[scale=0.9]
+\draw[gray!55, thick, ->] plot[smooth] coordinates {(2.126,-0.899) (2.150,-0.810) (2.170,-0.721) (2.186,-0.632) (2.199,-0.543) (2.208,-0.453) (2.214,-0.364) (2.216,-0.275) (2.214,-0.187) (2.210,-0.098) (2.201,-0.011) (2.190,0.075) (2.175,0.161) (2.156,0.246) (2.135,0.329) (2.110,0.411) (2.082,0.492) (2.052,0.571) (2.018,0.648) (1.981,0.724) (1.942,0.798) (1.900,0.870) (1.855,0.940) (1.808,1.008) (1.758,1.073) (1.707,1.136) (1.653,1.197) (1.596,1.255) (1.538,1.311) (1.478,1.364) (1.417,1.415) (1.353,1.463) (1.288,1.508) (1.222,1.550) (1.154,1.590) (1.085,1.626) (1.015,1.660) (0.945,1.691) (0.873,1.719) (0.801,1.744) (0.728,1.765) (0.654,1.784) (0.581,1.800) (0.507,1.813) (0.433,1.823) (0.359,1.830) (0.285,1.834) (0.211,1.835) (0.138,1.833) (0.065,1.829) (-0.007,1.821) (-0.079,1.811) (-0.150,1.798) (-0.219,1.782) (-0.288,1.764) (-0.356,1.743) (-0.422,1.719) (-0.488,1.693) (-0.551,1.664) (-0.614,1.634) (-0.675,1.600) (-0.734,1.565) (-0.791,1.528) (-0.847,1.488) (-0.901,1.447) (-0.953,1.403) (-1.003,1.358) (-1.051,1.311) (-1.096,1.263) (-1.140,1.213) (-1.181,1.161) (-1.220,1.108) (-1.257,1.054) (-1.292,0.999) (-1.324,0.943) (-1.354,0.886) (-1.381,0.828) (-1.406,0.769) (-1.428,0.709) (-1.448,0.649) (-1.466,0.589) (-1.481,0.528) (-1.494,0.467) (-1.504,0.406) (-1.511,0.344) (-1.517,0.283) (-1.519,0.222) (-1.520,0.161) (-1.518,0.100) (-1.513,0.040) (-1.507,-0.020) (-1.497,-0.079) (-1.486,-0.137) (-1.473,-0.195) (-1.457,-0.252) (-1.439,-0.307) (-1.419,-0.362) (-1.397,-0.416) (-1.373,-0.469) (-1.347,-0.520) (-1.319,-0.570) (-1.289,-0.619) (-1.258,-0.666) (-1.225,-0.712) (-1.190,-0.756) (-1.154,-0.799) (-1.116,-0.840) (-1.077,-0.879) (-1.036,-0.916) (-0.995,-0.952) (-0.952,-0.986) (-0.908,-1.018) (-0.863,-1.048) (-0.817,-1.076) (-0.770,-1.102) (-0.723,-1.126) (-0.674,-1.149) (-0.626,-1.169) (-0.576,-1.187) (-0.526,-1.203)};
+\draw[red!70!black, very thick] plot[smooth] coordinates {(2.200,0.000) (2.191,0.063) (2.181,0.126) (2.169,0.188) (2.155,0.250) (2.140,0.310) (2.123,0.371) (2.104,0.430) (2.083,0.489) (2.061,0.547) (2.038,0.604) (2.012,0.660) (1.986,0.715) (1.957,0.770) (1.928,0.823) (1.897,0.875) (1.864,0.926) (1.830,0.976) (1.795,1.025) (1.759,1.072) (1.721,1.119) (1.683,1.164) (1.643,1.208) (1.602,1.250) (1.560,1.291) (1.517,1.331) (1.472,1.369) (1.427,1.406) (1.382,1.442) (1.335,1.476) (1.287,1.509) (1.239,1.540) (1.190,1.569) (1.140,1.598) (1.090,1.624) (1.039,1.649) (0.988,1.673) (0.936,1.694) (0.884,1.715) (0.831,1.734) (0.778,1.751) (0.725,1.766) (0.671,1.780) (0.618,1.793) (0.564,1.803) (0.510,1.813) (0.456,1.820) (0.402,1.826) (0.348,1.831) (0.294,1.834) (0.240,1.835) (0.187,1.835) (0.133,1.833) (0.080,1.830) (0.027,1.825) (-0.025,1.819) (-0.077,1.811) (-0.129,1.802) (-0.180,1.791) (-0.231,1.779)};
+\draw[green!45!black, very thick] plot[smooth] coordinates {(-0.231,1.779) (-0.287,1.764) (-0.343,1.747) (-0.397,1.728) (-0.451,1.708) (-0.504,1.686) (-0.555,1.663) (-0.606,1.637) (-0.656,1.611) (-0.705,1.583) (-0.753,1.553) (-0.799,1.522) (-0.845,1.490) (-0.889,1.456) (-0.931,1.422) (-0.973,1.385) (-1.013,1.348) (-1.052,1.310) (-1.089,1.270) (-1.125,1.230) (-1.160,1.188) (-1.193,1.146) (-1.224,1.103) (-1.254,1.059) (-1.283,1.014) (-1.310,0.968) (-1.335,0.922) (-1.359,0.875) (-1.381,0.828) (-1.402,0.780) (-1.420,0.731) (-1.438,0.683) (-1.453,0.634) (-1.467,0.584) (-1.480,0.535) (-1.490,0.485) (-1.499,0.435) (-1.507,0.385) (-1.512,0.335) (-1.517,0.285) (-1.519,0.235) (-1.520,0.185) (-1.519,0.136) (-1.517,0.086) (-1.513,0.037) (-1.508,-0.011) (-1.501,-0.060) (-1.492,-0.108) (-1.482,-0.155) (-1.471,-0.202) (-1.458,-0.248) (-1.444,-0.294) (-1.428,-0.339) (-1.411,-0.383) (-1.392,-0.427) (-1.372,-0.469) (-1.351,-0.511) (-1.329,-0.553) (-1.306,-0.593) (-1.281,-0.632)};
+\draw[black!55, dashed, ->] plot[smooth] coordinates {(2.750,0.000) (2.732,0.125) (2.709,0.248) (2.680,0.369) (2.646,0.488) (2.607,0.604) (2.562,0.719) (2.513,0.830) (2.459,0.939) (2.401,1.044) (2.338,1.146) (2.271,1.244) (2.200,1.339) (2.125,1.430) (2.046,1.517) (1.964,1.600) (1.879,1.679) (1.791,1.753) (1.700,1.823) (1.606,1.888) (1.510,1.948) (1.412,2.004) (1.312,2.055) (1.211,2.101) (1.108,2.142) (1.003,2.179) (0.898,2.210) (0.792,2.236) (0.686,2.258) (0.579,2.274) (0.472,2.286) (0.366,2.292) (0.259,2.294) (0.154,2.291) (0.049,2.283) (-0.055,2.270) (-0.157,2.253) (-0.258,2.231) (-0.358,2.205) (-0.455,2.175) (-0.551,2.140) (-0.644,2.101) (-0.735,2.058) (-0.824,2.012) (-0.910,1.961) (-0.993,1.907) (-1.073,1.850) (-1.149,1.789) (-1.223,1.726) (-1.293,1.659) (-1.360,1.590) (-1.423,1.518) (-1.483,1.443) (-1.539,1.367) (-1.591,1.288) (-1.639,1.208) (-1.683,1.126) (-1.723,1.042) (-1.759,0.958) (-1.791,0.872) (-1.819,0.785) (-1.842,0.697) (-1.862,0.609) (-1.878,0.521) (-1.889,0.433) (-1.896,0.344) (-1.900,0.256) (-1.899,0.168) (-1.894,0.081) (-1.886,-0.005) (-1.873,-0.091) (-1.857,-0.175) (-1.837,-0.258) (-1.813,-0.339) (-1.786,-0.419) (-1.756,-0.498) (-1.722,-0.574) (-1.685,-0.648) (-1.644,-0.720) (-1.601,-0.790)};
+\fill (2.200,0.000) circle (1.8pt) node[right, font=\scriptsize] {$p$};
+\fill (-0.231,1.779) circle (1.8pt) node[below left, font=\scriptsize] {$\varphi_s(p)$};
+\fill (-1.281,-0.632) circle (1.8pt) node[left=3pt, font=\scriptsize, align=right] {$\varphi_t(\varphi_s(p))$\\ $= \varphi_{t+s}(p)$};
+\node[red!70!black, font=\scriptsize] at (1.520,1.730) {time $s$};
+\node[green!45!black, font=\scriptsize] at (-1.123,0.601) {time $t$};
+\node[black!65, font=\scriptsize] at (-0.558,2.393) {time $t + s$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The group law along one integral curve: flowing for time $s$ (red) and then for time $t$ (green) from where one has arrived lands at the same point as flowing for time $t + s$ from $p$ (dashed). The curve is a spiral, $\varphi^p(\tau) = 2.2\,e^{-0.12\tau}(\cos\tau, \sin\tau)$, chosen for the picture.
+
+% ============================================================================
+% SECTION: COMPLETE VECTOR FIELDS (Lectures 24, 25)
+% ============================================================================
+\section{Complete Vector Fields}\label{sec:complete-fields}
+
+\roadmark{Stage: dynamics}{Vector fields whose integral curves exist for all time: the uniform time lemma, compact manifolds, actions of $\mathbb{R}$, and left-invariant fields on Lie groups.}
+
+\textit{Lecture~24 (the definition and the uniform time lemma) and Lecture~25 (its proof and its consequences).}
+
 \begin{defbox}[Complete Vector Field]\deflabel{def:complete-field}
 $\mathbf{X} \in \mathfrak{X}(M)$ is \textbf{complete} if $(\alpha(p), \beta(p)) = \mathbb{R}$ for every $p \in M$.
 \leeref{Ch.~9, \emph{Complete Vector Fields}}
@@ -29260,9 +29410,60 @@ Let $\mathbf{X} \in \mathfrak{X}(M)$. If there is $\varepsilon > 0$ such that $(
 \leeref{Lemma 9.15}
 \end{lembox}
 
-\begin{proof}[Proof (to be filled)]
-To be proved in Lecture~25 (``I'll prove this on Monday'').
+\begin{proof}
+\textit{(Lecture~25, with the hypothesis written $(-\varepsilon, \varepsilon) \times M \subseteq \mathcal{D}$, Theorem~\ref{thm:maximal-flow}(2).)} By contradiction. Suppose some $p \in M$ has $\alpha(p) \neq -\infty$ or $\beta(p) \neq +\infty$; take $\beta(p) < +\infty$, ``the other one is analogous.'' \textit{(Filled in: for $\alpha(p) > -\infty$, apply the argument to $-\mathbf{X}$, whose integral curves are those of $\mathbf{X}$ run backwards (Lemma~\ref{lem:translation-rescaling}(2)), whose maximal domains are the $(-\beta(p), -\alpha(p))$, and which satisfies the same hypothesis.)} Then $\beta(p)$ is a real number; choose $t_1 \in \mathbb{R}$ with
+\[
+\beta(p) - \varepsilon < t_1 < \beta(p) .
+\]
+\textit{(Filled in.)} $t_1 \in (\alpha(p), \beta(p))$: by hypothesis $\beta(p) \ge \varepsilon$, so $t_1 > 0 > \alpha(p)$. ``This is supposed to be the end of the world, the end of time'': the idea is to relaunch the flow at $\varphi_{t_1}(p)$, which by hypothesis can run for time $\varepsilon$ and so goes past $\beta(p)$. Define
+\[
+c(t) = \begin{cases} \varphi_t(p), & t \in (\alpha(p), \beta(p)), \\ \varphi_{t - t_1}\big(\varphi_{t_1}(p)\big), & |t - t_1| < \varepsilon, \text{ i.e. } t_1 - \varepsilon < t < t_1 + \varepsilon . \end{cases}
+\]
+The second line is defined, since $(-\varepsilon, \varepsilon) \subseteq (\alpha(q), \beta(q))$ for $q = \varphi_{t_1}(p)$.
+
+\emph{Claim: $c$ is an integral curve.} The first piece is $\varphi^p$. The second, $t \mapsto \varphi^{q}(t - t_1)$, is an integral curve by the translation lemma (Lemma~\ref{lem:translation-rescaling}(1)). Both pieces agree at $t = t_1$, where both equal $\varphi_{t_1}(p)$, so by Proposition~\ref{prop:global-uniqueness} they agree on their whole common domain: $c$ is well defined, and it is an integral curve on $(\alpha(p), t_1 + \varepsilon)$, since being one only involves $c$ near each time. It starts at $p$, and $t_1 + \varepsilon > \beta(p)$. This contradicts the maximality of $(\alpha(p), \beta(p))$ (Proposition~\ref{prop:maximal-curve}). ``We thought it was the end of time, but having an $\varepsilon$ is enough to keep going forever.''
 \end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick, blue!70!black] plot[smooth] coordinates {(-3.000,0.000) (-2.898,0.044) (-2.797,0.088) (-2.695,0.132) (-2.593,0.176) (-2.492,0.219) (-2.390,0.263) (-2.288,0.306) (-2.186,0.348) (-2.085,0.390) (-1.983,0.432) (-1.881,0.474) (-1.780,0.514) (-1.678,0.555) (-1.576,0.594) (-1.475,0.633) (-1.373,0.671) (-1.271,0.708) (-1.169,0.745) (-1.068,0.781) (-0.966,0.815) (-0.864,0.849) (-0.763,0.882) (-0.661,0.914) (-0.559,0.945) (-0.458,0.974) (-0.356,1.003) (-0.254,1.031) (-0.153,1.057) (-0.051,1.082) (0.051,1.106) (0.153,1.128) (0.254,1.149) (0.356,1.169) (0.458,1.188) (0.559,1.205) (0.661,1.221) (0.763,1.235) (0.864,1.248) (0.966,1.260) (1.068,1.270) (1.169,1.279) (1.271,1.286) (1.373,1.292) (1.475,1.296) (1.576,1.299) (1.678,1.300) (1.780,1.300) (1.881,1.298) (1.983,1.295) (2.085,1.290) (2.186,1.284) (2.288,1.276) (2.390,1.267) (2.492,1.256) (2.593,1.244) (2.695,1.231) (2.797,1.216) (2.898,1.200) (3.000,1.182)};
+\draw[thick, red!70!black, dashed, ->] plot[smooth] coordinates {(1.680,1.300) (1.788,1.300) (1.895,1.298) (2.003,1.294) (2.110,1.289) (2.218,1.282) (2.326,1.273) (2.433,1.263) (2.541,1.251) (2.648,1.237) (2.756,1.222) (2.863,1.205) (2.971,1.187) (3.079,1.168) (3.186,1.146) (3.294,1.124) (3.401,1.099) (3.509,1.074) (3.617,1.047) (3.724,1.018) (3.832,0.989) (3.939,0.958) (4.047,0.926) (4.154,0.893) (4.262,0.858) (4.370,0.823) (4.477,0.786) (4.585,0.748) (4.692,0.710) (4.800,0.670)};
+\fill (-3.000,0.000) circle (1.4pt) node[below, font=\scriptsize] {$p$, $t = 0$};
+\draw[blue!70!black, fill=white] (3.000,1.182) circle (1.8pt) node[above=3pt, font=\scriptsize] {$t = \beta(p)$};
+\fill[black!60] (0.600,1.212) circle (1.3pt) node[below=2pt, font=\scriptsize] {$t = \beta(p) - \varepsilon$};
+\fill[red!70!black] (1.680,1.300) circle (1.6pt) node[above=3pt, font=\scriptsize] {$\varphi_{t_1}(p)$};
+\node[blue!70!black, font=\scriptsize] at (-1.7,0.55) {$\varphi^p$};
+\node[red!70!black, font=\scriptsize, anchor=north west, align=left] at (3.900,0.819) {$\varphi_{t - t_1}(\varphi_{t_1}(p))$, $|t - t_1| < \varepsilon$:\\ continues past $t = \beta(p)$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Figure after the board.)} The maximal curve $\varphi^p$ (blue) seems to end at time $\beta(p)$; relaunched at $\varphi_{t_1}(p)$, a point less than $\varepsilon$ before the end, the flow runs for time $\varepsilon$ more (red) and passes $\beta(p)$.
+
+\begin{center}
+\begin{tikzpicture}[x=1cm, y=1cm]
+\fill[black!7] (4.2,-0.55) rectangle (7.0,1.55);
+\node[font=\scriptsize, black!60] at (5.6,1.75) {overlap: the two pieces agree};
+\draw[blue!70!black, very thick] (0.3,1.2) -- (7.0,1.2); \fill[white, draw=blue!70!black] (7.0,1.2) circle (1.8pt);
+\node[blue!70!black, font=\scriptsize, anchor=east] at (0.2,1.2) {$\varphi^p$ on $(\alpha(p), \beta(p))$};
+\draw[orange!80!black, very thick] (4.2,0.5) -- (7.8,0.5); \fill[white, draw=orange!80!black] (4.2,0.5) circle (1.8pt); \fill[white, draw=orange!80!black] (7.8,0.5) circle (1.8pt);
+\node[orange!80!black, font=\scriptsize, anchor=east] at (4.1,0.5) {$t \mapsto \varphi_{t - t_1}(q)$, $q = \varphi_{t_1}(p)$};
+\draw[black, very thick] (0.3,-0.3) -- (7.8,-0.3); \fill[white, draw=black] (7.8,-0.3) circle (1.8pt);
+\node[font=\scriptsize, anchor=east] at (0.2,-0.3) {glued curve $c$};
+\draw[->, gray!70] (0,-1.0) -- (8.6,-1.0) node[right, font=\scriptsize, text=black] {$t$};
+\foreach \x/\l in {4.2/{t_1 - \varepsilon}, 5.2/{\beta(p) - \varepsilon}, 6.0/{t_1}, 7.0/{\beta(p)}, 7.8/{t_1 + \varepsilon}} {
+  \draw[black!35, dashed] (\x,-1.0) -- (\x,1.4); \draw (\x,-0.92) -- (\x,-1.08); }
+\node[font=\scriptsize, below] at (4.2,-1.08) {$t_1 - \varepsilon$};
+\node[font=\scriptsize, below=8pt] at (5.2,-1.08) {$\beta(p) - \varepsilon$};
+\node[font=\scriptsize, below] at (6.0,-1.08) {$t_1$};
+\node[font=\scriptsize, below=8pt] at (7.0,-1.08) {$\beta(p)$};
+\node[font=\scriptsize, below] at (7.8,-1.08) {$t_1 + \varepsilon$};
+\fill (6.0,1.2) circle (1.6pt); \fill (6.0,0.5) circle (1.6pt);
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The same proof on the time axis. The maximal curve $\varphi^p$ (blue) is assumed to end at $\beta(p) < \infty$. Restarting the flow at $q = \varphi_{t_1}(p)$, with $t_1$ within $\varepsilon$ of the end, gives a curve (orange) that lives for time $\varepsilon$ on either side of $t_1$, so past $\beta(p)$. The two agree on the overlap (grey), and glued together (black) they form an integral curve from $p$ on a longer interval.
+
+\textit{The new homework asks for ``a similar thing,'' the escape lemma.}
 
 \begin{center}
 \begin{tikzpicture}[scale=0.95]
@@ -29280,36 +29481,219 @@ To be proved in Lecture~25 (``I'll prove this on Monday'').
 
 \textit{(Figure after the board.)} ``The horizontal line is $M$, and then you have $\mathbb{R}$ here'': over each $p$, the maximal domain $(\alpha(p), \beta(p))$, between the graphs $t = \beta(p) > 0$ and $t = \alpha(p) < 0$. The lemma's hypothesis is that a uniform strip $(-\varepsilon, \varepsilon) \times M$ fits inside; its conclusion is that the whole of $\mathbb{R} \times M$ does. (``I always reverse the cartoon axes. Someday I'll learn.'')
 
-Announced for Monday, as consequences of Lemma~\ref{lem:uniform-time}:
+Announced at the end of Lecture~24 and proved in Lecture~25 (Theorems~\ref{thm:compact-complete} and~\ref{thm:left-invariant-complete} below), as consequences of Lemma~\ref{lem:uniform-time}:
 \begin{itemize}[nosep]
 \item every vector field on a compact manifold is complete: ``compactness will assure that there is a uniform time'' (Lee, Corollary~9.17);
 \item every left-invariant vector field on a Lie group is complete, ``because you're going to be able to translate solutions'' (Lee, Theorem~9.18).
 \end{itemize}
 
-\textit{The flow. Lecture 23, the last minutes: ``Let me tell you the bigger picture of what actually is happening, and then we'll see how much of that we get to prove \ldots\ We'll prove a big chunk of this on Friday.''}
+The uniform time lemma (Lemma~\ref{lem:uniform-time}, proved in Lecture~25) says: if $(-\varepsilon, \varepsilon) \times M \subseteq \mathcal{D}$ for some $\varepsilon > 0$, ``if we can fit a little strip like this, of constant width, inside $\mathcal{D}$'', then $\mathcal{D} = \mathbb{R} \times M$. ``As a corollary, we're going to prove the theorem, which is a very nice theorem to have.''
 
-\begin{thmbox}[Maximal Integral Curves and the Flow]\thmlabel{thm:maximal-flow}
-Let $M$ be a smooth manifold and $\mathbf{X} \in \mathfrak{X}(M)$.
-\begin{enumerate}[nosep]
-\item For every $p \in M$ there is a unique \emph{maximal} integral curve of $\mathbf{X}$ starting at $p$, maximal with respect to its domain. Write it $\varphi_p$ and its domain $(\alpha(p), \beta(p))$, where $\alpha(p) \in [-\infty, 0)$ and $\beta(p) \in (0, +\infty]$: ``$\alpha$ or $\beta$ may be $\pm\infty$.''
-\item Let
-\[
-\mathcal{D} = \bigcup_{p \in M} \big(\alpha(p), \beta(p)\big) \times \{p\} \ \subseteq\ \mathbb{R} \times M, \qquad \varphi : \mathcal{D} \longrightarrow M, \quad (t, p) \longmapsto \varphi_p(t).
-\]
-Then $\mathcal{D}$ is open in $\mathbb{R} \times M$, and $\varphi$ is smooth.
-\end{enumerate}
-\leeref{Theorem 9.12}
+\begin{thmbox}[Vector Fields on Compact Manifolds Are Complete]\thmlabel{thm:compact-complete}
+If $M$ is compact, every $\mathbf{X} \in \mathfrak{X}(M)$ is complete.
+\leeref{Corollary 9.17}
 \end{thmbox}
 
-\begin{proof}[Proof of (1) (Lecture~24); (2) to be filled]
-Part~(1) is Proposition~\ref{prop:maximal-curve} above, proved in Lecture~24. Part~(2) is to be proved. Uribe's indication for (1), in Lecture~23: ``by uniqueness and something called the translation lemma, which is very easy to see,'' there is ``only one way to continue the curve forwards in time and then backwards in time until either you never stop or you run into the edge of the manifold.'' Openness of $\mathcal{D}$ ``is surprisingly long to prove.''
+``You don't have to worry about it.''
+
+\begin{proof}
+\textit{(Lecture~25.)} For every $p \in M$ there is a flow box $(-\varepsilon_p, \varepsilon_p) \times U_p$ with $p \in U_p$ (Lemma~\ref{lem:flow-box}). $\{U_p\}_{p \in M}$ is an open cover of $M$, so by compactness there are $p_1, \ldots, p_k \in M$ with
+\[
+M = \bigcup_{j=1}^k U_{p_j} .
+\]
+Let $\varepsilon = \min\{ \varepsilon_{p_j} : j = 1, \ldots, k \} > 0$. \emph{Claim: Lemma~\ref{lem:uniform-time} applies with this $\varepsilon$.} For $p \in M$ there is $j$ with $p \in U_{p_j}$, so $\varphi^p$ is defined on $(-\varepsilon_{p_j}, \varepsilon_{p_j}) \supseteq (-\varepsilon, \varepsilon)$. So $\mathbf{X}$ is complete.
 \end{proof}
 
-$\varphi$ is ``just flowing, like we were doing before'', except that the domain of the time variable depends on the point, as in Example~\ref{ex:finite-escape}. The theorem is the local picture of Theorem~\ref{thm:ode-local}, with its rectangles $(-\varepsilon, \varepsilon) \times U$, put together on the whole manifold. In the two examples:
-\begin{itemize}[nosep]
-\item Rotation (Example~\ref{ex:rotation-flow}): $\alpha \equiv -\infty$, $\beta \equiv +\infty$, $\mathcal{D} = \mathbb{R} \times \mathbb{R}^2$.
-\item Escape (Example~\ref{ex:finite-escape}): $\alpha \equiv -\infty$, $\beta(x, y) = 1/(xy)$, so $\mathcal{D} = \{ (t, (x, y)) : x, y > 0,\ t\,xy < 1 \}$, open, and $\varphi(t, (x, y)) = \big(x/(1 - xyt),\ y\big)$, smooth on $\mathcal{D}$.
-\end{itemize}
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick, fill=blue!5] (0,0) ellipse (2.6 and 1.35);
+\fill[white] (0.05,0.05) ellipse (0.8 and 0.3); \draw[thick] (0.05,0.05) ellipse (0.8 and 0.3);
+\draw[orange!85!black] (-2.0,0.2) circle (0.75); \fill (-2.0,0.2) circle (1pt); \node[font=\tiny, orange!70!black] at (-2.0,-0.05) {$\varepsilon_{1}$};
+\draw[orange!85!black] (-1.0,0.95) circle (0.7); \fill (-1.0,0.95) circle (1pt); \node[font=\tiny, orange!70!black] at (-1.0,0.70) {$\varepsilon_{2}$};
+\draw[orange!85!black] (0.4,1.05) circle (0.75); \fill (0.4,1.05) circle (1pt); \node[font=\tiny, orange!70!black] at (0.4,0.80) {$\varepsilon_{3}$};
+\draw[orange!85!black] (1.75,0.55) circle (0.8); \fill (1.75,0.55) circle (1pt); \node[font=\tiny, orange!70!black] at (1.75,0.30) {$\varepsilon_{4}$};
+\draw[orange!85!black] (1.6,-0.6) circle (0.75); \fill (1.6,-0.6) circle (1pt); \node[font=\tiny, orange!70!black] at (1.6,-0.85) {$\varepsilon_{5}$};
+\draw[orange!85!black] (0.2,-0.95) circle (0.8); \fill (0.2,-0.95) circle (1pt); \node[font=\tiny, orange!70!black] at (0.2,-1.20) {$\varepsilon_{6}$};
+\draw[orange!85!black] (-1.3,-0.8) circle (0.75); \fill (-1.3,-0.8) circle (1pt); \node[font=\tiny, orange!70!black] at (-1.3,-1.05) {$\varepsilon_{7}$};
+\node[font=\scriptsize] at (2.9,1.4) {$M$ compact};
+\node[font=\scriptsize, anchor=west, align=left] at (3.3,0.0) {finitely many flow boxes\\ $(-\varepsilon_j, \varepsilon_j) \times U_{p_j}$ cover;\\ $\varepsilon = \min_j \varepsilon_j$ is a uniform time};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} Each point has a flow box of its own width $\varepsilon_p$, which can shrink from point to point; compactness leaves finitely many, and the smallest width is a uniform time. Lee proves more: compactly supported fields are complete (Theorem~9.16).
+
+\begin{center}
+\begin{tikzpicture}[x=1.15cm, y=1.15cm]
+\fill[blue!70!black!10] (0.00,-1.2) rectangle (1.60,1.2); \draw[blue!70!black, thick] (0.00,-1.2) rectangle (1.60,1.2);
+\fill[blue!70!black!10] (5.70,-1.2) rectangle (6,1.2); \draw[blue!70!black, thick] (5.70,-1.2) -- (6,-1.2) (5.70,1.2) -- (6,1.2) (5.70,-1.2) -- (5.70,1.2);
+\fill[green!45!black!10] (1.20,-0.75) rectangle (3.00,0.75); \draw[green!45!black, thick] (1.20,-0.75) rectangle (3.00,0.75);
+\fill[orange!80!black!10] (2.60,-1.0) rectangle (4.40,1.0); \draw[orange!80!black, thick] (2.60,-1.0) rectangle (4.40,1.0);
+\fill[red!70!black!10] (4.00,-0.5) rectangle (5.60,0.5); \draw[red!70!black, thick] (4.00,-0.5) rectangle (5.60,0.5);
+\fill[violet!70!black!10] (5.20,-0.9) rectangle (6.00,0.9); \draw[violet!70!black, thick] (5.20,-0.9) rectangle (6.00,0.9);
+\fill[violet!70!black!10] (0,-0.9) rectangle (0.30,0.9); \draw[violet!70!black, thick] (0,-0.9) -- (0.30,-0.9) -- (0.30,0.9) -- (0,0.9);
+\draw[red!70!black, dashed] (-0.2,0.5) -- (6.2,0.5); \draw[red!70!black, dashed] (-0.2,-0.5) -- (6.2,-0.5);
+\node[red!70!black, font=\scriptsize, anchor=west] at (6.3,0.5) {$\varepsilon = \min_j \varepsilon_{p_j}$};
+\node[red!70!black, font=\scriptsize, anchor=west] at (6.3,-0.5) {$-\varepsilon$};
+\draw[black, thick] (0,0) -- (6,0); \fill (0,0) circle (1.3pt); \fill (6,0) circle (1.3pt);
+\node[font=\scriptsize, below left] at (0,0) {$a$}; \node[font=\scriptsize, below right] at (6,0) {$a$};
+\node[font=\scriptsize, anchor=west] at (6.3,0) {$M$ (a circle: the ends $a$ are one point)};
+\draw[->, gray!70] (-0.5,-1.5) -- (-0.5,1.6) node[above, font=\scriptsize, text=black] {$t$};
+\node[font=\scriptsize, align=center] at (3,-1.75) {flow boxes $(-\varepsilon_{p_j}, \varepsilon_{p_j}) \times U_{p_j}$ covering $M$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The same proof in $\mathbb{R} \times M$, for $M$ a circle drawn as an interval whose ends $a$ are one point. The flow boxes have heights $\varepsilon_{p_j}$; the shortest has height $\varepsilon$, so the strip $(-\varepsilon, \varepsilon) \times M$ (dashed) lies inside the flow domain. Compactness is needed: the fields of Examples~\ref{ex:finite-escape} and~\ref{ex:half-line} live on noncompact manifolds and are not complete.
+
+\emph{Complete fields and actions of $\mathbb{R}$.} ``Let's go back to the group law, but now for complete fields.'' Suppose $\mathbf{X}$ is complete. Then $\mathcal{D} = \mathbb{R} \times M$, so for every $t \in \mathbb{R}$ there is a map $\varphi_t : M \to M$, and the group law holds for all $s, t$.
+
+\begin{propbox}[The Flow of a Complete Field]\thmlabel{prop:complete-flow}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ be complete, with flow $\varphi : \mathbb{R} \times M \to M$. Then
+\[
+\varphi_0 = \mathrm{id}_M, \qquad \varphi_t \circ \varphi_s = \varphi_{t + s} \quad (s, t \in \mathbb{R}), \qquad \varphi_{-t} = (\varphi_t)^{-1},
+\]
+and every $\varphi_t$ is a diffeomorphism of $M$. Equivalently, $\varphi$ is a smooth action of the additive group $(\mathbb{R}, +)$ on $M$ (Definition~\ref{def:action}), written $t \cdot p = \varphi_t(p)$.
+\leeref{Ch.~9, \emph{Flows}; Theorem 9.12(c)}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~25; details filled in.)} $\varphi_0(p) = \varphi^p(0) = p$. All maximal domains are $\mathbb{R}$, so Proposition~\ref{prop:group-law} applies for all $s, t \in \mathbb{R}$: $\varphi_t \circ \varphi_s = \varphi_{t + s}$. In particular $\varphi_{-t} \circ \varphi_t = \varphi_0 = \mathrm{id}_M = \varphi_t \circ \varphi_{-t}$, so $\varphi_t$ is a bijection with inverse $\varphi_{-t}$. Each $\varphi_t$ is smooth, as the smooth map $\varphi$ (Theorem~\ref{thm:maximal-flow}(2)) restricted to the slice $\{t\} \times M$; so is its inverse $\varphi_{-t}$. In the action notation, $0 \cdot p = p$ and the group law reads $t \cdot (s \cdot p) = (t + s) \cdot p$, the two conditions of Definition~\ref{def:action} for the group $(\mathbb{R}, +)$, whose identity is $0$ and whose product is $+$.
+\end{proof}
+
+``This looks a lot like a group action kind of thing, and in fact it is.'' There is a clash of notations: for an action, $(t, p) \mapsto t \cdot p$; for a flow, $(t, p) \mapsto \varphi_t(p)$. ``It's just a matter of notation. We get the same thing.''
+
+\begin{defbox}[Infinitesimal Generator]\deflabel{def:infinitesimal-generator}
+If $\mathbf{X} \in \mathfrak{X}(M)$ is complete, it is the \textbf{infinitesimal generator} of the $\mathbb{R}$-action $\varphi$ of Proposition~\ref{prop:complete-flow}.
+\leeref{Ch.~9, \emph{Flows}}
+\end{defbox}
+
+``We have shown half a theorem'': a complete vector field gives rise to an $\mathbb{R}$-action on $M$. ``The converse is true. It's really an observation.''
+
+\begin{thmbox}[Every Smooth $\mathbb{R}$-Action Has a Generator]\thmlabel{thm:action-generator}
+Let $\varphi : \mathbb{R} \times M \to M$ be a smooth action of $(\mathbb{R}, +)$ on $M$, written $\varphi_t(p) = \varphi^p(t) = \varphi(t, p)$. Define
+\[
+\mathbf{X}_p = \frac{d}{dt}\Big|_{t=0} \varphi^p(t) = \dot\varphi^p(0) \in T_pM , \qquad p \in M .
+\]
+Then $\mathbf{X}$ is a smooth vector field, it is complete, and its flow is $\varphi$.
+\leeref{Proposition 9.7}
+\end{thmbox}
+
+\begin{proof}
+\textit{(Lecture~25: ``Maybe I'm making a pedagogical mistake \ldots\ Let's prove it. There's something to be proved.'' The smoothness of $\mathbf{X}$ and the last step, which Uribe skipped, are filled in.)}
+
+\emph{$\mathbf{X}$ is smooth.} ``These guys are defined because the action is smooth \ldots\ it's like a partial derivative, and you get a vector field.'' In a chart $(U, x^1, \ldots, x^m)$ around $p_0$, for $p$ near $p_0$ and $t$ near $0$ the point $\varphi(t, p)$ stays in $U$ (continuity of $\varphi$, $\varphi(0, p_0) = p_0$), and by Corollary~\ref{cor:velocity-at-t-coords}
+\[
+\mathbf{X}_p = \sum_{i=1}^m \frac{\partial (x^i \circ \varphi)}{\partial t}(0, p)\, \frac{\partial}{\partial x^i}\Big|_p ,
+\]
+whose coefficients are smooth functions of $p$, since $x^i \circ \varphi$ is smooth near $(0, p_0)$. So $\mathbf{X}$ is smooth near $p_0$ (Proposition~\ref{prop:vf-coords}).
+
+\emph{The curves $\varphi^p$ are integral curves of $\mathbf{X}$.} Let $\theta$ (script $\varphi$ on the board) be the flow of $\mathbf{X}$, defined on its maximal domain $\mathcal{D}_{\mathbf{X}}$; we want $\theta = \varphi$, that is, $t \mapsto \varphi^p(t)$ is an integral curve of $\mathbf{X}$. ``We know this equality only at time zero, but now we have to prove it at an arbitrary time. We have to use the group law.'' Fix $s$. The action gives $\varphi_t(\varphi_s(p)) = \varphi_{t + s}(p)$ for all $t$. Take $\frac{d}{dt}\big|_{t=0}$ of both sides: on the left, by the definition of $\mathbf{X}$ at the point $\varphi_s(p)$, $\mathbf{X}_{\varphi_s(p)}$; on the right, by the chain rule in the variable $t$, the velocity of $\varphi^p$ at time $s$:
+\[
+\mathbf{X}_{\varphi_s(p)} = \frac{d}{dt}\Big|_{t=s} \varphi_t(p) = \dot\varphi^p(s) .
+\]
+So $t \mapsto \varphi_t(p)$ is an integral curve of $\mathbf{X}$ starting at $p$, ``where we very much use the group law.''
+
+\emph{$\mathbf{X}$ is complete and $\theta = \varphi$.} A student asked how we know the flow of $\mathbf{X}$ is complete; Uribe: ``I can't assume that $\mathbf{X}$ is complete. It has to come out of the proof,'' by the group law, which he skipped. \textit{(Filled in, by maximality instead.)} $\varphi^p$ is an integral curve starting at $p$ defined on all of $\mathbb{R}$, so by Proposition~\ref{prop:maximal-curve} the maximal domain of $p$ contains $\mathbb{R}$, and $\theta^p = \varphi^p$. This holds for every $p$: $\mathbf{X}$ is complete and $\theta = \varphi$ on $\mathcal{D}_{\mathbf{X}} = \mathbb{R} \times M$.
+\end{proof}
+
+So complete vector fields on $M$ and smooth $\mathbb{R}$-actions on $M$ are the same thing, by $\mathbf{X} \mapsto$ its flow and $\varphi \mapsto$ its infinitesimal generator. In physics language: a time-independent dynamical law with solutions for all time is a one-parameter group of diffeomorphisms of the state space.
+
+\emph{Naturality of integral curves.} ``Now I want to do one more thing.''
+
+\begin{propbox}[Naturality of Integral Curves]\thmlabel{prop:naturality-integral-curves}
+Let $F : M \to N$ be smooth, $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{Y} \in \mathfrak{X}(N)$. Then $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related (Definition~\ref{def:F-related}) if and only if, for every integral curve $c : I \to M$ of $\mathbf{X}$, $F \circ c : I \to N$ is an integral curve of $\mathbf{Y}$.
+\leeref{Proposition 9.6}
+\end{propbox}
+
+``If you have related fields, then composing integral curves of the first with $F$ will give you integral curves of $\mathbf{Y}$.''
+
+\begin{proof}
+\textit{(Lecture~25, $(\Rightarrow)$; $(\Leftarrow)$ filled in.)} Recall that $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related if and only if $dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)}$ for every $p \in M$. For a smooth curve $c$, the chain rule (Theorem~\ref{prop:pushforward-functorial}) gives the velocity of $F \circ c$:
+\[
+\frac{d}{dt}(F \circ c)(t) = (F \circ c)_{*t}\Big(\frac{d}{dt}\Big) = dF_{c(t)}\big(\dot c(t)\big) .
+\]
+$(\Rightarrow)$ If $\dot c(t) = \mathbf{X}_{c(t)}$, then with $p = c(t)$, ``being related means'' $dF_{c(t)}(\dot c(t)) = dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(c(t))}$, which by the display is the velocity of $F \circ c$ at $t$. ``$\mathbf{X}$ is the velocity of integral curves, and you can use the integral curves to compute the differential of $F$ acting on $\mathbf{X}$.''
+
+$(\Leftarrow)$ Given $p \in M$, let $c$ be an integral curve of $\mathbf{X}$ starting at $p$ (Theorem~\ref{thm:ode-local-manifold}). $F \circ c$ is an integral curve of $\mathbf{Y}$, so at $t = 0$, by the display, $\mathbf{Y}_{F(p)} = dF_p(\dot c(0)) = dF_p(\mathbf{X}_p)$.
+\end{proof}
+
+Lemma~\ref{lem:integral-curves-diffeo} is the case of a diffeomorphism $F$ and $\mathbf{Y} = F_*\mathbf{X}$, the unique field $F$-related to $\mathbf{X}$ (Proposition~\ref{prop:vf-pushforward}). ``But the reason I'm rushing is because there is a very important case of $F$-related fields, which is the left-invariant fields on a Lie group.''
+
+\begin{thmbox}[Left-Invariant Fields Are Complete]\thmlabel{thm:left-invariant-complete}
+Every left-invariant vector field $\mathbf{X}$ on a Lie group $G$ is complete. Moreover, $\varphi^g(t) = g\, \varphi^e(t)$ for all $g \in G$ and $t \in \mathbb{R}$.
+\leeref{Theorem 9.18}
+\end{thmbox}
+
+\begin{proof}
+\textit{(Lecture~25, by the uniform time lemma.)} Let $\varepsilon > 0$ be such that the integral curve of $\mathbf{X}$ starting at $e \in G$ is defined for $|t| < \varepsilon$ (any $\varepsilon$ with $(-\varepsilon, \varepsilon) \subseteq (\alpha(e), \beta(e))$). Pick $g \in G$. The left translation $L_g : G \to G$ is smooth and $\mathbf{X}$ is $L_g$-related to itself (Lemma~\ref{lem:left-invariant-related}), so by Proposition~\ref{prop:naturality-integral-curves}
+\[
+t \mapsto L_g\big(\varphi_t(e)\big) = g\, \varphi^e(t)
+\]
+is an integral curve of $\mathbf{X}$, ``obviously also defined for the same values of $t$,'' $|t| < \varepsilon$. It starts at $L_g(e) = g$, with velocity $dL_g(\mathbf{X}_e) = \mathbf{X}_g$. \textit{(On the board: ``it starts at $d(L_g)(\mathbf{X}) = \mathbf{X}_g$''; the starting point is $g$, and $\mathbf{X}_g$ is the velocity there.)} So the integral curve starting at $g$ is defined at least for $|t| < \varepsilon$, with $\varepsilon$ independent of $g$, ``$g$ was arbitrary''; by Lemma~\ref{lem:uniform-time}, $\mathbf{X}$ is complete. \textit{(Filled in.)} For the last statement, now $\varphi^e$ is defined on $\mathbb{R}$, and the same argument shows that $t \mapsto g\varphi^e(t)$ is an integral curve on $\mathbb{R}$ starting at $g$, so it is $\varphi^g$ (Proposition~\ref{prop:maximal-curve}).
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick] plot[smooth cycle] coordinates {(-3.4,-0.6) (-2.4,1.2) (0.2,1.5) (2.6,1.4) (3.4,0.0) (2.2,-1.3) (-0.6,-1.2) (-2.6,-1.4)};
+\node[font=\scriptsize] at (3.25,1.25) {$G$};
+\draw[blue!70!black, thick, ->] plot[smooth] coordinates {(-3.100,-0.650) (-3.054,-0.639) (-3.008,-0.627) (-2.962,-0.613) (-2.915,-0.598) (-2.869,-0.582) (-2.823,-0.565) (-2.777,-0.546) (-2.731,-0.526) (-2.685,-0.504) (-2.638,-0.482) (-2.592,-0.458) (-2.546,-0.432) (-2.500,-0.406) (-2.454,-0.378) (-2.408,-0.348) (-2.362,-0.318) (-2.315,-0.286) (-2.269,-0.252) (-2.223,-0.218) (-2.177,-0.182) (-2.131,-0.145) (-2.085,-0.106) (-2.038,-0.066) (-1.992,-0.025) (-1.946,0.017) (-1.900,0.061) (-1.854,0.106) (-1.808,0.153) (-1.762,0.200) (-1.715,0.249) (-1.669,0.300) (-1.623,0.351) (-1.577,0.404) (-1.531,0.459) (-1.485,0.514) (-1.438,0.571) (-1.392,0.630) (-1.346,0.689) (-1.300,0.750)};
+\draw[red!70!black, thick, ->] plot[smooth] coordinates {(0.150,-0.300) (0.189,-0.254) (0.228,-0.210) (0.268,-0.166) (0.308,-0.124) (0.349,-0.082) (0.390,-0.042) (0.432,-0.003) (0.475,0.036) (0.517,0.073) (0.561,0.109) (0.605,0.144) (0.649,0.178) (0.694,0.211) (0.740,0.243) (0.786,0.274) (0.833,0.304) (0.880,0.333) (0.928,0.360) (0.976,0.387) (1.024,0.413) (1.074,0.437) (1.123,0.461) (1.174,0.483) (1.225,0.505) (1.276,0.525) (1.328,0.544) (1.380,0.563) (1.433,0.580) (1.487,0.596) (1.541,0.611) (1.595,0.625) (1.650,0.638) (1.706,0.650) (1.762,0.661) (1.818,0.671) (1.875,0.680) (1.933,0.688) (1.991,0.694) (2.050,0.700)};
+\fill (-2.2,-0.2) circle (1.4pt) node[below right, font=\scriptsize] {$e$};
+\fill (1.0,0.4) circle (1.4pt) node[below right, font=\scriptsize] {$g$};
+\draw[->, gray!70, bend left=25] (-1.6,0.75) to node[above, font=\scriptsize, text=black] {$L_g$} (0.5,1.0);
+\node[blue!70!black, font=\scriptsize, anchor=east] at (-2.9,0.45) {$\varphi^e(t)$, $|t| < \varepsilon$};
+\node[red!70!black, font=\scriptsize, anchor=west] at (2.05,0.75) {$g\,\varphi^e(t) = \varphi^g(t)$};
+\end{tikzpicture}
+\end{center}
+
+``It says more. It says that left translating integral curves through the identity gives you integral curves through the $g$ that you translated'': the figure. For $G = \GL(n, \mathbb{R})$ and the left-invariant field with $\mathbf{X}_I = A$, the curve $\varphi^I(t)$ is the matrix exponential $e^{tA}$ (not yet in the course), and $\varphi^g(t) = g\, e^{tA}$.
+
+\begin{center}
+\begin{tikzpicture}[x=1cm, y=1.1cm]
+\fill[black!3] (-3,0) rectangle (3.2,3);
+\draw[black!50, dashed] (-3,0) -- (3.2,0) node[right, font=\scriptsize, text=black] {$a = 0$ (not in $G$)};
+\draw[->, gray!70] (0,-0.15) -- (0,3.2) node[above, font=\scriptsize, text=black] {$a$};
+\node[font=\scriptsize, gray] at (3.35,2.85) {$b$};
+\draw[->, black!35] (-2.50,0.50) -- (-2.36,0.57);
+\draw[->, black!35] (-2.50,1.00) -- (-2.22,1.14);
+\draw[->, black!35] (-2.50,1.50) -- (-2.08,1.71);
+\draw[->, black!35] (-2.50,2.00) -- (-1.94,2.28);
+\draw[->, black!35] (-2.50,2.50) -- (-1.80,2.85);
+\draw[->, black!35] (-1.50,0.50) -- (-1.36,0.57);
+\draw[->, black!35] (-1.50,1.00) -- (-1.22,1.14);
+\draw[->, black!35] (-1.50,1.50) -- (-1.08,1.71);
+\draw[->, black!35] (-1.50,2.00) -- (-0.94,2.28);
+\draw[->, black!35] (-1.50,2.50) -- (-0.80,2.85);
+\draw[->, black!35] (-0.50,0.50) -- (-0.36,0.57);
+\draw[->, black!35] (-0.50,1.00) -- (-0.22,1.14);
+\draw[->, black!35] (-0.50,1.50) -- (-0.08,1.71);
+\draw[->, black!35] (-0.50,2.00) -- (0.06,2.28);
+\draw[->, black!35] (-0.50,2.50) -- (0.20,2.85);
+\draw[->, black!35] (0.50,0.50) -- (0.64,0.57);
+\draw[->, black!35] (0.50,1.00) -- (0.78,1.14);
+\draw[->, black!35] (0.50,1.50) -- (0.92,1.71);
+\draw[->, black!35] (0.50,2.00) -- (1.06,2.28);
+\draw[->, black!35] (0.50,2.50) -- (1.20,2.85);
+\draw[->, black!35] (1.50,0.50) -- (1.64,0.57);
+\draw[->, black!35] (1.50,1.00) -- (1.78,1.14);
+\draw[->, black!35] (1.50,1.50) -- (1.92,1.71);
+\draw[->, black!35] (1.50,2.00) -- (2.06,2.28);
+\draw[->, black!35] (1.50,2.50) -- (2.20,2.85);
+\draw[->, black!35] (2.50,0.50) -- (2.64,0.57);
+\draw[->, black!35] (2.50,1.00) -- (2.78,1.14);
+\draw[->, black!35] (2.50,1.50) -- (2.92,1.71);
+\draw[->, black!35] (2.50,2.00) -- (3.06,2.28);
+\draw[->, black!35] (2.50,2.50) -- (3.20,2.85);
+\draw[blue!70!black, very thick, ->] plot coordinates {(-1.940,0.030) (-1.839,0.080) (-1.739,0.131) (-1.638,0.181) (-1.537,0.231) (-1.437,0.282) (-1.336,0.332) (-1.235,0.382) (-1.135,0.433) (-1.034,0.483) (-0.933,0.533) (-0.833,0.584) (-0.732,0.634) (-0.631,0.684) (-0.531,0.735) (-0.430,0.785) (-0.329,0.835) (-0.228,0.886) (-0.128,0.936) (-0.027,0.986) (0.074,1.037) (0.174,1.087) (0.275,1.137) (0.376,1.188) (0.476,1.238) (0.577,1.288) (0.678,1.339) (0.778,1.389) (0.879,1.439) (0.980,1.490) (1.080,1.540) (1.181,1.591) (1.282,1.641) (1.382,1.691) (1.483,1.742) (1.584,1.792) (1.684,1.842) (1.785,1.893) (1.886,1.943) (1.986,1.993) (2.087,2.044) (2.188,2.094) (2.288,2.144) (2.389,2.195) (2.490,2.245) (2.591,2.295) (2.691,2.346) (2.792,2.396) (2.893,2.446) (2.993,2.497) (3.094,2.547) (3.195,2.597)};
+\fill[blue!70!black] (0.0,1.0) circle (1.8pt) node[above left, font=\scriptsize] {$e = (1, 0)$};
+\draw[red!70!black, very thick, ->] plot coordinates {(0.560,0.030) (0.661,0.080) (0.761,0.131) (0.862,0.181) (0.963,0.231) (1.063,0.282) (1.164,0.332) (1.265,0.382) (1.365,0.433) (1.466,0.483) (1.567,0.533) (1.667,0.584) (1.768,0.634) (1.869,0.684) (1.969,0.735) (2.070,0.785) (2.171,0.835) (2.272,0.886) (2.372,0.936) (2.473,0.986) (2.574,1.037) (2.674,1.087) (2.775,1.137) (2.876,1.188) (2.976,1.238) (3.077,1.288) (3.178,1.339)};
+\fill[red!70!black] (1.5,0.5) circle (1.8pt) node[below right, font=\scriptsize] {$g = (\tfrac12, \tfrac32)$};
+\fill[blue!70!black] (1.297,1.649) circle (1.5pt) node[above left, font=\scriptsize] {$\varphi^e(1)$};
+\fill[red!70!black] (2.149,0.824) circle (1.5pt) node[below right, font=\scriptsize] {$g\,\varphi^e(1)$};
+\draw[->, black!60, dotted, thick] (1.217,1.679) to[bend right=25] node[above, font=\scriptsize] {$L_g$} (2.249,0.854);
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} A worked example: the group $G = \{(a, b) : a > 0\}$ of affine maps $x \mapsto ax + b$, an open subset of $\mathbb{R}^2$ (drawn with $b$ horizontal and $a$ vertical), with product $(a, b)(a', b') = (aa', ab' + b)$ and identity $e = (1, 0)$. Since $L_{(a,b)}(a', b') = (aa', ab' + b)$ has differential $a \cdot \mathrm{id}$, the left-invariant field with $\mathbf{X}_e = (u, v)$ is $\mathbf{X}_{(a,b)} = a(u, v)$ (grey arrows; here $u = \tfrac12$, $v = 1$). Its integral curve through $e$ is $\varphi^e(t) = \big(e^{ut}, \tfrac{v}{u}(e^{ut} - 1)\big)$ (blue), defined for all $t$: as $t \to -\infty$ it approaches the missing line $a = 0$ without reaching it. The curve through $g$ is $g\,\varphi^e(t)$ (red), and $L_g$ carries $\varphi^e(1)$ to $g\,\varphi^e(1)$.
 
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
@@ -29336,7 +29720,7 @@ $\Gamma = \{(x, g \cdot x)\}$, the orbit relation & $\mathcal{O} = \{(g \cdot p,
 $H_{x_0}$, the isotropy group & $G_p$ & Definition~\ref{def:isotropy}. \\
 $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$ & $F : G/G_p \to M$ & Theorem~\ref{thm:GH-homeo}; Lee, Theorem 21.18. \\
 $\mathfrak{g} = T^{\geo}_I G$; from \ref{sec:lie-groups}, the left-invariant fields & $\mathrm{Lie}(G) \cong T_eG$ & Before \ref{sec:lie-groups} the notes' $\mathfrak{g}$ is the geometric tangent space at $I$; from Definition~\ref{def:lie-algebra-of-group} it is Lee's $\mathrm{Lie}(G)$, identified with $T_eG$ by Theorem~\ref{thm:lie-algebra-TeG}. \\
-$\varphi_t(q) = \varphi_q(t) = \varphi(t, q)$; $\dot c(t)$ & $\theta_t(p) = \theta^{(p)}(t) = \theta(t, p)$; $\gamma'(t)$ & The flow and its integral curves (Definition~\ref{def:flow-notation}); the subscript is a time for $\varphi_t$, a point for $\varphi_q$. \\
+$\varphi_t(q) = \varphi^q(t) = \varphi(t, q)$ (Lectures~23--24: $\varphi_q(t)$); $\dot c(t)$ & $\theta_t(p) = \theta^{(p)}(t) = \theta(t, p)$; $\gamma'(t)$ & The flow and its integral curves (Definition~\ref{def:flow-notation}); the subscript is a time for $\varphi_t$, a point for $\varphi_q$. \\
 $\widetilde{\mathbb{R}}$: the chart $\sqrt[3]{x}$ & Example 1.23: the chart $x^3$ & Two different non-standard structures --- the transition map between them is $y \mapsto y^9$ --- both diffeomorphic to $\mathbb{R}$ (Corollary~\ref{cor:single-chart-Rn}). \\
 \bottomrule
 \end{longtable}
@@ -29406,7 +29790,8 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:partitions-of-unity}\ Partitions of unity & Chapter 2, \emph{Partitions of Unity} (Lemmas 2.20--2.22, Theorem 2.23); Chapter 1, \emph{Paracompactness} (Theorem 1.15); Proposition A.60; Chapter 2, \emph{Applications of Partitions of Unity} (Proposition 2.28) \\
 \ref{sec:integral-curves}\ Integral curves & Chapter 9, \emph{Integral Curves} ((9.1), Lemmas 9.3 and 9.4, Proposition 9.6) \\
 \ref{sec:ode-existence}\ Local existence and uniqueness & Chapter 9, \emph{Integral Curves} (Example 9.1, Proposition 9.2); \emph{Flows} (uniqueness, in the proof of Theorem 9.12); Appendix D (Theorem D.1); Problem 9-1 \\
-\ref{sec:flows}\ Maximal integral curves and flows & Chapter 9, \emph{Flows} (Example 9.10, Theorem 9.12); \emph{Complete Vector Fields} (Lemma 9.15, Corollary 9.17, Theorem 9.18); Problem 9-1 \\
+\ref{sec:flows}\ Maximal integral curves and flows & Chapter 9, \emph{Flows} (Example 9.10, Theorem 9.12, with its proof; the group law (9.7)); Problem 9-1 \\
+\ref{sec:complete-fields}\ Complete vector fields & Chapter 9, \emph{Flows} (Proposition 9.6, Proposition 9.7, Theorem 9.12(c)); \emph{Complete Vector Fields} (Lemma 9.15, Theorem 9.16, Corollary 9.17, Theorem 9.18) \\
 \bottomrule
 \end{longtable}
 
@@ -29531,10 +29916,14 @@ Example 9.1 & Ex.~\ref{ex:rotation-flow} \\
 Proposition 9.2 & Thm.~\ref{thm:ode-local-manifold} \\
 Lemma 9.3 & Lem.~\ref{lem:translation-rescaling} \\
 Lemma 9.4 & Lem.~\ref{lem:translation-rescaling} \\
-Proposition 9.6 & Lem.~\ref{lem:integral-curves-diffeo} \\
+Proposition 9.6 & Lem.~\ref{lem:integral-curves-diffeo}, Prop.~\ref{prop:naturality-integral-curves} \\
+Proposition 9.7 & Thm.~\ref{thm:action-generator} \\
 Example 9.10 & Ex.~\ref{ex:finite-escape} \\
-Theorem 9.12 & Prop.~\ref{prop:global-uniqueness}, Thm.~\ref{thm:maximal-flow}, Def.~\ref{def:maximal-domain}, Prop.~\ref{prop:maximal-curve} \\
+Theorem 9.12 & Prop.~\ref{prop:global-uniqueness}, Thm.~\ref{thm:maximal-flow}, Def.~\ref{def:maximal-domain}, Prop.~\ref{prop:maximal-curve}, Lem.~\ref{lem:flow-box}, Prop.~\ref{prop:group-law}, Prop.~\ref{prop:complete-flow} \\
 Lemma 9.15 & Lem.~\ref{lem:uniform-time} \\
+Corollary 9.17 & Thm.~\ref{thm:compact-complete} \\
+Theorem 9.18 & Thm.~\ref{thm:left-invariant-complete} \\
+Problem 9-1 & Cor.~\ref{cor:returning-curve-periodic}, Prop.~\ref{prop:returning-maximal-periodic} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\

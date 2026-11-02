@@ -5,9 +5,9 @@ chapter: 10
 section: 69
 tags: [differentiable-manifolds, math591]
 ---
-← [[§68 Local Existence and Uniqueness]] · ↑ [[· 10 Integral Curves and Flows]]
+← [[§68 Local Existence and Uniqueness]] · ↑ [[· 10 Integral Curves and Flows]] · [[§70 Complete Vector Fields]] →
 
-*Stage: dynamics — The maximal integral curve through each point, complete vector fields, and the flow: all maximal curves assembled into one smooth map on an open domain in $\mathbb{R} \times M$.*
+*Stage: dynamics — The maximal integral curve through each point, and the flow: all maximal curves assembled into one smooth map on an open domain in $\mathbb{R} \times M$, which obeys the group law.*
 
 *Lecture 24. “What this allows us to do” — uniqueness on the common domain, Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]] — “is to define the maximal domain of an integral curve, given an initial condition.”*
 
@@ -28,14 +28,14 @@ tags: [differentiable-manifolds, math591]
 The union is nonempty, since an integral curve starting at $p$ exists (Theorem [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]]). Each domain $I$ is an open interval containing $0$, “because it starts at $p$”, so the union is an open interval containing $0$. “So it's something that is very harmless to take.”
 
 > [!theorem] Proposition §69.1: The Maximal Integral Curve
-> Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. There is an integral curve $\varphi_p : (\alpha(p), \beta(p)) \to M$ of $\mathbf{X}$ starting at $p$, and every integral curve $c : I \to M$ starting at $p$ satisfies $I \subseteq (\alpha(p), \beta(p))$ and $c = \varphi_p|_I$. So $(\alpha(p), \beta(p))$ is the largest possible domain of such a curve, and $\varphi_p$ is the unique maximal integral curve starting at $p$. This proves Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](1).
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$. There is an integral curve $\varphi^p : (\alpha(p), \beta(p)) \to M$ of $\mathbf{X}$ starting at $p$, and every integral curve $c : I \to M$ starting at $p$ satisfies $I \subseteq (\alpha(p), \beta(p))$ and $c = \varphi^p|_I$. So $(\alpha(p), \beta(p))$ is the largest possible domain of such a curve, and $\varphi^p$ is the unique maximal integral curve starting at $p$. This proves Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](1).
 >
 > *Lee: Theorem 9.12*
 
 ^prop-69-1
 
 > [!proof]+ Proof
-> *(Lecture 24: “How do you define it? Well, I take a point $t$ here. It's in some $I$, so there is some integral curve defined in the neighbourhood of that. I define it by that, and it doesn't matter which $I$ I chose, by the previous lemma.” Details filled in.)* For $t \in (\alpha(p), \beta(p))$, choose an integral curve $c : I \to M$ starting at $p$ with $t \in I$, and set $\varphi_p(t) = c(t)$. *Well defined:* if $c' : I' \to M$ is another, then $c$ and $c'$ agree at time $0$, so by Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]] they agree on $I \cap I' \ni t$. *An integral curve:* near each $t$, $\varphi_p$ equals the smooth curve $c$ on the open interval $I \ni t$, so $\varphi_p$ is smooth and $\dot\varphi_p(t) = \dot c(t) = \mathbf{X}_{c(t)} = \mathbf{X}_{\varphi_p(t)}$, since velocity at $t$ only depends on the curve near $t$. And $\varphi_p(0) = p$. *Maximal:* if $c : I \to M$ starts at $p$, then $I$ is one of the domains in the union, so $I \subseteq (\alpha(p), \beta(p))$, and $c = \varphi_p|_I$ by the definition of $\varphi_p$.
+> *(Lecture 24: “How do you define it? Well, I take a point $t$ here. It's in some $I$, so there is some integral curve defined in the neighbourhood of that. I define it by that, and it doesn't matter which $I$ I chose, by the previous lemma.” Details filled in.)* For $t \in (\alpha(p), \beta(p))$, choose an integral curve $c : I \to M$ starting at $p$ with $t \in I$, and set $\varphi^p(t) = c(t)$. *Well defined:* if $c' : I' \to M$ is another, then $c$ and $c'$ agree at time $0$, so by Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]] they agree on $I \cap I' \ni t$. *An integral curve:* near each $t$, $\varphi^p$ equals the smooth curve $c$ on the open interval $I \ni t$, so $\varphi^p$ is smooth and $\dot\varphi^p(t) = \dot c(t) = \mathbf{X}_{c(t)} = \mathbf{X}_{\varphi^p(t)}$, since velocity at $t$ only depends on the curve near $t$. And $\varphi^p(0) = p$. *Maximal:* if $c : I \to M$ starts at $p$, then $I$ is one of the domains in the union, so $I \subseteq (\alpha(p), \beta(p))$, and $c = \varphi^p|_I$ by the definition of $\varphi^p$.
 
 ^pf-69-1
 
@@ -116,10 +116,10 @@ The integral curves lie on horizontal lines. Starting at $q$ the point moves to 
 *(Not from lecture; animation added, vault only.)* Five integral curves of $d/dx$ on $(-\infty, 0)$, starting at $x_0 = -3, \ldots, -0.4$, run right at unit speed and leave $M$ at time $-x_0$. Right, their maximal domains filling the region $t < -x_0$ of the figure (drawn for $t \ge 0$): the field is not complete.
 
 > [!theorem] Proposition §69.2: Non-Injective Maximal Integral Curves Are Periodic
-> Let $\mathbf{X} \in \mathfrak{X}(M)$, $p \in M$, and let $\varphi_p : (\alpha(p), \beta(p)) \to M$ be the maximal integral curve of $\mathbf{X}$ starting at $p$. If $\varphi_p$ is not injective, say $\varphi_p(t_1) = \varphi_p(t_2)$ with $T = t_2 - t_1 > 0$, then $(\alpha(p), \beta(p)) = \mathbb{R}$ and
+> Let $\mathbf{X} \in \mathfrak{X}(M)$, $p \in M$, and let $\varphi^p : (\alpha(p), \beta(p)) \to M$ be the maximal integral curve of $\mathbf{X}$ starting at $p$. If $\varphi^p$ is not injective, say $\varphi^p(t_1) = \varphi^p(t_2)$ with $T = t_2 - t_1 > 0$, then $(\alpha(p), \beta(p)) = \mathbb{R}$ and
 >
 > $$
-> \varphi_p(t + T) = \varphi_p(t) \qquad \text{for all } t \in \mathbb{R} .
+> \varphi^p(t + T) = \varphi^p(t) \qquad \text{for all } t \in \mathbb{R} .
 > $$
 >
 > *Lee: Problem 9-1*
@@ -127,7 +127,7 @@ The integral curves lie on horizontal lines. Starting at $q$ the point moves to 
 ^prop-69-2
 
 > [!proof]+ Proof
-> *(Not from lecture: Uribe's argument by email, Corollary [[§68 Local Existence and Uniqueness#^cor-68-4|§68.4]], completed by maximality.)* Write $I = (\alpha, \beta) = (\alpha(p), \beta(p))$ and $c = \varphi_p$. By Corollary [[§68 Local Existence and Uniqueness#^cor-68-4|§68.4]],
+> *(Not from lecture: Uribe's argument by email, Corollary [[§68 Local Existence and Uniqueness#^cor-68-4|§68.4]], completed by maximality.)* Write $I = (\alpha, \beta) = (\alpha(p), \beta(p))$ and $c = \varphi^p$. By Corollary [[§68 Local Existence and Uniqueness#^cor-68-4|§68.4]],
 >
 > $$
 > c(s + T) = c(s) \qquad \text{whenever } s \in I \text{ and } s + T \in I . \tag{$\dagger$}
@@ -153,47 +153,55 @@ The integral curves lie on horizontal lines. Starting at $q$ the point moves to 
 
 So a maximal integral curve is either injective or periodic and defined for all time. Lee's Problem 9-1 separates out the constant curves, which are periodic with every period.
 
-> [!definition] Definition §69.2: Complete Vector Field
-> $\mathbf{X} \in \mathfrak{X}(M)$ is **complete** if $(\alpha(p), \beta(p)) = \mathbb{R}$ for every $p \in M$.
+*Lecture 25. A recap of the flow domain, with the cartoon redrawn: “I think I drew it correctly the first time at the end of Friday, and then I made a mistake by trying to change it.”* Given $\mathbf{X} \in \mathfrak{X}(M)$, every $p \in M$ has its maximal domain $(\alpha(p), \beta(p)) \ni 0$, which “can be all of $\mathbb{R}$ — we're lucky if it is, it simplifies things.” The flow domain and the flow (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]]) are
+
+$$
+\mathcal{D} = \{ (t, p) \in \mathbb{R} \times M : t \in (\alpha(p), \beta(p)) \}, \qquad \varphi : \mathcal{D} \to M, \quad (t, p) \longmapsto \varphi(t, p),
+$$
+
+where, “in English”, $\varphi(t, p)$ is the integral curve starting at $p$, evaluated at $t$.
+
+![[m591-69-3.svg]]
+
+*(Figure after the board.)* Time is horizontal and $M$ vertical here: over each $p$ the open segment $(\alpha(p), \beta(p)) \times \{p\}$, which always contains $(0, p)$; together they fill $\mathcal{D}$. The figure after Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]] in [[§70 Complete Vector Fields|§70]] is the same cartoon with the axes exchanged.
+
+*Careful.* “Our first definition of integral curve was any curve” $c : I \to M$ with $\dot c(t) = \mathbf{X}_{c(t)}$ for all $t \in I$ (Definition [[§67 Integral Curves#^def-67-1|§67.1]]), so $I$ need not contain $0$: translating an integral curve (Lemma [[§67 Integral Curves#^lem-67-4|§67.4]](1)) gives one whose domain misses $0$. The curve $t \mapsto \varphi^p(t)$, in the notation $\varphi_t(p) = \varphi(t, p) = \varphi^p(t)$ (Definition [[§68 Local Existence and Uniqueness#^def-68-1|§68.1]] and the paragraph after it), is an integral curve that is defined at $t = 0$, where it is $p$. A student asked whether $\varphi$ is the local maps of Theorem [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]] glued together; “yes, exactly … a uniqueness thing.”
+
+That $\mathcal{D}$ is open and $\varphi$ smooth (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)) was not proved in class; the proof, from Lee, is filled in after the theorem.
+
+> [!definition] Definition §69.2: Flow Box
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi : \mathcal{D} \to M$, and $p \in M$. A **flow box** (or **local domain**) at $p$ is a product $(-\varepsilon, \varepsilon) \times U \subseteq \mathcal{D}$, with $\varepsilon > 0$ and $U$ an open neighbourhood of $p$, on which $\varphi$ is smooth; together with the restriction $\varphi| : (-\varepsilon, \varepsilon) \times U \to M$.
 >
-> *Lee: Ch. 9, Complete Vector Fields*
+> *Lee: Ch. 9, Flows*
 
 ^def-69-2
 
-“This is the case where there are no headaches … you can go forever, and backwards in time as well, forever.” (“The existential question is: the time domain of the universe — is it complete?”) The rotation field and the Euler field are complete; the fields of Examples [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]] and [[§69 Maximal Integral Curves and Flows#^ex-69-2|§69.2]] are not.
+“Some people call it a flow box”; Uribe uses both names. “Locally in $p$, I can always find a little box like that.”
 
-“When you're doing theory, you wonder: are there results that have the conclusion ‘this vector field is complete’? It's hard to tell in general.” “A very powerful-seeming little result”:
-
-> [!theorem] Lemma §69.3: Uniform Time Lemma
-> Let $\mathbf{X} \in \mathfrak{X}(M)$. If there is $\varepsilon > 0$ such that $(-\varepsilon, \varepsilon) \subseteq (\alpha(p), \beta(p))$ for every $p \in M$, then $\mathbf{X}$ is complete.
+> [!theorem] Lemma §69.3: Flow Boxes Exist
+> Let $\mathbf{X} \in \mathfrak{X}(M)$. Every $p \in M$ has a flow box $(-\varepsilon, \varepsilon) \times U$.
 >
-> *Lee: Lemma 9.15*
+> *Lee: Theorem 9.12 (proof)*
 
 ^lem-69-3
 
-> [!proof]+ Proof (to be filled)
-> To be proved in Lecture 25 (“I'll prove this on Monday”).
+> [!proof]+ Proof
+> *(Lecture 25: “Recall”; the identification with the maximal flow is filled in.)* Theorem [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]] gives $\varepsilon > 0$, an open $U \ni p$ and a smooth $\varphi' : (-\varepsilon, \varepsilon) \times U \to M$ such that, for $q \in U$, $\varphi'(\cdot, q)$ is an integral curve starting at $q$. By Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], $(-\varepsilon, \varepsilon) \subseteq (\alpha(q), \beta(q))$ and $\varphi'(t, q) = \varphi^q(t) = \varphi(t, q)$. So $(-\varepsilon, \varepsilon) \times U \subseteq \mathcal{D}$, and $\varphi$ restricted to it is $\varphi'$, which is smooth.
 
 ^pf-69-3
 
-![[m591-68-3.svg]]
-
-*(Figure after the board.)* “The horizontal line is $M$, and then you have $\mathbb{R}$ here”: over each $p$, the maximal domain $(\alpha(p), \beta(p))$, between the graphs $t = \beta(p) > 0$ and $t = \alpha(p) < 0$. The lemma's hypothesis is that a uniform strip $(-\varepsilon, \varepsilon) \times M$ fits inside; its conclusion is that the whole of $\mathbb{R} \times M$ does. (“I always reverse the cartoon axes. Someday I'll learn.”)
-
-Announced for Monday, as consequences of Lemma [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]]:
-- every vector field on a compact manifold is complete: “compactness will assure that there is a uniform time” (Lee, Corollary 9.17);
-- every left-invariant vector field on a Lie group is complete, “because you're going to be able to translate solutions” (Lee, Theorem 9.18).
+*Uses:* [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
 
 *The flow. Lecture 23, the last minutes: “Let me tell you the bigger picture of what actually is happening, and then we'll see how much of that we get to prove … We'll prove a big chunk of this on Friday.”*
 
 > [!theorem] Theorem §69.4: Maximal Integral Curves and the Flow
 > Let $M$ be a smooth manifold and $\mathbf{X} \in \mathfrak{X}(M)$.
 >
-> 1. For every $p \in M$ there is a unique *maximal* integral curve of $\mathbf{X}$ starting at $p$, maximal with respect to its domain. Write it $\varphi_p$ and its domain $(\alpha(p), \beta(p))$, where $\alpha(p) \in [-\infty, 0)$ and $\beta(p) \in (0, +\infty]$: “$\alpha$ or $\beta$ may be $\pm\infty$.”
+> 1. For every $p \in M$ there is a unique *maximal* integral curve of $\mathbf{X}$ starting at $p$, maximal with respect to its domain. Write it $\varphi^p$ and its domain $(\alpha(p), \beta(p))$, where $\alpha(p) \in [-\infty, 0)$ and $\beta(p) \in (0, +\infty]$: “$\alpha$ or $\beta$ may be $\pm\infty$.”
 > 2. Let
 >
 > $$
-> \mathcal{D} = \bigcup_{p \in M} \big(\alpha(p), \beta(p)\big) \times \{p\} \ \subseteq\ \mathbb{R} \times M, \qquad \varphi : \mathcal{D} \longrightarrow M, \quad (t, p) \longmapsto \varphi_p(t).
+> \mathcal{D} = \bigcup_{p \in M} \big(\alpha(p), \beta(p)\big) \times \{p\} \ \subseteq\ \mathbb{R} \times M, \qquad \varphi : \mathcal{D} \longrightarrow M, \quad (t, p) \longmapsto \varphi^p(t).
 > $$
 >
 > Then $\mathcal{D}$ is open in $\mathbb{R} \times M$, and $\varphi$ is smooth.
@@ -202,12 +210,32 @@ Announced for Monday, as consequences of Lemma [[§69 Maximal Integral Curves an
 
 ^thm-69-4
 
-> [!proof]+ Proof of (1) (Lecture 24); (2) to be filled
-> Part (1) is Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]] above, proved in Lecture 24. Part (2) is to be proved. Uribe's indication for (1), in Lecture 23: “by uniqueness and something called the translation lemma, which is very easy to see,” there is “only one way to continue the curve forwards in time and then backwards in time until either you never stop or you run into the edge of the manifold.” Openness of $\mathcal{D}$ “is surprisingly long to prove.”
+> [!proof]+ Proof
+> *(1)* is Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]] above, proved in Lecture 24. Uribe's indication for (1), in Lecture 23: “by uniqueness and something called the translation lemma, which is very easy to see,” there is “only one way to continue the curve forwards in time and then backwards in time until either you never stop or you run into the edge of the manifold.” Openness of $\mathcal{D}$ “is surprisingly long to prove.”
+>
+> *(2)* *(Lecture 25: “The big theorem that we're not going to prove in detail … but of course it's in Lee, is that $\mathcal{D}$ is open. That actually takes quite a bit of work … somehow this is the hard part. And then once you have that, by local ODE theory … we get” the smoothness. Filled in, following Lee's proof of Theorem 9.12; the argument gives openness and smoothness together.)* Let $W$ be the set of $(t, p) \in \mathcal{D}$ that have a neighbourhood of the form $J \times U \subseteq \mathcal{D}$, with $J \subseteq \mathbb{R}$ an open interval containing $0$ and $t$ and $U \subseteq M$ open, on which $\varphi$ is smooth. Every point $(t', p')$ of such a $J \times U$ is again in $W$, with the same $J \times U$, since $J \ni 0, t'$. So $W$ is open in $\mathbb{R} \times M$, and $\varphi$ is smooth on $W$, smoothness being local. It suffices to show $W = \mathcal{D}$.
+>
+> By the flow boxes of Lemma [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]], every $p \in M$ has $\varepsilon > 0$ and an open $U \ni p$ with $(-\varepsilon, \varepsilon) \times U \subseteq W$. Suppose $(\tau, p_0) \in \mathcal{D} \setminus W$. Then $\tau \neq 0$; say $\tau > 0$ (for $\tau < 0$ the argument is the same, with the supremum of the times $t \le 0$ where $(t, p_0) \notin W$). Let
+>
+> $$
+> t_0 = \inf\{ t \ge 0 : (t, p_0) \notin W \} .
+> $$
+>
+> The flow box at $p_0$ gives $t_0 > 0$; and $t_0 \le \tau$, so $t_0$ lies in the interval $(\alpha(p_0), \beta(p_0))$, which contains $0$ and $\tau$. By the definition of $t_0$, $(t, p_0) \in W$ for $0 \le t < t_0$.
+>
+> Let $q_0 = \varphi(t_0, p_0)$, and take a flow box $(-\varepsilon, \varepsilon) \times U_0 \subseteq W$ at $q_0$. The curve $\varphi^{p_0}$ is continuous at $t_0$, so there is $t_1$ with $\max(0, t_0 - \varepsilon) < t_1 < t_0$ and $\varphi(t_1, p_0) \in U_0$. As $(t_1, p_0) \in W$, there is $J_1 \times U_1 \subseteq \mathcal{D}$ around it, with $J_1 \ni 0, t_1$, on which $\varphi$ is smooth; shrinking $U_1$, by continuity, $\varphi(\{t_1\} \times U_1) \subseteq U_0$.
+>
+> Fix $p \in U_1$ and let $q = \varphi_{t_1}(p) \in U_0$. The curve $t \mapsto \varphi_{t - t_1}(q)$ is defined for $|t - t_1| < \varepsilon$ (flow box at $q_0$), it is an integral curve (translation lemma), and at $t = t_1$ it equals $q = \varphi^p(t_1)$. By Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]] it agrees with $\varphi^p$ on the common domain, and the two together form an integral curve starting at $p$ on the open interval $\tilde J = J_1 \cup (t_1 - \varepsilon, t_1 + \varepsilon)$. By Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], $\tilde J \subseteq (\alpha(p), \beta(p))$ and this curve is $\varphi^p$. Hence $\tilde J \times U_1 \subseteq \mathcal{D}$, and
+>
+> $$
+> \varphi(t, p) = \varphi\big(t - t_1, \varphi(t_1, p)\big) \qquad \text{for } (t, p) \in (t_1 - \varepsilon, t_1 + \varepsilon) \times U_1 ,
+> $$
+>
+> a composite of smooth maps ($\varphi$ on $J_1 \times U_1$, then $\varphi$ on the flow box $(-\varepsilon, \varepsilon) \times U_0$). So $\varphi$ is smooth on the two open sets $J_1 \times U_1$ and $(t_1 - \varepsilon, t_1 + \varepsilon) \times U_1$, which cover $\tilde J \times U_1$. Now $\tilde J$ is an open interval containing $0$ and every $t \in [0, t_1 + \varepsilon)$, so $(t, p_0) \in W$ for all these $t$. As $t_1 + \varepsilon > t_0$, this contradicts the definition of $t_0$. Hence $W = \mathcal{D}$: $\mathcal{D}$ is open and $\varphi$ is smooth.
 
 ^pf-69-4
 
-*Uses:* [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
+*Uses:* [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]], [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]
 
 ![[m591-68-a1.gif|480]]
 
@@ -216,3 +244,61 @@ Announced for Monday, as consequences of Lemma [[§69 Maximal Integral Curves an
 $\varphi$ is “just flowing, like we were doing before”, except that the domain of the time variable depends on the point, as in Example [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]]. The theorem is the local picture of Theorem [[§68 Local Existence and Uniqueness#^thm-68-1|§68.1]], with its rectangles $(-\varepsilon, \varepsilon) \times U$, put together on the whole manifold. In the two examples:
 - Rotation (Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]]): $\alpha \equiv -\infty$, $\beta \equiv +\infty$, $\mathcal{D} = \mathbb{R} \times \mathbb{R}^2$.
 - Escape (Example [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]]): $\alpha \equiv -\infty$, $\beta(x, y) = 1/(xy)$, so $\mathcal{D} = \{ (t, (x, y)) : x, y > 0,\ t\,xy < 1 \}$, open, and $\varphi(t, (x, y)) = \big(x/(1 - xyt),\ y\big)$, smooth on $\mathcal{D}$.
+
+“So now what I want to show you first is the so-called group law. It's a fantastic thing, and easy to prove.”
+
+> [!theorem] Proposition §69.5: The Group Law
+> Let $\mathbf{X} \in \mathfrak{X}(M)$, $p \in M$ and $s \in (\alpha(p), \beta(p))$, and put $q = \varphi_s(p)$. Then:
+>
+> 1. $(\alpha(q), \beta(q)) = (\alpha(p) - s, \beta(p) - s)$;
+> 2. $\varphi_t(\varphi_s(p)) = \varphi_{t+s}(p)$ for every $t$ with $t + s \in (\alpha(p), \beta(p))$.
+>
+> *Lee: Theorem 9.12(b)*
+
+^prop-69-5
+
+> [!proof]+ Proof
+> *(Lecture 25. On the board: fix $s$; $t \mapsto \varphi_t(\varphi_s(p))$ is an integral curve starting at $\varphi_s(p)$; so is $t \mapsto \varphi_{t+s}(p) = \varphi^p(t + s)$, by the translation lemma (“we're just translating the $t$ variable by $s$”); “by uniqueness, these curves agree.” The domains in (1) are filled in.)* Let
+>
+> $$
+> c(t) = \varphi^p(t + s), \qquad t \in (\alpha(p) - s, \beta(p) - s).
+> $$
+>
+> By the translation lemma (Lemma [[§67 Integral Curves#^lem-67-4|§67.4]](1)), $c$ is an integral curve of $\mathbf{X}$, and $c(0) = \varphi^p(s) = q$. So $c$ starts at $q$, and by Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
+>
+> $$
+> (\alpha(p) - s, \beta(p) - s) \subseteq (\alpha(q), \beta(q)) \qquad\text{and}\qquad \varphi^q(t) = \varphi^p(t + s) \ \text{ for } t \in (\alpha(p) - s, \beta(p) - s). \tag{$\ast\ast$}
+> $$
+>
+> In particular $-s \in (\alpha(q), \beta(q))$ and $\varphi_{-s}(q) = \varphi^p(0) = p$. The same argument with $q$ and $-s$ in place of $p$ and $s$ gives $(\alpha(q) + s, \beta(q) + s) \subseteq (\alpha(p), \beta(p))$, that is, $(\alpha(q), \beta(q)) \subseteq (\alpha(p) - s, \beta(p) - s)$. This proves (1). Then (2) is $(\ast\ast)$: if $t + s \in (\alpha(p), \beta(p))$, then $\varphi_t(\varphi_s(p)) = \varphi^q(t) = \varphi^p(t + s) = \varphi_{t+s}(p)$.
+
+^pf-69-5
+
+*Uses:* [[§67 Integral Curves#^lem-67-4|§67.4]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
+
+> [!theorem] Corollary §69.6: Flows Commute with Themselves
+> When $s$, $t$ and $s + t$ all lie in $(\alpha(p), \beta(p))$,
+>
+> $$
+> \varphi_t\big(\varphi_s(p)\big) = \varphi_s\big(\varphi_t(p)\big) = \varphi_{t + s}(p) .
+> $$
+
+^cor-69-6
+
+> [!proof]+ Proof
+> Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]] for the pair $(s, t)$, and for the pair $(t, s)$, as $s + t = t + s$.
+
+^pf-69-6
+
+*Uses:* [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]]
+
+“You always have to worry about when things are defined.”
+
+![[m591-69-4.svg]]
+
+*(Not from lecture; figure added.)* The group law along one integral curve: flowing for time $s$ (red) and then for time $t$ (green) from where one has arrived lands at the same point as flowing for time $t + s$ from $p$ (dashed). The curve is a spiral, $\varphi^p(\tau) = 2.2\,e^{-0.12\tau}(\cos\tau, \sin\tau)$, chosen for the picture.
+
+
+![[m591-69-a1.gif|560]]
+
+*(Not from lecture; animation added, vault only.)* The group law as an identity of maps. A disc of initial points under the spiral flow $\dot x = -0.12x - y$, $\dot y = x - 0.12y$ (chosen for the picture). Left, $\varphi_t \circ \varphi_s$: the disc flows for time $s = 1.7$ (red trail), then the clock is restarted and it flows for time $t = 1.9$ (green). Right, $\varphi_{t+s}$: one clock runs for $3.6$. Both end in the same place.

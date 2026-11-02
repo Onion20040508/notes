@@ -27,7 +27,7 @@ These notes follow the course, and Lee's *Introduction to Smooth Manifolds* (2nd
 | $H_{x_0}$, the isotropy group | $G_p$ | Definition [[§14 Homogeneous Spaces#^def-14-3\|§14.3]]. |
 | $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$ | $F : G/G_p \to M$ | Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3\|§15.3]]; Lee, Theorem 21.18. |
 | $\mathfrak{g} = T^{\mathrm{geo}}_I G$; from [[§60 Lie Groups and Left-Invariant Vector Fields\|§60]], the left-invariant fields | $\mathrm{Lie}(G) \cong T_eG$ | Before [[§60 Lie Groups and Left-Invariant Vector Fields\|§60]] the notes' $\mathfrak{g}$ is the geometric tangent space at $I$; from Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4\|§60.4]] it is Lee's $\mathrm{Lie}(G)$, identified with $T_eG$ by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7\|§60.7]]. |
-| $\varphi_t(q) = \varphi_q(t) = \varphi(t, q)$; $\dot c(t)$ | $\theta_t(p) = \theta^{(p)}(t) = \theta(t, p)$; $\gamma'(t)$ | The flow and its integral curves (Definition [[§68 Local Existence and Uniqueness#^def-68-1\|§68.1]]); the subscript is a time for $\varphi_t$, a point for $\varphi_q$. |
+| $\varphi_t(q) = \varphi^q(t) = \varphi(t, q)$ (Lectures 23–24: $\varphi_q(t)$); $\dot c(t)$ | $\theta_t(p) = \theta^{(p)}(t) = \theta(t, p)$; $\gamma'(t)$ | The flow and its integral curves (Definition [[§68 Local Existence and Uniqueness#^def-68-1\|§68.1]]); the subscript is a time for $\varphi_t$, a point for $\varphi_q$. |
 | $\widetilde{\mathbb{R}}$: the chart $\sqrt[3]{x}$ | Example 1.23: the chart $x^3$ | Two different non-standard structures — the transition map between them is $y \mapsto y^9$ — both diffeomorphic to $\mathbb{R}$ (Corollary [[§19 Smooth Functions and Smooth Maps#^cor-19-9\|§19.9]]). |
 
 ## A.2 Where the routes diverge
@@ -88,7 +88,8 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§66 Partitions of Unity\|§66]] Partitions of unity | Chapter 2, *Partitions of Unity* (Lemmas 2.20–2.22, Theorem 2.23); Chapter 1, *Paracompactness* (Theorem 1.15); Proposition A.60; Chapter 2, *Applications of Partitions of Unity* (Proposition 2.28) |
 | [[§67 Integral Curves\|§67]] Integral curves | Chapter 9, *Integral Curves* ((9.1), Lemmas 9.3 and 9.4, Proposition 9.6) |
 | [[§68 Local Existence and Uniqueness\|§68]] Local existence and uniqueness | Chapter 9, *Integral Curves* (Example 9.1, Proposition 9.2); *Flows* (uniqueness, in the proof of Theorem 9.12); Appendix D (Theorem D.1); Problem 9-1 |
-| [[§69 Maximal Integral Curves and Flows\|§69]] Maximal integral curves and flows | Chapter 9, *Flows* (Example 9.10, Theorem 9.12); *Complete Vector Fields* (Lemma 9.15, Corollary 9.17, Theorem 9.18); Problem 9-1 |
+| [[§69 Maximal Integral Curves and Flows\|§69]] Maximal integral curves and flows | Chapter 9, *Flows* (Example 9.10, Theorem 9.12, with its proof; the group law (9.7)); Problem 9-1 |
+| [[§70 Complete Vector Fields\|§70]] Complete vector fields | Chapter 9, *Flows* (Proposition 9.6, Proposition 9.7, Theorem 9.12(c)); *Complete Vector Fields* (Lemma 9.15, Theorem 9.16, Corollary 9.17, Theorem 9.18) |
 
 ## A.4 Index from Lee to these notes
 
@@ -206,10 +207,14 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 9.2 | [[§68 Local Existence and Uniqueness#^thm-68-2\|Thm. §68.2]] |
 | Lemma 9.3 | [[§67 Integral Curves#^lem-67-4\|Lem. §67.4]] |
 | Lemma 9.4 | [[§67 Integral Curves#^lem-67-4\|Lem. §67.4]] |
-| Proposition 9.6 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]] |
+| Proposition 9.6 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]], [[§70 Complete Vector Fields#^prop-70-5\|Prop. §70.5]] |
+| Proposition 9.7 | [[§70 Complete Vector Fields#^thm-70-4\|Thm. §70.4]] |
 | Example 9.10 | [[§69 Maximal Integral Curves and Flows#^ex-69-1\|Ex. §69.1]] |
-| Theorem 9.12 | [[§68 Local Existence and Uniqueness#^prop-68-3\|Prop. §68.3]], [[§69 Maximal Integral Curves and Flows#^thm-69-4\|Thm. §69.4]], [[§69 Maximal Integral Curves and Flows#^def-69-1\|Def. §69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1\|Prop. §69.1]] |
-| Lemma 9.15 | [[§69 Maximal Integral Curves and Flows#^lem-69-3\|Lem. §69.3]] |
+| Theorem 9.12 | [[§68 Local Existence and Uniqueness#^prop-68-3\|Prop. §68.3]], [[§69 Maximal Integral Curves and Flows#^def-69-1\|Def. §69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1\|Prop. §69.1]], [[§69 Maximal Integral Curves and Flows#^thm-69-4\|Thm. §69.4]], [[§69 Maximal Integral Curves and Flows#^lem-69-3\|Lem. §69.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-5\|Prop. §69.5]], [[§70 Complete Vector Fields#^prop-70-3\|Prop. §70.3]] |
+| Lemma 9.15 | [[§70 Complete Vector Fields#^lem-70-1\|Lem. §70.1]] |
+| Corollary 9.17 | [[§70 Complete Vector Fields#^thm-70-2\|Thm. §70.2]] |
+| Theorem 9.18 | [[§70 Complete Vector Fields#^thm-70-6\|Thm. §70.6]] |
+| Problem 9-1 | [[§68 Local Existence and Uniqueness#^cor-68-4\|Cor. §68.4]], [[§69 Maximal Integral Curves and Flows#^prop-69-2\|Prop. §69.2]] |
 | Example 10.3 | [[§41 Examples of Fibrations#^ex-41-2\|Ex. §41.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |

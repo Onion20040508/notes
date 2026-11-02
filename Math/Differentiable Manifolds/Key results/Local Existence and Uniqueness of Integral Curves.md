@@ -19,6 +19,8 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§68 Local Existence and Uniqueness#^prop-68-3|Proposition §68.3: Uniqueness on the Common Domain]]
+- [[§69 Maximal Integral Curves and Flows#^lem-69-3|Lemma §69.3: Flow Boxes Exist]]
+- [[§70 Complete Vector Fields#^prop-70-5|Proposition §70.5: Naturality of Integral Curves]]
 
 ## Connections
 - TODO
