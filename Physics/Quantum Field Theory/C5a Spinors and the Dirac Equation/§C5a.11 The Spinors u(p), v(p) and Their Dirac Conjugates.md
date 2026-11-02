@@ -166,7 +166,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 > u^{s\dagger}(p) = \bigl(\xi^{s\dagger}\sqrt{p\cdot\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\bar\sigma}\bigr) .
 > $$
 >
-> **Step 3** ($\gamma^0$ swaps the halves). In the chiral basis $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]). A row times a block matrix is $(c, d)\begin{pmatrix}A & B\\ C & D\end{pmatrix} = (cA + dC,\ cB + dD)$; here $(a^\dagger, b^\dagger)\gamma^0 = (a^\dagger\cdot0 + b^\dagger\mathbb 1,\ a^\dagger\mathbb 1 + b^\dagger\cdot0) = (b^\dagger, a^\dagger)$. Hence
+> **Step 3** ($\gamma^0$ swaps the halves). In the chiral basis $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]). A row times a block matrix is $(c, d)\begin{pmatrix}A & B\\ C & D\end{pmatrix} = (cA + dC,\ cB + dD)$; here $(a^\dagger, b^\dagger)\gamma^0 = (a^\dagger\cdot0 + b^\dagger\mathbb 1,\ a^\dagger\mathbb 1 + b^\dagger\cdot0) = (b^\dagger, a^\dagger)$. Hence
 >
 > $$
 > \bar u^s(p) = u^{s\dagger}(p)\,\gamma^0 = \bigl(\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma}\bigr) .
@@ -204,7 +204,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 
 ^der-c5a-11-2
 
-*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-2|Def. §C5a.10.2]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|Def. §C5a.10.5]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|Theorem §C5a.10.7]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-3|Theorem §C5a.10.3]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§25 Positive Operators#^ladr-7-34|LADR Def. 7.34]], [[§25 Positive Operators#^ladr-7-38|LADR Thm. 7.38]], [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]
+*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-2|Def. §C5a.10.2]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|Def. §C5a.10.5]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|Theorem §C5a.10.7]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-3|Theorem §C5a.10.3]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§25 Positive Operators#^ladr-7-34|LADR Def. 7.34]], [[§25 Positive Operators#^ladr-7-38|LADR Thm. 7.38]], [[§25 Positive Operators#^ladr-7-39|LADR 7.39]]
 
 > [!derivation]- Derivation (second route: the Hermitian conjugate of the Dirac equation)
 > This route uses only $(\slashed{p} - m)\,u^s(p) = 0$ ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]]) and the Hermiticity of the $\gamma$'s, not the explicit column.
@@ -347,7 +347,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 >
 > The minus sign is still in the second half: the dagger moved nothing.
 >
-> **Step 3** ($\gamma^0$ swaps the halves). With $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]) and the row rule $(c, d)\begin{pmatrix}A & B\\ C & D\end{pmatrix} = (cA + dC,\ cB + dD)$, $(a^\dagger, b^\dagger)\gamma^0 = (a^\dagger\cdot0 + b^\dagger\mathbb 1,\ a^\dagger\mathbb 1 + b^\dagger\cdot0) = (b^\dagger, a^\dagger)$. Hence
+> **Step 3** ($\gamma^0$ swaps the halves). With $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]) and the row rule $(c, d)\begin{pmatrix}A & B\\ C & D\end{pmatrix} = (cA + dC,\ cB + dD)$, $(a^\dagger, b^\dagger)\gamma^0 = (a^\dagger\cdot0 + b^\dagger\mathbb 1,\ a^\dagger\mathbb 1 + b^\dagger\cdot0) = (b^\dagger, a^\dagger)$. Hence
 >
 > $$
 > \bar v^s(p) = v^{s\dagger}(p)\,\gamma^0 = \bigl(-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma}\bigr) .
@@ -385,7 +385,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 
 ^der-c5a-11-4
 
-*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-2|Def. §C5a.10.2]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|Def. §C5a.10.5]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|Theorem §C5a.10.7]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-3|Theorem §C5a.10.3]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2|Derivation §C5a.11.2]]
+*Uses:* [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-2|Def. §C5a.10.2]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|Def. §C5a.10.5]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|Theorem §C5a.10.7]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-3|Theorem §C5a.10.3]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2|Derivation §C5a.11.2]]
 
 > [!derivation]- Derivation (second route: the Hermitian conjugate of the Dirac equation)
 > This route uses only $(\slashed{p} + m)\,v^s(p) = 0$ ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]]) and the Hermiticity of the $\gamma$'s.

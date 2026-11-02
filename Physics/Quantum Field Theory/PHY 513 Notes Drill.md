@@ -4540,7 +4540,7 @@ $V = \mathbb C^{2j_++1}\otimes\mathbb C^{2j_-+1}$ with $\mathbf J_+ = \mathbf J^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Definition [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3|§CB.17.3]] The Representation (j₊, j₋); neither label is the spin: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-2|§C3.2, Remark: Neither label is the spin]]; rotation content: Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|§CB.17.9]] Rotation Content and the Sign of a 2π Rotation; the catalogue of the course's fields: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-3|§C3.2, Remark: The representations met in the course]].
+> - Definition [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3|§CB.17.3]] The Representation (j₊, j₋); neither label is the spin: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-3|§C3.2, Remark: Neither label is the spin]]; rotation content: Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|§CB.17.9]] Rotation Content and the Sign of a 2π Rotation; the catalogue of the course's fields: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]].
 
 ### [B] Acting as spin j
 
@@ -4677,7 +4677,7 @@ With $K_i = \mathcal J^{0i}$ (these notes, PS) $(\frac12, 0)$ is PS's $\psi_L$; 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]]; the second route of the label question: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-2b|Derivation §C3.2.2, second route]] (convention bullet); the same swap for $\mathbf E \mp i\mathbf B$: [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-1|§C3.3, Caution: Which half of F is called (1, 0)]].
+> - [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]]; the second route of the label question: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-9b|Derivation §C3.2.9, second route]] (convention bullet); the same swap for $\mathbf E \mp i\mathbf B$: [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-1|§C3.3, Caution: Which half of F is called (1, 0)]].
 
 ## Derivations T7
 
@@ -4935,7 +4935,7 @@ $D(e^\omega) = e^{-i\boldsymbol\theta\cdot\mathbf J - i\boldsymbol\eta\cdot\math
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (exponentiating a generator)
-> - Steps 1–3 of [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^der-cb-6-3|Derivation §CB.6.3]]; step 4 for rotations and boosts; the $(\frac12, 0)$ case: step 3 of [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-1|Derivation §C3.2.1]].
+> - Steps 1–3 of [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^der-cb-6-3|Derivation §CB.6.3]]; step 4 for rotations and boosts; the $(\frac12, 0)$ case: step 3 of [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-8|Derivation §C3.2.8]].
 
 ### [B] (j₊, j₋) is irreducible ★
 
@@ -4973,13 +4973,13 @@ Every representation of the Lorentz algebra on a finite-dimensional complex spac
 
 ### [PS] The (½, 0) and (0, ½) representations
 
-The table of $\mathbf J_\pm$, $\mathbf J$, $\mathbf K$ and $D(e^\omega)$ on $(\frac12, 0)$ and $(0, \frac12)$, matching PS's $\psi_L$, $\psi_R$, see Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|§C3.2.1]] The Representations (½, 0) and (0, ½). → drilled as [[PHY 513 PS Drill#^ps5-1-b|PS5.1(b)]].
+The table of $\mathbf J_\pm$, $\mathbf J$, $\mathbf K$ and $D(e^\omega)$ on $(\frac12, 0)$ and $(0, \frac12)$, matching PS's $\psi_L$, $\psi_R$, see Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|§C3.2.8]] The Representations (½, 0) and (0, ½). → drilled as [[PHY 513 PS Drill#^ps5-1-b|PS5.1(b)]].
 
 ^nd-thm-c3-2-1
 
 ### [B] The vector representation is (½, ½): Casimirs and classification ★★
 
-In the basis $(v^0, v^1, v^2, v^3)$, $\mathbf J^2 = \operatorname{diag}(0, 2, 2, 2)$, $\mathbf K^2 = -\operatorname{diag}(3, 1, 1, 1)$, $\mathbf J\cdot\mathbf K = \mathbf K\cdot\mathbf J = 0$, so $\mathbf J_\pm^2 = \frac34\mathbb 1$; with the classification and the dimension count, the vector representation is equivalent to $(\frac12, \frac12)$ by an invertible intertwiner, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-7|§CB.17.7]] The Vector Representation Is (½, ½) (the course's form Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-2|§C3.2.2]] The Vector Representation Is (½, ½)). *Source: the user's notes Ch. 7 §7.3, §7.4.3 · Yu §4.2.2 · the rigor fix of 2026-10-13 (the user's request)*
+In the basis $(v^0, v^1, v^2, v^3)$, $\mathbf J^2 = \operatorname{diag}(0, 2, 2, 2)$, $\mathbf K^2 = -\operatorname{diag}(3, 1, 1, 1)$, $\mathbf J\cdot\mathbf K = \mathbf K\cdot\mathbf J = 0$, so $\mathbf J_\pm^2 = \frac34\mathbb 1$; with the classification and the dimension count, the vector representation is equivalent to $(\frac12, \frac12)$ by an invertible intertwiner, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-7|§CB.17.7]] The Vector Representation Is (½, ½) (the course's form Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|§C3.2.9]] The Vector Representation Is (½, ½)). *Source: the user's notes Ch. 7 §7.3, §7.4.3 · Yu §4.2.2 · the rigor fix of 2026-10-13 (the user's request)*
 
 ^nd-thm-cb-17-7
 
@@ -4994,7 +4994,7 @@ In the basis $(v^0, v^1, v^2, v^3)$, $\mathbf J^2 = \operatorname{diag}(0, 2, 2,
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (Casimirs + classification)
 > - Steps 1–2 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7|proof of Theorem §CB.17.7]] (generators), steps 3–5 (squares and mixed products), step 6 (Casimirs), step 7 (i)–(iv) (identification with Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-6|§CB.17.6]] Every Finite-Dimensional Representation Is a Sum of (j₊, j₋) and Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-5|§CB.17.5]] (j₊, j₋) Is Irreducible).
-> - The course's $4\times4$ computation: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-2|Derivation §C3.2.2]]; components, not states: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-3|§C3.2, Caution: Components, not states]].
+> - The course's $4\times4$ computation: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-9|Derivation §C3.2.9]]; components, not states: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-3|§C3.2, Caution: Components, not states]].
 
 ### [B] The vector representation is (½, ½): the explicit intertwiner ★★
 
@@ -5017,7 +5017,7 @@ $T(v) = (v_\mu\sigma^\mu)\,i\sigma^2$, read in $\mathbb C^2\otimes\mathbb C^2$ t
 
 ### [PS] Labels of a four-vector and of a left-handed Weyl spinor
 
-The short-response route: dimension $4$, then the $2\pi$ rotation decides $(\frac12, \frac12)$; $\psi_L$ is $(\frac12, 0)$, see [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-2b|Derivation §C3.2.2, second route]]. → drilled as [[PHY 513 PS Drill#^ps7-1-d|PS7.1(d)]].
+The short-response route: dimension $4$, then the $2\pi$ rotation decides $(\frac12, \frac12)$; $\psi_L$ is $(\frac12, 0)$, see [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-9b|Derivation §C3.2.9, second route]]. → drilled as [[PHY 513 PS Drill#^ps7-1-d|PS7.1(d)]].
 
 ^nd-der-c3-2-2b
 
@@ -5088,7 +5088,7 @@ $\delta\mathbf E = \boldsymbol\theta\times\mathbf E - \boldsymbol\eta\times\math
 
 ### [C] Parity exchanges the two copies ★
 
-The parity automorphism $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\mathbf K$ preserves the algebra and swaps $\mathbf J_+ \leftrightarrow \mathbf J_-$; on four-vectors it is conjugation by $\mathcal P = \operatorname{diag}(1, -1, -1, -1)$, and a parity-invariant field contains $(j_+, j_-)$ and $(j_-, j_+)$ with equal multiplicity, see Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-3|§C3.2.3]] Parity on Four-Vectors; Parity-Invariant Fields Contain Both Copies and Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|§CB.17.13]] The Parity Automorphism Exchanges the Two Copies. *Source: the user's notes Ch. 7 §7.4.6 · Lecture 8 transcript (both Weyl halves needed for a mass)*
+The parity automorphism $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\mathbf K$ preserves the algebra and swaps $\mathbf J_+ \leftrightarrow \mathbf J_-$; on four-vectors it is conjugation by $\mathcal P = \operatorname{diag}(1, -1, -1, -1)$, and a parity-invariant field contains $(j_+, j_-)$ and $(j_-, j_+)$ with equal multiplicity, see Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-10|§C3.2.10]] Parity on Four-Vectors; Parity-Invariant Fields Contain Both Copies and Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|§CB.17.13]] The Parity Automorphism Exchanges the Two Copies. *Source: the user's notes Ch. 7 §7.4.6 · Lecture 8 transcript (both Weyl halves needed for a mass)*
 
 ^nd-thm-c3-2-3
 
@@ -5099,7 +5099,7 @@ The parity automorphism $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\math
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–3 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-13|Derivation §CB.17.13]], step 4 (equal multiplicity); the vector case: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-3|Derivation §C3.2.3]].
+> - Steps 1–3 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-13|Derivation §CB.17.13]], step 4 (equal multiplicity); the vector case: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-10|Derivation §C3.2.10]].
 
 ### [C] Complex conjugation exchanges the two copies ★
 
@@ -5114,7 +5114,7 @@ $\bar D(\Lambda) = D(\Lambda)^\ast$ is a representation with generators $-D(\mat
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–4 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14|Derivation §CB.17.14]], step 6 (assemble); the spin-½ case: Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|§C5a.5.4]] Dotted Indices, Conjugation and the Invariant Pairings, Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|§C5a.1.1]] Identities of σ^μ and σ̄^μ (part 3).
+> - Steps 1–4 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14|Derivation §CB.17.14]], step 6 (assemble); the spin-½ case: Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|§C5a.5.4]] Dotted Indices, Conjugation and the Invariant Pairings, Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ (part 3).
 
 ### [B] No finite-dimensional representation is unitary ★★
 
@@ -5254,7 +5254,7 @@ Four $n\times n$ matrices with $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 
 
 ### [B] The matrices σ^μ and σ̄^μ
 
-$\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$, $\sigma_\mu = (\mathbb 1, -\boldsymbol\sigma)$; $X = x_\mu\sigma^\mu = x^0 - \mathbf x\cdot\boldsymbol\sigma$, $\bar X = x_\mu\bar\sigma^\mu = x^0 + \mathbf x\cdot\boldsymbol\sigma$, see Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|§C5a.1.2]] The Matrices σ^μ and σ̄^μ. *Source: Lecture 8, slide "Dirac Equation in 2-Component Form" · Lecture 9, "Cheat Sheet"*
+$\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$, $\sigma_\mu = (\mathbb 1, -\boldsymbol\sigma)$; $X = x_\mu\sigma^\mu = x^0 - \mathbf x\cdot\boldsymbol\sigma$, $\bar X = x_\mu\bar\sigma^\mu = x^0 + \mathbf x\cdot\boldsymbol\sigma$, see Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|§C5a.1.3]] The Matrices σ^μ and σ̄^μ. *Source: Lecture 8, slide "Dirac Equation in 2-Component Form" · Lecture 9, "Cheat Sheet"*
 
 ^nd-def-c5a-1-2
 
@@ -5265,11 +5265,11 @@ $\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\b
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|§C5a.1.2]] The Matrices σ^μ and σ̄^μ; identities: Steps 1–4 of [[§C5a.1 Spinor Space and the Clifford Action#^der-c5a-1-1|Derivation §C5a.1.1]].
+> - Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|§C5a.1.3]] The Matrices σ^μ and σ̄^μ; identities: Steps 1–4 of [[§C5a.1 Spinor Space and the Clifford Action#^der-c5a-1-6|Derivation §C5a.1.6]].
 
 ### [B] The chiral basis
 
-$\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, $\gamma^i = \begin{pmatrix}0 & \sigma^i\\ -\sigma^i & 0\end{pmatrix}$, i.e. $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$, with $\psi = (\psi_L, \psi_R)$, see Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|§C5a.1.3]] The Chiral Basis. *Source: Lecture 7, slide "Explicit Form of Dirac Matrices" · Lecture 8, "Cheat Sheet I" and slide "Dirac Equation in 2-Component Form"*
+$\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, $\gamma^i = \begin{pmatrix}0 & \sigma^i\\ -\sigma^i & 0\end{pmatrix}$, i.e. $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$, with $\psi = (\psi_L, \psi_R)$, see Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|§C5a.1.4]] The Chiral Basis. *Source: Lecture 7, slide "Explicit Form of Dirac Matrices" · Lecture 8, "Cheat Sheet I" and slide "Dirac Equation in 2-Component Form"*
 
 ^nd-def-c5a-1-3
 
@@ -5280,7 +5280,7 @@ $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, $\gamma^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|§C5a.1.3]] The Chiral Basis; bases across sources: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-2|§C5a.5, Caution: Bases and conventions across the sources]]; why each basis is used: [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-5|§C5a.5, Remark: Why each basis is used]], Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-17|§CB.12.17]] γ⁰ and γ⁵ Cannot Be Diagonal in the Same Basis.
+> - Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|§C5a.1.4]] The Chiral Basis; bases across sources: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-2|§C5a.5, Caution: Bases and conventions across the sources]]; why each basis is used: [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-5|§C5a.5, Remark: Why each basis is used]], Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-17|§CB.12.17]] γ⁰ and γ⁵ Cannot Be Diagonal in the Same Basis.
 
 ### [B] Spinor space
 
@@ -5692,7 +5692,7 @@ The Weyl equation $i\bar\sigma^\mu\partial_\mu\psi_L = 0$ implies $\partial^2\ps
 
 ### [A] The chiral matrices satisfy the Clifford algebra ★★
 
-$\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 1_4$ for the chiral matrices, with $\gamma^\mu\gamma^\nu = \operatorname{diag}(\sigma^\mu\bar\sigma^\nu, \bar\sigma^\mu\sigma^\nu)$, see Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|§C5a.1.2]] The Chiral Matrices Satisfy the Clifford Algebra. **[class exercise, Lecture 7]** ("So here I checked some of these anti-commutators. Of course, I should check the rest as well"). *Source: Lecture 7, slide "Explicit Form of Dirac Matrices" ("Sample check of Dirac algebra") and transcript (Sep 23)*
+$\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 1_4$ for the chiral matrices, with $\gamma^\mu\gamma^\nu = \operatorname{diag}(\sigma^\mu\bar\sigma^\nu, \bar\sigma^\mu\sigma^\nu)$, see Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-7|§C5a.1.7]] The Chiral Matrices Satisfy the Clifford Algebra. **[class exercise, Lecture 7]** ("So here I checked some of these anti-commutators. Of course, I should check the rest as well"). *Source: Lecture 7, slide "Explicit Form of Dirac Matrices" ("Sample check of Dirac algebra") and transcript (Sep 23)*
 
 ^nd-thm-c5a-1-2
 
@@ -5704,12 +5704,12 @@ $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 1_4$ for the chiral matrices, w
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Step 1 of [[§C5a.1 Spinor Space and the Clifford Action#^der-c5a-1-2|Derivation §C5a.1.2]] (block product), step 2 (anticommutator via Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|§C5a.1.1]] Identities of σ^μ and σ̄^μ, part 2), step 3 (the lecture's explicit check).
+> - Step 1 of [[§C5a.1 Spinor Space and the Clifford Action#^der-c5a-1-7|Derivation §C5a.1.7]] (block product), step 2 (anticommutator via Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ, part 2), step 3 (the lecture's explicit check).
 > - Uniqueness up to basis: Theorem [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12|§CB.13.12]] Pauli's Fundamental Theorem.
 
 ### [B] Identities of σ^μ and σ̄^μ ★
 
-$\operatorname{tr}(\sigma^\mu\bar\sigma^\nu) = 2g^{\mu\nu}$; $\sigma^\mu\bar\sigma^\nu + \sigma^\nu\bar\sigma^\mu = 2g^{\mu\nu}$ (and with bars exchanged), so $X\bar X = x^2$; $\sigma^2(\sigma^\mu)^\ast\sigma^2 = \bar\sigma^\mu$, see Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|§C5a.1.1]] Identities of σ^μ and σ̄^μ. *Source: Lecture 9, slide "Practical Manipulations" ($(p\cdot\sigma)(p\cdot\bar\sigma) = m^2$) · the user's notes Ch. 8*
+$\operatorname{tr}(\sigma^\mu\bar\sigma^\nu) = 2g^{\mu\nu}$; $\sigma^\mu\bar\sigma^\nu + \sigma^\nu\bar\sigma^\mu = 2g^{\mu\nu}$ (and with bars exchanged), so $X\bar X = x^2$; $\sigma^2(\sigma^\mu)^\ast\sigma^2 = \bar\sigma^\mu$, see Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ. *Source: Lecture 9, slide "Practical Manipulations" ($(p\cdot\sigma)(p\cdot\bar\sigma) = m^2$) · the user's notes Ch. 8*
 
 ^nd-thm-c5a-1-1
 
@@ -5720,7 +5720,7 @@ $\operatorname{tr}(\sigma^\mu\bar\sigma^\nu) = 2g^{\mu\nu}$; $\sigma^\mu\bar\sig
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Steps 1–4 of [[§C5a.1 Spinor Space and the Clifford Action#^der-c5a-1-1|Derivation §C5a.1.1]].
+> - Steps 1–4 of [[§C5a.1 Spinor Space and the Clifford Action#^der-c5a-1-6|Derivation §C5a.1.6]].
 
 ### [PS] The Dirac matrices rotate as a vector
 

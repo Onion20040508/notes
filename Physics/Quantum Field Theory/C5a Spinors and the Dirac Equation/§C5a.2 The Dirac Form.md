@@ -38,7 +38,7 @@ Layer 3 is a Hermitian form on spinor space: a Hermitian form, its matrix, how i
 ## Hermiticity in the chiral basis
 
 > [!theorem] Theorem §C5a.2.1: Hermiticity of the Dirac Matrices
-> 1. In the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]), $\gamma^{0\dagger} = \gamma^0$ and $\gamma^{i\dagger} = -\gamma^i$, equivalently $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$; each $\gamma^\mu$ is unitary.
+> 1. In the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]), $\gamma^{0\dagger} = \gamma^0$ and $\gamma^{i\dagger} = -\gamma^i$, equivalently $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$; each $\gamma^\mu$ is unitary.
 > 2. The same holds in any basis in which each $\gamma^\mu$ is a normal matrix, and in particular in any basis reached from the chiral one by a unitary matrix.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.1 (Derivation "Hermiticity of the Dirac matrices", eq. (gammadagger)) · Yu §5.1, eqs. (5.4)–(5.7) · the user's pre-course notes, §5.1 ("Hermiticity"; "hypothesis … arrangeable by a change of basis") · PHY 513, Problem Set 5, Problem 5(b) (the chiral-basis check, as the user wrote it)*
@@ -62,7 +62,7 @@ Layer 3 is a Hermitian form on spinor space: a Hermitian form, its matrix, how i
 
 ^der-c5a-2-1
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]
 
 ### The mathematics used here: the Dirac form
 

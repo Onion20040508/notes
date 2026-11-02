@@ -15,7 +15,7 @@ What are the solutions of the free Dirac equation? The equation and its covarian
 
 **Setup.** Classical, free and on shell: the plane-wave solutions of the free Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), with $p^0 = +E_{\mathbf p}$; $u^s(p)$, $v^s(p)$ are c-number columns, normalized as in [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-4|Def. §C5a.10.4]] ($\bar u^ru^s = 2m\,\delta^{rs}$, $u^{r\dagger}u^s = 2E_{\mathbf p}\delta^{rs}$). Rest-frame statements need $m > 0$; the formulas for $u$, $v$ and their conjugates hold for every $m \ge 0$. The boosts and square roots (Theorems §C5a.10.5–§C5a.10.8) are matrix statements, exact. The quantum field uses these same spinors as its mode functions ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]]).
 
-*Conventions* ([[Larsen PHY 513]]): chiral basis $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]) with $\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]); $p^0 = E_{\mathbf p} = +\sqrt{\mathbf p^2 + m^2}$ always; $\slashed{p} \equiv \gamma^\mu p_\mu$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]); $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$, read actively, the boost to rapidity $\eta$ along $+z$ having $\omega_{03} = -\omega_{30} = \eta$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]). Two-spinors are $\xi$, $\eta^s$ (with an index); the rapidity is $\eta$ (never with an index).
+*Conventions* ([[Larsen PHY 513]]): chiral basis $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]) with $\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]); $p^0 = E_{\mathbf p} = +\sqrt{\mathbf p^2 + m^2}$ always; $\slashed{p} \equiv \gamma^\mu p_\mu$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]); $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$, read actively, the boost to rapidity $\eta$ along $+z$ having $\omega_{03} = -\omega_{30} = \eta$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]). Two-spinors are $\xi$, $\eta^s$ (with an index); the rapidity is $\eta$ (never with an index).
 
 ## The mathematics used here
 
@@ -216,7 +216,7 @@ Theorem §C5a.10.4 uses the spin matrices built from the spinor generators and t
 ^thm-c5a-10-3
 
 > [!derivation]- Derivation
-> **Step 1** (the matrix at rest). At $p = k = (m, \mathbf 0)$, $p_\mu = (m, \mathbf 0)$ and $\slashed{p} = \gamma^0 p_0 = m\gamma^0$. In the chiral basis $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]), and $m$ in $\slashed{p} - m$ multiplies $\mathbb 1_4 = \operatorname{diag}(\mathbb 1, \mathbb 1)$. In $2\times2$ blocks,
+> **Step 1** (the matrix at rest). At $p = k = (m, \mathbf 0)$, $p_\mu = (m, \mathbf 0)$ and $\slashed{p} = \gamma^0 p_0 = m\gamma^0$. In the chiral basis $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]), and $m$ in $\slashed{p} - m$ multiplies $\mathbb 1_4 = \operatorname{diag}(\mathbb 1, \mathbb 1)$. In $2\times2$ blocks,
 >
 > $$
 > \slashed{p} - m = m\begin{pmatrix}-\mathbb 1 & \mathbb 1\\ \mathbb 1 & -\mathbb 1\end{pmatrix}, \qquad \slashed{p} + m = m\begin{pmatrix}\mathbb 1 & \mathbb 1\\ \mathbb 1 & \mathbb 1\end{pmatrix} .
@@ -233,7 +233,7 @@ Theorem §C5a.10.4 uses the spin matrices built from the spinor generators and t
 
 ^der-c5a-10-3
 
-*Uses:* [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]
+*Uses:* [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]
 
 > [!theorem] Theorem §C5a.10.4: In the Rest Frame the Two-Spinor Carries the Spin
 > On Dirac spinors the angular momentum is $J^k = \frac12\varepsilon^{kij}S^{ij} = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ (the spin matrices $S^k$ of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), with the spinor generators $S^{ij}$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]]; chiral form [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]), and a rotation by $\theta$ about $\hat{\mathbf n}$ acts through the spinor matrix ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) as $\Lambda_{1/2} = \operatorname{diag}\bigl(D(\theta, \hat{\mathbf n}), D(\theta, \hat{\mathbf n})\bigr)$, $D = e^{-i\theta\,\hat{\mathbf n}\cdot\boldsymbol\sigma/2}$. Hence
@@ -342,7 +342,7 @@ Rather than solve $(\slashed{p} - m)u = 0$ for general $\mathbf p$, the lecture 
 >
 > **What the derivation shows**
 > - The square root acts on the numbers $e^{\pm\eta}$ and does nothing to the projectors; it trades the half-rapidity $\eta/2$ of the spinor for the full rapidity $\eta$ of the vector, where $E$ and $\mathbf p$ live → [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^rem-c5a-10-4|Remark: Why a square root restores the full rapidity]].
-> - The two Weyl halves are boosted in opposite senses ($e^{\mp\eta\sigma^3/2}$), the hallmark of $(\frac12, 0)$ versus $(0, \frac12)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]).
+> - The two Weyl halves are boosted in opposite senses ($e^{\mp\eta\sigma^3/2}$), the hallmark of $(\frac12, 0)$ versus $(0, \frac12)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|Theorem §C3.2.8]]).
 > - Used next: the rapidity in terms of $p$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-8|Theorem §C5a.10.8]]).
 
 ^der-c5a-10-5

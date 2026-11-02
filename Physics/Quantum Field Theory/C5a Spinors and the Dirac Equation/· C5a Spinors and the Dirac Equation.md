@@ -33,8 +33,8 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-2|§C5a.0.2]] The Coefficients Cannot Commute
 - [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|§C5a.0.3]] The Smallest Coefficients Are 4×4 Matrices
 - [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-4|§C5a.0.4]] Two Components Suffice Only without Mass
-- [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|§C5a.1.1]] Identities of σ^μ and σ̄^μ
-- [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|§C5a.1.2]] The Chiral Matrices Satisfy the Clifford Algebra
+- [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ
+- [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-7|§C5a.1.7]] The Chiral Matrices Satisfy the Clifford Algebra
 - [[§C5a.2 The Dirac Form#^thm-c5a-2-1|§C5a.2.1]] Hermiticity of the Dirac Matrices
 - [[§C5a.2 The Dirac Form#^thm-c5a-2-2|§C5a.2.2]] Which Changes of Basis Preserve ψ̄
 - [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|§C5a.3.1]] The Generators in the Chiral Basis

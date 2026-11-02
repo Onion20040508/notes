@@ -29,10 +29,10 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.7★ Massless Particles and Helicity#^law-c3-7-4|§C3.7.4]] Massless Particles Have No Continuous Spin
 
 ## Theorems
-- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|§C3.2.1]] The Representations (½, 0) and (0, ½)
-- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-2|§C3.2.2]] The Vector Representation Is (½, ½)
-- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-3|§C3.2.3]] Parity on Four-Vectors; Parity-Invariant Fields Contain Both Copies
-- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-4|§C3.2.4]] The Four-Vector Is Not (1, 0) ⊕ (0, 0): Boosts Decide What Rotations Cannot
+- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|§C3.2.8]] The Representations (½, 0) and (0, ½)
+- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|§C3.2.9]] The Vector Representation Is (½, ½)
+- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-10|§C3.2.10]] Parity on Four-Vectors; Parity-Invariant Fields Contain Both Copies
+- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-12|§C3.2.12]] The Four-Vector Is Not (1, 0) ⊕ (0, 0): Boosts Decide What Rotations Cannot
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-1|§C3.3.1]] The Orbital Generators Move the Argument
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-2|§C3.3.2]] The Orbital Generators Obey the Lorentz Algebra
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-3|§C3.3.3]] Orbital Plus Spin

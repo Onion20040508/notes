@@ -973,7 +973,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 4.** $\mathbf J_\pm^2 = \frac14\sum_k(J_k \pm iK_k)^2 = \frac14\bigl(\mathbf J^2 - \mathbf K^2 \pm i(\mathbf J\cdot\mathbf K + \mathbf K\cdot\mathbf J)\bigr) = \frac14\bigl(\operatorname{diag}(0, 2, 2, 2) + \operatorname{diag}(3, 1, 1, 1)\bigr) = \frac34\mathbb 1$.
 >
-> *Checked against:* [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-2|Theorem §C3.2.2]] (all five values); numerical check.
+> *Checked against:* [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|Theorem §C3.2.9]] (all five values); numerical check.
 
 ^sol-wr-17-a
 
@@ -1017,7 +1017,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Rules.** Dimension $(2j_+ + 1)(2j_- + 1)$; under rotations $(j_+, j_-)$ is $j_+\otimes j_-$, containing each spin from $\lvert j_+ - j_-\rvert$ to $j_+ + j_-$ once; a $2\pi$ rotation gives $(-1)^{2(j_+ + j_-)}$. For $(1, \frac12)$: $3\cdot2 = 6$, spins $\frac12$ and $\frac32$, sign $(-1)^3 = -1$ (it occurs inside a vector-spinor $\psi_\mu$, beyond the course).
 >
-> *Checked against:* [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-3|§C3.2, Remark: The representations met in the course]] (the first three rows), [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]] (spins and sign); the $(1, \frac12)$ row is derived here from the same rules; check: its dimension $6 = 2 + 4$ is the sum of the spin multiplicities.
+> *Checked against:* [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]] (the first three rows), [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]] (spins and sign); the $(1, \frac12)$ row is derived here from the same rules; check: its dimension $6 = 2 + 4$ is the sum of the spin multiplicities.
 
 ^sol-wr-17-c
 
@@ -1030,7 +1030,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 1** (weights on $(1, 0)$). $\mathbf J_- = 0$, so $m_- = 0$ and $K_3 = -i(m_+ - 0) = -im_+$ with $m_+ \in \{1, 0, -1\}$, $J_3 = m_+$; on $(0, 0)$ everything vanishes.
 >
-> *Checked against:* [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-4|Theorem §C3.2.4]] (both tests), [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-10|Theorem §CB.6.10]].
+> *Checked against:* [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-12|Theorem §C3.2.12]] (both tests), [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-10|Theorem §CB.6.10]].
 
 ^sol-wr-17-d
 
@@ -1160,7 +1160,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > 5. (e) $y = \frac12\ln\frac{13 + 12}{13 - 12} = \ln5 \approx 1.609$. Problem 2(c) (derived there).
 > 6. (f) $[K_3, J_1] = -[J_1, K_3] = -i\varepsilon_{13k}K_k = -i\varepsilon_{132}K_2 = iK_2$. [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]]; numerical check.
 > 7. (g) The proper non-orthochronous component ($\det = +1$, $\Lambda^0{}_0 = -1$), $\mathcal P\mathcal T\cdot SO^+(1,3)$; no, every exponential lies in $SO^+(1,3)$. [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|Theorem §CB.3.12]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]].
-> 8. (h) $(\frac12, \frac12)$; $(0, 0)$; $(1, 1)$. [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-3|§C3.2, Remark: The representations met in the course]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]].
+> 8. (h) $(\frac12, \frac12)$; $(0, 0)$; $(1, 1)$. [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]].
 > 9. (i) Both zero: a plane wave is a null field ($\mathbf E\perp\mathbf B$, $\lvert\mathbf E\rvert = \lvert\mathbf B\rvert$). [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-4|REL Theorem §B4.2.4]], 3; [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]].
 > 10. (j) $+1$; $e^{\eta}$. [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]]; Problem 2(b), Problem 17(b).
 
