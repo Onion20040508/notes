@@ -178,7 +178,7 @@ The proof has two steps of different kinds: an analysis step in $\mathbb{R}^m$, 
 
 ## An Application: Exhaustion Functions
 
-*Lecture 23. “I do want to tell you about the application of partitions of unity that we need for the sketch of the Whitney embedding theorem, the noncompact case”: the existence of exhaustion functions (Definition [[§65 The Whitney Embedding Theorem#^def-65-1|§65.1]], Proposition [[§65 The Whitney Embedding Theorem#^prop-65-5|§65.5]]). “The proof will be quick using partitions of unity.”*
+*Lecture 23. “I do want to tell you about the application of partitions of unity that we need for the sketch of the Whitney embedding theorem, the noncompact case”: the existence of exhaustion functions (Definition [[§65 The Whitney Embedding Theorem#^def-65-1|§65.1]], Proposition [[§65 The Whitney Embedding Theorem#^prop-65-7|§65.7]]). “The proof will be quick using partitions of unity.”*
 
 The proof starts from a countable cover by open sets with compact closures, which was set as an exercise.
 
@@ -196,7 +196,7 @@ The proof starts from a countable cover by open sets with compact closures, whic
 
 *Uses:* [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§2 Topological Manifolds#^prop-2-12|§2.12]], [[§66 Partitions of Unity#^lem-66-3|§66.3]], [[§66 Partitions of Unity#^thm-66-4|§66.4]]
 
-> [!proof]+ Proof of Proposition [[§65 The Whitney Embedding Theorem#^prop-65-5|§65.5]]
+> [!proof]+ Proof of Proposition [[§65 The Whitney Embedding Theorem#^prop-65-7|§65.7]]
 > *(Lecture 23.)* Let $\{V_i\}_{i \ge 1}$ be as in Lemma [[§66 Partitions of Unity#^lem-66-6|§66.6]], and let $\{\chi_i\}_{i \ge 1}$ be a partition of unity subordinate to it (Theorem [[§66 Partitions of Unity#^thm-66-1|§66.1]]). Reviewing what this means (Definition [[§66 Partitions of Unity#^def-66-1|§66.1]]):
 >
 > 1. $0 \le \chi_i \le 1$ for all $i$;

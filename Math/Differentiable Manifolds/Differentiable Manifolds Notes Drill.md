@@ -2254,7 +2254,7 @@ For $\varphi \in C^\infty(M \times N)$ and $v \in T_pM$, $\partial_v\varphi(q) =
 
 ^nd-prop-31-7
 
-- [ ] Q1 **[def]** Define $\partial_v\varphi$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]]).
+- [ ] Q1 **[def]** Define $\partial_v\varphi$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]).
 - [ ] Q2 **[state]** State the three parts.
 - [ ] Q3 (1): why is $t \mapsto (\gamma(t), q)$ a "horizontal" curve, and what is its velocity?
 - [ ] Q4 (2): expand $v$ in the $x$-coordinates and use product coordinates.
@@ -4737,7 +4737,7 @@ $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{Y} \in \mathfrak{X}(N)$ are $F$-re
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]; Q2: Proposition [[§59 Related Vector Fields#^prop-59-1|§59.1]] ($\mathbf{X} \circ F^\ast = F^\ast \circ \mathbf{Y}$).
 > - Q3: Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]] (omitted in Lecture 17 as an exercise; apply Q2 twice).
-> - Q4: Example [[§59 Related Vector Fields#^ex-59-1|§59.1]] ($c(x, y)\,\partial_y$ arbitrary); none if $F$ is not injective and the values disagree. Q5: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-3|§60.3]].
+> - Q4: Example [[§59 Related Vector Fields#^ex-59-1|§59.1]] ($c(x, y)\,\partial_y$ arbitrary); none if $F$ is not injective and the values disagree. Q5: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]].
 
 ## Proofs T11
 
@@ -4760,7 +4760,7 @@ For a section $\mathbf X$ of $TM$ (not assumed smooth) and a chart $(U,(x^j))$: 
 > - Universal formula (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]) and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]].
 > - $\tilde\varphi\circ\mathbf X\circ\varphi^{-1}(r)=(r,\mathbf X^1(\varphi^{-1}(r)),\dots,\mathbf X^m(\varphi^{-1}(r)))$.
 > - Continuity: $\mathbf X=\tilde\varphi^{-1}\circ(\tilde\varphi\circ\mathbf X\circ\varphi^{-1})\circ\varphi$ (Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]]).
-> - Q5: Proposition [[§56 Vector Fields#^prop-56-7|§56.7]] step 4 and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]] build a section first and prove smoothness after.
+> - Q5: Proposition [[§56 Vector Fields#^prop-56-7|§56.7]] step 4 and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]] build a section first and prove smoothness after.
 
 #### A vector field is a derivation · P2
 
@@ -5068,8 +5068,8 @@ A topological group with a smooth structure in which multiplication and inversio
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]], Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|§11.1]]; Q2: Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]] (restriction of smooth maps to a regular submanifold, Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]]); Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]].
-> - Q3: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-2|§60.2]] (inverse $L_{g^{-1}}$). Q4: no, the remark *Nonlinear Groups* in [[§60 Lie Groups and Left-Invariant Vector Fields|§60]].
-> - Q5: left-invariant extension, Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]], Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]].
+> - Q3: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-4|§60.4]] (inverse $L_{g^{-1}}$). Q4: no, the remark *Nonlinear Groups* in [[§60 Lie Groups and Left-Invariant Vector Fields|§60]].
+> - Q5: left-invariant extension, Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]], Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]].
 
 #### Left-invariant vector field
 
@@ -5084,10 +5084,10 @@ $\mathbf{X} \in \mathfrak{X}(G)$ with $(L_g)_{\ast h}\mathbf{X}_h = \mathbf{X}_{
 - [ ] Q5 **[why]** Drop "smooth" from the definition of vector field: is $g \mapsto (L_g)_{\ast e}v$ automatically a vector field, or does that need proof?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|§60.2]], Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|§60.3]]; Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-3|§60.3]].
+> - Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|§60.2]], Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|§60.3]]; Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]].
 > - Q2: Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]] ($\mathbf{X}^A_g = gA$), Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-2|§60.2]] (constant fields).
-> - Q3: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]], Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]]. Q4: Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-4|§60.4]] (naturality), the remark *Why Left?* in [[§60 Lie Groups and Left-Invariant Vector Fields|§60]].
-> - Q5: it needs proof (a "rough" field, Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]), Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]].
+> - Q3: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]], Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]. Q4: Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-6|§60.6]] (naturality), the remark *Why Left?* in [[§60 Lie Groups and Left-Invariant Vector Fields|§60]].
+> - Q5: it needs proof (a "rough" field, Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]), Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]].
 
 #### Lie algebra of a Lie group
 
@@ -5102,8 +5102,8 @@ $\mathfrak{g}$, the left-invariant vector fields with the bracket of vector fiel
 - [ ] Q5 **[use]** How does a Lie group morphism $F : H \to G$ induce a Lie algebra morphism?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|§60.4]], Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]; Q2: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]]. Q3: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-8|§60.8]].
-> - Q4: Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-4|§60.4]]. Q5: Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]], Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-3|§61.3]], Lemma [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]], Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2|§61.2]].
+> - Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|§60.4]], Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]; Q2: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]. Q3: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]].
+> - Q4: Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-6|§60.6]]. Q5: Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]], Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-3|§61.3]], Lemma [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]], Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2|§61.2]].
 
 #### The classical groups are Lie groups
 
@@ -5124,7 +5124,7 @@ $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{GL}(n,\mathbb{C})$, $\mathrm{SL}(n,\mathbb
 
 #### Left translations are diffeomorphisms
 
-$L_g(h)=gh$ is a diffeomorphism of a Lie group $G$ with inverse $L_{g^{-1}}$, see Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-2|§60.2]]. *Source: filled in, as for topological groups.*
+$L_g(h)=gh$ is a diffeomorphism of a Lie group $G$ with inverse $L_{g^{-1}}$, see Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-4|§60.4]]. *Source: filled in, as for topological groups.*
 
 ^nd-lem-57-2
 
@@ -5158,7 +5158,7 @@ The left-invariant vector fields on $\mathrm{GL}(n,\mathbb{R})$ are exactly $\ma
 
 #### $\mathfrak g$ is a Lie subalgebra of $\mathfrak X(G)$
 
-$\mathbf X$ is left-invariant iff it is $L_g$-related to itself for every $g$; hence brackets of left-invariant fields are left-invariant, and $\mathfrak g$ is a Lie subalgebra of $\mathfrak X(G)$, see Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-3|§60.3]] and Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-4|§60.4]]. *Source: Lecture 17 ("the big observation").*
+$\mathbf X$ is left-invariant iff it is $L_g$-related to itself for every $g$; hence brackets of left-invariant fields are left-invariant, and $\mathfrak g$ is a Lie subalgebra of $\mathfrak X(G)$, see Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]] and Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-6|§60.6]]. *Source: Lecture 17 ("the big observation").*
 
 ^nd-cor-57-4
 
@@ -5172,11 +5172,11 @@ $\mathbf X$ is left-invariant iff it is $L_g$-related to itself for every $g$; h
 > - $d(L_g)_h(\mathbf X_h)=\mathbf X_{gh}$ is relatedness with $F=L_g$, $\mathbf Y=\mathbf X$.
 > - Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]] with $F=L_g$.
 > - Linearity of $d(L_g)_h$; axioms inherited from Corollary [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]].
-> - Q5: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]].
+> - Q5: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]].
 
 #### The left-invariant extension is left-invariant
 
-For $v\in T_eG$, $\mathbf X^v_g=d(L_g)_e(v)$ satisfies $\mathbf X^v_e=v$ and $d(L_g)_h(\mathbf X^v_h)=\mathbf X^v_{gh}$; every $\mathbf X\in\mathfrak g$ is the extension of $\mathbf X_e$, see Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]]. *Source: Lecture 17's steps; Lecture 18: "You can check that ... we have a left invariant field"; (2) filled in.* **[class exercise, Lecture 18]**
+For $v\in T_eG$, $\mathbf X^v_g=d(L_g)_e(v)$ satisfies $\mathbf X^v_e=v$ and $d(L_g)_h(\mathbf X^v_h)=\mathbf X^v_{gh}$; every $\mathbf X\in\mathfrak g$ is the extension of $\mathbf X_e$, see Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]]. *Source: Lecture 17's steps; Lecture 18: "You can check that ... we have a left invariant field"; (2) filled in.* **[class exercise, Lecture 18]**
 
 ^nd-lem-57-5
 
@@ -5190,11 +5190,11 @@ For $v\in T_eG$, $\mathbf X^v_g=d(L_g)_e(v)$ satisfies $\mathbf X^v_e=v$ and $d(
 > - $L_e=\mathrm{id}$; Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]].
 > - $d(L_g)_h\,d(L_h)_e(v)=d(L_{gh})_e(v)$.
 > - Left-invariance at $h=e$.
-> - Smoothness: Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]].
+> - Smoothness: Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]].
 
 #### The left-invariant extension is smooth
 
-For $v\in T_eG$ and $f\in C^\infty(G)$, with $\varphi(g,x)=f(gx)$: $\mathbf X^vf=\partial_v\varphi$ is smooth; hence $\mathbf X^v\in\mathfrak g$, see Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]]. *Source: Lecture 18, completing Lecture 17 ("a trick that occurred to me").*
+For $v\in T_eG$ and $f\in C^\infty(G)$, with $\varphi(g,x)=f(gx)$: $\mathbf X^vf=\partial_v\varphi$ is smooth; hence $\mathbf X^v\in\mathfrak g$, see Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]]. *Source: Lecture 18, completing Lecture 17 ("a trick that occurred to me").*
 
 ^nd-prop-57-6
 
@@ -5207,12 +5207,12 @@ For $v\in T_eG$ and $f\in C^\infty(G)$, with $\varphi(g,x)=f(gx)$: $\mathbf X^vf
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S11, smoothness criterion Lemma [[§56 Vector Fields#^lem-56-8|§56.8]].
 > - $d(L_g)_e(v)[f]=v[f\circ L_g]$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]).
-> - $\varphi=f\circ\mu$; Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]] and Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]](3).
+> - $\varphi=f\circ\mu$; Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]](3).
 > - A partial derivative of a function smooth in $(g,x)$ is smooth in $g$; smoothness of $f\circ L_g$ for each fixed $g$ would not be enough.
 
 #### The Lie algebra is the tangent space at the identity
 
-$\mathrm{ev}:\mathfrak g\to T_eG$, $\mathbf X\mapsto\mathbf X_e$, is a linear isomorphism; so $\dim\mathfrak g=\dim G$, see Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]]. *Source: Lecture 17 ("an incomplete proof"), completed in Lecture 18.*
+$\mathrm{ev}:\mathfrak g\to T_eG$, $\mathbf X\mapsto\mathbf X_e$, is a linear isomorphism; so $\dim\mathfrak g=\dim G$, see Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]. *Source: Lecture 17 ("an incomplete proof"), completed in Lecture 18.*
 
 ^nd-thm-57-7
 
@@ -5225,8 +5225,8 @@ $\mathrm{ev}:\mathfrak g\to T_eG$, $\mathbf X\mapsto\mathbf X_e$, is a linear is
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: "there is only one choice": the left-invariant extension.
-> - $\mathbf X_g=d(L_g)_e(\mathbf X_e)$ (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](3)).
-> - Surjective: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](1), (2) and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]].
+> - $\mathbf X_g=d(L_g)_e(\mathbf X_e)$ (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](3)).
+> - Surjective: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](1), (2) and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]].
 > - $\dim T_eG=\dim G$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]).
 
 #### The additive group of a vector space
@@ -5244,11 +5244,11 @@ For a vector space $V$ under addition, the left-invariant fields are the constan
 > [!tip]- Hints: route of the proof in the notes
 > - $L_p=\tau_p$, translation; Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]](2).
 > - Constant coefficients $v^i$; Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]].
-> - Q5: $[A,B]=AB-BA=0$ when $A$, $B$ commute (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-8|§60.8]]).
+> - Q5: $[A,B]=AB-BA=0$ when $A$, $B$ commute (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]).
 
 #### The Lie algebra of $\mathrm{GL}(d,\mathbb{R})$
 
-The Lie bracket on $T_I\mathrm{GL}(d,\mathbb{R})=\mathrm{Mat}(d,\mathbb{R})$ is the matrix commutator $[A,B]=AB-BA$, see Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-8|§60.8]]. *Source: stated in Lecture 17; proof "to be filled" (planned for Lecture 19). Quote it.*
+The Lie bracket on $T_I\mathrm{GL}(d,\mathbb{R})=\mathrm{Mat}(d,\mathbb{R})$ is the matrix commutator $[A,B]=AB-BA$, see Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]. *Source: stated in Lecture 17; proof "to be filled" (planned for Lecture 19). Quote it.*
 
 ^nd-thm-57-8
 

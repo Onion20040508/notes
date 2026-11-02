@@ -20,5 +20,5 @@ tags: [differentiable-manifolds, hub]
 
 ## Connections
 - Built from [[§66 Partitions of Unity#^lem-66-2|plateau functions]] (the bump-function construction of [[§56 Vector Fields#^prop-56-4|§56.4]]) and [[Manifolds Are Paracompact|paracompactness]].
-- Pays the "credit" of [[§65 The Whitney Embedding Theorem|§65]]: the cutoffs $\rho_i$ of [[§65 The Whitney Embedding Theorem#^prop-65-6|Proposition §65.6]] and the existence of exhaustion functions ([[§65 The Whitney Embedding Theorem#^prop-65-5|Proposition §65.5]]).
+- Pays the "credit" of [[§65 The Whitney Embedding Theorem|§65]]: the cutoffs $\rho_i$ of [[§65 The Whitney Embedding Theorem#^prop-65-8|Proposition §65.8]] and the existence of exhaustion functions ([[§65 The Whitney Embedding Theorem#^prop-65-7|Proposition §65.7]]).
 - Lee, *Introduction to Smooth Manifolds*, Theorem 2.23; used later to integrate forms.

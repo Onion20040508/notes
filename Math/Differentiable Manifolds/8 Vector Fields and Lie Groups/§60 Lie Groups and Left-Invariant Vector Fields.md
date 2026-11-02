@@ -51,6 +51,122 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 The unit quaternions $S^3$ are a Lie group as well ([[§47 The Unit Quaternions and SU(2)#^prop-47-4|Proposition §47.4]]), isomorphic to $\mathrm{SU}(2)$ ([[§47 The Unit Quaternions and SU(2)#^prop-47-5|Proposition §47.5]]).
 
+*Assignment 6, Problem 1: the differentials of multiplication and inversion at the identity. Not from lecture; the submitted solution, with the notation of these notes ($\mu$ for the multiplication, written $m$ in the assignment).*
+
+> [!theorem] Proposition §60.2: The Differential of Multiplication at the Identity
+> Let $G$ be a Lie group with identity $e$ and multiplication $\mu : G \times G \to G$, $\mu(g, h) = gh$. Under the identification $T_{(e,e)}(G \times G) = T_eG \oplus T_eG$ of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]],
+>
+> $$
+> d\mu_{(e,e)}(A, B) = A + B, \qquad A, B \in T_eG .
+> $$
+>
+> *Lee: Problem 7-2(a)*
+
+^prop-60-2
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 1(a); the submitted solution.)* Let $\pi_1, \pi_2 : G \times G \to G$ be the projections and $\iota_1, \iota_2 : G \to G \times G$ the slice inclusions through $(e, e)$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]),
+>
+> $$
+> \iota_1(g) = (g, e), \qquad \iota_2(g) = (e, g) .
+> $$
+>
+> *The vectors $(A, 0)$ and $(0, B)$.* The identification of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]] sends $v \in T_{(e,e)}(G \times G)$ to $\big(d(\pi_1)_{(e,e)}(v),\, d(\pi_2)_{(e,e)}(v)\big)$. Since $\pi_1 \circ \iota_1 = \mathrm{id}_G$ and $\pi_2 \circ \iota_1$ is the constant map to $e$, the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) and Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]] give, for $A \in T_eG$,
+>
+> $$
+> d(\pi_1)_{(e,e)}\big(d(\iota_1)_e(A)\big) = A, \qquad d(\pi_2)_{(e,e)}\big(d(\iota_1)_e(A)\big) = 0,
+> $$
+>
+> so $d(\iota_1)_e(A) = (A, 0)$. In the same way, $d(\iota_2)_e(B) = (0, B)$ for $B \in T_eG$. With $n = \dim G$ and $I_n = \mathrm{id}_{T_eG}$, in block form with respect to $T_eG \oplus T_eG$,
+>
+> $$
+> d(\iota_1)_e = \begin{pmatrix} I_n \\ 0 \end{pmatrix}, \qquad d(\iota_2)_e = \begin{pmatrix} 0 \\ I_n \end{pmatrix}.
+> $$
+>
+> *Computing $d\mu_{(e,e)}(A, 0)$.* For $g \in G$, $\mu(\iota_1(g)) = \mu(g, e) = ge = g$, so $\mu \circ \iota_1 = \mathrm{id}_G$. By the chain rule,
+>
+> $$
+> d\mu_{(e,e)} \circ d(\iota_1)_e = d(\mu \circ \iota_1)_e = d(\mathrm{id}_G)_e = \mathrm{id}_{T_eG},
+> \qquad\text{so}\qquad
+> d\mu_{(e,e)}(A, 0) = d\mu_{(e,e)}\big(d(\iota_1)_e(A)\big) = A .
+> $$
+>
+> *Computing $d\mu_{(e,e)}(0, B)$.* Likewise $\mu(\iota_2(g)) = \mu(e, g) = eg = g$, so $\mu \circ \iota_2 = \mathrm{id}_G$, and the chain rule gives
+>
+> $$
+> d\mu_{(e,e)}(0, B) = d\mu_{(e,e)}\big(d(\iota_2)_e(B)\big) = d(\mu \circ \iota_2)_e(B) = B .
+> $$
+>
+> *Conclusion.* Since $(A, B) = (A, 0) + (0, B)$ in $T_eG \oplus T_eG$ and $d\mu_{(e,e)}$ is linear (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]),
+>
+> $$
+> d\mu_{(e,e)}(A, B) = d\mu_{(e,e)}(A, 0) + d\mu_{(e,e)}(0, B) = A + B .
+> $$
+>
+> In block form,
+>
+> $$
+> d\mu_{(e,e)} = \begin{pmatrix} I_n & I_n \end{pmatrix}, \qquad d\mu_{(e,e)}\begin{pmatrix} A \\ B \end{pmatrix} = \begin{pmatrix} I_n & I_n \end{pmatrix}\begin{pmatrix} A \\ B \end{pmatrix} = A + B .
+> $$
+
+^pf-60-2
+
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
+
+> [!theorem] Proposition §60.3: The Differential of Inversion at the Identity
+> Let $G$ be a Lie group with identity $e$ and inversion $j : G \to G$, $j(g) = g^{-1}$. Then
+>
+> $$
+> dj_e(A) = -A, \qquad A \in T_eG .
+> $$
+>
+> *Lee: Problem 7-2(b)*
+
+^prop-60-3
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 1(b), “a version of implicit differentiation”; the submitted solution.)* Define
+>
+> $$
+> F = (\mathrm{id}_G, j) : G \to G \times G, \qquad F(g) = (g, j(g)),
+> $$
+>
+> which is smooth since its components $\mathrm{id}_G$ and $j$ are (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]]), with $\pi_1 \circ F = \mathrm{id}_G$ and $\pi_2 \circ F = j$. Since $j(e) = e^{-1} = e$, $F(e) = (e, e)$. For every $g \in G$,
+>
+> $$
+> \mu(F(g)) = \mu(g, j(g)) = gg^{-1} = e,
+> $$
+>
+> so $\mu \circ F = c_e$, the constant map $G \to G$ with value $e$.
+>
+> *The differential of $F$.* By the chain rule, for $A \in T_eG$,
+>
+> $$
+> d(\pi_1)_{(e,e)}\big(dF_e(A)\big) = d(\mathrm{id}_G)_e(A) = A, \qquad d(\pi_2)_{(e,e)}\big(dF_e(A)\big) = dj_e(A),
+> $$
+>
+> so under the identification of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]], $dF_e(A) = (A, dj_e(A))$. In block form,
+>
+> $$
+> dF_e = \begin{pmatrix} I_n \\ dj_e \end{pmatrix}.
+> $$
+>
+> *The differential of $c_e$.* For $v \in T_eG$ and a smooth function $f$ defined near $e$, $f \circ c_e$ is constant, so $d(c_e)_e(v)f = v(f \circ c_e) = 0$. Hence $d(c_e)_e = 0$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]]).
+>
+> *Conclusion.* Applying the chain rule to $\mu \circ F = c_e$ at $e$, and using Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2|§60.2]],
+>
+> $$
+> 0 = d(c_e)_e = d\mu_{(e,e)} \circ dF_e = \begin{pmatrix} I_n & I_n \end{pmatrix}\begin{pmatrix} I_n \\ dj_e \end{pmatrix} = I_n + dj_e .
+> $$
+>
+> Therefore $dj_e = -I_n$, that is, $dj_e(A) = -A$ for all $A \in T_eG$.
+
+^pf-60-3
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2|§60.2]]
+
+For a matrix group both are first-order expansions: $(I + tA)(I + tB) = I + t(A + B) + O(t^2)$ and $(I + tA)^{-1} = I - tA + O(t^2)$. At a general point the same proofs give the formulas of Propositions [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-12|§60.12]] and [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-14|§60.14]], in [[§60 Lie Groups and Left-Invariant Vector Fields|§60]], once right translations are available.
+
 > [!definition] Definition §60.2: Left Translation
 > For $g$ in a [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]] $G$, **left translation** by $g$ is $L_g : G \to G$, $L_g(h) = gh$.
 >
@@ -58,12 +174,12 @@ The unit quaternions $S^3$ are a Lie group as well ([[§47 The Unit Quaternions 
 
 ^def-60-2
 
-> [!theorem] Lemma §60.2: Left Translations Are Diffeomorphisms
+> [!theorem] Lemma §60.4: Left Translations Are Diffeomorphisms
 > $L_g$ is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]], with inverse $L_{g^{-1}}$.
 >
 > *Lee: Ch. 7, Basic Definitions*
 
-^lem-60-2
+^lem-60-4
 
 > [!proof]+ Proof
 > *(Filled in, as for topological groups in Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]].)* By Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]], it has to be shown that $L_g$ is a smooth bijection with smooth inverse, and that the inverse is $L_{g^{-1}}$.
@@ -78,7 +194,7 @@ The unit quaternions $S^3$ are a Lie group as well ([[§47 The Unit Quaternions 
 >
 > So $L_g \circ L_{g^{-1}} = L_{g^{-1}} \circ L_g = \mathrm{id}$: $L_g$ is a bijection with inverse $L_{g^{-1}}$, and both are smooth, so $L_g$ is a diffeomorphism.
 
-^pf-60-2
+^pf-60-4
 
 *Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|Def. §60.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
 
@@ -156,32 +272,32 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 
 *Lecture 17. “Back to Lie groups.” With the language of [[§59 Related Vector Fields#^def-59-2|related fields]], “we can rephrase some of the definitions.”*
 
-> [!theorem] Lemma §60.3: Left-Invariance as Relatedness
+> [!theorem] Lemma §60.5: Left-Invariance as Relatedness
 > A vector field $\mathbf{X} \in \mathfrak{X}(G)$ is [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|left-invariant]] ([[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|Definition §60.3]]) if and only if, for every $g \in G$, $\mathbf{X}$ is *$L_g$-related to itself* ([[§59 Related Vector Fields#^def-59-2|Definition §59.2]] with $F = L_g$ and $\mathbf{Y} = \mathbf{X}$).
 
-^lem-60-3
+^lem-60-5
 
 > [!proof]+ Proof
 > *(Lecture 17, a rephrasing of the definition: “we can rephrase some of the definitions”.)* Being $L_g$-related to itself means $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{L_g(h)} = \mathbf{X}_{gh}$ for every $h \in G$, which is the condition of [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|Definition §60.3]] for this $g$.
 
-^pf-60-3
+^pf-60-5
 
 *Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|Def. §60.3]], [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|Def. §60.2]]
 
 > [!remark] Remark: Why Left?
-> Lecture 17 abbreviates “left-invariant” to l.i. “And you can ask why left. What's wrong with right? There's nothing wrong with right. You have to choose … and this is the universal choice.” Right-invariant fields, $R_g$-related to themselves for $R_g(h) = hg$, give an equivalent theory; the one place the choice shows is the sign of the bracket, at the end of this subsection ([[§60 Lie Groups and Left-Invariant Vector Fields#^rem-60-2|Remark: Left or Right]]).
+> Lecture 17 abbreviates “left-invariant” to l.i. “And you can ask why left. What's wrong with right? There's nothing wrong with right. You have to choose … and this is the universal choice.” Right-invariant fields, $R_g$-related to themselves for $R_g(h) = hg$, give an equivalent theory; the one place the choice shows is the sign of the bracket, at the end of this subsection ([[§60 Lie Groups and Left-Invariant Vector Fields#^rem-60-2|Remark: Left or Right]]). Right-invariant fields are worked out in [[§60 Lie Groups and Left-Invariant Vector Fields#Right-Invariant Vector Fields|§60, Right-Invariant Vector Fields]].
 
 ^rem-60-1
 
-> [!theorem] Corollary §60.4: $\mathfrak{g}$ Is a Lie Subalgebra of $\mathfrak{X}(G)$
+> [!theorem] Corollary §60.6: $\mathfrak{g}$ Is a Lie Subalgebra of $\mathfrak{X}(G)$
 > If $\mathbf{X}, \mathbf{Y} \in \mathfrak{g}$ then $[\mathbf{X}, \mathbf{Y}] \in \mathfrak{g}$. So $\mathfrak{g}$, a linear subspace of $\mathfrak{X}(G)$, is a [[§58 Lie Bracket and Lie Algebra#^def-58-2|Lie algebra]] under the [[§58 Lie Bracket and Lie Algebra#^def-58-1|bracket of vector fields]].
 >
 > *Lee: Proposition 8.33*
 
-^cor-60-4
+^cor-60-6
 
 > [!proof]+ Proof
-> *(Lecture 17: “the big observation, which is actually a consequence of” Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]].)* *Closed under the bracket.* Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{g}$ and fix $g \in G$. By Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-3|§60.3]], $\mathbf{X}$ is $L_g$-related to $\mathbf{X}$ and $\mathbf{Y}$ to $\mathbf{Y}$. So by Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]] with $F = L_g$, $\mathbf{X}_1 = \mathbf{Y}_1 = \mathbf{X}$ and $\mathbf{X}_2 = \mathbf{Y}_2 = \mathbf{Y}$, $[\mathbf{X}, \mathbf{Y}]$ is $L_g$-related to $[\mathbf{X}, \mathbf{Y}]$. This holds for every $g$, and by Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-3|§60.3]] again (in the converse direction) this for every $g$ is left-invariance: $[\mathbf{X}, \mathbf{Y}] \in \mathfrak{g}$.
+> *(Lecture 17: “the big observation, which is actually a consequence of” Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]].)* *Closed under the bracket.* Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{g}$ and fix $g \in G$. By Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], $\mathbf{X}$ is $L_g$-related to $\mathbf{X}$ and $\mathbf{Y}$ to $\mathbf{Y}$. So by Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]] with $F = L_g$, $\mathbf{X}_1 = \mathbf{Y}_1 = \mathbf{X}$ and $\mathbf{X}_2 = \mathbf{Y}_2 = \mathbf{Y}$, $[\mathbf{X}, \mathbf{Y}]$ is $L_g$-related to $[\mathbf{X}, \mathbf{Y}]$. This holds for every $g$, and by Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]] again (in the converse direction) this for every $g$ is left-invariance: $[\mathbf{X}, \mathbf{Y}] \in \mathfrak{g}$.
 >
 > *(Filled in.)* *A linear subspace.* $\mathfrak{g}$ is a linear subspace because each $d(L_g)_h$ is linear (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]). Explicitly, let $\mathbf{X}, \mathbf{Y} \in \mathfrak{g}$ and $a, b \in \mathbb{R}$. For all $g, h \in G$, by the pointwise operations of Definition [[§56 Vector Fields#^def-56-2|§56.2]], the linearity of $d(L_g)_h$, and left-invariance of $\mathbf{X}$ and $\mathbf{Y}$,
 >
@@ -193,11 +309,11 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 >
 > *A Lie algebra.* By the first step the bracket of vector fields restricts to a map $\mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$. The bracket on $\mathfrak{g}$ is bilinear, skew and satisfies Jacobi because it does on $\mathfrak{X}(G)$ (Corollary [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]]): these are identities for all elements of $\mathfrak{X}(G)$, so in particular for all elements of $\mathfrak{g}$. So $\mathfrak{g}$ is a Lie algebra (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]]).
 
-^pf-60-4
+^pf-60-6
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-3|§60.3]], [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§59 Related Vector Fields#^prop-59-3|§59.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|Def. §60.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|Def. §60.4]], [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§58 Lie Bracket and Lie Algebra#^def-58-2|Def. §58.2]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§59 Related Vector Fields#^prop-59-3|§59.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|Def. §60.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|Def. §60.4]], [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§58 Lie Bracket and Lie Algebra#^def-58-2|Def. §58.2]]
 
-“It's a Lie subalgebra of the infinite-dimensional algebra of all vector fields on $G$.” Vector fields can be added and scaled, so $\mathfrak{X}(G)$ is a [[§56 Vector Fields#^def-56-2|vector space]] (“in fact, it's an algebra over the smooth functions, but I want to think of it as a vector space”). “At this point, maybe it's not clear what [$\mathfrak{g}$] is. It could be, I don't know, still infinite-dimensional, or something, or empty.” [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|The theorem]] below settles it. Its proof rests on a construction, made in Lecture 17 and finished in Lecture 18, which comes first.
+“It's a Lie subalgebra of the infinite-dimensional algebra of all vector fields on $G$.” Vector fields can be added and scaled, so $\mathfrak{X}(G)$ is a [[§56 Vector Fields#^def-56-2|vector space]] (“in fact, it's an algebra over the smooth functions, but I want to think of it as a vector space”). “At this point, maybe it's not clear what [$\mathfrak{g}$] is. It could be, I don't know, still infinite-dimensional, or something, or empty.” [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|The theorem]] below settles it. Its proof rests on a construction, made in Lecture 17 and finished in Lecture 18, which comes first.
 
 > [!definition] Definition §60.5: Left-Invariant Extension
 > Let $G$ be a Lie group with identity $e$, and $v \in T_eG$. The **left-invariant extension** of $v$ is the map $\mathbf{X}^v : G \to TG$, $g \mapsto \mathbf{X}^v_g$, with
@@ -214,7 +330,7 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 
 “Just as with vector fields” on a vector space (Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]]), there is a unique left translation carrying $e$ to $g$, and $\mathbf{X}^v_g$ is $v$ carried along it.
 
-> [!theorem] Lemma §60.5: The Left-Invariant Extension Is Left-Invariant
+> [!theorem] Lemma §60.7: The Left-Invariant Extension Is Left-Invariant
 > Let $G$ be a Lie group with identity $e$.
 >
 > 1. For $v \in T_eG$, $\mathbf{X}^v_g \in T_gG$ for every $g \in G$, and $\mathbf{X}^v_e = v$.
@@ -223,7 +339,7 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 >
 > *Lee: proof of Theorem 8.37*
 
-^lem-60-5
+^lem-60-7
 
 > [!proof]+ Proof
 > *(Lecture 17, steps of the proof that $\mathfrak{g}$ is $T_eG$; (2) was left to check — “not a bad thing to do” — and done in the review at the start of Lecture 19.)*
@@ -240,11 +356,11 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 >
 > *(3)* Let $\mathbf{X} \in \mathfrak{g}$ and $g \in G$. Left-invariance (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|§60.3]]) with $h = e$ reads $d(L_g)_e(\mathbf{X}_e) = \mathbf{X}_{ge} = \mathbf{X}_g$, and by Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]] with $v = \mathbf{X}_e$ the left side is $\mathbf{X}^{\mathbf{X}_e}_g$.
 
-^pf-60-5
+^pf-60-7
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Def. §60.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|Def. §60.3]]
 
-> [!theorem] Proposition §60.6: The Left-Invariant Extension Is Smooth
+> [!theorem] Proposition §60.8: The Left-Invariant Extension Is Smooth
 > Let $G$ be a Lie group with identity $e$ and $v \in T_eG$. For $f \in C^\infty(G)$ let $\varphi : G \times G \to \mathbb{R}$, $\varphi(g, x) = f(gx)$. Then $\varphi$ is smooth, and
 >
 > $$
@@ -255,10 +371,10 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 >
 > *Lee: proof of Theorem 8.37*
 
-^prop-60-6
+^prop-60-8
 
 > [!proof]+ Proof
-> *(Lecture 18, completing the proof of Lecture 17.)* Lecture 17 stopped here: “The incompleteness in the proof is that we want to show that this is $C^\infty$. It's an important technical point … and we don't have the tools to do that at this point.” Lecture 18 finished it — “in fact, we can just use this partial derivative construction” (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]]). So far $\mathbf{X}^v$ is a left-invariant *rough* field (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](1) and (2)), Lee's term for a section not yet known to be smooth: “the piece of the construction that has not been justified is that this thing is smooth.”
+> *(Lecture 18, completing the proof of Lecture 17.)* Lecture 17 stopped here: “The incompleteness in the proof is that we want to show that this is $C^\infty$. It's an important technical point … and we don't have the tools to do that at this point.” Lecture 18 finished it — “in fact, we can just use this partial derivative construction” (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]]). So far $\mathbf{X}^v$ is a left-invariant *rough* field (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](1) and (2)), Lee's term for a section not yet known to be smooth: “the piece of the construction that has not been justified is that this thing is smooth.”
 >
 > *The claim.* It suffices to show that for every $f \in C^\infty(G)$ the function $\mathbf{X}^v f : g \mapsto \mathbf{X}^v_g[f]$ is smooth. “This function is still well defined regardless of whether $\mathbf{X}^v$ is smooth or not … because I have a vector at every point, and I can let that act on any function.” The lecture's proof of the claim: in local coordinates $(x^1, \ldots, x^m)$, $m = \dim G$, there is still a pointwise expansion $\mathbf{X}^v = \sum_j a^j\, \partial/\partial x^j$, and $\mathbf{X}^v$ is smooth exactly when the $a^j$ are (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]); “but the $a^j$ are precisely the action of $\mathbf{X}^v$ on the coordinate $x^j$.” This is Lemma [[§56 Vector Fields#^lem-56-8|§56.8]], whose proof also handles the point that $x^j$ is defined only on the chart, by extending it with a bump function.
 >
@@ -280,13 +396,13 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 > (\mathbf{X}^v f)(g) = v\big[\varphi(g, \cdot)\big] = \partial_v\varphi(g) .
 > $$
 >
-> “We're letting $v$ act on the second variable, and so that means that it is smooth”: $\partial_v\varphi \in C^\infty(G)$ by Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]](3). By the claim, $\mathbf{X}^v$ is smooth. It is left-invariant (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](2)), so $\mathbf{X}^v \in \mathfrak{g}$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|§60.4]]), and $\mathbf{X}^v_e = v$ (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](1)).
+> “We're letting $v$ act on the second variable, and so that means that it is smooth”: $\partial_v\varphi \in C^\infty(G)$ by Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]](3). By the claim, $\mathbf{X}^v$ is smooth. It is left-invariant (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](2)), so $\mathbf{X}^v \in \mathfrak{g}$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|§60.4]]), and $\mathbf{X}^v_e = v$ (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](1)).
 
-^pf-60-6
+^pf-60-8
 
-*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|Def. §31.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-8|§56.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|Def. §60.4]]
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|Def. §31.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-8|§56.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|Def. §60.4]]
 
-> [!theorem] Theorem §60.7: The Lie Algebra Is the Tangent Space at the Identity
+> [!theorem] Theorem §60.9: The Lie Algebra Is the Tangent Space at the Identity
 > Let $G$ be a [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]] with identity $e$. The evaluation map
 >
 > $$
@@ -297,7 +413,7 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 >
 > *Lee: Theorem 8.37*
 
-^thm-60-7
+^thm-60-9
 
 > [!proof]+ Proof
 > *(Lecture 17 — “it'll be an incomplete proof … there is one detail that we're not prepared to prove” — completed in Lecture 18. The lecture's steps.)* $\mathrm{ev}$ is linear: for $\mathbf{X}, \mathbf{Y} \in \mathfrak{g}$ and $a, b \in \mathbb{R}$, $\mathrm{ev}(a\mathbf{X} + b\mathbf{Y}) = (a\mathbf{X} + b\mathbf{Y})_e = a\,\mathbf{X}_e + b\,\mathbf{Y}_e$ by Definition [[§56 Vector Fields#^def-56-2|§56.2]]. It remains to show that $\mathrm{ev}$ is injective and surjective.
@@ -308,7 +424,7 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 > d(L_g)_e(\mathbf{X}_e) = \mathbf{X}_g ;
 > $$
 >
-> more generally $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{gh}$ for all $h$. “There's only one choice really”: $\mathbf{X}$ is the left-invariant extension of $\mathbf{X}_e$ (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](3)).
+> more generally $d(L_g)_h(\mathbf{X}_h) = \mathbf{X}_{gh}$ for all $h$. “There's only one choice really”: $\mathbf{X}$ is the left-invariant extension of $\mathbf{X}_e$ (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](3)).
 >
 > *Injective.* By the basic idea, $\mathbf{X}$ is determined by its value at $e$. So $\mathbf{X}_e = 0$ forces $\mathbf{X}_g = d(L_g)_e(0) = 0$ for all $g$, since $d(L_g)_e$ is linear (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]). So the kernel of the linear map $\mathrm{ev}$ is $\{\mathbf{0}\}$, and $\mathrm{ev}$ is injective.
 >
@@ -318,13 +434,13 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 > \mathbf{X}^v_g = d(L_g)_e(v), \qquad g \in G .
 > $$
 >
-> By Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](1) and (2), which are Lecture 17's steps, $\mathbf{X}^v$ is a rough vector field, a tangent vector at every point, with $\mathbf{X}^v_e = v$ and satisfying the left-invariance identity. *Smooth.* This is where Lecture 17 stopped; Lecture 18 finished it, and by Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]] $\mathbf{X}^v$ is smooth, through $\mathbf{X}^v f = \partial_v\varphi$ for $\varphi(g, x) = f(gx)$. So $\mathbf{X}^v \in \mathfrak{g}$ and $\mathrm{ev}(\mathbf{X}^v) = v$. “So this finishes completely the proof of that theorem.”
+> By Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](1) and (2), which are Lecture 17's steps, $\mathbf{X}^v$ is a rough vector field, a tangent vector at every point, with $\mathbf{X}^v_e = v$ and satisfying the left-invariance identity. *Smooth.* This is where Lecture 17 stopped; Lecture 18 finished it, and by Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]] $\mathbf{X}^v$ is smooth, through $\mathbf{X}^v f = \partial_v\varphi$ for $\varphi(g, x) = f(gx)$. So $\mathbf{X}^v \in \mathfrak{g}$ and $\mathrm{ev}(\mathbf{X}^v) = v$. “So this finishes completely the proof of that theorem.”
 >
 > Finally, a linear isomorphism preserves dimension, so $\dim \mathfrak{g} = \dim T_eG = \dim G$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]).
 
-^pf-60-7
+^pf-60-9
 
-*Uses:* [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|Def. §60.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Def. §60.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]
+*Uses:* [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|Def. §60.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Def. §60.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]
 
 > [!remark]- Connections
 > - The matrix-group version, with $\mathfrak g$ defined through the exponential and identified with $T_{\mathbb 1}G$ and with the left-invariant fields: [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|QFT Theorem §CB.1.16]].
@@ -332,7 +448,7 @@ Compare [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5]], where $T^
 ![[m591-50-1.svg]]
 *The left-invariant field $\mathbf{X}^v$: the vector $v \in T_eG$ carried to $g$ by the differential of the left translation $L_g$.*
 
-**Comparison with Lee.** Lee's proof (Theorem 8.37) differentiates $f(g\,\gamma(t))$ along a curve $\gamma$ adapted to $v$, which is Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]](1) applied to the function $\varphi(g, x) = f(gx)$ of Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]]: $(\mathbf{X}^v f)(g) = \frac{d}{dt}\big|_{t=0} \varphi(g, \gamma(t))$. The course packages that step once and for all as the partial derivative $\partial_v\varphi$.
+**Comparison with Lee.** Lee's proof (Theorem 8.37) differentiates $f(g\,\gamma(t))$ along a curve $\gamma$ adapted to $v$, which is Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]](1) applied to the function $\varphi(g, x) = f(gx)$ of Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]]: $(\mathbf{X}^v f)(g) = \frac{d}{dt}\big|_{t=0} \varphi(g, \gamma(t))$. The course packages that step once and for all as the partial derivative $\partial_v\varphi$.
 
 On the proof as a whole, Uribe passed on a remark a student made in office hours: “this subject is not so much about solving problems … it's about constructing an architecture inside one's brain.”
 
@@ -344,7 +460,7 @@ On the proof as a whole, Uribe passed on a remark a student made in office hours
 > [!proof]+ Proof
 > *(Not from lecture; filled in, after the remark in Lecture 17 that the translations of a vector space give “a left-invariant vector field”.)* *$V$ is a Lie group.* In linear coordinates (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|§22.4]]), addition $(p, q) \mapsto p + q$ and inversion $p \mapsto -p$ are linear, hence smooth; so $V$ is a Lie group (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]]), with $L_p(q) = p + q = \tau_p(q)$.
 >
-> *The left-invariant fields.* By Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], every element of $T_0V$ is $D_v|_0$ for a unique $v \in V$. By Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]] and Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]](3), the left-invariant fields are exactly the left-invariant extensions $\mathbf{X}^w$, $w \in T_0V$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]), with $\mathbf{X}^w_p = d(L_p)_0(w)$. For $w = D_v|_0$, Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]](2) gives
+> *The left-invariant fields.* By Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], every element of $T_0V$ is $D_v|_0$ for a unique $v \in V$. By Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]] and Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](3), the left-invariant fields are exactly the left-invariant extensions $\mathbf{X}^w$, $w \in T_0V$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]), with $\mathbf{X}^w_p = d(L_p)_0(w)$. For $w = D_v|_0$, Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]](2) gives
 >
 > $$
 > \mathbf{X}^{w}_p = d(\tau_p)_0\big(D_v|_0\big) = D_v|_p ,
@@ -362,10 +478,10 @@ On the proof as a whole, Uribe passed on a remark a student made in office hours
 
 ^pf-ex-60-2
 
-*Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Def. §60.5]], [[§30 The Differential in Coordinates#^prop-30-7|§30.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]]
+*Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Def. §60.5]], [[§30 The Differential in Coordinates#^prop-30-7|§30.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]]
 
 > [!definition] Definition §60.6: The Lie Bracket on $T_eG$
-> Let $G$ be a [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]] and, for $v \in T_eG$, let $\mathbf{X}^v \in \mathfrak{g}$ be its left-invariant extension (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]] and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6|§60.6]]), the left-invariant field with $\mathbf{X}^v_e = v$, unique by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7|§60.7]]. The **Lie bracket** on $T_eG$ is
+> Let $G$ be a [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]] and, for $v \in T_eG$, let $\mathbf{X}^v \in \mathfrak{g}$ be its left-invariant extension (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]] and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]]), the left-invariant field with $\mathbf{X}^v_e = v$, unique by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]. The **Lie bracket** on $T_eG$ is
 >
 > $$
 > [v, w] = \big[\mathbf{X}^v, \mathbf{X}^w\big]_e , \qquad v, w \in T_eG .
@@ -375,14 +491,14 @@ On the proof as a whole, Uribe passed on a remark a student made in office hours
 
 By construction $\mathrm{ev}$ is then an isomorphism of [[§58 Lie Bracket and Lie Algebra#^def-58-2|Lie algebras]]: $T_eG$ inherits the bracket that makes it one. The question is what this bracket is.
 
-> [!theorem] Theorem §60.8: The Lie Algebra of $\mathrm{GL}(d,\mathbb{R})$
+> [!theorem] Theorem §60.10: The Lie Algebra of $\mathrm{GL}(d,\mathbb{R})$
 > Let $G = \mathrm{GL}(d, \mathbb{R})$, the $d \times d$ invertible matrices, an open subset of $\operatorname{Mat}(d, \mathbb{R}) \cong \mathbb{R}^{d^2}$, so that $T_IG = \operatorname{Mat}(d,\mathbb{R})$. The Lie bracket on $T_IG$ ([[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Definition §60.6]]) is the matrix commutator
 >
 > $$
 > [A, B] = AB - BA .
 > $$
 
-^thm-60-8
+^thm-60-10
 
 > [!proof]+ Proof
 > *(Lecture 19 — “we have run out of diagrams to chase. We actually have to compute something.” The lecture's computation, with the index bookkeeping written out. Lecture 19 proved this together with Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]], which reduces every linear group to this case.)*
@@ -432,7 +548,7 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§58 Lie Bracket and L
 > [A, B] = [\mathbf{X}^A, \mathbf{X}^B]_I = \mathbf{X}^{AB}_I - \mathbf{X}^{BA}_I = AB - BA .
 > $$
 
-^pf-60-8
+^pf-60-10
 
 *Uses:* [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Def. §60.6]]
 
@@ -443,8 +559,350 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§58 Lie Bracket and L
 > - For matrix Lie groups the physics notes prove the answer: the bracket of left-invariant fields becomes $XY - YX$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|QFT Theorem §CB.1.16]], part 3), and $\mathfrak g$ is closed under it ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|QFT Theorem §CB.1.12]]).
 
 > [!remark] Remark: Left or Right: The Sign of the Bracket
-> “This is the case because we use left-invariant fields. If we use right-invariant fields, we would have minus that.” Why left, then? An aside: “Did you ever think what the world would look like if, instead of writing $f(x)$ … we would have written $(x)f$? … Imagine composing functions with that rule. … Everything works much better if you write $(x)f$”: in that notation, composites read in the order the maps are applied.
+> “This is the case because we use left-invariant fields. If we use right-invariant fields, we would have minus that.” Why left, then? An aside: “Did you ever think what the world would look like if, instead of writing $f(x)$ … we would have written $(x)f$? … Imagine composing functions with that rule. … Everything works much better if you write $(x)f$”: in that notation, composites read in the order the maps are applied. *(Proved in [[§60 Lie Groups and Left-Invariant Vector Fields|§60]]: Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]], Assignment 6, Problem 2(b).)*
 
 ^rem-60-2
 
 **Transcription note (Lecture 17).** Page 46 of the handwritten notes says the construction gives “$\mathbf{X} : M \to TM$”; the manifold is the group, $\mathbf{X} : G \to TG$.
+
+## Right-Invariant Vector Fields
+
+*Assignment 6, Problem 2, with what its solution contains. Not from lecture. Lecture 17 said there is “nothing wrong with right” (the remark *Why Left?*) and Lecture 19 that right-invariant fields give “minus that” (the remark *Left or Right: The Sign of the Bracket*); this subsection proves both. Elements of $T_eG$ are written $A, B$, as in the assignment. The general formulas for the differentials of multiplication and inversion, which need right translations, are filled in here as well.*
+
+> [!definition] Definition §60.7: Right Translation
+> For $g$ in a Lie group $G$, **right translation** by $g$ is $R_g : G \to G$, $R_g(k) = kg$.
+>
+> *Lee: Ch. 7, Basic Definitions*
+
+^def-60-7
+
+> [!theorem] Lemma §60.11: Right Translations
+> Let $G$ be a Lie group with identity $e$ and $g, h \in G$.
+>
+> 1. $R_g \circ R_h = R_{hg}$ and $R_e = \mathrm{id}_G$. Note the order: first $h$, then $g$.
+> 2. $R_g$ is a diffeomorphism, with inverse $R_{g^{-1}}$.
+> 3. Left and right translations commute: $L_g \circ R_h = R_h \circ L_g$.
+
+^lem-60-11
+
+> [!proof]+ Proof
+> *(1)* *(The submitted solution.)* For $k \in G$, $(R_g \circ R_h)(k) = R_g(kh) = khg = R_{hg}(k)$, so $R_g \circ R_h = R_{hg}$. Also $R_e(k) = ke = k$, so $R_e = \mathrm{id}_G$.
+>
+> *(Filled in.)* *(2)* As in Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-4|§60.4]]: $R_g = \mu \circ \iota^{g}$, where $\iota^{g} : G \to G \times G$, $k \mapsto (k, g)$, is the slice inclusion (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]], with $p_2 = g$), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], and $\mu$ is the multiplication, smooth by Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]]; so $R_g$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), and so is $R_{g^{-1}}$. By (1), $R_g \circ R_{g^{-1}} = R_{g^{-1}g} = R_e = \mathrm{id}_G$ and $R_{g^{-1}} \circ R_g = R_{gg^{-1}} = \mathrm{id}_G$. So $R_g$ is a smooth bijection with smooth inverse $R_{g^{-1}}$, a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]).
+>
+> *(3)* For $k \in G$, by associativity, $L_g(R_h(k)) = g(kh) = (gk)h = R_h(L_g(k))$.
+
+^pf-60-11
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-4|§60.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]
+
+> [!theorem] Proposition §60.12: The Differential of Multiplication
+> Let $G$ be a Lie group with multiplication $\mu$, and $g, h \in G$. Under the identification $T_{(g,h)}(G \times G) = T_gG \oplus T_hG$ of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]],
+>
+> $$
+> d\mu_{(g,h)}(v, w) = d(R_h)_g(v) + d(L_g)_h(w), \qquad v \in T_gG,\ w \in T_hG .
+> $$
+>
+> At $(g, h) = (e, e)$, where $R_e = L_e = \mathrm{id}_G$, this is Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2|§60.2]].
+
+^prop-60-12
+
+> [!proof]+ Proof
+> *(Not from the assignment; the proof of Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2|§60.2]] at the point $(g, h)$.)* Let $\iota_1(x) = (x, h)$ and $\iota_2(y) = (g, y)$ be the slice inclusions through $(g, h)$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), so that $(v, w)$ stands for $\Theta(v, w) = d(\iota_1)_g(v) + d(\iota_2)_h(w)$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]]). For $x, y \in G$,
+>
+> $$
+> (\mu \circ \iota_1)(x) = xh = R_h(x), \qquad (\mu \circ \iota_2)(y) = gy = L_g(y),
+> $$
+>
+> so $\mu \circ \iota_1 = R_h$ and $\mu \circ \iota_2 = L_g$. By the linearity of $d\mu_{(g,h)}$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]) and the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]),
+>
+> $$
+> d\mu_{(g,h)}(v, w) = d\mu_{(g,h)}\big(d(\iota_1)_g(v)\big) + d\mu_{(g,h)}\big(d(\iota_2)_h(w)\big) = d(\mu \circ \iota_1)_g(v) + d(\mu \circ \iota_2)_h(w) = d(R_h)_g(v) + d(L_g)_h(w) .
+> $$
+
+^pf-60-12
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2|§60.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
+
+> [!theorem] Lemma §60.13: Inversion Exchanges Left and Right Translations
+> Let $G$ be a Lie group with inversion $j$, and $g \in G$.
+>
+> 1. $j \circ L_g = R_{g^{-1}} \circ j$.
+> 2. $j$ is a diffeomorphism, and $j^{-1} = j$.
+
+^lem-60-13
+
+> [!proof]+ Proof
+> *(1)* *(Assignment 6, Problem 2(a): the submitted solution's “key identity”.)* For $k \in G$,
+>
+> $$
+> (j \circ L_g)(k) = j(gk) = (gk)^{-1} = k^{-1}g^{-1} = R_{g^{-1}}(k^{-1}) = (R_{g^{-1}} \circ j)(k) .
+> $$
+>
+> *(2)* *(Filled in.)* $j$ is smooth (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]]), and $j(j(k)) = (k^{-1})^{-1} = k$, so $j \circ j = \mathrm{id}_G$: $j$ is a smooth bijection whose inverse $j$ is smooth.
+
+^pf-60-13
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]]
+
+> [!theorem] Proposition §60.14: The Differential of Inversion
+> Let $G$ be a Lie group with identity $e$ and inversion $j$, and $g \in G$. Then
+>
+> $$
+> dj_g = -\,d(R_{g^{-1}})_e \circ d(L_{g^{-1}})_g : T_gG \longrightarrow T_{g^{-1}}G .
+> $$
+>
+> At $g = e$ this is Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-3|§60.3]].
+
+^prop-60-14
+
+> [!proof]+ Proof
+> *(Not from the assignment.)* By Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-13|§60.13]](1), $j \circ L_g = R_{g^{-1}} \circ j$. Both sides map $e$ to $g^{-1}$; by the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) at $e$, with $L_g(e) = g$, $j(e) = e$ and $dj_e = -\mathrm{id}$ (Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-3|§60.3]]),
+>
+> $$
+> dj_g \circ d(L_g)_e = d(R_{g^{-1}})_e \circ dj_e = -\,d(R_{g^{-1}})_e .
+> $$
+>
+> By Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-4|§60.4]], $L_{g^{-1}} \circ L_g = \mathrm{id}_G$ and $L_g \circ L_{g^{-1}} = \mathrm{id}_G$, so by the chain rule $d(L_g)_e$ is invertible with inverse $d(L_{g^{-1}})_g$. Composing the display on the right with $d(L_{g^{-1}})_g$ gives the formula.
+
+^pf-60-14
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-13|§60.13]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-3|§60.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-4|§60.4]]
+
+For a matrix group, where $d(L_g)$ and $d(R_g)$ are multiplication by $g$ on the left and on the right (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]] and Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-3|§60.3]] below), this reads $d\mu_{(g,h)}(v, w) = vh + gw$ and $dj_g(v) = -g^{-1}vg^{-1}$: the product rule and the derivative of the inverse matrix.
+
+> [!definition] Definition §60.8: Right-Invariant Vector Field
+> A vector field $\mathbf{Y}$ on a Lie group $G$ is **right-invariant** if it is $R_g$-related to itself for every $g \in G$ (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]): for all $g, h \in G$,
+>
+> $$
+> d(R_g)_h\, \mathbf{Y}_h = \mathbf{Y}_{R_g(h)} = \mathbf{Y}_{hg} .
+> $$
+>
+> The same identity defines a right-invariant *rough* field, a tangent vector at every point not yet known to be smooth (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]).
+
+^def-60-8
+
+> [!definition] Definition §60.9: Right-Invariant Extension
+> Let $G$ be a Lie group with identity $e$ and $A \in T_eG$. The **right-invariant extension** of $A$ is the rough field $\mathbf{Y}^A : G \to TG$,
+>
+> $$
+> \mathbf{Y}^A_g = d(R_g)_e(A) \in T_gG, \qquad g \in G,
+> $$
+>
+> which makes sense since $R_g(e) = g$. Beside it, $\mathbf{X}^A_g = d(L_g)_e(A)$ is the left-invariant extension (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]).
+
+^def-60-9
+
+> [!theorem] Proposition §60.15: Right-Invariant Fields and the Tangent Space at the Identity
+> Let $G$ be a Lie group with identity $e$.
+>
+> 1. For $A \in T_eG$, $\mathbf{Y}^A$ is right-invariant and $\mathbf{Y}^A_e = A$.
+> 2. Every right-invariant (rough) field $\mathbf{Y}$ is $\mathbf{Y}^A$ for $A = \mathbf{Y}_e$.
+> 3. The map $A \mapsto \mathbf{Y}^A$ is linear, and it is a bijection from $T_eG$ onto the right-invariant rough fields, with inverse $\mathbf{Y} \mapsto \mathbf{Y}_e$. In particular $\mathbf{Y}^{-A} = -\mathbf{Y}^A$.
+
+^prop-60-15
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 2(a), “following what we did in class” (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]]); the submitted solution. The linearity in (3) is from its part (b).)*
+>
+> *(1) $\mathbf{Y}^A$ is right-invariant.* For $g, h \in G$, by the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], as $R_h(e) = h$) and Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-11|§60.11]](1),
+>
+> $$
+> d(R_g)_h\,\mathbf{Y}^A_h = d(R_g)_h\, d(R_h)_e(A) = d(R_g \circ R_h)_e(A) = d(R_{hg})_e(A) = \mathbf{Y}^A_{hg} .
+> $$
+>
+> *$\mathbf{Y}^A_e = A$.* Since $R_e = \mathrm{id}_G$, $\mathbf{Y}^A_e = d(R_e)_e(A) = d(\mathrm{id}_G)_e(A) = A$.
+>
+> *(2) Every right-invariant field is of this form.* Let $\mathbf{Y}$ be right-invariant and $A = \mathbf{Y}_e$. Taking $h = e$ in the right-invariance identity, for every $g \in G$,
+>
+> $$
+> \mathbf{Y}_g = \mathbf{Y}_{eg} = d(R_g)_e\,\mathbf{Y}_e = d(R_g)_e(A) = \mathbf{Y}^A_g,
+> $$
+>
+> so $\mathbf{Y} = \mathbf{Y}^A$.
+>
+> *(3)* By (1) and (2), $A \mapsto \mathbf{Y}^A$ and $\mathbf{Y} \mapsto \mathbf{Y}_e$ are mutually inverse. The map $A \mapsto \mathbf{Y}^A$ is linear since each $d(R_g)_e$ is (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]); in particular $\mathbf{Y}^{-A}_g = d(R_g)_e(-A) = -\mathbf{Y}^A_g$ for all $g$.
+
+^pf-60-15
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-11|§60.11]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
+
+> [!theorem] Proposition §60.16: Inversion Carries Left-Invariant to Right-Invariant Fields
+> Let $G$ be a Lie group with inversion $j$, and $A \in T_eG$. For every $g \in G$,
+>
+> $$
+> dj_g\big(\mathbf{X}^A_g\big) = \mathbf{Y}^{-A}_{j(g)} = \mathbf{Y}^{-A}_{g^{-1}} .
+> $$
+
+^prop-60-16
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 2(a); the submitted solution.)* *The right-hand side.* Since $j(g) = g^{-1}$ and $d(R_{g^{-1}})_e$ is linear,
+>
+> $$
+> \mathbf{Y}^{-A}_{j(g)} = \mathbf{Y}^{-A}_{g^{-1}} = d(R_{g^{-1}})_e(-A).
+> $$
+>
+> *The left-hand side.* By the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), using $L_g(e) = g$, $j(e) = e$, Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-13|§60.13]](1), and $dj_e(A) = -A$ (Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-3|§60.3]]),
+>
+> $$
+> dj_g\,\mathbf{X}^A_g = dj_g\, d(L_g)_e(A) = d(j \circ L_g)_e(A) = d(R_{g^{-1}} \circ j)_e(A) = d(R_{g^{-1}})_e\, dj_e(A) = d(R_{g^{-1}})_e(-A).
+> $$
+>
+> Comparing the two sides, $dj_g\,\mathbf{X}^A_g = \mathbf{Y}^{-A}_{j(g)}$ for every $g \in G$.
+
+^pf-60-16
+
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-13|§60.13]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-3|§60.3]]
+
+> [!theorem] Corollary §60.17: Right-Invariant Extensions Are Smooth
+> Let $G$ be a Lie group with inversion $j$, and $A \in T_eG$. Then $\mathbf{Y}^{-A} = j_\ast\mathbf{X}^A$, the pushforward of the left-invariant field $\mathbf{X}^A$ by the diffeomorphism $j$ (Definition [[§59 Related Vector Fields#^def-59-1|§59.1]]). Hence every $\mathbf{Y}^A$ is smooth, and $\mathbf{X}^A$ and $\mathbf{Y}^{-A}$ are $j$-related (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]).
+
+^cor-60-17
+
+> [!proof]+ Proof
+> *(Not from the assignment, which did not ask for smoothness: “You do not have to prove that $Y^A$ is smooth.” It follows from its part (a).)* By Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-13|§60.13]](2), $j$ is a diffeomorphism with $j^{-1} = j$. For $q \in G$, by Definition [[§59 Related Vector Fields#^def-59-1|§59.1]] and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-16|§60.16]] at $g = j^{-1}(q) = q^{-1}$,
+>
+> $$
+> (j_\ast\mathbf{X}^A)_q = dj_{q^{-1}}\big(\mathbf{X}^A_{q^{-1}}\big) = \mathbf{Y}^{-A}_{j(q^{-1})} = \mathbf{Y}^{-A}_q .
+> $$
+>
+> $\mathbf{X}^A$ is smooth (Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]]), so $\mathbf{Y}^{-A} = j_\ast\mathbf{X}^A$ is smooth by Proposition [[§59 Related Vector Fields#^prop-59-2|§59.2]]. As $A$ ranges over $T_eG$, so does $-A$: every $\mathbf{Y}^A$ is smooth. Now both are vector fields, and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-16|§60.16]] is the $j$-relatedness condition of Definition [[§59 Related Vector Fields#^def-59-2|§59.2]].
+
+^pf-60-17
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-13|§60.13]], [[§59 Related Vector Fields#^def-59-1|Def. §59.1]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-16|§60.16]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], [[§59 Related Vector Fields#^prop-59-2|§59.2]], [[§59 Related Vector Fields#^def-59-2|Def. §59.2]]
+
+So the right-invariant vector fields are exactly the $\mathbf{Y}^A$, $A \in T_eG$ (Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-15|§60.15]]), and they are smooth: the right-handed version of Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]], here obtained from the left-handed one through $j$ rather than by repeating Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]].
+
+> [!definition] Definition §60.10: The Right Bracket
+> Let $G$ be a Lie group with identity $e$. For $A, B \in T_eG$, the **right bracket** is
+>
+> $$
+> [A, B]^R = \big[\mathbf{Y}^A, \mathbf{Y}^B\big]_e \in T_eG,
+> $$
+>
+> with $\mathbf{Y}^A, \mathbf{Y}^B$ the right-invariant extensions (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-9|§60.9]]).
+
+^def-60-10
+
+> [!theorem] Proposition §60.18: The Right Bracket Is a Lie Bracket
+> Let $G$ be a Lie group and $A, B \in T_eG$. The bracket $[\mathbf{Y}^A, \mathbf{Y}^B]$ is right-invariant, and
+>
+> $$
+> \big[\mathbf{Y}^A, \mathbf{Y}^B\big] = \mathbf{Y}^{[A,B]^R} .
+> $$
+>
+> $[\ ,\ ]^R$ is a Lie bracket on $T_eG$ (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]]).
+
+^prop-60-18
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 2(b); the submitted solution.)* *The bracket is right-invariant.* Let $g \in G$. Since $\mathbf{Y}^A$ and $\mathbf{Y}^B$ are right-invariant, each is $R_g$-related to itself (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-8|§60.8]]); they are smooth (Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-17|§60.17]]), so by the naturality of the bracket (Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]]) $[\mathbf{Y}^A, \mathbf{Y}^B]$ is $R_g$-related to itself. As $g$ is arbitrary, $[\mathbf{Y}^A, \mathbf{Y}^B]$ is right-invariant, and by Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-15|§60.15]](2) it is $\mathbf{Y}^C$ with $C = [\mathbf{Y}^A, \mathbf{Y}^B]_e = [A, B]^R$.
+>
+> *A Lie bracket.* The map $A \mapsto \mathbf{Y}^A$ is linear and injective (Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-15|§60.15]](3)), and it carries $[\ ,\ ]^R$ to the bracket of vector fields. Hence bilinearity, antisymmetry and the Jacobi identity for $[\ ,\ ]^R$ follow from those of the bracket on $\mathfrak{X}(G)$ (Corollary [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]]). *(Filled in.)* For instance, for bilinearity in the first slot, with $a, a' \in \mathbb{R}$,
+>
+> $$
+> \mathbf{Y}^{[aA + a'A', B]^R} = \big[a\mathbf{Y}^A + a'\mathbf{Y}^{A'}, \mathbf{Y}^B\big] = a\,\mathbf{Y}^{[A,B]^R} + a'\,\mathbf{Y}^{[A',B]^R} = \mathbf{Y}^{a[A,B]^R + a'[A',B]^R},
+> $$
+>
+> and injectivity gives $[aA + a'A', B]^R = a[A,B]^R + a'[A',B]^R$; antisymmetry and Jacobi are the same three steps.
+
+^pf-60-18
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-8|Def. §60.8]], [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-17|§60.17]], [[§59 Related Vector Fields#^prop-59-3|§59.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-15|§60.15]], [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]]
+
+> [!theorem] Theorem §60.19: The Right Bracket Is the Negative of the Left Bracket
+> Let $G$ be a Lie group, and $[\ ,\ ]$ the Lie bracket on $T_eG$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]). For all $A, B \in T_eG$,
+>
+> $$
+> [A, B]^R = -[A, B] .
+> $$
+
+^thm-60-19
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 2(b); the submitted solution.)* By Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]], $[\mathbf{X}^A, \mathbf{X}^B] = \mathbf{X}^{[A,B]}$ (both are left-invariant, Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-6|§60.6]], with the same value at $e$, Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]). By Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-17|§60.17]], $\mathbf{X}^A$ is $j$-related to $\mathbf{Y}^{-A}$ and $\mathbf{X}^B$ is $j$-related to $\mathbf{Y}^{-B}$, so by the naturality of the bracket (Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]])
+>
+> $$
+> [\mathbf{X}^A, \mathbf{X}^B] = \mathbf{X}^{[A,B]} \text{ is $j$-related to } [\mathbf{Y}^{-A}, \mathbf{Y}^{-B}] .
+> $$
+>
+> Since $\mathbf{Y}^{-A} = -\mathbf{Y}^A$ and $\mathbf{Y}^{-B} = -\mathbf{Y}^B$ (Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-15|§60.15]](3)), by bilinearity of the bracket and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-18|§60.18]],
+>
+> $$
+> [\mathbf{Y}^{-A}, \mathbf{Y}^{-B}] = [-\mathbf{Y}^A, -\mathbf{Y}^B] = (-1)(-1)[\mathbf{Y}^A, \mathbf{Y}^B] = \mathbf{Y}^{[A,B]^R} .
+> $$
+>
+> On the other hand, Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-17|§60.17]] applied to $[A, B] \in T_eG$ shows that $\mathbf{X}^{[A,B]}$ is $j$-related to $\mathbf{Y}^{-[A,B]}$. So $\mathbf{X}^{[A,B]}$ is $j$-related to both $\mathbf{Y}^{[A,B]^R}$ and $\mathbf{Y}^{-[A,B]}$; that is, for every $p \in G$,
+>
+> $$
+> \mathbf{Y}^{[A,B]^R}_{j(p)} = dj_p\,\mathbf{X}^{[A,B]}_p = \mathbf{Y}^{-[A,B]}_{j(p)} .
+> $$
+>
+> Since $j$ is a bijection, every point of $G$ is of the form $j(p)$, so $\mathbf{Y}^{[A,B]^R} = \mathbf{Y}^{-[A,B]}$. Evaluating at $e$ and using $\mathbf{Y}^C_e = C$ (Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-15|§60.15]](1)),
+>
+> $$
+> [A, B]^R = -[A, B] .
+> $$
+
+^pf-60-19
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Def. §60.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-6|§60.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]], [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-17|§60.17]], [[§59 Related Vector Fields#^prop-59-3|§59.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-15|§60.15]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-18|§60.18]]
+
+> [!proof]+ Second proof
+> *(Not from the assignment.)* $j$ is a diffeomorphism, so pushing forward by it preserves brackets (Corollary [[§59 Related Vector Fields#^cor-59-4|§59.4]]). With $j_\ast\mathbf{X}^C = \mathbf{Y}^{-C}$ for every $C \in T_eG$ (Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-17|§60.17]]) and $\mathbf{Y}^{-C} = -\mathbf{Y}^C$,
+>
+> $$
+> \mathbf{Y}^{-[A,B]} = j_\ast\mathbf{X}^{[A,B]} = j_\ast[\mathbf{X}^A, \mathbf{X}^B] = [j_\ast\mathbf{X}^A, j_\ast\mathbf{X}^B] = [-\mathbf{Y}^A, -\mathbf{Y}^B] = [\mathbf{Y}^A, \mathbf{Y}^B] .
+> $$
+>
+> Evaluating at $e$: $-[A, B] = [A, B]^R$.
+
+^pf-60-19-2
+
+*Uses:* [[§59 Related Vector Fields#^cor-59-4|§59.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-17|§60.17]]
+
+> [!theorem] Corollary §60.20: Abelian Lie Groups Have Zero Bracket
+> If the Lie group $G$ is abelian, its Lie bracket on $T_eG$ is identically zero.
+
+^cor-60-20
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 2(c), “use the result of part (b)”; the submitted solution.)* Suppose $G$ is abelian. For $g, k \in G$, $L_g(k) = gk = kg = R_g(k)$, so $L_g = R_g$. Hence for $A \in T_eG$ and $g \in G$,
+>
+> $$
+> \mathbf{X}^A_g = d(L_g)_e(A) = d(R_g)_e(A) = \mathbf{Y}^A_g,
+> $$
+>
+> so $\mathbf{X}^A = \mathbf{Y}^A$. Therefore, for $A, B \in T_eG$,
+>
+> $$
+> [A, B]^R = [\mathbf{Y}^A, \mathbf{Y}^B]_e = [\mathbf{X}^A, \mathbf{X}^B]_e = [A, B].
+> $$
+>
+> Combining with Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]], $[A, B] = [A, B]^R = -[A, B]$, so $2[A, B] = 0$. Since $T_eG$ is a real vector space, $[A, B] = 0$ for all $A, B \in T_eG$.
+
+^pf-60-20
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]]
+
+This agrees with Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-2|§60.2]], where the bracket of the additive group of a vector space was computed to vanish, and it applies as well to the torus $S^1 \times \cdots \times S^1$, a product of the abelian Lie group $S^1 = \mathrm{U}(1)$. *(Not from the assignment.)* The converse needs connectedness: $\mathrm{O}(2)$ is not abelian, but its tangent space at $I$ is that of $\mathrm{SO}(2) \cong S^1$, one-dimensional, so its bracket vanishes by antisymmetry. For connected groups the converse holds, a fact that needs the exponential map (Lee, Ch. 20).
+
+> [!example] Example §60.3: Right-Invariant Fields on $\mathrm{GL}({n,\mathbb{R}})$
+> On $G = \mathrm{GL}(n,\mathbb{R})$, with $T_gG = \operatorname{Mat}(n,\mathbb{R})$ as in Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]], the right-invariant extension of $A \in \operatorname{Mat}(n,\mathbb{R}) = T_IG$ is
+>
+> $$
+> \mathbf{Y}^A_g = Ag ,
+> $$
+>
+> and the left- and right-invariant extensions are related by the adjoint action (Proposition [[§25 The Geometric Tangent Space#^prop-25-6|§25.6]]): $\mathbf{X}^A_g = gA = (gAg^{-1})\,g = \mathbf{Y}^{gAg^{-1}}_g$. The right bracket is $[A, B]^R = BA - AB$.
+
+^ex-60-3
+
+> [!proof]+ Proof
+> *(Not from the assignment.)* $R_g$ is the restriction to $G$ of the linear map $h \mapsto hg$ of $\operatorname{Mat}(n,\mathbb{R})$, so, exactly as for $L_g$ in the proof of Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]], $d(R_g)_h(v) = vg$; at $h = I$, $\mathbf{Y}^A_g = d(R_g)_I(A) = Ag$. Then $\mathbf{X}^A_g = gA = gAg^{-1}g = \mathbf{Y}^{gAg^{-1}}_g$. Finally $[A, B]^R = -[A, B] = -(AB - BA) = BA - AB$ by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]] and Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]. As a check without the theorem: the fields $X \mapsto AX$ are the column-vector linear fields of the remark *Left and Right Actions* in [[§61 Lie Group Morphisms and Linear Groups|§61]], applied to each column of $X$, and their brackets carry the same sign $BA - AB$.
+
+^pf-ex-60-3
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]

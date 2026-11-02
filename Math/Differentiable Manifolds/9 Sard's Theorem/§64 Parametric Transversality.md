@@ -117,3 +117,204 @@ Uribe's picture: $Z$ (blue) and $Y$ (red) tangent at a point, not transverse; a 
 “I will give you a homework problem, an application of this … to show that if you have a manifold inside $\mathbb{R}^2$ [as transcribed], almost all linear functions restricted to the manifold are Morse. So you have a lot of Morse functions” (Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]]).
 
 **Transcription note (Lecture 20).** Page 54 of the handwritten notes writes “$\pi$ onto” under $F^{-1}(Z) \to \mathbb{R}^d$; Uribe paused (“that's not at all … yeah, it's onto”), and it is onto — for $p \in Y$ and $z \in Z$, $(z - p, p) \in F^{-1}(Z)$ when $Z \neq \varnothing$ — but surjectivity plays no role in the argument.
+
+## Height Functions Are Almost Always Morse
+
+*Assignment 6, Problem 5: the homework announced in Lecture 20 (“almost all linear functions restricted to the manifold are Morse”). Not from lecture; the submitted solution, with the bundle facts it uses filled in ([[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]]) and its main implication completed to an equivalence.*
+
+*Setting.* Throughout this subsection $M \subseteq \mathbb{R}^N$ is a regular submanifold of dimension $m < N$, with the geometric tangent spaces $T^{\mathrm{geo}}_pM$, written $T_pM$ (the Setting of [[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]] with $n = N$); $T^{\mathrm{geo}}M$ is its tangent bundle with zero section $\mathcal{Z}$ and $\pi_p : \mathbb{R}^N \to T_pM$ the orthogonal projection (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-4|§42.4]], Lemma [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]]). Points of the parameter space $\mathbb{R}^N$ are written $\mathbf{a}, \mathbf{b}$. (If $m = N$, $M$ is open in $\mathbb{R}^N$ and the functions below have no critical points unless $\mathbf{a} = 0$.)
+
+> [!theorem] Lemma §64.3: The Zero Section and the Splitting Along It
+> 1. The zero section $\zeta : M \to T^{\mathrm{geo}}M$, $\zeta(p) = (p, 0)$, is smooth, and $\mathcal{Z} = \zeta(M)$ is a closed regular submanifold of $T^{\mathrm{geo}}M$ of dimension $m$.
+> 2. For $p \in M$, with tangent spaces of the submanifolds $\mathcal{Z} \subseteq T^{\mathrm{geo}}M \subseteq \mathbb{R}^{2N}$ taken geometrically,
+>
+> $$
+> T_{(p,0)}\mathcal{Z} = \{(u, 0) : u \in T_pM\}, \qquad V = \{(0, w) : w \in T_pM\}, \qquad T_{(p,0)}T^{\mathrm{geo}}M = T_{(p,0)}\mathcal{Z} \oplus V = T_pM \times T_pM .
+> $$
+
+^lem-64-3
+
+> [!proof]+ Proof
+> *(1)* *(Filled in.)* The projection $\pi(q, v) = q$ is the restriction to $T^{\mathrm{geo}}M$ of a linear map, smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1); $\zeta$ is smooth into $\mathbb{R}^{2N}$ and lands in the regular submanifold $T^{\mathrm{geo}}M$ (Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]]), so it is smooth into it (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2)). As $\pi \circ \zeta = \mathrm{id}_M$, Proposition [[§44 Embeddings#^prop-44-10|§44.10]] makes $\zeta$ an embedding with closed image, a closed regular submanifold of dimension $m$.
+>
+> *(2)* *(Assignment 6, Problem 5(a); the submitted solution.)* If $\gamma$ is a curve in $M$ with $\gamma(0) = p$ and $\gamma'(0) = u$, then $t \mapsto (\gamma(t), 0)$ is a curve in $\mathcal{Z}$ with velocity $(u, 0)$ at $t = 0$; so $\{(u, 0) : u \in T_pM\} \subseteq T_{(p,0)}\mathcal{Z}$, with equality since both have dimension $m$ (by (1) and Theorem [[§25 The Geometric Tangent Space#^thm-25-7|§25.7]]). For $w \in T_pM$, $t \mapsto (p, tw)$ is a curve in $T^{\mathrm{geo}}M$ with velocity $(0, w)$ at $t = 0$, so $V \subseteq T_{(p,0)}T^{\mathrm{geo}}M$. Both $T_{(p,0)}\mathcal{Z}$ and $V$ are $m$-dimensional, and $T_{(p,0)}\mathcal{Z} \cap V = \{0\}$, since $(u, 0) = (0, w)$ forces $u = w = 0$. Hence $T_{(p,0)}\mathcal{Z} + V$ is a $2m$-dimensional subspace of the $2m$-dimensional space $T_{(p,0)}T^{\mathrm{geo}}M$ (Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]]), so they are equal.
+
+^pf-64-3
+
+*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]], [[§44 Embeddings#^prop-44-10|§44.10]], [[§25 The Geometric Tangent Space#^thm-25-7|§25.7]]
+
+This is the splitting of Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]] for $T^{\ast}M$, seen inside $\mathbb{R}^{2N}$: horizontal (along the zero section) plus vertical (along the fibre).
+
+> [!definition] Definition §64.2: Height Function
+> For $\mathbf{a} \in \mathbb{R}^N$, the **height function** in the direction $\mathbf{a}$ is $f_{\mathbf{a}} : M \to \mathbb{R}$, $f_{\mathbf{a}}(p) = p \cdot \mathbf{a}$, the restriction to $M$ of a linear function.
+
+^def-64-2
+
+> [!theorem] Lemma §64.4: Critical Points of a Height Function
+> For $p \in M$ and $w \in T_pM$, $d(f_{\mathbf{a}})_p(w) = w \cdot \mathbf{a} = w \cdot \pi_p(\mathbf{a})$. Hence
+>
+> $$
+> p \in \operatorname{Crit}(f_{\mathbf{a}}) \iff \mathbf{a} \perp T_pM \iff \pi_p(\mathbf{a}) = 0 .
+> $$
+
+^lem-64-4
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 5(b); the submitted solution.)* $f_{\mathbf{a}}$ is the restriction to $M$ of the linear function $y \mapsto y \cdot \mathbf{a}$, so along a curve $\gamma$ in $M$ with $\gamma(0) = p$, $\gamma'(0) = w$, $d(f_{\mathbf{a}})_p(w) = \frac{d}{dt}\big|_{t=0}\, \gamma(t) \cdot \mathbf{a} = w \cdot \mathbf{a}$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]). Since $w \cdot \mathbf{a} = w \cdot \pi_p(\mathbf{a})$ for $w \in T_pM$ (Lemma [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]](1)), this is the identification $T_pM \cong T_p^{\ast}M$ by the inner product: $d(f_{\mathbf{a}})_p$ corresponds to $\pi_p(\mathbf{a})$. So $d(f_{\mathbf{a}})_p = 0$ if and only if $\mathbf{a} \perp T_pM$, if and only if $\pi_p(\mathbf{a}) = 0$ (Lemma [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]](1)).
+
+^pf-64-4
+
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]]
+
+So $\pi_p(\mathbf{a})$ is the gradient of $f_{\mathbf{a}}$ at $p$, and the family of gradients is the map of the next proposition.
+
+> [!theorem] Proposition §64.5: The Gradient Family Is Transverse to the Zero Section
+> Let $F : \mathbb{R}^N \times M \to T^{\mathrm{geo}}M$, $F(\mathbf{a}, p) = (p, \pi_p(\mathbf{a}))$. Then $F$ is smooth, $F \pitchfork \mathcal{Z}$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]), and
+>
+> $$
+> S = F^{-1}(\mathcal{Z}) = \{(\mathbf{a}, p) \in \mathbb{R}^N \times M : \mathbf{a} \perp T_pM\}
+> $$
+>
+> is a regular submanifold of $\mathbb{R}^N \times M$ of dimension $N$: the normal bundle $\mathcal{N}$ of $M$ (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-1|§42.1]]) with the two factors written in the opposite order. For $(\mathbf{a}, p) \in S$ and $\mathbf{b} \in \mathbb{R}^N$,
+>
+> $$
+> dF_{(\mathbf{a},p)}(\mathbf{b}, 0) = \big(0,\ \pi_p(\mathbf{b})\big) .
+> $$
+
+^prop-64-5
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 5(a); the submitted solution. Smoothness, not asked for, is Lemma [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]](3).)* *$F^{-1}(\mathcal{Z})$.* The zero section is $\mathcal{Z} = \{(p, 0) : p \in M\}$, so
+>
+> $$
+> F^{-1}(\mathcal{Z}) = \{(\mathbf{a}, p) \in \mathbb{R}^N \times M : \pi_p(\mathbf{a}) = 0\} = \{(\mathbf{a}, p) : p \in M,\ \mathbf{a} \in (T_pM)^\perp\}
+> $$
+>
+> by Lemma [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]](1). This is the normal bundle $\mathcal{N} = \{(p, v) : p \in M,\ v \perp T_pM\}$ of $M$, with the two factors written in the opposite order.
+>
+> *$F \pitchfork \mathcal{Z}$.* Let $(\mathbf{a}, p) \in F^{-1}(\mathcal{Z})$, so $F(\mathbf{a}, p) = (p, 0)$. We must show $\operatorname{Im} dF_{(\mathbf{a}, p)} + T_{(p,0)}\mathcal{Z} = T_{(p,0)}T^{\mathrm{geo}}M$. By Lemma [[§64 Parametric Transversality#^lem-64-3|§64.3]](2), it suffices to show $V \subseteq \operatorname{Im} dF_{(\mathbf{a}, p)}$. For $\mathbf{b} \in \mathbb{R}^N$, the curve $t \mapsto (\mathbf{a} + t\mathbf{b}, p)$ in $\mathbb{R}^N \times M$ has velocity $(\mathbf{b}, 0)$ at $t = 0$, and by linearity of $\pi_p$, $F(\mathbf{a} + t\mathbf{b}, p) = \big(p,\ \pi_p(\mathbf{a}) + t\,\pi_p(\mathbf{b})\big)$, so
+>
+> $$
+> dF_{(\mathbf{a}, p)}(\mathbf{b}, 0) = \frac{d}{dt}\Big|_{t=0} F(\mathbf{a} + t\mathbf{b}, p) = \big(0,\ \pi_p(\mathbf{b})\big).
+> $$
+>
+> Given $w \in T_pM$, take $\mathbf{b} = w$; since $\pi_p(w) = w$, this gives $(0, w) = dF_{(\mathbf{a},p)}(w, 0) \in \operatorname{Im} dF_{(\mathbf{a}, p)}$. Hence $V \subseteq \operatorname{Im} dF_{(\mathbf{a}, p)}$, and
+>
+> $$
+> \operatorname{Im} dF_{(\mathbf{a}, p)} + T_{(p,0)}\mathcal{Z} \supseteq V + T_{(p,0)}\mathcal{Z} = T_{(p,0)}T^{\mathrm{geo}}M.
+> $$
+>
+> In block form with respect to $\mathbb{R}^N \oplus T_pM$ and $T_{(p,0)}T^{\mathrm{geo}}M = T_pM \oplus T_pM$ (horizontal $\oplus$ vertical),
+>
+> $$
+> dF_{(\mathbf{a}, p)} = \begin{pmatrix} 0 & I_m \\ \pi_p & \ast \end{pmatrix},
+> $$
+>
+> and the first column alone, together with $T_{(p,0)}\mathcal{Z}$, spans $T_{(p,0)}T^{\mathrm{geo}}M$. Therefore $F \pitchfork \mathcal{Z}$.
+>
+> *The manifold $S$.* By Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], applied to $F$ and the submanifold $\mathcal{Z}$ of codimension $2m - m = m$ in $T^{\mathrm{geo}}M$ (Lemma [[§64 Parametric Transversality#^lem-64-3|§64.3]](1)), $S$ is a regular submanifold of $\mathbb{R}^N \times M$ of codimension $m$, so $\dim S = N + m - m = N$, and $T_{(\mathbf{a},p)}S = \{(\mathbf{b}, u) \in \mathbb{R}^N \oplus T_pM : dF_{(\mathbf{a},p)}(\mathbf{b}, u) \in T_{(p,0)}\mathcal{Z}\}$.
+
+^pf-64-5
+
+*Uses:* [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]], [[§64 Parametric Transversality#^lem-64-3|§64.3]], [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]
+
+> [!theorem] Proposition §64.6: The Hessian of a Height Function
+> Let $(\mathbf{a}, p) \in S$, that is, $p \in \operatorname{Crit}(f_{\mathbf{a}})$, and $F_{\mathbf{a}} = F(\mathbf{a}, \cdot) : M \to T^{\mathrm{geo}}M$, $F_{\mathbf{a}}(q) = (q, \pi_q(\mathbf{a}))$. Then
+>
+> $$
+> d(F_{\mathbf{a}})_p(u) = (u, A_pu), \qquad A_pu = \frac{d}{dt}\Big|_{t=0}\pi_{\gamma(t)}(\mathbf{a}) \quad (\gamma(0) = p,\ \gamma'(0) = u),
+> $$
+>
+> for a linear map $A_p : T_pM \to T_pM$. In an adapted chart as in the Setting of [[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]], the matrix of $A_p$ in the basis $X_1(p), \ldots, X_m(p)$ is $g(p)^{-1}H_p$, where $g$ is the Gram matrix (Lemma [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]]) and $H_p$ the Hessian matrix of $f_{\mathbf{a}}$ in the chart $(x^1, \ldots, x^m)$ of $M$ (Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]). So $A_p$ is invertible if and only if $p$ is a nondegenerate critical point of $f_{\mathbf{a}}$.
+
+^prop-64-6
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 5(b); the submitted solution.)* *The vertical derivative.* For $u \in T_pM$ and a curve $\gamma$ in $M$ with $\gamma(0) = p$, $\gamma'(0) = u$,
+>
+> $$
+> d(F_{\mathbf{a}})_p(u) = \frac{d}{dt}\Big|_{t=0}\big(\gamma(t), \pi_{\gamma(t)}(\mathbf{a})\big) = (u, A_pu), \qquad A_pu = \frac{d}{dt}\Big|_{t=0}\pi_{\gamma(t)}(\mathbf{a}).
+> $$
+>
+> Since $T_{(p,0)}T^{\mathrm{geo}}M = \{(u, w) : u, w \in T_pM\}$ (Lemma [[§64 Parametric Transversality#^lem-64-3|§64.3]](2)), $A_pu \in T_pM$, and $A_p$ is linear since $d(F_{\mathbf{a}})_p$ is. In block form, $d(F_{\mathbf{a}})_p = \begin{pmatrix} I_m \\ A_p \end{pmatrix}$.
+>
+> *$A_p$ in coordinates.* Restricted to $U \cap M$, the first $m$ coordinates $(x^1, \ldots, x^m)$ of the adapted chart form a chart of $M$, whose coordinate vectors at $q \in U \cap M$ are the $X_j(q) = \partial_j(q) \in T_qM \subseteq \mathbb{R}^N$. By Lemma [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]](2), $\pi_q(\mathbf{a}) = \sum_{i,j} g^{ij}(q)\,\big(\mathbf{a} \cdot \partial_j(q)\big)\,\partial_i(q)$, and $\frac{\partial f_{\mathbf{a}}}{\partial x^j}(q) = \partial_j(q) \cdot \mathbf{a}$ (Lemma [[§64 Parametric Transversality#^lem-64-4|§64.4]] with $w = \partial_j(q)$). Since $p$ is a critical point, $\mathbf{a} \cdot \partial_j(p) = 0$ for all $j$. Differentiating $\pi_q(\mathbf{a})$ in the direction $\partial_k$ at $q = p$ by the product rule, every term in which the derivative does not fall on $\mathbf{a} \cdot \partial_j(q)$ contains the factor $\mathbf{a} \cdot \partial_j(p) = 0$, so
+>
+> $$
+> A_p(\partial_k(p)) = \sum_{i,j} g^{ij}(p)\, \frac{\partial^2 f_{\mathbf{a}}}{\partial x^k \partial x^j}(p)\, \partial_i(p).
+> $$
+>
+> Thus the matrix of $A_p$ in the basis $(\partial_i(p))$ is $g(p)^{-1}H_p$. As $g(p)$ is invertible, $A_p$ is invertible if and only if $\det H_p \neq 0$, that is (Definition [[§54 Critical Points and the Hessian#^def-54-3|§54.3]] and the remark after it), if and only if $p$ is nondegenerate.
+
+^pf-64-6
+
+*Uses:* [[§64 Parametric Transversality#^lem-64-3|§64.3]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]], [[§64 Parametric Transversality#^lem-64-4|§64.4]], [[§54 Critical Points and the Hessian#^def-54-3|Def. §54.3]]
+
+> [!theorem] Theorem §64.7: Height Functions and Regular Values
+> Let $\pi : S \to \mathbb{R}^N$, $\pi(\mathbf{a}, p) = \mathbf{a}$, be the projection of the manifold $S$ of Proposition [[§64 Parametric Transversality#^prop-64-5|§64.5]] onto the parameter (not to be confused with the orthogonal projections $\pi_p$). Then $\pi^{-1}(\mathbf{a}) = \{\mathbf{a}\} \times \operatorname{Crit}(f_{\mathbf{a}})$, and
+>
+> $$
+> \mathbf{a} \text{ is a regular value of } \pi \iff f_{\mathbf{a}} \text{ is a Morse function.}
+> $$
+
+^thm-64-7
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 5(b): the direction $(\Rightarrow)$ is the submitted solution; $(\Leftarrow)$ is filled in.)* By Lemma [[§64 Parametric Transversality#^lem-64-4|§64.4]], $(\mathbf{a}, p) \in S$ if and only if $p \in \operatorname{Crit}(f_{\mathbf{a}})$, so $\pi^{-1}(\mathbf{a}) = \{\mathbf{a}\} \times \operatorname{Crit}(f_{\mathbf{a}})$. Since $\pi$ is the restriction of the linear projection $(\mathbf{a}, p) \mapsto \mathbf{a}$, $\pi_{\ast(\mathbf{a},p)}(\mathbf{b}, u) = \mathbf{b}$.
+>
+> *The tangent space of $S$.* Let $(\mathbf{a}, p) \in S$. Since $F(\mathbf{a}, q) = F_{\mathbf{a}}(q)$, the chain rule gives $dF_{(\mathbf{a},p)}(0, u) = d(F_{\mathbf{a}})_p(u) = (u, A_pu)$ (Proposition [[§64 Parametric Transversality#^prop-64-6|§64.6]]), and with Proposition [[§64 Parametric Transversality#^prop-64-5|§64.5]], by linearity,
+>
+> $$
+> dF_{(\mathbf{a},p)}(\mathbf{b}, u) = \big(u,\ \pi_p(\mathbf{b}) + A_pu\big) .
+> $$
+>
+> As $T_{(p,0)}\mathcal{Z} = \{(u', 0) : u' \in T_pM\}$, Proposition [[§64 Parametric Transversality#^prop-64-5|§64.5]] gives
+>
+> $$
+> T_{(\mathbf{a},p)}S = \{(\mathbf{b}, u) : \pi_p(\mathbf{b}) + A_pu = 0\}, \qquad \ker \pi_{\ast(\mathbf{a},p)} = \{(0, u) : u \in T_pM,\ A_pu = 0\}.
+> $$
+>
+> *$(\Rightarrow)$ Regular values give Morse functions.* Suppose $\mathbf{a}$ is a regular value of $\pi$, and let $p$ be a critical point of $f_{\mathbf{a}}$, so $(\mathbf{a}, p) \in \pi^{-1}(\mathbf{a})$. Then $\pi_{\ast(\mathbf{a},p)} : T_{(\mathbf{a},p)}S \to \mathbb{R}^N$ is surjective, and since $\dim T_{(\mathbf{a},p)}S = N$, it is also injective. By the kernel computation, $A_pu = 0$ implies $u = 0$, so $A_p$ is injective, hence invertible, and $p$ is nondegenerate (Proposition [[§64 Parametric Transversality#^prop-64-6|§64.6]]). Since $p$ was an arbitrary critical point, $f_{\mathbf{a}}$ is Morse.
+>
+> *$(\Leftarrow)$* Suppose $f_{\mathbf{a}}$ is Morse, and let $(\mathbf{a}, p) \in \pi^{-1}(\mathbf{a})$. Then $p$ is a nondegenerate critical point, so $A_p$ is invertible (Proposition [[§64 Parametric Transversality#^prop-64-6|§64.6]]). Given $\mathbf{b} \in \mathbb{R}^N$, put $u = -A_p^{-1}\pi_p(\mathbf{b}) \in T_pM$; then $(\mathbf{b}, u) \in T_{(\mathbf{a},p)}S$ and $\pi_{\ast(\mathbf{a},p)}(\mathbf{b}, u) = \mathbf{b}$. So $\pi_{\ast(\mathbf{a},p)}$ is onto at every point of $\pi^{-1}(\mathbf{a})$: $\mathbf{a}$ is a regular value.
+
+^pf-64-7
+
+*Uses:* [[§64 Parametric Transversality#^lem-64-4|§64.4]], [[§64 Parametric Transversality#^prop-64-6|§64.6]], [[§64 Parametric Transversality#^prop-64-5|§64.5]]
+
+The image of $\pi_{\ast(\mathbf{a},p)}$ is $\{\mathbf{b} : \pi_p(\mathbf{b}) \in \operatorname{Im} A_p\}$; the theorem says this is all of $\mathbb{R}^N$ exactly when $A_p$ is onto.
+
+> [!theorem] Corollary §64.8: Almost Every Height Function Is Morse
+> For almost every $\mathbf{a} \in \mathbb{R}^N$ (all $\mathbf{a}$ outside a set of measure zero), $f_{\mathbf{a}} : M \to \mathbb{R}$ is a Morse function.
+
+^cor-64-8
+
+> [!proof]+ Proof
+> *(Assignment 6, Problem 5(b); the submitted solution.)* By Sard's theorem (Theorem [[§63 Sard's Theorem#^thm-63-3|§63.3]]) applied to the smooth map $\pi : S \to \mathbb{R}^N$, the set of critical values of $\pi$ has measure zero in $\mathbb{R}^N$. Hence almost every $\mathbf{a} \in \mathbb{R}^N$ is a regular value of $\pi$, and for all such $\mathbf{a}$, $f_{\mathbf{a}}$ is a Morse function (Theorem [[§64 Parametric Transversality#^thm-64-7|§64.7]]).
+
+^pf-64-8
+
+*Uses:* [[§63 Sard's Theorem#^thm-63-3|§63.3]], [[§64 Parametric Transversality#^thm-64-7|§64.7]]
+
+> [!proof]+ Second proof
+> *(Not from the assignment: the problem as an instance of Corollary [[§64 Parametric Transversality#^cor-64-2|§64.2]].)* $F$ is a smooth family of maps $F_{\mathbf{a}} : M \to T^{\mathrm{geo}}M$ parametrized by $\mathbb{R}^N$ (Definition [[§64 Parametric Transversality#^def-64-1|§64.1]]), and $F \pitchfork \mathcal{Z}$ (Proposition [[§64 Parametric Transversality#^prop-64-5|§64.5]]); so $F_{\mathbf{a}} \pitchfork \mathcal{Z}$ for almost every $\mathbf{a}$. At $p \in F_{\mathbf{a}}^{-1}(\mathcal{Z}) = \operatorname{Crit}(f_{\mathbf{a}})$, by Proposition [[§64 Parametric Transversality#^prop-64-6|§64.6]] and Lemma [[§64 Parametric Transversality#^lem-64-3|§64.3]](2),
+>
+> $$
+> \operatorname{Im} d(F_{\mathbf{a}})_p + T_{(p,0)}\mathcal{Z} = \{(u, A_pu)\} + \{(u', 0)\} = T_pM \times \operatorname{Im} A_p ,
+> $$
+>
+> which is all of $T_{(p,0)}T^{\mathrm{geo}}M = T_pM \times T_pM$ if and only if $A_p$ is onto, that is, $p$ is nondegenerate. So $F_{\mathbf{a}} \pitchfork \mathcal{Z}$ exactly when $f_{\mathbf{a}}$ is Morse, and the claim follows. Under the identification $T^{\mathrm{geo}}M \cong T^{\ast}M$ of the hint (“one can identify $TM \cong T^{\ast}M$ using the inner product”), $F_{\mathbf{a}}$ is the section $s_{f_{\mathbf{a}}} : p \mapsto (p, d(f_{\mathbf{a}})_p)$, and this equivalence is Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]].
+
+^pf-64-8-2
+
+*Uses:* [[§64 Parametric Transversality#^cor-64-2|§64.2]], [[§64 Parametric Transversality#^def-64-1|Def. §64.1]], [[§64 Parametric Transversality#^prop-64-5|§64.5]], [[§64 Parametric Transversality#^prop-64-6|§64.6]], [[§64 Parametric Transversality#^lem-64-3|§64.3]], [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]]
+
+> [!remark] Remark: Directions Outside the Image
+> “Incidentally, what can you say about $f_{\mathbf{a}}$ if $\mathbf{a}$ is not in the image of $\pi$?” *(The submitted answer.)* If $\mathbf{a} \notin \pi(S)$, then $\pi^{-1}(\mathbf{a}) = \{\mathbf{a}\} \times \operatorname{Crit}(f_{\mathbf{a}})$ is empty, so $f_{\mathbf{a}}$ has no critical points; in particular it is vacuously Morse (Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]]). *(Not from the assignment.)* If $M$ is compact and nonempty, this never happens: $f_{\mathbf{a}}$ is continuous on a compact set, so it attains a maximum, at a critical point; so $\pi$ is onto. At the other extreme, $\mathbf{a} = 0$ gives $f_0 \equiv 0$, every point critical with zero Hessian, so ($m \ge 1$) $0$ is always a critical value of $\pi$.
+
+^rem-64-1
+
+> [!remark]- ★ Remark: The Shape Operator
+> *(Beyond the course; stated, not proved here.)* For $(\mathbf{a}, p) \in S$, $\mathbf{a}$ is a normal vector at $p$, and $A_p$ is the *shape operator* (Weingarten map) of $M$ at $p$ in the normal direction $\mathbf{a}$: writing $\mathbf{a} = \pi_{\gamma(t)}(\mathbf{a}) + \nu(t)$ with $\nu(t) \perp T_{\gamma(t)}M$, $A_pu = -\nu'(0)$, the classical $S_{\mathbf{a}}(u) = -(D_u\nu)^{\top}$. The Hessian is the second fundamental form $\mathrm{II}$ paired with $\mathbf{a}$: $\operatorname{Hess}_p f_{\mathbf{a}}(u, w) = \mathbf{a} \cdot \mathrm{II}_p(u, w)$. So $f_{\mathbf{a}}$ fails to be Morse exactly when $M$ is curved degenerately in the direction $\mathbf{a}$ at some point where $\mathbf{a}$ is normal. For a hypersurface ($m = N - 1$), $\pi$ restricted to unit normals is the Gauss map, and the excluded directions are those of normals at points of zero Gauss–Kronecker curvature. The companion statement for distances, $L_{\mathbf{a}}(p) = |p - \mathbf{a}|^2$, is Milnor's (*Morse Theory*, §6): $L_{\mathbf{a}}$ is Morse if and only if $\mathbf{a}$ is not a focal point of $M$ (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-3|§42.3]]), the eigenvalue condition of the remark *Focal Points Are Centres of Curvature*.
+
+^rem-64-2

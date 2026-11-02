@@ -481,3 +481,130 @@ $$
 > *(Not from the assignment.)* The set $\{(p, \xi) : p \in M,\ \xi \in N_pM\}$ of Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-3|§42.3]](3) is the conormal bundle $N^{\ast}M$ of $M \subseteq \mathbb{R}^n$, announced in the remark *The Conormal Bundle* in [[§39 Transversality and Lagrange Multipliers|§39]] and defined later, in [[§55 Morse Functions and the Zero Section|§55]] (Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]]), once the cotangent bundle $T^{\ast}\mathbb{R}^n$ is available. So $\mathcal{N}$ is the conormal bundle read through the metric of $\mathbb{R}^n$. This is Uribe's remark that with an inner product the conormal space “would be the normal space” (the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]), and it is why both bundles have dimension $n$: $m$ dimensions of base point, plus $n - m$ of normal vector or conormal covector.
 
 ^rem-42-2
+
+## The Tangent Bundle and the Unit Tangent Bundle
+
+*Assignment 6, Problems 4 and 5, use the tangent bundle of $M \subseteq \mathbb{R}^n$ as a subset of $\mathbb{R}^n \times \mathbb{R}^n$, its unit vectors (Lee, Problem 5-6), and the orthogonal projections onto the tangent spaces. The submitted solutions use these facts without proof; they are filled in here, in the Setting of this section, next to the normal bundle they complement. Not from lecture.*
+
+> [!definition] Definition §42.4: Geometric Tangent Bundle
+> The **(geometric) tangent bundle** of $M$ is
+>
+> $$
+> T^{\mathrm{geo}}M = \{\, (p, v) \in \mathbb{R}^n \times \mathbb{R}^n : p \in M \text{ and } v \in T^{\mathrm{geo}}_pM \,\} \subseteq \mathbb{R}^{2n},
+> $$
+>
+> with the projection $\pi(p, v) = p$ and the **zero section** $\mathcal{Z} = \{(p, 0) : p \in M\}$. Its fibre over $p$ is $\{p\} \times T^{\mathrm{geo}}_pM$.
+>
+> *Lee: Problem 5-6 (as $TM \subseteq T\mathbb{R}^n$)*
+
+^def-42-4
+
+Through $T^{\mathrm{geo}}_pM = \iota_{\ast p}(T_pM)$ (the remark *The Tangent Spaces Match* in [[§37 Regular Submanifolds|§37]]) this is the tangent bundle $TM$ of the abstract theory (Definition [[§51 The Tangent Bundle#^def-51-1|§51.1]], met later), sitting inside $T\mathbb{R}^n = \mathbb{R}^n \times \mathbb{R}^n$. Fibre by fibre it is the orthogonal partner of the normal bundle: $T^{\mathrm{geo}}_pM \oplus (T^{\mathrm{geo}}_pM)^\perp = \mathbb{R}^n$.
+
+> [!theorem] Proposition §42.4: The Geometric Tangent Bundle Is a Submanifold
+> $T^{\mathrm{geo}}M$ is a regular submanifold of $\mathbb{R}^{2n}$ of codimension $2(n - m)$, hence a smooth manifold of dimension $2m$. Near $(p_0, v_0) \in T^{\mathrm{geo}}M$, with an adapted chart $(U, \varphi)$ at $p_0$ as in the Setting,
+>
+> $$
+> T^{\mathrm{geo}}M \cap (U \times \mathbb{R}^n) = F^{-1}(\vec 0), \qquad F(q, v) = \big(G(q),\ J(q)\,v\big) \in \mathbb{R}^{n-m} \times \mathbb{R}^{n-m},
+> $$
+>
+> and $\vec 0$ is a regular value of $F$.
+>
+> *Lee: Problem 5-6; Proposition 3.18 for $TM$ abstractly*
+
+^prop-42-4
+
+> [!proof]+ Proof
+> *(Not from the assignment; the proof of Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-1|§42.1]], with the kernel of $J(q)$ in place of the span of its rows.)* By Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] it suffices to describe $T^{\mathrm{geo}}M$ externally near each of its points (Definition [[§20 Manifolds in Euclidean Space#^def-20-1|§20.1]]). Fix $(p_0, v_0) \in T^{\mathrm{geo}}M$ and an adapted chart $(U, \varphi)$ at $p_0$ as in the Setting; put $W = U \times \mathbb{R}^n$, open in $\mathbb{R}^{2n}$.
+>
+> *The map.* $F : W \to \mathbb{R}^{2(n-m)}$, $F(q, v) = (G(q), J(q)v)$, is smooth: $G$ is part of the chart $\varphi$, and the entries of $J(q)v$ are sums of products of the smooth functions $\partial G^s/\partial r^l(q)$ with the coordinates $v^l$.
+>
+> *$F^{-1}(\vec 0) = T^{\mathrm{geo}}M \cap W$.* For $(q, v) \in W$: $G(q) = 0$ if and only if $q \in U \cap M$ (the adapted chart); and for such $q$, $J(q)v = 0$ if and only if $v \in T^{\mathrm{geo}}_qM$, by item (2) of the Setting ($T^{\mathrm{geo}}_qM = \ker J(q)$, Lemma [[§37 Regular Submanifolds#^lem-37-10|§37.10]]). So $F(q, v) = \vec 0$ if and only if $(q, v) \in T^{\mathrm{geo}}M$ (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-4|§42.4]]).
+>
+> *The Jacobian.* In the standard coordinates $(q, v)$ of $\mathbb{R}^{2n}$, the first $n - m$ components $G(q)$ do not depend on $v$, and the last $n - m$ components $J(q)v$ are linear in $v$ with matrix $J(q)$. So the $2(n - m) \times 2n$ Jacobian is
+>
+> $$
+> F'(q, v) = \begin{pmatrix} J(q) & 0 \\ \ast & J(q) \end{pmatrix},
+> $$
+>
+> where $\ast$ collects the derivatives $\sum_l v^l\, \partial^2 G^s/\partial r^i\partial r^l(q)$, which play no role.
+>
+> *It has rank $2(n - m)$.* Suppose a combination of the rows vanishes: $c^{\mathsf T}(J(q), 0) + b^{\mathsf T}(\ast, J(q)) = 0$ with $c, b \in \mathbb{R}^{n-m}$. The last $n$ columns give $b^{\mathsf T}J(q) = 0$, so $b = 0$, as the rows of $J(q)$ are linearly independent ($J(q)$ has rank $n - m$, item (1) of the Setting); then the first $n$ columns give $c^{\mathsf T}J(q) = 0$, so $c = 0$. So the rows are independent, $F'(q, v)$ has rank $2(n - m)$, and every point of $W$ is a regular point of $F$: $\vec 0$ is a regular value.
+>
+> *Conclusion.* $T^{\mathrm{geo}}M$ is described externally near $(p_0, v_0)$ by $F$, with $2(n - m)$ equations; as $(p_0, v_0)$ was arbitrary, Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] makes it a regular submanifold of $\mathbb{R}^{2n}$ of codimension $2(n - m)$, and Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]] a smooth manifold of dimension $2n - 2(n - m) = 2m$.
+
+^pf-42-4
+
+*Uses:* [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-1|§42.1]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§20 Manifolds in Euclidean Space#^def-20-1|Def. §20.1]], [[§37 Regular Submanifolds#^lem-37-10|§37.10]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-4|Def. §42.4]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]]
+
+> [!definition] Definition §42.5: Unit Tangent Bundle
+> The **unit tangent bundle** of $M$ is the set of unit tangent vectors,
+>
+> $$
+> UM = \{\, (p, u) \in T^{\mathrm{geo}}M : |u| = 1 \,\} = \{\, (p, u) : p \in M,\ u \in T^{\mathrm{geo}}_pM,\ |u| = 1 \,\} \subseteq \mathbb{R}^{2n} .
+> $$
+>
+> *Lee: Problem 5-6*
+
+^def-42-5
+
+> [!theorem] Proposition §42.5: The Unit Tangent Bundle Is a Submanifold
+> $UM$ is a regular submanifold of $\mathbb{R}^{2n}$ of dimension $2m - 1$ (empty if $m = 0$).
+>
+> *Lee: Problem 5-6*
+
+^prop-42-5
+
+> [!proof]+ Proof
+> *(Not from the assignment: Assignment 6, Problem 4, quotes it from Lee, Problem 5-6.)* As in Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]], fix $(p_0, u_0) \in UM$, an adapted chart $(U, \varphi)$ at $p_0$, $W = U \times \mathbb{R}^n$, and add one equation:
+>
+> $$
+> \hat F : W \to \mathbb{R}^{2(n-m) + 1}, \qquad \hat F(q, v) = \big(G(q),\ J(q)\,v,\ |v|^2 - 1\big) .
+> $$
+>
+> It is smooth, and $\hat F^{-1}(\vec 0) = UM \cap W$ by the previous proof and Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-5|§42.5]]. The derivative of $|v|^2 - 1 = \sum_l (v^l)^2 - 1$ is $(0, 2v^{\mathsf T})$, so
+>
+> $$
+> \hat F'(q, v) = \begin{pmatrix} J(q) & 0 \\ \ast & J(q) \\ 0 & 2v^{\mathsf T} \end{pmatrix} .
+> $$
+>
+> *Rank $2(n - m) + 1$ at the points of $UM \cap W$.* Let $(q, v) \in UM \cap W$, and suppose $c^{\mathsf T}(J(q), 0) + b^{\mathsf T}(\ast, J(q)) + a\,(0, 2v^{\mathsf T}) = 0$, with $c, b \in \mathbb{R}^{n-m}$, $a \in \mathbb{R}$. The last $n$ columns give $J(q)^{\mathsf T}b + 2a\,v = 0$. Take the dot product with $v$: $v \cdot J(q)^{\mathsf T}b = (J(q)v) \cdot b = 0$, because $J(q)v = 0$ ($v \in T^{\mathrm{geo}}_qM = \ker J(q)$); so $2a\,|v|^2 = 0$, and $a = 0$ since $|v| = 1$. Then $J(q)^{\mathsf T}b = 0$ gives $b = 0$ and the first $n$ columns give $c = 0$, as in the previous proof. So every point of $\hat F^{-1}(\vec 0)$ is a regular point, $\vec 0$ is a regular value of $\hat F$, and by Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] $UM$ is a regular submanifold of $\mathbb{R}^{2n}$ of codimension $2(n - m) + 1$, of dimension $2n - 2(n - m) - 1 = 2m - 1$.
+
+^pf-42-5
+
+*Uses:* [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-5|Def. §42.5]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]]
+
+For $M = S^1 \subseteq \mathbb{R}^2$, $UM$ is two circles, $\{(p, \pm Jp)\}$ with $J$ the rotation by $\pi/2$: dimension $1 = 2 \cdot 1 - 1$. In general $UM \to M$ has fibre the unit sphere $S^{m-1}$ of $T^{\mathrm{geo}}_pM$.
+
+> [!theorem] Lemma §42.6: Orthogonal Projection onto a Tangent Space
+> For $q \in M$ let $\pi_q : \mathbb{R}^n \to T^{\mathrm{geo}}_qM$ be the orthogonal projection: $\mathbf{a} - \pi_q(\mathbf{a}) \in (T^{\mathrm{geo}}_qM)^\perp$.
+>
+> 1. $\pi_q$ is linear, $\pi_q(w) = w$ for $w \in T^{\mathrm{geo}}_qM$, and $\pi_q(\mathbf{a}) = 0$ if and only if $\mathbf{a} \perp T^{\mathrm{geo}}_qM$; also $w \cdot \mathbf{a} = w \cdot \pi_q(\mathbf{a})$ for $w \in T^{\mathrm{geo}}_qM$.
+> 2. In an adapted chart as in the Setting, with the basis $X_1(q), \ldots, X_m(q)$ of $T^{\mathrm{geo}}_qM$ (item (3) of the Setting), the *Gram matrix* $g(q) = \big(g_{ij}(q)\big)$, $g_{ij}(q) = X_i(q) \cdot X_j(q)$, is invertible, with inverse $\big(g^{ij}(q)\big)$, and
+>
+> $$
+> \pi_q(\mathbf{a}) = \sum_{i,j=1}^m g^{ij}(q)\,\big(\mathbf{a} \cdot X_j(q)\big)\, X_i(q), \qquad q \in U \cap M .
+> $$
+>
+> 3. The map $\mathbb{R}^n \times M \to T^{\mathrm{geo}}M$, $(\mathbf{a}, q) \mapsto (q, \pi_q(\mathbf{a}))$, is smooth.
+
+^lem-42-6
+
+> [!proof]+ Proof
+> *(The formula in (2) is the one of the submitted solution of Assignment 6, Problem 5(b): “this vector lies in $T_qM$ and has the same inner products as $\mathbf{a}$ with each $\partial_k(q)$”. The rest is filled in; (3) is the smoothness of the map $F$ of Problem 5, which the assignment did not ask for.)* Write $T = T^{\mathrm{geo}}_qM$, of dimension $m$ (Setting, item (2)).
+>
+> *(2), and existence of $\pi_q$.* The Gram matrix is invertible: if $g(q)c = 0$, then $0 = c^{\mathsf T}g(q)c = \big|\sum_i c^i X_i(q)\big|^2$, so $\sum_i c^iX_i(q) = 0$ and $c = 0$ by linear independence. Put $P = \sum_{i,j} g^{ij}(q)\,(\mathbf{a} \cdot X_j(q))\,X_i(q) \in T$. For each $k$, since $g$ is symmetric,
+>
+> $$
+> P \cdot X_k(q) = \sum_{i,j} g^{ij}(q)\,\big(\mathbf{a} \cdot X_j(q)\big)\, g_{ik}(q) = \sum_j \delta_{jk}\,\big(\mathbf{a} \cdot X_j(q)\big) = \mathbf{a} \cdot X_k(q),
+> $$
+>
+> so $\mathbf{a} - P$ is orthogonal to every $X_k(q)$, hence to $T$. And such a $P$ is unique: if $P, P' \in T$ both have $\mathbf{a} - P, \mathbf{a} - P' \in T^\perp$, then $P - P' \in T \cap T^\perp = \{0\}$ (a vector orthogonal to itself is $0$). So $\pi_q(\mathbf{a}) = P$ is well defined and given by the formula.
+>
+> *(1)* Linearity: the formula is linear in $\mathbf{a}$. For $w \in T$, $P = w$ satisfies $w - P = 0 \in T^\perp$, so $\pi_q(w) = w$ by uniqueness. If $\pi_q(\mathbf{a}) = 0$ then $\mathbf{a} = \mathbf{a} - 0 \in T^\perp$; conversely, if $\mathbf{a} \in T^\perp$, then $P = 0$ satisfies $\mathbf{a} - 0 \in T^\perp$. Finally, for $w \in T$, $w \cdot (\mathbf{a} - \pi_q(\mathbf{a})) = 0$.
+>
+> *(3)* On $\mathbb{R}^n \times U$ the formula of (2) defines a smooth map into $\mathbb{R}^n$: the $X_j(q)$ are smooth in $q \in U$ (Step 1 of the proof of Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-1|§42.1]]), linearly independent at every $q \in U$ (Step 1(i) there), so $g(q)$ is invertible on all of $U$ and its inverse is smooth by the cofactor formula. Its restriction to $\mathbb{R}^n \times (U \cap M)$ is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), the inclusion of $U \cap M$ being smooth), and these sets cover $\mathbb{R}^n \times M$. So $(\mathbf{a}, q) \mapsto (q, \pi_q(\mathbf{a}))$ is smooth into $\mathbb{R}^{2n}$; it lands in $T^{\mathrm{geo}}M$, a regular submanifold (Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]]), so it is smooth into $T^{\mathrm{geo}}M$ (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2)).
+
+^pf-42-6
+
+*Uses:* [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-1|§42.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]]

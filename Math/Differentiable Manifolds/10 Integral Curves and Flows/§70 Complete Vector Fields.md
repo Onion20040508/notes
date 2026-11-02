@@ -213,7 +213,7 @@ Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] is the case of a diffeomorphism 
 ^thm-70-6
 
 > [!proof]+ Proof
-> *(Lecture 25, by the uniform time lemma.)* Let $\varepsilon > 0$ be such that the integral curve of $\mathbf{X}$ starting at $e \in G$ is defined for $|t| < \varepsilon$ (any $\varepsilon$ with $(-\varepsilon, \varepsilon) \subseteq (\alpha(e), \beta(e))$). Pick $g \in G$. The left translation $L_g : G \to G$ is smooth and $\mathbf{X}$ is $L_g$-related to itself (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-3|§60.3]]), so by Proposition [[§70 Complete Vector Fields#^prop-70-5|§70.5]]
+> *(Lecture 25, by the uniform time lemma.)* Let $\varepsilon > 0$ be such that the integral curve of $\mathbf{X}$ starting at $e \in G$ is defined for $|t| < \varepsilon$ (any $\varepsilon$ with $(-\varepsilon, \varepsilon) \subseteq (\alpha(e), \beta(e))$). Pick $g \in G$. The left translation $L_g : G \to G$ is smooth and $\mathbf{X}$ is $L_g$-related to itself (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]]), so by Proposition [[§70 Complete Vector Fields#^prop-70-5|§70.5]]
 >
 > $$
 > t \mapsto L_g\big(\varphi_t(e)\big) = g\, \varphi^e(t)
@@ -223,7 +223,7 @@ Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] is the case of a diffeomorphism 
 
 ^pf-70-6
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-3|§60.3]], [[§70 Complete Vector Fields#^prop-70-5|§70.5]], [[§70 Complete Vector Fields#^lem-70-1|§70.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], [[§70 Complete Vector Fields#^prop-70-5|§70.5]], [[§70 Complete Vector Fields#^lem-70-1|§70.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
 
 ![[m591-70-6.svg]]
 

@@ -11938,6 +11938,101 @@ as in the paragraph after Proposition~\ref{prop:normal-bundle-fibration}. By Pro
 \textit{(Not from the assignment.)} The set $\{(p, \xi) : p \in M,\ \xi \in N_pM\}$ of Proposition~\ref{prop:normal-conormal}(3) is the conormal bundle $N^*M$ of $M \subseteq \mathbb{R}^n$, announced in the remark \emph{The Conormal Bundle} in \ref{sec:transversality-submanifolds} and defined later, in \ref{sub:ctb-zero-section} (Definition~\ref{def:conormal-bundle}), once the cotangent bundle $T^*\mathbb{R}^n$ is available. So $\mathcal{N}$ is the conormal bundle read through the metric of $\mathbb{R}^n$. This is Uribe's remark that with an inner product the conormal space ``would be the normal space'' (the remark \emph{No Normal Vectors Without a Metric} in \ref{sec:submanifolds}), and it is why both bundles have dimension $n$: $m$ dimensions of base point, plus $n - m$ of normal vector or conormal covector.
 \end{rembox}
 
+\subsection{The Tangent Bundle and the Unit Tangent Bundle}\label{sub:geo-tangent-bundle}
+
+\textit{Assignment~6, Problems~4 and~5, use the tangent bundle of $M \subseteq \mathbb{R}^n$ as a subset of $\mathbb{R}^n \times \mathbb{R}^n$, its unit vectors (Lee, Problem~5-6), and the orthogonal projections onto the tangent spaces. The submitted solutions use these facts without proof; they are filled in here, in the Setting of this section, next to the normal bundle they complement. Not from lecture.}
+
+\begin{defbox}[Geometric Tangent Bundle]\deflabel{def:geo-tangent-bundle}
+The \textbf{(geometric) tangent bundle} of $M$ is
+\[
+T^{\geo}M = \{\, (p, v) \in \mathbb{R}^n \times \mathbb{R}^n : p \in M \text{ and } v \in T^{\geo}_pM \,\} \subseteq \mathbb{R}^{2n},
+\]
+with the projection $\pi(p, v) = p$ and the \textbf{zero section} $\mathcal{Z} = \{(p, 0) : p \in M\}$. Its fibre over $p$ is $\{p\} \times T^{\geo}_pM$.
+\leeref{Problem 5-6 (as $TM \subseteq T\mathbb{R}^n$)}
+\end{defbox}
+
+Through $T^{\geo}_pM = \iota_{*p}(T_pM)$ (the remark \emph{The Tangent Spaces Match} in \ref{sec:submanifolds}) this is the tangent bundle $TM$ of the abstract theory (Definition~\ref{def:tangent-bundle-set}, met later), sitting inside $T\mathbb{R}^n = \mathbb{R}^n \times \mathbb{R}^n$. Fibre by fibre it is the orthogonal partner of the normal bundle: $T^{\geo}_pM \oplus (T^{\geo}_pM)^\perp = \mathbb{R}^n$.
+
+\begin{propbox}[The Geometric Tangent Bundle Is a Submanifold]\thmlabel{prop:geo-tangent-bundle-submanifold}
+$T^{\geo}M$ is a regular submanifold of $\mathbb{R}^{2n}$ of codimension $2(n - m)$, hence a smooth manifold of dimension $2m$. Near $(p_0, v_0) \in T^{\geo}M$, with an adapted chart $(U, \varphi)$ at $p_0$ as in the Setting,
+\[
+T^{\geo}M \cap (U \times \mathbb{R}^n) = F^{-1}(\vec 0), \qquad F(q, v) = \big(G(q),\ J(q)\,v\big) \in \mathbb{R}^{n-m} \times \mathbb{R}^{n-m},
+\]
+and $\vec 0$ is a regular value of $F$.
+\leeref{Problem 5-6; Proposition 3.18 for $TM$ abstractly}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from the assignment; the proof of Proposition~\ref{prop:normal-bundle-submanifold}, with the kernel of $J(q)$ in place of the span of its rows.)} By Proposition~\ref{prop:submanifold-euclidean} it suffices to describe $T^{\geo}M$ externally near each of its points (Definition~\ref{def:ext-int}). Fix $(p_0, v_0) \in T^{\geo}M$ and an adapted chart $(U, \varphi)$ at $p_0$ as in the Setting; put $W = U \times \mathbb{R}^n$, open in $\mathbb{R}^{2n}$.
+
+\emph{The map.} $F : W \to \mathbb{R}^{2(n-m)}$, $F(q, v) = (G(q), J(q)v)$, is smooth: $G$ is part of the chart $\varphi$, and the entries of $J(q)v$ are sums of products of the smooth functions $\partial G^s/\partial r^l(q)$ with the coordinates $v^l$.
+
+\emph{$F^{-1}(\vec 0) = T^{\geo}M \cap W$.} For $(q, v) \in W$: $G(q) = 0$ if and only if $q \in U \cap M$ (the adapted chart); and for such $q$, $J(q)v = 0$ if and only if $v \in T^{\geo}_qM$, by item~(2) of the Setting ($T^{\geo}_qM = \ker J(q)$, Lemma~\ref{lem:euclidean-adapted-chart}). So $F(q, v) = \vec 0$ if and only if $(q, v) \in T^{\geo}M$ (Definition~\ref{def:geo-tangent-bundle}).
+
+\emph{The Jacobian.} In the standard coordinates $(q, v)$ of $\mathbb{R}^{2n}$, the first $n - m$ components $G(q)$ do not depend on $v$, and the last $n - m$ components $J(q)v$ are linear in $v$ with matrix $J(q)$. So the $2(n - m) \times 2n$ Jacobian is
+\[
+F'(q, v) = \begin{pmatrix} J(q) & 0 \\ \ast & J(q) \end{pmatrix},
+\]
+where $\ast$ collects the derivatives $\sum_l v^l\, \partial^2 G^s/\partial r^i\partial r^l(q)$, which play no role.
+
+\emph{It has rank $2(n - m)$.} Suppose a combination of the rows vanishes: $c^{\mathsf T}(J(q), 0) + b^{\mathsf T}(\ast, J(q)) = 0$ with $c, b \in \mathbb{R}^{n-m}$. The last $n$ columns give $b^{\mathsf T}J(q) = 0$, so $b = 0$, as the rows of $J(q)$ are linearly independent ($J(q)$ has rank $n - m$, item~(1) of the Setting); then the first $n$ columns give $c^{\mathsf T}J(q) = 0$, so $c = 0$. So the rows are independent, $F'(q, v)$ has rank $2(n - m)$, and every point of $W$ is a regular point of $F$: $\vec 0$ is a regular value.
+
+\emph{Conclusion.} $T^{\geo}M$ is described externally near $(p_0, v_0)$ by $F$, with $2(n - m)$ equations; as $(p_0, v_0)$ was arbitrary, Proposition~\ref{prop:submanifold-euclidean} makes it a regular submanifold of $\mathbb{R}^{2n}$ of codimension $2(n - m)$, and Proposition~\ref{prop:submanifold-structure} a smooth manifold of dimension $2n - 2(n - m) = 2m$.
+\end{proof}
+
+\begin{defbox}[Unit Tangent Bundle]\deflabel{def:unit-tangent-bundle}
+The \textbf{unit tangent bundle} of $M$ is the set of unit tangent vectors,
+\[
+UM = \{\, (p, u) \in T^{\geo}M : |u| = 1 \,\} = \{\, (p, u) : p \in M,\ u \in T^{\geo}_pM,\ |u| = 1 \,\} \subseteq \mathbb{R}^{2n} .
+\]
+\leeref{Problem 5-6}
+\end{defbox}
+
+\begin{propbox}[The Unit Tangent Bundle Is a Submanifold]\thmlabel{prop:unit-tangent-bundle}
+$UM$ is a regular submanifold of $\mathbb{R}^{2n}$ of dimension $2m - 1$ (empty if $m = 0$).
+\leeref{Problem 5-6}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from the assignment: Assignment~6, Problem~4, quotes it from Lee, Problem~5-6.)} As in Proposition~\ref{prop:geo-tangent-bundle-submanifold}, fix $(p_0, u_0) \in UM$, an adapted chart $(U, \varphi)$ at $p_0$, $W = U \times \mathbb{R}^n$, and add one equation:
+\[
+\hat F : W \to \mathbb{R}^{2(n-m) + 1}, \qquad \hat F(q, v) = \big(G(q),\ J(q)\,v,\ |v|^2 - 1\big) .
+\]
+It is smooth, and $\hat F^{-1}(\vec 0) = UM \cap W$ by the previous proof and Definition~\ref{def:unit-tangent-bundle}. The derivative of $|v|^2 - 1 = \sum_l (v^l)^2 - 1$ is $(0, 2v^{\mathsf T})$, so
+\[
+\hat F'(q, v) = \begin{pmatrix} J(q) & 0 \\ \ast & J(q) \\ 0 & 2v^{\mathsf T} \end{pmatrix} .
+\]
+\emph{Rank $2(n - m) + 1$ at the points of $UM \cap W$.} Let $(q, v) \in UM \cap W$, and suppose $c^{\mathsf T}(J(q), 0) + b^{\mathsf T}(\ast, J(q)) + a\,(0, 2v^{\mathsf T}) = 0$, with $c, b \in \mathbb{R}^{n-m}$, $a \in \mathbb{R}$. The last $n$ columns give $J(q)^{\mathsf T}b + 2a\,v = 0$. Take the dot product with $v$: $v \cdot J(q)^{\mathsf T}b = (J(q)v) \cdot b = 0$, because $J(q)v = 0$ ($v \in T^{\geo}_qM = \ker J(q)$); so $2a\,|v|^2 = 0$, and $a = 0$ since $|v| = 1$. Then $J(q)^{\mathsf T}b = 0$ gives $b = 0$ and the first $n$ columns give $c = 0$, as in the previous proof. So every point of $\hat F^{-1}(\vec 0)$ is a regular point, $\vec 0$ is a regular value of $\hat F$, and by Proposition~\ref{prop:submanifold-euclidean} $UM$ is a regular submanifold of $\mathbb{R}^{2n}$ of codimension $2(n - m) + 1$, of dimension $2n - 2(n - m) - 1 = 2m - 1$.
+\end{proof}
+
+For $M = S^1 \subseteq \mathbb{R}^2$, $UM$ is two circles, $\{(p, \pm Jp)\}$ with $J$ the rotation by $\pi/2$: dimension $1 = 2 \cdot 1 - 1$. In general $UM \to M$ has fibre the unit sphere $S^{m-1}$ of $T^{\geo}_pM$.
+
+\begin{lembox}[Orthogonal Projection onto a Tangent Space]\thmlabel{lem:tangent-projection}
+For $q \in M$ let $\pi_q : \mathbb{R}^n \to T^{\geo}_qM$ be the orthogonal projection: $\mathbf{a} - \pi_q(\mathbf{a}) \in (T^{\geo}_qM)^\perp$.
+\begin{enumerate}
+    \item $\pi_q$ is linear, $\pi_q(w) = w$ for $w \in T^{\geo}_qM$, and $\pi_q(\mathbf{a}) = 0$ if and only if $\mathbf{a} \perp T^{\geo}_qM$; also $w \cdot \mathbf{a} = w \cdot \pi_q(\mathbf{a})$ for $w \in T^{\geo}_qM$.
+    \item In an adapted chart as in the Setting, with the basis $X_1(q), \ldots, X_m(q)$ of $T^{\geo}_qM$ (item~(3) of the Setting), the \emph{Gram matrix} $g(q) = \big(g_{ij}(q)\big)$, $g_{ij}(q) = X_i(q) \cdot X_j(q)$, is invertible, with inverse $\big(g^{ij}(q)\big)$, and
+    \[
+    \pi_q(\mathbf{a}) = \sum_{i,j=1}^m g^{ij}(q)\,\big(\mathbf{a} \cdot X_j(q)\big)\, X_i(q), \qquad q \in U \cap M .
+    \]
+    \item The map $\mathbb{R}^n \times M \to T^{\geo}M$, $(\mathbf{a}, q) \mapsto (q, \pi_q(\mathbf{a}))$, is smooth.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(The formula in (2) is the one of the submitted solution of Assignment~6, Problem~5(b): ``this vector lies in $T_qM$ and has the same inner products as $\mathbf{a}$ with each $\partial_k(q)$''. The rest is filled in; (3) is the smoothness of the map $F$ of Problem~5, which the assignment did not ask for.)} Write $T = T^{\geo}_qM$, of dimension $m$ (Setting, item~(2)).
+
+\emph{(2), and existence of $\pi_q$.} The Gram matrix is invertible: if $g(q)c = 0$, then $0 = c^{\mathsf T}g(q)c = \big|\sum_i c^i X_i(q)\big|^2$, so $\sum_i c^iX_i(q) = 0$ and $c = 0$ by linear independence. Put $P = \sum_{i,j} g^{ij}(q)\,(\mathbf{a} \cdot X_j(q))\,X_i(q) \in T$. For each $k$, since $g$ is symmetric,
+\[
+P \cdot X_k(q) = \sum_{i,j} g^{ij}(q)\,\big(\mathbf{a} \cdot X_j(q)\big)\, g_{ik}(q) = \sum_j \delta_{jk}\,\big(\mathbf{a} \cdot X_j(q)\big) = \mathbf{a} \cdot X_k(q),
+\]
+so $\mathbf{a} - P$ is orthogonal to every $X_k(q)$, hence to $T$. And such a $P$ is unique: if $P, P' \in T$ both have $\mathbf{a} - P, \mathbf{a} - P' \in T^\perp$, then $P - P' \in T \cap T^\perp = \{0\}$ (a vector orthogonal to itself is $0$). So $\pi_q(\mathbf{a}) = P$ is well defined and given by the formula.
+
+\emph{(1)} Linearity: the formula is linear in $\mathbf{a}$. For $w \in T$, $P = w$ satisfies $w - P = 0 \in T^\perp$, so $\pi_q(w) = w$ by uniqueness. If $\pi_q(\mathbf{a}) = 0$ then $\mathbf{a} = \mathbf{a} - 0 \in T^\perp$; conversely, if $\mathbf{a} \in T^\perp$, then $P = 0$ satisfies $\mathbf{a} - 0 \in T^\perp$. Finally, for $w \in T$, $w \cdot (\mathbf{a} - \pi_q(\mathbf{a})) = 0$.
+
+\emph{(3)} On $\mathbb{R}^n \times U$ the formula of (2) defines a smooth map into $\mathbb{R}^n$: the $X_j(q)$ are smooth in $q \in U$ (Step~1 of the proof of Proposition~\ref{prop:normal-bundle-submanifold}), linearly independent at every $q \in U$ (Step~1(i) there), so $g(q)$ is invertible on all of $U$ and its inverse is smooth by the cofactor formula. Its restriction to $\mathbb{R}^n \times (U \cap M)$ is smooth (Lemma~\ref{lem:maps-into-submanifold}(1), the inclusion of $U \cap M$ being smooth), and these sets cover $\mathbb{R}^n \times M$. So $(\mathbf{a}, q) \mapsto (q, \pi_q(\mathbf{a}))$ is smooth into $\mathbb{R}^{2n}$; it lands in $T^{\geo}M$, a regular submanifold (Proposition~\ref{prop:geo-tangent-bundle-submanifold}), so it is smooth into $T^{\geo}M$ (Lemma~\ref{lem:maps-into-submanifold}(2)).
+\end{proof}
+
 \chapter{Immersions, Embeddings and Examples}
 
 \section{Immersions}\label{sec:immersions}
@@ -18002,6 +18097,92 @@ The classical groups through the course: defined in Section~\ref{sec:topgroups},
 
 The unit quaternions $S^3$ are a Lie group as well (Proposition~\ref{prop:s3-lie-group}), isomorphic to $\mathrm{SU}(2)$ (Proposition~\ref{prop:s3-su2}).
 
+\textit{Assignment~6, Problem~1: the differentials of multiplication and inversion at the identity. Not from lecture; the submitted solution, with the notation of these notes ($\mu$ for the multiplication, written $m$ in the assignment).}
+
+\begin{propbox}[The Differential of Multiplication at the Identity]\thmlabel{prop:dmu-identity}
+Let $G$ be a Lie group with identity $e$ and multiplication $\mu : G \times G \to G$, $\mu(g, h) = gh$. Under the identification $T_{(e,e)}(G \times G) = T_eG \oplus T_eG$ of Theorem~\ref{thm:tangent-product},
+\[
+d\mu_{(e,e)}(A, B) = A + B, \qquad A, B \in T_eG .
+\]
+\leeref{Problem 7-2(a)}
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~1(a); the submitted solution.)} Let $\pi_1, \pi_2 : G \times G \to G$ be the projections and $\iota_1, \iota_2 : G \to G \times G$ the slice inclusions through $(e, e)$ (Definition~\ref{def:slice-inclusions}),
+\[
+\iota_1(g) = (g, e), \qquad \iota_2(g) = (e, g) .
+\]
+\emph{The vectors $(A, 0)$ and $(0, B)$.} The identification of Theorem~\ref{thm:tangent-product} sends $v \in T_{(e,e)}(G \times G)$ to $\big(d(\pi_1)_{(e,e)}(v),\, d(\pi_2)_{(e,e)}(v)\big)$. Since $\pi_1 \circ \iota_1 = \mathrm{id}_G$ and $\pi_2 \circ \iota_1$ is the constant map to $e$, the chain rule (Theorem~\ref{prop:pushforward-functorial}) and Lemma~\ref{lem:constant-pushforward} give, for $A \in T_eG$,
+\[
+d(\pi_1)_{(e,e)}\big(d(\iota_1)_e(A)\big) = A, \qquad d(\pi_2)_{(e,e)}\big(d(\iota_1)_e(A)\big) = 0,
+\]
+so $d(\iota_1)_e(A) = (A, 0)$. In the same way, $d(\iota_2)_e(B) = (0, B)$ for $B \in T_eG$. With $n = \dim G$ and $I_n = \mathrm{id}_{T_eG}$, in block form with respect to $T_eG \oplus T_eG$,
+\[
+d(\iota_1)_e = \begin{pmatrix} I_n \\ 0 \end{pmatrix}, \qquad d(\iota_2)_e = \begin{pmatrix} 0 \\ I_n \end{pmatrix}.
+\]
+
+\emph{Computing $d\mu_{(e,e)}(A, 0)$.} For $g \in G$, $\mu(\iota_1(g)) = \mu(g, e) = ge = g$, so $\mu \circ \iota_1 = \mathrm{id}_G$. By the chain rule,
+\[
+d\mu_{(e,e)} \circ d(\iota_1)_e = d(\mu \circ \iota_1)_e = d(\mathrm{id}_G)_e = \mathrm{id}_{T_eG},
+\qquad\text{so}\qquad
+d\mu_{(e,e)}(A, 0) = d\mu_{(e,e)}\big(d(\iota_1)_e(A)\big) = A .
+\]
+
+\emph{Computing $d\mu_{(e,e)}(0, B)$.} Likewise $\mu(\iota_2(g)) = \mu(e, g) = eg = g$, so $\mu \circ \iota_2 = \mathrm{id}_G$, and the chain rule gives
+\[
+d\mu_{(e,e)}(0, B) = d\mu_{(e,e)}\big(d(\iota_2)_e(B)\big) = d(\mu \circ \iota_2)_e(B) = B .
+\]
+
+\emph{Conclusion.} Since $(A, B) = (A, 0) + (0, B)$ in $T_eG \oplus T_eG$ and $d\mu_{(e,e)}$ is linear (Proposition~\ref{prop:pushforward-derivation}),
+\[
+d\mu_{(e,e)}(A, B) = d\mu_{(e,e)}(A, 0) + d\mu_{(e,e)}(0, B) = A + B .
+\]
+In block form,
+\[
+d\mu_{(e,e)} = \begin{pmatrix} I_n & I_n \end{pmatrix}, \qquad d\mu_{(e,e)}\begin{pmatrix} A \\ B \end{pmatrix} = \begin{pmatrix} I_n & I_n \end{pmatrix}\begin{pmatrix} A \\ B \end{pmatrix} = A + B . \qedhere
+\]
+\end{proof}
+
+\begin{propbox}[The Differential of Inversion at the Identity]\thmlabel{prop:dinv-identity}
+Let $G$ be a Lie group with identity $e$ and inversion $j : G \to G$, $j(g) = g^{-1}$. Then
+\[
+dj_e(A) = -A, \qquad A \in T_eG .
+\]
+\leeref{Problem 7-2(b)}
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~1(b), ``a version of implicit differentiation''; the submitted solution.)} Define
+\[
+F = (\mathrm{id}_G, j) : G \to G \times G, \qquad F(g) = (g, j(g)),
+\]
+which is smooth since its components $\mathrm{id}_G$ and $j$ are (Definition~\ref{def:lie-group}), with $\pi_1 \circ F = \mathrm{id}_G$ and $\pi_2 \circ F = j$. Since $j(e) = e^{-1} = e$, $F(e) = (e, e)$. For every $g \in G$,
+\[
+\mu(F(g)) = \mu(g, j(g)) = gg^{-1} = e,
+\]
+so $\mu \circ F = c_e$, the constant map $G \to G$ with value $e$.
+
+\emph{The differential of $F$.} By the chain rule, for $A \in T_eG$,
+\[
+d(\pi_1)_{(e,e)}\big(dF_e(A)\big) = d(\mathrm{id}_G)_e(A) = A, \qquad d(\pi_2)_{(e,e)}\big(dF_e(A)\big) = dj_e(A),
+\]
+so under the identification of Theorem~\ref{thm:tangent-product}, $dF_e(A) = (A, dj_e(A))$. In block form,
+\[
+dF_e = \begin{pmatrix} I_n \\ dj_e \end{pmatrix}.
+\]
+
+\emph{The differential of $c_e$.} For $v \in T_eG$ and a smooth function $f$ defined near $e$, $f \circ c_e$ is constant, so $d(c_e)_e(v)f = v(f \circ c_e) = 0$. Hence $d(c_e)_e = 0$ (Lemma~\ref{lem:constant-pushforward}).
+
+\emph{Conclusion.} Applying the chain rule to $\mu \circ F = c_e$ at $e$, and using Proposition~\ref{prop:dmu-identity},
+\[
+0 = d(c_e)_e = d\mu_{(e,e)} \circ dF_e = \begin{pmatrix} I_n & I_n \end{pmatrix}\begin{pmatrix} I_n \\ dj_e \end{pmatrix} = I_n + dj_e .
+\]
+Therefore $dj_e = -I_n$, that is, $dj_e(A) = -A$ for all $A \in T_eG$.
+\end{proof}
+
+For a matrix group both are first-order expansions: $(I + tA)(I + tB) = I + t(A + B) + O(t^2)$ and $(I + tA)^{-1} = I - tA + O(t^2)$. At a general point the same proofs give the formulas of Propositions~\ref{prop:dmu-general} and~\ref{prop:dinv-general}, in \ref{sub:right-invariant}, once right translations are available.
+
+
 \begin{defbox}[Left Translation]\deflabel{def:left-translation-lie}
 For $g$ in a Lie group $G$, \textbf{left translation} by $g$ is $L_g : G \to G$, $L_g(h) = gh$.
 \leeref{Ch.~7, \emph{Basic Definitions}}
@@ -18092,7 +18273,7 @@ A vector field $\mathbf{X} \in \mathfrak{X}(G)$ is left-invariant (Definition~\r
 \end{proof}
 
 \begin{rembox}[Why Left?]\label{rem:left-invariant-related}
-Lecture~17 abbreviates ``left-invariant'' to l.i. ``And you can ask why left. What's wrong with right? There's nothing wrong with right. You have to choose \ldots\ and this is the universal choice.'' Right-invariant fields, $R_g$-related to themselves for $R_g(h) = hg$, give an equivalent theory; the one place the choice shows is the sign of the bracket, at the end of this subsection.
+Lecture~17 abbreviates ``left-invariant'' to l.i. ``And you can ask why left. What's wrong with right? There's nothing wrong with right. You have to choose \ldots\ and this is the universal choice.'' Right-invariant fields, $R_g$-related to themselves for $R_g(h) = hg$, give an equivalent theory; the one place the choice shows is the sign of the bracket, at the end of this subsection. Right-invariant fields are worked out in \ref{sub:right-invariant}.
 \end{rembox}
 
 \begin{corbox}[$\mathfrak{g}$ Is a Lie Subalgebra of $\mathfrak{X}(G)$]\thmlabel{cor:lie-subalgebra}
@@ -18301,10 +18482,257 @@ comparing with the formula for $\mathbf{X}^A$ with $AB$, resp.\ $BA$, in place o
 ``You have to think about this on your own \ldots\ think about indices and so on. But this is essentially the reason.'' Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset of $\Mat(d,\mathbb{R})$ is linear in $X$, and the bracket of the linear fields $X \mapsto XA$ and $X \mapsto XB$ is the linear field $X \mapsto X(AB - BA)$.
 
 \begin{rembox}[Left or Right: The Sign of the Bracket]\label{rem:bracket-on-TeG}
-``This is the case because we use left-invariant fields. If we use right-invariant fields, we would have minus that.'' Why left, then? An aside: ``Did you ever think what the world would look like if, instead of writing $f(x)$ \ldots\ we would have written $(x)f$? \ldots\ Imagine composing functions with that rule. \ldots\ Everything works much better if you write $(x)f$'': in that notation, composites read in the order the maps are applied.
+``This is the case because we use left-invariant fields. If we use right-invariant fields, we would have minus that.'' Why left, then? An aside: ``Did you ever think what the world would look like if, instead of writing $f(x)$ \ldots\ we would have written $(x)f$? \ldots\ Imagine composing functions with that rule. \ldots\ Everything works much better if you write $(x)f$'': in that notation, composites read in the order the maps are applied. \textit{(Proved in \ref{sub:right-invariant}: Theorem~\ref{thm:right-bracket}, Assignment~6, Problem~2(b).)}
 \end{rembox}
 
 \textbf{Transcription note (Lecture 17).} Page~46 of the handwritten notes says the construction gives ``$\mathbf{X} : M \to TM$''; the manifold is the group, $\mathbf{X} : G \to TG$.
+
+\subsection{Right-Invariant Vector Fields}\label{sub:right-invariant}
+
+\textit{Assignment~6, Problem~2, with what its solution contains. Not from lecture. Lecture~17 said there is ``nothing wrong with right'' (the remark \emph{Why Left?}) and Lecture~19 that right-invariant fields give ``minus that'' (the remark \emph{Left or Right: The Sign of the Bracket}); this subsection proves both. Elements of $T_eG$ are written $A, B$, as in the assignment. The general formulas for the differentials of multiplication and inversion, which need right translations, are filled in here as well.}
+
+\begin{defbox}[Right Translation]\deflabel{def:right-translation-lie}
+For $g$ in a Lie group $G$, \textbf{right translation} by $g$ is $R_g : G \to G$, $R_g(k) = kg$.
+\leeref{Ch.~7, \emph{Basic Definitions}}
+\end{defbox}
+
+\begin{lembox}[Right Translations]\thmlabel{lem:Rg}
+Let $G$ be a Lie group with identity $e$ and $g, h \in G$.
+\begin{enumerate}
+    \item $R_g \circ R_h = R_{hg}$ and $R_e = \mathrm{id}_G$. Note the order: first $h$, then $g$.
+    \item $R_g$ is a diffeomorphism, with inverse $R_{g^{-1}}$.
+    \item Left and right translations commute: $L_g \circ R_h = R_h \circ L_g$.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\emph{(1)} \textit{(The submitted solution.)} For $k \in G$, $(R_g \circ R_h)(k) = R_g(kh) = khg = R_{hg}(k)$, so $R_g \circ R_h = R_{hg}$. Also $R_e(k) = ke = k$, so $R_e = \mathrm{id}_G$.
+
+\textit{(Filled in.)} \emph{(2)} As in Lemma~\ref{lem:Lg-diffeo}: $R_g = \mu \circ \iota^{g}$, where $\iota^{g} : G \to G \times G$, $k \mapsto (k, g)$, is the slice inclusion (Definition~\ref{def:slice-inclusions}, with $p_2 = g$), smooth by Proposition~\ref{prop:product-maps}, and $\mu$ is the multiplication, smooth by Definition~\ref{def:lie-group}; so $R_g$ is smooth (Lemma~\ref{lem:composition-smooth}), and so is $R_{g^{-1}}$. By (1), $R_g \circ R_{g^{-1}} = R_{g^{-1}g} = R_e = \mathrm{id}_G$ and $R_{g^{-1}} \circ R_g = R_{gg^{-1}} = \mathrm{id}_G$. So $R_g$ is a smooth bijection with smooth inverse $R_{g^{-1}}$, a diffeomorphism (Definition~\ref{def:diffeomorphism}).
+
+\emph{(3)} For $k \in G$, by associativity, $L_g(R_h(k)) = g(kh) = (gk)h = R_h(L_g(k))$.
+\end{proof}
+
+\begin{propbox}[The Differential of Multiplication]\thmlabel{prop:dmu-general}
+Let $G$ be a Lie group with multiplication $\mu$, and $g, h \in G$. Under the identification $T_{(g,h)}(G \times G) = T_gG \oplus T_hG$ of Theorem~\ref{thm:tangent-product},
+\[
+d\mu_{(g,h)}(v, w) = d(R_h)_g(v) + d(L_g)_h(w), \qquad v \in T_gG,\ w \in T_hG .
+\]
+At $(g, h) = (e, e)$, where $R_e = L_e = \mathrm{id}_G$, this is Proposition~\ref{prop:dmu-identity}.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from the assignment; the proof of Proposition~\ref{prop:dmu-identity} at the point $(g, h)$.)} Let $\iota_1(x) = (x, h)$ and $\iota_2(y) = (g, y)$ be the slice inclusions through $(g, h)$ (Definition~\ref{def:slice-inclusions}), so that $(v, w)$ stands for $\Theta(v, w) = d(\iota_1)_g(v) + d(\iota_2)_h(w)$ (Theorem~\ref{thm:tangent-product}). For $x, y \in G$,
+\[
+(\mu \circ \iota_1)(x) = xh = R_h(x), \qquad (\mu \circ \iota_2)(y) = gy = L_g(y),
+\]
+so $\mu \circ \iota_1 = R_h$ and $\mu \circ \iota_2 = L_g$. By the linearity of $d\mu_{(g,h)}$ (Proposition~\ref{prop:pushforward-derivation}) and the chain rule (Theorem~\ref{prop:pushforward-functorial}),
+\[
+d\mu_{(g,h)}(v, w) = d\mu_{(g,h)}\big(d(\iota_1)_g(v)\big) + d\mu_{(g,h)}\big(d(\iota_2)_h(w)\big) = d(\mu \circ \iota_1)_g(v) + d(\mu \circ \iota_2)_h(w) = d(R_h)_g(v) + d(L_g)_h(w) . \qedhere
+\]
+\end{proof}
+
+\begin{lembox}[Inversion Exchanges Left and Right Translations]\thmlabel{lem:inversion-translations}
+Let $G$ be a Lie group with inversion $j$, and $g \in G$.
+\begin{enumerate}
+    \item $j \circ L_g = R_{g^{-1}} \circ j$.
+    \item $j$ is a diffeomorphism, and $j^{-1} = j$.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\emph{(1)} \textit{(Assignment~6, Problem~2(a): the submitted solution's ``key identity''.)} For $k \in G$,
+\[
+(j \circ L_g)(k) = j(gk) = (gk)^{-1} = k^{-1}g^{-1} = R_{g^{-1}}(k^{-1}) = (R_{g^{-1}} \circ j)(k) .
+\]
+
+\emph{(2)} \textit{(Filled in.)} $j$ is smooth (Definition~\ref{def:lie-group}), and $j(j(k)) = (k^{-1})^{-1} = k$, so $j \circ j = \mathrm{id}_G$: $j$ is a smooth bijection whose inverse $j$ is smooth.
+\end{proof}
+
+\begin{propbox}[The Differential of Inversion]\thmlabel{prop:dinv-general}
+Let $G$ be a Lie group with identity $e$ and inversion $j$, and $g \in G$. Then
+\[
+dj_g = -\,d(R_{g^{-1}})_e \circ d(L_{g^{-1}})_g : T_gG \longrightarrow T_{g^{-1}}G .
+\]
+At $g = e$ this is Proposition~\ref{prop:dinv-identity}.
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from the assignment.)} By Lemma~\ref{lem:inversion-translations}(1), $j \circ L_g = R_{g^{-1}} \circ j$. Both sides map $e$ to $g^{-1}$; by the chain rule (Theorem~\ref{prop:pushforward-functorial}) at $e$, with $L_g(e) = g$, $j(e) = e$ and $dj_e = -\mathrm{id}$ (Proposition~\ref{prop:dinv-identity}),
+\[
+dj_g \circ d(L_g)_e = d(R_{g^{-1}})_e \circ dj_e = -\,d(R_{g^{-1}})_e .
+\]
+By Lemma~\ref{lem:Lg-diffeo}, $L_{g^{-1}} \circ L_g = \mathrm{id}_G$ and $L_g \circ L_{g^{-1}} = \mathrm{id}_G$, so by the chain rule $d(L_g)_e$ is invertible with inverse $d(L_{g^{-1}})_g$. Composing the display on the right with $d(L_{g^{-1}})_g$ gives the formula.
+\end{proof}
+
+For a matrix group, where $d(L_g)$ and $d(R_g)$ are multiplication by $g$ on the left and on the right (Example~\ref{ex:left-invariant-GL} and Example~\ref{ex:right-invariant-GL} below), this reads $d\mu_{(g,h)}(v, w) = vh + gw$ and $dj_g(v) = -g^{-1}vg^{-1}$: the product rule and the derivative of the inverse matrix.
+
+\begin{defbox}[Right-Invariant Vector Field]\deflabel{def:right-invariant}
+A vector field $\mathbf{Y}$ on a Lie group $G$ is \textbf{right-invariant} if it is $R_g$-related to itself for every $g \in G$ (Definition~\ref{def:F-related}): for all $g, h \in G$,
+\[
+d(R_g)_h\, \mathbf{Y}_h = \mathbf{Y}_{R_g(h)} = \mathbf{Y}_{hg} .
+\]
+The same identity defines a right-invariant \emph{rough} field, a tangent vector at every point not yet known to be smooth (Definition~\ref{def:left-invariant-extension}).
+\end{defbox}
+
+\begin{defbox}[Right-Invariant Extension]\deflabel{def:right-invariant-extension}
+Let $G$ be a Lie group with identity $e$ and $A \in T_eG$. The \textbf{right-invariant extension} of $A$ is the rough field $\mathbf{Y}^A : G \to TG$,
+\[
+\mathbf{Y}^A_g = d(R_g)_e(A) \in T_gG, \qquad g \in G,
+\]
+which makes sense since $R_g(e) = g$. Beside it, $\mathbf{X}^A_g = d(L_g)_e(A)$ is the left-invariant extension (Definition~\ref{def:left-invariant-extension}).
+\end{defbox}
+
+\begin{propbox}[Right-Invariant Fields and the Tangent Space at the Identity]\thmlabel{prop:right-invariant-TeG}
+Let $G$ be a Lie group with identity $e$.
+\begin{enumerate}
+    \item For $A \in T_eG$, $\mathbf{Y}^A$ is right-invariant and $\mathbf{Y}^A_e = A$.
+    \item Every right-invariant (rough) field $\mathbf{Y}$ is $\mathbf{Y}^A$ for $A = \mathbf{Y}_e$.
+    \item The map $A \mapsto \mathbf{Y}^A$ is linear, and it is a bijection from $T_eG$ onto the right-invariant rough fields, with inverse $\mathbf{Y} \mapsto \mathbf{Y}_e$. In particular $\mathbf{Y}^{-A} = -\mathbf{Y}^A$.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~2(a), ``following what we did in class'' (Lemma~\ref{lem:left-invariant-extension}); the submitted solution. The linearity in (3) is from its part (b).)}
+
+\emph{(1) $\mathbf{Y}^A$ is right-invariant.} For $g, h \in G$, by the chain rule (Theorem~\ref{prop:pushforward-functorial}, as $R_h(e) = h$) and Lemma~\ref{lem:Rg}(1),
+\[
+d(R_g)_h\,\mathbf{Y}^A_h = d(R_g)_h\, d(R_h)_e(A) = d(R_g \circ R_h)_e(A) = d(R_{hg})_e(A) = \mathbf{Y}^A_{hg} .
+\]
+\emph{$\mathbf{Y}^A_e = A$.} Since $R_e = \mathrm{id}_G$, $\mathbf{Y}^A_e = d(R_e)_e(A) = d(\mathrm{id}_G)_e(A) = A$.
+
+\emph{(2) Every right-invariant field is of this form.} Let $\mathbf{Y}$ be right-invariant and $A = \mathbf{Y}_e$. Taking $h = e$ in the right-invariance identity, for every $g \in G$,
+\[
+\mathbf{Y}_g = \mathbf{Y}_{eg} = d(R_g)_e\,\mathbf{Y}_e = d(R_g)_e(A) = \mathbf{Y}^A_g,
+\]
+so $\mathbf{Y} = \mathbf{Y}^A$.
+
+\emph{(3)} By (1) and (2), $A \mapsto \mathbf{Y}^A$ and $\mathbf{Y} \mapsto \mathbf{Y}_e$ are mutually inverse. The map $A \mapsto \mathbf{Y}^A$ is linear since each $d(R_g)_e$ is (Proposition~\ref{prop:pushforward-derivation}); in particular $\mathbf{Y}^{-A}_g = d(R_g)_e(-A) = -\mathbf{Y}^A_g$ for all $g$.
+\end{proof}
+
+\begin{propbox}[Inversion Carries Left-Invariant to Right-Invariant Fields]\thmlabel{prop:inversion-left-right}
+Let $G$ be a Lie group with inversion $j$, and $A \in T_eG$. For every $g \in G$,
+\[
+dj_g\big(\mathbf{X}^A_g\big) = \mathbf{Y}^{-A}_{j(g)} = \mathbf{Y}^{-A}_{g^{-1}} .
+\]
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~2(a); the submitted solution.)} \emph{The right-hand side.} Since $j(g) = g^{-1}$ and $d(R_{g^{-1}})_e$ is linear,
+\[
+\mathbf{Y}^{-A}_{j(g)} = \mathbf{Y}^{-A}_{g^{-1}} = d(R_{g^{-1}})_e(-A).
+\]
+\emph{The left-hand side.} By the chain rule (Theorem~\ref{prop:pushforward-functorial}), using $L_g(e) = g$, $j(e) = e$, Lemma~\ref{lem:inversion-translations}(1), and $dj_e(A) = -A$ (Proposition~\ref{prop:dinv-identity}),
+\[
+dj_g\,\mathbf{X}^A_g = dj_g\, d(L_g)_e(A) = d(j \circ L_g)_e(A) = d(R_{g^{-1}} \circ j)_e(A) = d(R_{g^{-1}})_e\, dj_e(A) = d(R_{g^{-1}})_e(-A).
+\]
+Comparing the two sides, $dj_g\,\mathbf{X}^A_g = \mathbf{Y}^{-A}_{j(g)}$ for every $g \in G$.
+\end{proof}
+
+\begin{corbox}[Right-Invariant Extensions Are Smooth]\thmlabel{cor:right-invariant-smooth}
+Let $G$ be a Lie group with inversion $j$, and $A \in T_eG$. Then $\mathbf{Y}^{-A} = j_*\mathbf{X}^A$, the pushforward of the left-invariant field $\mathbf{X}^A$ by the diffeomorphism $j$ (Definition~\ref{def:vf-pushforward}). Hence every $\mathbf{Y}^A$ is smooth, and $\mathbf{X}^A$ and $\mathbf{Y}^{-A}$ are $j$-related (Definition~\ref{def:F-related}).
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from the assignment, which did not ask for smoothness: ``You do not have to prove that $Y^A$ is smooth.'' It follows from its part (a).)} By Lemma~\ref{lem:inversion-translations}(2), $j$ is a diffeomorphism with $j^{-1} = j$. For $q \in G$, by Definition~\ref{def:vf-pushforward} and Proposition~\ref{prop:inversion-left-right} at $g = j^{-1}(q) = q^{-1}$,
+\[
+(j_*\mathbf{X}^A)_q = dj_{q^{-1}}\big(\mathbf{X}^A_{q^{-1}}\big) = \mathbf{Y}^{-A}_{j(q^{-1})} = \mathbf{Y}^{-A}_q .
+\]
+$\mathbf{X}^A$ is smooth (Proposition~\ref{prop:left-invariant-extension-smooth}), so $\mathbf{Y}^{-A} = j_*\mathbf{X}^A$ is smooth by Proposition~\ref{prop:vf-pushforward}. As $A$ ranges over $T_eG$, so does $-A$: every $\mathbf{Y}^A$ is smooth. Now both are vector fields, and Proposition~\ref{prop:inversion-left-right} is the $j$-relatedness condition of Definition~\ref{def:F-related}.
+\end{proof}
+
+So the right-invariant vector fields are exactly the $\mathbf{Y}^A$, $A \in T_eG$ (Proposition~\ref{prop:right-invariant-TeG}), and they are smooth: the right-handed version of Theorem~\ref{thm:lie-algebra-TeG}, here obtained from the left-handed one through $j$ rather than by repeating Proposition~\ref{prop:left-invariant-extension-smooth}.
+
+\begin{defbox}[The Right Bracket]\deflabel{def:right-bracket}
+Let $G$ be a Lie group with identity $e$. For $A, B \in T_eG$, the \textbf{right bracket} is
+\[
+[A, B]^R = \big[\mathbf{Y}^A, \mathbf{Y}^B\big]_e \in T_eG,
+\]
+with $\mathbf{Y}^A, \mathbf{Y}^B$ the right-invariant extensions (Definition~\ref{def:right-invariant-extension}).
+\end{defbox}
+
+\begin{propbox}[The Right Bracket Is a Lie Bracket]\thmlabel{prop:right-bracket-lie}
+Let $G$ be a Lie group and $A, B \in T_eG$. The bracket $[\mathbf{Y}^A, \mathbf{Y}^B]$ is right-invariant, and
+\[
+\big[\mathbf{Y}^A, \mathbf{Y}^B\big] = \mathbf{Y}^{[A,B]^R} .
+\]
+$[\ ,\ ]^R$ is a Lie bracket on $T_eG$ (Definition~\ref{def:lie-algebra}).
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~2(b); the submitted solution.)} \emph{The bracket is right-invariant.} Let $g \in G$. Since $\mathbf{Y}^A$ and $\mathbf{Y}^B$ are right-invariant, each is $R_g$-related to itself (Definition~\ref{def:right-invariant}); they are smooth (Corollary~\ref{cor:right-invariant-smooth}), so by the naturality of the bracket (Proposition~\ref{prop:bracket-naturality}) $[\mathbf{Y}^A, \mathbf{Y}^B]$ is $R_g$-related to itself. As $g$ is arbitrary, $[\mathbf{Y}^A, \mathbf{Y}^B]$ is right-invariant, and by Proposition~\ref{prop:right-invariant-TeG}(2) it is $\mathbf{Y}^C$ with $C = [\mathbf{Y}^A, \mathbf{Y}^B]_e = [A, B]^R$.
+
+\emph{A Lie bracket.} The map $A \mapsto \mathbf{Y}^A$ is linear and injective (Proposition~\ref{prop:right-invariant-TeG}(3)), and it carries $[\ ,\ ]^R$ to the bracket of vector fields. Hence bilinearity, antisymmetry and the Jacobi identity for $[\ ,\ ]^R$ follow from those of the bracket on $\mathfrak{X}(G)$ (Corollary~\ref{cor:vf-lie-algebra}). \textit{(Filled in.)} For instance, for bilinearity in the first slot, with $a, a' \in \mathbb{R}$,
+\[
+\mathbf{Y}^{[aA + a'A', B]^R} = \big[a\mathbf{Y}^A + a'\mathbf{Y}^{A'}, \mathbf{Y}^B\big] = a\,\mathbf{Y}^{[A,B]^R} + a'\,\mathbf{Y}^{[A',B]^R} = \mathbf{Y}^{a[A,B]^R + a'[A',B]^R},
+\]
+and injectivity gives $[aA + a'A', B]^R = a[A,B]^R + a'[A',B]^R$; antisymmetry and Jacobi are the same three steps.
+\end{proof}
+
+\begin{thmbox}[The Right Bracket Is the Negative of the Left Bracket]\thmlabel{thm:right-bracket}
+Let $G$ be a Lie group, and $[\ ,\ ]$ the Lie bracket on $T_eG$ (Definition~\ref{def:bracket-TeG}). For all $A, B \in T_eG$,
+\[
+[A, B]^R = -[A, B] .
+\]
+\end{thmbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~2(b); the submitted solution.)} By Definition~\ref{def:bracket-TeG}, $[\mathbf{X}^A, \mathbf{X}^B] = \mathbf{X}^{[A,B]}$ (both are left-invariant, Corollary~\ref{cor:lie-subalgebra}, with the same value at $e$, Theorem~\ref{thm:lie-algebra-TeG}). By Corollary~\ref{cor:right-invariant-smooth}, $\mathbf{X}^A$ is $j$-related to $\mathbf{Y}^{-A}$ and $\mathbf{X}^B$ is $j$-related to $\mathbf{Y}^{-B}$, so by the naturality of the bracket (Proposition~\ref{prop:bracket-naturality})
+\[
+[\mathbf{X}^A, \mathbf{X}^B] = \mathbf{X}^{[A,B]} \text{ is $j$-related to } [\mathbf{Y}^{-A}, \mathbf{Y}^{-B}] .
+\]
+Since $\mathbf{Y}^{-A} = -\mathbf{Y}^A$ and $\mathbf{Y}^{-B} = -\mathbf{Y}^B$ (Proposition~\ref{prop:right-invariant-TeG}(3)), by bilinearity of the bracket and Proposition~\ref{prop:right-bracket-lie},
+\[
+[\mathbf{Y}^{-A}, \mathbf{Y}^{-B}] = [-\mathbf{Y}^A, -\mathbf{Y}^B] = (-1)(-1)[\mathbf{Y}^A, \mathbf{Y}^B] = \mathbf{Y}^{[A,B]^R} .
+\]
+On the other hand, Corollary~\ref{cor:right-invariant-smooth} applied to $[A, B] \in T_eG$ shows that $\mathbf{X}^{[A,B]}$ is $j$-related to $\mathbf{Y}^{-[A,B]}$. So $\mathbf{X}^{[A,B]}$ is $j$-related to both $\mathbf{Y}^{[A,B]^R}$ and $\mathbf{Y}^{-[A,B]}$; that is, for every $p \in G$,
+\[
+\mathbf{Y}^{[A,B]^R}_{j(p)} = dj_p\,\mathbf{X}^{[A,B]}_p = \mathbf{Y}^{-[A,B]}_{j(p)} .
+\]
+Since $j$ is a bijection, every point of $G$ is of the form $j(p)$, so $\mathbf{Y}^{[A,B]^R} = \mathbf{Y}^{-[A,B]}$. Evaluating at $e$ and using $\mathbf{Y}^C_e = C$ (Proposition~\ref{prop:right-invariant-TeG}(1)),
+\[
+[A, B]^R = -[A, B] . \qedhere
+\]
+\end{proof}
+
+\begin{proof}[Second proof]
+\textit{(Not from the assignment.)} $j$ is a diffeomorphism, so pushing forward by it preserves brackets (Corollary~\ref{cor:diffeo-bracket}). With $j_*\mathbf{X}^C = \mathbf{Y}^{-C}$ for every $C \in T_eG$ (Corollary~\ref{cor:right-invariant-smooth}) and $\mathbf{Y}^{-C} = -\mathbf{Y}^C$,
+\[
+\mathbf{Y}^{-[A,B]} = j_*\mathbf{X}^{[A,B]} = j_*[\mathbf{X}^A, \mathbf{X}^B] = [j_*\mathbf{X}^A, j_*\mathbf{X}^B] = [-\mathbf{Y}^A, -\mathbf{Y}^B] = [\mathbf{Y}^A, \mathbf{Y}^B] .
+\]
+Evaluating at $e$: $-[A, B] = [A, B]^R$.
+\end{proof}
+
+\begin{corbox}[Abelian Lie Groups Have Zero Bracket]\thmlabel{cor:abelian-bracket}
+If the Lie group $G$ is abelian, its Lie bracket on $T_eG$ is identically zero.
+\end{corbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~2(c), ``use the result of part (b)''; the submitted solution.)} Suppose $G$ is abelian. For $g, k \in G$, $L_g(k) = gk = kg = R_g(k)$, so $L_g = R_g$. Hence for $A \in T_eG$ and $g \in G$,
+\[
+\mathbf{X}^A_g = d(L_g)_e(A) = d(R_g)_e(A) = \mathbf{Y}^A_g,
+\]
+so $\mathbf{X}^A = \mathbf{Y}^A$. Therefore, for $A, B \in T_eG$,
+\[
+[A, B]^R = [\mathbf{Y}^A, \mathbf{Y}^B]_e = [\mathbf{X}^A, \mathbf{X}^B]_e = [A, B].
+\]
+Combining with Theorem~\ref{thm:right-bracket}, $[A, B] = [A, B]^R = -[A, B]$, so $2[A, B] = 0$. Since $T_eG$ is a real vector space, $[A, B] = 0$ for all $A, B \in T_eG$.
+\end{proof}
+
+This agrees with Example~\ref{ex:vs-lie-algebra}, where the bracket of the additive group of a vector space was computed to vanish, and it applies as well to the torus $S^1 \times \cdots \times S^1$, a product of the abelian Lie group $S^1 = \Ugp(1)$. \textit{(Not from the assignment.)} The converse needs connectedness: $\Ogp(2)$ is not abelian, but its tangent space at $I$ is that of $\SO(2) \cong S^1$, one-dimensional, so its bracket vanishes by antisymmetry. For connected groups the converse holds, a fact that needs the exponential map (Lee, Ch.~20).
+
+\begin{exbox}[Right-Invariant Fields on $\GL({n,\mathbb{R}})$]\exlabel{ex:right-invariant-GL}
+On $G = \GL(n,\mathbb{R})$, with $T_gG = \Mat(n,\mathbb{R})$ as in Example~\ref{ex:left-invariant-GL}, the right-invariant extension of $A \in \Mat(n,\mathbb{R}) = T_IG$ is
+\[
+\mathbf{Y}^A_g = Ag ,
+\]
+and the left- and right-invariant extensions are related by the adjoint action (Proposition~\ref{prop:adjoint}): $\mathbf{X}^A_g = gA = (gAg^{-1})\,g = \mathbf{Y}^{gAg^{-1}}_g$. The right bracket is $[A, B]^R = BA - AB$.
+\end{exbox}
+
+\begin{proof}
+\textit{(Not from the assignment.)} $R_g$ is the restriction to $G$ of the linear map $h \mapsto hg$ of $\Mat(n,\mathbb{R})$, so, exactly as for $L_g$ in the proof of Example~\ref{ex:left-invariant-GL}, $d(R_g)_h(v) = vg$; at $h = I$, $\mathbf{Y}^A_g = d(R_g)_I(A) = Ag$. Then $\mathbf{X}^A_g = gA = gAg^{-1}g = \mathbf{Y}^{gAg^{-1}}_g$. Finally $[A, B]^R = -[A, B] = -(AB - BA) = BA - AB$ by Theorem~\ref{thm:right-bracket} and Theorem~\ref{thm:gl-bracket}. As a check without the theorem: the fields $X \mapsto AX$ are the column-vector linear fields of the remark \emph{Left and Right Actions} in \ref{sub:matrix-group-bracket}, applied to each column of $X$, and their brackets carry the same sign $BA - AB$.
+\end{proof}
+
 
 % ============================================================================
 % SECTION: LIE GROUP MORPHISMS AND LINEAR GROUPS
@@ -18475,6 +18903,86 @@ A = \begin{pmatrix}
 \end{proof}
 
 \textbf{Transcription note (Lecture 19).} Page~49 of the handwritten notes writes the evaluation map as $\mathfrak{g} \to T_eM$ and its inverse from $T_eM$; the group is $G$, so $T_eG$. The definition of the bracket there reads ``$[A, B] = [\mathbf{X}^A, \mathbf{X}^B]$''; the field bracket is evaluated at the identity, $[A, B] = [\mathbf{X}^A, \mathbf{X}^B]_e$ (Definition~\ref{def:bracket-TeG}), as Uribe said in lecture (``now we go back by evaluating at $e$'').
+
+\textit{Assignment~6, Problem~3: linear vector fields on $\mathbb{R}^n$. Not from lecture. ``This is a special case of a Lie group (in this case $\GL(n,\mathbb{R})$) acting on the right on a manifold, in this case $\mathbb{R}^n$. Such an action induces a Lie algebra homomorphism from the Lie algebra of the group to the Lie algebra of vector fields on the manifold.''}
+
+\begin{defbox}[Linear Vector Field]\deflabel{def:linear-field}
+For an $n \times n$ real matrix $A = (a_{ij})$, the \textbf{linear vector field} $\mathbf{X}^A$ on $\mathbb{R}^n$ is
+\[
+\mathbf{X}^A_p = pA \in T_p\mathbb{R}^n \cong \mathbb{R}^n ,
+\]
+where $p \in \mathbb{R}^n$ is a \emph{row} vector and $T_p\mathbb{R}^n \cong \mathbb{R}^n$ by $v \leftrightarrow D_v|_p$ (Corollary~\ref{cor:tangent-vs}).
+\end{defbox}
+
+The letter is that of Example~\ref{ex:left-invariant-GL} on purpose: the left-invariant field $g \mapsto gA$ on $\GL(n,\mathbb{R})$ is $\mathbf{X}^A$ acting on each row of $g$ (the remark \emph{Linear Fields and the Bracket of} $\GL(n,\mathbb{R})$ below).
+
+\begin{propbox}[The Derivation of a Linear Field]\thmlabel{prop:linear-field-derivation}
+In the standard coordinates $p = (x^1, \ldots, x^n)$ of $\mathbb{R}^n$, with $\partial_j = \partial/\partial x^j$,
+\[
+\mathbf{X}^A = \sum_{j=1}^n \Big(\sum_{i=1}^n a_{ij}\,x^i\Big) \partial_j .
+\]
+The map $A \mapsto \mathbf{X}^A$ is linear: $\mathbf{X}^{A + B} = \mathbf{X}^A + \mathbf{X}^B$ and $\mathbf{X}^{cA} = c\,\mathbf{X}^A$ for $c \in \mathbb{R}$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~3; the submitted solution.)} The $j$-th entry of the row vector $pA$ is
+\[
+(pA)_j = \sum_{i=1}^n x^i a_{ij}.
+\]
+For $f \in C^\infty(\mathbb{R}^n)$, $\mathbf{X}^A f$ is the derivative of $f$ at $p$ in the direction $\mathbf{X}^A_p = pA$; by the chain rule,
+\[
+(\mathbf{X}^A f)(p) = \frac{d}{dt}\Big|_{t=0} f(p + t\,pA) = \sum_{j=1}^n (pA)_j\, \partial_j f(p).
+\]
+Hence $\mathbf{X}^A = \sum_j \big(\sum_i a_{ij}\,x^i\big) \partial_j$. The coefficients are linear in the entries of $A$, so $A \mapsto \mathbf{X}^A$ is linear.
+\end{proof}
+
+\begin{propbox}[Brackets of Linear Fields]\thmlabel{prop:linear-field-bracket}
+For any two $n \times n$ real matrices $A$, $B$,
+\[
+\big[\mathbf{X}^A, \mathbf{X}^B\big] = \mathbf{X}^{[A,B]}, \qquad [A, B] = AB - BA .
+\]
+So $A \mapsto \mathbf{X}^A$ is a Lie algebra morphism $\mathfrak{gl}(n,\mathbb{R}) \to \mathfrak{X}(\mathbb{R}^n)$ (Definition~\ref{def:lie-algebra-morphism}).
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~3, ``show directly''; the submitted solution.)} \emph{Computing $\mathbf{X}^A(\mathbf{X}^B f)$.} Let $f \in C^\infty(\mathbb{R}^n)$. We have $\mathbf{X}^B f = \sum_k (pB)_k\, \partial_k f$ with $(pB)_k = \sum_l b_{lk}x^l$. By the product rule,
+\[
+\mathbf{X}^A(\mathbf{X}^B f) = \sum_{j,k} (pA)_j\, \partial_j\big[(pB)_k\big]\, \partial_k f + \sum_{j,k} (pA)_j\,(pB)_k\, \partial_j\partial_k f.
+\]
+For the first sum, $\partial_j\big(\sum_l b_{lk}x^l\big) = \sum_l b_{lk}\,\delta_{jl} = b_{jk}$, so
+\[
+\sum_{j,k} \Big(\sum_i a_{ij}x^i\Big) b_{jk}\, \partial_k f = \sum_k \Big(\sum_i x^i \sum_j a_{ij}b_{jk}\Big) \partial_k f = \sum_k \Big(\sum_i (AB)_{ik}\,x^i\Big) \partial_k f = \mathbf{X}^{AB} f.
+\]
+Writing $S(A,B) = \sum_{j,k} (pA)_j\,(pB)_k\, \partial_j\partial_k f$, we get $\mathbf{X}^A(\mathbf{X}^B f) = \mathbf{X}^{AB}f + S(A,B)$, and in the same way, with $A$ and $B$ interchanged, $\mathbf{X}^B(\mathbf{X}^A f) = \mathbf{X}^{BA}f + S(B,A)$.
+
+\emph{The second-order terms cancel.} Relabelling the summation indices $j \leftrightarrow k$, and using $\partial_k\partial_j f = \partial_j\partial_k f$ (symmetry of second derivatives, as $f$ is smooth),
+\[
+S(B,A) = \sum_{j,k} (pB)_j\,(pA)_k\, \partial_j\partial_k f = \sum_{j,k} (pB)_k\,(pA)_j\, \partial_k\partial_j f = \sum_{j,k} (pA)_j\,(pB)_k\, \partial_j\partial_k f = S(A,B).
+\]
+
+\emph{Conclusion.} Therefore, using the linearity of $A \mapsto \mathbf{X}^A$ (Proposition~\ref{prop:linear-field-derivation}),
+\[
+[\mathbf{X}^A, \mathbf{X}^B]f = \mathbf{X}^A(\mathbf{X}^B f) - \mathbf{X}^B(\mathbf{X}^A f) = \mathbf{X}^{AB}f - \mathbf{X}^{BA}f = \mathbf{X}^{AB - BA}f = \mathbf{X}^{[A,B]}f.
+\]
+Since this holds for every $f \in C^\infty(\mathbb{R}^n)$, $[\mathbf{X}^A, \mathbf{X}^B] = \mathbf{X}^{[A,B]}$.
+
+\textit{(Filled in.)} The last sentence of the statement: $A \mapsto \mathbf{X}^A$ is linear and carries the commutator to the bracket of vector fields, which is what Definition~\ref{def:lie-algebra-morphism} asks of a map between Lie algebras.
+\end{proof}
+
+The second-order terms cancel as they must (Lemma~\ref{lem:bracket-field}); the shortcut of Proposition~\ref{prop:bracket-coords}, which computes only the first-order part, gives the same coefficients $\sum_i (AB - BA)_{ik} x^i$ at once.
+
+\begin{rembox}[Linear Fields and the Bracket of $\GL({n,\mathbb{R}})$]\label{rem:linear-fields-gl}
+\textit{(Not from the assignment.)} Write $g \in \Mat(n,\mathbb{R})$ by its rows $g_1, \ldots, g_n \in \mathbb{R}^n$. The $l$-th row of $gA$ is $g_lA$, so the left-invariant field $\mathbf{X}^A_g = gA$ of Example~\ref{ex:left-invariant-GL} is the linear field $\mathbf{X}^A$ of Definition~\ref{def:linear-field} acting on each row separately, the $n$ rows being independent variables. Proposition~\ref{prop:linear-field-bracket}, applied row by row, is therefore the computation of Theorem~\ref{thm:gl-bracket}: $[\mathbf{X}^A, \mathbf{X}^B] = \mathbf{X}^{AB - BA}$, the ``coordinate-free'' sentence after its proof.
+\end{rembox}
+
+\begin{rembox}[Left and Right Actions]\label{rem:left-right-actions}
+\textit{(Not from the assignment; computed.)} $\GL(n,\mathbb{R})$ acts on row vectors on the right, $p \cdot g = pg$, and $A \mapsto \mathbf{X}^A$, $\mathbf{X}^A_p = \frac{d}{dt}\big|_{t=0}\, p\,(I + tA)$, preserves brackets. It acts on \emph{column} vectors on the left, $g \cdot p = gp$; the corresponding fields $\mathbf{Z}_A$, $(\mathbf{Z}_A)_p = Ap$, satisfy
+\[
+[\mathbf{Z}_A, \mathbf{Z}_B] = \mathbf{Z}_{BA - AB} = -\,\mathbf{Z}_{[A,B]} ,
+\]
+an anti-homomorphism. Indeed $\mathbf{Z}_A = \sum_k \big(\sum_j a_{kj}x^j\big)\partial_k$, and the first-order part of $\mathbf{Z}_A(\mathbf{Z}_B f)$ is $\sum_{k} \big(\sum_j (Ap)_j\, b_{kj}\big)\partial_k f = \sum_k (BAp)_k\, \partial_k f = \mathbf{Z}_{BA}f$, the second-order parts cancelling as in Proposition~\ref{prop:linear-field-bracket}; so $[\mathbf{Z}_A, \mathbf{Z}_B] = \mathbf{Z}_{BA} - \mathbf{Z}_{AB}$. This is the same sign as for right-invariant fields (Theorem~\ref{thm:right-bracket}, Example~\ref{ex:right-invariant-GL}): left multiplication $X \mapsto AX$ generates right-invariant fields, and right multiplication $X \mapsto XA$ left-invariant ones. It is the lecture's aside on writing $(x)f$ (the remark \emph{Left or Right: The Sign of the Bracket}): with maps written on the right, the right action is the one whose composites read in order, and it is the one that preserves brackets.
+\end{rembox}
+
 
 
 % ============================================================================
@@ -19026,6 +19534,155 @@ Uribe's picture: $Z$ (blue) and $Y$ (red) tangent at a point, not transverse; a 
 
 \textbf{Transcription note (Lecture 20).} Page~54 of the handwritten notes writes ``$\pi$ onto'' under $F^{-1}(Z) \to \mathbb{R}^d$; Uribe paused (``that's not at all \ldots\ yeah, it's onto''), and it is onto --- for $p \in Y$ and $z \in Z$, $(z - p, p) \in F^{-1}(Z)$ when $Z \neq \varnothing$ --- but surjectivity plays no role in the argument.
 
+\subsection{Height Functions Are Almost Always Morse}\label{sub:height-functions}
+
+\textit{Assignment~6, Problem~5: the homework announced in Lecture~20 (``almost all linear functions restricted to the manifold are Morse''). Not from lecture; the submitted solution, with the bundle facts it uses filled in (\ref{sub:geo-tangent-bundle}) and its main implication completed to an equivalence.}
+
+\emph{Setting.} Throughout this subsection $M \subseteq \mathbb{R}^N$ is a regular submanifold of dimension $m < N$, with the geometric tangent spaces $T^{\geo}_pM$, written $T_pM$ (the Setting of \ref{sec:normal-bundle} with $n = N$); $T^{\geo}M$ is its tangent bundle with zero section $\mathcal{Z}$ and $\pi_p : \mathbb{R}^N \to T_pM$ the orthogonal projection (Definition~\ref{def:geo-tangent-bundle}, Lemma~\ref{lem:tangent-projection}). Points of the parameter space $\mathbb{R}^N$ are written $\mathbf{a}, \mathbf{b}$. (If $m = N$, $M$ is open in $\mathbb{R}^N$ and the functions below have no critical points unless $\mathbf{a} = 0$.)
+
+\begin{lembox}[The Zero Section and the Splitting Along It]\thmlabel{lem:geo-zero-section}
+\begin{enumerate}
+    \item The zero section $\zeta : M \to T^{\geo}M$, $\zeta(p) = (p, 0)$, is smooth, and $\mathcal{Z} = \zeta(M)$ is a closed regular submanifold of $T^{\geo}M$ of dimension $m$.
+    \item For $p \in M$, with tangent spaces of the submanifolds $\mathcal{Z} \subseteq T^{\geo}M \subseteq \mathbb{R}^{2N}$ taken geometrically,
+    \[
+    T_{(p,0)}\mathcal{Z} = \{(u, 0) : u \in T_pM\}, \qquad V = \{(0, w) : w \in T_pM\}, \qquad T_{(p,0)}T^{\geo}M = T_{(p,0)}\mathcal{Z} \oplus V = T_pM \times T_pM .
+    \]
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\emph{(1)} \textit{(Filled in.)} The projection $\pi(q, v) = q$ is the restriction to $T^{\geo}M$ of a linear map, smooth by Lemma~\ref{lem:maps-into-submanifold}(1); $\zeta$ is smooth into $\mathbb{R}^{2N}$ and lands in the regular submanifold $T^{\geo}M$ (Proposition~\ref{prop:geo-tangent-bundle-submanifold}), so it is smooth into it (Lemma~\ref{lem:maps-into-submanifold}(2)). As $\pi \circ \zeta = \mathrm{id}_M$, Proposition~\ref{prop:sections-embeddings} makes $\zeta$ an embedding with closed image, a closed regular submanifold of dimension $m$.
+
+\emph{(2)} \textit{(Assignment~6, Problem~5(a); the submitted solution.)} If $\gamma$ is a curve in $M$ with $\gamma(0) = p$ and $\gamma'(0) = u$, then $t \mapsto (\gamma(t), 0)$ is a curve in $\mathcal{Z}$ with velocity $(u, 0)$ at $t = 0$; so $\{(u, 0) : u \in T_pM\} \subseteq T_{(p,0)}\mathcal{Z}$, with equality since both have dimension $m$ (by (1) and Theorem~\ref{thm:geo-tangent-dimension}). For $w \in T_pM$, $t \mapsto (p, tw)$ is a curve in $T^{\geo}M$ with velocity $(0, w)$ at $t = 0$, so $V \subseteq T_{(p,0)}T^{\geo}M$. Both $T_{(p,0)}\mathcal{Z}$ and $V$ are $m$-dimensional, and $T_{(p,0)}\mathcal{Z} \cap V = \{0\}$, since $(u, 0) = (0, w)$ forces $u = w = 0$. Hence $T_{(p,0)}\mathcal{Z} + V$ is a $2m$-dimensional subspace of the $2m$-dimensional space $T_{(p,0)}T^{\geo}M$ (Proposition~\ref{prop:geo-tangent-bundle-submanifold}), so they are equal.
+\end{proof}
+
+This is the splitting of Proposition~\ref{prop:zero-section-vertical} for $T^*M$, seen inside $\mathbb{R}^{2N}$: horizontal (along the zero section) plus vertical (along the fibre).
+
+\begin{defbox}[Height Function]\deflabel{def:height-function}
+For $\mathbf{a} \in \mathbb{R}^N$, the \textbf{height function} in the direction $\mathbf{a}$ is $f_{\mathbf{a}} : M \to \mathbb{R}$, $f_{\mathbf{a}}(p) = p \cdot \mathbf{a}$, the restriction to $M$ of a linear function.
+\end{defbox}
+
+\begin{lembox}[Critical Points of a Height Function]\thmlabel{lem:height-critical}
+For $p \in M$ and $w \in T_pM$, $d(f_{\mathbf{a}})_p(w) = w \cdot \mathbf{a} = w \cdot \pi_p(\mathbf{a})$. Hence
+\[
+p \in \operatorname{Crit}(f_{\mathbf{a}}) \iff \mathbf{a} \perp T_pM \iff \pi_p(\mathbf{a}) = 0 .
+\]
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~5(b); the submitted solution.)} $f_{\mathbf{a}}$ is the restriction to $M$ of the linear function $y \mapsto y \cdot \mathbf{a}$, so along a curve $\gamma$ in $M$ with $\gamma(0) = p$, $\gamma'(0) = w$, $d(f_{\mathbf{a}})_p(w) = \frac{d}{dt}\big|_{t=0}\, \gamma(t) \cdot \mathbf{a} = w \cdot \mathbf{a}$ (Corollary~\ref{cor:velocity-composite}). Since $w \cdot \mathbf{a} = w \cdot \pi_p(\mathbf{a})$ for $w \in T_pM$ (Lemma~\ref{lem:tangent-projection}(1)), this is the identification $T_pM \cong T_p^*M$ by the inner product: $d(f_{\mathbf{a}})_p$ corresponds to $\pi_p(\mathbf{a})$. So $d(f_{\mathbf{a}})_p = 0$ if and only if $\mathbf{a} \perp T_pM$, if and only if $\pi_p(\mathbf{a}) = 0$ (Lemma~\ref{lem:tangent-projection}(1)).
+\end{proof}
+
+So $\pi_p(\mathbf{a})$ is the gradient of $f_{\mathbf{a}}$ at $p$, and the family of gradients is the map of the next proposition.
+
+\begin{propbox}[The Gradient Family Is Transverse to the Zero Section]\thmlabel{prop:height-transverse}
+Let $F : \mathbb{R}^N \times M \to T^{\geo}M$, $F(\mathbf{a}, p) = (p, \pi_p(\mathbf{a}))$. Then $F$ is smooth, $F \pitchfork \mathcal{Z}$ (Definition~\ref{def:transverse-submanifold}), and
+\[
+S = F^{-1}(\mathcal{Z}) = \{(\mathbf{a}, p) \in \mathbb{R}^N \times M : \mathbf{a} \perp T_pM\}
+\]
+is a regular submanifold of $\mathbb{R}^N \times M$ of dimension $N$: the normal bundle $\mathcal{N}$ of $M$ (Definition~\ref{def:normal-bundle}) with the two factors written in the opposite order. For $(\mathbf{a}, p) \in S$ and $\mathbf{b} \in \mathbb{R}^N$,
+\[
+dF_{(\mathbf{a},p)}(\mathbf{b}, 0) = \big(0,\ \pi_p(\mathbf{b})\big) .
+\]
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~5(a); the submitted solution. Smoothness, not asked for, is Lemma~\ref{lem:tangent-projection}(3).)} \emph{$F^{-1}(\mathcal{Z})$.} The zero section is $\mathcal{Z} = \{(p, 0) : p \in M\}$, so
+\[
+F^{-1}(\mathcal{Z}) = \{(\mathbf{a}, p) \in \mathbb{R}^N \times M : \pi_p(\mathbf{a}) = 0\} = \{(\mathbf{a}, p) : p \in M,\ \mathbf{a} \in (T_pM)^\perp\}
+\]
+by Lemma~\ref{lem:tangent-projection}(1). This is the normal bundle $\mathcal{N} = \{(p, v) : p \in M,\ v \perp T_pM\}$ of $M$, with the two factors written in the opposite order.
+
+\emph{$F \pitchfork \mathcal{Z}$.} Let $(\mathbf{a}, p) \in F^{-1}(\mathcal{Z})$, so $F(\mathbf{a}, p) = (p, 0)$. We must show $\operatorname{Im} dF_{(\mathbf{a}, p)} + T_{(p,0)}\mathcal{Z} = T_{(p,0)}T^{\geo}M$. By Lemma~\ref{lem:geo-zero-section}(2), it suffices to show $V \subseteq \operatorname{Im} dF_{(\mathbf{a}, p)}$. For $\mathbf{b} \in \mathbb{R}^N$, the curve $t \mapsto (\mathbf{a} + t\mathbf{b}, p)$ in $\mathbb{R}^N \times M$ has velocity $(\mathbf{b}, 0)$ at $t = 0$, and by linearity of $\pi_p$, $F(\mathbf{a} + t\mathbf{b}, p) = \big(p,\ \pi_p(\mathbf{a}) + t\,\pi_p(\mathbf{b})\big)$, so
+\[
+dF_{(\mathbf{a}, p)}(\mathbf{b}, 0) = \frac{d}{dt}\Big|_{t=0} F(\mathbf{a} + t\mathbf{b}, p) = \big(0,\ \pi_p(\mathbf{b})\big).
+\]
+Given $w \in T_pM$, take $\mathbf{b} = w$; since $\pi_p(w) = w$, this gives $(0, w) = dF_{(\mathbf{a},p)}(w, 0) \in \operatorname{Im} dF_{(\mathbf{a}, p)}$. Hence $V \subseteq \operatorname{Im} dF_{(\mathbf{a}, p)}$, and
+\[
+\operatorname{Im} dF_{(\mathbf{a}, p)} + T_{(p,0)}\mathcal{Z} \supseteq V + T_{(p,0)}\mathcal{Z} = T_{(p,0)}T^{\geo}M.
+\]
+In block form with respect to $\mathbb{R}^N \oplus T_pM$ and $T_{(p,0)}T^{\geo}M = T_pM \oplus T_pM$ (horizontal $\oplus$ vertical),
+\[
+dF_{(\mathbf{a}, p)} = \begin{pmatrix} 0 & I_m \\ \pi_p & \ast \end{pmatrix},
+\]
+and the first column alone, together with $T_{(p,0)}\mathcal{Z}$, spans $T_{(p,0)}T^{\geo}M$. Therefore $F \pitchfork \mathcal{Z}$.
+
+\emph{The manifold $S$.} By Theorem~\ref{thm:transverse-submanifold-preimage}, applied to $F$ and the submanifold $\mathcal{Z}$ of codimension $2m - m = m$ in $T^{\geo}M$ (Lemma~\ref{lem:geo-zero-section}(1)), $S$ is a regular submanifold of $\mathbb{R}^N \times M$ of codimension $m$, so $\dim S = N + m - m = N$, and $T_{(\mathbf{a},p)}S = \{(\mathbf{b}, u) \in \mathbb{R}^N \oplus T_pM : dF_{(\mathbf{a},p)}(\mathbf{b}, u) \in T_{(p,0)}\mathcal{Z}\}$.
+\end{proof}
+
+\begin{propbox}[The Hessian of a Height Function]\thmlabel{prop:height-hessian}
+Let $(\mathbf{a}, p) \in S$, that is, $p \in \operatorname{Crit}(f_{\mathbf{a}})$, and $F_{\mathbf{a}} = F(\mathbf{a}, \cdot) : M \to T^{\geo}M$, $F_{\mathbf{a}}(q) = (q, \pi_q(\mathbf{a}))$. Then
+\[
+d(F_{\mathbf{a}})_p(u) = (u, A_pu), \qquad A_pu = \frac{d}{dt}\Big|_{t=0}\pi_{\gamma(t)}(\mathbf{a}) \quad (\gamma(0) = p,\ \gamma'(0) = u),
+\]
+for a linear map $A_p : T_pM \to T_pM$. In an adapted chart as in the Setting of \ref{sec:normal-bundle}, the matrix of $A_p$ in the basis $X_1(p), \ldots, X_m(p)$ is $g(p)^{-1}H_p$, where $g$ is the Gram matrix (Lemma~\ref{lem:tangent-projection}) and $H_p$ the Hessian matrix of $f_{\mathbf{a}}$ in the chart $(x^1, \ldots, x^m)$ of $M$ (Definition~\ref{def:hessian-matrix}). So $A_p$ is invertible if and only if $p$ is a nondegenerate critical point of $f_{\mathbf{a}}$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~5(b); the submitted solution.)} \emph{The vertical derivative.} For $u \in T_pM$ and a curve $\gamma$ in $M$ with $\gamma(0) = p$, $\gamma'(0) = u$,
+\[
+d(F_{\mathbf{a}})_p(u) = \frac{d}{dt}\Big|_{t=0}\big(\gamma(t), \pi_{\gamma(t)}(\mathbf{a})\big) = (u, A_pu), \qquad A_pu = \frac{d}{dt}\Big|_{t=0}\pi_{\gamma(t)}(\mathbf{a}).
+\]
+Since $T_{(p,0)}T^{\geo}M = \{(u, w) : u, w \in T_pM\}$ (Lemma~\ref{lem:geo-zero-section}(2)), $A_pu \in T_pM$, and $A_p$ is linear since $d(F_{\mathbf{a}})_p$ is. In block form, $d(F_{\mathbf{a}})_p = \begin{pmatrix} I_m \\ A_p \end{pmatrix}$.
+
+\emph{$A_p$ in coordinates.} Restricted to $U \cap M$, the first $m$ coordinates $(x^1, \ldots, x^m)$ of the adapted chart form a chart of $M$, whose coordinate vectors at $q \in U \cap M$ are the $X_j(q) = \partial_j(q) \in T_qM \subseteq \mathbb{R}^N$. By Lemma~\ref{lem:tangent-projection}(2), $\pi_q(\mathbf{a}) = \sum_{i,j} g^{ij}(q)\,\big(\mathbf{a} \cdot \partial_j(q)\big)\,\partial_i(q)$, and $\frac{\partial f_{\mathbf{a}}}{\partial x^j}(q) = \partial_j(q) \cdot \mathbf{a}$ (Lemma~\ref{lem:height-critical} with $w = \partial_j(q)$). Since $p$ is a critical point, $\mathbf{a} \cdot \partial_j(p) = 0$ for all $j$. Differentiating $\pi_q(\mathbf{a})$ in the direction $\partial_k$ at $q = p$ by the product rule, every term in which the derivative does not fall on $\mathbf{a} \cdot \partial_j(q)$ contains the factor $\mathbf{a} \cdot \partial_j(p) = 0$, so
+\[
+A_p(\partial_k(p)) = \sum_{i,j} g^{ij}(p)\, \frac{\partial^2 f_{\mathbf{a}}}{\partial x^k \partial x^j}(p)\, \partial_i(p).
+\]
+Thus the matrix of $A_p$ in the basis $(\partial_i(p))$ is $g(p)^{-1}H_p$. As $g(p)$ is invertible, $A_p$ is invertible if and only if $\det H_p \neq 0$, that is (Definition~\ref{def:nondegenerate-critical} and the remark after it), if and only if $p$ is nondegenerate.
+\end{proof}
+
+\begin{thmbox}[Height Functions and Regular Values]\thmlabel{thm:height-regular-values}
+Let $\pi : S \to \mathbb{R}^N$, $\pi(\mathbf{a}, p) = \mathbf{a}$, be the projection of the manifold $S$ of Proposition~\ref{prop:height-transverse} onto the parameter (not to be confused with the orthogonal projections $\pi_p$). Then $\pi^{-1}(\mathbf{a}) = \{\mathbf{a}\} \times \operatorname{Crit}(f_{\mathbf{a}})$, and
+\[
+\mathbf{a} \text{ is a regular value of } \pi \iff f_{\mathbf{a}} \text{ is a Morse function.}
+\]
+\end{thmbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~5(b): the direction $(\Rightarrow)$ is the submitted solution; $(\Leftarrow)$ is filled in.)} By Lemma~\ref{lem:height-critical}, $(\mathbf{a}, p) \in S$ if and only if $p \in \operatorname{Crit}(f_{\mathbf{a}})$, so $\pi^{-1}(\mathbf{a}) = \{\mathbf{a}\} \times \operatorname{Crit}(f_{\mathbf{a}})$. Since $\pi$ is the restriction of the linear projection $(\mathbf{a}, p) \mapsto \mathbf{a}$, $\pi_{*(\mathbf{a},p)}(\mathbf{b}, u) = \mathbf{b}$.
+
+\emph{The tangent space of $S$.} Let $(\mathbf{a}, p) \in S$. Since $F(\mathbf{a}, q) = F_{\mathbf{a}}(q)$, the chain rule gives $dF_{(\mathbf{a},p)}(0, u) = d(F_{\mathbf{a}})_p(u) = (u, A_pu)$ (Proposition~\ref{prop:height-hessian}), and with Proposition~\ref{prop:height-transverse}, by linearity,
+\[
+dF_{(\mathbf{a},p)}(\mathbf{b}, u) = \big(u,\ \pi_p(\mathbf{b}) + A_pu\big) .
+\]
+As $T_{(p,0)}\mathcal{Z} = \{(u', 0) : u' \in T_pM\}$, Proposition~\ref{prop:height-transverse} gives
+\[
+T_{(\mathbf{a},p)}S = \{(\mathbf{b}, u) : \pi_p(\mathbf{b}) + A_pu = 0\}, \qquad \ker \pi_{*(\mathbf{a},p)} = \{(0, u) : u \in T_pM,\ A_pu = 0\}.
+\]
+
+\emph{$(\Rightarrow)$ Regular values give Morse functions.} Suppose $\mathbf{a}$ is a regular value of $\pi$, and let $p$ be a critical point of $f_{\mathbf{a}}$, so $(\mathbf{a}, p) \in \pi^{-1}(\mathbf{a})$. Then $\pi_{*(\mathbf{a},p)} : T_{(\mathbf{a},p)}S \to \mathbb{R}^N$ is surjective, and since $\dim T_{(\mathbf{a},p)}S = N$, it is also injective. By the kernel computation, $A_pu = 0$ implies $u = 0$, so $A_p$ is injective, hence invertible, and $p$ is nondegenerate (Proposition~\ref{prop:height-hessian}). Since $p$ was an arbitrary critical point, $f_{\mathbf{a}}$ is Morse.
+
+\emph{$(\Leftarrow)$} Suppose $f_{\mathbf{a}}$ is Morse, and let $(\mathbf{a}, p) \in \pi^{-1}(\mathbf{a})$. Then $p$ is a nondegenerate critical point, so $A_p$ is invertible (Proposition~\ref{prop:height-hessian}). Given $\mathbf{b} \in \mathbb{R}^N$, put $u = -A_p^{-1}\pi_p(\mathbf{b}) \in T_pM$; then $(\mathbf{b}, u) \in T_{(\mathbf{a},p)}S$ and $\pi_{*(\mathbf{a},p)}(\mathbf{b}, u) = \mathbf{b}$. So $\pi_{*(\mathbf{a},p)}$ is onto at every point of $\pi^{-1}(\mathbf{a})$: $\mathbf{a}$ is a regular value.
+\end{proof}
+
+The image of $\pi_{*(\mathbf{a},p)}$ is $\{\mathbf{b} : \pi_p(\mathbf{b}) \in \operatorname{Im} A_p\}$; the theorem says this is all of $\mathbb{R}^N$ exactly when $A_p$ is onto.
+
+\begin{corbox}[Almost Every Height Function Is Morse]\thmlabel{cor:height-morse}
+For almost every $\mathbf{a} \in \mathbb{R}^N$ (all $\mathbf{a}$ outside a set of measure zero), $f_{\mathbf{a}} : M \to \mathbb{R}$ is a Morse function.
+\end{corbox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~5(b); the submitted solution.)} By Sard's theorem (Theorem~\ref{thm:sard}) applied to the smooth map $\pi : S \to \mathbb{R}^N$, the set of critical values of $\pi$ has measure zero in $\mathbb{R}^N$. Hence almost every $\mathbf{a} \in \mathbb{R}^N$ is a regular value of $\pi$, and for all such $\mathbf{a}$, $f_{\mathbf{a}}$ is a Morse function (Theorem~\ref{thm:height-regular-values}).
+\end{proof}
+
+\begin{proof}[Second proof]
+\textit{(Not from the assignment: the problem as an instance of Corollary~\ref{cor:parametric-sard}.)} $F$ is a smooth family of maps $F_{\mathbf{a}} : M \to T^{\geo}M$ parametrized by $\mathbb{R}^N$ (Definition~\ref{def:smooth-family}), and $F \pitchfork \mathcal{Z}$ (Proposition~\ref{prop:height-transverse}); so $F_{\mathbf{a}} \pitchfork \mathcal{Z}$ for almost every $\mathbf{a}$. At $p \in F_{\mathbf{a}}^{-1}(\mathcal{Z}) = \operatorname{Crit}(f_{\mathbf{a}})$, by Proposition~\ref{prop:height-hessian} and Lemma~\ref{lem:geo-zero-section}(2),
+\[
+\operatorname{Im} d(F_{\mathbf{a}})_p + T_{(p,0)}\mathcal{Z} = \{(u, A_pu)\} + \{(u', 0)\} = T_pM \times \operatorname{Im} A_p ,
+\]
+which is all of $T_{(p,0)}T^{\geo}M = T_pM \times T_pM$ if and only if $A_p$ is onto, that is, $p$ is nondegenerate. So $F_{\mathbf{a}} \pitchfork \mathcal{Z}$ exactly when $f_{\mathbf{a}}$ is Morse, and the claim follows. Under the identification $T^{\geo}M \cong T^*M$ of the hint (``one can identify $TM \cong T^*M$ using the inner product''), $F_{\mathbf{a}}$ is the section $s_{f_{\mathbf{a}}} : p \mapsto (p, d(f_{\mathbf{a}})_p)$, and this equivalence is Theorem~\ref{thm:morse-transverse}.
+\end{proof}
+
+\begin{rembox}[Directions Outside the Image]\label{rem:height-outside-image}
+``Incidentally, what can you say about $f_{\mathbf{a}}$ if $\mathbf{a}$ is not in the image of $\pi$?'' \textit{(The submitted answer.)} If $\mathbf{a} \notin \pi(S)$, then $\pi^{-1}(\mathbf{a}) = \{\mathbf{a}\} \times \operatorname{Crit}(f_{\mathbf{a}})$ is empty, so $f_{\mathbf{a}}$ has no critical points; in particular it is vacuously Morse (Definition~\ref{def:morse-function}). \textit{(Not from the assignment.)} If $M$ is compact and nonempty, this never happens: $f_{\mathbf{a}}$ is continuous on a compact set, so it attains a maximum, at a critical point; so $\pi$ is onto. At the other extreme, $\mathbf{a} = 0$ gives $f_0 \equiv 0$, every point critical with zero Hessian, so ($m \ge 1$) $0$ is always a critical value of $\pi$.
+\end{rembox}
+
+\begin{rembox}[$\bigstar$ The Shape Operator]\label{rem:height-shape-operator}
+\textit{(Beyond the course; stated, not proved here.)} For $(\mathbf{a}, p) \in S$, $\mathbf{a}$ is a normal vector at $p$, and $A_p$ is the \emph{shape operator} (Weingarten map) of $M$ at $p$ in the normal direction $\mathbf{a}$: writing $\mathbf{a} = \pi_{\gamma(t)}(\mathbf{a}) + \nu(t)$ with $\nu(t) \perp T_{\gamma(t)}M$, $A_pu = -\nu'(0)$, the classical $S_{\mathbf{a}}(u) = -(D_u\nu)^{\top}$. The Hessian is the second fundamental form $\mathrm{II}$ paired with $\mathbf{a}$: $\operatorname{Hess}_p f_{\mathbf{a}}(u, w) = \mathbf{a} \cdot \mathrm{II}_p(u, w)$. So $f_{\mathbf{a}}$ fails to be Morse exactly when $M$ is curved degenerately in the direction $\mathbf{a}$ at some point where $\mathbf{a}$ is normal. For a hypersurface ($m = N - 1$), $\pi$ restricted to unit normals is the Gauss map, and the excluded directions are those of normals at points of zero Gauss--Kronecker curvature. The companion statement for distances, $L_{\mathbf{a}}(p) = |p - \mathbf{a}|^2$, is Milnor's (\emph{Morse Theory}, \S6): $L_{\mathbf{a}}$ is Morse if and only if $\mathbf{a}$ is not a focal point of $M$ (Definition~\ref{def:focal-point}), the eigenvalue condition of the remark \emph{Focal Points Are Centres of Curvature}.
+\end{rembox}
+
+
 % ============================================================================
 % SECTION: THE WHITNEY EMBEDDING THEOREM (Lecture 21)
 % ============================================================================
@@ -19084,6 +19741,18 @@ Uribe's cartoon for injectivity: $\chi_i \equiv 1$ on $\overline{B}_i$ (``it cou
 \]
 (``Do you guys know the difference between complementary and supplementary? I learned that in elementary school, and I'm still trying to figure out what the difference is.'') We want: \emph{if $N > 2m + 1$, there is an $\ell$ such that $\pi_\ell$ is an embedding.} Applying this repeatedly lowers $N$ to $2m + 1$, ``until we're out of parameters.''
 
+\begin{lembox}[Lines in a Hyperplane Have Measure Zero]\thmlabel{lem:hyperplane-lines}
+Identify $\mathbb{R}^{N-1}$ with $\{y \in \mathbb{R}^N : y^N = 0\}$. The set
+\[
+H = \{\, [y] \in \mathbb{RP}^{N-1} : y^N = 0 \,\}
+\]
+of lines through $0$ contained in $\mathbb{R}^{N-1}$ is an embedded submanifold of $\mathbb{RP}^{N-1}$ of dimension $N - 2$, and it has measure zero in $\mathbb{RP}^{N-1}$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~4, with $N = 2m + 1$; the submitted solution. The fact is used in the proof of Lemma~\ref{lem:projection-injective} as well.)} $H$ is well defined, since $y^N = 0$ is unchanged by scaling $y$. Index the coordinates of $\mathbb{R}^N$ by $1, \ldots, N$, and for $i = 1, \ldots, N$ let $U_i = \{[y] : y^i \neq 0\}$ with the affine chart $\varphi_i([y]) = (y^k/y^i)_{k \neq i}$ (Corollary~\ref{cor:rpn-atlas}). Then $H \cap U_N = \varnothing$, and for $i \leq N - 1$, $\varphi_i(H \cap U_i)$ is the coordinate hyperplane $\{y^N/y^i = 0\}$ of $\mathbb{R}^{N-1}$. So the charts $\varphi_i$ are slice charts for $H$, and $H$ is an embedded $(N-2)$-dimensional submanifold of $\mathbb{RP}^{N-1}$. Since $N - 2 < N - 1$, $H$ has measure zero in $\mathbb{RP}^{N-1}$ by Corollary~\ref{cor:sard-low-dim}, applied to its inclusion. \textit{(Filled in: directly from Definition~\ref{def:measure-zero-manifold}, the chart images $\varphi_i(H \cap U_i)$ are hyperplanes, of measure zero in $\mathbb{R}^{N-1}$ by the same corollary applied to a linear map $\mathbb{R}^{N-2} \to \mathbb{R}^{N-1}$ onto each.)}
+\end{proof}
+
 \begin{lembox}[Projections That Stay Injective]\thmlabel{lem:projection-injective}
 Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, with $N > 2m + 1$. Then the lines $\ell \subseteq \mathbb{R}^N$ through $0$ for which $\ell \subseteq \mathbb{R}^{N-1}$, or $\pi_\ell : M \to \mathbb{R}^{N-1}$ is not injective, form a set of measure zero in $\mathbb{RP}^{N-1}$. In particular there are lines $\ell \not\subseteq \mathbb{R}^{N-1}$ with $\pi_\ell$ injective.
 \leeref{Lemma 6.13}
@@ -19094,7 +19763,7 @@ Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, with $
 \[
 \sigma : (M \times M) \setminus \Delta \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, q) \longmapsto \operatorname{span}(q - p),
 \]
-the line through $0$ parallel to the secant from $p$ to $q$, ``the vector $\vec{pq}$, as in Calc~3''; $q - p \neq 0$ because $p \neq q$. \textit{(Filled in.)} $\sigma$ is smooth: it is $(p, q) \mapsto q - p \in \mathbb{R}^N \setminus \{0\}$ followed by the quotient map to $\mathbb{RP}^{N-1}$, which in the chart $\varphi_i$ of Corollary~\ref{cor:rpn-atlas} is $w \mapsto (w_k/w_i)_{k \neq i}$, rational with nonvanishing denominator. Its domain is open in $M \times M$, of dimension $2m$, and $\dim \mathbb{RP}^{N-1} = N - 1$. If $2m < N - 1$, the image of $\sigma$ has measure zero (Corollary~\ref{cor:sard-low-dim}). So do the lines contained in $\mathbb{R}^{N-1}$: they form a copy of $\mathbb{RP}^{N-2}$, of lower dimension --- ``the things that are not transverse to $\mathbb{R}^{N-1}$ is a projective space of lower dimension'' --- whose image under the smooth inclusion has measure zero by the same corollary. A union of two sets of measure zero has measure zero (Proposition~\ref{prop:measure-zero-every-chart}), so its complement is dense (Lemma~\ref{lem:measure-zero-basic}(4), in charts): ``pick $\ell$ not in the image and transverse to $\mathbb{R}^{N-1}$.'' For such $\ell$, $\pi_\ell$ is injective: $\pi_\ell(p) = \pi_\ell(q)$ means $q - p \in \ker = \ell$, so for $p \neq q$, $\ell = \operatorname{span}(q - p) = \sigma(p, q)$, contrary to the choice. ``I'm going to lose injectivity precisely when I have a $p$ and a $q$ parallel to the line of projection.'' The condition $2m < N - 1$ is $N > 2m + 1$, ``precisely the bound.''
+the line through $0$ parallel to the secant from $p$ to $q$, ``the vector $\vec{pq}$, as in Calc~3''; $q - p \neq 0$ because $p \neq q$. \textit{(Filled in.)} $\sigma$ is smooth: it is $(p, q) \mapsto q - p \in \mathbb{R}^N \setminus \{0\}$ followed by the quotient map to $\mathbb{RP}^{N-1}$, which in the chart $\varphi_i$ of Corollary~\ref{cor:rpn-atlas} is $w \mapsto (w_k/w_i)_{k \neq i}$, rational with nonvanishing denominator. Its domain is open in $M \times M$, of dimension $2m$, and $\dim \mathbb{RP}^{N-1} = N - 1$. If $2m < N - 1$, the image of $\sigma$ has measure zero (Corollary~\ref{cor:sard-low-dim}). So do the lines contained in $\mathbb{R}^{N-1}$: they form a copy of $\mathbb{RP}^{N-2}$, of lower dimension --- ``the things that are not transverse to $\mathbb{R}^{N-1}$ is a projective space of lower dimension'' --- whose image under the smooth inclusion has measure zero by the same corollary (Lemma~\ref{lem:hyperplane-lines}). A union of two sets of measure zero has measure zero (Proposition~\ref{prop:measure-zero-every-chart}), so its complement is dense (Lemma~\ref{lem:measure-zero-basic}(4), in charts): ``pick $\ell$ not in the image and transverse to $\mathbb{R}^{N-1}$.'' For such $\ell$, $\pi_\ell$ is injective: $\pi_\ell(p) = \pi_\ell(q)$ means $q - p \in \ker = \ell$, so for $p \neq q$, $\ell = \operatorname{span}(q - p) = \sigma(p, q)$, contrary to the choice. ``I'm going to lose injectivity precisely when I have a $p$ and a $q$ parallel to the line of projection.'' The condition $2m < N - 1$ is $N > 2m + 1$, ``precisely the bound.''
 \end{proof}
 
 \begin{center}
@@ -19142,17 +19811,46 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 \textit{(Not from lecture; figure added.)} Why the bound is $2m + 1$. For a curve ($m = 1$) in $\mathbb{R}^3$ ($N = 3$), $(M \times M) \setminus \Delta$ has dimension $2m = 2 = N - 1$, so the secant directions $\sigma(p, q)$ can fill an open set of $\mathbb{RP}^2$ and Corollary~\ref{cor:sard-low-dim} does not apply. Indeed, projecting a curve in space onto a plane along $\ell$ typically produces crossings: here $q - p$ is parallel to $\ell$, and $\pi_\ell(p) = \pi_\ell(q)$. The shadow is still an immersed curve, matching the immersion into $\mathbb{R}^{2m}$ of Theorem~\ref{thm:whitney}, but not an embedded one.
 %% <<< END ADDED
 
-\begin{lembox}[Projections That Stay Immersions]\thmlabel{lem:projection-immersion}
-Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, with $N > 2m + 1$. Then the lines $\ell \subseteq \mathbb{R}^N$ through $0$ for which $\ell \subseteq \mathbb{R}^{N-1}$, or $\pi_\ell : M \to \mathbb{R}^{N-1}$ is not an immersion, form a set of measure zero in $\mathbb{RP}^{N-1}$.
-\leeref{Lemma 6.13}
+\begin{lembox}[When a Projection Is an Immersion]\thmlabel{lem:projection-immersion-criterion}
+Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, $\ell = \mathbb{R}v$ a line with $v^N \neq 0$, and $UM$ the unit tangent bundle (Definition~\ref{def:unit-tangent-bundle}), with
+\[
+G : UM \to \mathbb{RP}^{N-1}, \qquad G(x, u) = [u] .
+\]
+Then $G$ is smooth, and the projection $\pi_\ell : M \to \mathbb{R}^{N-1}$ along $\ell$ satisfies $d(\pi_\ell)_x = \pi_\ell|_{T_xM}$, so that
+\[
+\pi_\ell \text{ is an immersion} \iff T_xM \cap \ell = \{0\} \text{ for every } x \in M \iff \ell \notin G(UM) .
+\]
 \end{lembox}
 
-\begin{proof}[Proof (to be filled)]
-\textit{(A homework problem. Uribe's sketch from Lecture~21 is recorded as given; the proof is to be filled in after the assignment is submitted.)} ``The same idea \ldots\ instead of pairs $(p, q)$ to create a line, you take tangent vectors. You take $p$ and $q$ infinitesimally close together'': map nonzero tangent vectors to lines,
+\begin{proof}
+\textit{(Assignment~6, Problem~4, with $N = 2m + 1$; the submitted solution, which writes $\pi_v$ for $\pi_\ell$. Tangent spaces are geometric, $T_xM \subseteq \mathbb{R}^N$.)} \emph{The projection.} With $\mathbb{R}^{N-1} = \{y : y^N = 0\}$, the projection with kernel $\ell = \mathbb{R}v$ is
 \[
-TM \setminus \mathcal{Z} \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, v) \longmapsto \mathbb{R}v ,
+\pi_\ell(y) = y - \frac{y^N}{v^N}\,v .
 \]
-with $T_pM \subseteq \mathbb{R}^N$ (``in the homework you replace this by $v$ of length one''), and choose $\ell$ also outside its image. ``What remains to be proved is that if you have a line that is not in here, then you get an immersion, and that's going to be precisely because the differential of the projection is just the projection.'' To be filled.
+It is linear, its values have last coordinate $0$, and $\pi_\ell(y) = 0$ if and only if $y \in \mathbb{R}v$. On $M$ it is $F = \pi_\ell \circ \iota$, with $\iota : M \hookrightarrow \mathbb{R}^N$ the inclusion.
+
+\emph{The differential of $F$.} Since $\pi_\ell$ is linear, $\pi_\ell(y + tw) = \pi_\ell(y) + t\,\pi_\ell(w)$, so $d(\pi_\ell)_y(w) = \frac{d}{dt}\big|_{t=0}\pi_\ell(y + tw) = \pi_\ell(w)$ for all $y, w \in \mathbb{R}^N$; that is, $d(\pi_\ell)_y = \pi_\ell$. By the chain rule, for $x \in M$, $dF_x = d(\pi_\ell)_x \circ d\iota_x = \pi_\ell|_{T_xM}$.
+
+\emph{Its kernel.} A vector $w \in T_xM$ satisfies $\pi_\ell(w) = 0$ if and only if $w \in \ker \pi_\ell = \mathbb{R}v$, so $\ker dF_x = T_xM \cap \mathbb{R}v$. The linear map $dF_x$ is injective if and only if this is $\{0\}$: no nonzero tangent vector to $M$ at $x$ is parallel to $v$. This is the first equivalence.
+
+\emph{Restating the condition with $G$.} For nonzero $y \in \mathbb{R}^N$, $[y] \in \mathbb{RP}^{N-1}$ is the line $\mathbb{R}y$, so $[y] = [y']$ if and only if $y' = cy$ for some $c \neq 0$. Suppose some nonzero $w \in T_xM$ is parallel to $v$, say $w = cv$; then $c \neq 0$ since $w \neq 0$. Let $u = w/|w|$. Since $T_xM$ is a subspace, $u \in T_xM$, and $|u| = 1$, so $(x, u) \in UM$. Moreover $u = \frac{c}{|w|}\,v$, so $G(x, u) = [u] = [v]$ and $[v] \in G(UM)$. Conversely, suppose $[v] = G(x, u) = [u]$ for some $(x, u) \in UM$. Then $u = cv$ for some $c \neq 0$, so $u$ is a tangent vector to $M$ at $x$, nonzero since $|u| = 1$, and parallel to $v$. Combining both directions with the first equivalence gives the second.
+
+\emph{$G$ is smooth.} It is the composite of the smooth map $(x, u) \mapsto u$ (Lemma~\ref{lem:maps-into-submanifold}(1)), which takes values in $\mathbb{R}^N \setminus \{0\}$ since $|u| = 1$, with the smooth quotient map $q : \mathbb{R}^N \setminus \{0\} \to \mathbb{RP}^{N-1}$, $q(y) = [y]$, which in the chart $\varphi_i$ of Corollary~\ref{cor:rpn-atlas} is $y \mapsto (y^k/y^i)_{k \neq i}$, rational with nonvanishing denominator.
+\end{proof}
+
+\begin{lembox}[Projections That Stay Immersions]\thmlabel{lem:projection-immersion}
+Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, with $N > 2m$. Then the lines $\ell \subseteq \mathbb{R}^N$ through $0$ for which $\ell \subseteq \mathbb{R}^{N-1}$, or $\pi_\ell : M \to \mathbb{R}^{N-1}$ is not an immersion, form a set of measure zero in $\mathbb{RP}^{N-1}$. In particular there are lines $\ell \not\subseteq \mathbb{R}^{N-1}$ with $\pi_\ell$ an immersion.
+\leeref{Lemma 6.13; Problem 6-2}
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~6, Problem~4: the submitted solution, written there for $N = 2m + 1$; it uses $N$ only through $2m - 1 < N - 1$, so it proves the lemma for every $N > 2m$, one less than Lemma~\ref{lem:projection-injective} needs.)} Uribe's sketch from Lecture~21: ``The same idea \ldots\ instead of pairs $(p, q)$ to create a line, you take tangent vectors. You take $p$ and $q$ infinitesimally close together'': map nonzero tangent vectors to lines, $(p, v) \mapsto \mathbb{R}v$, with $T_pM \subseteq \mathbb{R}^N$ (``in the homework you replace this by $v$ of length one''), and choose $\ell$ also outside its image. ``What remains to be proved is that if you have a line that is not in here, then you get an immersion, and that's going to be precisely because the differential of the projection is just the projection.''
+
+\emph{$G(UM)$ has measure zero.} By Proposition~\ref{prop:unit-tangent-bundle}, $UM$ is a regular submanifold of $\mathbb{R}^{2N}$ of dimension $2m - 1$, and $G : UM \to \mathbb{RP}^{N-1}$, $G(x, u) = [u]$, is smooth (Lemma~\ref{lem:projection-immersion-criterion}). Since $\dim UM = 2m - 1 < N - 1 = \dim \mathbb{RP}^{N-1}$, Corollary~\ref{cor:sard-low-dim} shows that $G(UM)$ has measure zero in $\mathbb{RP}^{N-1}$.
+
+\emph{The bad lines.} By Lemma~\ref{lem:projection-immersion-criterion}, a line $\ell \not\subseteq \mathbb{R}^{N-1}$ for which $\pi_\ell$ is not an immersion lies in $G(UM)$. So the lines of the statement lie in $G(UM) \cup H$, with $H$ the lines in $\mathbb{R}^{N-1}$, of measure zero by Lemma~\ref{lem:hyperplane-lines}. A union of two sets of measure zero has measure zero (Proposition~\ref{prop:measure-zero-every-chart}), and so does any subset of it.
+
+\emph{Choosing $\ell$.} On the other hand, $\mathbb{RP}^{N-1}$ does not have measure zero, since $\varphi_N(U_N) = \mathbb{R}^{N-1}$ does not have Lebesgue measure zero (Lemma~\ref{lem:measure-zero-basic}(4) and Proposition~\ref{prop:measure-zero-every-chart}). Hence there exists $[v] \in \mathbb{RP}^{N-1} \setminus \big(G(UM) \cup H\big)$. Let $v$ be any representative. Since $[v] \notin H$, $v^N \neq 0$, so $v \in \mathbb{R}^N \setminus \mathbb{R}^{N-1}$ and $\pi_\ell$, $\ell = \mathbb{R}v$, is defined; since $[v] \notin G(UM)$, Lemma~\ref{lem:projection-immersion-criterion} shows that $\pi_\ell : M \to \mathbb{R}^{N-1}$ is an immersion.
 \end{proof}
 
 \begin{thmbox}[The Whitney Theorems for Compact Manifolds]\thmlabel{thm:whitney-compact}
@@ -19161,13 +19859,15 @@ Let $M$ be a compact smooth manifold of dimension $m$. Then there is an embeddin
 \end{thmbox}
 
 \begin{proof}
-\textit{(Lecture~21, ``two steps \ldots\ totally different. The technology, the ideas are totally different.'' The steps are Lemma~\ref{lem:compact-embeds} and Lemmas~\ref{lem:projection-injective}--\ref{lem:projection-immersion}; the immersion lemma is a homework problem, to be filled in after the assignment.)}
+\textit{(Lecture~21, ``two steps \ldots\ totally different. The technology, the ideas are totally different.'' The steps are Lemma~\ref{lem:compact-embeds} and Lemmas~\ref{lem:projection-injective}--\ref{lem:projection-immersion}; the immersion lemma was a homework problem, Assignment~6, Problem~4, filled in above.)}
 
 \emph{Step 1: some Euclidean space.} By Lemma~\ref{lem:compact-embeds} there is an embedding $M \to \mathbb{R}^N$ for some $N$. Its image is a regular submanifold diffeomorphic to $M$ (Theorem~\ref{thm:embedding-image}); replace $M$ by it.
 
 \emph{Step 2: one dimension less.} Suppose $N > 2m + 1$. By Lemmas~\ref{lem:projection-injective} and~\ref{lem:projection-immersion}, the lines $\ell$ that lie in $\mathbb{R}^{N-1}$, or for which $\pi_\ell$ is not injective, or not an immersion, form the union of two sets of measure zero in $\mathbb{RP}^{N-1}$, which has measure zero (Proposition~\ref{prop:measure-zero-every-chart}). A set of measure zero contains no nonempty open set (Lemma~\ref{lem:measure-zero-basic}(4), in a chart), so it is not all of $\mathbb{RP}^{N-1}$: choose $\ell$ outside it. Then $\pi_\ell : M \to \mathbb{R}^{N-1}$ is an injective immersion of a compact manifold, hence an embedding (Corollary~\ref{cor:compact-embedding}), and its image is a regular submanifold of $\mathbb{R}^{N-1}$ diffeomorphic to $M$.
 
-\emph{Step 3: repeat.} Apply Step~2 while $N > 2m + 1$, lowering $N$ by one each time, ``until we're out of parameters'': this ends with an embedding $M \to \mathbb{R}^{2m+1}$. The immersion into $\mathbb{R}^{2m}$ is part of the same homework, and is likewise to be filled.
+\emph{Step 3: repeat.} Apply Step~2 while $N > 2m + 1$, lowering $N$ by one each time, ``until we're out of parameters'': this ends with an embedding $M \to \mathbb{R}^{2m+1}$.
+
+\emph{Step 4: the immersion.} \textit{(Assignment~6, Problem~4; the submitted solution's reduction.)} Now $M \subseteq \mathbb{R}^{2m+1}$, and $N = 2m + 1 > 2m$, so Lemma~\ref{lem:projection-immersion} gives a line $\ell \not\subseteq \mathbb{R}^{2m}$ with $\pi_\ell : M \to \mathbb{R}^{2m}$ an immersion. For the original manifold, compose with the diffeomorphism $\iota$ from $M$ onto its image in $\mathbb{R}^{2m+1}$: if $F'$ is an immersion of $\iota(M)$, then so is $F' \circ \iota$, since by the chain rule $d(F' \circ \iota)_x = dF'_{\iota(x)} \circ d\iota_x$, where $d\iota_x$ is an isomorphism onto $T_{\iota(x)}\iota(M)$ and $dF'_{\iota(x)}$ is injective on $T_{\iota(x)}\iota(M)$. ``One more projection'': where the embedding stops at $2m + 1$, the immersion goes one dimension further.
 \end{proof}
 
 % ============================================================================
@@ -28300,6 +29000,35 @@ In the ``hard'' version the dimensions are one less: an embedding into $\mathbb{
 \textit{(Lecture~22 sketched the noncompact case; the rest is assigned reading.)} For $M$ compact this is Theorem~\ref{thm:whitney-compact}. In general, take an exhaustion function $f$ (Proposition~\ref{prop:exhaustion-exists}) and slice $M$ into the compact pieces $E_i$ above. Each $E_i$, a compact manifold with boundary, embeds in $\mathbb{R}^{2m+1}$ by the method of Theorem~\ref{thm:whitney-compact} (manifolds with boundary are not treated in these notes), and the cutoffs $\rho_i$ come from partitions of unity (Theorem~\ref{thm:partition-of-unity}, \ref{sec:partitions-of-unity}); Proposition~\ref{prop:noncompact-embedding} then gives a proper embedding $M \to \mathbb{R}^{2(2m+1)+1}$. Lowering the dimension to $2m + 1$ needs projections that stay proper: squeeze the image into a tube, ball $\times\ \mathbb{R}$, and project as in Lemmas~\ref{lem:projection-injective}--\ref{lem:projection-immersion} (Lee, Lemma~6.14 and Theorem~6.15). The immersion into $\mathbb{R}^{2m}$ is Lee, Theorem~6.18; in the compact case it is part of the homework.
 \end{proof}
 
+\begin{propbox}[Immersions into $\mathbb{R}^{2m}$ from Any Embedding]\thmlabel{prop:immersion-from-embedding}
+Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, with $N \ge 2m$. Then there is a linear surjection $L : \mathbb{R}^N \to \mathbb{R}^{2m}$ such that $L|_M : M \to \mathbb{R}^{2m}$ is an immersion. In particular, every manifold that embeds in some $\mathbb{R}^N$ immerses in $\mathbb{R}^{2m}$.
+\leeref{Theorem 6.18}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from the assignment. Assignment~6, Problem~4, allows ``that $M$ can be embedded in some $\mathbb{R}^N$''; the submitted solution starts instead from an embedding in $\mathbb{R}^{2m+1}$, which the course proves for compact $M$ (Theorem~\ref{thm:whitney-compact}) and sketches in general (Theorem~\ref{thm:whitney}). This proof needs only some $\mathbb{R}^N$: Lemma~\ref{lem:projection-immersion} is repeated, keeping the unit tangent bundle of the original $M$, because after one projection the image of $M$ is only immersed, not a submanifold.)} Tangent spaces are geometric, $T_xM \subseteq \mathbb{R}^N$, and $UM \subseteq \mathbb{R}^{2N}$ is the unit tangent bundle, of dimension $2m - 1$ (Proposition~\ref{prop:unit-tangent-bundle}).
+
+\emph{The claim, by descending induction on $k$.} For $k = N, N - 1, \ldots, 2m$ there is a linear surjection $L_k : \mathbb{R}^N \to \mathbb{R}^k$ with $\ker L_k \cap T_xM = \{0\}$ for every $x \in M$. For $k = N$ take $L_N = \mathrm{id}$.
+
+\emph{The step.} Suppose $L_k$ is found and $k > 2m$. Since $L_k$ is injective on each $T_xM$, $L_ku \neq 0$ for $(x, u) \in UM$, and
+\[
+G_k : UM \to \mathbb{RP}^{k-1}, \qquad G_k(x, u) = [L_ku],
+\]
+is smooth: it is $(x, u) \mapsto L_ku \in \mathbb{R}^k \setminus \{0\}$, smooth as the restriction of a linear map (Lemma~\ref{lem:maps-into-submanifold}(1)), followed by the quotient map, smooth as in Lemma~\ref{lem:projection-immersion-criterion}. As $\dim UM = 2m - 1 < k - 1$, $G_k(UM)$ has measure zero (Corollary~\ref{cor:sard-low-dim}); with Lemma~\ref{lem:hyperplane-lines} (in $\mathbb{RP}^{k-1}$) there is a line $\ell \subseteq \mathbb{R}^k$, $\ell \not\subseteq \mathbb{R}^{k-1}$, $\ell \notin G_k(UM)$, as in the proof of Lemma~\ref{lem:projection-immersion}. Put $L_{k-1} = \pi_\ell \circ L_k : \mathbb{R}^N \to \mathbb{R}^{k-1}$, a composite of linear surjections. If $u \in T_xM$, $u \neq 0$, had $L_{k-1}u = 0$, then $L_ku \in \ker \pi_\ell = \ell$ with $L_ku \neq 0$, so $\ell = [L_ku] = G_k(x, u/|u|)$, contrary to the choice of $\ell$. So $\ker L_{k-1} \cap T_xM = \{0\}$.
+
+\emph{Conclusion.} With $L = L_{2m}$: $L|_M = L \circ \iota$ has differential $d(L|_M)_x = L|_{T_xM}$ (the differential of a linear map is the map itself, as in Lemma~\ref{lem:projection-immersion-criterion}), injective for every $x$. So $L|_M$ is an immersion. For the last sentence, an embedding $M \to \mathbb{R}^N$ is a diffeomorphism onto a regular submanifold (Theorem~\ref{thm:embedding-image}, Corollary~\ref{cor:embedding-diffeo}), and an immersion composed with a diffeomorphism is an immersion, by the chain rule.
+\end{proof}
+
+This proves the immersion half of Theorem~\ref{thm:whitney} (Lee, Theorem~6.18) from an embedding into any Euclidean space, without the dimension $2m + 1$ of the embedding half; for compact $M$, Lemma~\ref{lem:compact-embeds} supplies the embedding.
+
+\begin{corbox}[Every Manifold Has a Morse Function]\thmlabel{cor:morse-exists}
+Every smooth manifold $M$ admits a Morse function (Definition~\ref{def:morse-function}). If $M$ is compact, nonempty and of dimension $m \ge 1$, such a function has finitely many critical points, and at least two.
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from the assignment; Assignment~6, Problem~5, with the Whitney embedding theorem.)} By Theorem~\ref{thm:whitney} there is an embedding $\Phi : M \to \mathbb{R}^N$ ($N = 2m + 1$); its image $M' = \Phi(M)$ is a regular submanifold and $\Phi : M \to M'$ is a diffeomorphism (Theorem~\ref{thm:embedding-image}, Corollary~\ref{cor:embedding-diffeo}). By Corollary~\ref{cor:height-morse} there is $\mathbf{a}$ with $f_{\mathbf{a}} : M' \to \mathbb{R}$ Morse. Then $f = f_{\mathbf{a}} \circ \Phi$ is Morse: for a chart $(U, \psi)$ of $M'$, $(\Phi^{-1}(U), \psi \circ \Phi)$ is a chart of $M$ ($\psi \circ \Phi$ is a diffeomorphism onto the open set $\psi(U)$, Lemma~\ref{lem:diffeo-chart}), in which $f$ has the same coordinate representation $f \circ (\psi \circ \Phi)^{-1} = f_{\mathbf{a}} \circ \psi^{-1}$ as $f_{\mathbf{a}}$ in $\psi$; so $p$ is a critical point of $f$ exactly when $\Phi(p)$ is one of $f_{\mathbf{a}}$, with the same Hessian matrices (Definition~\ref{def:hessian-matrix}). If $M$ is compact, the critical points of a Morse function are finite in number (Corollary~\ref{cor:morse-compact}); $f$ attains a maximum and a minimum, both critical points, and they are distinct unless $f$ is constant, which a Morse function on a manifold of dimension $m \ge 1$ is not (every point would be critical, and critical points of a Morse function are isolated, Corollary~\ref{cor:morse-isolated}).
+\end{proof}
+
 
 % ============================================================================
 % SECTION: PARTITIONS OF UNITY (Lecture 22, Mon Oct 26, 2026)
@@ -29770,7 +30499,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:rvt-manifolds}\ The regular value theorem for manifolds & Chapter 5 (Corollary 5.14, Proposition 5.38) \\
 \ref{sec:transversality-submanifolds}\ Transversality and Lagrange multipliers & Chapter 6, \emph{Transversality} (Theorem 6.30) \\
 \ref{sec:fibrations}\ Fibrations & smooth fiber bundles (Chapter 10); Chapter 10 (sections); Ehresmann's theorem is not in Lee \\
-\ref{sec:normal-bundle}\ The normal bundle of a submanifold of Euclidean space & Chapter 6, \emph{Tubular Neighborhoods} (the normal bundle $NM \subseteq \mathbb{R}^n \times \mathbb{R}^n$ and the map $E(x, v) = x + v$); focal points are not in Lee (Milnor, \emph{Morse Theory}, \S6) \\
+\ref{sec:normal-bundle}\ The normal bundle of a submanifold of Euclidean space & Chapter 6, \emph{Tubular Neighborhoods} (the normal bundle $NM \subseteq \mathbb{R}^n \times \mathbb{R}^n$ and the map $E(x, v) = x + v$); focal points are not in Lee (Milnor, \emph{Morse Theory}, \S6); the tangent and unit tangent bundles, Problem 5-6 and Proposition 3.18 \\
 \ref{sec:immersions}\ Immersions & Chapter 4, \emph{Immersions} (Theorem 4.12); Example 4.19 \\
 \ref{sec:embeddings}\ Embeddings & Chapter 4, \emph{Embeddings} (Proposition 4.22, Example 4.20); Proposition 5.2; Theorem A.57; Proposition 1.12 \\
 \ref{sec:geometric-abstract}\ Geometric and abstract manifolds (comparison) & Chapters 1, 3 and 5 (overview); Theorem 6.15 (Whitney embedding) \\
@@ -29781,12 +30510,12 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:d-operator}\ One-forms, the operator $d$, pullbacks & Chapter 11, \emph{Covector Fields} (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) \\
 \ref{sec:fields}\ Vector fields & Chapter 8 (Propositions 8.1, 8.14 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) \\
 \ref{sec:lie-bracket}\ Lie bracket and Lie algebra; related fields & Chapter 8, \emph{Lie Brackets} and \emph{Lie Algebras} (Lemma 8.25, Propositions 8.26 and 8.28); \emph{Vector Fields and Smooth Maps} (Propositions 8.16 and 8.19, Corollary 8.21); Proposition 8.30, Corollary 8.31 \\
-\ref{sec:lie-groups}\ Lie groups and left-invariant vector fields & Chapter 7 (Examples 7.3, 7.27--7.30); Chapter 8, \emph{Lie Algebras} (Proposition 8.33, Theorem 8.37) \\
+\ref{sec:lie-groups}\ Lie groups and left-invariant vector fields & Chapter 7 (Examples 7.3, 7.27--7.30); Problem 7-2; Chapter 8, \emph{Lie Algebras} (Proposition 8.33, Theorem 8.37) \\
 \ref{sec:lie-morphisms}\ Lie group morphisms and linear groups & Chapter 7, \emph{Lie Group Homomorphisms}; Chapter 8, \emph{Induced Lie Algebra Homomorphisms} (Theorem 8.44, Proposition 8.41, Theorem 8.46) \\
 \ref{sec:measure-zero}\ Sets of measure zero & Chapter 6, \emph{Sets of Measure Zero} (Lemma 6.2, Proposition 6.5, Lemma 6.6); Appendix C (Proposition C.18, Corollary C.25) \\
 \ref{sec:sard}\ Sard's theorem & Chapter 6, \emph{Sard's Theorem} (Theorem 6.10, Corollary 6.11) \\
 \ref{sec:parametric-transversality}\ Parametric transversality & Chapter 6, \emph{The Transversality Homotopy Theorem} (Theorem 6.35) \\
-\ref{sec:whitney}\ The Whitney embedding theorem & Chapter 6, \emph{The Whitney Embedding Theorem} (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20--2.22 (bump functions); Proposition 2.28 (exhaustion functions) \\
+\ref{sec:whitney}\ The Whitney embedding theorem & Chapter 6, \emph{The Whitney Embedding Theorem} (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Problem 6-2; Proposition 2.25 and Lemmas 2.20--2.22 (bump functions); Proposition 2.28 (exhaustion functions) \\
 \ref{sec:partitions-of-unity}\ Partitions of unity & Chapter 2, \emph{Partitions of Unity} (Lemmas 2.20--2.22, Theorem 2.23); Chapter 1, \emph{Paracompactness} (Theorem 1.15); Proposition A.60; Chapter 2, \emph{Applications of Partitions of Unity} (Proposition 2.28) \\
 \ref{sec:integral-curves}\ Integral curves & Chapter 9, \emph{Integral Curves} ((9.1), Lemmas 9.3 and 9.4, Proposition 9.6) \\
 \ref{sec:ode-existence}\ Local existence and uniqueness & Chapter 9, \emph{Integral Curves} (Example 9.1, Proposition 9.2); \emph{Flows} (uniqueness, in the proof of Theorem 9.12); Appendix D (Theorem D.1); Problem 9-1 \\
@@ -29875,6 +30604,7 @@ Corollary 5.30 & Lem.~\ref{lem:maps-into-submanifold} \\
 Proposition 5.35 & Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.37 & Def.~\ref{def:geometric-tangent}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.38 & Thm.~\ref{thm:tangent-kernel}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Thm.~\ref{thm:rvt-manifolds} \\
+Problem 5-6 & Def.~\ref{def:geo-tangent-bundle}, Prop.~\ref{prop:geo-tangent-bundle-submanifold}, Def.~\ref{def:unit-tangent-bundle}, Prop.~\ref{prop:unit-tangent-bundle} \\
 Proposition 6.1 & Lem.~\ref{lem:measure-zero-basic} \\
 Lemma 6.2 & Lem.~\ref{lem:fubini-measure-zero} \\
 Proposition 6.5 & Lem.~\ref{lem:smooth-measure-zero} \\
@@ -29882,17 +30612,19 @@ Lemma 6.6 & Def.~\ref{def:measure-zero-manifold}, Prop.~\ref{prop:measure-zero-e
 Lemma 6.7 & Prop.~\ref{prop:measure-zero-every-chart} \\
 Theorem 6.10 & Lem.~\ref{lem:sard-reduction}, Lem.~\ref{lem:sard-flat-points}, Thm.~\ref{thm:sard} \\
 Corollary 6.11 & Cor.~\ref{cor:sard-low-dim} \\
-Lemma 6.13 & Lem.~\ref{lem:projection-injective}, Lem.~\ref{lem:projection-immersion} \\
+Lemma 6.13 & Lem.~\ref{lem:hyperplane-lines}, Lem.~\ref{lem:projection-injective}, Lem.~\ref{lem:projection-immersion-criterion}, Lem.~\ref{lem:projection-immersion} \\
 Theorem 6.15 & Lem.~\ref{lem:compact-embeds}, Thm.~\ref{thm:whitney-compact}, Prop.~\ref{prop:noncompact-embedding}, Thm.~\ref{thm:whitney} \\
-Theorem 6.18 & Thm.~\ref{thm:whitney-compact}, Thm.~\ref{thm:whitney} \\
+Theorem 6.18 & Thm.~\ref{thm:whitney-compact}, Thm.~\ref{thm:whitney}, Prop.~\ref{prop:immersion-from-embedding} \\
 Theorem 6.30 & Thm.~\ref{thm:transverse-preimage}, Def.~\ref{def:transverse-intersection}, Prop.~\ref{prop:transverse-intersection}, Thm.~\ref{thm:transverse-submanifold-preimage}, Cor.~\ref{cor:transverse-special-cases}, Thm.~\ref{thm:transverse-intersection-manifold} \\
 Theorem 6.35 & Thm.~\ref{thm:parametric-transversality}, Cor.~\ref{cor:parametric-sard} \\
+Problem 6-2 & Lem.~\ref{lem:projection-immersion-criterion}, Lem.~\ref{lem:projection-immersion}, Thm.~\ref{thm:whitney-compact} \\
 Example 7.3 & Prop.~\ref{prop:GL-topgroup}, Prop.~\ref{prop:classical-lie-groups} \\
 Proposition 7.26 & Def.~\ref{def:orbit-map} \\
 Example 7.27 & Prop.~\ref{prop:orth-equiv}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:On-smooth}, Cor.~\ref{cor:On-consequences}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
 Example 7.28 & Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
 Example 7.29 & Def.~\ref{def:complex-groups}, Def.~\ref{def:unitary-group}, Thm.~\ref{thm:classical-manifolds}, Ex.~\ref{ex:Un-smooth}, Cor.~\ref{cor:Un-compact}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
 Example 7.30 & Def.~\ref{def:complex-groups}, Def.~\ref{def:unitary-group}, Thm.~\ref{thm:classical-manifolds}, Thm.~\ref{thm:classical-summary}, Prop.~\ref{prop:classical-lie-groups} \\
+Problem 7-2 & Prop.~\ref{prop:dmu-identity}, Prop.~\ref{prop:dinv-identity} \\
 Problem 7-4 & Prop.~\ref{prop:jacobi}, Cor.~\ref{cor:jacobi-gradient} \\
 Problem 7-22 & Def.~\ref{def:quaternions} \\
 Proposition 8.1 & Prop.~\ref{prop:vf-coords} \\

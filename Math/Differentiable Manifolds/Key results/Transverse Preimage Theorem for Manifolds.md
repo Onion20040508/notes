@@ -39,6 +39,7 @@ tags: [differentiable-manifolds, hub]
 - [[§39 Transversality and Lagrange Multipliers#^cor-39-3|Corollary §39.3: Special Cases of Transversality]]
 - [[§55 Morse Functions and the Zero Section#^cor-55-8|Corollary §55.8: Critical Points of a Morse Function Are Isolated]]
 - [[§64 Parametric Transversality#^thm-64-1|Theorem §64.1: Parametric Transversality]]
+- [[§64 Parametric Transversality#^prop-64-5|Proposition §64.5: The Gradient Family Is Transverse to the Zero Section]]
 
 ## Connections
 - TODO

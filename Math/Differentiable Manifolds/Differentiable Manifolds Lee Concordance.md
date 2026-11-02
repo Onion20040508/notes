@@ -26,7 +26,7 @@ These notes follow the course, and Lee's *Introduction to Smooth Manifolds* (2nd
 | $\Gamma = \{(x, g \cdot x)\}$, the orbit relation | $\mathcal{O} = \{(g \cdot p, p)\}$ | The same set with the factors swapped (proof of Lee, Proposition 21.4). |
 | $H_{x_0}$, the isotropy group | $G_p$ | Definition [[§14 Homogeneous Spaces#^def-14-3\|§14.3]]. |
 | $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$ | $F : G/G_p \to M$ | Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3\|§15.3]]; Lee, Theorem 21.18. |
-| $\mathfrak{g} = T^{\mathrm{geo}}_I G$; from [[§60 Lie Groups and Left-Invariant Vector Fields\|§60]], the left-invariant fields | $\mathrm{Lie}(G) \cong T_eG$ | Before [[§60 Lie Groups and Left-Invariant Vector Fields\|§60]] the notes' $\mathfrak{g}$ is the geometric tangent space at $I$; from Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4\|§60.4]] it is Lee's $\mathrm{Lie}(G)$, identified with $T_eG$ by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7\|§60.7]]. |
+| $\mathfrak{g} = T^{\mathrm{geo}}_I G$; from [[§60 Lie Groups and Left-Invariant Vector Fields\|§60]], the left-invariant fields | $\mathrm{Lie}(G) \cong T_eG$ | Before [[§60 Lie Groups and Left-Invariant Vector Fields\|§60]] the notes' $\mathfrak{g}$ is the geometric tangent space at $I$; from Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4\|§60.4]] it is Lee's $\mathrm{Lie}(G)$, identified with $T_eG$ by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9\|§60.9]]. |
 | $\varphi_t(q) = \varphi^q(t) = \varphi(t, q)$ (Lectures 23–24: $\varphi_q(t)$); $\dot c(t)$ | $\theta_t(p) = \theta^{(p)}(t) = \theta(t, p)$; $\gamma'(t)$ | The flow and its integral curves (Definition [[§68 Local Existence and Uniqueness#^def-68-1\|§68.1]]); the subscript is a time for $\varphi_t$, a point for $\varphi_q$. |
 | $\widetilde{\mathbb{R}}$: the chart $\sqrt[3]{x}$ | Example 1.23: the chart $x^3$ | Two different non-standard structures — the transition map between them is $y \mapsto y^9$ — both diffeomorphic to $\mathbb{R}$ (Corollary [[§19 Smooth Functions and Smooth Maps#^cor-19-9\|§19.9]]). |
 
@@ -132,7 +132,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem 2.23 | [[§66 Partitions of Unity#^thm-66-1\|Thm. §66.1]] |
 | Proposition 2.25 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]], [[§56 Vector Fields#^prop-56-4\|Prop. §56.4]] |
 | Lemma 2.26 | [[§56 Vector Fields#^cor-56-5\|Cor. §56.5]] |
-| Proposition 2.28 | [[§65 The Whitney Embedding Theorem#^prop-65-5\|Prop. §65.5]], [[§66 Partitions of Unity#^lem-66-6\|Lem. §66.6]] |
+| Proposition 2.28 | [[§65 The Whitney Embedding Theorem#^prop-65-7\|Prop. §65.7]], [[§66 Partitions of Unity#^lem-66-6\|Lem. §66.6]] |
 | Lemma 3.1 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-2\|Lem. §28.2]] |
 | Proposition 3.2 | [[§25 The Geometric Tangent Space#^def-25-4\|Def. §25.4]], [[§25 The Geometric Tangent Space#^prop-25-9\|Prop. §25.9]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3\|Lem. §29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5\|Cor. §29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]] |
 | Corollary 3.3 | [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5\|Cor. §29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]] |
@@ -173,9 +173,9 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Exercise 6.7 | [[§62 Sets of Measure Zero#^prop-62-4\|Prop. §62.4]] |
 | Theorem 6.10 | [[§63 Sard's Theorem#^thm-63-3\|Thm. §63.3]] |
 | Corollary 6.11 | [[§63 Sard's Theorem#^cor-63-4\|Cor. §63.4]] |
-| Lemma 6.13 | [[§65 The Whitney Embedding Theorem#^lem-65-2\|Lem. §65.2]], [[§65 The Whitney Embedding Theorem#^lem-65-3\|Lem. §65.3]] |
-| Theorem 6.15 | [[§65 The Whitney Embedding Theorem#^lem-65-1\|Lem. §65.1]], [[§65 The Whitney Embedding Theorem#^thm-65-4\|Thm. §65.4]], [[§65 The Whitney Embedding Theorem#^prop-65-6\|Prop. §65.6]], [[§65 The Whitney Embedding Theorem#^thm-65-7\|Thm. §65.7]] |
-| Theorem 6.18 | [[§65 The Whitney Embedding Theorem#^thm-65-4\|Thm. §65.4]], [[§65 The Whitney Embedding Theorem#^thm-65-7\|Thm. §65.7]] |
+| Lemma 6.13 | [[§65 The Whitney Embedding Theorem#^lem-65-3\|Lem. §65.3]], [[§65 The Whitney Embedding Theorem#^lem-65-5\|Lem. §65.5]] |
+| Theorem 6.15 | [[§65 The Whitney Embedding Theorem#^lem-65-1\|Lem. §65.1]], [[§65 The Whitney Embedding Theorem#^thm-65-6\|Thm. §65.6]], [[§65 The Whitney Embedding Theorem#^prop-65-8\|Prop. §65.8]], [[§65 The Whitney Embedding Theorem#^thm-65-9\|Thm. §65.9]] |
+| Theorem 6.18 | [[§65 The Whitney Embedding Theorem#^thm-65-6\|Thm. §65.6]], [[§65 The Whitney Embedding Theorem#^thm-65-9\|Thm. §65.9]] |
 | Theorem 6.35 | [[§64 Parametric Transversality#^thm-64-1\|Thm. §64.1]], [[§64 Parametric Transversality#^cor-64-2\|Cor. §64.2]] |
 | Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]] |
 | Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
@@ -198,8 +198,8 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 8.30 | [[§59 Related Vector Fields#^prop-59-3\|Prop. §59.3]] |
 | Corollary 8.31 | [[§59 Related Vector Fields#^cor-59-4\|Cor. §59.4]] |
 | Corollary 8.32 | [[§59 Related Vector Fields#^prop-59-6\|Prop. §59.6]] |
-| Proposition 8.33 | [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-4\|Cor. §60.4]] |
-| Theorem 8.37 | [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5\|Def. §60.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5\|Lem. §60.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-6\|Prop. §60.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-7\|Thm. §60.7]] |
+| Proposition 8.33 | [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-6\|Cor. §60.6]] |
+| Theorem 8.37 | [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5\|Def. §60.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7\|Lem. §60.7]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8\|Prop. §60.8]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9\|Thm. §60.9]] |
 | Proposition 8.41 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3\|Thm. §61.3]] |
 | Theorem 8.44 | [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1\|Lem. §61.1]], [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2\|Prop. §61.2]] |
 | Theorem 8.46 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3\|Thm. §61.3]] |

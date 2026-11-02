@@ -25,6 +25,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§64 Parametric Transversality#^cor-64-2|Corollary §64.2: Almost Every Member Is Transverse]]
+- [[§64 Parametric Transversality#^cor-64-8|Corollary §64.8: Almost Every Height Function Is Morse]]
 
 ## Connections
 - TODO
