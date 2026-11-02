@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]] (and of the complex field's Hamiltonian, [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]]). Lecture 10 turns here to the spectrum. The single-particle Hamiltonian ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]]) has eigenvalues $-E_{\mathbf p}$ as well as $+E_{\mathbf p}$; the field Hamiltonian in modes inherits a minus sign on the antiparticle oscillators, with the operators in the "wrong" order; and reordering with the anticommutators turns the sign into a plus, at the price of a negative zero-point energy. The second of Lecture 10's checkpoints, where commutators would leave the energy unbounded below, sits between the unreordered and the reordered Hamiltonian. Conventions as in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].
 
+**Setup.** The free Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) with the mode expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]. Theorem §C5b.3.1 is a single-particle statement about c-number plane waves; Theorems §C5b.3.2–§C5b.3.3 come before the quantization rule is fixed (Theorem §C5b.3.3 assumes commutators, to reject them). From Principle §C5b.3.4 on: anticommutators ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]]), the fermionic Fock space and the free vacuum $|0\rangle$, annihilated by every $\hat a^s_{\mathbf p}$ and $\hat b^s_{\mathbf p}$. Exact, except that the zero-point constant (Theorem §C5b.3.6) is finite only in a box with a cutoff.
+
 ## The single-particle Hamiltonian and its negative energies
 
 The derivation below uses the Clifford relation of the Dirac matrices, $(\gamma^0)^2 = 1$:
@@ -27,6 +29,8 @@ The derivation below uses the Clifford relation of the Dirac matrices, $(\gamma^
 > $$
 >
 > In momentum space $H_{\text{s.p.}}(\mathbf p)u^s(p) = E_{\mathbf p}u^s(p)$ and $H_{\text{s.p.}}(\mathbf p)v^s(\tilde p) = -E_{\mathbf p}v^s(\tilde p)$: the eigenvalues of $H_{\text{s.p.}}(\mathbf p)$ are $\pm E_{\mathbf p}$, each twice.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] ($H_{\text{s.p.}}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]]); *applies:* single-particle: c-number plane waves, on shell, exact; the eigenvalue $-E_{\mathbf p}$ is not an energy of the quantized field ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]).
 >
 > *Source: Lecture 10, slides 16–17 · the user's PHY 513 notes, Ch. 10 §10.5 (Derivation "Its eigenstates: energy $+E_{\mathbf p}$ and $-E_{\mathbf p}$") · PS §3.5, p. 53*
 
@@ -72,6 +76,9 @@ The derivation below uses the Clifford relation of the Dirac matrices, $(\gamma^
 > independent of time. The terms that change the number of quanta ($\hat a^\dagger \hat b^\dagger$, $ba$) vanish identically.
 >
 > *Scalar analogue:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]]; complex field [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact, an identity of the mode expansion that uses no (anti)commutation relation.
+>
 > *Source: Lecture 10, slides 18–19 · the user's PHY 513 notes, Ch. 10 §10.5, eq. (diracHwrong) · Yu §5.4.3, eq. (5.223) · PS §3.5, eq. (3.90) (in their provisional labelling) · the user's pre-course notes, §5.5*
 
 ^thm-c5b-3-2
@@ -164,6 +171,8 @@ The second checkpoint: with commutators the minus sign of Theorem §C5b.3.2 cann
 >
 > Either way there is no Hilbert space with positive norm on which $\hat H$ is bounded below: the Dirac field cannot be quantized with commutators.
 >
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] quantized with commutators, the rule that is rejected; *applies:* free field, any Hilbert space with positive norm, exact.
+>
 > *Source: Lecture 10, slide 6 ("Hamiltonian not positive definite") and transcript · the user's PHY 513 notes, Ch. 10 §10.1 (Caution "The provisional quantization …") and after eq. (diracH) · PS §3.5, p. 54 (after eq. (3.90)) · Yu §5.5.1, after eq. (5.237), and Exercise 5.10 as worked in the user's pre-course notes, §5.5 · the user's pre-course notes, §5.5 ("The disease is sharper than a naive reading suggests")*
 
 ^thm-c5b-3-3
@@ -206,6 +215,9 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 > *Domain:* the free Dirac field. That the annihilators are $\hat b$ and not $\hat b^\dagger$ is fixed by positivity of the energy ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^rem-c5b-3-4|§C5b.3, Remark: Empty and filled are labels]]), not by the expansion; irreducibility is asserted, as for the scalar ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]).
 >
 > *Scalar analogue:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* as in its *Domain*, exact; with interactions $|0\rangle$ is not the ground state ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
+>
 > *Source: Lecture 10, slides 20–21 · the user's PHY 513 notes, Ch. 10 §10.6 · PS §3.5, eq. (3.103) · Yu §5.5.4, eqs. (5.268)–(5.269) · the user's pre-course notes, §5.5*
 
 ^pr-c5b-3-4
@@ -214,6 +226,8 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 
 > [!definition] Definition §C5b.3.1: Normal Ordering of Fermion Operators
 > The **normal-ordered** product $:\!X\!:$ of creation and annihilation operators places all creation operators to the left of all annihilation operators, with a factor $-1$ for every exchange of two fermion operators made in the rearrangement; bosonic operators are moved without sign as in [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]. For example $:\!\hat b^r_{\mathbf p}\hat b^{s\dagger}_{\mathbf q}\!: = -\hat b^{s\dagger}_{\mathbf q}\hat b^r_{\mathbf p}$ and $:\!\hat\psi^\dagger_a\hat\psi_b\!:$ is extended linearly through the mode expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]]. Then $\langle0|:\!X\!:|0\rangle = 0$ for the vacuum of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|Principle §C5b.3.4]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* any products of free creation and annihilation operators, in any state; vacuum values of normal-ordered products vanish in $|0\rangle$ only.
 >
 > *Source: the user's PHY 513 notes, Ch. 10 §10.5 ("Normal ordering of fermion operators puts annihilators to the right *with* the sign of the reordering") · Lecture 10 (transcript: "so that is the normal ordering part") · PS §3.5, after eq. (3.104) ("the infinite constant term that comes from anticommuting $\hat b$ and $\hat b^\dagger$"), §4.7 (sign rule, cited) · Yu §6.3 (fermionic normal products, cited)*
 
@@ -229,6 +243,9 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 > with the normal ordering of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]] and the constant $E_0^{(\rm D)}$ of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-6|Theorem §C5b.3.6]]. Both species contribute positive energy $E_{\mathbf p}$ per quantum; $:\!\hat H\!:|0\rangle = 0$.
 >
 > *Scalar analogue:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]] with [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, anticommutators, exact; $:\!\hat H\!:$ is $\ge 0$ on the Fock space over the free vacuum $|0\rangle$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|Principle §C5b.3.4]]).
+>
 > *Source: Lecture 10, slides 19 and 23 · the user's PHY 513 notes, Ch. 10 §10.5, eq. (diracH), and §10.7 · PS §3.5, eq. (3.104) · Yu §5.5.2, eq. (5.247) · the user's pre-course notes, §5.5, eq. (dirac-H)*
 
 ^thm-c5b-3-5
@@ -271,6 +288,9 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 > with $E_0$ the real scalar's zero-point energy of the same mass ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]): $-\frac12E_{\mathbf p}$ for each of the four modes per momentum (two spins, two species), where each bosonic mode gave $+\frac12E_{\mathbf p}$. In a box with cutoff, $E_0^{(\rm D)}(V, \Lambda) = -2\sum_{|\mathbf k|<\Lambda}E_{\mathbf k}$, energy density $\approx -\Lambda^4/4\pi^2$ for $\Lambda \gg m$.
 >
 > *Scalar analogue:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$; a formal constant in infinite volume, finite in a periodic box with a cutoff, as stated.
+>
 > *Source: the user's PHY 513 notes, Ch. 10 §10.5 ("The constant": "$-\frac12E_{\mathbf p}$ for each of the four fermionic oscillators per momentum") · Lecture 10 (transcript) · the user's pre-course notes, §5.5 (Remark "The fermionic zero-point energy is negative") · Yu §5.5.2, eq. (5.247), §5.5.4, eq. (5.269) · PS §3.5, after eq. (3.104)*
 
 ^thm-c5b-3-6
@@ -323,6 +343,9 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 > with no constant and no ordering choice: fermions and antifermions of label $\mathbf p$ both carry momentum $\mathbf p$.
 >
 > *Scalar analogue:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact, no ordering constant.
+>
 > *Source: PS §3.5, eq. (3.105) · Yu §5.5.2, eqs. (5.257)–(5.258) · not computed in Lecture 10 (slide 20 states that the one-particle states carry momentum $\mathbf p$)*
 
 ^thm-c5b-3-7
@@ -357,6 +380,9 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 > and the adjoint relations for $\hat a$, $\hat b$ with the opposite signs: Hamiltonian and momentum are bilinear, so commutators with them are ordinary commutators although the fields anticommute. Exactly as for bosons, $\hat a^\dagger$ and $\hat b^\dagger$ add energy $E_{\mathbf p}$ and $\hat a$, $\hat b$ remove it. The charge: [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]].
 >
 > *Scalar analogue:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact, operator identities in any state.
+>
 > *Source: the user's PHY 513 notes, Ch. 10 §10.6 (Derivation "The oscillators raise and lower the energy") · Yu §5.5.2, eqs. (5.248)–(5.251) · the user's pre-course notes, §5.5 ("the mixed identity converts the anticommutators into the needed commutators")*
 
 ^thm-c5b-3-8

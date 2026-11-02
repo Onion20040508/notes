@@ -15,6 +15,8 @@ tags: [quantum-field-theory, level-c, draft]
 
 This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The quantized Dirac field of [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]–[[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]] was written with the time-dependent exponentials $e^{\mp ip\cdot x}$ of the classical solutions; here the time dependence is derived from the quantum Hamiltonian, the Heisenberg equation is shown to be the Dirac equation, and the field is split into its positive- and negative-frequency parts, whose matrix elements are the one-particle wave functions. The two-point functions of [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality|§C5b.7]] are built from this field. Conventions as in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]; the Heisenberg field of a spinor is defined componentwise as in [[§C2b.1 Heisenberg Fields#^def-c2b-1-1|Def. §C2b.1.1]], $\hat\psi_a(t, \mathbf x) = e^{i\hat Ht}\hat\psi_a(\mathbf x)e^{-i\hat Ht}$.
 
+**Setup.** The free Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) with anticommutators and the free Hamiltonian $\hat H = \int\hat\psi^\dagger H_{\text{s.p.}}\hat\psi$; Heisenberg fields of this free $\hat H$, states in the Fock space over the free vacuum $|0\rangle$; exact. For an interacting theory the Heisenberg field is not this expansion ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-2|§C2b.1, Caution: With interactions, the Heisenberg field is not the free mode expansion]]).
+
 ## Time dependence
 
 > [!theorem] Theorem §C5b.6.1: Time Dependence of the Modes; the Covariant Mode Expansion
@@ -56,6 +58,9 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 > $$
 >
 > *Scalar analogue:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact, an operator equation in any state.
+>
 > *Source: computed here (the fermionic version of PS §2.4, eqs. (2.44)–(2.45)) · the user's PHY 513 notes, Ch. 10 §10.3 ("The quantum field satisfies the Dirac equation")*
 
 ^thm-c5b-6-2

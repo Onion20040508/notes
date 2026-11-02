@@ -322,6 +322,8 @@ and the plane waves meeting at a vertex integrate to a delta function:
 The examples of Problem Set 8 are already worked: the oriented tadpole, fish and sunset in [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-7|Example §C6a.9.7]] (with [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]), and the cubic–quartic scattering diagrams in [[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-4|Example §C6b.2.4]] and [[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-5|Example §C6b.2.5]]. The two below are correlation functions not computed there.
 
 > [!example] Example §C6a.12.1: The Cubic–Quartic Two-Point Function at Order g²
+> ![[ph-qft-c6a-12-2.svg]]
+>
 > In [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]], with $D_{ab} \equiv D_F(a - b)$ and the vertices at $z_1$, $z_2$, the order-$g^2$ term of $\langle0|T\{\hat\phi_I(x)\hat\phi_I(y)\,e^{-i\int\hat H_I}\}|0\rangle$ is
 >
 > $$
@@ -366,6 +368,8 @@ The examples of Problem Set 8 are already worked: the oriented tadpole, fish and
 ^ex-c6a-12-1
 
 > [!example] Example §C6a.12.2: The Complex Four-Point Function at First Order
+> ![[ph-qft-c6a-12-3.svg]]
+>
 > In [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-3|Model §C6a.8.3]], with $D_{ab} \equiv D_F(a - b)$, the numerator for $\hat\phi(x_1)\hat\phi(x_2)\hat\phi^\dagger(y_1)\hat\phi^\dagger(y_2)$ is, through order $\lambda$,
 >
 > $$

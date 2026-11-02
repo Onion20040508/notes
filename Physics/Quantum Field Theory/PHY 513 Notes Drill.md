@@ -119,7 +119,7 @@ The course and Yu take $\varepsilon^{0123} = +1$, hence $\varepsilon_{0123} = -1
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - $FF$ and $F\tilde F$ in both conventions: Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Duality Exchanges E and B; the Two Invariants, part 2 and step 6 of its derivation.
+> - $FF$ and $F\tilde F$ in both conventions: Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] Duality Exchanges E and B; the Two Invariants, part 2 and step 6 of its derivation.
 > - Register row "Levi-Civita"; the γ-matrix route ($\gamma^0\gamma^1\gamma^2\gamma^3 = -i\gamma^5$) is in the register and the skill's notation rules.
 
 ### [B] Mandelstam variables
@@ -147,7 +147,7 @@ Field theory measures electromagnetism in Heaviside–Lorentz units with $\hbar 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K8
-> - The dictionary: Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] The SI–Heaviside–Lorentz Dictionary; the charge row of [[§C1a.2 Natural Units and Dimensional Analysis#^rem-c1a-2-2|§C1a.2, Remark: Mass dimensions of common quantities]].
+> - The dictionary: Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-5|§C1a.7.5]] The SI–Heaviside–Lorentz Dictionary; the charge row of [[§C1a.2 Natural Units and Dimensional Analysis#^rem-c1a-2-2|§C1a.2, Remark: Mass dimensions of common quantities]].
 
 ### [B] Four-potential and field-strength tensor
 $A^\mu = (\Phi, \mathbf A)$, $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$, $F^{0i} = -E^i$, $F^{ij} = -\varepsilon_{ijk}B^k$, gauge invariant under $A^\mu \to A^\mu + \partial^\mu\lambda$, see Definition [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|§C1a.7.2]] Four-Potential and Field Tensor in Natural Units. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics" (Jackson 11.10) · PS2 Problem 4(b) (the identification) · the user's notes Ch. 1 §1.7*
@@ -442,7 +442,7 @@ For independent components, $\partial T^\alpha{}_\beta/\partial T^\mu{}_\nu = \d
 > - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to Tensor Components, steps 1–3.
 
 ### [B] Maxwell's equations in Heaviside–Lorentz form ★
-$\partial_\mu F^{\mu\nu} = J^\nu$ and $\partial_\mu\tilde F^{\mu\nu} = 0$, the latter equivalent to the cyclic Bianchi identity and automatic for $F = dA$; consistency requires $\partial_\nu J^\nu = 0$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|§C1a.7.1]] Maxwell's Equations in Heaviside–Lorentz Form. *Source: the user's notes Ch. 1 §1.7*
+$\partial_\mu F^{\mu\nu} = J^\nu$ and $\partial_\mu\tilde F^{\mu\nu} = 0$, the latter equivalent to the cyclic Bianchi identity and automatic for $F = dA$; consistency requires $\partial_\nu J^\nu = 0$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Maxwell's Equations in Heaviside–Lorentz Form. *Source: the user's notes Ch. 1 §1.7*
 
 ^nd-thm-c1a-7-1
 
@@ -454,10 +454,10 @@ $\partial_\mu F^{\mu\nu} = J^\nu$ and $\partial_\mu\tilde F^{\mu\nu} = 0$, the l
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|§C1a.7.1]] Maxwell's Equations in Heaviside–Lorentz Form, steps 4–6 (steps 1–3 are the PS part); index moves [[§C1a.7 Relativistic Electrodynamics in Index Form#^rem-c1a-7-1|§C1a.7, Remark: Index techniques in Maxwell's equations]].
+> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Maxwell's Equations in Heaviside–Lorentz Form, steps 4–6 (steps 1–3 are the PS part); index moves [[§C1a.7 Relativistic Electrodynamics in Index Form#^rem-c1a-7-1|§C1a.7, Remark: Index techniques in Maxwell's equations]].
 
 ### [B] Duality exchanges E and B; the two invariants ★
-$\tilde F^{0i} = -B^i$, $\tilde F^{ij} = \varepsilon_{ijk}E^k$; $F_{\mu\nu}F^{\mu\nu} = 2(\mathbf B^2 - \mathbf E^2)$, $F_{\mu\nu}\tilde F^{\mu\nu} = -4\,\mathbf E\cdot\mathbf B$ (course; $+$ in PS for the $\varepsilon FF$ form), see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Duality Exchanges E and B; the Two Invariants. *Source: the user's notes Ch. 1 §1.7*
+$\tilde F^{0i} = -B^i$, $\tilde F^{ij} = \varepsilon_{ijk}E^k$; $F_{\mu\nu}F^{\mu\nu} = 2(\mathbf B^2 - \mathbf E^2)$, $F_{\mu\nu}\tilde F^{\mu\nu} = -4\,\mathbf E\cdot\mathbf B$ (course; $+$ in PS for the $\varepsilon FF$ form), see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] Duality Exchanges E and B; the Two Invariants. *Source: the user's notes Ch. 1 §1.7*
 
 ^nd-thm-c1a-7-2
 
@@ -469,10 +469,10 @@ $\tilde F^{0i} = -B^i$, $\tilde F^{ij} = \varepsilon_{ijk}E^k$; $F_{\mu\nu}F^{\m
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Duality Exchanges E and B; the Two Invariants, steps 1–6; [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³: these notes versus Peskin–Schroeder]].
+> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] Duality Exchanges E and B; the Two Invariants, steps 1–6; [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³: these notes versus Peskin–Schroeder]].
 
 ### [B] E ± iB: the self-dual halves of F ★
-$F \pm i\tilde F$ are the $\mp i$ eigenvectors of duality, carried by $\mathbf E \pm i\mathbf B$; proper Lorentz transformations act on $\mathbf E + i\mathbf B$ by complex orthogonal matrices, parity exchanges the halves, and the two invariants form one complex invariant, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] E ± iB: the Self-Dual Halves of F. *Source: the user's notes Ch. 1 §1.5 (the remark on $\mathbf E \pm i\mathbf B$); items 2–3 derived in the vault*
+$F \pm i\tilde F$ are the $\mp i$ eigenvectors of duality, carried by $\mathbf E \pm i\mathbf B$; proper Lorentz transformations act on $\mathbf E + i\mathbf B$ by complex orthogonal matrices, parity exchanges the halves, and the two invariants form one complex invariant, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] E ± iB: the Self-Dual Halves of F. *Source: the user's notes Ch. 1 §1.5 (the remark on $\mathbf E \pm i\mathbf B$); items 2–3 derived in the vault*
 
 ^nd-thm-c1a-7-3
 
@@ -483,7 +483,7 @@ $F \pm i\tilde F$ are the $\mp i$ eigenvectors of duality, carried by $\mathbf E
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] E ± iB: the Self-Dual Halves of F, steps 1–4; Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|§C1a.5.6]] Duality Squares to −1 on Antisymmetric Tensors.
+> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] E ± iB: the Self-Dual Halves of F, steps 1–4; Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|§C1a.5.6]] Duality Squares to −1 on Antisymmetric Tensors.
 
 ### [A] Lecture 1's boost of E_x ★★
 Under the active boost along $z$, $E'_x = F'_{01} = \Lambda_0{}^0\Lambda_1{}^1F_{01} + \Lambda_0{}^3\Lambda_1{}^1F_{31} = \gamma(E_x + vB_y)$; the slide's $\gamma(E_x - vB_y)$ is the passive sign, see Example [[§C1a.7 Relativistic Electrodynamics in Index Form#^ex-c1a-7-1|§C1a.7.1]] The Lecture's Boost Example, Done with the Active Boost and [[§C1a.7 Relativistic Electrodynamics in Index Form#^cau-c1a-7-2|§C1a.7, Caution: The sign of the v × B term]]. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics" · the user's notes Ch. 1 §1.7*
@@ -501,7 +501,7 @@ Under the active boost along $z$, $E'_x = F'_{01} = \Lambda_0{}^0\Lambda_1{}^1F_
 > - Example [[§C1a.7 Relativistic Electrodynamics in Index Form#^ex-c1a-7-1|§C1a.7.1]] The Lecture's Boost Example, Done with the Active Boost (one computation); [[§C1a.4 The Lorentz Group#^cau-c1a-4-1|§C1a.4, Caution: Active and passive readings]]; Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-2|§C1a.4.2]] Active Rotation and Boost.
 
 ### [B] The SI–Heaviside–Lorentz dictionary ★
-$\mathbf E_{\rm HL} = \sqrt{\varepsilon_0}\mathbf E_{\rm SI}$, $\mathbf B_{\rm HL} = \mathbf B_{\rm SI}/\sqrt{\mu_0}$, $q_{\rm HL} = q_{\rm SI}/\sqrt{\varepsilon_0}$ turn SI electrodynamics into the rationalized form with $\alpha = e^2/4\pi\hbar c$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] The SI–Heaviside–Lorentz Dictionary. *Source: the user's pre-course notes §1.2; dictionary derived in the vault*
+$\mathbf E_{\rm HL} = \sqrt{\varepsilon_0}\mathbf E_{\rm SI}$, $\mathbf B_{\rm HL} = \mathbf B_{\rm SI}/\sqrt{\mu_0}$, $q_{\rm HL} = q_{\rm SI}/\sqrt{\varepsilon_0}$ turn SI electrodynamics into the rationalized form with $\alpha = e^2/4\pi\hbar c$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-5|§C1a.7.5]] The SI–Heaviside–Lorentz Dictionary. *Source: the user's pre-course notes §1.2; dictionary derived in the vault*
 
 ^nd-thm-c1a-7-4
 
@@ -512,7 +512,7 @@ $\mathbf E_{\rm HL} = \sqrt{\varepsilon_0}\mathbf E_{\rm SI}$, $\mathbf B_{\rm H
 
 > [!tip]- Hints: route in the notes
 > - Technique: K8
-> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] The SI–Heaviside–Lorentz Dictionary, steps 1–5.
+> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-5|§C1a.7.5]] The SI–Heaviside–Lorentz Dictionary, steps 1–5.
 
 ### [A] Checking that boosts and rotations are Lorentz, and that products are ★★
 **[class exercise, Lecture 1]** The boost $B_z(\eta)$ satisfies $\Lambda^{\mathsf T}g\Lambda = g$ by $\cosh^2 - \sinh^2 = 1$ (done on the slide); the rotation "you can check in much the same way" (transcript: "it's actually easier"); a product of two Lorentz matrices is Lorentz. Homes: Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-1|§C1a.4.1]] Lorentz Transformation, Active Reading, Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-3|§C1a.4.3]] Rapidity, Definition [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|§CB.1.1]] Matrix Groups (the group property itself is Relativity's, REL Theorem §B1.2.3, outside the QFT catalogue). *Source: Lecture 1 (Aug 31), slide "Consistency Checks" and transcript · the user's notes Ch. 1 §1.3 (Derivation "Consistency checks on the definition")*
@@ -4632,7 +4632,7 @@ $U(\mathbb 1 + \omega, \varepsilon) = \mathbb 1 - \frac i2\omega_{\mu\nu}\hat J^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - Definition [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^def-c3-4-1|§C3.4.1]] Generators of Quantum Poincaré Transformations; signs across sources: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^cau-c3-4-1|§C3.4, Caution: Signs and names across the sources]]; finite forms: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|§C3.4.3]] Finite Transformations as Exponentials; Hermiticity: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-2|§C3.4.2]] The Generators Are Hermitian versus Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
+> - Definition [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^def-c3-4-1|§C3.4.1]] Generators of Quantum Poincaré Transformations; signs across sources: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^cau-c3-4-1|§C3.4, Caution: Signs and names across the sources]]; finite forms: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-4|§C3.4.4]] Finite Transformations as Exponentials; Hermiticity: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|§C3.4.3]] The Generators Are Hermitian versus Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
 
 ### [B] Covariance of quantum fields
 
@@ -5135,7 +5135,7 @@ In an inner product with $\mathbf J_\pm$ Hermitian, $\mathbf J$ is Hermitian and
 
 ### [B] The quantum generators are Hermitian ★
 
-All ten generators $\hat J^{\mu\nu}$, $\hat P^\mu$ of a unitary $U(\Lambda, a)$ are Hermitian, boosts included, and $U^{-1} = \mathbb 1 + \frac i2\omega_{\mu\nu}\hat J^{\mu\nu} - i\varepsilon_\mu\hat P^\mu$ to first order, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-2|§C3.4.2]] The Generators Are Hermitian. *Source: the user's notes Ch. 7 §7.6*
+All ten generators $\hat J^{\mu\nu}$, $\hat P^\mu$ of a unitary $U(\Lambda, a)$ are Hermitian, boosts included, and $U^{-1} = \mathbb 1 + \frac i2\omega_{\mu\nu}\hat J^{\mu\nu} - i\varepsilon_\mu\hat P^\mu$ to first order, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|§C3.4.3]] The Generators Are Hermitian. *Source: the user's notes Ch. 7 §7.6*
 
 ^nd-thm-c3-4-2
 
@@ -5146,11 +5146,11 @@ All ten generators $\hat J^{\mu\nu}$, $\hat P^\mu$ of a unitary $U(\Lambda, a)$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11 ((anti)commutator algebra)
-> - Steps 1–4 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-2|Derivation §C3.4.2]]; the contrast: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]], Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
+> - Steps 1–4 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-3|Derivation §C3.4.3]]; the contrast: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]], Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
 
 ### [C] The Poincaré algebra ★
 
-$U^{-1}\hat P^\rho U = \Lambda^\rho{}_\mu\hat P^\mu$ and the tensor law of $\hat J$ give $[\hat J^{\mu\nu}, \hat P^\rho] = i(g^{\nu\rho}\hat P^\mu - g^{\mu\rho}\hat P^\nu)$, $[\hat P^\mu, \hat P^\nu] = 0$; in three-dimensional form $[\hat K^i, \hat P^j] = -i\delta_{ij}\hat H$, $[\hat K^i, \hat H] = -i\hat P^i$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] The Poincaré Algebra and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-4|§C3.4.4]] How the Generators Transform. *Source: the user's notes Ch. 7 §7.6 · Yu §3.2*
+$U^{-1}\hat P^\rho U = \Lambda^\rho{}_\mu\hat P^\mu$ and the tensor law of $\hat J$ give $[\hat J^{\mu\nu}, \hat P^\rho] = i(g^{\nu\rho}\hat P^\mu - g^{\mu\rho}\hat P^\nu)$, $[\hat P^\mu, \hat P^\nu] = 0$; in three-dimensional form $[\hat K^i, \hat P^j] = -i\delta_{ij}\hat H$, $[\hat K^i, \hat H] = -i\hat P^i$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|§C3.4.6]] The Poincaré Algebra and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] How the Generators Transform. *Source: the user's notes Ch. 7 §7.6 · Yu §3.2*
 
 ^nd-thm-c3-4-5
 
@@ -5162,12 +5162,12 @@ $U^{-1}\hat P^\rho U = \Lambda^\rho{}_\mu\hat P^\mu$ and the tensor law of $\hat
 
 > [!tip]- Hints: route in the notes
 > - Technique: K3
-> - Steps 1–6 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-4|Derivation §C3.4.4]] (how the generators transform); Steps 1–3 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-5|Derivation §C3.4.5]] ($[\hat J, \hat P]$), step 4 ($[\hat P, \hat P]$), step 5 (three-dimensional form).
+> - Steps 1–6 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-5|Derivation §C3.4.5]] (how the generators transform); Steps 1–3 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-6|Derivation §C3.4.6]] ($[\hat J, \hat P]$), step 4 ($[\hat P, \hat P]$), step 5 (three-dimensional form).
 > - Conservation with explicit time dependence: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-4|§C3.4, Remark: What the algebra says: conservation, and no boost quantum number]].
 
 ### [B] P² is a Casimir; an invariant vacuum has zero momentum ★
 
-$\hat P^2$ commutes with all ten generators and is Poincaré invariant; a Lorentz-invariant vacuum eigenvector of $\hat P^\mu$ has $p_0^\mu = 0$, so the generators are the normal-ordered $\hat H$, $\hat{\mathbf P}$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|§C3.4.6]] P² Is a Casimir Operator and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|§C3.4.7]] An Invariant Vacuum Has Zero Four-Momentum. *Source: the user's notes Ch. 7 §7.6*
+$\hat P^2$ commutes with all ten generators and is Poincaré invariant; a Lorentz-invariant vacuum eigenvector of $\hat P^\mu$ has $p_0^\mu = 0$, so the generators are the normal-ordered $\hat H$, $\hat{\mathbf P}$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|§C3.4.7]] P² Is a Casimir Operator and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|§C3.4.8]] An Invariant Vacuum Has Zero Four-Momentum. *Source: the user's notes Ch. 7 §7.6*
 
 ^nd-thm-c3-4-6
 
@@ -5178,7 +5178,7 @@ $\hat P^2$ commutes with all ten generators and is Poincaré invariant; a Lorent
 
 > [!tip]- Hints: route in the notes
 > - Technique: K3, K14
-> - Steps 1–3 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-6|Derivation §C3.4.6]]; Steps 1–4 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-7|Derivation §C3.4.7]].
+> - Steps 1–3 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-7|Derivation §C3.4.7]]; Steps 1–4 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-8|Derivation §C3.4.8]].
 
 ### [B] Lorentz transformations of a quantum field: orbital plus spin ★
 
@@ -5231,7 +5231,7 @@ For the free real scalar the normal-ordered Noether charges $\hat P^\mu = \int d
 > [!tip]- Hints: route in the notes
 > - Technique: K11 ((anti)commutator algebra), K12
 > - Steps 1–2 of [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^der-c3-5-6|Derivation §C3.5.6]], step 3 (momentum), steps 4–5 (rotations, boosts), step 6 (generators), step 7 (boost dictionary).
-> - Normal ordering and the vacuum: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|§C3.4.7]] An Invariant Vacuum Has Zero Four-Momentum; [[Larsen PHY 513|register: Quantum Poincaré transformations]].
+> - Normal ordering and the vacuum: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|§C3.4.8]] An Invariant Vacuum Has Zero Four-Momentum; [[Larsen PHY 513|register: Quantum Poincaré transformations]].
 
 # T8. Spinors, the Dirac equation and its solutions
 
@@ -8324,7 +8324,7 @@ $x^{\mathsf T}gy$ (Lecture 1, matrices) and $x_\mu y^\mu = g_{\mu\nu}x^\mu y^\nu
 > - Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|§C1a.5.2]] The Metric Identifies Vectors with Covectors, steps 2 and 4; Definition [[§C1a.4 The Lorentz Group#^def-c1a-4-1|§C1a.4.1]] Lorentz Transformation, Active Reading.
 
 ### [B] The dual Maxwell equation and the cyclic Bianchi identity
-$\partial_\mu\tilde F^{\mu\nu} = 0 \Longleftrightarrow \partial^\rho F^{\mu\nu} + \partial^\mu F^{\nu\rho} + \partial^\nu F^{\rho\mu} = 0$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|§C1a.7.1]] Maxwell's Equations in Heaviside–Lorentz Form. *Source: the user's notes Ch. 1 §1.7*
+$\partial_\mu\tilde F^{\mu\nu} = 0 \Longleftrightarrow \partial^\rho F^{\mu\nu} + \partial^\mu F^{\nu\rho} + \partial^\nu F^{\rho\mu} = 0$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Maxwell's Equations in Heaviside–Lorentz Form. *Source: the user's notes Ch. 1 §1.7*
 
 ^nd-eq-t1-2
 
@@ -8335,7 +8335,7 @@ $\partial_\mu\tilde F^{\mu\nu} = 0 \Longleftrightarrow \partial^\rho F^{\mu\nu} 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|§C1a.7.1]] Maxwell's Equations in Heaviside–Lorentz Form, steps 4–5.
+> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Maxwell's Equations in Heaviside–Lorentz Form, steps 4–5.
 
 ### [B] Active and passive forms of the E_x boost
 $E'_x = \gamma(E_x + vB_y)$ (active boost by $+v\hat{\mathbf z}$, the vault) and $E'_x = \gamma(E_x - vB_y)$ (the Lecture 1 slide) are the same law read in the two conventions, see Example [[§C1a.7 Relativistic Electrodynamics in Index Form#^ex-c1a-7-1|§C1a.7.1]] The Lecture's Boost Example, Done with the Active Boost and [[§C1a.7 Relativistic Electrodynamics in Index Form#^cau-c1a-7-2|§C1a.7, Caution: The sign of the v × B term]]. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics"*
@@ -8829,7 +8829,7 @@ $U(\Lambda, a)\hat\phi(x)U(\Lambda, a)^{-1} = \hat\phi(\Lambda x + a)$ is equiva
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - Steps 3–4 of [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^der-c3-5-5|Derivation §C3.5.5]]; the inverse in the group: step 1 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-3|Derivation §C3.4.3]]; the side of the inverse for discrete symmetries: [[§C9.3 Parity on States, Spinors and the Dirac Field#^cau-c9-3-1|§C9.3, Caution: Which side the inverse is on, and the names of the phases]].
+> - Steps 3–4 of [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^der-c3-5-5|Derivation §C3.5.5]]; the inverse in the group: step 1 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-4|Derivation §C3.4.4]]; the side of the inverse for discrete symmetries: [[§C9.3 Parity on States, Spinors and the Dirac Field#^cau-c9-3-1|§C9.3, Caution: Which side the inverse is on, and the names of the phases]].
 
 ### [B] Three forms of the covariance of γ
 

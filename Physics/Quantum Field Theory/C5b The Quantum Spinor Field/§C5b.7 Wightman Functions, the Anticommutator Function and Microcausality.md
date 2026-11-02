@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[§C2b.4 Microcausality and the Commutator Function|§C2b.4]]. What do the vacuum correlations of the Dirac field look like, and is the field causal? Every answer is the scalar answer with the operator $i\slashed{\partial} + m$ in front: the Wightman function $D_W$ becomes the pair $S^\pm_W$, the commutator function $D$ becomes the anticommutator function $S$, and microcausality becomes a statement about anticommutators. The explicit forms of $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]]) carry over by differentiation and get no section of their own. The third of Lecture 10's checkpoints ends the section: with commutators the field would propagate outside the light cone ("a Wightman function plus a different Wightman function"). Conventions as in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]; in addition $\xi = x - y$, $t = \xi^0$, slash $\slashed{a} = \gamma^\mu a_\mu$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]); scalar two-point functions as in [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]] ($iD = \langle0|[\hat\phi, \hat\phi]|0\rangle$, $D_1 = D_W(\xi) + D_W(-\xi)$); Fourier convention $f(\xi) = \int\frac{d^4p}{(2\pi)^4}\tilde f(p)e^{-ip\cdot\xi}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]). Spinor indices $a, b$ are written only where needed: $S_{ab}(\xi)$ is a $4\times4$ matrix of distributions.
 
+**Setup.** The free Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) with anticommutators; Heisenberg fields of the free $\hat H$ ([[§C5b.6 The Heisenberg Dirac Field|§C5b.6]]); vacuum values in the free vacuum $|0\rangle$; $m > 0$; exact. Theorem §C5b.7.5 replaces the anticommutators by an unspecified rule and the assumptions (i)–(iv), in order to exclude commutators.
+
 > [!caution] Caution: The letter S
 > In this chapter $S$ means several things: the spinor generators $S^{\mu\nu}$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]]); the Lorentz matrix of a spinor, written $\Lambda_{1/2}$ here and $S(\Lambda)$ or $S[\Lambda]$ by Yu and in the user's pre-course notes; the action; the S-matrix (QFT C10, planned); and in this section the anticommutator function $S$ and the propagators $S_F$, $S_R$, $S_A$. The name $S$ for the anticommutator function (with $iS = \{\hat\psi, \hat{\bar\psi}\}$, parallel to $iD = [\hat\phi, \hat\phi]$) follows Bjorken–Drell; PS name only $S_R$ and $S_F$, Yu only $S_F$.
 >
@@ -91,6 +93,9 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 > the vacuum expectation value of the anticommutator of the Heisenberg fields ([[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]]), a $4\times4$ matrix of tempered distributions in $\xi = x - y$. The retarded and advanced functions built from it: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-1|Def. §C5b.8.1]].
 >
 > *Scalar analogue:* the commutator function, $iD = \langle0|[\hat\phi, \hat\phi]|0\rangle$, [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|Def. §C2b.4.1]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact; by [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]] the same c-number in every state.
+>
 > *Source: PS §3.5, eqs. (3.116)–(3.117) · named here after Bjorken–Drell ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^cau-c5b-7-1|Caution: The letter S]])*
 
 ^def-c5b-7-2
@@ -105,6 +110,9 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 > with the commutator function $D$ of [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-1|Def. §C2b.4.1]]: the same number in every state. As tempered distributions $\tilde S = -2\pi i\operatorname{sgn}(p^0)(\slashed{p} + m)\delta(p^2 - m^2)$, $(i\slashed{\partial} - m)S = 0$, and at equal times $iS(0, \boldsymbol\xi) = \gamma^0\delta^3(\boldsymbol\xi)$, which is [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]] again: $S$ carries the canonical anticommutators to all times.
 >
 > *Scalar analogue:* [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact, an operator identity in every state, all $x$, $y$.
+>
 > *Source: PS §3.5, p. 54 (the computation, there with commutators) and eq. (3.117) · the user's pre-course notes, "Time-ordered product and microcausality" (Note "The Dirac anticommutator from the spin sums")*
 
 ^thm-c5b-7-2
@@ -173,6 +181,9 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 > as operator-valued distributions on the open set of spacelike pairs $(x, y)$. So the observables of the Dirac field (currents, energy and momentum densities) satisfy microcausality ([[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]]).
 >
 > *Scalar analogue:* none needed for the scalar, whose field is itself an observable ([[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]]).
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, normal-ordered bilinears, spacelike separation, exact.
+>
 > *Source: PS §3.5, p. 56 ("all reasonable observables … are built out of an even number of spinor fields") · the user's pre-course notes, "Time-ordered product and microcausality" · the commutator identity written out here*
 
 ^thm-c5b-7-4
@@ -222,6 +233,9 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 > with $S^\pm_W$ of [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]]; and for $m > 0$ the vacuum expectation of $[\hat\psi_a(x), \hat{\bar\psi}_b(y)]$ is nonzero at every spacelike $\xi$, whereas that of $\{\hat\psi_a(x), \hat{\bar\psi}_b(y)\}$ vanishes at all spacelike $\xi$ if and only if $A = B$. Commutators are excluded by causality; anticommutators with $A = B = 1$ are the solution ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]).
 >
 > *Scalar analogue:* none: for the scalar the commutator is the causal combination ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
+>
+> *Model:* the mode expansion of [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] with an unspecified (anti)commutation rule and a vacuum obeying (i)–(iv); *applies:* free field, exact; the nonvanishing commutator needs $m > 0$.
+>
 > *Source: Lecture 10, slide 6 ("Propagation not causal. Commutators fail to vanish outside the light-cone") and transcript · the user's PHY 513 notes, Ch. 10 §10.1 and §10.4 · PS §3.5, pp. 54–56, eqs. (3.93)–(3.96)*
 
 ^thm-c5b-7-5

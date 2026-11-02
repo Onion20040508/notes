@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ← [[· C3 Poincaré Symmetry and Particle States]] · ↑ [[Quantum Field Theory]] · [[· C5a Spinors and the Dirac Equation]] →
 
 **Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (39), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (108), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (93), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (61), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (9), [[· CA Mathematical Methods|CA Mathematical Methods]] (150)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (5), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (1), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (5), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1)
 
 ## Sections
 - [[§C4.1 The Vector Field and Its Lorentz Transformation]] — 
@@ -79,15 +79,15 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-3|§C4.6.3]] Gauge Invariance of F and of the Maxwell Lagrangian; the Mass Term Breaks It
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-4|§C4.6.4]] The Maxwell Kinetic Operator Is Singular
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-5|§C4.6.5]] No Canonical Momentum for A⁰
-- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-6|§C4.6.6]] Field Equation of the Gauge-Fixed Lagrangian
-- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-7|§C4.6.7]] Equivalence with Maxwell's Equations on the Lorenz Subspace
-- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-8|§C4.6.8]] The Feynman-Gauge Lagrangian up to a Total Derivative
-- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-9|§C4.6.9]] Canonical Momenta of the Gauge-Fixed Field
-- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-10|§C4.6.10]] Hamiltonian Density of the Feynman-Gauge Field
-- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-11|§C4.6.11]] Momentum of the Feynman-Gauge Field
-- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-12|§C4.6.12]] The Feynman-Gauge Momentum Generates Spatial Translations
-- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-13|§C4.6.13]] Spin and Orbital Angular Momentum Are Not Separately Gauge Invariant
-- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-14|§C4.6.14]] Spin Charges of the Gauge-Fixed Lagrangians
+- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-7|§C4.6.7]] Field Equation of the Gauge-Fixed Lagrangian
+- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-8|§C4.6.8]] Equivalence with Maxwell's Equations on the Lorenz Subspace
+- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-9|§C4.6.9]] The Feynman-Gauge Lagrangian up to a Total Derivative
+- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-10|§C4.6.10]] Canonical Momenta of the Gauge-Fixed Field
+- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-11|§C4.6.11]] Hamiltonian Density of the Feynman-Gauge Field
+- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-12|§C4.6.12]] Momentum of the Feynman-Gauge Field
+- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-13|§C4.6.13]] The Feynman-Gauge Momentum Generates Spatial Translations
+- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-14|§C4.6.14]] Spin and Orbital Angular Momentum Are Not Separately Gauge Invariant
+- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-15|§C4.6.15]] Spin Charges of the Gauge-Fixed Lagrangians
 - [[§C4.7 Covariant Quantization and the Indefinite Metric#^thm-c4-7-1|§C4.7.1]] Only Two Massless Polarizations Can Be Transverse
 - [[§C4.7 Covariant Quantization and the Indefinite Metric#^thm-c4-7-2|§C4.7.2]] Orthonormality and Completeness of the Massless Basis
 - [[§C4.7 Covariant Quantization and the Indefinite Metric#^thm-c4-7-3|§C4.7.3]] The Transverse Polarization Sum
@@ -128,5 +128,5 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.2★ The Proca Field#^mod-c4-2-1|§C4.2.1]] The Free Proca Field
 - [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^mod-c4-4-1|§C4.4.1]] The Free Proca Quantum Field
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|§C4.6.2]] The Free Maxwell Field
-- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-15|§C4.6.15]] The Feynman-Gauge Field as a Canonical System
+- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-16|§C4.6.16]] The Feynman-Gauge Field as a Canonical System
 - [[§C4.7 Covariant Quantization and the Indefinite Metric#^mod-c4-7-4|§C4.7.4]] The Feynman-Gauge Quantum Field

@@ -156,7 +156,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > 6. (f) $\nu$, $\rho$, $\sigma$ are contracted, $\mu$ (up) and $\lambda$ (up) are free: $B^{\mu\lambda} = A^\mu{}_\nu\,g^{\nu\rho}\,C_{\rho\sigma}\,D^{\sigma\lambda}$. Each contraction joins the second index of one factor to the first of the next, so it is the matrix product $B = A\,g^{-1}C\,D$ (numerically $g^{-1} = g$).
 > 7. (g) Each free index carries one factor $\Lambda$ (up) or $\Lambda^{-1}$ (down), and each contracted pair carries $\Lambda^{-1}\Lambda = \mathbb 1$ (as in (d)). If both sides have the same free indices at the same heights, both transform with the same product of $\Lambda$'s: $L' = (\Lambda\cdots)L$, $R' = (\Lambda\cdots)R$, so $L = R$ in one frame implies $L' = R'$ in every frame.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-2|§C1a.5, Caution: Index bookkeeping: legal, illegal, and matrix products]] (the rules and the matrix-product reading), [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]] ((e)), [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], 2 and 4 ((d), (g)), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], 1 (the factor $\det\Lambda$ of an $\varepsilon$, (b)); [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|Theorem §C1a.7.1]] ((a)).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-2|§C1a.5, Caution: Index bookkeeping: legal, illegal, and matrix products]] (the rules and the matrix-product reading), [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]] ((e)), [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], 2 and 4 ((d), (g)), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], 1 (the factor $\det\Lambda$ of an $\varepsilon$, (b)); [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]] ((a)).
 
 ^sol-wr-3
 
@@ -190,7 +190,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** For smooth $F$, $\partial_\nu\partial_\mu = \partial_\mu\partial_\nu$ is symmetric in $\mu\nu$ and $F^{\mu\nu}$ is antisymmetric: by (a) the double contraction vanishes. So a current that is not conserved cannot be a source of Maxwell's equations.
 >
-> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|Theorem §C1a.7.1]] ("consistency of the first requires $\partial_\nu J^\nu = 0$"), [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]].
+> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]] ("consistency of the first requires $\partial_\nu J^\nu = 0$"), [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]].
 
 ^sol-wr-4-b
 
@@ -205,7 +205,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** $\partial_\mu\tilde F^{\mu\nu} = \varepsilon^{\mu\nu\rho\sigma}\partial_\mu\partial_\rho A_\sigma$: for fixed $\nu$, $\sigma$, the factor $\partial_\mu\partial_\rho A_\sigma$ is symmetric in $\mu\rho$ and $\varepsilon^{\mu\nu\rho\sigma}$ antisymmetric, so by (a) it vanishes. The homogeneous Maxwell equations are identities once $F$ comes from a potential.
 >
-> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|Theorem §C1a.7.1]] ("the second holds identically when $F$ comes from a potential").
+> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]] ("the second holds identically when $F$ comes from a potential").
 
 ^sol-wr-4-c
 
@@ -573,7 +573,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 4** (Peskin–Schroeder). One $\varepsilon$: the sign flips, $+8\,\mathbf E\cdot\mathbf B$; the scalar has no $\varepsilon$ and does not change.
 >
-> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]], 2 (both invariants and the Peskin–Schroeder sign); [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]] ($F_{0i} = E^i$, $F_{ij} = -\varepsilon_{ijk}B^k$); numerical check with random $\mathbf E$, $\mathbf B$.
+> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]], 2 (both invariants and the Peskin–Schroeder sign); [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]] ($F_{0i} = E^i$, $F_{ij} = -\varepsilon_{ijk}B^k$); numerical check with random $\mathbf E$, $\mathbf B$.
 
 ^sol-wr-11-a
 
@@ -609,7 +609,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** Expand: $E_yB_y - vE_yE_z + vB_zB_y - v^2B_zE_z + E_zB_z + vE_zE_y - vB_yB_z - v^2B_yE_y$; the four terms linear in $v$ cancel in pairs, leaving $(1 - v^2)(E_yB_y + E_zB_z)$, and $\gamma^2(1 - v^2) = 1$.
 >
-> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]] ($\mathbf E\cdot\mathbf B$ is, up to $-\frac18$, the invariant $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$); numerical check.
+> *Checked against:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]] ($\mathbf E\cdot\mathbf B$ is, up to $-\frac18$, the invariant $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$); numerical check.
 
 ^sol-wr-11-c
 
@@ -1161,7 +1161,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > 6. (f) $[K_3, J_1] = -[J_1, K_3] = -i\varepsilon_{13k}K_k = -i\varepsilon_{132}K_2 = iK_2$. [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]]; numerical check.
 > 7. (g) The proper non-orthochronous component ($\det = +1$, $\Lambda^0{}_0 = -1$), $\mathcal P\mathcal T\cdot SO^+(1,3)$; no, every exponential lies in $SO^+(1,3)$. [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|Theorem §CB.3.12]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]].
 > 8. (h) $(\frac12, \frac12)$; $(0, 0)$; $(1, 1)$. [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-3|§C3.2, Remark: The representations met in the course]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]].
-> 9. (i) Both zero: a plane wave is a null field ($\mathbf E\perp\mathbf B$, $\lvert\mathbf E\rvert = \lvert\mathbf B\rvert$). [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-4|REL Theorem §B4.2.4]], 3; [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]].
+> 9. (i) Both zero: a plane wave is a null field ($\mathbf E\perp\mathbf B$, $\lvert\mathbf E\rvert = \lvert\mathbf B\rvert$). [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-4|REL Theorem §B4.2.4]], 3; [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]].
 > 10. (j) $+1$; $e^{\eta}$. [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]]; Problem 2(b), Problem 17(b).
 
 ^sol-wr-20

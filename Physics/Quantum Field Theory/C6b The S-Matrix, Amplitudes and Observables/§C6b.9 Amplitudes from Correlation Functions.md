@@ -68,10 +68,10 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 
 *Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]; the LSZ formula (Yu eq. (10.121); QFT C10, planned)
 
-![[ph-qft-c6-16-1.svg]]
-*The rule of Theorem §C6b.9.1 in $\phi^4$ theory. Left: the fully connected first-order diagram of the four-point correlator, with its four external propagators (orange). Right: removing them, and the overall $(2\pi)^4\delta^4$, leaves the bare vertex: $i\mathcal M = -i\lambda$ for $\phi\phi \to \phi\phi$ at this order (Example §C6b.9.1). Added figure, from the user's notes (Figure "amputate").*
-
 > [!example] Example §C6b.9.1: φφ → φφ at First Order
+> ![[ph-qft-c6-16-1.svg]]
+> *The rule of Theorem §C6b.9.1 in $\phi^4$ theory. Left: the fully connected first-order diagram of the four-point correlator, with its four external propagators (orange). Right: removing them, and the overall $(2\pi)^4\delta^4$, leaves the bare vertex: $i\mathcal M = -i\lambda$ for $\phi\phi \to \phi\phi$ at this order (Example §C6b.9.1). Added figure, from the user's notes (Figure "amputate").*
+>
 > In $\phi^4$ theory ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]) the fully connected four-point function at first order, Fourier transformed in all four external points with momenta $p_A$, $p_B$ flowing in and $p_1$, $p_2$ flowing out, is
 >
 > $$
@@ -160,6 +160,8 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 ^ex-c6b-9-1
 
 > [!example] Example §C6b.9.2: The φ⁴ Cross Section at Lowest Order
+> ![[ph-qft-c6b-9-1.svg]]
+>
 > For $\phi\phi \to \phi\phi$ at first order, $|\mathcal M|^2 = \lambda^2$ ([[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-1|Example §C6b.9.1]]), and all four masses are equal, so by [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-8|Theorem §C6b.7.8]] the scattering is isotropic in the centre-of-mass frame:
 >
 > $$

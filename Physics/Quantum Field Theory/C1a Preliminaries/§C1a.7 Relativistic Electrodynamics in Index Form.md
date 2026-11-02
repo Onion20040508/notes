@@ -11,9 +11,9 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 1 §1.7; Ch. 3 §3.3 (Derivation "The Euler–Lagrange equation for other kinds of field", vector field) · PHY 513 Lecture 1 (Larsen), Part C ("Example: Relativistic Electrodynamics"); Problem Set 2, Problem 4 (statement), as recorded in the user's notes · Yu Zhao-Huan, 量子场论讲义, §1.5, eqs. (1.122)–(1.151) · the user's pre-course notes, §1.2 ("Rationalized natural units").*
 
-How do electric and magnetic fields look in the language of field theory, and what about electrodynamics is the template for every field to come? The field tensor, its transformation, the two invariants, the four-current and Maxwell's equations as tensor equations are at home in Relativity level B, in SI units with $c$ explicit ([[§B4.2 The Electromagnetic Field Tensor|REL §B4.2]]; the coupling to a charge, [[§B3.2 The Charged Particle|REL §B3.2]]; the equations themselves, [[§B8.4 Maxwell's Equations#^pr-b8-4-2|EM Principle §B8.4.2]]). Theorem §C1a.7.1 and the first half of Theorem §C1a.7.2 are [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]] and [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-3|REL Theorem §B4.2.3]] transcribed to Heaviside–Lorentz units with $c = 1$; their computations are repeated only as the index template of field theory. What this section adds is what quantum field theory needs: Heaviside–Lorentz natural units and their dictionary to SI, the field tensor and Maxwell's equations in those units, the dual and the invariants with $\varepsilon^{0123} = +1$ against Peskin–Schroeder, the self-dual combinations $\mathbf E \pm i\mathbf B$, the lecture's boost example done consistently, and the lessons the example teaches for field theory.
+How do electric and magnetic fields look in the language of field theory, and what about electrodynamics is the template for every field to come? The field tensor, its transformation, the two invariants, the four-current and Maxwell's equations as tensor equations are at home in Relativity level B, in SI units with $c$ explicit ([[§B4.2 The Electromagnetic Field Tensor|REL §B4.2]]; the coupling to a charge, [[§B3.2 The Charged Particle|REL §B3.2]]; the equations themselves, [[§B8.4 Maxwell's Equations#^pr-b8-4-2|EM Principle §B8.4.2]]). Theorem §C1a.7.2 and the first half of Theorem §C1a.7.3 are [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]] and [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-3|REL Theorem §B4.2.3]] transcribed to Heaviside–Lorentz units with $c = 1$; their computations are repeated only as the index template of field theory. What this section adds is what quantum field theory needs: Heaviside–Lorentz natural units and their dictionary to SI, the field tensor and Maxwell's equations in those units, the dual and the invariants with $\varepsilon^{0123} = +1$ against Peskin–Schroeder, the self-dual combinations $\mathbf E \pm i\mathbf B$, the lecture's boost example done consistently, and the lessons the example teaches for field theory.
 
-**Setup.** Classical electrodynamics in Heaviside–Lorentz natural units: the potential $A^\mu$ and the field tensor $F^{\mu\nu}$, coupled to a given external four-current $J^\mu$, which must be conserved. Nothing is quantized, and the current has no dynamics of its own. Definitions §C1a.7.1–§C1a.7.2 and Theorems §C1a.7.2–§C1a.7.4 are conventions and identities that hold for any antisymmetric $F$; only [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|Theorem §C1a.7.1]] is a field equation. The source-free Maxwell field as a Lagrangian model is [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]], quantized in [[· C4 The Quantum Vector Field|C4]].
+**Setup.** Classical electrodynamics in Heaviside–Lorentz natural units: the potential $A^\mu$ and the field tensor $F^{\mu\nu}$, coupled to a given external four-current $J^\mu$, which must be conserved ([[§C1a.7 Relativistic Electrodynamics in Index Form#^mod-c1a-7-1|Model §C1a.7.1]]). Nothing is quantized, and the current has no dynamics of its own. Definitions §C1a.7.1–§C1a.7.2 and Theorems §C1a.7.3–§C1a.7.5 are conventions and identities that hold for any antisymmetric $F$; only [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]] is a field equation. The source-free Maxwell field as a Lagrangian model is [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]], quantized in [[· C4 The Quantum Vector Field|C4]].
 
 ## Units and the field tensor
 
@@ -30,7 +30,7 @@ How do electric and magnetic fields look in the language of field theory, and wh
 
 ^def-c1a-7-1
 
-How SI and Gaussian formulas turn into these, and back, is [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|Theorem §C1a.7.4]] at the end of this note.
+How SI and Gaussian formulas turn into these, and back, is [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-5|Theorem §C1a.7.5]] at the end of this note.
 
 > [!definition] Definition §C1a.7.2: Four-Potential and Field Tensor in Natural Units
 > With $A^\mu = (\Phi, \mathbf A)$, $\mathbf E = -\nabla\Phi - \partial_t\mathbf A$, $\mathbf B = \nabla\times\mathbf A$ (Heaviside–Lorentz, $c = 1$),
@@ -55,7 +55,7 @@ The transformation law of the field tensor below is the general law for tensors,
 
 ![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-14]]
 
-The components, their raising and lowering, gauge invariance and the matrix are [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-1|REL Theorem §B4.2.1]] with $c = 1$ and the SI fields replaced by Heaviside–Lorentz ones; with Theorem §C1a.7.4 one finds $F_{\rm REL}^{\mu\nu} = \sqrt{\mu_0}\,F^{\mu\nu}$ (and $c$ restored). Raising both indices flips the sign of the time–space entries only, so $\mathbf E$ (in the time–space entries) changes sign between $F_{\mu\nu}$ and $F^{\mu\nu}$ and $\mathbf B$ (in the space–space entries) does not. The convention dependence of every sign traces to one source, the sign in $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$. Under a Lorentz transformation $F_{\mu\nu} \to \Lambda_\mu{}^\lambda\Lambda_\nu{}^\sigma F_{\lambda\sigma}$, the general law ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-14|Theorem §CB.0.14]]; explicit fields, [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-2|REL Theorem §B4.2.2]]). $F$ is not a product of two vectors ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-4|§C1a.5, Caution: A tensor is not a product of vectors]]).
+The components, their raising and lowering, gauge invariance and the matrix are [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-1|REL Theorem §B4.2.1]] with $c = 1$ and the SI fields replaced by Heaviside–Lorentz ones; with Theorem §C1a.7.5 one finds $F_{\rm REL}^{\mu\nu} = \sqrt{\mu_0}\,F^{\mu\nu}$ (and $c$ restored). Raising both indices flips the sign of the time–space entries only, so $\mathbf E$ (in the time–space entries) changes sign between $F_{\mu\nu}$ and $F^{\mu\nu}$ and $\mathbf B$ (in the space–space entries) does not. The convention dependence of every sign traces to one source, the sign in $F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu$. Under a Lorentz transformation $F_{\mu\nu} \to \Lambda_\mu{}^\lambda\Lambda_\nu{}^\sigma F_{\lambda\sigma}$, the general law ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-14|Theorem §CB.0.14]]; explicit fields, [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-2|REL Theorem §B4.2.2]]). $F$ is not a product of two vectors ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-4|§C1a.5, Caution: A tensor is not a product of vectors]]).
 
 > [!caution] Caution: Conventions for F across the sources
 > The matrix above is the lecture's (Jackson's, in Peskin–Schroeder's conventions) and Yu's (1.132), and agrees with Relativity level B after $c = 1$ and the SI-to-HL rescaling. Griffiths' $F^{\mu\nu}$ has the opposite overall sign (mostly-plus metric), as [[§B4.2 The Electromagnetic Field Tensor#^cau-b4-2-1|REL Caution: Sign conventions for the field tensor]] records. Anything with one $\varepsilon$, the dual $\tilde F$ and $\mathbf E\cdot\mathbf B$ terms, has the opposite sign in Peskin–Schroeder, whose $\varepsilon^{0123} = -1$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]).
@@ -66,7 +66,22 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 
 ## Maxwell's equations, duality and the invariants
 
-> [!theorem] Theorem §C1a.7.1: Maxwell's Equations in Heaviside–Lorentz Form
+> [!model] Model §C1a.7.1: The Maxwell Field with an External Current
+> A real vector potential $A^\mu$ coupled to a given four-current $J^\mu(x) = (\rho, \mathbf J)$, which is not a dynamical field:
+>
+> $$
+> \mathcal L = -\frac14F_{\mu\nu}F^{\mu\nu} - J^\mu A_\mu, \qquad F^{\mu\nu} = \partial^\mu A^\nu - \partial^\nu A^\mu ,
+> $$
+>
+> with $F$ the field tensor of [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]]. Its Euler–Lagrange equation ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]) is $\partial_\mu F^{\mu\nu} = J^\nu$.
+>
+> *Assumptions:* classical; $J^\mu$ external and conserved, $\partial_\mu J^\mu = 0$ (needed for the consistency of the field equation, and for the coupling to change by a total derivative under $A^\mu \to A^\mu + \partial^\mu\lambda$); flat spacetime; Heaviside–Lorentz natural units ([[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-1|Def. §C1a.7.1]]). For $J = 0$ it is [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]].
+>
+> *Source: the user's PHY 513 notes, Ch. 1 §1.7 ("Gauge invariance", "Inhomogeneous equations"), Ch. 3 §3.3 (Derivation "The Euler–Lagrange equation for other kinds of field", vector field) · PHY 513 Lecture 1, Part C · Yu §1.5, eqs. (1.123), (1.151)*
+
+^mod-c1a-7-1
+
+> [!theorem] Theorem §C1a.7.2: Maxwell's Equations in Heaviside–Lorentz Form
 > With the four-current $J^\mu = (\rho, \mathbf J)$ and $\tilde F^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}F_{\rho\sigma}$, Maxwell's equations are
 >
 > $$
@@ -75,14 +90,14 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 >
 > The first contains Gauss ($\nu = 0$) and Ampère–Maxwell ($\nu = j$); the second holds identically when $F$ comes from a potential. Consistency of the first requires $\partial_\nu J^\nu = 0$.
 >
-> *Model:* the Maxwell field $A^\mu$ coupled to a given external current $J^\mu$, $\mathcal L = -\frac14F_{\mu\nu}F^{\mu\nu} - J^\mu A_\mu$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^rem-c1a-7-2|Remark: Electrodynamics as the template for field theory]]); for $J = 0$, [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]]; *applies:* classical, exact; the current is external and must be conserved, $\partial_\nu J^\nu = 0$; Heaviside–Lorentz units.
+> *Model:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^mod-c1a-7-1|Model §C1a.7.1]], the Maxwell field $A^\mu$ coupled to a given external current $J^\mu$, $\mathcal L = -\frac14F_{\mu\nu}F^{\mu\nu} - J^\mu A_\mu$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^rem-c1a-7-2|Remark: Electrodynamics as the template for field theory]]); for $J = 0$, [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]]; *applies:* classical, exact; the current is external and must be conserved, $\partial_\nu J^\nu = 0$; Heaviside–Lorentz units.
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.7 (Derivation "Maxwell's equations in covariant form"), eq. (Maxwell) · Yu §1.5, eqs. (1.123), (1.128), (1.137), (1.151)*
 
-^thm-c1a-7-1
+^thm-c1a-7-2
 
 > [!derivation]- Derivation
-> *This is the derivation of [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]] translated by the dictionary of Theorem §C1a.7.4 ($F_{\rm REL} = \sqrt{\mu_0}F$, $c = 1$), written out once more as the worked instance of the index moves of the Remark below.*
+> *This is the derivation of [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]] translated by the dictionary of Theorem §C1a.7.5 ($F_{\rm REL} = \sqrt{\mu_0}F$, $c = 1$), written out once more as the worked instance of the index moves of the Remark below.*
 >
 > **1. Split the contracted index (no signs).** $\partial_\mu F^{\mu\nu} = \partial_0F^{0\nu} + \partial_iF^{i\nu}$, a plain sum ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-1|§C1a.5, Caution: A contraction is a plain sum]]); $\partial_i = \partial/\partial x^i$ has no sign.
 >
@@ -107,11 +122,11 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 > - The two halves have different origins: the Bianchi identity is geometry (an identity for any $F$ from a potential), the inhomogeneous equation is dynamics. Both sides of each are tensors of one type, so the equations hold in every frame without any transformation of $\mathbf E$ and $\mathbf B$ ([[§B2.2 Tensors and the Covariance Principle#^pr-b2-2-9|REL Principle §B2.2.9]]).
 > - Used next: the Maxwell Lagrangian (Remark below), the energy–momentum tensor of the field ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-8-2|Example §C1b.8.2]]).
 
-^der-c1a-7-1
+^der-c1a-7-2
 
 *Uses:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-1|§C1a.5, Caution: A contraction is a plain sum; the signs live in the components]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], [[§6 Equality of Mixed Partials#^thm-6-1|452 Thm. §6.1]], [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]]
 
-> [!theorem] Theorem §C1a.7.2: Duality Exchanges E and B; the Two Invariants
+> [!theorem] Theorem §C1a.7.3: Duality Exchanges E and B; the Two Invariants
 > With $\varepsilon^{0123} = +1$:
 > 1. $\tilde F^{0i} = -B^i$, $\tilde F^{ij} = \varepsilon_{ijk}E^k$: the dual is $F$ with $\mathbf E \to \mathbf B$, $\mathbf B \to -\mathbf E$, and $\tilde{\tilde F} = -F$.
 > 2. The invariants are
@@ -124,7 +139,7 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.7, eq. (Finvariants); Derivation "Maxwell's equations in covariant form" (dual components); Ch. 1 §1.5 (Derivation "Contracting Levi-Civita symbols", four-dimensional example) · Yu §1.5, eqs. (1.146)–(1.149)*
 
-^thm-c1a-7-2
+^thm-c1a-7-3
 
 > [!derivation]- Derivation
 > *Steps 1–4 are the computations of [[§B4.2 The Electromagnetic Field Tensor#^def-b4-2-3|REL Def. §B4.2.3]] and [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-3|REL Theorem §B4.2.3]] with $c = 1$; steps 5–6 are new here.*
@@ -143,38 +158,38 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 >
 > **What the derivation shows**
 > - The scalar is the Maxwell Lagrangian up to $-\frac14$: $-\frac14F_{\mu\nu}F^{\mu\nu} = \frac12(\mathbf E^2 - \mathbf B^2)$, kinetic minus potential.
-> - The pseudoscalar $\mathbf E\cdot\mathbf B$ is odd under $\mathcal P$ (polar $\mathbf E$, axial $\mathbf B$) and a total derivative, $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = 4\partial_\mu(\varepsilon^{\mu\nu\rho\sigma}A_\nu\partial_\rho A_\sigma)$ (by step 4 of the derivation of Theorem §C1a.7.1), so it does not change the field equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-5|Theorem §C1b.2.5]]).
+> - The pseudoscalar $\mathbf E\cdot\mathbf B$ is odd under $\mathcal P$ (polar $\mathbf E$, axial $\mathbf B$) and a total derivative, $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = 4\partial_\mu(\varepsilon^{\mu\nu\rho\sigma}A_\nu\partial_\rho A_\sigma)$ (by step 4 of the derivation of Theorem §C1a.7.2), so it does not change the field equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-5|Theorem §C1b.2.5]]).
 > - The invariant classes of fields (purely electric or magnetic frames, null fields) follow from these two numbers ([[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-4|REL Theorem §B4.2.4]]).
 
-^der-c1a-7-2
+^der-c1a-7-3
 
 *Uses:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]], [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-2|REL Def. §B2.2.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]
 
-> [!theorem] Theorem §C1a.7.3: E ± iB: the Self-Dual Halves of F
+> [!theorem] Theorem §C1a.7.4: E ± iB: the Self-Dual Halves of F
 > 1. $F + i\tilde F$ and $F - i\tilde F$ are eigenvectors of duality with eigenvalues $-i$ and $+i$, and are fixed by the complex three-vectors $\mathbf E + i\mathbf B$ and $\mathbf E - i\mathbf B$: $(F + i\tilde F)^{0j} = -(\mathbf E + i\mathbf B)^j$, $(F + i\tilde F)^{jk} = i\varepsilon_{jkl}(\mathbf E + i\mathbf B)^l$, and the complex conjugate for $F - i\tilde F$.
 > 2. A proper Lorentz transformation maps $\mathbf E + i\mathbf B$ to $O(\Lambda)(\mathbf E + i\mathbf B)$ with a complex $3\times3$ matrix satisfying $O^{\mathsf T}O = \mathbb 1$; parity sends $\mathbf E + i\mathbf B \to -(\mathbf E - i\mathbf B)$, exchanging the halves.
 > 3. The two invariants are one complex invariant: $(\mathbf E + i\mathbf B)\cdot(\mathbf E + i\mathbf B) = \mathbf E^2 - \mathbf B^2 + 2i\,\mathbf E\cdot\mathbf B = -\frac12F_{\mu\nu}F^{\mu\nu} - \frac i2F_{\mu\nu}\tilde F^{\mu\nu}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 ("Irreducible pieces of a two-tensor": "For the field strength … built from E + iB and E − iB") · the components and items 2–3 derived here (item 2 checked numerically)*
 
-^thm-c1a-7-3
+^thm-c1a-7-4
 
 > [!derivation]- Derivation
 > **1. Eigenvectors.** By [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]], $\star\tilde F = \tilde{\tilde F} = -F$, so $\star(F + i\tilde F) = \tilde F - iF = -i(F + i\tilde F)$ and $\star(F - i\tilde F) = \tilde F + iF = i(F - i\tilde F)$.
 >
-> **2. Components.** From [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]] and [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]], 1: $(F + i\tilde F)^{0j} = -E^j - iB^j = -(\mathbf E + i\mathbf B)^j$ and $(F + i\tilde F)^{jk} = -\varepsilon_{jkl}B^l + i\varepsilon_{jkl}E^l = i\varepsilon_{jkl}(E^l + iB^l)$. So $\mathbf Z = \mathbf E + i\mathbf B \mapsto F + i\tilde F$ is a complex-linear bijection from $\mathbb C^3$ onto the $(-i)$-eigenspace, which is three-dimensional (Theorem §C1a.5.6, 3).
+> **2. Components.** From [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]] and [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]], 1: $(F + i\tilde F)^{0j} = -E^j - iB^j = -(\mathbf E + i\mathbf B)^j$ and $(F + i\tilde F)^{jk} = -\varepsilon_{jkl}B^l + i\varepsilon_{jkl}E^l = i\varepsilon_{jkl}(E^l + iB^l)$. So $\mathbf Z = \mathbf E + i\mathbf B \mapsto F + i\tilde F$ is a complex-linear bijection from $\mathbb C^3$ onto the $(-i)$-eigenspace, which is three-dimensional (Theorem §C1a.5.6, 3).
 >
 > **3. The action of Λ.** For $\det\Lambda = 1$, $\Lambda$ commutes with $\star$ (Theorem §C1a.5.6, 2) and is real, so $\Lambda(F + i\tilde F) = \Lambda F + i\star(\Lambda F)$ lies in the same eigenspace; through the bijection of step 2 it acts on $\mathbf Z$ as a complex-linear map $O(\Lambda)$. Step 4 shows $\mathbf Z\cdot\mathbf Z$ is invariant for every $\mathbf Z$, so by polarization $O\mathbf Z\cdot O\mathbf Z' = \mathbf Z\cdot\mathbf Z'$ for all $\mathbf Z, \mathbf Z'$, i.e. $O^{\mathsf T}O = \mathbb 1$ (bilinear, not sesquilinear). Parity: $\mathcal P$ sends $\mathbf E \to -\mathbf E$, $\mathbf B \to \mathbf B$ (polar and axial), so $\mathbf E + i\mathbf B \to -\mathbf E + i\mathbf B = -(\mathbf E - i\mathbf B)$.
 >
-> **4. The complex invariant.** $\mathbf Z\cdot\mathbf Z = \mathbf E^2 - \mathbf B^2 + 2i\,\mathbf E\cdot\mathbf B$; by Theorem §C1a.7.2, 2, $\mathbf E^2 - \mathbf B^2 = -\frac12FF$ and $\mathbf E\cdot\mathbf B = -\frac14F\tilde F$, each invariant under $\det\Lambda = 1$.
+> **4. The complex invariant.** $\mathbf Z\cdot\mathbf Z = \mathbf E^2 - \mathbf B^2 + 2i\,\mathbf E\cdot\mathbf B$; by Theorem §C1a.7.3, 2, $\mathbf E^2 - \mathbf B^2 = -\frac12FF$ and $\mathbf E\cdot\mathbf B = -\frac14F\tilde F$, each invariant under $\det\Lambda = 1$.
 >
 > **What the derivation shows**
 > - Rotations act on $\mathbf Z$ as real rotations; boosts act as rotations by imaginary angles: the complexified Lorentz algebra $\mathfrak{so}(1,3)_{\mathbb C}$ is two copies of $\mathfrak{sl}(2, \mathbb C)$, the complexified rotation algebra ([[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-1|Theorem §CB.6.1]]), and the field strength carries one copy on $\mathbf E + i\mathbf B$ and the other on $\mathbf E - i\mathbf B$; in representation language these are $(1, 0)$ and $(0, 1)$, with $\mathbf E - i\mathbf B$ the $(1, 0)$ half in these conventions ([[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-1|§C3.3, Caution: Which half of F is called (1, 0)]]).
 > - Electromagnetic duality of the source-free equations, $\mathbf E \to \mathbf B$, $\mathbf B \to -\mathbf E$, is multiplication of $\mathbf Z$ by $-i$; continuous duality rotations $\mathbf Z \to e^{-i\alpha}\mathbf Z$ preserve the vacuum equations and the energy density $\frac12|\mathbf Z|^2$.
 
-^der-c1a-7-3
+^der-c1a-7-4
 
-*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]], [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]], [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]], [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]], [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]]
 
 ## The lecture's boost example
 
@@ -199,7 +214,7 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 ^cau-c1a-7-2
 
 > [!remark] Remark: Index techniques in Maxwell's equations
-> Electromagnetism is the first place where every index move is needed at once; each is general, $F$ only the example (the derivation of Theorem §C1a.7.1 uses all four).
+> Electromagnetism is the first place where every index move is needed at once; each is general, $F$ only the example (the derivation of Theorem §C1a.7.2 uses all four).
 > 1. **Split a contracted index into time and space, with no signs**: $\partial_\mu F^{\mu\nu} = \partial_0F^{0\nu} + \partial_iF^{i\nu}$; then fix the free index, $\nu = 0$ and $\nu = j$ being separate equations, and let $F^{00} = 0$ kill a term.
 > 2. **Use antisymmetry to reach the identification**: $F^{i0} = -F^{0i} = E^i$; the identification is stated for one ordering.
 > 3. **Put the free index in the first slot of $\varepsilon$ before naming a curl**: $(\nabla\times\mathbf B)^j = \varepsilon_{jik}\partial_iB^k$; a term arriving as $\varepsilon_{ijk}\partial_iB^k$ is $-(\nabla\times\mathbf B)^j$. This is where Ampère's sign comes from.
@@ -213,7 +228,7 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 > - **Redundancy.** The potential $A^\mu$ has four components but $A^\mu \to A^\mu + \partial^\mu\lambda$ changes nothing physical: the field strength is what is observed, and the potential is the variable in which the theory is local. Every gauge theory of the course has this structure (QFT C4: [[§C4.1 The Vector Field and Its Lorentz Transformation#^rem-c4-1-2|§C4.1, Remark: Four components, three or two states]], [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^def-c4-6-1|Def. §C4.6.1]]; C8 planned).
 > - **Dynamics from an action.** $\partial_\mu F^{\mu\nu} = J^\nu$ is the Euler–Lagrange equation of $\mathcal L = -\frac14F_{\mu\nu}F^{\mu\nu} - J^\mu A_\mu$, with the sixteen $\partial_\mu A_\nu$ as variables: $\partial\mathcal L/\partial(\partial_\mu A_\nu) = -F^{\mu\nu}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|Theorem §C1a.5.11]], 4) and $\partial\mathcal L/\partial A_\nu = -J^\nu$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]).
 > - **Three statements, one fact.** $F$ contains only derivatives of $A$, so the only undifferentiated $A$ is in the coupling; a mass term $\frac12m^2A_\mu A^\mu$ would supply one and is exactly what gauge invariance forbids. "No bare $A$ in $F$", "the photon is massless" and "the theory is gauge invariant" are one fact (massive vector fields: [[§C4.2★ The Proca Field#^mod-c4-2-1|Model §C4.2.1]], [[§C4.2★ The Proca Field#^rem-c4-2-1|§C4.2★, Remark: Why F² plus a mass term]]; that the mass term breaks gauge invariance: [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^thm-c4-6-3|Theorem §C4.6.3]]).
-> - **Coupling requires conservation.** Under a gauge transformation the coupling changes by $-J^\mu\partial_\mu\lambda = -\partial_\mu(J^\mu\lambda) + \lambda\,\partial_\mu J^\mu$, a total derivative exactly when $\partial_\mu J^\mu = 0$: the same condition Maxwell's equations impose (Theorem §C1a.7.1), and the one Noether's theorem delivers for a U(1) symmetry of matter ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]).
+> - **Coupling requires conservation.** Under a gauge transformation the coupling changes by $-J^\mu\partial_\mu\lambda = -\partial_\mu(J^\mu\lambda) + \lambda\,\partial_\mu J^\mu$, a total derivative exactly when $\partial_\mu J^\mu = 0$: the same condition Maxwell's equations impose (Theorem §C1a.7.2), and the one Noether's theorem delivers for a U(1) symmetry of matter ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]).
 > - **A constraint, not an evolution.** $F_{00} = 0$, so $\partial_tA_0$ never appears in $\mathcal L$: $A_0$ has no conjugate momentum, and its equation (Gauss's law) constrains the initial data instead of evolving them, the classical shadow of gauge invariance ([[§C1b.4 Hamiltonian Field Theory|§C1b.4]]).
 > - **Covariance at work.** $\partial_\mu F^{\mu\nu}$ and $J^\nu$ are both four-vectors, so the equation holds in all frames once it holds in one; no transformation of $\mathbf E$ and $\mathbf B$ is ever needed. This is the covariance principle applied to the equations that started relativity.
 >
@@ -223,7 +238,7 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 
 ## Back to SI and Gaussian units
 
-> [!theorem] Theorem §C1a.7.4: The SI–Heaviside–Lorentz Dictionary
+> [!theorem] Theorem §C1a.7.5: The SI–Heaviside–Lorentz Dictionary
 > With $c$ kept explicit, the substitutions
 >
 > $$
@@ -234,7 +249,7 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 >
 > *Source: the user's pre-course notes, §1.2 ("Rationalized natural units"; $\alpha = e^2/4\pi\varepsilon_0\hbar c$) · the dictionary derived here*
 
-^thm-c1a-7-4
+^thm-c1a-7-5
 
 > [!derivation]- Derivation
 > **1. Gauss.** SI: $\nabla\cdot\mathbf E_{\rm SI} = \rho_{\rm SI}/\varepsilon_0$. Substitute $\mathbf E_{\rm SI} = \mathbf E/\sqrt{\varepsilon_0}$, $\rho_{\rm SI} = \sqrt{\varepsilon_0}\,\rho$: $\nabla\cdot\mathbf E/\sqrt{\varepsilon_0} = \rho/\sqrt{\varepsilon_0}$, i.e. $\nabla\cdot\mathbf E = \rho$.
@@ -252,12 +267,12 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 > - The $4\pi$ moves from the field equations (Gaussian) to Coulomb's law (Heaviside–Lorentz): rationalized units keep the Lagrangian $-\frac14F_{\mu\nu}F^{\mu\nu}$ free of $4\pi$, which is why field theory uses them.
 > - Restoring $\hbar$ and $c$ in a natural-units formula is [[P4 Restoring ħ and c|P4]]; this theorem supplies the electromagnetic part.
 
-^der-c1a-7-4
+^der-c1a-7-5
 
 *Uses:* [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-1|Def. §C1a.7.1]], [[§B8.4 Maxwell's Equations#^pr-b8-4-2|EM Principle §B8.4.2]]
 
 > [!remark]- Connections
-> - Relativity level B derives the same tensor in SI units from the variation of a charge's coupling $-q\int A_\mu dx^\mu$, and obtains the transformation of $\mathbf E$ and $\mathbf B$, the invariant classes and the field of a moving charge; with Theorem §C1a.7.4 all of it carries over by $F_{\rm REL} = \sqrt{\mu_0}F$ and $c = 1$ — [[§B3.2 The Charged Particle#^thm-b3-2-5|REL Theorem §B3.2.5]], [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-2|REL Theorem §B4.2.2]], [[§B4.2 The Electromagnetic Field Tensor#^ex-b4-2-1|REL Example §B4.2.1]].
+> - Relativity level B derives the same tensor in SI units from the variation of a charge's coupling $-q\int A_\mu dx^\mu$, and obtains the transformation of $\mathbf E$ and $\mathbf B$, the invariant classes and the field of a moving charge; with Theorem §C1a.7.5 all of it carries over by $F_{\rm REL} = \sqrt{\mu_0}F$ and $c = 1$ — [[§B3.2 The Charged Particle#^thm-b3-2-5|REL Theorem §B3.2.5]], [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-2|REL Theorem §B4.2.2]], [[§B4.2 The Electromagnetic Field Tensor#^ex-b4-2-1|REL Example §B4.2.1]].
 > - In the Lorenz gauge $\partial_\mu A^\mu = 0$ the inhomogeneous equation becomes $\partial^2 A^\nu = J^\nu$: four massless Klein–Gordon equations with a source, solved by the retarded Green's function of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]] at $m = 0$ — [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]], [[§B11.1★ Potentials, Gauges and Retarded Potentials#^def-b11-1-1|EM Def. §B11.1.1]].
 > - The Bianchi identity is $d(dA) = 0$ for the two-form $F = dA$, and on a region without holes every closed $F$ is exact (Poincaré lemma); the exceptions on regions with holes are physics (monopoles, the Aharonov–Bohm phase) — [[§39 Closed and Exact Forms#^prop-39-7|452 Prop. §39.7]], [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect|QM §C4.3]].
 > - $\mathbf E\cdot\mathbf B \propto \varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ is a total derivative, so it is invisible to the classical equations; in non-abelian gauge theories and with fermions the same density produces the axial anomaly and the $\theta$ term (beyond the course).

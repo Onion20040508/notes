@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 Why is the Feynman contour singled out, and how do all the two-point functions fit together? Rotating the energy integral of the Feynman propagator of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription|§C2b.6]] to imaginary energies gives the Euclidean propagator, whose position-space form is the Bessel function of [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]]. The section ends with the whole family of two-point functions in one table, each row pointing to its home ([[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|Remark: The two-point functions at a glance]]), and the relations among them.
 
+**Setup.** The functions are those of the free real field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], $m > 0$) in the free vacuum $|0\rangle$, normalized by $(\partial^2 + m^2)D_C = -i\delta^4$. Every result here is an exact statement about these functions (contour deformations, analytic continuation, identities in $\mathcal S'$) and needs no dynamics; their reading as vacuum values, $D_F = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$ and the rest, needs the free field. The Wick rotation of a momentum integral holds for any integrand with the stated analyticity and decay, loop integrals included ([[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-3|Theorem §C6a.10.3]]).
+
 *Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\{\hat\phi\hat\phi\}|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
 
 ## Wick rotation and the Euclidean propagator
@@ -25,6 +27,8 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 > $$
 >
 > Its denominator never vanishes, and it is invariant under four-dimensional rotations; the integral converges only as an iterated integral or in $\mathcal S'$ ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|Theorem §C2b.7.4]], 3); its value, $mK_1(mR)/4\pi^2R$ with $R = |x_E|$, is [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]].
+>
+> *Model:* any; *applies:* a function, independent of the dynamics; it is the free field's $D_F$ at imaginary time ([[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-2|Theorem §C2b.7.2]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (eq. (DE)), Ch. 6 §6.10 · PHY 513 Lecture 6, "Another perspective: the Euclidean Green's Function"*
 
@@ -72,6 +76,8 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 > $$
 > D_F(-i\tau, \boldsymbol\xi) = D_E(\tau, \boldsymbol\xi) .
 > $$
+>
+> *Model:* any; *applies:* any theory (a statement about the function $D_F$), $\tau > 0$; its reading as a vacuum value in $|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.10 (Caution "When the rotation is legitimate") · PHY 513 Lecture 6*
 
@@ -135,6 +141,8 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 > 2. *(Position space)* With $\mathcal W(s^2) = mK_1(ms)/4\pi^2s$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]]), analytic off $s^2 \in (-\infty, 0]$: $D_E = \mathcal W(R^2)$ at Euclidean points; off the light cone $D_F = \mathcal W(-\xi^2 + i0)$ and $D_W = \mathcal W(-\xi^2 + i0\,\xi^0)$; near the cone (away from $\xi = 0$) both have the singular part $\frac{1}{4\pi^2}\frac{1}{-\xi^2 + i0}$, respectively $\frac{1}{4\pi^2}\frac{1}{-\xi^2 + i0\,\xi^0}$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-4|Theorem §CA.6.4]]).
 > 3. $D_E$ is a locally integrable function ($\simeq 1/4\pi^2R^2$ at $R \to 0$), the $\mathcal S'$ transform of $1/(p_E^2 + m^2)$; its singular support is the single point $x_E = 0$, where $D_F$'s is the whole cone.
 >
+> *Model:* any; *applies:* any theory (a statement about the functions, in $\mathcal S'$); its reading as a vacuum value in $|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.10 ("Feynman prescription = Euclidean prescription, continued"; Caution "When the rotation is legitimate") · PHY 513 Lecture 6 · stated here for distributions (standard: Osterwalder–Schrader; Streater & Wightman, Ch. 3)*
 
 ^thm-c2b-7-4
@@ -186,6 +194,8 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 > 2. $D_F = \frac12D_1 + \bar D$ and $D_{\bar F} = -\frac12D_1 + \bar D = -\overline{D_F}$; hence $D_F - D_{\bar F} = D_1$, $\operatorname{Re}D_F = \frac12D_1$, $\operatorname{Im}D_F = \frac12\operatorname{sgn}(\xi^0)D$.
 > 3. $D_F = D_R + D_W(-\xi) = D_A + D_W(\xi)$.
 > 4. At spacelike separation $D_R = D_A = \bar D = 0$ and $D_F = D_W = \frac12D_1 = \dfrac{m\,K_1(mr)}{4\pi^2r}$, $r = \sqrt{-\xi^2}$.
+>
+> *Model:* any; *applies:* any theory (identities among the functions, exact); their reading as vacuum values in $|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.11 (Derivations "Relations in position space", "Relations in momentum space", "At spacelike separation"), §6.8 (eq. (Grelations))*
 

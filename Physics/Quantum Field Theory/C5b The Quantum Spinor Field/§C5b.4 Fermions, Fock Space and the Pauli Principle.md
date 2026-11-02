@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 This is the spinor counterpart of [[§C2a.4 Particles and Relativistic Normalization|§C2a.4]]: with the Hamiltonian diagonal and positive ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]) and the ladder relations in hand ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-8|Theorem §C5b.3.8]]), what are the states? The vacuum and the Fock space ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|Principle §C5b.3.4]], postulated in §C5b.3 before the zero-point energy) are as for the scalar, with the relativistic normalization unchanged; the spin-specific additions are the two spin states per momentum, the antisymmetry of every multiparticle state, and with it the Pauli exclusion principle, which here is a consequence of the anticommutators and not a postulate ([[§C5b.1 Canonical Quantization of the Dirac Field#^rem-c5b-1-6|§C5b.1, Remark: Spin and statistics are an output]]). The charges of the two species are in [[§C5b.5 The U(1) Charge, Particles and Antiparticles|§C5b.5]]. Conventions as in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].
 
+**Setup.** The free Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) with anticommutators, on the fermionic Fock space over the free vacuum $|0\rangle$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^pr-c5b-3-4|Principle §C5b.3.4]]); one-particle states relativistically normalized as for the scalar ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); exact. The spin of the antifermion depends on the choice of $\eta^s$, fixed in [[§C9.5 Charge Conjugation on Oscillators and Spinors#^def-c9-5-5|Def. §C9.5.5]].
+
 ## The one-particle states
 
 > [!theorem] Theorem §C5b.4.1: Fermions and Antifermions
@@ -109,6 +111,8 @@ This is the spinor counterpart of [[§C2a.4 Particles and Relativistic Normaliza
 > $$
 >
 > For $\sigma^3$-eigenvectors $\xi^s, \eta^s \in \{(1, 0)^T, (0, 1)^T\}$: the fermion has $J_z = \pm\frac12$, the antifermion $J_z = \mp\frac12$, opposite to its two-spinor. With the choice $\eta^s = \xi^{-s}$ ([[§C9.5 Charge Conjugation on Oscillators and Spinors#^def-c9-5-5|Def. §C9.5.5]]) the antifermion created by $\hat b^{s\dagger}_{\mathbf 0}$ has $J_z = \pm\frac12$, like the fermion ([[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-3|Theorem §C9.7.3]]).
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact; particles at rest, $\hat{\mathbf J}$ normal ordered.
 >
 > *Source: PS §3.5, pp. 60–61, eqs. (3.111)–(3.112)*
 

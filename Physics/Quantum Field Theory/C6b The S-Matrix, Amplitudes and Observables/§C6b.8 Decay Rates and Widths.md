@@ -266,6 +266,8 @@ The decay rate follows from the box chain of [[§C6b.3 Transition Probabilities 
 ^mod-c6b-8-6
 
 > [!example] Example §C6b.8.1: Φ → φφ, the Lifetime at Lowest Order
+> ![[ph-qft-c6b-11-2.svg]]
+>
 > For $\mathcal L = \frac12(\partial_\mu\Phi)^2 - \frac12M^2\Phi^2 + \frac12(\partial_\mu\phi)^2 - \frac12m^2\phi^2 - \mu\,\Phi\phi^2$ ([[§C6b.8 Decay Rates and Widths#^mod-c6b-8-6|Model §C6b.8.6]]) with $M > 2m$, to lowest order in $\mu$:
 >
 > $$

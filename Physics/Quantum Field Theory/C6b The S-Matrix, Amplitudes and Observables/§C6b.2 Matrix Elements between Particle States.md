@@ -320,6 +320,8 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-3|P6, step 3]]
 
 > [!example] Example §C6b.2.1: φφ → φφ at First Order, by Contractions with the External States
+> ![[ph-qft-c6b-2-1.svg]]
+>
 > In $\phi^4$ theory ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]), for $\mathbf p_1, \mathbf p_2 \notin \{\mathbf p_A, \mathbf p_B\}$,
 >
 > $$
@@ -388,6 +390,8 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 ^ex-c6b-2-1
 
 > [!example] Example §C6b.2.2: Φφ² at First Order: the Factor 2 of Φ → φφ
+> ![[ph-qft-c6b-2-2.svg]]
+>
 > In [[§C6b.8 Decay Rates and Widths#^mod-c6b-8-6|Model §C6b.8.6]] ($\mathcal L_{\rm int} = -\mu\Phi\phi^2$, masses $M$, $m$), the first-order processes are:
 >
 > | in → out | loops | $i\mathcal M$ | kinematics ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5\|Theorem §C6b.2.5]]) |
@@ -413,6 +417,8 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 ^ex-c6b-2-2
 
 > [!example] Example §C6b.2.3: The Cubic Interaction at First Order: Everything Is Forbidden
+> ![[ph-qft-c6b-2-3.svg]]
+>
 > For $\mathcal L_{\rm int} = -\frac{g}{3!}\phi^3$ (the cubic vertex of [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]]) and on-shell particles of mass $m > 0$, every first-order matrix element with no forward pair vanishes:
 >
 > | in → out | loops | count $\frac{3!}{2^\ell\ell!}$ | matrix element | kinematics ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5\|Theorem §C6b.2.5]]) |
@@ -519,6 +525,8 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-4|P6, steps 4–6]]
 
 > [!example] Example §C6b.2.4: Cubic–Quartic Theory, 2 → 2 at Order g² and λ
+> ![[ph-qft-c6b-11-5.svg]]
+>
 > $\mathcal L = \frac12(\partial_\mu\phi)^2 - \frac{m^2}{2}\phi^2 - \frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4$ ([[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]]), vertices $-ig$, $-i\lambda$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]); $p_A + p_B \to p_1 + p_2$. A diagram with $n_3$ cubic and $n_4$ quartic vertices is of order $g^{n_3}\lambda^{n_4}$ (Problem Set 8: treat $\lambda \sim g^2/m^2$ as the same order).
 > - *$O(g^2)$, two cubic vertices*: $6$ legs, $4$ joined to external lines, so one internal line. If one vertex carried three external particles, the other would carry one, and its two remaining legs would be contracted with each other: not fully connected, excluded ([[§C6b.2 Matrix Elements between Particle States#^def-c6b-2-1|Def. §C6b.2.1]]). So each vertex carries two, and $p_A$ shares its vertex with exactly one of $p_B$, $p_1$, $p_2$ (putting $p_A$ on the other vertex only exchanges the vertices): three diagrams.
 > - *$O(\lambda)$, one quartic vertex*: all four on it, one diagram.
@@ -537,6 +545,8 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 ^ex-c6b-2-4
 
 > [!example] Example §C6b.2.5: Cubic–Quartic Theory, 2 → 3 at Order gλ
+> ![[ph-qft-c6b-2-4.svg]]
+>
 > Same theory, $p_A + p_B \to p_1 + p_2 + p_3$, one cubic and one quartic vertex: $3 + 4 = 7$ legs, $5$ joined to external lines, one internal line. Three external particles on the cubic vertex would leave two legs of the quartic vertex contracted with each other, four on the quartic vertex two legs of the cubic one: not fully connected. So two external particles sit on the cubic vertex and three on the quartic, and a diagram is the choice of the two at the cubic vertex: $\binom52 = 10$. With $u \in \{A, B\}$, $v \ne u$, $i \in \{1, 2, 3\}$, $\{j, k\} = \{1, 2, 3\}\setminus\{i\}$:
 >
 > | class | at the cubic vertex | number | internal momentum |

@@ -180,6 +180,8 @@ A delta function at zero momentum in a finite box is the volume:
 *Uses:* [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]
 
 > [!example] Example §C6a.11.1: The Denominator Through Second Order
+> ![[ph-qft-c6a-11-1.svg]]
+>
 > Write $D_{vw} = D_F(z_v - z_w)$, so $D_{vv} = D_F(0)$.
 >
 > **Step 1** (first order). Wick's theorem for the four factors of $\hat\phi_I(z_1)^4$: the $1 + 6$ terms with a normal-ordered remainder vanish in the vacuum and the $3!! = 3$ complete contractions survive ([[§C6a.7 Feynman Diagrams for Correlation Functions#^cau-c6a-7-3|§C6a.7, Caution: Numerator, not yet the interacting correlator]]):
@@ -278,6 +280,8 @@ A delta function at zero momentum in a finite box is the volume:
 *Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]], [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]
 
 > [!example] Example §C6a.11.2: The Figure-Eight Is the First-Order Vacuum Energy
+> ![[ph-qft-c6a-11-2.svg]]
+>
 > At first order the denominator is ([[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-1|Example §C6a.11.1]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]])
 >
 > $$
@@ -465,6 +469,8 @@ A delta function at zero momentum in a finite box is the volume:
 *The numerator factorizes: (the diagrams attached to $x$ and $y$, here the line, $\frac12$ tadpole and the shaded sum of higher orders) × (1 + the vacuum bubbles $\frac18$ figure-eight, $\frac{1}{16}$ dumbbell, $\frac{1}{48}$ melon, $\frac{1}{128}$ two figure-eights, …). The second factor is the denominator and cancels. Added figure.*
 
 > [!example] Example §C6a.11.3: The Factorization at Second Order
+> ![[ph-qft-c6a-11-3.svg]]
+>
 > Write $C_1 = \frac12(\text{tadpole})$ and $V_1 = \frac18(\text{figure-eight})$, each with its $-i\lambda\int d^4z$:
 >
 > $$
@@ -511,6 +517,8 @@ A delta function at zero momentum in a finite box is the volume:
 ^cau-c6a-11-1
 
 > [!example] Example §C6a.11.4: The Physical Two-Point Function Through First Order, in Momentum Space
+> ![[ph-qft-c6a-11-4.svg]]
+>
 > **Step 1** (position space). By [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]] the figure-eight term of [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]] is gone (done by hand at this order in [[§C6a.7 Feynman Diagrams for Correlation Functions#^cau-c6a-7-3|§C6a.7, Caution: Numerator, not yet the interacting correlator]]):
 >
 > $$

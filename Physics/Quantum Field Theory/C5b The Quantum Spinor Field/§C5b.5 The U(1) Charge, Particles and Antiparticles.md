@@ -15,6 +15,8 @@ tags: [quantum-field-theory, level-c, draft]
 
 This is the spinor counterpart of [[§C2a.5 The Complex Scalar Field and Its Charge|§C2a.5]]: the Dirac field is complex, and like the complex scalar it has a conserved U(1) charge that distinguishes its two species. Classically the two fields have opposite pathologies — the complex scalar a positive energy and an indefinite charge, the Dirac field an indefinite energy and a positive charge density — and quantization with the matching statistics makes them alike: positive energy for both species, charge $+1$ for particles and $-1$ for antiparticles. The ordering of the charge is not a convention, since a vacuum charge would be observable. The section ends with the field reading of Dirac's sea. Conventions as in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].
 
+**Setup.** The free Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) with the expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]. Theorem §C5b.5.1 uses no (anti)commutation relation; Theorem §C5b.5.2 is classical (c-number amplitudes, commuting components); Theorems §C5b.5.3–§C5b.5.4 use the anticommutators and the free vacuum $|0\rangle$. Exact; the charge is normalized as in Peskin–Schroeder ($\hat Q = \int\hat\psi^\dagger\hat\psi$, Def. §C5b.5.1).
+
 ## The charge
 
 The current has its home in Chapter C5a, where its conservation follows from the two Dirac equations (and from Noether's theorem for the phase symmetry); it is shown here as it stands there:
@@ -33,6 +35,9 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 > normalized as in PS; the Noether charge of $\psi \to e^{i\alpha}\psi$ in the sign convention of [[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|§C1b.6, Caution: Sign and normalization of the U(1) current]] is $-\hat Q$. The electric charge is $\hat Q$ times the charge of the fermion. As an operator, $\hat Q$ is fixed only once its ordering is ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]]).
 >
 > *Scalar analogue:* [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field; the ordering of $\hat Q$ is fixed in [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]].
+>
 > *Source: PS §3.5, p. 62, eq. (3.113) · Yu §5.5.3, eqs. (5.264)–(5.267) · the user's pre-course notes, §5.5 ("$U(1)$ global symmetry")*
 
 ^def-c5b-5-1
@@ -45,6 +50,9 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 > $$
 >
 > *Scalar analogue:* the charge of the complex field before reordering, in [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact, an identity of the mode expansion that uses no (anti)commutation relation.
+>
 > *Source: PS §3.5, p. 62 (first form of eq. (3.113)) · Yu §5.5.3, eqs. (5.264)–(5.267) · PHY 513, Problem Set 6, Problem 2 (as the user wrote it, at $t = 0$)*
 
 ^thm-c5b-5-1
@@ -74,6 +82,8 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 > $$
 >
 > $H$ takes every real value and is unbounded below; $Q$ vanishes only for $\psi = 0$. These are the negative energies and the positive density of the Dirac equation of Quantum Mechanics ([[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]], [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]]), now for the classical field.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] (classical); *applies:* classical, commuting c-number amplitudes in $\mathcal S(\mathbb R^3)$, exact; after quantization both statements change ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]]).
 >
 > *Source: PS §3.5, p. 54 (after eq. (3.90)) · Yu §5.5.1, after eq. (5.237) · the user's pre-course notes, §5.4 (end) and §5.5*
 

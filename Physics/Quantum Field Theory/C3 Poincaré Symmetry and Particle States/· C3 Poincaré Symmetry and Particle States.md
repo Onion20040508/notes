@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C3 Poincaré Symmetry and Particle States
 ← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (54), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (20), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (34), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (1), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (5), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (5), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (5), [[· CA Mathematical Methods|CA Mathematical Methods]] (11), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (107)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (7), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (6), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (26), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (7), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (6), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (47)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (55), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (24), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (40), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (15), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (3), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (9), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (6), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (7), [[· CA Mathematical Methods|CA Mathematical Methods]] (11), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (107)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (7), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (12), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (26), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (7), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (1), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (6), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (47)
 
 ## Sections
 - [[§C3.1 Index Slots, Rotations and Spin in Field Theory]] — 
@@ -40,12 +40,12 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-5|§C3.3.5]] Vector Fields, Upper and Lower Index
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|§C3.3.6]] Two-Index Tensor Fields
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|§C3.3.7]] The Field Strength Is (1, 0) ⊕ (0, 1)
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-2|§C3.4.2]] The Generators Are Hermitian
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|§C3.4.3]] Finite Transformations as Exponentials
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-4|§C3.4.4]] How the Generators Transform
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] The Poincaré Algebra
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|§C3.4.6]] P² Is a Casimir Operator
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|§C3.4.7]] An Invariant Vacuum Has Zero Four-Momentum
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|§C3.4.3]] The Generators Are Hermitian
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-4|§C3.4.4]] Finite Transformations as Exponentials
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] How the Generators Transform
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|§C3.4.6]] The Poincaré Algebra
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|§C3.4.7]] P² Is a Casimir Operator
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|§C3.4.8]] An Invariant Vacuum Has Zero Four-Momentum
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|§C3.5.2]] Translations of a Field; the Heisenberg Equation
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-3|§C3.5.3]] Lorentz Transformations of a Field: Orbital plus Spin
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|§C3.5.4]] The Free Scalar Field Carries a Unitary Representation
@@ -68,3 +68,6 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-6|§C3.7.6]] Helicity Is Quantized
 - [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-7|§C3.7.7]] The Pauli–Lubanski Vector of a Massless Particle
 - [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-8|§C3.7.8]] Little-Group Translations Shift a Polarization Vector by the Momentum
+
+## Models
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-2|§C3.4.2]] A Relativistic Quantum Theory

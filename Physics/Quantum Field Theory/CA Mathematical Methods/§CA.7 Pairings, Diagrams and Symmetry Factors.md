@@ -567,6 +567,8 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 *The product formula of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]]. (a) The three kinds of factor: $2^{\ell}\ell!$ for $\ell$ loops at one vertex, $m!$ for $m$ lines between two points, and $|\Gamma_P|$ for the vertex permutations that keep the drawing. (b) Four diagrams with their $S$; with external points fixed, $\Gamma_P$ can be trivial.*
 
 > [!example] Example §CA.7.1: Symmetry Factors from the Product Formula
+> ![[ph-qft-ca-7-7.svg]]
+>
 > Each item: the data $|\Gamma_P|$, $\ell_P(v)$, $m_P(u, w)$ of the diagram, $S$ by [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]], and the size of its orbit $|G_n|/S$ by [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]], each confirmed by enumerating the pairings.
 >
 > *$n = 1$, $E = \{x, y\}$, $|G_1| = 24$.*

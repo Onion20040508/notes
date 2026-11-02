@@ -15,6 +15,8 @@ tags: [quantum-field-theory, level-c, draft]
 
 This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b.5]]–[[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] and the single home of the Dirac propagator $S_F$. Every Green's function of the Dirac operator is $i\slashed{\partial} + m$ applied to a Klein–Gordon Green's function, with the boundary condition (the contour) inherited unchanged; the spin-specific additions are the numerator $\slashed{p} + m$ (the spin sum continued off the shell), the normalization $(i\slashed{\partial} - m)S = +i\delta^4$, and the minus sign of fermionic time ordering. The contour work is [[P2 Green's Functions by Contour Integration]] with a numerator. Conventions as in [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality|§C5b.7]]; the Dirac Green's functions are normalized by $(i\slashed{\partial} - m)S = i\delta^4$ (PS).
 
+**Setup.** The functions $S_R$, $S_A$, $S_F$ are vacuum values of the free Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) in the free vacuum $|0\rangle$, normalized by $(i\slashed{\partial} - m)S = i\delta^4$, $m > 0$. As Green's functions and distributions (Theorems §C5b.8.1, §C5b.8.4, §C5b.8.5) they are statements about functions, valid wherever they are used; their reading as vacuum values needs the free field. Fermionic time ordering (Def. §C5b.8.2) applies to any fermion operators. With interactions the two-point function in $|\Omega\rangle$ is not $S_F$ beyond lowest order (the line of Theorem §C5b.8.3).
+
 ## Green's functions of the Dirac operator
 
 > [!definition] Definition §C5b.8.1: Retarded and Advanced Functions of the Dirac Field
@@ -27,6 +29,9 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 > the products with $\theta$ taken slice by slice as for the scalar $D_R = \theta(\xi^0)iD$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], 1); that they are Green's functions is [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]].
 >
 > *Scalar analogue:* $D_R$, $D_A$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]]).
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: PS §3.5, eq. (3.116) ($S_R$) · named here after Bjorken–Drell ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^cau-c5b-7-1|§C5b.7, Caution: The letter S]])*
 
 ^def-c5b-8-1
@@ -41,6 +46,9 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 > For $C = F$ this is $S_F$ ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]]); for $C = R, A$, $S_R = (i\slashed{\partial} + m)D_R$ and $S_A = (i\slashed{\partial} + m)D_A$ are the functions of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-1|Def. §C5b.8.1]], with $\tilde S_R = i(\slashed{p} + m)/\bigl((p^0 + i\varepsilon)^2 - E^2_{\mathbf p}\bigr)$; $S_R$ is supported in the closed forward cone.
 >
 > *Scalar analogue:* [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]].
+>
+> *Model:* any; *applies:* any theory (a statement about the functions); their reading as vacuum values in $|0\rangle$ needs the free field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]).
+>
 > *Source: PS §3.5, eqs. (3.116)–(3.120) · stated here as distributions*
 
 ^thm-c5b-8-1
@@ -86,6 +94,9 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 > $T\{\hat\psi_a(x)\hat{\bar\psi}_b(y)\}$ of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]] is the same operator in every inertial frame. With a plus sign in place of the minus it would not be: at spacelike separation the two orderings would differ by $2\hat{\bar\psi}_b(y)\hat\psi_a(x) \ne 0$.
 >
 > *Scalar analogue:* Step 4 of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^der-c2b-6-1|Derivation §C2b.6.1]] ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|Theorem §C2b.6.1]]).
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact, an operator statement; it uses only that the fields anticommute at spacelike separation ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-3|Theorem §C5b.7.3]]).
+>
 > *Source: the user's pre-course notes, "Time-ordered product and microcausality" ("the extra minus sign on swapping fermionic operators is what keeps $T[\psi_a(x)\bar\psi_b(y)]$ Lorentz invariant") · PS §3.5, p. 63*
 
 ^thm-c5b-8-2
@@ -235,6 +246,8 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 >
 > the limit of [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]. So $\tilde S_F = \dfrac{i}{\slashed{p} - m + i\varepsilon}$, PS's and the user's form, is a matrix inverse taken before the limit.
 >
+> *Model:* any; *applies:* any theory (a statement about the matrix function), $m > 0$; its reading as $\langle0|T\{\hat\psi\hat{\bar\psi}\}|0\rangle$ needs the free field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]).
+>
 > *Source: the user's pre-course notes, §6.4 ("$1/(\slashed{p} - m + i\varepsilon)$ is understood as the inverse matrix") · PS §3.5, eq. (3.120) · the limit justified here*
 
 ^thm-c5b-8-5
@@ -268,6 +281,9 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 > | Feynman $S_F$ | $\langle0\vert T\{\hat\psi(x)\hat{\bar\psi}(y)\}\vert0\rangle$ | $(i\slashed{\partial} + m)D_F$ | $\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon}$ | Green's; limit $\varepsilon \to 0^+$ in $\mathcal S'$ — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4\|Theorem §C5b.8.4]] |
 >
 > *Scalar analogue:* [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact; with interactions the vacuum values in $|\Omega\rangle$ differ beyond lowest order (as for $S_F$, [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]]).
+>
 > *Source: PS §3.5, eqs. (3.114)–(3.121) · Yu §6.4.5 · assembled here*
 
 ^def-c5b-8-3

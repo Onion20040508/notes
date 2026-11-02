@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]], and, since the Dirac field is complex, of the two oscillator sets of the complex scalar ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]]). It expands the Dirac field on the plane-wave spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9]], extracts the coefficients with the positive product $\int\psi^\dagger\psi$, and shows Lecture 10's principle: anticommutators of the fields ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]) are equivalent to anticommutators of the oscillators. The spin-specific steps (spin labels, spin sums with the $\gamma^0$ of $\bar\psi$, signs from anticommutation) have their own boxes. The first of Lecture 10's checkpoints, where the commutator version would fail, closes the section. Conventions as in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].
 
+**Setup.** The free Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) quantized with the equal-time anticommutators ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]); the mode functions are the c-number spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9]], normalized as in [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]], and the oscillators have $\{\hat a^r_{\mathbf p}, \hat a^{s\dagger}_{\mathbf q}\} = (2\pi)^3\delta^{rs}\delta^3(\mathbf p - \mathbf q)$. All statements are operator identities, exact, with no state or vacuum used; Theorem §C5b.2.5 assumes commutators instead, to show where they fail.
+
 ## The mode expansion
 
 The derivation below uses the Clifford relation of the Dirac matrices:
@@ -114,6 +116,9 @@ The derivation below uses the Clifford relation of the Dirac matrices:
 > $\hat\psi$ annihilates particles ($\hat a$) and creates antiparticles ($\hat b^\dagger$); $\hat\psi^\dagger$ and $\hat{\bar\psi}$ both annihilate antiparticles ($\hat b$) and create particles ($\hat a^\dagger$), with the same operator content, because $\gamma^0$ only rearranges spinor components. $\hat\psi^\dagger$ is the field in the canonical structure: the conjugate momentum $\hat\pi_\psi = i\hat\psi^\dagger$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-1|Theorem §C5b.1.1]]) has the mode expansion $i$ times the first formula; $\hat\psi^\dagger$ enters the anticommutators $\{\hat\psi, \hat\psi^\dagger\}$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]]) and the bilinears $\hat H = \int\hat\psi^\dagger H_{\text{s.p.}}\hat\psi$, $\hat{\mathbf P} = \int\hat\psi^\dagger(-i\nabla)\hat\psi$ and $\hat Q = \int\hat\psi^\dagger\hat\psi$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|Theorem §C5b.5.1]]); $\hat{\bar\psi}$ enters the covariant bilinears and the two-point functions.
 >
 > *Scalar analogue:* $\hat\phi^\dagger$ of the complex field and its momentum $\hat\pi = \dot{\hat\phi}^\dagger$, [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact.
+>
 > *Source: Lecture 10, slide 12 ($\hat\psi^\dagger_b$ at $t = 0$ in components, "components of $\hat\psi^\dagger$ are $\hat\psi^\ast$"), slides 18–19 ($\hat\psi^\dagger$ in the Hamiltonian) and slide 22 ($\hat{\bar\psi}$) · the user's PHY 513 notes, Ch. 10 §10.3 (Derivation "The conjugate field": Hermitian conjugate, then $\gamma^0$ on the right) · PS §3.5, eqs. (3.99)–(3.100) ($\hat\psi$ and $\hat{\bar\psi}$; $\hat\psi^\dagger$ is not displayed there) · Yu §5.4.2, eqs. (5.216)–(5.218) ($\hat\psi$, $\hat\psi^\dagger$, $\hat{\bar\psi}$), and §5.4.3, eq. (5.220) ($\hat\pi = i\hat\psi^\dagger$ in modes)*
 
 ^thm-c5b-2-2
@@ -188,6 +193,9 @@ The derivation below uses the Clifford relation of the Dirac matrices:
 > and by adjoints, with $\hat\psi^\dagger$ of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], $\hat a^{s\dagger}_{\mathbf p} = \frac{1}{\sqrt{2E_{\mathbf p}}}\int d^3x\,e^{-ip\cdot x}\hat\psi^\dagger(x)u^s(p)$, $\hat b^s_{\mathbf p} = \frac{1}{\sqrt{2E_{\mathbf p}}}\int d^3x\,e^{ip\cdot x}\hat\psi^\dagger(x)v^s(p)$: $\hat a$ and $\hat b^\dagger$ come from $\hat\psi$, $\hat a^\dagger$ and $\hat b$ from $\hat\psi^\dagger$. The right sides do not depend on $t$. As identities of operator-valued distributions in $\mathbf p$ they hold after smearing, $\hat a^s(g) = \int d^3x\,(F^s_g)^\dagger\hat\psi$ with $F^s_g(x) = \int\frac{d^3p}{(2\pi)^3}\frac{g(\mathbf p)}{\sqrt{2E_{\mathbf p}}}u^s(p)e^{-ip\cdot x}$.
 >
 > *Scalar analogue:* [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-5|Theorem §C2a.2.5]], there with the indefinite Klein–Gordon product.
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact, at any time $t$ (the free time dependence of the expansion).
+>
 > *Source: Yu §5.4.3, eqs. (5.224)–(5.227) · the user's pre-course notes, §5.5 (verified there)*
 
 ^thm-c5b-2-3
@@ -351,6 +359,9 @@ Lecture 10 did the quantization with anticommutators only and named the places w
 > and all other commutators, including the mixed ones, vanish (identities of distributions in $(\mathbf p, \mathbf q)$; smeared, $[\hat b^r(g), \hat b^{s\dagger}(h)] = -\delta^{rs}\int\frac{d^3p}{(2\pi)^3}\overline gh$).
 >
 > *Scalar analogue:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], where the same computation gives the positive sign for both species.
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] quantized with commutators, the rule that is rejected; *applies:* free field, exact; the physical rule is [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]].
+>
 > *Source: Yu §5.5.1, eqs. (5.228)–(5.236) · the user's pre-course notes, §5.5 ("Failure of canonical commutation relations") · PS §3.5, eqs. (3.86)–(3.90) · Lecture 10, slide 6 and transcript (the commutator version, not computed in the lecture)*
 
 ^thm-c5b-2-5

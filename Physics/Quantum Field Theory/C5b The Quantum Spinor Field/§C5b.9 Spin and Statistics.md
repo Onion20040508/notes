@@ -13,11 +13,15 @@ tags: [quantum-field-theory, level-c]
 
 The chapter closes where Lecture 10 began, with spin and statistics. The theorem was stated as a principle in [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-7|Principle §C5b.1.7]], without proof; the course's two free fields can now be checked against it, the Dirac field for two independent reasons: positivity of energy and norms ([[§C5b.3 Energy, Momentum and the Zero-Point Energy|§C5b.3]]) and causality ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality|§C5b.7]]). The scalar side of the comparison is [[§C2a.4 Particles and Relativistic Normalization|§C2a.4]] and [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]]. Two remarks then gather the lecture's summary and the correspondence with Yu and Peskin–Schroeder. Conventions as in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].
 
+**Setup.** The two free fields of the course, the Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) and the real scalar ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]), each on its Fock space over its free vacuum $|0\rangle$; exact. The general theorem (Principle §C5b.1.7) is stated, not proved, in this course.
+
 > [!theorem] Theorem §C5b.9.1: The Free Fields of the Course Obey the Spin–Statistics Theorem
 > 1. The free Dirac field (spin ½) admits no quantization with commutators that has positive norms and an energy bounded below ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]), nor one that propagates causally ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]]); with anticommutators it has positive energies and norms ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]]) and commuting observables at spacelike separation ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-4|Theorem §C5b.7.4]]).
 > 2. The free scalar field (spin 0) quantized with commutators has positive energies and norms and is microcausal ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
 >
 > Both therefore obey [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-7|Principle §C5b.1.7]]; its quanta are fermions and bosons respectively ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|Theorem §C5b.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]).
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] (part 1), [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] (part 2); *applies:* free fields, free vacuum $|0\rangle$, exact.
 >
 > *Source: Lecture 10, slides 6–7 · the user's PHY 513 notes, Ch. 10 §§10.1–10.2, 10.4 · PS §3.5, pp. 54–58 · Yu §5.5.1, §5.5.4 · the user's pre-course notes, §5.5*
 
