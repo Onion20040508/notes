@@ -3,21 +3,21 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C6b
-section: C6b.3
+section: C6b.4
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6b.2 Matrix Elements between Particle States]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.4 The Cross Section]] →
+← [[§C6b.3 Feynman Rules for Amplitudes]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.5 The Cross Section]] →
 
 *Sources: Yu Zhao-Huan, 量子场论讲义, §6.5.1 "跃迁概率", pp. 239–242, eqs. (6.276)–(6.306) (page images checked, PDF pp. 247–250); §6.2, eqs. (6.122)–(6.127) (the $S$-operator); §2.3.4, eqs. (2.157), (2.171) (norms) · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), slide 22 ("Derivation similar"), and transcript · the user's PHY 513 notes, Ch. 15 §15.10 (paragraph "Correspondence with Yu") · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, p. 96 (the factor $(2\pi)^4\delta^{(4)}(0) = 2T\cdot V$), §4.5, pp. 104–106.*
 
-**What is prepared.** Two particles $A$ and $B$ with sharp momenta $\mathbf p_A$, $\mathbf p_B$, in a periodic box of volume $\tilde V$, evolved from the far past to the far future, a total time $\tilde T$ ([[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]]). **What is measured.** Whether the final state consists of $n$ given particles with momenta in given ranges $d^3p_1, \dots, d^3p_n$, and how often per unit time. This section computes that rate, step by step, in Yu's order (§6.5.1): the transition probability ([[§C6b.3 Transition Probabilities in a Box#^def-c6b-3-1|Def. §C6b.3.1]]), its numerator with the squared delta function made finite by the box ([[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-2|Theorem §C6b.3.2]]), the norms of the states ([[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-3|Theorem §C6b.3.3]]), the rate per unit time ([[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-4|Theorem §C6b.3.4]]), the number of final states in a momentum range ([[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-5|Theorem §C6b.3.5]]), the rate into that range ([[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-6|Theorem §C6b.3.6]]) and the factor for identical final particles ([[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-7|Theorem §C6b.3.7]]). Plane-wave states have infinite norm on all of space, and the square of $\langle f|i\hat T|i\rangle$ contains the square of a delta function; in the box both are finite numbers, proportional to $\tilde V$ and $\tilde V\tilde T$, and all of them cancel in the end. [[§C6b.4 The Cross Section|§C6b.4]] divides the rate by the flux and obtains the cross section. The course derives the same cross section with wave packets and without the box ([[§C6b.5 Wave Packets and the Cross Section|§C6b.5]]–[[§C6b.6 Evaluating the Cross Section|§C6b.6]], "the careful version"); [[§C6b.8 Decay Rates and Widths|§C6b.8]] runs the same chain with one initial particle.
+**What is prepared.** Two particles $A$ and $B$ with sharp momenta $\mathbf p_A$, $\mathbf p_B$, in a periodic box of volume $\tilde V$, evolved from the far past to the far future, a total time $\tilde T$ ([[§C6b.4 Transition Probabilities in a Box#^mod-c6b-4-1|Model §C6b.4.1]]). **What is measured.** Whether the final state consists of $n$ given particles with momenta in given ranges $d^3p_1, \dots, d^3p_n$, and how often per unit time. This section computes that rate, step by step, in Yu's order (§6.5.1): the transition probability ([[§C6b.4 Transition Probabilities in a Box#^def-c6b-4-1|Def. §C6b.4.1]]), its numerator with the squared delta function made finite by the box ([[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-2|Theorem §C6b.4.2]]), the norms of the states ([[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-3|Theorem §C6b.4.3]]), the rate per unit time ([[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-4|Theorem §C6b.4.4]]), the number of final states in a momentum range ([[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-5|Theorem §C6b.4.5]]), the rate into that range ([[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-6|Theorem §C6b.4.6]]) and the factor for identical final particles ([[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-7|Theorem §C6b.4.7]]). Plane-wave states have infinite norm on all of space, and the square of $\langle f|i\hat T|i\rangle$ contains the square of a delta function; in the box both are finite numbers, proportional to $\tilde V$ and $\tilde V\tilde T$, and all of them cancel in the end. [[§C6b.5 The Cross Section|§C6b.5]] divides the rate by the flux and obtains the cross section. The course derives the same cross section with wave packets and without the box ([[§C6b.6 Wave Packets and the Cross Section|§C6b.6]]–[[§C6b.7 Evaluating the Cross Section|§C6b.7]], "the careful version"); [[§C6b.9 Decay Rates and Widths|§C6b.9]] runs the same chain with one initial particle.
 
 *Conventions* ([[Larsen PHY 513]]): $\tilde V = L^3$ is the volume of the periodic box and $\tilde T$ the duration of the process; the tildes, Yu's, keep them apart from the operator $\hat T$, the time ordering $T\{\cdots\}$ and the half-duration $T$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], with $\tilde T = 2T$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-4|§C6b.1, Caution: Four T's]]). $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $E_A \equiv E_{\mathbf p_A}$, $E_j \equiv E_{\mathbf p_j}$. $p_i = p_A + p_B$ and $p_f = \sum_jp_j$ are the total four-momenta of the initial and final states (Yu (6.286)). $S_{\rm id}$ is the identical-particle factor ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]]).
 
 ## The model
 
-> [!model] Model §C6b.3.1: Two Particles in a Box
+> [!model] Model §C6b.4.1: Two Particles in a Box
 > Two particles $A$, $B$ (masses $m_A$, $m_B$) with sharp momenta scatter into $n$ particles.
 > - *Space:* a cube of side $L$, volume $\tilde V = L^3$, with periodic boundary conditions; every particle is a plane wave spread uniformly over the box, one particle per volume $\tilde V$.
 > - *Time:* the evolution runs from the far past to the far future; its duration is $\tilde T$.
@@ -29,30 +29,30 @@ tags: [quantum-field-theory, level-c]
 > $$
 >
 > - *Final state:* different from the initial one, $f \ne i$ (other particle content, or other momenta).
-> - *Applies:* exactly if the interaction is switched off at early and late times, $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$, so that the free states are the asymptotic states; for a permanent interaction (a fixed $\hat H$) at lowest order only: beyond it the external particles carry factors $\sqrt Z$ and the physical mass ([[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]; [[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|§C6b.1, Caution: "Free" means widely separated]]).
+> - *Applies:* exactly if the interaction is switched off at early and late times, $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$, so that the free states are the asymptotic states; for a permanent interaction (a fixed $\hat H$) at lowest order only: beyond it the external particles carry factors $\sqrt Z$ and the physical mass ([[§C6b.10 Amplitudes from Correlation Functions#^cau-c6b-10-2|§C6b.10, Caution: The rule is stated at lowest order]]; [[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|§C6b.1, Caution: "Free" means widely separated]]).
 >
 > *Source: Yu §6.2, eqs. (6.122)–(6.125) (asymptotic states of free form, $S = U(+\infty, -\infty)$); §6.5.1, eqs. (6.282), (6.284)–(6.285), (6.292) (the box, the states, the duration), (6.295) (periodic boundary conditions)*
 
-^mod-c6b-3-1
+^mod-c6b-4-1
 
 ## The transition probability
 
-> [!definition] Definition §C6b.3.1: Transition Probability
+> [!definition] Definition §C6b.4.1: Transition Probability
 > The **transition probability** from $|i\rangle$ to $|f\rangle$ is the squared overlap of the unit vectors along $\hat S|i\rangle$ and $|f\rangle$:
 >
 > $$
 > P_{fi} = \frac{|\langle f|\hat S|i\rangle|^2}{\langle i|i\rangle\,\langle f|f\rangle} = \Bigl|\Bigl\langle\frac{f}{\sqrt{\langle f|f\rangle}}\Bigr|\hat S\Bigl|\frac{i}{\sqrt{\langle i|i\rangle}}\Bigr\rangle\Bigr|^2 .
 > $$
 >
-> *Model:* [[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]].
+> *Model:* [[§C6b.4 Transition Probabilities in a Box#^mod-c6b-4-1|Model §C6b.4.1]].
 >
 > *Source: Yu §6.5.1, eq. (6.276) ("除以它们使得跃迁概率具有合适的归一化": dividing by the self inner products gives the probability its proper normalization)*
 
-^def-c6b-3-1
+^def-c6b-4-1
 
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-2|P7, step 2]]
 
-Why both norms: the Born rule gives probabilities as squared overlaps of *unit* vectors, and the box states have norms $\propto\tilde V$ ([[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-3|Theorem §C6b.3.3]] below). The evolution does not change the norm of the initial vector, by unitarity ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-1|Theorem §C6a.3.1]]; Yu (6.127)):
+Why both norms: the Born rule gives probabilities as squared overlaps of *unit* vectors, and the box states have norms $\propto\tilde V$ ([[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-3|Theorem §C6b.4.3]] below). The evolution does not change the norm of the initial vector, by unitarity ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-1|Theorem §C6a.3.1]]; Yu (6.127)):
 
 $$
 \langle\hat Si|\hat Si\rangle = \langle i|\hat S^\dagger\hat S|i\rangle = \langle i|\mathbb 1|i\rangle = \langle i|i\rangle ,
@@ -68,7 +68,7 @@ $$
 
 identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before the box is removed ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], with the lattice derived from the boundary condition and the box in time; listed at the end; PS §4.4, p. 96: $(2\pi)^4\delta(0) = 2T\cdot V$).
 
-> [!theorem] Theorem §C6b.3.2: The Squared Amplitude in a Box
+> [!theorem] Theorem §C6b.4.2: The Squared Amplitude in a Box
 > For $f \ne i$, with $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]],
 > 1. only $i\hat T$ contributes: $\langle f|\hat S|i\rangle = \langle f|i\hat T|i\rangle$, and
 >
@@ -84,11 +84,11 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 >
 > with $(2\pi)^4\delta^4(0) = \int d^4x = \tilde V\tilde T$.
 >
-> *Model:* [[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]]; *applies:* as there.
+> *Model:* [[§C6b.4 Transition Probabilities in a Box#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as there.
 >
 > *Source: Yu §6.5.1, eqs. (6.276)–(6.283) (page image checked: $(2\pi)^4\delta^{(4)}(0) = \int d^4x = \tilde V\tilde T$, "$\tilde V$ 是空间积分区域的体积，$\tilde T$ 是时间积分范围的长度") · PS §4.4, p. 96*
 
-^thm-c6b-3-2
+^thm-c6b-4-2
 
 > [!derivation]- Derivation
 > **Step 1** (the $\mathbb 1$ drops out; part 1). By [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]],
@@ -97,7 +97,7 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 > \langle f|\hat S|i\rangle = \langle f|\mathbb 1 + i\hat T|i\rangle = \langle f|i\rangle + \langle f|i\hat T|i\rangle .
 > $$
 >
-> States of different particle content are orthogonal. For the same content, the overlap is a sum of products of $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), which in the box is $2E_{\mathbf p}\tilde V\delta_{\mathbf p\mathbf q}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], 2; [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]): it vanishes when the sets of lattice momenta differ. So $\langle f|i\rangle = 0$ for $f \ne i$, and $\langle f|\hat S|i\rangle = \langle f|i\hat T|i\rangle$; inserted in [[§C6b.3 Transition Probabilities in a Box#^def-c6b-3-1|Def. §C6b.3.1]] this is Yu's (6.276). The same statement for the in and out states of the careful route is [[§C6b.5 Wave Packets and the Cross Section#^lem-c6b-5-5|Lemma §C6b.5.5]].
+> States of different particle content are orthogonal. For the same content, the overlap is a sum of products of $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), which in the box is $2E_{\mathbf p}\tilde V\delta_{\mathbf p\mathbf q}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], 2; [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]): it vanishes when the sets of lattice momenta differ. So $\langle f|i\rangle = 0$ for $f \ne i$, and $\langle f|\hat S|i\rangle = \langle f|i\hat T|i\rangle$; inserted in [[§C6b.4 Transition Probabilities in a Box#^def-c6b-4-1|Def. §C6b.4.1]] this is Yu's (6.276). The same statement for the in and out states of the careful route is [[§C6b.6 Wave Packets and the Cross Section#^lem-c6b-6-5|Lemma §C6b.6.5]].
 >
 > **Step 2** (square the amplitude). By [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], $\langle f|i\hat T|i\rangle = (2\pi)^4\delta^4(p_i - p_f)\,i\mathcal M$. The delta function is real and $|i\mathcal M|^2 = (i\mathcal M)(-i\mathcal M^\ast) = |\mathcal M|^2$:
 >
@@ -128,10 +128,10 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 > Steps 2–4 together: $|\langle f|i\hat T|i\rangle|^2 = \tilde V\tilde T\,(2\pi)^4\delta^4(p_i - p_f)\,|\mathcal M|^2$ (Yu (6.283)).
 >
 > **What the derivation shows.**
-> - The squared amplitude carries one factor $\tilde V\tilde T$; the second delta function survives and becomes part of the phase space ([[§C6b.4 The Cross Section|§C6b.4]], the annotated formula).
+> - The squared amplitude carries one factor $\tilde V\tilde T$; the second delta function survives and becomes part of the phase space ([[§C6b.5 The Cross Section|§C6b.5]], the annotated formula).
 > - The same box factor, written $2T\cdot V$, made every vacuum bubble proportional to the volume of spacetime ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]); $\tilde T = 2T$.
 
-^der-c6b-3-2
+^der-c6b-4-2
 
 *Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]
 
@@ -139,7 +139,7 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 
 ## The states and their norms
 
-> [!theorem] Theorem §C6b.3.3: Norms of the Box States
+> [!theorem] Theorem §C6b.4.3: Norms of the Box States
 > 1. One particle: $\langle\mathbf p|\mathbf p\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0) = 2E_{\mathbf p}\tilde V$.
 > 2. The initial state, for $A \ne B$, or $A = B$ with $\mathbf p_A \ne \mathbf p_B$:
 >
@@ -153,11 +153,11 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 > \langle f|f\rangle = \prod_{j=1}^n\bigl(2E_j\tilde V\bigr) .
 > $$
 >
-> *Model:* [[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]] (free, relativistically normalized states over $|0\rangle$).
+> *Model:* [[§C6b.4 Transition Probabilities in a Box#^mod-c6b-4-1|Model §C6b.4.1]] (free, relativistically normalized states over $|0\rangle$).
 >
 > *Source: Yu §6.5.1, eqs. (6.284)–(6.290) (page image checked); §2.3.4, eqs. (2.157), (2.171)*
 
-^thm-c6b-3-3
+^thm-c6b-4-3
 
 > [!derivation]- Derivation
 > **Step 1** (one particle; part 1). [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] at $\mathbf q = \mathbf p$, and the box value $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ ([[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]; Yu (6.288)):
@@ -180,7 +180,7 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 >
 > since $\delta_{\mathbf p_A\mathbf p_B} = 0$ (Yu, after (6.289): "若 $\mathbf p_{\mathcal A} \ne \mathbf p_{\mathcal B}$，则根据 (2.171) … 也能推出这个结果").
 >
-> **Step 4** ($n$ final particles; part 3). Commuting each annihilator through the creators, the overlap of $n$ relativistically normalized quanta of one species is a sum over the $n!$ ways of matching the momenta (the general form of Step 3; written out in [[§C6b.6 Evaluating the Cross Section#^der-c6b-6-4|Derivation §C6b.6.4]], Step 2):
+> **Step 4** ($n$ final particles; part 3). Commuting each annihilator through the creators, the overlap of $n$ relativistically normalized quanta of one species is a sum over the $n!$ ways of matching the momenta (the general form of Step 3; written out in [[§C6b.7 Evaluating the Cross Section#^der-c6b-7-4|Derivation §C6b.7.4]], Step 2):
 >
 > $$
 > \langle\mathbf p_1\cdots\mathbf p_n|\mathbf p_1\cdots\mathbf p_n\rangle = \prod_{j=1}^n2E_j\sum_{\pi\in S_n}\prod_{j=1}^n(2\pi)^3\delta^3(\mathbf p_j - \mathbf p_{\pi(j)}) \leftrightarrow \prod_{j=1}^n2E_j\sum_{\pi\in S_n}\prod_{j=1}^n\tilde V\,\delta_{\mathbf p_j\mathbf p_{\pi(j)}} .
@@ -194,15 +194,15 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 >
 > **What the derivation shows.**
 > - Each particle contributes one factor $\tilde V$ to the norm: $\tilde V^2$ for the initial state, $\tilde V^n$ for the final one.
-> - Coincident momenta of identical bosons give a larger norm; [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-7|Theorem §C6b.3.7]] needs it.
+> - Coincident momenta of identical bosons give a larger norm; [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-7|Theorem §C6b.4.7]] needs it.
 
-^der-c6b-3-3
+^der-c6b-4-3
 
 *Uses:* [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]
 
 ## The rate
 
-> [!theorem] Theorem §C6b.3.4: The Transition Probability Grows Linearly in Time; the Rate
+> [!theorem] Theorem §C6b.4.4: The Transition Probability Grows Linearly in Time; the Rate
 > For $f \ne i$ with distinct final momenta,
 >
 > $$
@@ -215,14 +215,14 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 > R_{\{p_j\}} \equiv \frac{P_{fi}}{\tilde T} = \Bigl[4E_AE_B\tilde V\prod_{j=1}^n\bigl(2E_j\tilde V\bigr)\Bigr]^{-1}(2\pi)^4\delta^4\Bigl(p_A + p_B - \sum_{j=1}^np_j\Bigr)\,|\mathcal M|^2 .
 > $$
 >
-> *Model:* [[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]]; *applies:* as there, and for a duration $\tilde T$ long compared with the collision.
+> *Model:* [[§C6b.4 Transition Probabilities in a Box#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as there, and for a duration $\tilde T$ long compared with the collision.
 >
 > *Source: Yu §6.5.1, eqs. (6.291)–(6.293) (page image checked)*
 
-^thm-c6b-3-4
+^thm-c6b-4-4
 
 > [!derivation]- Derivation
-> **Step 1** (insert). [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-2|Theorem §C6b.3.2]] for the numerator and [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-3|Theorem §C6b.3.3]] for the denominator, then one $\tilde V$ cancelled (Yu (6.291)):
+> **Step 1** (insert). [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-2|Theorem §C6b.4.2]] for the numerator and [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-3|Theorem §C6b.4.3]] for the denominator, then one $\tilde V$ cancelled (Yu (6.291)):
 >
 > $$
 > P_{fi} = \frac{\tilde V\tilde T\,(2\pi)^4\delta^4(p_i - p_f)\,|\mathcal M|^2}{4E_AE_B\tilde V^2\prod_{j=1}^n\bigl(2E_j\tilde V\bigr)} = \frac{\tilde T\,(2\pi)^4\delta^4(p_i - p_f)\,|\mathcal M|^2}{4E_AE_B\tilde V\prod_{j=1}^n\bigl(2E_j\tilde V\bigr)} .
@@ -244,17 +244,17 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 >
 > **What the derivation shows.**
 > - Why a rate: $P_{fi}$ grows in proportion to the time during which the particles overlap in the box, so the transition happens at a constant probability per unit time, and that number is the physical one. Quantum mechanics found the same at first order: the transition probability into a continuum grows like $t$ for long times and Fermi's golden rule is its slope ([[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]]).
-> - The rate still contains $1/\tilde V$ per particle: $n + 1$ powers. The next two theorems remove $n$ of them by counting final states; [[§C6b.4 The Cross Section|§C6b.4]] removes the last one with the flux.
+> - The rate still contains $1/\tilde V$ per particle: $n + 1$ powers. The next two theorems remove $n$ of them by counting final states; [[§C6b.5 The Cross Section|§C6b.5]] removes the last one with the flux.
 
-^der-c6b-3-4
+^der-c6b-4-4
 
-*Uses:* [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-2|Theorem §C6b.3.2]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-3|Theorem §C6b.3.3]]
+*Uses:* [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-2|Theorem §C6b.4.2]], [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-3|Theorem §C6b.4.3]]
 
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-3|P7, step 3]]
 
 ## Counting the final states
 
-> [!theorem] Theorem §C6b.3.5: Final States in a Periodic Box
+> [!theorem] Theorem §C6b.4.5: Final States in a Periodic Box
 > 1. With the periodic boundary condition $\varphi(-L/2) = \varphi(L/2)$ in each direction, the momentum operator $\hat p_x = -i\partial/\partial x$ is Hermitian on the box, and its eigenfunctions $\varphi_{\mathbf p} \propto e^{i\mathbf p\cdot\mathbf x}$ have $\mathbf p = \frac{2\pi}{L}(k_1, k_2, k_3)$, $k_1, k_2, k_3 \in \mathbb Z$.
 > 2. A range $d^3p$ of a final particle's momentum contains $\tilde V\,d^3p/(2\pi)^3$ of these states; a sum over the final momenta of $n$ particles becomes
 >
@@ -262,11 +262,11 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 > \sum_{\mathbf p_1, \dots, \mathbf p_n} \;\longrightarrow\; \prod_{j=1}^n\frac{\tilde V}{(2\pi)^3}\int d^3p_j .
 > $$
 >
-> *Model:* [[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]] (each final particle confined to the periodic cube).
+> *Model:* [[§C6b.4 Transition Probabilities in a Box#^mod-c6b-4-1|Model §C6b.4.1]] (each final particle confined to the periodic cube).
 >
 > *Source: Yu §6.5.1, eqs. (6.294)–(6.302) (page image checked; Yu cites Zeng Jinyan, Quantum Mechanics I, §4.4.3, for the boundary condition)*
 
-^thm-c6b-3-5
+^thm-c6b-4-5
 
 > [!derivation]- Derivation
 > **Step 1** (why periodic; part 1). For wave functions $\varphi$, $\psi$ on $[-L/2, L/2]$, integrate by parts:
@@ -288,14 +288,14 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 > (Yu (6.302)). The $n$ final particles have independent lattices, so the sum over $(\mathbf p_1, \dots, \mathbf p_n)$ is the product of $n$ such sums.
 >
 > **What the derivation shows.**
-> - The count carries one factor $\tilde V$ per final particle, the same $\tilde V$ that the norm $\langle f|f\rangle$ put in the denominator ([[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-3|Theorem §C6b.3.3]], 3): this is why they cancel.
+> - The count carries one factor $\tilde V$ per final particle, the same $\tilde V$ that the norm $\langle f|f\rangle$ put in the denominator ([[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-3|Theorem §C6b.4.3]], 3): this is why they cancel.
 > - The measure $\frac{d^3p}{(2\pi)^3}$ of the phase space is the density of box states per unit volume.
 
-^der-c6b-3-5
+^der-c6b-4-5
 
 *Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]
 
-> [!theorem] Theorem §C6b.3.6: The Rate into a Range of Final Momenta
+> [!theorem] Theorem §C6b.4.6: The Rate into a Range of Final Momenta
 > The rate into final momenta in $d^3p_1\cdots d^3p_n$ is
 >
 > $$
@@ -304,14 +304,14 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 >
 > and the total rate is $R = \int dR$ over all final momenta. Each factor $\frac{d^3p_j}{(2\pi)^3\,2E_j}$ is the Lorentz-invariant measure on the positive-energy mass shell.
 >
-> *Model:* [[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]]; *applies:* as there, for final states without identical particles (with them: [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-7|Theorem §C6b.3.7]]).
+> *Model:* [[§C6b.4 Transition Probabilities in a Box#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as there, for final states without identical particles (with them: [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-7|Theorem §C6b.4.7]]).
 >
 > *Source: Yu §6.5.1, eqs. (6.303)–(6.304) (page image checked)*
 
-^thm-c6b-3-6
+^thm-c6b-4-6
 
 > [!derivation]- Derivation
-> **Step 1** (sum the rate over the states in the range). By [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-5|Theorem §C6b.3.5]], 2, the range contains $\prod_j\tilde V\,d^3p_j/(2\pi)^3$ states, and [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-4|Theorem §C6b.3.4]] gives the same rate for each (the range is small):
+> **Step 1** (sum the rate over the states in the range). By [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-5|Theorem §C6b.4.5]], 2, the range contains $\prod_j\tilde V\,d^3p_j/(2\pi)^3$ states, and [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-4|Theorem §C6b.4.4]] gives the same rate for each (the range is small):
 >
 > $$
 > dR = \prod_{j=1}^n\frac{\tilde V\,d^3p_j}{(2\pi)^3}\cdot\Bigl[4E_AE_B\tilde V\prod_{j=1}^n\bigl(2E_j\tilde V\bigr)\Bigr]^{-1}(2\pi)^4\delta^4\Bigl(p_A + p_B - \sum_jp_j\Bigr)\,|\mathcal M|^2 .
@@ -328,32 +328,32 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 > **Step 3** (the measure). $\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}} = \frac{d^4p}{(2\pi)^4}\,2\pi\delta(p^2 - m^2)\theta(p^0)$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]): it covers exactly the four-momenta on the mass shell with positive energy, and it is Lorentz invariant ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]; Yu (6.304), with his (2.159), (2.161)).
 >
 > **What the derivation shows.**
-> - Of the $n + 1$ powers of $1/\tilde V$ in the rate, $n$ are gone; the one left belongs to the initial state, and the flux removes it ([[§C6b.4 The Cross Section|§C6b.4]]).
+> - Of the $n + 1$ powers of $1/\tilde V$ in the rate, $n$ are gone; the one left belongs to the initial state, and the flux removes it ([[§C6b.5 The Cross Section|§C6b.5]]).
 > - The factor $\frac{1}{2E_j}$ of each final particle is its relativistic normalization; the factor $\frac{1}{(2\pi)^3}$ is the density of states.
 
-^der-c6b-3-6
+^der-c6b-4-6
 
-*Uses:* [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-4|Theorem §C6b.3.4]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-5|Theorem §C6b.3.5]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]
+*Uses:* [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-4|Theorem §C6b.4.4]], [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-5|Theorem §C6b.4.5]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]
 
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-4|P7, step 4]]
 
-> [!theorem] Theorem §C6b.3.7: Identical Particles in the Final State
-> If the final state contains $n_k$ identical particles of species $k$, integrating $dR$ of [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-6|Theorem §C6b.3.6]] over all final momenta counts every physical final state $n_k!$ times per species, also when identical bosons share a momentum. The total rate is
+> [!theorem] Theorem §C6b.4.7: Identical Particles in the Final State
+> If the final state contains $n_k$ identical particles of species $k$, integrating $dR$ of [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-6|Theorem §C6b.4.6]] over all final momenta counts every physical final state $n_k!$ times per species, also when identical bosons share a momentum. The total rate is
 >
 > $$
 > R = \frac{1}{S_{\rm id}}\int dR = \frac{1}{S_{\rm id}}\,\frac{1}{4E_AE_B\tilde V}\;\prod_{j=1}^n\int\frac{d^3p_j}{(2\pi)^3\,2E_j}\;(2\pi)^4\delta^4\Bigl(p_A + p_B - \sum_jp_j\Bigr)\,|\mathcal M|^2 , \qquad S_{\rm id} = \prod_kn_k! .
 > $$
 >
-> *Model:* [[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]]; *applies:* as there.
+> *Model:* [[§C6b.4 Transition Probabilities in a Box#^mod-c6b-4-1|Model §C6b.4.1]]; *applies:* as there.
 >
 > *Source: Yu §6.5.1, eqs. (6.305)–(6.306) and footnote 6 (page image checked) · PS §4.5, p. 108*
 
-^thm-c6b-3-7
+^thm-c6b-4-7
 
 > [!derivation]- Derivation
 > Take one species with $n$ identical particles; several species give the product of the factors.
 >
-> **Step 1** (states versus ordered momenta). $|\mathbf p_{\pi(1)}\cdots\mathbf p_{\pi(n)}\rangle = |\mathbf p_1\cdots\mathbf p_n\rangle$ for every permutation $\pi$ ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], 1): a state is labelled by the multiset $\{\mathbf p_1, \dots, \mathbf p_n\}$, while $\int dR$, by [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-5|Theorem §C6b.3.5]], sums over ordered $n$-tuples of lattice momenta.
+> **Step 1** (states versus ordered momenta). $|\mathbf p_{\pi(1)}\cdots\mathbf p_{\pi(n)}\rangle = |\mathbf p_1\cdots\mathbf p_n\rangle$ for every permutation $\pi$ ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], 1): a state is labelled by the multiset $\{\mathbf p_1, \dots, \mathbf p_n\}$, while $\int dR$, by [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-5|Theorem §C6b.4.5]], sums over ordered $n$-tuples of lattice momenta.
 >
 > **Step 2** (how many tuples per state). Let the multiset contain $r$ different momenta with multiplicities $m_1, \dots, m_r$, $\sum_am_a = n$. The orderings of it number
 >
@@ -361,36 +361,36 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 > \#\{\text{tuples}\} = \frac{n!}{m_1!\cdots m_r!} .
 > $$
 >
-> **Step 3** (the true norm). In the overlap of [[§C6b.3 Transition Probabilities in a Box#^der-c6b-3-3|Derivation §C6b.3.3]], Step 4, a permutation $\pi$ survives if and only if $\mathbf p_{\pi(j)} = \mathbf p_j$ for all $j$, i.e. it only permutes equal momenta among themselves; there are $m_1!\cdots m_r!$ of them, each contributing $\prod_j\tilde V$:
+> **Step 3** (the true norm). In the overlap of [[§C6b.4 Transition Probabilities in a Box#^der-c6b-4-3|Derivation §C6b.4.3]], Step 4, a permutation $\pi$ survives if and only if $\mathbf p_{\pi(j)} = \mathbf p_j$ for all $j$, i.e. it only permutes equal momenta among themselves; there are $m_1!\cdots m_r!$ of them, each contributing $\prod_j\tilde V$:
 >
 > $$
 > \langle f|f\rangle = m_1!\cdots m_r!\;\prod_{j=1}^n2E_j\tilde V .
 > $$
 >
-> **Step 4** (compare). The rate into the state is $|\langle f|i\hat T|i\rangle|^2/(\langle i|i\rangle\langle f|f\rangle\tilde T)$ with the true norm, i.e. $R_{\{p_j\}}/(m_1!\cdots m_r!)$, since [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-4|Theorem §C6b.3.4]] used $\prod_j2E_j\tilde V$. The tuple sum gives each state the weight
+> **Step 4** (compare). The rate into the state is $|\langle f|i\hat T|i\rangle|^2/(\langle i|i\rangle\langle f|f\rangle\tilde T)$ with the true norm, i.e. $R_{\{p_j\}}/(m_1!\cdots m_r!)$, since [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-4|Theorem §C6b.4.4]] used $\prod_j2E_j\tilde V$. The tuple sum gives each state the weight
 >
 > $$
 > \frac{n!}{m_1!\cdots m_r!}\cdot R_{\{p_j\}} = n!\cdot\frac{R_{\{p_j\}}}{m_1!\cdots m_r!} = n!\cdot\bigl(\text{rate into the state}\bigr) ,
 > $$
 >
-> the same factor $n!$ for every multiset. So the sum over states is $\frac{1}{n!}$ times the tuple sum, and with [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-6|Theorem §C6b.3.6]] the statement follows (Yu (6.305)–(6.306)). Distinct momenta are Yu's main text; coincident ones his footnote 6 ("内积 $\langle f|f\rangle$ 应改为 (6.290) 式右边的 $n_k!$ 倍").
+> the same factor $n!$ for every multiset. So the sum over states is $\frac{1}{n!}$ times the tuple sum, and with [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-6|Theorem §C6b.4.6]] the statement follows (Yu (6.305)–(6.306)). Distinct momenta are Yu's main text; coincident ones his footnote 6 ("内积 $\langle f|f\rangle$ 应改为 (6.290) 式右边的 $n_k!$ 倍").
 >
 > **What the derivation shows.**
 > - Two identical particles: $\{\mathbf p, \mathbf q\}$ with $\mathbf p \ne \mathbf q$ is reached by two tuples with norm factor 1, and $\{\mathbf p, \mathbf p\}$ by one tuple with norm factor $2$; both are weighted $2 = 2!$ times too much.
-> - The factor counts final *states*; it is not in $dR$ at a point of phase space ([[§C6b.4 The Cross Section#^thm-c6b-4-6|Theorem §C6b.4.6]]). The careful route gets the same $\frac{1}{S_{\rm id}}$ from the resolution of the identity on $n$-particle states ([[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-4|Theorem §C6b.6.4]]).
+> - The factor counts final *states*; it is not in $dR$ at a point of phase space ([[§C6b.5 The Cross Section#^thm-c6b-5-6|Theorem §C6b.5.6]]). The careful route gets the same $\frac{1}{S_{\rm id}}$ from the resolution of the identity on $n$-particle states ([[§C6b.7 Evaluating the Cross Section#^thm-c6b-7-4|Theorem §C6b.7.4]]).
 
-^der-c6b-3-7
+^der-c6b-4-7
 
-*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-3|Theorem §C6b.3.3]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-4|Theorem §C6b.3.4]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-5|Theorem §C6b.3.5]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-6|Theorem §C6b.3.6]]
+*Uses:* [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-3|Theorem §C6b.4.3]], [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-4|Theorem §C6b.4.4]], [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-5|Theorem §C6b.4.5]], [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-6|Theorem §C6b.4.6]]
 
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-7|P7, step 7]]
 
 > [!caution] Caution: Names in Yu's §6.5.1
-> Yu writes the initial particles in script, $\mathcal A$, $\mathcal B$, and the identical-particle factor $\mathcal S$ (末态对称性因子, (6.305)); these notes write $A$, $B$ and $S_{\rm id}$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]]). His $T_{fi} = \langle f|T|i\rangle$ is $\langle f|\hat T|i\rangle$ here, and his $R$ (单位时间内的跃迁概率) is the rate $R$ of [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-4|Theorem §C6b.3.4]]–[[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-7|Theorem §C6b.3.7]]; the calligraphic $\mathcal R$ of [[§C6b.4 The Cross Section|§C6b.4]] is a rate per unit volume. His creation operators carry no hats and no helicity labels (spinless particles here).
+> Yu writes the initial particles in script, $\mathcal A$, $\mathcal B$, and the identical-particle factor $\mathcal S$ (末态对称性因子, (6.305)); these notes write $A$, $B$ and $S_{\rm id}$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]]). His $T_{fi} = \langle f|T|i\rangle$ is $\langle f|\hat T|i\rangle$ here, and his $R$ (单位时间内的跃迁概率) is the rate $R$ of [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-4|Theorem §C6b.4.4]]–[[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-7|Theorem §C6b.4.7]]; the calligraphic $\mathcal R$ of [[§C6b.5 The Cross Section|§C6b.5]] is a rate per unit volume. His creation operators carry no hats and no helicity labels (spinless particles here).
 >
 > *Source: Yu §6.5.1, eqs. (6.273), (6.284), (6.292), (6.305)*
 
-^cau-c6b-3-1
+^cau-c6b-4-1
 
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
@@ -399,6 +399,6 @@ identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before t
 
 > [!remark]- Connections
 > - The box is the regularization of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] and [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]: the same $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ that made the zero-point energy a volume times a density ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]), and the same $(2\pi)^4\delta^4(0)$ as the vacuum bubbles ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]).
-> - A rate linear in the duration, with a density of final states, is Fermi's golden rule; here the density is $\tilde V\,d^3p/(2\pi)^3$ per particle and energy conservation is the $\delta(E_A + E_B - \sum E_j)$ of [[§C6b.3 Transition Probabilities in a Box#^der-c6b-3-4|Derivation §C6b.3.4]], Step 3 — [[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]].
-> - The careful version of every step, without the box: wave packets of unit norm ([[§C6b.5 Wave Packets and the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]) instead of $\langle i|i\rangle = 4E_AE_B\tilde V^2$, and an integral over the impact parameter instead of $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ — [[§C6b.5 Wave Packets and the Cross Section|§C6b.5]], table in its opening.
-> - The decay rate is the same chain with one initial particle, $\langle i|i\rangle = 2E_A\tilde V$ — [[§C6b.8 Decay Rates and Widths#^thm-c6b-8-2|Theorem §C6b.8.2]].
+> - A rate linear in the duration, with a density of final states, is Fermi's golden rule; here the density is $\tilde V\,d^3p/(2\pi)^3$ per particle and energy conservation is the $\delta(E_A + E_B - \sum E_j)$ of [[§C6b.4 Transition Probabilities in a Box#^der-c6b-4-4|Derivation §C6b.4.4]], Step 3 — [[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]].
+> - The careful version of every step, without the box: wave packets of unit norm ([[§C6b.6 Wave Packets and the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]]) instead of $\langle i|i\rangle = 4E_AE_B\tilde V^2$, and an integral over the impact parameter instead of $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ — [[§C6b.6 Wave Packets and the Cross Section|§C6b.6]], table in its opening.
+> - The decay rate is the same chain with one initial particle, $\langle i|i\rangle = 2E_A\tilde V$ — [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-2|Theorem §C6b.9.2]].

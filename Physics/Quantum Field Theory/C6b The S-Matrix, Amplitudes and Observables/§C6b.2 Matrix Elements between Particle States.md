@@ -7,17 +7,17 @@ section: C6b.2
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6b.1 The S-Matrix and the Invariant Amplitude]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.3 Transition Probabilities in a Box]] →
+← [[§C6b.1 The S-Matrix and the Invariant Amplitude]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.3 Feynman Rules for Amplitudes]] →
 
-*Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.6, pp. 109–112, eqs. (4.89)–(4.98) (contractions with external states (4.93)–(4.94); $\phi\phi \to \phi\phi$ (4.98)), pp. 114–115, eqs. (4.103)–(4.104) and the rules for $\phi^4$ · Yu Zhao-Huan, 量子场论讲义, §7.1, pp. 262–272, eqs. (7.13)–(7.24) (contractions of fields with initial and final particles; the first-order $T$-matrix elements of Yukawa theory, Fig. 7.1–7.2, and the kinematic filter, p. 272), p. 268 (boxed contraction rule), p. 281 (boxed $n!$ rule), eqs. (7.86)–(7.87); §7.3, eqs. (7.112)–(7.121); §7.4, eqs. (7.133)–(7.142) · PHY 513, Problem Set 8, Problems 2, 3(d)–(e) and 4 (the user's solutions, submitted 2026-10-30) · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), transcript ("strip off the external lines").*
+*Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.6, pp. 109–113, eqs. (4.89)–(4.98), (4.101)–(4.102) (contractions with external states (4.93)–(4.94); $\phi\phi \to \phi\phi$ (4.98)) · PHY 513 Lecture 16 (Larsen, 2 Nov 2026), Part B, slides 10–18, and transcript · the user's PHY 513 notes, Lecture 16 update, §16.3–§16.4 · Yu Zhao-Huan, 量子场论讲义, §7.1, pp. 262–272, eqs. (7.13)–(7.24) (contractions of fields with initial and final particles; the first-order $T$-matrix elements of Yukawa theory, Fig. 7.1–7.2, and the kinematic filter, p. 272), p. 268 (boxed contraction rule), p. 281 (boxed $n!$ rule), eqs. (7.86)–(7.87); §7.3, eqs. (7.112)–(7.121); §7.4, eqs. (7.133)–(7.142) · PHY 513, Problem Set 8, Problems 2, 3(d)–(e) and 4 (the user's solutions, submitted 2026-10-30) · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), transcript ("strip off the external lines").*
 
-[[§C6b.1 The S-Matrix and the Invariant Amplitude|§C6b.1]] defined the matrix elements $\langle f|i\hat T|i\rangle$ and the amplitude $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]). This section computes them from the Dyson series with particles, not the vacuum, on both sides. The new step is a contraction of a field with an external particle: a field annihilates an incoming particle or creates an outgoing one, and each such contraction is a plane wave ([[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-1|Lemma §C6b.2.1]], [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]]). With it Wick's theorem holds between particle states ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]]). At first order this gives Yu's procedure: list every matrix element the interaction allows, then keep those that energy-momentum conservation allows ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]], [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]]). At higher order it gives the tree-level Feynman rules for $i\mathcal M$ ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-7|Theorem §C6b.2.7]]). Problem Set 8 had to build these tools by hand (Problems 3 and 4). [[§C6b.9 Amplitudes from Correlation Functions|§C6b.9]] reaches the same rules from the correlation functions of C6a by amputation, the route that generalizes beyond lowest order (LSZ). Yu computes $S$-matrix elements this way from the start (§7.1–§7.4); PS do it in §4.6 (eqs. (4.89)–(4.104)).
+[[§C6b.1 The S-Matrix and the Invariant Amplitude|§C6b.1]] defined the matrix elements $\langle f|i\hat T|i\rangle$ and the amplitude $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]). This section computes them from the Dyson series with particles, not the vacuum, on both sides. The new step is a contraction of a field with an external particle: a field annihilates an incoming particle or creates an outgoing one, and each such contraction is a plane wave ([[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-1|Lemma §C6b.2.1]], [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]]). With it Wick's theorem holds between particle states ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]]), and its terms sort into the $\mathbb 1$ (particles passing through on $\delta$-lines, [[§C6b.2 Matrix Elements between Particle States#^def-c6b-2-1|Def. §C6b.2.1]]), vacuum bubbles, corrections of the external states, and the scattering ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]]; Lecture 16, Part B). At first order this gives Yu's procedure: list every matrix element the interaction allows, then keep those that energy-momentum conservation allows ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]], [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|Theorem §C6b.2.6]]). At higher order it gives the Feynman rules for $i\mathcal M$, the subject of [[§C6b.3 Feynman Rules for Amplitudes|§C6b.3]] ([[§C6b.3 Feynman Rules for Amplitudes#^thm-c6b-3-2|Theorem §C6b.3.2]], [[§C6b.3 Feynman Rules for Amplitudes#^thm-c6b-3-3|Theorem §C6b.3.3]]). Problem Set 8 had to build these tools by hand (Problems 3 and 4). [[§C6b.10 Amplitudes from Correlation Functions|§C6b.10]] reaches the same rules from the correlation functions of C6a by amputation, the route that generalizes beyond lowest order (LSZ). Yu computes $S$-matrix elements this way from the start (§7.1–§7.4); PS do it in §4.6 (eqs. (4.89)–(4.98)); Lecture 16, Part B, does it for $2 \to 2$ in $\phi^4$.
 
 **Setup and scope.** The in and out states are free Fock states over the free vacuum $|0\rangle$, relativistically normalized ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), $|i\rangle = |\mathbf k_1\cdots\mathbf k_n\rangle$, $\langle f| = \langle\mathbf p_1\cdots\mathbf p_m|$. Between them the interaction-picture evolution operator acts ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]):
 $$
 \langle f|\hat S|i\rangle = \langle f|U(+\infty, -\infty)|i\rangle = \langle f|\,T\Bigl\{\exp\Bigl[i\int d^4x\,\mathcal L_{\rm int}\bigl(\hat\phi_I(x)\bigr)\Bigr]\Bigr\}|i\rangle \qquad (\text{no derivatives in }\mathcal L_{\rm int}) .
 $$
-This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] (the source switches off; [[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.10]]). In [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (a permanent interaction) it is valid at **lowest order**; beyond it the external particles carry $\sqrt Z$ and the physical mass ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]]; [[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]; the LSZ formula, Lecture 16). The lemmas and Theorem §C6b.2.3 are statements about free fields and free states, exact in any case. Each box states its scope.
+This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] (the source switches off; [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.11]]). In [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (a permanent interaction) it is valid at **lowest order**; beyond it the external particles carry $\sqrt Z$ and the physical mass ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]]; [[§C6b.10 Amplitudes from Correlation Functions#^cau-c6b-10-2|§C6b.10, Caution: The rule is stated at lowest order]]; the LSZ formula, Lecture 16). The lemmas and Theorem §C6b.2.3 are statements about free fields and free states, exact in any case. Each box states its scope.
 
 *Conventions* ([[Larsen PHY 513]]): $\hat\phi_I^\pm$ the positive- and negative-frequency parts ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]); a contraction with an external particle is written with the same bracket as between fields, $\overbracket{\hat\phi_I(x)|\mathbf k\rangle}$, $\overbracket{\langle\mathbf p|\hat\phi_I(x)}$ (PS (4.94); Yu (7.15), (7.18)); for a complex field $|\mathbf p^+\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$ (particle), $|\mathbf p^-\rangle = \sqrt{2E_{\mathbf p}}\,\hat b^\dagger_{\mathbf p}|0\rangle$ (antiparticle), as Yu (7.133)–(7.134). The vertex integrals give momentum deltas, $\int d^4x\,e^{ip\cdot x} = (2\pi)^4\delta^4(p)$ as tempered distributions ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], listed at the end).
 
@@ -205,7 +205,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > $\alpha$ injective from $A$ to the outgoing particles.
 >
-> **Step 5** (the particles left over). The remaining overlap is ([[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-10-5|Theorem §C6b.10.5]], relativistic form)
+> **Step 5** (the particles left over). The remaining overlap is ([[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-5|Theorem §C6b.11.5]], relativistic form)
 >
 > $$
 > \langle\mathbf p_{j_1}\cdots\mathbf p_{j_s}|\mathbf k_{i_1}\cdots\mathbf k_{i_{s'}}\rangle = \delta_{ss'}\sum_{\pi\in S_s}\prod_{u=1}^s2E_{\mathbf k_{i_u}}(2\pi)^3\delta^3(\mathbf p_{j_{\pi(u)}} - \mathbf k_{i_u}) ,
@@ -229,11 +229,115 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 
 ^der-c6b-2-3
 
-*Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-1|Lemma §C6b.2.1]], [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]], [[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-10-5|Theorem §C6b.10.5]]
+*Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-1|Lemma §C6b.2.1]], [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]], [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-5|Theorem §C6b.11.5]]
+
+## Which terms are scattering
+
+> [!definition] Definition §C6b.2.1: The δ-Line
+> A particle that passes from the initial to the final state without reaching any vertex contributes the overlap of [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]],
+>
+> $$
+> \overbracket{\langle\mathbf p'|\mathbf p\rangle} = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf p') ,
+> $$
+>
+> drawn as a line from the incoming to the outgoing particle, the **$\delta$-line** (dashed in these notes). With $A$, $B$ written on the left and $1$, $2$ on the right, the zeroth-order $2 \to 2$ element is two pictures, $A$–$1$, $B$–$2$ and $A$–$2$, $B$–$1$:
+>
+> $$
+> {}_0\langle\mathbf p_1\mathbf p_2|\mathbf p_A\mathbf p_B\rangle_0 = 2E_A2E_B(2\pi)^6\bigl[\delta^3(\mathbf p_A - \mathbf p_1)\delta^3(\mathbf p_B - \mathbf p_2) + \delta^3(\mathbf p_A - \mathbf p_2)\delta^3(\mathbf p_B - \mathbf p_1)\bigr] .
+> $$
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free relativistic states, exact; it appears only in the diagrams of $S$-matrix elements before the terms of the $\mathbb 1$ are dropped ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]]): the rules for $i\mathcal M$ have no $\delta$-lines.
+>
+> *Source: PHY 513 Lecture 16 (Larsen, 2 Nov 2026), slides 10–11 ("Encode essential combinatorial data in diagrams … Caution: line = $\delta$"), and transcript ("this kind of Feynman rules, where a single line is a delta function, will appear only today") · the user's PHY 513 notes, Lecture 16 update, §16.3, Definition "The $\delta$-line (this lecture only)" and eq. (orderzero) · PS §4.6, p. 109, eq. (4.91), and the diagrams on p. 110*
+
+^def-c6b-2-1
+
+> [!theorem] Theorem §C6b.2.4: Which Terms of the S-Matrix Element Belong to iT̂
+> Let $|i\rangle = |\mathbf k_1\cdots\mathbf k_n\rangle$, $\langle f| = \langle\mathbf p_1\cdots\mathbf p_m|$ be relativistically normalized free states, and expand ${}_0\langle f|T\{\exp[-i\int_{-T}^{T}dt\,\hat H_I]\}|i\rangle_0$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], 2) by [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]]: each term is a diagram whose external points are the particles. Split it into its connected pieces. Then
+> 1. each piece with particles carries its own momentum delta: a lone pair $\overbracket{\langle\mathbf p|\mathbf k\rangle} = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k)$ (a particle attached to no vertex: the $\delta$-line of [[§C6b.2 Matrix Elements between Particle States#^def-c6b-2-1|Def. §C6b.2.1]]; [[§C6b.2 Matrix Elements between Particle States#^cau-c6b-2-2|Caution: A line is a δ, not a D_F]]), a piece with vertices $(2\pi)^4\delta^4(\sum k - \sum p)$ over its own particles;
+> 2. **vacuum bubbles** (pieces without particles) factor out as $\langle0|U(T, -T)|0\rangle$ and are omitted;
+> 3. **several pieces with particles**: each conserves momentum separately; if every piece is $1 \to 1$ (a $\delta$ line, or a line with insertions passing through), the final momenta equal the initial ones and the term belongs to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$; otherwise it is a product of smaller processes; neither has the form $\delta^4(\sum k - \sum p)\times$(smooth) of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]];
+> 4. **one piece with all particles** (fully connected): a part hanging on one external leg, separated from the rest by one propagator, is a correction of the external state; its propagator carries the on-shell momentum of the particle, $\frac{i}{k^2 - m^2}\big|_{k^2 = m^2}$, and it is removed by amputation ([[§C6b.3 Feynman Rules for Amplitudes#^def-c6b-3-1|Def. §C6b.3.1]]);
+> 5. the rest, the fully connected amputated diagrams, is $\langle f|i\hat T|i\rangle = (2\pi)^4\delta^4(\sum k - \sum p)\,i\mathcal M$ at the order considered ([[§C6b.3 Feynman Rules for Amplitudes#^thm-c6b-3-3|Theorem §C6b.3.3]]).
+>
+> $\phi^4$, $2 \to 2$, through first order (slides 10–18; PS (4.91)–(4.98)):
+>
+> | term | pieces | value | class |
+> |---|---|---|---|
+> | $\lambda^0$ | two $\delta$ lines | $2E_A2E_B(2\pi)^6[\delta^3(\mathbf p_A - \mathbf p_1)\delta^3(\mathbf p_B - \mathbf p_2) + (1 \leftrightarrow 2)]$ | 3: the $\mathbb 1$ |
+> | $\lambda$, $3$ full contractions | figure-eight $\times$ two $\delta$ lines | $-\frac{i\lambda}{8}D_F(0)^2\int d^4z\times(\lambda^0\text{ term})$ | 2 and 3 |
+> | $\lambda$, $6$ single contractions | loop on a passing line $\times$ a $\delta$ line, four diagrams | each $-\frac{i\lambda}{2}D_F(0)\,(2\pi)^4\delta^4(p_A - p_1)\cdot2E_B(2\pi)^3\delta^3(\mathbf p_B - \mathbf p_2)$ and permutations | 3: forward, the $\mathbb 1$ |
+> | $\lambda$, no contraction | one vertex | $-i\lambda\,(2\pi)^4\delta^4(p_A + p_B - p_1 - p_2)$ | 5: $i\mathcal M = -i\lambda$ |
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* any polynomial interaction, every order, with the prescription of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]] (and its scope); the external-state corrections of part 4 return beyond lowest order as $\sqrt Z$ and the physical mass ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]]; [[§C6b.10 Amplitudes from Correlation Functions#^cau-c6b-10-2|§C6b.10, Caution: The rule is stated at lowest order]]; second semester).
+>
+> *Source: PHY 513 Lecture 16, slides 10–18 (slide 11: "This is part of '1' in $\mathcal S = 1 + i\mathcal T$ ⇒ omit this contribution when computing '$i\mathcal T$'"; slide 14: "Overall figure 8 = vacuum bubble ⇒ omit … same momenta in initial+final states ⇒ contribution to '1' … Either 1. or 2. justifies omitting this diagram"; slide 17: "Self-energy (bubble on line) conserves energy ⇒ same momentum in initial and final state ⇒ diagram contributes to '1' in $\mathcal S = 1 + i\mathcal T$ ⇒ omit. Remark: self-energy corrects free state → interacting state"), slides 25–26 · PS §4.6, pp. 109–113, eqs. (4.90)–(4.98), (4.101)–(4.102) ("Only *fully connected* diagrams, in which all external lines are connected to each other, contribute to the $T$-matrix", p. 111) · the user's PHY 513 notes, Lecture 16 update, §16.3–§16.4 (Table "The first-order matrix element, term by term"; Caution "The partial-contraction count on the slide") and §16.7 ("Why connected", "Why amputated") · PHY 513 Lecture 16, transcript (the figure-eight term "should absolutely not be part of my Feynman rules for two reasons, at least") · proof written here*
+
+^thm-c6b-2-4
+
+> [!derivation]- Derivation
+> **Step 1** (pieces factor). A term of [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]] is a product of pair values times the vertex integrals $\int\prod_vd^4z_v$. A pair joins two nodes of the same piece, so the integrand is a product over pieces, each depending only on the $z_v$ of its own vertices, and the integral factorizes (each $z_v$ belongs to one piece):
+>
+> $$
+> \text{term} = \prod_{\text{pieces }P}\Bigl(\int\prod_{v\in P}d^4z_v\;\prod_{\text{pairs in }P}(\text{value})\Bigr) .
+> $$
+>
+> **Step 2** (part 1, one delta per piece). A lone pair is $\overbracket{\langle\mathbf p|\mathbf k\rangle} = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k)$ (Theorem §C6b.2.3). For a piece with vertices, insert the Fourier form of each internal line; the particles enter through $e^{-ik\cdot z}$, $e^{+ip\cdot z}$ ([[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]], 2); each vertex integral gives $(2\pi)^4\delta^4$ of the momenta at that vertex ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]], 1). Doing the internal momentum integrals along a spanning tree of the piece (Step 3 of [[§C6a.12 Feynman Rules for Polynomial Interactions#^der-c6a-12-3|Derivation §C6a.12.3]]) uses all deltas but one, which is $(2\pi)^4\delta^4(\sum_{\rm in}k - \sum_{\rm out}p)$ over the particles of the piece.
+>
+> **Step 3** (part 2, bubbles). The pieces without particles share no line with the others; summed over all terms they factor out exactly as in [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]], and their sum is $\langle0|U(T, -T)|0\rangle$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]), the normalization that [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], 2, omits (Step 4 of its derivation).
+>
+> **Step 4** (part 3). A $1 \to 1$ piece carries $\delta^4(k - p)$ (or $\delta^3(\mathbf p - \mathbf k)$) with $k$, $p$ on the mass shell, so $p = k$ ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|Theorem §C6b.2.6]], 4): if every piece is $1 \to 1$, every final momentum equals an initial one, the "nothing happened" part of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]]. Otherwise there are at least two deltas in independent combinations of the momenta, and the term is a product of processes on subsets of the particles; it is not $\delta^4(\sum k - \sum p)$ times a smooth function, the form of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]] that defines $\mathcal M$ ([[§C6b.10 Amplitudes from Correlation Functions#^thm-c6b-10-2|Theorem §C6b.10.2]] for the free four-point function).
+>
+> **Step 5** (part 4). Let a propagator $\ell$ separate a part $X$ holding a single particle, of momentum $k$, from the rest. Step 2 applied to $X$, with $\ell$ as its second external line, fixes the momentum of $\ell$ to $k$, so $\ell$ contributes
+>
+> $$
+> \frac{i}{k^2 - m^2 + i\varepsilon}\Big|_{k^2 = m^2} = \frac{i}{i\varepsilon} \xrightarrow{\varepsilon\to0^+} \infty
+> $$
+>
+> (PS (4.102): "$\frac{1}{p'^2 - m^2}\big|_{p' = p_B} = \frac{1}{0}$"). $X$ turns the free particle into the dressed one ("self-energy: wave function of external state corrected from free to interacting", slide 25), not a scattering between different particles; the amputation of [[§C6b.3 Feynman Rules for Amplitudes#^def-c6b-3-1|Def. §C6b.3.1]] removes it.
+>
+> **Step 6** (part 5). What is left has one piece, so one overall delta (Step 2), and no external-state part: by [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]] its sum is $(2\pi)^4\delta^4(\sum k - \sum p)\,i\mathcal M$.
+>
+> **Step 7** (the table). Zeroth order: $T\{\cdots\} \to 1$ and
+>
+> $$
+> {}_0\langle\mathbf p_1\mathbf p_2|\mathbf p_A\mathbf p_B\rangle_0 = \sqrt{2E_12E_22E_A2E_B}\,\langle0|\hat a_1\hat a_2\hat a^\dagger_A\hat a^\dagger_B|0\rangle = 2E_A2E_B(2\pi)^6\bigl[\delta^3(\mathbf p_A - \mathbf p_1)\delta^3(\mathbf p_B - \mathbf p_2) + \delta^3(\mathbf p_A - \mathbf p_2)\delta^3(\mathbf p_B - \mathbf p_1)\bigr]
+> $$
+>
+> (slide 10, PS (4.91)), two $1 \to 1$ pieces per term. First order, with the Wick expansion of [[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-1|Example §C6b.2.1]], Step 2:
+> - full contractions: $-\frac{i\lambda}{4!}\cdot3D_F(0)^2\int d^4z\;{}_0\langle\mathbf p_1\mathbf p_2|\mathbf p_A\mathbf p_B\rangle_0 = -\frac{i\lambda}{8}D_F(0)^2\int d^4z\times(\text{zeroth order})$ (slide 14: "$-\frac18i\lambda$");
+> - one contraction, $\overbracket{\hat\phi_a\hat\phi_b}\,{:}\hat\phi_c\hat\phi_d{:}$, $6$ terms: the two remaining fields take one incoming and one outgoing particle ($2$ ways for each of the $4$ choices $(A, 1)$, $(A, 2)$, $(B, 1)$, $(B, 2)$), the other two particles overlap; for $(A, 1)$
+>
+> $$
+> -\frac{i\lambda}{4!}\cdot6\cdot2\,D_F(0)\int d^4z\,e^{-ip_A\cdot z}e^{ip_1\cdot z}\;\overbracket{\langle\mathbf p_2|\mathbf p_B\rangle} = -\frac{i\lambda}{2}D_F(0)\,(2\pi)^4\delta^4(p_A - p_1)\,2E_B(2\pi)^3\delta^3(\mathbf p_B - \mathbf p_2)
+> $$
+>
+> (slide 16: "5 permutations ⇒ factor 6"; the $6$ counts the contracted pair, each picture gets $6\cdot2 = 12$ pairings, $\frac{12}{4!} = \frac12 = \frac1S$ of the tadpole: the user's notes, Caution "The partial-contraction count on the slide"), forward;
+> - no contraction: $4!$ attachments, $-i\lambda(2\pi)^4\delta^4(p_A + p_B - p_1 - p_2)$ (Example §C6b.2.1, Steps 3–4; slide 18).
+>
+> **What the derivation shows.**
+> - "Connected" and "amputated" are not extra assumptions: disconnected terms are the $\mathbb 1$, bubbles or smaller processes (each piece its own delta), and external-leg parts are state corrections with an on-shell propagator.
+> - Two reasons can exclude the same term (slide 14: the bubble and the $\mathbb 1$); either suffices.
+
+^der-c6b-2-4
+
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]], [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^der-c6a-12-3|Derivation §C6a.12.3]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]], [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|Theorem §C6b.2.6]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.10 Amplitudes from Correlation Functions#^thm-c6b-10-2|Theorem §C6b.10.2]]
+
+*Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-3|P6, step 3]]
+
+![[ph-qft-c6b-2-5.svg]]
+*The classes of [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]] for $\phi\phi \to \phi\phi$ (dashed red: $\delta$-lines, [[§C6b.2 Matrix Elements between Particle States#^def-c6b-2-1|Def. §C6b.2.1]]; blue: vertices). (1) Zeroth order, the particles pass through. (2) The figure-eight bubble times the same (slide 14). (3) A loop on a passing line next to a $\delta$ line, one of four (slide 16): energy conservation forces $p_1 = p_A$. (4) A loop on the leg of $A$ at order $\lambda^2$ (slide 26): a correction of the external state, removed by amputation. (5) The vertex, the only term of $i\hat T$ at first order. Added figure.*
+
+> [!caution] Caution: A line is a δ, not a D_F
+> The same drawn line means two things in Lecture 16. In the diagrams of ${}_0\langle f|T\{\cdots\}|i\rangle_0$ two kinds of line look alike. A line from an incoming particle straight to an outgoing one, touching no vertex, is the overlap $\overbracket{\langle\mathbf p|\mathbf k\rangle} = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k)$; a line between two vertices, or a loop, is $D_F$. The slides: "Caution: line = $\delta$ (not standard rule where line = $D_F$)" (slide 10); "line = $D_F$ in figure 8 but line = $\delta$ inside round brackets" (slide 14); "direct line is a $\delta$-function" (slide 16). In the diagrams of correlation functions every line is a $D_F$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]); an external line of an amplitude diagram is neither: a plane wave $e^{\mp ip\cdot x}$ in position space ([[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]], 2) and $1$ in momentum space. Figure ph-qft-c6b-2-5 and the user's notes draw the $\delta$-lines ([[§C6b.2 Matrix Elements between Particle States#^def-c6b-2-1|Def. §C6b.2.1]]) dashed and keep solid lines for propagators and wave functions; "this kind of Feynman rules, where a single line is a delta function, will appear only today".
+>
+> *Source: PHY 513 Lecture 16, slides 10, 14, 16, and transcript · the user's PHY 513 notes, Lecture 16 update, §16.3, Caution "The same line means two different things in the lecture" · PS §4.6, eqs. (4.91), (4.96)*
+
+^cau-c6b-2-2
 
 ## First order: enumerate, then filter
 
-> [!theorem] Theorem §C6b.2.4: The First-Order Matrix Elements of a Monomial
+> [!theorem] Theorem §C6b.2.5: The First-Order Matrix Elements of a Monomial
 > Let $\mathcal L_{\rm int} = -g\,M$, $M = \prod_k\phi_k^{m_k}$ a monomial in real fields without derivatives ([[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]]). Let $|i\rangle$ and $\langle f|$ hold $n_k$ particles of kind $k$ in total, with no outgoing momentum equal to an incoming one. Then
 >
 > $$
@@ -242,13 +346,13 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > nonzero only if every $m_k - n_k$ is even and $\ge 0$: each leg takes one external particle or is closed with another leg of its kind into a loop. In particular, for a tree ($\ell_k = 0$, every leg on a particle), $i\mathcal M = -ig\prod_km_k!$, the vertex factor ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]).
 >
-> **Procedure** (Yu's enumerate-then-filter): (1) list every split of the legs of $M$ into incoming particles, outgoing particles and pairs closed into loops, each giving a matrix element above; (2) keep those that four-momentum conservation allows on the mass shell ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]]).
+> **Procedure** (Yu's enumerate-then-filter): (1) list every split of the legs of $M$ into incoming particles, outgoing particles and pairs closed into loops, each giving a matrix element above; (2) keep those that four-momentum conservation allows on the mass shell ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|Theorem §C6b.2.6]]).
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* first order, free relativistic states over $|0\rangle$ in place of the in and out states (as in the opening: lowest order; a loop $D_F(0)$ on a single particle is a mass shift, [[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]); complex fields: the legs $\phi$, $\phi^\dagger$ take particles and antiparticles by [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]], 3.
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* first order, free relativistic states over $|0\rangle$ in place of the in and out states (as in the opening: lowest order; a loop $D_F(0)$ on a single particle is a mass shift, [[§C6b.10 Amplitudes from Correlation Functions#^cau-c6b-10-2|§C6b.10, Caution: The rule is stated at lowest order]]); complex fields: the legs $\phi$, $\phi^\dagger$ take particles and antiparticles by [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]], 3.
 >
 > *Source: Yu §7.1.1, pp. 264–272 (all first-order $T$-matrix elements of Yukawa theory, eqs. (7.21)–(7.43), Fig. 7.1–7.2; "the 10 Feynman diagrams correspond to 10 dynamically allowed processes; most are kinematically forbidden", p. 272); §7.3, eqs. (7.115)–(7.121) · PS §4.6, eqs. (4.92)–(4.98) · proof written here*
 
-^thm-c6b-2-4
+^thm-c6b-2-5
 
 > [!derivation]- Derivation
 > **Step 1** (first order). $\hat S = \mathbb 1 + i\hat T$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]]) and the $n = 1$ term of the Dyson series ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]) with $\hat{\mathcal H}_I = gM(\hat\phi_I)$: $i\hat T^{(1)} = -i\int dt\,\hat H_I(t) = -ig\int d^4x\,M(\hat\phi_I(x))$; one time, so $T\{\cdot\}$ acts trivially.
@@ -268,13 +372,13 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > **What the derivation shows.**
 > - At first order the operator content of $\mathcal L_{\rm int}$ alone decides which processes have a matrix element; kinematics decides which of them happen.
 
-^der-c6b-2-4
+^der-c6b-2-5
 
 *Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]], [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]], [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]
 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-3|P6, step 3]]
 
-> [!theorem] Theorem §C6b.2.5: The Kinematic Filter
+> [!theorem] Theorem §C6b.2.6: The Kinematic Filter
 > Let all external particles be on shell, $p^0 = E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2} > 0$. Then $\delta^4\bigl(\sum_{\rm in}p - \sum_{\rm out}p\bigr)$ restricted to the mass shells
 > 1. vanishes if one side has no particles and the other has at least one ($0 \to n$, $n \to 0$);
 > 2. vanishes for one incoming particle of mass $M > 0$ and outgoing masses $m_1, \dots, m_n$, $n \ge 2$, if $M < \sum_im_i$; for $M = \sum_im_i$ it is supported on the set where every product is at rest in the frame of the decaying particle, of measure zero in the final momenta;
@@ -283,16 +387,16 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > For equal masses $m > 0$ every $1 \to n$ and $n \to 1$ with $n \ge 2$ is forbidden.
 >
-> *Model:* any (kinematics); *applies:* on-shell external momenta, any theory; it filters the matrix elements of [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]] at every order.
+> *Model:* any (kinematics); *applies:* on-shell external momenta, any theory; it filters the matrix elements of [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]] at every order.
 >
 > *Source: Yu §7.1.1, p. 272 ("most of these processes are kinematically not allowed, because the initial and final states cannot satisfy energy-momentum conservation at the same time … when $m_\phi > 2m_\psi$, two processes are exceptions"); §6.5.4, threshold (6.378) · PHY 513, Problem Set 8, Problem 4 ("provided that $M > 2m$") · proof written here*
 
-^thm-c6b-2-5
+^thm-c6b-2-6
 
 > [!derivation]- Derivation
 > **Step 1** (part 1). Each $p^0 = E_{\mathbf p} > 0$, so a nonempty side has $\sum p^0 > 0$ and the empty side $0$: $\sum_{\rm in}p^0 - \sum_{\rm out}p^0 \ne 0$ on the whole mass shell, and the delta vanishes there ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]).
 >
-> **Step 2** (frame). The support condition $\Delta \equiv \sum_{\rm in}p - \sum_{\rm out}p = 0$ is Lorentz covariant, $\Lambda\Delta = 0 \Leftrightarrow \Delta = 0$, and $\delta^4(\Lambda\Delta) = \delta^4(\Delta)$ (Step 3 of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^der-c6b-1-5|Derivation §C6b.1.5]]): it may be checked in any frame.
+> **Step 2** (frame). The support condition $\Delta \equiv \sum_{\rm in}p - \sum_{\rm out}p = 0$ is Lorentz covariant, $\Lambda\Delta = 0 \Leftrightarrow \Delta = 0$, and $\delta^4(\Lambda\Delta) = \delta^4(\Delta)$ (Step 3 of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^der-c6b-1-6|Derivation §C6b.1.6]]): it may be checked in any frame.
 >
 > **Step 3** (part 2). In the rest frame of the incoming particle, $p_{\rm in} = (M, \mathbf 0)$. Conservation requires
 >
@@ -311,9 +415,9 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > **What the derivation shows.**
 > - A decay needs $M > \sum m_i$ (for two bodies, $M > 2m$); a one-vertex fusion $n \to 1$ is the reverse, possible only at the special incoming momenta with $(\sum p_i)^2 = M^2$.
 
-^der-c6b-2-5
+^der-c6b-2-6
 
-*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^der-c6b-1-5|Derivation §C6b.1.5]]
+*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^der-c6b-1-6|Derivation §C6b.1.6]]
 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-3|P6, step 3]]
 
@@ -328,7 +432,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > the $4!$ ways of attaching the four particles to the four fields cancel the $\frac{1}{4!}$. The other first-order processes are $1 \leftrightarrow 3$, $0 \leftrightarrow 4$ (forbidden), $0 \leftrightarrow 2$ with a loop (forbidden), $1 \to 1$ with a loop (forward only: a mass shift), and the vacuum bubble.
 >
-> **Step 1** (first order). [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]], Step 1, with the four factors of $\hat\phi_I(x)^4$ labelled $\hat\phi_1, \dots, \hat\phi_4$ (all at $x$):
+> **Step 1** (first order). [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]], Step 1, with the four factors of $\hat\phi_I(x)^4$ labelled $\hat\phi_1, \dots, \hat\phi_4$ (all at $x$):
 >
 > $$
 > \langle\mathbf p_1\mathbf p_2|i\hat T^{(1)}|\mathbf p_A\mathbf p_B\rangle = -\frac{i\lambda}{4!}\int d^4x\,\langle\mathbf p_1\mathbf p_2|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\}|\mathbf p_A\mathbf p_B\rangle .
@@ -344,7 +448,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > **Step 3** (between the states). By [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]], all four particles must be paired, and outgoing–incoming pairs vanish ($\mathbf p_1, \mathbf p_2 \notin \{\mathbf p_A, \mathbf p_B\}$):
 > - the last three terms: $3D_F(0)^2\langle\mathbf p_1\mathbf p_2|\mathbf p_A\mathbf p_B\rangle = 0$ (a bubble times the "1", PS (4.96));
-> - $D_F(0)\langle\mathbf p_1\mathbf p_2|{:}\hat\phi_a\hat\phi_b{:}|\mathbf p_A\mathbf p_B\rangle$: two fields take two particles, the other two would pair with each other: $0$ (PS's four diagrams on p. 111, particles passing by);
+> - $D_F(0)\langle\mathbf p_1\mathbf p_2|{:}\hat\phi_a\hat\phi_b{:}|\mathbf p_A\mathbf p_B\rangle$: two fields take two particles, the other two would pair with each other: $0$ (PS's four diagrams on p. 111, particles passing by) — the classes of [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]]: the bubble with $\delta$-lines (parts 2–3), the forward pieces (part 3), the vertex (part 5);
 > - ${:}\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4{:}$: every field takes one particle. With $\sigma \in S_4$ giving the fields of $\mathbf p_1, \mathbf p_2, \mathbf p_A, \mathbf p_B$,
 >
 > $$
@@ -370,7 +474,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > and [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]] gives $i\mathcal M = -i\lambda$ (PS (4.98); Yu (7.119), (7.121)).
 >
-> **Step 5** (enumerate, then filter). The splits of the four legs ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]]), with [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]] for equal masses $m$:
+> **Step 5** (enumerate, then filter). The splits of the four legs ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]]), with [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|Theorem §C6b.2.6]] for equal masses $m$:
 >
 > | in → out | loops | matrix element | kinematics |
 > |---|---|---|---|
@@ -381,18 +485,18 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > | $0 \to 2$, $2 \to 0$ | $1$ | $-\frac{i\lambda}{2}D_F(0)\,(2\pi)^4\delta^4$ | forbidden (part 1) |
 > | $0 \to 0$ | $2$ | $-\frac{i\lambda}{8}D_F(0)^2\,(2\pi)^4\delta^4(0)$ | the vacuum bubble, a phase ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3\|Theorem §C6a.11.3]]) |
 >
-> *Two routes, one answer.* [[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-1|Example §C6b.9.1]] gets $i\mathcal M = -i\lambda$ from the four-point correlation function by amputation ([[§C6b.9 Amplitudes from Correlation Functions#^thm-c6b-9-1|Theorem §C6b.9.1]]); there the $24$ are the bijections of four external points to four legs, here of four particles to four legs.
+> *Two routes, one answer.* [[§C6b.10 Amplitudes from Correlation Functions#^ex-c6b-10-1|Example §C6b.10.1]] gets $i\mathcal M = -i\lambda$ from the four-point correlation function by amputation ([[§C6b.10 Amplitudes from Correlation Functions#^thm-c6b-10-1|Theorem §C6b.10.1]]); there the $24$ are the bijections of four external points to four legs, here of four particles to four legs.
 >
-> *Source: PS §4.6, eqs. (4.92)–(4.98), pp. 110–112 · Yu §7.3, eqs. (7.115)–(7.121) · the table written here from [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]] and [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]]*
+> *Source: PS §4.6, eqs. (4.92)–(4.98), pp. 110–112 · Yu §7.3, eqs. (7.115)–(7.121) · the table written here from [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]] and [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|Theorem §C6b.2.6]]*
 
 ^ex-c6b-2-1
 
 > [!example] Example §C6b.2.2: Φφ² at First Order: the Factor 2 of Φ → φφ
 > ![[ph-qft-c6b-2-2.svg]]
 >
-> In [[§C6b.8 Decay Rates and Widths#^mod-c6b-8-6|Model §C6b.8.6]] ($\mathcal L_{\rm int} = -\mu\Phi\phi^2$, masses $M$, $m$), the first-order processes are:
+> In [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-6|Model §C6b.9.6]] ($\mathcal L_{\rm int} = -\mu\Phi\phi^2$, masses $M$, $m$), the first-order processes are:
 >
-> | in → out | loops | $i\mathcal M$ | kinematics ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5\|Theorem §C6b.2.5]]) |
+> | in → out | loops | $i\mathcal M$ | kinematics ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6\|Theorem §C6b.2.6]]) |
 > |---|---|---|---|
 > | $\Phi \to \phi\phi$ | $0$ | $-2i\mu$ | allowed iff $M > 2m$ (part 2) |
 > | $\phi\phi \to \Phi$ | $0$ | $-2i\mu$ | allowed for $(p_1 + p_2)^2 = M^2$ (part 3) |
@@ -400,7 +504,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > | $0 \to \Phi\phi\phi$, $\Phi\phi\phi \to 0$ | $0$ | $-2i\mu$ | forbidden (part 1) |
 > | $0 \to \Phi$, $\Phi \to 0$ | $1$ ($\phi$ loop) | $-i\mu D_F^{(m)}(0)$ | forbidden (part 1) |
 >
-> A $\phi$ leg cannot be left without partner, and the $\Phi$ leg cannot close on a $\phi$ leg ([[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]]); the counts are $\frac{1!\,2!}{2^{\ell}\ell!}$ of [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]].
+> A $\phi$ leg cannot be left without partner, and the $\Phi$ leg cannot close on a $\phi$ leg ([[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]]); the counts are $\frac{1!\,2!}{2^{\ell}\ell!}$ of [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]].
 >
 > **The decay.** With the $\Phi$ field $\hat\Phi_x$ and the two $\phi$ fields $\hat\phi_{x1}$, $\hat\phi_{x2}$ of $\hat\Phi\hat\phi^2(x)$, and [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]],
 >
@@ -408,7 +512,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > \langle\mathbf p_1\mathbf p_2|{:}\hat\Phi_x\hat\phi_{x1}\hat\phi_{x2}{:}|\mathbf K\rangle_\Phi = \overbracket{\hat\Phi_x|\mathbf K\rangle}\Bigl(\overbracket{\langle\mathbf p_1|\hat\phi_{x1}}\,\overbracket{\langle\mathbf p_2|\hat\phi_{x2}} + \overbracket{\langle\mathbf p_1|\hat\phi_{x2}}\,\overbracket{\langle\mathbf p_2|\hat\phi_{x1}}\Bigr) = 2\,e^{i(p_1 + p_2 - K)\cdot x} ,
 > $$
 >
-> so $\langle\mathbf p_1\mathbf p_2|i\hat T^{(1)}|\mathbf K\rangle_\Phi = -2i\mu(2\pi)^4\delta^4(K - p_1 - p_2)$, $i\mathcal M = -2i\mu$. The same computation with the operators written out, and the width and lifetime, are [[§C6b.8 Decay Rates and Widths#^ex-c6b-8-1|Example §C6b.8.1]] (Steps 3–5 for $\mathcal M$).
+> so $\langle\mathbf p_1\mathbf p_2|i\hat T^{(1)}|\mathbf K\rangle_\Phi = -2i\mu(2\pi)^4\delta^4(K - p_1 - p_2)$, $i\mathcal M = -2i\mu$. The same computation with the operators written out, and the width and lifetime, are [[§C6b.9 Decay Rates and Widths#^ex-c6b-9-1|Example §C6b.9.1]] (Steps 3–5 for $\mathcal M$).
 >
 > *Source: PHY 513, Problem Set 8, Problem 4 (the user's solution: "each of $\hat a_{\mathbf p_1}, \hat a_{\mathbf p_2}$ … pairs with one of the two fields, in 2 ways") · PS Problem 4.2 · the table written here*
 
@@ -419,151 +523,24 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 >
 > For $\mathcal L_{\rm int} = -\frac{g}{3!}\phi^3$ (the cubic vertex of [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]]) and on-shell particles of mass $m > 0$, every first-order matrix element with no forward pair vanishes:
 >
-> | in → out | loops | count $\frac{3!}{2^\ell\ell!}$ | matrix element | kinematics ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5\|Theorem §C6b.2.5]]) |
+> | in → out | loops | count $\frac{3!}{2^\ell\ell!}$ | matrix element | kinematics ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6\|Theorem §C6b.2.6]]) |
 > |---|---|---|---|---|
 > | $1 \to 2$, $2 \to 1$ | $0$ | $6$ | $-ig\,(2\pi)^4\delta^4$ | forbidden, $m < 2m$ (parts 2, 3) |
 > | $0 \to 3$, $3 \to 0$ | $0$ | $6$ | $-ig\,(2\pi)^4\delta^4$ | forbidden (part 1) |
 > | $0 \to 1$, $1 \to 0$ | $1$ | $3$ | $-\frac{ig}{2}D_F(0)\,(2\pi)^4\delta^4$ | forbidden (part 1) |
 >
-> **Step 1** (enumerate). Three legs: $n$ particles and $\ell$ loops with $n + 2\ell = 3$, so $(n, \ell) = (3, 0)$ or $(1, 1)$; the $n$ particles split into in and out in all ways ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]]). Coefficients: $-i\frac{g}{3!}\cdot6 = -ig$ and $-i\frac{g}{3!}\cdot3 = -\frac{ig}{2}$.
+> **Step 1** (enumerate). Three legs: $n$ particles and $\ell$ loops with $n + 2\ell = 3$, so $(n, \ell) = (3, 0)$ or $(1, 1)$; the $n$ particles split into in and out in all ways ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]]). Coefficients: $-i\frac{g}{3!}\cdot6 = -ig$ and $-i\frac{g}{3!}\cdot3 = -\frac{ig}{2}$.
 >
-> **Step 2** (filter). $1 \to 2$ in the rest frame of the incoming particle: $m = E_{\mathbf p_1} + E_{\mathbf p_2} \ge 2m$, impossible for $m > 0$ (Theorem §C6b.2.5, Step 3); $2 \to 1$ likewise in the rest frame of the outgoing one; $0 \leftrightarrow 3$ and $0 \leftrightarrow 1$: positive energy on one side only.
+> **Step 2** (filter). $1 \to 2$ in the rest frame of the incoming particle: $m = E_{\mathbf p_1} + E_{\mathbf p_2} \ge 2m$, impossible for $m > 0$ (Theorem §C6b.2.6, Step 3); $2 \to 1$ likewise in the rest frame of the outgoing one; $0 \leftrightarrow 3$ and $0 \leftrightarrow 1$: positive energy on one side only.
 >
-> So the first process of the cubic theory between on-shell particles is at order $g^2$: $2 \to 2$ through two vertices ([[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-4|Example §C6b.2.4]]). Yu's Yukawa analogue: of the ten first-order processes only $\phi \to \psi\bar\psi$ and $\psi\bar\psi \to \phi$ survive, and only for $m_\phi > 2m_\psi$ (p. 272).
+> So the first process of the cubic theory between on-shell particles is at order $g^2$: $2 \to 2$ through two vertices ([[§C6b.3 Feynman Rules for Amplitudes#^ex-c6b-3-1|Example §C6b.3.1]]). Yu's Yukawa analogue: of the ten first-order processes only $\phi \to \psi\bar\psi$ and $\psi\bar\psi \to \phi$ survive, and only for $m_\phi > 2m_\psi$ (p. 272).
 >
-> *Source: Yu §7.1.1, p. 272 (the Yukawa analogue) · written here from [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|Theorem §C6b.2.4]] and [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]]*
+> *Source: Yu §7.1.1, p. 272 (the Yukawa analogue) · written here from [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|Theorem §C6b.2.5]] and [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|Theorem §C6b.2.6]]*
 
 ^ex-c6b-2-3
 
-## Tree-level rules for the amplitude
-
-> [!definition] Definition §C6b.2.1: Diagram of a Scattering Amplitude
-> For a process with initial momenta $p_A, p_B, \dots$ and final momenta $p_1, p_2, \dots$, a **diagram of the amplitude** $i\mathcal M$ is a diagram ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-1|Def. §C6a.7.1]]; other vertices: [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]) such that
-> 1. its external points are labelled by the external momenta, one per particle, and are never relabelled;
-> 2. it is fully connected ([[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-1|Caution: "Connected" here means fully connected]]);
-> 3. its external lines are amputated ([[§C6b.9 Amplitudes from Correlation Functions#^thm-c6b-9-1|Theorem §C6b.9.1]]): each external point is joined by a line without propagator to a vertex, and the momentum of every internal line is fixed by conservation at the vertices. Between particle states this is the contraction of a leg with the particle, a plane wave without propagator ([[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-1|Lemma §C6b.2.1]], [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]]).
->
-> Its symmetry factor is that of [[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]] with the labelled external points held fixed. Diagrams that are not fully connected are excluded: their pieces belong to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$ or to products of smaller processes ([[§C6b.9 Amplitudes from Correlation Functions#^thm-c6b-9-2|Theorem §C6b.9.2]], [[§C6b.9 Amplitudes from Correlation Functions#^rem-c6b-9-1|Remark: Disconnected pieces beyond zeroth order]]).
->
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* any polynomial interaction without derivatives, any order; used for $\mathcal M$ at lowest order ([[§C6b.9 Amplitudes from Correlation Functions#^thm-c6b-9-1|Theorem §C6b.9.1]]).
->
-> *Source: PHY 513, Problem Set 8, Problem 2(a)–(b) (the user's solution: "The four external particles are labeled by their momenta and are never relabeled, so a diagram is determined by which external particles are attached to which vertex"; a vertex with too many external particles leaves two legs "contracted with each other, giving a disconnected diagram that does not contribute to the scattering amplitude") · PHY 513 Lecture 15, transcript ("strip off the external lines") · Yu §7.3 (external lines of $\langle f|iT|i\rangle$)*
-
-^def-c6b-2-1
-
-*Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-3|P6, step 3]]
-
-> [!theorem] Theorem §C6b.2.6: Vertices Saturated by External Lines Give S = 1
-> If every vertex $v$ of a diagram has valence $r_v \ge 2$ and at least $r_v - 1$ of its legs joined to external points, then $S = 1$; equivalently $N_D = |G|$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]). In particular every tree diagram with one internal line has $S = 1$.
->
-> *Model:* any (combinatorics); *applies:* any diagram with the stated valences, any vertex types.
->
-> *Source: PHY 513, Problem Set 8, Problem 2(c) (the user's argument: "each vertex has exactly one internal leg … The external particles are never relabeled, so an element of $\mathrm{Stab}(P)$ fixes every leg joined to an external particle. The internal leg is then the only remaining leg at its vertex, so it is fixed as well") · PHY 513 Lecture 14, slide 17 ("Reordering of legs = topologically distinct diagram ⇒ S = 1")*
-
-^thm-c6b-2-6
-
-> [!derivation]- Derivation
-> **Step 1** (vertices fixed). Let $g \in \operatorname{Stab}(P)$. Each leg joined to an external point is fixed, and so is its vertex ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3). Every vertex has $r_v - 1 \ge 1$ such legs, so $g$ permutes no vertices.
->
-> **Step 2** (legs fixed). $g$ maps the legs of $v$ to legs of $v$; at least $r_v - 1$ are fixed, so the remaining one (if any) is mapped to itself. Hence $g$ fixes every half-edge: $g = e$, $S = |\operatorname{Stab}(P)| = 1$.
->
-> **Step 3** (count). $N_D = |G|/S = |G|$. Example (one cubic and one quartic vertex, five external particles, two on the cubic and three on the quartic vertex): the two at the cubic vertex attach in $3\cdot2$ ways, the three at the quartic vertex in $4\cdot3\cdot2$, the remaining two legs pair in one way: $N_D = 6\cdot24 = 144 = 3!\,4! = |G|$.
-
-^der-c6b-2-6
-
-*Uses:* [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]
-
-*Procedure:* [[P5 Symmetry Factor of a Diagram#^p5-5|P5, step 5]]
-
-> [!theorem] Theorem §C6b.2.7: Tree-Level Feynman Rules for iℳ
-> For an interaction with the vertex data of [[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]] and a process with incoming momenta $k_1, \dots, k_n$ and outgoing $p_1, \dots, p_m$, none equal to an incoming one, the contribution of the tree diagrams of the amplitude ([[§C6b.2 Matrix Elements between Particle States#^def-c6b-2-1|Def. §C6b.2.1]], with no loops) to $i\mathcal M$ is the sum over these diagrams of the product of:
-> - each **external line**: $1$ (a particle or antiparticle of a complex field attaches to the leg of [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]], 3);
-> - each **vertex** of type $t$: $-ig_t\prod_km_{t,k}!$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]);
-> - each **internal line** of mass $m_j$: $\dfrac{i}{q^2 - m_j^2 + i\varepsilon}$, with $q$ fixed by four-momentum conservation at the vertices;
->
-> with symmetry factor $S = 1$ for every tree diagram and the overall $(2\pi)^4\delta^4(\sum_ik_i - \sum_jp_j)$ stripped ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]).
->
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* tree level, free relativistic states over $|0\rangle$ in place of the in and out states ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]); at the lowest order of a process this is the amplitude; beyond it loops on external lines need $\sqrt Z$ and the physical mass ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]]; [[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]; LSZ, Lecture 16).
->
-> *Source: PS §4.6, p. 114 (eq. (4.103): "sum of all connected, amputated Feynman diagrams"; "the factor for an ingoing line is just the amplitude for that particle to be found at the vertex"), p. 115 (rules 1–6) · Yu §7.2, rules 6–11 (pp. 287–288); §7.4, momentum-space rules 1–5 (p. 300); §7.3, p. 294 (tree diagrams have $S = 1$; [[§C6a.9 Symmetry Factors in Practice#^rem-c6a-9-3|§C6a.9, Remark: Yu's route]]) · PHY 513 Lecture 15, transcript ("strip off the external lines") · proof written here*
-
-^thm-c6b-2-7
-
-> [!derivation]- Derivation
-> **Step 1** (order $\mathbf n$). With [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]] and Step 1 of [[§C6a.12 Feynman Rules for Polynomial Interactions#^der-c6a-12-4|Derivation §C6a.12.4]],
->
-> $$
-> \langle f|\hat S|i\rangle^{(\mathbf n)} = \prod_t\frac{(-ig_t)^{n_t}}{n_t!}\int\prod_{t,v}d^4z_{t,v}\;\langle\mathbf p_1\cdots\mathbf p_m|\,T\Bigl\{\prod_{t,v}M_t\bigl(\hat\phi_I(z_{t,v})\bigr)\Bigr\}|\mathbf k_1\cdots\mathbf k_n\rangle .
-> $$
->
-> **Step 2** (full contractions). By [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]] (with kinds), the matrix element is a sum over full contractions of legs and particles; outgoing–incoming pairs vanish (distinct momenta). A full contraction is a labelled diagram whose external points are the particles, never relabelled ([[§C6b.2 Matrix Elements between Particle States#^def-c6b-2-1|Def. §C6b.2.1]], 1). If it falls into several connected pieces, each piece carries its own momentum delta (Step 3 below): such terms are not of the form $\delta^4(\sum k - \sum p)\times$(smooth) of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]] and do not belong to $\mathcal M$ ([[§C6b.9 Amplitudes from Correlation Functions#^thm-c6b-9-2|Theorem §C6b.9.2]]; vacuum pieces are the phase of [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]). Keep the fully connected ones.
->
-> **Step 3** (values). A particle on a leg at $z$ gives $e^{-ik\cdot z}$ (incoming) or $e^{+ip\cdot z}$ (outgoing) ([[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]], 2–3); a leg–leg pair gives $D_F^{(m_j)}(z - z')$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]]). Relabelling vertices and legs of one kind leaves the integral unchanged, and orbit–stabilizer turns the prefactor into $\frac1S\prod_v(-ig_t\prod_km_{t,k}!)$ (Steps 3–5 of [[§C6a.12 Feynman Rules for Polynomial Interactions#^der-c6a-12-4|Derivation §C6a.12.4]], the particles playing the external points).
->
-> **Step 4** ($S = 1$ for a tree). Let $D$ be a fully connected diagram without loops (a tree) and $g \in \operatorname{Stab}(P)$. Every leaf of the tree is an external particle (a vertex with a single line would have valence one). Removing an internal line $e$ splits the particles into two nonempty sets $E_1(e) \sqcup E_2(e)$, and different lines give different splits (two lines of a tree are separated by a vertex with a third branch, which holds a particle). $g$ fixes every particle ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3), so it maps each line to the line with the same split, i.e. to itself, with its ends on their own sides: every line and every vertex is fixed. A tree has no two lines between the same vertices, so the legs of a fixed vertex are fixed too: $g = e$, $S = |\operatorname{Stab}(P)| = 1$ (for one internal line this is [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|Theorem §C6b.2.6]]).
->
-> **Step 5** (momentum space). Insert the Fourier form of every internal line and do the vertex integrals ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]], Steps 1–2): each vertex gives $(2\pi)^4\delta^4(\text{momenta in} - \text{momenta out})$, the external momenta entering through the plane waves of Step 3. A tree has $L = I - V + 1 = 0$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 2): $V$ deltas, $I = V - 1$ internal momentum integrals. Each integral uses one delta and fixes its $q$; the last delta is
->
-> $$
-> (2\pi)^4\delta^4\Bigl(\sum_ik_i - \sum_jp_j\Bigr) ,
-> $$
->
-> and what multiplies it is $\prod(\text{vertex factors})\prod\frac{i}{q^2 - m_j^2 + i\varepsilon}$. External lines leave no factor: their plane wave became part of a delta.
->
-> **Step 6** (read off). Comparing with [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]] strips the delta. Check: $\phi^4$, one vertex, $i\mathcal M = -i\lambda$ ([[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-1|Example §C6b.2.1]]); $\Phi\phi^2$, one vertex, $-2i\mu$ ([[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-2|Example §C6b.2.2]]).
->
-> **What the derivation shows.**
-> - The external line is $1$ because the contraction of a field with a relativistically normalized particle is a pure plane wave; the amputation of [[§C6b.9 Amplitudes from Correlation Functions#^thm-c6b-9-1|Theorem §C6b.9.1]] removes the external propagator to reach the same factor from a correlation function.
-> - Nothing about loops was used except in Step 4; loop diagrams follow the same rules with $\frac1S$ and one $\int\frac{d^4\ell}{(2\pi)^4}$ per loop, but external-leg loops then need the $\sqrt Z$ of LSZ.
-
-^der-c6b-2-7
-
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^der-c6a-12-4|Derivation §C6a.12.4]], [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]], [[§C6b.2 Matrix Elements between Particle States#^def-c6b-2-1|Def. §C6b.2.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]], [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|Lemma §C6b.2.2]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]
-
-*Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-4|P6, steps 4–6]]
-
-> [!example] Example §C6b.2.4: Cubic–Quartic Theory, 2 → 2 at Order g² and λ
-> ![[ph-qft-c6b-11-5.svg]]
->
-> $\mathcal L = \frac12(\partial_\mu\phi)^2 - \frac{m^2}{2}\phi^2 - \frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4$ ([[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]]), vertices $-ig$, $-i\lambda$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]); $p_A + p_B \to p_1 + p_2$. A diagram with $n_3$ cubic and $n_4$ quartic vertices is of order $g^{n_3}\lambda^{n_4}$ (Problem Set 8: treat $\lambda \sim g^2/m^2$ as the same order).
-> - *$O(g^2)$, two cubic vertices*: $6$ legs, $4$ joined to external lines, so one internal line ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 1: $6 = 4 + 2I$; $L = 1 - 2 + 1 = 0$, a tree). If one vertex carried three external particles, the other would carry one, and its two remaining legs would be contracted with each other: not fully connected ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 3), excluded ([[§C6b.2 Matrix Elements between Particle States#^def-c6b-2-1|Def. §C6b.2.1]]). So each vertex carries two, and $p_A$ shares its vertex with exactly one of $p_B$, $p_1$, $p_2$ (putting $p_A$ on the other vertex only exchanges the vertices): three diagrams.
-> - *$O(\lambda)$, one quartic vertex*: all four on it, one diagram.
->
-> | diagram | at one vertex | at the other | internal momentum |
-> |---|---|---|---|
-> | $s$-channel | $p_A, p_B$ | $p_1, p_2$ | $p_A + p_B$ |
-> | $t$-channel | $p_A, p_1$ | $p_B, p_2$ | $p_A - p_1$ |
-> | $u$-channel | $p_A, p_2$ | $p_B, p_1$ | $p_A - p_2$ |
-> | contact | $p_A, p_B, p_1, p_2$ | — | — |
->
-> Each has $S = 1$ ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|Theorem §C6b.2.6]]): the cubic vertices carry $2 = 3 - 1$ external lines, the quartic one $4$. Enumeration: the $9!! = 945$ pairings at order $g^2$ form $31$ diagrams, of which exactly these $3$ are fully connected, each an orbit of $72 = 2!\,(3!)^2 = |G|$.
->
-> *Source: PHY 513, Problem Set 8, Problem 2(a) (the user's solution: diagrams drawn and with vertices opened into their legs) · checked with `qft-C/tools/hw8/check_hw8.py`*
-
-^ex-c6b-2-4
-
-> [!example] Example §C6b.2.5: Cubic–Quartic Theory, 2 → 3 at Order gλ
-> ![[ph-qft-c6b-2-4.svg]]
->
-> Same theory, $p_A + p_B \to p_1 + p_2 + p_3$, one cubic and one quartic vertex: $3 + 4 = 7$ legs, $5$ joined to external lines, one internal line ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 1: $7 = 5 + 2I$, a tree). Three external particles on the cubic vertex would leave two legs of the quartic vertex contracted with each other, four on the quartic vertex two legs of the cubic one: not fully connected ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 3). So two external particles sit on the cubic vertex and three on the quartic, and a diagram is the choice of the two at the cubic vertex: $\binom52 = 10$. With $u \in \{A, B\}$, $v \ne u$, $i \in \{1, 2, 3\}$, $\{j, k\} = \{1, 2, 3\}\setminus\{i\}$:
->
-> | class | at the cubic vertex | number | internal momentum |
-> |---|---|---|---|
-> | (I) both incoming | $p_A, p_B$ | $1$ | $p_A + p_B$ |
-> | (II) one in, one out | $p_u, p_i$ | $2\cdot3 = 6$ | $p_u - p_i$ |
-> | (III) both outgoing | $p_j, p_k$ | $3$ | $p_A + p_B - p_i = p_j + p_k$ |
->
-> $1 + 6 + 3 = 10$. All have $S = 1$ ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|Theorem §C6b.2.6]], Step 3: $N_D = 144 = 3!\,4! = |G|$; there is one vertex of each type, so $G$ contains no vertex permutations). Enumeration: the $11!! = 10\,395$ pairings of the $12$ half-edges form $195$ diagrams, exactly $10$ of them fully connected, each an orbit of $144$.
->
-> *Source: PHY 513, Problem Set 8, Problem 2(b)–(c) (the user's solution) · checked with `qft-C/tools/hw8/check_hw8.py`*
-
-^ex-c6b-2-5
-
-![[ph-qft-c6-17-1.svg]]
-*The diagrams of [[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-4|Example §C6b.2.4]] and [[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-5|Example §C6b.2.5]] (cubic vertices orange, quartic blue; incoming momenta left, outgoing right). Top: $2 \to 2$, the $s$-, $t$-, $u$-channel diagrams at order $g^2$ and the contact diagram at order $\lambda$. Bottom: $2 \to 3$ at order $g\lambda$, one representative of each class (I), (II), (III). Added figure, adapted from the user's solution of PHY 513, Problem Set 8, Problem 2.*
-
 > [!remark] Remark: Yu's route
-> Yu computes $S$-matrix elements this way before any correlation function: he defines the contractions of each field with initial and final particles (eqs. (7.13)–(7.18)), lists all first-order $T$-matrix elements of Yukawa theory and filters them kinematically (p. 272), reads the position- and then momentum-space rules off the results (eqs. (7.25)–(7.28), §7.2), and justifies them only in ch. 10 through LSZ ("our method for leading-order processes in chapters 7, 8, 9 is justified", p. 474). He keeps the field operators in the order of $\mathcal L_{\rm int}$ to fix fermion signs (boxed rule, p. 268); for scalars there are no signs. The course reaches amplitudes from correlation functions ([[§C6b.9 Amplitudes from Correlation Functions|§C6b.9]]); the two routes agree at lowest order ([[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-1|Example §C6b.2.1]]).
+> Yu computes $S$-matrix elements this way before any correlation function: he defines the contractions of each field with initial and final particles (eqs. (7.13)–(7.18)), lists all first-order $T$-matrix elements of Yukawa theory and filters them kinematically (p. 272), reads the position- and then momentum-space rules off the results (eqs. (7.25)–(7.28), §7.2), and justifies them only in ch. 10 through LSZ ("our method for leading-order processes in chapters 7, 8, 9 is justified", p. 474). He keeps the field operators in the order of $\mathcal L_{\rm int}$ to fix fermion signs (boxed rule, p. 268); for scalars there are no signs. The course reaches amplitudes from correlation functions ([[§C6b.10 Amplitudes from Correlation Functions|§C6b.10]]); the two routes agree at lowest order ([[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-1|Example §C6b.2.1]]).
 >
 > *Source: Yu §7.1, pp. 262–272; §7.2, pp. 287–288; §10.5.2, p. 474*
 
@@ -576,7 +553,6 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 
 > [!remark]- Connections
 > - The contraction of a field with an external particle is the one-particle wave function $\langle0|\hat\phi(x)|\mathbf p\rangle = e^{-ip\cdot x}$; with interactions it carries $\sqrt Z$, the origin of the LSZ factor — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]].
-> - The $n!$ of identical particles appears twice: as the sum over $\sigma$ when particles attach to fields, and as the $\frac{1}{n!}$ of the $n$-particle measure ($S_{\rm id}$) — [[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-10-5|Theorem §C6b.10.5]], [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-4|Theorem §C6b.6.4]].
-> - The same expansion with a source vertex is exact and solves the classical-source problem — [[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.10]].
-> - The vertex factors and lines are those of the correlation functions — [[§C6a.12 Feynman Rules for Polynomial Interactions|§C6a.12]]; the amputation route to the same $i\mathcal M$ and its LSZ form — [[§C6b.9 Amplitudes from Correlation Functions|§C6b.9]].
-> - The kinematic filter is the threshold of a decay, $M > \sum m_i$, the condition of the two-body decay formula — [[§C6b.8 Decay Rates and Widths#^thm-c6b-8-5|Theorem §C6b.8.5]].
+> - The $n!$ of identical particles appears twice: as the sum over $\sigma$ when particles attach to fields, and as the $\frac{1}{n!}$ of the $n$-particle measure ($S_{\rm id}$) — [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-5|Theorem §C6b.11.5]], [[§C6b.7 Evaluating the Cross Section#^thm-c6b-7-4|Theorem §C6b.7.4]].
+> - The same expansion with a source vertex is exact and solves the classical-source problem — [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.11]].
+> - The kinematic filter is the threshold of a decay, $M > \sum m_i$, the condition of the two-body decay formula — [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-5|Theorem §C6b.9.5]].

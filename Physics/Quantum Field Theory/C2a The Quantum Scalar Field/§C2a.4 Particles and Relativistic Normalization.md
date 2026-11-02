@@ -154,7 +154,7 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 > \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}} = \int\frac{d^4p}{(2\pi)^4}\,2\pi\,\delta(p^2 - m^2)\,\theta(p^0), \qquad \mathbb 1_{1\text{-particle}} = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,|\mathbf p\rangle\langle\mathbf p| .
 > $$
 >
-> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; the measure itself is kinematics, valid in any theory ([[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^def-c6b-7-1|Def. §C6b.7.1]]).
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; the measure itself is kinematics, valid in any theory ([[§C6b.8 Lorentz Invariance and Two-Body Phase Space#^def-c6b-8-1|Def. §C6b.8.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.9, eq. (invmeasure) · PS §2.3, eqs. (2.39)–(2.40) · Yu §2.3.4, eqs. (2.161), (2.167)*
 

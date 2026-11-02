@@ -9,15 +9,15 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C6a.12 Feynman Rules for Polynomial Interactions]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.2 Matrix Elements between Particle States]] →
 
-*Sources: the user's PHY 513 notes, Ch. 15 §15.1 (Definition "The $S$-matrix", paragraphs "'Matrix' is a historical term", "The fundamental observable?", "Relation to Chapter 13 (filled in)", Definition "The invariant amplitude $\mathcal M$", Derivation "Three properties of $\mathcal M$ (filled in)", Principle "Dynamics versus kinematics") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slides 4–7, and transcript · PHY 513 Lecture 16 (Larsen, 2 Nov 2026), Part A, slides 4–7 (in and out states; no transcript yet) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 102–104, eqs. (4.70)–(4.73); §4.6, pp. 108–109, eqs. (4.87)–(4.90) · Yu Zhao-Huan, 量子场论讲义, §6.2, eqs. (6.122)–(6.127); §6.5, eqs. (6.272)–(6.275).*
+*Sources: the user's PHY 513 notes, Ch. 15 §15.1 (Definition "The $S$-matrix", paragraphs "'Matrix' is a historical term", "The fundamental observable?", "Relation to Chapter 13 (filled in)", Definition "The invariant amplitude $\mathcal M$", Derivation "Three properties of $\mathcal M$ (filled in)", Principle "Dynamics versus kinematics") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slides 4–7, and transcript · PHY 513 Lecture 16 (Larsen, 2 Nov 2026), Part A, slides 4–7, and transcript (cluster decomposition, in and out states) · the user's PHY 513 notes, Lecture 16 update, §16.1–§16.2 · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 102–104, eqs. (4.70)–(4.73); §4.6, pp. 108–109, eqs. (4.87)–(4.90) · Yu Zhao-Huan, 量子场论讲义, §6.2, eqs. (6.122)–(6.127); §6.5, eqs. (6.272)–(6.275).*
 
-Lectures 13–14 built the Feynman rules for correlation functions $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\}|\Omega\rangle$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]). "It's completely the right idea. It's just that … that's not what you really want": nobody measures a correlation function. Lecture 15 asks what we do want to compute, and the answer of particle physics is the cross section and the decay rate. This section sets up the object they are made from. Particles that are widely separated early evolve into particles that are widely separated late; the linear map between the two is the $S$-matrix ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]). Removing the part in which nothing happens and the overall delta function of four-momentum conservation leaves one function, the invariant amplitude $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]), the only place where the dynamics enters. Lecture 16 relates the in and out states to free states by a prescription, the dressed free states ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]]). [[§C6b.2 Matrix Elements between Particle States|§C6b.2]] computes these matrix elements from the Dyson series with particles in the in and out states: contractions of fields with external particles, Wick's theorem between particle states, and the tree-level Feynman rules for $i\mathcal M$. The next sections turn $\mathcal M$ into cross sections, first by Yu's box route ([[§C6b.3 Transition Probabilities in a Box|§C6b.3]], [[§C6b.4 The Cross Section|§C6b.4]]), then by the course's wave packets ([[§C6b.5 Wave Packets and the Cross Section|§C6b.5]], [[§C6b.6 Evaluating the Cross Section|§C6b.6]]), with Lorentz invariance and two-body phase space in [[§C6b.7 Lorentz Invariance and Two-Body Phase Space|§C6b.7]], and decay rates ([[§C6b.8 Decay Rates and Widths|§C6b.8]]), and [[§C6b.9 Amplitudes from Correlation Functions|§C6b.9]] states how $\mathcal M$ is read off from the correlation functions of Lecture 14. Yu treats the $S$-matrix in §6.2, eqs. (6.122)–(6.127), defining it as the interaction-picture evolution operator $U(+\infty, -\infty)$ between asymptotic states, and the split $S = \mathbb I + iT$ with the invariant amplitude in §6.5, eqs. (6.272)–(6.275), in the setting of the Dyson series of the $S$-operator.
+Lectures 13–14 built the Feynman rules for correlation functions $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_n)\}|\Omega\rangle$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]). "It's completely the right idea. It's just that … that's not what you really want": nobody measures a correlation function. Lecture 15 asks what we do want to compute, and the answer of particle physics is the cross section and the decay rate. This section sets up the object they are made from. Particles that are widely separated early evolve into particles that are widely separated late; the linear map between the two is the $S$-matrix ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]). Removing the part in which nothing happens and the overall delta function of four-momentum conservation leaves one function, the invariant amplitude $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]), the only place where the dynamics enters. Lecture 16 relates the in and out states to free states by a prescription, the dressed free states ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]). [[§C6b.2 Matrix Elements between Particle States|§C6b.2]] computes these matrix elements from the Dyson series with particles in the in and out states: contractions of fields with external particles, Wick's theorem between particle states, and which terms are scattering; [[§C6b.3 Feynman Rules for Amplitudes|§C6b.3]] gives the Feynman rules for $i\mathcal M$. The next sections turn $\mathcal M$ into cross sections, first by Yu's box route ([[§C6b.4 Transition Probabilities in a Box|§C6b.4]], [[§C6b.5 The Cross Section|§C6b.5]]), then by the course's wave packets ([[§C6b.6 Wave Packets and the Cross Section|§C6b.6]], [[§C6b.7 Evaluating the Cross Section|§C6b.7]]), with Lorentz invariance and two-body phase space in [[§C6b.8 Lorentz Invariance and Two-Body Phase Space|§C6b.8]], and decay rates ([[§C6b.9 Decay Rates and Widths|§C6b.9]]), and [[§C6b.10 Amplitudes from Correlation Functions|§C6b.10]] states how $\mathcal M$ is read off from the correlation functions of Lecture 14. Yu treats the $S$-matrix in §6.2, eqs. (6.122)–(6.127), defining it as the interaction-picture evolution operator $U(+\infty, -\infty)$ between asymptotic states, and the split $S = \mathbb I + iT$ with the invariant amplitude in §6.5, eqs. (6.272)–(6.275), in the setting of the Dyson series of the $S$-operator.
 
 **The setup of this chapter: what is prepared, what is measured, which theory.** Prepared: a few particles with nearly definite momenta, far apart in the far past (two for a scattering, one for a decay). Measured: the particles that emerge in the far future, counted in ranges of momentum; the observables are counting rates, the cross section and the decay rate. The theory: a Hamiltonian $\hat H = \hat H_0 + \hat H_{\rm int}$. Two settings run through C6b, and each formula says which it uses:
-- *the interacting theory* ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], the wave packets of [[§C6b.5 Wave Packets and the Cross Section|§C6b.5]]): the in and out states are states of the full $\hat H$ that look like free, widely separated particles at $\mp\infty$; the vacuum is $|\Omega\rangle$; the interaction is never switched off;
-- *the free-state setting* (Yu's box, [[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]]; the decay chain, [[§C6b.8 Decay Rates and Widths#^mod-c6b-8-1|Model §C6b.8.1]]; the matrix elements of [[§C6b.2 Matrix Elements between Particle States|§C6b.2]] and the amplitudes of [[§C6b.9 Amplitudes from Correlation Functions|§C6b.9]]): the in and out states are free Fock states $\sqrt{2E}\,\hat a^\dagger\cdots|0\rangle$ of $\hat H_0$ over the free vacuum $|0\rangle$, and $\hat S = U(+\infty, -\infty)$ in the interaction picture ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]).
+- *the interacting theory* ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], the wave packets of [[§C6b.6 Wave Packets and the Cross Section|§C6b.6]]): the in and out states are states of the full $\hat H$ that look like free, widely separated particles at $\mp\infty$; the vacuum is $|\Omega\rangle$; the interaction is never switched off;
+- *the free-state setting* (Yu's box, [[§C6b.4 Transition Probabilities in a Box#^mod-c6b-4-1|Model §C6b.4.1]]; the decay chain, [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-1|Model §C6b.9.1]]; the matrix elements of [[§C6b.2 Matrix Elements between Particle States|§C6b.2]] and the amplitudes of [[§C6b.10 Amplitudes from Correlation Functions|§C6b.10]]): the in and out states are free Fock states $\sqrt{2E}\,\hat a^\dagger\cdots|0\rangle$ of $\hat H_0$ over the free vacuum $|0\rangle$, and $\hat S = U(+\infty, -\infty)$ in the interaction picture ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]).
 
-The two agree exactly when $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$ (a source or interaction switched on and off, [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]], as in [[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.10]]); for a permanent interaction ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]) they agree at lowest order, and beyond it the external particles carry $\sqrt Z$ and the physical mass ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|Caution: "Free" means widely separated]], below; [[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]).
+The two agree exactly when $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$ (a source or interaction switched on and off, [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]], as in [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.11]]); for a permanent interaction ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]) they agree at lowest order, and beyond it the external particles carry $\sqrt Z$ and the physical mass ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|Caution: "Free" means widely separated]], below; [[§C6b.10 Amplitudes from Correlation Functions#^cau-c6b-10-2|§C6b.10, Caution: The rule is stated at lowest order]]).
 
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$; states normalized relativistically, $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); the $S$-matrix and the $T$-matrix are operators and carry hats, $\hat S$, $\hat T$ (the slides write $\mathcal S$, $\mathcal T$: Caution: Names for the S-matrix, the T-matrix and the amplitude, below); $\mathcal M$ is a number.
 
@@ -39,7 +39,7 @@ The two agree exactly when $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$ (a s
 ^def-c6b-1-1
 
 > [!caution] Caution: "Free" means widely separated, not created by $\hat a^\dagger$ from the free vacuum
-> The in and out states of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]] are states of the *interacting* theory that look like free, widely separated particles at $-T$ (in) or at $+T$ (out): "they don't know each other, and then they come together." They are eigenstates of $\hat H$, not of $\hat H_0$, and "in" and "out" states with the same labels are different states, "because there's been all this time evolution". PS say the same: $|\mathbf k\rangle$ in their wave packet (4.65) "is a one-particle state of momentum $\mathbf k$ in the interacting theory", and in the free theory one would have $|\mathbf k\rangle = \sqrt{2E_{\mathbf k}}\,\hat a^\dagger_{\mathbf k}|0\rangle$. Relating these states to the free states $\hat a^\dagger\cdots|0\rangle$ is the same problem that the $T \to \infty(1 - i\varepsilon)$ limit solved for the vacuum ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]); for particle states Lecture 16 states a prescription of the same form ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]]), and the LSZ formula justifies it (second semester; QFT C10, planned).
+> The in and out states of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]] are states of the *interacting* theory that look like free, widely separated particles at $-T$ (in) or at $+T$ (out): "they don't know each other, and then they come together." They are eigenstates of $\hat H$, not of $\hat H_0$, and "in" and "out" states with the same labels are different states, "because there's been all this time evolution". PS say the same: $|\mathbf k\rangle$ in their wave packet (4.65) "is a one-particle state of momentum $\mathbf k$ in the interacting theory", and in the free theory one would have $|\mathbf k\rangle = \sqrt{2E_{\mathbf k}}\,\hat a^\dagger_{\mathbf k}|0\rangle$. Relating these states to the free states $\hat a^\dagger\cdots|0\rangle$ is the same problem that the $T \to \infty(1 - i\varepsilon)$ limit solved for the vacuum ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]); for particle states Lecture 16 states a prescription of the same form ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]), and the LSZ formula justifies it (second semester; QFT C10, planned).
 >
 > *Source: PHY 513 Lecture 15, transcript · PS §4.5, p. 102 (after eq. (4.65)), p. 108 (eqs. (4.87)–(4.88)) · the user's PHY 513 notes, Ch. 15 §15.1*
 
@@ -77,7 +77,7 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 >
 > between eigenstates of $\hat H_0$ the two matrix elements differ by a phase, which drops out of every probability.
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] (exact), [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (lowest order); *applies:* the identity holds for any $\hat H$ (interaction picture, $\hat H = \hat H_0 + \hat H_{\rm int}$, free states); it identifies the $\hat S$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]] with $U(+\infty, -\infty)$ between free states, up to the phase, only where free states may replace the in and out states: exactly if $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$, for a permanent interaction at lowest order only ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|Caution: "Free" means widely separated]]; [[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]).
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] (exact), [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (lowest order); *applies:* the identity holds for any $\hat H$ (interaction picture, $\hat H = \hat H_0 + \hat H_{\rm int}$, free states); it identifies the $\hat S$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]] with $U(+\infty, -\infty)$ between free states, up to the phase, only where free states may replace the in and out states: exactly if $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$, for a permanent interaction at lowest order only ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|Caution: "Free" means widely separated]]; [[§C6b.10 Amplitudes from Correlation Functions#^cau-c6b-10-2|§C6b.10, Caution: The rule is stated at lowest order]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.1 (paragraph "Relation to Chapter 13 (filled in)") · Yu §6.2, eqs. (6.122)–(6.125) (the $S$-operator $S = U(+\infty, -\infty)$)*
 
@@ -106,7 +106,7 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 >
 > and $|e^{i(E_f + E_i)T}| = 1$, so $|\langle f|U(T, -T)|i\rangle|^2 = |\langle f|e^{-i\hat H\,2T}|i\rangle|^2$.
 >
-> ⚑ By-product: with $T \to \infty$ this suggests $\hat S = U(+\infty, -\infty) = T\{\exp[-i\int_{-\infty}^{\infty}dt\,\hat H_I(t)]\}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]), Yu's definition (eqs. (6.125)–(6.126)), which makes Dyson's series a series for $\hat S$; Lecture 16 adopts it as a prescription ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]]). It is heuristic: the phase oscillates without a limit as $T \to \infty$, and the true in and out states are eigenstates of $\hat H$, not $\hat H_0$ (Caution: "Free" means widely separated, above). → Remark: Yu's route, below.
+> ⚑ By-product: with $T \to \infty$ this suggests $\hat S = U(+\infty, -\infty) = T\{\exp[-i\int_{-\infty}^{\infty}dt\,\hat H_I(t)]\}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]), Yu's definition (eqs. (6.125)–(6.126)), which makes Dyson's series a series for $\hat S$; Lecture 16 adopts it as a prescription ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]). It is heuristic: the phase oscillates without a limit as $T \to \infty$, and the true in and out states are eigenstates of $\hat H$, not $\hat H_0$ (Caution: "Free" means widely separated, above). → Remark: Yu's route, below.
 >
 > **What the derivation shows.**
 > - Between free states, the $S$-matrix of the course and Yu's $U(+\infty, -\infty)$ agree up to a phase.
@@ -118,36 +118,46 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 
 Lecture 16 turns the heuristic by-product of Theorem §C6b.1.1 into the course's prescription for the in and out states, the step from "Feynman rules ⇒ correlation functions" to "Feynman rules ⇒ $S$-matrix" (slide 4: "Drawback of direct route: some heuristic steps").
 
-> [!principle] Principle §C6b.1.2: Interacting In and Out States
-> 1. *Cluster decomposition.* At early and late times the particles of a process are widely separated, and widely separated interacting particles do not affect each other: multiparticle states are formed from single-particle states,
+> [!principle] Principle §C6b.1.2: Cluster Decomposition
+> Processes far apart do not affect each other: whether or not there is a particle far away does not matter for what happens here. At early and late times the particles of a process are widely separated, so the space of $n$ widely separated interacting particles is built from the one-particle space,
 >
 > $$
-> \mathcal H_{n\text{-particle}} \simeq \mathcal H_{1\text{-particle}}^{\otimes n} .
+> \mathcal H_{n\text{-particle}} \simeq \mathcal H_{1\text{-particle}}^{\otimes n} \quad (\text{symmetrized for identical bosons: } \operatorname{Sym}^n\mathcal H_{1\text{-particle}}) ,
 > $$
 >
-> The single-particle states still differ from free ones: they are "dressed" by the interactions ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|Caution: "Free" means widely separated]]).
-> 2. *Prescription.* The in and out states of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]] are the free states $|\cdots\rangle_0 = \sqrt{2E}\,\hat a^\dagger\cdots|0\rangle$ dressed by the interaction-picture evolution ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]]) from the far past and into the far future, as the interacting vacuum is $U(0, -T)|0\rangle$ up to normalization ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]]):
+> and multiparticle in and out states are formed from single-particle states. In the free theory the Fock space realizes this with $\hat a^\dagger$'s ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]); with interactions the single-particle states themselves still differ from free ones, they are "dressed" ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|Caution: "Free" means widely separated]]).
+>
+> *Domain:* an assumption ("Simplifying assumption", slide 5; an axiom of axiomatic field theory); the user's notes state it as a Definition, here a principle because it is assumed, not derived; about widely separated particles at early and late times, not about the interaction region.
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* the asymptotic states of the interacting theory, exact as an assumption; it says nothing about how a single dressed particle differs from a free one.
+>
+> *Source: PHY 513 Lecture 16 (Larsen, 2 Nov 2026), slide 5 ("Simplifying assumption: Cluster Decomposition. Widely separated interacting states at early/late times $\mathcal H_{\rm n-particle} \simeq \mathcal H^n_{\rm 1-particle}$. So: can form multiparticle states from single particle states"), and transcript ("in this sort of axiomatic field theory, they would say that our $n$-particle Hilbert space is actually the one-particle Hilbert space to the $n$th power") · the user's PHY 513 notes, Lecture 16 update, §16.2 "Cluster decomposition" (Definition "Cluster decomposition"; "Filled in: why 'symmetrized'") · Schwartz §7.3, p. 97 (local fields built from creation and annihilation operators guarantee cluster decomposition)*
+
+^pr-c6b-1-2
+
+> [!principle] Principle §C6b.1.3: Interacting In and Out States
+> 1. *Prescription.* With multiparticle states built from single-particle ones ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]]), the in and out states of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]] are the free states $|\cdots\rangle_0 = \sqrt{2E}\,\hat a^\dagger\cdots|0\rangle$ dressed by the interaction-picture evolution ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]]) from the far past and into the far future, as the interacting vacuum is $U(0, -T)|0\rangle$ up to normalization ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]]):
 >
 > $$
 > |\mathbf p_A\mathbf p_B\cdots\rangle_{\rm in} = U(0, -T)\,|\mathbf p_A\mathbf p_B\cdots\rangle_0 , \qquad {}_{\rm out}\langle\mathbf p_1\mathbf p_2\cdots| = {}_0\langle\mathbf p_1\mathbf p_2\cdots|\,U(T, 0) , \qquad T \to \infty(1 - i\varepsilon) .
 > $$
 >
-> 3. *The $S$-matrix formula.* Then, with the vacuum bubbles (diagrams disconnected from all external particles) omitted,
+> 2. *The $S$-matrix formula.* Then, with the vacuum bubbles (diagrams disconnected from all external particles) omitted,
 >
 > $$
 > \langle\mathbf p_1\mathbf p_2\cdots|\hat S|\mathbf p_A\mathbf p_B\cdots\rangle = \lim_{T\to\infty(1 - i\varepsilon)}{}_0\langle\mathbf p_1\mathbf p_2\cdots|\,T\Bigl\{\exp\Bigl[-i\int_{-T}^{T}dt\,\hat H_I(t)\Bigr]\Bigr\}\,|\mathbf p_A\mathbf p_B\cdots\rangle_0 .
 > $$
 >
-> *Domain:* a prescription, not derived in the course ("Detailed justification: 2nd semester": the LSZ formula, [[§C6b.9 Amplitudes from Correlation Functions|§C6b.9]]); the normalization factors of the dressed states are not computed: the omitted bubbles stand for them, as $(e^{-iE_0T}\langle\Omega|0\rangle)^{-1}$ does for the vacuum.
+> *Domain:* a prescription, not derived in the course ("Detailed justification: 2nd semester": the LSZ formula, [[§C6b.10 Amplitudes from Correlation Functions|§C6b.10]]); the normalization factors of the dressed states are not computed: the omitted bubbles stand for the vacuum's, as $(e^{-iE_0T}\langle\Omega|0\rangle)^{-1}$ does in the master formula, and the particles' are the factors $\sqrt Z$ of LSZ, one per external particle (the user's notes, "what is still being neglected"); the free states are what the homework uses.
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* a permanent interaction, in and out states of the full $\hat H$ replaced by dressed free states over $|0\rangle$; valid at lowest order, beyond it the one-particle states carry $\sqrt Z$ and the physical mass ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]]; [[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]); in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] part 3 is exact with nothing omitted: $|0\rangle$ is the in and out vacuum and the source-to-source lines are the vacuum-persistence amplitude ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 1; [[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-10-1|Theorem §C6b.10.1]]).
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* a permanent interaction, in and out states of the full $\hat H$ replaced by dressed free states over $|0\rangle$; valid at lowest order, beyond it the one-particle states carry $\sqrt Z$ and the physical mass ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]]; [[§C6b.10 Amplitudes from Correlation Functions#^cau-c6b-10-2|§C6b.10, Caution: The rule is stated at lowest order]]); in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] part 2 is exact with nothing omitted: $|0\rangle$ is the in and out vacuum and the source-to-source lines are the vacuum-persistence amplitude ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 1; [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-1|Theorem §C6b.11.1]]).
 >
-> *Source: PHY 513 Lecture 16 (Larsen, 2 Nov 2026), slides 4–7 (slide 5: "Simplifying assumption: Cluster Decomposition. Widely separated interacting states at early/late times $\mathcal H_{\rm n-particle} \simeq \mathcal H^n_{\rm 1-particle}$. So: can form multiparticle states from single particle states. Remaining challenge: 'single particle states' differ from free theory: 'dressing' by interactions"; slide 7: "Prescription: … Additionally: omit vacuum bubbles (diagrams disconnected from external points). Detailed justification: 2nd semester") · PS §4.6, pp. 108–109, eqs. (4.87)–(4.90) ("If the formula (4.88) could somehow be justified …") · stated as a principle here*
+> *Source: PHY 513 Lecture 16 (Larsen, 2 Nov 2026), slides 4–7 (slide 5: "Remaining challenge: 'single particle states' differ from free theory: 'dressing' by interactions"; slide 7: "Prescription: … Additionally: omit vacuum bubbles (diagrams disconnected from external points). Detailed justification: 2nd semester") · PS §4.6, pp. 108–109, eqs. (4.87)–(4.90) ("If the formula (4.88) could somehow be justified …") · the user's PHY 513 notes, Lecture 16 update, §16.2, Principle "The working formula for the $S$-matrix" and paragraphs "Filled in: the composition step", "Filled in: what is still being neglected" · PHY 513 Lecture 16, transcript ("There is no such thing as an electron that comes without its electric field. It's necessarily interacting with itself"; the homework uses the free states, the user's notes, §16.2)*
 
-^pr-c6b-1-2
+^pr-c6b-1-3
 
-> [!derivation]- Derivation (of part 3 from part 2)
-> **Step 1** (the definition). By [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]] and part 2,
+> [!derivation]- Derivation (of part 2 from part 1)
+> **Step 1** (the definition). By [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]] and part 1,
 >
 > $$
 > \langle\mathbf p_1\mathbf p_2\cdots|\hat S|\mathbf p_A\mathbf p_B\cdots\rangle = {}_{\rm out}\langle\mathbf p_1\mathbf p_2\cdots|\mathbf p_A\mathbf p_B\cdots\rangle_{\rm in} = {}_0\langle\mathbf p_1\mathbf p_2\cdots|\,U(T, 0)\,U(0, -T)\,|\mathbf p_A\mathbf p_B\cdots\rangle_0 .
@@ -161,7 +171,7 @@ Lecture 16 turns the heuristic by-product of Theorem §C6b.1.1 into the course's
 > U(T, -T) = T\Bigl\{\exp\Bigl[-i\int_{-T}^{T}dt\,\hat H_I(t)\Bigr]\Bigr\} ,
 > $$
 >
-> which is part 3 before the bubbles are dealt with.
+> which is part 2 before the bubbles are dealt with.
 >
 > **Step 4** (why the bubbles go). For the vacuum the same dressing needs a normalization: $|\Omega\rangle = \lim U(0, -T)|0\rangle/(e^{-iE_0T}\langle\Omega|0\rangle)$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]]), and the product of the two normalizations is the vacuum-to-vacuum amplitude $\langle0|U(T, -T)|0\rangle$, the sum of the vacuum bubbles ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]). In ${}_0\langle f|U(T, -T)|i\rangle_0$ the bubbles share no line with the particles, and they factor out as in [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]]:
 >
@@ -171,20 +181,20 @@ Lecture 16 turns the heuristic by-product of Theorem §C6b.1.1 into the course's
 >
 > Dividing by the normalization, as the master formula divides by its denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]), removes the second factor: "omit vacuum bubbles". The dressing of the particle states needs further factors (PS p. 109: "so horrible that we have not even attempted to write them down"); the prescription drops them: this is the heuristic step.
 >
-> **Step 5** (a source switched off). In [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] $\hat H_I(t) = 0$ outside $[t_1, t_2]$, so for $T > |t_1|, |t_2|$ the free states at $\mp T$ are the exact in and out states and $U(T, -T) = \hat S$ ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 1); no normalization is divided out, and the source-to-source diagrams stay ([[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-10-1|Theorem §C6b.10.1]]).
+> **Step 5** (a source switched off). In [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] $\hat H_I(t) = 0$ outside $[t_1, t_2]$, so for $T > |t_1|, |t_2|$ the free states at $\mp T$ are the exact in and out states and $U(T, -T) = \hat S$ ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 1); no normalization is divided out, and the source-to-source diagrams stay ([[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-1|Theorem §C6b.11.1]]).
 >
 > **What the derivation shows.**
-> - The only new input over Lecture 13 is part 2 for particle states; Steps 1–3 are exact identities, Step 4 is where the prescription replaces a computation.
-> - Two kinds of diagram are still not part of the scattering: particles passing through untouched and corrections on an external leg; they are sorted out in [[§C6b.2 Matrix Elements between Particle States|§C6b.2]] (PS (4.90): "connected, amputated").
+> - The only new input over Lecture 13 is part 1 for particle states; Steps 1–3 are exact identities, Step 4 is where the prescription replaces a computation.
+> - Two kinds of diagram are still not part of the scattering: particles passing through untouched and corrections on an external leg; they are sorted out in [[§C6b.2 Matrix Elements between Particle States|§C6b.2]] and [[§C6b.3 Feynman Rules for Amplitudes|§C6b.3]] (PS (4.90): "connected, amputated").
 
-^der-c6b-1-2
+^der-c6b-1-3
 
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]], [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-10-1|Theorem §C6b.10.1]]
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-4|Theorem §C6a.4.4]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]], [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-1|Theorem §C6b.11.1]]
 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-7|P6, step 7]]
 
 ![[ph-qft-c6b-1-1.svg]]
-*[[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]] on a time axis. The free state $|\mathbf p_A\mathbf p_B\rangle_0$ at $-T$ is dressed by $U(0, -T)$ into the in state at the reference time $0$; the out state is the free ${}_0\langle\mathbf p_1\mathbf p_2|$ at $+T$ carried back by $U(T, 0)$. Their overlap is ${}_0\langle\mathbf p_1\mathbf p_2|U(T, -T)|\mathbf p_A\mathbf p_B\rangle_0$, the time-ordered exponential over $[-T, T]$. Added figure.*
+*[[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]] on a time axis. The free state $|\mathbf p_A\mathbf p_B\rangle_0$ at $-T$ is dressed by $U(0, -T)$ into the in state at the reference time $0$; the out state is the free ${}_0\langle\mathbf p_1\mathbf p_2|$ at $+T$ carried back by $U(T, 0)$. Their overlap is ${}_0\langle\mathbf p_1\mathbf p_2|U(T, -T)|\mathbf p_A\mathbf p_B\rangle_0$, the time-ordered exponential over $[-T, T]$. Added figure.*
 
 ## S = 1 + iT and the amplitude
 
@@ -210,7 +220,7 @@ $$
 $$
 so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ is split off so that $\hat T$ is the interaction itself at first order. Yu: "$iT$ 包含所有 $n \ge 1$ 的项".
 
-> [!theorem] Theorem §C6b.1.3: The S-Matrix Conserves Four-Momentum
+> [!theorem] Theorem §C6b.1.4: The S-Matrix Conserves Four-Momentum
 > Assume the theory is translation invariant: the four-momentum $\hat P^\mu = (\hat H, \hat{\mathbf P})$ satisfies $[\hat H, \hat P^\mu] = 0$, and the in and out states are eigenstates of $\hat P^\mu$ with eigenvalues $p_i = \sum_{A, B, \dots}p$ and $p_f = \sum_{1, 2, \dots}p$. Then $[\hat S, \hat P^\mu] = 0$, and every matrix element of $i\hat T$ between such states, as a distribution in the momenta, is of the form
 >
 > $$
@@ -223,7 +233,7 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 >
 > *Source: PHY 513 Lecture 15, slide 6 ("$\mathcal T$ conserves energy-momentum so remove $\delta$-function"), and transcript ("this is a relativistic theory, and therefore, the final outcome has the same total four momentum as the incoming … this whole thing here will be proportional to a delta function") · the user's PHY 513 notes, Ch. 15 §15.1, Derivation "Three properties of $\mathcal M$ (filled in)", first paragraph · PS §4.5, p. 104 · stated as a distribution here*
 
-^thm-c6b-1-3
+^thm-c6b-1-4
 
 > [!derivation]- Derivation
 > **Step 1** ($\hat S$ commutes with $\hat P^\mu$). $\hat P^\mu$ is conserved because the theory is invariant under translations in space and time (Noether, [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum|§C1b.7]]; the generator form [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]]): $[\hat H, \hat P^\mu] = 0$. By induction on $k$,
@@ -282,14 +292,14 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 >
 > **What the derivation shows.**
 > - The delta function is forced by symmetry alone, "before we even discuss what theory we're talking about"; only its coefficient knows the dynamics.
-> - The assumption that $C$ is smooth excludes further delta functions, which come from parts of the process in which some particles do not interact at all (disconnected pieces, [[§C6b.9 Amplitudes from Correlation Functions|§C6b.9]]).
+> - The assumption that $C$ is smooth excludes further delta functions, which come from parts of the process in which some particles do not interact at all (disconnected pieces, [[§C6b.10 Amplitudes from Correlation Functions|§C6b.10]]).
 
-^der-c6b-1-3
+^der-c6b-1-4
 
 *Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
 
 > [!definition] Definition §C6b.1.3: The Invariant Amplitude
-> Since $\hat T$ conserves energy-momentum ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]), the delta function is removed:
+> Since $\hat T$ conserves energy-momentum ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]), the delta function is removed:
 >
 > $$
 > \langle\mathbf p_1\mathbf p_2\cdots|i\hat T|\mathbf p_A\mathbf p_B\cdots\rangle = (2\pi)^4\delta^4\Bigl(\sum_{A, B, \dots}p - \sum_{1, 2, \dots}p\Bigr)\;i\mathcal M(p_A, p_B, \dots \to p_1, p_2, \dots) .
@@ -297,7 +307,7 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 >
 > The **amplitude** $\mathcal M$, the "invariant matrix element", is dynamical data.
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* exact, for translation-invariant theories and relativistically normalized states; $\mathcal M$ from free states and the Feynman rules is lowest order ([[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]).
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* exact, for translation-invariant theories and relativistically normalized states; $\mathcal M$ from free states and the Feynman rules is lowest order ([[§C6b.10 Amplitudes from Correlation Functions#^cau-c6b-10-2|§C6b.10, Caution: The rule is stated at lowest order]]).
 >
 > *Source: PHY 513 Lecture 15, slide 6 ("$\langle\vec p_1\vec p_2\ldots|i\mathcal T|\vec p_A\vec p_B\ldots\rangle = (2\pi)^4\delta^{(4)}(\sum_{A,B,\ldots}p - \sum_{1,2,\ldots}p)\,i\mathcal M$. Amplitude $\mathcal M$ = 'invariant matrix element'. The amplitude is dynamical data."), and transcript ("The coefficient of that we call $M$") · the user's PHY 513 notes, Ch. 15 §15.1, eq. (Mdef) · PS §4.5, eq. (4.73) · Yu §6.5, eq. (6.275)*
 
@@ -310,16 +320,16 @@ Where the $(2\pi)^4$ and the $i$ of $i\mathcal M$ come from: at first order $\la
 $$
 \int d^4x\;e^{i(\sum_{\rm out}p - \sum_{\rm in}p)\cdot x} = (2\pi)^4\delta^4\Bigl(\sum_{\rm in}p - \sum_{\rm out}p\Bigr) .
 $$
-The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal M = -i\lambda$, $\mathcal M = -\lambda$ ([[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-1|Example §C6b.9.1]]); $(2\pi)^4\delta^4(0)$, which squaring this delta function produces, is the spacetime volume of a box, $\tilde V\tilde T$, with $2\pi\delta(0) = \tilde T$ the duration ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]; [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-2|Theorem §C6b.3.2]]).
+The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal M = -i\lambda$, $\mathcal M = -\lambda$ ([[§C6b.10 Amplitudes from Correlation Functions#^ex-c6b-10-1|Example §C6b.10.1]]); $(2\pi)^4\delta^4(0)$, which squaring this delta function produces, is the spacetime volume of a box, $\tilde V\tilde T$, with $2\pi\delta(0) = \tilde T$ the duration ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]; [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-2|Theorem §C6b.4.2]]).
 
 > [!remark] Remark: What "dynamical" means
-> "By dynamical data, we mean things that depend on … the potentials. It's not something you can just get by energy conservation. It should depend on … what theory [we are talking] about." Everything else in a cross section or a decay rate, the $\mathbb 1$, the delta function, the normalization of the states, the phase space, is kinematics and is the same in every theory. So $\mathcal M$ "is kind of the proper matrix element that we actually really want", and the Feynman rules are rules for computing it ([[§C6b.9 Amplitudes from Correlation Functions|§C6b.9]]).
+> "By dynamical data, we mean things that depend on … the potentials. It's not something you can just get by energy conservation. It should depend on … what theory [we are talking] about." Everything else in a cross section or a decay rate, the $\mathbb 1$, the delta function, the normalization of the states, the phase space, is kinematics and is the same in every theory. So $\mathcal M$ "is kind of the proper matrix element that we actually really want", and the Feynman rules are rules for computing it ([[§C6b.10 Amplitudes from Correlation Functions|§C6b.10]]).
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.1*
 
 ^rem-c6b-1-3
 
-> [!theorem] Theorem §C6b.1.4: The Mass Dimension of the Amplitude
+> [!theorem] Theorem §C6b.1.5: The Mass Dimension of the Amplitude
 > For a process with $N$ external particles in total (initial plus final),
 >
 > $$
@@ -332,7 +342,7 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.1, Derivation "Three properties of $\mathcal M$ (filled in)", second paragraph*
 
-^thm-c6b-1-4
+^thm-c6b-1-5
 
 > [!derivation]- Derivation
 > **Step 1** (one-particle states). With $[E] = 1$ and $[\delta^3(\mathbf p)] = -3$, the normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] gives
@@ -358,13 +368,13 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > $$
 >
 > **What the derivation shows.**
-> - The dimension of $\mathcal M$ is fixed by the number of external particles alone; for $N = 4$ the amplitude is dimensionless, so at lowest order in $\phi^4$ theory it can only be a number times $\lambda$ ([[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-1|Example §C6b.9.1]]).
+> - The dimension of $\mathcal M$ is fixed by the number of external particles alone; for $N = 4$ the amplitude is dimensionless, so at lowest order in $\phi^4$ theory it can only be a number times $\lambda$ ([[§C6b.10 Amplitudes from Correlation Functions#^ex-c6b-10-1|Example §C6b.10.1]]).
 
-^der-c6b-1-4
+^der-c6b-1-5
 
 *Uses:* [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]]
 
-> [!theorem] Theorem §C6b.1.5: The Amplitude of Spinless Particles Is Lorentz Invariant
+> [!theorem] Theorem §C6b.1.6: The Amplitude of Spinless Particles Is Lorentz Invariant
 > If $\hat S$ commutes with the unitary representation $U(\Lambda)$ of the proper orthochronous Lorentz group on the in and out states, and the particles are spinless, then
 >
 > $$
@@ -375,7 +385,7 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.1, Derivation "Three properties of $\mathcal M$ (filled in)", third paragraph · PHY 513 Lecture 15, slide 6 ("invariant matrix element") · Yu §6.5, after eq. (6.275) ("$\mathcal M$ 是 Lorentz 不变的")*
 
-^thm-c6b-1-5
+^thm-c6b-1-6
 
 > [!derivation]- Derivation
 > **Step 1** (states). For a spinless particle, at $a = 0$ ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]], 1–2),
@@ -408,17 +418,17 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > (2\pi)^4\delta^4(\Delta)\;i\mathcal M(\Lambda p_A, \dots \to \Lambda p_1, \dots) = (2\pi)^4\delta^4(\Lambda\Delta)\;i\mathcal M(\Lambda p_A, \dots) = (2\pi)^4\delta^4(\Delta)\;i\mathcal M(p_A, \dots \to p_1, \dots) .
 > $$
 >
-> The coefficient of $\delta^4(\Delta)$ is unique on the surface $\Delta = 0$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]], Step 4), so $\mathcal M(\Lambda p) = \mathcal M(p)$ there.
+> The coefficient of $\delta^4(\Delta)$ is unique on the surface $\Delta = 0$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], Step 4), so $\mathcal M(\Lambda p) = \mathcal M(p)$ there.
 >
 > **What the derivation shows.**
 > - The relativistic normalization ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]]) is what makes the coefficient invariant: with non-relativistic normalization, factors $E/E'$ would appear.
 > - With spin, $\mathcal M$ carries spinor or polarization labels, and it transforms with the representation matrices of the external particles instead of being invariant.
 
-^der-c6b-1-5
+^der-c6b-1-6
 
-*Uses:* [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]
+*Uses:* [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]
 
-> [!theorem] Theorem §C6b.1.6: Spinless 2 → 2 Kinematics in Terms of s and t
+> [!theorem] Theorem §C6b.1.7: Spinless 2 → 2 Kinematics in Terms of s and t
 > For $A + B \to 1 + 2$ with on-shell momenta, $p^2 = m^2$, and $p_A + p_B = p_1 + p_2$, let $s = (p_A + p_B)^2$, $t = (p_A - p_1)^2$, $u = (p_A - p_2)^2$ ([[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]]). Then
 > 1. the six scalar products are
 >
@@ -432,13 +442,13 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > and $u = m_A^2 + m_B^2 + m_1^2 + m_2^2 - s - t$;
 > 2. $\varepsilon_{\mu\nu\rho\sigma}p_A^\mu p_B^\nu p_1^\rho p_2^\sigma = 0$.
 >
-> Hence a spinless amplitude ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]]) that depends on the momenta through scalar products and $\varepsilon$-contractions is a function of $s$ and $t$ alone.
+> Hence a spinless amplitude ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-6|Theorem §C6b.1.6]]) that depends on the momenta through scalar products and $\varepsilon$-contractions is a function of $s$ and $t$ alone.
 >
 > *Model:* any (kinematics); *applies:* on-shell momenta of any $2 \to 2$ process, independent of the dynamics.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.1, Derivation "Three properties of $\mathcal M$ (filled in)", third paragraph ("a function of the invariants $p_i\cdot p_j$") · written here from [[§C1a.5 Vectors, Tensors and Index Notation|§C1a.5]]*
 
-^thm-c6b-1-6
+^thm-c6b-1-7
 
 > [!derivation]- Derivation
 > **Step 1** (expand the squares). With $p_i^2 = m_i^2$,
@@ -470,9 +480,9 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > **What the derivation shows.**
 > - Two invariants describe $2 \to 2$ kinematics; in the centre-of-mass frame $s = E_{\rm cm}^2$ and $t$ fixes the scattering angle ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], 3).
 
-^der-c6b-1-6
+^der-c6b-1-7
 
-*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-1|Example §C1a.5.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-1|Example §C1a.5.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-6|Theorem §C6b.1.6]]
 
 > [!remark] Remark: The big picture
 > - Spectrum and interactions (a Lagrangian) ⇒ Feynman rules. "Next few lectures: Feynman rules in different theories."
@@ -489,10 +499,10 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > From this section on, four different objects are called $S$:
 > 1. the **$S$-matrix** $\hat S$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]), an operator, hatted here;
 > 2. the **symmetry factor** $S = |\operatorname{Aut}|$ of a Feynman diagram ([[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]), a positive integer from overcounted contractions;
-> 3. the **identical-particle factor** $S_{\rm id} = \prod_kn_k!$ for $n_k$ identical particles of species $k$ in a final state ([[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-4|Theorem §C6b.6.4]]), a positive integer from overcounted final states; the user's notes write $S$, Yu $\mathcal S$ (eq. (6.305));
+> 3. the **identical-particle factor** $S_{\rm id} = \prod_kn_k!$ for $n_k$ identical particles of species $k$ in a final state ([[§C6b.7 Evaluating the Cross Section#^thm-c6b-7-4|Theorem §C6b.7.4]]), a positive integer from overcounted final states; the user's notes write $S$, Yu $\mathcal S$ (eq. (6.305));
 > 4. the **scalar bilinear** $\mathsf S = \bar\psi\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]), sans-serif.
 >
-> The action $S = \int d^4x\,\mathcal L$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-2|Def. §C1b.2.2]]) is a fifth; the lecture: "probably with a fancy calligraphic $S$ … not to be confused with action". Factors 2 and 3 can occur in the same calculation ([[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-2|Example §C6b.9.2]]: $S = 1$ for the diagram, $S_{\rm id} = 2$ for the final state).
+> The action $S = \int d^4x\,\mathcal L$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-2|Def. §C1b.2.2]]) is a fifth; the lecture: "probably with a fancy calligraphic $S$ … not to be confused with action". Factors 2 and 3 can occur in the same calculation ([[§C6b.10 Amplitudes from Correlation Functions#^ex-c6b-10-2|Example §C6b.10.2]]: $S = 1$ for the diagram, $S_{\rm id} = 2$ for the final state).
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.4 (paragraph "Identical particles (filled in)": "This $S$ is unrelated to the $S$-matrix and to the symmetry factor of a diagram"), PART 2 (e) (notation table) · Yu §6.5, eq. (6.305) · [[§C6a.8 Position-Space Feynman Rules#^cau-c6a-8-1|§C6a.8, Caution: Three S's]]*
 
@@ -512,7 +522,7 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > [!caution] Caution: Four T's
 > From this section on, four objects are written with $T$:
 > 1. the half-duration $T$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], the evolution running from $-T$ to $+T$; PS write the same, and the vacuum bubbles of [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]] are proportional to $2T$;
-> 2. Yu's full duration $\tilde T = 2T$, which appears in the box route ([[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]]) as $2\pi\delta(0) = \tilde T$;
+> 2. Yu's full duration $\tilde T = 2T$, which appears in the box route ([[§C6b.4 Transition Probabilities in a Box#^mod-c6b-4-1|Model §C6b.4.1]]) as $2\pi\delta(0) = \tilde T$;
 > 3. the $T$-matrix $\hat T$, an operator, hatted ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]]); the slides write $\mathcal T$, which in these notes is time reversal;
 > 4. time ordering $T\{\cdots\}$, as in the time-ordered exponential ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]).
 >
@@ -531,8 +541,8 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 
 > [!remark]- Connections
 > - In quantum mechanics the same $S$, $T$ split runs with only energy conserved, and the golden rule is its first order — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-1|QM Theorem §C10.1.1]], [[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]].
-> - The prescription for the in and out states dresses free states with $U(0, -T)$ exactly as the vacuum is dressed, and drops the bubbles exactly as the master formula divides them out — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]].
-> - The problem of relating interacting asymptotic states to free states is the particle version of the vacuum projection of Lecture 13 — [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]; its solution, the LSZ formula, connects $\mathcal M$ to the correlation functions — [[§C6b.9 Amplitudes from Correlation Functions|§C6b.9]], QFT C10 (planned).
+> - The prescription for the in and out states dresses free states with $U(0, -T)$ exactly as the vacuum is dressed, and drops the bubbles exactly as the master formula divides them out — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]].
+> - The problem of relating interacting asymptotic states to free states is the particle version of the vacuum projection of Lecture 13 — [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]; its solution, the LSZ formula, connects $\mathcal M$ to the correlation functions — [[§C6b.10 Amplitudes from Correlation Functions|§C6b.10]], QFT C10 (planned).
 > - The delta function of four-momentum conservation is the same translation invariance that gives momentum conservation at every vertex of a diagram — [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]].
 > - Lorentz invariance of $\mathcal M$ rests on the relativistic normalization chosen in Lecture 4 — [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]].
 > - Correlation functions and the $S$-matrix are the two observables of the two points of view of Remark: The fundamental observable? — [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]].
