@@ -122,7 +122,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 > \slashed{p}^{\,2} = \tfrac12\bigl(\gamma^\mu\gamma^\nu + \gamma^\nu\gamma^\mu\bigr)p_\mu p_\nu = \tfrac12\{\gamma^\mu, \gamma^\nu\}p_\mu p_\nu = g^{\mu\nu}p_\mu p_\nu\,\mathbb 1 = p^2\,\mathbb 1 ,
 > $$
 >
-> by the Clifford algebra ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]). On the mass shell $p^2 = m^2$. Part 1.
+> by the Clifford algebra ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]). On the mass shell $p^2 = m^2$. Part 1.
 >
 > **Step 2** (possible eigenvalues). If $\slashed{p}\,w = \lambda w$ with $w \neq 0$, then $m^2 w = \slashed{p}^{\,2}w = \slashed{p}(\lambda w) = \lambda^2 w$, so $\lambda^2 = m^2$: $\lambda = +m$ or $\lambda = -m$.
 >
@@ -145,7 +145,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 
 ^der-c5a-10-2
 
-*Uses:* [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-2|Def. §C5a.10.2]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-2|Def. §C5a.10.2]]
 
 > [!derivation]- Derivation (second route: the characteristic polynomial and the Dirac Hamiltonian, Yu and the pre-course notes)
 > This route asks the question the other way round: for fixed $\mathbf k$, for which $k^0$ does $(k_\mu\gamma^\mu - m)w = 0$ have a solution $w \neq 0$?
@@ -258,7 +258,7 @@ Theorem §C5a.10.4 uses the spin matrices built from the spinor generators and t
 > **Step 3** (finite rotations). A rotation by $\theta$ about $\hat{\mathbf n}$ has $\omega_{ij} = \theta\,\varepsilon_{ijk}\hat n^k$ (lowered spatial indices; [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]], 3, and [[Larsen PHY 513]]), so $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -\frac i2\theta\,\varepsilon_{ijk}\hat n^kS^{ij} = -i\theta\,\hat{\mathbf n}\cdot\mathbf J$ by Step 1, and $\Lambda_{1/2} = e^{-i\theta\hat{\mathbf n}\cdot\mathbf J} = \operatorname{diag}(D, D)$, the exponential of a block-diagonal matrix being block-diagonal with the exponentials of the blocks ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; for $\hat{\mathbf n} = \hat{\mathbf z}$ this is the half-angle rotation $\operatorname{diag}(e^{-i\theta\sigma^3/2}, e^{-i\theta\sigma^3/2})$ of [[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]]). Acting on $u_0(\xi)$ as in Step 2 gives $u_0(D\xi)$. ⚑ By-product: rotations act on the label $\xi$ by the spin-$\frac12$ matrix itself, with no momentum-dependent correction, because $k$ is rotation-invariant; this is the Wigner rotation $W(R, k) = R$ → [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]].
 >
 > **What the derivation shows**
-> - The Dirac spinor contains spin $\frac12$ twice ($\frac12\oplus\frac12$, [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]]); the Dirac equation at rest ties the two copies to one $\xi$, so the solutions carry a single spin $\frac12$.
+> - The Dirac spinor contains spin $\frac12$ twice ($\frac12\oplus\frac12$, [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]); the Dirac equation at rest ties the two copies to one $\xi$, so the solutions carry a single spin $\frac12$.
 > - The sign of $\omega_{ij}$ in Step 3 only fixes the orientation of the rotation; the statement $J^k = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ does not depend on it.
 > - Used next: the spin basis ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-3|Def. §C5a.10.3]]); the spin of the *antiparticle* is read off only after quantization ([[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]).
 

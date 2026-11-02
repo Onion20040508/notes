@@ -62,7 +62,7 @@ $\gamma^5$ and its properties (Theorem §C5a.7.2), and Pauli's theorem behind th
 > \bigl(i\gamma^\mu\partial_\mu - m\bigr)\psi(x) = 0, \qquad\text{in components}\qquad \bigl[i(\gamma^\mu)_{ab}\,\partial_\mu - m\,\delta_{ab}\bigr]\psi_b(x) = 0, \quad a = 1, \dots, 4 ,
 > $$
 >
-> with $\gamma^\mu$ the Dirac matrices ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]; the course uses the chiral basis, [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]) and $m$ a real constant times the $4\times4$ identity: four coupled, first-order, linear partial differential equations. The matrix of differential operators $i\gamma^\mu\partial_\mu - m$ is the **Dirac operator**.
+> with $\gamma^\mu$ the Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]; the course uses the chiral basis, [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]) and $m$ a real constant times the $4\times4$ identity: four coupled, first-order, linear partial differential equations. The matrix of differential operators $i\gamma^\mu\partial_\mu - m$ is the **Dirac operator**.
 >
 > *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] (its field equation, Theorem §C5a.7.6); *applies:* classical free field, exact; the free quantum field obeys the same equation ([[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-2|Theorem §C5b.6.2]]).
 >
@@ -77,13 +77,13 @@ $\gamma^5$ and its properties (Theorem §C5a.7.2), and Pauli's theorem behind th
 > \slashed{a} \equiv \gamma^\mu a_\mu = \gamma^0a_0 + \gamma^ia_i ,
 > $$
 >
-> a $4\times4$ matrix built from the Dirac matrices ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]). In particular $\slashed{p} = \gamma^\mu p_\mu$, $\slashed{\partial} = \gamma^\mu\partial_\mu$, and the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]) reads $(i\slashed{\partial} - m)\psi = 0$. In the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]; $\sigma^\mu$, $\bar\sigma^\mu$ of [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]) $\slashed{p} = \begin{pmatrix}0 & p\cdot\sigma\\ p\cdot\bar\sigma & 0\end{pmatrix}$.
+> a $4\times4$ matrix built from the Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]). In particular $\slashed{p} = \gamma^\mu p_\mu$, $\slashed{\partial} = \gamma^\mu\partial_\mu$, and the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]) reads $(i\slashed{\partial} - m)\psi = 0$. In the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]; $\sigma^\mu$, $\bar\sigma^\mu$ of [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]) $\slashed{p} = \begin{pmatrix}0 & p\cdot\sigma\\ p\cdot\bar\sigma & 0\end{pmatrix}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.4 (Definition "Feynman slash") · PHY 513 Lecture 9 ("Notation: $\gamma^\mu p_\mu \equiv \slashed{p}$") · PS §3.3, p. 49 · Yu §5.4, eq. (5.146) · PHY 513, Problem Set 5, Problem 2 (closing note on notation, as the user wrote it)*
 
 ^def-c5a-7-2
 
-The chiral form uses $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]) with $\sigma^\mu$, $\bar\sigma^\mu$ of [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]: $\gamma^\mu p_\mu$ has upper-right block $\sigma^\mu p_\mu = p\cdot\sigma$. The square $\slashed{a}^{\,2} = a^2$ is [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]]; the rest of the slash algebra is [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]]. The slash is a contraction, so $\slashed{a}$ is "invariant" only in the sense of [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-1|Remark: What covariance shows and what it does not]]: it is a matrix whose two spinor slots still transform.
+The chiral form uses $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]) with $\sigma^\mu$, $\bar\sigma^\mu$ of [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]: $\gamma^\mu p_\mu$ has upper-right block $\sigma^\mu p_\mu = p\cdot\sigma$. The square $\slashed{a}^{\,2} = a^2$ is [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]]; the rest of the slash algebra is [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]]. The slash is a contraction, so $\slashed{a}$ is "invariant" only in the sense of [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-1|Remark: What covariance shows and what it does not]]: it is a matrix whose two spinor slots still transform.
 
 > [!caution] Caution: γ^μ∂_μ has a plus sign
 > With $\partial_i = \partial/\partial x^i$ (lower index, the usual meaning) the contraction needs no metric:
@@ -178,7 +178,7 @@ The chiral form uses $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\m
 The slides phrase the transformation passively ("the physical point that the field is evaluated at does not change but its coordinates do") while the formula is written actively; the two readings give the same formula ([[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). Quantum Mechanics records the same check with $\hbar$, $c$ and a passive transformation, for one boost ([[§C13.2★ The Dirac Equation#^rem-c13-2-4|QM Remark: Lorentz covariance and the rapidity]]); here it holds for every $\omega$ because the identity of Theorem §CB.18.7 is proved for the whole group.
 
 > [!theorem] Theorem §C5a.7.2: The Dirac Equation Keeps Its Form When ψ and γ Change Together
-> Let $\psi(x)$ be a $C^1$ field with values in $V$, with columns $\psi(x)$ and $\psi'(x) = U\psi(x)$ in two bases and Dirac matrices $\gamma^\mu$, $\gamma'^\mu = U\gamma^\mu U^{-1}$ ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-15|Theorem §CB.11.15]]). Then
+> Let $\psi(x)$ be a $C^1$ field with values in $V$, with columns $\psi(x)$ and $\psi'(x) = U\psi(x)$ in two bases and Dirac matrices $\gamma^\mu$, $\gamma'^\mu = U\gamma^\mu U^{-1}$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]]). Then
 >
 > $$
 > \bigl(i\gamma'^\mu\partial_\mu - m\bigr)\psi'(x) = U\,\bigl(i\gamma^\mu\partial_\mu - m\bigr)\psi(x) ,
@@ -453,7 +453,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 > \bigl(\partial^2 + m^2\bigr)\psi_a = 0 , \qquad\text{because}\qquad \bigl(-i\slashed{\partial} - m\bigr)\bigl(i\slashed{\partial} - m\bigr) = \partial^2 + m^2 .
 > $$
 >
-> The identity uses only the Clifford algebra ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]). So $m^2$ is the Klein–Gordon mass squared; the sign of $m$ is a convention. The converse fails.
+> The identity uses only the Clifford algebra ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]). So $m^2$ is the Klein–Gordon mass squared; the sign of $m$ is a convention. The converse fails.
 >
 > *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, every $C^2$ solution, exact; the operator identity is Clifford algebra only, so it holds for every component of any solution.
 >
@@ -474,7 +474,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 >
 > **3. Symmetrize.** Let $T = \gamma^\nu\gamma^\mu\partial_\nu\partial_\mu$. Renaming the dummies $\nu \leftrightarrow \mu$, $T = \gamma^\mu\gamma^\nu\partial_\mu\partial_\nu = \gamma^\mu\gamma^\nu\partial_\nu\partial_\mu$, using $\partial_\mu\partial_\nu = \partial_\nu\partial_\mu$ on $C^2$ functions. Averaging the two forms, $T = \frac12\{\gamma^\nu, \gamma^\mu\}\partial_\nu\partial_\mu$.
 >
-> **4. Clifford algebra.** $\frac12\{\gamma^\nu, \gamma^\mu\} = g^{\nu\mu}\mathbb 1$ ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]), so $T = g^{\nu\mu}\partial_\nu\partial_\mu\mathbb 1 = \partial^2\mathbb 1$, and $0 = (\partial^2 + m^2)\mathbb 1\,\psi$: the identity matrix does not mix components.
+> **4. Clifford algebra.** $\frac12\{\gamma^\nu, \gamma^\mu\} = g^{\nu\mu}\mathbb 1$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]), so $T = g^{\nu\mu}\partial_\nu\partial_\mu\mathbb 1 = \partial^2\mathbb 1$, and $0 = (\partial^2 + m^2)\mathbb 1\,\psi$: the identity matrix does not mix components.
 >
 > **5. The sign of $m$.** Only $(-m)(-m) = m^2$ entered. ⚑ By-product: $\psi \mapsto \gamma^5\psi$ maps solutions with mass $m$ to solutions with mass $-m$, since $\gamma^5$ anticommutes with $\gamma^\mu$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]): $(i\slashed{\partial} + m)\gamma^5\psi = -\gamma^5(i\slashed{\partial} - m)\psi$. The sign of $m$ in the Dirac equation is a convention, fixed here by $m \ge 0$.
 >
@@ -487,7 +487,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 
 ^der-c5a-7-8
 
-*Uses:* [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]]
 
 Quantum Mechanics runs the same computation backwards: there, requiring each component to obey Klein–Gordon is what forces $\{\gamma^\mu, \gamma^\nu\} = 2\eta^{\mu\nu}$ ([[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]], part 1). Here the Clifford algebra is the input, found from the Lorentz group ([[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]]), and Klein–Gordon is the consequence (rule 2: same identity, opposite logical direction).
 
@@ -533,7 +533,7 @@ Quantum Mechanics runs the same computation backwards: there, requiring each com
 > | the matrix form of the Lagrangian | $\mathcal L$, the action and the field equations, under unitary $U$ (Theorem §C5a.7.5) |
 > | — | every physical prediction: cross sections, energies, charges are built from traces and bilinears |
 >
-> Pauli's theorem ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12|Theorem §CB.13.12]]) puts every possible set of Dirac matrices in the left column of a single row: each is the chiral set after a change of basis (Theorem §CB.13.14), so a basis-independent statement proved in the chiral basis holds in all of them. The Dirac basis of Quantum Mechanics is such a basis ([[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]]; [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-2|§C5a.5, Caution: Bases and conventions across the sources]]).
+> Pauli's theorem ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]]) puts every possible set of Dirac matrices in the left column of a single row: each is the chiral set after a change of basis (Theorem §CB.13.14), so a basis-independent statement proved in the chiral basis holds in all of them. The Dirac basis of Quantum Mechanics is such a basis ([[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]]; [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-2|§C5a.5, Caution: Bases and conventions across the sources]]).
 >
 > *Source: PS §3.2, p. 41 · the user's PHY 513 notes, Ch. 8 §8.1 ("the choice of basis is a convention, like the choice of basis for spin-½"), §8.2 (Caution on "particle" and "antiparticle" components) · the table written here*
 

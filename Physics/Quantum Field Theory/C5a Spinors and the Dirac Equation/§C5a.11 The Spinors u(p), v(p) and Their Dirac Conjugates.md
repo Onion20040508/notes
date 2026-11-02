@@ -211,7 +211,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 >
 > **Step 1** (dagger of the equation). For a matrix $M$ and a column $w$, $(Mw)^\dagger = w^\dagger M^\dagger$, and the dagger of the zero column is the zero row. So $(\slashed{p} - m)\,u^s = 0$ gives $u^{s\dagger}(\slashed{p} - m)^\dagger = 0$.
 >
-> **Step 2** (dagger of the matrix). The $p_\mu$ and $m$ are real numbers and $\mathbb 1^\dagger = \mathbb 1$, so $(p_\mu\gamma^\mu - m\,\mathbb 1)^\dagger = p_\mu\gamma^{\mu\dagger} - m\,\mathbb 1$. Insert $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]) and $\mathbb 1 = \gamma^0\gamma^0$ ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]]):
+> **Step 2** (dagger of the matrix). The $p_\mu$ and $m$ are real numbers and $\mathbb 1^\dagger = \mathbb 1$, so $(p_\mu\gamma^\mu - m\,\mathbb 1)^\dagger = p_\mu\gamma^{\mu\dagger} - m\,\mathbb 1$. Insert $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]) and $\mathbb 1 = \gamma^0\gamma^0$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]]):
 >
 > $$
 > (\slashed{p} - m)^\dagger = \gamma^0\,(p_\mu\gamma^\mu)\,\gamma^0 - m\,\gamma^0\gamma^0 = \gamma^0\,(\slashed{p} - m)\,\gamma^0 .
@@ -228,7 +228,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 
 ^der-c5a-11-2b
 
-*Uses:* [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]
+*Uses:* [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]
 
 > [!derivation]- Derivation (third route: the bar carries the inverse boost, m > 0)
 > **Step 1** (the bar of a boosted column). $u^s(p) = \Lambda_{1/2}(p)\,u_0^s$ ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]], 1). With $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]]),
@@ -392,7 +392,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 >
 > **Step 1** (dagger of the equation). $(Mw)^\dagger = w^\dagger M^\dagger$ and the dagger of the zero column is the zero row, so $(\slashed{p} + m)\,v^s = 0$ gives $v^{s\dagger}(\slashed{p} + m)^\dagger = 0$.
 >
-> **Step 2** (dagger of the matrix). With $p_\mu$, $m$ real and $\mathbb 1^\dagger = \mathbb 1$, $(p_\mu\gamma^\mu + m\,\mathbb 1)^\dagger = p_\mu\gamma^{\mu\dagger} + m\,\mathbb 1$. Insert $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]) and $\mathbb 1 = \gamma^0\gamma^0$ ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]]):
+> **Step 2** (dagger of the matrix). With $p_\mu$, $m$ real and $\mathbb 1^\dagger = \mathbb 1$, $(p_\mu\gamma^\mu + m\,\mathbb 1)^\dagger = p_\mu\gamma^{\mu\dagger} + m\,\mathbb 1$. Insert $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]) and $\mathbb 1 = \gamma^0\gamma^0$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]]):
 >
 > $$
 > (\slashed{p} + m)^\dagger = \gamma^0\,(p_\mu\gamma^\mu)\,\gamma^0 + m\,\gamma^0\gamma^0 = \gamma^0\,(\slashed{p} + m)\,\gamma^0 .
@@ -410,7 +410,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 
 ^der-c5a-11-4b
 
-*Uses:* [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]
+*Uses:* [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]
 
 > [!derivation]- Derivation (third route: the bar carries the inverse boost, m > 0)
 > **Step 1** (the bar of a boosted column). $v^s(p) = \Lambda_{1/2}(p)\,v_0^s$ ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]]). With $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]]), $\bar v^s(p) = v_0^{s\dagger}\Lambda_{1/2}(p)^\dagger\gamma^0 = v_0^{s\dagger}\gamma^0\Lambda_{1/2}(p)^{-1} = \bar v_0^s\,\Lambda_{1/2}(p)^{-1}$.
@@ -484,7 +484,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 > [!derivation]- Derivation (the user's solution of Problem Set 6, Problem 3(c): the spinor)
 > **1. The chiral-basis spinor.** $u(p) = \bigl(\sqrt{p\cdot\sigma}\,\xi,\ \sqrt{p\cdot\bar\sigma}\,\xi\bigr)$ ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]]), with $p\cdot\sigma = E_{\mathbf p}\mathbb 1 - \mathbf p\cdot\boldsymbol\sigma$ and $p\cdot\bar\sigma = E_{\mathbf p}\mathbb 1 + \mathbf p\cdot\boldsymbol\sigma$: the lowered index $p_i = -p^i$ gives the minus sign. In $\mathbf p\cdot\boldsymbol\sigma = \boldsymbol\sigma\cdot\mathbf p = \sum_ip^i\sigma^i$ the order does not matter, the $p^i$ being numbers.
 >
-> **2. The change of basis keeps it a solution.** $u_D = U_Du$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], one factor $U_D$ for one spinor index), and with $\gamma_D^\mu = U_D\gamma^\mu U_D^\dagger$, $U_D^\dagger U_D = \mathbb 1$ ([[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]], step 2 of its second-route derivation):
+> **2. The change of basis keeps it a solution.** $u_D = U_Du$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], one factor $U_D$ for one spinor index), and with $\gamma_D^\mu = U_D\gamma^\mu U_D^\dagger$, $U_D^\dagger U_D = \mathbb 1$ ([[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]], step 2 of its second-route derivation):
 >
 > $$
 > \bigl(\gamma_D^\mu p_\mu - m\mathbb 1\bigr)U_Du(p) = U_D\bigl(\gamma^\mu p_\mu - m\mathbb 1\bigr)U_D^\dagger U_D\,u(p) = U_D\bigl(\gamma^\mu p_\mu - m\mathbb 1\bigr)u(p) = 0

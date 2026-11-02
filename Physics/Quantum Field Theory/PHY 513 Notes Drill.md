@@ -4975,7 +4975,7 @@ Every representation of the Lorentz algebra on a finite-dimensional complex spac
 
 The table of $\mathbf J_\pm$, $\mathbf J$, $\mathbf K$ and $D(e^\omega)$ on $(\frac12, 0)$ and $(0, \frac12)$, matching PS's $\psi_L$, $\psi_R$, see Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|§C3.2.8]] The Representations (½, 0) and (0, ½). → drilled as [[PHY 513 PS Drill#^ps5-1-b|PS5.1(b)]].
 
-^nd-thm-c3-2-1
+^nd-thm-c3-2-8
 
 ### [B] The vector representation is (½, ½): Casimirs and classification ★★
 
@@ -5019,7 +5019,7 @@ $T(v) = (v_\mu\sigma^\mu)\,i\sigma^2$, read in $\mathbb C^2\otimes\mathbb C^2$ t
 
 The short-response route: dimension $4$, then the $2\pi$ rotation decides $(\frac12, \frac12)$; $\psi_L$ is $(\frac12, 0)$, see [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^der-c3-2-9b|Derivation §C3.2.9, second route]]. → drilled as [[PHY 513 PS Drill#^ps7-1-d|PS7.1(d)]].
 
-^nd-der-c3-2-2b
+^nd-der-c3-2-9b
 
 ### [B] Rotation content and the sign of a 2π rotation ★
 
@@ -5090,7 +5090,7 @@ $\delta\mathbf E = \boldsymbol\theta\times\mathbf E - \boldsymbol\eta\times\math
 
 The parity automorphism $\mathbf J \mapsto \mathbf J$, $\mathbf K \mapsto -\mathbf K$ preserves the algebra and swaps $\mathbf J_+ \leftrightarrow \mathbf J_-$; on four-vectors it is conjugation by $\mathcal P = \operatorname{diag}(1, -1, -1, -1)$, and a parity-invariant field contains $(j_+, j_-)$ and $(j_-, j_+)$ with equal multiplicity, see Theorem [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-10|§C3.2.10]] Parity on Four-Vectors; Parity-Invariant Fields Contain Both Copies and Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|§CB.17.13]] The Parity Automorphism Exchanges the Two Copies. *Source: the user's notes Ch. 7 §7.4.6 · Lecture 8 transcript (both Weyl halves needed for a mass)*
 
-^nd-thm-c3-2-3
+^nd-thm-c3-2-10
 
 - [ ] Q1 **[state]** State what parity does to $\mathbf J$, $\mathbf K$, $\mathbf J_\pm$ and to the labels.
 - [ ] Q2 Check that $\mathbf K \mapsto -\mathbf K$ preserves each of the three relations of the algebra.
@@ -5256,7 +5256,7 @@ Four $n\times n$ matrices with $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 
 
 $\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$, $\sigma_\mu = (\mathbb 1, -\boldsymbol\sigma)$; $X = x_\mu\sigma^\mu = x^0 - \mathbf x\cdot\boldsymbol\sigma$, $\bar X = x_\mu\bar\sigma^\mu = x^0 + \mathbf x\cdot\boldsymbol\sigma$, see Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|§C5a.1.3]] The Matrices σ^μ and σ̄^μ. *Source: Lecture 8, slide "Dirac Equation in 2-Component Form" · Lecture 9, "Cheat Sheet"*
 
-^nd-def-c5a-1-2
+^nd-def-c5a-1-3
 
 - [ ] Q1 **[def]** Define $\sigma^\mu$ and $\bar\sigma^\mu$ and write $p\cdot\sigma$, $p\cdot\bar\sigma$ for a four-vector $p$.
 - [ ] Q2 **[conv]** Why does $p\cdot\sigma$ contain $-\mathbf p\cdot\boldsymbol\sigma$ although $\sigma^\mu$ has $+\boldsymbol\sigma$?
@@ -5271,7 +5271,7 @@ $\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\b
 
 $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, $\gamma^i = \begin{pmatrix}0 & \sigma^i\\ -\sigma^i & 0\end{pmatrix}$, i.e. $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$, with $\psi = (\psi_L, \psi_R)$, see Definition [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|§C5a.1.4]] The Chiral Basis. *Source: Lecture 7, slide "Explicit Form of Dirac Matrices" · Lecture 8, "Cheat Sheet I" and slide "Dirac Equation in 2-Component Form"*
 
-^nd-def-c5a-1-3
+^nd-def-c5a-1-4
 
 - [ ] Q1 **[def]** Write the four chiral-basis $\gamma$'s in $2\times2$ blocks, and the compact $\sigma^\mu$, $\bar\sigma^\mu$ form.
 - [ ] Q2 **[conv]** Which basis do the lecture, PS, the user's notes and Yu use, and which basis does Quantum Mechanics (Sakurai) use? What is $\gamma^0$ in each?
@@ -5694,7 +5694,7 @@ The Weyl equation $i\bar\sigma^\mu\partial_\mu\psi_L = 0$ implies $\partial^2\ps
 
 $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 1_4$ for the chiral matrices, with $\gamma^\mu\gamma^\nu = \operatorname{diag}(\sigma^\mu\bar\sigma^\nu, \bar\sigma^\mu\sigma^\nu)$, see Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-7|§C5a.1.7]] The Chiral Matrices Satisfy the Clifford Algebra. **[class exercise, Lecture 7]** ("So here I checked some of these anti-commutators. Of course, I should check the rest as well"). *Source: Lecture 7, slide "Explicit Form of Dirac Matrices" ("Sample check of Dirac algebra") and transcript (Sep 23)*
 
-^nd-thm-c5a-1-2
+^nd-thm-c5a-1-7
 
 - [ ] Q1 **[state]** State what must be checked: how many anticommutators, and the expected right sides.
 - [ ] Q2 Multiply two chiral $\gamma$'s in $2\times2$ blocks. Why is the product block diagonal?
@@ -5711,7 +5711,7 @@ $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}\mathbb 1_4$ for the chiral matrices, w
 
 $\operatorname{tr}(\sigma^\mu\bar\sigma^\nu) = 2g^{\mu\nu}$; $\sigma^\mu\bar\sigma^\nu + \sigma^\nu\bar\sigma^\mu = 2g^{\mu\nu}$ (and with bars exchanged), so $X\bar X = x^2$; $\sigma^2(\sigma^\mu)^\ast\sigma^2 = \bar\sigma^\mu$, see Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ. *Source: Lecture 9, slide "Practical Manipulations" ($(p\cdot\sigma)(p\cdot\bar\sigma) = m^2$) · the user's notes Ch. 8*
 
-^nd-thm-c5a-1-1
+^nd-thm-c5a-1-6
 
 - [ ] Q1 **[state]** State the three identities.
 - [ ] Q2 Check the anticommutator identity case by case ($\mu = \nu = 0$, one index zero, both spatial).
