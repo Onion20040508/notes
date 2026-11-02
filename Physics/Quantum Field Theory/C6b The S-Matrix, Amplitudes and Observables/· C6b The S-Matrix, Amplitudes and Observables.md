@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # C6b The S-Matrix, Amplitudes and Observables
 ← [[· C6a Interactions and Correlation Functions]] · ↑ [[Quantum Field Theory]] · [[· C9 Discrete Symmetries and Majorana Fields]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (16), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (67), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (21), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (103), [[· CA Mathematical Methods|CA Mathematical Methods]] (73)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (16), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (68), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (27), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (135), [[· CA Mathematical Methods|CA Mathematical Methods]] (77)
 **Used by:** [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (27), [[· CA Mathematical Methods|CA Mathematical Methods]] (1)
 
 C6b computes **$S$-matrix elements and the observables made from them** (Lectures 15–16 and Problem Set 8; the user's notes, Ch. 15 and the Lecture 16 update): the $S$-matrix, the interacting in and out states and the invariant amplitude $\mathcal M$ (§C6b.1), matrix elements between particle states: contractions with external particles, Wick's theorem between particle states, which terms are scattering, the first-order matrix elements (§C6b.2), the Feynman rules for $i\mathcal M$: amputation, the tree-level and all-order rules, the $s$-, $t$-, $u$-channels (§C6b.3), the cross section by Yu's box route, the main line (transition probabilities in a box §C6b.4, the cross section §C6b.5, with every factor of $d\sigma$ labelled by its origin), the same cross section from wave packets, the course's careful version (§C6b.6–§C6b.7), Lorentz invariance and two-body phase space (§C6b.8), decay rates and widths (§C6b.9), amplitudes as amputated correlation functions (§C6b.10, [[§C6b.10 Amplitudes from Correlation Functions#^thm-c6b-10-1|Theorem §C6b.10.1]]), particle production by a classical source (§C6b.11), and worked translations of questions as asked into the formulas that answer them (§C6b.12, [[§C6b.12 From the Question to the Formula|From the Question to the Formula]]; procedures [[P5 Symmetry Factor of a Diagram|P5]]–[[P7 From ℳ to σ or Γ|P7]]). The correlation functions, Wick's theorem and the Feynman rules it starts from are in [[· C6a Interactions and Correlation Functions]]. In Yu's book the material of C6b is in §6.2, §6.5, ch. 7 (the $S$-matrix rules), §10.3 and §10.6.
@@ -46,6 +46,7 @@ C6b follows the course (Lectures 15–16) and the user's notes (Ch. 15, Lecture 
 - [[§C6b.12 From the Question to the Formula]] — PHY 513 Problem Set 8, Problems 2–4; PS §4.5, pp. 106–108
 
 ## Principles
+- [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|§C6b.1.2]] Cluster Decomposition
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|§C6b.1.3]] Interacting In and Out States
 
 ## Theorems
@@ -57,10 +58,13 @@ C6b follows the course (Lectures 15–16) and the user's notes (Ch. 15, Lecture 
 - [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-1|§C6b.2.1]] Contraction of Fields with Outgoing Particles
 - [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|§C6b.2.2]] Contraction of Fields with Incoming Particles
 - [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|§C6b.2.3]] Wick's Theorem between Particle States
+- [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-4|§C6b.2.4]] Which Terms of the S-Matrix Element Belong to iT̂
 - [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-5|§C6b.2.5]] The First-Order Matrix Elements of a Monomial
 - [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|§C6b.2.6]] The Kinematic Filter
 - [[§C6b.3 Feynman Rules for Amplitudes#^thm-c6b-3-1|§C6b.3.1]] Vertices Saturated by External Lines Give S = 1
 - [[§C6b.3 Feynman Rules for Amplitudes#^thm-c6b-3-2|§C6b.3.2]] Tree-Level Feynman Rules for iℳ
+- [[§C6b.3 Feynman Rules for Amplitudes#^thm-c6b-3-3|§C6b.3.3]] Feynman Rules for iℳ, All Orders
+- [[§C6b.3 Feynman Rules for Amplitudes#^thm-c6b-3-4|§C6b.3.4]] Tree Diagrams of a Process; the s-, t-, u-Channels
 - [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-2|§C6b.4.2]] The Squared Amplitude in a Box
 - [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-3|§C6b.4.3]] Norms of the Box States
 - [[§C6b.4 Transition Probabilities in a Box#^thm-c6b-4-4|§C6b.4.4]] The Transition Probability Grows Linearly in Time; the Rate
