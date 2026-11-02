@@ -190,7 +190,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 ^rem-c2b-8-1
 
 > [!remark] Remark: The boundary condition was physics
-> The retarded function was forced by the question, which specifies the state before the source acts. The same calculation with $D_F$ would answer a different question, one with conditions imposed in both the past and the future. This is the concrete instance of [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-3|§C2b.7, Remark: Which Green's function when]]. The calculation is exact because the coupling is linear in $\hat\phi$ and the source is classical; with a quantum source, a field of its own, the same structure becomes the first interaction (QFT C6, planned), and PS return to it in their Problem 4.1 and, for photons, in bremsstrahlung.
+> The retarded function was forced by the question, which specifies the state before the source acts. The same calculation with $D_F$ would answer a different question, one with conditions imposed in both the past and the future. This is the concrete instance of [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-3|§C2b.7, Remark: Which Green's function when]]. The calculation is exact because the coupling is linear in $\hat\phi$ and the source is classical; with a quantum source, a field of its own, the same structure becomes the first interaction ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; the classical source itself, diagrammatically: [[§C6b.9 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.9]]), and PS return to it in their Problem 4.1 and, for photons, in bremsstrahlung.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.13 (third remark, "Where the course goes next") · PS §2.4, p. 33*
 

@@ -374,7 +374,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 >
 > with $m_{\rm ph}$ the physical mass; the $x$-dependence is translation invariance, $\langle\Omega|e^{i\hat P\cdot x} = \langle\Omega|$. The factor $\sqrt Z$ per external particle is what the amputation rule leaves out at lowest order ([[§C6b.8 Amplitudes from Correlation Functions#^cau-c6b-8-2|§C6b.8, Caution: The rule is stated at lowest order]]; the LSZ formula, Lecture 16).
 >
-> *Source: Yu §10.2, eq. (10.64) ($\langle p|\phi(0)|0\rangle = \sqrt Z$ with the phase set to 1; Yu's $|0\rangle$ is $|\Omega\rangle$, [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]; from the text of the book, page image not in the pipeline) · Yu §10.5.3, eq. (10.235)*
+> *Source: Yu §10.2, p. 447, eqs. (10.64)–(10.65) ($\langle p|\phi(0)|0\rangle = \sqrt Z$ with the phase set to 1, then $\langle p|\phi(x)|0\rangle = \sqrt Z\,e^{ip\cdot x}$; Yu's $|0\rangle$ is $|\Omega\rangle$, [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]) · Yu §10.5.3, eq. (10.235)*
 
 ^cau-c2b-1-3
 

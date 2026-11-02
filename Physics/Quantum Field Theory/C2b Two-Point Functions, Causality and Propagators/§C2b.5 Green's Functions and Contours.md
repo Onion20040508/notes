@@ -24,7 +24,7 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 > \mathcal L = \tfrac12(\partial_\mu\phi)^2 - \tfrac12m^2\phi^2 + j\phi, \qquad (\partial^2 + m^2)\,\phi(x) = j(x) .
 > $$
 >
-> *Assumptions:* $j$ is external and classical, prepared in the laboratory; it acts on the field, and the field does not act back on it. (Later the source is itself made of fields: interactions, QFT C6, planned.)
+> *Assumptions:* $j$ is external and classical, prepared in the laboratory; it acts on the field, and the field does not act back on it. (Later the source is itself made of fields: interactions, [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]].) This is [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] seen from the Lagrangian; since $j$ vanishes outside a finite time, $|0\rangle$ is exact before and after ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 1).
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.1 · PHY 513 Lecture 6, Part A · PS §2.4, eqs. (2.61)–(2.62)*
 
