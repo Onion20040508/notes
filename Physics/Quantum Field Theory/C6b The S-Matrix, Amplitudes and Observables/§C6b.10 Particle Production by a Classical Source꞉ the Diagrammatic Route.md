@@ -25,13 +25,7 @@ $$
 $$
 holds exactly, not only at lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]] with $\hat H_{\rm int}(t) \to 0$; no $\sqrt Z$, unlike [[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]). The source is classical, so nothing is renormalized.
 
-## The mathematics used here
-
-A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected part:
-
-![[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3]]
-
-and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] holds for vertices with one leg, $|G_n| = n!$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1 and 4).
+A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected part, $\sum_D\frac{w(D)}{S(D)} = \exp\bigl(\sum_C\frac{w(C)}{S(C)}\bigr)$ for weights multiplicative over connected components ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], proved in CA and listed at the end; for the $\phi^4$ bubbles [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-6|Theorem §C6a.11.6]]), and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] holds for vertices with one leg, $|G_n| = n!$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1 and 4).
 
 ## No particles
 
@@ -334,6 +328,12 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 > *Source: PS §2.4 and Problem 4.1 · [[§C6a.2 The Interaction Picture|§C6a.2]], Connections*
 
 ^rem-c6b-10-1
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]] — a vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected part.
+> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]] — the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] holds for vertices with one leg, $|G_n| = n!$ (parts 1 and 4).
 
 > [!remark]- Connections
 > - The vacuum series exponentiates by the same exponential formula as the vacuum bubbles of $\phi^4$ theory; here the only connected vacuum diagram is the line, so the whole series is $e^{L/2}$ — [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-6|Theorem §C6a.11.6]].

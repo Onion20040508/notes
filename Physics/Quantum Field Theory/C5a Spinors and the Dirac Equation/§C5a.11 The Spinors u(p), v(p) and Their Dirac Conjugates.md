@@ -17,34 +17,6 @@ Which spinors does the boost of the rest-frame solutions give, and what are thei
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost|§C5a.10]].
 
-## The mathematics used here
-
-Every check that $u$ and $v$ solve the Dirac equation, and every product of $\gamma$'s below, uses the Clifford relation:
-
-![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12]]
-
-![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-11-12]]
-
-The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the self-adjointness of the Dirac maps for it, and the pseudo-unitarity of $\Lambda_{1/2}$; Example §C5a.11.1 changes to the Dirac basis by the change-of-basis rules:
-
-![[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11]]
-
-![[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-15]]
-
-![[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-16]]
-
-![[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-16]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b]]
-
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5]]
-
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-5]]
-
 ## The spinors u(p), v(p) and their Dirac conjugates
 
 > [!theorem] Theorem §C5a.11.1: The Positive-Frequency Spinors u(p)
@@ -141,7 +113,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 > $$
 >
 > with the two Hermitian roots of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|Def. §C5a.10.5]] in exchanged places relative to the column $u^s(p)$.
-> 1. $\bar u^s(p)$ is a $1\times4$ row, the functional $h_D(u^s(p), \cdot\,)$ of the Dirac form ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-15|Def. §CB.13.15]]): $\bar u^s(p)\,w$ is a number for every column $w$, e.g. $\bar u^r(p)\,u^s(p) = 2m\,\delta^{rs}$ ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|Theorem §C5a.12.2]]).
+> 1. $\bar u^s(p)$ is a $1\times4$ row, the functional $h_D(u^s(p), \cdot\,)$ of the Dirac form ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]): $\bar u^s(p)\,w$ is a number for every column $w$, e.g. $\bar u^r(p)\,u^s(p) = 2m\,\delta^{rs}$ ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|Theorem §C5a.12.2]]).
 > 2. The Dirac equation acts from the right: $\bar u^s(p)\,\slashed{p} = m\,\bar u^s(p)$, with $\slashed{p}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]].
 > 3. At rest, $p = (m, \mathbf 0)$ with $m > 0$: $\bar u^s_0 = \sqrt m\,(\xi^{s\dagger}, \xi^{s\dagger}) = u_0^{s\dagger}$.
 >
@@ -221,7 +193,7 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 >
 > **What the derivation shows**
 > - In the language of the Dirac form this is $\overline{\gamma^\mu\chi} = \bar\chi\gamma^\mu$, the self-adjointness of the Dirac maps ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-16|Theorem §CB.13.16]], 1): the bar of $(\slashed{p} - m)u$ is $\bar u(\slashed{p} - m)$, because the bar is conjugate-linear and the coefficients $p_\mu$, $m$ are real.
-> - It holds for every solution of $(\slashed{p} - m)w = 0$, in every Hermitian basis ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]]), and for $m \ge 0$.
+> - It holds for every solution of $(\slashed{p} - m)w = 0$, in every Hermitian basis, $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]), and for $m \ge 0$.
 > - Assumption: $p_\mu$ and $m$ real (Step 2); for a complex momentum the conjugate equation would carry $p_\mu^{\ast}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.6 (Derivation "Proof of the Gordon identity", paragraph "The Dirac equation, from both sides")*
@@ -550,7 +522,19 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 
 ^der-ex-c5a-11-1b
 
-*Uses:* [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-6|Theorem §C5a.10.6]], [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-2|Theorem §C5a.7.2]], [[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-4|Def. §C5a.10.4]]
+*Uses:* [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-6|Theorem §C5a.10.6]], [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-2|Theorem §C5a.7.2]], [[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-4|Def. §C5a.10.4]]
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> Every check that $u$ and $v$ solve the Dirac equation, and every product of $\gamma$'s below, uses the Clifford relation:
+> - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]] with [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-11-12|Derivation]] — squares, anticommutation, $\slashed p\slashed p = p^2$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]]).
+>
+> The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the self-adjointness of the Dirac maps for it, and the pseudo-unitarity of $\Lambda_{1/2}$; Example §C5a.11.1 changes to the Dirac basis by the change-of-basis rules:
+> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]], [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-15|Def. §CB.13.15]] — Hermitian basis and the Dirac form $h_D(\chi, \psi) = \chi^\dagger\gamma^0\psi$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]).
+> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-16|Theorem §CB.13.16]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-16|Derivation]] — $\overline{\gamma^\mu\chi} = \bar\chi\gamma^\mu$: the Dirac maps are self-adjoint for $h_D$ (the bars of $(\slashed p \mp m)$ below).
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b|Derivation (second route)]] — $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ (the boosted conjugates $\bar u^s(p)$, $\bar v^s(p)$; [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]).
+> - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]] with [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-5|Derivation]] — $\psi' = U\psi$, $M' = UMU^{-1}$ (Example §C5a.11.1; [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]]).
 
 > [!remark]- Connections
 > - The bar of a boosted spinor carries the inverse boost, and for the pure boosts used here $\Lambda_{1/2}(p)^{-1} = \Lambda_{1/2}(\tilde p)$, $\tilde p = (E_{\mathbf p}, -\mathbf p)$ ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2c|Derivation §C5a.11.2, third route]]). With $\Lambda_{1/2}(p)$ Hermitian this explains the orthogonality at opposite momenta of [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|Theorem §C5a.12.6]] for $m > 0$: $u^{r\dagger}(p)\,v^s(\tilde p) = u_0^{r\dagger}\Lambda_{1/2}(p)\,\Lambda_{1/2}(p)^{-1}v_0^s = u_0^{r\dagger}v_0^s = m(\xi^{r\dagger}\eta^s - \xi^{r\dagger}\eta^s) = 0$, the rest-frame orthogonality transported by a boost and its inverse.

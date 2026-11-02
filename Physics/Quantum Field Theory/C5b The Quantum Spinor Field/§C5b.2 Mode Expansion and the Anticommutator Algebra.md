@@ -17,9 +17,7 @@ This is the spinor counterpart of [[§C2a.2 Mode Expansion and the Mode Algebra|
 
 ## The mode expansion
 
-The derivation below uses the Clifford relation of the Dirac matrices:
-
-![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11]]
+The derivation below uses the Clifford relation of the Dirac matrices, $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]; its first consequences: [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]]).
 
 > [!theorem] Theorem §C5b.2.1: Mode Expansion of the Dirac Field
 > Every solution of the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]) is
@@ -414,6 +412,12 @@ Lecture 10 did the quantization with anticommutators only and named the places w
 > *Source: the user's pre-course notes, §5.5 ("this single algebraic fact is the entire difference") · PS §3.5, pp. 57–58*
 
 ^rem-c5b-2-8
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> The derivation below uses the Clifford relation of the Dirac matrices:
+> - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]] — Dirac matrices and the Clifford relation ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
 
 > [!remark]- Connections
 > - The mode functions $u^s(p)e^{-ip\cdot x}$ and $v^s(p)e^{ip\cdot x}$ are the eigenfunctions of the single-particle Hamiltonian with eigenvalues $\pm E_{\mathbf p}$, so the expansion diagonalizes the classical Hamiltonian, as the scalar's expansion decoupled the field into oscillators — [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-1|Theorem §C2a.2.1]].

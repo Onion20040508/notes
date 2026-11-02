@@ -11,27 +11,11 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 9 §9.6 (Supplement: $\gamma$-matrix technology (Problem Set 5)) · PHY 513, Problem Set 5, Problems 2, 3 and 5 (as the user wrote them) · Peskin & Schroeder, §3.4, pp. 49–52, eqs. (3.68)–(3.81) · Yu Zhao-Huan, 量子场论讲义, §7.1, eqs. (7.48)–(7.54), §8.2.2, eqs. (8.44)–(8.77). · PHY 513, Problem Set 7, Problem 1(c) (Larsen; the user's solution).*
 
-How are long products of $\gamma$ matrices shortened, traced and reduced, as every amplitude with spin-½ particles requires? Everything follows from the Clifford algebra ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]), the algebra of $\gamma^5$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]), the basis property of the sixteen products ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]) and the slash of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]. This section adds the working identities: slash algebra, contractions, traces, the $\varepsilon$-forms of $\gamma^5$ and its duality on $\sigma^{\mu\nu}$, the reduction of any product to the standard basis, and the Gordon identity. Problem Set 5 (submitted) proves several of them; its proofs appear as the user wrote them, and no other problem-set material is used. The algebra behind the identities — the Clifford relation, the sixteen products as a basis, Pauli's theorem, $\gamma^5$ as the volume element — is [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.13 Complex Clifford Algebras and Clifford Modules|§CB.13]] and [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], shown in the blocks below; this section keeps the course's computational toolkit.
+How are long products of $\gamma$ matrices shortened, traced and reduced, as every amplitude with spin-½ particles requires? Everything follows from the Clifford algebra ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]), the algebra of $\gamma^5$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]), the basis property of the sixteen products ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]) and the slash of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]. This section adds the working identities: slash algebra, contractions, traces, the $\varepsilon$-forms of $\gamma^5$ and its duality on $\sigma^{\mu\nu}$, the reduction of any product to the standard basis, and the Gordon identity. Problem Set 5 (submitted) proves several of them; its proofs appear as the user wrote them, and no other problem-set material is used. The algebra behind the identities — the Clifford relation, the sixteen products as a basis, Pauli's theorem, $\gamma^5$ as the volume element — is proved in [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.13 Complex Clifford Algebras and Clifford Modules|§CB.13]] and [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], linked from each box and listed at the end; this section keeps the course's computational toolkit.
 
 **Setup.** No field and no dynamics: Theorems §C5a.14.1–§C5a.14.8 are identities of the four-dimensional Clifford algebra and $\gamma^5$, exact, with commuting four-vector components and $\varepsilon^{0123} = +1$; they hold wherever the $\gamma$'s appear, in classical and quantum computations alike, and carry no *Model* line. The exception is the Gordon identity (Theorem §C5a.14.9): it holds only between on-shell c-number spinors of the free Dirac field ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), $m > 0$.
 
 *Conventions:* $\varepsilon^{0123} = +1$, $\varepsilon_{0123} = -1$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]); $\sigma^{\mu\nu} = \frac i2[\gamma^\mu, \gamma^\nu]$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]; other normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]); components of four-vectors are numbers and commute with the $\gamma$'s; the identity matrix is often not written. Every identity here was checked numerically in the chiral basis in the user's notes.
-
-## The mathematics used here
-
-The toolkit starts from the Clifford relation and its first consequences, the antisymmetrized products and the sixteen products as a basis:
-
-![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11]]
-
-![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12]]
-
-![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-11-12]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-9]]
 
 ## Products and slashes
 
@@ -69,7 +53,7 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 
 ^der-c5a-14-1
 
-*Uses:* [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]
 
 > [!remark] Remark: When slashes commute
 > The components $a_\mu$, $b_\mu$ are numbers and commute; the matrices $\gamma^\mu$ do not. By [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]],
@@ -122,7 +106,7 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 
 ^der-c5a-14-2
 
-*Uses:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]
+*Uses:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]
 
 > [!derivation]- Derivation (second route: Problem Set 5, Problem 2, as the user wrote it)
 > **(a) Components.** With $g_{00} = 1$, $g_{ii} = -1$: $\gamma_0 = \gamma^0$, $\gamma_i = -\gamma^i$. For each fixed $\mu$ (no sum) $\gamma^\mu\gamma^\mu = \frac12\{\gamma^\mu, \gamma^\mu\} = g^{\mu\mu}$. Hence $\gamma_\mu\gamma^\mu = \gamma^0\gamma^0 - \sum_{i=1}^3\gamma^i\gamma^i = g^{00} - \sum_ig^{ii} = 1 - (-3) = 4$.
@@ -148,23 +132,9 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 
 ^der-c5a-14-2b
 
-*Uses:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]
+*Uses:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]
 
 These identities shorten strings in which an index is contracted across other $\gamma$'s, as happens in every amplitude with a photon exchanged between fermion lines (QFT C8, planned).
-
-### The mathematics used here: traces
-
-Traces are basis-independent because any two sets of Dirac matrices are related by a change of basis; the traces with $\gamma^5$ use its properties:
-
-![[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12]]
-
-![[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-12]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-15]]
 
 ## Traces
 
@@ -182,7 +152,7 @@ Traces are basis-independent because any two sets of Dirac matrices are related 
 > [!derivation]- Derivation
 > The trace is cyclic, $\operatorname{tr}(AB) = \operatorname{tr}(BA)$ ([[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]), and linear.
 >
-> **1. $\operatorname{tr}\mathbb 1 = 4$**: the Dirac matrices are $4\times4$ ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12|Theorem §CB.13.12]]: four is the dimension of every irreducible realization).
+> **1. $\operatorname{tr}\mathbb 1 = 4$**: the Dirac matrices are $4\times4$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]; four is the dimension of every irreducible realization, [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]]).
 >
 > **2. Odd number.** Let $M = \gamma^{\mu_1}\cdots\gamma^{\mu_n}$ with $n$ odd. Insert $(\gamma^5)^2 = \mathbb 1$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]): $\operatorname{tr}M = \operatorname{tr}(M\gamma^5\gamma^5)$. Move the first $\gamma^5$ to the left through the $n$ factors of $M$, each anticommuting with it: $M\gamma^5 = (-1)^n\gamma^5M = -\gamma^5M$. So $\operatorname{tr}M = -\operatorname{tr}(\gamma^5M\gamma^5)$. By cyclicity $\operatorname{tr}(\gamma^5M\gamma^5) = \operatorname{tr}(M\gamma^5\gamma^5) = \operatorname{tr}M$. Hence $\operatorname{tr}M = -\operatorname{tr}M = 0$.
 >
@@ -205,7 +175,7 @@ Traces are basis-independent because any two sets of Dirac matrices are related 
 
 ^der-c5a-14-3
 
-*Uses:* [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-49|LADR Thm. 8.49]]
 
 > [!theorem] Theorem §C5a.14.4: Traces with γ⁵
 > $$
@@ -261,20 +231,6 @@ Traces are basis-independent because any two sets of Dirac matrices are related 
 > *Source: Yu §7.1, eq. (7.47) and the paragraph after it; §8.2.1, eq. (8.43)*
 
 ^rem-c5a-14-3
-
-### The mathematics used here: the volume element
-
-$\gamma^5$ is the volume element; Theorem §C5a.14.5 is its formula in the course's $\varepsilon$ convention:
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-12]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-13]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^pf-cb-12-13]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-2]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-2]]
 
 ## γ⁵ and the ε symbol
 
@@ -368,7 +324,7 @@ $\gamma^5$ is the volume element; Theorem §C5a.14.5 is its formula in the cours
 > **6. Normalization.** Multiply both sides by the same constant $2c$: $\gamma^5\sigma_{\mu\nu} = \frac i2\varepsilon_{\mu\nu\lambda\kappa}\sigma^{\lambda\kappa}$ for $\sigma = c[\gamma, \gamma]$. (The user's write-up, with $\sigma = \frac1{4i}[\gamma, \gamma]$, runs steps 2–5 with $4i\sigma^{\mu\nu} = 2\gamma^{[\mu\nu]}$ in place of $\gamma^{[\mu\nu]}$.)
 >
 > **What the derivation shows**
-> - $\gamma^5$ acts on the six $\sigma^{\mu\nu}$ as the Hodge dual: it exchanges the "electric" $\sigma^{0i}$ with the "magnetic" $\sigma^{jk}$, the matrix version of $\mathbf E \leftrightarrow \mathbf B$ duality ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]]). Its eigenspaces $\gamma^5 = \mp1$ are the self-dual and anti-self-dual halves, $(1, 0)$ and $(0, 1)$: $\sigma^{\mu\nu}P_{L,R}$ is the tensor bilinear of a single chirality.
+> - $\gamma^5$ acts on the six $\sigma^{\mu\nu}$ as the Hodge dual: it exchanges the "electric" $\sigma^{0i}$ with the "magnetic" $\sigma^{jk}$, the matrix version of $\mathbf E \leftrightarrow \mathbf B$ duality ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|Theorem §C1a.5.7]]). Its eigenspaces $\gamma^5 = \mp1$ are the self-dual and anti-self-dual halves, $(1, 0)$ and $(0, 1)$: $\sigma^{\mu\nu}P_{L,R}$ is the tensor bilinear of a single chirality.
 
 ^der-c5a-14-7
 
@@ -404,7 +360,7 @@ $\gamma^5$ is the volume element; Theorem §C5a.14.5 is its formula in the cours
 
 ^der-c5a-14-8
 
-*Uses:* [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|Theorem §C5a.14.5]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|Theorem §C5a.14.6]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-7|Theorem §C5a.14.7]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|Theorem §C5a.14.5]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|Theorem §C5a.14.6]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-7|Theorem §C5a.14.7]]
 
 ## The Gordon identity
 
@@ -486,10 +442,27 @@ $\gamma^5$ is the volume element; Theorem §C5a.14.5 is its formula in the cours
 
 ^rem-c5a-14-5
 
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> The toolkit starts from the Clifford relation and its first consequences, the antisymmetrized products and the sixteen products as a basis:
+> - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]] — Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
+> - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]] with [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-11-12|Derivation]] — squares, anticommutation, $\slashed a\slashed a = a^2$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]]).
+> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8|Def. §CB.12.8]] — antisymmetrized products $\gamma^{[\mu_1\cdots\mu_k]}$.
+> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]] with [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-9|Derivation]] — the sixteen products are a basis, traceless ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]; Theorem §C5a.14.8).
+>
+> Traces are basis-independent because any two sets of Dirac matrices are related by a change of basis; the traces with $\gamma^5$ use its properties:
+> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12|Theorem §CB.13.12]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-12|Derivation]] — Pauli's theorem ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]]).
+> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]] with [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-15|Derivation]] — $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$, $(\gamma^5)^2 = \mathbb 1$, $\{\gamma^5, \gamma^\mu\} = 0$, $\operatorname{tr}\gamma^5 = 0$ (Theorems §C5a.14.3–§C5a.14.4).
+>
+> $\gamma^5$ is the volume element; Theorem §C5a.14.5 is its formula in the course's $\varepsilon$ convention:
+> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-12|Def. §CB.12.12]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-13|Theorem §CB.12.13]] with [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^pf-cb-12-13|Proof]] — the volume element and its properties (it commutes with products of two $\gamma$'s, anticommutes with one).
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-2|Theorem §CB.18.2]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-2|Proof]] — $\gamma^5$ is the complex volume element of the Dirac module (of the opposite orientation).
+
 > [!remark]- Connections
-> - The trace is the inner product that makes the sixteen $\Gamma$'s an orthogonal basis; the same idea expands any $2\times2$ matrix in Pauli matrices (the Fierz check above) and underlies the basis theorem — [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]].
+> - The trace is the inner product that makes the sixteen $\Gamma$'s an orthogonal basis; the same idea expands any $2\times2$ matrix in Pauli matrices (the Fierz check above) and underlies the basis theorem — [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]] (proof: [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]]), [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]].
 > - Casimir's trick turns spin sums into traces: the spin sums of [[§C5a.12 Normalization and Spin Sums|§C5a.12]] are what the trace theorems are for; the Dirac propagator's numerator $\slashed{p} + m$ is the same spin sum, so loop traces use the same identities — [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].
-> - The duality $\gamma^5\sigma_{\mu\nu} = \frac i2\varepsilon_{\mu\nu\lambda\kappa}\sigma^{\lambda\kappa}$ is the Hodge star of antisymmetric tensors in matrix form; its eigenspaces are the $(1, 0)$ and $(0, 1)$ halves, the same split as $\mathbf E \mp i\mathbf B$ — [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
+> - The duality $\gamma^5\sigma_{\mu\nu} = \frac i2\varepsilon_{\mu\nu\lambda\kappa}\sigma^{\lambda\kappa}$ is the Hodge star of antisymmetric tensors in matrix form; its eigenspaces are the $(1, 0)$ and $(0, 1)$ halves, the same split as $\mathbf E \mp i\mathbf B$ — [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|Theorem §C1a.5.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
 > - The Gordon split of the current into convection and spin magnetization is the relativistic version of the Pauli equation's $\frac{e}{2m}(\mathbf L + 2\mathbf S)\cdot\mathbf B$, with $g = 2$ — [[§C13.2★ The Dirac Equation#^thm-c13-2-5|QM Theorem §C13.2.5]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-8|Theorem §C5a.9.8]].
 > - $\gamma_\mu\gamma^\mu = d$ makes the contraction identities dimension dependent, the starting point of $\gamma$ algebra in dimensional regularization — QFT C7 (planned).
 > - The $\varepsilon$ in $\gamma^5$ and its traces is the same pseudotensor whose sign convention separates these notes from Peskin–Schroeder — [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]], [[Larsen PHY 513]].

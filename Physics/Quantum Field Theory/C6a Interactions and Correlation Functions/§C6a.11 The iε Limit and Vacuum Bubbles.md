@@ -15,19 +15,7 @@ The rules of [[§C6a.8 Position-Space Feynman Rules|§C6a.8]] and [[§C6a.10 Fey
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]; numerator and denominator are formal power series in $\lambda$; $V$ is the volume of space and $2T$ the length of the time interval, both taken finite and then large (a box, [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]); $E_0$ is the ground-state energy of $\hat H$ measured from $\hat H_0|0\rangle = 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]]; not the zero-point energy, [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^cau-c6a-4-1|§C6a.4, Caution: Two E₀'s]]).
 
-## The mathematics used here
-
-A pairing splits uniquely into the part attached to the external points and a vacuum part:
-
-![[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-1]]
-
-and a sum over pairings with an exponential weight $\frac{t^k}{k!}$ factorizes accordingly:
-
-![[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-2]]
-
-A delta function at zero momentum in a finite box is the volume:
-
-![[§CA.2 Generalized Functions#^thm-ca-2-10]]
+A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta^3(\mathbf 0) \leftrightarrow V$ ([[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]]). The splitting of a pairing into its attached and vacuum parts, and the factorization of sums over pairings it implies, are proved in [[§CA.8 Splitting Pairings and the Exponential Formula|§CA.8]] and linked in the derivations; all three are listed at the end.
 
 ## Fine point 1: the limit
 
@@ -644,6 +632,13 @@ A delta function at zero momentum in a finite box is the volume:
 > *Source: PHY 513 Lecture 14, slide 26, and transcript*
 
 ^rem-c6a-11-5
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-1|Theorem §CA.8.1]] — a pairing splits uniquely into the part attached to the external points and a vacuum part,
+> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-2|Theorem §CA.8.2]] — and a sum over pairings with an exponential weight $\frac{t^k}{k!}$ factorizes accordingly.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] — a delta function at zero momentum in a finite box is the volume.
 
 > [!remark]- Connections
 > - The tilt of the times that projects onto the true vacuum is the same infinitesimal rotation that, finite, is the Wick rotation to Euclidean time; Euclidean correlators have no $i\varepsilon$ at all — [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]].

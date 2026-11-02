@@ -11,31 +11,11 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 9 §9.3 (Derivation "Example: the helicity basis (Problem Set 5, Problem 6)"), §9.4 (Normalization and spin sums), §9.5 (Negative-frequency solutions: normalizations, orthogonality, spin sum, "Why neither spin sum is the identity"), §9.7 (Summary) and "Correspondence with Yu" · PHY 513 Lecture 9 (Larsen), Parts B and C · the user's write-up of PHY 513, Problem Set 5, Problem 6 (submitted) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.3, eqs. (3.52)–(3.67) · Yu Zhao-Huan, 量子场论讲义, §5.4.2, eqs. (5.158)–(5.214) · the user's pre-course notes, §5.4 ("Helicity spinors in the Weyl representation", notes "Fixing the normalization constants", "Rest frame, and what ω_λω_{−λ} = m means", "Checking the spin sums").*
 
-How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates|§C5a.11]] ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]]) normalized, how do they sit relative to each other, and what survives of them in a computation? Every answer here is a short calculation with the square-root identities ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|Theorem §C5a.10.7]]) and the Dirac conjugate $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), whose rows $\bar u^s(p)$, $\bar v^s(p)$ are [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-2|Theorem §C5a.11.2]] and [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-4|Theorem §C5a.11.4]]. The results — $\bar uu = 2m$, $u^\dagger u = 2E_{\mathbf p}$, $\bar vv = -2m$, the orthogonality relations and the spin sums $\sum u\bar u = \slashed{p} + m$, $\sum v\bar v = \slashed{p} - m$ — are what later amplitudes and the quantized field use. The helicity basis, in which no matrix square root is needed, and the massless limit, where helicity becomes chirality, are [[§C5a.13 Helicity Spinors and the Massless Limit|§C5a.13]]. The covariance of $\gamma^\mu$ and the invariance of the Dirac form are mathematics ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]), shown in the block below.
+How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates|§C5a.11]] ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]]) normalized, how do they sit relative to each other, and what survives of them in a computation? Every answer here is a short calculation with the square-root identities ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|Theorem §C5a.10.7]]) and the Dirac conjugate $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), whose rows $\bar u^s(p)$, $\bar v^s(p)$ are [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-2|Theorem §C5a.11.2]] and [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-4|Theorem §C5a.11.4]]. The results — $\bar uu = 2m$, $u^\dagger u = 2E_{\mathbf p}$, $\bar vv = -2m$, the orthogonality relations and the spin sums $\sum u\bar u = \slashed{p} + m$, $\sum v\bar v = \slashed{p} - m$ — are what later amplitudes and the quantized field use. The helicity basis, in which no matrix square root is needed, and the massless limit, where helicity becomes chirality, are [[§C5a.13 Helicity Spinors and the Massless Limit|§C5a.13]]. The covariance of $\gamma^\mu$ and the invariance of the Dirac form are mathematics, proved in [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]] and [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], linked where used and listed at the end.
 
 **Setup.** As in [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates|§C5a.11]]: the c-number spinors $u^s(p)$, $v^s(p)$ of the free Dirac field ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), on shell with $p^0 = E_{\mathbf p}$, normalized as in [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-4|Def. §C5a.10.4]], with any orthonormal spin basis unless a box fixes the helicity basis; every $m \ge 0$ unless a box says $m > 0$. The results are exact algebraic identities; another normalization of the spinors rescales them. The quantum field uses them unchanged: in its mode algebra ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]]) and its propagator ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]]).
 
 *Conventions* as in [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost|§C5a.10]]: chiral basis, $p^0 = E_{\mathbf p} > 0$, $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, so for a row $(a^\dagger, b^\dagger)$ the product $(a^\dagger, b^\dagger)\gamma^0 = (b^\dagger, a^\dagger)$ exchanges the halves. $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ are Hermitian ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|Def. §C5a.10.5]]), so $(\sqrt{p\cdot\sigma}\,\xi)^\dagger = \xi^\dagger\sqrt{p\cdot\sigma}$; the conjugate rows, derived once, are $\bar u^s(p) = (\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma})$ ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-2|Theorem §C5a.11.2]]) and $\bar v^s(p) = (-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma})$ ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-4|Theorem §C5a.11.4]]). $\tilde p \equiv (E_{\mathbf p}, -\mathbf p)$ is $p$ with the three-momentum reversed.
-
-## The mathematics used here
-
-The spin sums are covariant (Theorem §C5a.12.9) because the Dirac matrices rotate as a vector and $\Lambda_{1/2}$ preserves the Dirac form:
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-17]]
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-17]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7b]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b]]
 
 ## Normalization
 
@@ -421,6 +401,14 @@ The spin sums are covariant (Theorem §C5a.12.9) because the Dirac matrices rota
 > *Source: the user's PHY 513 notes, Ch. 9 §9.7 (Principle "Solutions of the Dirac equation") · PHY 513 Lecture 9, Summary I–III*
 
 ^rem-c5a-12-3
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> The spin sums are covariant (Theorem §C5a.12.9) because the Dirac matrices rotate as a vector and $\Lambda_{1/2}$ preserves the Dirac form:
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-17|Theorem §CB.14.17]] with [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-17|Derivation]] — $[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$.
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7b|Derivation (second route: the nested-commutator series)]] — $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ (Derivation §C5a.12.9, step 1).
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b|Derivation (second route)]] — $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ (Derivation §C5a.12.9, step 4; [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]).
 
 > [!remark]- Connections
 > - $u^\dagger u = 2E_{\mathbf p}$ is the same weight as the relativistic normalization of states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); with it the Dirac mode expansion has the scalar field's $1/\sqrt{2E_{\mathbf p}}$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]; [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]), and one-particle Dirac states are normalized exactly as scalar ones.

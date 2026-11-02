@@ -17,30 +17,6 @@ How does the Dirac equation look in the two Weyl halves, and what is left of it 
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]].
 
-## The mathematics used here
-
-The Weyl form splits spinor space by $\gamma^5$; Model §C5a.8.3 has no parity symmetry because parity exchanges the two copies, and the ★ remark on a Majorana mass uses that complex conjugation exchanges them:
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-4]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-13]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14]]
-
-Mass breaks chiral symmetry because $\gamma^0$, the matrix of the invariant form, swaps the Weyl blocks; in group language this is the pseudo-unitarity of $\Lambda_{1/2}$:
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b]]
-
 ## The Weyl form and the Weyl equations
 
 > [!theorem] Theorem §C5a.8.1: Bilinears in Weyl Components
@@ -137,7 +113,7 @@ Mass breaks chiral symmetry because $\gamma^0$, the matrix of the invariant form
 >
 > a **right-handed Weyl field** $\psi_R$ in $(0, \frac12)$ has $\mathcal L_R = i\psi_R^\dagger\sigma^\mu\partial_\mu\psi_R$ and $i\sigma^\mu\partial_\mu\psi_R = 0$. These are the **Weyl equations**.
 >
-> *Assumptions:* $m = 0$ (the two blocks of [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-2|Theorem §C5a.8.2]] decouple, and either may be kept alone, consistently both as a representation and dynamically); classical, free; no parity symmetry (parity exchanges the two, [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|Theorem §CB.17.13]]).
+> *Assumptions:* $m = 0$ (the two blocks of [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-2|Theorem §C5a.8.2]] decouple, and either may be kept alone, consistently both as a representation and dynamically); classical, free; no parity symmetry (parity exchanges the two, [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-6|Theorem §C3.2.6]], 1).
 > *Source: the user's PHY 513 notes, Ch. 8 §8.10 (Principle "The Weyl equations", eq. (weyl)) · PHY 513 Lecture 8, Part C ("Weyl Equation") · PS §3.2, eqs. (3.40), (3.44) · Yu §5.3, eq. (5.115)*
 
 ^mod-c5a-8-3
@@ -204,6 +180,17 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 > *Source: the user's PHY 513 notes, Ch. 8 §8.10 (Caution "'A neutrino mass needs a right-handed neutrino'")*
 
 ^rem-c5a-8-3
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> The Weyl form splits spinor space by $\gamma^5$; Model §C5a.8.3 has no parity symmetry because parity exchanges the two copies, and the ★ remark on a Majorana mass uses that complex conjugation exchanges them:
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|Theorem §CB.18.4]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-4|Proof]] — the eigenspaces of $\gamma^5$ are the Weyl halves in every basis ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]).
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|Theorem §CB.17.13]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-13|Derivation]] — parity exchanges the two copies ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-6|Theorem §C3.2.6]], 1).
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|Theorem §CB.17.14]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14|Derivation]] — complex conjugation exchanges them ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-6|Theorem §C3.2.6]], 2).
+>
+> Mass breaks chiral symmetry because $\gamma^0$, the matrix of the invariant form, swaps the Weyl blocks; in group language this is the pseudo-unitarity of $\Lambda_{1/2}$:
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b|Derivation (second route)]] — $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]).
 
 > [!remark]- Connections
 > - Chirality is a property of the Lorentz representation, helicity of a state; the Weyl equation ties them for massless particles, which is why a single Weyl field realizes one helicity of Wigner's massless classification — [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-6|Theorem §C3.7.6]], [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-4|Theorem §C5a.13.4]].

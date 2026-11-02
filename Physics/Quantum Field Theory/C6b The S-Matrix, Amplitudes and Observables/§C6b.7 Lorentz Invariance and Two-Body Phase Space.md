@@ -99,7 +99,7 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > \end{aligned}
 > $$
 >
-> since $\cosh^2\eta - \sinh^2\eta = 1$. In index form this is the determinant rule: restricted to $\mu, \nu \in \{0, 3\}$, $\varepsilon_{12\mu\nu} = -\epsilon_{\mu\nu}$ with the two-dimensional symbol $\epsilon_{03} = 1$ (Step 3 of [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^der-c6b-7-1|Derivation §C6b.7.1]]), and $\epsilon_{\mu\nu}L^\mu{}_\alpha L^\nu{}_\beta = \det L\,\epsilon_{\alpha\beta}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]] in two dimensions) with $\det L = c^2 - s^2 = 1$. For collinear beams $|\mathbf v_A - \mathbf v_B| = |v_A^z - v_B^z|$, so $E_AE_B|\mathbf v_A - \mathbf v_B| = |F_{12}|$ is invariant; $|\mathcal M|^2$ and the phase space are invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]): part 1.
+> since $\cosh^2\eta - \sinh^2\eta = 1$. In index form this is the determinant rule: restricted to $\mu, \nu \in \{0, 3\}$, $\varepsilon_{12\mu\nu} = -\epsilon_{\mu\nu}$ with the two-dimensional symbol $\epsilon_{03} = 1$ (Step 3 of [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^der-c6b-7-1|Derivation §C6b.7.1]]), and $\epsilon_{\mu\nu}L^\mu{}_\alpha L^\nu{}_\beta = \det L\,\epsilon_{\alpha\beta}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]] in two dimensions) with $\det L = c^2 - s^2 = 1$. For collinear beams $|\mathbf v_A - \mathbf v_B| = |v_A^z - v_B^z|$, so $E_AE_B|\mathbf v_A - \mathbf v_B| = |F_{12}|$ is invariant; $|\mathcal M|^2$ and the phase space are invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]): part 1.
 >
 > **Step 3** (rotations). $F_{\rho\sigma} = \varepsilon_{\rho\sigma\mu\nu}p_A^\mu p_B^\nu$ is an antisymmetric tensor; under a rotation $R$ its spatial components transform as
 >
@@ -117,7 +117,7 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 
 ^der-c6b-7-2
 
-*Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-1|Theorem §C6b.7.1]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]
+*Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-1|Theorem §C6b.7.1]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]
 
 > [!theorem] Theorem §C6b.7.3: The Flux Factor in Invariant Form
 > For collinear beams,
@@ -154,7 +154,7 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > $$
 >
 > **What the derivation shows.**
-> - For collinear beams the flux factor is a function of the invariant $p_A\cdot p_B$ alone, the algebraic reason behind [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-2|Theorem §C6b.7.2]], 1. (For collinear beams $F_{12}^2 = \frac12F_{\rho\sigma}F^{\rho\sigma} = (p_A\cdot p_B)^2 - m_A^2m_B^2$, by the contraction identity $\varepsilon_{\rho\sigma\mu\nu}\varepsilon^{\rho\sigma\alpha\beta} = -2(\delta^\alpha_\mu\delta^\beta_\nu - \delta^\alpha_\nu\delta^\beta_\mu)$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]) and because the other components of $F$ vanish.)
+> - For collinear beams the flux factor is a function of the invariant $p_A\cdot p_B$ alone, the algebraic reason behind [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-2|Theorem §C6b.7.2]], 1. (For collinear beams $F_{12}^2 = \frac12F_{\rho\sigma}F^{\rho\sigma} = (p_A\cdot p_B)^2 - m_A^2m_B^2$, by the contraction identity $\varepsilon_{\rho\sigma\mu\nu}\varepsilon^{\rho\sigma\alpha\beta} = -2(\delta^\alpha_\mu\delta^\beta_\nu - \delta^\alpha_\nu\delta^\beta_\mu)$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]]) and because the other components of $F$ vanish.)
 > - Checked numerically in `qft-C/tools/l15/checks.py`.
 
 ^der-c6b-7-3

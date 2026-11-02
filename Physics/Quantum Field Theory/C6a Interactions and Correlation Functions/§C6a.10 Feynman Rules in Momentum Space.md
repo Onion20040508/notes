@@ -21,19 +21,13 @@ and thinking of its two plane waves as belonging to the two ends of the line, th
 
 *Conventions* ([[Larsen PHY 513]]): $\tilde D_F(p) = \frac{i}{p^2 - m^2 + i\varepsilon}$; a momentum $p$ assigned to a line from $a$ to $b$ means the factor $e^{-ip\cdot a}$ at $a$ and $e^{+ip\cdot b}$ at $b$ ("$p$ flows from $a$ to $b$"); a momentum flowing *into* a point $z$ carries $e^{+ip\cdot z}$ there.
 
-## The mathematics used here
+Three Fourier tricks do the work, each proved in [[§CA.3 Fourier Transforms and Fourier Tricks|§CA.3]] and listed at the end. The plane waves meeting at a vertex integrate to a delta function, as tempered distributions in $p$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]):
 
-The plane waves meeting at a vertex integrate to a delta function:
+$$
+\int d^4z\,e^{ip\cdot z} = (2\pi)^4\delta^4(p) .
+$$
 
-![[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3]]
-
-Doing the space(time) integral before the momentum integrals is an exchange of integrals, justified for wave packets and, for the propagators here, after smearing the external points:
-
-![[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6]]
-
-and momenta are relabelled and their directions reversed freely:
-
-![[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7]]
+Doing the space(time) integral before the momentum integrals is an exchange of integrals, justified for wave packets and, for the propagators here, after smearing the external points ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]); and momenta are relabelled and their directions reversed freely, $\int d^4p\,F(p) = \int d^4p\,F(-p)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]).
 
 ## Correlation functions in momentum space
 
@@ -379,6 +373,13 @@ and momenta are relabelled and their directions reversed freely:
 > *Source: Yu §7.2, pp. 286–288; §7.3, p. 296; §10.5.1, pp. 468–470*
 
 ^rem-c6a-10-3
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the plane waves meeting at a vertex integrate to a delta function.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] — doing the space(time) integral before the momentum integrals is an exchange of integrals, justified for wave packets and, for the propagators here, after smearing the external points.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — momenta are relabelled and their directions reversed freely.
 
 > [!remark]- Connections
 > - Momentum conservation at a vertex is translation invariance of the interaction, the same invariance that makes $\hat P$ a conserved Noether charge — [[§C1b.5 Noether's Theorem|§C1b.5]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]].

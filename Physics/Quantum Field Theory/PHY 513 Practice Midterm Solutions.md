@@ -356,7 +356,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 3** ((b)). Left side: $\mu$ up on $F$, down on $\partial$, contracted; $\nu$ free and **up**. Right side: $\nu$ free and **down**. The heights differ: illegal. Repaired: $\partial_\mu F^{\mu\nu} = j^\nu$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]]), or equivalently $\partial^\mu F_{\mu\nu} = j_\nu$.
 >
-> **Step 4** ((c)). $\mu$: up on $x^\mu$, down on $x_\mu$; $\nu$: down on $\partial_\nu$, up on $x^\nu$. Both contracted, nothing free: legal, a scalar, with no $\varepsilon$, so a true scalar. With the parentheses $\partial_\nu$ acts on $x^\nu$ alone, $\partial_\nu x^\nu = 4$, and the expression is $4x^2$ (without them, acting on everything to its right, $x^\mu\partial_\nu(x^\nu x_\mu) = x^\mu(4x_\mu + x^\nu g_{\nu\mu}) = 5x^2$; [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|Theorem §C1a.5.7]]). A scalar either way.
+> **Step 4** ((c)). $\mu$: up on $x^\mu$, down on $x_\mu$; $\nu$: down on $\partial_\nu$, up on $x^\nu$. Both contracted, nothing free: legal, a scalar, with no $\varepsilon$, so a true scalar. With the parentheses $\partial_\nu$ acts on $x^\nu$ alone, $\partial_\nu x^\nu = 4$, and the expression is $4x^2$ (without them, acting on everything to its right, $x^\mu\partial_\nu(x^\nu x_\mu) = x^\mu(4x_\mu + x^\nu g_{\nu\mu}) = 5x^2$; [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]]). A scalar either way.
 >
 > **Step 5** ((d)). $T^{\mu\nu}{}_\nu$: $\nu$ once up, once down, contracted (a trace over the second and third slots); $\mu$ free, up. Right side: $\mu$ free, up. Legal: an equation between two (contravariant) vectors.
 >
@@ -408,7 +408,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (component check). $F_{\mu\nu}F^{\mu\nu} = 2(\mathbf B^2 - \mathbf E^2)$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]]), so $F^{\mu\nu}F_{\nu\mu} = 2(\mathbf E^2 - \mathbf B^2)$; and $F^\mu{}_\mu = F^0{}_0 + F^i{}_i = 0$ because the diagonal of $F^{\mu\nu}$ vanishes and lowering one index multiplies each diagonal entry by $\pm1$.
 >
-> *Checked against:* [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], 2 (symmetric times antisymmetric is zero) and [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], derivation step 2 ($g_{\mu\nu}T^{[\mu\nu]} = 0$).
+> *Checked against:* [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], 2 (symmetric times antisymmetric is zero) and [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]], derivation step 2 ($g_{\mu\nu}T^{[\mu\nu]} = 0$).
 
 ^sol-px-1-2-2
 
@@ -451,7 +451,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 > $$
 > \varepsilon^{\mu\nu\rho\sigma}p_{1\mu}p_{2\nu}p_{3\rho}k_\sigma = -k_\sigma\bigl(\varepsilon^{\sigma\mu\nu\rho}p_{1\mu}p_{2\nu}p_{3\rho}\bigr) = -k_\sigma\cdot0 = 0
 > $$
-> by Steps 2–3 (with the free index called $\sigma$). Determinant reading: the contraction is $-\det[p_1|p_2|p_3|k]$ with lowered components, and the first three columns are linearly dependent ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], 4), whatever $k$ is. A nonzero $\varepsilon$-contraction needs four linearly independent vectors.
+> by Steps 2–3 (with the free index called $\sigma$). Determinant reading: the contraction is $-\det[p_1|p_2|p_3|k]$ with lowered components, and the first three columns are linearly dependent ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 4), whatever $k$ is. A nonzero $\varepsilon$-contraction needs four linearly independent vectors.
 >
 > *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-1|Example §C1a.5.1]] (the four-momentum version, by the determinant route) and the course solution SOL1, Problem 3(b) (the symmetric–antisymmetric route used here).
 
@@ -471,11 +471,11 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 > $$
 > I' = \varepsilon_{\mu\nu\rho\sigma}\mathcal P^\mu{}_\alpha\mathcal P^\nu{}_\beta\mathcal P^\rho{}_\gamma\mathcal P^\sigma{}_\delta\;p_1^\alpha p_2^\beta p_3^\gamma p_4^\delta = (\det\mathcal P)\,\varepsilon_{\alpha\beta\gamma\delta}\,p_1^\alpha p_2^\beta p_3^\gamma p_4^\delta = -I .
 > $$
-> The identity used is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], 1, which holds for every $4\times4$ matrix; for $\det\Lambda = +1$ it gives invariance, for $\mathcal P$ (and $\mathcal T$) a sign. $\Lambda^{\mathsf T}g\Lambda = g$ only gives $(\det\Lambda)^2 = 1$, and the remaining sign is exactly what $\varepsilon$ detects.
+> The identity used is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 1, which holds for every $4\times4$ matrix; for $\det\Lambda = +1$ it gives invariance, for $\mathcal P$ (and $\mathcal T$) a sign. $\Lambda^{\mathsf T}g\Lambda = g$ only gives $(\det\Lambda)^2 = 1$, and the remaining sign is exactly what $\varepsilon$ detects.
 >
-> **Step 4** (explicit check). By Theorem §C1a.5.4, 4, $I = -\det[p_1|p_2|p_3|p_4]$ (upper components as columns). $\mathcal P$ multiplies rows $1, 2, 3$ of that matrix by $-1$, so the determinant gets $(-1)^3$. Numerically, with $p_i^\mu = \delta^\mu_{i-1}$ (the four unit vectors): $I = \varepsilon_{0123} = -1$ before and $(-1)^3(-1) = +1$ after.
+> **Step 4** (explicit check). By Theorem §C1a.5.5, 4, $I = -\det[p_1|p_2|p_3|p_4]$ (upper components as columns). $\mathcal P$ multiplies rows $1, 2, 3$ of that matrix by $-1$, so the determinant gets $(-1)^3$. Numerically, with $p_i^\mu = \delta^\mu_{i-1}$ (the four unit vectors): $I = \varepsilon_{0123} = -1$ before and $(-1)^3(-1) = +1$ after.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], 1 and 4, and [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]], 1 (the pseudotensor law, odd under $\mathcal P$ and $\mathcal T$ separately).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 1 and 4, and [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]], 1 (the pseudotensor law, odd under $\mathcal P$ and $\mathcal T$ separately).
 
 ^sol-px-1-3-3
 
@@ -620,7 +620,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (checks). The general formula $\Box f(\rho) = 2d\,f' + 4\rho f''$ (X1.6.2) gives for $f = \rho$: $2d$; for $f = \rho^2$: $2d\cdot2\rho + 4\rho\cdot2 = (4d + 8)\rho$. At $d = 4$: $8$, $24\rho$, $192$, the values of PS1.6(c)–(d).
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]] ($\partial^2\rho = 8$, $\partial^2\rho^2 = 24\rho$, $(\partial^2)^2\rho^2 = 192$ at $d = 4$; the $d$-dimensional formula $2d\,f' + 4\rho f''$), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|Theorem §C1a.5.7]], and the course solution SOL1, Problem 6(c)–(d).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] ($\partial^2\rho = 8$, $\partial^2\rho^2 = 24\rho$, $(\partial^2)^2\rho^2 = 192$ at $d = 4$; the $d$-dimensional formula $2d\,f' + 4\rho f''$), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]], and the course solution SOL1, Problem 6(c)–(d).
 
 ^sol-px-1-6-1
 
@@ -642,7 +642,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 6** (why $\rho \ne 0$). The computation is pointwise off the light cone; across it $\lvert\rho\rvert^{1 - d/2}$ is not locally integrable and is no distribution by itself. Its boundary values ($x^2 - i0\,x^0$, or $x^2 - i0$) solve $\partial^2 D = 0$ or $\partial^2 D = -i\delta^4$ on all of spacetime (in $d = 4$): the source sits at the tip $x = 0$ of the cone, invisible to this calculation.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]] and its derivation, step 4 ("in $d$ dimensions $f' \propto \rho^{-d/2}$, $f \propto \rho^{1 - d/2}$"), and [[§C1a.5 Vectors, Tensors and Index Notation#^rem-c1a-5-3|§C1a.5, Remark: In what sense 1/x² is harmonic, and where the source sits]] (Step 6).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] and its derivation, step 4 ("in $d$ dimensions $f' \propto \rho^{-d/2}$, $f \propto \rho^{1 - d/2}$"), and [[§C1a.5 Vectors, Tensors and Index Notation#^rem-c1a-5-3|§C1a.5, Remark: In what sense 1/x² is harmonic, and where the source sits]] (Step 6).
 
 ^sol-px-1-6-2
 

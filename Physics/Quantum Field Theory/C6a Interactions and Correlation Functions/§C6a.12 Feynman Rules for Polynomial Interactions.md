@@ -23,19 +23,13 @@ The rules for $S$-matrix elements, with external lines instead of external point
 
 *Conventions* ([[Larsen PHY 513]]): real fields $\hat\phi_j$ of mass $m_j$; a complex field $\hat\phi$ with particles $\hat a^\dagger$ and antiparticles $\hat b^\dagger$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]]); $D_F^{(m)}$ the Feynman propagator of mass $m$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]); $\mathcal L_{\rm int} = -\sum_tg_tM_t$, $\hat{\mathcal H}_I = -\mathcal L_{\rm int}(\hat\phi_I)$ (no derivatives); a complex line points from its $\hat\phi^\dagger$ end to its $\hat\phi$ end.
 
-## The mathematics used here
+The counting is that of [[§C6a.8 Position-Space Feynman Rules|§C6a.8]] with more kinds of legs, proved in [[§CA.8 Splitting Pairings and the Exponential Formula|§CA.8]] and listed at the end. A contraction pattern with several vertex types and several kinds of legs is a pairing of half-edges that respects a compatibility relation between kinds ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]); relabelling the $n_t$ vertices of each type and the legs of equal kind at each vertex is a group of order
 
-A contraction pattern with several vertex types and several kinds of legs is a pairing of half-edges that respects a compatibility relation between kinds:
+$$
+|G_{\mathbf n}| = \prod_tn_t!\,\Bigl(\prod_km_{t,k}!\Bigr)^{n_t} ,
+$$
 
-![[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2]]
-
-The relabelling group, its order, and orbit–stabilizer for it:
-
-![[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4]]
-
-and the plane waves meeting at a vertex integrate to a delta function:
-
-![[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3]]
+the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by $|G_{\mathbf n}|/S(D)$ of the contractions, as $n!\,(4!)^n/S(D)$ for $\phi^4$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]; [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]; $|G_{\mathbf n}| = n!\,(3!)^n$ for $\phi^3$ and $n!\,(2!\,2!)^n$ for $(\phi^\dagger\phi)^2$). In momentum space the plane waves meeting at a vertex integrate to a delta function, $\int d^4z\,e^{ip\cdot z} = (2\pi)^4\delta^4(p)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]).
 
 ## Lines and vertices
 
@@ -415,6 +409,13 @@ The examples of Problem Set 8 are already worked: the oriented tadpole, fish and
 > *Source: Yu §7.2, pp. 287–288; §7.3, pp. 292, 296; §7.4, pp. 296–300*
 
 ^rem-c6a-12-1
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]] — a contraction pattern with several vertex types and several kinds of legs is a pairing of half-edges that respects a compatibility relation between kinds.
+> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]] — the relabelling group, its order, and orbit–stabilizer for it.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the plane waves meeting at a vertex integrate to a delta function.
 
 > [!remark]- Connections
 > - The prefactor of the Dyson series is the inverse order of the relabelling group exactly when the Lagrangian is normalized with the factorials of its legs; this is the content of "divide by $S$" for every theory — [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.8 Position-Space Feynman Rules#^rem-c6a-8-2|§C6a.8, Remark: The same proof for other vertices]].

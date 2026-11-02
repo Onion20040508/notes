@@ -156,7 +156,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > 6. (f) $\nu$, $\rho$, $\sigma$ are contracted, $\mu$ (up) and $\lambda$ (up) are free: $B^{\mu\lambda} = A^\mu{}_\nu\,g^{\nu\rho}\,C_{\rho\sigma}\,D^{\sigma\lambda}$. Each contraction joins the second index of one factor to the first of the next, so it is the matrix product $B = A\,g^{-1}C\,D$ (numerically $g^{-1} = g$).
 > 7. (g) Each free index carries one factor $\Lambda$ (up) or $\Lambda^{-1}$ (down), and each contracted pair carries $\Lambda^{-1}\Lambda = \mathbb 1$ (as in (d)). If both sides have the same free indices at the same heights, both transform with the same product of $\Lambda$'s: $L' = (\Lambda\cdots)L$, $R' = (\Lambda\cdots)R$, so $L = R$ in one frame implies $L' = R'$ in every frame.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-2|§C1a.5, Caution: Index bookkeeping: legal, illegal, and matrix products]] (the rules and the matrix-product reading), [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]] ((e)), [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], 2 and 4 ((d), (g)), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], 1 (the factor $\det\Lambda$ of an $\varepsilon$, (b)); [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]] ((a)).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-2|§C1a.5, Caution: Index bookkeeping: legal, illegal, and matrix products]] (the rules and the matrix-product reading), [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]] ((e)), [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]], 2 and 4 ((d), (g)), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 1 (the factor $\det\Lambda$ of an $\varepsilon$, (b)); [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]] ((a)).
 
 ^sol-wr-3
 
@@ -222,7 +222,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3.** $F_{\nu\mu} = -F_{\mu\nu}$ gives $F^{\mu\nu}F_{\nu\mu} = -F^{\mu\nu}F_{\mu\nu}$.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]] (the decomposition into symmetric traceless, antisymmetric and trace parts), and (a).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]] (the decomposition into symmetric traceless, antisymmetric and trace parts), and (a).
 
 ^sol-wr-4-d
 
@@ -258,7 +258,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2** (three contracted). $X_\sigma{}^\delta = \varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\mu\nu\rho\delta}$. A term is nonzero only if $\{\mu, \nu, \rho, \sigma\}$ and $\{\mu, \nu, \rho, \delta\}$ are both $\{0, 1, 2, 3\}$, which forces $\delta = \sigma$: $X$ is diagonal. For fixed $\sigma = \delta$ (no sum), $(\mu, \nu, \rho)$ runs over the $3! = 6$ orderings of the other three values, each term $-1$ as in Step 1: $X_\sigma{}^\delta = -6\,\delta^\delta{}_\sigma$. Its trace is $-24$, agreeing with Step 1.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], 1 ($\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\mu\nu\rho\delta} = -6\delta^\delta_\sigma$, $\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\mu\nu\rho\sigma} = -24$); numerical check.
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], 1 ($\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\mu\nu\rho\delta} = -6\delta^\delta_\sigma$, $\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\mu\nu\rho\sigma} = -24$); numerical check.
 
 ^sol-wr-5-b
 
@@ -277,7 +277,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Second route.** $\varepsilon_{\mu\nu\rho\sigma}a^\mu b^\nu c^\rho d^\sigma = -\det[a\,\vert\,b\,\vert\,c\,\vert\,d]$; adding the first three columns to the fourth gives the zero column.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-1|Example §C1a.5.1]] (home of PS1.3(b), the determinant route through [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], 4); the user's submitted Problem Set 1, Problem 3(b), as written, also takes the determinant route; the symmetric–antisymmetric route of Steps 2–3 is the course solution's.
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-1|Example §C1a.5.1]] (home of PS1.3(b), the determinant route through [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 4); the user's submitted Problem Set 1, Problem 3(b), as written, also takes the determinant route; the symmetric–antisymmetric route of Steps 2–3 is the course solution's.
 
 ^sol-wr-5-c
 
@@ -294,7 +294,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3.** $\det\mathcal P = -1$ although $\mathcal P^{\mathsf T}g\mathcal P = g$: $I$ is a pseudoscalar.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], 1; [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-1|Example §C1a.5.1]] ("a pseudoscalar, invariant only under $\det\Lambda = +1$").
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 1; [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-1|Example §C1a.5.1]] ("a pseudoscalar, invariant only under $\det\Lambda = +1$").
 
 ^sol-wr-5-d
 
@@ -437,7 +437,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **(d)** Chain rule: $\partial_\mu\rho^2 = 2\rho\,\partial_\mu\rho = 4\rho x_\mu$. Product rule: $\Box\rho^2 = \partial^\mu(4\rho x_\mu) = 4(\partial^\mu\rho)x_\mu + 4\rho\,\partial^\mu x_\mu = 4(2x^\mu)x_\mu + 4\rho\cdot4 = 8\rho + 16\rho = 24\rho$. Then $\Box^2\rho^2 = \Box(24\rho) = 24\cdot8 = 192$.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|Theorem §C1a.5.7]] ($\partial_\mu(x^2) = 2x_\mu$, $\partial_\mu\partial_\nu(x^2) = 2g_{\mu\nu}$, $\partial_\mu x^\mu = 4$), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]] ($\partial^2\rho = 8$, $\partial^2\rho^2 = 24\rho$); the user's submitted Problem Set 1, Problem 6(a)–(d), as written ($192$; the course solution agrees).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]] ($\partial_\mu(x^2) = 2x_\mu$, $\partial_\mu\partial_\nu(x^2) = 2g_{\mu\nu}$, $\partial_\mu x^\mu = 4$), [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] ($\partial^2\rho = 8$, $\partial^2\rho^2 = 24\rho$); the user's submitted Problem Set 1, Problem 6(a)–(d), as written ($192$; the course solution agrees).
 
 ^sol-wr-8
 
@@ -458,7 +458,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (the other route). Product rule without simplifying first: $\partial_\sigma(x^\mu\partial_\mu f) = \delta^\mu{}_\sigma\partial_\mu f + x^\mu\partial_\sigma\partial_\mu f = 2x_\sigma f' + x^\mu\partial_\sigma(2x_\mu f') = 2x_\sigma f' + 2x^\mu g_{\sigma\mu}f' + 2x^\mu x_\mu\,2x_\sigma f'' = 4x_\sigma f' + 4\rho x_\sigma f''$: the same.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]] ($\partial_\mu f = 2x_\mu f'$, $x^\mu\partial_\mu f = 2\rho f'$); the user's submitted Problem Set 1, Problem 6(e), as written ($4x_\sigma(f' + \rho f'')$; the course solution writes $4x_\sigma\,d(\rho f')/d\rho$).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] ($\partial_\mu f = 2x_\mu f'$, $x^\mu\partial_\mu f = 2\rho f'$); the user's submitted Problem Set 1, Problem 6(e), as written ($4x_\sigma(f' + \rho f'')$; the course solution writes $4x_\sigma\,d(\rho f')/d\rho$).
 
 ^sol-wr-9-a
 
@@ -473,7 +473,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** $\Box(1/\rho) = \partial^\mu(-2x_\mu\rho^{-2}) = -2(\partial^\mu x_\mu)\rho^{-2} - 2x_\mu(-2\rho^{-3})(2x^\mu) = -8\rho^{-2} + 8\rho\,\rho^{-3} = 0$, every step valid where $\rho \ne 0$.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]] ("$f = c_1/\rho + c_2$ … $\partial^2(1/x^2) = 0$ wherever $x^2 \ne 0$"); the user's submitted Problem Set 1, Problem 6(f), as written.
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] ("$f = c_1/\rho + c_2$ … $\partial^2(1/x^2) = 0$ wherever $x^2 \ne 0$"); the user's submitted Problem Set 1, Problem 6(f), as written.
 
 ^sol-wr-9-b
 
@@ -490,7 +490,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** ($d = 4$). $1 - d/2 = -1$: $f = c_1/\rho + c_2$, part (b); and $\Box\rho = 2d = 8$, $\Box\rho^2 = 2d\cdot2\rho + 4\rho\cdot2 = 24\rho$, as in Problem 8.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]] (the formula "in $d$ spacetime dimensions: $2d\,f' + 4\rho f''$" and the $d = 4$ solutions). The $d$-dimensional solutions are derived here; check: $d = 4$ gives the theorem's $c_1/\rho + c_2$.
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] (the formula "in $d$ spacetime dimensions: $2d\,f' + 4\rho f''$" and the $d = 4$ solutions). The $d$-dimensional solutions are derived here; check: $d = 4$ gives the theorem's $c_1/\rho + c_2$.
 
 ^sol-wr-9-c
 
@@ -522,7 +522,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3.** $\partial(p^2)/\partial p^\mu = 2p_\mu$ and $\frac{d}{du}(u - m^2 + i\epsilon)^{-1} = -(u - m^2 + i\epsilon)^{-2}$ give the third.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|Theorem §C1a.5.10]], 1–3 ($\partial/\partial a^\mu$ is a covector; $\partial(a_\nu a^\nu)/\partial a^\mu = 2a_\mu$; $\partial(b_\nu a^\nu)/\partial a^\mu = b_\mu$).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|Theorem §C1a.5.11]], 1–3 ($\partial/\partial a^\mu$ is a covector; $\partial(a_\nu a^\nu)/\partial a^\mu = 2a_\mu$; $\partial(b_\nu a^\nu)/\partial a^\mu = b_\mu$).
 
 ^sol-wr-10-a
 
@@ -539,7 +539,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (Euler–Lagrange). $\partial\mathcal L/\partial(\partial_\mu A_\nu) = -\frac14\cdot4F^{\mu\nu} = -F^{\mu\nu}$, $\partial\mathcal L/\partial A_\nu = -J^\nu$; so $\partial_\mu(-F^{\mu\nu}) - (-J^\nu) = 0$, i.e. $\partial_\mu F^{\mu\nu} = J^\nu$.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|Theorem §C1a.5.11]], 1 and 4; [[§C1a.7 Relativistic Electrodynamics in Index Form#^rem-c1a-7-2|§C1a.7, Remark: Electrodynamics as the template for field theory]] ($\partial\mathcal L/\partial(\partial_\mu A_\nu) = -F^{\mu\nu}$, $\partial\mathcal L/\partial A_\nu = -J^\nu$).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|Theorem §C1a.5.12]], 1 and 4; [[§C1a.7 Relativistic Electrodynamics in Index Form#^rem-c1a-7-2|§C1a.7, Remark: Electrodynamics as the template for field theory]] ($\partial\mathcal L/\partial(\partial_\mu A_\nu) = -F^{\mu\nu}$, $\partial\mathcal L/\partial A_\nu = -J^\nu$).
 
 ^sol-wr-10-b
 
@@ -550,7 +550,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > [!success]- Solution
 > **Answer.** A partial derivative with respect to $p^\mu$ holds the other three components fixed. On the mass shell $p^0 = E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$ is a function of $\mathbf p$, so the four components are not independent and "$\partial/\partial p^0$ at fixed $\mathbf p$" moves off the shell. Differentiate first, treating all four as independent, then impose $p^2 = m^2$. Example: $\partial(p^2)/\partial p^\mu = 2p_\mu \ne 0$, although $p^2 = m^2$ is constant on the shell.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|Theorem §C1a.5.10]] (last sentence).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|Theorem §C1a.5.11]] (last sentence).
 
 ^sol-wr-10-c
 
@@ -741,7 +741,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 4** ($x_C$). $x_C$ is future timelike; every $\Lambda \in SO^+(1,3)$ keeps $\operatorname{sgn}x^0$ on timelike vectors, so $-x_C$ (past) is not in the orbit of $x_C$.
 >
-> *Checked against:* [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]], 3, and step 5 of its derivation (the construction $\Lambda_1^{-1}R(\pi)\Lambda_1$); [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]] (the orbits); exact check with sympy.
+> *Checked against:* [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]], 3, and step 5 of its derivation (the construction $\Lambda_1^{-1}R(\pi)\Lambda_1$); [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]] (the orbits); exact check with sympy.
 
 ^sol-wr-13-c
 
@@ -1051,7 +1051,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (count). Symmetric: $10 = 9 + 1$; antisymmetric: $6$. Labels: each slot of $(\frac12, \frac12)\otimes(\frac12, \frac12)$ is a product of two spins $\frac12$, i.e. $1\oplus0$ (Clebsch–Gordan), slot by slot; the $(1, 1)$ is the $9$, $(1, 0)\oplus(0, 1)$ the $6$, $(0, 0)$ the trace.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]] (the decomposition is preserved), [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]] (the labels); the user's Lorentz-representation review (2026-10-14), §8 (Two-index tensors) and §10 (Exam summary).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]] (the decomposition is preserved), [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]] (the labels); the user's Lorentz-representation review (2026-10-14), §8 (Two-index tensors) and §10 (Exam summary).
 
 ^sol-wr-18-a
 
@@ -1156,7 +1156,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > 1. (a) $\varepsilon^{1023} = -1$ (one transposition); $\varepsilon_{3210} = -\varepsilon^{3210} = -1$ (six inversions, then the lowering sign). [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]].
 > 2. (b) $2m_e^2 + 2m_\mu^2$. [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], 1.
 > 3. (c) $[\delta^4(p)] = -4$, $[\partial/\partial p^\mu] = -1$. [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 4.
-> 4. (d) $\Box(x^2)^2 = 24x^2$. [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|Theorem §C1a.5.8]] ($\partial^2\rho^2 = 24\rho$).
+> 4. (d) $\Box(x^2)^2 = 24x^2$. [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]] ($\partial^2\rho^2 = 24\rho$).
 > 5. (e) $y = \frac12\ln\frac{13 + 12}{13 - 12} = \ln5 \approx 1.609$. Problem 2(c) (derived there).
 > 6. (f) $[K_3, J_1] = -[J_1, K_3] = -i\varepsilon_{13k}K_k = -i\varepsilon_{132}K_2 = iK_2$. [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]]; numerical check.
 > 7. (g) The proper non-orthochronous component ($\det = +1$, $\Lambda^0{}_0 = -1$), $\mathcal P\mathcal T\cdot SO^+(1,3)$; no, every exponential lies in $SO^+(1,3)$. [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|Theorem §CB.3.12]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]].

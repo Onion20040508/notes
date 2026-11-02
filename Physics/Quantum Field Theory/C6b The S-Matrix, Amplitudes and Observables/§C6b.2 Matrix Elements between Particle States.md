@@ -19,9 +19,7 @@ $$
 $$
 This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]] (the source switches off; [[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.10]]). In [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (a permanent interaction) it is valid at **lowest order**; beyond it the external particles carry $\sqrt Z$ and the physical mass ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]]; [[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]; the LSZ formula, Lecture 16). The lemmas and Theorem §C6b.2.3 are statements about free fields and free states, exact in any case. Each box states its scope.
 
-*Conventions* ([[Larsen PHY 513]]): $\hat\phi_I^\pm$ the positive- and negative-frequency parts ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]); a contraction with an external particle is written with the same bracket as between fields, $\overbracket{\hat\phi_I(x)|\mathbf k\rangle}$, $\overbracket{\langle\mathbf p|\hat\phi_I(x)}$ (PS (4.94); Yu (7.15), (7.18)); for a complex field $|\mathbf p^+\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$ (particle), $|\mathbf p^-\rangle = \sqrt{2E_{\mathbf p}}\,\hat b^\dagger_{\mathbf p}|0\rangle$ (antiparticle), as Yu (7.133)–(7.134). The vertex integrals give momentum deltas:
-
-![[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3]]
+*Conventions* ([[Larsen PHY 513]]): $\hat\phi_I^\pm$ the positive- and negative-frequency parts ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]]); a contraction with an external particle is written with the same bracket as between fields, $\overbracket{\hat\phi_I(x)|\mathbf k\rangle}$, $\overbracket{\langle\mathbf p|\hat\phi_I(x)}$ (PS (4.94); Yu (7.15), (7.18)); for a complex field $|\mathbf p^+\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$ (particle), $|\mathbf p^-\rangle = \sqrt{2E_{\mathbf p}}\,\hat b^\dagger_{\mathbf p}|0\rangle$ (antiparticle), as Yu (7.133)–(7.134). The vertex integrals give momentum deltas, $\int d^4x\,e^{ip\cdot x} = (2\pi)^4\delta^4(p)$ as tempered distributions ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], listed at the end).
 
 ## External states
 
@@ -570,6 +568,11 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > *Source: Yu §7.1, pp. 262–272; §7.2, pp. 287–288; §10.5.2, p. 474*
 
 ^rem-c6b-2-1
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the vertex integrals give momentum deltas.
 
 > [!remark]- Connections
 > - The contraction of a field with an external particle is the one-particle wave function $\langle0|\hat\phi(x)|\mathbf p\rangle = e^{-ip\cdot x}$; with interactions it carries $\sqrt Z$, the origin of the LSZ factor — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]].

@@ -11,29 +11,11 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 2 §2.3 (fields, the Klein–Gordon equation), Ch. 3 §3.1 and §3.5 (general field law), Ch. 7 (how fields transform) · PHY 513 Lecture 2 (Larsen), Part B; Lecture 3, Part A · Peskin & Schroeder, An Introduction to Quantum Field Theory, §2.1, §3.1 · Yu Zhao-Huan, 量子场论讲义, §1.6.2.*
 
-What is a relativistic field, and how does it transform? Relativity already says how a scalar field's components behave under a change of frame ([[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]) and which wave equation is the simplest invariant one ([[§B4.1 The Klein–Gordon Equation#^thm-b4-1-1|REL Theorem §B4.1.1]]); the Lorentz group and its generators are [[§C1a.4 The Lorentz Group|§C1a.4]]–[[§C1a.6 Infinitesimal Lorentz Transformations and Generators|§C1a.6]]. This section adds the transformation law as an action on whole field configurations (a representation, with its infinitesimal form, for a scalar and for a field with components) and the covariance of the Klein–Gordon equation. The Lagrangian is [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]; the principles that restrict it, locality and relativistic invariance, together with dimensional analysis, are [[§C1b.3 Mass Dimension, Locality and Power Counting|§C1b.3]]. Representations, the general fact behind Theorem §C1b.1.1 and the integration of the spinor representations are mathematics ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings|§CB.3]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.7]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]]), shown in the block below.
+What is a relativistic field, and how does it transform? Relativity already says how a scalar field's components behave under a change of frame ([[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]) and which wave equation is the simplest invariant one ([[§B4.1 The Klein–Gordon Equation#^thm-b4-1-1|REL Theorem §B4.1.1]]); the Lorentz group and its generators are [[§C1a.4 The Lorentz Group|§C1a.4]]–[[§C1a.6 Infinitesimal Lorentz Transformations and Generators|§C1a.6]]. This section adds the transformation law as an action on whole field configurations (a representation, with its infinitesimal form, for a scalar and for a field with components) and the covariance of the Klein–Gordon equation. The Lagrangian is [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]; the principles that restrict it, locality and relativistic invariance, together with dimensional analysis, are [[§C1b.3 Mass Dimension, Locality and Power Counting|§C1b.3]]. Representations, the general fact behind Theorem §C1b.1.1 and the integration of the spinor representations are mathematics, proved in [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings|§CB.3]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.7]] and [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]], linked from each box and listed at the end; which labels give a single-valued field law, and which only one up to sign, is stated for physics in [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]].
 
 **Setup.** Classical fields, before any dynamics. The boxes hold for every configuration of a classical field whose components carry a finite-dimensional representation $D$ of the Lorentz group (a scalar has $D = 1$); no field equation is assumed, except in [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-3|Theorem §C1b.1.3]], which concerns the Klein–Gordon operator of the free real scalar field ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]). Quantum fields transform by conjugation with a unitary operator instead: [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^pr-c3-5-1|Principle §C3.5.1]].
 
 *Conventions* ([[Larsen PHY 513]]): natural units $\hbar = c = 1$; $g = \operatorname{diag}(+,-,-,-)$; $\partial_\mu = \partial/\partial x^\mu = (\partial_t, \nabla)$, $\partial^2 = \partial_\mu\partial^\mu = \partial_t^2 - \nabla^2$; Lorentz transformations act on points as $x \mapsto \Lambda x$, Poincaré transformations as $g\cdot x = \Lambda x + a$ ([[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-4|REL Def. §B1.2.4]]), and $\Lambda = 1 + \omega$ near the identity with $\omega_{\mu\nu} = -\omega_{\nu\mu}$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]]). Relativity B keeps $c$ explicit; here it is set to one.
-
-## The mathematics used here
-
-The transformation law of a general field (Definition §C1b.1.3) asks for a representation of the Lorentz group on the component index, in this sense:
-
-![[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-4]]
-
-Theorem §C1b.1.1 is the case of this general fact for the Poincaré group acting on spacetime, with $D$ on the components; it is proved there directly, in the course's notation:
-
-![[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-23]]
-
-![[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^pf-cb-7-23]]
-
-Theorem §C1b.1.1 assumes that $D$ is a representation; for spinor fields it is one only up to sign, by the integration of the representations $(j_+, j_-)$:
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-10]]
 
 ## Fields
 
@@ -62,7 +44,7 @@ Theorem §C1b.1.1 assumes that $D$ is a representation; for spinor fields it is 
 The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]); the second, the same law solved for the new function, is the one quantum field theory uses, because it says what happens to the function as a whole: it is a map on configurations, $\phi \mapsto \phi'$.
 
 > [!caution] Caution: What "the scalar does not change" does not mean
-> The law is not $\phi(\Lambda x) = \phi(x)$. That equation involves one function and says that $\phi$ takes the same value at $x$ and at $\Lambda x$ for every $\Lambda$, i.e. that $\phi$ is a Lorentz-invariant *function*; a generic configuration is not. The law involves two functions, $\phi$ and $\phi'$, describing one physical field: what is unchanged is the value at a given physical point, not the functional form. (Invariant functions are rare: for the proper orthochronous group they depend only on $x^2$ and, inside and on the light cone, on the sign of $x^0$, as for $\theta(x^0)\theta(x^2)$; the user's notes say "only of functions of $x^2$", which omits that sign. The orbits behind this are [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]]; the invariant distributions of this kind are [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]].)
+> The law is not $\phi(\Lambda x) = \phi(x)$. That equation involves one function and says that $\phi$ takes the same value at $x$ and at $\Lambda x$ for every $\Lambda$, i.e. that $\phi$ is a Lorentz-invariant *function*; a generic configuration is not. The law involves two functions, $\phi$ and $\phi'$, describing one physical field: what is unchanged is the value at a given physical point, not the functional form. (Invariant functions are rare: for the proper orthochronous group they depend only on $x^2$ and, inside and on the light cone, on the sign of $x^0$, as for $\theta(x^0)\theta(x^2)$; the user's notes say "only of functions of $x^2$", which omits that sign. The orbits behind this are [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]]; the invariant distributions of this kind are [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]].)
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Caution "What 'φ does not change' does not mean")*
 
@@ -102,7 +84,7 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 >
 > Without the inverse, $(S(g)\phi)(x) = \phi(gx)$ would compose in the reverse order, $S(g_2)S(g_1) = S(g_1g_2)$.
 >
-> *Model:* any classical field whose components carry a finite-dimensional representation $D$ ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]); *applies:* classical configurations, any dynamics (no field equation is used), exact; for spinor fields $D$ is a representation only up to sign (the lead-in to [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]] above); operator fields: [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^pr-c3-5-1|Principle §C3.5.1]].
+> *Model:* any classical field whose components carry a finite-dimensional representation $D$ ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]); *applies:* classical configurations, any dynamics (no field equation is used), exact; for spinor fields $D$ is a representation only up to sign (single-valued exactly when every piece $(j_+, j_-)$ of $D$ has $j_+ + j_-$ an integer: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]], 3; proof [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]]); operator fields: [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^pr-c3-5-1|Principle §C3.5.1]].
 >
 > *Source: the user's PHY 513 notes, Ch. 7 (Definition "Active and passive", "The inverse is not a typo"; Principle "Components and functions") · standard group-action argument, written out here*
 
@@ -128,8 +110,9 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 > **6. The two forms agree.** Put $x' = gx$ in $\phi'(x') = D\phi(x)$: $\phi'(x') = D\phi(g^{-1}x')$ for every $x'$, which is $T(g)\phi$ with the argument renamed.
 >
 > **What the derivation shows**
+> - The argument is the general fact that a group action on spacetime gives a representation on functions, with $D$ on the values ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-23|Theorem §CB.7.23]]), written out in the course's notation.
 > - Two representations act at once: $D$ on the components at a point (finite-dimensional) and the motion of the argument on the space of functions (infinite-dimensional) → [[§C1b.1 Fields and Their Transformation Laws#^rem-c1b-1-2|Remark: Two representations at once]].
-> - Assumption used: $D$ itself is a representation; for spinors it is one only up to sign ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]]).
+> - Assumption used: $D$ itself is a representation; for spinors it is one only up to sign ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]], 3; [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]]).
 > - Used next: the infinitesimal form ([[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]]); in the quantum theory $T(g)$ is implemented by unitary operators on states, $U^{-1}\hat\phi U = T(g)\hat\phi$ ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^pr-c3-5-1|Principle §C3.5.1]]; for the free field a theorem, [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-5|Theorem §C3.5.5]]).
 
 ^der-c1b-1-1
@@ -160,7 +143,7 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 >
 > **2. The shifted point.** $(g^{-1}x)^\mu = (\Lambda^{-1})^\mu{}_\nu(x^\nu - a^\nu) = x^\mu - a^\mu - \omega^\mu{}_\nu x^\nu + \omega^\mu{}_\nu a^\nu + O(\omega^2)$. The term $\omega^\mu{}_\nu a^\nu$ is a product of two first-order quantities and is dropped (second order). So $g^{-1}x = x + h$ with $h^\mu = -a^\mu - \omega^\mu{}_\nu x^\nu$.
 >
-> **3. Taylor's theorem.** For a $C^2$ field, $\phi_b(x + h) = \phi_b(x) + h^\mu\partial_\mu\phi_b(x) + O(h^2)$ (the expansion in index form: [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]]). With step 2,
+> **3. Taylor's theorem.** For a $C^2$ field, $\phi_b(x + h) = \phi_b(x) + h^\mu\partial_\mu\phi_b(x) + O(h^2)$ (the expansion in index form: [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|Theorem §C1a.5.10]]). With step 2,
 >
 > $$
 > \phi_b(g^{-1}x) = \phi_b(x) - a^\mu\partial_\mu\phi_b(x) - \omega^\mu{}_\nu\,x^\nu\,\partial_\mu\phi_b(x) + O(2) .
@@ -187,7 +170,7 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 
 ^der-c1b-1-2
 
-*Uses:* [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]]
+*Uses:* [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|Theorem §C1a.5.10]]
 
 > [!example] Example §C1b.1.1: The Four-Vector Field
 > A four-vector field $A^\alpha$ transforms with $D = \Lambda$: $A'^\alpha(x) = \Lambda^\alpha{}_\beta A^\beta(\Lambda^{-1}x)$. Its spin generators are the generators of the vector representation,
@@ -205,7 +188,7 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 ^ex-c1b-1-1
 
 > [!remark] Remark: Two representations at once
-> The law $\phi'_a(x) = D(\Lambda)_a{}^b\phi_b(\Lambda^{-1}x)$ combines a finite-dimensional representation $D$, acting on the components at one point (generators $S^{\mu\nu}$), with an infinite-dimensional one, acting on functions by moving the point (generators $x^\mu\partial^\nu - x^\nu\partial^\mu$). For a scalar the first is trivial, every element represented by the number $1$ (in the classification of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3|Def. §CB.17.3]], the representation $(0, 0)$: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-4|Theorem §C3.3.4]]), but the scalar still changes through the second. Under parity a one-component field may still change sign: $D(\mathcal P) = +1$ for a scalar, $-1$ for a pseudoscalar (QFT C9, planned). A Lagrangian density must lie in the trivial representation for the action to be invariant ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]]); "contract all indices" is the rule that extracts that piece.
+> The law $\phi'_a(x) = D(\Lambda)_a{}^b\phi_b(\Lambda^{-1}x)$ combines a finite-dimensional representation $D$, acting on the components at one point (generators $S^{\mu\nu}$), with an infinite-dimensional one, acting on functions by moving the point (generators $x^\mu\partial^\nu - x^\nu\partial^\mu$). For a scalar the first is trivial, every element represented by the number $1$ (in the classification of [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-2|Def. §C3.2.2]], the representation $(0, 0)$: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-4|Theorem §C3.3.4]]), but the scalar still changes through the second. Under parity a one-component field may still change sign: $D(\mathcal P) = +1$ for a scalar, $-1$ for a pseudoscalar (QFT C9, planned). A Lagrangian density must lie in the trivial representation for the action to be invariant ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]]); "contract all indices" is the rule that extracts that piece.
 >
 > *Source: the user's PHY 513 notes, Ch. 7 (Principle "Components and functions: the scalar field carries the trivial representation")*
 
@@ -268,6 +251,18 @@ The simplest invariant wave equation for a scalar field is the Klein–Gordon eq
 > *Source: the user's PHY 513 notes, Ch. 3 §3.1 (Discussion "Are there solutions with compact support?"); (i) and the finite propagation speed are standard (Hörmander I; here [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-13|Theorem §C2b.4.13]], whose propagator vanishes outside the cone)*
 
 ^cau-c1b-1-2
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> The transformation law of a general field (Definition §C1b.1.3) asks for a representation of the Lorentz group on the component index, in this sense:
+> - [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-4|Def. §CB.3.4]] — a representation: a continuous homomorphism $D : G \to GL(W)$, $D(gh) = D(g)D(h)$.
+>
+> Theorem §C1b.1.1 is the case of this general fact for the Poincaré group acting on spacetime, with $D$ on the components; it is proved there directly, in the course's notation:
+> - [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-23|Theorem §CB.7.23]] with [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^pf-cb-7-23|its proof]] — a group action on a set gives a representation $(D(g)f)(x) = S(g)f(g^{-1}x)$ on functions.
+>
+> Theorem §C1b.1.1 assumes that $D$ is a representation; for spinor fields it is one only up to sign, by the integration of the representations $(j_+, j_-)$ (in physics form: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]], 3):
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-10|its derivation]] — $(j_+, j_-)$ integrates to a representation of $SO^+(1,3)$ iff $j_+ + j_-$ is an integer, to $SL(2, \mathbb C)$ always.
 
 > [!remark]- Connections
 > - The scalar law $\phi'(x') = \phi(x)$ is the rank-zero case of Relativity's tensor-field law; field theory reads it as a map on whole configurations, which is what makes it a representation — [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]], [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-1|Theorem §C1b.1.1]].

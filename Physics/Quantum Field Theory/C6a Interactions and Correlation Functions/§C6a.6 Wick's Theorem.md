@@ -15,11 +15,13 @@ For two fields the time-ordered product is the normal-ordered product plus one c
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.5 Normal Ordering and Contractions|§C6a.5]]: $\hat\phi_i \equiv \hat\phi_I(x_i)$, free fields; $D_{ij} \equiv D_F(x_i - x_j)$ where it saves space; a hat over a factor, $\widehat{\hat\phi_k}$, is avoided: "$\prod_{i\ne k}$" or "omit $\hat\phi_k$" is written out.
 
-The pairings and their number, from [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]], are the two pieces of mathematics used:
+The pairings and their number, from [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]], are the two pieces of mathematics used. A **pairing** of a finite set is a partition of it into blocks of exactly two elements ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]); a set of $2k$ fields has
 
-![[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1]]
+$$
+(2k - 1)!! = (2k - 1)(2k - 3)\cdots3\cdot1 = \frac{(2k)!}{2^kk!}
+$$
 
-![[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1]]
+pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]; $3, 15, 105$ for $4, 6, 8$ fields). This count is the number of terms of a free vacuum value, [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]].
 
 ## The lemma
 
@@ -452,6 +454,11 @@ The pairings and their number, from [[§CA.7 Pairings, Diagrams and Symmetry Fac
 > *Source: Yu §6.3.1–§6.3.2, pp. 218–227 · PS §4.3, p. 90 · PHY 513 Lecture 14, slide 9*
 
 ^rem-c6a-6-3
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — the pairings and their number, the two pieces of mathematics used (Theorem §C6a.6.2, its by-product count, Theorem §C6a.6.3, Examples §C6a.6.1–§C6a.6.2).
 
 > [!remark]- Connections
 > - The vacuum value of Wick's theorem has the form of the moment formula of a Gaussian: free fields are Gaussian, with covariance $D_F$, and in the path integral this is literal — [[§CA.7 Pairings, Diagrams and Symmetry Factors#^rem-ca-7-1|§CA.7, ★ Remark: The same sum is the moment formula of a Gaussian]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-4|§C2b.6, Remark: Preview: the propagator as a Gaussian covariance]].

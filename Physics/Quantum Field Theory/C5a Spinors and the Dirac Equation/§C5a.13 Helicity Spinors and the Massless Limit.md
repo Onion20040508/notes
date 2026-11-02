@@ -17,14 +17,6 @@ Which basis of two-spinors makes the spinors simplest, and what happens at $m = 
 
 *Conventions* as in [[§C5a.12 Normalization and Spin Sums|§C5a.12]].
 
-In the massless limit helicity becomes chirality, the eigenvalue of $\gamma^5$, whose eigenspaces are the Weyl halves:
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-4]]
-
 ## Helicity spinors
 
 > [!definition] Definition §C5a.13.1: Helicity of a Dirac Spinor
@@ -204,7 +196,7 @@ In the massless limit helicity becomes chirality, the eigenvalue of $\gamma^5$, 
 ## The massless and high-energy limit
 
 > [!theorem] Theorem §C5a.13.4: The Massless and High-Energy Limit: Helicity Becomes Chirality
-> 1. For $m = 0$: $u_+(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}0\\ \xi_+\end{pmatrix}$, $u_-(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}\xi_-\\ 0\end{pmatrix}$, and $\gamma^5u_\pm = \pm u_\pm$ ($\gamma^5$ of [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]]): positive helicity lives entirely in the right-handed Weyl half $\psi_R$, negative helicity in $\psi_L$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]); helicity $\pm\frac12$ equals chirality $\pm1$ (divided by 2).
+> 1. For $m = 0$: $u_+(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}0\\ \xi_+\end{pmatrix}$, $u_-(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}\xi_-\\ 0\end{pmatrix}$, and $\gamma^5u_\pm = \pm u_\pm$ ($\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$ in the chiral basis, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], 1): positive helicity lives entirely in the right-handed Weyl half $\psi_R$, negative helicity in $\psi_L$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]); helicity $\pm\frac12$ equals chirality $\pm1$ (divided by 2).
 > 2. For $m > 0$, $E_{\mathbf p} \gg m$: the dominant half has amplitude $\sqrt{E + |\mathbf p|} = \sqrt{2E}\,(1 + O(m^2/E^2))$ and the other half $\sqrt{E - |\mathbf p|} = m/\sqrt{E + |\mathbf p|} \approx m/\sqrt{2E}$, so $u_\pm \to \sqrt{2E}\,(0, \xi_+)$, $\sqrt{2E}\,(\xi_-, 0)$ with corrections of relative size $m/2E$.
 > 3. The $v$'s of [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-3|Theorem §C5a.13.3]] at $m = 0$: $v(p, +) = \sqrt{2E}(\xi_-, 0)$, $v(p, -) = \sqrt{2E}(0, \xi_+)$: the column of helicity $-\lambda/2$ sits in the Weyl half of that helicity.
 >
@@ -238,6 +230,13 @@ In the massless limit helicity becomes chirality, the eigenvalue of $\gamma^5$, 
 > *Source: the user's pre-course notes, §5.4 (note "Rest frame, and what ω_λω_{−λ} = m means": "the mass, divided by the energy scale, is the amplitude with which the 'wrong' chirality is populated") · PS §3.3, p. 47*
 
 ^rem-c5a-13-2
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> In the massless limit helicity becomes chirality, the eigenvalue of $\gamma^5$, whose eigenspaces are the Weyl halves:
+> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]] — $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ (Def. §C5a.5.1).
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|Theorem §CB.18.4]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-4|Proof]] — the eigenspaces of $\gamma^5$ are the Weyl halves $(\frac12, 0)$, $(0, \frac12)$ in every basis ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]).
 
 > [!remark]- Connections
 > - The helicity two-spinors are the spin-up and spin-down spinors along $\hat{\mathbf p}$ of [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-5|QM Theorem §B6.1.5]] (Bloch-sphere angles of [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-6|QM Theorem §B6.1.6]]); their phase singularity at the south pole is the one behind Berry's phase ([[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits#^thm-c9-4-8|QM Theorem §C9.4.8]]) and behind the discontinuous $R(\hat{\mathbf p})$ of [[§C3.7★ Massless Particles and Helicity#^def-c3-7-1|Def. §C3.7.1]].

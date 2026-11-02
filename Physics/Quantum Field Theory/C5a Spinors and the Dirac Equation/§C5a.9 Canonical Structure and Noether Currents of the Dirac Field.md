@@ -11,23 +11,11 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "The Dirac energy–momentum tensor is conserved, and the momentum operator", eq. (diracP)), Ch. 9 §9.4 and §9.6 (the current $\bar\psi\gamma^\mu\psi$), Ch. 3 §3.4 ("Other fields"), §3.5 (table of canonical tensors; Derivation "Belinfante: symmetrizing T with the spin current") · PHY 513 Lecture 10 (Larsen), slide 16 (the Hamiltonian density) · PHY 513, Problem Set 5, Problem 4 (as the user wrote it) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.4, pp. 50–51, eqs. (3.73)–(3.76), §3.5, p. 52, eqs. (3.84)–(3.85), p. 58, eq. (3.105) · Yu Zhao-Huan, 量子场论讲义, §1.7.3, eqs. (1.241)–(1.248), §5.3, eq. (5.94), §5.4.3, eqs. (5.219)–(5.222) · the user's pre-course notes, §5.3 · PHY 513, Problem Set 6, Problem 5 (Larsen; the user's solution).*
 
-What do Hamiltonian field theory and Noether's theorem give for the Dirac field? The Lagrangian and its field equations are [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), the single-particle Hamiltonian is [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], the bilinears are [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] and $\gamma^5$ is [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]; the general machinery is [[§C1b.4 Hamiltonian Field Theory|§C1b.4]] (momenta, Legendre transform, brackets) and [[§C1b.5 Noether's Theorem|§C1b.5]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]] ([[P3 Noether's Procedure]]). This section runs that machinery on the Dirac field in the order used for the scalar: the canonical momentum and the Hamiltonian density, the vector and axial currents, the canonical energy–momentum tensor, energy and momentum in field form with the bracket by which $\mathbf P$ generates translations, and the spin current with the symmetric tensor. The quantized field ([[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]) shows these boxes as embeds. The algebra of the Dirac matrices it uses ($\gamma^\mu$, the sixteen products, $\gamma^5$, the spinor generators) is [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.12]] and [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]], shown in the blocks below.
+What do Hamiltonian field theory and Noether's theorem give for the Dirac field? The Lagrangian and its field equations are [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), the single-particle Hamiltonian is [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], the bilinears are [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] and $\gamma^5$ is [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]; the general machinery is [[§C1b.4 Hamiltonian Field Theory|§C1b.4]] (momenta, Legendre transform, brackets) and [[§C1b.5 Noether's Theorem|§C1b.5]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]] ([[P3 Noether's Procedure]]). This section runs that machinery on the Dirac field in the order used for the scalar: the canonical momentum and the Hamiltonian density, the vector and axial currents, the canonical energy–momentum tensor, energy and momentum in field form with the bracket by which $\mathbf P$ generates translations, and the spin current with the symmetric tensor. The quantized field ([[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]) shows these boxes as embeds. The algebra of the Dirac matrices it uses ($\gamma^\mu$, the sixteen products, $\gamma^5$, the spinor generators) is proved in [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.12]] and [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]], linked from each box and listed at the end.
 
 **Setup.** Classical and free: the free Dirac field [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], commuting components, Poisson brackets, no states. Momenta, densities and currents are expressions in the fields, valid off shell; conservation laws and the on-shell forms hold on solutions of the Dirac equation; charges and $P^\nu$ need fields falling off at spatial infinity. All results are exact. Their quantum versions, with anticommuting operators and normal ordering, are [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy|§C5b.3]] and [[§C5b.5 The U(1) Charge, Particles and Antiparticles|§C5b.5]], and two classical statements change there: $H$ unbounded below and $Q \ge 0$ ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]]).
 
 *Conventions* as in [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]]; $\psi$ a classical field with commuting components; $\varepsilon^{0123} = +1$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]); $a\overleftrightarrow{\partial}b \equiv a\,\partial b - (\partial a)\,b$.
-
-## The mathematics used here
-
-The Hamiltonian density is written with the Dirac matrices and the sixteen products:
-
-![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-9]]
 
 ## The canonical momentum and the Hamiltonian density
 
@@ -101,21 +89,11 @@ The Hamiltonian density is written with the Dirac matrices and the sixteen produ
 
 ^der-c5a-9-2
 
-*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]
+*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-2|P1, step 2]]
 
 This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]) as a density sandwiched between fields: there it is a postulated one-particle Hamiltonian acting on a wave function, here a derived density of a classical field whose integral becomes, after quantization, the Hamiltonian of the many-particle theory (rule 2: the layer changes from principle to theorem; the meaning of $\psi$ changes from amplitude to field).
-
-### The mathematics used here: γ⁵
-
-The axial current uses $\gamma^5$ and its properties:
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-15]]
 
 ## Currents
 
@@ -458,12 +436,6 @@ The axial current uses $\gamma^5$ and its properties:
 
 ^rem-c5a-9-1
 
-### The mathematics used here: the spinor generators
-
-The spin current is built from the spinor generators:
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16]]
-
 ## Spin and the symmetric tensor
 
 > [!theorem] Theorem §C5a.9.8: The Spin Current and the Angular Momentum of the Dirac Field
@@ -473,7 +445,7 @@ The spin current is built from the spinor generators:
 > \mathcal S^{\lambda\mu\nu} = \bar\psi\gamma^\lambda S^{\mu\nu}\psi = \tfrac i4\,\bar\psi\gamma^\lambda[\gamma^\mu, \gamma^\nu]\psi ,
 > $$
 >
-> with the Hermitian-convention generators $S^{\mu\nu}$ of [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]] (which are $i$ times the real-convention ones of Theorem §C1b.8.1: [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]); and on solutions the angular momentum $J^i = \frac12\varepsilon_{ijk}J^{jk}$ ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]]) is
+> with the Hermitian-convention generators $S^{\mu\nu}$ of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]] (which are $i$ times the real-convention ones of Theorem §C1b.8.1: [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]); and on solutions the angular momentum $J^i = \frac12\varepsilon_{ijk}J^{jk}$ ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]]) is
 >
 > $$
 > \mathbf J = \int d^3x\,\psi^\dagger\Bigl(\mathbf x\times(-i\nabla) + \tfrac12\boldsymbol\Sigma\Bigr)\psi, \qquad \boldsymbol\Sigma = \begin{pmatrix}\boldsymbol\sigma & 0\\ 0 & \boldsymbol\sigma\end{pmatrix} :
@@ -490,7 +462,7 @@ The spin current is built from the spinor generators:
 > [!derivation]- Derivation
 > **1. The generator in the convention of Theorem §C1b.8.1.** There $D = 1 + \frac12\omega_{\mu\nu}S^{\mu\nu}_{(C1.8)}$, with $S^{\mu\nu}_{(C1.8)}$ the real-convention generators of [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]; for the Dirac field $D = \Lambda_{1/2} = 1 - \frac i2\omega_{\mu\nu}S^{\mu\nu} + O(\omega^2)$. The $\omega_{\mu\nu}$ are arbitrary antisymmetric and both generators antisymmetric, so $S^{\mu\nu}_{(C1.8)} = -iS^{\mu\nu}$ ([[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]).
 >
-> **2. The spin current.** $\mathcal S^{\lambda\mu\nu} = \sum_a\frac{\partial\mathcal L}{\partial(\partial_\lambda\phi_a)}(S^{\mu\nu}_{(C1.8)}\phi)_a$, summed over $\psi$ and $\bar\psi$. The $\bar\psi$ term is zero ($\partial\mathcal L/\partial(\partial_\lambda\bar\psi) = 0$). The $\psi$ term: $i\bar\psi\gamma^\lambda\cdot(-iS^{\mu\nu}\psi) = \bar\psi\gamma^\lambda S^{\mu\nu}\psi$, and $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]]).
+> **2. The spin current.** $\mathcal S^{\lambda\mu\nu} = \sum_a\frac{\partial\mathcal L}{\partial(\partial_\lambda\phi_a)}(S^{\mu\nu}_{(C1.8)}\phi)_a$, summed over $\psi$ and $\bar\psi$. The $\bar\psi$ term is zero ($\partial\mathcal L/\partial(\partial_\lambda\bar\psi) = 0$). The $\psi$ term: $i\bar\psi\gamma^\lambda\cdot(-iS^{\mu\nu}\psi) = \bar\psi\gamma^\lambda S^{\mu\nu}\psi$, and $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]).
 >
 > **3. The spin charges.** $S^{\mu\nu}_{\rm charge} = \int d^3x\,\mathcal S^{0\mu\nu} = \int d^3x\,\bar\psi\gamma^0S^{\mu\nu}\psi = \int d^3x\,\psi^\dagger S^{\mu\nu}\psi$.
 >
@@ -507,7 +479,7 @@ The spin current is built from the spinor generators:
 
 ^der-c5a-9-8
 
-*Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]], [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]
+*Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]], [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]
 
 This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma$, conserved while $\mathbf L$ and $\mathbf S$ are not ([[§C13.2★ The Dirac Equation#^thm-c13-2-4|QM Theorem §C13.2.4]]), now as Noether charges of a field: there it follows from commutators with $H$, here from rotation invariance of the action (rule 2).
 
@@ -577,7 +549,21 @@ This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma
 
 ^der-c5a-9-9
 
-*Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-8|Theorem §C5a.9.8]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8|Def. §CB.12.8]]
+*Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-8|Theorem §C5a.9.8]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8|Def. §CB.12.8]]
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> The Hamiltonian density is written with the Dirac matrices and the sixteen products:
+> - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]] — Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
+> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8|Def. §CB.12.8]] — antisymmetrized products $\gamma^{[\mu_1\cdots\mu_k]}$ (Derivation §C5a.9.9).
+> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]] with [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-9|Derivation]] — the sixteen products are a basis ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]).
+>
+> The axial current uses $\gamma^5$ and its properties:
+> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]] with [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-15|Derivation]] — $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$, $(\gamma^5)^2 = \mathbb 1$, $\gamma^{5\dagger} = \gamma^5$, $\{\gamma^5, \gamma^\mu\} = 0$ (Theorem §C5a.9.4, Example §C5a.9.1).
+>
+> The spin current is built from the spinor generators:
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]] — $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]).
 
 > [!remark]- Connections
 > - Treating $\psi$ and $\bar\psi$ as independent is the complex scalar's device; the first-order Lagrangian pushes the crossover of momenta to its end, $\pi_\psi = i\psi^\dagger$, which is why fermions are quantized by a bracket between $\psi$ and $\psi^\dagger$ alone — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|§C1b.4, Remark: Constraints and first-order Lagrangians]], [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].

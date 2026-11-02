@@ -11,31 +11,11 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation": "One transformation, two representations"; Derivation "The covariance of $\gamma^\mu$: finite transformations"), §8.2 (Weyl spinors: Derivations "How the two halves transform", "The double cover made explicit", "The left-handed Weyl matrices are this covering"), §8.3 (Principle "Invariant tensors with mixed slots"), Ch. 10 §10.3 · PHY 513 Lecture 7 (Larsen), Part B · PHY 513 Lecture 8, Part A (slides "'Transformation' of $\gamma^\mu$", "Interpretation") and Part C · Peskin & Schroeder, §3.2, pp. 42–44, eqs. (3.29), (3.36)–(3.42), §3.5, eqs. (3.108)–(3.110) · Yu Zhao-Huan, 量子场论讲义, Exercise 3.7, eqs. (3.259)–(3.268), §5.1, eqs. (5.17)–(5.31), §5.2, eqs. (5.55)–(5.61), (5.74) · the user's pre-course notes, §5.1, §5.2 (Remark "SL(2,C) made explicit"; Note "Four linear spaces tied to Lorentz transformations") · for the matrices entry by entry: PS §3.3, eqs. (3.48)–(3.49); PHY 513 Lecture 9, Part A; the user's PHY 513 notes, Ch. 9 §9.3; Sakurai §3.2.5, as in QM §C5.2 · PHY 513, Problem Set 6, Problem 4 (Larsen; the user's solutions).*
 
-Which *group* acts on spinor space, and how do the $\gamma$ matrices behave under it? [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]] gave the action of the Lorentz algebra (layer 4) and found two halves, $(\frac12, 0)$ and $(0, \frac12)$, on which [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|Theorem §C3.2.8]] gives $2\times2$ matrices at a complex angle, defined only up to sign on $SO^+(1,3)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]); the rotation case, $SU(2) \to SO(3)$, is [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]] and [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-8|Theorem §CB.10.8]]. This section adds **layer 5**, the group: the Weyl matrices $\Lambda_L$, $\Lambda_R$, the group $SL(2, \mathbb C)$ they form, four-vectors as $2\times2$ Hermitian matrices, the covering map $SL(2, \mathbb C) \to SO^+(1,3)$ with kernel $\pm\mathbb 1$, and the integration of every $(j_+, j_-)$ (the integer ones to $SO^+(1,3)$ itself). On $V$ the group acts by $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$, and the $\gamma$'s acquire their last structure: a Minkowski index, which makes $\gamma^\mu$ an invariant tensor — fixed by a Lorentz transformation, though not by a change of basis of $V$. Three different transformations that act on spinor indices are kept apart at the end. Four-vectors as Hermitian matrices, the covering map and the integration of every $(j_+, j_-)$ are mathematics ([[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover|§CB.16]]–[[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]]), as are $\gamma^\mu$ as an invariant tensor and Clifford multiplication ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]); they are shown in the blocks below where they are used. This section keeps the course's Weyl matrices and their covering property, $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$ and the matrices entry by entry.
+Which *group* acts on spinor space, and how do the $\gamma$ matrices behave under it? [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]] gave the action of the Lorentz algebra (layer 4) and found two halves, $(\frac12, 0)$ and $(0, \frac12)$, on which [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|Theorem §C3.2.8]] gives $2\times2$ matrices at a complex angle, defined only up to sign on $SO^+(1,3)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]); the rotation case, $SU(2) \to SO(3)$, is [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]] and [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-8|Theorem §CB.10.8]]. This section adds **layer 5**, the group: the Weyl matrices $\Lambda_L$, $\Lambda_R$, the group $SL(2, \mathbb C)$ they form, four-vectors as $2\times2$ Hermitian matrices, the covering map $SL(2, \mathbb C) \to SO^+(1,3)$ with kernel $\pm\mathbb 1$, and the integration of every $(j_+, j_-)$ (the integer ones to $SO^+(1,3)$ itself). On $V$ the group acts by $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$, and the $\gamma$'s acquire their last structure: a Minkowski index, which makes $\gamma^\mu$ an invariant tensor — fixed by a Lorentz transformation, though not by a change of basis of $V$. Three different transformations that act on spinor indices are kept apart at the end. This section states the course's Weyl matrices and their covering property, $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$ and the matrices entry by entry. Four-vectors as Hermitian matrices, the covering map and the integration of every $(j_+, j_-)$ are mathematics ([[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover|§CB.16]]–[[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]]), as are $\gamma^\mu$ as an invariant tensor and Clifford multiplication ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]); they are proved there, linked from each box and listed at the end.
 
 **Setup.** As in [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]]: representation facts, no dynamics. The Weyl matrices, the covering and the explicit $4\times4$ matrices are statements about matrices (no *Model* line); the theorems on how spinors transform hold for any Dirac or Weyl spinor, classical field values, c-number spinors and the spinor index of the quantum field alike, exact. The three different operations that act on spinor indices are kept apart in [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^cau-c5a-4-1|Caution: Three different transformations]].
 
 *Conventions* ([[Larsen PHY 513]]): $g = \operatorname{diag}(+,-,-,-)$; active reading; $\Lambda = e^{\omega} = \exp(-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu})$, $(\omega)^\mu{}_\nu = \omega^\mu{}_\nu$; $\theta_i = \frac12\varepsilon_{ijk}\omega_{jk}$ (so $\omega_{ij} = \varepsilon_{ijk}\theta_k$), $\eta_i = \omega_{0i}$; $K_i = \mathcal J^{0i}$, so that $(\frac12, 0)$ is Peskin–Schroeder's $\psi_L$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]]). Pauli matrices with the product rule of [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]]; $\sigma^\mu$, $\bar\sigma^\mu$ of [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]].
-
-## The mathematics used here
-
-The Weyl matrices below lie in this group:
-
-![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2]]
-
-They realize the representations $(\frac12, 0)$ and $(0, \frac12)$ of this definition:
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3]]
-
-Theorem §C5a.4.1 uses that complex conjugation exchanges the two copies and that no finite-dimensional representation is unitary:
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-15]]
 
 ## The Weyl matrices and SL(2, C)
 
@@ -57,11 +37,11 @@ Theorem §C5a.4.1 uses that complex conjugation exchanges the two copies and tha
 
 ^def-c5a-4-2
 
-The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used here because they are not unitary, and $U$ is kept for the unitary operators on states ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|Principle §C3.4.1]]). The handwritten Lecture 7 notes call the two halves $\xi$ and $\eta$; the Lecture 8 slides and Peskin–Schroeder use $\psi_L$, $\psi_R$. That these laws come out of the Dirac matrices is [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]]; here they are taken from the representation theory of §CB.5–§CB.6 and §CB.17 directly.
+The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used here because they are not unitary, and $U$ is kept for the unitary operators on states ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|Principle §C3.4.1]]). The handwritten Lecture 7 notes call the two halves $\xi$ and $\eta$; the Lecture 8 slides and Peskin–Schroeder use $\psi_L$, $\psi_R$. That these laws come out of the Dirac matrices is [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]]; here they are taken directly from the representation theory of [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields|§C3.2]] ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|Theorem §C3.2.8]]; proved in §CB.5–§CB.6 and §CB.17).
 
 > [!theorem] Theorem §C5a.4.1: The Weyl Matrices Lie in SL(2, C)
 > For the Weyl matrices of [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]] and every $\omega$:
-> 1. $\det\Lambda_L(\omega) = \det\Lambda_R(\omega) = 1$, so both lie in $SL(2, \mathbb C)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|Def. §CB.1.2]]);
+> 1. $\det\Lambda_L(\omega) = \det\Lambda_R(\omega) = 1$, so both lie in $SL(2, \mathbb C)$, the group of complex $2\times2$ matrices of determinant $1$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|Def. §CB.1.2]]);
 > 2. $\Lambda_R(\omega) = \bigl(\Lambda_L(\omega)^\dagger\bigr)^{-1}$;
 > 3. $\Lambda_L(\omega)^* = \sigma^2\,\Lambda_R(\omega)\,\sigma^2$;
 > 4. for a rotation ($\boldsymbol\eta = 0$) $\Lambda_L = \Lambda_R \in SU(2)$ ([[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]]); for a pure boost ($\boldsymbol\theta = 0$) $\Lambda_L = e^{-\boldsymbol\eta\cdot\boldsymbol\sigma/2}$ and $\Lambda_R = e^{+\boldsymbol\eta\cdot\boldsymbol\sigma/2}$ are Hermitian and positive, not unitary.
@@ -84,37 +64,11 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 > **What the derivation shows**
 > - Both Weyl representations take values in the same group $SL(2, \mathbb C)$. They differ by the automorphism $\lambda \mapsto (\lambda^\dagger)^{-1}$ of that group, which is the identity on $SU(2)$ (rotations) and inverts the Hermitian part (boosts).
 > - Unit determinant is what will make $\varepsilon$ an invariant (Theorem §C5a.5.3); unitarity fails exactly for boosts.
-> - Used next: the covering map (Theorems §CB.16.4–§CB.16.9) and the Dirac matrices $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]]).
+> - Used next: the covering map ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]]; proved in Theorems §CB.16.4–§CB.16.9) and the Dirac matrices $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]]).
 
 ^der-c5a-4-1
 
 *Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^der-c1a-6-4|Derivation §C1a.6.4]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]]
-
-### The mathematics used here: four-vectors and the covering map
-
-Four-vectors as Hermitian matrices, the topology of $SL(2, \mathbb C)$, and the homomorphism to $SO^+(1,3)$ with kernel $\pm\mathbb 1$, which Theorem §C5a.4.2 computes on the Weyl matrices:
-
-![[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-3]]
-
-![[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-16-3]]
-
-![[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-9]]
-
-![[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^der-cb-10-9]]
-
-![[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-4]]
-
-![[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-16-4]]
-
-![[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-5]]
-
-![[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-16-5]]
-
-Its derivation exponentiates with the binomial argument of the factorization theorem:
-
-![[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-3]]
-
-![[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^der-cb-6-3]]
 
 ## The covering map
 
@@ -160,7 +114,7 @@ Its derivation exponentiates with the binomial argument of the factorization the
 >
 > **4. The right-handed matrices.** $A_R = -\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma$ and $\bar\Phi(x) = x^0\mathbb 1 + \mathbf x\cdot\boldsymbol\sigma$. Then $A_R\bar\Phi + \bar\Phi A_R^\dagger = -\frac i2[\boldsymbol\theta\cdot\boldsymbol\sigma, \bar\Phi] + \frac12\{\boldsymbol\eta\cdot\boldsymbol\sigma, \bar\Phi\} = -\frac i2\cdot2i(\boldsymbol\theta\times\mathbf x)\cdot\boldsymbol\sigma + \frac12\bigl(2x^0\boldsymbol\eta\cdot\boldsymbol\sigma + 2(\boldsymbol\eta\cdot\mathbf x)\mathbb 1\bigr) = (\boldsymbol\eta\cdot\mathbf x)\mathbb 1 + (x^0\boldsymbol\eta + \boldsymbol\theta\times\mathbf x)\cdot\boldsymbol\sigma = \bar\Phi(\omega x)$, the signs of both the rotation and the boost term having flipped relative to step 2 together with the sign of $\mathbf x$ in $\bar\Phi$. Step 3 applies verbatim.
 >
-> **5. Part 2.** Multiply part 1 by $\bar\sigma^\nu$ and take the trace. The right side gives $\operatorname{tr}(\Phi(\Lambda x)\bar\sigma^\nu) = 2(\Lambda x)^\nu = \Lambda^\nu{}_\mu\operatorname{tr}(\Phi(x)\bar\sigma^\mu)$ (Theorem §CB.16.3). The left side, by cyclicity, is $\operatorname{tr}(\Phi(x)\,\Lambda_L^\dagger\bar\sigma^\nu\Lambda_L)$. So $\operatorname{tr}\bigl(X\,(\Lambda_L^\dagger\bar\sigma^\nu\Lambda_L - \Lambda^\nu{}_\mu\bar\sigma^\mu)\bigr) = 0$ for every Hermitian $X$, hence (complex-linearly) for every $X \in M_2(\mathbb C)$, since every matrix is $H_1 + iH_2$ with $H_k$ Hermitian. Taking $X = E_{ji}$ picks out the $(i, j)$ entry of the bracket, so the bracket vanishes. The same with $\Lambda_R$, $\bar\Phi$ and $\operatorname{tr}(\bar X\sigma^\nu) = 2x^\nu$ gives $\Lambda_R^\dagger\sigma^\nu\Lambda_R = \Lambda^\nu{}_\mu\sigma^\mu$.
+> **5. Part 2.** Multiply part 1 by $\bar\sigma^\nu$ and take the trace. The right side gives $\operatorname{tr}(\Phi(\Lambda x)\bar\sigma^\nu) = 2(\Lambda x)^\nu = \Lambda^\nu{}_\mu\operatorname{tr}(\Phi(x)\bar\sigma^\mu)$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]], 1; Theorem §CB.16.3). The left side, by cyclicity, is $\operatorname{tr}(\Phi(x)\,\Lambda_L^\dagger\bar\sigma^\nu\Lambda_L)$. So $\operatorname{tr}\bigl(X\,(\Lambda_L^\dagger\bar\sigma^\nu\Lambda_L - \Lambda^\nu{}_\mu\bar\sigma^\mu)\bigr) = 0$ for every Hermitian $X$, hence (complex-linearly) for every $X \in M_2(\mathbb C)$, since every matrix is $H_1 + iH_2$ with $H_k$ Hermitian. Taking $X = E_{ji}$ picks out the $(i, j)$ entry of the bracket, so the bracket vanishes. The same with $\Lambda_R$, $\bar\Phi$ and $\operatorname{tr}(\bar X\sigma^\nu) = 2x^\nu$ gives $\Lambda_R^\dagger\sigma^\nu\Lambda_R = \Lambda^\nu{}_\mu\sigma^\mu$.
 >
 > **6. Check: rotation about z.** $\boldsymbol\theta = \theta\hat{\mathbf z}$: $\Lambda_L = \operatorname{diag}(e^{-i\theta/2}, e^{i\theta/2})$, and in the matrix of Theorem §CB.16.3 the off-diagonal entry $-x^1 + ix^2$ is multiplied by $e^{-i\theta/2}\cdot\overline{e^{i\theta/2}} = e^{-i\theta}$, which is the active rotation $(x^1, x^2) \mapsto (x^1\cos\theta - x^2\sin\theta, x^1\sin\theta + x^2\cos\theta)$ ([[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]]). Yu's $\lambda(\theta) = \operatorname{diag}(e^{i\theta/2}, e^{-i\theta/2})$ in (3.267) is $\Lambda_L$ at $-\theta$, the passive rotation of (3.268).
 >
@@ -168,35 +122,11 @@ Its derivation exponentiates with the binomial argument of the factorization the
 > - The same six numbers $\omega_{\mu\nu}$ produce $\Lambda_L(\omega)$ and $e^\omega$, and the covering map sends one to the other. The half-angles of $\Lambda_L$ become full angles because $\lambda$ acts on $X$ twice, once from each side.
 > - Part 2 says that $\bar\sigma^\mu$ is an invariant tensor with one vector slot and two spinor slots, as $\gamma^\mu$ will be ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]]); it is why $\psi_L^\dagger\bar\sigma^\mu\psi_L$ is a four-vector (QFT §C5a.8, the Weyl Lagrangian).
 > - $\Lambda_R(\omega) = (\Lambda_L(\omega)^\dagger)^{-1}$ is *not* $\Lambda_L$ of another $\omega$ with the same $\sigma$: it covers $e^\omega$ through $\bar\sigma$. Using $\sigma$ for $\Lambda_R$ would give the parity image of $e^\omega$.
-> - Used next: $\pi$ is onto (Theorem §CB.16.9), and every $(j_+, j_-)$ integrates (Theorem §CB.17.10).
+> - Used next: $\pi$ is onto (Theorem §CB.16.9), and every $(j_+, j_-)$ integrates (Theorem §CB.17.10; the reading for field labels: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]], 3).
 
 ^der-c5a-4-2
 
 *Uses:* [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-3|Theorem §CB.16.3]], [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-4|Theorem §CB.16.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-2|Theorem §C1a.6.2]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^der-cb-6-3|Derivation §CB.6.3]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]]
-
-### The mathematics used here: the double cover
-
-With Theorem §C5a.4.2 the covering is onto: $SL(2, \mathbb C)$ is the double cover of $SO^+(1,3)$, the rotation story one level up:
-
-![[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9]]
-
-![[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-16-9]]
-
-![[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^rem-cb-16-1]]
-
-Theorem §C5a.4.3 says the spinor matrix is a two-valued function of Λ, by the integration of the representations $(j_+, j_-)$:
-
-![[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^def-cb-10-7]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-10]]
-
-The remark "One transformation, two matrices" rests on the inequivalence of the Dirac and vector representations:
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-5]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-5]]
 
 ## The group action on spinor space
 
@@ -207,7 +137,7 @@ The remark "One transformation, two matrices" rests on the inequivalence of the 
 > \Lambda_{1/2}(\omega) = \begin{pmatrix}\Lambda_L(\omega) & 0\\ 0 & \Lambda_R(\omega)\end{pmatrix} = \begin{pmatrix} e^{-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma - \frac12\boldsymbol\eta\cdot\boldsymbol\sigma} & 0\\ 0 & e^{-\frac i2\boldsymbol\theta\cdot\boldsymbol\sigma + \frac12\boldsymbol\eta\cdot\boldsymbol\sigma}\end{pmatrix} .
 > $$
 >
-> 2. $\lambda \mapsto \operatorname{diag}(\lambda, (\lambda^\dagger)^{-1})$ is a representation of $SL(2, \mathbb C)$ with $\Lambda_{1/2}(\omega)$ the image of $\Lambda_L(\omega)$ ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]]); on $SO^+(1,3)$, $\Lambda_{1/2}$ is defined up to sign, a two-valued representation ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^def-cb-10-7|Def. §CB.10.7]]), and a rotation by $2\pi$ gives $-\mathbb 1_4$.
+> 2. $\lambda \mapsto \operatorname{diag}(\lambda, (\lambda^\dagger)^{-1})$ is a representation of $SL(2, \mathbb C)$ with $\Lambda_{1/2}(\omega)$ the image of $\Lambda_L(\omega)$ ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]]); on $SO^+(1,3)$, $\Lambda_{1/2}$ is defined up to sign, a two-valued representation ([[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^def-cb-10-7|Def. §CB.10.7]]; the spinor case of [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]], 3), and a rotation by $2\pi$ gives $-\mathbb 1_4$.
 > 3. Rotation by $\theta$ about $z$: $\Lambda_{1/2} = \operatorname{diag}(e^{-i\theta\sigma^3/2}, e^{-i\theta\sigma^3/2})$. Boost of rapidity $\eta$ along $x$: $\Lambda_{1/2} = \operatorname{diag}(e^{-\eta\sigma^1/2}, e^{+\eta\sigma^1/2})$, $e^{\mp\eta\sigma^1/2} = \cosh\frac\eta2\,\mathbb 1 \mp \sinh\frac\eta2\,\sigma^1$.
 >
 > *Model:* none (a representation fact); *applies:* as in the opening, any Dirac spinor or spinor field, independent of the dynamics.
@@ -250,75 +180,27 @@ The remark "One transformation, two matrices" rests on the inequivalence of the 
 > | rotation by $2\pi$ | $+\mathbb 1$ | $-\mathbb 1$ |
 > | fixed by $\Lambda$? | yes | up to sign: a representation of $SL(2, \mathbb C)$ |
 >
-> Both matrices are $4\times4$ for unrelated reasons: $\Lambda$ because spacetime has four dimensions, $\Lambda_{1/2}$ because the Clifford algebra needs four components (Theorem §CB.12.9). Relations such as $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ hold only for a matched pair built from the same $\omega$ (checked numerically in the user's notes, matched and mismatched). This is why the lecture calls $\psi$ a four-component *column*, not a four-vector. Both matrices written out entry by entry, for rotations about and boosts along any axis: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]] (vector side: [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]); one rotation and one boost side by side, with the generators and the check of $\gamma^\mu$ entry by entry: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]].
+> Both matrices are $4\times4$ for unrelated reasons: $\Lambda$ because spacetime has four dimensions, $\Lambda_{1/2}$ because the Clifford algebra needs four components ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|Theorem §C5a.0.3]]). Relations such as $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ hold only for a matched pair built from the same $\omega$ (checked numerically in the user's notes, matched and mismatched). This is why the lecture calls $\psi$ a four-component *column*, not a four-vector: the two representations are inequivalent ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], with [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|Theorem §C3.2.9]]). Both matrices written out entry by entry, for rotations about and boosts along any axis: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|Theorem §C5a.4.5]] (vector side: [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]]); one rotation and one boost side by side, with the generators and the check of $\gamma^\mu$ entry by entry: [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-1|Example §C5a.4.1]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^ex-c5a-4-2|Example §C5a.4.2]].
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation": "One transformation, two representations"; Derivation "From six numbers to two matrices"; Principle "Transforming as a vector and as a spinor, side by side"; paragraph "Same dimension, different representation")*
 
 ^rem-c5a-4-1
 
-### The mathematics used here: γ^μ as an invariant tensor
-
-The covariance of the Dirac matrices, infinitesimal and finite — the lecture's form is the remark below — and Clifford multiplication as an equivariant map (Remark: Why γ is fixed under a Lorentz transformation):
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-17]]
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-17]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7b]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-18-1]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-8]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-8]]
-
 ## γ^μ carries a vector index
 
 > [!remark] Remark: The lecture's form of the covariance
-> Lecture 8 writes $\Lambda_{1/2}\gamma^\mu\Lambda_{1/2}^{-1} = (\Lambda^{-1})^\mu{}_\nu\gamma^\nu$, the infinitesimal version $(1 - \frac i2\omega S)\gamma^\mu(1 + \frac i2\omega S) = (1 + \frac i2\omega\mathcal J)^\mu{}_\nu\gamma^\nu$, and then $\gamma^\nu = \Lambda^\nu{}_\mu\Lambda_{1/2}\gamma^\mu\Lambda_{1/2}^{-1}$. All three are Theorem §CB.18.7 with $\omega \to -\omega$ ($\Lambda_{1/2}(-\omega) = \Lambda_{1/2}^{-1}$, $e^{-\omega} = \Lambda^{-1}$), and Peskin–Schroeder's infinitesimal form is the same with the opposite sign of $\omega$. The last form carries the slide's message: "$\gamma^\nu$ are just numbers. They do not transform!" — transforming the vector index and both spinor indices at once returns the same matrices. That is what "invariant tensor" means, and why $\gamma^\nu\psi$ transforms as a spinor and a vector at once, $\gamma^\nu\psi \to \Lambda^\nu{}_\mu\Lambda_{1/2}(\gamma^\mu\psi)$.
+> Lecture 8 writes $\Lambda_{1/2}\gamma^\mu\Lambda_{1/2}^{-1} = (\Lambda^{-1})^\mu{}_\nu\gamma^\nu$, the infinitesimal version $(1 - \frac i2\omega S)\gamma^\mu(1 + \frac i2\omega S) = (1 + \frac i2\omega\mathcal J)^\mu{}_\nu\gamma^\nu$, and then $\gamma^\nu = \Lambda^\nu{}_\mu\Lambda_{1/2}\gamma^\mu\Lambda_{1/2}^{-1}$. All three are [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]] with $\omega \to -\omega$ ($\Lambda_{1/2}(-\omega) = \Lambda_{1/2}^{-1}$, $e^{-\omega} = \Lambda^{-1}$), and Peskin–Schroeder's infinitesimal form is the same with the opposite sign of $\omega$. The last form carries the slide's message: "$\gamma^\nu$ are just numbers. They do not transform!" — transforming the vector index and both spinor indices at once returns the same matrices. That is what "invariant tensor" means, and why $\gamma^\nu\psi$ transforms as a spinor and a vector at once, $\gamma^\nu\psi \to \Lambda^\nu{}_\mu\Lambda_{1/2}(\gamma^\mu\psi)$.
 >
 > *Source: PHY 513 Lecture 8, Part A (slides "'Transformation' of $\gamma^\mu$: Derivation", "Interpretation") · PS §3.2, p. 42 · the user's PHY 513 notes, Ch. 8 §8.3 (Principle "Invariant tensors with mixed slots"), §8.1 (Definition "What 'transforms like a spinor' means")*
 
 ^rem-c5a-4-2
 
 > [!remark] Remark: Why γ is fixed under a Lorentz transformation but not under a change of basis
-> $\gamma^\mu$ has three slots: Minkowski, $V$, $V'$. A **Lorentz transformation** acts on all of them at once — $\Lambda$ on the Minkowski slot, $\Lambda_{1/2}$ and $\Lambda_{1/2}^{-1}$ on the spinor slots — and returns the same array (Theorem §CB.18.8, 2): "$\gamma^\nu$ are just numbers. They do not transform!" (Lecture 8). What transforms is $\psi$, and $\partial_\mu$ with it, and the equation keeps its form. A **change of basis of $V$** acts only on the spinor slots, with one $U$ and its inverse; the Minkowski slot is untouched because no basis of spacetime changes. Nothing compensates, so the array changes: $\gamma' = U\gamma U^{-1}$ (Theorem §CB.11.15). In short, the Lorentz group acts on spacetime *and* spinor space and $\gamma$ is invariant under the combined action; $GL(V)$ acts on spinor space alone and $\gamma$ is merely covariant under it.
+> $\gamma^\mu$ has three slots: Minkowski, $V$, $V'$. A **Lorentz transformation** acts on all of them at once — $\Lambda$ on the Minkowski slot, $\Lambda_{1/2}$ and $\Lambda_{1/2}^{-1}$ on the spinor slots — and returns the same array (Theorem §CB.18.8, 2): "$\gamma^\nu$ are just numbers. They do not transform!" (Lecture 8). What transforms is $\psi$, and $\partial_\mu$ with it, and the equation keeps its form. A **change of basis of $V$** acts only on the spinor slots, with one $U$ and its inverse; the Minkowski slot is untouched because no basis of spacetime changes. Nothing compensates, so the array changes: $\gamma' = U\gamma U^{-1}$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], 2). In short, the Lorentz group acts on spacetime *and* spinor space and $\gamma$ is invariant under the combined action; $GL(V)$ acts on spinor space alone and $\gamma$ is merely covariant under it.
 >
 > *Source: PHY 513 Lecture 8, Part A (slide "Interpretation") · the user's PHY 513 notes, Ch. 8 §8.3 · the comparison written here*
 
 ^rem-c5a-4-3
-
-### The mathematics used here: the matrices
-
-Theorems §C5a.4.4–§C5a.4.5 and the two examples use the $2\pi$-rotation test, the Lorentz algebra and the adjoints of the generators:
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-26]]
-
-![[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6]]
-
-![[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6]]
-
-![[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6b]]
-
-![[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6c]]
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-22]]
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-22]]
-
-Theorem §C5a.4.6 reads eigenvalues, which do not depend on the basis:
-
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5]]
-
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-5]]
-
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15]]
-
-![[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-15]]
 
 ## The matrices entry by entry
 
@@ -556,7 +438,7 @@ $$
 >
 > **3. An invariant component is a unit row.** In a basis where the boost has the matrix $\Lambda'$, the component $k$ is invariant for every $\psi'$ iff $\sum_b\Lambda'_{kb}\psi'_b = \psi'_k$ for all $\psi'$; taking $\psi' = e_b$ gives $\Lambda'_{kb} = \delta_{kb}$, i.e. $e_k^{\mathsf T}\Lambda' = e_k^{\mathsf T}$.
 >
-> **4. Independence of the basis (the user's argument).** Let $S$ be the invertible change-of-basis matrix, $\psi' = S\psi$, $\Lambda' = S\Lambda_{1/2}S^{-1}$ (Theorem §CB.0.5; the user takes $S$ unitary and notes that any invertible $S$ works). Multiplying $e_k^{\mathsf T}\Lambda' = e_k^{\mathsf T}$ on the right by $S$:
+> **4. Independence of the basis (the user's argument).** Let $S$ be the invertible change-of-basis matrix, $\psi' = S\psi$, $\Lambda' = S\Lambda_{1/2}S^{-1}$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], 2; the user takes $S$ unitary and notes that any invertible $S$ works). Multiplying $e_k^{\mathsf T}\Lambda' = e_k^{\mathsf T}$ on the right by $S$:
 >
 > $$
 > \bigl(e_k^{\mathsf T}S\bigr)\Lambda_{1/2} = e_k^{\mathsf T}S ,
@@ -592,17 +474,62 @@ $$
 > | acts on | spinor index only | spinor index and argument | operator nature (sandwich) and, through the law, spinor index and argument |
 > | predictions | unchanged (Remark: What depends on the basis, [[§C5a.7 The Dirac Equation and Its Lagrangian\|§C5a.7]]) | those of the moved system | those of the moved system |
 >
-> In the third column the sandwich $U(\Lambda)^{-1}\cdots U(\Lambda)$ acts on the Hilbert-space side of $\hat\psi$, while the single matrix $\Lambda_{1/2}$ acts on its spinor index (Yu (5.61); Peskin–Schroeder's equivalent form $U\hat\psi U^{-1} = \Lambda_{1/2}^{-1}\hat\psi(\Lambda x)$: [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^rem-c5b-4-1|§C5b.4, Remark: Lorentz covariance of the quantized field]]; the two kinds of representation: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]]). The letter $U$ is overloaded: the change-of-basis matrix $U$ is a constant $4\times4$ matrix, $U(\Lambda)$ an infinite-dimensional unitary operator. The operations are compatible: in a new basis the Lorentz law reads $\psi'(x) \mapsto \Lambda'_{1/2}\psi'(\Lambda^{-1}x)$ with $\Lambda'_{1/2} = U\Lambda_{1/2}U^{-1}$ (Theorem §CB.11.15, 2), since $U\Lambda_{1/2}\psi = (U\Lambda_{1/2}U^{-1})(U\psi)$.
+> In the third column the sandwich $U(\Lambda)^{-1}\cdots U(\Lambda)$ acts on the Hilbert-space side of $\hat\psi$, while the single matrix $\Lambda_{1/2}$ acts on its spinor index (Yu (5.61); Peskin–Schroeder's equivalent form $U\hat\psi U^{-1} = \Lambda_{1/2}^{-1}\hat\psi(\Lambda x)$: [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^rem-c5b-4-1|§C5b.4, Remark: Lorentz covariance of the quantized field]]; the two kinds of representation: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]]). The letter $U$ is overloaded: the change-of-basis matrix $U$ is a constant $4\times4$ matrix, $U(\Lambda)$ an infinite-dimensional unitary operator. The operations are compatible: in a new basis the Lorentz law reads $\psi'(x) \mapsto \Lambda'_{1/2}\psi'(\Lambda^{-1}x)$ with $\Lambda'_{1/2} = U\Lambda_{1/2}U^{-1}$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], 2), since $U\Lambda_{1/2}\psi = (U\Lambda_{1/2}U^{-1})(U\psi)$.
 >
 > *Source: Yu §5.2, eqs. (5.55)–(5.61) · the user's pre-course notes, §5.2 (Note "Four linear spaces tied to Lorentz transformations": spinor space with $D(\Lambda)$, Hilbert space with $U(\Lambda)$, "a field carries several of these actions at once") · the user's PHY 513 notes, Ch. 10 §10.3 · PS §3.5, eqs. (3.108)–(3.110) · the table written here*
 
 ^cau-c5a-4-1
 
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> The Weyl matrices below lie in this group:
+> - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-2|Def. §CB.1.2]] — the group $SL(2, \mathbb C)$ (Theorem §C5a.4.1, 1).
+>
+> They realize the representations $(\frac12, 0)$ and $(0, \frac12)$ of this definition:
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3|Def. §CB.17.3]] — the representation $(j_+, j_-)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-2|Def. §C3.2.2]]).
+>
+> Theorem §C5a.4.1 uses that complex conjugation exchanges the two copies and that no finite-dimensional representation is unitary:
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|Theorem §CB.17.14]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14|Derivation]] — conjugation exchanges $(j_+, j_-) \leftrightarrow (j_-, j_+)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-6|Theorem §C3.2.6]], 2).
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-15|Derivation]] — no finite-dimensional representation is unitary ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]]).
+>
+> Four-vectors as Hermitian matrices, the topology of $SL(2, \mathbb C)$, and the homomorphism to $SO^+(1,3)$ with kernel $\pm\mathbb 1$, which Theorem §C5a.4.2 computes on the Weyl matrices:
+> - [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-3|Theorem §CB.16.3]] with [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-16-3|Derivation]] — $x \leftrightarrow X = x_\mu\sigma^\mu$, $\det X = x^2$ (the course's $X$: [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|Theorem §C5a.1.6]]).
+> - [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-9|Theorem §CB.10.9]] with [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^der-cb-10-9|Derivation]] — $SL(2, \mathbb C)$ is connected and simply connected.
+> - [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-4|Theorem §CB.16.4]] with [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-16-4|Derivation]] — $\lambda X\lambda^\dagger$ defines $\pi(\lambda) \in SO^+(1,3)$ (Theorem §C5a.4.2, 1).
+> - [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-5|Theorem §CB.16.5]] with [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-16-5|Derivation]] — the kernel is $\pm\mathbb 1$ (the sign ambiguity of Theorem §C5a.4.3, 2).
+>
+> Its derivation exponentiates with the binomial argument of the factorization theorem:
+> - [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-3|Theorem §CB.6.3]] with [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^der-cb-6-3|Derivation]] — every Lorentz transformation factorizes ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-3|Theorem §C3.2.3]]).
+>
+> With Theorem §C5a.4.2 the covering is onto: $SL(2, \mathbb C)$ is the double cover of $SO^+(1,3)$, the rotation story one level up:
+> - [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9|Theorem §CB.16.9]] with [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^der-cb-16-9|Derivation]] — $SO^+(1,3) \cong SL(2, \mathbb C)/\{\pm\mathbb 1\}$, doubly connected; [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^rem-cb-16-1|§CB.16, Remark: The rotation story, one level up]].
+>
+> Theorem §C5a.4.3 says the spinor matrix is a two-valued function of Λ, by the integration of the representations $(j_+, j_-)$:
+> - [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^def-cb-10-7|Def. §CB.10.7]] — projective (two-valued) representation.
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-10|Derivation]] — integer $j_+ + j_-$ integrate to $SO^+(1,3)$, all to $SL(2, \mathbb C)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]], 3).
+>
+> The remark "One transformation, two matrices" rests on the inequivalence of the Dirac and vector representations:
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-5|Theorem §CB.18.5]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-5|Derivation]] — Casimirs, $2\pi$ sign and rotation content differ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], with [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|Theorem §C3.2.9]]).
+>
+> The covariance of the Dirac matrices, infinitesimal and finite — the lecture's form is the remark below — and Clifford multiplication as an equivariant map (Remark: Why γ is fixed under a Lorentz transformation):
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-17|Theorem §CB.14.17]] with [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-17|Derivation]] — $[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$.
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7b|Derivation (second route: the nested-commutator series)]] — $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ (Remark: The lecture's form of the covariance).
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-18-1|Def. §CB.18.1]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-8|Theorem §CB.18.8]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-8|Derivation]] — Clifford multiplication $(a, \psi) \mapsto \slashed a\psi$ and its Lorentz equivariance: $\gamma^\mu$ is an invariant tensor (Remark: Why γ is fixed under a Lorentz transformation).
+>
+> Theorems §C5a.4.4–§C5a.4.5 and the two examples use the $2\pi$-rotation test, the Lorentz algebra and the adjoints of the generators:
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-26|Def. §CB.14.26]] — spinor and tensor representations ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]).
+> - [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]] with [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6|Derivation (from the group law)]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6b|Derivation (vector representation, Problem Set 4)]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6c|Derivation (J, K form, Problem Set 5)]] — the Lorentz algebra ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]).
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-22|Theorem §CB.14.22]] with [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-22|Derivation]] — rotation generators Hermitian, boost generators anti-Hermitian; rotations unitary, boosts Hermitian positive.
+>
+> Theorem §C5a.4.6 reads eigenvalues, which do not depend on the basis:
+> - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]] with [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-5|Derivation]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15|Theorem §CB.0.15]] with [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-15|Derivation]] — components and matrices under a change of basis; trace, determinant and eigenvalues are basis free ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], 2 and 4).
+
 > [!remark]- Connections
 > - That fields with half-integer $j_+ + j_-$ are two-valued is why their quanta obey Fermi statistics and are quantized with anticommutators — [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]], [[§C5b.9 Spin and Statistics|§C5b.9]].
-> - The complex angles $\boldsymbol\theta \mp i\boldsymbol\eta$ of the factorization in §C3.2 are literally the arguments of $\Lambda_L$ and $\Lambda_R$, and complex conjugation exchanging them is $\Lambda_L^* = \sigma^2\Lambda_R\sigma^2$ — [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-3|Theorem §CB.6.3]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|Theorem §CB.17.14]].
+> - The complex angles $\boldsymbol\theta \mp i\boldsymbol\eta$ of the factorization in §C3.2 are literally the arguments of $\Lambda_L$ and $\Lambda_R$, and complex conjugation exchanging them is $\Lambda_L^* = \sigma^2\Lambda_R\sigma^2$ — [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-3|Theorem §C3.2.3]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-6|Theorem §C3.2.6]].
 > - $\det X = x^2$ makes the Minkowski interval a determinant, exactly as the Euclidean length is $-\det(\mathbf x\cdot\boldsymbol\sigma)$; the light cone becomes the boundary of the cone of positive matrices, which is why null momenta factorize into spinors ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-3|§C5a.5, ★ Remark: Null vectors, spinors and the celestial sphere]]; helicity spinors, QFT §C5a.13) — [[§C3.7★ Massless Particles and Helicity#^def-c3-7-1|Def. §C3.7.1]].
-> - Unitarity is lost with compactness: $SU(2) = S^3$ admits an invariant average and unitary representations, the $\mathbb R^3$ of boosts does not — [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-16|Theorem §CB.7.16]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]].
+> - Unitarity is lost with compactness: $SU(2) = S^3$ admits an invariant average and unitary representations, the $\mathbb R^3$ of boosts does not — [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-16|Theorem §CB.7.16]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]].
 > - $\gamma^\mu$ is an invariant tensor exactly as the Pauli matrices are an invariant vector of $SU(2)$ ($U^\dagger\sigma^iU = R_{ij}\sigma^j$), the relation behind the covering $SU(2) \to SO(3)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]].
 > - Clifford multiplication being Lorentz equivariant is what makes $\slashed{\partial}\psi$ transform like $\psi$, hence the Dirac equation covariant and $\mathcal L$ a scalar; the same "invariant tensor" idea makes the Pauli matrices an invariant vector of $SU(2)$ — [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-1|§C5a.7, Remark: What covariance shows and what it does not]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
 > - Rotations and boosts exponentiate by the same split of a series into even and odd powers, because the axis matrix squares to a multiple of the identity: $(\hat{\mathbf n}\cdot\boldsymbol\sigma)^2 = \mathbb 1$ gives $\cos\frac\theta2$, $\cosh\frac\eta2$ for spinors, $[\hat{\mathbf n}]_\times^2 = -Q$ and $N_{\hat{\mathbf n}}^2 = \Pi$ give $\cos\theta$, $\cosh\eta$ for vectors — [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-6|Theorem §C1a.6.6]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-7|Theorem §C1a.6.7]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]].

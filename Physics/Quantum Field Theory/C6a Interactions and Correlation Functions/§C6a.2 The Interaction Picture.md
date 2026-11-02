@@ -277,9 +277,13 @@ In $\phi^4$ theory the field at the reference time is the free field, but its ti
 
 ^rem-c6a-2-1
 
-The one mathematical fact needed to see what $U(t)$ is not, embedded from [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras|§CB.1]] (part 2):
+The one mathematical fact needed to see what $U(t)$ is not is the second-order Baker–Campbell–Hausdorff formula: for square matrices $X$, $Y$, as $s \to 0$,
 
-![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8]]
+$$
+e^{sX}e^{sY} = \exp\Bigl(s(X + Y) + \frac{s^2}{2}[X, Y] + O(s^3)\Bigr)
+$$
+
+([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8|Theorem §CB.1.8]], 2, proved in [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras|§CB.1]] and listed at the end): exponents add only up to the commutator.
 
 > [!theorem] Theorem §C6a.2.5: U(t) Is Not the Exponential of the Interaction
 > For $\lambda \ne 0$, $[\hat H_0, \hat H_{\text{int}}] \ne 0$, and as $t \to 0$ (on the regularized theory, [[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|§C6a.1, ★ Remark: In what sense φ̂⁴(x) is defined]])
@@ -453,6 +457,11 @@ The one mathematical fact needed to see what $U(t)$ is not, embedded from [[§CB
 > *Source: Yu §6.1, eqs. (6.23)–(6.38) · the user's PHY 513 notes, Ch. 13 §13.6 (paragraph "Correspondence with Yu")*
 
 ^rem-c6a-2-2
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8|Theorem §CB.1.8]] — the one mathematical fact needed to see what $U(t)$ is not (part 2, the second-order Baker–Campbell–Hausdorff term; Theorem §C6a.2.5).
 
 > [!remark]- Connections
 > - The interaction-picture field is the free Heisenberg field reused: every formula of C2b for $\hat\phi$ holds for $\hat\phi_I$, which is what makes perturbation theory computable — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-3|Theorem §C6a.2.3]].

@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 ★ Beyond the course's mathematics: PHY 513 uses the results (Wigner's classification, [[§C3.6★ Particle States and the Little Group|§C3.6★]]–[[§C3.7★ Massless Particles and Helicity|§C3.7★]]) but not the general theory of induced representations (decision SPEC-CB 4).
 
-What is the Poincaré group as a group, and how are all its irreducible unitary representations built from the orbits of momenta and the little groups? The Poincaré group is a semidirect product of translations and Lorentz transformations; its unitary representations restrict on translations to momenta, the Lorentz group moves the momenta along orbits ([[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]]), and a representation of the stabilizer of one momentum — the little group — induces a representation of the whole group. This section states the general construction (Wigner–Mackey) of which the course's induced representation ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-4|Theorem §C3.6.4]]) is the case $\mathbb R^{1,3}\rtimes SL(2, \mathbb C)$, and computes the little groups inside $SL(2, \mathbb C)$. It builds on [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover|§CB.16]] and [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries|§CB.19]] (Bargmann: why genuine representations of the cover suffice).
+What is the Poincaré group as a group, and how are all its irreducible unitary representations built from the orbits of momenta and the little groups? The Poincaré group is a semidirect product of translations and Lorentz transformations; its unitary representations restrict on translations to momenta, the Lorentz group moves the momenta along orbits ([[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]]), and a representation of the stabilizer of one momentum — the little group — induces a representation of the whole group. This section states the general construction (Wigner–Mackey) of which the course's induced representation ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-4|Theorem §C3.6.4]]) is the case $\mathbb R^{1,3}\rtimes SL(2, \mathbb C)$, and computes the little groups inside $SL(2, \mathbb C)$. It builds on [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover|§CB.16]] and [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries|§CB.19]] (Bargmann: why genuine representations of the cover suffice).
 
 ## Semidirect products and the Poincaré group
 
@@ -141,7 +141,7 @@ Orbits and stabilizers, defined in Group Theory; the orbits of $SO^+(1,3)$ on mo
 
 ![[§26 Stabilizers and Fixed Points#^def-26-1]]
 
-![[§C1a.4 The Lorentz Group#^thm-c1a-4-2]]
+![[§C1a.4 The Lorentz Group#^thm-c1a-4-3]]
 
 The orbit theorem is the physical input of this ★ section and stays embedded as a physics box (CB ordering pass, 2026-10-08); everything else below rests on CB and Math.
 

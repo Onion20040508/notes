@@ -97,7 +97,7 @@ $x^\mu = (t, \mathbf x)$, $x_\mu = g_{\mu\nu}x^\nu = (t, -\mathbf x)$, $x^2 = t^
 > [!tip]- Hints: route in the notes
 > - Technique: K2
 > - Names: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-8|§C1a.5, Caution: Names for the d'Alembertian]]; plain sums: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-1|§C1a.5, Caution: A contraction is a plain sum; the signs live in the components]]; deltas: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-3|§C1a.5, Caution: Three deltas that are not the same object]].
-> - Why $\partial_\mu$ carries a lower index: Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Basic Derivative Identities and Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|§C1a.5.10]] Derivatives with Respect to a Four-Vector, part 1.
+> - Why $\partial_\mu$ carries a lower index: Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|§C1a.5.8]] Basic Derivative Identities and Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to a Four-Vector, part 1.
 
 ### [PS] Index bookkeeping: legal terms and matrix products
 Within a term an index appears at most twice, once up and once down; free indices agree on both sides; an index expression is a matrix product when each contraction joins the second index of one factor to the first of the next, see [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-2|§C1a.5, Caution: Index bookkeeping: legal, illegal, and matrix products]]. *Source: the user's notes Ch. 1 §1.4 · PS1.1–1.2*
@@ -232,10 +232,10 @@ For every $\Lambda \in O(1,3)$, $d^4x' = d^4x$ and $d^4p' = d^4p$; integrals of 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - Derivation of Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-1|§C1a.4.1]] Invariant Volume Elements, steps 1–4; invariance of $\theta(p^0)$ on the mass shell: Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] Parity and Time Reversal Permute the Orbits, part 3.
+> - Derivation of Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-1|§C1a.4.1]] Invariant Volume Elements, steps 1–4; invariance of $\theta(p^0)$ on the mass shell: Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits, part 3.
 
 ### [A] The orbits of SO⁺(1,3): timelike, spacelike, null ★★
-The orbits are the future and past sheets $x^2 = m^2$, $\pm x^0 > 0$, the one-sheeted hyperboloids $x^2 = -a^2$, the future and past null cones, and the origin; $x$, $y$ share an orbit iff $x^2 = y^2$ and, for nonzero $x^2 \ge 0$, $\operatorname{sgn}x^0 = \operatorname{sgn}y^0$, see Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|§C1a.4.2]] The Orbits of SO⁺(1,3) on Spacetime. *Source: Lecture 2 (Sep 2), slides "Causal Classification", "Future vs. Past" · the user's notes Ch. 1 §1.3*
+The orbits are the future and past sheets $x^2 = m^2$, $\pm x^0 > 0$, the one-sheeted hyperboloids $x^2 = -a^2$, the future and past null cones, and the origin; $x$, $y$ share an orbit iff $x^2 = y^2$ and, for nonzero $x^2 \ge 0$, $\operatorname{sgn}x^0 = \operatorname{sgn}y^0$, see Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] The Orbits of SO⁺(1,3) on Spacetime. *Source: Lecture 2 (Sep 2), slides "Causal Classification", "Future vs. Past" · the user's notes Ch. 1 §1.3*
 
 ^nd-thm-c1a-4-2
 
@@ -249,11 +249,11 @@ The orbits are the future and past sheets $x^2 = m^2$, $\pm x^0 > 0$, the one-sh
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14, K1
-> - Derivation of Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|§C1a.4.2]] The Orbits of SO⁺(1,3) on Spacetime, steps 1–7; the boost $B(u)$: Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|§CB.3.13]] SO⁺(1,3) Is the Component of the Identity, part 1.
+> - Derivation of Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] The Orbits of SO⁺(1,3) on Spacetime, steps 1–7; the boost $B(u)$: Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|§CB.3.13]] SO⁺(1,3) Is the Component of the Identity, part 1.
 > - The lecture's $\epsilon(x^0)$ is the notes' $\operatorname{sgn}x^0$: [[§C1a.3 Causal Structure and the Causality of a Single Particle#^cau-c1a-3-1|§C1a.3, Caution: sgn x⁰, not ε(x⁰)]].
 
 ### [A] Parity and time reversal permute the orbits ★★
-$\mathcal P$ maps each orbit to itself; $\mathcal T$ and $\mathcal P\mathcal T$ exchange the future and past sheets and cones; so $\operatorname{sgn}x^0$ on timelike and null vectors and $\theta(p^0)$ on the mass shell are invariant under orthochronous transformations, while every spacelike $x$ is carried to $-x$ by some $\Lambda \in SO^+(1,3)$, see Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] Parity and Time Reversal Permute the Orbits. *Source: Lecture 2 (Sep 2), slide "Future vs. Past" · the user's notes Ch. 1 §1.3*
+$\mathcal P$ maps each orbit to itself; $\mathcal T$ and $\mathcal P\mathcal T$ exchange the future and past sheets and cones; so $\operatorname{sgn}x^0$ on timelike and null vectors and $\theta(p^0)$ on the mass shell are invariant under orthochronous transformations, while every spacelike $x$ is carried to $-x$ by some $\Lambda \in SO^+(1,3)$, see Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits. *Source: Lecture 2 (Sep 2), slide "Future vs. Past" · the user's notes Ch. 1 §1.3*
 
 ^nd-thm-c1a-4-3
 
@@ -266,7 +266,7 @@ $\mathcal P$ maps each orbit to itself; $\mathcal T$ and $\mathcal P\mathcal T$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - Derivation of Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] Parity and Time Reversal Permute the Orbits, steps 1–5; the four components as cosets: Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|§CB.3.12]] The Four Components Are the Cosets of SO⁺(1,3); dimension: [[§C1a.4 The Lorentz Group#^cau-c1a-4-4|§C1a.4, Caution: The orbit picture depends on the dimension]].
+> - Derivation of Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits, steps 1–5; the four components as cosets: Theorem [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|§CB.3.12]] The Four Components Are the Cosets of SO⁺(1,3); dimension: [[§C1a.4 The Lorentz Group#^cau-c1a-4-4|§C1a.4, Caution: The orbit picture depends on the dimension]].
 > - Where this returns: microcausality, [[§C1a.4 The Lorentz Group#^rem-c1a-4-2|§C1a.4, Remark: Why the orbits matter in field theory]].
 
 ### [B] The Mandelstam sum rule and the momentum transfer ★
@@ -300,7 +300,7 @@ $g$ is symmetric, nondegenerate and indefinite; $x \mapsto x^\flat = g(x, \cdot)
 > - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|§C1a.5.2]] The Metric Identifies Vectors with Covectors, steps 1–4.
 
 ### [B] Contraction identities of the Levi-Civita symbol ★
-With $\varepsilon^{0123} = +1$: $\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\alpha\beta\gamma\delta} = -\delta^{\alpha\beta\gamma\delta}_{\mu\nu\rho\sigma}$, and successive contractions give $-\delta^{\beta\gamma\delta}_{\nu\rho\sigma}$, $-2(\delta^\gamma_\rho\delta^\delta_\sigma - \delta^\gamma_\sigma\delta^\delta_\rho)$, $-6\delta^\delta_\sigma$, $-24$; in three Euclidean dimensions the same without the minus sign, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|§C1a.5.3]] Contraction Identities of the Levi-Civita Symbol. *Source: the user's notes Ch. 1 §1.5*
+With $\varepsilon^{0123} = +1$: $\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\alpha\beta\gamma\delta} = -\delta^{\alpha\beta\gamma\delta}_{\mu\nu\rho\sigma}$, and successive contractions give $-\delta^{\beta\gamma\delta}_{\nu\rho\sigma}$, $-2(\delta^\gamma_\rho\delta^\delta_\sigma - \delta^\gamma_\sigma\delta^\delta_\rho)$, $-6\delta^\delta_\sigma$, $-24$; in three Euclidean dimensions the same without the minus sign, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|§C1a.5.4]] Contraction Identities of the Levi-Civita Symbol. *Source: the user's notes Ch. 1 §1.5*
 
 ^nd-thm-c1a-5-3
 
@@ -312,10 +312,10 @@ With $\varepsilon^{0123} = +1$: $\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\alp
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|§C1a.5.3]] Contraction Identities of the Levi-Civita Symbol, steps 1–5 (vanishing; permutation signs with $\varepsilon_{0123} = -1$; one contraction gives the factor $n - k + 1$).
+> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|§C1a.5.4]] Contraction Identities of the Levi-Civita Symbol, steps 1–5 (vanishing; permutation signs with $\varepsilon_{0123} = -1$; one contraction gives the factor $n - k + 1$).
 
 ### [B] The Levi-Civita symbol and the determinant ★
-$\varepsilon_{\mu\nu\rho\sigma}A^\mu{}_\alpha A^\nu{}_\beta A^\rho{}_\gamma A^\sigma{}_\delta = (\det A)\varepsilon_{\alpha\beta\gamma\delta}$, the determinant and inverse as $\varepsilon\varepsilon$ contractions, and $\varepsilon_{\mu\nu\rho\sigma}a^\mu b^\nu c^\rho d^\sigma = -\det[a|b|c|d]$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|§C1a.5.4]] The Levi-Civita Symbol and the Determinant. *Source: the user's notes Ch. 1 §1.5*
+$\varepsilon_{\mu\nu\rho\sigma}A^\mu{}_\alpha A^\nu{}_\beta A^\rho{}_\gamma A^\sigma{}_\delta = (\det A)\varepsilon_{\alpha\beta\gamma\delta}$, the determinant and inverse as $\varepsilon\varepsilon$ contractions, and $\varepsilon_{\mu\nu\rho\sigma}a^\mu b^\nu c^\rho d^\sigma = -\det[a|b|c|d]$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|§C1a.5.5]] The Levi-Civita Symbol and the Determinant. *Source: the user's notes Ch. 1 §1.5*
 
 ^nd-thm-c1a-5-4
 
@@ -327,7 +327,7 @@ $\varepsilon_{\mu\nu\rho\sigma}A^\mu{}_\alpha A^\nu{}_\beta A^\rho{}_\gamma A^\s
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|§C1a.5.4]] The Levi-Civita Symbol and the Determinant, steps 1, 2, 4; the identity of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|§C1a.5.3]] Contraction Identities of the Levi-Civita Symbol.
+> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|§C1a.5.5]] The Levi-Civita Symbol and the Determinant, steps 1, 2, 4; the identity of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|§C1a.5.4]] Contraction Identities of the Levi-Civita Symbol.
 
 ### [PS] Momentum conservation kills ε p₁p₂p₃p₄
 For $\sum_i p_i = 0$, $\varepsilon^{\mu\nu\rho\sigma}p_{1\mu}p_{2\nu}p_{3\rho}p_{4\sigma} = 0$, see Example [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-1|§C1a.5.1]] Momentum Conservation Kills ε p₁p₂p₃p₄. *Source: PS1 Problem 3*
@@ -344,7 +344,7 @@ $p' = m_2p_{\rm lab}/E_{\rm cm}$ from $T_{23}$ of $T_{\mu\nu} = \varepsilon_{\mu
 → drilled as [[PHY 513 PS Drill#^ps1-5-d|PS1.5(d)]]
 
 ### [A] Trace, symmetric and antisymmetric parts do not mix ★★
-$T^{\mu\nu}$ splits uniquely into a symmetric traceless part (9), an antisymmetric part (6) and a trace part (1), each mapped into itself by every Lorentz transformation, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|§C1a.5.5]] The Trace, Symmetric and Antisymmetric Parts Do Not Mix. *Source: Lecture 1 (Aug 31), slide "Tensors" ("Irreducible parts of two-tensor representation") · the user's notes Ch. 1 §1.5*
+$T^{\mu\nu}$ splits uniquely into a symmetric traceless part (9), an antisymmetric part (6) and a trace part (1), each mapped into itself by every Lorentz transformation, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|§C1a.5.6]] The Trace, Symmetric and Antisymmetric Parts Do Not Mix. *Source: Lecture 1 (Aug 31), slide "Tensors" ("Irreducible parts of two-tensor representation") · the user's notes Ch. 1 §1.5*
 
 ^nd-thm-c1a-5-5
 
@@ -357,10 +357,10 @@ $T^{\mu\nu}$ splits uniquely into a symmetric traceless part (9), an antisymmetr
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2, K14
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|§C1a.5.5]] The Trace, Symmetric and Antisymmetric Parts Do Not Mix, steps 1–4; [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-4|§C1a.5, Caution: A tensor is not a product of vectors]]; the complex split: Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|§C1a.5.6]] Duality Squares to −1 on Antisymmetric Tensors, part 3.
+> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|§C1a.5.6]] The Trace, Symmetric and Antisymmetric Parts Do Not Mix, steps 1–4; [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-4|§C1a.5, Caution: A tensor is not a product of vectors]]; the complex split: Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Duality Squares to −1 on Antisymmetric Tensors, part 3.
 
 ### [B] Duality squares to −1 on antisymmetric tensors ★
-$(\star A)^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}A_{\rho\sigma}$ satisfies $\star\star = -1$, commutes with proper and anticommutes with improper Lorentz transformations, and over $\mathbb C$ splits the six-dimensional space into the $\pm i$ eigenspaces, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|§C1a.5.6]] Duality Squares to −1 on Antisymmetric Tensors. *Source: the user's notes Ch. 1 §1.5*
+$(\star A)^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}A_{\rho\sigma}$ satisfies $\star\star = -1$, commutes with proper and anticommutes with improper Lorentz transformations, and over $\mathbb C$ splits the six-dimensional space into the $\pm i$ eigenspaces, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Duality Squares to −1 on Antisymmetric Tensors. *Source: the user's notes Ch. 1 §1.5*
 
 ^nd-thm-c1a-5-6
 
@@ -372,10 +372,10 @@ $(\star A)^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}A_{\rho\sigma}$ satis
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|§C1a.5.6]] Duality Squares to −1 on Antisymmetric Tensors, steps 1–6; the identity of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|§C1a.5.3]] Contraction Identities of the Levi-Civita Symbol.
+> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Duality Squares to −1 on Antisymmetric Tensors, steps 1–6; the identity of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|§C1a.5.4]] Contraction Identities of the Levi-Civita Symbol.
 
 ### [A] Basic derivative identities and plane waves ★★
-$\partial_\mu x^\nu = \delta^\nu{}_\mu$, $\partial_\mu x^\mu = 4$, $\partial_\mu(x^2) = 2x_\mu$, and $\partial_\mu e^{-ik\cdot x} = -ik_\mu e^{-ik\cdot x}$, $\partial^2e^{-ik\cdot x} = -k^2e^{-ik\cdot x}$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Basic Derivative Identities. *Source: Lecture 2 (Sep 2), slides "Derivatives" ("Proof that $\partial_\mu$ transforms like $x_\mu$"), "Plane-Wave Solutions to the Klein Gordon Equation"; Lecture 3 (Sep 9), slide "Solutions to the Klein-Gordon Equation" · the user's notes Ch. 2 §2.3*
+$\partial_\mu x^\nu = \delta^\nu{}_\mu$, $\partial_\mu x^\mu = 4$, $\partial_\mu(x^2) = 2x_\mu$, and $\partial_\mu e^{-ik\cdot x} = -ik_\mu e^{-ik\cdot x}$, $\partial^2e^{-ik\cdot x} = -k^2e^{-ik\cdot x}$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|§C1a.5.8]] Basic Derivative Identities. *Source: Lecture 2 (Sep 2), slides "Derivatives" ("Proof that $\partial_\mu$ transforms like $x_\mu$"), "Plane-Wave Solutions to the Klein Gordon Equation"; Lecture 3 (Sep 9), slide "Solutions to the Klein-Gordon Equation" · the user's notes Ch. 2 §2.3*
 
 ^nd-thm-c1a-5-7
 
@@ -387,17 +387,17 @@ $\partial_\mu x^\nu = \delta^\nu{}_\mu$, $\partial_\mu x^\mu = 4$, $\partial_\mu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Basic Derivative Identities, steps 1–3; the Hessian is not the wave operator: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]]; [[§C1b.1 Fields and Their Transformation Laws#^rem-c1b-1-3|§C1b.1, Remark: What the Klein–Gordon equation is, and what it is not]].
+> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|§C1a.5.8]] Basic Derivative Identities, steps 1–3; the Hessian is not the wave operator: [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-7|§C1a.5, Caution: The Hessian is not the wave operator]]; [[§C1b.1 Fields and Their Transformation Laws#^rem-c1b-1-3|§C1b.1, Remark: What the Klein–Gordon equation is, and what it is not]].
 
 ### [PS] The d'Alembertian of a function of x²
-$\partial^2f(\rho) = 8f' + 4\rho f''$ for $\rho = x^2$; $f = c_1/\rho + c_2$ are the harmonic functions of $\rho$ off the cone, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|§C1a.5.8]] The d'Alembertian of a Function of x². *Source: PS1 Problem 6*
+$\partial^2f(\rho) = 8f' + 4\rho f''$ for $\rho = x^2$; $f = c_1/\rho + c_2$ are the harmonic functions of $\rho$ off the cone, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|§C1a.5.9]] The d'Alembertian of a Function of x². *Source: PS1 Problem 6*
 
 ^nd-thm-c1a-5-8
 
 → drilled as [[PHY 513 PS Drill#^ps1-6|PS1.6]] (parts (a)–(f))
 
 ### [B] Taylor expansion in index notation ★
-$f(x + a) = \sum_n\frac1{n!}a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\partial_{\nu_n}f(x) = e^{a\cdot\partial}f(x)$; on a plane wave the series is exact, and $a\cdot\partial = -ia\cdot\hat p$ generates translations, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|§C1a.5.9]] Taylor Expansion in Index Notation. *Source: the user's notes Ch. 2 §2.3*
+$f(x + a) = \sum_n\frac1{n!}a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\partial_{\nu_n}f(x) = e^{a\cdot\partial}f(x)$; on a plane wave the series is exact, and $a\cdot\partial = -ia\cdot\hat p$ generates translations, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|§C1a.5.10]] Taylor Expansion in Index Notation. *Source: the user's notes Ch. 2 §2.3*
 
 ^nd-thm-c1a-5-9
 
@@ -409,10 +409,10 @@ $f(x + a) = \sum_n\frac1{n!}a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\part
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|§C1a.5.9]] Taylor Expansion in Index Notation, steps 1–5; [[§C1a.5 Vectors, Tensors and Index Notation#^rem-c1a-5-4|§C1a.5, Remark: Three expansions, not one]].
+> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|§C1a.5.10]] Taylor Expansion in Index Notation, steps 1–5; [[§C1a.5 Vectors, Tensors and Index Notation#^rem-c1a-5-4|§C1a.5, Remark: Three expansions, not one]].
 
 ### [A] Derivatives with respect to a four-vector ★★
-$\partial/\partial a^\mu$ is a covector; $\partial a^\nu/\partial a^\mu = \delta^\nu{}_\mu$, $\partial a_\nu/\partial a^\mu = g_{\mu\nu}$; $\partial(a_\nu a^\nu)/\partial a^\mu = 2a_\mu$, and for $\mathcal L = \frac12\partial_\nu\phi\,\partial^\nu\phi$, $\partial\mathcal L/\partial(\partial_\mu\phi) = \partial^\mu\phi$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|§C1a.5.10]] Derivatives with Respect to a Four-Vector. *Source: Lecture 3 (Sep 9), slide "Example: the Scalar Field" · the user's notes Ch. 2 §2.3 · **[class exercise, Lecture 3]**: "you double check" the derivative of the kinetic term component by component*
+$\partial/\partial a^\mu$ is a covector; $\partial a^\nu/\partial a^\mu = \delta^\nu{}_\mu$, $\partial a_\nu/\partial a^\mu = g_{\mu\nu}$; $\partial(a_\nu a^\nu)/\partial a^\mu = 2a_\mu$, and for $\mathcal L = \frac12\partial_\nu\phi\,\partial^\nu\phi$, $\partial\mathcal L/\partial(\partial_\mu\phi) = \partial^\mu\phi$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to a Four-Vector. *Source: Lecture 3 (Sep 9), slide "Example: the Scalar Field" · the user's notes Ch. 2 §2.3 · **[class exercise, Lecture 3]**: "you double check" the derivative of the kinetic term component by component*
 
 ^nd-thm-c1a-5-10
 
@@ -424,10 +424,10 @@ $\partial/\partial a^\mu$ is a covector; $\partial a^\nu/\partial a^\mu = \delta
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|§C1a.5.10]] Derivatives with Respect to a Four-Vector, steps 1–4; the hygiene rule [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-3|§C1b.2, Caution: Rename the dummy index before differentiating]] (it contains the component check).
+> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to a Four-Vector, steps 1–4; the hygiene rule [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-3|§C1b.2, Caution: Rename the dummy index before differentiating]] (it contains the component check).
 
 ### [B] Derivatives with respect to tensor components ★
-For independent components, $\partial T^\alpha{}_\beta/\partial T^\mu{}_\nu = \delta^\alpha{}_\mu\delta_\beta{}^\nu$; $\partial(T_{\alpha\beta}T^{\alpha\beta})/\partial T_{\mu\nu} = 2T^{\mu\nu}$; for antisymmetric $F$ either convention gives $\delta(FF) = 2F\,\delta F$; and $\partial(F_{\alpha\beta}F^{\alpha\beta})/\partial(\partial_\mu A_\nu) = 4F^{\mu\nu}$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to Tensor Components. *Source: the user's notes Ch. 2 §2.3 · PS2 Problem 4(a)*
+For independent components, $\partial T^\alpha{}_\beta/\partial T^\mu{}_\nu = \delta^\alpha{}_\mu\delta_\beta{}^\nu$; $\partial(T_{\alpha\beta}T^{\alpha\beta})/\partial T_{\mu\nu} = 2T^{\mu\nu}$; for antisymmetric $F$ either convention gives $\delta(FF) = 2F\,\delta F$; and $\partial(F_{\alpha\beta}F^{\alpha\beta})/\partial(\partial_\mu A_\nu) = 4F^{\mu\nu}$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|§C1a.5.12]] Derivatives with Respect to Tensor Components. *Source: the user's notes Ch. 2 §2.3 · PS2 Problem 4(a)*
 
 ^nd-thm-c1a-5-11
 
@@ -439,7 +439,7 @@ For independent components, $\partial T^\alpha{}_\beta/\partial T^\mu{}_\nu = \d
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to Tensor Components, steps 1–3.
+> - Derivation of Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|§C1a.5.12]] Derivatives with Respect to Tensor Components, steps 1–3.
 
 ### [B] Maxwell's equations in Heaviside–Lorentz form ★
 $\partial_\mu F^{\mu\nu} = J^\nu$ and $\partial_\mu\tilde F^{\mu\nu} = 0$, the latter equivalent to the cyclic Bianchi identity and automatic for $F = dA$; consistency requires $\partial_\nu J^\nu = 0$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Maxwell's Equations in Heaviside–Lorentz Form. *Source: the user's notes Ch. 1 §1.7*
@@ -483,7 +483,7 @@ $F \pm i\tilde F$ are the $\mp i$ eigenvectors of duality, carried by $\mathbf E
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] E ± iB: the Self-Dual Halves of F, steps 1–4; Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|§C1a.5.6]] Duality Squares to −1 on Antisymmetric Tensors.
+> - Derivation of Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] E ± iB: the Self-Dual Halves of F, steps 1–4; Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Duality Squares to −1 on Antisymmetric Tensors.
 
 ### [A] Lecture 1's boost of E_x ★★
 Under the active boost along $z$, $E'_x = F'_{01} = \Lambda_0{}^0\Lambda_1{}^1F_{01} + \Lambda_0{}^3\Lambda_1{}^1F_{31} = \gamma(E_x + vB_y)$; the slide's $\gamma(E_x - vB_y)$ is the passive sign, see Example [[§C1a.7 Relativistic Electrodynamics in Index Form#^ex-c1a-7-1|§C1a.7.1]] The Lecture's Boost Example, Done with the Active Boost and [[§C1a.7 Relativistic Electrodynamics in Index Form#^cau-c1a-7-2|§C1a.7, Caution: The sign of the v × B term]]. *Source: Lecture 1 (Aug 31), slide "Example: Relativistic Electrodynamics" · the user's notes Ch. 1 §1.7*
@@ -589,7 +589,7 @@ The entire response to a disturbance at a point lies at future timelike or null 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^cau-c1a-3-1|§C1a.3, Caution: sgn x⁰, not ε(x⁰)]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-2|§C1a.3, Remark: Causality and time-reversal symmetry]]; orbits Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|§C1a.4.2]] The Orbits of SO⁺(1,3) on Spacetime, Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] Parity and Time Reversal Permute the Orbits; microcausality Principle [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|§C2b.4.1]] Microcausality.
+> - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^cau-c1a-3-1|§C1a.3, Caution: sgn x⁰, not ε(x⁰)]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-2|§C1a.3, Remark: Causality and time-reversal symmetry]]; orbits Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] The Orbits of SO⁺(1,3) on Spacetime, Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits; microcausality Principle [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|§C2b.4.1]] Microcausality.
 
 ### [B] Single-particle propagation amplitude
 $U(t, \mathbf x) = \langle\mathbf x|e^{-i\hat Ht}|\mathbf 0\rangle$ for $\hat H = E(\hat{\mathbf P})$, with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$, $\langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$; causality would need $U = 0$ for $|\mathbf x| > |t|$, see Definition [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|§C1a.3.1]] Single-Particle Propagation Amplitude. *Source: Lecture 2 (Sep 2), slide "Quantum Causality of Free Particle I" · the user's notes Ch. 2 §2.2 · PS §2.1*
@@ -616,7 +616,7 @@ With any number of particles, "one in, one out" happens in two orderings; at spa
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-3|§C1a.3, Remark: How field theory repairs causality]]; Principle [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|§C2b.4.1]] Microcausality, Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|§C2b.4.7]] Forward and Backward Amplitudes; orbits Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] Parity and Time Reversal Permute the Orbits, part 3.
+> - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^rem-c1a-3-3|§C1a.3, Remark: How field theory repairs causality]]; Principle [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|§C2b.4.1]] Microcausality, Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|§C2b.4.7]] Forward and Backward Amplitudes; orbits Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits, part 3.
 
 ## Derivations T2
 
@@ -1012,7 +1012,7 @@ For $\mathcal L = \frac12\partial_\mu\phi\,\partial^\mu\phi - \frac12m^2\phi^2$:
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2
-> - [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-3|§C1b.2, Caution: Rename the dummy index before differentiating]] (the "act of hygiene"); Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|§C1a.5.10]] Derivatives with Respect to a Four-Vector, part 3; Theorem [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|§C1b.2.4]] Euler–Lagrange Equations for Fields.
+> - [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-3|§C1b.2, Caution: Rename the dummy index before differentiating]] (the "act of hygiene"); Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to a Four-Vector, part 3; Theorem [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|§C1b.2.4]] Euler–Lagrange Equations for Fields.
 
 ### [PS] The dilaton's nonlinear field equation
 $\mathcal L = -f^2e^{-2\tau}(\partial\tau)^2$ gives $\partial^2\tau = (\partial\tau)^2$, see Example [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-1|§C1b.2.1]] A Nonlinear Field Equation: the Dilaton. *Source: PS2 Problem 1(b)*
@@ -3226,7 +3226,7 @@ $D(\xi) = 0$ for $\xi^2 < 0$, while inside the cone $D$ does not vanish identica
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14 (equal-time frame, microcausality), K1.
-> - Step 1: derivation steps 1–3 (a Lorentz transformation that reverses $\xi$, Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] Parity and Time Reversal Permute the Orbits part 3); step 4 (conclude); step 5 (inside the cone).
+> - Step 1: derivation steps 1–3 (a Lorentz transformation that reverses $\xi$, Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits part 3); step 4 (conclude); step 5 (inside the cone).
 > - Step 2: the second route (reality of $D_W$) is in the equivalence "Microcausality in three forms" below; [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-2|§C2b.4, Remark: Two orderings that cancel; why antiparticles must exist]].
 
 ### [B] Microcausality as a support statement ★

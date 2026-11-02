@@ -60,9 +60,13 @@ $$
 
 so dividing by $\langle i|i\rangle$ normalizes the evolved state as well.
 
-The box turns the delta functions of this section into numbers. The mathematics, with the lattice of momenta derived from the boundary condition and the box in time:
+The box turns the delta functions of this section into numbers. In a periodic box of volume $\tilde V = L^3$ and a time window $\tilde T$ the momenta lie on the lattice $\frac{2\pi}{L}\mathbb Z^3$, a cell $d^3p$ holds $\tilde V\,d^3p/(2\pi)^3$ of them, and
 
-![[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10]]
+$$
+(2\pi)^4\delta^4(p - p') \leftrightarrow \tilde V\tilde T\,\delta_{pp'} , \qquad (2\pi)^4\delta^4(0) \leftrightarrow \tilde V\tilde T ,
+$$
+
+identities of the box, used only where $\tilde V$ and $\tilde T$ cancel before the box is removed ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]], with the lattice derived from the boundary condition and the box in time; listed at the end; PS §4.4, p. 96: $(2\pi)^4\delta(0) = 2T\cdot V$).
 
 > [!theorem] Theorem §C6b.3.2: The Squared Amplitude in a Box
 > For $f \ne i$, with $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]],
@@ -387,6 +391,11 @@ The box turns the delta functions of this section into numbers. The mathematics,
 > *Source: Yu §6.5.1, eqs. (6.273), (6.284), (6.292), (6.305)*
 
 ^cau-c6b-3-1
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]] — the box turns the delta functions of this section into numbers: the lattice of momenta derived from the boundary condition, the count of states per cell, and the box in time.
 
 > [!remark]- Connections
 > - The box is the regularization of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] and [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]: the same $(2\pi)^3\delta^3(\mathbf 0) = \tilde V$ that made the zero-point energy a volume times a density ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]), and the same $(2\pi)^4\delta^4(0)$ as the vacuum bubbles ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-3|Theorem §C6a.11.3]]).

@@ -15,9 +15,11 @@ The interacting field is the free field conjugated by one unitary, $\hat\phi_H =
 
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.2 The Interaction Picture|§C6a.2]]; $T\{\cdots\}$ is time ordering, braces always; the integrals of this section are over time, $\int_0^tdt'$, and $\hat H_I(t')$ is already integrated over space. Derivatives of operator-valued functions of time are taken on the regularized theory, where every operator is a matrix ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|§C6a.1, ★ Remark: In what sense φ̂⁴(x) is defined]]).
 
-The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat H$, always without reordering them; the rules for the matrix exponential they rest on, from [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras|§CB.1]] (parts 3–5 are used: exponents add only for commuting matrices, the adjoint of an exponential, and its derivative on either side):
+The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat H$, always without reordering them; the rules for the matrix exponential they rest on are parts 3–5 of [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]] (proved in [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras|§CB.1]], listed at the end): exponents add only for commuting matrices, the adjoint of an exponential, and its derivative on either side,
 
-![[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5]]
+$$
+e^{X + Y} = e^Xe^Y \ \text{if } XY = YX, \qquad (e^X)^\dagger = e^{X^\dagger}, \qquad \frac{d}{ds}e^{sX} = Xe^{sX} = e^{sX}X .
+$$
 
 ## Unitarity and the equation of motion
 
@@ -617,6 +619,11 @@ The derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat 
 > *Source: PHY 513 Lecture 13, slide 14, and transcript · the user's PHY 513 notes, Ch. 13 §13.3 (paragraph "Status")*
 
 ^rem-c6a-3-4
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]] — the derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat H$, always without reordering them; parts 3–5 are used: exponents add only for commuting matrices, the adjoint of an exponential, and its derivative on either side.
 
 > [!remark]- Connections
 > - Quantum mechanics has the same Dyson series for any time-dependent Hamiltonian, with a convergence proof for bounded ones, and the same series for a perturbation $V_I(t)$ in its interaction picture; the field theory adds a local, explicitly known generator — [[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]], [[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits#^thm-c9-4-2|QM Theorem §C9.4.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]].

@@ -11,25 +11,11 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 9 §9.1 (Plane waves and an eigenvalue problem), §9.2 (The rest frame), §9.3 (Boosting to a general frame), §9.4 (Principle "Never take the square root of a 2×2 matrix" and its proof; Derivation "Check: u(p) solves the Dirac equation in every frame"), §9.4 (Derivation "Normalization II: ūu", the row ū), §9.5 (Derivation "The v spinors: the four steps again"; Derivation "Normalizations of the v's", the row v̄), §9.6 (paragraph "The Dirac equation, from both sides"), and the paragraph "Correspondence with Yu" · PHY 513 Lecture 9 (Larsen), Parts A, B ("Normalization II", "Completeness for Dirac Spinors") and C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.3, eqs. (3.45)–(3.51), (3.55)–(3.56), (3.58)–(3.62) · Yu Zhao-Huan, 量子场论讲义, §5.4.1–§5.4.2, eqs. (5.118)–(5.157), (5.182)–(5.191), (5.205)–(5.206) · the user's pre-course notes, §5.4 ("General form of the plane-wave solutions"; "Helicity spinors in the Weyl representation"; note "Checking the spin sums") · PHY 513, Problem Set 6, Problem 3(c)–(d) and comments (Larsen; the user's solutions).*
 
-What are the solutions of the free Dirac equation? The equation and its covariance are [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]] and [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]; every solution solves the Klein–Gordon equation component by component ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), so it is built from plane waves on the mass shell, as the scalar field was ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]). This section carries out Lecture 9's four steps up to the boost: a plane-wave ansatz, an eigenvalue problem, the rest frame, and a boost with the spinor matrix $\Lambda_{1/2}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]), written through the rapidity as $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$. The two positive-frequency spinors $u^s(p)$ and the two negative-frequency spinors $v^s(p)$ that this boost produces, and their Dirac conjugates $\bar u^s(p)$, $\bar v^s(p)$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), are [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates|§C5a.11]]; their normalizations and spin sums are [[§C5a.12 Normalization and Spin Sums|§C5a.12]], the helicity basis [[§C5a.13 Helicity Spinors and the Massless Limit|§C5a.13]]; the field built from them is [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]. The mathematics it uses — the Clifford relation, the spinor generators and the rotation content of $(\frac12, 0)\oplus(0, \frac12)$ — is shown in the blocks below ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]).
+What are the solutions of the free Dirac equation? The equation and its covariance are [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]] and [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]; every solution solves the Klein–Gordon equation component by component ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), so it is built from plane waves on the mass shell, as the scalar field was ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]). This section carries out Lecture 9's four steps up to the boost: a plane-wave ansatz, an eigenvalue problem, the rest frame, and a boost with the spinor matrix $\Lambda_{1/2}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]), written through the rapidity as $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$. The two positive-frequency spinors $u^s(p)$ and the two negative-frequency spinors $v^s(p)$ that this boost produces, and their Dirac conjugates $\bar u^s(p)$, $\bar v^s(p)$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), are [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates|§C5a.11]]; their normalizations and spin sums are [[§C5a.12 Normalization and Spin Sums|§C5a.12]], the helicity basis [[§C5a.13 Helicity Spinors and the Massless Limit|§C5a.13]]; the field built from them is [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]. The mathematics it uses — the Clifford relation, the spinor generators and the rotation content of $(\frac12, 0)\oplus(0, \frac12)$ — is proved in [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]] and [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], linked from each box and listed at the end.
 
 **Setup.** Classical, free and on shell: the plane-wave solutions of the free Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), with $p^0 = +E_{\mathbf p}$; $u^s(p)$, $v^s(p)$ are c-number columns, normalized as in [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-4|Def. §C5a.10.4]] ($\bar u^ru^s = 2m\,\delta^{rs}$, $u^{r\dagger}u^s = 2E_{\mathbf p}\delta^{rs}$). Rest-frame statements need $m > 0$; the formulas for $u$, $v$ and their conjugates hold for every $m \ge 0$. The boosts and square roots (Theorems §C5a.10.5–§C5a.10.8) are matrix statements, exact. The quantum field uses these same spinors as its mode functions ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]]).
 
 *Conventions* ([[Larsen PHY 513]]): chiral basis $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]) with $\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]); $p^0 = E_{\mathbf p} = +\sqrt{\mathbf p^2 + m^2}$ always; $\slashed{p} \equiv \gamma^\mu p_\mu$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]); $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$, read actively, the boost to rapidity $\eta$ along $+z$ having $\omega_{03} = -\omega_{30} = \eta$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]). Two-spinors are $\xi$, $\eta^s$ (with an index); the rapidity is $\eta$ (never with an index).
-
-## The mathematics used here
-
-Plane waves turn the Dirac equation into the eigenvalue problem of $\slashed{p}$, whose square is $p^2$ by the Clifford relation; Theorem §C5a.10.2 also uses $\gamma^5$:
-
-![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11]]
-
-![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12]]
-
-![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-11-12]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15]]
-
-![[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-15]]
 
 ## Plane waves and an eigenvalue problem
 
@@ -179,7 +165,7 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 
 ^der-c5a-10-2b
 
-*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]
+*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]
 
 > [!remark] Remark: Two of each kind, and what they will describe
 > Each component of a solution solves the Klein–Gordon equation, which offers eight candidate plane waves per $\mathbf p$ (two exponents times four columns); the Dirac equation keeps four, and splits them evenly, two per exponent ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-3|§C5a.7, Remark: Eight candidates, four solutions]]; Theorem §C5a.10.2). Two positive-frequency solutions are what a spin-$\frac12$ particle needs: its two spin states (the rest frame below makes this explicit). The two negative-frequency solutions cannot be dropped, because a general solution needs both exponents, as for the scalar field ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]); after quantization their coefficients become creation operators of the antiparticle ([[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]).
@@ -187,16 +173,6 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 > *Source: the user's PHY 513 notes, Ch. 8 (Derivation "Eight candidates, four solutions" and paragraph "Negative energy, antiparticles"), Ch. 9 §9.1 · PS §3.3, p. 45*
 
 ^rem-c5a-10-2
-
-### The mathematics used here: spin in the rest frame
-
-Theorem §C5a.10.4 uses the spin matrices built from the spinor generators and the rotation content of $(\frac12, 0)\oplus(0, \frac12)$:
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-9]]
 
 ## The rest frame
 
@@ -236,7 +212,7 @@ Theorem §C5a.10.4 uses the spin matrices built from the spinor generators and t
 *Uses:* [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]
 
 > [!theorem] Theorem §C5a.10.4: In the Rest Frame the Two-Spinor Carries the Spin
-> On Dirac spinors the angular momentum is $J^k = \frac12\varepsilon^{kij}S^{ij} = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ (the spin matrices $S^k$ of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), with the spinor generators $S^{ij}$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]]; chiral form [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]), and a rotation by $\theta$ about $\hat{\mathbf n}$ acts through the spinor matrix ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) as $\Lambda_{1/2} = \operatorname{diag}\bigl(D(\theta, \hat{\mathbf n}), D(\theta, \hat{\mathbf n})\bigr)$, $D = e^{-i\theta\,\hat{\mathbf n}\cdot\boldsymbol\sigma/2}$. Hence
+> On Dirac spinors the angular momentum is $J^k = \frac12\varepsilon^{kij}S^{ij} = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ (the spin matrices $S^k$ of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]), with the spinor generators $S^{ij}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; chiral form [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]), and a rotation by $\theta$ about $\hat{\mathbf n}$ acts through the spinor matrix ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) as $\Lambda_{1/2} = \operatorname{diag}\bigl(D(\theta, \hat{\mathbf n}), D(\theta, \hat{\mathbf n})\bigr)$, $D = e^{-i\theta\,\hat{\mathbf n}\cdot\boldsymbol\sigma/2}$. Hence
 >
 > $$
 > J^k\,u_0(\xi) = u_0\bigl(\tfrac12\sigma^k\xi\bigr), \qquad \Lambda_{1/2}\,u_0(\xi) = u_0\bigl(D\,\xi\bigr),
@@ -493,6 +469,18 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > *Source: the user's PHY 513 notes, Ch. 9 §9.3 ("spinors do 'half' of what four-vectors do"); Ch. 8 §8.1 (paragraph "Why 'half'")*
 
 ^rem-c5a-10-4
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> Plane waves turn the Dirac equation into the eigenvalue problem of $\slashed{p}$, whose square is $p^2$ by the Clifford relation; Theorem §C5a.10.2 also uses $\gamma^5$:
+> - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]] — Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
+> - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]] with [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-11-12|Derivation]] — $\slashed p\slashed p = p^2$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]], 2).
+> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]] with [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-15|Derivation]] — $(\gamma^5)^2 = \mathbb 1$, $\{\gamma^5, \gamma^\mu\} = 0$ (the second derivation of Theorem §C5a.10.2, step 2).
+>
+> Theorem §C5a.10.4 uses the spin matrices built from the spinor generators and the rotation content of $(\frac12, 0)\oplus(0, \frac12)$:
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]] — the spinor generators ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]).
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-9|Derivation]] — rotation content and the $2\pi$ sign of $(j_+, j_-)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]).
 
 > [!remark]- Connections
 > - The four steps are Wigner's construction at the level of wave functions: solve at the standard momentum $k = (m, \mathbf 0)$, transport with the pure boost $L(p)$ — the same $L(p)$ that defines $|p, \sigma\rangle$ in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]], so $\xi^s$ is the spin label $\sigma$ of the particle state and rotations act on it by the spin-$\frac12$ matrix (Theorem §C5a.10.4).

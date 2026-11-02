@@ -15,9 +15,9 @@ The coefficient of a diagram is $1/S$, with $S$ the order of its symmetry group 
 
 *Conventions* ([[Larsen PHY 513]]): a diagram's value includes $-i\lambda\int d^4z$ per vertex and $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]); "$k$ of $N$" means $k$ of the $N = n!\,(4!)^n$ relabellings, i.e. $k$ complete contractions produce the diagram, and $S = N/k$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]]).
 
-The product rule for $S$, proved in CA (its examples there are the vacuum bubbles: [[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]]):
+The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-loops at one vertex, $m!$ for $m$ lines joining the same two points, and the number $|\Gamma|$ of vertex permutations that map the drawing to itself; it is proved in CA ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]]; its examples there are the vacuum bubbles: [[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]]).
 
-![[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9]]
+<!-- PHYSFORM: tool box "The Symmetry Factor as a Product of Line and Vertex Factors" goes here (S2-D #3) -->
 
 > [!remark] Remark: The slides' general rule in this language
 > Slide 17 states the principle: "Reordering of legs = topologically distinct diagram ⇒ S = 1"; "If symmetry ⇒ same diagram then S = order of symmetry." The first sentence is the case $\operatorname{Aut} = 1$: every one of the $n!\,(4!)^n$ relabellings gives a different contraction, and the prefactor cancels completely. The second is [[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]]. The user's notes' "in practice, multiply: a factor 2 for each line that begins and ends at the same vertex; $k!$ for each set of $k$ lines joining the same two vertices; the number of permutations of internal vertices that map the diagram to itself" is [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]], with one clarification: $k$ loops at the same vertex count as a set of $k$ lines joining the same two vertices (figure-eight: $2\cdot2\cdot2!$). With external points held fixed, a vertex joined to an external point cannot be moved, so "more symmetric diagrams have larger $S$; diagrams anchored to many external points have smaller $S$."
@@ -542,6 +542,11 @@ In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $
 > *Source: Yu §7.3, pp. 292–296*
 
 ^rem-c6a-9-3
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^der-ca-7-9|Derivation §CA.7.9]] — the product rule for $S$, proved in CA (its examples there are the vacuum bubbles: [[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]]); used in every example of this section and in the cautions on loops at one vertex and on external edges.
 
 > [!remark]- Connections
 > - $S$ is the order of a stabilizer, and the product rule is the first isomorphism theorem applied to the map that forgets the legs: local symmetries form the kernel, vertex permutations the image — [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]].

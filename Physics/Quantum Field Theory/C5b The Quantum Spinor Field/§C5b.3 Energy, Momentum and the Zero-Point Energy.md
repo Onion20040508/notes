@@ -17,9 +17,7 @@ This is the spinor counterpart of [[§C2a.3 Energy, Momentum and the Zero-Point 
 
 ## The single-particle Hamiltonian and its negative energies
 
-The derivation below uses the Clifford relation of the Dirac matrices, $(\gamma^0)^2 = 1$:
-
-![[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11]]
+The derivation below uses the Clifford relation of the Dirac matrices, $(\gamma^0)^2 = 1$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|Theorem §C5a.1.1]], 1).
 
 > [!theorem] Theorem §C5b.3.1: The Single-Particle Hamiltonian on Plane Waves
 > For the plane-wave solutions of the Dirac equation ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|Theorem §C5a.11.1]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]]) and $H_{\text{s.p.}}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]],
@@ -407,6 +405,12 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 *Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-8|P1, step 8]]
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> The derivation below uses the Clifford relation of the Dirac matrices, $(\gamma^0)^2 = 1$:
+> - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]] — Dirac matrices and the Clifford relation ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
 
 > [!remark]- Connections
 > - The free Dirac Hamiltonian is the second-quantized form of the single-particle Hamiltonian, $\hat H = \int\hat\psi^\dagger H_{\text{s.p.}}\hat\psi$, exactly the one-body operator of nonrelativistic second quantization; what is new is that half of the modes of $H_{\text{s.p.}}$ are written with creation operators in front — [[§C12.2★ Second Quantization#^thm-c12-2-4|QM Theorem §C12.2.4]], [[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-3|§C5b.5, Remark: The Dirac sea, read in the field]].

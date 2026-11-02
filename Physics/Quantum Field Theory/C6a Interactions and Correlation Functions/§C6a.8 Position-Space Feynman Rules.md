@@ -11,43 +11,9 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.4 (Principle "Feynman rules for correlation functions, position space", paragraphs "Reading the first-order tadpole as a process", "Higher orders"), §14.5 (paragraph "Where the 4! goes", Principle "The symmetry factor") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part B, slides 16–17, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 92–94, eq. (4.45); p. 99 · Yu Zhao-Huan, 量子场论讲义, §7.3, eqs. (7.112)–(7.120) (the $S$-matrix setting) · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §1 (Definitions "Slots, legs and the point map", "Pairing"), §3 (Lemma "Invariance of the integral"), §5 (Theorem "Symmetry factor: counting pairings = counting symmetries").*
 
-At first order the 15 contractions collapsed into two diagrams with coefficients $\frac18$ and $\frac12$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]]). This section shows why that happens at every order. Relabelling the vertices and the four legs of each vertex is a group action on the contractions; contractions in one orbit give the same integral; the orbit has $n!\,(4!)^n/S$ elements by orbit–stabilizer, with $S$ the order of the diagram's symmetry group ([[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]]); and the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels everything but $1/S$. The result is a dictionary from diagrams to formulas, the Feynman rules in position space. Yu states the $\phi^4$ vertex rule in §7.3, eq. (7.120), for matrix elements $\langle f|iT|i\rangle$ of the $S$-operator rather than for correlation functions; the line rules there are those of §7.1. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
+At first order the 15 contractions collapsed into two diagrams with coefficients $\frac18$ and $\frac12$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]]). This section shows why that happens at every order. Relabelling the vertices and the four legs of each vertex is a group action on the contractions; contractions in one orbit give the same integral; the orbit has $n!\,(4!)^n/S$ elements by orbit–stabilizer, with $S$ the order of the diagram's symmetry group ([[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]]); and the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels everything but $1/S$. The combinatorics (half-edges, the relabelling group, orbits and stabilizers, the orbit count) is proved in CA, linked in the derivation and listed at the end; what the physics uses is stated in Def. §C6a.8.1 and Theorem §C6a.8.1: a diagram $D$ with $n$ vertices is produced by $n!\,(4!)^n/S(D)$ of the complete contractions, and two contractions give the same diagram exactly when their drawings (multigraphs with the external points labelled) agree ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]]). The result is a dictionary from diagrams to formulas, the Feynman rules in position space. Yu states the $\phi^4$ vertex rule in §7.3, eq. (7.120), for matrix elements $\langle f|iT|i\rangle$ of the $S$-operator rather than for correlation functions; the line rules there are those of §7.1. **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
 
 *Conventions* ([[Larsen PHY 513]]): the numerator of the master formula for external points $E = \{x_1, \dots, x_r\}$ is $\mathcal N_E \equiv \langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\,e^{-i\int_{-T}^Tdt\,\hat H_I(t)}\}|0\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]); identities between such series are identities of formal power series in $\lambda$, each coefficient a (formal) integral; $S$ is the symmetry factor, not the $S$-matrix ([[§C6a.8 Position-Space Feynman Rules#^cau-c6a-8-1|Caution: Three S's]]).
-
-## The mathematics used here
-
-A contraction of the fields at the external points and of the four factors $\hat\phi_I(z_v)$ at each vertex is a pairing of half-edges:
-
-![[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2]]
-
-Relabelling vertices and legs is a group:
-
-![[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3]]
-
-which acts on the contractions:
-
-![[§CA.7 Pairings, Diagrams and Symmetry Factors#^lem-ca-7-3]]
-
-A diagram is an orbit, its automorphisms are the stabilizer, and $S$ is the stabilizer's order:
-
-![[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4]]
-
-The same notions in graph language: two contractions give the same Feynman diagram when their graphs are isomorphic,
-
-![[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-5]]
-
-and the isomorphisms are exactly the relabellings, so diagrams are orbits and graph automorphisms are stabilizers:
-
-![[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-4]]
-
-Orbit–stabilizer counts the contractions of one diagram:
-
-![[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5]]
-
-and a diagram is its drawing:
-
-![[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8]]
 
 ## Symmetry factor and the coefficient of a diagram
 
@@ -380,6 +346,18 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 > *Source: Yu §7.3, pp. 291–292*
 
 ^rem-c6a-8-4
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]] — a contraction of the fields at the external points and of the four factors $\hat\phi_I(z_v)$ at each vertex is a pairing of half-edges.
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]] — relabelling vertices and legs is a group.
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^lem-ca-7-3|Lemma §CA.7.3]] — which acts on the contractions.
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]] — a diagram is an orbit, its automorphisms are the stabilizer, and $S$ is the stabilizer's order.
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-5|Def. §CA.7.5]] — the same notions in graph language: two contractions give the same Feynman diagram when their graphs are isomorphic.
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-4|Theorem §CA.7.4]] — and the isomorphisms are exactly the relabellings, so diagrams are orbits and graph automorphisms are stabilizers.
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]] — orbit–stabilizer counts the contractions of one diagram.
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]] — and a diagram is its drawing.
 
 > [!remark]- Connections
 > - The rules turn a time-ordered expectation value into integrals over spacetime of products of Green's functions of the Klein–Gordon operator, the same structure as the iterated Born series of scattering theory, with $D_F$ for the free Green's function — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation|QM §C10.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]].

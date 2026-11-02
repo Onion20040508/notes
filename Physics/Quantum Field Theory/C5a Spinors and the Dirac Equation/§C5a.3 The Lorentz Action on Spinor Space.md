@@ -11,46 +11,22 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.1–§3.2, pp. 38–43, eqs. (3.17)–(3.30) · PHY 513 Lecture 7 (Larsen), Part B ("Given such $\gamma^\mu$, form a $4\times4$ matrix for each $(\mu\nu)$ pair"; "Finite Lorentz Transformations in Dirac Representation"); Lecture 8, Cheat Sheets I–II and Part A · the user's PHY 513 notes, Ch. 7 §7.4 (the $(j_+, j_-)$ classification), Ch. 8 §8.1 (Definitions "The spinor generators", "The spinor Lorentz transformation $\Lambda_{1/2}$"; Derivations "Proof of the claim", "The generators in the chiral basis", "Hermiticity of the Dirac matrices: Consequence for the generators"; paragraph "Why 'half'"), §8.2 ("How the two halves transform") · PHY 513, Problem Set 4, Problem 5(b)–(c) (as the user wrote them; submitted) · Yu Zhao-Huan, 量子场论讲义, opening of Ch. 5, §5.1, eqs. (5.8)–(5.16), (5.24), §5.2, eqs. (5.76)–(5.79) · the user's pre-course notes, §5.1.*
 
-How does the Lorentz group act on spinor space? Nothing in layers 1–3 ([[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]], [[§C5a.2 The Dirac Form|§C5a.2]]) mentions it: $V$ has bases, the Clifford action $\Gamma^\mu$ and the Dirac form. This section adds **layer 4**, the action of the Lorentz *algebra* ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]): from the $\gamma$'s alone one builds six generators $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$, proves that they obey the Lorentz algebra *because of* the Clifford algebra, exponentiates them to $\Lambda_{1/2}$, and identifies the result with the classification of §CB.17: a **spinor representation** ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]), namely $(\frac12, 0)\oplus(0, \frac12)$. The algebra behind it — the generators of a Clifford module, the Lorentz algebra they obey, their exponentials and adjoints, and the classification of finite-dimensional representations — is mathematics ([[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations|§CB.5]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]]–[[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]), shown in the blocks below; this section keeps the Dirac representation and field law, the generators in the chiral basis, and what they mean physically. The group-level structure ($SL(2, \mathbb C)$, the finite matrices, $\gamma^\mu$ as an invariant tensor) is [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]; the chirality grading that separates the two halves in every basis is [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]].
+How does the Lorentz group act on spinor space? Nothing in layers 1–3 ([[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]], [[§C5a.2 The Dirac Form|§C5a.2]]) mentions it: $V$ has bases, the Clifford action $\Gamma^\mu$ and the Dirac form. This section adds **layer 4**, the action of the Lorentz *algebra* ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]): from the $\gamma$'s alone one builds six generators $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$, proves that they obey the Lorentz algebra *because of* the Clifford algebra, exponentiates them to $\Lambda_{1/2}$, and identifies the result with the classification of §CB.17: a **spinor representation** ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]), namely $(\frac12, 0)\oplus(0, \frac12)$. This section states the Dirac representation and field law, the generators in the chiral basis, and what they mean physically. The algebra behind it — the generators of a Clifford module, the Lorentz algebra they obey, their exponentials and adjoints, and the classification of finite-dimensional representations — is mathematics, proved in [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations|§CB.5]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]] and [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]]–[[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], linked from each box and listed at the end. The group-level structure ($SL(2, \mathbb C)$, the finite matrices, $\gamma^\mu$ as an invariant tensor) is [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]; the chirality grading that separates the two halves in every basis is [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]].
 
 **Setup.** Representation facts, no dynamics: the boxes are about the action of the Lorentz algebra and its exponential on $V$. They hold for any Dirac spinor, whether the value of a classical field (whose law $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$ also moves the argument, [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]), a c-number spinor, or the spinor index of the quantum field $\hat\psi$, on which the same matrix $\Lambda_{1/2}$ acts ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^cau-c5a-4-1|§C5a.4, Caution: Three different transformations]]); all of it is exact and holds for every mass. Matrix computations (the explicit generators) carry no *Model* line.
 
 *Conventions* ([[Larsen PHY 513]]): $g = \operatorname{diag}(+,-,-,-)$; chiral basis; $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ (Hermitian convention, the $D(\mathcal J^{\mu\nu})$ of §C3.2; [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]); $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ with the same $\omega_{\mu\nu}$ as $\Lambda = \exp(-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu})$; $\theta_i = \frac12\varepsilon_{ijk}\omega_{jk}$, $\eta_i = \omega_{0i}$, $K_i = \mathcal J^{0i}$; $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$.
 
-## The mathematics used here
-
-Every field law has six generators obeying the Lorentz algebra; the spinor generators below are generators in this sense, and Theorem §CB.14.18 checks the Lorentz algebra for them:
-
-![[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-1]]
-
-![[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6]]
-
-![[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6]]
-
-![[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6b]]
-
-![[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6c]]
-
-The six matrices built from the Dirac matrices alone (Lecture 7, Part B), the lemma that the $\gamma$'s rotate as a vector (Problem Set 4, Problem 5(b), used again for the covariance of the Dirac equation), and the Lorentz algebra they obey (Problem Set 4, Problem 5(c)):
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16]]
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-17]]
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-17]]
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-18]]
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-18]]
-
-Their exponentials, the matrices of the Dirac representation below:
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-19]]
-
 ## The Dirac representation
 
 > [!definition] Definition §C5a.3.1: The Dirac Representation
-> The **Dirac representation** is the representation of the Lorentz algebra on $\mathbb C^4$ whose generators ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-1|Def. §C3.2.1]]) are $D(\mathcal J^{\mu\nu}) = S^{\mu\nu}$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-18|Theorem §CB.14.18]]). For parameters $\omega_{\mu\nu}$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]),
+> The **Dirac representation** is the representation of the Lorentz algebra on $\mathbb C^4$ whose generators ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-1|Def. §C3.2.1]]) are the **spinor generators** built from the Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]),
+>
+> $$
+> D(\mathcal J^{\mu\nu}) = S^{\mu\nu} \equiv \frac i4\,[\gamma^\mu, \gamma^\nu] = -S^{\nu\mu}
+> $$
+>
+> ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]]), which obey the Lorentz algebra by the Clifford relation alone ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-18|Theorem §CB.14.18]]). For parameters $\omega_{\mu\nu}$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-1|Def. §C1a.6.1]]),
 >
 > $$
 > \Lambda_{1/2}(\omega) = \exp\Bigl(-\frac i2\,\omega_{\mu\nu}S^{\mu\nu}\Bigr), \qquad \psi \to \Lambda_{1/2}\,\psi ,
@@ -58,11 +34,13 @@ Their exponentials, the matrices of the Dirac representation below:
 >
 > ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-19|Def. §CB.14.19]] with $n = 4$), and a **Dirac spinor** is a column $\psi \in \mathbb C^4$ transforming so. A **Dirac field** transforms as $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$ ([[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]).
 >
-> *Source: PS §3.2, eq. (3.30) · PHY 513 Lecture 7, Part B ("Finite Lorentz Transformations in Dirac Representation"), Part C ("Dirac 4-Spinor") · PHY 513 Lecture 8, Cheat Sheet II · the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation $\Lambda_{1/2}$", eq. (Lhalf)) · Yu §5.1, eq. (5.14)*
+> *Source: PS §3.2, eqs. (3.23), (3.30) · PHY 513 Lecture 7, Part B ("Finite Lorentz Transformations in Dirac Representation"), Part C ("Dirac 4-Spinor") · PHY 513 Lecture 8, Cheat Sheet II · the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation $\Lambda_{1/2}$", eq. (Lhalf)) · Yu §5.1, eq. (5.14)*
 
 ^def-c5a-3-1
 
 As a function of the group element $\Lambda = e^\omega$ rather than of $\omega$, $\Lambda_{1/2}$ is fixed only up to sign ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]]). A quantum Dirac field is an operator-valued distribution; the law then holds after smearing, as for every field ([[§C3.3 How Fields Transform under the Lorentz Group#^rem-c3-3-2|§C3.3, Remark: The laws for fields that are distributions]]).
+
+<!-- PHYSFORM: tool box "The Spinor Generators Obey the Lorentz Algebra, and the γ's Transform as a Vector" goes here (S2-C #2) -->
 
 > [!definition] Definition §C5a.3.2: Spin Matrices of the Dirac Representation
 > The **spin matrices** of the Dirac representation ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) are the $4\times4$ matrices
@@ -71,7 +49,7 @@ As a function of the group element $\Lambda = e^\omega$ rather than of $\omega$,
 > S^i \equiv \tfrac12\varepsilon^{ijk}S^{jk}, \qquad i = 1, 2, 3, \qquad \mathbf S = (S^1, S^2, S^3), \qquad \Sigma^i \equiv 2S^i ,
 > $$
 >
-> the rotation generators among the spinor generators $S^{\mu\nu}$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]]; they are the matrices $J_i$ of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]] for this representation, named $\mathbf S$ so that $\hat{\mathbf J}$ stays the Hilbert-space angular momentum, as for the vector field, [[§C4.1 The Vector Field and Its Lorentz Transformation#^def-c4-1-1|Def. §C4.1.1]]). In the chiral basis $\Sigma^i = \operatorname{diag}(\sigma^i, \sigma^i)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]).
+> the rotation generators among the spinor generators $S^{\mu\nu}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; they are the matrices $J_i$ of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]] for this representation, named $\mathbf S$ so that $\hat{\mathbf J}$ stays the Hilbert-space angular momentum, as for the vector field, [[§C4.1 The Vector Field and Its Lorentz Transformation#^def-c4-1-1|Def. §C4.1.1]]). In the chiral basis $\Sigma^i = \operatorname{diag}(\sigma^i, \sigma^i)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]).
 >
 > *Source: PS §3.2, eq. (3.27) and §3.3, p. 45 · the user's PHY 513 notes, Ch. 8 §8.1 (Derivation "The generators in the chiral basis"), Ch. 9 §9.2 · Yu §5.2, eqs. (5.76)–(5.79)*
 
@@ -97,7 +75,7 @@ As a function of the group element $\Lambda = e^\omega$ rather than of $\omega$,
 >
 > **3. Boosts.** Upper block of $S^{0i}$: $\sigma^0\bar\sigma^i - \sigma^i\bar\sigma^0 = -\sigma^i - \sigma^i = -2\sigma^i$, times $\frac i4$: $-\frac i2\sigma^i$. Lower block: $\bar\sigma^0\sigma^i - \bar\sigma^i\sigma^0 = \sigma^i + \sigma^i = 2\sigma^i$, times $\frac i4$: $+\frac i2\sigma^i = -\frac i2(-\sigma^i)$.
 >
-> **4. J and K.** By [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], $J_k = \frac12\varepsilon_{kij}S^{ij} = \frac12\varepsilon_{kij}\cdot\frac12\varepsilon_{ijl}\Sigma^l = \frac14\cdot2\delta_{kl}\Sigma^l = \frac12\Sigma^k$, using $\varepsilon_{kij}\varepsilon_{lij} = 2\delta_{kl}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]) and $\varepsilon_{ijl} = \varepsilon_{lij}$; and $K_i = S^{0i}$.
+> **4. J and K.** By [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], $J_k = \frac12\varepsilon_{kij}S^{ij} = \frac12\varepsilon_{kij}\cdot\frac12\varepsilon_{ijl}\Sigma^l = \frac14\cdot2\delta_{kl}\Sigma^l = \frac12\Sigma^k$, using $\varepsilon_{kij}\varepsilon_{lij} = 2\delta_{kl}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]]) and $\varepsilon_{ijl} = \varepsilon_{lij}$; and $K_i = S^{0i}$.
 >
 > **What the derivation shows**
 > - The rotation generators are spin ½ twice over, $\frac12\boldsymbol\sigma$ in each block; the boost generators are $\mp\frac i2\boldsymbol\sigma$, opposite in the two blocks: exactly the two rows of [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|Theorem §C3.2.8]], stacked.
@@ -105,7 +83,7 @@ As a function of the group element $\Lambda = e^\omega$ rather than of $\omega$,
 
 ^der-c5a-3-1
 
-*Uses:* [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-7|Theorem §C5a.1.7]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]
+*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-7|Theorem §C5a.1.7]], [[§B6.1 Spin One-Half and the Pauli Matrices#^thm-b6-1-4|QM Theorem §B6.1.4]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]]
 
 > [!example] Example §C5a.3.1: The Six Spinor Generators as 4×4 Matrices
 > Write the generators of [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]] entry by entry in the chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]), as the rotation and boost generators $J_k = \frac12\varepsilon_{kij}S^{ij}$, $K_k = S^{0k}$ of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]] (rows and columns are the four components of $\psi = (\psi_L, \psi_R)$).
@@ -130,40 +108,10 @@ As a function of the group element $\Lambda = e^\omega$ rather than of $\omega$,
 
 ^ex-c5a-3-1
 
-### The mathematics used here: the two Weyl halves
-
-The classification of finite-dimensional representations ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]]) provides the spinor/tensor dichotomy and the meaning of the labels:
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-26]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-11]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-11]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-17-3]]
-
-Theorem §C5a.3.2 identifies the two halves by the labels $(j_+, j_-)$ and their irreducibility:
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-5]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-5]]
-
-The same split without a basis: the Dirac module restricted to $SL(2, \mathbb C)$, and $\gamma^5$ commuting with the generators and splitting the module ($K_i = i\gamma^5J_i$):
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-3]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-3]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-4]]
-
 ## The Dirac representation is a spinor representation
 
 > [!theorem] Theorem §C5a.3.2: The Dirac Representation Is (½, 0) ⊕ (0, ½)
-> In the chiral basis $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-1|Def. §C3.2.1]]) are $\mathbf J_+ = \frac12\operatorname{diag}(\boldsymbol\sigma, 0)$, $\mathbf J_- = \frac12\operatorname{diag}(0, \boldsymbol\sigma)$: the upper half is the representation $(\frac12, 0)$, the lower $(0, \frac12)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-2|Def. §C3.2.2]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|Theorem §C3.2.8]]). The Dirac representation is a spinor representation ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]): a rotation by $2\pi$ acts as $-\mathbb 1_4$.
+> In the chiral basis $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-1|Def. §C3.2.1]]) are $\mathbf J_+ = \frac12\operatorname{diag}(\boldsymbol\sigma, 0)$, $\mathbf J_- = \frac12\operatorname{diag}(0, \boldsymbol\sigma)$: the upper half is the representation $(\frac12, 0)$, the lower $(0, \frac12)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-2|Def. §C3.2.2]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-8|Theorem §C3.2.8]]). The Dirac representation is a spinor representation ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]): a rotation by $2\pi$ acts as $-\mathbb 1_4$. Hence it is not the vector representation $(\frac12, \frac12)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-9|Theorem §C3.2.9]]), although both are four-dimensional: the Casimirs $\mathbf J_\pm^2$, the $2\pi$ rotation ($-\mathbb 1$ against $+\mathbb 1$) and the rotation content ($\frac12\oplus\frac12$ against $0\oplus1$) all differ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-5|Theorem §CB.18.5]]).
 >
 > *Model:* none (a representation fact); *applies:* as in the opening, any Dirac spinor or spinor field, independent of the dynamics.
 >
@@ -194,28 +142,12 @@ The same split without a basis: the Dirac module restricted to $SL(2, \mathbb C)
 
 ^rem-c5a-3-1
 
-### The mathematics used here: adjoints
-
-The remark "Spinor boosts are not unitary" rests on the adjoints of the generators in a Hermitian basis, the spin-½ case of the non-unitarity of finite-dimensional Lorentz representations, and what replaces unitarity:
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-22]]
-
-![[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-22]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15]]
-
-![[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-15]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13]]
-
-![[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b]]
-
 ## Why ψ†ψ is not invariant
 
+<!-- PHYSFORM: tool box "Λ½ Is Pseudo-Unitary, γ⁰Λ½†γ⁰ = Λ½⁻¹" goes here (S2-C #3) -->
+
 > [!remark] Remark: Spinor boosts are not unitary
-> By [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-22|Theorem §CB.14.22]], $\Lambda_{1/2}$ is unitary for rotations and Hermitian positive, not unitary, for pure boosts; in the chiral basis this is visible in [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]: $\frac12\Sigma^k$ is Hermitian, $-\frac i2\operatorname{diag}(\sigma^i, -\sigma^i)$ anti-Hermitian. So $\psi^\dagger\psi$ is not invariant under boosts. What replaces unitarity is that $\gamma^0$ turns the adjoint into the inverse, $\Lambda_{1/2}^\dagger = \gamma^0\Lambda_{1/2}^{-1}\gamma^0$, so $\bar\psi = \psi^\dagger\gamma^0$ transforms with $\Lambda_{1/2}^{-1}$: [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]. That is the price of [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]] for spin ½; the lecture: "$\psi$ is not a wavefunction; it is a classical field" (PS p. 41), so non-unitarity is harmless.
+> By [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-22|Theorem §CB.14.22]], $\Lambda_{1/2}$ is unitary for rotations and Hermitian positive, not unitary, for pure boosts; in the chiral basis this is visible in [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]: $\frac12\Sigma^k$ is Hermitian, $-\frac i2\operatorname{diag}(\sigma^i, -\sigma^i)$ anti-Hermitian. So $\psi^\dagger\psi$ is not invariant under boosts. What replaces unitarity is that $\gamma^0$ turns the adjoint into the inverse, $\Lambda_{1/2}^\dagger = \gamma^0\Lambda_{1/2}^{-1}\gamma^0$, so $\bar\psi = \psi^\dagger\gamma^0$ transforms with $\Lambda_{1/2}^{-1}$: [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]. That is the price of [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]] for spin ½; the lecture: "$\psi$ is not a wavefunction; it is a classical field" (PS p. 41), so non-unitarity is harmless.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.1 (Derivation "What replaces unitarity"; Caution "Spinor boosts are not unitary") · PHY 513 Lecture 8, Part B · PS §3.2, p. 41*
 
@@ -231,9 +163,41 @@ The remark "Spinor boosts are not unitary" rests on the adjoints of the generato
 
 ^rem-c5a-3-3
 
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> Every field law has six generators obeying the Lorentz algebra; the spinor generators below are generators in this sense, and Theorem §CB.14.18 checks the Lorentz algebra for them:
+> - [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-1|Def. §CB.5.1]] — generators of a representation ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-1|Def. §C3.2.1]]).
+> - [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]] with [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6|Derivation (from the group law)]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6b|Derivation (vector representation, Problem Set 4)]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^der-cb-5-6c|Derivation (J, K form, Problem Set 5)]] — the Lorentz algebra in every representation ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-1|Theorem §C3.2.1]]).
+>
+> The six matrices built from the Dirac matrices alone (Lecture 7, Part B), the lemma that the $\gamma$'s rotate as a vector (Problem Set 4, Problem 5(b), used again for the covariance of the Dirac equation), and the Lorentz algebra they obey (Problem Set 4, Problem 5(c)):
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]] — the spinor generators $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ (Def. §C5a.3.1).
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-17|Theorem §CB.14.17]] with [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-17|Derivation]] — $[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$: the $\gamma$'s rotate as a vector.
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-18|Theorem §CB.14.18]] with [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-18|Derivation]] — the $S^{\mu\nu}$ obey the Lorentz algebra (Def. §C5a.3.1).
+>
+> Their exponentials, the matrices of the Dirac representation below:
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-19|Def. §CB.14.19]] — $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ for Dirac matrices of any size (Def. §C5a.3.1 with $n = 4$).
+>
+> The classification of finite-dimensional representations ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]]) provides the spinor/tensor dichotomy and the meaning of the labels:
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-26|Def. §CB.14.26]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-11|Theorem §CB.17.11]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-11|Derivation]] — spinor and tensor representations by the sign of the $2\pi$ rotation ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]).
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^rem-cb-17-3|§CB.17, Remark: What the labels (j₊, j₋) mean]] — the physical reading of the labels (§C3.2, Remark: Reading a field's labels).
+>
+> Theorem §C5a.3.2 identifies the two halves by the labels $(j_+, j_-)$ and their irreducibility:
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^def-cb-17-3|Def. §CB.17.3]] — the representation $(j_+, j_-)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^def-c3-2-2|Def. §C3.2.2]]).
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-5|Theorem §CB.17.5]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-5|Derivation]] — irreducible, read off by the Casimirs ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-4|Theorem §C3.2.4]]).
+>
+> The same split without a basis: the Dirac module restricted to $SL(2, \mathbb C)$, and $\gamma^5$ commuting with the generators and splitting the module ($K_i = i\gamma^5J_i$):
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-3|Theorem §CB.18.3]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-3|Proof]] — the Dirac module restricted to $SL(2, \mathbb C)$ is $(\frac12, 0)\oplus(0, \frac12)$ (Theorem §C5a.3.2).
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|Theorem §CB.18.4]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-4|Proof]] — $\gamma^5$ commutes with $S^{\mu\nu}$ and its eigenspaces are the two halves in every basis ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]).
+>
+> The remark "Spinor boosts are not unitary" rests on the adjoints of the generators in a Hermitian basis, the spin-½ case of the non-unitarity of finite-dimensional Lorentz representations, and what replaces unitarity:
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-22|Theorem §CB.14.22]] with [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-22|Derivation]] — $S^{\mu\nu\dagger} = \gamma^0S^{\mu\nu}\gamma^0$; $\Lambda_{1/2}$ unitary for rotations, Hermitian positive for boosts.
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-15|Derivation]] — no nontrivial finite-dimensional Lorentz representation is unitary ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]]).
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b|Derivation (second route)]] — $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$, so $\bar\psi$ transforms with $\Lambda_{1/2}^{-1}$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]).
+
 > [!remark]- Connections
 > - Why the $\gamma$'s generate Lorentz transformations at all — the Clifford algebra is a "square root of the metric", and in every dimension and signature $\frac i4[\gamma, \gamma]$ represents the orthogonal algebra — is mathematics and lives with its proofs in [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]].
-> - The non-unitarity of spinor boosts is the spin-½ instance of the theorem that no nontrivial finite-dimensional Lorentz representation is unitary; $\gamma^0$ restores an invariant form as $g$ does for vectors — [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]].
+> - The non-unitarity of spinor boosts is the spin-½ instance of the theorem that no nontrivial finite-dimensional Lorentz representation is unitary; $\gamma^0$ restores an invariant form as $g$ does for vectors — [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]].
 > - The $-1$ of a $2\pi$ rotation on $\Lambda_{1/2}$ is the sign the spin–statistics theorem ties to anticommutators — [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-4|QM Theorem §C5.2.4]] (the measured sign).
-> - The spinor representation of §CB.14 is defined by one group element, the $2\pi$ rotation; the Dirac representation realizes the smallest parity-symmetric instance, $(\frac12, 0)\oplus(0, \frac12)$, from the $\gamma$'s — [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-26|Def. §CB.14.26]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-10|Theorem §C3.2.10]].
+> - The spinor representation of §CB.14 is defined by one group element, the $2\pi$ rotation; the Dirac representation realizes the smallest parity-symmetric instance, $(\frac12, 0)\oplus(0, \frac12)$, from the $\gamma$'s — [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]] (definition: [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-26|Def. §CB.14.26]]), [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-10|Theorem §C3.2.10]].
 > - The spinor generators are the $D(\mathcal J^{\mu\nu})$ of the Dirac field's transformation law, and the orbital part adds to them in the total angular momentum — [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-3|Theorem §C3.3.3]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-8|Theorem §C5a.9.8]].
