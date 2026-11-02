@@ -38,14 +38,14 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-3|§C3.3.3]] Orbital Plus Spin
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-4|§C3.3.4]] A One-Component Field Carries the Trivial Representation
 - [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-5|§C3.3.5]] Vector Fields, Upper and Lower Index
-- [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|§C3.3.6]] Two-Index Tensor Fields
-- [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|§C3.3.7]] The Field Strength Is (1, 0) ⊕ (0, 1)
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|§C3.4.3]] The Generators Are Hermitian
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-4|§C3.4.4]] Finite Transformations as Exponentials
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] How the Generators Transform
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|§C3.4.6]] The Poincaré Algebra
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|§C3.4.7]] P² Is a Casimir Operator
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|§C3.4.8]] An Invariant Vacuum Has Zero Four-Momentum
+- [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|§C3.3.7]] Two-Index Tensor Fields
+- [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|§C3.3.8]] The Field Strength Is (1, 0) ⊕ (0, 1)
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] The Generators Are Hermitian
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|§C3.4.6]] Finite Transformations as Exponentials
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|§C3.4.7]] How the Generators Transform
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|§C3.4.8]] The Poincaré Algebra
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-9|§C3.4.9]] P² Is a Casimir Operator
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-10|§C3.4.10]] An Invariant Vacuum Has Zero Four-Momentum
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|§C3.5.2]] Translations of a Field; the Heisenberg Equation
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-3|§C3.5.3]] Lorentz Transformations of a Field: Orbital plus Spin
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|§C3.5.4]] The Free Scalar Field Carries a Unitary Representation
@@ -70,4 +70,4 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-8|§C3.7.8]] Little-Group Translations Shift a Polarization Vector by the Momentum
 
 ## Models
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-2|§C3.4.2]] A Relativistic Quantum Theory
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|§C3.4.4]] A Relativistic Quantum Theory

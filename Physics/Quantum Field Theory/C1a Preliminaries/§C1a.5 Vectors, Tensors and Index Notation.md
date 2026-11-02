@@ -179,7 +179,29 @@ every tensor computation below uses it. What field theory adds is the metric, wh
 
 ^cau-c1a-5-4
 
-<!-- PHYSFORM: tool box "The Metric and the Levi-Civita Symbol Are Invariant Tensors" goes here (S2-A #2) -->
+> [!theorem] Theorem §C1a.5.3: The Metric and the Levi-Civita Symbol Are Invariant Tensors
+> For every Lorentz transformation $\Lambda \in O(1,3)$ ([[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]), acting on components by the tensor law (one $\Lambda$ per upper, one $\Lambda^{-1}$ per lower index, [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]):
+> 1. $g$, its inverse and $\delta$ have the same components in every frame,
+>
+> $$
+> g_{\rho\sigma}\Lambda^\rho{}_\mu\Lambda^\sigma{}_\nu = g_{\mu\nu}, \qquad \Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\,g^{\alpha\beta} = g^{\mu\nu}, \qquad \Lambda^\mu{}_\alpha\,\delta^\alpha{}_\beta\,\Lambda_\nu{}^\beta = \delta^\mu{}_\nu ,
+> $$
+>
+> so raising and lowering indices commute with every Lorentz transformation ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|Theorem §C1a.5.2]]).
+> 2. The Levi-Civita symbol ($\varepsilon^{0123} = +1$, [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|Caution: The sign of ε⁰¹²³]]) picks up the determinant,
+>
+> $$
+> \Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\gamma\Lambda^\sigma{}_\delta\,\varepsilon^{\alpha\beta\gamma\delta} = (\det\Lambda)\,\varepsilon^{\mu\nu\rho\sigma} :
+> $$
+>
+> invariant under $SO(1,3)$ (so also under $\mathcal P\mathcal T = -\mathbb 1$), reversed under $\mathcal P$ and under $\mathcal T$ separately: a pseudotensor.
+> 3. *How to use it:* a full contraction of tensors with $g$ and $\delta$ only is a scalar under all of $O(1,3)$; a full contraction of tensors containing one $\varepsilon$ (or any odd number) is a pseudoscalar: invariant under $SO(1,3)$, odd under $\mathcal P$ and under $\mathcal T$. For example $F_{\mu\nu}F^{\mu\nu}$ is a scalar and $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma}$ a pseudoscalar ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]]), and so is $\varepsilon^{\mu\nu\rho\sigma}p_{1\mu}p_{2\nu}p_{3\rho}p_{4\sigma}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-1|Example §C1a.5.1]]).
+>
+> *Proof:* [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-14|Theorem §CB.8.14]] (there: $g$ is an invariant tensor and lowering an intertwiner $V \to V^\ast$; $\Lambda\cdot\varepsilon = (\det\Lambda)\,\varepsilon$). The same statements in Relativity's notation ($c$ explicit, $\eta$ for $g$) are [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-2|REL Theorem §B2.2.2]] (part 1) and [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]], 1 (part 2).
+>
+> *Source: Yu §1.5, p. 18, eq. (1.96) and the paragraph after it ("Minkowski 度规 $g_{\mu\nu}$ 是一个 2 阶的 (0, 2) 型 Lorentz 张量，不过，它是常数，在任何惯性系中不变"; $\delta^\mu{}_\nu$ a constant (1, 1) tensor), eqs. (1.99)–(1.100) (tensors and pseudotensors under parity), p. 20, eqs. (1.110)–(1.112) ($\varepsilon^{\mu\nu\rho\sigma}$ a constant pseudotensor) · the user's PHY 513 notes, Ch. 1 §1.5 (subsection "The invariant tensors: δ, g, and ε"; Definition "Tensors and pseudotensors")*
+
+^thm-c1a-5-3
 
 ## The Levi-Civita symbol
 
@@ -190,7 +212,7 @@ every tensor computation below uses it. What field theory adds is the metric, wh
 
 ^cau-c1a-5-5
 
-Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\gamma\Lambda^\sigma{}_\delta\,\varepsilon^{\alpha\beta\gamma\delta} = (\det\Lambda)\,\varepsilon^{\mu\nu\rho\sigma}$, invariant under $\det\Lambda = +1$ and odd under $\mathcal P$ and $\mathcal T$ separately (a pseudotensor), is [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]].
+Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\gamma\Lambda^\sigma{}_\delta\,\varepsilon^{\alpha\beta\gamma\delta} = (\det\Lambda)\,\varepsilon^{\mu\nu\rho\sigma}$, invariant under $\det\Lambda = +1$ and odd under $\mathcal P$ and $\mathcal T$ separately (a pseudotensor), is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], 2 ([[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]]).
 
 > [!theorem] Theorem §C1a.5.4: Contraction Identities of the Levi-Civita Symbol
 > 1. (Minkowski, $\varepsilon^{0123} = +1$.) The product of two symbols is minus the determinant of deltas,
@@ -244,7 +266,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 ^thm-c1a-5-5
 
 > [!derivation]- Derivation
-> **1. Part 1.** Call the left side $L_{\alpha\beta\gamma\delta}$. Exchanging two of its free indices, say $\alpha \leftrightarrow \beta$, and renaming the dummies $\mu \leftrightarrow \nu$ gives back $L$ with $\varepsilon_{\nu\mu\rho\sigma} = -\varepsilon_{\mu\nu\rho\sigma}$: $L$ is totally antisymmetric, hence $L_{\alpha\beta\gamma\delta} = L_{0123}\,\varepsilon_{\alpha\beta\gamma\delta}/\varepsilon_{0123}$. And $L_{0123} = \varepsilon_{\mu\nu\rho\sigma}A^\mu{}_0A^\nu{}_1A^\rho{}_2A^\sigma{}_3 = \varepsilon_{0123}\sum_\pi\operatorname{sgn}\pi\,A^{\pi(0)}{}_0\cdots A^{\pi(3)}{}_3 = \varepsilon_{0123}\det A$ by the Leibniz formula ([[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]]). So $L_{\alpha\beta\gamma\delta} = (\det A)\,\varepsilon_{\alpha\beta\gamma\delta}$. (For $A = \Lambda$ this is the pseudotensor law of [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]].)
+> **1. Part 1.** Call the left side $L_{\alpha\beta\gamma\delta}$. Exchanging two of its free indices, say $\alpha \leftrightarrow \beta$, and renaming the dummies $\mu \leftrightarrow \nu$ gives back $L$ with $\varepsilon_{\nu\mu\rho\sigma} = -\varepsilon_{\mu\nu\rho\sigma}$: $L$ is totally antisymmetric, hence $L_{\alpha\beta\gamma\delta} = L_{0123}\,\varepsilon_{\alpha\beta\gamma\delta}/\varepsilon_{0123}$. And $L_{0123} = \varepsilon_{\mu\nu\rho\sigma}A^\mu{}_0A^\nu{}_1A^\rho{}_2A^\sigma{}_3 = \varepsilon_{0123}\sum_\pi\operatorname{sgn}\pi\,A^{\pi(0)}{}_0\cdots A^{\pi(3)}{}_3 = \varepsilon_{0123}\det A$ by the Leibniz formula ([[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]]). So $L_{\alpha\beta\gamma\delta} = (\det A)\,\varepsilon_{\alpha\beta\gamma\delta}$. (For $A = \Lambda$ this is the pseudotensor law of [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], 2.)
 >
 > **2. Part 2.** Contract part 1 with $\varepsilon^{\alpha\beta\gamma\delta}$ and use $\varepsilon_{\alpha\beta\gamma\delta}\varepsilon^{\alpha\beta\gamma\delta} = -24$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]]): $\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\alpha\beta\gamma\delta}A^\mu{}_\alpha\cdots = -24\det A$.
 >
@@ -259,10 +281,10 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 
 ^der-c1a-5-5
 
-*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]], [[§37 Determinants#^ladr-9-50|LADR Thm. 9.50]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]], [[§37 Determinants#^ladr-9-50|LADR Thm. 9.50]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]]
 
 > [!example] Example §C1a.5.1: Momentum Conservation Kills ε p₁p₂p₃p₄
-> For four momenta with $\sum_{i=1}^4 p_i = 0$, $\varepsilon^{\mu\nu\rho\sigma}p_{1\mu}p_{2\nu}p_{3\rho}p_{4\sigma} = 0$: by [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 4, it is $\pm$ the determinant with columns $p_1, \dots, p_4$, and adding the first three columns to the fourth produces the zero column. The contraction is a pseudoscalar, invariant only under $\det\Lambda = +1$; it can appear in an amplitude only when five or more momenta are involved. (For the course: $\varepsilon^{0123} = +1$, $\varepsilon^{1230} = -1$, three transpositions, and $\varepsilon^{1213} = 0$.)
+> For four momenta with $\sum_{i=1}^4 p_i = 0$, $\varepsilon^{\mu\nu\rho\sigma}p_{1\mu}p_{2\nu}p_{3\rho}p_{4\sigma} = 0$: by [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|Theorem §C1a.5.5]], 4, it is $\pm$ the determinant with columns $p_1, \dots, p_4$, and adding the first three columns to the fourth produces the zero column. The contraction is a pseudoscalar ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], 3), invariant only under $\det\Lambda = +1$; it can appear in an amplitude only when five or more momenta are involved. (For the course: $\varepsilon^{0123} = +1$, $\varepsilon^{1230} = -1$, three transpositions, and $\varepsilon^{1213} = 0$.)
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 (Derivation "Levi-Civita and determinants", physical instance) · PHY 513, Problem Set 1, Problem 3*
 
@@ -310,7 +332,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 > T^{\mu\nu} = \underbrace{\Bigl(T^{(\mu\nu)} - \tfrac14g^{\mu\nu}T^\rho{}_\rho\Bigr)}_{\text{symmetric traceless: }9} + \underbrace{T^{[\mu\nu]}}_{\text{antisymmetric: }6} + \underbrace{\tfrac14g^{\mu\nu}T^\rho{}_\rho}_{\text{trace: }1},
 > $$
 >
-> $T^{(\mu\nu)} = \frac12(T^{\mu\nu} + T^{\nu\mu})$, $T^{[\mu\nu]} = \frac12(T^{\mu\nu} - T^{\nu\mu})$, and each of the three subspaces is mapped into itself by every Lorentz transformation. (Each is irreducible under $SO^+(1,3)$ over $\mathbb R$; over $\mathbb C$ the three pieces are $(1, 1)$, $(1, 0)\oplus(0, 1)$ and $(0, 0)$: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]], proved in [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-12|Theorem §CB.18.12]], irreducible in the sense of [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-7|Def. §CB.3.7]].)
+> $T^{(\mu\nu)} = \frac12(T^{\mu\nu} + T^{\nu\mu})$, $T^{[\mu\nu]} = \frac12(T^{\mu\nu} - T^{\nu\mu})$, and each of the three subspaces is mapped into itself by every Lorentz transformation. (Each is irreducible under $SO^+(1,3)$ over $\mathbb R$; over $\mathbb C$ the three pieces are $(1, 1)$, $(1, 0)\oplus(0, 1)$ and $(0, 0)$: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]], proved in [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-12|Theorem §CB.18.12]], irreducible in the sense of [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-7|Def. §CB.3.7]].)
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.5 ("Irreducible pieces of a two-tensor"), eq. (decomposition) · PHY 513 Lecture 1, Part C ("Irreducible parts of two-tensor representation")*
 
@@ -321,7 +343,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > **2. The trace is a scalar.** $g_{\mu\nu}T'^{\mu\nu} = g_{\mu\nu}\Lambda^\mu{}_\rho\Lambda^\nu{}_\sigma T^{\rho\sigma} = g_{\rho\sigma}T^{\rho\sigma}$ by the defining condition ([[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]); only the symmetric part contributes to it, $g_{\mu\nu}T^{[\mu\nu]} = 0$ (symmetric times antisymmetric, [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], 2).
 >
-> **3. Split off the trace.** Write $t = T^\rho{}_\rho$ and $S^{\mu\nu} = T^{(\mu\nu)} - \frac14g^{\mu\nu}t$. Then $g_{\mu\nu}S^{\mu\nu} = t - \frac14\cdot4\,t = 0$, using $g_{\mu\nu}g^{\mu\nu} = 4$. The trace part $\frac14g^{\mu\nu}t$ transforms to $\frac14g^{\mu\nu}t$ (the metric is invariant, [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-2|REL Theorem §B2.2.2]]; $t$ is a scalar by step 2). A traceless symmetric tensor stays symmetric (step 1) and traceless (step 2). Uniqueness: the trace part is fixed by $t$, the rest by step 1.
+> **3. Split off the trace.** Write $t = T^\rho{}_\rho$ and $S^{\mu\nu} = T^{(\mu\nu)} - \frac14g^{\mu\nu}t$. Then $g_{\mu\nu}S^{\mu\nu} = t - \frac14\cdot4\,t = 0$, using $g_{\mu\nu}g^{\mu\nu} = 4$. The trace part $\frac14g^{\mu\nu}t$ transforms to $\frac14g^{\mu\nu}t$ (the metric is invariant, [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], 1; $t$ is a scalar by step 2). A traceless symmetric tensor stays symmetric (step 1) and traceless (step 2). Uniqueness: the trace part is fixed by $t$, the rest by step 1.
 >
 > **4. Count.** Symmetric: $4 + 6 = 10$ entries, minus one trace condition: $9$; antisymmetric: $6$; trace: $1$; total $16$.
 >
@@ -332,7 +354,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 
 ^der-c1a-5-6
 
-*Uses:* [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-2|REL Theorem §B2.2.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]
+*Uses:* [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]
 
 > [!theorem] Theorem §C1a.5.7: Duality Squares to −1 on Antisymmetric Tensors
 > On antisymmetric $A^{\mu\nu}$ let $(\star A)^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}A_{\rho\sigma}$. Then:
@@ -353,7 +375,7 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > **4. Contract.** By [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]] (two contracted pairs, upper and lower roles exchanged, which is the same identity), $\varepsilon^{\rho\sigma\mu\nu}\varepsilon_{\rho\sigma\alpha\beta} = -2(\delta^\mu_\alpha\delta^\nu_\beta - \delta^\mu_\beta\delta^\nu_\alpha)$. So $(\star\star A)^{\mu\nu} = -\frac12(A^{\mu\nu} - A^{\nu\mu}) = -A^{\mu\nu}$, by antisymmetry. ⚑ By-product: the $-1$ is $\det g$ again; in Euclidean four dimensions $\star\star = +1$ and the eigenvalues are real (self-dual and anti-self-dual forms) → part 3.
 >
-> **5. Part 2.** Multiply the pseudotensor law $\Lambda^\mu{}_\kappa\Lambda^\nu{}_\lambda\Lambda^\rho{}_\alpha\Lambda^\sigma{}_\beta\varepsilon^{\kappa\lambda\alpha\beta} = \det\Lambda\,\varepsilon^{\mu\nu\rho\sigma}$ ([[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]]) by $\Lambda_\rho{}^\gamma\Lambda_\sigma{}^\delta$ and use $\Lambda^\rho{}_\alpha\Lambda_\rho{}^\gamma = \delta_\alpha{}^\gamma$: $\Lambda^\mu{}_\kappa\Lambda^\nu{}_\lambda\varepsilon^{\kappa\lambda\gamma\delta} = \det\Lambda\,\varepsilon^{\mu\nu\rho\sigma}\Lambda_\rho{}^\gamma\Lambda_\sigma{}^\delta$. With $(\Lambda A)_{\rho\sigma} = \Lambda_\rho{}^\gamma\Lambda_\sigma{}^\delta A_{\gamma\delta}$ and $(\det\Lambda)^2 = 1$:
+> **5. Part 2.** Multiply the pseudotensor law $\Lambda^\mu{}_\kappa\Lambda^\nu{}_\lambda\Lambda^\rho{}_\alpha\Lambda^\sigma{}_\beta\varepsilon^{\kappa\lambda\alpha\beta} = \det\Lambda\,\varepsilon^{\mu\nu\rho\sigma}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], 2) by $\Lambda_\rho{}^\gamma\Lambda_\sigma{}^\delta$ and use $\Lambda^\rho{}_\alpha\Lambda_\rho{}^\gamma = \delta_\alpha{}^\gamma$: $\Lambda^\mu{}_\kappa\Lambda^\nu{}_\lambda\varepsilon^{\kappa\lambda\gamma\delta} = \det\Lambda\,\varepsilon^{\mu\nu\rho\sigma}\Lambda_\rho{}^\gamma\Lambda_\sigma{}^\delta$. With $(\Lambda A)_{\rho\sigma} = \Lambda_\rho{}^\gamma\Lambda_\sigma{}^\delta A_{\gamma\delta}$ and $(\det\Lambda)^2 = 1$:
 >
 > $$
 > (\star\Lambda A)^{\mu\nu} = \tfrac12\varepsilon^{\mu\nu\rho\sigma}\Lambda_\rho{}^\gamma\Lambda_\sigma{}^\delta A_{\gamma\delta} = \det\Lambda\;\Lambda^\mu{}_\kappa\Lambda^\nu{}_\lambda\,\tfrac12\varepsilon^{\kappa\lambda\gamma\delta}A_{\gamma\delta} = \det\Lambda\;(\Lambda\star A)^{\mu\nu} .
@@ -363,11 +385,11 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 >
 > **What the derivation shows**
 > - Taking the dual twice returns $-A$, not $A$: the Minkowski sign. For the field tensor, $\tilde{\tilde F} = -F$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]]).
-> - The two three-dimensional halves are, for $F$, built from $\mathbf E + i\mathbf B$ and $\mathbf E - i\mathbf B$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|Theorem §C1a.7.4]]); as representations they are called $(1, 0)$ and $(0, 1)$, with $\mathbf E - i\mathbf B$ the $(1, 0)$ half in these conventions ([[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-1|§C3.3, Caution: Which half of F is called (1, 0)]]).
+> - The two three-dimensional halves are, for $F$, built from $\mathbf E + i\mathbf B$ and $\mathbf E - i\mathbf B$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|Theorem §C1a.7.4]]); as representations they are called $(1, 0)$ and $(0, 1)$, with $\mathbf E - i\mathbf B$ the $(1, 0)$ half in these conventions ([[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|Theorem §C3.3.8]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-1|§C3.3, Caution: Which half of F is called (1, 0)]]).
 
 ^der-c1a-5-7
 
-*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-4|REL Theorem §B2.2.4]], [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-1|Caution: A contraction is a plain sum; the signs live in the components]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]], [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-1|Caution: A contraction is a plain sum; the signs live in the components]]
 
 ## Calculus with indices
 
@@ -581,13 +603,13 @@ Its transformation law, $\Lambda^\mu{}_\alpha\Lambda^\nu{}_\beta\Lambda^\rho{}_\
 > - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-14|Theorem §CB.0.14]] with [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-14|its derivation]] — the transformation law follows from multilinearity (the display under "Tensors as multilinear maps").
 >
 > The metric and the Levi-Civita symbol are invariant tensors, $\varepsilon$ only up to $\det\Lambda$ (the law recalled in "The Levi-Civita symbol" and Theorem §C1a.5.5):
-> - [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-14|Theorem §CB.8.14]] with [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-8-14|its proof]] — $g$ is invariant under $O(1,3)$ and lowering is an intertwiner $V \to V^\ast$; $\varepsilon$ picks up $\det\Lambda$.
+> - [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-14|Theorem §CB.8.14]] with [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-8-14|its proof]] — $g$ is invariant under $O(1,3)$ and lowering is an intertwiner $V \to V^\ast$; $\varepsilon$ picks up $\det\Lambda$; physics form: [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|Theorem §C1a.5.3]].
 >
 > Theorem §C1a.5.6 splits a two-tensor into pieces that no Lorentz transformation mixes: the symmetric and antisymmetric parts are subrepresentations, and irreducible means, as in Def. §CB.3.7, having no smaller invariant subspace:
 > - [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^thm-cb-8-13|Theorem §CB.8.13]] with [[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^pf-cb-8-13|its proof]] — symmetric and exterior powers are subrepresentations; $W\otimes W = \operatorname{Sym}^2W\oplus\Lambda^2W$.
 > - [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-7|Def. §CB.3.7]] — invariant subspace; irreducible representation.
 >
-> That the pieces are irreducible, and that the antisymmetric part splits over $\mathbb C$ into the two eigenspaces of duality of Theorem §C1a.5.7, is the representation theory of two-index tensors and two-forms (in physics form: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]]):
+> That the pieces are irreducible, and that the antisymmetric part splits over $\mathbb C$ into the two eigenspaces of duality of Theorem §C1a.5.7, is the representation theory of two-index tensors and two-forms (in physics form: [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|Theorem §C3.3.8]]):
 > - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-12|Theorem §CB.18.12]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-12|its derivation]] — two-index tensors are $(0, 0)\oplus(1, 0)\oplus(0, 1)\oplus(1, 1)$ over $\mathbb C$; the real antisymmetric six are irreducible.
 > - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-11|Theorem §CB.18.11]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-11|its proof]] — two-forms are $(1, 0)\oplus(0, 1)$, the eigenspaces $\star = \pm i$ of duality.
 

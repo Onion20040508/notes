@@ -40,7 +40,7 @@ Which pairing of two spinors does the Clifford structure single out, and what do
 >
 > **What the derivation shows**
 > - Hermiticity is not part of the Clifford algebra: a non-unitary change of basis preserves the algebra ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]], 1) but destroys it. It is a choice of basis, assumed from here on; in Yu and the pre-course notes it enters as the hypothesis "normal".
-> - $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ is the identity used for every adjoint in Dirac theory: the generators (Theorem §CB.14.22), $\bar\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]; proof [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]]), the reality of bilinears ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]).
+> - $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ is the identity used for every adjoint in Dirac theory: the generators ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], 1), $\bar\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]; proof [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]]), the reality of bilinears ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]).
 
 ^der-c5a-2-1
 
@@ -63,11 +63,23 @@ Which pairing of two spinors does the Clifford structure single out, and what do
 
 The components of $\bar\psi$: $\bar\psi(\chi) = h_D(\psi, \chi) = \sum_b(\psi^\dagger\gamma^0)_b\chi_b$, so by Def. §CB.0.6 its row is $\psi^\dagger\gamma^0$; conjugate-linearity is $(\lambda\psi)^\dagger = \lambda^{\ast}\psi^\dagger$.
 
-<!-- PHYSFORM: tool box "The Dirac Form Is Fixed by the γ's up to a Real Factor and Has Signature (2, 2)" goes here (S2-C #1) -->
+> [!theorem] Theorem §C5a.2.2: The Dirac Form Is Fixed by the γ's up to a Real Factor and Has Signature (2, 2)
+> In a Hermitian basis, $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]), let $h_D(\chi, \psi) = \bar\chi\psi = \chi^\dagger\gamma^0\psi$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]).
+> 1. Every $\gamma^\mu$ is self-adjoint for $h_D$: $h_D(\gamma^\mu\chi, \psi) = h_D(\chi, \gamma^\mu\psi)$, i.e. $\overline{\gamma^\mu\chi} = \bar\chi\gamma^\mu$.
+> 2. Conversely, if $h(\chi, \psi) = \chi^\dagger H\psi$ is a nondegenerate Hermitian form for which every $\gamma^\mu$ is self-adjoint, then $H = c\,\gamma^0$ with $c$ real, $c \ne 0$: up to normalization, $\bar\psi = \psi^\dagger\gamma^0$ is the only pairing of two spinors compatible with the $\gamma$'s.
+> 3. $h_D$ has signature $(2, 2)$: $\gamma^0$ has eigenvalues $+1, +1, -1, -1$, so $\bar\psi\psi$ takes both signs and is not a norm; in the chiral basis $\bar\psi\psi = \psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L$.
+>
+> How to read it: the Clifford structure leaves no freedom in how two spinors are paired beyond a real factor (fixed to $1$ by convention), and the pairing it gives is indefinite, a pairing and not a probability.
+>
+> *Proof:* [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-16|Theorem §CB.13.16]] (parts 1–2), [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-17|Theorem §CB.13.17]] (part 3); the chiral form in part 3 is the block product with $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]).
+>
+> *Source: PS §3.2, p. 43, eq. (3.32) ($\bar\psi \equiv \psi^\dagger\gamma^0$, introduced because $\psi^\dagger\psi$ is not invariant) · Yu §5.1, eqs. (5.6)–(5.7) ($\gamma^0$ Hermitian, $\gamma^i$ anti-Hermitian, both unitary) · the user's PHY 513 notes, Ch. 8 §8.3 ("Each spinor slot has its own invariant form in place of $g$") · the self-adjointness reading and the uniqueness written here*
+
+^thm-c5a-2-2
 
 ## Which changes of basis preserve the Dirac conjugate
 
-> [!theorem] Theorem §C5a.2.2: Which Changes of Basis Preserve ψ̄
+> [!theorem] Theorem §C5a.2.3: Which Changes of Basis Preserve ψ̄
 > Let $e$ be a Hermitian basis, $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]; [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]]), $U$ any invertible change-of-basis matrix ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-4|Def. §CB.0.4]]), $\psi' = U\psi$, $\gamma'^\mu = U\gamma^\mu U^{-1}$, and $\bar\psi = \psi^\dagger\gamma^0$ the Dirac conjugate ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]).
 > 1. The Dirac-conjugate formula applied in the new basis computes the same $\bar\psi\chi$, $\psi'^\dagger\gamma'^0\chi' = \bar\psi\chi$ for all $\psi, \chi$, iff $U$ is unitary; a new Hermitian basis with $U^\dagger U = c\,\mathbb 1$ multiplies it by $c$ ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-18|Theorem §CB.13.18]]).
 > 2. For unitary $U$: $\psi'^\dagger = \psi^\dagger U^{-1}$, $\bar\psi' = \bar\psi\,U^{-1}$, and every bilinear $\bar\psi M\chi$ with $M \in \operatorname{End}(V)$ ($M' = UMU^{-1}$) is unchanged.
@@ -76,7 +88,7 @@ The components of $\bar\psi$: $\bar\psi(\chi) = h_D(\psi, \chi) = \sum_b(\psi^\d
 >
 > *Source: PS §3.2, p. 41 ("unitarily equivalent") · Yu §5.2, eq. (5.72) (unitary $U$) · the user's pre-course notes, §5.2 ("all representations are related by unitary similarity transformations") · parts 1–2 and the converses written here*
 
-^thm-c5a-2-2
+^thm-c5a-2-3
 
 > [!derivation]- Derivation
 > **1. Part 1** is Theorem §CB.13.18 read for $\bar\psi = \psi^\dagger\gamma^0$: the number $\psi'^\dagger\gamma'^0\chi'$ is the Dirac conjugate formula in the new basis.
@@ -87,12 +99,12 @@ The components of $\bar\psi$: $\bar\psi(\chi) = h_D(\psi, \chi) = \sum_b(\psi^\d
 > - In the language of the slot rule ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], 3): a unitary $U$ makes the conjugate slot of $\psi^\dagger$ transform like a $V'$-slot, and the two roles of $\gamma^0$ (operator and form, Theorem §CB.9.2) transform alike.
 > - Used next: the Dirac Lagrangian is basis independent exactly for unitary $U$ (Theorem §C5a.7.5).
 
-^der-c5a-2-2
+^der-c5a-2-3
 
 *Uses:* [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-18|Theorem §CB.13.18]], [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]], [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]]
 
 > [!remark] Remark: γ⁰ in two roles
-> The matrix $\gamma^0$ appears in two different jobs. As the matrix of the Dirac map $\Gamma^0$ it is an operator, slots $V\otimes V'$, and transforms as $U\gamma^0U^{-1}$; it enters the Dirac equation $i\gamma^0\partial_0\psi + \dots$. As the matrix of the Dirac form it pairs two spinors, $\bar\chi\psi = \chi^\dagger\gamma^0\psi$, and transforms as $(U^{-1})^\dagger\gamma^0U^{-1}$ (Theorem §CB.9.2). In a Hermitian basis the two arrays coincide; after a non-unitary change of basis they differ, and the formula $\bar\psi = \psi^\dagger\gamma^0$, which silently identifies them, stops computing the Dirac form (Theorem §C5a.2.2, 1). The same double role is played by $g_{\mu\nu}$ for vectors in an orthonormal frame, and the same caution applies to non-orthonormal frames. Under Lorentz transformations the form role is the one preserved: $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]; [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]]).
+> The matrix $\gamma^0$ appears in two different jobs. As the matrix of the Dirac map $\Gamma^0$ it is an operator, slots $V\otimes V'$, and transforms as $U\gamma^0U^{-1}$; it enters the Dirac equation $i\gamma^0\partial_0\psi + \dots$. As the matrix of the Dirac form it pairs two spinors, $\bar\chi\psi = \chi^\dagger\gamma^0\psi$, and transforms as $(U^{-1})^\dagger\gamma^0U^{-1}$ (Theorem §CB.9.2). In a Hermitian basis the two arrays coincide; after a non-unitary change of basis they differ, and the formula $\bar\psi = \psi^\dagger\gamma^0$, which silently identifies them, stops computing the Dirac form (Theorem §C5a.2.3, 1). The same double role is played by $g_{\mu\nu}$ for vectors in an orthonormal frame, and the same caution applies to non-orthonormal frames. Under Lorentz transformations the form role is the one preserved: $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]; [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], 2).
 >
 > *Source: written here · the user's PHY 513 notes, Ch. 8 §8.3 ("Each spinor slot has its own invariant form in place of $g$: $\gamma^0$ for Dirac spinors")*
 
@@ -111,19 +123,19 @@ The components of $\bar\psi$: $\bar\psi(\chi) = h_D(\psi, \chi) = \sum_b(\psi^\d
 >
 > In a Hermitian basis, which Theorem §C5a.2.1 shows the chiral basis to be, the Dirac form is defined; the Dirac maps fix it up to a real factor, and it has signature (2, 2):
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]], [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-15|Def. §CB.13.15]] — Hermitian basis; the Dirac form $h_D(\chi, \psi) = \chi^\dagger\gamma^0\psi$ (Def. §C5a.2.1).
-> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-16|Theorem §CB.13.16]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-16|Derivation]] — the Dirac maps are self-adjoint for $h_D$ and fix it up to a real factor.
-> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-17|Theorem §CB.13.17]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-17|Derivation]] — $h_D$ has signature $(2, 2)$: $\bar\psi\psi$ is indefinite.
+> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-16|Theorem §CB.13.16]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-16|Derivation]] — the Dirac maps are self-adjoint for $h_D$ and fix it up to a real factor; physics form: [[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]].
+> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-17|Theorem §CB.13.17]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-17|Derivation]] — $h_D$ has signature $(2, 2)$: $\bar\psi\psi$ is indefinite; physics form: [[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]].
 >
 > The Dirac conjugate below is the partial evaluation of the form, a dual spinor:
 > - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-6|Def. §CB.0.6]] — dual spinor space and dual basis ($\bar\psi \in V'$, Def. §C5a.2.1).
 >
-> Theorem §C5a.2.2 combines the change-of-basis rules, Pauli's theorem (part 2: Hermitian bases are related by unitary matrices) and the theorem on the Dirac form under a change of basis:
+> Theorem §C5a.2.3 combines the change-of-basis rules, Pauli's theorem (part 2: Hermitian bases are related by unitary matrices) and the theorem on the Dirac form under a change of basis:
 > - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-4|Def. §CB.0.4]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]] with [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-5|Derivation]] — the change-of-basis matrix; $\psi' = U\psi$, $M' = UMU^{-1}$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]]).
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12|Theorem §CB.13.12]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-12|Derivation]] — Pauli's theorem; two Hermitian bases are related by a unitary matrix ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]], 2).
-> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-18|Theorem §CB.13.18]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-18|Derivation]] — which changes of basis preserve the Dirac form (Theorem §C5a.2.2, 1).
+> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-18|Theorem §CB.13.18]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-18|Derivation]] — which changes of basis preserve the Dirac form (Theorem §C5a.2.3, 1).
 
 > [!remark]- Connections
-> - The Dirac form is the invariant form of the spinor slot as $g$ is that of the vector slot and $\varepsilon$ that of a Weyl slot; its indefiniteness, signature $(2, 2)$, is the spinor face of the non-unitarity of finite-dimensional Lorentz representations — [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|Theorem §C5a.5.3]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]].
+> - The Dirac form is the invariant form of the spinor slot as $g$ is that of the vector slot and $\varepsilon$ that of a Weyl slot; its indefiniteness, signature $(2, 2)$, is the spinor face of the non-unitarity of finite-dimensional Lorentz representations — [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|Theorem §C5a.5.4]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]].
 > - The reality of bilinears and the self-adjointness of the Dirac maps for the Dirac form are one identity, $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ — [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]].
 > - Unitary changes of basis are those that keep the reference inner product $\psi^\dagger\chi$ of the columns; the Dirac form needs them although it is not itself an inner product, as Quantum Mechanics needs them to keep probabilities — [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-1|QM Theorem §C1.4.1]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR Thm. 7.57]].
 > - The Dirac conjugate defined here is what the Lagrangian, every bilinear and the canonical momentum $\pi = i\psi^\dagger$ are built from — [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-1|Def. §C5a.6.1]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]].

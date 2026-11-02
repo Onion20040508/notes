@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 8 §8.4 (Lecture 8's starting point), §8.5 (The Dirac equation), §8.6 (Why the Dirac equation is covariant), §8.8 (The Dirac Lagrangian), §8.10 (The Weyl form of the Dirac equation), §8.11 (Dirac implies Klein–Gordon) · PHY 513 Lecture 8 (Larsen), Parts A–C · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.2, pp. 41–44, eqs. (3.29)–(3.44), §3.5, p. 52, eqs. (3.83)–(3.85) · Yu Zhao-Huan, 量子场论讲义, §5.2–§5.3, eqs. (5.72), (5.102)–(5.115) · PHY 513 Lecture 10, slide 16, and the user's PHY 513 notes, Ch. 10 §10.5 (the single-particle Hamiltonian) · the user's pre-course notes, §5.3 · the basis-change statements written here.*
 
-Which first-order field equation can a Dirac spinor obey, why does it look the same to every observer and in every basis, and from which Lagrangian does it follow? The structure of spinor space is complete after [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]]: the Clifford action, the Dirac form and $\bar\psi$, the Lorentz action $\Lambda_{1/2}$ with the key identity $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]]), chirality and the bilinears. This section adds **layer 8**, fields $\psi : M \to V$: the Dirac equation and its covariance, its form invariance under a change of basis of $V$, the single-particle Hamiltonian $H_{\text{s.p.}}$, the Dirac Lagrangian with its field equations (also basis independent, for unitary changes of basis), and the fact that every solution obeys the Klein–Gordon equation. The equation in two-component form, with the Weyl equations, is [[§C5a.8 The Weyl Form and the Weyl Equations|§C5a.8]]. The action principle and the Euler–Lagrange equations are [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]], whose models are scalar. The canonical momenta, the Hamiltonian density and the Noether currents of this Lagrangian are [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field|§C5a.9]]; the solutions [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost|§C5a.10]]–[[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates|§C5a.11]]. The mathematics it uses — the Dirac matrices and their covariance, $\gamma^5$, Hermitian bases and the invariance of the Dirac form — is proved in [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]] and [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], linked from each box and listed at the end.
+Which first-order field equation can a Dirac spinor obey, why does it look the same to every observer and in every basis, and from which Lagrangian does it follow? The structure of spinor space is complete after [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]]: the Clifford action, the Dirac form and $\bar\psi$, the Lorentz action $\Lambda_{1/2}$ with the key identity $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], 3), chirality and the bilinears. This section adds **layer 8**, fields $\psi : M \to V$: the Dirac equation and its covariance, its form invariance under a change of basis of $V$, the single-particle Hamiltonian $H_{\text{s.p.}}$, the Dirac Lagrangian with its field equations (also basis independent, for unitary changes of basis), and the fact that every solution obeys the Klein–Gordon equation. The equation in two-component form, with the Weyl equations, is [[§C5a.8 The Weyl Form and the Weyl Equations|§C5a.8]]. The action principle and the Euler–Lagrange equations are [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]], whose models are scalar. The canonical momenta, the Hamiltonian density and the Noether currents of this Lagrangian are [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field|§C5a.9]]; the solutions [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost|§C5a.10]]–[[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates|§C5a.11]]. The mathematics it uses — the Dirac matrices and their covariance, $\gamma^5$, Hermitian bases and the invariance of the Dirac form — is proved in [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]] and [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], linked from each box and listed at the end.
 
 **Setup.** Classical and free: the free Dirac field [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], with commuting complex components, in flat spacetime; no quantum states yet. Covariance, basis change and the reality of $\mathcal L$ (Theorems §C5a.7.1–§C5a.7.2, §C5a.7.4–§C5a.7.5, §C5a.7.7) are identities for every $C^1$ field, off shell; Theorems §C5a.7.6 and §C5a.7.8 are about solutions. The single-particle Hamiltonian $H_{\text{s.p.}}$ (Def. §C5a.7.3) is an operator on c-number four-component wave functions, not the field Hamiltonian; the field's $\mathcal H$ is [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|Theorem §C5a.9.2]], its quantum form [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]. All results are exact.
 
@@ -63,7 +63,7 @@ The chiral form uses $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\m
 ^cau-c5a-7-1
 
 > [!remark] Remark: What covariance shows and what it does not
-> Theorem §C5a.7.1 below shows that the Dirac equation is **covariant**: if $\psi$ solves it, so does the transformed field, with the same matrices $\gamma^\mu$ and the same $m$. That makes it a consistent candidate for a law of motion, not a proof that nature uses it. Covariance needs $m$ to be a Lorentz scalar; that $m$ is the mass is Theorem §C5a.7.8. The explicit $i$ is not required by covariance; it is required by consistency with the conjugate equation and by reality of the Lagrangian ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-2|Remark: Why the i]]). Expressions such as $\slashed{\partial}$ or $\slashed{p}$ are called "Lorentz invariant" in the lecture in the sense that every vector index is contracted; they remain matrices whose spinor slots transform, $\Lambda_{1/2}\slashed{p}\,\Lambda_{1/2}^{-1} = (\Lambda p)\!\!\!/$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]] read with $\Lambda^{-1}$). What is invariant is the *form* of a relation between such matrices.
+> Theorem §C5a.7.1 below shows that the Dirac equation is **covariant**: if $\psi$ solves it, so does the transformed field, with the same matrices $\gamma^\mu$ and the same $m$. That makes it a consistent candidate for a law of motion, not a proof that nature uses it. Covariance needs $m$ to be a Lorentz scalar; that $m$ is the mass is Theorem §C5a.7.8. The explicit $i$ is not required by covariance; it is required by consistency with the conjugate equation and by reality of the Lagrangian ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-2|Remark: Why the i]]). Expressions such as $\slashed{\partial}$ or $\slashed{p}$ are called "Lorentz invariant" in the lecture in the sense that every vector index is contracted; they remain matrices whose spinor slots transform, $\Lambda_{1/2}\slashed{p}\,\Lambda_{1/2}^{-1} = (\Lambda p)\!\!\!/$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]] read with $\Lambda^{-1}$). What is invariant is the *form* of a relation between such matrices.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.5 (Principle "What has been shown, and what has not"), Ch. 9 §9.4 (Caution "In what sense $\slashed{p}$ is 'Lorentz invariant'")*
 
@@ -105,7 +105,7 @@ The chiral form uses $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\m
 >
 > The numbers $(\Lambda^{-1})^\nu{}_\mu$ commute with the matrices; the matrices $\gamma^\mu$ and $\Lambda_{1/2}$ do not commute and their order is kept.
 >
-> **3. Push $\Lambda_{1/2}$ to the left.** Insert $\mathbb 1 = \Lambda_{1/2}\Lambda_{1/2}^{-1}$ in front: $\gamma^\mu\Lambda_{1/2} = \Lambda_{1/2}\bigl(\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2}\bigr) = \Lambda_{1/2}\,\Lambda^\mu{}_\rho\gamma^\rho$ by [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]]. So
+> **3. Push $\Lambda_{1/2}$ to the left.** Insert $\mathbb 1 = \Lambda_{1/2}\Lambda_{1/2}^{-1}$ in front: $\gamma^\mu\Lambda_{1/2} = \Lambda_{1/2}\bigl(\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2}\bigr) = \Lambda_{1/2}\,\Lambda^\mu{}_\rho\gamma^\rho$ by [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], 3. So
 >
 > $$
 > \gamma^\mu\partial_\mu\psi'(x) = \Lambda_{1/2}\,\gamma^\rho\;\Lambda^\mu{}_\rho(\Lambda^{-1})^\nu{}_\mu\;(\partial_\nu\psi)(y) .
@@ -137,7 +137,7 @@ The chiral form uses $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\m
 
 ^der-c5a-7-1
 
-*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]
+*Uses:* [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]
 
 The slides phrase the transformation passively ("the physical point that the field is evaluated at does not change but its coordinates do") while the formula is written actively; the two readings give the same formula ([[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). Quantum Mechanics records the same check with $\hbar$, $c$ and a passive transformation, for one boost ([[§C13.2★ The Dirac Equation#^rem-c13-2-4|QM Remark: Lorentz covariance and the rapidity]]); here it holds for every $\omega$ because the identity of Theorem §CB.18.7 is proved for the whole group.
 
@@ -165,7 +165,7 @@ The slides phrase the transformation passively ("the physical point that the fie
 >
 > **4. Combine.** $(i\gamma'^\mu\partial_\mu - m)\psi' = U(i\gamma^\mu\partial_\mu - m)\psi$. $U$ is invertible, so one side vanishes iff the other does.
 >
-> **5. ⚑ By-product: changing γ without ψ breaks solutions.** Take $U = \gamma^5$, which is unitary and its own inverse with $\gamma^5\gamma^\mu\gamma^5 = -\gamma^\mu$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]): the new matrices $\gamma'^\mu = -\gamma^\mu$ are a legitimate set of Dirac matrices. If $\psi$ solves the old equation, $i\gamma^\mu\partial_\mu\psi = m\psi$, and its columns are kept unchanged while only the $\gamma$'s are replaced, then $(i\gamma'^\mu\partial_\mu - m)\psi = -i\gamma^\mu\partial_\mu\psi - m\psi = -2m\psi \ne 0$ for $m \ne 0$, $\psi \ne 0$. The correctly transformed spinor $\psi' = \gamma^5\psi$ does solve it, by step 4. A solution is a pair (matrices, columns) in one basis.
+> **5. ⚑ By-product: changing γ without ψ breaks solutions.** Take $U = \gamma^5$, which is unitary and its own inverse with $\gamma^5\gamma^\mu\gamma^5 = -\gamma^\mu$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]): the new matrices $\gamma'^\mu = -\gamma^\mu$ are a legitimate set of Dirac matrices. If $\psi$ solves the old equation, $i\gamma^\mu\partial_\mu\psi = m\psi$, and its columns are kept unchanged while only the $\gamma$'s are replaced, then $(i\gamma'^\mu\partial_\mu - m)\psi = -i\gamma^\mu\partial_\mu\psi - m\psi = -2m\psi \ne 0$ for $m \ne 0$, $\psi \ne 0$. The correctly transformed spinor $\psi' = \gamma^5\psi$ does solve it, by step 4. A solution is a pair (matrices, columns) in one basis.
 >
 > **What the derivation shows**
 > - The form invariance needs only that $U$ is constant and invertible; unitarity is not used. (A position-dependent $U(x)$ would produce an extra term $i\gamma'^\mu(\partial_\mu U)U^{-1}\psi'$, the seed of a connection — not needed in flat spacetime with a global basis.)
@@ -173,7 +173,7 @@ The slides phrase the transformation passively ("the physical point that the fie
 
 ^der-c5a-7-2
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]
 
 ## The single-particle Hamiltonian
 
@@ -263,12 +263,12 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 >
 > *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, every $C^1$ field (off shell); the old basis Hermitian.
 >
-> *Source: the derivation written here, from Theorems §C5a.2.2 and §C5a.7.2 · PS §3.2, p. 41 (unitary equivalence)*
+> *Source: the derivation written here, from Theorems §C5a.2.3 and §C5a.7.2 · PS §3.2, p. 41 (unitary equivalence)*
 
 ^thm-c5a-7-5
 
 > [!derivation]- Derivation
-> **1. The left factor.** $\psi'^\dagger\gamma'^0 = \psi^\dagger U^\dagger\,U\gamma^0U^{-1}$ (Theorem §C5a.2.2, step 1).
+> **1. The left factor.** $\psi'^\dagger\gamma'^0 = \psi^\dagger U^\dagger\,U\gamma^0U^{-1}$ (Theorem §C5a.2.3, step 1).
 >
 > **2. The right factor.** $(i\gamma'^\mu\partial_\mu - m)\psi' = U(i\gamma^\mu\partial_\mu - m)\psi$ (Theorem §C5a.7.2).
 >
@@ -282,7 +282,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 
 ^der-c5a-7-5
 
-*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-2|Theorem §C5a.7.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], [[§23 Self-Adjoint and Normal Operators#^ladr-7-13|LADR Thm. 7.13]]
+*Uses:* [[§C5a.2 The Dirac Form#^thm-c5a-2-3|Theorem §C5a.2.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-2|Theorem §C5a.7.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], [[§23 Self-Adjoint and Normal Operators#^ladr-7-13|LADR Thm. 7.13]]
 
 > [!theorem] Theorem §C5a.7.6: The Field Equations of the Dirac Lagrangian
 > For [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]:
@@ -327,7 +327,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 > **What the derivation shows**
 > - "Treat $\psi$ and $\bar\psi$ as independent" is the complex-field device of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]] with the invertible matrix $\gamma^0$ inserted; varying the conjugate gives the equation for the field directly, without derivatives to move.
 > - ⚑ By-product: the agreement of the two equations needs both $\gamma^{\mu\dagger} = \gamma^0\gamma^\mu\gamma^0$ and the $i$ in $\mathcal L$ → [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-2|Remark: Why the i]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^cau-c5a-7-3|Caution: The order of γ⁰ and γ^μ in the conjugate equation]].
-> - The conjugate equation is itself covariant: it transforms like $\bar\psi$, with $\Lambda_{1/2}^{-1}$ on the right (conjugate Theorem §C5a.7.1 with Theorem §CB.18.13).
+> - The conjugate equation is itself covariant: it transforms like $\bar\psi$, with $\Lambda_{1/2}^{-1}$ on the right (conjugate Theorem §C5a.7.1 with [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], 2).
 > - Used next: both equations are needed for every conservation law of the field ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|Theorem §C5a.9.5]]); for plane waves part 2 becomes $\bar u(p)(\slashed{p} - m) = 0$ ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]]).
 
 ^der-c5a-7-6
@@ -424,7 +424,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 >
 > **4. Clifford algebra.** $\frac12\{\gamma^\nu, \gamma^\mu\} = g^{\nu\mu}\mathbb 1$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]), so $T = g^{\nu\mu}\partial_\nu\partial_\mu\mathbb 1 = \partial^2\mathbb 1$, and $0 = (\partial^2 + m^2)\mathbb 1\,\psi$: the identity matrix does not mix components.
 >
-> **5. The sign of $m$.** Only $(-m)(-m) = m^2$ entered. ⚑ By-product: $\psi \mapsto \gamma^5\psi$ maps solutions with mass $m$ to solutions with mass $-m$, since $\gamma^5$ anticommutes with $\gamma^\mu$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]): $(i\slashed{\partial} + m)\gamma^5\psi = -\gamma^5(i\slashed{\partial} - m)\psi$. The sign of $m$ in the Dirac equation is a convention, fixed here by $m \ge 0$.
+> **5. The sign of $m$.** Only $(-m)(-m) = m^2$ entered. ⚑ By-product: $\psi \mapsto \gamma^5\psi$ maps solutions with mass $m$ to solutions with mass $-m$, since $\gamma^5$ anticommutes with $\gamma^\mu$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]): $(i\slashed{\partial} + m)\gamma^5\psi = -\gamma^5(i\slashed{\partial} - m)\psi$. The sign of $m$ in the Dirac equation is a convention, fixed here by $m \ge 0$.
 >
 > **6. The converse fails.** A Klein–Gordon solution $w\,e^{-ip\cdot x}$ with an arbitrary constant column $w$ need not satisfy the Dirac equation, which imposes $(\slashed{p} - m)w = 0$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]]). ⚑ By-product: Dirac halves the Klein–Gordon solutions → [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-3|Remark: Eight candidates, four solutions]].
 >
@@ -435,7 +435,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 
 ^der-c5a-7-8
 
-*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]]
+*Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]]
 
 Quantum Mechanics runs the same computation backwards: there, requiring each component to obey Klein–Gordon is what forces $\{\gamma^\mu, \gamma^\nu\} = 2\eta^{\mu\nu}$ ([[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]], part 1). Here the Clifford algebra is the input, found from the Lorentz group ([[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]]), and Klein–Gordon is the consequence (rule 2: same identity, opposite logical direction).
 
@@ -475,9 +475,9 @@ Quantum Mechanics runs the same computation backwards: there, requiring each com
 > |---|---|
 > | the entries of $\gamma^\mu$, $\gamma^5$, $S^{\mu\nu}$, $\Lambda_{1/2}$ | the Clifford algebra $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ (Theorem §C5a.1.2, 2) |
 > | the components $\psi_a$ of a spinor, $u^s_a(p)$, $v^s_a(p)$ | the spinor $\psi \in V$ itself; the solution space of the Dirac equation (Theorem §C5a.7.2) |
-> | "upper and lower components" and what they mean | the eigenspaces of $\Gamma^5$ (the Weyl halves, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1\|Theorem §C5a.5.1]], 3) and of $\Gamma^0$ |
+> | "upper and lower components" and what they mean | the eigenspaces of $\Gamma^5$ (the Weyl halves, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2\|Theorem §C5a.5.2]], 3) and of $\Gamma^0$ |
 > | "$\gamma^0$ is off-diagonal", "$\gamma^5$ is diagonal", "$S^{\mu\nu}$ is block diagonal" | traces such as $\operatorname{tr}(\gamma^\mu\gamma^\nu) = 4g^{\mu\nu}$, determinants, eigenvalues: $\pm1$ twice for $\gamma^0$ and $\gamma^5$, $\pm i$ twice for $\gamma^i$ (Theorems §C5a.1.2, 4, §C5a.1.5, §C5a.5.1) |
-> | whether $\psi^\dagger\gamma^0\chi$ is the Dirac form (fails for non-unitary $U$) | the Dirac form $\bar\psi\chi$ and every bilinear $\bar\psi\Gamma\chi$, under unitary $U$ (Theorem §C5a.2.2) |
+> | whether $\psi^\dagger\gamma^0\chi$ is the Dirac form (fails for non-unitary $U$) | the Dirac form $\bar\psi\chi$ and every bilinear $\bar\psi\Gamma\chi$, under unitary $U$ (Theorem §C5a.2.3) |
 > | the matrix form of the Lagrangian | $\mathcal L$, the action and the field equations, under unitary $U$ (Theorem §C5a.7.5) |
 > | — | every physical prediction: cross sections, energies, charges are built from traces and bilinears |
 >
@@ -496,17 +496,17 @@ Quantum Mechanics runs the same computation backwards: there, requiring each com
 > - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-15|Theorem §CB.11.15]] with [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^der-cb-11-15|Derivation]] — the matrices of the Dirac maps in any basis, $\gamma' = U\gamma U^{-1}$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], 2; Theorem §C5a.7.2).
 >
 > Its covariance (Theorem §C5a.7.1) rests on the $\gamma$'s rotating as a vector, infinitesimally and finitely:
-> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-17|Theorem §CB.14.17]] with [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-17|Derivation]] — $[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$.
-> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7b|Derivation (second route: the nested-commutator series)]] — $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ (Theorem §C5a.7.1).
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-17|Theorem §CB.14.17]] with [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-17|Derivation]] — $[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$; physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]].
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-7b|Derivation (second route: the nested-commutator series)]] — $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ (Theorem §C5a.7.1); physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]].
 >
 > $\gamma^5$ and its properties (Theorem §C5a.7.2), and Pauli's theorem behind the closing remark on what depends on the basis:
-> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]] with [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-15|Derivation]] — $(\gamma^5)^2 = \mathbb 1$, $\{\gamma^5, \gamma^\mu\} = 0$ (Derivations §C5a.7.2, step 5, and §C5a.7.8).
+> - [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]] with [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^der-cb-12-15|Derivation]] — $(\gamma^5)^2 = \mathbb 1$, $\{\gamma^5, \gamma^\mu\} = 0$ (Derivations §C5a.7.2, step 5, and §C5a.7.8); physics form: [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]].
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12|Theorem §CB.13.12]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-12|Derivation]] — Pauli's theorem ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|Theorem §C5a.1.3]]).
 >
 > The Lagrangian is a scalar because the Dirac form is invariant, and keeps its form under exactly the changes of basis that keep the Dirac form (Theorem §C5a.7.5):
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]] — Hermitian basis ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]).
-> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-18|Theorem §CB.13.18]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-18|Derivation]] — which changes of basis keep the Dirac form ([[§C5a.2 The Dirac Form#^thm-c5a-2-2|Theorem §C5a.2.2]]).
-> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b|Derivation (second route)]] — $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$ (Theorem §C5a.7.4; [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]).
+> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-18|Theorem §CB.13.18]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-18|Derivation]] — which changes of basis keep the Dirac form ([[§C5a.2 The Dirac Form#^thm-c5a-2-3|Theorem §C5a.2.3]]).
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b|Derivation (second route)]] — $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$ (Theorem §C5a.7.4; [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]); physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]].
 
 > [!remark]- Connections
 > - Quantum Mechanics postulates the Dirac equation for a four-component wave function, with $\boldsymbol\alpha$, $\beta$ chosen to make the equation first order and the density positive; here $\psi$ is a field, the $\gamma$'s and the covariance come from the Lorentz group, the equation follows from a Lagrangian, and $\psi^\dagger\psi$ loses its probability meaning to become a charge density — [[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]], [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]].

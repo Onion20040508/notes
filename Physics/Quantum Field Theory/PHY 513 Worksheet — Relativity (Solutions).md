@@ -1051,7 +1051,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (count). Symmetric: $10 = 9 + 1$; antisymmetric: $6$. Labels: each slot of $(\frac12, \frac12)\otimes(\frac12, \frac12)$ is a product of two spins $\frac12$, i.e. $1\oplus0$ (Clebsch–Gordan), slot by slot; the $(1, 1)$ is the $9$, $(1, 0)\oplus(0, 1)$ the $6$, $(0, 0)$ the trace.
 >
-> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]] (the decomposition is preserved), [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]] (the labels); the user's Lorentz-representation review (2026-10-14), §8 (Two-index tensors) and §10 (Exam summary).
+> *Checked against:* [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|Theorem §C1a.5.6]] (the decomposition is preserved), [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]] (the labels); the user's Lorentz-representation review (2026-10-14), §8 (Two-index tensors) and §10 (Exam summary).
 
 ^sol-wr-18-a
 
@@ -1070,7 +1070,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 4** (compare). Problem 11(b) to first order: $E'_y = E_y + \eta B_z$, $E'_z = E_z - \eta B_y$, $B'_y = B_y - \eta E_z$, $B'_z = B_z + \eta E_y$: the same.
 >
-> *Checked against:* [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]] ($\delta\mathbf E = \boldsymbol\theta\times\mathbf E - \boldsymbol\eta\times\mathbf B$, $\delta\mathbf B = \boldsymbol\theta\times\mathbf B + \boldsymbol\eta\times\mathbf E$ with $\boldsymbol\eta = \eta\hat{\mathbf x}$); numerical check.
+> *Checked against:* [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|Theorem §C3.3.8]] ($\delta\mathbf E = \boldsymbol\theta\times\mathbf E - \boldsymbol\eta\times\mathbf B$, $\delta\mathbf B = \boldsymbol\theta\times\mathbf B + \boldsymbol\eta\times\mathbf E$ with $\boldsymbol\eta = \eta\hat{\mathbf x}$); numerical check.
 
 ^sol-wr-18-b
 
@@ -1087,7 +1087,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 3** (reality). Complex conjugation turns $\boldsymbol\theta - i\boldsymbol\eta$ into $\boldsymbol\theta + i\boldsymbol\eta$, i.e. $(1, 0)$ into $(0, 1)$, and $\mathbf E - i\mathbf B$ into $\mathbf E + i\mathbf B$; parity ($\mathbf E \to -\mathbf E$, $\mathbf B \to \mathbf B$) also exchanges them. A real six-component $F$ is therefore $(1, 0)\oplus(0, 1)$.
 >
-> *Checked against:* [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-1|§C3.3, Caution: Which half of F is called (1, 0)]], [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-3|Theorem §CB.6.3]] (the factorization), [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^ex-c3-2-2|Example §C3.2.2]] (on $(1, 0)$ a boost is a rotation by an imaginary angle; the field is $\mathbf E - i\mathbf B$); numerical check of $\delta(\mathbf E - i\mathbf B)$.
+> *Checked against:* [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|Theorem §C3.3.8]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-1|§C3.3, Caution: Which half of F is called (1, 0)]], [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-3|Theorem §CB.6.3]] (the factorization), [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^ex-c3-2-2|Example §C3.2.2]] (on $(1, 0)$ a boost is a rotation by an imaginary angle; the field is $\mathbf E - i\mathbf B$); numerical check of $\delta(\mathbf E - i\mathbf B)$.
 
 ^sol-wr-18-c
 
@@ -1160,7 +1160,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 > 5. (e) $y = \frac12\ln\frac{13 + 12}{13 - 12} = \ln5 \approx 1.609$. Problem 2(c) (derived there).
 > 6. (f) $[K_3, J_1] = -[J_1, K_3] = -i\varepsilon_{13k}K_k = -i\varepsilon_{132}K_2 = iK_2$. [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^thm-cb-5-6|Theorem §CB.5.6]]; numerical check.
 > 7. (g) The proper non-orthochronous component ($\det = +1$, $\Lambda^0{}_0 = -1$), $\mathcal P\mathcal T\cdot SO^+(1,3)$; no, every exponential lies in $SO^+(1,3)$. [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-12|Theorem §CB.3.12]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-4|Theorem §C1a.6.4]].
-> 8. (h) $(\frac12, \frac12)$; $(0, 0)$; $(1, 1)$. [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]].
+> 8. (h) $(\frac12, \frac12)$; $(0, 0)$; $(1, 1)$. [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-4|§C3.2, Remark: The representations met in the course]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|Theorem §C3.3.7]].
 > 9. (i) Both zero: a plane wave is a null field ($\mathbf E\perp\mathbf B$, $\lvert\mathbf E\rvert = \lvert\mathbf B\rvert$). [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-4|REL Theorem §B4.2.4]], 3; [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]].
 > 10. (j) $+1$; $e^{\eta}$. [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]]; Problem 2(b), Problem 17(b).
 

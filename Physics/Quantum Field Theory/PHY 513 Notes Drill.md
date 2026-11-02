@@ -4632,7 +4632,7 @@ $U(\mathbb 1 + \omega, \varepsilon) = \mathbb 1 - \frac i2\omega_{\mu\nu}\hat J^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - Definition [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^def-c3-4-1|§C3.4.1]] Generators of Quantum Poincaré Transformations; signs across sources: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^cau-c3-4-1|§C3.4, Caution: Signs and names across the sources]]; finite forms: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-4|§C3.4.4]] Finite Transformations as Exponentials; Hermiticity: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|§C3.4.3]] The Generators Are Hermitian versus Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
+> - Definition [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^def-c3-4-1|§C3.4.1]] Generators of Quantum Poincaré Transformations; signs across sources: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^cau-c3-4-1|§C3.4, Caution: Signs and names across the sources]]; finite forms: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|§C3.4.6]] Finite Transformations as Exponentials; Hermiticity: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] The Generators Are Hermitian versus Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
 
 ### [B] Covariance of quantum fields
 
@@ -5050,7 +5050,7 @@ $(j_+, j_-)\otimes(j'_+, j'_-) = \bigoplus(J_+, J_-)$ with $J_\pm$ from $\lvert 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–4 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-12|Derivation §CB.17.12]]; step 5 for two vectors; the tensors: Theorem [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|§C3.3.6]] Two-Index Tensor Fields; over ℝ: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-11|§CB.18.11]] Two-Forms Are (1, 0) ⊕ (0, 1).
+> - Steps 1–4 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-12|Derivation §CB.17.12]]; step 5 for two vectors; the tensors: Theorem [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|§C3.3.7]] Two-Index Tensor Fields; over ℝ: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-11|§CB.18.11]] Two-Forms Are (1, 0) ⊕ (0, 1).
 
 ### [B] Vector fields, upper and lower index ★
 
@@ -5071,7 +5071,7 @@ $A'^\mu(x) = \Lambda^\mu{}_\nu A^\nu(\Lambda^{-1}x)$, generators $\mathcal J^{\m
 
 ### [B] The field strength is (1, 0) ⊕ (0, 1) ★
 
-$\delta\mathbf E = \boldsymbol\theta\times\mathbf E - \boldsymbol\eta\times\mathbf B$, $\delta\mathbf B = \boldsymbol\theta\times\mathbf B + \boldsymbol\eta\times\mathbf E$, so $\delta(\mathbf E \mp i\mathbf B) = (\boldsymbol\theta \mp i\boldsymbol\eta)\times(\mathbf E \mp i\mathbf B)$: $\mathbf E - i\mathbf B$ is $(1, 0)$, $\mathbf E + i\mathbf B$ is $(0, 1)$, see Theorem [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-7|§C3.3.7]] The Field Strength Is (1, 0) ⊕ (0, 1). *Source: Lecture 8 transcript (Sep 28: "it mixes E and B fields according to certain rules") · the user's notes Ch. 7*
+$\delta\mathbf E = \boldsymbol\theta\times\mathbf E - \boldsymbol\eta\times\mathbf B$, $\delta\mathbf B = \boldsymbol\theta\times\mathbf B + \boldsymbol\eta\times\mathbf E$, so $\delta(\mathbf E \mp i\mathbf B) = (\boldsymbol\theta \mp i\boldsymbol\eta)\times(\mathbf E \mp i\mathbf B)$: $\mathbf E - i\mathbf B$ is $(1, 0)$, $\mathbf E + i\mathbf B$ is $(0, 1)$, see Theorem [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|§C3.3.8]] The Field Strength Is (1, 0) ⊕ (0, 1). *Source: Lecture 8 transcript (Sep 28: "it mixes E and B fields according to certain rules") · the user's notes Ch. 7*
 
 ^nd-thm-c3-3-7
 
@@ -5083,7 +5083,7 @@ $\delta\mathbf E = \boldsymbol\theta\times\mathbf E - \boldsymbol\eta\times\math
 
 > [!tip]- Hints: route in the notes
 > - Technique: K2, K16
-> - Steps 1–5 of [[§C3.3 How Fields Transform under the Lorentz Group#^der-c3-3-7|Derivation §C3.3.7]], step 6 (complex combinations), step 7 (compare with spin 1); the angles: Theorem [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-3|§CB.6.3]] Every Lorentz Transformation Factorizes.
+> - Steps 1–5 of [[§C3.3 How Fields Transform under the Lorentz Group#^der-c3-3-8|Derivation §C3.3.8]], step 6 (complex combinations), step 7 (compare with spin 1); the angles: Theorem [[§CB.6 The Lorentz Algebra꞉ the Split J±, Real Forms and 𝔰𝔩(2,ℂ) as a Real Lie Algebra#^thm-cb-6-3|§CB.6.3]] Every Lorentz Transformation Factorizes.
 > - Labels: [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-1|§C3.3, Caution: Which half of F is called (1, 0)]].
 
 ### [C] Parity exchanges the two copies ★
@@ -5114,7 +5114,7 @@ $\bar D(\Lambda) = D(\Lambda)^\ast$ is a representation with generators $-D(\mat
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–4 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14|Derivation §CB.17.14]], step 6 (assemble); the spin-½ case: Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|§C5a.5.4]] Dotted Indices, Conjugation and the Invariant Pairings, Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ (part 3).
+> - Steps 1–4 of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-14|Derivation §CB.17.14]], step 6 (assemble); the spin-½ case: Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|§C5a.5.5]] Dotted Indices, Conjugation and the Invariant Pairings, Theorem [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ (part 3).
 
 ### [B] No finite-dimensional representation is unitary ★★
 
@@ -5135,7 +5135,7 @@ In an inner product with $\mathbf J_\pm$ Hermitian, $\mathbf J$ is Hermitian and
 
 ### [B] The quantum generators are Hermitian ★
 
-All ten generators $\hat J^{\mu\nu}$, $\hat P^\mu$ of a unitary $U(\Lambda, a)$ are Hermitian, boosts included, and $U^{-1} = \mathbb 1 + \frac i2\omega_{\mu\nu}\hat J^{\mu\nu} - i\varepsilon_\mu\hat P^\mu$ to first order, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|§C3.4.3]] The Generators Are Hermitian. *Source: the user's notes Ch. 7 §7.6*
+All ten generators $\hat J^{\mu\nu}$, $\hat P^\mu$ of a unitary $U(\Lambda, a)$ are Hermitian, boosts included, and $U^{-1} = \mathbb 1 + \frac i2\omega_{\mu\nu}\hat J^{\mu\nu} - i\varepsilon_\mu\hat P^\mu$ to first order, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] The Generators Are Hermitian. *Source: the user's notes Ch. 7 §7.6*
 
 ^nd-thm-c3-4-3
 
@@ -5146,11 +5146,11 @@ All ten generators $\hat J^{\mu\nu}$, $\hat P^\mu$ of a unitary $U(\Lambda, a)$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11 ((anti)commutator algebra)
-> - Steps 1–4 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-3|Derivation §C3.4.3]]; the contrast: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]], Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
+> - Steps 1–4 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-5|Derivation §C3.4.5]]; the contrast: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]], Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|§CB.17.15]] No Finite-Dimensional Representation Is Unitary.
 
 ### [C] The Poincaré algebra ★
 
-$U^{-1}\hat P^\rho U = \Lambda^\rho{}_\mu\hat P^\mu$ and the tensor law of $\hat J$ give $[\hat J^{\mu\nu}, \hat P^\rho] = i(g^{\nu\rho}\hat P^\mu - g^{\mu\rho}\hat P^\nu)$, $[\hat P^\mu, \hat P^\nu] = 0$; in three-dimensional form $[\hat K^i, \hat P^j] = -i\delta_{ij}\hat H$, $[\hat K^i, \hat H] = -i\hat P^i$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|§C3.4.6]] The Poincaré Algebra and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] How the Generators Transform. *Source: the user's notes Ch. 7 §7.6 · Yu §3.2*
+$U^{-1}\hat P^\rho U = \Lambda^\rho{}_\mu\hat P^\mu$ and the tensor law of $\hat J$ give $[\hat J^{\mu\nu}, \hat P^\rho] = i(g^{\nu\rho}\hat P^\mu - g^{\mu\rho}\hat P^\nu)$, $[\hat P^\mu, \hat P^\nu] = 0$; in three-dimensional form $[\hat K^i, \hat P^j] = -i\delta_{ij}\hat H$, $[\hat K^i, \hat H] = -i\hat P^i$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|§C3.4.8]] The Poincaré Algebra and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|§C3.4.7]] How the Generators Transform. *Source: the user's notes Ch. 7 §7.6 · Yu §3.2*
 
 ^nd-thm-c3-4-6
 
@@ -5162,12 +5162,12 @@ $U^{-1}\hat P^\rho U = \Lambda^\rho{}_\mu\hat P^\mu$ and the tensor law of $\hat
 
 > [!tip]- Hints: route in the notes
 > - Technique: K3
-> - Steps 1–6 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-5|Derivation §C3.4.5]] (how the generators transform); Steps 1–3 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-6|Derivation §C3.4.6]] ($[\hat J, \hat P]$), step 4 ($[\hat P, \hat P]$), step 5 (three-dimensional form).
+> - Steps 1–6 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-7|Derivation §C3.4.7]] (how the generators transform); Steps 1–3 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-8|Derivation §C3.4.8]] ($[\hat J, \hat P]$), step 4 ($[\hat P, \hat P]$), step 5 (three-dimensional form).
 > - Conservation with explicit time dependence: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-4|§C3.4, Remark: What the algebra says: conservation, and no boost quantum number]].
 
 ### [B] P² is a Casimir; an invariant vacuum has zero momentum ★
 
-$\hat P^2$ commutes with all ten generators and is Poincaré invariant; a Lorentz-invariant vacuum eigenvector of $\hat P^\mu$ has $p_0^\mu = 0$, so the generators are the normal-ordered $\hat H$, $\hat{\mathbf P}$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|§C3.4.7]] P² Is a Casimir Operator and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|§C3.4.8]] An Invariant Vacuum Has Zero Four-Momentum. *Source: the user's notes Ch. 7 §7.6*
+$\hat P^2$ commutes with all ten generators and is Poincaré invariant; a Lorentz-invariant vacuum eigenvector of $\hat P^\mu$ has $p_0^\mu = 0$, so the generators are the normal-ordered $\hat H$, $\hat{\mathbf P}$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-9|§C3.4.9]] P² Is a Casimir Operator and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-10|§C3.4.10]] An Invariant Vacuum Has Zero Four-Momentum. *Source: the user's notes Ch. 7 §7.6*
 
 ^nd-thm-c3-4-7
 
@@ -5178,7 +5178,7 @@ $\hat P^2$ commutes with all ten generators and is Poincaré invariant; a Lorent
 
 > [!tip]- Hints: route in the notes
 > - Technique: K3, K14
-> - Steps 1–3 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-7|Derivation §C3.4.7]]; Steps 1–4 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-8|Derivation §C3.4.8]].
+> - Steps 1–3 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-9|Derivation §C3.4.9]]; Steps 1–4 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-10|Derivation §C3.4.10]].
 
 ### [B] Lorentz transformations of a quantum field: orbital plus spin ★
 
@@ -5231,7 +5231,7 @@ For the free real scalar the normal-ordered Noether charges $\hat P^\mu = \int d
 > [!tip]- Hints: route in the notes
 > - Technique: K11 ((anti)commutator algebra), K12
 > - Steps 1–2 of [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^der-c3-5-6|Derivation §C3.5.6]], step 3 (momentum), steps 4–5 (rotations, boosts), step 6 (generators), step 7 (boost dictionary).
-> - Normal ordering and the vacuum: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|§C3.4.8]] An Invariant Vacuum Has Zero Four-Momentum; [[Larsen PHY 513|register: Quantum Poincaré transformations]].
+> - Normal ordering and the vacuum: Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-10|§C3.4.10]] An Invariant Vacuum Has Zero Four-Momentum; [[Larsen PHY 513|register: Quantum Poincaré transformations]].
 
 # T8. Spinors, the Dirac equation and its solutions
 
@@ -5370,7 +5370,7 @@ $\bar\psi \equiv \psi^\dagger\gamma^0$, a row; not the Hermitian conjugate; basi
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7 (conjugating bilinears)
-> - Definition [[§C5a.2 The Dirac Form#^def-c5a-2-1|§C5a.2.1]] The Dirac Conjugate; why $\psi^\dagger\psi$ fails: [[§C5a.6 The Dirac Conjugate and the Bilinears#^rem-c5a-6-1|§C5a.6, Remark: Why ψ†ψ is not a scalar]]; changes of basis: Theorem [[§C5a.2 The Dirac Form#^thm-c5a-2-2|§C5a.2.2]] Which Changes of Basis Preserve ψ̄; $\gamma^0$ in two roles: [[§C5a.2 The Dirac Form#^rem-c5a-2-1|§C5a.2, Remark: γ⁰ in two roles]].
+> - Definition [[§C5a.2 The Dirac Form#^def-c5a-2-1|§C5a.2.1]] The Dirac Conjugate; why $\psi^\dagger\psi$ fails: [[§C5a.6 The Dirac Conjugate and the Bilinears#^rem-c5a-6-1|§C5a.6, Remark: Why ψ†ψ is not a scalar]]; changes of basis: Theorem [[§C5a.2 The Dirac Form#^thm-c5a-2-3|§C5a.2.3]] Which Changes of Basis Preserve ψ̄; $\gamma^0$ in two roles: [[§C5a.2 The Dirac Form#^rem-c5a-2-1|§C5a.2, Remark: γ⁰ in two roles]].
 
 ### [B] Fermion bilinear
 
@@ -5429,7 +5429,7 @@ $P_L = \frac12(\mathbb 1 - \gamma^5)$, $P_R = \frac12(\mathbb 1 + \gamma^5)$; $\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7 (chirality projectors)
-> - Definition [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|§C5a.5.1]] Chirality Projectors; properties: Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] Properties of the Chirality Projectors; helicity versus chirality: [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]].
+> - Definition [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|§C5a.5.1]] Chirality Projectors; properties: Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|§C5a.5.3]] Properties of the Chirality Projectors; helicity versus chirality: [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]].
 
 ### [B] The Dirac equation
 
@@ -5736,7 +5736,7 @@ $[S^{\mu\nu}, S^{\rho\sigma}]$ = the Lorentz algebra with $\mathcal J \to S$, se
 
 ### [A] The generators in the chiral basis ★★
 
-$S^{ij} = \frac12\varepsilon^{ijk}\operatorname{diag}(\sigma^k, \sigma^k)$, $S^{0i} = -\frac i2\operatorname{diag}(\sigma^i, -\sigma^i)$: all block diagonal, $\mathbf J = \frac12\boldsymbol\Sigma$, $\mathbf K = -\frac i2\operatorname{diag}(\boldsymbol\sigma, -\boldsymbol\sigma)$, see Theorem [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|§C5a.3.1]] The Generators in the Chiral Basis. **[class exercise, Lecture 7]** ($S^{ij}$: "you could compute … that takes a little bit more work because you need to multiply"). *Source: Lecture 7, slide "Explicit Form of Dirac Matrices" and transcript · Lecture 8, "Cheat Sheet I"*
+$S^{ij} = \frac12\varepsilon^{ijk}\operatorname{diag}(\sigma^k, \sigma^k)$, $S^{0i} = -\frac i2\operatorname{diag}(\sigma^i, -\sigma^i)$: all block diagonal, $\mathbf J = \frac12\boldsymbol\Sigma$, $\mathbf K = -\frac i2\operatorname{diag}(\boldsymbol\sigma, -\boldsymbol\sigma)$, see Theorem [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|§C5a.3.2]] The Generators in the Chiral Basis. **[class exercise, Lecture 7]** ($S^{ij}$: "you could compute … that takes a little bit more work because you need to multiply"). *Source: Lecture 7, slide "Explicit Form of Dirac Matrices" and transcript · Lecture 8, "Cheat Sheet I"*
 
 ^nd-thm-c5a-3-1
 
@@ -5748,12 +5748,12 @@ $S^{ij} = \frac12\varepsilon^{ijk}\operatorname{diag}(\sigma^k, \sigma^k)$, $S^{
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Step 1 of [[§C5a.3 The Lorentz Action on Spinor Space#^der-c5a-3-1|Derivation §C5a.3.1]] (block form), step 2 (rotations), step 3 (boosts), step 4 ($\mathbf J$, $\mathbf K$); all six as matrices: Example [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|§C5a.3.1]] The Six Spinor Generators as 4×4 Matrices.
+> - Step 1 of [[§C5a.3 The Lorentz Action on Spinor Space#^der-c5a-3-2|Derivation §C5a.3.2]] (block form), step 2 (rotations), step 3 (boosts), step 4 ($\mathbf J$, $\mathbf K$); all six as matrices: Example [[§C5a.3 The Lorentz Action on Spinor Space#^ex-c5a-3-1|§C5a.3.1]] The Six Spinor Generators as 4×4 Matrices.
 > - The factor ½ and half angles: [[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-1|§C5a.3, Remark: Why half the angle]].
 
 ### [B] The Dirac representation is (½, 0) ⊕ (0, ½) ★★
 
-In the chiral basis $\mathbf J_+ = \frac12\operatorname{diag}(\boldsymbol\sigma, 0)$, $\mathbf J_- = \frac12\operatorname{diag}(0, \boldsymbol\sigma)$: the upper half is $(\frac12, 0)$, the lower $(0, \frac12)$; a spinor representation ($2\pi$ gives $-1$), see Theorem [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|§C5a.3.2]] The Dirac Representation Is (½, 0) ⊕ (0, ½). *Source: Lecture 7, slide "Spinors and Boosts" ("4 dim. Dirac spinor representation is reducible") · Lecture 8, slide "Weyl Spinors"*
+In the chiral basis $\mathbf J_+ = \frac12\operatorname{diag}(\boldsymbol\sigma, 0)$, $\mathbf J_- = \frac12\operatorname{diag}(0, \boldsymbol\sigma)$: the upper half is $(\frac12, 0)$, the lower $(0, \frac12)$; a spinor representation ($2\pi$ gives $-1$), see Theorem [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|§C5a.3.3]] The Dirac Representation Is (½, 0) ⊕ (0, ½). *Source: Lecture 7, slide "Spinors and Boosts" ("4 dim. Dirac spinor representation is reducible") · Lecture 8, slide "Weyl Spinors"*
 
 ^nd-thm-c5a-3-2
 
@@ -5765,7 +5765,7 @@ In the chiral basis $\mathbf J_+ = \frac12\operatorname{diag}(\boldsymbol\sigma,
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (identifying a representation)
-> - Steps 1–3 of [[§C5a.3 The Lorentz Action on Spinor Space#^der-c5a-3-2|Derivation §C5a.3.2]]; basis-free: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-3|§CB.18.3]] The Dirac Module Restricted to SL(2,ℂ) Is (½, 0) ⊕ (0, ½); the preview's caution: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-3|§C5a.5, Caution: The upper components are not the particle]].
+> - Steps 1–3 of [[§C5a.3 The Lorentz Action on Spinor Space#^der-c5a-3-3|Derivation §C5a.3.3]]; basis-free: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-3|§CB.18.3]] The Dirac Module Restricted to SL(2,ℂ) Is (½, 0) ⊕ (0, ½); the preview's caution: [[§C5a.5 Chirality and Weyl Spinors#^cau-c5a-5-3|§C5a.5, Caution: The upper components are not the particle]].
 
 ### [A] The spinor Lorentz matrices are pairs of Weyl matrices ★★
 
@@ -5950,7 +5950,7 @@ For commuting components $(\bar\psi\Gamma\psi)^\ast = \bar\psi\bar\Gamma\psi$ wi
 
 ### [B] γ⁵ is Lorentz invariant and separates the Weyl halves ★
 
-$\gamma^5$ commutes with every $S^{\mu\nu}$ and $\Lambda_{1/2}$; in the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$; on the Dirac representation $\gamma^5 = \frac43(\mathbf J_-^2 - \mathbf J_+^2)$, and its eigenspaces $\mp1$ carry $(\frac12, 0)$, $(0, \frac12)$ in every basis, see Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|§C5a.5.1]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module. *Source: the user's notes Ch. 8 §8.2 · PS §3.4*
+$\gamma^5$ commutes with every $S^{\mu\nu}$ and $\Lambda_{1/2}$; in the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$; on the Dirac representation $\gamma^5 = \frac43(\mathbf J_-^2 - \mathbf J_+^2)$, and its eigenspaces $\mp1$ carry $(\frac12, 0)$, $(0, \frac12)$ in every basis, see Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module. *Source: the user's notes Ch. 8 §8.2 · PS §3.4*
 
 ^nd-thm-c5a-5-1
 
@@ -5962,11 +5962,11 @@ $\gamma^5$ commutes with every $S^{\mu\nu}$ and $\Lambda_{1/2}$; in the chiral b
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5, K16
-> - Step 1 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-1|Derivation §C5a.5.1]] (chiral form), step 2 ($\mathbf J\cdot\mathbf K$), step 3 (eigenspaces); $K_i = i\gamma^5J_i$: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module, part 1.
+> - Step 1 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-2|Derivation §C5a.5.2]] (chiral form), step 2 ($\mathbf J\cdot\mathbf K$), step 3 (eigenspaces); $K_i = i\gamma^5J_i$: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module, part 1.
 
 ### [B] Properties of the chirality projectors ★
 
-$P_{L,R}$ are complementary projectors; $P_L\gamma^\mu = \gamma^\mu P_R$; they commute with $S^{\mu\nu}$ and $\Lambda_{1/2}$; $\overline{P_L\psi} = \bar\psi P_R$, see Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] Properties of the Chirality Projectors. *Source: the user's notes Ch. 8 · PS §3.4 · Problem Set 6, Problem 5 (chiral transformations)*
+$P_{L,R}$ are complementary projectors; $P_L\gamma^\mu = \gamma^\mu P_R$; they commute with $S^{\mu\nu}$ and $\Lambda_{1/2}$; $\overline{P_L\psi} = \bar\psi P_R$, see Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|§C5a.5.3]] Properties of the Chirality Projectors. *Source: the user's notes Ch. 8 · PS §3.4 · Problem Set 6, Problem 5 (chiral transformations)*
 
 ^nd-thm-c5a-5-2
 
@@ -5977,7 +5977,7 @@ $P_{L,R}$ are complementary projectors; $P_L\gamma^\mu = \gamma^\mu P_R$; they c
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7 (chirality projectors)
-> - Steps 1–4 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-2|Derivation §C5a.5.2]]; $\gamma^5$ properties: Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|§CB.12.15]] Algebraic Properties of γ⁵.
+> - Steps 1–4 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-3|Derivation §C5a.5.3]]; $\gamma^5$ properties: Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|§CB.12.15]] Algebraic Properties of γ⁵.
 
 ### [PS] Pauli's theorem; the Dirac basis
 
@@ -8149,7 +8149,7 @@ $U(\mathcal T)\hat{\mathcal L}(t, \mathbf x)U(\mathcal T)^{-1} = \hat{\mathcal L
 
 ### [B] Time reversal twice is −1 on fermions ★
 
-$U(\mathcal T)^2\hat a^s_{\mathbf p}U(\mathcal T)^{-2} = -\hat a^s_{\mathbf p}$ (likewise $\hat b$), so $U(\mathcal T)^2 = (-1)^{\hat N_a + \hat N_b}$; on the complex scalar $U(\mathcal T)^2 = \mathbb 1$, see Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|§C9.9.9]] Time Reversal Twice Is −1 on Fermions and [[§C9.12 C, T and CPT for the Complex Scalar Field#^rem-c9-12-1|§C9.12, Remark: Time reversal twice is +1 on the scalar field]]. *Source: PS §3.6, p. 68 ("two successive spin flips return a spin to $(-1)$ times the original state")*
+$U(\mathcal T)^2\hat a^s_{\mathbf p}U(\mathcal T)^{-2} = -\hat a^s_{\mathbf p}$ (likewise $\hat b$), so $U(\mathcal T)^2 = (-1)^{\hat N_a + \hat N_b}$; on the complex scalar $U(\mathcal T)^2 = \mathbb 1$, see Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions and [[§C9.12 C, T and CPT for the Complex Scalar Field#^rem-c9-12-1|§C9.12, Remark: Time reversal twice is +1 on the scalar field]]. *Source: PS §3.6, p. 68 ("two successive spin flips return a spin to $(-1)$ times the original state")*
 
 ^nd-thm-c9-9-9
 
@@ -8161,7 +8161,7 @@ $U(\mathcal T)^2\hat a^s_{\mathbf p}U(\mathcal T)^{-2} = -\hat a^s_{\mathbf p}$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15.
-> - Steps 1–3 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|§C9.9.9]] Time Reversal Twice Is −1 on Fermions; Kramers degeneracy (★, beyond the course): [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^rem-c9-9-3|§C9.9, ★ Remark: Kramers degeneracy]].
+> - Steps 1–3 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions; Kramers degeneracy (★, beyond the course): [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^rem-c9-9-3|§C9.9, ★ Remark: Kramers degeneracy]].
 
 ### [B] The three matrices multiply to γ⁵ ★
 
@@ -8790,7 +8790,7 @@ $\Lambda = e^{\frac12\omega_{\alpha\beta}M^{\alpha\beta}} = e^{-\frac i2\omega_{
 
 ### [C] The four-vector as (½, ½), as a bispinor and as (½, 0) ⊗ (0, ½)
 
-The vector representation is equivalent to $(\frac12, \frac12)$ by the Casimirs and by the intertwiner $v \mapsto (v_\mu\sigma^\mu)i\sigma^2$; equivalently $X_{a\dot b} = x_\mu(\sigma^\mu)_{a\dot b}$ carries one undotted and one dotted index, $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-7|§CB.17.7]] The Vector Representation Is (½, ½), Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|§C5a.5.5]] A Four-Vector Is a Bispinor and Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|§CB.17.12]] Tensor Products Add Each Copy Separately.
+The vector representation is equivalent to $(\frac12, \frac12)$ by the Casimirs and by the intertwiner $v \mapsto (v_\mu\sigma^\mu)i\sigma^2$; equivalently $X_{a\dot b} = x_\mu(\sigma^\mu)_{a\dot b}$ carries one undotted and one dotted index, $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$, see Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-7|§CB.17.7]] The Vector Representation Is (½, ½), Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-6|§C5a.5.6]] A Four-Vector Is a Bispinor and Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|§CB.17.12]] Tensor Products Add Each Copy Separately.
 
 ^nd-eq-t7-3
 
@@ -8801,7 +8801,7 @@ The vector representation is equivalent to $(\frac12, \frac12)$ by the Casimirs 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Steps 1–4 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-5|Derivation §C5a.5.5]]; Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|§CB.17.14]] Complex Conjugation Exchanges the Two Copies; step 2 and the first bullet of "What the proof shows" of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7b|proof of Theorem §CB.17.7, second route]].
+> - Steps 1–4 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-6|Derivation §C5a.5.6]]; Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|§CB.17.14]] Complex Conjugation Exchanges the Two Copies; step 2 and the first bullet of "What the proof shows" of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^pf-cb-17-7b|proof of Theorem §CB.17.7, second route]].
 
 ### [B] The field law classically and as an operator commutator
 
@@ -8829,7 +8829,7 @@ $U(\Lambda, a)\hat\phi(x)U(\Lambda, a)^{-1} = \hat\phi(\Lambda x + a)$ is equiva
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - Steps 3–4 of [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^der-c3-5-5|Derivation §C3.5.5]]; the inverse in the group: step 1 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-4|Derivation §C3.4.4]]; the side of the inverse for discrete symmetries: [[§C9.3 Parity on States, Spinors and the Dirac Field#^cau-c9-3-1|§C9.3, Caution: Which side the inverse is on, and the names of the phases]].
+> - Steps 3–4 of [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^der-c3-5-5|Derivation §C3.5.5]]; the inverse in the group: step 1 of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^der-c3-4-6|Derivation §C3.4.6]]; the side of the inverse for discrete symmetries: [[§C9.3 Parity on States, Spinors and the Dirac Field#^cau-c9-3-1|§C9.3, Caution: Which side the inverse is on, and the names of the phases]].
 
 ### [B] Three forms of the covariance of γ
 
@@ -8923,7 +8923,7 @@ $e^{-i\eta S^{03}}$; $\operatorname{diag}(\cosh\frac\eta2 - \sinh\frac\eta2\sigm
 
 ### [B] Four forms of γ⁵
 
-$\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$; in the chiral basis $\operatorname{diag}(-\mathbb 1, \mathbb 1)$; $-\frac i{24}\varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$; on the Dirac representation $\frac43(\mathbf J_-^2 - \mathbf J_+^2)$, see Definition [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|§CB.12.14]] The Matrix γ⁵, Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|§C5a.5.1]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product.
+$\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$; in the chiral basis $\operatorname{diag}(-\mathbb 1, \mathbb 1)$; $-\frac i{24}\varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$; on the Dirac representation $\frac43(\mathbf J_-^2 - \mathbf J_+^2)$, see Definition [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|§CB.12.14]] The Matrix γ⁵, Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product.
 
 ^nd-eq-t8-7
 
@@ -8934,7 +8934,7 @@ $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$; in the chiral basis $\operatorna
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5, K16
-> - Steps 1–2 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-1|Derivation §C5a.5.1]]; Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product; ε convention: [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]].
+> - Steps 1–2 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-2|Derivation §C5a.5.2]]; Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product; ε convention: [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]].
 
 ### [B] Spin sums blockwise and by covariance
 
@@ -8953,7 +8953,7 @@ $\sum_su^s\bar u^s = \slashed p + m$ computed in blocks at general $p$, or at re
 
 ### [B] Chirality three ways
 
-The left-handed half of a Dirac spinor is the $\gamma^5 = -1$ eigenspace, the $(\frac12, 0)$ piece of the Dirac representation, and $P_L\psi = (\psi_L, 0)$ in the chiral basis, see Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|§C5a.5.1]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves, Theorem [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|§C5a.3.2]] The Dirac Representation Is (½, 0) ⊕ (0, ½) and Definition [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|§C5a.5.1]] Chirality Projectors.
+The left-handed half of a Dirac spinor is the $\gamma^5 = -1$ eigenspace, the $(\frac12, 0)$ piece of the Dirac representation, and $P_L\psi = (\psi_L, 0)$ in the chiral basis, see Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves, Theorem [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|§C5a.3.3]] The Dirac Representation Is (½, 0) ⊕ (0, ½) and Definition [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|§C5a.5.1]] Chirality Projectors.
 
 ^nd-eq-t8-9
 
@@ -8964,7 +8964,7 @@ The left-handed half of a Dirac spinor is the $\gamma^5 = -1$ eigenspace, the $(
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16, K7
-> - Step 3 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-1|Derivation §C5a.5.1]]; Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module; [[§C5a.3 The Lorentz Action on Spinor Space#^der-c5a-3-2|Derivation §C5a.3.2]].
+> - Step 3 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-2|Derivation §C5a.5.2]]; Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module; [[§C5a.3 The Lorentz Action on Spinor Space#^der-c5a-3-3|Derivation §C5a.3.3]].
 
 ### [C] Orthogonality of u and v two ways
 
@@ -9140,4 +9140,4 @@ The discrete laws of the two fields match line by line: the same operations on m
 - [ ] Q4 **[why]** Why do the currents $\hat j^\mu$ and $\mathsf V^\mu$ have the same signs under all four?
 
 > [!tip]- Hints: route in the notes
-> - The two tables; Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-4|§C9.3.4]] Parity on the Negative-Frequency Spinors; Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|§C9.9.9]] Time Reversal Twice Is −1 on Fermions; Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-4|§C9.12.4]] The U(1) Current under P, C and T.
+> - The two tables; Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-4|§C9.3.4]] Parity on the Negative-Frequency Spinors; Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions; Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-4|§C9.12.4]] The U(1) Current under P, C and T.

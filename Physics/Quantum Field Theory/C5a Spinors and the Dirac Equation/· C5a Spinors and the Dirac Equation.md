@@ -36,20 +36,20 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ
 - [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-7|§C5a.1.7]] The Chiral Matrices Satisfy the Clifford Algebra
 - [[§C5a.2 The Dirac Form#^thm-c5a-2-1|§C5a.2.1]] Hermiticity of the Dirac Matrices
-- [[§C5a.2 The Dirac Form#^thm-c5a-2-2|§C5a.2.2]] Which Changes of Basis Preserve ψ̄
-- [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|§C5a.3.1]] The Generators in the Chiral Basis
-- [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|§C5a.3.2]] The Dirac Representation Is (½, 0) ⊕ (0, ½)
+- [[§C5a.2 The Dirac Form#^thm-c5a-2-3|§C5a.2.3]] Which Changes of Basis Preserve ψ̄
+- [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|§C5a.3.2]] The Generators in the Chiral Basis
+- [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|§C5a.3.3]] The Dirac Representation Is (½, 0) ⊕ (0, ½)
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|§C5a.4.1]] The Weyl Matrices Lie in SL(2, C)
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|§C5a.4.2]] The Weyl Matrices Cover the Vector Representation
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|§C5a.4.3]] The Spinor Lorentz Matrices Are Pairs of Weyl Matrices
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|§C5a.4.4]] The Rotation Matrices in the Dirac Representation, Entry by Entry
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|§C5a.4.5]] The Boost Matrices in the Dirac Representation, Entry by Entry
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-6|§C5a.4.6]] A Boost Leaves No Spinor Component Invariant
-- [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|§C5a.5.1]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves
-- [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] Properties of the Chirality Projectors
-- [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|§C5a.5.3]] ε Is the Invariant Form of a Weyl Slot
-- [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|§C5a.5.4]] Dotted Indices, Conjugation and the Invariant Pairings
-- [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|§C5a.5.5]] A Four-Vector Is a Bispinor
+- [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves
+- [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|§C5a.5.3]] Properties of the Chirality Projectors
+- [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|§C5a.5.4]] ε Is the Invariant Form of a Weyl Slot
+- [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-5|§C5a.5.5]] Dotted Indices, Conjugation and the Invariant Pairings
+- [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-6|§C5a.5.6]] A Four-Vector Is a Bispinor
 - [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|§C5a.6.1]] The Dirac Conjugate Transforms with the Inverse
 - [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|§C5a.6.2]] Scalar, Vector and Tensor Bilinears
 - [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-3|§C5a.6.3]] Pseudoscalar and Axial Vector under Proper Lorentz Transformations

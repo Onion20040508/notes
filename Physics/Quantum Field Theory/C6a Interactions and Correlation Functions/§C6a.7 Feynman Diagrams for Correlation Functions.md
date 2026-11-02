@@ -363,7 +363,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 >
 > ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]), the real field's propagator: both species have mass $m$, and each ordering is carried by one of them.
 >
-> **Step 7** (arrows). By Step 5 every complex-scalar line joins a $\hat\phi$ and a $\hat\phi^\dagger$, so it has two different ends and is drawn with an arrow; by Step 6 and Step 1 its value $D_F(x - y) = D_F(y - x)$ does not depend on the direction in which it is read. The arrow is bookkeeping for which pairings exist (and so for symmetry factors, [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]), not a different function.
+> **Step 7** (arrows). By Step 5 every complex-scalar line joins a $\hat\phi$ and a $\hat\phi^\dagger$, so it has two different ends and is drawn with an arrow; by Step 6 and Step 1 its value $D_F(x - y) = D_F(y - x)$ does not depend on the direction in which it is read. The arrow is bookkeeping for which pairings exist (and so for symmetry factors, [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|Theorem §C6a.9.2]]), not a different function.
 >
 > **What the derivation shows.**
 > - "A line has no direction" is the evenness of $D_F$, which comes from $\tilde D_F$ depending on $p^2$ only. The numerator $\slashed{p} + m$ of $\tilde S_F$ is odd in $p$ in its $\slashed{p}$ part, and charge conservation forces each Dirac line to have one end of each kind.

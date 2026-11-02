@@ -88,7 +88,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-6|§C9.9.6]] Time Reversal on the Negative-Frequency Spinors
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-7|§C9.9.7]] Time Reversal on the Dirac Field
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-8|§C9.9.8]] Time Reversal on the Dirac Conjugate Field
-- [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|§C9.9.9]] Time Reversal Twice Is −1 on Fermions
+- [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-1|§C9.10.1]] The Vector Current under Time Reversal
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-2|§C9.10.2]] Time Reversal on a General Bilinear
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-3|§C9.10.3]] The Scalar Bilinear Is Time-Reversal Invariant

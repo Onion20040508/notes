@@ -247,7 +247,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 >
 > **What the derivation shows.**
 > - What changes from $\phi^4$: the propagator of each line depends on its field, pairings are restricted by kinds, and $n!\,(4!)^n$ becomes $|G_{\mathbf n}|$; the cancellation of Step 5 is complete for vertices exactly when the Lagrangian carries $\frac{1}{\prod_km_{t,k}!}$, which is why $\frac{g}{3!}$, $\frac{\lambda}{4!}$, $\frac\lambda4 = \frac{\lambda}{2!\,2!}$ are chosen and $\mu\Phi\phi^2$ gives $-2i\mu$.
-> - Kinds make $S$ smaller: a symmetry must map each leg to a leg of the same kind ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3), so oriented loops cannot be flipped ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]).
+> - Kinds make $S$ smaller: a symmetry must map each leg to a leg of the same kind ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3), so oriented loops cannot be flipped ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|Theorem §C6a.9.2]]).
 
 ^der-c6a-12-3
 
@@ -313,7 +313,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 
 ## Examples
 
-The examples of Problem Set 8 are already worked: the oriented tadpole, fish and sunset in [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-7|Example §C6a.9.7]] (with [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]), and the cubic–quartic scattering diagrams in [[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-4|Example §C6b.2.4]] and [[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-5|Example §C6b.2.5]]. The two below are correlation functions not computed there.
+The examples of Problem Set 8 are already worked: the oriented tadpole, fish and sunset in [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-7|Example §C6a.9.7]] (with [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|Theorem §C6a.9.2]]), and the cubic–quartic scattering diagrams in [[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-4|Example §C6b.2.4]] and [[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-5|Example §C6b.2.5]]. The two below are correlation functions not computed there.
 
 > [!example] Example §C6a.12.1: The Cubic–Quartic Two-Point Function at Order g²
 > ![[ph-qft-c6a-12-2.svg]]

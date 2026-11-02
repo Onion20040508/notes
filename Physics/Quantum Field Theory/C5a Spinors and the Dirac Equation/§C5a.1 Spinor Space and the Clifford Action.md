@@ -182,7 +182,7 @@ The bar on $\bar\sigma$ has nothing to do with the bar of the Dirac conjugate $\
 > \gamma^0 = \begin{pmatrix} 0 & \mathbb 1 \\ \mathbb 1 & 0 \end{pmatrix}, \qquad \gamma^i = \begin{pmatrix} 0 & \sigma^i \\ -\sigma^i & 0 \end{pmatrix}, \qquad\text{i.e.}\qquad \gamma^\mu = \begin{pmatrix} 0 & \sigma^\mu \\ \bar\sigma^\mu & 0 \end{pmatrix} .
 > $$
 >
-> A Dirac spinor in this basis is written $\psi = \binom{\psi_L}{\psi_R}$, with two-component upper and lower halves (their Lorentz transformation, as left- and right-handed Weyl spinors, is derived in §C5a.3–§C5a.4: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-2|Def. §C5a.4.2]]).
+> A Dirac spinor in this basis is written $\psi = \binom{\psi_L}{\psi_R}$, with two-component upper and lower halves (their Lorentz transformation, as left- and right-handed Weyl spinors, is derived in §C5a.3–§C5a.4: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-2|Def. §C5a.4.2]]).
 >
 > *Source: PS §3.2, eqs. (3.25), (3.36), (3.42) · PHY 513 Lecture 7, Part B (slide "Explicit Form of Dirac Matrices"); Lecture 8, Cheat Sheet I and Part C ("Economical form of all 4 $\gamma$-matrices") · the user's PHY 513 notes, Ch. 8 §8.1, eq. (chiralbasis), §8.2, eq. (weylsplit) · Yu §5.2, eqs. (5.68), (5.75)*
 
@@ -203,7 +203,7 @@ The bar on $\bar\sigma$ has nothing to do with the bar of the Dirac conjugate $\
 > **3. Explicitly (the lecture's check).** $(\gamma^0)^2 = \operatorname{diag}(\mathbb 1, \mathbb 1)$; $\gamma^0\gamma^i = \operatorname{diag}(-\sigma^i, \sigma^i)$ and $\gamma^i\gamma^0 = \operatorname{diag}(\sigma^i, -\sigma^i)$, so $\{\gamma^0, \gamma^i\} = 0$; $\gamma^i\gamma^j = \operatorname{diag}(-\sigma^i\sigma^j, -\sigma^i\sigma^j)$, so $\{\gamma^i, \gamma^j\} = -\operatorname{diag}(\{\sigma^i, \sigma^j\}, \{\sigma^i, \sigma^j\}) = -2\delta^{ij}\mathbb 1_4 = 2g^{ij}\mathbb 1_4$. All ten conditions hold.
 >
 > **What the derivation shows**
-> - The Clifford algebra of $\gamma$ is the pair identity of $\sigma$, $\bar\sigma$ stacked off-diagonally; every product of two $\gamma$'s is block diagonal, every product of an odd number off-diagonal. That is why the generators (products of two) will not mix the halves (Theorem §C5a.3.1).
+> - The Clifford algebra of $\gamma$ is the pair identity of $\sigma$, $\bar\sigma$ stacked off-diagonally; every product of two $\gamma$'s is block diagonal, every product of an odd number off-diagonal. That is why the generators (products of two) will not mix the halves (Theorem §C5a.3.2).
 
 ^der-c5a-1-7
 
@@ -237,7 +237,7 @@ The bar on $\bar\sigma$ has nothing to do with the bar of the Dirac conjugate $\
 
 > [!remark]- Connections
 > - The index rule for spinors is the same slot rule as for spacetime tensors, with $U$ in place of $\Lambda$ and no metric to raise or lower; spinor indices are matrix indices of the third kind in the index-slot classification — [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^def-c3-1-1|Def. §C3.1.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]].
-> - $\sigma^\mu$ and $\bar\sigma^\mu$ are to Weyl spinors what $\gamma^\mu$ is to Dirac spinors, and $\gamma^\mu$ is literally built from them in the chiral basis — [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]].
+> - $\sigma^\mu$ and $\bar\sigma^\mu$ are to Weyl spinors what $\gamma^\mu$ is to Dirac spinors, and $\gamma^\mu$ is literally built from them in the chiral basis — [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]].
 > - The sixteen products are the matrices of the fermion bilinears (scalar, pseudoscalar, vector, axial vector, tensor) and of every trace identity used in scattering amplitudes — [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|Theorem §C5a.14.8]].
 > - Component by component, the quantum field is four operators $\hat\psi_a$ with c-number coefficients $u^s_a(p)$; a change of basis acts on the index $a$ of both, never on the mode operators — [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-3|§C5b.2, Remark: A spinor-valued operator, component by component]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^cau-c5b-2-2|§C5b.2, Caution: u is not a four-vector]].
 > - The layers of spinor space mirror those of Minkowski space: a vector space, then an algebraic structure (the Clifford product here, the metric there), then a group that preserves it; for spinors the Clifford action comes before any group, and the Lorentz algebra is built from it — [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]], [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]].

@@ -93,7 +93,7 @@ C6a follows the course (Lectures 13–14) and the user's notes (Ch. 13–14), no
 - [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|§C6a.8.1]] The Coefficient of a Diagram Is 1/S
 - [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|§C6a.8.4]] Feynman Rules for Correlation Functions in Position Space
 - [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-5|§C6a.8.5]] Correlation Functions of an Odd Number of Fields Vanish in φ⁴ Theory
-- [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|§C6a.9.1]] Symmetry Factors with Oriented Lines
+- [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|§C6a.9.2]] Symmetry Factors with Oriented Lines
 - [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|§C6a.10.1]] Momentum Is Conserved at Every Vertex
 - [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|§C6a.10.2]] Feynman Rules for Correlation Functions in Momentum Space
 - [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-3|§C6a.10.3]] The Loop Factor D_F(0) Diverges Quadratically
