@@ -140,7 +140,7 @@ tags: [quantum-field-theory, level-c]
 
 ## Any frame: the Møller velocity
 
-In [[§C6b.4 The Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]] everything except the factor $(4E_AE_B|\mathbf v_B|)^{-1}$ is Lorentz invariant: $|\mathcal M|^2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]) and the measure ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]). In the rest frame of $A$, $|\mathbf v_B|$ is the speed of $B$ relative to $A$; Yu replaces it by an invariant that takes this value there.
+In [[§C6b.4 The Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]] everything except the factor $(4E_AE_B|\mathbf v_B|)^{-1}$ is Lorentz invariant: $|\mathcal M|^2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]]) and the measure ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]). In the rest frame of $A$, $|\mathbf v_B|$ is the speed of $B$ relative to $A$; Yu replaces it by an invariant that takes this value there.
 
 > [!definition] Definition §C6b.4.3: Møller Velocity
 > For two particles with four-momenta $p_A$, $p_B$ and masses $m_A$, $m_B$, the **Møller velocity** is
@@ -179,7 +179,7 @@ In [[§C6b.4 The Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]] everything excep
 > v_{\rm Møl} = \frac{1}{m_AE_B}\sqrt{m_A^2E_B^2 - m_A^2m_B^2} = \frac{m_A\sqrt{E_B^2 - m_B^2}}{m_AE_B} = \frac{|\mathbf p_B|}{E_B} = |\mathbf v_B| .
 > $$
 >
-> **Step 3** (the rest of the integrand). $|\mathcal M|^2$ is invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]); each $\frac{d^3p_j}{(2\pi)^32E_j}$ is invariant ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]); and $\delta^4(\Lambda P - \sum_j\Lambda p_j) = |\det\Lambda|^{-1}\delta^4(P - \sum_jp_j) = \delta^4(P - \sum_jp_j)$ ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1). The same argument written out for the phase-space integral is [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]].
+> **Step 3** (the rest of the integrand). $|\mathcal M|^2$ is invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]]); each $\frac{d^3p_j}{(2\pi)^32E_j}$ is invariant ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]); and $\delta^4(\Lambda P - \sum_j\Lambda p_j) = |\det\Lambda|^{-1}\delta^4(P - \sum_jp_j) = \delta^4(P - \sum_jp_j)$ ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1). The same argument written out for the phase-space integral is [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]].
 >
 > **Step 4** (part 3). By Steps 1 and 3 every factor of the expression is invariant. By Step 2 it equals [[§C6b.4 The Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]] in the rest frame of $A$ (with $4E_AE_B|\mathbf v_B| = 4E_AE_Bv_{\rm Møl}$ there), hence in every frame it takes the rest-frame value.
 >
@@ -189,7 +189,7 @@ In [[§C6b.4 The Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]] everything excep
 
 ^der-c6b-4-4
 
-*Uses:* [[§C6b.4 The Cross Section#^def-c6b-4-3|Def. §C6b.4.3]], [[§C6b.4 The Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
+*Uses:* [[§C6b.4 The Cross Section#^def-c6b-4-3|Def. §C6b.4.3]], [[§C6b.4 The Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
 
 > [!theorem] Theorem §C6b.4.5: The Møller Velocity and the Velocity Difference
 > With $\mathbf v_A = \mathbf p_A/E_A$, $\mathbf v_B = \mathbf p_B/E_B$,

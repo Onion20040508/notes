@@ -162,7 +162,7 @@ The decay rate follows from the box chain of [[§C6b.3 Transition Probabilities 
 >
 > since integrating over all final momenta counts each state of identical particles $S_{\rm id}$ times ([[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-7|Theorem §C6b.3.7]] in the box, [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-4|Theorem §C6b.6.4]]; Yu eqs. (6.376)–(6.377)).
 >
-> ⚑ By-product: $[\Gamma] = 1$ for every $n$. With $N = 1 + n$, $[\mathcal M] = 4 - (1 + n) = 3 - n$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]) and $[d\Pi_n] = 2n - 4$ ([[§C6b.6 Evaluating the Cross Section#^der-c6b-6-3|Derivation §C6b.6.3]], Step 2):
+> ⚑ By-product: $[\Gamma] = 1$ for every $n$. With $N = 1 + n$, $[\mathcal M] = 4 - (1 + n) = 3 - n$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]) and $[d\Pi_n] = 2n - 4$ ([[§C6b.6 Evaluating the Cross Section#^der-c6b-6-3|Derivation §C6b.6.3]], Step 2):
 >
 > $$
 > [d\Gamma] = \Bigl[\frac{1}{2m_A}\Bigr] + 2[\mathcal M] + [d\Pi_n] = -1 + 2(3 - n) + (2n - 4) = 1 :
@@ -170,7 +170,7 @@ The decay rate follows from the box chain of [[§C6b.3 Transition Probabilities 
 >
 > the width is an energy, as the definition demands.
 >
-> ⚑ By-product: in a frame where $A$ moves, Step 4 gives, with $E_A = \gamma m_A$ and $|\mathcal M|^2d\Pi_n$ invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]),
+> ⚑ By-product: in a frame where $A$ moves, Step 4 gives, with $E_A = \gamma m_A$ and $|\mathcal M|^2d\Pi_n$ invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]),
 >
 > $$
 > dR = \frac{1}{2E_A}|\mathcal M|^2d\Pi_n = \frac{m_A}{E_A}\cdot\frac{1}{2m_A}|\mathcal M|^2d\Pi_n = \frac{1}{\gamma}\,d\Gamma ,
@@ -185,7 +185,7 @@ The decay rate follows from the box chain of [[§C6b.3 Transition Probabilities 
 
 ^der-c6b-8-4
 
-*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]], [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-4|Theorem §C6b.6.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^def-c6b-7-1|Def. §C6b.7.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]
+*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-4|Theorem §C6b.6.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^def-c6b-7-1|Def. §C6b.7.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]
 
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-5|P7, steps 5–6]]
 
@@ -233,7 +233,7 @@ The decay rate follows from the box chain of [[§C6b.3 Transition Probabilities 
 >
 > (Yu (6.385)). Directly: $E_1 = E_2 = m_A/2$ and $|\mathbf p_1| = \sqrt{m_A^2/4 - m^2}$, the same.
 >
-> ⚑ By-product: for $1 \to 2$, $[\mathcal M] = 4 - 3 = 1$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]): $\mathcal M$ has the dimension of a mass, and $[\Gamma] = 2 + 1 - 2 = 1$.
+> ⚑ By-product: for $1 \to 2$, $[\mathcal M] = 4 - 3 = 1$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]): $\mathcal M$ has the dimension of a mass, and $[\Gamma] = 2 + 1 - 2 = 1$.
 >
 > **What the derivation shows.**
 > - A two-body decay at rest has no free kinematics: the energies and $|\mathbf p_1|$ are fixed numbers, and only the direction is integrated.
@@ -241,7 +241,7 @@ The decay rate follows from the box chain of [[§C6b.3 Transition Probabilities 
 
 ^der-c6b-8-5
 
-*Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-5|Theorem §C6b.7.5]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-6|Theorem §C6b.7.6]], [[§C6b.8 Decay Rates and Widths#^thm-c6b-8-4|Theorem §C6b.8.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]
+*Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-5|Theorem §C6b.7.5]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-6|Theorem §C6b.7.6]], [[§C6b.8 Decay Rates and Widths#^thm-c6b-8-4|Theorem §C6b.8.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]
 
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-8|P7, step 8]]
 

@@ -232,7 +232,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 >
 > "In every case … the inverse prefactor is $|G|$, diagrams are orbits, and $S = |G|/N = |\operatorname{Stab}(P)|$."
 >
-> The rules that follow, for any polynomial interaction of real and complex scalars (one line per field type, vertex factor $-ig_t\prod_km_{t,k}!$, $\frac1S$), are stated and derived in [[§C6a.12 Feynman Rules for Polynomial Interactions|§C6a.12]] ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]]).
+> The rules that follow, for any polynomial interaction of real and complex scalars (one line per field type, vertex factor $-ig_t\prod_km_{t,k}!$, $\frac1S$), are stated and derived in [[§C6a.12 Feynman Rules for Polynomial Interactions|§C6a.12]] ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]]).
 >
 > *Source: the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §8, Remark "The same proof for other vertices" · PHY 513, Problem Set 8, Problems 1(b) and 2(c)*
 

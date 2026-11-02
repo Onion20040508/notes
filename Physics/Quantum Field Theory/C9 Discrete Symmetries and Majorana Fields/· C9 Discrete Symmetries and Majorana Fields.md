@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C9 Discrete Symmetries and Majorana Fields
 ← [[· C6b The S-Matrix, Amplitudes and Observables]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (73), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (108), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (120), [[· CA Mathematical Methods|CA Mathematical Methods]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (100)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (7), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (4), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (4)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (73), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (152), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (120), [[· CA Mathematical Methods|CA Mathematical Methods]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (38)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (4), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (4)
 
 ## Sections
 - [[§C9.1 Discrete Lorentz Transformations]] — 513 notes Ch. 11 §11.1
@@ -65,6 +65,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-4|§C9.6.4]] Transposes and Conjugates of the Chiral Dirac Matrices
 - [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-5|§C9.6.5]] The Conjugate of u Is a v
 - [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-6|§C9.6.6]] The Conjugate of v Is a u
+- [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-7|§C9.6.7]] The Charge-Conjugation Matrix
 - [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis
 - [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-2|§C9.7.2]] Charge Conjugation on the Dirac Field
 - [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-3|§C9.7.3]] Charge Conjugation through the Dirac Conjugate
@@ -88,6 +89,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-6|§C9.9.6]] Time Reversal on the Negative-Frequency Spinors
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-7|§C9.9.7]] Time Reversal on the Dirac Field
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-8|§C9.9.8]] Time Reversal on the Dirac Conjugate Field
+- [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|§C9.9.9]] Antiunitary Operators: Unitary Times Conjugation, and Their Square
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-1|§C9.10.1]] The Vector Current under Time Reversal
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-2|§C9.10.2]] Time Reversal on a General Bilinear

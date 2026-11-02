@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C1a Preliminaries
 ↑ [[Quantum Field Theory]] · [[· C1b Classical Field Theory]] →
 
-**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (23), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (5), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (22), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (7), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (45), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (18)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (27), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (25), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (55), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (40), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (41), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (16), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (12), [[· CA Mathematical Methods|CA Mathematical Methods]] (2), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (20)
+**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (23), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (5), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (22), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (10), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (45), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (18)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (29), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (25), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (57), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (40), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (43), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (16), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (12), [[· CA Mathematical Methods|CA Mathematical Methods]] (2), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (20)
 
 ## Sections
 - [[§C1a.1 Why Quantum Field Theory]] — 
@@ -36,10 +36,12 @@ tags: [chapter, quantum-field-theory]
 - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Relativistic Amplitude as a Radial Integral
 - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero
 - [[§C1a.4 The Lorentz Group#^thm-c1a-4-1|§C1a.4.1]] Invariant Volume Elements
+- [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|§C1a.4.2]] The Four Components of the Lorentz Group
 - [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] The Orbits of SO⁺(1,3) on Spacetime
 - [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits
 - [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|§C1a.5.1]] The Mandelstam Sum Rule and the Momentum Transfer
 - [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|§C1a.5.2]] The Metric Identifies Vectors with Covectors
+- [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-3|§C1a.5.3]] The Metric and the Levi-Civita Symbol Are Invariant Tensors
 - [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|§C1a.5.4]] Contraction Identities of the Levi-Civita Symbol
 - [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|§C1a.5.5]] The Levi-Civita Symbol and the Determinant
 - [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|§C1a.5.6]] The Trace, Symmetric and Antisymmetric Parts Do Not Mix

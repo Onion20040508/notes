@@ -121,7 +121,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > -ig_t\prod_km_{t,k}! \qquad\text{(times } \textstyle\int d^4z \text{ in position space, } (2\pi)^4\delta^4(\sum p) \text{ in momentum space)} ;
 > $$
 >
-> 2. every diagram enters with $\frac1S\prod_{\text{vertices}}(\text{vertex factor})$ and the rules for lines of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] (several fields: [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]]), $S$ its symmetry factor ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]).
+> 2. every diagram enters with $\frac1S\prod_{\text{vertices}}(\text{vertex factor})$ and the rules for lines of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] (several fields: [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]]), $S$ its symmetry factor ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]).
 >
 > In the notation of the fields themselves: a term $-c\prod_i\phi_i^{n_i}$ of $\mathcal L_{\rm int}$ ($\phi_i$ distinct field symbols) has the vertex factor $-ic\prod_in_i!$.
 >
@@ -180,9 +180,75 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-2|P6, step 2]]
 
+> [!theorem] Theorem §C6a.12.3: Counting Legs, Lines and Loops
+> Let a diagram ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-1|Def. §C6a.7.1]]; vertex types of [[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]]) have $V$ vertices, vertex $v$ with $r_v$ legs, $E$ external points (or external particles), each joined by its line to a vertex, $I$ internal lines (both ends on legs of vertices; a loop at one vertex counts), and $C$ connected pieces (as a graph). Then
+> 1. (legs) every leg ends one line, so
+>
+> $$
+> \sum_vr_v = E + 2I , \qquad I = \frac12\Bigl(\sum_tn_tr_t - E\Bigr) \quad (n_t \text{ vertices of type } t) :
+> $$
+>
+> the order $(n_t)$ and $E$ fix $I$ (no diagram if $\sum_tn_tr_t - E$ is odd or negative);
+> 2. (loops) the number of independent loops is
+>
+> $$
+> L = I - V + C ; \qquad L = I - V + 1 \ \text{(connected)}, \qquad I = V - 1 \ \text{(connected tree, } L = 0) ;
+> $$
+>
+> 3. (connectedness) in a connected diagram with $V \ge 2$ every vertex has a leg on an internal line to another vertex, so it carries at most $r_v - 1$ external points. A vertex carrying all $r_v$ forms a piece of its own with its external points, and the $2I$ legs not on external points pair among the other vertices: the diagram is disconnected. A connected diagram with $V = 2$ and $I = 1$ has exactly $r_v - 1$ external points at each vertex.
+>
+> | order, process | $\sum_tn_tr_t$ | $E$ | $I$ | $L$ (connected) |
+> |---|---|---|---|---|
+> | $g^2$ (two cubic vertices), $2 \to 2$ | $6$ | $4$ | $1$ | $0$ |
+> | $\lambda$ (one quartic vertex), $2 \to 2$ | $4$ | $4$ | $0$ | $0$ |
+> | $g\lambda$, $2 \to 3$ | $7$ | $5$ | $1$ | $0$ |
+> | $\lambda$, two-point (tadpole) | $4$ | $2$ | $1$ | $1$ |
+> | $\lambda^2$, four-point (fish) | $8$ | $4$ | $2$ | $1$ |
+>
+> *Model:* any (combinatorics); *applies:* every diagram of a polynomial interaction, of correlation functions (external points) and of amplitudes (external particles) alike, any order; a line joining two external points directly is not covered (it is a piece of its own without vertex).
+>
+> *Source: PS §10.1, eq. (10.2) ($L = P_e + P_\gamma - V + 1$: "each propagator has a momentum integral, each vertex has a delta function, and one delta function merely enforces overall momentum conservation") and p. 321 (for $\phi^n$: "$L = P - V + 1$. There are $n$ lines meeting at each vertex, so $nV = N + 2P$") · PHY 513, Problem Set 8, Problem 2(a)–(b) (the user's solution: "Two cubic vertices have $6$ legs; $4$ are joined to the external lines, which leaves two legs and hence one internal line. If one vertex carried more than two external particles, the two remaining legs would sit on the same vertex and be contracted with each other, giving a disconnected diagram") · proof written here*
+
+^thm-c6a-12-3
+
+> [!derivation]- Derivation
+> **Step 1** (part 1, the legs). In a complete contraction every field is paired exactly once ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]), so every leg of a vertex is the end of exactly one line. Count the line-ends that sit on vertices: an external line has one (its other end is the external point), an internal line two (a loop at $v$ has both ends at $v$):
+>
+> $$
+> \sum_vr_v = E\cdot1 + I\cdot2 , \qquad \sum_vr_v = \sum_tn_tr_t \quad\Longrightarrow\quad I = \frac12\Bigl(\sum_tn_tr_t - E\Bigr) .
+> $$
+>
+> Two cubic vertices and four particles: $6 = 4 + 2I$, $I = 1$.
+>
+> **Step 2** (a tree has one edge fewer than nodes). Regard the diagram as a graph: nodes the $V$ vertices and the $E$ external points, edges the $I + E$ lines. A tree (connected, no cycle) with $N \ge 1$ nodes has $N - 1$ edges: for $N = 1$ none; for $N \ge 2$, a longest path ends at a node $u$ of degree $1$ (a second edge at $u$ would extend the path or close a cycle), and deleting $u$ and its edge leaves a tree with $N - 1$ nodes, so by induction $(N - 2) + 1 = N - 1$ edges.
+>
+> **Step 3** (part 2, independent loops). A connected piece with $N$ nodes and $M$ edges contains a spanning tree (delete edges lying on cycles one at a time until none is left; deleting an edge of a cycle keeps the piece connected), with $N - 1$ edges by Step 2. Each of the other $M - N + 1$ edges $e$ closes exactly one cycle $c_e$ with the tree (the tree path between its ends, plus $e$), and $c_e$ contains $e$ and no other non-tree edge, so these cycles are independent; this number is the number of momenta a connected piece leaves unfixed after momentum conservation at its vertices (Step 6 of [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]]). Summing over the $C$ pieces, with $N = V + E$ and $M = I + E$ in total,
+>
+> $$
+> L = \sum_{\text{pieces}}(M - N + 1) = (I + E) - (V + E) + C = I - V + C .
+> $$
+>
+> For $C = 1$: $L = I - V + 1$; a tree has $L = 0$, so $I = V - 1$. The external points are leaves and drop out.
+>
+> **Step 4** (part 3, a vertex needs an internal line). Let the diagram be connected with $V \ge 2$, and take a vertex $v$ and another vertex $w$. A path from $v$ to $w$ leaves $v$ along a line whose other end is not an external point (an external point has a single line, so no path continues through it) and not $v$ itself (a loop returns to $v$): it ends at another vertex. So $v$ has a leg on an internal line, and at most $r_v - 1$ legs on external points.
+>
+> **Step 5** (part 3, the disconnected case). If $v$ carries $r_v$ external points, every leg of $v$ ends at an external point, and these have no other line: $v$ with its points is a connected piece, and the other vertices lie outside it, so the diagram is disconnected. The legs not on external points are then $\sum_{w \ne v}(r_w - e_w) = \sum_wr_w - E = 2I$ (Step 1), all at vertices $w \ne v$, and they pair among themselves. With two cubic vertices and four particles, three on $v_1$: one particle and $2I = 2$ legs on $v_2$, and the two legs close a loop at $v_2$, the piece "$v_2$ with a tadpole loop" beside "$v_1$ with three particles".
+>
+> **Step 6** (part 3, $V = 2$, $I = 1$). In a connected diagram the one internal line joins $v_1$ to $v_2$ (a loop at $v_1$ would leave $v_2$ with every leg on an external point, disconnected by Step 5). So each vertex has exactly one leg on the internal line and $r_v - 1$ on external points: the hypothesis of [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6|Theorem §C6b.2.6]] ($S = 1$).
+>
+> **What the derivation shows.**
+> - The order and the number of external particles fix $I$ and, for a connected diagram, $L$: at order $g^2$ and $\lambda$ for $2 \to 2$ and at order $g\lambda$ for $2 \to 3$ every connected diagram is a tree, which is why Problem Set 8, Problem 2 had only trees, each with $S = 1$.
+> - The count of loops is the count of free momentum integrals ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]], 2); the external points, leaves of the graph, never close a loop.
+
+^der-c6a-12-3
+
+*Uses:* [[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-1|Def. §C6a.7.1]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]]
+
+*Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-3|P6, step 3]]
+
 ## The rules
 
-> [!theorem] Theorem §C6a.12.3: Feynman Rules for a Polynomial Interaction in Position Space
+> [!theorem] Theorem §C6a.12.4: Feynman Rules for a Polynomial Interaction in Position Space
 > With the vertex data of [[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]], the numerator of the master formula with external fields $\hat\phi_{k_1}(x_1), \dots, \hat\phi_{k_r}(x_r)$,
 >
 > $$
@@ -205,7 +271,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 >
 > *Source: PS §4.4, p. 94 (rules 1–4 for $\phi^4$); §4.6, p. 114 · Yu §7.1, eqs. (7.25)–(7.28), (7.40)–(7.41) (position-space rules); §7.3, eq. (7.120); §7.4, eq. (7.143) · PHY 513, Problem Set 8, Problems 1(b), 2(c) (the user's "$|G|$ is again the inverse of the prefactor") · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §8 · proof written here, generalizing [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]*
 
-^thm-c6a-12-3
+^thm-c6a-12-4
 
 > [!derivation]- Derivation
 > **Step 1** (the Dyson term). $\hat{\mathcal H}_I = \sum_tg_tM_t(\hat\phi_I)$, so $-i\int dt\,\hat H_I = \sum_t(-ig_t)\int d^4z\,M_t(\hat\phi_I(z))$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]]). Expanding the exponential of a sum of commuting terms inside $T$ and collecting $n_t$ factors of type $t$ ($n = \sum_tn_t$; the multinomial coefficient $\frac{n!}{\prod_tn_t!}$ counts the orders in which the types occur):
@@ -249,14 +315,14 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > - What changes from $\phi^4$: the propagator of each line depends on its field, pairings are restricted by kinds, and $n!\,(4!)^n$ becomes $|G_{\mathbf n}|$; the cancellation of Step 5 is complete for vertices exactly when the Lagrangian carries $\frac{1}{\prod_km_{t,k}!}$, which is why $\frac{g}{3!}$, $\frac{\lambda}{4!}$, $\frac\lambda4 = \frac{\lambda}{2!\,2!}$ are chosen and $\mu\Phi\phi^2$ gives $-2i\mu$.
 > - Kinds make $S$ smaller: a symmetry must map each leg to a leg of the same kind ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3), so oriented loops cannot be flipped ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-2|Theorem §C6a.9.2]]).
 
-^der-c6a-12-3
+^der-c6a-12-4
 
 *Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]
 
 *Procedure:* [[P5 Symmetry Factor of a Diagram#^p5-1|P5, steps 1–2]]
 
-> [!theorem] Theorem §C6a.12.4: Feynman Rules for a Polynomial Interaction in Momentum Space
-> Each diagram of [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]] equals the following expression:
+> [!theorem] Theorem §C6a.12.5: Feynman Rules for a Polynomial Interaction in Momentum Space
+> Each diagram of [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]] equals the following expression:
 >
 > | element | factor |
 > |---|---|
@@ -265,14 +331,14 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > | external point $x$, momentum $p$ entering the diagram at $x$ | $e^{-ip\cdot x}$ |
 >
 > 1. at each vertex the momenta of its $r_t$ lines are conserved, a factor $(2\pi)^4\delta^4(\sum p_{\rm in} - \sum p_{\rm out})$; the direction assigned to a momentum is arbitrary, also on an oriented line (its value is even in $p$);
-> 2. every momentum not fixed by conservation is integrated with $\int\frac{d^4p}{(2\pi)^4}$: in each connected piece with $V$ vertices, $I$ internal lines and $r \ge 1$ external points, $L = I - V + 1$ loop momenta and $r - 1$ external ones;
+> 2. every momentum not fixed by conservation is integrated with $\int\frac{d^4p}{(2\pi)^4}$: in each connected piece with $V$ vertices, $I$ internal lines and $r \ge 1$ external points, $L = I - V + 1$ loop momenta ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 2) and $r - 1$ external ones;
 > 3. the result is divided by $S$.
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* as in the opening; each line is the free-field $\tilde D_F$ of its own mass ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]); for $\phi^4$ it is [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]].
 >
 > *Source: PS §4.4, p. 95 (rules 1–6 for $\phi^4$) · Yu §7.2, rules 6–11 (pp. 287–288); §7.3, p. 296; §7.4, rules 1–5 (p. 300; complex scalar lines, the momentum drawn along the arrow) · proof written here, generalizing [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]]*
 
-^thm-c6a-12-4
+^thm-c6a-12-5
 
 > [!derivation]- Derivation
 > **Step 1** (each line in Fourier form). By [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]] with the mass of the line, for a line $\ell$ from $a_\ell$ to $b_\ell$,
@@ -297,19 +363,19 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > (I + r) - V = (I - V + 1) + (r - 1) = L + (r - 1)
 > $$
 >
-> remain, $L = M - N + 1$ the number of independent cycles of a graph with $N = V + r$ nodes and $M = I + r$ edges. For the cubic exchange line between two vertices with two external points each ($V = 2$, $I = 1$, $r = 4$): $L = 0$, three integrals, the external momenta but one.
+> remain, $L = M - N + 1$ the number of independent cycles of a graph with $N = V + r$ nodes and $M = I + r$ edges ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 2, Step 3 of its derivation). For the cubic exchange line between two vertices with two external points each ($V = 2$, $I = 1$, $r = 4$): $L = 0$, three integrals, the external momenta but one.
 >
 > **Step 4** (external points, $S$). As Steps 5 and 7 of [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]]: the plane wave $e^{-ip\cdot x}$ stays at each external point, and $\frac1S$ is a number.
 >
 > **What the derivation shows.**
 > - Only the valence of a vertex and the mass of a line enter; the vertex delta is translation invariance, whatever the monomial.
 
-^der-c6a-12-4
+^der-c6a-12-5
 
-*Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-1|Derivation §C6a.10.1]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]]
+*Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-1|Derivation §C6a.10.1]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]]
 
 ![[ph-qft-c6a-12-1.svg]]
-*The rules of [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]] and [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]] as a picture. Top: the lines, one per field type (solid $\phi$, dashed $\Phi$, arrowed for a complex field, from the $\phi^\dagger$ end to the $\phi$ end), with their position- and momentum-space values. Bottom: the vertices of the four theories of C6, each $-i$ times its coupling times the number of ways to attach distinct lines to its legs. Added figure.*
+*The rules of [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]] and [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]] as a picture. Top: the lines, one per field type (solid $\phi$, dashed $\Phi$, arrowed for a complex field, from the $\phi^\dagger$ end to the $\phi$ end), with their position- and momentum-space values. Bottom: the vertices of the four theories of C6, each $-i$ times its coupling times the number of ways to attach distinct lines to its legs. Added figure.*
 
 ## Examples
 
@@ -326,7 +392,7 @@ The examples of Problem Set 8 are already worked: the oriented tadpole, fish and
 >
 > the bubble ($S = 2$), the tadpole on the line ($S = 2$), two one-point tadpoles ($S = 4$), and the free line times the dumbbell ($S = 8$) and the theta ($S = 12$). At order $g$ the two-point function has no term (five fields, odd); the vertex factor is $-i\frac{g}{3!}\cdot3! = -ig$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]).
 >
-> **Step 1** (Dyson term). One vertex type, $n_3 = 2$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], Step 1), with $\hat\phi_{ia} \equiv \hat\phi_I(z_i)$, $a = 1, 2, 3$:
+> **Step 1** (Dyson term). One vertex type, $n_3 = 2$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]], Step 1), with $\hat\phi_{ia} \equiv \hat\phi_I(z_i)$, $a = 1, 2, 3$:
 >
 > $$
 > \frac{1}{2!}\Bigl(\frac{-ig}{3!}\Bigr)^2\int d^4z_1\,d^4z_2\,\langle0|T\{\hat\phi_x\hat\phi_y\,\hat\phi_{11}\hat\phi_{12}\hat\phi_{13}\,\hat\phi_{21}\hat\phi_{22}\hat\phi_{23}\}|0\rangle = \frac{(-ig)^2}{72}\int d^4z_1\,d^4z_2\sum_P(\cdots) ,
@@ -357,7 +423,7 @@ The examples of Problem Set 8 are already worked: the oriented tadpole, fish and
 >
 > **Step 4** (the same $S$ as stabilizers). Bubble: exchange of the two parallel lines, $|\operatorname{Stab}| = 2$. Tadpole on the line: flip of the loop, $2$. Two one-point tadpoles: the two flips, $2\cdot2 = 4$ (the vertices carry different external points and are not exchanged). Dumbbell: two flips and the exchange of the vertices, $2\cdot2\cdot2 = 8$. Theta: the $3!$ permutations of the three lines and the exchange of the vertices, $6\cdot2 = 12$. The same orbit–stabilizer count as [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-2|Example §C6a.9.2]] for $\phi^4$.
 >
-> *Source: written here from [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]]; checked by enumeration (`qft-C/tools/step3/check_step3.py`: $105$ pairings, orbits $36, 36, 18, 9, 6$)*
+> *Source: written here from [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]]; checked by enumeration (`qft-C/tools/step3/check_step3.py`: $105$ pairings, orbits $36, 36, 18, 9, 6$)*
 
 ^ex-c6a-12-1
 
@@ -399,7 +465,7 @@ The examples of Problem Set 8 are already worked: the oriented tadpole, fish and
 >
 > The connected part, $-i\lambda\int d^4z\,D_{x_1z}D_{x_2z}D_{zy_1}D_{zy_2}$, shows the vertex factor $-i\frac\lambda4\cdot2!\cdot2! = -i\lambda$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]).
 >
-> *Source: written here from [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]]; checked by enumeration (`qft-C/tools/step3/check_step3.py`: $24$ pairings in $7$ diagrams, orbits $4$ (five times) and $2$ (twice))*
+> *Source: written here from [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]]; checked by enumeration (`qft-C/tools/step3/check_step3.py`: $24$ pairings in $7$ diagrams, orbits $4$ (five times) and $2$ (twice))*
 
 ^ex-c6a-12-2
 

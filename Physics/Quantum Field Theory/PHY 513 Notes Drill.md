@@ -237,7 +237,7 @@ For every $\Lambda \in O(1,3)$, $d^4x' = d^4x$ and $d^4p' = d^4p$; integrals of 
 ### [A] The orbits of SO⁺(1,3): timelike, spacelike, null ★★
 The orbits are the future and past sheets $x^2 = m^2$, $\pm x^0 > 0$, the one-sheeted hyperboloids $x^2 = -a^2$, the future and past null cones, and the origin; $x$, $y$ share an orbit iff $x^2 = y^2$ and, for nonzero $x^2 \ge 0$, $\operatorname{sgn}x^0 = \operatorname{sgn}y^0$, see Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] The Orbits of SO⁺(1,3) on Spacetime. *Source: Lecture 2 (Sep 2), slides "Causal Classification", "Future vs. Past" · the user's notes Ch. 1 §1.3*
 
-^nd-thm-c1a-4-2
+^nd-thm-c1a-4-3
 
 - [ ] Q1 **[def]** Classify a point $x$ relative to the origin as timelike, spacelike or null (Lecture 2), and say what an observer at $x$ can do in each case.
 - [ ] Q2 **[state]** List the orbits of $SO^+(1,3)$ on spacetime with a normal form for each.
@@ -255,7 +255,7 @@ The orbits are the future and past sheets $x^2 = m^2$, $\pm x^0 > 0$, the one-sh
 ### [A] Parity and time reversal permute the orbits ★★
 $\mathcal P$ maps each orbit to itself; $\mathcal T$ and $\mathcal P\mathcal T$ exchange the future and past sheets and cones; so $\operatorname{sgn}x^0$ on timelike and null vectors and $\theta(p^0)$ on the mass shell are invariant under orthochronous transformations, while every spacelike $x$ is carried to $-x$ by some $\Lambda \in SO^+(1,3)$, see Theorem [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|§C1a.4.4]] Parity and Time Reversal Permute the Orbits. *Source: Lecture 2 (Sep 2), slide "Future vs. Past" · the user's notes Ch. 1 §1.3*
 
-^nd-thm-c1a-4-3
+^nd-thm-c1a-4-4
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Why does $\mathcal P$ keep every orbit, using the complete invariants of the orbit theorem?
@@ -302,7 +302,7 @@ $g$ is symmetric, nondegenerate and indefinite; $x \mapsto x^\flat = g(x, \cdot)
 ### [B] Contraction identities of the Levi-Civita symbol ★
 With $\varepsilon^{0123} = +1$: $\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\alpha\beta\gamma\delta} = -\delta^{\alpha\beta\gamma\delta}_{\mu\nu\rho\sigma}$, and successive contractions give $-\delta^{\beta\gamma\delta}_{\nu\rho\sigma}$, $-2(\delta^\gamma_\rho\delta^\delta_\sigma - \delta^\gamma_\sigma\delta^\delta_\rho)$, $-6\delta^\delta_\sigma$, $-24$; in three Euclidean dimensions the same without the minus sign, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|§C1a.5.4]] Contraction Identities of the Levi-Civita Symbol. *Source: the user's notes Ch. 1 §1.5*
 
-^nd-thm-c1a-5-3
+^nd-thm-c1a-5-4
 
 - [ ] Q1 **[state]** State the four-dimensional identity and its contractions down to $\varepsilon\varepsilon$ fully contracted.
 - [ ] Q2 Why do both sides vanish together when two indices coincide?
@@ -317,7 +317,7 @@ With $\varepsilon^{0123} = +1$: $\varepsilon_{\mu\nu\rho\sigma}\varepsilon^{\alp
 ### [B] The Levi-Civita symbol and the determinant ★
 $\varepsilon_{\mu\nu\rho\sigma}A^\mu{}_\alpha A^\nu{}_\beta A^\rho{}_\gamma A^\sigma{}_\delta = (\det A)\varepsilon_{\alpha\beta\gamma\delta}$, the determinant and inverse as $\varepsilon\varepsilon$ contractions, and $\varepsilon_{\mu\nu\rho\sigma}a^\mu b^\nu c^\rho d^\sigma = -\det[a|b|c|d]$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-5|§C1a.5.5]] The Levi-Civita Symbol and the Determinant. *Source: the user's notes Ch. 1 §1.5*
 
-^nd-thm-c1a-5-4
+^nd-thm-c1a-5-5
 
 - [ ] Q1 **[state]** State parts 1 and 4.
 - [ ] Q2 Prove part 1: why is the left side totally antisymmetric in $\alpha\beta\gamma\delta$, and what is it at $(0123)$?
@@ -346,7 +346,7 @@ $p' = m_2p_{\rm lab}/E_{\rm cm}$ from $T_{23}$ of $T_{\mu\nu} = \varepsilon_{\mu
 ### [A] Trace, symmetric and antisymmetric parts do not mix ★★
 $T^{\mu\nu}$ splits uniquely into a symmetric traceless part (9), an antisymmetric part (6) and a trace part (1), each mapped into itself by every Lorentz transformation, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-6|§C1a.5.6]] The Trace, Symmetric and Antisymmetric Parts Do Not Mix. *Source: Lecture 1 (Aug 31), slide "Tensors" ("Irreducible parts of two-tensor representation") · the user's notes Ch. 1 §1.5*
 
-^nd-thm-c1a-5-5
+^nd-thm-c1a-5-6
 
 - [ ] Q1 **[def]** How does a two-tensor $T^{\mu\nu}$ transform (Lecture 1)? Why is a general two-tensor not a product $p^\mu q^\nu$?
 - [ ] Q2 **[state]** State the decomposition with the dimension of each piece.
@@ -362,7 +362,7 @@ $T^{\mu\nu}$ splits uniquely into a symmetric traceless part (9), an antisymmetr
 ### [B] Duality squares to −1 on antisymmetric tensors ★
 $(\star A)^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}A_{\rho\sigma}$ satisfies $\star\star = -1$, commutes with proper and anticommutes with improper Lorentz transformations, and over $\mathbb C$ splits the six-dimensional space into the $\pm i$ eigenspaces, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-7|§C1a.5.7]] Duality Squares to −1 on Antisymmetric Tensors. *Source: the user's notes Ch. 1 §1.5*
 
-^nd-thm-c1a-5-6
+^nd-thm-c1a-5-7
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Lower the indices of $\star A$ and write $\star\star A$ as an $\varepsilon\varepsilon$ contraction.
@@ -377,7 +377,7 @@ $(\star A)^{\mu\nu} = \frac12\varepsilon^{\mu\nu\rho\sigma}A_{\rho\sigma}$ satis
 ### [A] Basic derivative identities and plane waves ★★
 $\partial_\mu x^\nu = \delta^\nu{}_\mu$, $\partial_\mu x^\mu = 4$, $\partial_\mu(x^2) = 2x_\mu$, and $\partial_\mu e^{-ik\cdot x} = -ik_\mu e^{-ik\cdot x}$, $\partial^2e^{-ik\cdot x} = -k^2e^{-ik\cdot x}$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-8|§C1a.5.8]] Basic Derivative Identities. *Source: Lecture 2 (Sep 2), slides "Derivatives" ("Proof that $\partial_\mu$ transforms like $x_\mu$"), "Plane-Wave Solutions to the Klein Gordon Equation"; Lecture 3 (Sep 9), slide "Solutions to the Klein-Gordon Equation" · the user's notes Ch. 2 §2.3*
 
-^nd-thm-c1a-5-7
+^nd-thm-c1a-5-8
 
 - [ ] Q1 **[state]** State $\partial_\mu x^\nu$, $\partial^\mu x^\nu$, $\partial_\mu x^\mu$, $\partial_\mu(x^2)$, $\partial_\mu\partial_\nu(x^2)$.
 - [ ] Q2 Derive $\partial_\mu(x^2) = 2x_\mu$ by the product rule. Why does Lecture 2 call this the proof that $\partial_\mu$ has a lower index?
@@ -392,14 +392,14 @@ $\partial_\mu x^\nu = \delta^\nu{}_\mu$, $\partial_\mu x^\mu = 4$, $\partial_\mu
 ### [PS] The d'Alembertian of a function of x²
 $\partial^2f(\rho) = 8f' + 4\rho f''$ for $\rho = x^2$; $f = c_1/\rho + c_2$ are the harmonic functions of $\rho$ off the cone, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|§C1a.5.9]] The d'Alembertian of a Function of x². *Source: PS1 Problem 6*
 
-^nd-thm-c1a-5-8
+^nd-thm-c1a-5-9
 
 → drilled as [[PHY 513 PS Drill#^ps1-6|PS1.6]] (parts (a)–(f))
 
 ### [B] Taylor expansion in index notation ★
 $f(x + a) = \sum_n\frac1{n!}a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\partial_{\nu_n}f(x) = e^{a\cdot\partial}f(x)$; on a plane wave the series is exact, and $a\cdot\partial = -ia\cdot\hat p$ generates translations, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|§C1a.5.10]] Taylor Expansion in Index Notation. *Source: the user's notes Ch. 2 §2.3*
 
-^nd-thm-c1a-5-9
+^nd-thm-c1a-5-10
 
 - [ ] Q1 **[state]** State the expansion and the plane-wave statement.
 - [ ] Q2 Reduce to one variable with $g(s) = f(x + sa)$: what is $g^{(n)}(s)$?
@@ -414,7 +414,7 @@ $f(x + a) = \sum_n\frac1{n!}a^{\nu_1}\cdots a^{\nu_n}\partial_{\nu_1}\cdots\part
 ### [A] Derivatives with respect to a four-vector ★★
 $\partial/\partial a^\mu$ is a covector; $\partial a^\nu/\partial a^\mu = \delta^\nu{}_\mu$, $\partial a_\nu/\partial a^\mu = g_{\mu\nu}$; $\partial(a_\nu a^\nu)/\partial a^\mu = 2a_\mu$, and for $\mathcal L = \frac12\partial_\nu\phi\,\partial^\nu\phi$, $\partial\mathcal L/\partial(\partial_\mu\phi) = \partial^\mu\phi$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-11|§C1a.5.11]] Derivatives with Respect to a Four-Vector. *Source: Lecture 3 (Sep 9), slide "Example: the Scalar Field" · the user's notes Ch. 2 §2.3 · **[class exercise, Lecture 3]**: "you double check" the derivative of the kinetic term component by component*
 
-^nd-thm-c1a-5-10
+^nd-thm-c1a-5-11
 
 - [ ] Q1 **[state]** State the four index forms of $\partial a/\partial a$ and the factor-of-two rule.
 - [ ] Q2 Why does an index in the denominator flip height? Use the chain rule with $a = \Lambda^{-1}a'$.
@@ -429,7 +429,7 @@ $\partial/\partial a^\mu$ is a covector; $\partial a^\nu/\partial a^\mu = \delta
 ### [B] Derivatives with respect to tensor components ★
 For independent components, $\partial T^\alpha{}_\beta/\partial T^\mu{}_\nu = \delta^\alpha{}_\mu\delta_\beta{}^\nu$; $\partial(T_{\alpha\beta}T^{\alpha\beta})/\partial T_{\mu\nu} = 2T^{\mu\nu}$; for antisymmetric $F$ either convention gives $\delta(FF) = 2F\,\delta F$; and $\partial(F_{\alpha\beta}F^{\alpha\beta})/\partial(\partial_\mu A_\nu) = 4F^{\mu\nu}$, see Theorem [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|§C1a.5.12]] Derivatives with Respect to Tensor Components. *Source: the user's notes Ch. 2 §2.3 · PS2 Problem 4(a)*
 
-^nd-thm-c1a-5-11
+^nd-thm-c1a-5-12
 
 - [ ] Q1 **[state]** State parts 1–3.
 - [ ] Q2 Why is the derivative of a component with respect to a component a product of deltas, slot by slot?
@@ -5073,7 +5073,7 @@ $A'^\mu(x) = \Lambda^\mu{}_\nu A^\nu(\Lambda^{-1}x)$, generators $\mathcal J^{\m
 
 $\delta\mathbf E = \boldsymbol\theta\times\mathbf E - \boldsymbol\eta\times\mathbf B$, $\delta\mathbf B = \boldsymbol\theta\times\mathbf B + \boldsymbol\eta\times\mathbf E$, so $\delta(\mathbf E \mp i\mathbf B) = (\boldsymbol\theta \mp i\boldsymbol\eta)\times(\mathbf E \mp i\mathbf B)$: $\mathbf E - i\mathbf B$ is $(1, 0)$, $\mathbf E + i\mathbf B$ is $(0, 1)$, see Theorem [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-8|§C3.3.8]] The Field Strength Is (1, 0) ⊕ (0, 1). *Source: Lecture 8 transcript (Sep 28: "it mixes E and B fields according to certain rules") · the user's notes Ch. 7*
 
-^nd-thm-c3-3-7
+^nd-thm-c3-3-8
 
 - [ ] Q1 **[state]** State how $\mathbf E \mp i\mathbf B$ transform and which label each carries.
 - [ ] Q2 Write $\omega^\mu{}_\nu$ for a rotation and for a boost in terms of $\boldsymbol\theta$, $\boldsymbol\eta$.
@@ -5137,7 +5137,7 @@ In an inner product with $\mathbf J_\pm$ Hermitian, $\mathbf J$ is Hermitian and
 
 All ten generators $\hat J^{\mu\nu}$, $\hat P^\mu$ of a unitary $U(\Lambda, a)$ are Hermitian, boosts included, and $U^{-1} = \mathbb 1 + \frac i2\omega_{\mu\nu}\hat J^{\mu\nu} - i\varepsilon_\mu\hat P^\mu$ to first order, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] The Generators Are Hermitian. *Source: the user's notes Ch. 7 §7.6*
 
-^nd-thm-c3-4-3
+^nd-thm-c3-4-5
 
 - [ ] Q1 **[state]** State the theorem and the first-order inverse.
 - [ ] Q2 Take the adjoint of the first-order expansion. Why are $\omega_{\mu\nu}$ and $\varepsilon_\mu$ unaffected?
@@ -5152,7 +5152,7 @@ All ten generators $\hat J^{\mu\nu}$, $\hat P^\mu$ of a unitary $U(\Lambda, a)$ 
 
 $U^{-1}\hat P^\rho U = \Lambda^\rho{}_\mu\hat P^\mu$ and the tensor law of $\hat J$ give $[\hat J^{\mu\nu}, \hat P^\rho] = i(g^{\nu\rho}\hat P^\mu - g^{\mu\rho}\hat P^\nu)$, $[\hat P^\mu, \hat P^\nu] = 0$; in three-dimensional form $[\hat K^i, \hat P^j] = -i\delta_{ij}\hat H$, $[\hat K^i, \hat H] = -i\hat P^i$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|§C3.4.8]] The Poincaré Algebra and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|§C3.4.7]] How the Generators Transform. *Source: the user's notes Ch. 7 §7.6 · Yu §3.2*
 
-^nd-thm-c3-4-6
+^nd-thm-c3-4-8
 
 - [ ] Q1 **[state]** Write the commutators $[\hat J^{\mu\nu}, \hat P^\rho]$ and $[\hat P^\mu, \hat P^\nu]$.
 - [ ] Q2 Conjugate a translation by a Lorentz transformation in the group. What is $U^{-1}(\Lambda)\hat P^\rho U(\Lambda)$?
@@ -5169,7 +5169,7 @@ $U^{-1}\hat P^\rho U = \Lambda^\rho{}_\mu\hat P^\mu$ and the tensor law of $\hat
 
 $\hat P^2$ commutes with all ten generators and is Poincaré invariant; a Lorentz-invariant vacuum eigenvector of $\hat P^\mu$ has $p_0^\mu = 0$, so the generators are the normal-ordered $\hat H$, $\hat{\mathbf P}$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-9|§C3.4.9]] P² Is a Casimir Operator and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-10|§C3.4.10]] An Invariant Vacuum Has Zero Four-Momentum. *Source: the user's notes Ch. 7 §7.6*
 
-^nd-thm-c3-4-7
+^nd-thm-c3-4-9
 
 - [ ] Q1 **[state]** State both theorems.
 - [ ] Q2 Lower an index in $[\hat P, \hat J]$ and apply the product rule to $[\hat P_\mu\hat P^\mu, \hat J^{\rho\sigma}]$. Why do the two terms cancel?
@@ -5738,7 +5738,7 @@ $[S^{\mu\nu}, S^{\rho\sigma}]$ = the Lorentz algebra with $\mathcal J \to S$, se
 
 $S^{ij} = \frac12\varepsilon^{ijk}\operatorname{diag}(\sigma^k, \sigma^k)$, $S^{0i} = -\frac i2\operatorname{diag}(\sigma^i, -\sigma^i)$: all block diagonal, $\mathbf J = \frac12\boldsymbol\Sigma$, $\mathbf K = -\frac i2\operatorname{diag}(\boldsymbol\sigma, -\boldsymbol\sigma)$, see Theorem [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|§C5a.3.2]] The Generators in the Chiral Basis. **[class exercise, Lecture 7]** ($S^{ij}$: "you could compute … that takes a little bit more work because you need to multiply"). *Source: Lecture 7, slide "Explicit Form of Dirac Matrices" and transcript · Lecture 8, "Cheat Sheet I"*
 
-^nd-thm-c5a-3-1
+^nd-thm-c5a-3-2
 
 - [ ] Q1 **[state]** Give $S^{ij}$ and $S^{0i}$ in the chiral basis.
 - [ ] Q2 Write $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ in blocks using the block product of two chiral $\gamma$'s.
@@ -5755,7 +5755,7 @@ $S^{ij} = \frac12\varepsilon^{ijk}\operatorname{diag}(\sigma^k, \sigma^k)$, $S^{
 
 In the chiral basis $\mathbf J_+ = \frac12\operatorname{diag}(\boldsymbol\sigma, 0)$, $\mathbf J_- = \frac12\operatorname{diag}(0, \boldsymbol\sigma)$: the upper half is $(\frac12, 0)$, the lower $(0, \frac12)$; a spinor representation ($2\pi$ gives $-1$), see Theorem [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|§C5a.3.3]] The Dirac Representation Is (½, 0) ⊕ (0, ½). *Source: Lecture 7, slide "Spinors and Boosts" ("4 dim. Dirac spinor representation is reducible") · Lecture 8, slide "Weyl Spinors"*
 
-^nd-thm-c5a-3-2
+^nd-thm-c5a-3-3
 
 - [ ] Q1 **[state]** State the decomposition and which half carries which label.
 - [ ] Q2 Form $\mathbf J_\pm = \frac12(\mathbf J \pm i\mathbf K)$ from the chiral generators. What are they on each block?
@@ -5952,7 +5952,7 @@ For commuting components $(\bar\psi\Gamma\psi)^\ast = \bar\psi\bar\Gamma\psi$ wi
 
 $\gamma^5$ commutes with every $S^{\mu\nu}$ and $\Lambda_{1/2}$; in the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$; on the Dirac representation $\gamma^5 = \frac43(\mathbf J_-^2 - \mathbf J_+^2)$, and its eigenspaces $\mp1$ carry $(\frac12, 0)$, $(0, \frac12)$ in every basis, see Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module. *Source: the user's notes Ch. 8 §8.2 · PS §3.4*
 
-^nd-thm-c5a-5-1
+^nd-thm-c5a-5-2
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Compute $\gamma^5$ in the chiral basis from the block products $\gamma^0\gamma^1$ and $\gamma^2\gamma^3$.
@@ -5968,7 +5968,7 @@ $\gamma^5$ commutes with every $S^{\mu\nu}$ and $\Lambda_{1/2}$; in the chiral b
 
 $P_{L,R}$ are complementary projectors; $P_L\gamma^\mu = \gamma^\mu P_R$; they commute with $S^{\mu\nu}$ and $\Lambda_{1/2}$; $\overline{P_L\psi} = \bar\psi P_R$, see Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|§C5a.5.3]] Properties of the Chirality Projectors. *Source: the user's notes Ch. 8 · PS §3.4 · Problem Set 6, Problem 5 (chiral transformations)*
 
-^nd-thm-c5a-5-2
+^nd-thm-c5a-5-3
 
 - [ ] Q1 **[state]** State the four properties.
 - [ ] Q2 Verify the projector relations from $(\gamma^5)^2 = \mathbb 1$.
@@ -8151,7 +8151,7 @@ $U(\mathcal T)\hat{\mathcal L}(t, \mathbf x)U(\mathcal T)^{-1} = \hat{\mathcal L
 
 $U(\mathcal T)^2\hat a^s_{\mathbf p}U(\mathcal T)^{-2} = -\hat a^s_{\mathbf p}$ (likewise $\hat b$), so $U(\mathcal T)^2 = (-1)^{\hat N_a + \hat N_b}$; on the complex scalar $U(\mathcal T)^2 = \mathbb 1$, see Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions and [[§C9.12 C, T and CPT for the Complex Scalar Field#^rem-c9-12-1|§C9.12, Remark: Time reversal twice is +1 on the scalar field]]. *Source: PS §3.6, p. 68 ("two successive spin flips return a spin to $(-1)$ times the original state")*
 
-^nd-thm-c9-9-9
+^nd-thm-c9-9-10
 
 - [ ] Q1 **[state]** State the result.
 - [ ] Q2 Apply the definition twice for $s = 1$ and for $s = 2$ using the label rule.

@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C5a Spinors and the Dirac Equation
 ← [[· C4 The Quantum Vector Field]] · ↑ [[Quantum Field Theory]] · [[· C5b The Quantum Spinor Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (41), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (93), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (26), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (44), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (7), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (173)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (8), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (167), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (108), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (47)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (43), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (93), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (54), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (44), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (7), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (66)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (8), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (171), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (152), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (47)
 
 ## Sections
 - [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation]] — 
@@ -33,18 +33,27 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-2|§C5a.0.2]] The Coefficients Cannot Commute
 - [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-3|§C5a.0.3]] The Smallest Coefficients Are 4×4 Matrices
 - [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-4|§C5a.0.4]] Two Components Suffice Only without Mass
+- [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-1|§C5a.1.1]] Computing with the Dirac Matrices
+- [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|§C5a.1.2]] How Spinors and Spinor Matrices Change with the Basis
+- [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-3|§C5a.1.3]] Any Two Sets of Dirac Matrices Are Related by a Change of Basis (Pauli)
+- [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|§C5a.1.4]] The Sixteen Products of γ Matrices
+- [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-5|§C5a.1.5]] The Eigenvalues of γ⁰ and γⁱ
 - [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-6|§C5a.1.6]] Identities of σ^μ and σ̄^μ
 - [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-7|§C5a.1.7]] The Chiral Matrices Satisfy the Clifford Algebra
 - [[§C5a.2 The Dirac Form#^thm-c5a-2-1|§C5a.2.1]] Hermiticity of the Dirac Matrices
+- [[§C5a.2 The Dirac Form#^thm-c5a-2-2|§C5a.2.2]] The Dirac Form Is Fixed by the γ's up to a Real Factor and Has Signature (2, 2)
 - [[§C5a.2 The Dirac Form#^thm-c5a-2-3|§C5a.2.3]] Which Changes of Basis Preserve ψ̄
+- [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|§C5a.3.1]] The Spinor Generators Obey the Lorentz Algebra, and the γ's Transform as a Vector
 - [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|§C5a.3.2]] The Generators in the Chiral Basis
 - [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|§C5a.3.3]] The Dirac Representation Is (½, 0) ⊕ (0, ½)
+- [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|§C5a.3.4]] Λ½ Is Pseudo-Unitary, γ⁰Λ½†γ⁰ = Λ½⁻¹
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-1|§C5a.4.1]] The Weyl Matrices Lie in SL(2, C)
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|§C5a.4.2]] The Weyl Matrices Cover the Vector Representation
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|§C5a.4.3]] The Spinor Lorentz Matrices Are Pairs of Weyl Matrices
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|§C5a.4.4]] The Rotation Matrices in the Dirac Representation, Entry by Entry
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-5|§C5a.4.5]] The Boost Matrices in the Dirac Representation, Entry by Entry
 - [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-6|§C5a.4.6]] A Boost Leaves No Spinor Component Invariant
+- [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|§C5a.5.1]] The γ⁵ Algebra
 - [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves
 - [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-3|§C5a.5.3]] Properties of the Chirality Projectors
 - [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-4|§C5a.5.4]] ε Is the Invariant Form of a Weyl Slot

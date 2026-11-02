@@ -166,7 +166,7 @@ Plane-wave states have infinite norm, and the square of $\langle f|i\hat T|i\ran
 >
 > ([[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^def-c6b-7-1|Def. §C6b.7.1]]). Every factor on the right is unchanged by a boost along the beam:
 > - $E_AE_B|\mathbf v_A - \mathbf v_B| = \sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2}$ ([[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-2|Theorem §C6b.7.2]], 1; [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-3|Theorem §C6b.7.3]]);
-> - $|\mathcal M|^2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]);
+> - $|\mathcal M|^2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]]);
 > - $d\Pi_n$ ([[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]).
 >
 > The same expression therefore gives $d\sigma$ in every frame reached from the rest frame of $A$ by such a boost, the centre-of-mass frame included. The wave-packet route obtains it directly in any collinear frame ([[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]]). Yu instead replaces $|\mathbf v_B|$ by the Møller velocity, which makes $\sigma$ Lorentz invariant by definition (Yu (6.315)–(6.316)). For collinear beams the two agree ([[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-3|Theorem §C6b.7.3]]).

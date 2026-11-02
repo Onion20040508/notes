@@ -277,7 +277,7 @@ The first underbrace of the theorem, "kinematics of the initial particles" (slid
 ^thm-c6b-6-3
 
 > [!derivation]- Derivation
-> **Step 1** (the amplitude). By [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]] with $N = 2 + n$,
+> **Step 1** (the amplitude). By [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]] with $N = 2 + n$,
 >
 > $$
 > [\mathcal M] = 4 - (2 + n) = 2 - n , \qquad [|\mathcal M|^2] = 2(2 - n) = 4 - 2n .
@@ -306,7 +306,7 @@ The first underbrace of the theorem, "kinematics of the initial particles" (slid
 
 ^der-c6b-6-3
 
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]], [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]]
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]]
 
 > [!theorem] Theorem §C6b.6.4: Identical Particles in the Final State
 > [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]] holds as it stands whether or not the final state contains identical particles. If it contains $n_k$ identical particles of species $k$, integrating it over *all* final momenta counts every physical final state $S_{\rm id} = \prod_kn_k!$ times, and the total cross section is

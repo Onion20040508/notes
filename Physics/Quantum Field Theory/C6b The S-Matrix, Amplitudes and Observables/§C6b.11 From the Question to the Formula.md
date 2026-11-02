@@ -151,7 +151,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > \Gamma = \frac12\cdot\frac{1}{2M}\cdot4\mu^2\cdot\frac{\beta}{8\pi} = \frac{\mu^2}{8\pi M}\sqrt{1 - \frac{4m^2}{M^2}} , \qquad \tau = \frac1\Gamma = \frac{8\pi M^2}{\mu^2\sqrt{M^2 - 4m^2}} ,
 > $$
 >
-> the result of [[§C6b.8 Decay Rates and Widths#^ex-c6b-8-1|Example §C6b.8.1]] (the user's solution, step by step). Check: $[\mathcal M] = 4 - 3 = 1 = [\mu]$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]), $[\Gamma] = 2 - 1 = 1$.
+> the result of [[§C6b.8 Decay Rates and Widths#^ex-c6b-8-1|Example §C6b.8.1]] (the user's solution, step by step). Check: $[\mathcal M] = 4 - 3 = 1 = [\mu]$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]), $[\Gamma] = 2 - 1 = 1$.
 >
 > **Pitfalls.**
 > - *The decaying state is not an asymptotic state.* "Since an unstable particle cannot be sent into the infinitely distant past, our definition (4.73) of $\mathcal M(m_A \to \{p_f\})$ in terms of the $S$-matrix makes no sense in this context. Nevertheless formula (4.86) is correct, when $\mathcal M$ is computed according to the Feynman rules" (PS pp. 107–108); $\Phi$ violates assumption 2 of Model §C6a.0.3 ([[§C6b.8 Decay Rates and Widths#^cau-c6b-8-1|§C6b.8, Caution: Free states in a decay amplitude]], [[§C6b.8 Decay Rates and Widths#^cau-c6b-8-2|§C6b.8, Caution: "Corollary of studying interacting wave function (2nd term)"]]).
@@ -292,7 +292,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > \frac{1}{n_3!}\Bigl(\frac{-ig}{3!}\Bigr)^{n_3}\frac{1}{n_4!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^{n_4}\int\prod_{v}d^4z_v\prod_{u}d^4w_u\;\langle\mathbf p_1\mathbf p_2|\,T\Bigl\{\prod_{v=1}^{n_3}\hat\phi_I(z_v)^3\prod_{u=1}^{n_4}\hat\phi_I(w_u)^4\Bigr\}|\mathbf p_A\mathbf p_B\rangle ,
 > $$
 >
-> a sum over full contractions of legs and particles ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]]), each a labelled diagram. $\mathcal M$ keeps the fully connected ones: they alone have the form $(2\pi)^4\delta^4(p_A + p_B - p_1 - p_2)\times$(smooth) of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-2|Theorem §C6b.1.2]].
+> a sum over full contractions of legs and particles ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|Theorem §C6b.2.3]]), each a labelled diagram. $\mathcal M$ keeps the fully connected ones: they alone have the form $(2\pi)^4\delta^4(p_A + p_B - p_1 - p_2)\times$(smooth) of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]].
 >
 > **Counting** (the translation proper). With $r = 3n_3 + 4n_4$ legs, $4$ of them on the particles, $I = \frac{r - 4}{2}$ internal lines and $L = I - (n_3 + n_4) + 1$ loops:
 >

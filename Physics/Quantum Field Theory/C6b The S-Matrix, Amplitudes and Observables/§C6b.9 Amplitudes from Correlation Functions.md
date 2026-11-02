@@ -84,7 +84,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > i\mathcal M = -i\lambda + O(\lambda^2) ,
 > $$
 >
-> dimensionless, as [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]] requires, and independent of the momenta.
+> dimensionless, as [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]] requires, and independent of the momenta.
 >
 > **Step 1** (first order of the numerator). As in [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]], Steps 1–2, with $\hat\phi_j \equiv \hat\phi_I(x_j)$ for the external points and $\hat\phi_{z_a} \equiv \hat\phi_I(z)$, $a = 1, \dots, 4$, for the four factors of $\hat\phi_I(z)^4$:
 >
@@ -195,7 +195,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > \end{aligned}
 > $$
 >
-> On physical momenta ($p^0 = E_{\mathbf p} > 0$) the first term vanishes and the other two are supported on $\{p_1, p_2\} = \{p_A, p_B\}$: none contributes to $\langle f|i\hat T|i\rangle$ away from the forward direction, and none has the form $\delta^4(p_A + p_B - p_1 - p_2)\times$(smooth) of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-2|Theorem §C6b.1.2]].
+> On physical momenta ($p^0 = E_{\mathbf p} > 0$) the first term vanishes and the other two are supported on $\{p_1, p_2\} = \{p_A, p_B\}$: none contributes to $\langle f|i\hat T|i\rangle$ away from the forward direction, and none has the form $\delta^4(p_A + p_B - p_1 - p_2)\times$(smooth) of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]].
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* zeroth order, exact for the free field in $|0\rangle$; physical momenta $p^0 = E_{\mathbf p} > 0$.
 >
@@ -237,10 +237,10 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 
 ^der-c6b-9-2
 
-*Uses:* [[§C6a.7 Feynman Diagrams for Correlation Functions#^ex-c6a-7-1|Example §C6a.7.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-2|Theorem §C6b.1.2]], [[§C6b.5 Wave Packets and the Cross Section#^lem-c6b-5-5|Lemma §C6b.5.5]]
+*Uses:* [[§C6a.7 Feynman Diagrams for Correlation Functions#^ex-c6a-7-1|Example §C6a.7.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]], [[§C6b.5 Wave Packets and the Cross Section#^lem-c6b-5-5|Lemma §C6b.5.5]]
 
 > [!remark] Remark: Disconnected pieces beyond zeroth order
-> The four-point correlator also contains disconnected pieces at higher orders, e.g. a line times a line with a tadpole at first order. They describe particles that pass through, at least partly, untouched; each connected component carries its own momentum delta function, and such pieces belong to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$ (or to products of lower-point processes), not to $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^der-c6b-1-2|Derivation §C6b.1.2]], second point).
+> The four-point correlator also contains disconnected pieces at higher orders, e.g. a line times a line with a tadpole at first order. They describe particles that pass through, at least partly, untouched; each connected component carries its own momentum delta function, and such pieces belong to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$ (or to products of lower-point processes), not to $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^der-c6b-1-3|Derivation §C6b.1.3]], second point).
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.9 · PS §4.5, p. 99, eq. (4.58)*
 

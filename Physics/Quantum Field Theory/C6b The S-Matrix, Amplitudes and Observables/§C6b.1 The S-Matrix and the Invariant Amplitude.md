@@ -140,7 +140,7 @@ $$
 $$
 so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ is split off so that $\hat T$ is the interaction itself at first order. Yu: "$iT$ 包含所有 $n \ge 1$ 的项".
 
-> [!theorem] Theorem §C6b.1.2: The S-Matrix Conserves Four-Momentum
+> [!theorem] Theorem §C6b.1.3: The S-Matrix Conserves Four-Momentum
 > Assume the theory is translation invariant: the four-momentum $\hat P^\mu = (\hat H, \hat{\mathbf P})$ satisfies $[\hat H, \hat P^\mu] = 0$, and the in and out states are eigenstates of $\hat P^\mu$ with eigenvalues $p_i = \sum_{A, B, \dots}p$ and $p_f = \sum_{1, 2, \dots}p$. Then $[\hat S, \hat P^\mu] = 0$, and every matrix element of $i\hat T$ between such states, as a distribution in the momenta, is of the form
 >
 > $$
@@ -153,7 +153,7 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 >
 > *Source: PHY 513 Lecture 15, slide 6 ("$\mathcal T$ conserves energy-momentum so remove $\delta$-function"), and transcript ("this is a relativistic theory, and therefore, the final outcome has the same total four momentum as the incoming … this whole thing here will be proportional to a delta function") · the user's PHY 513 notes, Ch. 15 §15.1, Derivation "Three properties of $\mathcal M$ (filled in)", first paragraph · PS §4.5, p. 104 · stated as a distribution here*
 
-^thm-c6b-1-2
+^thm-c6b-1-3
 
 > [!derivation]- Derivation
 > **Step 1** ($\hat S$ commutes with $\hat P^\mu$). $\hat P^\mu$ is conserved because the theory is invariant under translations in space and time (Noether, [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum|§C1b.7]]; the generator form [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]]): $[\hat H, \hat P^\mu] = 0$. By induction on $k$,
@@ -214,12 +214,12 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 > - The delta function is forced by symmetry alone, "before we even discuss what theory we're talking about"; only its coefficient knows the dynamics.
 > - The assumption that $C$ is smooth excludes further delta functions, which come from parts of the process in which some particles do not interact at all (disconnected pieces, [[§C6b.9 Amplitudes from Correlation Functions|§C6b.9]]).
 
-^der-c6b-1-2
+^der-c6b-1-3
 
 *Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
 
 > [!definition] Definition §C6b.1.3: The Invariant Amplitude
-> Since $\hat T$ conserves energy-momentum ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-2|Theorem §C6b.1.2]]), the delta function is removed:
+> Since $\hat T$ conserves energy-momentum ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]), the delta function is removed:
 >
 > $$
 > \langle\mathbf p_1\mathbf p_2\cdots|i\hat T|\mathbf p_A\mathbf p_B\cdots\rangle = (2\pi)^4\delta^4\Bigl(\sum_{A, B, \dots}p - \sum_{1, 2, \dots}p\Bigr)\;i\mathcal M(p_A, p_B, \dots \to p_1, p_2, \dots) .
@@ -249,7 +249,7 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 
 ^rem-c6b-1-3
 
-> [!theorem] Theorem §C6b.1.3: The Mass Dimension of the Amplitude
+> [!theorem] Theorem §C6b.1.4: The Mass Dimension of the Amplitude
 > For a process with $N$ external particles in total (initial plus final),
 >
 > $$
@@ -262,7 +262,7 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.1, Derivation "Three properties of $\mathcal M$ (filled in)", second paragraph*
 
-^thm-c6b-1-3
+^thm-c6b-1-4
 
 > [!derivation]- Derivation
 > **Step 1** (one-particle states). With $[E] = 1$ and $[\delta^3(\mathbf p)] = -3$, the normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]] gives
@@ -290,11 +290,11 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > **What the derivation shows.**
 > - The dimension of $\mathcal M$ is fixed by the number of external particles alone; for $N = 4$ the amplitude is dimensionless, so at lowest order in $\phi^4$ theory it can only be a number times $\lambda$ ([[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-1|Example §C6b.9.1]]).
 
-^der-c6b-1-3
+^der-c6b-1-4
 
 *Uses:* [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]]
 
-> [!theorem] Theorem §C6b.1.4: The Amplitude of Spinless Particles Is Lorentz Invariant
+> [!theorem] Theorem §C6b.1.5: The Amplitude of Spinless Particles Is Lorentz Invariant
 > If $\hat S$ commutes with the unitary representation $U(\Lambda)$ of the proper orthochronous Lorentz group on the in and out states, and the particles are spinless, then
 >
 > $$
@@ -305,7 +305,7 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.1, Derivation "Three properties of $\mathcal M$ (filled in)", third paragraph · PHY 513 Lecture 15, slide 6 ("invariant matrix element") · Yu §6.5, after eq. (6.275) ("$\mathcal M$ 是 Lorentz 不变的")*
 
-^thm-c6b-1-4
+^thm-c6b-1-5
 
 > [!derivation]- Derivation
 > **Step 1** (states). For a spinless particle, at $a = 0$ ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]], 1–2),
@@ -338,17 +338,17 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > (2\pi)^4\delta^4(\Delta)\;i\mathcal M(\Lambda p_A, \dots \to \Lambda p_1, \dots) = (2\pi)^4\delta^4(\Lambda\Delta)\;i\mathcal M(\Lambda p_A, \dots) = (2\pi)^4\delta^4(\Delta)\;i\mathcal M(p_A, \dots \to p_1, \dots) .
 > $$
 >
-> The coefficient of $\delta^4(\Delta)$ is unique on the surface $\Delta = 0$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-2|Theorem §C6b.1.2]], Step 4), so $\mathcal M(\Lambda p) = \mathcal M(p)$ there.
+> The coefficient of $\delta^4(\Delta)$ is unique on the surface $\Delta = 0$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]], Step 4), so $\mathcal M(\Lambda p) = \mathcal M(p)$ there.
 >
 > **What the derivation shows.**
 > - The relativistic normalization ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]]) is what makes the coefficient invariant: with non-relativistic normalization, factors $E/E'$ would appear.
 > - With spin, $\mathcal M$ carries spinor or polarization labels, and it transforms with the representation matrices of the external particles instead of being invariant.
 
-^der-c6b-1-4
+^der-c6b-1-5
 
-*Uses:* [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-2|Theorem §C6b.1.2]]
+*Uses:* [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|Theorem §C3.5.4]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-4|Theorem §C2a.4.4]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]
 
-> [!theorem] Theorem §C6b.1.5: Spinless 2 → 2 Kinematics in Terms of s and t
+> [!theorem] Theorem §C6b.1.6: Spinless 2 → 2 Kinematics in Terms of s and t
 > For $A + B \to 1 + 2$ with on-shell momenta, $p^2 = m^2$, and $p_A + p_B = p_1 + p_2$, let $s = (p_A + p_B)^2$, $t = (p_A - p_1)^2$, $u = (p_A - p_2)^2$ ([[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]]). Then
 > 1. the six scalar products are
 >
@@ -362,13 +362,13 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > and $u = m_A^2 + m_B^2 + m_1^2 + m_2^2 - s - t$;
 > 2. $\varepsilon_{\mu\nu\rho\sigma}p_A^\mu p_B^\nu p_1^\rho p_2^\sigma = 0$.
 >
-> Hence a spinless amplitude ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]) that depends on the momenta through scalar products and $\varepsilon$-contractions is a function of $s$ and $t$ alone.
+> Hence a spinless amplitude ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]]) that depends on the momenta through scalar products and $\varepsilon$-contractions is a function of $s$ and $t$ alone.
 >
 > *Model:* any (kinematics); *applies:* on-shell momenta of any $2 \to 2$ process, independent of the dynamics.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.1, Derivation "Three properties of $\mathcal M$ (filled in)", third paragraph ("a function of the invariants $p_i\cdot p_j$") · written here from [[§C1a.5 Vectors, Tensors and Index Notation|§C1a.5]]*
 
-^thm-c6b-1-5
+^thm-c6b-1-6
 
 > [!derivation]- Derivation
 > **Step 1** (expand the squares). With $p_i^2 = m_i^2$,
@@ -400,9 +400,9 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > **What the derivation shows.**
 > - Two invariants describe $2 \to 2$ kinematics; in the centre-of-mass frame $s = E_{\rm cm}^2$ and $t$ fixes the scattering angle ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], 3).
 
-^der-c6b-1-5
+^der-c6b-1-6
 
-*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-1|Example §C1a.5.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]
+*Uses:* [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-1|Example §C1a.5.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]]
 
 > [!remark] Remark: The big picture
 > - Spectrum and interactions (a Lagrangian) ⇒ Feynman rules. "Next few lectures: Feynman rules in different theories."

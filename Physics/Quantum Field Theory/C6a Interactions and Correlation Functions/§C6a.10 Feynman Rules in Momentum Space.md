@@ -191,7 +191,7 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 > L = (I + r) - (V + r) + 1 = I - V + 1, \qquad (I + r) - V = L + r - 1 :
 > $$
 >
-> one integral per loop and the external momenta but one, fixed by overall conservation. For the tadpole ($V = 1$, $I = 1$, $r = 2$): $L = 1$, two integrals ([[§C6a.10 Feynman Rules in Momentum Space#^ex-c6a-10-1|Example §C6a.10.1]]). Written here (the counting is not on the slides; PS p. 95 "integrate over each undetermined momentum").
+> one integral per loop and the external momenta but one, fixed by overall conservation. For the tadpole ($V = 1$, $I = 1$, $r = 2$): $L = 1$, two integrals ([[§C6a.10 Feynman Rules in Momentum Space#^ex-c6a-10-1|Example §C6a.10.1]]). Written here (the counting is not on the slides; PS p. 95 "integrate over each undetermined momentum"); for any valences, several pieces and the count of internal lines from the legs, with the spanning-tree proof of $M - N + 1$: [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]].
 >
 > **Step 7** ($S$). The coefficient $1/S$ of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]] is a number and is unchanged.
 >

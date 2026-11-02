@@ -45,10 +45,10 @@ C6b follows the course (Lecture 15) and the user's notes (Ch. 15), except for th
 
 ## Theorems
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|§C6b.1.1]] S-Matrix Elements and the Interaction-Picture Evolution Operator
-- [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-2|§C6b.1.2]] The S-Matrix Conserves Four-Momentum
-- [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|§C6b.1.3]] The Mass Dimension of the Amplitude
-- [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|§C6b.1.4]] The Amplitude of Spinless Particles Is Lorentz Invariant
-- [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|§C6b.1.5]] Spinless 2 → 2 Kinematics in Terms of s and t
+- [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|§C6b.1.3]] The S-Matrix Conserves Four-Momentum
+- [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|§C6b.1.4]] The Mass Dimension of the Amplitude
+- [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|§C6b.1.5]] The Amplitude of Spinless Particles Is Lorentz Invariant
+- [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-6|§C6b.1.6]] Spinless 2 → 2 Kinematics in Terms of s and t
 - [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-1|§C6b.2.1]] Contraction of Fields with Outgoing Particles
 - [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-2|§C6b.2.2]] Contraction of Fields with Incoming Particles
 - [[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-3|§C6b.2.3]] Wick's Theorem between Particle States

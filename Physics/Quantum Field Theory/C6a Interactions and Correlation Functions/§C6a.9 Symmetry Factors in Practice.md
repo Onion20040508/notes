@@ -28,7 +28,7 @@ The product rule for $S$ multiplies a factor $2^{\ell}\,\ell!$ for $\ell$ self-l
 >
 > How to read it: draw the diagram and multiply a factor $2$ for each self-loop (its two ends can be exchanged), $\ell!$ for $\ell$ self-loops at one vertex, $m!$ for a bundle of $m$ lines between the same two points, and the number of vertex permutations that leave the drawing unchanged; a vertex joined to an external point is never moved. The coefficient of the diagram is $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]); when in doubt, count contractions instead, $S = n!\,(4!)^n/N_D$.
 >
-> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* combinatorial, any order, $\phi^4$ vertices; oriented lines of the complex scalar: Theorem §C6a.9.2; other polynomial vertices: count orbits as in [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]].
+> *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* combinatorial, any order, $\phi^4$ vertices; oriented lines of the complex scalar: Theorem §C6a.9.2; other polynomial vertices: count orbits as in [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]].
 >
 > *Proof:* [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]] (for each labelled version $P$ of $D$, with $\Gamma_D = \Gamma_P$; $S$ is the same for all of them, [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]]).
 >

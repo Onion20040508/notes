@@ -44,14 +44,14 @@ graph TD
   C9["C9 Discrete Symmetries and Majorana Fields"]
   CA["CA Mathematical Methods"]
   CB["CB Lie Groups, Lie Algebras and Representations"]
-  C1a -->|27| C1b
+  C1a -->|29| C1b
   C1a -->|3| C2a
   C1b -->|13| C2a
   C1a -->|25| C2b
   C1b -->|3| C2b
   C2a -->|132| C2b
-  C1a -->|55| C3
-  C1b -->|24| C3
+  C1a -->|57| C3
+  C1b -->|25| C3
   C2a -->|40| C3
   C2b -->|15| C3
   C1a -->|40| C4
@@ -59,16 +59,16 @@ graph TD
   C2a -->|93| C4
   C2b -->|61| C4
   C3 -->|67| C4
-  C1a -->|41| C5a
+  C1a -->|43| C5a
   C1b -->|93| C5a
   C2a -->|1| C5a
-  C3 -->|26| C5a
+  C3 -->|54| C5a
   C1b -->|26| C5b
   C2a -->|90| C5b
   C2b -->|119| C5b
   C3 -->|7| C5b
   C4 -->|1| C5b
-  C5a -->|167| C5b
+  C5a -->|171| C5b
   C1b -->|32| C6a
   C2a -->|62| C6a
   C2b -->|118| C6a
@@ -84,7 +84,8 @@ graph TD
   C1b -->|9| C9
   C2a -->|73| C9
   C2b -->|4| C9
-  C5a -->|108| C9
+  C3 -->|2| C9
+  C5a -->|152| C9
   C5b -->|120| C9
   C1a -->|2| CA
   C1b -->|3| CA
@@ -102,21 +103,21 @@ graph TD
   C1b -.->|23| C1a
   C2a -.->|5| C1a
   C2b -.->|22| C1a
-  C3 -.->|7| C1a
+  C3 -.->|10| C1a
   C4 -.->|2| C1a
   C5a -.->|8| C1a
   CA -.->|45| C1a
   CB -.->|18| C1a
   C2a -.->|35| C1b
   C2b -.->|4| C1b
-  C3 -.->|12| C1b
+  C3 -.->|14| C1b
   C4 -.->|4| C1b
   C5a -.->|3| C1b
   C5b -.->|2| C1b
   C6a -.->|4| C1b
   C9 -.->|2| C1b
   CA -.->|32| C1b
-  CB -.->|2| C1b
+  CB -.->|3| C1b
   C2b -.->|21| C2a
   C3 -.->|3| C2a
   C5b -.->|2| C2a
@@ -130,26 +131,26 @@ graph TD
   C5b -.->|3| C3
   C6a -.->|9| C3
   C6b -.->|6| C3
-  C9 -.->|7| C3
+  C9 -.->|8| C3
   CA -.->|11| C3
-  CB -.->|107| C3
+  CB -.->|89| C3
   C5a -.->|1| C4
   C5b -.->|9| C4
   CA -.->|150| C4
   C5b -.->|44| C5a
   C9 -.->|8| C5a
   CA -.->|7| C5a
-  CB -.->|173| C5a
+  CB -.->|66| C5a
   C6a -.->|1| C5b
   C9 -.->|4| C5b
   CA -.->|121| C5b
-  CB -.->|5| C5b
+  CB -.->|1| C5b
   C6b -.->|26| C6a
-  CA -.->|107| C6a
+  CA -.->|109| C6a
   CB -.->|9| C6a
   CA -.->|73| C6b
   CA -.->|40| C9
-  CB -.->|100| C9
+  CB -.->|38| C9
 ```
 
 ## Planned
@@ -158,4 +159,4 @@ Chapters without notes yet (Yu's numbering). C6 Interactions of quantum fields i
 **Level C — PHY 513 (Larsen, Fall 2026; Peskin & Schroeder; Yu)**
 C7 Feynman diagrams (S-matrix rules, Yukawa, QED; the φ⁴ correlation-function diagrams are in C6a §C6a.7–§C6a.11, user decision 2026-10-26) · C8 Quantum electrodynamics · C9 Discrete symmetries and Majorana fields (written: parity §C9.1–§C9.5, charge conjugation §C9.6–§C9.7, physical spin §C9.8, time reversal §C9.9–§C9.10, CPT §C9.11, C, T and CPT of the complex scalar field §C9.12; Majorana fields pending) · C10 The S-matrix and correlation functions (LSZ; the S-matrix, cross sections and decay rates themselves are in C6b §C6b.1–§C6b.9) · C11 Path-integral quantization
 
-**Mathematics chapter CB** (started 2026-10-08; sections renumbered §CB.0–§CB.21 for "option 1", physics refers to mathematics; §CB.1 split on 2026-10-08, its SU(2)/SO(3) part is now §CB.2): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded) and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.3, Bargmann's theorem in §CB.19, Mackey and Wigner–Mackey in §CB.20★); the mathematical statements of C3 moved into CB in batch B1 (2026-10-08; C3 regrouped into §C3.1–§C3.5 with "The mathematics used here" blocks), those of C5a moved in batch B2 (2026-10-08; the Lorentz-algebra section split, now §CB.5–§CB.6; §C5a.0–§C5a.14 and §C9.4 with "The mathematics used here" blocks; §CB.0, linear algebra in components, holds the statements of spinor-space layer 1), and those of C1a and C9 (the matrix groups, the components of the Lorentz group and the identity component, the discrete element of O(3), and the dual space, multilinear tensors and their transformation law) moved in batch B3 (2026-10-08; "The mathematics used here" blocks in §C1a.3–§C1a.7, §C1b.1 and §C9.1; the preview folder of the option-1 demo removed): **option 1 is done**. §CB.21 Grassmann algebras is completed with C11 (the two ★ Grassmann boxes of §C5b.1 move then).
+**Mathematics chapter CB** (started 2026-10-08; sections renumbered §CB.0–§CB.21 for "option 1", physics refers to mathematics; §CB.1 split on 2026-10-08, its SU(2)/SO(3) part is now §CB.2): [[· CB Lie Groups, Lie Algebras and Representations]] has its full logical chain (every definition and theorem, in order, with course boxes embedded) and proofs, except those still marked *Proof (to be filled)* (the Lie correspondence in §CB.3, Bargmann's theorem in §CB.19, Mackey and Wigner–Mackey in §CB.20★); the mathematical statements of C3 moved into CB in batch B1 (2026-10-08; C3 regrouped into §C3.1–§C3.5 with "The mathematics used here" blocks), those of C5a moved in batch B2 (2026-10-08; the Lorentz-algebra section split, now §CB.5–§CB.6; §C5a.0–§C5a.14 and §C9.4 with "The mathematics used here" blocks; §CB.0, linear algebra in components, holds the statements of spinor-space layer 1), and those of C1a and C9 (the matrix groups, the components of the Lorentz group and the identity component, the discrete element of O(3), and the dual space, multilinear tensors and their transformation law) moved in batch B3 (2026-10-08; "The mathematics used here" blocks in §C1a.3–§C1a.7, §C1b.1 and §C9.1; the preview folder of the option-1 demo removed): **option 1 is done**. Since the physics-form rollout (2026-11-02, user-approved demos §C5a.1 and §C3.2) physics sections no longer embed CB or CA statements and the "The mathematics used here" blocks are gone: each structure is stated in the Model or Definition that uses it with a link to its CB/CA home, each judgement tool is a physics statement box whose *Proof:* links CB, and the CB/CA items a section relies on are listed, with what each guarantees there, in a folded *Mathematical background* block at the end of the section, before Connections. §CB.21 Grassmann algebras is completed with C11 (the two ★ Grassmann boxes of §C5b.1 move then).
