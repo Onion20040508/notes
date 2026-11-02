@@ -20,13 +20,13 @@ Solutions to [[PHY 513 Practice Midterm]] (Part I) and to [[PHY 513 Practice Mid
 > [!success]- Answers
 > 1. (a) $[G] = M^{-2}$ ($[\psi] = M^{3/2}$, so $[(\bar\psi\psi)^2] = M^6$ and $[G] = 4 - 6$; irrelevant); $[\kappa] = M^1$ ($4 - 3$; relevant). [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]], [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-3|Theorem §C1b.3.3]].
 > 2. (b) $\partial_\mu\partial^\mu\phi + m^2\phi + \dfrac{\lambda}{3!}\phi^3 = 0$ (from $\partial\mathcal L/\partial\phi = -m^2\phi - \frac{4\lambda}{4!}\phi^3$). [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]; the cubic case is [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-2|Example §C1b.2.2]].
-> 3. (c) $\gamma_\mu\slashed p\slashed q\gamma^\mu = 4\,p\cdot q$ (times $\mathbb 1_4$). [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-2|Theorem §C5a.11.2]].
-> 4. (d) $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\,\varepsilon^{\mu\nu\rho\sigma}$ with $\varepsilon^{0123} = +1$; convention-free check: $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = \operatorname{tr}(-i\gamma^5\gamma^5) = -4i$. [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-4|Theorem §C5a.11.4]]; Peskin–Schroeder's sign: [[§C5a.11 Gamma-Matrix Technology#^cau-c5a-11-1|§C5a.11, Caution: The sign of the ε trace across sources]].
+> 3. (c) $\gamma_\mu\slashed p\slashed q\gamma^\mu = 4\,p\cdot q$ (times $\mathbb 1_4$). [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]].
+> 4. (d) $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\,\varepsilon^{\mu\nu\rho\sigma}$ with $\varepsilon^{0123} = +1$; convention-free check: $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = \operatorname{tr}(-i\gamma^5\gamma^5) = -4i$. [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-4|Theorem §C5a.14.4]]; Peskin–Schroeder's sign: [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]].
 > 5. (e) $F^{\mu\nu}$: $(1, 0)\oplus(0, 1)$; Dirac spinor: $(\frac12, 0)\oplus(0, \frac12)$; $\dim(1, 1) = (2\cdot1 + 1)^2 = 9$. [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-3|§C3.2, Remark: The representations met in the course]].
 > 6. (f) $\varepsilon_{0123} = -1$; $\varepsilon^{2301} = +1$ (two exchanges, $0\leftrightarrow2$ and $1\leftrightarrow3$); $\varepsilon^{0321} = -1$ (one exchange, $1\leftrightarrow3$). [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-16|Def. §CB.0.16]], [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]].
 > 7. (g) $\tilde D_A(p) = \dfrac{i}{(p^0 - i\varepsilon)^2 - E_{\mathbf p}^2}$: both poles moved up to $\pm E_{\mathbf p} + i\varepsilon$, so the contour passes **below both poles**. [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]].
 > 8. (h) $\{\hat\psi_a(t, \mathbf x), \hat\psi^\dagger_b(t, \mathbf y)\} = \delta_{ab}\,\delta^3(\mathbf x - \mathbf y)$. [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]].
-> 9. (i) $\mathsf V^\mu$ and $\mathsf T^{\mu\nu}$ (the others are $C$-even); $\Theta\,\mathsf T^{\mu\nu}(x)\,\Theta^{-1} = +\mathsf T^{\mu\nu}(-x)$, the sign $(-1)^n$ with $n = 2$. [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|Theorem §C9.9.5]].
+> 9. (i) $\mathsf V^\mu$ and $\mathsf T^{\mu\nu}$ (the others are $C$-even); $\Theta\,\mathsf T^{\mu\nu}(x)\,\Theta^{-1} = +\mathsf T^{\mu\nu}(-x)$, the sign $(-1)^n$ with $n = 2$. [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|Theorem §C9.11.5]].
 > 10. (j) Dirac spinor: $-1$ (first back to $+\mathbb 1$ at $4\pi$); four-vector: $+1$. [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-4|Theorem §C5a.4.4]] (the user's submitted Problem Set 6, Problem 4(d), as written: $\mathbb 1_4$ and $-\mathbb 1_4$).
 
 ^sol-pm-1
@@ -163,7 +163,7 @@ Solutions to [[PHY 513 Practice Midterm]] (Part I) and to [[PHY 513 Practice Mid
 >
 > **Reading.** $C$ exchanges particles and antiparticles with the same momentum, so it flips the charge and keeps the momentum; $P$ reverses momenta and keeps the charge. (With parity phases $\eta_a$, $\eta_b$ the result is the same: $|\eta|^2 = 1$ in every $\hat a^\dagger\hat a$.)
 >
-> *Derived here; check:* the definitions [[§C9.10 C, T and CPT for the Complex Scalar Field#^def-c9-10-1|Def. §C9.10.1]] and [[§C9.2 Parity of the Scalar Field#^def-c9-2-1|Def. §C9.2.1]] (phases $1$, as in the user's Problem Set 7, Problem 4(a)); the parity part is [[§C9.2 Parity of the Scalar Field#^thm-c9-2-12|Theorem §C9.2.12]] for $\hat Q$; the field-level statements agree: the current flips under $C$ ([[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-4|Theorem §C9.10.4]]), so does its charge.
+> *Derived here; check:* the definitions [[§C9.12 C, T and CPT for the Complex Scalar Field#^def-c9-12-1|Def. §C9.12.1]] and [[§C9.2 Parity of the Scalar Field#^def-c9-2-1|Def. §C9.2.1]] (phases $1$, as in the user's Problem Set 7, Problem 4(a)); the parity part is [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-5|Theorem §C9.5.5]] for $\hat Q$; the field-level statements agree: the current flips under $C$ ([[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-4|Theorem §C9.12.4]]), so does its charge.
 
 ^sol-pm-3-c
 
@@ -245,7 +245,7 @@ Solutions to [[PHY 513 Practice Midterm]] (Part I) and to [[PHY 513 Practice Mid
 >
 > **Check.** $k = p = q$: left $\gamma_\mu\slashed k\slashed k\slashed k\gamma^\mu = k^2\gamma_\mu\slashed k\gamma^\mu = -2k^2\slashed k$; right $-2\slashed k^3 = -2k^2\slashed k$.
 >
-> *Checked against:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-2|Theorem §C5a.11.2]] (fourth identity; its derivation moves $\gamma^\mu$ through one slash at a time, and keeps the user's Problem Set 5, Problem 2 as the second route); [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]] (slash algebra).
+> *Checked against:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]] (fourth identity; its derivation moves $\gamma^\mu$ through one slash at a time, and keeps the user's Problem Set 5, Problem 2 as the second route); [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]] (slash algebra).
 
 ^sol-pm-5-a
 
@@ -265,7 +265,7 @@ Solutions to [[PHY 513 Practice Midterm]] (Part I) and to [[PHY 513 Practice Mid
 >
 > **Step 4** (forward limit). $p' = p$, $q = 0$, spins $r$, $s$: $\bar v^r(p)\gamma^\mu v^s(p) = -\frac{2p^\mu}{2m}\bar v^r(p)v^s(p) = -\frac{p^\mu}{m}(-2m\delta^{rs}) = 2p^\mu\delta^{rs}$. At $\mu = 0$: $\bar v\gamma^0v = v^\dagger\gamma^0\gamma^0v = v^\dagger v = 2E_{\mathbf p}\delta^{rs}$, consistent.
 >
-> *Derived here; check:* the $u$-spinor route [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-9|Theorem §C5a.11.9]] (its derivation, step for step, with $\slashed pu = mu$ replaced by $\slashed pv = -mv$, i.e. $m \to -m$); the conjugate equation $\bar v\slashed p = -m\bar v$ is [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]], 2; the normalizations [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-3|Theorem §C5a.10.3]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-4|Theorem §C5a.10.4]]. The identity was also checked numerically (explicit chiral-basis $v(p)$, $v(p')$ for random momenta, all four $\mu$).
+> *Derived here; check:* the $u$-spinor route [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]] (its derivation, step for step, with $\slashed pu = mu$ replaced by $\slashed pv = -mv$, i.e. $m \to -m$); the conjugate equation $\bar v\slashed p = -m\bar v$ is [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-4|Theorem §C5a.11.4]], 2; the normalizations [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|Theorem §C5a.12.3]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-4|Theorem §C5a.12.4]]. The identity was also checked numerically (explicit chiral-basis $v(p)$, $v(p')$ for random momenta, all four $\mu$).
 
 ^sol-pm-5-b
 
@@ -292,7 +292,7 @@ Solutions to [[PHY 513 Practice Midterm]] (Part I) and to [[PHY 513 Practice Mid
 >
 > **Reading.** Under $T$ the extra $\gamma^5$ adds nothing (real, and commutes with $\gamma^1\gamma^3$); under $P$ it adds a sign, under $C$ it removes one. Peskin–Schroeder's table, row $T$, column $\bar\psi\gamma^\mu\gamma^5\psi$: $(-1)^\mu$, the same.
 >
-> *Checked against:* [[§C9.8 Time Reversal#^thm-c9-8-13|Theorem §C9.8.13]] and its derivation (the same insertion of $\gamma^1\gamma^3\gamma^3\gamma^1$); the rule [[§C9.8 Time Reversal#^thm-c9-8-10|Theorem §C9.8.10]]; the identity $(\gamma^\mu)^{\ast}\gamma^1\gamma^3 = \gamma^1\gamma^3\gamma_\mu$ is [[§C9.8 Time Reversal#^thm-c9-8-4|Theorem §C9.8.4]], 4; the user's Problem Set 7, Problem 2(c) (as written, for $\mathsf V^\mu$: $\gamma^1\gamma^3$ commutes with $\gamma^0$, $\gamma^2$ and anticommutes with $\gamma^1$, $\gamma^3$, giving $(-1)^\mu$).
+> *Checked against:* [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-5|Theorem §C9.10.5]] and its derivation (the same insertion of $\gamma^1\gamma^3\gamma^3\gamma^1$); the rule [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-2|Theorem §C9.10.2]]; the identity $(\gamma^\mu)^{\ast}\gamma^1\gamma^3 = \gamma^1\gamma^3\gamma_\mu$ is [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-4|Theorem §C9.9.4]], 4; the user's Problem Set 7, Problem 2(c) (as written, for $\mathsf V^\mu$: $\gamma^1\gamma^3$ commutes with $\gamma^0$, $\gamma^2$ and anticommutes with $\gamma^1$, $\gamma^3$, giving $(-1)^\mu$).
 
 ^sol-pm-6-a
 
@@ -313,7 +313,7 @@ Solutions to [[PHY 513 Practice Midterm]] (Part I) and to [[PHY 513 Practice Mid
 >
 > **Where the rule's signs are.** The rule already contains $(-i)^2 = -1$ from the two field laws and $-1$ from exchanging the fermion fields inside the normal-ordered product; they cancel. Each $\gamma$ then contributes a sign and the transpose reverses the order: an antisymmetric product of two $\gamma$'s flips.
 >
-> *Checked against:* [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-10|Theorem §C9.6.10]] and its derivation (the same three steps); the rule [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-7|Theorem §C9.6.7]], 1; the transposes [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-4|Theorem §C9.5.4]], 1, 4, 5; Peskin–Schroeder's table (p. 71), row $C$, column $\bar\psi\sigma^{\mu\nu}\psi$: $-1$.
+> *Checked against:* [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-10|Theorem §C9.7.10]] and its derivation (the same three steps); the rule [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-7|Theorem §C9.7.7]], 1; the transposes [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-4|Theorem §C9.6.4]], 1, 4, 5; Peskin–Schroeder's table (p. 71), row $C$, column $\bar\psi\sigma^{\mu\nu}\psi$: $-1$.
 
 ^sol-pm-6-b
 
@@ -332,7 +332,7 @@ Solutions to [[PHY 513 Practice Midterm]] (Part I) and to [[PHY 513 Practice Mid
 >
 > **Rule.** Under $\Theta$ a bilinear with $n$ Lorentz indices is multiplied by $(-1)^n$ and moved to $-x$; $n = 2$ gives $+1$, as found.
 >
-> *Checked against:* [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|Theorem §C9.9.5]] (row $\mathsf T^{\mu\nu}$, column $CPT$: $+\mathsf T^{\mu\nu}$ at $-x$); the same three-step composition for $\mathsf A^\mu$ is [[§C9.9 CPT and the CPT Theorem#^ex-c9-9-1|Example §C9.9.1]]; the two given laws are [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-4|Theorem §C9.4.4]], row 5, and [[§C9.8 Time Reversal#^thm-c9-8-14|Theorem §C9.8.14]].
+> *Checked against:* [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|Theorem §C9.11.5]] (row $\mathsf T^{\mu\nu}$, column $CPT$: $+\mathsf T^{\mu\nu}$ at $-x$); the same three-step composition for $\mathsf A^\mu$ is [[§C9.11 CPT and the CPT Theorem#^ex-c9-11-1|Example §C9.11.1]]; the two given laws are [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-4|Theorem §C9.4.4]], row 5, and [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-6|Theorem §C9.10.6]].
 
 ^sol-pm-6-c
 
@@ -1013,7 +1013,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (conclude). The left side equals $\frac{2E_{\mathbf p}}{\sqrt{2E_{\mathbf p}}}\hat a^s_{\mathbf p} = \sqrt{2E_{\mathbf p}}\,\hat a^s_{\mathbf p}$; multiplying by $1/\sqrt{2E_{\mathbf p}}$ gives the claim, with no $t$ left. By the same steps, $\hat b^{s\dagger}_{\mathbf p} = \frac{1}{\sqrt{2E_{\mathbf p}}}\int d^3x\,e^{-ip\cdot x}v^{s\dagger}(p)\hat\psi(x)$, using $v^{s\dagger}(p)v^r(p) = 2E_{\mathbf p}\delta^{rs}$ and $v^{s\dagger}(p)u^r(\tilde p) = 0$.
 >
-> *Checked against:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|Theorem §C5b.2.3]] (statement and derivation steps 1–6), with [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|Theorem §C5a.10.1]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-3|Theorem §C5a.10.3]] and [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|Theorem §C5a.10.6]]; why the product is positive: [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-5|§C5b.2, Remark: A positive inner product]].
+> *Checked against:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|Theorem §C5b.2.3]] (statement and derivation steps 1–6), with [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|Theorem §C5a.12.3]] and [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|Theorem §C5a.12.6]]; why the product is positive: [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-5|§C5b.2, Remark: A positive inner product]].
 
 ^sol-px-3-3-3
 
@@ -1139,7 +1139,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (fermionic normal ordering). $:\!\hat b^s_{\mathbf p}\hat b^{s\dagger}_{\mathbf p}\!: = -\hat b^{s\dagger}_{\mathbf p}\hat b^s_{\mathbf p}$ (one exchange, one sign), so $-:\!\hat b\hat b^\dagger\!: = +\hat b^\dagger\hat b$: the Answer. The minus sign of the $v$ term (the $-\mathbf q$ of Step 1, the same relative sign as the $-E$ in $\hat H$) is cancelled by the fermion sign. Without colons the anticommutator gives instead the constant $-2V\int\frac{d^3p}{(2\pi)^3}\mathbf p$, zero by oddness as in X6.1.1.
 >
-> *Checked against:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]] (statement and derivation steps 1–3), with [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|Theorem §C5a.10.6]]; the same layout as the user's PHY 513 Problem Set 6, Problem 2 (charge), as written.
+> *Checked against:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]] (statement and derivation steps 1–3), with [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|Theorem §C5a.12.6]]; the same layout as the user's PHY 513 Problem Set 6, Problem 2 (charge), as written.
 
 ^sol-px-6-1-2
 
@@ -1652,7 +1652,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (checks). $d = 4$ gives the four-dimensional identities. Numerically (numpy) verified in $d = 2$ ($\gamma^0 = \sigma^1$, $\gamma^1 = i\sigma^2$), $d = 3$ ($\gamma^0 = \sigma^3$, $\gamma^{1,2} = i\sigma^{1,2}$) and $d = 4$ (chiral basis), for random vectors.
 >
-> *Derived here; check:* reduces at $d = 4$ to [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-2|Theorem §C5a.11.2]] (its derivation, step 1, notes $\gamma_\mu\gamma^\mu = d$ as a by-product; the steps are those of its covariant route), with the moving rule of [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]]; drill: [[PHY 513 PS Drill#^ps5-2-a|PS Drill, PS5.2(a)]], Q3, and [[PHY 513 PS Drill#^ps5-2-b|PS Drill, PS5.2(b)]], Q4.
+> *Derived here; check:* reduces at $d = 4$ to [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]] (its derivation, step 1, notes $\gamma_\mu\gamma^\mu = d$ as a by-product; the steps are those of its covariant route), with the moving rule of [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]]; drill: [[PHY 513 PS Drill#^ps5-2-a|PS Drill, PS5.2(a)]], Q3, and [[PHY 513 PS Drill#^ps5-2-b|PS Drill, PS5.2(b)]], Q4.
 
 ^sol-px-5-2-1
 
@@ -1674,7 +1674,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 3** (reading). Compared with $\gamma_\mu\gamma^\nu\gamma^\mu = -2\gamma^\nu$, the extra $\gamma^5$ costs one sign. Both steps use $\{\gamma^5, \gamma^\mu\} = 0$, a four-dimensional statement ($\gamma^5$ is the product of all four $\gamma$'s). Both identities verified numerically (numpy, chiral basis).
 >
-> *Derived here; check:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-2|Theorem §C5a.11.2]] (the free-index form $\gamma_\mu\gamma^\nu\gamma^\mu = -2\gamma^\nu$ and $\gamma_\mu\gamma^\mu = 4$) and [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]] (anticommutation of $\gamma^5$).
+> *Derived here; check:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]] (the free-index form $\gamma_\mu\gamma^\nu\gamma^\mu = -2\gamma^\nu$ and $\gamma_\mu\gamma^\mu = 4$) and [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]] (anticommutation of $\gamma^5$).
 
 ^sol-px-5-2-2
 
@@ -1698,7 +1698,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (check). For $q = p$ on shell, $p^2 = m^2$: $-8m^2 - 16m^2 = -24m^2$; direct: $(\slashed p + m)\gamma^\mu(\slashed p - m)\gamma_\mu = (\slashed p + m)(-2\slashed p - 4m) = -2m^2 - 6m\slashed p - 4m^2$, trace $-24m^2$. All three traces verified numerically (numpy, random vectors, $m = 1.3$).
 >
-> *Checked against:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|Theorem §C5a.11.3]] (first two traces, $\operatorname{tr}\mathbb 1 = 4$), [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-2|Theorem §C5a.11.2]] (contractions); the third trace is assembled here from these two boxes.
+> *Checked against:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]] (first two traces, $\operatorname{tr}\mathbb 1 = 4$), [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]] (contractions); the third trace is assembled here from these two boxes.
 
 ^sol-px-5-2-3
 
@@ -1720,7 +1720,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (reading). $\bar uu = 2m$ is a scalar, $u^\dagger u = 2E_{\mathbf p}$ is the time component of the four-vector $\bar u\gamma^\mu u = 2p^\mu$: its frame dependence is that of $p^0$. A single plane wave carries the current $\propto p^\mu$, pure convection. (Verified numerically for all $r, s, \mu$ at a random $\mathbf p$.)
 >
-> *Checked against:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-9|Theorem §C5a.11.9]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|Theorem §C5a.10.1]], and [[§C5a.10 Normalization, Spin Sums and Helicity#^rem-c5a-10-1|§C5a.10, Remark: Why u†u depends on the frame and ūu does not]] (which states this result).
+> *Checked against:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|Theorem §C5a.12.2]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]], and [[§C5a.12 Normalization and Spin Sums#^rem-c5a-12-1|§C5a.12, Remark: Why u†u depends on the frame and ūu does not]] (which states this result).
 
 ^sol-px-5-3-1
 
@@ -1750,7 +1750,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (subtract). $\slashed p'\gamma^\mu - \gamma^\mu\slashed p = p'^\mu - p^\mu + i\sigma^{\mu\nu}p'_\nu + i\sigma^{\mu\nu}p_\nu = q^\mu + i\sigma^{\mu\nu}(p + p')_\nu$. Inserting into Step 2 gives the answer. Compared with the vector identity, $(p + p')^\mu$ and $q_\nu$ have exchanged places. Verified numerically (numpy, chiral basis) for random on-shell $p$, $p'$, all four spin pairs and all $\mu$ ($m = 1.3$).
 >
-> *Derived here; check:* the steps of the first route of [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-9|Theorem §C5a.11.9]] (its derivation, steps 1–4) with one anticommutation of $\gamma^5$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]); the split $\gamma^\mu\gamma^\nu = g^{\mu\nu} - i\sigma^{\mu\nu}$ is [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|Theorem §C5a.11.1]]; the conjugate condition is [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]; $\sigma^{\mu\nu}$ normalization: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]].
+> *Derived here; check:* the steps of the first route of [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]] (its derivation, steps 1–4) with one anticommutation of $\gamma^5$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]); the split $\gamma^\mu\gamma^\nu = g^{\mu\nu} - i\sigma^{\mu\nu}$ is [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]]; the conjugate condition is [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-2|Theorem §C5a.11.2]]; $\sigma^{\mu\nu}$ normalization: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]].
 
 ^sol-px-5-3-2
 
@@ -1774,7 +1774,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (on solutions). $\mathcal L = \bar\psi(i\slashed\partial - m)\psi = 0$ when $\psi$ solves the Dirac equation, so Step 1 gives $T^{00} = i\psi^\dagger\partial_t\psi$; multiplying the Dirac equation by $\gamma^0$, $i\partial_t\psi = (-i\boldsymbol\alpha\cdot\nabla + \beta m)\psi = H_{\text{s.p.}}\psi$, so the two forms agree there. $\boldsymbol\alpha$ and $\beta$ are Hermitian ($(\gamma^0\gamma^j)^\dagger = \gamma^{j\dagger}\gamma^0 = -\gamma^j\gamma^0 = \gamma^0\gamma^j$), and $H$ is real for fields falling off at infinity.
 >
-> *Checked against:* [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]] (steps 1–6 of its derivation), [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-6|Theorem §C5a.8.6]] (step 3: $T^{00} = \mathcal H$ identically), [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-5|Theorem §C5a.8.5]]; drill: [[PHY 513 PS Drill#^ps5-4-b|PS Drill, PS5.4(b)]].
+> *Checked against:* [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|Theorem §C5a.9.2]] (steps 1–6 of its derivation), [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-6|Theorem §C5a.9.6]] (step 3: $T^{00} = \mathcal H$ identically), [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|Theorem §C5a.9.5]]; drill: [[PHY 513 PS Drill#^ps5-4-b|PS Drill, PS5.4(b)]].
 
 ^sol-px-5-4-1
 
@@ -1804,7 +1804,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 6** (reading). Here $T^{0i} - T^{i0} = -(\nabla\times\mathbf s)^i$ with the spin density $\mathbf s = \frac12\psi^\dagger\boldsymbol\Sigma\psi = f^2\hat{\mathbf z}$: the antisymmetric part is the divergence of the spin current, which the Belinfante tensor removes. The value is real and is the same for the tensor of the symmetrized Lagrangian. (Step 3's formula verified numerically for a random datum $w\,e^{i\mathbf k\cdot\mathbf x}$; Step 5 at $\mathbf x = (0.3, 0.5, 0.2)$, both tensors; numpy.)
 >
-> *Derived here; check:* the by-product of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-5|Theorem §C5a.8.5]] (its derivation: $T^{\mu\nu} - T^{\nu\mu} = i\bar\psi(\gamma^\mu\partial^\nu - \gamma^\nu\partial^\mu)\psi \ne 0$), [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-2|Theorem §C1b.8.2]] (antisymmetric part $= -\partial_\mu\mathcal S^{\mu\nu\rho}$), [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-8|Theorem §C5a.8.8]] (the spin current), [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-9|Theorem §C5a.8.9]] (the symmetric tensor); the elimination of $\partial_t$ is step 6 of the derivation of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]].
+> *Derived here; check:* the by-product of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|Theorem §C5a.9.5]] (its derivation: $T^{\mu\nu} - T^{\nu\mu} = i\bar\psi(\gamma^\mu\partial^\nu - \gamma^\nu\partial^\mu)\psi \ne 0$), [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-2|Theorem §C1b.8.2]] (antisymmetric part $= -\partial_\mu\mathcal S^{\mu\nu\rho}$), [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-8|Theorem §C5a.9.8]] (the spin current), [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-9|Theorem §C5a.9.9]] (the symmetric tensor); the elimination of $\partial_t$ is step 6 of the derivation of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|Theorem §C5a.9.2]].
 
 ^sol-px-5-4-2
 
@@ -1844,7 +1844,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (convention-free value). From $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$, multiplying by $-i$: $\gamma^0\gamma^1\gamma^2\gamma^3 = -i\gamma^5$, so $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -i\operatorname{tr}((\gamma^5)^2) = -4i$, whatever sign is given to $\varepsilon^{0123}$. With $\varepsilon^{0123} = +1$ Step 2 gives the same $-4i$; with Peskin–Schroeder's stated $\varepsilon^{0123} = -1$ the covariant formula would read $+4i\varepsilon^{\kappa\lambda\mu\nu}$. (All 256 index combinations verified numerically.)
 >
-> *Checked against:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-4|Theorem §C5a.11.4]] (the result and its derivation, steps 3–6), [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|Theorem §C5a.11.5]] (the antisymmetrized product), [[§C5a.11 Gamma-Matrix Technology#^cau-c5a-11-1|§C5a.11, Caution: The sign of the ε trace across sources]].
+> *Checked against:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-4|Theorem §C5a.14.4]] (the result and its derivation, steps 3–6), [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|Theorem §C5a.14.5]] (the antisymmetrized product), [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]].
 
 ^sol-px-5-5-2
 
@@ -1875,7 +1875,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (checks by contraction). With $g_{\mu\nu}$: left $\gamma_\mu\gamma^\mu\gamma^\rho = 4\gamma^\rho$; right $4\gamma^\rho - \gamma^\rho + \gamma^\rho + 0 = 4\gamma^\rho$ ($\varepsilon$ against the symmetric $g$ vanishes). With $g_{\mu\rho}$: left $\gamma_\mu\gamma^\nu\gamma^\mu = -2\gamma^\nu$; right $\gamma^\nu - 4\gamma^\nu + \gamma^\nu = -2\gamma^\nu$. Both agree with the contraction identities. The full identity verified numerically for all 64 index triples.
 >
-> *Checked against:* [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|Theorem §C5a.11.8]] (step 3 of its derivation states $\gamma^\lambda\gamma^\mu\gamma^\nu = \gamma^{[\lambda\mu\nu]} + g^{\lambda\mu}\gamma^\nu - g^{\lambda\nu}\gamma^\mu + g^{\mu\nu}\gamma^\lambda$, case-checked under [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-9|Theorem §C5a.8.9]]), [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-6|Theorem §C5a.11.6]], [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-2|Theorem §C5a.11.2]].
+> *Checked against:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|Theorem §C5a.14.8]] (step 3 of its derivation states $\gamma^\lambda\gamma^\mu\gamma^\nu = \gamma^{[\lambda\mu\nu]} + g^{\lambda\mu}\gamma^\nu - g^{\lambda\nu}\gamma^\mu + g^{\mu\nu}\gamma^\lambda$, case-checked under [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-9|Theorem §C5a.9.9]]), [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|Theorem §C5a.14.6]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]].
 
 ^sol-px-5-5-3
 
@@ -1899,7 +1899,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > Both are normalized ($\frac12(1 + 1) = 1$) and orthogonal ($\frac12(-1 + 1) = 0$). (All four eigenvalue equations verified numerically.)
 >
-> *Checked against:* [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-11|Theorem §C5a.10.11]] (the same formula; the user's Problem Set 5, Problem 6), [[§C5a.10 Normalization, Spin Sums and Helicity#^cau-c5a-10-2|§C5a.10, Caution: No phase convention is smooth on the whole sphere]]; drill: [[PHY 513 PS Drill#^ps5-6|PS Drill, PS5.6]].
+> *Checked against:* [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-1|Theorem §C5a.13.1]] (the same formula; the user's Problem Set 5, Problem 6), [[§C5a.13 Helicity Spinors and the Massless Limit#^cau-c5a-13-1|§C5a.13, Caution: No phase convention is smooth on the whole sphere]]; drill: [[PHY 513 PS Drill#^ps5-6|PS Drill, PS5.6]].
 
 ^sol-px-5-6-1
 
@@ -1921,7 +1921,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** (chirality). In the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$: the lower half ($\psi_R$) has $\gamma^5 = +1$, the upper ($\psi_L$) $\gamma^5 = -1$. So $\gamma^5u_\pm \to \pm u_\pm$: helicity $\pm\frac12$ becomes chirality $\pm1$, exactly at $m = 0$. (Numerically, at $E/m = 10$ and $1000$ the small half relative to $\sqrt{2E}$ is $5.0\times10^{-2}$ and $5.0\times10^{-4}$, i.e. $m/2E$.)
 >
-> *Checked against:* [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-12|Theorem §C5a.10.12]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-14|Theorem §C5a.10.14]], 1–2, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], 1.
+> *Checked against:* [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-2|Theorem §C5a.13.2]], [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-4|Theorem §C5a.13.4]], 1–2, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], 1.
 
 ^sol-px-5-6-2
 
@@ -1951,7 +1951,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (reading). At rest $v_D = -\sqrt{2m}\,(0, \eta)$: in the Dirac basis the negative-frequency solutions live in the lower components (the $\gamma^0_D = -1$ eigenspace), as $u_D$ lives in the upper ones; at rest $(\gamma^0_D + \mathbb 1)\,v_D = 0$, i.e. $(\slashed p + m)v = 0$ for $p = (m, \mathbf 0)$. (The formula and $\bar v_Dv_D = -2m$ verified numerically for both $\eta^s$ at a random $\mathbf p$.)
 >
-> *Derived here; check:* the computation of $u_D$ in [[§C5a.9 Plane-Wave Solutions#^ex-c5a-9-1|Example §C5a.9.1]] (the user's Problem Set 6, Problem 3(c)–(d)) with the sign of the lower Weyl block reversed; [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]] ($v$), [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-6|Theorem §C5a.9.6]] (square roots), [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-4|Theorem §C5a.10.4]] ($\bar vv = -2m$), [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]] ($U_D$).
+> *Derived here; check:* the computation of $u_D$ in [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^ex-c5a-11-1|Example §C5a.11.1]] (the user's Problem Set 6, Problem 3(c)–(d)) with the sign of the lower Weyl block reversed; [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]] ($v$), [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-6|Theorem §C5a.10.6]] (square roots), [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-4|Theorem §C5a.12.4]] ($\bar vv = -2m$), [[§C5a.5 Chirality and Weyl Spinors#^ex-c5a-5-1|Example §C5a.5.1]] ($U_D$).
 
 ^sol-px-6-3-1
 
@@ -1993,7 +1993,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (reading). $\mathsf S^2 + \mathsf P^2$ is invariant. In the chiral basis $e^{i\alpha\gamma^5}\psi = (e^{-i\alpha}\psi_L, e^{i\alpha}\psi_R)$: $\mathsf V^\mu$, $\mathsf A^\mu$ pair each half with itself and are invariant; $\mathsf S$, $\mathsf P$ pair $\psi_L$ with $\psi_R$ and pick up $e^{\pm2i\alpha}$. At $\alpha = \frac\pi2$: $\mathsf S \to -\mathsf S$, $\mathsf P \to -\mathsf P$. To first order $\delta\mathsf S = 2\alpha\mathsf P$, so $\delta(-m\mathsf S) = -2\alpha m\,\mathsf P$, the $\delta\mathcal L$ of PS6.5(c). (All three laws verified numerically for a random spinor, $\alpha = 0.4$.)
 >
-> *Checked against:* [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-8-1|Example §C5a.8.1]] (parts 1–3; its derivation states $\mathsf S \to \cos2\alpha\,\mathsf S + \sin2\alpha\,\mathsf P$; the user's Problem Set 6, Problem 5(a)–(c)), [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]. The laws for $\mathsf P$ and $\mathsf A^\mu$ are not stated there: *Derived here; check:* the same series steps as Example §C5a.8.1, parts 1–2.
+> *Checked against:* [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-9-1|Example §C5a.9.1]] (parts 1–3; its derivation states $\mathsf S \to \cos2\alpha\,\mathsf S + \sin2\alpha\,\mathsf P$; the user's Problem Set 6, Problem 5(a)–(c)), [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]. The laws for $\mathsf P$ and $\mathsf A^\mu$ are not stated there: *Derived here; check:* the same series steps as Example §C5a.9.1, parts 1–2.
 
 ^sol-px-6-5-1
 
@@ -2023,7 +2023,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > Compare PS6.5(e): there the $\gamma^5$ between the two terms flips one sign and the terms add to $-2im\,\bar\psi\gamma^5\psi$; here they cancel. The Noether sign is the opposite of the conventional current $j^\mu = \mathsf V^\mu$ with $Q = \int d^3x\,\psi^\dagger\psi$; any constant multiple of a conserved current is conserved.
 >
-> *Checked against:* [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]] ($j^\mu_{\rm N} = -\bar\psi\gamma^\mu\psi$ and the direct check, steps 4–5 of its derivation), [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-8-1|Example §C5a.8.1]] (the recipe and the two Dirac equations as the user wrote them for PS6.5(d)–(e)), [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; drill: [[PHY 513 PS Drill#^ps6-5-d|PS Drill, PS6.5(d)]].
+> *Checked against:* [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]] ($j^\mu_{\rm N} = -\bar\psi\gamma^\mu\psi$ and the direct check, steps 4–5 of its derivation), [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-9-1|Example §C5a.9.1]] (the recipe and the two Dirac equations as the user wrote them for PS6.5(d)–(e)), [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; drill: [[PHY 513 PS Drill#^ps6-5-d|PS Drill, PS6.5(d)]].
 
 ^sol-px-6-5-2
 
@@ -2053,7 +2053,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 6** (a component check). $\sigma^{12} = i\gamma^1\gamma^2$ is real ($\gamma^1$ real, $\gamma^2$ imaginary), so $(\sigma^{12})^\ast = \sigma^{12}$; $\gamma^1\gamma^3$ commutes with $\gamma^2$ and anticommutes with $\gamma^1$, hence anticommutes with $\gamma^1\gamma^2$: $\gamma^3\gamma^1\sigma^{12}\gamma^1\gamma^3 = -\sigma^{12}\gamma^3\gamma^1\gamma^1\gamma^3 = -\sigma^{12}$. So $\mathsf T^{12} \to -\mathsf T^{12}(x_T)$, as in Step 5. (All sixteen components of $\gamma^3\gamma^1(\sigma^{\mu\nu})^\ast\gamma^1\gamma^3 = -\mathcal P^\mu{}_\mu\mathcal P^\nu{}_\nu\sigma^{\mu\nu}$, no sum, also checked numerically.)
 >
-> *Checked against:* [[§C9.8 Time Reversal#^thm-c9-8-14|Theorem §C9.8.14]] (same statement and route), [[§C9.8 Time Reversal#^thm-c9-8-10|Theorem §C9.8.10]] (the general rule of Step 2), [[§C9.8 Time Reversal#^thm-c9-8-4|Theorem §C9.8.4]] (part 4, used in Step 4), [[§C9.8 Time Reversal#^thm-c9-8-8|Theorem §C9.8.8]], and the $T$ column of [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|Theorem §C9.9.5]]; the field laws as the user wrote them in [[PHY 513 PS Drill#^ps7-2-c|PS Drill, PS7.2(c)]].
+> *Checked against:* [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-6|Theorem §C9.10.6]] (same statement and route), [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-2|Theorem §C9.10.2]] (the general rule of Step 2), [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-4|Theorem §C9.9.4]] (part 4, used in Step 4), [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-8|Theorem §C9.9.8]], and the $T$ column of [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|Theorem §C9.11.5]]; the field laws as the user wrote them in [[PHY 513 PS Drill#^ps7-2-c|PS Drill, PS7.2(c)]].
 
 ^sol-px-7-2-1
 
@@ -2077,7 +2077,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Sign bookkeeping.** $(-i)^2 = -1$ (Step 2) times $-1$ (Step 3) times $+1$ (Step 4) $= +1$. With commuting fields the same computation would give $-\mathsf P$.
 >
-> *Checked against:* [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-8|Theorem §C9.6.8]], the general rule [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-7|Theorem §C9.6.7]] (part 1), the exchange step of [[§C9.6 Charge Conjugation on the Field and Bilinears#^der-c9-6-5|Derivation §C9.6.5]], the field laws [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-3|Theorem §C9.6.3]] and [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-4|Theorem §C9.6.4]], [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-4|Theorem §C9.5.4]] (part 5); the same steps for $\mathsf V^\mu$, $\mathsf A^\mu$ in the user's [[PHY 513 PS Drill#^ps7-2-b|PS Drill, PS7.2(b)]].
+> *Checked against:* [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-8|Theorem §C9.7.8]], the general rule [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-7|Theorem §C9.7.7]] (part 1), the exchange step of [[§C9.7 Charge Conjugation on the Field and Bilinears#^der-c9-7-5|Derivation §C9.7.5]], the field laws [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-3|Theorem §C9.7.3]] and [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-4|Theorem §C9.7.4]], [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-4|Theorem §C9.6.4]] (part 5); the same steps for $\mathsf V^\mu$, $\mathsf A^\mu$ in the user's [[PHY 513 PS Drill#^ps7-2-b|PS Drill, PS7.2(b)]].
 
 ^sol-px-7-2-2
 
@@ -2117,7 +2117,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 4** ($CP$, as a check). With $U(\mathcal C)U(\mathcal P)$ (first $P$): $j^\mu_L(x) \to \mathcal P^\mu{}_\nu j^\nu_R(\tilde x) \to \mathcal P^\mu{}_\nu\bigl(-j^\nu_L(\tilde x)\bigr)$, the number $\mathcal P^\mu{}_\nu$ passing the linear $U(\mathcal C)$. A theory coupling only $j^\mu_L$ (the charged weak current) violates $C$ and $P$ separately but can respect $CP$.
 >
-> *Checked against:* [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-12|★ Theorem §C9.6.12]] (C; its derivation is Step 2) and [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-7|★ Theorem §C9.4.7]] (part 3, P), the rows $\mathsf V^\mu$, $\mathsf A^\mu$ of [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|Theorem §C9.9.5]], and [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]] for Step 1.
+> *Checked against:* [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-12|★ Theorem §C9.7.12]] (C; its derivation is Step 2) and [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-7|★ Theorem §C9.4.7]] (part 3, P), the rows $\mathsf V^\mu$, $\mathsf A^\mu$ of [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|Theorem §C9.11.5]], and [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]] for Step 1.
 
 ^sol-px-7-2-4
 
@@ -2143,7 +2143,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (cross-check: compose $T$, $P$, $C$). $T$: $\hat{\bar\psi}(x) \to \hat{\bar\psi}(x_T)\gamma^3\gamma^1$. $P$ (linear, at the point $x_T$, whose parity image is $-x$; $\gamma^3\gamma^1$ passes): $\eta_a^\ast\hat{\bar\psi}(-x)\gamma^0\gamma^3\gamma^1$. The $\eta_a^\ast$ comes from parity on $\hat{\bar\psi}$ and is not conjugated again, because the antilinear step has already acted. $C$ (linear, at $-x$): $\eta_a^\ast\bigl(-i\gamma^0\gamma^2\hat\psi(-x)\bigr)^{\mathsf T}\gamma^0\gamma^3\gamma^1 = -i\eta_a^\ast\hat\psi^{\mathsf T}(\gamma^0\gamma^2)^{\mathsf T}\gamma^0\gamma^3\gamma^1 = -i\eta_a^\ast\hat\psi^{\mathsf T}\gamma^2\gamma^0\gamma^0\gamma^3\gamma^1 = -i\eta_a^\ast\hat\psi^{\mathsf T}\gamma^2\gamma^3\gamma^1$. The matrix: $\gamma^2\gamma^3\gamma^1 = \gamma^1\gamma^2\gamma^3$ (two exchanges), and $\gamma^5\gamma^0 = i\gamma^0\gamma^1\gamma^2\gamma^3\gamma^0 = -i\gamma^1\gamma^2\gamma^3$ (three exchanges to move the last $\gamma^0$ to the front, then $(\gamma^0)^2 = \mathbb 1$). So $-i\gamma^2\gamma^3\gamma^1 = \gamma^5\gamma^0$: the same result (the matrix identity also checked numerically with the chiral matrices).
 >
-> *Derived here; check:* no vault box states $\Theta\hat{\bar\psi}\Theta^{-1}$. Step 5 composes [[§C9.8 Time Reversal#^thm-c9-8-8|Theorem §C9.8.8]], [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-1|Theorem §C9.4.1]] and [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-4|Theorem §C9.6.4]] in the order of [[§C9.9 CPT and the CPT Theorem#^def-c9-9-1|Def. §C9.9.1]] and agrees with Steps 2–4, which start from [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-3|Theorem §C9.9.3]] and use [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-16|Theorem §CB.19.16]] (parts 1–3) with [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-2|Theorem §C9.9.2]]; X7.3.2 then reproduces the CPT column of [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|Theorem §C9.9.5]].
+> *Derived here; check:* no vault box states $\Theta\hat{\bar\psi}\Theta^{-1}$. Step 5 composes [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-8|Theorem §C9.9.8]], [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-1|Theorem §C9.4.1]] and [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-4|Theorem §C9.7.4]] in the order of [[§C9.11 CPT and the CPT Theorem#^def-c9-11-1|Def. §C9.11.1]] and agrees with Steps 2–4, which start from [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-3|Theorem §C9.11.3]] and use [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-16|Theorem §CB.19.16]] (parts 1–3) with [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-2|Theorem §C9.11.2]]; X7.3.2 then reproduces the CPT column of [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|Theorem §C9.11.5]].
 
 ^sol-px-7-3-1
 
@@ -2169,7 +2169,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (the general rule, a check on the whole column). Since $-\gamma^0\gamma^5 = \gamma^5\gamma^0$, $N = \gamma^5(\gamma^0\Gamma^\dagger\gamma^0)\gamma^5 = \gamma^5\bar\Gamma\gamma^5$. For the five standard matrices $\bar\Gamma = \Gamma$, and $\gamma^5$ anticommutes with each $\gamma^\mu$, so $\gamma^5\Gamma\gamma^5 = (-1)^n\Gamma$ with $n$ the number of $\gamma^\mu$'s: $\mathsf S, \mathsf P \to +$, $\mathsf V, \mathsf A \to -$, $\mathsf T \to +$, the $CPT$ column with $n$ = number of Lorentz indices (the matrix $N$ checked numerically for all five, with the chiral matrices).
 >
-> *Derived here; check:* the CPT column of [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|Theorem §C9.9.5]] ($\mathsf S \to +\mathsf S(-x)$, $\mathsf V^\mu \to -\mathsf V^\mu(-x)$), obtained there as the product of the $C$, $P$, $T$ signs ([[§C9.9 CPT and the CPT Theorem#^der-c9-9-5|Derivation §C9.9.5]]); the exchange step as in [[§C9.6 Charge Conjugation on the Field and Bilinears#^der-c9-6-5|Derivation §C9.6.5]]; $\bar\Gamma = \Gamma$ from [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]; the axial row of Step 5 against [[§C9.9 CPT and the CPT Theorem#^ex-c9-9-1|Example §C9.9.1]].
+> *Derived here; check:* the CPT column of [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|Theorem §C9.11.5]] ($\mathsf S \to +\mathsf S(-x)$, $\mathsf V^\mu \to -\mathsf V^\mu(-x)$), obtained there as the product of the $C$, $P$, $T$ signs ([[§C9.11 CPT and the CPT Theorem#^der-c9-11-5|Derivation §C9.11.5]]); the exchange step as in [[§C9.7 Charge Conjugation on the Field and Bilinears#^der-c9-7-5|Derivation §C9.7.5]]; $\bar\Gamma = \Gamma$ from [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]; the axial row of Step 5 against [[§C9.11 CPT and the CPT Theorem#^ex-c9-11-1|Example §C9.11.1]].
 
 ^sol-px-7-3-2
 
@@ -2193,7 +2193,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (comparison). $\Theta = U(\mathcal C)U(\mathcal P)U(\mathcal T)$ gives $+\eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$. In $\Theta$ the phase $\eta_a$ is conjugated zero times (parity acts after the antilinear $T$); in $\Theta'$ twice (by the adjoint in Step 2 and by $T$ in Step 3), so it ends up unconjugated in both. The overall sign comes from the order of the $\gamma$'s, $\gamma^1\gamma^3\gamma^0(-i\gamma^2) = +\gamma^5$ versus $i(-\gamma^2)\gamma^0\gamma^1\gamma^3 = -\gamma^5$. Taking adjoints, $\Theta'\hat\psi^\dagger_c\Theta'^{-1} = -\Theta\hat\psi^\dagger_c\Theta^{-1}$ as well (the real $\gamma^0$ of $\hat{\bar\psi}$ is unaffected), so in $\hat{\bar\psi}\Gamma\hat\psi$ the two signs give $(-1)^2 = +1$: "any order will do" for bilinears.
 >
-> *Checked against:* [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-4|Theorem §C9.9.4]] and [[§C9.9 CPT and the CPT Theorem#^der-c9-9-4|Derivation §C9.9.4]] (same steps and sign), [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-3|Theorem §C9.9.3]] for $\Theta$, [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-1|Theorem §C9.9.1]] (part 3: any order gives $\pm\gamma^5$), [[§C9.8 Time Reversal#^thm-c9-8-3|Theorem §C9.8.3]] for Step 3.
+> *Checked against:* [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-4|Theorem §C9.11.4]] and [[§C9.11 CPT and the CPT Theorem#^der-c9-11-4|Derivation §C9.11.4]] (same steps and sign), [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-3|Theorem §C9.11.3]] for $\Theta$, [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-1|Theorem §C9.11.1]] (part 3: any order gives $\pm\gamma^5$), [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-3|Theorem §C9.9.3]] for Step 3.
 
 ^sol-px-7-3-3
 
@@ -2219,7 +2219,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (states). $U\lvert\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,U\hat a^\dagger_{\mathbf p}U^{-1}U\lvert0\rangle = \eta^\ast\lvert-\mathbf p\rangle = \eta\lvert-\mathbf p\rangle$; $U^2\hat a_{\mathbf p}U^{-2} = \eta^2\hat a_{\mathbf p} = \hat a_{\mathbf p}$, so $U(\mathcal P)^2 = \mathbb 1$ on the Fock space.
 >
-> *Checked against:* [[§C9.2 Parity of the Scalar Field#^thm-c9-2-10|Theorem §C9.2.10]] with [[§C9.2 Parity of the Scalar Field#^der-c9-2-10|Derivation §C9.2.10]] (Steps 1–3, 5) and [[§C9.2 Parity of the Scalar Field#^der-c9-2-10b|Derivation §C9.2.10b]] (Step 4); for the complex field the condition becomes $\eta_b = \eta_a^\ast$ ([[§C9.2 Parity of the Scalar Field#^thm-c9-2-2|Theorem §C9.2.2]]).
+> *Checked against:* [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-3|Theorem §C9.5.3]] with [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^der-c9-5-3|Derivation §C9.5.3]] (Steps 1–3, 5) and [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^der-c9-5-3b|Derivation §C9.5.3b]] (Step 4); for the complex field the condition becomes $\eta_b = \eta_a^\ast$ ([[§C9.2 Parity of the Scalar Field#^thm-c9-2-2|Theorem §C9.2.2]]).
 
 ^sol-px-7-4-1
 
@@ -2241,7 +2241,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 6** (check in modes). $\hat Q = \frac12\int\frac{d^3p}{(2\pi)^3}(\hat a^\dagger_{\mathbf p}\hat a_{\mathbf p} - \hat b^\dagger_{\mathbf p}\hat b_{\mathbf p})$. $P$ and $T$ send $\hat a_{\mathbf p} \to \hat a_{-\mathbf p}$, $\hat b_{\mathbf p} \to \hat b_{-\mathbf p}$ (real coefficients, so antilinearity changes nothing), and relabelling $\mathbf p \to -\mathbf p$ returns $\hat Q$; $C$ exchanges $\hat a \leftrightarrow \hat b$ and gives $-\hat Q$; hence $\Theta$ gives $-\hat Q$: CPT maps a particle to its antiparticle, of opposite charge. The normalisation: $J^\mu = i[\hat\phi^\dagger\partial^\mu\hat\phi - (\partial^\mu\hat\phi^\dagger)\hat\phi] = -\hat j^\mu$ and $\hat Q = -\frac12\int d^3x\,\hat j^0$, so $Q_J = 2\hat Q$; the overall factor does not affect any rule.
 >
-> *Checked against:* [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-4|Theorem §C9.10.4]] (the current laws; its derivation's last bullet integrates them: $\hat Q \to -\hat Q$ under $C$, $\hat Q$ under $P$ and $T$), [[§C9.2 Parity of the Scalar Field#^thm-c9-2-12|Theorem §C9.2.12]] (parity commutes with the charge, both routes), [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-6|Theorem §C9.10.6]] (part 3, $\Theta\hat j^\mu\Theta^{-1} = -\hat j^\mu(-x)$; the integrated $\Theta$ line is composed here), [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]] and [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]], [[§C9.10 C, T and CPT for the Complex Scalar Field#^cau-c9-10-1|§C9.10, Caution: The star of a scalar field operator is the adjoint]] ($J^\mu = -\hat j^\mu$); the user's [[PHY 513 PS Drill#^ps7-4-b|PS Drill, PS7.4(b)]].
+> *Checked against:* [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-4|Theorem §C9.12.4]] (the current laws; its derivation's last bullet integrates them: $\hat Q \to -\hat Q$ under $C$, $\hat Q$ under $P$ and $T$), [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-5|Theorem §C9.5.5]] (parity commutes with the charge, both routes), [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-6|Theorem §C9.12.6]] (part 3, $\Theta\hat j^\mu\Theta^{-1} = -\hat j^\mu(-x)$; the integrated $\Theta$ line is composed here), [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]] and [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]], [[§C9.12 C, T and CPT for the Complex Scalar Field#^cau-c9-12-1|§C9.12, Caution: The star of a scalar field operator is the adjoint]] ($J^\mu = -\hat j^\mu$); the user's [[PHY 513 PS Drill#^ps7-4-b|PS Drill, PS7.4(b)]].
 
 ^sol-px-7-4-2
 
@@ -2265,7 +2265,7 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 >
 > **Step 5** (what the phase of $g$ does instead). Under $T$ alone, with $\hat\phi \to \hat\phi(x_T)$ and $\mathsf S \to \mathsf S(x_T)$, the sum goes to $(g^\ast\hat\phi\mathsf S + g\hat\phi^\dagger\mathsf S)(x_T)$; under $CP$ ($\hat\phi \to \hat\phi^\dagger(\tilde x)$, $\mathsf S \to \mathsf S(\tilde x)$, phases 1) to $(g\hat\phi^\dagger\mathsf S + g^\ast\hat\phi\mathsf S)(\tilde x)$. Each is invariant only for real $g$, while $CPT$ is invariant for any $g$: a complex $g$ violates $T$ and $CP$ together. (For this single coupling the phase can be removed by rephasing $\hat\phi \to e^{-i\arg g}\hat\phi$, which the free Lagrangian allows; a physical violation needs a second coupling fixing the phase.)
 >
-> *Derived here; check:* the $n = 0$ case of [[§C9.9 CPT and the CPT Theorem#^ex-c9-9-2|Example §C9.9.2]] (the user's PS7.4(c) argument), with [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-6|Theorem §C9.10.6]] (part 1), the $\mathsf S$ row of [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|Theorem §C9.9.5]] and [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-2|Theorem §C9.9.2]]; Step 5 uses [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-1|Theorem §C9.10.1]], [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-2|Theorem §C9.10.2]], [[§C9.2 Parity of the Scalar Field#^thm-c9-2-2|Theorem §C9.2.2]] and the $C$, $P$, $T$ columns of Theorem §C9.9.5; consistent with [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-6|Theorem §C9.9.6]].
+> *Derived here; check:* the $n = 0$ case of [[§C9.11 CPT and the CPT Theorem#^ex-c9-11-2|Example §C9.11.2]] (the user's PS7.4(c) argument), with [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-6|Theorem §C9.12.6]] (part 1), the $\mathsf S$ row of [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|Theorem §C9.11.5]] and [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-2|Theorem §C9.11.2]]; Step 5 uses [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-1|Theorem §C9.12.1]], [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-2|Theorem §C9.12.2]], [[§C9.2 Parity of the Scalar Field#^thm-c9-2-2|Theorem §C9.2.2]] and the $C$, $P$, $T$ columns of Theorem §C9.11.5; consistent with [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-6|Theorem §C9.11.6]].
 
 ^sol-px-7-4-3
 
@@ -2277,15 +2277,15 @@ The solutions below are numbered as the items of [[PHY 513 Practice Midterm 2 (E
 > [!success]- Solution
 > 1. **X7.1.1** $[\phi] = M^{1/2}$, $[\psi] = M^1$, $[g] = M^{1/2}$. ($[\mathcal L] = M^3$; $[\phi] = \frac{d-2}{2}$, $[\psi] = \frac{d-1}{2}$; $[g] = 3 - \frac12 - 2\cdot1$.) — [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]], [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-3|Theorem §C1b.3.3]]; the $d = 4$ case is [[§C1b.3 Mass Dimension, Locality and Power Counting#^ex-c1b-3-2|Example §C1b.3.2]].
 > 2. **X7.1.2** $\partial^2\phi + m^2\phi + 2\lambda(\phi^\ast\phi)\phi = 0$. (Vary $\phi^\ast$: $\partial\mathcal L/\partial(\partial_\mu\phi^\ast) = \partial^\mu\phi$, $\partial\mathcal L/\partial\phi^\ast = -m^2\phi - 2\lambda(\phi^\ast\phi)\phi$; the factor 2 from $(\phi^\ast)^2$.) — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]] (derived here for the quartic term; method as in [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-2|Example §C1b.2.2]]).
-> 3. **X7.1.3** $\gamma_\mu\slashed k\slashed p\slashed q\gamma^\mu = -2\slashed q\slashed p\slashed k$ (reversed order). — [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-2|Theorem §C5a.11.2]]; [[PHY 513 PS Drill#^ps5-2-d|PS Drill, PS5.2(d)]].
+> 3. **X7.1.3** $\gamma_\mu\slashed k\slashed p\slashed q\gamma^\mu = -2\slashed q\slashed p\slashed k$ (reversed order). — [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|Theorem §C5a.14.2]]; [[PHY 513 PS Drill#^ps5-2-d|PS Drill, PS5.2(d)]].
 > 4. **X7.1.4** $(\frac12, 0)\otimes(0, \frac12) = (\frac12, \frac12)$, the four-vector; symmetric traceless $h^{\mu\nu}$: $(1, 1)$, dimension $9$. — [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|Theorem §CB.17.12]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^rem-c3-2-3|§C3.2, Remark: The representations met in the course]].
 > 5. **X7.1.5** $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$; $\lvert\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}\lvert0\rangle$. — [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]].
 > 6. **X7.1.6** $\tilde D_R(p) = \dfrac{i}{(p^0 + i\varepsilon)^2 - E_{\mathbf p}^2}$; its poles sit at $p^0 = \pm E_{\mathbf p} - i\varepsilon$, so the contour passes above both poles. — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]].
 > 7. **X7.1.7** $0$ (it is the c-number $iD(x - y)$, which vanishes for $(x - y)^2 < 0$); microcausality. — [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]].
 > 8. **X7.1.8** $:\!\hat b^r_{\mathbf p}\hat b^{s\dagger}_{\mathbf q}\!: = -\hat b^{s\dagger}_{\mathbf q}\hat b^r_{\mathbf p}$ (one fermion exchange, one sign). — [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]].
-> 9. **X7.1.9** $\Theta\hat\psi(x)\Theta^{-1} = \eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$. — [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-3|Theorem §C9.9.3]]; [[PHY 513 PS Drill#^ps7-3|PS Drill, PS7.3]] ($\eta_a = 1$).
-> 10. **X7.1.10** $(-1)^n$, with the point moved to $-x$ (a derivative counts as an index); $U(\mathcal T)^2 = -1$ on a one-fermion state ($U(\mathcal T)^2 = (-1)^{\hat N_a + \hat N_b}$). — [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|Theorem §C9.9.5]], [[§C9.8 Time Reversal#^thm-c9-8-16|Theorem §C9.8.16]].
-> 11. **X7.1.11** $\bar u^r(p)u^s(p) = 2m\,\delta^{rs}$, $\bar v^r(p)v^s(p) = -2m\,\delta^{rs}$, $u^{r\dagger}(p)u^s(p) = 2E_{\mathbf p}\,\delta^{rs}$. — [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-4|Theorem §C5a.10.4]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|Theorem §C5a.10.1]].
+> 9. **X7.1.9** $\Theta\hat\psi(x)\Theta^{-1} = \eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$. — [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-3|Theorem §C9.11.3]]; [[PHY 513 PS Drill#^ps7-3|PS Drill, PS7.3]] ($\eta_a = 1$).
+> 10. **X7.1.10** $(-1)^n$, with the point moved to $-x$ (a derivative counts as an index); $U(\mathcal T)^2 = -1$ on a one-fermion state ($U(\mathcal T)^2 = (-1)^{\hat N_a + \hat N_b}$). — [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|Theorem §C9.11.5]], [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|Theorem §C9.9.9]].
+> 11. **X7.1.11** $\bar u^r(p)u^s(p) = 2m\,\delta^{rs}$, $\bar v^r(p)v^s(p) = -2m\,\delta^{rs}$, $u^{r\dagger}(p)u^s(p) = 2E_{\mathbf p}\,\delta^{rs}$. — [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|Theorem §C5a.12.2]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-4|Theorem §C5a.12.4]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]].
 > 12. **X7.1.12** Peskin–Schroeder: $\varepsilon^{0123} = -1$. Course ($\varepsilon^{0123} = +1$): $\varepsilon^{\mu\nu\rho\sigma}F_{\mu\nu}F_{\rho\sigma} = -8\,\mathbf E\cdot\mathbf B$ ($+8\,\mathbf E\cdot\mathbf B$ in Peskin–Schroeder). (With $F_{0i} = E^i$, $F_{jk} = -\varepsilon_{jkl}B^l$: $4\varepsilon^{0ijk}F_{0i}F_{jk} = -4\varepsilon_{ijk}\varepsilon_{jkl}E^iB^l = -8\,\mathbf E\cdot\mathbf B$.) — [[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³: these notes versus Peskin–Schroeder]], [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|Theorem §C1a.7.3]].
 >
 > *Checked against:* each home box above (printed and read); X7.1.1 and X7.1.2 are the $d = 3$ and quartic variants, computed here from Theorems §C1b.3.2–§C1b.3.3 and Theorem §C1b.2.9.

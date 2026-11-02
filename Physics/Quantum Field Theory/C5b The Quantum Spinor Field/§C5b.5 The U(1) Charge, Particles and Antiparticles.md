@@ -21,12 +21,12 @@ This is the spinor counterpart of [[§C2a.5 The Complex Scalar Field and Its Cha
 
 The current has its home in Chapter C5a, where its conservation follows from the two Dirac equations (and from Noether's theorem for the phase symmetry); it is shown here as it stands there:
 
-![[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3]]
+![[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3]]
 
 Its charge, read as an operator $\hat Q$, is the following. The box recalled above is classical and stays unhatted; the hat marks the quantization step ([[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-1|§C5b.1, Caution: Names for the Dirac field and its mode operators across sources]]).
 
 > [!definition] Definition §C5b.5.1: The U(1) Charge of the Dirac Field
-> The **charge** of the Dirac field is the space integral of the time component of the vector current $\hat j^\mu = \hat{\bar\psi}\gamma^\mu\hat\psi$, the current of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]] read as an operator,
+> The **charge** of the Dirac field is the space integral of the time component of the vector current $\hat j^\mu = \hat{\bar\psi}\gamma^\mu\hat\psi$, the current of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]] read as an operator,
 >
 > $$
 > \hat Q \equiv \int d^3x\;\hat{\bar\psi}\gamma^0\hat\psi = \int d^3x\;\hat\psi^\dagger\hat\psi ,
@@ -64,7 +64,7 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 > \hat Q = \int\frac{d^3p}{(2\pi)^3}\,\frac{1}{2E_{\mathbf p}}\sum_{s,r}\Bigl[u^{s\dagger}(p)u^r(p)\,\hat a^{s\dagger}_{\mathbf p}\hat a^r_{\mathbf p} + v^{s\dagger}(p)v^r(p)\,\hat b^s_{\mathbf p}\hat b^{r\dagger}_{\mathbf p} + u^{s\dagger}(p)v^r(\tilde p)\,\hat a^{s\dagger}_{\mathbf p}\hat b^{r\dagger}_{-\mathbf p}e^{2iE_{\mathbf p}t} + v^{s\dagger}(p)u^r(\tilde p)\,\hat b^s_{\mathbf p}\hat a^r_{-\mathbf p}e^{-2iE_{\mathbf p}t}\Bigr] .
 > $$
 >
-> **2. Orthogonality and normalization.** The last two terms vanish by [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|Theorem §C5a.10.6]]; the first two give $2E_{\mathbf p}\delta^{rs}$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|Theorem §C5a.10.1]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-3|Theorem §C5a.10.3]]), which cancels the $1/2E_{\mathbf p}$.
+> **2. Orthogonality and normalization.** The last two terms vanish by [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|Theorem §C5a.12.6]]; the first two give $2E_{\mathbf p}\delta^{rs}$ ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|Theorem §C5a.12.3]]), which cancels the $1/2E_{\mathbf p}$.
 >
 > **What the derivation shows**
 > - Where $\hat H$ had a relative minus sign between the species, $\hat Q$ has a plus: the positive density $\hat\psi^\dagger\hat\psi$ in modes.
@@ -72,7 +72,7 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 
 ^der-c5b-5-1
 
-*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-2|Derivation §C5b.3.2]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|Theorem §C5a.10.1]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-3|Theorem §C5a.10.3]], [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|Theorem §C5a.10.6]]
+*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^der-c5b-3-2|Derivation §C5b.3.2]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|Theorem §C5a.12.3]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|Theorem §C5a.12.6]]
 
 > [!theorem] Theorem §C5b.5.2: The Classical Dirac Energy Is Unbounded Below; the Classical Charge Is Positive
 > For a classical Dirac field with c-number amplitudes $a^s, b^s \in \mathcal S(\mathbb R^3)$ in the expansion of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], with $H$ and $Q$ of [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]] and [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|Theorem §C5b.5.1]],
@@ -104,7 +104,7 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 *Uses:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-1|Theorem §C5b.5.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]
 
 > [!theorem] Theorem §C5b.5.3: The Charge Counts Fermions Minus Antifermions
-> The normal-ordered charge ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]) of the current of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]] is
+> The normal-ordered charge ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]) of the current of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]] is
 >
 > $$
 > \hat Q = \int d^3x\;:\!\hat\psi^\dagger\hat\psi\!: \; = \sum_s\int\frac{d^3p}{(2\pi)^3}\bigl(\hat a^{s\dagger}_{\mathbf p}\hat a^s_{\mathbf p} - \hat b^{s\dagger}_{\mathbf p}\hat b^s_{\mathbf p}\bigr) = \hat N_a - \hat N_b ,
@@ -207,5 +207,5 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 > [!remark]- Connections
 > - The complex scalar and the Dirac field have the same two-species structure, with the roles reversed classically (scalar: positive energy, indefinite charge; Dirac: indefinite energy, positive charge) and made equal by quantization with the matching statistics — [[§C2a.5 The Complex Scalar Field and Its Charge#^rem-c2a-5-3|§C2a.5, Remark: Charge, not probability]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]].
 > - The positive density $\psi^\dagger\psi$ that made the Dirac equation look like a one-particle theory in Quantum Mechanics becomes a charge density with eigenvalues of both signs — [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-1|Remark: The vacuum charge, and why the order is forced]].
-> - The charge $\hat Q$ becomes the electric charge once $\hat\psi$ is coupled to the photon by a local phase, which makes the Dirac field the matter of quantum electrodynamics — QFT C8 (planned); charge conjugation, which exchanges $\hat a$ and $\hat b$ and is a symmetry of the free Dirac theory, is Lecture 12 — [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-2|Theorem §C9.6.2]], [[§C9.6 Charge Conjugation on the Field and Bilinears#^rem-c9-6-4|§C9.6, Remark: The number current flips]].
+> - The charge $\hat Q$ becomes the electric charge once $\hat\psi$ is coupled to the photon by a local phase, which makes the Dirac field the matter of quantum electrodynamics — QFT C8 (planned); charge conjugation, which exchanges $\hat a$ and $\hat b$ and is a symmetry of the free Dirac theory, is Lecture 12 — [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-2|Theorem §C9.7.2]], [[§C9.7 Charge Conjugation on the Field and Bilinears#^rem-c9-7-4|§C9.7, Remark: The number current flips]].
 > - The sign convention of the charge (PS's $\hat Q$ against the Noether charge) is the one already met for the complex scalar — [[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|§C1b.6, Caution: Sign and normalization of the U(1) current]], [[§C2a.5 The Complex Scalar Field and Its Charge#^cau-c2a-5-1|§C2a.5, Caution: Normalization and sign of the charge]].

@@ -281,7 +281,7 @@ The double-cover theorem below is proved with the Weyl matrices, the explicit li
 > **What the proof shows**
 > - The same six numbers $\omega_{\mu\nu}$ produce $\Lambda_L(\omega)$ and $e^\omega$, and the covering map sends one to the other. The half-angles of $\Lambda_L$ become full angles because $\lambda$ acts on $X$ twice, once from each side.
 > - $\Lambda_R(\omega) = (\Lambda_L(\omega)^\dagger)^{-1}$ is *not* $\Lambda_L$ of another $\omega$ with the same $\sigma$: it covers $e^\omega$ through $\bar\sigma$.
-> - Equivalence: this is [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]]; part 2 there is why $\psi_L^\dagger\bar\sigma^\mu\psi_L$ is a four-vector (the Weyl Lagrangian, §C5a.7).
+> - Equivalence: this is [[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]]; part 2 there is why $\psi_L^\dagger\bar\sigma^\mu\psi_L$ is a four-vector (the Weyl Lagrangian, §C5a.8).
 
 ^pf-cb-16-8
 

@@ -20,10 +20,13 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.5 Chirality and Weyl Spinors]] — 
 - [[§C5a.6 The Dirac Conjugate and the Bilinears]] — 
 - [[§C5a.7 The Dirac Equation and Its Lagrangian]] — 
-- [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field]] — 
-- [[§C5a.9 Plane-Wave Solutions]] — 
-- [[§C5a.10 Normalization, Spin Sums and Helicity]] — 
-- [[§C5a.11 Gamma-Matrix Technology]] — 
+- [[§C5a.8 The Weyl Form and the Weyl Equations]] — 
+- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field]] — 
+- [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost]] — 
+- [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates]] — 
+- [[§C5a.12 Normalization and Spin Sums]] — 
+- [[§C5a.13 Helicity Spinors and the Massless Limit]] — 
+- [[§C5a.14 Gamma-Matrix Technology]] — 
 
 ## Theorems
 - [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|§C5a.0.1]] Squaring a First-Order Equation
@@ -58,54 +61,54 @@ tags: [chapter, quantum-field-theory]
 - [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|§C5a.7.6]] The Field Equations of the Dirac Lagrangian
 - [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-7|§C5a.7.7]] The Dirac Lagrangian Is Real up to a Divergence
 - [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|§C5a.7.8]] Every Dirac Solution Solves the Klein–Gordon Equation
-- [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|§C5a.7.9]] Bilinears in Weyl Components
-- [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-10|§C5a.7.10]] The Dirac Equation in Two-Component Form
-- [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-12|§C5a.7.12]] Weyl Plane Waves Have Fixed Helicity
-- [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|§C5a.8.1]] Canonical Momenta of the Dirac Field
-- [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|§C5a.8.2]] The Hamiltonian Density of the Dirac Field
-- [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|§C5a.8.3]] The Vector Current
-- [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-4|§C5a.8.4]] The Axial Current
-- [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-5|§C5a.8.5]] The Canonical Energy–Momentum Tensor of the Dirac Field
-- [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-6|§C5a.8.6]] Energy and Momentum of the Dirac Field
-- [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-7|§C5a.8.7]] The Dirac Momentum Generates Spatial Translations
-- [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-8|§C5a.8.8]] The Spin Current and the Angular Momentum of the Dirac Field
-- [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-9|§C5a.8.9]] The Symmetric Energy–Momentum Tensor of the Dirac Field
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|§C5a.9.1]] Plane Waves Turn the Dirac Equation into Algebra
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|§C5a.9.2]] The Eigenvalues of p̸
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|§C5a.9.3]] Rest-Frame Solutions
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-4|§C5a.9.4]] In the Rest Frame the Two-Spinor Carries the Spin
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-5|§C5a.9.5]] The Spinor Boost along z
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-6|§C5a.9.6]] Explicit Square Roots
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|§C5a.9.7]] The Square-Root Identities
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|§C5a.9.8]] The Spinor Boost from Rest to Momentum p
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|§C5a.9.9]] The Positive-Frequency Spinors u(p)
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|§C5a.9.10]] The Dirac Conjugate of u(p)
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|§C5a.9.11]] The Negative-Frequency Spinors v(p)
-- [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|§C5a.9.12]] The Dirac Conjugate of v(p)
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|§C5a.10.1]] u†u = 2E
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|§C5a.10.2]] ūu = 2m
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-3|§C5a.10.3]] v†v = 2E
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-4|§C5a.10.4]] v̄v = −2m
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-5|§C5a.10.5]] u and v Are Orthogonal under the Dirac Conjugate
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|§C5a.10.6]] u and v Are Orthogonal at Opposite Three-Momenta
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|§C5a.10.7]] The Spin Sum over u
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|§C5a.10.8]] The Spin Sum over v
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-9|§C5a.10.9]] The Spin Sums Are Covariant
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-10|§C5a.10.10]] Completeness and the Energy Projectors
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-11|§C5a.10.11]] The Helicity Two-Spinors
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-12|§C5a.10.12]] Helicity Spinors u±
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-13|§C5a.10.13]] The v Spinors in the Helicity Basis
-- [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-14|§C5a.10.14]] The Massless and High-Energy Limit: Helicity Becomes Chirality
-- [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|§C5a.11.1]] Slash Algebra
-- [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-2|§C5a.11.2]] Contraction Identities
-- [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|§C5a.11.3]] Traces of γ Matrices
-- [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-4|§C5a.11.4]] Traces with γ⁵
-- [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|§C5a.11.5]] γ⁵ as a Totally Antisymmetric Product
-- [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-6|§C5a.11.6]] The Antisymmetric Product of Three γ's
-- [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-7|§C5a.11.7]] γ⁵ Dualizes σ^μν
-- [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|§C5a.11.8]] Every Product of γ's Reduces to the Standard Basis
-- [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-9|§C5a.11.9]] The Gordon Identity
+- [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-1|§C5a.8.1]] Bilinears in Weyl Components
+- [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-2|§C5a.8.2]] The Dirac Equation in Two-Component Form
+- [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-4|§C5a.8.4]] Weyl Plane Waves Have Fixed Helicity
+- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|§C5a.9.1]] Canonical Momenta of the Dirac Field
+- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|§C5a.9.2]] The Hamiltonian Density of the Dirac Field
+- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|§C5a.9.3]] The Vector Current
+- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-4|§C5a.9.4]] The Axial Current
+- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|§C5a.9.5]] The Canonical Energy–Momentum Tensor of the Dirac Field
+- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-6|§C5a.9.6]] Energy and Momentum of the Dirac Field
+- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-7|§C5a.9.7]] The Dirac Momentum Generates Spatial Translations
+- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-8|§C5a.9.8]] The Spin Current and the Angular Momentum of the Dirac Field
+- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-9|§C5a.9.9]] The Symmetric Energy–Momentum Tensor of the Dirac Field
+- [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|§C5a.10.1]] Plane Waves Turn the Dirac Equation into Algebra
+- [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-2|§C5a.10.2]] The Eigenvalues of p̸
+- [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-3|§C5a.10.3]] Rest-Frame Solutions
+- [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-4|§C5a.10.4]] In the Rest Frame the Two-Spinor Carries the Spin
+- [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-5|§C5a.10.5]] The Spinor Boost along z
+- [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-6|§C5a.10.6]] Explicit Square Roots
+- [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|§C5a.10.7]] The Square-Root Identities
+- [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-8|§C5a.10.8]] The Spinor Boost from Rest to Momentum p
+- [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|§C5a.11.1]] The Positive-Frequency Spinors u(p)
+- [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-2|§C5a.11.2]] The Dirac Conjugate of u(p)
+- [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|§C5a.11.3]] The Negative-Frequency Spinors v(p)
+- [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-4|§C5a.11.4]] The Dirac Conjugate of v(p)
+- [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|§C5a.12.1]] u†u = 2E
+- [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|§C5a.12.2]] ūu = 2m
+- [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|§C5a.12.3]] v†v = 2E
+- [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-4|§C5a.12.4]] v̄v = −2m
+- [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-5|§C5a.12.5]] u and v Are Orthogonal under the Dirac Conjugate
+- [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|§C5a.12.6]] u and v Are Orthogonal at Opposite Three-Momenta
+- [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|§C5a.12.7]] The Spin Sum over u
+- [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|§C5a.12.8]] The Spin Sum over v
+- [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-9|§C5a.12.9]] The Spin Sums Are Covariant
+- [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-10|§C5a.12.10]] Completeness and the Energy Projectors
+- [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-1|§C5a.13.1]] The Helicity Two-Spinors
+- [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-2|§C5a.13.2]] Helicity Spinors u±
+- [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-3|§C5a.13.3]] The v Spinors in the Helicity Basis
+- [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-4|§C5a.13.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality
+- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|§C5a.14.1]] Slash Algebra
+- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|§C5a.14.2]] Contraction Identities
+- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|§C5a.14.3]] Traces of γ Matrices
+- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-4|§C5a.14.4]] Traces with γ⁵
+- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product
+- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|§C5a.14.6]] The Antisymmetric Product of Three γ's
+- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-7|§C5a.14.7]] γ⁵ Dualizes σ^μν
+- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis
+- [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|§C5a.14.9]] The Gordon Identity
 
 ## Models
 - [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|§C5a.7.3]] The Free Dirac Field
-- [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|§C5a.7.11]] The Weyl Fields
+- [[§C5a.8 The Weyl Form and the Weyl Equations#^mod-c5a-8-3|§C5a.8.3]] The Weyl Fields

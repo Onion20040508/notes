@@ -1366,7 +1366,7 @@ For $\mathcal L = \bar\psi(i\gamma^\mu\partial_\mu - m)\psi$ and $\psi \to e^{i\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K12
-> - Example [[§C1b.5 Noether's Theorem#^ex-c1b-5-2|§C1b.5.2]] δℒ for the Dirac Phase, by Both Routes, items (a)–(d); Theorem [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|§C5a.8.3]] The Vector Current.
+> - Example [[§C1b.5 Noether's Theorem#^ex-c1b-5-2|§C1b.5.2]] δℒ for the Dirac Phase, by Both Routes, items (a)–(d); Theorem [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|§C5a.9.3]] The Vector Current.
 
 ### [C] The first-order test decides the whole family ★
 If the first-order test holds for every configuration of a one-parameter group $T_\alpha$, then $\mathcal L[T_\alpha\phi] = \mathcal L[\phi] + \partial_\mu K^\mu_\alpha$ with $K_\alpha = \int_0^\alpha d\beta\,\mathcal J[T_\beta\phi]$; $\delta\mathcal L = 0$ for all configurations gives exact invariance, see Theorem [[§C1b.5 Noether's Theorem#^thm-c1b-5-3|§C1b.5.3]] The First-Order Test Decides the Whole Family. *Source: the user's notes Ch. 3 §3.5 ("finite transformations are compositions of small ones")*
@@ -5340,7 +5340,7 @@ $S^i = \frac12\varepsilon^{ijk}S^{jk}$, $\Sigma^i = 2S^i$; in the chiral basis $
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|§C5a.3.2]] Spin Matrices of the Dirac Representation; the slide's factor: [[§C5a.9 Plane-Wave Solutions#^cau-c5a-9-1|§C5a.9, Caution: The slide's "angular momentum" is twice the angular momentum]].
+> - Definition [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|§C5a.3.2]] Spin Matrices of the Dirac Representation; the slide's factor: [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^cau-c5a-10-1|§C5a.10, Caution: The slide's "angular momentum" is twice the angular momentum]].
 
 ### [B] Weyl matrices and Weyl spinors
 
@@ -5399,7 +5399,7 @@ $\mathsf S = \bar\psi\psi$, $\mathsf P = \bar\psi i\gamma^5\psi$, $\mathsf V^\mu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|§C5a.6.2]] The Sixteen Bilinears; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; reality and the $i$: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|§C5a.6.4]] The Bilinears Are Real; basis of $4\times4$ matrices: Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|§C5a.11.8]] Every Product of γ's Reduces to the Standard Basis, Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|§CB.18.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
+> - Definition [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|§C5a.6.2]] The Sixteen Bilinears; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]]; reality and the $i$: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|§C5a.6.4]] The Bilinears Are Real; basis of $4\times4$ matrices: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis, Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|§CB.18.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
 
 ### [B] The matrix γ⁵
 
@@ -5414,7 +5414,7 @@ $\gamma^5 \equiv i\gamma^0\gamma^1\gamma^2\gamma^3$; the 5 is a label, not a Lor
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|§CB.12.14]] The Matrix γ⁵; properties: Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|§CB.12.15]] Algebraic Properties of γ⁵ (→ PS5.5(a)–(b)); the ε convention: [[§C5a.11 Gamma-Matrix Technology#^cau-c5a-11-1|§C5a.11, Caution: The sign of the ε trace across sources]], [[Larsen PHY 513|register: Levi-Civita]]; commuting with $S^{\mu\nu}$: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module.
+> - Definition [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|§CB.12.14]] The Matrix γ⁵; properties: Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|§CB.12.15]] Algebraic Properties of γ⁵ (→ PS5.5(a)–(b)); the ε convention: [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]], [[Larsen PHY 513|register: Levi-Civita]]; commuting with $S^{\mu\nu}$: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|§CB.18.4]] γ⁵ Commutes with the Spinor Generators and Splits the Dirac Module.
 
 ### [B] Chirality projectors
 
@@ -5429,7 +5429,7 @@ $P_L = \frac12(\mathbb 1 - \gamma^5)$, $P_R = \frac12(\mathbb 1 + \gamma^5)$; $\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7 (chirality projectors)
-> - Definition [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|§C5a.5.1]] Chirality Projectors; properties: Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] Properties of the Chirality Projectors; helicity versus chirality: [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-6|§C5a.7, Remark: Why "left-handed"]].
+> - Definition [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|§C5a.5.1]] Chirality Projectors; properties: Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|§C5a.5.2]] Properties of the Chirality Projectors; helicity versus chirality: [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]].
 
 ### [B] The Dirac equation
 
@@ -5459,7 +5459,7 @@ $\slashed a \equiv \gamma^\mu a_\mu = \gamma^0a_0 + \gamma^ia_i$; the Dirac equa
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|§C5a.7.2]] Feynman Slash; slash algebra: Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|§C5a.11.1]] Slash Algebra; the restricted sense: Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-9|§C5a.10.9]] The Spin Sums Are Covariant.
+> - Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|§C5a.7.2]] Feynman Slash; slash algebra: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|§C5a.14.1]] Slash Algebra; the restricted sense: Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-9|§C5a.12.9]] The Spin Sums Are Covariant.
 
 ### [B] The free Dirac field and its Lagrangian
 
@@ -5489,11 +5489,11 @@ $H_{\text{s.p.}} = \gamma^0(-i\boldsymbol\gamma\cdot\nabla + m) = -i\boldsymbol\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Single-Particle Hamiltonian; names: [[§C5a.7 The Dirac Equation and Its Lagrangian#^cau-c5a-7-2|§C5a.7, Caution: Names for the single-particle Hamiltonian]]; Hermiticity: step 5 of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-2|Derivation §C5a.8.2]].
+> - Definition [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|§C5a.7.3]] Single-Particle Hamiltonian; names: [[§C5a.7 The Dirac Equation and Its Lagrangian#^cau-c5a-7-2|§C5a.7, Caution: Names for the single-particle Hamiltonian]]; Hermiticity: step 5 of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-2|Derivation §C5a.9.2]].
 
 ### [B] Weyl fields and the Weyl equations
 
-For $m = 0$, a left-handed Weyl field obeys $i\bar\sigma^\mu\partial_\mu\psi_L = 0$ with $\mathcal L_L = i\psi_L^\dagger\bar\sigma^\mu\partial_\mu\psi_L$; a right-handed one $i\sigma^\mu\partial_\mu\psi_R = 0$, see Model [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|§C5a.7.11]] The Weyl Fields. *Source: Lecture 8, slide "Weyl Equation"*
+For $m = 0$, a left-handed Weyl field obeys $i\bar\sigma^\mu\partial_\mu\psi_L = 0$ with $\mathcal L_L = i\psi_L^\dagger\bar\sigma^\mu\partial_\mu\psi_L$; a right-handed one $i\sigma^\mu\partial_\mu\psi_R = 0$, see Model [[§C5a.8 The Weyl Form and the Weyl Equations#^mod-c5a-8-3|§C5a.8.3]] The Weyl Fields. *Source: Lecture 8, slide "Weyl Equation"*
 
 ^nd-mod-c5a-7-11
 
@@ -5504,11 +5504,11 @@ For $m = 0$, a left-handed Weyl field obeys $i\bar\sigma^\mu\partial_\mu\psi_L =
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16
-> - Model [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|§C5a.7.11]] The Weyl Fields; the two-component Dirac equation: Theorem [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-10|§C5a.7.10]] The Dirac Equation in Two-Component Form; parity: Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|§CB.17.13]] The Parity Automorphism Exchanges the Two Copies; when the description is useful: [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-7|§C5a.7, Remark: When the Weyl description is useful]].
+> - Model [[§C5a.8 The Weyl Form and the Weyl Equations#^mod-c5a-8-3|§C5a.8.3]] The Weyl Fields; the two-component Dirac equation: Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-2|§C5a.8.2]] The Dirac Equation in Two-Component Form; parity: Theorem [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|§CB.17.13]] The Parity Automorphism Exchanges the Two Copies; when the description is useful: [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-2|§C5a.8, Remark: When the Weyl description is useful]].
 
 ### [B] Positive- and negative-frequency solutions
 
-$\psi = u(p)e^{-ip\cdot x}$ (positive frequency) and $\psi = v(p)e^{+ip\cdot x}$ (negative frequency), always with $p^0 = +E_{\mathbf p}$; "negative" refers to the sign in the exponent, see Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-1|§C5a.9.1]] Positive- and Negative-Frequency Solutions. *Source: Lecture 9, slides "Solution of the Dirac Equation: Step 2" ("Convention: always p⁰ = +√(p²+m²)"), "Negative Frequency Solutions I"*
+$\psi = u(p)e^{-ip\cdot x}$ (positive frequency) and $\psi = v(p)e^{+ip\cdot x}$ (negative frequency), always with $p^0 = +E_{\mathbf p}$; "negative" refers to the sign in the exponent, see Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-1|§C5a.10.1]] Positive- and Negative-Frequency Solutions. *Source: Lecture 9, slides "Solution of the Dirac Equation: Step 2" ("Convention: always p⁰ = +√(p²+m²)"), "Negative Frequency Solutions I"*
 
 ^nd-def-c5a-9-1
 
@@ -5518,11 +5518,11 @@ $\psi = u(p)e^{-ip\cdot x}$ (positive frequency) and $\psi = v(p)e^{+ip\cdot x}$
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9 (mode substitution)
-> - Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-1|§C5a.9.1]] Positive- and Negative-Frequency Solutions; [[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-1|§C5a.9, Remark: Why the sign sits in the exponent, not in p⁰]].
+> - Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-1|§C5a.10.1]] Positive- and Negative-Frequency Solutions; [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^rem-c5a-10-1|§C5a.10, Remark: Why the sign sits in the exponent, not in p⁰]].
 
 ### [B] The matrices p·σ and p·σ̄
 
-$p\cdot\sigma = E_{\mathbf p} - \mathbf p\cdot\boldsymbol\sigma$, $p\cdot\bar\sigma = E_{\mathbf p} + \mathbf p\cdot\boldsymbol\sigma$, Hermitian, with eigenvalues $E_{\mathbf p} \mp \lvert\mathbf p\rvert$ and $E_{\mathbf p} \pm \lvert\mathbf p\rvert$ on the helicity eigenvectors, see Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|§C5a.9.2]] The Matrices p·σ and p·σ̄. *Source: Lecture 9, slides "Interpretation of Rapidity", "Practical Manipulations"*
+$p\cdot\sigma = E_{\mathbf p} - \mathbf p\cdot\boldsymbol\sigma$, $p\cdot\bar\sigma = E_{\mathbf p} + \mathbf p\cdot\boldsymbol\sigma$, Hermitian, with eigenvalues $E_{\mathbf p} \mp \lvert\mathbf p\rvert$ and $E_{\mathbf p} \pm \lvert\mathbf p\rvert$ on the helicity eigenvectors, see Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-2|§C5a.10.2]] The Matrices p·σ and p·σ̄. *Source: Lecture 9, slides "Interpretation of Rapidity", "Practical Manipulations"*
 
 ^nd-def-c5a-9-2
 
@@ -5533,11 +5533,11 @@ $p\cdot\sigma = E_{\mathbf p} - \mathbf p\cdot\boldsymbol\sigma$, $p\cdot\bar\si
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1 (invariants in a convenient frame)
-> - Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-2|§C5a.9.2]] The Matrices p·σ and p·σ̄; the two products: Example [[§C5a.9 Plane-Wave Solutions#^ex-c5a-9-1|§C5a.9.1]] The Plane-Wave Spinors in the Dirac Basis; positivity: Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|§C5a.9.5]] The Square Roots √(p·σ) and √(p·σ̄).
+> - Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-2|§C5a.10.2]] The Matrices p·σ and p·σ̄; the two products: Example [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^ex-c5a-11-1|§C5a.11.1]] The Plane-Wave Spinors in the Dirac Basis; positivity: Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|§C5a.10.5]] The Square Roots √(p·σ) and √(p·σ̄).
 
 ### [B] Spin basis
 
-An orthonormal basis $\xi^s$ of $\mathbb C^2$ ($\xi^{r\dagger}\xi^s = \delta^{rs}$, $\sum_s\xi^s\xi^{s\dagger} = \mathbb 1_2$), likewise $\eta^s$; standard choice spin along $\pm z$; from Lecture 12 on $\eta^s = \xi^{-s} = -i\sigma^2(\xi^s)^\ast$, see Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|§C5a.9.3]] Spin Basis. *Source: Lecture 9, slides "Solution of the Dirac Equation: Step 3", "Summary I–II" · Lecture 12 (the choice of $\eta^s$)*
+An orthonormal basis $\xi^s$ of $\mathbb C^2$ ($\xi^{r\dagger}\xi^s = \delta^{rs}$, $\sum_s\xi^s\xi^{s\dagger} = \mathbb 1_2$), likewise $\eta^s$; standard choice spin along $\pm z$; from Lecture 12 on $\eta^s = \xi^{-s} = -i\sigma^2(\xi^s)^\ast$, see Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-3|§C5a.10.3]] Spin Basis. *Source: Lecture 9, slides "Solution of the Dirac Equation: Step 3", "Summary I–II" · Lecture 12 (the choice of $\eta^s$)*
 
 ^nd-def-c5a-9-3
 
@@ -5548,11 +5548,11 @@ An orthonormal basis $\xi^s$ of $\mathbb C^2$ ($\xi^{r\dagger}\xi^s = \delta^{rs
 
 > [!tip]- Hints: route in the notes
 > - Technique: K10 (orthogonality of u, v)
-> - Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|§C5a.9.3]] Spin Basis; η: [[§C5a.9 Plane-Wave Solutions#^cau-c5a-9-2|§C5a.9, Caution: η means two things]], [[Larsen PHY 513|register: Flipped labels]]; the L12 choice: Definition [[§C9.5 Charge Conjugation on Oscillators and Spinors#^def-c9-5-5|§C9.5.5]] The Antiparticle Two-Spinors η^s = ξ^{−s}.
+> - Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-3|§C5a.10.3]] Spin Basis; η: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^cau-c5a-11-1|§C5a.11, Caution: η means two things]], [[Larsen PHY 513|register: Flipped labels]]; the L12 choice: Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-5|§C9.6.5]] The Antiparticle Two-Spinors η^s = ξ^{−s}.
 
 ### [B] Normalization of the spinors
 
-$u^s$, $v^s$ are normalized by orthonormal $\xi^s$, $\eta^s$ and the factor $\sqrt m$ at rest; equivalently $\bar u^ru^s = 2m\delta^{rs}$ (invariant) or $u^{r\dagger}u^s = 2E_{\mathbf p}\delta^{rs}$, see Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|§C5a.9.4]] Normalization of the Spinors. *Source: Lecture 9, slides "Normalization I", "Normalization II" · PS (3.55), (3.57)*
+$u^s$, $v^s$ are normalized by orthonormal $\xi^s$, $\eta^s$ and the factor $\sqrt m$ at rest; equivalently $\bar u^ru^s = 2m\delta^{rs}$ (invariant) or $u^{r\dagger}u^s = 2E_{\mathbf p}\delta^{rs}$, see Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-4|§C5a.10.4]] Normalization of the Spinors. *Source: Lecture 9, slides "Normalization I", "Normalization II" · PS (3.55), (3.57)*
 
 ^nd-def-c5a-9-4
 
@@ -5563,11 +5563,11 @@ $u^s$, $v^s$ are normalized by orthonormal $\xi^s$, $\eta^s$ and the factor $\sq
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1
-> - Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|§C5a.9.4]] Normalization of the Spinors; Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|§C5a.10.1]] u†u = 2E, Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|§C5a.10.2]] ūu = 2m; QM comparison: [[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-7|§C5a.9, Remark: What the field theory adds to the free Dirac spinors of Quantum Mechanics]]; [[Larsen PHY 513|register: Spinor normalization]].
+> - Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-4|§C5a.10.4]] Normalization of the Spinors; Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|§C5a.12.1]] u†u = 2E, Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|§C5a.12.2]] ūu = 2m; QM comparison: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^rem-c5a-11-3|§C5a.11, Remark: What the field theory adds to the free Dirac spinors of Quantum Mechanics]]; [[Larsen PHY 513|register: Spinor normalization]].
 
 ### [B] The square roots √(p·σ) and √(p·σ̄)
 
-The unique positive-semidefinite square roots, $\sqrt{p\cdot\sigma} = \sqrt{E - \lvert\mathbf p\rvert}\,\Pi_+ + \sqrt{E + \lvert\mathbf p\rvert}\,\Pi_-$ with $\Pi_\pm$ the projectors onto spin $\pm\frac12$ along $\hat{\mathbf p}$ (and $\sqrt{p\cdot\bar\sigma}$ with the roots exchanged); both Hermitian, see Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|§C5a.9.5]] The Square Roots √(p·σ) and √(p·σ̄). *Source: Lecture 9, slide "General Solution to Dirac Equation" · PS (3.50)*
+The unique positive-semidefinite square roots, $\sqrt{p\cdot\sigma} = \sqrt{E - \lvert\mathbf p\rvert}\,\Pi_+ + \sqrt{E + \lvert\mathbf p\rvert}\,\Pi_-$ with $\Pi_\pm$ the projectors onto spin $\pm\frac12$ along $\hat{\mathbf p}$ (and $\sqrt{p\cdot\bar\sigma}$ with the roots exchanged); both Hermitian, see Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|§C5a.10.5]] The Square Roots √(p·σ) and √(p·σ̄). *Source: Lecture 9, slide "General Solution to Dirac Equation" · PS (3.50)*
 
 ^nd-def-c5a-9-5
 
@@ -5578,11 +5578,11 @@ The unique positive-semidefinite square roots, $\sqrt{p\cdot\sigma} = \sqrt{E - 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (projectors)
-> - Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|§C5a.9.5]] The Square Roots √(p·σ) and √(p·σ̄); explicit form: Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-6|§C5a.9.6]] Explicit Square Roots; Hermitian roots in $\bar u$: step 1 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10|Derivation §C5a.9.10]].
+> - Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-5|§C5a.10.5]] The Square Roots √(p·σ) and √(p·σ̄); explicit form: Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-6|§C5a.10.6]] Explicit Square Roots; Hermitian roots in $\bar u$: step 1 of [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2|Derivation §C5a.11.2]].
 
 ### [B] Helicity of a Dirac spinor
 
-For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname{diag}(\hat{\mathbf p}\cdot\boldsymbol\sigma, \hat{\mathbf p}\cdot\boldsymbol\sigma)$; $h = +\frac12$ is called right-handed, $-\frac12$ left-handed, see Definition [[§C5a.10 Normalization, Spin Sums and Helicity#^def-c5a-10-1|§C5a.10.1]] Helicity of a Dirac Spinor. *Source: Problem Set 5, Problem 6 (statement) · the user's notes Ch. 9 §9.4*
+For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname{diag}(\hat{\mathbf p}\cdot\boldsymbol\sigma, \hat{\mathbf p}\cdot\boldsymbol\sigma)$; $h = +\frac12$ is called right-handed, $-\frac12$ left-handed, see Definition [[§C5a.13 Helicity Spinors and the Massless Limit#^def-c5a-13-1|§C5a.13.1]] Helicity of a Dirac Spinor. *Source: Problem Set 5, Problem 6 (statement) · the user's notes Ch. 9 §9.4*
 
 ^nd-def-c5a-10-1
 
@@ -5592,11 +5592,11 @@ For $\mathbf p \ne 0$, $h = \hat{\mathbf p}\cdot\mathbf S = \frac12\operatorname
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1
-> - Definition [[§C5a.10 Normalization, Spin Sums and Helicity#^def-c5a-10-1|§C5a.10.1]] Helicity of a Dirac Spinor; frame dependence: [[§C5a.10 Normalization, Spin Sums and Helicity#^rem-c5a-10-3|§C5a.10, Remark: The helicity of a massive particle depends on the frame]]; helicity becomes chirality: Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-14|§C5a.10.14]] The Massless and High-Energy Limit: Helicity Becomes Chirality.
+> - Definition [[§C5a.13 Helicity Spinors and the Massless Limit#^def-c5a-13-1|§C5a.13.1]] Helicity of a Dirac Spinor; frame dependence: [[§C5a.13 Helicity Spinors and the Massless Limit#^rem-c5a-13-1|§C5a.13, Remark: The helicity of a massive particle depends on the frame]]; helicity becomes chirality: Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-4|§C5a.13.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality.
 
 ### [B] Helicity two-spinors
 
-$\xi_\pm(\hat{\mathbf p})$: normalized eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol\sigma$ with eigenvalues $\pm1$, each fixed up to a phase, see Definition [[§C5a.10 Normalization, Spin Sums and Helicity#^def-c5a-10-2|§C5a.10.2]] Helicity Two-Spinors. → their explicit form is drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
+$\xi_\pm(\hat{\mathbf p})$: normalized eigenvectors of $\hat{\mathbf p}\cdot\boldsymbol\sigma$ with eigenvalues $\pm1$, each fixed up to a phase, see Definition [[§C5a.13 Helicity Spinors and the Massless Limit#^def-c5a-13-2|§C5a.13.2]] Helicity Two-Spinors. → their explicit form is drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
 
 ^nd-def-c5a-10-2
 
@@ -5606,7 +5606,7 @@ $\xi_\pm(\hat{\mathbf p})$: normalized eigenvectors of $\hat{\mathbf p}\cdot\bol
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (projectors)
-> - Definition [[§C5a.10 Normalization, Spin Sums and Helicity#^def-c5a-10-2|§C5a.10.2]] Helicity Two-Spinors; [[§C5a.10 Normalization, Spin Sums and Helicity#^cau-c5a-10-2|§C5a.10, Caution: No phase convention is smooth on the whole sphere]]; numbers: step 2 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-12|Derivation §C5a.10.12]].
+> - Definition [[§C5a.13 Helicity Spinors and the Massless Limit#^def-c5a-13-2|§C5a.13.2]] Helicity Two-Spinors; [[§C5a.13 Helicity Spinors and the Massless Limit#^cau-c5a-13-1|§C5a.13, Caution: No phase convention is smooth on the whole sphere]]; numbers: step 2 of [[§C5a.13 Helicity Spinors and the Massless Limit#^der-c5a-13-2|Derivation §C5a.13.2]].
 
 ### [B] Three different transformations of a spinor
 
@@ -6067,7 +6067,7 @@ $(-i\slashed\partial - m)(i\slashed\partial - m) = \partial^2 + m^2$, so each co
 
 ### [A] The Dirac equation in two-component form ★★
 
-In the chiral basis the Dirac equation is $i\bar\sigma^\mu\partial_\mu\psi_L = m\psi_R$, $i\sigma^\mu\partial_\mu\psi_R = m\psi_L$: kinetic operators act within each Weyl block, only the mass couples them, see Theorem [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-10|§C5a.7.10]] The Dirac Equation in Two-Component Form. *Source: Lecture 8, slide "Dirac Equation in 2-Component Form" ("Mass-term mixes the two irreducible representations")*
+In the chiral basis the Dirac equation is $i\bar\sigma^\mu\partial_\mu\psi_L = m\psi_R$, $i\sigma^\mu\partial_\mu\psi_R = m\psi_L$: kinetic operators act within each Weyl block, only the mass couples them, see Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-2|§C5a.8.2]] The Dirac Equation in Two-Component Form. *Source: Lecture 8, slide "Dirac Equation in 2-Component Form" ("Mass-term mixes the two irreducible representations")*
 
 ^nd-thm-c5a-7-10
 
@@ -6079,11 +6079,11 @@ In the chiral basis the Dirac equation is $i\bar\sigma^\mu\partial_\mu\psi_L = m
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Steps 1–3 of [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-10|Derivation §C5a.7.10]]; the Weyl case: Model [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|§C5a.7.11]] The Weyl Fields; when Weyl is useful: [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-7|§C5a.7, Remark: When the Weyl description is useful]].
+> - Steps 1–3 of [[§C5a.8 The Weyl Form and the Weyl Equations#^der-c5a-8-2|Derivation §C5a.8.2]]; the Weyl case: Model [[§C5a.8 The Weyl Form and the Weyl Equations#^mod-c5a-8-3|§C5a.8.3]] The Weyl Fields; when Weyl is useful: [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-2|§C5a.8, Remark: When the Weyl description is useful]].
 
 ### [B] Bilinears in Weyl components ★
 
-$\bar\psi = (\psi_R^\dagger, \psi_L^\dagger)$; $\bar\psi\chi = \psi_R^\dagger\chi_L + \psi_L^\dagger\chi_R$; $\bar\psi\gamma^\mu\chi = \psi_L^\dagger\bar\sigma^\mu\chi_L + \psi_R^\dagger\sigma^\mu\chi_R$; so $\mathcal L = i\psi_L^\dagger\bar\sigma^\mu\partial_\mu\psi_L + i\psi_R^\dagger\sigma^\mu\partial_\mu\psi_R - m(\psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L)$, see Theorem [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|§C5a.7.9]] Bilinears in Weyl Components. *Source: PS §3.2 · the user's notes Ch. 8*
+$\bar\psi = (\psi_R^\dagger, \psi_L^\dagger)$; $\bar\psi\chi = \psi_R^\dagger\chi_L + \psi_L^\dagger\chi_R$; $\bar\psi\gamma^\mu\chi = \psi_L^\dagger\bar\sigma^\mu\chi_L + \psi_R^\dagger\sigma^\mu\chi_R$; so $\mathcal L = i\psi_L^\dagger\bar\sigma^\mu\partial_\mu\psi_L + i\psi_R^\dagger\sigma^\mu\partial_\mu\psi_R - m(\psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L)$, see Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-1|§C5a.8.1]] Bilinears in Weyl Components. *Source: PS §3.2 · the user's notes Ch. 8*
 
 ^nd-thm-c5a-7-9
 
@@ -6094,11 +6094,11 @@ $\bar\psi = (\psi_R^\dagger, \psi_L^\dagger)$; $\bar\psi\chi = \psi_R^\dagger\ch
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Steps 1–6 of [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-9|Derivation §C5a.7.9]]; kinematics versus mass: [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-2|§C5a.5, Remark: Kinematics allows one handedness, a mass needs both]].
+> - Steps 1–6 of [[§C5a.8 The Weyl Form and the Weyl Equations#^der-c5a-8-1|Derivation §C5a.8.1]]; kinematics versus mass: [[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-2|§C5a.5, Remark: Kinematics allows one handedness, a mass needs both]].
 
 ### [B] Weyl plane waves have fixed helicity ★
 
-$\psi_L = \xi e^{-ip\cdot x}$ ($p^0 > 0$) solves the left-handed Weyl equation iff $p^2 = 0$ and $(\hat{\mathbf p}\cdot\boldsymbol\sigma)\xi = -\xi$, helicity $-\frac12$; a right-handed plane wave has helicity $+\frac12$, see Theorem [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-12|§C5a.7.12]] Weyl Plane Waves Have Fixed Helicity. *Source: the user's notes Ch. 8 §8.10 · PS §3.2*
+$\psi_L = \xi e^{-ip\cdot x}$ ($p^0 > 0$) solves the left-handed Weyl equation iff $p^2 = 0$ and $(\hat{\mathbf p}\cdot\boldsymbol\sigma)\xi = -\xi$, helicity $-\frac12$; a right-handed plane wave has helicity $+\frac12$, see Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-4|§C5a.8.4]] Weyl Plane Waves Have Fixed Helicity. *Source: the user's notes Ch. 8 §8.10 · PS §3.2*
 
 ^nd-thm-c5a-7-12
 
@@ -6110,11 +6110,11 @@ $\psi_L = \xi e^{-ip\cdot x}$ ($p^0 > 0$) solves the left-handed Weyl equation i
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1
-> - Steps 1–2 of [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-12|Derivation §C5a.7.12]], step 3 ($p^2 = 0$), step 4 (kernel), step 5 (right-handed), step 6 (helicity).
+> - Steps 1–2 of [[§C5a.8 The Weyl Form and the Weyl Equations#^der-c5a-8-4|Derivation §C5a.8.4]], step 3 ($p^2 = 0$), step 4 (kernel), step 5 (right-handed), step 6 (helicity).
 
 ### [A] Why "left-handed" ★★
 
-The positive-frequency solutions of the left-handed Weyl equation have spin against momentum, helicity $-\frac12$ (left-hand screw); the label of the representation ($(\frac12, 0)$, $\gamma^5 = -1$, chirality) was named after this property of its massless particles; with a mass, chirality (Lorentz-invariant, of the field) and helicity (frame-dependent, of a state) separate, see [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-6|§C5a.7, Remark: Why "left-handed"]]. *Source: the user's question (2026-10-13) · Lecture 8, slide "Weyl Spinors"*
+The positive-frequency solutions of the left-handed Weyl equation have spin against momentum, helicity $-\frac12$ (left-hand screw); the label of the representation ($(\frac12, 0)$, $\gamma^5 = -1$, chirality) was named after this property of its massless particles; with a mass, chirality (Lorentz-invariant, of the field) and helicity (frame-dependent, of a state) separate, see [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]]. *Source: the user's question (2026-10-13) · Lecture 8, slide "Weyl Spinors"*
 
 ^nd-rem-c5a-7-6
 
@@ -6127,7 +6127,7 @@ The positive-frequency solutions of the left-handed Weyl equation have spin agai
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1, K7
-> - [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-6|§C5a.7, Remark: Why "left-handed"]]; Theorem [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-12|§C5a.7.12]] Weyl Plane Waves Have Fixed Helicity; helicity becomes chirality: Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-14|§C5a.10.14]] The Massless and High-Energy Limit: Helicity Becomes Chirality; frame dependence: [[§C5a.10 Normalization, Spin Sums and Helicity#^rem-c5a-10-3|§C5a.10, Remark: The helicity of a massive particle depends on the frame]]; the sign of K: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]].
+> - [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]]; Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-4|§C5a.8.4]] Weyl Plane Waves Have Fixed Helicity; helicity becomes chirality: Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-4|§C5a.13.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality; frame dependence: [[§C5a.13 Helicity Spinors and the Massless Limit#^rem-c5a-13-1|§C5a.13, Remark: The helicity of a massive particle depends on the frame]]; the sign of K: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^cau-c3-2-2|§C3.2, Caution: Which one is (½, 0) depends on the sign of K]].
 
 ### [B] The Dirac equation keeps its form when ψ and γ change together ★
 
@@ -6147,7 +6147,7 @@ With $\psi' = U\psi$, $\gamma'^\mu = U\gamma^\mu U^{-1}$, $(i\gamma'^\mu\partial
 
 ### [B] Canonical momenta of the Dirac field ★
 
-$\pi_\psi = \partial\mathcal L/\partial(\partial_0\psi) = i\bar\psi\gamma^0 = i\psi^\dagger$, $\pi_{\bar\psi} = 0$: the momentum is not a function of $\dot\psi$, and $\psi$, $\psi^\dagger$ are themselves canonically conjugate, see Theorem [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|§C5a.8.1]] Canonical Momenta of the Dirac Field. *Source: Lecture 10 (canonical momentum and its puzzle) · the user's notes Ch. 8 · Course Log, Lecture 8 row*
+$\pi_\psi = \partial\mathcal L/\partial(\partial_0\psi) = i\bar\psi\gamma^0 = i\psi^\dagger$, $\pi_{\bar\psi} = 0$: the momentum is not a function of $\dot\psi$, and $\psi$, $\psi^\dagger$ are themselves canonically conjugate, see Theorem [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|§C5a.9.1]] Canonical Momenta of the Dirac Field. *Source: Lecture 10 (canonical momentum and its puzzle) · the user's notes Ch. 8 · Course Log, Lecture 8 row*
 
 ^nd-thm-c5a-8-1
 
@@ -6159,11 +6159,11 @@ $\pi_\psi = \partial\mathcal L/\partial(\partial_0\psi) = i\bar\psi\gamma^0 = i\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K12 (Noether recipe), K2
-> - Steps 1–3 of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-1|Derivation §C5a.8.1]]; [[Larsen PHY 513|register: Momentum density]].
+> - Steps 1–3 of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-1|Derivation §C5a.9.1]]; [[Larsen PHY 513|register: Momentum density]].
 
 ### [B] The Hamiltonian density of the Dirac field ★
 
-$\mathcal H = \pi_\psi\dot\psi - \mathcal L = \bar\psi(-i\gamma^j\partial_j + m)\psi = \psi^\dagger(-i\boldsymbol\alpha\cdot\nabla + \beta m)\psi$, equal to $i\psi^\dagger\partial_t\psi$ on solutions, see Theorem [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|§C5a.8.2]] The Hamiltonian Density of the Dirac Field. *Source: Lecture 10, slide 16 · the user's notes Ch. 8 · Problem Set 5, Problem 4 (context)*
+$\mathcal H = \pi_\psi\dot\psi - \mathcal L = \bar\psi(-i\gamma^j\partial_j + m)\psi = \psi^\dagger(-i\boldsymbol\alpha\cdot\nabla + \beta m)\psi$, equal to $i\psi^\dagger\partial_t\psi$ on solutions, see Theorem [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|§C5a.9.2]] The Hamiltonian Density of the Dirac Field. *Source: Lecture 10, slide 16 · the user's notes Ch. 8 · Problem Set 5, Problem 4 (context)*
 
 ^nd-thm-c5a-8-2
 
@@ -6175,11 +6175,11 @@ $\mathcal H = \pi_\psi\dot\psi - \mathcal L = \bar\psi(-i\gamma^j\partial_j + m)
 
 > [!tip]- Hints: route in the notes
 > - Technique: K12
-> - Steps 1–4 of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-2|Derivation §C5a.8.2]], step 5 (Hermiticity), step 6 (on shell), step 7 (spectrum); negative frequency and antiparticles: [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-4|§C5a.7, Remark: Negative frequency and antiparticles]].
+> - Steps 1–4 of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-2|Derivation §C5a.9.2]], step 5 (Hermiticity), step 6 (on shell), step 7 (spectrum); negative frequency and antiparticles: [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-4|§C5a.7, Remark: Negative frequency and antiparticles]].
 
 ### [B] The vector current ★
 
-The phase rotation $\psi \to e^{i\alpha}\psi$ leaves $\mathcal L$ invariant; with the conventional sign $j^\mu = \bar\psi\gamma^\mu\psi$, $\partial_\mu j^\mu = 0$ on solutions, $Q = \int d^3x\,\psi^\dagger\psi \ge 0$, see Theorem [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|§C5a.8.3]] The Vector Current. *Source: the user's notes Ch. 8 · Course Log, Lecture 8 row (Noether currents)*
+The phase rotation $\psi \to e^{i\alpha}\psi$ leaves $\mathcal L$ invariant; with the conventional sign $j^\mu = \bar\psi\gamma^\mu\psi$, $\partial_\mu j^\mu = 0$ on solutions, $Q = \int d^3x\,\psi^\dagger\psi \ge 0$, see Theorem [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|§C5a.9.3]] The Vector Current. *Source: the user's notes Ch. 8 · Course Log, Lecture 8 row (Noether currents)*
 
 ^nd-thm-c5a-8-3
 
@@ -6191,11 +6191,11 @@ The phase rotation $\psi \to e^{i\alpha}\psi$ leaves $\mathcal L$ invariant; wit
 
 > [!tip]- Hints: route in the notes
 > - Technique: K12
-> - Steps 1–4 of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-3|Derivation §C5a.8.3]], step 5 (direct check), step 6 (charge); sign convention: [[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|§C1b.6, Caution: Sign and normalization of the U(1) current]].
+> - Steps 1–4 of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-3|Derivation §C5a.9.3]], step 5 (direct check), step 6 (charge); sign convention: [[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|§C1b.6, Caution: Sign and normalization of the U(1) current]].
 
 ### [B] The axial current ★
 
-$\partial_\mu(\bar\psi\gamma^\mu\gamma^5\psi) = 2im\bar\psi\gamma^5\psi$ on solutions: conserved iff $m = 0$, when $\psi \to e^{i\alpha\gamma^5}\psi$ is a symmetry and the chiral currents are separately conserved, see Theorem [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-4|§C5a.8.4]] The Axial Current. *Source: the user's notes Ch. 8 · Problem Set 6, Problem 5 (as the user wrote it)*
+$\partial_\mu(\bar\psi\gamma^\mu\gamma^5\psi) = 2im\bar\psi\gamma^5\psi$ on solutions: conserved iff $m = 0$, when $\psi \to e^{i\alpha\gamma^5}\psi$ is a symmetry and the chiral currents are separately conserved, see Theorem [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-4|§C5a.9.4]] The Axial Current. *Source: the user's notes Ch. 8 · Problem Set 6, Problem 5 (as the user wrote it)*
 
 ^nd-thm-c5a-8-4
 
@@ -6206,17 +6206,17 @@ $\partial_\mu(\bar\psi\gamma^\mu\gamma^5\psi) = 2im\bar\psi\gamma^5\psi$ on solu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Steps 1–4 of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-4|Derivation §C5a.8.4]], step 6 (chiral currents).
+> - Steps 1–4 of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-4|Derivation §C5a.9.4]], step 6 (chiral currents).
 
 ### [PS] Energy–momentum tensor, momentum operator, chiral symmetry
 
-The canonical tensor and its conservation (Theorem [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-5|§C5a.8.5]] The Canonical Energy–Momentum Tensor of the Dirac Field) → drilled as [[PHY 513 PS Drill#^ps5-4-a|PS5.4(a)]]; the momentum operator (Theorem [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-6|§C5a.8.6]] Energy and Momentum of the Dirac Field) → drilled as [[PHY 513 PS Drill#^ps5-4-b|PS5.4(b)]]; the chiral transformation, its Noether current and divergence (Example [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-8-1|§C5a.8.1]] Chiral Symmetry) → drilled as [[PHY 513 PS Drill#^ps6-5|PS6.5]].
+The canonical tensor and its conservation (Theorem [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|§C5a.9.5]] The Canonical Energy–Momentum Tensor of the Dirac Field) → drilled as [[PHY 513 PS Drill#^ps5-4-a|PS5.4(a)]]; the momentum operator (Theorem [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-6|§C5a.9.6]] Energy and Momentum of the Dirac Field) → drilled as [[PHY 513 PS Drill#^ps5-4-b|PS5.4(b)]]; the chiral transformation, its Noether current and divergence (Example [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-9-1|§C5a.9.1]] Chiral Symmetry) → drilled as [[PHY 513 PS Drill#^ps6-5|PS6.5]].
 
 ^nd-thm-c5a-8-5
 
 ### [A] Plane waves turn the Dirac equation into algebra ★★
 
-$u(p)e^{-ip\cdot x}$ solves the Dirac equation iff $(\slashed p - m)u = 0$ ($u$ an eigenvector of $\slashed p$ with eigenvalue $+m$); $v(p)e^{+ip\cdot x}$ iff $(\slashed p + m)v = 0$ (eigenvalue $-m$), see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-1|§C5a.9.1]] Plane Waves Turn the Dirac Equation into Algebra. *Source: Lecture 9, slides "Solution of The Dirac Equation: Step 2", "Negative Frequency Solutions I"*
+$u(p)e^{-ip\cdot x}$ solves the Dirac equation iff $(\slashed p - m)u = 0$ ($u$ an eigenvector of $\slashed p$ with eigenvalue $+m$); $v(p)e^{+ip\cdot x}$ iff $(\slashed p + m)v = 0$ (eigenvalue $-m$), see Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|§C5a.10.1]] Plane Waves Turn the Dirac Equation into Algebra. *Source: Lecture 9, slides "Solution of The Dirac Equation: Step 2", "Negative Frequency Solutions I"*
 
 ^nd-thm-c5a-9-1
 
@@ -6227,11 +6227,11 @@ $u(p)e^{-ip\cdot x}$ solves the Dirac equation iff $(\slashed p - m)u = 0$ ($u$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9 (mode substitution)
-> - Steps 1–4 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-1|Derivation §C5a.9.1]].
+> - Steps 1–4 of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^der-c5a-10-1|Derivation §C5a.10.1]].
 
 ### [A] The eigenvalues of p̸ ★★
 
-On shell $\slashed p^2 = m^2$; for $m > 0$, $\slashed p$ is diagonalizable with eigenvalues $\pm m$, each twice, so exactly two $u$'s and two $v$'s; for $m = 0$, $\slashed p$ is nilpotent, not diagonalizable, with a two-dimensional kernel, see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|§C5a.9.2]] The Eigenvalues of p̸. *Source: Lecture 9, slide "Solution of The Dirac Equation: Step 2" ("All eigenvalues of (γ^μp_μ) are either +m or −m … tr(γ^μp_μ) = 0")*
+On shell $\slashed p^2 = m^2$; for $m > 0$, $\slashed p$ is diagonalizable with eigenvalues $\pm m$, each twice, so exactly two $u$'s and two $v$'s; for $m = 0$, $\slashed p$ is nilpotent, not diagonalizable, with a two-dimensional kernel, see Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-2|§C5a.10.2]] The Eigenvalues of p̸. *Source: Lecture 9, slide "Solution of The Dirac Equation: Step 2" ("All eigenvalues of (γ^μp_μ) are either +m or −m … tr(γ^μp_μ) = 0")*
 
 ^nd-thm-c5a-9-2
 
@@ -6243,11 +6243,11 @@ On shell $\slashed p^2 = m^2$; for $m > 0$, $\slashed p$ is diagonalizable with 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - Steps 1–2 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-2|Derivation §C5a.9.2]], step 3 (diagonalizable), step 4 (trace), step 5 ($m = 0$); second route via the determinant and $H_{\text{s.p.}}$: [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-2b|Derivation §C5a.9.2, second route]].
+> - Steps 1–2 of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^der-c5a-10-2|Derivation §C5a.10.2]], step 3 (diagonalizable), step 4 (trace), step 5 ($m = 0$); second route via the determinant and $H_{\text{s.p.}}$: [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^der-c5a-10-2b|Derivation §C5a.10.2, second route]].
 
 ### [A] Rest-frame solutions ★★
 
-At $p = (m, \mathbf 0)$: $u_0 = \sqrt m(\xi, \xi)$ and $v_0 = \sqrt m(\eta, -\eta)$ for arbitrary two-spinors, see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|§C5a.9.3]] Rest-Frame Solutions. *Source: Lecture 9, slides "Solution of the Dirac Equation: Step 3", "Negative Frequency Solutions II" · PS (3.47)*
+At $p = (m, \mathbf 0)$: $u_0 = \sqrt m(\xi, \xi)$ and $v_0 = \sqrt m(\eta, -\eta)$ for arbitrary two-spinors, see Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-3|§C5a.10.3]] Rest-Frame Solutions. *Source: Lecture 9, slides "Solution of the Dirac Equation: Step 3", "Negative Frequency Solutions II" · PS (3.47)*
 
 ^nd-thm-c5a-9-3
 
@@ -6258,11 +6258,11 @@ At $p = (m, \mathbf 0)$: $u_0 = \sqrt m(\xi, \xi)$ and $v_0 = \sqrt m(\eta, -\et
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1 (invariants in a convenient frame)
-> - Steps 1–3 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-3|Derivation §C5a.9.3]]; normalization: Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|§C5a.9.4]] Normalization of the Spinors.
+> - Steps 1–3 of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^der-c5a-10-3|Derivation §C5a.10.3]]; normalization: Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-4|§C5a.10.4]] Normalization of the Spinors.
 
 ### [A] In the rest frame the two-spinor carries the spin ★★
 
-$J^k = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ acts on $u_0(\xi)$ as $u_0(\frac12\sigma^k\xi)$, and a rotation acts as $u_0(D\xi)$ with $D$ the spin-½ matrix: $\xi$ is the nonrelativistic spin, see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-4|§C5a.9.4]] In the Rest Frame the Two-Spinor Carries the Spin. *Source: Lecture 9, slide "Solution of the Dirac Equation: Step 3" · Lecture 9 (spoken: "the J operator is a half sigma")*
+$J^k = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ acts on $u_0(\xi)$ as $u_0(\frac12\sigma^k\xi)$, and a rotation acts as $u_0(D\xi)$ with $D$ the spin-½ matrix: $\xi$ is the nonrelativistic spin, see Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-4|§C5a.10.4]] In the Rest Frame the Two-Spinor Carries the Spin. *Source: Lecture 9, slide "Solution of the Dirac Equation: Step 3" · Lecture 9 (spoken: "the J operator is a half sigma")*
 
 ^nd-thm-c5a-9-4
 
@@ -6274,11 +6274,11 @@ $J^k = \frac12\operatorname{diag}(\sigma^k, \sigma^k)$ acts on $u_0(\xi)$ as $u_
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1
-> - Steps 1–3 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-4|Derivation §C5a.9.4]]; [[§C5a.9 Plane-Wave Solutions#^cau-c5a-9-1|§C5a.9, Caution: The slide's "angular momentum" is twice the angular momentum]]; [[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-3|§C5a.9, Remark: One spin-½ particle, not two]].
+> - Steps 1–3 of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^der-c5a-10-4|Derivation §C5a.10.4]]; [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^cau-c5a-10-1|§C5a.10, Caution: The slide's "angular momentum" is twice the angular momentum]]; [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^rem-c5a-10-3|§C5a.10, Remark: One spin-½ particle, not two]].
 
 ### [A] The spinor boost along z ★★
 
-$\Lambda_{1/2} = e^{-i\eta S^{03}} = \operatorname{diag}(e^{-\eta\sigma^3/2}, e^{+\eta\sigma^3/2})$, with $e^{\mp\eta\sigma^3/2} = \cosh\frac\eta2 \mp \sinh\frac\eta2\,\sigma^3 = (\cosh\eta \mp \sinh\eta\,\sigma^3)^{1/2}$ (positive root), see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-5|§C5a.9.5]] The Spinor Boost along z. *Source: Lecture 9, slide "Solution of the Dirac Equation: Step 4"*
+$\Lambda_{1/2} = e^{-i\eta S^{03}} = \operatorname{diag}(e^{-\eta\sigma^3/2}, e^{+\eta\sigma^3/2})$, with $e^{\mp\eta\sigma^3/2} = \cosh\frac\eta2 \mp \sinh\frac\eta2\,\sigma^3 = (\cosh\eta \mp \sinh\eta\,\sigma^3)^{1/2}$ (positive root), see Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-5|§C5a.10.5]] The Spinor Boost along z. *Source: Lecture 9, slide "Solution of the Dirac Equation: Step 4"*
 
 ^nd-thm-c5a-9-5
 
@@ -6290,12 +6290,12 @@ $\Lambda_{1/2} = e^{-i\eta S^{03}} = \operatorname{diag}(e^{-\eta\sigma^3/2}, e^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (projectors, half angles)
-> - Steps 1–2 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-5|Derivation §C5a.9.5]], step 3 (series), steps 4–5 (projectors, square), step 6 (which root).
-> - Half rapidity: [[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-4|§C5a.9, Remark: Why a square root restores the full rapidity]].
+> - Steps 1–2 of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^der-c5a-10-5|Derivation §C5a.10.5]], step 3 (series), steps 4–5 (projectors, square), step 6 (which root).
+> - Half rapidity: [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^rem-c5a-10-4|§C5a.10, Remark: Why a square root restores the full rapidity]].
 
 ### [B] Explicit square roots ★
 
-For $m > 0$, $\sqrt{p\cdot\sigma} = (p\cdot\sigma + m)/\sqrt{2(E_{\mathbf p} + m)}$, likewise with $\bar\sigma$; the spinors are smooth with polynomial growth; for $m = 0$ the formula holds for $\mathbf p \ne 0$, see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-6|§C5a.9.6]] Explicit Square Roots. *Source: Problem Set 6, Problem 3(c) (the user's route) · the user's notes Ch. 9 §9.3*
+For $m > 0$, $\sqrt{p\cdot\sigma} = (p\cdot\sigma + m)/\sqrt{2(E_{\mathbf p} + m)}$, likewise with $\bar\sigma$; the spinors are smooth with polynomial growth; for $m = 0$ the formula holds for $\mathbf p \ne 0$, see Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-6|§C5a.10.6]] Explicit Square Roots. *Source: Problem Set 6, Problem 3(c) (the user's route) · the user's notes Ch. 9 §9.3*
 
 ^nd-thm-c5a-9-6
 
@@ -6306,11 +6306,11 @@ For $m > 0$, $\sqrt{p\cdot\sigma} = (p\cdot\sigma + m)/\sqrt{2(E_{\mathbf p} + m
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4
-> - Steps 1–3 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-6|Derivation §C5a.9.6]], step 4 (positivity), steps 5–6 (smoothness, $m = 0$).
+> - Steps 1–3 of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^der-c5a-10-6|Derivation §C5a.10.6]], step 4 (positivity), steps 5–6 (smoothness, $m = 0$).
 
 ### [B] The square-root identities ★★
 
-$\sqrt{p\cdot\sigma}\sqrt{p\cdot\sigma} = p\cdot\sigma$; $(p\cdot\sigma)(p\cdot\bar\sigma) = m^2$; $\sqrt{p\cdot\sigma}\sqrt{p\cdot\bar\sigma} = m$: "never take the square root of a $2\times2$ matrix", see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|§C5a.9.7]] The Square-Root Identities. *Source: Lecture 9, slide "Practical Manipulations"*
+$\sqrt{p\cdot\sigma}\sqrt{p\cdot\sigma} = p\cdot\sigma$; $(p\cdot\sigma)(p\cdot\bar\sigma) = m^2$; $\sqrt{p\cdot\sigma}\sqrt{p\cdot\bar\sigma} = m$: "never take the square root of a $2\times2$ matrix", see Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|§C5a.10.7]] The Square-Root Identities. *Source: Lecture 9, slide "Practical Manipulations"*
 
 ^nd-thm-c5a-9-7
 
@@ -6321,11 +6321,11 @@ $\sqrt{p\cdot\sigma}\sqrt{p\cdot\sigma} = p\cdot\sigma$; $(p\cdot\sigma)(p\cdot\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K6 (on-shell replacement)
-> - Steps 1–4 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-7|Derivation §C5a.9.7]].
+> - Steps 1–4 of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^der-c5a-10-7|Derivation §C5a.10.7]].
 
 ### [A] The spinor boost from rest to momentum p ★★
 
-The pure boost along $\hat{\mathbf p}$ taking $(m, \mathbf 0)$ to $p$ has spinor matrix $\Lambda_{1/2}(p) = \operatorname{diag}(\sqrt{p\cdot\sigma/m}, \sqrt{p\cdot\bar\sigma/m})$; the rapidity disappears, see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|§C5a.9.8]] The Spinor Boost from Rest to Momentum p. *Source: Lecture 9, slide "Interpretation of Rapidity"*
+The pure boost along $\hat{\mathbf p}$ taking $(m, \mathbf 0)$ to $p$ has spinor matrix $\Lambda_{1/2}(p) = \operatorname{diag}(\sqrt{p\cdot\sigma/m}, \sqrt{p\cdot\bar\sigma/m})$; the rapidity disappears, see Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-8|§C5a.10.8]] The Spinor Boost from Rest to Momentum p. *Source: Lecture 9, slide "Interpretation of Rapidity"*
 
 ^nd-thm-c5a-9-8
 
@@ -6336,11 +6336,11 @@ The pure boost along $\hat{\mathbf p}$ taking $(m, \mathbf 0)$ to $p$ has spinor
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4, K1
-> - Steps 1–4 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-8|Derivation §C5a.9.8]].
+> - Steps 1–4 of [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^der-c5a-10-8|Derivation §C5a.10.8]].
 
 ### [A] The positive-frequency spinors u(p) ★★
 
-$u^s(p) = (\sqrt{p\cdot\sigma}\,\xi^s, \sqrt{p\cdot\bar\sigma}\,\xi^s)$ with $(\slashed p - m)u^s = 0$; for $m > 0$ it is $\Lambda_{1/2}(p)u_0^s$; it holds in every direction and for $m = 0$, see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|§C5a.9.9]] The Positive-Frequency Spinors u(p). *Source: Lecture 9, slide "General Solution to Dirac Equation" · PS (3.50)*
+$u^s(p) = (\sqrt{p\cdot\sigma}\,\xi^s, \sqrt{p\cdot\bar\sigma}\,\xi^s)$ with $(\slashed p - m)u^s = 0$; for $m > 0$ it is $\Lambda_{1/2}(p)u_0^s$; it holds in every direction and for $m = 0$, see Theorem [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|§C5a.11.1]] The Positive-Frequency Spinors u(p). *Source: Lecture 9, slide "General Solution to Dirac Equation" · PS (3.50)*
 
 ^nd-thm-c5a-9-9
 
@@ -6352,11 +6352,11 @@ $u^s(p) = (\sqrt{p\cdot\sigma}\,\xi^s, \sqrt{p\cdot\bar\sigma}\,\xi^s)$ with $(\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1 (rest frame, then boost)
-> - Steps 1–3 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-9|Derivation §C5a.9.9]], step 4 (multiply), step 5 (span); $m = 0$: [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-9b|Derivation §C5a.9.9, second route]].
+> - Steps 1–3 of [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-1|Derivation §C5a.11.1]], step 4 (multiply), step 5 (span); $m = 0$: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-1b|Derivation §C5a.11.1, second route]].
 
 ### [B] u(p) checked directly, valid for m ≥ 0 ★★
 
-$\slashed p\,u = (p\cdot\sigma\sqrt{p\cdot\bar\sigma}\,\xi, p\cdot\bar\sigma\sqrt{p\cdot\sigma}\,\xi) = m\,u$ by the square-root identities, with no division by $m$, see [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-9b|Derivation §C5a.9.9, second route]]. **[class exercise, Lecture 9]** ("Final result valid also for m = 0 (but needs new derivation)"; "Example: check u(p) satisfies Dirac equation in general frame"). *Source: Lecture 9, slides "General Solution to Dirac Equation", "Practical Manipulations"*
+$\slashed p\,u = (p\cdot\sigma\sqrt{p\cdot\bar\sigma}\,\xi, p\cdot\bar\sigma\sqrt{p\cdot\sigma}\,\xi) = m\,u$ by the square-root identities, with no division by $m$, see [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-1b|Derivation §C5a.11.1, second route]]. **[class exercise, Lecture 9]** ("Final result valid also for m = 0 (but needs new derivation)"; "Example: check u(p) satisfies Dirac equation in general frame"). *Source: Lecture 9, slides "General Solution to Dirac Equation", "Practical Manipulations"*
 
 ^nd-der-c5a-9-9b
 
@@ -6367,11 +6367,11 @@ $\slashed p\,u = (p\cdot\sigma\sqrt{p\cdot\bar\sigma}\,\xi, p\cdot\bar\sigma\sqr
 
 > [!tip]- Hints: route in the notes
 > - Technique: K6
-> - Steps 1–3 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-9b|Derivation §C5a.9.9, second route]]; the identities: Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|§C5a.9.7]] The Square-Root Identities.
+> - Steps 1–3 of [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-1b|Derivation §C5a.11.1, second route]]; the identities: Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|§C5a.10.7]] The Square-Root Identities.
 
 ### [B] The Dirac conjugate of u(p) ★
 
-$\bar u^s(p) = (\xi^{s\dagger}\sqrt{p\cdot\bar\sigma}, \xi^{s\dagger}\sqrt{p\cdot\sigma})$, a row with the roots exchanged, satisfying $\bar u(\slashed p - m) = 0$, see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|§C5a.9.10]] The Dirac Conjugate of u(p). *Source: Lecture 9, slides "Normalization II", "Completeness for Dirac Spinors"*
+$\bar u^s(p) = (\xi^{s\dagger}\sqrt{p\cdot\bar\sigma}, \xi^{s\dagger}\sqrt{p\cdot\sigma})$, a row with the roots exchanged, satisfying $\bar u(\slashed p - m) = 0$, see Theorem [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-2|§C5a.11.2]] The Dirac Conjugate of u(p). *Source: Lecture 9, slides "Normalization II", "Completeness for Dirac Spinors"*
 
 ^nd-thm-c5a-9-10
 
@@ -6382,11 +6382,11 @@ $\bar u^s(p) = (\xi^{s\dagger}\sqrt{p\cdot\bar\sigma}, \xi^{s\dagger}\sqrt{p\cdo
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Steps 1–3 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10|Derivation §C5a.9.10]], step 4 (the conjugate equation); other routes: [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10b|Derivation §C5a.9.10, second route]], [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10c|Derivation §C5a.9.10, third route]].
+> - Steps 1–3 of [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2|Derivation §C5a.11.2]], step 4 (the conjugate equation); other routes: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2b|Derivation §C5a.11.2, second route]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2c|Derivation §C5a.11.2, third route]].
 
 ### [A] The negative-frequency spinors v(p) ★★
 
-$v^s(p) = (\sqrt{p\cdot\sigma}\,\eta^s, -\sqrt{p\cdot\bar\sigma}\,\eta^s)$ with $(\slashed p + m)v^s = 0$; the $u$'s and $v$'s together are the four eigenvectors of $\slashed p$, see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|§C5a.9.11]] The Negative-Frequency Spinors v(p). *Source: Lecture 9, slides "Negative Frequency Solutions I–II", "Summary II" · PS (3.62)*
+$v^s(p) = (\sqrt{p\cdot\sigma}\,\eta^s, -\sqrt{p\cdot\bar\sigma}\,\eta^s)$ with $(\slashed p + m)v^s = 0$; the $u$'s and $v$'s together are the four eigenvectors of $\slashed p$, see Theorem [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|§C5a.11.3]] The Negative-Frequency Spinors v(p). *Source: Lecture 9, slides "Negative Frequency Solutions I–II", "Summary II" · PS (3.62)*
 
 ^nd-thm-c5a-9-11
 
@@ -6398,11 +6398,11 @@ $v^s(p) = (\sqrt{p\cdot\sigma}\,\eta^s, -\sqrt{p\cdot\bar\sigma}\,\eta^s)$ with 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1
-> - Steps 1–5 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-11|Derivation §C5a.9.11]]; η: Definition [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|§C5a.9.3]] Spin Basis, [[§C5a.9 Plane-Wave Solutions#^cau-c5a-9-2|§C5a.9, Caution: η means two things]].
+> - Steps 1–5 of [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-3|Derivation §C5a.11.3]]; η: Definition [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-3|§C5a.10.3]] Spin Basis, [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^cau-c5a-11-1|§C5a.11, Caution: η means two things]].
 
 ### [B] The Dirac conjugate of v(p) ★
 
-$\bar v^s(p) = (-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma}, \eta^{s\dagger}\sqrt{p\cdot\sigma})$, $\bar v(\slashed p + m) = 0$: the minus sign moves from the lower half of the column to the upper half of the row, see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|§C5a.9.12]] The Dirac Conjugate of v(p). *Source: Lecture 9, slide "Completeness of v's" ("Sign of v̄ differs from ū in upper entry")*
+$\bar v^s(p) = (-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma}, \eta^{s\dagger}\sqrt{p\cdot\sigma})$, $\bar v(\slashed p + m) = 0$: the minus sign moves from the lower half of the column to the upper half of the row, see Theorem [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-4|§C5a.11.4]] The Dirac Conjugate of v(p). *Source: Lecture 9, slide "Completeness of v's" ("Sign of v̄ differs from ū in upper entry")*
 
 ^nd-thm-c5a-9-12
 
@@ -6413,17 +6413,17 @@ $\bar v^s(p) = (-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma}, \eta^{s\dagger}\sqrt{p\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Steps 1–3 of [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-12|Derivation §C5a.9.12]], step 5 (rest frame); second route: [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-12b|Derivation §C5a.9.12, second route]].
+> - Steps 1–3 of [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-4|Derivation §C5a.11.4]], step 5 (rest frame); second route: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-4b|Derivation §C5a.11.4, second route]].
 
 ### [PS] The plane-wave spinors in the Dirac basis
 
-$u_D = U_Du = (E + m)^{-1/2}((E + m)\xi, \boldsymbol\sigma\cdot\mathbf p\,\xi)$ with $\bar u_Du_D = 2m$, see Example [[§C5a.9 Plane-Wave Solutions#^ex-c5a-9-1|§C5a.9.1]] The Plane-Wave Spinors in the Dirac Basis. → drilled as [[PHY 513 PS Drill#^ps6-3-c|PS6.3(c)]] and [[PHY 513 PS Drill#^ps6-3-d|PS6.3(d)]].
+$u_D = U_Du = (E + m)^{-1/2}((E + m)\xi, \boldsymbol\sigma\cdot\mathbf p\,\xi)$ with $\bar u_Du_D = 2m$, see Example [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^ex-c5a-11-1|§C5a.11.1]] The Plane-Wave Spinors in the Dirac Basis. → drilled as [[PHY 513 PS Drill#^ps6-3-c|PS6.3(c)]] and [[PHY 513 PS Drill#^ps6-3-d|PS6.3(d)]].
 
 ^nd-ex-c5a-9-1
 
 ### [B] u†u = 2E ★★
 
-$u^{r\dagger}(p)u^s(p) = 2E_{\mathbf p}\delta^{rs}$, frame-dependent, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|§C5a.10.1]] u†u = 2E. *Source: Lecture 9, slide "Normalization I"*
+$u^{r\dagger}(p)u^s(p) = 2E_{\mathbf p}\delta^{rs}$, frame-dependent, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|§C5a.12.1]] u†u = 2E. *Source: Lecture 9, slide "Normalization I"*
 
 ^nd-thm-c5a-10-1
 
@@ -6434,11 +6434,11 @@ $u^{r\dagger}(p)u^s(p) = 2E_{\mathbf p}\delta^{rs}$, frame-dependent, see Theore
 
 > [!tip]- Hints: route in the notes
 > - Technique: K6
-> - Steps 1–3 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-1|Derivation §C5a.10.1]]; frame dependence: [[§C5a.10 Normalization, Spin Sums and Helicity#^rem-c5a-10-1|§C5a.10, Remark: Why u†u depends on the frame and ūu does not]].
+> - Steps 1–3 of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-1|Derivation §C5a.12.1]]; frame dependence: [[§C5a.12 Normalization and Spin Sums#^rem-c5a-12-1|§C5a.12, Remark: Why u†u depends on the frame and ūu does not]].
 
 ### [B] ūu = 2m ★★
 
-$\bar u^r(p)u^s(p) = 2m\delta^{rs}$ in every frame, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|§C5a.10.2]] ūu = 2m. *Source: Lecture 9, slide "Normalization II"*
+$\bar u^r(p)u^s(p) = 2m\delta^{rs}$ in every frame, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|§C5a.12.2]] ūu = 2m. *Source: Lecture 9, slide "Normalization II"*
 
 ^nd-thm-c5a-10-2
 
@@ -6449,11 +6449,11 @@ $\bar u^r(p)u^s(p) = 2m\delta^{rs}$ in every frame, see Theorem [[§C5a.10 Norma
 
 > [!tip]- Hints: route in the notes
 > - Technique: K6
-> - Steps 1–2 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-2|Derivation §C5a.10.2]]; Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|§C5a.9.7]] The Square-Root Identities part 3; invariance: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|§C5a.6.1]] The Dirac Conjugate Transforms with the Inverse.
+> - Steps 1–2 of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-2|Derivation §C5a.12.2]]; Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|§C5a.10.7]] The Square-Root Identities part 3; invariance: Theorem [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|§C5a.6.1]] The Dirac Conjugate Transforms with the Inverse.
 
 ### [B] v†v = 2E ★★
 
-$v^{r\dagger}(p)v^s(p) = 2E_{\mathbf p}\delta^{rs}$, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-3|§C5a.10.3]] v†v = 2E. **[class exercise, Lecture 9]** ("Normalization of v†v: repeat computation of u†u"). *Source: Lecture 9, slide "Normalization of v's"*
+$v^{r\dagger}(p)v^s(p) = 2E_{\mathbf p}\delta^{rs}$, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|§C5a.12.3]] v†v = 2E. **[class exercise, Lecture 9]** ("Normalization of v†v: repeat computation of u†u"). *Source: Lecture 9, slide "Normalization of v's"*
 
 ^nd-thm-c5a-10-3
 
@@ -6463,11 +6463,11 @@ $v^{r\dagger}(p)v^s(p) = 2E_{\mathbf p}\delta^{rs}$, see Theorem [[§C5a.10 Norm
 
 > [!tip]- Hints: route in the notes
 > - Technique: K6
-> - The steps of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-1|Derivation §C5a.10.1]] with $\xi \to \eta$; "What the derivation shows" of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-3|Derivation §C5a.10.3]].
+> - The steps of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-1|Derivation §C5a.12.1]] with $\xi \to \eta$; "What the derivation shows" of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-3|Derivation §C5a.12.3]].
 
 ### [A] v̄v = −2m ★★
 
-$\bar v^r(p)v^s(p) = -2m\delta^{rs}$: invariant and negative, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-4|§C5a.10.4]] v̄v = −2m. **[class exercise, Lecture 9]** ("Normalization of v̄v: repeat computation of ūu. γ⁰ exchanges lower and upper entry, so an overall sign"). *Source: Lecture 9, slide "Normalization of v's"*
+$\bar v^r(p)v^s(p) = -2m\delta^{rs}$: invariant and negative, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-4|§C5a.12.4]] v̄v = −2m. **[class exercise, Lecture 9]** ("Normalization of v̄v: repeat computation of ūu. γ⁰ exchanges lower and upper entry, so an overall sign"). *Source: Lecture 9, slide "Normalization of v's"*
 
 ^nd-thm-c5a-10-4
 
@@ -6478,11 +6478,11 @@ $\bar v^r(p)v^s(p) = -2m\delta^{rs}$: invariant and negative, see Theorem [[§C5
 
 > [!tip]- Hints: route in the notes
 > - Technique: K6, K7
-> - Steps 1–2 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-4|Derivation §C5a.10.4]]; [[§C5a.10 Normalization, Spin Sums and Helicity#^cau-c5a-10-1|§C5a.10, Caution: The sign of v̄v]].
+> - Steps 1–2 of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-4|Derivation §C5a.12.4]]; [[§C5a.12 Normalization and Spin Sums#^cau-c5a-12-1|§C5a.12, Caution: The sign of v̄v]].
 
 ### [B] u and v are orthogonal under the Dirac conjugate ★★
 
-$\bar v^r(p)u^s(p) = \bar u^r(p)v^s(p) = 0$ for all $r$, $s$ and all spin bases, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-5|§C5a.10.5]] u and v Are Orthogonal under the Dirac Conjugate. *Source: Lecture 9, slide "Bonus Material: Orthogonality of u and v"*
+$\bar v^r(p)u^s(p) = \bar u^r(p)v^s(p) = 0$ for all $r$, $s$ and all spin bases, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-5|§C5a.12.5]] u and v Are Orthogonal under the Dirac Conjugate. *Source: Lecture 9, slide "Bonus Material: Orthogonality of u and v"*
 
 ^nd-thm-c5a-10-5
 
@@ -6493,11 +6493,11 @@ $\bar v^r(p)u^s(p) = \bar u^r(p)v^s(p) = 0$ for all $r$, $s$ and all spin bases,
 
 > [!tip]- Hints: route in the notes
 > - Technique: K10 (u, v orthogonality)
-> - Steps 1–2 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-5|Derivation §C5a.10.5]].
+> - Steps 1–2 of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-5|Derivation §C5a.12.5]].
 
 ### [B] u and v are orthogonal at opposite three-momenta ★
 
-$u^{r\dagger}(p)v^s(\tilde p) = v^{r\dagger}(p)u^s(\tilde p) = 0$ with $\tilde p = (E, -\mathbf p)$, while $u^{r\dagger}(p)v^s(p) = -2\xi^{r\dagger}(\mathbf p\cdot\boldsymbol\sigma)\eta^s$ in general, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|§C5a.10.6]] u and v Are Orthogonal at Opposite Three-Momenta. **[class exercise, Lecture 9]** (the slide's "Warning", stated without derivation). *Source: Lecture 9, slide "Bonus Material: Orthogonality of u and v"*
+$u^{r\dagger}(p)v^s(\tilde p) = v^{r\dagger}(p)u^s(\tilde p) = 0$ with $\tilde p = (E, -\mathbf p)$, while $u^{r\dagger}(p)v^s(p) = -2\xi^{r\dagger}(\mathbf p\cdot\boldsymbol\sigma)\eta^s$ in general, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|§C5a.12.6]] u and v Are Orthogonal at Opposite Three-Momenta. **[class exercise, Lecture 9]** (the slide's "Warning", stated without derivation). *Source: Lecture 9, slide "Bonus Material: Orthogonality of u and v"*
 
 ^nd-thm-c5a-10-6
 
@@ -6509,11 +6509,11 @@ $u^{r\dagger}(p)v^s(\tilde p) = v^{r\dagger}(p)u^s(\tilde p) = 0$ with $\tilde p
 
 > [!tip]- Hints: route in the notes
 > - Technique: K10
-> - Steps 1–4 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-6|Derivation §C5a.10.6]]; second route via the Hermitian $H_{\text{s.p.}}$: [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-6b|Derivation §C5a.10.6, second route]].
+> - Steps 1–4 of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-6|Derivation §C5a.12.6]]; second route via the Hermitian $H_{\text{s.p.}}$: [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-6b|Derivation §C5a.12.6, second route]].
 
 ### [B] The spin sum over u ★★
 
-$\sum_s u^s(p)\bar u^s(p) = \slashed p + m$, a $4\times4$ matrix independent of the spin basis, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|§C5a.10.7]] The Spin Sum over u. *Source: Lecture 9, slides "Completeness for Dirac Spinors", "… the Result"*
+$\sum_s u^s(p)\bar u^s(p) = \slashed p + m$, a $4\times4$ matrix independent of the spin basis, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|§C5a.12.7]] The Spin Sum over u. *Source: Lecture 9, slides "Completeness for Dirac Spinors", "… the Result"*
 
 ^nd-thm-c5a-10-7
 
@@ -6525,11 +6525,11 @@ $\sum_s u^s(p)\bar u^s(p) = \slashed p + m$, a $4\times4$ matrix independent of 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K6
-> - Steps 1–3 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-7|Derivation §C5a.10.7]]; [[§C5a.10 Normalization, Spin Sums and Helicity#^rem-c5a-10-2|§C5a.10, Remark: Why neither spin sum is the identity]].
+> - Steps 1–3 of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-7|Derivation §C5a.12.7]]; [[§C5a.12 Normalization and Spin Sums#^rem-c5a-12-2|§C5a.12, Remark: Why neither spin sum is the identity]].
 
 ### [B] The spin sum over v ★★
 
-$\sum_s v^s(p)\bar v^s(p) = \slashed p - m$, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|§C5a.10.8]] The Spin Sum over v. **[class exercise, Lecture 9]** ("structure only, same details as uū"). *Source: Lecture 9, slide "Completeness of v's"*
+$\sum_s v^s(p)\bar v^s(p) = \slashed p - m$, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|§C5a.12.8]] The Spin Sum over v. **[class exercise, Lecture 9]** ("structure only, same details as uū"). *Source: Lecture 9, slide "Completeness of v's"*
 
 ^nd-thm-c5a-10-8
 
@@ -6540,11 +6540,11 @@ $\sum_s v^s(p)\bar v^s(p) = \slashed p - m$, see Theorem [[§C5a.10 Normalizatio
 
 > [!tip]- Hints: route in the notes
 > - Technique: K6
-> - The steps of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-7|Derivation §C5a.10.7]] with the signs of Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|§C5a.9.11]] The Negative-Frequency Spinors v(p) and Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|§C5a.9.12]] The Dirac Conjugate of v(p); "What the derivation shows" of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-8|Derivation §C5a.10.8]].
+> - The steps of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-7|Derivation §C5a.12.7]] with the signs of Theorem [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|§C5a.11.3]] The Negative-Frequency Spinors v(p) and Theorem [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-4|§C5a.11.4]] The Dirac Conjugate of v(p); "What the derivation shows" of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-8|Derivation §C5a.12.8]].
 
 ### [B] The spin sums are covariant ★
 
-$\Lambda_{1/2}\slashed p\Lambda_{1/2}^{-1} = \slashed{(\Lambda p)}$, so boosted spinors solve the equation at $\Lambda p$ and their spin sum is $\slashed{(\Lambda p)} \pm m$, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-9|§C5a.10.9]] The Spin Sums Are Covariant. *Source: the user's notes Ch. 9 §9.4*
+$\Lambda_{1/2}\slashed p\Lambda_{1/2}^{-1} = \slashed{(\Lambda p)}$, so boosted spinors solve the equation at $\Lambda p$ and their spin sum is $\slashed{(\Lambda p)} \pm m$, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-9|§C5a.12.9]] The Spin Sums Are Covariant. *Source: the user's notes Ch. 9 §9.4*
 
 ^nd-thm-c5a-10-9
 
@@ -6555,11 +6555,11 @@ $\Lambda_{1/2}\slashed p\Lambda_{1/2}^{-1} = \slashed{(\Lambda p)}$, so boosted 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14
-> - Steps 1–4 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-9|Derivation §C5a.10.9]].
+> - Steps 1–4 of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-9|Derivation §C5a.12.9]].
 
 ### [C] Completeness and the energy projectors ★
 
-For $m > 0$, $\frac1{2m}\sum_s(u^s\bar u^s - v^s\bar v^s) = \mathbb 1$; $\Lambda_\pm = (\pm\slashed p + m)/2m$ are complementary projectors onto the $u$'s and the $v$'s, $\operatorname{tr}\Lambda_\pm = 2$, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-10|§C5a.10.10]] Completeness and the Energy Projectors. *Source: the user's notes Ch. 9 §9.4 (the check on basis vectors)*
+For $m > 0$, $\frac1{2m}\sum_s(u^s\bar u^s - v^s\bar v^s) = \mathbb 1$; $\Lambda_\pm = (\pm\slashed p + m)/2m$ are complementary projectors onto the $u$'s and the $v$'s, $\operatorname{tr}\Lambda_\pm = 2$, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-10|§C5a.12.10]] Completeness and the Energy Projectors. *Source: the user's notes Ch. 9 §9.4 (the check on basis vectors)*
 
 ^nd-thm-c5a-10-10
 
@@ -6571,17 +6571,17 @@ For $m > 0$, $\frac1{2m}\sum_s(u^s\bar u^s - v^s\bar v^s) = \mathbb 1$; $\Lambda
 
 > [!tip]- Hints: route in the notes
 > - Technique: K6
-> - Steps 1–4 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-10|Derivation §C5a.10.10]].
+> - Steps 1–4 of [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-10|Derivation §C5a.12.10]].
 
 ### [PS] The helicity two-spinors
 
-$\xi_\pm(\hat{\mathbf p})$ in polar angles with the stated phase convention, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-11|§C5a.10.11]] The Helicity Two-Spinors. → drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
+$\xi_\pm(\hat{\mathbf p})$ in polar angles with the stated phase convention, see Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-1|§C5a.13.1]] The Helicity Two-Spinors. → drilled as [[PHY 513 PS Drill#^ps5-6|PS5.6]].
 
 ^nd-thm-c5a-10-11
 
 ### [B] Helicity spinors u± ★
 
-With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqrt{E \mp \lvert\mathbf p\rvert}\,\xi_\pm, \sqrt{E \pm \lvert\mathbf p\rvert}\,\xi_\pm)$, $hu_\pm = \pm\frac12u_\pm$; with $\omega_\lambda = \sqrt{E + \lambda\lvert\mathbf p\rvert}$, $u_\lambda = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-12|§C5a.10.12]] Helicity Spinors u±. *Source: Problem Set 5, Problem 6 (context) · Yu (the helicity basis) · the user's notes Ch. 9 §9.4*
+With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqrt{E \mp \lvert\mathbf p\rvert}\,\xi_\pm, \sqrt{E \pm \lvert\mathbf p\rvert}\,\xi_\pm)$, $hu_\pm = \pm\frac12u_\pm$; with $\omega_\lambda = \sqrt{E + \lambda\lvert\mathbf p\rvert}$, $u_\lambda = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$, see Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-2|§C5a.13.2]] Helicity Spinors u±. *Source: Problem Set 5, Problem 6 (context) · Yu (the helicity basis) · the user's notes Ch. 9 §9.4*
 
 ^nd-thm-c5a-10-12
 
@@ -6593,11 +6593,11 @@ With $\xi^s = \xi_\pm(\hat{\mathbf p})$ the roots act as numbers: $u_\pm = (\sqr
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4 (projectors)
-> - Steps 1–4 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-12|Derivation §C5a.10.12]]; names: [[§C5a.9 Plane-Wave Solutions#^cau-c5a-9-3|§C5a.9, Caution: Names for the plane-wave spinors]].
+> - Steps 1–4 of [[§C5a.13 Helicity Spinors and the Massless Limit#^der-c5a-13-2|Derivation §C5a.13.2]]; names: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^cau-c5a-11-2|§C5a.11, Caution: Names for the plane-wave spinors]].
 
 ### [B] The v spinors in the helicity basis ★
 
-With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-\lambda}, -\lambda\omega_{-\lambda}\xi_{-\lambda})$ and $hv_\lambda = -\frac\lambda2v_\lambda$ (Yu's choice), see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-13|§C5a.10.13]] The v Spinors in the Helicity Basis. *Source: Yu (the helicity basis) · the user's notes Ch. 9*
+With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-\lambda}, -\lambda\omega_{-\lambda}\xi_{-\lambda})$ and $hv_\lambda = -\frac\lambda2v_\lambda$ (Yu's choice), see Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-3|§C5a.13.3]] The v Spinors in the Helicity Basis. *Source: Yu (the helicity basis) · the user's notes Ch. 9*
 
 ^nd-thm-c5a-10-13
 
@@ -6608,11 +6608,11 @@ With $\eta^s = \lambda\xi_{-\lambda}$, $v_\lambda = (\lambda\omega_\lambda\xi_{-
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4
-> - Steps 1–4 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-13|Derivation §C5a.10.13]]; Lecture 12's choice: Definition [[§C9.5 Charge Conjugation on Oscillators and Spinors#^def-c9-5-5|§C9.5.5]] The Antiparticle Two-Spinors η^s = ξ^{−s}.
+> - Steps 1–4 of [[§C5a.13 Helicity Spinors and the Massless Limit#^der-c5a-13-3|Derivation §C5a.13.3]]; Lecture 12's choice: Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-5|§C9.6.5]] The Antiparticle Two-Spinors η^s = ξ^{−s}.
 
 ### [B] The massless and high-energy limit: helicity becomes chirality ★
 
-At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma^5u_\pm = \pm u_\pm$; for $E \gg m$ the other half is suppressed by $m/2E$, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-14|§C5a.10.14]] The Massless and High-Energy Limit: Helicity Becomes Chirality. *Source: PS §3.3 · the user's notes Ch. 9*
+At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma^5u_\pm = \pm u_\pm$; for $E \gg m$ the other half is suppressed by $m/2E$, see Theorem [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-4|§C5a.13.4]] The Massless and High-Energy Limit: Helicity Becomes Chirality. *Source: PS §3.3 · the user's notes Ch. 9*
 
 ^nd-thm-c5a-10-14
 
@@ -6623,11 +6623,11 @@ At $m = 0$, $u_+ = \sqrt{2E}(0, \xi_+)$, $u_- = \sqrt{2E}(\xi_-, 0)$ and $\gamma
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1
-> - Steps 1–4 of [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-14|Derivation §C5a.10.14]]; [[§C5a.10 Normalization, Spin Sums and Helicity#^rem-c5a-10-4|§C5a.10, Remark: The mass is what connects the two chiral blocks]]; why "left-handed": [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-6|§C5a.7, Remark: Why "left-handed"]].
+> - Steps 1–4 of [[§C5a.13 Helicity Spinors and the Massless Limit#^der-c5a-13-4|Derivation §C5a.13.4]]; [[§C5a.13 Helicity Spinors and the Massless Limit#^rem-c5a-13-2|§C5a.13, Remark: The mass is what connects the two chiral blocks]]; why "left-handed": [[§C5a.8 The Weyl Form and the Weyl Equations#^rem-c5a-8-1|§C5a.8, Remark: Why "left-handed"]].
 
 ### [B] Slash algebra ★
 
-$\gamma^\mu\slashed a = 2a^\mu - \slashed a\gamma^\mu$, $\slashed a\slashed b + \slashed b\slashed a = 2a\cdot b$, $\slashed a\slashed b = a\cdot b - i\sigma^{\mu\nu}a_\mu b_\nu$, see Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-1|§C5a.11.1]] Slash Algebra. *Source: the user's notes Ch. 9 §9.6 · Problem Set 5*
+$\gamma^\mu\slashed a = 2a^\mu - \slashed a\gamma^\mu$, $\slashed a\slashed b + \slashed b\slashed a = 2a\cdot b$, $\slashed a\slashed b = a\cdot b - i\sigma^{\mu\nu}a_\mu b_\nu$, see Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|§C5a.14.1]] Slash Algebra. *Source: the user's notes Ch. 9 §9.6 · Problem Set 5*
 
 ^nd-thm-c5a-11-1
 
@@ -6638,17 +6638,17 @@ $\gamma^\mu\slashed a = 2a^\mu - \slashed a\gamma^\mu$, $\slashed a\slashed b + 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - [[§C5a.11 Gamma-Matrix Technology#^der-c5a-11-1|Derivation §C5a.11.1]]; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]].
+> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-1|Derivation §C5a.14.1]]; normalizations: [[§C5a.6 The Dirac Conjugate and the Bilinears#^cau-c5a-6-1|§C5a.6, Caution: Three normalizations of σ^μν]].
 
 ### [PS] Contraction identities, γ⁵ identities, Gordon
 
-$\gamma_\mu\gamma^\mu = 4$ etc. (Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-2|§C5a.11.2]] Contraction Identities) → drilled as [[PHY 513 PS Drill#^ps5-2|PS5.2]] and [[PHY 513 PS Drill#^ps7-1-c|PS7.1(c)]]; properties of $\gamma^5$ (Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|§CB.12.15]] Algebraic Properties of γ⁵) → drilled as [[PHY 513 PS Drill#^ps5-5-a|PS5.5(a)]], [[PHY 513 PS Drill#^ps5-5-b|PS5.5(b)]]; $\gamma^5$ as the antisymmetric product and duality (Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|§C5a.11.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-6|§C5a.11.6]] The Antisymmetric Product of Three γ's, Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-7|§C5a.11.7]] γ⁵ Dualizes σ^μν) → drilled as [[PHY 513 PS Drill#^ps5-5-c|PS5.5(c)]], [[PHY 513 PS Drill#^ps5-5-d|PS5.5(d)]]; the Gordon identity (Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-9|§C5a.11.9]] The Gordon Identity) → drilled as [[PHY 513 PS Drill#^ps5-3|PS5.3]].
+$\gamma_\mu\gamma^\mu = 4$ etc. (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-2|§C5a.14.2]] Contraction Identities) → drilled as [[PHY 513 PS Drill#^ps5-2|PS5.2]] and [[PHY 513 PS Drill#^ps7-1-c|PS7.1(c)]]; properties of $\gamma^5$ (Theorem [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|§CB.12.15]] Algebraic Properties of γ⁵) → drilled as [[PHY 513 PS Drill#^ps5-5-a|PS5.5(a)]], [[PHY 513 PS Drill#^ps5-5-b|PS5.5(b)]]; $\gamma^5$ as the antisymmetric product and duality (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|§C5a.14.6]] The Antisymmetric Product of Three γ's, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-7|§C5a.14.7]] γ⁵ Dualizes σ^μν) → drilled as [[PHY 513 PS Drill#^ps5-5-c|PS5.5(c)]], [[PHY 513 PS Drill#^ps5-5-d|PS5.5(d)]]; the Gordon identity (Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|§C5a.14.9]] The Gordon Identity) → drilled as [[PHY 513 PS Drill#^ps5-3|PS5.3]].
 
 ^nd-thm-c5a-11-2
 
 ### [B] Traces of γ matrices ★
 
-$\operatorname{tr}\mathbb 1 = 4$; traces of an odd number of $\gamma$'s vanish; $\operatorname{tr}(\gamma^\mu\gamma^\nu) = 4g^{\mu\nu}$; $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma) = 4(g^{\mu\nu}g^{\rho\sigma} - g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\nu\rho})$, see Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-3|§C5a.11.3]] Traces of γ Matrices. *Source: Lecture 9, slide "Solution of The Dirac Equation: Step 2" ($\operatorname{tr}(\gamma^\mu p_\mu) = 0$) · Yu §7.1, §8.2.2 · PS §5.1 (statements)*
+$\operatorname{tr}\mathbb 1 = 4$; traces of an odd number of $\gamma$'s vanish; $\operatorname{tr}(\gamma^\mu\gamma^\nu) = 4g^{\mu\nu}$; $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma) = 4(g^{\mu\nu}g^{\rho\sigma} - g^{\mu\rho}g^{\nu\sigma} + g^{\mu\sigma}g^{\nu\rho})$, see Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|§C5a.14.3]] Traces of γ Matrices. *Source: Lecture 9, slide "Solution of The Dirac Equation: Step 2" ($\operatorname{tr}(\gamma^\mu p_\mu) = 0$) · Yu §7.1, §8.2.2 · PS §5.1 (statements)*
 
 ^nd-thm-c5a-11-3
 
@@ -6660,11 +6660,11 @@ $\operatorname{tr}\mathbb 1 = 4$; traces of an odd number of $\gamma$'s vanish; 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5 (traces)
-> - [[§C5a.11 Gamma-Matrix Technology#^der-c5a-11-3|Derivation §C5a.11.3]]; basis independence: Theorem [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15|§CB.0.15]] Trace, Determinant and Eigenvalues Do Not Depend on the Basis.
+> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-3|Derivation §C5a.14.3]]; basis independence: Theorem [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15|§CB.0.15]] Trace, Determinant and Eigenvalues Do Not Depend on the Basis.
 
 ### [B] Traces with γ⁵ ★
 
-$\operatorname{tr}\gamma^5 = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5) = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\varepsilon^{\mu\nu\rho\sigma}$ with $\varepsilon^{0123} = +1$; convention-free $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$, see Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-4|§C5a.11.4]] Traces with γ⁵. *Source: Yu §8.2.2 · PS §5.1 (statements)*
+$\operatorname{tr}\gamma^5 = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5) = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^\rho\gamma^\sigma\gamma^5) = -4i\varepsilon^{\mu\nu\rho\sigma}$ with $\varepsilon^{0123} = +1$; convention-free $\operatorname{tr}(\gamma^0\gamma^1\gamma^2\gamma^3\gamma^5) = -4i$, see Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-4|§C5a.14.4]] Traces with γ⁵. *Source: Yu §8.2.2 · PS §5.1 (statements)*
 
 ^nd-thm-c5a-11-4
 
@@ -6675,11 +6675,11 @@ $\operatorname{tr}\gamma^5 = 0$, $\operatorname{tr}(\gamma^\mu\gamma^\nu\gamma^5
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - [[§C5a.11 Gamma-Matrix Technology#^der-c5a-11-4|Derivation §C5a.11.4]]; [[§C5a.11 Gamma-Matrix Technology#^cau-c5a-11-1|§C5a.11, Caution: The sign of the ε trace across sources]]; [[Larsen PHY 513|register: Levi-Civita]].
+> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-4|Derivation §C5a.14.4]]; [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]]; [[Larsen PHY 513|register: Levi-Civita]].
 
 ### [B] Every product of γ's reduces to the standard basis ★
 
-A product of $n$ $\gamma$'s is a unique combination, with coefficients from $g$ and $\varepsilon$, of $\mathbb 1$, $\gamma^\mu$, $\sigma^{\mu\nu}$, $\gamma^\mu\gamma^5$, $\gamma^5$, only of the parity of $n$, see Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-8|§C5a.11.8]] Every Product of γ's Reduces to the Standard Basis. *Source: Problem Set 5, Problem 5 (closing paragraph of the statement) · the user's notes Ch. 9 §9.6*
+A product of $n$ $\gamma$'s is a unique combination, with coefficients from $g$ and $\varepsilon$, of $\mathbb 1$, $\gamma^\mu$, $\sigma^{\mu\nu}$, $\gamma^\mu\gamma^5$, $\gamma^5$, only of the parity of $n$, see Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-8|§C5a.14.8]] Every Product of γ's Reduces to the Standard Basis. *Source: Problem Set 5, Problem 5 (closing paragraph of the statement) · the user's notes Ch. 9 §9.6*
 
 ^nd-thm-c5a-11-8
 
@@ -6690,7 +6690,7 @@ A product of $n$ $\gamma$'s is a unique combination, with coefficients from $g$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - [[§C5a.11 Gamma-Matrix Technology#^der-c5a-11-8|Derivation §C5a.11.8]]; three and four: Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|§C5a.11.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-6|§C5a.11.6]] The Antisymmetric Product of Three γ's; basis: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|§CB.18.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
+> - [[§C5a.14 Gamma-Matrix Technology#^der-c5a-14-8|Derivation §C5a.14.8]]; three and four: Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product, Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-6|§C5a.14.6]] The Antisymmetric Product of Three γ's; basis: Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-14|§CB.18.14]] Cl(1,3) ≅ ΛV as a Representation; the Sixteen Bilinears.
 
 # T9. Quantization of the Dirac field
 
@@ -6828,7 +6828,7 @@ $\hat Q = \int d^3x\,\hat{\bar\psi}\gamma^0\hat\psi = \int d^3x\,\hat\psi^\dagge
 
 > [!tip]- Hints: route in the notes
 > - Technique: K12 (Noether recipe).
-> - Current: Theorem [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|§C5a.8.3]] The Vector Current; sign: [[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|§C1b.6, Caution: Sign and normalization of the U(1) current]].
+> - Current: Theorem [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|§C5a.9.3]] The Vector Current; sign: [[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|§C1b.6, Caution: Sign and normalization of the U(1) current]].
 
 ### [B] Time-ordered product of fermion fields
 
@@ -6876,7 +6876,7 @@ $\pi_\psi = \partial\mathcal L/\partial\dot\psi = i\psi^\dagger$, $\pi_{\bar\psi
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Steps 1–6 of the derivation under Theorem [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-1|§C5b.1.1]] The Conjugate Momentum Field of the Dirac Field; the recalled momenta Theorem [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|§C5a.8.1]] Canonical Momenta of the Dirac Field.
+> - Steps 1–6 of the derivation under Theorem [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-1|§C5b.1.1]] The Conjugate Momentum Field of the Dirac Field; the recalled momenta Theorem [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|§C5a.9.1]] Canonical Momenta of the Dirac Field.
 > - Partner field: [[§C5b.1 Canonical Quantization of the Dirac Field#^rem-c5b-1-2|§C5b.1, Remark: ψ† or ψ̄ as the partner field, one canonical structure]]; first-order system: [[§C5b.1 Canonical Quantization of the Dirac Field#^rem-c5b-1-3|§C5b.1, Remark: A first-order system: the momentum is ψ† itself]].
 > - Not a velocity, not $\bar\psi$, not the field momentum: [[§C5b.1 Canonical Quantization of the Dirac Field#^rem-c5b-1-5|§C5b.1, Remark: What the conjugate momentum is not, for spinors]].
 
@@ -6911,7 +6911,7 @@ $\{\hat a^r_{\mathbf p}, \hat a^{s\dagger}_{\mathbf q}\} = \{\hat b^r_{\mathbf p
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9 (relabel $\mathbf p \to -\mathbf p$), K10 (extraction), K11.
-> - Slides' direction: second route under Theorem [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|§C5b.2.4]] The Mode Algebra of the Dirac Field, steps 1–5; spin sums Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|§C5a.10.7]] The Spin Sum over u, Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|§C5a.10.8]] The Spin Sum over v; "one thing at a time": [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-6|§C5b.2, Remark: One thing at a time]].
+> - Slides' direction: second route under Theorem [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|§C5b.2.4]] The Mode Algebra of the Dirac Field, steps 1–5; spin sums Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|§C5a.12.7]] The Spin Sum over u, Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|§C5a.12.8]] The Spin Sum over v; "one thing at a time": [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-6|§C5b.2, Remark: One thing at a time]].
 > - Converse: first route, steps 1–5, with Theorem [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|§C5b.2.3]] Mode Extraction.
 
 ### [A] The conjugate fields ψ† and ψ̄ in modes ★★
@@ -6928,7 +6928,7 @@ $\hat\psi^\dagger = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\sum
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Steps 1–5 under Theorem [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|§C5b.2.2]] The Conjugate Fields ψ† and ψ̄; interchange: [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-2|§C5b.2, Remark: ψ̄ is ψ with particles and antiparticles interchanged]]; made explicit by charge conjugation, Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-3|§C9.6.3]] Charge Conjugation through the Dirac Conjugate.
+> - Steps 1–5 under Theorem [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|§C5b.2.2]] The Conjugate Fields ψ† and ψ̄; interchange: [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-2|§C5b.2, Remark: ψ̄ is ψ with particles and antiparticles interchanged]]; made explicit by charge conjugation, Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-3|§C9.7.3]] Charge Conjugation through the Dirac Conjugate.
 
 ### [A] Mode extraction ★ [class exercise, Lecture 10]
 
@@ -6944,7 +6944,7 @@ $\hat a^s_{\mathbf p} = \frac{1}{\sqrt{2E_{\mathbf p}}}\int d^3x\,e^{ip\cdot x}u
 
 > [!tip]- Hints: route in the notes
 > - Technique: K10 (extracting mode operators: $u^\dagger$, $v^\dagger$ orthogonality).
-> - Steps 1–6 under Theorem [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|§C5b.2.3]] Mode Extraction; orthogonality Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|§C5a.10.1]] u†u = 2E; positive product [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-5|§C5b.2, Remark: A positive inner product]].
+> - Steps 1–6 under Theorem [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|§C5b.2.3]] Mode Extraction; orthogonality Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|§C5a.12.1]] u†u = 2E; positive product [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^rem-c5b-2-5|§C5b.2, Remark: A positive inner product]].
 
 ### [B] Commutators give the antiparticle modes a negative algebra ★
 
@@ -6994,7 +6994,7 @@ Substituting the expansion into $\hat H = \int d^3x\,\hat\psi^\dagger H_{\rm s.p
 > [!tip]- Hints: route in the notes
 > - Technique: K9 (mode substitution, $E_{-\mathbf p} = E_{\mathbf p}$), K10 (orthogonality).
 > - Lecture route: second derivation under Theorem [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|§C5b.3.2]] The Hamiltonian in Modes, before Any Algebra, steps 1–6; general-$t$ route: first derivation, steps 1–6.
-> - Orthogonality and normalization: Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-1|§C5a.10.1]] u†u = 2E, Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-3|§C5a.10.3]] v†v = 2E, Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|§C5a.10.6]] u and v Are Orthogonal at Opposite Three-Momenta.
+> - Orthogonality and normalization: Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|§C5a.12.1]] u†u = 2E, Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|§C5a.12.3]] v†v = 2E, Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|§C5a.12.6]] u and v Are Orthogonal at Opposite Three-Momenta.
 
 ### [B] Commutators allow no positive norm with positive energy ★
 
@@ -7122,7 +7122,7 @@ At rest, $\hat J_z\hat a^{s\dagger}_{\mathbf 0}|0\rangle = \sum_r(\xi^{r\dagger}
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Steps 1–6 under Theorem [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|§C5b.4.3]] Dirac Quanta Have Spin One-Half; the choice: Definition [[§C9.5 Charge Conjugation on Oscillators and Spinors#^def-c9-5-5|§C9.5.5]] The Antiparticle Two-Spinors η^s = ξ^{−s} and Theorem [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-3|§C9.7.3]] Particle and Antiparticle Created with Label s Have the Same Physical Spin.
+> - Steps 1–6 under Theorem [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|§C5b.4.3]] Dirac Quanta Have Spin One-Half; the choice: Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-5|§C9.6.5]] The Antiparticle Two-Spinors η^s = ξ^{−s} and Theorem [[§C9.8 Physical Spin versus Wave-Function Spin#^thm-c9-8-3|§C9.8.3]] Particle and Antiparticle Created with Label s Have the Same Physical Spin.
 
 ### [PS] Charge in modes and fermions minus antifermions ★
 
@@ -7225,7 +7225,7 @@ $S^+_W(\xi) = \int\frac{d^3p}{(2\pi)^32E_{\mathbf p}}(\slashed p + m)e^{-ip\cdot
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11, K5.
-> - Steps 1–5 under Theorem [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|§C5b.7.1]] The Dirac Wightman Functions from the Scalar One; spin sums Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|§C5a.10.7]] The Spin Sum over u, Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-8|§C5a.10.8]] The Spin Sum over v; $D_W$ Definition [[§C2b.2 The Wightman Function#^def-c2b-2-1|§C2b.2.1]] Wightman Function.
+> - Steps 1–5 under Theorem [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|§C5b.7.1]] The Dirac Wightman Functions from the Scalar One; spin sums Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|§C5a.12.7]] The Spin Sum over u, Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|§C5a.12.8]] The Spin Sum over v; $D_W$ Definition [[§C2b.2 The Wightman Function#^def-c2b-2-1|§C2b.2.1]] Wightman Function.
 
 ### [B] The field anticommutator is a c-number; microcausality ★
 
@@ -7476,11 +7476,11 @@ Continuous Lorentz transformations must be symmetries; $C$, $P$, $T$ need not be
 
 > [!tip]- Hints: route in the notes
 > - Technique: none (short response).
-> - Axial coupling: Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-4|§C9.4.4]] The Sixteen Bilinears under Parity, rows 3–4; consequences: [[§C9.9 CPT and the CPT Theorem#^rem-c9-9-2|§C9.9, Remark: Consequences of the CPT theorem, and the status of the discrete symmetries]].
+> - Axial coupling: Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-4|§C9.4.4]] The Sixteen Bilinears under Parity, rows 3–4; consequences: [[§C9.11 CPT and the CPT Theorem#^rem-c9-11-2|§C9.11, Remark: Consequences of the CPT theorem, and the status of the discrete symmetries]].
 
 ### [B] Charge conjugation on the Hilbert space
 
-$U(\mathcal C)\hat a^s_{\mathbf p}U(\mathcal C)^{-1} = \hat b^s_{\mathbf p}$, $U(\mathcal C)\hat b^s_{\mathbf p}U(\mathcal C)^{-1} = \hat a^s_{\mathbf p}$, $U(\mathcal C)|0\rangle = |0\rangle$, unitary, momentum and spin label kept, phases set to 1, see Definition [[§C9.5 Charge Conjugation on Oscillators and Spinors#^def-c9-5-1|§C9.5.1]] Charge Conjugation on the Hilbert Space. *Source: Lecture 12 (Oct 12), slide 5 · PS eq. (3.143)*
+$U(\mathcal C)\hat a^s_{\mathbf p}U(\mathcal C)^{-1} = \hat b^s_{\mathbf p}$, $U(\mathcal C)\hat b^s_{\mathbf p}U(\mathcal C)^{-1} = \hat a^s_{\mathbf p}$, $U(\mathcal C)|0\rangle = |0\rangle$, unitary, momentum and spin label kept, phases set to 1, see Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-1|§C9.6.1]] Charge Conjugation on the Hilbert Space. *Source: Lecture 12 (Oct 12), slide 5 · PS eq. (3.143)*
 
 ^nd-def-c9-5-1
 
@@ -7491,11 +7491,11 @@ $U(\mathcal C)\hat a^s_{\mathbf p}U(\mathcal C)^{-1} = \hat b^s_{\mathbf p}$, $U
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15.
-> - [[§C9.5 Charge Conjugation on Oscillators and Spinors#^rem-c9-5-1|§C9.5, Remark: Reading the definition]]; Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-1|§C9.5.1]] Charge Conjugation on Creation Operators and One-Particle States; the spin question is [[§C9.7 Physical Spin versus Wave-Function Spin|§C9.7]] Physical Spin versus Wave-Function Spin.
+> - [[§C9.6 Charge Conjugation on Oscillators and Spinors#^rem-c9-6-1|§C9.6, Remark: Reading the definition]]; Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-1|§C9.6.1]] Charge Conjugation on Creation Operators and One-Particle States; the spin question is [[§C9.8 Physical Spin versus Wave-Function Spin|§C9.8]] Physical Spin versus Wave-Function Spin.
 
 ### [B] The transposed adjoint of the field operator
 
-$\hat\psi^{\dagger\mathsf T} \equiv (\hat\psi^\dagger)^{\mathsf T}$, $(\hat\psi^{\dagger\mathsf T})_a = (\hat\psi_a)^\dagger$: dagger on operators, complex conjugation on numbers, still a column; the lecture's "star" $\hat\psi^{\ast}$, PS's $\psi^{\ast}$ (3.145), see Definition [[§C9.5 Charge Conjugation on Oscillators and Spinors#^def-c9-5-2|§C9.5.2]] The Transposed Adjoint of a Field Operator and Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-2|§C9.5.2]] Mode Expansion of the Transposed Adjoint. *Source: Lecture 12 (Oct 12), slides 6, 9, 26 · PS eq. (3.145) · register row "Transposed adjoint"*
+$\hat\psi^{\dagger\mathsf T} \equiv (\hat\psi^\dagger)^{\mathsf T}$, $(\hat\psi^{\dagger\mathsf T})_a = (\hat\psi_a)^\dagger$: dagger on operators, complex conjugation on numbers, still a column; the lecture's "star" $\hat\psi^{\ast}$, PS's $\psi^{\ast}$ (3.145), see Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-2|§C9.6.2]] The Transposed Adjoint of a Field Operator and Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-2|§C9.6.2]] Mode Expansion of the Transposed Adjoint. *Source: Lecture 12 (Oct 12), slides 6, 9, 26 · PS eq. (3.145) · register row "Transposed adjoint"*
 
 ^nd-def-c9-5-2
 
@@ -7506,11 +7506,11 @@ $\hat\psi^{\dagger\mathsf T} \equiv (\hat\psi^\dagger)^{\mathsf T}$, $(\hat\psi^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Steps 1–2 under Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-2|§C9.5.2]] Mode Expansion of the Transposed Adjoint; names [[§C9.5 Charge Conjugation on Oscillators and Spinors#^cau-c9-5-1|§C9.5, Caution: Names for the transposed adjoint]]; scalar [[§C9.10 C, T and CPT for the Complex Scalar Field#^cau-c9-10-1|§C9.10, Caution: The star of a scalar field operator is the adjoint]].
+> - Steps 1–2 under Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-2|§C9.6.2]] Mode Expansion of the Transposed Adjoint; names [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-1|§C9.6, Caution: Names for the transposed adjoint]]; scalar [[§C9.12 C, T and CPT for the Complex Scalar Field#^cau-c9-12-1|§C9.12, Caution: The star of a scalar field operator is the adjoint]].
 
 ### [B] Flipped two-spinors and the label −s
 
-$\xi^{-s} \equiv -i\sigma^2(\xi^s)^{\ast}$; for any family $X^s$, $X^{-1} \equiv X^2$, $X^{-2} \equiv -X^1$, so $X^{-(-s)} = -X^s$, see Definition [[§C9.5 Charge Conjugation on Oscillators and Spinors#^def-c9-5-3|§C9.5.3]] The Flipped Two-Spinor and Definition [[§C9.5 Charge Conjugation on Oscillators and Spinors#^def-c9-5-4|§C9.5.4]] The Label −s. *Source: Lecture 12 (Oct 12), slide 7 · PS eqs. (3.134)–(3.135), (3.137)*
+$\xi^{-s} \equiv -i\sigma^2(\xi^s)^{\ast}$; for any family $X^s$, $X^{-1} \equiv X^2$, $X^{-2} \equiv -X^1$, so $X^{-(-s)} = -X^s$, see Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-3|§C9.6.3]] The Flipped Two-Spinor and Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-4|§C9.6.4]] The Label −s. *Source: Lecture 12 (Oct 12), slide 7 · PS eqs. (3.134)–(3.135), (3.137)*
 
 ^nd-def-c9-5-3
 
@@ -7521,11 +7521,11 @@ $\xi^{-s} \equiv -i\sigma^2(\xi^s)^{\ast}$; for any family $X^s$, $X^{-1} \equiv
 - [ ] Q5 **[why]** Why does flipping twice give $-X^s$?
 
 > [!tip]- Hints: route in the notes
-> - Example [[§C9.5 Charge Conjugation on Oscillators and Spinors#^ex-c9-5-1|§C9.5.1]] Conjugating the Helicity and the Standard Two-Spinors; [[§C9.5 Charge Conjugation on Oscillators and Spinors#^cau-c9-5-2|§C9.5, Caution: The sign in ξ^{−s}]].
+> - Example [[§C9.6 Charge Conjugation on Oscillators and Spinors#^ex-c9-6-1|§C9.6.1]] Conjugating the Helicity and the Standard Two-Spinors; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-2|§C9.6, Caution: The sign in ξ^{−s}]].
 
 ### [B] The antiparticle two-spinors η^s = ξ^{−s}
 
-From Lecture 12 on, $\eta^s = \xi^{-s} = -i\sigma^2(\xi^s)^{\ast}$, so $\eta^1 = (0, 1)^{\mathsf T}$, $\eta^2 = (-1, 0)^{\mathsf T}$ for the standard $\xi^s$, see Definition [[§C9.5 Charge Conjugation on Oscillators and Spinors#^def-c9-5-5|§C9.5.5]] The Antiparticle Two-Spinors η^s = ξ^{−s}. *Source: Lecture 12 (Oct 12), slides 8, 14–15 · PS eq. (3.136) · Yu (5.196) · register row "Flipped labels"*
+From Lecture 12 on, $\eta^s = \xi^{-s} = -i\sigma^2(\xi^s)^{\ast}$, so $\eta^1 = (0, 1)^{\mathsf T}$, $\eta^2 = (-1, 0)^{\mathsf T}$ for the standard $\xi^s$, see Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-5|§C9.6.5]] The Antiparticle Two-Spinors η^s = ξ^{−s}. *Source: Lecture 12 (Oct 12), slides 8, 14–15 · PS eq. (3.136) · Yu (5.196) · register row "Flipped labels"*
 
 ^nd-def-c9-5-5
 
@@ -7536,8 +7536,8 @@ From Lecture 12 on, $\eta^s = \xi^{-s} = -i\sigma^2(\xi^s)^{\ast}$, so $\eta^1 =
 - [ ] Q5 **[why]** Which two results of Lecture 12 need exactly this choice (one for $C$, one for spin)?
 
 > [!tip]- Hints: route in the notes
-> - [[§C9.7 Physical Spin versus Wave-Function Spin#^rem-c9-7-6|§C9.7, Remark: The choice η^s = ξ^{−s} in these notes, Peskin–Schroeder and Yu]] (the choice in the notes, PS and Yu).
-> - $C$: Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-2|§C9.6.2]] Charge Conjugation on the Dirac Field holds if and only if $\eta^s = \xi^{-s}$; spin: Theorem [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-3|§C9.7.3]] Particle and Antiparticle Created with Label s Have the Same Physical Spin.
+> - [[§C9.8 Physical Spin versus Wave-Function Spin#^rem-c9-8-6|§C9.8, Remark: The choice η^s = ξ^{−s} in these notes, Peskin–Schroeder and Yu]] (the choice in the notes, PS and Yu).
+> - $C$: Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-2|§C9.7.2]] Charge Conjugation on the Dirac Field holds if and only if $\eta^s = \xi^{-s}$; spin: Theorem [[§C9.8 Physical Spin versus Wave-Function Spin#^thm-c9-8-3|§C9.8.3]] Particle and Antiparticle Created with Label s Have the Same Physical Spin.
 
 ### [B] The charge-conjugation matrix B and the map c
 
@@ -7553,11 +7553,11 @@ A charge-conjugation matrix is an invertible $B$ with $B(\gamma^\mu)^{\ast}B^{-1
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16 (intertwiner), K5.
-> - Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-19|§CB.18.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation (Pauli's theorem; sign of $BB^{\ast}$), Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-21|§CB.18.21]] The Charge-Conjugation Map Is a Real Structure Commuting with the Spinor Lorentz Matrices, Example [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-18-22|§CB.18.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; basis remark [[§C9.5 Charge Conjugation on Oscillators and Spinors#^cau-c9-5-4|§C9.5, Caution: −iγ² is a statement about the chiral basis]].
+> - Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-19|§CB.18.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation (Pauli's theorem; sign of $BB^{\ast}$), Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-21|§CB.18.21]] The Charge-Conjugation Map Is a Real Structure Commuting with the Spinor Lorentz Matrices, Example [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-18-22|§CB.18.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; basis remark [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
 
 ### [B] Wave-function spin, the spin operator and physical spin
 
-Wave-function spin is the $\frac12\sigma^3$ eigenvalue of the two-spinor in $u$ or $v$; the spin operator is $\hat{\mathbf S} = \int d^3x\,\hat\psi^\dagger\frac12\boldsymbol\Sigma\hat\psi$ with $\frac12\Sigma^3 = S^{12}$; physical spin is the eigenvalue of $\hat S^3$ on the state, see Definition [[§C9.7 Physical Spin versus Wave-Function Spin#^def-c9-7-1|§C9.7.1]] Wave-Function Spin, Definition [[§C9.7 Physical Spin versus Wave-Function Spin#^def-c9-7-2|§C9.7.2]] The Spin Operator of the Dirac Field, Definition [[§C9.7 Physical Spin versus Wave-Function Spin#^def-c9-7-3|§C9.7.3]] Physical Spin. *Source: Lecture 12 (Oct 12), slides 14–16 · PS eq. (3.111)*
+Wave-function spin is the $\frac12\sigma^3$ eigenvalue of the two-spinor in $u$ or $v$; the spin operator is $\hat{\mathbf S} = \int d^3x\,\hat\psi^\dagger\frac12\boldsymbol\Sigma\hat\psi$ with $\frac12\Sigma^3 = S^{12}$; physical spin is the eigenvalue of $\hat S^3$ on the state, see Definition [[§C9.8 Physical Spin versus Wave-Function Spin#^def-c9-8-1|§C9.8.1]] Wave-Function Spin, Definition [[§C9.8 Physical Spin versus Wave-Function Spin#^def-c9-8-2|§C9.8.2]] The Spin Operator of the Dirac Field, Definition [[§C9.8 Physical Spin versus Wave-Function Spin#^def-c9-8-3|§C9.8.3]] Physical Spin. *Source: Lecture 12 (Oct 12), slides 14–16 · PS eq. (3.111)*
 
 ^nd-def-c9-7-3
 
@@ -7567,11 +7567,11 @@ Wave-function spin is the $\frac12\sigma^3$ eigenvalue of the two-spinor in $u$ 
 - [ ] Q4 **[why]** "Don't trust the wave functions": state the principle the lecture drew from this.
 
 > [!tip]- Hints: route in the notes
-> - [[§C9.7 Physical Spin versus Wave-Function Spin#^rem-c9-7-1|§C9.7, Remark: The puzzle]] (the puzzle); Principle [[§C9.7 Physical Spin versus Wave-Function Spin#^pr-c9-7-4|§C9.7.4]] Physical Spin Is the Eigenvalue of an Operator.
+> - [[§C9.8 Physical Spin versus Wave-Function Spin#^rem-c9-8-1|§C9.8, Remark: The puzzle]] (the puzzle); Principle [[§C9.8 Physical Spin versus Wave-Function Spin#^pr-c9-8-4|§C9.8.4]] Physical Spin Is the Eigenvalue of an Operator.
 
 ### [B] Time reversal on the oscillators; the time-reversed point
 
-$x_T = (-t, \mathbf x) = -\tilde x$; $U(\mathcal T)\hat a^s_{\mathbf p}U(\mathcal T)^{-1} = \hat a^{-s}_{-\mathbf p}$, $U(\mathcal T)\hat b^s_{\mathbf p}U(\mathcal T)^{-1} = \hat b^{-s}_{-\mathbf p}$, $U(\mathcal T)|0\rangle = |0\rangle$, with $\hat a^{-1} = \hat a^2$, $\hat a^{-2} = -\hat a^1$, see Definition [[§C9.8 Time Reversal#^def-c9-8-1|§C9.8.1]] The Time-Reversed Point and Definition [[§C9.8 Time Reversal#^def-c9-8-2|§C9.8.2]] Time Reversal on the Oscillators. *Source: Lecture 12 (Oct 12), slide 19 · PS eqs. (3.137)–(3.138)*
+$x_T = (-t, \mathbf x) = -\tilde x$; $U(\mathcal T)\hat a^s_{\mathbf p}U(\mathcal T)^{-1} = \hat a^{-s}_{-\mathbf p}$, $U(\mathcal T)\hat b^s_{\mathbf p}U(\mathcal T)^{-1} = \hat b^{-s}_{-\mathbf p}$, $U(\mathcal T)|0\rangle = |0\rangle$, with $\hat a^{-1} = \hat a^2$, $\hat a^{-2} = -\hat a^1$, see Definition [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^def-c9-9-1|§C9.9.1]] The Time-Reversed Point and Definition [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^def-c9-9-2|§C9.9.2]] Time Reversal on the Oscillators. *Source: Lecture 12 (Oct 12), slide 19 · PS eqs. (3.137)–(3.138)*
 
 ^nd-def-c9-8-2
 
@@ -7581,11 +7581,11 @@ $x_T = (-t, \mathbf x) = -\tilde x$; $U(\mathcal T)\hat a^s_{\mathbf p}U(\mathca
 - [ ] Q4 **[state]** What form of law on the field is the goal (slide 19)?
 
 > [!tip]- Hints: route in the notes
-> - [[§C9.8 Time Reversal#^rem-c9-8-1|§C9.8, Remark: A movie run backwards]]; label rule Definition [[§C9.5 Charge Conjugation on Oscillators and Spinors#^def-c9-5-4|§C9.5.4]] The Label −s.
+> - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^rem-c9-9-1|§C9.9, Remark: A movie run backwards]]; label rule Definition [[§C9.6 Charge Conjugation on Oscillators and Spinors#^def-c9-6-4|§C9.6.4]] The Label −s.
 
 ### [B] Signs and names for time reversal in PS, Yu and Problem Set 6
 
-The course: $U(\mathcal T)\hat\psi(t, \mathbf x)U(\mathcal T)^{-1} = \gamma^1\gamma^3\hat\psi(-t, \mathbf x)$; PS (3.139): $T\psi T = (-\gamma^1\gamma^3)\psi(-t, \mathbf x)$, an overall sign, a phase of $U(\mathcal T)$; Yu: $D(\mathcal T) = \mathcal C\gamma^5 = \gamma^1\gamma^3$, see [[§C9.8 Time Reversal#^cau-c9-8-4|§C9.8, Caution: Signs and names in Peskin–Schroeder and Yu]]. *Source: Lecture 12 (Oct 12), slides 22, 26 · Problem Set 6, conventions · PS eqs. (3.138)–(3.140) · Yu (9.202), (9.209)*
+The course: $U(\mathcal T)\hat\psi(t, \mathbf x)U(\mathcal T)^{-1} = \gamma^1\gamma^3\hat\psi(-t, \mathbf x)$; PS (3.139): $T\psi T = (-\gamma^1\gamma^3)\psi(-t, \mathbf x)$, an overall sign, a phase of $U(\mathcal T)$; Yu: $D(\mathcal T) = \mathcal C\gamma^5 = \gamma^1\gamma^3$, see [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^cau-c9-9-3|§C9.9, Caution: Signs and names in Peskin–Schroeder and Yu]]. *Source: Lecture 12 (Oct 12), slides 22, 26 · Problem Set 6, conventions · PS eqs. (3.138)–(3.140) · Yu (9.202), (9.209)*
 
 ^nd-cau-c9-8-4
 
@@ -7595,11 +7595,11 @@ The course: $U(\mathcal T)\hat\psi(t, \mathbf x)U(\mathcal T)^{-1} = \gamma^1\ga
 - [ ] Q4 **[conv]** What is PS's spinor relation on p. 68, and how does it compare with the course's $u^s(p)^{\ast} = \gamma^1\gamma^3u^{-s}(\tilde p)$?
 
 > [!tip]- Hints: route in the notes
-> - The caution's bullets; Theorem [[§C9.8 Time Reversal#^thm-c9-8-5|§C9.8.5]] Time Reversal on the Positive-Frequency Spinors, Theorem [[§C9.8 Time Reversal#^thm-c9-8-7|§C9.8.7]] Time Reversal on the Dirac Field; register row "Time reversal on the Hilbert space".
+> - The caution's bullets; Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-5|§C9.9.5]] Time Reversal on the Positive-Frequency Spinors, Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-7|§C9.9.7]] Time Reversal on the Dirac Field; register row "Time reversal on the Hilbert space".
 
 ### [B] The CPT operator Θ
 
-$\Theta \equiv U(\mathcal C)U(\mathcal P)U(\mathcal T)$, acting as $\Theta\hat{\mathcal O}\Theta^{-1}$: first $\mathcal T$, then $\mathcal P$, then $\mathcal C$; "any order will do" up to signs and phases, see Definition [[§C9.9 CPT and the CPT Theorem#^def-c9-9-1|§C9.9.1]] The CPT Operator Θ. *Source: Lecture 12 (Oct 12), slide 24 · Problem Set 7, Problem 3 ($\Theta \equiv CPT$) · Yu (9.320)*
+$\Theta \equiv U(\mathcal C)U(\mathcal P)U(\mathcal T)$, acting as $\Theta\hat{\mathcal O}\Theta^{-1}$: first $\mathcal T$, then $\mathcal P$, then $\mathcal C$; "any order will do" up to signs and phases, see Definition [[§C9.11 CPT and the CPT Theorem#^def-c9-11-1|§C9.11.1]] The CPT Operator Θ. *Source: Lecture 12 (Oct 12), slide 24 · Problem Set 7, Problem 3 ($\Theta \equiv CPT$) · Yu (9.320)*
 
 ^nd-def-c9-9-1
 
@@ -7609,11 +7609,11 @@ $\Theta \equiv U(\mathcal C)U(\mathcal P)U(\mathcal T)$, acting as $\Theta\hat{\
 - [ ] Q4 **[why]** Which of the three factors is antilinear, and what does that make $\Theta$?
 
 > [!tip]- Hints: route in the notes
-> - Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-2|§C9.9.2]] Θ Is Antiunitary.
+> - Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-2|§C9.11.2]] Θ Is Antiunitary.
 
 ### [B] The discrete transformations of the Dirac field in one statement
 
-$U(\mathcal P)\hat\psi(t, \mathbf x)U(\mathcal P)^{-1} = \eta_a\gamma^0\hat\psi(t, -\mathbf x)$, $U(\mathcal C)\hat\psi(x)U(\mathcal C)^{-1} = -i\gamma^2\hat\psi^{\dagger\mathsf T}(x)$, $U(\mathcal T)\hat\psi(t, \mathbf x)U(\mathcal T)^{-1} = \gamma^1\gamma^3\hat\psi(-t, \mathbf x)$, $\Theta\hat\psi(x)\Theta^{-1} = \eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$, see [[§C9.9 CPT and the CPT Theorem#^rem-c9-9-3|§C9.9, Remark: The discrete transformations of the Dirac field in one statement]]. *Source: Lecture 12 (Oct 12), slide 26 · Problem Set 6 and 7 conventions*
+$U(\mathcal P)\hat\psi(t, \mathbf x)U(\mathcal P)^{-1} = \eta_a\gamma^0\hat\psi(t, -\mathbf x)$, $U(\mathcal C)\hat\psi(x)U(\mathcal C)^{-1} = -i\gamma^2\hat\psi^{\dagger\mathsf T}(x)$, $U(\mathcal T)\hat\psi(t, \mathbf x)U(\mathcal T)^{-1} = \gamma^1\gamma^3\hat\psi(-t, \mathbf x)$, $\Theta\hat\psi(x)\Theta^{-1} = \eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$, see [[§C9.11 CPT and the CPT Theorem#^rem-c9-11-3|§C9.11, Remark: The discrete transformations of the Dirac field in one statement]]. *Source: Lecture 12 (Oct 12), slide 26 · Problem Set 6 and 7 conventions*
 
 ^nd-rem-c9-9-3
 
@@ -7623,11 +7623,11 @@ $U(\mathcal P)\hat\psi(t, \mathbf x)U(\mathcal P)^{-1} = \eta_a\gamma^0\hat\psi(
 - [ ] Q4 **[why]** Which $\gamma$'s appear in $P$, $C$, $T$, and what is their product?
 
 > [!tip]- Hints: route in the notes
-> - [[§C9.9 CPT and the CPT Theorem#^cau-c9-9-3|§C9.9, Caution: Slide 26's parity rule]]; Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-3|§C9.6.3]] Charge Conjugation through the Dirac Conjugate; [[§C9.9 CPT and the CPT Theorem#^rem-c9-9-1|§C9.9, Remark: Each γ once]] and Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-1|§C9.9.1]] The Three Matrices Multiply to γ⁵.
+> - [[§C9.11 CPT and the CPT Theorem#^cau-c9-11-3|§C9.11, Caution: Slide 26's parity rule]]; Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-3|§C9.7.3]] Charge Conjugation through the Dirac Conjugate; [[§C9.11 CPT and the CPT Theorem#^rem-c9-11-1|§C9.11, Remark: Each γ once]] and Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-1|§C9.11.1]] The Three Matrices Multiply to γ⁵.
 
 ### [B] The star of a scalar field operator
 
-Problem Set 7's $\phi^{\ast}$ for the operator is $\hat\phi^\dagger$; for the Dirac field the operator star is $\hat\psi^{\dagger\mathsf T}$, which for a single component is the adjoint, see [[§C9.10 C, T and CPT for the Complex Scalar Field#^cau-c9-10-1|§C9.10, Caution: The star of a scalar field operator is the adjoint]]. *Source: Problem Set 7, Problem 4 (the user's solution) · PS Problem 3.7*
+Problem Set 7's $\phi^{\ast}$ for the operator is $\hat\phi^\dagger$; for the Dirac field the operator star is $\hat\psi^{\dagger\mathsf T}$, which for a single component is the adjoint, see [[§C9.12 C, T and CPT for the Complex Scalar Field#^cau-c9-12-1|§C9.12, Caution: The star of a scalar field operator is the adjoint]]. *Source: Problem Set 7, Problem 4 (the user's solution) · PS Problem 3.7*
 
 ^nd-cau-c9-10-1
 
@@ -7636,7 +7636,7 @@ Problem Set 7's $\phi^{\ast}$ for the operator is $\hat\phi^\dagger$; for the Di
 - [ ] Q3 **[why]** Why is $\hat\phi^{\dagger\mathsf T} = \hat\phi^\dagger$?
 
 > [!tip]- Hints: route in the notes
-> - [[§C9.10 C, T and CPT for the Complex Scalar Field#^cau-c9-10-1|§C9.10, Caution: The star of a scalar field operator is the adjoint]]; Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-4|§C9.10.4]] The U(1) Current under P, C and T.
+> - [[§C9.12 C, T and CPT for the Complex Scalar Field#^cau-c9-12-1|§C9.12, Caution: The star of a scalar field operator is the adjoint]]; Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-4|§C9.12.4]] The U(1) Current under P, C and T.
 
 ## Derivations T10
 
@@ -7703,7 +7703,7 @@ $\eta_b^{\ast} = -\eta_a \Leftrightarrow \eta_a\eta_b = -1$, so $\eta_a^{\ast}\e
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15.
-> - Steps 1–3 under Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-6|§C9.3.6]] The Parity Phases Multiply to −1, Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-7|§C9.3.7]] Particles and Antiparticles Have Opposite Intrinsic Parity, Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-8|§C9.3.8]] The Parity of a Fermion–Antifermion Pair; [[§C9.3 Parity on States, Spinors and the Dirac Field#^rem-c9-3-4|§C9.3, Remark: Positronium and the pions]]; scalar Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-9|§C9.2.9]] The Parity of a Scalar Particle–Antiparticle Pair.
+> - Steps 1–3 under Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-6|§C9.3.6]] The Parity Phases Multiply to −1, Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-7|§C9.3.7]] Particles and Antiparticles Have Opposite Intrinsic Parity, Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-8|§C9.3.8]] The Parity of a Fermion–Antifermion Pair; [[§C9.3 Parity on States, Spinors and the Dirac Field#^rem-c9-3-4|§C9.3, Remark: Positronium and the pions]]; scalar Theorem [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-2|§C9.5.2]] The Parity of a Scalar Particle–Antiparticle Pair.
 
 ### [A] Parity on ψ̄ and on a general bilinear ★★
 
@@ -7719,7 +7719,7 @@ $U(\mathcal P)\hat{\bar\psi}(x)U(\mathcal P)^{-1} = \eta_a^{\ast}\hat{\bar\psi}(
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7 (conjugating bilinears), K15.
-> - Steps 1–3 under Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-1|§C9.4.1]] Parity on the Dirac Conjugate Field, 1–4 under Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-2|§C9.4.2]] Parity on a Bilinear; contrast [[§C9.8 Time Reversal#^cau-c9-8-1|§C9.8, Caution: This goes against everything said so far]].
+> - Steps 1–3 under Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-1|§C9.4.1]] Parity on the Dirac Conjugate Field, 1–4 under Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-2|§C9.4.2]] Parity on a Bilinear; contrast [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^cau-c9-9-1|§C9.9, Caution: This goes against everything said so far]].
 
 ### [A] The bilinears under parity: scalar, pseudoscalar, vector ★★
 
@@ -7771,7 +7771,7 @@ $U(\mathcal P)\hat a_{\mathbf p}U(\mathcal P)^{-1} = \eta_a\hat a_{-\mathbf p}$,
 
 ### [B] Scalar parity phases, intrinsic parity and the real field ★
 
-For the complex scalar $\eta_a\eta_b = +1$: particle and antiparticle have the same intrinsic parity, a pair has $(-1)^L$; a real field needs $\eta = \pm1$ (scalar or pseudoscalar), both leaving the free Lagrangian invariant; for a complex field $\eta_a$ alone is a convention, see Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-3|§C9.2.3]] The Scalar Parity Phases Multiply to +1, Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-8|§C9.2.8]] Scalar Particles and Antiparticles Have the Same Intrinsic Parity, Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-10|§C9.2.10]] Parity on the Real Scalar Field, Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-14|§C9.2.14]] The Parity Phase of a Complex Field Is a Convention. *Source: the user's notes Ch. 11; Yu §9.1.1 (written in the notes with Problem Set 7)*
+For the complex scalar $\eta_a\eta_b = +1$: particle and antiparticle have the same intrinsic parity, a pair has $(-1)^L$; a real field needs $\eta = \pm1$ (scalar or pseudoscalar), both leaving the free Lagrangian invariant; for a complex field $\eta_a$ alone is a convention, see Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-3|§C9.2.3]] The Scalar Parity Phases Multiply to +1, Theorem [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-1|§C9.5.1]] Scalar Particles and Antiparticles Have the Same Intrinsic Parity, Theorem [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-3|§C9.5.3]] Parity on the Real Scalar Field, Theorem [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-7|§C9.5.7]] The Parity Phase of a Complex Field Is a Convention. *Source: the user's notes Ch. 11; Yu §9.1.1 (written in the notes with Problem Set 7)*
 
 ^nd-thm-c9-2-8
 
@@ -7783,11 +7783,11 @@ For the complex scalar $\eta_a\eta_b = +1$: particle and antiparticle have the s
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15.
-> - Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-3|§C9.2.3]] The Scalar Parity Phases Multiply to +1, Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-8|§C9.2.8]] Scalar Particles and Antiparticles Have the Same Intrinsic Parity, Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-10|§C9.2.10]] Parity on the Real Scalar Field, Definition [[§C9.2 Parity of the Scalar Field#^def-c9-2-3|§C9.2.3]] Scalar and Pseudoscalar Fields, Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-11|§C9.2.11]] The Free Real Lagrangian Is Invariant for Either Parity, Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-14|§C9.2.14]] The Parity Phase of a Complex Field Is a Convention; side by side [[§C9.2 Parity of the Scalar Field#^rem-c9-2-8|§C9.2, Remark: Scalar and spinor parity side by side]]; Dirac freedom [[§C9.2 Parity of the Scalar Field#^rem-c9-2-7|§C9.2, Remark: The same freedom for the Dirac field]].
+> - Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-3|§C9.2.3]] The Scalar Parity Phases Multiply to +1, Theorem [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-1|§C9.5.1]] Scalar Particles and Antiparticles Have the Same Intrinsic Parity, Theorem [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-3|§C9.5.3]] Parity on the Real Scalar Field, Definition [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^def-c9-5-2|§C9.5.2]] Scalar and Pseudoscalar Fields, Theorem [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-4|§C9.5.4]] The Free Real Lagrangian Is Invariant for Either Parity, Theorem [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-7|§C9.5.7]] The Parity Phase of a Complex Field Is a Convention; side by side [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^rem-c9-5-5|§C9.5, Remark: Scalar and spinor parity side by side]]; Dirac freedom [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^rem-c9-5-4|§C9.5, Remark: The same freedom for the Dirac field]].
 
 ### [B] The parity of a scalar particle–antiparticle pair ★
 
-For $|\phi\bar\phi\rangle_{LM} = \int d^3p\,\Phi_{LM}(\mathbf p)\,\hat a^\dagger_{\mathbf p}\hat b^\dagger_{-\mathbf p}|0\rangle$ with orbital parity $(-1)^L$, $U(\mathcal P)|\phi\bar\phi\rangle_{LM} = (-1)^L|\phi\bar\phi\rangle_{LM}$: orbital parity times the intrinsic parity $+1$ of the pair, independent of the phase convention, see Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-9|§C9.2.9]] The Parity of a Scalar Particle–Antiparticle Pair and Definition [[§C9.2 Parity of the Scalar Field#^def-c9-2-2|§C9.2.2]] Orbital Parity. *Source: the user's notes Ch. 11; Yu §9.1.1, eq. (9.35) (written in the notes with Problem Set 7)*
+For $|\phi\bar\phi\rangle_{LM} = \int d^3p\,\Phi_{LM}(\mathbf p)\,\hat a^\dagger_{\mathbf p}\hat b^\dagger_{-\mathbf p}|0\rangle$ with orbital parity $(-1)^L$, $U(\mathcal P)|\phi\bar\phi\rangle_{LM} = (-1)^L|\phi\bar\phi\rangle_{LM}$: orbital parity times the intrinsic parity $+1$ of the pair, independent of the phase convention, see Theorem [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-2|§C9.5.2]] The Parity of a Scalar Particle–Antiparticle Pair and Definition [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^def-c9-5-1|§C9.5.1]] Orbital Parity. *Source: the user's notes Ch. 11; Yu §9.1.1, eq. (9.35) (written in the notes with Problem Set 7)*
 
 ^nd-thm-c9-2-9
 
@@ -7800,11 +7800,11 @@ For $|\phi\bar\phi\rangle_{LM} = \int d^3p\,\Phi_{LM}(\mathbf p)\,\hat a^\dagger
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15, K9.
-> - Steps 1–6 under Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-9|§C9.2.9]] The Parity of a Scalar Particle–Antiparticle Pair; phases Theorem [[§C9.2 Parity of the Scalar Field#^thm-c9-2-8|§C9.2.8]] Scalar Particles and Antiparticles Have the Same Intrinsic Parity; fermion pair Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-8|§C9.3.8]] The Parity of a Fermion–Antifermion Pair; [[§C9.2 Parity of the Scalar Field#^rem-c9-2-4|§C9.2, Remark: Parity is a multiplicative quantum number]].
+> - Steps 1–6 under Theorem [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-2|§C9.5.2]] The Parity of a Scalar Particle–Antiparticle Pair; phases Theorem [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-1|§C9.5.1]] Scalar Particles and Antiparticles Have the Same Intrinsic Parity; fermion pair Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-8|§C9.3.8]] The Parity of a Fermion–Antifermion Pair; [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^rem-c9-5-1|§C9.5, Remark: Parity is a multiplicative quantum number]].
 
 ### [A] Conjugation reverses the spin of a two-spinor ★★ [class exercise, Lecture 12]
 
-$J\xi = -i\sigma^2\xi^{\ast}$ is antilinear, preserves inner products up to conjugation, commutes with $SU(2)$, and $(-i\sigma^2)(\frac12\sigma^i)^{\ast}(-i\sigma^2)^{-1} = -\frac12\sigma^i$, so it reverses the spin along every axis; $J^2 = -\mathbb 1$, see Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-3|§C9.5.3]] Conjugation Reverses the Spin of a Two-Spinor. *Source: Lecture 12 (Oct 12), slide 7 ("$-i\sigma_2(\xi^s)^{\ast} = \xi^{-s}$ is general result"; "Proof (optional): rotation generators of two sides agree") · PS §3.6, p. 68*
+$J\xi = -i\sigma^2\xi^{\ast}$ is antilinear, preserves inner products up to conjugation, commutes with $SU(2)$, and $(-i\sigma^2)(\frac12\sigma^i)^{\ast}(-i\sigma^2)^{-1} = -\frac12\sigma^i$, so it reverses the spin along every axis; $J^2 = -\mathbb 1$, see Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-3|§C9.6.3]] Conjugation Reverses the Spin of a Two-Spinor. *Source: Lecture 12 (Oct 12), slide 7 ("$-i\sigma_2(\xi^s)^{\ast} = \xi^{-s}$ is general result"; "Proof (optional): rotation generators of two sides agree") · PS §3.6, p. 68*
 
 ^nd-thm-c9-5-3
 
@@ -7817,11 +7817,11 @@ $J\xi = -i\sigma^2\xi^{\ast}$ is antilinear, preserves inner products up to conj
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5 (Pauli algebra), K11.
-> - Steps 1–4 under Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-3|§C9.5.3]] Conjugation Reverses the Spin of a Two-Spinor; examples Example [[§C9.5 Charge Conjugation on Oscillators and Spinors#^ex-c9-5-1|§C9.5.1]] Conjugating the Helicity and the Standard Two-Spinors.
+> - Steps 1–4 under Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-3|§C9.6.3]] Conjugation Reverses the Spin of a Two-Spinor; examples Example [[§C9.6 Charge Conjugation on Oscillators and Spinors#^ex-c9-6-1|§C9.6.1]] Conjugating the Helicity and the Standard Two-Spinors.
 
 ### [A] Transposes and conjugates of the chiral γ's ★★
 
-In the chiral basis $\gamma^0$, $\gamma^2$ are symmetric and $\gamma^1$, $\gamma^3$ antisymmetric; $\gamma^2$ is the only imaginary one, so $i\gamma^2$ is real and $(-i\gamma^2)^2 = \mathbb 1$; $(\gamma^\mu)^{\mathsf T}\gamma^0\gamma^2 = -\gamma^0\gamma^2\gamma^\mu$ and $\gamma^0\gamma^2\gamma^0\gamma^2 = \mathbb 1$, see Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-4|§C9.5.4]] Transposes and Conjugates of the Chiral Dirac Matrices. *Source: Lecture 12 (Oct 12), slides 8, 10–11 · PS §3.6, p. 70*
+In the chiral basis $\gamma^0$, $\gamma^2$ are symmetric and $\gamma^1$, $\gamma^3$ antisymmetric; $\gamma^2$ is the only imaginary one, so $i\gamma^2$ is real and $(-i\gamma^2)^2 = \mathbb 1$; $(\gamma^\mu)^{\mathsf T}\gamma^0\gamma^2 = -\gamma^0\gamma^2\gamma^\mu$ and $\gamma^0\gamma^2\gamma^0\gamma^2 = \mathbb 1$, see Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-4|§C9.6.4]] Transposes and Conjugates of the Chiral Dirac Matrices. *Source: Lecture 12 (Oct 12), slides 8, 10–11 · PS §3.6, p. 70*
 
 ^nd-thm-c9-5-4
 
@@ -7833,11 +7833,11 @@ In the chiral basis $\gamma^0$, $\gamma^2$ are symmetric and $\gamma^1$, $\gamma
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5.
-> - Steps 1–5 under Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-4|§C9.5.4]] Transposes and Conjugates of the Chiral Dirac Matrices; [[§C9.6 Charge Conjugation on the Field and Bilinears#^cau-c9-6-1|§C9.6, Caution: Is γ² antisymmetric?]].
+> - Steps 1–5 under Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-4|§C9.6.4]] Transposes and Conjugates of the Chiral Dirac Matrices; [[§C9.7 Charge Conjugation on the Field and Bilinears#^cau-c9-7-1|§C9.7, Caution: Is γ² antisymmetric?]].
 
 ### [A] The conjugate of u is a v, and of v a u ★★
 
-With $\eta^s = \xi^{-s}$: $u^s(p)^{\ast} = -i\gamma^2v^s(p)$, $v^s(p)^{\ast} = -i\gamma^2u^s(p)$, equivalently $v^s(p) = -i\gamma^2u^s(p)^{\ast}$, see Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-5|§C9.5.5]] The Conjugate of u Is a v and Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-6|§C9.5.6]] The Conjugate of v Is a u. *Source: Lecture 12 (Oct 12), slide 8 ("$u^s(p)^{\ast} = -i\gamma^2v^{-s}(p)$") · PS eq. (3.144)*
+With $\eta^s = \xi^{-s}$: $u^s(p)^{\ast} = -i\gamma^2v^s(p)$, $v^s(p)^{\ast} = -i\gamma^2u^s(p)$, equivalently $v^s(p) = -i\gamma^2u^s(p)^{\ast}$, see Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-5|§C9.6.5]] The Conjugate of u Is a v and Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-6|§C9.6.6]] The Conjugate of v Is a u. *Source: Lecture 12 (Oct 12), slide 8 ("$u^s(p)^{\ast} = -i\gamma^2v^{-s}(p)$") · PS eq. (3.144)*
 
 ^nd-thm-c9-5-5
 
@@ -7851,11 +7851,11 @@ With $\eta^s = \xi^{-s}$: $u^s(p)^{\ast} = -i\gamma^2v^s(p)$, $v^s(p)^{\ast} = -
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15, K5.
-> - Steps 1–5 under Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-5|§C9.5.5]] The Conjugate of u Is a v, 1–3 under Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-6|§C9.5.6]] The Conjugate of v Is a u; [[§C9.5 Charge Conjugation on Oscillators and Spinors#^cau-c9-5-3|§C9.5, Caution: Which v Is the Conjugate of u?]].
+> - Steps 1–5 under Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-5|§C9.6.5]] The Conjugate of u Is a v, 1–3 under Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-6|§C9.6.6]] The Conjugate of v Is a u; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-3|§C9.6, Caution: Which v Is the Conjugate of u?]].
 
 ### [A] Charge conjugation on the Dirac field ★★
 
-$U(\mathcal C)\hat\psi(x)U(\mathcal C)^{-1} = -i\gamma^2\hat\psi^{\dagger\mathsf T}(x)$, component $-i\sum_b(\gamma^2)_{ab}(\hat\psi_b(x))^\dagger$, at the same point, if and only if $\eta^s = \xi^{-s}$, see Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-2|§C9.6.2]] Charge Conjugation on the Dirac Field. *Source: Lecture 12 (Oct 12), slide 9 · PS eq. (3.145)*
+$U(\mathcal C)\hat\psi(x)U(\mathcal C)^{-1} = -i\gamma^2\hat\psi^{\dagger\mathsf T}(x)$, component $-i\sum_b(\gamma^2)_{ab}(\hat\psi_b(x))^\dagger$, at the same point, if and only if $\eta^s = \xi^{-s}$, see Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-2|§C9.7.2]] Charge Conjugation on the Dirac Field. *Source: Lecture 12 (Oct 12), slide 9 · PS eq. (3.145)*
 
 ^nd-thm-c9-6-2
 
@@ -7868,11 +7868,11 @@ $U(\mathcal C)\hat\psi(x)U(\mathcal C)^{-1} = -i\gamma^2\hat\psi^{\dagger\mathsf
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15 (act on modes, rewrite spinors, read off the matrix).
-> - Steps 1–6 under Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-2|§C9.6.2]] Charge Conjugation on the Dirac Field; [[§C9.6 Charge Conjugation on the Field and Bilinears#^rem-c9-6-1|§C9.6, Remark: Where the plane waves went]], [[§C9.6 Charge Conjugation on the Field and Bilinears#^rem-c9-6-2|§C9.6, Remark: Charge conjugation is roughly complex conjugation]].
+> - Steps 1–6 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-2|§C9.7.2]] Charge Conjugation on the Dirac Field; [[§C9.7 Charge Conjugation on the Field and Bilinears#^rem-c9-7-1|§C9.7, Remark: Where the plane waves went]], [[§C9.7 Charge Conjugation on the Field and Bilinears#^rem-c9-7-2|§C9.7, Remark: Charge conjugation is roughly complex conjugation]].
 
 ### [B] Charge conjugation in any basis: the matrix B ★
 
-If $v^s(p) = B\,u^s(p)^{\ast}$ for a unitary charge-conjugation matrix $B$, then $U(\mathcal C)\hat\psi(x)U(\mathcal C)^{-1} = B\,\hat\psi^{\dagger\mathsf T}(x)$, and conversely; $B\hat\psi^{\dagger\mathsf T}$ obeys the Dirac equation; in the chiral basis $B = -i\gamma^2$ and the condition is $\eta^s = \xi^{-s}$, see Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-1|§C9.6.1]] Charge Conjugation on the Dirac Field in Any Basis. *Source: Lecture 12 (Oct 12), slide 9; written beyond the lecture at the user's question · the user's notes Ch. 12 §12.3*
+If $v^s(p) = B\,u^s(p)^{\ast}$ for a unitary charge-conjugation matrix $B$, then $U(\mathcal C)\hat\psi(x)U(\mathcal C)^{-1} = B\,\hat\psi^{\dagger\mathsf T}(x)$, and conversely; $B\hat\psi^{\dagger\mathsf T}$ obeys the Dirac equation; in the chiral basis $B = -i\gamma^2$ and the condition is $\eta^s = \xi^{-s}$, see Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis. *Source: Lecture 12 (Oct 12), slide 9; written beyond the lecture at the user's question · the user's notes Ch. 12 §12.3*
 
 ^nd-thm-c9-6-1
 
@@ -7885,11 +7885,11 @@ If $v^s(p) = B\,u^s(p)^{\ast}$ for a unitary charge-conjugation matrix $B$, then
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15, K16.
-> - Steps 1–10 under Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-1|§C9.6.1]] Charge Conjugation on the Dirac Field in Any Basis; Definition [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-18-18|§CB.18.18]] The Charge-Conjugation Matrix, Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-19|§CB.18.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, Example [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-18-22|§CB.18.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.5 Charge Conjugation on Oscillators and Spinors#^cau-c9-5-4|§C9.5, Caution: −iγ² is a statement about the chiral basis]].
+> - Steps 1–10 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis; Definition [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^def-cb-18-18|§CB.18.18]] The Charge-Conjugation Matrix, Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-19|§CB.18.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, Example [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-18-22|§CB.18.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
 
 ### [A] The scalar bilinear under charge conjugation ★★
 
-$U(\mathcal C)\hat{\bar\psi}\hat\psi(x)U(\mathcal C)^{-1} = +\hat{\bar\psi}\hat\psi(x)$: the "row" and "column" forms, a fermion exchange, and $\gamma^0\gamma^2\gamma^0\gamma^2 = \mathbb 1$, see Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-5|§C9.6.5]] The Scalar Bilinear Is Charge-Conjugation Invariant. *Source: Lecture 12 (Oct 12), slide 11 ("'−' from anticommutation of the fields") · PS eq. (3.147)*
+$U(\mathcal C)\hat{\bar\psi}\hat\psi(x)U(\mathcal C)^{-1} = +\hat{\bar\psi}\hat\psi(x)$: the "row" and "column" forms, a fermion exchange, and $\gamma^0\gamma^2\gamma^0\gamma^2 = \mathbb 1$, see Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-5|§C9.7.5]] The Scalar Bilinear Is Charge-Conjugation Invariant. *Source: Lecture 12 (Oct 12), slide 11 ("'−' from anticommutation of the fields") · PS eq. (3.147)*
 
 ^nd-thm-c9-6-5
 
@@ -7901,11 +7901,11 @@ $U(\mathcal C)\hat{\bar\psi}\hat\psi(x)U(\mathcal C)^{-1} = +\hat{\bar\psi}\hat\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7, K11.
-> - Steps 1–4 under Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-5|§C9.6.5]] The Scalar Bilinear Is Charge-Conjugation Invariant; laws Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-4|§C9.6.4]] Charge Conjugation on ψ† and ψ̄.
+> - Steps 1–4 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-5|§C9.7.5]] The Scalar Bilinear Is Charge-Conjugation Invariant; laws Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-4|§C9.7.4]] Charge Conjugation on ψ† and ψ̄.
 
 ### [PS] The vector current under charge conjugation ★★
 
-$U(\mathcal C)\mathsf V^\mu(x)U(\mathcal C)^{-1} = -\mathsf V^\mu(x)$ for all $\mu$: the number current flips, see Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-6|§C9.6.6]] The Vector Current Changes Sign under Charge Conjugation. *Source: Lecture 12 (Oct 12), slide 11 · Problem Set 7, Problem 2(b) · PS eq. (3.149)*
+$U(\mathcal C)\mathsf V^\mu(x)U(\mathcal C)^{-1} = -\mathsf V^\mu(x)$ for all $\mu$: the number current flips, see Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-6|§C9.7.6]] The Vector Current Changes Sign under Charge Conjugation. *Source: Lecture 12 (Oct 12), slide 11 · Problem Set 7, Problem 2(b) · PS eq. (3.149)*
 
 ^nd-thm-c9-6-6
 
@@ -7913,7 +7913,7 @@ $U(\mathcal C)\mathsf V^\mu(x)U(\mathcal C)^{-1} = -\mathsf V^\mu(x)$ for all $\
 
 ### [PS] The axial vector under charge conjugation ★
 
-$U(\mathcal C)\mathsf A^\mu(x)U(\mathcal C)^{-1} = +\mathsf A^\mu(x)$, see Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-9|§C9.6.9]] The Axial Vector Is Charge-Conjugation Invariant. *Source: Problem Set 7, Problem 2(b) · PS eq. (3.150)*
+$U(\mathcal C)\mathsf A^\mu(x)U(\mathcal C)^{-1} = +\mathsf A^\mu(x)$, see Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-9|§C9.7.9]] The Axial Vector Is Charge-Conjugation Invariant. *Source: Problem Set 7, Problem 2(b) · PS eq. (3.150)*
 
 ^nd-thm-c9-6-9
 
@@ -7921,7 +7921,7 @@ $U(\mathcal C)\mathsf A^\mu(x)U(\mathcal C)^{-1} = +\mathsf A^\mu(x)$, see Theor
 
 ### [B] Charge conjugation on a general bilinear ★
 
-In the chiral basis $\hat{\bar\psi}\Gamma\hat\psi \to \hat{\bar\psi}\gamma^0\gamma^2\Gamma^{\mathsf T}\gamma^0\gamma^2\hat\psi$ at the same point; in any Hermitian basis $\hat{\bar\psi}\tilde B\Gamma^{\mathsf T}\tilde B^{-1}\hat\psi$ with $\tilde B = B(\gamma^0)^{\mathsf T}$ antisymmetric, see Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-7|§C9.6.7]] Charge Conjugation on a General Bilinear. *Source: Lecture 12 (Oct 12), slide 11 (the computation for $\gamma^\mu$) · PS §3.6, pp. 70–71 · Yu (9.121)*
+In the chiral basis $\hat{\bar\psi}\Gamma\hat\psi \to \hat{\bar\psi}\gamma^0\gamma^2\Gamma^{\mathsf T}\gamma^0\gamma^2\hat\psi$ at the same point; in any Hermitian basis $\hat{\bar\psi}\tilde B\Gamma^{\mathsf T}\tilde B^{-1}\hat\psi$ with $\tilde B = B(\gamma^0)^{\mathsf T}$ antisymmetric, see Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-7|§C9.7.7]] Charge Conjugation on a General Bilinear. *Source: Lecture 12 (Oct 12), slide 11 (the computation for $\gamma^\mu$) · PS §3.6, pp. 70–71 · Yu (9.121)*
 
 ^nd-thm-c9-6-7
 
@@ -7932,11 +7932,11 @@ In the chiral basis $\hat{\bar\psi}\Gamma\hat\psi \to \hat{\bar\psi}\gamma^0\gam
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7.
-> - Steps 1–7 under Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-7|§C9.6.7]] Charge Conjugation on a General Bilinear; $T$ analogue Theorem [[§C9.8 Time Reversal#^thm-c9-8-10|§C9.8.10]] Time Reversal on a General Bilinear.
+> - Steps 1–7 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-7|§C9.7.7]] Charge Conjugation on a General Bilinear; $T$ analogue Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-2|§C9.10.2]] Time Reversal on a General Bilinear.
 
 ### [B] Pseudoscalar and tensor under charge conjugation ★
 
-$\mathsf P \to +\mathsf P(x)$ and $\mathsf T^{\mu\nu} \to -\mathsf T^{\mu\nu}(x)$ under $U(\mathcal C)$, see Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-8|§C9.6.8]] The Pseudoscalar Bilinear Is Charge-Conjugation Invariant and Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-10|§C9.6.10]] The Tensor Bilinear Changes Sign under Charge Conjugation. *Source: the user's notes Ch. 12 ("the rest", filled in) · PS table p. 71 · Yu (9.122)–(9.129)*
+$\mathsf P \to +\mathsf P(x)$ and $\mathsf T^{\mu\nu} \to -\mathsf T^{\mu\nu}(x)$ under $U(\mathcal C)$, see Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-8|§C9.7.8]] The Pseudoscalar Bilinear Is Charge-Conjugation Invariant and Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-10|§C9.7.10]] The Tensor Bilinear Changes Sign under Charge Conjugation. *Source: the user's notes Ch. 12 ("the rest", filled in) · PS table p. 71 · Yu (9.122)–(9.129)*
 
 ^nd-thm-c9-6-10
 
@@ -7947,11 +7947,11 @@ $\mathsf P \to +\mathsf P(x)$ and $\mathsf T^{\mu\nu} \to -\mathsf T^{\mu\nu}(x)
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7, K5.
-> - Steps 1–4 under Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-8|§C9.6.8]] The Pseudoscalar Bilinear Is Charge-Conjugation Invariant, 1–3 under Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-10|§C9.6.10]] The Tensor Bilinear Changes Sign under Charge Conjugation; table Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|§C9.9.5]] The Bilinears under C, P, T and CPT.
+> - Steps 1–4 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-8|§C9.7.8]] The Pseudoscalar Bilinear Is Charge-Conjugation Invariant, 1–3 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-10|§C9.7.10]] The Tensor Bilinear Changes Sign under Charge Conjugation; table Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|§C9.11.5]] The Bilinears under C, P, T and CPT.
 
 ### [B] The free Dirac Lagrangian is C invariant ★
 
-$U(\mathcal C)\hat{\mathcal L}(x)U(\mathcal C)^{-1} = \hat{\mathcal L}(x) - i\partial_\mu\mathsf V^\mu(x)$, so the action is invariant, see Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-11|§C9.6.11]] The Free Dirac Lagrangian Is Charge-Conjugation Invariant. *Source: PS §3.6, p. 71*
+$U(\mathcal C)\hat{\mathcal L}(x)U(\mathcal C)^{-1} = \hat{\mathcal L}(x) - i\partial_\mu\mathsf V^\mu(x)$, so the action is invariant, see Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-11|§C9.7.11]] The Free Dirac Lagrangian Is Charge-Conjugation Invariant. *Source: PS §3.6, p. 71*
 
 ^nd-thm-c9-6-11
 
@@ -7962,11 +7962,11 @@ $U(\mathcal C)\hat{\mathcal L}(x)U(\mathcal C)^{-1} = \hat{\mathcal L}(x) - i\pa
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7, K2.
-> - Steps 1–5 under Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-11|§C9.6.11]] The Free Dirac Lagrangian Is Charge-Conjugation Invariant.
+> - Steps 1–5 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-11|§C9.7.11]] The Free Dirac Lagrangian Is Charge-Conjugation Invariant.
 
 ### [A] The spin operator in oscillator form ★★
 
-$\hat S^3 = \int\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\mathbf p}}\sum_{r,s}(\hat a^{r\dagger}\hat a^s\,u^{r\dagger}\frac12\Sigma^3u^s + \hat b^r\hat b^{s\dagger}\,v^{r\dagger}\frac12\Sigma^3v^s) + \hat S^3_{\rm pair}$; for momenta along $z$ the pair terms vanish and the coefficients reduce to $\xi^{r\dagger}\frac{\sigma^3}2\xi^s$, $\eta^{r\dagger}\frac{\sigma^3}2\eta^s$, see Theorem [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-1|§C9.7.1]] The Spin Operator in Oscillator Form. *Source: Lecture 12 (Oct 12), slide 16 ("Use orthogonality (not quite 'standard' due to insertion of $\Sigma$)"); transcript ("we check that") · PS §3.5, p. 61*
+$\hat S^3 = \int\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\mathbf p}}\sum_{r,s}(\hat a^{r\dagger}\hat a^s\,u^{r\dagger}\frac12\Sigma^3u^s + \hat b^r\hat b^{s\dagger}\,v^{r\dagger}\frac12\Sigma^3v^s) + \hat S^3_{\rm pair}$; for momenta along $z$ the pair terms vanish and the coefficients reduce to $\xi^{r\dagger}\frac{\sigma^3}2\xi^s$, $\eta^{r\dagger}\frac{\sigma^3}2\eta^s$, see Theorem [[§C9.8 Physical Spin versus Wave-Function Spin#^thm-c9-8-1|§C9.8.1]] The Spin Operator in Oscillator Form. *Source: Lecture 12 (Oct 12), slide 16 ("Use orthogonality (not quite 'standard' due to insertion of $\Sigma$)"); transcript ("we check that") · PS §3.5, p. 61*
 
 ^nd-thm-c9-7-1
 
@@ -7978,11 +7978,11 @@ $\hat S^3 = \int\frac{d^3p}{(2\pi)^3}\frac{1}{2E_{\mathbf p}}\sum_{r,s}(\hat a^{
 
 > [!tip]- Hints: route in the notes
 > - Technique: K10, K9.
-> - Steps 1–5 under Theorem [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-1|§C9.7.1]] The Spin Operator in Oscillator Form; other momenta [[§C9.7 Physical Spin versus Wave-Function Spin#^rem-c9-7-5|§C9.7, Remark: Other momenta, and why Ŝ alone is not enough]].
+> - Steps 1–5 under Theorem [[§C9.8 Physical Spin versus Wave-Function Spin#^thm-c9-8-1|§C9.8.1]] The Spin Operator in Oscillator Form; other momenta [[§C9.8 Physical Spin versus Wave-Function Spin#^rem-c9-8-5|§C9.8, Remark: Other momenta, and why Ŝ alone is not enough]].
 
 ### [A] The reordering sign in the spin operator ★★
 
-$\sum_{r,s}\hat b^r\hat b^{s\dagger}\eta^{r\dagger}\frac{\sigma^3}2\eta^s = -\sum_{r,s}\hat b^{s\dagger}\hat b^r\eta^{r\dagger}\frac{\sigma^3}2\eta^s$ with no constant ($\operatorname{tr}\sigma^3 = 0$); with $\eta^s = \xi^{-s}$, $s = 1$ contributes $+\frac12$ and $s = 2$ contributes $-\frac12$ for both species, see Theorem [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-2|§C9.7.2]] The Reordering Sign in the Spin Operator. *Source: Lecture 12 (Oct 12), slide 16 ("Operator order in the second term ⇒ interchange gives '−'") · PS §3.5, p. 61*
+$\sum_{r,s}\hat b^r\hat b^{s\dagger}\eta^{r\dagger}\frac{\sigma^3}2\eta^s = -\sum_{r,s}\hat b^{s\dagger}\hat b^r\eta^{r\dagger}\frac{\sigma^3}2\eta^s$ with no constant ($\operatorname{tr}\sigma^3 = 0$); with $\eta^s = \xi^{-s}$, $s = 1$ contributes $+\frac12$ and $s = 2$ contributes $-\frac12$ for both species, see Theorem [[§C9.8 Physical Spin versus Wave-Function Spin#^thm-c9-8-2|§C9.8.2]] The Reordering Sign in the Spin Operator. *Source: Lecture 12 (Oct 12), slide 16 ("Operator order in the second term ⇒ interchange gives '−'") · PS §3.5, p. 61*
 
 ^nd-thm-c9-7-2
 
@@ -7995,11 +7995,11 @@ $\sum_{r,s}\hat b^r\hat b^{s\dagger}\eta^{r\dagger}\frac{\sigma^3}2\eta^s = -\su
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Steps 1–4 under Theorem [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-2|§C9.7.2]] The Reordering Sign in the Spin Operator; [[§C9.7 Physical Spin versus Wave-Function Spin#^rem-c9-7-4|§C9.7, Remark: Two minus signs, again]]; [[§C9.7 Physical Spin versus Wave-Function Spin#^cau-c9-7-1|§C9.7, Caution: A slip in the handwritten notes]].
+> - Steps 1–4 under Theorem [[§C9.8 Physical Spin versus Wave-Function Spin#^thm-c9-8-2|§C9.8.2]] The Reordering Sign in the Spin Operator; [[§C9.8 Physical Spin versus Wave-Function Spin#^rem-c9-8-4|§C9.8, Remark: Two minus signs, again]]; [[§C9.8 Physical Spin versus Wave-Function Spin#^cau-c9-8-1|§C9.8, Caution: A slip in the handwritten notes]].
 
 ### [A] Particle and antiparticle with label s have the same physical spin ★★
 
-With $\eta^s = \xi^{-s}$, $\hat J_z\hat a^{s\dagger}_{\mathbf 0}|0\rangle = \pm\frac12\hat a^{s\dagger}_{\mathbf 0}|0\rangle$ and $\hat J_z\hat b^{s\dagger}_{\mathbf 0}|0\rangle = \pm\frac12\hat b^{s\dagger}_{\mathbf 0}|0\rangle$ ($+$ for $s = 1$), although the antiparticle's wave-function spin is opposite, see Theorem [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-3|§C9.7.3]] Particle and Antiparticle Created with Label s Have the Same Physical Spin and Principle [[§C9.7 Physical Spin versus Wave-Function Spin#^pr-c9-7-4|§C9.7.4]] Physical Spin Is the Eigenvalue of an Operator. *Source: Lecture 12 (Oct 12), slides 14–16 · PS eq. (3.112) with (3.136)*
+With $\eta^s = \xi^{-s}$, $\hat J_z\hat a^{s\dagger}_{\mathbf 0}|0\rangle = \pm\frac12\hat a^{s\dagger}_{\mathbf 0}|0\rangle$ and $\hat J_z\hat b^{s\dagger}_{\mathbf 0}|0\rangle = \pm\frac12\hat b^{s\dagger}_{\mathbf 0}|0\rangle$ ($+$ for $s = 1$), although the antiparticle's wave-function spin is opposite, see Theorem [[§C9.8 Physical Spin versus Wave-Function Spin#^thm-c9-8-3|§C9.8.3]] Particle and Antiparticle Created with Label s Have the Same Physical Spin and Principle [[§C9.8 Physical Spin versus Wave-Function Spin#^pr-c9-8-4|§C9.8.4]] Physical Spin Is the Eigenvalue of an Operator. *Source: Lecture 12 (Oct 12), slides 14–16 · PS eq. (3.112) with (3.136)*
 
 ^nd-thm-c9-7-3
 
@@ -8011,11 +8011,11 @@ With $\eta^s = \xi^{-s}$, $\hat J_z\hat a^{s\dagger}_{\mathbf 0}|0\rangle = \pm\
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Steps 1–3 under Theorem [[§C9.7 Physical Spin versus Wave-Function Spin#^thm-c9-7-3|§C9.7.3]] Particle and Antiparticle Created with Label s Have the Same Physical Spin; Theorem [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|§C5b.4.3]] Dirac Quanta Have Spin One-Half; [[§C9.7 Physical Spin versus Wave-Function Spin#^rem-c9-7-2|§C9.7, Remark: Why charge conjugation is consistent]], [[§C9.7 Physical Spin versus Wave-Function Spin#^rem-c9-7-3|§C9.7, Remark: No holes]].
+> - Steps 1–3 under Theorem [[§C9.8 Physical Spin versus Wave-Function Spin#^thm-c9-8-3|§C9.8.3]] Particle and Antiparticle Created with Label s Have the Same Physical Spin; Theorem [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|§C5b.4.3]] Dirac Quanta Have Spin One-Half; [[§C9.8 Physical Spin versus Wave-Function Spin#^rem-c9-8-2|§C9.8, Remark: Why charge conjugation is consistent]], [[§C9.8 Physical Spin versus Wave-Function Spin#^rem-c9-8-3|§C9.8, Remark: No holes]].
 
 ### [A] Time reversal must be antilinear ★★
 
-If $U(\mathcal T)$ commutes with $\hat H$ and $U(\mathcal T)\hat\psi(t, \mathbf x)U(\mathcal T)^{-1} = M\hat\psi(-t, \mathbf x)$, then $U(\mathcal T)$ is not linear; it conjugates numbers, $U(\mathcal T)cU(\mathcal T)^{-1} = c^{\ast}$, so $U(\mathcal T)e^{-i\hat Ht}U(\mathcal T)^{-1} = e^{i\hat Ht}$, see Theorem [[§C9.8 Time Reversal#^thm-c9-8-1|§C9.8.1]] Time Reversal Must Be Antilinear. *Source: Lecture 12 (Oct 12), slide 21 · PS §3.6, p. 67, eq. (3.133)*
+If $U(\mathcal T)$ commutes with $\hat H$ and $U(\mathcal T)\hat\psi(t, \mathbf x)U(\mathcal T)^{-1} = M\hat\psi(-t, \mathbf x)$, then $U(\mathcal T)$ is not linear; it conjugates numbers, $U(\mathcal T)cU(\mathcal T)^{-1} = c^{\ast}$, so $U(\mathcal T)e^{-i\hat Ht}U(\mathcal T)^{-1} = e^{i\hat Ht}$, see Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-1|§C9.9.1]] Time Reversal Must Be Antilinear. *Source: Lecture 12 (Oct 12), slide 21 · PS §3.6, p. 67, eq. (3.133)*
 
 ^nd-thm-c9-8-1
 
@@ -8027,11 +8027,11 @@ If $U(\mathcal T)$ commutes with $\hat H$ and $U(\mathcal T)\hat\psi(t, \mathbf 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K11.
-> - Steps 1–4 under Theorem [[§C9.8 Time Reversal#^thm-c9-8-1|§C9.8.1]] Time Reversal Must Be Antilinear; Definition [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-19-3|§CB.19.3]] Antilinear Operator; [[§C9.8 Time Reversal#^cau-c9-8-1|§C9.8, Caution: This goes against everything said so far]].
+> - Steps 1–4 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-1|§C9.9.1]] Time Reversal Must Be Antilinear; Definition [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-19-3|§CB.19.3]] Antilinear Operator; [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^cau-c9-9-1|§C9.9, Caution: This goes against everything said so far]].
 
 ### [B] Time reversal is antiunitary; it conjugates every number ★
 
-If time reversal is a symmetry, $U(\mathcal T)$ is antiunitary, $\langle U\Psi_1, U\Psi_2\rangle = \langle\Psi_1, \Psi_2\rangle^{\ast}$; on operator expressions it conjugates every c-number coefficient, keeps operator order and preserves adjoints, see Theorem [[§C9.8 Time Reversal#^thm-c9-8-2|§C9.8.2]] Time Reversal Is Antiunitary and Theorem [[§C9.8 Time Reversal#^thm-c9-8-3|§C9.8.3]] Time Reversal Conjugates Every Number in the Field. *Source: PS §3.6, p. 67 · Lecture 12 (Oct 12), slide 21 ("Examples")*
+If time reversal is a symmetry, $U(\mathcal T)$ is antiunitary, $\langle U\Psi_1, U\Psi_2\rangle = \langle\Psi_1, \Psi_2\rangle^{\ast}$; on operator expressions it conjugates every c-number coefficient, keeps operator order and preserves adjoints, see Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|§C9.9.2]] Time Reversal Is Antiunitary and Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-3|§C9.9.3]] Time Reversal Conjugates Every Number in the Field. *Source: PS §3.6, p. 67 · Lecture 12 (Oct 12), slide 21 ("Examples")*
 
 ^nd-thm-c9-8-3
 
@@ -8042,11 +8042,11 @@ If time reversal is a symmetry, $U(\mathcal T)$ is antiunitary, $\langle U\Psi_1
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15.
-> - Steps 1–3 under Theorem [[§C9.8 Time Reversal#^thm-c9-8-2|§C9.8.2]] Time Reversal Is Antiunitary; Theorem [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-16|§CB.19.16]] Conjugation by an Antiunitary Operator; Definition [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-19-4|§CB.19.4]] Antiunitary Operator.
+> - Steps 1–3 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|§C9.9.2]] Time Reversal Is Antiunitary; Theorem [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^thm-cb-19-16|§CB.19.16]] Conjugation by an Antiunitary Operator; Definition [[§CB.19 Projective Representations, Wigner's Theorem and Antiunitary Symmetries#^def-cb-19-4|§CB.19.4]] Antiunitary Operator.
 
 ### [A] The matrix γ¹γ³ ★★ [class exercise, Lecture 12]
 
-In the chiral basis $\gamma^1\gamma^3 = \operatorname{diag}(i\sigma^2, i\sigma^2)$, real; $(\gamma^1\gamma^3)^2 = -\mathbb 1$, $(\gamma^1\gamma^3)^\dagger = \gamma^3\gamma^1 = (\gamma^1\gamma^3)^{-1}$; it commutes with $\gamma^0$, $\gamma^2$ and anticommutes with $\gamma^1$, $\gamma^3$; $(\gamma^\mu)^{\ast}\gamma^1\gamma^3 = \gamma^1\gamma^3\gamma_\mu$, see Theorem [[§C9.8 Time Reversal#^thm-c9-8-4|§C9.8.4]] The Matrix γ¹γ³. *Source: Lecture 12 (Oct 12), slides 20, 23; transcript ("We have to go and check. What about i's and all that? Yup, it turns out that just works")*
+In the chiral basis $\gamma^1\gamma^3 = \operatorname{diag}(i\sigma^2, i\sigma^2)$, real; $(\gamma^1\gamma^3)^2 = -\mathbb 1$, $(\gamma^1\gamma^3)^\dagger = \gamma^3\gamma^1 = (\gamma^1\gamma^3)^{-1}$; it commutes with $\gamma^0$, $\gamma^2$ and anticommutes with $\gamma^1$, $\gamma^3$; $(\gamma^\mu)^{\ast}\gamma^1\gamma^3 = \gamma^1\gamma^3\gamma_\mu$, see Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-4|§C9.9.4]] The Matrix γ¹γ³. *Source: Lecture 12 (Oct 12), slides 20, 23; transcript ("We have to go and check. What about i's and all that? Yup, it turns out that just works")*
 
 ^nd-thm-c9-8-4
 
@@ -8058,11 +8058,11 @@ In the chiral basis $\gamma^1\gamma^3 = \operatorname{diag}(i\sigma^2, i\sigma^2
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5.
-> - Steps 1–4 under Theorem [[§C9.8 Time Reversal#^thm-c9-8-4|§C9.8.4]] The Matrix γ¹γ³.
+> - Steps 1–4 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-4|§C9.9.4]] The Matrix γ¹γ³.
 
 ### [A] Time reversal on the spinors u and v ★★ [class exercise, Lecture 12]
 
-$u^s(p)^{\ast} = \gamma^1\gamma^3u^{-s}(\tilde p)$ and $v^s(p)^{\ast} = \gamma^1\gamma^3v^{-s}(\tilde p)$ (with $\eta^s = \xi^{-s}$): flipped momentum and flipped spin, see Theorem [[§C9.8 Time Reversal#^thm-c9-8-5|§C9.8.5]] Time Reversal on the Positive-Frequency Spinors and Theorem [[§C9.8 Time Reversal#^thm-c9-8-6|§C9.8.6]] Time Reversal on the Negative-Frequency Spinors. *Source: Lecture 12 (Oct 12), slide 20 ("The first step copied from analysis of charge conjugation"; "Similarly $v^s(p)^{\ast} = \gamma^1\gamma^3v^{-s}(\tilde p)$") · PS §3.6, p. 68*
+$u^s(p)^{\ast} = \gamma^1\gamma^3u^{-s}(\tilde p)$ and $v^s(p)^{\ast} = \gamma^1\gamma^3v^{-s}(\tilde p)$ (with $\eta^s = \xi^{-s}$): flipped momentum and flipped spin, see Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-5|§C9.9.5]] Time Reversal on the Positive-Frequency Spinors and Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-6|§C9.9.6]] Time Reversal on the Negative-Frequency Spinors. *Source: Lecture 12 (Oct 12), slide 20 ("The first step copied from analysis of charge conjugation"; "Similarly $v^s(p)^{\ast} = \gamma^1\gamma^3v^{-s}(\tilde p)$") · PS §3.6, p. 68*
 
 ^nd-thm-c9-8-5
 
@@ -8074,11 +8074,11 @@ $u^s(p)^{\ast} = \gamma^1\gamma^3u^{-s}(\tilde p)$ and $v^s(p)^{\ast} = \gamma^1
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15, K5.
-> - Steps 1–3 under Theorem [[§C9.8 Time Reversal#^thm-c9-8-5|§C9.8.5]] Time Reversal on the Positive-Frequency Spinors, 1–4 under Theorem [[§C9.8 Time Reversal#^thm-c9-8-6|§C9.8.6]] Time Reversal on the Negative-Frequency Spinors; $J$ of Theorem [[§C9.5 Charge Conjugation on Oscillators and Spinors#^thm-c9-5-3|§C9.5.3]] Conjugation Reverses the Spin of a Two-Spinor.
+> - Steps 1–3 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-5|§C9.9.5]] Time Reversal on the Positive-Frequency Spinors, 1–4 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-6|§C9.9.6]] Time Reversal on the Negative-Frequency Spinors; $J$ of Theorem [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-3|§C9.6.3]] Conjugation Reverses the Spin of a Two-Spinor.
 
 ### [A] Time reversal on the Dirac field ★★
 
-$U(\mathcal T)\hat\psi(t, \mathbf x)U(\mathcal T)^{-1} = \gamma^1\gamma^3\hat\psi(-t, \mathbf x)$, i.e. $\gamma^1\gamma^3\hat\psi(x_T)$, see Theorem [[§C9.8 Time Reversal#^thm-c9-8-7|§C9.8.7]] Time Reversal on the Dirac Field. *Source: Lecture 12 (Oct 12), slide 22 · PS eq. (3.139) (with $-\gamma^1\gamma^3$)*
+$U(\mathcal T)\hat\psi(t, \mathbf x)U(\mathcal T)^{-1} = \gamma^1\gamma^3\hat\psi(-t, \mathbf x)$, i.e. $\gamma^1\gamma^3\hat\psi(x_T)$, see Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-7|§C9.9.7]] Time Reversal on the Dirac Field. *Source: Lecture 12 (Oct 12), slide 22 · PS eq. (3.139) (with $-\gamma^1\gamma^3$)*
 
 ^nd-thm-c9-8-7
 
@@ -8092,11 +8092,11 @@ $U(\mathcal T)\hat\psi(t, \mathbf x)U(\mathcal T)^{-1} = \gamma^1\gamma^3\hat\ps
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15, K9.
-> - Steps 1–6 under Theorem [[§C9.8 Time Reversal#^thm-c9-8-7|§C9.8.7]] Time Reversal on the Dirac Field; [[§C9.8 Time Reversal#^cau-c9-8-2|§C9.8, Caution: Slide 22's antiparticle term]].
+> - Steps 1–6 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-7|§C9.9.7]] Time Reversal on the Dirac Field; [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^cau-c9-9-2|§C9.9, Caution: Slide 22's antiparticle term]].
 
 ### [B] Time reversal on ψ̄ and on a general bilinear ★
 
-$U(\mathcal T)\hat{\bar\psi}(t, \mathbf x)U(\mathcal T)^{-1} = \hat{\bar\psi}(-t, \mathbf x)\gamma^3\gamma^1$ and $U(\mathcal T)\hat{\bar\psi}\Gamma\hat\psi(x)U(\mathcal T)^{-1} = \hat{\bar\psi}(x_T)\gamma^3\gamma^1\Gamma^{\ast}\gamma^1\gamma^3\hat\psi(x_T)$, see Theorem [[§C9.8 Time Reversal#^thm-c9-8-8|§C9.8.8]] Time Reversal on the Dirac Conjugate Field and Theorem [[§C9.8 Time Reversal#^thm-c9-8-10|§C9.8.10]] Time Reversal on a General Bilinear. *Source: Lecture 12 (Oct 12), slide 22 ("adjoint and then right multiplication by $\gamma^0$") · PS eq. (3.140), p. 69*
+$U(\mathcal T)\hat{\bar\psi}(t, \mathbf x)U(\mathcal T)^{-1} = \hat{\bar\psi}(-t, \mathbf x)\gamma^3\gamma^1$ and $U(\mathcal T)\hat{\bar\psi}\Gamma\hat\psi(x)U(\mathcal T)^{-1} = \hat{\bar\psi}(x_T)\gamma^3\gamma^1\Gamma^{\ast}\gamma^1\gamma^3\hat\psi(x_T)$, see Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-8|§C9.9.8]] Time Reversal on the Dirac Conjugate Field and Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-2|§C9.10.2]] Time Reversal on a General Bilinear. *Source: Lecture 12 (Oct 12), slide 22 ("adjoint and then right multiplication by $\gamma^0$") · PS eq. (3.140), p. 69*
 
 ^nd-thm-c9-8-10
 
@@ -8107,11 +8107,11 @@ $U(\mathcal T)\hat{\bar\psi}(t, \mathbf x)U(\mathcal T)^{-1} = \hat{\bar\psi}(-t
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7, K15.
-> - Steps 1–2 under Theorem [[§C9.8 Time Reversal#^thm-c9-8-8|§C9.8.8]] Time Reversal on the Dirac Conjugate Field, 1–3 under Theorem [[§C9.8 Time Reversal#^thm-c9-8-10|§C9.8.10]] Time Reversal on a General Bilinear.
+> - Steps 1–2 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-8|§C9.9.8]] Time Reversal on the Dirac Conjugate Field, 1–3 under Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-2|§C9.10.2]] Time Reversal on a General Bilinear.
 
 ### [PS] Pseudoscalar and vector under time reversal ★★
 
-$\mathsf P \to -\mathsf P(x_T)$ and $\mathsf V^\mu \to \mathcal P^\mu{}_\nu\mathsf V^\nu(x_T)$ under $U(\mathcal T)$, see Theorem [[§C9.8 Time Reversal#^thm-c9-8-12|§C9.8.12]] The Pseudoscalar Bilinear Changes Sign under Time Reversal and Theorem [[§C9.8 Time Reversal#^thm-c9-8-9|§C9.8.9]] The Vector Current under Time Reversal. *Source: Lecture 12 (Oct 12), slide 23 ($\mathsf V^\mu$) · Problem Set 7, Problem 2(c) · PS eq. (3.142)*
+$\mathsf P \to -\mathsf P(x_T)$ and $\mathsf V^\mu \to \mathcal P^\mu{}_\nu\mathsf V^\nu(x_T)$ under $U(\mathcal T)$, see Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-4|§C9.10.4]] The Pseudoscalar Bilinear Changes Sign under Time Reversal and Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-1|§C9.10.1]] The Vector Current under Time Reversal. *Source: Lecture 12 (Oct 12), slide 23 ($\mathsf V^\mu$) · Problem Set 7, Problem 2(c) · PS eq. (3.142)*
 
 ^nd-thm-c9-8-9
 
@@ -8119,7 +8119,7 @@ $\mathsf P \to -\mathsf P(x_T)$ and $\mathsf V^\mu \to \mathcal P^\mu{}_\nu\math
 
 ### [B] Scalar, axial vector and tensor under time reversal ★
 
-$\mathsf S \to +\mathsf S(x_T)$, $\mathsf A^\mu \to +\mathcal P^\mu{}_\nu\mathsf A^\nu(x_T)$, $\mathsf T^{\mu\nu} \to -\mathcal P^\mu{}_\rho\mathcal P^\nu{}_\sigma\mathsf T^{\rho\sigma}(x_T)$, see Theorem [[§C9.8 Time Reversal#^thm-c9-8-11|§C9.8.11]] The Scalar Bilinear Is Time-Reversal Invariant, Theorem [[§C9.8 Time Reversal#^thm-c9-8-13|§C9.8.13]] The Axial Vector under Time Reversal, Theorem [[§C9.8 Time Reversal#^thm-c9-8-14|§C9.8.14]] The Tensor Bilinear under Time Reversal. *Source: the user's notes Ch. 12 ("the rest", filled in) · PS table p. 71 · Yu (9.221)–(9.225)*
+$\mathsf S \to +\mathsf S(x_T)$, $\mathsf A^\mu \to +\mathcal P^\mu{}_\nu\mathsf A^\nu(x_T)$, $\mathsf T^{\mu\nu} \to -\mathcal P^\mu{}_\rho\mathcal P^\nu{}_\sigma\mathsf T^{\rho\sigma}(x_T)$, see Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-3|§C9.10.3]] The Scalar Bilinear Is Time-Reversal Invariant, Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-5|§C9.10.5]] The Axial Vector under Time Reversal, Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-6|§C9.10.6]] The Tensor Bilinear under Time Reversal. *Source: the user's notes Ch. 12 ("the rest", filled in) · PS table p. 71 · Yu (9.221)–(9.225)*
 
 ^nd-thm-c9-8-13
 
@@ -8130,11 +8130,11 @@ $\mathsf S \to +\mathsf S(x_T)$, $\mathsf A^\mu \to +\mathcal P^\mu{}_\nu\mathsf
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7, K5.
-> - Theorem [[§C9.8 Time Reversal#^thm-c9-8-11|§C9.8.11]] The Scalar Bilinear Is Time-Reversal Invariant; steps 1–3 under Theorem [[§C9.8 Time Reversal#^thm-c9-8-13|§C9.8.13]] The Axial Vector under Time Reversal and Theorem [[§C9.8 Time Reversal#^thm-c9-8-14|§C9.8.14]] The Tensor Bilinear under Time Reversal.
+> - Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-3|§C9.10.3]] The Scalar Bilinear Is Time-Reversal Invariant; steps 1–3 under Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-5|§C9.10.5]] The Axial Vector under Time Reversal and Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-6|§C9.10.6]] The Tensor Bilinear under Time Reversal.
 
 ### [B] The free Dirac Lagrangian is T invariant ★
 
-$U(\mathcal T)\hat{\mathcal L}(t, \mathbf x)U(\mathcal T)^{-1} = \hat{\mathcal L}(-t, \mathbf x)$ and the action is invariant, see Theorem [[§C9.8 Time Reversal#^thm-c9-8-15|§C9.8.15]] The Free Dirac Lagrangian Is Time-Reversal Invariant. *Source: PS §3.6, p. 71*
+$U(\mathcal T)\hat{\mathcal L}(t, \mathbf x)U(\mathcal T)^{-1} = \hat{\mathcal L}(-t, \mathbf x)$ and the action is invariant, see Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-7|§C9.10.7]] The Free Dirac Lagrangian Is Time-Reversal Invariant. *Source: PS §3.6, p. 71*
 
 ^nd-thm-c9-8-15
 
@@ -8145,11 +8145,11 @@ $U(\mathcal T)\hat{\mathcal L}(t, \mathbf x)U(\mathcal T)^{-1} = \hat{\mathcal L
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7, K2.
-> - Steps 1–4 under Theorem [[§C9.8 Time Reversal#^thm-c9-8-15|§C9.8.15]] The Free Dirac Lagrangian Is Time-Reversal Invariant.
+> - Steps 1–4 under Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-7|§C9.10.7]] The Free Dirac Lagrangian Is Time-Reversal Invariant.
 
 ### [B] Time reversal twice is −1 on fermions ★
 
-$U(\mathcal T)^2\hat a^s_{\mathbf p}U(\mathcal T)^{-2} = -\hat a^s_{\mathbf p}$ (likewise $\hat b$), so $U(\mathcal T)^2 = (-1)^{\hat N_a + \hat N_b}$; on the complex scalar $U(\mathcal T)^2 = \mathbb 1$, see Theorem [[§C9.8 Time Reversal#^thm-c9-8-16|§C9.8.16]] Time Reversal Twice Is −1 on Fermions and [[§C9.10 C, T and CPT for the Complex Scalar Field#^rem-c9-10-1|§C9.10, Remark: Time reversal twice is +1 on the scalar field]]. *Source: PS §3.6, p. 68 ("two successive spin flips return a spin to $(-1)$ times the original state")*
+$U(\mathcal T)^2\hat a^s_{\mathbf p}U(\mathcal T)^{-2} = -\hat a^s_{\mathbf p}$ (likewise $\hat b$), so $U(\mathcal T)^2 = (-1)^{\hat N_a + \hat N_b}$; on the complex scalar $U(\mathcal T)^2 = \mathbb 1$, see Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|§C9.9.9]] Time Reversal Twice Is −1 on Fermions and [[§C9.12 C, T and CPT for the Complex Scalar Field#^rem-c9-12-1|§C9.12, Remark: Time reversal twice is +1 on the scalar field]]. *Source: PS §3.6, p. 68 ("two successive spin flips return a spin to $(-1)$ times the original state")*
 
 ^nd-thm-c9-8-16
 
@@ -8161,11 +8161,11 @@ $U(\mathcal T)^2\hat a^s_{\mathbf p}U(\mathcal T)^{-2} = -\hat a^s_{\mathbf p}$ 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15.
-> - Steps 1–3 under Theorem [[§C9.8 Time Reversal#^thm-c9-8-16|§C9.8.16]] Time Reversal Twice Is −1 on Fermions; Kramers degeneracy (★, beyond the course): [[§C9.8 Time Reversal#^rem-c9-8-4|§C9.8, ★ Remark: Kramers degeneracy]].
+> - Steps 1–3 under Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|§C9.9.9]] Time Reversal Twice Is −1 on Fermions; Kramers degeneracy (★, beyond the course): [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^rem-c9-9-3|§C9.9, ★ Remark: Kramers degeneracy]].
 
 ### [B] The three matrices multiply to γ⁵ ★
 
-$\gamma^0(-i\gamma^2)(\gamma^1\gamma^3) = \gamma^5$ and $\gamma^1\gamma^3\gamma^0(-i\gamma^2) = \gamma^5$; in any order the product is $\pm\gamma^5$, see Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-1|§C9.9.1]] The Three Matrices Multiply to γ⁵. *Source: Lecture 12 (Oct 12), transcript ("if you multiply them together, you get gamma five")*
+$\gamma^0(-i\gamma^2)(\gamma^1\gamma^3) = \gamma^5$ and $\gamma^1\gamma^3\gamma^0(-i\gamma^2) = \gamma^5$; in any order the product is $\pm\gamma^5$, see Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-1|§C9.11.1]] The Three Matrices Multiply to γ⁵. *Source: Lecture 12 (Oct 12), transcript ("if you multiply them together, you get gamma five")*
 
 ^nd-thm-c9-9-1
 
@@ -8176,11 +8176,11 @@ $\gamma^0(-i\gamma^2)(\gamma^1\gamma^3) = \gamma^5$ and $\gamma^1\gamma^3\gamma^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5.
-> - Steps 1–3 under Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-1|§C9.9.1]] The Three Matrices Multiply to γ⁵; [[§C9.9 CPT and the CPT Theorem#^rem-c9-9-1|§C9.9, Remark: Each γ once]].
+> - Steps 1–3 under Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-1|§C9.11.1]] The Three Matrices Multiply to γ⁵; [[§C9.11 CPT and the CPT Theorem#^rem-c9-11-1|§C9.11, Remark: Each γ once]].
 
 ### [B] Θ is antiunitary ★
 
-$\Theta$ is antiunitary with $\Theta^{-1} = U(\mathcal T)^{-1}U(\mathcal P)^{-1}U(\mathcal C)^{-1}$ and $\Theta c\Theta^{-1} = c^{\ast}$, see Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-2|§C9.9.2]] Θ Is Antiunitary. *Source: the user's notes Ch. 12 · Yu (9.320)–(9.322)*
+$\Theta$ is antiunitary with $\Theta^{-1} = U(\mathcal T)^{-1}U(\mathcal P)^{-1}U(\mathcal C)^{-1}$ and $\Theta c\Theta^{-1} = c^{\ast}$, see Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-2|§C9.11.2]] Θ Is Antiunitary. *Source: the user's notes Ch. 12 · Yu (9.320)–(9.322)*
 
 ^nd-thm-c9-9-2
 
@@ -8190,11 +8190,11 @@ $\Theta$ is antiunitary with $\Theta^{-1} = U(\mathcal T)^{-1}U(\mathcal P)^{-1}
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15.
-> - Steps 1–3 under Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-2|§C9.9.2]] Θ Is Antiunitary.
+> - Steps 1–3 under Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-2|§C9.11.2]] Θ Is Antiunitary.
 
 ### [PS] CPT on the Dirac field ★★
 
-$\Theta\hat\psi(x)\Theta^{-1} = \eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$: multiplication by $\gamma^5$, a star and $x \to -x$, see Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-3|§C9.9.3]] CPT on the Dirac Field. *Source: Lecture 12 (Oct 12), transcript · Problem Set 7, Problem 3*
+$\Theta\hat\psi(x)\Theta^{-1} = \eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$: multiplication by $\gamma^5$, a star and $x \to -x$, see Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-3|§C9.11.3]] CPT on the Dirac Field. *Source: Lecture 12 (Oct 12), transcript · Problem Set 7, Problem 3*
 
 ^nd-thm-c9-9-3
 
@@ -8202,7 +8202,7 @@ $\Theta\hat\psi(x)\Theta^{-1} = \eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$: 
 
 ### [A] CPT in another order ★ [class exercise, Lecture 12]
 
-$\Theta' \equiv U(\mathcal T)U(\mathcal P)U(\mathcal C)$ (first $\mathcal C$) gives $\Theta'\hat\psi(x)\Theta'^{-1} = -\eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$, the same up to a sign, see Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-4|§C9.9.4]] CPT in Another Order. *Source: Lecture 12 (Oct 12), slide 24 ("first T, then P, then C — although in fact any order will do"; stated, not shown) · the user's notes Ch. 12*
+$\Theta' \equiv U(\mathcal T)U(\mathcal P)U(\mathcal C)$ (first $\mathcal C$) gives $\Theta'\hat\psi(x)\Theta'^{-1} = -\eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$, the same up to a sign, see Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-4|§C9.11.4]] CPT in Another Order. *Source: Lecture 12 (Oct 12), slide 24 ("first T, then P, then C — although in fact any order will do"; stated, not shown) · the user's notes Ch. 12*
 
 ^nd-thm-c9-9-4
 
@@ -8214,11 +8214,11 @@ $\Theta' \equiv U(\mathcal T)U(\mathcal P)U(\mathcal C)$ (first $\mathcal C$) gi
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15, K5.
-> - Steps 1–5 under Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-4|§C9.9.4]] CPT in Another Order; [[§C9.9 CPT and the CPT Theorem#^cau-c9-9-1|§C9.9, Caution: The transposed adjoint in CPT]].
+> - Steps 1–5 under Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-4|§C9.11.4]] CPT in Another Order; [[§C9.11 CPT and the CPT Theorem#^cau-c9-11-1|§C9.11, Caution: The transposed adjoint in CPT]].
 
 ### [B] The bilinears under C, P, T and CPT ★
 
-One table: $C$ at $x$, $P$ at $\tilde x$, $T$ at $x_T$, $CPT$ at $-x$; under $\Theta$ a bilinear with $n$ Lorentz indices is multiplied by $(-1)^n$, a derivative counting as an index, see Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|§C9.9.5]] The Bilinears under C, P, T and CPT. *Source: PS §3.6, table on p. 71 · Problem Set 7, Problem 2 (parts) · the user's notes Ch. 12*
+One table: $C$ at $x$, $P$ at $\tilde x$, $T$ at $x_T$, $CPT$ at $-x$; under $\Theta$ a bilinear with $n$ Lorentz indices is multiplied by $(-1)^n$, a derivative counting as an index, see Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|§C9.11.5]] The Bilinears under C, P, T and CPT. *Source: PS §3.6, table on p. 71 · Problem Set 7, Problem 2 (parts) · the user's notes Ch. 12*
 
 ^nd-thm-c9-9-5
 
@@ -8230,11 +8230,11 @@ One table: $C$ at $x$, $P$ at $\tilde x$, $T$ at $x_T$, $CPT$ at $-x$; under $\T
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7, K15.
-> - Steps 1–5 under Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|§C9.9.5]] The Bilinears under C, P, T and CPT; register row "Bilinears under C, P, T, CPT".
+> - Steps 1–5 under Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|§C9.11.5]] The Bilinears under C, P, T and CPT; register row "Bilinears under C, P, T, CPT".
 
 ### [A] The axial vector under CPT ★★
 
-$\mathsf A^\mu(t, \mathbf x) \to \mathsf A_\mu(-t, \mathbf x) \to -\mathsf A^\mu(-t, -\mathbf x) \to -\mathsf A^\mu(-t, -\mathbf x)$, so $\Theta\mathsf A^\mu(x)\Theta^{-1} = -\mathsf A^\mu(-x)$; vector indices always give a sign, see Example [[§C9.9 CPT and the CPT Theorem#^ex-c9-9-1|§C9.9.1]] The Axial Vector under CPT. *Source: Lecture 12 (Oct 12), slide 25*
+$\mathsf A^\mu(t, \mathbf x) \to \mathsf A_\mu(-t, \mathbf x) \to -\mathsf A^\mu(-t, -\mathbf x) \to -\mathsf A^\mu(-t, -\mathbf x)$, so $\Theta\mathsf A^\mu(x)\Theta^{-1} = -\mathsf A^\mu(-x)$; vector indices always give a sign, see Example [[§C9.11 CPT and the CPT Theorem#^ex-c9-11-1|§C9.11.1]] The Axial Vector under CPT. *Source: Lecture 12 (Oct 12), slide 25*
 
 ^nd-ex-c9-9-1
 
@@ -8246,11 +8246,11 @@ $\mathsf A^\mu(t, \mathbf x) \to \mathsf A_\mu(-t, \mathbf x) \to -\mathsf A^\mu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15, K2.
-> - The example's computation; Theorem [[§C9.8 Time Reversal#^thm-c9-8-13|§C9.8.13]] The Axial Vector under Time Reversal, Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-4|§C9.4.4]] The Sixteen Bilinears under Parity, Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-9|§C9.6.9]] The Axial Vector Is Charge-Conjugation Invariant.
+> - The example's computation; Theorem [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-5|§C9.10.5]] The Axial Vector under Time Reversal, Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-4|§C9.4.4]] The Sixteen Bilinears under Parity, Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-9|§C9.7.9]] The Axial Vector Is Charge-Conjugation Invariant.
 
 ### [A] The CPT theorem and the idea of proof ★★
 
-Every local, Lorentz-invariant QFT (finitely many fields and derivatives) with a Hermitian Lagrangian has $\Theta\hat{\mathcal L}(x)\Theta^{-1} = \hat{\mathcal L}(-x)$ and an invariant action; idea: $\Theta$ reverses the whole four-vector and gives $(-1)^n$ per bilinear with $n$ indices, so contracted terms are invariant, see Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-6|§C9.9.6]] The CPT Theorem. *Source: Lecture 12 (Oct 12), slides 24–25 ("Idea of proof: invariance under 4-vector inversion $x \to -x$"; "Full proof of CPT theorem: consider all possible terms") · PS §3.6, p. 71*
+Every local, Lorentz-invariant QFT (finitely many fields and derivatives) with a Hermitian Lagrangian has $\Theta\hat{\mathcal L}(x)\Theta^{-1} = \hat{\mathcal L}(-x)$ and an invariant action; idea: $\Theta$ reverses the whole four-vector and gives $(-1)^n$ per bilinear with $n$ indices, so contracted terms are invariant, see Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-6|§C9.11.6]] The CPT Theorem. *Source: Lecture 12 (Oct 12), slides 24–25 ("Idea of proof: invariance under 4-vector inversion $x \to -x$"; "Full proof of CPT theorem: consider all possible terms") · PS §3.6, p. 71*
 
 ^nd-thm-c9-9-6
 
@@ -8263,11 +8263,11 @@ Every local, Lorentz-invariant QFT (finitely many fields and derivatives) with a
 
 > [!tip]- Hints: route in the notes
 > - Technique: K14 (Lorentz-invariance argument).
-> - Idea-of-proof steps 1–5 under Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-6|§C9.9.6]] The CPT Theorem; [[§C9.9 CPT and the CPT Theorem#^cau-c9-9-2|§C9.9, Caution: "Tensor = gravity is not"]]; [[§C9.9 CPT and the CPT Theorem#^rem-c9-9-2|§C9.9, Remark: Consequences of the CPT theorem, and the status of the discrete symmetries]]. The ★ derivation ($x \to -x$ as a complex Lorentz transformation) is beyond the lecture.
+> - Idea-of-proof steps 1–5 under Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-6|§C9.11.6]] The CPT Theorem; [[§C9.11 CPT and the CPT Theorem#^cau-c9-11-2|§C9.11, Caution: "Tensor = gravity is not"]]; [[§C9.11 CPT and the CPT Theorem#^rem-c9-11-2|§C9.11, Remark: Consequences of the CPT theorem, and the status of the discrete symmetries]]. The ★ derivation ($x \to -x$ as a complex Lorentz transformation) is beyond the lecture.
 
 ### [PS] CPT invariance of a Hermitian local Lorentz scalar (qualitative) ★
 
-Any Hermitian, local, Lorentz-scalar operator built from a Dirac field, a complex scalar and their conjugates satisfies $\Theta\hat O(x)\Theta^{-1} = \hat O(-x)$, see Example [[§C9.9 CPT and the CPT Theorem#^ex-c9-9-2|§C9.9.2]] Why a Hermitian, Local Lorentz Scalar Is CPT Invariant (a Qualitative Argument). *Source: Problem Set 7, Problem 4(c)*
+Any Hermitian, local, Lorentz-scalar operator built from a Dirac field, a complex scalar and their conjugates satisfies $\Theta\hat O(x)\Theta^{-1} = \hat O(-x)$, see Example [[§C9.11 CPT and the CPT Theorem#^ex-c9-11-2|§C9.11.2]] Why a Hermitian, Local Lorentz Scalar Is CPT Invariant (a Qualitative Argument). *Source: Problem Set 7, Problem 4(c)*
 
 ^nd-ex-c9-9-2
 
@@ -8275,7 +8275,7 @@ Any Hermitian, local, Lorentz-scalar operator built from a Dirac field, a comple
 
 ### [PS] C and T on the complex scalar field ★
 
-$U(\mathcal C)\hat\phi(x)U(\mathcal C)^{-1} = \hat\phi^\dagger(x)$ from $\hat a \leftrightarrow \hat b$; $U(\mathcal T)\hat\phi(t, \mathbf x)U(\mathcal T)^{-1} = \hat\phi(-t, \mathbf x)$ from $\hat a_{\mathbf p} \to \hat a_{-\mathbf p}$ with $U(\mathcal T)$ antiunitary, see Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-1|§C9.10.1]] Charge Conjugation on the Complex Scalar Field and Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-2|§C9.10.2]] Time Reversal on the Complex Scalar Field. *Source: Problem Set 7, Problem 4(a) (PS Problem 3.7)*
+$U(\mathcal C)\hat\phi(x)U(\mathcal C)^{-1} = \hat\phi^\dagger(x)$ from $\hat a \leftrightarrow \hat b$; $U(\mathcal T)\hat\phi(t, \mathbf x)U(\mathcal T)^{-1} = \hat\phi(-t, \mathbf x)$ from $\hat a_{\mathbf p} \to \hat a_{-\mathbf p}$ with $U(\mathcal T)$ antiunitary, see Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-1|§C9.12.1]] Charge Conjugation on the Complex Scalar Field and Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-2|§C9.12.2]] Time Reversal on the Complex Scalar Field. *Source: Problem Set 7, Problem 4(a) (PS Problem 3.7)*
 
 ^nd-thm-c9-10-1
 
@@ -8283,7 +8283,7 @@ $U(\mathcal C)\hat\phi(x)U(\mathcal C)^{-1} = \hat\phi^\dagger(x)$ from $\hat a 
 
 ### [PS] The U(1) current of the complex scalar under P, C and T ★
 
-$\hat j^\mu \to +\mathcal P^\mu{}_\nu\hat j^\nu(\tilde x)$ under $P$, $-\hat j^\mu(x)$ under $C$, $+\mathcal P^\mu{}_\nu\hat j^\nu(x_T)$ under $T$, see Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-4|§C9.10.4]] The U(1) Current under P, C and T. *Source: Problem Set 7, Problem 4(b)*
+$\hat j^\mu \to +\mathcal P^\mu{}_\nu\hat j^\nu(\tilde x)$ under $P$, $-\hat j^\mu(x)$ under $C$, $+\mathcal P^\mu{}_\nu\hat j^\nu(x_T)$ under $T$, see Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-4|§C9.12.4]] The U(1) Current under P, C and T. *Source: Problem Set 7, Problem 4(b)*
 
 ^nd-thm-c9-10-4
 
@@ -8291,7 +8291,7 @@ $\hat j^\mu \to +\mathcal P^\mu{}_\nu\hat j^\nu(\tilde x)$ under $P$, $-\hat j^\
 
 ### [B] C and T on the scalar's derivatives and Lagrangian; CPT on the scalar ★
 
-$U(\mathcal C)\partial^\mu\hat\phi U(\mathcal C)^{-1} = \partial^\mu\hat\phi^\dagger$, $U(\mathcal T)\partial^\mu\hat\phi(x)U(\mathcal T)^{-1} = -\mathcal P^\mu{}_\nu(\partial^\nu\hat\phi)(x_T)$; the free complex Lagrangian is $C$ and $T$ invariant; $\Theta\hat\phi(x)\Theta^{-1} = \hat\phi^\dagger(-x)$ and each derivative index gives $-1$, see Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-3|§C9.10.3]] Charge Conjugation and Time Reversal on the Derivatives, Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-5|§C9.10.5]] The Free Complex Scalar Lagrangian Is C and T Invariant, Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-6|§C9.10.6]] CPT on the Complex Scalar Field. *Source: the user's notes (with Problem Set 7, Problem 4) · Yu §9.1*
+$U(\mathcal C)\partial^\mu\hat\phi U(\mathcal C)^{-1} = \partial^\mu\hat\phi^\dagger$, $U(\mathcal T)\partial^\mu\hat\phi(x)U(\mathcal T)^{-1} = -\mathcal P^\mu{}_\nu(\partial^\nu\hat\phi)(x_T)$; the free complex Lagrangian is $C$ and $T$ invariant; $\Theta\hat\phi(x)\Theta^{-1} = \hat\phi^\dagger(-x)$ and each derivative index gives $-1$, see Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-3|§C9.12.3]] Charge Conjugation and Time Reversal on the Derivatives, Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-5|§C9.12.5]] The Free Complex Scalar Lagrangian Is C and T Invariant, Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-6|§C9.12.6]] CPT on the Complex Scalar Field. *Source: the user's notes (with Problem Set 7, Problem 4) · Yu §9.1*
 
 ^nd-thm-c9-10-6
 
@@ -8303,7 +8303,7 @@ $U(\mathcal C)\partial^\mu\hat\phi U(\mathcal C)^{-1} = \partial^\mu\hat\phi^\da
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15, K2.
-> - Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-3|§C9.10.3]] Charge Conjugation and Time Reversal on the Derivatives, Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-5|§C9.10.5]] The Free Complex Scalar Lagrangian Is C and T Invariant, Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-6|§C9.10.6]] CPT on the Complex Scalar Field; side by side [[§C9.10 C, T and CPT for the Complex Scalar Field#^rem-c9-10-2|§C9.10, Remark: The complex scalar and the Dirac field side by side]].
+> - Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-3|§C9.12.3]] Charge Conjugation and Time Reversal on the Derivatives, Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-5|§C9.12.5]] The Free Complex Scalar Lagrangian Is C and T Invariant, Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-6|§C9.12.6]] CPT on the Complex Scalar Field; side by side [[§C9.12 C, T and CPT for the Complex Scalar Field#^rem-c9-12-2|§C9.12, Remark: The complex scalar and the Dirac field side by side]].
 
 # Equivalences
 
@@ -8848,7 +8848,7 @@ $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ (vault
 
 ### [B] The Dirac equation in three forms
 
-$(i\slashed\partial - m)\psi = 0$; in chiral blocks $i\bar\sigma^\mu\partial_\mu\psi_L = m\psi_R$, $i\sigma^\mu\partial_\mu\psi_R = m\psi_L$; in Hamiltonian form $i\partial_t\psi = H_{\text{s.p.}}\psi$, see Theorem [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-10|§C5a.7.10]] The Dirac Equation in Two-Component Form and Theorem [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|§C5a.8.2]] The Hamiltonian Density of the Dirac Field.
+$(i\slashed\partial - m)\psi = 0$; in chiral blocks $i\bar\sigma^\mu\partial_\mu\psi_L = m\psi_R$, $i\sigma^\mu\partial_\mu\psi_R = m\psi_L$; in Hamiltonian form $i\partial_t\psi = H_{\text{s.p.}}\psi$, see Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-2|§C5a.8.2]] The Dirac Equation in Two-Component Form and Theorem [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|§C5a.9.2]] The Hamiltonian Density of the Dirac Field.
 
 ^nd-eq-t8-2
 
@@ -8859,11 +8859,11 @@ $(i\slashed\partial - m)\psi = 0$; in chiral blocks $i\bar\sigma^\mu\partial_\mu
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5
-> - [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-10|Derivation §C5a.7.10]]; step 6 of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-2|Derivation §C5a.8.2]].
+> - [[§C5a.8 The Weyl Form and the Weyl Equations#^der-c5a-8-2|Derivation §C5a.8.2]]; step 6 of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-2|Derivation §C5a.9.2]].
 
 ### [B] Three forms of the Dirac Lagrangian
 
-$\bar\psi(i\slashed\partial - m)\psi$; the real symmetric form $\frac i2(\bar\psi\gamma^\mu\partial_\mu\psi - \partial_\mu\bar\psi\gamma^\mu\psi) - m\bar\psi\psi$; the Weyl form $i\psi_L^\dagger\bar\sigma^\mu\partial_\mu\psi_L + i\psi_R^\dagger\sigma^\mu\partial_\mu\psi_R - m(\psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L)$, see Theorem [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-7|§C5a.7.7]] The Dirac Lagrangian Is Real up to a Divergence and Theorem [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|§C5a.7.9]] Bilinears in Weyl Components.
+$\bar\psi(i\slashed\partial - m)\psi$; the real symmetric form $\frac i2(\bar\psi\gamma^\mu\partial_\mu\psi - \partial_\mu\bar\psi\gamma^\mu\psi) - m\bar\psi\psi$; the Weyl form $i\psi_L^\dagger\bar\sigma^\mu\partial_\mu\psi_L + i\psi_R^\dagger\sigma^\mu\partial_\mu\psi_R - m(\psi_L^\dagger\psi_R + \psi_R^\dagger\psi_L)$, see Theorem [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-7|§C5a.7.7]] The Dirac Lagrangian Is Real up to a Divergence and Theorem [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-1|§C5a.8.1]] Bilinears in Weyl Components.
 
 ^nd-eq-t8-3
 
@@ -8874,11 +8874,11 @@ $\bar\psi(i\slashed\partial - m)\psi$; the real symmetric form $\frac i2(\bar\ps
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - Step 6 of [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-7|Derivation §C5a.7.7]]; step 6 of [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-9|Derivation §C5a.7.9]].
+> - Step 6 of [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-7|Derivation §C5a.7.7]]; step 6 of [[§C5a.8 The Weyl Form and the Weyl Equations#^der-c5a-8-1|Derivation §C5a.8.1]].
 
 ### [B] Three routes to u(p)
 
-Boosting the rest-frame solution; checking $(\slashed p - m)u = 0$ directly with the square-root identities (also for $m = 0$); solving the two-component system for the lower half (Yu), see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|§C5a.9.9]] The Positive-Frequency Spinors u(p) and [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-9b|Derivation §C5a.9.9, second route]].
+Boosting the rest-frame solution; checking $(\slashed p - m)u = 0$ directly with the square-root identities (also for $m = 0$); solving the two-component system for the lower half (Yu), see Theorem [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-1|§C5a.11.1]] The Positive-Frequency Spinors u(p) and [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-1b|Derivation §C5a.11.1, second route]].
 
 ^nd-eq-t8-4
 
@@ -8889,11 +8889,11 @@ Boosting the rest-frame solution; checking $(\slashed p - m)u = 0$ directly with
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1, K6
-> - [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-9|Derivation §C5a.9.9]]; [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-9b|Derivation §C5a.9.9, second route]]; the third route follows [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-9b|Derivation §C5a.9.9, second route]] in [[§C5a.9 Plane-Wave Solutions|§C5a.9]] Plane-Wave Solutions.
+> - [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-1|Derivation §C5a.11.1]]; [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-1b|Derivation §C5a.11.1, second route]]; the third route follows [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-1b|Derivation §C5a.11.1, second route]] in [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost|§C5a.10]] Plane-Wave Solutions.
 
 ### [B] Three routes to ū(p)
 
-Daggering the column and multiplying by $\gamma^0$; daggering the Dirac equation; letting the bar carry the inverse boost, see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|§C5a.9.10]] The Dirac Conjugate of u(p).
+Daggering the column and multiplying by $\gamma^0$; daggering the Dirac equation; letting the bar carry the inverse boost, see Theorem [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-2|§C5a.11.2]] The Dirac Conjugate of u(p).
 
 ^nd-eq-t8-5
 
@@ -8904,11 +8904,11 @@ Daggering the column and multiplying by $\gamma^0$; daggering the Dirac equation
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7
-> - [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10|Derivation §C5a.9.10]], [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10b|Derivation §C5a.9.10, second route]], [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-10c|Derivation §C5a.9.10, third route]]; Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|§CB.18.13]] Λ½ Is Pseudo-Unitary.
+> - [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2|Derivation §C5a.11.2]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2b|Derivation §C5a.11.2, second route]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2c|Derivation §C5a.11.2, third route]]; Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|§CB.18.13]] Λ½ Is Pseudo-Unitary.
 
 ### [B] The spinor boost in three forms
 
-$e^{-i\eta S^{03}}$; $\operatorname{diag}(\cosh\frac\eta2 - \sinh\frac\eta2\sigma^3, \cosh\frac\eta2 + \sinh\frac\eta2\sigma^3)$; $\operatorname{diag}(\sqrt{p\cdot\sigma/m}, \sqrt{p\cdot\bar\sigma/m})$ for the boost from rest to $p$, see Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-5|§C5a.9.5]] The Spinor Boost along z and Theorem [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|§C5a.9.8]] The Spinor Boost from Rest to Momentum p.
+$e^{-i\eta S^{03}}$; $\operatorname{diag}(\cosh\frac\eta2 - \sinh\frac\eta2\sigma^3, \cosh\frac\eta2 + \sinh\frac\eta2\sigma^3)$; $\operatorname{diag}(\sqrt{p\cdot\sigma/m}, \sqrt{p\cdot\bar\sigma/m})$ for the boost from rest to $p$, see Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-5|§C5a.10.5]] The Spinor Boost along z and Theorem [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-8|§C5a.10.8]] The Spinor Boost from Rest to Momentum p.
 
 ^nd-eq-t8-6
 
@@ -8919,11 +8919,11 @@ $e^{-i\eta S^{03}}$; $\operatorname{diag}(\cosh\frac\eta2 - \sinh\frac\eta2\sigm
 
 > [!tip]- Hints: route in the notes
 > - Technique: K4
-> - [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-5|Derivation §C5a.9.5]]; [[§C5a.9 Plane-Wave Solutions#^der-c5a-9-8|Derivation §C5a.9.8]]; [[§C5a.9 Plane-Wave Solutions#^rem-c5a-9-4|§C5a.9, Remark: Why a square root restores the full rapidity]].
+> - [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^der-c5a-10-5|Derivation §C5a.10.5]]; [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^der-c5a-10-8|Derivation §C5a.10.8]]; [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^rem-c5a-10-4|§C5a.10, Remark: Why a square root restores the full rapidity]].
 
 ### [B] Four forms of γ⁵
 
-$\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$; in the chiral basis $\operatorname{diag}(-\mathbb 1, \mathbb 1)$; $-\frac i{24}\varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$; on the Dirac representation $\frac43(\mathbf J_-^2 - \mathbf J_+^2)$, see Definition [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|§CB.12.14]] The Matrix γ⁵, Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|§C5a.5.1]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|§C5a.11.5]] γ⁵ as a Totally Antisymmetric Product.
+$\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$; in the chiral basis $\operatorname{diag}(-\mathbb 1, \mathbb 1)$; $-\frac i{24}\varepsilon_{\kappa\lambda\mu\nu}\gamma^\kappa\gamma^\lambda\gamma^\mu\gamma^\nu$; on the Dirac representation $\frac43(\mathbf J_-^2 - \mathbf J_+^2)$, see Definition [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|§CB.12.14]] The Matrix γ⁵, Theorem [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|§C5a.5.1]] γ⁵ Is Lorentz Invariant and Separates the Weyl Halves and Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product.
 
 ^nd-eq-t8-7
 
@@ -8934,11 +8934,11 @@ $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$; in the chiral basis $\operatorna
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5, K16
-> - Steps 1–2 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-1|Derivation §C5a.5.1]]; Theorem [[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-5|§C5a.11.5]] γ⁵ as a Totally Antisymmetric Product; ε convention: [[§C5a.11 Gamma-Matrix Technology#^cau-c5a-11-1|§C5a.11, Caution: The sign of the ε trace across sources]].
+> - Steps 1–2 of [[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-1|Derivation §C5a.5.1]]; Theorem [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-5|§C5a.14.5]] γ⁵ as a Totally Antisymmetric Product; ε convention: [[§C5a.14 Gamma-Matrix Technology#^cau-c5a-14-1|§C5a.14, Caution: The sign of the ε trace across sources]].
 
 ### [B] Spin sums blockwise and by covariance
 
-$\sum_su^s\bar u^s = \slashed p + m$ computed in blocks at general $p$, or at rest ($m(\gamma^0 + 1)$) and then boosted with $\Lambda_{1/2}\slashed p\Lambda_{1/2}^{-1} = \slashed{(\Lambda p)}$, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|§C5a.10.7]] The Spin Sum over u and Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-9|§C5a.10.9]] The Spin Sums Are Covariant.
+$\sum_su^s\bar u^s = \slashed p + m$ computed in blocks at general $p$, or at rest ($m(\gamma^0 + 1)$) and then boosted with $\Lambda_{1/2}\slashed p\Lambda_{1/2}^{-1} = \slashed{(\Lambda p)}$, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|§C5a.12.7]] The Spin Sum over u and Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-9|§C5a.12.9]] The Spin Sums Are Covariant.
 
 ^nd-eq-t8-8
 
@@ -8949,7 +8949,7 @@ $\sum_su^s\bar u^s = \slashed p + m$ computed in blocks at general $p$, or at re
 
 > [!tip]- Hints: route in the notes
 > - Technique: K1, K14
-> - [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-7|Derivation §C5a.10.7]]; [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-9|Derivation §C5a.10.9]].
+> - [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-7|Derivation §C5a.12.7]]; [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-9|Derivation §C5a.12.9]].
 
 ### [B] Chirality three ways
 
@@ -8968,7 +8968,7 @@ The left-handed half of a Dirac spinor is the $\gamma^5 = -1$ eigenspace, the $(
 
 ### [C] Orthogonality of u and v two ways
 
-$u^{r\dagger}(p)v^s(\tilde p) = 0$ by the square-root identities, and as eigenvectors of the Hermitian $H_{\text{s.p.}}(\mathbf p)$ with eigenvalues $+E$ and $-E$, see Theorem [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|§C5a.10.6]] u and v Are Orthogonal at Opposite Three-Momenta.
+$u^{r\dagger}(p)v^s(\tilde p) = 0$ by the square-root identities, and as eigenvectors of the Hermitian $H_{\text{s.p.}}(\mathbf p)$ with eigenvalues $+E$ and $-E$, see Theorem [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|§C5a.12.6]] u and v Are Orthogonal at Opposite Three-Momenta.
 
 ^nd-eq-t8-10
 
@@ -8978,7 +8978,7 @@ $u^{r\dagger}(p)v^s(\tilde p) = 0$ by the square-root identities, and as eigenve
 
 > [!tip]- Hints: route in the notes
 > - Technique: K10
-> - [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-6|Derivation §C5a.10.6]]; [[§C5a.10 Normalization, Spin Sums and Helicity#^der-c5a-10-6b|Derivation §C5a.10.6, second route]].
+> - [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-6|Derivation §C5a.12.6]]; [[§C5a.12 Normalization and Spin Sums#^der-c5a-12-6b|Derivation §C5a.12.6, second route]].
 
 ### [B] Momentum form and field form of the canonical relations
 
@@ -9054,7 +9054,7 @@ PS reach anticommutators from causality (the two orderings must cancel outside t
 
 ### [B] Charge conjugation through the transposed adjoint and through the transposed ψ̄
 
-$-i\gamma^2\hat\psi^{\dagger\mathsf T} = (-i\hat{\bar\psi}\gamma^0\gamma^2)^{\mathsf T}$: the course's law and the form of Problem Set 6 and PS (3.145) are the same, see Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-3|§C9.6.3]] Charge Conjugation through the Dirac Conjugate. *Source: Lecture 12 (Oct 12), slide 10 · Problem Set 6, conventions · PS eq. (3.145)*
+$-i\gamma^2\hat\psi^{\dagger\mathsf T} = (-i\hat{\bar\psi}\gamma^0\gamma^2)^{\mathsf T}$: the course's law and the form of Problem Set 6 and PS (3.145) are the same, see Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-3|§C9.7.3]] Charge Conjugation through the Dirac Conjugate. *Source: Lecture 12 (Oct 12), slide 10 · Problem Set 6, conventions · PS eq. (3.145)*
 
 ^nd-eq-10-1
 
@@ -9066,11 +9066,11 @@ $-i\gamma^2\hat\psi^{\dagger\mathsf T} = (-i\hat{\bar\psi}\gamma^0\gamma^2)^{\ma
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7.
-> - Steps 1–3 under Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-3|§C9.6.3]] Charge Conjugation through the Dirac Conjugate, 1–3 under Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-4|§C9.6.4]] Charge Conjugation on ψ† and ψ̄; [[§C9.6 Charge Conjugation on the Field and Bilinears#^rem-c9-6-3|§C9.6, Remark: The missing γ⁰]].
+> - Steps 1–3 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-3|§C9.7.3]] Charge Conjugation through the Dirac Conjugate, 1–3 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-4|§C9.7.4]] Charge Conjugation on ψ† and ψ̄; [[§C9.7 Charge Conjugation on the Field and Bilinears#^rem-c9-7-3|§C9.7, Remark: The missing γ⁰]].
 
 ### [C] The basis-free B form and the chiral −iγ² form of C
 
-$U(\mathcal C)\hat\psi U(\mathcal C)^{-1} = B\hat\psi^{\dagger\mathsf T}$ (any Hermitian basis, condition $v = Bu^{\ast}$) reduces to $-i\gamma^2\hat\psi^{\dagger\mathsf T}$ (condition $\eta^s = \xi^{-s}$) in the chiral basis, see Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-1|§C9.6.1]] Charge Conjugation on the Dirac Field in Any Basis and Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-2|§C9.6.2]] Charge Conjugation on the Dirac Field. *Source: Lecture 12 (Oct 12), slide 9; the basis-free form written at the user's question*
+$U(\mathcal C)\hat\psi U(\mathcal C)^{-1} = B\hat\psi^{\dagger\mathsf T}$ (any Hermitian basis, condition $v = Bu^{\ast}$) reduces to $-i\gamma^2\hat\psi^{\dagger\mathsf T}$ (condition $\eta^s = \xi^{-s}$) in the chiral basis, see Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis and Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-2|§C9.7.2]] Charge Conjugation on the Dirac Field. *Source: Lecture 12 (Oct 12), slide 9; the basis-free form written at the user's question*
 
 ^nd-eq-10-2
 
@@ -9081,11 +9081,11 @@ $U(\mathcal C)\hat\psi U(\mathcal C)^{-1} = B\hat\psi^{\dagger\mathsf T}$ (any H
 
 > [!tip]- Hints: route in the notes
 > - Technique: K16.
-> - Steps 2–3 under Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-1|§C9.6.1]] Charge Conjugation on the Dirac Field in Any Basis; Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-19|§CB.18.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, part 4; Example [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-18-22|§CB.18.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.5 Charge Conjugation on Oscillators and Spinors#^cau-c9-5-4|§C9.5, Caution: −iγ² is a statement about the chiral basis]].
+> - Steps 2–3 under Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-1|§C9.7.1]] Charge Conjugation on the Dirac Field in Any Basis; Theorem [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-19|§CB.18.19]] Existence and Uniqueness of the Charge-Conjugation Matrix, and Its Square under Conjugation, part 4; Example [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^ex-cb-18-22|§CB.18.22]] The Charge-Conjugation Matrix in Three Bases, and the Transpose Form; [[§C9.6 Charge Conjugation on Oscillators and Spinors#^cau-c9-6-4|§C9.6, Caution: −iγ² is a statement about the chiral basis]].
 
 ### [B] Θ in two orders
 
-$U(\mathcal C)U(\mathcal P)U(\mathcal T)$ gives $\eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$ and $U(\mathcal T)U(\mathcal P)U(\mathcal C)$ gives $-\eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$: the same up to a phase, see Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-3|§C9.9.3]] CPT on the Dirac Field and Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-4|§C9.9.4]] CPT in Another Order. *Source: Lecture 12 (Oct 12), slide 24 ("any order will do") · Problem Set 7, Problem 3*
+$U(\mathcal C)U(\mathcal P)U(\mathcal T)$ gives $\eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$ and $U(\mathcal T)U(\mathcal P)U(\mathcal C)$ gives $-\eta_a\gamma^5\hat\psi^{\dagger\mathsf T}(-x)$: the same up to a phase, see Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-3|§C9.11.3]] CPT on the Dirac Field and Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-4|§C9.11.4]] CPT in Another Order. *Source: Lecture 12 (Oct 12), slide 24 ("any order will do") · Problem Set 7, Problem 3*
 
 ^nd-eq-10-3
 
@@ -9096,11 +9096,11 @@ $U(\mathcal C)U(\mathcal P)U(\mathcal T)$ gives $\eta_a\gamma^5\hat\psi^{\dagger
 
 > [!tip]- Hints: route in the notes
 > - Technique: K5, K15.
-> - Steps 1–4 under Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-3|§C9.9.3]] CPT on the Dirac Field; steps 1–4 under Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-4|§C9.9.4]] CPT in Another Order; Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-1|§C9.9.1]] The Three Matrices Multiply to γ⁵.
+> - Steps 1–4 under Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-3|§C9.11.3]] CPT on the Dirac Field; steps 1–4 under Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-4|§C9.11.4]] CPT in Another Order; Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-1|§C9.11.1]] The Three Matrices Multiply to γ⁵.
 
 ### [B] The laws on ψ̄ from the laws on ψ, for P, C and T
 
-$U(\mathcal P)\hat{\bar\psi}U(\mathcal P)^{-1} = \eta_a^{\ast}\hat{\bar\psi}(\tilde x)\gamma^0$, $U(\mathcal C)\hat{\bar\psi}U(\mathcal C)^{-1} = (-i\gamma^0\gamma^2\hat\psi)^{\mathsf T}$, $U(\mathcal T)\hat{\bar\psi}U(\mathcal T)^{-1} = \hat{\bar\psi}(x_T)\gamma^3\gamma^1$: each by "take the adjoint, right-multiply by $\gamma^0$", see Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-1|§C9.4.1]] Parity on the Dirac Conjugate Field, Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-4|§C9.6.4]] Charge Conjugation on ψ† and ψ̄, Theorem [[§C9.8 Time Reversal#^thm-c9-8-8|§C9.8.8]] Time Reversal on the Dirac Conjugate Field. *Source: Lecture 11 (Oct 7), slide 21 · Lecture 12 (Oct 12), slides 10, 22*
+$U(\mathcal P)\hat{\bar\psi}U(\mathcal P)^{-1} = \eta_a^{\ast}\hat{\bar\psi}(\tilde x)\gamma^0$, $U(\mathcal C)\hat{\bar\psi}U(\mathcal C)^{-1} = (-i\gamma^0\gamma^2\hat\psi)^{\mathsf T}$, $U(\mathcal T)\hat{\bar\psi}U(\mathcal T)^{-1} = \hat{\bar\psi}(x_T)\gamma^3\gamma^1$: each by "take the adjoint, right-multiply by $\gamma^0$", see Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-1|§C9.4.1]] Parity on the Dirac Conjugate Field, Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-4|§C9.7.4]] Charge Conjugation on ψ† and ψ̄, Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-8|§C9.9.8]] Time Reversal on the Dirac Conjugate Field. *Source: Lecture 11 (Oct 7), slide 21 · Lecture 12 (Oct 12), slides 10, 22*
 
 ^nd-eq-10-4
 
@@ -9111,11 +9111,11 @@ $U(\mathcal P)\hat{\bar\psi}U(\mathcal P)^{-1} = \eta_a^{\ast}\hat{\bar\psi}(\ti
 
 > [!tip]- Hints: route in the notes
 > - Technique: K7.
-> - Derivations under Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-1|§C9.4.1]] Parity on the Dirac Conjugate Field, Theorem [[§C9.6 Charge Conjugation on the Field and Bilinears#^thm-c9-6-4|§C9.6.4]] Charge Conjugation on ψ† and ψ̄, Theorem [[§C9.8 Time Reversal#^thm-c9-8-8|§C9.8.8]] Time Reversal on the Dirac Conjugate Field.
+> - Derivations under Theorem [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-1|§C9.4.1]] Parity on the Dirac Conjugate Field, Theorem [[§C9.7 Charge Conjugation on the Field and Bilinears#^thm-c9-7-4|§C9.7.4]] Charge Conjugation on ψ† and ψ̄, Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-8|§C9.9.8]] Time Reversal on the Dirac Conjugate Field.
 
 ### [B] The axial vector under CPT: step by step and from the table
 
-Slide 25's three steps and the product of the $C$, $P$, $T$ columns of the table both give $\Theta\mathsf A^\mu(x)\Theta^{-1} = -\mathsf A^\mu(-x)$, see Example [[§C9.9 CPT and the CPT Theorem#^ex-c9-9-1|§C9.9.1]] The Axial Vector under CPT and Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|§C9.9.5]] The Bilinears under C, P, T and CPT. *Source: Lecture 12 (Oct 12), slide 25*
+Slide 25's three steps and the product of the $C$, $P$, $T$ columns of the table both give $\Theta\mathsf A^\mu(x)\Theta^{-1} = -\mathsf A^\mu(-x)$, see Example [[§C9.11 CPT and the CPT Theorem#^ex-c9-11-1|§C9.11.1]] The Axial Vector under CPT and Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|§C9.11.5]] The Bilinears under C, P, T and CPT. *Source: Lecture 12 (Oct 12), slide 25*
 
 ^nd-eq-10-5
 
@@ -9126,11 +9126,11 @@ Slide 25's three steps and the product of the $C$, $P$, $T$ columns of the table
 
 > [!tip]- Hints: route in the notes
 > - Technique: K15.
-> - Example [[§C9.9 CPT and the CPT Theorem#^ex-c9-9-1|§C9.9.1]] The Axial Vector under CPT; steps 4–5 under Theorem [[§C9.9 CPT and the CPT Theorem#^thm-c9-9-5|§C9.9.5]] The Bilinears under C, P, T and CPT.
+> - Example [[§C9.11 CPT and the CPT Theorem#^ex-c9-11-1|§C9.11.1]] The Axial Vector under CPT; steps 4–5 under Theorem [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-5|§C9.11.5]] The Bilinears under C, P, T and CPT.
 
 ### [B] The complex scalar and the Dirac field side by side
 
-The discrete laws of the two fields match line by line: the same operations on modes, and the Dirac matrices $\gamma^0$, $-i\gamma^2$, $\gamma^1\gamma^3$, $\gamma^5$ come only from rewriting spinors; the phase conditions differ in sign ($\eta_a\eta_b = +1$ vs $-1$) and $U(\mathcal T)^2$ is $+1$ vs $(-1)^{\hat N_a + \hat N_b}$, see [[§C9.10 C, T and CPT for the Complex Scalar Field#^rem-c9-10-2|§C9.10, Remark: The complex scalar and the Dirac field side by side]] and [[§C9.2 Parity of the Scalar Field#^rem-c9-2-8|§C9.2, Remark: Scalar and spinor parity side by side]]. *Source: the user's notes Ch. 11–12 · Problem Set 7, Problem 4*
+The discrete laws of the two fields match line by line: the same operations on modes, and the Dirac matrices $\gamma^0$, $-i\gamma^2$, $\gamma^1\gamma^3$, $\gamma^5$ come only from rewriting spinors; the phase conditions differ in sign ($\eta_a\eta_b = +1$ vs $-1$) and $U(\mathcal T)^2$ is $+1$ vs $(-1)^{\hat N_a + \hat N_b}$, see [[§C9.12 C, T and CPT for the Complex Scalar Field#^rem-c9-12-2|§C9.12, Remark: The complex scalar and the Dirac field side by side]] and [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^rem-c9-5-5|§C9.5, Remark: Scalar and spinor parity side by side]]. *Source: the user's notes Ch. 11–12 · Problem Set 7, Problem 4*
 
 ^nd-eq-10-6
 
@@ -9140,4 +9140,4 @@ The discrete laws of the two fields match line by line: the same operations on m
 - [ ] Q4 **[why]** Why do the currents $\hat j^\mu$ and $\mathsf V^\mu$ have the same signs under all four?
 
 > [!tip]- Hints: route in the notes
-> - The two tables; Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-4|§C9.3.4]] Parity on the Negative-Frequency Spinors; Theorem [[§C9.8 Time Reversal#^thm-c9-8-16|§C9.8.16]] Time Reversal Twice Is −1 on Fermions; Theorem [[§C9.10 C, T and CPT for the Complex Scalar Field#^thm-c9-10-4|§C9.10.4]] The U(1) Current under P, C and T.
+> - The two tables; Theorem [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-4|§C9.3.4]] Parity on the Negative-Frequency Spinors; Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|§C9.9.9]] Time Reversal Twice Is −1 on Fermions; Theorem [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-4|§C9.12.4]] The U(1) Current under P, C and T.

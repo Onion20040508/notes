@@ -18,7 +18,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra]] — 
 - [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field]] — 
 - [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing]] — 
+- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum]] — 
 - [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra]] — 
+- [[§C4.9 Energy, Momentum and the Indefinite Fock Space]] — 
 - [[§C4.10 The Gupta–Bleuler Condition and Physical Photons]] — 
 - [[§C4.11 Vector-Field Propagators]] — 
 

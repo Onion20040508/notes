@@ -3,11 +3,11 @@ type: section
 subject: "[[Quantum Field Theory]]"
 level: C
 chapter: C5a
-section: C5a.8
+section: C5a.9
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C5a.7 The Dirac Equation and Its Lagrangian]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5a.9 Plane-Wave Solutions]] →
+← [[§C5a.8 The Weyl Form and the Weyl Equations]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost]] →
 
 *Sources: the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "The Dirac energy–momentum tensor is conserved, and the momentum operator", eq. (diracP)), Ch. 9 §9.4 and §9.6 (the current $\bar\psi\gamma^\mu\psi$), Ch. 3 §3.4 ("Other fields"), §3.5 (table of canonical tensors; Derivation "Belinfante: symmetrizing T with the spin current") · PHY 513 Lecture 10 (Larsen), slide 16 (the Hamiltonian density) · PHY 513, Problem Set 5, Problem 4 (as the user wrote it) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.4, pp. 50–51, eqs. (3.73)–(3.76), §3.5, p. 52, eqs. (3.84)–(3.85), p. 58, eq. (3.105) · Yu Zhao-Huan, 量子场论讲义, §1.7.3, eqs. (1.241)–(1.248), §5.3, eq. (5.94), §5.4.3, eqs. (5.219)–(5.222) · the user's pre-course notes, §5.3 · PHY 513, Problem Set 6, Problem 5 (Larsen; the user's solution).*
 
@@ -31,7 +31,7 @@ The Hamiltonian density is written with the Dirac matrices and the sixteen produ
 
 ## The canonical momentum and the Hamiltonian density
 
-> [!theorem] Theorem §C5a.8.1: Canonical Momenta of the Dirac Field
+> [!theorem] Theorem §C5a.9.1: Canonical Momenta of the Dirac Field
 > For [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], with $\psi$ and $\bar\psi$ as the independent fields, the canonical momenta ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]]) are
 >
 > $$
@@ -44,7 +44,7 @@ The Hamiltonian density is written with the Dirac matrices and the sixteen produ
 >
 > *Source: PS §3.5, p. 52, above eq. (3.84) · the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "The Dirac energy–momentum tensor …": "the canonical momentum $\pi = \partial\mathcal L/\partial(\partial_t\psi) = i\psi^\dagger$"), Ch. 3 §3.4 ("Other fields")*
 
-^thm-c5a-8-1
+^thm-c5a-9-1
 
 > [!derivation]- Derivation
 > **1. The time-derivative part of $\mathcal L$.** Split the contraction: $\bar\psi i\gamma^\nu\partial_\nu\psi = \bar\psi i\gamma^0\partial_0\psi + \bar\psi i\gamma^j\partial_j\psi$; only the first term contains $\partial_0\psi$.
@@ -58,14 +58,14 @@ The Hamiltonian density is written with the Dirac matrices and the sixteen produ
 > - ⚑ By-product: the momenta depend on the choice among Lagrangians differing by a divergence: $\mathcal L_{\rm sym}$ of Theorem §C5a.7.7 gives $\pi_\psi = \frac i2\psi^\dagger$, $\pi_{\psi^\dagger} = -\frac i2\psi$. The equal-time brackets built from either agree once the constraint is taken into account; the course uses $\pi_\psi = i\psi^\dagger$ → [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-5|★ Theorem §C5b.1.5]]; what quantization needs from the momenta: [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-1|Theorem §C5b.1.1]].
 > - Used next: the equal-time anticommutator $\{\hat\psi_a(\mathbf x), \hat\pi_{\psi,b}(\mathbf y)\} = i\delta_{ab}\delta^3(\mathbf x - \mathbf y)$, i.e. $\{\hat\psi_a, \hat\psi_b^\dagger\} = \delta_{ab}\delta^3$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]).
 
-^der-c5a-8-1
+^der-c5a-9-1
 
 *Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-1|P1, step 1]]
 
-> [!theorem] Theorem §C5a.8.2: The Hamiltonian Density of the Dirac Field
-> With $\pi_\psi = i\psi^\dagger$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]]), the Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]]) of [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] is
+> [!theorem] Theorem §C5a.9.2: The Hamiltonian Density of the Dirac Field
+> With $\pi_\psi = i\psi^\dagger$ ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]]), the Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]]) of [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] is
 >
 > $$
 > \mathcal H \equiv \pi_\psi\,\dot\psi - \mathcal L = \bar\psi\bigl(-i\gamma^j\partial_j + m\bigr)\psi = \psi^\dagger\bigl(-i\boldsymbol\alpha\cdot\nabla + \beta m\bigr)\psi, \qquad \alpha^j = \gamma^0\gamma^j,\ \beta = \gamma^0 ,
@@ -77,10 +77,10 @@ The Hamiltonian density is written with the Dirac matrices and the sixteen produ
 >
 > *Source: PS §3.5, eqs. (3.84)–(3.85) · the user's pre-course notes, §5.3 (note "First-order form: $\alpha$, $\beta$, and the positive density") · the user's PHY 513 notes, Ch. 3 §3.5 (table of canonical tensors; $T^{00} = i\psi^\dagger\partial_t\psi$)*
 
-^thm-c5a-8-2
+^thm-c5a-9-2
 
 > [!derivation]- Derivation
-> **1. Legendre transform.** By [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]] summed over both fields, $\mathcal H = \pi_\psi\dot\psi + \pi_{\bar\psi}\dot{\bar\psi} - \mathcal L = i\psi^\dagger\partial_0\psi + 0 - \mathcal L$ (Theorem §C5a.8.1).
+> **1. Legendre transform.** By [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]] summed over both fields, $\mathcal H = \pi_\psi\dot\psi + \pi_{\bar\psi}\dot{\bar\psi} - \mathcal L = i\psi^\dagger\partial_0\psi + 0 - \mathcal L$ (Theorem §C5a.9.1).
 >
 > **2. Expand $\mathcal L$ into time and space parts.** $\mathcal L = i\bar\psi\gamma^0\partial_0\psi + i\bar\psi\gamma^j\partial_j\psi - m\bar\psi\psi$, and $i\bar\psi\gamma^0\partial_0\psi = i\psi^\dagger(\gamma^0)^2\partial_0\psi = i\psi^\dagger\partial_0\psi$.
 >
@@ -92,16 +92,16 @@ The Hamiltonian density is written with the Dirac matrices and the sixteen produ
 >
 > **6. On shell.** Multiply the Dirac equation by $\gamma^0$: $i\partial_0\psi = (-i\gamma^0\gamma^j\partial_j + m\gamma^0)\psi = H_{\text{s.p.}}\psi$. Hence $\mathcal H = \psi^\dagger H_{\text{s.p.}}\psi = i\psi^\dagger\partial_t\psi$.
 >
-> **7. The spectrum of $H_{\text{s.p.}}$.** For $\psi \propto e^{i\mathbf p\cdot\mathbf x}$, $H_{\text{s.p.}} \to \boldsymbol\alpha\cdot\mathbf p + \beta m$; its square is $\mathbf p^2 + m^2$ because $\{\alpha^i, \alpha^j\} = 2\delta^{ij}$, $\{\alpha^i, \beta\} = 0$, $\beta^2 = 1$ (from the Clifford algebra: $\{\gamma^0\gamma^i, \gamma^0\gamma^j\} = -\gamma^i\gamma^j - \gamma^j\gamma^i = 2\delta^{ij}$; $\gamma^0\gamma^i\gamma^0 + \gamma^0\gamma^0\gamma^i = -\gamma^i + \gamma^i = 0$). So its eigenvalues are $\pm E_{\mathbf p}$, each twice, because $H_{\text{s.p.}}(\mathbf p)$ is traceless ($\alpha^j = \gamma^0\gamma^j$ and $\beta = \gamma^0$ are products of distinct $\gamma$'s, [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]], part 2); the same count from the plane-wave spinors is [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-2|Theorem §C5a.9.2]]. ⚑ By-product: a negative-frequency solution has negative classical energy $\int\psi^\dagger H_{\text{s.p.}}\psi < 0$; no ordering of commuting fields cures this ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]), and the cure is anticommutation ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]).
+> **7. The spectrum of $H_{\text{s.p.}}$.** For $\psi \propto e^{i\mathbf p\cdot\mathbf x}$, $H_{\text{s.p.}} \to \boldsymbol\alpha\cdot\mathbf p + \beta m$; its square is $\mathbf p^2 + m^2$ because $\{\alpha^i, \alpha^j\} = 2\delta^{ij}$, $\{\alpha^i, \beta\} = 0$, $\beta^2 = 1$ (from the Clifford algebra: $\{\gamma^0\gamma^i, \gamma^0\gamma^j\} = -\gamma^i\gamma^j - \gamma^j\gamma^i = 2\delta^{ij}$; $\gamma^0\gamma^i\gamma^0 + \gamma^0\gamma^0\gamma^i = -\gamma^i + \gamma^i = 0$). So its eigenvalues are $\pm E_{\mathbf p}$, each twice, because $H_{\text{s.p.}}(\mathbf p)$ is traceless ($\alpha^j = \gamma^0\gamma^j$ and $\beta = \gamma^0$ are products of distinct $\gamma$'s, [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]], part 2); the same count from the plane-wave spinors is [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-2|Theorem §C5a.10.2]]. ⚑ By-product: a negative-frequency solution has negative classical energy $\int\psi^\dagger H_{\text{s.p.}}\psi < 0$; no ordering of commuting fields cures this ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]), and the cure is anticommutation ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]).
 >
 > **What the derivation shows**
 > - The first-order (Hamiltonian) form $i\partial_t\psi = H_{\text{s.p.}}\psi$ is the Dirac equation multiplied by $\gamma^0$: Dirac's original equation, with the algebra of $\boldsymbol\alpha$, $\beta$ derived from the Clifford algebra rather than postulated.
-> - ⚑ By-product: $\mathcal L = 0$ on shell, so $\mathcal H = \pi\dot\psi$ there; the same fact simplifies the energy–momentum tensor ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-5|Theorem §C5a.8.5]]).
-> - Used next: $H = \int d^3x\,\mathcal H$ in mode form ([[§C5b.3 Energy, Momentum and the Zero-Point Energy|§C5b.3]]); $\mathcal H = T^{00}$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-6|Theorem §C5a.8.6]]).
+> - ⚑ By-product: $\mathcal L = 0$ on shell, so $\mathcal H = \pi\dot\psi$ there; the same fact simplifies the energy–momentum tensor ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|Theorem §C5a.9.5]]).
+> - Used next: $H = \int d^3x\,\mathcal H$ in mode form ([[§C5b.3 Energy, Momentum and the Zero-Point Energy|§C5b.3]]); $\mathcal H = T^{00}$ ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-6|Theorem §C5a.9.6]]).
 
-^der-c5a-8-2
+^der-c5a-9-2
 
-*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]]
+*Uses:* [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-1|Def. §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-2|P1, step 2]]
 
@@ -119,7 +119,7 @@ The axial current uses $\gamma^5$ and its properties:
 
 ## Currents
 
-> [!theorem] Theorem §C5a.8.3: The Vector Current
+> [!theorem] Theorem §C5a.9.3: The Vector Current
 > The global phase rotation $\psi \to e^{i\alpha}\psi$, $\bar\psi \to e^{-i\alpha}\bar\psi$ leaves the Dirac Lagrangian ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]) invariant ($\mathcal J = 0$, [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]]). Its Noether current ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]) is $j^\mu_{\rm N} = -\bar\psi\gamma^\mu\psi$; with the conventional sign,
 >
 > $$
@@ -132,7 +132,7 @@ The axial current uses $\gamma^5$ and its properties:
 >
 > *Source: PS §3.4, eqs. (3.73)–(3.74) and p. 51 (Noether currents of $\psi \to e^{i\alpha}\psi$) · the user's PHY 513 notes, Ch. 9 §9.4 ("it is the time component of the current $\bar\psi\gamma^\mu\psi$"), Ch. 9 §9.6 (paragraph "What the Gordon identity says") · Yu §5.3, eq. (5.94)*
 
-^thm-c5a-8-3
+^thm-c5a-9-3
 
 > [!derivation]- Derivation
 > The steps of [[P3 Noether's Procedure]]; two independent fields $\psi$, $\bar\psi$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], step 1).
@@ -152,51 +152,51 @@ The axial current uses $\gamma^5$ and its properties:
 > **What the derivation shows**
 > - ⚑ By-product: the classical charge is positive definite, unlike the scalar's ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]); it is Quantum Mechanics' probability density. After quantization with anticommutators, normal-ordered, it becomes particles minus antiparticles and can have either sign ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]]).
 > - ⚑ By-product: the sign of the Noether current is opposite to the conventional one, as for the complex scalar ([[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|§C1b.6, Caution: Sign and normalization of the U(1) current]]).
-> - Used next: coupled to the photon, $e\,j^\mu A_\mu$ (QFT C8, planned); its matrix elements are split by the Gordon identity ([[§C5a.11 Gamma-Matrix Technology#^thm-c5a-11-9|Theorem §C5a.11.9]]).
+> - Used next: coupled to the photon, $e\,j^\mu A_\mu$ (QFT C8, planned); its matrix elements are split by the Gordon identity ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]]).
 
-^der-c5a-8-3
+^der-c5a-9-3
 
 *Uses:* [[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-1|Theorem §C1b.6.1]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-2|Theorem §C5a.6.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-4|Theorem §C5a.6.4]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–6]], [[P1 Canonical Quantization#^p1-3|P1, step 3]]
 
-> [!theorem] Theorem §C5a.8.4: The Axial Current
+> [!theorem] Theorem §C5a.9.4: The Axial Current
 > For every solution of the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]), with $\gamma^5$ of [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]],
 >
 > $$
 > j^{\mu5} \equiv \bar\psi\gamma^\mu\gamma^5\psi, \qquad \partial_\mu j^{\mu5} = 2im\,\bar\psi\gamma^5\psi .
 > $$
 >
-> It is conserved if and only if $m = 0$ (for generic solutions); then the **chiral transformation** $\psi \to e^{i\alpha\gamma^5}\psi$ is a symmetry, and the chiral currents $j^\mu_L = \bar\psi\gamma^\mu P_L\psi = \psi_L^\dagger\bar\sigma^\mu\psi_L$ and $j^\mu_R = \bar\psi\gamma^\mu P_R\psi = \psi_R^\dagger\sigma^\mu\psi_R$ are separately conserved ($P_{L,R}$: [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]; Weyl forms: [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]).
+> It is conserved if and only if $m = 0$ (for generic solutions); then the **chiral transformation** $\psi \to e^{i\alpha\gamma^5}\psi$ is a symmetry, and the chiral currents $j^\mu_L = \bar\psi\gamma^\mu P_L\psi = \psi_L^\dagger\bar\sigma^\mu\psi_L$ and $j^\mu_R = \bar\psi\gamma^\mu P_R\psi = \psi_R^\dagger\sigma^\mu\psi_R$ are separately conserved ($P_{L,R}$: [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]; Weyl forms: [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-1|Theorem §C5a.8.1]]).
 >
 > *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, on solutions; conserved iff $m = 0$ (generic solutions).
 >
-> *Source: PS §3.4, eqs. (3.73), (3.75)–(3.76) and p. 51 (the chiral transformation) · PHY 513, Problem Set 6, Problem 5(e) (the divergence of $-j^{\mu5}$, $-2im\,\bar\psi\gamma^5\psi$, as the user wrote it: [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-8-1|Example §C5a.8.1]])*
+> *Source: PS §3.4, eqs. (3.73), (3.75)–(3.76) and p. 51 (the chiral transformation) · PHY 513, Problem Set 6, Problem 5(e) (the divergence of $-j^{\mu5}$, $-2im\,\bar\psi\gamma^5\psi$, as the user wrote it: [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-9-1|Example §C5a.9.1]])*
 
-^thm-c5a-8-4
+^thm-c5a-9-4
 
 > [!derivation]- Derivation
 > **1. Product rule.** $\partial_\mu(\bar\psi\gamma^\mu\gamma^5\psi) = (\partial_\mu\bar\psi)\gamma^\mu\gamma^5\psi + \bar\psi\gamma^\mu\gamma^5\partial_\mu\psi$ ($\gamma$'s constant).
 >
-> **2. First term.** $(\partial_\mu\bar\psi)\gamma^\mu = im\bar\psi$ (conjugate equation, as in Derivation §C5a.8.3, step 5): $im\bar\psi\gamma^5\psi$.
+> **2. First term.** $(\partial_\mu\bar\psi)\gamma^\mu = im\bar\psi$ (conjugate equation, as in Derivation §C5a.9.3, step 5): $im\bar\psi\gamma^5\psi$.
 >
 > **3. Second term.** Move $\gamma^5$ to the left: $\gamma^\mu\gamma^5 = -\gamma^5\gamma^\mu$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]), so $\bar\psi\gamma^\mu\gamma^5\partial_\mu\psi = -\bar\psi\gamma^5\gamma^\mu\partial_\mu\psi = -\bar\psi\gamma^5(-im\psi) = im\bar\psi\gamma^5\psi$.
 >
 > **4. Add.** $\partial_\mu j^{\mu5} = 2im\bar\psi\gamma^5\psi$; for $m = 0$ it vanishes.
 >
-> **5. The chiral transformation** (worked in full, as the user wrote it for Problem Set 6, Problem 5, in [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-8-1|Example §C5a.8.1]]). $\psi' = e^{i\alpha\gamma^5}\psi$. Then $\psi'^\dagger = \psi^\dagger e^{-i\alpha\gamma^5}$ ($\gamma^5$ Hermitian) and $\bar\psi' = \psi^\dagger e^{-i\alpha\gamma^5}\gamma^0 = \bar\psi e^{+i\alpha\gamma^5}$, since $\gamma^5\gamma^0 = -\gamma^0\gamma^5$ term by term in the series. Kinetic term: $\bar\psi e^{i\alpha\gamma^5}\gamma^\mu e^{i\alpha\gamma^5}\partial_\mu\psi = \bar\psi\gamma^\mu e^{-i\alpha\gamma^5}e^{i\alpha\gamma^5}\partial_\mu\psi$: invariant. Mass term: $\bar\psi e^{2i\alpha\gamma^5}\psi \ne \bar\psi\psi$: not invariant unless $m = 0$. Noether: $\Delta\psi = i\gamma^5\psi$, $j^\mu_{\rm N} = i\bar\psi\gamma^\mu(i\gamma^5\psi) = -j^{\mu5}$ (with $\mathcal J = 0$ for $m = 0$).
+> **5. The chiral transformation** (worked in full, as the user wrote it for Problem Set 6, Problem 5, in [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-9-1|Example §C5a.9.1]]). $\psi' = e^{i\alpha\gamma^5}\psi$. Then $\psi'^\dagger = \psi^\dagger e^{-i\alpha\gamma^5}$ ($\gamma^5$ Hermitian) and $\bar\psi' = \psi^\dagger e^{-i\alpha\gamma^5}\gamma^0 = \bar\psi e^{+i\alpha\gamma^5}$, since $\gamma^5\gamma^0 = -\gamma^0\gamma^5$ term by term in the series. Kinetic term: $\bar\psi e^{i\alpha\gamma^5}\gamma^\mu e^{i\alpha\gamma^5}\partial_\mu\psi = \bar\psi\gamma^\mu e^{-i\alpha\gamma^5}e^{i\alpha\gamma^5}\partial_\mu\psi$: invariant. Mass term: $\bar\psi e^{2i\alpha\gamma^5}\psi \ne \bar\psi\psi$: not invariant unless $m = 0$. Noether: $\Delta\psi = i\gamma^5\psi$, $j^\mu_{\rm N} = i\bar\psi\gamma^\mu(i\gamma^5\psi) = -j^{\mu5}$ (with $\mathcal J = 0$ for $m = 0$).
 >
-> **6. Chiral currents.** $j^\mu \pm j^{\mu5}$ over 2 are $\bar\psi\gamma^\mu P_{R,L}\psi$; their Weyl forms are [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]. For $m = 0$ both $j^\mu$ and $j^{\mu5}$ are conserved, hence each combination.
+> **6. Chiral currents.** $j^\mu \pm j^{\mu5}$ over 2 are $\bar\psi\gamma^\mu P_{R,L}\psi$; their Weyl forms are [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-1|Theorem §C5a.8.1]]. For $m = 0$ both $j^\mu$ and $j^{\mu5}$ are conserved, hence each combination.
 >
 > **What the derivation shows**
-> - The mass is the only term that breaks chiral symmetry, because it is the only term that pairs $\psi_L$ with $\psi_R$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]).
+> - The mass is the only term that breaks chiral symmetry, because it is the only term that pairs $\psi_L$ with $\psi_R$ ([[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-1|Theorem §C5a.8.1]]).
 > - ⚑ By-product: classical conservation for $m = 0$; whether it survives quantization is a separate question (it does not, in general: the axial anomaly, PS ch. 19, beyond the course).
 
-^der-c5a-8-4
+^der-c5a-9-4
 
-*Uses:* [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]
+*Uses:* [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]], [[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-1|Theorem §C5a.8.1]]
 
-> [!example] Example §C5a.8.1: Chiral Symmetry
+> [!example] Example §C5a.9.1: Chiral Symmetry
 > The **chiral transformation** $\psi \to e^{i\alpha\gamma^5}\psi$, $\alpha$ real ($\gamma^5$: [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]]), of the Dirac field of [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], with the bilinears $\mathsf V^\mu = \bar\psi\gamma^\mu\psi$, $\mathsf A^\mu = \bar\psi\gamma^\mu\gamma^5\psi$, $\mathsf P = \bar\psi\,i\gamma^5\psi$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]):
 > 1. $\bar\psi \to \bar\psi\,e^{+i\alpha\gamma^5}$, the same sign in the exponent;
 > 2. $\mathsf V^\mu \to \mathsf V^\mu$;
@@ -204,11 +204,11 @@ The axial current uses $\gamma^5$ and its properties:
 > 4. the Noether current of the massless case is $j^\mu_5 = -\bar\psi\gamma^\mu\gamma^5\psi = -\mathsf A^\mu$;
 > 5. for general $m$, on solutions, $\partial_\mu j^\mu_5 = -2im\,\bar\psi\gamma^5\psi = -2m\,\mathsf P$, zero for $m = 0$ and not identically zero for $m \neq 0$.
 >
-> $j^\mu_5$ is the Noether current with the sign of [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; the axial current of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-4|Theorem §C5a.8.4]] is $j^{\mu5} = \mathsf A^\mu = -j^\mu_5$, with $\partial_\mu j^{\mu5} = +2im\,\bar\psi\gamma^5\psi$: the same statement, the sign flipped as for the vector current ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]]). Part 5 is the broken-symmetry identity [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]] with $X = -2im\,\bar\psi\gamma^5\psi$ and $\mathcal J = 0$.
+> $j^\mu_5$ is the Noether current with the sign of [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; the axial current of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-4|Theorem §C5a.9.4]] is $j^{\mu5} = \mathsf A^\mu = -j^\mu_5$, with $\partial_\mu j^{\mu5} = +2im\,\bar\psi\gamma^5\psi$: the same statement, the sign flipped as for the vector current ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]]). Part 5 is the broken-symmetry identity [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]] with $X = -2im\,\bar\psi\gamma^5\psi$ and $\mathcal J = 0$.
 >
 > *Source: PHY 513, Problem Set 6, Problem 5(a)–(e) (statement, Larsen; solution as the user wrote it, boxed results 1–5) · PS §3.4, p. 51 (the chiral transformation and $j^{\mu5}$) · route 2 of $\delta\mathcal L$ and the cross-check with Theorem §C1b.5.5 written here*
 
-^ex-c5a-8-1
+^ex-c5a-9-1
 
 > [!derivation]- Derivation (the user's solution of Problem Set 6, Problem 5(a)–(c), and the chain-rule route)
 > Tools: $\gamma^{5\dagger} = \gamma^5$, $(\gamma^5)^2 = \mathbb 1$, $\gamma^5\gamma^\mu = -\gamma^\mu\gamma^5$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]]; the user cites Problem Set 5, Problem 5(a)–(b)).
@@ -240,10 +240,10 @@ The axial current uses $\gamma^5$ and its properties:
 > Renaming $\nu \to \mu$, the derivative terms of (b) and (c) cancel and (a) + (c) leave $\delta\mathcal L/\alpha = -2im\,\bar\psi\gamma^5\psi$, as in step 4. Both routes agree; the remainder is not a divergence (for $m \neq 0$ it contains no derivatives at all), so $\mathcal J = 0$ and $X = -2im\,\bar\psi\gamma^5\psi$ in the split of [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]].
 >
 > **What the derivation shows**
-> - In the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$, so $e^{i\alpha\gamma^5}\psi = (e^{-i\alpha}\psi_L, e^{i\alpha}\psi_R)$: opposite phases on the two Weyl halves ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]). The kinetic term keeps each half separate and is invariant; the mass term pairs $\psi_L$ with $\psi_R$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]) and picks up $e^{\pm2i\alpha}$.
+> - In the chiral basis $\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$, so $e^{i\alpha\gamma^5}\psi = (e^{-i\alpha}\psi_L, e^{i\alpha}\psi_R)$: opposite phases on the two Weyl halves ([[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]). The kinetic term keeps each half separate and is invariant; the mass term pairs $\psi_L$ with $\psi_R$ ([[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-1|Theorem §C5a.8.1]]) and picks up $e^{\pm2i\alpha}$.
 > - $\bar\psi$ transforms with $e^{+i\alpha\gamma^5}$, not with the inverse: unlike the phase $e^{i\alpha}$, the chiral transformation does not preserve the Dirac form ($e^{i\alpha\gamma^5\dagger}\gamma^0e^{i\alpha\gamma^5} = \gamma^0e^{2i\alpha\gamma^5} \neq \gamma^0$), which is why $\bar\psi\psi$ and $\bar\psi\gamma^5\psi$ rotate into each other (a rotation by $2\alpha$ in the $(\mathsf S, \mathsf P)$ plane: $\mathsf S \to \cos2\alpha\,\mathsf S + \sin2\alpha\,\mathsf P$).
 
-^der-ex-c5a-8-1
+^der-ex-c5a-9-1
 
 > [!derivation]- Derivation (the user's solution of Problem Set 6, Problem 5(d)–(e))
 > **1. Noether's theorem, as the user uses it.** $j^\mu = \sum_{i=1}^N\frac{\partial\mathcal L}{\partial(\partial_\mu\phi_i)}\Delta\phi_i - \mathcal J^\mu$, $\delta\phi_i = \alpha\Delta\phi_i$, $\delta\mathcal L = \alpha\,\partial_\mu\mathcal J^\mu$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]). One parameter, one current; the $N = 8$ fields are $\psi_a$ and $\bar\psi_a$, treated as independent ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]]).
@@ -272,10 +272,10 @@ The axial current uses $\gamma^5$ and its properties:
 >
 > **What the derivation shows**
 > - Cross-check with [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]]: the would-be current $\sum\pi^\mu\Delta\psi = j^\mu_5$ must have on-shell divergence $X = \delta\mathcal L/\alpha = -2im\,\bar\psi\gamma^5\psi$ (step 5 of the previous derivation); the direct computation of steps 5–7 gives exactly this. The mass is the rate at which axial charge is created, $dQ_5/dt = -2im\int d^3x\,\bar\psi\gamma^5\psi$ (step 7 of Derivation §C1b.5.5).
-> - Sign: the user's $j^\mu_5$ is the Noether current with the sign of Theorem §C1b.5.4, Theorem §C5a.8.4's $j^{\mu5}$ its negative; [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-4|Derivation §C5a.8.4]], steps 1–4, is the same computation for $j^{\mu5}$, with the opposite sign throughout. In real form, $\partial_\mu\mathsf A^\mu = 2m\,\mathsf P$ with $\mathsf P = \bar\psi\,i\gamma^5\psi$ real.
+> - Sign: the user's $j^\mu_5$ is the Noether current with the sign of Theorem §C1b.5.4, Theorem §C5a.9.4's $j^{\mu5}$ its negative; [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-4|Derivation §C5a.9.4]], steps 1–4, is the same computation for $j^{\mu5}$, with the opposite sign throughout. In real form, $\partial_\mu\mathsf A^\mu = 2m\,\mathsf P$ with $\mathsf P = \bar\psi\,i\gamma^5\psi$ real.
 > - Assumptions: classical fields with commuting components; $\alpha$ constant; the conservation for $m = 0$ is classical (the quantum axial anomaly, PS ch. 19, is beyond the course).
 
-^der-ex-c5a-8-1b
+^der-ex-c5a-9-1b
 
 *Uses:* [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-15|Theorem §CB.12.15]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]], [[§C1b.5 Noether's Theorem#^ex-c1b-5-2|Example §C1b.5.2]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]
 
@@ -283,7 +283,7 @@ The axial current uses $\gamma^5$ and its properties:
 
 ## Energy and momentum
 
-> [!theorem] Theorem §C5a.8.5: The Canonical Energy–Momentum Tensor of the Dirac Field
+> [!theorem] Theorem §C5a.9.5: The Canonical Energy–Momentum Tensor of the Dirac Field
 > For [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] the canonical tensor ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-2|Def. §C1b.7.2]]) is
 >
 > $$
@@ -296,7 +296,7 @@ The axial current uses $\gamma^5$ and its properties:
 >
 > *Source: PHY 513, Problem Set 5, Problem 4(a) (as the user wrote it) · the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "The Dirac energy–momentum tensor is conserved, and the momentum operator"), Ch. 3 §3.5 (table of canonical tensors)*
 
-^thm-c5a-8-5
+^thm-c5a-9-5
 
 > [!derivation]- Derivation (as the user wrote it for Problem Set 5, Problem 4(a))
 > Write $\mathcal L = \bar\psi(i\gamma^\rho\partial_\rho - m)\psi$ with the summed index renamed $\rho$, apart from the free $\mu$, $\nu$.
@@ -327,17 +327,17 @@ The axial current uses $\gamma^5$ and its properties:
 >
 > **What the derivation shows**
 > - Both equations of motion are needed, one for each field; this is the general statement [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-5|Theorem §C1b.7.5]] (off shell, $\partial_\mu T^{\mu\nu} = -\sum_a\mathrm{EL}_a\partial^\nu\phi_a$) for this $\mathcal L$, here checked directly.
-> - ⚑ By-product: $T^{\mu\nu} - T^{\nu\mu} = i\bar\psi(\gamma^\mu\partial^\nu - \gamma^\nu\partial^\mu)\psi \ne 0$; the antisymmetric part is the divergence of the spin current ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-2|Theorem §C1b.8.2]]; Theorem §C5a.8.8), and is removed in Theorem §C5a.8.9.
+> - ⚑ By-product: $T^{\mu\nu} - T^{\nu\mu} = i\bar\psi(\gamma^\mu\partial^\nu - \gamma^\nu\partial^\mu)\psi \ne 0$; the antisymmetric part is the divergence of the spin current ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-2|Theorem §C1b.8.2]]; Theorem §C5a.9.8), and is removed in Theorem §C5a.9.9.
 > - Assumption: $\psi \in C^2$ (second derivatives commute in the cancellation of step 6).
 
-^der-c5a-8-5
+^der-c5a-9-5
 
 *Uses:* [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-2|Def. §C1b.7.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-5|Theorem §C1b.7.5]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-4|P3, steps 4–5]]
 
-> [!theorem] Theorem §C5a.8.6: Energy and Momentum of the Dirac Field
-> The charges $P^\nu = \int d^3x\,T^{0\nu}$ ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]]) of the canonical tensor of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-5|Theorem §C5a.8.5]] are, with $\mathcal H$ of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]] and $\pi_\psi = i\psi^\dagger$ of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]],
+> [!theorem] Theorem §C5a.9.6: Energy and Momentum of the Dirac Field
+> The charges $P^\nu = \int d^3x\,T^{0\nu}$ ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]]) of the canonical tensor of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|Theorem §C5a.9.5]] are, with $\mathcal H$ of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|Theorem §C5a.9.2]] and $\pi_\psi = i\psi^\dagger$ of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]],
 >
 > $$
 > H = P^0 = \int d^3x\,\mathcal H = \int d^3x\,\psi^\dagger\bigl(-i\boldsymbol\alpha\cdot\nabla + \beta m\bigr)\psi \;\overset{\text{on shell}}{=}\; \int d^3x\,\psi^\dagger\,i\partial_t\psi, \qquad \mathbf P = \int d^3x\,\psi^\dagger\bigl(-i\nabla\bigr)\psi = -\int d^3x\;\pi_\psi\,\nabla\psi ,
@@ -349,14 +349,14 @@ The axial current uses $\gamma^5$ and its properties:
 >
 > *Source: PHY 513, Problem Set 5, Problem 4(b) (as the user wrote it) · the user's PHY 513 notes, Ch. 8 §8.8, eq. (diracP) · PS §3.5, eqs. (3.84), (3.105) · the index-by-index computation written out here, as for the scalar ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-7|Theorem §C1b.7.7]])*
 
-^thm-c5a-8-6
+^thm-c5a-9-6
 
 > [!derivation]- Derivation
-> **Step 1** (the coefficients of the current index). With $\mathcal L = \bar\psi(i\gamma^\rho\partial_\rho - m)\psi$, the fields $\psi$ and $\bar\psi$ independent, $\partial\mathcal L/\partial(\partial_\mu\psi) = i\bar\psi\gamma^\mu$ and $\partial\mathcal L/\partial(\partial_\mu\bar\psi) = 0$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-6|Derivation §C5a.7.6]], step 3). For $\mu = 0$: $i\bar\psi\gamma^0 = i\psi^\dagger(\gamma^0)^2 = i\psi^\dagger = \pi_\psi$, the canonical momentum ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]]); $\bar\psi$ has none.
+> **Step 1** (the coefficients of the current index). With $\mathcal L = \bar\psi(i\gamma^\rho\partial_\rho - m)\psi$, the fields $\psi$ and $\bar\psi$ independent, $\partial\mathcal L/\partial(\partial_\mu\psi) = i\bar\psi\gamma^\mu$ and $\partial\mathcal L/\partial(\partial_\mu\bar\psi) = 0$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-6|Derivation §C5a.7.6]], step 3). For $\mu = 0$: $i\bar\psi\gamma^0 = i\psi^\dagger(\gamma^0)^2 = i\psi^\dagger = \pi_\psi$, the canonical momentum ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]]); $\bar\psi$ has none.
 >
-> **Step 2** (the tensor). [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-2|Def. §C1b.7.2]], summed over both fields, the $\bar\psi$ term being zero: $T^{\mu\nu} = i\bar\psi\gamma^\mu\partial^\nu\psi - g^{\mu\nu}\mathcal L$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-5|Theorem §C5a.8.5]]). Only the row $\mu = 0$ enters the charges (Theorem §C1b.7.6).
+> **Step 2** (the tensor). [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-2|Def. §C1b.7.2]], summed over both fields, the $\bar\psi$ term being zero: $T^{\mu\nu} = i\bar\psi\gamma^\mu\partial^\nu\psi - g^{\mu\nu}\mathcal L$ ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|Theorem §C5a.9.5]]). Only the row $\mu = 0$ enters the charges (Theorem §C1b.7.6).
 >
-> **Step 3** ($T^{00}$, the energy density). Put $\mu = \nu = 0$: $\partial^0 = g^{00}\partial_0 = \partial_t$ and $g^{00} = 1$, so $T^{00} = i\bar\psi\gamma^0\partial_t\psi - \mathcal L = i\psi^\dagger\partial_t\psi - \mathcal L = \pi_\psi\dot\psi - \mathcal L$ (Step 1). This is the Legendre transform, $\mathcal H$ of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]], identically: $P^0 = \int d^3x\,\mathcal H = H$. On shell $\mathcal L = 0$ (the Dirac equation sets $(i\slashed{\partial} - m)\psi = 0$ inside $\mathcal L$), so $T^{00} = i\psi^\dagger\partial_t\psi$ there.
+> **Step 3** ($T^{00}$, the energy density). Put $\mu = \nu = 0$: $\partial^0 = g^{00}\partial_0 = \partial_t$ and $g^{00} = 1$, so $T^{00} = i\bar\psi\gamma^0\partial_t\psi - \mathcal L = i\psi^\dagger\partial_t\psi - \mathcal L = \pi_\psi\dot\psi - \mathcal L$ (Step 1). This is the Legendre transform, $\mathcal H$ of [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|Theorem §C5a.9.2]], identically: $P^0 = \int d^3x\,\mathcal H = H$. On shell $\mathcal L = 0$ (the Dirac equation sets $(i\slashed{\partial} - m)\psi = 0$ inside $\mathcal L$), so $T^{00} = i\psi^\dagger\partial_t\psi$ there.
 >
 > ⚑ By-product: the Noether charge of time translations and the Legendre-transform Hamiltonian are one function of the canonical data, as for the scalar → [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-7-1|§C1b.7, Remark: Why the 00 component is the Hamiltonian density]].
 >
@@ -368,29 +368,29 @@ The axial current uses $\gamma^5$ and its properties:
 >
 > **Step 5** (the momentum vector). $P^i = \int d^3x\,T^{0i} = \int d^3x\,\psi^\dagger(-i\partial_i)\psi$. With $\partial_i = \partial/\partial x^i$ the Cartesian components of $\nabla$, the three charges are the components of $\mathbf P = \int d^3x\,\psi^\dagger(-i\nabla)\psi = -\int d^3x\,\pi_\psi\nabla\psi$.
 >
-> ⚑ By-product: the minus sign is the metric's ($\partial^i = -\partial_i$), as for the scalar, and $\mathbf P$ has the general form $-\int d^3x\sum_a\pi_a\nabla\phi_a$ of Theorem §C1b.7.6 with the single canonical pair $(\psi, \pi_\psi)$: $\bar\psi$ contributes nothing because its momentum is zero → [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^rem-c5a-8-1|Remark: Why P is the momentum, for the Dirac field]].
+> ⚑ By-product: the minus sign is the metric's ($\partial^i = -\partial_i$), as for the scalar, and $\mathbf P$ has the general form $-\int d^3x\sum_a\pi_a\nabla\phi_a$ of Theorem §C1b.7.6 with the single canonical pair $(\psi, \pi_\psi)$: $\bar\psi$ contributes nothing because its momentum is zero → [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^rem-c5a-9-1|Remark: Why P is the momentum, for the Dirac field]].
 >
-> **Step 6** (reality). The densities are not real pointwise, but their integrals are. For $\mathbf P$: $\bigl(\psi^\dagger(-i\partial_i)\psi\bigr)^{\ast} = i(\partial_i\psi^\dagger)\psi = \psi^\dagger(-i\partial_i)\psi + i\partial_i(\psi^\dagger\psi)$ by the product rule, and the last term is a total derivative, which integrates to zero for fields falling off at infinity ([[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]). For $H$ the same holds term by term: $\beta$ and $\boldsymbol\alpha$ are Hermitian ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-2|Derivation §C5a.8.2]], step 5), so $(\psi^\dagger\beta m\psi)^{\ast} = \psi^\dagger\beta m\psi$, and the $\boldsymbol\alpha\cdot\nabla$ term changes by $i\partial_j(\psi^\dagger\alpha^j\psi)$.
+> **Step 6** (reality). The densities are not real pointwise, but their integrals are. For $\mathbf P$: $\bigl(\psi^\dagger(-i\partial_i)\psi\bigr)^{\ast} = i(\partial_i\psi^\dagger)\psi = \psi^\dagger(-i\partial_i)\psi + i\partial_i(\psi^\dagger\psi)$ by the product rule, and the last term is a total derivative, which integrates to zero for fields falling off at infinity ([[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]). For $H$ the same holds term by term: $\beta$ and $\boldsymbol\alpha$ are Hermitian ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-2|Derivation §C5a.9.2]], step 5), so $(\psi^\dagger\beta m\psi)^{\ast} = \psi^\dagger\beta m\psi$, and the $\boldsymbol\alpha\cdot\nabla$ term changes by $i\partial_j(\psi^\dagger\alpha^j\psi)$.
 >
-> **Step 7** (conservation). By Theorem §C5a.8.5 ($\partial_\mu T^{\mu\nu} = 0$ on solutions) and [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]], $dP^\nu/dt = 0$ for fields with $T^{i\nu}$ falling off faster than $1/r^2$.
+> **Step 7** (conservation). By Theorem §C5a.9.5 ($\partial_\mu T^{\mu\nu} = 0$ on solutions) and [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]], $dP^\nu/dt = 0$ for fields with $T^{i\nu}$ falling off faster than $1/r^2$.
 >
 > **Step 8** (collect). $P^0 = H$ (Step 3) and $P^i$ (Step 5) are the four charges $P^\mu = (H, \mathbf P)$.
 >
 > **What the derivation shows**
 > - $\mathbf P$ is the expectation of the one-particle momentum operator $-i\nabla$ in the "wave function" $\psi$, and $H$ that of $H_{\text{s.p.}}$: the field charges look like one-particle expectation values, the reason the Dirac sea picture works as far as it does.
-> - ⚑ By-product: classically $H$ is unbounded below (negative-frequency modes, [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]]); in mode form after quantization it is positive only with anticommutators ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]).
-> - The canonical momentum $\pi_\psi = i\psi^\dagger$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]]) is a field, conjugate to $\psi$ in the brackets; $\mathbf P$ is a number (an operator after quantization) generating translations. Problem Set 5's note makes the same distinction.
+> - ⚑ By-product: classically $H$ is unbounded below (negative-frequency modes, [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|Theorem §C5a.9.2]]); in mode form after quantization it is positive only with anticommutators ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]).
+> - The canonical momentum $\pi_\psi = i\psi^\dagger$ ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]]) is a field, conjugate to $\psi$ in the brackets; $\mathbf P$ is a number (an operator after quantization) generating translations. Problem Set 5's note makes the same distinction.
 > - Assumptions: the field equation (for $T^{00} = i\psi^\dagger\partial_t\psi$ and for conservation only; the expressions for $H$ and $\mathbf P$ hold for any configuration) and fall-off at spatial infinity (reality, conservation).
-> - Used next: $\hat{\mathbf P}$ generates spatial translations ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-7|Theorem §C5a.8.7]]); the quantized field's $\hat H$ and $\hat{\mathbf P}$ in modes ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]]).
+> - Used next: $\hat{\mathbf P}$ generates spatial translations ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-7|Theorem §C5a.9.7]]); the quantized field's $\hat H$ and $\hat{\mathbf P}$ in modes ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]]).
 
-^der-c5a-8-6
+^der-c5a-9-6
 
-*Uses:* [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-5|Theorem §C5a.8.5]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-6|Derivation §C5a.7.6]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-2|Def. §C1b.7.2]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^der-c1b-7-7|Derivation §C1b.7.7]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]
+*Uses:* [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|Theorem §C5a.9.5]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|Theorem §C5a.9.2]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^der-c5a-7-6|Derivation §C5a.7.6]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-2|Def. §C1b.7.2]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^der-c1b-7-7|Derivation §C1b.7.7]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-6|P3, step 6]], [[P1 Canonical Quantization#^p1-3|P1, step 3]]
 
-> [!theorem] Theorem §C5a.8.7: The Dirac Momentum Generates Spatial Translations
-> Treat the four complex components $\psi_a$ as coordinates and $\pi_a = i\psi^\dagger_a$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]]) as their momenta, with the Poisson bracket of [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]] on these pairs, $\{\psi_a(\mathbf x), \pi_b(\mathbf y)\} = \delta_{ab}\delta^3(\mathbf x - \mathbf y)$, i.e. $\{\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)\} = -i\delta_{ab}\delta^3(\mathbf x - \mathbf y)$: $\psi^\dagger$ is the momentum, not a second coordinate ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|§C1b.4, Remark: Constraints and first-order Lagrangians]]; that these are the brackets compatible with the constraint $\pi_\psi = i\psi^\dagger$ is the Dirac bracket of [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-4|★ Theorem §C5b.1.4]]). For commuting components, differentiable and falling off at spatial infinity, and $\mathbf P = -\int d^3x\,\pi_\psi\nabla\psi = \int d^3x\,\psi^\dagger(-i\nabla)\psi$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-6|Theorem §C5a.8.6]]), as identities after smearing with test functions:
+> [!theorem] Theorem §C5a.9.7: The Dirac Momentum Generates Spatial Translations
+> Treat the four complex components $\psi_a$ as coordinates and $\pi_a = i\psi^\dagger_a$ ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]]) as their momenta, with the Poisson bracket of [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]] on these pairs, $\{\psi_a(\mathbf x), \pi_b(\mathbf y)\} = \delta_{ab}\delta^3(\mathbf x - \mathbf y)$, i.e. $\{\psi_a(\mathbf x), \psi^\dagger_b(\mathbf y)\} = -i\delta_{ab}\delta^3(\mathbf x - \mathbf y)$: $\psi^\dagger$ is the momentum, not a second coordinate ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|§C1b.4, Remark: Constraints and first-order Lagrangians]]; that these are the brackets compatible with the constraint $\pi_\psi = i\psi^\dagger$ is the Dirac bracket of [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-4|★ Theorem §C5b.1.4]]). For commuting components, differentiable and falling off at spatial infinity, and $\mathbf P = -\int d^3x\,\pi_\psi\nabla\psi = \int d^3x\,\psi^\dagger(-i\nabla)\psi$ ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-6|Theorem §C5a.9.6]]), as identities after smearing with test functions:
 > 1. $\{\psi_a(\mathbf x), \mathbf P\} = -\nabla\psi_a(\mathbf x)$ and $\{\psi^\dagger_a(\mathbf x), \mathbf P\} = -\nabla\psi^\dagger_a(\mathbf x)$;
 > 2. $\{\psi_a(\mathbf x), H\} = -i\bigl(H_{\text{s.p.}}\psi\bigr)_a(\mathbf x)$ with $H_{\text{s.p.}}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], which is $\partial_t\psi_a$ on solutions of the Dirac equation; with $P^0 = H$, in covariant form $\{\psi_a(x), P^\mu\} = \partial^\mu\psi_a(x)$ on solutions;
 > 3. $\{\mathbf P, H\} = 0$.
@@ -399,10 +399,10 @@ The axial current uses $\gamma^5$ and its properties:
 >
 > *Source: the scalar statement, [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9|Theorem §C1b.7.9]] (for particles [[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]]), applied here to the Dirac canonical pairs; the classical root of [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]]; written out here*
 
-^thm-c5a-8-7
+^thm-c5a-9-7
 
 > [!derivation]- Derivation
-> Write $P^i = -\int d^3z\sum_c\pi_c(\mathbf z)\,\partial_i\psi_c(\mathbf z)$ on one time slice (Theorem §C5a.8.6): the form of [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9|Theorem §C1b.7.9]] with the four pairs $(\phi_c, \pi_c) = (\psi_c, \pi_c)$. The fields are complex; $\psi_c$ and $\pi_c$ are the independent variables of the functionals, as $\phi$ and $\phi^{\ast}$ were for the complex scalar ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]), and $\psi^\dagger_c = -i\pi_c$ is not varied separately.
+> Write $P^i = -\int d^3z\sum_c\pi_c(\mathbf z)\,\partial_i\psi_c(\mathbf z)$ on one time slice (Theorem §C5a.9.6): the form of [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9|Theorem §C1b.7.9]] with the four pairs $(\phi_c, \pi_c) = (\psi_c, \pi_c)$. The fields are complex; $\psi_c$ and $\pi_c$ are the independent variables of the functionals, as $\phi$ and $\phi^{\ast}$ were for the complex scalar ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]), and $\psi^\dagger_c = -i\pi_c$ is not varied separately.
 >
 > **Step 1** ($\delta P^i/\delta\pi_c$). Vary $\pi_c \to \pi_c + \varepsilon\zeta_c$, $\zeta_c$ a test function, $\psi$ fixed. $P^i$ is linear in $\pi$: $\frac{d}{d\varepsilon}P^i\big|_0 = -\int d^3z\sum_c\zeta_c\,\partial_i\psi_c$, so ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], on a slice)
 >
@@ -430,7 +430,7 @@ The axial current uses $\gamma^5$ and its properties:
 >
 > ⚑ By-product: the same result follows from the Dirac bracket of [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-4|★ Theorem §C5b.1.4]] and the form $\mathbf P = \int\psi^\dagger(-i\nabla)\psi$, because a Dirac bracket allows the constraint $\pi_\psi - i\psi^\dagger = 0$ to be imposed before it is computed ([[§C5b.1 Canonical Quantization of the Dirac Field#^def-c5b-1-3|★ Def. §C5b.1.3]]): the two forms of $\mathbf P$ have the same brackets.
 >
-> **Step 5** (part 2). $H = \int d^3z\,\psi^\dagger H_{\text{s.p.}}\psi = \int d^3z\sum_b(-i)\pi_b(H_{\text{s.p.}}\psi)_b$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]], with $\psi^\dagger = -i\pi$) is linear in $\pi$ and contains no derivative of $\pi$, so $\delta H/\delta\pi_a(\mathbf z) = -i(H_{\text{s.p.}}\psi)_a(\mathbf z)$, and as in Step 3, $\{\psi_a(\mathbf x), H\} = \delta H/\delta\pi_a(\mathbf x) = -i(H_{\text{s.p.}}\psi)_a(\mathbf x)$. On solutions $i\partial_t\psi = H_{\text{s.p.}}\psi$ (the Dirac equation multiplied by $\gamma^0$, [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-2|Derivation §C5a.8.2]], step 6), so $\{\psi_a, H\} = \partial_t\psi_a = \partial^0\psi_a$ ($g^{00} = 1$). With $\partial^i = -\partial_i$, Step 3 reads $\{\psi_a, P^i\} = \partial^i\psi_a$; together $\{\psi_a(x), P^\mu\} = \partial^\mu\psi_a(x)$. (Hamilton's equations of these pairs in full, both of them, are [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-3|Theorem §C5b.1.3]].)
+> **Step 5** (part 2). $H = \int d^3z\,\psi^\dagger H_{\text{s.p.}}\psi = \int d^3z\sum_b(-i)\pi_b(H_{\text{s.p.}}\psi)_b$ ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|Theorem §C5a.9.2]], with $\psi^\dagger = -i\pi$) is linear in $\pi$ and contains no derivative of $\pi$, so $\delta H/\delta\pi_a(\mathbf z) = -i(H_{\text{s.p.}}\psi)_a(\mathbf z)$, and as in Step 3, $\{\psi_a(\mathbf x), H\} = \delta H/\delta\pi_a(\mathbf x) = -i(H_{\text{s.p.}}\psi)_a(\mathbf x)$. On solutions $i\partial_t\psi = H_{\text{s.p.}}\psi$ (the Dirac equation multiplied by $\gamma^0$, [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-2|Derivation §C5a.9.2]], step 6), so $\{\psi_a, H\} = \partial_t\psi_a = \partial^0\psi_a$ ($g^{00} = 1$). With $\partial^i = -\partial_i$, Step 3 reads $\{\psi_a, P^i\} = \partial^i\psi_a$; together $\{\psi_a(x), P^\mu\} = \partial^\mu\psi_a(x)$. (Hamilton's equations of these pairs in full, both of them, are [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-3|Theorem §C5b.1.3]].)
 >
 > **Step 6** (part 3). Write $H = \int d^3z\,\mathcal H(\psi, \partial_j\psi, \pi)$ with $\mathcal H = -i\pi_b(H_{\text{s.p.}}\psi)_b$, which contains no derivative of $\pi$ and no explicit $\mathbf z$. Then $\delta H/\delta\pi_c = \partial\mathcal H/\partial\pi_c$ and $\delta H/\delta\psi_c = \partial\mathcal H/\partial\psi_c - \partial_j\bigl(\partial\mathcal H/\partial(\partial_j\psi_c)\bigr)$ (integration by parts, fall-off). With Steps 1–2,
 >
@@ -445,18 +445,18 @@ The axial current uses $\gamma^5$ and its properties:
 > - Assumptions: commuting components; differentiable $\pi = i\psi^\dagger$ (Step 2); fall-off (Steps 2, 6); the Dirac equation only for the time component (Step 5).
 > - Used next: quantization turns $\{F, G\} \to -i[\hat F, \hat G]$ ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-5|§C1b.4, Remark: From brackets to commutators]]), and part 1 becomes $[\hat\psi_a, \hat{\mathbf P}] = -i\nabla\hat\psi_a$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]]), with anticommuting fields but a bilinear $\hat{\mathbf P}$.
 
-^der-c5a-8-7
+^der-c5a-9-7
 
-*Uses:* [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-6|Theorem §C5a.8.6]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-2|Derivation §C5a.8.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9|Theorem §C1b.7.9]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]
+*Uses:* [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-6|Theorem §C5a.9.6]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|Theorem §C5a.9.2]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-2|Derivation §C5a.9.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9|Theorem §C1b.7.9]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]
 
 > [!remark] Remark: Why P is the momentum, for the Dirac field
-> - *On a plane wave.* A positive-frequency plane wave $\psi = w\,e^{-ip\cdot x}$, $p^0 = E_{\mathbf p} > 0$, with a constant column $w$ solving the Dirac equation (so $H_{\text{s.p.}}(\mathbf p)w = E_{\mathbf p}w$, [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-2|Derivation §C5a.8.2]], steps 6–7), has $-i\nabla\psi = \mathbf p\,\psi$ and $i\partial_t\psi = E_{\mathbf p}\psi$, so the momentum density is $\psi^\dagger(-i\nabla)\psi = \mathbf p\,w^\dagger w$, the energy density $\psi^\dagger i\partial_t\psi = E_{\mathbf p}\,w^\dagger w$ and the charge density $\psi^\dagger\psi = w^\dagger w > 0$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]]). Per unit charge the wave carries momentum $\mathbf p$ and energy $E_{\mathbf p}$, with no averaging needed (unlike the real scalar wave of [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-7-2|§C1b.7, Remark: Why P is the momentum]]): after quantization this is $\mathbf p$ per particle ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-8|Theorem §C5b.3.8]]).
+> - *On a plane wave.* A positive-frequency plane wave $\psi = w\,e^{-ip\cdot x}$, $p^0 = E_{\mathbf p} > 0$, with a constant column $w$ solving the Dirac equation (so $H_{\text{s.p.}}(\mathbf p)w = E_{\mathbf p}w$, [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-9-2|Derivation §C5a.9.2]], steps 6–7), has $-i\nabla\psi = \mathbf p\,\psi$ and $i\partial_t\psi = E_{\mathbf p}\psi$, so the momentum density is $\psi^\dagger(-i\nabla)\psi = \mathbf p\,w^\dagger w$, the energy density $\psi^\dagger i\partial_t\psi = E_{\mathbf p}\,w^\dagger w$ and the charge density $\psi^\dagger\psi = w^\dagger w > 0$ ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]]). Per unit charge the wave carries momentum $\mathbf p$ and energy $E_{\mathbf p}$, with no averaging needed (unlike the real scalar wave of [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-7-2|§C1b.7, Remark: Why P is the momentum]]): after quantization this is $\mathbf p$ per particle ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-8|Theorem §C5b.3.8]]).
 > - *Not the canonical momentum.* $\pi_\psi = i\psi^\dagger$ is conjugate to the field value $\psi(\mathbf x)$ at one point, a momentum in field space; $\psi^\dagger$ itself is not the momentum density. The momentum carried through space is $T^{0i} = -\pi_\psi\,\partial_i\psi$, built from $\pi_\psi$ and the generator $\partial_i\psi$ of the translation, the pattern $\int d^3x\,\pi\,\Delta\phi$ of every Noether charge ([[§C1b.4 Hamiltonian Field Theory#^cau-c1b-4-1|§C1b.4, Caution: What the conjugate momentum is not]]).
-> - *Negative frequency.* $\psi = w\,e^{+ip\cdot x}$ has momentum density $-\mathbf p\,w^\dagger w$ and energy density $-E_{\mathbf p}\,w^\dagger w$: classically it carries the momentum opposite to its label and negative energy (Theorem §C5a.8.2). After quantization with anticommutators the $\hat b$ term of $\hat{\mathbf P}$ arrives as $-\hat b\,\hat b^\dagger$; reordering it gives $+\hat b^\dagger\hat b$ plus a constant $\propto\int d^3p\,\mathbf p$, which vanishes by reflection symmetry, so the antiparticle of label $\mathbf p$ carries $+\mathbf p$ and no ordering choice is involved ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]]); for $\hat H$ the same reordering leaves the negative fermionic zero-point energy ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-6|Theorem §C5b.3.6]]).
+> - *Negative frequency.* $\psi = w\,e^{+ip\cdot x}$ has momentum density $-\mathbf p\,w^\dagger w$ and energy density $-E_{\mathbf p}\,w^\dagger w$: classically it carries the momentum opposite to its label and negative energy (Theorem §C5a.9.2). After quantization with anticommutators the $\hat b$ term of $\hat{\mathbf P}$ arrives as $-\hat b\,\hat b^\dagger$; reordering it gives $+\hat b^\dagger\hat b$ plus a constant $\propto\int d^3p\,\mathbf p$, which vanishes by reflection symmetry, so the antiparticle of label $\mathbf p$ carries $+\mathbf p$ and no ordering choice is involved ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]]); for $\hat H$ the same reordering leaves the negative fermionic zero-point energy ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-6|Theorem §C5b.3.6]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.8, eq. (diracP) · PS §3.5, eq. (3.105) · the plane-wave densities worked out here*
 
-^rem-c5a-8-1
+^rem-c5a-9-1
 
 ### The mathematics used here: the spinor generators
 
@@ -466,7 +466,7 @@ The spin current is built from the spinor generators:
 
 ## Spin and the symmetric tensor
 
-> [!theorem] Theorem §C5a.8.8: The Spin Current and the Angular Momentum of the Dirac Field
+> [!theorem] Theorem §C5a.9.8: The Spin Current and the Angular Momentum of the Dirac Field
 > The spin part of the Lorentz current of [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]] is, for the Dirac field,
 >
 > $$
@@ -485,7 +485,7 @@ The spin current is built from the spinor generators:
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5 (eq. (Mgeneral); "the Dirac spin $\frac12$") · Yu §1.7.3, eqs. (1.241)–(1.248) (orbital and spin split) · computed here from [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]]*
 
-^thm-c5a-8-8
+^thm-c5a-9-8
 
 > [!derivation]- Derivation
 > **1. The generator in the convention of Theorem §C1b.8.1.** There $D = 1 + \frac12\omega_{\mu\nu}S^{\mu\nu}_{(C1.8)}$, with $S^{\mu\nu}_{(C1.8)}$ the real-convention generators of [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]; for the Dirac field $D = \Lambda_{1/2} = 1 - \frac i2\omega_{\mu\nu}S^{\mu\nu} + O(\omega^2)$. The $\omega_{\mu\nu}$ are arbitrary antisymmetric and both generators antisymmetric, so $S^{\mu\nu}_{(C1.8)} = -iS^{\mu\nu}$ ([[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]).
@@ -496,35 +496,35 @@ The spin current is built from the spinor generators:
 >
 > **4. Spatial generators.** In the chiral basis $S^{jk} = \frac12\varepsilon^{jkl}\Sigma^l$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]]), so $\frac12\varepsilon_{ijk}S^{jk} = \frac14\varepsilon_{ijk}\varepsilon_{jkl}\Sigma^l = \frac14\cdot2\delta_{il}\Sigma^l = \frac12\Sigma^i$, using $\varepsilon_{ijk}\varepsilon_{ljk} = 2\delta_{il}$ (with $\varepsilon_{jkl} = \varepsilon_{ljk}$, cyclic). The spin part of $J^i$ is $\int\psi^\dagger\frac12\Sigma^i\psi$.
 >
-> **5. The orbital part.** On shell $T^{0\rho} = i\psi^\dagger\partial^\rho\psi$ (Derivation §C5a.8.6). $L^{jk} = \int d^3x\,(x^jT^{0k} - x^kT^{0j}) = \int d^3x\,\psi^\dagger\,i(x^j\partial^k - x^k\partial^j)\psi = \int d^3x\,\psi^\dagger(-i)(x^j\partial_k - x^k\partial_j)\psi$ ($\partial^k = -\partial_k$). Then $\frac12\varepsilon_{ijk}L^{jk} = \int\psi^\dagger(-i)\varepsilon_{ijk}x^j\partial_k\psi = \int\psi^\dagger\bigl(\mathbf x\times(-i\nabla)\bigr)_i\psi$ (the two terms of the antisymmetric bracket give equal contributions after renaming $j \leftrightarrow k$).
+> **5. The orbital part.** On shell $T^{0\rho} = i\psi^\dagger\partial^\rho\psi$ (Derivation §C5a.9.6). $L^{jk} = \int d^3x\,(x^jT^{0k} - x^kT^{0j}) = \int d^3x\,\psi^\dagger\,i(x^j\partial^k - x^k\partial^j)\psi = \int d^3x\,\psi^\dagger(-i)(x^j\partial_k - x^k\partial_j)\psi$ ($\partial^k = -\partial_k$). Then $\frac12\varepsilon_{ijk}L^{jk} = \int\psi^\dagger(-i)\varepsilon_{ijk}x^j\partial_k\psi = \int\psi^\dagger\bigl(\mathbf x\times(-i\nabla)\bigr)_i\psi$ (the two terms of the antisymmetric bracket give equal contributions after renaming $j \leftrightarrow k$).
 >
 > **6. Total.** $J^i = L^i + S^i$ by [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]].
 >
 > **What the derivation shows**
 > - ⚑ By-product: the Dirac field carries spin $\frac12$: $\frac12\boldsymbol\Sigma$ has $(\frac12\Sigma^i)(\frac12\Sigma^i) = \frac34\mathbb 1$, two spin-½ doublets, one per Weyl block. Peskin–Schroeder prove the particle's spin from this charge after quantization ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|Theorem §C5b.4.3]]).
 > - Only $\mathbf J$ is conserved, not $\mathbf L$ and $\mathbf S$ separately: $\partial_\lambda\mathcal S^{\lambda\mu\nu} = T^{\nu\mu} - T^{\mu\nu} \ne 0$ ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-2|Theorem §C1b.8.2]]).
-> - Used next: the symmetric tensor (Theorem §C5a.8.9).
+> - Used next: the symmetric tensor (Theorem §C5a.9.9).
 
-^der-c5a-8-8
+^der-c5a-9-8
 
 *Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]], [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]
 
 This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma$, conserved while $\mathbf L$ and $\mathbf S$ are not ([[§C13.2★ The Dirac Equation#^thm-c13-2-4|QM Theorem §C13.2.4]]), now as Noether charges of a field: there it follows from commutators with $H$, here from rotation invariance of the action (rule 2).
 
-> [!theorem] Theorem §C5a.8.9: The Symmetric Energy–Momentum Tensor of the Dirac Field
+> [!theorem] Theorem §C5a.9.9: The Symmetric Energy–Momentum Tensor of the Dirac Field
 > The Belinfante tensor ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]]) of the Dirac field is, on solutions,
 >
 > $$
 > T_B^{\mu\nu} = \frac i4\,\bar\psi\bigl(\gamma^\mu\overleftrightarrow{\partial^\nu} + \gamma^\nu\overleftrightarrow{\partial^\mu}\bigr)\psi - g^{\mu\nu}\mathcal L = \frac i4\,\bar\psi\bigl(\gamma^\mu\overleftrightarrow{\partial^\nu} + \gamma^\nu\overleftrightarrow{\partial^\mu}\bigr)\psi :
 > $$
 >
-> with $a\overleftrightarrow{\partial}b = a\,\partial b - (\partial a)\,b$: symmetric, conserved, with the same $P^\nu$ as the canonical tensor ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-5|Theorem §C5a.8.5]]) and with orbital moments that give the total $J^{\nu\rho}$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-8|Theorem §C5a.8.8]]).
+> with $a\overleftrightarrow{\partial}b = a\,\partial b - (\partial a)\,b$: symmetric, conserved, with the same $P^\nu$ as the canonical tensor ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|Theorem §C5a.9.5]]) and with orbital moments that give the total $J^{\nu\rho}$ ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-8|Theorem §C5a.9.8]]).
 >
 > *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, on solutions.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5 (Derivation "Belinfante: symmetrizing T with the spin current", last sentence: the Dirac result, stated) · derived here from [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]]*
 
-^thm-c5a-8-9
+^thm-c5a-9-9
 
 > [!derivation]- Derivation
 > Work on solutions; write $V^\mu \equiv \frac i2\bar\psi\gamma^\mu\psi = \frac i2j^\mu$ and let $\gamma^{[\lambda\mu\nu]}$ be the totally antisymmetrized product, weight $1/3!$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8|Def. §CB.12.8]]).
@@ -537,7 +537,7 @@ This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma
 >
 > Check case by case, using only the Clifford algebra (distinct $\gamma$'s anticommute, $(\gamma^\lambda)^2 = g^{\lambda\lambda}$, no sum): all distinct, the antisymmetrization is the product itself (each of the six terms, reordered, carries its sign twice) and all $g$'s vanish; $\lambda = \mu \ne \nu$: left $g^{\lambda\lambda}\gamma^\nu$, right $0 + g^{\lambda\lambda}\gamma^\nu$; $\lambda = \nu \ne \mu$: left $\gamma^\lambda\gamma^\mu\gamma^\lambda = -g^{\lambda\lambda}\gamma^\mu$, right $-g^{\lambda\lambda}\gamma^\mu$; $\mu = \nu \ne \lambda$: both $g^{\mu\mu}\gamma^\lambda$; all equal: left $g^{\lambda\lambda}\gamma^\lambda$, right $g^{\lambda\lambda}\gamma^\lambda(1 - 1 + 1)$. (A repeated index kills the antisymmetrized product: its terms cancel in pairs.)
 >
-> **2. The spin current in pieces.** Subtract step 1 with $\mu \leftrightarrow \nu$: $\gamma^\lambda[\gamma^\mu, \gamma^\nu] = 2\gamma^{[\lambda\mu\nu]} + 2g^{\lambda\mu}\gamma^\nu - 2g^{\lambda\nu}\gamma^\mu$ (the $g^{\mu\nu}\gamma^\lambda$ terms cancel, the antisymmetric part doubles). With Theorem §C5a.8.8,
+> **2. The spin current in pieces.** Subtract step 1 with $\mu \leftrightarrow \nu$: $\gamma^\lambda[\gamma^\mu, \gamma^\nu] = 2\gamma^{[\lambda\mu\nu]} + 2g^{\lambda\mu}\gamma^\nu - 2g^{\lambda\nu}\gamma^\mu$ (the $g^{\mu\nu}\gamma^\lambda$ terms cancel, the antisymmetric part doubles). With Theorem §C5a.9.8,
 >
 > $$
 > \mathcal S^{\lambda\mu\nu} = A^{\lambda\mu\nu} + g^{\lambda\mu}V^\nu - g^{\lambda\nu}V^\mu, \qquad A^{\lambda\mu\nu} \equiv \tfrac i2\bar\psi\gamma^{[\lambda\mu\nu]}\psi \ \ \text{(totally antisymmetric)} .
@@ -551,7 +551,7 @@ This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma
 >
 > antisymmetric in $\lambda\mu$ as it must be.
 >
-> **4. Its divergence.** $\partial_\lambda K^{\lambda\mu\nu} = \frac12\partial_\lambda A^{\lambda\mu\nu} + g^{\mu\nu}\partial_\lambda V^\lambda - \partial^\nu V^\mu$. The middle term vanishes on shell ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]]).
+> **4. Its divergence.** $\partial_\lambda K^{\lambda\mu\nu} = \frac12\partial_\lambda A^{\lambda\mu\nu} + g^{\mu\nu}\partial_\lambda V^\lambda - \partial^\nu V^\mu$. The middle term vanishes on shell ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]]).
 >
 > **5. The vector piece symmetrizes the derivative.** $T^{\mu\nu} - \partial^\nu V^\mu = i\bar\psi\gamma^\mu\partial^\nu\psi - \frac i2(\partial^\nu\bar\psi)\gamma^\mu\psi - \frac i2\bar\psi\gamma^\mu\partial^\nu\psi - g^{\mu\nu}\mathcal L = \frac i2\bar\psi\gamma^\mu\overleftrightarrow{\partial^\nu}\psi - g^{\mu\nu}\mathcal L$.
 >
@@ -575,15 +575,15 @@ This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma
 > - Both equations of motion and the conservation of $j^\mu$ were used; off shell $T_B$ is not symmetric.
 > - This is the tensor that couples to gravity ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]]).
 
-^der-c5a-8-9
+^der-c5a-9-9
 
-*Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-8|Theorem §C5a.8.8]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-3|Theorem §C5a.8.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8|Def. §CB.12.8]]
+*Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-8|Theorem §C5a.9.8]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8|Def. §CB.12.8]]
 
 > [!remark]- Connections
 > - Treating $\psi$ and $\bar\psi$ as independent is the complex scalar's device; the first-order Lagrangian pushes the crossover of momenta to its end, $\pi_\psi = i\psi^\dagger$, which is why fermions are quantized by a bracket between $\psi$ and $\psi^\dagger$ alone — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]], [[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|§C1b.4, Remark: Constraints and first-order Lagrangians]], [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].
-> - The unbounded classical energy of Theorem §C5a.8.2 is the Dirac version of the indefinite Klein–Gordon density of Quantum Mechanics; in both cases the field theory reinterprets negative frequency as antiparticles, but only anticommutators make the Dirac Hamiltonian positive — [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-1|QM Theorem §C13.1.1]], [[§C2a.5 The Complex Scalar Field and Its Charge|§C2a.5]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles|§C5b.5]].
+> - The unbounded classical energy of Theorem §C5a.9.2 is the Dirac version of the indefinite Klein–Gordon density of Quantum Mechanics; in both cases the field theory reinterprets negative frequency as antiparticles, but only anticommutators make the Dirac Hamiltonian positive — [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-1|QM Theorem §C13.1.1]], [[§C2a.5 The Complex Scalar Field and Its Charge|§C2a.5]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles|§C5b.5]].
 > - The procedure of canonical quantization starts from exactly the data assembled here (Lagrangian, momenta, Hamiltonian density) — [[P1 Canonical Quantization#^p1-1|P1, steps 1–3]].
 > - The positive conserved density $\psi^\dagger\psi$ is Quantum Mechanics' probability density; in the field theory it is the time component of a Noether current, and after quantization a charge of either sign — [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]], [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles|§C5b.5]].
 > - The spin current $\bar\psi\gamma^\lambda S^{\mu\nu}\psi$ is the field-theoretic origin of the electron's spin $\frac12$ and of the non-conservation of $\mathbf L$ alone; Belinfante's improvement moves the spin into a symmetric $T_B$ — [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-2|Theorem §C1b.8.2]], [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]], [[§C13.2★ The Dirac Equation#^thm-c13-2-4|QM Theorem §C13.2.4]].
 > - The same Noether procedure gave the scalar's U(1) current and $T^{\mu\nu}$; for the Dirac field every step is identical except that only $\psi$, not $\bar\psi$, has a derivative in $\mathcal L$ — [[P3 Noether's Procedure]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^rem-c1b-7-3|§C1b.7, Remark: The canonical tensor of the standard fields]].
-> - The field momentum and its bracket follow the scalar's and the vector's pattern index by index, $T^{0i} = -\sum_a\pi_a\partial_i\phi_a$ and $\{\phi_a, \mathbf P\} = -\nabla\phi_a$; for the Dirac field the only canonical pair is $(\psi, i\psi^\dagger)$, so $\bar\psi$ contributes nothing, and the bracket becomes the quantum translation law once the brackets become anticommutators — [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-7|Theorem §C1b.7.7]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9|Theorem §C1b.7.9]], [[§C4.2★ The Proca Field#^thm-c4-2-13|Theorem §C4.2.13]], [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-7|Theorem §C5a.8.7]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]].
+> - The field momentum and its bracket follow the scalar's and the vector's pattern index by index, $T^{0i} = -\sum_a\pi_a\partial_i\phi_a$ and $\{\phi_a, \mathbf P\} = -\nabla\phi_a$; for the Dirac field the only canonical pair is $(\psi, i\psi^\dagger)$, so $\bar\psi$ contributes nothing, and the bracket becomes the quantum translation law once the brackets become anticommutators — [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-7|Theorem §C1b.7.7]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9|Theorem §C1b.7.9]], [[§C4.2★ The Proca Field#^thm-c4-2-13|Theorem §C4.2.13]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-7|Theorem §C5a.9.7]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]].
