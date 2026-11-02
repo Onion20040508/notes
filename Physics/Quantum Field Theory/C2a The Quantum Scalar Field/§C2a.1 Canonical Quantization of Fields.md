@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 How is a field, a system with one coordinate at every point of space, turned into a quantum theory? The answer reuses three things the vault already has: the oscillator solved by its algebra alone ([[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-1|QM Theorem §C3.4.1]]), the passage from Poisson brackets to commutators ([[§B8.1 Poisson Brackets#^rem-b8-1-5|CM Remark: From brackets to commutators]]), and the classical free scalar field ([[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Model §B4.1.3]]). This section recalls the classical field from its home in Chapter C1b (Lagrangian, momentum density, Hamiltonian and field momentum, shown as embedded boxes), states the quantum model those formulas define, and the one postulate of canonical quantization for fields, the equal-time commutation relations. That the free field is already, classically, a set of independent oscillators, one per momentum, opens [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]; quantizing those oscillators is §C2a.2–[[§C2a.4 Particles and Relativistic Normalization|§C2a.4]]; the whole recipe is [[P1 Canonical Quantization]].
 
+**Setup.** The system is the free real scalar field: classical in the recalled boxes ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]), quantum from [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] on; free, $m > 0$, infinite space. No state and no vacuum enter yet: the quantum statements of this section are relations between operators on a time slice. The normalization is the continuum one, $i\delta^3(\mathbf x - \mathbf y)$ in the canonical relations. The postulate and its smeared form hold for any bosonic field with canonical pairs, interacting ones included at a common time.
+
 *Conventions* ([[Larsen PHY 513]]): natural units $\hbar = c = 1$ ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-1|Def. §C1a.2.1]]); $g = \operatorname{diag}(+,-,-,-)$, so $p\cdot x = p^0t - \mathbf p\cdot\mathbf x$; $E_{\mathbf p} = +\sqrt{\mathbf p^2 + m^2}$; spatial Fourier transforms $f(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\tilde f(\mathbf p)\,e^{i\mathbf p\cdot\mathbf x}$, with $\int d^3x\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf k)$, an identity of tempered distributions in $\mathbf k$ and not a convergent integral ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]; the other rules in [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]). Relativity B keeps $c$ explicit; here it is set to one.
 
 > [!caution] Caution: Eₚ, not ωₚ; π, not Π
@@ -92,6 +94,8 @@ The classical model is [[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Mode
 >
 > *Domain:* bosonic fields with a Hamiltonian formulation; Schrödinger-picture operators, or Heisenberg-picture operators at a common time. Fermion fields take anticommutators instead ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]). The operator ordering in $\hat H$ is not fixed by this principle ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]).
 >
+> *Model:* any bosonic field theory with canonical pairs and a Hamiltonian, here [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* quantum, a postulate on operators, no state needed; with interactions it is imposed at a reference time ([[§C6a.1 From Free to Interacting Fields#^pr-c6a-1-6|Principle §C6a.1.6]]) and then holds at every time ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.2 (Principle "Canonical commutators for a field") · PHY 513 Lecture 4, Part B · PS §2.3, eq. (2.20) · Yu §2.2, eq. (2.76)*
 
 ^pr-c2a-1-2
@@ -112,6 +116,8 @@ The classical model is [[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Mode
 >
 > Hermitian operators. $\hat\phi$ and $\hat\pi$ are operator-valued distributions on space ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]): the symbols $\hat\phi(\mathbf x)$, $\hat\pi(\mathbf x)$ are the kernels through which these operators are written, not operators themselves.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* any canonical pair on a time slice, free or interacting; no state needed.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": "operator-valued distributions, defined after smearing with test functions") and App. A §A.4 ($\hat\phi[\varphi] = \int d^4x\,\varphi(x)\hat\phi(x)$), here on a time slice · standard (Streater & Wightman, Ch. 3)*
 
 ^def-c2a-1-1
@@ -124,6 +130,8 @@ The classical model is [[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Mode
 > $$
 >
 > $i\delta^3(\mathbf x - \mathbf y)$ is the kernel of the bilinear map $(f, g) \mapsto [\hat\phi(f), \hat\pi(g)]$, an identity of distributions on $\mathbb R^6$. Read at one point, $\mathbf x = \mathbf y$, the relation would assign $[\hat\phi(\mathbf x), \hat\pi(\mathbf x)] = i\delta^3(\mathbf 0)$, which has no value: it is not an equation between operators at points.
+>
+> *Model:* as [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]; *applies:* exact, an operator identity wherever the principle holds; no state needed.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.2 and §4.8 (Caution "Two honesty points"), App. A §A.4 · stated here as an identity of distributions (standard: Streater & Wightman, Ch. 3)*
 

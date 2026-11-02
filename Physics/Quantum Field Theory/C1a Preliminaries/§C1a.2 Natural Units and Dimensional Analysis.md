@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativity keeps $c$ explicit ([[§B1.1 The Metric and Index Notation#^cau-b1-1-1|REL Caution: The speed of light stays explicit]]), Quantum Mechanics keeps $\hbar$, and the Sakurai chapter of QM C13★ already restores both by rules of thumb ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^cau-c13-1-1|QM Caution: Units, metric and symbols in Chapter C13★]]); charges in Heaviside–Lorentz units are [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-1|Def. §C1a.7.1]]. This section is the single home of the mass dimension and of the rule that restores $\hbar$ and $c$ (run step by step in [[P4 Restoring ħ and c]]), together with the counting rules that every dimensional argument uses. The mass dimensions of fields and couplings need the action, and are [[§C1b.3 Mass Dimension, Locality and Power Counting|§C1b.3]].
 
+**Setup.** No physical system: units and the counting of dimensions. Every box holds in any theory, classical or quantum, free or interacting; the boxes are conventions ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-1|Def. §C1a.2.1]], [[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|Def. §C1a.2.2]]) and the mathematics behind them.
+
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$ from here on in the QFT notes; ordinary dimensions are written $M^\alpha L^\beta T^\gamma$ (mass, length, time); $[Q]$ is the mass dimension of $Q$.
 
 ## Natural units and the exponent rule

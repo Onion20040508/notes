@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What does a conserved current conserve, how unique is it, and what do the internal symmetries of the scalar fields give? This section starts from Noether's theorem and its failure case ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]]) and from the algorithm [[P3 Noether's Procedure]]. It turns a conserved current into a charge that changes only by the flux through a boundary (step 6), states the freedom left in the current (improvement terms), and runs the procedure on the internal symmetries: the shift of a real field, the U(1) phase of the complex field, the rotation of two real fields, and a mass splitting that breaks the phase. Spacetime symmetries, where the point moves, are [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum|§C1b.7]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]].
 
+**Setup.** Classical: the currents and charges of a local $\mathcal L$. A current is conserved on solutions of the field equations, and its charge is constant when the current falls off at spatial infinity. The internal symmetries are worked out for the classical scalar models: [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]] (the shift, massless), two real fields, and [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], the latter also with a potential $V(\phi^\ast\phi)$. After quantization the U(1) charge counts particles minus antiparticles ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]]).
+
 ## From current to charge
 
 > [!definition] Definition §C1b.6.1: Charge Density
@@ -43,6 +45,8 @@ What does a conserved current conserve, how unique is it, and what do the intern
 > $$
 >
 > the charge in a region changes only by the current through its surface. If $\lvert\mathbf j\rvert$ falls off faster than $1/r^2$ at spatial infinity, the total charge $Q$ is constant in time. A symmetry with $\dim G$ parameters gives $\dim G$ conserved charges.
+>
+> *Model:* any conserved current $j^\mu$ of a classical field theory; *applies:* classical, on solutions; the constancy of $Q$ needs the fall-off stated.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, eqs. (continuity), (dQdt) · Yu §1.7.1, eqs. (1.199)–(1.202) · PS §2.2 · Lecture 3, "Noether's Charge"*
 
@@ -81,6 +85,8 @@ What does a conserved current conserve, how unique is it, and what do the intern
 > 2. if $B^{i0}$ falls off faster than $1/r^2$ at spatial infinity, $j'$ and $j$ have the same charge.
 >
 > A Noether current is therefore determined only up to such **improvement terms**.
+>
+> *Model:* any; *applies:* part 1 is an identity for any twice-differentiable antisymmetric $B^{\nu\mu}$, classical, every configuration; part 2 needs the fall-off stated.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Caution "What the theorem does and does not say" · PHY 513 Problem Set 2, Problem 4(d) (statement)*
 
@@ -147,6 +153,8 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 > $$
 >
 > is conserved on solutions, for every $m$ and $V$. Its charge $Q = \int d^3x\,j^0 = i\int d^3x\,(\phi\dot\phi^{\ast} - \phi^{\ast}\dot\phi)$ is the **number charge**; a positive-frequency solution has $j^0 < 0$ in this sign convention.
+>
+> *Model:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]] with a potential $V(\phi^\ast\phi)$, any $m$ and $V$; *applies:* classical, conservation on solutions, the charge constant for fields falling off at infinity; sign convention: [[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|Caution: Sign and normalization of the U(1) current]]; quantized (free, normal ordered): [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]].
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Example 2, eq. (U1current) · PS §2.2, eqs. (2.14)–(2.16) · PHY 513 Problem Set 2, Problem 3(c)–(d), with the course solution · Lecture 3, Example 2 · Yu §1.7.4, eqs. (1.253)–(1.263)*
 

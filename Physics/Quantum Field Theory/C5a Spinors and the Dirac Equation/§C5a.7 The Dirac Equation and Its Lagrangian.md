@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 Which first-order field equation can a Dirac spinor obey, why does it look the same to every observer and in every basis, and from which Lagrangian does it follow? The structure of spinor space is complete after [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]]: the Clifford action, the Dirac form and $\bar\psi$, the Lorentz action $\Lambda_{1/2}$ with the key identity $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]]), chirality and the bilinears. This section adds **layer 8**, fields $\psi : M \to V$: the Dirac equation and its covariance, its form invariance under a change of basis of $V$, the single-particle Hamiltonian $H_{\text{s.p.}}$, the Dirac Lagrangian with its field equations (also basis independent, for unitary changes of basis), the fact that every solution obeys the Klein–Gordon equation, and the equation in two-component form with the Weyl equations. The action principle and the Euler–Lagrange equations are [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]], whose models are scalar. The canonical momenta, the Hamiltonian density and the Noether currents of this Lagrangian are [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field|§C5a.8]]; the solutions [[§C5a.9 Plane-Wave Solutions|§C5a.9]]. The mathematics it uses — the Dirac matrices and their covariance, $\gamma^5$, Hermitian bases and the invariance of the Dirac form — is [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]] and [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], shown in the blocks below.
 
+**Setup.** Classical and free: the free Dirac field [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] and, for $m = 0$, the Weyl fields [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|Model §C5a.7.11]], with commuting complex components, in flat spacetime; no quantum states yet. Covariance, basis change, the reality of $\mathcal L$ and the Weyl decomposition (Theorems §C5a.7.1–§C5a.7.2, §C5a.7.4–§C5a.7.5, §C5a.7.7, §C5a.7.9) are identities for every $C^1$ field, off shell; Theorems §C5a.7.6, §C5a.7.8, §C5a.7.10 and §C5a.7.12 are about solutions. The single-particle Hamiltonian $H_{\text{s.p.}}$ (Def. §C5a.7.3) is an operator on c-number four-component wave functions, not the field Hamiltonian; the field's $\mathcal H$ is [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]], its quantum form [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]. All results are exact.
+
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+,-,-,-)$, active Lorentz transformations ([[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]), $\Lambda = \exp(-\frac i2\omega_{\mu\nu}\mathcal J^{\mu\nu})$, $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$ with $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$, chiral basis ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]). In this section $\psi$ is a classical field with commuting complex components; the quantized field, with anticommuting components, is [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]].
 
 ## The mathematics used here
@@ -61,6 +63,8 @@ $\gamma^5$ and its properties (Theorem §C5a.7.2), and Pauli's theorem behind th
 > $$
 >
 > with $\gamma^\mu$ the Dirac matrices ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]; the course uses the chiral basis, [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]) and $m$ a real constant times the $4\times4$ identity: four coupled, first-order, linear partial differential equations. The matrix of differential operators $i\gamma^\mu\partial_\mu - m$ is the **Dirac operator**.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] (its field equation, Theorem §C5a.7.6); *applies:* classical free field, exact; the free quantum field obeys the same equation ([[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-2|Theorem §C5b.6.2]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.5 (Definition "The Dirac equation", eq. (dirac)) · PHY 513 Lecture 8, Part A ("Introducing the Dirac Equation") · PS §3.2, eq. (3.31) · Yu §5.3, eqs. (5.107)–(5.108)*
 
@@ -111,6 +115,8 @@ The chiral form uses $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\m
 > $$
 >
 > with the same $\gamma^\mu$ and the same $m$ on both sides. Hence $\psi'$ solves the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]) if and only if $\psi$ does; in particular $\gamma^\mu\partial_\mu\psi$ transforms exactly like $\psi$.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, an identity for every $C^1$ field (off shell), exact, every $m$.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.6 (Derivation "Covariance of the Dirac equation, the lecture's way", Steps 4–5) · PHY 513 Lecture 8, Part A ("Relativistic Invariance of the Dirac Equation") · PS §3.2, p. 42 · Yu §5.3, eq. (5.109)*
 
@@ -180,6 +186,8 @@ The slides phrase the transformation passively ("the physical point that the fie
 >
 > so $\psi'$ solves the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]) with $\gamma'$ iff $\psi$ solves it with $\gamma$: the equation is the basis-free statement $(i\Gamma^\mu\partial_\mu - m)\psi = 0$ about a $V$-valued field.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, an identity for every $C^1$ field and every invertible $U$; a change of description, not of the system.
+>
 > *Source: Yu §5.2, eq. (5.72) (the similarity transformation of the $\gamma$'s) · PS §3.2, p. 41 · the derivation written here*
 
 ^thm-c5a-7-2
@@ -213,6 +221,8 @@ The slides phrase the transformation passively ("the physical point that the fie
 > $$
 >
 > the kernel of the Hamiltonian density of the Dirac field, $\mathcal H = \psi^\dagger H_{\text{s.p.}}\psi$ (derived from the Lagrangian in [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]]). It is Hermitian ($\boldsymbol\alpha$, $\beta$ Hermitian: [[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]], step 5 of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-2|Derivation §C5a.8.2]]), and on $e^{i\mathbf p\cdot\mathbf x}$ it acts as the matrix $H_{\text{s.p.}}(\mathbf p) = \gamma^0(\gamma^jp^j + m)$ (names in other sources: [[§C5a.7 The Dirac Equation and Its Lagrangian#^cau-c5a-7-2|Caution: Names for the single-particle Hamiltonian]]). It is the Hamiltonian that relativistic quantum mechanics takes for a four-component wave function ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]).
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] (the kernel of its $\mathcal H$); *applies:* single-particle: an operator on c-number wave functions $\mathbb R^3 \to \mathbb C^4$, not on Fock space; its eigenvalues on plane waves are $\pm E_{\mathbf p}$ ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]]).
 >
 > *Source: Lecture 10, slide 16 · the user's PHY 513 notes, Ch. 10 §10.5 (Definition "The single-particle Hamiltonian"; there $\gamma^0\gamma^i$ is called anti-Hermitian: it is Hermitian, $(\gamma^0\gamma^i)^\dagger = \gamma^{i\dagger}\gamma^0 = -\gamma^i\gamma^0 = \gamma^0\gamma^i$, Step 5 of [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-2|Derivation §C5a.8.2]], which is what makes $\gamma^0\gamma^i(-i\partial_i)$ Hermitian) · PS §3.5, eq. (3.85)*
 
@@ -268,6 +278,8 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 >
 > the law of a scalar field ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]); so the action $S = \int d^4x\,\mathcal L$ is Lorentz invariant ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-1|Theorem §C1b.2.1]]).
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, every $C^1$ field (off shell), exact.
+>
 > *Source: the user's PHY 513 notes, Ch. 8 §8.8 (Definition "The Dirac Lagrangian"; Figure "Why $\bar\psi\,i\gamma^\mu\partial_\mu\psi$ is a scalar") · PHY 513 Lecture 8, Part B ("Proof of invariance") · Yu §5.3, eq. (5.102)*
 
 ^thm-c5a-7-4
@@ -301,6 +313,8 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 >
 > For $m \ne 0$, $\mathcal L' = \mathcal L$ for every field iff $U$ is unitary; for $U = \sqrt c\,W$ ($W$ unitary), $\mathcal L' = c\,\mathcal L$.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, every $C^1$ field (off shell); the old basis Hermitian.
+>
 > *Source: the derivation written here, from Theorems §C5a.2.2 and §C5a.7.2 · PS §3.2, p. 41 (unitary equivalence)*
 
 ^thm-c5a-7-5
@@ -332,6 +346,8 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 > $$
 >
 > 3. each is the Hermitian conjugate of the other (multiplied by $\gamma^0$): they are one complex equation.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, free, $\psi$ and $\bar\psi$ varied independently, variations vanishing on the boundary; exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "The equations of motion, and why the i is there", eq. (diracbarEOM)) · PHY 513 Lecture 8, Part B · PS §3.2, eq. (3.35) · Yu §5.3, eqs. (5.104)–(5.107) · PHY 513, Problem Set 5, Problem 4(a) (the conjugate equation, as the user wrote it)*
 
@@ -392,6 +408,8 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 >
 > is real and gives the same field equations.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, commuting components, every $C^1$ field (off shell); the action is real for fields falling off at infinity.
+>
 > *Source: the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "Two further properties of the Dirac Lagrangian (additions to the lecture)") · Yu §5.3, eqs. (5.97)–(5.99)*
 
 ^thm-c5a-7-7
@@ -436,6 +454,8 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 > $$
 >
 > The identity uses only the Clifford algebra ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]). So $m^2$ is the Klein–Gordon mass squared; the sign of $m$ is a convention. The converse fails.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, every $C^2$ solution, exact; the operator identity is Clifford algebra only, so it holds for every component of any solution.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.11 (Derivation "Every solution of the Dirac equation solves the Klein–Gordon equation", eq. (diracKG)) · PHY 513 Lecture 8, Part C ("Klein-Gordon Equation from Dirac Equation") · PS §3.2, p. 43 · Yu §5.3, eqs. (5.110)–(5.111)*
 
@@ -536,6 +556,8 @@ The Weyl form splits spinor space by $\gamma^5$; Model §C5a.7.11 has no parity 
 >
 > the kinetic terms keep the chiralities apart, the mass term pairs them.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] (the form of $\mathcal L$); *applies:* chiral basis; the bilinear identities hold for any spinors, the form of $\mathcal L$ for every $C^1$ field (off shell).
+>
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 ("This is the Dirac invariant": $\bar\psi\chi = \psi_R^\dagger\chi_L + \psi_L^\dagger\chi_R$), §8.10 · PS §3.2, eqs. (3.36), (3.42)*
 
 ^thm-c5a-7-9
@@ -571,6 +593,8 @@ The Weyl form splits spinor space by $\gamma^5$; Model §C5a.7.11 has no parity 
 > $$
 >
 > with $\sigma^\mu$, $\bar\sigma^\mu$ of [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], i.e. $i(\partial_0 - \boldsymbol\sigma\cdot\nabla)\psi_L = m\psi_R$, $i(\partial_0 + \boldsymbol\sigma\cdot\nabla)\psi_R = m\psi_L$. The kinetic operators act within each Weyl block; only the mass couples them.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, chiral basis, every $C^1$ field (the two forms of the equation are equivalent), exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.10 (Derivation "The Dirac equation in two-component form", eq. (weylcoupled)) · PHY 513 Lecture 8, Part C ("Dirac Equation in 2-Component Form") · PS §3.2, eqs. (3.39), (3.43) · Yu §5.3, eqs. (5.113)–(5.114)*
 
@@ -622,6 +646,8 @@ The 513 notes box the Weyl equations as a principle; here they are a model, the 
 > $$
 >
 > helicity ([[§C3.7★ Massless Particles and Helicity#^def-c3-7-1|Def. §C3.7.1]]) $h = \hat{\mathbf p}\cdot\frac{\boldsymbol\sigma}2 = -\frac12$. For $\psi_R = \eta\,e^{-ip\cdot x}$, $p^2 = 0$ and $(\hat{\mathbf p}\cdot\boldsymbol\sigma)\eta = +\eta$, $h = +\frac12$. One Weyl field has one helicity for its positive-frequency solutions.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|Model §C5a.7.11]]; *applies:* classical, $m = 0$, plane-wave solutions of positive frequency $p^0 > 0$, exact.
 >
 > *Source: the user's pre-course notes, §5.3 ("Weyl spinors": "$(E + \boldsymbol\sigma\cdot\mathbf p)\eta = 0$, i.e. $(\hat{\mathbf p}\cdot\boldsymbol\sigma)\eta = -\eta$: helicity $-\frac12$") · Yu §5.3 (paragraph after eq. (5.115)) · the user's PHY 513 notes, Ch. 8 §8.10 (Principle "The Weyl equations": "a single Weyl field describes a massless particle of one helicity")*
 

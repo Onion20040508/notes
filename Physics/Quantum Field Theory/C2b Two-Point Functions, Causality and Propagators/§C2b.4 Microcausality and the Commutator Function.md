@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 Is the theory causal? Microcausality asks that observables at spacelike separation commute; for the free field the commutator is a $c$-number, the antisymmetric part of the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]], and it vanishes outside the light cone; at the level of the single-particle amplitude of [[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]], forward plus backward propagation is already causal ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|Theorem §C2b.4.7]]). The section then follows the commutator to unequal times: the commutator function carries the equal-time relations of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]] to all times and propagates the field. The Green's functions of [[§C2b.5 Green's Functions and Contours|§C2b.5]] are built from it.
 
+**Setup.** Microcausality ([[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]]) is a requirement on any relativistic quantum field theory, free or interacting. Everything else is for [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]: quantum, free, $m > 0$ (the massless functions in Theorem §C2b.4.8), the free Heisenberg field of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]. The commutators are operator identities, valid in every state, and a c-number only because the field is free ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]]); $D$ and $D_1$ are vacuum values in the free vacuum $|0\rangle$, normalized as $D_W$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]]). The results are exact. Theorem §C2b.4.7 compares them with the single-particle amplitude of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]].
+
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $p\cdot x = E_{\mathbf p}t - \mathbf p\cdot\mathbf x$ whenever $p$ is on shell, $[\hat a_{\mathbf p}, \hat a_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}^\dagger|0\rangle$. Lecture 5 writes $\omega_{\mathbf p}$ for $E_{\mathbf p}$ ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|Caution: Eₚ, not ωₚ; π, not Π]]). Unless stated otherwise $m > 0$; the massless case is stated separately where it differs.
 
 ## Microcausality and the commutator function
@@ -27,6 +29,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > When the local observables are built from $\hat\phi$ and its derivatives, it suffices that $[\hat\phi(x), \hat\phi(y)] = 0$ for $(x - y)^2 < 0$ (for a complex field also $[\hat\phi(x), \hat\phi^\dagger(y)] = 0$).
 >
 > *Domain:* relativistic quantum field theory, free or interacting (with interactions it is the locality axiom; its classical counterpart is the locality of the action, [[§C1b.3 Mass Dimension, Locality and Power Counting#^pr-c1b-3-4|Principle §C1b.3.4]]).
+>
+> *Model:* any relativistic quantum field theory; *applies:* a requirement on the local observables, free or interacting, in every state; for the free field it is proved ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.5 (Principle "The causality condition") · PS §2.4, p. 28*
 
@@ -58,6 +62,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > $$
 > D_1(x - y) \equiv \langle0|\{\hat\phi(x), \hat\phi(y)\}|0\rangle .
 > $$
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.5 · PHY 513, Problem Set 4, eq. (10)*
 
@@ -112,6 +118,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > 1. $D = 2\operatorname{Im}D_W$ and $D_1 = 2\operatorname{Re}D_W$, so $D_W(\pm\xi) = \tfrac12\bigl(D_1(\xi) \pm iD(\xi)\bigr)$; $D$ and $D_1$ are real, $D$ odd and $D_1$ even in $\xi$.
 > 2. $\displaystyle D(\xi) = -\int\frac{d^3p}{(2\pi)^3}\,\frac{\sin(p\cdot\xi)}{E_{\mathbf p}}$ and $\displaystyle D_1(\xi) = \int\frac{d^3p}{(2\pi)^3}\,\frac{\cos(p\cdot\xi)}{E_{\mathbf p}}$; both solve the homogeneous Klein–Gordon equation.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.5 (Derivation "Both are parts of the Wightman function") · PHY 513, Problem Set 4, Problem 2*
 
 ^thm-c2b-4-3
@@ -141,6 +149,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > 1. $iD(\xi) = D_W(\xi) - D_W(-\xi)$ and $D_1(\xi) = D_W(\xi) + D_W(-\xi)$ hold in $\mathcal S'(\mathbb R^4)$; $D$ and $D_1$ are real tempered distributions ($\overline T[f] \equiv \overline{T[\bar f]}$), with transforms $\tilde D = -2\pi i\operatorname{sgn}(p^0)\,\delta(p^2 - m^2)$ and $\tilde D_1 = 2\pi\,\delta(p^2 - m^2)$.
 > 2. They act as $D[f] = -i\displaystyle\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\bigl(\tilde f(-p) - \tilde f(p)\bigr)$ and $D_1[f] = \displaystyle\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\bigl(\tilde f(-p) + \tilde f(p)\bigr)$, $p^0 = E_{\mathbf p}$.
 > 3. Both solve $(\partial^2 + m^2)T = 0$ in $\mathcal S'$, both have the light cone as singular support, and both are smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$, with spatial transforms $-\sin(E_{\mathbf p}t)/E_{\mathbf p}$ and $\cos(E_{\mathbf p}t)/E_{\mathbf p}$ at $\xi^0 = t$.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact, identities in $\mathcal S'(\mathbb R^4)$.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.5, §5.7 · PHY 513, Problem Set 4, Problem 2 · stated here as distributions*
 
@@ -212,6 +222,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > 1. $D$ vanishes as a distribution on the open spacelike region ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]): $\operatorname{supp}D \subseteq \{\xi : \xi^2 \ge 0\}$, the closed light cone. For $m = 0$, $\operatorname{supp}D$ is the cone surface $\xi^2 = 0$; for $m > 0$ it is the whole closed cone.
 > 2. Equivalently, for real $f, g \in \mathcal D(\mathbb R^4)$ whose supports are spacelike separated ($(x - y)^2 < 0$ for all $x \in \operatorname{supp}f$, $y \in \operatorname{supp}g$), $[\hat\phi(f), \hat\phi(g)] = 0$. This is the precise form of [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]] for the free field: field operators smeared over spacelike-separated regions commute.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact; part 2 is an operator identity, every state; $m = 0$ included in part 1.
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.5, App. A §A.4 (smeared operators) · stated here as a support statement (standard: Streater & Wightman, Ch. 3, locality axiom)*
 
 ^thm-c2b-4-6
@@ -239,6 +251,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > 3. hence $U = i\,\partial_tD_1 - \partial_tD$, and outside the light cone $U = i\,\partial_tD_1$.
 >
 > The average of forward and backward propagation is causal; the leak of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]] is the time derivative of the vacuum correlation $D_1$.
+>
+> *Model:* one free particle in single-particle quantum mechanics ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]) for $U$, and [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] in $|0\rangle$ for $D$ and $D_1$; *applies:* exact identities in $\mathcal S'(\mathbb R^4)$, $m > 0$.
 >
 > *Source: derived here; it makes precise the user's PHY 513 notes, Ch. 2 §2.2 (Caution "Particles moving backward in time") and PHY 513 Lecture 2, Part A ("Resolution in Quantum Field Theory")*
 
@@ -297,6 +311,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > $$
 >
 > the commutator lives on the light cone only. Both are identities in $\mathcal S'(\mathbb R^4)$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-4|Theorem §CA.6.4]]): $D$ acts as $f \mapsto -\frac{1}{4\pi}\int d^3\xi\,\bigl[f(r, \boldsymbol\xi) - f(-r, \boldsymbol\xi)\bigr]/r$, and $\mathcal P\frac{1}{\xi^2}$ is the real part of the light-cone boundary value.
+>
+> *Model:* any; *applies:* any theory (a statement about the functions, $m = 0$); their reading as vacuum values in $|0\rangle$ needs the free massless field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] with $m = 0$).
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.7 (Derivation "Explicit forms", massless), App. A §A.5 (Caution "What the formula does and does not say", example) · PHY 513, Problem Set 4, Problem 2(b)*
 
@@ -385,6 +401,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 >
 > At equal times they reduce to the canonical relations. Only the equal-time relations are postulated; the equation of motion carries them to every pair of times.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact, operator identities in every state; the unequal-time relations use the free field equation, while the equal-time ones hold for any time-independent $\hat H$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.7 (Principle "What is postulated and what is derived", Derivation "Reduction to one function, and the mode integrals")*
 
 ^thm-c2b-4-10
@@ -415,6 +433,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > For real $f, g \in \mathcal S(\mathbb R^3)$ and sharp-time fields $\hat\phi(t, f) = \int d^3x\,f(\mathbf x)\hat\phi(t, \mathbf x)$ ([[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]] at time $t$):
 > 1. The relations of [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]] hold as identities of bilinear forms, e.g. $[\hat\phi(x^0, f), \hat\pi(y^0, g)] = i\int d^3x\,d^3y\,f(\mathbf x)g(\mathbf y)\,\partial_{y^0}D(x - y)$. At fixed $t = x^0 - y^0$ the three kernels are tempered distributions in $\mathbf x - \mathbf y$ with spatial transforms $-\sin(E_{\mathbf p}t)/E_{\mathbf p}$, $\cos(E_{\mathbf p}t)$ and $-E_{\mathbf p}\sin(E_{\mathbf p}t)$ (times $i$), smooth in $t$.
 > 2. As $t \to 0$ the kernels tend in $\mathcal S'(\mathbb R^3)$ to $0$, $i\delta^3$ and $0$: the canonical relations ([[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]]) are the equal-time limits. The integral $\int\frac{d^3p}{(2\pi)^3}\cos(p\cdot\xi)$ converges for no $\xi$; it means this distribution.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact, identities of bilinear forms (sharp-time fields smeared in space).
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.7 (Derivation "Reduction to one function, and the mode integrals") · stated here as distributions*
 
@@ -452,6 +472,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > D(0, \boldsymbol\xi) = 0, \qquad \partial_0D(0, \boldsymbol\xi) = -\delta^3(\boldsymbol\xi) .
 > $$
 >
+> *Model:* any; *applies:* any theory (a statement about the function $D$, a Cauchy problem of the Klein–Gordon equation); its reading as the vacuum commutator needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.7 (Derivation "Why the equal-time data suffice: a Cauchy problem")*
 
 ^thm-c2b-4-12
@@ -480,6 +502,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > $$
 >
 > with $f\overleftrightarrow{\partial}_0g = f\partial_0g - (\partial_0f)g$. Since $D$ vanishes outside the cone, $\hat\phi(x)$ is fixed by the data $(\hat\phi, \hat\pi)$ on any earlier slice inside the backward light cone of $x$, and for $m = 0$ by the data on the surface of that cone alone.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact, an operator identity on every time slice; it uses the free field equation.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.7 (Derivation "The commutator function propagates the field")*
 

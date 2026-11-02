@@ -298,6 +298,8 @@ With it, [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]]
 
 *Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^def-c6b-7-1|Def. §C6b.7.1]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
 
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-8|P7, step 8]]
+
 > [!theorem] Theorem §C6b.7.6: The Centre-of-Mass Momentum
 > In the setting of [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-5|Theorem §C6b.7.5]],
 >
@@ -441,6 +443,8 @@ With it, [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]]
 ^der-c6b-7-8
 
 *Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-7|Theorem §C6b.7.7]]
+
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-8|P7, step 8]]
 
 > [!remark] Remark: Why 1/E²: dimensional analysis
 > The result could have been guessed. $d\sigma/d\Omega$ is an area and $\mathcal M$ is dimensionless for $2 \to 2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]), so the prefactor has dimension $(\text{energy})^{-2}$. "If particles do not sort of distinguish each other, kinematically speaking, total energy is [the] only [scale]. So it had to be basically one over the energy squared. All we can discuss is did I get the $64\pi^2$." A total cross section with an energy-independent $|\mathcal M|^2$ therefore falls like $1/E_{\rm cm}^2$ ([[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-2|Example §C6b.9.2]]).

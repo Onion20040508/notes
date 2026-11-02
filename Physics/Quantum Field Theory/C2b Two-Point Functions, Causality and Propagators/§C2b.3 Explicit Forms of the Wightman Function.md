@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a given spacetime point? Its Bessel-function forms are computed here once for the whole subject: one Euclidean evaluation ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]]) continued, through the boundary value of [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], to every spacetime point (Theorems §C2b.3.2–§C2b.3.5). The commutator function of [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]] and the Feynman function of [[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] are read off from these forms, and so is the exact single-particle amplitude of [[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]], one time derivative of $D_W$ (Theorems §C2b.3.7–§C2b.3.10).
 
+**Setup.** The function is $D_W$ of [[§C2b.2 The Wightman Function|§C2b.2]]: the two-point function of the free real field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]) in the free vacuum $|0\rangle$, with the normalization of [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]]. Every evaluation here is exact (asymptotic forms are marked) and is a statement about that function, the mode integral and its analytic continuation $W$; $m > 0$ unless stated, the massless case stated where it differs. Theorems §C2b.3.7–§C2b.3.10 concern a different system, one free particle in single-particle quantum mechanics with $\hat H = E(\hat{\mathbf P})$ and states of weight $1$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]); its amplitude $U$ is a time derivative of $D_W$.
+
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $p\cdot x = E_{\mathbf p}t - \mathbf p\cdot\mathbf x$ whenever $p$ is on shell, $[\hat a_{\mathbf p}, \hat a_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}^\dagger|0\rangle$. Lecture 5 writes $\omega_{\mathbf p}$ for $E_{\mathbf p}$ ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|Caution: Eₚ, not ωₚ; π, not Π]]). Unless stated otherwise $m > 0$; the massless case is stated separately where it differs.
 
 > [!theorem] Theorem §C2b.3.1: The Wightman Function at Imaginary Time
@@ -23,6 +25,8 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 > $$
 >
 > a function of the four-dimensional Euclidean distance alone; for $m = 0$ it is $1/4\pi^2R^2$. This is the single evaluation of the Bessel-$K$ integral in these notes.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening; exact, $m = 0$ included.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (Derivation "The relativistic amplitude in closed form", Steps 1–4, where it is the auxiliary function $D_E$), Ch. 5 §5.4*
 
@@ -85,6 +89,8 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 >
 > and $W = 1/4\pi^2s^2$ for $m = 0$. Every value of $D_W$ is a boundary value of this one function.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening; exact, a statement about the analytic function $W$, $m = 0$ included.
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (Derivation "$D_W$ everywhere, by analytic continuation", the Claim)*
 
 ^thm-c2b-3-2
@@ -123,6 +129,8 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 > $$
 > D_W(\xi) \simeq \frac{\sqrt m}{2(2\pi r)^{3/2}}\,e^{-mr}\Bigl(1 + \frac{3}{8mr} + \cdots\Bigr) .
 > $$
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening; exact, the asymptotic forms for $mr \ll 1$ and $mr \gg 1$.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 · PS §2.4, eq. (2.52) · PHY 513, Problem Set 4, Problem 3(a)*
 
@@ -271,6 +279,8 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 > D_W \simeq \frac{\sqrt m}{4\pi^2}\sqrt{\frac\pi2}\;e^{-3\pi i/4}\;t^{-3/2}\,e^{-imt} .
 > $$
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening; exact, the asymptotic form for $mt \gg 1$.
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (timelike case), §5.7 (Derivation "Explicit forms") · PS §2.4, eq. (2.51)*
 
 ^thm-c2b-3-4
@@ -318,6 +328,8 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 >
 > the leading term is the massless Wightman function, exact for $m = 0$, and is a generalized function singular on the whole cone; the logarithm is locally integrable (the distributional statement is [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]).
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening; the expansion near $\xi^2 = 0$, its leading term exact for $m = 0$.
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (light-cone case), §5.7 (the expansion of $K_1$) · PHY 513, Problem Set 4, Problem 2(a)*
 
 ^thm-c2b-3-5
@@ -358,6 +370,8 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 > 1. On the open set $\xi^2 \ne 0$ the distribution $D_W$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]]) is the real-analytic function of Theorems §C2b.3.3–§C2b.3.4: $D_W[f] = \int d^4\xi\,f(\xi)\,D_W(\xi)$ for every test function $f$ supported off the light cone.
 > 2. $\operatorname{sing\,supp}D_W$ is the whole light cone $\xi^2 = 0$, tip included ([[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]).
 > 3. On all of $\mathbb R^4$, $D_W = \dfrac{1}{4\pi^2}\,\dfrac{1}{-\xi^2 + i0\,\xi^0} + L = -\dfrac{1}{4\pi^2}\,\mathcal P\frac{1}{\xi^2} - \dfrac{i}{4\pi}\operatorname{sgn}(\xi^0)\,\delta(\xi^2) + L$, with the light-cone boundary value of [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-4|Theorem §CA.6.4]] and $L$ a locally integrable function ($L = 0$ for $m = 0$) with a logarithmic singularity and a finite jump on the cone. The $-i0\,\xi^0$ is the boundary value from $\operatorname{Im}\xi^0 < 0$ written covariantly.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* as in the opening; exact, identities in $\mathcal S'(\mathbb R^4)$.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (light-cone case, "defined only as a generalized function"), §5.7 · stated here as distributions (standard: Gel'fand & Shilov 1, Ch. III; Streater & Wightman, Ch. 2)*
 
@@ -400,6 +414,8 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 > U(z, \mathbf x) = 2i\,\partial_zW(z, \mathbf x), \qquad U = 2i\,\partial_tD_W \quad\text{in } \mathcal S'(\mathbb R^4).
 > $$
 >
+> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]), not a field; *applies:* exact, an identity of the analytic functions $U$ and $W$; $D_W$ is read as the free field's vacuum value in $|0\rangle$ ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
+>
 > *Source: derived here, from the user's PHY 513 notes, Ch. 2 §2.2 (Step 2 of Derivation "The relativistic amplitude in closed form": $U_E = -2\partial_\tau D_E$) and Ch. 5 §5.4*
 
 ^thm-c2b-3-7
@@ -426,6 +442,8 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 > $$
 >
 > a smooth function there, purely imaginary and odd in $t$, depending on the point only through the invariant $\rho$ and the factor $t$. Equivalently (cut representation, absolutely convergent), $U = \frac{i}{2\pi^2r}\int_m^\infty d\varrho\,\varrho\,e^{-\varrho r}\sinh\bigl(t\sqrt{\varrho^2 - m^2}\bigr)$. For $m\rho \ll 1$, $U \simeq it/\pi^2\rho^4$; for $m = 0$ the formula $U = it/\pi^2(r^2 - t^2)^2$ is exact at every point off the light cone.
+>
+> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]), not a field; *applies:* exact, $m > 0$, states of weight $1$ (not relativistically normalized).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (Derivations "The relativistic amplitude in closed form" and "The same result directly from the radial integral"; checks (i)–(ii)) · PHY 513 Lecture 2, Part A ("The exact radial integral: a Bessel function")*
 
@@ -528,6 +546,8 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 >
 > and $U \neq 0$ at every spacelike point with $t \neq 0$. The leading term is the saddle-point result of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]].
 >
+> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]), not a field; *applies:* $m > 0$, asymptotic in $m\rho \gg 1$.
+>
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (check (iii) of Derivation "The relativistic amplitude in closed form") · PHY 513 Lecture 2, Part A ("Quantum Causality is Violated") · PS §2.1, p. 14*
 
 ^thm-c2b-3-9
@@ -559,6 +579,8 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 > $$
 >
 > an oscillating function, $U \simeq \frac{m^{3/2}t}{(2\pi\tau)^{3/2}\tau}\,e^{-i(m\tau - 5\pi/4)}$ for $t > 0$, $m\tau \gg 1$. On the light cone $U$ is singular and is defined only as the boundary value of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]].
+>
+> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]), not a field; *applies:* exact, $m > 0$; the asymptotic form for $m\tau \gg 1$.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (check (iv) of Derivation "The relativistic amplitude in closed form"; connection formula from DLMF §10.27, checked numerically there) · DLMF §10.17 (Hankel asymptotics)*
 

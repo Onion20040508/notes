@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 This is the spinor counterpart of [[§C2a.1 Canonical Quantization of Fields|§C2a.1]]: how is the free Dirac field turned into a quantum theory? The classical ingredients have their home in Chapter C5a and are recalled first, as embedded boxes: the Lagrangian ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), the canonical momentum $\pi = i\psi^\dagger$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-1|Theorem §C5a.8.1]]), the Hamiltonian density ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-2|Theorem §C5a.8.2]]) and the field momentum ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-6|Theorem §C5a.8.6]]). Lecture 10 starts from a puzzle in that momentum: the field is its own conjugate, so the commutators of [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]] would make two coordinates fail to commute. The section therefore begins with the conjugate momentum field itself ([[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-1|Theorem §C5b.1.1]]): what $\pi_\psi = i\psi^\dagger$ means for the canonical pairs, why the puzzle is only apparent ([[§C5b.1 Canonical Quantization of the Dirac Field#^rem-c5b-1-4|Remark: Larsen's puzzle]]), and that Hamilton's equations still give the Dirac equation ([[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-3|Theorem §C5b.1.3]]); a ★ part shows by Dirac's constraint analysis why $(\psi, i\psi^\dagger)$ may be treated as canonical pairs ([[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-4|★ Theorem §C5b.1.4]]). It then states the postulate that replaces the commutators, the equal-time anticommutators, and the spin–statistics theorem that says why; the computations that justify the choice run through [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]–[[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]] and [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality|§C5b.7]], following [[P1 Canonical Quantization]]. Quantum Mechanics met the anticommutators as an algebra chosen per species ([[§C12.2★ Second Quantization|QM §C12.2★]]) and the negative energies as a filled sea ([[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]); what the field adds is said where each appears.
 
+**Setup.** The free Dirac field, first classical ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; commuting components, or Grassmann-odd ones in the ★ part), then as the canonical system [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] quantized by the equal-time anticommutators $\{\hat\psi_a(\mathbf x), \hat\psi^\dagger_b(\mathbf y)\} = \delta_{ab}\delta^3(\mathbf x - \mathbf y)$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]). No state and no vacuum is used in this section: its quantum statements are operator identities at one time (Schrödinger picture, or Heisenberg fields at equal times), exact. The Fock space and the vacuum $|0\rangle$ come in [[§C5b.3 Energy, Momentum and the Zero-Point Energy|§C5b.3]]–[[§C5b.4 Fermions, Fock Space and the Pauli Principle|§C5b.4]]; the spin–statistics theorem (Principle §C5b.1.7) is the one statement of the section about theories in general.
+
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, chiral basis for the Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]), $\bar\psi = \psi^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), $p\cdot x = E_{\mathbf p}t - \mathbf p\cdot\mathbf x$ with $p^0 = E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$ whenever $p$ labels a mode, $m > 0$; $\tilde p \equiv (E_{\mathbf p}, -\mathbf p)$ as in [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-6|Theorem §C5a.10.6]]; spatial transforms as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], with $\int d^3x\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf k)$ an identity in $\mathcal S'$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]). Spin labels $r, s \in \{1, 2\}$ refer to the spin basis $\xi^s$, $\eta^s$ of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]. These conventions hold in all of C5b.
 
 > [!caution] Caution: Names for the Dirac field and its mode operators across sources
@@ -89,6 +91,9 @@ Quantization keeps these formulas and reads $\psi$, $\psi^\dagger$, $H$ and $\ma
 > with $\{\hat\psi_a, \hat\psi_b\} = 0$ on both sides, and likewise with commutators; the postulate is [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]].
 >
 > *Scalar analogue:* the momentum of the scalar is its velocity, $\pi = \dot\phi$, a datum independent of $\phi$ ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]], [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]); for the complex scalar $\pi = \dot\phi^\dagger$, still a velocity ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]).
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] (parts 1–2, classical), [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] (part 3, the quantized operators); *applies:* free field, exact; part 3 holds for anticommutators and for commutators alike.
+>
 > *Source: Lecture 10, slide 5 ("Canonical Quantization": $\Pi_\psi = \partial\mathcal L/\partial\dot\psi = \bar\psi i\gamma^0 = i\psi^\dagger$) and slide 7 ("$\Pi \sim \psi$ rather than $\Pi \sim \dot\psi$") · the user's PHY 513 notes, Ch. 10 §10.1 (Derivation "The momentum conjugate to ψ", eq. (diracPi)) and §10.4 (Principle "The equal-time anticommutators": "equivalently $\{\hat\psi_a, \hat\Pi_{\psi,b}\} = i\delta_{ab}\delta^3$") · PS §3.5, p. 52 (above eq. (3.84)) · Yu §5.4.3, eqs. (5.219)–(5.220) and the note after (5.220); §5.5.1, eqs. (5.228)–(5.229); §5.5.2, eqs. (5.238)–(5.239) · the user's pre-course notes, §5.4 ("Plane-wave expansion and Hamiltonian")*
 
 ^thm-c5b-1-1
@@ -191,6 +196,9 @@ The single-particle Hamiltonian, the kernel of $H$ and of the Hamiltonian densit
 > The first is $i\partial_t\psi = H_{\text{s.p.}}\psi$, the Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]) multiplied by $\gamma^0$; the second is its adjoint, the conjugate equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]], part 2): the two Hamilton equations are one complex equation.
 >
 > *Scalar analogue:* [[§C1b.4 Hamiltonian Field Theory#^ex-c1b-4-1|Example §C1b.4.1]] ($\dot\phi = \pi$, $\dot\pi = \nabla^2\phi - m^2\phi$, together the Klein–Gordon equation).
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* classical, commuting components, exact; the quantum counterpart is the Heisenberg equation ([[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-2|Theorem §C5b.6.2]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 10 §10.5 ("Multiplying the Dirac equation by $\gamma^0$ gives $i\partial_t\psi = H_{\text{s.p.}}\psi$") · PS §3.5, eqs. (3.84)–(3.85) · the user's pre-course notes, §1.6 (canonical field equations) · Hamilton's equations for $\psi$ worked out here*
 
 ^thm-c5b-1-3
@@ -310,6 +318,8 @@ The single-particle Hamiltonian, the kernel of $H$ and of the Hamiltonian densit
 > $\{\psi_a, \psi_b\}_D = \{\psi^\dagger_a, \psi^\dagger_b\}_D = 0$ and $\{\psi_a(\mathbf x), \pi_b(\mathbf y)\}_D = \delta_{ab}\delta^3(\mathbf x - \mathbf y)$.
 > 4. Dirac's rule gives $[\hat\psi_a(\mathbf x), \hat\psi^\dagger_b(\mathbf y)] = \delta_{ab}\delta^3(\mathbf x - \mathbf y)$ for $\varepsilon = 0$ (the provisional relations, [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-2|Caution: The provisional commutator quantization]]) and $\{\hat\psi_a(\mathbf x), \hat\psi^\dagger_b(\mathbf y)\} = \delta_{ab}\delta^3(\mathbf x - \mathbf y)$ for $\varepsilon = 1$ ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]): the constraint analysis fixes which fields pair and with what normalization, not the statistics.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, components of either parity, exact; part 4 is Dirac's quantization rule applied to the brackets.
+>
 > *Source: derived here; no course source does the constraint analysis. Method standard (Dirac, Lectures on Quantum Mechanics, 1964; Henneaux & Teitelboim, Quantization of Gauge Systems, for Grassmann variables). Inputs: Theorem §C5a.8.1 (PS §3.5, p. 52; Yu eq. (5.219)); Grassmann fields as in the user's PHY 513 notes, Ch. 3 §3.3*
 
 ^thm-c5b-1-4
@@ -378,6 +388,8 @@ The single-particle Hamiltonian, the kernel of $H$ and of the Hamiltonian densit
 >
 > The normalization of the canonical relations is fixed by the constraint analysis, not by reading $\pi$ off a particular $\mathcal L$: a total derivative in $\mathcal L$ moves the momenta but not the brackets.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] with $\mathcal L_{\rm sym}$; *applies:* classical, components of either parity, exact.
+>
 > *Source: derived here; no course source computes the momenta of $\mathcal L_{\rm sym}$ (stated without derivation as a by-product in [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^der-c5a-8-1|Derivation §C5a.8.1]]). The symmetric density: the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "Two further properties of the Dirac Lagrangian"); Yu §5.3, eqs. (5.97)–(5.99)*
 
 ^thm-c5b-1-5
@@ -435,6 +447,9 @@ The single-particle Hamiltonian, the kernel of $H$ and of the Hamiltonian densit
 > *Domain:* fields of half-odd-integer spin (here the Dirac field), Schrödinger-picture operators or Heisenberg operators at a common time; integer-spin fields keep commutators. The relations are identities of operator-valued distributions ([[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-8|Theorem §C5b.1.8]]). The operator ordering in $\hat H$ is not fixed by the principle ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^def-c5b-3-1|Def. §C5b.3.1]]). The choice is forced by positivity ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]) and by causality ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]]).
 >
 > *Scalar analogue:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* as in its *Domain*; an operator algebra, no vacuum or states assumed.
+>
 > *Source: Lecture 10, slides 6 and 23 · the user's PHY 513 notes, Ch. 10 §10.4 (Principle "The equal-time anticommutators") · PS §3.5, eqs. (3.96), (3.102) · Yu §5.5.2, eqs. (5.238)–(5.239) · the user's pre-course notes, §5.5, eq. (car)*
 
 ^pr-c5b-1-6
@@ -444,6 +459,9 @@ The single-particle Hamiltonian, the kernel of $H$ and of the Hamiltonian densit
 > *Claim:* a physical field of integer spin (a representation $(j_+, j_-)$ of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]] with $j_+ + j_-$ an integer) must be quantized with commutation relations ([[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]) and describes bosons; a physical field of half-odd-integer spin must be quantized with anticommutation relations ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]]) and describes fermions ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|Theorem §C5b.4.2]]). Causality is microcausality of observables ([[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]]).
 >
 > *Layer:* stated, not proved, in this course (Lecture 10: "The proof is complicated"); the free fields of the course are checked in [[§C5b.9 Spin and Statistics#^thm-c5b-9-1|Theorem §C5b.9.1]].
+>
+> *Model:* any local, Lorentz-invariant quantum field theory with the ingredients listed, not only free fields; *applies:* stated, not proved here; the free fields of the course are checked in [[§C5b.9 Spin and Statistics#^thm-c5b-9-1|Theorem §C5b.9.1]].
+>
 > *Source: Lecture 10, slide 7 · the user's PHY 513 notes, Ch. 10 §10.2 (Principle "The spin–statistics theorem") · Yu §5.5.4 (boxed statement, after eq. (5.293)) · PS §3.5, pp. 57–58 (Pauli 1940; Streater & Wightman, cited there) · the user's pre-course notes, §5.5, Theorem "Spin–statistics theorem"*
 
 ^pr-c5b-1-7
@@ -480,6 +498,8 @@ The single-particle Hamiltonian, the kernel of $H$ and of the Hamiltonian densit
 > 3. The field at a point is still not an operator: it would need $\|f\|_{L^2} = \infty$ ($f \to \delta$), and $\{\hat\psi_a(\mathbf x), \hat\psi^\dagger_a(\mathbf x)\} = \delta^3(\mathbf 0)$ has no value.
 >
 > Bosonic smeared fields are unbounded ([[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], Step 4: each pair with $\int fg = 1$ is a canonical pair $[\hat Q, \hat P] = i$, which has no bounded solutions).
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* any operators obeying the anticommutators of [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]], in any state, exact.
 >
 > *Source: stated and derived here (standard: Bratteli & Robinson, Operator Algebras and Quantum Statistical Mechanics 2, §5.2.2) · the user's PHY 513 notes, App. A §A.4 (smeared operators)*
 
@@ -530,6 +550,9 @@ Canonical quantization replaces the bracket by $-i$ times a commutator ([[§C1b.
 > commutators although the fields anticommute, because $\hat{\mathbf P}$ is bilinear. These are the space components of the translation law $[\hat\Phi_a(x), \hat P^\mu] = i\partial^\mu\hat\Phi_a(x)$ of [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]]: the Noether momentum of the Dirac field is the generator of space translations. The time component is the Heisenberg equation, [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-2|Theorem §C5b.6.2]].
 >
 > *Scalar analogue:* [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|Theorem §C3.5.6]], Steps 1 and 3.
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field at equal times, an operator identity in any state, exact.
+>
 > *Source: the general law: the user's PHY 513 notes, Ch. 7 §7.6, eq. (PPhi); Yu §3.2, eqs. (3.80)–(3.86) · for the Dirac field computed here, as Theorem §C3.5.6 does for the scalar*
 
 ^thm-c5b-1-9

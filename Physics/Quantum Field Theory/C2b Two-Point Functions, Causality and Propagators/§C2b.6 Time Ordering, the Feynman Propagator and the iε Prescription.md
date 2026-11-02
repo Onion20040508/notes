@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 Which Green's function is a vacuum expectation value of field operators? The Feynman propagator: the vacuum expectation value of the time-ordered product, defined here, computed with a contour of [[§C2b.5 Green's Functions and Contours|§C2b.5]] from the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]]. Its mirror image, the anti-Feynman function, is the vacuum expectation value of the anti-time-ordered product. The section shows that the Feynman propagator is a Green's function as an operator statement, relates time ordering to normal ordering (with the zero-point energy as the same subtraction at one point), and turns the contours into the $i\varepsilon$ prescription.
 
+**Setup.** The system is [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]: quantum, free, $m > 0$, the free Heisenberg field, in the free vacuum $|0\rangle$; the normalization $(\partial^2 + m^2)D_C = -i\delta^4$ makes $D_F = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$ with no prefactor. Time ordering itself is defined for any field operators, interacting ones included; the contour and $i\varepsilon$ results are statements about functions; the propagators as vacuum values and the operator identities (contraction, Schwinger–Dyson) are exact for the free field. With interactions the time-ordered two-point function in $|\Omega\rangle$ is not $D_F$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-4|Caution: With interactions, the two-point function is not D_F]]).
+
 *Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\{\hat\phi\hat\phi\}|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
 
 ## Time ordering and the Feynman propagator
@@ -191,6 +193,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 >
 > with $\theta(0) = \frac12$ as for $T$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]]); for $n$ fields the factors stand in order of increasing time.
 >
+> *Model:* any; *applies:* any field operators, as for $T$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.11 ($\bar T$, "the earlier operator to the left")*
 
 ^def-c2b-6-2
@@ -203,6 +207,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > $$
 >
 > with $\bar T$ of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-2|Def. §C2b.6.2]], the products taken slice by slice.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.8 (table of contours, "every entry checked by integrating along the real axis at finite $\varepsilon$"), §6.11*
 
@@ -522,6 +528,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > $$
 >
 > The homogeneous solutions that separate the Green's functions are built from the on-shell measure of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]].
+>
+> *Model:* any; *applies:* any theory (a statement about the functions, identities in $\mathcal S'$); their reading as vacuum values in $|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.9 (Derivation "The distributional version: Sokhotski–Plemelj")*
 

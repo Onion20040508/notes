@@ -117,6 +117,8 @@ and the plane waves meeting at a vertex integrate to a delta function:
 
 ^def-c6a-12-1
 
+*Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-1|P6, step 1]]
+
 > [!theorem] Theorem §C6a.12.2: Vertex Factors of a Polynomial Interaction
 > Let $\mathcal L_{\rm int} = -\sum_tg_t\,M_t$, each $M_t$ a monomial without derivatives in fields of kinds $k$ ($\phi$, $\Phi$, or $\phi$ and $\phi^\dagger$ of a complex field), with $m_{t,k}$ factors of kind $k$ (the vertex data of [[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]]). Then:
 > 1. the **vertex factor** of type $t$ is $i$ times the coefficient of $M_t$ in $\mathcal L_{\rm int}$ times the number of ways to attach distinct lines to its legs:
@@ -181,6 +183,8 @@ and the plane waves meeting at a vertex integrate to a delta function:
 ^der-c6a-12-2
 
 *Uses:* [[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]
+
+*Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-2|P6, step 2]]
 
 ## The rules
 
@@ -254,6 +258,8 @@ and the plane waves meeting at a vertex integrate to a delta function:
 ^der-c6a-12-3
 
 *Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]
+
+*Procedure:* [[P5 Symmetry Factor of a Diagram#^p5-1|P5, steps 1–2]]
 
 > [!theorem] Theorem §C6a.12.4: Feynman Rules for a Polynomial Interaction in Momentum Space
 > Each diagram of [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]] equals the following expression:

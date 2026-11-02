@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 How are the values of the free field at two spacetime points correlated in the vacuum? The answer is a function, the vacuum two-point function $D_W$, built from the Heisenberg field of [[§C2b.1 Heisenberg Fields|§C2b.1]] ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]); whether the theory is causal turns on it. This section defines it, writes it as a Lorentz-invariant mode integral that solves the Klein–Gordon equation, and shows that it is the boundary value of an analytic function. Its explicit forms are [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]], and its antisymmetric part, the commutator function, is [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]].
 
+**Setup.** The system is [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]: quantum, free, $m > 0$, the free Heisenberg field of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]. The state is the free vacuum $|0\rangle$; the normalization is $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, which gives $D_W$ the invariant measure $d^3p/(2\pi)^32E_{\mathbf p}$ with no prefactor. The results are exact; those about the mode integral and its analytic continuation are statements about a function and need no dynamics. The two-point functions of an interacting theory are taken in $|\Omega\rangle$ and are not $D_W$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-2|Def. §C6a.4.2]]; [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-4|§C2b.6, Caution: With interactions, the two-point function is not D_F]]).
+
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $p\cdot x = E_{\mathbf p}t - \mathbf p\cdot\mathbf x$ whenever $p$ is on shell, $[\hat a_{\mathbf p}, \hat a_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}^\dagger|0\rangle$. Lecture 5 writes $\omega_{\mathbf p}$ for $E_{\mathbf p}$ ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|Caution: Eₚ, not ωₚ; π, not Π]]). Unless stated otherwise $m > 0$; the massless case is stated separately where it differs.
 
 ## The Wightman function
@@ -132,6 +134,8 @@ How are the values of the free field at two spacetime points correlated in the v
 > [!theorem] Theorem §C2b.2.3: Lorentz Invariance of the Wightman Function
 > For every $\Lambda \in SO^+(1,3)$, $D_W$ is invariant as a distribution, $D_W[f\circ\Lambda^{-1}] = D_W[f]$ for every test function $f$ ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]); where $D_W$ is a function, off the light cone ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]), this reads $D_W(\Lambda\xi) = D_W(\xi)$. Hence $D_W$ is constant on the orbits of $SO^+(1,3)$: a function of $\xi^2$ alone at spacelike $\xi$, and of $\xi^2$ and $\operatorname{sgn}\xi^0$ at timelike $\xi$ (on the light cone, where $D_W$ is singular, the future and past halves are also distinct orbits).
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; the proof uses only the invariant mode integral of [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]].
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 · PS §2.4, p. 27 ("we have already argued in (2.40) that integrals of this form are Lorentz invariant")*
 
 ^thm-c2b-2-3
@@ -204,6 +208,8 @@ How are the values of the free field at two spacetime points correlated in the v
 > $$
 >
 > in $\mathcal S'(\mathbb R^4)$: for every test function $f$, $\int d^4\xi\,f(\xi)\,W(\xi^0 - i\varepsilon, \boldsymbol\xi) \to D_W[f]$ of [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], 2 ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|Theorem §CA.6.1]]). The limit is the same along $\xi - i\varepsilon\eta$ for every $\eta$ in the open forward light cone. This limit *is* the definition of the physicist's "$\xi^0 \to \xi^0 - i\varepsilon$".
+>
+> *Model:* any; *applies:* any theory (a statement about the function $W$, resting only on $E_{\mathbf p} > 0$); its reading as the vacuum value in $|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (Principle "The Wightman function is a boundary value") · PHY 513, Problem Set 4, Problem 2(a) (the prescription $t \to t - i\varepsilon$)*
 

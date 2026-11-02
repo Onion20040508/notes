@@ -230,6 +230,8 @@ The pairings and their number, from [[§CA.7 Pairings, Diagrams and Symmetry Fac
 ^der-c6a-6-2b
 
 > [!example] Example §C6a.6.1: Four Fields
+> ![[ph-qft-c6a-6-1.svg]]
+>
 > For four fields, Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]) has $1 + 6 + 3 = 10$ terms. With the bracket $\overbracket{\hat\phi_i\hat\phi_j} = D_F(x_i - x_j) \equiv D_{ij}$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]; inside $:\;:$ the fields may be reordered, [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], 3, so each contracted pair is written side by side):
 >
 > $$
@@ -314,6 +316,8 @@ The pairings and their number, from [[§CA.7 Pairings, Diagrams and Symmetry Fac
 *Pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]) drawn as arcs. (a) The three pairings of four points. (b) The step of the proof of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]: the partner of the first point has $2k-1$ choices, and the remaining $2k-2$ points are paired in $(2k-3)!!$ ways, here $5\cdot3 = 15$. (c) An odd set has no pairing. Each pairing is one term of a free vacuum value (Theorem §C6a.6.3).*
 
 > [!example] Example §C6a.6.2: The Free Four-Point Function
+> ![[ph-qft-c6a-6-2.svg]]
+>
 > Write $\overbracket{\hat\phi_i\hat\phi_j} = D_F(x_i - x_j) \equiv D_{ij}$ ([[§C6a.5 Normal Ordering and Contractions#^def-c6a-5-1|Def. §C6a.5.1]]).
 >
 > **Step 1** (time order → normal order plus contractions). By Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]; the ten terms of [[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]),

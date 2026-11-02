@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 How does spinor space split into a left- and a right-handed half without reference to a basis, and how are the indices of the halves handled? Layers 1–5 ([[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]–[[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]) gave $V$, the Clifford action, the Dirac form and the Lorentz action, under which the chiral basis shows two invariant halves. This section adds **layer 6**, a grading: the matrix $\gamma^5 = i\gamma^0\gamma^1\gamma^2\gamma^3$ is Lorentz invariant, and its eigenspaces $V_L$ ($\gamma^5 = -1$) and $V_R$ ($\gamma^5 = +1$) are the Weyl halves in every basis, with projectors $P_L$, $P_R$. It then gives the index calculus of Weyl spinors (undotted and dotted indices, the invariant $\varepsilon$, the four-vector as a bispinor), what each Dirac index labels, and closes the basis question opened in §C5a.1: which bases are used and why (chiral, Dirac, ★ Majorana). $\gamma^5$ as a volume element, its properties and the basis-free split are mathematics ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.12]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]), as are $\varepsilon$ and $SL(2, \mathbb C) = Sp(2, \mathbb C)$ ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors|§CB.8]]); they are shown in the blocks below. This section keeps the course's chiral form of $\gamma^5$, the projectors, the index calculus and the bases.
 
+**Setup.** As in [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]]: representation facts, no dynamics. $\gamma^5$, the chirality projectors and the index calculus act on any Dirac or Weyl spinor (classical field values, c-number spinors, the spinor index of the quantum field), exact and for every mass; chirality here is a property of spinors, not yet of solutions (helicity of solutions: [[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]]). One statement depends on the components: the vanishing of $\psi^a\psi_a$ needs commuting components (Theorem §C5a.5.3, 3).
+
 *Conventions* as in [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]] and [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]; $\varepsilon^{0123} = +1$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]). The "5" of $\gamma^5$ is a label, not a Lorentz index.
 
 ## The mathematics used here
@@ -60,6 +62,8 @@ Yu writes $\gamma_5 \equiv \gamma^5$ for the same matrix. Its totally antisymmet
 > 1. In the chiral basis $\gamma^5 = \begin{pmatrix}-\mathbb 1 & 0\\ 0 & \mathbb 1\end{pmatrix}$.
 > 2. On the Dirac representation $\gamma^5 = \frac43\bigl(\mathbf J_-^2 - \mathbf J_+^2\bigr)$, with the Casimirs $\mathbf J_\pm^2$ of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-5|Theorem §CB.17.5]], equivalently $\mathbf J\cdot\mathbf K = \frac{3i}4\gamma^5$.
 > 3. In every basis, the eigenspaces $\gamma^5 = -1$ and $\gamma^5 = +1$ are two-dimensional, invariant under $\Lambda_{1/2}$, and carry $(\frac12, 0)$ and $(0, \frac12)$ (Theorem §C5a.3.2): left-handed spinors ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^def-c5a-4-1|Def. §C5a.4.1]]) are the $\gamma^5 = -1$ spinors.
+>
+> *Model:* none (a representation fact); *applies:* as in the opening, any Dirac spinor, independent of the dynamics.
 >
 > *Source: PS §3.4, p. 50 ("$[\gamma^5, S^{\mu\nu}] = 0$. Thus the Dirac representation must be reducible …"; eq. (3.72)) · Yu §5.1, eq. (5.36) ($\gamma^5$ a Lorentz scalar), §5.2, eq. (5.73) · the user's PHY 513 notes, Ch. 9 §9.6 (Definition "The matrix $\gamma^5$": "$\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$") · the user's pre-course notes, §5.2 · part 3 written out here*
 
@@ -185,6 +189,8 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 > 2. An upper undotted index transforms with $(\Lambda_L^{\mathsf T})^{-1}$: $\psi^a \to \psi^b(\Lambda_L^{-1})_b{}^a$.
 > 3. $\chi^a\psi_a = \varepsilon^{ab}\chi_b\psi_a$ is invariant; $\chi_a\psi^a = -\chi^a\psi_a$; for commuting components $\psi^a\psi_a = 0$.
 >
+> *Model:* none (a representation fact); *applies:* any Weyl spinor; the last clause of part 3 needs commuting components (classical fields, c-number spinors); for anticommuting components $\psi^a\psi_a = -2\psi_1\psi_2 \ne 0$ ([[§C5a.5 Chirality and Weyl Spinors#^der-c5a-5-3|Derivation §C5a.5.3]], ⚑).
+>
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "Index calculus for Weyl spinors": "$M^{\mathsf T}EM = (\det M)E$ … $E$ is an invariant bilinear form on the left-handed slot … the position of the contracted index matters"; checked numerically there)*
 
 
@@ -211,6 +217,8 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 > [!theorem] Theorem §C5a.5.4: Dotted Indices, Conjugation and the Invariant Pairings
 > 1. If $\psi_a$ is left-handed, $\bar\psi_{\dot a} = (\psi_a)^*$ transforms with $\Lambda_L^*$, and $\bar\psi^{\dot a} = \varepsilon^{\dot a\dot b}\bar\psi_{\dot b}$, i.e. $E\psi_L^* = i\sigma^2\psi_L^*$, transforms with $\Lambda_R$: it is right-handed (the spin-½ case of [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-14|Theorem §CB.17.14]]). Conversely $(\psi^{\dot a})^*$ transforms with $\Lambda_R^* = (\Lambda_L^{\mathsf T})^{-1}$, as an upper undotted index.
 > 2. Invariant pairings: $\psi_R^\dagger\chi_L = \bar\psi^a\chi_a$, $\psi_L^\dagger\chi_R = \bar\psi_{\dot a}\chi^{\dot a}$, $\chi^a\psi_a$, $\chi_{\dot a}\psi^{\dot a}$. A dotted index is never contracted with an undotted one: $\chi_R^{\mathsf T}E\psi_L$ is not invariant.
+>
+> *Model:* none (a representation fact); *applies:* as in the opening, any Weyl spinor, independent of the dynamics.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.2 (Derivation "Index calculus for Weyl spinors": "Right-handed spinors are a different slot … The two slots are paired instead through complex conjugation"; Derivation "The two halves … related by conjugation") · PS eq. (3.38)*
 

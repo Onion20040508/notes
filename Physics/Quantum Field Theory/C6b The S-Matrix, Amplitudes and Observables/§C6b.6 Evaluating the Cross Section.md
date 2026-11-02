@@ -368,6 +368,8 @@ The first underbrace of the theorem, "kinematics of the initial particles" (slid
 
 *Uses:* [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.5 Wave Packets and the Cross Section#^def-c6b-5-5|Def. §C6b.5.5]], [[§C6b.5 Wave Packets and the Cross Section#^def-c6b-5-6|Def. §C6b.5.6]]
 
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-7|P7, step 7]]
+
 > [!theorem] Theorem §C6b.6.5: The Scattering Probabilities Add Up to One
 > Let $|\psi\rangle$ be a normalized state and assume the out states are complete. Summing over the particle contents of the final state, with $S_{\rm id}$ of [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-4|Theorem §C6b.6.4]] for each content,
 >

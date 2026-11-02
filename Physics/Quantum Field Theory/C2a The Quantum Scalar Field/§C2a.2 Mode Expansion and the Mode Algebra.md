@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 How is the free real scalar field written in terms of oscillators, and what algebra do they obey? [[§C2a.1 Canonical Quantization of Fields|§C2a.1]] supplied the quantum model ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]) and the postulate ([[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]]); this section first shows that the classical field is a set of oscillators ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-1|Theorem §C2a.2.1]]); Quantum Mechanics supplies the oscillator algebra ([[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-1|QM Theorem §C3.4.1]]). This section derives the mode expansion and its algebra; the tool that extracts the oscillators from the field is the Klein–Gordon inner product. The energy and momentum follow in [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]] and the particles in [[§C2a.4 Particles and Relativistic Normalization|§C2a.4]]; the steps here are [[P1 Canonical Quantization#^p1-5|P1, steps 5–6]].
 
+**Setup.** Two systems, both free with $m > 0$ in infinite space. Classical: the free real field of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]] (Theorem §C2a.2.1) and the c-number solutions of the Klein–Gordon equation (the inner product and its modes, Def. §C2a.2.1–Theorem §C2a.2.4). Quantum: [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], whose operators are written at $t = 0$; the time dependence is added in [[§C2b.1 Heisenberg Fields|§C2b.1]]. The operator statements hold in every state; the vacuum $|0\rangle$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]) enters only in Theorem §C2a.2.7, 2. Normalization: continuum, $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, modes $f_{\mathbf p} = e^{-ip\cdot x}/\sqrt{2E_{\mathbf p}}$.
+
 ## The free field as oscillators
 
 > [!theorem] Theorem §C2a.2.1: The Free Field Is a Set of Independent Oscillators
@@ -23,6 +25,8 @@ How is the free real scalar field written in terms of oscillators, and what alge
 > $$
 >
 > a sum of independent oscillators of unit mass and frequency $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, one for each $\mathbf p$.
+>
+> *Model:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]; *applies:* classical, free field, exact, for fields whose transforms are wave packets (the Fourier exchanges of the derivation).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.2 (Derivation "The decoupling is classical") · PS §2.3, eqs. (2.21)–(2.22) · PHY 513 Lecture 4, Part B ("modes decouple")*
 
@@ -189,6 +193,8 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 >
 > evaluated on any time slice; it is antilinear in $f$ and linear in $g$. The **positive-frequency modes** are $f_{\mathbf p}(x) = e^{-ip\cdot x}/\sqrt{2E_{\mathbf p}}$, $p^0 = E_{\mathbf p}$; their conjugates $f^{\ast}_{\mathbf p}$ are the negative-frequency modes.
 >
+> *Model:* c-number solutions of the free Klein–Gordon equation ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]); *applies:* free field only: the slice independence ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 1) uses the Klein–Gordon equation.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.5 · PHY 513 Problem Set 3, Problem 3*
 
 ^def-c2a-2-1
@@ -202,6 +208,8 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > $$
 >
 > the product is indefinite, positive on positive frequencies and negative on negative ones.
+>
+> *Model:* c-number solutions of the free Klein–Gordon equation ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]); *applies:* exact; part 1 for solutions that fall off at spatial infinity, part 2 as identities in $\mathcal S'$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.5, eqs. (KG inner product), (KGortho) · PHY 513 Problem Set 3, Problem 3(a), course solution*
 
@@ -266,6 +274,8 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 >
 > [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-3|Theorem §C2a.2.3]], 2 is the kernel of these identities: $(f_{\mathbf p}, f_{\mathbf q}) = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$ holds in $\mathcal S'(\mathbb R^6)$, as a statement about its pairings with $\overline{g(\mathbf p)}h(\mathbf q)$.
 >
+> *Model:* c-number solutions of the free Klein–Gordon equation ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]); *applies:* exact, for $m > 0$ (the smoothness of $E_{\mathbf p}^{\pm1/2}$).
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.5 (Klein–Gordon product) and §4.8 (Caution "Two honesty points": genuine states are wave packets) · stated and proved here for wave packets (standard: Plancherel)*
 
 ^thm-c2a-2-4
@@ -310,6 +320,8 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > $$
 >
 > independent of the time slice on which the integral is taken.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact, an operator identity (a distribution in $\mathbf p$); the slice independence uses the free field equation, so with interactions the extraction holds at the reference time only, as [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]] does.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.5, eqs. (ainverse), (selection) · PHY 513 Problem Set 3, Problem 3(b), course solution · PS §2.3, p. 21 · Yu §2.3.2, eqs. (2.106)–(2.113)*
 
@@ -500,6 +512,8 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 >
 > $\hat a^\dagger$ is an operator-valued distribution on momentum space ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]), and so is $\hat a$ (antilinear in $g$: $g \mapsto \hat a(\bar g)$ is linear), and $\hat a^\dagger(g)$ creates one quantum in the wave packet $g$.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* the free mode operators; no state needed.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": $\hat a^\dagger_{\mathbf p}$ is an operator-valued distribution, defined after smearing; the packet operator of "Macroscopic occupation") · standard (Streater & Wightman, Ch. 3)*
 
 ^def-c2a-2-2
@@ -509,6 +523,8 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > 1. $[\hat a(g), \hat a^\dagger(h)] = \int\frac{d^3p}{(2\pi)^3}\,\overline{g(\mathbf p)}\,h(\mathbf p)$ and $[\hat a(g), \hat a(h)] = [\hat a^\dagger(g), \hat a^\dagger(h)] = 0$; [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]] is the kernel of these identities in $\mathcal S'(\mathbb R^6)$.
 > 2. On wave-packet states $\hat a_{\mathbf p}$ gives vectors, e.g. $\hat a_{\mathbf p}\,\hat a^\dagger(h)|0\rangle = h(\mathbf p)|0\rangle$; but $\hat a^\dagger_{\mathbf p}|0\rangle$ is not normalizable, and $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf p}] = (2\pi)^3\delta^3(\mathbf 0)$ has no value.
 > 3. For real $f \in \mathcal S(\mathbb R^3)$ the smeared fields of [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]] are $\hat\phi(f) = \hat a(g_f) + \hat a^\dagger(g_f)$ and $\hat\pi(f) = -i\bigl(\hat a(h_f) - \hat a^\dagger(h_f)\bigr)$, with $g_f = \tilde f/\sqrt{2E_{\mathbf p}}$ and $h_f = \sqrt{E_{\mathbf p}/2}\,\tilde f$ in $\mathcal S$ (for $m > 0$).
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact; parts 1 and 3 are operator identities, part 2 holds on the Fock space over $|0\rangle$; part 3 needs $m > 0$.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.5 (eq. (aadagger)) and §4.8 (Caution "Two honesty points") · stated and derived here as an identity of distributions (standard: Streater & Wightman, Ch. 3)*
 

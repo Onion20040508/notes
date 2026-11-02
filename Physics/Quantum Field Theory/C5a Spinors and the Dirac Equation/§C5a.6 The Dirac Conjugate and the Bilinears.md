@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 Which numbers built from two spinors do all observers agree on, and which Lorentz tensors can be built from a Dirac field? The Dirac form and the Dirac conjugate $\bar\psi = \psi^\dagger\gamma^0$ are layer 3 ([[§C5a.2 The Dirac Form|§C5a.2]]), the Lorentz action $\Lambda_{1/2}$ layers 4–5 ([[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]], [[§C5a.4 SL(2,C) and the Group Action on Spinor Space|§C5a.4]]), the chirality projectors layer 6 ([[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]). This section puts them together: why $\psi^\dagger\psi$ is not a scalar, why the Dirac form is Lorentz invariant ($\Lambda_{1/2}$ is pseudo-unitary for $\gamma^0$), how $\bar\psi$ transforms, and the sixteen bilinears $\bar\psi\Gamma\chi$ with their transformation and reality. Their Weyl components are taken up with the two-component Dirac equation in [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]]. The field equation and the Lagrangian built from them are [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]]; the Noether currents [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field|§C5a.8]]. The pseudo-unitarity of $\Lambda_{1/2}$ and the classification of the sixteen products are mathematics ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]), shown in the blocks below; this section keeps $\bar\psi$ and the bilinears of fields.
 
+**Setup.** Classical: $\psi$, $\chi$ are classical Dirac fields with commuting components (or c-number spinors), and no field equation is used. The transformation laws (Theorems §C5a.6.1–§C5a.6.3) are representation facts: they use only the law $\psi'(x) = \Lambda_{1/2}\psi(\Lambda^{-1}x)$, so they hold for any field obeying it, free or not, on or off shell. The reality of the bilinears (Theorem §C5a.6.4) needs commuting components. The same bilinears of the quantum field are $\hat{\bar\psi}\Gamma\hat\psi$ ([[§C9.4 Fermion Bilinears under Parity|§C9.4]]).
+
 *Conventions* as in [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]]; $\psi$ a classical field with commuting components; $\varepsilon^{0123} = +1$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]); $a\overleftrightarrow{\partial}b \equiv a\,\partial b - (\partial a)\,b$.
 
 ## The mathematics used here
@@ -50,6 +52,8 @@ Why $\psi^\dagger\psi$ is not a scalar and $\bar\psi\psi$ is: the adjoints of th
 > $$
 >
 > and for any two Dirac fields $\psi$, $\chi$ the number $\bar\psi\chi = \psi^\dagger\gamma^0\chi$ is a Lorentz scalar field ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]), $(\bar\psi'\chi')(x) = (\bar\psi\chi)(\Lambda^{-1}x)$. Moreover $(\bar\psi)^\dagger = \gamma^0\psi$.
+>
+> *Model:* none (a representation fact); *applies:* any Dirac field obeying the law of [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]], independent of the dynamics, off shell included.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.7 (Derivation, Step 4; Definition "The Dirac conjugate") · PHY 513 Lecture 8, Part B · PS §3.2, eq. (3.33) · Yu §5.3, eqs. (5.91)–(5.92)*
 
@@ -135,6 +139,8 @@ The pseudoscalar and axial vector (Theorem §C5a.6.3) use that $\gamma^5$ commut
 >
 > a scalar, a vector and an antisymmetric tensor field ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-5|Theorem §C3.3.5]], [[§C3.3 How Fields Transform under the Lorentz Group#^thm-c3-3-6|Theorem §C3.3.6]]). A string of $n$ $\gamma$'s gives an $n$-index tensor.
 >
+> *Model:* none (a representation fact); *applies:* as in the opening, any Dirac fields obeying the Lorentz law, off shell included.
+>
 > *Source: the user's PHY 513 notes, Ch. 8 §8.9 (Derivation "The first three bilinears") · PHY 513 Lecture 8, Part B · PS §3.4, p. 49 · Yu §5.3, eqs. (5.92), (5.94), (5.96)*
 
 ^thm-c5a-6-2
@@ -201,6 +207,8 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.11 Gamma
 >
 > for proper orthochronous $\Lambda$ ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|Theorem §CB.3.13]]) they transform exactly as a scalar and a vector. They differ from $\bar\psi\psi$ and $\bar\psi\gamma^\mu\psi$ only by a sign under parity ([[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-4|Theorem §C9.4.4]]).
 >
+> *Model:* none (a representation fact); *applies:* as in the opening, proper orthochronous $\Lambda$ only; parity: [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-4|Theorem §C9.4.4]].
+>
 > *Source: PS §3.4, p. 50 ("pseudo-vector and pseudo-scalar") · Yu §5.3, eqs. (5.93), (5.95) · the user's PHY 513 notes, Ch. 8 §8.9 (closing paragraph)*
 
 ^thm-c5a-6-3
@@ -228,6 +236,8 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.11 Gamma
 > $$
 >
 > while $\bar\psi\gamma^5\psi$ is imaginary.
+>
+> *Model:* none; *applies:* classical fields or c-number spinors, commuting components, any configuration (no field equation used).
 >
 > *Source: Yu §5.3, eqs. (5.97)–(5.101) · the user's PHY 513 notes, Ch. 8 §8.8 ("Yu (5.97)–(5.101) give the reality of the bilinears") · the user's pre-course notes, §5.3*
 

@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 Which terms may a relativistic Lagrangian contain, and which of them matter at long distances? The units are [[§C1a.2 Natural Units and Dimensional Analysis|§C1a.2]] (natural units, the mass dimension, the exponent rule and the counting rules, [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]]); the Lagrangian density and the action are [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-1|Def. §C1b.2.1]] and [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-2|Def. §C1b.2.2]], and the field laws they must respect are [[§C1b.1 Fields and Their Transformation Laws|§C1b.1]]. This section is Part C of Lecture 2, in its order: the action is dimensionless, which fixes the mass dimensions of fields and of couplings; locality and relativistic invariance restrict the form of the density; and power counting orders the remaining terms by their importance at low energy, which leaves the scalar Lagrangian with a handful of parameters.
 
+**Setup.** Classical dimension counting: the boxes count the mass dimensions of the terms of a local Lagrangian density in $d$ spacetime dimensions (four unless stated), in natural units and with canonically normalized kinetic terms, for any fields; quantum corrections shift these dimensions ([[§C1b.3 Mass Dimension, Locality and Power Counting#^rem-c1b-3-5|Remark: What the counting leaves out]]). The principles state what any field theory of the course must satisfy. [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-6|Theorem §C1b.3.6]] concerns one real scalar field; quantized, its $\mathcal L$ is [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]] for $g = 0$ and [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]] in general.
+
 *Conventions* ([[Larsen PHY 513]]): natural units $\hbar = c = 1$; $[Q]$ is the mass dimension of $Q$ ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-2|Def. §C1a.2.2]]); $g = \operatorname{diag}(+,-,-,-)$; $d$ is the number of spacetime dimensions, four unless stated otherwise.
 
 ## The action fixes the dimensions of fields and couplings
@@ -56,6 +58,8 @@ Which terms may a relativistic Lagrangian contain, and which of them matter at l
 >
 > in four dimensions $[\phi] = 1$, $[\psi] = \frac32$, $[A_\mu] = 1$. The kinetic term fixes the mass dimension; no choice of units changes it.
 >
+> *Model:* any local $\mathcal L$ with canonically normalized kinetic terms; *applies:* classical dimension counting in $d$ spacetime dimensions; quantum corrections shift operator dimensions ([[§C1b.3 Mass Dimension, Locality and Power Counting#^rem-c1b-3-5|Remark: What the counting leaves out]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Derivation "Dimensions in the scalar Lagrangian"; "Symmetry determines the action" for $\psi$ and $A$) · PHY 513 Lecture 2, Part C · PHY 513, Problem Set 2, Problem 2(d), course solution*
 
 ^thm-c1b-3-2
@@ -87,6 +91,8 @@ Which terms may a relativistic Lagrangian contain, and which of them matter at l
 > $$
 >
 > In four dimensions $[g_n] = 4 - n$: the mass term has $[m^2] = 2$, $\phi^3$ a coupling of dimension $1$, $\phi^4$ a dimensionless coupling, and every term with $[\mathcal O] > 4$ ($\phi$, $A_\mu$ and each derivative counting $1$, $\psi$ counting $\frac32$) a coupling of negative dimension.
+>
+> *Model:* as in [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-2|Theorem §C1b.3.2]]; *applies:* classical dimension counting; quantum corrections: [[§C1b.3 Mass Dimension, Locality and Power Counting#^rem-c1b-3-5|Remark: What the counting leaves out]].
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Derivation "Dimensions in the scalar Lagrangian", "The rule in general dimension") · PHY 513 Lecture 2, Part C · PHY 513, Problem Set 2, Problem 2(d), course solution*
 
@@ -231,6 +237,8 @@ By the theorems above, every term of $\mathcal L$ has mass dimension $4$ ([[§C1
 > [!definition] Definition §C1b.3.1: Relevant, Marginal and Irrelevant Terms
 > A term $g_{\mathcal O}\,\mathcal O$ of a Lagrangian density in four dimensions is **relevant** if $[g_{\mathcal O}] > 0$, **marginal** if $[g_{\mathcal O}] = 0$, and **irrelevant** if $[g_{\mathcal O}] < 0$, where $[g_{\mathcal O}] = 4 - [\mathcal O]$. In a theory valid below a scale $\Lambda$, an irrelevant coupling is $g_{\mathcal O} = \tilde g_{\mathcal O}/\Lambda^{k}$, $k = -[g_{\mathcal O}]$, with $\tilde g_{\mathcal O}$ of order one, and its effects at energy $E$ are suppressed by $(E/\Lambda)^{k}$.
 >
+> *Model:* any local $\mathcal L$ in four dimensions; *applies:* classical dimension counting (quantum corrections: [[§C1b.3 Mass Dimension, Locality and Power Counting#^rem-c1b-3-5|Remark: What the counting leaves out]]); the suppression estimate assumes a theory valid below a scale $\Lambda$ with $\tilde g_{\mathcal O}$ of order one.
+>
 > *Source: the user's PHY 513 notes, Ch. 2 §2.4 (Definition "Relevant, marginal, irrelevant"; §"Dimensions order the terms") · PHY 513 Lecture 2, Part C ("Low Energy Effective Theory")*
 
 ^def-c1b-3-1
@@ -250,6 +258,8 @@ By the theorems above, every term of $\mathcal L$ has mass dimension $4$ ([[§C1
 > $$
 >
 > with $[m] = [g] = 1$, $[\lambda] = 0$, $\lambda \ge 0$. If $\mathcal L$ is invariant under $\phi \to -\phi$ and $V$ is smallest at $\phi = 0$, then $g = 0$.
+>
+> *Model:* one real scalar field under the stated hypotheses; *applies:* classical, up to total derivatives, a constant, a shift and a rescaling of $\phi$; the quantum theories with this $\mathcal L$ are [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]] ($g = 0$) and [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]].
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.4 ("Symmetry determines the action", eq. (V)) · PHY 513 Lecture 2, Part C ("Symmetry", "Low Energy Effective Theory": $V = \frac12m^2\phi^2 + \frac{1}{24}\lambda\phi^4$)*
 

@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What is a relativistic field, and how does it transform? Relativity already says how a scalar field's components behave under a change of frame ([[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]]) and which wave equation is the simplest invariant one ([[§B4.1 The Klein–Gordon Equation#^thm-b4-1-1|REL Theorem §B4.1.1]]); the Lorentz group and its generators are [[§C1a.4 The Lorentz Group|§C1a.4]]–[[§C1a.6 Infinitesimal Lorentz Transformations and Generators|§C1a.6]]. This section adds the transformation law as an action on whole field configurations (a representation, with its infinitesimal form, for a scalar and for a field with components) and the covariance of the Klein–Gordon equation. The Lagrangian is [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]; the principles that restrict it, locality and relativistic invariance, together with dimensional analysis, are [[§C1b.3 Mass Dimension, Locality and Power Counting|§C1b.3]]. Representations, the general fact behind Theorem §C1b.1.1 and the integration of the spinor representations are mathematics ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings|§CB.3]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs|§CB.7]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]]), shown in the block below.
 
+**Setup.** Classical fields, before any dynamics. The boxes hold for every configuration of a classical field whose components carry a finite-dimensional representation $D$ of the Lorentz group (a scalar has $D = 1$); no field equation is assumed, except in [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-3|Theorem §C1b.1.3]], which concerns the Klein–Gordon operator of the free real scalar field ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]). Quantum fields transform by conjugation with a unitary operator instead: [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^pr-c3-5-1|Principle §C3.5.1]].
+
 *Conventions* ([[Larsen PHY 513]]): natural units $\hbar = c = 1$; $g = \operatorname{diag}(+,-,-,-)$; $\partial_\mu = \partial/\partial x^\mu = (\partial_t, \nabla)$, $\partial^2 = \partial_\mu\partial^\mu = \partial_t^2 - \nabla^2$; Lorentz transformations act on points as $x \mapsto \Lambda x$, Poincaré transformations as $g\cdot x = \Lambda x + a$ ([[§B1.2 Lorentz Transformations and the Lorentz Group#^def-b1-2-4|REL Def. §B1.2.4]]), and $\Lambda = 1 + \omega$ near the identity with $\omega_{\mu\nu} = -\omega_{\nu\mu}$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]]). Relativity B keeps $c$ explicit; here it is set to one.
 
 ## The mathematics used here
@@ -100,6 +102,8 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 >
 > Without the inverse, $(S(g)\phi)(x) = \phi(gx)$ would compose in the reverse order, $S(g_2)S(g_1) = S(g_1g_2)$.
 >
+> *Model:* any classical field whose components carry a finite-dimensional representation $D$ ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]); *applies:* classical configurations, any dynamics (no field equation is used), exact; for spinor fields $D$ is a representation only up to sign (the lead-in to [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-10|Theorem §CB.17.10]] above); operator fields: [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^pr-c3-5-1|Principle §C3.5.1]].
+>
 > *Source: the user's PHY 513 notes, Ch. 7 (Definition "Active and passive", "The inverse is not a typo"; Principle "Components and functions") · standard group-action argument, written out here*
 
 ^thm-c1b-1-1
@@ -144,6 +148,8 @@ The first form is Relativity's ([[§B2.2 Tensors and the Covariance Principle#^d
 > $$
 >
 > The first bracket (**orbital** part) is the same for every field; the second (**spin** part) acts on the components only.
+>
+> *Model:* as in [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-1|Theorem §C1b.1.1]]; *applies:* classical, any configuration, first order in $\omega$ and $a$; for operator fields the same orbital and spin parts are [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-3|Theorem §C3.5.3]].
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5 (Derivation "Computing Δφ", Lorentz case; "Lorentz transformations, all fields at once", step 1), Ch. 7 (Derivation "The generator of the scalar transformation law is the orbital operator") · PS §2.2, p. 18 (the translation)*
 
@@ -217,6 +223,8 @@ The simplest invariant wave equation for a scalar field is the Klein–Gordon eq
 > $$
 >
 > So $\phi'$ solves the Klein–Gordon equation if and only if $\phi$ does: the operator $\partial^2 + m^2$ commutes with every $T(g)$ of [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-1|Theorem §C1b.1.1]], and the space of solutions is carried into itself.
+>
+> *Model:* the field equation of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]; *applies:* classical, any $C^2$ scalar configuration (not only solutions), any $m$, exact.
 >
 > *Source: PS §3.1, eqs. (3.3)–(3.5) and the line after (3.5) · the user's PHY 513 notes, Ch. 2 §2.3 (Principle "Klein–Gordon equation": "invariant because ∂μ∂^μ is a contraction and φ is a scalar") · PHY 513 Lecture 2, Part B*
 

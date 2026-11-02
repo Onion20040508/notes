@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What do Lorentz transformations conserve in a field theory, and why does the energy–momentum tensor need repairing? Noether's theorem in the form that lets the point move, and the energy–momentum tensor with its charges $P^\mu$, are [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum|§C1b.7]] ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-3|Theorem §C1b.7.3]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-2|Def. §C1b.7.2]]); the infinitesimal field laws, with their orbital and spin parts, are [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]], and the Lorentz parameters [[§C1a.6 Infinitesimal Lorentz Transformations and Generators|§C1a.6]]. This section runs the general form for Lorentz transformations: the Lorentz current with its orbital and spin parts, the angular-momentum and boost charges, the antisymmetric part of $T^{\mu\nu}$, the uniformly moving centre of energy, and Belinfante's symmetric tensor, which the electromagnetic field (Problem Set 2) needs. Every computation runs [[P3 Noether's Procedure]].
 
+**Setup.** Classical: a Lorentz-scalar local $\mathcal L$ of fields with a finite-dimensional law $D$ ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]); the identities hold on solutions, and the charges are constant for fields that fall off at spatial infinity. The examples are the scalar field (spin current $\mathcal S = 0$) and the source-free Maxwell field ([[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]], [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-8-2|Example §C1b.8.2]]). How the charges act as generators on the Hilbert space of the free scalar field is [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|Theorem §C3.5.6]].
+
 ## Lorentz transformations: the angular-momentum tensor
 
 > [!theorem] Theorem §C1b.8.1: The Lorentz Current
@@ -23,6 +25,8 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 > $$
 >
 > antisymmetric in $\nu\rho$, and $\partial_\mu\mathcal M^{\mu\nu\rho} = 0$ on shell: six conserved currents. For a scalar field $S^{\nu\rho} = 0$ and $\mathcal M$ is purely orbital.
+>
+> *Model:* any Lorentz-scalar local $\mathcal L$ of fields with a law $D$ ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]); *applies:* classical, first order in $\omega$, conservation on solutions; quantized (free real scalar): [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|Theorem §C3.5.6]].
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Example 4, eq. (Mcurrent), and "Lorentz transformations, all fields at once", eq. (Mgeneral) · Yu §1.7.3, eqs. (1.229)–(1.239)*
 
@@ -114,6 +118,8 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 >
 > The orbital current $x^\nu T^{\mu\rho} - x^\rho T^{\mu\nu}$ is conserved by itself if and only if $T$ is symmetric. For scalar fields $\mathcal S = 0$ and $T$ is symmetric; for fields with spin the canonical $T$ is not, and Lorentz invariance requires only that its antisymmetric part be a divergence.
 >
+> *Model:* as in [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]]; *applies:* classical, on solutions.
+>
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, eq. (Tantisym) and Example 4 · Yu Exercise 1.10(a), eq. (1.273)*
 
 ^thm-c1b-8-2
@@ -163,6 +169,8 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 >
 > the centre of energy moves with the constant velocity $\mathbf P/H$. For slow matter $H \approx M$ and this is the centre-of-mass theorem.
 >
+> *Model:* any Lorentz-invariant local $\mathcal L$ of scalar fields ($\mathcal S = 0$); *applies:* classical, on solutions, with the fall-off stated.
+>
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Example 4, "The charges: boosts" · Yu §1.7.3, eqs. (1.249)–(1.252)*
 
 ^thm-c1b-8-3
@@ -205,6 +213,8 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 > 4. $x^\nu T_B^{\mu\rho} - x^\rho T_B^{\mu\nu}$ is conserved by itself, and its charges are the total $J^{\nu\rho} = L^{\nu\rho} + S^{\nu\rho}$: the spin is absorbed into the orbital moment of $T_B$.
 >
 > Notation: $T_B$, B for Belinfante. PS (Problem 2.1) and the user's notes write it with a hat, $\widehat T^{\mu\nu}$, and Yu writes $\Theta^{\mu\nu}$ (eq. (1.272), the Belinfante–Rosenfeld tensor); here the hat is reserved for quantum operators.
+>
+> *Model:* as in [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]]; *applies:* classical, on solutions, for fields falling off fast enough at spatial infinity; the free Maxwell field ([[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]]) is [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-8-2|Example §C1b.8.2]].
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, "Belinfante: symmetrizing T with the spin current", eq. (Belinfante) · Yu Exercise 1.10, eqs. (1.271)–(1.276)*
 

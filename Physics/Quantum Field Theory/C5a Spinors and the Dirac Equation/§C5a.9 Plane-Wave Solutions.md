@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What are the solutions of the free Dirac equation? The equation and its covariance are [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]] and [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]]; every solution solves the Klein–Gordon equation component by component ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]]), so it is built from plane waves on the mass shell, as the scalar field was ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]). This section finds, for each momentum, two positive-frequency spinors $u^s(p)$ and two negative-frequency spinors $v^s(p)$ by Lecture 9's four steps: a plane-wave ansatz, an eigenvalue problem, the rest frame, and a boost with the spinor matrix $\Lambda_{1/2}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]), written through the rapidity as $\sqrt{p\cdot\sigma}$ and $\sqrt{p\cdot\bar\sigma}$, and then their Dirac conjugates $\bar u^s(p)$, $\bar v^s(p)$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]) as rows in their own right. Their normalizations, spin sums and the helicity basis are [[§C5a.10 Normalization, Spin Sums and Helicity|§C5a.10]]; the field built from them is [[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]. The mathematics it uses — the Clifford relation, the spinor generators and the rotation content of $(\frac12, 0)\oplus(0, \frac12)$, the Dirac form and its invariance — is shown in the blocks below ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]).
 
+**Setup.** Classical, free and on shell: the plane-wave solutions of the free Dirac equation ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), with $p^0 = +E_{\mathbf p}$; $u^s(p)$, $v^s(p)$ are c-number columns, normalized as in [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]] ($\bar u^ru^s = 2m\,\delta^{rs}$, $u^{r\dagger}u^s = 2E_{\mathbf p}\delta^{rs}$). Rest-frame statements need $m > 0$; the formulas for $u$, $v$ and their conjugates hold for every $m \ge 0$. The boosts and square roots (Theorems §C5a.9.5–§C5a.9.8) are matrix statements, exact. The quantum field uses these same spinors as its mode functions ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]]).
+
 *Conventions* ([[Larsen PHY 513]]): chiral basis $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\\ \bar\sigma^\mu & 0\end{pmatrix}$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-3|Def. §C5a.1.3]]) with $\sigma^\mu = (\mathbb 1, \boldsymbol\sigma)$, $\bar\sigma^\mu = (\mathbb 1, -\boldsymbol\sigma)$ ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]); $p^0 = E_{\mathbf p} = +\sqrt{\mathbf p^2 + m^2}$ always; $\slashed{p} \equiv \gamma^\mu p_\mu$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]); $\Lambda_{1/2} = \exp(-\frac i2\omega_{\mu\nu}S^{\mu\nu})$, read actively, the boost to rapidity $\eta$ along $+z$ having $\omega_{03} = -\omega_{30} = \eta$ ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-3|Theorem §C1a.6.3]]). Two-spinors are $\xi$, $\eta^s$ (with an index); the rapidity is $\eta$ (never with an index).
 
 ## The mathematics used here
@@ -34,6 +36,8 @@ Plane waves turn the Dirac equation into the eigenvalue problem of $\slashed{p}$
 > [!definition] Definition §C5a.9.1: Positive- and Negative-Frequency Solutions
 > For $\mathbf p \in \mathbb R^3$ let $p^\mu = (E_{\mathbf p}, \mathbf p)$ with $E_{\mathbf p} = +\sqrt{\mathbf p^2 + m^2}$. A **positive-frequency plane wave** is $\psi(x) = u(p)\,e^{-ip\cdot x}$ and a **negative-frequency plane wave** is $\psi(x) = v(p)\,e^{+ip\cdot x}$, with $u(p), v(p) \in \mathbb C^4$ constant columns. In both, $p^0 = +E_{\mathbf p}$: "negative frequency" refers to the sign in the exponent, $e^{+ip\cdot x} = e^{+iE_{\mathbf p}t - i\mathbf p\cdot\mathbf x}$, never to the sign of $p^0$.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical plane waves, on shell $p^0 = +E_{\mathbf p}$, every $m \ge 0$; the mode functions of the quantum field ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 9 §9.1 (Principle "Positive and negative frequency: the sign is in the exponent") · PHY 513 Lecture 9, Part A, Step 1 ("Convention: always $p^0 = +\sqrt{\vec p^2 + m^2}$") and Part C · PS §3.3, eqs. (3.58), (3.61)*
 
 ^def-c5a-9-1
@@ -49,6 +53,8 @@ Plane waves turn the Dirac equation into the eigenvalue problem of $\slashed{p}$
 > With $p^0 = E_{\mathbf p}$,
 > 1. $u(p)\,e^{-ip\cdot x}$ solves the Dirac equation $(i\slashed{\partial} - m)\psi = 0$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]) iff $(\slashed{p} - m)\,u(p) = 0$, i.e. $u(p)$ is an eigenvector of the $4\times4$ matrix $\slashed{p}$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]]) with eigenvalue $+m$;
 > 2. $v(p)\,e^{+ip\cdot x}$ solves it iff $(\slashed{p} + m)\,v(p) = 0$, i.e. $v(p)$ is an eigenvector of $\slashed{p}$ with eigenvalue $-m$.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical plane waves, $p^0 = E_{\mathbf p}$, every $m \ge 0$, exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.1 (Derivation "Step 1: the Dirac equation becomes algebraic"), §9.5 (Steps 1–2) · PHY 513 Lecture 9, Part A, Step 2; Part C, Step 2 · PS §3.3, eq. (3.46) · Yu §5.4.2, eqs. (5.144)–(5.145), (5.183)–(5.184)*
 
@@ -102,6 +108,8 @@ The chiral form of $\slashed{p}$ is $\gamma^\mu = \begin{pmatrix}0 & \sigma^\mu\
 > 1. $\slashed{p}^{\,2} = p^2\,\mathbb 1 = m^2\,\mathbb 1$.
 > 2. For $m > 0$, $\slashed{p}$ is diagonalizable with eigenvalues $+m$ and $-m$, each of multiplicity two: $\mathbb C^4 = \ker(\slashed{p} - m) \oplus \ker(\slashed{p} + m)$, both two-dimensional. So for each $\mathbf p$ there are exactly two independent $u(p)$ and two independent $v(p)$.
 > 3. For $m = 0$ and $\mathbf p \neq 0$, $\slashed{p} \neq 0$ but $\slashed{p}^{\,2} = 0$: $\slashed{p}$ is not diagonalizable, and $\ker\slashed{p}$ is two-dimensional. The equations for $u$ and for $v$ coincide, $\slashed{p}\,u = \slashed{p}\,v = 0$.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] (the momentum-space Dirac operator); *applies:* on shell $p^2 = m^2$, $p^0 > 0$; part 2 for $m > 0$, part 3 for $m = 0$; exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.1 (Derivation "Step 2: two solutions, before solving anything", with diagonalizability filled in) · PHY 513 Lecture 9, Part A, Step 2 · Yu §5.4.1, eqs. (5.118)–(5.131) · part 3 derived here*
 
@@ -201,6 +209,8 @@ Theorem §C5a.9.4 uses the spin matrices built from the spinor generators and th
 >
 > for arbitrary two-component spinors $\xi$, $\eta^s$: upper half equal to the lower half for $u$, opposite to it for $v$. The factor $\sqrt m$ is a normalization convention, fixed below with the spin basis ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]]).
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* c-number spinors, $m > 0$, rest frame; the factor $\sqrt m$ is the normalization of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]].
+>
 > *Source: the user's PHY 513 notes, Ch. 9 §9.2 (Derivation "Step 3: solving in the rest frame"), §9.5 (Step 3) · PHY 513 Lecture 9, Part A, Step 3; Part C, Step 3 · PS §3.3, eq. (3.47)*
 
 ^thm-c5a-9-3
@@ -233,6 +243,8 @@ Theorem §C5a.9.4 uses the spin matrices built from the spinor generators and th
 > $$
 >
 > and the same for $v_0(\eta^s)$: the rest-frame spinors transform under rotations exactly as the nonrelativistic spin-$\frac12$ two-spinor $\xi$ (or $\eta^s$). In particular $J^3u_0 = \pm\frac12u_0$ for $\xi = (1, 0)$, $(0, 1)$.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] (its rest-frame solutions); *applies:* c-number spinors, $m > 0$; a representation fact about rotations, independent of the normalization.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.2 (Definition "The two-spinor ξ and the spin basis"); Ch. 8 §8.1 (Derivation "The generators in the chiral basis"; paragraph "Rotations of a spinor") · PHY 513 Lecture 9, Part A, Step 3 · PS §3.3, p. 45 (after (3.47))*
 
@@ -518,6 +530,8 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 >
 > Names in other sources: [[§C5a.9 Plane-Wave Solutions#^cau-c5a-9-3|Caution: Names for the plane-wave spinors]].
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* c-number spinors, on shell $p^0 = E_{\mathbf p}$, normalization of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]]; part 1 for $m > 0$, part 2 every $m \ge 0$; exact.
+>
 > *Source: the user's PHY 513 notes, Ch. 9 §9.3 (Principle "The positive-frequency solutions"), §9.4 (Derivation "Check: u(p) solves the Dirac equation in every frame") · PHY 513 Lecture 9, Part A ("General Solution to Dirac Equation") and Part B ("Practical Manipulations") · PS §3.3, eqs. (3.50), (3.59) · Yu §5.4.2, eq. (5.157)*
 
 ^thm-c5a-9-9
@@ -601,6 +615,8 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 > 1. $\bar u^s(p)$ is a $1\times4$ row, the functional $h_D(u^s(p), \cdot\,)$ of the Dirac form ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-15|Def. §CB.13.15]]): $\bar u^s(p)\,w$ is a number for every column $w$, e.g. $\bar u^r(p)\,u^s(p) = 2m\,\delta^{rs}$ ([[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-2|Theorem §C5a.10.2]]).
 > 2. The Dirac equation acts from the right: $\bar u^s(p)\,\slashed{p} = m\,\bar u^s(p)$, with $\slashed{p}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-2|Def. §C5a.7.2]].
 > 3. At rest, $p = (m, \mathbf 0)$ with $m > 0$: $\bar u^s_0 = \sqrt m\,(\xi^{s\dagger}, \xi^{s\dagger}) = u_0^{s\dagger}$.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* c-number spinors, on shell, normalization of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]], every $m \ge 0$ (part 3: $m > 0$).
 >
 > *Source: PHY 513 Lecture 9, Part B ("Normalization II": $\bar u(p) = u^\dagger(p)\gamma^0$; "Completeness for Dirac Spinors": the row $(\xi^{s\dagger}\sqrt{p\cdot\bar\sigma}, \xi^{s\dagger}\sqrt{p\cdot\sigma})$) · the user's PHY 513 notes, Ch. 9 §9.4 (Derivation "Normalization II: ūu": the Dirac conjugate "exchanges the two halves of the row"), §9.6 (Derivation "Proof of the Gordon identity", paragraph "The Dirac equation, from both sides") · PS §3.3, eqs. (3.55)–(3.56) and the row in the spin sum, p. 48 · Yu §5.4.2, eq. (5.205) (helicity basis) · the user's pre-course notes, §5.4 (note "Checking the spin sums": "$\gamma^0$ swaps the blocks of $u^\dagger$") · the rest-frame check and the third route written here*
 
@@ -728,6 +744,8 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 >
 > For $m > 0$, $v^s(p) = \Lambda_{1/2}(p)\,v^s_0$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-8|Theorem §C5a.9.8]]) with $v^s_0 = \sqrt m(\eta^s, -\eta^s)$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-3|Theorem §C5a.9.3]]), and $v^1$, $v^2$ span $\ker(\slashed{p} + m)$; the $u$'s and $v$'s together are the four eigenvectors of $\slashed{p}$. The formula also holds for $m = 0$, where $v^1, v^2$ span the same $\ker\slashed{p}$ as $u^1, u^2$.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* c-number spinors, on shell $p^0 = E_{\mathbf p}$, normalization of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]], every $m \ge 0$ (the boost from rest: $m > 0$); exact.
+>
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "The v spinors: the four steps again") · PHY 513 Lecture 9, Part C (Steps 1–4) · PS §3.3, eqs. (3.61)–(3.62) · Yu §5.4.2, eqs. (5.182)–(5.191)*
 
 ^thm-c5a-9-11
@@ -778,6 +796,8 @@ The Dirac conjugates of $u$ and $v$ use the Dirac form in a Hermitian basis, the
 > 1. The minus sign, in the lower half of the column $v^s(p)$, sits in the upper half of the row: the dagger leaves it in place (it is real), and $\gamma^0$ moves it.
 > 2. The Dirac equation acts from the right with the eigenvalue of the column: $\bar v^s(p)\,\slashed{p} = -m\,\bar v^s(p)$.
 > 3. At rest, $p = (m, \mathbf 0)$ with $m > 0$: $\bar v^s_0 = \sqrt m\,(-\eta^{s\dagger}, \eta^{s\dagger}) = -v_0^{s\dagger}$.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* c-number spinors, on shell, normalization of [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]], every $m \ge 0$ (part 3: $m > 0$).
 >
 > *Source: PHY 513 Lecture 9, Part C ("Normalization of v's": "$\gamma^0$ exchanges lower and upper entry, so an overall sign"; "Bonus Material: Orthogonality of u and v": the row $(\eta^\dagger\sqrt{p\cdot\sigma}, -\eta^\dagger\sqrt{p\cdot\bar\sigma})$ times $\gamma^0$) · the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "Normalizations of the v's": $\bar v^r(p) = (-\eta^{r\dagger}\sqrt{p\cdot\bar\sigma}, \eta^{r\dagger}\sqrt{p\cdot\sigma})$) · PS §3.3, eqs. (3.62)–(3.64), (3.67) (the row is not displayed there) · Yu §5.4.2, eq. (5.206) (helicity basis) · the user's pre-course notes, §5.4 (note "Checking the spin sums") · the equation $\bar v(\slashed{p} + m) = 0$, the rest-frame check and the third route written here*
 

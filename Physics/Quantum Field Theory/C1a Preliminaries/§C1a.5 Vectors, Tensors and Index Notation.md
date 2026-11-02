@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What index calculus does field theory need, and why are its rules consequences rather than conventions? Relativity level B is the home of four-vectors, the metric and index gymnastics ([[§B1.1 The Metric and Index Notation|REL §B1.1]]), tensors defined by their components, the invariant tensors, the Levi-Civita symbol as a pseudotensor, the gradient as a covector and the covariance principle ([[§B2.2 Tensors and the Covariance Principle|REL §B2.2]]); with $c = 1$ they hold here unchanged and are linked, not restated. This section adds what field theory uses on top: tensors as multilinear maps (so that the transformation law is derived), the contraction identities of $\varepsilon$ and its link to determinants, the $\varepsilon^{0123}$ convention against Peskin–Schroeder, the decomposition of a two-tensor and duality, and calculus with indices: plane waves, functions of $x^2$, Taylor expansion as the generator of translations, and derivatives with respect to four-vectors and tensor components, the tool behind every Euler–Lagrange equation and Noether current of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]]. The linear algebra underneath, the dual space, tensors as multilinear maps and the transformation law that multilinearity forces, is mathematics ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors|§CB.0]]), and so is the representation theory that says which pieces of a two-tensor no Lorentz transformation mixes and which are irreducible ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors|§CB.8]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]); they are shown in the blocks below, and this section keeps the index calculus with the metric.
 
+**Setup.** No physical system: index calculus on Minkowski space ($\hbar = c = 1$, $g = \operatorname{diag}(+,-,-,-)$, $\varepsilon^{0123} = +1$), valid in any relativistic theory, classical or quantum. The two kinematic boxes, [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]] and [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]], assume only on-shell external momenta and four-momentum conservation, whatever the dynamics.
+
 ## The mathematics used here
 
 Covectors, and the metric's identification of vectors with them (Theorem §C1a.5.2), live in the dual space:
@@ -91,6 +93,8 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 >
 > $s$ is the squared centre-of-mass energy, and $t = q^2$ the square of the momentum transfer $q = p_1 - p_3 = p_4 - p_2$.
 >
+> *Model:* any; *applies:* kinematics of any two-body process with on-shell external momenta and four-momentum conservation, classical or quantum, free or interacting; no dynamics enters.
+>
 > *Source: the user's PHY 513 notes, Ch. 1 §1.4 (Definition "Mandelstam variables (Problem Set 1)") · PHY 513, Problem Set 1, Problem 5*
 
 ^def-c1a-5-2
@@ -105,6 +109,8 @@ These are [[§B1.1 The Metric and Index Notation#^def-b1-1-1|REL Def. §B1.1.1]]
 > $$
 >
 > vanishing only for forward scattering.
+>
+> *Model:* any; *applies:* as for [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]]; parts 2 and 3 in the frames named; exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.4 (Definition "Mandelstam variables (Problem Set 1)") · PHY 513, Problem Set 1, Problem 5(e)–(f)*
 

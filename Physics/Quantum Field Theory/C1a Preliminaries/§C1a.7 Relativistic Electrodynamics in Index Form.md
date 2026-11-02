@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 How do electric and magnetic fields look in the language of field theory, and what about electrodynamics is the template for every field to come? The field tensor, its transformation, the two invariants, the four-current and Maxwell's equations as tensor equations are at home in Relativity level B, in SI units with $c$ explicit ([[§B4.2 The Electromagnetic Field Tensor|REL §B4.2]]; the coupling to a charge, [[§B3.2 The Charged Particle|REL §B3.2]]; the equations themselves, [[§B8.4 Maxwell's Equations#^pr-b8-4-2|EM Principle §B8.4.2]]). Theorem §C1a.7.1 and the first half of Theorem §C1a.7.2 are [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-7|REL Theorem §B4.2.7]] and [[§B4.2 The Electromagnetic Field Tensor#^thm-b4-2-3|REL Theorem §B4.2.3]] transcribed to Heaviside–Lorentz units with $c = 1$; their computations are repeated only as the index template of field theory. What this section adds is what quantum field theory needs: Heaviside–Lorentz natural units and their dictionary to SI, the field tensor and Maxwell's equations in those units, the dual and the invariants with $\varepsilon^{0123} = +1$ against Peskin–Schroeder, the self-dual combinations $\mathbf E \pm i\mathbf B$, the lecture's boost example done consistently, and the lessons the example teaches for field theory.
 
+**Setup.** Classical electrodynamics in Heaviside–Lorentz natural units: the potential $A^\mu$ and the field tensor $F^{\mu\nu}$, coupled to a given external four-current $J^\mu$, which must be conserved. Nothing is quantized, and the current has no dynamics of its own. Definitions §C1a.7.1–§C1a.7.2 and Theorems §C1a.7.2–§C1a.7.4 are conventions and identities that hold for any antisymmetric $F$; only [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-1|Theorem §C1a.7.1]] is a field equation. The source-free Maxwell field as a Lagrangian model is [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]], quantized in [[· C4 The Quantum Vector Field|C4]].
+
 ## Units and the field tensor
 
 > [!definition] Definition §C1a.7.1: Heaviside–Lorentz Natural Units
@@ -72,6 +74,8 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 > $$
 >
 > The first contains Gauss ($\nu = 0$) and Ampère–Maxwell ($\nu = j$); the second holds identically when $F$ comes from a potential. Consistency of the first requires $\partial_\nu J^\nu = 0$.
+>
+> *Model:* the Maxwell field $A^\mu$ coupled to a given external current $J^\mu$, $\mathcal L = -\frac14F_{\mu\nu}F^{\mu\nu} - J^\mu A_\mu$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^rem-c1a-7-2|Remark: Electrodynamics as the template for field theory]]); for $J = 0$, [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]]; *applies:* classical, exact; the current is external and must be conserved, $\partial_\nu J^\nu = 0$; Heaviside–Lorentz units.
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.7 (Derivation "Maxwell's equations in covariant form"), eq. (Maxwell) · Yu §1.5, eqs. (1.123), (1.128), (1.137), (1.151)*
 

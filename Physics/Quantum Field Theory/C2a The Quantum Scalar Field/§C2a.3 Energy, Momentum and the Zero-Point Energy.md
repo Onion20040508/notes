@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What are the energy and momentum of the free real field? With the mode expansion and the mode algebra of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]] ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]), this section reduces $\hat H$ and $\hat{\mathbf P}$, the charges of time and space translations in their field form ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]], recalled in [[§C2a.1 Canonical Quantization of Fields|§C2a.1]] and collected in [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]), to one oscillator per momentum, postulates the vacuum and the Fock space ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]) at the point where the first vacuum expectation value appears, isolates the zero-point energy, and removes it by normal ordering. The ladder relations it ends with are what [[§C2a.4 Particles and Relativistic Normalization|§C2a.4]] reads off as particles; the steps are [[P1 Canonical Quantization#^p1-7|P1, steps 7–8]].
 
+**Setup.** The system is [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]: quantum, free, $m > 0$, infinite space with the continuum normalization $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$; Theorem §C2a.3.2, 2 and Theorem §C2a.3.6, 2 work in a periodic box of volume $V$ with a momentum cutoff $\Lambda$. The states are the Fock space over the free vacuum $|0\rangle$ (postulated in Principle §C2a.3.3); the operator identities hold in every state, and every vacuum value is taken in $|0\rangle$. All results are exact for the free field; with interactions $|0\rangle$ is not the ground state of $\hat H$ ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
+
 ## The Hamiltonian, the zero-point energy and the momentum
 
 > [!theorem] Theorem §C2a.3.1: Hamiltonian in Mode Form
@@ -23,6 +25,8 @@ What are the energy and momentum of the free real field? With the mode expansion
 > $$
 >
 > one oscillator of frequency $E_{\mathbf p}$ per momentum, plus the constant $E_0$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]. Computed on any time slice it is the same operator.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact as an identity between mode expansions; the constant $E_0$ has no value in infinite volume ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.6, eq. (Hfinal) · PHY 513 Lecture 4, Part C · PS §2.3, eq. (2.31) · Yu §2.3.3, eqs. (2.130)–(2.132)*
 
@@ -116,6 +120,8 @@ What are the energy and momentum of the free real field? With the mode expansion
 > $$
 >
 > "$(2\pi)^3\delta^3(\mathbf 0) = V$" is the dictionary entry $V\delta_{\mathbf k\mathbf k} = V \leftrightarrow (2\pi)^3\delta^3(\mathbf 0)$, and "$E_0 = \langle0|\hat H|0\rangle$" means $E_0(V, \Lambda)$.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$; part 2 in a periodic box with a cutoff, exact for each $V$ and $\Lambda$.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.6 ("$(2\pi)^3\delta^3(0) = \int d^3x = V$ is the volume of space"), §4.5 (discrete modes), Ch. 6 §6.2 ("Why this matters beyond tidiness") · the box version written here*
 
@@ -255,6 +261,8 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 >
 > with no constant term and no ordering choice needed: the would-be constant $\frac V2\int\frac{d^3p}{(2\pi)^3}\,\mathbf p$ vanishes by reflection symmetry for any rotation-invariant cutoff, and the vacuum carries no momentum.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact; the vanishing constant needs a rotation-invariant cutoff.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.7, eq. (Pfinal) · PHY 513 Lecture 4, Part C ("Comments") · PS §2.3, eq. (2.33) · Yu §2.3.3, eqs. (2.141)–(2.144) · PHY 513, Problem Set 6, Problem 1 (normal-ordered form, as the user wrote it: [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^ex-c2a-3-1|Example §C2a.3.1]])*
 
 ^thm-c2a-3-5
@@ -290,7 +298,7 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 > \hat{\mathbf P} = \int\frac{d^3p}{(2\pi)^3}\,\frac{\mathbf p}{2}\bigl(\hat a_{\mathbf p}\hat a^\dagger_{\mathbf p} + \hat a^\dagger_{\mathbf p}\hat a_{\mathbf p}\bigr) .
 > $$
 >
-> **7. Reorder.** $\hat a_{\mathbf p}\hat a^\dagger_{\mathbf p} = \hat a^\dagger_{\mathbf p}\hat a_{\mathbf p} + (2\pi)^3\delta^3(\mathbf 0)$ gives $\hat{\mathbf P} = \int\frac{d^3p}{(2\pi)^3}\mathbf p\,\hat a^\dagger_{\mathbf p}\hat a_{\mathbf p} + \frac V2\int\frac{d^3p}{(2\pi)^3}\,\mathbf p$. The constant is the integral of an odd function over all of $\mathbb R^3$. In the box of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]] it is $\frac12\sum_{|\mathbf k|<\Lambda}\mathbf k$, which vanishes term by term, $\mathbf k$ cancelling $-\mathbf k$: the lattice and the cutoff ball are symmetric under $\mathbf k \to -\mathbf k$. ⚑ By-product: it vanishes only for a rotation-invariant (in particular, reflection-symmetric) regularization of the divergent integral; with it, the vacuum has $\hat{\mathbf P}|0\rangle = 0$ → [[§C2a.4 Particles and Relativistic Normalization#^rem-c2a-4-2|Remark: Why the vacuum is the vacuum]].
+> **7. Reorder.** $\hat a_{\mathbf p}\hat a^\dagger_{\mathbf p} = \hat a^\dagger_{\mathbf p}\hat a_{\mathbf p} + (2\pi)^3\delta^3(\mathbf 0)$ gives $\hat{\mathbf P} = \int\frac{d^3p}{(2\pi)^3}\mathbf p\,\hat a^\dagger_{\mathbf p}\hat a_{\mathbf p} + \frac V2\int\frac{d^3p}{(2\pi)^3}\,\mathbf p$. The constant is the integral of an odd function over all of $\mathbb R^3$. In the box of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]] it is $\frac12\sum_{|\mathbf k|<\Lambda}\mathbf k$, which vanishes term by term, $\mathbf k$ cancelling $-\mathbf k$: the lattice and the cutoff ball are symmetric under $\mathbf k \to -\mathbf k$. ⚑ By-product: it vanishes only for a rotation-invariant (in particular, reflection-symmetric) regularization of the divergent integral; with it, the vacuum has $\hat{\mathbf P}|0\rangle = 0$ → [[§C2a.4 Particles and Relativistic Normalization#^rem-c2a-4-2|§C2a.4, Remark: Why ¦0⟩ is the vacuum]].
 >
 > **What the derivation shows**
 > - The Fourier label $\mathbf p$ is the eigenvalue of the momentum operator: it *is* momentum.
@@ -401,6 +409,8 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 > $:\!\hat H\!:$ is an operator on the wave-packet states (a dense set) and maps them to wave-packet states.
 > 2. In the box, $\hat H_V = \,:\!\hat H_V\!: + E_0(V, \Lambda)$ exactly. As $V, \Lambda \to \infty$ the matrix elements of $:\!\hat H_V\!:$ between wave packets converge to those of part 1, while $E_0(V, \Lambda)$ diverges: normal ordering removes exactly the part of $\hat H$ that has no limit, the vacuum value of the coincident product.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact, on the wave-packet states of the Fock space over $|0\rangle$, $m > 0$; part 2 in the periodic box with a cutoff.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.6 (Caution "The zero-point energy"), §4.8 (Caution "Two honesty points": products at a point need normal ordering) · stated and derived here for wave packets*
 
 ^thm-c2a-3-6
@@ -438,6 +448,8 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 > $$
 >
 > So if $|\psi\rangle$ has energy $E$ and momentum $\mathbf P$, then $\hat a^\dagger_{\mathbf p}|\psi\rangle$ has $E + E_{\mathbf p}$ and $\mathbf P + \mathbf p$, and $\hat a_{\mathbf p}|\psi\rangle$ has $E - E_{\mathbf p}$ and $\mathbf P - \mathbf p$, unless zero.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free $\hat H$ and $\hat{\mathbf P}$, exact, operator identities in every state, for $\hat H$ normal ordered or not ($E_0$ is a c-number).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 · PS §2.3, eq. (2.32) · Yu §2.3.3, eqs. (2.135)–(2.147)*
 

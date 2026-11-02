@@ -13,10 +13,14 @@ tags: [quantum-field-theory, level-c]
 
 The field was quantized and produced particles ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]]). The reverse question: when does a quantum field look like the classical field it came from? Not when it contains many quanta. For one oscillator, Quantum Mechanics answers with coherent states, the ground state displaced in phase space ([[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-3|QM Theorem §C3.4.3]]), with their Poisson statistics ([[§B4.3 Coherent States#^thm-b4-3-2|QM Theorem §B4.3.2]]). This section displaces all modes of the field at once. What the field adds: the label of the state is a function $\eta_{\mathbf k}$ on momentum space, its mean field is an arbitrary classical solution of the Klein–Gordon equation, and its fluctuations at every point are exactly the vacuum's.
 
+**Setup.** The system is [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]: quantum, free, $m > 0$, evolving under the free $:\!\hat H\!:$; the field $\hat\phi(x)$ is the free Heisenberg field ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]). The states are coherent states of the Fock space over the free vacuum $|0\rangle$, labelled by $\eta_{\mathbf k}$ with $\bar N < \infty$, in the relativistic normalization (the factor $1/\sqrt{2E_{\mathbf k}}$). All results are exact for the free field. A classical source switched off at early and late times produces exactly such a state ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-2|Theorem §C2b.8.2]]; [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]).
+
 ## A definite number has no field
 
 > [!theorem] Theorem §C2a.6.1: A State of Definite Particle Number Has No Mean Field
 > If $\hat N|\psi\rangle = n|\psi\rangle$, with $\hat N$ the number operator of [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]], then $\langle\psi|\hat\phi(x)|\psi\rangle = 0$ for every $x$, however large $n$ is.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact, in every eigenstate of $\hat N$ of the Fock space over $|0\rangle$.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.10 (Caution "A state of definite particle number has no field at all")*
 
@@ -50,6 +54,8 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 > |\{\eta\}\rangle = e^{-\bar N/2}\exp\Bigl\{\int\frac{d^3k}{(2\pi)^3}\frac{\eta_{\mathbf k}\,\hat a^\dagger_{\mathbf k}}{\sqrt{2E_{\mathbf k}}}\Bigr\}|0\rangle = \hat D(\eta)|0\rangle, \qquad \hat D(\eta) = \exp\int\frac{d^3k}{(2\pi)^3}\,\frac{\eta_{\mathbf k}\hat a^\dagger_{\mathbf k} - \eta^*_{\mathbf k}\hat a_{\mathbf k}}{\sqrt{2E_{\mathbf k}}} .
 > $$
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, labels $\eta$ with $\bar N < \infty$; the factor $1/\sqrt{2E_{\mathbf k}}$ goes with the relativistic normalization.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.10, eq. (coherentstate) and Derivation "Three senses …", part 2 (displacement operator) · PHY 513 Problem Set 3, Problem 4*
 
 ^def-c2a-6-1
@@ -62,6 +68,8 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 > $$
 >
 > and $\langle\{\eta\}|\{\eta\}\rangle = 1$: the factor $e^{-\bar N/2}$ is the normalization, which requires $\bar N < \infty$.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact, $\bar N < \infty$.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.10, eq. (coherenteigen) · PHY 513 Problem Set 3, Problem 4(a)–(b), course solution*
 
@@ -108,6 +116,8 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 > [!theorem] Theorem §C2a.6.3: A Coherent State Is the Displaced Vacuum
 > $\hat D(\eta)$ is unitary, $\hat D(\eta)^\dagger \hat a_{\mathbf p}\hat D(\eta) = \hat a_{\mathbf p} + \eta_{\mathbf p}/\sqrt{2E_{\mathbf p}}$, and $\hat D(\eta)|0\rangle$ equals the exponential form of [[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]]. The shifted operators $\hat{\tilde a}_{\mathbf p} = \hat a_{\mathbf p} - \eta_{\mathbf p}/\sqrt{2E_{\mathbf p}}$ obey the algebra of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]] and annihilate $|\{\eta\}\rangle$: the coherent state is the vacuum of $\hat{\tilde a}$.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact, operator identities, $\bar N < \infty$.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.10, Derivation "Three senses in which a coherent state is classical", part 2*
 
 ^thm-c2a-6-3
@@ -148,6 +158,8 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 >
 > is a real solution of the Klein–Gordon equation, and every real solution with $\bar N < \infty$ arises from exactly one $\eta$; the vacuum is $\eta = 0$.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact, $\bar N < \infty$; the Heisenberg field of the free $\hat H$.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.10, eq. (phibar) and Derivation "Three senses …", part 1 · PHY 513 Problem Set 3, Problem 4(c), course solution*
 
 ^thm-c2a-6-4
@@ -177,6 +189,8 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 
 > [!theorem] Theorem §C2a.6.5: Coherent States Stay Coherent
 > Under the free evolution, $e^{-i:\!\hat H\!:\,t}\,|\{\eta_{\mathbf k}\}\rangle = |\{\eta_{\mathbf k}e^{-iE_{\mathbf k}t}\}\rangle$, with the same $\bar N$; the mean field of the evolved state, $\langle\{\eta(t)\}|\hat\phi(\mathbf x)|\{\eta(t)\}\rangle$, is $\bar\phi(t, \mathbf x)$ of [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]]: it follows the classical solution for all time.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free evolution, exact; a classical source switched off at early and late times leaves such a state behind ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-2|Theorem §C2b.8.2]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.10, Derivation "Three senses …", part 3*
 
@@ -220,6 +234,8 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 > \langle \hat N\rangle = \bar N = \int\frac{d^3k}{(2\pi)^3}\frac{|\eta_{\mathbf k}|^2}{2E_{\mathbf k}}, \qquad \langle(\Delta \hat N)^2\rangle = \bar N, \qquad \frac{\Delta\hat N}{\bar N} = \frac{1}{\sqrt{\bar N}} .
 > $$
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact, $\bar N < \infty$.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.10, eq. (poisson) · PHY 513 Problem Set 3, Problem 4(d)–(e), course solution; the distribution $P(n)$ derived here*
 
 ^thm-c2a-6-6
@@ -258,6 +274,8 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 >
 > in particular $\langle\hat\phi^2\rangle - \bar\phi^2 = \langle0|\hat\phi^2|0\rangle$, independent of the amplitude.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact as an identity of two-point distributions; at coincident points both sides diverge (smeared form: [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-8|Theorem §C2a.6.8]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.10, Derivation "Three senses …", part 2*
 
 ^thm-c2a-6-7
@@ -295,6 +313,8 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 > 2. The smeared mean field $\bar\phi_t(f) = \langle\{\eta\}|\hat\phi_t(f)|\{\eta\}\rangle = 2\operatorname{Re}\displaystyle\int d\mu\,\eta_{\mathbf p}\,e^{-iE_{\mathbf p}t}\,\overline{\tilde f(\mathbf p)}$ obeys $|\bar\phi_t(f)| \le 2\sqrt{\bar N}\,\bigl(\int d\mu\,|\tilde f|^2\bigr)^{1/2}$.
 >
 > This is the content of [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-7|Theorem §C2a.6.7]], whose coincident-point form compares two divergent numbers.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact, real $f \in \mathcal S(\mathbb R^3)$, $\bar N < \infty$.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.10 (Derivation "Three senses …", part 2) and §4.8 (Caution "Two honesty points") · the smeared form stated and derived here*
 

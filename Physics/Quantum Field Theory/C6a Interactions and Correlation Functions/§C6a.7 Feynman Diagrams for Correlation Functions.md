@@ -50,6 +50,9 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 ^cau-c6a-7-1
 
 > [!example] Example §C6a.7.1: The Free Four-Point Function as Three Diagrams
+> ![[ph-qft-c6-7-1.svg]]
+> *The free four-point function: the three pairings of $x_1, \dots, x_4$, each a product of two Feynman propagators. In the third, the lines cross on the page but do not meet. Added figure; layout as PS eq. (4.42).*
+>
 > From the time-ordered product to diagrams, in three steps ([[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]] has every line written out).
 >
 > **Step 1** (Wick's theorem). The time-ordered product is its normal-ordered product plus all contractions ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]): $:\!\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\!:$, six terms $D_F(x_i - x_j):\!\hat\phi_k\hat\phi_l\!:$ with one pair contracted, and three terms with both pairs contracted ([[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]).
@@ -60,14 +63,11 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > \langle0|T\{\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4\}|0\rangle = \underbrace{D_F(x_1 - x_2)D_F(x_3 - x_4)}_{1\text{–}2,\ 3\text{–}4} + \underbrace{D_F(x_1 - x_3)D_F(x_2 - x_4)}_{1\text{–}3,\ 2\text{–}4} + \underbrace{D_F(x_1 - x_4)D_F(x_2 - x_3)}_{1\text{–}4,\ 2\text{–}3} .
 > $$
 >
-> **Step 3** (draw). Each surviving term is a product of two $D_F$'s. Draw a point for each $x_i$ and a line for each $D_F$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-1|Def. §C6a.7.1]]): three diagrams with two lines each, the three ways of distributing four points over two propagators (figure below).
+> **Step 3** (draw). Each surviving term is a product of two $D_F$'s. Draw a point for each $x_i$ and a line for each $D_F$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-1|Def. §C6a.7.1]]): three diagrams with two lines each, the three ways of distributing four points over two propagators (figure above).
 >
 > *Source: PHY 513 Lecture 14, slide 13 · PS §4.4, eq. (4.42) · the user's PHY 513 notes, Ch. 14 §14.3, eq. (fourpointdiag)*
 
 ^ex-c6a-7-1
-
-![[ph-qft-c6-7-1.svg]]
-*The free four-point function: the three pairings of $x_1, \dots, x_4$, each a product of two Feynman propagators. In the third, the lines cross on the page but do not meet. Added figure; layout as PS eq. (4.42).*
 
 > [!caution] Caution: The third diagram on slide 13
 > Slide 13 labels its third diagram $x_1$–$x_2$ over $x_4$–$x_3$, which is the same pairing as the first diagram. The third pairing is $x_1$–$x_4$, $x_2$–$x_3$, as in the formula on slide 10 and in PS eq. (4.42).
@@ -86,6 +86,8 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 ## Zeroth and first order
 
 > [!example] Example §C6a.7.2: The Two-Point Function at Zeroth Order
+> ![[ph-qft-c6a-7-1.svg]]
+>
 > Expand $e^{-i\int\hat H_I} = 1 - i\int dt\,\hat H_I + \cdots$ in the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]). At zeroth order the exponential is 1 in numerator and denominator.
 >
 > **Step 1** (Wick's theorem for two fields, [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]).

@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 Can one relativistic particle propagate without leaving its light cone? The causal classes of spacetime and their invariance are Relativity's ([[§B1.3 Causal Structure and Proper Time#^def-b1-3-1|REL Def. §B1.3.1]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]]), the nonrelativistic propagator is [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]], and saddle points are [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions|§CA.5]]. This section (Lecture 2, Part A) states causality as a principle, defines the single-particle amplitude $U$, writes it as a boundary value and a radial integral, and shows with the lecture's saddle point that it leaks outside the light cone over a Compton wavelength. The exact amplitude needs the Wightman function: it is $2i\partial_t D_W$, and its closed forms are [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]]–[[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-10|Theorem §C2b.3.10]]; that its leak is exactly the part field theory keeps as a correlation while the commutator vanishes is [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|Theorem §C2b.4.7]].
 
+**Setup.** [[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]] is kinematic and holds in any relativistic theory, classical or quantum. Every other box is about **one free particle in single-particle quantum mechanics**, not a field: the Hilbert space $L^2(\mathbb R^3)$, states $|\mathbf x\rangle$ and $|\mathbf p\rangle$ with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$ and $\langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$ (weight $1$, not the relativistic normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), and $\hat H = E(\hat{\mathbf P})$, nonrelativistic ($E = \mathbf p^2/2m$) or relativistic ($E = E_{\mathbf p}$, $m > 0$). There is no vacuum, and the particle number is fixed at one. The results are exact except [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]], the leading term of a saddle point. The same question for the free quantum field in the free vacuum $|0\rangle$ is answered in [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]]–[[§C2b.4 Microcausality and the Commutator Function|§C2b.4]].
+
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, $x^2 = t^2 - \mathbf x^2$, $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $m > 0$ unless stated otherwise.
 
 ## Causal structure
@@ -75,6 +77,8 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 >
 > with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$ and $\langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$. Since $|\mathbf x\rangle$ is not a normalizable state ([[§44 Position Eigenstates and Continuous Resolutions#^prop-44-3|556 Prop. §44.3]]), $U(t, \cdot)$ is defined as the kernel of $e^{-i\hat Ht}$: $(e^{-i\hat Ht}\psi)(\mathbf x) = \int d^3y\,U(t, \mathbf x - \mathbf y)\,\psi(\mathbf y)$. Causality ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]]) would require $U(t, \mathbf x) = 0$ for $|\mathbf x| > |t|$.
 >
+> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ on $L^2(\mathbb R^3)$, not a field; *applies:* any real dispersion $E(\mathbf p)$, with states $|\mathbf x\rangle$, $|\mathbf p\rangle$ of weight $1$ (not the relativistic normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); the field-theory counterpart is $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]]).
+>
 > *Source: PHY 513 Lecture 2, Part A ("Quantum Causality of Free Particle I") · the user's PHY 513 notes, Ch. 2 §2.2 (eqs. for $U$ and the completeness relation) · PS §2.1, p. 13*
 
 ^def-c1a-3-1
@@ -87,6 +91,8 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 > $$
 >
 > the inverse Fourier transform of the bounded function $e^{-iE(\mathbf p)t}$, acting on test functions $f$ by $U(t, \cdot)[f] = \int\frac{d^3p}{(2\pi)^3}e^{-iE(\mathbf p)t}\tilde f(-\mathbf p)$, $\tilde f(\mathbf k) = \int d^3x\,f(\mathbf x)e^{-i\mathbf k\cdot\mathbf x}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]). As $t \to 0$, $U(t, \cdot) \to \delta^3$ in $\mathcal S'(\mathbb R^3)$.
+>
+> *Model:* as in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]; *applies:* any real $E(\mathbf p)$, every real $t$, exact (an identity in $\mathcal S'(\mathbb R^3)$).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (insertion of momentum states; check $U \to \delta^3$) · stated here as distributions*
 
@@ -123,6 +129,8 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 >
 > the amplitude is nonzero at every point after any time, and at fixed $\mathbf x \neq 0$ its modulus grows as $t \to 0$, although $U(t, \cdot) \to \delta^3$ as a distribution.
 >
+> *Model:* as in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]], with $E = \mathbf p^2/2m$; *applies:* nonrelativistic, $t \neq 0$, exact.
+>
 > *Source: PHY 513 Lecture 2, Part A ("Quantum Causality of Free Particle I–II") · the user's PHY 513 notes, Ch. 2 §2.2 (eq. for $U_{\text{NR}}$ and Derivation "The Gaussian integral behind the nonrelativistic amplitude") · PS §2.1, p. 14*
 
 ^thm-c1a-3-3
@@ -150,6 +158,8 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 > $$
 >
 > converges absolutely and is analytic for $\operatorname{Im}z < 0$, and $U(t, \cdot) = \lim_{\varepsilon\to0^+}U(t - i\varepsilon, \cdot)$ in $\mathcal S'(\mathbb R^3)$ and, read as a distribution in $(t, \mathbf x)$, in $\mathcal S'(\mathbb R^4)$.
+>
+> *Model:* as in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]], with $E = E_{\mathbf p}$, $m > 0$; *applies:* exact.
 >
 > *Source: derived here, from the user's PHY 513 notes, Ch. 2 §2.2 (Step 1 of Derivation "The relativistic amplitude in closed form": $t \to t - i\varepsilon$)*
 
@@ -183,6 +193,8 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 > $$
 >
 > both absolutely convergent. At real $t$ these are the lecture's and PS's formulas, which do not converge as integrals (the integrand grows like $p$) and mean the limit $z = t - i\varepsilon$, $\varepsilon \to 0^+$, of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]].
+>
+> *Model:* as in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]], with $E = E_{\mathbf p}$, $m > 0$; *applies:* $r > 0$, exact for $\operatorname{Im}z < 0$, and at real $t$ as the limit of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]].
 >
 > *Source: PHY 513 Lecture 2, Part A ("Relativistic Quantum Causality") · the user's PHY 513 notes, Ch. 2 §2.2 (Derivation "Reduction to a radial integral", eqs. for the radial and folded forms) · PS §2.1, p. 14*
 
@@ -220,6 +232,8 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 > $$
 >
 > not zero at spacelike points with $t \neq 0$, and damped over the Compton wavelength $1/m$. In particular $U \propto e^{-m\sqrt{\mathbf x^2 - t^2}}$ (PS §2.1). The exact amplitude, which vanishes at no spacelike point with $t \ne 0$, and the next term $1 + 15/8m\rho$ are [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]] and [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-9|Theorem §C2b.3.9]].
+>
+> *Model:* as in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]], with $E = E_{\mathbf p}$, $m > 0$; *applies:* spacelike points $r > \lvert t\rvert$, leading order in $1/m\rho$ (saddle point); the exact amplitude is [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]].
 >
 > *Source: PHY 513 Lecture 2, Part A ("Saddle Point Approximation", "Quantum Causality is Violated") · the user's PHY 513 notes, Ch. 2 §2.2 (check (iii); Derivation "Saddle point of the relativistic amplitude") · PS §2.1, p. 14*
 

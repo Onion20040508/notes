@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 Which quantities does a field theory conserve, and why? Noether's theorem answers: one conserved current for every continuous symmetry of the action. It starts from the action and the Euler–Lagrange equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]) and from the particle version in mechanics ([[§B6.4 Symmetries, Conservation Laws and Noether's Theorem#^thm-b6-4-2|CM Theorem §B6.4.2]]), and adds what fields need: a local conservation law $\partial_\mu j^\mu = 0$ at every point, and a charge that is conserved only up to what flows out through the boundary. Every object is defined before it is used (the instances of δ, the generator and the symmetry variation $\delta\phi = \alpha\Delta\phi$); then how $\delta\mathcal L$ is computed, by substitution or by the chain rule, and the test that decides whether a transformation is a symmetry and defines $\mathcal J$; the algorithm is [[P3 Noether's Procedure]]; then come the theorem with its proof and what the same algebra gives when the test fails. Charges, improvement terms and the internal-symmetry examples are [[§C1b.6 Conserved Charges and Internal Symmetries|§C1b.6]]. Spacetime symmetries, where the point moves, are [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum|§C1b.7]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]].
 
+**Setup.** Classical fields: $C^2$ real or complex functions with a local $\mathcal L(\phi_i, \partial_\mu\phi_i)$ ([[§C1b.5 Noether's Theorem#^rem-c1b-5-9|Remark: In what sense these identities hold]]), and continuous transformations with constant (global) parameters that do not move the point (those that do: [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum|§C1b.7]]). Every box holds for any such $\mathcal L$: the identities hold for every configuration (off shell), and only the conservation law uses the field equations. The examples use [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]] and the classical Dirac Lagrangian ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]). In the free quantum scalar field the Noether charges become the generators of the symmetry ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|Theorem §C3.5.6]]).
+
 ## The objects
 
 > [!definition] Definition §C1b.5.1: The Instances of δ
@@ -103,6 +105,8 @@ The first row is the variation of the action principle ([[§C1b.2 The Action Pri
 >
 > Derivatives are not transformed independently: $\Delta(\partial_\mu\phi) = \partial_\mu(\Delta\phi)$.
 >
+> *Model:* any classical scalar fields, real or complex (several fields for the rows with several components); *applies:* classical, first order in the parameters, any configuration (no field equation is used); the Lorentz row is the orbital part only, and a field with components adds $\frac12\omega_{\mu\nu}S^{\mu\nu}$ ([[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, "Computing Δφ (step 1)" · PS §2.2, eq. (2.15) and p. 18 · Lecture 3, Examples 1–3 · Yu §1.7.4, eq. (1.258)*
 
 ^thm-c1b-5-1
@@ -183,6 +187,8 @@ Step 2 of [[P3 Noether's Procedure#^p3-2|P3]] asks for the first-order change of
 > $$
 >
 > The sum runs over every independent field variable; a complex field enters as $\phi$ and $\phi^{\ast}$, two variables with generators $\Delta\phi$ and $\Delta\phi^{\ast} = (\Delta\phi)^{\ast}$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]). A field whose derivatives do not occur in $\mathcal L$ has $\partial\mathcal L/\partial(\partial_\mu\phi_i) = 0$ and contributes through $\partial\mathcal L/\partial\phi_i$ alone. Neither route uses the equations of motion.
+>
+> *Model:* any local $\mathcal L(\phi_i, \partial_\mu\phi_i)$, $C^1$ in its arguments; *applies:* classical, every configuration (off shell), first order, constant parameters.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, "The procedure", step 2 ("Equivalently, by the chain rule") · PHY 513 Lecture 3, Part C ("Vary Lagrangean explicitly") · Yu §1.6.2, eq. (1.164)*
 
@@ -310,6 +316,8 @@ Step 2 of [[P3 Noether's Procedure#^p3-2|P3]] asks for the first-order change of
 >
 > In particular, $\delta\mathcal L = 0$ for every configuration implies $\mathcal L[T_\alpha\phi] = \mathcal L[\phi]$ exactly: the $O(\alpha^2)$ terms of [[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]] impose no further condition.
 >
+> *Model:* any local $\mathcal L$ and any one-parameter group $T_\alpha$; *applies:* classical, every configuration, exact for finite $\alpha$.
+>
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Definition "Transformation, parameter, generator" ("nothing is lost, since finite transformations are compositions of small ones") · the integration along the family written out here*
 
 ^thm-c1b-5-3
@@ -373,6 +381,8 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 > $$
 >
 > and therefore $\partial_\mu j^\mu_a = 0$ on solutions of the Euler–Lagrange equations (on shell): one conserved current per parameter, summed over every field that parameter moves.
+>
+> *Model:* any local $\mathcal L(\phi_i, \partial_\mu\phi_i)$ with a continuous global symmetry ([[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]]); *applies:* classical $C^2$ fields ([[§C1b.5 Noether's Theorem#^rem-c1b-5-9|Remark: In what sense these identities hold]]); the divergence identity off shell, conservation on solutions of the field equations; transformations that do not move the point (those that do: [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-3|Theorem §C1b.7.3]]); in the free quantum scalar field the charges are the generators ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|Theorem §C3.5.6]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Principle "Noether's theorem", eqs. (noethercurrentdef)–(noethercurrent) · PS §2.2, eqs. (2.11)–(2.12) · Lecture 3, Part C*
 
@@ -475,6 +485,8 @@ The algebra of the proof does not need the symmetry until its last line. Run wit
 > $$
 >
 > For $X = 0$ this is [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]. If $X$ is not a divergence, the transformation is no symmetry (outcome (iii) of [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]]), and on solutions the divergence of the would-be current is the non-divergence part of $\delta\mathcal L/\alpha$; with $\mathcal J = 0$, simply $\partial_\mu j^\mu = \delta\mathcal L/\alpha$.
+>
+> *Model:* any local $\mathcal L(\phi_i, \partial_\mu\phi_i)$ and any continuous transformation with a constant parameter; *applies:* classical, off shell and on solutions as stated, exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, eq. (noetheroffshell) and Example 1 ("With a mass, step 2 gives $\delta\mathcal L = -\alpha m^2\phi$ … and indeed $\partial_\mu\partial^\mu\phi = -m^2\phi \neq 0$") · PHY 513 Lecture 3, Part C ("Vary Lagrangean explicitly") · the identity with $\delta\mathcal L$ not a divergence written out here*
 

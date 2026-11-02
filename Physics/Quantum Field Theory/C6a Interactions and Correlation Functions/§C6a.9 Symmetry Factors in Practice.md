@@ -53,6 +53,8 @@ The product rule for $S$, proved in CA (its examples there are the vacuum bubble
 ## Examples
 
 > [!example] Example §C6a.9.1: The First-Order Diagrams
+> ![[ph-qft-c6a-9-5.svg]]
+>
 > The 15 complete contractions of $\hat\phi_x\hat\phi_y\hat\phi_{z_1}\cdots\hat\phi_{z_4}$ are listed, bracket by bracket, in Step 4 of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]]; $N = 1!\,(4!)^1 = 24$. As pairings ("the fifteen pairings of $\langle\hat\phi(x)\hat\phi(y)\hat\phi(z)^4\rangle$"): $E = \{x, y\}$, $n = 1$, write $a$ for the leg $(1, a)$ of $z$; the relabelling group is $G_1 = S_4$ acting on the legs $1, 2, 3, 4$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]]), and
 >
 > $$
@@ -131,6 +133,8 @@ The product rule for $S$, proved in CA (its examples there are the vacuum bubble
 *The fifteen pairings of [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]] as two orbits of $G_1 = S_4$ (orange: leg $a$ of the vertex; $\{x1, y2, 34\}$ means the blocks $\{x, 1\}$, $\{y, 2\}$, $\{3, 4\}$). (a) Three of the 12 tadpole pairings, and the loop flip $(3\,4)$, which maps $P_0$ to itself. (b) The pairing $Q_0$ of the line times the figure-eight and three of its 8 symmetries: reverse the left loop, reverse the right loop, exchange the loops. Added figure; drawings from the user's note on symmetry factors and orbit–stabilizer (Oct 2026), Example "The fifteen pairings".*
 
 > [!example] Example §C6a.9.2: The Melon: S = 48 by Counting
+> ![[ph-qft-c6a-9-6.svg]]
+>
 > Two vertices $z_1$, $z_2$, no external points, four lines from $z_1$ to $z_2$ (the slides' "melonic vacuum bubble (pumpkin diagram)"). Write $\hat\phi_{(v,a)}$ for the $a$-th factor of $\hat\phi_I(z_v)^4$.
 >
 > **Step 1** (prefactor). Second order ([[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], Step 1):
@@ -186,6 +190,8 @@ The product rule for $S$, proved in CA (its examples there are the vacuum bubble
 ^ex-c6a-9-2
 
 > [!example] Example §C6a.9.3: The Other Second-Order Vacuum Bubbles
+> ![[ph-qft-c6a-9-7.svg]]
+>
 > Notation and the 105 complete contractions of the eight fields as in [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-2|Example §C6a.9.2]], Steps 2–3; $N = 1152$.
 >
 > *The dumbbell*: one loop at each of $z_1$, $z_2$ and two lines between them.
@@ -227,6 +233,8 @@ The product rule for $S$, proved in CA (its examples there are the vacuum bubble
 ^ex-c6a-9-3
 
 > [!example] Example §C6a.9.4: Three Second-Order Corrections to the Two-Point Function
+> ![[ph-qft-c6a-9-8.svg]]
+>
 > The fields are $\hat\phi_x$, $\hat\phi_y$ and $\hat\phi_{(v,a)}$, $v = 1, 2$, $a = 1, \dots, 4$; the surviving terms are complete contractions (Steps 3–4 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]); $N = 2!\,(4!)^2 = 1152$. Below, $v$ is one vertex and $w$ the other.
 >
 > *The snowman*: $x$ and $y$ joined to one vertex, two lines from it to the other, one loop at the other.
@@ -318,6 +326,8 @@ The product rule for $S$, proved in CA (its examples there are the vacuum bubble
 ^ex-c6a-9-4
 
 > [!example] Example §C6a.9.5: The Four Diagrams of Problem Set 8, Problem 1(a)
+> ![[ph-qft-c6a-9-9.svg]]
+>
 > The user's setup: a diagram with $n$ vertices and external points $x_1, \dots, x_r$ comes from the order-$\lambda^n$ term $\frac{1}{n!}\bigl(\frac{-i\lambda}{4!}\bigr)^n\int d^4z_1\cdots d^4z_n\,\langle0|T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|0\rangle$ of the numerator; if $N_D$ complete contractions produce it, all give the same integral, and ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]])
 >
 > $$
@@ -387,6 +397,8 @@ The product rule for $S$, proved in CA (its examples there are the vacuum bubble
 *The user's exploded-vertex drawings for [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-5|Example §C6a.9.5]]: each vertex a dashed circle, its legs separate dots (orange), internal lines red. (a) Sunset: a symmetry applies the same $\pi \in S_3$ to the legs $1, 2, 3$ and $a, b, c$, permuting the three lines. (b) Fish: the only symmetry exchanges the two lines. (c) A triangle pairing $P$; (d) exchanging the two internal legs at $C$ gives the same drawing but a different pairing, so it is not a symmetry, $S = 1$. Added figure, adapted from the user's solution of PHY 513, Problem Set 8, Problem 1(a).*
 
 > [!example] Example §C6a.9.6: PS's Cactus, a Third-Order Example
+> ![[ph-qft-c6a-9-10.svg]]
+>
 > PS's third-order contraction (eq. (4.45)): $x$–$z$, a loop at $z$, $z$–$w$, $w$–$y$, two lines from $w$ to $u$, a loop at $u$, with value
 >
 > $$
@@ -476,7 +488,11 @@ In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $
 
 *Uses:* [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]
 
+*Procedure:* [[P5 Symmetry Factor of a Diagram#^p5-5|P5, step 5]]
+
 > [!example] Example §C6a.9.7: The Three Oriented Diagrams of Problem Set 8, Problem 1(b)
+> ![[ph-qft-c6a-9-11.svg]]
+>
 > External fields $\hat\phi^\dagger(y)$ (arrow enters the diagram) and $\hat\phi(x)$ (arrow leaves); at a vertex an arrow enters at a $\hat\phi$ leg and leaves at a $\hat\phi^\dagger$ leg. $|G_1| = 1!\,(2!\,2!) = 4$, $|G_2| = 2!\,(2!\,2!)^2 = 32$ ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]).
 >
 > *(a) Oriented tadpole*: $y \to z \to x$, a loop at $z$ from its $\hat\phi^\dagger$ leg to its $\hat\phi$ leg.

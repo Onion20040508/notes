@@ -187,6 +187,8 @@ The decay rate follows from the box chain of [[§C6b.3 Transition Probabilities 
 
 *Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]], [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-4|Theorem §C6b.6.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^def-c6b-7-1|Def. §C6b.7.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-4|Theorem §C6b.7.4]]
 
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-5|P7, steps 5–6]]
+
 > [!theorem] Theorem §C6b.8.5: Two-Body Decays
 > Let $A$ (mass $m_A$, at rest) decay into two particles of masses $m_1$, $m_2$, $m_A > m_1 + m_2$. Then
 > 1. $\displaystyle\int d\Pi_2\,F = \int d\Omega\,\frac{|\mathbf p_1|}{16\pi^2m_A}\,F$, with $|\mathbf p_1| = |\mathbf p_2| = \frac{\lambda^{1/2}(m_A^2, m_1^2, m_2^2)}{2m_A}$, $E_1 = \frac{m_A^2 + m_1^2 - m_2^2}{2m_A}$; in particular $\displaystyle\int d\Pi_2 = \frac{|\mathbf p_1|}{4\pi m_A}$;
@@ -240,6 +242,8 @@ The decay rate follows from the box chain of [[§C6b.3 Transition Probabilities 
 ^der-c6b-8-5
 
 *Uses:* [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-5|Theorem §C6b.7.5]], [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-6|Theorem §C6b.7.6]], [[§C6b.8 Decay Rates and Widths#^thm-c6b-8-4|Theorem §C6b.8.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-3|Theorem §C6b.1.3]]
+
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-8|P7, step 8]]
 
 > [!model] Model §C6b.8.6: Two Scalar Fields with a Φφ² Coupling
 > Two real scalar fields, $\Phi$ of mass $M$ and $\phi$ of mass $m$:

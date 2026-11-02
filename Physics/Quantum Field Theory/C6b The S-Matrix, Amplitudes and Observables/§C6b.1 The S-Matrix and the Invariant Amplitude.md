@@ -233,6 +233,8 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 
 ^def-c6b-1-3
 
+*Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-6|P6, step 6]], [[P7 From ℳ to σ or Γ#^p7-2|P7, step 2]]
+
 
 Where the $(2\pi)^4$ and the $i$ of $i\mathcal M$ come from: at first order $\langle f|i\hat T|i\rangle = -i\int d^4x\,\langle f|\hat{\mathcal H}_I(x)|i\rangle$, and every external particle contributes a plane wave $e^{\pm ip\cdot x}$ ([[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-1|Lemma §C6b.2.1]]), so the vertex integral is ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]])
 $$

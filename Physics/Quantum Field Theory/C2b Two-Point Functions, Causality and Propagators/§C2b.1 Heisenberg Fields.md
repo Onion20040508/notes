@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§C2a.4 Particles and Relativistic Normalization|§C2a.4]] lives at one instant: a mode expansion, a commutator and a spectrum, with no time in them. This section restores time in the Heisenberg picture ([[§C3.3 The Schrödinger and Heisenberg Pictures#^def-c3-3-1|QM Def. §C3.3.1]]) and asks how the field operator depends on time: first in field form, as an operator equation (the canonical relations hold at every time, and the Heisenberg equations are the Klein–Gordon equation), then through the solutions of that equation, which live on the mass shell and give the covariant mode expansion, and finally what the negative-frequency half of it means. The two-point functions of [[§C2b.2 The Wightman Function|§C2b.2]]–[[§C2b.4 Microcausality and the Commutator Function|§C2b.4]] are built from the Heisenberg field.
 
+**Setup.** The system is [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]: quantum, free, $m > 0$, Heisenberg picture with the free $\hat H$. The states are the Fock space over the free vacuum $|0\rangle$, relativistically normalized, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$. The definition of the Heisenberg field and the canonical relations at every time hold for any time-independent $\hat H$; everything from the field equation on is exact for the free field only. With interactions the same mode expansion is the interaction-picture field, not the Heisenberg field ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-2|Caution: With interactions, the Heisenberg field is not the free mode expansion]]), and the one-particle matrix element carries $\sqrt Z$ ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|Caution: With interactions, the one-particle matrix element carries √Z]]).
+
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $p\cdot x = E_{\mathbf p}t - \mathbf p\cdot\mathbf x$ whenever $p$ is on shell, $[\hat a_{\mathbf p}, \hat a_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}^\dagger|0\rangle$. Lecture 5 writes $\omega_{\mathbf p}$ for $E_{\mathbf p}$ ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|Caution: Eₚ, not ωₚ; π, not Π]]). Unless stated otherwise $m > 0$; the massless case is stated separately where it differs.
 
 ## The Heisenberg field
@@ -85,6 +87,8 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > $$
 > (\partial_\mu\partial^\mu + m^2)\,\hat\phi(x) = 0 .
 > $$
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free $\hat H$, exact, an operator equation; with an interaction the Heisenberg equations give the interacting field equation instead ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-3|Theorem §C6a.1.3]]; [[§C2b.1 Heisenberg Fields#^cau-c2b-1-2|Caution: With interactions, the Heisenberg field is not the free mode expansion]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.2 · PS §2.4, eqs. (2.44)–(2.45)*
 
@@ -170,6 +174,8 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > $$
 >
 > the mode expansion. For the Heisenberg field, which solves the equation as an operator ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]), $g(p) = \sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]).
+>
+> *Model:* any solution of the free Klein–Gordon equation, c-number or operator-valued; here [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* exact, for tempered solutions, $m > 0$; the operator reading holds for the free Heisenberg field only.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.3 (Principle "Free fields live on the mass shell"), §6.4 · PS §2.4, eqs. (2.57)–(2.58)*
 

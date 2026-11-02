@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions|§C5a.9]] ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]], [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]]) normalized, how do they sit relative to each other, and what survives of them in a computation? Every answer here is a short calculation with the square-root identities ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-7|Theorem §C5a.9.7]]) and the Dirac conjugate $\bar u = u^\dagger\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]), whose rows $\bar u^s(p)$, $\bar v^s(p)$ are [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]. The results — $\bar uu = 2m$, $u^\dagger u = 2E_{\mathbf p}$, $\bar vv = -2m$, the orthogonality relations and the spin sums $\sum u\bar u = \slashed{p} + m$, $\sum v\bar v = \slashed{p} - m$ — are what later amplitudes and the quantized field use. The section ends with the helicity basis, in which no matrix square root is needed, and the massless limit, where helicity becomes chirality ([[§C3.7★ Massless Particles and Helicity|§C3.7★]]). The covariance of $\gamma^\mu$, the invariance of the Dirac form and $\gamma^5$ are mathematics ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.12]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]]), shown in the blocks below.
 
+**Setup.** As in [[§C5a.9 Plane-Wave Solutions|§C5a.9]]: the c-number spinors $u^s(p)$, $v^s(p)$ of the free Dirac field ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), on shell with $p^0 = E_{\mathbf p}$, normalized as in [[§C5a.9 Plane-Wave Solutions#^def-c5a-9-4|Def. §C5a.9.4]], with any orthonormal spin basis unless a box fixes the helicity basis; every $m \ge 0$ unless a box says $m > 0$. The results are exact algebraic identities; another normalization of the spinors rescales them. The quantum field uses them unchanged: in its mode algebra ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]]) and its propagator ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]]).
+
 *Conventions* as in [[§C5a.9 Plane-Wave Solutions|§C5a.9]]: chiral basis, $p^0 = E_{\mathbf p} > 0$, $\gamma^0 = \begin{pmatrix}0 & \mathbb 1\\ \mathbb 1 & 0\end{pmatrix}$, so for a row $(a^\dagger, b^\dagger)$ the product $(a^\dagger, b^\dagger)\gamma^0 = (b^\dagger, a^\dagger)$ exchanges the halves. $\sqrt{p\cdot\sigma}$, $\sqrt{p\cdot\bar\sigma}$ are Hermitian ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-5|Def. §C5a.9.5]]), so $(\sqrt{p\cdot\sigma}\,\xi)^\dagger = \xi^\dagger\sqrt{p\cdot\sigma}$; the conjugate rows, derived once, are $\bar u^s(p) = (\xi^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \xi^{s\dagger}\sqrt{p\cdot\sigma})$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]) and $\bar v^s(p) = (-\eta^{s\dagger}\sqrt{p\cdot\bar\sigma},\ \eta^{s\dagger}\sqrt{p\cdot\sigma})$ ([[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]). $\tilde p \equiv (E_{\mathbf p}, -\mathbf p)$ is $p$ with the three-momentum reversed.
 
 ## The mathematics used here
@@ -39,6 +41,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 
 > [!theorem] Theorem §C5a.10.1: u†u = 2E
 > For the spinors $u^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] with an orthonormal spin basis ([[§C5a.9 Plane-Wave Solutions#^def-c5a-9-3|Def. §C5a.9.3]]), $u^{r\dagger}(p)\,u^s(p) = 2E_{\mathbf p}\,\delta^{rs}$. Different spin labels are orthogonal; the value depends on the frame.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.4 (Derivation "Normalization I: u†u") · PHY 513 Lecture 9, Part B ("Normalization I") · PS §3.3, eq. (3.55) · Yu §5.4.2, eq. (5.198)*
 
@@ -68,6 +72,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 
 > [!theorem] Theorem §C5a.10.2: ūu = 2m
 > $\bar u^r(p)\,u^s(p) = 2m\,\delta^{rs}$, with $u^s$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] and its Dirac conjugate $\bar u^r = u^{r\dagger}\gamma^0$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]; the row: [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-10|Theorem §C5a.9.10]]); the value is the same in every frame.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.4 (Derivation "Normalization II: ūu") · PHY 513 Lecture 9, Part B ("Normalization II") · PS §3.3, eqs. (3.56)–(3.57), (3.60) · Yu §5.4.2, eqs. (5.205), (5.207)*
 
@@ -103,6 +109,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 > [!theorem] Theorem §C5a.10.3: v†v = 2E
 > For the spinors $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], $v^{r\dagger}(p)\,v^s(p) = 2E_{\mathbf p}\,\delta^{rs}$.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening.
+>
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "Normalizations of the v's") · PHY 513 Lecture 9, Part C ("Normalization of v's") · PS §3.3, eq. (3.63) · Yu §5.4.2, eq. (5.199)*
 
 ^thm-c5a-10-3
@@ -126,6 +134,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 
 > [!theorem] Theorem §C5a.10.4: v̄v = −2m
 > $\bar v^r(p)\,v^s(p) = -2m\,\delta^{rs}$ ($v^s$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]], $\bar v^r = v^{r\dagger}\gamma^0$ as in [[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]], the row of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-12|Theorem §C5a.9.12]]): Lorentz invariant, and negative.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "Normalizations of the v's") · PHY 513 Lecture 9, Part C ("Normalization of v's") · PS §3.3, eq. (3.63) · Yu §5.4.2, eqs. (5.206), (5.208)*
 
@@ -163,6 +173,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 > \bar v^r(p)\,u^s(p) = 0, \qquad \bar u^r(p)\,v^s(p) = 0 .
 > $$
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening.
+>
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "Orthogonality of u and v") · PHY 513 Lecture 9, Part C ("Bonus Material: Orthogonality of u and v") · PS §3.3, eq. (3.64) · Yu §5.4.2, eqs. (5.209)–(5.210)*
 
 ^thm-c5a-10-5
@@ -198,6 +210,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 > $$
 >
 > while at equal momenta $u^{r\dagger}(p)\,v^s(p) = -2\,\xi^{r\dagger}(\mathbf p\cdot\boldsymbol\sigma)\,\eta^s$, which is neither zero nor Lorentz invariant in general.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "Orthogonality of u and v", "With Hermitian conjugates") · PHY 513 Lecture 9, Part C ("Warning") · PS §3.3, eq. (3.65) · Yu §5.4.1, eq. (5.142); §5.4.2, eq. (5.203)*
 
@@ -259,6 +273,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 >
 > a $4\times4$ matrix (column times row), independent of the choice of basis.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening.
+>
 > *Source: the user's PHY 513 notes, Ch. 9 §9.4 (Derivation "Completeness: the spin sum over u") · PHY 513 Lecture 9, Part B ("Completeness for Dirac Spinors") · PS §3.3, eq. (3.66) · Yu §5.4.2, eq. (5.212)*
 
 ^thm-c5a-10-7
@@ -296,6 +312,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 > \sum_{s=1,2}v^s(p)\,\bar v^s(p) = \slashed{p} - m .
 > $$
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening.
+>
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "Completeness: the spin sum over v") · PHY 513 Lecture 9, Part C ("Completeness of v's") · PS §3.3, eq. (3.67) · Yu §5.4.2, eq. (5.213)*
 
 ^thm-c5a-10-8
@@ -324,6 +342,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 >
 > $\slashed{p}$ is a matrix with two spinor slots, not a number: it is "Lorentz invariant" only in the sense that relations such as $\sum u\bar u = \slashed{p} + m$ keep their form in every frame.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening; part 1 for every four-vector $p$, a representation fact.
+>
 > *Source: the user's PHY 513 notes, Ch. 9 §9.4 (Caution "In what sense p̸ is 'Lorentz invariant'") · PHY 513 Lecture 9, Part B*
 
 ^thm-c5a-10-9
@@ -350,6 +370,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 > 1. $\dfrac1{2m}\sum_{s=1,2}\bigl[u^s(p)\bar u^s(p) - v^s(p)\bar v^s(p)\bigr] = \mathbb 1_4$;
 > 2. $\Lambda_+ = \frac1{2m}\sum_su^s\bar u^s$ and $\Lambda_- = -\frac1{2m}\sum_sv^s\bar v^s$ are complementary projectors: $\Lambda_\pm^2 = \Lambda_\pm$, $\Lambda_+\Lambda_- = \Lambda_-\Lambda_+ = 0$, $\Lambda_+ + \Lambda_- = \mathbb 1$;
 > 3. $\Lambda_+u^s = u^s$, $\Lambda_+v^s = 0$, $\Lambda_-v^s = v^s$, $\Lambda_-u^s = 0$: $\Lambda_+$ projects onto the $u$'s (eigenvalue $+m$ of $\slashed{p}$), $\Lambda_-$ onto the $v$'s; $\operatorname{tr}\Lambda_\pm = 2$.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening, $m > 0$.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.5 (Derivation "Why neither spin sum is the identity, and what is") · Lecture 9 ended on this point*
 
@@ -493,6 +515,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 >
 > With Yu's abbreviation $\omega_\lambda \equiv \sqrt{E_{\mathbf p} + \lambda|\mathbf p|}$, $u_\lambda(p) = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$ for $\lambda = \pm$, with $\omega_\lambda\omega_{-\lambda} = m$ (names in other sources: [[§C5a.9 Plane-Wave Solutions#^cau-c5a-9-3|§C5a.9, Caution: Names for the plane-wave spinors]]). All normalizations and the spin sum of this section hold for them.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening, helicity basis, $\mathbf p \ne 0$.
+>
 > *Source: the user's PHY 513 notes, Ch. 9 §9.3 (Derivation "Example: the helicity basis", part "The Dirac spinors") · Yu §5.4.2, eqs. (5.165)–(5.181) · the user's pre-course notes, §5.4 · PS §3.3, eqs. (3.52)–(3.54)*
 
 ^thm-c5a-10-12
@@ -523,6 +547,8 @@ The spin sums are covariant (Theorem §C5a.10.9) because the Dirac matrices rota
 > $$
 >
 > Yu's choice; $\{\lambda\xi_{-\lambda}\}$ is an orthonormal spin basis, so $\bar vv = -2m$, $v^\dagger v = 2E$ and $\sum_\lambda v\bar v = \slashed{p} - m$ hold for it.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening, helicity basis with Yu's choice $\eta^s = \lambda\,\xi_{-\lambda}$, $\mathbf p \ne 0$.
 >
 > *Source: Yu §5.4.2, eqs. (5.192)–(5.199), (5.213) · the user's pre-course notes, §5.4 · the user's PHY 513 notes, Ch. 9, "Correspondence with Yu" ("his v(p, λ) (5.196) is our (vspinor) with η^s = λξ_{−λ}")*
 
@@ -568,6 +594,8 @@ In the massless limit helicity becomes chirality, the eigenvalue of $\gamma^5$, 
 > 1. For $m = 0$: $u_+(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}0\\ \xi_+\end{pmatrix}$, $u_-(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}\xi_-\\ 0\end{pmatrix}$, and $\gamma^5u_\pm = \pm u_\pm$ ($\gamma^5$ of [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]]): positive helicity lives entirely in the right-handed Weyl half $\psi_R$, negative helicity in $\psi_L$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]]); helicity $\pm\frac12$ equals chirality $\pm1$ (divided by 2).
 > 2. For $m > 0$, $E_{\mathbf p} \gg m$: the dominant half has amplitude $\sqrt{E + |\mathbf p|} = \sqrt{2E}\,(1 + O(m^2/E^2))$ and the other half $\sqrt{E - |\mathbf p|} = m/\sqrt{E + |\mathbf p|} \approx m/\sqrt{2E}$, so $u_\pm \to \sqrt{2E}\,(0, \xi_+)$, $\sqrt{2E}\,(\xi_-, 0)$ with corrections of relative size $m/2E$.
 > 3. The $v$'s of [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-13|Theorem §C5a.10.13]] at $m = 0$: $v(p, +) = \sqrt{2E}(\xi_-, 0)$, $v(p, -) = \sqrt{2E}(0, \xi_+)$: the column of helicity $-\lambda/2$ sits in the Weyl half of that helicity.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], and for $m = 0$ the Weyl fields ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-11|Model §C5a.7.11]]); *applies:* helicity basis; parts 1 and 3 exact at $m = 0$, part 2 for $m > 0$, $E_{\mathbf p} \gg m$, up to relative corrections $m/2E_{\mathbf p}$.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.3 ("For E ≫ m, u₊ → √(2E)(0, ξ₊) … the origin of the names") · PS §3.3, eqs. (3.52)–(3.53) and p. 47 · the user's pre-course notes, §5.4 (note "Rest frame, and what ω_λω_{−λ} = m means")*
 

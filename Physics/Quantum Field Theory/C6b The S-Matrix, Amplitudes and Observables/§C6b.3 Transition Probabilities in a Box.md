@@ -50,6 +50,8 @@ tags: [quantum-field-theory, level-c]
 
 ^def-c6b-3-1
 
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-2|P7, step 2]]
+
 Why both norms: the Born rule gives probabilities as squared overlaps of *unit* vectors, and the box states have norms $\propto\tilde V$ ([[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-3|Theorem §C6b.3.3]] below). The evolution does not change the norm of the initial vector, by unitarity ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-1|Theorem §C6a.3.1]]; Yu (6.127)):
 
 $$
@@ -128,6 +130,8 @@ The box turns the delta functions of this section into numbers. The mathematics,
 ^der-c6b-3-2
 
 *Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]
+
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-2|P7, steps 2–3]]
 
 ## The states and their norms
 
@@ -242,6 +246,8 @@ The box turns the delta functions of this section into numbers. The mathematics,
 
 *Uses:* [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-2|Theorem §C6b.3.2]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-3|Theorem §C6b.3.3]]
 
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-3|P7, step 3]]
+
 ## Counting the final states
 
 > [!theorem] Theorem §C6b.3.5: Final States in a Periodic Box
@@ -325,6 +331,8 @@ The box turns the delta functions of this section into numbers. The mathematics,
 
 *Uses:* [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-4|Theorem §C6b.3.4]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-5|Theorem §C6b.3.5]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]
 
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-4|P7, step 4]]
+
 > [!theorem] Theorem §C6b.3.7: Identical Particles in the Final State
 > If the final state contains $n_k$ identical particles of species $k$, integrating $dR$ of [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-6|Theorem §C6b.3.6]] over all final momenta counts every physical final state $n_k!$ times per species, also when identical bosons share a momentum. The total rate is
 >
@@ -370,6 +378,8 @@ The box turns the delta functions of this section into numbers. The mathematics,
 ^der-c6b-3-7
 
 *Uses:* [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-3|Theorem §C6b.3.3]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-4|Theorem §C6b.3.4]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-5|Theorem §C6b.3.5]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-6|Theorem §C6b.3.6]]
+
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-7|P7, step 7]]
 
 > [!caution] Caution: Names in Yu's §6.5.1
 > Yu writes the initial particles in script, $\mathcal A$, $\mathcal B$, and the identical-particle factor $\mathcal S$ (末态对称性因子, (6.305)); these notes write $A$, $B$ and $S_{\rm id}$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]]). His $T_{fi} = \langle f|T|i\rangle$ is $\langle f|\hat T|i\rangle$ here, and his $R$ (单位时间内的跃迁概率) is the rate $R$ of [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-4|Theorem §C6b.3.4]]–[[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-7|Theorem §C6b.3.7]]; the calligraphic $\mathcal R$ of [[§C6b.4 The Cross Section|§C6b.4]] is a rate per unit volume. His creation operators carry no hats and no helicity labels (spinless particles here).

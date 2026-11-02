@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 Why must a theory that is both quantum and relativistic be a theory of fields? Quantum Mechanics C13★ read the Klein–Gordon and Dirac equations as wave equations for one particle and found where that reading fails ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-1|QM Theorem §C13.1.1]], [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^rem-c13-1-2|QM Remark: What the negative energies could mean]], [[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]); Relativity read the Klein–Gordon equation as a classical field equation ([[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Model §B4.1.3]]); and [[§C12.2★ Second Quantization]] built one Hilbert space for any number of identical particles. This section gives the course's three reasons for fields, adds the failure that is not a defect of any equation but of single-particle mechanics itself (causality, [[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]]), maps each failure to the place where the quantum field repairs it, and lays out the plan. What a field is, and how it transforms, is [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-1|Def. §C1b.1.1]].
 
+**Setup.** No model yet. [[§C1a.1 Why Quantum Field Theory#^law-c1a-1-1|Law §C1a.1.1]] is an empirical statement about relativistic processes, with its scope in its *Valid when* line; the remarks compare one free particle in single-particle quantum mechanics (the system of [[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]]) with the free quantum fields of C2a–C5b, which repair its failures.
+
 ## Three reasons for fields
 
 > [!law] Law §C1a.1.1: Particle Number Is Not Conserved

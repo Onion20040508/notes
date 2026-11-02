@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What do the states of the free real field describe? The ladder relations of [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]] ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]]) and the Fock space of identical particles of Quantum Mechanics ([[§C12.2★ Second Quantization#^def-c12-2-1|QM Def. §C12.2.1]]) answer: particles, the states of the Fock space generated from the vacuum ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]], postulated in §C2a.3 where the zero-point energy first needs it). What the field adds to second quantization is the continuum and relativity: one-particle states labelled by a continuous momentum, normalized so that the normalization is Lorentz invariant, with the invariant measure $d^3p/(2\pi)^32E_{\mathbf p}$, and created at a point by the field itself. The steps are [[P1 Canonical Quantization#^p1-8|P1, steps 8–9]].
 
+**Setup.** The system is [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]: quantum, free, $m > 0$, with the normal-ordered $:\!\hat H\!:$. The states are the Fock space over the free vacuum $|0\rangle$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]]); the physical one-particle states are wave packets. Normalization: relativistic, $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]). The results are exact for the free field; the kinematic ones (the invariant measure, the invariance of the normalization) hold in any theory, and the same normalization labels the asymptotic particles of an interacting theory ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]).
+
 ## Particles
 
 > [!theorem] Theorem §C2a.4.1: The Spectrum: Particles
@@ -20,6 +22,8 @@ What do the states of the free real field describe? The ladder relations of [[§
 > 1. $:\!\hat H\!: \ge 0$; $|0\rangle$ is the ground state, $:\!\hat H\!:|0\rangle = \hat{\mathbf P}|0\rangle = 0$.
 > 2. $\hat a^\dagger_{\mathbf p_1}\cdots \hat a^\dagger_{\mathbf p_n}|0\rangle$ has energy $E_{\mathbf p_1} + \dots + E_{\mathbf p_n}$ and momentum $\mathbf p_1 + \dots + \mathbf p_n$: $n$ free particles of mass $m$, $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$.
 > 3. $\hat N = \int\frac{d^3p}{(2\pi)^3}\,\hat a^\dagger_{\mathbf p}\hat a_{\mathbf p}$ counts particles: its eigenvalue on the state of part 2 is $n$, and $[\hat N, \hat H] = [\hat N, \hat{\mathbf P}] = 0$.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; with interactions $|0\rangle$ is not the ground state ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Principle "Fields give particles") · PHY 513 Lecture 4, Part C · PS §2.3, p. 22 · Yu §2.3.4, eqs. (2.150)–(2.169)*
 
@@ -265,6 +269,8 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 >
 > with $\hat a^\dagger(\cdot)$ as in [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]] and $(g/\sqrt{2E})(\mathbf p) = g(\mathbf p)/\sqrt{2E_{\mathbf p}}$. The physical one-particle states are wave packets and their limits in norm; $|\mathbf p\rangle$ is the kernel of the map $g \mapsto |g\rangle$.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, relativistic normalization ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": genuine states are wave packets) · Yu, Exercise 2.3*
 
 ^def-c2a-4-3
@@ -323,6 +329,8 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 >
 > the field-theory analogue of $\langle\mathbf x|\mathbf p\rangle \propto e^{i\mathbf p\cdot\mathbf x}$. With the time dependence of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], $\langle0|\hat\phi(x)|\mathbf p\rangle = e^{-ip\cdot x}$.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, relativistic normalization, exact; with interactions: [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]].
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.9 · PS §2.3, eqs. (2.41)–(2.42) · Yu §2.3.4, eqs. (2.164)–(2.165)*
 
 ^thm-c2a-4-6
@@ -352,6 +360,8 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 > $$
 >
 > a one-particle wave packet ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-3|Def. §C2a.4.3]]). As $f$ narrows to $\delta^3(\cdot - \mathbf x)$ the norm diverges, like $\Lambda^2/8\pi^2$ with a momentum cutoff $\Lambda$: $\hat\phi(\mathbf x)|0\rangle$ is not a vector, only its pairings $\langle g|\hat\phi(\mathbf x)|0\rangle$ with wave packets are numbers.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact, $m > 0$; the divergence estimate with a momentum cutoff.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": $\hat\phi(\mathbf x)$ is an operator-valued distribution) and §4.9 · stated and derived here*
 

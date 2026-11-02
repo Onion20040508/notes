@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 How does a field theory produce its equations of motion? The particle version is Hamilton's principle ([[§B6.2 Hamilton's Principle of Stationary Action#^pr-b6-2-1|CM Principle §B6.2.1]]), with the calculus of variations of [[§B5.1 The Euler–Lagrange Equation|CM §B5.1]]; Relativity has the action of one real scalar field and its Euler–Lagrange equation, with $c$ explicit ([[§B4.1 The Klein–Gordon Equation#^def-b4-1-1|REL Def. §B4.1.1]], [[§B4.1 The Klein–Gordon Equation#^thm-b4-1-2|REL Theorem §B4.1.2]]). This section states the action principle for any number of field components in natural units, makes the variation and the functional derivative precise (the latter is a distribution), proves the Euler–Lagrange equations with every surface term accounted for, and is the single home of the Lagrangian densities of the free real and complex scalar fields. The Hamiltonian form is [[§C1b.4 Hamiltonian Field Theory|§C1b.4]], symmetries and currents [[§C1b.5 Noether's Theorem|§C1b.5]].
 
+**Setup.** Classical fields with a local Lagrangian density $\mathcal L(\phi_a, \partial_\mu\phi_a)$ (first derivatives only), on a bounded region $R$, with variations that vanish near $\partial R$; nothing is quantum. Theorems §C1b.2.1–§C1b.2.5 hold for any such $\mathcal L$. The section then fixes the two models used throughout, [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]] (free real scalar) and [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]] (free complex scalar), both classical and free; their quantizations are [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] and [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]].
+
 *Conventions* ([[Larsen PHY 513]]): natural units $\hbar = c = 1$, so $d^4x = dt\,d^3x$ and the action is dimensionless, $[\mathcal L] = 4$ ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-1|Theorem §C1b.3.1]]); $g = \operatorname{diag}(+,-,-,-)$; $(\partial\phi)^2 \equiv \partial_\mu\phi\,\partial^\mu\phi = \dot\phi^2 - (\nabla\phi)^2$. Relativity B writes $S = \frac1c\int\mathcal L\,d^4x$ with $x^0 = ct$; here $c = 1$.
 
 ## Action and Lagrangian density
@@ -59,6 +61,8 @@ How does a field theory produce its equations of motion? The particle version is
 > $$
 >
 > and $\phi'$ makes the action stationary on $gR$ exactly when $\phi$ does on $R$: the transform of a solution is a solution.
+>
+> *Model:* any local $\mathcal L(\phi_a, \partial_\mu\phi_a)$ that is a Poincaré scalar, with the fields transforming by [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-1|Theorem §C1b.1.1]]; *applies:* classical, every configuration and every bounded region, exact.
 >
 > *Source: PS §3.1, eq. (3.5) and the sentence after it · Yu §1.6.2 (d⁴x invariant, ℒ a Lorentz scalar ⇒ S invariant) · the user's pre-course notes, §1.6 (Keypoint "Lorentz invariance of the action") · the user's PHY 513 notes, Ch. 3 §3.3 ("a Lorentz transform of a solution is again a solution")*
 
@@ -179,6 +183,8 @@ This is Hamilton's principle ([[§B6.2 Hamilton's Principle of Stationary Action
 >
 > The functional derivative of the action is the continuous function $\dfrac{\delta S}{\delta\phi_a(x)} = \dfrac{\partial\mathcal L}{\partial\phi_a} - \partial_\mu\dfrac{\partial\mathcal L}{\partial(\partial_\mu\phi_a)}$; there is one equation per real component, whatever the components assemble into.
 >
+> *Model:* any local $\mathcal L(\phi_a, \partial_\mu\phi_a)$; *applies:* classical, $C^2$ fields and a $C^2$ density, variations vanishing near the boundary ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-2|Caution: Boundary conditions are a choice]]), exact.
+>
 > *Source: the user's PHY 513 notes, Ch. 3 §3.3, eq. (EL) (Derivation "Variational derivation of the Euler–Lagrange equation"; Derivation "The Euler–Lagrange equation for other kinds of field") · PS §2.2, eqs. (2.2)–(2.3) · Yu §1.6.2, eqs. (1.165)–(1.167) · PHY 513 Lecture 3, Part A*
 
 ^thm-c1b-2-4
@@ -232,6 +238,8 @@ This is Hamilton's principle ([[§B6.2 Hamilton's Principle of Stationary Action
 
 > [!theorem] Theorem §C1b.2.5: A Total Divergence Does Not Change the Field Equations
 > Let $K^\mu$ be built locally from the fields, finitely many of their derivatives and $x$, and $C^1$ along every configuration. Then $\mathcal L$ and $\mathcal L' = \mathcal L + \partial_\mu K^\mu$ have the same first variation, $\delta S'[\phi; \eta] = \delta S[\phi; \eta]$ for every test function $\eta$, hence the same stationary configurations. If $K^\mu = K^\mu(\phi, x)$, both densities are of first order and their Euler–Lagrange expressions coincide identically.
+>
+> *Model:* any local $\mathcal L$ and $K^\mu$ as stated; *applies:* classical, every configuration, exact.
 >
 > *Source: PS §2.2, p. 17 ("we can allow the action to change by a surface term, since the presence of such a term would not affect our derivation of the Euler–Lagrange equations") · PHY 513 Lecture 3, Part C ("L is invariant up to a total derivative") · the particle version: [[§B6.2 Hamilton's Principle of Stationary Action#^thm-b6-2-4|CM Theorem §B6.2.4]]*
 
@@ -374,6 +382,8 @@ This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mo
 >
 > two copies of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]] with the same mass. The phase rotation $\phi \to e^{i\alpha}\phi$ is the rotation of $(\phi_1, \phi_2)$ by the angle $\alpha$, and leaves $\mathcal L$ unchanged.
 >
+> *Model:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]] and two copies of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]; *applies:* classical, free, an identity of densities for every configuration; quantized: [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]].
+>
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Definition "Lagrangian density for a complex scalar field": "It is exactly two real fields, which explains the missing ½"; "It has a symmetry the real field lacks") · PHY 513 Problem Set 2, Problem 3(c), course solution · PS §2.2, p. 18*
 
 ^thm-c1b-2-8
@@ -403,6 +413,8 @@ This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mo
 > $$
 >
 > whose complex conjugate is the same equation with $\phi \leftrightarrow \phi^*$. For [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]] it reads $(\partial^2 + m^2)\phi = 0$, and the conjugate $(\partial^2 + m^2)\phi^* = 0$.
+>
+> *Model:* any real local density of a complex field, with [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]] as the instance; *applies:* classical, exact (an invertible linear change of variables).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 ("φ and φ* are treated as independent variables"), Ch. 3 §3.3 (Derivation "The Euler–Lagrange equation for other kinds of field": "an invertible linear change of variables") · PHY 513 Problem Set 2, Problem 3(a), course solution · PS §2.2, p. 18 ("We treat φ and φ* as independent fields")*
 

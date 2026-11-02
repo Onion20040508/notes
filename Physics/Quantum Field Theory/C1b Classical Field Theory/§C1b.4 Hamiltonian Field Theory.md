@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 How does a field theory look in the form quantum mechanics needs, with coordinates, momenta and a Hamiltonian? The particle version is the Legendre transform and Hamilton's equations ([[§B7.1 The Legendre Transform and Hamilton's Equations#^def-b7-1-2|CM Def. §B7.1.2]], [[§B7.1 The Legendre Transform and Hamilton's Equations#^thm-b7-1-3|CM Theorem §B7.1.3]]) and the Poisson bracket ([[§B8.1 Poisson Brackets#^def-b8-1-1|CM Def. §B8.1.1]]); the field's Lagrangian is [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]. This section is the home of the momentum density $\pi$, the Hamiltonian density $\mathcal H$, Hamilton's equations for fields and the field Poisson brackets. What is new relative to mechanics: one canonical pair per point of space, a gradient term that turns $\partial H/\partial q$ into a functional derivative, and brackets that are delta functions. Canonical quantization, which promotes these brackets to commutators, is [[§C2a.1 Canonical Quantization of Fields|§C2a.1]] and [[P1 Canonical Quantization#^p1-4|P1, step 4]].
 
+**Setup.** Classical fields with a local $\mathcal L(\phi_a, \partial_\mu\phi_a)$ whose relations $\pi_a = \partial\mathcal L/\partial\dot\phi_a$ can be solved for the velocities (for $A_0$ they cannot: [[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|Remark: Constraints and first-order Lagrangians]]). The canonical data live on one time slice and are classical functions, not operators. [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]] and [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]] are the free scalar models, [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]] and [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]. Quantization turns the brackets into commutators: [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]] and [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]].
+
 *Conventions* ([[Larsen PHY 513]]): natural units; $g = \operatorname{diag}(+,-,-,-)$; a dot is $\partial_t$; the momentum density is written $\pi$, as in PS and on the board (the slides and Problem Set 3 write $\Pi$: [[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|§C2a.1, Caution: Eₚ, not ωₚ; π, not Π]]).
 
 > [!remark] Remark: Why a Hamiltonian, and what it costs
@@ -61,6 +63,8 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 >
 > Equivalently, with space divided into cells of volume $\Delta V$ around points $\mathbf x_j$, the momentum conjugate to the cell value $\phi_j$ is $p_j = \partial L/\partial\dot\phi_j = \pi(\mathbf x_j)\,\Delta V$: $\pi$ is momentum per unit volume.
 >
+> *Model:* any local $\mathcal L(\phi_a, \partial_\mu\phi_a)$; *applies:* classical, on one time slice with $\phi$ and $\dot\phi$ independent, exact.
+>
 > *Source: PS §2.2, p. 16 (the derivation of eq. (2.4) by "pretending that the spatial points are discretely spaced") · the user's PHY 513 notes, Ch. 3 §3.4 ("q_i → φ(x)") · the functional-derivative form written out here*
 
 ^thm-c1b-4-1
@@ -106,6 +110,8 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 > \pi = \dot\phi, \qquad \mathcal H = \tfrac12\pi^2 + \tfrac12(\nabla\phi)^2 + \tfrac12m^2\phi^2, \qquad H = \int d^3x\,\Bigl[\tfrac12\pi^2 + \tfrac12(\nabla\phi)^2 + \tfrac12m^2\phi^2\Bigr] \ge 0 .
 > $$
 >
+> *Model:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]; *applies:* classical, free, exact; $H \ge 0$ for real configurations; the operator of the same form is $\hat H$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]] ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 3 §3.4, eqs. (piscalar), (Hscalar) · PHY 513 Lecture 3, Part B ("Hamiltonian of Free Scalar Theory") · PS §2.2, eq. (2.8)*
 
 ^thm-c1b-4-2
@@ -140,6 +146,8 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 > $$
 >
 > the sum of two real-field densities ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-2|Theorem §C1b.4.2]]) for $\phi = (\phi_1 + i\phi_2)/\sqrt2$, $\pi = (\pi_1 - i\pi_2)/\sqrt2$. The momentum conjugate to $\phi$ is the velocity of $\phi^*$.
+>
+> *Model:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]; *applies:* classical, free, exact; quantized: [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]] ([[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.4 (Derivation "Several fields …", "The complex scalar, worked") · PHY 513 Problem Set 2, Problem 3(b), course solution (with $V = 0$) · PS Problem 2.2(a) (the Hamiltonian, as stated there)*
 
@@ -184,6 +192,8 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 > $$
 >
 > and, when $\mathcal H$ is the Legendre transform of $\mathcal L$ ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]]), these $2n$ first-order equations are equivalent to the $n$ Euler–Lagrange equations ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]).
+>
+> *Model:* any $C^2$ density $\mathcal H(\phi_a, \nabla\phi_a, \pi_a)$; *applies:* classical; the equivalence with the Euler–Lagrange equations needs an invertible Legendre map ([[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-2|Def. §C1b.4.2]]; it fails for $A_0$: [[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|Remark: Constraints and first-order Lagrangians]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.4 (Derivation "Hamilton's equations for fields", eq. (Hamiltonfield); Derivation "Euler–Lagrange and Hamilton's equations in mechanics") · Yu §1.6.2, eqs. (1.171)–(1.175) · the user's pre-course notes, §1.6 ("canonical field equations")*
 
@@ -260,6 +270,8 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 >
 > in kernel form, $\{\phi_a(\mathbf x), \pi_b(\mathbf y)\} = \delta_{ab}\,\delta^3(\mathbf x - \mathbf y)$, an identity of distributions in $(\mathbf x, \mathbf y)$. For the complex field, $\{\phi, \pi\} = \{\phi^*, \pi^*\} = \delta^3(\mathbf x - \mathbf y)$ and $\{\phi, \pi^*\} = \{\phi, \phi^*\} = 0$.
 >
+> *Model:* any canonical data $(\phi_a, \pi_a)$ on one slice; *applies:* classical, exact as an identity of distributions; quantization turns it into [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]] ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-5|Remark: From brackets to commutators]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 3 §3.4 (Derivation "Several fields …": "One bracket per conjugate pair, all others zero: {φᵢ(x), πⱼ(y)} = δᵢⱼδ³(x − y)"; "The nonvanishing brackets are {φ, π} = {φ*, π*} = δ³, with {φ, π*} = 0") · the smeared form written out here*
 
 ^thm-c1b-4-5
@@ -292,6 +304,8 @@ This is the Legendre transform of mechanics ([[§B7.1 The Legendre Transform and
 > $$
 >
 > In particular $\frac{d}{dt}\phi_a(f) = \{\phi_a(f), H\}$ and $\frac{d}{dt}\pi_a(g) = \{\pi_a(g), H\}$, in kernel form $\dot\phi_a(\mathbf x) = \{\phi_a(\mathbf x), H\}$, $\dot\pi_a(\mathbf x) = \{\pi_a(\mathbf x), H\}$; and $dH/dt = \{H, H\} = 0$.
+>
+> *Model:* any $\mathcal H$ as in [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-4|Theorem §C1b.4.4]]; *applies:* classical, along solutions of Hamilton's equations, for functionals without explicit time dependence whose derivatives fall off at infinity; for operator fields the translations are generated by commutators instead ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]]).
 >
 > *Source: the particle version [[§B8.1 Poisson Brackets#^thm-b8-1-3|CM Theorem §B8.1.3]] · the user's pre-course notes, §1.6 ("written with functional derivatives and the field Poisson bracket, the two equations collapse to the same form as their mechanics parents") · the field form written out here*
 

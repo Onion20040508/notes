@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What does a complex field have that a real one lacks? Two independent sets of oscillators, and a conserved charge that tells them apart. The classical field is recalled first, from its home in Chapter C1b. The construction is then [[§C2a.1 Canonical Quantization of Fields|§C2a.1]]–[[§C2a.4 Particles and Relativistic Normalization|§C2a.4]] run again ([[P1 Canonical Quantization]]), with two changes: the momentum conjugate to $\phi$ is the velocity of $\phi^\dagger$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]]), and the phase symmetry $\phi \to e^{i\alpha}\phi$ gives a charge whose Noether derivation is [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]. Quantum Mechanics previewed the result by combining two real fields in a box ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-7|QM Theorem §C13.1.7]]); here the complex field is quantized through its own canonical pairs, the charge is normalized as in Peskin–Schroeder, and its operator ordering turns out to be fixed by physics rather than convention. The result is the first appearance of antiparticles.
 
+**Setup.** The system is the free complex scalar field: classical in the recalled boxes ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]), quantum from [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]] on; free, $m > 0$, infinite space. The states are the Fock space of $a$- and $b$-quanta over the free vacuum $|0\rangle$. Normalization: continuum, $[\hat a_{\mathbf p}, \hat a^\dagger_{\mathbf q}] = [\hat b_{\mathbf p}, \hat b^\dagger_{\mathbf q}] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$; the charge as in Peskin–Schroeder, $\pm\frac12$ per quantum ([[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]]). The results are exact for the free field; an interaction invariant under $\phi \to e^{i\alpha}\phi$ keeps the charge conserved ([[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-3|Model §C6a.8.3]]).
+
 ## The classical complex field, recalled
 
 The classical field has its home in Chapter C1b; its boxes are shown as they stand there. The Lagrangian, defined in [[§C1b.2 The Action Principle and the Euler–Lagrange Equations|§C1b.2]]:
@@ -179,6 +181,8 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 >
 > with $E_0$ the real field's zero-point energy ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]): one $\frac12E_{\mathbf p}$ per mode per species. Normal ordered, $:\!\hat H\!: = \int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}(\hat a^\dagger\hat a + \hat b^\dagger\hat b)$. It is time independent.
 >
+> *Model:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]; *applies:* free field, exact as an identity between mode expansions; $2E_0$ has no value in infinite volume ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.6, eqs. (Hcomplexzp), (Hcomplex) · PHY 513 Problem Set 3, Problem 2(b), course solution · Yu §2.4.4, eqs. (2.215), (2.217)*
 
 ^thm-c2a-5-4
@@ -250,6 +254,8 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 >
 > with no constant and no ordering choice: particles and antiparticles of label $\mathbf p$ both carry momentum $\mathbf p$.
 >
+> *Model:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]; *applies:* free field, exact; the vanishing constant needs a rotation-invariant cutoff, as for the real field ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.7, eq. (Pfinal) · Yu §2.4.4, eq. (2.216) · the user's pre-course notes, §3.4 (Note "Reducing H and P to mode form")*
 
 ^thm-c2a-5-5
@@ -311,6 +317,8 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 > $$
 >
 > normal ordered ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]). It is $-\frac12$ times the Noether charge $\int d^3x\,j^0$ of the current above, and $\frac12(\hat\phi, \hat\phi)$ in the notation of the Klein–Gordon inner product ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-1|Def. §C2a.2.1]]).
+>
+> *Model:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]; *applies:* free field; the normalization is Peskin–Schroeder's, $\pm\frac12$ per quantum.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.7, eq. (Qdef) · PHY 513 Problem Set 3, Problem 2(c) (= PS Problem 2.2(c)), course solution*
 
@@ -394,6 +402,8 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 
 > [!theorem] Theorem §C2a.5.7: Particles and Antiparticles
 > $\hat a^\dagger_{\mathbf p}|0\rangle$ and $\hat b^\dagger_{\mathbf p}|0\rangle$ both have energy $E_{\mathbf p}$ and momentum $\mathbf p$: two species of the same mass $m$, with opposite charges $+\frac12$ and $-\frac12$. A state with $n_a$ $a$-quanta and $n_b$ $b$-quanta has $Q = \frac12(n_a - n_b)$. A real scalar field admits no such phase symmetry, $\hat Q \equiv 0$: its quanta are truly neutral, each its own antiparticle.
+>
+> *Model:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; the charge normalization of [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]].
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.7–4.8 · Yu §2.4.3, eqs. (2.212)–(2.216) · the user's pre-course notes, §3.4 (Keypoint "Particle and antiparticle")*
 

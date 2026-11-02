@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What do Hamiltonian field theory and Noether's theorem give for the Dirac field? The Lagrangian and its field equations are [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]] ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]), the single-particle Hamiltonian is [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], the bilinears are [[§C5a.6 The Dirac Conjugate and the Bilinears|§C5a.6]] and $\gamma^5$ is [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]; the general machinery is [[§C1b.4 Hamiltonian Field Theory|§C1b.4]] (momenta, Legendre transform, brackets) and [[§C1b.5 Noether's Theorem|§C1b.5]]–[[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]] ([[P3 Noether's Procedure]]). This section runs that machinery on the Dirac field in the order used for the scalar: the canonical momentum and the Hamiltonian density, the vector and axial currents, the canonical energy–momentum tensor, energy and momentum in field form with the bracket by which $\mathbf P$ generates translations, and the spin current with the symmetric tensor. The quantized field ([[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]) shows these boxes as embeds. The algebra of the Dirac matrices it uses ($\gamma^\mu$, the sixteen products, $\gamma^5$, the spinor generators) is [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules|§CB.11]]–[[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element|§CB.12]] and [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)|§CB.14]], shown in the blocks below.
 
+**Setup.** Classical and free: the free Dirac field [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], commuting components, Poisson brackets, no states. Momenta, densities and currents are expressions in the fields, valid off shell; conservation laws and the on-shell forms hold on solutions of the Dirac equation; charges and $P^\nu$ need fields falling off at spatial infinity. All results are exact. Their quantum versions, with anticommuting operators and normal ordering, are [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy|§C5b.3]] and [[§C5b.5 The U(1) Charge, Particles and Antiparticles|§C5b.5]], and two classical statements change there: $H$ unbounded below and $Q \ge 0$ ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]]).
+
 *Conventions* as in [[§C5a.7 The Dirac Equation and Its Lagrangian|§C5a.7]]; $\psi$ a classical field with commuting components; $\varepsilon^{0123} = +1$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]); $a\overleftrightarrow{\partial}b \equiv a\,\partial b - (\partial a)\,b$.
 
 ## The mathematics used here
@@ -37,6 +39,8 @@ The Hamiltonian density is written with the Dirac matrices and the sixteen produ
 > $$
 >
 > The momentum is not a function of the velocity $\dot\psi$: the Legendre map is not invertible, and $\psi$ and $\psi^\dagger$ are themselves canonically conjugate.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, off shell (a property of $\mathcal L$), exact; quantum version: [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-1|Theorem §C5b.1.1]].
 >
 > *Source: PS §3.5, p. 52, above eq. (3.84) · the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "The Dirac energy–momentum tensor …": "the canonical momentum $\pi = \partial\mathcal L/\partial(\partial_t\psi) = i\psi^\dagger$"), Ch. 3 §3.4 ("Other fields")*
 
@@ -68,6 +72,8 @@ The Hamiltonian density is written with the Dirac matrices and the sixteen produ
 > $$
 >
 > with $\boldsymbol\alpha$, $\beta$ Hermitian. On solutions of the Dirac equation $\mathcal H = i\psi^\dagger\partial_t\psi$. The bracket $H_{\text{s.p.}} = -i\boldsymbol\alpha\cdot\nabla + \beta m$ is the single-particle Hamiltonian ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]]; names across sources: [[§C5a.7 The Dirac Equation and Its Lagrangian#^cau-c5a-7-2|§C5a.7, Caution: Names for the single-particle Hamiltonian]]), the one-particle Dirac Hamiltonian of [[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]], whose plane-wave eigenvalues are $\pm E_{\mathbf p}$: classically $\mathcal H$ is not bounded below.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, off shell, exact; $\mathcal H = i\psi^\dagger\partial_t\psi$ on solutions only; quantized: [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]].
 >
 > *Source: PS §3.5, eqs. (3.84)–(3.85) · the user's pre-course notes, §5.3 (note "First-order form: $\alpha$, $\beta$, and the positive density") · the user's PHY 513 notes, Ch. 3 §3.5 (table of canonical tensors; $T^{00} = i\psi^\dagger\partial_t\psi$)*
 
@@ -122,6 +128,8 @@ The axial current uses $\gamma^5$ and its properties:
 >
 > $j^\mu$ is a real four-vector field, for every $m$. The sign convention is that of the complex scalar ([[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|§C1b.6, Caution: Sign and normalization of the U(1) current]]).
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical; invariance off shell, $\partial_\mu j^\mu = 0$ on solutions, every $m$; $Q \ge 0$ needs commuting components: after quantization $Q$ counts fermions minus antifermions ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]]).
+>
 > *Source: PS §3.4, eqs. (3.73)–(3.74) and p. 51 (Noether currents of $\psi \to e^{i\alpha}\psi$) · the user's PHY 513 notes, Ch. 9 §9.4 ("it is the time component of the current $\bar\psi\gamma^\mu\psi$"), Ch. 9 §9.6 (paragraph "What the Gordon identity says") · Yu §5.3, eq. (5.94)*
 
 ^thm-c5a-8-3
@@ -160,6 +168,8 @@ The axial current uses $\gamma^5$ and its properties:
 > $$
 >
 > It is conserved if and only if $m = 0$ (for generic solutions); then the **chiral transformation** $\psi \to e^{i\alpha\gamma^5}\psi$ is a symmetry, and the chiral currents $j^\mu_L = \bar\psi\gamma^\mu P_L\psi = \psi_L^\dagger\bar\sigma^\mu\psi_L$ and $j^\mu_R = \bar\psi\gamma^\mu P_R\psi = \psi_R^\dagger\sigma^\mu\psi_R$ are separately conserved ($P_{L,R}$: [[§C5a.5 Chirality and Weyl Spinors#^def-c5a-5-1|Def. §C5a.5.1]]; Weyl forms: [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-9|Theorem §C5a.7.9]]).
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, on solutions; conserved iff $m = 0$ (generic solutions).
 >
 > *Source: PS §3.4, eqs. (3.73), (3.75)–(3.76) and p. 51 (the chiral transformation) · PHY 513, Problem Set 6, Problem 5(e) (the divergence of $-j^{\mu5}$, $-2im\,\bar\psi\gamma^5\psi$, as the user wrote it: [[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-8-1|Example §C5a.8.1]])*
 
@@ -282,6 +292,8 @@ The axial current uses $\gamma^5$ and its properties:
 >
 > and $\partial_\mu T^{\mu\nu} = 0$ on solutions (the first index is the current index). On solutions $\mathcal L = 0$, so $T^{\mu\nu} = i\bar\psi\gamma^\mu\partial^\nu\psi$, which is not symmetric.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical; conservation and $\mathcal L = 0$ on solutions.
+>
 > *Source: PHY 513, Problem Set 5, Problem 4(a) (as the user wrote it) · the user's PHY 513 notes, Ch. 8 §8.8 (Derivation "The Dirac energy–momentum tensor is conserved, and the momentum operator"), Ch. 3 §3.5 (table of canonical tensors)*
 
 ^thm-c5a-8-5
@@ -333,6 +345,8 @@ The axial current uses $\gamma^5$ and its properties:
 >
 > with $P^i = \int d^3x\,T^{0i}$ and $T^{0i} = -i\psi^\dagger\partial_i\psi = -\pi_\psi\,\partial_i\psi$. $\mathbf P$ is the Noether charge of spatial translations, not the canonical momentum $\pi_\psi = i\psi^\dagger$; both $H$ and $\mathbf P$ are real for fields falling off at spatial infinity.
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, fields falling off at spatial infinity; the last form of $H$ on solutions; quantized: [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]].
+>
 > *Source: PHY 513, Problem Set 5, Problem 4(b) (as the user wrote it) · the user's PHY 513 notes, Ch. 8 §8.8, eq. (diracP) · PS §3.5, eqs. (3.84), (3.105) · the index-by-index computation written out here, as for the scalar ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-7|Theorem §C1b.7.7]])*
 
 ^thm-c5a-8-6
@@ -380,6 +394,8 @@ The axial current uses $\gamma^5$ and its properties:
 > 1. $\{\psi_a(\mathbf x), \mathbf P\} = -\nabla\psi_a(\mathbf x)$ and $\{\psi^\dagger_a(\mathbf x), \mathbf P\} = -\nabla\psi^\dagger_a(\mathbf x)$;
 > 2. $\{\psi_a(\mathbf x), H\} = -i\bigl(H_{\text{s.p.}}\psi\bigr)_a(\mathbf x)$ with $H_{\text{s.p.}}$ of [[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-3|Def. §C5a.7.3]], which is $\partial_t\psi_a$ on solutions of the Dirac equation; with $P^0 = H$, in covariant form $\{\psi_a(x), P^\mu\} = \partial^\mu\psi_a(x)$ on solutions;
 > 3. $\{\mathbf P, H\} = 0$.
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, commuting components with the Poisson bracket of the pairs $(\psi_a, i\psi_a^\dagger)$, fields falling off at spatial infinity; part 2 equals $\partial_t\psi_a$ on solutions; quantum version with anticommutators: [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]].
 >
 > *Source: the scalar statement, [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9|Theorem §C1b.7.9]] (for particles [[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]]), applied here to the Dirac canonical pairs; the classical root of [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]]; written out here*
 
@@ -465,6 +481,8 @@ The spin current is built from the spinor generators:
 >
 > orbital plus spin $\frac12$, with $\frac12\boldsymbol\Sigma = \mathbf S$ the spin matrices ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-2|Def. §C5a.3.2]]).
 >
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical; the spin current off shell, $\mathbf J$ on solutions falling off at spatial infinity.
+>
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5 (eq. (Mgeneral); "the Dirac spin $\frac12$") · Yu §1.7.3, eqs. (1.241)–(1.248) (orbital and spin split) · computed here from [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]]*
 
 ^thm-c5a-8-8
@@ -501,6 +519,8 @@ This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma
 > $$
 >
 > with $a\overleftrightarrow{\partial}b = a\,\partial b - (\partial a)\,b$: symmetric, conserved, with the same $P^\nu$ as the canonical tensor ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-5|Theorem §C5a.8.5]]) and with orbital moments that give the total $J^{\nu\rho}$ ([[§C5a.8 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-8-8|Theorem §C5a.8.8]]).
+>
+> *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* classical, on solutions.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5 (Derivation "Belinfante: symmetrizing T with the spin current", last sentence: the Dirac result, stated) · derived here from [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]]*
 

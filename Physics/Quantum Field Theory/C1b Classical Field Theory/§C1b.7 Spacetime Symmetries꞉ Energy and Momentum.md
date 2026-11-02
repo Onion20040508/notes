@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 What do translations conserve in a field theory, and how does Noether's theorem handle transformations that move the point? Energy and momentum, the integrals of the time row of one conserved tensor. Such symmetries move the point at which the field is evaluated, which the fixed-argument form of [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]] cannot see directly; this section first gives Yu's general form of the theorem, with the displacement $\delta x^\mu$ built in, and its dictionary to the lecture's form, then the energy–momentum tensor for any collection of fields and its charges $P^\mu = (H, \mathbf P)$, and the energy and the momentum of the free scalar fields in field form, derived index by index, with the bracket statement that the momentum generates spatial translations as the Hamiltonian generates time evolution. Lorentz transformations (angular momentum, boost charges, the antisymmetric part of $T^{\mu\nu}$ and Belinfante's symmetric tensor) are [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]]. Field transformation laws are those of [[§C1b.1 Fields and Their Transformation Laws|§C1b.1]] ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]), the Lorentz parameters those of [[§C1a.6 Infinitesimal Lorentz Transformations and Generators|§C1a.6]]; every computation runs [[P3 Noether's Procedure]].
 
+**Setup.** Classical: a local $\mathcal L(\phi_a, \partial_\mu\phi_a)$ and transformations that move the point (translations here, Lorentz transformations in [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor|§C1b.8]]). The identities hold for every configuration; the conservation laws hold on solutions, and the charges are constant for fields that fall off at spatial infinity. Translations are a symmetry only if $\mathcal L$ has no explicit $x$ dependence. Theorems §C1b.7.7–§C1b.7.8 are the free scalar models ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]); their quantum versions are [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]] and [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-5|Theorem §C2a.5.5]].
+
 ## When the point moves: the general form
 
 > [!theorem] Theorem §C1b.7.1: Total and Fixed-Argument Variations
@@ -103,6 +105,8 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 >
 > satisfies $\partial_\mu j^\mu = -\sum_a\bigl[\frac{\partial\mathcal L}{\partial\phi_a} - \partial_\mu\frac{\partial\mathcal L}{\partial(\partial_\mu\phi_a)}\bigr]\bar\delta\phi_a$ for every configuration, hence $\partial_\mu j^\mu = 0$ on shell. $j^\mu$ is first order in the parameters; their coefficients are the separate conserved currents.
 >
+> *Model:* any local $\mathcal L(\phi_a, \partial_\mu\phi_a)$ with a symmetry that moves the point ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-1|Def. §C1b.7.1]]); *applies:* classical, first order in the parameters; the identity off shell, conservation on solutions.
+>
 > *Source: Yu §1.7.1, eqs. (1.188)–(1.198) · the user's PHY 513 notes, Ch. 3 §3.5, eq. (noethergeneral) · the user's pre-course notes, §1.7, Theorem "Noether's theorem, coordinate-transformation form"*
 
 ^thm-c1b-7-3
@@ -153,6 +157,8 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 > $$
 >
 > and the currents of [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]] and [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-3|Theorem §C1b.7.3]] coincide term by term: $\alpha^aj^\mu_a = j^\mu$.
+>
+> *Model:* as in [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-3|Theorem §C1b.7.3]]; *applies:* classical, first order, every configuration.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, "The dictionary to the lecture's Δφ and 𝒥^μ" · the user's pre-course notes, §1.7, Remark "Equivalence with the formulation of [Fld. Theorem 9.2]"*
 
@@ -208,6 +214,8 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 > $$
 >
 > four conserved currents, one per direction $\nu$. If $\mathcal L$ depends on $x$ explicitly (an external potential, a fixed source $J(x)\phi$), translations are not a symmetry.
+>
+> *Model:* any local $\mathcal L(\phi_a, \partial_\mu\phi_a)$ without explicit $x$ dependence; *applies:* classical; the identity off shell, conservation on solutions.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Example 3 and "Translations, all fields at once" · Lecture 3, Example 3 · PS §2.2, p. 19 · Yu §1.7.2, eqs. (1.208)–(1.213)*
 
@@ -268,6 +276,8 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 >
 > energy is the charge of time translations, with density the Hamiltonian density, and momentum the charge of space translations.
 >
+> *Model:* as in [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-5|Theorem §C1b.7.5]]; *applies:* classical, on solutions, for fields with $T^{i\nu}$ falling off faster than $1/r^2$.
+>
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, eqs. (T00), (Pfield) · Lecture 3, "Energy Density" · PS §2.2, eqs. (2.18)–(2.19) · Yu §1.7.2, eqs. (1.214)–(1.218)*
 
 ^thm-c1b-7-6
@@ -327,6 +337,8 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 > $$
 >
 > with $P^i = \int d^3x\,T^{0i}$ and $T^{0i} = -\pi\,\partial_i\phi$. Together they form $P^\mu = \int d^3x\,T^{0\mu} = (H, \mathbf P)$, conserved on solutions whose fields fall off at spatial infinity.
+>
+> *Model:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]]; *applies:* classical, free, exact; conserved for fields falling off at spatial infinity; quantized: [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]] and [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]] ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Example 3, eqs. (Tscalar), (T00), (Pfield) · PHY 513 Lecture 3, Part C ("Energy Density") · PS §2.2, eqs. (2.17)–(2.19) · Yu §1.7.2, eqs. (1.214)–(1.218)*
 
@@ -397,6 +409,8 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 >
 > one term per canonical pair. $\mathbf P$ is real, and for $\phi = (\phi_1 + i\phi_2)/\sqrt2$ it is the sum of the momenta of the two real fields, $\mathbf P = -\int d^3x\sum_{j=1}^2\pi_j\nabla\phi_j$ ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-7|Theorem §C1b.7.7]]).
 >
+> *Model:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]; *applies:* classical, free, exact; quantized: [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]] and [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-5|Theorem §C2a.5.5]] ([[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5 (table after eq. (Tgeneral), complex-scalar row), Ch. 3 §3.4 ("The complex scalar, worked") · the momentum in field form written out here*
 
 ^thm-c1b-7-8
@@ -457,6 +471,8 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 > 2. with $\{\phi_a, H\} = \dot\phi_a$ ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-6|Theorem §C1b.4.6]]) and $P^0 = H$, in covariant form $\{\phi_a(x), P^\mu\} = \partial^\mu\phi_a(x)$, and likewise for $\pi_a$;
 > 3. for a constant $a^\mu$, the first-order flow generated by $\varepsilon\,a_\mu P^\mu$ shifts the argument, $\phi_a(x) + \varepsilon\{\phi_a(x), a_\mu P^\mu\} = \phi_a(x + \varepsilon a) + O(\varepsilon^2)$;
 > 4. $\{\mathbf P, H\} = 0$ when $\mathcal H$ does not depend on $\mathbf x$ explicitly.
+>
+> *Model:* any local $\mathcal L(\phi_a, \partial_\mu\phi_a)$, fields and momenta falling off at spatial infinity; *applies:* classical Poisson brackets, exact after smearing; part 4 needs $\mathcal H$ without explicit $\mathbf x$; the operator form for the free scalar field is [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|Theorem §C3.5.6]].
 >
 > *Source: the particle version [[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]] (a conserved quantity generates a symmetry) · the user's PHY 513 notes, Ch. 3 §3.4 ("Canonical brackets") and §3.5 (eq. (Pfield)) · the field-momentum brackets written out here*
 

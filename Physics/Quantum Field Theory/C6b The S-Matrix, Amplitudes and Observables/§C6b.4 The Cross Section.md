@@ -136,6 +136,8 @@ tags: [quantum-field-theory, level-c]
 
 *Uses:* [[§C6b.4 The Cross Section#^thm-c6b-4-2|Theorem §C6b.4.2]], [[§C6b.4 The Cross Section#^def-c6b-4-1|Def. §C6b.4.1]], [[§C6b.4 The Cross Section#^def-c6b-4-2|Def. §C6b.4.2]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-7|Theorem §C6b.3.7]]
 
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-5|P7, step 5]]
+
 ## Any frame: the Møller velocity
 
 In [[§C6b.4 The Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]] everything except the factor $(4E_AE_B|\mathbf v_B|)^{-1}$ is Lorentz invariant: $|\mathcal M|^2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]) and the measure ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]). In the rest frame of $A$, $|\mathbf v_B|$ is the speed of $B$ relative to $A$; Yu replaces it by an invariant that takes this value there.
@@ -311,6 +313,8 @@ In [[§C6b.4 The Cross Section#^thm-c6b-4-3|Theorem §C6b.4.3]] everything excep
 ^der-c6b-4-6
 
 *Uses:* [[§C6b.4 The Cross Section#^thm-c6b-4-4|Theorem §C6b.4.4]], [[§C6b.4 The Cross Section#^thm-c6b-4-5|Theorem §C6b.4.5]], [[§C6b.4 The Cross Section#^def-c6b-4-4|Def. §C6b.4.4]], [[§C6b.3 Transition Probabilities in a Box#^thm-c6b-3-7|Theorem §C6b.3.7]]
+
+*Procedure:* [[P7 From ℳ to σ or Γ#^p7-6|P7, step 6]]
 
 ## The annotated formula
 

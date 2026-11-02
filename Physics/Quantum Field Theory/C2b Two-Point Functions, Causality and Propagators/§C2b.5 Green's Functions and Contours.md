@@ -13,6 +13,8 @@ tags: [quantum-field-theory, level-c]
 
 How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One solves the equation once, with a delta function on the right, and the answer is a Green's function. Fourier transformation makes this a division by $m^2 - p^2$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]]), which is impossible on the mass shell; the integral needs a contour in the complex $p^0$-plane ([[§CA.4 Contour Integration#^thm-ca-4-9|Theorem §CA.4.9]], [[P2 Green's Functions by Contour Integration|P2]]), and the choice of contour is the choice of boundary condition. The first contours worked out are the retarded one, whose function is the causal commutator of [[§C2b.4 Microcausality and the Commutator Function|§C2b.4]], and its time mirror, the advanced one; their average is the principal-value function. The other two contours, Feynman and anti-Feynman, belong with time ordering ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription|§C2b.6]]).
 
+**Setup.** The physical system is [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]: the free real field driven by a prescribed classical source, read classically here; its field equation $(\partial^2 + m^2)\phi = j$ is linear and is solved for every $j$ at once. The Green's functions are statements about the Klein–Gordon operator, independent of quantization and of any state, exact; their normalization is $(\partial^2 + m^2)D_C = -i\delta^4$ (Peskin–Schroeder). Where a Green's function is also a vacuum value ($D_R = \theta(\xi^0)\langle0|[\hat\phi(x), \hat\phi(y)]|0\rangle$), that reading needs the free field in $|0\rangle$ ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]). The quantum field with the same source is [[§C2b.8 Particle Production by a Classical Source|§C2b.8]], exact because the source is switched off at early and late times.
+
 *Conventions* ([[Larsen PHY 513]]): Green's functions are normalized by $(\partial^2 + m^2)D_C = -i\delta^4$ (PS), so that $D_F = \langle0|T\{\hat\phi\hat\phi\}|0\rangle$ with no prefactor and $\tilde D_F = i/(p^2 - m^2 + i\varepsilon)$; Fourier conventions as in [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]; $\xi = x - y$, $t = \xi^0$, $E = E_{\mathbf p}$.
 
 ## Sources and Green's functions
@@ -39,6 +41,8 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 >
 > Then for every source $\phi(x) = \phi_0(x) + i\int d^4y\,D_C(x - y)\,j(y)$, with $\phi_0$ any homogeneous solution, solves $(\partial^2 + m^2)\phi = j$. The label $C$ names the boundary condition, equivalently the contour of [[§C2b.5 Green's Functions and Contours#^def-c2b-5-2|Def. §C2b.5.2]].
 >
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; *applies:* classical, the linear source problem, any $j$; the normalization $-i\delta^4$ is Peskin–Schroeder's.
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.1 · PHY 513 Lecture 6, Part A · PS §2.4, eq. (2.56)*
 
 ^def-c2b-5-1
@@ -58,6 +62,8 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 > $$
 >
 > unlike a free field, whose transform is supported on the mass shell ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]), a Green's function has off-shell components, and on the shell the equation does not determine it.
+>
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; *applies:* a statement about the Klein–Gordon operator, independent of quantization and of any state; tempered $D_C$.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.3 (Principle "Free fields live on the mass shell": "a Green's function, by contrast …"), §6.4 · PS §2.4, pp. 29–30*
 
@@ -87,6 +93,8 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 >
 > Without a contour, $\int\frac{d^4p}{(2\pi)^4}\frac{i\,e^{-ip\cdot\xi}}{p^2 - m^2}$ means nothing: $1/(p^0 \mp E_{\mathbf p})$ is not integrable at the pole.
 >
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; *applies:* a statement about the Klein–Gordon operator, independent of quantization and of any state.
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.4 (eq. (DCdef)) · PHY 513 Lecture 6, "Important Mathematical Limitation"*
 
 ^def-c2b-5-2
@@ -103,6 +111,8 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 > 2. Two such contours give Green's functions that differ by a homogeneous solution built from the on-shell waves $e^{\mp iE_{\mathbf p}\xi^0 + i\mathbf p\cdot\boldsymbol\xi}$.
 >
 > Choosing a contour is choosing which homogeneous solution to add: a boundary condition.
+>
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; *applies:* a statement about the Klein–Gordon operator, independent of quantization and of any state; exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.8 (Principle "Contours are boundary conditions") · PS §2.4, p. 31*
 
@@ -154,6 +164,8 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 >
 > passing a pole above is the boundary value with the pole moved below, and conversely.
 > 2. $(\partial^2 + m^2)D_C = -i\delta^4$ holds in $\mathcal S'(\mathbb R^4)$: $D_C$ is a fundamental solution ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^def-ca-6-1|Def. §CA.6.1]]). Every tempered fundamental solution is $D_C + H$ with $H$ a homogeneous solution whose transform lives on the shell ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|Theorem §CA.6.7]]); the four contours select four of them.
+>
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; *applies:* a statement about the Klein–Gordon operator, independent of quantization and of any state; exact, identities in $\mathcal S'(\mathbb R^4)$.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.2 (Principle "The Green's function is a linear map, and there is one per boundary condition"), §6.8–6.9 · stated here as distributions (standard: Hörmander I, §§3.3, 7.3)*
 
@@ -210,6 +222,8 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 >
 > $D_R$ vanishes unless $x$ lies in the causal future of $y$ (inside or on the forward light cone). Mode by mode it is $\theta(t)\,(-i\sin E_{\mathbf p}t)/E_{\mathbf p}$.
 >
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; *applies:* any theory (a statement about the function $D_R$, the retarded solution of the source problem); its reading as $\theta(\xi^0)\langle0|[\hat\phi(x), \hat\phi(y)]|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.6 · PHY 513 Lecture 6, "Retarded Green's Function: Explicit Evaluation" · PS §2.4, eqs. (2.54)–(2.56)*
 
 ^thm-c2b-5-5
@@ -264,6 +278,8 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 > 2. Away from $\xi = 0$ this is a product with disjoint singular supports (the plane $\xi^0 = 0$ for θ, the cone for $D$, [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 2). At $\xi = 0$ no product rule applies: extensions of $\theta(\xi^0)D$ from $\mathbb R^4\setminus\{0\}$ differ by $\sum c_\alpha\partial^\alpha\delta^4$ ([[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]]), and exactly one of them, times $i$, is a fundamental solution: $D_R$, the slice product of part 1.
 > 3. $D_R$ is the only tempered fundamental solution that vanishes for $\xi^0 < 0$: the retarded boundary condition is a support condition. For $m = 0$, $D_R = -\frac{i}{2\pi}\theta(\xi^0)\,\delta(\xi^2) = -\frac{i}{4\pi r}\,\delta(\xi^0 - r)$.
 >
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; *applies:* a statement about the Klein–Gordon operator, independent of quantization and of any state; exact, $m = 0$ included in part 3.
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.6, Ch. 6 §6.2 ("one Green's function per boundary condition"), App. A §A.4 (products) · stated here as distributions (standard: Hörmander I, §§3.3, 6.2)*
 
 ^thm-c2b-5-6
@@ -302,6 +318,8 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 >
 > the product taken slice by slice as in [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], 1. $D_A$ vanishes unless $x$ lies in the causal past of $y$ (inside or on the backward light cone), and it is the only tempered fundamental solution that vanishes for $\xi^0 > 0$. Mode by mode it is $\theta(-t)\,(i\sin E_{\mathbf p}t)/E_{\mathbf p}$.
 >
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; *applies:* any theory (a statement about the function $D_A$); its reading through the vacuum commutator in $|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.8 (table of contours, "every entry checked by integrating along the real axis at finite $\varepsilon$"), §6.11 (the family: "mirror product, supported in $\xi^0 \le 0$")*
 
 ^thm-c2b-5-7
@@ -336,6 +354,8 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 > $$
 >
 > with $D_R$ of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]] and $D_A$ of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]]. As the average of two Green's functions it is one.
+>
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; *applies:* a statement about the Klein–Gordon operator, independent of quantization and of any state.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.11 (Definition "The family": $\bar D = \frac12(D_R + D_A)$)*
 
