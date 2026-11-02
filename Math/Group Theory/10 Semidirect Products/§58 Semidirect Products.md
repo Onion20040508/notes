@@ -5,7 +5,7 @@ chapter: 10
 section: 58
 tags: [group-theory, math493]
 ---
-← [[§57 Internal and External Direct Products]] · ↑ [[· 10 Semidirect Products]]
+← [[§57 Internal and External Direct Products]] · ↑ [[· 10 Semidirect Products]] · [[§59 Representations and Subrepresentations]] →
 
 *Reference: not covered in the Pinter chapters used so far.*
 

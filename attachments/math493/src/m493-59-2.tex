@@ -1,0 +1,13 @@
+% Figure from MATH 493 notes, section 59. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth]
+\draw[black!45, thick, fill=black!4] (1.556,0.898) -- (-1.556,0.898) -- (0.000,-1.796) -- cycle;
+\fill (1.556,0.898) circle (1.4pt); \node[font=\scriptsize] at (1.898,1.096) {$\bar e_1$};
+\fill (-1.556,0.898) circle (1.4pt); \node[font=\scriptsize] at (-1.898,1.096) {$\bar e_2$};
+\fill (0.000,-1.796) circle (1.4pt); \node[font=\scriptsize] at (0.000,-2.191) {$\bar e_3$};
+\draw[red!70!black, dashed, thick] (0,-1.75) -- (0,1.6) node[above, font=\scriptsize] {mirror of $(1\,2)$};
+\draw[->, orange!85!black, thick] (30:0.6) arc (30:150:0.6); \node[orange!85!black, font=\scriptsize, align=center] at (-2.85,0.4) {rotation $(1\,2\,3)$\\by $120^\circ$ (orange arc)};
+\draw[->, blue!70!black, very thick] (0,0) -- (3.111,0.000) node[right, font=\scriptsize] {$f_1 = e_1 - e_2$};
+\draw[->, blue!70!black, very thick] (0,0) -- (1.556,2.694) node[right, font=\scriptsize] {$f_2 = e_1 - e_3$};
+\fill (0,0) circle (1.2pt) node[below left, font=\scriptsize] {$0$};
+\node[font=\scriptsize, align=left, anchor=west] at (2.75,-1.2) {reflection: trace $0$, det $-1$\\rotation: trace $-1$, det $1$};
+\end{tikzpicture}

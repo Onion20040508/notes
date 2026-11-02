@@ -1,0 +1,40 @@
+% Figure from MATH 493 notes, section 59. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth]
+\fill[blue!70!black] (0.000,0.000) circle (2.1pt);
+\fill[black!30] (0.000,1.150) circle (1.3pt);
+\fill[black!30] (0.000,2.300) circle (1.3pt);
+\fill[black!30] (1.150,0.000) circle (1.3pt);
+\fill[black!30] (1.150,1.150) circle (1.3pt);
+\fill[blue!70!black] (1.150,2.300) circle (2.1pt);
+\fill[black!30] (2.300,0.000) circle (1.3pt);
+\fill[blue!70!black] (2.300,1.150) circle (2.1pt);
+\fill[black!30] (2.300,2.300) circle (1.3pt);
+\fill[black!30] (-0.632,-0.483) circle (1.3pt);
+\fill[black!30] (-0.632,0.667) circle (1.3pt);
+\fill[blue!70!black] (-0.632,1.817) circle (2.1pt);
+\fill[black!30] (0.517,-0.483) circle (1.3pt);
+\fill[blue!70!black] (0.517,0.667) circle (2.1pt);
+\fill[black!30] (0.517,1.817) circle (1.3pt);
+\fill[blue!70!black] (1.667,-0.483) circle (2.1pt);
+\fill[black!30] (1.667,0.667) circle (1.3pt);
+\fill[black!30] (1.667,1.817) circle (1.3pt);
+\fill[black!30] (-1.265,-0.966) circle (1.3pt);
+\fill[blue!70!black] (-1.265,0.184) circle (2.1pt);
+\fill[black!30] (-1.265,1.334) circle (1.3pt);
+\fill[blue!70!black] (-0.115,-0.966) circle (2.1pt);
+\fill[black!30] (-0.115,0.184) circle (1.3pt);
+\fill[black!30] (-0.115,1.334) circle (1.3pt);
+\fill[black!30] (1.035,-0.966) circle (1.3pt);
+\fill[black!30] (1.035,0.184) circle (1.3pt);
+\fill[blue!70!black] (1.035,1.334) circle (2.1pt);
+\draw[red!70!black, thick] (0.000,0.000) circle (4.2pt);
+\draw[red!70!black, thick] (0.517,0.667) circle (4.2pt);
+\draw[red!70!black, thick] (1.035,1.334) circle (4.2pt);
+\node[font=\scriptsize, below left] at (0.000,0.000) {$0$};
+\node[font=\scriptsize, above right, xshift=2pt] at (1.035,1.334) {$(2,2,2)$};
+\node[font=\scriptsize, right, xshift=4pt] at (0.517,0.667) {$(1,1,1)$};
+\draw[->, black!55, thin] (0.000,0.000) -- (-1.645,-1.256) node[below left, font=\scriptsize] {$x$};
+\draw[->, black!55, thin] (0.000,0.000) -- (2.990,0.000) node[right, font=\scriptsize] {$y$};
+\draw[->, black!55, thin] (0.000,0.000) -- (0.000,2.990) node[above, font=\scriptsize] {$z$};
+\node[font=\scriptsize, align=left, anchor=west] at (3.6,0.9) {\textcolor{blue!70!black}{$\bullet$} $x + y + z = 0$: $U_2$, $9$ vectors\\\textcolor{red!70!black}{$\circ$} $U_1 = \mathbb{F}_3 (1,1,1)$, inside $U_2$};
+\end{tikzpicture}

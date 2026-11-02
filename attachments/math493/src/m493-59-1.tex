@@ -1,0 +1,17 @@
+% Figure from MATH 493 notes, section 59. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth]
+\fill[blue!70!black!12] (-3.224,-0.874) -- (-1.144,-2.954) -- (2.080,-2.080) -- (3.224,0.874) -- (1.144,2.954) -- (-2.080,2.080) -- cycle;
+\draw[blue!70!black, thick] (-3.224,-0.874) -- (-1.144,-2.954) -- (2.080,-2.080) -- (3.224,0.874) -- (1.144,2.954) -- (-2.080,2.080) -- cycle;
+\draw[->, black!55, thin] (0.000,0.000) -- (-1.364,-1.042) node[below left, font=\scriptsize] {$x$};
+\draw[->, black!55, thin] (0.000,0.000) -- (2.480,0.000) node[right, font=\scriptsize] {$y$};
+\draw[->, black!55, thin] (0.000,0.000) -- (0.000,2.320) node[above, font=\scriptsize] {$z$};
+\draw[black!45, dashed] (-0.880,-0.672) -- (1.600,0.000) -- (0.000,1.600) -- cycle;
+\fill (-0.880,-0.672) circle (1.3pt) node[left, font=\scriptsize] {$e_1$};
+\fill (1.600,0.000) circle (1.3pt) node[below, font=\scriptsize] {$e_2$};
+\fill (0.000,1.600) circle (1.3pt) node[left, font=\scriptsize] {$e_3$};
+\draw[red!70!black, thick] (-0.324,-0.418) -- (0.612,0.789) node[right, xshift=3pt, font=\scriptsize] {$U_1 = k(1,1,1)$};
+\fill[red!70!black] (0.240,0.309) circle (1.3pt);
+\draw[->, blue!70!black, thick] (0.000,0.000) -- (-2.480,-0.672) node[above, font=\scriptsize] {$f_1$};
+\draw[->, blue!70!black, thick] (0.000,0.000) -- (-0.880,-2.272) node[right, font=\scriptsize] {$f_2$};
+\node[blue!70!black, font=\scriptsize, anchor=west] at (2.190,-2.190) {$U_2 = \{x + y + z = 0\}$};
+\end{tikzpicture}

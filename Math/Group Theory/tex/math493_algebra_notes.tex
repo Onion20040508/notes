@@ -287,7 +287,7 @@ These notes follow the course, and the course studies groups through two familie
 \end{tikzpicture}
 \end{center}
 
-The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~9 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them; composition series make the atom analogy precise, since by the Jordan--H\"older theorem the simple pieces do not depend on the choice of series (\ref{sec:composition-series}). The same chapter then begins the Sylow theorems, a partial converse to Lagrange's theorem that supplies subgroups of the largest prime-power orders, and uses them to show that the only simple groups of order at most $100$ are the $\mathbb{Z}/p\mathbb{Z}$ and those of order $60$ (\ref{sec:small-simple-groups}). Chapter~10 turns to how a normal subgroup $N$ and a complement $S$ fit together: as a direct product when $S$ is also normal (\ref{sec:internal-direct-products}), and in general as a semidirect product $N \rtimes_\varphi S$, determined by the action $\varphi$ of $S$ on $N$ by conjugation (\ref{sec:semidirect-products}).
+The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~9 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them; composition series make the atom analogy precise, since by the Jordan--H\"older theorem the simple pieces do not depend on the choice of series (\ref{sec:composition-series}). The same chapter then begins the Sylow theorems, a partial converse to Lagrange's theorem that supplies subgroups of the largest prime-power orders, and uses them to show that the only simple groups of order at most $100$ are the $\mathbb{Z}/p\mathbb{Z}$ and those of order $60$ (\ref{sec:small-simple-groups}). Chapter~10 turns to how a normal subgroup $N$ and a complement $S$ fit together: as a direct product when $S$ is also normal (\ref{sec:internal-direct-products}), and in general as a semidirect product $N \rtimes_\varphi S$, determined by the action $\varphi$ of $S$ on $N$ by conjugation (\ref{sec:semidirect-products}). Part~II then turns from actions on sets to actions on vector spaces: a representation is a homomorphism $G \to GL(V)$ (\ref{sec:representations}), and the permutation matrices of the symmetries thread are the first example.
 
 \chapter*{Conventions and Notation}
 \addcontentsline{toc}{chapter}{Conventions and Notation}
@@ -320,6 +320,8 @@ $G^{\mathrm{ab}}$ & Abelianization $G/[G,G]$ (\ref{sec:commutators}). \\
 $G/N$, \ $\pi$ & Quotient group by a normal subgroup; canonical projection $g \mapsto gN$ (\ref{sec:quotient}). \\
 $PSL_n(F)$ & Projective special linear group $SL_n(F)/Z$ (\ref{sec:simple}). \\
 $n_p$, \ $N_G(H)$ & Number of Sylow $p$-subgroups; normalizer of $H$ (\ref{sec:small-simple-groups}). \\
+$\rho$, \ $\rho_V(g)$, \ $GL(V)$ & A representation $G \to GL(V)$; the linear map by which $g$ acts on $V$; invertible linear maps $V \to V$ (\ref{sec:representations}). \\
+$kX$ & Permutation representation on formal combinations of the $e_x$, $x \in X$ (\ref{sec:representations}). \\
 $N \rtimes_\varphi S$, \ $S \ltimes_\varphi N$ & Semidirect product, $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$ (\ref{sec:semidirect-products}). \\
 $HN$ & Product set $\{hn : h \in H,\ n \in N\}$ (\ref{sec:second-iso}). \\
 $X \sqcup Y$ & Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$ (\ref{sec:representatives}). \\
@@ -2428,6 +2430,8 @@ A \textbf{representation} of a group $G$ is a homomorphism $G \to GL_n(k)$ for s
 \begin{defbox}[{Permutation Representation}]\label{def:permutation-representation}
 The homomorphism $\sigma \mapsto M(\sigma)$, $S_n \to GL_n(k)$, of the proposition just proved is the \textbf{permutation representation} of $S_n$: it realizes $S_n$ as a group of matrices, with composition of permutations becoming matrix multiplication, and its image is the subgroup of permutation matrices listed among the subgroups of $GL_n(\mathbb{R})$ in WS 1.7.
 \end{defbox}
+
+\textit{(Not from class.)} Both notions return in general in Part~II: representations of any group on any vector space (Definition~\ref{def:representation}) and permutation representations of any $G$-set (Definition~\ref{def:permutation-representation-g-set}).
 
 \begin{rembox}[Group Actions]\label{rem:group-actions}
 The three ways $S_n$ has appeared --- on $\{1, \ldots, n\}$, on $k^n$ via $M(\sigma)$, and on $k[x_1, \ldots, x_n]$ --- are instances of a single notion, that of a \emph{group action}, developed in Chapter~\ref{ch:actions}; the compatibility statements proved above are exactly the action axioms.
@@ -7753,6 +7757,255 @@ Conventions differ on the order: $N \rtimes S$ and $S \ltimes N$ mean the same g
 \end{rembox}
 
 
+% ============================================================================
+% PART II: REPRESENTATION THEORY (Lecture and Worksheet 13, Mon Nov 2)
+% ============================================================================
+\part{Representation Theory}
+
+\chapter{Representations}\label{ch:representations}
+
+\textit{Source: Lecture and Worksheet 13 (Mon Nov 2).}
+
+So far groups have acted on sets. Representation theory studies groups acting on vector spaces by linear maps. Many groups come to us this way ($GL_n(k)$, the symmetries of a cube acting on $\mathbb{R}^3$), and every action on a set produces one (the permutation representations below). The lecture's remark: representation theory is good exercise because it mixes three kinds of objects, group elements, vectors and scalars, and one has to keep track of which is which.
+
+% ============================================================================
+% SECTION: REPRESENTATIONS AND SUBREPRESENTATIONS (Worksheet 13; lecture Mon Nov 2)
+% ============================================================================
+\section{Representations and Subrepresentations}\label{sec:representations}
+
+\textit{Source: Lecture and Worksheet 13 (Mon Nov 2). Not covered in the Pinter chapters used so far.}
+
+\begin{defbox}[{Representation}]\label{def:representation}
+Let $G$ be a group and $k$ a field. A \textbf{representation} of $G$ (over $k$) is a $k$-vector space $V$ together with an action of $G$ on $V$ by linear maps. That is, $\star: G \times V \to V$ satisfies, for $g, g_1, g_2 \in G$, $v, v_1, v_2 \in V$ and $c \in k$:
+\begin{align*}
+&\text{action axioms:} && e \star v = v, && g_1 \star (g_2 \star v) = (g_1g_2) \star v; \\
+&\text{linearity axioms:} && g \star (v_1 + v_2) = g \star v_1 + g \star v_2, && g \star (cv) = c\,(g \star v).
+\end{align*}
+One often writes $gv$ for $g \star v$.
+\srcline{lecture 11/2; WS 13}
+\end{defbox}
+
+The linearity axioms say exactly that, for each fixed $g$, the map $v \mapsto g \star v$ is linear; the action axioms are those of an action on the set $V$ (Definition~\ref{def:action-right-action}). \textit{(Not from class.)} Problem Set~1 already used the word, for a homomorphism $G \to GL_n(k)$ (Definition~\ref{def:representation-permutation-representation}); Proposition~\ref{prop:representations-homomorphisms-glv} below shows the two definitions agree.
+
+\begin{propbox}[{Representations Are Homomorphisms to $GL(V)$}]\label{prop:representations-homomorphisms-glv}
+A representation of $G$ on $V$ is the same thing as a group homomorphism $\rho: G \to GL(V)$, the group of invertible linear maps $V \to V$ under composition. The correspondence is $\rho(g)(v) = g \star v$.
+\srcline{WS 13.1}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} The action axioms are the homomorphism property; the linearity axioms say each $\rho(g)$ is linear.\par
+\textit{(Worksheet session 11/2.)} Given a representation, let $\rho(g): V \to V$ be $v \mapsto g \star v$, which is linear by the linearity axioms. The action axioms say $\rho(e) = \mathrm{id}_V$ and $\rho(g_1g_2) = \rho(g_1) \circ \rho(g_2)$. In particular $\rho(g)\rho(g^{-1}) = \rho(e) = \mathrm{id}_V = \rho(g^{-1})\rho(g)$, so $\rho(g)$ is invertible and $\rho: G \to GL(V)$ is a homomorphism. Conversely, given a homomorphism $\rho$, the rule $g \star v := \rho(g)(v)$ satisfies the action axioms because $\rho$ is a homomorphism (so $\rho(e) = \mathrm{id}_V$, Proposition~\ref{prop:homomorphisms-preserve-identity-inverses}), and the linearity axioms because each $\rho(g)$ is linear. The two constructions are inverse to each other. This is the linear version of Theorem~\ref{thm:actions-homomorphisms-sx}, Actions Are Homomorphisms to $S_X$.
+\end{proof}
+
+\begin{rembox}[{Notation and Matrices}]\label{rem:representation-matrices}
+One writes $\rho_V(g)$ when it is necessary to say which representation is meant. If $V$ has a basis $v_1, \ldots, v_n$, each $\rho(g)$ becomes an invertible $n \times n$ matrix, and the representation becomes a homomorphism $G \to GL_n(k)$. So a representation can be written down by giving the matrices $\rho(g)$ for $g \in G$. As usual, column $j$ of the matrix of $\rho(g)$ records $g \star v_j$ in terms of the basis.
+\srcline{WS 13}
+\end{rembox}
+
+\begin{exbox}[{The Trivial Representation}]\label{ex:trivial-representation}
+Let $V = k$, one-dimensional, with $g \star v = v$ for all $g$ and $v$. In matrices, $\rho(g) = [\,1\,]$, the $1 \times 1$ identity matrix, for every $g \in G$.
+\srcline{WS 13.2}
+\end{exbox}
+
+\begin{exbox}[{One-Dimensional Representations and Characters}]\label{ex:one-dimensional-representations}
+Since $GL_1(k) = k^\times$, a one-dimensional representation is the same thing as a character $\chi: G \to k^\times$ (Definition~\ref{def:character}). For example, the sign (Definition~\ref{def:sign-even-odd-permutations}, a homomorphism by Theorem~\ref{thm:sign-homomorphism}) gives the \textbf{sign representation} of $S_n$ on $k$, $\sigma \star v = \sgn(\sigma)\,v$. The trivial representation is the trivial character.
+\srcline{not from class}
+\end{exbox}
+
+\begin{defbox}[{Permutation Representation}]\label{def:permutation-representation-g-set}
+Let $G$ act on a set $X$. Let $kX$ be the vector space with basis $\{e_x : x \in X\}$: its elements are formal sums $\sum_{x \in X} a_x e_x$ with $a_x \in k$ and $a_x = 0$ for all but finitely many $x$. The \textbf{permutation representation} is
+\[ g \star \sum_{x \in X} a_x e_x = \sum_{x \in X} a_x e_{g \star x}. \]
+\srcline{WS 13.3}
+\end{defbox}
+
+\begin{propbox}[{The Permutation Representation Is a Representation}]\label{prop:permutation-representation-is-representation}
+\begin{enumerate}
+    \item $kX$ with this rule is a representation of $G$.
+    \item For $S_3$ acting on $\{1, 2, 3\}$, in the basis $e_1, e_2, e_3$,
+    \[ \rho\big((1\,2\,3)\big) = \begin{pmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{pmatrix}. \]
+\end{enumerate}
+\srcline{WS 13.3}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} The rule moves basis vectors as the action moves points, so the action axioms for $X$ give those for $kX$.\par
+\textit{(Worksheet session 11/2.)} \textbf{(1)} The rule is linear in the coefficients $a_x$, so the linearity axioms hold. For the action axioms, $e \star \sum a_x e_x = \sum a_x e_{e \star x} = \sum a_x e_x$, and
+\[ g_1 \star \Big(g_2 \star \sum_x a_x e_x\Big) = g_1 \star \sum_x a_x e_{g_2 \star x} = \sum_x a_x e_{g_1 \star (g_2 \star x)} = \sum_x a_x e_{(g_1g_2) \star x} = (g_1g_2) \star \sum_x a_x e_x, \]
+using the action axiom for $X$.
+
+\textbf{(2)} $(1\,2\,3)$ sends $e_1 \mapsto e_2$, $e_2 \mapsto e_3$, $e_3 \mapsto e_1$; these are the three columns. For $X = \{1, \ldots, n\}$ and $G = S_n$, $\rho(\sigma)$ is the permutation matrix $M(\sigma)$ (Definition~\ref{def:permutation-matrices}), and the homomorphism $\sigma \mapsto M(\sigma)$ found there is this representation.
+\end{proof}
+
+\textit{(Not from class.)} For $X = \{1, \ldots, n\}$ and $G = S_n$ this is the permutation representation $\sigma \mapsto M(\sigma)$ of Problem Set~1 (Definition~\ref{def:permutation-representation}). For finite $X$ the permutation representation is the composite of the homomorphism $G \to S_X$ of the action (Theorem~\ref{thm:actions-homomorphisms-sx}) with $\sigma \mapsto T_\sigma$, $S_X \to GL(k^X)$ (Proposition~\ref{prop:permutation-representation-sx}): it is ``the action, made linear''.
+
+\begin{defbox}[{Subrepresentation}]\label{def:subrepresentation}
+Let $V$ be a representation of $G$. A \textbf{subrepresentation} of $V$ is a subspace $U \subseteq V$ with $g \star u \in U$ for all $g \in G$ and $u \in U$ (a $G$-invariant subspace).
+\srcline{WS 13}
+\end{defbox}
+
+A subrepresentation is itself a representation of $G$, by restricting the action: the axioms hold in $U$ because they hold in $V$. $\{0\}$ and $V$ are always subrepresentations.
+
+\begin{exbox}[{Two Subrepresentations of $k\{1,2,3\}$}]\label{ex:subrepresentations-k123}
+Let $S_3$ act on $k\{1,2,3\} = k^3$ as in WS 13.3, so $\sigma$ permutes the coordinates.
+\begin{enumerate}
+    \item $U_1 = k\,(1,1,1)$, the span of the all-ones vector. Permuting coordinates fixes $(1,1,1)$, so $U_1$ is a subrepresentation, and every $g$ acts as the identity: in the basis $(1,1,1)$, $\rho_{U_1}(g) = [\,1\,]$. So $U_1$ is a copy of the trivial representation.
+    \item $U_2 = \{(x, y, z) : x + y + z = 0\}$, the vectors whose coordinates sum to $0$ (the orthogonal complement of $U_1$ for the dot product). Permuting coordinates does not change their sum, so $U_2$ is a subrepresentation, though its vectors are not fixed. It is two-dimensional, with basis
+    \[ f_1 = (1, -1, 0), \qquad f_2 = (1, 0, -1). \]
+    For example, $(1\,2) \star f_1 = (-1, 1, 0) = -f_1$ and $(1\,2) \star f_2 = (0, 1, -1) = -f_1 + f_2$, so $\rho_{U_2}\big((1\,2)\big) = \left(\begin{smallmatrix} -1 & -1 \\ 0 & 1 \end{smallmatrix}\right)$. All six matrices, in this basis:
+\end{enumerate}
+\begin{center}
+\renewcommand{\arraystretch}{1.35}\setlength{\tabcolsep}{4pt}
+\begin{tabular}{c|cccccc}
+$g$ & $e$ & $(1\,2)$ & $(1\,3)$ & $(2\,3)$ & $(1\,2\,3)$ & $(1\,3\,2)$ \\ \hline
+$\rho_{U_2}(g)$ & $\left(\begin{smallmatrix} 1 & 0 \\ 0 & 1 \end{smallmatrix}\right)$ & $\left(\begin{smallmatrix} -1 & -1 \\ 0 & 1 \end{smallmatrix}\right)$ & $\left(\begin{smallmatrix} 1 & 0 \\ -1 & -1 \end{smallmatrix}\right)$ & $\left(\begin{smallmatrix} 0 & 1 \\ 1 & 0 \end{smallmatrix}\right)$ & $\left(\begin{smallmatrix} -1 & -1 \\ 1 & 0 \end{smallmatrix}\right)$ & $\left(\begin{smallmatrix} 0 & 1 \\ -1 & -1 \end{smallmatrix}\right)$ \\
+trace & $2$ & $0$ & $0$ & $0$ & $-1$ & $-1$ \\
+det & $1$ & $-1$ & $-1$ & $-1$ & $1$ & $1$
+\end{tabular}
+\end{center}
+(The table, apart from $(1\,2)$, is not from class; checked by computer.) Other boards used other bases, such as $(1,-1,0), (0,1,-1)$, and got different matrices.
+\srcline{WS 13.4; board 11/2}
+\end{exbox}
+
+\textbf{Transcription note (board 11/2).} With $f_1 = (1,-1,0)$, $f_2 = (1,0,-1)$, the handwritten notes write $(1\,2) \star f_2 = f_1$ and first record the matrix $\left(\begin{smallmatrix} -1 & 1 \\ 0 & 0 \end{smallmatrix}\right)$. In fact $(1\,2) \star f_2 = (0,1,-1) = -f_1 + f_2$, and the matrix is $\left(\begin{smallmatrix} -1 & -1 \\ 0 & 1 \end{smallmatrix}\right)$, the third matrix on the board. The first one has determinant $0$, so it cannot be the matrix of $(1\,2)$ in any basis: the lecture's trace and determinant check (trace $0$, determinant $-1$) catches it.
+
+%% >>> ADDED: figures (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\fill[blue!70!black!12] (-3.224,-0.874) -- (-1.144,-2.954) -- (2.080,-2.080) -- (3.224,0.874) -- (1.144,2.954) -- (-2.080,2.080) -- cycle;
+\draw[blue!70!black, thick] (-3.224,-0.874) -- (-1.144,-2.954) -- (2.080,-2.080) -- (3.224,0.874) -- (1.144,2.954) -- (-2.080,2.080) -- cycle;
+\draw[->, black!55, thin] (0.000,0.000) -- (-1.364,-1.042) node[below left, font=\scriptsize] {$x$};
+\draw[->, black!55, thin] (0.000,0.000) -- (2.480,0.000) node[right, font=\scriptsize] {$y$};
+\draw[->, black!55, thin] (0.000,0.000) -- (0.000,2.320) node[above, font=\scriptsize] {$z$};
+\draw[black!45, dashed] (-0.880,-0.672) -- (1.600,0.000) -- (0.000,1.600) -- cycle;
+\fill (-0.880,-0.672) circle (1.3pt) node[left, font=\scriptsize] {$e_1$};
+\fill (1.600,0.000) circle (1.3pt) node[below, font=\scriptsize] {$e_2$};
+\fill (0.000,1.600) circle (1.3pt) node[left, font=\scriptsize] {$e_3$};
+\draw[red!70!black, thick] (-0.324,-0.418) -- (0.612,0.789) node[right, xshift=3pt, font=\scriptsize] {$U_1 = k(1,1,1)$};
+\fill[red!70!black] (0.240,0.309) circle (1.3pt);
+\draw[->, blue!70!black, thick] (0.000,0.000) -- (-2.480,-0.672) node[above, font=\scriptsize] {$f_1$};
+\draw[->, blue!70!black, thick] (0.000,0.000) -- (-0.880,-2.272) node[right, font=\scriptsize] {$f_2$};
+\node[blue!70!black, font=\scriptsize, anchor=west] at (2.190,-2.190) {$U_2 = \{x + y + z = 0\}$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} $S_3$ permutes the coordinate axes of $\mathbb{R}^3$, so it permutes $e_1, e_2, e_3$ and maps the triangle they span to itself. The line $U_1$ through $(1,1,1)$ (red) is fixed pointwise, and the plane $U_2 = \{x + y + z = 0\}$ (blue) perpendicular to it is mapped to itself, though not pointwise: $f_1 = e_1 - e_2$ and $f_2 = e_1 - e_3$ lie in it. The hexagon marks a piece of the plane $U_2$; its vertices lie on the lines through the six vectors $e_i - e_j$.
+
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\draw[black!45, thick, fill=black!4] (1.556,0.898) -- (-1.556,0.898) -- (0.000,-1.796) -- cycle;
+\fill (1.556,0.898) circle (1.4pt); \node[font=\scriptsize] at (1.898,1.096) {$\bar e_1$};
+\fill (-1.556,0.898) circle (1.4pt); \node[font=\scriptsize] at (-1.898,1.096) {$\bar e_2$};
+\fill (0.000,-1.796) circle (1.4pt); \node[font=\scriptsize] at (0.000,-2.191) {$\bar e_3$};
+\draw[red!70!black, dashed, thick] (0,-1.75) -- (0,1.6) node[above, font=\scriptsize] {mirror of $(1\,2)$};
+\draw[->, orange!85!black, thick] (30:0.6) arc (30:150:0.6); \node[orange!85!black, font=\scriptsize, align=center] at (-2.85,0.4) {rotation $(1\,2\,3)$\\by $120^\circ$ (orange arc)};
+\draw[->, blue!70!black, very thick] (0,0) -- (3.111,0.000) node[right, font=\scriptsize] {$f_1 = e_1 - e_2$};
+\draw[->, blue!70!black, very thick] (0,0) -- (1.556,2.694) node[right, font=\scriptsize] {$f_2 = e_1 - e_3$};
+\fill (0,0) circle (1.2pt) node[below left, font=\scriptsize] {$0$};
+\node[font=\scriptsize, align=left, anchor=west] at (2.75,-1.2) {reflection: trace $0$, det $-1$\\rotation: trace $-1$, det $1$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The plane $U_2$ seen face on, along $(1,1,1)$. The projections of $e_1, e_2, e_3$ form an equilateral triangle, and $S_3$ acts on $U_2$ as the symmetry group of that triangle: $(1\,2)$ is the reflection in the dashed red line, and $(1\,2\,3)$ is the rotation by $120^\circ$ taking $1 \to 2 \to 3$. A reflection has trace $0$ and determinant $-1$; a rotation by $120^\circ$ has trace $2\cos 120^\circ = -1$ and determinant $1$: the rows of the table, in any basis.
+%% <<< END ADDED
+
+\begin{rembox}[{Checking Answers in Different Bases}]\label{rem:checking-bases}
+Matrices of the same linear map in different bases are conjugate, $M' = PMP^{-1}$, so they can look different. To compare answers from different boards, compare invariants of conjugation: the \textbf{determinant}, the \textbf{trace}, and more generally the characteristic polynomial. For $U_2$, every board found determinant $-1$ and trace $0$ for $(1\,2)$, trace $2$ for the identity, and trace $-1$ for the $3$-cycles; this is how the lecturer checked the boards. Note that $\det \rho_{U_2}(g) = \sgn(g)$ in the table. Traces will return later in the course.
+\srcline{lecture 11/2}
+\end{rembox}
+
+\begin{propbox}[{When $k\{1,2,3\} = U_1 \oplus U_2$}]\label{prop:k123-direct-sum}
+$k\{1,2,3\}$ is the (internal) direct sum of $U_1$ and $U_2$ if and only if $3 \neq 0$ in $k$. If $3 = 0$ in $k$ (for example $k = \mathbb{F}_3$), then $U_1 \subseteq U_2$.
+\srcline{WS 13.5; board 11/2}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} Put bases of $U_1$ and $U_2$ side by side; the direct sum holds exactly when the resulting $3 \times 3$ matrix is invertible, and its determinant is $3$.\par
+\textit{(Board 11/2.)} $k^3 = U_1 \oplus U_2$ means $U_1 \cap U_2 = \{0\}$ and $U_1 + U_2 = k^3$, i.e.\ every vector can be written uniquely as $c_1(1,1,1) + c_2(1,-1,0) + c_3(0,1,-1)$. (Here $(1,-1,0), (0,1,-1)$ is another basis of $U_2$.) That is the same as the matrix with these three columns being invertible:
+\[ \det \begin{pmatrix} 1 & 1 & 0 \\ 1 & -1 & 1 \\ 1 & 0 & -1 \end{pmatrix} = 1 + 1 + 1 = 3. \]
+So if $3 \neq 0$ in $k$, the matrix is invertible and $k^3 = U_1 \oplus U_2$. If $3 = 0$, it is not, and indeed
+\[ (1,-1,0) + 2\,(0,1,-1) = (1, 1, -2) = (1,1,1), \]
+since $-2 = 1$ when $3 = 0$: the all-ones vector lies in $U_2$. (Directly: $(1,1,1) \in U_2$ iff $1 + 1 + 1 = 0$.)
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\fill[blue!70!black] (0.000,0.000) circle (2.1pt);
+\fill[black!30] (0.000,1.150) circle (1.3pt);
+\fill[black!30] (0.000,2.300) circle (1.3pt);
+\fill[black!30] (1.150,0.000) circle (1.3pt);
+\fill[black!30] (1.150,1.150) circle (1.3pt);
+\fill[blue!70!black] (1.150,2.300) circle (2.1pt);
+\fill[black!30] (2.300,0.000) circle (1.3pt);
+\fill[blue!70!black] (2.300,1.150) circle (2.1pt);
+\fill[black!30] (2.300,2.300) circle (1.3pt);
+\fill[black!30] (-0.632,-0.483) circle (1.3pt);
+\fill[black!30] (-0.632,0.667) circle (1.3pt);
+\fill[blue!70!black] (-0.632,1.817) circle (2.1pt);
+\fill[black!30] (0.517,-0.483) circle (1.3pt);
+\fill[blue!70!black] (0.517,0.667) circle (2.1pt);
+\fill[black!30] (0.517,1.817) circle (1.3pt);
+\fill[blue!70!black] (1.667,-0.483) circle (2.1pt);
+\fill[black!30] (1.667,0.667) circle (1.3pt);
+\fill[black!30] (1.667,1.817) circle (1.3pt);
+\fill[black!30] (-1.265,-0.966) circle (1.3pt);
+\fill[blue!70!black] (-1.265,0.184) circle (2.1pt);
+\fill[black!30] (-1.265,1.334) circle (1.3pt);
+\fill[blue!70!black] (-0.115,-0.966) circle (2.1pt);
+\fill[black!30] (-0.115,0.184) circle (1.3pt);
+\fill[black!30] (-0.115,1.334) circle (1.3pt);
+\fill[black!30] (1.035,-0.966) circle (1.3pt);
+\fill[black!30] (1.035,0.184) circle (1.3pt);
+\fill[blue!70!black] (1.035,1.334) circle (2.1pt);
+\draw[red!70!black, thick] (0.000,0.000) circle (4.2pt);
+\draw[red!70!black, thick] (0.517,0.667) circle (4.2pt);
+\draw[red!70!black, thick] (1.035,1.334) circle (4.2pt);
+\node[font=\scriptsize, below left] at (0.000,0.000) {$0$};
+\node[font=\scriptsize, above right, xshift=2pt] at (1.035,1.334) {$(2,2,2)$};
+\node[font=\scriptsize, right, xshift=4pt] at (0.517,0.667) {$(1,1,1)$};
+\draw[->, black!55, thin] (0.000,0.000) -- (-1.645,-1.256) node[below left, font=\scriptsize] {$x$};
+\draw[->, black!55, thin] (0.000,0.000) -- (2.990,0.000) node[right, font=\scriptsize] {$y$};
+\draw[->, black!55, thin] (0.000,0.000) -- (0.000,2.990) node[above, font=\scriptsize] {$z$};
+\node[font=\scriptsize, align=left, anchor=west] at (3.6,0.9) {\textcolor{blue!70!black}{$\bullet$} $x + y + z = 0$: $U_2$, $9$ vectors\\\textcolor{red!70!black}{$\circ$} $U_1 = \mathbb{F}_3 (1,1,1)$, inside $U_2$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Not from lecture; figure added.)} The case $3 = 0$: the $27$ vectors of $\mathbb{F}_3^3$, coordinates $0, 1, 2$. The nine vectors with $x + y + z = 0$ form $U_2$ (blue), and the three multiples of $(1,1,1)$, which make up $U_1$ (red rings), all lie among them. So $U_1 \subseteq U_2$, $U_1 + U_2 = U_2 \neq \mathbb{F}_3^3$, and the decomposition fails.
+%% <<< END ADDED
+
+\begin{rembox}[{Why This Is ``Tricky''}]\label{rem:why-tricky}
+The worksheet did not say what the field is, and the answer depends on it. The lecturer's point: subrepresentations and decompositions into them are very useful, but there are subtleties, and fields in which $3 = 0$ (or $p = 0$) are part of the course. Two further observations (not from class): over $\mathbb{F}_3$, the ``orthogonal complement'' $U_2$ of $U_1$ contains $U_1$, so complements for a dot product need not be complements in the sense of direct sums over arbitrary fields, which is why WS 14 works over $\mathbb{R}$. And $|S_3| = 6$, so Maschke's theorem (WS 14) guarantees a complement whenever $6 \neq 0$ in $k$. Over $\mathbb{F}_2$ its hypothesis fails, yet $3 = 1 \neq 0$ and the decomposition still holds: Maschke's condition is sufficient, not necessary.
+\srcline{lecture 11/2; the last two observations not from class}
+\end{rembox}
+
+\begin{defbox}[{Homomorphism of Representations}]\label{def:homomorphism-representations}
+Let $U$ and $V$ be representations of $G$ over the same field $k$. A \textbf{homomorphism of $G$-representations} is a $k$-linear map $\varphi: U \to V$ with
+\[ \varphi\big(\rho_U(g)(u)\big) = \rho_V(g)\big(\varphi(u)\big) \qquad \text{for all } g \in G,\ u \in U, \]
+that is, $\varphi \circ \rho_U(g) = \rho_V(g) \circ \varphi$, or $\varphi(gu) = g\varphi(u)$.
+\srcline{WS 13}
+\end{defbox}
+
+\begin{defbox}[{Isomorphism of Representations}]\label{def:isomorphism-representations}
+An \textbf{isomorphism of $G$-representations} is an invertible homomorphism of $G$-representations (Definition~\ref{def:homomorphism-representations}).
+\srcline{WS 13}
+\end{defbox}
+
+\textbf{Transcription note (WS 13).} The worksheet prints the condition as ``$\rho_V(\varphi(g)(u)) = \varphi(\rho_U(g)(v))$'', which mixes up the arguments; the definition above is the standard one, and the one the worksheet's problems use.
+
+\begin{propbox}[{Kernels and Images Are Subrepresentations}]\label{prop:kernels-images-subrepresentations}
+Let $\varphi: U \to V$ be a homomorphism of $G$-representations. Then
+\begin{enumerate}
+    \item $\operatorname{Ker}\varphi$ is a subrepresentation of $U$;
+    \item $\operatorname{Im}\varphi$ is a subrepresentation of $V$.
+\end{enumerate}
+\srcline{WS 13.6}
+\end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+WS 13.6 was not reached in class on 11/2.
+\end{proof}
+
+
 \appendix
 \chapter{Review: Toolkits, Standard Examples, and Traps}\label{ch:review}
 
@@ -7781,6 +8034,7 @@ Conventions differ on the order: $N \rtimes S$ and $S \ltimes N$ mean the same g
     \item \textbf{To decompose $G$ as a product.} Find $N \trianglelefteq G$ and $S \leq G$ with $N \cap S = \{e\}$ and $NS = G$ (for finite $G$, $|N|\,|S| = |G|$ suffices given the trivial intersection, Lemma~\ref{lem:order-product-subgroups}). Then $G \cong N \rtimes_\varphi S$ with $\varphi(s)(n) = sns^{-1}$ (Theorem~\ref{thm:internal-external-semidirect}); if $S$ is normal too, $G \cong N \times S$ (Theorem~\ref{thm:internal-direct-product}).
     \item \textbf{To build a group of a given shape.} Choose groups $N$, $S$ and a homomorphism $\varphi: S \to \operatorname{Aut}(N)$; check that $\varphi$ is well defined, e.g.\ $2^3 \equiv 1 \pmod 7$ for $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ (Example~\ref{ex:z7-semidirect-z3}).
     \item \textbf{To find the composition factors of a finite group.} Build any composition series, e.g.\ by stitching a series of a normal subgroup $N$ to the preimage of a series of $G/N$ (Lemma~\ref{lem:finite-composition-series}); by Jordan--H\"older (Theorem~\ref{thm:jordan-holder}) the factors do not depend on the choice. $G$ is solvable iff every factor is some $\mathbb{Z}/p\mathbb{Z}$.
+    \item \textbf{To decide whether $W = U_1 \oplus U_2$ (finite dimensions).} Put a basis of $U_1$ and a basis of $U_2$ side by side as columns; $W$ is the direct sum iff this matrix is square and invertible, e.g.\ iff its determinant is nonzero \emph{in $k$} (Proposition~\ref{prop:k123-direct-sum}). To compare matrices of one representation computed in different bases, compare traces and determinants (the remark \emph{Checking Answers in Different Bases} in \ref{sec:representations}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
     \item \textbf{To show $h$ is not a commutator.} Find a character $\chi$ with $\chi(h) \neq e_A$ (\ref{sec:commutators}); in $S_n$, use $\sgn$.
@@ -7829,6 +8083,7 @@ Here $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$. Further facts: the r
     \item In the First Isomorphism Theorem the target is the \emph{image}: $G/\operatorname{Ker}\alpha \cong \operatorname{Im}\alpha$, which equals $H$ only when $\alpha$ is surjective (\ref{sec:first-iso}).
     \item A semidirect product is not determined by $N$ and $S$ alone: $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ and $S_3$ are both of the form $\mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$. The action $\varphi$ is part of the data, and in $N \rtimes S$ it is $N$, not $S$, that is normal (\ref{sec:semidirect-products}).
     \item The composition factors do not determine the group: $\mathbb{Z}/4\mathbb{Z}$ and $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ both have factors $\mathbb{Z}/2, \mathbb{Z}/2$, and $\mathbb{Z}/6\mathbb{Z}$ and $S_3$ both have $\mathbb{Z}/2, \mathbb{Z}/3$. Jordan--H\"older says the list is an invariant, not a complete one (\ref{sec:composition-series}).
+    \item Decompositions of representations can depend on the field: $k\{1,2,3\} = k(1,1,1) \oplus \{x + y + z = 0\}$ exactly when $3 \neq 0$ in $k$; over $\mathbb{F}_3$ the first summand lies inside the second (Proposition~\ref{prop:k123-direct-sum}).
 \end{enumerate}
 
 \chapter{Course Chronology}\label{ch:chronology}
@@ -7871,6 +8126,7 @@ Mon Oct 26 \newline lecture; Worksheet 11 & Internal and external direct sums an
 Wed Oct 28 \newline lecture; Worksheet 12 & Subnormal, composition and quasi-composition series; Jordan--H\"older (statement); $\mathbb{Z}$ has no composition series; finite groups do; the grid $Z_{ij}$; WS 12.1--12.3 & \ref{sec:composition-series}, \ref{sec:jh-grid} (WS 12.1--12.3), \ref{sec:jordan-holder} (statement) \\
 Thu Oct 29 \newline Problem Set 7 (submitted) & Proper subgroups of $A_n$ have index $\geq n$; index $n$ gives $A_{n-1}$; simple groups of order $60$ are $A_5$; orders $\equiv 2 \bmod 4$; no simple group of order $56$; two normal subgroups with simple quotients & \ref{sub:orders-30-56-90}, \ref{sub:order-60}, \ref{sec:composition-series} \\
 Fri Oct 30 \newline lecture; quiz & Jordan--H\"older finished: the nine squares, four impossible (WS 12.4), the crossing square (WS 12.5), changeovers and pipes, proof of the theorem (WS 12.6); flags in $(\mathbb{Z}/p\mathbb{Z})^n$ & \ref{sec:jh-grid} (WS 12.4--12.5), \ref{sec:jordan-holder} (WS 12.6) \\
+Mon Nov 2 \newline lecture; Worksheet 13 & Part~II begins: representations; action and linearity axioms; permutation representations; subrepresentations of $k\{1,2,3\}$; matrices in different bases (trace, determinant); the direct sum holds iff $3 \neq 0$ & \ref{sec:representations} (13.1--13.5; 13.6 to be proved) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 
