@@ -444,7 +444,7 @@ For independent components, $\partial T^\alpha{}_\beta/\partial T^\mu{}_\nu = \d
 ### [B] Maxwell's equations in Heaviside–Lorentz form ★
 $\partial_\mu F^{\mu\nu} = J^\nu$ and $\partial_\mu\tilde F^{\mu\nu} = 0$, the latter equivalent to the cyclic Bianchi identity and automatic for $F = dA$; consistency requires $\partial_\nu J^\nu = 0$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|§C1a.7.2]] Maxwell's Equations in Heaviside–Lorentz Form. *Source: the user's notes Ch. 1 §1.7*
 
-^nd-thm-c1a-7-1
+^nd-thm-c1a-7-2
 
 - [ ] Q1 **[state]** State both covariant equations, which of Maxwell's four each contains, and the consistency condition.
 - [ ] Q2 Show that $\partial_\mu\tilde F^{\mu\nu} = 0$ holds identically when $F_{\rho\sigma} = \partial_\rho A_\sigma - \partial_\sigma A_\rho$.
@@ -459,7 +459,7 @@ $\partial_\mu F^{\mu\nu} = J^\nu$ and $\partial_\mu\tilde F^{\mu\nu} = 0$, the l
 ### [B] Duality exchanges E and B; the two invariants ★
 $\tilde F^{0i} = -B^i$, $\tilde F^{ij} = \varepsilon_{ijk}E^k$; $F_{\mu\nu}F^{\mu\nu} = 2(\mathbf B^2 - \mathbf E^2)$, $F_{\mu\nu}\tilde F^{\mu\nu} = -4\,\mathbf E\cdot\mathbf B$ (course; $+$ in PS for the $\varepsilon FF$ form), see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] Duality Exchanges E and B; the Two Invariants. *Source: the user's notes Ch. 1 §1.7*
 
-^nd-thm-c1a-7-2
+^nd-thm-c1a-7-3
 
 - [ ] Q1 **[state]** State the components of $\tilde F$ and the four invariants.
 - [ ] Q2 Compute $\tilde F^{0i}$: which $\rho\sigma$ contribute, and how is $\varepsilon^{0ijk}$ related to $\varepsilon_{ijk}$?
@@ -474,7 +474,7 @@ $\tilde F^{0i} = -B^i$, $\tilde F^{ij} = \varepsilon_{ijk}E^k$; $F_{\mu\nu}F^{\m
 ### [B] E ± iB: the self-dual halves of F ★
 $F \pm i\tilde F$ are the $\mp i$ eigenvectors of duality, carried by $\mathbf E \pm i\mathbf B$; proper Lorentz transformations act on $\mathbf E + i\mathbf B$ by complex orthogonal matrices, parity exchanges the halves, and the two invariants form one complex invariant, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] E ± iB: the Self-Dual Halves of F. *Source: the user's notes Ch. 1 §1.5 (the remark on $\mathbf E \pm i\mathbf B$); items 2–3 derived in the vault*
 
-^nd-thm-c1a-7-3
+^nd-thm-c1a-7-4
 
 - [ ] Q1 **[state]** State the three parts.
 - [ ] Q2 Using $\star\star = -1$, show $F + i\tilde F$ is an eigenvector of $\star$ and find its eigenvalue.
@@ -503,7 +503,7 @@ Under the active boost along $z$, $E'_x = F'_{01} = \Lambda_0{}^0\Lambda_1{}^1F_
 ### [B] The SI–Heaviside–Lorentz dictionary ★
 $\mathbf E_{\rm HL} = \sqrt{\varepsilon_0}\mathbf E_{\rm SI}$, $\mathbf B_{\rm HL} = \mathbf B_{\rm SI}/\sqrt{\mu_0}$, $q_{\rm HL} = q_{\rm SI}/\sqrt{\varepsilon_0}$ turn SI electrodynamics into the rationalized form with $\alpha = e^2/4\pi\hbar c$, see Theorem [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-5|§C1a.7.5]] The SI–Heaviside–Lorentz Dictionary. *Source: the user's pre-course notes §1.2; dictionary derived in the vault*
 
-^nd-thm-c1a-7-4
+^nd-thm-c1a-7-5
 
 - [ ] Q1 **[state]** State the substitutions and the resulting four equations with $c$ kept.
 - [ ] Q2 Substitute into Gauss's law and Ampère–Maxwell's law: where does $\mu_0\varepsilon_0 = 1/c^2$ enter?
@@ -621,9 +621,9 @@ With any number of particles, "one in, one out" happens in two orderings; at spa
 ## Derivations T2
 
 ### [B] The amplitude is the Fourier transform of the phase ★
-$U(t, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}e^{-iE(\mathbf p)t + i\mathbf p\cdot\mathbf x}$, a tempered distribution, with $U(t, \cdot) \to \delta^3$ as $t \to 0$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|§C1a.3.2]] The Amplitude Is the Fourier Transform of the Phase. *Source: Lecture 2 (Sep 2), slide "Quantum Causality of Free Particle I" (insert a complete basis) · the user's notes Ch. 2 §2.2*
+$U(t, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}e^{-iE(\mathbf p)t + i\mathbf p\cdot\mathbf x}$, a tempered distribution, with $U(t, \cdot) \to \delta^3$ as $t \to 0$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|§C1a.3.3]] The Amplitude Is the Fourier Transform of the Phase. *Source: Lecture 2 (Sep 2), slide "Quantum Causality of Free Particle I" (insert a complete basis) · the user's notes Ch. 2 §2.2*
 
-^nd-thm-c1a-3-2
+^nd-thm-c1a-3-3
 
 - [ ] Q1 **[state]** State the formula and the sense in which it holds.
 - [ ] Q2 Insert a complete set of momentum states into $\langle\mathbf x|e^{-i\hat Ht}|\mathbf 0\rangle$: which measure and which overlaps appear?
@@ -632,12 +632,12 @@ $U(t, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}e^{-iE(\mathbf p)t + i\mathbf p\cdot
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13 (distributions, Fourier tricks)
-> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|§C1a.3.2]] The Amplitude Is the Fourier Transform of the Phase, steps 1–3; the Fourier transform on $\mathcal S'$: Definition [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|§CA.3.1]] Fourier Transform in Space and Spacetime.
+> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|§C1a.3.3]] The Amplitude Is the Fourier Transform of the Phase, steps 1–3; the Fourier transform on $\mathcal S'$: Definition [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|§CA.3.1]] Fourier Transform in Space and Spacetime.
 
 ### [A] The nonrelativistic amplitude is nonzero everywhere ★★
-For $E = \mathbf p^2/2m$, $U(t, \mathbf x) = (m/2\pi it)^{3/2}e^{imr^2/2t}$, of modulus $(m/2\pi|t|)^{3/2}$ at every $\mathbf x$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|§C1a.3.3]] The Nonrelativistic Amplitude Is Nonzero Everywhere. *Source: Lecture 2 (Sep 2), slides "Quantum Causality of Free Particle I–II" · the user's notes Ch. 2 §2.2 · PS §2.1 p. 14*
+For $E = \mathbf p^2/2m$, $U(t, \mathbf x) = (m/2\pi it)^{3/2}e^{imr^2/2t}$, of modulus $(m/2\pi|t|)^{3/2}$ at every $\mathbf x$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|§C1a.3.4]] The Nonrelativistic Amplitude Is Nonzero Everywhere. *Source: Lecture 2 (Sep 2), slides "Quantum Causality of Free Particle I–II" · the user's notes Ch. 2 §2.2 · PS §2.1 p. 14*
 
-^nd-thm-c1a-3-3
+^nd-thm-c1a-3-4
 
 - [ ] Q1 **[state]** State the result and what it says about causality.
 - [ ] Q2 Complete the square in $-i\frac{\mathbf p^2}{2m}t + i\mathbf p\cdot\mathbf x$ and do the Gaussian integral in each component.
@@ -647,12 +647,12 @@ For $E = \mathbf p^2/2m$, $U(t, \mathbf x) = (m/2\pi it)^{3/2}e^{imr^2/2t}$, of 
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13
-> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|§C1a.3.3]] The Nonrelativistic Amplitude Is Nonzero Everywhere, steps 1–3 (the Gaussian is the QM free propagator).
+> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|§C1a.3.4]] The Nonrelativistic Amplitude Is Nonzero Everywhere, steps 1–3 (the Gaussian is the QM free propagator).
 
 ### [B] The relativistic amplitude is a boundary value ★
-$U(z, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}e^{-iE_{\mathbf p}z + i\mathbf p\cdot\mathbf x}$ converges and is analytic for $\operatorname{Im}z < 0$, and $U(t, \cdot) = \lim_{\varepsilon\to0^+}U(t - i\varepsilon, \cdot)$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|§C1a.3.4]] The Relativistic Amplitude Is a Boundary Value. *Source: the user's notes Ch. 2 §2.2 (the $t \to t - i\varepsilon$ step)*
+$U(z, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}e^{-iE_{\mathbf p}z + i\mathbf p\cdot\mathbf x}$ converges and is analytic for $\operatorname{Im}z < 0$, and $U(t, \cdot) = \lim_{\varepsilon\to0^+}U(t - i\varepsilon, \cdot)$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude Is a Boundary Value. *Source: the user's notes Ch. 2 §2.2 (the $t \to t - i\varepsilon$ step)*
 
-^nd-thm-c1a-3-4
+^nd-thm-c1a-3-5
 
 - [ ] Q1 **[state]** State the theorem.
 - [ ] Q2 Bound $|e^{-iE_{\mathbf p}z}|$ for $z = a - ib$, $b > 0$, and show the integral converges absolutely.
@@ -661,12 +661,12 @@ $U(z, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}e^{-iE_{\mathbf p}z + i\mathbf p\cdo
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13
-> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|§C1a.3.4]] The Relativistic Amplitude Is a Boundary Value, steps 1–4; boundary values: [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions|§CA.6]] Boundary Values, iε Limits and Fundamental Solutions.
+> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude Is a Boundary Value, steps 1–4; boundary values: [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions|§CA.6]] Boundary Values, iε Limits and Fundamental Solutions.
 
 ### [A] The relativistic amplitude as a radial integral ★★
-$U(z, r) = \frac{1}{2\pi^2r}\int_0^\infty dp\,p\sin(pr)e^{-iE_pz} = \frac{1}{4\pi^2ir}\int_{-\infty}^\infty dp\,p\,e^{i(pr - E_pz)}$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude as a Radial Integral. *Source: Lecture 2 (Sep 2), slide "Relativistic Quantum Causality" · the user's notes Ch. 2 §2.2 · PS §2.1 p. 14 · **[class exercise, Lecture 2]**: the angular integral, "this is something you should probably check"*
+$U(z, r) = \frac{1}{2\pi^2r}\int_0^\infty dp\,p\sin(pr)e^{-iE_pz} = \frac{1}{4\pi^2ir}\int_{-\infty}^\infty dp\,p\,e^{i(pr - E_pz)}$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Relativistic Amplitude as a Radial Integral. *Source: Lecture 2 (Sep 2), slide "Relativistic Quantum Causality" · the user's notes Ch. 2 §2.2 · PS §2.1 p. 14 · **[class exercise, Lecture 2]**: the angular integral, "this is something you should probably check"*
 
-^nd-thm-c1a-3-5
+^nd-thm-c1a-3-6
 
 - [ ] Q1 **[state]** State both radial forms and the sense in which they hold at real $t$.
 - [ ] Q2 Set up spherical coordinates with $\mathbf x$ along the polar axis: what does the integrand depend on, and what does the azimuthal integral give?
@@ -677,7 +677,7 @@ $U(z, r) = \frac{1}{2\pi^2r}\int_0^\infty dp\,p\sin(pr)e^{-iE_pz} = \frac{1}{4\p
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13
-> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude as a Radial Integral, steps 1–3; [[§C1a.3 Causal Structure and the Causality of a Single Particle#^cau-c1a-3-2|§C1a.3, Caution: One symbol, two meanings]]; the boundary value Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|§C1a.3.4]] The Relativistic Amplitude Is a Boundary Value.
+> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Relativistic Amplitude as a Radial Integral, steps 1–3; [[§C1a.3 Causal Structure and the Causality of a Single Particle#^cau-c1a-3-2|§C1a.3, Caution: One symbol, two meanings]]; the boundary value Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude Is a Boundary Value.
 
 ### [PS] The exact radial integral: a Bessel function
 **[class exercise, Lecture 2]** "There's obviously a Bessel function … I won't do that because that should be your own joy and homework." The exact amplitude is $U = 2i\partial_tD_W$ with the Wightman function in closed form, see Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|§C2b.3.7]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function and Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|§C2b.3.8]] The Relativistic Amplitude at Spacelike Separation (digest B). *Source: Lecture 2 (Sep 2), slide "Saddle Point Approximation" ("Details in HW4") and transcript*
@@ -687,9 +687,9 @@ $U(z, r) = \frac{1}{2\pi^2r}\int_0^\infty dp\,p\sin(pr)e^{-iE_pz} = \frac{1}{4\p
 → drilled as [[PHY 513 PS Drill#^ps4-3-a|PS4.3(a)]] (the massive Wightman function with $K_1$); the link to $U$ is in NOTES-DIGEST-B (T6)
 
 ### [A] The leak is exponentially small but not zero ★★
-For $r > |t|$ and $m\rho \gg 1$, $\rho = \sqrt{r^2 - t^2}$, $U \simeq \frac{i m^{3/2}t}{(2\pi\rho)^{3/2}\rho}e^{-m\rho}$: nonzero outside the cone, damped over the Compton wavelength, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Leak Is Exponentially Small but Not Zero. *Source: Lecture 2 (Sep 2), slides "Saddle Point Approximation", "Quantum Causality id Violated" · the user's notes Ch. 2 §2.2 · PS §2.1 p. 14*
+For $r > |t|$ and $m\rho \gg 1$, $\rho = \sqrt{r^2 - t^2}$, $U \simeq \frac{i m^{3/2}t}{(2\pi\rho)^{3/2}\rho}e^{-m\rho}$: nonzero outside the cone, damped over the Compton wavelength, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero. *Source: Lecture 2 (Sep 2), slides "Saddle Point Approximation", "Quantum Causality id Violated" · the user's notes Ch. 2 §2.2 · PS §2.1 p. 14*
 
-^nd-thm-c1a-3-6
+^nd-thm-c1a-3-7
 
 - [ ] Q1 **[state]** State the leading behaviour of $U$ outside the light cone and its decay length.
 - [ ] Q2 Write the phase $S(p) = pr - t\sqrt{p^2 + m^2}$ and find its stationary points. Why is the root real inside the cone and imaginary outside?
@@ -701,7 +701,7 @@ For $r > |t|$ and $m\rho \gg 1$, $\rho = \sqrt{r^2 - t^2}$, $U \simeq \frac{i m^
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13 (saddle point on a contour)
-> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Leak Is Exponentially Small but Not Zero, steps 1–7; the same exponent: Example [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|§CA.5.1]] The Exponent of the Wightman Function Outside the Light Cone; exact form Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|§C2b.3.8]] The Relativistic Amplitude at Spacelike Separation.
+> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero, steps 1–7; the same exponent: Example [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|§CA.5.1]] The Exponent of the Wightman Function Outside the Light Cone; exact form Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|§C2b.3.8]] The Relativistic Amplitude at Spacelike Separation.
 
 # T3. Classical field theory: action, Euler–Lagrange, Hamiltonian, mass dimension
 
@@ -3120,7 +3120,7 @@ $U(z, \mathbf x) = 2i\partial_zW(z, \mathbf x)$ and $U = 2i\partial_tD_W$ in $\m
 
 > [!tip]- Hints: route in the notes
 > - Technique: K9.
-> - Step 1: derivation steps 1–2; the amplitude is Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|§C1a.3.4]] The Relativistic Amplitude Is a Boundary Value.
+> - Step 1: derivation steps 1–2; the amplitude is Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude Is a Boundary Value.
 
 ### [A] The relativistic single-particle amplitude outside the light cone ★★
 
@@ -3151,7 +3151,7 @@ For $r > |t|$ and $m\rho \gg 1$, $U = \frac{im^{3/2}t}{(2\pi\rho)^{3/2}\rho}e^{-
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13.
-> - Step 1: derivation steps 1–3; Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|§CA.5.3]] Properties of $K_\nu$ part 2; Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Leak Is Exponentially Small but Not Zero.
+> - Step 1: derivation steps 1–3; Theorem [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|§CA.5.3]] Properties of $K_\nu$ part 2; Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero.
 
 ### [B] The single-particle amplitude inside the light cone ★
 
@@ -5137,7 +5137,7 @@ In an inner product with $\mathbf J_\pm$ Hermitian, $\mathbf J$ is Hermitian and
 
 All ten generators $\hat J^{\mu\nu}$, $\hat P^\mu$ of a unitary $U(\Lambda, a)$ are Hermitian, boosts included, and $U^{-1} = \mathbb 1 + \frac i2\omega_{\mu\nu}\hat J^{\mu\nu} - i\varepsilon_\mu\hat P^\mu$ to first order, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-3|§C3.4.3]] The Generators Are Hermitian. *Source: the user's notes Ch. 7 §7.6*
 
-^nd-thm-c3-4-2
+^nd-thm-c3-4-3
 
 - [ ] Q1 **[state]** State the theorem and the first-order inverse.
 - [ ] Q2 Take the adjoint of the first-order expansion. Why are $\omega_{\mu\nu}$ and $\varepsilon_\mu$ unaffected?
@@ -5152,7 +5152,7 @@ All ten generators $\hat J^{\mu\nu}$, $\hat P^\mu$ of a unitary $U(\Lambda, a)$ 
 
 $U^{-1}\hat P^\rho U = \Lambda^\rho{}_\mu\hat P^\mu$ and the tensor law of $\hat J$ give $[\hat J^{\mu\nu}, \hat P^\rho] = i(g^{\nu\rho}\hat P^\mu - g^{\mu\rho}\hat P^\nu)$, $[\hat P^\mu, \hat P^\nu] = 0$; in three-dimensional form $[\hat K^i, \hat P^j] = -i\delta_{ij}\hat H$, $[\hat K^i, \hat H] = -i\hat P^i$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-6|§C3.4.6]] The Poincaré Algebra and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-5|§C3.4.5]] How the Generators Transform. *Source: the user's notes Ch. 7 §7.6 · Yu §3.2*
 
-^nd-thm-c3-4-5
+^nd-thm-c3-4-6
 
 - [ ] Q1 **[state]** Write the commutators $[\hat J^{\mu\nu}, \hat P^\rho]$ and $[\hat P^\mu, \hat P^\nu]$.
 - [ ] Q2 Conjugate a translation by a Lorentz transformation in the group. What is $U^{-1}(\Lambda)\hat P^\rho U(\Lambda)$?
@@ -5169,7 +5169,7 @@ $U^{-1}\hat P^\rho U = \Lambda^\rho{}_\mu\hat P^\mu$ and the tensor law of $\hat
 
 $\hat P^2$ commutes with all ten generators and is Poincaré invariant; a Lorentz-invariant vacuum eigenvector of $\hat P^\mu$ has $p_0^\mu = 0$, so the generators are the normal-ordered $\hat H$, $\hat{\mathbf P}$, see Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-7|§C3.4.7]] P² Is a Casimir Operator and Theorem [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^thm-c3-4-8|§C3.4.8]] An Invariant Vacuum Has Zero Four-Momentum. *Source: the user's notes Ch. 7 §7.6*
 
-^nd-thm-c3-4-6
+^nd-thm-c3-4-7
 
 - [ ] Q1 **[state]** State both theorems.
 - [ ] Q2 Lower an index in $[\hat P, \hat J]$ and apply the product rule to $[\hat P_\mu\hat P^\mu, \hat J^{\rho\sigma}]$. Why do the two terms cancel?
@@ -8351,7 +8351,7 @@ $E'_x = \gamma(E_x + vB_y)$ (active boost by $+v\hat{\mathbf z}$, the vault) and
 > - [[§C1a.4 The Lorentz Group#^cau-c1a-4-1|§C1a.4, Caution: Active and passive readings]], [[§C1a.7 Relativistic Electrodynamics in Index Form#^cau-c1a-7-2|§C1a.7, Caution: The sign of the v × B term]].
 
 ### [B] The two radial forms of the amplitude
-$\frac{1}{2\pi^2r}\int_0^\infty dp\,p\sin(pr)e^{-iE_pz} = \frac{1}{4\pi^2ir}\int_{-\infty}^\infty dp\,p\,e^{i(pr - E_pz)}$ for $\operatorname{Im}z < 0$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude as a Radial Integral. *Source: Lecture 2 (Sep 2), slide "Relativistic Quantum Causality"; PS (2.3)*
+$\frac{1}{2\pi^2r}\int_0^\infty dp\,p\sin(pr)e^{-iE_pz} = \frac{1}{4\pi^2ir}\int_{-\infty}^\infty dp\,p\,e^{i(pr - E_pz)}$ for $\operatorname{Im}z < 0$, see Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Relativistic Amplitude as a Radial Integral. *Source: Lecture 2 (Sep 2), slide "Relativistic Quantum Causality"; PS (2.3)*
 
 ^nd-eq-t2-1
 
@@ -8361,7 +8361,7 @@ $\frac{1}{2\pi^2r}\int_0^\infty dp\,p\sin(pr)e^{-iE_pz} = \frac{1}{4\pi^2ir}\int
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13
-> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude as a Radial Integral, step 3.
+> - Derivation of Theorem [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Relativistic Amplitude as a Radial Integral, step 3.
 
 ### [B] The single-particle amplitude and the Wightman function
 $U(t, \mathbf x) = 2i\partial_tD_W(t, \mathbf x)$: the leak of the single particle is the Wightman function's, which field theory keeps as a correlation while the commutator vanishes, see Theorem [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|§C2b.3.7]] The Single-Particle Amplitude Is a Time Derivative of the Wightman Function and Theorem [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|§C2b.4.7]] Forward and Backward Amplitudes. *Source: the user's notes Ch. 2 §2.2, Ch. 5*

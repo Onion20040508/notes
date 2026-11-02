@@ -408,13 +408,13 @@ What is the Wightman function of [[§C2b.2 The Wightman Function|§C2b.2]] at a 
 The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]) is the same mode integral as $D_W$ with the weight $1/2E_{\mathbf p}$ replaced by $1$. [[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]] showed with the lecture's saddle point that it leaks outside the light cone; with the Wightman function in hand, its exact values everywhere follow by one time derivative of the closed forms above.
 
 > [!theorem] Theorem §C2b.3.7: The Single-Particle Amplitude Is a Time Derivative of the Wightman Function
-> With $U(z, \mathbf x)$ the analytic single-particle amplitude of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]] and $W$ the analytic Wightman function of [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], for $\operatorname{Im}z < 0$,
+> With $U(z, \mathbf x)$ the analytic single-particle amplitude of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]] and $W$ the analytic Wightman function of [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], for $\operatorname{Im}z < 0$,
 >
 > $$
 > U(z, \mathbf x) = 2i\,\partial_zW(z, \mathbf x), \qquad U = 2i\,\partial_tD_W \quad\text{in } \mathcal S'(\mathbb R^4).
 > $$
 >
-> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]), not a field; *applies:* exact, an identity of the analytic functions $U$ and $W$; $D_W$ is read as the free field's vacuum value in $|0\rangle$ ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
+> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]]), not a field; *applies:* exact, an identity of the analytic functions $U$ and $W$; $D_W$ is read as the free field's vacuum value in $|0\rangle$ ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
 >
 > *Source: derived here, from the user's PHY 513 notes, Ch. 2 §2.2 (Step 2 of Derivation "The relativistic amplitude in closed form": $U_E = -2\partial_\tau D_E$) and Ch. 5 §5.4*
 
@@ -423,7 +423,7 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 > [!derivation]- Derivation
 > **Step 1** (relation to $W$). $W(z, \mathbf x) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}e^{-iE_{\mathbf p}z + i\mathbf p\cdot\mathbf x}$. Differentiating under the integral (allowed by Step 2 of Derivation §C2b.2.5): $\partial_z\frac{e^{-iE_{\mathbf p}z}}{2E_{\mathbf p}} = \frac{-iE_{\mathbf p}}{2E_{\mathbf p}}e^{-iE_{\mathbf p}z} = -\frac i2e^{-iE_{\mathbf p}z}$. So $\partial_zW = -\frac i2U$, i.e. $U = 2i\,\partial_zW$.
 >
-> **Step 2** (on $\mathbb R^4$). $U = \lim U(t - i\varepsilon, \mathbf x)$ in $\mathcal S'(\mathbb R^4)$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]]). By [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], $D_W = \lim W(t - i\varepsilon, \mathbf x)$ in $\mathcal S'(\mathbb R^4)$, and the distributional derivative is continuous under such limits ([[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]): $\partial_tD_W = \lim\,(\partial_zW)(t - i\varepsilon, \cdot) = -\frac i2\lim U(t - i\varepsilon, \cdot) = -\frac i2U$.
+> **Step 2** (on $\mathbb R^4$). $U = \lim U(t - i\varepsilon, \mathbf x)$ in $\mathcal S'(\mathbb R^4)$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]]). By [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], $D_W = \lim W(t - i\varepsilon, \mathbf x)$ in $\mathcal S'(\mathbb R^4)$, and the distributional derivative is continuous under such limits ([[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]): $\partial_tD_W = \lim\,(\partial_zW)(t - i\varepsilon, \cdot) = -\frac i2\lim U(t - i\varepsilon, \cdot) = -\frac i2U$.
 >
 > **What the derivation shows.**
 > - $U$ and $D_W$ are the same mode integral with weights $1$ and $1/2E_{\mathbf p}$: the difference is the relativistic normalization of the states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]).
@@ -432,7 +432,7 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 
 ^der-c2b-3-7
 
-*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]
+*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]
 
 > [!theorem] Theorem §C2b.3.8: The Relativistic Amplitude at Spacelike Separation
 > For $r > |t|$, with $\rho = \sqrt{r^2 - t^2} = \sqrt{-x^2}$,
@@ -443,7 +443,7 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 >
 > a smooth function there, purely imaginary and odd in $t$, depending on the point only through the invariant $\rho$ and the factor $t$. Equivalently (cut representation, absolutely convergent), $U = \frac{i}{2\pi^2r}\int_m^\infty d\varrho\,\varrho\,e^{-\varrho r}\sinh\bigl(t\sqrt{\varrho^2 - m^2}\bigr)$. For $m\rho \ll 1$, $U \simeq it/\pi^2\rho^4$; for $m = 0$ the formula $U = it/\pi^2(r^2 - t^2)^2$ is exact at every point off the light cone.
 >
-> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]), not a field; *applies:* exact, $m > 0$, states of weight $1$ (not relativistically normalized).
+> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]]), not a field; *applies:* exact, $m > 0$, states of weight $1$ (not relativistically normalized).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (Derivations "The relativistic amplitude in closed form" and "The same result directly from the radial integral"; checks (i)–(ii)) · PHY 513 Lecture 2, Part A ("The exact radial integral: a Bessel function")*
 
@@ -470,7 +470,7 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 >
 > **Step 7** ($m = 0$). Theorem §C2b.3.2 gives $W = \frac{1}{4\pi^2(r^2 - z^2)}$, so $\partial_zW = \frac{2z}{4\pi^2(r^2 - z^2)^2}$ and $U = 2i\,\partial_zW = \frac{iz}{\pi^2(r^2 - z^2)^2}$. The boundary value at $z = t - i\varepsilon$ is $\frac{it}{\pi^2(r^2 - t^2)^2}$ at every point with $r \neq |t|$, inside the cone as well, since only $(r^2 - z^2)^2$ appears.
 >
-> ⚑ By-product: for $m = 0$ the leak outside the cone is a power law with no length scale at all; for $m > 0$ it is cut off at $\rho \sim 1/m$ → [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]].
+> ⚑ By-product: for $m = 0$ the leak outside the cone is a power law with no length scale at all; for $m > 0$ it is cut off at $\rho \sim 1/m$ → [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|Theorem §C1a.3.7]].
 >
 > **What the derivation shows.**
 > - Relativistic kinematics did not cure the leak: $K_2 > 0$, so $U \ne 0$ at every spacelike point with $t \neq 0$.
@@ -484,7 +484,7 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 > [!derivation]- Derivation (second route: around the branch cut, in real variables)
 > This is the user's head-on computation of the lecture's integral; it shows where the spacelike condition enters. Take $r > |t|$ and keep $z = t - i\varepsilon$, $\varepsilon > 0$, until Step 5.
 >
-> **Step 1** (start). By [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], $U(z, r) = \frac{1}{4\pi^2ir}\int_{-\infty}^\infty dp\;p\,e^{i(pr - zE_p)}$, absolutely convergent.
+> **Step 1** (start). By [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]], $U(z, r) = \frac{1}{4\pi^2ir}\int_{-\infty}^\infty dp\;p\,e^{i(pr - zE_p)}$, absolutely convergent.
 >
 > **Step 2** (the branch). As a function of complex $p$, $E_p = \sqrt{p^2 + m^2}$ has branch points at $\pm im$; take the cuts along the imaginary axis from $im$ to $i\infty$ and from $-im$ to $-i\infty$, with the branch positive on the real axis. On the upper half-plane minus its cut $E_p$ is analytic, $E_p = p + O(1/p)$ for $\operatorname{Re}p > 0$ and $E_p = -p + O(1/p)$ for $\operatorname{Re}p < 0$ as $|p| \to \infty$. On the lips, $p = i\varrho \pm 0$ with $\varrho > m$: $E_p = +is$ just right of the cut and $-is$ just left, $s = \sqrt{\varrho^2 - m^2} > 0$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], second route, Step 5).
 >
@@ -510,7 +510,7 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 > U(t, \mathbf x) = \frac{i}{2\pi^2r}\int_m^\infty d\varrho\;\varrho\,e^{-\varrho r}\sinh\bigl(t\sqrt{\varrho^2 - m^2}\bigr) \qquad (r > |t|).
 > $$
 >
-> ⚑ By-product: this is the cut representation stated in [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]]; in it $U$ is manifestly imaginary, odd in $t$, zero at $t = 0$ for $r > 0$ (as $U(0, \cdot) = \delta^3$ requires) and absolutely convergent; its exponent $-\varrho r + t\sqrt{\varrho^2 - m^2}$ is real, and its maximum is the saddle point → [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]], second route.
+> ⚑ By-product: this is the cut representation stated in [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]]; in it $U$ is manifestly imaginary, odd in $t$, zero at $t = 0$ for $r > 0$ (as $U(0, \cdot) = \delta^3$ requires) and absolutely convergent; its exponent $-\varrho r + t\sqrt{\varrho^2 - m^2}$ is real, and its maximum is the saddle point → [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|Theorem §C1a.3.7]], second route.
 >
 > **Step 6** (hyperbolic variables). Substitute $\varrho = m\cosh w$, $w \in (0, \infty)$: $s = m\sinh w$, $d\varrho = m\sinh w\,dw$, so $\varrho\,d\varrho = m^2\cosh w\sinh w\,dw = \frac{m^2}{2}\sinh2w\,dw$. Encode the point by $r = \rho\cosh\chi$, $t = \rho\sinh\chi$, $\tanh\chi = t/r$, possible because $r > |t|$. Then $\varrho r \mp ts = m\rho(\cosh w\cosh\chi \mp \sinh w\sinh\chi) = m\rho\cosh(w \mp \chi)$, and with $\sinh(ts) = \frac12(e^{ts} - e^{-ts})$,
 >
@@ -535,7 +535,7 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (Derivation "The same result directly from the radial integral", Steps 1–3, and Fig. 2.2)*
 
-*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]
+*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]
 
 > [!theorem] Theorem §C2b.3.9: The Spacelike Amplitude at Large Distance
 > For $r > |t|$ and $m\rho \gg 1$, $\rho = \sqrt{r^2 - t^2}$,
@@ -544,9 +544,9 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 > U(t, \mathbf x) = \frac{i\,m^{3/2}\,t}{(2\pi\rho)^{3/2}\,\rho}\,e^{-m\rho}\Bigl(1 + \frac{15}{8m\rho} + O\bigl((m\rho)^{-2}\bigr)\Bigr) ,
 > $$
 >
-> and $U \neq 0$ at every spacelike point with $t \neq 0$. The leading term is the saddle-point result of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]].
+> and $U \neq 0$ at every spacelike point with $t \neq 0$. The leading term is the saddle-point result of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|Theorem §C1a.3.7]].
 >
-> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]), not a field; *applies:* $m > 0$, asymptotic in $m\rho \gg 1$.
+> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]]), not a field; *applies:* $m > 0$, asymptotic in $m\rho \gg 1$.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (check (iii) of Derivation "The relativistic amplitude in closed form") · PHY 513 Lecture 2, Part A ("Quantum Causality is Violated") · PS §2.1, p. 14*
 
@@ -578,9 +578,9 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 > U(t, \mathbf x) = \frac{m^2\,t}{4\pi\tau^2}\,H^{(2)}_2(m\tau)\quad (t > 0), \qquad U(-t, \mathbf x) = \overline{U(t, \mathbf x)} ,
 > $$
 >
-> an oscillating function, $U \simeq \frac{m^{3/2}t}{(2\pi\tau)^{3/2}\tau}\,e^{-i(m\tau - 5\pi/4)}$ for $t > 0$, $m\tau \gg 1$. On the light cone $U$ is singular and is defined only as the boundary value of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]].
+> an oscillating function, $U \simeq \frac{m^{3/2}t}{(2\pi\tau)^{3/2}\tau}\,e^{-i(m\tau - 5\pi/4)}$ for $t > 0$, $m\tau \gg 1$. On the light cone $U$ is singular and is defined only as the boundary value of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]].
 >
-> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]), not a field; *applies:* exact, $m > 0$; the asymptotic form for $m\tau \gg 1$.
+> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]]), not a field; *applies:* exact, $m > 0$; the asymptotic form for $m\tau \gg 1$.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (check (iv) of Derivation "The relativistic amplitude in closed form"; connection formula from DLMF §10.27, checked numerically there) · DLMF §10.17 (Hankel asymptotics)*
 
@@ -597,11 +597,11 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 >
 > The connection formula $K_\nu(ix) = \frac\pi2(-i)^{\nu+1}H^{(2)}_\nu(x)$ for $x > 0$ ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]], 3) with $\nu = 2$ and $(-i)^3 = i$ gives $K_2(im\tau) = \frac{i\pi}{2}H^{(2)}_2(m\tau)$, so $U = -\frac{im^2t}{2\pi^2\tau^2}\cdot\frac{i\pi}{2}H^{(2)}_2 = \frac{m^2t}{4\pi\tau^2}H^{(2)}_2(m\tau)$.
 >
-> **Step 3** ($t < 0$). By [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]], $\overline{U(t, \mathbf x)} = \int\frac{d^3p}{(2\pi)^3}e^{+iE_{\mathbf p}t - i\mathbf p\cdot\mathbf x} = U(-t, -\mathbf x)$ (complex conjugation of the transform of $e^{-iE_{\mathbf p}t}$, an identity in $\mathcal S'$). $E_{\mathbf p}$ is even in $\mathbf p$, so $U(-t, \cdot)$ is even in $\mathbf x$ (substitute $\mathbf p \to -\mathbf p$, Jacobian $1$: [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1), and $U(-t, -\mathbf x) = U(-t, \mathbf x)$.
+> **Step 3** ($t < 0$). By [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], $\overline{U(t, \mathbf x)} = \int\frac{d^3p}{(2\pi)^3}e^{+iE_{\mathbf p}t - i\mathbf p\cdot\mathbf x} = U(-t, -\mathbf x)$ (complex conjugation of the transform of $e^{-iE_{\mathbf p}t}$, an identity in $\mathcal S'$). $E_{\mathbf p}$ is even in $\mathbf p$, so $U(-t, \cdot)$ is even in $\mathbf x$ (substitute $\mathbf p \to -\mathbf p$, Jacobian $1$: [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1), and $U(-t, -\mathbf x) = U(-t, \mathbf x)$.
 >
 > **Step 4** (late proper times). $H^{(2)}_2(x) \simeq \sqrt{2/\pi x}\,e^{-i(x - 5\pi/4)}$ for $x \to \infty$ (DLMF §10.17), so $|U| \simeq \frac{m^2t}{4\pi\tau^2}\sqrt{\frac{2}{\pi m\tau}} = \frac{\sqrt2\,m^{3/2}t}{4\pi^{3/2}\tau^{5/2}} = \frac{m^{3/2}t}{(2\pi\tau)^{3/2}\tau}$, using $\sqrt2/4 = 2^{-3/2}$.
 >
-> **Step 5** (the cone). The function of Step 3 of Derivation §C2b.3.8 blows up as $s \to 0$: by Step 6 there, $U \simeq iz/\pi^2(r^2 - z^2)^2$ near the cone, a double pole in $r^2 - z^2$. At real $t$ it has no value on the cone and exists there only as the limit in $\mathcal S'$ of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]]; by [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]] its singular part is $2i\partial_t$ of the light-cone singularity of $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 3).
+> **Step 5** (the cone). The function of Step 3 of Derivation §C2b.3.8 blows up as $s \to 0$: by Step 6 there, $U \simeq iz/\pi^2(r^2 - z^2)^2$ near the cone, a double pole in $r^2 - z^2$. At real $t$ it has no value on the cone and exists there only as the limit in $\mathcal S'$ of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]]; by [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]] its singular part is $2i\partial_t$ of the light-cone singularity of $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 3).
 >
 > **What the derivation shows.**
 > - Inside and outside the cone are the two sides of the cut of one analytic function: $K_2$ decay outside becomes Hankel oscillation inside, as $K_1$ does for $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]]).
@@ -609,15 +609,15 @@ The amplitude $U$ of one relativistic particle ([[§C1a.3 Causal Structure and t
 
 ^der-c2b-3-10
 
-*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]
+*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-4|Theorem §CA.5.4]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]
 
 ![[ph-qft-c1-3-1.svg]]
-*The single-particle amplitude at fixed $mt = 3$ (units $m = 1$): inside the cone (shaded) the Hankel form of Theorem §C2b.3.10, outside the $K_2$ form of Theorem §C2b.3.8 with its leading asymptotic term (dashed, Theorem §C2b.3.9; Theorem §C1a.3.6). It is singular on the cone and leaks outside it over the Compton wavelength $1/m$. Adapted from the user's PHY 513 notes, Fig. 2.3; recomputed from the closed forms, which were checked against the mode integral at complex $t$.*
+*The single-particle amplitude at fixed $mt = 3$ (units $m = 1$): inside the cone (shaded) the Hankel form of Theorem §C2b.3.10, outside the $K_2$ form of Theorem §C2b.3.8 with its leading asymptotic term (dashed, Theorem §C2b.3.9; Theorem §C1a.3.7). It is singular on the cone and leaks outside it over the Compton wavelength $1/m$. Adapted from the user's PHY 513 notes, Fig. 2.3; recomputed from the closed forms, which were checked against the mode integral at complex $t$.*
 
 > [!example] Example §C2b.3.1: Units Restored in the Single-Particle Amplitude
 > Restore $\hbar$ and $c$ in $U = \frac{im^2t}{2\pi^2\rho^2}K_2(m\rho)$ and in the nonrelativistic prefactor $(m/2\pi it)^{3/2}$, and read off the range of the leak for an electron.
 >
-> **Step 1** (target). $U(t, \cdot) \to \delta^3$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]]), so $U$ has dimension $L^{-3}$, mass dimension $3$ ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 4).
+> **Step 1** (target). $U(t, \cdot) \to \delta^3$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]]), so $U$ has dimension $L^{-3}$, mass dimension $3$ ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 4).
 >
 > **Step 2** (the argument first). $K_2$ needs a pure number ([[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 2): $m\rho$ is $ML$, and the length built from $m$ is $\hbar/mc$, so $m\rho \to mc\rho/\hbar$, the separation in reduced Compton wavelengths, with $\rho = \sqrt{r^2 - c^2t^2}$ ($x^0 = ct$).
 >

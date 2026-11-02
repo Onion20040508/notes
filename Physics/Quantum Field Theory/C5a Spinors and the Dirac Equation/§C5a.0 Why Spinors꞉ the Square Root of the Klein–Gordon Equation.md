@@ -7,7 +7,7 @@ section: C5a.0
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C4.9 Vector-Field Propagators]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5a.1 Spinor Space and the Clifford Action]] →
+← [[§C4.11 Vector-Field Propagators]] · ↑ [[· C5a Spinors and the Dirac Equation]] · [[§C5a.1 Spinor Space and the Clifford Action]] →
 
 *Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.2, pp. 40–44, eqs. (3.22)–(3.23), (3.28)–(3.32), (3.36)–(3.44), and §3.4, pp. 49–50 · the user's PHY 513 notes, Ch. 7 §7.4.6, Ch. 8 §8.1, §8.6, §8.9–§8.11, Ch. 9 §9.6, Ch. 10 §10.5 · PHY 513 Lectures 7–10 (Larsen) · Yu Zhao-Huan, 量子场论讲义, §1.1, §5.2–§5.3, eqs. (5.110)–(5.115) · the user's pre-course notes, §5.1 ("A $2\times2$ realization fails"), §5.3 · Axler, Linear Algebra Done Right (the vault's Linear Algebra notes), linked where used · the forcing direction of the arguments and their organization written here.*
 

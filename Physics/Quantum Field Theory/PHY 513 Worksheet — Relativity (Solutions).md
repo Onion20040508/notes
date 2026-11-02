@@ -662,7 +662,7 @@ Solutions to [[PHY 513 Worksheet — Relativity]], folded so that you can try fi
 >
 > **Step 2.** $\hbar c/(m_\pi c^2) = 197.3\ \text{MeV fm}/139.6\ \text{MeV} = 1.413$ fm: the range of the pion's correlations, the Yukawa range of the nuclear force.
 >
-> *Checked against:* [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]], 2 (the exponent rule), [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 2 ("$e^{-mt}$ … hides a scale"), [[§C1a.2 Natural Units and Dimensional Analysis#^rem-c1a-2-2|§C1a.2, Remark: Mass dimensions of common quantities]] (length $\hbar/mc$), [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]] (the $e^{-m\rho}$ leak, damped over the Compton wavelength $1/m$); numerical check.
+> *Checked against:* [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]], 2 (the exponent rule), [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|Theorem §C1a.2.3]], 2 ("$e^{-mt}$ … hides a scale"), [[§C1a.2 Natural Units and Dimensional Analysis#^rem-c1a-2-2|§C1a.2, Remark: Mass dimensions of common quantities]] (length $\hbar/mc$), [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|Theorem §C1a.3.7]] (the $e^{-m\rho}$ leak, damped over the Compton wavelength $1/m$); numerical check.
 
 ^sol-wr-12-b
 

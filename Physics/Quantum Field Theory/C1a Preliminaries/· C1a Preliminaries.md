@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C1a Preliminaries
 ↑ [[Quantum Field Theory]] · [[· C1b Classical Field Theory]] →
 
-**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (22), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (4), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (20), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (7), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (45), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (18)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (27), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (25), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (55), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (39), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (41), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (16), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (12), [[· CA Mathematical Methods|CA Mathematical Methods]] (2), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (20)
+**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (23), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (5), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (22), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (7), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (45), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (18)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (27), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (25), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (55), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (40), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (41), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (16), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (12), [[· CA Mathematical Methods|CA Mathematical Methods]] (2), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (20)
 
 ## Sections
 - [[§C1a.1 Why Quantum Field Theory]] — 
@@ -30,11 +30,11 @@ tags: [chapter, quantum-field-theory]
 - [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|§C1a.2.1]] The Exponent Rule
 - [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-2|§C1a.2.2]] Natural Units Are a Change of Basis Followed by a Quotient
 - [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-3|§C1a.2.3]] Rules of Dimensional Counting
-- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|§C1a.3.2]] The Amplitude Is the Fourier Transform of the Phase
-- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|§C1a.3.3]] The Nonrelativistic Amplitude Is Nonzero Everywhere
-- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|§C1a.3.4]] The Relativistic Amplitude Is a Boundary Value
-- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude as a Radial Integral
-- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Leak Is Exponentially Small but Not Zero
+- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|§C1a.3.3]] The Amplitude Is the Fourier Transform of the Phase
+- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|§C1a.3.4]] The Nonrelativistic Amplitude Is Nonzero Everywhere
+- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|§C1a.3.5]] The Relativistic Amplitude Is a Boundary Value
+- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|§C1a.3.6]] The Relativistic Amplitude as a Radial Integral
+- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|§C1a.3.7]] The Leak Is Exponentially Small but Not Zero
 - [[§C1a.4 The Lorentz Group#^thm-c1a-4-1|§C1a.4.1]] Invariant Volume Elements
 - [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|§C1a.4.2]] The Orbits of SO⁺(1,3) on Spacetime
 - [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|§C1a.4.3]] Parity and Time Reversal Permute the Orbits
@@ -60,3 +60,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-3|§C1a.7.3]] Duality Exchanges E and B; the Two Invariants
 - [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-4|§C1a.7.4]] E ± iB: the Self-Dual Halves of F
 - [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-5|§C1a.7.5]] The SI–Heaviside–Lorentz Dictionary
+
+## Models
+- [[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|§C1a.3.2]] One Free Particle in Single-Particle Quantum Mechanics
+- [[§C1a.7 Relativistic Electrodynamics in Index Form#^mod-c1a-7-1|§C1a.7.1]] The Maxwell Field with an External Current

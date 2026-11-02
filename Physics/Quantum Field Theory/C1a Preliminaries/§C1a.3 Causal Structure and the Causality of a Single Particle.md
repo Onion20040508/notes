@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 Can one relativistic particle propagate without leaving its light cone? The causal classes of spacetime and their invariance are Relativity's ([[§B1.3 Causal Structure and Proper Time#^def-b1-3-1|REL Def. §B1.3.1]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]]), the nonrelativistic propagator is [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]], and saddle points are [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions|§CA.5]]. This section (Lecture 2, Part A) states causality as a principle, defines the single-particle amplitude $U$, writes it as a boundary value and a radial integral, and shows with the lecture's saddle point that it leaks outside the light cone over a Compton wavelength. The exact amplitude needs the Wightman function: it is $2i\partial_t D_W$, and its closed forms are [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]]–[[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-10|Theorem §C2b.3.10]]; that its leak is exactly the part field theory keeps as a correlation while the commutator vanishes is [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|Theorem §C2b.4.7]].
 
-**Setup.** [[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]] is kinematic and holds in any relativistic theory, classical or quantum. Every other box is about **one free particle in single-particle quantum mechanics**, not a field: the Hilbert space $L^2(\mathbb R^3)$, states $|\mathbf x\rangle$ and $|\mathbf p\rangle$ with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$ and $\langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$ (weight $1$, not the relativistic normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), and $\hat H = E(\hat{\mathbf P})$, nonrelativistic ($E = \mathbf p^2/2m$) or relativistic ($E = E_{\mathbf p}$, $m > 0$). There is no vacuum, and the particle number is fixed at one. The results are exact except [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]], the leading term of a saddle point. The same question for the free quantum field in the free vacuum $|0\rangle$ is answered in [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]]–[[§C2b.4 Microcausality and the Commutator Function|§C2b.4]].
+**Setup.** [[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]] is kinematic and holds in any relativistic theory, classical or quantum. Every other box is about **one free particle in single-particle quantum mechanics** ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]]), not a field: the Hilbert space $L^2(\mathbb R^3)$, states $|\mathbf x\rangle$ and $|\mathbf p\rangle$ with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$ and $\langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$ (weight $1$, not the relativistic normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), and $\hat H = E(\hat{\mathbf P})$, nonrelativistic ($E = \mathbf p^2/2m$) or relativistic ($E = E_{\mathbf p}$, $m > 0$). There is no vacuum, and the particle number is fixed at one. The results are exact except [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|Theorem §C1a.3.7]], the leading term of a saddle point. The same question for the free quantum field in the free vacuum $|0\rangle$ is answered in [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]]–[[§C2b.4 Microcausality and the Commutator Function|§C2b.4]].
 
 *Conventions* ([[Larsen PHY 513]]): $\hbar = c = 1$, $g = \operatorname{diag}(+, -, -, -)$, $x^2 = t^2 - \mathbf x^2$, $E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $m > 0$ unless stated otherwise.
 
@@ -68,6 +68,23 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 
 ^cau-c1a-3-2
 
+> [!model] Model §C1a.3.2: One Free Particle in Single-Particle Quantum Mechanics
+> One spinless particle, not a field. The Hilbert space is $L^2(\mathbb R^3)$, with position and momentum states normalized as
+>
+> $$
+> \langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}, \qquad \langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p'), \qquad \int\frac{d^3p}{(2\pi)^3}\,|\mathbf p\rangle\langle\mathbf p| = 1 ,
+> $$
+>
+> and the Hamiltonian is a real function of the momentum operator, $\hat H = E(\hat{\mathbf P})$:
+> - nonrelativistic: $E(\mathbf p) = \mathbf p^2/2m$;
+> - relativistic: $E(\mathbf p) = E_{\mathbf p} = \sqrt{\mathbf p^2 + m^2}$, $m > 0$.
+>
+> *Assumptions:* the particle number is fixed at one (no creation or annihilation, no vacuum); free (no potential); weight $1$ per momentum state, not the relativistic $\sqrt{2E_{\mathbf p}}$ of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]; $\hbar = c = 1$. The free quantum field replaces it in [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]]–[[§C2b.4 Microcausality and the Commutator Function|§C2b.4]].
+>
+> *Source: PHY 513 Lecture 2, Part A ("Quantum Causality of Free Particle I") · the user's PHY 513 notes, Ch. 2 §2.2 (eqs. for $U$ and the completeness relation) · PS §2.1, pp. 13–14*
+
+^mod-c1a-3-2
+
 > [!definition] Definition §C1a.3.1: Single-Particle Propagation Amplitude
 > For one particle with Hamiltonian $\hat H = E(\hat{\mathbf P})$, a function of the momentum operator, the amplitude to propagate from the origin to $\mathbf x$ in time $t$ is
 >
@@ -77,13 +94,13 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 >
 > with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$ and $\langle\mathbf p|\mathbf p'\rangle = (2\pi)^3\delta^3(\mathbf p - \mathbf p')$. Since $|\mathbf x\rangle$ is not a normalizable state ([[§44 Position Eigenstates and Continuous Resolutions#^prop-44-3|556 Prop. §44.3]]), $U(t, \cdot)$ is defined as the kernel of $e^{-i\hat Ht}$: $(e^{-i\hat Ht}\psi)(\mathbf x) = \int d^3y\,U(t, \mathbf x - \mathbf y)\,\psi(\mathbf y)$. Causality ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]]) would require $U(t, \mathbf x) = 0$ for $|\mathbf x| > |t|$.
 >
-> *Model:* one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ on $L^2(\mathbb R^3)$, not a field; *applies:* any real dispersion $E(\mathbf p)$, with states $|\mathbf x\rangle$, $|\mathbf p\rangle$ of weight $1$ (not the relativistic normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); the field-theory counterpart is $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]]).
+> *Model:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]], one free particle in single-particle quantum mechanics, $\hat H = E(\hat{\mathbf P})$ on $L^2(\mathbb R^3)$, not a field; *applies:* any real dispersion $E(\mathbf p)$, with states $|\mathbf x\rangle$, $|\mathbf p\rangle$ of weight $1$ (not the relativistic normalization of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); the field-theory counterpart is $D_W$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]]).
 >
 > *Source: PHY 513 Lecture 2, Part A ("Quantum Causality of Free Particle I") · the user's PHY 513 notes, Ch. 2 §2.2 (eqs. for $U$ and the completeness relation) · PS §2.1, p. 13*
 
 ^def-c1a-3-1
 
-> [!theorem] Theorem §C1a.3.2: The Amplitude Is the Fourier Transform of the Phase
+> [!theorem] Theorem §C1a.3.3: The Amplitude Is the Fourier Transform of the Phase
 > For each real $t$, $U(t, \cdot)$ is the tempered distribution on $\mathbb R^3$
 >
 > $$
@@ -92,11 +109,11 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 >
 > the inverse Fourier transform of the bounded function $e^{-iE(\mathbf p)t}$, acting on test functions $f$ by $U(t, \cdot)[f] = \int\frac{d^3p}{(2\pi)^3}e^{-iE(\mathbf p)t}\tilde f(-\mathbf p)$, $\tilde f(\mathbf k) = \int d^3x\,f(\mathbf x)e^{-i\mathbf k\cdot\mathbf x}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]). As $t \to 0$, $U(t, \cdot) \to \delta^3$ in $\mathcal S'(\mathbb R^3)$.
 >
-> *Model:* as in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]; *applies:* any real $E(\mathbf p)$, every real $t$, exact (an identity in $\mathcal S'(\mathbb R^3)$).
+> *Model:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]]; *applies:* any real $E(\mathbf p)$, every real $t$, exact (an identity in $\mathcal S'(\mathbb R^3)$).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.2 (insertion of momentum states; check $U \to \delta^3$) · stated here as distributions*
 
-^thm-c1a-3-2
+^thm-c1a-3-3
 
 > [!derivation]- Derivation
 > **Step 1** (the operator on a wave packet). For $\psi \in \mathcal S(\mathbb R^3)$ write $\psi(\mathbf y) = \int\frac{d^3p}{(2\pi)^3}\tilde\psi(\mathbf p)e^{i\mathbf p\cdot\mathbf y}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]]). $\hat H = E(\hat{\mathbf P})$ acts on the plane wave $e^{i\mathbf p\cdot\mathbf y}$ as multiplication by $E(\mathbf p)$ (this is what a function of $\hat{\mathbf P}$ means), so
@@ -114,13 +131,13 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 > **What the derivation shows.**
 > - $U$ is a distribution in $\mathbf x$ for every $t$, whatever $E(\mathbf p)$; whether it is a function, and where it vanishes, is decided by the form of $E$.
 > - Its time derivative is $-i$ times the transform of $E(\mathbf p)e^{-iE(\mathbf p)t}$: $i\partial_tU = \hat HU$, the Schrödinger equation for the kernel.
-> - Used next: the nonrelativistic case (Theorem §C1a.3.3) and the relativistic one (Theorems §C1a.3.4–§C1a.3.6; exactly, [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]]–[[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|Theorem §C2b.4.7]]).
+> - Used next: the nonrelativistic case (Theorem §C1a.3.4) and the relativistic one (Theorems §C1a.3.5–§C1a.3.7; exactly, [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]]–[[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|Theorem §C2b.4.7]]).
 
-^der-c1a-3-2
+^der-c1a-3-3
 
 *Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
 
-> [!theorem] Theorem §C1a.3.3: The Nonrelativistic Amplitude Is Nonzero Everywhere
+> [!theorem] Theorem §C1a.3.4: The Nonrelativistic Amplitude Is Nonzero Everywhere
 > For $E = \mathbf p^2/2m$ and $t \neq 0$,
 >
 > $$
@@ -129,28 +146,28 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 >
 > the amplitude is nonzero at every point after any time, and at fixed $\mathbf x \neq 0$ its modulus grows as $t \to 0$, although $U(t, \cdot) \to \delta^3$ as a distribution.
 >
-> *Model:* as in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]], with $E = \mathbf p^2/2m$; *applies:* nonrelativistic, $t \neq 0$, exact.
+> *Model:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]], with $E = \mathbf p^2/2m$; *applies:* nonrelativistic, $t \neq 0$, exact.
 >
 > *Source: PHY 513 Lecture 2, Part A ("Quantum Causality of Free Particle I–II") · the user's PHY 513 notes, Ch. 2 §2.2 (eq. for $U_{\text{NR}}$ and Derivation "The Gaussian integral behind the nonrelativistic amplitude") · PS §2.1, p. 14*
 
-^thm-c1a-3-3
+^thm-c1a-3-4
 
 > [!derivation]- Derivation
 > **Step 1** (the formula). $U(t, \mathbf x)$ for $\hat H = \hat{\mathbf P}^2/2m$ is the free propagator $K(\mathbf x, t; \mathbf 0, 0)$ of [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]] with $\hbar = 1$, $T = t$, $\mathbf x' = \mathbf 0$. The computation there, a three-dimensional Gaussian with complex variance completed to a square ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], 1 with $s = it/2m$, continued to the imaginary axis as the Fresnel limit $t \to t - i0$, which also fixes the branch of the root), is the one in the user's notes and is not repeated.
 >
 > **Step 2** (the modulus). For real $t$, $|e^{imr^2/2t}| = 1$ and $|(m/2\pi it)^{3/2}| = (m/2\pi|t|)^{3/2}$, independent of $\mathbf x$.
 >
-> **Step 3** (growth and the delta limit). At fixed $\mathbf x \ne 0$ the modulus $\propto |t|^{-3/2}$ grows as $t \to 0$, while by [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]] the distribution tends to $\delta^3$. The two are compatible: the phase $mr^2/2t$ oscillates ever faster in $r$, and against a test function the oscillation wins (Step 3 of Derivation §C1a.3.2 is the proof).
+> **Step 3** (growth and the delta limit). At fixed $\mathbf x \ne 0$ the modulus $\propto |t|^{-3/2}$ grows as $t \to 0$, while by [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]] the distribution tends to $\delta^3$. The two are compatible: the phase $mr^2/2t$ oscillates ever faster in $r$, and against a test function the oscillation wins (Step 3 of Derivation §C1a.3.3 is the proof).
 >
 > **What the derivation shows.**
 > - The support of $U(t, \cdot)$ is all of $\mathbb R^3$ for every $t \neq 0$: propagation is instantaneous, which violates [[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|Principle §C1a.3.1]].
-> - The obvious objection, that $\mathbf p^2/2m$ is not relativistic, is answered by Theorem §C1a.3.6 (and exactly by [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]]).
+> - The obvious objection, that $\mathbf p^2/2m$ is not relativistic, is answered by Theorem §C1a.3.7 (and exactly by [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]]).
 
-^der-c1a-3-3
+^der-c1a-3-4
 
-*Uses:* [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]]
+*Uses:* [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]]
 
-> [!theorem] Theorem §C1a.3.4: The Relativistic Amplitude Is a Boundary Value
+> [!theorem] Theorem §C1a.3.5: The Relativistic Amplitude Is a Boundary Value
 > Let $E = E_{\mathbf p}$. The integral
 >
 > $$
@@ -159,49 +176,49 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 >
 > converges absolutely and is analytic for $\operatorname{Im}z < 0$, and $U(t, \cdot) = \lim_{\varepsilon\to0^+}U(t - i\varepsilon, \cdot)$ in $\mathcal S'(\mathbb R^3)$ and, read as a distribution in $(t, \mathbf x)$, in $\mathcal S'(\mathbb R^4)$.
 >
-> *Model:* as in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]], with $E = E_{\mathbf p}$, $m > 0$; *applies:* exact.
+> *Model:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]], with $E = E_{\mathbf p}$, $m > 0$; *applies:* exact.
 >
 > *Source: derived here, from the user's PHY 513 notes, Ch. 2 §2.2 (Step 1 of Derivation "The relativistic amplitude in closed form": $t \to t - i\varepsilon$)*
 
-^thm-c1a-3-4
+^thm-c1a-3-5
 
 > [!derivation]- Derivation
 > **Step 1** (the modulus). Write $z = a - ib$, $b > 0$. Then $|e^{-iE_{\mathbf p}z}| = e^{-bE_{\mathbf p}}$, and since $E_{\mathbf p} \ge p$, $\int d^3p\,e^{-bE_{\mathbf p}} \le 4\pi\int_0^\infty p^2e^{-bp}\,dp = 8\pi/b^3 < \infty$.
 >
 > **Step 2** (analyticity). The $z$-derivative of the integrand is $-iE_{\mathbf p}$ times it, of modulus $E_{\mathbf p}e^{-bE_{\mathbf p}} \le (p + m)e^{-b_0p}$ for $b \ge b_0 > 0$, integrable uniformly in $z$. By [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], 2, applied to $\partial/\partial a$ and $\partial/\partial b$ separately, $U$ has continuous partial derivatives obtained under the integral; since the integrand satisfies $\partial_b = -i\partial_a$ (the Cauchy–Riemann equations for $z = a - ib$), so does $U$, and the complex derivative exists ([[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]]). (The same estimate with the weight $1/2E_{\mathbf p}$ is Steps 1–3 of [[§C2b.2 The Wightman Function#^der-c2b-2-5|Derivation §C2b.2.5]], for the Wightman function.)
 >
-> **Step 3** (the boundary value). For $f \in \mathcal S(\mathbb R^3)$ and $\varepsilon > 0$ the double integral over $(\mathbf x, \mathbf p)$ converges absolutely, so (Fubini) $\int d^3x\,f(\mathbf x)\,U(t - i\varepsilon, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}e^{-iE_{\mathbf p}t}e^{-\varepsilon E_{\mathbf p}}\tilde f(-\mathbf p)$. The integrand is bounded by $|\tilde f(-\mathbf p)|$, independently of $\varepsilon$; by dominated convergence the limit is $\int\frac{d^3p}{(2\pi)^3}e^{-iE_{\mathbf p}t}\tilde f(-\mathbf p) = U(t, \cdot)[f]$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]]).
+> **Step 3** (the boundary value). For $f \in \mathcal S(\mathbb R^3)$ and $\varepsilon > 0$ the double integral over $(\mathbf x, \mathbf p)$ converges absolutely, so (Fubini) $\int d^3x\,f(\mathbf x)\,U(t - i\varepsilon, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}e^{-iE_{\mathbf p}t}e^{-\varepsilon E_{\mathbf p}}\tilde f(-\mathbf p)$. The integrand is bounded by $|\tilde f(-\mathbf p)|$, independently of $\varepsilon$; by dominated convergence the limit is $\int\frac{d^3p}{(2\pi)^3}e^{-iE_{\mathbf p}t}\tilde f(-\mathbf p) = U(t, \cdot)[f]$ ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]]).
 >
-> ⚑ By-product: "$t \to t - i\varepsilon$" is not a regulator added by hand but the definition of $U$ at real $t$, and it works because every $E_{\mathbf p} > 0$; the Wightman function will be defined by the same prescription ([[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]]) → stated in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]].
+> ⚑ By-product: "$t \to t - i\varepsilon$" is not a regulator added by hand but the definition of $U$ at real $t$, and it works because every $E_{\mathbf p} > 0$; the Wightman function will be defined by the same prescription ([[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]]) → stated in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]].
 >
 > **Step 4** (on $\mathbb R^4$). Read $U$ as a distribution on $\mathbb R^4$ by $U[f] = \int dt\,U(t, \cdot)[f(t, \cdot)]$; Step 3 with $f \in \mathcal S(\mathbb R^4)$ and dominated convergence in $(t, \mathbf p)$ gives $U = \lim U(t - i\varepsilon, \mathbf x)$ in $\mathcal S'(\mathbb R^4)$.
 >
 > **What the derivation shows.**
 > - The amplitude is a boundary value of an analytic function, because every $E_{\mathbf p} > 0$; the analytic continuation is what makes the radial integral below absolutely convergent.
 > - $U$ is the same mode integral as the Wightman function with the weight $1/2E_{\mathbf p}$ replaced by $1$; the relation $U = 2i\partial_tD_W$ and every closed form of $U$ follow once $D_W$ is known ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-7|Theorem §C2b.3.7]]).
-> - Used next: the radial integral (Theorem §C1a.3.5) and the saddle point (Theorem §C1a.3.6).
+> - Used next: the radial integral (Theorem §C1a.3.6) and the saddle point (Theorem §C1a.3.7).
 
-^der-c1a-3-4
+^der-c1a-3-5
 
-*Uses:* [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]]
+*Uses:* [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]]
 
-> [!theorem] Theorem §C1a.3.5: The Relativistic Amplitude as a Radial Integral
+> [!theorem] Theorem §C1a.3.6: The Relativistic Amplitude as a Radial Integral
 > For $\operatorname{Im}z < 0$ and $r > 0$,
 >
 > $$
 > U(z, r) = \frac{1}{2\pi^2r}\int_0^\infty dp\;p\sin(pr)\,e^{-iE_pz} = \frac{1}{4\pi^2ir}\int_{-\infty}^{\infty}dp\;p\,e^{i(pr - E_pz)},
 > $$
 >
-> both absolutely convergent. At real $t$ these are the lecture's and PS's formulas, which do not converge as integrals (the integrand grows like $p$) and mean the limit $z = t - i\varepsilon$, $\varepsilon \to 0^+$, of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]].
+> both absolutely convergent. At real $t$ these are the lecture's and PS's formulas, which do not converge as integrals (the integrand grows like $p$) and mean the limit $z = t - i\varepsilon$, $\varepsilon \to 0^+$, of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]].
 >
-> *Model:* as in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]], with $E = E_{\mathbf p}$, $m > 0$; *applies:* $r > 0$, exact for $\operatorname{Im}z < 0$, and at real $t$ as the limit of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]].
+> *Model:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]], with $E = E_{\mathbf p}$, $m > 0$; *applies:* $r > 0$, exact for $\operatorname{Im}z < 0$, and at real $t$ as the limit of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]].
 >
 > *Source: PHY 513 Lecture 2, Part A ("Relativistic Quantum Causality") · the user's PHY 513 notes, Ch. 2 §2.2 (Derivation "Reduction to a radial integral", eqs. for the radial and folded forms) · PS §2.1, p. 14*
 
-^thm-c1a-3-5
+^thm-c1a-3-6
 
 > [!derivation]- Derivation
-> **Step 1** (spherical coordinates). The integrand of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]], 1 depends on the direction of $\mathbf p$ only through $\mathbf p\cdot\mathbf x = pr\cos\theta$, $\theta$ the angle between $\mathbf p$ and $\mathbf x$. Choose the polar axis along $\mathbf x$ (a rotation of the integration variable, Jacobian $1$: [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]); $d^3p = p^2\,dp\,\sin\theta\,d\theta\,d\varphi$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]). All integrals converge absolutely for $\operatorname{Im}z < 0$ (Step 1 of Derivation §C1a.3.4), so they may be done in any order.
+> **Step 1** (spherical coordinates). The integrand of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], 1 depends on the direction of $\mathbf p$ only through $\mathbf p\cdot\mathbf x = pr\cos\theta$, $\theta$ the angle between $\mathbf p$ and $\mathbf x$. Choose the polar axis along $\mathbf x$ (a rotation of the integration variable, Jacobian $1$: [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]); $d^3p = p^2\,dp\,\sin\theta\,d\theta\,d\varphi$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]). All integrals converge absolutely for $\operatorname{Im}z < 0$ (Step 1 of Derivation §C1a.3.5), so they may be done in any order.
 >
 > **Step 2** (the angles). The $\varphi$ integral gives $2\pi$. With $u = \cos\theta$, $du = -\sin\theta\,d\theta$, $\theta: 0 \to \pi$ becomes $u: 1 \to -1$, and the sign of $du$ restores the order: $\int_0^\pi\sin\theta\,e^{ipr\cos\theta}d\theta = \int_{-1}^1e^{ipru}du = \frac{e^{ipr} - e^{-ipr}}{ipr} = \frac{2\sin pr}{pr}$. So
 >
@@ -218,13 +235,13 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 > **What the derivation shows.**
 > - The lecture's remark that "subtleties about convergence are OK for spatial separation" is made precise in two places: at $\operatorname{Im}z < 0$ there are no subtleties, and the limit to real $t$ is an ordinary function exactly off the light cone ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-10|Theorem §C2b.3.10]]).
 > - The same reduction with the weight $1/2E_p$ is the equal-time Wightman function ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], second route, Steps 2–3).
-> - Used next: the saddle point of Theorem §C1a.3.6, and the second route of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]].
+> - Used next: the saddle point of Theorem §C1a.3.7, and the second route of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]].
 
-^der-c1a-3-5
+^der-c1a-3-6
 
-*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]
+*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]
 
-> [!theorem] Theorem §C1a.3.6: The Leak Is Exponentially Small but Not Zero
+> [!theorem] Theorem §C1a.3.7: The Leak Is Exponentially Small but Not Zero
 > For $r > |t|$ and $m\rho \gg 1$, $\rho = \sqrt{r^2 - t^2}$, to leading order,
 >
 > $$
@@ -233,16 +250,16 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 >
 > not zero at spacelike points with $t \neq 0$, and damped over the Compton wavelength $1/m$. In particular $U \propto e^{-m\sqrt{\mathbf x^2 - t^2}}$ (PS §2.1). The exact amplitude, which vanishes at no spacelike point with $t \ne 0$, and the next term $1 + 15/8m\rho$ are [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]] and [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-9|Theorem §C2b.3.9]].
 >
-> *Model:* as in [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]], with $E = E_{\mathbf p}$, $m > 0$; *applies:* spacelike points $r > \lvert t\rvert$, leading order in $1/m\rho$ (saddle point); the exact amplitude is [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]].
+> *Model:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]], with $E = E_{\mathbf p}$, $m > 0$; *applies:* spacelike points $r > \lvert t\rvert$, leading order in $1/m\rho$ (saddle point); the exact amplitude is [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]].
 >
 > *Source: PHY 513 Lecture 2, Part A ("Saddle Point Approximation", "Quantum Causality is Violated") · the user's PHY 513 notes, Ch. 2 §2.2 (check (iii); Derivation "Saddle point of the relativistic amplitude") · PS §2.1, p. 14*
 
-^thm-c1a-3-6
+^thm-c1a-3-7
 
 > [!derivation]- Derivation (the saddle point, as in the lecture)
-> The lecture needs only the exponent, and a saddle point produces it without the closed form. Take $0 < t < r$ (for $t < 0$ use $U(-t, \mathbf x) = \overline{U(t, \mathbf x)}$: conjugating the mode integral of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-2|Theorem §C1a.3.2]] gives $U(-t, -\mathbf x)$, and the substitution $\mathbf p \to -\mathbf p$ (Jacobian $1$, $E_{-\mathbf p} = E_{\mathbf p}$) shows that $U(-t, \cdot)$ is even in $\mathbf x$; at $t = 0$, $U = 0$ off the origin).
+> The lecture needs only the exponent, and a saddle point produces it without the closed form. Take $0 < t < r$ (for $t < 0$ use $U(-t, \mathbf x) = \overline{U(t, \mathbf x)}$: conjugating the mode integral of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]] gives $U(-t, -\mathbf x)$, and the substitution $\mathbf p \to -\mathbf p$ (Jacobian $1$, $E_{-\mathbf p} = E_{\mathbf p}$) shows that $U(-t, \cdot)$ is even in $\mathbf x$; at $t = 0$, $U = 0$ off the origin).
 >
-> **Step 1** (the phase). By [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], $U = \frac{1}{4\pi^2ir}\int dp\;p\,e^{iS(p)}$ with $S(p) = pr - t\sqrt{p^2 + m^2}$ (the limit $z = t - i\varepsilon$ understood). This is the phase of the Wightman function's [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|Example §CA.5.1]]; only the prefactor differs, $p$ here against $p/\sqrt{p^2 + m^2}$ there.
+> **Step 1** (the phase). By [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]], $U = \frac{1}{4\pi^2ir}\int dp\;p\,e^{iS(p)}$ with $S(p) = pr - t\sqrt{p^2 + m^2}$ (the limit $z = t - i\varepsilon$ understood). This is the phase of the Wightman function's [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|Example §CA.5.1]]; only the prefactor differs, $p$ here against $p/\sqrt{p^2 + m^2}$ there.
 >
 > **Step 2** (stationary points). $S'(p) = r - \frac{pt}{\sqrt{p^2 + m^2}} = 0$ gives $r^2(p^2 + m^2) = p^2t^2$, i.e. $p^2(r^2 - t^2) = -m^2r^2$. Inside the cone ($r < t$) the root is real and $r/t = p/E_p$, the velocity of a classical particle of momentum $p$: stationary phase on the real axis ([[§C4.2 The Feynman Path Integral#^thm-c4-2-5|QM Theorem §C4.2.5]]) gives an oscillating amplitude dominated by the classical path. Outside, no real momentum has velocity $r/t > 1$, and the saddle moves to $p_0 = imr/\rho$ (Example §CA.5.1, Step 2).
 >
@@ -260,7 +277,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 >
 > the leading term of the theorem, phase included.
 >
-> **Step 7** (why the steepest descent is legitimate). $|p_0| = mr/\rho > m$, so the saddle lies on the cut of $\sqrt{p^2 + m^2}$, where the integrand is not analytic; PS's "we may freely push the contour upward" passes over this. On the cut representation of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]] (Step 5 of its second route, which uses only the radial integral of Theorem §C1a.3.5) the exponent $h(\varrho) = -\varrho r + t\sqrt{\varrho^2 - m^2}$ of the dominant term $\frac12e^{ts}$ is real: $h'(\varrho) = -r + t\varrho/s = 0$ gives $\varrho_0 = mr/\rho$, $s_0 = mt/\rho$, $h(\varrho_0) = -mr^2/\rho + mt^2/\rho = -m\rho$, and $h''(\varrho_0) = -tm^2/s_0^3 = -\rho^3/mt^2$. Laplace's method ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-2|Theorem §CA.5.2]], 1; [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-5-2|Remark: When the saddle sits on a branch cut]]) gives $\int\varrho\,e^{-\varrho r}\sinh(ts)\,d\varrho \simeq \frac12\varrho_0\,e^{-m\rho}\sqrt{2\pi/|h''(\varrho_0)|} = \frac{mr}{2\rho}\,e^{-m\rho}\,t\sqrt{\frac{2\pi m}{\rho^3}}$, and multiplying by $\frac{i}{2\pi^2r}$ reproduces Step 6.
+> **Step 7** (why the steepest descent is legitimate). $|p_0| = mr/\rho > m$, so the saddle lies on the cut of $\sqrt{p^2 + m^2}$, where the integrand is not analytic; PS's "we may freely push the contour upward" passes over this. On the cut representation of [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]] (Step 5 of its second route, which uses only the radial integral of Theorem §C1a.3.6) the exponent $h(\varrho) = -\varrho r + t\sqrt{\varrho^2 - m^2}$ of the dominant term $\frac12e^{ts}$ is real: $h'(\varrho) = -r + t\varrho/s = 0$ gives $\varrho_0 = mr/\rho$, $s_0 = mt/\rho$, $h(\varrho_0) = -mr^2/\rho + mt^2/\rho = -m\rho$, and $h''(\varrho_0) = -tm^2/s_0^3 = -\rho^3/mt^2$. Laplace's method ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-2|Theorem §CA.5.2]], 1; [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-5-2|Remark: When the saddle sits on a branch cut]]) gives $\int\varrho\,e^{-\varrho r}\sinh(ts)\,d\varrho \simeq \frac12\varrho_0\,e^{-m\rho}\sqrt{2\pi/|h''(\varrho_0)|} = \frac{mr}{2\rho}\,e^{-m\rho}\,t\sqrt{\frac{2\pi m}{\rho^3}}$, and multiplying by $\frac{i}{2\pi^2r}$ reproduces Step 6.
 >
 > **What the derivation shows.**
 > - The saddle alone fixes the exponent $e^{-m\rho}$; the prefactor needs the Gaussian width and agrees with the closed form.
@@ -268,9 +285,9 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 >
 > *Source: PHY 513 Lecture 2, Part A ("Saddle Point Approximation") · the user's PHY 513 notes, Ch. 2 §2.2 (Derivation "Saddle point of the relativistic amplitude", including "The prefactor") · PS §2.1, p. 14*
 
-^der-c1a-3-6
+^der-c1a-3-7
 
-*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]] (cut representation, Step 7), [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|Example §CA.5.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-2|Theorem §CA.5.2]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-5-2|Remark: When the saddle sits on a branch cut]], [[§C4.2 The Feynman Path Integral#^thm-c4-2-5|QM Theorem §C4.2.5]]
+*Uses:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]] (cut representation, Step 7), [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|Example §CA.5.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-2|Theorem §CA.5.2]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-5-2|Remark: When the saddle sits on a branch cut]], [[§C4.2 The Feynman Path Integral#^thm-c4-2-5|QM Theorem §C4.2.5]]
 
 > [!remark] Remark: How field theory repairs causality
 > The calculation assumed one particle at the origin and one at $\mathbf x$, with single-particle mechanics in between. With any number of particles ([[§C1a.1 Why Quantum Field Theory#^law-c1a-1-1|Law §C1a.1.1]]) the net process "one in, one out" happens in two ways: annihilate at one point and create at the other, in either order. For spacelike points there is no invariant order: some observers see the origin evolve into $\mathbf x$, others $\mathbf x$ into the origin, and a theory that answered which would be wrong even classically. Quantum field theory adds both amplitudes, and the criterion for influence becomes the commutator of fields, which vanishes at spacelike separation ([[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]); for a charged field the second ordering is the antiparticle ([[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-2|Remark: Two orderings that cancel; why antiparticles must exist]]). [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-7|Theorem §C2b.4.7]] is this bookkeeping done on $U$ itself.
