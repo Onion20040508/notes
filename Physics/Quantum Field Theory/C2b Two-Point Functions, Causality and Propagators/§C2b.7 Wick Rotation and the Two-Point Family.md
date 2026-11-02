@@ -37,6 +37,8 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 > \int\frac{d^4p}{(2\pi)^4}\,\frac{i\,F(p)}{p^2 - m^2 + i\varepsilon} = \int\frac{d^4p_E}{(2\pi)^4}\,\frac{F(ip_4, \mathbf p)}{p_E^2 + m^2} .
 > $$
 >
+> *Model:* any; *applies:* any integrand with the stated analyticity and decay, independent of the dynamics (loops: [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-3|Theorem §C6a.10.3]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.10 (Wick rotation, Caution "When the rotation is legitimate") · PHY 513 Lecture 6, "Another perspective: the Euclidean Green's Function"*
 
 ^thm-c2b-7-1
@@ -97,6 +99,8 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 > $$
 >
 > even in $\xi$, real at spacelike separation, and with the same branch for both signs of $\xi^0$ inside the cone: the Feynman prescription is the infinitesimal Wick rotation $t \to t(1 - i\varepsilon)$.
+>
+> *Model:* any; *applies:* any theory (a statement about the function); its reading as a vacuum value in $|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.10 ("The Feynman function in position space")*
 

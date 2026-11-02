@@ -207,6 +207,50 @@ and a diagram is its drawing:
 
 ^rem-c6a-8-1
 
+The other theories of Problem Set 8 used in this chapter, whose vertices the next remark treats:
+
+> [!model] Model §C6a.8.2: Cubic–Quartic Theory
+> One real scalar field $\phi$ with
+>
+> $$
+> \mathcal L = \tfrac12(\partial_\mu\phi)^2 - \tfrac12m^2\phi^2 - \frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4 ,
+> $$
+>
+> couplings of mass dimension $[g] = 1$, $[\lambda] = 0$ ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-2|Theorem §C6a.1.2]]); vertices $-ig$ and $-i\lambda$ ([[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-3|Theorem §C6b.8.3]]).
+>
+> *Assumptions:*
+> 1. Those of [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], assumptions 2–5 (permanent interaction, gapped unique $|\Omega\rangle$, isolated one-particle states, free Fock space as the interaction-picture space).
+> 2. $\lambda > 0$, so the potential $V = \phi^2\bigl(\frac{m^2}{2} + \frac{g}{6}\phi + \frac{\lambda}{24}\phi^2\bigr)$ is bounded below; its unique global minimum is $\phi = 0$ iff $g^2 < 3\lambda m^2$ (the bracket has no real zero; derived here, not from a source).
+> 3. No symmetry $\phi \to -\phi$: correlators of an odd number of fields need not vanish (unlike [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-5|Theorem §C6a.8.5]]).
+> 4. $g$, $\lambda$ small; diagrams with $n_3$ cubic and $n_4$ quartic vertices are of order $g^{n_3}\lambda^{n_4}$, and $\lambda$ counts as $g^2/m^2$ (Problem Set 8, Problem 2).
+>
+> An instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]].
+>
+> *Source: PHY 513, Problem Set 8, Problem 2 (statement: the Lagrangian, the vertices, "to think of λ as being of order g²/m²") · PS §4.1, p. 77 (a pure φ³ potential is unbounded below)*
+
+^mod-c6a-8-2
+
+> [!model] Model §C6a.8.3: The Complex Scalar with a Quartic Self-Interaction
+> One complex scalar field $\phi$, with $\phi^\dagger$ an independent canonical field ([[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]):
+>
+> $$
+> \mathcal L = \partial_\mu\phi^\dagger\,\partial^\mu\phi - m^2\phi^\dagger\phi - \frac{\lambda}{4}(\phi^\dagger\phi)^2 ;
+> $$
+>
+> particles and antiparticles of the same mass $m$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]]); vertex $-i\lambda$ with two $\phi$ and two $\phi^\dagger$ legs ([[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-3|Theorem §C6b.8.3]]); lines oriented from $\phi^\dagger$ to $\phi$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3).
+>
+> *Assumptions:*
+> 1. Those of [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], assumptions 2–5.
+> 2. $\lambda > 0$, $m^2 > 0$: the potential $m^2\phi^\dagger\phi + \frac\lambda4(\phi^\dagger\phi)^2$ is bounded below with its minimum at $\phi = 0$.
+> 3. $\mathcal L$ is invariant under $\phi \to e^{i\alpha}\phi$, so the charge of [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]] is conserved by the interaction.
+> 4. $\lambda$ small.
+>
+> An instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]].
+>
+> *Source: PHY 513, Problem Set 8, Problem 1(b) (statement: the Lagrangian (1), propagator, vertex $-i\lambda$, "the lines are oriented in the direction of the charge flow")*
+
+^mod-c6a-8-3
+
 > [!remark] Remark: The same proof for other vertices
 > Nothing in [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] used the number 4 except as the number of legs per vertex, nor the reality of the field except through which pairs of fields have a nonzero contraction. In each case below the prefactor of the Dyson series is the inverse order of the relabelling group ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 1), so Steps 5–8 go through with $|G|$ in place of $n!\,(4!)^n$:
 >
@@ -227,7 +271,7 @@ and a diagram is its drawing:
 
 ## The rules
 
-> [!theorem] Theorem §C6a.8.2: Feynman Rules for Correlation Functions in Position Space
+> [!theorem] Theorem §C6a.8.4: Feynman Rules for Correlation Functions in Position Space
 > In $\phi^4$ theory the numerator of the master formula with external points $x_1, \dots, x_r$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) is, as a formal power series in $\lambda$,
 >
 > $$
@@ -249,7 +293,7 @@ and a diagram is its drawing:
 >
 > *Source: PHY 513 Lecture 14, slide 16 ("all diagrams with two external points and any number of internal points where four lines end") · the user's PHY 513 notes, Ch. 14 §14.4 (Principle "Feynman rules for correlation functions, position space"; a principle there, derived here) · PS §4.4, p. 94, rules 1–4 · Yu §7.3, eq. (7.120)*
 
-^thm-c6a-8-2
+^thm-c6a-8-4
 
 > [!derivation]- Derivation
 > **Step 1** (expand). By [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]] and Step 1 of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]],
@@ -276,7 +320,7 @@ and a diagram is its drawing:
 > - The rules are a theorem about the Dyson series and Wick's theorem; the only convention in them is the $\frac{1}{4!}$ of the Lagrangian.
 > - As $T \to \infty(1 - i\varepsilon)$ the time integrals of the vertices run along a tilted line; that this is consistent with the rules is [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|Theorem §C6a.11.1]].
 
-^der-c6a-8-2
+^der-c6a-8-4
 
 *Uses:* [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]
 
@@ -287,14 +331,14 @@ and a diagram is its drawing:
 
 ^rem-c6a-8-3
 
-> [!theorem] Theorem §C6a.8.3: Correlation Functions of an Odd Number of Fields Vanish in φ⁴ Theory
+> [!theorem] Theorem §C6a.8.5: Correlation Functions of an Odd Number of Fields Vanish in φ⁴ Theory
 > For $r$ odd, the numerator $\mathcal N_E$ vanishes at every order in $\lambda$, and so does $\langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_r)\}|\Omega\rangle$.
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; every order in $\lambda$, numerator and $\langle\Omega|\cdots|\Omega\rangle$; it uses $\phi \to -\phi$, so it fails with a $\phi^3$ term.
 >
 > *Source: PS §4.4, p. 99 ("in $\phi^4$ theory, all correlation functions of an odd number of fields vanish") · proof written out here, both of PS's arguments*
 
-^thm-c6a-8-3
+^thm-c6a-8-5
 
 > [!derivation]- Derivation
 > **Step 1** (Wick). At order $n$ the free vacuum value has $N = r + 4n$ fields, an odd number for $r$ odd. Every term of Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]) with $k$ brackets leaves $N - 2k \ge 1$ fields in the colons, so
@@ -322,7 +366,7 @@ and a diagram is its drawing:
 > **What the derivation shows.**
 > - The interaction has an even number of fields, a reflection of the symmetry $\phi \to -\phi$ of $\phi^4$ theory ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]).
 
-^der-c6a-8-3
+^der-c6a-8-5
 
 *Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]
 

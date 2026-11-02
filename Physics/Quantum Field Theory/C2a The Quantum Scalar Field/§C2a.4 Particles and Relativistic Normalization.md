@@ -69,6 +69,8 @@ What do the states of the free real field describe? The ladder relations of [[§
 > the quanta obey Bose–Einstein statistics.
 > 2. One mode holds any number of quanta: for a normalized wave packet, $\hat c^\dagger = \int\frac{d^3p}{(2\pi)^3}\psi(\mathbf p)\hat a^\dagger_{\mathbf p}$ with $\int\frac{d^3p}{(2\pi)^3}|\psi|^2 = 1$, $[\hat c, \hat c^\dagger] = 1$ and $(\hat c^\dagger)^N|0\rangle/\sqrt{N!}$ is a normalized state of $N$ particles all in the same one-particle state.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 ("Bose statistics"; "Macroscopic occupation") · PS §2.3, p. 22 · Yu §2.3.4, eqs. (2.170)–(2.172); the packet form written here*
 
 ^thm-c2a-4-2
@@ -135,6 +137,8 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 > |\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle, \qquad \langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}\,(2\pi)^3\delta^3(\mathbf p - \mathbf q), \qquad |\mathbf p_1, \dots, \mathbf p_n\rangle = \sqrt{2E_{\mathbf p_1}}\cdots\sqrt{2E_{\mathbf p_n}}\;\hat a^\dagger_{\mathbf p_1}\cdots \hat a^\dagger_{\mathbf p_n}|0\rangle  .
 > $$
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; the same normalization is used for the asymptotic particles of an interacting theory ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.9, eq. (relnorm) · PHY 513 Lecture 4, Part C · PS §2.3, eqs. (2.35)–(2.36) · Yu §2.3.4, eqs. (2.152), (2.157)*
 
 ^def-c2a-4-1
@@ -146,6 +150,8 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 > \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}} = \int\frac{d^4p}{(2\pi)^4}\,2\pi\,\delta(p^2 - m^2)\,\theta(p^0), \qquad \mathbb 1_{1\text{-particle}} = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,|\mathbf p\rangle\langle\mathbf p| .
 > $$
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; the measure itself is kinematics, valid in any theory ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^def-c6b-6-1|Def. §C6b.6.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.9, eq. (invmeasure) · PS §2.3, eqs. (2.39)–(2.40) · Yu §2.3.4, eqs. (2.161), (2.167)*
 
 ^def-c2a-4-2
@@ -154,6 +160,8 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 > Under proper orthochronous Lorentz transformations, for $m > 0$:
 > 1. $\theta(p^0)$ is invariant on the mass shell $p^2 = m^2$;
 > 2. for every scalar $F$, $\displaystyle\int\frac{d^3p}{2E_{\mathbf p}}\,F(E_{\mathbf p}, \mathbf p) = \int d^4p\;\delta(p^2 - m^2)\,\theta(p^0)\,F(p)$, so $d^3p/2E_{\mathbf p}$ is an invariant measure.
+>
+> *Model:* any (kinematics); *applies:* any theory, momenta on the mass shell $p^2 = m^2$, $m > 0$.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.9 · PHY 513 Lecture 4 ("Details on Normalization"); Problem Set 3, Problem 1, with the course solution · PS §2.3, eq. (2.40) · Yu §2.3.4, eqs. (2.158)–(2.161)*
 
@@ -191,6 +199,8 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 
 > [!theorem] Theorem §C2a.4.4: Invariance of the Relativistic Normalization
 > $2E_{\mathbf p}\,\delta^3(\mathbf p - \mathbf q)$ is Lorentz invariant, hence so are $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ and the one-particle resolution of the identity of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]; $\delta^3(\mathbf p - \mathbf q)$ alone is not: $\delta^3(\mathbf p - \mathbf q) = (E_{\mathbf p'}/E_{\mathbf p})\,\delta^3(\mathbf p' - \mathbf q')$.
+>
+> *Model:* any (kinematics); *applies:* any theory with relativistically normalized one-particle states, interacting ones included (the in and out states of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.9 · PS §2.3, eqs. (2.34)–(2.36), (2.39) · Yu §2.3.4, eqs. (2.155)–(2.157), (2.162)–(2.163)*
 
@@ -264,6 +274,8 @@ Quantum Mechanics constructed the Fock space from a given one-particle space and
 > 1. $\langle g|h\rangle = \displaystyle\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,\overline{g(\mathbf p)}\,h(\mathbf p)$, finite; $\langle\mathbf p|\mathbf q\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf p - \mathbf q)$ is the kernel of this pairing, a Lorentz-invariant tempered distribution in $(\mathbf p, \mathbf q)$.
 > 2. $\langle\mathbf p|\mathbf p\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0)$ has no value: $|\mathbf p\rangle$ is not a vector, and the norms of wave packets narrowing to $|\mathbf p\rangle$ diverge.
 > 3. $\langle\mathbf p|g\rangle = g(\mathbf p)$, and $\displaystyle\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\langle h|\mathbf p\rangle\langle\mathbf p|g\rangle = \langle h|g\rangle$: the resolution of the identity of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]] holds between wave packets (weakly), and the one-particle space is $L^2(\mathbb R^3, d^3p/(2\pi)^32E_{\mathbf p})$.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Caution "Two honesty points": $|\mathbf p\rangle$ is a distribution) and §4.9 · Yu, Exercise 2.3 · stated and derived here as distributions*
 

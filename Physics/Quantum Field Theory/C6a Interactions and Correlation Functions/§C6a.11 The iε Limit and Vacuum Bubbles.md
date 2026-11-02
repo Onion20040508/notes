@@ -131,7 +131,7 @@ A delta function at zero momentum in a finite box is the volume:
 ## Fine point 2: the denominator and vacuum bubbles
 
 > [!definition] Definition §C6a.11.1: Vacuum Bubble
-> A **vacuum bubble** (vacuum diagram) is a diagram with no external points; in a larger diagram, a connected piece that contains no external point. Its value follows from the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]]: every point of it is a vertex, integrated over all of spacetime.
+> A **vacuum bubble** (vacuum diagram) is a diagram with no external points; in a larger diagram, a connected piece that contains no external point. Its value follows from the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]: every point of it is a vertex, integrated over all of spacetime.
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
 >
@@ -153,7 +153,7 @@ A delta function at zero momentum in a finite box is the volume:
 > \langle0|T\Bigl\{\exp\Bigl[-i\int_{-T}^Tdt\,\hat H_I(t)\Bigr]\Bigr\}|0\rangle = 1 + \sum(\text{diagrams with no external points}) ,
 > $$
 >
-> each diagram, connected or not, built by the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]] with its symmetry factor; the term 1 is the empty diagram (order $\lambda^0$).
+> each diagram, connected or not, built by the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] with its symmetry factor; the term 1 is the empty diagram (order $\lambda^0$).
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; in $|0\rangle$.
 >
@@ -168,7 +168,7 @@ A delta function at zero momentum in a finite box is the volume:
 > \langle0|T\Bigl\{e^{-i\int_{-T}^Tdt\,\hat H_I}\Bigr\}|0\rangle = \sum_{n\ge0}\frac{1}{n!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^n\int d^4z_1\cdots d^4z_n\,\langle0|T\{\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\}|0\rangle = \sum_{n\ge0}\;\sum_{D:\,E=\varnothing,\ n\text{ vertices}}\frac{(-i\lambda)^n}{S(D)}\int d^4z_1\cdots d^4z_n\prod_{\text{lines of }D}D_F ,
 > $$
 >
-> the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]] with $r = 0$.
+> the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] with $r = 0$.
 >
 > **Step 2** (order zero). The $n = 0$ term of the time-ordered exponential is $\mathbf 1$, and $\langle0|\mathbf 1|0\rangle = \langle0|0\rangle = 1$: the empty diagram.
 >
@@ -177,7 +177,7 @@ A delta function at zero momentum in a finite box is the volume:
 
 ^der-c6a-11-2
 
-*Uses:* [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]
+*Uses:* [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]
 
 > [!example] Example §C6a.11.1: The Denominator Through Second Order
 > Write $D_{vw} = D_F(z_v - z_w)$, so $D_{vv} = D_F(0)$.
@@ -331,7 +331,7 @@ A delta function at zero momentum in a finite box is the volume:
 > \langle0|T\Bigl\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_r)\,e^{-i\int_{-T}^Tdt\,\hat H_I}\Bigr\}|0\rangle = \Bigl(\sum\text{diagrams attached to } x_1, \dots, x_r\Bigr)\times\langle0|T\Bigl\{e^{-i\int_{-T}^Tdt\,\hat H_I}\Bigr\}|0\rangle ,
 > $$
 >
-> the first factor the sum, by the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]], of the diagrams attached to the external points ([[§C6a.11 The iε Limit and Vacuum Bubbles#^def-c6a-11-2|Def. §C6a.11.2]]), the second the sum of the vacuum diagrams ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]).
+> the first factor the sum, by the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]], of the diagrams attached to the external points ([[§C6a.11 The iε Limit and Vacuum Bubbles#^def-c6a-11-2|Def. §C6a.11.2]]), the second the sum of the vacuum diagrams ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-2|Theorem §C6a.11.2]]).
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
 >
@@ -430,7 +430,7 @@ A delta function at zero momentum in a finite box is the volume:
 > \langle\Omega|T\{\hat\phi_H(x_1)\cdots\hat\phi_H(x_r)\}|\Omega\rangle = \sum\bigl(\text{diagrams attached to } x_1, \dots, x_r\bigr) ,
 > $$
 >
-> by the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]] (or [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]): only the diagrams in which every piece is attached to an external point are drawn. "Simplify: only draw diagrams connected to external lines."
+> by the rules of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] (or [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]): only the diagrams in which every piece is attached to an external point are drawn. "Simplify: only draw diagrams connected to external lines."
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening; the result is the correlator in $|\Omega\rangle$.
 >
@@ -616,7 +616,7 @@ A delta function at zero momentum in a finite box is the volume:
 > [!remark] Remark: Summary: from the master formula to Feynman diagrams
 > - Wick's theorem: $T\{\hat\phi_1\cdots\hat\phi_n\} = \,:\!\hat\phi_1\cdots\hat\phi_n\!: +$ all contractions, a contraction being $D_F$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]); in the vacuum, $\sum_{\text{pairings}}\prod D_F$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]).
 > - Each pairing is a diagram; the pairings of one diagram are an orbit, and the coefficient is $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]).
-> - In $\phi^4$ theory the interacting correlator is the sum of all diagrams attached to the external points ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]), with a line $D_F$ or $\frac{i}{p^2 - m^2 + i\varepsilon}$; a vertex $-i\lambda\int d^4z$, or $-i\lambda$ with momentum conservation; integration over undetermined momenta; a factor $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]).
+> - In $\phi^4$ theory the interacting correlator is the sum of all diagrams attached to the external points ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]), with a line $D_F$ or $\frac{i}{p^2 - m^2 + i\varepsilon}$; a vertex $-i\lambda\int d^4z$, or $-i\lambda$ with momentum conservation; integration over undetermined momenta; a factor $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]).
 > - The $T \to \infty(1 - i\varepsilon)$ limit is the Feynman $i\varepsilon$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|Theorem §C6a.11.1]]), and the denominator cancels the vacuum bubbles.
 >
 > *Source: the user's PHY 513 notes, Ch. 14 §14.8 (Principle "From the master formula to Feynman diagrams")*

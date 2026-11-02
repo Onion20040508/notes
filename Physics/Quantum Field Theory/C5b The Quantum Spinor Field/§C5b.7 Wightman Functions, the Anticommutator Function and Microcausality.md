@@ -32,6 +32,9 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 > the kernels of $\langle0|\hat\psi(f)\hat{\bar\psi}(g)|0\rangle$ and $\langle0|\hat{\bar\psi}(g)\hat\psi(f)|0\rangle$ for spacetime test functions, as $D_W$ is for the scalar ([[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]]).
 >
 > *Scalar analogue:* [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: PS §3.5, eqs. (3.114)–(3.115) · Yu §6.4.5, eqs. (6.259)–(6.260)*
 
 ^def-c5b-7-1
@@ -46,6 +49,9 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 > $p^0 = E_{\mathbf p}$: tempered distributions (derivatives of $D_W$, [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]) with transforms $2\pi(\slashed{p} + m)\theta(p^0)\delta(p^2 - m^2)$ and $-2\pi(\slashed{p} + m)\theta(-p^0)\delta(p^2 - m^2)$. Both solve the Dirac equation $(i\slashed{\partial}_x - m)S^\pm_W = 0$.
 >
 > *Scalar analogue:* [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: PS §3.5, eqs. (3.114)–(3.115) · Yu §6.4.5, eqs. (6.259)–(6.260)*
 
 ^thm-c5b-7-1
@@ -133,6 +139,9 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 > 2. For spacetime test functions $f, g \in \mathcal D(\mathbb R^4, \mathbb C^4)$ with spacelike-separated supports, $\{\hat\psi(f), \hat{\bar\psi}(g)\} = 0$, where $\hat\psi(f) = \int d^4x\,f^\dagger\hat\psi$, $\hat{\bar\psi}(g) = \int d^4y\,\hat{\bar\psi} g$: fermion fields smeared over spacelike-separated regions **anticommute**. Commutators of the fields do not vanish there.
 >
 > *Scalar analogue:* [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: PS §3.5, p. 54 (with the anticommutator: p. 56) · the user's pre-course notes, "Time-ordered product and microcausality" · stated here as a support statement*
 
 ^thm-c5b-7-3

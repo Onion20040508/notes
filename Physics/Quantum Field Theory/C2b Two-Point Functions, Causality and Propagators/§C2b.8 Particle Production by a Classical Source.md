@@ -30,6 +30,8 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 >
 > a free field whose annihilation operators are shifted by on-shell $c$-numbers; $[\hat b_{\mathbf p}, \hat b_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$.
 >
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]] (= [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]); *applies:* source switched off at early and late times: exact, all orders in $j$; in and out vacuum $|0\rangle$ ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 1).
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.13 (Derivation "The late-time field and the particles produced", Steps 1–3) · PHY 513 Lecture 6, "Particle Production by Classical Source I–II" · PS §2.4, eqs. (2.63)–(2.64)*
 
 ^thm-c2b-8-1
@@ -85,6 +87,8 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 >
 > so with respect to the out-particles it is the coherent state of [[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]] with $\eta_{\mathbf p} = i\tilde j(E_{\mathbf p}, \mathbf p)$. The number of particles produced is Poisson distributed.
 >
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]] (= [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]); *applies:* source switched off at early and late times: exact, all orders in $j$; in and out vacuum $|0\rangle$ ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 1).
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.13 ("The final state is a coherent state")*
 
 ^thm-c2b-8-2
@@ -113,6 +117,8 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 > $$
 >
 > a mean density $|\tilde j(p)|^2/2E_{\mathbf p}$ of particles per $d^3p/(2\pi)^3$, each carrying energy $E_{\mathbf p}$.
+>
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]] (= [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]); *applies:* source switched off at early and late times: exact, all orders in $j$; in and out vacuum $|0\rangle$ ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 1).
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.13 (Derivation, Step 4) · PHY 513 Lecture 6, "Particle Production by Classical Source: Interpretation" · PS §2.4, eqs. (2.65)–(2.66)*
 
@@ -150,6 +156,8 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 > 1. $\tilde j \in \mathcal S(\mathbb R^4)$, so on the shell $|\tilde j(E_{\mathbf p}, \mathbf p)| \le C_N(1 + |\mathbf p|)^{-N}$ for every $N$. Hence $\bar N$ and $\Delta E$ of [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-3|Theorem §C2b.8.3]] are finite, and the out-state of [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-2|Theorem §C2b.8.2]] is a normalizable coherent state.
 > 2. The classical field $i\int d^4y\,D_R(x - y)j(y) = i\,D_R[j(x - \cdot)]$ is the distribution $D_R$ acting on a test function: a smooth solution of $(\partial^2 + m^2)\phi = j$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|Theorem §CA.6.8]]).
 > 3. $\bar N = \|\hat\phi_0(j)|0\rangle\|^2$ with $\hat\phi_0(j) = \int d^4x\,j(x)\hat\phi_0(x)$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]]): finite exactly when the on-shell restriction of $\tilde j$ is a normalizable one-particle wave function. A source with $\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}|\tilde j|^2 = \infty$, such as an instantaneous point source $g\,\delta^4(x)$, produces infinitely many particles.
+>
+> *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]] (= [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]); *applies:* source switched off at early and late times: exact, all orders in $j$; in and out vacuum $|0\rangle$ ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 1).
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.13 ("$j$ smooth and of finite duration"), Ch. 6 §6.2 (sources as test functions) · PHY 513, Problem Set 4, Problem 0 · stated here as a condition on test functions*
 

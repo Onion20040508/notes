@@ -174,6 +174,8 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 >
 > *Domain:* free fields, given the split of $\hat\phi$ into $\hat a$ and $\hat a^\dagger$ of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]; that $\mathcal F$ is the whole space (irreducibility) is asserted, not derived, at this level (Streater–Wightman). In interacting theories the vacuum is not this one: the ground state of the full Hamiltonian is the interacting vacuum $|\Omega\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]]), obtained from $|0\rangle$ in [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]].
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact; with interactions the same Fock space is the interaction-picture space, but $|0\rangle$ is not the ground state of $\hat H$ ([[§C6a.1 From Free to Interacting Fields#^pr-c6a-1-6|Principle §C6a.1.6]]; [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 2; [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.8 (Principle "What space the operators act on") · PS §2.3, p. 22 · Yu §2.3.4, eqs. (2.148)–(2.149)*
 
 ^pr-c2a-3-3
@@ -186,6 +188,8 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 > $$
 >
 > It diverges twice: in the infrared, in proportion to the volume $V$ of space; in the ultraviolet, through the energy density $\varepsilon_0 = E_0/V$, which with a momentum cutoff $\Lambda \gg m$ is $\varepsilon_0 \approx \Lambda^4/16\pi^2$. It is a c-number: it commutes with every operator. (Names in other sources, and the zero-point energies of the other fields: [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^cau-c2a-3-1|Caution: Names for the zero-point energy]].)
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; not the $E_0$ of $|\Omega\rangle$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^cau-c6a-4-1|§C6a.4, Caution: Two E₀'s]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.6 (Caution "The zero-point energy") · PS §2.3, after eq. (2.31) · Yu §2.3.3, eqs. (2.132), (2.134); the cutoff estimate computed here*
 
@@ -307,6 +311,8 @@ The zero-point energy is a vacuum expectation value, so the vacuum enters here, 
 > $$
 >
 > *Notation:* the colons $:\!\hat X\!:$ are those of the user's PHY 513 notes (Ch. 6, $\hat\phi(x)\hat\phi(y) = \,:\!\hat\phi(x)\hat\phi(y)\!:\, + D_W(x - y)$); PS (§4.3) and Yu (§6.3.1, "normal product") write $N(\hat X)$, and the operation is also called Wick ordering. These notes use the colons only.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* any products of free creation and annihilation operators, in any state; vacuum values of normal-ordered products vanish in $|0\rangle$ only.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.6 (Caution "The zero-point energy") · PHY 513 Lecture 4, Part C · PS §2.3, after eq. (2.31)*
 

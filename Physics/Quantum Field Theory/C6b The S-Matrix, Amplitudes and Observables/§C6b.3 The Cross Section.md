@@ -29,19 +29,19 @@ tags: [quantum-field-theory, level-c]
 ^mod-c6b-3-1
 
 > [!definition] Definition §C6b.3.1: Flux
-> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]].
 > The **flux** (流密度) of the beam is the number of $B$ particles crossing unit area per unit time. The particles that cross the area $a$ in the time $t$ fill the cylinder of volume $a|\mathbf v_B|t$ behind it, $N_B = n_Ba|\mathbf v_B|t$, so
 >
 > $$
 > j_B \equiv \frac{N_B}{a\,t} = \frac{n_Ba|\mathbf v_B|t}{a\,t} = n_B\,|\mathbf v_B| .
 > $$
 >
+> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]].
+>
 > *Source: Yu §6.5.2, eq. (6.307) (page image checked)*
 
 ^def-c6b-3-1
 
 > [!definition] Definition §C6b.3.2: Cross Section (Operational)
-> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]].
 > The **cross section** $\sigma$ is the constant of proportionality in
 >
 > $$
@@ -52,6 +52,8 @@ tags: [quantum-field-theory, level-c]
 >
 > This is the course's definition of the cross section as a universal event rate, [[§C6b.4 Wave Packets and the Cross Section#^def-c6b-4-1|Def. §C6b.4.1]] (slide 8), stated for Yu's set-up: the same $N_{\rm events} = \sigma N_Aj_Bt$.
 >
+> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]].
+>
 > *Source: Yu §6.5.2, eqs. (6.308)–(6.311) (page image checked) · PHY 513 Lecture 15, slide 8 · PS §4.5, eqs. (4.59)–(4.61)*
 
 ^def-c6b-3-2
@@ -59,12 +61,13 @@ tags: [quantum-field-theory, level-c]
 ## From the box rate to the cross section
 
 > [!theorem] Theorem §C6b.3.2: Events per Unit Volume and Time
-> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]].
 > The number of events per unit volume and unit time is
 >
 > $$
 > \mathcal R \equiv \frac{N}{V\,t} = n_A\,n_B\,\sigma\,|\mathbf v_B| .
 > $$
+>
+> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]].
 >
 > *Source: Yu §6.5.2, eq. (6.312) (page image checked)*
 
@@ -85,7 +88,6 @@ tags: [quantum-field-theory, level-c]
 *Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-1|Def. §C6b.3.1]], [[§C6b.3 The Cross Section#^def-c6b-3-2|Def. §C6b.3.2]]
 
 > [!theorem] Theorem §C6b.3.3: The Cross Section in the Rest Frame of A
-> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] with one $A$ and one $B$ in the box of [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there; $A$ at rest.
 > With $R$ the total rate of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-7|Theorem §C6b.2.7]],
 >
 > $$
@@ -93,6 +95,8 @@ tags: [quantum-field-theory, level-c]
 > $$
 >
 > The box volume $\tilde V$ and the duration $\tilde T$ have cancelled.
+>
+> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] with one $A$ and one $B$ in the box of [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there; $A$ at rest.
 >
 > *Source: Yu §6.5.2, eq. (6.313) (page image checked; "上式对 $\mathcal A$ 粒子静止的参考系成立")*
 
@@ -148,7 +152,6 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]] everything excep
 ^def-c6b-3-3
 
 > [!theorem] Theorem §C6b.3.4: The Lorentz-Invariant Cross Section
-> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] and [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]], in any inertial frame; spinless particles (for $|\mathcal M|^2$ invariant).
 > 1. The incident flux factor $E_AE_Bv_{\rm Møl} = \sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2}$ is Lorentz invariant.
 > 2. In the rest frame of $A$, $v_{\rm Møl} = |\mathbf v_B|$.
 > 3. Hence
@@ -158,6 +161,8 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]] everything excep
 > $$
 >
 > is Lorentz invariant and equals [[§C6b.3 The Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]] in the rest frame of $A$. Yu takes it as the definition of $\sigma$ in every frame (eq. (6.316)).
+>
+> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] and [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]], in any inertial frame; spinless particles (for $|\mathcal M|^2$ invariant).
 >
 > *Source: Yu §6.5.2, eqs. (6.313)–(6.317) (page image checked)*
 
@@ -262,7 +267,6 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]] everything excep
 ^def-c6b-3-4
 
 > [!theorem] Theorem §C6b.3.6: The Differential Cross Section
-> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] and [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there.
 > 1. Without the integral over the final momenta,
 >
 > $$
@@ -276,6 +280,8 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]] everything excep
 > $$
 >
 > This is the formula of the lecture, derived there with wave packets ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]; PS (4.79)).
+>
+> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] and [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there.
 >
 > *Source: Yu §6.5.2, eqs. (6.319)–(6.321), (6.330)–(6.331) (page images checked: "计算微分截面 $d\sigma$ 时不会对全同量子态重复计数，因而不需要考虑末态对称性因子") · PHY 513 Lecture 15, slides 16, 24*
 

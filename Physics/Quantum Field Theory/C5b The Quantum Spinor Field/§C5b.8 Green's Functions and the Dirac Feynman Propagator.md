@@ -75,6 +75,9 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 > and for $n$ fields $T\{\hat\Phi_1\cdots\hat\Phi_n\} = (-1)^P\,\hat\Phi_{\sigma(1)}\cdots\hat\Phi_{\sigma(n)}$ with times decreasing from left to right and $P$ the number of transpositions of fermion fields. This extends [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]], which it equals for boson fields.
 >
 > *Scalar analogue:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-1|Def. §C2b.6.1]].
+>
+> *Model:* any; *applies:* any fermion field operators, interacting ones included.
+>
 > *Source: PS §3.5, eq. (3.121) and the text after it · Yu §6.4.5, eq. (6.258) and §6.3 · the user's pre-course notes, "Wick's theorem" (contractions of fermion fields)*
 
 ^def-c5b-8-2
@@ -112,6 +115,9 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 > with $S^\pm_W$ of [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], the Feynman contour, i.e. the $i\varepsilon$ prescription of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]] ($\varepsilon \to 0^+$ in $\mathcal S'$, [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]), and the scalar Feynman propagator $D_F$ of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]. $\tilde S_F(p) = i(\slashed{p} + m)/(p^2 - m^2 + i\varepsilon)$ is the factor of an internal fermion line.
 >
 > *Scalar analogue:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact; with interactions the vacuum value in $|\Omega\rangle$ is not $S_F$ beyond lowest order, as for the scalar ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-4|§C2b.6, Caution: With interactions, the two-point function is not D_F]]).
+>
 > *Source: PS §3.5, eq. (3.121) · Yu §6.4.5, eqs. (6.258)–(6.267) · the user's pre-course notes, §6.4 ("Dirac spinor field")*
 
 ^thm-c5b-8-3
@@ -196,6 +202,9 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 > 3. Off $\xi = 0$ the products have disjoint singular supports; at $\xi = 0$ the slice definition is the unique extension that is a fundamental solution of the Dirac operator ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]]).
 >
 > *Scalar analogue:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]].
+>
+> *Model:* any; *applies:* any theory (a statement about the function); its reading as a vacuum value in $|0\rangle$ needs the free field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]).
+>
 > *Source: stated and derived here from [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]] and [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]] · PS §3.5, eq. (3.121)*
 
 ^thm-c5b-8-4

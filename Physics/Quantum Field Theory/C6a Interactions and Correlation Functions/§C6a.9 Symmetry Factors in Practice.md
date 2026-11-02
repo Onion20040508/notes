@@ -13,7 +13,7 @@ tags: [quantum-field-theory, level-c]
 
 The coefficient of a diagram is $1/S$, with $S$ the order of its symmetry group ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]). In practice $S$ is read off the drawing as a product of local factors (loops, bundles of parallel lines) and a global one (permutations of the vertices), a rule of thumb that is in fact exact ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]]). This section states the slides' rules in that language and works the examples of the lecture, the user's notes and PS, each both by the product rule and by counting contractions; every count was checked by enumerating the pairings. The diagrams of Problem Set 8, Problem 1(a) are worked as the user solved them (both counts and stabilizers), and a last subsection treats the oriented lines of the complex scalar (Problem 1(b)). Yu treats symmetry factors in §7.3 for the self-energy contributions $\langle\mathbf k|iT|\mathbf k\rangle$ of the $S$-operator, counting contractions with the initial and final states rather than with fixed external points; the factors agree.
 
-*Conventions* ([[Larsen PHY 513]]): a diagram's value includes $-i\lambda\int d^4z$ per vertex and $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]]); "$k$ of $N$" means $k$ of the $N = n!\,(4!)^n$ relabellings, i.e. $k$ complete contractions produce the diagram, and $S = N/k$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]]).
+*Conventions* ([[Larsen PHY 513]]): a diagram's value includes $-i\lambda\int d^4z$ per vertex and $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]); "$k$ of $N$" means $k$ of the $N = n!\,(4!)^n$ relabellings, i.e. $k$ complete contractions produce the diagram, and $S = N/k$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]]).
 
 The product rule for $S$, proved in CA (its examples there are the vacuum bubbles: [[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]]):
 
@@ -433,7 +433,7 @@ The product rule for $S$, proved in CA (its examples there are the vacuum bubble
 In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $\hat\phi^\dagger$ ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3), so lines carry arrows and the relabellings may permute legs only within each kind ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]). Problem Set 8, Problem 1(b): "symmetry factors in complex scalar theory tend to be much smaller than in real scalar theory … because particles and anti-particles are distinct."
 
 > [!theorem] Theorem §C6a.9.1: Symmetry Factors with Oriented Lines
-> For the complex scalar with $\mathcal L_{\rm int} = -\frac\lambda4(\phi^\dagger\phi)^2$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]] plus this term), the order-$\lambda^n$ term of a numerator with external fields $\hat\phi_I(x_i)$, $\hat\phi_I^\dagger(y_j)$ is
+> For the complex scalar with $\mathcal L_{\rm int} = -\frac\lambda4(\phi^\dagger\phi)^2$ ([[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-3|Model §C6a.8.3]]: [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]] plus this term), the order-$\lambda^n$ term of a numerator with external fields $\hat\phi_I(x_i)$, $\hat\phi_I^\dagger(y_j)$ is
 >
 > $$
 > \frac{1}{n!}\Bigl(\frac{-i\lambda}{4}\Bigr)^n\int d^4z_1\cdots d^4z_n\,\langle0|T\Bigl\{\prod_i\hat\phi_I(x_i)\prod_j\hat\phi_I^\dagger(y_j)\prod_{v=1}^n\bigl(\hat\phi_I^\dagger\hat\phi_I\bigr)^2(z_v)\Bigr\}|0\rangle = \sum_D\frac{(-i\lambda)^n}{S(D)}\int d^4z_1\cdots d^4z_n\prod_{\text{lines}}D_F ,
@@ -443,7 +443,7 @@ In the complex scalar theory every nonzero contraction joins a $\hat\phi$ to a $
 > 1. $S(D) = \dfrac{n!\,(2!\,2!)^n}{N_D} = |\operatorname{Stab}(P)|$, $N_D$ the number of contractions producing $D$;
 > 2. every symmetry maps $\hat\phi$ legs to $\hat\phi$ legs and $\hat\phi^\dagger$ legs to $\hat\phi^\dagger$ legs: it preserves every arrow.
 >
-> *Model:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]] with $-\frac\lambda4(\phi^\dagger\phi)^2$; *applies:* as for $\phi^4$ in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]: order $\lambda^n$ of the numerator of the master formula, in $|0\rangle$; combinatorial.
+> *Model:* [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-3|Model §C6a.8.3]]; *applies:* as for $\phi^4$ in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]: order $\lambda^n$ of the numerator of the master formula, in $|0\rangle$; combinatorial.
 >
 > *Source: PHY 513, Problem Set 8, Problem 1(b) (the user's solution: "$\frac14 = \frac{1}{2!\,2!}$ … $|G| = k!\,(2!\,2!)^k$ is again the inverse of the prefactor … A relabeling cannot exchange a $\hat\phi$ leg with a $\hat\phi^\dagger$ leg, so a symmetry must preserve every arrow") · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §8 (complex-scalar bullet) · proof written here*
 

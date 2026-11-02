@@ -182,7 +182,7 @@ and the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] ho
 > [!derivation]- Derivation
 > **Step 1** (the term of (b) as a diagram). $\mathcal A_2 = \frac{1}{2!}\int d^4x_1\,d^4x_2\,(ij(x_1))(ij(x_2))\,D_F(x_1 - x_2) = \frac12L$: one line between two source vertices. $G_2 = \{e, (x_1\,x_2)\}$, $|G_2| = 2!\,(1!)^2 = 2$; the single pairing $\{x_1, x_2\}$ is mapped to itself by the exchange, so its orbit has one element and $S_1 = |G_2|/1 = 2$.
 >
-> **Step 2** (odd orders). $n$ one-legged vertices and no external points: for odd $n$ one leg is left over, every Wick term keeps a field and vanishes ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-3|Theorem §C6a.8.3]], Step 1, with source vertices).
+> **Step 2** (odd orders). $n$ one-legged vertices and no external points: for odd $n$ one leg is left over, every Wick term keeps a field and vanishes ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-5|Theorem §C6a.8.5]], Step 1, with source vertices).
 >
 > **Step 3** ($S_m$ by counting). At order $2m$, $|G| = (2m)!$. The complete pairings of $2m$ vertices: choose a first pair, a second from the rest, …,
 >

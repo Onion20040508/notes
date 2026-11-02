@@ -77,10 +77,10 @@ C6b follows the course (Lecture 15) and the user's notes (Ch. 15), except for th
 - [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-3|§C6b.7.3]] The Decay Rate into Fixed Final Momenta
 - [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|§C6b.7.4]] The Decay Rate Formula
 - [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-5|§C6b.7.5]] Two-Body Decays
-- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-6|§C6b.7.6]] ★ Partial Widths Add
-- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-8|§C6b.7.8]] The Propagator Near Its Pole
-- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-9|§C6b.7.9]] The Width Is Invariant; the Decay Rate Is Time-Dilated
-- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-10|§C6b.7.10]] The Breit–Wigner Shape and Its Width
+- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-7|§C6b.7.7]] ★ Partial Widths Add
+- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-9|§C6b.7.9]] The Propagator Near Its Pole
+- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-10|§C6b.7.10]] The Width Is Invariant; the Decay Rate Is Time-Dilated
+- [[§C6b.7 Decay Rates and Widths#^thm-c6b-7-11|§C6b.7.11]] The Breit–Wigner Shape and Its Width
 - [[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-1|§C6b.8.1]] Amplitudes Are Amputated Correlation Functions
 - [[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-2|§C6b.8.2]] The Disconnected Pieces of the Free Four-Point Function Do Not Scatter
 - [[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-3|§C6b.8.3]] Vertex Factors of a Polynomial Interaction
@@ -99,4 +99,4 @@ C6b follows the course (Lecture 15) and the user's notes (Ch. 15), except for th
 - [[§C6b.3 The Cross Section#^mod-c6b-3-1|§C6b.3.1]] Beam on a Fixed Target
 - [[§C6b.4 Wave Packets and the Cross Section#^mod-c6b-4-1|§C6b.4.1]] Colliding Wave Packets
 - [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-1|§C6b.7.1]] A Decaying Particle at Rest
-- [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-7|§C6b.7.7]] The Propagator of an Unstable Particle
+- [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-8|§C6b.7.8]] The Propagator of an Unstable Particle

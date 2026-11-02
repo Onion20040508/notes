@@ -114,6 +114,8 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > \hat\phi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\bigl(\hat a_{\mathbf p} + \hat a^\dagger_{-\mathbf p}\bigr)e^{i\mathbf p\cdot\mathbf x}, \qquad \hat\pi(\mathbf x) = \int\frac{d^3p}{(2\pi)^3}(-i)\sqrt{\frac{E_{\mathbf p}}{2}}\bigl(\hat a_{\mathbf p} - \hat a^\dagger_{-\mathbf p}\bigr)e^{i\mathbf p\cdot\mathbf x} .
 > $$
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact; with interactions the operator form holds at the reference time only, as the Schrödinger field ([[§C6a.1 From Free to Interacting Fields#^pr-c6a-1-6|Principle §C6a.1.6]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §4.4 · PHY 513 Lecture 4, Part B · PS §2.3, eqs. (2.25)–(2.28) · Yu §2.3.1, eqs. (2.97)–(2.105)*
 
 ^thm-c2a-2-2
@@ -377,6 +379,8 @@ The integration rules used from here on (plane-wave delta function, derivatives 
 > $$
 >
 > one oscillator algebra per momentum, the $(2\pi)^3$ accompanying the measure $d^3p/(2\pi)^3$.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact; at the reference time it holds unchanged with interactions ([[§C6a.1 From Free to Interacting Fields#^pr-c6a-1-6|Principle §C6a.1.6]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.5 · PHY 513 Lecture 4, Part B (⇐ in the lecture, ⇒ in Problem Set 3, Problem 3(c), with the course solutions) · PS §2.3, eqs. (2.29)–(2.30) · Yu §2.3.2, eqs. (2.115)–(2.122)*
 

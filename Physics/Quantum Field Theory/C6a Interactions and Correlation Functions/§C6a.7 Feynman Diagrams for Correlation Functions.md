@@ -427,7 +427,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 *Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]
 
 > [!remark] Remark: Why diagrams, not terms
-> Listing the $(4n + 1)!!$ terms is hopeless; grouping them into diagrams is not. The rule is the same at every order: all diagrams that connect $x$ and $y$, through however many vertices, each with its coefficient ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]]). "Next up, product of six different guys. Next up, product of 10 different guys. All of the same form."
+> Listing the $(4n + 1)!!$ terms is hopeless; grouping them into diagrams is not. The rule is the same at every order: all diagrams that connect $x$ and $y$, through however many vertices, each with its coefficient ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]). "Next up, product of six different guys. Next up, product of 10 different guys. All of the same form."
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.4 (paragraph "Higher orders")*
 

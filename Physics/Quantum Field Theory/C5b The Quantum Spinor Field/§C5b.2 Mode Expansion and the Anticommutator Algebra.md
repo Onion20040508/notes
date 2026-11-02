@@ -29,6 +29,9 @@ The derivation below uses the Clifford relation of the Dirac matrices:
 > with the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-9|Theorem §C5a.9.9]] and [[§C5a.9 Plane-Wave Solutions#^thm-c5a-9-11|Theorem §C5a.9.11]] and four coefficients per momentum. Classically $a^s_{\mathbf p}$ and $b^{s\dagger}_{\mathbf p} \equiv \overline{b^s_{\mathbf p}}$ are complex amplitudes; quantization makes them operator-valued distributions $\hat a^s_{\mathbf p}$, $\hat b^{s\dagger}_{\mathbf p}$ in $\mathbf p$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], componentwise in $s$), and the field the operator-valued distribution $\hat\psi(x)$, the same expansion with $\hat a^s_{\mathbf p}$, $\hat b^{s\dagger}_{\mathbf p}$ in place of the amplitudes ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]). The conjugate fields $\hat\psi^\dagger$ and $\hat{\bar\psi}$: [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]].
 >
 > *Scalar analogue:* [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]]; complex field [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact.
+>
 > *Source: Lecture 10, slides 10–11 · the user's PHY 513 notes, Ch. 10 §10.3 (Definition "Mode expansion of the Dirac field") · PS §3.5, eqs. (3.87), (3.99) · Yu §5.4, eqs. (5.216)–(5.217) · the user's pre-course notes, §5.4*
 
 ^thm-c5b-2-1
@@ -243,6 +246,9 @@ The derivation below uses the Clifford relation of the Dirac matrices:
 > all other anticommutators vanish (including $\{\hat a, \hat b\}$, $\{\hat a, \hat b^\dagger\}$, $\{\hat a^\dagger, \hat a^\dagger\}$), and conversely these relations give back the principle: anticommutators of fields ⇔ anticommutators of oscillators (Lecture 10). As distributions in $(\mathbf p, \mathbf q)$: smeared as in [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], $\{\hat a^r(g), \hat a^{s\dagger}(h)\} = \{\hat b^r(g), \hat b^{s\dagger}(h)\} = \delta^{rs}\int\frac{d^3p}{(2\pi)^3}\overline gh$, and $\hat a^s(g)$, $\hat b^s(g)$ are bounded with norm $\bigl(\int\frac{d^3p}{(2\pi)^3}|g|^2\bigr)^{1/2}$. Two independent species, each with two spin states.
 >
 > *Scalar analogue:* [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]; complex field [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact.
+>
 > *Source: Lecture 10, slides 12–13 and 23 · the user's PHY 513 notes, Ch. 10 §10.3 (eq. (diracoscillators)) and §10.4 · PS §3.5, eqs. (3.97), (3.101) · Yu §5.5.2, eqs. (5.240)–(5.246) · the user's pre-course notes, §5.5*
 
 ^thm-c5b-2-4

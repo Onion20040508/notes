@@ -56,6 +56,8 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 >
 > $\hat\pi = \dot{\hat\phi}^\dagger$, $\hat\pi^\dagger = \dot{\hat\phi}$, at $t = 0$ for the Schrödinger-picture operators. The two independent sets of mode operators are extracted by the Klein–Gordon product ([[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-1|Def. §C2a.2.1]]): $\hat a_{\mathbf p} = (f_{\mathbf p}, \hat\phi)$, $\hat b_{\mathbf p} = (f_{\mathbf p}, \hat\phi^\dagger)$.
 >
+> *Model:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: the user's PHY 513 notes, Ch. 4 §§4.4–4.5, eqs. (phicomplex), (picomplex), (ainverse) · PHY 513 Problem Set 3, Problem 2(b), course solution · Yu §2.4.1, eqs. (2.184)–(2.191), and §2.4.2, eqs. (2.194)–(2.203)*
 
 ^thm-c2a-5-2
@@ -113,6 +115,8 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 > $$
 >
 > and all other commutators vanish, including the mixed ones $[\hat a, \hat b]$, $[\hat a, \hat b^\dagger]$: two independent copies of the real field's algebra ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]).
+>
+> *Model:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.5, eq. (aadagger) and Derivation "From [φ, π] to [a, a†]" · PHY 513 Problem Set 3, Problem 2(b), course solution · Yu §2.4.2, eqs. (2.204)–(2.207) · the user's pre-course notes, §3.4*
 
@@ -319,6 +323,8 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 > $$
 >
 > and $[\hat Q, \hat H] = [\hat Q, \hat{\mathbf P}] = 0$: the charge is conserved. Without normal ordering, $\hat Q$ would be $\frac12(\hat N_a - \hat N_b) - \frac12V\int\frac{d^3p}{(2\pi)^3}$.
+>
+> *Model:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; an interaction invariant under $\phi \to e^{i\alpha}\phi$ keeps the charge conserved ([[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-3|Model §C6a.8.3]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.7 (Derivation "The charge in mode form") · PHY 513 Problem Set 3, Problem 2(c), course solution · Yu §2.4.3, eqs. (2.211)–(2.212)*
 

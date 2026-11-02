@@ -46,6 +46,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > iD(x - y) \equiv \langle0|[\hat\phi(x), \hat\phi(y)]|0\rangle .
 > $$
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.5 · PHY 513, Problem Set 4, eq. (9)*
 
 ^def-c2b-4-1
@@ -74,6 +76,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > $$
 >
 > the same number in every state; $iD = [\hat\phi, \hat\phi]$ holds as an operator identity.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact: an operator identity, every state.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.5 (Derivation "The commutator function") · PS §2.4, eq. (2.53)*
 
@@ -167,6 +171,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 
 > [!theorem] Theorem §C2b.4.5: The Free Field Is Microcausal
 > $D(\xi) = 0$ for $\xi^2 < 0$: the free field satisfies [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]]. Inside the light cone $D$ does not vanish identically.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; microcausality itself is required of any theory ([[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.5 · PS §2.4, eq. (2.53), Fig. 2.4*
 
@@ -334,6 +340,8 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > $$
 > D(\xi) = -\frac{1}{2\pi}\operatorname{sgn}(\xi^0)\Bigl[\delta(\xi^2) - \frac{m}{2\sqrt{\xi^2}}\,\theta(\xi^2)\,J_1\bigl(m\sqrt{\xi^2}\bigr)\Bigr].
 > $$
+>
+> *Model:* any; *applies:* any theory (a statement about the function); its reading as a vacuum value in $|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.7 (Derivation "Explicit forms", massive) · PHY 513, Problem Set 4, Problem 3(b)*
 

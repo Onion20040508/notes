@@ -26,6 +26,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 >
 > the later operator to the left, with $\theta(0) = \frac12$. For $n$ fields, $T\{\hat\phi(x_1)\cdots\hat\phi(x_n)\} = \hat\phi(x_{\sigma(1)})\cdots\hat\phi(x_{\sigma(n)})$ with $x^0_{\sigma(1)} \ge \cdots \ge x^0_{\sigma(n)}$. The opposite ordering is the anti-time-ordered product ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-2|Def. §C2b.6.2]]). (Fermion fields will add a sign per exchange, [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]].) Names in other sources: [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-3|Caution: Names for the time-ordered product]].
 >
+> *Model:* any; *applies:* any field operators, interacting Heisenberg fields included ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-2|Def. §C6a.4.2]]); fermions: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]].
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.6 (Definition "The time-ordered product") · PS §2.4, eq. (2.60) · Yu §6.2, eq. (6.108)*
 
 ^def-c2b-6-1
@@ -42,6 +44,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > 2. At equal times both orders give the same operator for $\hat\phi\hat\phi$, so with $\theta(0) = \frac12$ the definition gives $\hat\phi(x)\hat\phi(y)$ there, whichever order is written; for $\hat\phi$ and $\hat\pi$ the two orders differ and the equal-time value is ambiguous.
 > 3. $T\{\hat\phi(x)\hat\phi(y)\}$ is the same in every inertial frame, because of microcausality.
 > 4. For any $\hat A(x)$, $\hat B(y)$: $\partial_{x^0}T\{\hat A(x)\hat B(y)\} = T\{\partial_0\hat A(x)\,\hat B(y)\} + \delta(x^0 - y^0)\,[\hat A(x), \hat B(y)]$.
+>
+> *Model:* any; *applies:* parts 1, 2 and 4 for any field operators; part 3 needs microcausality ([[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.6 (Derivation "Properties of time ordering"), Ch. 6 §6.7 (eq. (dT)) · Yu §6.2, eqs. (6.108)–(6.113)*
 
@@ -96,6 +100,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > $$
 >
 > $D_F$ is even in $\xi$, Lorentz invariant, and $D_F = D_R + D_W(-\xi)$.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; with interactions: [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-4|Caution: With interactions, the two-point function is not D_F]].
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.7 · PHY 513 Lecture 6, "Evaluation of the Feynman Propagator" · PS §2.4, eqs. (2.59)–(2.60) · Yu §6.4.1, eqs. (6.194)–(6.211) · PHY 513, Problem Set 4, Problem 4(a)*
 
@@ -163,6 +169,19 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 
 ^cau-c2b-6-2
 
+> [!caution] Caution: With interactions, the two-point function is not D_F
+> $D_F = \langle0|T\{\hat\phi(x)\hat\phi(y)\}|0\rangle$ is the free field in the free vacuum ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]). With interactions ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]) the two-point function is that of the Heisenberg field in $|\Omega\rangle$, and it differs from $D_F$ beyond lowest order:
+>
+> $$
+> \langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle = D_F(x - y) - \frac{i\lambda}{2}\int d^4z\,D_F(x - z)D_F(0)D_F(z - y) + O(\lambda^2)
+> $$
+>
+> ([[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-4|Example §C6a.11.4]]). $D_F$ stays the building block: it is the free value that Wick's theorem uses ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]) inside the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]).
+>
+> *Source: PHY 513 Lecture 14, slide 25 (bottom) · the user's PHY 513 notes, Ch. 14 §14.6 · Yu §10.5.1, eq. (10.209)*
+
+^cau-c2b-6-4
+
 > [!definition] Definition §C2b.6.2: Anti-Time-Ordered Product
 > For field operators at $x$ and $y$, the **anti-time-ordered** product puts the earlier operator to the left:
 >
@@ -211,6 +230,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > 1. $D_W(\pm\xi)$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], 3), so $\theta(\pm\xi^0)D_W(\pm\xi)$ are defined slice by slice, as in [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], 1. Hence $D_F = \theta(\xi^0)D_W(\xi) + \theta(-\xi^0)D_W(-\xi) \in \mathcal S'(\mathbb R^4)$, equal to the contour's $D_F$; the value $\theta(0)$ does not enter (Caution: The step function at zero).
 > 2. Away from $\xi = 0$ these are products with disjoint singular supports ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 2). At $\xi = 0$ both factors are singular and no product rule applies there (compare [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 1); the slice definition is the unique extension that is a fundamental solution, $(\partial^2 + m^2)D_F = -i\delta^4$. Any other extension differs by contact terms $\sum c_\alpha\partial^\alpha\delta^4$.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.6 (property 3, the step function at zero), Ch. 6 §6.2 ("Why this matters beyond tidiness": products), §6.7 · stated here as distributions*
 
 ^thm-c2b-6-4
@@ -243,6 +264,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > $$
 >
 > with $\hat\phi(y_k)$ omitted. For $n = 1$ the vacuum expectation value is $(\partial^2 + m^2)D_F = -i\delta^4$: the Feynman propagator is a Green's function.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact, an operator identity; its vacuum value in $|0\rangle$.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.7 (Derivations "$D_F$ is a Green's function: the operator derivation", "Generalization: the free Schwinger–Dyson equation") · PHY 513, Problem Set 4, Problem 4(c)*
 
@@ -299,6 +322,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 >
 > $D_F$ is the number that separates the time-ordered from the normal-ordered product: the **contraction** of the two fields.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact, an operator identity in any state; for $n$ fields it is Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.7 (Derivation "Normal ordering and time ordering: a first look at Wick's theorem") · Yu §6.3, eqs. (6.132)–(6.133)*
 
 ^thm-c2b-6-6
@@ -325,6 +350,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > 1. Between finite-particle wave-packet states the matrix elements of $:\!\hat\phi(x)\hat\phi(y)\!:$ are smooth functions of $(x, y)$, including $x = y$. So $:\!\hat\phi(x)^2\!:$ is defined, and for $f \in \mathcal S(\mathbb R^4)$, $:\!\hat\phi^2\!:(f)\,|0\rangle$ is a normalizable two-particle state.
 > 2. In $\hat\phi(x)\hat\phi(y) = \,:\!\hat\phi(x)\hat\phi(y)\!:\, + D_W(x - y)$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]) the whole coincident singularity sits in the $c$-number $D_W$, which has no value at $x = y$ ($0 \in \operatorname{sing\,supp}D_W$, [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]; [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 3). So $\hat\phi(x)^2$ is undefined, and $:\!\hat\phi(x)^2\!: = \lim_{y\to x}\bigl[\hat\phi(x)\hat\phi(y) - D_W(x - y)\bigr]$ ([[§CA.2 Generalized Functions#^rem-ca-2-2|Remark: Point splitting]]).
 > 3. $T\{\hat\phi(x)\hat\phi(y)\} = \,:\!\hat\phi(x)\hat\phi(y)\!:\, + D_F(x - y)$ is an operator-valued distribution in $(x, y)$: θ multiplies the smooth matrix elements of the normal-ordered part, and the $c$-number part is [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]].
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.2 ("Why this matters beyond tidiness"), §6.7 (the zero-point energy as the Wightman function at coincident points) · stated here as distributions (standard: Reed & Simon II, §X.7, Wick powers)*
 
@@ -360,6 +387,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > $$
 >
 > the zero-point constant of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]. The limit $y \to x$ does not exist ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-7|Theorem §C2b.6.7]]): at equal times with the damping $e^{-\varepsilon E_{\mathbf p}}$ the expression is finite for $\varepsilon > 0$ and diverges like $\varepsilon^{-4}$ as $\varepsilon \to 0^+$.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.7 (the zero-point energy as the Wightman function at coincident points); the $\varepsilon^{-4}$ rate derived here*
 
@@ -417,6 +446,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 >
 > $\tilde D_F$ depends on $p$ only through $p^2$ ($m^2 \to m^2 - i\varepsilon$) and is manifestly Lorentz invariant; $\tilde D_R$ is invariant under orthochronous transformations.
 >
+> *Model:* any; *applies:* any theory (a statement about the function); its reading as a vacuum value in $|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 6 §6.9 · PHY 513 Lecture 6, "Deforming Integrand: the Feynman Propagator", "Relativistic Form of Feynman Propagator" · PS §2.4, eq. (2.59) · Yu §6.4.1, eq. (6.210)*
 
 ^thm-c2b-6-9
@@ -449,6 +480,8 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > 1. For $\varepsilon > 0$, $\tilde D_F^\varepsilon(p) = i/(p^2 - m^2 + i\varepsilon)$ is smooth and bounded by $1/\varepsilon$, a tempered distribution. As $\varepsilon \to 0^+$, $\tilde D_F^\varepsilon \to i\,\mathcal P\frac{1}{p^2 - m^2} + \pi\,\delta(p^2 - m^2)$ in $\mathcal S'(\mathbb R^4)$: Sokhotski–Plemelj on $p^2 - m^2$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 1). For $\tilde D_R$, $\tilde D_A$ the delta term carries $\pm\operatorname{sgn}(p^0)$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 2); $\tilde D_{\bar F}$ is the complex conjugate.
 > 2. The limit does not depend on how the infinitesimal is written: $\varepsilon$, $2E_{\mathbf p}\varepsilon$, or poles at $\pm(E_{\mathbf p} - i\varepsilon)$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 3).
 > 3. The transform commutes with the limit ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], 2): $D_F[f] = \lim_{\varepsilon\to0^+}\int\frac{d^4p}{(2\pi)^4}\frac{i\,\tilde f(-p)}{p^2 - m^2 + i\varepsilon}$ for every test function $f$, and this is the contour's $D_F$. The four-dimensional integral $\int\frac{d^4p}{(2\pi)^4}\frac{i\,e^{-ip\cdot\xi}}{p^2 - m^2 + i\varepsilon}$ converges absolutely for no $\xi$; "$\varepsilon \to 0^+$ at the end" means this limit.
+>
+> *Model:* any; *applies:* any theory (a statement about the function); its reading as a vacuum value in $|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.9 (Derivation "The distributional version: Sokhotski–Plemelj"; "only the sign of the infinitesimal matters") · stated here as a limit in $\mathcal S'$*
 
@@ -520,7 +553,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > [!remark]- Connections
 > - The $\pm i\varepsilon$ as boundary conditions has a nonrelativistic twin: the outgoing and incoming resolvents $(E - \hat H_0 \pm i\varepsilon)^{-1}$ of scattering theory, whose $k$-plane contour is closed exactly as here ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|QM Theorem §C10.1.3]], [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^rem-c10-1-2|QM Remark: Why the sign of iε matters]]), and the causal energy transform of the propagator ([[§C4.1 Propagators#^thm-c4-1-7|QM Theorem §C4.1.7]]).
 > - The time-ordered two-point function of the interacting theory reduces to $D_F$ at zero coupling, and the master formula writes it through time-ordered products of free fields, so every order of perturbation theory is built from this propagator — [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-2|Def. §C6a.4.2]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-1|Example §C6a.4.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]].
-> - The contraction $D_F$ is the building block of Wick's theorem and of every internal line of a Feynman diagram ([[§C6a.6 Wick's Theorem|§C6a.6]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]]); for spinor and vector fields the numerator changes but the $i\varepsilon$ does not (spinor: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], numerator [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|Theorem §C5a.10.7]]; vector: [[§C4.9 Vector-Field Propagators#^thm-c4-9-3|Theorem §C4.9.3]] massive, [[§C4.9 Vector-Field Propagators#^thm-c4-9-6|Theorem §C4.9.6]] photon in the Feynman gauge; Yu eq. (6.262)).
+> - The contraction $D_F$ is the building block of Wick's theorem and of every internal line of a Feynman diagram ([[§C6a.6 Wick's Theorem|§C6a.6]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]); for spinor and vector fields the numerator changes but the $i\varepsilon$ does not (spinor: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], numerator [[§C5a.10 Normalization, Spin Sums and Helicity#^thm-c5a-10-7|Theorem §C5a.10.7]]; vector: [[§C4.9 Vector-Field Propagators#^thm-c4-9-3|Theorem §C4.9.3]] massive, [[§C4.9 Vector-Field Propagators#^thm-c4-9-6|Theorem §C4.9.6]] photon in the Feynman gauge; Yu eq. (6.262)).
 > - Normal ordering ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]) and time ordering meet in Theorem §C2b.6.6; the zero-point energy is the same divergence as the light-cone singularity of $D_W$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]]).
 > - The anti-Feynman function ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|Theorem §C2b.6.3]]) is the Feynman function of the time-reversed ordering; its $-i\varepsilon$ reappears as the complex conjugate amplitude in the Schwinger–Keldysh (closed-time-path) formalism and on the far side of Cutkosky cuts (QFT C7, planned).
 > - [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]] (products with disjoint singular supports) and [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]] (θ·δ and δ at its singular point have no value) say which products of time ordering exist: $\theta(\xi^0)D_W$ away from the origin, but not $D_W(0)$ or $\hat\phi(x)^2$.

@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.6 (Derivation "From position space to momentum space", Principle "Feynman rules in momentum space", paragraph "The momentum-space two-point function") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part B, slides 19–20, slide 25 (bottom), and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 94–95, eqs. (4.46)–(4.47) · Yu Zhao-Huan, 量子场论讲义, §7.2, pp. 287–288 (rules 8, 10, 11 of the momentum-space rules of Yukawa theory); §7.3, p. 296 (the $\phi^4$ vertex); §10.5.1, eqs. (10.198)–(10.203).*
 
-The position-space rules ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]]) leave an integral $\int d^4z$ at every vertex. Writing every propagator in its four-momentum form ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]; slide 19, PS eq. (4.46)) **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
+The position-space rules ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]) leave an integral $\int d^4z$ at every vertex. Writing every propagator in its four-momentum form ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]; slide 19, PS eq. (4.46)) **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): as in [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], the expansion in $\lambda$ of the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), free-vacuum values $\langle0|T\{\cdots\}|0\rangle$; the correlator in $|\Omega\rangle$ is numerator over denominator ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order, as formal power series.
 $$
 D_F(x - y) = \int\frac{d^4p}{(2\pi)^4}\,\frac{i}{p^2 - m^2 + i\varepsilon}\,e^{-ip\cdot(x-y)}
 $$
@@ -101,7 +101,7 @@ and momenta are relabelled and their directions reversed freely:
 *Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]
 
 > [!theorem] Theorem §C6a.10.2: Feynman Rules for Correlation Functions in Momentum Space
-> Each diagram of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]] equals the following expression:
+> Each diagram of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] equals the following expression:
 >
 > | element | factor |
 > |---|---|
@@ -122,7 +122,7 @@ and momenta are relabelled and their directions reversed freely:
 ^thm-c6a-10-2
 
 > [!derivation]- Derivation
-> **Step 1** (the diagram in position space). Take a diagram with $V$ vertices $z_1, \dots, z_V$, $I$ internal lines (between vertices, loops included) and $r$ external points. Orient each line $\ell$, from $a_\ell$ to $b_\ell$. By [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]] its value is
+> **Step 1** (the diagram in position space). Take a diagram with $V$ vertices $z_1, \dots, z_V$, $I$ internal lines (between vertices, loops included) and $r$ external points. Orient each line $\ell$, from $a_\ell$ to $b_\ell$. By [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]] its value is
 >
 > $$
 > \frac1S\prod_{v=1}^V\Bigl(-i\lambda\int d^4z_v\Bigr)\prod_\ell D_F(a_\ell - b_\ell) .
@@ -180,7 +180,7 @@ and momenta are relabelled and their directions reversed freely:
 
 ^der-c6a-10-2
 
-*Uses:* [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]]
+*Uses:* [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]]
 
 > [!caution] Caution: Momentum directions
 > The slides attach $e^{-ip\cdot x}$ to the start and $e^{ip\cdot y}$ to the end of a line and add the momenta at a vertex as $e^{i(p_1 + p_2 + p_3 + p_4)\cdot z}$, all four flowing in (slide 19). PS draw $p_4$ leaving the vertex, $e^{+ip_4\cdot z}$ with their sign of the exponent, and get $\delta^{(4)}(p_1 + p_2 + p_3 - p_4)$ (eq. (4.47)). Only the arrow convention differs; the content, "momentum in = momentum out", is the same. For an external point the slides' "$e^{-ipx}$ (incoming momenta)" means $p$ flows from $x$ into the diagram.

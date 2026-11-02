@@ -24,6 +24,9 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 > 3. The equal-time anticommutators of [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|Principle §C5b.1.6]] hold at every common time $t$.
 >
 > *Scalar analogue:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]] and [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact; the Heisenberg field of an interacting theory is not this expansion ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-2|§C2b.1, Caution: With interactions, the Heisenberg field is not the free mode expansion]]).
+>
 > *Source: Lecture 10, slide 10 ("Field in Heisenberg representation") · the user's PHY 513 notes, Ch. 10 §10.3 · PS §3.5, eqs. (3.99), (3.104) · worked out here as in PS §2.4, eqs. (2.46)–(2.47)*
 
 ^thm-c5b-6-1
@@ -94,6 +97,9 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 > $$
 >
 > *Scalar analogue:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: computed here from Theorems §C5b.2.1–§C5b.2.2 and §C5b.4.1 (the spinors $u$, $\bar v$ are the external-line factors of the Feynman rules, PS §4.7, QFT C7, planned)*
 
 ^thm-c5b-6-3

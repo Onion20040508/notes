@@ -103,6 +103,9 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 > conserved, $[\hat Q, \hat H] = [\hat Q, \hat{\mathbf P}] = 0$. Without normal ordering $\hat Q$ would contain the constant $+2V\int\frac{d^3p}{(2\pi)^3}$ (normalization and sign as in [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^def-c5b-5-1|Def. §C5b.5.1]]; electric charge = $\hat Q$ times the charge of the fermion).
 >
 > *Scalar analogue:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: PS §3.5, eq. (3.113) · Yu §5.5.3, eq. (5.267) (with $q = 1$) · the user's pre-course notes, §5.5 ("$U(1)$ global symmetry") · PHY 513, Problem Set 6, Problem 2 ("Verify PS eqn 3.113"; the user's solution: Theorem §C5b.5.1 at $t = 0$, then $:\!\hat b^s_{\mathbf p}\hat b^{s\dagger}_{\mathbf p}\!: = -\hat b^{s\dagger}_{\mathbf p}\hat b^s_{\mathbf p}$, dropping $(2\pi)^3\delta^3(\mathbf 0)$, as in steps 1–2 below)*
 
 ^thm-c5b-5-3
@@ -142,6 +145,9 @@ Its charge, read as an operator $\hat Q$, is the following. The box recalled abo
 > So the one-particle states of [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]] have $\hat Q|\mathbf p, s\rangle = +|\mathbf p, s\rangle$ and $\hat Q|\mathbf p, s\rangle^c = -|\mathbf p, s\rangle^c$, and $\hat\psi$ lowers the charge by one unit, both by annihilating a particle and by creating an antiparticle.
 >
 > *Scalar analogue:* [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: Yu §5.5.3, eq. (5.267) and §5.5.2 (the commutator identity, eqs. (5.248)–(5.251)) · PS §3.5, p. 62 · the user's PHY 513 notes, Ch. 10 §10.6 ("both lower the charge by one unit") · the user's pre-course notes, §5.5 ("$Q/q$ counts particles minus antiparticles")*
 
 ^thm-c5b-5-4

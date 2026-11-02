@@ -111,9 +111,9 @@ Coleman's sentence for the first row: "Unless the interaction is with some exter
 > | theory | $\mathcal L_{\rm int}$ | home |
 > |---|---|---|
 > | $\phi^4$ | $-\frac{\lambda}{4!}\phi^4$ | [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1\|Model §C6a.1.1]] |
-> | cubic–quartic | $-\frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4$ | [[§C6b.8 Amplitudes from Correlation Functions#^ex-c6b-8-3\|Example §C6b.8.3]] (Problem Set 8, Problem 2) |
-> | complex $(\phi^\dagger\phi)^2$ | $-\frac{\lambda}{4}(\phi^\dagger\phi)^2$ | [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-7\|Example §C6a.9.7]] (Problem Set 8, Problem 1(b)) |
-> | two fields, $\Phi\phi^2$ | $-\mu\,\Phi\phi^2$ | [[§C6b.7 Decay Rates and Widths#^ex-c6b-7-1\|Example §C6b.7.1]] (Problem Set 8, Problem 4) |
+> | cubic–quartic | $-\frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4$ | [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2\|Model §C6a.8.2]]; [[§C6b.8 Amplitudes from Correlation Functions#^ex-c6b-8-3\|Example §C6b.8.3]] (Problem Set 8, Problem 2) |
+> | complex $(\phi^\dagger\phi)^2$ | $-\frac{\lambda}{4}(\phi^\dagger\phi)^2$ | [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-3\|Model §C6a.8.3]]; [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-7\|Example §C6a.9.7]] (Problem Set 8, Problem 1(b)) |
+> | two fields, $\Phi\phi^2$ | $-\mu\,\Phi\phi^2$ | [[§C6b.7 Decay Rates and Widths#^mod-c6b-7-6\|Model §C6b.7.6]]; [[§C6b.7 Decay Rates and Widths#^ex-c6b-7-1\|Example §C6b.7.1]] (Problem Set 8, Problem 4) |
 >
 > *Assumptions:*
 > 1. $\hat H$ has a unique ground state $|\Omega\rangle$, $\hat H|\Omega\rangle = E_0|\Omega\rangle$, separated by a gap $\Delta > 0$ from the rest of the spectrum, with $\langle\Omega|0\rangle \ne 0$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]; PS p. 86).

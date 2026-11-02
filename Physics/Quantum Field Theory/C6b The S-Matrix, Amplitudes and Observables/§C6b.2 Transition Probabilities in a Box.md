@@ -38,12 +38,13 @@ tags: [quantum-field-theory, level-c]
 ## The transition probability
 
 > [!definition] Definition §C6b.2.1: Transition Probability
-> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]].
 > The **transition probability** from $|i\rangle$ to $|f\rangle$ is the squared overlap of the unit vectors along $\hat S|i\rangle$ and $|f\rangle$:
 >
 > $$
 > P_{fi} = \frac{|\langle f|\hat S|i\rangle|^2}{\langle i|i\rangle\,\langle f|f\rangle} = \Bigl|\Bigl\langle\frac{f}{\sqrt{\langle f|f\rangle}}\Bigr|\hat S\Bigl|\frac{i}{\sqrt{\langle i|i\rangle}}\Bigr\rangle\Bigr|^2 .
 > $$
+>
+> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]].
 >
 > *Source: Yu §6.5.1, eq. (6.276) ("除以它们使得跃迁概率具有合适的归一化": dividing by the self inner products gives the probability its proper normalization)*
 
@@ -62,7 +63,6 @@ The box turns the delta functions of this section into numbers. The mathematics,
 ![[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10]]
 
 > [!theorem] Theorem §C6b.2.2: The Squared Amplitude in a Box
-> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there.
 > For $f \ne i$, with $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]],
 > 1. only $i\hat T$ contributes: $\langle f|\hat S|i\rangle = \langle f|i\hat T|i\rangle$, and
 >
@@ -77,6 +77,8 @@ The box turns the delta functions of this section into numbers. The mathematics,
 > $$
 >
 > with $(2\pi)^4\delta^4(0) = \int d^4x = \tilde V\tilde T$.
+>
+> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there.
 >
 > *Source: Yu §6.5.1, eqs. (6.276)–(6.283) (page image checked: $(2\pi)^4\delta^{(4)}(0) = \int d^4x = \tilde V\tilde T$, "$\tilde V$ 是空间积分区域的体积，$\tilde T$ 是时间积分范围的长度") · PS §4.4, p. 96*
 
@@ -130,7 +132,6 @@ The box turns the delta functions of this section into numbers. The mathematics,
 ## The states and their norms
 
 > [!theorem] Theorem §C6b.2.3: Norms of the Box States
-> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]] (free, relativistically normalized states over $|0\rangle$).
 > 1. One particle: $\langle\mathbf p|\mathbf p\rangle = 2E_{\mathbf p}(2\pi)^3\delta^3(\mathbf 0) = 2E_{\mathbf p}\tilde V$.
 > 2. The initial state, for $A \ne B$, or $A = B$ with $\mathbf p_A \ne \mathbf p_B$:
 >
@@ -143,6 +144,8 @@ The box turns the delta functions of this section into numbers. The mathematics,
 > $$
 > \langle f|f\rangle = \prod_{j=1}^n\bigl(2E_j\tilde V\bigr) .
 > $$
+>
+> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]] (free, relativistically normalized states over $|0\rangle$).
 >
 > *Source: Yu §6.5.1, eqs. (6.284)–(6.290) (page image checked); §2.3.4, eqs. (2.157), (2.171)*
 
@@ -192,7 +195,6 @@ The box turns the delta functions of this section into numbers. The mathematics,
 ## The rate
 
 > [!theorem] Theorem §C6b.2.4: The Transition Probability Grows Linearly in Time; the Rate
-> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there, and for a duration $\tilde T$ long compared with the collision.
 > For $f \ne i$ with distinct final momenta,
 >
 > $$
@@ -204,6 +206,8 @@ The box turns the delta functions of this section into numbers. The mathematics,
 > $$
 > R_{\{p_j\}} \equiv \frac{P_{fi}}{\tilde T} = \Bigl[4E_AE_B\tilde V\prod_{j=1}^n\bigl(2E_j\tilde V\bigr)\Bigr]^{-1}(2\pi)^4\delta^4\Bigl(p_A + p_B - \sum_{j=1}^np_j\Bigr)\,|\mathcal M|^2 .
 > $$
+>
+> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there, and for a duration $\tilde T$ long compared with the collision.
 >
 > *Source: Yu §6.5.1, eqs. (6.291)–(6.293) (page image checked)*
 
@@ -241,13 +245,14 @@ The box turns the delta functions of this section into numbers. The mathematics,
 ## Counting the final states
 
 > [!theorem] Theorem §C6b.2.5: Final States in a Periodic Box
-> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]] (each final particle confined to the periodic cube).
 > 1. With the periodic boundary condition $\varphi(-L/2) = \varphi(L/2)$ in each direction, the momentum operator $\hat p_x = -i\partial/\partial x$ is Hermitian on the box, and its eigenfunctions $\varphi_{\mathbf p} \propto e^{i\mathbf p\cdot\mathbf x}$ have $\mathbf p = \frac{2\pi}{L}(k_1, k_2, k_3)$, $k_1, k_2, k_3 \in \mathbb Z$.
 > 2. A range $d^3p$ of a final particle's momentum contains $\tilde V\,d^3p/(2\pi)^3$ of these states; a sum over the final momenta of $n$ particles becomes
 >
 > $$
 > \sum_{\mathbf p_1, \dots, \mathbf p_n} \;\longrightarrow\; \prod_{j=1}^n\frac{\tilde V}{(2\pi)^3}\int d^3p_j .
 > $$
+>
+> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]] (each final particle confined to the periodic cube).
 >
 > *Source: Yu §6.5.1, eqs. (6.294)–(6.302) (page image checked; Yu cites Zeng Jinyan, Quantum Mechanics I, §4.4.3, for the boundary condition)*
 
@@ -281,7 +286,6 @@ The box turns the delta functions of this section into numbers. The mathematics,
 *Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]
 
 > [!theorem] Theorem §C6b.2.6: The Rate into a Range of Final Momenta
-> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there, for final states without identical particles (with them: [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-7|Theorem §C6b.2.7]]).
 > The rate into final momenta in $d^3p_1\cdots d^3p_n$ is
 >
 > $$
@@ -289,6 +293,8 @@ The box turns the delta functions of this section into numbers. The mathematics,
 > $$
 >
 > and the total rate is $R = \int dR$ over all final momenta. Each factor $\frac{d^3p_j}{(2\pi)^3\,2E_j}$ is the Lorentz-invariant measure on the positive-energy mass shell.
+>
+> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there, for final states without identical particles (with them: [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-7|Theorem §C6b.2.7]]).
 >
 > *Source: Yu §6.5.1, eqs. (6.303)–(6.304) (page image checked)*
 
@@ -320,12 +326,13 @@ The box turns the delta functions of this section into numbers. The mathematics,
 *Uses:* [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4|Theorem §C6b.2.4]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-5|Theorem §C6b.2.5]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]
 
 > [!theorem] Theorem §C6b.2.7: Identical Particles in the Final State
-> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there.
 > If the final state contains $n_k$ identical particles of species $k$, integrating $dR$ of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-6|Theorem §C6b.2.6]] over all final momenta counts every physical final state $n_k!$ times per species, also when identical bosons share a momentum. The total rate is
 >
 > $$
 > R = \frac{1}{S_{\rm id}}\int dR = \frac{1}{S_{\rm id}}\,\frac{1}{4E_AE_B\tilde V}\;\prod_{j=1}^n\int\frac{d^3p_j}{(2\pi)^3\,2E_j}\;(2\pi)^4\delta^4\Bigl(p_A + p_B - \sum_jp_j\Bigr)\,|\mathcal M|^2 , \qquad S_{\rm id} = \prod_kn_k! .
 > $$
+>
+> *Model:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there.
 >
 > *Source: Yu §6.5.1, eqs. (6.305)–(6.306) and footnote 6 (page image checked) · PS §4.5, p. 108*
 

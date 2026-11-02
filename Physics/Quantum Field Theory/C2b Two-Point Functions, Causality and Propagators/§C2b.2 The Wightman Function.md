@@ -26,6 +26,8 @@ How are the values of the free field at two spacetime points correlated in the v
 >
 > the amplitude for a quantum created at $y$ to be found at $x$. Peskin & Schroeder call it $D(x - y)$.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 · PS §2.4, eq. (2.50) · PHY 513, Problem Set 4, eq. (8)*
 
 ^def-c2b-2-1
@@ -38,6 +40,8 @@ How are the values of the free field at two spacetime points correlated in the v
 > $$
 >
 > the Fourier transform of the positive-energy mass shell. The integral converges absolutely for no real $\xi$; the formula is an identity of tempered distributions ([[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]]).
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (Derivation "Computing $D_W$"), Ch. 6 §6.9 · PS §2.4, eq. (2.50) · PHY 513, Problem Set 4, Problem 4(a)*
 
@@ -84,6 +88,8 @@ How are the values of the free field at two spacetime points correlated in the v
 > 1. For $f, g \in \mathcal S(\mathbb R^4)$, $\langle0|\hat\phi(f)\hat\phi(g)|0\rangle = \displaystyle\int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,\tilde f(-p)\,\tilde g(p)$, finite. This bilinear form has the kernel $D_W(x - y)$ with $D_W \in \mathcal S'(\mathbb R^4)$ the transform of $2\pi\theta(p^0)\delta(p^2 - m^2)$: that is what [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]] means.
 > 2. *How it acts:* $D_W[f] = \displaystyle\int d^4\xi\,f(\xi)\,D_W(\xi) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\,\tilde f(-p)$. The mode integral of [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]] is this formula with the $\xi$-integral done first.
 > 3. *At fixed time:* $D_W(t, \cdot)$ is a tempered distribution in $\boldsymbol\xi$ with spatial transform $e^{-iE_{\mathbf p}t}/2E_{\mathbf p}$, smooth in $t$, and $D_W[f] = \int dt\,D_W(t, \cdot)\bigl[f(t, \cdot)\bigr]$.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
 > *Source: the user's PHY 513 notes, App. A §A.4 (the Wightman function as a tempered distribution), Ch. 5 §5.4 · stated here with its action (standard: Streater & Wightman, Ch. 2–3; Reed & Simon II, §IX.8)*
 
@@ -161,6 +167,8 @@ How are the values of the free field at two spacetime points correlated in the v
 > [!theorem] Theorem §C2b.2.4: The Wightman Function Is a Homogeneous Solution; Reversal Is Conjugation
 > 1. $(\partial_x^2 + m^2)D_W(x - y) = 0$.
 > 2. $D_W(-\xi) = \overline{D_W(\xi)}$.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.5 (Derivation "Both are parts of the Wightman function", Step 1) · PHY 513, Problem Set 4, Problem 4(b)*
 

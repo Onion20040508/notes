@@ -275,14 +275,14 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > -ig_t\prod_km_{t,k}! \qquad\text{(times } \textstyle\int d^4z \text{ in position space, } (2\pi)^4\delta^4(\sum p) \text{ in momentum space)} ;
 > $$
 >
-> 2. every diagram enters with $\frac1S\prod_{\text{vertices}}(\text{vertex factor})$ and the rules for lines of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]], $S$ its symmetry factor ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]).
+> 2. every diagram enters with $\frac1S\prod_{\text{vertices}}(\text{vertex factor})$ and the rules for lines of [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]], $S$ its symmetry factor ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]).
 >
 > | $\mathcal L_{\rm int}$ | legs | vertex factor |
 > |---|---|---|
-> | $-\frac{g}{3!}\phi^3$ | $\phi\phi\phi$ | $-i\frac{g}{3!}\cdot3! = -ig$ |
-> | $-\frac{\lambda}{4!}\phi^4$ | $\phi\phi\phi\phi$ | $-i\lambda$ |
-> | $-\mu\,\Phi\phi^2$ | $\Phi\phi\phi$ | $-i\mu\cdot1!\cdot2! = -2i\mu$ |
-> | $-\frac\lambda4(\phi^\dagger\phi)^2$ | $\phi\phi\phi^\dagger\phi^\dagger$ | $-i\frac\lambda4\cdot2!\cdot2! = -i\lambda$ |
+> | $-\frac{g}{3!}\phi^3$ (in [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2\|Model §C6a.8.2]]) | $\phi\phi\phi$ | $-i\frac{g}{3!}\cdot3! = -ig$ |
+> | $-\frac{\lambda}{4!}\phi^4$ ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1\|Model §C6a.1.1]]; [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2\|Model §C6a.8.2]]) | $\phi\phi\phi\phi$ | $-i\lambda$ |
+> | $-\mu\,\Phi\phi^2$ ([[§C6b.7 Decay Rates and Widths#^mod-c6b-7-6\|Model §C6b.7.6]]) | $\Phi\phi\phi$ | $-i\mu\cdot1!\cdot2! = -2i\mu$ |
+> | $-\frac\lambda4(\phi^\dagger\phi)^2$ ([[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-3\|Model §C6a.8.3]]) | $\phi\phi\phi^\dagger\phi^\dagger$ | $-i\frac\lambda4\cdot2!\cdot2! = -i\lambda$ |
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* any polynomial interaction without derivatives, every order; combinatorial.
 >
@@ -312,7 +312,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 
 ^der-c6b-8-3
 
-*Uses:* [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-2|Theorem §C6a.8.2]]
+*Uses:* [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]
 
 > [!theorem] Theorem §C6b.8.4: Vertices Saturated by External Lines Give S = 1
 > If every vertex $v$ of a diagram has valence $r_v \ge 2$ and at least $r_v - 1$ of its legs joined to external points, then $S = 1$; equivalently $N_D = |G|$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]). In particular every tree diagram with one internal line has $S = 1$.
@@ -335,7 +335,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 *Uses:* [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]
 
 > [!example] Example §C6b.8.3: Cubic–Quartic Theory, 2 → 2 at Order g² and λ
-> $\mathcal L = \frac12(\partial_\mu\phi)^2 - \frac{m^2}{2}\phi^2 - \frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4$, vertices $-ig$, $-i\lambda$ ([[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-3|Theorem §C6b.8.3]]); $p_A + p_B \to p_1 + p_2$. A diagram with $n_3$ cubic and $n_4$ quartic vertices is of order $g^{n_3}\lambda^{n_4}$ (Problem Set 8: treat $\lambda \sim g^2/m^2$ as the same order).
+> $\mathcal L = \frac12(\partial_\mu\phi)^2 - \frac{m^2}{2}\phi^2 - \frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4$ ([[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]]), vertices $-ig$, $-i\lambda$ ([[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-3|Theorem §C6b.8.3]]); $p_A + p_B \to p_1 + p_2$. A diagram with $n_3$ cubic and $n_4$ quartic vertices is of order $g^{n_3}\lambda^{n_4}$ (Problem Set 8: treat $\lambda \sim g^2/m^2$ as the same order).
 > - *$O(g^2)$, two cubic vertices*: $6$ legs, $4$ joined to external lines, so one internal line. If one vertex carried three external particles, the other would carry one, and its two remaining legs would be contracted with each other: not fully connected, excluded ([[§C6b.8 Amplitudes from Correlation Functions#^def-c6b-8-1|Def. §C6b.8.1]]). So each vertex carries two, and $p_A$ shares its vertex with exactly one of $p_B$, $p_1$, $p_2$ (putting $p_A$ on the other vertex only exchanges the vertices): three diagrams.
 > - *$O(\lambda)$, one quartic vertex*: all four on it, one diagram.
 >
@@ -395,7 +395,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > - $\hat S = \mathbb 1 + i\hat T$ and $\langle f|i\hat T|i\rangle = (2\pi)^4\delta^4(p_i - p_f)\,i\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]). "$\mathcal M$ is wave function overlap ${}_{\rm out}\langle\vec p_1\vec p_2\ldots|\vec k_A\vec k_B\ldots\rangle_{\rm in}$ except for removal of: trivial scattering (in = out); overall $\delta$-function that conserves 4-momentum." "Central goal of QFT: compute and analyze $\mathcal M$."
 > - Cross section: $d\sigma = \frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}|\mathcal M|^2d\Pi_n$ ([[§C6b.5 Evaluating the Cross Section#^thm-c6b-5-2|Theorem §C6b.5.2]]); the denominator is the kinematics of the two initial particles, invariant under boosts along the beam ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-2|Theorem §C6b.6.2]]).
 > - Phase space: $d\Pi_n$ ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^def-c6b-6-1|Def. §C6b.6.1]]); two bodies in the centre-of-mass frame $\int d\Omega\,\frac{|\mathbf p_1|}{16\pi^2E_{\rm cm}}$ ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-5|Theorem §C6b.6.5]]); all masses equal, $(d\sigma/d\Omega)_{\rm cm} = |\mathcal M|^2/(64\pi^2E_{\rm cm}^2)$ ([[§C6b.6 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-6-8|Theorem §C6b.6.8]]).
-> - Decay: $d\Gamma = \frac{1}{2m_A}|\mathcal M|^2d\Pi_n$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]); in a propagator the width appears as $p^2 - m^2 + im\Gamma$, and a moving particle decays at the time-dilated rate $\frac{m}{E}\Gamma$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-9|Theorem §C6b.7.9]]).
+> - Decay: $d\Gamma = \frac{1}{2m_A}|\mathcal M|^2d\Pi_n$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-4|Theorem §C6b.7.4]]); in a propagator the width appears as $p^2 - m^2 + im\Gamma$, and a moving particle decays at the time-dilated rate $\frac{m}{E}\Gamma$ ([[§C6b.7 Decay Rates and Widths#^thm-c6b-7-10|Theorem §C6b.7.10]]).
 > - Amplitudes are correlation functions with the external propagators stripped off ([[§C6b.8 Amplitudes from Correlation Functions#^thm-c6b-8-1|Theorem §C6b.8.1]]).
 >
 > *Source: PHY 513 Lecture 15, slides 24–25 ("Summary I: Formula for Cross-section", "Summary II: Relativistic Phase Space Factor") · the user's PHY 513 notes, Ch. 15 §15.10, Principle "From amplitudes to observables" (a summary: a remark here)*

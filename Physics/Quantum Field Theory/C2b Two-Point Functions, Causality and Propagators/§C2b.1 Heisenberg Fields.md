@@ -26,6 +26,8 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 >
 > so that $\hat\phi(0, \mathbf x) = \hat\phi_S(\mathbf x)$. From here on a field with a spacetime argument is a Heisenberg operator, and states are frozen at $t = 0$.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* the definition holds for any time-independent $\hat H$; here $\hat H$ is the free one; with the full $\hat H$ of [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]] it defines $\hat\phi_H$, which is not the free field ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-2|Caution: With interactions, the Heisenberg field is not the free mode expansion]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.1 · PS §2.4, eq. (2.43)*
 
 ^def-c2b-1-1
@@ -47,6 +49,8 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > $$
 >
 > Nothing is asserted for two different times.
+>
+> *Model:* any; *applies:* any time-independent $\hat H$, interacting ones included (conjugation by $e^{i\hat Ht}$ preserves commutators); exact.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.2 · PS §2.4, eqs. (2.44)–(2.45)*
 
@@ -205,6 +209,8 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 >
 > 3. $\hat\pi(x) = \partial_t\hat\phi(x)$.
 >
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; with interactions this is the interaction-picture field ([[§C6a.2 The Interaction Picture#^thm-c6a-2-1|Theorem §C6a.2.1]]), not the Heisenberg field ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-2|Caution: With interactions, the Heisenberg field is not the free mode expansion]]).
+>
 > *Source: the user's PHY 513 notes, Ch. 5 §5.1 · PS §2.4, eqs. (2.46)–(2.47)*
 
 ^thm-c2b-1-4
@@ -294,6 +300,19 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 
 ^rem-c2b-1-2
 
+> [!caution] Caution: With interactions, the Heisenberg field is not the free mode expansion
+> [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]] is the Heisenberg field of the free $\hat H$ ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]). With $\hat H = \hat H_0 + \hat H_{\rm int}$ ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]) the same expansion is the interaction-picture field, and the Heisenberg field is obtained from it by the evolution operator $U(t) = e^{i\hat H_0t}e^{-i\hat Ht}$:
+>
+> $$
+> \hat\phi_I(t, \mathbf x) = e^{i\hat H_0t}\,\hat\phi_S(\mathbf x)\,e^{-i\hat H_0t}\ \ (\text{the expansion of Theorem §C2b.1.4}), \qquad \hat\phi_H(t, \mathbf x) = e^{i\hat Ht}\,\hat\phi_S(\mathbf x)\,e^{-i\hat Ht} = U(t)^\dagger\,\hat\phi_I(t, \mathbf x)\,U(t) ,
+> $$
+>
+> ([[§C6a.2 The Interaction Picture#^def-c6a-2-1|Def. §C6a.2.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-1|Theorem §C6a.2.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-4|Theorem §C6a.2.4]]). The two agree at $t = 0$ only: for $\lambda \ne 0$ the ladder operators acquire no phases under $\hat H$ ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-7|Theorem §C6a.1.7]], 2). The same holds for the Dirac field of [[§C5b.6 The Heisenberg Dirac Field|§C5b.6]].
+>
+> *Source: PHY 513 Lecture 13, slide 7 ("As a first approximation introduce interaction picture"; "Complete time dependence") · PS §4.2, pp. 82–83*
+
+^cau-c2b-1-2
+
 > [!theorem] Theorem §C2b.1.5: Positive and Negative Frequency
 > Split $\hat\phi = \hat\phi^+ + \hat\phi^-$ with
 >
@@ -306,6 +325,8 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > $$
 > \langle0|\hat\phi(x)|\mathbf p\rangle = e^{-ip\cdot x}, \qquad \langle\mathbf p|\hat\phi(x)|0\rangle = e^{ip\cdot x} .
 > $$
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact; with interactions: [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|Caution: With interactions, the one-particle matrix element carries √Z]].
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.3, Ch. 6 §6.7 (the split $\hat\phi^\pm$) · PS §2.4, p. 26 · Yu §6.3, eqs. (6.132)–(6.133)*
 
@@ -344,6 +365,19 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 
 ^rem-c2b-1-3
 
+> [!caution] Caution: With interactions, the one-particle matrix element carries √Z
+> [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]] is a free-field result: $\langle0|\hat\phi(x)|\mathbf p\rangle = e^{-ip\cdot x}$ with $|\mathbf p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$. In an interacting theory ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]), with $|\mathbf p\rangle$ a relativistically normalized one-particle state of $\hat H$ and the phase chosen real,
+>
+> $$
+> \langle\Omega|\hat\phi_H(x)|\mathbf p\rangle = \sqrt Z\,e^{-ip\cdot x} , \qquad p^0 = \sqrt{\mathbf p^2 + m_{\rm ph}^2} ,
+> $$
+>
+> with $m_{\rm ph}$ the physical mass; the $x$-dependence is translation invariance, $\langle\Omega|e^{i\hat P\cdot x} = \langle\Omega|$. The factor $\sqrt Z$ per external particle is what the amputation rule leaves out at lowest order ([[§C6b.8 Amplitudes from Correlation Functions#^cau-c6b-8-2|§C6b.8, Caution: The rule is stated at lowest order]]; the LSZ formula, Lecture 16).
+>
+> *Source: Yu §10.2, eq. (10.64) ($\langle p|\phi(0)|0\rangle = \sqrt Z$ with the phase set to 1; Yu's $|0\rangle$ is $|\Omega\rangle$, [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]; from the text of the book, page image not in the pipeline) · Yu §10.5.3, eq. (10.235)*
+
+^cau-c2b-1-3
+
 ## The field on spacetime
 
 > [!theorem] Theorem §C2b.1.6: The Heisenberg Field Is an Operator-Valued Distribution on Spacetime
@@ -351,6 +385,8 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > 1. $\displaystyle\hat\phi(f) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\Bigl(\tilde f(-p)\,\hat a_{\mathbf p} + \tilde f(p)\,\hat a_{\mathbf p}^\dagger\Bigr)$, and $\hat\phi(f)|0\rangle$ is a one-particle state with $\|\hat\phi(f)|0\rangle\|^2 = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}|\tilde f(p)|^2 < \infty$. So $\hat\phi$ is an operator-valued tempered distribution on $\mathbb R^4$ ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]); $\hat\phi(x)$ unsmeared is not an operator.
 > 2. $\hat\phi(f)$ depends on $\tilde f$ only through its values on the mass shell $p^2 = m^2$.
 > 3. The Klein–Gordon equation holds as an identity of operator-valued distributions: $\hat\phi\bigl((\partial^2 + m^2)f\bigr) = 0$ for every $f$, which is what $(\partial^2 + m^2)\hat\phi = 0$ means.
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
 > *Source: the user's PHY 513 notes, App. A §A.4 ($\hat\phi[\varphi] = \int d^4x\,\varphi(x)\hat\phi(x)$), Ch. 6 §6.2 ("operator-valued distribution") · stated here for the Heisenberg field (standard: Streater & Wightman, Ch. 3; Reed & Simon II, §X.7)*
 

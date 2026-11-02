@@ -31,6 +31,9 @@ This is the spinor counterpart of [[§C2a.4 Particles and Relativistic Normaliza
 > distributions in $(\mathbf p, \mathbf q)$ as for the scalar ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]]); physical states are wave packets ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-3|Def. §C2a.4.3]]).
 >
 > *Scalar analogue:* [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]]; complex field [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]].
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact.
+>
 > *Source: Lecture 10, slide 20 ("a† ∼ particle, b† ∼ anti-particle") · the user's PHY 513 notes, Ch. 10 §10.6 (Principle "One-particle states") · PS §3.5, eqs. (3.106)–(3.107) · Yu §5.5.4, eqs. (5.270)–(5.275) · the user's pre-course notes, §5.5*
 
 ^thm-c5b-4-1
@@ -65,6 +68,8 @@ This is the spinor counterpart of [[§C2a.4 Particles and Relativistic Normaliza
 > $$
 >
 > with a minus sign where two bosons have a plus ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]).
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, exact.
 >
 > *Source: Lecture 10, slide 21 and transcript · the user's PHY 513 notes, Ch. 10 §10.6 (Principle "Many-particle states: Fermi–Dirac statistics and the exclusion principle") · PS §3.5, p. 57 · Yu §5.5.4, eqs. (5.289)–(5.295) · the user's pre-course notes, §5.5*
 
