@@ -22,7 +22,7 @@ Turns an interaction Lagrangian and a process into the lowest-order amplitude $i
 
 6. **Read off $i\mathcal M$.** The sum multiplies $(2\pi)^4\delta^4(\sum p_{\rm in} - \sum p_{\rm out})$; strip it ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]) and check the dimension, $[\mathcal M] = 4 - N$ for $N$ external particles ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]). ^p6-6
 
-7. **State the scope.** The result is the lowest order: free relativistic states over $|0\rangle$ stand for the in and out states ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]); beyond it external lines carry $\sqrt Z$ and the physical mass ([[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]); an unstable initial particle is outside the asymptotic setup ([[§C6b.8 Decay Rates and Widths#^cau-c6b-8-1|§C6b.8, Caution: Free states in a decay amplitude]]). ^p6-7
+7. **State the scope.** The result is the lowest order: free relativistic states over $|0\rangle$ stand for the in and out states ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]); beyond it external lines carry $\sqrt Z$ and the physical mass ([[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]); an unstable initial particle is outside the asymptotic setup ([[§C6b.8 Decay Rates and Widths#^cau-c6b-8-1|§C6b.8, Caution: Free states in a decay amplitude]]). ^p6-7
 
 ## Instances
 

@@ -21,7 +21,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 2. **What is prepared and what is measured?** One particle at rest that decays ([[§C6b.8 Decay Rates and Widths#^mod-c6b-8-1|Model §C6b.8.1]]), two particles that collide ([[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]], [[§C6b.4 The Cross Section#^mod-c6b-4-1|Model §C6b.4.1]], [[§C6b.5 Wave Packets and the Cross Section#^mod-c6b-5-1|Model §C6b.5.1]]), or the vacuum and a source ([[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-10-1|Theorem §C6b.10.1]]); a probability is a squared overlap of unit vectors, $P_{fi} = |\langle f|\hat S|i\rangle|^2/(\langle f|f\rangle\langle i|i\rangle)$ — [[§C6b.3 Transition Probabilities in a Box#^def-c6b-3-1|Def. §C6b.3.1]].
 3. **Which states, in which normalization?** $\hat a^\dagger|0\rangle$ with $\frac{d^3k}{(2\pi)^3}$, or $\sqrt{2E}\,\hat a^\dagger|0\rangle$ with $\frac{d^3k}{(2\pi)^32E}$, and $\frac{1}{n!}$ for $n$ identical particles — [[§C6b.2 Matrix Elements between Particle States#^cau-c6b-2-1|§C6b.2, Caution: Two normalizations of one-particle states]], [[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-10-5|Theorem §C6b.10.5]].
 4. **Which vacuum?** The ground state of the Hamiltonian that acts at early and late times: $|0\rangle$ in Model §C6a.0.1, $|\Omega\rangle$ in Model §C6a.0.3 — [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]], [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]].
-5. **Which order?** Free states in place of in and out states are exact in Model §C6a.0.1 and lowest order in Model §C6a.0.3; beyond it $\sqrt Z$ per external line and the physical mass — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]], [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]], [[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]].
+5. **Which order?** Free states in place of in and out states (the course's prescription: free states dressed by $U(0, -T)$, bubbles omitted) are exact in Model §C6a.0.1 and lowest order in Model §C6a.0.3; beyond it $\sqrt Z$ per external line and the physical mass — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]], [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]], [[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]].
 6. **Is the object an observable?** Probabilities, rates and cross sections are; a correlation function is not, it is the input of amputation — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^rem-c6b-1-2|§C6b.1, Remark: The fundamental observable?]], [[§C6b.9 Amplitudes from Correlation Functions#^thm-c6b-9-1|Theorem §C6b.9.1]].
 
 ## A source switched off: how many particles?
@@ -113,7 +113,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > ([[§C6b.8 Decay Rates and Widths#^def-c6b-8-1|Def. §C6b.8.1]]). The potential is unbounded below (assumption 2 of Model §C6b.8.6): only the lowest order has a meaning.
 >
-> **States and vacuum** (questions 3–5). Free relativistic states over the free vacuum $|0\rangle$ in place of the in and out states, valid at lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]), as the decay formula needs ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]):
+> **States and vacuum** (questions 3–5). Free relativistic states over the free vacuum $|0\rangle$ in place of the in and out states, valid at lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]]; [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]), as the decay formula needs ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]):
 >
 > $$
 > |\mathbf K\rangle_\Phi = \sqrt{2E^\Phi_{\mathbf K}}\,\hat b^\dagger_{\mathbf K}|0\rangle , \qquad |\mathbf p_1\mathbf p_2\rangle = \sqrt{2E_{\mathbf p_1}}\sqrt{2E_{\mathbf p_2}}\,\hat a^\dagger_{\mathbf p_1}\hat a^\dagger_{\mathbf p_2}|0\rangle , \qquad K = (M, \mathbf 0) .
@@ -173,7 +173,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > **Situation** (question 1: no; question 2: two particles collide, the final momenta are counted per unit time and per unit flux). [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]], at lowest order; the experiment is [[§C6b.3 Transition Probabilities in a Box#^mod-c6b-3-1|Model §C6b.3.1]] (two particles in a box) with [[§C6b.4 The Cross Section#^mod-c6b-4-1|Model §C6b.4.1]] (beam on a fixed target), or the wave packets of [[§C6b.5 Wave Packets and the Cross Section#^mod-c6b-5-1|Model §C6b.5.1]].
 >
-> **States and vacuum** (questions 3–5). Free, relativistic, over $|0\rangle$, lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]; Model §C6b.3.1, *Applies*):
+> **States and vacuum** (questions 3–5). Free, relativistic, over $|0\rangle$, lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]]; [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]; Model §C6b.3.1, *Applies*):
 >
 > $$
 > |i\rangle = \sqrt{2E_A}\sqrt{2E_B}\,\hat a^\dagger_{\mathbf p_A}\hat a^\dagger_{\mathbf p_B}|0\rangle , \qquad |f\rangle = \sqrt{2E_1}\sqrt{2E_2}\,\hat a^\dagger_{\mathbf p_1}\hat a^\dagger_{\mathbf p_2}|0\rangle , \qquad \{\mathbf p_1, \mathbf p_2\} \ne \{\mathbf p_A, \mathbf p_B\} .
@@ -209,7 +209,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{\lambda^2}{64\pi^2E_{\rm cm}^2} , \qquad \sigma = \frac{1}{2!}\int d\Omega\,\frac{\lambda^2}{64\pi^2E_{\rm cm}^2} = \frac12\cdot4\pi\cdot\frac{\lambda^2}{64\pi^2E_{\rm cm}^2} = \frac{\lambda^2}{32\pi E_{\rm cm}^2} ,
 > $$
 >
-> the vault's [[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-2|Example §C6b.9.2]] (the two homes agree). Check: $[\lambda] = 0$, $[\sigma] = -2$, an area.
+> the vault's [[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-2|Example §C6b.9.2]] (the two homes agree) and Lecture 16, slide 19. Check: $[\lambda] = 0$, $[\sigma] = -2$, an area. No angular dependence (spinless particles, lowest order) and $E_{\rm cm}^{-2}$ from dimensional analysis ([[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^rem-c6b-7-2|§C6b.7, Remark: Why 1/E²: dimensional analysis]]).
 >
 > **Pitfalls.**
 > - *Free states are lowest order.* Beyond it each external line carries $\sqrt Z$ and the physical mass, and loops on external legs are not part of $\mathcal M$ ([[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]]; [[§C6b.9 Amplitudes from Correlation Functions#^cau-c6b-9-2|§C6b.9, Caution: The rule is stated at lowest order]]).
@@ -218,7 +218,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > - *$\frac{1}{S_{\rm id}}$ belongs to $\sigma$, not to $d\sigma/d\Omega$* at a given angle ([[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-4|Theorem §C6b.6.4]]), and it is not the symmetry factor $S = 1$ of the diagram ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]]).
 > - *$|\mathbf v_A - \mathbf v_B|$ is not a relative velocity* ([[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^cau-c6b-7-1|§C6b.7, Caution: The velocity difference is not a relative velocity]]).
 >
-> *Source: PS §4.5, pp. 106–107, eqs. (4.79), (4.84)–(4.85) · Yu §6.5.1–§6.5.3 (the box route; homes as linked) · the user's PHY 513 notes, Ch. 15 §15.9 (paragraph "The $\phi^4$ example (filled in)")*
+> *Source: PS §4.5, pp. 106–107, eqs. (4.79), (4.84)–(4.85); §4.6, p. 112, eqs. (4.99)–(4.100) · Yu §6.5.1–§6.5.3 (the box route; homes as linked) · the user's PHY 513 notes, Ch. 15 §15.9 (paragraph "The $\phi^4$ example (filled in)") · PHY 513 Lecture 16, slide 19 ("No angular dependence (feature of spin-less particles). Simple energy dependence (follows by dimensional analysis). Special to $\phi^4$-theory at leading order"; $\sigma_{\rm tot} = \lambda^2/(32\pi E_{\rm cm}^2)$, "note: identical particles")*
 
 ^ex-c6b-11-3
 
@@ -284,7 +284,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > **Situation** (question 1: no; question 5: lowest order). [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]], $\mathcal L_{\rm int} = -\frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4$, an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]. At order $g$ every process between on-shell particles is forbidden ([[§C6b.2 Matrix Elements between Particle States#^ex-c6b-2-3|Example §C6b.2.3]]), so $g^2$ and $\lambda$ are the lowest orders of $2 \to 2$.
 >
-> **States and vacuum.** Free relativistic states over $|0\rangle$, valid at lowest order; the external momenta are labels, one per particle, never relabelled, and $\{\mathbf p_1, \mathbf p_2\} \ne \{\mathbf p_A, \mathbf p_B\}$ ([[§C6b.2 Matrix Elements between Particle States#^def-c6b-2-1|Def. §C6b.2.1]], 1).
+> **States and vacuum.** Free relativistic states over $|0\rangle$, valid at lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]]); the external momenta are labels, one per particle, never relabelled, and $\{\mathbf p_1, \mathbf p_2\} \ne \{\mathbf p_A, \mathbf p_B\}$ ([[§C6b.2 Matrix Elements between Particle States#^def-c6b-2-1|Def. §C6b.2.1]], 1).
 >
 > **Object.** The term with $n_3$ cubic and $n_4$ quartic vertices of $\langle\mathbf p_1\mathbf p_2|\hat S|\mathbf p_A\mathbf p_B\rangle$ ([[§C6b.2 Matrix Elements between Particle States#^der-c6b-2-7|Derivation §C6b.2.7]], Step 1), of order $g^{n_3}\lambda^{n_4}$:
 >

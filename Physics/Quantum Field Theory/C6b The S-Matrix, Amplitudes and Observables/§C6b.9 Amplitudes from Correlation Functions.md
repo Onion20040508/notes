@@ -162,7 +162,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > [!example] Example §C6b.9.2: The φ⁴ Cross Section at Lowest Order
 > ![[ph-qft-c6b-9-1.svg]]
 >
-> For $\phi\phi \to \phi\phi$ at first order, $|\mathcal M|^2 = \lambda^2$ ([[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-1|Example §C6b.9.1]]), and all four masses are equal, so by [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-8|Theorem §C6b.7.8]] the scattering is isotropic in the centre-of-mass frame:
+> For $\phi\phi \to \phi\phi$ at first order, $|\mathcal M|^2 = \lambda^2$ ([[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-1|Example §C6b.9.1]]), and all four masses are equal, so by [[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-7-8|Theorem §C6b.7.8]] the scattering is isotropic in the centre-of-mass frame ("no angular dependence (feature of spin-less particles)", slide 19):
 >
 > $$
 > \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{\lambda^2}{64\pi^2E_{\rm cm}^2} , \qquad \sigma_{\rm total} = \frac12\cdot4\pi\cdot\frac{\lambda^2}{64\pi^2E_{\rm cm}^2} = \frac{\lambda^2}{32\pi E_{\rm cm}^2} .
@@ -180,7 +180,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 >
 > The diagram's symmetry factor is $S = 1$; the two factors are different things ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]]). The cross section falls like $1/E_{\rm cm}^2$, as dimensional analysis requires for a dimensionless $\mathcal M$ ([[§C6b.7 Lorentz Invariance and Two-Body Phase Space#^rem-c6b-7-2|§C6b.7, Remark: Why 1/E²: dimensional analysis]]).
 >
-> *Source: the user's PHY 513 notes, Ch. 15 §15.9 (paragraph "The $\phi^4$ example (filled in)") · checked in `qft-C/tools/l15/checks.py`*
+> *Source: the user's PHY 513 notes, Ch. 15 §15.9 (paragraph "The $\phi^4$ example (filled in)") · PHY 513 Lecture 16, slide 19 ("No angular dependence (feature of spin-less particles). Simple energy dependence (follows by dimensional analysis). Special to $\phi^4$-theory at leading order"; $\sigma_{\rm tot} = \lambda^2/(32\pi E_{\rm cm}^2)$, "note: identical particles") · PS §4.6, p. 112, eqs. (4.99)–(4.100) · checked in `qft-C/tools/l15/checks.py`*
 
 ^ex-c6b-9-2
 
@@ -290,7 +290,7 @@ The diagrams of a scattering amplitude ([[§C6b.2 Matrix Elements between Partic
 ^rem-c6b-9-4
 
 > [!remark] Remark: Next: Feynman rules for amplitudes
-> Lecture 16 (Nov 2, PS §4.6) justifies the stripping rule and gives Feynman rules for amplitudes, first in $\phi^4$ theory, then for Yukawa theory and QED, where external lines carry spinors and polarization vectors instead of propagators (QFT C7, planned). PS start from the same definition, $\langle\mathbf p_1\mathbf p_2\cdots|S|\mathbf k_A\mathbf k_B\rangle = \lim_{T\to\infty}\langle\mathbf p_1\mathbf p_2\cdots|e^{-iH(2T)}|\mathbf k_A\mathbf k_B\rangle$ (eq. (4.87)), and relate the interacting states to free ones by the same $T \to \infty(1 - i\epsilon)$ device as for the vacuum (eq. (4.88); [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]).
+> Lecture 16 (Nov 2, PS §4.6) justifies the stripping rule and gives Feynman rules for amplitudes, first in $\phi^4$ theory, then for Yukawa theory and QED, where external lines carry spinors and polarization vectors instead of propagators (QFT C7, planned). PS start from the same definition, $\langle\mathbf p_1\mathbf p_2\cdots|S|\mathbf k_A\mathbf k_B\rangle = \lim_{T\to\infty}\langle\mathbf p_1\mathbf p_2\cdots|e^{-iH(2T)}|\mathbf k_A\mathbf k_B\rangle$ (eq. (4.87)), and relate the interacting states to free ones by the same $T \to \infty(1 - i\epsilon)$ device as for the vacuum (eq. (4.88); [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]). Lecture 16 states this as a prescription: [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|Principle §C6b.1.2]].
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.10 (paragraph "Next.") · PS §4.6, p. 108, eqs. (4.87)–(4.88) · PHY 513 Lecture 15, transcript ("which you don't really [know], but you will on Monday") · [[PHY 513 Course Log]] (Lecture 16: PS §4.6)*
 

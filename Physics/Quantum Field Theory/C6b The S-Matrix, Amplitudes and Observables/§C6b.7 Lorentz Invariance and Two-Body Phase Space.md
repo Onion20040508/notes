@@ -449,7 +449,7 @@ With it, [[§C6b.6 Evaluating the Cross Section#^thm-c6b-6-2|Theorem §C6b.6.2]]
 > [!remark] Remark: Why 1/E²: dimensional analysis
 > The result could have been guessed. $d\sigma/d\Omega$ is an area and $\mathcal M$ is dimensionless for $2 \to 2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]), so the prefactor has dimension $(\text{energy})^{-2}$. "If particles do not sort of distinguish each other, kinematically speaking, total energy is [the] only [scale]. So it had to be basically one over the energy squared. All we can discuss is did I get the $64\pi^2$." A total cross section with an energy-independent $|\mathcal M|^2$ therefore falls like $1/E_{\rm cm}^2$ ([[§C6b.9 Amplitudes from Correlation Functions#^ex-c6b-9-2|Example §C6b.9.2]]).
 >
-> *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.7 (paragraph "Why $1/E_{\rm cm}^2$")*
+> *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.7 (paragraph "Why $1/E_{\rm cm}^2$") · PHY 513 Lecture 16, slide 19 ("No angular dependence (feature of spin-less particles). Simple energy dependence (follows by dimensional analysis). Special to $\phi^4$-theory at leading order"; $\sigma_{\rm tot} = \lambda^2/(32\pi E_{\rm cm}^2)$, "note: identical particles")*
 
 ^rem-c6b-7-2
 

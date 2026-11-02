@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C6b The S-Matrix, Amplitudes and Observables
 ← [[· C6a Interactions and Correlation Functions]] · ↑ [[Quantum Field Theory]] · [[· C9 Discrete Symmetries and Majorana Fields]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (16), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (67), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (20), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (80), [[· CA Mathematical Methods|CA Mathematical Methods]] (73)
-**Used by:** [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (26), [[· CA Mathematical Methods|CA Mathematical Methods]] (1)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (16), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (67), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (21), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (103), [[· CA Mathematical Methods|CA Mathematical Methods]] (73)
+**Used by:** [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (27), [[· CA Mathematical Methods|CA Mathematical Methods]] (1)
 
 C6b computes **$S$-matrix elements and the observables made from them** (Lecture 15 and Problem Set 8; the user's notes, Ch. 15): the $S$-matrix and the invariant amplitude $\mathcal M$ (§C6b.1), matrix elements between particle states: contractions with external particles, Wick's theorem between particle states, the first-order matrix elements and the tree-level rules for $i\mathcal M$ (§C6b.2), the cross section by Yu's box route, the main line (transition probabilities in a box §C6b.3, the cross section §C6b.4, with every factor of $d\sigma$ labelled by its origin), the same cross section from wave packets, the course's careful version (§C6b.5–§C6b.6), Lorentz invariance and two-body phase space (§C6b.7), decay rates and widths (§C6b.8), amplitudes as amputated correlation functions (§C6b.9, [[§C6b.9 Amplitudes from Correlation Functions#^thm-c6b-9-1|Theorem §C6b.9.1]]), particle production by a classical source (§C6b.10), and worked translations of questions as asked into the formulas that answer them (§C6b.11, [[§C6b.11 From the Question to the Formula|From the Question to the Formula]]; procedures [[P5 Symmetry Factor of a Diagram|P5]]–[[P7 From ℳ to σ or Γ|P7]]). The correlation functions, Wick's theorem and the Feynman rules it starts from are in [[· C6a Interactions and Correlation Functions]]. In Yu's book the material of C6b is in §6.2, §6.5, ch. 7 (the $S$-matrix rules), §10.3 and §10.6.
 
@@ -42,6 +42,9 @@ C6b follows the course (Lecture 15) and the user's notes (Ch. 15), except for th
 - [[§C6b.9 Amplitudes from Correlation Functions]] — 513 notes Ch. 15 §15.9–§15.10; PS §4.5, p. 99; §4.6, p. 108
 - [[§C6b.10 Particle Production by a Classical Source꞉ the Diagrammatic Route]] — PHY 513 Problem Set 8, Problem 3; PS Problem 4.1
 - [[§C6b.11 From the Question to the Formula]] — PHY 513 Problem Set 8, Problems 2–4; PS §4.5, pp. 106–108
+
+## Principles
+- [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|§C6b.1.2]] Interacting In and Out States
 
 ## Theorems
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|§C6b.1.1]] S-Matrix Elements and the Interaction-Picture Evolution Operator
