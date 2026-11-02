@@ -13,13 +13,15 @@ tags: [chapter, quantum-field-theory]
 
 ## Sections
 - [[§C9.1 Discrete Lorentz Transformations]] — 513 notes Ch. 11 §11.1
-- [[§C9.2 Parity of the Scalar Field]] — Yu §9.1.1; PHY 513, Problem Set 7, Problem 4
+- [[§C9.2 Parity of the Scalar Field]] — Yu §9.1.1; PHY 513, Problem Set 7, Problem 4(a)–(b)
 - [[§C9.3 Parity on States, Spinors and the Dirac Field]] — 513 notes Ch. 11 §§11.2–11.4
 - [[§C9.4 Fermion Bilinears under Parity]] — 513 notes Ch. 11 §§11.5–11.7; PHY 513, Problem Set 7, Problem 2(a)
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase]] — Yu §9.1.1
 - [[§C9.6 Charge Conjugation on Oscillators and Spinors]] — 513 notes Ch. 12 §§12.1–12.2
 - [[§C9.7 Charge Conjugation on the Field and Bilinears]] — 513 notes Ch. 12 §12.3; PHY 513, Problem Set 7, Problem 2(b)
 - [[§C9.8 Physical Spin versus Wave-Function Spin]] — 513 notes Ch. 12 §12.4
-- [[§C9.9 Time Reversal on States, Spinors and the Dirac Field]] — 513 notes Ch. 12 §12.5; PHY 513, Problem Set 7, Problem 2(c)
+- [[§C9.9 Time Reversal on States, Spinors and the Dirac Field]] — 513 notes Ch. 12 §12.5
+- [[§C9.10 Fermion Bilinears under Time Reversal]] — 513 notes Ch. 12 §12.5; PHY 513, Problem Set 7, Problem 2(c)
 - [[§C9.11 CPT and the CPT Theorem]] — 513 notes Ch. 12 §§12.6–12.7; PHY 513, Problem Set 7, Problems 2–3, 4(c)
 - [[§C9.12 C, T and CPT for the Complex Scalar Field]] — Yu §9.1.2–§9.1.3; PHY 513, Problem Set 7, Problem 4
 
@@ -35,13 +37,6 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.2 Parity of the Scalar Field#^thm-c9-2-5|§C9.2.5]] Parity on the Derivatives of the Field
 - [[§C9.2 Parity of the Scalar Field#^thm-c9-2-6|§C9.2.6]] The Scalar Bilinears under Parity
 - [[§C9.2 Parity of the Scalar Field#^thm-c9-2-7|§C9.2.7]] The Free Complex Scalar Lagrangian Is Parity Invariant
-- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-1|§C9.5.1]] Scalar Particles and Antiparticles Have the Same Intrinsic Parity
-- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-2|§C9.5.2]] The Parity of a Scalar Particle–Antiparticle Pair
-- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-3|§C9.5.3]] Parity on the Real Scalar Field
-- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-4|§C9.5.4]] The Free Real Lagrangian Is Invariant for Either Parity
-- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-5|§C9.5.5]] Parity Commutes with the Charge
-- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-6|§C9.5.6]] A Charge Rotation Multiplies the Field by a Phase
-- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-7|§C9.5.7]] The Parity Phase of a Complex Field Is a Convention
 - [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-1|§C9.3.1]] Parity on Creation Operators and One-Particle States
 - [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-2|§C9.3.2]] Parity Exchanges p·σ and p·σ̄
 - [[§C9.3 Parity on States, Spinors and the Dirac Field#^thm-c9-3-3|§C9.3.3]] Parity on the Positive-Frequency Spinors
@@ -57,6 +52,13 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-5|§C9.4.5]] The Free Dirac Lagrangian Is Parity Invariant
 - [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-6|§C9.4.6]] ★ The Parity Image of a Solution Solves the Dirac Equation
 - [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-7|§C9.4.7]] ★ Parity Exchanges Left- and Right-Handed Fields and Currents
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-1|§C9.5.1]] Scalar Particles and Antiparticles Have the Same Intrinsic Parity
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-2|§C9.5.2]] The Parity of a Scalar Particle–Antiparticle Pair
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-3|§C9.5.3]] Parity on the Real Scalar Field
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-4|§C9.5.4]] The Free Real Lagrangian Is Invariant for Either Parity
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-5|§C9.5.5]] Parity Commutes with the Charge
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-6|§C9.5.6]] A Charge Rotation Multiplies the Field by a Phase
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-7|§C9.5.7]] The Parity Phase of a Complex Field Is a Convention
 - [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-1|§C9.6.1]] Charge Conjugation on Creation Operators and One-Particle States
 - [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-2|§C9.6.2]] Mode Expansion of the Transposed Adjoint
 - [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-3|§C9.6.3]] Conjugation Reverses the Spin of a Two-Spinor
@@ -86,6 +88,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-6|§C9.9.6]] Time Reversal on the Negative-Frequency Spinors
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-7|§C9.9.7]] Time Reversal on the Dirac Field
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-8|§C9.9.8]] Time Reversal on the Dirac Conjugate Field
+- [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|§C9.9.9]] Time Reversal Twice Is −1 on Fermions
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-1|§C9.10.1]] The Vector Current under Time Reversal
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-2|§C9.10.2]] Time Reversal on a General Bilinear
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-3|§C9.10.3]] The Scalar Bilinear Is Time-Reversal Invariant
@@ -93,7 +96,6 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-5|§C9.10.5]] The Axial Vector under Time Reversal
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-6|§C9.10.6]] The Tensor Bilinear under Time Reversal
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-7|§C9.10.7]] The Free Dirac Lagrangian Is Time-Reversal Invariant
-- [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|§C9.9.9]] Time Reversal Twice Is −1 on Fermions
 - [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-1|§C9.11.1]] The Three Matrices Multiply to γ⁵
 - [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-2|§C9.11.2]] Θ Is Antiunitary
 - [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-3|§C9.11.3]] CPT on the Dirac Field
