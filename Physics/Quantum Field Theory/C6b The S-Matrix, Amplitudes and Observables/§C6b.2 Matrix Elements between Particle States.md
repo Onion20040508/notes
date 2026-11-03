@@ -494,7 +494,7 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > [!example] Example §C6b.2.2: Φφ² at First Order: the Factor 2 of Φ → φφ
 > ![[ph-qft-c6b-2-2.svg]]
 >
-> In [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-6|Model §C6b.9.6]] ($\mathcal L_{\rm int} = -\mu\Phi\phi^2$, masses $M$, $m$), the first-order processes are:
+> In [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-7|Model §C6b.9.7]] ($\mathcal L_{\rm int} = -\mu\Phi\phi^2$, masses $M$, $m$), the first-order processes are:
 >
 > | in → out | loops | $i\mathcal M$ | kinematics ([[§C6b.2 Matrix Elements between Particle States#^thm-c6b-2-6\|Theorem §C6b.2.6]]) |
 > |---|---|---|---|
@@ -555,4 +555,4 @@ This is **exact** in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0
 > - The contraction of a field with an external particle is the one-particle wave function $\langle0|\hat\phi(x)|\mathbf p\rangle = e^{-ip\cdot x}$; with interactions it carries $\sqrt Z$, the origin of the LSZ factor — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]], [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]].
 > - The $n!$ of identical particles appears twice: as the sum over $\sigma$ when particles attach to fields, and as the $\frac{1}{n!}$ of the $n$-particle measure ($S_{\rm id}$) — [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-5|Theorem §C6b.11.5]], [[§C6b.7 Evaluating the Cross Section#^thm-c6b-7-4|Theorem §C6b.7.4]].
 > - The same expansion with a source vertex is exact and solves the classical-source problem — [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6b.11]].
-> - The kinematic filter is the threshold of a decay, $M > \sum m_i$, the condition of the two-body decay formula — [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-5|Theorem §C6b.9.5]].
+> - The kinematic filter is the threshold of a decay, $M > \sum m_i$, the condition of the two-body decay formula — [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-6|Theorem §C6b.9.6]].

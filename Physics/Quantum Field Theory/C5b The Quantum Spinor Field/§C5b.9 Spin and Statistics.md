@@ -44,6 +44,23 @@ The chapter closes where Lecture 10 began, with spin and statistics. The theorem
 
 *Uses:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-4|Theorem §C5b.7.4]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]]
 
+> [!law] Law §C5b.9.2: Electrons Are Fermions, Photons Are Bosons
+> Electrons (spin ½) obey Fermi–Dirac statistics and photons (spin 1) Bose–Einstein statistics: the occupation number of one mode is
+>
+> $$
+> n_{\rm electron} \in \{0, 1\} , \qquad n_{\rm photon} \in \{0, 1, 2, \dots\} .
+> $$
+>
+> For electrons this is the exclusion principle ([[§A5.3 The Exclusion Principle and the Periodic Table#^pr-a5-3-2|QM Principle §A5.3.2]]), which the anticommutators of the Dirac field reproduce ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|Theorem §C5b.4.2]]); for photons it is the multiple occupation of commuting oscillators ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]] for spin 0). It is the observed side of the spin–statistics connection ([[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-7|Principle §C5b.1.7]], checked for the course's free fields in [[§C5b.9 Spin and Statistics#^thm-c5b-9-1|Theorem §C5b.9.1]]).
+>
+> *Valid when:* every observation so far. Evidence, as these notes state it: atomic spectra and the periodic table for electrons ([[§C5b.1 Canonical Quantization of the Dirac Field#^rem-c5b-1-6|§C5b.1, Remark: Spin and statistics are an output]]), the structure of degenerate Fermi gases and the stability of matter (Connections below), and many photons in one mode in a laser. Dates and bounds: not given in the sources.
+>
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] (electrons) and the photon field [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^mod-c4-8-4|Model §C4.8.4]]; *applies:* an experimental input of nonrelativistic quantum mechanics that relativistic quantum field theory reproduces as an output ("It's an output, not an input", Lecture 10).
+>
+> *Source: the user's PHY 513 notes, Ch. 10 §10.2 (paragraph "Spin and statistics are an output": "one is told, or shown by spectroscopy, that two electrons cannot occupy the same state … Photons, by contrast, are bosons, which is why many of them can occupy one mode, as in a laser") · PHY 513 Lecture 10, transcript (end of the lecture)*
+
+^law-c5b-9-2
+
 > [!remark] Remark: Two arguments, one answer
 > Peskin–Schroeder reach anticommutators twice: once from causality, by requiring that $\langle0|\hat\psi\hat{\bar\psi}|0\rangle$ and $\langle0|\hat{\bar\psi}\hat\psi|0\rangle$ cancel outside the cone ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]]), and once from positivity of the energy ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]). That two unrelated requirements select the same quantization is the content of the spin–statistics connection. It changes layer relative to Quantum Mechanics, where Fermi statistics of half-integer-spin particles is a postulate ([[§C12.1★ Permutation Symmetry and the Symmetrization Postulate#^pr-c12-1-4|QM Principle §C12.1.4]]): here it is derived for the Dirac field, and the half-integer representations it applies to are exactly those with the sign $-1$ under a $2\pi$ rotation ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]]; [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]]).
 >

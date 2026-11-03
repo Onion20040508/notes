@@ -49,6 +49,9 @@ C6b follows the course (Lectures 15–16) and the user's notes (Ch. 15, Lecture 
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-2|§C6b.1.2]] Cluster Decomposition
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|§C6b.1.3]] Interacting In and Out States
 
+## Laws
+- [[§C6b.9 Decay Rates and Widths#^law-c6b-9-2|§C6b.9.2]] The Exponential Decay Law
+
 ## Theorems
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|§C6b.1.1]] S-Matrix Elements and the Interaction-Picture Evolution Operator
 - [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|§C6b.1.4]] The S-Matrix Conserves Four-Momentum
@@ -93,14 +96,14 @@ C6b follows the course (Lectures 15–16) and the user's notes (Ch. 15, Lecture 
 - [[§C6b.8 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-8-6|§C6b.8.6]] The Centre-of-Mass Momentum
 - [[§C6b.8 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-8-7|§C6b.8.7]] The 2 → 2 Differential Cross Section in the Centre-of-Mass Frame
 - [[§C6b.8 Lorentz Invariance and Two-Body Phase Space#^thm-c6b-8-8|§C6b.8.8]] All Masses Equal
-- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-2|§C6b.9.2]] The Transition Probability of One Particle in a Box
-- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-3|§C6b.9.3]] The Decay Rate into Fixed Final Momenta
-- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-4|§C6b.9.4]] The Decay Rate Formula
-- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-5|§C6b.9.5]] Two-Body Decays
-- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-7|§C6b.9.7]] ★ Partial Widths Add
-- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-9|§C6b.9.9]] The Propagator Near Its Pole
-- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-10|§C6b.9.10]] The Width Is Invariant; the Decay Rate Is Time-Dilated
-- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-11|§C6b.9.11]] The Breit–Wigner Shape and Its Width
+- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-3|§C6b.9.3]] The Transition Probability of One Particle in a Box
+- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-4|§C6b.9.4]] The Decay Rate into Fixed Final Momenta
+- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-5|§C6b.9.5]] The Decay Rate Formula
+- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-6|§C6b.9.6]] Two-Body Decays
+- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-8|§C6b.9.8]] ★ Partial Widths Add
+- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-10|§C6b.9.10]] The Propagator Near Its Pole
+- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-11|§C6b.9.11]] The Width Is Invariant; the Decay Rate Is Time-Dilated
+- [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-12|§C6b.9.12]] The Breit–Wigner Shape and Its Width
 - [[§C6b.10 Amplitudes from Correlation Functions#^thm-c6b-10-1|§C6b.10.1]] Amplitudes Are Amputated Correlation Functions
 - [[§C6b.10 Amplitudes from Correlation Functions#^thm-c6b-10-2|§C6b.10.2]] The Disconnected Pieces of the Free Four-Point Function Do Not Scatter
 - [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-1|§C6b.11.1]] The Vacuum-Persistence Amplitude of a Source
@@ -116,5 +119,5 @@ C6b follows the course (Lectures 15–16) and the user's notes (Ch. 15, Lecture 
 - [[§C6b.5 The Cross Section#^mod-c6b-5-1|§C6b.5.1]] Beam on a Fixed Target
 - [[§C6b.6 Wave Packets and the Cross Section#^mod-c6b-6-1|§C6b.6.1]] Colliding Wave Packets
 - [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-1|§C6b.9.1]] A Decaying Particle at Rest
-- [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-6|§C6b.9.6]] Two Scalar Fields with a Φφ² Coupling
-- [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-8|§C6b.9.8]] The Propagator of an Unstable Particle
+- [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-7|§C6b.9.7]] Two Scalar Fields with a Φφ² Coupling
+- [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-9|§C6b.9.9]] The Propagator of an Unstable Particle

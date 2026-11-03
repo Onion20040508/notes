@@ -22,6 +22,8 @@ Why must a theory that is both quantum and relativistic be a theory of fields? Q
 >
 > *Valid when:* energy transfers are comparable to the rest energies involved; for massless quanta, at any energy.
 >
+> *Model:* none (an empirical statement about relativistic processes, as in the Setup); *applies:* as in its *Valid when* line; an experimental input, not derived in the course.
+>
 > *Source: the user's PHY 513 notes, Ch. 1 §1.1 (Motivations 1–2) · PHY 513 Lecture 1, Part A ("Motivation 1: Technical") · PS §2.1, p. 13*
 
 ^law-c1a-1-1
@@ -72,7 +74,7 @@ Why must a theory that is both quantum and relativistic be a theory of fields? Q
 ^rem-c1a-1-5
 
 > [!remark] Remark: Hole theory, and why it is not enough
-> Dirac's first-order equation removes the negative densities but not the negative energies. His remedy fills every negative-energy state; the Pauli principle then keeps positive-energy electrons out of them, and a missing electron of charge $-e$ and energy $-|E|$ behaves as a particle of charge $+e$ and energy $+|E|$, the positron, observed by Anderson in 1932 ([[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]). Three problems remain: the infinite charge density of the sea produces no observed field; an equation introduced for one particle is interpreted through infinitely many; and bosons, which obey no exclusion principle, cannot be helped this way. That a relativistic wave equation for one particle runs into so many difficulties suggests that the framework itself must change.
+> Dirac's first-order equation removes the negative densities but not the negative energies. His remedy fills every negative-energy state; the Pauli principle then keeps positive-energy electrons out of them, and a missing electron of charge $-e$ and energy $-|E|$ behaves as a particle of charge $+e$ and energy $+|E|$, the positron, observed by Anderson in 1932 (published 1933; [[§C5a.7 The Dirac Equation and Its Lagrangian#^law-c5a-7-9|Law §C5a.7.9]]; [[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]). Three problems remain: the infinite charge density of the sea produces no observed field; an equation introduced for one particle is interpreted through infinitely many; and bosons, which obey no exclusion principle, cannot be helped this way. That a relativistic wave equation for one particle runs into so many difficulties suggests that the framework itself must change.
 >
 > *Source: Yu §1.1 · the user's pre-course notes, §1.1 (Key point "Problems with hole theory")*
 

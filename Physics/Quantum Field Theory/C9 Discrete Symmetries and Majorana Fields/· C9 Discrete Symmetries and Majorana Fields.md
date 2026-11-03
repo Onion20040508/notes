@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # C9 Discrete Symmetries and Majorana Fields
 ← [[· C6b The S-Matrix, Amplitudes and Observables]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (73), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (152), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (120), [[· CA Mathematical Methods|CA Mathematical Methods]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (38)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (73), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (153), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121), [[· CA Mathematical Methods|CA Mathematical Methods]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (38)
 **Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (4), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (4)
 
 ## Sections
@@ -27,6 +27,9 @@ tags: [chapter, quantum-field-theory]
 
 ## Principles
 - [[§C9.8 Physical Spin versus Wave-Function Spin#^pr-c9-8-4|§C9.8.4]] Physical Spin Is the Eigenvalue of an Operator
+
+## Laws
+- [[§C9.4 Fermion Bilinears under Parity#^law-c9-4-8|§C9.4.8]] The Discrete Symmetries in Nature
 
 ## Theorems
 - [[§C9.1 Discrete Lorentz Transformations#^thm-c9-1-1|§C9.1.1]] Identities of the Parity Matrix

@@ -454,11 +454,28 @@ Quantum Mechanics runs the same computation backwards: there, requiring each com
 ^rem-c5a-7-3
 
 > [!remark] Remark: Negative frequency and antiparticles
-> The negative-frequency solutions cannot be discarded: they are needed to build a general solution, as $e^{+ip\cdot x}$ was for the scalar ([[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]). Classically they carry negative energy (Theorem §C5a.9.2); after quantization with anticommutators they describe *positive*-energy antiparticles of opposite charge ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]]); the lecture's analogy is the current in a wire, carried by negative electrons moving the other way. This is how Dirac was led to the positron (predicted 1931, observed by Anderson in 1932; [[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]). The free equations are symmetric between matter and antimatter; why the universe is not is a question of initial conditions or of other dynamics.
+> The negative-frequency solutions cannot be discarded: they are needed to build a general solution, as $e^{+ip\cdot x}$ was for the scalar ([[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]). Classically they carry negative energy (Theorem §C5a.9.2); after quantization with anticommutators they describe *positive*-energy antiparticles of opposite charge ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]]); the lecture's analogy is the current in a wire, carried by negative electrons moving the other way. This is how Dirac was led to the positron (predicted 1931, observed by Anderson in 1932, published 1933; [[§C5a.7 The Dirac Equation and Its Lagrangian#^law-c5a-7-9|Law §C5a.7.9]]; [[§C13.2★ The Dirac Equation#^rem-c13-2-7|QM Remark: The Dirac sea, the positron, and CPT]]). The free equations are symmetric between matter and antimatter; why the universe is not is a question of initial conditions or of other dynamics.
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.11 (paragraph "Negative energy, antiparticles, and what the equations do not decide") · PHY 513 Lecture 8, Part C*
 
 ^rem-c5a-7-4
+
+> [!law] Law §C5a.7.9: The Positron: the Electron Has an Antiparticle
+> The electron has an antiparticle, the positron $e^+$, of the same mass, opposite charge and positive energy:
+>
+> $$
+> m_{e^+} = m_{e^-} , \qquad q_{e^+} = -q_{e^-} = +e .
+> $$
+>
+> Dirac predicted it from the negative-frequency solutions (1931; [[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-4|Remark: Negative frequency and antiparticles]]); Anderson observed it in 1932 (published 1933). In the quantized Dirac field it is the antiparticle of [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]] (spin 0: [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]]); that the masses are equal with interactions too follows from CPT ([[§C9.11 CPT and the CPT Theorem#^thm-c9-11-6|Theorem §C9.11.6]]).
+>
+> *Valid when:* every observation so far. Evidence: a cloud-chamber track of a positive particle whose energy loss fits the electron's mass, not the proton's (Anderson, Phys. Rev. 43 (1933) 491; Sakurai Fig. 8.1); the masses agree to $(m_{e^+} - m_{e^-})/\tfrac12(m_{e^+} + m_{e^-}) < 8\times10^{-9}$ at 90 % confidence (Yu (9.343), as in [[§C9.4 Fermion Bilinears under Parity#^law-c9-4-8|Law §C9.4.8]], 4).
+>
+> *Model:* the free Dirac field ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]) and its quantization ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]); *applies:* an experimental input; the field theory reads the negative-frequency solutions as this particle, it does not supply the observation.
+>
+> *Source: the user's PHY 513 notes, Ch. 8 §8.11 ("Dirac was led to predict the positron (1931), found by Anderson in 1932") · PHY 513 Lecture 8, Part C · Yu §1.1, p. 2 ("the positron was discovered by Carl Anderson in 1932", translated; his ref. [5]: C. D. Anderson, "The positive electron," Phys. Rev. 43 (1933) 491–494) · Sakurai §8.2.3, Fig. 8.1 (Anderson, Phys. Rev. 43 (1933) 491; "the original discovery of the positron, by Carl Anderson in 1933", dated by the publication) · Yu §9.5, eq. (9.343), p. 407*
+
+^law-c5a-7-9
 
 > [!remark] Remark: In what sense the equations hold
 > For the classical field of this section $\psi$ is a $C^2$ function falling off at spatial infinity, and every statement holds pointwise. Plane waves $u\,e^{-ip\cdot x}$ are not in that class; they solve the Dirac equation pointwise but are tempered distributions as fields on spacetime ([[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]]), and the Dirac operator acts on them through distributional derivatives, $\langle\partial_\mu T, f\rangle = -\langle T, \partial_\mu f\rangle$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]), which here agree with ordinary ones. Covariance (Theorem §C5a.7.1) holds in $\mathcal S'$ because linear changes of variables are defined there ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]). The quantized field is an operator-valued distribution ([[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]]) and satisfies the Dirac equation smeared with test functions ([[§C5b.1 Canonical Quantization of the Dirac Field#^def-c5b-1-5|Def. §C5b.1.5]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]]).

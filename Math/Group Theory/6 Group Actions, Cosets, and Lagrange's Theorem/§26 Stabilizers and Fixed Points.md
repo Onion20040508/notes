@@ -25,7 +25,7 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - Stabilizers enter [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer]]; under conjugation the stabilizer is the [[§34 Conjugation as an Action and the Class Equation#^def-34-1|centralizer]].
 > - Called the isotropy subgroup in 591, [[§14 Homogeneous Spaces#^def-14-3|591 Def. §14.3]]; for a [[§13 Group Actions and Orbit Spaces#^def-13-2|continuous action]] on a space whose points are closed it is a closed subgroup, [[§14 Homogeneous Spaces#^thm-14-2|591 Thm. §14.2]].
-> - Used in Quantum Field Theory: the stabilizer of a particle's standard momentum under the Lorentz group is its little group, $SO(3)$ for a massive particle, whose representations are the particle's spin — [[§C3.6★ Particle States and the Little Group#^def-c3-6-1|QFT Def. §C3.6.1]], [[§C3.6★ Particle States and the Little Group#^thm-c3-6-7|QFT Theorem §C3.6.7]], [[§C3.6★ Particle States and the Little Group#^thm-c3-6-8|QFT Theorem §C3.6.8]].
+> - Used in Quantum Field Theory: the stabilizer of a particle's standard momentum under the Lorentz group is its little group, $SO(3)$ for a massive particle, whose representations are the particle's spin — [[§C3.6★ Particle States and the Little Group#^def-c3-6-1|QFT Def. §C3.6.1]], [[§C3.6★ Particle States and the Little Group#^thm-c3-6-8|QFT Theorem §C3.6.8]], [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|QFT Theorem §C3.6.9]].
 
 > [!definition] Definition §26.2: Fixed Points
 > For $g \in G$, the **fixed points** of $g$ are

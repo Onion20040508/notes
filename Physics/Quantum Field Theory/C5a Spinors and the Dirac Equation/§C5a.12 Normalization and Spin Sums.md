@@ -338,7 +338,7 @@ How are the spinors $u^s(p)$, $v^s(p)$ of [[§C5a.11 The Spinors u(p), v(p) and 
 > **Step 4** (the conjugate). $\Lambda_{1/2}^\dagger\gamma^0 = \gamma^0\Lambda_{1/2}^{-1}$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], 2), so $\overline{\Lambda_{1/2}w} = w^\dagger\Lambda_{1/2}^\dagger\gamma^0 = w^\dagger\gamma^0\Lambda_{1/2}^{-1} = \bar w\,\Lambda_{1/2}^{-1}$ ([[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]). Then $\sum_s(\Lambda_{1/2}u^s)\overline{(\Lambda_{1/2}u^s)} = \Lambda_{1/2}\bigl(\sum_su^s\bar u^s\bigr)\Lambda_{1/2}^{-1} = \Lambda_{1/2}(\slashed{p} + m)\Lambda_{1/2}^{-1} = \slashed{(\Lambda p)} + m$ by [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]] and part 1. Same for $v$ with [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]]. Part 2.
 >
 > **What the derivation shows**
-> - $\Lambda_{1/2}u^s(p)$ need not equal $u^s(\Lambda p)$ (for a boost not along $\mathbf p$ the spin labels are rotated by a Wigner rotation, [[§C3.6★ Particle States and the Little Group#^thm-c3-6-3|Theorem §C3.6.3]]), but the spin sum does not care: it depends only on the solution space.
+> - $\Lambda_{1/2}u^s(p)$ need not equal $u^s(\Lambda p)$ (for a boost not along $\mathbf p$ the spin labels are rotated by a Wigner rotation, [[§C3.6★ Particle States and the Little Group#^thm-c3-6-4|Theorem §C3.6.4]]), but the spin sum does not care: it depends only on the solution space.
 > - The invariance of $\bar ab$ under $a, b \to \Lambda_{1/2}a, \Lambda_{1/2}b$ (Step 4) also makes $\bar uu$ and $\bar vv$ frame independent, as computed in Theorems §C5a.12.2 and §C5a.12.4.
 
 ^der-c5a-12-9

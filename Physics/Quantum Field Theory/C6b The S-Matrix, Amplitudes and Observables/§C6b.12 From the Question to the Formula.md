@@ -105,13 +105,13 @@ A problem states a question in words: a probability, a lifetime, a cross section
 >
 > **Question as asked.** "Assume that the Lagrangian responsible for this decay is $\mathcal L = \frac12(\partial_\mu\Phi)^2 - \frac12M^2\Phi^2 + \frac12(\partial_\mu\phi)^2 - \frac12m^2\phi^2 - \mu\,\Phi\phi^2$ … Assuming that [$M > 2m$] is met, calculate the lifetime of the $\Phi$ to the lowest order in $\mu$" (PHY 513, Problem Set 8, Problem 4 = PS Problem 4.2).
 >
-> **Situation** (question 1: no, it never switches off; question 2: one $\Phi$ at rest, its decays counted per unit time). [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-6|Model §C6b.9.6]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]], with the decay setup [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-1|Model §C6b.9.1]]:
+> **Situation** (question 1: no, it never switches off; question 2: one $\Phi$ at rest, its decays counted per unit time). [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-7|Model §C6b.9.7]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]], with the decay setup [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-1|Model §C6b.9.1]]:
 >
 > $$
 > \hat H_{\rm int} = \mu\int d^3x\,\hat\Phi_S(\mathbf x)\,\hat\phi_S(\mathbf x)^2 \quad\text{for all } t , \qquad \Gamma = \frac{\text{decays per unit time}}{\text{number of }\Phi\text{ at rest}} , \qquad \tau = \frac1\Gamma
 > $$
 >
-> ([[§C6b.9 Decay Rates and Widths#^def-c6b-9-1|Def. §C6b.9.1]]). The potential is unbounded below (assumption 2 of Model §C6b.9.6): only the lowest order has a meaning.
+> ([[§C6b.9 Decay Rates and Widths#^def-c6b-9-1|Def. §C6b.9.1]]). The potential is unbounded below (assumption 2 of Model §C6b.9.7): only the lowest order has a meaning.
 >
 > **States and vacuum** (questions 3–5). Free relativistic states over the free vacuum $|0\rangle$ in place of the in and out states, valid at lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]; [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]]), as the decay formula needs ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]):
 >
@@ -131,15 +131,15 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > i\mathcal M = -i\mu\cdot1!\,2! = -2i\mu .
 > $$
 >
-> **Normalization and measure** (question 3). The decay formula ([[§C6b.9 Decay Rates and Widths#^thm-c6b-9-4|Theorem §C6b.9.4]]; PS (4.86)) and the $\frac{1}{2!}$ of two identical $\phi$'s ([[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-5|Theorem §C6b.11.5]], [[§C6b.7 Evaluating the Cross Section#^thm-c6b-7-4|Theorem §C6b.7.4]]):
+> **Normalization and measure** (question 3). The decay formula ([[§C6b.9 Decay Rates and Widths#^thm-c6b-9-5|Theorem §C6b.9.5]]; PS (4.86)) and the $\frac{1}{2!}$ of two identical $\phi$'s ([[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-5|Theorem §C6b.11.5]], [[§C6b.7 Evaluating the Cross Section#^thm-c6b-7-4|Theorem §C6b.7.4]]):
 >
 > $$
 > d\Gamma = \frac{1}{2M}\,|\mathcal M|^2\,d\Pi_2 , \qquad d\Pi_2 = \frac{d^3p_1}{(2\pi)^32E_1}\,\frac{d^3p_2}{(2\pi)^32E_2}\,(2\pi)^4\delta^4(K - p_1 - p_2) , \qquad \Gamma = \frac{1}{2!}\int d\Gamma .
 > $$
 >
-> The $\frac{1}{2M}$ is the $\frac{1}{2E_K}$ of the norm of the initial state at rest ([[§C6b.9 Decay Rates and Widths#^thm-c6b-9-2|Theorem §C6b.9.2]]).
+> The $\frac{1}{2M}$ is the $\frac{1}{2E_K}$ of the norm of the initial state at rest ([[§C6b.9 Decay Rates and Widths#^thm-c6b-9-3|Theorem §C6b.9.3]]).
 >
-> **Theorems.** Two-body phase space at rest ([[§C6b.9 Decay Rates and Widths#^thm-c6b-9-5|Theorem §C6b.9.5]], 1 and 3; Yu (6.383), (6.385)):
+> **Theorems.** Two-body phase space at rest ([[§C6b.9 Decay Rates and Widths#^thm-c6b-9-6|Theorem §C6b.9.6]], 1 and 3; Yu (6.383), (6.385)):
 >
 > $$
 > |\mathbf p_1| = \frac M2\,\beta , \qquad \int d\Pi_2 = \frac{|\mathbf p_1|}{4\pi M} = \frac{\beta}{8\pi} , \qquad \beta = \sqrt{1 - \frac{4m^2}{M^2}} .
@@ -156,8 +156,8 @@ A problem states a question in words: a probability, a lifetime, a cross section
 > **Pitfalls.**
 > - *The decaying state is not an asymptotic state.* "Since an unstable particle cannot be sent into the infinitely distant past, our definition (4.73) of $\mathcal M(m_A \to \{p_f\})$ in terms of the $S$-matrix makes no sense in this context. Nevertheless formula (4.86) is correct, when $\mathcal M$ is computed according to the Feynman rules" (PS pp. 107–108); $\Phi$ violates assumption 2 of Model §C6a.0.3 ([[§C6b.9 Decay Rates and Widths#^cau-c6b-9-1|§C6b.9, Caution: Free states in a decay amplitude]], [[§C6b.9 Decay Rates and Widths#^cau-c6b-9-2|§C6b.9, Caution: "Corollary of studying interacting wave function (2nd term)"]]).
 > - *Two different 2's.* The $2 = 2!$ in $\mathcal M$ counts the ways two distinct particles attach to the two $\phi$ legs (amplitude); the $\frac{1}{2!}$ in $\Gamma$ removes the double counting of $|\mathbf p_1\mathbf p_2\rangle = |\mathbf p_2\mathbf p_1\rangle$ (rate). Together $\frac{1}{2!}|\mathcal M|^2 = 2\mu^2$; dropping one changes $\Gamma$ by a factor 2 or 4.
-> - *The frame.* $\frac{1}{2M}$ holds at rest; in a frame where $\Phi$ moves the rate is $\frac{1}{2E_K}|\mathcal M|^2d\Pi_2 = \Gamma/\gamma$, time dilation ([[§C6b.9 Decay Rates and Widths#^thm-c6b-9-10|Theorem §C6b.9.10]]); $\tau$ is the rest-frame lifetime.
-> - *The normalization.* With $\hat a^\dagger|0\rangle$ states the matrix element loses $\sqrt{2E}$ per particle and the formula of Theorem §C6b.9.4 no longer applies ([[§C6b.2 Matrix Elements between Particle States#^cau-c6b-2-1|§C6b.2, Caution: Two normalizations of one-particle states]]).
+> - *The frame.* $\frac{1}{2M}$ holds at rest; in a frame where $\Phi$ moves the rate is $\frac{1}{2E_K}|\mathcal M|^2d\Pi_2 = \Gamma/\gamma$, time dilation ([[§C6b.9 Decay Rates and Widths#^thm-c6b-9-11|Theorem §C6b.9.11]]); $\tau$ is the rest-frame lifetime.
+> - *The normalization.* With $\hat a^\dagger|0\rangle$ states the matrix element loses $\sqrt{2E}$ per particle and the formula of Theorem §C6b.9.5 no longer applies ([[§C6b.2 Matrix Elements between Particle States#^cau-c6b-2-1|§C6b.2, Caution: Two normalizations of one-particle states]]).
 >
 > *Source: PHY 513, Problem Set 8, Problem 4 (statement; the user's solution, as written) · PS §4.5, pp. 107–108, eq. (4.86) · Yu §6.5.5, eqs. (6.383), (6.385) · homes as linked*
 

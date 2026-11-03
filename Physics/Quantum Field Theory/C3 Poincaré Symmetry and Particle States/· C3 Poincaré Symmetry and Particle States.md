@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C3 Poincaré Symmetry and Particle States
 ← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (57), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (25), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (40), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (15), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (3), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (9), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (6), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (11), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (89)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (10), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (14), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (67), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (54), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (7), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (1), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (6), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (2), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (47)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (58), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (25), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (41), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (15), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (3), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (9), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (6), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (11), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (89)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (10), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (14), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (71), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (54), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (7), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (1), [[· C6b The S-Matrix, Amplitudes and Observables|C6b The S-Matrix, Amplitudes and Observables]] (6), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (2), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (47)
 
 ## Sections
 - [[§C3.1 Index Slots, Rotations and Spin in Field Theory]] — 
@@ -26,6 +26,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.6★ Particle States and the Little Group#^pr-c3-6-1|§C3.6.1]] Particles Are Irreducible Unitary Representations
 
 ## Laws
+- [[§C3.6★ Particle States and the Little Group#^law-c3-6-2|§C3.6.2]] Physical Particles Have p² ≥ 0 and p⁰ > 0
 - [[§C3.7★ Massless Particles and Helicity#^law-c3-7-4|§C3.7.4]] Massless Particles Have No Continuous Spin
 
 ## Theorems
@@ -65,16 +66,16 @@ tags: [chapter, quantum-field-theory]
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-4|§C3.5.4]] The Free Scalar Field Carries a Unitary Representation
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-5|§C3.5.5]] The Free Scalar Field Transforms as a Scalar
 - [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|§C3.5.6]] The Noether Charges Are the Generators
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-2|§C3.6.2]] One Particle, One Orbit
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-3|§C3.6.3]] The Wigner Element Lies in the Little Group
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-4|§C3.6.4]] The Induced Representation
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|§C3.6.5]] The Induced States Are Relativistically Normalized
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-6|§C3.6.6]] The Little Groups of the Physical Orbits
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-7|§C3.6.7]] The Massive Little Group Is SO(3)
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-8|§C3.6.8]] Massive Particles Carry Spin
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|§C3.6.9]] Rotations Act by the Rotation Itself
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-10|§C3.6.10]] The Pauli–Lubanski Vector and the Second Casimir
-- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-11|§C3.6.11]] The Casimirs of a Massive Particle
+- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-3|§C3.6.3]] One Particle, One Orbit
+- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-4|§C3.6.4]] The Wigner Element Lies in the Little Group
+- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|§C3.6.5]] The Induced Representation
+- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-6|§C3.6.6]] The Induced States Are Relativistically Normalized
+- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-7|§C3.6.7]] The Little Groups of the Physical Orbits
+- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-8|§C3.6.8]] The Massive Little Group Is SO(3)
+- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|§C3.6.9]] Massive Particles Carry Spin
+- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-10|§C3.6.10]] Rotations Act by the Rotation Itself
+- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-11|§C3.6.11]] The Pauli–Lubanski Vector and the Second Casimir
+- [[§C3.6★ Particle States and the Little Group#^thm-c3-6-12|§C3.6.12]] The Casimirs of a Massive Particle
 - [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-1|§C3.7.1]] The Massless Little Group Is ISO(2)
 - [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-2|§C3.7.2]] Generators of the Massless Little Group
 - [[§C3.7★ Massless Particles and Helicity#^thm-c3-7-3|§C3.7.3]] Nonzero Translation Eigenvalues Come in Circles

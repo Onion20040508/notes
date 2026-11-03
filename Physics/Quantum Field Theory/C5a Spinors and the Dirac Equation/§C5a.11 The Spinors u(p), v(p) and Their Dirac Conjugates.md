@@ -59,7 +59,7 @@ Which spinors does the boost of the rest-frame solutions give, and what are thei
 > **Step 5** (they span). $\Lambda_{1/2}(p)$ is invertible (an exponential), so it maps the two independent $u^1_0$, $u^2_0$ to two independent $u^1(p)$, $u^2(p)$, which lie in the two-dimensional $\ker(\slashed{p} - m)$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-2|Theorem §C5a.10.2]]) and therefore span it. Part 1.
 >
 > **What the derivation shows**
-> - The construction is: solve where the problem is simplest (rest frame), then transport with the group; the same idea defines the one-particle states $|p, \sigma\rangle = U(L(p))|k, \sigma\rangle$ ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-4|Theorem §C3.6.4]]).
+> - The construction is: solve where the problem is simplest (rest frame), then transport with the group; the same idea defines the one-particle states $|p, \sigma\rangle = U(L(p))|k, \sigma\rangle$ ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-5|Theorem §C3.6.5]]).
 > - Assumption $m > 0$ (rest frame, $1/\sqrt m$); the massless case needs the second route.
 > - Used next: the Dirac conjugate $\bar u^s(p)$ ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-2|Theorem §C5a.11.2]]); $v(p)$ by the same four steps ([[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]]); normalizations ([[§C5a.12 Normalization and Spin Sums|§C5a.12]]); mode expansion ([[§C5b.2 Mode Expansion and the Anticommutator Algebra|§C5b.2]]).
 
