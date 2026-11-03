@@ -9,7 +9,7 @@ tags: [chapter, classical-mechanics]
 ← [[· B3 Systems of Particles and Rotation about an Axis]] · ↑ [[Classical Mechanics]] · [[· B5 The Calculus of Variations]] →
 
 **Builds on:** [[· A4 Work and Energy|A4 Work and Energy]] (1), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (10), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (4), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (8), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (1)
-**Used by:** —
+**Used by:** [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (1)
 
 ## Sections
 - [[§B4.1 Elastic Collisions in the Laboratory and Centre-of-Mass Frames]] — Landau §16–17; Morin 5.6–5.7

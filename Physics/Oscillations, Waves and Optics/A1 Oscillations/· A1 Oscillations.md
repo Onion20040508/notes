@@ -8,8 +8,8 @@ tags: [chapter, oscillations-waves-and-optics]
 # A1 Oscillations
 ↑ [[Oscillations, Waves and Optics]] · [[· A2 Mechanical Waves]] →
 
-**Builds on:** —
-**Used by:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (2), [[· A6 Interference|A6 Interference]] (5), [[· A7 Diffraction|A7 Diffraction]] (2), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (30), [[· B2 Coupled Oscillators and Normal Modes|B2 Coupled Oscillators and Normal Modes]] (11), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (8), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (3), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1)
+**Builds on:** [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (1)
+**Used by:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (2), [[· A6 Interference|A6 Interference]] (5), [[· A7 Diffraction|A7 Diffraction]] (2), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (50), [[· B2 Coupled Oscillators and Normal Modes|B2 Coupled Oscillators and Normal Modes]] (12), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (9), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (4), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1)
 
 ## Sections
 - [[§A1.1 Simple Harmonic Motion]] — UP Vol. 1 §15.1
@@ -42,3 +42,4 @@ tags: [chapter, oscillations-waves-and-optics]
 - [[§A1.4 Pendulums#^mod-a1-4-1|§A1.4.1]] Simple Pendulum
 - [[§A1.4 Pendulums#^mod-a1-4-4|§A1.4.4]] Torsion Pendulum
 - [[§A1.5 Damped Oscillations#^mod-a1-5-1|§A1.5.1]] Linear Damping
+- [[§A1.6 Forced Oscillations and Resonance#^mod-a1-6-1|§A1.6.1]] Sinusoidally Driven Damped Oscillator

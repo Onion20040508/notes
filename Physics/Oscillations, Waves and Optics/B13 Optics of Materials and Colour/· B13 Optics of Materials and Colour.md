@@ -8,8 +8,8 @@ tags: [chapter, oscillations-waves-and-optics]
 # B13 Optics of Materials and Colour
 ← [[· B12 Matrix Ray Optics]] · ↑ [[Oscillations, Waves and Optics]]
 
-**Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (5), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (18), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (5), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (11)
-**Used by:** [[· A4 The Nature of Light|A4 The Nature of Light]] (3), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (2)
+**Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (5), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (19), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (7), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (14)
+**Used by:** [[· A4 The Nature of Light|A4 The Nature of Light]] (3), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (3), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (2)
 
 ## Sections
 - [[§B13.1 Dispersion in Dielectrics and the Lorentz Model]] — Fowles 6.1–6.4 · Schwartz L16 §4–5
@@ -37,10 +37,10 @@ tags: [chapter, oscillations-waves-and-optics]
 - [[§B13.2 Absorption and Light in Conducting Media#^thm-b13-2-2|§B13.2.2]] Conductivity at Frequency ω
 - [[§B13.2 Absorption and Light in Conducting Media#^thm-b13-2-3|§B13.2.3]] Complex Index of a Free-Electron Metal
 - [[§B13.2 Absorption and Light in Conducting Media#^thm-b13-2-4|§B13.2.4]] Good Conductor, Reflector, Transparent Medium
-- [[§B13.2 Absorption and Light in Conducting Media#^thm-b13-2-6|§B13.2.6]] Normal-Incidence Reflection from an Absorbing Medium
-- [[§B13.2 Absorption and Light in Conducting Media#^thm-b13-2-7|§B13.2.7]] Hagen–Rubens Formula
-- [[§B13.2 Absorption and Light in Conducting Media#^thm-b13-2-8|§B13.2.8]] Refraction into an Absorbing Medium
-- [[§B13.2 Absorption and Light in Conducting Media#^thm-b13-2-9|§B13.2.9]] Fresnel Coefficients of an Absorbing Medium
+- [[§B13.2 Absorption and Light in Conducting Media#^thm-b13-2-7|§B13.2.7]] Normal-Incidence Reflection from an Absorbing Medium
+- [[§B13.2 Absorption and Light in Conducting Media#^thm-b13-2-8|§B13.2.8]] Hagen–Rubens Formula
+- [[§B13.2 Absorption and Light in Conducting Media#^thm-b13-2-9|§B13.2.9]] Refraction into an Absorbing Medium
+- [[§B13.2 Absorption and Light in Conducting Media#^thm-b13-2-10|§B13.2.10]] Fresnel Coefficients of an Absorbing Medium
 - [[§B13.3 Scattering of Light#^thm-b13-3-1|§B13.3.1]] Radiation Field and Larmor's Formula
 - [[§B13.3 Scattering of Light#^thm-b13-3-2|§B13.3.2]] Light Scattered by a Small Scatterer
 - [[§B13.3 Scattering of Light#^thm-b13-3-3|§B13.3.3]] Rayleigh's Law
@@ -53,5 +53,6 @@ tags: [chapter, oscillations-waves-and-optics]
 ## Models
 - [[§B13.1 Dispersion in Dielectrics and the Lorentz Model#^mod-b13-1-2|§B13.1.2]] Lorentz (Bound-Electron) Model of a Dielectric
 - [[§B13.2 Absorption and Light in Conducting Media#^mod-b13-2-1|§B13.2.1]] Drude Model at Optical Frequencies
+- [[§B13.2 Absorption and Light in Conducting Media#^mod-b13-2-6|§B13.2.6]] Linear Absorbing Medium
 - [[§B13.4 Colour and Vision#^mod-b13-4-5|§B13.4.5]] Three-Band Model of Colour Mixing
 - [[§B13.4 Colour and Vision#^mod-b13-4-7|§B13.4.7]] Three-Receptor Model of Colour Matching

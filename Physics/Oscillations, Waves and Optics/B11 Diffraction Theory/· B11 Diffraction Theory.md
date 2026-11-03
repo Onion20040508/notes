@@ -8,8 +8,8 @@ tags: [chapter, oscillations-waves-and-optics]
 # B11 Diffraction Theory
 ← [[· B10 Interferometry and Coherence]] · ↑ [[Oscillations, Waves and Optics]] · [[· B12 Matrix Ray Optics]] →
 
-**Builds on:** [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (2), [[· A7 Diffraction|A7 Diffraction]] (6), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (15), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (1), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (1)
-**Used by:** [[· A7 Diffraction|A7 Diffraction]] (5), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (3)
+**Builds on:** [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (2), [[· A7 Diffraction|A7 Diffraction]] (8), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (15), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (1), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (1)
+**Used by:** [[· A7 Diffraction|A7 Diffraction]] (6), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (3)
 
 ## Sections
 - [[§B11.1 The Fresnel–Kirchhoff Diffraction Integral]] — Fowles 5.1–5.3 · Schwartz L19 §1
@@ -22,12 +22,12 @@ tags: [chapter, oscillations-waves-and-optics]
 - [[§B11.1 The Fresnel–Kirchhoff Diffraction Integral#^thm-b11-1-3|§B11.1.3]] Fresnel–Kirchhoff Diffraction Formula
 - [[§B11.1 The Fresnel–Kirchhoff Diffraction Integral#^thm-b11-1-4|§B11.1.4]] Babinet's Principle
 - [[§B11.1 The Fresnel–Kirchhoff Diffraction Integral#^thm-b11-1-5|§B11.1.5]] Path Length across the Aperture
-- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-1|§B11.2.1]] Fraunhofer Diffraction Integral
-- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-2|§B11.2.2]] Rectangular Aperture and Slit
-- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-3|§B11.2.3]] Circular Aperture; Airy Pattern
-- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-4|§B11.2.4]] Rayleigh Limit of a Slit and a Circular Aperture
-- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-5|§B11.2.5]] Array Theorem; Double Slit and Grating
-- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-6|§B11.2.6]] Width of the Orders and Resolving Power of a Grating
+- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-2|§B11.2.2]] Fraunhofer Diffraction Integral
+- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-3|§B11.2.3]] Rectangular Aperture and Slit
+- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-4|§B11.2.4]] Circular Aperture; Airy Pattern
+- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-5|§B11.2.5]] Rayleigh Limit of a Slit and a Circular Aperture
+- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-6|§B11.2.6]] Array Theorem; Double Slit and Grating
+- [[§B11.2 Fraunhofer Diffraction Patterns#^thm-b11-2-7|§B11.2.7]] Width of the Orders and Resolving Power of a Grating
 - [[§B11.3 Fresnel Diffraction and Zone Plates#^thm-b11-3-1|§B11.3.1]] On-Axis Field of a Circular Aperture
 - [[§B11.3 Fresnel Diffraction and Zone Plates#^thm-b11-3-2|§B11.3.2]] The Free Wave Is Half the First Zone
 - [[§B11.3 Fresnel Diffraction and Zone Plates#^thm-b11-3-3|§B11.3.3]] The Bright Spot behind a Disk
@@ -44,5 +44,6 @@ tags: [chapter, oscillations-waves-and-optics]
 
 ## Models
 - [[§B11.1 The Fresnel–Kirchhoff Diffraction Integral#^mod-b11-1-1|§B11.1.1]] Scalar Diffraction Theory
+- [[§B11.2 Fraunhofer Diffraction Patterns#^mod-b11-2-1|§B11.2.1]] Fraunhofer Arrangement
 - [[§B11.4 Fourier Optics and Holography#^mod-b11-4-4|§B11.4.4]] Coherent Optical Processor
 - [[§B11.4 Fourier Optics and Holography#^mod-b11-4-8|§B11.4.8]] Linear Hologram Recording

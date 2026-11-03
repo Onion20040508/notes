@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # A2 Kinematics
 ← [[· A1 Units, Measurement and Vectors]] · ↑ [[Classical Mechanics]] · [[· A3 Newton's Laws of Motion]] →
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (10), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (2), [[· A8 Gravitation|A8 Gravitation]] (3)
-**Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (6), [[· A6 Rotation|A6 Rotation]] (5), [[· A8 Gravitation|A8 Gravitation]] (7), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (2), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (2), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (6)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (10), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (2), [[· A8 Gravitation|A8 Gravitation]] (3), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (3), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (1)
+**Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (8), [[· A6 Rotation|A6 Rotation]] (6), [[· A8 Gravitation|A8 Gravitation]] (7), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (2), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (2), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (6)
 
 ## Sections
 - [[§A2.1 Position, Displacement, Velocity]] — UP Vol. 1 §3.1–3.2

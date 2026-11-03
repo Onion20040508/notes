@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # A3 Newton's Laws of Motion
 ← [[· A2 Kinematics]] · ↑ [[Classical Mechanics]] · [[· A4 Work and Energy]] →
 
-**Builds on:** [[· A2 Kinematics|A2 Kinematics]] (6), [[· A6 Rotation|A6 Rotation]] (1), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (1), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1)
-**Used by:** [[· A2 Kinematics|A2 Kinematics]] (2), [[· A4 Work and Energy|A4 Work and Energy]] (5), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (9), [[· A6 Rotation|A6 Rotation]] (7), [[· A8 Gravitation|A8 Gravitation]] (9), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (3), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (8), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (7), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (3), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (4), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (3)
+**Builds on:** [[· A2 Kinematics|A2 Kinematics]] (8), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (1), [[· A6 Rotation|A6 Rotation]] (2), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (2), [[· A8 Gravitation|A8 Gravitation]] (3), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (3), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (1), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (1)
+**Used by:** [[· A2 Kinematics|A2 Kinematics]] (2), [[· A4 Work and Energy|A4 Work and Energy]] (7), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (10), [[· A6 Rotation|A6 Rotation]] (8), [[· A8 Gravitation|A8 Gravitation]] (9), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (4), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (8), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (7), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (3), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (4), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (3)
 
 ## Sections
 - [[§A3.1 Forces]] — UP Vol. 1 §5.1
@@ -30,7 +30,7 @@ tags: [chapter, classical-mechanics]
 - [[§A3.5 Newton's Third Law#^pr-a3-5-1|§A3.5.1]] Newton's Third Law
 
 ## Laws
-- [[§A3.6 Common Forces#^law-a3-6-3|§A3.6.3]] Hooke's Law
+- [[§A3.6 Common Forces#^law-a3-6-4|§A3.6.4]] Hooke's Law
 - [[§A3.8 Friction#^law-a3-8-1|§A3.8.1]] Laws of Friction
 - [[§A3.8 Friction#^law-a3-8-2|§A3.8.2]] Friction Coefficients of Common Surfaces
 - [[§A3.10 Drag and Terminal Speed#^law-a3-10-1|§A3.10.1]] Quadratic Drag
@@ -42,7 +42,7 @@ tags: [chapter, classical-mechanics]
 - [[§A3.3 Newton's Second Law#^thm-a3-3-2|§A3.3.2]] Second Law in Components
 - [[§A3.4 Mass and Weight#^thm-a3-4-1|§A3.4.1]] Weight Is Mass Times g
 - [[§A3.5 Newton's Third Law#^thm-a3-5-2|§A3.5.2]] Only External Forces Accelerate a System
-- [[§A3.6 Common Forces#^thm-a3-6-1|§A3.6.1]] Body on an Incline
+- [[§A3.6 Common Forces#^thm-a3-6-2|§A3.6.2]] Body on an Incline
 - [[§A3.8 Friction#^thm-a3-8-3|§A3.8.3]] Sliding Down an Incline with Friction
 - [[§A3.9 Dynamics of Circular Motion#^thm-a3-9-1|§A3.9.1]] Magnitude of the Centripetal Force
 - [[§A3.9 Dynamics of Circular Motion#^thm-a3-9-2|§A3.9.2]] Ideal Banking Angle
@@ -50,4 +50,5 @@ tags: [chapter, classical-mechanics]
 - [[§A3.10 Drag and Terminal Speed#^thm-a3-10-5|§A3.10.5]] Falling with Linear Drag
 
 ## Models
-- [[§A3.6 Common Forces#^mod-a3-6-2|§A3.6.2]] Ideal String and Pulley
+- [[§A3.6 Common Forces#^mod-a3-6-1|§A3.6.1]] Body on a Fixed Incline
+- [[§A3.6 Common Forces#^mod-a3-6-3|§A3.6.3]] Ideal String and Pulley

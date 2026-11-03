@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # A8 Gravitation
 ← [[· A7 Static Equilibrium and Elasticity]] · ↑ [[Classical Mechanics]] · [[· A9 Fluid Mechanics]] →
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (1), [[· A2 Kinematics|A2 Kinematics]] (7), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (9), [[· A4 Work and Energy|A4 Work and Energy]] (9), [[· A6 Rotation|A6 Rotation]] (3), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (1)
-**Used by:** [[· A2 Kinematics|A2 Kinematics]] (3), [[· A4 Work and Energy|A4 Work and Energy]] (2), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (2), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (1), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (4), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (3)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (1), [[· A2 Kinematics|A2 Kinematics]] (7), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (9), [[· A4 Work and Energy|A4 Work and Energy]] (10), [[· A6 Rotation|A6 Rotation]] (3), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (1), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (6), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (3)
+**Used by:** [[· A2 Kinematics|A2 Kinematics]] (3), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (3), [[· A4 Work and Energy|A4 Work and Energy]] (6), [[· A6 Rotation|A6 Rotation]] (2), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (2), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (5), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (1), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (4), [[· B5 The Calculus of Variations|B5 The Calculus of Variations]] (1), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (3)
 
 ## Sections
 - [[§A8.1 Universal Gravitation]] — UP Vol. 1 §13.1–13.2
@@ -31,11 +31,11 @@ tags: [chapter, classical-mechanics]
 - [[§A8.1 Universal Gravitation#^thm-a8-1-6|§A8.1.6]] Apparent Weight at the Equator
 - [[§A8.1 Universal Gravitation#^thm-a8-1-7|§A8.1.7]] Shell Theorem
 - [[§A8.1 Universal Gravitation#^thm-a8-1-8|§A8.1.8]] Gravity inside a Uniform Sphere
-- [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-1|§A8.2.1]] Gravitational Potential Energy
-- [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-2|§A8.2.2]] Energy Conservation under Gravity
-- [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-3|§A8.2.3]] Escape Speed and the Energy Criterion for Binding
-- [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-4|§A8.2.4]] Speed and Period of a Circular Orbit
-- [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-5|§A8.2.5]] Energy of a Circular Orbit
+- [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-2|§A8.2.2]] Gravitational Potential Energy
+- [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-3|§A8.2.3]] Energy Conservation under Gravity
+- [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-4|§A8.2.4]] Escape Speed and the Energy Criterion for Binding
+- [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-5|§A8.2.5]] Speed and Period of a Circular Orbit
+- [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-6|§A8.2.6]] Energy of a Circular Orbit
 - [[§A8.3 Kepler's Laws#^thm-a8-3-1|§A8.3.1]] Kepler's First Law (Orbits Are Conic Sections)
 - [[§A8.3 Kepler's Laws#^thm-a8-3-2|§A8.3.2]] Kepler's Second Law (Equal Areas)
 - [[§A8.3 Kepler's Laws#^thm-a8-3-3|§A8.3.3]] Energy of an Elliptical Orbit
@@ -44,3 +44,4 @@ tags: [chapter, classical-mechanics]
 
 ## Models
 - [[§A8.1 Universal Gravitation#^mod-a8-1-5|§A8.1.5]] Uniform Field near the Surface
+- [[§A8.2 Gravitational Energy and Orbits#^mod-a8-2-1|§A8.2.1]] Test Mass about a Fixed Spherical Body

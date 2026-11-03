@@ -8,8 +8,8 @@ tags: [chapter, oscillations-waves-and-optics]
 # A4 The Nature of Light
 ← [[· A3 Sound]] · ↑ [[Oscillations, Waves and Optics]] · [[· A5 Geometric Optics and Image Formation]] →
 
-**Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (2), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (1), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (4), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (3)
-**Used by:** [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (9), [[· A6 Interference|A6 Interference]] (5), [[· A7 Diffraction|A7 Diffraction]] (5), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (10), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (6), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (2), [[· B12 Matrix Ray Optics|B12 Matrix Ray Optics]] (4), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (5)
+**Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (2), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (2), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (7), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (3)
+**Used by:** [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (10), [[· A6 Interference|A6 Interference]] (5), [[· A7 Diffraction|A7 Diffraction]] (5), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (12), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (6), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (2), [[· B12 Matrix Ray Optics|B12 Matrix Ray Optics]] (4), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (5)
 
 ## Sections
 - [[§A4.1 The Propagation of Light]] — UP Vol. 3 §1.1

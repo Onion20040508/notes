@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # B10 Rigid Bodies in Three Dimensions
 ← [[· B9 Non-Inertial Frames]] · ↑ [[Classical Mechanics]]
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (2), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (3), [[· A6 Rotation|A6 Rotation]] (9), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (2), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (2), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (6), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (8), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (14)
-**Used by:** [[· A6 Rotation|A6 Rotation]] (1), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (1), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (1)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (2), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (3), [[· A6 Rotation|A6 Rotation]] (10), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (2), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (2), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (6), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (8), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (14)
+**Used by:** [[· A6 Rotation|A6 Rotation]] (4), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (1), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (1), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (1)
 
 ## Sections
 - [[§B10.1 The Inertia Tensor and Principal Axes]] — Morin 9.1–9.3, App. D–E; H&S 12

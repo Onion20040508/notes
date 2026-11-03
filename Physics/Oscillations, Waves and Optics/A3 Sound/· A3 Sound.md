@@ -8,8 +8,8 @@ tags: [chapter, oscillations-waves-and-optics]
 # A3 Sound
 ← [[· A2 Mechanical Waves]] · ↑ [[Oscillations, Waves and Optics]] · [[· A4 The Nature of Light]] →
 
-**Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (18)
-**Used by:** [[· B2 Coupled Oscillators and Normal Modes|B2 Coupled Oscillators and Normal Modes]] (3), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (9), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (5), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (3)
+**Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (20)
+**Used by:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (1), [[· B2 Coupled Oscillators and Normal Modes|B2 Coupled Oscillators and Normal Modes]] (3), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (10), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (5), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (5)
 
 ## Sections
 - [[§A3.1 Sound Waves and the Speed of Sound]] — UP Vol. 1 §17.1–17.2
@@ -40,5 +40,7 @@ tags: [chapter, oscillations-waves-and-optics]
 - [[§A3.5 The Doppler Effect and Shock Waves#^thm-a3-5-5|§A3.5.5]] Mach Cone
 
 ## Models
+- [[§A3.1 Sound Waves and the Speed of Sound#^mod-a3-1-1|§A3.1.1]] Linear Sound in a Uniform Fluid
 - [[§A3.1 Sound Waves and the Speed of Sound#^mod-a3-1-5|§A3.1.5]] Sound in an Ideal Gas as an Adiabatic Process
 - [[§A3.3 Standing Sound Waves and Musical Sound#^mod-a3-3-1|§A3.3.1]] Ideal Air Column
+- [[§A3.5 The Doppler Effect and Shock Waves#^mod-a3-5-1|§A3.5.1]] Source and Observer in Still Air

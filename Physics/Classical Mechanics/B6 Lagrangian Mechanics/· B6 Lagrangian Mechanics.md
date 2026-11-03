@@ -9,7 +9,7 @@ tags: [chapter, classical-mechanics]
 ← [[· B5 The Calculus of Variations]] · ↑ [[Classical Mechanics]] · [[· B7 Hamiltonian Mechanics and Phase Space]] →
 
 **Builds on:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (4), [[· A4 Work and Energy|A4 Work and Energy]] (1), [[· A6 Rotation|A6 Rotation]] (1), [[· B5 The Calculus of Variations|B5 The Calculus of Variations]] (6)
-**Used by:** [[· B7 Hamiltonian Mechanics and Phase Space|B7 Hamiltonian Mechanics and Phase Space]] (8), [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory|B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] (5), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (8)
+**Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (1), [[· B7 Hamiltonian Mechanics and Phase Space|B7 Hamiltonian Mechanics and Phase Space]] (8), [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory|B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] (5), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (8)
 
 ## Sections
 - [[§B6.1 Generalized Coordinates and Lagrange's Equations]] — Morin 6.1–6.2; Series II §3.2; Landau §1–5; H&S 4

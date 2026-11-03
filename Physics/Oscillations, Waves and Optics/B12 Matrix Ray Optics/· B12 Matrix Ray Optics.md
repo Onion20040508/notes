@@ -8,8 +8,8 @@ tags: [chapter, oscillations-waves-and-optics]
 # B12 Matrix Ray Optics
 ← [[· B11 Diffraction Theory]] · ↑ [[Oscillations, Waves and Optics]] · [[· B13 Optics of Materials and Colour]] →
 
-**Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (4), [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (7)
-**Used by:** —
+**Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (4), [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (20)
+**Used by:** [[· A5 Geometric Optics and Image Formation|A5 Geometric Optics and Image Formation]] (1)
 
 ## Sections
 - [[§B12.1 Ray Matrices for Refraction, Translation and Lenses]] — Fowles 10.1–10.4 · Schwartz —

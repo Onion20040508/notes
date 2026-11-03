@@ -8,7 +8,7 @@ tags: [chapter, classical-mechanics]
 # A9 Fluid Mechanics
 ← [[· A8 Gravitation]] · ↑ [[Classical Mechanics]] · [[· B1 Newtonian Mechanics and Conservation Laws]] →
 
-**Builds on:** [[· A2 Kinematics|A2 Kinematics]] (1), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (3), [[· A4 Work and Energy|A4 Work and Energy]] (5), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (1), [[· A8 Gravitation|A8 Gravitation]] (2)
+**Builds on:** [[· A2 Kinematics|A2 Kinematics]] (1), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (4), [[· A4 Work and Energy|A4 Work and Energy]] (5), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (1), [[· A8 Gravitation|A8 Gravitation]] (5)
 **Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (1), [[· A8 Gravitation|A8 Gravitation]] (1)
 
 ## Sections
@@ -27,9 +27,9 @@ tags: [chapter, classical-mechanics]
 - [[§A9.6 Viscosity and Turbulence#^law-a9-6-4|§A9.6.4]] Onset of Turbulence
 
 ## Theorems
-- [[§A9.1 Density and Pressure#^thm-a9-1-2|§A9.1.2]] Hydrostatic Equilibrium
-- [[§A9.1 Density and Pressure#^thm-a9-1-4|§A9.1.4]] Pressure at a Depth
-- [[§A9.1 Density and Pressure#^thm-a9-1-5|§A9.1.5]] Isothermal Atmosphere
+- [[§A9.1 Density and Pressure#^thm-a9-1-3|§A9.1.3]] Hydrostatic Equilibrium
+- [[§A9.1 Density and Pressure#^thm-a9-1-5|§A9.1.5]] Pressure at a Depth
+- [[§A9.1 Density and Pressure#^thm-a9-1-6|§A9.1.6]] Isothermal Atmosphere
 - [[§A9.2 Pascal's Principle#^thm-a9-2-1|§A9.2.1]] Pascal's Principle
 - [[§A9.2 Pascal's Principle#^thm-a9-2-2|§A9.2.2]] Hydraulic Force Multiplication
 - [[§A9.3 Buoyancy#^thm-a9-3-1|§A9.3.1]] Archimedes' Principle
@@ -39,5 +39,6 @@ tags: [chapter, classical-mechanics]
 - [[§A9.5 Bernoulli's Equation#^thm-a9-5-2|§A9.5.2]] Torricelli's Theorem
 
 ## Models
-- [[§A9.1 Density and Pressure#^mod-a9-1-3|§A9.1.3]] Incompressible Fluid
+- [[§A9.1 Density and Pressure#^mod-a9-1-2|§A9.1.2]] Fluid in Hydrostatic Equilibrium
+- [[§A9.1 Density and Pressure#^mod-a9-1-4|§A9.1.4]] Incompressible Fluid
 - [[§A9.4 Flow and Continuity#^mod-a9-4-1|§A9.4.1]] Ideal Fluid in Steady Flow

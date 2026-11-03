@@ -17,15 +17,15 @@ tags: [chapter, relativity]
 - [[§A3.3 Invariant Mass and the Energy–Momentum Relation]] — UP Vol. 3 §5.9
 
 ## Principles
-- [[§A3.1 Relativistic Momentum#^pr-a3-1-1|§A3.1.1]] Conservation of Relativistic Momentum
+- [[§A3.1 Relativistic Momentum#^pr-a3-1-3|§A3.1.3]] Conservation of Relativistic Momentum
 - [[§A3.2 Relativistic Energy#^pr-a3-2-4|§A3.2.4]] Conservation of Total Energy
 
 ## Laws
 - [[§A3.2 Relativistic Energy#^law-a3-2-3|§A3.2.3]] Measured Kinetic Energy of Fast Electrons
 
 ## Theorems
-- [[§A3.1 Relativistic Momentum#^thm-a3-1-2|§A3.1.2]] The Glancing Collision Conserves $\gamma m\vec u$
-- [[§A3.1 Relativistic Momentum#^thm-a3-1-3|§A3.1.3]] Momentum at Low and High Speeds
+- [[§A3.1 Relativistic Momentum#^thm-a3-1-4|§A3.1.4]] The Glancing Collision Conserves $\gamma m\vec u$
+- [[§A3.1 Relativistic Momentum#^thm-a3-1-5|§A3.1.5]] Momentum at Low and High Speeds
 - [[§A3.2 Relativistic Energy#^thm-a3-2-1|§A3.2.1]] Relativistic Kinetic Energy
 - [[§A3.2 Relativistic Energy#^thm-a3-2-2|§A3.2.2]] Classical Limit and the Speed Limit
 - [[§A3.2 Relativistic Energy#^thm-a3-2-5|§A3.2.5]] Mass–Energy Equivalence

@@ -8,8 +8,8 @@ tags: [chapter, oscillations-waves-and-optics]
 # B8 Polarization and the Jones Calculus
 ← [[· B7 Waves in Two and Three Dimensions]] · ↑ [[Oscillations, Waves and Optics]] · [[· B9 The Fresnel Equations]] →
 
-**Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (10), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (2), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (1), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (2), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (2)
-**Used by:** [[· A4 The Nature of Light|A4 The Nature of Light]] (1), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (21), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (5)
+**Builds on:** [[· A4 The Nature of Light|A4 The Nature of Light]] (12), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (2), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (1), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (2), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (3)
+**Used by:** [[· A4 The Nature of Light|A4 The Nature of Light]] (2), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (32), [[· B10 Interferometry and Coherence|B10 Interferometry and Coherence]] (1), [[· B13 Optics of Materials and Colour|B13 Optics of Materials and Colour]] (7)
 
 ## Sections
 - [[§B8.1 Polarization States of Plane Waves]] — Fowles 2.1–2.4 · Schwartz L13 §3–4, L14 §1–3

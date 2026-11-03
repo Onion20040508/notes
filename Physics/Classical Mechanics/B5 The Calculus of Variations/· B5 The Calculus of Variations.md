@@ -8,7 +8,7 @@ tags: [chapter, classical-mechanics]
 # B5 The Calculus of Variations
 ← [[· B4 Collisions and Scattering]] · ↑ [[Classical Mechanics]] · [[· B6 Lagrangian Mechanics]] →
 
-**Builds on:** [[· A4 Work and Energy|A4 Work and Energy]] (8)
+**Builds on:** [[· A4 Work and Energy|A4 Work and Energy]] (8), [[· A8 Gravitation|A8 Gravitation]] (1), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (1)
 **Used by:** [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (6), [[· B7 Hamiltonian Mechanics and Phase Space|B7 Hamiltonian Mechanics and Phase Space]] (2), [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory|B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] (4)
 
 ## Sections

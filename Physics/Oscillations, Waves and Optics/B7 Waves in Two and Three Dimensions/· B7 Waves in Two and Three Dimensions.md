@@ -8,7 +8,7 @@ tags: [chapter, oscillations-waves-and-optics]
 # B7 Waves in Two and Three Dimensions
 ← [[· B6 Wave Packets and Dispersion]] · ↑ [[Oscillations, Waves and Optics]] · [[· B8 Polarization and the Jones Calculus]] →
 
-**Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (5), [[· A3 Sound|A3 Sound]] (3), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (1), [[· B3 From the Bead Chain to the Wave Equation|B3 From the Bead Chain to the Wave Equation]] (5), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (9)
+**Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (5), [[· A3 Sound|A3 Sound]] (5), [[· B1 Damped and Driven Oscillators|B1 Damped and Driven Oscillators]] (1), [[· B3 From the Bead Chain to the Wave Equation|B3 From the Bead Chain to the Wave Equation]] (5), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (9), [[· B6 Wave Packets and Dispersion|B6 Wave Packets and Dispersion]] (1)
 **Used by:** [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (1), [[· B8 Polarization and the Jones Calculus|B8 Polarization and the Jones Calculus]] (1), [[· B9 The Fresnel Equations|B9 The Fresnel Equations]] (1), [[· B11 Diffraction Theory|B11 Diffraction Theory]] (1)
 
 ## Sections

@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # A7 Static Equilibrium and Elasticity
 ← [[· A6 Rotation]] · ↑ [[Classical Mechanics]] · [[· A8 Gravitation]] →
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (1), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (4), [[· A6 Rotation|A6 Rotation]] (6)
-**Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (1), [[· A6 Rotation|A6 Rotation]] (2), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (1), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (4), [[· A6 Rotation|A6 Rotation]] (6), [[· A8 Gravitation|A8 Gravitation]] (2), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (1)
+**Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (2), [[· A6 Rotation|A6 Rotation]] (2), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1)
 
 ## Sections
 - [[§A7.1 Conditions for Equilibrium]] — UP Vol. 1 §12.1–12.2

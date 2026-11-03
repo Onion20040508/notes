@@ -9,7 +9,7 @@ tags: [chapter, classical-mechanics]
 ← [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] · ↑ [[Classical Mechanics]] · [[· B10 Rigid Bodies in Three Dimensions]] →
 
 **Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (7), [[· A2 Kinematics|A2 Kinematics]] (6), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (3), [[· A4 Work and Energy|A4 Work and Energy]] (2), [[· A6 Rotation|A6 Rotation]] (2), [[· A8 Gravitation|A8 Gravitation]] (3), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (1)
-**Used by:** [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (14)
+**Used by:** [[· A2 Kinematics|A2 Kinematics]] (1), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (1), [[· A8 Gravitation|A8 Gravitation]] (3), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (14)
 
 ## Sections
 - [[§B9.1 Accelerating and Rotating Frames]] — Morin 10.1–10.2; H&S 9
