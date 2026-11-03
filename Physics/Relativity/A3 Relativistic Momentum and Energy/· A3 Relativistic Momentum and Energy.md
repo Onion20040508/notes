@@ -8,8 +8,8 @@ tags: [chapter, relativity]
 # A3 Relativistic Momentum and Energy
 ← [[· A2 Relativistic Kinematics]] · ↑ [[Relativity]] · [[· B1 Minkowski Spacetime and the Lorentz Group]] →
 
-**Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (1), [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (12)
-**Used by:** [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (8), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (4), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (1)
+**Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (2), [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (13), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (1), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (1)
+**Used by:** [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (12), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (5), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (1)
 
 ## Sections
 - [[§A3.1 Relativistic Momentum]] — UP Vol. 3 §5.8
@@ -35,3 +35,7 @@ tags: [chapter, relativity]
 - [[§A3.3 Invariant Mass and the Energy–Momentum Relation#^thm-a3-3-3|§A3.3.3]] Transformation of Energy and Momentum
 - [[§A3.3 Invariant Mass and the Energy–Momentum Relation#^thm-a3-3-4|§A3.3.4]] The Conservation Laws Hold in Every Frame
 - [[§A3.3 Invariant Mass and the Energy–Momentum Relation#^thm-a3-3-5|§A3.3.5]] Invariance and Conservation of System Mass
+
+## Models
+- [[§A3.1 Relativistic Momentum#^mod-a3-1-1|§A3.1.1]] Relativistic Particle
+- [[§A3.1 Relativistic Momentum#^mod-a3-1-2|§A3.1.2]] Isolated System of Particles

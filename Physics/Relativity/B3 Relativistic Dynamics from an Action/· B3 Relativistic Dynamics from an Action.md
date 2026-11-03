@@ -8,8 +8,8 @@ tags: [chapter, relativity]
 # B3 Relativistic Dynamics from an Action
 ← [[· B2 Four-Vectors and Tensors]] · ↑ [[Relativity]] · [[· B4 Fields in Special Relativity]] →
 
-**Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (1), [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (2), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (4), [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (16), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (19), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (3)
-**Used by:** [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (2)
+**Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (1), [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (2), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (5), [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (16), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (20), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (3)
+**Used by:** [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (1), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (1), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (2)
 
 ## Sections
 - [[§B3.1 The Free Relativistic Particle]] — series Part III §4; user's 505 notes (Lagrangian part); Phys505 ch. 6

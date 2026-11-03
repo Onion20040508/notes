@@ -8,8 +8,8 @@ tags: [chapter, relativity]
 # B2 Four-Vectors and Tensors
 ← [[· B1 Minkowski Spacetime and the Lorentz Group]] · ↑ [[Relativity]] · [[· B3 Relativistic Dynamics from an Action]] →
 
-**Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (2), [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (1), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (8), [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (29)
-**Used by:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (1), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (19), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (18)
+**Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (2), [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (3), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (12), [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (29), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (1)
+**Used by:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (1), [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (2), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (1), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (20), [[· B4 Fields in Special Relativity|B4 Fields in Special Relativity]] (18)
 
 ## Sections
 - [[§B2.1 Four-Velocity, Four-Momentum and Collisions]] — user's 505 notes §Four-Momentum; series Part III §3.3–3.4; Morin 12–13; Schutz 2

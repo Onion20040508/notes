@@ -34,29 +34,33 @@ graph TD
   B2["B2 Four-Vectors and Tensors"]
   B3["B3 Relativistic Dynamics from an Action"]
   B4["B4 Fields in Special Relativity"]
-  A1 -->|17| A2
-  A1 -->|1| A3
-  A2 -->|12| A3
+  A1 -->|21| A2
+  A1 -->|2| A3
+  A2 -->|13| A3
   A1 -->|10| B1
-  A2 -->|7| B1
+  A2 -->|10| B1
   A1 -->|2| B2
-  A2 -->|1| B2
-  A3 -->|8| B2
+  A2 -->|3| B2
+  A3 -->|12| B2
   B1 -->|29| B2
   A1 -->|1| B3
   A2 -->|2| B3
-  A3 -->|4| B3
+  A3 -->|5| B3
   B1 -->|16| B3
-  B2 -->|19| B3
+  B2 -->|20| B3
   A1 -->|1| B4
   A2 -->|4| B4
   A3 -->|1| B4
   B1 -->|5| B4
   B2 -->|18| B4
   B3 -->|2| B4
-  A2 -.->|5| A1
+  A2 -.->|6| A1
   B2 -.->|1| A1
-  B1 -.->|1| A2
+  B1 -.->|2| A2
+  B2 -.->|2| A2
+  B2 -.->|1| A3
+  B3 -.->|1| A3
+  B3 -.->|1| B2
   B4 -.->|3| B3
 ```
 
