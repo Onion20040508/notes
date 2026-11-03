@@ -31,8 +31,8 @@ tags: [chapter, quantum-mechanics]
 - [[§C13.2★ The Dirac Equation#^thm-c13-2-3|§C13.2.3]] A Positive Conserved Density
 - [[§C13.2★ The Dirac Equation#^thm-c13-2-4|§C13.2.4]] Spin One Half from the Dirac Equation
 - [[§C13.2★ The Dirac Equation#^thm-c13-2-5|§C13.2.5]] The Pauli Equation and g = 2
-- [[§C13.2★ The Dirac Equation#^thm-c13-2-6|§C13.2.6]] Fine-Structure Terms from the Dirac Equation
-- [[§C13.2★ The Dirac Equation#^thm-c13-2-7|§C13.2.7]] Parity, Charge Conjugation and Time Reversal
+- [[§C13.2★ The Dirac Equation#^thm-c13-2-7|§C13.2.7]] Fine-Structure Terms from the Dirac Equation
+- [[§C13.2★ The Dirac Equation#^thm-c13-2-8|§C13.2.8]] Parity, Charge Conjugation and Time Reversal
 - [[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom#^thm-c13-3-1|§C13.3.1]] Free-Particle Spinors
 - [[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom#^thm-c13-3-2|§C13.3.2]] Separation of the Dirac Equation in a Central Potential
 - [[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom#^thm-c13-3-3|§C13.3.3]] Bound States of the Dirac–Coulomb Problem

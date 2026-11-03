@@ -75,12 +75,12 @@ The rotation group and its double cover as matrix groups. The physics home of th
 > and every element of $SU(2)$ arises in this way with $0 \le \phi \le 2\pi$.
 > 4. At $\phi = 2\pi$ this matrix is $-\mathbb 1$, at $\phi = 4\pi$ it is $+\mathbb 1$.
 >
-> *Source: Sakurai §3.2.5, eqs. (3.60)–(3.67), and §3.3.2, eqs. (3.76)–(3.84) · the user's series, Part IV, §11–§12, eqs. (spin-rotation), (su2-param), (minus-one) · the user's 511 notes, §"Unitary Unimodular Group" · the course's version: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|QM Theorem §C5.2.5]] (parts 1–3), [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]] (the matrix form of the spin-½ rotation) and [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]] (part 4), stated there for spin-½ rotation operators.*
+> *Source: Sakurai §3.2.5, eqs. (3.60)–(3.67), and §3.3.2, eqs. (3.76)–(3.84) · the user's series, Part IV, §11–§12, eqs. (spin-rotation), (su2-param), (minus-one) · the user's 511 notes, §"Unitary Unimodular Group" · the course's version: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]] (parts 1–3), [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|QM Theorem §C5.2.1]] (the matrix form of the spin-½ rotation) and [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|QM Theorem §C5.2.3]] (part 4), stated there for spin-½ rotation operators.*
 
 ^thm-cb-2-2
 
 > [!proof]- Proof
-> *Adapted from the derivations of QM Theorems §C5.2.1, §C5.2.3 and §C5.2.5 (Sakurai §3.2.5, §3.3.2); the homeomorphism in part 1 is added.*
+> *Adapted from the derivations of QM Theorems §C5.2.1, §C5.2.3 and §C5.2.6 (Sakurai §3.2.5, §3.3.2); the homeomorphism in part 1 is added.*
 >
 > **1. The form U(a, b).** The columns of a unitary matrix are orthonormal ([[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR Thm. 7.57]]). If the first column is $(a, c)^{\mathsf T}$ with $|a|^2 + |c|^2 = 1$, the second, a unit vector orthogonal to it in $\mathbb C^2$, is $\lambda(-c^{\ast}, a^{\ast})^{\mathsf T}$ with $|\lambda| = 1$; then $\det U = \lambda(|a|^2 + |c|^2) = \lambda$. So $\det U = 1$ forces $\lambda = 1$, and with $b = -c^{\ast}$ the matrix is $U(a, b)$. Conversely $U(a, b)^\dagger U(a, b) = \mathbb 1$ by multiplication, and $\det U(a, b) = |a|^2 + |b|^2 = 1$. With $a = x_0 + ix_3$, $b = x_2 + ix_1$ the condition is $x_0^2 + x_1^2 + x_2^2 + x_3^2 = 1$. The map to $(x_0, \dots, x_3)$ reads off real and imaginary parts of two entries, and its inverse writes them back into the matrix: both are continuous (linear in the coordinates), so the bijection is a homeomorphism onto $S^3$. For $U \in U(2)$, $|\det U| = 1$ ([[§37 Determinants#^ladr-9-58|LADR Thm. 9.58]]); write $\det U = e^{2i\gamma}$, then $e^{-i\gamma}U \in SU(2)$.
 >
@@ -98,7 +98,7 @@ The rotation group and its double cover as matrix groups. The physics home of th
 >
 > **What the proof shows**
 > - $SU(2)$ is the 3-sphere, and every element lies on a one-parameter subgroup $\phi \mapsto e^{-i\phi\hat{\mathbf n}\cdot\boldsymbol\sigma/2}$; the half angle $\phi/2$ is why the loop $0 \le \phi \le 2\pi$ ends at $-\mathbb 1$ (part 4) → the covering of $SO(3)$, Theorem §CB.2.3.
-> - Equivalence: parts 1–3 are QM Theorem §C5.2.5 with the matrix of QM Theorem §C5.2.1, part 4 is QM Theorem §C5.2.3; QM reads the matrices as spin-½ rotation operators acting on spinors.
+> - Equivalence: parts 1–3 are QM Theorem §C5.2.6 with the matrix of QM Theorem §C5.2.1, part 4 is QM Theorem §C5.2.3; QM reads the matrices as spin-½ rotation operators acting on spinors.
 
 ^pf-cb-2-2
 
@@ -118,12 +118,12 @@ The rotation group and its double cover as matrix groups. The physics home of th
 >
 > Each rotation corresponds to exactly two elements $\pm U$; the rotation by $2\pi$, the identity of $SO(3)$, corresponds to $-\mathbb 1$ when reached continuously from $U = \mathbb 1$ ([[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover#^thm-cb-2-2|Theorem §CB.2.2]], 4).
 >
-> *Source: Sakurai §3.3.2, the paragraph after (3.84) · the user's series, Part IV, §12, eqs. (covering-map), (two-to-one) · the user's 511 notes, §"Relationship Between SO(3) and SU(2)" · the Math version, by conjugation of unit quaternions: [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|591 Thm. §48.4]] · the course's version: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]], the same statement.*
+> *Source: Sakurai §3.3.2, the paragraph after (3.84) · the user's series, Part IV, §12, eqs. (covering-map), (two-to-one) · the user's 511 notes, §"Relationship Between SO(3) and SU(2)" · the Math version, by conjugation of unit quaternions: [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|591 Thm. §48.4]] · the course's version: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-7|QM Theorem §C5.2.7]], the same statement.*
 
 ^thm-cb-2-3
 
 > [!proof]- Proof
-> *Adapted from the derivation of QM Theorem §C5.2.6; the exponential is identified with Theorem §CB.1.10, and the axis of a rotation is quoted from 591.*
+> *Adapted from the derivation of QM Theorem §C5.2.7; the exponential is identified with Theorem §CB.1.10, and the axis of a rotation is quoted from 591.*
 >
 > **1. R(U) is a real linear map.** $X = \mathbf x\cdot\boldsymbol\sigma$ runs over the traceless Hermitian $2\times2$ matrices as $\mathbf x$ runs over $\mathbb R^3$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-21|Theorem §CB.0.21]], 4). $UXU^\dagger$ is again Hermitian and has the same trace ($U^\dagger = U^{-1}$), so it is $\mathbf x'\cdot\boldsymbol\sigma$ for a unique real $\mathbf x'$, depending linearly on $\mathbf x$. By part 5 of the same theorem its components are $x'_i = \frac12\operatorname{tr}(UXU^\dagger\sigma^i)$, so $R(U)_{ij} = \frac12\operatorname{tr}(U\sigma^jU^\dagger\sigma^i)$, a polynomial in the entries of $U$ and $U^{\ast}$: continuous.
 >
@@ -138,7 +138,7 @@ The rotation group and its double cover as matrix groups. The physics home of th
 > **What the proof shows**
 > - The half angle of $U_\phi$ becomes the full angle of $R(U_\phi)$ because $U$ acts on $X$ from both sides.
 > - Near $U = \mathbb 1$ only $U$ itself, not $-U$, is close to $\mathbb 1$: the two groups are locally isomorphic, with the same Lie algebra (Theorem §CB.2.4 below), and globally different (Theorem §CB.10.8).
-> - Equivalence: this is [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]]; 591 proves the same covering as $q \mapsto (v \mapsto qv\bar q)$ on unit quaternions ([[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|591 Thm. §48.4]]).
+> - Equivalence: this is [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-7|QM Theorem §C5.2.7]]; 591 proves the same covering as $q \mapsto (v \mapsto qv\bar q)$ on unit quaternions ([[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|591 Thm. §48.4]]).
 
 ^pf-cb-2-3
 

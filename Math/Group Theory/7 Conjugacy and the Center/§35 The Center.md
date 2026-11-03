@@ -24,7 +24,7 @@ tags: [group-theory, math493]
 ^def-35-2
 
 > [!remark]- Connections
-> - Used in Quantum Mechanics: the kernel $\{\pm1\}$ of $SU(2) \to SO(3)$ is the center of $SU(2)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
+> - Used in Quantum Mechanics: the kernel $\{\pm1\}$ of $SU(2) \to SO(3)$ is the center of $SU(2)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-7|QM Theorem §C5.2.7]].
 
 > [!theorem] Proposition §35.1: Central iff Singleton Conjugacy Class
 > Let $G$ be a group and $z \in G$. Then $z$ is central in $G$ if and only if $\operatorname{Conj}(z) = \{z\}$.

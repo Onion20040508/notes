@@ -31,7 +31,7 @@ tags: [chapter, quantum-mechanics]
 - [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-2|§B8.4.2]] Weak-Field Zeeman Effect
 - [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-3|§B8.4.3]] Strong-Field Zeeman Effect (Paschen–Back)
 - [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-4|§B8.4.4]] Zeeman Effect for n = 2 at Any Field
-- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-5|§B8.4.5]] Hyperfine Splitting of the Hydrogen Ground State
+- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-6|§B8.4.6]] Hyperfine Splitting of the Hydrogen Ground State
 
 ## Models
 - [[§B8.3 The Fine Structure of Hydrogen#^mod-b8-3-3|§B8.3.3]] Spin–Orbit Interaction

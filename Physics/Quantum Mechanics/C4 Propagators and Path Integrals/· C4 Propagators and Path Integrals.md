@@ -18,7 +18,7 @@ tags: [chapter, quantum-mechanics]
 
 ## Principles
 - [[§C4.2 The Feynman Path Integral#^pr-c4-2-3|§C4.2.3]] Feynman's Formulation
-- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^pr-c4-3-2|§C4.3.2]] Hamiltonian of a Charged Particle
+- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^pr-c4-3-3|§C4.3.3]] Hamiltonian of a Charged Particle
 
 ## Theorems
 - [[§C4.1 Propagators#^thm-c4-1-1|§C4.1.1]] The Propagator Evolves Every Wave Function; Spectral Form
@@ -36,9 +36,9 @@ tags: [chapter, quantum-mechanics]
 - [[§C4.2 The Feynman Path Integral#^thm-c4-2-6|§C4.2.6]] The Classical Limit
 - [[§C4.2 The Feynman Path Integral#^thm-c4-2-7|§C4.2.7]] Quadratic Lagrangians
 - [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-1|§C4.3.1]] A Constant Potential Is a Phase
-- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-3|§C4.3.3]] Velocity, the Commutators of Π, and the Quantum Lorentz Force
-- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-4|§C4.3.4]] The Wave Equation and the Current with a Vector Potential
-- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-5|§C4.3.5]] Gauge Transformations in Quantum Mechanics
-- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-6|§C4.3.6]] Energy Levels Depend on an Inaccessible Flux
-- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-7|§C4.3.7]] The Aharonov–Bohm Effect
-- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-8|§C4.3.8]] Dirac Quantization
+- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-4|§C4.3.4]] Velocity, the Commutators of Π, and the Quantum Lorentz Force
+- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-5|§C4.3.5]] The Wave Equation and the Current with a Vector Potential
+- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-6|§C4.3.6]] Gauge Transformations in Quantum Mechanics
+- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-7|§C4.3.7]] Energy Levels Depend on an Inaccessible Flux
+- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-8|§C4.3.8]] The Aharonov–Bohm Effect
+- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^thm-c4-3-10|§C4.3.10]] Dirac Quantization

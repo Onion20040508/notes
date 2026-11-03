@@ -47,4 +47,4 @@ tags: [chapter, quantum-mechanics]
 - [[§A6.1 Molecular Bonds and Spectra#^mod-a6-1-7|§A6.1.7]] Harmonic Diatomic Oscillator
 - [[§A6.2 Crystalline Solids and the Free-Electron Model#^mod-a6-2-2|§A6.2.2]] Free-Electron Model of a Metal
 - [[§A6.3 Band Theory and Semiconductors#^mod-a6-3-2|§A6.3.2]] Electron in a Periodic Potential
-- [[§A6.4 Superconductivity#^mod-a6-4-6|§A6.4.6]] BCS Theory of Superconductivity
+- [[§A6.4 Superconductivity#^mod-a6-4-7|§A6.4.7]] BCS Theory of Superconductivity

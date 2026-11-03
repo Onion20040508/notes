@@ -30,7 +30,7 @@ tags: [chapter, quantum-mechanics]
 ## Theorems
 - [[§A8.1 Particles and Conservation Laws#^thm-a8-1-2|§A8.1.2]] Annihilation at Rest
 - [[§A8.2 Quarks and the Standard Model#^thm-a8-2-2|§A8.2.2]] Quantum Numbers of a Hadron
-- [[§A8.2 Quarks and the Standard Model#^thm-a8-2-4|§A8.2.4]] Range of a Force and Mass of Its Carrier
+- [[§A8.2 Quarks and the Standard Model#^thm-a8-2-5|§A8.2.5]] Range of a Force and Mass of Its Carrier
 - [[§A8.3 Particle Accelerators and Detectors#^thm-a8-3-1|§A8.3.1]] Momentum from the Radius of a Track
 - [[§A8.3 Particle Accelerators and Detectors#^thm-a8-3-2|§A8.3.2]] Centre-of-Mass Energy of a Collision
 - [[§A8.4 The Big Bang and the Early Universe#^thm-a8-4-3|§A8.4.3]] Hubble's Law from Uniform Expansion
@@ -38,11 +38,11 @@ tags: [chapter, quantum-mechanics]
 - [[§A8.4 The Big Bang and the Early Universe#^thm-a8-4-5|§A8.4.5]] Hubble Time
 - [[§A8.4 The Big Bang and the Early Universe#^thm-a8-4-6|§A8.4.6]] Critical Density
 - [[§A8.4 The Big Bang and the Early Universe#^thm-a8-4-7|§A8.4.7]] Primordial Helium
-- [[§A8.4 The Big Bang and the Early Universe#^thm-a8-4-8|§A8.4.8]] The Background Cools as the Universe Expands
-- [[§A8.4 The Big Bang and the Early Universe#^thm-a8-4-9|§A8.4.9]] A Flat Rotation Curve Means Hidden Mass
+- [[§A8.4 The Big Bang and the Early Universe#^thm-a8-4-9|§A8.4.9]] The Background Cools as the Universe Expands
+- [[§A8.4 The Big Bang and the Early Universe#^thm-a8-4-11|§A8.4.11]] A Flat Rotation Curve Means Hidden Mass
 
 ## Models
 - [[§A8.2 Quarks and the Standard Model#^mod-a8-2-1|§A8.2.1]] The Quark Model
-- [[§A8.2 Quarks and the Standard Model#^mod-a8-2-5|§A8.2.5]] The Standard Model
+- [[§A8.2 Quarks and the Standard Model#^mod-a8-2-6|§A8.2.6]] The Standard Model
 - [[§A8.3 Particle Accelerators and Detectors#^mod-a8-3-3|§A8.3.3]] Toy Model of an Electromagnetic Shower
 - [[§A8.4 The Big Bang and the Early Universe#^mod-a8-4-2|§A8.4.2]] The Hot Big Bang

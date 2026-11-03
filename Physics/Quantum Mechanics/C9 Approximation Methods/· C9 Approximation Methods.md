@@ -28,10 +28,10 @@ tags: [chapter, quantum-mechanics]
 - [[§C9.2 Atoms in External Fields, Fine and Hyperfine Structure#^thm-c9-2-1|§C9.2.1]] The Quadratic Stark Effect
 - [[§C9.2 Atoms in External Fields, Fine and Hyperfine Structure#^thm-c9-2-2|§C9.2.2]] Closure Bound on the Polarizability
 - [[§C9.2 Atoms in External Fields, Fine and Hyperfine Structure#^thm-c9-2-3|§C9.2.3]] The Dalgarno–Lewis Method
-- [[§C9.2 Atoms in External Fields, Fine and Hyperfine Structure#^thm-c9-2-4|§C9.2.4]] Radial Identities for a Central Potential
-- [[§C9.2 Atoms in External Fields, Fine and Hyperfine Structure#^thm-c9-2-5|§C9.2.5]] The Darwin Term and the Fine Structure of s States
-- [[§C9.2 Atoms in External Fields, Fine and Hyperfine Structure#^thm-c9-2-6|§C9.2.6]] The Zeeman Hamiltonian from Minimal Coupling
-- [[§C9.2 Atoms in External Fields, Fine and Hyperfine Structure#^thm-c9-2-7|§C9.2.7]] Hyperfine Multiplets and Their Zeeman Splitting
+- [[§C9.2 Atoms in External Fields, Fine and Hyperfine Structure#^thm-c9-2-5|§C9.2.5]] Radial Identities for a Central Potential
+- [[§C9.2 Atoms in External Fields, Fine and Hyperfine Structure#^thm-c9-2-6|§C9.2.6]] The Darwin Term and the Fine Structure of s States
+- [[§C9.2 Atoms in External Fields, Fine and Hyperfine Structure#^thm-c9-2-7|§C9.2.7]] The Zeeman Hamiltonian from Minimal Coupling
+- [[§C9.2 Atoms in External Fields, Fine and Hyperfine Structure#^thm-c9-2-8|§C9.2.8]] Hyperfine Multiplets and Their Zeeman Splitting
 - [[§C9.3 The Ritz Variational Method#^thm-c9-3-1|§C9.3.1]] Stationarity of the Energy Functional
 - [[§C9.3 The Ritz Variational Method#^thm-c9-3-2|§C9.3.2]] How Close Is the Trial Ket? A Bound from the Energy
 - [[§C9.3 The Ritz Variational Method#^thm-c9-3-3|§C9.3.3]] The Ritz Equations as a Generalized Eigenvalue Problem

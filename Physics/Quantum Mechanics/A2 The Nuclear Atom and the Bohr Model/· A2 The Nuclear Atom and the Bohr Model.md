@@ -23,9 +23,9 @@ tags: [chapter, quantum-mechanics]
 - [[§A2.2 The Bohr Model of Hydrogen#^law-a2-2-8|§A2.2.8]] Franck–Hertz Result
 
 ## Theorems
-- [[§A2.1 Atomic Spectra and the Nuclear Atom#^thm-a2-1-3|§A2.1.3]] Impact Parameter and Scattering Angle
-- [[§A2.1 Atomic Spectra and the Nuclear Atom#^thm-a2-1-4|§A2.1.4]] Rutherford Scattering Formula
-- [[§A2.1 Atomic Spectra and the Nuclear Atom#^thm-a2-1-5|§A2.1.5]] Distance of Closest Approach
+- [[§A2.1 Atomic Spectra and the Nuclear Atom#^thm-a2-1-5|§A2.1.5]] Impact Parameter and Scattering Angle
+- [[§A2.1 Atomic Spectra and the Nuclear Atom#^thm-a2-1-6|§A2.1.6]] Rutherford Scattering Formula
+- [[§A2.1 Atomic Spectra and the Nuclear Atom#^thm-a2-1-8|§A2.1.8]] Distance of Closest Approach
 - [[§A2.2 The Bohr Model of Hydrogen#^thm-a2-2-2|§A2.2.2]] Radii and Speeds of the Bohr Orbits
 - [[§A2.2 The Bohr Model of Hydrogen#^thm-a2-2-3|§A2.2.3]] Energy Levels
 - [[§A2.2 The Bohr Model of Hydrogen#^thm-a2-2-4|§A2.2.4]] Spectrum of a One-Electron Atom
@@ -33,5 +33,5 @@ tags: [chapter, quantum-mechanics]
 - [[§A2.2 The Bohr Model of Hydrogen#^thm-a2-2-7|§A2.2.7]] Large-$n$ Limit of the Bohr Model
 
 ## Models
-- [[§A2.1 Atomic Spectra and the Nuclear Atom#^mod-a2-1-2|§A2.1.2]] Rutherford's Nuclear Atom
+- [[§A2.1 Atomic Spectra and the Nuclear Atom#^mod-a2-1-4|§A2.1.4]] Rutherford's Nuclear Atom
 - [[§A2.2 The Bohr Model of Hydrogen#^mod-a2-2-1|§A2.2.1]] Bohr Model of a One-Electron Atom

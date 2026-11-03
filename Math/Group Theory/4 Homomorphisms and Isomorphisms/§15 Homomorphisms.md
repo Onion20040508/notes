@@ -71,7 +71,7 @@ tags: [group-theory, math493]
 > - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^def-26-6|Kernel]] (590 Def. §26.6).
 > - Linear-algebra version: [[§8 Null Spaces and Ranges#^ladr-3-11|Null space]] (LADR 3.11).
 > - Computational version for linear maps: [[§30 Null Spaces, Column Spaces, and Linear Transformations#^def-30-5|235 Def. §30.5]] (kernel), computed as Nul A.
-> - Used in Quantum Mechanics: the homomorphism $SU(2) \to SO(3)$ has kernel $\{\pm1\}$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|QM Theorem §C5.2.6]].
+> - Used in Quantum Mechanics: the homomorphism $SU(2) \to SO(3)$ has kernel $\{\pm1\}$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-7|QM Theorem §C5.2.7]].
 
 > [!example] Example §15.1: Homomorphisms and Their Kernels
 > 1. $\det: GL_n(\mathbb{R}) \to \mathbb{R}^\times$ is a homomorphism, since $\det(AB) = \det A \det B$ ([[§37 Determinants#^ladr-9-49|LADR 9.49]]). Kernel: $SL_n(\mathbb{R}) = \{A : \det A = 1\}$. Image: all of $\mathbb{R}^\times$ (use $\operatorname{diag}(\lambda, 1, \ldots, 1)$).

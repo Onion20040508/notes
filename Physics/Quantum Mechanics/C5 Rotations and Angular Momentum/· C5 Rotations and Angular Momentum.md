@@ -29,9 +29,9 @@ tags: [chapter, quantum-mechanics]
 - [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-2|§C5.2.2]] Spin Up Along a Direction Is a Rotated State
 - [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|§C5.2.3]] A Rotation by 2π Reverses the Sign of a Spinor
 - [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-4|§C5.2.4]] Interference of a Rotated and an Unrotated Beam
-- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|§C5.2.5]] The Structure of SU(2)
-- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|§C5.2.6]] SU(2) Is a Double Cover of SO(3)
-- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-7|§C5.2.7]] Euler Rotations About Fixed Axes
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|§C5.2.6]] The Structure of SU(2)
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-7|§C5.2.7]] SU(2) Is a Double Cover of SO(3)
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|§C5.2.8]] Euler Rotations About Fixed Axes
 - [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-1|§C5.3.1]] Rotations Act Within a Multiplet, Irreducibly
 - [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-2|§C5.3.2]] Euler-Angle Form and Symmetries of the Rotation Matrices
 - [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-3|§C5.3.3]] The Reduced Matrices for j = 1/2 and j = 1

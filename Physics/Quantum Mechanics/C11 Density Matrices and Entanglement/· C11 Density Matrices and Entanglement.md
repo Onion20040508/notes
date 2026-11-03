@@ -39,7 +39,7 @@ tags: [chapter, quantum-mechanics]
 - [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-1|§C11.4.1]] Bell's Inequality
 - [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-2|§C11.4.2]] Quantum Mechanics Violates Bell's Inequality
 - [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-3|§C11.4.3]] The CHSH Inequality and Its Quantum Maximum
-- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-4|§C11.4.4]] No-Cloning Theorem
+- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-5|§C11.4.5]] No-Cloning Theorem
 - [[§C11.5★ Open Quantum Systems and Decoherence#^thm-c11-5-3|§C11.5.3]] Dephasing
 - [[§C11.5★ Open Quantum Systems and Decoherence#^thm-c11-5-5|§C11.5.5]] Relaxation to the Canonical Ensemble
 - [[§C11.5★ Open Quantum Systems and Decoherence#^thm-c11-5-6|§C11.5.6]] Two-Level System: Relaxation, Dephasing and the Lindblad Form
