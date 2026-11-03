@@ -30,10 +30,10 @@ tags: [chapter, quantum-mechanics]
 - [[§B9.2★ Helium and the Hydrogen Molecule#^thm-b9-2-2|§B9.2.2]] Screened Trial Function for Helium
 - [[§B9.2★ Helium and the Hydrogen Molecule#^thm-b9-2-5|§B9.2.5]] Binding of the Hydrogen Molecule Ion
 - [[§B9.2★ Helium and the Hydrogen Molecule#^thm-b9-2-7|§B9.2.7]] Covalent Bond of the Hydrogen Molecule
-- [[§B9.3 The WKB Approximation and Bohr–Sommerfeld Quantization#^thm-b9-3-1|§B9.3.1]] The WKB Wave Function in a Classical Region
-- [[§B9.3 The WKB Approximation and Bohr–Sommerfeld Quantization#^thm-b9-3-2|§B9.3.2]] WKB Density Equals the Classical Density
-- [[§B9.3 The WKB Approximation and Bohr–Sommerfeld Quantization#^thm-b9-3-3|§B9.3.3]] Quantization in a Well with Vertical Walls
-- [[§B9.3 The WKB Approximation and Bohr–Sommerfeld Quantization#^thm-b9-3-4|§B9.3.4]] Bohr–Sommerfeld Quantization
+- [[§B9.3 The WKB Approximation and Bohr–Sommerfeld Quantization#^thm-b9-3-2|§B9.3.2]] The WKB Wave Function in a Classical Region
+- [[§B9.3 The WKB Approximation and Bohr–Sommerfeld Quantization#^thm-b9-3-3|§B9.3.3]] WKB Density Equals the Classical Density
+- [[§B9.3 The WKB Approximation and Bohr–Sommerfeld Quantization#^thm-b9-3-4|§B9.3.4]] Quantization in a Well with Vertical Walls
+- [[§B9.3 The WKB Approximation and Bohr–Sommerfeld Quantization#^thm-b9-3-5|§B9.3.5]] Bohr–Sommerfeld Quantization
 - [[§B9.4 Tunnelling and the Connection Formulas#^thm-b9-4-1|§B9.4.1]] The WKB Wave Function in a Forbidden Region
 - [[§B9.4 Tunnelling and the Connection Formulas#^thm-b9-4-2|§B9.4.2]] Tunnelling Probability
 - [[§B9.4 Tunnelling and the Connection Formulas#^thm-b9-4-4|§B9.4.4]] The Gamow Factor and the Alpha-Decay Lifetime

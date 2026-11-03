@@ -17,7 +17,7 @@ tags: [chapter, quantum-mechanics]
 - [[§A1.3 The Compton Effect]] — UP Vol. 3 §6.3
 
 ## Principles
-- [[§A1.1 Blackbody Radiation#^pr-a1-1-3|§A1.1.3]] Planck's Quantization Hypothesis
+- [[§A1.1 Blackbody Radiation#^pr-a1-1-4|§A1.1.4]] Planck's Quantization Hypothesis
 - [[§A1.2 The Photoelectric Effect#^pr-a1-2-3|§A1.2.3]] Einstein's Photon Hypothesis
 
 ## Laws
@@ -27,11 +27,11 @@ tags: [chapter, quantum-mechanics]
 - [[§A1.3 The Compton Effect#^law-a1-3-1|§A1.3.1]] Compton's Observations
 
 ## Theorems
-- [[§A1.1 Blackbody Radiation#^thm-a1-1-2|§A1.1.2]] Rayleigh–Jeans Law (Classical Prediction)
-- [[§A1.1 Blackbody Radiation#^thm-a1-1-4|§A1.1.4]] Mean Energy of a Planck Oscillator
-- [[§A1.1 Blackbody Radiation#^thm-a1-1-5|§A1.1.5]] Planck's Radiation Law
-- [[§A1.1 Blackbody Radiation#^thm-a1-1-6|§A1.1.6]] Wien's Displacement Law
-- [[§A1.1 Blackbody Radiation#^thm-a1-1-7|§A1.1.7]] Stefan–Boltzmann Law from Planck's Law
+- [[§A1.1 Blackbody Radiation#^thm-a1-1-3|§A1.1.3]] Rayleigh–Jeans Law (Classical Prediction)
+- [[§A1.1 Blackbody Radiation#^thm-a1-1-5|§A1.1.5]] Mean Energy of a Planck Oscillator
+- [[§A1.1 Blackbody Radiation#^thm-a1-1-6|§A1.1.6]] Planck's Radiation Law
+- [[§A1.1 Blackbody Radiation#^thm-a1-1-7|§A1.1.7]] Wien's Displacement Law
+- [[§A1.1 Blackbody Radiation#^thm-a1-1-8|§A1.1.8]] Stefan–Boltzmann Law from Planck's Law
 - [[§A1.2 The Photoelectric Effect#^thm-a1-2-1|§A1.2.1]] Stopping Potential Measures the Maximum Kinetic Energy
 - [[§A1.2 The Photoelectric Effect#^thm-a1-2-5|§A1.2.5]] Einstein's Photoelectric Equation
 - [[§A1.3 The Compton Effect#^thm-a1-3-3|§A1.3.3]] Compton Shift

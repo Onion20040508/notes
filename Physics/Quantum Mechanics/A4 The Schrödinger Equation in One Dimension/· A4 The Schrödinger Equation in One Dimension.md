@@ -25,10 +25,10 @@ tags: [chapter, quantum-mechanics]
 
 ## Theorems
 - [[§A4.1 The Schrödinger Equation and Stationary States#^thm-a4-1-2|§A4.1.2]] Superposition of Solutions
-- [[§A4.1 The Schrödinger Equation and Stationary States#^thm-a4-1-3|§A4.1.3]] The Free-Particle Plane Wave
-- [[§A4.1 The Schrödinger Equation and Stationary States#^thm-a4-1-4|§A4.1.4]] Separation of Variables
-- [[§A4.1 The Schrödinger Equation and Stationary States#^thm-a4-1-5|§A4.1.5]] Properties of Stationary States
-- [[§A4.1 The Schrödinger Equation and Stationary States#^thm-a4-1-6|§A4.1.6]] Solutions Where the Potential Energy Is Constant
+- [[§A4.1 The Schrödinger Equation and Stationary States#^thm-a4-1-4|§A4.1.4]] The Free-Particle Plane Wave
+- [[§A4.1 The Schrödinger Equation and Stationary States#^thm-a4-1-5|§A4.1.5]] Separation of Variables
+- [[§A4.1 The Schrödinger Equation and Stationary States#^thm-a4-1-6|§A4.1.6]] Properties of Stationary States
+- [[§A4.1 The Schrödinger Equation and Stationary States#^thm-a4-1-7|§A4.1.7]] Solutions Where the Potential Energy Is Constant
 - [[§A4.2 The Particle in a Box#^thm-a4-2-2|§A4.2.2]] Energies and Stationary States of the Infinite Well
 - [[§A4.2 The Particle in a Box#^thm-a4-2-3|§A4.2.3]] Orthonormality of the Box States
 - [[§A4.2 The Particle in a Box#^thm-a4-2-4|§A4.2.4]] Expectation Values in a Box State

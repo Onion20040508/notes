@@ -18,7 +18,7 @@ tags: [chapter, quantum-mechanics]
 - [[§B8.4★ The Zeeman Effect and Hyperfine Splitting]] — Griffiths 7.4–7.5; Greensite 13
 
 ## Laws
-- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^law-b8-4-5|§B8.4.5]] The Proton's Magnetic Moment and the 21-cm Line
+- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^law-b8-4-6|§B8.4.6]] The Proton's Magnetic Moment and the 21-cm Line
 
 ## Theorems
 - [[§B8.1 Nondegenerate Perturbation Theory#^thm-b8-1-1|§B8.1.1]] First-Order Energy Correction
@@ -29,12 +29,12 @@ tags: [chapter, quantum-mechanics]
 - [[§B8.3 The Fine Structure of Hydrogen#^thm-b8-3-1|§B8.3.1]] Expectation Values of Inverse Powers of r in Hydrogen
 - [[§B8.3 The Fine Structure of Hydrogen#^thm-b8-3-2|§B8.3.2]] Relativistic Correction
 - [[§B8.3 The Fine Structure of Hydrogen#^thm-b8-3-4|§B8.3.4]] Spin–Orbit Energy
-- [[§B8.3 The Fine Structure of Hydrogen#^thm-b8-3-5|§B8.3.5]] Fine Structure of Hydrogen
-- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-1|§B8.4.1]] Zeeman Hamiltonian
-- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-2|§B8.4.2]] Weak-Field Zeeman Effect
-- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-3|§B8.4.3]] Strong-Field Zeeman Effect (Paschen–Back)
-- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-4|§B8.4.4]] Zeeman Effect for n = 2 at Any Field
-- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-6|§B8.4.6]] Hyperfine Splitting of the Hydrogen Ground State
+- [[§B8.3 The Fine Structure of Hydrogen#^thm-b8-3-6|§B8.3.6]] Fine Structure of Hydrogen
+- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-2|§B8.4.2]] Zeeman Hamiltonian
+- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-3|§B8.4.3]] Weak-Field Zeeman Effect
+- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-4|§B8.4.4]] Strong-Field Zeeman Effect (Paschen–Back)
+- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-5|§B8.4.5]] Zeeman Effect for n = 2 at Any Field
+- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^thm-b8-4-7|§B8.4.7]] Hyperfine Splitting of the Hydrogen Ground State
 
 ## Models
 - [[§B8.3 The Fine Structure of Hydrogen#^mod-b8-3-3|§B8.3.3]] Spin–Orbit Interaction

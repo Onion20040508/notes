@@ -17,19 +17,19 @@ tags: [chapter, quantum-mechanics]
 - [[§B7.3★ Solids, Free Electrons and Band Structure]] — Griffiths 5.3; Greensite 16
 
 ## Principles
-- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^pr-b7-1-3|§B7.1.3]] Symmetrization Requirement
+- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^pr-b7-1-4|§B7.1.4]] Symmetrization Requirement
 
 ## Laws
 - [[§B7.2 Atoms#^law-b7-2-4|§B7.2.4]] Measured Levels of Helium
 - [[§B7.2 Atoms#^law-b7-2-7|§B7.2.7]] Hund's Rules
 
 ## Theorems
-- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-1|§B7.1.1]] Non-Interacting Particles
-- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-2|§B7.1.2]] Exchange Symmetry Is Conserved
-- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-4|§B7.1.4]] Pauli Exclusion Principle
-- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-5|§B7.1.5]] Properties of the Slater Determinant
-- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-6|§B7.1.6]] Exchange Force
-- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-7|§B7.1.7]] Spin and Space for Two Electrons
+- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-2|§B7.1.2]] Non-Interacting Particles
+- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-3|§B7.1.3]] Exchange Symmetry Is Conserved
+- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-5|§B7.1.5]] Pauli Exclusion Principle
+- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-6|§B7.1.6]] Properties of the Slater Determinant
+- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-7|§B7.1.7]] Exchange Force
+- [[§B7.1 Two-Particle Systems, Bosons and Fermions#^thm-b7-1-8|§B7.1.8]] Spin and Space for Two Electrons
 - [[§B7.2 Atoms#^thm-b7-2-3|§B7.2.3]] States of Independent-Electron Helium
 - [[§B7.2 Atoms#^thm-b7-2-5|§B7.2.5]] Para- and Orthohelium Split by the Exchange Integral
 - [[§B7.2 Atoms#^thm-b7-2-6|§B7.2.6]] Closed Subshells Have Zero Angular Momentum

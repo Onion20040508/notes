@@ -18,11 +18,11 @@ tags: [chapter, quantum-mechanics]
 - [[§A5.4 Atomic Spectra, X-Rays and Lasers]] — UP Vol. 3 §8.5–8.6
 
 ## Principles
-- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^pr-a5-2-6|§A5.2.6]] Electron Spin
+- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^pr-a5-2-7|§A5.2.7]] Electron Spin
 - [[§A5.3 The Exclusion Principle and the Periodic Table#^pr-a5-3-2|§A5.3.2]] Pauli Exclusion Principle
 
 ## Laws
-- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^law-a5-2-5|§A5.2.5]] The Stern–Gerlach Result
+- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^law-a5-2-6|§A5.2.6]] The Stern–Gerlach Result
 - [[§A5.3 The Exclusion Principle and the Periodic Table#^law-a5-3-5|§A5.3.5]] Filling Order of Subshells
 - [[§A5.4 Atomic Spectra, X-Rays and Lasers#^law-a5-4-3|§A5.4.3]] Moseley's Law
 - [[§A5.4 Atomic Spectra, X-Rays and Lasers#^law-a5-4-5|§A5.4.5]] Duane–Hunt Rule
@@ -37,21 +37,21 @@ tags: [chapter, quantum-mechanics]
 - [[§A5.1 The Hydrogen Atom#^thm-a5-1-8|§A5.1.8]] Radial Distribution of the Ground State
 - [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-1|§A5.2.1]] Orbital Magnetic Moment
 - [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-2|§A5.2.2]] Quantization of the Orbital Moment
-- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-3|§A5.2.3]] Zeeman Splitting of an Orbital Level
-- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-4|§A5.2.4]] Force on a Magnetic Moment in a Nonuniform Field
-- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-7|§A5.2.7]] Spin States in a Magnetic Field
-- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-8|§A5.2.8]] Total Angular Momentum of One Electron
-- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-9|§A5.2.9]] Fine-Structure Splitting
+- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-4|§A5.2.4]] Zeeman Splitting of an Orbital Level
+- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-5|§A5.2.5]] Force on a Magnetic Moment in a Nonuniform Field
+- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-8|§A5.2.8]] Spin States in a Magnetic Field
+- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-9|§A5.2.9]] Total Angular Momentum of One Electron
+- [[§A5.2 Orbital Magnetic Moment and Electron Spin#^thm-a5-2-10|§A5.2.10]] Fine-Structure Splitting
 - [[§A5.3 The Exclusion Principle and the Periodic Table#^thm-a5-3-1|§A5.3.1]] Wave Functions of Two Identical Particles
 - [[§A5.3 The Exclusion Principle and the Periodic Table#^thm-a5-3-4|§A5.3.4]] Capacity of Subshells and Shells
 - [[§A5.4 Atomic Spectra, X-Rays and Lasers#^thm-a5-4-1|§A5.4.1]] Photon Energy in an Atomic Transition
 - [[§A5.4 Atomic Spectra, X-Rays and Lasers#^thm-a5-4-2|§A5.4.2]] Selection Rules for One-Electron Transitions
 - [[§A5.4 Atomic Spectra, X-Rays and Lasers#^thm-a5-4-4|§A5.4.4]] K$\alpha$ Frequency in the Screened Bohr Model
 - [[§A5.4 Atomic Spectra, X-Rays and Lasers#^thm-a5-4-6|§A5.4.6]] Short-Wavelength Cutoff of the Continuous Spectrum
-- [[§A5.4 Atomic Spectra, X-Rays and Lasers#^thm-a5-4-7|§A5.4.7]] Einstein Relations
-- [[§A5.4 Atomic Spectra, X-Rays and Lasers#^thm-a5-4-8|§A5.4.8]] Condition for Light Amplification
+- [[§A5.4 Atomic Spectra, X-Rays and Lasers#^thm-a5-4-8|§A5.4.8]] Einstein Relations
+- [[§A5.4 Atomic Spectra, X-Rays and Lasers#^thm-a5-4-9|§A5.4.9]] Condition for Light Amplification
 
 ## Models
 - [[§A5.1 The Hydrogen Atom#^mod-a5-1-2|§A5.1.2]] Schrödinger Model of the Hydrogen Atom
 - [[§A5.3 The Exclusion Principle and the Periodic Table#^mod-a5-3-3|§A5.3.3]] Independent-Electron Model of an Atom
-- [[§A5.4 Atomic Spectra, X-Rays and Lasers#^mod-a5-4-9|§A5.4.9]] Laser
+- [[§A5.4 Atomic Spectra, X-Rays and Lasers#^mod-a5-4-10|§A5.4.10]] Laser

@@ -31,10 +31,10 @@ tags: [chapter, quantum-mechanics]
 - [[§B5.2 Orbital Angular Momentum and Spherical Harmonics#^thm-b5-2-6|§B5.2.6]] Angular Momentum Operators in Spherical Coordinates
 - [[§B5.2 Orbital Angular Momentum and Spherical Harmonics#^thm-b5-2-7|§B5.2.7]] Orbital Eigenfunctions Are the Spherical Harmonics
 - [[§B5.2 Orbital Angular Momentum and Spherical Harmonics#^thm-b5-2-9|§B5.2.9]] Energy Levels of the Rigid Rotor
-- [[§B5.3 Central Potentials and the Radial Equation#^thm-b5-3-1|§B5.3.1]] Separation of the Schrödinger Equation for a Central Potential
-- [[§B5.3 Central Potentials and the Radial Equation#^thm-b5-3-2|§B5.3.2]] Boundary Behaviour of the Radial Function
-- [[§B5.3 Central Potentials and the Radial Equation#^thm-b5-3-3|§B5.3.3]] Structure of the Spectrum of a Central Potential
-- [[§B5.3 Central Potentials and the Radial Equation#^thm-b5-3-5|§B5.3.5]] $s$-States of the Linear Potential
+- [[§B5.3 Central Potentials and the Radial Equation#^thm-b5-3-2|§B5.3.2]] Separation of the Schrödinger Equation for a Central Potential
+- [[§B5.3 Central Potentials and the Radial Equation#^thm-b5-3-3|§B5.3.3]] Boundary Behaviour of the Radial Function
+- [[§B5.3 Central Potentials and the Radial Equation#^thm-b5-3-4|§B5.3.4]] Structure of the Spectrum of a Central Potential
+- [[§B5.3 Central Potentials and the Radial Equation#^thm-b5-3-6|§B5.3.6]] $s$-States of the Linear Potential
 - [[§B5.4 The Hydrogen Atom#^thm-b5-4-2|§B5.4.2]] Bound States of Hydrogen
 - [[§B5.4 The Hydrogen Atom#^thm-b5-4-3|§B5.4.3]] Degeneracy of the Hydrogen Levels
 - [[§B5.4 The Hydrogen Atom#^thm-b5-4-4|§B5.4.4]] Hydrogen Wave Functions
@@ -45,5 +45,5 @@ tags: [chapter, quantum-mechanics]
 - [[§B5.1 The Schrödinger Equation in Three Dimensions#^mod-b5-1-4|§B5.1.4]] Particle in a Rectangular Box
 - [[§B5.1 The Schrödinger Equation in Three Dimensions#^mod-b5-1-6|§B5.1.6]] Anisotropic Three-Dimensional Oscillator
 - [[§B5.2 Orbital Angular Momentum and Spherical Harmonics#^mod-b5-2-8|§B5.2.8]] Rigid Rotor
-- [[§B5.3 Central Potentials and the Radial Equation#^mod-b5-3-4|§B5.3.4]] Linear Central Potential
+- [[§B5.3 Central Potentials and the Radial Equation#^mod-b5-3-5|§B5.3.5]] Linear Central Potential
 - [[§B5.4 The Hydrogen Atom#^mod-b5-4-1|§B5.4.1]] Hydrogen Atom (Coulomb Problem)

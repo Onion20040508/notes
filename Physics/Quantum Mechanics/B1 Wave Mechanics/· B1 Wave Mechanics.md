@@ -21,10 +21,10 @@ tags: [chapter, quantum-mechanics]
 - [[§B1.2 Momentum, Operators and Ehrenfest's Theorem#^pr-b1-2-2|§B1.2.2]] The Operator Rule for Expectation Values
 
 ## Theorems
-- [[§B1.1 The Statistical Interpretation and Probability Current#^thm-b1-1-1|§B1.1.1]] Continuity Equation for Probability
-- [[§B1.1 The Statistical Interpretation and Probability Current#^thm-b1-1-2|§B1.1.2]] Current from Modulus and Phase
-- [[§B1.1 The Statistical Interpretation and Probability Current#^thm-b1-1-3|§B1.1.3]] Conservation of Normalization
-- [[§B1.1 The Statistical Interpretation and Probability Current#^thm-b1-1-4|§B1.1.4]] Conservation of Overlaps
+- [[§B1.1 The Statistical Interpretation and Probability Current#^thm-b1-1-2|§B1.1.2]] Continuity Equation for Probability
+- [[§B1.1 The Statistical Interpretation and Probability Current#^thm-b1-1-3|§B1.1.3]] Current from Modulus and Phase
+- [[§B1.1 The Statistical Interpretation and Probability Current#^thm-b1-1-4|§B1.1.4]] Conservation of Normalization
+- [[§B1.1 The Statistical Interpretation and Probability Current#^thm-b1-1-5|§B1.1.5]] Conservation of Overlaps
 - [[§B1.2 Momentum, Operators and Ehrenfest's Theorem#^thm-b1-2-1|§B1.2.1]] Velocity of the Mean Position
 - [[§B1.2 Momentum, Operators and Ehrenfest's Theorem#^thm-b1-2-3|§B1.2.3]] Mean Momentum Is Mass Times the Velocity of the Mean Position
 - [[§B1.2 Momentum, Operators and Ehrenfest's Theorem#^thm-b1-2-4|§B1.2.4]] Kinetic Energy Is Positive
@@ -33,7 +33,7 @@ tags: [chapter, quantum-mechanics]
 - [[§B1.3 Stationary States and Expansion in Energy Eigenstates#^thm-b1-3-2|§B1.3.2]] Nothing Happens in a Stationary State
 - [[§B1.3 Stationary States and Expansion in Energy Eigenstates#^thm-b1-3-3|§B1.3.3]] Completeness of the Box States
 - [[§B1.3 Stationary States and Expansion in Energy Eigenstates#^thm-b1-3-4|§B1.3.4]] Expansion in Stationary States and Evolution of the Coefficients
-- [[§B1.4 The Free Particle and Wave Packets#^thm-b1-4-1|§B1.4.1]] Free-Particle Stationary States
-- [[§B1.4 The Free Particle and Wave Packets#^thm-b1-4-2|§B1.4.2]] The Free Wave Packet
-- [[§B1.4 The Free Particle and Wave Packets#^thm-b1-4-3|§B1.4.3]] Momentum Moments from the Momentum Amplitude
-- [[§B1.4 The Free Particle and Wave Packets#^thm-b1-4-4|§B1.4.4]] The Free Gaussian Packet
+- [[§B1.4 The Free Particle and Wave Packets#^thm-b1-4-2|§B1.4.2]] Free-Particle Stationary States
+- [[§B1.4 The Free Particle and Wave Packets#^thm-b1-4-3|§B1.4.3]] The Free Wave Packet
+- [[§B1.4 The Free Particle and Wave Packets#^thm-b1-4-4|§B1.4.4]] Momentum Moments from the Momentum Amplitude
+- [[§B1.4 The Free Particle and Wave Packets#^thm-b1-4-5|§B1.4.5]] The Free Gaussian Packet

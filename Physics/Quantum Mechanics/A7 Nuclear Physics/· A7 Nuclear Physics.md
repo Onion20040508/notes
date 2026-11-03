@@ -23,8 +23,8 @@ tags: [chapter, quantum-mechanics]
 - [[§A7.1 Properties of Nuclei and Binding Energy#^law-a7-1-4|§A7.1.4]] The Line of Stability
 - [[§A7.1 Properties of Nuclei and Binding Energy#^law-a7-1-5|§A7.1.5]] Pairing and Magic Numbers
 - [[§A7.1 Properties of Nuclei and Binding Energy#^law-a7-1-7|§A7.1.7]] The Binding-Energy Curve
-- [[§A7.2 Radioactive Decay#^law-a7-2-6|§A7.2.6]] The Continuous Beta Spectrum
-- [[§A7.2 Radioactive Decay#^law-a7-2-7|§A7.2.7]] Geiger–Nuttall Rule
+- [[§A7.2 Radioactive Decay#^law-a7-2-7|§A7.2.7]] The Continuous Beta Spectrum
+- [[§A7.2 Radioactive Decay#^law-a7-2-8|§A7.2.8]] Geiger–Nuttall Rule
 - [[§A7.3 Nuclear Reactions, Fission and Fusion#^law-a7-3-3|§A7.3.3]] Neutron Capture Cross Sections and the 1/v Law
 - [[§A7.3 Nuclear Reactions, Fission and Fusion#^law-a7-3-4|§A7.3.4]] Fission Fragments and Neutron Yield
 
@@ -33,10 +33,10 @@ tags: [chapter, quantum-mechanics]
 - [[§A7.1 Properties of Nuclei and Binding Energy#^thm-a7-1-6|§A7.1.6]] Binding Energy from Atomic Masses
 - [[§A7.2 Radioactive Decay#^thm-a7-2-2|§A7.2.2]] Radioactive Decay Law
 - [[§A7.2 Radioactive Decay#^thm-a7-2-3|§A7.2.3]] Half-Life, Lifetime and Decay Constant
-- [[§A7.2 Radioactive Decay#^thm-a7-2-4|§A7.2.4]] Decay Energies from Atomic Masses
-- [[§A7.2 Radioactive Decay#^thm-a7-2-5|§A7.2.5]] Energy Sharing in Alpha Decay
-- [[§A7.2 Radioactive Decay#^thm-a7-2-8|§A7.2.8]] The Four Decay Series
-- [[§A7.2 Radioactive Decay#^thm-a7-2-9|§A7.2.9]] Radioactive Dating
+- [[§A7.2 Radioactive Decay#^thm-a7-2-5|§A7.2.5]] Decay Energies from Atomic Masses
+- [[§A7.2 Radioactive Decay#^thm-a7-2-6|§A7.2.6]] Energy Sharing in Alpha Decay
+- [[§A7.2 Radioactive Decay#^thm-a7-2-9|§A7.2.9]] The Four Decay Series
+- [[§A7.2 Radioactive Decay#^thm-a7-2-10|§A7.2.10]] Radioactive Dating
 - [[§A7.3 Nuclear Reactions, Fission and Fusion#^thm-a7-3-1|§A7.3.1]] Q as Kinetic-Energy Gain and as Binding-Energy Gain
 - [[§A7.3 Nuclear Reactions, Fission and Fusion#^thm-a7-3-2|§A7.3.2]] Threshold Energy
 - [[§A7.3 Nuclear Reactions, Fission and Fusion#^thm-a7-3-5|§A7.3.5]] Energy of the Proton–Proton Chain
