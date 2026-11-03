@@ -8,8 +8,8 @@ tags: [chapter, classical-mechanics]
 # A6 Rotation
 ← [[· A5 Linear Momentum and Collisions]] · ↑ [[Classical Mechanics]] · [[· A7 Static Equilibrium and Elasticity]] →
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (6), [[· A2 Kinematics|A2 Kinematics]] (5), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (7), [[· A4 Work and Energy|A4 Work and Energy]] (11), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (5), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (2), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (2)
-**Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (1), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (6), [[· A8 Gravitation|A8 Gravitation]] (3), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (5), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (3), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (8), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (1), [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory|B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] (2), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (1), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (9)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (6), [[· A2 Kinematics|A2 Kinematics]] (5), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (7), [[· A4 Work and Energy|A4 Work and Energy]] (11), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (5), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (2), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (2), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (1)
+**Used by:** [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (1), [[· A7 Static Equilibrium and Elasticity|A7 Static Equilibrium and Elasticity]] (6), [[· A8 Gravitation|A8 Gravitation]] (3), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (5), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (3), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (8), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (1), [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory|B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] (2), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (2), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (9)
 
 ## Sections
 - [[§A6.1 Rotational Kinematics]] — UP Vol. 1 §10.1–10.3
@@ -19,6 +19,9 @@ tags: [chapter, classical-mechanics]
 - [[§A6.5 Rolling]] — UP Vol. 1 §11.1
 - [[§A6.6 Angular Momentum and Its Conservation]] — UP Vol. 1 §11.2–11.3
 - [[§A6.7 Precession]] — UP Vol. 1 §11.4
+
+## Laws
+- [[§A6.7 Precession#^law-a6-7-3|§A6.7.3]] Precession of Earth's Axis
 
 ## Theorems
 - [[§A6.1 Rotational Kinematics#^thm-a6-1-2|§A6.1.2]] Tangential Speed and Tangential Acceleration

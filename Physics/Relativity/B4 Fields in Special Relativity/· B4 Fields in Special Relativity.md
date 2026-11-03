@@ -8,7 +8,7 @@ tags: [chapter, relativity]
 # B4 Fields in Special Relativity
 ← [[· B3 Relativistic Dynamics from an Action]] · ↑ [[Relativity]]
 
-**Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (1), [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (4), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (2), [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (5), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (18), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (2)
+**Builds on:** [[· A1 Postulates and the Lorentz Transformation|A1 Postulates and the Lorentz Transformation]] (1), [[· A2 Relativistic Kinematics|A2 Relativistic Kinematics]] (4), [[· A3 Relativistic Momentum and Energy|A3 Relativistic Momentum and Energy]] (1), [[· B1 Minkowski Spacetime and the Lorentz Group|B1 Minkowski Spacetime and the Lorentz Group]] (5), [[· B2 Four-Vectors and Tensors|B2 Four-Vectors and Tensors]] (18), [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (2)
 **Used by:** [[· B3 Relativistic Dynamics from an Action|B3 Relativistic Dynamics from an Action]] (3)
 
 ## Sections

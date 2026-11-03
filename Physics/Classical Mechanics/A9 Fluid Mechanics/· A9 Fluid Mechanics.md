@@ -20,7 +20,9 @@ tags: [chapter, classical-mechanics]
 - [[§A9.6 Viscosity and Turbulence]] — UP Vol. 1 §14.7
 
 ## Laws
+- [[§A9.1 Density and Pressure#^law-a9-1-1|§A9.1.1]] Densities of Common Substances
 - [[§A9.6 Viscosity and Turbulence#^law-a9-6-1|§A9.6.1]] Viscous Force in Laminar Shear Flow
+- [[§A9.6 Viscosity and Turbulence#^law-a9-6-2|§A9.6.2]] Viscosities of Common Fluids
 - [[§A9.6 Viscosity and Turbulence#^law-a9-6-3|§A9.6.3]] Poiseuille's Law
 - [[§A9.6 Viscosity and Turbulence#^law-a9-6-4|§A9.6.4]] Onset of Turbulence
 

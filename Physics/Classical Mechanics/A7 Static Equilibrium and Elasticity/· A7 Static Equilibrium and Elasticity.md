@@ -17,6 +17,8 @@ tags: [chapter, classical-mechanics]
 
 ## Laws
 - [[§A7.2 Stress, Strain and Elastic Moduli#^law-a7-2-1|§A7.2.1]] Linear Stress–Strain Relation
+- [[§A7.2 Stress, Strain and Elastic Moduli#^law-a7-2-2|§A7.2.2]] Elastic Moduli of Common Materials
+- [[§A7.2 Stress, Strain and Elastic Moduli#^law-a7-2-3|§A7.2.3]] Breaking Stresses of Two Metals
 
 ## Theorems
 - [[§A7.1 Conditions for Equilibrium#^thm-a7-1-1|§A7.1.1]] Conditions for Equilibrium

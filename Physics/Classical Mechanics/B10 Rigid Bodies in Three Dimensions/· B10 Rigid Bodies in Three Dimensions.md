@@ -9,12 +9,16 @@ tags: [chapter, classical-mechanics]
 ← [[· B9 Non-Inertial Frames]] · ↑ [[Classical Mechanics]]
 
 **Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (2), [[· A5 Linear Momentum and Collisions|A5 Linear Momentum and Collisions]] (3), [[· A6 Rotation|A6 Rotation]] (9), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (2), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (2), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (6), [[· B6 Lagrangian Mechanics|B6 Lagrangian Mechanics]] (8), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (14)
-**Used by:** [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (1), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (1)
+**Used by:** [[· A6 Rotation|A6 Rotation]] (1), [[· B3 Systems of Particles and Rotation about an Axis|B3 Systems of Particles and Rotation about an Axis]] (1), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (1)
 
 ## Sections
 - [[§B10.1 The Inertia Tensor and Principal Axes]] — Morin 9.1–9.3, App. D–E; H&S 12
 - [[§B10.2 Euler's Equations and Free Rotation]] — Morin 9.4–9.5; H&S 12
 - [[§B10.3 The Heavy Symmetric Top]] — Morin 9.6–9.7; H&S 12; 'It has to go down a little' (PHY 421 reading)
+
+## Laws
+- [[§B10.2 Euler's Equations and Free Rotation#^law-b10-2-4|§B10.2.4]] The Chandler Wobble
+- [[§B10.3 The Heavy Symmetric Top#^law-b10-3-7|§B10.3.7]] Measured Dip of a Gyroscope Released from Rest
 
 ## Theorems
 - [[§B10.1 The Inertia Tensor and Principal Axes#^thm-b10-1-2|§B10.1.2]] Velocity Field of a Rigid Body

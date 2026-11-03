@@ -8,12 +8,15 @@ tags: [chapter, classical-mechanics]
 # B9 Non-Inertial Frames
 ← [[· B8 Poisson Brackets, Canonical Transformations and Hamilton–Jacobi Theory]] · ↑ [[Classical Mechanics]] · [[· B10 Rigid Bodies in Three Dimensions]] →
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (7), [[· A2 Kinematics|A2 Kinematics]] (5), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (3), [[· A4 Work and Energy|A4 Work and Energy]] (2), [[· A6 Rotation|A6 Rotation]] (1), [[· A8 Gravitation|A8 Gravitation]] (3), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (1)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (7), [[· A2 Kinematics|A2 Kinematics]] (6), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (3), [[· A4 Work and Energy|A4 Work and Energy]] (2), [[· A6 Rotation|A6 Rotation]] (2), [[· A8 Gravitation|A8 Gravitation]] (3), [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (1)
 **Used by:** [[· B10 Rigid Bodies in Three Dimensions|B10 Rigid Bodies in Three Dimensions]] (14)
 
 ## Sections
 - [[§B9.1 Accelerating and Rotating Frames]] — Morin 10.1–10.2; H&S 9
 - [[§B9.2 Motion on the Rotating Earth]] — Morin 10.3–10.4; H&S 9
+
+## Laws
+- [[§B9.2 Motion on the Rotating Earth#^law-b9-2-3|§B9.2.3]] Earth's Equatorial Bulge and the Variation of g
 
 ## Theorems
 - [[§B9.1 Accelerating and Rotating Frames#^thm-b9-1-1|§B9.1.1]] Angular Velocity of a Frame

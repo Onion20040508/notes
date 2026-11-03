@@ -8,7 +8,7 @@ tags: [chapter, classical-mechanics]
 # A8 Gravitation
 ← [[· A7 Static Equilibrium and Elasticity]] · ↑ [[Classical Mechanics]] · [[· A9 Fluid Mechanics]] →
 
-**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (1), [[· A2 Kinematics|A2 Kinematics]] (7), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (8), [[· A4 Work and Energy|A4 Work and Energy]] (9), [[· A6 Rotation|A6 Rotation]] (3), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (1)
+**Builds on:** [[· A1 Units, Measurement and Vectors|A1 Units, Measurement and Vectors]] (1), [[· A2 Kinematics|A2 Kinematics]] (7), [[· A3 Newton's Laws of Motion|A3 Newton's Laws of Motion]] (9), [[· A4 Work and Energy|A4 Work and Energy]] (9), [[· A6 Rotation|A6 Rotation]] (3), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (1), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (1)
 **Used by:** [[· A2 Kinematics|A2 Kinematics]] (3), [[· A4 Work and Energy|A4 Work and Energy]] (2), [[· A9 Fluid Mechanics|A9 Fluid Mechanics]] (2), [[· B1 Newtonian Mechanics and Conservation Laws|B1 Newtonian Mechanics and Conservation Laws]] (1), [[· B2 Central Forces and Orbits|B2 Central Forces and Orbits]] (4), [[· B9 Non-Inertial Frames|B9 Non-Inertial Frames]] (3)
 
 ## Sections
@@ -20,6 +20,11 @@ tags: [chapter, classical-mechanics]
 
 ## Principles
 - [[§A8.1 Universal Gravitation#^pr-a8-1-1|§A8.1.1]] Newton's Law of Universal Gravitation
+
+## Laws
+- [[§A8.1 Universal Gravitation#^law-a8-1-2|§A8.1.2]] The Measured Value of G
+- [[§A8.1 Universal Gravitation#^law-a8-1-3|§A8.1.3]] Equality of Inertial and Gravitational Mass
+- [[§A8.5 Beyond Newton#^law-a8-5-1|§A8.5.1]] Observed Departures from Newtonian Gravity
 
 ## Theorems
 - [[§A8.1 Universal Gravitation#^thm-a8-1-4|§A8.1.4]] Free-Fall Acceleration from the Law of Gravitation
