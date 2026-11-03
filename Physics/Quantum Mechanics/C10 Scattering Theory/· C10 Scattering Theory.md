@@ -21,11 +21,11 @@ tags: [chapter, quantum-mechanics]
 - [[§C10.3 Partial Waves and Phase Shifts#^law-c10-3-11|§C10.3.11]] ★ The Δ(1232) Resonance in π⁺p Scattering
 
 ## Theorems
-- [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-1|§C10.1.1]] The T Matrix, the S Matrix and the Cross-Section
-- [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-2|§C10.1.2]] The Lippmann–Schwinger Equation
-- [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|§C10.1.3]] The Free Green's Function
-- [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-4|§C10.1.4]] The Integral Equation and the Scattering Amplitude
-- [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-5|§C10.1.5]] The Born Series and the First Born Approximation
+- [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-2|§C10.1.2]] The T Matrix, the S Matrix and the Cross-Section
+- [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-3|§C10.1.3]] The Lippmann–Schwinger Equation
+- [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-4|§C10.1.4]] The Free Green's Function
+- [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-5|§C10.1.5]] The Integral Equation and the Scattering Amplitude
+- [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-6|§C10.1.6]] The Born Series and the First Born Approximation
 - [[§C10.2 The Eikonal Approximation and the Optical Theorem#^thm-c10-2-1|§C10.2.1]] The Optical Theorem
 - [[§C10.2 The Eikonal Approximation and the Optical Theorem#^thm-c10-2-2|§C10.2.2]] The Eikonal Approximation
 - [[§C10.2 The Eikonal Approximation and the Optical Theorem#^thm-c10-2-3|§C10.2.3]] The Eikonal Satisfies the Optical Theorem
@@ -38,3 +38,6 @@ tags: [chapter, quantum-mechanics]
 - [[§C10.3 Partial Waves and Phase Shifts#^thm-c10-3-7|§C10.3.7]] Phase Shifts in the Eikonal Limit
 - [[§C10.3 Partial Waves and Phase Shifts#^thm-c10-3-8|§C10.3.8]] Low-Energy $s$-Wave Scattering by a Square Well
 - [[§C10.3 Partial Waves and Phase Shifts#^thm-c10-3-9|§C10.3.9]] Scattering Length and a Shallow Bound State
+
+## Models
+- [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^mod-c10-1-1|§C10.1.1]] Potential Scattering

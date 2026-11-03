@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # A2 The Nuclear Atom and the Bohr Model
 ← [[· A1 The Particle Nature of Light]] · ↑ [[Quantum Mechanics]] · [[· A3 Matter Waves and Uncertainty]] →
 
-**Builds on:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (3), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (5), [[· A7 Nuclear Physics|A7 Nuclear Physics]] (1)
-**Used by:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (2)
+**Builds on:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (3), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (7), [[· A7 Nuclear Physics|A7 Nuclear Physics]] (1)
+**Used by:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (2), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (3)
 
 ## Sections
 - [[§A2.1 Atomic Spectra and the Nuclear Atom]] — UP Vol. 3 §6.4

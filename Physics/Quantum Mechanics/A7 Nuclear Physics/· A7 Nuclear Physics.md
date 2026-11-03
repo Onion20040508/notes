@@ -44,3 +44,4 @@ tags: [chapter, quantum-mechanics]
 ## Models
 - [[§A7.1 Properties of Nuclei and Binding Energy#^mod-a7-1-8|§A7.1.8]] Liquid-Drop Model
 - [[§A7.2 Radioactive Decay#^mod-a7-2-1|§A7.2.1]] Decay at Constant Probability
+- [[§A7.2 Radioactive Decay#^mod-a7-2-4|§A7.2.4]] Energy Bookkeeping of Decays and Reactions

@@ -8,7 +8,7 @@ tags: [chapter, quantum-mechanics]
 # A8 Particle Physics and Cosmology
 ← [[· A7 Nuclear Physics]] · ↑ [[Quantum Mechanics]] · [[· B1 Wave Mechanics]] →
 
-**Builds on:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (6), [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (2), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (2), [[· A7 Nuclear Physics|A7 Nuclear Physics]] (1), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (2), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (1)
+**Builds on:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (6), [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (3), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (2), [[· A7 Nuclear Physics|A7 Nuclear Physics]] (1), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (2), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (1)
 **Used by:** [[· A7 Nuclear Physics|A7 Nuclear Physics]] (2), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (1)
 
 ## Sections

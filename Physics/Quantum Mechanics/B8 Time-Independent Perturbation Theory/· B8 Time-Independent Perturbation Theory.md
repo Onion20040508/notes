@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # B8 Time-Independent Perturbation Theory
 ← [[· B7 Identical Particles]] · ↑ [[Quantum Mechanics]] · [[· B9 The Variational Principle and the WKB Approximation]] →
 
-**Builds on:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (3), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (8), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (12), [[· B6 Spin|B6 Spin]] (19), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (1)
-**Used by:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (4), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (5), [[· C6 Central Potentials|C6 Central Potentials]] (1), [[· C9 Approximation Methods|C9 Approximation Methods]] (10), [[· C12★ Identical Particles and Second Quantization|C12 Identical Particles and Second Quantization]] (4), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (3)
+**Builds on:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (3), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (8), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (19), [[· B6 Spin|B6 Spin]] (19), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (1)
+**Used by:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (10), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (4), [[· B6 Spin|B6 Spin]] (1), [[· B7 Identical Particles|B7 Identical Particles]] (1), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (5), [[· C6 Central Potentials|C6 Central Potentials]] (1), [[· C9 Approximation Methods|C9 Approximation Methods]] (12), [[· C12★ Identical Particles and Second Quantization|C12 Identical Particles and Second Quantization]] (4), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (3)
 
 ## Sections
 - [[§B8.1 Nondegenerate Perturbation Theory]] — Griffiths 7.1; Greensite 17
@@ -38,3 +38,5 @@ tags: [chapter, quantum-mechanics]
 
 ## Models
 - [[§B8.3 The Fine Structure of Hydrogen#^mod-b8-3-3|§B8.3.3]] Spin–Orbit Interaction
+- [[§B8.3 The Fine Structure of Hydrogen#^mod-b8-3-5|§B8.3.5]] Hydrogen with Fine Structure
+- [[§B8.4★ The Zeeman Effect and Hyperfine Splitting#^mod-b8-4-1|§B8.4.1]] Hydrogen in a Uniform External Magnetic Field

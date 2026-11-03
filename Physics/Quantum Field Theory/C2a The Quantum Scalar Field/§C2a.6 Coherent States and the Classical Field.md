@@ -221,7 +221,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 >
 > **What the derivation shows**
 > - Each mode label turns clockwise at its own frequency, as for one oscillator ([[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-3|QM Theorem §C3.4.3]], 4).
-> - Because the theory is free, Ehrenfest's theorem is exact: the mean field obeys the classical equation with no corrections ([[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-6|QM Theorem §C3.3.6]]).
+> - Because the theory is free, Ehrenfest's theorem is exact: the mean field obeys the classical equation with no corrections ([[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-8|QM Theorem §C3.3.8]]).
 
 ^der-c2a-6-5
 
@@ -351,7 +351,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 ^rem-c2a-6-1
 
 > [!remark] Remark: What changes from the single oscillator
-> For one oscillator, Quantum Mechanics' [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-3|QM Theorem §C3.4.3]] already contains the mechanism: displacement by $\hat D(\lambda)$, eigenstate of $\hat a$, Poisson statistics, the ground state's spreads at all times, and the label turning as $\lambda e^{-i\omega t}$. The derivation of Theorem §C2a.6.6 shows that a coherent state of the free field *is* a coherent state of one oscillator, the wave packet $\hat c^\dagger$ shaped by $\eta$, with all other modes in their vacuum; so those results transfer mode by mode (rule: same result, same argument, linked). What is new is the reading: the label $\eta_{\mathbf k}$ is a classical field configuration, the invariant measure $d^3p/(2\pi)^32E_{\mathbf p}$ appears in $\bar\phi$ on its own, and the "phase-space point" of the oscillator becomes a solution of the Klein–Gordon equation. Because the theory is free, Ehrenfest's theorem is exact: the mean field obeys the classical equation with no corrections ([[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-6|QM Theorem §C3.3.6]]).
+> For one oscillator, Quantum Mechanics' [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-3|QM Theorem §C3.4.3]] already contains the mechanism: displacement by $\hat D(\lambda)$, eigenstate of $\hat a$, Poisson statistics, the ground state's spreads at all times, and the label turning as $\lambda e^{-i\omega t}$. The derivation of Theorem §C2a.6.6 shows that a coherent state of the free field *is* a coherent state of one oscillator, the wave packet $\hat c^\dagger$ shaped by $\eta$, with all other modes in their vacuum; so those results transfer mode by mode (rule: same result, same argument, linked). What is new is the reading: the label $\eta_{\mathbf k}$ is a classical field configuration, the invariant measure $d^3p/(2\pi)^32E_{\mathbf p}$ appears in $\bar\phi$ on its own, and the "phase-space point" of the oscillator becomes a solution of the Klein–Gordon equation. Because the theory is free, Ehrenfest's theorem is exact: the mean field obeys the classical equation with no corrections ([[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-8|QM Theorem §C3.3.8]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 4 §4.10*
 

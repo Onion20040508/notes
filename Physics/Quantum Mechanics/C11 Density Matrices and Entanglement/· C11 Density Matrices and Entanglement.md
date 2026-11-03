@@ -8,7 +8,7 @@ tags: [chapter, quantum-mechanics]
 # C11 Density Matrices and Entanglement
 ← [[· C10 Scattering Theory]] · ↑ [[Quantum Mechanics]] · [[· C12★ Identical Particles and Second Quantization]] →
 
-**Builds on:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (2), [[· B6 Spin|B6 Spin]] (5), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (15), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (9), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (4), [[· C9 Approximation Methods|C9 Approximation Methods]] (1)
+**Builds on:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (2), [[· B6 Spin|B6 Spin]] (5), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (17), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (9), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (4), [[· C9 Approximation Methods|C9 Approximation Methods]] (1)
 **Used by:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (2)
 
 ## Sections
@@ -19,7 +19,7 @@ tags: [chapter, quantum-mechanics]
 - [[§C11.5★ Open Quantum Systems and Decoherence]] — Likharev 7.3–7.7; Griffiths 12.5
 
 ## Laws
-- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^law-c11-4-4|§C11.4.4]] Violation of Bell's Inequality
+- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^law-c11-4-5|§C11.4.5]] Violation of Bell's Inequality
 
 ## Theorems
 - [[§C11.1 Pure and Mixed States and the Density Operator#^thm-c11-1-1|§C11.1.1]] Everything Measurable Is Fixed by ρ
@@ -39,16 +39,17 @@ tags: [chapter, quantum-mechanics]
 - [[§C11.3 Composite Systems and Reduced Density Matrices#^thm-c11-3-4|§C11.3.4]] Purification
 - [[§C11.3 Composite Systems and Reduced Density Matrices#^thm-c11-3-5|§C11.3.5]] Local Operations Leave the Other Part's State Unchanged
 - [[§C11.3 Composite Systems and Reduced Density Matrices#^thm-c11-3-6|§C11.3.6]] Evolution of a Part
-- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-1|§C11.4.1]] Bell's Inequality
-- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-2|§C11.4.2]] Quantum Mechanics Violates Bell's Inequality
-- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-3|§C11.4.3]] The CHSH Inequality and Its Quantum Maximum
-- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-5|§C11.4.5]] No-Cloning Theorem
+- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-2|§C11.4.2]] Bell's Inequality
+- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-3|§C11.4.3]] Quantum Mechanics Violates Bell's Inequality
+- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-4|§C11.4.4]] The CHSH Inequality and Its Quantum Maximum
+- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^thm-c11-4-6|§C11.4.6]] No-Cloning Theorem
 - [[§C11.5★ Open Quantum Systems and Decoherence#^thm-c11-5-3|§C11.5.3]] Dephasing
 - [[§C11.5★ Open Quantum Systems and Decoherence#^thm-c11-5-5|§C11.5.5]] Relaxation to the Canonical Ensemble
 - [[§C11.5★ Open Quantum Systems and Decoherence#^thm-c11-5-6|§C11.5.6]] Two-Level System: Relaxation, Dephasing and the Lindblad Form
 - [[§C11.5★ Open Quantum Systems and Decoherence#^thm-c11-5-8|§C11.5.8]] Relaxation of the Damped Oscillator
 
 ## Models
+- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^mod-c11-4-1|§C11.4.1]] EPR–Bohm Spin Pair
 - [[§C11.5★ Open Quantum Systems and Decoherence#^mod-c11-5-1|§C11.5.1]] A System Coupled to an Environment
 - [[§C11.5★ Open Quantum Systems and Decoherence#^mod-c11-5-2|§C11.5.2]] Pure Dephasing of a Two-Level System
 - [[§C11.5★ Open Quantum Systems and Decoherence#^mod-c11-5-4|§C11.5.4]] Markovian Master Equation

@@ -513,7 +513,7 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > - PS: $S$, $T$, $S = \mathbf 1 + iT$ (eqs. (4.71)–(4.73)), $\mathcal M$ "invariant matrix element"; $\delta^{(4)}(k_{\mathcal A} + k_{\mathcal B} - \sum p_f)$.
 > - Yu: $S$-operator $S$, $S = \mathbb I + iT$ (eq. (6.272)), $T_{fi} = \langle f|T|i\rangle$ (eq. (6.273)), $iT_{fi} = (2\pi)^4\delta^{(4)}(p_i - p_f)\,i\mathcal M$ (eq. (6.275)); $\mathcal M$ is 不变矩阵元 or 不变散射振幅 (invariant scattering amplitude).
 > - The user's notes: $S$, $T$, $\mathbb 1$; "a third use of $T$, after large time and time ordering".
-> - Quantum Mechanics (Sakurai) normalizes differently: $S_{ni} = \delta_{ni} - 2\pi i\,\delta(E_n - E_i)\,T_{ni}$ ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-1|QM Theorem §C10.1.1]]): only energy is conserved (a fixed potential breaks translation invariance), and the sign and the $2\pi$ differ. The scattering amplitude $f$ of quantum mechanics is the analogue of $\mathcal M$ (PS p. 104).
+> - Quantum Mechanics (Sakurai) normalizes differently: $S_{ni} = \delta_{ni} - 2\pi i\,\delta(E_n - E_i)\,T_{ni}$ ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-2|QM Theorem §C10.1.2]]): only energy is conserved (a fixed potential breaks translation invariance), and the sign and the $2\pi$ differ. The scattering amplitude $f$ of quantum mechanics is the analogue of $\mathcal M$ (PS p. 104).
 >
 > *Source: PHY 513 Lecture 15, slides 4, 6 · PS §4.5, eqs. (4.71)–(4.73), p. 104 · Yu §6.5, eqs. (6.272)–(6.275) · the user's PHY 513 notes, PART 2 (e)*
 
@@ -540,7 +540,7 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 ^rem-c6b-1-5
 
 > [!remark]- Connections
-> - In quantum mechanics the same $S$, $T$ split runs with only energy conserved, and the golden rule is its first order — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-1|QM Theorem §C10.1.1]], [[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]].
+> - In quantum mechanics the same $S$, $T$ split runs with only energy conserved, and the golden rule is its first order — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-2|QM Theorem §C10.1.2]], [[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]].
 > - The prescription for the in and out states dresses free states with $U(0, -T)$ exactly as the vacuum is dressed, and drops the bubbles exactly as the master formula divides them out — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]].
 > - The problem of relating interacting asymptotic states to free states is the particle version of the vacuum projection of Lecture 13 — [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]; its solution, the LSZ formula, connects $\mathcal M$ to the correlation functions — [[§C6b.10 Amplitudes from Correlation Functions|§C6b.10]], QFT C10 (planned).
 > - The delta function of four-momentum conservation is the same translation invariance that gives momentum conservation at every vertex of a diagram — [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-1|Theorem §C6a.10.1]].

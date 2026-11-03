@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ↑ [[Quantum Mechanics]] · [[· A2 The Nuclear Atom and the Bohr Model]] →
 
 **Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1)
-**Used by:** [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (3), [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (6), [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (6)
+**Used by:** [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (3), [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (8), [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (6)
 
 ## Sections
 - [[§A1.1 Blackbody Radiation]] — UP Vol. 3 §6.1
@@ -37,4 +37,5 @@ tags: [chapter, quantum-mechanics]
 - [[§A1.3 The Compton Effect#^thm-a1-3-3|§A1.3.3]] Compton Shift
 
 ## Models
+- [[§A1.1 Blackbody Radiation#^mod-a1-1-2|§A1.1.2]] Radiation in a Cavity in Thermal Equilibrium
 - [[§A1.3 The Compton Effect#^mod-a1-3-2|§A1.3.2]] Compton's Collision Model

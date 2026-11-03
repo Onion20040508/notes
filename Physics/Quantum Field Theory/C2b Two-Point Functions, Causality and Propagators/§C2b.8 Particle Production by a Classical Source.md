@@ -221,7 +221,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 >
 > **Step 5** (adiabatic switching, $mT \gg 1$). $K_1 - K_0 \simeq \sqrt{\pi/2z}\,e^{-z}\bigl[(1 + \frac{3}{8z}) - (1 - \frac{1}{8z})\bigr] = \sqrt{\pi/2z}\,e^{-z}/2z$ (Theorem §CA.5.3, 2), so $\bar N \simeq \frac{g^2}{16\pi^2}\cdot\frac{\sqrt\pi}{mT^3}\,e^{-m^2T^2}$: exponentially small.
 >
-> The source's frequency spectrum $e^{-\omega^2T^2/2}$ must reach $\omega \ge m$ to make a particle; a source switched on slowly compared with $1/m$ leaves the field in its vacuum, the field-theory form of the adiabatic theorem ([[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits#^thm-c9-4-6|QM Theorem §C9.4.6]]), while a sudden one excites every mode ([[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits#^thm-c9-4-5|QM Theorem §C9.4.5]]).
+> The source's frequency spectrum $e^{-\omega^2T^2/2}$ must reach $\omega \ge m$ to make a particle; a source switched on slowly compared with $1/m$ leaves the field in its vacuum, the field-theory form of the adiabatic theorem ([[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits#^thm-c9-4-8|QM Theorem §C9.4.8]]), while a sudden one excites every mode ([[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits#^thm-c9-4-6|QM Theorem §C9.4.6]]).
 >
 > *Source: worked here, applying the user's PHY 513 notes, Ch. 6 §6.13 (the remark that a static source produces nothing) and PS eq. (2.66); checked numerically*
 

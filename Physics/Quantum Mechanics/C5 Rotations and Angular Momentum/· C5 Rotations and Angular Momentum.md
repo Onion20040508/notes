@@ -8,7 +8,7 @@ tags: [chapter, quantum-mechanics]
 # C5 Rotations and Angular Momentum
 ← [[· C4 Propagators and Path Integrals]] · ↑ [[Quantum Mechanics]] · [[· C6 Central Potentials]] →
 
-**Builds on:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (2), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (8), [[· B6 Spin|B6 Spin]] (4), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (5), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (2), [[· C6 Central Potentials|C6 Central Potentials]] (1)
+**Builds on:** [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (2), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (8), [[· B6 Spin|B6 Spin]] (5), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (2), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (5), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (3), [[· C6 Central Potentials|C6 Central Potentials]] (1)
 **Used by:** [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (1), [[· C6 Central Potentials|C6 Central Potentials]] (10), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (23), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (12), [[· C9 Approximation Methods|C9 Approximation Methods]] (4), [[· C10 Scattering Theory|C10 Scattering Theory]] (4), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (6)
 
 ## Sections
@@ -21,20 +21,20 @@ tags: [chapter, quantum-mechanics]
 - [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^pr-c5-1-2|§C5.1.2]] Rotation Operators
 
 ## Laws
-- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^law-c5-2-5|§C5.2.5]] The Sign Reversal of Spinors Under 2π Is Observed
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^law-c5-2-6|§C5.2.6]] The Sign Reversal of Spinors Under 2π Is Observed
 
 ## Theorems
 - [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-1|§C5.1.1]] Infinitesimal Rotations and Their Commutator
 - [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-3|§C5.1.3]] Finite Rotations
 - [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-4|§C5.1.4]] Fundamental Commutation Relations of Angular Momentum
 - [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-5|§C5.1.5]] Angular Momentum Is a Vector Operator
-- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-1|§C5.2.1]] Rotation Operator for Spin One-Half
-- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-2|§C5.2.2]] Spin Up Along a Direction Is a Rotated State
-- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|§C5.2.3]] A Rotation by 2π Reverses the Sign of a Spinor
-- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-4|§C5.2.4]] Interference of a Rotated and an Unrotated Beam
-- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-6|§C5.2.6]] The Structure of SU(2)
-- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-7|§C5.2.7]] SU(2) Is a Double Cover of SO(3)
-- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|§C5.2.8]] Euler Rotations About Fixed Axes
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-2|§C5.2.2]] Rotation Operator for Spin One-Half
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-3|§C5.2.3]] Spin Up Along a Direction Is a Rotated State
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-4|§C5.2.4]] A Rotation by 2π Reverses the Sign of a Spinor
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-5|§C5.2.5]] Interference of a Rotated and an Unrotated Beam
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-7|§C5.2.7]] The Structure of SU(2)
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|§C5.2.8]] SU(2) Is a Double Cover of SO(3)
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-9|§C5.2.9]] Euler Rotations About Fixed Axes
 - [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-1|§C5.3.1]] Rotations Act Within a Multiplet, Irreducibly
 - [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-2|§C5.3.2]] Euler-Angle Form and Symmetries of the Rotation Matrices
 - [[§C5.3 The Angular-Momentum Spectrum and Rotation Matrices#^thm-c5-3-3|§C5.3.3]] The Reduced Matrices for j = 1/2 and j = 1
@@ -43,3 +43,6 @@ tags: [chapter, quantum-mechanics]
 - [[§C5.4 Orbital Angular Momentum and Spherical Harmonics as Rotation Matrices#^thm-c5-4-2|§C5.4.2]] The Square of L and the Kinetic Energy
 - [[§C5.4 Orbital Angular Momentum and Spherical Harmonics as Rotation Matrices#^thm-c5-4-3|§C5.4.3]] Orbital Angular Momentum Is Integer
 - [[§C5.4 Orbital Angular Momentum and Spherical Harmonics as Rotation Matrices#^thm-c5-4-4|§C5.4.4]] Spherical Harmonics as Rotation Matrices
+
+## Models
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^mod-c5-2-1|§C5.2.1]] Spin One-Half

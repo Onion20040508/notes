@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # B1 Wave Mechanics
 ← [[· A8 Particle Physics and Cosmology]] · ↑ [[Quantum Mechanics]] · [[· B2 The Formalism of Quantum Mechanics]] →
 
-**Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (3), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (18), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (3)
-**Used by:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (1), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (9), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (8), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (4), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (4), [[· B6 Spin|B6 Spin]] (3), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (1), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (1), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (1), [[· C10 Scattering Theory|C10 Scattering Theory]] (1), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (1)
+**Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (3), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (24), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (4), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (3), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (1), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (1)
+**Used by:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (2), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (12), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (12), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (4), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (4), [[· B6 Spin|B6 Spin]] (3), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (1), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (2), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (1), [[· C10 Scattering Theory|C10 Scattering Theory]] (1), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (1)
 
 ## Sections
 - [[§B1.1 The Statistical Interpretation and Probability Current]] — Griffiths 1.1–1.4; Zwiebach L5–6; Classical notes §6–7, §12
@@ -37,3 +37,7 @@ tags: [chapter, quantum-mechanics]
 - [[§B1.4 The Free Particle and Wave Packets#^thm-b1-4-3|§B1.4.3]] The Free Wave Packet
 - [[§B1.4 The Free Particle and Wave Packets#^thm-b1-4-4|§B1.4.4]] Momentum Moments from the Momentum Amplitude
 - [[§B1.4 The Free Particle and Wave Packets#^thm-b1-4-5|§B1.4.5]] The Free Gaussian Packet
+
+## Models
+- [[§B1.1 The Statistical Interpretation and Probability Current#^mod-b1-1-1|§B1.1.1]] A Particle in a One-Dimensional Potential
+- [[§B1.4 The Free Particle and Wave Packets#^mod-b1-4-1|§B1.4.1]] The Free Particle
