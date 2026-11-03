@@ -41,8 +41,8 @@ tags: [chapter, thermal-and-statistical-physics]
 - [[§A1.1 Temperature and Thermal Equilibrium#^thm-a1-1-3|§A1.1.3]] Conversion between Scales
 - [[§A1.2 Thermal Expansion#^thm-a1-2-3|§A1.2.3]] Area and Volume Expansion of a Solid
 - [[§A1.2 Thermal Expansion#^thm-a1-2-5|§A1.2.5]] Thermal Stress in a Clamped Rod
-- [[§A1.3 Heat, Specific Heat and Calorimetry#^thm-a1-3-3|§A1.3.3]] Heat with a Temperature-Dependent Specific Heat
-- [[§A1.3 Heat, Specific Heat and Calorimetry#^thm-a1-3-4|§A1.3.4]] Calorimetry
+- [[§A1.3 Heat, Specific Heat and Calorimetry#^thm-a1-3-4|§A1.3.4]] Heat with a Temperature-Dependent Specific Heat
+- [[§A1.3 Heat, Specific Heat and Calorimetry#^thm-a1-3-5|§A1.3.5]] Calorimetry
 - [[§A1.5 Mechanisms of Heat Transfer#^thm-a1-5-2|§A1.5.2]] Slabs in Series and in Parallel
 - [[§A1.5 Mechanisms of Heat Transfer#^thm-a1-5-4|§A1.5.4]] Exponential Approach to Equilibrium
 - [[§A1.5 Mechanisms of Heat Transfer#^thm-a1-5-8|§A1.5.8]] Net Radiative Heat Transfer

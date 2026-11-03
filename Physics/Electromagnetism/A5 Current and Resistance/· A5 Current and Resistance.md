@@ -8,8 +8,8 @@ tags: [chapter, electromagnetism]
 # A5 Current and Resistance
 ← [[· A4 Capacitance]] · ↑ [[Electromagnetism]] · [[· A6 Direct-Current Circuits]] →
 
-**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (2), [[· A3 Electric Potential|A3 Electric Potential]] (3)
-**Used by:** [[· A2 Gauss's Law|A2 Gauss's Law]] (1), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (15), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (5), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (7), [[· A10 Inductance|A10 Inductance]] (4), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (6), [[· B6 Magnetostatics|B6 Magnetostatics]] (1), [[· B8 Electrodynamics|B8 Electrodynamics]] (1), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1)
+**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (2), [[· A3 Electric Potential|A3 Electric Potential]] (3), [[· A4 Capacitance|A4 Capacitance]] (1), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (2), [[· A10 Inductance|A10 Inductance]] (2), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (1), [[· B8 Electrodynamics|B8 Electrodynamics]] (2)
+**Used by:** [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A4 Capacitance|A4 Capacitance]] (2), [[· A6 Direct-Current Circuits|A6 Direct-Current Circuits]] (21), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (6), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (7), [[· A10 Inductance|A10 Inductance]] (7), [[· A11 Alternating-Current Circuits|A11 Alternating-Current Circuits]] (6), [[· B6 Magnetostatics|B6 Magnetostatics]] (1), [[· B8 Electrodynamics|B8 Electrodynamics]] (1), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1)
 
 ## Sections
 - [[§A5.1 Electric Current]] — UP Vol. 2 §9.1
@@ -23,7 +23,7 @@ tags: [chapter, electromagnetism]
 - [[§A5.3 Resistivity, Resistance and Ohm's Law#^law-a5-3-5|§A5.3.5]] Ohm's Law
 
 ## Theorems
-- [[§A5.1 Electric Current#^thm-a5-1-1|§A5.1.1]] Steady Current Is the Same Along an Unbranched Path
+- [[§A5.1 Electric Current#^thm-a5-1-2|§A5.1.2]] Steady Current Is the Same Along an Unbranched Path
 - [[§A5.2 Conduction in Metals#^thm-a5-2-1|§A5.2.1]] Current and Drift Speed
 - [[§A5.2 Conduction in Metals#^thm-a5-2-2|§A5.2.2]] Current Density and Drift Velocity
 - [[§A5.2 Conduction in Metals#^thm-a5-2-4|§A5.2.4]] Drift Velocity and Conductivity in the Drude Model
@@ -33,4 +33,5 @@ tags: [chapter, electromagnetism]
 - [[§A5.4 Electrical Power#^thm-a5-4-2|§A5.4.2]] Power Dissipated in a Resistor
 
 ## Models
+- [[§A5.1 Electric Current#^mod-a5-1-1|§A5.1.1]] Lumped Circuit
 - [[§A5.2 Conduction in Metals#^mod-a5-2-3|§A5.2.3]] Drude Model of Conduction

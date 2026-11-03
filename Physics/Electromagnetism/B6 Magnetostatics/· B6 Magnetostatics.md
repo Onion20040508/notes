@@ -8,8 +8,8 @@ tags: [chapter, electromagnetism]
 # B6 Magnetostatics
 ← [[· B5 Electric Fields in Matter]] · ↑ [[Electromagnetism]] · [[· B7 Magnetic Fields in Matter]] →
 
-**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (2), [[· A5 Current and Resistance|A5 Current and Resistance]] (1), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (9), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (4), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (25), [[· B2 Electrostatics|B2 Electrostatics]] (7), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (4), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (3), [[· B8 Electrodynamics|B8 Electrodynamics]] (3), [[· B9 Conservation Laws|B9 Conservation Laws]] (2), [[· B11★ Potentials and Radiation|B11 Potentials and Radiation]] (1)
-**Used by:** [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (1), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (19), [[· B8 Electrodynamics|B8 Electrodynamics]] (29), [[· B9 Conservation Laws|B9 Conservation Laws]] (10), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1), [[· B11★ Potentials and Radiation|B11 Potentials and Radiation]] (9), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (3)
+**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (2), [[· A5 Current and Resistance|A5 Current and Resistance]] (1), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (9), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (4), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (25), [[· B2 Electrostatics|B2 Electrostatics]] (8), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (4), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (3), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (3), [[· B8 Electrodynamics|B8 Electrodynamics]] (7), [[· B9 Conservation Laws|B9 Conservation Laws]] (2), [[· B11★ Potentials and Radiation|B11 Potentials and Radiation]] (1)
+**Used by:** [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (5), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· B2 Electrostatics|B2 Electrostatics]] (1), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (19), [[· B8 Electrodynamics|B8 Electrodynamics]] (30), [[· B9 Conservation Laws|B9 Conservation Laws]] (10), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1), [[· B11★ Potentials and Radiation|B11 Potentials and Radiation]] (9), [[· C2 Foundations of Electrostatics|C2 Foundations of Electrostatics]] (3)
 
 ## Sections
 - [[§B6.1 The Lorentz Force and Currents]] — Griffiths 5.1; Nelson ch. 8, 15
@@ -21,7 +21,7 @@ tags: [chapter, electromagnetism]
 - [[§B6.1 The Lorentz Force and Currents#^pr-b6-1-1|§B6.1.1]] Lorentz Force Law
 
 ## Laws
-- [[§B6.2 The Biot–Savart Law#^law-b6-2-2|§B6.2.2]] Biot–Savart Law
+- [[§B6.2 The Biot–Savart Law#^law-b6-2-3|§B6.2.3]] Biot–Savart Law
 
 ## Theorems
 - [[§B6.1 The Lorentz Force and Currents#^thm-b6-1-2|§B6.1.2]] Magnetic Forces Do No Work
@@ -29,7 +29,7 @@ tags: [chapter, electromagnetism]
 - [[§B6.1 The Lorentz Force and Currents#^thm-b6-1-4|§B6.1.4]] Magnetic Force on Currents
 - [[§B6.1 The Lorentz Force and Currents#^thm-b6-1-5|§B6.1.5]] Continuity Equation
 - [[§B6.1 The Lorentz Force and Currents#^thm-b6-1-6|§B6.1.6]] Total Current and the Electric Dipole Moment
-- [[§B6.2 The Biot–Savart Law#^thm-b6-2-1|§B6.2.1]] Steady Currents Are Divergence-Free
+- [[§B6.2 The Biot–Savart Law#^thm-b6-2-2|§B6.2.2]] Steady Currents Are Divergence-Free
 - [[§B6.3 The Divergence and Curl of B#^thm-b6-3-1|§B6.3.1]] The Divergence of B Vanishes
 - [[§B6.3 The Divergence and Curl of B#^thm-b6-3-2|§B6.3.2]] Ampère's Law
 - [[§B6.3 The Divergence and Curl of B#^thm-b6-3-3|§B6.3.3]] The Field Equations Determine B
@@ -43,4 +43,5 @@ tags: [chapter, electromagnetism]
 - [[§B6.4 The Vector Potential and the Magnetic Dipole#^thm-b6-4-8|§B6.4.8]] Force, Torque and Energy of a Magnetic Dipole
 
 ## Models
+- [[§B6.2 The Biot–Savart Law#^mod-b6-2-1|§B6.2.1]] Steady Localized Current Distribution
 - [[§B6.4 The Vector Potential and the Magnetic Dipole#^mod-b6-4-6|§B6.4.6]] Pure (Point) Magnetic Dipole
