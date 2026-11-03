@@ -22,10 +22,10 @@ tags: [chapter, classical-mechanics]
 - [[§A8.1 Universal Gravitation#^pr-a8-1-1|§A8.1.1]] Newton's Law of Universal Gravitation
 
 ## Theorems
-- [[§A8.1 Universal Gravitation#^thm-a8-1-2|§A8.1.2]] Free-Fall Acceleration from the Law of Gravitation
-- [[§A8.1 Universal Gravitation#^thm-a8-1-4|§A8.1.4]] Apparent Weight at the Equator
-- [[§A8.1 Universal Gravitation#^thm-a8-1-5|§A8.1.5]] Shell Theorem
-- [[§A8.1 Universal Gravitation#^thm-a8-1-6|§A8.1.6]] Gravity inside a Uniform Sphere
+- [[§A8.1 Universal Gravitation#^thm-a8-1-4|§A8.1.4]] Free-Fall Acceleration from the Law of Gravitation
+- [[§A8.1 Universal Gravitation#^thm-a8-1-6|§A8.1.6]] Apparent Weight at the Equator
+- [[§A8.1 Universal Gravitation#^thm-a8-1-7|§A8.1.7]] Shell Theorem
+- [[§A8.1 Universal Gravitation#^thm-a8-1-8|§A8.1.8]] Gravity inside a Uniform Sphere
 - [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-1|§A8.2.1]] Gravitational Potential Energy
 - [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-2|§A8.2.2]] Energy Conservation under Gravity
 - [[§A8.2 Gravitational Energy and Orbits#^thm-a8-2-3|§A8.2.3]] Escape Speed and the Energy Criterion for Binding
@@ -38,4 +38,4 @@ tags: [chapter, classical-mechanics]
 - [[§A8.4 Tidal Forces#^thm-a8-4-1|§A8.4.1]] Size of the Tidal Force
 
 ## Models
-- [[§A8.1 Universal Gravitation#^mod-a8-1-3|§A8.1.3]] Uniform Field near the Surface
+- [[§A8.1 Universal Gravitation#^mod-a8-1-5|§A8.1.5]] Uniform Field near the Surface

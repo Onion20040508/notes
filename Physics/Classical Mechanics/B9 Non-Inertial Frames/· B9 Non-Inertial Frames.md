@@ -23,10 +23,10 @@ tags: [chapter, classical-mechanics]
 - [[§B9.1 Accelerating and Rotating Frames#^thm-b9-1-5|§B9.1.5]] Fictitious Forces
 - [[§B9.1 Accelerating and Rotating Frames#^thm-b9-1-6|§B9.1.6]] Properties of the Rotational Fictitious Forces
 - [[§B9.2 Motion on the Rotating Earth#^thm-b9-2-2|§B9.2.2]] Effective Gravity on a Spherical Earth
-- [[§B9.2 Motion on the Rotating Earth#^thm-b9-2-3|§B9.2.3]] Equation of Motion near Earth's Surface
-- [[§B9.2 Motion on the Rotating Earth#^thm-b9-2-4|§B9.2.4]] Eastward Deflection of a Falling Body
-- [[§B9.2 Motion on the Rotating Earth#^thm-b9-2-5|§B9.2.5]] Foucault's Pendulum
-- [[§B9.2 Motion on the Rotating Earth#^thm-b9-2-6|§B9.2.6]] Tidal Force
+- [[§B9.2 Motion on the Rotating Earth#^thm-b9-2-4|§B9.2.4]] Equation of Motion near Earth's Surface
+- [[§B9.2 Motion on the Rotating Earth#^thm-b9-2-5|§B9.2.5]] Eastward Deflection of a Falling Body
+- [[§B9.2 Motion on the Rotating Earth#^thm-b9-2-6|§B9.2.6]] Foucault's Pendulum
+- [[§B9.2 Motion on the Rotating Earth#^thm-b9-2-7|§B9.2.7]] Tidal Force
 
 ## Models
 - [[§B9.2 Motion on the Rotating Earth#^mod-b9-2-1|§B9.2.1]] The Rotating Earth

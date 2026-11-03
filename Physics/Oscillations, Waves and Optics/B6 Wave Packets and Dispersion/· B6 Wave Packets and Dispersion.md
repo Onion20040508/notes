@@ -15,6 +15,9 @@ tags: [chapter, oscillations-waves-and-optics]
 - [[§B6.1 Wave Packets and Amplitude Modulation]] — Series I — · Schwartz L11 §1–2
 - [[§B6.2 Dispersion, Phase Velocity and Group Velocity]] — Series I §8 (chain dispersion) · Schwartz L11 §3–6
 
+## Laws
+- [[§B6.2 Dispersion, Phase Velocity and Group Velocity#^law-b6-2-5|§B6.2.5]] Low Loss and Low Dispersion of Silica in the Telecom Band
+
 ## Theorems
 - [[§B6.1 Wave Packets and Amplitude Modulation#^thm-b6-1-1|§B6.1.1]] A Packet Is a Superposition of Travelling Waves
 - [[§B6.1 Wave Packets and Amplitude Modulation#^thm-b6-1-2|§B6.1.2]] Amplitude Modulation and Sidebands

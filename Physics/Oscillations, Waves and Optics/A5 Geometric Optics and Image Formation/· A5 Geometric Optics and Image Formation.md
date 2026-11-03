@@ -18,6 +18,9 @@ tags: [chapter, oscillations-waves-and-optics]
 - [[§A5.4 The Eye and the Camera]] — UP Vol. 3 §2.5–2.6
 - [[§A5.5 Magnifiers, Microscopes and Telescopes]] — UP Vol. 3 §2.7–2.8
 
+## Laws
+- [[§A5.4 The Eye and the Camera#^law-a5-4-3|§A5.4.3]] The Near Point Recedes with Age
+
 ## Theorems
 - [[§A5.1 Images Formed by Mirrors#^thm-a5-1-1|§A5.1.1]] Image in a Plane Mirror
 - [[§A5.1 Images Formed by Mirrors#^thm-a5-1-3|§A5.1.3]] Focal Length of a Spherical Mirror

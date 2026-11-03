@@ -21,13 +21,13 @@ tags: [chapter, classical-mechanics]
 
 ## Laws
 - [[§A9.6 Viscosity and Turbulence#^law-a9-6-1|§A9.6.1]] Viscous Force in Laminar Shear Flow
-- [[§A9.6 Viscosity and Turbulence#^law-a9-6-2|§A9.6.2]] Poiseuille's Law
-- [[§A9.6 Viscosity and Turbulence#^law-a9-6-3|§A9.6.3]] Onset of Turbulence
+- [[§A9.6 Viscosity and Turbulence#^law-a9-6-3|§A9.6.3]] Poiseuille's Law
+- [[§A9.6 Viscosity and Turbulence#^law-a9-6-4|§A9.6.4]] Onset of Turbulence
 
 ## Theorems
-- [[§A9.1 Density and Pressure#^thm-a9-1-1|§A9.1.1]] Hydrostatic Equilibrium
-- [[§A9.1 Density and Pressure#^thm-a9-1-3|§A9.1.3]] Pressure at a Depth
-- [[§A9.1 Density and Pressure#^thm-a9-1-4|§A9.1.4]] Isothermal Atmosphere
+- [[§A9.1 Density and Pressure#^thm-a9-1-2|§A9.1.2]] Hydrostatic Equilibrium
+- [[§A9.1 Density and Pressure#^thm-a9-1-4|§A9.1.4]] Pressure at a Depth
+- [[§A9.1 Density and Pressure#^thm-a9-1-5|§A9.1.5]] Isothermal Atmosphere
 - [[§A9.2 Pascal's Principle#^thm-a9-2-1|§A9.2.1]] Pascal's Principle
 - [[§A9.2 Pascal's Principle#^thm-a9-2-2|§A9.2.2]] Hydraulic Force Multiplication
 - [[§A9.3 Buoyancy#^thm-a9-3-1|§A9.3.1]] Archimedes' Principle
@@ -37,5 +37,5 @@ tags: [chapter, classical-mechanics]
 - [[§A9.5 Bernoulli's Equation#^thm-a9-5-2|§A9.5.2]] Torricelli's Theorem
 
 ## Models
-- [[§A9.1 Density and Pressure#^mod-a9-1-2|§A9.1.2]] Incompressible Fluid
+- [[§A9.1 Density and Pressure#^mod-a9-1-3|§A9.1.3]] Incompressible Fluid
 - [[§A9.4 Flow and Continuity#^mod-a9-4-1|§A9.4.1]] Ideal Fluid in Steady Flow

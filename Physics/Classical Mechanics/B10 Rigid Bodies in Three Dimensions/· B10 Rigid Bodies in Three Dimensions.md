@@ -25,7 +25,7 @@ tags: [chapter, classical-mechanics]
 - [[§B10.2 Euler's Equations and Free Rotation#^thm-b10-2-1|§B10.2.1]] Euler's Equations
 - [[§B10.2 Euler's Equations and Free Rotation#^thm-b10-2-2|§B10.2.2]] Constants of Free Rotation
 - [[§B10.2 Euler's Equations and Free Rotation#^thm-b10-2-3|§B10.2.3]] The Free Symmetric Top
-- [[§B10.2 Euler's Equations and Free Rotation#^thm-b10-2-4|§B10.2.4]] Stability of Free Rotation (Tennis-Racket Theorem)
+- [[§B10.2 Euler's Equations and Free Rotation#^thm-b10-2-5|§B10.2.5]] Stability of Free Rotation (Tennis-Racket Theorem)
 - [[§B10.3 The Heavy Symmetric Top#^thm-b10-3-1|§B10.3.1]] Angular Velocity and Kinetic Energy in Euler Angles
 - [[§B10.3 The Heavy Symmetric Top#^thm-b10-3-3|§B10.3.3]] Equations of Motion and Constants of the Heavy Top
 - [[§B10.3 The Heavy Symmetric Top#^thm-b10-3-4|§B10.3.4]] Effective Potential for the Tilt

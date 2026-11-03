@@ -9,7 +9,7 @@ tags: [chapter, oscillations-waves-and-optics]
 ← [[· A2 Mechanical Waves]] · ↑ [[Oscillations, Waves and Optics]] · [[· A4 The Nature of Light]] →
 
 **Builds on:** [[· A2 Mechanical Waves|A2 Mechanical Waves]] (18)
-**Used by:** [[· B2 Coupled Oscillators and Normal Modes|B2 Coupled Oscillators and Normal Modes]] (3), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (8), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (4), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (3)
+**Used by:** [[· B2 Coupled Oscillators and Normal Modes|B2 Coupled Oscillators and Normal Modes]] (3), [[· B4 Fourier Analysis and Strings|B4 Fourier Analysis and Strings]] (9), [[· B5 Travelling Waves, Energy and Impedance|B5 Travelling Waves, Energy and Impedance]] (5), [[· B7 Waves in Two and Three Dimensions|B7 Waves in Two and Three Dimensions]] (3)
 
 ## Sections
 - [[§A3.1 Sound Waves and the Speed of Sound]] — UP Vol. 1 §17.1–17.2
@@ -19,7 +19,10 @@ tags: [chapter, oscillations-waves-and-optics]
 - [[§A3.5 The Doppler Effect and Shock Waves]] — UP Vol. 1 §17.7–17.8
 
 ## Laws
+- [[§A3.1 Sound Waves and the Speed of Sound#^law-a3-1-6|§A3.1.6]] Speed of Sound in Common Media
 - [[§A3.2 Sound Intensity#^law-a3-2-3|§A3.2.3]] Range of Human Hearing
+- [[§A3.3 Standing Sound Waves and Musical Sound#^law-a3-3-4|§A3.3.4]] End Correction of an Open Pipe
+- [[§A3.4 Beats#^law-a3-4-2|§A3.4.2]] Hearing Beats
 
 ## Theorems
 - [[§A3.1 Sound Waves and the Speed of Sound#^thm-a3-1-1|§A3.1.1]] Pressure Wave from Displacement Wave
