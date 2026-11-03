@@ -25,11 +25,11 @@ tags: [chapter, electromagnetism]
 - [[§B8.1 Ohm's Law and Electromotive Force#^law-b8-1-1|§B8.1.1]] Ohm's Law
 
 ## Theorems
-- [[§B8.1 Ohm's Law and Electromotive Force#^thm-b8-1-2|§B8.1.2]] Steady Currents in a Homogeneous Ohmic Conductor
-- [[§B8.1 Ohm's Law and Electromotive Force#^thm-b8-1-3|§B8.1.3]] Resistance, Capacitance and Charge Relaxation
-- [[§B8.1 Ohm's Law and Electromotive Force#^thm-b8-1-4|§B8.1.4]] Terminal Voltage of an Ideal Source
-- [[§B8.1 Ohm's Law and Electromotive Force#^thm-b8-1-5|§B8.1.5]] Motional EMF, and Who Does the Work
-- [[§B8.1 Ohm's Law and Electromotive Force#^thm-b8-1-6|§B8.1.6]] The Flux Rule for Motional EMF
+- [[§B8.1 Ohm's Law and Electromotive Force#^thm-b8-1-3|§B8.1.3]] Steady Currents in a Homogeneous Ohmic Conductor
+- [[§B8.1 Ohm's Law and Electromotive Force#^thm-b8-1-4|§B8.1.4]] Resistance, Capacitance and Charge Relaxation
+- [[§B8.1 Ohm's Law and Electromotive Force#^thm-b8-1-5|§B8.1.5]] Terminal Voltage of an Ideal Source
+- [[§B8.1 Ohm's Law and Electromotive Force#^thm-b8-1-6|§B8.1.6]] Motional EMF, and Who Does the Work
+- [[§B8.1 Ohm's Law and Electromotive Force#^thm-b8-1-7|§B8.1.7]] The Flux Rule for Motional EMF
 - [[§B8.2 Faraday's Law and Induced Electric Fields#^thm-b8-2-2|§B8.2.2]] Faraday's Law in Integral Form
 - [[§B8.2 Faraday's Law and Induced Electric Fields#^thm-b8-2-3|§B8.2.3]] The Universal Flux Rule
 - [[§B8.2 Faraday's Law and Induced Electric Fields#^thm-b8-2-4|§B8.2.4]] Induced Fields Are Computed Like Magnetostatic Fields

@@ -17,7 +17,7 @@ tags: [chapter, electromagnetism]
 
 ## Laws
 - [[§B7.2 The Auxiliary Field H and Magnetic Media#^law-b7-2-5|§B7.2.5]] Linear Magnetic Response
-- [[§B7.2 The Auxiliary Field H and Magnetic Media#^law-b7-2-8|§B7.2.8]] Hysteresis
+- [[§B7.2 The Auxiliary Field H and Magnetic Media#^law-b7-2-9|§B7.2.9]] Hysteresis
 
 ## Theorems
 - [[§B7.1 Magnetization and Bound Currents#^thm-b7-1-2|§B7.1.2]] Diamagnetic Response of an Orbit

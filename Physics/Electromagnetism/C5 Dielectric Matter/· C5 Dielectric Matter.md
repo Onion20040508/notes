@@ -33,7 +33,7 @@ tags: [chapter, electromagnetism]
 - [[§C5.4 The Microscopic Dielectric Constant#^thm-c5-4-2|§C5.4.2]] Dilute Limit
 - [[§C5.4 The Microscopic Dielectric Constant#^thm-c5-4-3|§C5.4.3]] Lorentz Local Field
 - [[§C5.4 The Microscopic Dielectric Constant#^thm-c5-4-4|§C5.4.4]] Clausius–Mossotti Formula
-- [[§C5.4 The Microscopic Dielectric Constant#^thm-c5-4-5|§C5.4.5]] Onsager Cavity: Cavity Field and Reaction Field
+- [[§C5.4 The Microscopic Dielectric Constant#^thm-c5-4-6|§C5.4.6]] Onsager Cavity: Cavity Field and Reaction Field
 - [[§C5.5 Energy in Dielectrics#^thm-c5-5-1|§C5.5.1]] Energy Increment in Dielectric Matter
 - [[§C5.5 Energy in Dielectrics#^thm-c5-5-2|§C5.5.2]] Field and Force from U_E
 - [[§C5.5 Energy in Dielectrics#^thm-c5-5-3|§C5.5.3]] Energy of a Simple Dielectric

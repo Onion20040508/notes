@@ -23,7 +23,7 @@ tags: [chapter, electromagnetism]
 - [[§B10.1 Electromagnetic Waves in Vacuum#^thm-b10-1-4|§B10.1.4]] Energy, Momentum and Stress of a Plane Wave
 - [[§B10.1 Electromagnetic Waves in Vacuum#^thm-b10-1-5|§B10.1.5]] Radiation Pressure
 - [[§B10.2 Waves in Linear Media, Reflection and Transmission#^thm-b10-2-2|§B10.2.2]] Plane Waves in a Linear Medium
-- [[§B10.2 Waves in Linear Media, Reflection and Transmission#^thm-b10-2-3|§B10.2.3]] Reflection and Transmission at Normal Incidence
+- [[§B10.2 Waves in Linear Media, Reflection and Transmission#^thm-b10-2-4|§B10.2.4]] Reflection and Transmission at Normal Incidence
 - [[§B10.3★ Conductors and Dispersion#^thm-b10-3-2|§B10.3.2]] Plane Waves in an Ohmic Conductor
 - [[§B10.3★ Conductors and Dispersion#^thm-b10-3-3|§B10.3.3]] Good and Poor Conductors
 - [[§B10.3★ Conductors and Dispersion#^thm-b10-3-4|§B10.3.4]] Reflection at a Conducting Surface; the Perfect Conductor

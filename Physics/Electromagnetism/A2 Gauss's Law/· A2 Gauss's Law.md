@@ -26,8 +26,8 @@ tags: [chapter, electromagnetism]
 - [[§A2.3 Applying Gauss's Law#^thm-a2-3-4|§A2.3.4]] Field of a Planar Distribution
 - [[§A2.4 Conductors in Electrostatic Equilibrium#^thm-a2-4-2|§A2.4.2]] No Field inside a Conductor
 - [[§A2.4 Conductors in Electrostatic Equilibrium#^thm-a2-4-3|§A2.4.3]] Charge Resides on the Surface
-- [[§A2.4 Conductors in Electrostatic Equilibrium#^thm-a2-4-4|§A2.4.4]] Field at the Surface of a Conductor
-- [[§A2.4 Conductors in Electrostatic Equilibrium#^thm-a2-4-5|§A2.4.5]] Charge in a Cavity
+- [[§A2.4 Conductors in Electrostatic Equilibrium#^thm-a2-4-5|§A2.4.5]] Field at the Surface of a Conductor
+- [[§A2.4 Conductors in Electrostatic Equilibrium#^thm-a2-4-6|§A2.4.6]] Charge in a Cavity
 
 ## Models
 - [[§A2.4 Conductors in Electrostatic Equilibrium#^mod-a2-4-1|§A2.4.1]] Ideal Conductor

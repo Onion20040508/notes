@@ -21,10 +21,10 @@ tags: [chapter, electromagnetism]
 ## Theorems
 - [[§C7.1 The Method of Images#^thm-c7-1-1|§C7.1.1]] A Point Charge in a Region with Given Boundary Values
 - [[§C7.1 The Method of Images#^thm-c7-1-2|§C7.1.2]] The Image Principle
-- [[§C7.1 The Method of Images#^thm-c7-1-3|§C7.1.3]] The Plane Image from Separation of Variables
-- [[§C7.1 The Method of Images#^thm-c7-1-4|§C7.1.4]] A Point Charge Inside or Outside a Grounded Sphere
-- [[§C7.1 The Method of Images#^thm-c7-1-5|§C7.1.5]] Kelvin Inversion: Images in a Sphere for Any Charge Distribution
-- [[§C7.1 The Method of Images#^thm-c7-1-6|§C7.1.6]] A Line Charge and a Conducting Cylinder
+- [[§C7.1 The Method of Images#^thm-c7-1-4|§C7.1.4]] The Plane Image from Separation of Variables
+- [[§C7.1 The Method of Images#^thm-c7-1-5|§C7.1.5]] A Point Charge Inside or Outside a Grounded Sphere
+- [[§C7.1 The Method of Images#^thm-c7-1-6|§C7.1.6]] Kelvin Inversion: Images in a Sphere for Any Charge Distribution
+- [[§C7.1 The Method of Images#^thm-c7-1-7|§C7.1.7]] A Line Charge and a Conducting Cylinder
 - [[§C7.2 Dielectric Images, Image Dipoles and Image Series#^thm-c7-2-1|§C7.2.1]] A Point Charge at a Plane Interface between Two Dielectrics
 - [[§C7.2 Dielectric Images, Image Dipoles and Image Series#^thm-c7-2-2|§C7.2.2]] A Line Charge in a Dielectric Cylinder
 - [[§C7.2 Dielectric Images, Image Dipoles and Image Series#^thm-c7-2-3|§C7.2.3]] The Image of a Point Dipole in a Grounded Sphere
