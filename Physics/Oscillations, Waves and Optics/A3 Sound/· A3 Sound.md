@@ -19,26 +19,26 @@ tags: [chapter, oscillations-waves-and-optics]
 - [[§A3.5 The Doppler Effect and Shock Waves]] — UP Vol. 1 §17.7–17.8
 
 ## Laws
-- [[§A3.1 Sound Waves and the Speed of Sound#^law-a3-1-6|§A3.1.6]] Speed of Sound in Common Media
+- [[§A3.1 Sound Waves and the Speed of Sound#^law-a3-1-7|§A3.1.7]] Speed of Sound in Common Media
 - [[§A3.2 Sound Intensity#^law-a3-2-3|§A3.2.3]] Range of Human Hearing
 - [[§A3.3 Standing Sound Waves and Musical Sound#^law-a3-3-4|§A3.3.4]] End Correction of an Open Pipe
 - [[§A3.4 Beats#^law-a3-4-2|§A3.4.2]] Hearing Beats
 
 ## Theorems
-- [[§A3.1 Sound Waves and the Speed of Sound#^thm-a3-1-1|§A3.1.1]] Pressure Wave from Displacement Wave
-- [[§A3.1 Sound Waves and the Speed of Sound#^thm-a3-1-2|§A3.1.2]] Speed of Sound in a Fluid
-- [[§A3.1 Sound Waves and the Speed of Sound#^thm-a3-1-3|§A3.1.3]] Longitudinal Waves in a Thin Rod
-- [[§A3.1 Sound Waves and the Speed of Sound#^thm-a3-1-5|§A3.1.5]] Speed of Sound in an Ideal Gas
+- [[§A3.1 Sound Waves and the Speed of Sound#^thm-a3-1-2|§A3.1.2]] Pressure Wave from Displacement Wave
+- [[§A3.1 Sound Waves and the Speed of Sound#^thm-a3-1-3|§A3.1.3]] Speed of Sound in a Fluid
+- [[§A3.1 Sound Waves and the Speed of Sound#^thm-a3-1-4|§A3.1.4]] Longitudinal Waves in a Thin Rod
+- [[§A3.1 Sound Waves and the Speed of Sound#^thm-a3-1-6|§A3.1.6]] Speed of Sound in an Ideal Gas
 - [[§A3.2 Sound Intensity#^thm-a3-2-1|§A3.2.1]] Intensity of a Sinusoidal Sound Wave
 - [[§A3.2 Sound Intensity#^thm-a3-2-2|§A3.2.2]] Level Differences
 - [[§A3.3 Standing Sound Waves and Musical Sound#^thm-a3-3-2|§A3.3.2]] Normal Modes of a Pipe Open at Both Ends
 - [[§A3.3 Standing Sound Waves and Musical Sound#^thm-a3-3-3|§A3.3.3]] Normal Modes of a Pipe Closed at One End
 - [[§A3.4 Beats#^thm-a3-4-1|§A3.4.1]] Beats
-- [[§A3.5 The Doppler Effect and Shock Waves#^thm-a3-5-1|§A3.5.1]] Moving Source, Stationary Observer
-- [[§A3.5 The Doppler Effect and Shock Waves#^thm-a3-5-2|§A3.5.2]] Moving Observer, Stationary Source
-- [[§A3.5 The Doppler Effect and Shock Waves#^thm-a3-5-3|§A3.5.3]] Doppler Formula for Sound
-- [[§A3.5 The Doppler Effect and Shock Waves#^thm-a3-5-4|§A3.5.4]] Mach Cone
+- [[§A3.5 The Doppler Effect and Shock Waves#^thm-a3-5-2|§A3.5.2]] Moving Source, Stationary Observer
+- [[§A3.5 The Doppler Effect and Shock Waves#^thm-a3-5-3|§A3.5.3]] Moving Observer, Stationary Source
+- [[§A3.5 The Doppler Effect and Shock Waves#^thm-a3-5-4|§A3.5.4]] Doppler Formula for Sound
+- [[§A3.5 The Doppler Effect and Shock Waves#^thm-a3-5-5|§A3.5.5]] Mach Cone
 
 ## Models
-- [[§A3.1 Sound Waves and the Speed of Sound#^mod-a3-1-4|§A3.1.4]] Sound in an Ideal Gas as an Adiabatic Process
+- [[§A3.1 Sound Waves and the Speed of Sound#^mod-a3-1-5|§A3.1.5]] Sound in an Ideal Gas as an Adiabatic Process
 - [[§A3.3 Standing Sound Waves and Musical Sound#^mod-a3-3-1|§A3.3.1]] Ideal Air Column

@@ -32,7 +32,7 @@ Wu: “we are going to do some application in analysis.” Throughout, a *bounde
 ^rem-34-1
 
 > [!remark]- Connections
-> - The heat equation with a source, derived from heat flux and heat capacity: [[§B5.3★ The Thermal Diffusion Equation#^thm-b5-3-2|TH Theorem §B5.3.2]]; its steady states $\nabla^2 T = -H/\kappa$, unique for given boundary temperatures: [[§B5.3★ The Thermal Diffusion Equation#^thm-b5-3-5|TH Theorem §B5.3.5]].
+> - The heat equation with a source, derived from heat flux and heat capacity: [[§B5.3★ The Thermal Diffusion Equation#^thm-b5-3-3|TH Theorem §B5.3.3]]; its steady states $\nabla^2 T = -H/\kappa$, unique for given boundary temperatures: [[§B5.3★ The Thermal Diffusion Equation#^thm-b5-3-6|TH Theorem §B5.3.6]].
 
 ![[m556-34-1.svg]]
 *The board picture: a plate held at temperature $0$ on its boundary and heated inside. The equilibrium temperature $u$ solves $(D)$.*

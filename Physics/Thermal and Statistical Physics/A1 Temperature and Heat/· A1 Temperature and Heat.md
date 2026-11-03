@@ -8,8 +8,8 @@ tags: [chapter, thermal-and-statistical-physics]
 # A1 Temperature and Heat
 ↑ [[Thermal and Statistical Physics]] · [[· A2 The Kinetic Theory of Gases]] →
 
-**Builds on:** [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (1), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (2), [[· B9 Phases and Phase Transitions|B9 Phases and Phase Transitions]] (1), [[· B11★ Photons and Phonons|B11 Photons and Phonons]] (1)
-**Used by:** [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (1), [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (4), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (1), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (1), [[· B5 Kinetic Theory and Transport|B5 Kinetic Theory and Transport]] (4), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (1), [[· B11★ Photons and Phonons|B11 Photons and Phonons]] (1)
+**Builds on:** [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (1), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (2), [[· B5 Kinetic Theory and Transport|B5 Kinetic Theory and Transport]] (3), [[· B9 Phases and Phase Transitions|B9 Phases and Phase Transitions]] (1), [[· B11★ Photons and Phonons|B11 Photons and Phonons]] (1)
+**Used by:** [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (1), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (1), [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (5), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (1), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (1), [[· B5 Kinetic Theory and Transport|B5 Kinetic Theory and Transport]] (4), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (1), [[· B11★ Photons and Phonons|B11 Photons and Phonons]] (1)
 
 ## Sections
 - [[§A1.1 Temperature and Thermal Equilibrium]] — UP Vol. 2 §1.1–1.2
@@ -48,4 +48,5 @@ tags: [chapter, thermal-and-statistical-physics]
 - [[§A1.5 Mechanisms of Heat Transfer#^thm-a1-5-8|§A1.5.8]] Net Radiative Heat Transfer
 
 ## Models
+- [[§A1.3 Heat, Specific Heat and Calorimetry#^mod-a1-3-3|§A1.3.3]] Body of Uniform Temperature
 - [[§A1.5 Mechanisms of Heat Transfer#^mod-a1-5-6|§A1.5.6]] Blackbody

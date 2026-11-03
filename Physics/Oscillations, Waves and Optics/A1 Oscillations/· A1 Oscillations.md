@@ -33,9 +33,9 @@ tags: [chapter, oscillations-waves-and-optics]
 - [[§A1.4 Pendulums#^thm-a1-4-5|§A1.4.5]] Period of a Torsion Pendulum
 - [[§A1.5 Damped Oscillations#^thm-a1-5-2|§A1.5.2]] Motion of a Damped Oscillator
 - [[§A1.5 Damped Oscillations#^thm-a1-5-3|§A1.5.3]] Energy Loss of a Damped Oscillator
-- [[§A1.6 Forced Oscillations and Resonance#^thm-a1-6-1|§A1.6.1]] Steady-State Response
-- [[§A1.6 Forced Oscillations and Resonance#^thm-a1-6-2|§A1.6.2]] Amplitude at and near Resonance
-- [[§A1.6 Forced Oscillations and Resonance#^thm-a1-6-3|§A1.6.3]] Absorbed Power and Bandwidth
+- [[§A1.6 Forced Oscillations and Resonance#^thm-a1-6-2|§A1.6.2]] Steady-State Response
+- [[§A1.6 Forced Oscillations and Resonance#^thm-a1-6-3|§A1.6.3]] Amplitude at and near Resonance
+- [[§A1.6 Forced Oscillations and Resonance#^thm-a1-6-4|§A1.6.4]] Absorbed Power and Bandwidth
 
 ## Models
 - [[§A1.1 Simple Harmonic Motion#^mod-a1-1-1|§A1.1.1]] Simple Harmonic Oscillator
