@@ -69,7 +69,7 @@ The components, their raising and lowering, gauge invariance and the matrix are 
 >
 > with $F$ the field tensor of [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-2|Def. §C1a.7.2]]. Its Euler–Lagrange equation ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]]) is $\partial_\mu F^{\mu\nu} = J^\nu$.
 >
-> *Assumptions:* classical; $J^\mu$ external and conserved, $\partial_\mu J^\mu = 0$ (needed for the consistency of the field equation, and for the coupling to change by a total derivative under $A^\mu \to A^\mu + \partial^\mu\lambda$); flat spacetime; Heaviside–Lorentz natural units ([[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-1|Def. §C1a.7.1]]). For $J = 0$ it is [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]].
+> *Assumptions:* classical; $J^\mu$ external and conserved, $\partial_\mu J^\mu = 0$ (electric charge is conserved in every observed process, [[§C1a.1 Why Quantum Field Theory#^law-c1a-1-1|Law §C1a.1.1]]; needed for the consistency of the field equation, and for the coupling to change by a total derivative under $A^\mu \to A^\mu + \partial^\mu\lambda$); flat spacetime; Heaviside–Lorentz natural units ([[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-1|Def. §C1a.7.1]]). For $J = 0$ it is [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]].
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.7 ("Gauge invariance", "Inhomogeneous equations"), Ch. 3 §3.3 (Derivation "The Euler–Lagrange equation for other kinds of field", vector field) · PHY 513 Lecture 1, Part C · Yu §1.5, eqs. (1.123), (1.151)*
 

@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C9 Discrete Symmetries and Majorana Fields
 ← [[· C6b The S-Matrix, Amplitudes and Observables]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (73), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (153), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121), [[· CA Mathematical Methods|CA Mathematical Methods]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (38)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (4), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (4)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (74), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (154), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121), [[· CA Mathematical Methods|CA Mathematical Methods]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (38)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (10), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (4), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (4)
 
 ## Sections
 - [[§C9.1 Discrete Lorentz Transformations]] — 513 notes Ch. 11 §11.1
@@ -30,6 +30,7 @@ tags: [chapter, quantum-field-theory]
 
 ## Laws
 - [[§C9.4 Fermion Bilinears under Parity#^law-c9-4-8|§C9.4.8]] The Discrete Symmetries in Nature
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^law-c9-5-5|§C9.5.5]] The Pions Are Pseudoscalars
 
 ## Theorems
 - [[§C9.1 Discrete Lorentz Transformations#^thm-c9-1-1|§C9.1.1]] Identities of the Parity Matrix
@@ -59,9 +60,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-2|§C9.5.2]] The Parity of a Scalar Particle–Antiparticle Pair
 - [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-3|§C9.5.3]] Parity on the Real Scalar Field
 - [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-4|§C9.5.4]] The Free Real Lagrangian Is Invariant for Either Parity
-- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-5|§C9.5.5]] Parity Commutes with the Charge
-- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-6|§C9.5.6]] A Charge Rotation Multiplies the Field by a Phase
-- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-7|§C9.5.7]] The Parity Phase of a Complex Field Is a Convention
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-6|§C9.5.6]] Parity Commutes with the Charge
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-7|§C9.5.7]] A Charge Rotation Multiplies the Field by a Phase
+- [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-8|§C9.5.8]] The Parity Phase of a Complex Field Is a Convention
 - [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-1|§C9.6.1]] Charge Conjugation on Creation Operators and One-Particle States
 - [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-2|§C9.6.2]] Mode Expansion of the Transposed Adjoint
 - [[§C9.6 Charge Conjugation on Oscillators and Spinors#^thm-c9-6-3|§C9.6.3]] Conjugation Reverses the Spin of a Two-Spinor

@@ -232,7 +232,7 @@ As a matrix, $\varepsilon^{ab}$ is $E = \begin{pmatrix}0&1\\-1&0\end{pmatrix} = 
 ^rem-c5a-5-1
 
 > [!remark] Remark: Kinematics allows one handedness, a mass needs both
-> Lorentz transformations never mix $\psi_L$ and $\psi_R$ (their matrices are separate), so kinematics allows a theory of one Weyl field alone. Dynamics decides: the only invariants pairing a spinor with a conjugate spinor are $\psi_R^\dagger\chi_L$ and $\psi_L^\dagger\chi_R$ (Theorem §C5a.5.5), so a Dirac mass term couples left to right, and a single Weyl field describes a massless particle (Lecture 7: "Weyl spinors are massless particles. Mass couples $\xi$ and $\eta$"). The equations are [[§C5a.8 The Weyl Form and the Weyl Equations|§C5a.8]]; that one-handed fields describe neutrinos in the Standard Model is beyond the course.
+> Lorentz transformations never mix $\psi_L$ and $\psi_R$ (their matrices are separate), so kinematics allows a theory of one Weyl field alone. Dynamics decides: the only invariants pairing a spinor with a conjugate spinor are $\psi_R^\dagger\chi_L$ and $\psi_L^\dagger\chi_R$ (Theorem §C5a.5.5), so a Dirac mass term couples left to right, and a single Weyl field describes a massless particle (Lecture 7: "Weyl spinors are massless particles. Mass couples $\xi$ and $\eta$"). The equations are [[§C5a.8 The Weyl Form and the Weyl Equations|§C5a.8]]; that one-handed fields describe neutrinos in the Standard Model is beyond the course (the observed left-handedness of the weak interaction is [[§C9.4 Fermion Bilinears under Parity#^law-c9-4-8|Law §C9.4.8]], 2).
 >
 > *Source: PHY 513 Lecture 7, Part B (slide "Spinors and Boosts") · the user's PHY 513 notes, Ch. 8 §8.2 (paragraph "Physics of the split")*
 
