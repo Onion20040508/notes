@@ -8,14 +8,17 @@ tags: [chapter, quantum-mechanics]
 # B9 The Variational Principle and the WKB Approximation
 ← [[· B8 Time-Independent Perturbation Theory]] · ↑ [[Quantum Mechanics]] · [[· C1 Fundamental Concepts]] →
 
-**Builds on:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (5), [[· A7 Nuclear Physics|A7 Nuclear Physics]] (4), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (4), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (11), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (7), [[· B7 Identical Particles|B7 Identical Particles]] (3), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (5)
-**Used by:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (2), [[· C9 Approximation Methods|C9 Approximation Methods]] (5), [[· C10 Scattering Theory|C10 Scattering Theory]] (2)
+**Builds on:** [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (5), [[· A6 Molecules and Solids|A6 Molecules and Solids]] (1), [[· A7 Nuclear Physics|A7 Nuclear Physics]] (4), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B2 The Formalism of Quantum Mechanics|B2 The Formalism of Quantum Mechanics]] (4), [[· B3 One-Dimensional Potentials|B3 One-Dimensional Potentials]] (11), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (8), [[· B7 Identical Particles|B7 Identical Particles]] (4), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (5)
+**Used by:** [[· A6 Molecules and Solids|A6 Molecules and Solids]] (1), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (2), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (2), [[· C9 Approximation Methods|C9 Approximation Methods]] (5), [[· C10 Scattering Theory|C10 Scattering Theory]] (2)
 
 ## Sections
 - [[§B9.1★ The Variational Principle]] — Griffiths 8.1
 - [[§B9.2★ Helium and the Hydrogen Molecule]] — Griffiths 8.2–8.4
 - [[§B9.3 The WKB Approximation and Bohr–Sommerfeld Quantization]] — Griffiths 9.1; WKB notes §1; Zwiebach L12; Classical notes §4
 - [[§B9.4 Tunnelling and the Connection Formulas]] — Griffiths 9.2–9.3; WKB notes §2–5; Potential solutions §5
+
+## Laws
+- [[§B9.2★ Helium and the Hydrogen Molecule#^law-b9-2-3|§B9.2.3]] Measured Bond Data of the Hydrogen Molecule Ion and the Hydrogen Molecule
 
 ## Theorems
 - [[§B9.1★ The Variational Principle#^thm-b9-1-1|§B9.1.1]] The Variational Principle

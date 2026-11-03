@@ -17,6 +17,9 @@ tags: [chapter, quantum-mechanics]
 - [[§B3.3 The Delta-Function Potential]] — Griffiths 2.5; Potential solutions §6; Zwiebach L13
 - [[§B3.4 Scattering in One Dimension]] — Griffiths 2.5–2.6; Potential solutions §1, §4–5; Classical notes §13–14; Zwiebach L16–19; Greensite 8
 
+## Laws
+- [[§B3.4 Scattering in One Dimension#^law-b3-4-2|§B3.4.2]] ★ The Ramsauer–Townsend Effect
+
 ## Theorems
 - [[§B3.1 General Properties of One-Dimensional Eigenstates#^thm-b3-1-1|§B3.1.1]] Matching Conditions
 - [[§B3.1 General Properties of One-Dimensional Eigenstates#^thm-b3-1-2|§B3.1.2]] The Wronskian Identity

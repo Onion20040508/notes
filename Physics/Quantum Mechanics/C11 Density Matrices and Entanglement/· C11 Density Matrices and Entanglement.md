@@ -18,6 +18,9 @@ tags: [chapter, quantum-mechanics]
 - [[§C11.4★ Entanglement, EPR and Bell's Inequality]] — Sakurai 3.10; Griffiths 12.1–12.2, 12.4; Likharev 10.3
 - [[§C11.5★ Open Quantum Systems and Decoherence]] — Likharev 7.3–7.7; Griffiths 12.5
 
+## Laws
+- [[§C11.4★ Entanglement, EPR and Bell's Inequality#^law-c11-4-4|§C11.4.4]] Violation of Bell's Inequality
+
 ## Theorems
 - [[§C11.1 Pure and Mixed States and the Density Operator#^thm-c11-1-1|§C11.1.1]] Everything Measurable Is Fixed by ρ
 - [[§C11.1 Pure and Mixed States and the Density Operator#^thm-c11-1-2|§C11.1.2]] Which Operators Are Density Operators

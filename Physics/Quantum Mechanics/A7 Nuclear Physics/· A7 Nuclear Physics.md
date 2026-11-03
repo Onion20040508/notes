@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· A6 Molecules and Solids]] · ↑ [[Quantum Mechanics]] · [[· A8 Particle Physics and Cosmology]] →
 
 **Builds on:** [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (2)
-**Used by:** [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (1), [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (1), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (4)
+**Used by:** [[· A2 The Nuclear Atom and the Bohr Model|A2 The Nuclear Atom and the Bohr Model]] (1), [[· A8 Particle Physics and Cosmology|A8 Particle Physics and Cosmology]] (1), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (4), [[· C10 Scattering Theory|C10 Scattering Theory]] (1)
 
 ## Sections
 - [[§A7.1 Properties of Nuclei and Binding Energy]] — UP Vol. 3 §10.1–10.2
@@ -20,8 +20,13 @@ tags: [chapter, quantum-mechanics]
 ## Laws
 - [[§A7.1 Properties of Nuclei and Binding Energy#^law-a7-1-1|§A7.1.1]] Nuclear Radius
 - [[§A7.1 Properties of Nuclei and Binding Energy#^law-a7-1-3|§A7.1.3]] Properties of the Nuclear Force
+- [[§A7.1 Properties of Nuclei and Binding Energy#^law-a7-1-4|§A7.1.4]] The Line of Stability
+- [[§A7.1 Properties of Nuclei and Binding Energy#^law-a7-1-5|§A7.1.5]] Pairing and Magic Numbers
 - [[§A7.1 Properties of Nuclei and Binding Energy#^law-a7-1-7|§A7.1.7]] The Binding-Energy Curve
+- [[§A7.2 Radioactive Decay#^law-a7-2-6|§A7.2.6]] The Continuous Beta Spectrum
 - [[§A7.2 Radioactive Decay#^law-a7-2-7|§A7.2.7]] Geiger–Nuttall Rule
+- [[§A7.3 Nuclear Reactions, Fission and Fusion#^law-a7-3-3|§A7.3.3]] Neutron Capture Cross Sections and the 1/v Law
+- [[§A7.3 Nuclear Reactions, Fission and Fusion#^law-a7-3-4|§A7.3.4]] Fission Fragments and Neutron Yield
 
 ## Theorems
 - [[§A7.1 Properties of Nuclei and Binding Energy#^thm-a7-1-2|§A7.1.2]] Nuclear Density Is the Same for All Nuclei

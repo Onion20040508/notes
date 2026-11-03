@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # A8 Particle Physics and Cosmology
 ← [[· A7 Nuclear Physics]] · ↑ [[Quantum Mechanics]] · [[· B1 Wave Mechanics]] →
 
-**Builds on:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (6), [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (2), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (2), [[· A7 Nuclear Physics|A7 Nuclear Physics]] (1)
-**Used by:** [[· A7 Nuclear Physics|A7 Nuclear Physics]] (2)
+**Builds on:** [[· A1 The Particle Nature of Light|A1 The Particle Nature of Light]] (6), [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (2), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (2), [[· A7 Nuclear Physics|A7 Nuclear Physics]] (1), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (2), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (1)
+**Used by:** [[· A7 Nuclear Physics|A7 Nuclear Physics]] (2), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (1)
 
 ## Sections
 - [[§A8.1 Particles and Conservation Laws]] — UP Vol. 3 §11.1–11.2
@@ -24,8 +24,15 @@ tags: [chapter, quantum-mechanics]
 
 ## Laws
 - [[§A8.1 Particles and Conservation Laws#^law-a8-1-5|§A8.1.5]] Conservation of Strangeness
+- [[§A8.1 Particles and Conservation Laws#^law-a8-1-6|§A8.1.6]] Parity Violation in Weak Interactions
+- [[§A8.1 Particles and Conservation Laws#^law-a8-1-7|§A8.1.7]] Lifetimes Reveal the Interaction
 - [[§A8.2 Quarks and the Standard Model#^law-a8-2-3|§A8.2.3]] Quark Confinement
+- [[§A8.2 Quarks and the Standard Model#^law-a8-2-4|§A8.2.4]] Hard Scattering Centres inside the Proton
 - [[§A8.4 The Big Bang and the Early Universe#^law-a8-4-1|§A8.4.1]] Hubble's Law
+- [[§A8.4 The Big Bang and the Early Universe#^law-a8-4-8|§A8.4.8]] The Observed Microwave Background
+- [[§A8.4 The Big Bang and the Early Universe#^law-a8-4-10|§A8.4.10]] Flat Rotation Curves and the Missing Mass
+- [[§A8.4 The Big Bang and the Early Universe#^law-a8-4-12|§A8.4.12]] The Accelerating Expansion
+- [[§A8.4 The Big Bang and the Early Universe#^law-a8-4-13|§A8.4.13]] The Energy Content of the Universe
 
 ## Theorems
 - [[§A8.1 Particles and Conservation Laws#^thm-a8-1-2|§A8.1.2]] Annihilation at Rest

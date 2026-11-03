@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # C13★ Relativistic Quantum Mechanics
 ← [[· C12★ Identical Particles and Second Quantization]] · ↑ [[Quantum Mechanics]]
 
-**Builds on:** [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B6 Spin|B6 Spin]] (7), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (3), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (1), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (7), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (6), [[· C6 Central Potentials|C6 Central Potentials]] (2), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (2), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (1), [[· C12★ Identical Particles and Second Quantization|C12 Identical Particles and Second Quantization]] (3)
-**Used by:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (2), [[· B6 Spin|B6 Spin]] (2), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (1), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (1), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (2)
+**Builds on:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (1), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B6 Spin|B6 Spin]] (7), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (3), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (1), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (7), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (6), [[· C6 Central Potentials|C6 Central Potentials]] (2), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (2), [[· C8★ Symmetries in Quantum Mechanics|C8 Symmetries in Quantum Mechanics]] (1), [[· C12★ Identical Particles and Second Quantization|C12 Identical Particles and Second Quantization]] (3)
+**Used by:** [[· A5 Atoms and Spin|A5 Atoms and Spin]] (3), [[· B6 Spin|B6 Spin]] (2), [[· B8 Time-Independent Perturbation Theory|B8 Time-Independent Perturbation Theory]] (1), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (1), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (1), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (2)
 
 ## Sections
 - [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field]] — Sakurai 8.1–8.2; Likharev 9.5
@@ -19,6 +19,10 @@ tags: [chapter, quantum-mechanics]
 ## Principles
 - [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^pr-c13-1-3|§C13.1.3]] Minimal Coupling for a Spinless Particle
 - [[§C13.2★ The Dirac Equation#^pr-c13-2-1|§C13.2.1]] The Dirac Equation
+
+## Laws
+- [[§C13.2★ The Dirac Equation#^law-c13-2-6|§C13.2.6]] Measured g-Factors of the Electron and Muon
+- [[§C13.3★ Solutions of the Dirac Equation and the Hydrogen Atom#^law-c13-3-4|§C13.3.4]] Fine Structure and Lamb Shift of Hydrogen's n = 2 Levels (Measured)
 
 ## Theorems
 - [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-1|§C13.1.1]] The Conserved Current of the Klein–Gordon Equation Is Not a Probability

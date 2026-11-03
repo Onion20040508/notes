@@ -9,7 +9,7 @@ tags: [chapter, quantum-mechanics]
 ← [[· C3 Quantum Dynamics]] · ↑ [[Quantum Mechanics]] · [[· C5 Rotations and Angular Momentum]] →
 
 **Builds on:** [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (4), [[· B6 Spin|B6 Spin]] (1), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (10), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (10), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (2)
-**Used by:** [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (1), [[· C9 Approximation Methods|C9 Approximation Methods]] (3), [[· C10 Scattering Theory|C10 Scattering Theory]] (6), [[· C11 Density Matrices and Entanglement|C11 Density Matrices and Entanglement]] (4), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (7)
+**Used by:** [[· A6 Molecules and Solids|A6 Molecules and Solids]] (1), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (1), [[· C9 Approximation Methods|C9 Approximation Methods]] (3), [[· C10 Scattering Theory|C10 Scattering Theory]] (6), [[· C11 Density Matrices and Entanglement|C11 Density Matrices and Entanglement]] (4), [[· C13★ Relativistic Quantum Mechanics|C13 Relativistic Quantum Mechanics]] (7)
 
 ## Sections
 - [[§C4.1 Propagators]] — notes §16.1–16.2; Sakurai 2.6; series IV §10
@@ -19,6 +19,10 @@ tags: [chapter, quantum-mechanics]
 ## Principles
 - [[§C4.2 The Feynman Path Integral#^pr-c4-2-3|§C4.2.3]] Feynman's Formulation
 - [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^pr-c4-3-3|§C4.3.3]] Hamiltonian of a Charged Particle
+
+## Laws
+- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^law-c4-3-2|§C4.3.2]] Gravity-Induced Neutron Interference
+- [[§C4.3 Potentials, Gauge Transformations and the Aharonov–Bohm Effect#^law-c4-3-9|§C4.3.9]] Observation of the Aharonov–Bohm Effect
 
 ## Theorems
 - [[§C4.1 Propagators#^thm-c4-1-1|§C4.1.1]] The Propagator Evolves Every Wave Function; Spectral Form

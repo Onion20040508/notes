@@ -21,7 +21,10 @@ tags: [chapter, quantum-mechanics]
 - [[§A1.2 The Photoelectric Effect#^pr-a1-2-3|§A1.2.3]] Einstein's Photon Hypothesis
 
 ## Laws
+- [[§A1.1 Blackbody Radiation#^law-a1-1-1|§A1.1.1]] The Observed Blackbody Spectrum
 - [[§A1.2 The Photoelectric Effect#^law-a1-2-2|§A1.2.2]] Observed Features of the Photoelectric Effect
+- [[§A1.2 The Photoelectric Effect#^law-a1-2-4|§A1.2.4]] Work Functions of Metals
+- [[§A1.3 The Compton Effect#^law-a1-3-1|§A1.3.1]] Compton's Observations
 
 ## Theorems
 - [[§A1.1 Blackbody Radiation#^thm-a1-1-2|§A1.1.2]] Rayleigh–Jeans Law (Classical Prediction)

@@ -8,13 +8,17 @@ tags: [chapter, quantum-mechanics]
 # C10 Scattering Theory
 ← [[· C9 Approximation Methods]] · ↑ [[Quantum Mechanics]] · [[· C11 Density Matrices and Entanglement]] →
 
-**Builds on:** [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (1), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (2), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (2), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (4), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (2), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (6), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (4), [[· C6 Central Potentials|C6 Central Potentials]] (12), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (3), [[· C9 Approximation Methods|C9 Approximation Methods]] (5)
+**Builds on:** [[· A7 Nuclear Physics|A7 Nuclear Physics]] (1), [[· B1 Wave Mechanics|B1 Wave Mechanics]] (1), [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (1), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (2), [[· C1 Fundamental Concepts|C1 Fundamental Concepts]] (2), [[· C2 Position, Momentum and Translation|C2 Position, Momentum and Translation]] (4), [[· C3 Quantum Dynamics|C3 Quantum Dynamics]] (2), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (6), [[· C5 Rotations and Angular Momentum|C5 Rotations and Angular Momentum]] (4), [[· C6 Central Potentials|C6 Central Potentials]] (12), [[· C7 Addition of Angular Momentum and Tensor Operators|C7 Addition of Angular Momentum and Tensor Operators]] (3), [[· C9 Approximation Methods|C9 Approximation Methods]] (5)
 **Used by:** —
 
 ## Sections
 - [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation]] — Sakurai 6.1–6.3; Griffiths 10.1, 10.4
 - [[§C10.2 The Eikonal Approximation and the Optical Theorem]] — Sakurai 6.2, 6.5
 - [[§C10.3 Partial Waves and Phase Shifts]] — Sakurai 6.4, 6.6–6.9; Griffiths 10.2–10.3
+
+## Laws
+- [[§C10.3 Partial Waves and Phase Shifts#^law-c10-3-10|§C10.3.10]] Low-Energy Neutron–Proton Data
+- [[§C10.3 Partial Waves and Phase Shifts#^law-c10-3-11|§C10.3.11]] ★ The Δ(1232) Resonance in π⁺p Scattering
 
 ## Theorems
 - [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-1|§C10.1.1]] The T Matrix, the S Matrix and the Cross-Section

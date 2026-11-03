@@ -24,6 +24,7 @@ tags: [chapter, quantum-mechanics]
 - [[§A3.4 Wave Functions and Probability#^pr-a3-4-4|§A3.4.4]] Expectation Values of Momentum and Energy
 
 ## Laws
+- [[§A3.1 De Broglie's Matter Waves#^law-a3-1-5|§A3.1.5]] Diffraction of Electrons and Other Particles
 - [[§A3.2 Wave–Particle Duality#^law-a3-2-1|§A3.2.1]] Single-Particle Interference
 
 ## Theorems

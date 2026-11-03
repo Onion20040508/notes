@@ -8,8 +8,8 @@ tags: [chapter, quantum-mechanics]
 # A6 Molecules and Solids
 ← [[· A5 Atoms and Spin]] · ↑ [[Quantum Mechanics]] · [[· A7 Nuclear Physics]] →
 
-**Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (4), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (15), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (1), [[· B7 Identical Particles|B7 Identical Particles]] (3), [[· C9 Approximation Methods|C9 Approximation Methods]] (2)
-**Used by:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (1), [[· B7 Identical Particles|B7 Identical Particles]] (4)
+**Builds on:** [[· A3 Matter Waves and Uncertainty|A3 Matter Waves and Uncertainty]] (1), [[· A4 The Schrödinger Equation in One Dimension|A4 The Schrödinger Equation in One Dimension]] (4), [[· A5 Atoms and Spin|A5 Atoms and Spin]] (15), [[· B4 The Harmonic Oscillator|B4 The Harmonic Oscillator]] (1), [[· B7 Identical Particles|B7 Identical Particles]] (3), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (1), [[· C4 Propagators and Path Integrals|C4 Propagators and Path Integrals]] (1), [[· C9 Approximation Methods|C9 Approximation Methods]] (2)
+**Used by:** [[· B5 Quantum Mechanics in Three Dimensions|B5 Quantum Mechanics in Three Dimensions]] (1), [[· B7 Identical Particles|B7 Identical Particles]] (4), [[· B9 The Variational Principle and the WKB Approximation|B9 The Variational Principle and the WKB Approximation]] (1)
 
 ## Sections
 - [[§A6.1 Molecular Bonds and Spectra]] — UP Vol. 3 §9.1–9.2
@@ -22,6 +22,7 @@ tags: [chapter, quantum-mechanics]
 - [[§A6.4 Superconductivity#^law-a6-4-2|§A6.4.2]] Meissner Effect
 - [[§A6.4 Superconductivity#^law-a6-4-4|§A6.4.4]] Critical Magnetic Field
 - [[§A6.4 Superconductivity#^law-a6-4-5|§A6.4.5]] Isotope Effect
+- [[§A6.4 Superconductivity#^law-a6-4-6|§A6.4.6]] Flux Quantization
 
 ## Theorems
 - [[§A6.1 Molecular Bonds and Spectra#^thm-a6-1-2|§A6.1.2]] Dissociation Energy of an Ionic Molecule

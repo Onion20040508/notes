@@ -20,6 +20,9 @@ tags: [chapter, quantum-mechanics]
 ## Principles
 - [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^pr-c5-1-2|§C5.1.2]] Rotation Operators
 
+## Laws
+- [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^law-c5-2-5|§C5.2.5]] The Sign Reversal of Spinors Under 2π Is Observed
+
 ## Theorems
 - [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-1|§C5.1.1]] Infinitesimal Rotations and Their Commutator
 - [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-3|§C5.1.3]] Finite Rotations
