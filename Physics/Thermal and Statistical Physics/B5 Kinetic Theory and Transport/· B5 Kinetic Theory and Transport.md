@@ -18,6 +18,9 @@ tags: [chapter, thermal-and-statistical-physics]
 - [[§B5.4★ Liouville's Theorem, the Boltzmann Equation and the H-Theorem]] — Schwartz L3; Blundell 34
 
 ## Laws
+- [[§B5.1 The Maxwell–Boltzmann Distribution and Effusion#^law-b5-1-6|§B5.1.6]] Measured Speed Distribution of a Molecular Beam
+- [[§B5.2★ Mean Free Path and Transport Coefficients#^law-b5-2-4|§B5.2.4]] Newton's Law of Viscosity
+- [[§B5.2★ Mean Free Path and Transport Coefficients#^law-b5-2-7|§B5.2.7]] Pressure Independence of Gas Viscosity
 - [[§B5.3★ The Thermal Diffusion Equation#^law-b5-3-1|§B5.3.1]] Fourier's Law, Local Form
 
 ## Theorems
@@ -27,8 +30,8 @@ tags: [chapter, thermal-and-statistical-physics]
 - [[§B5.1 The Maxwell–Boltzmann Distribution and Effusion#^thm-b5-1-5|§B5.1.5]] Effusion
 - [[§B5.2★ Mean Free Path and Transport Coefficients#^thm-b5-2-2|§B5.2.2]] Free Times and Free Paths Are Exponentially Distributed
 - [[§B5.2★ Mean Free Path and Transport Coefficients#^thm-b5-2-3|§B5.2.3]] Mean Free Path in a Maxwellian Gas
-- [[§B5.2★ Mean Free Path and Transport Coefficients#^thm-b5-2-4|§B5.2.4]] Transport Coefficients of a Dilute Gas (Mean-Free-Path Theory)
-- [[§B5.2★ Mean Free Path and Transport Coefficients#^thm-b5-2-5|§B5.2.5]] How the Transport Coefficients Scale
+- [[§B5.2★ Mean Free Path and Transport Coefficients#^thm-b5-2-5|§B5.2.5]] Transport Coefficients of a Dilute Gas (Mean-Free-Path Theory)
+- [[§B5.2★ Mean Free Path and Transport Coefficients#^thm-b5-2-6|§B5.2.6]] How the Transport Coefficients Scale
 - [[§B5.3★ The Thermal Diffusion Equation#^thm-b5-3-2|§B5.3.2]] Thermal Diffusion Equation
 - [[§B5.3★ The Thermal Diffusion Equation#^thm-b5-3-3|§B5.3.3]] A Pulse of Heat; Two Bodies in Contact
 - [[§B5.3★ The Thermal Diffusion Equation#^thm-b5-3-4|§B5.3.4]] Temperature Waves; Thermal Skin Depth

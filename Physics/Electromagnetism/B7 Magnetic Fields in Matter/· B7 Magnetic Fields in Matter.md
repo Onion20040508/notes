@@ -8,8 +8,8 @@ tags: [chapter, electromagnetism]
 # B7 Magnetic Fields in Matter
 ← [[· B6 Magnetostatics]] · ↑ [[Electromagnetism]] · [[· B8 Electrodynamics]] →
 
-**Builds on:** [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (4), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (19), [[· B2 Electrostatics|B2 Electrostatics]] (1), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (11), [[· B6 Magnetostatics|B6 Magnetostatics]] (19), [[· B8 Electrodynamics|B8 Electrodynamics]] (2)
-**Used by:** [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (2), [[· B8 Electrodynamics|B8 Electrodynamics]] (7), [[· B9 Conservation Laws|B9 Conservation Laws]] (2), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (1)
+**Builds on:** [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (6), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (19), [[· B2 Electrostatics|B2 Electrostatics]] (1), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (11), [[· B6 Magnetostatics|B6 Magnetostatics]] (19), [[· B8 Electrodynamics|B8 Electrodynamics]] (2)
+**Used by:** [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (2), [[· B8 Electrodynamics|B8 Electrodynamics]] (7), [[· B9 Conservation Laws|B9 Conservation Laws]] (2), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (2), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (2)
 
 ## Sections
 - [[§B7.1 Magnetization and Bound Currents]] — Griffiths 6.1–6.2
@@ -17,6 +17,7 @@ tags: [chapter, electromagnetism]
 
 ## Laws
 - [[§B7.2 The Auxiliary Field H and Magnetic Media#^law-b7-2-5|§B7.2.5]] Linear Magnetic Response
+- [[§B7.2 The Auxiliary Field H and Magnetic Media#^law-b7-2-8|§B7.2.8]] The Curie Point Is Sharp
 - [[§B7.2 The Auxiliary Field H and Magnetic Media#^law-b7-2-9|§B7.2.9]] Hysteresis
 
 ## Theorems

@@ -8,7 +8,7 @@ tags: [chapter, electromagnetism]
 # A7 Magnetic Forces and Fields
 ← [[· A6 Direct-Current Circuits]] · ↑ [[Electromagnetism]] · [[· A8 Sources of Magnetic Fields]] →
 
-**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (1), [[· A3 Electric Potential|A3 Electric Potential]] (2), [[· A5 Current and Resistance|A5 Current and Resistance]] (5)
+**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (1), [[· A3 Electric Potential|A3 Electric Potential]] (2), [[· A5 Current and Resistance|A5 Current and Resistance]] (5), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (1), [[· B6 Magnetostatics|B6 Magnetostatics]] (1), [[· B8 Electrodynamics|B8 Electrodynamics]] (1)
 **Used by:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (1), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (4), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (8), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (5), [[· B6 Magnetostatics|B6 Magnetostatics]] (9), [[· B8 Electrodynamics|B8 Electrodynamics]] (2)
 
 ## Sections
@@ -22,6 +22,7 @@ tags: [chapter, electromagnetism]
 - [[§A7.1 Magnetic Field and the Force on a Moving Charge#^pr-a7-1-1|§A7.1.1]] Magnetic Force on a Moving Charge
 
 ## Laws
+- [[§A7.1 Magnetic Field and the Force on a Moving Charge#^law-a7-1-2|§A7.1.2]] Magnetic Poles Come in Pairs
 - [[§A7.5 The Hall Effect and Applications#^law-a7-5-3|§A7.5.3]] Sign of the Charge Carriers
 
 ## Theorems

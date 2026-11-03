@@ -17,6 +17,9 @@ tags: [chapter, electromagnetism]
 - [[§C2.3 Electrostatic Energy and Self-Energy]] — Zangwill §3.5–3.6; PHY 505 notes Part IV
 - [[§C2.4 The Electric Stress Tensor]] — Zangwill §3.7
 
+## Laws
+- [[§C2.3 Electrostatic Energy and Self-Energy#^law-c2-3-8|§C2.3.8]] Ionization Potential of Metal Clusters
+
 ## Theorems
 - [[§C2.1 The Static Limit and the Field of a Charge Distribution#^thm-c2-1-1|§C2.1.1]] The Static Limit of Maxwell's Equations
 - [[§C2.1 The Static Limit and the Field of a Charge Distribution#^thm-c2-1-2|§C2.1.2]] The Static Action of the Potential

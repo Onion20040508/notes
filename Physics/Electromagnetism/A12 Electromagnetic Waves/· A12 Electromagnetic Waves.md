@@ -9,7 +9,7 @@ tags: [chapter, electromagnetism]
 ← [[· A11 Alternating-Current Circuits]] · ↑ [[Electromagnetism]] · [[· B1 Vector Calculus for Electrodynamics]] →
 
 **Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (5), [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A4 Capacitance|A4 Capacitance]] (2), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (5), [[· A8 Sources of Magnetic Fields|A8 Sources of Magnetic Fields]] (1), [[· A10 Inductance|A10 Inductance]] (2), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (2), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (2), [[· B8 Electrodynamics|B8 Electrodynamics]] (1), [[· B9 Conservation Laws|B9 Conservation Laws]] (2), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (3)
-**Used by:** [[· A4 Capacitance|A4 Capacitance]] (1), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (1), [[· B8 Electrodynamics|B8 Electrodynamics]] (4), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1)
+**Used by:** [[· A4 Capacitance|A4 Capacitance]] (1), [[· A7 Magnetic Forces and Fields|A7 Magnetic Forces and Fields]] (1), [[· A9 Electromagnetic Induction|A9 Electromagnetic Induction]] (1), [[· B8 Electrodynamics|B8 Electrodynamics]] (4), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1)
 
 ## Sections
 - [[§A12.1 Maxwell's Equations and EM Waves]] — UP Vol. 2 §16.1
@@ -21,6 +21,10 @@ tags: [chapter, electromagnetism]
 ## Principles
 - [[§A12.1 Maxwell's Equations and EM Waves#^pr-a12-1-1|§A12.1.1]] Ampère–Maxwell Law
 - [[§A12.1 Maxwell's Equations and EM Waves#^pr-a12-1-3|§A12.1.3]] Maxwell's Equations
+
+## Laws
+- [[§A12.1 Maxwell's Equations and EM Waves#^law-a12-1-4|§A12.1.4]] Electromagnetic Waves Exist and Travel at the Speed of Light
+- [[§A12.4 Momentum and Radiation Pressure#^law-a12-4-3|§A12.4.3]] Radiation Pressure Observed
 
 ## Theorems
 - [[§A12.1 Maxwell's Equations and EM Waves#^thm-a12-1-2|§A12.1.2]] The Ampère–Maxwell Law Does Not Depend on the Surface

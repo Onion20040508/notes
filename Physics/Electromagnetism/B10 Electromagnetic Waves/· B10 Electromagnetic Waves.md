@@ -8,14 +8,17 @@ tags: [chapter, electromagnetism]
 # B10 Electromagnetic Waves
 ← [[· B9 Conservation Laws]] · ↑ [[Electromagnetism]] · [[· B11★ Potentials and Radiation]] →
 
-**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (2), [[· A4 Capacitance|A4 Capacitance]] (2), [[· A5 Current and Resistance|A5 Current and Resistance]] (1), [[· A10 Inductance|A10 Inductance]] (2), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (1), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (3), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (5), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (1), [[· B6 Magnetostatics|B6 Magnetostatics]] (1), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (1), [[· B8 Electrodynamics|B8 Electrodynamics]] (14), [[· B9 Conservation Laws|B9 Conservation Laws]] (14)
-**Used by:** [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (3), [[· B8 Electrodynamics|B8 Electrodynamics]] (2), [[· C1 Electrodynamics from an Action|C1 Electrodynamics from an Action]] (2), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (1)
+**Builds on:** [[· A1 Electric Charges and Fields|A1 Electric Charges and Fields]] (2), [[· A4 Capacitance|A4 Capacitance]] (2), [[· A5 Current and Resistance|A5 Current and Resistance]] (1), [[· A10 Inductance|A10 Inductance]] (2), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (1), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (3), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (5), [[· B5 Electric Fields in Matter|B5 Electric Fields in Matter]] (1), [[· B6 Magnetostatics|B6 Magnetostatics]] (1), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (2), [[· B8 Electrodynamics|B8 Electrodynamics]] (15), [[· B9 Conservation Laws|B9 Conservation Laws]] (14)
+**Used by:** [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (3), [[· B8 Electrodynamics|B8 Electrodynamics]] (3), [[· C1 Electrodynamics from an Action|C1 Electrodynamics from an Action]] (2), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (1)
 
 ## Sections
 - [[§B10.1 Electromagnetic Waves in Vacuum]] — Griffiths 9.1–9.2; Schwartz 15c L13; Nelson ch. 18, 20
 - [[§B10.2 Waves in Linear Media, Reflection and Transmission]] — Griffiths 9.3; Nelson ch. 47
 - [[§B10.3★ Conductors and Dispersion]] — Griffiths 9.4; Nelson ch. 47, 53
 - [[§B10.4★ Guided Waves]] — Griffiths 9.5
+
+## Laws
+- [[§B10.2 Waves in Linear Media, Reflection and Transmission#^law-b10-2-3|§B10.2.3]] Most Media Are Nearly Non-Magnetic
 
 ## Theorems
 - [[§B10.1 Electromagnetic Waves in Vacuum#^thm-b10-1-1|§B10.1.1]] Wave Equations for E and B

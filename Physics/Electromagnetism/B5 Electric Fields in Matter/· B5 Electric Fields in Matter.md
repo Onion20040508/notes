@@ -8,8 +8,8 @@ tags: [chapter, electromagnetism]
 # B5 Electric Fields in Matter
 ← [[· B4 The Multipole Expansion]] · ↑ [[Electromagnetism]] · [[· B6 Magnetostatics]] →
 
-**Builds on:** [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A4 Capacitance|A4 Capacitance]] (3), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (21), [[· B2 Electrostatics|B2 Electrostatics]] (13), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (7), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (5)
-**Used by:** [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (2), [[· B2 Electrostatics|B2 Electrostatics]] (1), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (11), [[· B8 Electrodynamics|B8 Electrodynamics]] (9), [[· B9 Conservation Laws|B9 Conservation Laws]] (3), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (1), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (25), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (1), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (1)
+**Builds on:** [[· A2 Gauss's Law|A2 Gauss's Law]] (2), [[· A4 Capacitance|A4 Capacitance]] (5), [[· B1 Vector Calculus for Electrodynamics|B1 Vector Calculus for Electrodynamics]] (21), [[· B2 Electrostatics|B2 Electrostatics]] (13), [[· B3 Boundary-Value Problems|B3 Boundary-Value Problems]] (7), [[· B4 The Multipole Expansion|B4 The Multipole Expansion]] (5), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (2)
+**Used by:** [[· A4 Capacitance|A4 Capacitance]] (1), [[· A12 Electromagnetic Waves|A12 Electromagnetic Waves]] (2), [[· B2 Electrostatics|B2 Electrostatics]] (1), [[· B7 Magnetic Fields in Matter|B7 Magnetic Fields in Matter]] (11), [[· B8 Electrodynamics|B8 Electrodynamics]] (9), [[· B9 Conservation Laws|B9 Conservation Laws]] (3), [[· B10 Electromagnetic Waves|B10 Electromagnetic Waves]] (1), [[· C3 Electric Multipoles|C3 Electric Multipoles]] (1), [[· C5 Dielectric Matter|C5 Dielectric Matter]] (28), [[· C6 Laplace's Equation|C6 Laplace's Equation]] (1), [[· C7 Poisson's Equation|C7 Poisson's Equation]] (1)
 
 ## Sections
 - [[§B5.1 Polarization and Bound Charge]] — Griffiths 4.1–4.2
@@ -17,7 +17,9 @@ tags: [chapter, electromagnetism]
 - [[§B5.3 Linear Dielectrics]] — Griffiths 4.4; Nelson ch. 6
 
 ## Laws
+- [[§B5.1 Polarization and Bound Charge#^law-b5-1-1|§B5.1.1]] Frozen-In Polarization
 - [[§B5.3 Linear Dielectrics#^law-b5-3-1|§B5.3.1]] Linear Dielectric Response
+- [[§B5.3 Linear Dielectrics#^law-b5-3-2|§B5.3.2]] Dielectric Constants of Common Materials
 
 ## Theorems
 - [[§B5.1 Polarization and Bound Charge#^thm-b5-1-2|§B5.1.2]] Potential of a Polarized Object

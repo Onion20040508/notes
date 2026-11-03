@@ -17,6 +17,9 @@ tags: [chapter, electromagnetism]
 - [[§C3.3 Primitive and Traceless Moments]] — Zangwill §4.7; HW8
 - [[§C3.4 Multipole Interaction Energies and Molecules on a Lattice]] — HW8.3; the user's paper (2025)
 
+## Laws
+- [[§C3.3 Primitive and Traceless Moments#^law-c3-3-5|§C3.3.5]] Nuclear Quadrupole Moments
+
 ## Theorems
 - [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-1|§C3.1.1]] The Primitive Cartesian Multipole Expansion
 - [[§C3.1 Cartesian Multipole Moments and Dipole Layers#^thm-c3-1-3|§C3.1.3]] Second Derivatives of 1/r as a Distribution
