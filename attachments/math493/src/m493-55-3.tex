@@ -1,0 +1,21 @@
+% Figure from MATH 493 notes, section 55 (office hours 11/4). Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth, scale=1.0]
+\draw[orange!85!black, thick] (1.40,-1.4) -- (-1.40,1.4);
+\node[orange!85!black, font=\scriptsize] at (-1.62,1.62) {$\langle (-1, 1) \rangle$};
+\draw[red!70!black, thick] (-0.00,-1.4) -- (0.00,1.4);
+\node[red!70!black, font=\scriptsize] at (0.12,1.62) {$\langle (0, 1) \rangle$};
+\draw[blue!70!black, thick] (-1.40,-1.4) -- (1.40,1.4);
+\node[blue!70!black, font=\scriptsize] at (1.62,1.62) {$\langle (1, 1) \rangle$};
+\draw[black, very thick] (-1.5,0) -- (1.5,0) node[right, font=\scriptsize] {$\langle e_1 \rangle$: fixed by $P$};
+\fill[black!70] (-1,-1) circle (1.6pt);
+\fill[black!70] (-1,0) circle (1.6pt);
+\fill[black!70] (-1,1) circle (1.6pt);
+\fill[black!70] (0,-1) circle (1.6pt);
+\fill[black!70] (0,0) circle (1.6pt);
+\fill[black!70] (0,1) circle (1.6pt);
+\fill[black!70] (1,-1) circle (1.6pt);
+\fill[black!70] (1,0) circle (1.6pt);
+\fill[black!70] (1,1) circle (1.6pt);
+\node[font=\scriptsize, align=left, anchor=west] at (2.6,0.95) {$\left(\begin{smallmatrix} 1 & a \\ 0 & 1 \end{smallmatrix}\right)\langle (b, 1) \rangle = \langle (b + a, 1) \rangle$:\\the three other lines form one orbit\\of size $p = 3$};
+\node[font=\scriptsize, align=left, anchor=west] at (2.6,-0.9) {$\mathbb{F}_3^2$: $9$ points, $p + 1 = 4$ lines through $0$\\(each line drawn through its $3$ points;\\coordinates taken in $\{-1, 0, 1\}$)};
+\end{tikzpicture}

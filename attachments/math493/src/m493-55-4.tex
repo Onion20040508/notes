@@ -1,0 +1,154 @@
+% Figure from MATH 493 notes, section 55 (office hours 11/4). Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth]
+\begin{scope}[shift={(0.0,-0.0)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (0.000,1.000) -- (-0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (0.000,1.000) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = e$, \ orbit size $1$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 = \langle e_1 \rangle$,\\ $V_2 = \langle e_1, e_2 \rangle$};
+\end{scope}
+\begin{scope}[shift={(4.0,-0.0)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (0.000,1.000) -- (0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (0.000,1.000) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = (2\,3)$, \ orbit size $p$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 = \langle e_1 \rangle$,\\ $V_2 \neq \langle e_1, e_2 \rangle$};
+\end{scope}
+\begin{scope}[shift={(8.0,-0.0)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (0.000,1.000) -- (-0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (-0.866,-0.500) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = (1\,2)$, \ orbit size $p$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 \subset \langle e_1, e_2 \rangle$, $V_1 \neq \langle e_1 \rangle$,\\ $V_2 = \langle e_1, e_2 \rangle$};
+\end{scope}
+\begin{scope}[shift={(0.0,-4.1)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (-0.866,-0.500) -- (0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (-0.866,-0.500) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = (1\,2\,3)$, \ orbit size $p^2$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 \subset \langle e_1, e_2 \rangle$, $V_1 \neq \langle e_1 \rangle$,\\ $V_2 \neq \langle e_1, e_2 \rangle$};
+\end{scope}
+\begin{scope}[shift={(4.0,-4.1)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (0.000,1.000) -- (0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (0.866,-0.500) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = (1\,3\,2)$, \ orbit size $p^2$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 \not\subset \langle e_1, e_2 \rangle$,\\ $e_1 \in V_2$};
+\end{scope}
+\begin{scope}[shift={(8.0,-4.1)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (-0.866,-0.500) -- (0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (0.866,-0.500) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = (1\,3)$, \ orbit size $p^3$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 \not\subset \langle e_1, e_2 \rangle$,\\ $e_1 \notin V_2$};
+\end{scope}
+\node[font=\scriptsize, align=left, anchor=west] at (-1.6,-6.6) {Fano plane $=$ the $7$ lines (dots) and $7$ planes (segments and circle) of $\mathbb{F}_2^3$; a complete flag is a dot \textcolor{red!70!black}{$V_1$} on a segment \textcolor{blue!70!black}{$V_2$}.\\Each panel shows the flag $w\mathcal{F}_0$ (\textcolor{red!70!black}{red} dot on \textcolor{blue!70!black}{blue} side); grey circle and thick grey side: the standard flag $\langle e_1 \rangle \subset \langle e_1, e_2 \rangle$.\\The condition under each panel describes the whole $P$-orbit, for every $p$; for $p = 2$ the sizes are $1, 2, 2, 4, 4, 8$, in all $21$ flags.};
+\end{tikzpicture}

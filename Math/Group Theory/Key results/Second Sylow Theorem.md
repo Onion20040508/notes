@@ -18,6 +18,7 @@ tags: [group-theory, hub]
 - [[§55 The Sylow Theorems#^cor-55-7|Corollary §55.7: A Normal Sylow Subgroup Is the Only One]]
 - [[§55 The Sylow Theorems#^thm-55-9|Theorem §55.9: The Third Sylow Theorem]]
 - [[§55 The Sylow Theorems#^cor-55-10|Corollary §55.10: The Number of Sylow Subgroups Divides ∣G∣]]
+- [[§55 The Sylow Theorems#^prop-55-13|Proposition §55.13: Sylow p-Subgroups of GLₙ(𝔽_p) and Flags]]
 - [[§56 Simple Groups of Small Order#^prop-56-2|Proposition §56.2: n_p and the Normalizer]]
 - [[§56 Simple Groups of Small Order#^prop-56-4|Proposition §56.4: The Conjugation Homomorphism G → S_n_p]]
 

@@ -24,6 +24,8 @@ tags: [group-theory, hub]
 - [[§55 The Sylow Theorems#^prop-55-3|Proposition §55.3: Sylow Subgroups of a Subgroup]]
 - [[§55 The Sylow Theorems#^thm-55-9|Theorem §55.9: The Third Sylow Theorem]]
 - [[§55 The Sylow Theorems#^cor-55-10|Corollary §55.10: The Number of Sylow Subgroups Divides ∣G∣]]
+- [[§55 The Sylow Theorems#^prop-55-12|Proposition §55.12: Complete Flags Are G/B]]
+- [[§55 The Sylow Theorems#^prop-55-13|Proposition §55.13: Sylow p-Subgroups of GLₙ(𝔽_p) and Flags]]
 - [[§56 Simple Groups of Small Order#^prop-56-2|Proposition §56.2: n_p and the Normalizer]]
 
 ## Connections

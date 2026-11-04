@@ -23,6 +23,7 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§55 The Sylow Theorems#^cor-55-10|Corollary §55.10: The Number of Sylow Subgroups Divides ∣G∣]]
 - [[§55 The Sylow Theorems#^prop-55-11|Proposition §55.11: Groups of Order pq]]
+- [[§55 The Sylow Theorems#^prop-55-13|Proposition §55.13: Sylow p-Subgroups of GLₙ(𝔽_p) and Flags]]
 - [[§56 Simple Groups of Small Order#^prop-56-2|Proposition §56.2: n_p and the Normalizer]]
 
 ## Connections

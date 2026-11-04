@@ -6851,6 +6851,267 @@ Let $p < q$ be primes with $q \not\equiv 1 \pmod p$, and let $|G| = pq$. Then $G
 
 Worksheet 10: ``Realistically, we'll wind up covering this in lecture.''
 
+\subsection{\texorpdfstring{Flags and the Sylow Subgroups of $GL_n(\mathbb{F}_p)$}{Flags and the Sylow Subgroups of GLn(Fp)}}\label{sub:flags-sylow-gln}
+
+\textit{Source: office hours (Wed Nov 4), from the board. The board gives the orders and the orbit counts for $n = 2, 3$; the identification with flags, the Bruhat remark and the link to the Sylow count are not from class.}
+
+Throughout, $G = GL_n(\mathbb{F}_p)$, $B \leq G$ is the subgroup of invertible upper triangular matrices, and $P \leq B$ is the unitriangular group of WS 10.2 (Proposition~\ref{prop:unitriangular-sylow}), a Sylow $p$-subgroup of $G$. The board writes $U$ for $P$.
+
+\begin{defbox}[{Complete Flag}]\label{def:complete-flag}
+Let $k$ be a field. A \textbf{complete flag} in $k^n$ is a chain of subspaces
+\[ 0 = V_0 \subset V_1 \subset V_2 \subset \cdots \subset V_n = k^n \qquad \text{with } \dim V_i = i. \]
+\srcline{office hours 11/4}
+\end{defbox}
+
+The \textbf{standard flag} $\mathcal{F}_0$ has $V_i = \langle e_1, \ldots, e_i \rangle$. An invertible matrix $g$ maps an $i$-dimensional subspace to an $i$-dimensional subspace and preserves inclusions, so $g \cdot (V_i)_i = (gV_i)_i$ is an action of $GL_n(k)$ on the set of complete flags. In Example~\ref{ex:jh-flags} complete flags in $\mathbb{F}_p^n$ were composition series of $(\mathbb{Z}/p\mathbb{Z})^n$.
+
+\begin{propbox}[{Complete Flags Are $G/B$}]\label{prop:flags-g-mod-b}
+The action of $GL_n(k)$ on complete flags in $k^n$ is transitive, and the stabilizer of $\mathcal{F}_0$ is the group $B$ of invertible upper triangular matrices. Hence $gB \mapsto g\mathcal{F}_0$ is a bijection from $GL_n(k)/B$ to the set of complete flags, and for $k = \mathbb{F}_p$,
+\[ |G| = \prod_{j=0}^{n-1} (p^n - p^j), \qquad |B| = (p-1)^n p^{\binom{n}{2}}, \qquad \#\{\text{complete flags}\} = |G/B| = \frac{|G|}{|B|}. \]
+\srcline{office hours 11/4 (the orders); the flag picture not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} A flag is the same as a basis up to upper triangular change; the columns of $g$ are such a basis.\par
+\textit{(Not from class.)} \emph{Transitive:} given a flag $(V_i)$, choose $v_i \in V_i \setminus V_{i-1}$ for $i = 1, \ldots, n$. By induction on $i$, $v_1, \ldots, v_i$ is a basis of $V_i$: it is independent because $v_i \notin V_{i-1} = \langle v_1, \ldots, v_{i-1} \rangle$, and $\dim V_i = i$. The matrix $g$ with columns $v_1, \ldots, v_n$ is invertible and $g\langle e_1, \ldots, e_i \rangle = \langle v_1, \ldots, v_i \rangle = V_i$, so $g\mathcal{F}_0 = (V_i)$.
+
+\emph{Stabilizer:} $g\langle e_1, \ldots, e_i \rangle = \langle e_1, \ldots, e_i \rangle$ for all $i$ holds iff $ge_i \in \langle e_1, \ldots, e_i \rangle$ for all $i$ (for ``if'': then $g\langle e_1, \ldots, e_i \rangle \subseteq \langle e_1, \ldots, e_i \rangle$, with equality since $g$ is injective), that is, iff column $i$ of $g$ has zeros below row $i$ for every $i$: iff $g$ is upper triangular.
+
+The bijection is Orbit--Stabilizer (Theorem~\ref{thm:orbit-stabilizer}) for the single orbit. The formula for $|G|$ is The Order of $GL_n(\mathbb{F}_p)$ (Proposition~\ref{prop:order-gln-fp}). An invertible upper triangular matrix has nonzero diagonal entries (its determinant is their product), so there are $p - 1$ choices for each of the $n$ diagonal entries and $p$ for each of the $\binom{n}{2}$ entries above the diagonal.
+\end{proof}
+
+\begin{exbox}[{The Unitriangular Group Acting on Flags}]\label{ex:unitriangular-orbits-flags}
+Let $P$ act on $G/B$, that is, on complete flags in $\mathbb{F}_p^n$. The board computes, for $n = 2$ and $n = 3$:
+\begin{center}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{l|l|l}
+ & $n = 2$ & $n = 3$ \\ \hline
+$|G|$ & $(p^2-1)(p^2-p)$ & $(p^3-1)(p^3-p)(p^3-p^2)$ \\
+$|B|$ & $(p-1)^2p$ & $(p-1)^3p^3$ \\
+$|G/B|$ & $\dfrac{p^2-1}{p-1} = p + 1$ & $\dfrac{(p^3-1)(p^2-1)}{(p-1)(p-1)} = (p^2+p+1)(p+1) = p^3 + 2p^2 + 2p + 1$ \\
+$P$-orbits & $p + 1$ & $p^3 + p^2 + p^2 + p + p + 1$ \\
+labels & $(1\,2)$, \ $e$ & $(1\,3)$; \ $(1\,2\,3)$, $(1\,3\,2)$; \ $(1\,2)$, $(2\,3)$; \ $e$
+\end{tabular}
+\end{center}
+\begin{enumerate}
+    \item $n = 2$: a complete flag is just a line $V_1$ in $\mathbb{F}_p^2$, and there are $p + 1$ of them. $P = \left\{\left(\begin{smallmatrix} 1 & a \\ 0 & 1 \end{smallmatrix}\right) : a \in \mathbb{F}_p\right\}$ fixes $\langle e_1 \rangle$, an orbit of size $1$ (labeled $e$), and sends $\langle (b, 1) \rangle$ to $\langle (b + a, 1) \rangle$, so the other $p$ lines form one orbit of size $p$ (labeled $(1\,2)$).
+    \item $n = 3$: the $P$-orbits have sizes $p^3$, $p^2$, $p^2$, $p$, $p$, $1$, one for each permutation in $S_3$, the exponent being the number of inversions of the permutation (pairs $i < j$ with $w(i) > w(j)$): $(1\,3)$, which reverses $1, 2, 3$, has $3$; the $3$-cycles have $2$; the transpositions $(1\,2)$, $(2\,3)$ of neighbours have $1$; and $e$ has $0$. The orbit labeled $w$ is the one containing the flag $w\mathcal{F}_0$, with $w$ acting as the permutation matrix $e_i \mapsto e_{w(i)}$.
+\end{enumerate}
+\textit{(Not from class.)} Checked by computer for $p = 2$ and $p = 3$: $3$ and $4$ flags for $n = 2$, and $21$ and $52$ for $n = 3$, with orbits of exactly these sizes, each containing exactly one flag $w\mathcal{F}_0$.
+\srcline{office hours 11/4}
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=1.0]
+\draw[orange!85!black, thick] (1.40,-1.4) -- (-1.40,1.4);
+\node[orange!85!black, font=\scriptsize] at (-1.62,1.62) {$\langle (-1, 1) \rangle$};
+\draw[red!70!black, thick] (-0.00,-1.4) -- (0.00,1.4);
+\node[red!70!black, font=\scriptsize] at (0.12,1.62) {$\langle (0, 1) \rangle$};
+\draw[blue!70!black, thick] (-1.40,-1.4) -- (1.40,1.4);
+\node[blue!70!black, font=\scriptsize] at (1.62,1.62) {$\langle (1, 1) \rangle$};
+\draw[black, very thick] (-1.5,0) -- (1.5,0) node[right, font=\scriptsize] {$\langle e_1 \rangle$: fixed by $P$};
+\fill[black!70] (-1,-1) circle (1.6pt);
+\fill[black!70] (-1,0) circle (1.6pt);
+\fill[black!70] (-1,1) circle (1.6pt);
+\fill[black!70] (0,-1) circle (1.6pt);
+\fill[black!70] (0,0) circle (1.6pt);
+\fill[black!70] (0,1) circle (1.6pt);
+\fill[black!70] (1,-1) circle (1.6pt);
+\fill[black!70] (1,0) circle (1.6pt);
+\fill[black!70] (1,1) circle (1.6pt);
+\node[font=\scriptsize, align=left, anchor=west] at (2.6,0.95) {$\left(\begin{smallmatrix} 1 & a \\ 0 & 1 \end{smallmatrix}\right)\langle (b, 1) \rangle = \langle (b + a, 1) \rangle$:\\the three other lines form one orbit\\of size $p = 3$};
+\node[font=\scriptsize, align=left, anchor=west] at (2.6,-0.9) {$\mathbb{F}_3^2$: $9$ points, $p + 1 = 4$ lines through $0$\\(each line drawn through its $3$ points;\\coordinates taken in $\{-1, 0, 1\}$)};
+\end{tikzpicture}
+\end{center}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\begin{scope}[shift={(0.0,-0.0)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (0.000,1.000) -- (-0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (0.000,1.000) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = e$, \ orbit size $1$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 = \langle e_1 \rangle$,\\ $V_2 = \langle e_1, e_2 \rangle$};
+\end{scope}
+\begin{scope}[shift={(4.0,-0.0)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (0.000,1.000) -- (0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (0.000,1.000) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = (2\,3)$, \ orbit size $p$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 = \langle e_1 \rangle$,\\ $V_2 \neq \langle e_1, e_2 \rangle$};
+\end{scope}
+\begin{scope}[shift={(8.0,-0.0)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (0.000,1.000) -- (-0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (-0.866,-0.500) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = (1\,2)$, \ orbit size $p$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 \subset \langle e_1, e_2 \rangle$, $V_1 \neq \langle e_1 \rangle$,\\ $V_2 = \langle e_1, e_2 \rangle$};
+\end{scope}
+\begin{scope}[shift={(0.0,-4.1)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (-0.866,-0.500) -- (0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (-0.866,-0.500) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = (1\,2\,3)$, \ orbit size $p^2$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 \subset \langle e_1, e_2 \rangle$, $V_1 \neq \langle e_1 \rangle$,\\ $V_2 \neq \langle e_1, e_2 \rangle$};
+\end{scope}
+\begin{scope}[shift={(4.0,-4.1)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (0.000,1.000) -- (0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (0.866,-0.500) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = (1\,3\,2)$, \ orbit size $p^2$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 \not\subset \langle e_1, e_2 \rangle$,\\ $e_1 \in V_2$};
+\end{scope}
+\begin{scope}[shift={(8.0,-4.1)}]
+\draw[black!25] (0.000,1.000) -- (-0.866,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.866,-0.500);
+\draw[black!25] (0.000,1.000) -- (0.000,-0.500);
+\draw[black!25] (-0.866,-0.500) -- (0.433,0.250);
+\draw[black!25] (0.866,-0.500) -- (-0.433,0.250);
+\draw[black!25] (0,0) circle (0.5);
+\draw[black!45, line width=2.2pt, opacity=0.35] (0.000,1.000) -- (-0.866,-0.500);
+\draw[blue!70!black, very thick] (-0.866,-0.500) -- (0.866,-0.500);
+\fill[black!40] (0.000,1.000) circle (1.3pt);
+\fill[black!40] (-0.866,-0.500) circle (1.3pt);
+\fill[black!40] (0.866,-0.500) circle (1.3pt);
+\fill[black!40] (-0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,-0.500) circle (1.3pt);
+\fill[black!40] (0.433,0.250) circle (1.3pt);
+\fill[black!40] (0.000,0.000) circle (1.3pt);
+\draw[black!60, thick] (0.000,1.000) circle (3.2pt);
+\fill[red!70!black] (0.866,-0.500) circle (2.4pt);
+\node[font=\tiny, above, xshift=0pt] at (0.000,1.000) {$e_1$};
+\node[font=\tiny, left, xshift=-2pt] at (-0.866,-0.500) {$e_2$};
+\node[font=\tiny, right, xshift=2pt] at (0.866,-0.500) {$e_3$};
+\node[font=\small] at (0,1.55) {$w = (1\,3)$, \ orbit size $p^3$};
+\node[font=\scriptsize, align=center] at (0,-1.3) {$V_1 \not\subset \langle e_1, e_2 \rangle$,\\ $e_1 \notin V_2$};
+\end{scope}
+\node[font=\scriptsize, align=left, anchor=west] at (-1.6,-6.6) {Fano plane $=$ the $7$ lines (dots) and $7$ planes (segments and circle) of $\mathbb{F}_2^3$; a complete flag is a dot \textcolor{red!70!black}{$V_1$} on a segment \textcolor{blue!70!black}{$V_2$}.\\Each panel shows the flag $w\mathcal{F}_0$ (\textcolor{red!70!black}{red} dot on \textcolor{blue!70!black}{blue} side); grey circle and thick grey side: the standard flag $\langle e_1 \rangle \subset \langle e_1, e_2 \rangle$.\\The condition under each panel describes the whole $P$-orbit, for every $p$; for $p = 2$ the sizes are $1, 2, 2, 4, 4, 8$, in all $21$ flags.};
+\end{tikzpicture}
+\end{center}
+
+\begin{rembox}[{The Bruhat Decomposition}]\label{rem:bruhat-decomposition}
+The pattern is general. Viewing each $w \in S_n$ as a permutation matrix, $G = \bigsqcup_{w \in S_n} BwB$ (the \textbf{Bruhat decomposition}), and each $BwB/B \subseteq G/B$ is a single $P$-orbit of size $p^{\ell(w)}$, where $\ell(w)$ is the number of inversions of $w$. Hence
+\[ |G/B| = \sum_{w \in S_n} p^{\ell(w)} = (1 + p)(1 + p + p^2) \cdots (1 + p + \cdots + p^{n-1}), \]
+the ``$p$-factorial'', which at $p = 1$ gives $|S_n| = n!$. For $n = 3$: $(1 + p)(1 + p + p^2) = p^3 + 2p^2 + 2p + 1$, as on the board. The label $w$ of a flag is its relative position with respect to $\mathcal{F}_0$: up to replacing $w$ by $w^{-1}$ (a matter of conventions), it is the permutation that the Jordan--H\"older pipes read off from the two flags in Example~\ref{ex:jh-flags}. (Not proved here.)
+\srcline{not from class}
+\end{rembox}
+
+\begin{propbox}[{Sylow $p$-Subgroups of $GL_n(\mathbb{F}_p)$ and Flags}]\label{prop:sylow-gln-flags}
+Let $G = GL_n(\mathbb{F}_p)$, with $B$ and $P$ as above.
+\begin{enumerate}
+    \item The standard flag $\mathcal{F}_0$ is the only complete flag fixed by $P$.
+    \item $N_G(P) = B$, where $N_G(P) = \{ g \in G : gPg^{-1} = P \}$ is the normalizer of $P$.
+    \item $|G/B| \equiv 1 \pmod p$, and the number of Sylow $p$-subgroups of $G$ is $n_p = [G : B] = |G/B|$, the number of complete flags. For example $n_p\big(GL_2(\mathbb{F}_p)\big) = p + 1$ and $n_p\big(GL_3(\mathbb{F}_p)\big) = (p^2 + p + 1)(p + 1)$.
+\end{enumerate}
+\srcline{not from class; suggested by the office-hours board}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} A fixed flag is pinned down one step at a time by the elementary matrices in $P$; then count $P$-orbits mod $p$ and identify the Sylow subgroups with the conjugates of $P$.\par
+\textit{(Not from class.)} \textbf{(1)} $P$ fixes $\mathcal{F}_0$ because $P \subseteq B$ (Proposition~\ref{prop:flags-g-mod-b}). For uniqueness we use induction on $n$, the case $n = 1$ being clear (there is one flag). Let $(V_i)$ be fixed by $P$, and $V_1 = \langle v \rangle$ with $v = (v_1, \ldots, v_n) \neq 0$. Suppose some coordinate $v_j$ with $j \geq 2$ is nonzero, and take the largest such $j$. The matrix $u = I + E_{j-1,j} \in P$, with a single $1$ above the diagonal in position $(j-1, j)$, gives $uv = v + v_j e_{j-1}$, which must equal $\lambda v$ for some $\lambda \in \mathbb{F}_p$, since $uV_1 = V_1$. Comparing $j$-th coordinates, $v_j = \lambda v_j$, so $\lambda = 1$ and then $v_j e_{j-1} = 0$, a contradiction. Hence $v \in \langle e_1 \rangle$ and $V_1 = \langle e_1 \rangle$.
+
+Now every $u \in P$ maps $\langle e_1 \rangle$ to itself, so it acts on the quotient space $\mathbb{F}_p^n / \langle e_1 \rangle$, which has basis $\bar e_2, \ldots, \bar e_n$ (the images of $e_2, \ldots, e_n$); in this basis $u$ acts by the lower right $(n-1) \times (n-1)$ block of $u$, and these blocks run over all unitriangular matrices of size $n - 1$. The images $V_2/\langle e_1 \rangle \subset \cdots \subset V_n/\langle e_1 \rangle$ form a complete flag in the quotient, fixed by all these blocks. By induction it is the standard one, $V_i/\langle e_1 \rangle = \langle \bar e_2, \ldots, \bar e_i \rangle$, so $V_i = \langle e_1, \ldots, e_i \rangle$ for all $i$.
+
+\textbf{(2)} $B \subseteq N_G(P)$: taking the diagonal is a homomorphism $B \to (\mathbb{F}_p^\times)^n$ (the diagonal of a product of upper triangular matrices is the product of the diagonals), with kernel $P$; kernels are normal (Proposition~\ref{prop:kernels-normal}), so $bPb^{-1} = P$ for $b \in B$. Conversely, let $gPg^{-1} = P$. For $u \in P$ we have $g^{-1}ug \in P$, which fixes $\mathcal{F}_0$, so
+\[ u(g\mathcal{F}_0) = g\,(g^{-1}ug)\,\mathcal{F}_0 = g\mathcal{F}_0 : \]
+the flag $g\mathcal{F}_0$ is fixed by $P$. By (1), $g\mathcal{F}_0 = \mathcal{F}_0$, so $g \in B$ by Proposition~\ref{prop:flags-g-mod-b}.
+
+\textbf{(3)} $P$ is a $p$-group, so by Orbit--Stabilizer and Lagrange each $P$-orbit in $G/B$ has size dividing $|P|$, a power of $p$; the orbits of size $p, p^2, \ldots$ contribute $0 \bmod p$, and the orbits of size $1$ are the fixed flags. By (1) there is exactly one, so $|G/B| \equiv 1 \pmod p$. For the count: $G$ acts on the set of its Sylow $p$-subgroups by conjugation with a single orbit (Second Sylow Theorem, Theorem~\ref{thm:sylow-second}), and the stabilizer of $P$ is $N_G(P)$. By Orbit--Stabilizer (Theorem~\ref{thm:orbit-stabilizer}) and (2), $n_p = [G : N_G(P)] = [G : B]$. The congruence $|G/B| \equiv 1$ is thus the Third Sylow Theorem (Theorem~\ref{thm:sylow-third}) for this group, proved by the fixed-point idea of WS 10.1 (Proposition~\ref{prop:p-group-fixed-point}). The formula $n_p = [G : N(P)]$ in general is Proposition~\ref{prop:np-normalizer-index}.
+\end{proof}
+
 
 % ============================================================================
 % SECTION: SIMPLE GROUPS OF SMALL ORDER (Fri Oct 23)
@@ -8409,6 +8670,7 @@ Thu Oct 29 \newline Problem Set 7 (submitted) & Proper subgroups of $A_n$ have i
 Fri Oct 30 \newline lecture; quiz & Jordan--H\"older finished: the nine squares, four impossible (WS 12.4), the crossing square (WS 12.5), changeovers and pipes, proof of the theorem (WS 12.6); flags in $(\mathbb{Z}/p\mathbb{Z})^n$ & \ref{sec:jh-grid} (WS 12.4--12.5), \ref{sec:jordan-holder} (WS 12.6) \\
 Mon Nov 2 \newline lecture; Worksheet 13 & Part~II begins: representations; action and linearity axioms; permutation representations; subrepresentations of $k\{1,2,3\}$; matrices in different bases (trace, determinant); the direct sum holds iff $3 \neq 0$ & \ref{sec:representations} (13.1--13.5; 13.6 to be proved) \\
 Wed Nov 4 \newline lecture; Worksheet 14 & $S_3$ on $\mathbb{R}^3$ in three bases; block diagonal and block triangular matrices; Maschke's theorem (statement); $W = U \oplus U^\perp$; orthogonal complements of subrepresentations & \ref{sec:maschke} (14.1--14.6; 14.7--14.8 to be presented Fri Nov 6) \\
+Wed Nov 4 \newline office hours & $GL_n(\mathbb{F}_p)$ acting on complete flags $G/B$; orbits of the unitriangular group of sizes $p^{\ell(w)}$ for $n = 2, 3$ & \ref{sub:flags-sylow-gln} \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 

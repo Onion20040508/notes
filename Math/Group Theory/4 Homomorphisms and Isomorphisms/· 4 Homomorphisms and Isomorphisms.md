@@ -30,7 +30,7 @@ This chapter studies maps that respect the group operation. After multiplication
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§15 Homomorphisms#^prop-15-1|Proposition §15.1: Homomorphisms Preserve Identity and Inverses]]: 107 later results
-- [[§15 Homomorphisms#^prop-15-2|Proposition §15.2: Image and Kernel Are Subgroups]]: 67 later results
-- [[§16 Isomorphisms#^prop-16-1|Proposition §16.1: The Inverse of an Isomorphism Is an Isomorphism]]: 67 later results
-- [[§16 Isomorphisms#^prop-16-2|Proposition §16.2: Composition; ≅ Is an Equivalence Relation]]: 63 later results
+- [[§15 Homomorphisms#^prop-15-1|Proposition §15.1: Homomorphisms Preserve Identity and Inverses]]: 108 later results
+- [[§15 Homomorphisms#^prop-15-2|Proposition §15.2: Image and Kernel Are Subgroups]]: 68 later results
+- [[§16 Isomorphisms#^prop-16-1|Proposition §16.1: The Inverse of an Isomorphism Is an Isomorphism]]: 68 later results
+- [[§16 Isomorphisms#^prop-16-2|Proposition §16.2: Composition; ≅ Is an Equivalence Relation]]: 64 later results

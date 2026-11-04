@@ -320,3 +320,119 @@ tags: [group-theory, math493]
 ^rem-55-3
 
 Worksheet 10: “Realistically, we'll wind up covering this in lecture.”
+
+## Flags and the Sylow Subgroups of $GL_n(\mathbb{F}_p)$
+
+*Source: office hours (Wed Nov 4), from the board. The board gives the orders and the orbit counts for $n = 2, 3$; the identification with flags, the Bruhat remark and the link to the Sylow count are not from class.*
+
+Throughout, $G = GL_n(\mathbb{F}_p)$, $B \leq G$ is the subgroup of invertible upper triangular matrices, and $P \leq B$ is the unitriangular group of WS 10.2 (Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-5|§54.5]]), a Sylow $p$-subgroup of $G$. The board writes $U$ for $P$.
+
+> [!definition] Definition §55.1: Complete Flag
+> Let $k$ be a field. A **complete flag** in $k^n$ is a chain of subspaces
+>
+> $$
+> 0 = V_0 \subset V_1 \subset V_2 \subset \cdots \subset V_n = k^n \qquad \text{with } \dim V_i = i.
+> $$
+>
+> *Source: office hours 11/4*
+
+^def-55-1
+
+The **standard flag** $\mathcal{F}_0$ has $V_i = \langle e_1, \ldots, e_i \rangle$. An invertible matrix $g$ maps an $i$-dimensional subspace to an $i$-dimensional subspace and preserves inclusions, so $g \cdot (V_i)_i = (gV_i)_i$ is an action of $GL_n(k)$ on the set of complete flags. In Example [[§52 The Jordan–Hölder Theorem#^ex-52-2|§52.2]] complete flags in $\mathbb{F}_p^n$ were composition series of $(\mathbb{Z}/p\mathbb{Z})^n$.
+
+> [!theorem] Proposition §55.12: Complete Flags Are $G/B$
+> The action of $GL_n(k)$ on complete flags in $k^n$ is transitive, and the stabilizer of $\mathcal{F}_0$ is the group $B$ of invertible upper triangular matrices. Hence $gB \mapsto g\mathcal{F}_0$ is a bijection from $GL_n(k)/B$ to the set of complete flags, and for $k = \mathbb{F}_p$,
+>
+> $$
+> |G| = \prod_{j=0}^{n-1} (p^n - p^j), \qquad |B| = (p-1)^n p^{\binom{n}{2}}, \qquad \#\{\text{complete flags}\} = |G/B| = \frac{|G|}{|B|}.
+> $$
+>
+> *Source: office hours 11/4 (the orders); the flag picture not from class*
+
+^prop-55-12
+
+> [!proof]+ Proof
+> *Idea:* A flag is the same as a basis up to upper triangular change; the columns of $g$ are such a basis.
+>
+> *(Not from class.)* *Transitive:* given a flag $(V_i)$, choose $v_i \in V_i \setminus V_{i-1}$ for $i = 1, \ldots, n$. By induction on $i$, $v_1, \ldots, v_i$ is a basis of $V_i$: it is independent because $v_i \notin V_{i-1} = \langle v_1, \ldots, v_{i-1} \rangle$, and $\dim V_i = i$. The matrix $g$ with columns $v_1, \ldots, v_n$ is invertible and $g\langle e_1, \ldots, e_i \rangle = \langle v_1, \ldots, v_i \rangle = V_i$, so $g\mathcal{F}_0 = (V_i)$.
+>
+> *Stabilizer:* $g\langle e_1, \ldots, e_i \rangle = \langle e_1, \ldots, e_i \rangle$ for all $i$ holds iff $ge_i \in \langle e_1, \ldots, e_i \rangle$ for all $i$ (for “if”: then $g\langle e_1, \ldots, e_i \rangle \subseteq \langle e_1, \ldots, e_i \rangle$, with equality since $g$ is injective), that is, iff column $i$ of $g$ has zeros below row $i$ for every $i$: iff $g$ is upper triangular.
+>
+> The bijection is Orbit–Stabilizer (Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]]) for the single orbit. The formula for $|G|$ is The Order of $GL_n(\mathbb{F}_p)$ (Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-4|§54.4]]). An invertible upper triangular matrix has nonzero diagonal entries (its determinant is their product), so there are $p - 1$ choices for each of the $n$ diagonal entries and $p$ for each of the $\binom{n}{2}$ entries above the diagonal.
+
+^pf-55-12
+
+*Uses:* [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§54 p-Groups and Sylow Subgroups#^prop-54-4|§54.4]]
+
+> [!example] Example §55.3: The Unitriangular Group Acting on Flags
+> Let $P$ act on $G/B$, that is, on complete flags in $\mathbb{F}_p^n$. The board computes, for $n = 2$ and $n = 3$:
+>
+> | | $n = 2$ | $n = 3$ |
+> |---|---|---|
+> | $\lvert G \rvert$ | $(p^2-1)(p^2-p)$ | $(p^3-1)(p^3-p)(p^3-p^2)$ |
+> | $\lvert B \rvert$ | $(p-1)^2p$ | $(p-1)^3p^3$ |
+> | $\lvert G/B \rvert$ | $\frac{p^2-1}{p-1} = p + 1$ | $\frac{(p^3-1)(p^2-1)}{(p-1)(p-1)} = (p^2+p+1)(p+1) = p^3 + 2p^2 + 2p + 1$ |
+> | $P$-orbits | $p + 1$ | $p^3 + p^2 + p^2 + p + p + 1$ |
+> | labels | $(1\,2)$, $e$ | $(1\,3)$; $(1\,2\,3)$, $(1\,3\,2)$; $(1\,2)$, $(2\,3)$; $e$ |
+>
+> 1. $n = 2$: a complete flag is just a line $V_1$ in $\mathbb{F}_p^2$, and there are $p + 1$ of them. $P = \left\{\left(\begin{smallmatrix} 1 & a \\ 0 & 1 \end{smallmatrix}\right) : a \in \mathbb{F}_p\right\}$ fixes $\langle e_1 \rangle$, an orbit of size $1$ (labeled $e$), and sends $\langle (b, 1) \rangle$ to $\langle (b + a, 1) \rangle$, so the other $p$ lines form one orbit of size $p$ (labeled $(1\,2)$).
+> 2. $n = 3$: the $P$-orbits have sizes $p^3$, $p^2$, $p^2$, $p$, $p$, $1$, one for each permutation in $S_3$, the exponent being the number of inversions of the permutation (pairs $i < j$ with $w(i) > w(j)$): $(1\,3)$, which reverses $1, 2, 3$, has $3$; the $3$-cycles have $2$; the transpositions $(1\,2)$, $(2\,3)$ of neighbours have $1$; and $e$ has $0$. The orbit labeled $w$ is the one containing the flag $w\mathcal{F}_0$, with $w$ acting as the permutation matrix $e_i \mapsto e_{w(i)}$.
+>
+> *(Not from class.)* Checked by computer for $p = 2$ and $p = 3$: $3$ and $4$ flags for $n = 2$, and $21$ and $52$ for $n = 3$, with orbits of exactly these sizes, each containing exactly one flag $w\mathcal{F}_0$.
+>
+> *Source: office hours 11/4*
+
+^ex-55-3
+
+![[m493-55-3.svg]]
+
+*(Not from lecture; figure added.)* Example §55.3(1) for $p = 3$: the $p + 1 = 4$ lines through $0$ in $\mathbb{F}_3^2$. The shears in $P$ fix the line $\langle e_1 \rangle$ and move the other three lines around among themselves, one orbit of size $p$.
+
+![[m493-55-4.svg]]
+
+*(Not from lecture; figure added.)* Example §55.3(2) for $p = 2$. The lines and planes of $\mathbb{F}_2^3$ are the points and lines of the Fano plane, so a complete flag is a point on a line, and there are $7 \cdot 3 = 21$. Each panel shows one flag $w\mathcal{F}_0$ and, below it, a description of its whole $P$-orbit relative to the standard flag $\langle e_1 \rangle \subset \langle e_1, e_2 \rangle$ ($P$ fixes both). Counting the flags that satisfy each description gives $1, p, p, p^2, p^2, p^3$, for every $p$.
+
+> [!remark] Remark: The Bruhat Decomposition
+> The pattern is general. Viewing each $w \in S_n$ as a permutation matrix, $G = \bigsqcup_{w \in S_n} BwB$ (the **Bruhat decomposition**), and each $BwB/B \subseteq G/B$ is a single $P$-orbit of size $p^{\ell(w)}$, where $\ell(w)$ is the number of inversions of $w$. Hence
+>
+> $$
+> |G/B| = \sum_{w \in S_n} p^{\ell(w)} = (1 + p)(1 + p + p^2) \cdots (1 + p + \cdots + p^{n-1}),
+> $$
+>
+> the “$p$-factorial”, which at $p = 1$ gives $|S_n| = n!$. For $n = 3$: $(1 + p)(1 + p + p^2) = p^3 + 2p^2 + 2p + 1$, as on the board. The label $w$ of a flag is its relative position with respect to $\mathcal{F}_0$: up to replacing $w$ by $w^{-1}$ (a matter of conventions), it is the permutation that the Jordan–Hölder pipes read off from the two flags in Example [[§52 The Jordan–Hölder Theorem#^ex-52-2|§52.2]]. (Not proved here.)
+>
+> *Source: not from class*
+
+^rem-55-4
+
+> [!theorem] Proposition §55.13: Sylow $p$-Subgroups of $GL_n(\mathbb{F}_p)$ and Flags
+> Let $G = GL_n(\mathbb{F}_p)$, with $B$ and $P$ as above.
+>
+> 1. The standard flag $\mathcal{F}_0$ is the only complete flag fixed by $P$.
+> 2. $N_G(P) = B$, where $N_G(P) = \{ g \in G : gPg^{-1} = P \}$ is the normalizer of $P$.
+> 3. $|G/B| \equiv 1 \pmod p$, and the number of Sylow $p$-subgroups of $G$ is $n_p = [G : B] = |G/B|$, the number of complete flags. For example $n_p\big(GL_2(\mathbb{F}_p)\big) = p + 1$ and $n_p\big(GL_3(\mathbb{F}_p)\big) = (p^2 + p + 1)(p + 1)$.
+>
+> *Source: not from class; suggested by the office-hours board*
+
+^prop-55-13
+
+> [!proof]+ Proof
+> *Idea:* A fixed flag is pinned down one step at a time by the elementary matrices in $P$; then count $P$-orbits mod $p$ and identify the Sylow subgroups with the conjugates of $P$.
+>
+> *(Not from class.)* **(1)** $P$ fixes $\mathcal{F}_0$ because $P \subseteq B$ (Proposition [[§55 The Sylow Theorems#^prop-55-12|§55.12]]). For uniqueness we use induction on $n$, the case $n = 1$ being clear (there is one flag). Let $(V_i)$ be fixed by $P$, and $V_1 = \langle v \rangle$ with $v = (v_1, \ldots, v_n) \neq 0$. Suppose some coordinate $v_j$ with $j \geq 2$ is nonzero, and take the largest such $j$. The matrix $u = I + E_{j-1,j} \in P$, with a single $1$ above the diagonal in position $(j-1, j)$, gives $uv = v + v_j e_{j-1}$, which must equal $\lambda v$ for some $\lambda \in \mathbb{F}_p$, since $uV_1 = V_1$. Comparing $j$-th coordinates, $v_j = \lambda v_j$, so $\lambda = 1$ and then $v_j e_{j-1} = 0$, a contradiction. Hence $v \in \langle e_1 \rangle$ and $V_1 = \langle e_1 \rangle$.
+>
+> Now every $u \in P$ maps $\langle e_1 \rangle$ to itself, so it acts on the quotient space $\mathbb{F}_p^n / \langle e_1 \rangle$, which has basis $\bar e_2, \ldots, \bar e_n$ (the images of $e_2, \ldots, e_n$); in this basis $u$ acts by the lower right $(n-1) \times (n-1)$ block of $u$, and these blocks run over all unitriangular matrices of size $n - 1$. The images $V_2/\langle e_1 \rangle \subset \cdots \subset V_n/\langle e_1 \rangle$ form a complete flag in the quotient, fixed by all these blocks. By induction it is the standard one, $V_i/\langle e_1 \rangle = \langle \bar e_2, \ldots, \bar e_i \rangle$, so $V_i = \langle e_1, \ldots, e_i \rangle$ for all $i$.
+>
+> **(2)** $B \subseteq N_G(P)$: taking the diagonal is a homomorphism $B \to (\mathbb{F}_p^\times)^n$ (the diagonal of a product of upper triangular matrices is the product of the diagonals), with kernel $P$; kernels are normal (Proposition [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]), so $bPb^{-1} = P$ for $b \in B$. Conversely, let $gPg^{-1} = P$. For $u \in P$ we have $g^{-1}ug \in P$, which fixes $\mathcal{F}_0$, so
+>
+> $$
+> u(g\mathcal{F}_0) = g\,(g^{-1}ug)\,\mathcal{F}_0 = g\mathcal{F}_0 :
+> $$
+>
+> the flag $g\mathcal{F}_0$ is fixed by $P$. By (1), $g\mathcal{F}_0 = \mathcal{F}_0$, so $g \in B$ by Proposition [[§55 The Sylow Theorems#^prop-55-12|§55.12]].
+>
+> **(3)** $P$ is a $p$-group, so by Orbit–Stabilizer and Lagrange each $P$-orbit in $G/B$ has size dividing $|P|$, a power of $p$; the orbits of size $p, p^2, \ldots$ contribute $0 \bmod p$, and the orbits of size $1$ are the fixed flags. By (1) there is exactly one, so $|G/B| \equiv 1 \pmod p$. For the count: $G$ acts on the set of its Sylow $p$-subgroups by conjugation with a single orbit (Second Sylow Theorem, Theorem [[§55 The Sylow Theorems#^thm-55-6|§55.6]]), and the stabilizer of $P$ is $N_G(P)$. By Orbit–Stabilizer (Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]]) and (2), $n_p = [G : N_G(P)] = [G : B]$. The congruence $|G/B| \equiv 1$ is thus the Third Sylow Theorem (Theorem [[§55 The Sylow Theorems#^thm-55-9|§55.9]]) for this group, proved by the fixed-point idea of WS 10.1 (Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-1|§54.1]]). The formula $n_p = [G : N(P)]$ in general is Proposition [[§56 Simple Groups of Small Order#^prop-56-2|§56.2]].
+
+^pf-55-13
+
+*Uses:* [[§55 The Sylow Theorems#^prop-55-12|§55.12]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§55 The Sylow Theorems#^thm-55-6|§55.6]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§55 The Sylow Theorems#^thm-55-9|§55.9]], [[§54 p-Groups and Sylow Subgroups#^prop-54-1|§54.1]], [[§56 Simple Groups of Small Order#^prop-56-2|§56.2]]

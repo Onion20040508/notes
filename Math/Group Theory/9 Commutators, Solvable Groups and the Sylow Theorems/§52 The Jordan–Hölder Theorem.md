@@ -92,6 +92,9 @@ tags: [group-theory, math493]
 
 ^ex-52-2
 
+> [!remark]- Connections
+> - The permutation relating two complete flags is their relative position in the Bruhat decomposition: [[§55 The Sylow Theorems#^rem-55-4|the remark The Bruhat Decomposition]] (§55, office hours 11/4).
+
 ![[m493-50-4.svg]]
 
 *(Figure after the board's cube, with the grid added.)* The lecture's three-dimensional picture, $n = 3$ and $\sigma = (2\,3)$: the line $X_1 = Y_1 = \langle e_1 \rangle$ lies in two different planes, $X_2 = \langle e_1, e_2 \rangle$ and $Y_2 = \langle e_1, e_3 \rangle$. In the grid (right; $X$-series on the top row, $Y$-series on the right column) equalities appear inside the grid even though none occur along its edges: for instance $Z_{22} = X_2 \cap Y_2 = \langle e_1 \rangle = Z_{11}$. The column changeovers are at rows $\tau(1) = 1$, $\tau(2) = 3$, $\tau(3) = 2$, which is $\sigma^{-1} = (2\,3)$.
