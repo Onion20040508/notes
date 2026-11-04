@@ -5,7 +5,7 @@ chapter: 11
 section: 59
 tags: [group-theory, math493]
 ---
-← [[§58 Semidirect Products]] · ↑ [[· 11 Representations]]
+← [[§58 Semidirect Products]] · ↑ [[· 11 Representations]] · [[§60 Direct Sums and Maschke's Theorem]] →
 
 *Source: Lecture and Worksheet 13 (Mon Nov 2). Not covered in the Pinter chapters used so far.*
 

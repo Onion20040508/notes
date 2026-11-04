@@ -1,0 +1,19 @@
+% Figure from MATH 493 notes, section 60. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth]
+\draw[->, black!55, thin] (0.000,0.000) -- (-1.408,-1.075) node[below left, font=\scriptsize] {$x$};
+\draw[->, black!55, thin] (0.000,0.000) -- (2.720,0.000) node[right, font=\scriptsize] {$y$};
+\draw[->, black!55, thin] (0.000,0.000) -- (0.000,2.560) node[above, font=\scriptsize] {$z$};
+\fill[red!70!black!10] (-1.440,-1.440) -- (1.440,-1.440) -- (1.440,1.440) -- (-1.440,1.440) -- cycle;
+\draw[red!70!black, thick] (-1.440,-1.440) -- (1.440,-1.440) -- (1.440,1.440) -- (-1.440,1.440) -- cycle;
+\draw[red!70!black, thick, dashed] (0.792,-0.835) -- (-0.792,-2.045) -- (-0.792,0.835) -- (0.792,2.045) -- cycle;
+\fill[blue!70!black!14, opacity=0.6] (-1.984,-0.538) -- (-0.704,-1.818) -- (1.280,-1.280) -- (1.984,0.538) -- (0.704,1.818) -- (-1.280,1.280) -- cycle;
+\draw[blue!70!black, thick] (-1.984,-0.538) -- (-0.704,-1.818) -- (1.280,-1.280) -- (1.984,0.538) -- (0.704,1.818) -- (-1.280,1.280) -- cycle;
+\draw[->, blue!70!black, very thick] (0.000,0.000) -- (-2.480,-0.672) node[below, font=\scriptsize] {$v_1$};
+\draw[->, blue!70!black, very thick] (0.000,0.000) -- (1.600,-1.600) node[below right, font=\scriptsize] {$v_2$};
+\draw[orange!85!black, very thick] (-0.432,-0.557) -- (0.756,0.974);
+\draw[orange!85!black, thin] (0.720,0.928) -- (1.55,1.95) node[right, font=\scriptsize] {$U = \mathbb{R}(1,1,1)$};
+\fill (1.600,0.000) circle (1.3pt) node[above, font=\scriptsize] {$e_2$};
+\fill (0.000,1.600) circle (1.3pt) node[above left, font=\scriptsize] {$e_3$};
+\fill (-0.880,-0.672) circle (1.3pt) node[left, font=\scriptsize] {$e_1$};
+\node[font=\scriptsize, align=left, anchor=west] at (4.2,1.2) {$g = (1\,2\,3)$, $e_1 \mapsto e_2 \mapsto e_3 \mapsto e_1$:\\\textcolor{orange!85!black}{$U$}: every vector fixed;\\\textcolor{blue!70!black}{$V = \{x + y + z = 0\}$}: mapped to itself\\\quad (rotation by $120^\circ$) $\Rightarrow$ block diagonal;\\\textcolor{red!70!black}{$\operatorname{span}(e_2, e_3)$} (solid) is mapped to\\\quad \textcolor{red!70!black}{$\operatorname{span}(e_3, e_1)$} (dashed) $\Rightarrow$ only\\\quad block triangular};
+\end{tikzpicture}

@@ -1,0 +1,14 @@
+% Figure from MATH 493 notes, section 60. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth]
+\fill[blue!70!black!12] (-0.810,0.756) -- (-2.873,-0.819) -- (1.328,-0.819) -- (3.390,0.756) -- cycle;
+\draw[blue!70!black, thick] (-0.810,0.756) -- (-2.873,-0.819) -- (1.328,-0.819) -- (3.390,0.756) -- cycle;
+\node[blue!70!black, font=\scriptsize] at (-2.175,-0.630) {$U$};
+\draw[red!70!black, thick] (0.000,-0.750) -- (0.000,2.550) node[above, font=\scriptsize] {$U^\perp$};
+\draw[->, blue!70!black, thick] (0.000,0.000) -- (-0.825,-0.630) node[below left, font=\scriptsize] {$u_1$};
+\draw[->, blue!70!black, thick] (0.000,0.000) -- (1.500,0.000) node[above, font=\scriptsize] {$u_2$};
+\draw[->, very thick] (0.000,0.000) -- (1.155,1.422) node[above right, font=\scriptsize] {$w$};
+\draw[->, blue!70!black, very thick] (0.000,0.000) -- (1.155,-0.378) node[right, font=\scriptsize] {$P_U(w)$};
+\draw[->, red!70!black, very thick] (1.155,-0.378) -- (1.155,1.422) node[pos=0.85, right, font=\scriptsize] {$w - P_U(w) \in U^\perp$};
+\draw[thin] (1.155,-0.168) -- (0.915,-0.168) -- (0.915,-0.378);
+\node[font=\scriptsize, align=left, anchor=west] at (3.6,1.4) {$u_1, u_2$ orthonormal in $U$;\\$P_U(w) = \sum_j \langle w, u_j \rangle u_j \in U$;\\$\langle u_i, w - P_U(w) \rangle = 0$ for each $i$};
+\end{tikzpicture}
