@@ -287,7 +287,7 @@ These notes follow the course, and the course studies groups through two familie
 \end{tikzpicture}
 \end{center}
 
-The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~9 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them; composition series make the atom analogy precise, since by the Jordan--H\"older theorem the simple pieces do not depend on the choice of series (\ref{sec:composition-series}). The same chapter then begins the Sylow theorems, a partial converse to Lagrange's theorem that supplies subgroups of the largest prime-power orders, and uses them to show that the only simple groups of order at most $100$ are the $\mathbb{Z}/p\mathbb{Z}$ and those of order $60$ (\ref{sec:small-simple-groups}). Chapter~10 turns to how a normal subgroup $N$ and a complement $S$ fit together: as a direct product when $S$ is also normal (\ref{sec:internal-direct-products}), and in general as a semidirect product $N \rtimes_\varphi S$, determined by the action $\varphi$ of $S$ on $N$ by conjugation (\ref{sec:semidirect-products}). Part~II then turns from actions on sets to actions on vector spaces: a representation is a homomorphism $G \to GL(V)$ (\ref{sec:representations}), and the permutation matrices of the symmetries thread are the first example.
+The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~9 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them; composition series make the atom analogy precise, since by the Jordan--H\"older theorem the simple pieces do not depend on the choice of series (\ref{sec:composition-series}). The same chapter then begins the Sylow theorems, a partial converse to Lagrange's theorem that supplies subgroups of the largest prime-power orders, and uses them to show that the only simple groups of order at most $100$ are the $\mathbb{Z}/p\mathbb{Z}$ and those of order $60$ (\ref{sec:small-simple-groups}). Chapter~10 turns to how a normal subgroup $N$ and a complement $S$ fit together: as a direct product when $S$ is also normal (\ref{sec:internal-direct-products}), and in general as a semidirect product $N \rtimes_\varphi S$, determined by the action $\varphi$ of $S$ on $N$ by conjugation (\ref{sec:semidirect-products}). Part~II then turns from actions on sets to actions on vector spaces: a representation is a homomorphism $G \to GL(V)$ (\ref{sec:representations}), and the permutation matrices of the symmetries thread are the first example. A subrepresentation puts all the matrices $\rho(g)$ in block triangular form, a complementary one in block diagonal form, and Maschke's theorem supplies the complement for finite groups when $|G| \neq 0$ in $k$ (\ref{sec:maschke}).
 
 \chapter*{Conventions and Notation}
 \addcontentsline{toc}{chapter}{Conventions and Notation}
@@ -322,6 +322,8 @@ $PSL_n(F)$ & Projective special linear group $SL_n(F)/Z$ (\ref{sec:simple}). \\
 $n_p$, \ $N_G(H)$ & Number of Sylow $p$-subgroups; normalizer of $H$ (\ref{sec:small-simple-groups}). \\
 $\rho$, \ $\rho_V(g)$, \ $GL(V)$ & A representation $G \to GL(V)$; the linear map by which $g$ acts on $V$; invertible linear maps $V \to V$ (\ref{sec:representations}). \\
 $kX$ & Permutation representation on formal combinations of the $e_x$, $x \in X$ (\ref{sec:representations}). \\
+$U \oplus V$ & Internal direct sum of subspaces: $U \cap V = \{0\}$, $U + V = W$ (\ref{sec:maschke}). \\
+$U^\perp$, \ $P_U$ & Orthogonal complement of $U$; orthogonal projection onto $U$ (\ref{sec:maschke}). \\
 $N \rtimes_\varphi S$, \ $S \ltimes_\varphi N$ & Semidirect product, $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$ (\ref{sec:semidirect-products}). \\
 $HN$ & Product set $\{hn : h \in H,\ n \in N\}$ (\ref{sec:second-iso}). \\
 $X \sqcup Y$ & Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$ (\ref{sec:representatives}). \\
@@ -7974,7 +7976,7 @@ since $-2 = 1$ when $3 = 0$: the all-ones vector lies in $U_2$. (Directly: $(1,1
 %% <<< END ADDED
 
 \begin{rembox}[{Why This Is ``Tricky''}]\label{rem:why-tricky}
-The worksheet did not say what the field is, and the answer depends on it. The lecturer's point: subrepresentations and decompositions into them are very useful, but there are subtleties, and fields in which $3 = 0$ (or $p = 0$) are part of the course. Two further observations (not from class): over $\mathbb{F}_3$, the ``orthogonal complement'' $U_2$ of $U_1$ contains $U_1$, so complements for a dot product need not be complements in the sense of direct sums over arbitrary fields, which is why WS 14 works over $\mathbb{R}$. And $|S_3| = 6$, so Maschke's theorem (WS 14) guarantees a complement whenever $6 \neq 0$ in $k$. Over $\mathbb{F}_2$ its hypothesis fails, yet $3 = 1 \neq 0$ and the decomposition still holds: Maschke's condition is sufficient, not necessary.
+The worksheet did not say what the field is, and the answer depends on it. The lecturer's point: subrepresentations and decompositions into them are very useful, but there are subtleties, and fields in which $3 = 0$ (or $p = 0$) are part of the course. Two further observations (not from class): over $\mathbb{F}_3$, the ``orthogonal complement'' $U_2$ of $U_1$ contains $U_1$, so complements for a dot product need not be complements in the sense of direct sums over arbitrary fields, which is why WS 14 works over $\mathbb{R}$ (\ref{sec:maschke}). And $|S_3| = 6$, so Maschke's theorem (Theorem~\ref{thm:maschke}) guarantees a complement whenever $6 \neq 0$ in $k$. Over $\mathbb{F}_2$ its hypothesis fails, yet $3 = 1 \neq 0$ and the decomposition still holds: Maschke's condition is sufficient, not necessary.
 \srcline{lecture 11/2; the last two observations not from class}
 \end{rembox}
 
@@ -8003,6 +8005,284 @@ Let $\varphi: U \to V$ be a homomorphism of $G$-representations. Then
 
 \begin{proof}[Proof (to be filled)]
 WS 13.6 was not reached in class on 11/2.
+\end{proof}
+
+
+\section{Direct Sums and Maschke's Theorem}\label{sec:maschke}
+
+\textit{Source: Lecture and Worksheet 14 (Wed Nov 4); WS 14.7--14.8 are to be presented Fri Nov 6. Reference for the linear algebra: Axler, \emph{Linear Algebra Done Right}, Ch.~6 (orthonormal bases, orthogonal complements).}
+
+\begin{defbox}[{Internal Direct Sum of Subspaces}]\label{def:internal-direct-sum-subspaces}
+Let $W$ be a vector space and $U$, $V$ subspaces of $W$. $W$ is the \textbf{direct sum}, or \textbf{internal direct sum}, of $U$ and $V$, written $W = U \oplus V$, if
+\[ U \cap V = \{0\} \qquad \text{and} \qquad U + V = W. \]
+\srcline{WS 14}
+\end{defbox}
+
+This is the internal direct sum of the remark \emph{Two Meanings of ``Direct Sum''} in \ref{sec:internal-direct-products}, already used in Proposition~\ref{prop:k123-direct-sum}. Every $w \in W$ is then $u + v$ with $u \in U$, $v \in V$ in exactly one way: if $u + v = u' + v'$, then $u - u' = v' - v \in U \cap V = \{0\}$.
+
+\begin{exbox}[{$S_3$ on $\mathbb{R}^3$ in Three Bases}]\label{ex:s3-r3-three-bases}
+Let $S_3$ act on $\mathbb{R}^3$ by permuting coordinates (Definition~\ref{def:permutation-representation-g-set}), with the subrepresentations of Example~\ref{ex:subrepresentations-k123}: $U = U_1 = \mathbb{R}u$, $u = (1,1,1)$, and $V = U_2$, the sum-zero plane, now with the lecture's basis
+\[ v_1 = (1,-1,0) = f_1, \qquad v_2 = (0,1,-1) = f_2 - f_1. \]
+Here are three matrices of $g = (1\,2\,3)$, which sends $e_1 \mapsto e_2 \mapsto e_3 \mapsto e_1$.
+\begin{enumerate}
+    \item \emph{Standard basis} $e_1, e_2, e_3$: the permutation matrix $\left(\begin{smallmatrix} 0 & 0 & 1 \\ 1 & 0 & 0 \\ 0 & 1 & 0 \end{smallmatrix}\right)$. It does not reflect the subrepresentations at all.
+    \item \emph{Basis $u, v_1, v_2$, adapted to $\mathbb{R}^3 = U \oplus V$.} $gu = u$; $gv_1 = e_2 - e_3 = v_2$ and $gv_2 = e_3 - e_1 = -v_1 - v_2$, so on $V$, in the basis $v_1, v_2$, $g$ acts by $\left(\begin{smallmatrix} 0 & -1 \\ 1 & -1 \end{smallmatrix}\right)$. Together:
+    \[ \left(\begin{array}{c|cc} 1 & 0 & 0 \\ \hline 0 & 0 & -1 \\ 0 & 1 & -1 \end{array}\right) \qquad \text{(block diagonal)}. \]
+    \item \emph{Basis $u, e_2, e_3$, adapted to $U$ only.} $gu = u$, $ge_2 = e_3$, $ge_3 = e_1 = u - e_2 - e_3$, so
+    \[ \left(\begin{array}{c|cc} 1 & 0 & 1 \\ \hline 0 & 0 & -1 \\ 0 & 1 & -1 \end{array}\right) \qquad \text{(block upper triangular)}. \]
+    The zeros below the first entry say that $U$ is mapped into $U$; there are no zeros to its right, because $\operatorname{span}(e_2, e_3)$ is not a subrepresentation ($ge_3 = e_1 \notin \operatorname{span}(e_2, e_3)$).
+\end{enumerate}
+All three are matrices of the same linear map in different bases, so they have the same trace ($0$), determinant ($1$) and characteristic polynomial (the remark \emph{Checking Answers in Different Bases} in \ref{sec:representations}). The lecture's slogan: in a first linear algebra course one diagonalizes a single matrix; here one wants to \emph{block diagonalize a representation}, all the matrices $\rho(g)$ at once, and a direct sum decomposition into subrepresentations does exactly that.
+\srcline{lecture 11/4}
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\draw[->, black!55, thin] (0.000,0.000) -- (-1.408,-1.075) node[below left, font=\scriptsize] {$x$};
+\draw[->, black!55, thin] (0.000,0.000) -- (2.720,0.000) node[right, font=\scriptsize] {$y$};
+\draw[->, black!55, thin] (0.000,0.000) -- (0.000,2.560) node[above, font=\scriptsize] {$z$};
+\fill[red!70!black!10] (-1.440,-1.440) -- (1.440,-1.440) -- (1.440,1.440) -- (-1.440,1.440) -- cycle;
+\draw[red!70!black, thick] (-1.440,-1.440) -- (1.440,-1.440) -- (1.440,1.440) -- (-1.440,1.440) -- cycle;
+\draw[red!70!black, thick, dashed] (0.792,-0.835) -- (-0.792,-2.045) -- (-0.792,0.835) -- (0.792,2.045) -- cycle;
+\fill[blue!70!black!14, opacity=0.6] (-1.984,-0.538) -- (-0.704,-1.818) -- (1.280,-1.280) -- (1.984,0.538) -- (0.704,1.818) -- (-1.280,1.280) -- cycle;
+\draw[blue!70!black, thick] (-1.984,-0.538) -- (-0.704,-1.818) -- (1.280,-1.280) -- (1.984,0.538) -- (0.704,1.818) -- (-1.280,1.280) -- cycle;
+\draw[->, blue!70!black, very thick] (0.000,0.000) -- (-2.480,-0.672) node[below, font=\scriptsize] {$v_1$};
+\draw[->, blue!70!black, very thick] (0.000,0.000) -- (1.600,-1.600) node[below right, font=\scriptsize] {$v_2$};
+\draw[orange!85!black, very thick] (-0.432,-0.557) -- (0.756,0.974);
+\draw[orange!85!black, thin] (0.720,0.928) -- (1.55,1.95) node[right, font=\scriptsize] {$U = \mathbb{R}(1,1,1)$};
+\fill (1.600,0.000) circle (1.3pt) node[above, font=\scriptsize] {$e_2$};
+\fill (0.000,1.600) circle (1.3pt) node[above left, font=\scriptsize] {$e_3$};
+\fill (-0.880,-0.672) circle (1.3pt) node[left, font=\scriptsize] {$e_1$};
+\node[font=\scriptsize, align=left, anchor=west] at (4.2,1.2) {$g = (1\,2\,3)$, $e_1 \mapsto e_2 \mapsto e_3 \mapsto e_1$:\\\textcolor{orange!85!black}{$U$}: every vector fixed;\\\textcolor{blue!70!black}{$V = \{x + y + z = 0\}$}: mapped to itself\\\quad (rotation by $120^\circ$) $\Rightarrow$ block diagonal;\\\textcolor{red!70!black}{$\operatorname{span}(e_2, e_3)$} (solid) is mapped to\\\quad \textcolor{red!70!black}{$\operatorname{span}(e_3, e_1)$} (dashed) $\Rightarrow$ only\\\quad block triangular};
+\end{tikzpicture}
+\end{center}
+
+
+\begin{propbox}[{Bases of a Direct Sum}]\label{prop:bases-direct-sum}
+Let $W = U \oplus V$ (Definition~\ref{def:internal-direct-sum-subspaces}). If $u_1, \ldots, u_m$ is a basis of $U$ and $v_1, \ldots, v_n$ a basis of $V$, then $u_1, \ldots, u_m, v_1, \ldots, v_n$ is a basis of $W$.
+\srcline{WS 14.1}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $U + V = W$ gives spanning; $U \cap V = \{0\}$ splits a dependence relation into one in $U$ and one in $V$.\par
+\textit{(Worksheet session 11/4.)} \emph{Spanning:} every $w \in W$ is $u + v$ with $u \in U$, $v \in V$, and $u$, $v$ are combinations of the $u_i$, $v_j$. \emph{Independence:} if $\sum a_i u_i + \sum b_j v_j = 0$, then $\sum a_i u_i = -\sum b_j v_j \in U \cap V = \{0\}$, so $\sum a_i u_i = 0 = \sum b_j v_j$, and all $a_i, b_j$ vanish because each list is independent.
+\end{proof}
+
+\begin{propbox}[{Direct Sums Give Block Diagonal Matrices}]\label{prop:direct-sum-block-diagonal}
+Let $W$ be a finite-dimensional representation of $G$ that is the direct sum of subrepresentations $U$ and $V$, with bases as in Proposition~\ref{prop:bases-direct-sum}. Then in the basis $(u_1, \ldots, u_m, v_1, \ldots, v_n)$,
+\[ \rho_W(g) = \begin{pmatrix} \rho_U(g) & 0 \\ 0 & \rho_V(g) \end{pmatrix} \qquad \text{for all } g \in G, \]
+where $\rho_U(g)$ and $\rho_V(g)$ are the matrices in the bases $(u_i)$ and $(v_j)$.
+\srcline{WS 14.2; lecture 11/4}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} Column $k$ of a matrix records the image of the $k$-th basis vector, and subrepresentations are mapped into themselves.\par
+\textit{(Lecture 11/4.)} Column $i \leq m$ records $gu_i$, which lies in $U$ because $U$ is a subrepresentation (Definition~\ref{def:subrepresentation}); so it is a combination of the $u$'s alone, with the coefficients of column $i$ of $\rho_U(g)$, and zeros in the $v$-rows. Likewise $gv_j \in V$ gives column $j$ of $\rho_V(g)$ with zeros in the $u$-rows.
+\end{proof}
+
+\begin{propbox}[{A Subrepresentation Gives Block Triangular Matrices}]\label{prop:subrepresentation-block-triangular}
+Let $W$ be a finite-dimensional representation of $G$ and $U$ a subrepresentation, with basis $u_1, \ldots, u_m$, extended by arbitrary vectors $v_1, \ldots, v_n$ to a basis of $W$. Then in the basis $(u_1, \ldots, u_m, v_1, \ldots, v_n)$,
+\[ \rho_W(g) = \begin{pmatrix} \rho_U(g) & \ast \\ 0 & \ast \end{pmatrix} \qquad \text{for all } g \in G: \]
+the upper left block is the matrix of $\rho_U(g)$ in the basis $(u_i)$, and the lower left block is zero; the upper right block need not be zero.
+\srcline{WS 14.3; lecture 11/4}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} Only the $U$-columns are controlled.\par
+\textit{(Lecture 11/4.)} As in Proposition~\ref{prop:direct-sum-block-diagonal}, $gu_i \in U$ gives the first $m$ columns: $\rho_U(g)$ on top, zeros below. Nothing is known about $gv_j$, which may have components along both the $u$'s and the $v$'s; in Example~\ref{ex:s3-r3-three-bases}(3), $ge_3 = u - e_2 - e_3$ has a $u$-component.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\fill[orange!85!black!18] (0,0) rectangle (1.3,-1.3);
+\fill[blue!70!black!14] (1.3,-1.3) rectangle (3.0,-3.0);
+\draw[thick] (0,0) rectangle (3.0,-3.0);
+\draw (1.3,0) -- (1.3,-3.0); \draw (0,-1.3) -- (3.0,-1.3);
+\node at (0.65,-0.65) {$\rho_U(g)$};
+\node at (0.65,-2.15) {$0$};
+\node at (2.15,-0.65) {$0$};
+\node at (2.15,-2.15) {$\rho_V(g)$};
+\node[font=\scriptsize] at (0.65,0.25) {$u_1 \cdots u_m$};
+\node[font=\scriptsize] at (2.15,0.25) {$v_1 \cdots v_n$};
+\node[font=\small, align=center] at (1.5,1.0) {$W = U \oplus V$, $U$ and $V$\\ both subrepresentations};
+\node[font=\scriptsize, align=center] at (1.5,-3.55) {columns $gu_i \in U$ and $gv_j \in V$};
+\fill[orange!85!black!18] (5.6,0) rectangle (6.8999999999999995,-1.3);
+\fill[blue!70!black!14] (6.8999999999999995,-1.3) rectangle (8.6,-3.0);
+\fill[red!70!black!14] (6.8999999999999995,0) rectangle (8.6,-1.3);
+\draw[thick] (5.6,0) rectangle (8.6,-3.0);
+\draw (6.8999999999999995,0) -- (6.8999999999999995,-3.0); \draw (5.6,-1.3) -- (8.6,-1.3);
+\node at (6.25,-0.65) {$\rho_U(g)$};
+\node at (6.25,-2.15) {$0$};
+\node at (7.749999999999999,-0.65) {$\ast$};
+\node at (7.749999999999999,-2.15) {$\rho_{W/U}(g)$};
+\node[font=\scriptsize] at (6.25,0.25) {$u_1 \cdots u_m$};
+\node[font=\scriptsize] at (7.749999999999999,0.25) {$v_1 \cdots v_n$};
+\node[font=\small, align=center] at (7.1,1.0) {$U \subseteq W$ a subrepresentation,\\ $v_j$ arbitrary};
+\node[font=\scriptsize, align=center] at (7.1,-3.55) {columns $gu_i \in U$; $gv_j$ anywhere};
+\end{tikzpicture}
+\end{center}
+
+
+\begin{rembox}[{The Lower Right Block}]\label{rem:lower-right-block}
+The board labels the lower right block $\rho_{W/U}$. Indeed $U$ is $G$-invariant, so $g(w + U) := gw + U$ is a well-defined action of $G$ on the quotient space $W/U$ (if $w - w' \in U$ then $gw - gw' = g(w - w') \in U$), by linear maps, and the lower right block is its matrix in the basis $v_1 + U, \ldots, v_n + U$: if $gv_j = \sum_i a_{ij}u_i + \sum_l c_{lj}v_l$, then $g(v_j + U) = \sum_l c_{lj}(v_l + U)$. So a subrepresentation alone gives a block triangular form with blocks $\rho_U$ and $\rho_{W/U}$, and a complementary subrepresentation $V$ is what kills the block $\ast$; then $V \cong W/U$ as representations, via $v \mapsto v + U$ (Definition~\ref{def:isomorphism-representations}).
+\srcline{board 11/4; the quotient action not from class}
+\end{rembox}
+
+\begin{thmbox}[{Maschke's Theorem}]\label{thm:maschke}
+Let $G$ be a finite group and $k$ a field in which $|G| \neq 0$. Let $W$ be a finite-dimensional representation of $G$ over $k$ and $U \subseteq W$ a subrepresentation. Then there is a subrepresentation $V \subseteq W$ with $W = U \oplus V$.
+\srcline{WS 14; lecture 11/4}
+\end{thmbox}
+
+\begin{proof}[Proof (to be filled)]
+The general case is on the problem set; it is added here after the problem set is submitted. The case $k = \mathbb{R}$ is Corollary~\ref{cor:maschke-real} below.
+\end{proof}
+
+``$|G| \neq 0$ in $k$'' means that $1 + 1 + \cdots + 1$ ($|G|$ terms) is not $0$ in $k$, that is, the characteristic of $k$ does not divide $|G|$; it holds for every finite group when $k = \mathbb{Q}$, $\mathbb{R}$ or $\mathbb{C}$. \textit{(Not from class.)} By Proposition~\ref{prop:direct-sum-block-diagonal}, the theorem says that every subrepresentation can be split off, so that all the matrices $\rho_W(g)$ become block diagonal at once. For $S_3$ acting on $k\{1,2,3\}$ the condition means $6 \neq 0$ in $k$; compare Proposition~\ref{prop:k123-direct-sum}, where the decomposition $U_1 \oplus U_2$ fails when $3 = 0$, and the remark \emph{Why This Is ``Tricky''} in \ref{sec:representations}.
+
+\textbf{Transcription note (board 11/4).} The board states the theorem with ``let $V$ be a finite dim rep of $G$ over $k$, let $U \subseteq V$ be a subrep''; the representation is $W$, as in the conclusion ``$\exists$ subrep $V \subseteq W$ s.t.\ $W = U \oplus V$'' and on the worksheet.
+
+\begin{defbox}[{Inner Product}]\label{def:inner-product-real}
+An \textbf{inner product} on a real vector space $W$ is a positive definite symmetric bilinear form $\langle\ ,\ \rangle: W \times W \to \mathbb{R}$:
+\begin{enumerate}
+    \item bilinear: linear in each argument when the other is fixed;
+    \item symmetric: $\langle v, w \rangle = \langle w, v \rangle$;
+    \item positive definite: $\langle v, v \rangle > 0$ for $v \neq 0$.
+\end{enumerate}
+\srcline{WS 14}
+\end{defbox}
+
+\begin{defbox}[{Orthogonal Complement}]\label{def:orthogonal-complement}
+Let $W$ be a real vector space with an inner product $\langle\ ,\ \rangle$ and $U \subseteq W$ a subspace. The \textbf{orthogonal complement} of $U$ is
+\[ U^\perp = \{ w \in W : \langle u, w \rangle = 0 \text{ for all } u \in U \}. \]
+\srcline{WS 14}
+\end{defbox}
+
+\begin{defbox}[{$G$ Preserves an Inner Product}]\label{def:preserves-inner-product}
+Let $W$ be a real representation of $G$ with an inner product $\langle\ ,\ \rangle$. $G$ \textbf{preserves} $\langle\ ,\ \rangle$ if
+\[ \langle gv, gw \rangle = \langle v, w \rangle \qquad \text{for all } g \in G \text{ and } v, w \in W, \]
+that is, each $\rho(g)$ is an orthogonal map.
+\srcline{WS 14}
+\end{defbox}
+
+\begin{propbox}[{Direct Sum of a Subspace and Its Orthogonal Complement}]\label{prop:orthogonal-complement-direct-sum}
+Let $W$ be a finite-dimensional real vector space with an inner product and $U \subseteq W$ a subspace. Then $W = U \oplus U^\perp$.
+\srcline{WS 14.4; board 11/4}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} Positive definiteness gives $U \cap U^\perp = \{0\}$; the orthogonal projection $P_U$ splits every $w$ as $P_U(w) + (w - P_U(w))$.\par
+\textit{(Board 11/4.)} $U^\perp$ is a subspace, by bilinearity.
+
+\emph{$U \cap U^\perp = \{0\}$.} If $u \in U \cap U^\perp$, then $\langle u, u \rangle = 0$, so $u = 0$ by positive definiteness.
+
+\emph{$U + U^\perp = W$.} Let $u_1, \ldots, u_m$ be an orthonormal basis of $U$ (it exists by Gram--Schmidt): $\langle u_i, u_j \rangle = 1$ if $i = j$ and $0$ otherwise. For $w \in W$ define the orthogonal projection
+\[ P_U(w) = \sum_{j=1}^m \langle w, u_j \rangle\, u_j \in U. \]
+We claim $w - P_U(w) \in U^\perp$; by bilinearity it suffices to check against the basis vectors $u_i$:
+\[ \langle u_i, w - P_U(w) \rangle = \langle u_i, w \rangle - \sum_j \langle w, u_j \rangle \langle u_i, u_j \rangle = \langle u_i, w \rangle - \langle w, u_i \rangle = 0, \]
+since only the term $j = i$ survives, and $\langle w, u_i \rangle = \langle u_i, w \rangle$ by symmetry. Hence $w = P_U(w) + \big(w - P_U(w)\big) \in U + U^\perp$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\fill[blue!70!black!12] (-0.810,0.756) -- (-2.873,-0.819) -- (1.328,-0.819) -- (3.390,0.756) -- cycle;
+\draw[blue!70!black, thick] (-0.810,0.756) -- (-2.873,-0.819) -- (1.328,-0.819) -- (3.390,0.756) -- cycle;
+\node[blue!70!black, font=\scriptsize] at (-2.175,-0.630) {$U$};
+\draw[red!70!black, thick] (0.000,-0.750) -- (0.000,2.550) node[above, font=\scriptsize] {$U^\perp$};
+\draw[->, blue!70!black, thick] (0.000,0.000) -- (-0.825,-0.630) node[below left, font=\scriptsize] {$u_1$};
+\draw[->, blue!70!black, thick] (0.000,0.000) -- (1.500,0.000) node[above, font=\scriptsize] {$u_2$};
+\draw[->, very thick] (0.000,0.000) -- (1.155,1.422) node[above right, font=\scriptsize] {$w$};
+\draw[->, blue!70!black, very thick] (0.000,0.000) -- (1.155,-0.378) node[right, font=\scriptsize] {$P_U(w)$};
+\draw[->, red!70!black, very thick] (1.155,-0.378) -- (1.155,1.422) node[pos=0.85, right, font=\scriptsize] {$w - P_U(w) \in U^\perp$};
+\draw[thin] (1.155,-0.168) -- (0.915,-0.168) -- (0.915,-0.378);
+\node[font=\scriptsize, align=left, anchor=west] at (3.6,1.4) {$u_1, u_2$ orthonormal in $U$;\\$P_U(w) = \sum_j \langle w, u_j \rangle u_j \in U$;\\$\langle u_i, w - P_U(w) \rangle = 0$ for each $i$};
+\end{tikzpicture}
+\end{center}
+
+
+\begin{propbox}[{Orthogonal Complements of Subrepresentations}]\label{prop:orthogonal-complement-subrepresentation}
+Let $W$ be a real representation of $G$ with an inner product preserved by $G$ (Definition~\ref{def:preserves-inner-product}), and let $U$ be a subrepresentation. Then $U^\perp$ is a subrepresentation.
+\srcline{WS 14.5; board 11/4}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} Move $g$ to the other side of the inner product as $g^{-1}$.\par
+\textit{(Board 11/4.)} Let $w \in U^\perp$ and $g \in G$; we must show $\langle u, gw \rangle = 0$ for all $u \in U$. Write $u = g(g^{-1}u)$. Since $G$ preserves the inner product,
+\[ \langle u, gw \rangle = \langle g(g^{-1}u), gw \rangle = \langle g^{-1}u, w \rangle = 0, \]
+because $g^{-1}u \in U$ ($U$ is a subrepresentation) and $w \in U^\perp$.
+\end{proof}
+
+\begin{corbox}[{Maschke for Representations Preserving an Inner Product}]\label{cor:maschke-preserved-inner-product}
+Let $W$ be a finite-dimensional real representation of a group $G$ (finite or not) that preserves an inner product on $W$, and let $U$ be a subrepresentation. Then $V = U^\perp$ is a subrepresentation with $W = U \oplus V$.
+\srcline{WS 14.6}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lecture 11/4.)} $W = U \oplus U^\perp$ by Proposition~\ref{prop:orthogonal-complement-direct-sum}, and $U^\perp$ is a subrepresentation by Proposition~\ref{prop:orthogonal-complement-subrepresentation}.
+\end{proof}
+
+\textbf{Transcription note (WS 14).} Problem 14.6 says ``$W$ preserves an inner product''; ``$G$ preserves'' is meant (Definition~\ref{def:preserves-inner-product}).
+
+\begin{rembox}[{Physical Meaning}]\label{rem:maschke-physical-meaning}
+That $G$ preserves an inner product means that $G$ acts by orthogonal matrices, which preserve lengths and angles: a natural condition for symmetries of objects in space. The lecture noted that physicists also meet symmetries of space-time, which preserve a form that is not positive definite. The remaining step is to show that for a \emph{finite} group such an inner product always exists, even if the given one is not preserved.
+\srcline{lecture 11/4}
+\end{rembox}
+
+\begin{defbox}[{The Averaged Inner Product}]\label{def:averaged-inner-product}
+Let $W$ be a real representation of a finite group $G$, and let $(\ ,\ )$ be any inner product on $W$, not necessarily preserved by $G$. Define
+\[ \langle v, w \rangle := \sum_{g \in G} (gv, gw) \qquad (v, w \in W). \]
+\srcline{WS 14}
+\end{defbox}
+
+\textbf{Transcription note (WS 14).} The worksheet prints the sum as $\sum_{g \in G} \langle gv, gw \rangle$, with the new brackets on both sides; the sum uses the original inner product $(\ ,\ )$.
+
+\begin{propbox}[{Averaging Gives an Inner Product}]\label{prop:averaged-inner-product}
+$\langle\ ,\ \rangle$ (Definition~\ref{def:averaged-inner-product}) is an inner product on $W$.
+\srcline{WS 14.7}
+\end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+WS 14.7 is to be presented in class on Fri Nov 6.
+\end{proof}
+
+\begin{propbox}[{$G$ Preserves the Averaged Inner Product}]\label{prop:averaged-inner-product-preserved}
+$\langle hv, hw \rangle = \langle v, w \rangle$ for all $h \in G$ and $v, w \in W$.
+\srcline{WS 14.8}
+\end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+WS 14.8 is to be presented in class on Fri Nov 6.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\draw[->, black!55, thin] (-2.3,0) -- (2.4,0) node[right, font=\scriptsize] {$x_1$};
+\draw[->, black!55, thin] (0,-2.1) -- (0,2.2) node[above, font=\scriptsize] {$x_2$};
+\draw[black!35] plot[smooth cycle] coordinates {(-1.720,1.063) (-1.697,1.097) (-1.668,1.127) (-1.635,1.154) (-1.597,1.177) (-1.555,1.198) (-1.508,1.215) (-1.458,1.229) (-1.403,1.239) (-1.344,1.246) (-1.282,1.250) (-1.216,1.250) (-1.146,1.246) (-1.073,1.239) (-0.998,1.229) (-0.919,1.215) (-0.838,1.197) (-0.755,1.177) (-0.670,1.153) (-0.582,1.126) (-0.494,1.096) (-0.403,1.062) (-0.312,1.026) (-0.220,0.987) (-0.127,0.945) (-0.034,0.900) (0.060,0.853) (0.153,0.804) (0.246,0.752) (0.338,0.699) (0.429,0.643) (0.519,0.586) (0.607,0.527) (0.694,0.466) (0.779,0.404) (0.861,0.341) (0.942,0.277) (1.019,0.212) (1.094,0.147) (1.166,0.081) (1.234,0.015) (1.299,-0.051) (1.361,-0.116) (1.419,-0.182) (1.472,-0.247) (1.522,-0.311) (1.567,-0.375) (1.608,-0.437) (1.645,-0.498) (1.677,-0.558) (1.704,-0.616) (1.726,-0.673) (1.744,-0.728) (1.757,-0.780) (1.765,-0.831) (1.768,-0.879) (1.766,-0.924) (1.759,-0.968) (1.747,-1.008) (1.731,-1.046) (1.709,-1.080) (1.683,-1.112) (1.652,-1.141) (1.617,-1.166) (1.577,-1.188) (1.532,-1.207) (1.483,-1.222) (1.431,-1.235) (1.374,-1.243) (1.313,-1.248) (1.249,-1.250) (1.181,-1.248) (1.110,-1.243) (1.036,-1.234) (0.959,-1.222) (0.879,-1.206) (0.797,-1.187) (0.713,-1.165) (0.626,-1.140) (0.538,-1.111) (0.449,-1.079) (0.358,-1.044) (0.266,-1.007) (0.173,-0.966) (0.080,-0.923) (-0.013,-0.877) (-0.106,-0.829) (-0.199,-0.779) (-0.292,-0.726) (-0.383,-0.671) (-0.474,-0.615) (-0.563,-0.556) (-0.651,-0.496) (-0.737,-0.435) (-0.820,-0.373) (-0.902,-0.309) (-0.981,-0.245) (-1.057,-0.180) (-1.130,-0.114) (-1.201,-0.048) (-1.267,0.018) (-1.331,0.083) (-1.390,0.149) (-1.446,0.214) (-1.498,0.279) (-1.545,0.343) (-1.588,0.406) (-1.627,0.468) (-1.661,0.528) (-1.691,0.587) (-1.716,0.645) (-1.736,0.700) (-1.751,0.754) (-1.761,0.806) (-1.767,0.855) (-1.767,0.902) (-1.763,0.946) (-1.754,0.988) (-1.740,1.027)};
+\draw[black!35] plot[smooth cycle] coordinates {(1.063,-1.720) (1.027,-1.740) (0.988,-1.754) (0.946,-1.763) (0.902,-1.767) (0.855,-1.767) (0.806,-1.761) (0.754,-1.751) (0.700,-1.736) (0.645,-1.716) (0.587,-1.691) (0.528,-1.661) (0.468,-1.627) (0.406,-1.588) (0.343,-1.545) (0.279,-1.498) (0.214,-1.446) (0.149,-1.390) (0.083,-1.331) (0.018,-1.267) (-0.048,-1.201) (-0.114,-1.130) (-0.180,-1.057) (-0.245,-0.981) (-0.309,-0.902) (-0.373,-0.820) (-0.435,-0.737) (-0.496,-0.651) (-0.556,-0.563) (-0.615,-0.474) (-0.671,-0.383) (-0.726,-0.292) (-0.779,-0.199) (-0.829,-0.106) (-0.877,-0.013) (-0.923,0.080) (-0.966,0.173) (-1.007,0.266) (-1.044,0.358) (-1.079,0.449) (-1.111,0.538) (-1.140,0.626) (-1.165,0.713) (-1.187,0.797) (-1.206,0.879) (-1.222,0.959) (-1.234,1.036) (-1.243,1.110) (-1.248,1.181) (-1.250,1.249) (-1.248,1.313) (-1.243,1.374) (-1.235,1.431) (-1.222,1.483) (-1.207,1.532) (-1.188,1.577) (-1.166,1.617) (-1.141,1.652) (-1.112,1.683) (-1.080,1.709) (-1.046,1.731) (-1.008,1.747) (-0.968,1.759) (-0.924,1.766) (-0.879,1.768) (-0.831,1.765) (-0.780,1.757) (-0.728,1.744) (-0.673,1.726) (-0.616,1.704) (-0.558,1.677) (-0.498,1.645) (-0.437,1.608) (-0.375,1.567) (-0.311,1.522) (-0.247,1.472) (-0.182,1.419) (-0.116,1.361) (-0.051,1.299) (0.015,1.234) (0.081,1.166) (0.147,1.094) (0.212,1.019) (0.277,0.942) (0.341,0.861) (0.404,0.779) (0.466,0.694) (0.527,0.607) (0.586,0.519) (0.643,0.429) (0.699,0.338) (0.752,0.246) (0.804,0.153) (0.853,0.060) (0.900,-0.034) (0.945,-0.127) (0.987,-0.220) (1.026,-0.312) (1.062,-0.403) (1.096,-0.494) (1.126,-0.582) (1.153,-0.670) (1.177,-0.755) (1.197,-0.838) (1.215,-0.919) (1.229,-0.998) (1.239,-1.073) (1.246,-1.146) (1.250,-1.216) (1.250,-1.282) (1.246,-1.344) (1.239,-1.403) (1.229,-1.458) (1.215,-1.508) (1.198,-1.555) (1.177,-1.597) (1.154,-1.635) (1.127,-1.668) (1.097,-1.697)};
+\draw[black!35] plot[smooth cycle] coordinates {(0.000,1.250) (0.066,1.248) (0.132,1.243) (0.197,1.234) (0.262,1.222) (0.326,1.207) (0.389,1.188) (0.452,1.166) (0.512,1.140) (0.572,1.112) (0.630,1.080) (0.686,1.045) (0.740,1.007) (0.792,0.967) (0.842,0.924) (0.890,0.878) (0.935,0.830) (0.977,0.779) (1.017,0.727) (1.054,0.672) (1.088,0.615) (1.119,0.557) (1.147,0.497) (1.171,0.436) (1.193,0.374) (1.211,0.310) (1.226,0.246) (1.237,0.181) (1.245,0.115) (1.249,0.049) (1.250,-0.016) (1.247,-0.082) (1.241,-0.148) (1.232,-0.213) (1.219,-0.278) (1.202,-0.342) (1.183,-0.405) (1.160,-0.467) (1.133,-0.527) (1.104,-0.587) (1.071,-0.644) (1.036,-0.700) (0.998,-0.753) (0.956,-0.805) (0.913,-0.854) (0.866,-0.901) (0.817,-0.946) (0.766,-0.987) (0.713,-1.027) (0.658,-1.063) (0.601,-1.096) (0.542,-1.126) (0.482,-1.153) (0.421,-1.177) (0.358,-1.198) (0.294,-1.215) (0.230,-1.229) (0.165,-1.239) (0.099,-1.246) (0.033,-1.250) (-0.033,-1.250) (-0.099,-1.246) (-0.165,-1.239) (-0.230,-1.229) (-0.294,-1.215) (-0.358,-1.198) (-0.421,-1.177) (-0.482,-1.153) (-0.542,-1.126) (-0.601,-1.096) (-0.658,-1.063) (-0.713,-1.027) (-0.766,-0.987) (-0.817,-0.946) (-0.866,-0.901) (-0.913,-0.854) (-0.956,-0.805) (-0.998,-0.753) (-1.036,-0.700) (-1.071,-0.644) (-1.104,-0.587) (-1.133,-0.527) (-1.160,-0.467) (-1.183,-0.405) (-1.202,-0.342) (-1.219,-0.278) (-1.232,-0.213) (-1.241,-0.148) (-1.247,-0.082) (-1.250,-0.016) (-1.249,0.049) (-1.245,0.115) (-1.237,0.181) (-1.226,0.246) (-1.211,0.310) (-1.193,0.374) (-1.171,0.436) (-1.147,0.497) (-1.119,0.557) (-1.088,0.615) (-1.054,0.672) (-1.017,0.727) (-0.977,0.779) (-0.935,0.830) (-0.890,0.878) (-0.842,0.924) (-0.792,0.967) (-0.740,1.007) (-0.686,1.045) (-0.630,1.080) (-0.572,1.112) (-0.512,1.140) (-0.452,1.166) (-0.389,1.188) (-0.326,1.207) (-0.262,1.222) (-0.197,1.234) (-0.132,1.243) (-0.066,1.248)};
+\draw[black!35] plot[smooth cycle] coordinates {(1.063,-1.720) (1.027,-1.740) (0.988,-1.754) (0.946,-1.763) (0.902,-1.767) (0.855,-1.767) (0.806,-1.761) (0.754,-1.751) (0.700,-1.736) (0.645,-1.716) (0.587,-1.691) (0.528,-1.661) (0.468,-1.627) (0.406,-1.588) (0.343,-1.545) (0.279,-1.498) (0.214,-1.446) (0.149,-1.390) (0.083,-1.331) (0.018,-1.267) (-0.048,-1.201) (-0.114,-1.130) (-0.180,-1.057) (-0.245,-0.981) (-0.309,-0.902) (-0.373,-0.820) (-0.435,-0.737) (-0.496,-0.651) (-0.556,-0.563) (-0.615,-0.474) (-0.671,-0.383) (-0.726,-0.292) (-0.779,-0.199) (-0.829,-0.106) (-0.877,-0.013) (-0.923,0.080) (-0.966,0.173) (-1.007,0.266) (-1.044,0.358) (-1.079,0.449) (-1.111,0.538) (-1.140,0.626) (-1.165,0.713) (-1.187,0.797) (-1.206,0.879) (-1.222,0.959) (-1.234,1.036) (-1.243,1.110) (-1.248,1.181) (-1.250,1.249) (-1.248,1.313) (-1.243,1.374) (-1.235,1.431) (-1.222,1.483) (-1.207,1.532) (-1.188,1.577) (-1.166,1.617) (-1.141,1.652) (-1.112,1.683) (-1.080,1.709) (-1.046,1.731) (-1.008,1.747) (-0.968,1.759) (-0.924,1.766) (-0.879,1.768) (-0.831,1.765) (-0.780,1.757) (-0.728,1.744) (-0.673,1.726) (-0.616,1.704) (-0.558,1.677) (-0.498,1.645) (-0.437,1.608) (-0.375,1.567) (-0.311,1.522) (-0.247,1.472) (-0.182,1.419) (-0.116,1.361) (-0.051,1.299) (0.015,1.234) (0.081,1.166) (0.147,1.094) (0.212,1.019) (0.277,0.942) (0.341,0.861) (0.404,0.779) (0.466,0.694) (0.527,0.607) (0.586,0.519) (0.643,0.429) (0.699,0.338) (0.752,0.246) (0.804,0.153) (0.853,0.060) (0.900,-0.034) (0.945,-0.127) (0.987,-0.220) (1.026,-0.312) (1.062,-0.403) (1.096,-0.494) (1.126,-0.582) (1.153,-0.670) (1.177,-0.755) (1.197,-0.838) (1.215,-0.919) (1.229,-0.998) (1.239,-1.073) (1.246,-1.146) (1.250,-1.216) (1.250,-1.282) (1.246,-1.344) (1.239,-1.403) (1.229,-1.458) (1.215,-1.508) (1.198,-1.555) (1.177,-1.597) (1.154,-1.635) (1.127,-1.668) (1.097,-1.697)};
+\draw[black!35] plot[smooth cycle] coordinates {(-1.720,1.063) (-1.697,1.097) (-1.668,1.127) (-1.635,1.154) (-1.597,1.177) (-1.555,1.198) (-1.508,1.215) (-1.458,1.229) (-1.403,1.239) (-1.344,1.246) (-1.282,1.250) (-1.216,1.250) (-1.146,1.246) (-1.073,1.239) (-0.998,1.229) (-0.919,1.215) (-0.838,1.197) (-0.755,1.177) (-0.670,1.153) (-0.582,1.126) (-0.494,1.096) (-0.403,1.062) (-0.312,1.026) (-0.220,0.987) (-0.127,0.945) (-0.034,0.900) (0.060,0.853) (0.153,0.804) (0.246,0.752) (0.338,0.699) (0.429,0.643) (0.519,0.586) (0.607,0.527) (0.694,0.466) (0.779,0.404) (0.861,0.341) (0.942,0.277) (1.019,0.212) (1.094,0.147) (1.166,0.081) (1.234,0.015) (1.299,-0.051) (1.361,-0.116) (1.419,-0.182) (1.472,-0.247) (1.522,-0.311) (1.567,-0.375) (1.608,-0.437) (1.645,-0.498) (1.677,-0.558) (1.704,-0.616) (1.726,-0.673) (1.744,-0.728) (1.757,-0.780) (1.765,-0.831) (1.768,-0.879) (1.766,-0.924) (1.759,-0.968) (1.747,-1.008) (1.731,-1.046) (1.709,-1.080) (1.683,-1.112) (1.652,-1.141) (1.617,-1.166) (1.577,-1.188) (1.532,-1.207) (1.483,-1.222) (1.431,-1.235) (1.374,-1.243) (1.313,-1.248) (1.249,-1.250) (1.181,-1.248) (1.110,-1.243) (1.036,-1.234) (0.959,-1.222) (0.879,-1.206) (0.797,-1.187) (0.713,-1.165) (0.626,-1.140) (0.538,-1.111) (0.449,-1.079) (0.358,-1.044) (0.266,-1.007) (0.173,-0.966) (0.080,-0.923) (-0.013,-0.877) (-0.106,-0.829) (-0.199,-0.779) (-0.292,-0.726) (-0.383,-0.671) (-0.474,-0.615) (-0.563,-0.556) (-0.651,-0.496) (-0.737,-0.435) (-0.820,-0.373) (-0.902,-0.309) (-0.981,-0.245) (-1.057,-0.180) (-1.130,-0.114) (-1.201,-0.048) (-1.267,0.018) (-1.331,0.083) (-1.390,0.149) (-1.446,0.214) (-1.498,0.279) (-1.545,0.343) (-1.588,0.406) (-1.627,0.468) (-1.661,0.528) (-1.691,0.587) (-1.716,0.645) (-1.736,0.700) (-1.751,0.754) (-1.761,0.806) (-1.767,0.855) (-1.767,0.902) (-1.763,0.946) (-1.754,0.988) (-1.740,1.027)};
+\draw[red!70!black, thick] (0,0) circle (1.25);
+\draw[blue!70!black, very thick] plot[smooth cycle] coordinates {(-1.083,1.083) (-1.048,1.114) (-1.011,1.142) (-0.970,1.168) (-0.927,1.189) (-0.882,1.208) (-0.834,1.223) (-0.784,1.235) (-0.731,1.244) (-0.677,1.249) (-0.620,1.250) (-0.562,1.248) (-0.502,1.242) (-0.441,1.233) (-0.379,1.221) (-0.316,1.205) (-0.251,1.186) (-0.186,1.164) (-0.121,1.138) (-0.055,1.109) (0.011,1.077) (0.077,1.042) (0.143,1.004) (0.208,0.963) (0.273,0.920) (0.337,0.874) (0.400,0.826) (0.462,0.775) (0.522,0.722) (0.582,0.667) (0.639,0.611) (0.695,0.552) (0.749,0.492) (0.801,0.431) (0.850,0.368) (0.897,0.305) (0.942,0.240) (0.984,0.175) (1.023,0.110) (1.060,0.044) (1.093,-0.022) (1.124,-0.088) (1.151,-0.154) (1.175,-0.219) (1.196,-0.284) (1.214,-0.347) (1.228,-0.410) (1.238,-0.472) (1.246,-0.532) (1.249,-0.591) (1.250,-0.649) (1.247,-0.704) (1.240,-0.758) (1.230,-0.809) (1.216,-0.858) (1.199,-0.905) (1.179,-0.949) (1.155,-0.991) (1.129,-1.030) (1.099,-1.066) (1.066,-1.099) (1.030,-1.129) (0.991,-1.155) (0.949,-1.179) (0.905,-1.199) (0.858,-1.216) (0.809,-1.230) (0.758,-1.240) (0.704,-1.247) (0.649,-1.250) (0.591,-1.249) (0.532,-1.246) (0.472,-1.238) (0.410,-1.228) (0.347,-1.214) (0.284,-1.196) (0.219,-1.175) (0.154,-1.151) (0.088,-1.124) (0.022,-1.093) (-0.044,-1.060) (-0.110,-1.023) (-0.175,-0.984) (-0.240,-0.942) (-0.305,-0.897) (-0.368,-0.850) (-0.431,-0.801) (-0.492,-0.749) (-0.552,-0.695) (-0.611,-0.639) (-0.667,-0.582) (-0.722,-0.522) (-0.775,-0.462) (-0.826,-0.400) (-0.874,-0.337) (-0.920,-0.273) (-0.963,-0.208) (-1.004,-0.143) (-1.042,-0.077) (-1.077,-0.011) (-1.109,0.055) (-1.138,0.121) (-1.164,0.186) (-1.186,0.251) (-1.205,0.316) (-1.221,0.379) (-1.233,0.441) (-1.242,0.502) (-1.248,0.562) (-1.250,0.620) (-1.249,0.677) (-1.244,0.731) (-1.235,0.784) (-1.223,0.834) (-1.208,0.882) (-1.189,0.927) (-1.168,0.970) (-1.142,1.011) (-1.114,1.048)};
+\fill (1.250,0.000) circle (1.2pt) node[below right, font=\scriptsize] {$f_1$};
+\fill (0.000,1.250) circle (1.2pt) node[above right, font=\scriptsize] {$f_2$};
+\node[font=\scriptsize, align=left, anchor=west] at (2.7,1.0) {$U_2$ in coordinates $x_1 f_1 + x_2 f_2$\\\textcolor{red!70!black}{red}: $(v, v) = 1$, $(\ ,\ )$ the dot product\\\quad of coordinates, not preserved;\\grey: $(gv, gv) = 1$ for the five $g \neq e$;\\\textcolor{blue!70!black}{blue}: $\langle v, v \rangle = \sum_g (gv, gv) = 6$,\\\quad mapped to itself by every $\rho(g)$};
+\end{tikzpicture}
+\end{center}
+
+
+\begin{corbox}[{Maschke's Theorem over $\mathbb{R}$}]\label{cor:maschke-real}
+Let $G$ be finite and $W$ a finite-dimensional real representation of $G$. Every subrepresentation $U$ of $W$ has a complementary subrepresentation $V$, with $W = U \oplus V$.
+\srcline{WS 14}
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} Make $G$ preserve an inner product by averaging, then take the orthogonal complement.\par
+Choose any inner product on $W$ (for instance, the dot product of coordinates in some basis). By Propositions~\ref{prop:averaged-inner-product} and~\ref{prop:averaged-inner-product-preserved}, the averaged form $\langle\ ,\ \rangle$ is an inner product preserved by $G$, so Corollary~\ref{cor:maschke-preserved-inner-product} applies with $V = U^\perp$, the orthogonal complement for $\langle\ ,\ \rangle$. (This rests on WS 14.7 and 14.8, to be presented Fri Nov 6.) Since $|G| \neq 0$ in $\mathbb{R}$, this is the case $k = \mathbb{R}$ of Theorem~\ref{thm:maschke}.
 \end{proof}
 
 
@@ -8035,6 +8315,7 @@ WS 13.6 was not reached in class on 11/2.
     \item \textbf{To build a group of a given shape.} Choose groups $N$, $S$ and a homomorphism $\varphi: S \to \operatorname{Aut}(N)$; check that $\varphi$ is well defined, e.g.\ $2^3 \equiv 1 \pmod 7$ for $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ (Example~\ref{ex:z7-semidirect-z3}).
     \item \textbf{To find the composition factors of a finite group.} Build any composition series, e.g.\ by stitching a series of a normal subgroup $N$ to the preimage of a series of $G/N$ (Lemma~\ref{lem:finite-composition-series}); by Jordan--H\"older (Theorem~\ref{thm:jordan-holder}) the factors do not depend on the choice. $G$ is solvable iff every factor is some $\mathbb{Z}/p\mathbb{Z}$.
     \item \textbf{To decide whether $W = U_1 \oplus U_2$ (finite dimensions).} Put a basis of $U_1$ and a basis of $U_2$ side by side as columns; $W$ is the direct sum iff this matrix is square and invertible, e.g.\ iff its determinant is nonzero \emph{in $k$} (Proposition~\ref{prop:k123-direct-sum}). To compare matrices of one representation computed in different bases, compare traces and determinants (the remark \emph{Checking Answers in Different Bases} in \ref{sec:representations}).
+    \item \textbf{To split off a subrepresentation $U$ (finite $G$, real $W$).} Average any inner product over $G$, $\langle v, w \rangle = \sum_g (gv, gw)$; then $U^\perp$ is a complementary subrepresentation (Corollary~\ref{cor:maschke-real}), and in a basis adapted to $W = U \oplus U^\perp$ all $\rho(g)$ are block diagonal (Proposition~\ref{prop:direct-sum-block-diagonal}). In general this is Maschke's theorem, valid when $|G| \neq 0$ in $k$ (Theorem~\ref{thm:maschke}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
     \item \textbf{To show $h$ is not a commutator.} Find a character $\chi$ with $\chi(h) \neq e_A$ (\ref{sec:commutators}); in $S_n$, use $\sgn$.
@@ -8127,6 +8408,7 @@ Wed Oct 28 \newline lecture; Worksheet 12 & Subnormal, composition and quasi-com
 Thu Oct 29 \newline Problem Set 7 (submitted) & Proper subgroups of $A_n$ have index $\geq n$; index $n$ gives $A_{n-1}$; simple groups of order $60$ are $A_5$; orders $\equiv 2 \bmod 4$; no simple group of order $56$; two normal subgroups with simple quotients & \ref{sub:orders-30-56-90}, \ref{sub:order-60}, \ref{sec:composition-series} \\
 Fri Oct 30 \newline lecture; quiz & Jordan--H\"older finished: the nine squares, four impossible (WS 12.4), the crossing square (WS 12.5), changeovers and pipes, proof of the theorem (WS 12.6); flags in $(\mathbb{Z}/p\mathbb{Z})^n$ & \ref{sec:jh-grid} (WS 12.4--12.5), \ref{sec:jordan-holder} (WS 12.6) \\
 Mon Nov 2 \newline lecture; Worksheet 13 & Part~II begins: representations; action and linearity axioms; permutation representations; subrepresentations of $k\{1,2,3\}$; matrices in different bases (trace, determinant); the direct sum holds iff $3 \neq 0$ & \ref{sec:representations} (13.1--13.5; 13.6 to be proved) \\
+Wed Nov 4 \newline lecture; Worksheet 14 & $S_3$ on $\mathbb{R}^3$ in three bases; block diagonal and block triangular matrices; Maschke's theorem (statement); $W = U \oplus U^\perp$; orthogonal complements of subrepresentations & \ref{sec:maschke} (14.1--14.6; 14.7--14.8 to be presented Fri Nov 6) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 

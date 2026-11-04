@@ -21,6 +21,7 @@ tags: [linear-algebra, hub]
 
 ## Used in (Group Theory)
 - [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|Proposition §32.2: O_3(ℝ) Acting on ℝ³]]
+- [[§60 Direct Sums and Maschke's Theorem#^prop-60-5|Proposition §60.5: Direct Sum of a Subspace and Its Orthogonal Complement]]
 
 ## Used in (Differentiable Manifolds)
 - [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|Proposition §15.6: O(n) Acts Transitively on Gr_k(ℝⁿ)]]
