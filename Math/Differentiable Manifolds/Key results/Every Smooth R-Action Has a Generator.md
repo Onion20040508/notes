@@ -2,13 +2,13 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 70.4", "infinitesimal generator", "R-actions and complete fields", "one-parameter group of diffeomorphisms", "Lee Proposition 9.7"]
+aliases: ["MATH 591 70.5", "infinitesimal generator", "R-actions and complete fields", "one-parameter group of diffeomorphisms", "Lee Proposition 9.7"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§70 Complete Vector Fields#^thm-70-4]]
+![[§70 Complete Vector Fields#^thm-70-5]]
 
 ## Treated in
-- [[§70 Complete Vector Fields#^thm-70-4|Theorem §70.4: Every Smooth ℝ-Action Has a Generator]], in [[§70 Complete Vector Fields]]
+- [[§70 Complete Vector Fields#^thm-70-5|Theorem §70.5: Every Smooth ℝ-Action Has a Generator]], in [[§70 Complete Vector Fields]]
 
 ## Its proof uses
 - [[§31 Tangent Vectors as Velocities of Curves#^cor-31-2|Corollary §31.2: Velocity at Time t in Coordinates]]

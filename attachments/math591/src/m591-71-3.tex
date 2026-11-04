@@ -1,0 +1,16 @@
+% Figure from MATH 591 notes, section 71. Compile with the notes preamble.
+\begin{tikzpicture}[>=stealth, scale=1.0]
+\fill[blue!70!black!12] (0.000,0.000) -- (2.000,1.000) -- (3.000,2.000) -- (1.000,1.000) -- cycle;
+\draw[blue!70!black, thick] (0.000,0.000) -- (2.000,1.000) -- (3.000,2.000) -- (1.000,1.000) -- cycle;
+\draw[->, blue!70!black, very thick] (0.000,0.000) -- (2.000,1.000);
+\draw[->, blue!70!black, very thick] (0.000,0.000) -- (1.000,1.000);
+\draw[gray!50, dashed] (0,0) rectangle (1,1);
+\node[font=\scriptsize, align=center] at (1.2,-0.65) {$\exp(A)\exp(B) = \begin{psmallmatrix} 2 & 1 \\ 1 & 1 \end{psmallmatrix}$};
+\fill[red!70!black!12] (4.600,0.000) -- (6.143,1.175) -- (7.318,2.718) -- (5.775,1.543) -- cycle;
+\draw[red!70!black, thick] (4.600,0.000) -- (6.143,1.175) -- (7.318,2.718) -- (5.775,1.543) -- cycle;
+\draw[->, red!70!black, very thick] (4.600,0.000) -- (6.143,1.175);
+\draw[->, red!70!black, very thick] (4.600,0.000) -- (5.775,1.543);
+\draw[gray!50, dashed] (4.6,0) rectangle (5.6,1);
+\node[font=\scriptsize, align=center] at (5.8,-0.65) {$\exp(A + B) = \begin{psmallmatrix} \cosh 1 & \sinh 1 \\ \sinh 1 & \cosh 1 \end{psmallmatrix}$};
+\node[font=\scriptsize, align=left, anchor=west] at (8.4,1.2) {images of the unit square\\ (dashed); both have\\ area $1$ (determinant $1$),\\ but they differ};
+\end{tikzpicture}

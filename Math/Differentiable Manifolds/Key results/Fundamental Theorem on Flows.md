@@ -18,6 +18,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§70 Complete Vector Fields#^lem-70-1|Lemma §70.1: Uniform Time Lemma]]
 - [[§70 Complete Vector Fields#^prop-70-3|Proposition §70.3: The Flow of a Complete Field]]
+- [[§71 The Exponential Map#^prop-71-5|Proposition §71.5: Smoothness and the Differential at 0]]
 
 ## Connections
 - TODO

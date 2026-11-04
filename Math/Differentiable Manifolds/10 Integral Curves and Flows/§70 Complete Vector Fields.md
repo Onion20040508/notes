@@ -5,7 +5,7 @@ chapter: 10
 section: 70
 tags: [differentiable-manifolds, math591]
 ---
-← [[§69 Maximal Integral Curves and Flows]] · ↑ [[· 10 Integral Curves and Flows]]
+← [[§69 Maximal Integral Curves and Flows]] · ↑ [[· 10 Integral Curves and Flows]] · [[§71 The Exponential Map]] →
 
 *Stage: dynamics — Vector fields whose integral curves exist for all time: the uniform time lemma, compact manifolds, actions of $\mathbb{R}$, and left-invariant fields on Lie groups.*
 
@@ -68,7 +68,7 @@ tags: [differentiable-manifolds, math591]
 
 *(Figure after the board.)* “The horizontal line is $M$, and then you have $\mathbb{R}$ here”: over each $p$, the maximal domain $(\alpha(p), \beta(p))$, between the graphs $t = \beta(p) > 0$ and $t = \alpha(p) < 0$. The lemma's hypothesis is that a uniform strip $(-\varepsilon, \varepsilon) \times M$ fits inside; its conclusion is that the whole of $\mathbb{R} \times M$ does. (“I always reverse the cartoon axes. Someday I'll learn.”)
 
-Announced at the end of Lecture 24 and proved in Lecture 25 (Theorems [[§70 Complete Vector Fields#^thm-70-2|§70.2]] and [[§70 Complete Vector Fields#^thm-70-6|§70.6]] below), as consequences of Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]]:
+Announced at the end of Lecture 24 and proved in Lecture 25 (Theorems [[§70 Complete Vector Fields#^thm-70-2|§70.2]] and [[§70 Complete Vector Fields#^thm-70-7|§70.7]] below), as consequences of Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]]:
 - every vector field on a compact manifold is complete: “compactness will assure that there is a uniform time” (Lee, Corollary 9.17);
 - every left-invariant vector field on a Lie group is complete, “because you're going to be able to translate solutions” (Lee, Theorem 9.18).
 
@@ -128,6 +128,26 @@ The uniform time lemma (Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]], 
 
 “This looks a lot like a group action kind of thing, and in fact it is.” There is a clash of notations: for an action, $(t, p) \mapsto t \cdot p$; for a flow, $(t, p) \mapsto \varphi_t(p)$. “It's just a matter of notation. We get the same thing.”
 
+> [!theorem] Lemma §70.4: A Complete Field Is Related to Itself by Its Flow
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ be complete, with flow $\varphi$. For every $t \in \mathbb{R}$, $\mathbf{X}$ is $\varphi_t$-related to itself: $d(\varphi_t)_p(\mathbf{X}_p) = \mathbf{X}_{\varphi_t(p)}$ for every $p \in M$.
+>
+> *Lee: Ch. 9, Flows*
+
+^lem-70-4
+
+> [!proof]+ Proof
+> *(Lecture 26, a warm-up: “it's sort of the infinitesimal version of the group law.”)* Fix $t$ and $p$. To compute $d(\varphi_t)_p(\mathbf{X}_p)$ “we need a curve whose velocity is $\mathbf{X}_p$”: $\mathbf{X}_p = \frac{d}{ds}\big|_{s=0} \varphi_s(p)$. By Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]] (applied to the curve $s \mapsto \varphi_s(p)$ and the map $\varphi_t$) and the group law (Proposition [[§70 Complete Vector Fields#^prop-70-3|§70.3]]),
+>
+> $$
+> d(\varphi_t)_p(\mathbf{X}_p) = \frac{d}{ds}\Big|_{s=0} \varphi_t\big(\varphi_s(p)\big) = \frac{d}{ds}\Big|_{s=0} \varphi_{t+s}(p) = \mathbf{X}_{\varphi_t(p)} .
+> $$
+>
+> The last step is the translation lemma: $s \mapsto \varphi_{t+s}(p) = \varphi^p(t + s)$ is an integral curve (Lemma [[§67 Integral Curves#^lem-67-4|§67.4]](1)), so its velocity at $s = 0$ is the value of the field at $\varphi_t(p)$. “The pushforward of $\mathbf{X}$ is $\mathbf{X}$, where it should be.”
+
+^pf-70-4
+
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§70 Complete Vector Fields#^prop-70-3|§70.3]], [[§67 Integral Curves#^lem-67-4|§67.4]]
+
 > [!definition] Definition §70.2: Infinitesimal Generator
 > If $\mathbf{X} \in \mathfrak{X}(M)$ is complete, it is the **infinitesimal generator** of the $\mathbb{R}$-action $\varphi$ of Proposition [[§70 Complete Vector Fields#^prop-70-3|§70.3]].
 >
@@ -137,7 +157,7 @@ The uniform time lemma (Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]], 
 
 “We have shown half a theorem”: a complete vector field gives rise to an $\mathbb{R}$-action on $M$. “The converse is true. It's really an observation.”
 
-> [!theorem] Theorem §70.4: Every Smooth $\mathbb{R}$-Action Has a Generator
+> [!theorem] Theorem §70.5: Every Smooth $\mathbb{R}$-Action Has a Generator
 > Let $\varphi : \mathbb{R} \times M \to M$ be a smooth action of $(\mathbb{R}, +)$ on $M$, written $\varphi_t(p) = \varphi^p(t) = \varphi(t, p)$. Define
 >
 > $$
@@ -148,7 +168,7 @@ The uniform time lemma (Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]], 
 >
 > *Lee: Proposition 9.7*
 
-^thm-70-4
+^thm-70-5
 
 > [!proof]+ Proof
 > *(Lecture 25: “Maybe I'm making a pedagogical mistake … Let's prove it. There's something to be proved.” The smoothness of $\mathbf{X}$ and the last step, which Uribe skipped, are filled in.)*
@@ -171,7 +191,7 @@ The uniform time lemma (Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]], 
 >
 > *$\mathbf{X}$ is complete and $\theta = \varphi$.* A student asked how we know the flow of $\mathbf{X}$ is complete; Uribe: “I can't assume that $\mathbf{X}$ is complete. It has to come out of the proof,” by the group law, which he skipped. *(Filled in, by maximality instead.)* $\varphi^p$ is an integral curve starting at $p$ defined on all of $\mathbb{R}$, so by Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]] the maximal domain of $p$ contains $\mathbb{R}$, and $\theta^p = \varphi^p$. This holds for every $p$: $\mathbf{X}$ is complete and $\theta = \varphi$ on $\mathcal{D}_{\mathbf{X}} = \mathbb{R} \times M$.
 
-^pf-70-4
+^pf-70-5
 
 *Uses:* [[§31 Tangent Vectors as Velocities of Curves#^cor-31-2|§31.2]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
 
@@ -179,12 +199,12 @@ So complete vector fields on $M$ and smooth $\mathbb{R}$-actions on $M$ are the 
 
 *Naturality of integral curves.* “Now I want to do one more thing.”
 
-> [!theorem] Proposition §70.5: Naturality of Integral Curves
+> [!theorem] Proposition §70.6: Naturality of Integral Curves
 > Let $F : M \to N$ be smooth, $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{Y} \in \mathfrak{X}(N)$. Then $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]) if and only if, for every integral curve $c : I \to M$ of $\mathbf{X}$, $F \circ c : I \to N$ is an integral curve of $\mathbf{Y}$.
 >
 > *Lee: Proposition 9.6*
 
-^prop-70-5
+^prop-70-6
 
 “If you have related fields, then composing integral curves of the first with $F$ will give you integral curves of $\mathbf{Y}$.”
 
@@ -199,21 +219,21 @@ So complete vector fields on $M$ and smooth $\mathbb{R}$-actions on $M$ are the 
 >
 > $(\Leftarrow)$ Given $p \in M$, let $c$ be an integral curve of $\mathbf{X}$ starting at $p$ (Theorem [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]]). $F \circ c$ is an integral curve of $\mathbf{Y}$, so at $t = 0$, by the display, $\mathbf{Y}_{F(p)} = dF_p(\dot c(0)) = dF_p(\mathbf{X}_p)$.
 
-^pf-70-5
+^pf-70-6
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]]
 
 Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] is the case of a diffeomorphism $F$ and $\mathbf{Y} = F_\ast\mathbf{X}$, the unique field $F$-related to $\mathbf{X}$ (Proposition [[§59 Related Vector Fields#^prop-59-2|§59.2]]). “But the reason I'm rushing is because there is a very important case of $F$-related fields, which is the left-invariant fields on a Lie group.”
 
-> [!theorem] Theorem §70.6: Left-Invariant Fields Are Complete
+> [!theorem] Theorem §70.7: Left-Invariant Fields Are Complete
 > Every left-invariant vector field $\mathbf{X}$ on a Lie group $G$ is complete. Moreover, $\varphi^g(t) = g\, \varphi^e(t)$ for all $g \in G$ and $t \in \mathbb{R}$.
 >
 > *Lee: Theorem 9.18*
 
-^thm-70-6
+^thm-70-7
 
 > [!proof]+ Proof
-> *(Lecture 25, by the uniform time lemma.)* Let $\varepsilon > 0$ be such that the integral curve of $\mathbf{X}$ starting at $e \in G$ is defined for $|t| < \varepsilon$ (any $\varepsilon$ with $(-\varepsilon, \varepsilon) \subseteq (\alpha(e), \beta(e))$). Pick $g \in G$. The left translation $L_g : G \to G$ is smooth and $\mathbf{X}$ is $L_g$-related to itself (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]]), so by Proposition [[§70 Complete Vector Fields#^prop-70-5|§70.5]]
+> *(Lecture 25, by the uniform time lemma.)* Let $\varepsilon > 0$ be such that the integral curve of $\mathbf{X}$ starting at $e \in G$ is defined for $|t| < \varepsilon$ (any $\varepsilon$ with $(-\varepsilon, \varepsilon) \subseteq (\alpha(e), \beta(e))$). Pick $g \in G$. The left translation $L_g : G \to G$ is smooth and $\mathbf{X}$ is $L_g$-related to itself (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]]), so by Proposition [[§70 Complete Vector Fields#^prop-70-6|§70.6]]
 >
 > $$
 > t \mapsto L_g\big(\varphi_t(e)\big) = g\, \varphi^e(t)
@@ -221,9 +241,9 @@ Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] is the case of a diffeomorphism 
 >
 > is an integral curve of $\mathbf{X}$, “obviously also defined for the same values of $t$,” $|t| < \varepsilon$. It starts at $L_g(e) = g$, with velocity $dL_g(\mathbf{X}_e) = \mathbf{X}_g$. *(On the board: “it starts at $d(L_g)(\mathbf{X}) = \mathbf{X}_g$”; the starting point is $g$, and $\mathbf{X}_g$ is the velocity there.)* So the integral curve starting at $g$ is defined at least for $|t| < \varepsilon$, with $\varepsilon$ independent of $g$, “$g$ was arbitrary”; by Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]], $\mathbf{X}$ is complete. *(Filled in.)* For the last statement, now $\varphi^e$ is defined on $\mathbb{R}$, and the same argument shows that $t \mapsto g\varphi^e(t)$ is an integral curve on $\mathbb{R}$ starting at $g$, so it is $\varphi^g$ (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]).
 
-^pf-70-6
+^pf-70-7
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], [[§70 Complete Vector Fields#^prop-70-5|§70.5]], [[§70 Complete Vector Fields#^lem-70-1|§70.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], [[§70 Complete Vector Fields#^prop-70-6|§70.6]], [[§70 Complete Vector Fields#^lem-70-1|§70.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
 
 ![[m591-70-6.svg]]
 

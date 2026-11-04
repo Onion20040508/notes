@@ -207,13 +207,13 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 9.2 | [[§68 Local Existence and Uniqueness#^thm-68-2\|Thm. §68.2]] |
 | Lemma 9.3 | [[§67 Integral Curves#^lem-67-4\|Lem. §67.4]] |
 | Lemma 9.4 | [[§67 Integral Curves#^lem-67-4\|Lem. §67.4]] |
-| Proposition 9.6 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]], [[§70 Complete Vector Fields#^prop-70-5\|Prop. §70.5]] |
-| Proposition 9.7 | [[§70 Complete Vector Fields#^thm-70-4\|Thm. §70.4]] |
+| Proposition 9.6 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]], [[§70 Complete Vector Fields#^prop-70-6\|Prop. §70.6]] |
+| Proposition 9.7 | [[§70 Complete Vector Fields#^thm-70-5\|Thm. §70.5]] |
 | Example 9.10 | [[§69 Maximal Integral Curves and Flows#^ex-69-1\|Ex. §69.1]] |
 | Theorem 9.12 | [[§68 Local Existence and Uniqueness#^prop-68-3\|Prop. §68.3]], [[§69 Maximal Integral Curves and Flows#^def-69-1\|Def. §69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1\|Prop. §69.1]], [[§69 Maximal Integral Curves and Flows#^thm-69-4\|Thm. §69.4]], [[§69 Maximal Integral Curves and Flows#^lem-69-3\|Lem. §69.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-5\|Prop. §69.5]], [[§70 Complete Vector Fields#^prop-70-3\|Prop. §70.3]] |
 | Lemma 9.15 | [[§70 Complete Vector Fields#^lem-70-1\|Lem. §70.1]] |
 | Corollary 9.17 | [[§70 Complete Vector Fields#^thm-70-2\|Thm. §70.2]] |
-| Theorem 9.18 | [[§70 Complete Vector Fields#^thm-70-6\|Thm. §70.6]] |
+| Theorem 9.18 | [[§70 Complete Vector Fields#^thm-70-7\|Thm. §70.7]] |
 | Problem 9-1 | [[§68 Local Existence and Uniqueness#^cor-68-4\|Cor. §68.4]], [[§69 Maximal Integral Curves and Flows#^prop-69-2\|Prop. §69.2]] |
 | Example 10.3 | [[§41 Examples of Fibrations#^ex-41-2\|Ex. §41.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
