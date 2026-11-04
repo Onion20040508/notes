@@ -5,7 +5,7 @@ chapter: 7
 section: 41
 tags: [functional-analysis, math556]
 ---
-← [[§40 The Baire Category Theorem]] · ↑ [[· 7 Inverses, Open Maps, and Baire Category]] · [[§42 Bras, Kets, and the Riesz Map]] →
+← [[§40 The Baire Category Theorem]] · ↑ [[· 7 Inverses, Open Maps, and Baire Category]] · [[§42 Uniform Boundedness and Approximation]] →
 
 *Stage: maps — Thread: completeness. Baire's theorem applied to $Y = \bigcup_n M(B(0,n))$: a bounded linear map onto a Banach space is open; bounded inverses, equivalent norms and closed graphs follow.*
 

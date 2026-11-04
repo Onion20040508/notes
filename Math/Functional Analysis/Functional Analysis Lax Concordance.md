@@ -71,6 +71,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | [[§33 Sobolev Spaces and Weak Derivatives\|§33]] Sobolev spaces | §5.1, example (g) | Weak derivatives, $H^1_0$ and the Poincaré inequality are not in Lax's Chapters 1–15 as treated here. |
 | [[§36 Duality in Normed Spaces\|§36]] Duality in normed spaces | Ch. 8; §5.1, Thm 5 | Normed Hahn–Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch. 8 has not been checked against the text here, so no Ch. 8 numbers are cited. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. |
 | [[§37 Separable Duals and Reflexive Spaces\|§37]] Separable duals, reflexive spaces | Ch. 8 | Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch. 8 numbering not checked. |
+| [[§42 Uniform Boundedness and Approximation\|§42]] Uniform boundedness and approximation | §10.1; §15.2–15.3; §15.5; §34.3 | The second-category open mapping theorem is Lax's Thm 16 (§15.5, an exercise there, with $Y$ Banach; in the lecture $Y$ is normed, and it turns out complete). The second equivalent norm theorem is Thm 13 of §15.5. Uniform boundedness: Lax proves it from Baire in §10.1 (Thms 2–3) and for operators in §15.3 (Thm 7); the lecture derives it from the equivalent norm theorem with the norm $\\|x\\| + \sup_\alpha \\|A_\alpha x\\|$. Banach–Steinhaus: §15.2 Thm 6 and §15.3 Cor 7$'$. The Lax equivalence theorem is Thm 8 of §34.3, for semigroups; the lecture's version is for equations $T_n x = y$. |
 | [[· 8 Functional Analysis and Quantum Mechanics\|Chapter 7]] (companion) | — | Dual spaces return in Lax Ch. 8. |
 
 ## C.4 Index of Lax Results Cited
@@ -179,6 +180,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §8.1, dual space | Definition [[§31 Dual Spaces#^def-31-1\|§31.1]] | Dual Space |
 | §8.1, Thm 3 | Corollary [[§31 Dual Spaces#^cor-31-1\|§31.1]] | The Dual is Always a Banach Space |
 | §8.3, Thm 11 | Theorem [[§31 Dual Spaces#^thm-31-4\|§31.4]] | The Dual of $L^p$ |
+| §10.1, Thms 2–3 (proved from the Baire category principle); §15.3, Thm 7 (for operators, assuming only $\|\ell(A_\alpha x)\| \le c(x, \ell)$, with $Y$ Banach) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-3\|§42.3]] | Uniform Boundedness Principle |
 | §15.1, definition of continuous map | Definition [[§30 Boundedness and Continuity#^def-30-1\|§30.1]] | Continuous Linear Map |
 | §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-2\|§30.2]] | Bounded Linear Map |
 | §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-3\|§30.3]] | Operator Norm |
@@ -186,6 +188,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §15.1, definition of $\mathcal{L}(X, U)$ | Definition [[§30 Boundedness and Continuity#^def-30-4\|§30.4]] | The Space $\mathcal{L}(X, Y)$ |
 | §15.1, Thm 1 | Proposition [[§30 Boundedness and Continuity#^prop-30-2\|§30.2]] | Continuous if and only if Bounded |
 | §15.1, Thms 2–3 | Theorem [[§30 Boundedness and Continuity#^thm-30-5\|§30.5]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |
+| §15.2, Thm 6 (the direction $\Leftarrow$); §15.3, Thm 7 and Cor 7$'$ (the direction $\Rightarrow$) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-4\|§42.4]] | Banach–Steinhaus |
 | §15.5, proof of Thm 9 (“Baire category principle”), p. 169 | Theorem [[§40 The Baire Category Theorem#^thm-40-2\|§40.2]] | Baire Category Theorem |
 | §15.5, Thm 9 | Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1\|§41.1]] | The Image of the Unit Ball Contains a Ball About $0$ |
 | §15.5, Thm 10 (the open mapping principle) | Definition [[§39 Solving Mx = y#^def-39-2\|§39.2]] | Open Map |
@@ -194,7 +197,10 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §15.5, definition before Thm 12 | Definition [[§39 Solving Mx = y#^def-39-3\|§39.3]] | Closed Map |
 | §15.5, Thm 12 | Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4\|§41.4]] | Closed Graph Theorem |
 | §15.5, Thm 13 (for two compatible complete norms, proved there from the closed graph theorem) | Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3\|§41.3]] | Equivalent Norm Theorem |
+| §15.5, Thm 13 | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-2\|§42.2]] | Equivalent Norm Theorem, Second Version |
 | §15.5, end (sets of second category, Thm 16) | Definition [[§40 The Baire Category Theorem#^def-40-1\|§40.1]] | Nowhere Dense; First and Second Category |
+| §15.5, Thm 16 and Exercise 13 (there $Y$ is a Banach space, and the conclusion is $R(T) = Y$) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-1\|§42.1]] | Open Mapping Theorem, General Form |
 | §16.1, Thm 1(i); §16.3.1 | Example [[§30 Boundedness and Continuity#^ex-30-2\|§30.2]] | The Fourier Transform from $L^1$ to $L^\infty$ |
+| §34.3, Thm 8 (Lax's equivalence theorem, for difference approximations of a semigroup) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5\|§42.5]] | Lax Equivalence Theorem |
 | cf. §7.2, before (22) | Proposition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-32-4\|§32.4]] | Symmetric Lax–Milgram is Riesz |
 | cf. Ch. 31, Thm 1 (symmetric forms); §6.3, (20) | Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1\|§32.1]] | Bounded Sesquilinear Forms are Bounded Operators |

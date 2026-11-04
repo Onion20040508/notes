@@ -11,7 +11,7 @@ tags: [subject, functional-analysis]
 ---
 # Functional Analysis
 
-MATH 556, *Applied Functional Analysis* (Fall 2026, Sijue Wu); text Lax, *Functional Analysis* (Chapters 1, 3, 5, 6 and 15). Prerequisites: linear algebra, some complex analysis, advanced calculus; Lebesgue theory is not assumed. Section numbers §1–§45 are the notes' own; every box with a counterpart in Lax ends with it (*Lax: …*), and [[Functional Analysis Lax Concordance]] reads the two side by side. [[Functional Analysis Problem-Solving Techniques]] collects the recurring proof strategies; [[Functional Analysis Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math556_notes.tex`.
+MATH 556, *Applied Functional Analysis* (Fall 2026, Sijue Wu); text Lax, *Functional Analysis* (Chapters 1, 3, 5, 6 and 15). Prerequisites: linear algebra, some complex analysis, advanced calculus; Lebesgue theory is not assumed. Section numbers §1–§46 are the notes' own; every box with a counterpart in Lax ends with it (*Lax: …*), and [[Functional Analysis Lax Concordance]] reads the two side by side. [[Functional Analysis Problem-Solving Techniques]] collects the recurring proof strategies; [[Functional Analysis Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math556_notes.tex`.
 
 ## Roadmap
 The course moves through three stages of structure on a linear space: pure algebra, with no topology at all (Chapters 1–2); a norm, bringing distance, limits and completeness (Chapters 3–4); and an inner product, bringing angles and orthogonality (Chapter 5). Four threads run across the stages, and most theorems of the course are a step along one of them or a point where two of them meet: [[· 6 Bounded Linear Maps|Chapter 6]] begins the study of linear maps between normed spaces, and [[· 7 Inverses, Open Maps, and Baire Category|Chapter 7]] asks when $Mx = y$ can be solved stably (Banach's inverse mapping theorem, the Baire category theorem).
@@ -120,6 +120,13 @@ graph TD
 - [[Spanning Criterion]] (§37.1)
 - [[Separable Dual Implies Separable Space]] (§37.3)
 - [[Closed Subspaces of Reflexive Spaces are Reflexive]] (§37.8)
+- [[Banach's Inverse Mapping Theorem]] (§39.2)
+- [[Baire Category Theorem]] (§40.2)
+- [[Open Mapping Theorem]] (§41.2)
+- [[Closed Graph Theorem]] (§41.4)
+- [[Uniform Boundedness Principle]] (§42.3)
+- [[Banach–Steinhaus Theorem]] (§42.4)
+- [[Lax Equivalence Theorem]] (§42.5)
 
 ## Summaries
 - [[Functional Analysis Lax Concordance]]: notation, where the course's route differs from Lax's, the chapter map, and every Lax result cited in these notes with its counterpart here.

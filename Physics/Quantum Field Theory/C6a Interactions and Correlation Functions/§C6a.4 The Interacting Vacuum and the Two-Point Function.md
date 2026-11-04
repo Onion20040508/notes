@@ -88,7 +88,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > [!derivation]- Derivation
 > On the regularized theory ([[§C6a.1 From Free to Interacting Fields#^rem-c6a-1-4|§C6a.1, ★ Remark: In what sense φ̂⁴(x) is defined]]) $\hat H$ is a Hermitian matrix with an orthonormal eigenbasis $|n\rangle$, $\hat H|n\rangle = E_n|n\rangle$, $n = 0$ being $|\Omega\rangle$ ([[§24 Spectral Theorem#^ladr-7-31|LADR 7.31]]); with a continuous spectrum the sums below become integrals over the spectral measure and the same bound holds.
 >
-> **Step 1** (insert a complete set of exact eigenstates). $|0\rangle = \sum_n|n\rangle\langle n|0\rangle$ ([[§43 The Completeness Relation#^cor-43-4|556 Cor. §43.4]]), and $e^{-i\hat HT}|n\rangle = e^{-iE_nT}|n\rangle$, so
+> **Step 1** (insert a complete set of exact eigenstates). $|0\rangle = \sum_n|n\rangle\langle n|0\rangle$ ([[§44 The Completeness Relation#^cor-44-4|556 Cor. §44.4]]), and $e^{-i\hat HT}|n\rangle = e^{-iE_nT}|n\rangle$, so
 >
 > $$
 > e^{-i\hat HT}|0\rangle = \sum_ne^{-iE_nT}\,|n\rangle\langle n|0\rangle = e^{-iE_0T}|\Omega\rangle\langle\Omega|0\rangle + \sum_{n\ne0}e^{-iE_nT}\,|n\rangle\langle n|0\rangle .
@@ -118,7 +118,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > e^{iE_0T_\varepsilon}e^{-i\hat HT_\varepsilon}|0\rangle - |\Omega\rangle\langle\Omega|0\rangle = \sum_{n\ne0}e^{-i(E_n - E_0)T}\,e^{-\varepsilon(E_n - E_0)T}\,|n\rangle\langle n|0\rangle .
 > $$
 >
-> **Step 5** (the remainder vanishes). By orthonormality (Parseval, [[§43 The Completeness Relation#^cor-43-4|556 Cor. §43.4]]), $|e^{-i(E_n - E_0)T}| = 1$, $E_n - E_0 \ge \Delta$ for $n \ne 0$ and $\sum_n|\langle n|0\rangle|^2 = \langle0|0\rangle = 1$:
+> **Step 5** (the remainder vanishes). By orthonormality (Parseval, [[§44 The Completeness Relation#^cor-44-4|556 Cor. §44.4]]), $|e^{-i(E_n - E_0)T}| = 1$, $E_n - E_0 \ge \Delta$ for $n \ne 0$ and $\sum_n|\langle n|0\rangle|^2 = \langle0|0\rangle = 1$:
 >
 > $$
 > \Bigl\|\sum_{n\ne0}e^{-i(E_n - E_0)T}e^{-\varepsilon(E_n - E_0)T}|n\rangle\langle n|0\rangle\Bigr\|^2 = \sum_{n\ne0}e^{-2\varepsilon(E_n - E_0)T}|\langle n|0\rangle|^2 \le e^{-2\varepsilon\Delta T}\sum_n|\langle n|0\rangle|^2 = e^{-2\varepsilon\Delta T} \;\xrightarrow{\;T\to\infty\;}\; 0
@@ -137,7 +137,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 
 ^der-c6a-4-1
 
-*Uses:* [[§24 Spectral Theorem#^ladr-7-31|LADR 7.31]], [[§43 The Completeness Relation#^cor-43-4|556 Cor. §43.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
+*Uses:* [[§24 Spectral Theorem#^ladr-7-31|LADR 7.31]], [[§44 The Completeness Relation#^cor-44-4|556 Cor. §44.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
 
 > [!caution] Caution: Two T's
 > $T$ is used for the large time and $T\{\cdots\}$ for time ordering, as in the lecture and in PS. The lecture: the large time is used "only at intermediate stages. Ultimately, take it to infinity"; in final formulas only one $T$ is left, and it means time ordering. Here time ordering is always written with braces, the large time never.

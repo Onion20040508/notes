@@ -29,7 +29,7 @@ So far $X$ has had only linear structure, and the [[§5 Statement and Motivation
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§11 Normed Linear Spaces#^lem-11-3|Lemma §11.3: Reverse Triangle Inequality]]: 62 later results
-- [[§11 Normed Linear Spaces#^prop-11-4|Proposition §11.4: A Norm is Continuous]]: 51 later results
+- [[§11 Normed Linear Spaces#^lem-11-3|Lemma §11.3: Reverse Triangle Inequality]]: 67 later results
+- [[§11 Normed Linear Spaces#^prop-11-4|Proposition §11.4: A Norm is Continuous]]: 56 later results
 - [[§11 Normed Linear Spaces#^prop-11-5|Proposition §11.5: Limits are Unique; Convergent Sequences are Cauchy]]: 34 later results
 - [[§11 Normed Linear Spaces#^prop-11-6|Proposition §11.6: Properties of the Closure]]: 13 later results

@@ -26,8 +26,8 @@ tags: [measure-theory, hub]
 - [[§35 Lᵖ as a Banach Space#^cor-35-10|Corollary §35.10: Lᵖ Convergence Implies A.E. Convergent Subsequence]]
 
 ## Used in (Functional Analysis)
-- [[§19 The Function Spaces Lᵖ(Ω)#^rem-19-2|Remark: What “Integrable” Means Here]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-2|Theorem §19.2: Minkowski's Inequality for Functions]]
+- [[§19 The Function Spaces Lᵖ(Ω)#^rem-19-2|Remark: What “Integrable” Means Here]]
 - [[§29 Sequence and Function Spaces#^prop-29-4|Proposition §29.4: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
 
 ## Connections

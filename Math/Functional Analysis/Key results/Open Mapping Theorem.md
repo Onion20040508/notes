@@ -14,7 +14,7 @@ tags: [functional-analysis, hub]
 - [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|Theorem §41.1: The Image of the Unit Ball Contains a Ball About 0]]
 
 ## Used in (Functional Analysis)
-- (not cited later in the course)
+- [[§42 Uniform Boundedness and Approximation#^thm-42-1|Theorem §42.1: Open Mapping Theorem, General Form]]
 
 ## Connections
 - TODO

@@ -280,10 +280,11 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 
 ^rem-t19
 
-> [!example] Example T19: Applications (Lectures 11–13)
+> [!example] Example §T19: Applications (Lectures 11–17)
 > - Poincaré on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|§33.7]]), from [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|Poincaré]] on $C_c^\infty$.
 > - Limits in $W^{1,p}$ satisfy integration by parts (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]).
 > - A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], Step 3); the same fails in $\ell^\infty$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
+> - Banach–Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-4|§42.4]]): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
 
 ^ex-t19
 
@@ -384,8 +385,28 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 
 ^rem-t27
 
-> [!example] Example T27: Applications (Lecture 16)
+> [!example] Example §T27: Applications (Lectures 16–17)
 > - The closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]).
 > - $C^1[a,b]$ is not complete in the maximum norm (Example [[§41 The Open Mapping Theorem and Its Consequences#^ex-41-1|§41.1]]).
+> - The uniform boundedness principle (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-3|§42.3]]): the norm $\|x\| + \sup_\alpha \|A_\alpha x\|$.
+> - The second equivalent norm theorem (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-2|§42.2]]): the identity map is closed.
 
 ^ex-t27
+
+## Technique 28: Difference of Inverses
+
+> [!remark] Remark: Strategy
+> To compare the inverses of two operators, factor the difference through the operators themselves:
+>
+> $$
+> T_n^{-1} - T^{-1} = T_n^{-1}\,(T - T_n)\,T^{-1} ,
+> $$
+>
+> applied to $y$ by inserting $y = T(T^{-1} y)$. A uniform bound on $\|T_n^{-1}\|$ (stability) then transfers the convergence $T_n \to T$ at the single point $T^{-1} y$ (consistency) to convergence of the inverses at $y$. The uniform bound usually comes from the uniform boundedness principle.
+
+^rem-t28
+
+> [!example] Example §T28: Application (Lecture 17)
+> The Lax equivalence theorem (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]).
+
+^ex-t28
