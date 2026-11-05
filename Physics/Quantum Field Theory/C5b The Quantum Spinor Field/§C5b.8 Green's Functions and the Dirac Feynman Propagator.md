@@ -53,23 +53,10 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 
 ^thm-c5b-8-1
 
-> [!derivation]- Derivation
-> **1. The operator identity.** $(i\slashed{\partial} - m)(i\slashed{\partial} + m) = -\slashed{\partial}\slashed{\partial} + im\slashed{\partial} - im\slashed{\partial} - m^2 = -(\partial^2 + m^2)$, with $\slashed{\partial}\slashed{\partial} = \partial^2$ ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]]; the partial derivatives commute, also on distributions).
->
-> **2. Green's function.** $(i\slashed{\partial} - m)S_C = -(\partial^2 + m^2)D_C = -(-i\delta^4) = i\delta^4$, in $\mathcal S'$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]]; for $D_F$, [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]]). ⚑ By-product: the Dirac normalization $+i\delta^4$ differs in sign from the Klein–Gordon $-i\delta^4$ because of the minus sign in Step 1 → Conventions of this note.
->
-> **3. Momentum space.** $(\slashed{p} - m)\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon} = \frac{i(p^2 - m^2)}{p^2 - m^2 + i\varepsilon} = i - \frac{i\cdot i\varepsilon}{p^2 - m^2 + i\varepsilon}$; the last term is $\varepsilon$ times a family converging in $\mathcal S'$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]]), so it tends to $0$.
->
-> **4. $S_R = (i\slashed{\partial} + m)D_R$.** $D_R = \theta(\xi^0)iD$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], 1). Apply $i\slashed{\partial} + m = i\gamma^0\partial_0 + i\gamma^j\partial_j + m$ slice by slice. The spatial derivatives and $m$ act on $iD$ only. The time derivative obeys the product rule with $\partial_0\theta(\xi^0) = \delta(\xi^0)$ ([[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], 2): $\partial_0[\theta(\xi^0)iD] = \delta(\xi^0)\,iD + \theta(\xi^0)\,\partial_0iD$. Hence $(i\slashed{\partial} + m)[\theta(\xi^0)iD] = \theta(\xi^0)(i\slashed{\partial} + m)iD + i\gamma^0\delta(\xi^0)\,iD$. In the last term, $D$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], 3), so $\delta(\xi^0)D$ is $\delta(\xi^0)\otimes D(0, \cdot)$, and $D(0, \cdot) = 0$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|Theorem §C2b.4.12]]). Dropped: the contact term, because the scalar field commutes with itself at equal times. What remains is $\theta(\xi^0)(i\slashed{\partial} + m)iD = \theta(\xi^0)\,iS$ ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]]). (The same contact term is dropped for $S_F$ in the second route under [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].) The same with $-\theta(-\xi^0)$ for $S_A$. The transform is $(\slashed{p} + m)\tilde D_R$ with $\tilde D_R$ of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]] (PS (3.120): closing below for $x^0 > y^0$ picks up both poles and gives $S^+_W + S^-_W$).
->
-> **5. Support.** $\operatorname{supp}D_R$ is the closed forward cone ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], 3), and derivatives do not enlarge supports (Step 1 of [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^der-c5b-7-3|Derivation §C5b.7.3]]).
->
-> **What the derivation shows**
-> - Every Dirac Green's function is $i\slashed{\partial} + m$ applied to a Klein–Gordon one; the boundary condition (contour) is inherited unchanged.
+> [!derivation]- Derivation (held until Problem Set 9 is submitted)
+> Solving the Dirac equation with a source is one of the two derivations of $S_F$ set as homework (PHY 513 Lecture 17, slide 17), so this derivation is held back until the problem set is submitted (user decision, 2026-11-04). Source: PS §3.5, eqs. (3.116)–(3.120).
 
 ^der-c5b-8-1
-
-*Uses:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|Def. §C2b.5.1]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|Theorem §C2b.4.12]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]]
 
 ## Time ordering and the Feynman propagator
 
