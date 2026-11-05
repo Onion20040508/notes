@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 513 (UMich, F. Larsen, Fall 2026)"]
 textbooks: ["Peskin & Schroeder, An Introduction to Quantum Field Theory", "Yu Zhao-Huan (余钊焕), Lecture Notes on Quantum Field Theory (量子场论讲义)", "Schwartz, Quantum Field Theory and the Standard Model (further reading)"]
 conventions: "[[Larsen PHY 513]]"
-status: "level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C6a (§C6a.1–§C6a.4, Lecture 13: φ⁴ theory, interaction picture, Dyson series, interacting vacuum, master formula; §C6a.5–§C6a.11, Lecture 14; §C6a.12, rules for polynomial interactions), C6b (§C6b.1, §C6b.4–§C6b.9, Lectures 15–16), C6c (§C6c.1–§C6c.8, Lecture 16 and Problem Set 8, Feynman rules for amplitudes after Yu ch. 7), C6d (§C6d.1–§C6d.5, Lecture 17: Yukawa theory and the Feynman rules for fermions; §C6d.6★ Yukawa potential), C9 (§C9.1–§C9.5 parity incl. the scalar field, §C9.6–§C9.11 charge conjugation, physical spin, time reversal and CPT, taught; §C9.12 C, T, CPT of the complex scalar field, Problem Set 7), CA written, CB skeleton (all statements in reading order; proofs being filled)"
+status: "level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C6a (§C6a.1–§C6a.4, Lecture 13: φ⁴ theory, interaction picture, Dyson series, interacting vacuum, master formula; §C6a.5–§C6a.11, Lecture 14; §C6a.12, rules for polynomial interactions), C6b (§C6b.1, §C6b.4–§C6b.9, Lectures 15–16), C6c (§C6c.1–§C6c.8, Lecture 16 and Problem Set 8, Feynman rules for amplitudes after Yu ch. 7), C6d (§C6d.1–§C6d.5, Lecture 17: Yukawa theory and the Feynman rules for fermions; §C6d.7★ Yukawa potential), C9 (§C9.1–§C9.5 parity incl. the scalar field, §C9.6–§C9.11 charge conjugation, physical spin, time reversal and CPT, taught; §C9.12 C, T, CPT of the complex scalar field, Problem Set 7), CA written, CB skeleton (all statements in reading order; proofs being filled)"
 tags: [subject, quantum-field-theory]
 ---
 # Quantum Field Theory
@@ -23,7 +23,7 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 - [[· C6a Interactions and Correlation Functions]]
 - [[· C6b The S-Matrix, Amplitudes and Observables]]
 - [[· C6c Feynman Rules for Amplitudes]]
-- [[· C6d Feynman Rules for Fermions]] (★ §C6d.6)
+- [[· C6d Feynman Rules for Fermions]] (★ §C6d.7)
 - [[· C9 Discrete Symmetries and Majorana Fields]]
 - [[· CA Mathematical Methods]]
 - [[· CB Lie Groups, Lie Algebras and Representations]] (★ §CB.20)

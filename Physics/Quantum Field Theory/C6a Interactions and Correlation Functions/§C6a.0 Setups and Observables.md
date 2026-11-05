@@ -62,7 +62,7 @@ Coleman's sentence for the first row: "Unless the interaction is with some exter
 >
 > - Without the counterterm the free vacuum persists only up to a divergent phase, $\langle0|U(+\infty, -\infty)|0\rangle = e^{-i(\gamma_+ + \gamma_- + E_0\tilde T)}$, "This is disgusting. A divergent phase" (p. 92); $a = E_0$ makes $\langle0|\hat S|0\rangle = 1$ (pp. 92–93).
 > - $\hat S = \mathbb 1$: a static source has $\tilde j(k) = 2\pi\delta(k^0)\,\tilde j(\mathbf k)$, and a particle needs $k^0 = E_{\mathbf k} \ge m > 0$; "A time independent source can impart no energy" (p. 94).
-> - Two point sources $j = g[\delta^3(\mathbf x - \mathbf y_1) + \delta^3(\mathbf x - \mathbf y_2)]$: the $\mathbf y$-dependent part of $E_0$ is the **Yukawa potential** $V(r) = -\frac{g^2}{4\pi r}e^{-mr}$, $r = |\mathbf y_1 - \mathbf y_2|$ (pp. 95–96), the same potential as between two fermions exchanging the Yukawa scalar ([[§C6d.6★ The Yukawa Potential#^thm-c6d-6-3|§C6d.6★, Theorem §C6d.6.3]]); the ground state in the free basis is $\langle\mathbf k_1\cdots\mathbf k_n|\Omega\rangle$, obtained by switching on slowly and off abruptly and reusing Model 1 (pp. 96–97).
+> - Two point sources $j = g[\delta^3(\mathbf x - \mathbf y_1) + \delta^3(\mathbf x - \mathbf y_2)]$: the $\mathbf y$-dependent part of $E_0$ is the **Yukawa potential** $V(r) = -\frac{g^2}{4\pi r}e^{-mr}$, $r = |\mathbf y_1 - \mathbf y_2|$ (pp. 95–96), the same potential as between two fermions exchanging the Yukawa scalar ([[§C6d.7★ The Yukawa Potential#^thm-c6d-7-3|§C6d.7★, Theorem §C6d.7.3]]); the ground state in the free basis is $\langle\mathbf k_1\cdots\mathbf k_n|\Omega\rangle$, obtained by switching on slowly and off abruptly and reusing Model 1 (pp. 96–97).
 >
 > *Source: Coleman pp. 79, 91–97 ("Model 2", "mesostatics")*
 
@@ -114,7 +114,7 @@ Coleman's sentence for the first row: "Unless the interaction is with some exter
 > | cubic–quartic | $-\frac{g}{3!}\phi^3 - \frac{\lambda}{4!}\phi^4$ | [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2\|Model §C6a.8.2]]; [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1\|Example §C6c.6.1]] (Problem Set 8, Problem 2) |
 > | complex $(\phi^\dagger\phi)^2$ | $-\frac{\lambda}{4}(\phi^\dagger\phi)^2$ | [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-3\|Model §C6a.8.3]]; [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-7\|Example §C6a.9.7]] (Problem Set 8, Problem 1(b)) |
 > | two fields, $\Phi\phi^2$ | $-\mu\,\Phi\phi^2$ | [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-7\|Model §C6b.9.7]]; [[§C6b.9 Decay Rates and Widths#^ex-c6b-9-1\|Example §C6b.9.1]] (Problem Set 8, Problem 4) |
-> | Yukawa (scalar and Dirac field) | $-g\,\bar\psi\psi\phi$ | [[§C6d.1 Yukawa Theory#^mod-c6d-1-1|Model §C6d.1.1]]; [[§C6d.4 Feynman Rules for Yukawa Theory#^ex-c6d-4-1\|Example §C6d.4.1]], [[§C6d.5 Fermion–Fermion Scattering#^ex-c6d-5-1\|Example §C6d.5.1]] (Lecture 17) |
+> | Yukawa (scalar and Dirac field) | $-g\,\bar\psi\psi\phi$ | [[§C6d.1 Yukawa Theory#^mod-c6d-1-1|Model §C6d.1.1]]; [[§C6d.4 First Order#^ex-c6d-4-1\|Example §C6d.4.1]], [[§C6d.5 Second Order#^ex-c6d-5-2\|Example §C6d.5.2]] (Lecture 17) |
 >
 > It is assumed to be a relativistic quantum theory in the sense of [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^mod-c3-4-4|Model §C3.4.4]], with vacuum $|\Omega\rangle$.
 >

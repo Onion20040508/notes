@@ -39,7 +39,7 @@ Turns a Feynman diagram of a polynomial interaction into its coefficient: the sy
 | Cubic–quartic scattering trees | $\phi^3 + \phi^4$: $72$, $144$ | $S = 1$: [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1\|Example §C6c.6.1]], [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2\|Example §C6c.6.2]], [[§C6c.8 From the Question to the Formula#^ex-c6c-8-5\|Example §C6c.8.5]] | step 5, saturated vertices |
 | One-loop $2 \to 2$ ($s$, $t$, $u$) | $\phi^4$, $n = 2$: $1152$ | $576$ each, $S = 2$: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^ex-c6c-5-1\|Example §C6c.5.1]] | $2!$ (two parallel lines) |
 | Source vacuum lines | $j\phi$, $2m$ vertices: $(2m)!$ | one orbit, $S = 2^m\,m!$: [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3\|Theorem §C6c.7.3]] | $2^m$ flips, $m!$ lines |
-| Yukawa diagrams | $\bar\psi\psi\phi$: three kinds of legs, $\lvert G\rvert = n!$ | every diagram with external points $S = 1$; second-order bubbles $S = 2$: [[§C6d.4 Feynman Rules for Yukawa Theory#^thm-c6d-4-3\|Theorem §C6d.4.3]] | no leg permutations |
+| Yukawa diagrams | $\bar\psi\psi\phi$: three kinds of legs, $\lvert G\rvert = n!$ | every diagram with external points $S = 1$; second-order bubbles $S = 2$: [[§C6d.4 First Order#^thm-c6d-4-7\|Theorem §C6d.4.7]] | no leg permutations |
 | Photon lines | C6d, QED rules (planned) | | |
 
 ## Pitfalls
