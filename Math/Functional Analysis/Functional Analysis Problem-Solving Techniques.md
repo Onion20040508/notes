@@ -280,11 +280,12 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 
 ^rem-t19
 
-> [!example] Example §T19: Applications (Lectures 11–17)
+> [!example] Example §T19: Applications (Lectures 11–18)
 > - Poincaré on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|§33.7]]), from [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|Poincaré]] on $C_c^\infty$.
 > - Limits in $W^{1,p}$ satisfy integration by parts (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]).
 > - A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], Step 3); the same fails in $\ell^\infty$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
 > - Banach–Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-4|§42.4]]): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
+> - $\sin(mx) \rightharpoonup 0$ in $L^p$, $1 < p < \infty$ (Lecture 18, Example [[§43 Weak and Weak-Star Convergence#^ex-43-3|§43.3]]): test only against continuous $g$, dense in $L^{p'}$, plus a uniform bound.
 
 ^ex-t19
 
@@ -324,7 +325,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 > - $\|y\| = \max_{\|\ell\| \le 1} |\ell(y)|$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]): $\ell_0(c\, y_0) = c\, \|y_0\|$ on $\operatorname{span}\{y_0\}$.
 > - The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]]): $\ell(c\, z_0 + y) = c\, m$ on $\operatorname{span}\{z_0, Y\}$.
 > - $(\ell^\infty)' \neq \ell^1$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]): $\lambda(x) = \lim x_j$ on the convergent sequences.
-> - Distance from a functional to $Y^\perp$ (Lecture 14, Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-9|§37.9]]): extend $\ell|_Y$ with the same norm.
+> - Distance from a functional to $Y^\perp$ (Lecture 14, Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]]): extend $\ell|_Y$ with the same norm.
 > - Closed subspaces of reflexive spaces (Lecture 14, Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|§37.8]], Step 2): extending makes the restriction map $X' \to Y'$ onto.
 
 ^ex-t22
@@ -410,3 +411,29 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 > The Lax equivalence theorem (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]).
 
 ^ex-t28
+
+## Technique 29: View Vectors as Functionals on the Dual
+
+> [!remark] Remark: Strategy
+> An element $x \in X$ is also a bounded linear functional on $X'$, $\ell \mapsto \ell(x)$, with the same norm. A sequence $\{x_n\}$ is then a sequence of bounded linear maps on the *Banach* space $X'$ (complete even when $X$ is not), and the uniform boundedness principle and Banach–Steinhaus apply to it. Statements about weak convergence become statements about pointwise convergence of operators.
+
+^rem-t29
+
+> [!example] Example §T29: Applications (Lecture 18)
+> - Criterion for weak convergence (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]]).
+> - Weakly convergent sequences are bounded (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-4|§43.4]]).
+> - $X$ reflexive $\iff$ $X'$ reflexive (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-9|§37.9]]): $X$ is a closed subspace of $X''$.
+
+^ex-t29
+
+## Technique 30: Fatten a Closed Set
+
+> [!remark] Remark: Strategy
+> A result proved for sets of interior points (open sets) transfers to closed sets $K$ when the point to be separated is at positive distance $d$ from $K$: replace $K$ by $K_\varepsilon = \{ x : \operatorname{dist}(x, K) < \varepsilon \}$ with $\varepsilon < d$. $K_\varepsilon$ inherits convexity, consists of interior points, and still misses the point; the room $\varepsilon$ also makes the separating functional bounded and the separation strict.
+
+^rem-t30
+
+> [!example] Example §T30: Application (Lecture 18)
+> Hyperplane separation in a normed space (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]), from Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]; and through it Mazur's theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-6|§43.6]]).
+
+^ex-t30

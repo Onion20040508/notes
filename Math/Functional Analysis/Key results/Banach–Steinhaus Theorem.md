@@ -14,7 +14,8 @@ tags: [functional-analysis, hub]
 - [[§42 Uniform Boundedness and Approximation#^thm-42-3|Theorem §42.3: Uniform Boundedness Principle]]
 
 ## Used in (Functional Analysis)
-- (not cited later in the course)
+- [[§43 Weak and Weak-Star Convergence#^thm-43-3|Theorem §43.3: Criterion for Weak Convergence]]
+- [[§43 Weak and Weak-Star Convergence#^thm-43-7|Theorem §43.7: Criterion for Weak-ast Convergence]]
 
 ## Connections
 - TODO

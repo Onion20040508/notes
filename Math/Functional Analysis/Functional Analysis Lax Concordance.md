@@ -70,9 +70,10 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | [[§32 Sesquilinear Forms and the Lax–Milgram Theorem\|§32]] Lax–Milgram | §6.3, Thm 6 | Proved through the operator $A$ of [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1\|Theorem §32.1]]: one-to-one with a lower bound, closed range, dense range. |
 | [[§33 Sobolev Spaces and Weak Derivatives\|§33]] Sobolev spaces | §5.1, example (g) | Weak derivatives, $H^1_0$ and the Poincaré inequality are not in Lax's Chapters 1–15 as treated here. |
 | [[§36 Duality in Normed Spaces\|§36]] Duality in normed spaces | Ch. 8; §5.1, Thm 5 | Normed Hahn–Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch. 8 has not been checked against the text here, so no Ch. 8 numbers are cited. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. |
-| [[§37 Separable Duals and Reflexive Spaces\|§37]] Separable duals, reflexive spaces | Ch. 8 | Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch. 8 numbering not checked. |
+| [[§37 Separable Duals and Reflexive Spaces\|§37]] Separable duals, reflexive spaces | Ch. 8 | Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch. 8 numbering not checked. $X$ reflexive $\iff$ $X'$ reflexive (Lecture 18) is not in Lax. |
 | [[§42 Uniform Boundedness and Approximation\|§42]] Uniform boundedness and approximation | §10.1; §15.2–15.3; §15.5; §34.3 | The second-category open mapping theorem is Lax's Thm 16 (§15.5, an exercise there, with $Y$ Banach; in the lecture $Y$ is normed, and it turns out complete). The second equivalent norm theorem is Thm 13 of §15.5. Uniform boundedness: Lax proves it from Baire in §10.1 (Thms 2–3) and for operators in §15.3 (Thm 7); the lecture derives it from the equivalent norm theorem with the norm $\\|x\\| + \sup_\alpha \\|A_\alpha x\\|$. Banach–Steinhaus: §15.2 Thm 6 and §15.3 Cor 7$'$. The Lax equivalence theorem is Thm 8 of §34.3, for semigroups; the lecture's version is for equations $T_n x = y$. |
-| [[· 8 Functional Analysis and Quantum Mechanics\|Chapter 7]] (companion) | — | Dual spaces return in Lax Ch. 8. |
+| [[§43 Weak and Weak-Star Convergence\|§43]] Weak and weak-star convergence | Ch. 10 (opening), §10.1, §10.3; §8.4 | Definition and Examples 1–2 open Lax's Ch. 10. The weak convergence criterion is §10.1 Thm 1 ($\Leftarrow$) with Thm 4$'$ (bounded); the norm bound Thm 5; Mazur's theorem Thm 6, proved there with support functions (§8.4 Thm 17), here with the separation theorem in normed spaces (as in the proof of Thm 17). Weak-$\ast$: the definition and Thm 11 of §10.3, the norm bound Exercise 6 there; Lax's example of weak-$\ast$ but not weak convergence (Example 5) uses measures on $[-1,1]$ instead of $\ell^1 = (c_0)'$. The weak-$\ast$ criterion is not in Lax. |
+| [[· 9 Functional Analysis and Quantum Mechanics\|Chapter 7]] (companion) | — | Dual spaces return in Lax Ch. 8. |
 
 ## C.4 Index of Lax Results Cited
 
@@ -180,7 +181,17 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §8.1, dual space | Definition [[§31 Dual Spaces#^def-31-1\|§31.1]] | Dual Space |
 | §8.1, Thm 3 | Corollary [[§31 Dual Spaces#^cor-31-1\|§31.1]] | The Dual is Always a Banach Space |
 | §8.3, Thm 11 | Theorem [[§31 Dual Spaces#^thm-31-4\|§31.4]] | The Dual of $L^p$ |
+| §8.4, in the proof of Thm 17 (a ball about $x_0$ is separated from $K$ by the extended hyperplane separation theorem, Ch. 3 Thm 6) | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5\|§43.5]] | Hyperplane Separation in a Normed Space |
+| Ch. 10, definition at the start of the chapter | Definition [[§43 Weak and Weak-Star Convergence#^def-43-1\|§43.1]] | Weak and Strong Convergence |
+| Ch. 10, the remark after the definition (part (1)) | Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-1\|§43.1]] | Basic Properties of Weak Limits |
+| Ch. 10, Example 1 (left as an exercise there) | Example [[§43 Weak and Weak-Star Convergence#^ex-43-1\|§43.1]] | Weak but Not Strong Convergence in $\ell^2$ |
+| Ch. 10, Example 2 | Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-2\|§43.2]] | Orthonormal Sequences Converge Weakly to $0$ |
+| §10.1, Thm 1 (the direction $\Leftarrow$, Exercise 3) and Thm 4$'$ (weakly convergent sequences are bounded) | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3\|§43.3]] | Criterion for Weak Convergence |
 | §10.1, Thms 2–3 (proved from the Baire category principle); §15.3, Thm 7 (for operators, assuming only $\|\ell(A_\alpha x)\| \le c(x, \ell)$, with $Y$ Banach) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-3\|§42.3]] | Uniform Boundedness Principle |
+| §10.1, Thms 4$'$ and 5 | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-4\|§43.4]] | The Norm of a Weak Limit |
+| §10.1, Thm 6 (for a closed convex $K$ containing the $x_n$; proved with support functions, §8.4 Thm 17) | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-6\|§43.6]] | Mazur's Theorem |
+| §10.3, definition (there $X$ is a Banach space) | Definition [[§43 Weak and Weak-Star Convergence#^def-43-2\|§43.2]] | Weak-$\ast$ Convergence |
+| §10.3, Thm 11 (bounded) and Exercise 6 (the norm bound) | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-8\|§43.8]] | The Norm of a Weak-$\ast$ Limit |
 | §15.1, definition of continuous map | Definition [[§30 Boundedness and Continuity#^def-30-1\|§30.1]] | Continuous Linear Map |
 | §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-2\|§30.2]] | Bounded Linear Map |
 | §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-3\|§30.3]] | Operator Norm |

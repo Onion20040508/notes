@@ -5,7 +5,7 @@ chapter: 7
 section: 42
 tags: [functional-analysis, math556]
 ---
-← [[§41 The Open Mapping Theorem and Its Consequences]] · ↑ [[· 7 Inverses, Open Maps, and Baire Category]] · [[§43 Bras, Kets, and the Riesz Map]] →
+← [[§41 The Open Mapping Theorem and Its Consequences]] · ↑ [[· 7 Inverses, Open Maps, and Baire Category]] · [[§43 Weak and Weak-Star Convergence]] →
 
 *Stage: maps — Thread: completeness. Two complete norms that are compatible are equivalent; with the norm $\|x\| + \sup_\alpha \|A_\alpha x\|$ this gives the uniform boundedness principle, and from it the convergence of approximations.*
 

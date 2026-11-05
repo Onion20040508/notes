@@ -19,7 +19,7 @@ tags: [functional-analysis, hub]
 - [[§36 Duality in Normed Spaces#^thm-36-2|Theorem §36.2: The Norm as a Maximum over the Dual]]
 - [[§36 Duality in Normed Spaces#^thm-36-6|Theorem §36.6: Distance to a Subspace]]
 - [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|Theorem §37.8: Closed Subspaces of Reflexive Spaces are Reflexive]]
-- [[§37 Separable Duals and Reflexive Spaces#^prop-37-9|Proposition §37.9: Distance from a Functional to Y^perp]]
+- [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|Proposition §37.10: Distance from a Functional to Y^perp]]
 
 ## Connections
 - TODO

@@ -16,9 +16,9 @@ tags: [functional-analysis, hub]
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|Corollary §37.2: Two Forms of the Spanning Criterion]]
 
 ## Used in (Functional Analysis)
-- (not cited later in the course)
+- [[§37 Separable Duals and Reflexive Spaces#^thm-37-9|Theorem §37.9: X is Reflexive if and only if X' is]]
 
 ## Connections
 - Step 1 uses the closed-subspace form of the [[Spanning Criterion]]; Step 2 uses normed [[§36 Duality in Normed Spaces#^thm-36-1|Hahn–Banach]] to make the restriction map $X' \to Y'$ onto ([[Functional Analysis Problem-Solving Techniques#^rem-t22|Technique 22]]).
-- The same restriction map gives $Y' \cong X'/Y^\perp$ ([[§37 Separable Duals and Reflexive Spaces#^rem-37-6|Remark]] after Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-9|§37.9]]).
+- The same restriction map gives $Y' \cong X'/Y^\perp$ ([[§37 Separable Duals and Reflexive Spaces#^rem-37-7|Remark]] after Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]]).
 - Examples of reflexive spaces: Hilbert spaces ([[§37 Separable Duals and Reflexive Spaces#^ex-37-2|Example §37.2]]) and $\ell^p$, $1 < p < \infty$ ([[§37 Separable Duals and Reflexive Spaces#^ex-37-3|Example §37.3]]); so every closed subspace of these is reflexive.

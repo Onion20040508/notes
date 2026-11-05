@@ -367,11 +367,42 @@ Why $\|\ell_s - \ell_t\| = 2$: the function $f$ (blue) has $\|f\|_\infty = 1$, e
 
 The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction $R$ to an element of $X''$, which reflexivity of $X$ represents by some $x_0$; functionals vanishing on $Y$ die under $R$, which puts $x_0$ in $Y$ (Step 1), and Hahn–Banach makes $R$ onto, so $x_0$ represents $\eta_0$ on all of $Y'$ (Step 2).
 
+*Lecture 18 (Thu Nov 5): Wu opened the lecture with the following problem, placed here next to the theorem it uses.*
+
+> [!remark] Remark: Notation: $x_0 \in X''$
+> Wu: for $\ell \in X'$ write $\ell(x) = \langle x, \ell \rangle$. For fixed $x_0 \in X$, $\ell \mapsto \langle x_0, \ell \rangle$ is a bounded linear functional on $X'$, the element $\eta_{x_0} = i(x_0)$ of $(X')'$ (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]): $\eta_{x_0}(\ell) = \langle \ell, \eta_{x_0} \rangle = \langle x_0, \ell \rangle$. Instead of introducing other notation, one simply says $x_0 \in (X')'$, identifying $\eta_{x_0}$ with $x_0$; the isometric isomorphism $i$ is not written. “So that's a good notation”; it will be used from now on. With it, “$X$ reflexive” reads $(X')' = X$.
+
+^rem-37-6
+
+> [!theorem] Theorem §37.9: $X$ is Reflexive if and only if $X'$ is
+> Let $X$ be a Banach space. Then $X$ is reflexive if and only if $X'$ is reflexive.
+
+^thm-37-9
+
+> [!proof]+ Proof
+> Wu: never memorize; understand the key point of each theorem, and the rest falls into place (like lifting a garment by its collar). Here the key point is that $X$ sits inside $X''$ as a *closed* subspace.
+>
+> **($\Rightarrow$)**
+> *(Wu called this direction easy, “$X$ reflexive means $X'' = X$”, and did not write it out.)* Assume $X$ is reflexive, and let $\Phi \in (X')'' = (X'')'$. Define $\ell = \Phi \circ i \in X'$, i.e. $\ell(x) = \Phi(i(x))$; it is linear and $|\ell(x)| \le \|\Phi\|\, \|i(x)\| = \|\Phi\|\, \|x\|$. Let $\eta \in X''$. Since $X$ is reflexive, $\eta = i(x)$ for some $x \in X$, and
+>
+> $$
+> \Phi(\eta) = \Phi(i(x)) = \ell(x) = i(x)(\ell) = \eta(\ell) .
+> $$
+>
+> So $\Phi$ is evaluation at $\ell$ on $X''$, i.e. $\Phi = i_{X'}(\ell)$, where $i_{X'} : X' \to (X')''$ is the canonical map of $X'$. Hence $i_{X'}$ is onto, and $X'$ is reflexive.
+>
+> **($\Leftarrow$)** Assume $X'$ is reflexive. *Step 1:* $X''$ is reflexive, by the direction ($\Rightarrow$) just proved, applied to the Banach space $X'$ (in place of $X$; $X'$ is complete by Corollary [[§31 Dual Spaces#^cor-31-1|§31.1]]): $X'$ reflexive implies $(X')' = X''$ reflexive. *Step 2:* $X \subset X''$, isometrically (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]). Since $X$ is a Banach space, $X$ is a closed linear subspace of $X''$: if $i(x_n) \to \eta$ in $X''$, then $\{i(x_n)\}$ is Cauchy in $X''$, hence $\{x_n\}$ is Cauchy in $X$ (the two spaces are isometric), so $x_n \to x$ for some $x \in X$, and $\eta = i(x)$ (since $\|i(x_n) - i(x)\| = \|x_n - x\| \to 0$ and limits are unique). *Step 3:* by Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|§37.8]], a closed linear subspace of a reflexive Banach space is reflexive; so $X$ is reflexive.
+> (Precisely, the theorem makes $i(X)$ reflexive, and reflexivity passes along an isometric isomorphism $T : X \to Z$: given $\eta \in X''$, define $\zeta \in Z''$ by $\zeta(m) = \eta(m \circ T)$ for $m \in Z'$; if $\zeta = i_Z(z)$, then for every $\ell \in X'$, writing $\ell = (\ell \circ T^{-1}) \circ T$, $\eta(\ell) = \zeta(\ell \circ T^{-1}) = \ell(T^{-1} z)$, so $\eta = i_X(T^{-1} z)$.)
+
+^pf-37-9
+
+*Uses:* [[§31 Dual Spaces#^cor-31-1|§31.1]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]], [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|§37.8]]
+
 ## Distance in the Dual
 
 The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]]) computes the distance from a vector to a subspace $Y$ by functionals in $Y^\perp$. The dual statement computes the distance from a functional to $Y^\perp$ by vectors in $Y$.
 
-> [!theorem] Proposition §37.9: Distance from a Functional to $Y^\perp$
+> [!theorem] Proposition §37.10: Distance from a Functional to $Y^\perp$
 > Let $X$ be a normed linear space and $Y$ a linear subspace. Then for every $\ell \in X'$,
 >
 > $$
@@ -380,7 +411,7 @@ The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]]
 >
 > the norm of the restriction $\ell|_Y \in Y'$. Compare $\displaystyle \inf_{y \in Y} \|z - y\| = \max_{\substack{\ell \in Y^\perp \\ \|\ell\| \le 1}} |\ell(z)|$: now the minimum is attained on the side of the dual.
 
-^prop-37-9
+^prop-37-10
 
 > [!proof]+ Proof
 > (If $Y = \{0\}$, read the right side as $\|\ell|_Y\|_Y = 0$; then $Y^\perp = X'$ and $m = \ell$ gives $0$. Assume $Y \neq \{0\}$.)
@@ -412,7 +443,7 @@ The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]]
 >
 > With Step 1, the infimum equals the supremum and is attained at $m_0$.
 
-^pf-37-9
+^pf-37-10
 
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
@@ -423,4 +454,4 @@ The distance from $\ell$ to $Y^\perp$, drawn in $X'$: the smallest ball about $\
 > [!remark] Remark: $Y' \cong X'/Y^\perp$
 > $Y^\perp$ is a closed subspace of $X'$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-7|§36.7]]), so $X'/Y^\perp$ carries the quotient norm $\|[\ell]\| = \inf_{m \in Y^\perp} \|\ell - m\|$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]]). The proposition says $\|[\ell]\| = \|\ell|_Y\|_Y$. Two functionals have the same restriction to $Y$ exactly when they differ by an element of $Y^\perp$, so $[\ell] \mapsto \ell|_Y$ is a well-defined, linear, norm-preserving map $X'/Y^\perp \to Y'$, and it is onto by Hahn–Banach. Hence $Y'$ is isometrically isomorphic to $X'/Y^\perp$: the dual of a subspace is a quotient of the dual, just as the dual of a quotient is a subspace of the dual (Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]).
 
-^rem-37-6
+^rem-37-7

@@ -7353,6 +7353,32 @@ So $y_0 = x_0$ works, and $Y$ is reflexive.
 The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction $R$ to an element of $X''$, which reflexivity of $X$ represents by some $x_0$; functionals vanishing on $Y$ die under $R$, which puts $x_0$ in $Y$ (Step 1), and Hahn--Banach makes $R$ onto, so $x_0$ represents $\eta_0$ on all of $Y'$ (Step 2).
 %% <<< END ADDED
 
+% Lecture 18 (2026-11-05). Source: Tianshuo's handwritten notes of the lecture (pages 48--50) and the Otter.ai transcript.
+\textit{Lecture 18 (Thu Nov 5): Wu opened the lecture with the following problem, placed here next to the theorem it uses.}
+
+\begin{rembox}[Notation: $x_0 \in X''$]\label{rem:bidual-notation}
+Wu: for $\ell \in X'$ write $\ell(x) = \langle x, \ell \rangle$. For fixed $x_0 \in X$, $\ell \mapsto \langle x_0, \ell \rangle$ is a bounded linear functional on $X'$, the element $\eta_{x_0} = i(x_0)$ of $(X')'$ (Proposition~\ref{prop:canonical-embedding}): $\eta_{x_0}(\ell) = \langle \ell, \eta_{x_0} \rangle = \langle x_0, \ell \rangle$. Instead of introducing other notation, one simply says $x_0 \in (X')'$, identifying $\eta_{x_0}$ with $x_0$; the isometric isomorphism $i$ is not written. ``So that's a good notation''; it will be used from now on. With it, ``$X$ reflexive'' reads $(X')' = X$.
+\end{rembox}
+
+\begin{thmbox}[{{$X$ is Reflexive if and only if $X'$ is}}]\boxlabel{thm:reflexive-dual}
+Let $X$ be a Banach space. Then $X$ is reflexive if and only if $X'$ is reflexive.
+\end{thmbox}
+
+\begin{proof}
+Wu: never memorize; understand the key point of each theorem, and the rest falls into place (like lifting a garment by its collar). Here the key point is that $X$ sits inside $X''$ as a \emph{closed} subspace.
+
+\textbf{($\Rightarrow$)} %% FILL-IN: Wu called this direction easy ("X reflexive means X'' = X") and did not write it out.
+\textit{(Wu called this direction easy, ``$X$ reflexive means $X'' = X$'', and did not write it out.)} Assume $X$ is reflexive, and let $\Phi \in (X')'' = (X'')'$. Define $\ell = \Phi \circ i \in X'$, i.e.\ $\ell(x) = \Phi(i(x))$; it is linear and $|\ell(x)| \le \|\Phi\|\, \|i(x)\| = \|\Phi\|\, \|x\|$. Let $\eta \in X''$. Since $X$ is reflexive, $\eta = i(x)$ for some $x \in X$, and
+\[
+\Phi(\eta) = \Phi(i(x)) = \ell(x) = i(x)(\ell) = \eta(\ell) .
+\]
+So $\Phi$ is evaluation at $\ell$ on $X''$, i.e.\ $\Phi = i_{X'}(\ell)$, where $i_{X'} : X' \to (X')''$ is the canonical map of $X'$. Hence $i_{X'}$ is onto, and $X'$ is reflexive.
+
+\textbf{($\Leftarrow$)} Assume $X'$ is reflexive. \emph{Step 1:} $X''$ is reflexive, by the direction ($\Rightarrow$) just proved, applied to the Banach space $X'$ (in place of $X$; $X'$ is complete by Corollary~\ref{cor:dual-banach}): $X'$ reflexive implies $(X')' = X''$ reflexive. \emph{Step 2:} $X \subset X''$, isometrically (Proposition~\ref{prop:canonical-embedding}). Since $X$ is a Banach space, $X$ is a closed linear subspace of $X''$: if $i(x_n) \to \eta$ in $X''$, then $\{i(x_n)\}$ is Cauchy in $X''$, hence $\{x_n\}$ is Cauchy in $X$ (the two spaces are isometric), so $x_n \to x$ for some $x \in X$, and $\eta = i(x)$ (since $\|i(x_n) - i(x)\| = \|x_n - x\| \to 0$ and limits are unique). \emph{Step 3:} by Theorem~\ref{thm:reflexive-subspace}, a closed linear subspace of a reflexive Banach space is reflexive; so $X$ is reflexive.
+%% FILL-IN: Step 3 applies the subspace theorem to i(X); the transfer back to X along the isometric isomorphism i is written out.
+(Precisely, the theorem makes $i(X)$ reflexive, and reflexivity passes along an isometric isomorphism $T : X \to Z$: given $\eta \in X''$, define $\zeta \in Z''$ by $\zeta(m) = \eta(m \circ T)$ for $m \in Z'$; if $\zeta = i_Z(z)$, then for every $\ell \in X'$, writing $\ell = (\ell \circ T^{-1}) \circ T$, $\eta(\ell) = \zeta(\ell \circ T^{-1}) = \ell(T^{-1} z)$, so $\eta = i_X(T^{-1} z)$.)
+\end{proof}
+
 \subsection{Distance in the Dual}
 
 The distance formula (Theorem~\ref{thm:distance}) computes the distance from a vector to a subspace $Y$ by functionals in $Y^\perp$. The dual statement computes the distance from a functional to $Y^\perp$ by vectors in $Y$.
@@ -8312,7 +8338,464 @@ In numerical analysis the three conditions have names. $T_n x \to Tx$ for every 
 %% <<< END ADDED
 
 % ============================================================================
-% CHAPTER 8: FUNCTIONAL ANALYSIS AND QUANTUM MECHANICS
+% CHAPTER 8: WEAK CONVERGENCE
+% ============================================================================
+% Lecture 18 (2026-11-05)
+
+\chapter{Weak Convergence}\label{ch:weak}
+%% >>> ADDED: chapter introduction (Claude)
+
+In finite dimensions every bounded sequence has a convergent subsequence; in infinite dimensions this fails (Theorem~\ref{thm:ball-noncompact}). This chapter weakens the notion of convergence, testing a sequence only against bounded linear functionals, to recover some of the compactness that is lost. The price is that weak limits are less well behaved: they need not respect norms or products.
+
+%% <<< END ADDED
+
+% ============================================================================
+% SECTION: WEAK AND WEAK-STAR CONVERGENCE (Lecture 18)
+% Lecture 18 (2026-11-05). Source: Tianshuo's handwritten notes of the lecture (pages 48--50) and the Otter.ai transcript.
+% ============================================================================
+
+\section{Weak and Weak-Star Convergence}\label{sec:weak}
+
+\roadmark{Stage: maps}{Thread: functionals. Convergence tested against $X'$ (weak) or against $X$ (weak-$*$); Banach--Steinhaus gives the working criteria, Hahn--Banach the uniqueness, the norm bound and Mazur's theorem.}
+
+\textit{Lecture 18 (Thu Nov 5). Sources: the handwritten notes of the lecture and the Otter.ai transcript. The order is the lecture's, except that the hyperplane separation theorem in normed spaces now precedes Mazur's theorem, whose proof uses it.}
+
+\subsection{Definitions}
+
+Recall that the closed unit ball in $\mathbb{R}^n$ is compact, while the closed unit ball of an infinite-dimensional normed linear space is not (Theorem~\ref{thm:ball-noncompact}); this is one of the main differences between finite and infinite dimensions. It is always useful to extract a convergent subsequence from a bounded sequence. Since this is impossible in general, Wu: ``maybe let's weaken the convergence''. This is the motivation for weak convergence.
+
+\begin{defbox}[Weak and Strong Convergence]\boxlabel{def:weak-conv}
+Let $X$ be a normed linear space, $\{x_n\}_{n=1}^\infty$ a sequence in $X$ and $x_0 \in X$.
+\begin{enumerate}[label=(\arabic*)]
+    \item $\{x_n\}$ \textbf{converges weakly} to $x_0$ if for every $\ell \in X'$,
+    \[
+    \lim_{n \to \infty} \ell(x_n) = \ell(x_0) .
+    \]
+    We write $\operatorname*{w-lim}_{n \to \infty} x_n = x_0$, or $x_n \rightharpoonup x_0$ as $n \to \infty$.
+    \item $\{x_n\}$ \textbf{converges strongly} to $x_0$ if $\lim_{n \to \infty} \|x_n - x_0\| = 0$. We write $\operatorname*{s-lim}_{n \to \infty} x_n = x_0$, or simply $\lim_{n \to \infty} x_n = x_0$, or $x_n \to x_0$.
+\end{enumerate}
+\laxref{Ch.~10, definition at the start of the chapter}
+\end{defbox}
+
+``Converges'' without qualification means strongly, i.e.\ in norm.
+
+\begin{propbox}[Basic Properties of Weak Limits]\boxlabel{prop:weak-basic}
+Let $X$ be a normed linear space.
+\begin{enumerate}[label=(\arabic*)]
+    \item If $\operatorname*{s-lim}_{n \to \infty} x_n = x_0$, then $\operatorname*{w-lim}_{n \to \infty} x_n = x_0$.
+    \item If $x_n \rightharpoonup x_0$ and $x_n \rightharpoonup z_0$, then $x_0 = z_0$: weak limits are unique.
+\end{enumerate}
+\laxref{Ch.~10, the remark after the definition (part (1))}
+\end{propbox}
+
+\begin{proof}
+(1) For every $\ell \in X'$,
+\[
+|\ell(x_n) - \ell(x_0)| = |\ell(x_n - x_0)| \le \|\ell\|\, \|x_n - x_0\| \to 0 \qquad (n \to \infty),
+\]
+so $x_n \rightharpoonup x_0$.
+
+(2) If $x_n \rightharpoonup x_0$ and $x_n \rightharpoonup z_0$, then for every $\ell \in X'$
+\[
+\ell(x_0 - z_0) = \ell(x_0) - \ell(z_0) = \lim_{n \to \infty} \bigl( \ell(x_n) - \ell(x_n) \bigr) = 0 .
+\]
+For every $x \in X$, $\|x\| = \max_{\ell \in X',\ \|\ell\| \le 1} |\ell(x)|$ (Theorem~\ref{thm:norm-max}, a consequence of Hahn--Banach). Hence
+\[
+\|x_0 - z_0\| = \max_{\ell \in X',\ \|\ell\| \le 1} |\ell(x_0 - z_0)| = 0 .
+\]
+If a sequence could converge weakly to two different limits, the notion would make no sense.
+\end{proof}
+
+\subsection{Examples}
+
+\begin{exbox}[{{Weak but Not Strong Convergence in $\ell^2$}}]\boxlabel{ex:en-weak}
+In $\ell^2 = \{ a = (a_1, a_2, \ldots) : \sum_{j=1}^\infty |a_j|^2 < \infty \}$ let $e_n = (0, \ldots, 0, 1, 0, \ldots)$, with $1$ in the $n$-th place; $\|e_n\|_{\ell^2} = 1$. Claim: $e_n \rightharpoonup 0$ in $\ell^2$, but $\{e_n\}$ does not converge strongly.
+
+Indeed, $(\ell^2)' = \ell^2$: every $\ell \in (\ell^2)'$ is $\ell(x) = (x, a)$ for some $a = (a_1, a_2, \ldots) \in \ell^2$ (Riesz representation). Then $(e_n, a) = \overline{a_n}$, and $\sum_n |a_n|^2 < \infty$ forces $a_n \to 0$ as $n \to \infty$ (the terms of a convergent series tend to $0$). So $\ell(e_n) \to 0 = \ell(0)$. If $\{e_n\}$ converged strongly to some $x$, then by Proposition~\ref{prop:weak-basic} it would also converge weakly to $x$, so $x = 0$ by uniqueness; but $\|e_n - 0\| = 1$ for all $n$.
+\laxref{Ch.~10, Example~1 (left as an exercise there)}
+\end{exbox}
+
+The same holds in any Hilbert space, by an abstract argument.
+
+\begin{propbox}[{{Orthonormal Sequences Converge Weakly to $0$}}]\boxlabel{prop:on-weak}
+Let $H$ be a Hilbert space and $\{e_n\}_{n=1}^\infty$ an orthonormal sequence in $H$ (not necessarily a basis). Then $e_n \rightharpoonup 0$ as $n \to \infty$.
+\laxref{Ch.~10, Example~2}
+\end{propbox}
+
+\begin{proof}
+By Bessel's inequality (Theorem~\ref{thm:bessel}), for every $x \in H$
+\[
+\sum_{n=1}^\infty |(x, e_n)|^2 \le \|x\|^2 < \infty ,
+\]
+so $(x, e_n) \to 0$ as $n \to \infty$ for every $x \in H$. Since $H' = H$ (every $\ell \in H'$ is $\ell(y) = (y, x)$ for some $x \in H$, and $(e_n, x) = \overline{(x, e_n)}$), $\ell(e_n) \to 0$ for every $\ell \in H'$, i.e.\ $e_n \rightharpoonup 0$.
+\end{proof}
+
+\begin{exbox}[{{$\sin(mx) \rightharpoonup 0$ in $L^2[0, 2\pi]$}}]\boxlabel{ex:sin-weak}
+In $L^2([0, 2\pi])$ the functions $f_m(x) = \frac{1}{\sqrt\pi} \sin(mx)$, $m = 1, 2, \ldots$, form an orthonormal set (left to the class).
+%% FILL-IN: the orthonormality check, and the bar.
+(For $m, k \ge 1$, $\int_0^{2\pi} \sin(mx) \sin(kx)\, dx = \frac12 \int_0^{2\pi} \bigl( \cos((m-k)x) - \cos((m+k)x) \bigr) dx$, which is $0$ for $m \neq k$ and $\pi$ for $m = k$.) By Proposition~\ref{prop:on-weak}, for every $g \in L^2([0, 2\pi])$
+\[
+\lim_{m \to \infty} \int_0^{2\pi} \sin(mx)\, g(x)\, dx = 0 ,
+\]
+i.e.\ $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$; the factor $\frac{1}{\sqrt\pi}$ does not matter for convergence to $0$. (Wu: ``with conjugate or no conjugate'' --- it makes no difference, since $g$ runs over all of $L^2$ exactly when $\bar g$ does.) The functions oscillate faster and faster without settling down, and $\|\sin(mx)\|_{L^2} = \sqrt\pi$ for every $m$, so there is no strong convergence; but against any fixed $g$ the positive and negative parts cancel more and more.
+\end{exbox}
+
+%% FIGURE (board): redrawn from the sketch in Tianshuo's notes; labels by Claude
+\begin{center}
+\begin{tikzpicture}[xscale=1.6, yscale=0.8]
+    \draw[->] (0,0) -- (4.2,0) node[right] {$x$};
+    \draw[thick, blue!70!black, domain=0:3.9, samples=400, smooth] plot (\x, {sin(14*\x r)});
+    \node[blue!70!black, anchor=west] at (4.0,0.9) {$\sin(mx)$, $m$ large};
+\end{tikzpicture}
+\end{center}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth]
+  \begin{scope}[xshift=0cm, xscale=0.62, yscale=1.1]
+    \begin{scope}\clip (0,0) rectangle (6.2832,1.05); \fill[blue!25] (0,0) -- plot[domain=0:6.2832, samples=400] (\x,{\x/(2*pi)*sin(2*\x r)}) -- (6.2832,0) -- cycle; \end{scope}
+    \begin{scope}\clip (0,-1.05) rectangle (6.2832,0); \fill[red!25] (0,0) -- plot[domain=0:6.2832, samples=400] (\x,{\x/(2*pi)*sin(2*\x r)}) -- (6.2832,0) -- cycle; \end{scope}
+    \draw[gray, dashed] plot[domain=0:6.2832, samples=2] (\x,{\x/(2*pi)}); \draw[gray, dashed] plot[domain=0:6.2832, samples=2] (\x,{-\x/(2*pi)});
+    \draw[->] (0,0) -- (6.7,0); \draw (0,-1.05) -- (0,1.05);
+    \draw[thick, black!80] plot[domain=0:6.2832, samples=400] (\x,{\x/(2*pi)*sin(2*\x r)});
+    \node[font=\small] at (3.1416,1.35) {$m = 2$};
+    \node[font=\scriptsize] at (3.1416,-1.35) {$\int_0^{2\pi} g \sin(mx)\, dx = -\tfrac{1}{2}$};
+  \end{scope}
+  \begin{scope}[xshift=4.9cm, xscale=0.62, yscale=1.1]
+    \begin{scope}\clip (0,0) rectangle (6.2832,1.05); \fill[blue!25] (0,0) -- plot[domain=0:6.2832, samples=400] (\x,{\x/(2*pi)*sin(6*\x r)}) -- (6.2832,0) -- cycle; \end{scope}
+    \begin{scope}\clip (0,-1.05) rectangle (6.2832,0); \fill[red!25] (0,0) -- plot[domain=0:6.2832, samples=400] (\x,{\x/(2*pi)*sin(6*\x r)}) -- (6.2832,0) -- cycle; \end{scope}
+    \draw[gray, dashed] plot[domain=0:6.2832, samples=2] (\x,{\x/(2*pi)}); \draw[gray, dashed] plot[domain=0:6.2832, samples=2] (\x,{-\x/(2*pi)});
+    \draw[->] (0,0) -- (6.7,0); \draw (0,-1.05) -- (0,1.05);
+    \draw[thick, black!80] plot[domain=0:6.2832, samples=400] (\x,{\x/(2*pi)*sin(6*\x r)});
+    \node[font=\small] at (3.1416,1.35) {$m = 6$};
+    \node[font=\scriptsize] at (3.1416,-1.35) {$\int_0^{2\pi} g \sin(mx)\, dx = -\tfrac{1}{6}$};
+  \end{scope}
+  \begin{scope}[xshift=9.8cm, xscale=0.62, yscale=1.1]
+    \begin{scope}\clip (0,0) rectangle (6.2832,1.05); \fill[blue!25] (0,0) -- plot[domain=0:6.2832, samples=400] (\x,{\x/(2*pi)*sin(18*\x r)}) -- (6.2832,0) -- cycle; \end{scope}
+    \begin{scope}\clip (0,-1.05) rectangle (6.2832,0); \fill[red!25] (0,0) -- plot[domain=0:6.2832, samples=400] (\x,{\x/(2*pi)*sin(18*\x r)}) -- (6.2832,0) -- cycle; \end{scope}
+    \draw[gray, dashed] plot[domain=0:6.2832, samples=2] (\x,{\x/(2*pi)}); \draw[gray, dashed] plot[domain=0:6.2832, samples=2] (\x,{-\x/(2*pi)});
+    \draw[->] (0,0) -- (6.7,0); \draw (0,-1.05) -- (0,1.05);
+    \draw[thick, black!80] plot[domain=0:6.2832, samples=400] (\x,{\x/(2*pi)*sin(18*\x r)});
+    \node[font=\small] at (3.1416,1.35) {$m = 18$};
+    \node[font=\scriptsize] at (3.1416,-1.35) {$\int_0^{2\pi} g \sin(mx)\, dx = -\tfrac{1}{18}$};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+Why $\sin(mx) \rightharpoonup 0$: the product $g(x) \sin(mx)$ for the test function $g(x) = \frac{x}{2\pi}$ (dashed: $\pm g$), with the positive part blue and the negative part red. As $m$ grows, each blue lobe is followed by a red lobe of almost the same area, and the integral, here exactly $-\frac1m$, tends to $0$; meanwhile $\|\sin(mx)\|_{L^2} = \sqrt\pi$ for every $m$.
+%% <<< END ADDED
+
+\subsection{Criteria and the Norm of a Weak Limit}
+
+\begin{thmbox}[{{Criterion for Weak Convergence}}]\boxlabel{thm:weak-criterion}
+Let $X$ be a normed linear space, $\{x_n\}_{n=1}^\infty \subset X$ and $x_0 \in X$. Then $x_n \rightharpoonup x_0$ in $X$ if and only if
+\begin{enumerate}[label=(\arabic*)]
+    \item $\sup_n \|x_n\| < \infty$, and
+    \item $\lim_{n \to \infty} \ell(x_n) = \ell(x_0)$ for all $\ell \in D$, where $D$ is a dense subset of $X'$.
+\end{enumerate}
+\laxref{\S10.1, Thm~1 (the direction $\Leftarrow$, Exercise~3) and Thm~4$'$ (weakly convergent sequences are bounded)}
+\end{thmbox}
+
+\begin{proof}
+This is Banach--Steinhaus (Theorem~\ref{thm:banach-steinhaus}). Think of $x_n$ not as an element of $X$ but as an element of the dual of $X'$: $x_n \in (X')' = \mathcal{L}(X', \mathbb{F})$, via $x_n(\ell) = \langle x_n, \ell \rangle = \ell(x_n)$. So $\{x_n\}$ is a sequence of bounded linear maps from $X'$ to $\mathbb{F}$, and
+%% FILL-IN: why the hypotheses of Banach-Steinhaus hold (X' is always complete), and the norms.
+$X'$ is a Banach space even if $X$ is not (Corollary~\ref{cor:dual-banach}), while $\mathbb{F}$ is a normed space. The norm of $x_n$ as an element of $(X')'$ is $\|x_n\|$ (Proposition~\ref{prop:canonical-embedding}), and $x_0$ is the candidate limit map $A \in \mathcal{L}(X', \mathbb{F})$. Weak convergence says: for all $\ell \in X'$, $\ell(x_n) = \langle x_n, \ell \rangle \to \langle x_0, \ell \rangle$, i.e.\ the maps $x_n$ converge pointwise on $X'$ to $x_0$. Banach--Steinhaus says this happens if and only if (1) $\sup_n \|x_n\| < \infty$ and (2) the convergence holds for all $\ell$ in a dense subset $D \subset X'$.
+\end{proof}
+
+\begin{thmbox}[{{The Norm of a Weak Limit}}]\boxlabel{thm:weak-lsc}
+Let $X$ be a normed linear space, $\{x_n\}_{n=1}^\infty \subset X$, $x_0 \in X$, and $x_n \rightharpoonup x_0$ in $X$. Then $\{x_n\}$ is a bounded sequence, and
+\[
+\|x_0\| \le \liminf_{n \to \infty} \|x_n\| .
+\]
+\laxref{\S10.1, Thms~4$'$ and~5}
+\end{thmbox}
+
+\begin{proof}
+\emph{Bounded:} this is part (1) of Theorem~\ref{thm:weak-criterion}, i.e.\ the uniform boundedness principle applied to the $x_n \in \mathcal{L}(X', \mathbb{F})$, which are pointwise bounded because each $\{\ell(x_n)\}$ converges. Just as every convergent sequence is bounded, every weakly convergent sequence is bounded.
+
+\emph{The norm bound.} Since $x_n \rightharpoonup x_0$, for every $\ell \in X'$ we have $\ell(x_0) = \lim_n \ell(x_n)$, hence $|\ell(x_0)| = \lim_n |\ell(x_n)|$. Also $|\ell(x_n)| \le \|\ell\|\, \|x_n\|$. Take the $\liminf$ on both sides: the left side has a limit, equal to $|\ell(x_0)|$; the right side may not have a limit, but the $\liminf$ always makes sense. So
+\[
+|\ell(x_0)| = \lim_{n \to \infty} |\ell(x_n)| = \liminf_{n \to \infty} |\ell(x_n)| \le \|\ell\| \liminf_{n \to \infty} \|x_n\| .
+\]
+Now take the supremum over all $\ell \in X'$ with $\|\ell\| \le 1$: by Theorem~\ref{thm:norm-max} the left side becomes $\|x_0\|$, so
+\[
+\|x_0\| = \sup_{\ell \in X',\ \|\ell\| \le 1} |\ell(x_0)| \le \liminf_{n \to \infty} \|x_n\| . \qedhere
+\]
+\end{proof}
+
+In Example~\ref{ex:en-weak}, $\|e_n\| = 1$ for all $n$ while the weak limit $0$ has norm $0$: the inequality can be strict. Norm can be lost in a weak limit, but not gained.
+
+\subsection{Mazur's Theorem}
+
+The norm bound says how large the weak limit can be; Mazur's theorem says where it is. Its proof uses the hyperplane separation theorem of Chapter~2, in a form adapted to normed spaces, which comes first.
+
+
+\begin{thmbox}[{{Hyperplane Separation in a Normed Space}}]\boxlabel{thm:separation-normed}
+Let $X$ be a normed linear space over $\mathbb{R}$, $K$ a closed convex set in $X$, and $x_0 \notin K$. Then there exist $a \in \mathbb{R}$ and $\ell \in X'$ such that
+\[
+\ell(x_0) > a > \ell(x) \qquad \text{for all } x \in K .
+\]
+\laxref{\S8.4, in the proof of Thm~17 (a ball about $x_0$ is separated from $K$ by the extended hyperplane separation theorem, Ch.~3 Thm~6)}
+\end{thmbox}
+
+It is important that $\ell$ is \emph{bounded}, and that $K$ is \emph{closed} and convex. The version proved in Chapter~2 (Theorem~\ref{thm:separation}) was for a linear space without a norm, for a convex set $K$ consisting of interior points (``open'') with $y_0 \notin K$; it produced a linear functional, not necessarily bounded. Wu left the normed version to the class, with a hint: since $K$ is closed and $x_0 \notin K$, the distance from $x_0$ to $K$ is positive, so $K$ can be made slightly bigger without reaching $x_0$. Let
+\[
+K_\varepsilon = \{ x \in X : \text{there is } y \in K \text{ with } \|x - y\| < \varepsilon \} .
+\]
+Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, and the previous theorem applies; or redo the previous proof from scratch.
+
+%% FIGURE (board): redrawn from the sketch in Tianshuo's notes; labels by Claude
+\begin{center}
+\begin{tikzpicture}[scale=1.0, >=stealth]
+    \draw[thick, blue!70!black] (0,0) ellipse (1.3 and 0.85);
+    \node[blue!70!black] at (0,0) {$K$};
+    \draw[dashed, red!70!black] (0,0) ellipse (1.6 and 1.15);
+    \node[red!70!black, anchor=west] at (1.55,-0.9) {$K_\varepsilon$};
+    \draw[thick] (-2.4,0.75) -- (2.9,2.35) node[right] {$\ell = a$};
+    \fill (1.3,2.5) circle (1.5pt) node[above] {$x_0$};
+\end{tikzpicture}
+\end{center}
+
+\begin{proof}
+%% FILL-IN: the proof along Wu's hint (left to the class).
+If $K = \varnothing$, take $\ell = 0$ and $a = -1$. Otherwise let $d = \inf_{y \in K} \|x_0 - y\|$; then $d > 0$, since otherwise there are $y_k \in K$ with $y_k \to x_0$, and $K$ closed would give $x_0 \in K$. Fix $0 < \varepsilon < d$ and define $K_\varepsilon$ as above.
+
+\emph{$K_\varepsilon$ is convex.} If $x_1, x_2 \in K_\varepsilon$ with $\|x_i - y_i\| < \varepsilon$, $y_i \in K$, and $0 \le t \le 1$, then $y = t y_1 + (1-t) y_2 \in K$ and $\|t x_1 + (1-t) x_2 - y\| \le t\|x_1 - y_1\| + (1-t)\|x_2 - y_2\| < \varepsilon$.
+
+\emph{Every point of $K_\varepsilon$ is interior.} If $\|x - y\| < \varepsilon$ with $y \in K$, put $\rho = \varepsilon - \|x - y\| > 0$; then $B(x, \rho) \subset K_\varepsilon$ by the triangle inequality, so $x$ is a metric interior point, hence an interior point (Proposition~\ref{prop:metric-interior}).
+
+\emph{$x_0 \notin K_\varepsilon$,} since every point of $K_\varepsilon$ is within $\varepsilon < d$ of $K$.
+
+By Theorem~\ref{thm:separation} there are a linear $\ell : X \to \mathbb{R}$ and $c_0$ with $\ell(x_0) = c_0$ and $\ell(x) < c_0$ for all $x \in K_\varepsilon$. Fix $y_1 \in K$. For $\|u\| < 1$, $y_1 + \varepsilon u \in K_\varepsilon$, so $\ell(y_1) + \varepsilon\, \ell(u) < c_0$, i.e.\ $\ell(u) < (c_0 - \ell(y_1))/\varepsilon =: C$ for all $\|u\| < 1$; applied to $-u$ as well, $|\ell(u)| \le C$ on the open unit ball, so $\ell$ is bounded, $\ell \in X'$. And $\ell \neq 0$, since $\ell(x_0) = c_0 > \ell(y_1)$. Now for $y \in K$ and $\|u\| < 1$, $y + \varepsilon u \in K_\varepsilon$, so $\ell(y) + \varepsilon\, \ell(u) < c_0$; taking the supremum over $\|u\| < 1$, $\ell(y) + \varepsilon \|\ell\| \le c_0$. Thus
+\[
+\ell(y) \le c_0 - \varepsilon \|\ell\| < c_0 - \tfrac{\varepsilon}{2} \|\ell\| =: a < c_0 = \ell(x_0) \qquad \text{for all } y \in K . \qedhere
+\]
+\end{proof}
+
+%% >>> ADDED: remark (Claude commentary)
+\begin{rembox}[Complex Scalars]\label{rem:separation-complex}
+Over $\mathbb{C}$, apply the theorem to $X$ regarded as a real normed space: it gives a real-linear bounded $\ell_r$, and $\ell(x) = \ell_r(x) - i\, \ell_r(ix)$ is a complex-linear bounded functional with $\operatorname{Re} \ell = \ell_r$ (as in the complex Hahn--Banach theorem, Theorem~\ref{thm:hb-complex}). The conclusion becomes $\operatorname{Re} \ell(x_0) > a > \operatorname{Re} \ell(x)$ for $x \in K$, and the proof of Mazur's theorem below goes through with $\operatorname{Re} \ell$.
+\end{rembox}
+%% <<< END ADDED
+
+\begin{thmbox}[Mazur's Theorem]\boxlabel{thm:mazur}
+Let $X$ be a normed linear space, $\{x_n\}_{n=1}^\infty \subset X$, $x_0 \in X$, and $x_n \rightharpoonup x_0$ in $X$. Then $x_0$ belongs to the closed convex hull of $\{x_n\}_{n=1}^\infty$. That is, for every $\varepsilon > 0$ there are finitely many terms $x_1, \ldots, x_j$ of the sequence and $\lambda_k \ge 0$, $k = 1, \ldots, j$, with $\sum_{k=1}^j \lambda_k = 1$, such that
+\[
+\Bigl\| x_0 - \sum_{k=1}^j \lambda_k x_k \Bigr\| < \varepsilon .
+\]
+\laxref{\S10.1, Thm~6 (for a closed convex $K$ containing the $x_n$; proved with support functions, \S8.4 Thm~17)}
+\end{thmbox}
+
+In other words, the weak limit can be approximated in norm by convex combinations of the terms of the sequence.
+%% FILL-IN: why the two formulations agree.
+(The convex hull of $\{x_n\}$ (Definition~\ref{def:convex-hull}) consists of the finite convex combinations $\sum_k \lambda_k x_{n_k}$, $\lambda_k \ge 0$, $\sum_k \lambda_k = 1$: they form a convex set containing every $x_n$, and every convex set containing the $x_n$ contains them, by induction on the number of terms. The closed convex hull is the closure of this set; $x_0$ lies in it exactly when every ball about $x_0$ contains such a combination. Taking the first $j$ terms, with some $\lambda_k = 0$ allowed, loses nothing.)
+
+\begin{proof}[Proof of Mazur's theorem]
+Assume $x_n \rightharpoonup x_0$, but $x_0$ is not in the closed convex hull of $\{x_n\}$; call the closed convex hull $K$.
+%% FILL-IN: K is closed and convex (the closure of a convex set is convex).
+($K$ is closed by definition, and convex: if $z_k \to z$ and $w_k \to w$ with $z_k, w_k$ in the convex hull, then $t z_k + (1-t) w_k$ is in the convex hull and tends to $t z + (1-t) w$.) By the hyperplane separation theorem (Theorem~\ref{thm:separation-normed}) there are $\ell \in X'$ and $a \in \mathbb{R}$ with
+\[
+\ell(x_0) > a \qquad \text{and} \qquad \ell(x_n) < a \quad \text{for all } n ,
+\]
+since every $x_n \in K$. But $x_n \rightharpoonup x_0$ implies $\ell(x_n) \to \ell(x_0)$, and a sequence of numbers all strictly less than $a$ cannot converge to something strictly bigger than $a$: the limit would satisfy $\ell(x_0) \le a$. This is a contradiction.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth]
+  \begin{scope}[xshift=0cm]
+    \draw[->] (0,0) -- (3.6,0) node[right, font=\scriptsize] {$j$}; \draw[->] (0,0) -- (0,2.25);
+    \draw[gray, dotted] (0,2) -- (3.4,2); \node[left, font=\scriptsize] at (0,2) {$1$};
+    \fill[blue!60!black] (0.13,0) rectangle (0.27,2.000);
+    \node[font=\small] at (1.7,2.65) {$N = 1$};
+    \node[font=\scriptsize] at (1.7,-0.45) {$\bigl\| \tfrac1N (e_1 + \cdots + e_N) \bigr\| = 1$};
+  \end{scope}
+  \begin{scope}[xshift=4.6cm]
+    \draw[->] (0,0) -- (3.6,0) node[right, font=\scriptsize] {$j$}; \draw[->] (0,0) -- (0,2.25);
+    \draw[gray, dotted] (0,2) -- (3.4,2); \node[left, font=\scriptsize] at (0,2) {$1$};
+    \fill[blue!60!black] (0.13,0) rectangle (0.27,0.500);
+    \fill[blue!60!black] (0.33,0) rectangle (0.47,0.500);
+    \fill[blue!60!black] (0.53,0) rectangle (0.67,0.500);
+    \fill[blue!60!black] (0.73,0) rectangle (0.87,0.500);
+    \node[font=\small] at (1.7,2.65) {$N = 4$};
+    \node[font=\scriptsize] at (1.7,-0.45) {$\bigl\| \tfrac1N (e_1 + \cdots + e_N) \bigr\| = \tfrac12$};
+  \end{scope}
+  \begin{scope}[xshift=9.2cm]
+    \draw[->] (0,0) -- (3.6,0) node[right, font=\scriptsize] {$j$}; \draw[->] (0,0) -- (0,2.25);
+    \draw[gray, dotted] (0,2) -- (3.4,2); \node[left, font=\scriptsize] at (0,2) {$1$};
+    \fill[blue!60!black] (0.13,0) rectangle (0.27,0.125);
+    \fill[blue!60!black] (0.33,0) rectangle (0.47,0.125);
+    \fill[blue!60!black] (0.53,0) rectangle (0.67,0.125);
+    \fill[blue!60!black] (0.73,0) rectangle (0.87,0.125);
+    \fill[blue!60!black] (0.93,0) rectangle (1.07,0.125);
+    \fill[blue!60!black] (1.13,0) rectangle (1.27,0.125);
+    \fill[blue!60!black] (1.33,0) rectangle (1.47,0.125);
+    \fill[blue!60!black] (1.53,0) rectangle (1.67,0.125);
+    \fill[blue!60!black] (1.73,0) rectangle (1.87,0.125);
+    \fill[blue!60!black] (1.93,0) rectangle (2.07,0.125);
+    \fill[blue!60!black] (2.13,0) rectangle (2.27,0.125);
+    \fill[blue!60!black] (2.33,0) rectangle (2.47,0.125);
+    \fill[blue!60!black] (2.53,0) rectangle (2.67,0.125);
+    \fill[blue!60!black] (2.73,0) rectangle (2.87,0.125);
+    \fill[blue!60!black] (2.93,0) rectangle (3.07,0.125);
+    \fill[blue!60!black] (3.13,0) rectangle (3.27,0.125);
+    \node[font=\small] at (1.7,2.65) {$N = 16$};
+    \node[font=\scriptsize] at (1.7,-0.45) {$\bigl\| \tfrac1N (e_1 + \cdots + e_N) \bigr\| = \tfrac14$};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example~\ref{ex:en-weak}): no $e_n$ comes near $0$, since $\|e_n\| = 1$, but the convex combinations $\frac1N (e_1 + \cdots + e_N)$, with $N$ entries $\frac1N$, have norm $\bigl( N \cdot \frac{1}{N^2} \bigr)^{1/2} = \frac{1}{\sqrt N} \to 0$. Spreading the mass over many orthogonal directions is what the weak limit sees; it also shows the strict inequality $\|0\| < \liminf \|e_n\| = 1$ of Theorem~\ref{thm:weak-lsc}.
+%% <<< END ADDED
+
+\subsection{\texorpdfstring{$\sin(mx)$}{sin(mx)} in \texorpdfstring{$L^p$}{Lp}}
+
+\begin{exbox}[{{$\sin(mx) \rightharpoonup 0$ in $L^p[0, 2\pi]$ for $1 < p < \infty$}}]\boxlabel{ex:sin-weak-Lp}
+We know $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$ (Example~\ref{ex:sin-weak}). Since $|\sin(mx)| \le 1$, also $\sin(mx) \in L^p([0, 2\pi])$ for $1 \le p < \infty$. \emph{Question:} does $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$ for all $1 < p < \infty$? Wu: yes (``let's avoid $p = 1$, it is always subtle'').
+
+Recall $(L^p)' = L^{p'}$ with $\frac1p + \frac1{p'} = 1$, so $1 < p' < \infty$ (Theorem~\ref{thm:Lp-dual}). We check the two conditions of Theorem~\ref{thm:weak-criterion}.
+\begin{enumerate}[label=(\arabic*)]
+    \item \emph{Bounded:} $\sup_m \|\sin(mx)\|_{L^p([0, 2\pi])} \le \bigl( \int_0^{2\pi} 1\, dx \bigr)^{1/p} = (2\pi)^{1/p} < \infty$.
+    \item \emph{Convergence on a dense set:} for every $g \in L^2([0, 2\pi])$, $\int_0^{2\pi} g(x) \sin(mx)\, dx \to 0$ as $m \to \infty$. Continuous functions are in $L^2$, so for all $g \in C[0, 2\pi]$, $\int_0^{2\pi} g(x) \sin(mx)\, dx \to 0$. And $C[0, 2\pi]$ is dense in $L^{p'}([0, 2\pi])$, because $p' < \infty$: it contains $C_c^\infty((0, 2\pi))$, which is dense by Theorem~\ref{thm:density} (the endpoints have measure zero, so $L^{p'}([0, 2\pi]) = L^{p'}((0, 2\pi))$).
+\end{enumerate}
+By Theorem~\ref{thm:weak-criterion}, $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$.
+\end{exbox}
+
+\begin{rembox}[Two Questions for Homework]\label{rem:weak-questions}
+\begin{enumerate}[label=(\arabic*)]
+    \item \emph{$p = 1$.} Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition~\ref{prop:C-not-dense}), so the argument above does not apply; one has to test against $L^\infty$ functions. Homework.
+    \item \emph{Products.} If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, H\"older gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$. Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Wu: usually not --- weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$. Finding an example is homework.
+\end{enumerate}
+Wu: weak limits are nice to have, but limited. A bounded sequence in infinite dimensions need not have a convergent subsequence; under certain circumstances it will have a weakly convergent one, but weak convergence does not commute with nonlinear operations.
+\end{rembox}
+
+\subsection{Weak-\texorpdfstring{$*$}{*} Convergence}
+
+Does every bounded sequence have a weakly convergent subsequence? Wu: ``actually it's a difficult question''; to answer it, the weak limit must be weakened even further.
+
+\begin{defbox}[Weak-$*$ Convergence]\boxlabel{def:weak-star}
+Let $X$ be a normed linear space and let $\{\ell_n\}_{n=1}^\infty$ and $\ell_0$ be in $X'$. We say $\ell_n$ \textbf{converges to $\ell_0$ in the weak-$*$ sense}, and write $\mathop{\mathrm{w}^*\text{-}\mathrm{lim}}_{n \to \infty} \ell_n = \ell_0$ or $\ell_n \overset{*}{\rightharpoonup} \ell_0$, if for every $x \in X$
+\[
+\lim_{n \to \infty} \ell_n(x) = \ell_0(x) .
+\]
+\laxref{\S10.3, definition (there $X$ is a Banach space)}
+\end{defbox}
+
+\begin{rembox}[Weak Implies Weak-$*$]\label{rem:weak-implies-weak-star}
+On $X'$ two notions are available: weak convergence ($X'$ is a normed space, test against $(X')' = X''$) and weak-$*$ convergence (test against $X$). Since $X \subset X''$ (isometrically embedded), $\ell_n \rightharpoonup \ell_0$ in $X'$ implies $\ell_n \overset{*}{\rightharpoonup} \ell_0$ in $X'$: weak convergence tests against every element of $X''$, weak-$*$ only against those in $X$. So weak-$*$ is the weaker notion. \textit{(Not from lecture.)} If $X$ is reflexive, every element of $X''$ is in $X$, and the two notions coincide (Lax \S10.3, Remark~1).
+\end{rembox}
+
+\begin{exbox}[Weak-$*$ but Not Weak]\boxlabel{ex:weak-star-not-weak}
+$\ell_n \overset{*}{\rightharpoonup} \ell_0$ does not imply $\ell_n \rightharpoonup \ell_0$. Let $\ell^\infty_0 = c_0 = \{ (a_1, a_2, \ldots) : \lim_n a_n = 0 \}$ (Proposition~\ref{prop:c0}). Then $(c_0)' = \ell^1$ (homework) and $(\ell^1)' = \ell^\infty$ (Theorem~\ref{thm:lp-seq-dual}). Consider $e_n = (0, \ldots, 0, 1, 0, \ldots) \in \ell^1$.
+\begin{itemize}
+    \item $e_n \overset{*}{\rightharpoonup} 0$ in $\ell^1 = (c_0)'$: for every $a = (a_1, a_2, \ldots) \in c_0$, $\langle a, e_n \rangle = a_n \to 0$.
+    \item $e_n \not\rightharpoonup 0$ in $\ell^1$: for $a = (a_1, a_2, \ldots) \in \ell^\infty = (\ell^1)'$, $\langle e_n, a \rangle = a_n$, which need not converge, since $a$ is only bounded.
+\end{itemize}
+%% FILL-IN: a specific test element, and why there is no other weak limit.
+For instance $a = (1, 1, 1, \ldots)$ gives $\langle e_n, a \rangle = 1 \not\to 0$, and $a = (1, -1, 1, -1, \ldots)$ gives a sequence with no limit at all, so $\{e_n\}$ has no weak limit in $\ell^1$ (any weak limit would also be a weak-$*$ limit, hence $0$ by uniqueness). (The pairings are the bar-free ones, $\langle x, b \rangle = \sum_j x_j b_j$, of the remark after Theorem~\ref{thm:lp-seq-dual}.)
+
+\textit{(Not from lecture.)} Lax's example (\S10.3, Example~5) is of the same kind: the averages $m_n(h) = \frac{n}{2} \int_{-1/n}^{1/n} h(t)\, dt$ are functionals on $C[-1, 1]$ that converge weak-$*$ to the point evaluation $h \mapsto h(0)$, but not weakly, since against a bounded function with a jump at $0$ the averages do not converge to its value at $0$.
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=stealth]
+  \begin{scope}[xshift=0cm]
+    \draw[->] (0,0) -- (5.0,0) node[right, font=\scriptsize] {$n$}; \draw (0,-1.25) -- (0,1.25);
+    \node[left, font=\scriptsize] at (0,1) {$1$}; \node[left, font=\scriptsize] at (0,-1) {$-1$}; \draw[gray, dotted] (0,1) -- (4.8,1); \draw[gray, dotted] (0,-1) -- (4.8,-1);
+    \fill[blue!60!black] (0.24,1.000) circle (1.6pt);
+    \fill[blue!60!black] (0.48,0.500) circle (1.6pt);
+    \fill[blue!60!black] (0.72,0.333) circle (1.6pt);
+    \fill[blue!60!black] (0.96,0.250) circle (1.6pt);
+    \fill[blue!60!black] (1.20,0.200) circle (1.6pt);
+    \fill[blue!60!black] (1.44,0.167) circle (1.6pt);
+    \fill[blue!60!black] (1.68,0.143) circle (1.6pt);
+    \fill[blue!60!black] (1.92,0.125) circle (1.6pt);
+    \fill[blue!60!black] (2.16,0.111) circle (1.6pt);
+    \fill[blue!60!black] (2.40,0.100) circle (1.6pt);
+    \fill[blue!60!black] (2.64,0.091) circle (1.6pt);
+    \fill[blue!60!black] (2.88,0.083) circle (1.6pt);
+    \fill[blue!60!black] (3.12,0.077) circle (1.6pt);
+    \fill[blue!60!black] (3.36,0.071) circle (1.6pt);
+    \fill[blue!60!black] (3.60,0.067) circle (1.6pt);
+    \fill[blue!60!black] (3.84,0.062) circle (1.6pt);
+    \fill[blue!60!black] (4.08,0.059) circle (1.6pt);
+    \fill[blue!60!black] (4.32,0.056) circle (1.6pt);
+    \fill[blue!60!black] (4.56,0.053) circle (1.6pt);
+    \node[font=\small, align=center] at (2.4,1.75) {test against $a = (1, \tfrac12, \tfrac13, \ldots) \in c_0$};
+    \node[font=\scriptsize, align=center] at (2.4,-1.75) {$\langle a, e_n \rangle = \frac1n \to 0$};
+  \end{scope}
+  \begin{scope}[xshift=6.2cm]
+    \draw[->] (0,0) -- (5.0,0) node[right, font=\scriptsize] {$n$}; \draw (0,-1.25) -- (0,1.25);
+    \node[left, font=\scriptsize] at (0,1) {$1$}; \node[left, font=\scriptsize] at (0,-1) {$-1$}; \draw[gray, dotted] (0,1) -- (4.8,1); \draw[gray, dotted] (0,-1) -- (4.8,-1);
+    \fill[red!70!black] (0.24,1.000) circle (1.6pt);
+    \fill[red!70!black] (0.48,-1.000) circle (1.6pt);
+    \fill[red!70!black] (0.72,1.000) circle (1.6pt);
+    \fill[red!70!black] (0.96,-1.000) circle (1.6pt);
+    \fill[red!70!black] (1.20,1.000) circle (1.6pt);
+    \fill[red!70!black] (1.44,-1.000) circle (1.6pt);
+    \fill[red!70!black] (1.68,1.000) circle (1.6pt);
+    \fill[red!70!black] (1.92,-1.000) circle (1.6pt);
+    \fill[red!70!black] (2.16,1.000) circle (1.6pt);
+    \fill[red!70!black] (2.40,-1.000) circle (1.6pt);
+    \fill[red!70!black] (2.64,1.000) circle (1.6pt);
+    \fill[red!70!black] (2.88,-1.000) circle (1.6pt);
+    \fill[red!70!black] (3.12,1.000) circle (1.6pt);
+    \fill[red!70!black] (3.36,-1.000) circle (1.6pt);
+    \fill[red!70!black] (3.60,1.000) circle (1.6pt);
+    \fill[red!70!black] (3.84,-1.000) circle (1.6pt);
+    \fill[red!70!black] (4.08,1.000) circle (1.6pt);
+    \fill[red!70!black] (4.32,-1.000) circle (1.6pt);
+    \fill[red!70!black] (4.56,1.000) circle (1.6pt);
+    \node[font=\small, align=center] at (2.4,1.75) {test against $a = (1, -1, 1, \ldots) \in \ell^\infty$};
+    \node[font=\scriptsize, align=center] at (2.4,-1.75) {$\langle e_n, a \rangle = (-1)^{n+1}$: no limit};
+  \end{scope}
+\end{tikzpicture}
+\end{center}
+The same sequence $e_n \in \ell^1$ seen by two families of test vectors. Weak-$*$ convergence tests only against $c_0$ (left): the pairings are the entries $a_n$ of a null sequence, so they tend to $0$. Weak convergence must also pass the tests by $\ell^\infty = (\ell^1)'$ (right), and a bounded sequence that does not converge defeats it.
+%% <<< END ADDED
+
+As for weak convergence, Banach--Steinhaus gives a criterion, and the norm of the limit is controlled.
+
+\begin{thmbox}[{{Criterion for Weak-$*$ Convergence}}]\boxlabel{thm:weak-star-criterion}
+Let $X$ be a Banach space, $\{\ell_n\}_{n=1}^\infty \subset X'$ and $\ell_0 \in X'$. Then $\ell_n \overset{*}{\rightharpoonup} \ell_0$ in $X'$ if and only if
+\begin{enumerate}[label=(\arabic*)]
+    \item $\sup_n \|\ell_n\| < \infty$, and
+    \item $\lim_{n \to \infty} \ell_n(x) = \ell_0(x)$ for all $x \in D$, where $D$ is a dense subset of $X$.
+\end{enumerate}
+\end{thmbox}
+
+\begin{proof}
+Banach--Steinhaus (Theorem~\ref{thm:banach-steinhaus}) for the bounded linear maps $\ell_n, \ell_0 : X \to \mathbb{F}$: pointwise convergence on $X$ holds if and only if the $\ell_n$ are uniformly bounded and converge on a dense subset.
+\end{proof}
+
+%% >>> ADDED: remark (correction of a hypothesis)
+\begin{rembox}[{{The Weak-$*$ Criteria Need $X$ Complete}}]\label{rem:weak-star-completeness}
+In the lecture the theorem above, and the next one, were stated for a normed linear space $X$; Lax (\S10.3) assumes $X$ Banach from the start. Banach--Steinhaus, however, needs the domain of the maps to be complete, and here the domain is $X$ (in Theorem~\ref{thm:weak-criterion} the domain was $X'$, which is always complete). The direction ($\Leftarrow$) holds for any normed $X$ (the $\varepsilon/2$ argument does not use completeness), but ($\Rightarrow$), weak-$*$ convergent implies bounded, can fail. On $X = c_{00}$, the finitely supported sequences with the maximum norm, let $\ell_n(x) = n\, x_n$: then $\ell_n(x) = 0$ once $n$ exceeds the support of $x$, so $\ell_n \overset{*}{\rightharpoonup} 0$, but $\|\ell_n\| = n$. So in both theorems $X$ is assumed to be a Banach space; the bound $\|\ell_0\| \le \liminf \|\ell_n\|$ holds for any normed $X$.
+\end{rembox}
+%% <<< END ADDED
+
+\begin{thmbox}[{{The Norm of a Weak-$*$ Limit}}]\boxlabel{thm:weak-star-lsc}
+Let $X$ be a Banach space, $\{\ell_n\}_{n=1}^\infty \subset X'$, $\ell_0 \in X'$, and assume $\ell_n \overset{*}{\rightharpoonup} \ell_0$ in $X'$. Then $\sup_n \|\ell_n\| < \infty$, and
+\[
+\|\ell_0\| \le \liminf_{n \to \infty} \|\ell_n\| .
+\]
+\laxref{\S10.3, Thm~11 (bounded) and Exercise~6 (the norm bound)}
+\end{thmbox}
+
+\begin{proof}
+\emph{Bounded:} to converge in the weak-$*$ sense, the sequence is pointwise bounded on $X$; this is the uniform boundedness principle (Theorem~\ref{thm:ubp}).
+
+\emph{The norm bound.} Wu: the proof is almost the same as the previous one, but now the norm of $\ell_0$ is computed by its definition, without Hahn--Banach:
+\[
+\|\ell_0\| = \sup_{x \in X,\ \|x\| \le 1} |\ell_0(x)| , \qquad \ell_0(x) = \lim_{n \to \infty} \ell_n(x) .
+\]
+%% FILL-IN: the rest of the argument.
+For $\|x\| \le 1$, $|\ell_0(x)| = \lim_n |\ell_n(x)| = \liminf_n |\ell_n(x)| \le \liminf_n \|\ell_n\|\, \|x\| \le \liminf_n \|\ell_n\|$. Take the supremum over $\|x\| \le 1$.
+\end{proof}
+
+Next lecture: under what conditions does a bounded sequence have a weak-$*$ convergent subsequence?
+
+% ============================================================================
+% CHAPTER 9: FUNCTIONAL ANALYSIS AND QUANTUM MECHANICS
 % ============================================================================
 % Companion chapter, not lecture material. Started after Lecture 8 (2026-09-24);
 % to be extended as the course covers operators, adjoints, and spectral theory.
@@ -8955,12 +9438,13 @@ For a linear functional $\ell$ and a fixed $x_0$ with $\ell(x_0) \neq 0$, the ve
 To prove an inequality or identity between continuous quantities on a space, prove it on a dense subset, where the functions are smooth and the classical tools (fundamental theorem of calculus, integration by parts) apply; then approximate a general element and pass to the limit, using that norms (reverse triangle inequality) and inner products (Cauchy--Schwarz) are continuous. Wu: ``a usual technique \ldots\ we only need to show it for a dense subset.''
 \end{rembox}
 
-\begin{exbox}[Applications (Lectures 11--17)]\boxlabel{ex:tech19}
+\begin{exbox}[Applications (Lectures 11--18)]\boxlabel{ex:tech19}
 \begin{itemize}
 \item Poincar\'e on $H^1_0$ (Corollary~\ref{cor:poincare-H10}), from Poincar\'e on $C_c^\infty$.
 \item Limits in $W^{1,p}$ satisfy integration by parts (Proposition~\ref{prop:limit-ibp}).
 \item A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem~\ref{thm:lp-seq-dual}, Step 3); the same fails in $\ell^\infty$ (Example~\ref{ex:linfty-dual}).
 \item Banach--Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem~\ref{thm:banach-steinhaus}): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
+\item $\sin(mx) \rightharpoonup 0$ in $L^p$, $1 < p < \infty$ (Lecture 18, Example~\ref{ex:sin-weak-Lp}): test only against continuous $g$, dense in $L^{p'}$, plus a uniform bound.
 \end{itemize}
 \end{exbox}
 
@@ -9092,6 +9576,32 @@ applied to $y$ by inserting $y = T(T^{-1} y)$. A uniform bound on $\|T_n^{-1}\|$
 The Lax equivalence theorem (Theorem~\ref{thm:lax-equivalence}).
 \end{exbox}
 
+% --------------------------------------------------------------------------
+\subsection{Technique 29: View Vectors as Functionals on the Dual}
+
+\begin{rembox}[Strategy]\label{rem:tech29}
+An element $x \in X$ is also a bounded linear functional on $X'$, $\ell \mapsto \ell(x)$, with the same norm. A sequence $\{x_n\}$ is then a sequence of bounded linear maps on the \emph{Banach} space $X'$ (complete even when $X$ is not), and the uniform boundedness principle and Banach--Steinhaus apply to it. Statements about weak convergence become statements about pointwise convergence of operators.
+\end{rembox}
+
+\begin{exbox}[Applications (Lecture 18)]\boxlabel{ex:tech29}
+\begin{itemize}
+\item Criterion for weak convergence (Theorem~\ref{thm:weak-criterion}).
+\item Weakly convergent sequences are bounded (Theorem~\ref{thm:weak-lsc}).
+\item $X$ reflexive $\iff$ $X'$ reflexive (Theorem~\ref{thm:reflexive-dual}): $X$ is a closed subspace of $X''$.
+\end{itemize}
+\end{exbox}
+
+% --------------------------------------------------------------------------
+\subsection{Technique 30: Fatten a Closed Set}
+
+\begin{rembox}[Strategy]\label{rem:tech30}
+A result proved for sets of interior points (open sets) transfers to closed sets $K$ when the point to be separated is at positive distance $d$ from $K$: replace $K$ by $K_\varepsilon = \{ x : \operatorname{dist}(x, K) < \varepsilon \}$ with $\varepsilon < d$. $K_\varepsilon$ inherits convexity, consists of interior points, and still misses the point; the room $\varepsilon$ also makes the separating functional bounded and the separation strict.
+\end{rembox}
+
+\begin{exbox}[Application (Lecture 18)]\boxlabel{ex:tech30}
+Hyperplane separation in a normed space (Theorem~\ref{thm:separation-normed}), from Theorem~\ref{thm:separation}; and through it Mazur's theorem (Theorem~\ref{thm:mazur}).
+\end{exbox}
+
 
 % ============================================================================
 % CONCORDANCE WITH LAX
@@ -9172,9 +9682,10 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:lax-milgram} Lax--Milgram & \S6.3, Thm~6 & Proved through the operator $A$ of Theorem~\ref{thm:form-operator}: one-to-one with a lower bound, closed range, dense range. \\
 \ref{sec:sobolev} Sobolev spaces & \S5.1, example (g) & Weak derivatives, $H^1_0$ and the Poincar\'e inequality are not in Lax's Chapters 1--15 as treated here. \\
 \ref{sec:duality} Duality in normed spaces & Ch.~8; \S5.1, Thm~5 & Normed Hahn--Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch.~8 has not been checked against the text here, so no Ch.~8 numbers are cited. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. \\
-\ref{sec:reflexive} Separable duals, reflexive spaces & Ch.~8 & Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch.~8 numbering not checked. \\
+\ref{sec:reflexive} Separable duals, reflexive spaces & Ch.~8 & Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch.~8 numbering not checked. $X$ reflexive $\iff$ $X'$ reflexive (Lecture 18) is not in Lax. \\
 \ref{sec:solving}--\ref{sec:open-mapping} Solving $Mx = y$; Baire category; open mapping & Ch.~15 & \S15.5 The open mapping principle: the image of the unit ball contains a ball (Thm~9), open mapping (Thm~10), Banach's inverse mapping theorem (Thm~11), closed maps and the closed graph theorem (definition before Thm~12, Thm~12), equivalent norms (Thm~13, for compatible norms), the Baire category principle (used in the proof of Thm~9, p.~169; sets of second category, Thm~16). \\
 \ref{sec:ubp} Uniform boundedness and approximation & \S10.1; \S15.2--15.3; \S15.5; \S34.3 & The second-category open mapping theorem is Lax's Thm~16 (\S15.5, an exercise there, with $Y$ Banach; in the lecture $Y$ is normed, and it turns out complete). The second equivalent norm theorem is Thm~13 of \S15.5. Uniform boundedness: Lax proves it from Baire in \S10.1 (Thms~2--3) and for operators in \S15.3 (Thm~7); the lecture derives it from the equivalent norm theorem with the norm $\|x\| + \sup_\alpha \|A_\alpha x\|$. Banach--Steinhaus: \S15.2 Thm~6 and \S15.3 Cor~7$'$. The Lax equivalence theorem is Thm~8 of \S34.3, for semigroups; the lecture's version is for equations $T_n x = y$. \\
+\ref{sec:weak} Weak and weak-star convergence & Ch.~10 (opening), \S10.1, \S10.3; \S8.4 & Definition and Examples~1--2 open Lax's Ch.~10. The weak convergence criterion is \S10.1 Thm~1 ($\Leftarrow$) with Thm~4$'$ (bounded); the norm bound Thm~5; Mazur's theorem Thm~6, proved there with support functions (\S8.4 Thm~17), here with the separation theorem in normed spaces (as in the proof of Thm~17). Weak-$*$: the definition and Thm~11 of \S10.3, the norm bound Exercise~6 there; Lax's example of weak-$*$ but not weak convergence (Example~5) uses measures on $[-1,1]$ instead of $\ell^1 = (c_0)'$. The weak-$*$ criterion is not in Lax. \\
 Chapter~\ref{ch:qm} (companion) & --- & Dual spaces return in Lax Ch.~8. \\
 \end{longtable}
 }

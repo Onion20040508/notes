@@ -16,6 +16,7 @@ tags: [functional-analysis, hub]
 ## Used in (Functional Analysis)
 - [[§42 Uniform Boundedness and Approximation#^thm-42-4|Theorem §42.4: Banach–Steinhaus]]
 - [[§42 Uniform Boundedness and Approximation#^thm-42-5|Theorem §42.5: Lax Equivalence Theorem]]
+- [[§43 Weak and Weak-Star Convergence#^thm-43-8|Theorem §43.8: The Norm of a Weak-ast Limit]]
 
 ## Connections
 - TODO
