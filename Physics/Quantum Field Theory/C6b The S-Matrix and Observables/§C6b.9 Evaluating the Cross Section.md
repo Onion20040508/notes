@@ -11,9 +11,9 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)", Definition "Classical differential cross section", Figure "classicalxsec", paragraph "Example: the hard sphere (filled in)"), §15.3 (Definition "Wave packets", eq. (twopacket), paragraph "Why $e^{-i\vec b\cdot\vec k_B}$ shifts $B$ by $+\vec b$ (filled in)", Figure "wavepackets", Caution "A slip on the wave-packet slide", eq. (Pb), Definition "The quantum cross section", paragraphs "Why integrate over $\vec b$ (filled in)", "Which final states (filled in)"), §15.4 (eq. (dsigmafull), paragraph "Counting", Derivations "The $\delta$-functions and the one Jacobian", "A $\delta$-function of a function (filled in)", Caution "$1/f'(0)$ on the slide", paragraphs "Integrating over $\bar k_B^z$ instead", "A second zero (filled in)", "Smoothness"), §15.5 (Principle "Cross section for $2\to n$ scattering", paragraph "Reading the formula", Derivation "Dimension check (filled in)", paragraph "Identical particles (filled in)") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slide 8, Part B, slides 11–16, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 99–106 and 108, eqs. (4.59)–(4.61), (4.65)–(4.79) · Yu Zhao-Huan, 量子场论讲义, §6.5.1–§6.5.2, eqs. (6.276)–(6.313), (6.321).*
 
-The quantum cross section of [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]], $d\sigma = \int d^2b\,\mathcal P(\mathbf b)$ ([[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-6|Def. §C6b.8.6]]) for the two-packet state of [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-4|Def. §C6b.8.4]], evaluated; away from the forward direction only $i\hat T$ contributes ([[§C6b.8 Wave Packets and the Cross Section#^lem-c6b-8-5|Lemma §C6b.8.5]]). The result, after fourteen integrals, one Jacobian and an argument from smoothness, is "the longest formula we have in the entire class", [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]: initial kinematics × $|\mathcal M|^2$ × final phase space. It is done once and never again. It is the careful version of [[§C6b.3 The Cross Section|§C6b.3]]: the result is [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]], 2, which Yu reaches without wave packets, in a box of volume $\tilde V$ with $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]; [[§C6b.2 Transition Probabilities in a Box|§C6b.2]]); the table in the opening of [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]] maps every step below to the box step it replaces. Remark: Yu's route, at the end.
+The quantum cross section of [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]], $d\sigma = \int d^2b\,\mathcal P(\mathbf b)$ ([[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-6|Def. §C6b.8.6]]) for the two-packet state of [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-4|Def. §C6b.8.4]], evaluated; away from the forward direction only $i\hat T$ contributes ([[§C6b.8 Wave Packets and the Cross Section#^lem-c6b-8-5|Lemma §C6b.8.5]]). The result, after fourteen integrals, one Jacobian and an argument from smoothness, is "the longest formula we have in the entire class", [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]: initial kinematics × $|\mathcal M|^2$ × final phase space. It is done once and never again. It is the careful version of [[§C6b.3 The Cross Section|§C6b.3]]: the result is [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]], 2, which Yu reaches without wave packets, in a box of volume $\tilde V$ with $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]]; [[§C6b.2 Transition Probabilities in a Box|§C6b.2]]); the table in the opening of [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]] maps every step below to the box step it replaces. Two lessons of the evaluation are boxes of their own: only one root of the longitudinal constraints contributes ([[§C6b.9 Evaluating the Cross Section#^lem-c6b-9-2|Lemma §C6b.9.2]]), and the Jacobian is a flux ([[§C6b.9 Evaluating the Cross Section#^rem-c6b-9-1|§C6b.9, Remark: Why a Jacobian is a flux]]). The section ends with the course's route to frame independence, Lecture 15, Part C: the flux factor is a component of an antisymmetric tensor and the cross section transforms like an area ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-6|Theorem §C6b.9.6]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]]); then Yu's routes.
 
-*Conventions* ([[Larsen PHY 513]]): beams along the $z$-axis; $\perp$ marks the components $(x, y)$ transverse to it; $E_A \equiv E_{\mathbf k_A} = \sqrt{\mathbf k_A^2 + m_A^2}$ inside integrals and $E_A = E_{\mathbf p_A}$ in final formulas; $\mathbf v = \mathbf k/E = \partial E_{\mathbf k}/\partial\mathbf k$ is the velocity, the group velocity of a packet peaked at $\mathbf k$; barred momenta $\bar{\mathbf k}_A$, $\bar{\mathbf k}_B$ label the second, complex-conjugated copy of an amplitude.
+*Conventions* ([[Larsen PHY 513]]): beams along the $z$-axis; $\perp$ marks the components $(x, y)$ transverse to it; $E_A \equiv E_{\mathbf k_A} = \sqrt{\mathbf k_A^2 + m_A^2}$ inside integrals and $E_A = E_{\mathbf p_A}$ in final formulas; $\mathbf v = \mathbf k/E = \partial E_{\mathbf k}/\partial\mathbf k$ is the velocity, the group velocity of a packet peaked at $\mathbf k$; barred momenta $\bar{\mathbf k}_A$, $\bar{\mathbf k}_B$ label the second, complex-conjugated copy of an amplitude; $\varepsilon^{0123} = +1$, hence $\varepsilon_{0123} = -1$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]; PS have $-1$); $x, y = 1, 2$.
 
 ## Doing the integrals
 
@@ -111,26 +111,58 @@ Why the integrals split into transverse and longitudinal ones: the impact parame
 > f(x) = \sqrt{x^2 + m_A^2} + \sqrt{x^2 + m_B^2} - E = f(-x) ,
 > $$
 >
-> so $f(k_A^z) = 0$ implies $f(-k_A^z) = 0$: the second root is $\bar k_A^z = -k_A^z$. The reflected root lies far from the peak of $\phi_A$, so $\phi_A^\ast(\bar{\mathbf k}_A) \approx 0$ there and it does not contribute for sharply peaked packets (numerical check in the user's notes and `qft-C/tools/l15/checks.py`: $m_A = 1$, $m_B = 1.7$, $\mathbf k_A = (0.3, -0.2, 1.1)$, $\mathbf k_B = (0.1, 0.25, -0.8)$ give the roots $1.1$ and $-0.847$, and $1/|f'| = 1/|v_A - v_B| = 0.8767$ at the first).
+> so $f(k_A^z) = 0$ implies $f(-k_A^z) = 0$: the second root is $\bar k_A^z = -k_A^z$. The reflected root lies far from the peak of $\phi_A$, so $\phi_A^\ast(\bar{\mathbf k}_A) \approx 0$ there and it does not contribute for sharply peaked packets (numerical check in the user's notes and `qft-C/tools/l15/checks.py`: $m_A = 1$, $m_B = 1.7$, $\mathbf k_A = (0.3, -0.2, 1.1)$, $\mathbf k_B = (0.1, 0.25, -0.8)$ give the roots $1.1$ and $-0.847$, and $1/|f'| = 1/|v_A - v_B| = 0.8767$ at the first) → [[§C6b.9 Evaluating the Cross Section#^lem-c6b-9-2|Lemma §C6b.9.2]].
 >
 > **What the derivation shows.**
 > - The only non-trivial step of the whole computation is one Jacobian, and it is the kinematic velocity difference of the two beams: "you should not actually be shocked that that is part of the kinematics of doing scattering."
 > - Integrating over $\bar k_B^z$ instead, eliminating $\bar k_A^z$, gives $-f'$ and, with the absolute value, the same result.
-> - Why a Jacobian is a flux: in the box route the same factor is $\tilde V/|\mathbf v_B|$, the inverse flux $1/j_B$ of one particle per box ([[§C6b.3 The Cross Section#^def-c6b-3-1|Def. §C6b.3.1]], [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]), and in the rest frame of $A$
+> - Why a Jacobian is a flux: the factor is the inverse flux of one particle per box of the main line → [[§C6b.9 Evaluating the Cross Section#^rem-c6b-9-1|§C6b.9, Remark: Why a Jacobian is a flux]].
+
+^der-c6b-9-1
+
+*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
+
+> [!theorem] Lemma §C6b.9.2: The Reflected Root Does Not Contribute
+> With the transverse momenta fixed, the two constraints of [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1|Theorem §C6b.9.1]] have exactly two simple zeros whenever $\bar v_A^z \ne \bar v_B^z$ at one of them: $\bar k_A^z = k_A^z$, and a "reflected" configuration ($A$ and $B$ swapped in direction; in the centre-of-mass frame with $\bar{\mathbf k}^\perp = 0$, $\bar k_A^z = -k_A^z$). For packets narrower than the distance between the two zeros ([[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-3|Def. §C6b.8.3]]) only the first contributes: the profile $\phi_A^\ast(\bar{\mathbf k}_A)$ vanishes at the reflected root.
+>
+> *Model:* [[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]]; *applies:* narrow packets, colliding beams ($v_A^z \ne v_B^z$).
+>
+> *Source: the user's PHY 513 notes, Ch. 15 §15.4 (paragraph "A second zero (filled in)") · PHY 513 Lecture 15, slide 14, and transcript*
+
+^lem-c6b-9-2
+
+> [!derivation]- Derivation
+> **Step 1** (at most two zeros). In [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-1|Derivation §C6b.9.1]], Step 2, $f(x) = \sqrt{a + x^2} + \sqrt{b + (P^z - x)^2} - E$ with $a = \bar{\mathbf k}_A^{\perp2} + m_A^2 > 0$, $b = \bar{\mathbf k}_B^{\perp2} + m_B^2 > 0$. Each root is strictly convex,
+>
+> $$
+> \frac{d^2}{dx^2}\sqrt{a + x^2} = \frac{a}{(a + x^2)^{3/2}} > 0 ,
+> $$
+>
+> so $f$ is strictly convex and has at most two zeros; since $f \to +\infty$ as $x \to \pm\infty$, a zero with $f' \ne 0$ ($\bar v_A^z \ne \bar v_B^z$, [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-1|Derivation §C6b.9.1]], Step 3) has exactly one partner on the other side of the minimum of $f$, and the two merge only where $f' = 0$, i.e. where the packets do not approach each other.
+>
+> **Step 2** (the reflected root in the centre-of-mass frame). With $\bar{\mathbf k}^\perp = 0$ and $P^z = 0$, $f(x) = \sqrt{x^2 + m_A^2} + \sqrt{x^2 + m_B^2} - E = f(-x)$: if $k_A^z$ is a zero, so is $-k_A^z$ (the ⚑ of [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-1|Derivation §C6b.9.1]]).
+>
+> **Step 3** (suppression). $\phi_A$ is peaked at $\mathbf p_A$ with a width small compared with the distance between the two zeros ($2|k_A^z|$ in the centre-of-mass frame), so $\phi_A^\ast(\bar{\mathbf k}_A) \approx 0$ at the reflected root and its term in [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1|Theorem §C6b.9.1]] vanishes. Numerical check (the user's notes; `qft-C/tools/l15/checks.py`): $m_A = 1$, $m_B = 1.7$, $\mathbf k_A = (0.3, -0.2, 1.1)$, $\mathbf k_B = (0.1, 0.25, -0.8)$ give the roots $1.1$ and $-0.847$.
+>
+> **What the derivation shows.**
+> - "Simply take $\bar k_A = k_A$" ([[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3|Derivation §C6b.9.3]], Step 5) rests on this lemma; it needs the beams to collide and the packets to be narrow.
+
+^der-c6b-9-2
+
+*Uses:* [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1|Theorem §C6b.9.1]], [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-3|Def. §C6b.8.3]]
+
+> [!remark] Remark: Why a Jacobian is a flux
+> In the box route the factor $1/|\mathbf v_A - \mathbf v_B|$ of [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1|Theorem §C6b.9.1]] is $\tilde V/|\mathbf v_B|$, the inverse flux $1/j_B$ of one particle per box ([[§C6b.3 The Cross Section#^def-c6b-3-1|Def. §C6b.3.1]], [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]]), and in the rest frame of $A$
 >
 > $$
 > \frac{1}{|\mathbf v_A - \mathbf v_B|}\bigg|_{\mathbf v_A = \mathbf 0} = \frac{1}{|\mathbf v_B|} = \frac{1}{\tilde V\,j_B} .
 > $$
 >
 > Here the energy delta function measures how fast the two packets pass through each other along $z$: the rate at which they overlap, per unit transverse area.
+>
+> *Source: the user's PHY 513 notes, Ch. 15 §15.4, §15.10 (paragraph "Correspondence with Yu") · Yu §6.5.2, eq. (6.313)*
 
-^der-c6b-9-1
-
-*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
-
-<!-- NEW lem-c6b-9-2 -->
-
-<!-- NEW rem-c6b-9-1 -->
+^rem-c6b-9-1
 
 > [!caution] Caution: 1/f′(0) on slide 14
 > Slide 14 states the rule as $\int\delta(f(x))\,dx = \frac{1}{f'(0)}$ with $x = \bar k_A^z$. Read "0" as "the point $x_0$ where $f = 0$": the derivative is evaluated at the zero of $f$, not at $x = 0$, and it needs an absolute value (the slide's next line has it), $1/|f'(x_0)|$; when $f$ has several zeros their contributions add ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2).
@@ -147,6 +179,8 @@ Why the integrals split into transverse and longitudinal ones: the impact parame
 > $$
 >
 > with $\mathbf v_{A,B} = \mathbf p_{A,B}/E_{A,B}$ along the beam axis and $\mathcal M$ of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]. All dependence on the shapes of the packets has disappeared.
+>
+> *Assumptions* (each used once in the derivation): (1) narrow packets, $|\phi_A|^2$, $|\phi_B|^2$ peaked at $\mathbf p_A$, $\mathbf p_B$ (Steps 7–8; [[§C6b.9 Evaluating the Cross Section#^lem-c6b-9-2|Lemma §C6b.9.2]]); (2) $\mathcal M$, the energies and the velocities smooth on the scale of the packet widths (Step 7); (3) final states different from the initial one, no forward scattering ([[§C6b.8 Wave Packets and the Cross Section#^lem-c6b-8-5|Lemma §C6b.8.5]]); (4) a detector acceptance smooth on the same scale (the ⚑ of Step 7); (5) collinear beams along $z$ (Step 9).
 >
 > *Model:* [[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]]; *applies:* as there (with $\mathcal M$ from the Feynman rules: exact if $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$, lowest order for a permanent interaction).
 >
@@ -241,7 +275,7 @@ Why the integrals split into transverse and longitudinal ones: the impact parame
 > \int\frac{d^3k_A}{(2\pi)^3}\frac{d^3k_B}{(2\pi)^3}\;|\phi_A(\mathbf k_A)|^2|\phi_B(\mathbf k_B)|^2\,F(k_A, k_B) \simeq F(p_A, p_B)\int\frac{d^3k_A}{(2\pi)^3}|\phi_A(\mathbf k_A)|^2\int\frac{d^3k_B}{(2\pi)^3}|\phi_B(\mathbf k_B)|^2 .
 > $$
 >
-> ⚑ By-product: the same is done inside the remaining delta function, $\delta^4(k_A + k_B - \sum p_i) \to \delta^4(p_A + p_B - \sum p_i)$; this assumes that the final-state acceptance is smooth on the scale of the packet widths, as for any real detector, which does not resolve the momentum spread of the initial packets (PS p. 106).
+> ⚑ By-product: the same is done inside the remaining delta function, $\delta^4(k_A + k_B - \sum p_i) \to \delta^4(p_A + p_B - \sum p_i)$; this assumes that the final-state acceptance is smooth on the scale of the packet widths, as for any real detector, which does not resolve the momentum spread of the initial packets (PS p. 106) → statement, assumption (4).
 >
 > **Step 8** (normalization; slide 15, last bullet). By [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-3|Def. §C6b.8.3]] each remaining integral is 1, so the right side of Step 7 is $F(p_A, p_B)\cdot1\cdot1$. "It completely collapses, and it's because of smoothness."
 >
@@ -256,7 +290,7 @@ Why the integrals split into transverse and longitudinal ones: the impact parame
 > **What the derivation shows.**
 > - Of the two $\delta^4$ of the squared amplitude, one is used up on the packets (steps 3–4) and the other becomes part of the final phase space: no $\delta^4(0)$ ever appears.
 > - The details of the packets drop out "entirely for free"; only their normalization and their narrowness were used.
-> - The assumptions: narrow packets, smooth $\mathcal M$, forward scattering excluded, a smooth detector acceptance, collinear beams.
+> - The assumptions: narrow packets, smooth $\mathcal M$, forward scattering excluded, a smooth detector acceptance, collinear beams (now the *Assumptions* of the statement).
 
 ^der-c6b-9-3
 
@@ -327,7 +361,7 @@ The first underbrace of the theorem, "kinematics of the initial particles" (slid
 >
 > **What the derivation shows.**
 > - The factor comes from counting final *states*, not from the amplitude: the amplitude for identical particles is computed separately and is already symmetric.
-> - For two identical particles at $2 \to 2$ in the centre-of-mass frame, $\mathbf p_2 = -\mathbf p_1$, and the unit vector $\hat{\mathbf n}(\theta, \varphi) = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$ satisfies $-\hat{\mathbf n}(\theta, \varphi) = \hat{\mathbf n}(\pi - \theta, \varphi + \pi)$; so $|\mathbf p\,\hat{\mathbf n}, -\mathbf p\,\hat{\mathbf n}\rangle = |-\mathbf p\,\hat{\mathbf n}, \mathbf p\,\hat{\mathbf n}\rangle$ (Step 1): the directions $(\theta, \varphi)$ and $(\pi - \theta, \varphi + \pi)$ of $\mathbf p_1$ are the same state, integrating over the full sphere counts it twice, and $S_{\rm id} = 2$.
+> - For two identical particles at $2 \to 2$ in the centre-of-mass frame, $\mathbf p_2 = -\mathbf p_1$, and the unit vector $\hat{\mathbf n}(\theta, \varphi) = (\sin\theta\cos\varphi, \sin\theta\sin\varphi, \cos\theta)$ satisfies $-\hat{\mathbf n}(\theta, \varphi) = \hat{\mathbf n}(\pi - \theta, \varphi + \pi)$; so $|\mathbf p\,\hat{\mathbf n}, -\mathbf p\,\hat{\mathbf n}\rangle = |-\mathbf p\,\hat{\mathbf n}, \mathbf p\,\hat{\mathbf n}\rangle$ (Step 1): the directions $(\theta, \varphi)$ and $(\pi - \theta, \varphi + \pi)$ of $\mathbf p_1$ are the same state, integrating over the full sphere counts it twice, and $S_{\rm id} = 2$ → [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-6|Theorem §C6b.4.6]].
 
 ^der-c6b-9-4
 
@@ -395,7 +429,6 @@ The first underbrace of the theorem, "kinematics of the initial particles" (slid
 
 The cross section of [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]] has three factors. $|\mathcal M|^2$ is Lorentz invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-6|Theorem §C6b.1.6]]) and so is the final phase space, but the prefactor $E_AE_B|\mathbf v_A - \mathbf v_B|$ "looks highly not relativistically invariant", and $\sigma$ is an area, not a scalar. Part C of the lecture resolves the puzzle with "a trick: undo the velocities": the flux factor is one component of an antisymmetric tensor, invariant under boosts along the beam and rotating like an area ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]]). It then makes the phase space explicit in the simplest case, two particles in the centre-of-mass frame, and obtains the $2 \to 2$ differential cross section, which for equal masses is $|\mathcal M|^2/(64\pi^2E_{\rm cm}^2)$. Yu reaches the frame independence differently, with the Møller velocity, which is invariant by construction and equals $|\mathbf v_A - \mathbf v_B|$ for collinear beams: that is the main line of these notes, [[§C6b.3 The Cross Section#^def-c6b-3-3|Def. §C6b.3.3]], [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]], [[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]] (§6.5.2, eqs. (6.314)–(6.331)). His two-body kinematics with the Källén function (§6.5.3, eqs. (6.336)–(6.366)) is compared box by box below; Remark: Yu's route, at the end.
 
-
 Why an $\varepsilon$-tensor: the cross section is an area in the plane transverse to the beam, the plane of the impact parameter $d^2b$ ([[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-6|Def. §C6b.8.6]]), and the Lorentz-covariant object attached to an oriented plane is an antisymmetric tensor. The component $F_{12} = \varepsilon_{12\mu\nu}p_A^\mu p_B^\nu$ is the one dual to the transverse area element $dx\wedge dy$ ([[§C6b.9 Evaluating the Cross Section#^der-c6b-9-7|Derivation §C6b.9.7]], Step 3): it is built from the two momenta alone, and it is unchanged by boosts along $z$, exactly as an area in the $xy$-plane is. "Undo the velocities" means writing $E_AE_Bv^z$ as $E_Bp_A^z$, after which the antisymmetric combination is visible.
 
 > [!theorem] Theorem §C6b.9.6: The Flux Factor Is a Component of an Antisymmetric Tensor
@@ -455,6 +488,8 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > 2. Under rotations the flux factor transforms like an area element in the plane transverse to the beam, as $\sigma$ does: $F'_{ij} = R_i{}^kR_j{}^lF_{kl}$, the law of $dx^i\wedge dx^j$, and $\sigma$ is an area in the plane of $d^2b$ ([[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-6|Def. §C6b.8.6]]). Under a boost along $z$ both are unchanged (part 1).
 > 3. In particular $d\sigma$ is the same in the centre-of-mass frame ($\mathbf p_{\rm tot} = \mathbf 0$) and in a target frame ($\mathbf p_A = \mathbf 0$ or $\mathbf p_B = \mathbf 0$).
 >
+> Neither the flux factor nor the cross section is a Lorentz scalar; they transform alike, which is all that is needed.
+>
 > *Model:* [[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]]; *applies:* as there, with $|\mathcal M|^2$ Lorentz invariant ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-6|Theorem §C6b.1.6]]).
 >
 > *Source: PHY 513 Lecture 15, slide 19 ("Cross-section $\sigma$ really is an 'area', it transforms like one. Application: $d\sigma$ invariant under boosts in $z$-direction. Same in c.m.s. ($\vec p_{\rm tot} = 0$) and target frame ($\vec p_A = 0$ or $\vec p_B = 0$)."), and transcript ("it's not even exactly invariant. It should transform like an area, and it does") · the user's PHY 513 notes, Ch. 15 §15.6, Principle "Same cross section in the CM and target frames" (a derived result: a theorem here) · PS §4.5, p. 106*
@@ -491,7 +526,7 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > **Step 4** (frames). The centre-of-mass frame and the rest frames of $A$ or of $B$ are reached from one another by boosts along the common beam axis: with $\tanh\eta = v$ ([[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]]), $\cosh\eta = \gamma$, $\sinh\eta = \gamma v$ in Step 1 gives $p'^z = \gamma(vE + p^z)$, so the boost with $v = -\frac{p_A^z + p_B^z}{E_A + E_B}$ takes the total momentum to zero and the one with $v = -v_A^z$ takes $A$ to rest. Part 1 applies to each: part 3.
 >
 > **What the derivation shows.**
-> - The flux factor is not a Lorentz scalar; the cross section is not either; they transform alike, which is all that is needed.
+> - The flux factor is not a Lorentz scalar; the cross section is not either; they transform alike, which is all that is needed (now in the statement).
 > - The same trick, a component transverse to a boost is invariant under it, gave the centre-of-mass momentum in Problem Set 1 — [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-2|Example §C1a.5.2]].
 
 ^der-c6b-9-7
@@ -507,7 +542,7 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 
 ^rem-c6b-9-3
 
-> [!remark] Remark: Yu's route
+> [!remark] Remark: Yu's route to frame independence
 > In these notes Yu's route to the invariant cross section is the main line, [[§C6b.3 The Cross Section|§C6b.3]] ([[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]–[[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]). Yu writes the cross section first for a fixed target and then replaces $|\mathbf v_{\mathcal B}|$ by the **Møller velocity** $v_{\rm Møl} = \frac{1}{E_{\mathcal A}E_{\mathcal B}}\sqrt{(p_{\mathcal A}\cdot p_{\mathcal B})^2 - m_{\mathcal A}^2m_{\mathcal B}^2}$ (eq. (6.315)), which makes the incident flux $E_{\mathcal A}E_{\mathcal B}v_{\rm Møl}$ and $\sigma$ Lorentz invariant *by definition* (eq. (6.316)); $d\Pi_n$ is eq. (6.318), $d\sigma$ eq. (6.320). He shows $v_{\rm Møl} = \sqrt{|\mathbf v_{\mathcal A} - \mathbf v_{\mathcal B}|^2 - |\mathbf v_{\mathcal A}\times\mathbf v_{\mathcal B}|^2}$ (eqs. (6.322)–(6.329)), so for collinear beams the two definitions agree ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]]); the course instead derives the transformation law of the flux factor (an area). His $2 \to 2$ kinematics in the centre-of-mass frame: eqs. (6.336)–(6.345) (two-body phase space (6.341)–(6.343), $d\sigma/d\Omega$ (6.345)), the Källén function (6.351) with $d\sigma/d\Omega$ in terms of it (6.353), special cases (6.356)–(6.366), all four masses equal (6.366).
 >
 > *Source: Yu §6.5.2–§6.5.3, pp. 244–250, eqs. (6.314)–(6.366)*
@@ -520,4 +555,4 @@ Why an $\varepsilon$-tensor: the cross section is an area in the plane transvers
 > - The identical-particle $1/n!$ is the Fock-space counting of symmetric states — [[§C12.2★ Second Quantization#^def-c12-2-1|QM Def. §C12.2.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]].
 > - "A component transverse to a boost is invariant under that boost": the same observation gave the centre-of-mass momentum from one tensor component in two frames — [[§C1a.5 Vectors, Tensors and Index Notation#^ex-c1a-5-2|Example §C1a.5.2]].
 > - The flux factor $F_{12}$ is the dual, in the transverse plane, of the antisymmetric tensor built from the two momenta, as $\mathbf B$ is the dual of $F_{ij}$ in electrodynamics — [[§C1a.7 Relativistic Electrodynamics in Index Form|§C1a.7]].
-<!-- CONN-9 -->
+> - The box route reaches the same $d\sigma$ with $(2\pi)^4\delta^4(0) = \tilde V\tilde T$ and the Møller velocity, which is invariant by construction; for collinear beams it is the velocity difference whose transformation law [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-6|Theorem §C6b.9.6]]–[[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]] derive — [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]], [[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]].

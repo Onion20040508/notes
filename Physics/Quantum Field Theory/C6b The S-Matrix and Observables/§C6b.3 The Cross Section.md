@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: Yu Zhao-Huan, 量子场论讲义, §6.5.2 "散射截面", pp. 242–246, eqs. (6.307)–(6.331), Fig. 6.4 (page images checked, PDF pp. 250–254) · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slide 8 ("Cross-section … is a universal event rate"), slides 16, 20, 24, and transcript · the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)"), §15.5, §15.6 (eq. (moller)), §15.10 (paragraph "Correspondence with Yu") · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 99–101, 106, eqs. (4.59)–(4.61), (4.79)–(4.80).*
 
-**What is prepared.** A beam of particles $B$, all with the same velocity, falls on a target of particles $A$ at rest ([[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]]). **What is measured.** The number $N$ of scattering events, with the final particles in a given range of momenta, during a time $t$. The cross section is that count with the beam and the target divided out ([[§C6b.3 The Cross Section#^def-c6b-3-2|Def. §C6b.3.2]]). Applied to one $A$ and one $B$ in the box of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]], it is the rate of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]] divided by the flux, and the last power of the box volume cancels ([[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]). The Møller velocity makes the result Lorentz invariant ([[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]]); for collinear beams it is the velocity difference $|\mathbf v_A - \mathbf v_B|$ ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]), and the differential cross section ([[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]) is the formula of the lecture. The section ends with that formula written once, every factor labelled by the box that produced it. Yu §6.5.2 is followed step by step; the course's own derivation of the same formula, with wave packets, follows in [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]]–[[§C6b.9 Evaluating the Cross Section|§C6b.9]].
+**What is prepared.** A beam of particles $B$, all with the same velocity, falls on a target of particles $A$ at rest ([[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]]). **What is measured.** The number $N$ of scattering events, with the final particles in a given range of momenta, during a time $t$. The cross section is that count with the beam and the target divided out ([[§C6b.3 The Cross Section#^def-c6b-3-2|Def. §C6b.3.2]]). Applied to one $A$ and one $B$ in the box of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]], it is the rate of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]] divided by the flux, and the last power of the box volume cancels ([[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]). The Møller velocity makes the result Lorentz invariant ([[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]]); for collinear beams it is the velocity difference $|\mathbf v_A - \mathbf v_B|$ ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]), and the differential cross section ([[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]) is the formula of the lecture. The section ends with that formula written once, every factor labelled by the box that produced it. Along the way the section collects what the cross section needs in every frame: the flux factor in invariant form ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]]), the phase space and its invariance ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-8|Theorem §C6b.3.8]]), the dimension of $d\sigma$ ([[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]]), and the centre-of-mass frame with the threshold of a process ([[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]]). Yu §6.5.2 is followed step by step; the course's own derivation of the same formula, with wave packets, comes after the decays, in [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]]–[[§C6b.9 Evaluating the Cross Section|§C6b.9]].
 
 *Conventions* ([[Larsen PHY 513]]): $\mathbf v = \mathbf p/E = \partial E_{\mathbf p}/\partial\mathbf p$, the group velocity of a packet peaked at $\mathbf p$; $a$ is the cross-sectional area of the beam (Yu: $A$) and $V$ the volume it sweeps (Yu: $V$), not the box volume $\tilde V$; $\mathcal R$ is a rate per unit volume, $R$ the rate of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]] ([[§C6b.2 Transition Probabilities in a Box#^cau-c6b-2-1|§C6b.2, Caution: Names in Yu's §6.5.1]]); $S_{\rm id}$ the identical-particle factor.
 
@@ -87,7 +87,39 @@ tags: [quantum-field-theory, level-c]
 
 *Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-1|Def. §C6b.3.1]], [[§C6b.3 The Cross Section#^def-c6b-3-2|Def. §C6b.3.2]]
 
-<!-- NEW thm-c6b-3-3 -->
+> [!theorem] Theorem §C6b.3.3: One Particle of Each Kind in the Box
+> For one particle $A$ and one particle $B$ in the box of [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]], each a plane wave spread uniformly over the volume $\tilde V$,
+>
+> $$
+> n_A = n_B = \frac{1}{\tilde V} , \qquad j_B = n_B\,|\mathbf v_B| = \frac{|\mathbf v_B|}{\tilde V} , \qquad \mathcal R = \frac{R}{\tilde V} ,
+> $$
+>
+> with $j_B$ the flux of [[§C6b.3 The Cross Section#^def-c6b-3-1|Def. §C6b.3.1]], $\mathcal R$ the events per unit volume and time of [[§C6b.3 The Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]] and $R$ the total rate of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]].
+>
+> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] with $N_A = 1$ and a single beam particle, in the box of [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* plane waves (uniform densities), as there.
+>
+> *Source: Yu §6.5.2, before eq. (6.313) (page image checked: "可以看作在全空间体积 $\tilde V$ 中仅有这两个粒子，因而 $n_{\mathcal A} = n_{\mathcal B} = 1/\tilde V$，此时 $\mathcal R$ 可以用单位时间内的跃迁概率 $R$ 表示为 $\mathcal R = R/\tilde V$")*
+
+^thm-c6b-3-3
+
+> [!derivation]- Derivation
+> **Step 1** (densities). One particle in the volume $\tilde V$, with a uniform probability density (a plane wave, [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]], *Space*): the number per unit volume is $n_A = 1/\tilde V$, and the same for $B$.
+>
+> **Step 2** (flux). [[§C6b.3 The Cross Section#^def-c6b-3-1|Def. §C6b.3.1]] with $n_B = 1/\tilde V$: $j_B = n_B|\mathbf v_B| = |\mathbf v_B|/\tilde V$.
+>
+> **Step 3** (rate per volume). In a time $t$ the pair produces $N = Rt$ events ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]]: $R$ is the transition probability per unit time, summed over the final states), all within the box, so
+>
+> $$
+> \mathcal R = \frac{N}{\tilde V\,t} = \frac{Rt}{\tilde V\,t} = \frac{R}{\tilde V} .
+> $$
+>
+> **What the derivation shows.**
+> - This is Step 1 of [[§C6b.3 The Cross Section#^der-c6b-3-4|Derivation §C6b.3.4]]: inserted into [[§C6b.3 The Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]] it turns the rate of the box into a cross section.
+> - The careful route replaces the uniform density $1/\tilde V$ by an integral over impact parameters at unit density ([[§C6b.8 Wave Packets and the Cross Section#^thm-c6b-8-4|Theorem §C6b.8.4]]).
+
+^der-c6b-3-3
+
+*Uses:* [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]], [[§C6b.3 The Cross Section#^def-c6b-3-1|Def. §C6b.3.1]], [[§C6b.3 The Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]], [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]]
 
 > [!theorem] Theorem §C6b.3.4: The Cross Section in the Rest Frame of A
 > With $R$ the total rate of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]],
@@ -96,7 +128,7 @@ tags: [quantum-field-theory, level-c]
 > \sigma = \frac{R\,\tilde V}{|\mathbf v_B|} = \frac{1}{S_{\rm id}}\,\frac{1}{4E_AE_B|\mathbf v_B|}\;\prod_{j=1}^n\int\frac{d^3p_j}{(2\pi)^3\,2E_j}\;(2\pi)^4\delta^4\Bigl(p_A + p_B - \sum_{j=1}^np_j\Bigr)\,|\mathcal M|^2 .
 > $$
 >
-> The box volume $\tilde V$ and the duration $\tilde T$ have cancelled.
+> The box volume $\tilde V$ and the duration $\tilde T$ have cancelled: the result is finite and independent of the regularization.
 >
 > *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] with one $A$ and one $B$ in the box of [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]; *applies:* as there; $A$ at rest.
 >
@@ -105,7 +137,7 @@ tags: [quantum-field-theory, level-c]
 ^thm-c6b-3-4
 
 > [!derivation]- Derivation
-> **Step 1** (one of each in the box). One $A$ and one $B$ in the volume $\tilde V$: $n_A = n_B = 1/\tilde V$. Their single event rate $R$ ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]]) is spread over the box, so the rate per unit volume is $\mathcal R = R/\tilde V$ (Yu, before (6.313)).
+> **Step 1** (one of each in the box). One $A$ and one $B$ in the volume $\tilde V$: $n_A = n_B = 1/\tilde V$. Their single event rate $R$ ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]]) is spread over the box, so the rate per unit volume is $\mathcal R = R/\tilde V$ (Yu, before (6.313); [[§C6b.3 The Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]]).
 >
 > **Step 2** (solve for $\sigma$). [[§C6b.3 The Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]] solved for $\sigma$, with Step 1:
 >
@@ -130,8 +162,8 @@ tags: [quantum-field-theory, level-c]
 > | | total | $1 - 2 - n + n + 1 = 0$ | $1 - 1 = 0$ |
 >
 > **What the derivation shows.**
-> - The flux of one plane-wave particle in the box is $|\mathbf v_B|/\tilde V$: its density is uniform, $1/\tilde V$. The careful route makes the same average explicit as an integral over the impact parameter at unit density ([[§C6b.8 Wave Packets and the Cross Section#^thm-c6b-8-4|Theorem §C6b.8.4]]).
-> - The result is finite and independent of the regularization: the box was only bookkeeping.
+> - The flux of one plane-wave particle in the box is $|\mathbf v_B|/\tilde V$: its density is uniform, $1/\tilde V$. The careful route makes the same average explicit as an integral over the impact parameter at unit density ([[§C6b.8 Wave Packets and the Cross Section#^thm-c6b-8-4|Theorem §C6b.8.4]]) → [[§C6b.3 The Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]].
+> - The result is finite and independent of the regularization: the box was only bookkeeping (now in the statement).
 > - Only $E_B|\mathbf v_B| = |\mathbf p_B|$ and $E_A = m_A$ refer to the rest frame of $A$; the next two theorems remove that restriction.
 
 ^der-c6b-3-4
@@ -144,7 +176,18 @@ tags: [quantum-field-theory, level-c]
 
 In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything except the factor $(4E_AE_B|\mathbf v_B|)^{-1}$ is Lorentz invariant: $|\mathcal M|^2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-6|Theorem §C6b.1.6]]) and the measure ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]]). In the rest frame of $A$, $|\mathbf v_B|$ is the speed of $B$ relative to $A$; Yu replaces it by an invariant that takes this value there.
 
-<!-- NEW cau-c6b-3-1 -->
+> [!caution] Caution: The flux factor with the velocity difference is not a Lorentz scalar
+> In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything but $(4E_AE_B|\mathbf v_B|)^{-1}$ is invariant, and for general directions of the two momenta $E_AE_B|\mathbf v_A - \mathbf v_B|$ is not a Lorentz invariant (Yu, after (6.314): "$E_{\mathcal A}E_{\mathcal B}v_{\rm rel}$ 并不是 Lorentz 不变量"). It differs from the invariant $\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2}$ by the cross product of the velocities ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]):
+>
+> $$
+> E_A^2E_B^2|\mathbf v_A - \mathbf v_B|^2 = (p_A\cdot p_B)^2 - m_A^2m_B^2 + E_A^2E_B^2|\mathbf v_A\times\mathbf v_B|^2 .
+> $$
+>
+> Example: $A$ at rest and $B$ with momentum $p$ along $x$ give $E_AE_B|\mathbf v_A - \mathbf v_B| = m_Ap$. Boost along $y$ with speed $u$, $\gamma = (1 - u^2)^{-1/2}$: then $E_A' = \gamma m_A$, $\mathbf v_A' = (0, -u, 0)$, $E_B' = \gamma E_B$, $\mathbf p_B' = (p, -\gamma uE_B, 0)$, $\mathbf v_B' = (p/(\gamma E_B), -u, 0)$, so $|\mathbf v_A' - \mathbf v_B'| = p/(\gamma E_B)$ and $E_A'E_B'|\mathbf v_A' - \mathbf v_B'| = \gamma m_Ap \ne m_Ap$. This is why Yu defines $\sigma$ with the Møller velocity ([[§C6b.3 The Cross Section#^def-c6b-3-3|Def. §C6b.3.3]], [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]]); for collinear beams the two agree ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]], 1), and the course's flux factor is invariant under boosts along the beam ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]]).
+>
+> *Source: Yu §6.5.2, eq. (6.314) and the sentence after it (page image checked); eqs. (6.322)–(6.329)*
+
+^cau-c6b-3-1
 
 > [!definition] Definition §C6b.3.3: Møller Velocity
 > For two particles with four-momenta $p_A$, $p_B$ and masses $m_A$, $m_B$, the **Møller velocity** is
@@ -167,10 +210,11 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 > $$
 >
 > is Lorentz invariant and equals [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] in the rest frame of $A$. Yu takes it as the definition of $\sigma$ in every frame (eq. (6.316)).
+> 4. ★ The number of events per unit volume and time, $\mathcal R = n_An_B\sigma v_{\rm Møl}$, is Lorentz invariant; in the rest frame of $A$ it is [[§C6b.3 The Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]].
 >
 > *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] and [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]], in any inertial frame; spinless particles (for $|\mathcal M|^2$ invariant).
 >
-> *Source: Yu §6.5.2, eqs. (6.313)–(6.317) (page image checked)*
+> *Source: Yu §6.5.2, eqs. (6.313)–(6.317) (page image checked; part 4: "而且可以论证 $\mathcal R = n_{\mathcal A}n_{\mathcal B}\sigma v_{\rm Møl}$ 也是 Lorentz 不变的", stated without proof)*
 
 ^thm-c6b-3-5
 
@@ -187,9 +231,17 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 >
 > **Step 4** (part 3). By Steps 1 and 3 every factor of the expression is invariant. By Step 2 it equals [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] in the rest frame of $A$ (with $4E_AE_B|\mathbf v_B| = 4E_AE_Bv_{\rm Møl}$ there), hence in every frame it takes the rest-frame value.
 >
+> **Step 5** (★ part 4). A population with rest-frame density $n_0$ moving with velocity $\mathbf v$ has the current $n^\mu = n_0u^\mu = n_0\gamma(1, \mathbf v)$; its density is the time component, $n = n^0 = n_0\gamma = n_0E/m$ (the volume is length-contracted by $1/\gamma$). So $n/E = n_0/m$ is invariant, and
+>
+> $$
+> n_An_B\,\sigma\,v_{\rm Møl} = \frac{n_A}{E_A}\cdot\frac{n_B}{E_B}\cdot\sigma\cdot E_AE_Bv_{\rm Møl}
+> $$
+>
+> is a product of four invariants (part 1 and part 3). In the rest frame of $A$, $v_{\rm Møl} = |\mathbf v_B|$ (part 2) and the product is $n_An_B\sigma|\mathbf v_B|$ of [[§C6b.3 The Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]]. Equivalently, $\mathcal R = dN/(d^3x\,dt)$ is a number of events, an invariant, per four-volume $d^4x$, also invariant ($|\det\Lambda| = 1$).
+>
 > **What the derivation shows.**
 > - Yu's choice builds the invariance in; the course instead shows that $E_AE_B|\mathbf v_A - \mathbf v_B|$ is a component of an antisymmetric tensor, invariant under boosts along the beam ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]]). For collinear beams the two agree ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]).
-> - $E_AE_B|\mathbf v_A - \mathbf v_B|$ alone is not invariant for general directions (Yu, after (6.314): "$E_{\mathcal A}E_{\mathcal B}v_{\rm rel}$ 并不是 Lorentz 不变量").
+> - $E_AE_B|\mathbf v_A - \mathbf v_B|$ alone is not invariant for general directions (Yu, after (6.314): "$E_{\mathcal A}E_{\mathcal B}v_{\rm rel}$ 并不是 Lorentz 不变量") → [[§C6b.3 The Cross Section#^cau-c6b-3-1|§C6b.3, Caution: The flux factor with the velocity difference is not a Lorentz scalar]].
 
 ^der-c6b-3-5
 
@@ -306,39 +358,24 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 
 ^cau-c6b-3-2
 
-<!-- NEW pointer-area -->
+The course reaches frame independence by a second route: the flux factor $E_AE_B|\mathbf v_A - \mathbf v_B|$ of collinear beams is a component of an antisymmetric tensor, and the cross section transforms like an area, the same in the centre-of-mass frame and in a target frame ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-6|Theorem §C6b.9.6]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]]). It needs the cross section as an area in the plane of impact parameters, which the wave-packet route defines ([[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-6|Def. §C6b.8.6]]); it is therefore stated there, after the decays.
 
 ## The differential cross section
 
-> [!definition] Definition §C6b.3.4: n-Body Invariant Phase Space
-> For $2 \to n$ scattering with initial momenta $p_A$, $p_B$, the **$n$-body invariant phase space** is
+> [!definition] Definition §C6b.3.4: The n-Particle Relativistic Phase Space (Yu: n-Body Invariant Phase Space)
+> The **$n$-particle phase-space factor** of a final state of $n$ particles with total four-momentum $P$ — the course's **$n$-particle relativistic phase space**, Yu's **$n$-body invariant phase space** — is
 >
 > $$
-> d\Pi_n = \Bigl(\prod_{j=1}^n\frac{d^3p_j}{(2\pi)^3\,2E_j}\Bigr)\,(2\pi)^4\delta^4\Bigl(p_A + p_B - \sum_{j=1}^np_j\Bigr) .
+> d\Pi_n = \Bigl(\prod_{j=1}^n\frac{d^3p_j}{(2\pi)^3\,2E_j}\Bigr)\,(2\pi)^4\delta^4\Bigl(P - \sum_{j=1}^np_j\Bigr) ,
 > $$
 >
-> This is the course's $n$-particle phase space, [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]] (slide 20), with total momentum $P = p_A + p_B$; it is Lorentz invariant ([[§C6b.3 The Cross Section#^thm-c6b-3-8|Theorem §C6b.3.8]]).
->
-> *Source: Yu §6.5.2, eq. (6.318) ("$n$ 体不变相空间") · PHY 513 Lecture 15, slide 20 · PS §4.5, eq. (4.80)*
-
-^def-c6b-3-4
-
-> [!definition] Definition §C6b.3.4: The n-Particle Relativistic Phase Space
-> The **$n$-particle phase-space factor** of a final state of $n$ particles with total four-momentum $P$ is
->
-> $$
-> d\Pi_n = \Bigl(\prod_{i=1}^n\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}\Bigr)\cdot(2\pi)^4\delta^4\Bigl(P - \sum_ip_i\Bigr) ,
-> $$
->
-> with $P = p_A + p_B$ for scattering and $P = p_A$ for a decay ([[§C6b.5 Decay Widths|§C6b.5]]): the kinematics of the $n$ final particles. An explicit $d\Pi_n$ requires a specific final state and coordinate system.
+> with $P = p_A + p_B$ for $2 \to n$ scattering with initial momenta $p_A$, $p_B$, and $P = p_A$ for a decay ([[§C6b.5 Decay Widths|§C6b.5]]): the kinematics of the $n$ final particles. An explicit $d\Pi_n$ requires a specific final state and coordinate system. It is Lorentz invariant ([[§C6b.3 The Cross Section#^thm-c6b-3-8|Theorem §C6b.3.8]]).
 >
 > *Model:* any (kinematics); *applies:* the measure of relativistically normalized final states ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]); independent of the dynamics.
 >
-> *Source: PHY 513 Lecture 15, slide 20 ("The $n$-particle phase space factor $d\Pi_n = (\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i})\cdot(2\pi)^4\delta^{(4)}(p_A + p_B - \sum_ip_i)$"), slide 25 ("The phase space factor is kinematics of $n$ final particles … Explicit $d\Pi_n$: specific final state and coordinate system"), slide 22 (with $p_A$), and transcript ("this whole thing here is sometimes called the $n$ particle relativistic phase space") · the user's PHY 513 notes, Ch. 15 §15.7, eq. (dPin) · PS §4.5, eq. (4.80) ("relativistically invariant $n$-body phase space") · Yu §6.5.2, eq. (6.318) ($n$ 体不变相空间)*
+> *Source: PHY 513 Lecture 15, slide 20 ("The $n$-particle phase space factor $d\Pi_n = (\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i})\cdot(2\pi)^4\delta^{(4)}(p_A + p_B - \sum_ip_i)$"), slide 25 ("The phase space factor is kinematics of $n$ final particles … Explicit $d\Pi_n$: specific final state and coordinate system"), slide 22 (with $p_A$), and transcript ("this whole thing here is sometimes called the $n$ particle relativistic phase space") · the user's PHY 513 notes, Ch. 15 §15.7, eq. (dPin) · PS §4.5, eq. (4.80) ("relativistically invariant $n$-body phase space") · Yu §6.5.2, eq. (6.318) ("$n$ 体不变相空间", for $P = p_A + p_B$)*
 
 ^def-c6b-3-4
-
-The main line defines the same measure with Yu's name, the $n$-body invariant phase space, [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]] (Yu (6.318)).
 
 With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]] reads $d\sigma = \frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}\,|\mathcal M|^2\,d\Pi_n$ (slide 24).
 
@@ -430,7 +467,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 > [!theorem] Theorem §C6b.3.10: The Cross Section Is an Area for Every n
 > With $N = 2 + n$ external particles, $[d\sigma] = -2$ for every $n$: the dimension of an area.
 >
-> *Model:* [[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]]; *applies:* relativistic normalization, four spacetime dimensions; every order.
+> *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] with [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]], or [[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]] (the dimension does not depend on the route); *applies:* relativistic normalization, four spacetime dimensions; every order.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.5, Derivation "Dimension check (filled in)"*
 
@@ -466,13 +503,68 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 
 ^der-c6b-3-10
 
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]], [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 
 ## The centre-of-mass frame
 
-<!-- NEW def-c6b-3-5 -->
+> [!definition] Definition §C6b.3.5: Centre-of-Mass Frame and Centre-of-Mass Energy
+> For a $2 \to n$ process the **centre-of-mass frame** is the inertial frame in which the total three-momentum vanishes, $\mathbf p_A + \mathbf p_B = \sum_{j=1}^n\mathbf p_j = \mathbf 0$. The **centre-of-mass energy** $E_{\rm cm}$ is the total energy there, $E_{\rm cm} = E_A + E_B = \sum_jE_j$. Because $(p_A + p_B)^2 = (E_A + E_B)^2 - |\mathbf p_A + \mathbf p_B|^2$ is a Lorentz scalar and equals $E_{\rm cm}^2$ in that frame, in every frame
+>
+> $$
+> E_{\rm cm} = \sqrt{(p_A + p_B)^2} = \sqrt{(p_1 + p_2 + \cdots + p_n)^2} = \sqrt s ,
+> $$
+>
+> with $s$ the first Mandelstam variable ([[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]]).
+>
+> *Model:* any (kinematics); *applies:* any $2 \to n$ process (the second form by $p_A + p_B = \sum_jp_j$, the support of $d\Pi_n$); for a decay the same definition with $p_A$ alone gives $E_{\rm cm} = m_A$ ([[§C6b.5 Decay Widths#^thm-c6b-5-8|Theorem §C6b.5.8]]).
+>
+> *Source: Yu §6.5.2, eqs. (6.332)–(6.334) (page image checked: "质心系定义为使系统总动量为零的参考系", "$E_{\rm CM}$ 是 Lorentz 不变量") · PHY 513 Lecture 15, slide 19 ("c.m.s. ($\vec p_{\rm tot} = 0$)"), slide 20 · PS §4.5, p. 106*
 
-<!-- NEW thm-c6b-3-11 -->
+^def-c6b-3-5
+
+> [!theorem] Theorem §C6b.3.11: The Threshold of a 2 → n Process
+> A $2 \to n$ process ($n \ge 2$) with final masses $m_1, \dots, m_n$ can occur only if
+>
+> $$
+> E_{\rm cm} > \sum_{j=1}^nm_j ,
+> $$
+>
+> with $E_{\rm cm}$ of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]. At $E_{\rm cm} = \sum_jm_j$ the final particles are all at rest in the centre-of-mass frame and the phase space $\int d\Pi_n$ ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]]) has zero volume; below it $d\Pi_n$ has no support. The condition is the same in every frame.
+>
+> *Model:* any (kinematics); *applies:* every frame, independent of the dynamics.
+>
+> *Source: Yu §6.5.2, eq. (6.335) (page image checked, boxed: "若 $E_{\rm CM} = \sum_jm_j$，则末态相空间体积为零，散射过程不能发生"); §6.5.3, eq. (6.339) for $n = 2$*
+
+^thm-c6b-3-11
+
+> [!derivation]- Derivation
+> **Step 1** (the centre-of-mass frame exists). $P = p_A + p_B$ has $P^0 = E_A + E_B > 0$ and $P^2 = (E_A + E_B)^2 - |\mathbf p_A + \mathbf p_B|^2 \ge (E_A + E_B)^2 - (|\mathbf p_A| + |\mathbf p_B|)^2 \ge 0$, using $E \ge |\mathbf p|$; for massive particles $E > |\mathbf p|$ and $P^2 > 0$. The boost with velocity $\mathbf P/P^0$ ($|\mathbf P|/P^0 < 1$) takes $P$ to $(\sqrt{P^2}, \mathbf 0)$ ([[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]] along $\mathbf P$).
+>
+> **Step 2** (energies in that frame). The delta function of $d\Pi_n$ requires $\sum_j\mathbf p_j = \mathbf 0$ and $\sum_jE_j = E_{\rm cm}$. Each energy satisfies
+>
+> $$
+> E_j = \sqrt{\mathbf p_j^2 + m_j^2} \ge m_j , \qquad \text{with equality if and only if } \mathbf p_j = \mathbf 0 ,
+> $$
+>
+> so $E_{\rm cm} = \sum_jE_j \ge \sum_jm_j$, with equality only at $\mathbf p_1 = \cdots = \mathbf p_n = \mathbf 0$.
+>
+> **Step 3** (below and at threshold). For $E_{\rm cm} < \sum_jm_j$ the energy delta function has no zero on the integration region: $d\Pi_n = 0$. Just above threshold write $Q = E_{\rm cm} - \sum_jm_j$ and $E_j = m_j + \frac{\mathbf p_j^2}{2m_j} + O(\mathbf p_j^4)$: after the $\delta^3$ has removed $\mathbf p_n$, the energy constraint is $\sum_j\frac{\mathbf p_j^2}{2m_j} = Q$ in $3(n - 1)$ dimensions. The region $\sum_j\mathbf p_j^2/2m_j < Q$ is an ellipsoid of volume $\propto Q^{3(n-1)/2}$; the energy delta function is its derivative in $Q$, so
+>
+> $$
+> \int d\Pi_n \propto \frac{d}{dQ}Q^{3(n-1)/2} \propto Q^{(3n-5)/2} \;\longrightarrow\; 0 \quad (Q \to 0^+,\ n \ge 2) .
+> $$
+>
+> For $n = 2$ this is $\int d\Pi_2 = |\mathbf p_1|/(4\pi E_{\rm cm})$ with $|\mathbf p_1| \propto Q^{1/2}$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]]).
+>
+> **Step 4** (every frame). $E_{\rm cm}$ and the masses are Lorentz invariants ([[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]), so the condition does not depend on the frame: a process possible in the centre-of-mass frame is possible in every frame.
+>
+> **What the derivation shows.**
+> - $E_{\rm cm}$ is the energy available to make the final particles; Yu calls it the effective energy that excites the internal interactions.
+> - The same argument with $E_{\rm cm} = m_A$ is the decay threshold ([[§C6b.5 Decay Widths#^thm-c6b-5-8|Theorem §C6b.5.8]]).
+
+^der-c6b-3-11
+
+*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]
 
 ## The annotated formula
 
@@ -504,4 +596,6 @@ Two more factors do not appear in $d\sigma$. $\frac{1}{S_{\rm id}}$ enters only 
 > - The flux factor as a component of an antisymmetric tensor (the course's route to frame independence), two-body phase space and $2 \to 2$ in the centre-of-mass frame — [[§C6b.9 Evaluating the Cross Section|§C6b.9]] (the tensor and the area), [[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]] (two-body phase space and $2 \to 2$)
 > - The same chain with one initial particle and no flux gives the decay rate, $\frac{1}{2E_A}$ in place of $\frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}$ — [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]].
 > - The invariant measure of the phase space is the one that makes $\langle\mathbf p|\mathbf q\rangle$ invariant and that appears in every mode expansion — [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]].
-<!-- CONN-3 -->
+> - A density is the time component of a current, $n = n_0\gamma$, like the charge density $\rho = j^0$; this is why $n/E$ is invariant and the event rate per unit volume $\mathcal R$ is a Lorentz scalar — ★ [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]], 4.
+> - The centre-of-mass energy is $\sqrt s$; its threshold for a $2 \to n$ process becomes $m_A > \sum_jm_j$ for a decay, and $E_{\rm cm} \to \sqrt{s_{12}}$ gives the energies in the rest frame of a pair — [[§C6b.5 Decay Widths#^thm-c6b-5-8|Theorem §C6b.5.8]], ★ [[§C6b.6 Decay Kinematics#^thm-c6b-6-8|Theorem §C6b.6.8]].
+> - Two-body phase space and the $2 \to 2$ cross section in the centre-of-mass frame, with the Källén function — [[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]].

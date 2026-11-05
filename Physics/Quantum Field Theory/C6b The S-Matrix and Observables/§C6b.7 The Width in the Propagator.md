@@ -9,7 +9,11 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C6b.6 Decay Kinematics]] · ↑ [[· C6b The S-Matrix and Observables]] · [[§C6b.8 Wave Packets and the Cross Section]] →
 
-<!-- HEADER-7 -->
+*Sources: PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part C, slide 23, and transcript · the user's PHY 513 notes, Ch. 15 §15.8 (eq. (BWprop), Figure "breitwigner", paragraph "Relation to non-relativistic decay", eq. (GammaNR), Principle "The width is invariant; the decay rate is time-dilated", paragraph "Checks (filled in)") · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, p. 101, eqs. (4.63)–(4.64) · Yu Zhao-Huan, 量子场论讲义, §10.6, pp. 481–483, eqs. (10.259)–(10.275).*
+
+The width of [[§C6b.5 Decay Widths|§C6b.5]] appears a second time: in the propagator of an unstable particle, $i/(p^2 - m^2 + im\Gamma)$ in place of the $+i\varepsilon$ of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]] ([[§C6b.7 The Width in the Propagator#^mod-c6b-7-1|Model §C6b.7.1]]; Lecture 15, slide 23). Near its pole the propagator is a single pole below the real axis ([[§C6b.7 The Width in the Propagator#^thm-c6b-7-2|Theorem §C6b.7.2]]); back in time it is the exponential decay of a non-relativistic wave function ([[§C6b.7 The Width in the Propagator#^def-c6b-7-1|Def. §C6b.7.1]]), with the rate time-dilated by $m/E_{\mathbf p}$ ([[§C6b.7 The Width in the Propagator#^thm-c6b-7-3|Theorem §C6b.7.3]]); and its square, in a cross section, is the Breit–Wigner resonance of full width $\Gamma$ ([[§C6b.7 The Width in the Propagator#^thm-c6b-7-4|Theorem §C6b.7.4]]). The course states the propagator; Yu derives it from the imaginary part of the self-energy in §10.6 (★ Remark: Yu's route to the width, at the end).
+
+**Setup.** An unstable scalar particle of mass $m$ and width $\Gamma \ll m$, exchanged as an internal line (or produced as a resonance) in a process computed with the Feynman rules; $p^2$ near $m^2$. The width in the propagator is the finite part of the self-energy, beyond the lowest order of the rules ([[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]]), with the field normalization set to 1 ($Z \simeq 1$); every statement holds to first order in $\Gamma/m$.
 
 ## The width in the propagator
 
@@ -145,7 +149,7 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > so $\Gamma$ is the rest-frame decay rate of [[§C6b.5 Decay Widths#^def-c6b-5-1|Def. §C6b.5.1]]. In another frame the lifetime $1/\Gamma_{\rm NR} = \gamma/\Gamma = \gamma\tau$ is the dilated proper lifetime ([[§A2.1 Time Dilation#^thm-a2-1-2|REL Theorem §A2.1.2]]).
 >
 > **What the derivation shows.**
-> - Non-relativistic quantum mechanics cannot see the factor $m/E$: there $E \approx m$; "so there's some translation there that occasionally people … can get wrong".
+> - Non-relativistic quantum mechanics cannot see the factor $m/E$: there $E \approx m$; "so there's some translation there that occasionally people … can get wrong" → [[§C6b.7 The Width in the Propagator#^cau-c6b-7-1|§C6b.7, Caution: The factor m/E is invisible non-relativistically]].
 > - The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] gives the same factor in a moving frame, $\frac{1}{2E_A}$ instead of $\frac{1}{2m_A}$ (its second ⚑).
 
 ^der-c6b-7-3
@@ -154,7 +158,12 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 
 *Procedure:* [[P2 Green's Functions by Contour Integration|P2]]
 
-<!-- NEW cau-c6b-7-1 -->
+> [!caution] Caution: The factor m/E is invisible non-relativistically
+> Non-relativistic quantum mechanics has $E_{\mathbf p} \approx m$, so its decay constant $\Gamma_{\rm NR}$ ([[§C6b.7 The Width in the Propagator#^def-c6b-7-1|Def. §C6b.7.1]]) cannot tell $\Gamma$ from $\frac{m}{E_{\mathbf p}}\Gamma$. Relativistically $\Gamma$ in $p^2 - m^2 + im\Gamma$ is the rest-frame rate, the same in every frame, and a particle moving with energy $E_{\mathbf p}$ decays at $\Gamma_{\rm NR} = \frac{m}{E_{\mathbf p}}\Gamma = \Gamma/\gamma$ ([[§C6b.7 The Width in the Propagator#^thm-c6b-7-3|Theorem §C6b.7.3]]; the box route gives the same, [[§C6b.5 Decay Widths#^thm-c6b-5-9|Theorem §C6b.5.9]]). Comparing a quoted width with a measured decay length or a non-relativistic decay constant needs this factor: "so there's some translation there that occasionally people … can get wrong."
+>
+> *Source: PHY 513 Lecture 15, slide 23, and transcript · the user's PHY 513 notes, Ch. 15 §15.8 (paragraph "Relation to non-relativistic decay")*
+
+^cau-c6b-7-1
 
 > [!theorem] Theorem §C6b.7.4: The Breit–Wigner Shape and Its Width
 > If the propagator of [[§C6b.7 The Width in the Propagator#^mod-c6b-7-1|Model §C6b.7.1]] carries the total momentum of a process, $p^2 = s$ (e.g. $s = E_{\rm cm}^2$), the cross section near $\sqrt s = m$ has the factor
@@ -236,4 +245,4 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > - The time-dilated decay rate is the time dilation of special relativity, seen in cosmic-ray muons reaching the ground — [[§A2.1 Time Dilation#^thm-a2-1-2|REL Theorem §A2.1.2]], [[§A2.1 Time Dilation#^ex-a2-1-2|REL Example §A2.1.2]].
 > - The $+i\varepsilon$ that a finite width replaces is the Feynman prescription; with $\varepsilon \to m\Gamma$ the poles leave the real axis for good, and the Fourier transform back to time is the contour integral of the Feynman propagator — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[P2 Green's Functions by Contour Integration|P2]].
 > - A Lorentzian of width $\varepsilon$ is the standard nascent delta function; the Breit–Wigner limit $\Gamma \to 0$ and the Sokhotski–Plemelj limit of $1/(x + i\varepsilon)$ are the same family — [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions|§CA.6]].
-<!-- CONN-7 -->
+> - The same $\Gamma$ is the decay rate of the box route; the propagator and the decay formula give the same time dilation — [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]], [[§C6b.5 Decay Widths#^thm-c6b-5-9|Theorem §C6b.5.9]].

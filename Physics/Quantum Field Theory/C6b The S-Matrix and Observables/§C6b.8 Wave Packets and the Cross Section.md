@@ -204,7 +204,7 @@ Why only a transverse shift, and why it is integrated over. A shift $b^z$ along 
 ^cau-c6b-8-1
 
 > [!theorem] Theorem §C6b.8.3: The Phase Displaces the Packet by b
-> Multiplying a momentum profile by $e^{-i\mathbf b\cdot\mathbf k}$ translates the packet by $+\mathbf b$ in space: if $\psi(\mathbf x) = \int\frac{d^3k}{(2\pi)^3}\,\phi(\mathbf k)\,e^{i\mathbf k\cdot\mathbf x}$, then the profile $e^{-i\mathbf b\cdot\mathbf k}\phi(\mathbf k)$ has position-space form $\psi(\mathbf x - \mathbf b)$. Equivalently, $e^{-i\mathbf b\cdot\hat{\mathbf P}}$ is the translation by $\mathbf b$.
+> Multiplying a momentum profile by $e^{-i\mathbf b\cdot\mathbf k}$ translates the packet by $+\mathbf b$ in space: if $\psi(\mathbf x) = \int\frac{d^3k}{(2\pi)^3}\,\phi(\mathbf k)\,e^{i\mathbf k\cdot\mathbf x}$, then the profile $e^{-i\mathbf b\cdot\mathbf k}\phi(\mathbf k)$ has position-space form $\psi(\mathbf x - \mathbf b)$. Equivalently, $e^{-i\mathbf b\cdot\hat{\mathbf P}}$ is the translation by $\mathbf b$. For an impact parameter $\mathbf b \perp \hat{\mathbf z}$ only the transverse momentum enters the phase: $\mathbf b\cdot\mathbf k = \mathbf b\cdot\mathbf k^\perp$.
 >
 > *Model:* any (Fourier analysis); *applies:* any momentum profile, independent of the dynamics.
 >
@@ -232,7 +232,7 @@ Why only a transverse shift, and why it is integrated over. A shift $b^z$ along 
 > multiplying the profile by the phase is acting with $e^{-i\mathbf b\cdot\hat{\mathbf P}}$, the translation operator with the sign of [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]].
 >
 > **What the derivation shows.**
-> - Since $\mathbf b \perp \hat{\mathbf z}$, $b^z = 0$, only $\mathbf k_B^\perp$ enters the phase: $\mathbf b\cdot\mathbf k_B = b^xk_B^x + b^yk_B^y + 0\cdot k_B^z = \mathbf b\cdot\mathbf k_B^\perp$. This is why the $\mathbf b$-integral of [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3|Derivation §C6b.9.3]], Step 1, constrains only the transverse momenta.
+> - Since $\mathbf b \perp \hat{\mathbf z}$, $b^z = 0$, only $\mathbf k_B^\perp$ enters the phase: $\mathbf b\cdot\mathbf k_B = b^xk_B^x + b^yk_B^y + 0\cdot k_B^z = \mathbf b\cdot\mathbf k_B^\perp$. This is why the $\mathbf b$-integral of [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3|Derivation §C6b.9.3]], Step 1, constrains only the transverse momenta (now in the statement).
 
 ^der-c6b-8-3
 
