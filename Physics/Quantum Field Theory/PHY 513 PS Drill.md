@@ -2356,9 +2356,9 @@ For $p_A + p_B \to p_1 + p_2 + p_3$, draw all diagrams of order $O(g\lambda)$ ($
 > [!tip]- Hint (b): route
 > **Strategy (K8).** Count legs; exclude disconnected placements; a diagram is the choice of the external pair at the cubic vertex.
 >
-> **Topic and definitions.** T11. Definition [[§C6b.3 Feynman Rules for Amplitudes#^def-c6b-3-2|§C6b.3.2]] Diagram of a Scattering Amplitude
+> **Topic and definitions.** T11. Definition [[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|§C6c.6.1]] Diagram of a Scattering Amplitude
 >
-> **Key results.** Example [[§C6b.3 Feynman Rules for Amplitudes#^ex-c6b-3-2|§C6b.3.2]] Cubic–Quartic Theory, 2 → 3 at Order gλ (this problem).
+> **Key results.** Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|§C6c.6.2]] Cubic–Quartic Theory, 2 → 3 at Order gλ (this problem).
 
 #### (c)
 
@@ -2375,16 +2375,16 @@ Show that all the diagrams of (b) have symmetry factor 1.
 >
 > **Topic and definitions.** T11. Theorem [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|§CA.8.4]] Orbit Counting for General Vertices
 >
-> **Key results.** Theorem [[§C6b.3 Feynman Rules for Amplitudes#^thm-c6b-3-1|§C6b.3.1]] Vertices Saturated by External Lines Give S = 1 (this problem's argument as a theorem).
+> **Key results.** Theorem [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|§C6c.5.5]] Vertices Saturated by External Lines Give S = 1 (this problem's argument as a theorem).
 
 > [!tip]- Hints: definitions, results and your solution for the whole problem
 > **Topic and definitions.** T11.
-> - Diagram of a scattering amplitude: Definition [[§C6b.3 Feynman Rules for Amplitudes#^def-c6b-3-2|§C6b.3.2]] Diagram of a Scattering Amplitude; amputation Theorem [[§C6b.10 Amplitudes from Correlation Functions#^thm-c6b-10-1|§C6b.10.1]] Amplitudes Are Amputated Correlation Functions
+> - Diagram of a scattering amplitude: Definition [[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|§C6c.6.1]] Diagram of a Scattering Amplitude; amputation Theorem [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|§C6c.1.1]] Amplitudes Are Amputated Correlation Functions
 > - Vertex factors: Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|§C6a.12.2]] Vertex Factors of a Polynomial Interaction
 >
-> **Key results.** Example [[§C6b.3 Feynman Rules for Amplitudes#^ex-c6b-3-1|§C6b.3.1]] Cubic–Quartic Theory, 2 → 2 at Order g² and λ (this problem); disconnected pieces Theorem [[§C6b.10 Amplitudes from Correlation Functions#^thm-c6b-10-2|§C6b.10.2]] The Disconnected Pieces of the Free Four-Point Function Do Not Scatter, [[§C6b.10 Amplitudes from Correlation Functions#^cau-c6b-10-1|§C6b.10, Caution: "Connected" here means fully connected]].
+> **Key results.** Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|§C6c.6.1]] Cubic–Quartic Theory, 2 → 2 at Order g² and λ (this problem); disconnected pieces Theorem [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-2|§C6c.1.2]] The Disconnected Pieces of the Free Four-Point Function Do Not Scatter, [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-1|§C6c.1, Caution: "Connected" here means fully connected]].
 >
-> **Difficulty** (a) 1, (b) 2, (c) 1. Submitted solution: (a) three exchange diagrams and the contact diagram, each drawn and with the vertices opened into their legs; (b) $1 + 6 + 3 = 10$; (c) the stabilizer argument and $N = 6\cdot24 = 144 = |G|$. The vault integrates them as Definition [[§C6b.3 Feynman Rules for Amplitudes#^def-c6b-3-2|§C6b.3.2]] Diagram of a Scattering Amplitude, Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|§C6a.12.2]] Vertex Factors of a Polynomial Interaction, Theorem [[§C6b.3 Feynman Rules for Amplitudes#^thm-c6b-3-1|§C6b.3.1]] Vertices Saturated by External Lines Give S = 1, Example [[§C6b.3 Feynman Rules for Amplitudes#^ex-c6b-3-1|§C6b.3.1]] Cubic–Quartic Theory, 2 → 2 at Order g² and λ, Example [[§C6b.3 Feynman Rules for Amplitudes#^ex-c6b-3-2|§C6b.3.2]] Cubic–Quartic Theory, 2 → 3 at Order gλ.
+> **Difficulty** (a) 1, (b) 2, (c) 1. Submitted solution: (a) three exchange diagrams and the contact diagram, each drawn and with the vertices opened into their legs; (b) $1 + 6 + 3 = 10$; (c) the stabilizer argument and $N = 6\cdot24 = 144 = |G|$. The vault integrates them as Definition [[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|§C6c.6.1]] Diagram of a Scattering Amplitude, Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|§C6a.12.2]] Vertex Factors of a Polynomial Interaction, Theorem [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|§C6c.5.5]] Vertices Saturated by External Lines Give S = 1, Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|§C6c.6.1]] Cubic–Quartic Theory, 2 → 2 at Order g² and λ, Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|§C6c.6.2]] Cubic–Quartic Theory, 2 → 3 at Order gλ.
 
 ### PS8.3 Particle production by an external source (PS 4.1)
 
@@ -2405,13 +2405,13 @@ $H_{\rm int} = -\int d^3x\,j(x)\phi(x)$ with a c-number source $j$ nonzero only 
 > [!tip]- Hints: definitions, results, route, your solution
 > **Topic and definitions.** T11 (with T6 for the source).
 > - Source model: Model [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|§C2b.5.1]] Scalar Field with a Classical Source; interaction picture Definition [[§C6a.2 The Interaction Picture#^def-c6a-2-1|§C6a.2.1]] Interaction-Picture Field; time-ordered exponential Definition [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|§C6a.3.1]] Time-Ordered Exponential
-> - Source vertex: Definition [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^def-c6b-11-1|§C6b.11.1]] Source Vertex; outgoing particles: Lemma [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-1|§C6b.2.1]] Contraction of Fields with Outgoing Particles; [[§C6b.2 Matrix Elements between Particle States#^cau-c6b-2-1|§C6b.2, Caution: Two normalizations of one-particle states]]
+> - Source vertex: Definition [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^def-c6c-7-1|§C6c.7.1]] Source Vertex; outgoing particles: Lemma [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|§C6c.2.1]] Contraction of Fields with Outgoing Particles; [[§C6c.2 Contractions with External Particles#^cau-c6c-2-1|§C6c.2, Caution: Two normalizations of one-particle states]]
 >
-> **Key results.** [[§C6b.10 Amplitudes from Correlation Functions|§C6b.10]] Amplitudes from Correlation Functions (this problem: Theorem [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-1|§C6b.11.1]] The Vacuum-Persistence Amplitude of a Source–Theorem [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-7|§C6b.11.7]] Normalization, Mean and Variance); exponential formula Theorem [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|§CA.8.3]] The Exponential Formula; $i\varepsilon$ limits Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|§CA.6.6]] The iε Limits of the Propagator Denominators; coherent-state route [[§C2b.8 Particle Production by a Classical Source|§C2b.8]] Particle Production by a Classical Source.
+> **Key results.** [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]] Amplitudes from Correlation Functions (this problem: Theorem [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-1|§C6c.7.1]] The Vacuum-Persistence Amplitude of a Source–Theorem [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-7|§C6c.7.7]] Normalization, Mean and Variance); exponential formula Theorem [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|§CA.8.3]] The Exponential Formula; $i\varepsilon$ limits Theorem [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|§CA.6.6]] The iε Limits of the Propagator Denominators; coherent-state route [[§C2b.8 Particle Production by a Classical Source|§C2b.8]] Particle Production by a Classical Source.
 >
 > **Strategy (K13, K11, K9).** Dyson series with c-number weights; Wick; real part via $\delta(p^2 - m^2)$; count pairings of one-legged vertices; contract each outgoing particle with one field.
 >
-> **Difficulty** (a) 1, (b) 2, (c) 2, (d) 3, (e) 3, (f) 1. Submitted solution: all parts as listed, the real part by $\frac{A}{B + iC}$ and a Lorentzian of area $\pi$, $S_m = 2^mm!$ by counting and by stabilizer, the external-state contraction by moving $\hat a$ through $\hat\phi^-$ with commutators, the $n$-particle measure from the overlap. The vault integrates it as [[§C6b.10 Amplitudes from Correlation Functions|§C6b.10]] Amplitudes from Correlation Functions.
+> **Difficulty** (a) 1, (b) 2, (c) 2, (d) 3, (e) 3, (f) 1. Submitted solution: all parts as listed, the real part by $\frac{A}{B + iC}$ and a Lorentzian of area $\pi$, $S_m = 2^mm!$ by counting and by stabilizer, the external-state contraction by moving $\hat a$ through $\hat\phi^-$ with commutators, the $n$-particle measure from the overlap. The vault integrates it as [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]] Amplitudes from Correlation Functions.
 
 ### PS8.4 Two-body decay of a scalar particle (PS 4.2)
 
@@ -2431,7 +2431,7 @@ $\mathcal L = \frac12(\partial_\mu\Phi)^2 - \frac12M^2\Phi^2 + \frac12(\partial_
 > **Topic and definitions.** T11.
 > - Invariant amplitude Definition [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|§C6b.1.3]] The Invariant Amplitude; decay rate Theorem [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-5|§C6b.9.5]] The Decay Rate Formula; relativistic normalization Definition [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|§C2a.4.1]] Relativistic Normalization
 >
-> **Key results.** Example [[§C6b.9 Decay Rates and Widths#^ex-c6b-9-1|§C6b.9.1]] Φ → φφ, the Lifetime at Lowest Order (this problem); Theorem [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-6|§C6b.9.6]] Two-Body Decays; Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|§C6a.12.2]] Vertex Factors of a Polynomial Interaction; Lemma [[§C6b.2 Matrix Elements between Particle States#^lem-c6b-2-1|§C6b.2.1]] Contraction of Fields with Outgoing Particles; [[§C6b.9 Decay Rates and Widths#^cau-c6b-9-1|§C6b.9, Caution: Free states in a decay amplitude]].
+> **Key results.** Example [[§C6b.9 Decay Rates and Widths#^ex-c6b-9-1|§C6b.9.1]] Φ → φφ, the Lifetime at Lowest Order (this problem); Theorem [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-6|§C6b.9.6]] Two-Body Decays; Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|§C6a.12.2]] Vertex Factors of a Polynomial Interaction; Lemma [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|§C6c.2.1]] Contraction of Fields with Outgoing Particles; [[§C6b.9 Decay Rates and Widths#^cau-c6b-9-1|§C6b.9, Caution: Free states in a decay amplitude]].
 >
 > **Strategy (K13, K9).** First-order matrix element between relativistic states; read off $\mathcal M$; two-body phase space at rest with $\delta(f(p))$; identical-particle $\frac12$.
 >

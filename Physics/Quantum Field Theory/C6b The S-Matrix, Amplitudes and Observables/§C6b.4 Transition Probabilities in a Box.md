@@ -7,7 +7,7 @@ section: C6b.4
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6b.3 Feynman Rules for Amplitudes]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.5 The Cross Section]] →
+← [[§C6b.1 The S-Matrix and the Invariant Amplitude]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6b.5 The Cross Section]] →
 
 *Sources: Yu Zhao-Huan, 量子场论讲义, §6.5.1 "跃迁概率", pp. 239–242, eqs. (6.276)–(6.306) (page images checked, PDF pp. 247–250); §6.2, eqs. (6.122)–(6.127) (the $S$-operator); §2.3.4, eqs. (2.157), (2.171) (norms) · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), slide 22 ("Derivation similar"), and transcript · the user's PHY 513 notes, Ch. 15 §15.10 (paragraph "Correspondence with Yu") · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, p. 96 (the factor $(2\pi)^4\delta^{(4)}(0) = 2T\cdot V$), §4.5, pp. 104–106.*
 
@@ -29,7 +29,7 @@ tags: [quantum-field-theory, level-c]
 > $$
 >
 > - *Final state:* different from the initial one, $f \ne i$ (other particle content, or other momenta).
-> - *Applies:* exactly if the interaction is switched off at early and late times, $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$, so that the free states are the asymptotic states; for a permanent interaction (a fixed $\hat H$) at lowest order only: beyond it the external particles carry factors $\sqrt Z$ and the physical mass ([[§C6b.10 Amplitudes from Correlation Functions#^cau-c6b-10-2|§C6b.10, Caution: The rule is stated at lowest order]]; [[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|§C6b.1, Caution: "Free" means widely separated]]).
+> - *Applies:* exactly if the interaction is switched off at early and late times, $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$, so that the free states are the asymptotic states; for a permanent interaction (a fixed $\hat H$) at lowest order only: beyond it the external particles carry factors $\sqrt Z$ and the physical mass ([[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]; [[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|§C6b.1, Caution: "Free" means widely separated]]).
 >
 > *Source: Yu §6.2, eqs. (6.122)–(6.125) (asymptotic states of free form, $S = U(+\infty, -\infty)$); §6.5.1, eqs. (6.282), (6.284)–(6.285), (6.292) (the box, the states, the duration), (6.295) (periodic boundary conditions)*
 
