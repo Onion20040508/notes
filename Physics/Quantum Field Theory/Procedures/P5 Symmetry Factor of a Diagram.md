@@ -39,7 +39,8 @@ Turns a Feynman diagram of a polynomial interaction into its coefficient: the sy
 | Cubic–quartic scattering trees | $\phi^3 + \phi^4$: $72$, $144$ | $S = 1$: [[§C6b.3 Feynman Rules for Amplitudes#^ex-c6b-3-1\|Example §C6b.3.1]], [[§C6b.3 Feynman Rules for Amplitudes#^ex-c6b-3-2\|Example §C6b.3.2]], [[§C6b.12 From the Question to the Formula#^ex-c6b-12-5\|Example §C6b.12.5]] | step 5, saturated vertices |
 | One-loop $2 \to 2$ ($s$, $t$, $u$) | $\phi^4$, $n = 2$: $1152$ | $576$ each, $S = 2$: [[§C6b.3 Feynman Rules for Amplitudes#^ex-c6b-3-3\|Example §C6b.3.3]] | $2!$ (two parallel lines) |
 | Source vacuum lines | $j\phi$, $2m$ vertices: $(2m)!$ | one orbit, $S = 2^m\,m!$: [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-3\|Theorem §C6b.11.3]] | $2^m$ flips, $m!$ lines |
-| Dirac and photon lines | QFT C7–C8 (planned) | | |
+| Yukawa diagrams | $\bar\psi\psi\phi$: three kinds of legs, $\lvert G\rvert = n!$ | every diagram with external points $S = 1$; second-order bubbles $S = 2$: [[§C6c.4 Feynman Rules for Yukawa Theory#^thm-c6c-4-3\|Theorem §C6c.4.3]] | no leg permutations |
+| Photon lines | C6c, QED rules (planned) | | |
 
 ## Pitfalls
 

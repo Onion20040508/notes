@@ -7,7 +7,7 @@ section: C6b.12
 conventions: "[[Larsen PHY 513]]"
 tags: [quantum-field-theory, level-c]
 ---
-← [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C9.1 Discrete Lorentz Transformations]] →
+← [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6c.1 Yukawa Theory]] →
 
 *Sources: PHY 513, Problem Set 8, Problems 2(a), 3(a), 3(d)–(e) and 4 (statements, and the user's solutions, submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 106–108, eqs. (4.79), (4.84)–(4.86) (page images checked) · Yu Zhao-Huan, 量子场论讲义, §6.5.5, eqs. (6.383), (6.385) (page image checked, PDF p. 261) · the homes cited in each step.*
 

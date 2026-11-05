@@ -99,7 +99,7 @@ Lecture 17 does for a theory with fermions what Lectures 15–16 did for $\phi^4
 > -ig\,\delta_{ab} \qquad\bigl(\text{times } \textstyle\int d^4x \text{ in position space; } (2\pi)^4\delta^4(\sum q) \text{ in momentum space}\bigr) ,
 > $$
 >
-> $a$ the spinor index of the $\hat{\bar\psi}$ leg and $b$ that of the $\hat\psi$ leg: the unit $4\times4$ matrix in spinor space, written $-ig$. The $g$ is the strength of $\hat H_I$, the $-i$ comes from $e^{-i\int\hat H_I}$; no factorial appears, since the three legs are of three different kinds. At $n$-th order the term is $\frac{1}{n!}T\bigl\{(-ig\int d^4x\,\hat{\bar\psi}\hat\psi\hat\phi)^n\bigr\}$ (slide 16).
+> $a$ the spinor index of the $\hat{\bar\psi}$ leg and $b$ that of the $\hat\psi$ leg: the unit $4\times4$ matrix in spinor space, written $-ig$. The $g$ is the strength of $\hat H_I$, the $-i$ comes from $e^{-i\int\hat H_I}$; no factorial appears, since the three legs are of three different kinds (why $-ig$ and not $-ig/3!$: [[§C6c.4 Feynman Rules for Yukawa Theory#^thm-c6c-4-2|Theorem §C6c.4.2]]). At $n$-th order the term is $\frac{1}{n!}T\bigl\{(-ig\int d^4x\,\hat{\bar\psi}\hat\psi\hat\phi)^n\bigr\}$ (slide 16).
 >
 > *Model:* [[§C6c.1 Yukawa Theory#^mod-c6c-1-1|Model §C6c.1.1]]; *applies:* the Dyson series between any states, every order; the vertex factor is exact, the scope of the amplitude is that of [[§C6c.4 Feynman Rules for Yukawa Theory#^thm-c6c-4-1|Theorem §C6c.4.1]].
 >
@@ -116,7 +116,7 @@ Lecture 17 does for a theory with fermions what Lectures 15–16 did for $\phi^4
 >
 > **What the derivation shows.**
 > - The vertex factor is $i\mathcal L_{\rm int}$ with the fields stripped: $i\cdot(-g) = -ig$ (Yu p. 288); in QED the same stripping gives $-ie\gamma^\mu$, a matrix in place of $\delta_{ab}$ (C6c, QED rules (planned); PS §4.8).
-> - The $\frac{1}{n!}$ is still there; it cancels against relabelling the vertices ([[§C6c.4 Feynman Rules for Yukawa Theory#^thm-c6c-4-2|Theorem §C6c.4.2]]).
+> - The $\frac{1}{n!}$ is still there; it cancels against relabelling the vertices ([[§C6c.4 Feynman Rules for Yukawa Theory#^thm-c6c-4-3|Theorem §C6c.4.3]]).
 
 ^der-c6c-1-3
 

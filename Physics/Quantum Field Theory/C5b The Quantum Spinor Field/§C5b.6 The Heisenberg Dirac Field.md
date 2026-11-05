@@ -105,7 +105,7 @@ This is the spinor counterpart of [[§C2b.1 Heisenberg Fields|§C2b.1]]. The qua
 >
 > *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]; *applies:* free field, free vacuum $|0\rangle$, exact.
 >
-> *Source: computed here from Theorems §C5b.2.1–§C5b.2.2 and §C5b.4.1 (the spinors $u$, $\bar v$ are the external-line factors of the Feynman rules, PS §4.7, QFT C7, planned)*
+> *Source: computed here from Theorems §C5b.2.1–§C5b.2.2 and §C5b.4.1 (the spinors $u$, $\bar v$ are the external-line factors of the Feynman rules, PS §4.7, [[§C6c.2 External Fermions#^thm-c6c-2-1|§C6c.2, Theorem §C6c.2.1]])*
 
 ^thm-c5b-6-3
 

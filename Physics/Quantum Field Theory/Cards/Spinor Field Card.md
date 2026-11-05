@@ -167,6 +167,17 @@ Microcausality:
 - Bilinears $\hat{\mathcal O}_i(x) = \;:\!\hat{\bar\psi}(x)\Gamma_i\hat\psi(x)\!:$ commute, $[\hat{\mathcal O}_1(x), \hat{\mathcal O}_2(y)] = 0$ for $(x - y)^2 < 0$: microcausality of observables — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-4|Theorem §C5b.7.4]], [[§C2b.4 Microcausality and the Commutator Function#^pr-c2b-4-1|Principle §C2b.4.1]]
 - With commutators, $\langle0\vert[\hat\psi_a(x), \hat{\bar\psi}_b(y)]\vert0\rangle \ne 0$ at every spacelike $\xi$ ($m > 0$) — [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]]
 
+## 9b. Feynman rules with fermions (Yukawa theory, Lecture 17)
+
+| | Formula | Home |
+| --- | --- | --- |
+| contractions | $\overbracket{\hat\psi_a(x)\hat{\bar\psi}_b(y)} = S_F(x - y)_{ab}$ ($4\times4$ matrix), $\overbracket{\hat{\bar\psi}_b(y)\hat\psi_a(x)} = -S_F(x - y)_{ab}$, $\overbracket{\hat\psi\hat\psi} = \overbracket{\hat{\bar\psi}\hat{\bar\psi}} = 0$ | [[§C6c.3 Wick's Theorem with Fermions#^thm-c6c-3-1\|Theorem §C6c.3.1]] |
+| external fermions | incoming particle $u^s(p)$, outgoing particle $\bar u^s(p)$, incoming antiparticle $\bar v^s(p)$, outgoing antiparticle $v^s(p)$ (times $e^{\mp ip\cdot x}$ in position space) | [[§C6c.2 External Fermions#^thm-c6c-2-1\|Theorem §C6c.2.1]] |
+| internal fermion line | $\frac{i(\slashed q + m)}{q^2 - m^2 + i\varepsilon} = \frac{i}{\slashed q - m + i\varepsilon}$, $q$ along the fermion-number arrow | [[§C6c.4 Feynman Rules for Yukawa Theory#^thm-c6c-4-1\|Theorem §C6c.4.1]] |
+| Yukawa vertex | $\mathcal L_{\rm int} = -g\bar\psi\psi\phi$: $-ig$ (no $\frac{1}{3!}$), one arrow in, one out | [[§C6c.1 Yukawa Theory#^thm-c6c-1-3\|Theorem §C6c.1.3]], [[§C6c.4 Feynman Rules for Yukawa Theory#^thm-c6c-4-2\|Theorem §C6c.4.2]] |
+| fermion line | written against the arrow: $\bar u\cdots u$, $\bar u\cdots v$, $\bar v\cdots u$, $\bar v\cdots v$, a number | [[§C6c.2 External Fermions#^thm-c6c-2-2\|Theorem §C6c.2.2]] |
+| signs | each diagram $(-1)^{\#\text{crossings}}$ of its contractions with the external states; closed loop $-1$ and a trace; no symmetry factors | [[§C6c.3 Wick's Theorem with Fermions#^thm-c6c-3-4\|Theorem §C6c.3.4]], [[§C6c.3 Wick's Theorem with Fermions#^thm-c6c-3-5\|Theorem §C6c.3.5]], [[§C6c.4 Feynman Rules for Yukawa Theory#^thm-c6c-4-3\|Theorem §C6c.4.3]] |
+
 ## 10. Parity
 
 | | Formula | Home |
