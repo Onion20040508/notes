@@ -5,13 +5,13 @@ level: C
 chapter: C5b
 section: C5b.8
 conventions: "[[Larsen PHY 513]]"
-tags: [quantum-field-theory, level-c, draft]
+tags: [quantum-field-theory, level-c]
 ---
 ← [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality]] · ↑ [[· C5b The Quantum Spinor Field]] · [[§C5b.9 Spin and Statistics]] →
 
 *Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.5, pp. 62–63 · Yu Zhao-Huan, 量子场论讲义, §6.4.5 · the user's pre-course notes, the Dirac parts of "Time-ordered product and microcausality" and §6.4 ("Feynman Propagators: Dirac spinor field").*
 
-*Draft: the Dirac propagator is in the reading for Lecture 10 (PS §3.5, eqs. (3.116)–(3.121)) but was not covered in the lecture; written from the user's pre-course notes, Yu and Peskin–Schroeder; to be revised when fermion propagators enter the course (Lectures 13–17: Wick's theorem, Yukawa theory).*
+*Taught in Lecture 17 (Nov 4; slide 17: fermionic time ordering and $S_F$, "two independent derivations of the propagator (see HW)"; its use in Wick's theorem and the Yukawa rules is in [[· C6c Feynman Rules for Fermions|C6c]]). The derivations of Theorems §C5b.8.1 and §C5b.8.3 are held back until that problem set is submitted; the rest of the section was written earlier from the user's pre-course notes, Yu and Peskin–Schroeder.*
 
 This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b.5]]–[[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] and the single home of the Dirac propagator $S_F$. Every Green's function of the Dirac operator is $i\slashed{\partial} + m$ applied to a Klein–Gordon Green's function, with the boundary condition (the contour) inherited unchanged; the spin-specific additions are the numerator $\slashed{p} + m$ (the spin sum continued off the shell), the normalization $(i\slashed{\partial} - m)S = +i\delta^4$, and the minus sign of fermionic time ordering. The contour work is [[P2 Green's Functions by Contour Integration]] with a numerator. Conventions as in [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality|§C5b.7]]; the Dirac Green's functions are normalized by $(i\slashed{\partial} - m)S = i\delta^4$ (PS).
 
