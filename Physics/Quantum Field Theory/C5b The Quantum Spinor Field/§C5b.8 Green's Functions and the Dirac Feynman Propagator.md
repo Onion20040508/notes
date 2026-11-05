@@ -133,64 +133,15 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 
 ^thm-c5b-8-3
 
-> [!derivation]- Derivation
-> **1. The operator side** ([[P2 Green's Functions by Contour Integration|P2]] in reverse, as Yu). By [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]] and [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^def-c5b-7-1|Def. §C5b.7.1]], $S_F = \theta(t)S^+_W - \theta(-t)S^-_W$, and by [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], with $p^0 = E_{\mathbf p} \equiv E$,
->
-> $$
-> S_F(\xi) = \int\frac{d^3p}{(2\pi)^3\,2E}\Bigl[\theta(t)(\slashed{p} + m)e^{-ip\cdot\xi} - \theta(-t)(\slashed{p} - m)e^{ip\cdot\xi}\Bigr] .
-> $$
->
-> **2. Relabel the second term.** $\mathbf p \to -\mathbf p$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1, in $\mathcal S'$; Jacobian $1$, $E$ unchanged): $e^{ip\cdot\xi} = e^{iEt - i\mathbf p\cdot\boldsymbol\xi} \to e^{iEt + i\mathbf p\cdot\boldsymbol\xi}$ and $\slashed{p} - m = \gamma^0E - \gamma^ip^i - m \to \gamma^0E + \gamma^ip^i - m$. Define the matrix polynomial $g(p^0) \equiv \gamma^0p^0 - \gamma^ip^i + m$ (that is $\slashed{p} + m$ at four-momentum $(p^0, \mathbf p)$, off the shell). Then $\slashed{p} + m$ on the shell is $g(E)$, and $-(\gamma^0E + \gamma^ip^i - m) = g(-E)$:
->
-> $$
-> S_F(\xi) = \int\frac{d^3p}{(2\pi)^3}\,e^{i\mathbf p\cdot\boldsymbol\xi}\;\frac{1}{2E}\Bigl[\theta(t)\,g(E)\,e^{-iEt} + \theta(-t)\,g(-E)\,e^{iEt}\Bigr] .
-> $$
->
-> ⚑ By-product: the fermionic minus sign of the time ordering and the minus sign of $\sum v\bar v = \slashed{p} - m$ combine into the single numerator $g(p^0) = \slashed{p} + m$ evaluated at the two poles; this is why one formula covers both orderings.
->
-> **3. Poles and residues** ([[P2 Green's Functions by Contour Integration#^p2-2|P2, step 2]]). For $\varepsilon > 0$ consider $\int\frac{dp^0}{2\pi}\frac{i\,g(p^0)e^{-ip^0t}}{(p^0)^2 - E^2 + i\varepsilon}$; the poles are at $\pm E_\varepsilon$ with $E_\varepsilon = \sqrt{E^2 - i\varepsilon} = E - i\varepsilon'$, $\varepsilon' > 0$ (fourth and second quadrants: the Feynman contour, [[P2 Green's Functions by Contour Integration#^p2-3|P2, step 3]]). The residue at $E_\varepsilon$ is $\frac{i}{2\pi}\frac{g(E_\varepsilon)e^{-iE_\varepsilon t}}{2E_\varepsilon}$, at $-E_\varepsilon$ it is $\frac{i}{2\pi}\frac{g(-E_\varepsilon)e^{iE_\varepsilon t}}{-2E_\varepsilon}$ ([[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]]); $g$ is a polynomial, so it is simply evaluated at the pole (Yu (6.262)).
->
-> **4. Close the contour** ([[P2 Green's Functions by Contour Integration#^p2-4|P2, steps 4–5]]). The integrand behaves like $g(p^0)/(p^0)^2 \sim 1/|p^0|$, which tends to zero but not fast enough for the ML estimate: Jordan's lemma is needed ([[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]; [[§CA.4 Contour Integration#^cau-ca-4-1|§CA.4, Caution: Jordan's lemma needs g → 0]]: satisfied). For $t > 0$ close downward, clockwise, enclosing $E_\varepsilon$: $-2\pi i\cdot\frac{i}{2\pi}\frac{g(E_\varepsilon)e^{-iE_\varepsilon t}}{2E_\varepsilon} = \frac{g(E_\varepsilon)e^{-iE_\varepsilon t}}{2E_\varepsilon}$. For $t < 0$ close upward, counterclockwise, enclosing $-E_\varepsilon$: $2\pi i\cdot\frac{i}{2\pi}\frac{g(-E_\varepsilon)e^{iE_\varepsilon t}}{-2E_\varepsilon} = \frac{g(-E_\varepsilon)e^{iE_\varepsilon t}}{2E_\varepsilon}$ ([[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]]). As $\varepsilon \to 0^+$ (pointwise for $t \ne 0$, bounded, hence in $\mathcal S'(\mathbb R)$, [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]):
->
-> $$
-> \int\frac{dp^0}{2\pi}\frac{i\,g(p^0)\,e^{-ip^0t}}{(p^0)^2 - E^2 + i\varepsilon} \to \frac{1}{2E}\Bigl[\theta(t)g(E)e^{-iEt} + \theta(-t)g(-E)e^{iEt}\Bigr] ,
-> $$
->
-> the bracket of Step 2. (The value at $t = 0$ is a single point and carries no weight.) The denominator $(p^0)^2 - E^2 + i\varepsilon = p^2 - m^2 + i\varepsilon$; writing $2E\varepsilon$ or poles at $\pm(E - i\varepsilon)$ instead gives the same limit ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 3).
->
-> **5. Combine** ([[P2 Green's Functions by Contour Integration#^p2-6|P2, step 6]]). Inserting into Step 2, $d^3p\,dp^0 = d^4p$, $e^{-ip^0t + i\mathbf p\cdot\boldsymbol\xi} = e^{-ip\cdot\xi}$ and $g(p^0) = \slashed{p} + m$: the four-dimensional formula (Yu (6.266)–(6.267)), as a limit in $\mathcal S'(\mathbb R^4)$ ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]); the iterated integral is read as in [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], Step 2.
->
-> **6. In terms of $D_F$.** $\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon} = (\slashed{p} + m)\tilde D_F$ with $\tilde D_F = \frac{i}{p^2 - m^2 + i\varepsilon}$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]), and $\slashed{p} + m$ is the transform of $i\slashed{\partial} + m$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3): $S_F = (i\slashed{\partial} + m)D_F$ ([[P2 Green's Functions by Contour Integration#^p2-7|P2, step 7]] checks it: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]]).
->
-> **What the derivation shows**
-> - Every step of P2 goes through with a numerator analytic in $p^0$; only the arc estimate changes (Jordan instead of ML).
-> - For $x^0 > y^0$ the propagator is the fermion amplitude $\langle0|\hat\psi\hat{\bar\psi}|0\rangle$; for $x^0 < y^0$ it is minus the antifermion amplitude; the $i\varepsilon$ is the scalar's.
+> [!derivation]- Derivation (held until Problem Set 9 is submitted)
+> Larsen set the derivation of $S_F$ from the mode expansion as a homework problem (PHY 513 Lecture 17, transcript), so the two derivations of this theorem (from the Wightman functions by contour integration, and from $D_F$) are held back until the problem set is submitted (user decision, 2026-11-04). The statement and its sources stand: PS §3.5, eqs. (3.117)–(3.121); Yu §6.4.5, eqs. (6.258)–(6.267).
 
 ^der-c5b-8-3
 
-*Uses:* [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]
-
-> [!derivation]- Derivation (second route: from the scalar propagator)
-> **1. Apply $i\slashed{\partial} + m$ to $D_F$ slice by slice.** $D_F = \theta(\xi^0)D_W(\xi) + \theta(-\xi^0)D_W(-\xi)$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]; slice products, [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]]). With $\partial_0\theta(\pm\xi^0) = \pm\delta(\xi^0)$ ([[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], 2) and the product rule,
->
-> $$
-> (i\slashed{\partial} + m)D_F = \theta(\xi^0)(i\slashed{\partial} + m)D_W(\xi) + \theta(-\xi^0)(i\slashed{\partial} + m)D_W(-\xi) + i\gamma^0\delta(\xi^0)\bigl[D_W(\xi) - D_W(-\xi)\bigr] .
-> $$
->
-> **2. The first two terms.** By [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]] they are $\theta(\xi^0)S^+_W - \theta(-\xi^0)S^-_W$, the operator side of Step 1 above.
->
-> **3. The contact term vanishes.** $D_W(\xi) - D_W(-\xi) = iD(\xi)$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]]); $D$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$, so $\delta(\xi^0)D$ is the distribution $\delta(\xi^0)\otimes D(0, \cdot)$, and $D(0, \cdot) = 0$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|Theorem §C2b.4.12]]). Dropped: the contact term, because the field commutes with itself at equal times. (PS make the same remark for $S_R$: "the term involving $\partial_0\theta(x^0 - y^0)$ vanishes".)
->
-> **4. Transform.** $(\slashed{p} + m)\tilde D_F$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3), the four-dimensional formula.
->
-> **What the derivation shows**
-> - The Dirac propagator is a derivative of the scalar one; a contact term could have appeared and is absent because $[\hat\phi(t, \mathbf x), \hat\phi(t, \mathbf y)] = 0$.
->
-> *Source: PS §3.5, eqs. (3.117), (3.121) · the user's pre-course notes, §6.4 ("the energy factors assemble into $\slashed{p}$")*
+> [!derivation]- Derivation (second route: from the scalar propagator; held until Problem Set 9 is submitted)
+> Held back with the derivation above.
 
 ^der-c5b-8-3b
-
-*Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|Theorem §C2b.4.12]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]]
 
 *Procedure:* [[P2 Green's Functions by Contour Integration#^p2-1|P2, steps 1–7]]
 
