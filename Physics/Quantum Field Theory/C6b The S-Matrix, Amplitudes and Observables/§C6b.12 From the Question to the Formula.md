@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route]] · ↑ [[· C6b The S-Matrix, Amplitudes and Observables]] · [[§C6c.1 Yukawa Theory]] →
 
-*Sources: PHY 513, Problem Set 8, Problems 2(a), 3(a), 3(d)–(e) and 4 (statements, and the user's solutions, submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 106–108, eqs. (4.79), (4.84)–(4.86) (page images checked) · Yu Zhao-Huan, 量子场论讲义, §6.5.5, eqs. (6.383), (6.385) (page image checked, PDF p. 261) · the homes cited in each step.*
+*Sources: PHY 513, Problem Set 8, Problems 2(a), 3(a), 3(d)–(e) and 4 (statements, and the user's solutions, submitted 2026-10-30) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 106–108, eqs. (4.79), (4.84)–(4.86) (page images checked) · Yu Zhao-Huan, 量子场论讲义, §6.5.5, eqs. (6.383), (6.385) (page image checked, PDF p. 261) · PHY 513 Lecture 17, slides 19–20, 23 (Example 6) · the homes cited in each step.*
 
 A problem states a question in words: a probability, a lifetime, a cross section, a correlation function, a list of diagrams. The formula that answers it holds only in one setup, so the question has to be translated before anything is computed: **what is prepared, what is measured, in which states and which vacuum, at which order, and whether the object asked for is an observable at all.** [[§C6a.0 Setups and Observables|§C6a.0]] classified the physical situations by how the interaction behaves in time and listed, in its table "From the question to the object", the object each kind of question asks for. This section works five of those questions through, each as an Example with the same chain of labelled steps: *question as asked → physical situation (Model box) → states and vacuum → the object → normalization and measure → theorems → result → pitfalls.* Every step shows its formula and links its home; nothing that a home derives is derived again. The general method is the list below; the examples are its instances, and every row of the §C6a.0 table links the example or procedure that works it. Three procedures carry the recurring computations: [[P5 Symmetry Factor of a Diagram]], [[P6 Tree Amplitude from a Lagrangian]], [[P7 From ℳ to σ or Γ]].
 
@@ -23,6 +23,7 @@ A problem states a question in words: a probability, a lifetime, a cross section
 4. **Which vacuum?** The ground state of the Hamiltonian that acts at early and late times: $|0\rangle$ in Model §C6a.0.1, $|\Omega\rangle$ in Model §C6a.0.3 — [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]], [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]].
 5. **Which order?** Free states in place of in and out states (the course's prescription: free states dressed by $U(0, -T)$, bubbles omitted) are exact in Model §C6a.0.1 and lowest order in Model §C6a.0.3; beyond it $\sqrt Z$ per external line and the physical mass — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]], [[§C2b.1 Heisenberg Fields#^cau-c2b-1-3|§C2b.1, Caution: With interactions, the one-particle matrix element carries √Z]], [[§C6b.10 Amplitudes from Correlation Functions#^cau-c6b-10-2|§C6b.10, Caution: The rule is stated at lowest order]].
 6. **Is the object an observable?** Probabilities, rates and cross sections are; a correlation function is not, it is the input of amputation — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^rem-c6b-1-2|§C6b.1, Remark: The fundamental observable?]], [[§C6b.10 Amplitudes from Correlation Functions#^thm-c6b-10-1|Theorem §C6b.10.1]].
+7. **Are there fermions?** Then the question must also fix the spins and the order in which the external states are written, and the answer has signs: relative signs between diagrams are physical (the statistics of identical particles), the overall sign is a convention that drops out of $|\mathcal M|^2$ — [[§C6c.2 External Fermions#^def-c6c-2-2|Def. §C6c.2.2]], [[§C6c.3 Wick's Theorem with Fermions#^thm-c6c-3-4|Theorem §C6c.3.4]], [[§C6c.5 Fermion–Fermion Scattering#^thm-c6c-5-1|Theorem §C6c.5.1]], [[§C6c.5 Fermion–Fermion Scattering#^rem-c6c-5-1|§C6c.5, Remark: The overall sign is a convention]]; worked in Example §C6b.12.6 (PHY 513 Lecture 17, slide 23).
 
 ## A source switched off: how many particles?
 
@@ -320,8 +321,56 @@ A problem states a question in words: a probability, a lifetime, a cross section
 
 ^ex-c6b-12-5
 
+## Fermions: which signs are physical
+
+> [!example] Example §C6b.12.6: f f → f f in Yukawa Theory at Leading Order
+> ![[ph-qft-c6c-5-1.svg]]
+> *The two diagrams of $f(p) + f(k) \to f(p') + f(k')$ at order $g^2$: the $t$-channel ($p \to p'$, scalar momentum $p - p'$) and the $u$-channel ($p \to k'$, scalar momentum $p - k'$), with a relative minus sign ([[§C6c.5 Fermion–Fermion Scattering#^ex-c6c-5-1|Example §C6c.5.1]]). Added figure.*
+>
+> This example uses the fermion rules of C6c (Lecture 17), which come after this chapter; it stands here with the other translations.
+>
+> **Question as asked.** "Fermion scattering at leading nontrivial order: $\text{fermion}(p) + \text{fermion}(k) \to \text{fermion}(p') + \text{fermion}(k')$" in Yukawa theory; find $i\mathcal M$ and say which of its signs can be measured (PHY 513 Lecture 17, slide 19).
+>
+> **Situation** (question 1: no; question 2: two fermions collide, two fermions are detected). [[§C6c.1 Yukawa Theory#^mod-c6c-1-1|Model §C6c.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (the coupling never switches off), at lowest order.
+>
+> **States and vacuum** (questions 3–5 and 7). Free, relativistic, over $|0\rangle$, lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]); each fermion carries a spin label, suppressed below ($u(p) \equiv u^s(p)$, each spinor with the spin of its particle); the order of the creation operators is part of the question ([[§C6c.2 External Fermions#^def-c6c-2-2|Def. §C6c.2.2]]):
+>
+> $$
+> |i\rangle = |\mathbf p, \mathbf k\rangle = \sqrt{2E_{\mathbf p}2E_{\mathbf k}}\,\hat a^\dagger_{\mathbf p}\hat a^\dagger_{\mathbf k}|0\rangle , \qquad \langle f| = \bigl(|\mathbf p', \mathbf k'\rangle\bigr)^\dagger = \sqrt{2E_{\mathbf p'}2E_{\mathbf k'}}\,\langle0|\hat a_{\mathbf k'}\hat a_{\mathbf p'} .
+> $$
+>
+> **Order.** Every external fermion must meet a fermion field, and each vertex $\hat{\bar\psi}\hat\psi\hat\phi$ has two: four external fermions need two vertices. At first order the two fermion fields cannot absorb two fermions and emit two, so the leading nontrivial contribution is second order (slide 19):
+>
+> $$
+> \langle\mathbf p'\mathbf k'|\hat S|\mathbf p\mathbf k\rangle = {}_0\langle\mathbf p'\mathbf k'|\,\frac{1}{2!}(-ig)^2\int d^4x\,d^4y\;T\bigl[(\hat{\bar\psi}_I\hat\psi_I\hat\phi_I)(x)\,(\hat{\bar\psi}_I\hat\psi_I\hat\phi_I)(y)\bigr]\,|\mathbf p\mathbf k\rangle_0 .
+> $$
+>
+> **Who contracts with whom** (slide 20). "$\psi$'s contract with incoming particles, $\bar\psi$'s with outgoing" ([[§C6c.2 External Fermions#^thm-c6c-2-1|Theorem §C6c.2.1]]); the two $\hat\phi$'s have no external scalar and contract with each other into $D_F(x - y)$ ([[§C6c.3 Wick's Theorem with Fermions#^thm-c6c-3-2|Theorem §C6c.3.2]]). The $x \leftrightarrow y$ images cancel the $\frac{1}{2!}$ ([[§C6c.4 Feynman Rules for Yukawa Theory#^thm-c6c-4-3|Theorem §C6c.4.3]]), leaving two patterns, $t$ and $u$.
+>
+> **Signs** (slide 20: "Contract leftmost $\psi$ with external particle $|\vec k\rangle$ $\Rightarrow$ reorder $(-)$"). The sign of each pattern is $(-1)^{\#\text{crossings}}$ of its contraction arcs over the operator string ([[§C6c.3 Wick's Theorem with Fermions#^thm-c6c-3-4|Theorem §C6c.3.4]]): with the states above, $t$ has two crossings ($+$) and $u$ three ($-$) ([[§C6c.5 Fermion–Fermion Scattering#^ex-c6c-5-1|Example §C6c.5.1]], Step 5).
+>
+> **Result** ([[§C6c.4 Feynman Rules for Yukawa Theory#^thm-c6c-4-1|Theorem §C6c.4.1]]; PS (4.119)):
+>
+> $$
+> i\mathcal M = (-ig)^2\Bigl[\bar u(p')u(p)\,\frac{i}{(p - p')^2 - m_\phi^2 + i\varepsilon}\,\bar u(k')u(k) - \bar u(k')u(p)\,\frac{i}{(p - k')^2 - m_\phi^2 + i\varepsilon}\,\bar u(p')u(k)\Bigr] .
+> $$
+>
+> **Which signs are physical** (question 6 and slide 23). What is measured is a cross section, which contains only $|\mathcal M|^2$ ([[§C6b.5 The Cross Section#^mod-c6b-5-1|Model §C6b.5.1]]): "Overall sign usually irrelevant (only $|\mathcal M|^2$ appears in cross-section)". The **relative** sign enters $|\mathcal M|^2$ through the interference of the two terms and is fixed by Fermi statistics: exchanging the two identical final fermions with their spins maps one term into the other, and the amplitude must change sign ("Relative signs enforce statistics of identical particles", slide 23; [[§C6c.5 Fermion–Fermion Scattering#^thm-c6c-5-1|Theorem §C6c.5.1]]). The **overall** sign changes with the order of the states: the slide, the board and Yu write $-$ for $t$ and $+$ for $u$ ([[§C6c.5 Fermion–Fermion Scattering#^rem-c6c-5-1|§C6c.5, Remark: The overall sign is a convention]]).
+>
+> **Pitfalls.**
+> - *Each fermion line is a number.* Write it against its arrow, $\bar u(\text{out})\,u(\text{in})$; a chain that does not close into a number signals a mistake ([[§C6c.2 External Fermions#^thm-c6c-2-2|Theorem §C6c.2.2]]).
+> - *One propagator per diagram.* The $u$-term has its own $D_F$ at $p - k'$; slide 20's "$D_F(p - p')[\cdots + p \leftrightarrow k]$" factors the $t$-propagator out of both terms ([[§C6c.5 Fermion–Fermion Scattering#^cau-c6c-5-1|§C6c.5, Caution: Slips in the handwritten notes and on slide 20 for this example]]).
+> - *No symmetry factor, but $S_{\rm id}$ in $\sigma$.* The diagrams have $S = 1$ ([[§C6c.4 Feynman Rules for Yukawa Theory#^thm-c6c-4-3|Theorem §C6c.4.3]]); the two identical final fermions still give $\frac{1}{2!}$ in the total cross section ([[§C6b.7 Evaluating the Cross Section#^thm-c6b-7-4|Theorem §C6b.7.4]]).
+> - *Spins.* $\mathcal M$ depends on the four spin labels; an unpolarized cross section averages over the initial and sums over the final spins, which turns each chain into a trace (PS §5.1, not yet in the course; [[§C6c.2 External Fermions|§C6c.2]], Connections).
+>
+> *Model:* [[§C6c.1 Yukawa Theory#^mod-c6c-1-1|Model §C6c.1.1]]; *applies:* lowest order ($g^2$), free states over $|0\rangle$ in the stated order.
+>
+> *Source: PHY 513 Lecture 17, slides 19–20, 23 · the user's PHY 513 notes, Lecture 17 update, §17.6 · PS §4.7, pp. 116–120, eqs. (4.118)–(4.119) · homes as linked*
+
+^ex-c6b-12-6
+
 > [!remark]- Connections
-> - The six questions of "How to translate a question" are the columns of the table of [[§C6a.0 Setups and Observables|§C6a.0]], read as a method; each row there links the example or procedure that works it.
+> - The questions of "How to translate a question" (1–6; 7 adds the fermion signs) are the columns of the table of [[§C6a.0 Setups and Observables|§C6a.0]], read as a method; each row there links the example or procedure that works it.
 > - Examples 1 and 2 are both "free states, $U(+\infty, -\infty)$, no denominator", but for opposite reasons: exact because the source switches off, and lowest order because the decay is computed at order $\mu$ — [[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-1|Theorem §C6b.1.1]].
 > - The $\frac{1}{n!}$ of Example 1, the $\frac{1}{2!}$ of Examples 2 and 3 and the $S_{\rm id}$ of every cross section are one fact, the symmetry of bosonic states — [[§C6b.11 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6b-11-5|Theorem §C6b.11.5]], [[§C6b.7 Evaluating the Cross Section#^thm-c6b-7-4|Theorem §C6b.7.4]].
 > - Example 4's correlator becomes Example 3's amplitude by amputation; the precise statement with $\sqrt Z$ is the LSZ formula (Lecture 16; QFT C10, planned) — [[§C6b.10 Amplitudes from Correlation Functions#^thm-c6b-10-1|Theorem §C6b.10.1]].

@@ -64,7 +64,7 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 >
 > **What the derivation shows.**
 > - Only the Feynman prescription allows the rotation: the retarded poles $\pm E - i\varepsilon$ include one in the third quadrant.
-> - On the imaginary axis energy and momentum enter symmetrically; this is how loop integrals are done (QFT C7, planned).
+> - On the imaginary axis energy and momentum enter symmetrically; this is how loop integrals are done (the second semester, planned: PHY 513 Lecture 17, slide 26).
 
 ^der-c2b-7-1
 
