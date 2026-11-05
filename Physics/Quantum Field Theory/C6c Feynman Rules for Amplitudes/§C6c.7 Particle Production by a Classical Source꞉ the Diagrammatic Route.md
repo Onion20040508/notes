@@ -66,7 +66,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > the limit trivial because $j$ has compact support in time. So $\mathcal A(0)$ is as stated, $P(0) = |\mathcal A(0)|^2$; for any free final state the same steps give $\langle f|\hat U(\infty, -\infty)|0\rangle$.
 >
 > **What the derivation shows.**
-> - Unlike $\phi^4$ theory ([[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]]) no $T(1 - i\varepsilon)$ projection is needed: the interaction is switched off, and the free vacuum is the in- and out-vacuum.
+> - Unlike $\phi^4$ theory ([[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]]) no $T(1 - i\varepsilon)$ projection is needed: the interaction is switched off, and the free vacuum is the in- and out-vacuum (the setup of [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]], stated in the opening).
 
 ^der-c6c-7-1
 
@@ -137,7 +137,7 @@ A vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected
 > ⚑ By-product: only the on-shell values $\tilde j(E_{\mathbf p}, \mathbf p)$ enter: the $i\varepsilon$ selects the mass shell, and $\lambda = \bar N$ of [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-3|Theorem §C2b.8.3]] (same integral): the source radiates only its on-shell components ([[§C2b.8 Particle Production by a Classical Source#^rem-c2b-8-1|§C2b.8, Remark: Only the on-shell part of the source radiates]]).
 >
 > **What the derivation shows.**
-> - The imaginary part of $\mathcal A_2$ (a phase) does not enter $P(0)$; the real part is the $\delta$-function part of the Feynman propagator.
+> - The imaginary part of $\mathcal A_2$ (a phase) does not enter $P(0)$; the real part is the $\delta$-function part of the Feynman propagator ($2\operatorname{Re}\mathcal A_2 = -\lambda$ in the statement; [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]]).
 
 ^der-c6c-7-2
 

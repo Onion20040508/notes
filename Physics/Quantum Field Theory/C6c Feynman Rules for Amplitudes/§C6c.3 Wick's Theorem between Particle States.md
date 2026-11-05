@@ -9,11 +9,11 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C6c.2 Contractions with External Particles]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6c.4 First Order꞉ Enumerate, then Filter]] →
 
-<!-- SOURCES -->
+*Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.6, pp. 109–111, eqs. (4.91), (4.94)–(4.96) · PHY 513 Lecture 16 (Larsen, 2 Nov 2026), Part B, slides 10–14, and transcript · the user's PHY 513 notes, Lecture 16 update, §16.3 · Yu Zhao-Huan, 量子场论讲义, §7.1, p. 268 (boxed contraction rule); §7.1.2, p. 283 and Fig. 7.7 (disconnected terms) · PHY 513, Problem Set 8, Problem 3(d)–(e) (the user's solution, submitted 2026-10-30).*
 
-<!-- OPENING -->
+[[§C6c.2 Contractions with External Particles|§C6c.2]] contracted a field with one external particle and $n$ identical fields with $n$ identical particles. This section puts these contractions into Wick's theorem: an $S$-matrix element between particle states is the sum over the full contractions of fields **and** particles ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]]), which is Yu's contraction rule: every remaining field meets a particle, every particle meets a field, and for bosons no sign arises ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]]). A particle that reaches no vertex gives the $\delta$-line ([[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]]), and every connected piece of a term carries its own momentum delta ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3|Theorem §C6c.3.3]]), the fact on which the sorting of the terms at first and second order rests ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]]). Yu: §7.1, p. 268; PS §4.6, p. 110; Lecture 16, Part B. The fermionic version, with signs: [[§C6d.3 Wick's Theorem with Fermions|§C6d.3]].
 
-<!-- SETUP -->
+**Setup and scope.** As in [[§C6c.2 Contractions with External Particles|§C6c.2]]: free fields in the interaction picture between free, relativistically normalized Fock states over $|0\rangle$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]). [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]] and [[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]] are statements about free fields and free states: exact, whatever the dynamics. [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3|Theorem §C6c.3.3]] concerns the terms of the Dyson series between such states ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]): exact in [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]], lowest order in [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]].
 
 ## Wick's theorem between particle states
 
@@ -30,7 +30,7 @@ tags: [quantum-field-theory, level-c]
 > \overbracket{\hat\phi_I(x_a)\hat\phi_I(x_b)} = D_F(x_a - x_b), \quad \overbracket{\hat\phi_I(x)|\mathbf k\rangle} = e^{-ik\cdot x}, \quad \overbracket{\langle\mathbf p|\hat\phi_I(x)} = e^{+ip\cdot x}, \quad \overbracket{\langle\mathbf p|\mathbf k\rangle} = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k) ,
 > $$
 >
-> with no pair of two incoming or two outgoing particles. Equivalently: in Wick's theorem $T\{\cdots\} = \sum_C\prod D_F\;{:}\text{rest}{:}$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), a normal-ordered remainder contributes only through the terms in which **every** one of its fields is contracted with an external particle. Several fields and complex fields: the same, with the contractions of [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]] and [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 3.
+> with no pair of two incoming or two outgoing particles. Equivalently: in Wick's theorem $T\{\cdots\} = \sum_C\prod D_F\;{:}\text{rest}{:}$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), a normal-ordered remainder contributes only through the terms in which **every** one of its fields is contracted with an external particle ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]]). Several fields and complex fields: the same, with the contractions of [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]] and [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 3.
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free fields between free states, exact, independent of the dynamics; used with the Dyson series as in the opening.
 >
@@ -87,13 +87,39 @@ tags: [quantum-field-theory, level-c]
 >
 > **What the derivation shows.**
 > - The vacuum version ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]) is the case $n = m = 0$: then only $R = \varnothing$ survives.
-> - The outgoing–incoming pairs are the particles that pass through untouched; with all outgoing momenta different from the incoming ones they vanish, and every particle must attach to a field.
+> - The outgoing–incoming pairs are the particles that pass through untouched; with all outgoing momenta different from the incoming ones they vanish, and every particle must attach to a field → [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-2|Theorem §C6c.3.2]].
 
 ^der-c6c-3-1
 
 *Uses:* [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-5|Theorem §C6c.7.5]]
 
-<!-- NEW thm-c6c-3-2 -->
+> [!theorem] Theorem §C6c.3.2: The Contraction Rule for S-Matrix Elements
+> Expand $\langle\mathbf p_1\cdots\mathbf p_m|\,T\{\hat\phi_I(x_1)\cdots\hat\phi_I(x_\ell)\}\,|\mathbf k_1\cdots\mathbf k_n\rangle$ by Wick's theorem, $T\{\cdots\} = \sum_C\prod D_F\;{:}\text{rest}{:}$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]). Then
+> 1. a normal-ordered remainder contributes only through the terms in which **every** one of its fields is contracted with an external particle ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]]); a remainder of $r$ fields needs $r \le n + m$;
+> 2. if no outgoing momentum equals an incoming one, **every particle** is contracted with a field: a nonzero term contracts the fields one by one with the particles and the remaining fields with each other;
+> 3. for bosons no sign arises: the order in which the fields and the particles stand does not matter.
+>
+> For fermions part 3 fails: each contraction pattern carries a sign ([[§C6d.3 Wick's Theorem with Fermions#^thm-c6d-3-4|§C6d.3, Theorem §C6d.3.4]]).
+>
+> *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* free fields between free relativistically normalized states, exact, independent of the dynamics; used with the Dyson series as in [[§C6c.2 Contractions with External Particles|§C6c.2]].
+>
+> *Source: Yu §7.1, p. 268 (boxed: "a nontrivial $T$-matrix element equals the result of contracting the field operators one by one with the initial- and final-state particles"; no extra sign when the fields keep the order of $\mathcal L_{\rm int}$ — the fermion half is §C6d.3) · PS §4.6, p. 110 ("all possible full contractions of the $\phi_I$ operators *and* the external-state momenta") · PHY 513, Problem Set 8, Problem 3(d)–(e) (the user's "only the Wick terms with exactly $n$ uncontracted fields survive") · from the "Equivalently" sentence of [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]] and the "What the derivation shows" of [[§C6c.3 Wick's Theorem between Particle States#^der-c6c-3-1|Derivation §C6c.3.1]] (promoted 2026-11-05)*
+
+^thm-c6c-3-2
+
+> [!derivation]- Derivation
+> **Step 1** (part 1). Steps 2–4 of [[§C6c.3 Wick's Theorem between Particle States#^der-c6c-3-1|Derivation §C6c.3.1]]: the remainder is $\sum_A\prod_{a\in A}\hat\phi_a^-\prod_{b\in R\setminus A}\hat\phi_b^+$. A $\hat\phi_b^+$ acting on $|\mathbf k_1\cdots\mathbf k_n\rangle$ removes an incoming particle ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], 1); one that finds no particle left reaches $|0\rangle$ and gives $\hat\phi_b^+|0\rangle = 0$. Likewise $\langle\mathbf p_1\cdots\mathbf p_m|\hat\phi_a^-$ removes an outgoing particle, and $\langle0|\hat\phi_a^- = 0$. So every remainder field is paired with a particle, $|R\setminus A| \le n$, $|A| \le m$, and $r = |R| \le n + m$.
+>
+> **Step 2** (part 2). Step 5 of [[§C6c.3 Wick's Theorem between Particle States#^der-c6c-3-1|Derivation §C6c.3.1]]: the particles not removed by fields pair among themselves as $\overbracket{\langle\mathbf p|\mathbf k\rangle} = 2E_{\mathbf k}(2\pi)^3\delta^3(\mathbf p - \mathbf k)$, which is $0$ for $\mathbf p \ne \mathbf k$. With all outgoing momenta different from the incoming ones such a term vanishes, so in a nonzero term no particle is left over.
+>
+> **Step 3** (part 3). Every manipulation of Steps 3–5 of [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]] moves an $\hat a$ through a $\hat\phi^-$ with $\hat aB = B\hat a + [\hat a, B]$: the coefficient of the moved term is $+1$, and the commutator is the c-number $\frac{e^{ik\cdot y}}{\sqrt{2E_{\mathbf k}}}$. The factors that are reordered commute, $[\hat\phi_I^\pm(x), \hat\phi_I^\pm(y)] = 0$, $[\hat a_{\mathbf k}, \hat a_{\mathbf p}] = [\hat a^\dagger_{\mathbf k}, \hat a^\dagger_{\mathbf p}] = 0$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]), and so do the c-number contractions. Hence no step produces a sign, whatever order the fields and particles are written in. For fermions the same moves use anticommutators, $\hat bB = -B\hat b + \{\hat b, B\}$, and each exchange gives $-1$.
+>
+> **What the derivation shows.**
+> - Yu's boxed rule, split into what must be contracted (parts 1–2) and the sign (part 3); how many contractions there are is [[§C6c.2 Contractions with External Particles#^thm-c6c-2-3|Theorem §C6c.2.3]] and Step 3 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]].
+
+^der-c6c-3-2
+
+*Uses:* [[§C6c.3 Wick's Theorem between Particle States#^der-c6c-3-1|Derivation §C6c.3.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]
 
 ## Which terms are scattering
 
@@ -156,4 +182,6 @@ tags: [quantum-field-theory, level-c]
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the vertex integrals give momentum deltas.
 
 > [!remark]- Connections
+> - With fermions the same theorem holds with a sign for each crossing of contractions — [[§C6d.3 Wick's Theorem with Fermions#^thm-c6d-3-4|§C6d.3, Theorem §C6d.3.4]].
+> - The terms with $\delta$-lines and several pieces are not scattering; the sorting at first order is [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], at second order [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]].
 > - The same expansion with a source vertex is exact and solves the classical-source problem — [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6c.7]].

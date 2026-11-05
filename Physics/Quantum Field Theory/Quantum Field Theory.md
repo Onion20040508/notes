@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 513 (UMich, F. Larsen, Fall 2026)"]
 textbooks: ["Peskin & Schroeder, An Introduction to Quantum Field Theory", "Yu Zhao-Huan (余钊焕), Lecture Notes on Quantum Field Theory (量子场论讲义)", "Schwartz, Quantum Field Theory and the Standard Model (further reading)"]
 conventions: "[[Larsen PHY 513]]"
-status: "level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C6a (§C6a.1–§C6a.4, Lecture 13: φ⁴ theory, interaction picture, Dyson series, interacting vacuum, master formula; §C6a.5–§C6a.11, Lecture 14; §C6a.12, rules for polynomial interactions), C6b (§C6b.1–§C6c.8, Lectures 15–16 and Problem Set 8), C6d (§C6d.1–§C6d.5, Lecture 17: Yukawa theory and the Feynman rules for fermions; §C6d.6★ Yukawa potential), C9 (§C9.1–§C9.5 parity incl. the scalar field, §C9.6–§C9.11 charge conjugation, physical spin, time reversal and CPT, taught; §C9.12 C, T, CPT of the complex scalar field, Problem Set 7), CA written, CB skeleton (all statements in reading order; proofs being filled)"
+status: "level C — C1a, C1b, C2a, C2b, C3, C4, C5a, C5b (§C5b.1–§C5b.4, §C5b.7, §C5b.9 taught; §C5b.5, §C5b.6, §C5b.8 drafts), C6a (§C6a.1–§C6a.4, Lecture 13: φ⁴ theory, interaction picture, Dyson series, interacting vacuum, master formula; §C6a.5–§C6a.11, Lecture 14; §C6a.12, rules for polynomial interactions), C6b (§C6b.1, §C6b.4–§C6b.9, Lectures 15–16), C6c (§C6c.1–§C6c.8, Lecture 16 and Problem Set 8, Feynman rules for amplitudes after Yu ch. 7), C6d (§C6d.1–§C6d.5, Lecture 17: Yukawa theory and the Feynman rules for fermions; §C6d.6★ Yukawa potential), C9 (§C9.1–§C9.5 parity incl. the scalar field, §C9.6–§C9.11 charge conjugation, physical spin, time reversal and CPT, taught; §C9.12 C, T, CPT of the complex scalar field, Problem Set 7), CA written, CB skeleton (all statements in reading order; proofs being filled)"
 tags: [subject, quantum-field-theory]
 ---
 # Quantum Field Theory
@@ -22,6 +22,7 @@ Relativistic quantum field theory at the graduate level (**C**, PHY 513, Larsen,
 - [[· C5b The Quantum Spinor Field]]
 - [[· C6a Interactions and Correlation Functions]]
 - [[· C6b The S-Matrix, Amplitudes and Observables]]
+- [[· C6c Feynman Rules for Amplitudes]]
 - [[· C6d Feynman Rules for Fermions]] (★ §C6d.6)
 - [[· C9 Discrete Symmetries and Majorana Fields]]
 - [[· CA Mathematical Methods]]
@@ -42,6 +43,7 @@ graph TD
   C5b["C5b The Quantum Spinor Field"]
   C6a["C6a Interactions and Correlation Functions"]
   C6b["C6b The S-Matrix, Amplitudes and Observables"]
+  C6c["C6c Feynman Rules for Amplitudes"]
   C6d["C6d Feynman Rules for Fermions"]
   C9["C9 Discrete Symmetries and Majorana Fields"]
   CA["CA Mathematical Methods"]
@@ -78,10 +80,14 @@ graph TD
   C5b -->|9| C6a
   C1a -->|16| C6b
   C1b -->|1| C6b
-  C2a -->|68| C6b
-  C2b -->|27| C6b
+  C2a -->|53| C6b
+  C2b -->|4| C6b
   C3 -->|6| C6b
-  C6a -->|135| C6b
+  C6a -->|41| C6b
+  C2a -->|25| C6c
+  C2b -->|30| C6c
+  C6a -->|152| C6c
+  C6b -->|49| C6c
   C1b -->|3| C6d
   C2a -->|6| C6d
   C2b -->|8| C6d
@@ -89,7 +95,8 @@ graph TD
   C5a -->|23| C6d
   C5b -->|51| C6d
   C6a -->|34| C6d
-  C6b -->|39| C6d
+  C6b -->|12| C6d
+  C6c -->|29| C6d
   C1a -->|12| C9
   C1b -->|9| C9
   C2a -->|74| C9
@@ -102,7 +109,7 @@ graph TD
   C2a -->|7| CA
   C2b -->|43| CA
   C6a -->|11| CA
-  C6b -->|1| CA
+  C6c -->|1| CA
   C1a -->|20| CB
   C1b -->|1| CB
   C3 -->|47| CB
@@ -116,7 +123,7 @@ graph TD
   C3 -.->|10| C1a
   C4 -.->|2| C1a
   C5a -.->|8| C1a
-  C6b -.->|1| C1a
+  C6c -.->|1| C1a
   C6d -.->|1| C1a
   CA -.->|45| C1a
   CB -.->|18| C1a
@@ -142,7 +149,7 @@ graph TD
   C5a -.->|8| C3
   C5b -.->|3| C3
   C6a -.->|9| C3
-  C6b -.->|6| C3
+  C6c -.->|6| C3
   C9 -.->|8| C3
   CA -.->|11| C3
   CB -.->|89| C3
@@ -158,11 +165,15 @@ graph TD
   C9 -.->|4| C5b
   CA -.->|121| C5b
   CB -.->|1| C5b
-  C6b -.->|27| C6a
+  C6b -.->|7| C6a
+  C6c -.->|20| C6a
   C6d -.->|4| C6a
   CA -.->|109| C6a
   CB -.->|9| C6a
-  CA -.->|77| C6b
+  C6c -.->|13| C6b
+  CA -.->|47| C6b
+  C6d -.->|5| C6c
+  CA -.->|49| C6c
   C9 -.->|2| C6d
   CA -.->|25| C6d
   CA -.->|40| C9
