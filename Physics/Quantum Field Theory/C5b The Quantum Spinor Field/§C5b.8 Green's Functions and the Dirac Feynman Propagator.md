@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §3.5, pp. 62–63 · Yu Zhao-Huan, 量子场论讲义, §6.4.5 · the user's pre-course notes, the Dirac parts of "Time-ordered product and microcausality" and §6.4 ("Feynman Propagators: Dirac spinor field").*
 
-*Taught in Lecture 17 (Nov 4; slide 17: fermionic time ordering and $S_F$, "two independent derivations of the propagator (see HW)"; its use in Wick's theorem and the Yukawa rules is in [[· C6c Feynman Rules for Fermions|C6c]]). The derivations of Theorems §C5b.8.1 and §C5b.8.3 are held back until that problem set is submitted; the rest of the section was written earlier from the user's pre-course notes, Yu and Peskin–Schroeder.*
+*Taught in Lecture 17 (Nov 4; slide 17: fermionic time ordering and $S_F$, "two independent derivations of the propagator (see HW)"; its use in Wick's theorem and the Yukawa rules is in [[· C6c Feynman Rules for Fermions|C6c]]). Problem Set 9 has been submitted, so both derivations of $S_F$ are in (Theorem §C5b.8.1: from the Dirac equation with a source; Theorem §C5b.8.3: from the mode expansion, and from $D_F$); the section was written earlier from the user's pre-course notes, Yu and Peskin–Schroeder.*
 
 This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b.5]]–[[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] and the single home of the Dirac propagator $S_F$. Every Green's function of the Dirac operator is $i\slashed{\partial} + m$ applied to a Klein–Gordon Green's function, with the boundary condition (the contour) inherited unchanged; the spin-specific additions are the numerator $\slashed{p} + m$ (the spin sum continued off the shell), the normalization $(i\slashed{\partial} - m)S = +i\delta^4$, and the minus sign of fermionic time ordering. The contour work is [[P2 Green's Functions by Contour Integration]] with a numerator. Conventions as in [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality|§C5b.7]]; the Dirac Green's functions are normalized by $(i\slashed{\partial} - m)S = i\delta^4$ (PS).
 
@@ -53,10 +53,23 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 
 ^thm-c5b-8-1
 
-> [!derivation]- Derivation (held until Problem Set 9 is submitted)
-> Solving the Dirac equation with a source is one of the two derivations of $S_F$ set as homework (PHY 513 Lecture 17, slide 17), so this derivation is held back until the problem set is submitted (user decision, 2026-11-04). Source: PS §3.5, eqs. (3.116)–(3.120).
+> [!derivation]- Derivation
+> **1. The operator identity.** $(i\slashed{\partial} - m)(i\slashed{\partial} + m) = -\slashed{\partial}\slashed{\partial} + im\slashed{\partial} - im\slashed{\partial} - m^2 = -(\partial^2 + m^2)$, with $\slashed{\partial}\slashed{\partial} = \partial^2$ ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]]; the partial derivatives commute, also on distributions).
+>
+> **2. Green's function.** $(i\slashed{\partial} - m)S_C = -(\partial^2 + m^2)D_C = -(-i\delta^4) = i\delta^4$, in $\mathcal S'$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]]; for $D_F$, [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]]). ⚑ By-product: the Dirac normalization $+i\delta^4$ differs in sign from the Klein–Gordon $-i\delta^4$ because of the minus sign in Step 1 → Conventions of this note.
+>
+> **3. Momentum space.** $(\slashed{p} - m)\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon} = \frac{i(p^2 - m^2)}{p^2 - m^2 + i\varepsilon} = i - \frac{i\cdot i\varepsilon}{p^2 - m^2 + i\varepsilon}$; the last term is $\varepsilon$ times a family converging in $\mathcal S'$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]]), so it tends to $0$.
+>
+> **4. $S_R = (i\slashed{\partial} + m)D_R$.** $D_R = \theta(\xi^0)iD$ ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], 1). Apply $i\slashed{\partial} + m = i\gamma^0\partial_0 + i\gamma^j\partial_j + m$ slice by slice. The spatial derivatives and $m$ act on $iD$ only. The time derivative obeys the product rule with $\partial_0\theta(\xi^0) = \delta(\xi^0)$ ([[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], 2): $\partial_0[\theta(\xi^0)iD] = \delta(\xi^0)\,iD + \theta(\xi^0)\,\partial_0iD$. Hence $(i\slashed{\partial} + m)[\theta(\xi^0)iD] = \theta(\xi^0)(i\slashed{\partial} + m)iD + i\gamma^0\delta(\xi^0)\,iD$. In the last term, $D$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], 3), so $\delta(\xi^0)D$ is $\delta(\xi^0)\otimes D(0, \cdot)$, and $D(0, \cdot) = 0$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|Theorem §C2b.4.12]]). Dropped: the contact term, because the scalar field commutes with itself at equal times. What remains is $\theta(\xi^0)(i\slashed{\partial} + m)iD = \theta(\xi^0)\,iS$ ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]]). (The same contact term is dropped for $S_F$ in the second route under [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]].) The same with $-\theta(-\xi^0)$ for $S_A$. The transform is $(\slashed{p} + m)\tilde D_R$ with $\tilde D_R$ of [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]] (PS (3.120): closing below for $x^0 > y^0$ picks up both poles and gives $S^+_W + S^-_W$).
+>
+> **5. Support.** $\operatorname{supp}D_R$ is the closed forward cone ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], 3), and derivatives do not enlarge supports (Step 1 of [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^der-c5b-7-3|Derivation §C5b.7.3]]).
+>
+> **What the derivation shows**
+> - Every Dirac Green's function is $i\slashed{\partial} + m$ applied to a Klein–Gordon one; the boundary condition (contour) is inherited unchanged.
 
 ^der-c5b-8-1
+
+*Uses:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|Def. §C2b.5.1]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|Theorem §C2b.4.12]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|Theorem §C5b.7.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]]
 
 ## Time ordering and the Feynman propagator
 
@@ -120,15 +133,64 @@ This is the spinor counterpart of [[§C2b.5 Green's Functions and Contours|§C2b
 
 ^thm-c5b-8-3
 
-> [!derivation]- Derivation (held until Problem Set 9 is submitted)
-> Larsen set the derivation of $S_F$ from the mode expansion as a homework problem (PHY 513 Lecture 17, transcript), so the two derivations of this theorem (from the Wightman functions by contour integration, and from $D_F$) are held back until the problem set is submitted (user decision, 2026-11-04). The statement and its sources stand: PS §3.5, eqs. (3.117)–(3.121); Yu §6.4.5, eqs. (6.258)–(6.267).
+> [!derivation]- Derivation
+> **1. The operator side** ([[P2 Green's Functions by Contour Integration|P2]] in reverse, as Yu). By [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]] and [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^def-c5b-7-1|Def. §C5b.7.1]], $S_F = \theta(t)S^+_W - \theta(-t)S^-_W$, and by [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], with $p^0 = E_{\mathbf p} \equiv E$,
+>
+> $$
+> S_F(\xi) = \int\frac{d^3p}{(2\pi)^3\,2E}\Bigl[\theta(t)(\slashed{p} + m)e^{-ip\cdot\xi} - \theta(-t)(\slashed{p} - m)e^{ip\cdot\xi}\Bigr] .
+> $$
+>
+> **2. Relabel the second term.** $\mathbf p \to -\mathbf p$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1, in $\mathcal S'$; Jacobian $1$, $E$ unchanged): $e^{ip\cdot\xi} = e^{iEt - i\mathbf p\cdot\boldsymbol\xi} \to e^{iEt + i\mathbf p\cdot\boldsymbol\xi}$ and $\slashed{p} - m = \gamma^0E - \gamma^ip^i - m \to \gamma^0E + \gamma^ip^i - m$. Define the matrix polynomial $g(p^0) \equiv \gamma^0p^0 - \gamma^ip^i + m$ (that is $\slashed{p} + m$ at four-momentum $(p^0, \mathbf p)$, off the shell). Then $\slashed{p} + m$ on the shell is $g(E)$, and $-(\gamma^0E + \gamma^ip^i - m) = g(-E)$:
+>
+> $$
+> S_F(\xi) = \int\frac{d^3p}{(2\pi)^3}\,e^{i\mathbf p\cdot\boldsymbol\xi}\;\frac{1}{2E}\Bigl[\theta(t)\,g(E)\,e^{-iEt} + \theta(-t)\,g(-E)\,e^{iEt}\Bigr] .
+> $$
+>
+> ⚑ By-product: the fermionic minus sign of the time ordering and the minus sign of $\sum v\bar v = \slashed{p} - m$ combine into the single numerator $g(p^0) = \slashed{p} + m$ evaluated at the two poles; this is why one formula covers both orderings.
+>
+> **3. Poles and residues** ([[P2 Green's Functions by Contour Integration#^p2-2|P2, step 2]]). For $\varepsilon > 0$ consider $\int\frac{dp^0}{2\pi}\frac{i\,g(p^0)e^{-ip^0t}}{(p^0)^2 - E^2 + i\varepsilon}$; the poles are at $\pm E_\varepsilon$ with $E_\varepsilon = \sqrt{E^2 - i\varepsilon} = E - i\varepsilon'$, $\varepsilon' > 0$ (fourth and second quadrants: the Feynman contour, [[P2 Green's Functions by Contour Integration#^p2-3|P2, step 3]]). The residue at $E_\varepsilon$ is $\frac{i}{2\pi}\frac{g(E_\varepsilon)e^{-iE_\varepsilon t}}{2E_\varepsilon}$, at $-E_\varepsilon$ it is $\frac{i}{2\pi}\frac{g(-E_\varepsilon)e^{iE_\varepsilon t}}{-2E_\varepsilon}$ ([[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]]); $g$ is a polynomial, so it is simply evaluated at the pole (Yu (6.262)).
+>
+> **4. Close the contour** ([[P2 Green's Functions by Contour Integration#^p2-4|P2, steps 4–5]]). The integrand behaves like $g(p^0)/(p^0)^2 \sim 1/|p^0|$, which tends to zero but not fast enough for the ML estimate: Jordan's lemma is needed ([[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]]; [[§CA.4 Contour Integration#^cau-ca-4-1|§CA.4, Caution: Jordan's lemma needs g → 0]]: satisfied). For $t > 0$ close downward, clockwise, enclosing $E_\varepsilon$: $-2\pi i\cdot\frac{i}{2\pi}\frac{g(E_\varepsilon)e^{-iE_\varepsilon t}}{2E_\varepsilon} = \frac{g(E_\varepsilon)e^{-iE_\varepsilon t}}{2E_\varepsilon}$. For $t < 0$ close upward, counterclockwise, enclosing $-E_\varepsilon$: $2\pi i\cdot\frac{i}{2\pi}\frac{g(-E_\varepsilon)e^{iE_\varepsilon t}}{-2E_\varepsilon} = \frac{g(-E_\varepsilon)e^{iE_\varepsilon t}}{2E_\varepsilon}$ ([[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]]). As $\varepsilon \to 0^+$ (pointwise for $t \ne 0$, bounded, hence in $\mathcal S'(\mathbb R)$, [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]):
+>
+> $$
+> \int\frac{dp^0}{2\pi}\frac{i\,g(p^0)\,e^{-ip^0t}}{(p^0)^2 - E^2 + i\varepsilon} \to \frac{1}{2E}\Bigl[\theta(t)g(E)e^{-iEt} + \theta(-t)g(-E)e^{iEt}\Bigr] ,
+> $$
+>
+> the bracket of Step 2. (The value at $t = 0$ is a single point and carries no weight.) The denominator $(p^0)^2 - E^2 + i\varepsilon = p^2 - m^2 + i\varepsilon$; writing $2E\varepsilon$ or poles at $\pm(E - i\varepsilon)$ instead gives the same limit ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 3).
+>
+> **5. Combine** ([[P2 Green's Functions by Contour Integration#^p2-6|P2, step 6]]). Inserting into Step 2, $d^3p\,dp^0 = d^4p$, $e^{-ip^0t + i\mathbf p\cdot\boldsymbol\xi} = e^{-ip\cdot\xi}$ and $g(p^0) = \slashed{p} + m$: the four-dimensional formula (Yu (6.266)–(6.267)), as a limit in $\mathcal S'(\mathbb R^4)$ ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|Theorem §C5b.8.4]]); the iterated integral is read as in [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], Step 2.
+>
+> **6. In terms of $D_F$.** $\frac{i(\slashed{p} + m)}{p^2 - m^2 + i\varepsilon} = (\slashed{p} + m)\tilde D_F$ with $\tilde D_F = \frac{i}{p^2 - m^2 + i\varepsilon}$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]), and $\slashed{p} + m$ is the transform of $i\slashed{\partial} + m$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3): $S_F = (i\slashed{\partial} + m)D_F$ ([[P2 Green's Functions by Contour Integration#^p2-7|P2, step 7]] checks it: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]]).
+>
+> **What the derivation shows**
+> - Every step of P2 goes through with a numerator analytic in $p^0$; only the arc estimate changes (Jordan instead of ML).
+> - For $x^0 > y^0$ the propagator is the fermion amplitude $\langle0|\hat\psi\hat{\bar\psi}|0\rangle$; for $x^0 < y^0$ it is minus the antifermion amplitude; the $i\varepsilon$ is the scalar's.
 
 ^der-c5b-8-3
 
-> [!derivation]- Derivation (second route: from the scalar propagator; held until Problem Set 9 is submitted)
-> Held back with the derivation above.
+*Uses:* [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|Def. §C5b.8.2]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.4 Contour Integration#^thm-ca-4-4|Theorem §CA.4.4]], [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]], [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]
+
+> [!derivation]- Derivation (second route: from the scalar propagator)
+> **1. Apply $i\slashed{\partial} + m$ to $D_F$ slice by slice.** $D_F = \theta(\xi^0)D_W(\xi) + \theta(-\xi^0)D_W(-\xi)$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]; slice products, [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]]). With $\partial_0\theta(\pm\xi^0) = \pm\delta(\xi^0)$ ([[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], 2) and the product rule,
+>
+> $$
+> (i\slashed{\partial} + m)D_F = \theta(\xi^0)(i\slashed{\partial} + m)D_W(\xi) + \theta(-\xi^0)(i\slashed{\partial} + m)D_W(-\xi) + i\gamma^0\delta(\xi^0)\bigl[D_W(\xi) - D_W(-\xi)\bigr] .
+> $$
+>
+> **2. The first two terms.** By [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]] they are $\theta(\xi^0)S^+_W - \theta(-\xi^0)S^-_W$, the operator side of Step 1 above.
+>
+> **3. The contact term vanishes.** $D_W(\xi) - D_W(-\xi) = iD(\xi)$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]]); $D$ is smooth in $\xi^0$ with values in $\mathcal S'(\mathbb R^3)$, so $\delta(\xi^0)D$ is the distribution $\delta(\xi^0)\otimes D(0, \cdot)$, and $D(0, \cdot) = 0$ ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|Theorem §C2b.4.12]]). Dropped: the contact term, because the field commutes with itself at equal times. (PS make the same remark for $S_R$: "the term involving $\partial_0\theta(x^0 - y^0)$ vanishes".)
+>
+> **4. Transform.** $(\slashed{p} + m)\tilde D_F$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3), the four-dimensional formula.
+>
+> **What the derivation shows**
+> - The Dirac propagator is a derivative of the scalar one; a contact term could have appeared and is absent because $[\hat\phi(t, \mathbf x), \hat\phi(t, \mathbf y)] = 0$.
+>
+> *Source: PS §3.5, eqs. (3.117), (3.121) · the user's pre-course notes, §6.4 ("the energy factors assemble into $\slashed{p}$")*
 
 ^der-c5b-8-3b
+
+*Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-12|Theorem §C2b.4.12]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]]
 
 *Procedure:* [[P2 Green's Functions by Contour Integration#^p2-1|P2, steps 1–7]]
 
