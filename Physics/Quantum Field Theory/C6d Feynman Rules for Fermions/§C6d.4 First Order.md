@@ -335,7 +335,7 @@ At first order the Dyson series of Yukawa theory has one vertex, and the procedu
 >
 > **Step 6** (kinematics). $k = p + q$ with $k^2 = m_\phi^2$, $p^2 = q^2 = m^2$: $m_\phi^2 = 2m^2 + 2p\cdot q$, so $p\cdot q - m^2 = \frac12(m_\phi^2 - 4m^2) = \frac{m_\phi^2}{2}\bigl(1 - \frac{4m^2}{m_\phi^2}\bigr)$ (Yu (7.56)–(7.57)), and $\sum|\mathcal M|^2 = 2g^2m_\phi^2\beta^2$, $\beta = \sqrt{1 - 4m^2/m_\phi^2}$: a constant, independent of the direction of $\mathbf p$.
 >
-> **Step 7** (the width). The width sums over all final states, spins included ([[§C6b.9 Decay Rates and Widths#^thm-c6b-9-5|Theorem §C6b.9.5]]). The two products are a fermion and an antifermion, not identical: $S_{\rm id} = 1$. By [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-6|Theorem §C6b.9.6]], 3 (equal masses, direction-independent $|\mathcal M|^2$):
+> **Step 7** (the width). The width sums over all final states, spins included ([[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]]). The two products are a fermion and an antifermion, not identical: $S_{\rm id} = 1$. By [[§C6b.6 Decay Kinematics#^thm-c6b-6-3|Theorem §C6b.6.3]] (equal masses, direction-independent $|\mathcal M|^2$):
 >
 > $$
 > \Gamma = \frac{\beta}{16\pi m_\phi}\sum_{s, s'}|\mathcal M|^2 = \frac{\beta}{16\pi m_\phi}\cdot2g^2m_\phi^2\beta^2 = \frac{g^2m_\phi}{8\pi}\,\beta^3 ,
@@ -343,7 +343,7 @@ At first order the Dyson series of Yukawa theory has one vertex, and the procedu
 >
 > Yu (7.58) with $\kappa \to g$. At $m_\phi = 2m$, $\beta = 0$ and $\Gamma = 0$: the decay cannot happen ([[§C6d.4 First Order#^thm-c6d-4-5|Theorem §C6d.4.5]]).
 >
-> *Equivalently,* the scalar analogue is [[§C6b.9 Decay Rates and Widths#^ex-c6b-9-1|Example §C6b.9.1]] ($\Phi \to \phi\phi$, $|\mathcal M|^2 = 4\mu^2$, $S_{\rm id} = 2$): there no spin sum, here the trace; the power $\beta^3$ against $\beta$ comes from $\bar uv$, which vanishes for both products at rest.
+> *Equivalently,* the scalar analogue is [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|Example §C6b.6.1]] ($\Phi \to \phi\phi$, $|\mathcal M|^2 = 4\mu^2$, $S_{\rm id} = 2$): there no spin sum, here the trace; the power $\beta^3$ against $\beta$ comes from $\bar uv$, which vanishes for both products at rest.
 >
 > *Source: Yu §7.1.1, eqs. (7.44)–(7.58), pp. 272–273 (page images checked; "这种把非极化振幅模方中的旋量计算转化为求迹运算的方法称为 Casimir 技巧") · beyond the course (Lecture 17 computes the amplitude only) · written out here in the vault's conventions*
 
@@ -516,9 +516,9 @@ At first order the Dyson series of Yukawa theory has one vertex, and the procedu
 
 > [!remark]- Connections
 > - The absence of symmetry factors is the QED statement of slide 18 of Lecture 14, for the same reason: a vertex with three legs of three kinds; and with the same exception, vacuum bubbles — [[§C6a.9 Symmetry Factors in Practice#^cau-c6a-9-2|§C6a.9, Caution: "In QED the symmetry factor is always S = 1" holds for diagrams with external points]].
-> - The decay rate of $\phi \to f\bar f$ needs $\sum_{s, s'}|\bar u^sv^{s'}|^2 = \operatorname{tr}[(\slashed p + m)(\slashed q - m)] = 4(p\cdot q - m^2)$ (spin sums and traces; Yu (7.46)–(7.58) obtains $\Gamma = \frac{g^2m_\phi}{8\pi}(1 - 4m^2/m_\phi^2)^{3/2}$) — [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]], [[§C5a.14 Gamma-Matrix Technology|§C5a.14]], [[§C6b.9 Decay Rates and Widths|§C6b.9]]; processes follow the rules (C8 Quantum electrodynamics, planned).
+> - The decay rate of $\phi \to f\bar f$ needs $\sum_{s, s'}|\bar u^sv^{s'}|^2 = \operatorname{tr}[(\slashed p + m)(\slashed q - m)] = 4(p\cdot q - m^2)$ (spin sums and traces; Yu (7.46)–(7.58) obtains $\Gamma = \frac{g^2m_\phi}{8\pi}(1 - 4m^2/m_\phi^2)^{3/2}$) — [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-8|Theorem §C5a.12.8]], [[§C5a.14 Gamma-Matrix Technology|§C5a.14]], [[§C6b.5 Decay Widths|§C6b.5]]; processes follow the rules (C8 Quantum electrodynamics, planned).
 > - Enumerate, then filter, is Yu's first-order method for any interaction; for scalar theories it gives the tables of [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-3|Theorem §C6c.4.3]] and [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]], and Yukawa theory is their last row — [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2|Theorem §C6c.4.2]].
-> - The width of $\phi \to f\bar f$ is the first use of Casimir's trick: a squared spinor chain summed over spins is a trace — [[§C5a.14 Gamma-Matrix Technology#^rem-c5a-14-3|§C5a.14, Remark: Why traces]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]]; the phase space is [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-6|Theorem §C6b.9.6]].
+> - The width of $\phi \to f\bar f$ is the first use of Casimir's trick: a squared spinor chain summed over spins is a trace — [[§C5a.14 Gamma-Matrix Technology#^rem-c5a-14-3|§C5a.14, Remark: Why traces]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]]; the phase space is [[§C6b.6 Decay Kinematics#^thm-c6b-6-1|Theorem §C6b.6.1]].
 > - The tadpole's $\operatorname{tr}S_F(0) \propto m$ vanishes for a massless fermion, by $\operatorname{tr}\slashed p = 0$ alone — [[§C6d.4 First Order#^ex-c6d-4-3|Example §C6d.4.3]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]].
 > - The exchanged scalar of $ff \to ff$ is a virtual particle with spacelike momentum, $q^2 = t \le 0$, never on shell — [[§C6d.4 First Order#^def-c6d-4-2|Def. §C6d.4.2]], [[§C6d.5 Second Order#^ex-c6d-5-2|Example §C6d.5.2]].
 > - The external lines read off here are the free-field contractions of [[§C6d.2 Contractions with External Fermions|§C6d.2]]; the collected rules are [[§C6d.6 Momentum-Space Feynman Rules#^thm-c6d-6-2|Theorem §C6d.6.2]].

@@ -245,7 +245,7 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 > \langle\mathbf k_1\cdots\mathbf k_n|\mathbf p_1\cdots\mathbf p_n\rangle = \sum_{\sigma\in S_n}\prod_{i=1}^n(2\pi)^3\delta^3(\mathbf k_i - \mathbf p_{\sigma(i)}), \qquad \mathbb 1_n = \frac{1}{n!}\int\prod_{i=1}^n\frac{d^3k_i}{(2\pi)^3}\,|\mathbf k_1\cdots\mathbf k_n\rangle\langle\mathbf k_1\cdots\mathbf k_n| :
 > $$
 >
-> integrating each momentum independently counts each state $n!$ times. With relativistic normalization the same holds with $\frac{d^3k_i}{(2\pi)^32E_{\mathbf k_i}}$; this is the $\frac{1}{S_{\rm id}}$ of identical particles ([[§C6b.7 Evaluating the Cross Section#^thm-c6b-7-4|Theorem §C6b.7.4]], whose derivation, Step 2, is the same computation).
+> integrating each momentum independently counts each state $n!$ times. With relativistic normalization the same holds with $\frac{d^3k_i}{(2\pi)^32E_{\mathbf k_i}}$; this is the $\frac{1}{S_{\rm id}}$ of identical particles ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]], whose derivation, Step 2, is the same computation).
 >
 > *Model:* [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* the free Fock space, any $n$-particle states, independent of the dynamics.
 >
@@ -266,7 +266,7 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 
 ^der-c6c-7-5
 
-*Uses:* [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]], [[§C6b.7 Evaluating the Cross Section#^thm-c6b-7-4|Theorem §C6b.7.4]]
+*Uses:* [[§C6c.2 Contractions with External Particles#^der-c6c-2-1|Derivation §C6c.2.1]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]
 
 > [!theorem] Theorem §C6c.7.6: The Number of Particles Is Poisson Distributed
 > $$
@@ -338,6 +338,6 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 > [!remark]- Connections
 > - The vacuum series exponentiates by the same exponential formula as the vacuum bubbles of $\phi^4$ theory; here the only connected vacuum diagram is the line, so the whole series is $e^{L/2}$ — [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-6|Theorem §C6a.11.6]].
 > - $P(0) = e^{-\lambda}$ is the vacuum-persistence probability; at order $j^2$, $1 - P(0) = \lambda = P(1)$: the probability lost from the vacuum is the probability of emitting one particle, carried by the $\delta(p^2 - m^2)$ part of $D_F$ — [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]] (the $\delta(p^2 - m^2)$ part of $D_F$).
-> - The contraction of a field with an outgoing particle is the external-line rule of amplitudes: in relativistic normalization each external scalar line gives $e^{ip\cdot x}$, i.e. factor 1 after the vertex integral, as in the decay $\Phi \to \phi\phi$ — [[§C6b.9 Decay Rates and Widths#^ex-c6b-9-1|Example §C6b.9.1]], [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]].
-> - The $n!$ of the $n$-particle measure and the identical-particle factor $S_{\rm id}$ are one fact, the symmetry of bosonic states — [[§C6b.7 Evaluating the Cross Section#^thm-c6b-7-4|Theorem §C6b.7.4]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]].
+> - The contraction of a field with an outgoing particle is the external-line rule of amplitudes: in relativistic normalization each external scalar line gives $e^{ip\cdot x}$, i.e. factor 1 after the vertex integral, as in the decay $\Phi \to \phi\phi$ — [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|Example §C6b.6.1]], [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]].
+> - The $n!$ of the $n$-particle measure and the identical-particle factor $S_{\rm id}$ are one fact, the symmetry of bosonic states — [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]].
 > - The same computation with $j$ a classical current and $\hat\phi$ the photon field gives the Poisson distribution of soft photons emitted by a classical charge (PS Problem 4.1's remark; bremsstrahlung, QFT C8, planned) — [[§C2b.8 Particle Production by a Classical Source|§C2b.8]], Connections.

@@ -355,7 +355,7 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 > |\mathcal M|^2 = |\mathcal M_1|^2 + |\mathcal M_2|^2 + 2\eta\,\operatorname{Re}\bigl(\mathcal M_1^\ast\mathcal M_2\bigr) ,
 > $$
 >
-> so the sign of the interference term in every cross section and width ([[§C6b.9 Decay Rates and Widths#^thm-c6b-9-5|Theorem §C6b.9.5]]) is the relative sign, while an overall sign $i\mathcal M \to -i\mathcal M$ leaves $|\mathcal M|^2$ unchanged. For $f\bar f \to f\bar f$ ($\eta = -1$, [[§C6d.5 Second Order#^ex-c6d-5-1|Example §C6d.5.1]]), $|\mathcal M|^2 = |\mathcal M_1|^2 + |\mathcal M_2|^2 - (\mathcal M_1^\ast\mathcal M_2 + \mathcal M_2^\ast\mathcal M_1)$ (Yu (7.75)); for $ff \to ff$ the interference term is $-2\operatorname{Re}(\mathcal M_t^\ast\mathcal M_u)$. A wrong relative sign changes $|\mathcal M|^2$ by $4\operatorname{Re}(\mathcal M_1^\ast\mathcal M_2)$.
+> so the sign of the interference term in every cross section and width ([[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]]) is the relative sign, while an overall sign $i\mathcal M \to -i\mathcal M$ leaves $|\mathcal M|^2$ unchanged. For $f\bar f \to f\bar f$ ($\eta = -1$, [[§C6d.5 Second Order#^ex-c6d-5-1|Example §C6d.5.1]]), $|\mathcal M|^2 = |\mathcal M_1|^2 + |\mathcal M_2|^2 - (\mathcal M_1^\ast\mathcal M_2 + \mathcal M_2^\ast\mathcal M_1)$ (Yu (7.75)); for $ff \to ff$ the interference term is $-2\operatorname{Re}(\mathcal M_t^\ast\mathcal M_u)$. A wrong relative sign changes $|\mathcal M|^2$ by $4\operatorname{Re}(\mathcal M_1^\ast\mathcal M_2)$.
 >
 > *Model:* any amplitude that is a sum of two terms; *applies:* exact algebra; the spin sums of $|\mathcal M|^2$ act on each term.
 >

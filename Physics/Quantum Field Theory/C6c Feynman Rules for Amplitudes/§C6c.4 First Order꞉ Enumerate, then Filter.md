@@ -432,7 +432,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > [!example] Example §C6c.4.4: Φφ² at First Order: the Factor 2 of Φ → φφ
 > ![[ph-qft-c6b-2-2.svg]]
 >
-> In [[§C6b.9 Decay Rates and Widths#^mod-c6b-9-7|Model §C6b.9.7]] ($\mathcal L_{\rm int} = -\mu\Phi\phi^2$, masses $M$, $m$), the first-order processes are:
+> In [[§C6b.6 Decay Kinematics#^mod-c6b-6-4|Model §C6b.6.4]] ($\mathcal L_{\rm int} = -\mu\Phi\phi^2$, masses $M$, $m$), the first-order processes are:
 >
 > | in → out | loops | $i\mathcal M$ | kinematics ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2\|Theorem §C6c.4.2]]) |
 > |---|---|---|---|
@@ -450,7 +450,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > \langle\mathbf p_1\mathbf p_2|{:}\hat\Phi_x\hat\phi_{x1}\hat\phi_{x2}{:}|\mathbf K\rangle_\Phi = \overbracket{\hat\Phi_x|\mathbf K\rangle}\Bigl(\overbracket{\langle\mathbf p_1|\hat\phi_{x1}}\,\overbracket{\langle\mathbf p_2|\hat\phi_{x2}} + \overbracket{\langle\mathbf p_1|\hat\phi_{x2}}\,\overbracket{\langle\mathbf p_2|\hat\phi_{x1}}\Bigr) = 2\,e^{i(p_1 + p_2 - K)\cdot x} ,
 > $$
 >
-> so $\langle\mathbf p_1\mathbf p_2|i\hat T^{(1)}|\mathbf K\rangle_\Phi = -2i\mu(2\pi)^4\delta^4(K - p_1 - p_2)$, $i\mathcal M = -2i\mu$. The same computation with the operators written out, and the width and lifetime, are [[§C6b.9 Decay Rates and Widths#^ex-c6b-9-1|Example §C6b.9.1]] (Steps 3–5 for $\mathcal M$).
+> so $\langle\mathbf p_1\mathbf p_2|i\hat T^{(1)}|\mathbf K\rangle_\Phi = -2i\mu(2\pi)^4\delta^4(K - p_1 - p_2)$, $i\mathcal M = -2i\mu$. The same computation with the operators written out, and the width and lifetime, are [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|Example §C6b.6.1]] (Steps 3–5 for $\mathcal M$).
 >
 > *Source: PHY 513, Problem Set 8, Problem 4 (the user's solution: "each of $\hat a_{\mathbf p_1}, \hat a_{\mathbf p_2}$ … pairs with one of the two fields, in 2 ways") · PS Problem 4.2 · the table written here*
 
@@ -485,5 +485,5 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > [!remark]- Connections
 > - The $\frac1S$ left over in a matrix element is the $\frac1S$ of correlation functions, with the particles in place of the external points — [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]], [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]].
 > - Yu's first order is Yukawa theory: of ten dynamically allowed processes only $\phi \to f\bar f$ and its inverse survive the filter — [[§C6d.4 First Order#^ex-c6d-4-1|§C6d.4, Example §C6d.4.1]].
-> - The kinematic filter is the threshold of a decay, $M > \sum m_i$, the condition of the two-body decay formula — [[§C6b.9 Decay Rates and Widths#^thm-c6b-9-6|Theorem §C6b.9.6]].
+> - The kinematic filter is the threshold of a decay, $M > \sum m_i$, the condition of the two-body decay formula — [[§C6b.6 Decay Kinematics#^thm-c6b-6-1|Theorem §C6b.6.1]].
 > - The fermion mirror of this section: the Wick split and the eight three-leg elements of Yukawa theory, the rules read off them, the filter keeping two of ten, the tadpoles, the vertex without $\frac{1}{3!}$ and $S = 1$ — [[§C6d.4 First Order#^thm-c6d-4-1|Theorem §C6d.4.1]], [[§C6d.4 First Order#^thm-c6d-4-3|Theorem §C6d.4.3]], [[§C6d.4 First Order#^thm-c6d-4-5|Theorem §C6d.4.5]], [[§C6d.4 First Order#^ex-c6d-4-3|Example §C6d.4.3]], [[§C6d.4 First Order#^thm-c6d-4-4|Theorem §C6d.4.4]], [[§C6d.4 First Order#^thm-c6d-4-7|Theorem §C6d.4.7]].
