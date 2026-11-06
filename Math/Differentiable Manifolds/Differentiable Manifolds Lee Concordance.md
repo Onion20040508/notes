@@ -84,8 +84,8 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§62 Sets of Measure Zero\|§62]] Sets of measure zero | Chapter 6, *Sets of Measure Zero* (Lemma 6.2, Proposition 6.5, Lemma 6.6); Appendix C (Proposition C.18, Corollary C.25) |
 | [[§63 Sard's Theorem\|§63]] Sard's theorem | Chapter 6, *Sard's Theorem* (Theorem 6.10, Corollary 6.11) |
 | [[§64 Parametric Transversality\|§64]] Parametric transversality | Chapter 6, *The Transversality Homotopy Theorem* (Theorem 6.35) |
-| [[§66 The Whitney Embedding Theorem\|§66]] The Whitney embedding theorem | Chapter 6, *The Whitney Embedding Theorem* (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20–2.22 (bump functions) |
 | [[§65 Partitions of Unity\|§65]] Partitions of unity | Chapter 2, *Partitions of Unity* (Lemmas 2.20–2.22, Theorem 2.23); Chapter 1, *Paracompactness* (Theorem 1.15); Proposition A.60; Chapter 2, *Applications of Partitions of Unity* (Proposition 2.28) |
+| [[§66 The Whitney Embedding Theorem\|§66]] The Whitney embedding theorem | Chapter 6, *The Whitney Embedding Theorem* (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20–2.22 (bump functions) |
 | [[§67 Integral Curves\|§67]] Integral curves | Chapter 9, *Integral Curves* ((9.1), Lemmas 9.3 and 9.4, Proposition 9.6) |
 | [[§68 Local Existence and Uniqueness\|§68]] Local existence and uniqueness | Chapter 9, *Integral Curves* (Example 9.1, Proposition 9.2); *Flows* (uniqueness, in the proof of Theorem 9.12); Appendix D (Theorem D.1); Problem 9-1 |
 | [[§69 Maximal Integral Curves and Flows\|§69]] Maximal integral curves and flows | Chapter 9, *Flows* (Example 9.10, Theorem 9.12, with its proof; the group law (9.7)); Problem 9-1 |
@@ -105,7 +105,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 1.8 | [[§3 Subspaces and Products#^thm-3-12\|Thm. §3.12]] |
 | Proposition 1.11 | [[§2 Topological Manifolds#^prop-2-6\|Prop. §2.6]], [[§2 Topological Manifolds#^thm-2-8\|Thm. §2.8]], [[§2 Topological Manifolds#^cor-2-9\|Cor. §2.9]] |
 | Proposition 1.12 | [[§2 Topological Manifolds#^prop-2-12\|Prop. §2.12]] |
-| Theorem 1.15 | [[§65 Partitions of Unity#^thm-65-4\|Thm. §65.4]] |
+| Theorem 1.15 | [[§65 Partitions of Unity#^thm-65-5\|Thm. §65.5]] |
 | Proposition 1.17 | [[§17 Differentiable Structures#^def-17-7\|Def. §17.7]], [[§17 Differentiable Structures#^thm-17-5\|Thm. §17.5]] |
 | Example 1.21 | [[§2 Topological Manifolds#^prop-2-5\|Prop. §2.5]] |
 | Example 1.22 | [[§17 Differentiable Structures#^ex-17-1\|Ex. §17.1]] |
@@ -128,13 +128,13 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 2.5 | [[§19 Smooth Functions and Smooth Maps#^prop-19-2\|Prop. §19.2]] |
 | Proposition 2.10 | [[§19 Smooth Functions and Smooth Maps#^lem-19-5\|Lem. §19.5]] |
 | Proposition 2.15 | [[§19 Smooth Functions and Smooth Maps#^prop-19-7\|Prop. §19.7]] |
-| Lemma 2.20 | [[§65 Partitions of Unity#^lem-65-2\|Lem. §65.2]] |
-| Lemma 2.21 | [[§65 Partitions of Unity#^lem-65-2\|Lem. §65.2]] |
-| Lemma 2.22 | [[§65 Partitions of Unity#^lem-65-2\|Lem. §65.2]] |
-| Theorem 2.23 | [[§65 Partitions of Unity#^thm-65-1\|Thm. §65.1]] |
+| Lemma 2.20 | [[§65 Partitions of Unity#^lem-65-3\|Lem. §65.3]] |
+| Lemma 2.21 | [[§65 Partitions of Unity#^lem-65-3\|Lem. §65.3]] |
+| Lemma 2.22 | [[§65 Partitions of Unity#^lem-65-3\|Lem. §65.3]] |
+| Theorem 2.23 | [[§65 Partitions of Unity#^thm-65-7\|Thm. §65.7]] |
 | Proposition 2.25 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]], [[§56 Vector Fields#^prop-56-4\|Prop. §56.4]] |
 | Lemma 2.26 | [[§56 Vector Fields#^cor-56-5\|Cor. §56.5]] |
-| Proposition 2.28 | [[§65 Partitions of Unity#^prop-65-7\|Prop. §65.7]], [[§65 Partitions of Unity#^lem-65-6\|Lem. §65.6]] |
+| Proposition 2.28 | [[§65 Partitions of Unity#^prop-65-9\|Prop. §65.9]], [[§65 Partitions of Unity#^lem-65-8\|Lem. §65.8]] |
 | Lemma 3.1 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-2\|Lem. §28.2]] |
 | Proposition 3.2 | [[§25 The Geometric Tangent Space#^def-25-4\|Def. §25.4]], [[§25 The Geometric Tangent Space#^prop-25-9\|Prop. §25.9]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3\|Lem. §29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5\|Cor. §29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]] |
 | Corollary 3.3 | [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5\|Cor. §29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]] |
@@ -271,7 +271,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition A.50 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Lemma A.52 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Theorem A.57 | [[§44 Embeddings#^prop-44-4\|Prop. §44.4]] |
-| Proposition A.60 | [[§65 Partitions of Unity#^lem-65-3\|Lem. §65.3]] |
+| Proposition A.60 | [[§65 Partitions of Unity#^lem-65-4\|Lem. §65.4]] |
 | Corollary B.21 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |
 | Proposition B.24 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |
 | Theorem C.15 | [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3\|Lem. §29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4\|Lem. §29.4]] |

@@ -11,8 +11,8 @@ tags: [differentiable-manifolds, hub]
 - [[§66 The Whitney Embedding Theorem#^thm-66-8|Theorem §66.8: The Whitney Embedding and Immersion Theorems]], in [[§66 The Whitney Embedding Theorem]]
 
 ## Its proof uses
-- [[§65 Partitions of Unity#^thm-65-1|Theorem §65.1: Existence of Partitions of Unity]]
-- [[§65 Partitions of Unity#^prop-65-7|Proposition §65.7: Exhaustion Functions Exist]]
+- [[§65 Partitions of Unity#^thm-65-7|Theorem §65.7: Existence of Partitions of Unity]]
+- [[§65 Partitions of Unity#^prop-65-9|Proposition §65.9: Exhaustion Functions Exist]]
 - [[§66 The Whitney Embedding Theorem#^lem-66-3|Lemma §66.3: Projections That Stay Injective]]
 - [[§66 The Whitney Embedding Theorem#^lem-66-5|Lemma §66.5: Projections That Stay Immersions]]
 - [[§66 The Whitney Embedding Theorem#^thm-66-6|Theorem §66.6: The Whitney Theorems for Compact Manifolds]]

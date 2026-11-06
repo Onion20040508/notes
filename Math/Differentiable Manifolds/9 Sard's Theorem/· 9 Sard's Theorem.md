@@ -21,14 +21,14 @@ tags: [chapter, differentiable-manifolds]
 ## Central results
 - [[Sard's Theorem]] (§63.3)
 - [[Parametric Transversality Theorem]] (§64.1)
-- [[Existence of Partitions of Unity]] (§65.1)
-- [[Manifolds Are Paracompact]] (§65.4)
-- [[Existence of Exhaustion Functions]] (§65.7)
+- [[Manifolds Are Paracompact]] (§65.5)
+- [[Existence of Partitions of Unity]] (§65.7)
+- [[Existence of Exhaustion Functions]] (§65.9)
 - [[Whitney Embedding Theorem]] (§66.8)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§62 Sets of Measure Zero#^lem-62-1|Lemma §62.1: Basic Properties of Measure Zero]]: 74 later results
-- [[§62 Sets of Measure Zero#^lem-62-2|Lemma §62.2: Smooth Maps Preserve Measure Zero]]: 73 later results
-- [[§62 Sets of Measure Zero#^lem-62-3|Lemma §62.3: Countable Subcovers]]: 72 later results
-- [[§62 Sets of Measure Zero#^prop-62-4|Proposition §62.4: Measure Zero Is Seen in Every Chart]]: 71 later results
+- [[§62 Sets of Measure Zero#^lem-62-1|Lemma §62.1: Basic Properties of Measure Zero]]: 75 later results
+- [[§62 Sets of Measure Zero#^lem-62-2|Lemma §62.2: Smooth Maps Preserve Measure Zero]]: 74 later results
+- [[§62 Sets of Measure Zero#^lem-62-3|Lemma §62.3: Countable Subcovers]]: 73 later results
+- [[§62 Sets of Measure Zero#^prop-62-4|Proposition §62.4: Measure Zero Is Seen in Every Chart]]: 72 later results
