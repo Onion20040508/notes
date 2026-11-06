@@ -122,7 +122,7 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 > - Proof: [[§6 Proof of the Hahn–Banach Theorem#^pf-5-2|§6]]. Applied to a gauge: [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]. Complex scalars: [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]].
 
 > [!remark] Note: Notation
-> Throughout these notes a functional given on a subspace is written $\ell$ and its extension $L$. Wu and Lax keep the name $\ell$ for the extension; the distinction is kept here because several proofs manipulate both at once.
+> Throughout these notes a functional given on a subspace is written $\ell$ and its extension $L$. The lecture and Lax keep the name $\ell$ for the extension; the distinction is kept here because several proofs manipulate both at once.
 
 ^rem-5-3
 

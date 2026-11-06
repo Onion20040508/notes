@@ -356,7 +356,7 @@ tags: [group-theory, math493]
 ^pf-56-8
 
 > [!remark] Remark: What the Count Gives
-> *(Not from class.)* The count shows more. The eight Sylow $7$-subgroups contain exactly $48$ elements of order $7$, which leaves $56 - 48 = 8$ elements; a Sylow $2$-subgroup has $8$ elements, none of order $7$, so it consists of exactly these $8$, and there is only one. So $n_7 = 8$ forces $n_2 = 1$: every group of order $56$ has a normal Sylow $7$-subgroup or a normal Sylow $2$-subgroup (Corollary [[§55 The Sylow Theorems#^cor-55-7|§55.7]]). The general tool: if the Sylow $p$-subgroups of $G$ have order $p$, any two of them intersect trivially, and $G$ has exactly $n_p(p - 1)$ elements of order $p$. Speyer: “this kind of counting elements approach can also handle a number of other cases — for example, you might enjoy working it out for $30$.”
+> *(Not from class.)* The count shows more. The eight Sylow $7$-subgroups contain exactly $48$ elements of order $7$, which leaves $56 - 48 = 8$ elements; a Sylow $2$-subgroup has $8$ elements, none of order $7$, so it consists of exactly these $8$, and there is only one. So $n_7 = 8$ forces $n_2 = 1$: every group of order $56$ has a normal Sylow $7$-subgroup or a normal Sylow $2$-subgroup (Corollary [[§55 The Sylow Theorems#^cor-55-7|§55.7]]). The general tool: if the Sylow $p$-subgroups of $G$ have order $p$, any two of them intersect trivially, and $G$ has exactly $n_p(p - 1)$ elements of order $p$. The same approach of counting elements handles a number of other orders as well, for example $30$ (this sentence is from lecture).
 
 ^rem-56-7
 
@@ -598,7 +598,7 @@ Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6
 >
 > For a long time this order was a number that passed every test without anyone being able to construct a group of that order, and no proof of the classification could be complete until the Monster was either constructed or ruled out. (It was first constructed by Robert Griess, around 1980–82; later constructions are due to Conway and others. Not from class.)
 >
-> In the lecturer's working summary: there is $\mathbb{Z}/p\mathbb{Z}$, there are the alternating groups, there is $PSL$ and things like it, and there are the sporadic groups.
+> As a working summary, the finite simple groups are the $\mathbb{Z}/p\mathbb{Z}$, the alternating groups, $PSL$ and groups like it, and the sporadic groups.
 >
 > *Source: lecture 10/23*
 

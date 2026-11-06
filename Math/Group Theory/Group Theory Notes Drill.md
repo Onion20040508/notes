@@ -1897,7 +1897,7 @@ The permutation representation of $S_n$ is $\sigma \mapsto M(\sigma)$, $S_n \to 
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-8|§20.8]]; Proposition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]]; Proposition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-4|§20.4]] for any finite set $X$.
-> - Remark [[§21 The Sign Homomorphism and the Alternating Group#^rem-21-2|Speyer's Presentation]] ($\operatorname{sgn} = \det \circ M$).
+> - Remark [[§21 The Sign Homomorphism and the Alternating Group#^rem-21-2|The Sign as det ∘ M]].
 
 ### Priority 2 · problem sets (about a quarter)
 

@@ -264,7 +264,7 @@ The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from t
 > \|[a x_0]\| = \inf_{y' \in Y} \|a(x_0 + y')\| = \inf_{y' \in Y} |a|\,\|x_0 + y'\| = |a| \inf_{y' \in Y} \|x_0 + y'\| = |a|\, \|[x_0]\|.
 > $$
 >
-> (Wu described this step as “clear” and left the writing to us.)
+> (Left to us in lecture.)
 >
 > **Subadditivity.** Let $[x], [y] \in X/Y$; we show $\|[x + y]\| \le \|[x]\| + \|[y]\|$. Fix $\varepsilon > 0$. Since $\|[x]\|$ is the greatest lower bound of $\{\|x'\| : x' \in [x]\}$, the number $\|[x]\| + \varepsilon$ is not a lower bound, so there is $x_0 \in [x]$ with
 >

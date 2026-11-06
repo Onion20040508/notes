@@ -24,7 +24,7 @@ tags: [functional-analysis, math556]
 
 ^thm-18-1
 
-Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an inequality in $[0,\infty]$, followed by a cancellation that needs $\|a+b\|_p < \infty$; when that is not yet known, the computation is applied to truncations. The order below follows hers.
+The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an inequality in $[0,\infty]$, followed by a cancellation that needs $\|a+b\|_p < \infty$; when that is not yet known, the computation is applied to truncations. The order below follows the lecture.
 
 > [!proof]+ Proof of Theorem §18.1
 > **Case $p = 1$.** $\sum_i |a_i + b_i| \le \sum_i (|a_i| + |b_i|) = \|a\|_1 + \|b\|_1$, by the termwise triangle inequality and addition of series of non-negative terms.
@@ -94,7 +94,7 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 *Uses:* [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]]
 
 > [!remark] Remark: Where the Finiteness is Used
-> A student asked what happens if the sums are infinite. The answer is in the structure above: Steps 1–2 are valid as inequalities in $[0,\infty]$ regardless, but Step 3 divides by $\|a+b\|_p^{\,p-1}$, and “$\infty \le \infty \cdot C$” cannot be cancelled to “$\infty \le C$.” The truncation makes every quantity finite, and monotone convergence of the partial sums then carries the inequality to the full series. This is a general pattern: prove the estimate in a setting where everything is finite, then pass to the limit through an increasing family. Minkowski fails for $0 < p < 1$: the same computation cannot be run because [[§17 Hölder's Inequality for Sequences#^thm-17-1|Hölder]] needs $q \ge 1$, and in fact $\|\cdot\|_p$ is then not subadditive: for $a = e_1$ and $b = e_2$, $\|a + b\|_p = 2^{1/p} > 2 = \|a\|_p + \|b\|_p$.
+> The case of infinite sums is handled by the structure above: Steps 1–2 are valid as inequalities in $[0,\infty]$ regardless, but Step 3 divides by $\|a+b\|_p^{\,p-1}$, and “$\infty \le \infty \cdot C$” cannot be cancelled to “$\infty \le C$.” The truncation makes every quantity finite, and monotone convergence of the partial sums then carries the inequality to the full series. This is a general pattern: prove the estimate in a setting where everything is finite, then pass to the limit through an increasing family. Minkowski fails for $0 < p < 1$: the same computation cannot be run because [[§17 Hölder's Inequality for Sequences#^thm-17-1|Hölder]] needs $q \ge 1$, and in fact $\|\cdot\|_p$ is then not subadditive: for $a = e_1$ and $b = e_2$, $\|a + b\|_p = 2^{1/p} > 2 = \|a\|_p + \|b\|_p$.
 
 ^rem-18-1
 
@@ -191,12 +191,12 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 > a^{(n)} = \bigl( a^{(n)}_1, a^{(n)}_2, a^{(n)}_3, \ldots \bigr) \in \ell^p,
 > $$
 >
-> so the superscript indexes the term of the sequence in $\ell^p$ and the subscript the coordinate. Wu also used truncations $a^{(n,k)} = (a^{(n)}_1, \ldots, a^{(n)}_k) \in \mathbb{F}^k$.
+> so the superscript indexes the term of the sequence in $\ell^p$ and the subscript the coordinate. Truncations are also used: $a^{(n,k)} = (a^{(n)}_1, \ldots, a^{(n)}_k) \in \mathbb{F}^k$.
 
 ^rem-18-3
 
 > [!proof]+ Proof
-> The proof follows the plan Wu stated for every completeness argument: *first find the candidate for the limit, then prove convergence to it*. Take $p < \infty$ first.
+> The proof follows the plan for every completeness argument: *first find the candidate for the limit, then prove convergence to it*. Take $p < \infty$ first.
 >
 > Let $\{a^{(n)}\}_{n \ge 1}$ be Cauchy in $\ell^p$: for every $\varepsilon > 0$ there is $N$ such that
 >
@@ -257,7 +257,7 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 > - $\ell^2$ is the first infinite-dimensional Hilbert space: [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-1|Ex. §23.1]].
 
 > [!remark] Remark: The Two Limits
-> The delicate point is Step 2, and it produced the longest discussion in lecture. Two limits are involved: $m \to \infty$ (to replace $a^{(m)}$ by the candidate $a$) and $k \to \infty$ (to pass from partial sums to the full series). A student proposed handling the infinite sum directly as a limit of partial sums and choosing, for each $k$, an $n$ large enough. That does not work: the $n$ obtained depends on $k$, and as $k \to \infty$ it may go to infinity with it, so nothing is proved for the full series with a single $n$. The proof avoids this by using the Cauchy condition in its full form (4.3) — with the *infinite* sum and $N$ independent of everything else — and only then truncating to a finite sum, where $m \to \infty$ can be taken termwise, and finally sending $k \to \infty$ through a monotone bounded sequence. The order matters: truncate, then $m \to \infty$, then $k \to \infty$, with $n \ge N$ fixed throughout. Interchanging limits requires justification; when two are present, arrange for one of them to be a finite sum.
+> The delicate point is Step 2. Two limits are involved: $m \to \infty$ (to replace $a^{(m)}$ by the candidate $a$) and $k \to \infty$ (to pass from partial sums to the full series). A tempting alternative is to handle the infinite sum directly as a limit of partial sums and choosing, for each $k$, an $n$ large enough. That does not work: the $n$ obtained depends on $k$, and as $k \to \infty$ it may go to infinity with it, so nothing is proved for the full series with a single $n$. The proof avoids this by using the Cauchy condition in its full form (4.3) — with the *infinite* sum and $N$ independent of everything else — and only then truncating to a finite sum, where $m \to \infty$ can be taken termwise, and finally sending $k \to \infty$ through a monotone bounded sequence. The order matters: truncate, then $m \to \infty$, then $k \to \infty$, with $n \ge N$ fixed throughout. Interchanging limits requires justification; when two are present, arrange for one of them to be a finite sum.
 
 ^rem-18-4
 
@@ -278,11 +278,11 @@ Wu's proof for $1 < p < \infty$ runs in two stages: a computation, valid as an i
 > $$
 >
 > Put $a = (a_1, a_2, \ldots) \in \ell$. This is the candidate. Nothing has been proved about it yet: it is not known that $a \in \ell^p$, nor that $a^{(n)} \to a$ in $\|\cdot\|_p$; only that each coordinate converges.
-> As Wu noted at the end of the lecture, the two formulations are the same thing: convergence in $\mathbb{F}^k$ is coordinatewise convergence, and only the coordinates are used afterwards. A student's example of $e_1, e_2, e_1, e_2, \ldots$ (alternating) was raised as a worry for coordinatewise limits; it is not Cauchy in $\ell^p$ ($\|e_1 - e_2\|_p = 2^{1/p}$ does not go to $0$), so it is not a counterexample to anything.
+> The two formulations are the same thing: convergence in $\mathbb{F}^k$ is coordinatewise convergence, and only the coordinates are used afterwards. The alternating sequence $e_1, e_2, e_1, e_2, \ldots$ may look like a worry for coordinatewise limits; it is not Cauchy in $\ell^p$ ($\|e_1 - e_2\|_p = 2^{1/p}$ does not go to $0$), so it is not a counterexample to anything.
 
 ^rem-18-5
 
 > [!remark] Remark: Comparison with Lax
-> Three differences of route in [[§17 Hölder's Inequality for Sequences|§17]]–[[§18 Minkowski's Inequality and the Spaces ℓᵖ|§18]]. Lax states Hölder's inequality without proof, referring to Courant; here it is proved from Young's inequality (Lemma [[§16 Means and Young's Inequality#^lem-16-3|§16.3]]). Lax obtains Minkowski's inequality from the *duality formula* $\|x\|_p = \max_{\|u\|_q = 1} |(x, u)|$ with $(x,u) = \sum_j a_j c_j$ (his Theorem 5): a maximum of sums is at most a sum of maxima, so subadditivity is immediate once the formula is known, and the formula itself rests on the equality case of Hölder. Wu's route (Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]]) avoids the equality case at the price of the truncation argument. The duality formula is the first appearance of the dual-space theme that returns in Lax's Chapter 8. Finally, Lax asserts the completeness of $\ell^p$ and $\ell^\infty$ without proof (examples (a)–(b)); Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]] proves it.
+> Three differences of route in [[§17 Hölder's Inequality for Sequences|§17]]–[[§18 Minkowski's Inequality and the Spaces ℓᵖ|§18]]. Lax states Hölder's inequality without proof, referring to Courant; here it is proved from Young's inequality (Lemma [[§16 Means and Young's Inequality#^lem-16-3|§16.3]]). Lax obtains Minkowski's inequality from the *duality formula* $\|x\|_p = \max_{\|u\|_q = 1} |(x, u)|$ with $(x,u) = \sum_j a_j c_j$ (his Theorem 5): a maximum of sums is at most a sum of maxima, so subadditivity is immediate once the formula is known, and the formula itself rests on the equality case of Hölder. The route in lecture (Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]]) avoids the equality case at the price of the truncation argument. The duality formula is the first appearance of the dual-space theme that returns in Lax's Chapter 8. Finally, Lax asserts the completeness of $\ell^p$ and $\ell^\infty$ without proof (examples (a)–(b)); Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]] proves it.
 
 ^rem-18-6

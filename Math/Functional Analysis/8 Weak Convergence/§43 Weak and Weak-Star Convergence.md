@@ -13,7 +13,7 @@ tags: [functional-analysis, math556]
 
 ## Definitions
 
-Recall that the closed unit ball in $\mathbb{R}^n$ is compact, while the closed unit ball of an infinite-dimensional normed linear space is not (Theorem [[§20 Compactness and the Unit Ball#^thm-20-5|§20.5]]); this is one of the main differences between finite and infinite dimensions. It is always useful to extract a convergent subsequence from a bounded sequence. Since this is impossible in general, Wu: “maybe let's weaken the convergence”. This is the motivation for weak convergence.
+Recall that the closed unit ball in $\mathbb{R}^n$ is compact, while the closed unit ball of an infinite-dimensional normed linear space is not (Theorem [[§20 Compactness and the Unit Ball#^thm-20-5|§20.5]]); this is one of the main differences between finite and infinite dimensions. It is always useful to extract a convergent subsequence from a bounded sequence. Since this is impossible in general, one weakens the notion of convergence instead. This is the motivation for weak convergence.
 
 > [!definition] Definition §43.1: Weak and Strong Convergence
 > Let $X$ be a normed linear space, $\{x_n\}_{n=1}^\infty$ a sequence in $X$ and $x_0 \in X$.
@@ -111,7 +111,7 @@ The same holds in any Hilbert space, by an abstract argument.
 > \lim_{m \to \infty} \int_0^{2\pi} \sin(mx)\, g(x)\, dx = 0 ,
 > $$
 >
-> i.e. $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$; the factor $\frac{1}{\sqrt\pi}$ does not matter for convergence to $0$. (Wu: “with conjugate or no conjugate” — it makes no difference, since $g$ runs over all of $L^2$ exactly when $\bar g$ does.) The functions oscillate faster and faster without settling down, and $\|\sin(mx)\|_{L^2} = \sqrt\pi$ for every $m$, so there is no strong convergence; but against any fixed $g$ the positive and negative parts cancel more and more.
+> i.e. $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$; the factor $\frac{1}{\sqrt\pi}$ does not matter for convergence to $0$. (Whether or not $g$ is conjugated in the integral makes no difference, since $g$ runs over all of $L^2$ exactly when $\bar g$ does.) The functions oscillate faster and faster without settling down, and $\|\sin(mx)\|_{L^2} = \sqrt\pi$ for every $m$, so there is no strong convergence; but against any fixed $g$ the positive and negative parts cancel more and more.
 
 ^ex-43-2
 
@@ -192,7 +192,7 @@ The norm bound says how large the weak limit can be; Mazur's theorem says where 
 
 ^thm-43-5
 
-It is important that $\ell$ is *bounded*, and that $K$ is *closed* and convex. The version proved in Chapter 2 (Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]) was for a linear space without a norm, for a convex set $K$ consisting of interior points (“open”) with $y_0 \notin K$; it produced a linear functional, not necessarily bounded. Wu left the normed version to the class, with a hint: since $K$ is closed and $x_0 \notin K$, the distance from $x_0$ to $K$ is positive, so $K$ can be made slightly bigger without reaching $x_0$. Let
+It is important that $\ell$ is *bounded*, and that $K$ is *closed* and convex. The version proved in Chapter 2 (Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]) was for a linear space without a norm, for a convex set $K$ consisting of interior points (“open”) with $y_0 \notin K$; it produced a linear functional, not necessarily bounded. The idea of the proof: since $K$ is closed and $x_0 \notin K$, the distance from $x_0$ to $K$ is positive, so $K$ can be made slightly bigger without reaching $x_0$. Let
 
 $$
 K_\varepsilon = \{ x \in X : \text{there is } y \in K \text{ with } \|x - y\| < \varepsilon \} .
@@ -261,7 +261,7 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 ## $\sin(mx)$ in $L^p$
 
 > [!example] Example §43.3: $\sin(mx) \rightharpoonup 0$ in $L^p[0, 2\pi]$ for $1 < p < \infty$
-> We know $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]]). Since $|\sin(mx)| \le 1$, also $\sin(mx) \in L^p([0, 2\pi])$ for $1 \le p < \infty$. *Question:* does $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$ for all $1 < p < \infty$? Wu: yes (“let's avoid $p = 1$, it is always subtle”).
+> We know $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]]). Since $|\sin(mx)| \le 1$, also $\sin(mx) \in L^p([0, 2\pi])$ for $1 \le p < \infty$. *Question:* does $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$ for all $1 < p < \infty$? Yes. (The case $p = 1$ is subtler and is excluded here; see Remark [[§43 Weak and Weak-Star Convergence#^rem-43-2|remark]].)
 >
 > Recall $(L^p)' = L^{p'}$ with $\frac1p + \frac1{p'} = 1$, so $1 < p' < \infty$ (Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]). We check the two conditions of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]].
 >
@@ -274,15 +274,15 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 
 > [!remark] Remark: Two Questions for Homework
 > 1. *$p = 1$.* Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|§19.5]]), so the argument above does not apply; one has to test against $L^\infty$ functions. Homework.
-> 2. *Products.* If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, Hölder gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$. Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Wu: usually not — weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$. Finding an example is homework.
+> 2. *Products.* If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, Hölder gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$. Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$. Finding an example is homework.
 >
-> Wu: weak limits are nice to have, but limited. A bounded sequence in infinite dimensions need not have a convergent subsequence; under certain circumstances it will have a weakly convergent one, but weak convergence does not commute with nonlinear operations.
+> Weak limits are useful but limited. A bounded sequence in infinite dimensions need not have a convergent subsequence; under certain circumstances it will have a weakly convergent one, but weak convergence does not commute with nonlinear operations.
 
 ^rem-43-2
 
 ## Weak-$\ast$ Convergence
 
-Does every bounded sequence have a weakly convergent subsequence? Wu: “actually it's a difficult question”; to answer it, the weak limit must be weakened even further.
+Does every bounded sequence have a weakly convergent subsequence? This is a difficult question; to answer it, the weak limit must be weakened even further.
 
 > [!definition] Definition §43.2: Weak-$\ast$ Convergence
 > Let $X$ be a normed linear space and let $\{\ell_n\}_{n=1}^\infty$ and $\ell_0$ be in $X'$. We say $\ell_n$ **converges to $\ell_0$ in the weak-$\ast$ sense**, and write $\mathop{\mathrm{w}^{\ast}\text{-}\mathrm{lim}}_{n \to \infty} \ell_n = \ell_0$ or $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$, if for every $x \in X$
@@ -351,7 +351,7 @@ As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of t
 > [!proof]+ Proof
 > *Bounded:* to converge in the weak-$\ast$ sense, the sequence is pointwise bounded on $X$; this is the uniform boundedness principle (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-3|§42.3]]).
 >
-> *The norm bound.* Wu: the proof is almost the same as the previous one, but now the norm of $\ell_0$ is computed by its definition, without Hahn–Banach:
+> *The norm bound.* The proof is almost the same as the previous one, but now the norm of $\ell_0$ is computed by its definition, without Hahn–Banach:
 >
 > $$
 > \|\ell_0\| = \sup_{x \in X,\ \|x\| \le 1} |\ell_0(x)| , \qquad \ell_0(x) = \lim_{n \to \infty} \ell_n(x) .

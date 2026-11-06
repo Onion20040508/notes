@@ -95,7 +95,7 @@ The left cosets of $H \leq G$ are the special case of $H$ acting on $G$ by right
 > G \backslash X := \{ Gx : x \in X \};
 > $$
 >
-> for a right action, $X / G := \{ xG : x \in X \}$, “like a quotient.” The group is written on the side from which it acts. Example: the orbits of $O_3(\mathbb{R})$ on $\mathbb{R}^3$ are the spheres about the origin ([[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|WS 4.8]] below), so $O_3 \backslash \mathbb{R}^3 \leftrightarrow \mathbb{R}_{\geq 0}$ via the radius.
+> for a right action, $X / G := \{ xG : x \in X \}$, written like a quotient. The group is written on the side from which it acts. Example: the orbits of $O_3(\mathbb{R})$ on $\mathbb{R}^3$ are the spheres about the origin ([[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|WS 4.8]] below), so $O_3 \backslash \mathbb{R}^3 \leftrightarrow \mathbb{R}_{\geq 0}$ via the radius.
 >
 > *Source: lecture*
 

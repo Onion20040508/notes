@@ -9,11 +9,11 @@ tags: [functional-analysis, math556]
 
 *Stage: maps — Thread: completeness. Baire's theorem applied to $Y = \bigcup_n M(B(0,n))$: a bounded linear map onto a Banach space is open; bounded inverses, equivalent norms and closed graphs follow.*
 
-Throughout this section $B(x_0, r)$ denotes the *open* ball with center $x_0$ and radius $r > 0$ (in whichever space $x_0$ lies; when the space must be named, $B_X$ or $B_Y$); a closed ball is written with a closure bar. Wu: these are some of the major results of the course.
+Throughout this section $B(x_0, r)$ denotes the *open* ball with center $x_0$ and radius $r > 0$ (in whichever space $x_0$ lies; when the space must be named, $B_X$ or $B_Y$); a closed ball is written with a closure bar.
 
 ## The Open Mapping Theorem
 
-In lecture, Wu stated the open mapping theorem first, derived Banach's theorem from it, and then reduced the open mapping theorem to the following theorem. Here the theorem comes first, so that each proof follows its statement.
+In lecture, the open mapping theorem was stated first, Banach's theorem was derived from it, and the open mapping theorem was then reduced to the following theorem. Here the theorem comes first, so that each proof follows its statement.
 
 > [!theorem] Theorem §41.1: The Image of the Unit Ball Contains a Ball About $0$
 > Let $X, Y$ be Banach spaces and $M \in \mathcal{L}(X, Y)$ with $R(M) = Y$. Then there is $\delta > 0$ such that
@@ -42,7 +42,7 @@ What matters is that the ball in $Y$ is centered at the origin, not at an arbitr
 > B(z_0, r) \subset \overline{M\bigl( B(0, n) \bigr)} .
 > $$
 >
-> (Wu calls the center $x_0$; it is a point of $Y$.)
+> (In lecture the center is called $x_0$; it is a point of $Y$.)
 >
 > **Step 2: two properties of $\overline{M(B(0,n))}$.**
 >
@@ -88,7 +88,7 @@ What matters is that the ball in $Y$ is centered at the origin, not at an arbitr
 > B(0, 3\rho\delta) \subset \overline{M\bigl( B(0, \rho) \bigr)} \qquad \text{for all } \rho > 0 . \tag{$\dagger$}
 > $$
 >
-> **Step 5: removing the closure.** We want $B(0, \delta) \subset M(B(0, 1))$, without the closure. Wu: this is a little tricky; shrinking the ball does not remove the closure by itself. Let $y_0 \in B(0, \delta)$. By $(\dagger)$ with $\rho = \frac13$, $B(0, \delta) \subset \overline{M(B(0, \frac13))}$, so there is $x_0 \in B_X(0, \frac13)$ with
+> **Step 5: removing the closure.** We want $B(0, \delta) \subset M(B(0, 1))$, without the closure. Shrinking the ball does not remove the closure by itself. Let $y_0 \in B(0, \delta)$. By $(\dagger)$ with $\rho = \frac13$, $B(0, \delta) \subset \overline{M(B(0, \frac13))}$, so there is $x_0 \in B_X(0, \frac13)$ with
 >
 > $$
 > \|y_0 - Mx_0\| < \frac{\delta}{3}, \qquad \text{i.e.} \qquad y_0 - Mx_0 \in B_Y\bigl( 0, \tfrac{\delta}{3} \bigr) \subset \overline{M\bigl( B_X(0, \tfrac{1}{3^2}) \bigr)} ,
@@ -193,7 +193,7 @@ Banach's theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]) follows at o
 *Uses:* [[§39 Solving Mx = y#^lem-39-3|§39.3]]
 
 > [!remark] Remark: Where Completeness is Used
-> Completeness of $Y$ is used once, in Step 1, through Baire: what is needed is only that $Y = R(M)$ is of the second category, and Wu remarked that the assumption can be weakened accordingly. Completeness of $X$ is used in Step 6, to sum the corrections. The proof has two halves of different nature: Baire gives a ball in the *closure* of the image (Steps 1–4), and successive approximation removes the closure (Steps 5–6).
+> Completeness of $Y$ is used once, in Step 1, through Baire: what is needed is only that $Y = R(M)$ is of the second category, and the assumption can be weakened accordingly. Completeness of $X$ is used in Step 6, to sum the corrections. The proof has two halves of different nature: Baire gives a ball in the *closure* of the image (Steps 1–4), and successive approximation removes the closure (Steps 5–6).
 
 ^rem-41-1
 
@@ -222,7 +222,7 @@ In other words, if both norms are complete and one of them is stronger than the 
 *Uses:* [[§39 Solving Mx = y#^thm-39-2|§39.2]]
 
 > [!example] Example §41.1: $C^1[a,b]$ is Not Complete in the Maximum Norm
-> Wu: this explains the homework and the midterm. $C^1[a,b]$ is complete in the norm $\|f\|_{C^1} = \max |f| + \max |f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]), and $\max |f| \le \|f\|_{C^1}$. If $C^1[a,b]$ were also complete in $\max|f|$, Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]] would make the two norms equivalent.
+> This example explains the corresponding homework and midterm problems. $C^1[a,b]$ is complete in the norm $\|f\|_{C^1} = \max |f| + \max |f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]), and $\max |f| \le \|f\|_{C^1}$. If $C^1[a,b]$ were also complete in $\max|f|$, Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]] would make the two norms equivalent.
 > They are not: $f_n(t) = \sin\bigl( n(t - a) \bigr)$ has $\max |f_n| \le 1$ but $\|f_n\|_{C^1} \ge |f_n'(a)| = n$. So $(C^1[a,b], \max|\cdot|)$ is not complete; its completion is $C[a,b]$ (Midterm Problem 1, [[§39 Solving Mx = y|§39]]).
 
 ^ex-41-1

@@ -63,7 +63,7 @@ Inside any ball there is a smaller closed ball that misses $\overline{E}$ entire
 ^pf-40-1
 
 > [!remark] Remark: Two Facts About Nowhere Dense Sets
-> Two facts are used below. (a) If the closed ball $\overline{B(x_1, r_1)}$ works in the lemma, so does $\overline{B(x_1, r_1')}$ for any $0 < r_1' \le r_1$, since it is a subset; so $r_1$ can be taken as small as we like. (b) $E$ and $\overline{E}$ have the same closure ($\overline{E}$ is closed, Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]]), so $E$ is nowhere dense if and only if $\overline{E}$ is. This is why, as Wu said, it makes no difference whether one writes $E_n$ or $\overline{E}_n$ in the proof below.
+> Two facts are used below. (a) If the closed ball $\overline{B(x_1, r_1)}$ works in the lemma, so does $\overline{B(x_1, r_1')}$ for any $0 < r_1' \le r_1$, since it is a subset; so $r_1$ can be taken as small as we like. (b) $E$ and $\overline{E}$ have the same closure ($\overline{E}$ is closed, Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]]), so $E$ is nowhere dense if and only if $\overline{E}$ is. This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ in the proof below.
 
 ^rem-40-1
 
@@ -83,7 +83,7 @@ Inside any ball there is a smaller closed ball that misses $\overline{E}$ entire
 >
 > We want to show there is at least one point of $X$ that lies in no $E_n$, a contradiction. The idea is to construct a sequence of nested closed balls, the $n$-th one avoiding $E_n$, and to use completeness to find a point in all of them.
 >
-> **Step 1: nested balls.** Take the open ball $B(x_0, 1)$ with radius $1$ about some $x_0 \in X$ (Wu: $B(0,1)$, thinking of a normed space;
+> **Step 1: nested balls.** Take the open ball $B(x_0, 1)$ with radius $1$ about some $x_0 \in X$ (in a normed space one can take $B(0,1)$;
 > in a metric space any center will do). By Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]] there is $B(x_1, r_1)$, $r_1 > 0$, with $\overline{B(x_1, r_1)} \subset B(x_0, 1) \cap \overline{E}_1^{\,c}$, i.e.
 >
 > $$
@@ -124,7 +124,7 @@ Inside any ball there is a smaller closed ball that misses $\overline{E}$ entire
 >
 > and the union contains $\bigcup_n E_n = X$. So $A \cap X = \varnothing$, i.e. $A = \varnothing$.
 >
-> **Step 3: completeness makes the intersection nonempty.** Wu: this is where completeness is used; without it the balls could shrink to a missing point. For $j > n$, $x_j \in B(x_j, r_j) \subset B(x_n, r_n)$ by the nesting, so
+> **Step 3: completeness makes the intersection nonempty.** This is where completeness is used; without it the balls could shrink to a missing point. For $j > n$, $x_j \in B(x_j, r_j) \subset B(x_n, r_n)$ by the nesting, so
 >
 > $$
 > d(x_j, x_n) < r_n < \tfrac1n \qquad \text{for all } j > n .

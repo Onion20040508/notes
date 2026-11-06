@@ -9,7 +9,7 @@ tags: [functional-analysis, math556]
 
 *Stage: maps — Thread: functionals. Linear functionals generalize to linear maps between normed spaces; the bounded functionals of [[§26 Bounded Linear Functionals and the Riesz Representation Theorem|§26]] are the case $Y = \mathbb{F}$.*
 
-Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces over the same field $\mathbb{F}$; neither needs to be complete (“no completeness is necessary” for continuity, since only sequences that already converge are involved).
+Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces over the same field $\mathbb{F}$; neither needs to be complete (completeness plays no role for continuity, since only sequences that already converge are involved).
 
 > [!definition] Definition §30.1: Continuous Linear Map
 > A map $T : X \to Y$ is **linear** if $T(a_1 x_1 + a_2 x_2) = a_1 T x_1 + a_2 T x_2$ for all $x_1, x_2 \in X$ and $a_1, a_2 \in \mathbb{F}$. It is **continuous** if for every sequence $\{x_j\}_{j \in \mathbb{N}}$ in $X$,
@@ -142,7 +142,7 @@ The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to
 
 ## Examples
 
-Wu opened Lecture 10 with examples: “in reality we actually need to work on linear maps because nonlinear ones are very difficult.” Whether a map is bounded depends on the norms, not only on the formula.
+Linear maps are the main object of study because nonlinear ones are much harder to work with. Whether a map is bounded depends on the norms, not only on the formula.
 
 > [!example] Example §30.1: Differentiation is Bounded from $C^m$ to $C^{m-1}$
 > Let $\Omega \subset \mathbb{R}^n$ be bounded and open, and let $C^m(\overline{\Omega})$ be the functions on $\Omega$ whose partial derivatives $\partial^\alpha f$ of all orders $|\alpha| \le m$ exist, are continuous, and extend continuously to the compact set $\overline{\Omega}$, with the norm
@@ -173,7 +173,7 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 *Uses:* [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]
 
 > [!remark] Remark
-> Wu noted that $C^m(\overline{\Omega})$ is complete in this norm and left that to the class; it is not needed for the example. For $m = 1$ and $\Omega = (a,b)$ it is Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^pf-13-4|§13.4]].
+> $C^m(\overline{\Omega})$ is complete in this norm (left to us in lecture); this is not needed for the example. For $m = 1$ and $\Omega = (a,b)$ it is Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^pf-13-4|§13.4]].
 
 ^rem-30-2
 
@@ -188,7 +188,7 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 ^pf-30-3
 
 > [!remark] Remark
-> The two examples have the same formula and opposite answers. In the first, the norm of the target counts one derivative fewer than the norm of the domain, so the derivative taken by $T$ is already paid for; in the second, both norms see only the values of $f$, and “you cannot control derivatives by functions.”
+> The two examples have the same formula and opposite answers. In the first, the norm of the target counts one derivative fewer than the norm of the domain, so the derivative taken by $T$ is already paid for; in the second, both norms see only the values of $f$, and derivatives cannot be controlled by the values of a function.
 
 ^rem-30-3
 
@@ -334,11 +334,11 @@ Wu opened Lecture 10 with examples: “in reality we actually need to work on li
 > - Used in ODEs: since $\|\mathbf{A}^k\| \le \|\mathbf{A}\|^k$, the series $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ converges absolutely in the Banach space of $n \times n$ matrices; the matrix exponential is [[§39★ Fundamental Matrices#^thm-39-3|331 Thm. §39.3]].
 
 > [!remark] Remark: Why $\varepsilon$ Does Not Depend on $x$
-> A student asked whether $\varepsilon$ in Step 3 varies with $x$. It does not: $N$ is chosen from $\|T_n - T_k\| < \varepsilon$ alone, and $\|T_n - T_k\|$ is the supremum of $\|T_n x - T_k x\|_Y/\|x\|_X$ over all $x$, so the single inequality $\|T_n x - T_k x\|_Y \le \varepsilon\|x\|_X$ holds for every $x$ at once. That is what makes $\|T_k - T\| \le \varepsilon$ legitimate at the end. If $N$ depended on $x$, the conclusion would only be pointwise convergence. Wu compared the argument to the proof that a uniformly Cauchy sequence of functions converges uniformly ([[§24 Uniform Convergence#^def-24-2|MATH 451]]): first a pointwise limit, then the uniform bound passes to the limit. The same pattern was used in Part 3 of the proof of Theorem [[§12 Completeness#^pf-12-1|§12.1]].
+> The $\varepsilon$ in Step 3 does not vary with $x$: $N$ is chosen from $\|T_n - T_k\| < \varepsilon$ alone, and $\|T_n - T_k\|$ is the supremum of $\|T_n x - T_k x\|_Y/\|x\|_X$ over all $x$, so the single inequality $\|T_n x - T_k x\|_Y \le \varepsilon\|x\|_X$ holds for every $x$ at once. That is what makes $\|T_k - T\| \le \varepsilon$ legitimate at the end. If $N$ depended on $x$, the conclusion would only be pointwise convergence. The argument parallels the proof that a uniformly Cauchy sequence of functions converges uniformly ([[§24 Uniform Convergence#^def-24-2|MATH 451]]): first a pointwise limit, then the uniform bound passes to the limit. The same pattern was used in Part 3 of the proof of Theorem [[§12 Completeness#^pf-12-1|§12.1]].
 
 ^rem-30-4
 
 > [!remark] Remark: Comparison with Lax
-> Lax states Theorem 1 of §15.1 for Banach spaces $X, U$, but the proof uses no completeness, as Wu remarked. In the ($\Rightarrow$) direction Lax normalizes differently: he rescales $x_n$ to have $|x_n| = 1/\sqrt{n}$, so that $x_n \to 0$ while $|Mx_n| > \sqrt{n} \to \infty$; Wu divides by $n\|x_n\|_X$, so that $\|y_n\|_X = 1/n \to 0$ while $\|Ty_n\|_Y > 1$ merely stays away from $0$. Either contradicts continuity at $0$. Lax proves homogeneity and positivity of the operator norm as “obvious” and leaves subadditivity as his Exercise 1; here it is Wu's board argument.
+> Lax states Theorem 1 of §15.1 for Banach spaces $X, U$, but the proof uses no completeness. In the ($\Rightarrow$) direction Lax normalizes differently: he rescales $x_n$ to have $|x_n| = 1/\sqrt{n}$, so that $x_n \to 0$ while $|Mx_n| > \sqrt{n} \to \infty$; the proof here divides by $n\|x_n\|_X$, so that $\|y_n\|_X = 1/n \to 0$ while $\|Ty_n\|_Y > 1$ merely stays away from $0$. Either contradicts continuity at $0$. Lax proves homogeneity and positivity of the operator norm as “obvious” and leaves subadditivity as his Exercise 1; here it is the argument given in lecture.
 
 ^rem-30-5

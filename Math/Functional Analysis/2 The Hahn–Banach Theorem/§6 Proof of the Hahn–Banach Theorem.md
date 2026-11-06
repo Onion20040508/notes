@@ -177,7 +177,7 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 > - The same one-step pattern for complements: [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t3|Technique 3]].
 
 > [!remark] Remark: On the Choice of $L(x_0)$
-> A question in lecture: does taking a supremum preserve linearity? The supremum is not used to define a function; it produces a single real number $c$, which is then assigned as the value $L(x_0)$. Linearity is imposed afterwards by the formula $L(a x_0 + y) = a c + \ell(y)$. Any number in the interval (3) would do; the supremum is merely a convenient way of exhibiting one.
+> Taking a supremum does not interfere with linearity. The supremum is not used to define a function; it produces a single real number $c$, which is then assigned as the value $L(x_0)$. Linearity is imposed afterwards by the formula $L(a x_0 + y) = a c + \ell(y)$. Any number in the interval (3) would do; the supremum is merely a convenient way of exhibiting one.
 >
 > Also note the discipline in Step 3: the conditions (1), (2) were converted to conditions on $c$ by *equivalences*, not by one-sided estimates. Applying subadditivity too early would have thrown away information and made the interval for $c$ harder to see.
 
@@ -195,10 +195,10 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 > [!remark]- Connections
 > - Also used for complements, [[§2 Quotient Spaces and Complements#^prop-2-3|§2.3]], and for orthonormal bases, [[§28 Existence of Orthonormal Bases and Separability#^thm-28-1|§28.1]]; the pattern: [[Functional Analysis Problem-Solving Techniques#^rem-t3|Technique 3]].
 
-Zorn's lemma is equivalent to the axiom of choice and is taken as an axiom; no proof is given. Wu stated in lecture that the partial-order argument would not be carried out on the board; it is written out here.
+Zorn's lemma is equivalent to the axiom of choice and is taken as an axiom; no proof is given. The partial-order argument was not carried out in lecture; it is written out here.
 
 > [!proof]+ Proof of Theorem [[§5 Statement and Motivation#^thm-5-2|§5.2]]
-> (Wu: “By Zorn's lemma, we're done.” The argument is written out here.) If $Y = X$ there is nothing to do, so assume $Y \subsetneq X$. Let $P$ be the set of pairs $(Z, \ell_Z)$ with $Y \subset Z \subset X$ a linear subspace and $\ell_Z : Z \to \mathbb{R}$ a linear functional extending $\ell$ with $\ell_Z \le p$ on $Z$, ordered by extension: $(Z, \ell_Z) \le (Z', \ell_{Z'})$ iff $Z \subset Z'$ and $\ell_{Z'}|_Z = \ell_Z$. Then $(Y, \ell) \in P$, so $P \neq \varnothing$.
+> If $Y = X$ there is nothing to do, so assume $Y \subsetneq X$. Let $P$ be the set of pairs $(Z, \ell_Z)$ with $Y \subset Z \subset X$ a linear subspace and $\ell_Z : Z \to \mathbb{R}$ a linear functional extending $\ell$ with $\ell_Z \le p$ on $Z$, ordered by extension: $(Z, \ell_Z) \le (Z', \ell_{Z'})$ iff $Z \subset Z'$ and $\ell_{Z'}|_Z = \ell_Z$. Then $(Y, \ell) \in P$, so $P \neq \varnothing$.
 >
 > *Chains have upper bounds.* Given a chain $\{(Z_i, \ell_i)\}_{i \in I}$, let $Z^{\ast} = \bigcup_i Z_i$ and define $\ell^{\ast}(z) = \ell_i(z)$ for any $i$ with $z \in Z_i$. Since the chain is nested, any two elements of $Z^{\ast}$ lie in a common $Z_i$, so $Z^{\ast}$ is a subspace and $\ell^{\ast}$ is well defined and linear; $\ell^{\ast} \le p$ on $Z^{\ast}$ because it holds on each $Z_i$. Thus $(Z^{\ast}, \ell^{\ast}) \in P$ is an upper bound.
 >

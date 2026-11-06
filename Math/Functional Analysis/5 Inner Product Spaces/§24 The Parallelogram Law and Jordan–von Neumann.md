@@ -33,7 +33,7 @@ tags: [functional-analysis, math556]
 > \|x \pm y\|^2 = \|x\|^2 \pm 2\operatorname{Re}(x,y) + \|y\|^2 .
 > $$
 >
-> Adding the two gives (a): in Wu's words, “$t$ positive cancels with $t$ negative.” Subtracting gives $\|x+y\|^2 - \|x-y\|^2 = 4\operatorname{Re}(x,y)$, which is (b) when $\mathbb{F} = \mathbb{R}$. When $\mathbb{F} = \mathbb{C}$, apply the same identity to $x$ and $iy$: since $(x, iy) = \bar{i}\,(x,y) = -i(x,y)$,
+> Adding the two gives (a): the cross terms $\pm 2\operatorname{Re}(x,y)$ from $t = 1$ and $t = -1$ cancel. Subtracting gives $\|x+y\|^2 - \|x-y\|^2 = 4\operatorname{Re}(x,y)$, which is (b) when $\mathbb{F} = \mathbb{R}$. When $\mathbb{F} = \mathbb{C}$, apply the same identity to $x$ and $iy$: since $(x, iy) = \bar{i}\,(x,y) = -i(x,y)$,
 >
 > $$
 > \|x+iy\|^2 - \|x-iy\|^2 = 4\operatorname{Re}\bigl( -i(x,y) \bigr) = 4\operatorname{Im}(x,y),

@@ -153,14 +153,14 @@ tags: [group-theory, math493]
 
 ^rem-21-1
 
-> [!remark] Remark: Speyer's Presentation: $\operatorname{sgn} = \det \circ M$
+> [!remark] Remark: The Sign as $\det \circ M$
 > In class the sign is written $\operatorname{sgn}$ and introduced as the composite
 >
 > $$
 > S_n \xrightarrow{\ \sigma \mapsto M(\sigma)\ } GL_n(\mathbb{R}) \xrightarrow{\ \det\ } \mathbb{R}^\times,
 > $$
 >
-> a composition of two homomorphisms ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]] for the first, [[§37 Determinants#^ladr-9-49|multiplicativity]] of $\det$ for the second), hence a homomorphism, with the one thing “needing proof” being $M(\sigma\tau) = M(\sigma)M(\tau)$. Its image is $\{\pm 1\} \cong \mathbb{Z}/2\mathbb{Z}$ (it takes both values, e.g. on $e$ and $(1\,2)$), and its kernel is the [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|alternating group]] $A_n$. The problem sets write $\varepsilon$ for this map; these notes follow the lecture and write $\operatorname{sgn}$ throughout.
+> a composition of two homomorphisms ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]] for the first, [[§37 Determinants#^ladr-9-49|multiplicativity]] of $\det$ for the second), hence a homomorphism; the only step that needs proof is $M(\sigma\tau) = M(\sigma)M(\tau)$. Its image is $\{\pm 1\} \cong \mathbb{Z}/2\mathbb{Z}$ (it takes both values, e.g. on $e$ and $(1\,2)$), and its kernel is the [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|alternating group]] $A_n$. The problem sets write $\varepsilon$ for this map; these notes follow the lecture and write $\operatorname{sgn}$ throughout.
 
 ^rem-21-2
 

@@ -12,7 +12,7 @@ tags: [group-theory, math493]
 > [!definition] Definition §46.1: Character
 > Let $G$ be a group and $A$ an *abelian* group. A homomorphism $\chi: G \to A$ is called a **character** of $G$. The most common case is $A = k^\times$ for a field $k$.
 >
-> *Source: lecture, “for now”; PS 2*
+> *Source: lecture; PS 2*
 
 ^def-46-1
 

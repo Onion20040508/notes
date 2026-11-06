@@ -18,7 +18,7 @@ tags: [functional-analysis, math556]
 > \|x\| := (x,x)^{1/2},
 > $$
 >
-> which is well defined since $(x,x) \ge 0$. Calling it a norm is an abuse of language until Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-2|§23.2]] below; Wu flagged this explicitly while writing the proof.
+> which is well defined since $(x,x) \ge 0$. Calling it a norm is an abuse of language until Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-2|§23.2]] below.
 
 ^rem-23-1
 
@@ -154,7 +154,7 @@ tags: [functional-analysis, math556]
 > - Complete normed spaces: [[§12 Completeness#^def-12-2|Def. §12.2]] (Banach space); in 551, [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-5|551 Def. §34.5]], where $L^2$ is noted to be a Hilbert space ([[§34 Normed Linear Spaces and Lᵖ Spaces#^rem-34-1|551 Remark §19.1]]).
 
 > [!example] Example §23.1: Hilbert Spaces
-> $\mathbb{R}^n$ and $\mathbb{C}^n$ with the dot product are Hilbert spaces, being finite-dimensional (Corollary [[§14 New Normed Spaces from Old#^cor-14-4|§14.4]]); so are $\ell^2$ and $L^2(\Omega)$ with the inner products of [[§22 Definition and Examples|§22]], complete by Theorems [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]] and [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]]. Wu: “I proved all $L^p$ is complete; I should at some point put my proof online.”
+> $\mathbb{R}^n$ and $\mathbb{C}^n$ with the dot product are Hilbert spaces, being finite-dimensional (Corollary [[§14 New Normed Spaces from Old#^cor-14-4|§14.4]]); so are $\ell^2$ and $L^2(\Omega)$ with the inner products of [[§22 Definition and Examples|§22]], complete by Theorems [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]] and [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]].
 
 ^ex-23-1
 
@@ -192,7 +192,7 @@ tags: [functional-analysis, math556]
 >
 > Each summand is the $L^2$ inner product of two functions in $C_c^\infty$, so this is an inner product on $X$ (a finite sum of inner products with the same sesquilinearity and symmetry; positivity from the $\alpha = 0$ term). The induced norm is $\|f\|^2 = \sum_{|\alpha| \le k} \|\partial^\alpha f\|_{L^2}^2$, which controls $f$ and all its derivatives up to order $k$ in $L^2$. For $k = 0$ this is the previous example. $X$ is not complete; its completion is a **Sobolev space**, denoted $H^k_0(\Omega)$, the subscript recording that it comes from functions with compact support in $\Omega$. Lax (§5.1, example (g)) instead completes the $C^\infty$ functions on $\Omega$ for which the norm is finite, with no support condition, and calls the result $W^{k,p}$; for $p = 2$ it is written $H^k(\Omega)$. Informally, elements of either completion are functions whose derivatives up to order $k$ lie in $L^2$; making this precise requires weak derivatives, which are developed in [[§33 Sobolev Spaces and Weak Derivatives|§33]] (Lecture 11).
 >
-> Wu's motivation: if $f$ is a velocity, $\int |f|^2$ is an energy, and a physical process with finite, conserved energy naturally lives in a space of this type; the completion is what makes limits of approximate solutions available. This is the setting of the modern theory of partial differential equations, but the course stays with functional analysis.
+> Motivation: if $f$ is a velocity, $\int |f|^2$ is an energy, and a physical process with finite, conserved energy naturally lives in a space of this type; the completion is what makes limits of approximate solutions available. This is the setting of the modern theory of partial differential equations, but the course stays with functional analysis.
 >
 > *Lax: §5.1, example (g)*
 

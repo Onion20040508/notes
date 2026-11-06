@@ -86,7 +86,7 @@ tags: [group-theory, math493]
 > X_i = \langle e_1, \ldots, e_i \rangle, \qquad Y_j = \langle e_{\sigma(1)}, \ldots, e_{\sigma(j)} \rangle .
 > $$
 >
-> Then $Y_j$ is spanned by the $e_k$ with $\sigma^{-1}(k) \leq j$, so $Z_{ij} = X_i \cap Y_j$ is spanned by the $e_k$ with $k \leq i$ and $\sigma^{-1}(k) \leq j$. Hence $H_{ij} = Z_{ij}/Z_{(i-1)j}$ is nontrivial exactly when $e_i \in Z_{ij}$, that is, when $j \geq \sigma^{-1}(i)$. The changeover of column $i$ is at row $\tau(i) = \sigma^{-1}(i)$: the pipes recover the permutation that defined the second flag (the lecture's “very nice exercise”; with these conventions it comes out as $\sigma^{-1}$). So in this group every matching of the factors occurs.
+> Then $Y_j$ is spanned by the $e_k$ with $\sigma^{-1}(k) \leq j$, so $Z_{ij} = X_i \cap Y_j$ is spanned by the $e_k$ with $k \leq i$ and $\sigma^{-1}(k) \leq j$. Hence $H_{ij} = Z_{ij}/Z_{(i-1)j}$ is nontrivial exactly when $e_i \in Z_{ij}$, that is, when $j \geq \sigma^{-1}(i)$. The changeover of column $i$ is at row $\tau(i) = \sigma^{-1}(i)$: the pipes recover the permutation that defined the second flag (an exercise from lecture; with these conventions it comes out as $\sigma^{-1}$). So in this group every matching of the factors occurs.
 >
 > *Source: lecture 10/30; the computation not from class*
 

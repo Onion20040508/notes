@@ -16,7 +16,7 @@ tags: [functional-analysis, math556]
 > X' = \mathcal{L}(X, \mathbb{F}),
 > $$
 >
-> with the norm $\|\ell\| = \sup_{x \neq 0} |\ell(x)|/\|x\|$, is the **dual space** of $X$. (Wu follows Lax's notation $X'$.)
+> with the norm $\|\ell\| = \sup_{x \neq 0} |\ell(x)|/\|x\|$, is the **dual space** of $X$. (The notation $X'$ is Lax's.)
 >
 > *Lax: §8.1, dual space*
 
@@ -93,7 +93,7 @@ tags: [functional-analysis, math556]
 > - The same map in the companion chapter, in bra–ket notation: [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]].
 
 > [!remark] Remark
-> Wu called $R$ an isometry and concluded that the dual of a Hilbert space can be identified with the space itself, $H' = H$, “through this Riesz representation.” Over $\mathbb{C}$ the identification is conjugate-linear, which is harmless for norms and distances: $\|R(a) - R(b)\| = \|R(a - b)\| = \|a - b\|$. The companion chapter writes the same map in bra–ket notation (Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]]).
+> $R$ is an isometry, so the dual of a Hilbert space can be identified with the space itself, $H' = H$, through the Riesz representation. Over $\mathbb{C}$ the identification is conjugate-linear, which is harmless for norms and distances: $\|R(a) - R(b)\| = \|R(a - b)\| = \|a - b\|$. The companion chapter writes the same map in bra–ket notation (Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]]).
 
 ^rem-31-2
 
@@ -104,14 +104,14 @@ tags: [functional-analysis, math556]
 > \ell(f) = \int_\Omega f(x)\, \overline{g(x)}\, dx \qquad \text{for a unique } g \in L^2(\Omega),
 > $$
 >
-> with $\|\ell\| = \|g\|_{L^2}$. Likewise every $\ell \in (\ell^2)'$ is $\ell(a) = \sum_{j=1}^\infty a_j \overline{b_j}$ for a unique $b = (b_1, b_2, \ldots) \in \ell^2$, with $\|\ell\| = \|b\|_2$. A student asked which function carries the bar: the second one, since $\ell$ is linear in the function it acts on.
+> with $\|\ell\| = \|g\|_{L^2}$. Likewise every $\ell \in (\ell^2)'$ is $\ell(a) = \sum_{j=1}^\infty a_j \overline{b_j}$ for a unique $b = (b_1, b_2, \ldots) \in \ell^2$, with $\|\ell\| = \|b\|_2$. The bar is on the second function, since $\ell$ is linear in the function it acts on.
 >
 > *Lax: §6.3, Thm 4 with §6.1, Examples 2–3*
 
 ^ex-31-1
 
 > [!remark] Remark: Not Every Space is its Own Dual
-> A student asked whether the dual of every space is itself. No: the identification $X' = X$ is a Hilbert-space phenomenon, and “almost always” $X' \neq X$. The standard example, stated in lecture and proved for sequences in Lecture 13 (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]), is below; the reason the exponent $p'$ appears is [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|Hölder's inequality]], which makes $\int f g$ meaningful for $f \in L^p$, $g \in L^{p'}$.
+> The dual of a space is in general not the space itself: the identification $X' = X$ is a Hilbert-space phenomenon, and almost always $X' \neq X$. The standard example, stated in lecture and proved for sequences in Lecture 13 (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]), is below; the reason the exponent $p'$ appears is [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|Hölder's inequality]], which makes $\int f g$ meaningful for $f \in L^p$, $g \in L^{p'}$.
 
 ^rem-31-3
 
@@ -126,7 +126,7 @@ tags: [functional-analysis, math556]
 ^thm-31-4
 
 > [!proof]+ Proof (outline; not proved in lecture)
-> Not proved in lecture. In Lecture 13 Wu proved the sequence version, Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], and said that the $L^p$ case is similar: those who know measure theory find the candidate $g$ with the Radon–Nikodym theorem and then argue as for sequences. This needs measure theory beyond the course (it will not be tested).
+> Not proved in lecture. Lecture 13 proves the sequence version, Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]; the $L^p$ case is similar: those who know measure theory find the candidate $g$ with the Radon–Nikodym theorem and then argue as for sequences. This needs measure theory beyond the course (it will not be tested).
 >
 > *Outline, along that route.* Measure-theoretic facts are used freely. Suppose first that $\Omega$ has finite measure $m(\Omega)$, and let $\ell \in (L^p)'$.
 >
@@ -143,7 +143,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]]
 
 > [!remark] Remark
-> On the board: $(L^p)' = L^{p'}$ with no range for $p$. The range $1 \le p < \infty$ is added here: for $p = \infty$ the statement fails (the dual of $L^\infty$ is larger than $L^1$), as Wu noted in Lecture 13 (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
+> On the board: $(L^p)' = L^{p'}$ with no range for $p$. The range $1 \le p < \infty$ is added here: for $p = \infty$ the statement fails (the dual of $L^\infty$ is larger than $L^1$), as noted in Lecture 13 (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
 
 ^rem-31-4
 

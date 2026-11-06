@@ -104,7 +104,7 @@ tags: [functional-analysis, math556]
 ^prop-11-2
 
 > [!proof]+ Proof
-> (Stated without proof in lecture; the check is routine.) (i) $d(x,y) = \|x - y\| \ge 0$, and it is $0$ iff $x - y = 0$ iff $x = y$, by positivity. (ii) $d(y, x) = \|y - x\| = \|(-1)(x - y)\| = |{-1}|\, \|x - y\| = d(x, y)$, by homogeneity with $a = -1$; a student asked whether symmetry is automatic, and this is why it is. (iii) $d(x, y) = \|(x - z) + (z - y)\| \le \|x - z\| + \|z - y\| = d(x, z) + d(z, y)$, by subadditivity.
+> (Stated without proof in lecture; the check is routine.) (i) $d(x,y) = \|x - y\| \ge 0$, and it is $0$ iff $x - y = 0$ iff $x = y$, by positivity. (ii) $d(y, x) = \|y - x\| = \|(-1)(x - y)\| = |{-1}|\, \|x - y\| = d(x, y)$, by homogeneity with $a = -1$; this is why symmetry is automatic. (iii) $d(x, y) = \|(x - z) + (z - y)\| \le \|x - z\| + \|z - y\| = d(x, z) + d(z, y)$, by subadditivity.
 
 ^pf-11-2
 

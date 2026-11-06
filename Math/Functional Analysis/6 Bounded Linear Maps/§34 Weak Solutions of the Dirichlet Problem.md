@@ -9,7 +9,7 @@ tags: [functional-analysis, math556]
 
 *Stage: maps — Thread: functionals. A boundary value problem for a PDE becomes the representation of a bounded functional by a coercive form.*
 
-Wu: “we are going to do some application in analysis.” Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^n$, and functions are real-valued (“in the real world temperature is real”). $C^2(\overline{\Omega})$ denotes the functions whose derivatives up to order $2$ exist on $\Omega$ and extend continuously to $\overline{\Omega}$, as in Example [[§30 Boundedness and Continuity#^ex-30-1|§30.1]].
+Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^n$, and functions are real-valued (the unknown is a temperature, which is real). $C^2(\overline{\Omega})$ denotes the functions whose derivatives up to order $2$ exist on $\Omega$ and extend continuously to $\overline{\Omega}$, as in Example [[§30 Boundedness and Continuity#^ex-30-1|§30.1]].
 
 > [!definition] Definition §34.1: The Dirichlet Problem
 > Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $f$ a function on $\Omega$. The **Dirichlet problem** for the Poisson equation is
@@ -27,7 +27,7 @@ Wu: “we are going to do some application in analysis.” Throughout, a *bounde
 > - The same problem in electrostatics (Poisson's equation with prescribed boundary potential), uniqueness of classical solutions: [[§B3.1 Laplace's Equation and the Uniqueness Theorems#^thm-b3-1-3|EM Theorem §B3.1.3]].
 
 > [!remark] Remark: Where the Equation Comes From
-> The heat equation $(\partial_t - \mu\Delta) u = f(x)$, $\mu > 0$, describes the temperature $u(x,t)$ in a piece of material occupying $\Omega$, with a time-independent heat source $f$; the term $\mu\Delta u$ is diffusion. Hold the boundary at temperature $0$, keep heating, and wait: the temperature settles to an equilibrium, which no longer depends on $t$, so $\partial_t u = 0$ and $-\mu\Delta u = f$. (Absorbing $\mu$ into $f$ gives $(D)$.) So $(D)$ describes the equilibrium state of a heated piece of material, $u$ the temperature and $f$ the heat source. If the model is right, there should be exactly one equilibrium. Hence Wu's question: *does $(D)$ have a unique solution for every $f$?*
+> The heat equation $(\partial_t - \mu\Delta) u = f(x)$, $\mu > 0$, describes the temperature $u(x,t)$ in a piece of material occupying $\Omega$, with a time-independent heat source $f$; the term $\mu\Delta u$ is diffusion. Hold the boundary at temperature $0$, keep heating, and wait: the temperature settles to an equilibrium, which no longer depends on $t$, so $\partial_t u = 0$ and $-\mu\Delta u = f$. (Absorbing $\mu$ into $f$ gives $(D)$.) So $(D)$ describes the equilibrium state of a heated piece of material, $u$ the temperature and $f$ the heat source. If the model is right, there should be exactly one equilibrium. Hence the question: *does $(D)$ have a unique solution for every $f$?*
 
 ^rem-34-1
 
@@ -41,7 +41,7 @@ Wu: “we are going to do some application in analysis.” Throughout, a *bounde
 *The equilibrium temperature computed: the solution of $(D)$ on a plate-shaped $\Omega$ for a heat source $f$ concentrated in the white circle (a Gaussian bump), found numerically by finite differences, with isotherms at $5\%, 10\%, 20\%, \ldots, 90\%$ of the maximum. Below, the temperature along the dashed line: hottest at the source, falling to $0$ at $\partial\Omega$. (Not from lecture; computed for these notes.)*
 
 > [!remark] Remark: Why Not Solve Directly
-> Finding an exact solution is generally out of reach: formulas are available essentially only for ODE, and a PDE on a rectangle can be reduced to ODE by separation of variables, but a general domain cannot. A student suggested approximating $\Omega$ by small rectangles; Wu: on each small rectangle one would need its boundary values, which are exactly what is unknown — different boundary temperatures give different solutions. The strategy is instead to *enlarge the class of solutions*: find a solution in a weaker sense, then (regularity theory, not covered) show that it is classical when $f$ is smooth. “When you don't have anywhere to go, you try to expand your search.”
+> Finding an exact solution is generally out of reach: formulas are available essentially only for ODE, and a PDE on a rectangle can be reduced to ODE by separation of variables, but a general domain cannot. Approximating $\Omega$ by small rectangles does not help: on each small rectangle one would need its boundary values, which are exactly what is unknown — different boundary temperatures give different solutions. The strategy is instead to *enlarge the class of solutions*: find a solution in a weaker sense, then (regularity theory, not covered) show that it is classical when $f$ is smooth.
 
 ^rem-34-2
 
@@ -79,7 +79,7 @@ Wu: “we are going to do some application in analysis.” Throughout, a *bounde
 > - The identity in the proof with the boundary term kept is [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-2|Green's first identity, 452 §28.2]].
 
 > [!remark] Remark
-> Two points Wu made. Only $v$ has to vanish on the boundary; $\nabla u$ need not, and indeed for $u$ in the [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|larger class below]], $\nabla u$ is only in $L^2$ and has no boundary values at all. And $u$ need not be $C_c^2$: $C^2$ up to the boundary is enough to integrate by parts.
+> Two points. Only $v$ has to vanish on the boundary; $\nabla u$ need not, and indeed for $u$ in the [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|larger class below]], $\nabla u$ is only in $L^2$ and has no boundary values at all. And $u$ need not be $C_c^2$: $C^2$ up to the boundary is enough to integrate by parts.
 
 ^rem-34-3
 
@@ -95,7 +95,7 @@ Wu: “we are going to do some application in analysis.” Throughout, a *bounde
 ^def-34-2
 
 > [!remark] Remark: Why This is the Right Definition
-> The boundary condition $u = 0$ is [[§33 Sobolev Spaces and Weak Derivatives#^rem-33-8|built into the space]] $H^1_0(\Omega)$, and the equation is the identity of Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-1|§34.1]], which makes sense as soon as $u, v \in H^1_0$ and $f \in L^2$, because only first derivatives in $L^2$ appear. A strong (classical) solution is a weak solution; a weak solution need not be strong, and showing that it is (for smooth $f$) is the regularity theory of PDE (Wu: “you need to show if my source is smooth, then the solution is smooth”). The only difference between the two notions is the class of functions in which a solution is sought.
+> The boundary condition $u = 0$ is [[§33 Sobolev Spaces and Weak Derivatives#^rem-33-8|built into the space]] $H^1_0(\Omega)$, and the equation is the identity of Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-1|§34.1]], which makes sense as soon as $u, v \in H^1_0$ and $f \in L^2$, because only first derivatives in $L^2$ appear. A strong (classical) solution is a weak solution; a weak solution need not be strong, and showing that it is (for smooth $f$) is the regularity theory of PDE. The only difference between the two notions is the class of functions in which a solution is sought.
 >
 > To pass from $v \in C_c^2$ to $v \in H^1_0$: if $u \in H^1_0(\Omega)$ satisfies the identity for all $v \in C_c^\infty(\Omega)$, it satisfies it for all $v \in H^1_0(\Omega)$, because $C_c^\infty$ is dense in $H^1_0$ ([[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|Def. §33.9]], [[§12 Completeness#^prop-12-3|§12.3]]) and both sides are continuous in $v$ for the $H^1_0$ norm (by [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]], $|\int \nabla u \cdot \nabla v| \le \|\nabla u\|_{L^2}\|\nabla v\|_{L^2}$ and $|\int f v| \le \|f\|_{L^2}\|v\|_{L^2}$). That a classical solution of $(D)$ lies in $H^1_0(\Omega)$ is true for domains with a reasonable boundary, but is not proved here.
 
@@ -135,7 +135,7 @@ Wu: “we are going to do some application in analysis.” Throughout, a *bounde
 > \|u\|_{H^1_0}^2 \le C_0 \int_\Omega |\nabla u|^2\, dx + \int_\Omega |\nabla u|^2\, dx = (C_0 + 1)\, B(u, u),
 > $$
 >
-> and $\alpha = \frac{1}{1 + C_0}$ works. Wu: coercivity “is really important here” — $B$ contains only the gradient, and it is Poincaré that controls the missing $L^2$ part.
+> and $\alpha = \frac{1}{1 + C_0}$ works. Coercivity is the essential step here: $B$ contains only the gradient, and it is Poincaré that controls the missing $L^2$ part.
 >
 > **Step 4: the functional is bounded.** Let $\ell(v) = \int_\Omega f(x)\, v(x)\, dx$ for $v \in H^1_0(\Omega)$. It is linear, and by Cauchy–Schwarz in $L^2$,
 >
@@ -156,18 +156,18 @@ Wu: “we are going to do some application in analysis.” Throughout, a *bounde
 > - Uniqueness of classical solutions without Hilbert spaces: [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-28-1|452 Ex. §28.1]].
 
 > [!remark] Remark
-> Here $B$ is symmetric, so Lax–Milgram reduces to the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]] for the inner product $B$ (Proposition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-32-4|§32.4]]); Steps 2 and 3 say exactly that $B$ is an [[§22 Definition and Examples#^def-22-1|inner product]] on $H^1_0(\Omega)$ whose norm is [[§14 New Normed Spaces from Old#^def-14-1|equivalent]] to $\|\cdot\|_{H^1_0}$. Wu's point: for the Laplacian the form is symmetric, but for general elliptic equations ([[§34 Weak Solutions of the Dirichlet Problem#^thm-34-4|below]]) it is not, and then Lax–Milgram is needed. The proof gives existence and uniqueness, not a construction; a student asked how to find $u$: there are numerical methods, which are the subject of another course.
+> Here $B$ is symmetric, so Lax–Milgram reduces to the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]] for the inner product $B$ (Proposition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-32-4|§32.4]]); Steps 2 and 3 say exactly that $B$ is an [[§22 Definition and Examples#^def-22-1|inner product]] on $H^1_0(\Omega)$ whose norm is [[§14 New Normed Spaces from Old#^def-14-1|equivalent]] to $\|\cdot\|_{H^1_0}$. For the Laplacian the form is symmetric, but for general elliptic equations ([[§34 Weak Solutions of the Dirichlet Problem#^thm-34-4|below]]) it is not, and then Lax–Milgram is needed. The proof gives existence and uniqueness, not a construction; to find $u$ in practice there are numerical methods, which are the subject of another course.
 
 ^rem-34-5
 
 > [!remark] Remark: Nonzero Boundary Values
-> Wu sketched how a solution can be sought in practice. To solve $\Delta u = f$ in $\Omega$ with given boundary values, first find any $u_0$ with $\Delta u_0 = f$, ignoring the boundary. Then $w = u - u_0$ solves the Laplace equation $\Delta w = 0$ in $\Omega$ with boundary values $w = u - u_0$ on $\partial\Omega$ (for $u = 0$ on $\partial\Omega$, $w = -u_0$ there): an equilibrium with no heat source, held at prescribed boundary temperatures. In one dimension $w'' = 0$ means $w$ is linear, fixed by its two boundary values; in higher dimensions one can approximate $w$ from below by “subsolutions” (Perron's method). Not covered.
+> How a solution can be sought in practice: to solve $\Delta u = f$ in $\Omega$ with given boundary values, first find any $u_0$ with $\Delta u_0 = f$, ignoring the boundary. Then $w = u - u_0$ solves the Laplace equation $\Delta w = 0$ in $\Omega$ with boundary values $w = u - u_0$ on $\partial\Omega$ (for $u = 0$ on $\partial\Omega$, $w = -u_0$ there): an equilibrium with no heat source, held at prescribed boundary temperatures. In one dimension $w'' = 0$ means $w$ is linear, fixed by its two boundary values; in higher dimensions one can approximate $w$ from below by “subsolutions” (Perron's method). Not covered.
 
 ^rem-34-6
 
 ## General Elliptic Equations
 
-Wu: the same method “goes through” for a whole class of equations, the *elliptic* ones, in which the Laplacian $\Delta u = \operatorname{div}(\nabla u)$ is replaced by $\operatorname{div}(A(x)\nabla u)$ for a matrix of coefficients $A(x)$ — “if it's a Laplacian equation, $A$ is just identity. But in general, we want $A$ positive definite”, with “a lower bound, positive”. The set-up runs parallel to the [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|Dirichlet problem]] above.
+The same method works for a whole class of equations, the *elliptic* ones, in which the Laplacian $\Delta u = \operatorname{div}(\nabla u)$ is replaced by $\operatorname{div}(A(x)\nabla u)$ for a matrix of coefficients $A(x)$. For the Laplacian $A$ is the identity; in general $A$ is required to be positive definite, with a positive lower bound. The set-up runs parallel to the [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|Dirichlet problem]] above.
 
 > [!definition] Definition §34.3: Uniformly Elliptic Coefficient Matrix
 > Let $\Omega \subset \mathbb{R}^n$ be a bounded domain. An $n \times n$ real matrix $A(x) = (a_{ij}(x))$ of bounded measurable functions on $\Omega$ is **uniformly elliptic** (**uniformly positive definite**) if there are constants $\alpha, \Lambda > 0$ with
@@ -233,7 +233,7 @@ Wu: the same method “goes through” for a whole class of equations, the *elli
 ^thm-34-4
 
 > [!proof]+ Proof
-> (Stated in lecture; Wu: “it goes through the same process.”) The weak formulation is Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-3|§34.3]]. Let $B(v, u) = \int_\Omega (A(x)\nabla u) \cdot \nabla v\, dx$; it is bilinear. *Bounded:* $|(A\nabla u)\cdot\nabla v| \le \Lambda |\nabla u|\, |\nabla v|$, so $|B(v,u)| \le \Lambda \|u\|_{H^1_0} \|v\|_{H^1_0}$ as in Step 2 above. *Coercive:* $(A\xi)\cdot\xi = \xi^{\mathsf T} A\, \xi$ (a $1 \times 1$ matrix equals its transpose, and $(A\xi)\cdot\xi = \xi^{\mathsf T}A^{\mathsf T}\xi$), so $B(u,u) \ge \alpha \int_\Omega |\nabla u|^2 \ge \frac{\alpha}{1 + C_0} \|u\|_{H^1_0}^2$ by Step 3 above. The functional $\ell$ is as in Step 4. Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]] gives a unique $u$ with $\ell(v) = B(v, u)$ for all $v$, which is the weak equation. Unless $A$ is symmetric, $B$ is not symmetric, and the Riesz theorem alone does not apply.
+> (Stated in lecture: the proof goes through as for the Laplacian.) The weak formulation is Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-3|§34.3]]. Let $B(v, u) = \int_\Omega (A(x)\nabla u) \cdot \nabla v\, dx$; it is bilinear. *Bounded:* $|(A\nabla u)\cdot\nabla v| \le \Lambda |\nabla u|\, |\nabla v|$, so $|B(v,u)| \le \Lambda \|u\|_{H^1_0} \|v\|_{H^1_0}$ as in Step 2 above. *Coercive:* $(A\xi)\cdot\xi = \xi^{\mathsf T} A\, \xi$ (a $1 \times 1$ matrix equals its transpose, and $(A\xi)\cdot\xi = \xi^{\mathsf T}A^{\mathsf T}\xi$), so $B(u,u) \ge \alpha \int_\Omega |\nabla u|^2 \ge \frac{\alpha}{1 + C_0} \|u\|_{H^1_0}^2$ by Step 3 above. The functional $\ell$ is as in Step 4. Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]] gives a unique $u$ with $\ell(v) = B(v, u)$ for all $v$, which is the weak equation. Unless $A$ is symmetric, $B$ is not symmetric, and the Riesz theorem alone does not apply.
 
 ^pf-34-4
 

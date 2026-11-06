@@ -9,10 +9,10 @@ tags: [functional-analysis, math556]
 
 *Stage: inner products — Thread: dimension. Every Hilbert space has an orthonormal basis; the countable ones are exactly the bases of separable spaces.*
 
-Both examples of [[§27 Orthonormal Sets and Bases|§27]] (Example [[§27 Orthonormal Sets and Bases#^ex-27-1|§27.1]] and Theorem [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]]) have *countable* orthonormal bases. Wu announced for next lecture that every Hilbert space has an orthonormal basis — which by itself is “almost useless, because there are too many” — and, more usefully, that the countable ones are exactly the bases of [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] spaces.
+Both examples of [[§27 Orthonormal Sets and Bases|§27]] (Example [[§27 Orthonormal Sets and Bases#^ex-27-1|§27.1]] and Theorem [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]]) have *countable* orthonormal bases. The next results show that every Hilbert space has an orthonormal basis — which by itself is of little use, because there are too many — and, more usefully, that the countable ones are exactly the bases of [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] spaces.
 
 > [!remark] Remark: The Idea: Keep Adding Orthogonal Directions
-> Wu first described the construction informally. Assume $H \neq \{0\}$ and take $e_1 \in H$ with $\|e_1\| = 1$. If $H = \operatorname{span}\{e_1\}$, then $\{e_1\}$ is an orthonormal basis. If not, take $y_2 \in H$ with $y_2 \notin \operatorname{span}\{e_1\}$ and remove its component along $e_1$:
+> Informally, the construction runs as follows. Assume $H \neq \{0\}$ and take $e_1 \in H$ with $\|e_1\| = 1$. If $H = \operatorname{span}\{e_1\}$, then $\{e_1\}$ is an orthonormal basis. If not, take $y_2 \in H$ with $y_2 \notin \operatorname{span}\{e_1\}$ and remove its component along $e_1$:
 >
 > $$
 > x_2 = y_2 - (y_2, e_1)\, e_1, \qquad (x_2, e_1) = (y_2, e_1) - (y_2, e_1)(e_1, e_1) = 0,
@@ -144,7 +144,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > [!proof]+ Proof of (⇐) in Theorem §28.3
 > Assume $D = \{y_1, y_2, \ldots\}$ is a countable dense subset of $H$. If $H = \{0\}$, the empty set is a countable orthonormal basis; assume $H \neq \{0\}$, so $D$ contains a nonzero element.
 >
-> **Step 1: a linearly independent subsequence.** Discard elements that depend linearly on earlier ones. Precisely: let $n_1$ be the first index with $y_{n_1} \neq 0$, and put $y_1' = y_{n_1}$. Having chosen $n_1 < \cdots < n_k$, let $n_{k+1}$ be the first index $n > n_k$ with $y_n \notin \operatorname{span}\{y_1', \ldots, y_k'\}$, and put $y_{k+1}' = y_{n_{k+1}}$; if there is no such index, stop. Wu: “we just take the first linearly independent one, name it $y_2'$, then continue.” The result $D' = \{y_1', y_2', \ldots\}$ (finite or infinite) is linearly independent by construction, and every element of $D$ is a linear combination of elements of $D'$: an element $y_j$ that was discarded, with $n_k < j < n_{k+1}$ (or $j > n_k$ if the process stopped at $k$), lies in $\operatorname{span}\{y_1', \ldots, y_k'\}$, and $y_j = 0$ if $j < n_1$. So
+> **Step 1: a linearly independent subsequence.** Discard elements that depend linearly on earlier ones. Precisely: let $n_1$ be the first index with $y_{n_1} \neq 0$, and put $y_1' = y_{n_1}$. Having chosen $n_1 < \cdots < n_k$, let $n_{k+1}$ be the first index $n > n_k$ with $y_n \notin \operatorname{span}\{y_1', \ldots, y_k'\}$, and put $y_{k+1}' = y_{n_{k+1}}$; if there is no such index, stop. The result $D' = \{y_1', y_2', \ldots\}$ (finite or infinite) is linearly independent by construction, and every element of $D$ is a linear combination of elements of $D'$: an element $y_j$ that was discarded, with $n_k < j < n_{k+1}$ (or $j > n_k$ if the process stopped at $k$), lies in $\operatorname{span}\{y_1', \ldots, y_k'\}$, and $y_j = 0$ if $j < n_1$. So
 >
 > $$
 > \text{for every } y_j \in D \text{ there is } k \text{ with } y_j \in \operatorname{span}\{y_1', \ldots, y_k'\}. \tag{5.5}
@@ -196,7 +196,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 ^def-28-2
 
 > [!remark] Remark: Isomorphic or Isometric?
-> A student asked whether “isomorphic” here means the map preserves distance. It does: $\|Tx - Ty\|_2^2 = (T(x-y), T(x-y))_2 = \|x - y\|_1^2$, so $T$ is an *isometry*. Preserving the inner product already forces one-to-one ($Tx = 0$ gives $\|x\|_1 = \|Tx\|_2 = 0$). What it does not force is *onto*, which is why the definition requires a bijection; the next example shows the difference. (The example is not from lecture.)
+> An isomorphism in this sense also preserves distance: $\|Tx - Ty\|_2^2 = (T(x-y), T(x-y))_2 = \|x - y\|_1^2$, so $T$ is an *isometry*. Preserving the inner product already forces one-to-one ($Tx = 0$ gives $\|x\|_1 = \|Tx\|_2 = 0$). What it does not force is *onto*, which is why the definition requires a bijection; the next example shows the difference. (The example is not from lecture.)
 
 ^rem-28-3
 
@@ -251,6 +251,6 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 ^rem-28-4
 
 > [!remark] Remark
-> On the board: “isomorphic either to $\mathbb{R}^n$, $n \in \mathbb{N}$, or $\ell^2$” — the real case. Over $\mathbb{C}$ the finite-dimensional models are $\mathbb{C}^n$, and $n = 0$ covers $H = \{0\}$. By Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|§28.3]] a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] $H$ has a countable orthonormal basis; the finite case gives $\mathbb{F}^n$ and the infinite case $\ell^2$.
+> The theorem was stated in lecture for the real case: $H$ is isomorphic either to $\mathbb{R}^n$, $n \in \mathbb{N}$, or to $\ell^2$. Over $\mathbb{C}$ the finite-dimensional models are $\mathbb{C}^n$, and $n = 0$ covers $H = \{0\}$. By Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|§28.3]] a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] $H$ has a countable orthonormal basis; the finite case gives $\mathbb{F}^n$ and the infinite case $\ell^2$.
 
 ^rem-28-5

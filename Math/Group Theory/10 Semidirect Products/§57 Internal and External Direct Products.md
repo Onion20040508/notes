@@ -14,7 +14,7 @@ tags: [group-theory, math493]
 > - the **external direct sum** $L_1 \oplus L_2 = \{(v_1, v_2) : v_1 \in L_1,\ v_2 \in L_2\}$, with $(v_1, v_2) + (v_1', v_2') = (v_1 + v_1', v_2 + v_2')$ and $c(v_1, v_2) = (cv_1, cv_2)$, built from $L_1$ and $L_2$ with no ambient space;
 > - the **internal direct sum**: $V$ is given in advance, and $L_1, L_2$ already sit inside it as above.
 >
-> Strictly, the elements of the external direct sum are ordered pairs and the elements of $V$ are not, so in the internal situation one should write $V \cong L_1 \oplus L_2$. The same distinction appears for groups, and it causes the most confusion for semidirect products. The lecture is careful about it for now, but warned that most people are not, and that the course will soon stop being so careful. (The lecturer compared it to embedded versus abstract manifolds.)
+> Strictly, the elements of the external direct sum are ordered pairs and the elements of $V$ are not, so in the internal situation one should write $V \cong L_1 \oplus L_2$. The same distinction appears for groups, and it causes the most confusion for semidirect products. The distinction is kept for now, but most authors do not keep it, and the course will soon stop keeping it as well. (Compare embedded versus abstract manifolds.)
 >
 > *Source: lecture 10/26*
 

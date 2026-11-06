@@ -67,7 +67,7 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 ^thm-20-1
 
 > [!proof]+ Proof
-> Not covered in lecture: the question was raised in class and set aside. This is point-set topology; see J. Munkres, *Topology*, [[§19 Limit Point Compactness#^thm-19-4|§28]].
+> Not covered in lecture. This is point-set topology; see J. Munkres, *Topology*, [[§19 Limit Point Compactness#^thm-19-4|§28]].
 
 ^pf-20-1
 
@@ -227,7 +227,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > [!remark] Remark: On the Constant
 > Since $0 \in Y$, always $\operatorname{dist}(z, Y) \le \|z - 0\| = 1$ for a unit vector $z$. So Corollary [[§20 Compactness and the Unit Ball#^cor-20-3|§20.3]] says $\sup_{\|z\| = 1} \operatorname{dist}(z, Y) = 1$ for every closed proper subspace, and Proposition [[§20 Compactness and the Unit Ball#^prop-20-4|§20.4]] says the supremum need not be attained. The mechanism is visible in Steps 3–4: letting $n \to \infty$ in Step 3 gives $\operatorname{dist}(f, Y) \le |\int_0^1 f|$, so a unit vector at distance $1$ from $Y$ would need $|\int_0^1 f| = 1 = \max |f|$, which forces $|f| \equiv 1$ and is ruled out by $f(0) = 0$.
 >
-> By contrast, in an inner product space the constant $1$ is attained as soon as a unit vector $z$ orthogonal to $Y$ is available (for a closed proper subspace of a Hilbert space, Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]] provides one: take $x_0 \notin Y$ and normalize its $Y^\perp$-component): then $\|z - y\|^2 = \|z\|^2 - (z,y) - (y,z) + \|y\|^2 = 1 + \|y\|^2 \ge 1$ for every $y \in Y$. In general the picture Wu drew is the right one: $z$ is a unit vector pointing “away from” $Y$, and if a first attempt sits too close to $Y$ one slides along until it does not. (Not covered in lecture.)
+> By contrast, in an inner product space the constant $1$ is attained as soon as a unit vector $z$ orthogonal to $Y$ is available (for a closed proper subspace of a Hilbert space, Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]] provides one: take $x_0 \notin Y$ and normalize its $Y^\perp$-component): then $\|z - y\|^2 = \|z\|^2 - (z,y) - (y,z) + \|y\|^2 = 1 + \|y\|^2 \ge 1$ for every $y \in Y$. In general the right picture is this: $z$ is a unit vector pointing “away from” $Y$, and if a first attempt sits too close to $Y$ one slides along until it does not. (Not covered in lecture.)
 
 ^rem-20-2
 
@@ -286,7 +286,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > - Hence no infinite-dimensional normed space is locally compact ([[§20 Local Compactness#^def-20-1|590 Def. §20.1]]), since a compact neighborhood of 0 would contain a closed ball; compare ℝ^ω, [[§20 Local Compactness#^ex-20-5|590 Ex. §20.5]].
 
 > [!remark] Remark: Where Infinite-Dimensionality Enters
-> This was asked in lecture. The hypothesis is used at exactly one point: to know that $Y_m = \operatorname{span}\{x_1, \ldots, x_m\}$ is a *proper* subspace, so that Riesz's lemma applies and the construction can continue. In a finite-dimensional space the process halts — at some stage $Y_m = X$, and there is no vector left at distance $\tfrac12$ from everything already chosen. Infinite-dimensionality is what guarantees a genuinely new direction at every step. The other hypothesis doing work is Corollary [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]]: without knowing $Y_m$ closed, Riesz's lemma would not apply either.
+> The hypothesis is used at exactly one point: to know that $Y_m = \operatorname{span}\{x_1, \ldots, x_m\}$ is a *proper* subspace, so that Riesz's lemma applies and the construction can continue. In a finite-dimensional space the process halts — at some stage $Y_m = X$, and there is no vector left at distance $\tfrac12$ from everything already chosen. Infinite-dimensionality is what guarantees a genuinely new direction at every step. The other hypothesis doing work is Corollary [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]]: without knowing $Y_m$ closed, Riesz's lemma would not apply either.
 
 ^rem-20-3
 

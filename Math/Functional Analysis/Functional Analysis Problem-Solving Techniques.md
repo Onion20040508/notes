@@ -76,7 +76,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 > - (i) **Candidate.** Use the Cauchy property in a *weaker* form that reduces to a space already known complete — coordinatewise for sequence spaces ($\mathbb{F}$ is complete), pointwise or almost everywhere for function spaces (via a subsequence) — and let that produce an object $a$. At this stage nothing is known about $a$ except that it exists.
 > - (ii) **Closing.** Return to the Cauchy property in its *full* form, with the $N$ fixed once and for all, and show both that $a$ lies in the space and that $\|a^{(n)} - a\| \to 0$. The second usually gives the first: $a = a^{(N)} + (a - a^{(N)})$.
 >
-> Wu: “In any completeness problem, the first thing you need to do is find the candidate. Then try to argue the sequence does converge. If you don't have a candidate, we have nothing to do.”
+> In any completeness problem the first step is to find the candidate; only then can one argue that the sequence converges to it. Without a candidate there is nothing to argue.
 
 ^rem-t5
 
@@ -184,7 +184,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ## Technique 12: Countability by Level Sets
 
 > [!remark] Remark: Strategy
-> To show that $S = \{ \alpha : t_\alpha \neq 0 \}$ is countable for a family of numbers $(t_\alpha)$ over a possibly uncountable index set, split it into level sets $\Lambda_k = \{ \alpha : |t_\alpha| \ge 1/k \}$, so that $S = \bigcup_k \Lambda_k$, and bound the number of elements of each $\Lambda_k$ by an inequality that holds for every *finite* subset, such as a [[§27 Orthonormal Sets and Bases#^lem-27-2|finite Bessel inequality]] or a finite measure bound. Wu: “you want to show something is finite, and then you take a lower bound.” Only finite subsets can be fed into the inequality; the uniform bound on them is what proves $\Lambda_k$ finite.
+> To show that $S = \{ \alpha : t_\alpha \neq 0 \}$ is countable for a family of numbers $(t_\alpha)$ over a possibly uncountable index set, split it into level sets $\Lambda_k = \{ \alpha : |t_\alpha| \ge 1/k \}$, so that $S = \bigcup_k \Lambda_k$, and bound the number of elements of each $\Lambda_k$ by an inequality that holds for every *finite* subset, such as a [[§27 Orthonormal Sets and Bases#^lem-27-2|finite Bessel inequality]] or a finite measure bound. To show $\Lambda_k$ is finite, use the lower bound $|t_\alpha| \ge 1/k$ on its elements. Only finite subsets can be fed into the inequality; the uniform bound on them is what proves $\Lambda_k$ finite.
 
 ^rem-t12
 
@@ -276,7 +276,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ## Technique 19: Prove it on a Dense Subset, Then Take Limits
 
 > [!remark] Remark: Strategy
-> To prove an inequality or identity between continuous quantities on a space, prove it on a [[§11 Normed Linear Spaces#^def-11-8|dense subset]], where the functions are smooth and the classical tools ([[§34 Fundamental Theorem of Calculus#^thm-34-1|fundamental theorem of calculus]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|integration by parts]]) apply; then approximate a general element and pass to the limit, using that [[§11 Normed Linear Spaces#^prop-11-4|norms]] ([[§11 Normed Linear Spaces#^lem-11-3|reverse triangle inequality]]) and [[§25 Projection and Orthogonal Decomposition#^lem-25-1|inner products]] ([[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]]) are continuous. Wu: “a usual technique … we only need to show it for a dense subset.”
+> To prove an inequality or identity between continuous quantities on a space, prove it on a [[§11 Normed Linear Spaces#^def-11-8|dense subset]], where the functions are smooth and the classical tools ([[§34 Fundamental Theorem of Calculus#^thm-34-1|fundamental theorem of calculus]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|integration by parts]]) apply; then approximate a general element and pass to the limit, using that [[§11 Normed Linear Spaces#^prop-11-4|norms]] ([[§11 Normed Linear Spaces#^lem-11-3|reverse triangle inequality]]) and [[§25 Projection and Orthogonal Decomposition#^lem-25-1|inner products]] ([[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]]) are continuous.
 
 ^rem-t19
 
@@ -317,7 +317,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ## Technique 22: Define the Functional Where There is No Choice, Then Extend
 
 > [!remark] Remark: Strategy
-> To produce a bounded functional with prescribed properties (a given value at a point, zero on a subspace, norm at most $1$), find the smallest subspace on which the requirements already determine it — the span of the point, or of the point and the subspace — define it there, and check its norm on that subspace by hand. Then Hahn–Banach for normed spaces (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]) extends it to the whole space without increasing the norm. Before defining it, check that the formula is well defined: the representation of an element of the span must be unique. Wu: “we really don't have a lot of choice” on the small space; “extensions are usually not unique”.
+> To produce a bounded functional with prescribed properties (a given value at a point, zero on a subspace, norm at most $1$), find the smallest subspace on which the requirements already determine it — the span of the point, or of the point and the subspace — define it there, and check its norm on that subspace by hand. Then Hahn–Banach for normed spaces (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]) extends it to the whole space without increasing the norm. Before defining it, check that the formula is well defined: the representation of an element of the span must be unique. On the small subspace there is essentially no choice; the extension, by contrast, is usually not unique.
 
 ^rem-t22
 

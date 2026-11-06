@@ -9,7 +9,7 @@ tags: [functional-analysis, math556]
 
 *Stage: maps — Thread: functionals. A density between two measures is the Riesz representer of a bounded functional on an $L^2$ space.*
 
-Wu: the Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows quickly from the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]]; it will be needed later. For those who have taken measure theory the definitions are a review.
+The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows quickly from the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]]; it will be needed later. For those who have taken measure theory the definitions are a review.
 
 > [!definition] Definition §35.1: $\sigma$-Algebra
 > Let $X$ be a set. A collection $\mathcal{A}$ of subsets of $X$ is a **$\sigma$-algebra** if
@@ -50,7 +50,7 @@ Wu: the Radon–Nikodym theorem, whose measure-theoretic proof is difficult, fol
 > - 551 has no separate definition; finiteness appears as $m(E) < \infty$, e.g. in the $L^p$ inclusion for finite measure [[§34 Normed Linear Spaces and Lᵖ Spaces#^cor-34-6|551 §34.6]], whose case $p_1 = 1$, $p_2 = 2$ is the bound in Step 1 of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]].
 
 > [!example] Example §35.1: Lebesgue Measure and a Restriction of It
-> On $\mathbb{R}^2$, [[§11 Lebesgue Measurable Sets#^def-11-5|Lebesgue measure]] $m$ gives a rectangle $R = [a,b] \times [c,d]$ the measure $m(R) = (b-a)(d-c)$; a general set is measured by [[§10 Lebesgue Outer Measure#^def-10-4|covering it with rectangles]]. On the same sets one can define other measures. Wu's example: fix a measurable set $\Omega$, “the piece of material we care about”, and let
+> On $\mathbb{R}^2$, [[§11 Lebesgue Measurable Sets#^def-11-5|Lebesgue measure]] $m$ gives a rectangle $R = [a,b] \times [c,d]$ the measure $m(R) = (b-a)(d-c)$; a general set is measured by [[§10 Lebesgue Outer Measure#^def-10-4|covering it with rectangles]]. On the same sets one can define other measures. For example, fix a measurable set $\Omega$ (the piece of material of interest) and let
 >
 > $$
 > \nu(E) = m(E \cap \Omega) .
@@ -101,7 +101,7 @@ Wu: the Radon–Nikodym theorem, whose measure-theoretic proof is difficult, fol
 ^thm-35-1
 
 > [!proof]+ Proof
-> (von Neumann's proof, following Wu; real scalars throughout.)
+> (von Neumann's proof, as in lecture; real scalars throughout.)
 >
 > **Step 1: the Hilbert space and the functional.** Let $H = L^2(\mu + \nu)$, with $(f, g) = \int_X f g\, d(\mu + \nu)$, and $\ell(f) = \int_X f\, d\mu$ for $f \in H$. $\ell$ is linear. It is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|bounded]]: by [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]] in $L^2(\mu)$ and $\mu \le \mu + \nu$,
 >
@@ -145,7 +145,7 @@ Wu: the Radon–Nikodym theorem, whose measure-theoretic proof is difficult, fol
 > g(x) = \frac{1 - g_0(x)}{g_0(x)} \ge 0,
 > $$
 >
-> measurable as a quotient of measurable functions with a denominator that never vanishes. Wu's choice of test function is $f = \chi_E / g_0$ for $E \in \mathcal{A}$: then $f g_0 = \chi_E$ and $f(1 - g_0) = \chi_E\, g$, so ($\ast$) reads $\int_E g\, d\mu = \nu(E)$. Wu left one check to the class: $f \in H$.
+> measurable as a quotient of measurable functions with a denominator that never vanishes. The test function to choose is $f = \chi_E / g_0$ for $E \in \mathcal{A}$: then $f g_0 = \chi_E$ and $f(1 - g_0) = \chi_E\, g$, so ($\ast$) reads $\int_E g\, d\mu = \nu(E)$. One check was left to the class: $f \in H$.
 > This needs care, because $g_0$ may take arbitrarily small values, and then $\chi_E/g_0$ need not be in $L^2(\mu + \nu)$. Truncate: for $k \in \mathbb{N}$ let $E_k = E \cap \{ g_0 \ge \frac1k \}$ and $f_k = \chi_{E_k}/g_0$. Then $0 \le f_k \le k$, so $f_k \in H$, and ($\ast$) with $f = f_k$ gives
 >
 > $$
@@ -170,12 +170,12 @@ Wu: the Radon–Nikodym theorem, whose measure-theoretic proof is difficult, fol
 ^def-35-6
 
 > [!remark] Remark: Where Absolute Continuity is Used
-> A student asked where $\nu \ll \mu$ enters; Wu: “not yet” through Step 3, and then in Step 4. It is needed only for $F_1$. For $F_2$ it is automatic: ($\ast$) with $f = \chi_{F_2}$ and $\mu(F_2) = 0$ gives $\int_{F_2} g_0\, d\nu = 0$ with $g_0 > 1$ on $F_2$, so $\nu(F_2) = 0$. But $\nu(F_1) = 0$ can fail without absolute continuity. Example: $X = [0,1]$, $\mu$ Lebesgue measure, $\nu = \delta_0$ the [[§12 Borel Sets and Measure Spaces#^ex-12-2|unit point mass]] at $0$. Then ($\ast$) forces $g_0 = 1$ $\mu$-a.e. and $g_0(0) = 0$, so $F_1 = \{0\}$ has $\mu(F_1) = 0$ but $\nu(F_1) = 1$: the point mass hides exactly where $g_0 = 0$, and no density exists.
+> Absolute continuity $\nu \ll \mu$ is not used through Step 3; it enters in Step 4. It is needed only for $F_1$. For $F_2$ it is automatic: ($\ast$) with $f = \chi_{F_2}$ and $\mu(F_2) = 0$ gives $\int_{F_2} g_0\, d\nu = 0$ with $g_0 > 1$ on $F_2$, so $\nu(F_2) = 0$. But $\nu(F_1) = 0$ can fail without absolute continuity. Example: $X = [0,1]$, $\mu$ Lebesgue measure, $\nu = \delta_0$ the [[§12 Borel Sets and Measure Spaces#^ex-12-2|unit point mass]] at $0$. Then ($\ast$) forces $g_0 = 1$ $\mu$-a.e. and $g_0(0) = 0$, so $F_1 = \{0\}$ has $\mu(F_1) = 0$ but $\nu(F_1) = 1$: the point mass hides exactly where $g_0 = 0$, and no density exists.
 
 ^rem-35-2
 
 > [!remark] Remark
-> The truncation in Step 5 is necessary, not cosmetic. On $X = [0,1]$ with $\mu$ Lebesgue measure and $d\nu = x^{-1/2}\, dx$ (a finite measure, $\nu \ll \mu$), the proof produces $g_0 = 1/(1 + x^{-1/2})$, and $\chi_X / g_0 = 1 + x^{-1/2}$ has $\int (1 + x^{-1/2})^2\, d(\mu + \nu) = \int_0^1 (1 + x^{-1/2})^3\, dx = \infty$. Here $d\nu/d\mu = x^{-1/2}$ (Definition [[§35 Measures and the Radon–Nikodym Theorem#^def-35-6|§35.6]]). The density is unique $\mu$-a.e., and the theorem also holds for $\sigma$-finite and for signed measures (Wu: “Radon–Nikodym has a more general statement”). Neither was covered.
+> The truncation in Step 5 is necessary, not cosmetic. On $X = [0,1]$ with $\mu$ Lebesgue measure and $d\nu = x^{-1/2}\, dx$ (a finite measure, $\nu \ll \mu$), the proof produces $g_0 = 1/(1 + x^{-1/2})$, and $\chi_X / g_0 = 1 + x^{-1/2}$ has $\int (1 + x^{-1/2})^2\, d(\mu + \nu) = \int_0^1 (1 + x^{-1/2})^3\, dx = \infty$. Here $d\nu/d\mu = x^{-1/2}$ (Definition [[§35 Measures and the Radon–Nikodym Theorem#^def-35-6|§35.6]]). The density is unique $\mu$-a.e., and the theorem also holds for $\sigma$-finite and for signed measures. Neither was covered.
 
 ^rem-35-3
 

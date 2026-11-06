@@ -707,9 +707,9 @@ For $n < 0$, write $n = -p$ with $p > 0$: $(g^m)^{-p} = \big((g^m)^p\big)^{-1} \
 \end{proof}
 
 \begin{rembox}[Two Non-Laws]\label{rem:two-non-laws}
-The exponent laws concern powers of a \emph{single} element. For two elements, as stressed in lecture:
-\[ (gh)^2 = ghgh, \text{ which is ``probably not'' } g^2 h^2; \]
-\[ (gh)^{-1} = h^{-1} g^{-1}, \text{ which is ``probably not'' } g^{-1} h^{-1}. \]
+The exponent laws concern powers of a \emph{single} element. For two elements:
+\[ (gh)^2 = ghgh, \text{ which in general is not } g^2 h^2; \]
+\[ (gh)^{-1} = h^{-1} g^{-1}, \text{ which in general is not } g^{-1} h^{-1}. \]
 Each identity $(gh)^n = g^n h^n$ ($n = 2$ or $n = -1$) holds for all $g, h$ exactly when $G$ is abelian (\ref{sec:conjugation-products}, Characterizations of Abelian Groups). In $S_3$ with $g = (1\,2)$, $h = (2\,3)$: $(gh)^2 = (1\,3\,2) \neq e = g^2 h^2$, and $(gh)^{-1} = (1\,3\,2) \neq (1\,2\,3) = g^{-1}h^{-1}$.
 \end{rembox}
 
@@ -1426,7 +1426,7 @@ Reading the table: every row and column is a permutation of the six elements (a 
 \end{exbox}
 
 \begin{rembox}[Convention Warning]\label{rem:convention-warning}
-``Right factor first'' is the function-composition convention, confirmed in class on Sept 2: Speyer defines the operation on $S_n$ by $(f \circ g)(j) = f(g(j))$ and computes $(1\,2)(2\,3) = (1\,2\,3)$ by applying $(2\,3)$ first. Some authors --- particularly in combinatorics --- compose left to right, writing $x^{\sigma\tau} = (x^\sigma)^\tau$; under that convention every product above is reversed, e.g.\ $(1\,2)(2\,3)$ would equal $(1\,3\,2)$. When reading any source on permutations, locate its convention before trusting a single computation.
+``Right factor first'' is the function-composition convention used in this course: the operation on $S_n$ is defined by $(f \circ g)(j) = f(g(j))$, and $(1\,2)(2\,3) = (1\,2\,3)$ is computed by applying $(2\,3)$ first. Some authors --- particularly in combinatorics --- compose left to right, writing $x^{\sigma\tau} = (x^\sigma)^\tau$; under that convention every product above is reversed, e.g.\ $(1\,2)(2\,3)$ would equal $(1\,3\,2)$. When reading any source on permutations, locate its convention before trusting a single computation.
 \end{rembox}
 
 \section{Disjoint Cycle Decomposition}\label{sec:disjoint}
@@ -2551,10 +2551,10 @@ The left side is also $\sgn(\sigma\tau)\,\Delta$, and $\Delta \neq 0$, so $\sgn(
 \ref{sec:disjoint} noted that factorizations into transpositions are far from unique and that ``only the parity is an invariant'' --- deferred to this problem. Corollary (2) is that statement, and the reason it holds is that parity is computed by a function $\sgn$ defined without reference to factorizations (via $\Delta$, inversions, or determinants) which happens to take the value $-1$ on every transposition.
 \end{rembox}
 
-\begin{rembox}[{Speyer's Presentation: $\sgn = \det \circ M$}]\label{rem:speyers-presentation-sign-m}
+\begin{rembox}[{The Sign as $\det \circ M$}]\label{rem:speyers-presentation-sign-m}
 In class the sign is written $\sgn$ and introduced as the composite
 \[ S_n \xrightarrow{\ \sigma \mapsto M(\sigma)\ } GL_n(\mathbb{R}) \xrightarrow{\ \det\ } \mathbb{R}^\times, \]
-a composition of two homomorphisms (\ref{sec:actions} for the first, multiplicativity of $\det$ for the second), hence a homomorphism, with the one thing ``needing proof'' being $M(\sigma\tau) = M(\sigma)M(\tau)$. Its image is $\{\pm 1\} \cong \mathbb{Z}/2\mathbb{Z}$ (it takes both values, e.g.\ on $e$ and $(1\,2)$), and its kernel is the alternating group $A_n$. The problem sets write $\varepsilon$ for this map; these notes follow the lecture and write $\sgn$ throughout.
+a composition of two homomorphisms (\ref{sec:actions} for the first, multiplicativity of $\det$ for the second), hence a homomorphism; the only step that needs proof is $M(\sigma\tau) = M(\sigma)M(\tau)$. Its image is $\{\pm 1\} \cong \mathbb{Z}/2\mathbb{Z}$ (it takes both values, e.g.\ on $e$ and $(1\,2)$), and its kernel is the alternating group $A_n$. The problem sets write $\varepsilon$ for this map; these notes follow the lecture and write $\sgn$ throughout.
 \end{rembox}
 
 \begin{defbox}[{The Alternating Group $A_n$}]\label{def:alternating-group-an}
@@ -2714,7 +2714,7 @@ The items are Theorem~\ref{thm:un-product-prime-power-unit-groups} (PS~1.6(3)), 
 
 Permutation matrices embed $S_n$ in $GL_n(k)$, the first representation, and composing with $\det$ gives the sign.
 
-Proposition~\ref{prop:sigma-maps-m-sigma-injective-homomorphism-sn-to} shows that $\sigma \mapsto M(\sigma)$ is an injective homomorphism; Definition~\ref{def:representation-permutation-representation} calls homomorphisms into $GL_n(k)$ representations; the remark \emph{Speyer's Presentation: $\sgn = \det \circ M$} (\ref{sec:sign}) writes the sign as a composite.
+Proposition~\ref{prop:sigma-maps-m-sigma-injective-homomorphism-sn-to} shows that $\sigma \mapsto M(\sigma)$ is an injective homomorphism; Definition~\ref{def:representation-permutation-representation} calls homomorphisms into $GL_n(k)$ representations; the remark \emph{The Sign as $\det \circ M$} (\ref{sec:sign}) writes the sign as a composite.
 
 \textit{$GL_n$ elsewhere: previous, Chapter~4 (\ref{sec:rev-ch4-gl}); next, Chapter~6 (\ref{sec:rev-ch6-gl}).}
 
@@ -3059,7 +3059,7 @@ The left cosets of $H \leq G$ are the special case of $H$ acting on $G$ by right
 \begin{defbox}[{Orbit Space Notation}]\label{def:orbit-space-notation}
 For a left action of $G$ on $X$, the set of orbits is written
 \[ G \backslash X := \{ Gx : x \in X \}; \]
-for a right action, $X / G := \{ xG : x \in X \}$, ``like a quotient.'' The group is written on the side from which it acts. Example: the orbits of $O_3(\mathbb{R})$ on $\mathbb{R}^3$ are the spheres about the origin (WS 4.8 below), so $O_3 \backslash \mathbb{R}^3 \leftrightarrow \mathbb{R}_{\geq 0}$ via the radius.
+for a right action, $X / G := \{ xG : x \in X \}$, written like a quotient. The group is written on the side from which it acts. Example: the orbits of $O_3(\mathbb{R})$ on $\mathbb{R}^3$ are the spheres about the origin (WS 4.8 below), so $O_3 \backslash \mathbb{R}^3 \leftrightarrow \mathbb{R}_{\geq 0}$ via the radius.
 \srcline{lecture}
 \end{defbox}
 
@@ -3076,7 +3076,7 @@ Fix a group $G$ and a subgroup $H \subseteq G$. For $g_1, g_2 \in G$:
 \end{defbox}
 
 \begin{rembox}[Why Two Definitions, and When They Agree]\label{rem:why-two-definitions-when-they-agree}
-Since $H$ is a subgroup, $g_1 g_2^{-1} \in H \iff g_2 g_1^{-1} \in H$ (closure under inverses), so the right relation is symmetric in the two elements as expected. If $G$ is abelian, $g_1^{-1}g_2 = g_2 g_1^{-1}$ and the two relations coincide; in general they differ, which is the ``small subtlety'' of the non-commutative case. For $G = (\mathbb{Z}, +)$ and $H = n\mathbb{Z}$, both relations read $-g_1 + g_2 \in n\mathbb{Z}$, i.e.\ $g_1 \equiv g_2 \pmod n$: ordinary congruence.
+Since $H$ is a subgroup, $g_1 g_2^{-1} \in H \iff g_2 g_1^{-1} \in H$ (closure under inverses), so the right relation is symmetric in the two elements as expected. If $G$ is abelian, $g_1^{-1}g_2 = g_2 g_1^{-1}$ and the two relations coincide; in general they differ. For $G = (\mathbb{Z}, +)$ and $H = n\mathbb{Z}$, both relations read $-g_1 + g_2 \in n\mathbb{Z}$, i.e.\ $g_1 \equiv g_2 \pmod n$: ordinary congruence.
 \end{rembox}
 
 \begin{defbox}[{Left and Right Cosets}]\label{def:left-right-cosets}
@@ -4342,7 +4342,7 @@ $H$ is normal iff $ghg^{-1} \in H$ for all $g \in G$, $h \in H$, iff for each $h
 \begin{defbox}[{The Klein Four-Group $K$}]\label{def:klein-four-group}
 The \textbf{Klein four-group} is the subset
 \[ K = \{e,\ (1\,2)(3\,4),\ (1\,3)(2\,4),\ (1\,4)(2\,3)\} \subseteq S_4, \]
-the identity together with the three products of two disjoint transpositions. Speyer writes $K$, ``for Klein''; it is also often written $V$, for the German \emph{Vierergruppe} (four-group).
+the identity together with the three products of two disjoint transpositions. The letter $K$ is for Klein; the group is also often written $V$, for the German \emph{Vierergruppe} (four-group).
 \srcline{lecture 9/30}
 \end{defbox}
 
@@ -4873,7 +4873,7 @@ and its inverse is an isomorphism (Proposition~\ref{prop:inverse-isomorphism-iso
 \end{proof}
 
 \begin{rembox}[{The Isomorphism Theorems}]\label{rem:isomorphism-theorems}
-The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The first identifies $G/N$ with an image; the second and third compare quotients of subgroups and quotients of quotients. A worksheet on the second and third theorems is on the course Canvas site; the lecture recommended experimenting with small groups to make them intuitive.
+The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The first identifies $G/N$ with an image; the second and third compare quotients of subgroups and quotients of quotients. Experimenting with small groups is the way to make them intuitive.
 \end{rembox}
 
 \begin{rembox}[{Naming the Isomorphism Theorems}]\label{rem:naming-isomorphism-theorems}
@@ -5333,7 +5333,7 @@ The last part of the chapter turns to the Sylow theorems. Lagrange's theorem say
 
 \begin{defbox}[{Character}]\label{def:character}
 Let $G$ be a group and $A$ an \emph{abelian} group. A homomorphism $\chi: G \to A$ is called a \textbf{character} of $G$. The most common case is $A = k^\times$ for a field $k$.
-\srcline{lecture, ``for now''; PS 2}
+\srcline{lecture; PS 2}
 \end{defbox}
 
 \begin{exbox}[{Characters}]\label{ex:characters}
@@ -5886,7 +5886,7 @@ Let $G$ be a finite group and $N_1 \neq N_2$ normal subgroups such that $G/N_1$ 
     \item $N_1 N_2 = G$;
     \item $G/N_1 \cong N_2/(N_1 \cap N_2)$ and $G/N_2 \cong N_1/(N_1 \cap N_2)$.
 \end{enumerate}
-\srcline{PS 7.4; ``I expect to use this lemma in Friday's class''}
+\srcline{PS 7.4}
 \end{lembox}
 
 \begin{proof}
@@ -5941,7 +5941,7 @@ using $N_2N_1 = N_1N_2 = G$ from (1). Since $N_2 \cap N_1 = N_1 \cap N_2$, this 
 \end{proof}
 
 \begin{rembox}[{The Quotient by $N_1 \cap N_2$}]\label{rem:two-simple-quotients-product}
-Speyer, on Problem 7.4: in this situation one can further show that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$. \textit{(Proof not from class.)} In $\bar G = G/(N_1 \cap N_2)$, the images $\bar N_i = N_i/(N_1 \cap N_2)$ are normal, they intersect trivially, since $\bar N_1 \cap \bar N_2 = (N_1 \cap N_2)/(N_1 \cap N_2)$, and $\bar N_1 \bar N_2 = \bar G$ because $N_1 N_2 = G$. So $\bar G \cong \bar N_1 \times \bar N_2$ by Internal Direct Products Are Direct Products (Theorem~\ref{thm:internal-direct-product}, in Chapter~10).
+In this situation one can further show that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$. \textit{(Proof not from class.)} In $\bar G = G/(N_1 \cap N_2)$, the images $\bar N_i = N_i/(N_1 \cap N_2)$ are normal, they intersect trivially, since $\bar N_1 \cap \bar N_2 = (N_1 \cap N_2)/(N_1 \cap N_2)$, and $\bar N_1 \bar N_2 = \bar G$ because $N_1 N_2 = G$. So $\bar G \cong \bar N_1 \times \bar N_2$ by Internal Direct Products Are Direct Products (Theorem~\ref{thm:internal-direct-product}, in Chapter~10).
 \end{rembox}
 
 % ============================================================================
@@ -6357,7 +6357,7 @@ A student asked whether every ordering of the composition factors is realized by
 \begin{exbox}[{Flags in $(\mathbb{Z}/p\mathbb{Z})^n$}]\label{ex:jh-flags}
 Let $G = (\mathbb{Z}/p\mathbb{Z})^n$, an $n$-dimensional vector space over $\mathbb{F}_p$, with standard basis $e_1, \ldots, e_n$. Every subgroup is normal ($G$ is abelian), and a chain of subspaces increasing one dimension at a time is a composition series, with every factor $\cong \mathbb{Z}/p\mathbb{Z}$. For a permutation $\sigma \in S_n$ take
 \[ X_i = \langle e_1, \ldots, e_i \rangle, \qquad Y_j = \langle e_{\sigma(1)}, \ldots, e_{\sigma(j)} \rangle . \]
-Then $Y_j$ is spanned by the $e_k$ with $\sigma^{-1}(k) \leq j$, so $Z_{ij} = X_i \cap Y_j$ is spanned by the $e_k$ with $k \leq i$ and $\sigma^{-1}(k) \leq j$. Hence $H_{ij} = Z_{ij}/Z_{(i-1)j}$ is nontrivial exactly when $e_i \in Z_{ij}$, that is, when $j \geq \sigma^{-1}(i)$. The changeover of column $i$ is at row $\tau(i) = \sigma^{-1}(i)$: the pipes recover the permutation that defined the second flag (the lecture's ``very nice exercise''; with these conventions it comes out as $\sigma^{-1}$). So in this group every matching of the factors occurs.
+Then $Y_j$ is spanned by the $e_k$ with $\sigma^{-1}(k) \leq j$, so $Z_{ij} = X_i \cap Y_j$ is spanned by the $e_k$ with $k \leq i$ and $\sigma^{-1}(k) \leq j$. Hence $H_{ij} = Z_{ij}/Z_{(i-1)j}$ is nontrivial exactly when $e_i \in Z_{ij}$, that is, when $j \geq \sigma^{-1}(i)$. The changeover of column $i$ is at row $\tau(i) = \sigma^{-1}(i)$: the pipes recover the permutation that defined the second flag (an exercise from lecture; with these conventions it comes out as $\sigma^{-1}$). So in this group every matching of the factors occurs.
 \srcline{lecture 10/30; the computation not from class}
 \end{exbox}
 
@@ -6688,7 +6688,7 @@ By Theorem~\ref{thm:groups-order-p-squared}, $G$ is isomorphic to $\mathbb{Z}/p^
 \end{proof}
 
 \begin{rembox}[{Groups of Order $p^k$}]\label{rem:groups-order-pk}
-Speyer, on Problem Set 6: one can continue classifying groups of order $p^k$ in this way for any particular $k$, although the number of cases grows rapidly; groups of order $p^3$ are ``tractable for an undergraduate''. The largest exponent fully classified is $k = 7$ (O'Brien and Vaughan-Lee, ``The groups with order $p^7$ for odd prime $p$'', \emph{Journal of Algebra}, 2005), with partial progress on $k = 8$ and $9$ published as recently as 2026.
+One can continue classifying groups of order $p^k$ in this way for any particular $k$, although the number of cases grows rapidly; the classification of groups of order $p^3$ is still within reach of undergraduate methods. The largest exponent fully classified is $k = 7$ (O'Brien and Vaughan-Lee, ``The groups with order $p^7$ for odd prime $p$'', \emph{Journal of Algebra}, 2005), with partial progress on $k = 8$ and $9$ published as recently as 2026.
 \srcline{PS 6, stated, not proved}
 \end{rembox}
 
@@ -6796,7 +6796,7 @@ Let $G$ be a finite group and let $P_1$ and $P_2$ be two Sylow $p$-subgroups of 
 
 \begin{proof}
 \textit{Idea:} WS 10.3(2) with $\Gamma = G$, $\Pi = P_1$ puts $P_2$ inside some $gP_1g^{-1}$, $g \in G$.\par
-\textit{(Lecture 10/16, ``by 10.3''.)} Let $|G| = p^k m$ with $p \nmid m$, so $|P_1| = |P_2| = p^k$. Apply WS 10.3(2) (Proposition~\ref{prop:sylow-of-subgroup}) with $\Gamma = G$, $\Pi = P_1$, and the subgroup $P_2$ in the role of $G$: there is $g \in G$ such that $P_2 \cap gP_1g^{-1}$ is a Sylow $p$-subgroup of $P_2$. Since $|P_2| = p^k$, a Sylow $p$-subgroup of $P_2$ has $p^k$ elements, so it is $P_2$ itself:
+\textit{(Lecture 10/16.)} Let $|G| = p^k m$ with $p \nmid m$, so $|P_1| = |P_2| = p^k$. Apply WS 10.3(2) (Proposition~\ref{prop:sylow-of-subgroup}) with $\Gamma = G$, $\Pi = P_1$, and the subgroup $P_2$ in the role of $G$: there is $g \in G$ such that $P_2 \cap gP_1g^{-1}$ is a Sylow $p$-subgroup of $P_2$. Since $|P_2| = p^k$, a Sylow $p$-subgroup of $P_2$ has $p^k$ elements, so it is $P_2$ itself:
 \[ P_2 \cap gP_1g^{-1} = P_2, \qquad\text{that is,}\qquad P_2 \subseteq gP_1g^{-1}. \]
 Conjugation by $g$ is an isomorphism (Proposition~\ref{prop:conjugation-automorphism}), so $|gP_1g^{-1}| = |P_1| = p^k = |P_2|$, and the inclusion is an equality: $P_2 = gP_1g^{-1}$.
 \end{proof}
@@ -6892,7 +6892,7 @@ So every group with $15$ elements is cyclic.
 
 \begin{propbox}[{Groups of Order $pq$}]\label{prop:groups-order-pq}
 Let $p < q$ be primes with $q \not\equiv 1 \pmod p$, and let $|G| = pq$. Then $G \cong \mathbb{Z}/pq\mathbb{Z}$.
-\srcline{lecture 10/16: ``same for $|G| = pq$''}
+\srcline{lecture 10/16, stated after the case $|G| = 15$}
 \end{propbox}
 
 \begin{proof}
@@ -6910,8 +6910,6 @@ Let $p < q$ be primes with $q \not\equiv 1 \pmod p$, and let $|G| = pq$. Then $G
 \begin{rembox}[{When $q \equiv 1 \pmod p$}]\label{rem:order-pq-hypothesis}
 \textit{(Not from lecture.)} The hypothesis cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic. There $n_3 = 1$ but $n_2 = 3$ (Example~\ref{ex:sylow-s3-s4}), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step. What remains is a semidirect product: $S_3 \cong \mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ (Example~\ref{ex:s3-external-semidirect}).
 \end{rembox}
-
-Worksheet 10: ``Realistically, we'll wind up covering this in lecture.''
 
 \subsection{\texorpdfstring{Flags and the Sylow Subgroups of $GL_n(\mathbb{F}_p)$}{Flags and the Sylow Subgroups of GLn(Fp)}}\label{sub:flags-sylow-gln}
 
@@ -7591,7 +7589,7 @@ But $P_1 \cup P_2 \cup Q$ is a subset of $G$, so $|P_1 \cup P_2 \cup Q| \leq |G|
 \end{proof}
 
 \begin{rembox}[{What the Count Gives}]\label{rem:order-56-count}
-\textit{(Not from class.)} The count shows more. The eight Sylow $7$-subgroups contain exactly $48$ elements of order $7$, which leaves $56 - 48 = 8$ elements; a Sylow $2$-subgroup has $8$ elements, none of order $7$, so it consists of exactly these $8$, and there is only one. So $n_7 = 8$ forces $n_2 = 1$: every group of order $56$ has a normal Sylow $7$-subgroup or a normal Sylow $2$-subgroup (Corollary~\ref{cor:sylow-normal-unique}). The general tool: if the Sylow $p$-subgroups of $G$ have order $p$, any two of them intersect trivially, and $G$ has exactly $n_p(p - 1)$ elements of order $p$. Speyer: ``this kind of counting elements approach can also handle a number of other cases --- for example, you might enjoy working it out for $30$.''
+\textit{(Not from class.)} The count shows more. The eight Sylow $7$-subgroups contain exactly $48$ elements of order $7$, which leaves $56 - 48 = 8$ elements; a Sylow $2$-subgroup has $8$ elements, none of order $7$, so it consists of exactly these $8$, and there is only one. So $n_7 = 8$ forces $n_2 = 1$: every group of order $56$ has a normal Sylow $7$-subgroup or a normal Sylow $2$-subgroup (Corollary~\ref{cor:sylow-normal-unique}). The general tool: if the Sylow $p$-subgroups of $G$ have order $p$, any two of them intersect trivially, and $G$ has exactly $n_p(p - 1)$ elements of order $p$. The same approach of counting elements handles a number of other orders as well, for example $30$ (this sentence is from lecture).
 \end{rembox}
 
 \begin{thmbox}[{Simple Groups of Order at Most $100$}]\label{thm:simple-order-le-100}
@@ -7769,7 +7767,7 @@ The bound is attained by $A_5$: $|A_5| = 5!/2 = 60$; $A_5$ is simple (Propositio
     \[ 2^{46} \cdot 3^{20} \cdot 5^{9} \cdot 7^{6} \cdot 11^{2} \cdot 13^{3} \cdot 17 \cdot 19 \cdot 23 \cdot 29 \cdot 31 \cdot 41 \cdot 47 \cdot 59 \cdot 71 \approx 8 \times 10^{53}. \]
     For a long time this order was a number that passed every test without anyone being able to construct a group of that order, and no proof of the classification could be complete until the Monster was either constructed or ruled out. (It was first constructed by Robert Griess, around 1980--82; later constructions are due to Conway and others. Not from class.)
 \end{enumerate}
-In the lecturer's working summary: there is $\mathbb{Z}/p\mathbb{Z}$, there are the alternating groups, there is $PSL$ and things like it, and there are the sporadic groups.
+As a working summary, the finite simple groups are the $\mathbb{Z}/p\mathbb{Z}$, the alternating groups, $PSL$ and groups like it, and the sporadic groups.
 \srcline{lecture 10/23}
 \end{rembox}
 
@@ -7804,7 +7802,7 @@ Let $V$ be a vector space and $L_1, L_2$ subspaces with $V = L_1 + L_2$ and $L_1
     \item the \textbf{external direct sum} $L_1 \oplus L_2 = \{(v_1, v_2) : v_1 \in L_1,\ v_2 \in L_2\}$, with $(v_1, v_2) + (v_1', v_2') = (v_1 + v_1', v_2 + v_2')$ and $c(v_1, v_2) = (cv_1, cv_2)$, built from $L_1$ and $L_2$ with no ambient space;
     \item the \textbf{internal direct sum}: $V$ is given in advance, and $L_1, L_2$ already sit inside it as above.
 \end{itemize}
-Strictly, the elements of the external direct sum are ordered pairs and the elements of $V$ are not, so in the internal situation one should write $V \cong L_1 \oplus L_2$. The same distinction appears for groups, and it causes the most confusion for semidirect products. The lecture is careful about it for now, but warned that most people are not, and that the course will soon stop being so careful. (The lecturer compared it to embedded versus abstract manifolds.)
+Strictly, the elements of the external direct sum are ordered pairs and the elements of $V$ are not, so in the internal situation one should write $V \cong L_1 \oplus L_2$. The same distinction appears for groups, and it causes the most confusion for semidirect products. The distinction is kept for now, but most authors do not keep it, and the course will soon stop keeping it as well. (Compare embedded versus abstract manifolds.)
 \srcline{lecture 10/26}
 \end{rembox}
 

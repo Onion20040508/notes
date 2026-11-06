@@ -24,7 +24,7 @@ tags: [functional-analysis, math556]
 > [!remark]- Connections
 > - Finite-dimensional home: bilinear forms [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]], the matrix of a bilinear form [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-4|LADR 9.4]], and forms ↔ matrices as an isomorphism [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-5|LADR 9.5]].
 
-The theorem below is the infinite-dimensional version. Wu warned against the naive route — expanding $x$ and $y$ in an orthonormal basis and building an infinite matrix — because of the ambiguity in such infinite sums; the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]] does the work instead.
+The theorem below is the infinite-dimensional version. The naive route — expanding $x$ and $y$ in an orthonormal basis and building an infinite matrix — is to be avoided, because of the ambiguity in such infinite sums; the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]] does the work instead.
 
 > [!definition] Definition §32.1: Sesquilinear Form; Bounded Form
 > Let $X$ be a linear space over $\mathbb{F}$. A map $B : X \times X \to \mathbb{F}$ is **sesquilinear** if
@@ -116,7 +116,7 @@ The theorem below is the infinite-dimensional version. Wu warned against the nai
 >
 > $$ \|Ax\| \ge \beta\, \|x\| \qquad \text{for all } x \in H . \tag{LM} $$
 >
-> In particular $Ax = 0$ implies $x = 0$; since $A$ is linear, $A$ is one-to-one. (Wu: “not only $A$ is one-to-one, but $A$ has a lower bound like that.”)
+> In particular $Ax = 0$ implies $x = 0$; since $A$ is linear, $A$ is one-to-one. More than that, $A$ is bounded below, by (?).
 >
 > **Step 2: the range of $A$ is closed.** Let $R(A) = \{Ax : x \in H\}$. It is a linear subspace, since $a_1 A x_1 + a_2 A x_2 = A(a_1 x_1 + a_2 x_2)$. Let $\{Ax_n\}$ be a sequence in $R(A)$ converging to some $z \in H$; we show $z \in R(A)$. A convergent sequence is Cauchy, and by (LM) and linearity,
 >
@@ -146,12 +146,12 @@ The theorem below is the infinite-dimensional version. Wu warned against the nai
 ^rem-32-1
 
 > [!remark] Remark: The Plan of the Proof
-> Wu's outline at the end of the lecture. By Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|§32.1]], conditions (1)–(3) give $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$. By the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]], $\ell \in H'$ if and only if $\ell(x) = (x, a)$ for some $a \in H$. So the theorem says: for every $a \in H$ there is a unique $y$ with $Ay = a$. That is, *$A$ is one-to-one and onto*, and the coercivity (4) is what will be used to prove it. Wu said Lax–Milgram is “very useful in solving elliptic PDE”; examples are to come.
+> The outline given at the end of the lecture. By Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|§32.1]], conditions (1)–(3) give $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$. By the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]], $\ell \in H'$ if and only if $\ell(x) = (x, a)$ for some $a \in H$. So the theorem says: for every $a \in H$ there is a unique $y$ with $Ay = a$. That is, *$A$ is one-to-one and onto*, and the coercivity (4) is what will be used to prove it. Lax–Milgram is a main tool for solving elliptic PDE ([[§34 Weak Solutions of the Dirichlet Problem|§34]]).
 
 ^rem-32-2
 
 > [!remark] Remark: What is New in Lax–Milgram
-> Wu's question: since the conclusion looks like the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]], why is a new theorem needed? Compare $B$ with an inner product. Conditions (1)–(2) are the linearity of an inner product, (3) is the [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]] bound (with $M = 1$ for an inner product), and (4) is a quantitative form of $(x, x) = 0 \Rightarrow x = 0$. What is missing is the symmetry $B(x, y) = \overline{B(y, x)}$. When $B$ is symmetric there is nothing new: $B$ is itself an inner product (up to sign) and Lax–Milgram is the Riesz theorem for it. This is made precise below. What is new in Lax–Milgram is that it does not assume symmetry.
+> Since the conclusion looks like the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]], why is a new theorem needed? Compare $B$ with an inner product. Conditions (1)–(2) are the linearity of an inner product, (3) is the [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]] bound (with $M = 1$ for an inner product), and (4) is a quantitative form of $(x, x) = 0 \Rightarrow x = 0$. What is missing is the symmetry $B(x, y) = \overline{B(y, x)}$. When $B$ is symmetric there is nothing new: $B$ is itself an inner product (up to sign) and Lax–Milgram is the Riesz theorem for it. This is made precise below. What is new in Lax–Milgram is that it does not assume symmetry.
 
 ^rem-32-3
 
@@ -191,7 +191,7 @@ The theorem below is the infinite-dimensional version. Wu warned against the nai
 ^prop-32-4
 
 > [!proof]+ Proof
-> (Wu's remark; the details are written out here.) By Lemma [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-32-3|§32.3]], replacing $(B, \ell)$ by $(-B, -\ell)$ if necessary — which does not change the equation $\ell(x) = B(x, y)$ — we may assume $B(x, x) \ge \beta\|x\|^2$. Then $((x, y)) = B(x, y)$ is an inner product on $H$: it is linear in $x$ by (1), $((y, x)) = \overline{((x, y))}$ by symmetry, and $((x, x)) \ge \beta\|x\|^2 > 0$ for $x \neq 0$. Its norm $|||x||| = ((x,x))^{1/2}$ satisfies
+> (Stated in lecture; the details are written out here.) By Lemma [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^lem-32-3|§32.3]], replacing $(B, \ell)$ by $(-B, -\ell)$ if necessary — which does not change the equation $\ell(x) = B(x, y)$ — we may assume $B(x, x) \ge \beta\|x\|^2$. Then $((x, y)) = B(x, y)$ is an inner product on $H$: it is linear in $x$ by (1), $((y, x)) = \overline{((x, y))}$ by symmetry, and $((x, x)) \ge \beta\|x\|^2 > 0$ for $x \neq 0$. Its norm $|||x||| = ((x,x))^{1/2}$ satisfies
 >
 > $$
 > \beta\, \|x\|^2 \le |||x|||^2 \le M\, \|x\|^2 ,

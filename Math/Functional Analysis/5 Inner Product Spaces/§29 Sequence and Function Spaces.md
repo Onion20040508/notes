@@ -170,7 +170,7 @@ $L^2(\Omega)$ carries the integral inner product and is a Hilbert space. $C_c(\m
 ^prop-29-4
 
 > [!proof]+ Proof
-> Wu's route: continuous functions are dense in $L^p$ (taken for granted), a continuous function is approximated by step functions, and the step functions can be taken with rational heights and rational rectangles. The details:
+> Outline: continuous functions are dense in $L^p$ (taken for granted), a continuous function is approximated by step functions, and the step functions can be taken with rational heights and rational rectangles. The details:
 >
 > *Countable.* A rectangle with rational endpoints is determined by $2n$ rationals, so there are countably many; for fixed $N$ the choices of $(a_1, \ldots, a_N, R_1, \ldots, R_N)$ form a finite product of countable sets; take the union over $N$.
 >
@@ -243,7 +243,7 @@ A continuous $g$ and a step function on cubes with rational endpoints and ration
 Any two of the functions $f_t = \chi_{[0,t]}$ differ by $1$ on an interval of positive length, so they are at $L^\infty$-distance $1$: uncountably many points, pairwise $1$ apart. Balls of radius $\frac12$ about them are disjoint, and a dense set would need a point in each. In $L^p$, $p < \infty$, the same two functions are at distance $(t-s)^{1/p}$, which is small when $t$ is close to $s$.
 
 > [!remark] Remark
-> The hypothesis $m(E) > 0$ is added here: if $m(E) = 0$, then $L^\infty(E) = \{0\}$, which is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]]. Wu stressed that measure theory supplies the examples of functional analysis (“I would suggest you really study real methods … measure theory is becoming very useful now”): without $L^p$ the course has few examples beyond sequence spaces.
+> The hypothesis $m(E) > 0$ is added here: if $m(E) = 0$, then $L^\infty(E) = \{0\}$, which is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]]. Measure theory supplies the examples of functional analysis: without $L^p$ the course has few examples beyond sequence spaces.
 
 ^rem-29-2
 

@@ -122,7 +122,7 @@ tags: [functional-analysis, math556]
 ^rem-2-1
 
 > [!remark] Remark: Quotients and Orthogonal Complements
-> In $\mathbb{R}^n$, one may think of $X / Y$ as playing the role of the orthogonal complement $Y^\perp$: each parallel translate $x_0 + Y$ meets $Y^\perp$ in exactly one point. But “orthogonal” requires an inner product, and a bare linear space has no such structure. The quotient space is the substitute that is available in full generality. Wu suggested in lecture that $(X/Y) \oplus Y \cong X$ “in some sense”; this became HW1, and the precise statement needs no inner product at all — only a subspace $W$ playing the role of $Y^\perp$. The tools are extracted below.
+> In $\mathbb{R}^n$, one may think of $X / Y$ as playing the role of the orthogonal complement $Y^\perp$: each parallel translate $x_0 + Y$ meets $Y^\perp$ in exactly one point. But “orthogonal” requires an inner product, and a bare linear space has no such structure. The quotient space is the substitute that is available in full generality. That $(X/Y) \oplus Y \cong X$ in a suitable sense was suggested in lecture and became HW1; the precise statement needs no inner product at all — only a subspace $W$ playing the role of $Y^\perp$. The tools are extracted below.
 
 ^rem-2-2
 

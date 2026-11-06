@@ -165,7 +165,7 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 ^rem-13-2
 
 > [!remark] Remark
-> A student asked whether one could define the norm of a class as the norm of its limit. There is no limit in $X$ to speak of — that is the whole reason for the construction — so the definition must be phrased in terms of the sequence itself, and existence of $\lim \|x_n\|$ is then a claim to prove, not a definition. The relevant estimate is the reverse triangle inequality (Lemma [[§11 Normed Linear Spaces#^lem-11-3|§11.3]]), $\bigl|\,\|x_m\| - \|x_k\|\,\bigr| \le \|x_m - x_k\|$, which makes $\{\|x_n\|\}$ a Cauchy sequence of real numbers.
+> One might try to define the norm of a class as the norm of its limit. There is no limit in $X$ to speak of — that is the whole reason for the construction — so the definition must be phrased in terms of the sequence itself, and existence of $\lim \|x_n\|$ is then a claim to prove, not a definition. The relevant estimate is the reverse triangle inequality (Lemma [[§11 Normed Linear Spaces#^lem-11-3|§11.3]]), $\bigl|\,\|x_m\| - \|x_k\|\,\bigr| \le \|x_m - x_k\|$, which makes $\{\|x_n\|\}$ a Cauchy sequence of real numbers.
 
 ^rem-13-3
 
@@ -227,12 +227,12 @@ The construction by equivalence classes is abstract, but in practice the complet
 
 *Uses:* [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
 
-> [!remark] Remark: “How Do We Know We Have Not Added Too Much?”
-> This was asked in lecture, and Corollary [[§13 The Completion of a Normed Space#^cor-13-3|§13.3]] is the answer: there is no freedom. The construction adds only limits of Cauchy sequences in $X$ and identifies two sequences whenever they head for the same place, so nothing extra can appear.
+> [!remark] Remark: How Do We Know We Have Not Added Too Much?
+> Corollary [[§13 The Completion of a Normed Space#^cor-13-3|§13.3]] answers this: there is no freedom. The construction adds only limits of Cauchy sequences in $X$ and identifies two sequences whenever they head for the same place, so nothing extra can appear.
 >
-> A larger complete space containing $X$ need not be the completion. A student's example: with the usual absolute value, the completion of $\mathbb{Q}$ is $\mathbb{R}$, and $\mathbb{R} \subset \mathbb{C}$ with $\mathbb{C}$ complete — but $\mathbb{C}$ is not the completion of $\mathbb{Q}$, because a Cauchy sequence of rationals cannot converge to a non-real number. Equivalently in Wu's version, $\mathbb{R} \subset \mathbb{R}^2$ is a complete space containing $\mathbb{R}$, and is not its completion. The condition that fails is density.
+> A larger complete space containing $X$ need not be the completion. For example, with the usual absolute value, the completion of $\mathbb{Q}$ is $\mathbb{R}$, and $\mathbb{R} \subset \mathbb{C}$ with $\mathbb{C}$ complete — but $\mathbb{C}$ is not the completion of $\mathbb{Q}$, because a Cauchy sequence of rationals cannot converge to a non-real number. Similarly, $\mathbb{R} \subset \mathbb{R}^2$ is a complete space containing $\mathbb{R}$, and is not its completion. The condition that fails is density.
 >
-> Also worth separating: the definition of $\overline{X}$ is by equivalence classes, and the description “$X$ together with all its limit points” is a way of thinking, not a definition — before the construction there is no ambient space in which those limit points live. Wu: “the previous one is more precise; the later one is a way of thinking. What is the limit when you don't even have a point?”
+> Also worth separating: the definition of $\overline{X}$ is by equivalence classes, and the description “$X$ together with all its limit points” is a way of thinking, not a definition — before the construction there is no ambient space in which those limit points live.
 
 ^rem-13-5
 

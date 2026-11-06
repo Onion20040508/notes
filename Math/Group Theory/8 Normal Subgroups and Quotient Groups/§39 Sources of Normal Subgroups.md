@@ -187,7 +187,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 >
 > $$ K = \{e,\ (1\,2)(3\,4),\ (1\,3)(2\,4),\ (1\,4)(2\,3)\} \subseteq S_4, $$
 >
-> the identity together with the three products of two [[§11 Disjoint Cycle Decomposition#^def-11-1|disjoint]] [[§10 Cycle Notation and the Group S₃#^def-10-2|transpositions]]. Speyer writes $K$, “for Klein”; it is also often written $V$, for the German *Vierergruppe* (four-group).
+> the identity together with the three products of two [[§11 Disjoint Cycle Decomposition#^def-11-1|disjoint]] [[§10 Cycle Notation and the Group S₃#^def-10-2|transpositions]]. The letter $K$ is for Klein; the group is also often written $V$, for the German *Vierergruppe* (four-group).
 >
 > *Source: lecture 9/30*
 

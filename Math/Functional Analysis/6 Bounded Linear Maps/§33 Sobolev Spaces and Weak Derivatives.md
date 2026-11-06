@@ -9,7 +9,7 @@ tags: [functional-analysis, math556]
 
 *Stage: maps — Thread: completeness. Completing smooth functions in a norm that sees derivatives; the elements of the completion have derivatives only in a weak sense.*
 
-[[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Lax–Milgram]] is applied to elliptic PDE in Sobolev spaces. Wu revisited them (they were first met as completions in Example [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3|§23.3]]) to say what their elements are.
+[[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Lax–Milgram]] is applied to elliptic PDE in Sobolev spaces. They were first met as completions in Example [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3|§23.3]]; this section says what their elements are.
 
 ## Sobolev Spaces as Completions
 
@@ -42,7 +42,7 @@ tags: [functional-analysis, math556]
 > - The completion machinery behind it: [[§12 Completeness#^prop-12-3|§12.3]], [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]; the same construction with $L^p$ norms only, [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]]; a norm with one derivative on a space of smoother functions is again not complete, [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]].
 
 > [!remark] Remark
-> Every $\partial^\alpha f$ of a $C^\infty$ function is again $C^\infty$, and bounded on the compact set $\overline{\Omega}$, so every term is finite. Wu noted that $p = \infty$ can be treated as well. The two claims “this is a norm” and “$X$ is not complete” were left to the class; the first is proved after Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-1|§33.1]], and the example of [[§33 Sobolev Spaces and Weak Derivatives#Examples|§33]] shows how completeness fails.
+> Every $\partial^\alpha f$ of a $C^\infty$ function is again $C^\infty$, and bounded on the compact set $\overline{\Omega}$, so every term is finite. The case $p = \infty$ can be treated as well. The two claims, that this is a norm and that $X$ is not complete, were left to the class; the first is proved after Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-1|§33.1]], and the example of [[§33 Sobolev Spaces and Weak Derivatives#Examples|§33]] shows how completeness fails.
 
 ^rem-33-1
 
@@ -120,7 +120,7 @@ tags: [functional-analysis, math556]
 ^lem-33-2
 
 > [!proof]+ Proof
-> Wu's argument is the [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|divergence theorem]], $\int_\Omega \operatorname{div} \vec{F}\, dx = \int_{\partial\Omega} \vec{F} \cdot \vec{n}\, dS$, applied to the vector field $\vec{F}$ whose only nonzero component is the $j$-th, $F_j = g\varphi$. Then $\operatorname{div}\vec F = \partial_{x_j}(g \varphi) = (\partial_{x_j} g)\varphi + g\, \partial_{x_j}\varphi$, and the boundary integral $\int_{\partial\Omega} n_j\, g \varphi\, dS$ vanishes because $\varphi = 0$ near $\partial\Omega$. In one dimension it is the usual [[§34 Fundamental Theorem of Calculus#^thm-34-3|integration by parts]] on an interval $[a, b]$ containing the support of $\varphi$: $\int_a^b g'\varphi = [g\varphi]_a^b - \int_a^b g \varphi' = -\int_a^b g\varphi'$, since $\varphi(a) = \varphi(b) = 0$.
+> The argument is the [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|divergence theorem]], $\int_\Omega \operatorname{div} \vec{F}\, dx = \int_{\partial\Omega} \vec{F} \cdot \vec{n}\, dS$, applied to the vector field $\vec{F}$ whose only nonzero component is the $j$-th, $F_j = g\varphi$. Then $\operatorname{div}\vec F = \partial_{x_j}(g \varphi) = (\partial_{x_j} g)\varphi + g\, \partial_{x_j}\varphi$, and the boundary integral $\int_{\partial\Omega} n_j\, g \varphi\, dS$ vanishes because $\varphi = 0$ near $\partial\Omega$. In one dimension it is the usual [[§34 Fundamental Theorem of Calculus#^thm-34-3|integration by parts]] on an interval $[a, b]$ containing the support of $\varphi$: $\int_a^b g'\varphi = [g\varphi]_a^b - \int_a^b g \varphi' = -\int_a^b g\varphi'$, since $\varphi(a) = \varphi(b) = 0$.
 >
 > (The divergence theorem needs a smooth enough boundary; the identity itself does not. Extend $g\varphi$ and $g\,\partial_{x_j}\varphi$ by $0$ outside the support $K$ of $\varphi$; then $h = g\varphi$ is $C^1$ on $\mathbb{R}^n$ with compact support. By [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|Fubini]], integrate $\partial_{x_j} h$ first in $x_j$: for fixed other variables, $\int_{\mathbb{R}} \partial_{x_j} h\, dx_j = 0$ by the [[§34 Fundamental Theorem of Calculus#^thm-34-1|fundamental theorem of calculus]], since $h$ vanishes outside a bounded interval. So $\int \partial_{x_j}(g\varphi) = 0$, which is the identity by the product rule.)
 
@@ -154,7 +154,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]], [[§19 The Function Spaces Lᵖ(Ω)#^def-19-1|Def. §19.1]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]]
 
 > [!remark] Remark: Hölder, not Dominated Convergence
-> Wu asked the class which theorem justifies the limit. The [[§23 The Dominated Convergence Theorem#^thm-23-3|dominated convergence theorem]] needs pointwise a.e. convergence, and $g_n \to f$ in $L^p$ does not give that (only a subsequence converges a.e.). [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|Hölder's inequality]] needs only convergence in $L^p$ and a fixed partner in $L^{p'}$, which the test function supplies.
+> The question is which theorem justifies the limit. The [[§23 The Dominated Convergence Theorem#^thm-23-3|dominated convergence theorem]] needs pointwise a.e. convergence, and $g_n \to f$ in $L^p$ does not give that (only a subsequence converges a.e.). [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|Hölder's inequality]] needs only convergence in $L^p$ and a fixed partner in $L^{p'}$, which the test function supplies.
 
 ^rem-33-3
 
@@ -173,7 +173,7 @@ tags: [functional-analysis, math556]
 ^def-33-6
 
 > [!remark] Remark
-> A weak derivative need not exist; the definition only says what one is if it does (Wu added the words “if there exists” after the first example). Both sides make sense whenever $f, f_j \in L^p$, because $\varphi$ and $\partial_{x_j}\varphi$ lie in every $L^{p'}$. The general $\alpha$ version, with the sign $(-1)^{|\alpha|}$ from integrating by parts $|\alpha|$ times, is how Wu's “we can continue to define second order or others” is made precise. By Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], for every element $f$ of the completion $W^{1,p}$ the limits $f_j$ are weak derivatives of $f$.
+> A weak derivative need not exist; the definition only says what one is if it does. Both sides make sense whenever $f, f_j \in L^p$, because $\varphi$ and $\partial_{x_j}\varphi$ lie in every $L^{p'}$. The general $\alpha$ version, with the sign $(-1)^{|\alpha|}$ from integrating by parts $|\alpha|$ times, defines weak derivatives of second and higher order. By Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], for every element $f$ of the completion $W^{1,p}$ the limits $f_j$ are weak derivatives of $f$.
 
 ^rem-33-4
 
@@ -193,7 +193,7 @@ tags: [functional-analysis, math556]
 > - The fundamental lemma for continuous functions on an interval, with its proof by a bump: [[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-2|CM Lemma §B5.1.2]].
 
 > [!remark] Remark: Weak and Classical Derivatives Agree Where $f$ is Smooth
-> A student asked whether the weak derivative always matches the pointwise derivative. Wu: where $f$ is $C^1$ in a region, take test functions supported in that region; there the weak derivative is the classical one (Lemma [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-4|§33.4]]). Where $f$ has a singularity, there is no pointwise derivative to compare with, and a weak derivative is an element of $L^p$, defined only almost everywhere: it has no value at a single point.
+> Does the weak derivative always match the pointwise derivative? Where $f$ is $C^1$ in a region, take test functions supported in that region; there the weak derivative is the classical one (Lemma [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-4|§33.4]]). Where $f$ has a singularity, there is no pointwise derivative to compare with, and a weak derivative is an element of $L^p$, defined only almost everywhere: it has no value at a single point.
 
 ^rem-33-5
 
@@ -207,7 +207,7 @@ tags: [functional-analysis, math556]
 ^def-33-7
 
 > [!remark] Remark
-> Wu used both descriptions of $W^{k,p}$: the completion of Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-2|§33.2]], and the weak-derivative space above. Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]] shows that every element of the completion (for $k = 1$) has its weak first derivatives in $L^p$, so the completion sits inside the weak-derivative space. That the two coincide for reasonable $\Omega$ (every function with weak derivatives in $L^p$ is a $W^{k,p}$-limit of smooth functions) is the Meyers–Serrin theorem, which was not covered.
+> Both descriptions of $W^{k,p}$ are used: the completion of Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-2|§33.2]], and the weak-derivative space above. Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]] shows that every element of the completion (for $k = 1$) has its weak first derivatives in $L^p$, so the completion sits inside the weak-derivative space. That the two coincide for reasonable $\Omega$ (every function with weak derivatives in $L^p$ is a $W^{k,p}$-limit of smooth functions) is the Meyers–Serrin theorem, which was not covered.
 
 ^rem-33-6
 
@@ -229,7 +229,7 @@ tags: [functional-analysis, math556]
 ^ex-33-2
 
 > [!proof]+ Proof
-> Wu's computation. Split at $0$ and integrate by parts on each half-line:
+> Split at $0$ and integrate by parts on each half-line:
 >
 > $$
 > \begin{aligned}
@@ -251,7 +251,7 @@ tags: [functional-analysis, math556]
 ^ex-33-3
 
 > [!proof]+ Proof
-> Wu's computation: $\int_{-\infty}^\infty f\varphi' = \int_0^\infty \varphi' - \int_{-\infty}^0 \varphi' = \bigl[\varphi\bigr]_0^\infty - \bigl[\varphi\bigr]_{-\infty}^0 = -\varphi(0) - \varphi(0) = -2\varphi(0)$.
+> $\int_{-\infty}^\infty f\varphi' = \int_0^\infty \varphi' - \int_{-\infty}^0 \varphi' = \bigl[\varphi\bigr]_0^\infty - \bigl[\varphi\bigr]_{-\infty}^0 = -\varphi(0) - \varphi(0) = -2\varphi(0)$.
 >
 > (The non-existence was left to the class.) Suppose $g$ is locally integrable with $\int g\varphi = 2\varphi(0)$ for all test functions $\varphi$. Let $\psi(x) = e^{1 - 1/(1 - x^2)}$ for $|x| < 1$ and $\psi(x) = 0$ otherwise; this is a standard $C_c^\infty$ function with $0 \le \psi \le 1$ and $\psi(0) = 1$. For $0 < \varepsilon \le 1$ let $\varphi_\varepsilon(x) = \psi(x/\varepsilon)$, supported in $[-\varepsilon, \varepsilon]$ with $\varphi_\varepsilon(0) = 1$. Then
 >
@@ -276,7 +276,7 @@ tags: [functional-analysis, math556]
 *(Not from lecture; animation added, vault only.)* $|x|$ and $\mathrm{sgn}\,x$ smoothed at scale $\varepsilon$ (as $\sqrt{x^2 + \varepsilon^2}$ and $\tanh(x/\varepsilon)$, chosen for the picture), with their derivatives, for $\varepsilon$ from $0.5$ down to $0.05$ and back. Left: the derivatives tend to $\mathrm{sgn}\,x$ and stay bounded by $1$. Right: the derivatives are spikes of area $2$ and height $1/\varepsilon$, concentrating at $0$, so no function in $L^1_{\mathrm{loc}}$ can be the weak derivative.
 
 > [!remark] Remark: Distributions
-> Wu: what $\operatorname{sgn} x$ does have is a *distributional* derivative, $f' = 2\delta_0$, twice the delta “function” — zero away from the origin, with $\int (2\delta_0)\varphi = 2\varphi(0)$. A distribution is a linear functional on the test functions $C_c^\infty$, continuous in a suitable sense; $\delta_0(\varphi) = \varphi(0)$ is one, and every $L^p$ function defines one by $\varphi \mapsto \int f\varphi$. In this language every $L^p$ function has a distributional derivative, and a weak derivative is a distributional derivative that happens to be an $L^p$ function. Distributions are to come later in the course. (A student asked whether the name has to do with probability distributions: it does not.)
+> What $\operatorname{sgn} x$ does have is a *distributional* derivative, $f' = 2\delta_0$, twice the delta “function” — zero away from the origin, with $\int (2\delta_0)\varphi = 2\varphi(0)$. A distribution is a linear functional on the test functions $C_c^\infty$, continuous in a suitable sense; $\delta_0(\varphi) = \varphi(0)$ is one, and every $L^p$ function defines one by $\varphi \mapsto \int f\varphi$. In this language every $L^p$ function has a distributional derivative, and a weak derivative is a distributional derivative that happens to be an $L^p$ function. Distributions are to come later in the course. (The name has nothing to do with probability distributions.)
 
 ^rem-33-7
 
@@ -315,7 +315,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3|Ex. §23.3]], [[§24 The Parallelogram Law and Jordan–von Neumann#^prop-24-1|§24.1]], [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2|§24.2]], [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Def. §23.1]]
 
 > [!remark] Remark
-> Every element of $H^1_0(\Omega)$ is a limit of functions that vanish near the boundary, so it “is zero on the boundary in some sense” (Wu) — this is what distinguishes $H^1_0$ from the completion of $C^\infty(\overline\Omega)$, and it is the boundary condition of a Dirichlet problem built into the space. Making “zero on the boundary” precise (trace theorems) was not covered.
+> Every element of $H^1_0(\Omega)$ is a limit of functions that vanish near the boundary, so it is zero on the boundary in some sense — this is what distinguishes $H^1_0$ from the completion of $C^\infty(\overline\Omega)$, and it is the boundary condition of a Dirichlet problem built into the space. Making “zero on the boundary” precise (trace theorems) was not covered.
 
 ^rem-33-8
 
@@ -368,7 +368,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|Def. §33.5]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 §25.6]]
 
 ![[m556-33-2.svg]]
-*The proof in one picture: $f$ vanishes on the left face of the box, so its value at $x$ is the integral of $\partial_{x_1} f$ along the horizontal segment that reaches $x$, and Cauchy–Schwarz turns the length $2L$ of that segment into the constant. The constant depends only on the width of $\Omega$ in one direction. “If the function is zero somewhere, it can be controlled by its gradient.”*
+*The proof in one picture: $f$ vanishes on the left face of the box, so its value at $x$ is the integral of $\partial_{x_1} f$ along the horizontal segment that reaches $x$, and Cauchy–Schwarz turns the length $2L$ of that segment into the constant. The constant depends only on the width of $\Omega$ in one direction. The principle: a function that is zero somewhere can be controlled by its gradient.*
 
 > [!theorem] Corollary §33.7: Poincaré on $H^1_0$
 > The Poincaré inequality $\|f\|_{L^2(\Omega)} \le C\, \|\nabla f\|_{L^2(\Omega)}$ holds for all $f \in H^1_0(\Omega)$.
@@ -399,12 +399,12 @@ tags: [functional-analysis, math556]
 *Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|§33.6]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|Def. §33.9]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|Def. §33.6]], [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§9 Limit Theorems for Sequences#^prop-9-5|451 §9.5]]
 
 > [!remark] Remark: Triangle Inequality, Not Inner Product
-> Wu asked which fact gives $\|g_n\|_{L^2} \to \|f\|_{L^2}$. A student answered: continuity of the inner product (Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]) — correct, since $L^2$ is an [[§22 Definition and Examples#^def-22-1|inner product space]]. Wu's point was that it is more general: in any [[§11 Normed Linear Spaces#^def-11-1|normed space]] $x_n \to x$ implies $\|x_n\| \to \|x\|$, by the reverse triangle inequality (Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]). She called the whole argument “a usual technique”: to prove an inequality on a space, prove it on a [[§11 Normed Linear Spaces#^def-11-8|dense subset]], then take limits ([[Functional Analysis Problem-Solving Techniques#^rem-t19|Technique 19]]).
+> The fact $\|g_n\|_{L^2} \to \|f\|_{L^2}$ follows from continuity of the inner product (Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]), since $L^2$ is an [[§22 Definition and Examples#^def-22-1|inner product space]]; but it is more general: in any [[§11 Normed Linear Spaces#^def-11-1|normed space]] $x_n \to x$ implies $\|x_n\| \to \|x\|$, by the reverse triangle inequality (Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]). The whole argument is a standard technique: to prove an inequality on a space, prove it on a [[§11 Normed Linear Spaces#^def-11-8|dense subset]], then take limits ([[Functional Analysis Problem-Solving Techniques#^rem-t19|Technique 19]]).
 
 ^rem-33-9
 
 > [!remark] Remark: What “Zero on the Boundary” Means
-> Wu, answering questions: one may think of $f \in H^1_0(\Omega)$ as “$C_c^\infty$ in spirit”, equal to $0$ on $\partial\Omega$ “in an appropriate sense”; making this precise needs much more of Sobolev space theory and is outside the course. Why only “in an appropriate sense”: for $f \in L^2$ alone, boundary values mean nothing, since $\partial\Omega$ has measure zero and an $L^2$ function can be changed there at will. What makes the boundary condition meaningful is that $\nabla f \in L^2$ as well. A function that stays away from $0$ up to $\partial\Omega$ and is $0$ outside has a jump at the boundary, and a jump has no $L^2$ derivative — its derivative is a [[§33 Sobolev Spaces and Weak Derivatives#^rem-33-7|delta]] (Example [[§33 Sobolev Spaces and Weak Derivatives#^ex-33-3|§33.3]]).
+> One may think of $f \in H^1_0(\Omega)$ as $C_c^\infty$ in spirit, equal to $0$ on $\partial\Omega$ in an appropriate sense; making this precise needs much more of Sobolev space theory and is outside the course. Why only in an appropriate sense: for $f \in L^2$ alone, boundary values mean nothing, since $\partial\Omega$ has measure zero and an $L^2$ function can be changed there at will. What makes the boundary condition meaningful is that $\nabla f \in L^2$ as well. A function that stays away from $0$ up to $\partial\Omega$ and is $0$ outside has a jump at the boundary, and a jump has no $L^2$ derivative — its derivative is a [[§33 Sobolev Spaces and Weak Derivatives#^rem-33-7|delta]] (Example [[§33 Sobolev Spaces and Weak Derivatives#^ex-33-3|§33.3]]).
 >
 > Precisely: if $g_n \in C_c^\infty(\Omega)$ converge to $f$ in $H^1_0(\Omega)$, their extensions by zero (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|§33.1]]) have the same norms, so they are [[§11 Normed Linear Spaces#^def-11-5|Cauchy]] in the $W^{1,2}(\mathbb{R}^n)$ norm; hence the extension $\tilde f$ of $f$ by zero has [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|weak derivatives]] in $L^2(\mathbb{R}^n)$, namely the extensions of $\partial_{x_j} f$ (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]] on $\mathbb{R}^n$). In one dimension, $\tilde f$ therefore cannot jump at an endpoint of $\Omega$.
 

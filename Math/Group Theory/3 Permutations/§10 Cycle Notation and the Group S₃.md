@@ -71,7 +71,7 @@ tags: [group-theory, math493]
 > - The same table as a worksheet problem: [[§14 Multiplication Tables#^ex-14-5|Table of S₃]] (WS 2.4); 590 counterpart: [[§26 Algebra Prerequisites꞉ Groups#^ex-26-1|590 Ex. §26.1]].
 
 > [!remark] Remark: Convention Warning
-> “Right factor first” is the function-composition convention, confirmed in class on Sept 2: Speyer defines the operation on $S_n$ by $(f \circ g)(j) = f(g(j))$ and computes $(1\,2)(2\,3) = (1\,2\,3)$ by applying $(2\,3)$ first. Some authors — particularly in combinatorics — compose left to right, writing $x^{\sigma\tau} = (x^\sigma)^\tau$; under that convention every product above is reversed, e.g. $(1\,2)(2\,3)$ would equal $(1\,3\,2)$. When reading any source on permutations, locate its convention before trusting a single computation.
+> “Right factor first” is the function-composition convention used in this course: the operation on $S_n$ is defined by $(f \circ g)(j) = f(g(j))$, and $(1\,2)(2\,3) = (1\,2\,3)$ is computed by applying $(2\,3)$ first. Some authors — particularly in combinatorics — compose left to right, writing $x^{\sigma\tau} = (x^\sigma)^\tau$; under that convention every product above is reversed, e.g. $(1\,2)(2\,3)$ would equal $(1\,3\,2)$. When reading any source on permutations, locate its convention before trusting a single computation.
 
 ^rem-10-1
 

@@ -115,6 +115,6 @@ For $p = q = 2$ this is the Cauchy–Schwarz inequality (Proposition [[§16 Mean
 > - Used for Minkowski's inequality [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]] and for the convergence of the $\ell^2$ inner product in [[§22 Definition and Examples#^ex-22-2|Ex. §22.2]].
 
 > [!remark] Remark
-> The proof is an “appropriate application of Young”: the normalization makes the right-hand side of Young sum to exactly $1$, and the exponents $p, q$ are chosen so that $|a_i'|^p$ and $|b_i'|^q$ are the two numbers being averaged. The finite-dimensional inequality $\sum_{i=1}^n |a_i b_i| \le \|a\|_p \|b\|_q$ on $\mathbb{R}^n$ or $\mathbb{C}^n$ is the special case of sequences with $a_i = b_i = 0$ for $i > n$. Nothing in the argument needed the sums to be finite in advance; that is why the theorem is stated on all of $\ell$.
+> The proof is a direct application of Young's inequality: the normalization makes the right-hand side of Young sum to exactly $1$, and the exponents $p, q$ are chosen so that $|a_i'|^p$ and $|b_i'|^q$ are the two numbers being averaged. The finite-dimensional inequality $\sum_{i=1}^n |a_i b_i| \le \|a\|_p \|b\|_q$ on $\mathbb{R}^n$ or $\mathbb{C}^n$ is the special case of sequences with $a_i = b_i = 0$ for $i > n$. Nothing in the argument needed the sums to be finite in advance; that is why the theorem is stated on all of $\ell$.
 
 ^rem-17-2

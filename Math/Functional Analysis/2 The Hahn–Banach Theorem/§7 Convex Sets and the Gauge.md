@@ -279,7 +279,7 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 > p_K(bx) = \inf\Bigl\{ a > 0 : \frac{bx}{a} \in K \Bigr\} = \inf\Bigl\{ a > 0 : \frac{x}{a/b} \in K \Bigr\}.
 > $$
 >
-> Substituting $a' = a/b$, which runs over $(0,\infty)$ as $a$ does, the set is $\{ b a' : x/a' \in K \} = b\,A(x)$, whose infimum is $b \inf A(x) = b\, p_K(x)$. (Wu left this check to us.)
+> Substituting $a' = a/b$, which runs over $(0,\infty)$ as $a$ does, the set is $\{ b a' : x/a' \in K \} = b\,A(x)$, whose infimum is $b \inf A(x) = b\, p_K(x)$. (Left to us in lecture.)
 >
 > **Subadditivity.** It is hard to work with the infimum directly, so take arbitrary admissible scales and pass to the infimum at the end. Let $a > 0$, $b > 0$ be such that
 >

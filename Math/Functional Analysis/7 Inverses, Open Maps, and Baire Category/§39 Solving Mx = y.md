@@ -10,16 +10,16 @@ tags: [functional-analysis, math556]
 *Stage: maps — Thread: completeness. Existence, uniqueness and stability for a bounded linear equation; the first two are algebra, the third needs completeness.*
 
 > [!remark] Remark: Midterm Remarks
-> Wu began with two midterm problems.
+> Two problems from the midterm.
 >
-> 1. *The completion of $C^1[a,b]$ under $\|f\| = \max_{[a,b]} |f|$ is $C[a,b]$.* All that was needed: $C^1[a,b]$ is dense in $(C[a,b], \|\cdot\|_\infty)$, because already the polynomials are dense in this norm (Weierstrass), and $C[a,b]$ is complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]); so $C[a,b]$ is the completion (Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]]). Wu: the abstract completion by equivalence classes of Cauchy sequences is not needed in practice; one identifies a complete space in which the given space is dense.
-> 2. *If $\{e_\alpha\}_{\alpha \in \Lambda}$ are nonzero vectors of a Hilbert space with $(x, y) = \sum_{\alpha \in \Lambda} (x, e_\alpha)\, \overline{(y, e_\alpha)}$ for all $x, y$, then $\{e_\alpha\}$ is a complete orthonormal set.* Most solutions proved completeness but not orthonormality, which was not assumed. A student asked about $e_\alpha = 0$; Wu: the vectors are assumed nonzero (a zero vector cannot belong to an orthonormal set). The full problem is on this week's homework.
+> 1. *The completion of $C^1[a,b]$ under $\|f\| = \max_{[a,b]} |f|$ is $C[a,b]$.* All that was needed: $C^1[a,b]$ is dense in $(C[a,b], \|\cdot\|_\infty)$, because already the polynomials are dense in this norm (Weierstrass), and $C[a,b]$ is complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]); so $C[a,b]$ is the completion (Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]]). The abstract completion by equivalence classes of Cauchy sequences is not needed in practice; one identifies a complete space in which the given space is dense.
+> 2. *If $\{e_\alpha\}_{\alpha \in \Lambda}$ are nonzero vectors of a Hilbert space with $(x, y) = \sum_{\alpha \in \Lambda} (x, e_\alpha)\, \overline{(y, e_\alpha)}$ for all $x, y$, then $\{e_\alpha\}$ is a complete orthonormal set.* Most solutions proved completeness but not orthonormality, which was not assumed. The vectors are assumed nonzero, since a zero vector cannot belong to an orthonormal set. The full problem is on this week's homework.
 
 ^rem-39-1
 
 ## Three Questions
 
-Let $X, Y$ be normed linear spaces and $M : X \to Y$ a bounded linear map (without boundedness “life would be too difficult”). Consider the equation
+Let $X, Y$ be normed linear spaces and $M : X \to Y$ a bounded linear map. Consider the equation
 
 $$
 M x = y . \tag{$\ast$}
@@ -99,7 +99,7 @@ $$
 *Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]], [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]]
 
 > [!remark] Remark: The First Isomorphism Theorem, with Norms
-> Algebraically, Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]](2) is the first isomorphism theorem of linear algebra: $X/N(M) \cong R(M)$. Wu: the null space often represents a symmetry of the problem, and quotienting it out removes the non-uniqueness; restricting the target to $R(M)$ removes the non-existence. What the theorem does not give is a bounded inverse: $M_0^{-1} : R(M) \to X/N$ is linear but need not be bounded, and $R(M)$ need not be closed in $Y$. If $X$ and $Y$ are Banach spaces and $R(M)$ is closed, then $X/N$ and $R(M)$ are Banach spaces, and Banach's theorem below shows that $M_0^{-1}$ is bounded. So question (3) is the real one.
+> Algebraically, Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]](2) is the first isomorphism theorem of linear algebra: $X/N(M) \cong R(M)$. The null space often represents a symmetry of the problem, and quotienting it out removes the non-uniqueness; restricting the target to $R(M)$ removes the non-existence. What the theorem does not give is a bounded inverse: $M_0^{-1} : R(M) \to X/N$ is linear but need not be bounded, and $R(M)$ need not be closed in $Y$. If $X$ and $Y$ are Banach spaces and $R(M)$ is closed, then $X/N$ and $R(M)$ are Banach spaces, and Banach's theorem below shows that $M_0^{-1}$ is bounded. So question (3) is the real one.
 
 ^rem-39-2
 
@@ -111,12 +111,13 @@ Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]] as a diagram: $M$ factors as th
 
 > [!theorem] Theorem §39.2: Banach's Inverse Mapping Theorem
 > Let $X, Y$ be Banach spaces and $M : X \to Y$ a bounded linear map. Assume $M$ is one-to-one and onto. Then $M^{-1} : Y \to X$ is also a bounded linear map.
+> The inverse is *not* assumed to be bounded, and it is essential that *both* $X$ and $Y$ are Banach spaces.
 >
 > *Lax: §15.5, Thm 11*
 
 ^thm-39-2
 
-The proof will be given after the Baire category theorem ([[§41 The Open Mapping Theorem and Its Consequences#^pf-39-2|§41]], Lecture 16). Wu stressed that the inverse is *not* assumed to be bounded, and that it is important that *both* $X$ and $Y$ are Banach spaces.
+The proof will be given after the Baire category theorem ([[§41 The Open Mapping Theorem and Its Consequences#^pf-39-2|§41]], Lecture 16).
 ($M^{-1}$ is linear: given $y_1, y_2 \in Y$, put $x_i = M^{-1} y_i$; then $M(c_1 x_1 + c_2 x_2) = c_1 y_1 + c_2 y_2$, so $M^{-1}(c_1 y_1 + c_2 y_2) = c_1 x_1 + c_2 x_2$.) So the content of the theorem is boundedness, i.e. continuity, of $M^{-1}$, and continuity can be expressed through open sets:
 
 $$
@@ -176,12 +177,12 @@ Closedness of a graph, in a picture. Left: the points $(x_n, Mx_n)$ of the graph
 *(Not from lecture; animation added, vault only.)* The right half of the figure in motion: the Taylor polynomials $T_n$ of $e^x$, $n = 0, \ldots, 8$, converge to $e^x$ (red) in $C[0, 1]$, with the error falling below $10^{-6}$ (right). The graph points $(T_n, MT_n) = (T_n, T_n)$ converge to $(e^x, e^x)$, which is not on the graph, since $e^x$ is not a polynomial.
 
 > [!remark] Remark: Why Not “Closed Sets to Closed Sets”
-> A student asked why a closed map is not defined, by analogy with open maps, as one taking closed sets to closed sets. Wu: that is a different notion, not equivalent to this one, and it is not what will be used; the graph definition is.
+> A closed map is not defined, by analogy with open maps, as one taking closed sets to closed sets: that is a different notion, not equivalent to this one, and it is not the one used here; the graph definition is.
 > For instance, the projection $P(x, y) = x$ from $\mathbb{R}^2$ to $\mathbb{R}$ is continuous, hence closed in the graph sense, but it maps the closed set $\{ (x, y) : xy = 1 \}$ onto $\mathbb{R} \setminus \{0\}$, which is not closed.
 
 ^rem-39-3
 
-A closed map need not be continuous. Wu: this is why one cares about such a weak notion — differentiation, the most important operator in analysis, is not bounded, but it is closed.
+A closed map need not be continuous. This is why one cares about such a weak notion — differentiation, the most important operator in analysis, is not bounded, but it is closed.
 
 > [!example] Example §39.2: Differentiation is Closed
 > Let $X = Y = C[0,1]$ with $\|x\| = \max_{t \in [0,1]} |x(t)|$, and
@@ -238,7 +239,7 @@ A closed map need not be continuous. Wu: this is why one cares about such a weak
 ^pf-ex-39-2
 
 > [!remark] Remark: Which $C^1$; the Graph Norm
-> A student asked whether $C^1$ is meant classically; Wu: yes, classical $C^1$. Asked why the domain is $C^1$ when there are differentiable functions that are not $C^1$: the domain may be chosen smaller than the largest possible one, “as long as I don't make it larger”; here only $C^1$ matters.
+> Here $C^1$ is classical $C^1$. The domain is $C^1$ even though there are differentiable functions that are not $C^1$: the domain may be chosen smaller than the largest possible one, but not larger; here only $C^1$ matters.
 > The proof is the argument that $C^1[a,b]$ is complete in the norm $\max|f| + \max|f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]). That is no coincidence: a linear map is closed exactly when its domain is complete in the *graph norm* $\|x\| + \|Mx\|$, provided $X$ and $Y$ are complete. Note that $D(M) = C^1[0,1]$ is not closed in $C[0,1]$ (it is dense), which is how a closed map can fail to be continuous.
 
 ^rem-39-4

@@ -13,7 +13,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 
 | Object | These notes | Lax |
 |---|---|---|
-| Norm | $\Vert x\Vert$ (Wu writes $\vert x\vert$ on the board) | $\vert x\vert$; $\Vert x\Vert$ for a norm induced by a scalar product |
+| Norm | $\Vert x\Vert$ (written $\vert x\vert$ on the board) | $\vert x\vert$; $\Vert x\Vert$ for a norm induced by a scalar product |
 | $p$-norm | $\Vert a\Vert_p$ | $\vert x\vert_p$ |
 | Class mod $Y$ | $[x]$; $x - x' \in Y$ | $\{x\}$; $x_1 \equiv x_2 \pmod Y$ |
 | Functional and its extension | $\ell$ on $Y$, extended to $L$ on $X$ | $f$ (or $\ell$) for both |

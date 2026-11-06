@@ -94,7 +94,7 @@ tags: [functional-analysis, math556]
 ![[m556-20-1.svg]]
 *$x$ split into its component $\sum_j (x, e_j) e_j$ (red) in $\operatorname{span}\{e_1, \ldots, e_k\}$ and the remainder $y$ (blue) perpendicular to it. Pythagoras across the right angle is the identity $\|x\|^2 = \|y\|^2 + \sum_j |(x, e_j)|^2$; dropping the blue leg is Bessel.*
 
-The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\operatorname{span}\{e_1, \ldots, e_k\}$, and $y$ is the perpendicular remainder. Pythagoras ([[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]]) applied to $k + 1$ orthogonal pieces gives the identity; dropping $\|y\|^2$ gives the inequality.
+Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\operatorname{span}\{e_1, \ldots, e_k\}$, and $y$ is the perpendicular remainder. Pythagoras ([[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]]) applied to $k + 1$ orthogonal pieces gives the identity; dropping $\|y\|^2$ gives the inequality.
 
 > [!definition] Definition §27.3: Sums of Non-Negative Families
 > Let $(t_\alpha)_{\alpha \in \Lambda}$ be real numbers with $t_\alpha \ge 0$ whose **support** $S = \{ \alpha \in \Lambda : t_\alpha \neq 0 \}$ is countable. Define
@@ -157,7 +157,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 *The coefficients $|(x, e_\alpha)|$ over an index set $\Lambda$ that may be uncountable. The finite Bessel inequality caps how many can reach any level: at most $k^2\|x\|^2$ of them lie on or above $\tfrac1k$ (red, the set $\Lambda_k$). Every nonzero coefficient clears some level $\tfrac1k$, so the support $S_x = \bigcup_k \Lambda_k$ is a countable union of finite sets, however large $\Lambda$ is.*
 
 > [!remark] Remark
-> A student read this as saying that every vector “lives in a countably-infinite-dimensional part” of $H$; Wu separated the two concepts. The proposition is about one fixed $x$: its coefficients vanish outside a countable set $S_x$. Different $x$ can have different, even disjoint, supports, and $\Lambda$ itself can be uncountable. Nothing about bases or dimension is being asserted yet. Another question: the norm $\|x\|$ is a real number, finite by definition, so the bound $k^2\|x\|^2$ is finite.
+> This does not say that every vector lives in a countably-infinite-dimensional part of $H$. The proposition is about one fixed $x$: its coefficients vanish outside a countable set $S_x$. Different $x$ can have different, even disjoint, supports, and $\Lambda$ itself can be uncountable. Nothing about bases or dimension is being asserted yet. Also, the norm $\|x\|$ is a real number, finite by definition, so the bound $k^2\|x\|^2$ is finite.
 
 ^rem-27-3
 
@@ -247,7 +247,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 > - Computational version: [[§30 Expansion in Series of Eigenfunctions#^prop-30-1|341 Prop. §30.1]] (the coefficients of an eigenfunction expansion, found by taking the weighted inner product with $\phi_m$ term by term).
 
 > [!remark] Remark
-> Part (a) is the step Wu flagged as “the only non-trivial part”: taking the inner product with $e_\beta$ term by term through an infinite sum. It is legitimate because the sum is a limit of finite sums and the inner product is continuous; her advice, “if you are not sure, start with a finite sum and take the limit,” is exactly this proof.
+> Part (a) is the only non-trivial step: taking the inner product with $e_\beta$ term by term through an infinite sum. It is legitimate because the sum is a limit of finite sums and the inner product is continuous. The general advice — when unsure, start with a finite sum and take the limit — is exactly this proof.
 
 ^rem-27-5
 
@@ -326,7 +326,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 > - The same two steps proved earlier for arbitrary sets: $E^\perp = Y^\perp$ is [[§25 Projection and Orthogonal Decomposition#^lem-25-5|§25.5]], and $\overline{\operatorname{span}}\,E = (E^\perp)^\perp$ is [[§25 Projection and Orthogonal Decomposition#^thm-25-6|§25.6]].
 
 > [!remark] Remark: Comparison with Lax
-> Lax defines an orthonormal base by the condition $\overline{\operatorname{span}}\, E = H$, and his Lemma 8 then describes the closed linear span as the set of sums $\sum_j a_j e_j$ with $\sum_j |a_j|^2 < \infty$, for a countable orthonormal set. Wu defines a basis by the expansion $x = \sum_\alpha (x, e_\alpha) e_\alpha$ and proves the equivalence with completeness (Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]); the proposition above connects the two. Lax also constructs orthonormal bases by [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|Gram–Schmidt]] (Theorem $9'$) and identifies the isometries of $H$ (Theorem 10); neither was covered in lecture.
+> Lax defines an orthonormal base by the condition $\overline{\operatorname{span}}\, E = H$, and his Lemma 8 then describes the closed linear span as the set of sums $\sum_j a_j e_j$ with $\sum_j |a_j|^2 < \infty$, for a countable orthonormal set. The lecture defines a basis by the expansion $x = \sum_\alpha (x, e_\alpha) e_\alpha$ and proves the equivalence with completeness (Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]); the proposition above connects the two. Lax also constructs orthonormal bases by [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|Gram–Schmidt]] (Theorem $9'$) and identifies the isometries of $H$ (Theorem 10); neither was covered in lecture.
 
 ^rem-27-7
 
@@ -382,7 +382,7 @@ The picture Wu described: $\sum_j (x, e_j) e_j$ is the orthogonal projection of 
 >
 > since $e^{i(k-j)2\pi} = 1$.
 >
-> *Completeness.* Deferred: not proved in lecture (“I don't think I want to prove this”). It is the completeness of Fourier series, proved for instance by showing that trigonometric polynomials are dense in $L^2[0,2\pi]$ (Fejér's theorem gives uniform approximation of continuous periodic functions, and continuous periodic functions are dense in $L^2$). Given completeness, Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]] makes it a basis.
+> *Completeness.* Deferred: not proved in lecture. It is the completeness of Fourier series, proved for instance by showing that trigonometric polynomials are dense in $L^2[0,2\pi]$ (Fejér's theorem gives uniform approximation of continuous periodic functions, and continuous periodic functions are dense in $L^2$). Given completeness, Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]] makes it a basis.
 
 ^pf-27-11
 

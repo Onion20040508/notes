@@ -124,7 +124,7 @@ Recall that a normed linear space $X$ is **separable** if it has a countable den
 *Uses:* [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|§37.2]]
 
 > [!remark] Remark: The Converse Fails
-> The converse is false: $\ell^1$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], while $(\ell^1)' = \ell^\infty$ is not. “Dual separable $\Rightarrow$ separable”, not conversely.
+> The converse is false: $\ell^1$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], while $(\ell^1)' = \ell^\infty$ is not. A separable dual forces a separable space, not conversely.
 
 ^rem-37-3
 
@@ -367,10 +367,10 @@ Why $\|\ell_s - \ell_t\| = 2$: the function $f$ (blue) has $\|f\|_\infty = 1$, e
 
 The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction $R$ to an element of $X''$, which reflexivity of $X$ represents by some $x_0$; functionals vanishing on $Y$ die under $R$, which puts $x_0$ in $Y$ (Step 1), and Hahn–Banach makes $R$ onto, so $x_0$ represents $\eta_0$ on all of $Y'$ (Step 2).
 
-*Lecture 18 (Thu Nov 5): Wu opened the lecture with the following problem, placed here next to the theorem it uses.*
+*Lecture 18 (Thu Nov 5) opened with the following problem, placed here next to the theorem it uses.*
 
 > [!remark] Remark: Notation: $x_0 \in X''$
-> Wu: for $\ell \in X'$ write $\ell(x) = \langle x, \ell \rangle$. For fixed $x_0 \in X$, $\ell \mapsto \langle x_0, \ell \rangle$ is a bounded linear functional on $X'$, the element $\eta_{x_0} = i(x_0)$ of $(X')'$ (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]): $\eta_{x_0}(\ell) = \langle \ell, \eta_{x_0} \rangle = \langle x_0, \ell \rangle$. Instead of introducing other notation, one simply says $x_0 \in (X')'$, identifying $\eta_{x_0}$ with $x_0$; the isometric isomorphism $i$ is not written. “So that's a good notation”; it will be used from now on. With it, “$X$ reflexive” reads $(X')' = X$.
+> For $\ell \in X'$ write $\ell(x) = \langle x, \ell \rangle$. For fixed $x_0 \in X$, $\ell \mapsto \langle x_0, \ell \rangle$ is a bounded linear functional on $X'$, the element $\eta_{x_0} = i(x_0)$ of $(X')'$ (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]): $\eta_{x_0}(\ell) = \langle \ell, \eta_{x_0} \rangle = \langle x_0, \ell \rangle$. Instead of introducing other notation, one simply says $x_0 \in (X')'$, identifying $\eta_{x_0}$ with $x_0$; the isometric isomorphism $i$ is not written. This notation is used from now on. With it, “$X$ reflexive” reads $(X')' = X$.
 
 ^rem-37-6
 
@@ -380,10 +380,10 @@ The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction 
 ^thm-37-9
 
 > [!proof]+ Proof
-> Wu: never memorize; understand the key point of each theorem, and the rest falls into place (like lifting a garment by its collar). Here the key point is that $X$ sits inside $X''$ as a *closed* subspace.
+> The key point of the proof is that $X$ sits inside $X''$ as a *closed* subspace.
 >
 > **($\Rightarrow$)**
-> *(Wu called this direction easy, “$X$ reflexive means $X'' = X$”, and did not write it out.)* Assume $X$ is reflexive, and let $\Phi \in (X')'' = (X'')'$. Define $\ell = \Phi \circ i \in X'$, i.e. $\ell(x) = \Phi(i(x))$; it is linear and $|\ell(x)| \le \|\Phi\|\, \|i(x)\| = \|\Phi\|\, \|x\|$. Let $\eta \in X''$. Since $X$ is reflexive, $\eta = i(x)$ for some $x \in X$, and
+> *(Not written out in lecture.)* Assume $X$ is reflexive, and let $\Phi \in (X')'' = (X'')'$. Define $\ell = \Phi \circ i \in X'$, i.e. $\ell(x) = \Phi(i(x))$; it is linear and $|\ell(x)| \le \|\Phi\|\, \|i(x)\| = \|\Phi\|\, \|x\|$. Let $\eta \in X''$. Since $X$ is reflexive, $\eta = i(x)$ for some $x \in X$, and
 >
 > $$
 > \Phi(\eta) = \Phi(i(x)) = \ell(x) = i(x)(\ell) = \eta(\ell) .

@@ -110,7 +110,7 @@ The course has used the analogy that simple groups are atoms and other groups ar
 > 1. $N_1 N_2 = G$;
 > 2. $G/N_1 \cong N_2/(N_1 \cap N_2)$ and $G/N_2 \cong N_1/(N_1 \cap N_2)$.
 >
-> *Source: PS 7.4; “I expect to use this lemma in Friday's class”*
+> *Source: PS 7.4*
 
 ^lem-50-3
 
@@ -182,6 +182,6 @@ The course has used the analogy that simple groups are atoms and other groups ar
 ^pf-50-3
 
 > [!remark] Remark: The Quotient by $N_1 \cap N_2$
-> Speyer, on Problem 7.4: in this situation one can further show that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$. *(Proof not from class.)* In $\bar G = G/(N_1 \cap N_2)$, the images $\bar N_i = N_i/(N_1 \cap N_2)$ are normal, they intersect trivially, since $\bar N_1 \cap \bar N_2 = (N_1 \cap N_2)/(N_1 \cap N_2)$, and $\bar N_1 \bar N_2 = \bar G$ because $N_1 N_2 = G$. So $\bar G \cong \bar N_1 \times \bar N_2$ by Internal Direct Products Are Direct Products (Theorem [[§57 Internal and External Direct Products#^thm-57-1|§57.1]], in Chapter 10).
+> In this situation one can further show that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$. *(Proof not from class.)* In $\bar G = G/(N_1 \cap N_2)$, the images $\bar N_i = N_i/(N_1 \cap N_2)$ are normal, they intersect trivially, since $\bar N_1 \cap \bar N_2 = (N_1 \cap N_2)/(N_1 \cap N_2)$, and $\bar N_1 \bar N_2 = \bar G$ because $N_1 N_2 = G$. So $\bar G \cong \bar N_1 \times \bar N_2$ by Internal Direct Products Are Direct Products (Theorem [[§57 Internal and External Direct Products#^thm-57-1|§57.1]], in Chapter 10).
 
 ^rem-50-3

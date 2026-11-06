@@ -268,7 +268,6 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 
 ^ex-54-2
 
-
 ## Groups of Order p²
 
 *(PS 6.3.)* A nontrivial central element, which every nontrivial $p$-group has, is enough to classify the groups of order $p^2$. The splitting step is a general criterion, isolated first.
@@ -347,7 +346,7 @@ Worksheet 10 quotes this order from Problem Set 6; the proof above is the submit
 *Uses:* [[§54 p-Groups and Sylow Subgroups#^thm-54-7|§54.7]], [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]]
 
 > [!remark] Remark: Groups of Order $p^k$
-> Speyer, on Problem Set 6: one can continue classifying groups of order $p^k$ in this way for any particular $k$, although the number of cases grows rapidly; groups of order $p^3$ are “tractable for an undergraduate”. The largest exponent fully classified is $k = 7$ (O'Brien and Vaughan-Lee, “The groups with order $p^7$ for odd prime $p$”, *Journal of Algebra*, 2005), with partial progress on $k = 8$ and $9$ published as recently as 2026.
+> One can continue classifying groups of order $p^k$ in this way for any particular $k$, although the number of cases grows rapidly; the classification of groups of order $p^3$ is still within reach of undergraduate methods. The largest exponent fully classified is $k = 7$ (O'Brien and Vaughan-Lee, “The groups with order $p^7$ for odd prime $p$”, *Journal of Algebra*, 2005), with partial progress on $k = 8$ and $9$ published as recently as 2026.
 >
 > *Source: PS 6, stated, not proved*
 

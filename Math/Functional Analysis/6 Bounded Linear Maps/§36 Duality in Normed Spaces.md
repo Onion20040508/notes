@@ -35,7 +35,7 @@ The Hahn–Banach theorem of Chapter 2 needed no norm, only a positive homogeneo
 ^thm-36-1
 
 > [!proof]+ Proof
-> Wu: “this is really Hahn–Banach”; the abstract theorem is applied with
+> This is the abstract Hahn–Banach theorem, applied with
 >
 > $$
 > p(x) = \|\ell\|_Y\, \|x\|, \qquad x \in X .
@@ -65,7 +65,7 @@ The Hahn–Banach theorem of Chapter 2 needed no norm, only a positive homogeneo
 *Uses:* [[§5 Statement and Motivation#^thm-5-2|§5.2]], [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]
 
 > [!remark] Remark: The Pairing $\langle x, \ell \rangle$ Again
-> Wu: one often writes $\ell(x) = \langle x, \ell \rangle$ for $x \in X$, $\ell \in X'$ (as in [[§31 Dual Spaces|§31]]). The expression is linear in $x$, and also linear in $\ell$, since $(c_1 \ell_1 + c_2 \ell_2)(x) = c_1 \ell_1(x) + c_2 \ell_2(x)$; so it is like a bilinear form on $X \times X'$, and it is convenient to think of $X$ and $X'$ as being in a dual relation. The notation comes from Hilbert space: a student asked whether “the dual is itself” means $H$ and $H'$ are isomorphic; Wu: by the Riesz representation theorem every $\ell \in H'$ is $\ell(x) = (x, a)$ for some $a \in H$, and $H'$ is identified with $H$ through $a \leftrightarrow \ell_a$ (Corollary [[§31 Dual Spaces#^cor-31-3|§31.3]]).
+> One often writes $\ell(x) = \langle x, \ell \rangle$ for $x \in X$, $\ell \in X'$ (as in [[§31 Dual Spaces|§31]]). The expression is linear in $x$, and also linear in $\ell$, since $(c_1 \ell_1 + c_2 \ell_2)(x) = c_1 \ell_1(x) + c_2 \ell_2(x)$; so it is like a bilinear form on $X \times X'$, and it is convenient to think of $X$ and $X'$ as being in a dual relation. The notation comes from Hilbert space, where the dual is the space itself in the following sense: by the Riesz representation theorem every $\ell \in H'$ is $\ell(x) = (x, a)$ for some $a \in H$, and $H'$ is identified with $H$ through $a \leftrightarrow \ell_a$ (Corollary [[§31 Dual Spaces#^cor-31-3|§31.3]]).
 > Over $\mathbb{C}$ the two pairings differ slightly: $\langle x, \ell \rangle$ is linear in $\ell$, while $(x, a)$ is conjugate-linear in $a$; correspondingly, the Riesz map $a \mapsto \ell_a$ is conjugate-linear.
 
 ^rem-36-1
@@ -132,7 +132,7 @@ For $\ell \in X'$, $\|\ell\|$ is computed as a supremum of $|\ell(x)|$ over $\|x
 > \|\ell\| = \sup_{x \in X,\ \|x\| \le 1} |\ell(x)|, \qquad \|y\| = \max_{\ell \in X',\ \|\ell\| \le 1} |\ell(y)|
 > $$
 >
-> mirror each other. Wu: both are very useful in practice, for estimates; abstractly the proof is not difficult. A student asked whether “$\le 1$” should be “$= 1$”; Wu: either is a correct statement (“$\le$” does not make the maximum bigger), as the theorem records.
+> mirror each other. Both are very useful in practice, for estimates. In the second, $\|\ell\| \le 1$ and $\|\ell\| = 1$ give the same maximum (allowing $\le$ does not make the maximum bigger), as the theorem records.
 > The two formulas are not perfectly symmetric: the supremum over $X$ need not be attained (Example [[§36 Duality in Normed Spaces#^ex-36-1|§36.1]]), while the one over $X'$ always is; Hahn–Banach is what produces the maximizing functional.
 
 ^rem-36-2
@@ -176,7 +176,7 @@ This is the precise form of the remark in [[§6 Proof of the Hahn–Banach Theor
 
 ## The Dual of $\ell^p$
 
-Before going on, Wu derived the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]). This was Problem 3 of the current homework; Wu waived it after doing it in class. Let $e_j = (0, \ldots, 0, 1, 0, \ldots)$ denote the sequence with $1$ in the $j$-th place and $0$ elsewhere, and let $p'$ be the conjugate exponent of $p$ (Definition [[§17 Hölder's Inequality for Sequences#^def-17-3|§17.3]]).
+Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]). This was Problem 3 of the homework current at the time, waived after the derivation in class. Let $e_j = (0, \ldots, 0, 1, 0, \ldots)$ denote the sequence with $1$ in the $j$-th place and $0$ elsewhere, and let $p'$ be the conjugate exponent of $p$ (Definition [[§17 Hölder's Inequality for Sequences#^def-17-3|§17.3]]).
 
 > [!theorem] Theorem §36.4: The Dual of $\ell^p$
 > Let $1 \le p < \infty$ and $\frac1p + \frac1{p'} = 1$, so that $1 < p' \le \infty$.
@@ -195,7 +195,7 @@ Before going on, Wu derived the dual of $\ell^p$, announced in Lecture 10 (Theor
 ^thm-36-4
 
 > [!proof]+ Proof
-> Wu first treated $1 < p < \infty$ (so $p' < \infty$) and then indicated the changes for $p = 1$, $p' = \infty$; the reason for separating the cases is that $\|a\|_{p'}$ is written differently for $p' = \infty$.
+> The proof first treats $1 < p < \infty$ (so $p' < \infty$) and then indicates the changes for $p = 1$, $p' = \infty$; the reason for separating the cases is that $\|a\|_{p'}$ is written differently for $p' = \infty$.
 >
 > **Step 1: every $a \in \ell^{p'}$ gives a bounded functional.** Let $a \in \ell^{p'}$. By Hölder's inequality (Theorem [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]], with the pair $p, p'$), for $x \in \ell^p$
 >
@@ -203,7 +203,7 @@ Before going on, Wu derived the dual of $\ell^p$, announced in Lecture 10 (Theor
 > \sum_{j=1}^\infty |x_j\, \overline{a_j}| = \sum_{j=1}^\infty |x_j|\, |a_j| \le \|x\|_p\, \|a\|_{p'} < \infty .
 > $$
 >
-> So the series defining $\ell_a(x)$ converges absolutely, hence converges, and $\ell_a$ is well defined. It is linear, because its partial sums are linear in $x$ and limits of sums are sums of limits. It is bounded, since $|\ell_a(x)| \le \sum_j |x_j|\,|a_j| \le \|a\|_{p'}\, \|x\|_p$. Hence $\ell_a \in (\ell^p)'$ and $\|\ell_a\| \le \|a\|_{p'}$. (Wu put the bar on $a_j$ “just in case” $\mathbb{F} = \mathbb{C}$, so that for $p = 2$ the formula is the inner product of $\ell^2$, as in Example [[§31 Dual Spaces#^ex-31-1|§31.1]].)
+> So the series defining $\ell_a(x)$ converges absolutely, hence converges, and $\ell_a$ is well defined. It is linear, because its partial sums are linear in $x$ and limits of sums are sums of limits. It is bounded, since $|\ell_a(x)| \le \sum_j |x_j|\,|a_j| \le \|a\|_{p'}\, \|x\|_p$. Hence $\ell_a \in (\ell^p)'$ and $\|\ell_a\| \le \|a\|_{p'}$. (The bar on $a_j$ matters only for $\mathbb{F} = \mathbb{C}$; it makes the formula for $p = 2$ the inner product of $\ell^2$, as in Example [[§31 Dual Spaces#^ex-31-1|§31.1]].)
 >
 > **Step 2: the candidate $a$, and $a \in \ell^{p'}$.** Let $\ell \in (\ell^p)'$. We want to write $\ell$ as in Step 1. The $j$-th entry of $a$ can be read off by testing on $e_j \in \ell^p$: if $\ell = \ell_a$, then $\ell(e_j) = \overline{a_j}$. Inspired by this, *define*
 >
@@ -233,7 +233,7 @@ Before going on, Wu derived the dual of $\ell^p$, announced in Lecture 10 (Theor
 > $$
 >
 > because $(p' - 1)\,p = p'$.
-> (Multiplying $\frac1p + \frac1{p'} = 1$ by $p p'$ gives $p' + p = p p'$, so $(p'-1)\,p = p p' - p = p'$.) Wu: “when things are correct, it will just work out fine.” Write $S_n = \sum_{j=1}^n |a_j|^{p'}$. By (F) and the choice of $x^0$,
+> (Multiplying $\frac1p + \frac1{p'} = 1$ by $p p'$ gives $p' + p = p p'$, so $(p'-1)\,p = p p' - p = p'$.) Write $S_n = \sum_{j=1}^n |a_j|^{p'}$. By (F) and the choice of $x^0$,
 >
 > $$
 > \ell(x^0) = \sum_{j=1}^n x_j\, \overline{a_j} = \sum_{j=1}^n |a_j|^{p'} = S_n ,
@@ -318,7 +318,7 @@ Before going on, Wu derived the dual of $\ell^p$, announced in Lecture 10 (Theor
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]], [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]
 
 > [!remark] Remark: Why Duality Formulas are Useful
-> Wu: instead of computing the $p$-th power sum $\bigl( \sum_j |a_j|^p \bigr)^{1/p}$, which can be awkward, one multiplies $a$ by an arbitrary $b$ in the unit sphere of $\ell^{p'}$ and maximizes; that is much easier to work with. “This kind of formula is called duality.” For functions it reads
+> Instead of computing the $p$-th power sum $\bigl( \sum_j |a_j|^p \bigr)^{1/p}$, which can be awkward, one multiplies $a$ by an arbitrary $b$ in the unit sphere of $\ell^{p'}$ and maximizes; that is much easier to work with. Formulas of this kind are called duality formulas. For functions it reads
 >
 > $$
 > \|f\|_{L^p} = \sup \Bigl\{ \Bigl| \int f(x)\, \overline{g(x)}\, d\mu(x) \Bigr| : \|g\|_{L^{p'}} = 1 \Bigr\} .
@@ -335,13 +335,13 @@ Before going on, Wu derived the dual of $\ell^p$, announced in Lecture 10 (Theor
 *(Not from lecture; animation added, vault only.)* As $a$ goes around the unit sphere of $\ell^3$ (blue), the maximizing $b_j = |a_j|^{p-2}a_j = |a_j|\,a_j$ moves on the unit sphere of $\ell^{3/2}$ (orange, dashed). The pairing $\sum a_j b_j$ stays $1$, and the line $\sum x_j b_j = 1$ (red) touches the $\ell^3$ sphere at $a$.
 
 > [!remark] Remark: The Dual of $L^p$, Revisited
-> Wu: similarly, for any measure space $(X, \mu)$, e.g. $\Omega \subset \mathbb{R}^n$ with Lebesgue measure, and $1 \le p < \infty$, $(L^p(X, \mu))' = L^{p'}(X, \mu)$; this is Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]. For those who have learned measure theory, the candidate is found with the Radon–Nikodym theorem, and the rest goes as for sequences; Wu left the proof to the class (an outline is given after Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]).
-> For $p = 1$ the measure must be $\sigma$-finite (Lebesgue measure on $\Omega$ is); for $1 < p < \infty$ no condition is needed. Wu also set the scope of the midterm: results that need measure theory (the $L^p$ spaces, beyond their basic properties) and the PDE applications will not be tested; $\ell^p$ will.
+> Similarly, for any measure space $(X, \mu)$, e.g. $\Omega \subset \mathbb{R}^n$ with Lebesgue measure, and $1 \le p < \infty$, $(L^p(X, \mu))' = L^{p'}(X, \mu)$; this is Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]. For those who have learned measure theory, the candidate is found with the Radon–Nikodym theorem, and the rest goes as for sequences; the proof was left to the class (an outline is given after Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]).
+> For $p = 1$ the measure must be $\sigma$-finite (Lebesgue measure on $\Omega$ is); for $1 < p < \infty$ no condition is needed. Midterm scope: results that need measure theory (the $L^p$ spaces, beyond their basic properties) and the PDE applications will not be tested; $\ell^p$ will.
 
 ^rem-36-5
 
 > [!example] Example §36.2: $(\ell^\infty)'$ is Larger than $\ell^1$
-> Wu: the theorem fails for $p = \infty$. $(\ell^\infty)' \neq \ell^1$, and likewise $(L^\infty)' \neq L^1$; the dual of $\ell^\infty$ can be described as a space of finite measures on $\mathbb{N}$.
+> The theorem fails for $p = \infty$: $(\ell^\infty)' \neq \ell^1$, and likewise $(L^\infty)' \neq L^1$; the dual of $\ell^\infty$ can be described as a space of finite measures on $\mathbb{N}$.
 > (Precisely: bounded *finitely* additive set functions on the subsets of $\mathbb{N}$; the countably additive ones correspond to $\ell^1$.) In the homework the space is not $\ell^\infty$ but $c_0$, the sequences tending to $0$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]); there the finite sequences are dense, and the same strategy as in Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] applies. In $\ell^\infty$ they are not dense: for every finite sequence $x$, $\|(1, 1, 1, \ldots) - x\|_\infty \ge 1$. So Step 3 of the proof breaks down.
 
 ^ex-36-2
@@ -370,7 +370,7 @@ The next theorem extends Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.
 
 ![[m556-36-1.svg]]
 
-Wu's heuristic, “cheating a little” by pretending there is an inner product: the distance from $z$ to $Y$ is the length of the perpendicular from $z$ to $Y$, i.e. of the projection of $z$ onto the perpendicular direction $Y^\perp$. If $Y^\perp$ is spanned by orthonormal $e_j$, that projection is $\sum_j (z, e_j)\, e_j$, and each $(z, e_j)$ is a bounded functional of norm $1$ vanishing on $Y$, applied to $z$. In a normed space “perpendicular to $Y$” is replaced by “a functional vanishing on $Y$”, and the theorem says the heuristic is exact.
+A heuristic, pretending there is an inner product: the distance from $z$ to $Y$ is the length of the perpendicular from $z$ to $Y$, i.e. of the projection of $z$ onto the perpendicular direction $Y^\perp$. If $Y^\perp$ is spanned by orthonormal $e_j$, that projection is $\sum_j (z, e_j)\, e_j$, and each $(z, e_j)$ is a bounded functional of norm $1$ vanishing on $Y$, applied to $z$. In a normed space “perpendicular to $Y$” is replaced by “a functional vanishing on $Y$”, and the theorem says the heuristic is exact.
 
 > [!proof]+ Proof
 > **Step 1: $\sup \le \inf$.** Let $\ell \in X'$ with $\|\ell\| \le 1$ and $\ell(y) = 0$ for all $y \in Y$. Then $\ell(z) = \ell(z) - \ell(y) = \ell(z - y)$ for every $y \in Y$, so
@@ -379,7 +379,7 @@ Wu's heuristic, “cheating a little” by pretending there is an inner product:
 > |\ell(z)| \le \|\ell\|\, \|z - y\| \le \|z - y\| \qquad \text{for all } y \in Y .
 > $$
 >
-> (Wu: the bound $\|\ell\| \le 1$ is essential; otherwise $\ell$ could be multiplied by any constant.) Taking the infimum over $y$, $|\ell(z)| \le \inf_{y \in Y} \|z - y\|$; then taking the supremum over all such $\ell$,
+> (The bound $\|\ell\| \le 1$ is essential; otherwise $\ell$ could be multiplied by any constant.) Taking the infimum over $y$, $|\ell(z)| \le \inf_{y \in Y} \|z - y\|$; then taking the supremum over all such $\ell$,
 >
 > $$
 > \sup \bigl\{ |\ell(z)| : \ell \in X',\ \|\ell\| \le 1,\ \ell|_Y = 0 \bigr\} \le \inf_{y \in Y} \|z - y\| .
@@ -387,7 +387,7 @@ Wu's heuristic, “cheating a little” by pretending there is an inner product:
 >
 > We do not yet know that the supremum is attained.
 >
-> **Step 2: a functional attaining the infimum.** Fix $z_0 \in X$; the functional found depends on $z_0$ (a student asked whether the same $\ell$ works for every $z$; it does not, just as the maximizing functional in Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] depends on $y_0$). Let
+> **Step 2: a functional attaining the infimum.** Fix $z_0 \in X$; the functional found depends on $z_0$ (the same $\ell$ does not work for every $z$, just as the maximizing functional in Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] depends on $y_0$). Let
 >
 > $$
 > m = \inf_{y \in Y} \|z_0 - y\| \ \ge 0 .
@@ -427,7 +427,7 @@ Wu's heuristic, “cheating a little” by pretending there is an inner product:
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
 > [!remark] Remark: How to Find the Proof
-> A student asked how one would think of the subspace $Y_1$. Wu: first, believe the statement, because it is true in a Hilbert space (the picture above). Then what is left is to find an $\ell$ with $\|\ell\| \le 1$, $\ell = 0$ on $Y$ (“somehow perpendicular to $Y$”) and $\ell(z_0) = m$. On the span of $z_0$ and $Y$ these requirements leave no choice (up to replacing $m$ by $e^{i\theta} m$), so define $\ell$ there, check its norm, and let Hahn–Banach extend it. Extensions are usually not unique; on the smaller space there is no choice. “It's really just pure logic.” The proof of Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] is the same argument with $Y = \{0\}$.
+> How one would think of the subspace $Y_1$: first, believe the statement, because it is true in a Hilbert space (the picture above). Then what is left is to find an $\ell$ with $\|\ell\| \le 1$, $\ell = 0$ on $Y$ (in a sense perpendicular to $Y$) and $\ell(z_0) = m$. On the span of $z_0$ and $Y$ these requirements leave no choice (up to replacing $m$ by $e^{i\theta} m$), so define $\ell$ there, check its norm, and let Hahn–Banach extend it. Extensions are usually not unique; on the smaller space there is no choice. The proof of Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] is the same argument with $Y = \{0\}$.
 > Closedness of $Y$ is not needed: if $z_0$ lies in the closure of $Y$ but not in $Y$, then $m = 0$ and the construction gives $L = 0$. If $Y$ is closed and $z_0 \notin Y$, then $m > 0$ (a ball around $z_0$ misses $Y$), so there is an $L \in X'$ vanishing on $Y$ with $L(z_0) \neq 0$.
 
 ^rem-36-6
@@ -474,7 +474,7 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]] read
 ^pf-36-7
 
 > [!theorem] Theorem §36.8: The Dual of a Quotient
-> Let $X$ be a normed linear space and $Y$ a closed linear subspace of $X$, so that $X/Y$ is a normed linear space with the quotient norm (Theorem [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]]). Then $(X/Y)'$ is isometrically isomorphic to $Y^\perp$.
+> Let $X$ be a normed linear space and $Y$ a closed linear subspace of $X$, so that $X/Y$ is a normed linear space with the quotient norm (Theorem [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]]). Then $(X/Y)'$ is isometrically isomorphic to $Y^\perp$. Here both sides carry a norm — $(X/Y)'$ the dual norm of the quotient norm, $Y^\perp$ the norm of $X'$ — and the isomorphism preserves it.
 
 ^thm-36-8
 
@@ -554,4 +554,4 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]] read
 
 ^rem-36-8
 
-Wu's motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]), and in any linear space $X \cong X/Y \oplus Y$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]); so $X/Y$ and $Y^\perp$ look like each other's dual. A student asked what “isometrically” means: both sides carry a norm — $(X/Y)'$ the dual norm of the quotient norm, $Y^\perp$ the norm of $X'$ — and the isomorphism preserves it. Wu: although today's material looks simple, it will be on the midterm.
+Motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]), and in any linear space $X \cong X/Y \oplus Y$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]); so $X/Y$ and $Y^\perp$ look like each other's dual. This material (Lecture 13) is on the midterm.

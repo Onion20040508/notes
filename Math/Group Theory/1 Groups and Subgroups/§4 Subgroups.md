@@ -127,11 +127,11 @@ tags: [group-theory, math493]
 > - Elementary version: [[§5 The Induction Principle#^ex-5-5|250 Ex. §5.5]] (the same laws for real numbers and exponents in ℕ, by induction).
 
 > [!remark] Remark: Two Non-Laws
-> The exponent laws concern powers of a *single* element. For two elements, as stressed in lecture:
+> The exponent laws concern powers of a *single* element. For two elements:
 >
-> $$ (gh)^2 = ghgh, \text{ which is “probably not” } g^2 h^2; $$
+> $$ (gh)^2 = ghgh, \text{ which in general is not } g^2 h^2; $$
 >
-> $$ (gh)^{-1} = h^{-1} g^{-1}, \text{ which is “probably not” } g^{-1} h^{-1}. $$
+> $$ (gh)^{-1} = h^{-1} g^{-1}, \text{ which in general is not } g^{-1} h^{-1}. $$
 >
 > Each identity $(gh)^n = g^n h^n$ ($n = 2$ or $n = -1$) holds for all $g, h$ exactly when $G$ is abelian ([[§18 Conjugation, Products, and Pointwise Products#^prop-18-4|§18, Characterizations of Abelian Groups]]). In $S_3$ with $g = (1\,2)$, $h = (2\,3)$: $(gh)^2 = (1\,3\,2) \neq e = g^2 h^2$, and $(gh)^{-1} = (1\,3\,2) \neq (1\,2\,3) = g^{-1}h^{-1}$.
 

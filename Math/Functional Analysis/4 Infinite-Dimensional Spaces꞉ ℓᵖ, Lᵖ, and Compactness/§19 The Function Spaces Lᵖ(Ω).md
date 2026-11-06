@@ -51,7 +51,7 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 > - The sequence analogue: [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]].
 
 > [!remark] Remark: What “Integrable” Means Here
-> On the board the definition read “$f$ integrable on $\Omega$”, and Wu deliberately left “integrable” unspecified. Rigorously the condition is that $f$ be Lebesgue measurable with finite integral of $|f|^p$; for $p > 1$ this does not require $\int_\Omega |f| < \infty$ ($1/x$ on $(1, \infty)$ is in $L^2$ but not in $L^1$). Functions agreeing outside a set of measure zero are identified, and $\|f\|_{L^\infty}$ is the [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-9|essential supremum]]; without the identification, positivity of the norm fails ($f = 0$ except at one point has $\|f\|_p = 0$). Since MATH 551 is not a prerequisite for this course, she asked us to take “integrable” as “anything you will meet,” with continuous functions as the safe case (continuous on a compact $\Omega$ implies Riemann integrable), and said the theory could be made rigorous later. The full treatment — Lebesgue integral, $L^p$, [[Hölder's Inequality|Hölder]], [[Minkowski's Inequality|Minkowski]], [[Riesz–Fischer Theorem|Riesz–Fischer]], [[Dominated Convergence Theorem|dominated]] and [[Monotone Convergence Theorem (Lebesgue)|monotone convergence]], [[Fatou's Lemma|Fatou]] — is in the MATH 551 notes, Chapters on [[· 4 Integration Theory|Lebesgue integration]] and [[· 6 Lᵖ Spaces|Lᵖ spaces]], and that is the version to rely on. (For those without it: chapter 2 of the posted reference notes.)
+> In lecture the definition asked only that $f$ be integrable on $\Omega$, and “integrable” was deliberately left unspecified. Rigorously the condition is that $f$ be Lebesgue measurable with finite integral of $|f|^p$; for $p > 1$ this does not require $\int_\Omega |f| < \infty$ ($1/x$ on $(1, \infty)$ is in $L^2$ but not in $L^1$). Functions agreeing outside a set of measure zero are identified, and $\|f\|_{L^\infty}$ is the [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-9|essential supremum]]; without the identification, positivity of the norm fails ($f = 0$ except at one point has $\|f\|_p = 0$). Since MATH 551 is not a prerequisite for this course, “integrable” may be read as covering every function that comes up, with continuous functions as the safe case (continuous on a compact $\Omega$ implies Riemann integrable); the theory can be made rigorous later. The full treatment — Lebesgue integral, $L^p$, [[Hölder's Inequality|Hölder]], [[Minkowski's Inequality|Minkowski]], [[Riesz–Fischer Theorem|Riesz–Fischer]], [[Dominated Convergence Theorem|dominated]] and [[Monotone Convergence Theorem (Lebesgue)|monotone convergence]], [[Fatou's Lemma|Fatou]] — is in the MATH 551 notes, Chapters on [[· 4 Integration Theory|Lebesgue integration]] and [[· 6 Lᵖ Spaces|Lᵖ spaces]], and that is the version to rely on. (For those without it: chapter 2 of the posted reference notes.)
 
 ^rem-19-2
 
@@ -65,7 +65,7 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 ^thm-19-1
 
 > [!proof]+ Proof
-> Not proved in lecture; “the same idea, exactly” as Theorem [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]], with the integral in place of the sum: normalize, apply [[§16 Means and Young's Inequality#^lem-16-3|Young]] pointwise, integrate. A full proof is in the MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *Hölder's Inequality* ([[Hölder's Inequality|Theorem: Hölder's Inequality]]).
+> Not proved in lecture; the idea is exactly that of Theorem [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]], with the integral in place of the sum: normalize, apply [[§16 Means and Young's Inequality#^lem-16-3|Young]] pointwise, integrate. A full proof is in the MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *Hölder's Inequality* ([[Hölder's Inequality|Theorem: Hölder's Inequality]]).
 
 ^pf-19-1
 
@@ -102,7 +102,7 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 ^thm-19-3
 
 > [!proof]+ Proof
-> Deferred: Wu skipped the proof because it needs real-analysis tools (a candidate limit must be built from an almost-everywhere convergent subsequence, and [[Monotone Convergence Theorem (Lebesgue)|monotone]]/[[Dominated Convergence Theorem|dominated convergence]] used to close the argument). The plan is the same as for $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]) — find the candidate, then prove convergence — but the candidate is harder to produce. The theorem is Riesz–Fischer; a full proof is in the MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *[[Riesz–Fischer Theorem|The Riesz–Fischer Theorem]]*.
+> Deferred: the proof was skipped in lecture because it needs real-analysis tools (a candidate limit must be built from an almost-everywhere convergent subsequence, and [[Monotone Convergence Theorem (Lebesgue)|monotone]]/[[Dominated Convergence Theorem|dominated convergence]] used to close the argument). The plan is the same as for $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]) — find the candidate, then prove convergence — but the candidate is harder to produce. The theorem is Riesz–Fischer; a full proof is in the MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *[[Riesz–Fischer Theorem|The Riesz–Fischer Theorem]]*.
 
 ^pf-19-3
 
@@ -118,7 +118,7 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 ^thm-19-4
 
 > [!proof]+ Proof
-> Deferred. Wu said she would look for a proof that avoids heavy measure theory and present it next lecture if one is available. (The MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *Density and Separability*, [[§35 Lᵖ as a Banach Space#^thm-35-12|prove]] that simple functions, step functions, and compactly supported continuous functions are dense in $L^p$ for $1 \le p < \infty$; smoothing by convolution with a $C^\infty$ bump takes it the rest of the way to $C_c^\infty$.)
+> Deferred: not proved in lecture. (The MATH 551 notes, Chapter *$L^p$ Spaces*, subsection *Density and Separability*, [[§35 Lᵖ as a Banach Space#^thm-35-12|prove]] that simple functions, step functions, and compactly supported continuous functions are dense in $L^p$ for $1 \le p < \infty$; smoothing by convolution with a $C^\infty$ bump takes it the rest of the way to $C_c^\infty$.)
 
 ^pf-19-4
 
@@ -136,7 +136,7 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 > [!proof]+ Proof
 > Take $\Omega = [0,1]$ and the step function $f = \chi_{[1/2, 1]}$, i.e. $f(x) = 0$ for $x < 1/2$ and $f(x) = 1$ for $x \ge 1/2$; $f$ is bounded, so $f \in L^\infty[0,1]$. We claim $\|f - g\|_{L^\infty} \ge 1/2$ for every $g \in C[0,1]$, so no sequence of continuous functions converges to $f$ in $L^\infty$. Suppose instead $\|f - g\|_{L^\infty} = \sup_x |f(x) - g(x)| < 1/2$ for some continuous $g$. Then for $x < 1/2$, $|g(x)| = |f(x) - g(x)| < 1/2$, and for $x \ge 1/2$, $|g(x) - 1| < 1/2$, so $g(x) > 1/2$. By continuity of $g$ at $1/2$, $g(1/2) = \lim_{x \to 1/2^-} g(x) \le 1/2$, while $g(1/2) > 1/2$ from the second condition: a contradiction. (With the Lebesgue definition of $L^\infty$ the same argument works after replacing “for all $x$” by “for almost every $x$” and using that a continuous function satisfying a strict inequality almost everywhere on an interval satisfies the non-strict one everywhere on it.)
 >
-> Alternatively, as Wu suggested: $C[0,1]$ with the supremum norm is complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]), hence a closed subspace of $L^\infty[0,1]$ (Lemma [[§12 Completeness#^lem-12-2|§12.2]]), and a closed proper subspace is not dense; $f$ above shows the inclusion is proper.
+> Alternatively: $C[0,1]$ with the supremum norm is complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]), hence a closed subspace of $L^\infty[0,1]$ (Lemma [[§12 Completeness#^lem-12-2|§12.2]]), and a closed proper subspace is not dense; $f$ above shows the inclusion is proper.
 
 ^pf-19-5
 
@@ -318,6 +318,6 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 > - The method as a technique: [[Functional Analysis Problem-Solving Techniques#^ex-t9|Technique T9]] (Incompleteness and Identifying the Completion).
 
 > [!remark] Remark
-> This is the example to keep in mind for what the abstract construction of the completion does in practice. Started from continuous functions — concrete, classical objects — and measured in the $L^p$ norm, the completion is forced to contain discontinuous and even badly behaved functions, and it is exactly $L^p$. The ramp functions of Step 2 converge in $L^p$ to the class of the step function $\chi_{(c,b]}$, and Step 2 is precisely the statement that this class contains no continuous representative. Read backwards, the proposition says that $L^p[a,b]$ *could* have been *defined* as the completion of $C[a,b]$ in the $L^p$ norm, with no measure theory at all; that is one standard route to the Lebesgue spaces, and it is the definition Lax adopts (§5.1, example (f)), and it explains Wu's remark that “when we write $L^1[a,b]$, intuitively we are taking this norm.”
+> This is the example to keep in mind for what the abstract construction of the completion does in practice. Started from continuous functions — concrete, classical objects — and measured in the $L^p$ norm, the completion is forced to contain discontinuous and even badly behaved functions, and it is exactly $L^p$. The ramp functions of Step 2 converge in $L^p$ to the class of the step function $\chi_{(c,b]}$, and Step 2 is precisely the statement that this class contains no continuous representative. Read backwards, the proposition says that $L^p[a,b]$ *could* have been *defined* as the completion of $C[a,b]$ in the $L^p$ norm, with no measure theory at all; that is one standard route to the Lebesgue spaces, and it is the definition Lax adopts (§5.1, example (f)), and it is the precise sense in which writing $L^1[a,b]$ intuitively means taking the $L^1$ norm on continuous functions.
 
 ^rem-19-4

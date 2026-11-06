@@ -9,7 +9,7 @@ tags: [functional-analysis, math556, companion]
 
 *Companion — Threads: dimension, completeness. $\sum_n |e_n\rangle\langle e_n| = \mathbf{1}$ holds strongly, not in norm.*
 
-The physicists' identity $\sum_n |e_n\rangle\langle e_n| = \mathbf{1}$ is Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]] rewritten; the name “completeness relation” and Wu's “[[§27 Orthonormal Sets and Bases#^def-27-2|complete orthonormal set]]” refer to the same thing. What needs care is the sense in which an infinite sum of operators equals $\mathbf{1}$.
+The physicists' identity $\sum_n |e_n\rangle\langle e_n| = \mathbf{1}$ is Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]] rewritten; the name “completeness relation” and the course's term “[[§27 Orthonormal Sets and Bases#^def-27-2|complete orthonormal set]]” refer to the same thing. What needs care is the sense in which an infinite sum of operators equals $\mathbf{1}$.
 
 ## Operators and Projections
 

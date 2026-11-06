@@ -9,7 +9,7 @@ tags: [functional-analysis, math556]
 
 *Stage: inner products — Threads meet: convexity $\times$ completeness. Closest points; the orthogonal complement replaces the quotient of [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]].*
 
-Everything from here on uses completeness, and the results are the ones for which Hilbert spaces are named. Wu's comment on the method: much of what is proved below is familiar from $\mathbb{R}^n$, and the proofs there never used finite-dimensionality — so they go through unchanged. The one new ingredient is that a closest point must be *produced* as a limit, which is where completeness enters.
+Everything from here on uses completeness, and the results are the ones for which Hilbert spaces are named. On the method: much of what is proved below is familiar from $\mathbb{R}^n$, and the proofs there never used finite-dimensionality — so they go through unchanged. The one new ingredient is that a closest point must be *produced* as a limit, which is where completeness enters.
 
 ## Continuity of the Inner Product
 
@@ -40,7 +40,7 @@ Everything from here on uses completeness, and the results are the ones for whic
 *Uses:* [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-2|§23.2]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]]
 
 > [!remark] Remark
-> The point Wu made in class: the factor $\|y_n\|$ cannot be dropped and cannot a priori be assumed bounded; that it is bounded follows from convergence of $y_n$, by subadditivity. Continuity in each variable separately ($x_n \to x_0$ with $y$ fixed) is the special case $y_n = y_0$, and is what is used below. Continuity of the norm (Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]) is the case $y_n = x_n$, $y_0 = x_0$.
+> The factor $\|y_n\|$ cannot be dropped and cannot a priori be assumed bounded; that it is bounded follows from convergence of $y_n$, by subadditivity. Continuity in each variable separately ($x_n \to x_0$ with $y$ fixed) is the special case $y_n = y_0$, and is what is used below. Continuity of the norm (Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]) is the case $y_n = x_n$, $y_0 = x_0$.
 
 ^rem-25-1
 
@@ -93,7 +93,7 @@ Everything from here on uses completeness, and the results are the ones for whic
 > \|x_0 - y_0\|^2 = \lim_{m \to \infty} \|x_0 - y_m\|^2 = d^2 ,
 > $$
 >
-> the last equality by (5.2). (Wu noted at this point that a continuity lemma was needed and supplied Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]; continuity of the norm suffices here.)
+> the last equality by (5.2). (A continuity lemma is needed at this point; Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]] supplies one, but continuity of the norm suffices here.)
 >
 > **Step 5: uniqueness.** Let $y_0, y_1 \in K$ both satisfy $\|x_0 - y_0\| = \|x_0 - y_1\| = d$. The parallelogram law with $a = x_0 - y_0$, $b = x_0 - y_1$ gives
 >
@@ -188,7 +188,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > - Axler's definition: [[§3 Subspaces#^ladr-1-41|LADR 1.41]]; for two subspaces, [[§3 Subspaces#^ladr-1-46|LADR 1.46]] (and [[Condition for a direct sum|LADR 1.45]]).
 
 > [!remark] Remark: Internal and External
-> By Proposition [[§1 Linear Spaces#^prop-1-3|§1.3]], $X = Y_1 \oplus Y_2$ holds iff $Y_1 + Y_2 = X$ and $Y_1 \cap Y_2 = \{0\}$, and then $(y_1, y_2) \mapsto y_1 + y_2$ is an isomorphism from the external direct sum of Definition [[§1 Linear Spaces#^def-1-4|§1.4]] onto $X$; so the same symbol for the two notions causes no harm. This is the definition of Axler raised as a question in the first lecture; Wu introduced it here because the theorem below needs it. In the language of [[§2 Quotient Spaces and Complements#Complements and the Isomorphism X ≅ X/Y ⊕ Y|§2]], $X = Y \oplus W$ says exactly that $W$ is a complement of $Y$.
+> By Proposition [[§1 Linear Spaces#^prop-1-3|§1.3]], $X = Y_1 \oplus Y_2$ holds iff $Y_1 + Y_2 = X$ and $Y_1 \cap Y_2 = \{0\}$, and then $(y_1, y_2) \mapsto y_1 + y_2$ is an isomorphism from the external direct sum of Definition [[§1 Linear Spaces#^def-1-4|§1.4]] onto $X$; so the same symbol for the two notions causes no harm. This is the definition of Axler; it is introduced here because the theorem below needs it. In the language of [[§2 Quotient Spaces and Complements#Complements and the Isomorphism X ≅ X/Y ⊕ Y|§2]], $X = Y \oplus W$ says exactly that $W$ is a complement of $Y$.
 
 ^rem-25-4
 
@@ -231,7 +231,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > s^2\|y\|^2 - 2s\,|(v,y)| \ge 0, \qquad \text{i.e.} \qquad s\,\|y\|^2 \ge 2\,|(v,y)| .
 > $$
 >
-> This fails for $0 < s < 2|(v,y)| / \|y\|^2$ — explicitly, $s = |(v,y)|/\|y\|^2$ gives $s^2\|y\|^2 - 2s|(v,y)| = -|(v,y)|^2/\|y\|^2 < 0$ — a contradiction. Hence $(v, y) = 0$ for every $y \in Y$, and $v \in Y^\perp$. (Wu: “you are required to write down precisely how small is enough.”)
+> This fails for $0 < s < 2|(v,y)| / \|y\|^2$ — explicitly, $s = |(v,y)|/\|y\|^2$ gives $s^2\|y\|^2 - 2s|(v,y)| = -|(v,y)|^2/\|y\|^2 < 0$ — a contradiction. Hence $(v, y) = 0$ for every $y \in Y$, and $v \in Y^\perp$. (An argument of this kind must state precisely how small is small enough, as done here.)
 >
 > **(1), uniqueness.** Suppose $x = y + v = y' + v'$ with $y, y' \in Y$ and $v, v' \in Y^\perp$. Then $y - y' = v' - v$ lies in $Y \cap Y^\perp$ (both are subspaces, Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]]). But if $w \in Y \cap Y^\perp$ then $(w, w) = 0$ by definition of $Y^\perp$ with $w$ as the element of $Y$, so $w = 0$ by positivity. Hence $y = y'$ and $v = v'$.
 >

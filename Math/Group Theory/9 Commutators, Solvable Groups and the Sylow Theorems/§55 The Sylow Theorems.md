@@ -148,7 +148,7 @@ tags: [group-theory, math493]
 > [!proof]+ Proof
 > *Idea:* WS 10.3(2) with $\Gamma = G$, $\Pi = P_1$ puts $P_2$ inside some $gP_1g^{-1}$, $g \in G$.
 >
-> *(Lecture 10/16, “by 10.3”.)* Let $|G| = p^k m$ with $p \nmid m$, so $|P_1| = |P_2| = p^k$. Apply WS 10.3(2) (Proposition [[§55 The Sylow Theorems#^prop-55-3|§55.3]]) with $\Gamma = G$, $\Pi = P_1$, and the subgroup $P_2$ in the role of $G$: there is $g \in G$ such that $P_2 \cap gP_1g^{-1}$ is a Sylow $p$-subgroup of $P_2$. Since $|P_2| = p^k$, a Sylow $p$-subgroup of $P_2$ has $p^k$ elements, so it is $P_2$ itself:
+> *(Lecture 10/16.)* Let $|G| = p^k m$ with $p \nmid m$, so $|P_1| = |P_2| = p^k$. Apply WS 10.3(2) (Proposition [[§55 The Sylow Theorems#^prop-55-3|§55.3]]) with $\Gamma = G$, $\Pi = P_1$, and the subgroup $P_2$ in the role of $G$: there is $g \in G$ such that $P_2 \cap gP_1g^{-1}$ is a Sylow $p$-subgroup of $P_2$. Since $|P_2| = p^k$, a Sylow $p$-subgroup of $P_2$ has $p^k$ elements, so it is $P_2$ itself:
 >
 > $$ P_2 \cap gP_1g^{-1} = P_2, \qquad\text{that is,}\qquad P_2 \subseteq gP_1g^{-1}. $$
 >
@@ -293,7 +293,7 @@ tags: [group-theory, math493]
 > [!theorem] Proposition §55.11: Groups of Order $pq$
 > Let $p < q$ be primes with $q \not\equiv 1 \pmod p$, and let $|G| = pq$. Then $G \cong \mathbb{Z}/pq\mathbb{Z}$.
 >
-> *Source: lecture 10/16 (“same for $|G| = pq$”); proof filled in*
+> *Source: lecture 10/16, stated after the case $|G| = 15$); proof filled in*
 
 ^prop-55-11
 
@@ -318,8 +318,6 @@ tags: [group-theory, math493]
 > *(Not from lecture.)* The hypothesis cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic. There $n_3 = 1$ but $n_2 = 3$ (Example [[§54 p-Groups and Sylow Subgroups#^ex-54-1|§54.1]]), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step. What remains is a [[§58 Semidirect Products#^def-58-2|semidirect product]]: $S_3 \cong \mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ (Example [[§58 Semidirect Products#^ex-58-3|§58.3]]).
 
 ^rem-55-3
-
-Worksheet 10: “Realistically, we'll wind up covering this in lecture.”
 
 ## Flags and the Sylow Subgroups of $GL_n(\mathbb{F}_p)$
 

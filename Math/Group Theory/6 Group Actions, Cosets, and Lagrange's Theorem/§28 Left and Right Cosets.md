@@ -17,7 +17,7 @@ tags: [group-theory, math493]
 ^def-28-1
 
 > [!remark] Remark: Why Two Definitions, and When They Agree
-> Since $H$ is a subgroup, $g_1 g_2^{-1} \in H \iff g_2 g_1^{-1} \in H$ (closure under inverses), so the right relation is symmetric in the two elements as expected. If $G$ is abelian, $g_1^{-1}g_2 = g_2 g_1^{-1}$ and the two relations coincide; in general they differ, which is the “small subtlety” of the non-commutative case. For $G = (\mathbb{Z}, +)$ and $H = n\mathbb{Z}$, both relations read $-g_1 + g_2 \in n\mathbb{Z}$, i.e. $g_1 \equiv g_2 \pmod n$: ordinary congruence.
+> Since $H$ is a subgroup, $g_1 g_2^{-1} \in H \iff g_2 g_1^{-1} \in H$ (closure under inverses), so the right relation is symmetric in the two elements as expected. If $G$ is abelian, $g_1^{-1}g_2 = g_2 g_1^{-1}$ and the two relations coincide; in general they differ. For $G = (\mathbb{Z}, +)$ and $H = n\mathbb{Z}$, both relations read $-g_1 + g_2 \in n\mathbb{Z}$, i.e. $g_1 \equiv g_2 \pmod n$: ordinary congruence.
 
 ^rem-28-1
 
