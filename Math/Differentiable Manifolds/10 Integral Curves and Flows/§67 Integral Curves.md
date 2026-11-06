@@ -5,7 +5,7 @@ chapter: 10
 section: 67
 tags: [differentiable-manifolds, math591]
 ---
-← [[§66 Partitions of Unity]] · ↑ [[· 10 Integral Curves and Flows]] · [[§68 Local Existence and Uniqueness]] →
+← [[§66 The Whitney Embedding Theorem]] · ↑ [[· 10 Integral Curves and Flows]] · [[§68 Local Existence and Uniqueness]] →
 
 *Stage: dynamics — Curves whose velocity is prescribed by a vector field; in coordinates, a first-order system of ODEs.*
 

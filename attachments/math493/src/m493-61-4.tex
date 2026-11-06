@@ -1,0 +1,12 @@
+% Figure from MATH 493 notes, section 61. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth]
+\draw[black!55, dashed] (-0.8,0) -- (4.2,0) node[right, font=\scriptsize] {$L_1 = \operatorname{span}(u_1)$};
+\draw[->, very thick] (0,0) -- (2.4,0) node[below, font=\scriptsize] {$u_1 = v_1$};
+\draw[->, very thick, blue!70!black] (0,0) -- (1.6,2.0) node[above left, font=\scriptsize] {$v_2$};
+\draw[->, thick, orange!85!black] (0,0.06) -- (1.6,0.06);
+\node[orange!85!black, font=\scriptsize, below] at (1.05,-0.25) {$P_{L_1}(v_2)$};
+\draw[->, thick, red!70!black] (1.6,0) -- (1.6,2.0) node[midway, right, font=\scriptsize] {$u_2 = v_2 - P_{L_1}(v_2)$};
+\draw[red!70!black] (1.6,0.22) -- (1.38,0.22) -- (1.38,0);
+\draw[->, red!70!black, dashed] (0,0) -- (0,2.0) node[left, font=\scriptsize] {$u_2$};
+\node[font=\scriptsize, align=left, anchor=west] at (4.6,1.3) {$P_{L_1}(v_2) = \dfrac{\langle v_2, u_1 \rangle}{\langle u_1, u_1 \rangle}\,u_1$;\\[2pt]\textcolor{red!70!black}{$u_2$} is orthogonal to $L_1$, and\\$\operatorname{span}(u_1, u_2) = \operatorname{span}(v_1, v_2)$;\\then $w_k = u_k / \sqrt{\langle u_k, u_k \rangle}$.\\Drawn in a real plane: over $\mathbb{C}$ the\\\quad coefficient is a complex number};
+\end{tikzpicture}

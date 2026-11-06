@@ -28,9 +28,9 @@ tags: [differentiable-manifolds, hub]
 - [[§44 Embeddings#^prop-44-10|Proposition §44.10: Sections Are Closed Embeddings]]
 - [[§44 Embeddings#^prop-44-15|Proposition §44.15: When an Immersed Submanifold Is Regular]]
 - [[§47 The Unit Quaternions and SU(2)#^prop-47-5|Proposition §47.5: S³ Is SU(2)]]
-- [[§65 The Whitney Embedding Theorem#^thm-65-6|Theorem §65.6: The Whitney Theorems for Compact Manifolds]]
-- [[§65 The Whitney Embedding Theorem#^prop-65-10|Proposition §65.10: Immersions into ℝ²ᵐ from Any Embedding]]
-- [[§65 The Whitney Embedding Theorem#^cor-65-11|Corollary §65.11: Every Manifold Has a Morse Function]]
+- [[§66 The Whitney Embedding Theorem#^thm-66-6|Theorem §66.6: The Whitney Theorems for Compact Manifolds]]
+- [[§66 The Whitney Embedding Theorem#^prop-66-9|Proposition §66.9: Immersions into ℝ²ᵐ from Any Embedding]]
+- [[§66 The Whitney Embedding Theorem#^cor-66-10|Corollary §66.10: Every Manifold Has a Morse Function]]
 
 ## Connections
 - **Used for.** An embedding is a diffeomorphism onto its image, with the induced smooth structure of the submanifold ([[§44 Embeddings#^cor-44-3|§44.3]]). Combined with [[Injective Proper Immersions Are Embeddings]], the image of an injective immersion of a compact manifold is a submanifold.

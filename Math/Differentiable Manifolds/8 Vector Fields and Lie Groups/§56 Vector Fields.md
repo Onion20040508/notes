@@ -313,7 +313,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 ^prop-56-4
 
 > [!proof]+ Proof
-> *(Stated in Lecture 15, and again in Lecture 16, among technical results not needed in the homework. Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function is constructed in Euclidean space first, and then pulled back with the chart. Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in Theorem [[§65 The Whitney Embedding Theorem#^thm-65-9|§65.9]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
+> *(Stated in Lecture 15, and again in Lecture 16, among technical results not needed in the homework. Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function is constructed in Euclidean space first, and then pulled back with the chart. Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in Theorem [[§66 The Whitney Embedding Theorem#^thm-66-8|§66.8]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
 >
 > *1. A smooth function vanishing to infinite order.* Let $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$. By induction, for $t > 0$, $h^{(k)}(t) = P_k(1/t)\, e^{-1/t}$ with $P_k$ a polynomial, since $\frac{d}{dt}\big(P(1/t) e^{-1/t}\big) = \big(-P'(1/t)/t^2 + P(1/t)/t^2\big) e^{-1/t}$. As $s^j e^{-s} \to 0$ for $s = 1/t \to \infty$, every $h^{(k)}(t) \to 0$ as $t \to 0^+$, and the right difference quotient $\big(h^{(k)}(t) - 0\big)/t = (1/t)\, P_k(1/t)\, e^{-1/t} \to 0$ as well. So by induction every $h^{(k)}$ exists at $0$ and equals $0$, and $h$ is smooth on $\mathbb{R}$, with $h > 0$ exactly on $(0, \infty)$.
 >
@@ -329,7 +329,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 
 ^pf-56-4
 
-*Uses:* [[§65 The Whitney Embedding Theorem#^thm-65-9|§65.9]], [[§56 Vector Fields#^def-56-9|Def. §56.9]]
+*Uses:* [[§66 The Whitney Embedding Theorem#^thm-66-8|§66.8]], [[§56 Vector Fields#^def-56-9|Def. §56.9]]
 
 ![[m591-53-1.svg]]
 

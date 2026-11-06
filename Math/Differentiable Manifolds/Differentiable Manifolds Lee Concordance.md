@@ -84,8 +84,8 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§62 Sets of Measure Zero\|§62]] Sets of measure zero | Chapter 6, *Sets of Measure Zero* (Lemma 6.2, Proposition 6.5, Lemma 6.6); Appendix C (Proposition C.18, Corollary C.25) |
 | [[§63 Sard's Theorem\|§63]] Sard's theorem | Chapter 6, *Sard's Theorem* (Theorem 6.10, Corollary 6.11) |
 | [[§64 Parametric Transversality\|§64]] Parametric transversality | Chapter 6, *The Transversality Homotopy Theorem* (Theorem 6.35) |
-| [[§65 The Whitney Embedding Theorem\|§65]] The Whitney embedding theorem | Chapter 6, *The Whitney Embedding Theorem* (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20–2.22 (bump functions) |
-| [[§66 Partitions of Unity\|§66]] Partitions of unity | Chapter 2, *Partitions of Unity* (Lemmas 2.20–2.22, Theorem 2.23); Chapter 1, *Paracompactness* (Theorem 1.15); Proposition A.60; Chapter 2, *Applications of Partitions of Unity* (Proposition 2.28) |
+| [[§66 The Whitney Embedding Theorem\|§66]] The Whitney embedding theorem | Chapter 6, *The Whitney Embedding Theorem* (Lemmas 6.13 and 6.14, Theorems 6.15 and 6.18); Proposition 2.25 and Lemmas 2.20–2.22 (bump functions) |
+| [[§65 Partitions of Unity\|§65]] Partitions of unity | Chapter 2, *Partitions of Unity* (Lemmas 2.20–2.22, Theorem 2.23); Chapter 1, *Paracompactness* (Theorem 1.15); Proposition A.60; Chapter 2, *Applications of Partitions of Unity* (Proposition 2.28) |
 | [[§67 Integral Curves\|§67]] Integral curves | Chapter 9, *Integral Curves* ((9.1), Lemmas 9.3 and 9.4, Proposition 9.6) |
 | [[§68 Local Existence and Uniqueness\|§68]] Local existence and uniqueness | Chapter 9, *Integral Curves* (Example 9.1, Proposition 9.2); *Flows* (uniqueness, in the proof of Theorem 9.12); Appendix D (Theorem D.1); Problem 9-1 |
 | [[§69 Maximal Integral Curves and Flows\|§69]] Maximal integral curves and flows | Chapter 9, *Flows* (Example 9.10, Theorem 9.12, with its proof; the group law (9.7)); Problem 9-1 |
@@ -105,7 +105,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Example 1.8 | [[§3 Subspaces and Products#^thm-3-12\|Thm. §3.12]] |
 | Proposition 1.11 | [[§2 Topological Manifolds#^prop-2-6\|Prop. §2.6]], [[§2 Topological Manifolds#^thm-2-8\|Thm. §2.8]], [[§2 Topological Manifolds#^cor-2-9\|Cor. §2.9]] |
 | Proposition 1.12 | [[§2 Topological Manifolds#^prop-2-12\|Prop. §2.12]] |
-| Theorem 1.15 | [[§66 Partitions of Unity#^thm-66-4\|Thm. §66.4]] |
+| Theorem 1.15 | [[§65 Partitions of Unity#^thm-65-4\|Thm. §65.4]] |
 | Proposition 1.17 | [[§17 Differentiable Structures#^def-17-7\|Def. §17.7]], [[§17 Differentiable Structures#^thm-17-5\|Thm. §17.5]] |
 | Example 1.21 | [[§2 Topological Manifolds#^prop-2-5\|Prop. §2.5]] |
 | Example 1.22 | [[§17 Differentiable Structures#^ex-17-1\|Ex. §17.1]] |
@@ -128,13 +128,13 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 2.5 | [[§19 Smooth Functions and Smooth Maps#^prop-19-2\|Prop. §19.2]] |
 | Proposition 2.10 | [[§19 Smooth Functions and Smooth Maps#^lem-19-5\|Lem. §19.5]] |
 | Proposition 2.15 | [[§19 Smooth Functions and Smooth Maps#^prop-19-7\|Prop. §19.7]] |
-| Lemma 2.20 | [[§66 Partitions of Unity#^lem-66-2\|Lem. §66.2]] |
-| Lemma 2.21 | [[§66 Partitions of Unity#^lem-66-2\|Lem. §66.2]] |
-| Lemma 2.22 | [[§66 Partitions of Unity#^lem-66-2\|Lem. §66.2]] |
-| Theorem 2.23 | [[§66 Partitions of Unity#^thm-66-1\|Thm. §66.1]] |
+| Lemma 2.20 | [[§65 Partitions of Unity#^lem-65-2\|Lem. §65.2]] |
+| Lemma 2.21 | [[§65 Partitions of Unity#^lem-65-2\|Lem. §65.2]] |
+| Lemma 2.22 | [[§65 Partitions of Unity#^lem-65-2\|Lem. §65.2]] |
+| Theorem 2.23 | [[§65 Partitions of Unity#^thm-65-1\|Thm. §65.1]] |
 | Proposition 2.25 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]], [[§56 Vector Fields#^prop-56-4\|Prop. §56.4]] |
 | Lemma 2.26 | [[§56 Vector Fields#^cor-56-5\|Cor. §56.5]] |
-| Proposition 2.28 | [[§65 The Whitney Embedding Theorem#^prop-65-7\|Prop. §65.7]], [[§66 Partitions of Unity#^lem-66-6\|Lem. §66.6]] |
+| Proposition 2.28 | [[§65 Partitions of Unity#^prop-65-7\|Prop. §65.7]], [[§65 Partitions of Unity#^lem-65-6\|Lem. §65.6]] |
 | Lemma 3.1 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-2\|Lem. §28.2]] |
 | Proposition 3.2 | [[§25 The Geometric Tangent Space#^def-25-4\|Def. §25.4]], [[§25 The Geometric Tangent Space#^prop-25-9\|Prop. §25.9]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3\|Lem. §29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5\|Cor. §29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]] |
 | Corollary 3.3 | [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5\|Cor. §29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]], [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]] |
@@ -176,11 +176,11 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Exercise 6.7 | [[§62 Sets of Measure Zero#^prop-62-4\|Prop. §62.4]] |
 | Theorem 6.10 | [[§63 Sard's Theorem#^lem-63-1\|Lem. §63.1]], [[§63 Sard's Theorem#^lem-63-2\|Lem. §63.2]], [[§63 Sard's Theorem#^thm-63-3\|Thm. §63.3]] |
 | Corollary 6.11 | [[§63 Sard's Theorem#^cor-63-4\|Cor. §63.4]] |
-| Lemma 6.13 | [[§65 The Whitney Embedding Theorem#^lem-65-2\|Lem. §65.2]], [[§65 The Whitney Embedding Theorem#^lem-65-3\|Lem. §65.3]], [[§65 The Whitney Embedding Theorem#^lem-65-4\|Lem. §65.4]], [[§65 The Whitney Embedding Theorem#^lem-65-5\|Lem. §65.5]] |
-| Theorem 6.15 | [[§65 The Whitney Embedding Theorem#^lem-65-1\|Lem. §65.1]], [[§65 The Whitney Embedding Theorem#^thm-65-6\|Thm. §65.6]], [[§65 The Whitney Embedding Theorem#^prop-65-8\|Prop. §65.8]], [[§65 The Whitney Embedding Theorem#^thm-65-9\|Thm. §65.9]] |
-| Theorem 6.18 | [[§65 The Whitney Embedding Theorem#^thm-65-6\|Thm. §65.6]], [[§65 The Whitney Embedding Theorem#^thm-65-9\|Thm. §65.9]], [[§65 The Whitney Embedding Theorem#^prop-65-10\|Prop. §65.10]] |
+| Lemma 6.13 | [[§66 The Whitney Embedding Theorem#^lem-66-2\|Lem. §66.2]], [[§66 The Whitney Embedding Theorem#^lem-66-3\|Lem. §66.3]], [[§66 The Whitney Embedding Theorem#^lem-66-4\|Lem. §66.4]], [[§66 The Whitney Embedding Theorem#^lem-66-5\|Lem. §66.5]] |
+| Theorem 6.15 | [[§66 The Whitney Embedding Theorem#^lem-66-1\|Lem. §66.1]], [[§66 The Whitney Embedding Theorem#^thm-66-6\|Thm. §66.6]], [[§66 The Whitney Embedding Theorem#^prop-66-7\|Prop. §66.7]], [[§66 The Whitney Embedding Theorem#^thm-66-8\|Thm. §66.8]] |
+| Theorem 6.18 | [[§66 The Whitney Embedding Theorem#^thm-66-6\|Thm. §66.6]], [[§66 The Whitney Embedding Theorem#^thm-66-8\|Thm. §66.8]], [[§66 The Whitney Embedding Theorem#^prop-66-9\|Prop. §66.9]] |
 | Theorem 6.35 | [[§64 Parametric Transversality#^thm-64-1\|Thm. §64.1]], [[§64 Parametric Transversality#^cor-64-2\|Cor. §64.2]] |
-| Problem 6-2 | [[§65 The Whitney Embedding Theorem#^lem-65-4\|Lem. §65.4]], [[§65 The Whitney Embedding Theorem#^lem-65-5\|Lem. §65.5]], [[§65 The Whitney Embedding Theorem#^thm-65-6\|Thm. §65.6]] |
+| Problem 6-2 | [[§66 The Whitney Embedding Theorem#^lem-66-4\|Lem. §66.4]], [[§66 The Whitney Embedding Theorem#^lem-66-5\|Lem. §66.5]], [[§66 The Whitney Embedding Theorem#^thm-66-6\|Thm. §66.6]] |
 | Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]], [[§39 Transversality and Lagrange Multipliers#^thm-39-1\|Thm. §39.1]], [[§39 Transversality and Lagrange Multipliers#^cor-39-3\|Cor. §39.3]], [[§39 Transversality and Lagrange Multipliers#^thm-39-8\|Thm. §39.8]] |
 | Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |
@@ -271,7 +271,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition A.50 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Lemma A.52 | [[§1 Point-Set Topology Review#^prop-1-8\|Prop. §1.8]] |
 | Theorem A.57 | [[§44 Embeddings#^prop-44-4\|Prop. §44.4]] |
-| Proposition A.60 | [[§66 Partitions of Unity#^lem-66-3\|Lem. §66.3]] |
+| Proposition A.60 | [[§65 Partitions of Unity#^lem-65-3\|Lem. §65.3]] |
 | Corollary B.21 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |
 | Proposition B.24 | [[§21 Linear Algebra Toolkit#^prop-21-1\|Prop. §21.1]] |
 | Theorem C.15 | [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3\|Lem. §29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4\|Lem. §29.4]] |

@@ -30,7 +30,7 @@ The third step ([[§62 Simple Representations|§62]]) names the pieces. A repres
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-1|Proposition §61.1: Direct Sum of a Subspace and Its Orthogonal Complement]]: 5 later results
+- [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-1|Proposition §61.1: Direct Sum of a Subspace and Its Orthogonal Complement]]: 7 later results
 - [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-2|Proposition §61.2: Orthogonal Complements of Subrepresentations]]: 5 later results
 - [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|Proposition §61.4: Averaging Gives an Inner Product]]: 5 later results
 - [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|Proposition §61.5: G Preserves the Averaged Inner Product]]: 5 later results

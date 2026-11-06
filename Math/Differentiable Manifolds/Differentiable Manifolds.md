@@ -99,7 +99,7 @@ graph TD
 - [[· 10 Integral Curves and Flows]]
 
 ## Planned topics (syllabus)
-Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56, as derivations of $C^\infty(M)$; differential operators, §57; the Lie bracket, §58; related vector fields, §59); one-forms ✓ (§53; differential forms of higher degree to come); submanifolds ✓; immersions/submersions ✓ (immersion normal form stated); Sard's theorem ✓ (§62–§63; parametric transversality §64, Whitney embedding §65, partitions of unity and exhaustion functions §66); integral curves and flows (begun, §67–§68); transversality (in Euclidean space, §26); Lie groups and algebras (begun: Lie groups, left-invariant vector fields and the Lie algebra of a Lie group, §60; Lie group morphisms and linear groups, §61; classical matrix groups and their tangent spaces at $I$); Stokes' theorem; de Rham cohomology; other topics time permitting.
+Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56, as derivations of $C^\infty(M)$; differential operators, §57; the Lie bracket, §58; related vector fields, §59); one-forms ✓ (§53; differential forms of higher degree to come); submanifolds ✓; immersions/submersions ✓ (immersion normal form stated); Sard's theorem ✓ (§62–§63; parametric transversality §64, partitions of unity and exhaustion functions §65, Whitney embedding §66); integral curves and flows (begun, §67–§68); transversality (in Euclidean space, §26); Lie groups and algebras (begun: Lie groups, left-invariant vector fields and the Lie algebra of a Lie group, §60; Lie group morphisms and linear groups, §61; classical matrix groups and their tangent spaces at $I$); Stokes' theorem; de Rham cohomology; other topics time permitting.
 
 ## Central results
 - [[Topological Invariance of Dimension]] (§2.1)
@@ -139,10 +139,10 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56
 - [[The Lie Algebra Is the Tangent Space at the Identity]] (§60.9)
 - [[Sard's Theorem]] (§63.3)
 - [[Parametric Transversality Theorem]] (§64.1)
+- [[Existence of Partitions of Unity]] (§65.1)
+- [[Manifolds Are Paracompact]] (§65.4)
 - [[Existence of Exhaustion Functions]] (§65.7)
-- [[Whitney Embedding Theorem]] (§65.9)
-- [[Existence of Partitions of Unity]] (§66.1)
-- [[Manifolds Are Paracompact]] (§66.4)
+- [[Whitney Embedding Theorem]] (§66.8)
 - [[Local Existence and Uniqueness of Integral Curves]] (§68.2)
 - [[Uniqueness of Integral Curves]] (§68.3)
 - [[Fundamental Theorem on Flows]] (§69.4)

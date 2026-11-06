@@ -1,0 +1,14 @@
+% Figure from MATH 493 notes, section 61. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth]
+\draw[->, black!55, thin] (-2.5,0) -- (2.6,0) node[right, font=\scriptsize] {$\operatorname{Re}$};
+\draw[->, black!55, thin] (0,-2.3) -- (0,2.4) node[above, font=\scriptsize] {$\operatorname{Im}$};
+\draw[blue!70!black, thick] (0,0) circle (1.8);
+\draw[->, blue!70!black, thick] (60:1.8) arc (60:72:1.8);
+\draw[->, blue!70!black, thick] (240:1.8) arc (240:252:1.8);
+\fill[blue!70!black] (0:1.8) circle (1.7pt) node[below right, font=\scriptsize, blue!70!black] {$\theta = 0^\circ$};
+\fill[blue!70!black] (90:1.8) circle (1.7pt) node[above right, font=\scriptsize, blue!70!black] {$\theta = 45^\circ$};
+\fill[red!70!black] (180:1.8) circle (1.7pt) node[above left, font=\scriptsize, red!70!black] {$\theta = 90^\circ:\ B(iv, iv) = -1$};
+\fill[blue!70!black] (270:1.8) circle (1.7pt) node[below right, font=\scriptsize, blue!70!black] {$\theta = 135^\circ$};
+\fill[orange!85!black] (1.8,0) circle (3.0pt);
+\node[font=\scriptsize, align=left, anchor=west] at (3.0,0.9) {$B(v,v) = \langle v, v \rangle = 1$, \ $\theta$ from $0^\circ$ to $180^\circ$:\\\textcolor{blue!70!black}{bilinear: $B(e^{i\theta}v, e^{i\theta}v) = e^{2i\theta}$}\\\quad\textcolor{blue!70!black}{runs once around the unit circle};\\\textcolor{orange!85!black}{sesquilinear: $\langle e^{i\theta}v, e^{i\theta}v \rangle = |e^{i\theta}|^2 = 1$}\\\quad\textcolor{orange!85!black}{stays at the positive number $1$}};
+\end{tikzpicture}

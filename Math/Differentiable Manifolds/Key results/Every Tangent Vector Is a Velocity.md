@@ -23,7 +23,7 @@ tags: [differentiable-manifolds, hub]
 - [[§36 Submersions#^prop-36-3|Proposition §36.3: Local Extrema Are Critical Points]]
 - [[§39 Transversality and Lagrange Multipliers#^thm-39-6|Theorem §39.6: Lagrange Multipliers]]
 - [[§47 The Unit Quaternions and SU(2)#^prop-47-6|Proposition §47.6: The Tangent Space of SU(2) at the Identity]]
-- [[§65 The Whitney Embedding Theorem#^lem-65-1|Lemma §65.1: Compact Manifolds Embed in Some ℝᵏ]]
+- [[§66 The Whitney Embedding Theorem#^lem-66-1|Lemma §66.1: Compact Manifolds Embed in Some ℝᵏ]]
 
 ## Connections
 - **Used for.** Computing differentials by curves: F_*p(D) is the velocity of F ∘ γ for any curve γ with velocity D ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]). This is how the tangent spaces of submanifolds ([[§37 Regular Submanifolds#^prop-37-6|§37.6]]) and of products ([[§31 Tangent Vectors as Velocities of Curves#^cor-31-8|§31.8]]) are read off, and it enters the comparison of the old and new regular value theorems ([[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]]).

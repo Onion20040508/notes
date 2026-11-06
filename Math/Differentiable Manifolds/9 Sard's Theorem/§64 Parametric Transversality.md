@@ -5,7 +5,7 @@ chapter: 9
 section: 64
 tags: [differentiable-manifolds, math591]
 ---
-← [[§63 Sard's Theorem]] · ↑ [[· 9 Sard's Theorem]] · [[§65 The Whitney Embedding Theorem]] →
+← [[§63 Sard's Theorem]] · ↑ [[· 9 Sard's Theorem]] · [[§65 Partitions of Unity]] →
 
 *Stage: analysis — Transversality of a whole family passes, by Sard's theorem, to almost every member.*
 

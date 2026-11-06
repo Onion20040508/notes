@@ -41,5 +41,5 @@ tags: [group-theory, math493]
 | $U \oplus V$ | Internal direct sum of subspaces: $U \cap V = \{0\}$, $U + V = W$. | [[§60 Direct Sums and Maschke's Theorem#^def-60-1\|Def. §60.1]] |
 | $U^\perp$, $P_U$ | Orthogonal complement of $U$; orthogonal projection onto $U$. | [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-2\|Def. §61.2]], [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-1\|§61.1]] |
 | $V_1 \oplus \cdots \oplus V_r$ | Direct sum of several subspaces: every $v$ is uniquely $v_1 + \cdots + v_r$, $v_i \in V_i$. | [[§62 Simple Representations#^def-62-3\|Def. §62.3]] |
-| $\bar M^T$ | Conjugate transpose; $M$ is unitary if $\bar M^T M = I$. | [[§61 Invariant Inner Products and Maschke over ℝ#^rem-61-4\|§61]] |
+| $M^\dagger = \bar M^T$ | Conjugate transpose ([[§61 Invariant Inner Products and Maschke over ℝ#^def-61-8\|Def. §61.8]]); $M$ is Hermitian if $M = M^\dagger$, unitary if $M^\dagger M = I$. | [[§61 Invariant Inner Products and Maschke over ℝ#^rem-61-4\|§61]] |
 | *WS $k.m$*, *PS $k.m$* | Provenance tags: Worksheet $k$ / Problem Set $k$, Problem $m$. | [[493 Problem Set 1\|PS 1]], [[493 Problem Set 2\|PS 2]], [[493 Problem Set 3\|PS 3]] |
