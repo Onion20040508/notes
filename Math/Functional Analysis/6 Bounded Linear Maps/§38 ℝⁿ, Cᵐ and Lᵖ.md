@@ -13,7 +13,7 @@ tags: [functional-analysis, math556]
 
 Every linear map out of a finite-dimensional space is bounded, so on $\mathbb{R}^n$ boundedness is automatic; a bilinear form on $\mathbb{R}^n$ is a matrix, $B(x, y) = (x, Ay)$, the finite-dimensional model of [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|bounded forms as operators]].
 
-![[§30 Boundedness and Continuity#^prop-30-4]]
+![[§30 Boundedness and Continuity#^prop-30-5]]
 
 ![[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^ex-32-1]]
 
@@ -25,7 +25,7 @@ Differentiation is the test case for boundedness. With the $C^m$ norm on the dom
 
 ![[§30 Boundedness and Continuity#^ex-30-1]]
 
-![[§30 Boundedness and Continuity#^prop-30-3]]
+![[§30 Boundedness and Continuity#^prop-30-4]]
 
 *Chain:* ← [[§29 Sequence and Function Spaces|Chapter 5]]
 
@@ -39,8 +39,8 @@ The Fourier transform is a bounded map $L^1(\mathbb{R}^n) \to L^\infty(\mathbb{R
 
 ![[§31 Dual Spaces#^thm-31-4]]
 
-Lecture 12 used $L^2$ twice more. The [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|Dirichlet problem]] is solved in $H^1_0(\Omega)$, a [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|completion]] inside $L^2$, where the source term $f \in L^2(\Omega)$ gives the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|bounded functional]] $v \mapsto \int_\Omega f v$ (Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-2|§34.2]]); and the [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|Radon–Nikodym theorem]] applies the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]] in $L^2(\mu + \nu)$ for an abstract [[§35 Measures and the Radon–Nikodym Theorem#^def-35-3|measure]] (Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]]).
+Lecture 12 used $L^2$ twice more. The [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|Dirichlet problem]] is solved in $H^1_0(\Omega)$, a [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|completion]] inside $L^2$, where the source term $f \in L^2(\Omega)$ gives the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|bounded functional]] $v \mapsto \int_\Omega f v$ (Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-3|§34.3]]); and the [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|Radon–Nikodym theorem]] applies the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]] in $L^2(\mu + \nu)$ for an abstract [[§35 Measures and the Radon–Nikodym Theorem#^def-35-3|measure]] (Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]]).
 
-*(Not from lecture; summary of Lecture 14.)* Lecture 14 sorted the course's spaces by [[§37 Separable Duals and Reflexive Spaces#^def-37-1|reflexivity]]. Hilbert spaces, in particular $L^2$ and $\ell^2$, and $\ell^p$ for $1 < p < \infty$ are reflexive (Examples [[§37 Separable Duals and Reflexive Spaces#^ex-37-2|§37.2]] and [[§37 Separable Duals and Reflexive Spaces#^ex-37-3|§37.3]]); $C[0,1]$, $\ell^1$ and $c_0$ are not (Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|§37.4]], Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-7|§37.7]]), and the duals of $\ell^\infty$ and $L^\infty$ are not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], so they are not $\ell^1$ and $L^1$ (Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]]).
+*(Not from lecture; summary of Lecture 14.)* Lecture 14 sorted the course's spaces by [[§37 Separable Duals and Reflexive Spaces#^def-37-1|reflexivity]]. Hilbert spaces, in particular $L^2$ and $\ell^2$, and $\ell^p$ for $1 < p < \infty$ are reflexive (Examples [[§37 Separable Duals and Reflexive Spaces#^ex-37-3|§37.3]] and [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|§37.4]]); $C[0,1]$, $\ell^1$ and $c_0$ are not (Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|§37.5]], Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-7|§37.7]]), and the duals of $\ell^\infty$ and $L^\infty$ are not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], so they are not $\ell^1$ and $L^1$ (Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]]).
 
 *Chain:* ← [[§29 Sequence and Function Spaces|Chapter 5]] · [[§46 Position Eigenstates and Continuous Resolutions#^thm-46-2|Chapter 7 (L² as a state space)]] →

@@ -9,7 +9,7 @@ tags: [functional-analysis, math556]
 
 *Stage: algebra — Thread: convexity. Convex sets and positive homogeneous subadditive functions are two descriptions of one object.*
 
-The three functions $p_1, p_2, p_3$ on $\mathbb{R}^n$ ([[§5 Statement and Motivation#^ex-5-1|Ex. §5.1]]) each came with a convex set $\{p < 1\}$ ([[§5 Statement and Motivation#^ex-5-2|Ex. §5.2]]). This is the beginning of a two-way correspondence between positive homogeneous subadditive functions and convex sets, which is what makes [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] a geometric theorem.
+The three functions $p_1, p_2, p_3$ on $\mathbb{R}^n$ ([[§5 Statement and Motivation#^ex-5-1|Ex. §5.1]]) each came with a convex set $\{p < 1\}$ ([[§5 Statement and Motivation#^ex-5-2|Ex. §5.2]]). This is the beginning of a two-way correspondence between positive homogeneous subadditive functions and convex sets, which is what makes [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] a geometric theorem.
 
 ## From $p$ to a Convex Set
 
@@ -66,10 +66,10 @@ The converse direction — starting from a convex set and producing a $p$ — is
 
 > [!remark]- Connections
 > - The topological interior: [[§8 Interior and Closure#^def-8-1|590 Def. §8.1]]; in $\mathbb{R}^n$, [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]].
-> - Metric interior points are interior points in this sense, not conversely: [[§11 Normed Linear Spaces#^prop-11-7|§11.7]], [[§11 Normed Linear Spaces#^ex-11-2|Ex. §11.2]].
+> - Metric interior points are interior points in this sense, not conversely: [[§11 Normed Linear Spaces#^prop-11-8|§11.8]], [[§11 Normed Linear Spaces#^ex-11-4|Ex. §11.4]].
 
 > [!remark] Remark: Comparison with the Classical Notion
-> In a metric space, $x_0$ is an interior point of $K$ if some ball around $x_0$ lies in $K$. Here there is no ball. The definition says instead: in every direction $y$, one can move a little way from $x_0$ (in both senses, $t > 0$ and $t < 0$) and stay inside $K$. The allowed distance $\varepsilon(y)$ depends on the direction and is not uniform: $K$ may be very thin in one direction and long in another, and there need be no single $\varepsilon$ that works for all $y$. Whenever both notions make sense, an interior point in the classical sense is one in this sense, but not conversely (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]] and the example after it, [[§11 Normed Linear Spaces#^ex-11-2|Ex. §11.2]]); this is the only notion available in a bare linear space.
+> In a metric space, $x_0$ is an interior point of $K$ if some ball around $x_0$ lies in $K$. Here there is no ball. The definition says instead: in every direction $y$, one can move a little way from $x_0$ (in both senses, $t > 0$ and $t < 0$) and stay inside $K$. The allowed distance $\varepsilon(y)$ depends on the direction and is not uniform: $K$ may be very thin in one direction and long in another, and there need be no single $\varepsilon$ that works for all $y$. Whenever both notions make sense, an interior point in the classical sense is one in this sense, but not conversely (Proposition [[§11 Normed Linear Spaces#^prop-11-8|§11.8]] and the example after it, [[§11 Normed Linear Spaces#^ex-11-4|Ex. §11.4]]); this is the only notion available in a bare linear space.
 >
 > ![[m556-5-1.svg]]
 > *Segments $x_0 + ty$, $|t| < \varepsilon(y)$, inside an elongated $K$ in three directions $y$: the allowed length depends on the direction.*
@@ -213,12 +213,12 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 
 ^rem-7-6
 
-> [!example] Example §7.1: A Gauge Vanishing Off the Origin
+> [!example] Example §7.2: A Gauge Vanishing Off the Origin
 > Let $X = \mathbb{R}^2$ and $K = \{ (x_1, x_2) : x_1 < 1 \}$, an open half-plane containing $0$ as an interior point. For $x = (x_1, x_2)$ with $x_1 \le 0$, every point $sx$, $s \ge 0$, has first coordinate $sx_1 \le 0 < 1$, so the whole ray lies in $K$ and $p_K(x) = 0$. For $x_1 > 0$, $x/a \in K$ iff $x_1/a < 1$ iff $a > x_1$, so $A(x) = (x_1, \infty)$ and $p_K(x) = x_1$. Altogether $p_K(x) = \max\{x_1, 0\}$: positive homogeneous, subadditive, non-negative, and zero on a whole half-plane.
 
-^ex-7-1
+^ex-7-2
 
-> [!example] Example §7.2: Gauge of the Unit Disk
+> [!example] Example §7.3: Gauge of the Unit Disk
 > Let $X = \mathbb{R}^2$ and $K = \{ x_1^2 + x_2^2 \le 1 \}$, the closed unit disk; $0$ is an interior point in the classical sense, hence in the algebraic sense. For $x = (x_1, x_2)$ and $a > 0$,
 >
 > $$
@@ -233,9 +233,9 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 >
 > So the gauge of the unit disk recovers the Euclidean length: the function $p_1$ of Example [[§5 Statement and Motivation#^ex-5-1|§5.1]] is the gauge of its own unit ball. Similarly, $p_2$ is the gauge of the square and $p_3$ the gauge of the diamond.
 
-^ex-7-2
+^ex-7-3
 
-> [!example] Example §7.3: Gauge of a Square
+> [!example] Example §7.4: Gauge of a Square
 > Let $X = \mathbb{R}^2$ and $K = \{ (x_1, x_2) : |x_1| \le 2,\ |x_2| \le 2 \}$, the closed square with vertices $(\pm 2, \pm 2)$; $0$ is an interior point. For $a > 0$,
 >
 > $$
@@ -257,7 +257,7 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 >
 > *(Not from lecture; animation added, vault only.)* Left: the square of this example, $K = [-2, 2]^2$; right: an off-centre convex set (chosen for the picture). First $x$ moves around, and $x/p_K(x)$ (red) always lands on $\partial K$, with $p_K(3, \frac32) = \frac32$ as computed above. Then the level sets $\{p_K = c\} = c\,\partial K$ (red) sweep out as $c$ grows from $0.1$ to $1.6$ and back.
 
-^ex-7-3
+^ex-7-4
 
 ## The Gauge is Positive Homogeneous and Subadditive
 

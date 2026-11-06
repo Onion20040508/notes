@@ -101,10 +101,10 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 
 ^rem-34-4
 
-> [!theorem] Theorem §34.2: Existence and Uniqueness of Weak Solutions
+> [!theorem] Theorem §34.3: Existence and Uniqueness of Weak Solutions
 > Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $f \in L^2(\Omega)$. Then $(D)$ has a unique weak solution $u \in H^1_0(\Omega)$.
 
-^thm-34-2
+^thm-34-3
 
 > [!proof]+ Proof
 > **Step 1: the Hilbert space.** $H^1_0(\Omega)$, over $\mathbb{R}$, with the inner product
@@ -113,7 +113,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 > (u, v)_{H^1_0} = \int_\Omega u(x)\, v(x)\, dx + \int_\Omega \nabla u(x) \cdot \nabla v(x)\, dx,
 > $$
 >
-> is a [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-5|§33.5]]). Write $\|u\|_{H^1_0}^2 = \|u\|_{L^2}^2 + \|\nabla u\|_{L^2}^2$.
+> is a [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-7|§33.7]]). Write $\|u\|_{H^1_0}^2 = \|u\|_{L^2}^2 + \|\nabla u\|_{L^2}^2$.
 >
 > **Step 2: the form is bilinear and bounded.** Let $B(u, v) = \int_\Omega \nabla u(x) \cdot \nabla v(x)\, dx$. It is bilinear, and
 >
@@ -129,7 +129,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 > \int_\Omega |\nabla u|^2\, dx \ge \alpha \Bigl( \int_\Omega |u|^2\, dx + \int_\Omega |\nabla u|^2\, dx \Bigr) .
 > $$
 >
-> By the Poincaré inequality on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|§33.7]]), $\int_\Omega |u|^2 \le C_0 \int_\Omega |\nabla u|^2$ for all $u \in H^1_0(\Omega)$, with $C_0 = C^2$. Hence
+> By the Poincaré inequality on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|§33.9]]), $\int_\Omega |u|^2 \le C_0 \int_\Omega |\nabla u|^2$ for all $u \in H^1_0(\Omega)$, with $C_0 = C^2$. Hence
 >
 > $$
 > \|u\|_{H^1_0}^2 \le C_0 \int_\Omega |\nabla u|^2\, dx + \int_\Omega |\nabla u|^2\, dx = (C_0 + 1)\, B(u, u),
@@ -147,16 +147,16 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 >
 > **Step 5: Lax–Milgram.** By Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]] there is a unique $u \in H^1_0(\Omega)$ with $\ell(v) = B(v, u)$ for all $v \in H^1_0(\Omega)$. Since $B$ is symmetric, $B(v, u) = B(u, v)$, and the identity reads $\int_\Omega \nabla u \cdot \nabla v\, dx = \int_\Omega f v\, dx$ for all $v$: $u$ is a weak solution, and it is the only one.
 
-^pf-34-2
+^pf-34-3
 
-*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|Def. §34.2]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-5|§33.5]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|§33.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]]
+*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|Def. §34.2]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-7|§33.7]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|§33.9]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]]
 
 > [!remark]- Connections
 > - Used in Electromagnetism for the existence of the Dirichlet Green function of a bounded region: [[§C7.3 Green Functions for Poisson’s Equation#^rem-c7-3-1|EM ★ Remark: Existence of the Dirichlet Green function]]; the symmetric form $B$ is the Dirichlet energy of [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-3|Dirichlet's principle, EM Theorem §C6.4.3]].
 > - Uniqueness of classical solutions without Hilbert spaces: [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-28-1|452 Ex. §28.1]].
 
 > [!remark] Remark
-> Here $B$ is symmetric, so Lax–Milgram reduces to the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]] for the inner product $B$ (Proposition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-32-4|§32.4]]); Steps 2 and 3 say exactly that $B$ is an [[§22 Definition and Examples#^def-22-1|inner product]] on $H^1_0(\Omega)$ whose norm is [[§14 New Normed Spaces from Old#^def-14-1|equivalent]] to $\|\cdot\|_{H^1_0}$. For the Laplacian the form is symmetric, but for general elliptic equations ([[§34 Weak Solutions of the Dirichlet Problem#^thm-34-4|below]]) it is not, and then Lax–Milgram is needed. The proof gives existence and uniqueness, not a construction; to find $u$ in practice there are numerical methods, which are the subject of another course.
+> Here $B$ is symmetric, so Lax–Milgram reduces to the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]] for the inner product $B$ (Proposition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-32-4|§32.4]]); Steps 2 and 3 say exactly that $B$ is an [[§22 Definition and Examples#^def-22-1|inner product]] on $H^1_0(\Omega)$ whose norm is [[§14 New Normed Spaces from Old#^def-14-1|equivalent]] to $\|\cdot\|_{H^1_0}$. For the Laplacian the form is symmetric, but for general elliptic equations ([[§34 Weak Solutions of the Dirichlet Problem#^thm-34-5|below]]) it is not, and then Lax–Milgram is needed. The proof gives existence and uniqueness, not a construction; to find $u$ in practice there are numerical methods, which are the subject of another course.
 
 ^rem-34-5
 
@@ -196,14 +196,14 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 
 ^rem-34-7
 
-> [!theorem] Proposition §34.3: Classical Solutions of $(E)$ Satisfy the Weak Equation
+> [!theorem] Proposition §34.4: Classical Solutions of $(E)$ Satisfy the Weak Equation
 > Let $a_{ij} \in C^1(\overline{\Omega})$, $f$ continuous, and $u \in C^2(\overline{\Omega})$ a classical solution of $(E)$. Then
 >
 > $$
 > \int_\Omega \bigl(A(x)\nabla u(x)\bigr) \cdot \nabla v(x)\, dx = \int_\Omega f(x)\, v(x)\, dx \qquad \text{for all } v \in C_c^2(\Omega).
 > $$
 
-^prop-34-3
+^prop-34-4
 
 > [!proof]+ Proof
 > *(As in [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-1|Proposition §34.1]].)* Let $F = A\nabla u$, the vector field with components $F_i = \sum_j a_{ij}\, \partial_{x_j} u \in C^1(\Omega)$, so that $\operatorname{div} F = -f$. For each $i$, [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|Lemma §33.2]] with $g = F_i$ and $\varphi = v$ (its proof uses only $\varphi \in C^1$ with compact support in $\Omega$) gives $\int_\Omega \partial_{x_i} F_i\, v\, dx = -\int_\Omega F_i\, \partial_{x_i} v\, dx$. Summing over $i$,
@@ -212,7 +212,7 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 > -\int_\Omega f\, v\, dx = \int_\Omega \operatorname{div} F\, v\, dx = -\int_\Omega F \cdot \nabla v\, dx = -\int_\Omega (A\nabla u) \cdot \nabla v\, dx .
 > $$
 
-^pf-34-3
+^pf-34-4
 
 *Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|Def. §34.4]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]]
 
@@ -227,14 +227,14 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 
 ^def-34-5
 
-> [!theorem] Theorem §34.4: General Elliptic Equations
-> Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $A$ [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|uniformly elliptic]] on $\Omega$ ([[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|Definition §34.3]]). For every $f \in L^2(\Omega)$ the problem $(E)$ has a unique [[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|weak solution]] $u \in H^1_0(\Omega)$ ([[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|Definition §34.5]]). For $A = I$ this is Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-2|§34.2]].
+> [!theorem] Theorem §34.5: General Elliptic Equations
+> Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $A$ [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|uniformly elliptic]] on $\Omega$ ([[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|Definition §34.3]]). For every $f \in L^2(\Omega)$ the problem $(E)$ has a unique [[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|weak solution]] $u \in H^1_0(\Omega)$ ([[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|Definition §34.5]]). For $A = I$ this is Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-3|§34.3]].
 
-^thm-34-4
+^thm-34-5
 
 > [!proof]+ Proof
-> (Stated in lecture: the proof goes through as for the Laplacian.) The weak formulation is Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-3|§34.3]]. Let $B(v, u) = \int_\Omega (A(x)\nabla u) \cdot \nabla v\, dx$; it is bilinear. *Bounded:* $|(A\nabla u)\cdot\nabla v| \le \Lambda |\nabla u|\, |\nabla v|$, so $|B(v,u)| \le \Lambda \|u\|_{H^1_0} \|v\|_{H^1_0}$ as in Step 2 above. *Coercive:* $(A\xi)\cdot\xi = \xi^{\mathsf T} A\, \xi$ (a $1 \times 1$ matrix equals its transpose, and $(A\xi)\cdot\xi = \xi^{\mathsf T}A^{\mathsf T}\xi$), so $B(u,u) \ge \alpha \int_\Omega |\nabla u|^2 \ge \frac{\alpha}{1 + C_0} \|u\|_{H^1_0}^2$ by Step 3 above. The functional $\ell$ is as in Step 4. Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]] gives a unique $u$ with $\ell(v) = B(v, u)$ for all $v$, which is the weak equation. Unless $A$ is symmetric, $B$ is not symmetric, and the Riesz theorem alone does not apply.
+> (Stated in lecture: the proof goes through as for the Laplacian.) The weak formulation is Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-4|§34.4]]. Let $B(v, u) = \int_\Omega (A(x)\nabla u) \cdot \nabla v\, dx$; it is bilinear. *Bounded:* $|(A\nabla u)\cdot\nabla v| \le \Lambda |\nabla u|\, |\nabla v|$, so $|B(v,u)| \le \Lambda \|u\|_{H^1_0} \|v\|_{H^1_0}$ as in Step 2 above. *Coercive:* $(A\xi)\cdot\xi = \xi^{\mathsf T} A\, \xi$ (a $1 \times 1$ matrix equals its transpose, and $(A\xi)\cdot\xi = \xi^{\mathsf T}A^{\mathsf T}\xi$), so $B(u,u) \ge \alpha \int_\Omega |\nabla u|^2 \ge \frac{\alpha}{1 + C_0} \|u\|_{H^1_0}^2$ by Step 3 above. The functional $\ell$ is as in Step 4. Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]] gives a unique $u$ with $\ell(v) = B(v, u)$ for all $v$, which is the weak equation. Unless $A$ is symmetric, $B$ is not symmetric, and the Riesz theorem alone does not apply.
 
-^pf-34-4
+^pf-34-5
 
-*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|Def. §34.3]], [[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|Def. §34.5]], [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-3|§34.3]], [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-2|§34.2]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-5|§33.5]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|§33.7]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]]
+*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|Def. §34.3]], [[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|Def. §34.5]], [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-4|§34.4]], [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-3|§34.3]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-7|§33.7]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|§33.9]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]]

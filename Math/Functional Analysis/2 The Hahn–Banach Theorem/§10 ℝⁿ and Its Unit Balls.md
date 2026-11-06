@@ -19,10 +19,10 @@ Chapter 2 meets the three standard norms of $\mathbb{R}^n$ before norms are defi
 
 ![[§5 Statement and Motivation#^ex-5-3]]
 
-![[§7 Convex Sets and the Gauge#^ex-7-1]]
-
 ![[§7 Convex Sets and the Gauge#^ex-7-2]]
 
 ![[§7 Convex Sets and the Gauge#^ex-7-3]]
+
+![[§7 Convex Sets and the Gauge#^ex-7-4]]
 
 *Chain:* ← [[§4 ℝⁿ and ℓ²|Chapter 1]] · [[§15 ℝⁿ, C［a,b］ and ℓᵖ|Chapter 3]] →

@@ -18,7 +18,7 @@ tags: [topology, math590]
 ^def-8-1
 
 > [!remark]- Connections
-> - In a normed space: the closure as the set of limits of sequences ([[§11 Normed Linear Spaces#^def-11-7|556 Def. §11.7]]), and interior points through balls ([[§11 Normed Linear Spaces#^def-11-11|556 Def. §11.11]]), which are stronger than the algebraic interior points of [[§7 Convex Sets and the Gauge#^def-7-1|556 Def. §7.1]] ([[§11 Normed Linear Spaces#^ex-11-2|556 Ex. §11.2]]).
+> - In a normed space: the closure as the set of limits of sequences ([[§11 Normed Linear Spaces#^def-11-7|556 Def. §11.7]]), and interior points through balls ([[§11 Normed Linear Spaces#^def-11-11|556 Def. §11.11]]), which are stronger than the algebraic interior points of [[§7 Convex Sets and the Gauge#^def-7-1|556 Def. §7.1]] ([[§11 Normed Linear Spaces#^ex-11-4|556 Ex. §11.4]]).
 
 > [!definition] Definition §8.2: Closure
 > Let $A \subseteq X$, where $X$ is a topological space.

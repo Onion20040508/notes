@@ -9,7 +9,7 @@ The finitely supported sequences $c_{00} = \{ a \in \ell : a_i = 0 \text{ for al
 *Revisit sections:* [[§4 ℝⁿ and ℓ²|Chapter 1]] · [[§15 ℝⁿ, C［a,b］ and ℓᵖ|Chapter 3]] · [[§29 Sequence and Function Spaces|Chapter 5]]
 
 - In $\ell^2$ the finitely supported sequences $Y$ have $Y^\perp = \{0\}$, so $Y^\perp$ is not a complement ([[§2 Quotient Spaces and Complements#^rem-2-5|§2]])
-- $c_{00}$ is not closed in $\ell^p$: finite-dimensional subspaces are closed, infinite-dimensional ones need not be ([[§14 New Normed Spaces from Old#^rem-14-3|§14]])
+- $c_{00}$ is not closed in $\ell^p$: finite-dimensional subspaces are closed, infinite-dimensional ones need not be ([[§14 New Normed Spaces from Old#^ex-14-3|Ex. §14.3]])
 - Minkowski's inequality for finitely supported sequences ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^lem-18-2|§18]])
 - $c_{00} \subset \ell^2$: both parts of the orthogonal decomposition fail without closedness ([[§25 Projection and Orthogonal Decomposition#^rem-25-5|§25]])
 - Finitely supported sequences with rational entries are dense: $\ell^p$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] ([[§29 Sequence and Function Spaces#^prop-29-1|§29]])
@@ -18,7 +18,7 @@ The finitely supported sequences $c_{00} = \{ a \in \ell : a_i = 0 \text{ for al
 ![[§2 Quotient Spaces and Complements#^rem-2-5]]
 
 ## $c_{00}$ is not closed in $\ell^p$: finite-dimensional subspaces are closed, infinite-dimensional ones need not be
-![[§14 New Normed Spaces from Old#^rem-14-3]]
+![[§14 New Normed Spaces from Old#^ex-14-3]]
 
 ## Minkowski's inequality for finitely supported sequences
 ![[§18 Minkowski's Inequality and the Spaces ℓᵖ#^lem-18-2]]

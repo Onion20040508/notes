@@ -80,7 +80,7 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 
 > [!remark]- Connections
 > - The Euclidean and $\ell^1$ norms on $\mathbb{R}^n$: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-2|551 Ex. §34.2]]; the Euclidean and max distances: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]]; the triangle inequality for $p_1$: [[Triangle inequality|LADR 6.17]].
-> - In this course as norms: [[§11 Normed Linear Spaces#^ex-11-1|Ex. §11.1]].
+> - In this course as norms: [[§11 Normed Linear Spaces#^ex-11-2|Ex. §11.2]].
 
 > [!example] Example §5.2: The Sets $\{p < 1\}$ in $\mathbb{R}^2$
 > For each of the three examples, the set $\{x \in \mathbb{R}^2 : p(x) < 1\}$ is:
@@ -97,11 +97,11 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 
 > [!remark]- Connections
 > - The same sets as unit balls, the pictures of the norms: [[§11 Normed Linear Spaces#^rem-11-2|Relation to Chapter 2]]; all collected in [[Norms on ℝⁿ and their unit balls]].
-> - The correspondence: [[§7 Convex Sets and the Gauge#^prop-7-1|§7.1]], [[§7 Convex Sets and the Gauge#^ex-7-2|Ex. §7.2]], [[§7 Convex Sets and the Gauge#^cor-7-8|§7.8]].
+> - The correspondence: [[§7 Convex Sets and the Gauge#^prop-7-1|§7.1]], [[§7 Convex Sets and the Gauge#^ex-7-3|Ex. §7.3]], [[§7 Convex Sets and the Gauge#^cor-7-8|§7.8]].
 
 ## The Hahn–Banach Theorem (Real Version)
 
-> [!theorem] Theorem §5.2: Hahn–Banach
+> [!theorem] Theorem §5.3: Hahn–Banach
 > Let $X$ be a linear space over $\mathbb{R}$, and let $p : X \to \mathbb{R}$ be positive homogeneous and subadditive. Let $Y$ be a linear subspace of $X$ and $\ell : Y \to \mathbb{R}$ a linear functional on $Y$ satisfying
 >
 > $$
@@ -116,10 +116,10 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 >
 > *Lax: §3.1, Thm 1*
 
-^thm-5-2
+^thm-5-3
 
 > [!remark]- Connections
-> - Proof: [[§6 Proof of the Hahn–Banach Theorem#^pf-5-2|§6]]. Applied to a gauge: [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]. Complex scalars: [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]].
+> - Proof: [[§6 Proof of the Hahn–Banach Theorem#^pf-5-3|§6]]. Applied to a gauge: [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]. Complex scalars: [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]].
 
 > [!remark] Note: Notation
 > Throughout these notes a functional given on a subspace is written $\ell$ and its extension $L$. The lecture and Lax keep the name $\ell$ for the extension; the distinction is kept here because several proofs manipulate both at once.
@@ -152,7 +152,7 @@ The proof is given in [[§6 Proof of the Hahn–Banach Theorem|§6]]. The comple
 
 > [!remark]- Connections
 > - Linear functionals: [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|Def. §3.5]], [[§12 Duality#^ladr-3-108|LADR 3.108]]; on $\mathbb{R}^n$ they are the $x \mapsto a \cdot x$ of [[§12 Duality#^ladr-3-109|LADR 3.109]].
-> - On a [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]], the kernel $\{\ell = 0\}$ of a bounded functional has codimension one: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]].
+> - On a [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]], the kernel $\{\ell = 0\}$ of a bounded functional has codimension one: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|§26.4]].
 
 > [!definition] Definition §5.4: Half-Space
 > Let $\ell$, $c$ and the hyperplane $\{ x \in X : \ell(x) = c \}$ be as in Definition [[§5 Statement and Motivation#^def-5-3|§5.3]]. The sets $\{ \ell(x) < c \}$, $\{ \ell(x) > c \}$ are the two **half-spaces** it bounds.
@@ -162,6 +162,6 @@ The proof is given in [[§6 Proof of the Hahn–Banach Theorem|§6]]. The comple
 ^def-5-4
 
 > [!remark] Remark
-> Linear functionals are thus directly tied to geometry: a linear functional and a constant determine a hyperplane and its two half-spaces. Combined with the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach theorem]], this is what makes it possible to separate convex sets by hyperplanes in general linear spaces ([[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]), a theme that will recur.
+> Linear functionals are thus directly tied to geometry: a linear functional and a constant determine a hyperplane and its two half-spaces. Combined with the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach theorem]], this is what makes it possible to separate convex sets by hyperplanes in general linear spaces ([[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]), a theme that will recur.
 
 ^rem-5-5

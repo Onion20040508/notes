@@ -128,7 +128,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 *Uses:* [[§30 Boundedness and Continuity#^def-30-1|Def. §30.1]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
 
 > [!remark]- Connections
-> - The case $Y = \mathbb{F}$, proved the same way: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]].
+> - The case $Y = \mathbb{F}$, proved the same way: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]].
 
 ![[m556-21-1.svg]]
 *Left: the sequence $y_n = x_n / (n\|x_n\|_X)$ shrinks to $0$ in $X$. Right: its images $Ty_n$ all lie outside the closed unit ball of $Y$ (red, dashed) around $T0 = 0$.*
@@ -136,7 +136,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to points that all stay outside the unit ball, so $Ty_n \not\to T0$.
 
 > [!remark] Remark
-> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§44 Bras, Kets, and the Riesz Map#^def-44-2|§44.2]]. The companion chapter's bounded operators on $H$ (Definition [[§45 The Completeness Relation#^def-45-1|§45.1]]) are the case $X = Y = H$. Since $\|Tx - Tx'\|_Y \le \|T\|\, \|x - x'\|_X$, a bounded linear map is even Lipschitz continuous, uniformly on all of $X$.
+> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§44 Bras, Kets, and the Riesz Map#^def-44-2|§44.2]]. The companion chapter's bounded operators on $H$ (Definition [[§45 The Completeness Relation#^def-45-1|§45.1]]) are the case $X = Y = H$. Since $\|Tx - Tx'\|_Y \le \|T\|\, \|x - x'\|_X$, a bounded linear map is even Lipschitz continuous, uniformly on all of $X$.
 
 ^rem-30-1
 
@@ -177,15 +177,15 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 
 ^rem-30-2
 
-> [!theorem] Proposition §30.3: Differentiation is Unbounded in the Maximum Norm
+> [!theorem] Proposition §30.4: Differentiation is Unbounded in the Maximum Norm
 > Give $C^\infty(\overline{\Omega})$ the norm $\|f\| = \max_{x \in \overline{\Omega}} |f(x)|$ (a norm under which $C^\infty(\overline{\Omega})$ is not complete). Then $Tf = \partial_{x_1} f$ is a linear map $C^\infty(\overline{\Omega}) \to C^\infty(\overline{\Omega})$ that is *not* bounded: there is no $M$ with $\max_{\overline{\Omega}} |\partial_{x_1} f| \le M \max_{\overline{\Omega}} |f|$ for all $f$.
 
-^prop-30-3
+^prop-30-4
 
 > [!proof]+ Proof
 > Homework; to be added after submission.
 
-^pf-30-3
+^pf-30-4
 
 > [!remark] Remark
 > The two examples have the same formula and opposite answers. In the first, the norm of the target counts one derivative fewer than the norm of the domain, so the derivative taken by $T$ is already paid for; in the second, both norms see only the values of $f$, and derivatives cannot be controlled by the values of a function.
@@ -225,23 +225,23 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 > [!remark]- Connections
 > - Computational version: the Fourier transform in Powers' normalization, [[§19★ Complex Methods#^def-19-2|341 Def. §19.2]], computed for Gaussians and used to solve the heat equation on the line, [[§19★ Complex Methods#^ex-19-4|341 Ex. §19.4]].
 
-> [!theorem] Proposition §30.4: Linear Maps on Finite-Dimensional Spaces are Bounded
+> [!theorem] Proposition §30.5: Linear Maps on Finite-Dimensional Spaces are Bounded
 > Let $X$ and $Y$ be normed linear spaces with $\dim X < \infty$. Every linear map $T : X \to Y$ is bounded.
 
-^prop-30-4
+^prop-30-5
 
 > [!proof]+ Proof
-> (Left to the class in lecture.) Let $e_1, \ldots, e_n$ be a basis of $X$ and $\|x\|_1 = \sum_i |a_i|$ for $x = \sum_i a_i e_i$ (Step 2 of the proof of Theorem [[§14 New Normed Spaces from Old#^pf-14-3|§14.3]]). By linearity and the triangle inequality,
+> (Left to the class in lecture.) Let $e_1, \ldots, e_n$ be a basis of $X$ and $\|x\|_1 = \sum_i |a_i|$ for $x = \sum_i a_i e_i$ (Step 2 of the proof of Theorem [[§14 New Normed Spaces from Old#^pf-14-4|§14.4]]). By linearity and the triangle inequality,
 >
 > $$
 > \|Tx\|_Y = \Bigl\| \sum_i a_i\, T e_i \Bigr\|_Y \le \sum_i |a_i|\, \|T e_i\|_Y \le \Bigl( \max_i \|T e_i\|_Y \Bigr) \|x\|_1 .
 > $$
 >
-> By Theorem [[§14 New Normed Spaces from Old#^thm-14-3|§14.3]], $\|x\|_1 \le C\|x\|_X$ for some $C$, so $\|Tx\|_Y \le C \max_i \|Te_i\|_Y\, \|x\|_X$.
+> By Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]], $\|x\|_1 \le C\|x\|_X$ for some $C$, so $\|Tx\|_Y \le C \max_i \|Te_i\|_Y\, \|x\|_X$.
 
-^pf-30-4
+^pf-30-5
 
-*Uses:* [[§14 New Normed Spaces from Old#^thm-14-3|§14.3]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]
+*Uses:* [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]
 
 > [!remark]- Connections
 > - Finite-dimensional home (inner product spaces, where the operator norm is a maximum): [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
@@ -257,14 +257,14 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 > - Finite-dimensional home (all linear maps, same operations): [[§7 Vector Space of Linear Maps#^ladr-3-5|LADR 3.5]].
 > - The dual space $X^* = \mathcal{L}(X, \mathbb{F})$ of the companion chapter: [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]].
 
-> [!theorem] Theorem §30.5: $\mathcal{L}(X, Y)$ is a Normed Linear Space
+> [!theorem] Theorem §30.6: $\mathcal{L}(X, Y)$ is a Normed Linear Space
 > Let $X$ and $Y$ be normed linear spaces.
 > - (1) $(\mathcal{L}(X, Y), \|\cdot\|)$ is a normed linear space.
 > - (2) If $Y$ is complete, then $\mathcal{L}(X, Y)$ is a Banach space.
 >
 > *Lax: §15.1, Thms 2–3*
 
-^thm-30-5
+^thm-30-6
 
 > [!proof]+ Proof of (1)
 > We may assume $X \neq \{0\}$; otherwise $\mathcal{L}(X, Y) = \{0\}$.
@@ -286,7 +286,7 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 >
 > The first inequality is the triangle inequality in $Y$ at each $x$. The second holds because for every unit $x$, $\|T_1 x\|_Y + \|T_2 x\|_Y \le \|T_1\| + \|T_2\|$, so the right-hand side is an upper bound for the set whose supremum is taken: summing and then taking the supremum gives at most the sum of the separate suprema.
 
-^pf-30-5
+^pf-30-6
 
 *Uses:* [[§12 Completeness#^pf-12-1|§12.1 (Part 1 of the proof)]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§30 Boundedness and Continuity#^def-30-1|Def. §30.1]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]], [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]], [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
 
@@ -323,9 +323,9 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 >
 > **Step 4: conclusion.** By Step 2, $T_k - T$ is linear, and by Step 3 it is bounded with $\|T_k - T\| \le \varepsilon$ for $k \ge N$. Since $\mathcal{L}(X, Y)$ is a linear space (part (1)) and $T_k, T_k - T \in \mathcal{L}(X, Y)$, also $T = T_k - (T_k - T) \in \mathcal{L}(X, Y)$. Finally $\|T_k - T\| \le \varepsilon$ for all $k \ge N$ says $T_k \to T$ in $\mathcal{L}(X, Y)$. So every Cauchy sequence converges, and $\mathcal{L}(X, Y)$ is a Banach space.
 
-^pf-30-5-2
+^pf-30-6-2
 
-*Uses:* [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-5|§30.5 (1)]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]], [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§11 Normed Linear Spaces#^prop-11-5|§11.5]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-2|Def. §12.2]]
+*Uses:* [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-6|§30.6 (1)]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]], [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-2|Def. §12.2]]
 
 > [!remark]- Connections
 > - Finite-dimensional home of the norm properties: [[§28 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].

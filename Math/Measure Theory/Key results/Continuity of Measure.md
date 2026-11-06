@@ -23,7 +23,7 @@ tags: [measure-theory, hub]
 - [[§35 Lᵖ as a Banach Space#^thm-35-14|Theorem §35.14: L^∞ is Not Separable]]
 
 ## Used in (Functional Analysis)
-- [[§29 Sequence and Function Spaces#^prop-29-5|Proposition §29.5: L^∞(E) is Not Separable]]
+- [[§29 Sequence and Function Spaces#^prop-29-6|Proposition §29.6: L^∞(E) is Not Separable]]
 - [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|Theorem §35.1: Radon–Nikodym]]
 - [[§35 Measures and the Radon–Nikodym Theorem#^rem-35-1|Remark: Facts Assumed from Measure Theory]]
 

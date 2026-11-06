@@ -39,7 +39,7 @@ Any operation on $X/Y$ defined through representatives must be shown independent
 
 ## Technique 3: One-Step Enlargement plus Zorn
 
-The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof, reusable whenever a maximal object with a closure property is needed.
+The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof, reusable whenever a maximal object with a closure property is needed.
 
 > [!remark] Remark: Strategy
 > - (i) **One-step lemma**: show that if the desired property holds for an object $W$ and $W$ is not yet “full,” there is a strictly larger $W'$ with the same property. This is where the actual mathematics lives.
@@ -114,8 +114,8 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ^rem-t7
 
 > [!example] Example T7: Applications (HW2)
-> - **All norms on $\mathbb{F}^n$ are equivalent** (P2(a), Theorem [[§14 New Normed Spaces from Old#^thm-14-3|§14.3]]), Steps 4–7.
-> - **Finite-dimensional subspaces are closed** (P2(b), Corollary [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]]), via the equivalence with the coordinate norm.
+> - **All norms on $\mathbb{F}^n$ are equivalent** (P2(a), Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]]), Steps 4–7.
+> - **Finite-dimensional subspaces are closed** (P2(b), Corollary [[§14 New Normed Spaces from Old#^cor-14-6|§14.6]]), via the equivalence with the coordinate norm.
 
 ^ex-t7
 
@@ -201,7 +201,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ^rem-t13
 
 > [!example] Example T13: Applications (HW4)
-> - **Sharp integral inequality** (P4, Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-8|§25.8]]): $h = f''$, $g$ linear, $(h,g) = -1$ from the boundary data.
+> - **Sharp integral inequality** (P4, Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-10|§25.10]]): $h = f''$, $g$ linear, $(h,g) = -1$ from the boundary data.
 > - **Perturbed orthonormal sets** (P3, Proposition [[§27 Orthonormal Sets and Bases#^prop-27-10|§27.10]]): $(x, e_n) = (x, e_n - f_n)$, then Parseval.
 
 ^ex-t13
@@ -214,8 +214,8 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ^rem-t14
 
 > [!example] Example T14: Applications (HW4)
-> - **Even and odd functions** (P1, Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-7|§25.7]]): symmetry gives $O \subset E^\perp$; testing against $g_e$ gives the rest.
-> - **Double complement** (P2, Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-6|§25.6]]): Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-5|§25.5]], then Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]](2).
+> - **Even and odd functions** (P1, Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-9|§25.9]]): symmetry gives $O \subset E^\perp$; testing against $g_e$ gives the rest.
+> - **Double complement** (P2, Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]]): Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-6|§25.6]], then Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]](2).
 
 ^ex-t14
 
@@ -228,7 +228,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 
 > [!example] Example T15: Applications (Lecture 9)
 > - $\ell^p$, $1 \le p < \infty$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]]).
-> - $L^p(E)$, $1 \le p < \infty$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]), after reducing to continuous functions.
+> - $L^p(E)$, $1 \le p < \infty$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]]), after reducing to continuous functions.
 > - A Hilbert space with a countable orthonormal basis (Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|§28.3]], $\Rightarrow$).
 
 ^ex-t15
@@ -241,21 +241,21 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ^rem-t16
 
 > [!example] Example T16: Applications (HW5, Lecture 14)
-> - $L^\infty([0,1])$ (P1(b), Proposition [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]]): $\chi_{[0,t]}$, $t \in (0,1]$.
-> - $\ell^\infty$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]): $\chi_S$, $S \subset \mathbb{N}$.
-> - $(C[0,1])'$ (Lecture 14, Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|§37.4]]): the point evaluations $\ell_s(f) = f(s)$, $s \in [0,1]$, at mutual distance $2$.
+> - $L^\infty([0,1])$ (P1(b), Proposition [[§29 Sequence and Function Spaces#^prop-29-6|§29.6]]): $\chi_{[0,t]}$, $t \in (0,1]$.
+> - $\ell^\infty$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]): $\chi_S$, $S \subset \mathbb{N}$.
+> - $(C[0,1])'$ (Lecture 14, Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|§37.5]]): the point evaluations $\ell_s(f) = f(s)$, $s \in [0,1]$, at mutual distance $2$.
 
 ^ex-t16
 
 ## Technique 17: Complete the Square to Reach a Distance
 
 > [!remark] Remark: Strategy
-> A quadratic functional $\frac12\|v\|^2 - \ell(v)$ on a Hilbert space becomes, after writing $\ell = (\cdot, u^*)$ by [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz]] and adding and subtracting $\frac12\|u^*\|^2$, the function $\frac12\|u^* - v\|^2 - \frac12\|u^*\|^2$. Minimizing it is minimizing a distance, and the [[§25 Projection and Orthogonal Decomposition#^thm-25-2|projection theorem]] gives existence and uniqueness of the minimizer.
+> A quadratic functional $\frac12\|v\|^2 - \ell(v)$ on a Hilbert space becomes, after writing $\ell = (\cdot, u^*)$ by [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz]] and adding and subtracting $\frac12\|u^*\|^2$, the function $\frac12\|u^* - v\|^2 - \frac12\|u^*\|^2$. Minimizing it is minimizing a distance, and the [[§25 Projection and Orthogonal Decomposition#^thm-25-2|projection theorem]] gives existence and uniqueness of the minimizer.
 
 ^rem-t17
 
 > [!example] Example T17: Applications (HW5)
-> - Quadratic minimization over a closed convex set (P3, Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-5|§26.5]]).
+> - Quadratic minimization over a closed convex set (P3, Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-6|§26.6]]).
 
 ^ex-t17
 
@@ -269,7 +269,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 > [!example] Example T18: Applications (HW5)
 > - Codimension one (P4, Proposition [[§31 Dual Spaces#^prop-31-5|§31.5]]).
 > - Closed null space implies bounded (P5, Proposition [[§31 Dual Spaces#^prop-31-6|§31.6]]): $y_n = x_0 - x_n/\ell(x_n)$.
-> - The [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]], part (2) (Lemma [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]](c)).
+> - The [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]], part (2) (Lemma [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|§26.4]](c)).
 
 ^ex-t18
 
@@ -281,10 +281,10 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ^rem-t19
 
 > [!example] Example §T19: Applications (Lectures 11–18)
-> - Poincaré on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|§33.7]]), from [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|Poincaré]] on $C_c^\infty$.
+> - Poincaré on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|§33.9]]), from [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-8|Poincaré]] on $C_c^\infty$.
 > - Limits in $W^{1,p}$ satisfy integration by parts (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]).
 > - A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], Step 3); the same fails in $\ell^\infty$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
-> - Banach–Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-4|§42.4]]): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
+> - Banach–Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
 > - $\sin(mx) \rightharpoonup 0$ in $L^p$, $1 < p < \infty$ (Lecture 18, Example [[§43 Weak and Weak-Star Convergence#^ex-43-3|§43.3]]): test only against continuous $g$, dense in $L^{p'}$, plus a uniform bound.
 
 ^ex-t19
@@ -292,20 +292,20 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ## Technique 20: Weak Formulation, Then Lax–Milgram
 
 > [!remark] Remark: Strategy
-> To solve a linear boundary value problem: multiply the equation by a [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|test function]] vanishing on the boundary, [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|integrate by parts]] to move one derivative onto the test function, and read off a [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|bilinear form]] $B(u, v)$ and a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|functional]] $\ell(v)$. Choose the [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] in which both make sense and the boundary condition is built in. Check that $B$ is [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|bounded]] and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|coercive]] (coercivity usually needs an inequality such as [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|Poincaré]]) and that $\ell$ is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|bounded]]; [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Lax–Milgram]] then gives a unique [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|weak solution]].
+> To solve a linear boundary value problem: multiply the equation by a [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|test function]] vanishing on the boundary, [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|integrate by parts]] to move one derivative onto the test function, and read off a [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|bilinear form]] $B(u, v)$ and a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|functional]] $\ell(v)$. Choose the [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] in which both make sense and the boundary condition is built in. Check that $B$ is [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|bounded]] and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|coercive]] (coercivity usually needs an inequality such as [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|Poincaré]]) and that $\ell$ is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|bounded]]; [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Lax–Milgram]] then gives a unique [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|weak solution]].
 
 ^rem-t20
 
 > [!example] Example T20: Applications (Lecture 12)
-> - The [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|Dirichlet problem]] for $-\Delta u = f$ (Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-2|§34.2]]).
-> - General elliptic equations $-\operatorname{div}(A\nabla u) = f$ (Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-4|§34.4]]).
+> - The [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|Dirichlet problem]] for $-\Delta u = f$ (Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-3|§34.3]]).
+> - General elliptic equations $-\operatorname{div}(A\nabla u) = f$ (Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-5|§34.5]]).
 
 ^ex-t20
 
 ## Technique 21: Represent, Then Test with Indicator Functions
 
 > [!remark] Remark: Strategy
-> When the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz theorem]] produces an element $g_0$ satisfying $\int f\,(\cdots g_0 \cdots) = \cdots$ for all $f$, information about $g_0$ pointwise comes from testing with indicator functions $f = \chi_F$ of sets defined by $g_0$ itself, such as $\{g_0 \le 0\}$ or $\{g_0 > 1\}$: the identity then compares two integrals with known signs, and forces the set to be null. Check that the test functions chosen lie in the [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]], truncating if necessary.
+> When the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz theorem]] produces an element $g_0$ satisfying $\int f\,(\cdots g_0 \cdots) = \cdots$ for all $f$, information about $g_0$ pointwise comes from testing with indicator functions $f = \chi_F$ of sets defined by $g_0$ itself, such as $\{g_0 \le 0\}$ or $\{g_0 > 1\}$: the identity then compares two integrals with known signs, and forces the set to be null. Check that the test functions chosen lie in the [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]], truncating if necessary.
 
 ^rem-t21
 
@@ -323,7 +323,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 
 > [!example] Example T22: Applications (Lectures 13–14)
 > - $\|y\| = \max_{\|\ell\| \le 1} |\ell(y)|$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]): $\ell_0(c\, y_0) = c\, \|y_0\|$ on $\operatorname{span}\{y_0\}$.
-> - The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]]): $\ell(c\, z_0 + y) = c\, m$ on $\operatorname{span}\{z_0, Y\}$.
+> - The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]): $\ell(c\, z_0 + y) = c\, m$ on $\operatorname{span}\{z_0, Y\}$.
 > - $(\ell^\infty)' \neq \ell^1$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]): $\lambda(x) = \lim x_j$ on the convergent sequences.
 > - Distance from a functional to $Y^\perp$ (Lecture 14, Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]]): extend $\ell|_Y$ with the same norm.
 > - Closed subspaces of reflexive spaces (Lecture 14, Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|§37.8]], Step 2): extending makes the restriction map $X' \to Y'$ onto.
@@ -363,7 +363,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ^rem-t25
 
 > [!example] Example T25: Application (Lecture 15)
-> The Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-2|§40.2]]): the $n$-th ball avoids $\overline{E}_n$, by Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]], and lies inside all earlier balls.
+> The Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-4|§40.4]]): the $n$-th ball avoids $\overline{E}_n$, by Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]], and lies inside all earlier balls.
 
 ^ex-t25
 
@@ -389,8 +389,8 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 > [!example] Example §T27: Applications (Lectures 16–17)
 > - The closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]).
 > - $C^1[a,b]$ is not complete in the maximum norm (Example [[§41 The Open Mapping Theorem and Its Consequences#^ex-41-1|§41.1]]).
-> - The uniform boundedness principle (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-3|§42.3]]): the norm $\|x\| + \sup_\alpha \|A_\alpha x\|$.
-> - The second equivalent norm theorem (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-2|§42.2]]): the identity map is closed.
+> - The uniform boundedness principle (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]): the norm $\|x\| + \sup_\alpha \|A_\alpha x\|$.
+> - The second equivalent norm theorem (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-4|§42.4]]): the identity map is closed.
 
 ^ex-t27
 
@@ -408,7 +408,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ^rem-t28
 
 > [!example] Example §T28: Application (Lecture 17)
-> The Lax equivalence theorem (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]).
+> The Lax equivalence theorem (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-8|§42.8]]).
 
 ^ex-t28
 
@@ -434,6 +434,6 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] proof
 ^rem-t30
 
 > [!example] Example §T30: Application (Lecture 18)
-> Hyperplane separation in a normed space (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]), from Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]; and through it Mazur's theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-6|§43.6]]).
+> Hyperplane separation in a normed space (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]), from Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]; and through it Mazur's theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-7|§43.7]]).
 
 ^ex-t30

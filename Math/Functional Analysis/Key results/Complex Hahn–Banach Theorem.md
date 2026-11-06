@@ -11,7 +11,7 @@ tags: [functional-analysis, hub]
 - [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|Theorem §9.2: Complex Hahn–Banach]], in [[§9 The Complex Hahn–Banach Theorem]]
 
 ## Its proof uses
-- [[§5 Statement and Motivation#^thm-5-2|Theorem §5.2: Hahn–Banach]]
+- [[§5 Statement and Motivation#^thm-5-3|Theorem §5.3: Hahn–Banach]]
 - [[§9 The Complex Hahn–Banach Theorem#^lem-9-1|Lemma §9.1: Consequences of Complex Homogeneity]]
 
 ## Used in (Functional Analysis)

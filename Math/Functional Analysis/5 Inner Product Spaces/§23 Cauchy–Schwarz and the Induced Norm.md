@@ -154,7 +154,7 @@ tags: [functional-analysis, math556]
 > - Complete normed spaces: [[§12 Completeness#^def-12-2|Def. §12.2]] (Banach space); in 551, [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-5|551 Def. §34.5]], where $L^2$ is noted to be a Hilbert space ([[§34 Normed Linear Spaces and Lᵖ Spaces#^rem-34-1|551 Remark §19.1]]).
 
 > [!example] Example §23.1: Hilbert Spaces
-> $\mathbb{R}^n$ and $\mathbb{C}^n$ with the dot product are Hilbert spaces, being finite-dimensional (Corollary [[§14 New Normed Spaces from Old#^cor-14-4|§14.4]]); so are $\ell^2$ and $L^2(\Omega)$ with the inner products of [[§22 Definition and Examples|§22]], complete by Theorems [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]] and [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]].
+> $\mathbb{R}^n$ and $\mathbb{C}^n$ with the dot product are Hilbert spaces, being finite-dimensional (Corollary [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]]); so are $\ell^2$ and $L^2(\Omega)$ with the inner products of [[§22 Definition and Examples|§22]], complete by Theorems [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]] and [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]].
 
 ^ex-23-1
 

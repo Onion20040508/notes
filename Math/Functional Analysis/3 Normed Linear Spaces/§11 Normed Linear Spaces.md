@@ -57,11 +57,11 @@ tags: [functional-analysis, math556]
 *Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§7 Convex Sets and the Gauge#^prop-7-1|§7.1]], [[§7 Convex Sets and the Gauge#^prop-7-5|§7.5]], [[§7 Convex Sets and the Gauge#^prop-7-6|§7.6]]
 
 > [!remark] Remark: Relation to the Functions $p$ of Chapter 2
-> By (a), every [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] statement applies with $p = \|\cdot\|$ or $p = C\|\cdot\|$. The converse of (a) is false, and not only because a positive homogeneous subadditive $p$ may take negative values: even a non-negative one with $p(x) = 0 \Rightarrow x = 0$ need not be a norm, since nothing forces $p(-x) = p(x)$. On $\mathbb{R}$, $p(x) = \max\{x, 0\} + 2\max\{-x, 0\}$ is such a function, with $p(1) = 1 \neq 2 = p(-1)$. By (b) and (c), norms on a real space correspond to convex sets with $0$ interior that contain no full ray and are symmetric; the unit ball is the geometric picture of the norm, as with the disk, square and diamond of Example [[§5 Statement and Motivation#^ex-5-2|§5.2]].
+> By (a), every [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] statement applies with $p = \|\cdot\|$ or $p = C\|\cdot\|$. The converse of (a) is false, and not only because a positive homogeneous subadditive $p$ may take negative values: even a non-negative one with $p(x) = 0 \Rightarrow x = 0$ need not be a norm, since nothing forces $p(-x) = p(x)$. On $\mathbb{R}$, $p(x) = \max\{x, 0\} + 2\max\{-x, 0\}$ is such a function, with $p(1) = 1 \neq 2 = p(-1)$. By (b) and (c), norms on a real space correspond to convex sets with $0$ interior that contain no full ray and are symmetric; the unit ball is the geometric picture of the norm, as with the disk, square and diamond of Example [[§5 Statement and Motivation#^ex-5-2|§5.2]].
 
 ^rem-11-2
 
-> [!example] Example §11.1: Norms on $\mathbb{R}^n$
+> [!example] Example §11.2: Norms on $\mathbb{R}^n$
 > On $X = \mathbb{R}^n$, the following are norms:
 >
 > $$\begin{aligned}
@@ -75,7 +75,7 @@ tags: [functional-analysis, math556]
 >
 > *Lax: §5.1, examples (a)–(b), for sequences*
 
-^ex-11-1
+^ex-11-2
 
 > [!remark]- Connections
 > - The same norms in 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-2|551 Ex. §34.2]] (unit-ball figure); as metrics on $\mathbb{R}^n$: [[§12 Metric Topology#^ex-12-1|590 Ex. §12.1]], [[§12 Metric Topology#^ex-12-5|590 Ex. §12.5]], [[§13 Some Topological Concepts in Metric Spaces#^ex-13-4|451 Ex. §13.4]].
@@ -195,17 +195,17 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > [!remark]- Connections
 > - In 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-4|551 Def. §34.4]]; on $\mathbb{R}$: [[§10a Cauchy Sequences#^def-10a-1|451 Def. §10a.1]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-3|451 Def. §13.3]].
 
-> [!theorem] Proposition §11.5: Limits are Unique; Convergent Sequences are Cauchy
+> [!theorem] Proposition §11.6: Limits are Unique; Convergent Sequences are Cauchy
 > Let $\{x_n\}$ be a sequence in a normed linear space $X$.
 > - (a) If $x_n \to x$ and $x_n \to x'$, then $x = x'$.
 > - (b) If $x_n \to x$, then $\{x_n\}$ is Cauchy.
 
-^prop-11-5
+^prop-11-6
 
 > [!proof]+ Proof
 > (Not covered in lecture.) (a) $\|x - x'\| \le \|x - x_n\| + \|x_n - x'\| \to 0$, so $\|x - x'\| = 0$ and $x = x'$ by positivity. (b) Given $\varepsilon > 0$, choose $N$ with $\|x_n - x\| < \varepsilon/2$ for $n \ge N$; then for $m, k \ge N$, $\|x_m - x_k\| \le \|x_m - x\| + \|x - x_k\| < \varepsilon$.
 
-^pf-11-5
+^pf-11-6
 
 *Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]]
 
@@ -252,7 +252,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > [!remark]- Connections
 > - Topological density: [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]].
 
-> [!theorem] Proposition §11.6: Properties of the Closure
+> [!theorem] Proposition §11.7: Properties of the Closure
 > Let $S$ be a subset of a normed linear space $X$.
 > - (a) $S \subset \overline{S}$, and $\overline{S}$ is closed.
 > - (b) $S$ is closed if and only if $S = \overline{S}$.
@@ -261,7 +261,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 >
 > *Lax: §5.1, Thm 2 (part (d))*
 
-^prop-11-6
+^prop-11-7
 
 > [!proof]+ Proof
 > (Not covered in lecture.) (a) $s \in S$ is the limit of the constant sequence $s, s, \ldots$. Let $x_k \in \overline{S}$ with $x_k \to x$. For each $k$ choose $s_k \in S$ with $\|s_k - x_k\| < 1/k$; then $\|s_k - x\| \le 1/k + \|x_k - x\| \to 0$, so $x \in \overline{S}$.
@@ -278,12 +278,12 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 >
 > so $ax + by \in \overline{S}$.
 
-^pf-11-6
+^pf-11-7
 
 *Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
 
 > [!definition] Definition §11.9: Closed Linear Span
-> The **closed linear span** of a subset $S$ of a normed linear space $X$ is $\overline{\operatorname{span}}\, S := \overline{\operatorname{span} S}$. By Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]](a),(c),(d), it is a closed linear subspace of $X$, and it is the smallest closed linear subspace containing $S$.
+> The **closed linear span** of a subset $S$ of a normed linear space $X$ is $\overline{\operatorname{span}}\, S := \overline{\operatorname{span} S}$. By Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](a),(c),(d), it is a closed linear subspace of $X$, and it is the smallest closed linear subspace containing $S$.
 >
 > *Lax: §6.4, closed linear span*
 
@@ -308,19 +308,19 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > [!remark]- Connections
 > - Interior points in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]].
 
-> [!theorem] Proposition §11.7: Metric Interior Points are Interior Points
+> [!theorem] Proposition §11.8: Metric Interior Points are Interior Points
 > Let $K$ be a subset of a normed linear space $X$. Every metric interior point of $K$ is an interior point of $K$ in the sense of Definition [[§7 Convex Sets and the Gauge#^def-7-1|§7.1]].
 
-^prop-11-7
+^prop-11-8
 
 > [!proof]+ Proof
 > Let $B_r(x_0) \subset K$ and $y \in X$. If $y = 0$, then $x_0 + ty = x_0 \in K$ for all $t$. If $y \neq 0$, put $\varepsilon(y) = r/\|y\|$; for $|t| < \varepsilon(y)$, $\|(x_0 + ty) - x_0\| = |t|\,\|y\| < r$, so $x_0 + ty \in B_r(x_0) \subset K$. (Not covered in lecture.)
 
-^pf-11-7
+^pf-11-8
 
 *Uses:* [[§11 Normed Linear Spaces#^def-11-11|Def. §11.11]], [[§11 Normed Linear Spaces#^def-11-10|Def. §11.10]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
 
-> [!example] Example §11.2: An Interior Point that is Not a Metric Interior Point
+> [!example] Example §11.4: An Interior Point that is Not a Metric Interior Point
 > In $\mathbb{R}^2$ with the Euclidean norm, let $P = \{ (s, s^2) : s \neq 0 \}$ and $K = \mathbb{R}^2 \setminus P$. Then $0 \in K$ is an interior point of $K$ but not a metric interior point.
 >
 > *Not metric interior.* $(1/n, 1/n^2) \in P$, so $(1/n, 1/n^2) \notin K$, while $\|(1/n, 1/n^2)\| \to 0$; so no ball $B_r(0)$ lies in $K$.
@@ -329,7 +329,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 >
 > The definition of [[§7 Convex Sets and the Gauge#^def-7-1|interior point]] tests one line at a time, and the parabola approaches $0$ along no single line. The set $K$ is not convex.
 
-^ex-11-2
+^ex-11-4
 
 ![[m556-8-1.svg]]
 *The parabola $P$ (red) is removed from the plane. A line through $0$ meets $P$ at most once (red dots), so $0$ can move some distance along every line without leaving $K$ (blue: $|t| < |t^{\ast}|$ on one line): $0$ is an interior point. But the points $(1/n, 1/n^2)$ of $P$ enter every ball $B_r(0)$ (dashed), so $0$ is not a metric interior point.*

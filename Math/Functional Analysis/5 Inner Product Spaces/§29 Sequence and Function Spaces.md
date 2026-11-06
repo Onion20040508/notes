@@ -25,7 +25,7 @@ The dot product is the model inner product, with the conjugate on the second slo
 
 The $L^2$ inner product restricted to $C[a,b]$ proves a sharp integral inequality for $C^2$ functions by Cauchy–Schwarz; [[§25 Projection and Orthogonal Decomposition#^rem-25-8|the remark after it]] finds the test function by orthogonal projection onto $\operatorname{span}\{1, x\}$.
 
-![[§25 Projection and Orthogonal Decomposition#^prop-25-8]]
+![[§25 Projection and Orthogonal Decomposition#^prop-25-10]]
 
 *Chain:* ← [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§38 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]] →
 
@@ -123,26 +123,26 @@ The two moves of the proof: cut off the tail, which is small because the series 
 
 ^rem-29-1
 
-> [!theorem] Proposition §29.3: $\ell^\infty$ is Not Separable
+> [!theorem] Proposition §29.4: $\ell^\infty$ is Not Separable
 > $\ell^\infty$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]]) is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
 
-^prop-29-3
+^prop-29-4
 
 > [!proof]+ Proof
 > (Not covered in lecture; the argument of HW5, Problem 1(b).) For a subset $S \subset \mathbb{N}$ let $\chi_S \in \ell^\infty$ be the sequence with $n$-th term $1$ if $n \in S$ and $0$ otherwise. If $S \neq T$, some $n$ lies in exactly one of them, so $|(\chi_S)_n - (\chi_T)_n| = 1$, while every term of $\chi_S - \chi_T$ has modulus at most $1$; hence $\|\chi_S - \chi_T\|_\infty = 1$. The set of subsets of $\mathbb{N}$ is uncountable ([[§4 Uncountability#^thm-4-1|Cantor]]). If $D$ were a countable dense subset of $\ell^\infty$, choose for each $S$ some $d_S \in D$ with $\|\chi_S - d_S\|_\infty < \frac12$. For $S \neq T$, $d_S = d_T$ would give $1 = \|\chi_S - \chi_T\|_\infty < \frac12 + \frac12$, which is impossible; so $S \mapsto d_S$ would map an uncountable set one-to-one into the countable set $D$. Hence $\ell^\infty$ is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
 
-^pf-29-3
+^pf-29-4
 
 *Uses:* [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§4 Uncountability#^thm-4-1|551 §4.1]]
 
 > [!remark]- Connections
-> - The same separated-family argument for functions: [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]], and in the vault home [[§35 Lᵖ as a Banach Space#^thm-35-14|551 §35.14]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t16|Technique 16]].
+> - The same separated-family argument for functions: [[§29 Sequence and Function Spaces#^prop-29-6|§29.6]], and in the vault home [[§35 Lᵖ as a Banach Space#^thm-35-14|551 §35.14]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t16|Technique 16]].
 
 The shift on $\ell^2$ preserves the inner product without being onto, and every infinite-dimensional [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] Hilbert space is isomorphic to $\ell^2$.
 
 ![[§28 Existence of Orthonormal Bases and Separability#^ex-28-1]]
 
-![[§28 Existence of Orthonormal Bases and Separability#^thm-28-4]]
+![[§28 Existence of Orthonormal Bases and Separability#^thm-28-5]]
 
 *Chain:* ← [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§38 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]] →
 
@@ -158,7 +158,7 @@ $L^2(\Omega)$ carries the integral inner product and is a Hilbert space. $C_c(\m
 
 [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Separability]] splits the $L^p$ as it split the $\ell^p$:
 
-> [!theorem] Proposition §29.4: $L^p(E)$ is Separable for $1 \le p < \infty$
+> [!theorem] Proposition §29.5: $L^p(E)$ is Separable for $1 \le p < \infty$
 > Let $E \subset \mathbb{R}^n$ be measurable and $1 \le p < \infty$. Let $D$ be the set of functions on $E$ of the form
 >
 > $$
@@ -167,7 +167,7 @@ $L^2(\Omega)$ carries the integral inner product and is a Hilbert space. $C_c(\m
 >
 > where a rectangle is a product $\prod_{i=1}^n [\alpha_i, \beta_i)$. Then $D$ is countable and dense in $L^p(E)$. Hence $L^p(E)$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
 
-^prop-29-4
+^prop-29-5
 
 > [!proof]+ Proof
 > Outline: continuous functions are dense in $L^p$ (taken for granted), a continuous function is approximated by step functions, and the step functions can be taken with rational heights and rational rectangles. The details:
@@ -192,7 +192,7 @@ $L^2(\Omega)$ carries the integral inner product and is a Hilbert space. $C_c(\m
 > \|f - \varphi\|_{L^p(E)} \le \|\tilde{f} - \tilde{\varphi}\|_{L^p(\mathbb{R}^n)} \le \|\tilde{f} - g\| + \|g - \psi\| + \|\psi - \tilde{\varphi}\| < \varepsilon.
 > $$
 
-^pf-29-4
+^pf-29-5
 
 *Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^def-19-1|Def. §19.1]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-4|§19.4]], [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]], [[Minkowski's Inequality|551 §35.2]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]]
 
@@ -205,12 +205,12 @@ $L^2(\Omega)$ carries the integral inner product and is a Hilbert space. $C_c(\m
 
 A continuous $g$ and a step function on cubes with rational endpoints and rational heights (here $n = 1$, heights rounded to quarters). The $L^p$ distance is small because it is an *integral* of a small difference over a bounded set. In $L^\infty$ the distance is a supremum, and this argument breaks down.
 
-> [!theorem] Proposition §29.5: $L^\infty(E)$ is Not Separable
+> [!theorem] Proposition §29.6: $L^\infty(E)$ is Not Separable
 > If $E \subset \mathbb{R}^n$ is measurable with $m(E) > 0$, then $L^\infty(E)$ is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
 >
 > *Source: HW5, Problem 1(b)*
 
-^prop-29-5
+^prop-29-6
 
 > [!proof]+ Proof
 > (Stated in lecture without proof. HW5, Problem 1(b) is the case $E = [0,1]$; the general case below is Claude's.) Here $\|f\|_\infty = \inf\{M \ge 0 : |f| \le M \text{ a.e.}\}$, functions equal almost everywhere being identified.
@@ -229,13 +229,13 @@ A continuous $g$ and a step function on cubes with rational endpoints and ration
 >
 > With the working definition of $L^\infty$ in Definition [[§19 The Function Spaces Lᵖ(Ω)#^def-19-1|§19.1]] (bounded functions with the supremum norm) the same families work verbatim, since then $\|\chi_A\| = 1$ for every nonempty $A$.
 
-^pf-29-5
+^pf-29-6
 
 *Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^def-19-1|Def. §19.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§4 Uncountability#^ex-4-2|551 Ex. §4.2]], [[§13 Approximation and Continuity of Measure#^prop-13-4|551 §13.4]], [[§13 Approximation and Continuity of Measure#^prop-13-5|551 §13.5]], [[Intermediate Value Theorem|451 §18.3]]
 
 > [!remark]- Connections
 > - Vault home: [[§35 Lᵖ as a Banach Space#^thm-35-14|551 §35.14]], with the family of indicators of $(0, t)$ and, for general $E$, continuity of measure.
-> - The sequence version: [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t16|Technique 16]].
+> - The sequence version: [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t16|Technique 16]].
 
 ![[m556-20-6.svg]]
 *Step 1: $f_s = \chi_{[0,s]}$ (blue) and $f_t = \chi_{[0,t]}$ (black) differ by $1$ on $(s,t]$ (shaded).*
@@ -253,7 +253,7 @@ Any two of the functions $f_t = \chi_{[0,t]}$ differ by $1$ on an interval of po
 
 In $L^2[-1,1]$ the even and the odd functions are closed subspaces, each the orthogonal complement of the other, and $f = f_e + f_o$ is the orthogonal decomposition.
 
-![[§25 Projection and Orthogonal Decomposition#^prop-25-7]]
+![[§25 Projection and Orthogonal Decomposition#^prop-25-9]]
 
 *Chain:* [[§45 The Completeness Relation#^ex-45-1|Chapter 7 (parity)]] →
 
@@ -263,6 +263,6 @@ The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal bas
 
 ![[§27 Orthonormal Sets and Bases#^thm-27-11]]
 
-![[§27 Orthonormal Sets and Bases#^rem-27-9]]
+![[§27 Orthonormal Sets and Bases#^cor-27-12]]
 
 *Chain:* [[§30 Boundedness and Continuity#^ex-30-2|Chapter 6 (the Fourier transform)]] · [[§45 The Completeness Relation#^ex-45-2|Chapter 7 (a particle on a ring)]] →

@@ -19,7 +19,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - They form [[§12 Duality#^ladr-3-110|Dual space, V′]]. On inner product spaces every functional is $v\mapsto\ip{v}{w}$: [[Riesz representation theorem]].
 > - Physics: bras $\langle\psi|$ are linear functionals on kets.
-> - 556 starts from the same definition ([[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|556 Def. §3.5]]); in infinite dimensions functionals need not be continuous, so it singles out the bounded ones ([[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|556 Def. §26.1]]) and produces them with Hahn–Banach ([[§5 Statement and Motivation#^thm-5-2|556 Thm. §5.2]]).
+> - 556 starts from the same definition ([[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|556 Def. §3.5]]); in infinite dimensions functionals need not be continuous, so it singles out the bounded ones ([[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|556 Def. §26.1]]) and produces them with Hahn–Banach ([[§5 Statement and Motivation#^thm-5-3|556 Thm. §5.3]]).
 > - Used in Relativity: covariant components $a_\mu$ are the components of a linear functional, and the metric lowers indices — [[§B1.1 The Metric and Index Notation#^rem-b1-1-1|REL Remark: Why two index positions]]; covectors and tensors of type (m, n) — [[§B2.2 Tensors and the Covariance Principle#^def-b2-2-1|REL Def. §B2.2.1]].
 > - The differential $df$ of $f:\R^2\to\R$ at a fixed point is a linear functional of the increment $(h,k)$: [[§10 The Differential#^def-10-1|452 Def. §10.1]].
 

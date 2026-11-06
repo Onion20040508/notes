@@ -9,7 +9,7 @@ tags: [functional-analysis, math556]
 
 *Stage: maps — Thread: functionals. A density between two measures is the Riesz representer of a bounded functional on an $L^2$ space.*
 
-The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows quickly from the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]]; it will be needed later. For those who have taken measure theory the definitions are a review.
+The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows quickly from the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]]; it will be needed later. For those who have taken measure theory the definitions are a review.
 
 > [!definition] Definition §35.1: $\sigma$-Algebra
 > Let $X$ be a set. A collection $\mathcal{A}$ of subsets of $X$ is a **$\sigma$-algebra** if
@@ -111,7 +111,7 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 >
 > (If $f = 0$ $(\mu+\nu)$-a.e. then $f = 0$ $\mu$-a.e., so $\ell$ is defined on classes, and the inequality shows $f \in L^1(\mu)$.)
 >
-> **Step 2: Riesz.** By Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]] there is a unique $g_0 \in H$ with
+> **Step 2: Riesz.** By Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]] there is a unique $g_0 \in H$ with
 >
 > $$
 > \int_X f\, d\mu = \ell(f) = (f, g_0) = \int_X f g_0\, d(\mu + \nu) \qquad \text{for all } f \in H .
@@ -158,7 +158,7 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 
 ^pf-35-1
 
-*Uses:* [[§35 Measures and the Radon–Nikodym Theorem#^def-35-4|Def. §35.4]], [[§35 Measures and the Radon–Nikodym Theorem#^def-35-5|Def. §35.5]], [[§35 Measures and the Radon–Nikodym Theorem#^rem-35-1|Remark §35 (facts assumed)]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]], [[§13 Approximation and Continuity of Measure#^prop-13-4|551 §13.4]], [[§20 The Lebesgue Integral for Simple Functions#^thm-20-7|551 §20.7]]
+*Uses:* [[§35 Measures and the Radon–Nikodym Theorem#^def-35-4|Def. §35.4]], [[§35 Measures and the Radon–Nikodym Theorem#^def-35-5|Def. §35.5]], [[§35 Measures and the Radon–Nikodym Theorem#^rem-35-1|Remark §35 (facts assumed)]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§13 Approximation and Continuity of Measure#^prop-13-4|551 §13.4]], [[§20 The Lebesgue Integral for Simple Functions#^thm-20-7|551 §20.7]]
 
 > [!remark]- Connections
 > - The converse direction: every non-negative measurable density defines a measure, [[§21 Consequences of the Monotone Convergence Theorem#^def-21-1|551 Def. §21.1]], and that measure is absolutely continuous with respect to Lebesgue measure (its integral over a null set vanishes, [[§21 Consequences of the Monotone Convergence Theorem#^prop-21-2|551 §21.2]]).

@@ -211,7 +211,7 @@ The idea now is that if (1) is a true equality, both sides must give the same re
 ^def-9-3
 
 > [!remark]- Connections
-> - Fourier series as expansions in an orthonormal basis of $L^2$, converging in norm: [[§27 Orthonormal Sets and Bases#^rem-27-9|556 Remark: Fourier Series]].
+> - Fourier series as expansions in an orthonormal basis of $L^2$, converging in norm: [[§27 Orthonormal Sets and Bases#^cor-27-12|556 Cor. §27.12]].
 
 > [!theorem] Proposition §9.5: Special Values of Sine and Cosine
 > For $n = 0, \pm1, \pm2, \ldots$,

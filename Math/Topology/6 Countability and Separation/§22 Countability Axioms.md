@@ -186,7 +186,7 @@ tags: [topology, math590]
 ^def-22-5
 
 > [!remark]- Connections
-> - Separability of sequence and function spaces: [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|556 Def. §28.1]], with ℓᵖ and Lᵖ separable for p < ∞ and ℓ^∞, L^∞ not ([[§29 Sequence and Function Spaces#^prop-29-1|556 Prop. §29.1]]–[[§29 Sequence and Function Spaces#^prop-29-5|556 Prop. §29.5]]).
+> - Separability of sequence and function spaces: [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|556 Def. §28.1]], with ℓᵖ and Lᵖ separable for p < ∞ and ℓ^∞, L^∞ not ([[§29 Sequence and Function Spaces#^prop-29-1|556 Prop. §29.1]]–[[§29 Sequence and Function Spaces#^prop-29-6|556 Prop. §29.6]]).
 > - The metric-space form, with density by sequences: [[§35 Lᵖ as a Banach Space#^def-35-5|551 Def. §35.5]]; Lᵖ is separable for p < ∞ ([[§35 Lᵖ as a Banach Space#^cor-35-13|551 Cor. §35.13]]) and L^∞ is not ([[§35 Lᵖ as a Banach Space#^thm-35-14|551 Thm. §35.14]]).
 
 > [!example] Example §22.8: Standard Examples

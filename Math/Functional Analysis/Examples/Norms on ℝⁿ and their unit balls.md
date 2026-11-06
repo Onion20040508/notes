@@ -10,9 +10,9 @@ The norms $\|x\|_1 = |x_1| + \cdots + |x_n|$, $\|x\|_2 = (x_1^2 + \cdots + x_n^2
 
 - Three positive homogeneous subadditive functions on $\mathbb{R}^n$, each in fact a norm ([[§5 Statement and Motivation#^ex-5-1|§5]])
 - The sets $\{p < 1\}$ in $\mathbb{R}^2$: the open disk, square and diamond, all convex ([[§5 Statement and Motivation#^ex-5-2|§5]])
-- The gauge of the unit disk is the Euclidean length ([[§7 Convex Sets and the Gauge#^ex-7-2|§7]])
-- The gauge of a square is $\tfrac12 \max\{|x_1|, |x_2|\}$ ([[§7 Convex Sets and the Gauge#^ex-7-3|§7]])
-- The $p$-norms on $\mathbb{R}^n$: one linear space, many norms ([[§11 Normed Linear Spaces#^ex-11-1|§11]])
+- The gauge of the unit disk is the Euclidean length ([[§7 Convex Sets and the Gauge#^ex-7-3|§7]])
+- The gauge of a square is $\tfrac12 \max\{|x_1|, |x_2|\}$ ([[§7 Convex Sets and the Gauge#^ex-7-4|§7]])
+- The $p$-norms on $\mathbb{R}^n$: one linear space, many norms ([[§11 Normed Linear Spaces#^ex-11-2|§11]])
 - Norms correspond to symmetric convex sets: the disk, square and diamond as pictures of norms ([[§11 Normed Linear Spaces#^rem-11-2|§11]])
 - Completing the open unit disk gives the closed disk ([[§12 Completeness#^ex-12-1|§12]])
 - Equivalent norms: the Euclidean disk squeezed between two squares ([[§14 New Normed Spaces from Old#^def-14-1|§14]])
@@ -28,13 +28,13 @@ The norms $\|x\|_1 = |x_1| + \cdots + |x_n|$, $\|x\|_2 = (x_1^2 + \cdots + x_n^2
 ![[§5 Statement and Motivation#^ex-5-2]]
 
 ## The gauge of the unit disk is the Euclidean length
-![[§7 Convex Sets and the Gauge#^ex-7-2]]
-
-## The gauge of a square is $\tfrac12 \max\{|x_1|, |x_2|\}$
 ![[§7 Convex Sets and the Gauge#^ex-7-3]]
 
+## The gauge of a square is $\tfrac12 \max\{|x_1|, |x_2|\}$
+![[§7 Convex Sets and the Gauge#^ex-7-4]]
+
 ## The $p$-norms on $\mathbb{R}^n$: one linear space, many norms
-![[§11 Normed Linear Spaces#^ex-11-1]]
+![[§11 Normed Linear Spaces#^ex-11-2]]
 
 ## Norms correspond to symmetric convex sets: the disk, square and diamond as pictures of norms
 ![[§11 Normed Linear Spaces#^rem-11-2]]

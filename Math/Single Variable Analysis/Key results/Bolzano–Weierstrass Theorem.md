@@ -27,7 +27,7 @@ tags: [real-analysis, hub]
 - [[§5 Topology of ℝⁿ#^thm-5-1|Theorem §5.1: Bolzano–Weierstrass]]
 
 ## Used in (Functional Analysis)
-- [[§14 New Normed Spaces from Old#^thm-14-3|Theorem §14.3: All Norms on a Finite-Dimensional Space are Equivalent]]
+- [[§14 New Normed Spaces from Old#^thm-14-4|Theorem §14.4: All Norms on a Finite-Dimensional Space are Equivalent]]
 - [[§20 Compactness and the Unit Ball#^ex-20-1|Example §20.1: The Closed Unit Ball in 𝔽ⁿ]]
 
 ## Connections

@@ -5,10 +5,10 @@ source: "[[Functional Analysis]]"
 aliases: ["MATH 556 33.6", "Poincaré inequality (H¹₀)"]
 tags: [functional-analysis, hub]
 ---
-![[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6]]
+![[§33 Sobolev Spaces and Weak Derivatives#^thm-33-8]]
 
 ## Treated in
-- [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|Theorem §33.6: Poincaré Inequality]], in [[§33 Sobolev Spaces and Weak Derivatives]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-8|Theorem §33.8: Poincaré Inequality]], in [[§33 Sobolev Spaces and Weak Derivatives]]
 
 ## Its proof uses
 - [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|Theorem §19.1: Hölder's Inequality for Functions]]
@@ -19,8 +19,8 @@ tags: [functional-analysis, hub]
 - [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1: Fundamental Theorem of Calculus I]]
 
 ## Used in (Functional Analysis)
-- [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|Corollary §33.7: Poincaré on H¹_0]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|Corollary §33.9: Poincaré on H¹_0]]
 
 ## Connections
-- **What it says.** On a domain of bounded width, the $L^2$ norm of a test function is controlled by the $L^2$ norm of its gradient. It extends to $H^1_0(\Omega)$ by density ([[§33 Sobolev Spaces and Weak Derivatives#^cor-33-7|Cor. §33.7]], [[Functional Analysis Problem-Solving Techniques#^rem-t19|Technique 19]]).
+- **What it says.** On a domain of bounded width, the $L^2$ norm of a test function is controlled by the $L^2$ norm of its gradient. It extends to $H^1_0(\Omega)$ by density ([[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|Cor. §33.9]], [[Functional Analysis Problem-Solving Techniques#^rem-t19|Technique 19]]).
 - **Used for.** Coercivity of the Dirichlet form $\int \nabla u \cdot \nabla v$, which contains no $L^2$ term of its own ([[Weak Solutions of the Dirichlet Problem]]).

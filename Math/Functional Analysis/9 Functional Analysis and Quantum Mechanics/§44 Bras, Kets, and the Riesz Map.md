@@ -56,7 +56,7 @@ tags: [functional-analysis, math556, companion]
 *Uses:* [[§44 Bras, Kets, and the Riesz Map#^def-44-2|Def. §44.2]], [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
 
 > [!remark]- Connections
-> - The same statement for all bounded linear maps: [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-5|§30.5]].
+> - The same statement for all bounded linear maps: [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-6|§30.6]].
 > - The operator norm in finite dimensions: [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]], [[§28 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].
 
 ## The Riesz Map
@@ -70,11 +70,11 @@ tags: [functional-analysis, math556, companion]
 ^thm-44-2
 
 > [!proof]+ Proof
-> $R(a) \in H^*$ is part (1) of the Riesz representation theorem (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]]); every $\ell \in H^*$ equals $R(a)$ for exactly one $a$ by part (2); so $R$ is a bijection. Conjugate-linearity is conjugate-linearity of the inner product in its second argument: $(x, ca + b) = \bar{c}(x, a) + (x, b)$. For the isometry, [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]] shows $c = \|a\|$ is admissible for $\ell_a$, so $\|\ell_a\| \le \|a\|$; conversely, if $c$ is admissible then $\|a\|^2 = \ell_a(a) \le c\,\|a\|$, so $c \ge \|a\|$ when $a \neq 0$ (and the case $a = 0$ is trivial).
+> $R(a) \in H^*$ is part (1) of the Riesz representation theorem (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]); every $\ell \in H^*$ equals $R(a)$ for exactly one $a$ by part (2); so $R$ is a bijection. Conjugate-linearity is conjugate-linearity of the inner product in its second argument: $(x, ca + b) = \bar{c}(x, a) + (x, b)$. For the isometry, [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]] shows $c = \|a\|$ is admissible for $\ell_a$, so $\|\ell_a\| \le \|a\|$; conversely, if $c$ is admissible then $\|a\|^2 = \ell_a(a) \le c\,\|a\|$, so $c \ge \|a\|$ when $a \neq 0$ (and the case $a = 0$ is trivial).
 
 ^pf-44-2
 
-*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-2|Def. §44.2]]
+*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-2|Def. §44.2]]
 
 > [!remark]- Connections
 > - Finite-dimensional version: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]]).
@@ -108,7 +108,7 @@ tags: [functional-analysis, math556, companion]
 ^def-44-4
 
 > [!remark] Remark
-> Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]] is the precise content of the physicists' rule that “every bra is the adjoint of a ket, and every linear functional is a bra”: the second half is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz's theorem]] and is false without completeness and boundedness. The rule $\langle ca| = \bar{c}\,\langle a|$ is conjugate-linearity of $R$. The outer product $|a\rangle\langle b|$ is linear in $x$, has range in $\operatorname{span}\{a\}$, and satisfies $\|\,|a\rangle\langle b|\,x\| \le \|a\|\,\|b\|\,\|x\|$ by [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]]; it is a bounded operator of rank at most one.
+> Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]] is the precise content of the physicists' rule that “every bra is the adjoint of a ket, and every linear functional is a bra”: the second half is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz's theorem]] and is false without completeness and boundedness. The rule $\langle ca| = \bar{c}\,\langle a|$ is conjugate-linearity of $R$. The outer product $|a\rangle\langle b|$ is linear in $x$, has range in $\operatorname{span}\{a\}$, and satisfies $\|\,|a\rangle\langle b|\,x\| \le \|a\|\,\|b\|\,\|x\|$ by [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]]; it is a bounded operator of rank at most one.
 
 ^rem-44-3
 

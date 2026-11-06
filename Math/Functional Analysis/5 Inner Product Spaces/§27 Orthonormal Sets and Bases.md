@@ -38,7 +38,7 @@ tags: [functional-analysis, math556]
 ^rem-27-1
 
 > [!remark] Remark: What Should “Basis” Mean
-> The natural definition is that every $x \in H$ satisfies $x = \sum_{\alpha \in \Lambda} (x, e_\alpha)\, e_\alpha$. But the right side need not make sense a priori. Adding finitely many vectors is part of the linear structure; adding infinitely many requires a limit (compare [[§1 Linear Spaces#^rem-1-5|the remark on finite sums]] in [[§1 Linear Spaces#Linear Span|§1]]); and $\Lambda$ may be uncountable, in which case it is not even clear in what order to add. The following results make sense of it in three steps: for each $x$ only countably many coefficients $(x, e_\alpha)$ are nonzero ([[§27 Orthonormal Sets and Bases#^prop-27-4|§27.4]]); the sum of their squares is at most $\|x\|^2$ ([[§27 Orthonormal Sets and Bases#^thm-27-5|Bessel]]); and the vector series then converges in $H$ ([[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]]). Only the last step uses completeness of $H$; the first two hold in any inner product space.
+> The natural definition is that every $x \in H$ satisfies $x = \sum_{\alpha \in \Lambda} (x, e_\alpha)\, e_\alpha$. But the right side need not make sense a priori. Adding finitely many vectors is part of the linear structure; adding infinitely many requires a limit (compare [[§1 Linear Spaces#^rem-1-4|the remark on finite sums]] in [[§1 Linear Spaces#Linear Span|§1]]); and $\Lambda$ may be uncountable, in which case it is not even clear in what order to add. The following results make sense of it in three steps: for each $x$ only countably many coefficients $(x, e_\alpha)$ are nonzero ([[§27 Orthonormal Sets and Bases#^prop-27-4|§27.4]]); the sum of their squares is at most $\|x\|^2$ ([[§27 Orthonormal Sets and Bases#^thm-27-5|Bessel]]); and the vector series then converges in $H$ ([[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]]). Only the last step uses completeness of $H$; the first two hold in any inner product space.
 
 ^rem-27-2
 
@@ -323,7 +323,7 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 *Uses:* [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§27 Orthonormal Sets and Bases#^def-27-2|Def. §27.2]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
 
 > [!remark]- Connections
-> - The same two steps proved earlier for arbitrary sets: $E^\perp = Y^\perp$ is [[§25 Projection and Orthogonal Decomposition#^lem-25-5|§25.5]], and $\overline{\operatorname{span}}\,E = (E^\perp)^\perp$ is [[§25 Projection and Orthogonal Decomposition#^thm-25-6|§25.6]].
+> - The same two steps proved earlier for arbitrary sets: $E^\perp = Y^\perp$ is [[§25 Projection and Orthogonal Decomposition#^lem-25-6|§25.6]], and $\overline{\operatorname{span}}\,E = (E^\perp)^\perp$ is [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]].
 
 > [!remark] Remark: Comparison with Lax
 > Lax defines an orthonormal base by the condition $\overline{\operatorname{span}}\, E = H$, and his Lemma 8 then describes the closed linear span as the set of sums $\sum_j a_j e_j$ with $\sum_j |a_j|^2 < \infty$, for a countable orthonormal set. The lecture defines a basis by the expansion $x = \sum_\alpha (x, e_\alpha) e_\alpha$ and proves the equivalence with completeness (Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]); the proposition above connects the two. Lax also constructs orthonormal bases by [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|Gram–Schmidt]] (Theorem $9'$) and identifies the isometries of $H$ (Theorem 10); neither was covered in lecture.
@@ -404,7 +404,7 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 > [!remark] Remark: Fourier Series
 > Read through Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], this is the theory of Fourier series in $L^2$: every $f \in L^2[0,2\pi]$ is $f = \sum_{n \in \mathbb{Z}} c_n e_n$ with $c_n = (f, e_n) = \frac{1}{\sqrt{2\pi}} \int_0^{2\pi} f(x)\, e^{-inx}\, dx$, the series converging in the $L^2$ norm (not necessarily pointwise), and Parseval's equality reads $\int_0^{2\pi} |f|^2 = \sum_n |c_n|^2$.
 
-^rem-27-9
+^xrem-27-9
 
 > [!remark]- Connections
 > - Computational version: real Fourier series and their coefficients, [[§9 Periodic Functions and Fourier Series#^def-9-3|341 Def. §9.3]], and the complex coefficients $c_n$, [[§19★ Complex Methods#^def-19-1|341 Def. §19.1]], with worked examples.

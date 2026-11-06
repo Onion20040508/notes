@@ -15,9 +15,9 @@ Chapter 1 uses $\mathbb{R}^n$, mostly the plane, as the picture for each algebra
 
 ![[§1 Linear Spaces#^ex-1-1]]
 
-![[§1 Linear Spaces#^ex-1-2]]
+![[§1 Linear Spaces#^ex-1-4]]
 
-![[§1 Linear Spaces#^ex-1-3]]
+![[§1 Linear Spaces#^ex-1-5]]
 
 ![[§2 Quotient Spaces and Complements#^ex-2-1]]
 

@@ -48,7 +48,7 @@ The Hahn–Banach theorem of Chapter 2 needed no norm, only a positive homogeneo
 > $$
 >
 > **Step 2: extend.**
-> *Real case.* Since $\ell(y) \le |\ell(y)| \le p(y)$ on $Y$, Theorem [[§5 Statement and Motivation#^thm-5-2|§5.2]] gives a linear functional $L : X \to \mathbb{R}$ with $L|_Y = \ell$ and $L(x) \le p(x)$ for all $x \in X$. Applied to $-x$, this gives $-L(x) = L(-x) \le p(-x) = p(x)$. Hence $|L(x)| \le p(x)$ for all $x$.
+> *Real case.* Since $\ell(y) \le |\ell(y)| \le p(y)$ on $Y$, Theorem [[§5 Statement and Motivation#^thm-5-3|§5.3]] gives a linear functional $L : X \to \mathbb{R}$ with $L|_Y = \ell$ and $L(x) \le p(x)$ for all $x \in X$. Applied to $-x$, this gives $-L(x) = L(-x) \le p(-x) = p(x)$. Hence $|L(x)| \le p(x)$ for all $x$.
 >
 > *Complex case.* By Step 1, $p$ satisfies conditions (1)–(2) of Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]], and $|\ell| \le p$ on $Y$. That theorem gives a linear extension $L$ of $\ell$ with $|L(x)| \le p(x)$ for all $x \in X$.
 >
@@ -62,7 +62,7 @@ The Hahn–Banach theorem of Chapter 2 needed no norm, only a positive homogeneo
 
 ^pf-36-1
 
-*Uses:* [[§5 Statement and Motivation#^thm-5-2|§5.2]], [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]
+*Uses:* [[§5 Statement and Motivation#^thm-5-3|§5.3]], [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]
 
 > [!remark] Remark: The Pairing $\langle x, \ell \rangle$ Again
 > One often writes $\ell(x) = \langle x, \ell \rangle$ for $x \in X$, $\ell \in X'$ (as in [[§31 Dual Spaces|§31]]). The expression is linear in $x$, and also linear in $\ell$, since $(c_1 \ell_1 + c_2 \ell_2)(x) = c_1 \ell_1(x) + c_2 \ell_2(x)$; so it is like a bilinear form on $X \times X'$, and it is convenient to think of $X$ and $X'$ as being in a dual relation. The notation comes from Hilbert space, where the dual is the space itself in the following sense: by the Riesz representation theorem every $\ell \in H'$ is $\ell(x) = (x, a)$ for some $a \in H$, and $H'$ is identified with $H$ through $a \leftrightarrow \ell_a$ (Corollary [[§31 Dual Spaces#^cor-31-3|§31.3]]).
@@ -265,7 +265,7 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 > \|x - x^{(n)}\|_p^p = \sum_{j=n+1}^\infty |x_j|^p \to 0 \qquad (n \to \infty),
 > $$
 >
-> the tail of a convergent series. A bounded linear functional is continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]]), so $\ell(x^{(n)}) \to \ell(x)$. On the other hand, by (F),
+> the tail of a convergent series. A bounded linear functional is continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), so $\ell(x^{(n)}) \to \ell(x)$. On the other hand, by (F),
 >
 > $$
 > \ell(x^{(n)}) = \sum_{j=1}^n x_j\, \overline{a_j} ,
@@ -292,14 +292,14 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 
 ^pf-36-4
 
-*Uses:* [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]], [[§31 Dual Spaces#^ex-31-1|Ex. §31.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]]
+*Uses:* [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]], [[§31 Dual Spaces#^ex-31-1|Ex. §31.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]
 
 > [!remark] Remark: The Pairing Without the Bar
 > Over $\mathbb{C}$ one can equally use the pairing without the bar: $a \mapsto \ell_{\bar a}$, $\ell_{\bar a}(x) = \sum_j x_j a_j$, is a *linear* one-to-one, onto, norm-preserving map $\ell^{p'} \to (\ell^p)'$, i.e. an isometric isomorphism. With the bar, the case $p = 2$ is the Riesz representation of $(\ell^2)'$ (Example [[§31 Dual Spaces#^ex-31-1|§31.1]]), and the map is conjugate-linear exactly like the Riesz map (Corollary [[§31 Dual Spaces#^cor-31-3|§31.3]]). The test vector $x_j = |a_j|^{p'-2} a_j$ of Step 2 is the vector for which Hölder's inequality is an equality; the same choice reappears below.
 
 ^rem-36-3
 
-> [!theorem] Corollary §36.5: Duality Formula for the $\ell^p$ Norm
+> [!theorem] Corollary §36.6: Duality Formula for the $\ell^p$ Norm
 > Let $1 \le p < \infty$. For every $a \in \ell^p$,
 >
 > $$
@@ -308,12 +308,12 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 >
 > *Lax: §5.1, Thm 5*
 
-^cor-36-5
+^cor-36-6
 
 > [!proof]+ Proof
 > By Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] with $X = \ell^p$ (in the version with $\|\ell\| = 1$), $\|a\|_p = \max \{ |\ell(a)| : \ell \in (\ell^p)',\ \|\ell\| = 1 \}$. By Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], the functionals $\ell \in (\ell^p)'$ are exactly the $\ell_b$ with $b \in \ell^{p'}$, with $\|\ell_b\| = \|b\|_{p'}$ and $\ell_b(a) = \sum_j a_j \overline{b_j}$. Substituting gives the formula.
 
-^pf-36-5
+^pf-36-6
 
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]], [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]
 
@@ -324,11 +324,11 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 > \|f\|_{L^p} = \sup \Bigl\{ \Bigl| \int f(x)\, \overline{g(x)}\, d\mu(x) \Bigr| : \|g\|_{L^{p'}} = 1 \Bigr\} .
 > $$
 >
-> For $1 < p < \infty$ the maximum can also be exhibited directly: for $a \neq 0$, $b_j = |a_j|^{p-2} a_j / \|a\|_p^{p-1}$ ($b_j = 0$ where $a_j = 0$) has $\|b\|_{p'}^{p'} = \sum_j |a_j|^{(p-1)p'} / \|a\|_p^{(p-1)p'} = 1$, since $(p-1)p' = p$, and $\sum_j a_j \overline{b_j} = \sum_j |a_j|^p / \|a\|_p^{p-1} = \|a\|_p$; for $p = 1$ take $b_j = a_j/|a_j|$ where $a_j \neq 0$ and $b_j = 1$ elsewhere. Together with Hölder this proves Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]] without Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], and the same choice $g = |f|^{p-2} f / \|f\|_{L^p}^{p-1}$ shows the supremum for functions is a maximum for $1 \le p < \infty$. This is Lax's route to Minkowski's inequality (Concordance, C.2). What Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] adds is that *every* bounded functional on $\ell^p$ is of the form $\ell_b$.
+> For $1 < p < \infty$ the maximum can also be exhibited directly: for $a \neq 0$, $b_j = |a_j|^{p-2} a_j / \|a\|_p^{p-1}$ ($b_j = 0$ where $a_j = 0$) has $\|b\|_{p'}^{p'} = \sum_j |a_j|^{(p-1)p'} / \|a\|_p^{(p-1)p'} = 1$, since $(p-1)p' = p$, and $\sum_j a_j \overline{b_j} = \sum_j |a_j|^p / \|a\|_p^{p-1} = \|a\|_p$; for $p = 1$ take $b_j = a_j/|a_j|$ where $a_j \neq 0$ and $b_j = 1$ elsewhere. Together with Hölder this proves Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] without Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], and the same choice $g = |f|^{p-2} f / \|f\|_{L^p}^{p-1}$ shows the supremum for functions is a maximum for $1 \le p < \infty$. This is Lax's route to Minkowski's inequality (Concordance, C.2). What Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] adds is that *every* bounded functional on $\ell^p$ is of the form $\ell_b$.
 
 ^rem-36-4
 ![[m556-36-3.svg]]
-*Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]] in $\mathbb{R}^2$ for $p = 3$, $p' = \tfrac32$. For $a$ on the unit sphere of $\ell^3$, the maximizing $b_j = |a_j|^{p-2} a_j$ (the remark Why Duality Formulas are Useful) lies on the unit sphere of $\ell^{3/2}$ (dashed), and the line $\sum_j x_j b_j = 1$ touches the $\ell^3$ ball exactly at $a$: by Hölder every $x$ in the ball has $\sum_j x_j b_j \le 1$, with equality at $a$. The maximizer is the normal of the supporting line.*
+*Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] in $\mathbb{R}^2$ for $p = 3$, $p' = \tfrac32$. For $a$ on the unit sphere of $\ell^3$, the maximizing $b_j = |a_j|^{p-2} a_j$ (the remark Why Duality Formulas are Useful) lies on the unit sphere of $\ell^{3/2}$ (dashed), and the line $\sum_j x_j b_j = 1$ touches the $\ell^3$ ball exactly at $a$: by Hölder every $x$ in the ball has $\sum_j x_j b_j \le 1$, with equality at $a$. The maximizer is the normal of the supporting line.*
 
 ![[m556-36-a3.gif|420]]
 
@@ -359,14 +359,14 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 
 The next theorem extends Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]], which is the case $Y = \{0\}$, from the norm of a vector to its distance from a subspace.
 
-> [!theorem] Theorem §36.6: Distance to a Subspace
+> [!theorem] Theorem §36.8: Distance to a Subspace
 > Let $X$ be a normed linear space over $\mathbb{F}$, $Y$ a linear subspace of $X$, and $z \in X$. Then
 >
 > $$
 > \inf_{y \in Y} \|z - y\| = \max \bigl\{ |\ell(z)| : \ell \in X',\ \|\ell\| \le 1,\ \ell(y) = 0 \text{ for all } y \in Y \bigr\} .
 > $$
 
-^thm-36-6
+^thm-36-8
 
 ![[m556-36-1.svg]]
 
@@ -422,7 +422,7 @@ A heuristic, pretending there is an inner product: the distance from $z$ to $Y$ 
 >
 > **Step 3: conclusion.** By Step 2 the supremum in Step 1 is at least $|L(z_0)| = m$; with Step 1 it equals $m$ and is attained at $L$. So it is a maximum, equal to $\inf_{y \in Y} \|z_0 - y\|$.
 
-^pf-36-6
+^pf-36-8
 
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
@@ -447,17 +447,17 @@ By now the duality is visible, and it is natural to define a “perpendicular”
 
 ^def-36-1
 
-In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]] reads $\inf_{y \in Y} \|z - y\| = \max_{\ell \in Y^\perp,\ \|\ell\| \le 1} |\ell(z)|$.
+In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]] reads $\inf_{y \in Y} \|z - y\| = \max_{\ell \in Y^\perp,\ \|\ell\| \le 1} |\ell(z)|$.
 
 > [!remark] Remark: Two Meanings of $Y^\perp$
 > The annihilator is a subset of $X'$, while the orthogonal complement of a subspace of a Hilbert space (Definition [[§25 Projection and Orthogonal Decomposition#^def-25-1|§25.1]]) is a subset of $H$. The shared notation is consistent: under the Riesz map $a \mapsto \ell_a$, $\ell_a(y) = (y, a) = 0$ for all $y \in Y$ exactly when $a$ is orthogonal to $Y$, so the Riesz map carries the orthogonal complement of $Y$ onto its annihilator.
 
 ^rem-36-7
 
-> [!theorem] Proposition §36.7: The Annihilator is a Closed Subspace
+> [!theorem] Proposition §36.10: The Annihilator is a Closed Subspace
 > Let $X$ be a normed linear space and $Y$ a linear subspace of $X$. Then $Y^\perp$ is a closed linear subspace of $X'$.
 
-^prop-36-7
+^prop-36-10
 
 > [!proof]+ Proof
 > *Linear subspace.* The zero functional vanishes on $Y$. If $\ell_1, \ell_2$ vanish on $Y$ and $c_1, c_2 \in \mathbb{F}$, then $(c_1 \ell_1 + c_2 \ell_2)(y) = c_1 \ell_1(y) + c_2 \ell_2(y) = 0$ for $y \in Y$.
@@ -471,12 +471,12 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]] read
 >
 > so $\ell(y) = 0$, and $\ell \in Y^\perp$.
 
-^pf-36-7
+^pf-36-10
 
-> [!theorem] Theorem §36.8: The Dual of a Quotient
-> Let $X$ be a normed linear space and $Y$ a closed linear subspace of $X$, so that $X/Y$ is a normed linear space with the quotient norm (Theorem [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]]). Then $(X/Y)'$ is isometrically isomorphic to $Y^\perp$. Here both sides carry a norm — $(X/Y)'$ the dual norm of the quotient norm, $Y^\perp$ the norm of $X'$ — and the isomorphism preserves it.
+> [!theorem] Theorem §36.11: The Dual of a Quotient
+> Let $X$ be a normed linear space and $Y$ a closed linear subspace of $X$, so that $X/Y$ is a normed linear space with the quotient norm (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]). Then $(X/Y)'$ is isometrically isomorphic to $Y^\perp$. Here both sides carry a norm — $(X/Y)'$ the dual norm of the quotient norm, $Y^\perp$ the norm of $X'$ — and the isomorphism preserves it.
 
-^thm-36-8
+^thm-36-11
 
 > [!proof]+ Proof
 > (HW7, Problem 1.) Throughout, $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$ is the scalar field, $[x] = x + Y$ denotes the class of $x \in X$, and
@@ -485,7 +485,7 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]] read
 > Y^\perp = \{ \ell \in X' : \ell(y) = 0 \text{ for all } y \in Y \},
 > $$
 >
-> with the norm of $X'$ (Definition [[§36 Duality in Normed Spaces#^def-36-1|§36.1]]). Since $Y$ is closed, $X/Y$ is a normed linear space with the quotient norm (Theorem [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]])
+> with the norm of $X'$ (Definition [[§36 Duality in Normed Spaces#^def-36-1|§36.1]]). Since $Y$ is closed, $X/Y$ is a normed linear space with the quotient norm (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]])
 >
 > $$
 > \|[x]\| = \inf_{y \in Y} \|x + y\| ,
@@ -545,9 +545,9 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]] read
 >
 > **Conclusion.** $T : (X/Y)' \to Y^\perp$ is linear (Step 1), norm-preserving and one-to-one (Step 2), and onto (Step 3). So $T$ is an isometric isomorphism of $(X/Y)'$ onto $Y^\perp$.
 
-^pf-36-8
+^pf-36-11
 
-*Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]], [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]]
+*Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]
 
 > [!remark] Remark: No Hahn–Banach Needed Here
 > *(Not from lecture.)* Every step of the proof is a direct computation with the quotient norm: Step 3 builds the functional on $X/Y$ from $\ell$ itself, so nothing has to be extended. The companion statement for a subspace, $Y' \cong X'/Y^\perp$ (the remark after Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]]), is different: there a functional on $Y$ must be extended to $X$, and onto-ness needs Hahn–Banach (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]). Closedness of $Y$ is used only to make the quotient norm a norm; for a non-closed $Y$, $Y^\perp = (\overline{Y})^\perp$ (a bounded functional vanishing on $Y$ vanishes on its closure), and the theorem applies to $\overline{Y}$.

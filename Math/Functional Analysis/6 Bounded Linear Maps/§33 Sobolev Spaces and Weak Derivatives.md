@@ -299,18 +299,18 @@ tags: [functional-analysis, math556]
 
 ^def-33-9
 
-> [!theorem] Proposition §33.5: $H^1_0(\Omega)$ is a Hilbert Space
+> [!theorem] Proposition §33.7: $H^1_0(\Omega)$ is a Hilbert Space
 > - (a) The norm of Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-8|§33.8]] is equivalent to the summed norm $\|f\|_{L^2} + \sum_j \|\partial_{x_j} f\|_{L^2}$ of Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-1|§33.1]].
 > - (b) $H^1_0(\Omega)$ is a Hilbert space.
 
-^prop-33-5
+^prop-33-7
 
 > [!proof]+ Proof
 > (Stated in lecture; (b) was left to the class.) (a) For non-negative numbers $t_0, \ldots, t_n$, $\bigl(\sum t_i^2\bigr)^{1/2} \le \sum t_i \le \sqrt{n+1}\,\bigl(\sum t_i^2\bigr)^{1/2}$: the first because $\bigl(\sum t_i\bigr)^2 \ge \sum t_i^2$, the second by [[§16 Means and Young's Inequality#^prop-16-1|Cauchy–Schwarz]] in $\mathbb{R}^{n+1}$ applied to $(t_i)$ and $(1, \ldots, 1)$. Apply this with $t_0 = \|f\|_{L^2}$, $t_j = \|\partial_{x_j} f\|_{L^2}$.
 >
 > (b) On $C_c^\infty(\Omega)$ the norm comes from the inner product $(f, g) = \int_\Omega f\bar g + \sum_j \int_\Omega \partial_{x_j} f\, \overline{\partial_{x_j} g}$ (the case $k = 1$ of Example [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3|§23.3]]), so it satisfies the [[§24 The Parallelogram Law and Jordan–von Neumann#^prop-24-1|parallelogram law]]. The completion is a Banach space (Theorem [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]), and its norm is the limit of norms of representatives: $\|[\{f_n\}]\| = \lim_n \|f_n\|$. For $x = [\{f_n\}]$, $y = [\{g_n\}]$, the parallelogram law $\|f_n + g_n\|^2 + \|f_n - g_n\|^2 = 2\|f_n\|^2 + 2\|g_n\|^2$ holds for each $n$ and passes to the limit, so it holds in the completion. By the Jordan–von Neumann theorem (Theorem [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2|§24.2]]) the norm of the completion comes from an inner product; being complete, $H^1_0(\Omega)$ is a Hilbert space.
 
-^pf-33-5
+^pf-33-7
 
 *Uses:* [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3|Ex. §23.3]], [[§24 The Parallelogram Law and Jordan–von Neumann#^prop-24-1|§24.1]], [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2|§24.2]], [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Def. §23.1]]
 
@@ -319,7 +319,7 @@ tags: [functional-analysis, math556]
 
 ^rem-33-8
 
-> [!theorem] Theorem §33.6: Poincaré Inequality
+> [!theorem] Theorem §33.8: Poincaré Inequality
 > Let $\Omega \subset \mathbb{R}^n$ be bounded and open. There is a constant $C > 0$, depending only on $\Omega$, such that
 >
 > $$
@@ -328,7 +328,7 @@ tags: [functional-analysis, math556]
 >
 > One can take $C = 2L$ for any $L$ with $\Omega \subset (-L, L)^n$.
 
-^thm-33-6
+^thm-33-8
 
 > [!proof]+ Proof
 > **Step 1: put $\Omega$ in a box and extend by zero.** Since $\Omega$ is bounded, $\Omega \subset (-L, L)^n$ for some $L > 0$. Extend $f$ by $f(x) = 0$ for $x \notin \Omega$; because the support of $f$ is a compact subset of $\Omega$, the extension is $C^\infty$ on $\mathbb{R}^n$ and vanishes outside $\Omega$, in particular on the face $x_1 = -L$ of the box.
@@ -363,26 +363,26 @@ tags: [functional-analysis, math556]
 > \int_\Omega |f(x)|^2\, dx \le (2L)^2 \int_\Omega |\nabla f(x)|^2\, dx .
 > $$
 
-^pf-33-6
+^pf-33-8
 
 *Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|Def. §33.5]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 §25.6]]
 
 ![[m556-33-2.svg]]
 *The proof in one picture: $f$ vanishes on the left face of the box, so its value at $x$ is the integral of $\partial_{x_1} f$ along the horizontal segment that reaches $x$, and Cauchy–Schwarz turns the length $2L$ of that segment into the constant. The constant depends only on the width of $\Omega$ in one direction. The principle: a function that is zero somewhere can be controlled by its gradient.*
 
-> [!theorem] Corollary §33.7: Poincaré on $H^1_0$
+> [!theorem] Corollary §33.9: Poincaré on $H^1_0$
 > The Poincaré inequality $\|f\|_{L^2(\Omega)} \le C\, \|\nabla f\|_{L^2(\Omega)}$ holds for all $f \in H^1_0(\Omega)$.
 
-^cor-33-7
+^cor-33-9
 
 > [!proof]+ Proof
-> (Lecture 12.) By Theorem [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|§33.6]] the inequality holds for every function in $C_c^\infty(\Omega)$; it remains to pass to limits. Let $f \in H^1_0(\Omega)$. By [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|definition of the completion]] there are $g_n \in C_c^\infty(\Omega)$ with
+> (Lecture 12.) By Theorem [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-8|§33.8]] the inequality holds for every function in $C_c^\infty(\Omega)$; it remains to pass to limits. Let $f \in H^1_0(\Omega)$. By [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|definition of the completion]] there are $g_n \in C_c^\infty(\Omega)$ with
 >
 > $$
 > g_n \to f \quad \text{and} \quad \partial_{x_j} g_n \to \partial_{x_j} f \quad \text{in } L^2(\Omega), \qquad j = 1, \ldots, n,
 > $$
 >
-> where, as in Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], $f$ is the $L^2$ limit of a [[§11 Normed Linear Spaces#^def-11-5|Cauchy sequence]] and $\partial_{x_j} f$, the $L^2$ limit of $\partial_{x_j} g_n$, is the [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|weak derivative]] of $f$. For each $n$, Theorem [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|§33.6]] gives
+> where, as in Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], $f$ is the $L^2$ limit of a [[§11 Normed Linear Spaces#^def-11-5|Cauchy sequence]] and $\partial_{x_j} f$, the $L^2$ limit of $\partial_{x_j} g_n$, is the [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|weak derivative]] of $f$. For each $n$, Theorem [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-8|§33.8]] gives
 >
 > $$
 > \int_\Omega |g_n(x)|^2\, dx \le C^2 \sum_{j=1}^n \int_\Omega |\partial_{x_j} g_n(x)|^2\, dx .
@@ -394,9 +394,9 @@ tags: [functional-analysis, math556]
 > \int_\Omega |f(x)|^2\, dx \le C^2 \sum_{j=1}^n \int_\Omega |\partial_{x_j} f(x)|^2\, dx = C^2 \int_\Omega |\nabla f(x)|^2\, dx .
 > $$
 
-^pf-33-7
+^pf-33-9
 
-*Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-6|§33.6]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|Def. §33.9]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|Def. §33.6]], [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§9 Limit Theorems for Sequences#^prop-9-5|451 §9.5]]
+*Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-8|§33.8]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|Def. §33.9]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|Def. §33.6]], [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§9 Limit Theorems for Sequences#^prop-9-5|451 §9.5]]
 
 > [!remark] Remark: Triangle Inequality, Not Inner Product
 > The fact $\|g_n\|_{L^2} \to \|f\|_{L^2}$ follows from continuity of the inner product (Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]), since $L^2$ is an [[§22 Definition and Examples#^def-22-1|inner product space]]; but it is more general: in any [[§11 Normed Linear Spaces#^def-11-1|normed space]] $x_n \to x$ implies $\|x_n\| \to \|x\|$, by the reverse triangle inequality (Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]). The whole argument is a standard technique: to prove an inequality on a space, prove it on a [[§11 Normed Linear Spaces#^def-11-8|dense subset]], then take limits ([[Functional Analysis Problem-Solving Techniques#^rem-t19|Technique 19]]).

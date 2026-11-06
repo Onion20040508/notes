@@ -12,10 +12,10 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses
 - [[§8 The Hyperplane Separation Theorem#^thm-8-1|Theorem §8.1: Hyperplane Separation; Geometric Hahn–Banach]]
-- [[§11 Normed Linear Spaces#^prop-11-7|Proposition §11.7: Metric Interior Points are Interior Points]]
+- [[§11 Normed Linear Spaces#^prop-11-8|Proposition §11.8: Metric Interior Points are Interior Points]]
 
 ## Used in (Functional Analysis)
-- [[§43 Weak and Weak-Star Convergence#^thm-43-6|Theorem §43.6: Mazur's Theorem]]
+- [[§43 Weak and Weak-Star Convergence#^thm-43-7|Theorem §43.7: Mazur's Theorem]]
 
 ## Connections
 - TODO

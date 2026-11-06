@@ -250,11 +250,11 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > [!remark]- Connections
 > - Announced in Chapter 1 as the missing hypothesis of [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (orthogonal complement as a model of the quotient).
 > - The finite-dimensional home: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]] ($V = U \oplus U^\perp$), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] ($(U^\perp)^\perp = U$), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]] (orthogonal projection).
-> - Used for the Riesz representation theorem: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]].
+> - Used for the Riesz representation theorem: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|§26.4]].
 > - Computational version: [[§52 Orthogonal Projections#^thm-52-1|235 Thm. §52.1]] (the ℝⁿ case, with the projection computed from an orthogonal basis) and, for (2), [[§50 Orthogonal Complements and Angles#^cor-50-4|235 Cor. §50.4]].
 
 > [!remark] Remark: The Promise of Lecture 1 is Kept
-> Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] suggested; the [[§2 Quotient Spaces and Complements#^rem-2-5|remark following Corollary §2.8]] identified exactly this theorem as the missing piece. The hypotheses are sharp: $c_{00} \subset \ell^2$ (not closed) has $c_{00}^\perp = \{0\}$, so $c_{00} + c_{00}^\perp \neq \ell^2$, while $(c_{00}^\perp)^\perp = \ell^2 \neq c_{00}$ — both (1) and (2) fail. For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-6|§25.6]]).
+> Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] suggested; the [[§2 Quotient Spaces and Complements#^rem-2-5|remark following Corollary §2.8]] identified exactly this theorem as the missing piece. The hypotheses are sharp: $c_{00} \subset \ell^2$ (not closed) has $c_{00}^\perp = \{0\}$, so $c_{00} + c_{00}^\perp \neq \ell^2$, while $(c_{00}^\perp)^\perp = \ell^2 \neq c_{00}$ — both (1) and (2) fail. For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]]).
 
 ^rem-25-5
 
@@ -265,25 +265,25 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 ## The Double Complement
 
-> [!theorem] Lemma §25.5: A Set and Its Closed Span Have the Same Complement
+> [!theorem] Lemma §25.6: A Set and Its Closed Span Have the Same Complement
 > For any subset $M$ of an inner product space $X$, $M^\perp = \bigl( \overline{\operatorname{span}}\, M \bigr)^\perp$.
 >
 > *Source: HW4, Problem 2, Step 1*
 
-^lem-25-5
+^lem-25-6
 
 > [!proof]+ Proof
 > (HW4, Problem 2, Step 1.) Let $Y = \overline{\operatorname{span}}\, M$. Since $M \subset Y$, every vector orthogonal to $Y$ is orthogonal to $M$. Conversely, let $v \in M^\perp$. For a finite combination $z = \sum_i a_i m_i$ with $m_i \in M$, $(z, v) = \sum_i a_i (m_i, v) = \sum_i a_i\,\overline{(v, m_i)} = 0$, so $v \perp \operatorname{span} M$; and if $z_n \to y$ with $z_n \in \operatorname{span} M$, then $(y, v) = \lim_n (z_n, v) = 0$ by Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]. So $v \in Y^\perp$.
 
-^pf-25-5
+^pf-25-6
 
-*Uses:* [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§1 Linear Spaces#^prop-1-5|§1.5]], [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]
+*Uses:* [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§1 Linear Spaces#^prop-1-5|§1.5]], [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§11 Normed Linear Spaces#^prop-11-7|§11.7]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]
 
 > [!remark]- Connections
 > - Re-proved for orthonormal sets: [[§27 Orthonormal Sets and Bases#^prop-27-9|§27.9]].
 > - Computational version: [[§50 Orthogonal Complements and Angles#^thm-50-1|235 Thm. §50.1]](1) (orthogonality to a subspace of ℝⁿ is tested on a spanning set).
 
-> [!theorem] Theorem §25.6: The Double Complement
+> [!theorem] Theorem §25.7: The Double Complement
 > For any subset $M$ of a Hilbert space $H$,
 >
 > $$
@@ -296,10 +296,10 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 >
 > *Lax: §6.4, Thm 7*
 
-^thm-25-6
+^thm-25-7
 
 > [!proof]+ Proof
-> (HW4, Problem 2.) $Y = \overline{\operatorname{span}}\, M$ is a closed linear subspace (Definition [[§11 Normed Linear Spaces#^def-11-9|§11.9]]). By Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-5|§25.5]] and Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]](2),
+> (HW4, Problem 2.) $Y = \overline{\operatorname{span}}\, M$ is a closed linear subspace (Definition [[§11 Normed Linear Spaces#^def-11-9|§11.9]]). By Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-6|§25.6]] and Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]](2),
 >
 > $$
 > (M^\perp)^\perp = (Y^\perp)^\perp = Y .
@@ -307,9 +307,9 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 >
 > For the last statement: if $M^\perp = \{0\}$ then $Y = \{0\}^\perp = H$; conversely, if $Y = H$ then $M^\perp = Y^\perp = H^\perp = \{0\}$, since a vector orthogonal to itself is $0$.
 
-^pf-25-6
+^pf-25-7
 
-*Uses:* [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§25 Projection and Orthogonal Decomposition#^lem-25-5|§25.5]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]]
+*Uses:* [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§25 Projection and Orthogonal Decomposition#^lem-25-6|§25.6]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]]
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-54|LADR 6.54]].
@@ -323,7 +323,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 ## Example: Even and Odd Functions
 
-> [!theorem] Proposition §25.7: Even and Odd Functions
+> [!theorem] Proposition §25.9: Even and Odd Functions
 > In $L^2[-1,1]$ let $E$ be the set of even functions ($f(-x) = f(x)$ a.e.) and $O$ the set of odd functions ($f(-x) = -f(x)$ a.e.). Then:
 > - (a) $E^\perp = O$ and $O^\perp = E$;
 > - (b) $E$ and $O$ are closed subspaces, and $L^2[-1,1] = E \oplus O$: every $f$ is uniquely $f = f_e + f_o$ with
@@ -336,7 +336,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 >
 > *Source: HW4, Problem 1 (for $E^\perp = O$)*
 
-^prop-25-7
+^prop-25-9
 
 > [!proof]+ Proof
 > (HW4, Problem 1, for $E^\perp = O$.)
@@ -378,7 +378,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 >
 > **Step 5: (b).** By (a) and Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]], $E = O^\perp$ and $O = E^\perp$ are closed subspaces. The decomposition $f = f_e + f_o$ of Step 1 has $f_e \in E$ and $f_o \in O = E^\perp$, so it is the decomposition of Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]] for $Y = E$; its uniqueness is part of that theorem, and $f_e$ is the closest point of $E$ to $f$ by the proof of that theorem. (Not part of the homework.)
 
-^pf-25-7
+^pf-25-9
 
 *Uses:* [[§22 Definition and Examples#^ex-22-3|Ex. §22.3]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]
 
@@ -393,7 +393,7 @@ For $f(x) = e^x$ the decomposition is $e^x = \cosh x + \sinh x$: the even part i
 
 ## An Application: A Sharp Integral Inequality
 
-> [!theorem] Proposition §25.8: A Sharp Integral Inequality
+> [!theorem] Proposition §25.10: A Sharp Integral Inequality
 > Let $f \in C^2([a,b])$ with $f(a) = f(b) = 0$, $f'(a) = 1$, $f'(b) = 0$, and $L = b - a$. Then
 >
 > $$
@@ -404,7 +404,7 @@ For $f(x) = e^x$ the decomposition is $e^x = \cosh x + \sinh x$: the even part i
 >
 > *Source: HW4, Problem 4*
 
-^prop-25-8
+^prop-25-10
 
 > [!proof]+ Proof
 > (HW4, Problem 4.)
@@ -452,7 +452,7 @@ For $f(x) = e^x$ the decomposition is $e^x = \cosh x + \sinh x$: the even part i
 > \int_a^b |f_*''|^2\,dx = \frac{16}{L^2} \int_a^b g^2\,dx = \frac{16}{L^2} \cdot \frac{L}{4} = \frac{4}{L}.
 > $$
 
-^pf-25-8
+^pf-25-10
 
 *Uses:* [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§22 Definition and Examples#^ex-22-3|Ex. §22.3]], [[§34 Fundamental Theorem of Calculus#^thm-34-3|451 §34.3]], [[Fundamental Theorem of Calculus|451 §34.4]]
 

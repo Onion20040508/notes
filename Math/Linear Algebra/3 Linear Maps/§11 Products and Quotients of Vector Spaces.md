@@ -23,7 +23,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - A vector space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-89|Product of vector spaces is a vector space]]. Dimension: [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|Dimension of a product is the sum of dimensions]]. Relation to sums inside one space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|Products and direct sums]].
 > - Group version: the direct product, [[§3 Basic Examples of Groups#^def-3-2|493 Def. §3.2]], with its universal property in [[§18 Conjugation, Products, and Pointwise Products#^prop-18-3|493 Prop. §18.3]].
-> - 556 calls this product the (external) direct sum: [[§1 Linear Spaces#^def-1-4|556 Def. §1.4]]; norms on it in [[§14 New Normed Spaces from Old#^prop-14-7|556 Prop. §14.7]].
+> - 556 calls this product the (external) direct sum: [[§1 Linear Spaces#^def-1-4|556 Def. §1.4]]; norms on it in [[§14 New Normed Spaces from Old#^prop-14-8|556 Prop. §14.8]].
 > - 591 also calls this product the direct sum: [[§21 Linear Algebra Toolkit#^def-21-7|591 Def. §21.7]]; the tangent space of a product manifold is such a direct sum, [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|591 Thm. §31.7]].
 
 > [!theorem] Theorem 3.89: Product of vector spaces is a vector space
@@ -151,7 +151,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Operations: [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|Addition and scalar multiplication on V∕U]]. A vector space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]]. Dimension: [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
 > - Group version: the quotient group G/N, [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]] (hub [[Quotient Groups]]), with U in the role of the normal subgroup N ([[§38 Normal Subgroups#^def-38-1|493 Def. §38.1]]); quotient rings by an ideal are the same construction.
-> - Same construction in 556: [[§2 Quotient Spaces and Complements#^def-2-3|556 Def. §2.3]] and [[§2 Quotient Spaces and Complements#^prop-2-1|556 Prop. §2.1]]; a norm passes to the quotient only when the subspace is closed, [[§14 New Normed Spaces from Old#^thm-14-8|556 Thm. §14.8]].
+> - Same construction in 556: [[§2 Quotient Spaces and Complements#^def-2-3|556 Def. §2.3]] and [[§2 Quotient Spaces and Complements#^prop-2-1|556 Prop. §2.1]]; a norm passes to the quotient only when the subspace is closed, [[§14 New Normed Spaces from Old#^thm-14-9|556 Thm. §14.9]].
 > - Same construction in 591, with its universal property: [[§21 Linear Algebra Toolkit#^def-21-6|591 Def. §21.6]], [[§21 Linear Algebra Toolkit#^prop-21-6|591 Prop. §21.6]]; it builds the cotangent space from germs in [[§34 The Cotangent Space from Germs#^def-34-1|591 Def. §34.1]].
 
 > [!example] Example 3.100: Quotient spaces (p. 100)

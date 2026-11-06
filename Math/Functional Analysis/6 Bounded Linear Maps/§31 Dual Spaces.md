@@ -34,11 +34,11 @@ tags: [functional-analysis, math556]
 ^cor-31-1
 
 > [!proof]+ Proof
-> $\mathbb{F}$ is complete, so Theorem [[§30 Boundedness and Continuity#^thm-30-5|§30.5]](2) applies with $Y = \mathbb{F}$.
+> $\mathbb{F}$ is complete, so Theorem [[§30 Boundedness and Continuity#^thm-30-6|§30.6]](2) applies with $Y = \mathbb{F}$.
 
 ^pf-31-1
 
-*Uses:* [[§30 Boundedness and Continuity#^thm-30-5|§30.5]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]]
+*Uses:* [[§30 Boundedness and Continuity#^thm-30-6|§30.6]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]]
 
 > [!remark] Note: The Pairing $\langle x, \ell \rangle$
 > For $\ell \in X'$ and $x \in X$ one often writes $\ell(x) = \langle x, \ell \rangle$. This is only notation, borrowed from inner product spaces: $\langle x, \ell \rangle$ pairs an element of $X$ with an element of $X'$, and is linear in $x$. In general $X'$ is a different space from $X$; on a Hilbert space the two can be identified, by the next theorem.
@@ -63,15 +63,15 @@ tags: [functional-analysis, math556]
 >
 > For equality, take $x = a$ (if $a = 0$ both sides are $0$): $\ell_a(a) = (a, a) = \|a\|^2$, so the ratio $|\ell_a(a)|/\|a\| = \|a\|$ is attained, and $\|\ell_a\| = \|a\|$.
 >
-> (2) Existence and uniqueness of $a$ are Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]](2), proved in Lecture 8.
+> (2) Existence and uniqueness of $a$ are Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]](2), proved in Lecture 8.
 > (Uniqueness: if $(x, a) = (x, a')$ for all $x$, take $x = a - a'$ to get $\|a - a'\|^2 = 0$.) Then $\ell = \ell_a$, and $\|\ell\| = \|a\|$ by (1).
 
 ^pf-31-2
 
-*Uses:* [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]]
+*Uses:* [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]
 
 > [!remark]- Connections
-> - This course's first statement, without norms: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]]; the companion chapter's isometric Riesz map: [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]].
+> - This course's first statement, without norms: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]; the companion chapter's isometric Riesz map: [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]].
 > - Finite-dimensional home: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]]).
 
 > [!theorem] Corollary §31.3: The Riesz Map: $H' \cong H$
@@ -149,7 +149,7 @@ tags: [functional-analysis, math556]
 
 ## Null Spaces of Linear Functionals
 
-Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-2|§26.2]] and [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]] described the null space of a bounded functional on a Hilbert space. Both facts hold in any normed space, and the first has a converse.
+Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]] and [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|§26.4]] described the null space of a bounded functional on a Hilbert space. Both facts hold in any normed space, and the first has a converse.
 
 > [!theorem] Proposition §31.5: The Null Space Has Codimension One
 > Let $X$ be a [[§1 Linear Spaces#^def-1-1|linear space]] over $\mathbb{F}$ and $\ell : X \to \mathbb{F}$ a nonzero [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]], $N_\ell = \{x \in X : \ell(x) = 0\}$. Then $\dim X/N_\ell = 1$ ([[§2 Quotient Spaces and Complements#^def-2-3|quotient space]]). More precisely, for any $x_0$ with $\ell(x_0) \neq 0$, $X = N_\ell \oplus \operatorname{span}\{x_0\}$ ([[§1 Linear Spaces#^prop-1-3|internal direct sum]], [[§1 Linear Spaces#^def-1-5|linear span]]), with $x = \bigl( x - \frac{\ell(x)}{\ell(x_0)}\, x_0 \bigr) + \frac{\ell(x)}{\ell(x_0)}\, x_0$.
@@ -174,7 +174,7 @@ Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^l
 *Uses:* [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|Def. §3.5]], [[§2 Quotient Spaces and Complements#^def-2-1|Def. §2.1]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§1 Linear Spaces#^prop-1-3|§1.3]], [[§5 Bases#^ladr-2-26|LADR 2.26]], [[§6 Dimension#^ladr-2-35|LADR 2.35]]
 
 > [!remark]- Connections
-> - The Hilbert-space case, with the line $N^\perp$ as the complement: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]]; the move “subtract a multiple of $x_0$”: [[Functional Analysis Problem-Solving Techniques#^rem-t18|Technique 18]].
+> - The Hilbert-space case, with the line $N^\perp$ as the complement: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|§26.4]]; the move “subtract a multiple of $x_0$”: [[Functional Analysis Problem-Solving Techniques#^rem-t18|Technique 18]].
 > - Linear algebra: null space [[§8 Null Spaces and Ranges#^ladr-3-11|LADR 3.11]]; $X/N_\ell \cong \operatorname{range} \ell = \mathbb{F}$ is [[§11 Products and Quotients of Vector Spaces#^ladr-3-107|LADR 3.107]](d) ([[First isomorphism theorem]]); in finite dimensions, $\dim N_\ell = \dim X - 1$ by [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105]].
 > - The complement $\operatorname{span}\{x_0\}$ as a model of $X/N_\ell$: [[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]].
 
@@ -188,7 +188,7 @@ Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^l
 ^prop-31-6
 
 > [!proof]+ Proof
-> (HW5, Problem 5.) **($\Rightarrow$)** Let $\ell \in X'$, and let $x_n \in N_\ell$ with $x_n \to x$ in $X$. Since $\ell$ is bounded, it is continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]]), so $\ell(x) = \lim_n \ell(x_n) = 0$, i.e. $x \in N_\ell$.
+> (HW5, Problem 5.) **($\Rightarrow$)** Let $\ell \in X'$, and let $x_n \in N_\ell$ with $x_n \to x$ in $X$. Since $\ell$ is bounded, it is continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), so $\ell(x) = \lim_n \ell(x_n) = 0$, i.e. $x \in N_\ell$.
 >
 > **($\Leftarrow$)** Assume $N_\ell$ is closed. If $\ell = 0$, then $\ell \in X'$. So assume $\ell \neq 0$, and choose $x_0$ with $\ell(x_0) \neq 0$; replacing $x_0$ by $x_0/\ell(x_0)$, we may assume $\ell(x_0) = 1$. Suppose, for contradiction, that $\ell$ is not bounded. Then for each $n \in \mathbb{N}$ there is $x_n \in X$ with $|\ell(x_n)| > n\,\|x_n\|$; in particular $\ell(x_n) \neq 0$. Let
 >
@@ -200,10 +200,10 @@ Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^l
 
 ^pf-31-6
 
-*Uses:* [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
+*Uses:* [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
 
 > [!remark]- Connections
-> - The Hilbert-space (⇒) direction: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-2|§26.2]]; “continuous iff bounded”: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]] for functionals, [[§30 Boundedness and Continuity#^prop-30-2|§30.2]] for maps.
+> - The Hilbert-space (⇒) direction: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]]; “continuous iff bounded”: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]] for functionals, [[§30 Boundedness and Continuity#^prop-30-2|§30.2]] for maps.
 > - The sequence $y_n = x_0 - x_n/\ell(x_n)$ is [[Functional Analysis Problem-Solving Techniques#^ex-t18|Technique 18]].
 
 ![[m556-22-1.svg]]

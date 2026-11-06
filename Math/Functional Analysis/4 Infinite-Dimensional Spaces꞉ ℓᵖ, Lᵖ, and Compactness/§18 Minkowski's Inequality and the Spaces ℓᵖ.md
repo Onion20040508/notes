@@ -164,7 +164,7 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 *Uses:* [[§17 Hölder's Inequality for Sequences#^def-17-1|Def. §17.1]], [[§17 Hölder's Inequality for Sequences#^def-17-2|Def. §17.2]], [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]], [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]]
 
 ![[m556-13-1.svg]]
-*The unit balls $\{\|x\|_p \le 1\}$ in $\mathbb{R}^2$ increase with $p$; this is (a) for vectors with two nonzero entries. All four norms are equivalent on $\mathbb{R}^2$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-3|§14.3]]), and (c) is the statement that this fails on $\ell^p$.*
+*The unit balls $\{\|x\|_p \le 1\}$ in $\mathbb{R}^2$ increase with $p$; this is (a) for vectors with two nonzero entries. All four norms are equivalent on $\mathbb{R}^2$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]]), and (c) is the statement that this fails on $\ell^p$.*
 
 ![[m556-13-a1.gif|460]]
 
@@ -173,7 +173,7 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 > [!remark]- Connections
 > - For functions the inclusion runs the other way on sets of finite measure: [[§34 Normed Linear Spaces and Lᵖ Spaces#^cor-34-6|551 §34.6]].
 > - The same unit-ball picture: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-2|551 Ex. §34.2]].
-> - (c) is cited in [[§14 New Normed Spaces from Old#^rem-14-2|Remark §14]] (Finite Dimension is Necessary).
+> - (c) is cited in [[§14 New Normed Spaces from Old#^rem-14-1|Remark §14]] (Finite Dimension is Necessary).
 
 ## Completeness of ℓᵖ
 
@@ -216,7 +216,7 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 > \bigl\| a^{(n,k)} - a^{(m,k)} \bigr\|_p = \Bigl( \sum_{i=1}^{k} \bigl| a^{(n)}_i - a^{(m)}_i \bigr|^p \Bigr)^{1/p} \le \bigl\| a^{(n)} - a^{(m)} \bigr\|_p \xrightarrow[n, m \to \infty]{} 0 .
 > $$
 >
-> So $\{a^{(n,k)}\}_n$ is Cauchy in $(\mathbb{F}^k, \|\cdot\|_p)$, which is complete (Corollary [[§14 New Normed Spaces from Old#^cor-14-4|§14.4]]); hence there is $a^{(k)} \in \mathbb{F}^k$ with $\|a^{(n,k)} - a^{(k)}\|_p \to 0$ as $n \to \infty$.
+> So $\{a^{(n,k)}\}_n$ is Cauchy in $(\mathbb{F}^k, \|\cdot\|_p)$, which is complete (Corollary [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]]); hence there is $a^{(k)} \in \mathbb{F}^k$ with $\|a^{(n,k)} - a^{(k)}\|_p \to 0$ as $n \to \infty$.
 >
 > The limits are consistent. The first $k$ coordinates of $a^{(n,k+1)}$ form $a^{(n,k)}$, and convergence in $\mathbb{F}^{k+1}$ implies convergence of each coordinate (a single term is at most the sum). So the first $k$ coordinates of $a^{(k+1)}$ are the limits of the coordinates of $a^{(n,k)}$, which by uniqueness of limits are the coordinates of $a^{(k)}$:
 >
@@ -250,7 +250,7 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 
 ^pf-18-5
 
-*Uses:* [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§14 New Normed Spaces from Old#^cor-14-4|§14.4]], [[§11 Normed Linear Spaces#^prop-11-5|§11.5]], [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-3|§18.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 §10.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]]
+*Uses:* [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-3|§18.3]], [[§10 Monotone Sequences and Cauchy Sequences#^thm-10-1|451 §10.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]]
 
 > [!remark]- Connections
 > - The function-space counterpart: [[Riesz–Fischer Theorem|551 §35.11]] (Riesz–Fischer), cited in this course as [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]].

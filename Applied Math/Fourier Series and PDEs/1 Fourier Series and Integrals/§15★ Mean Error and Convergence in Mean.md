@@ -169,7 +169,7 @@ The actual fact is that, in the limit, the inequality becomes an equality.
 *Powers omits the proof; see [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]] ((1) ⇔ (3): Parseval's equality holds for every vector exactly when the orthonormal set is complete), applied to the trigonometric system, which is complete by [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]] (whose completeness step is itself quoted there, via Fejér's theorem).*
 
 > [!remark]- Connections
-> - In complex form, $\int_0^{2\pi}|f|^2 = \sum_n|c_n|^2$: [[§27 Orthonormal Sets and Bases#^rem-27-9|556 Remark: Fourier Series]]. Lay states the consequence for continuous $f$ (convergence in the mean) without proof, [[§57 Applications of Inner Product Spaces#^thm-57-4|235 Thm. §57.4]].
+> - In complex form, $\int_0^{2\pi}|f|^2 = \sum_n|c_n|^2$: [[§27 Orthonormal Sets and Bases#^cor-27-12|556 Cor. §27.12]]. Lay states the consequence for continuous $f$ (convergence in the mean) without proof, [[§57 Applications of Inner Product Spaces#^thm-57-4|235 Thm. §57.4]].
 
 > [!theorem] Corollary §15.5: The Coefficients Tend to Zero
 > If $\int_{-a}^{a}f^2(x)\,dx$ is finite, the two series $\sum a_n^2$ and $\sum b_n^2$ converge, and therefore

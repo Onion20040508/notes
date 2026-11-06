@@ -13,11 +13,11 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 - $C_c(\mathbb{R}^n)$ with the $L^2$ inner product is not complete; its completion is $L^2(\mathbb{R}^n)$ ([[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-2|§23]])
 - Among the $L^p(\Omega)$, only $L^2$ has a norm coming from an inner product ([[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|§24]])
 - Sobolev spaces: completing $C_c^\infty(\Omega)$ in $L^2$ norms of derivatives ([[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3|§23]])
-- Even and odd functions: $L^2[-1,1] = E \oplus O$ ([[§25 Projection and Orthogonal Decomposition#^prop-25-7|§25]])
+- Even and odd functions: $L^2[-1,1] = E \oplus O$ ([[§25 Projection and Orthogonal Decomposition#^prop-25-9|§25]])
 - On $L^2$ every bounded linear functional is $f \mapsto \int f\,\bar{g}$ ([[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^rem-26-3|§26]])
 - The Fourier basis of $L^2[0,2\pi]$ ([[§27 Orthonormal Sets and Bases#^thm-27-11|§27]])
-- Fourier series converge in $L^2$, with Parseval's equality ([[§27 Orthonormal Sets and Bases#^rem-27-9|§27]])
-- $L^p(E)$, in particular $L^2(E)$, is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] ([[§29 Sequence and Function Spaces#^prop-29-4|§29]])
+- Fourier series converge in $L^2$, with Parseval's equality ([[§27 Orthonormal Sets and Bases#^cor-27-12|Cor. §27.12]])
+- $L^p(E)$, in particular $L^2(E)$, is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] ([[§29 Sequence and Function Spaces#^prop-29-5|§29]])
 - $(L^2)' = L^2$ by the Riesz representation theorem ([[§31 Dual Spaces#^ex-31-1|§31]])
 - Parity on $L^2[-1,1]$: the simplest resolution of the identity ([[§45 The Completeness Relation#^ex-45-1|§45.1]])
 - A particle on a ring: the Fourier basis as momentum eigenstates ([[§45 The Completeness Relation#^ex-45-2|§45.2]])
@@ -43,7 +43,7 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 ![[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3]]
 
 ## Even and odd functions: $L^2[-1,1] = E \oplus O$
-![[§25 Projection and Orthogonal Decomposition#^prop-25-7]]
+![[§25 Projection and Orthogonal Decomposition#^prop-25-9]]
 
 ## On $L^2$ every bounded linear functional is $f \mapsto \int f\,\bar{g}$
 ![[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^rem-26-3]]
@@ -52,10 +52,10 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 ![[§27 Orthonormal Sets and Bases#^thm-27-11]]
 
 ## Fourier series converge in $L^2$, with Parseval's equality
-![[§27 Orthonormal Sets and Bases#^rem-27-9]]
+![[§27 Orthonormal Sets and Bases#^cor-27-12]]
 
 ## $L^p(E)$, in particular $L^2(E)$, is separable
-![[§29 Sequence and Function Spaces#^prop-29-4]]
+![[§29 Sequence and Function Spaces#^prop-29-5]]
 
 ## $(L^2)' = L^2$ by the Riesz representation theorem
 ![[§31 Dual Spaces#^ex-31-1]]

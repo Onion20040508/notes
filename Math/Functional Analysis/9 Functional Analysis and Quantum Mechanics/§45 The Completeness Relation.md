@@ -27,7 +27,7 @@ The physicists' identity $\sum_n |e_n\rangle\langle e_n| = \mathbf{1}$ is Theore
 ^def-45-2
 
 > [!remark]- Connections
-> - The general operator norm: [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]; as a norm on $\mathcal{L}(X, Y)$: [[§30 Boundedness and Continuity#^thm-30-5|§30.5]].
+> - The general operator norm: [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]; as a norm on $\mathcal{L}(X, Y)$: [[§30 Boundedness and Continuity#^thm-30-6|§30.6]].
 > - Finite dimensions: [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
 
 > [!definition] Definition §45.3: Strong Convergence
@@ -58,18 +58,18 @@ As for functionals (Lemma [[§44 Bras, Kets, and the Riesz Map#^lem-44-1|§44.1]
 ^prop-45-1
 
 > [!proof]+ Proof
-> $Y$ is finite-dimensional, hence closed (Corollary [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]]). By Lemma [[§27 Orthonormal Sets and Bases#^lem-27-2|§27.2]], $x - P_N x \perp e_n$ for each $n$, hence $x - P_N x \in Y^\perp$; and $P_N x \in Y$. So $x = P_N x + (x - P_N x)$ is the decomposition of Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], and by its uniqueness $P_Y x = P_N x$. The identity is Pythagoras (Lemma [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]](a)).
+> $Y$ is finite-dimensional, hence closed (Corollary [[§14 New Normed Spaces from Old#^cor-14-6|§14.6]]). By Lemma [[§27 Orthonormal Sets and Bases#^lem-27-2|§27.2]], $x - P_N x \perp e_n$ for each $n$, hence $x - P_N x \in Y^\perp$; and $P_N x \in Y$. So $x = P_N x + (x - P_N x)$ is the decomposition of Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], and by its uniqueness $P_Y x = P_N x$. The identity is Pythagoras (Lemma [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]](a)).
 
 ^pf-45-1
 
-*Uses:* [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]], [[§27 Orthonormal Sets and Bases#^lem-27-2|§27.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§45 The Completeness Relation#^def-45-4|Def. §45.4]], [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-3|Def. §44.3]], [[§44 Bras, Kets, and the Riesz Map#^def-44-4|Def. §44.4]]
+*Uses:* [[§14 New Normed Spaces from Old#^cor-14-6|§14.6]], [[§27 Orthonormal Sets and Bases#^lem-27-2|§27.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§45 The Completeness Relation#^def-45-4|Def. §45.4]], [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-3|Def. §44.3]], [[§44 Bras, Kets, and the Riesz Map#^def-44-4|Def. §44.4]]
 
 > [!remark]- Connections
 > - Finite-dimensional version, $P_U = \sum_k |e_k\rangle\langle e_k|$: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-57|LADR 6.57]].
 > - Used in Quantum Field Theory: completeness of a spin basis of $\mathbb C^2$, $\sum_s\xi^s\xi^{s\dagger} = \mathbb 1$, behind the spin sums of Dirac spinors — [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-3|QFT Def. §C5a.10.3]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|QFT Theorem §C5a.12.7]].
 
 > [!example] Example §45.1: Parity
-> For a particle in the symmetric box $[-1,1]$, the parity operator $(\Pi\psi)(x) = \psi(-x)$ has the even and odd states as its eigenspaces, with eigenvalues $+1$ and $-1$. By Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-7|§25.7]] these eigenspaces are closed and orthogonal, and $L^2[-1,1] = E \oplus O$. Writing $P_E$, $P_O$ for the orthogonal projections, $P_E + P_O = \mathbf{1}$ and $\Pi = P_E - P_O$: the simplest resolution of the identity, with two projections, and the simplest spectral decomposition. It is why energy eigenstates of a symmetric potential can be chosen even or odd.
+> For a particle in the symmetric box $[-1,1]$, the parity operator $(\Pi\psi)(x) = \psi(-x)$ has the even and odd states as its eigenspaces, with eigenvalues $+1$ and $-1$. By Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-9|§25.9]] these eigenspaces are closed and orthogonal, and $L^2[-1,1] = E \oplus O$. Writing $P_E$, $P_O$ for the orthogonal projections, $P_E + P_O = \mathbf{1}$ and $\Pi = P_E - P_O$: the simplest resolution of the identity, with two projections, and the simplest spectral decomposition. It is why energy eigenstates of a symmetric potential can be chosen even or odd.
 
 ^ex-45-1
 

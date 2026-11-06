@@ -5,10 +5,10 @@ source: "[[Functional Analysis]]"
 aliases: ["MATH 556 5.2", "Hahn-Banach", "Lax §3.1, Thm 1"]
 tags: [functional-analysis, hub]
 ---
-![[§5 Statement and Motivation#^thm-5-2]]
+![[§5 Statement and Motivation#^thm-5-3]]
 
 ## Treated in
-- [[§5 Statement and Motivation#^thm-5-2|Theorem §5.2: Hahn–Banach]], in [[§5 Statement and Motivation]]
+- [[§5 Statement and Motivation#^thm-5-3|Theorem §5.3: Hahn–Banach]], in [[§5 Statement and Motivation]]
 
 ## Its proof uses
 - [[§1 Linear Spaces#^def-1-2|Definition §1.2: Linear Subspace]]

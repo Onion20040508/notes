@@ -44,7 +44,7 @@ For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, sin
 ^thm-9-2
 
 > [!proof]+ Proof
-> As elsewhere, $\ell$ is the given functional on $Y$ and $L$ will be its extension. Two further names are needed because the real theorem is applied to one functional while a different one is being built: $u$ below plays the role of “$\ell$ on $Y$” in Theorem [[§5 Statement and Motivation#^thm-5-2|§5.2]], and $U$ the role of “$L$” there; the complex $L$ is then assembled from $U$. The auxiliary $v$ appears only in Step 2 and is never extended. Regard $X$ also as a linear space over $\mathbb{R}$ (same set, same addition, scalar multiplication restricted to real scalars); $Y$ is then a real subspace. “Real-linear” means linear with respect to real scalars; “complex-linear” with respect to complex scalars.
+> As elsewhere, $\ell$ is the given functional on $Y$ and $L$ will be its extension. Two further names are needed because the real theorem is applied to one functional while a different one is being built: $u$ below plays the role of “$\ell$ on $Y$” in Theorem [[§5 Statement and Motivation#^thm-5-3|§5.3]], and $U$ the role of “$L$” there; the complex $L$ is then assembled from $U$. The auxiliary $v$ appears only in Step 2 and is never extended. Regard $X$ also as a linear space over $\mathbb{R}$ (same set, same addition, scalar multiplication restricted to real scalars); $Y$ is then a real subspace. “Real-linear” means linear with respect to real scalars; “complex-linear” with respect to complex scalars.
 >
 > **Step 1: The real part of $\ell$ is real-linear.** Define $u : Y \to \mathbb{R}$ by $u(y) = \operatorname{Re} \ell(y)$. For $y, y' \in Y$ and $c \in \mathbb{R}$,
 >
@@ -78,7 +78,7 @@ For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, sin
 > u(y) = \operatorname{Re} \ell(y) \le |\ell(y)| \le p(y),
 > $$
 >
-> since the real part of a complex number is at most its modulus. Also $p$ is positive homogeneous and subadditive on the real space $X$ (Lemma [[§9 The Complex Hahn–Banach Theorem#^lem-9-1|§9.1]]). So $u$ satisfies the hypotheses of Theorem [[§5 Statement and Motivation#^thm-5-2|§5.2]] on the real space $X$ with subspace $Y$, and there is a real-linear $U : X \to \mathbb{R}$ with
+> since the real part of a complex number is at most its modulus. Also $p$ is positive homogeneous and subadditive on the real space $X$ (Lemma [[§9 The Complex Hahn–Banach Theorem#^lem-9-1|§9.1]]). So $u$ satisfies the hypotheses of Theorem [[§5 Statement and Motivation#^thm-5-3|§5.3]] on the real space $X$ with subspace $Y$, and there is a real-linear $U : X \to \mathbb{R}$ with
 >
 > $$
 > U|_Y = u \qquad \text{and} \qquad U(x) \le p(x) \quad \text{for all } x \in X.
@@ -130,10 +130,10 @@ For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, sin
 
 ^pf-9-2
 
-*Uses:* [[§5 Statement and Motivation#^thm-5-2|§5.2]], [[§9 The Complex Hahn–Banach Theorem#^lem-9-1|§9.1]]
+*Uses:* [[§5 Statement and Motivation#^thm-5-3|§5.3]], [[§9 The Complex Hahn–Banach Theorem#^lem-9-1|§9.1]]
 
 > [!remark]- Connections
-> - The real theorem it reduces to: [[§5 Statement and Motivation#^thm-5-2|§5.2]]. Seminorms and norms satisfy (1)–(2): [[§11 Normed Linear Spaces#^def-11-2|Def. §11.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]].
+> - The real theorem it reduces to: [[§5 Statement and Motivation#^thm-5-3|§5.3]]. Seminorms and norms satisfy (1)–(2): [[§11 Normed Linear Spaces#^def-11-2|Def. §11.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]].
 
 ![[m556-7-1.svg]]
 *Multiplying $x$ by $a = e^{-i\theta}$ multiplies $L(x)$ by $a$, by complex linearity, rotating it onto the positive real axis. There $L(ax)$ is real, so $L(ax) = U(ax)$, and the real bound $U \le p$ applies.*

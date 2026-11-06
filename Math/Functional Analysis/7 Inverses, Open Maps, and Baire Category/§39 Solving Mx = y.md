@@ -48,9 +48,9 @@ $$
 
 > [!proof]+ Proof
 > (1)
-> *Linear subspace:* $M0 = 0$, and if $Mx_1 = Mx_2 = 0$ then $M(c_1 x_1 + c_2 x_2) = c_1 Mx_1 + c_2 Mx_2 = 0$. *Closed:* if $x_n \in N$ and $x_n \to x_0$, then, $M$ being bounded and hence continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]]), $0 = Mx_n \to Mx_0$, so $Mx_0 = 0$.
+> *Linear subspace:* $M0 = 0$, and if $Mx_1 = Mx_2 = 0$ then $M(c_1 x_1 + c_2 x_2) = c_1 Mx_1 + c_2 Mx_2 = 0$. *Closed:* if $x_n \in N$ and $x_n \to x_0$, then, $M$ being bounded and hence continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), $0 = Mx_n \to Mx_0$, so $Mx_0 = 0$.
 >
-> (2) Since $N$ is closed, $X/N$ is a normed linear space (Theorem [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]]): its elements are the equivalence classes $[x] = \{ x + w : w \in N \}$, $x \in X$, with $[x_1] = [x_2]$ if and only if $x_1 - x_2 \in N$, and
+> (2) Since $N$ is closed, $X/N$ is a normed linear space (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]): its elements are the equivalence classes $[x] = \{ x + w : w \in N \}$, $x \in X$, with $[x_1] = [x_2]$ if and only if $x_1 - x_2 \in N$, and
 >
 > $$
 > \|[x]\| = \inf_{x' \in [x]} \|x'\| = \inf_{w \in N} \|x + w\| .
@@ -96,7 +96,7 @@ $$
 
 ^pf-39-1
 
-*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]], [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]]
+*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]
 
 > [!remark] Remark: The First Isomorphism Theorem, with Norms
 > Algebraically, Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]](2) is the first isomorphism theorem of linear algebra: $X/N(M) \cong R(M)$. The null space often represents a symmetry of the problem, and quotienting it out removes the non-uniqueness; restricting the target to $R(M)$ removes the non-existence. What the theorem does not give is a bounded inverse: $M_0^{-1} : R(M) \to X/N$ is linear but need not be bounded, and $R(M)$ need not be closed in $Y$. If $X$ and $Y$ are Banach spaces and $R(M)$ is closed, then $X/N$ and $R(M)$ are Banach spaces, and Banach's theorem below shows that $M_0^{-1}$ is bounded. So question (3) is the real one.
@@ -160,7 +160,7 @@ So a bounded linear bijection $M$ has a bounded inverse exactly when $M$ is an o
 
 ^def-39-3
 
-(Here $X \times Y$ carries one of the equivalent norms of Proposition [[§14 New Normed Spaces from Old#^prop-14-7|§14.7]], say $\|(x, y)\| = \|x\|_X + \|y\|_Y$, so that $(x_n, y_n) \to (x_0, y_0)$ if and only if $x_n \to x_0$ and $y_n \to y_0$. A set is closed if it contains the limits of its convergent sequences (Definition [[§11 Normed Linear Spaces#^def-11-6|§11.6]]); for the graph, the limit $(x_0, y_0)$ of $(x_n, Mx_n)$ lies in $G(M)$ exactly when $x_0 \in D(M)$ and $y_0 = Mx_0$. In words: if a sequence in the graph has a limit, the limit is in the graph.)
+(Here $X \times Y$ carries one of the equivalent norms of Proposition [[§14 New Normed Spaces from Old#^prop-14-8|§14.8]], say $\|(x, y)\| = \|x\|_X + \|y\|_Y$, so that $(x_n, y_n) \to (x_0, y_0)$ if and only if $x_n \to x_0$ and $y_n \to y_0$. A set is closed if it contains the limits of its convergent sequences (Definition [[§11 Normed Linear Spaces#^def-11-6|§11.6]]); for the graph, the limit $(x_0, y_0)$ of $(x_n, Mx_n)$ lies in $G(M)$ exactly when $x_0 \in D(M)$ and $y_0 = Mx_0$. In words: if a sequence in the graph has a limit, the limit is in the graph.)
 
 > [!example] Example §39.1: Continuous Maps are Closed
 > If $M : X \to Y$ is continuous (with $D(M) = X$), then $M$ is closed: if $x_n \to x_0$, continuity gives $Mx_n \to Mx_0$, and limits are unique, so $y_0 = Mx_0$.
@@ -184,16 +184,16 @@ Closedness of a graph, in a picture. Left: the points $(x_n, Mx_n)$ of the graph
 
 A closed map need not be continuous. This is why one cares about such a weak notion — differentiation, the most important operator in analysis, is not bounded, but it is closed.
 
-> [!example] Example §39.2: Differentiation is Closed
+> [!example] Example §39.3: Differentiation is Closed
 > Let $X = Y = C[0,1]$ with $\|x\| = \max_{t \in [0,1]} |x(t)|$, and
 >
 > $$
 > (Mx)(t) = \frac{d}{dt}\, x(t) = x'(t), \qquad D(M) = C^1[0,1] .
 > $$
 >
-> Then $M : D(M) \to Y$ is a closed map. It is linear, and it is not bounded (homework; compare Proposition [[§30 Boundedness and Continuity#^prop-30-3|§30.3]]).
+> Then $M : D(M) \to Y$ is a closed map. It is linear, and it is not bounded (homework; compare Proposition [[§30 Boundedness and Continuity#^prop-30-4|§30.4]]).
 
-^ex-39-2
+^ex-39-3
 
 > [!proof]+ Proof
 > Let $(x_n, x_n')$ be a sequence in $G(M)$, and assume $(x_n, x_n') \to (x_0, y_0) \in C[0,1] \times C[0,1]$. We want $y_0 = x_0'$, i.e. $x_0 \in C^1[0,1]$ and $x_0' = y_0$.
@@ -236,7 +236,7 @@ A closed map need not be continuous. This is why one cares about such a weak not
 >
 > Since $y_0$ is continuous, the fundamental theorem of calculus gives $x_0 \in C^1[0,1]$ and $x_0'(t) = y_0(t)$.
 
-^pf-ex-39-2
+^pf-ex-39-3
 
 > [!remark] Remark: Which $C^1$; the Graph Norm
 > Here $C^1$ is classical $C^1$. The domain is $C^1$ even though there are differentiable functions that are not $C^1$: the domain may be chosen smaller than the largest possible one, but not larger; here only $C^1$ matters.

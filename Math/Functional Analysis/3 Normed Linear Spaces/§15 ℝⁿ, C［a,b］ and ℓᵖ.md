@@ -13,15 +13,15 @@ tags: [functional-analysis, math556]
 
 The functions $p_1, p_2, p_3$ of Chapter 2 become the norms $\|\cdot\|_2$, $\|\cdot\|_\infty$, $\|\cdot\|_1$, joined by $\|\cdot\|_p$; their unit balls are the pictures of the norms ([[§11 Normed Linear Spaces#^rem-11-2|remark]]). The plane separates algebraic from metric interior points and shows completion as closure. All norms on $\mathbb{R}^n$ are equivalent, and $\mathbb{R}^n$ is complete under each: the two facts that fail in infinite dimensions.
 
-![[§11 Normed Linear Spaces#^ex-11-1]]
-
 ![[§11 Normed Linear Spaces#^ex-11-2]]
+
+![[§11 Normed Linear Spaces#^ex-11-4]]
 
 ![[§12 Completeness#^ex-12-1]]
 
-![[§14 New Normed Spaces from Old#^thm-14-3]]
+![[§14 New Normed Spaces from Old#^thm-14-4]]
 
-![[§14 New Normed Spaces from Old#^cor-14-4]]
+![[§14 New Normed Spaces from Old#^cor-14-5]]
 
 *Chain:* ← [[§10 ℝⁿ and Its Unit Balls|Chapter 2]] · [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] →
 
@@ -33,11 +33,11 @@ $C[a,b]$ with the maximum norm is the first infinite-dimensional Banach space. T
 
 ![[§13 The Completion of a Normed Space#^rem-13-6]]
 
-![[§13 The Completion of a Normed Space#^ex-13-1]]
+![[§13 The Completion of a Normed Space#^ex-13-4]]
 
 ![[§13 The Completion of a Normed Space#^prop-13-4]]
 
-![[§14 New Normed Spaces from Old#^rem-14-1]]
+![[§14 New Normed Spaces from Old#^ex-14-1]]
 
 *Chain:* [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] →
 
@@ -47,8 +47,8 @@ $\ell^p$ is defined only in Chapter 4, but Chapter 3 already uses it: to compare
 
 ![[§13 The Completion of a Normed Space#^rem-13-2]]
 
-![[§14 New Normed Spaces from Old#^rem-14-2]]
+![[§14 New Normed Spaces from Old#^rem-14-1]]
 
-![[§14 New Normed Spaces from Old#^rem-14-3]]
+![[§14 New Normed Spaces from Old#^ex-14-3]]
 
 *Chain:* ← [[§4 ℝⁿ and ℓ²|Chapter 1]] · [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] →

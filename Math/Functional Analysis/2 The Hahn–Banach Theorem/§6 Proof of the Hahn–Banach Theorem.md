@@ -16,12 +16,12 @@ Before the proof, two remarks on why the set of linear functionals on $X$ is wor
 > [!remark] Remark: Linear Functionals Replace the Dot Product
 > On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique $a \in \mathbb{R}^n$, so vectors and linear functionals are in one-to-one correspondence $a \leftrightarrow \ell_a$. Statements about the dot product translate into statements about linear functionals: $a \cdot x = 0$ says $x$ is perpendicular to $a$, and “$a \cdot x = 0$ for every $a$ implies $x = 0$” (take $a = x$) says that a vector perpendicular to everything is zero.
 >
-> A general linear space has no dot product. But it does have linear functionals, and the correspondence above suggests using them as the substitute: “$x$ is perpendicular to $\ell$” means $\ell(x) = 0$, and the question of whether “$\ell(x) = 0$ for all $\ell$ forces $x = 0$” becomes a question about how many linear functionals exist. The [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach theorem]] is what guarantees there are enough of them.
+> A general linear space has no dot product. But it does have linear functionals, and the correspondence above suggests using them as the substitute: “$x$ is perpendicular to $\ell$” means $\ell(x) = 0$, and the question of whether “$\ell(x) = 0$ for all $\ell$ forces $x = 0$” becomes a question about how many linear functionals exist. The [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach theorem]] is what guarantees there are enough of them.
 
 ^rem-6-1
 
 > [!remark]- Connections
-> - Every functional on $\mathbb{R}^n$ is a dot product: [[§3 Linear Maps, Convexity, and Linear Functionals#^ex-3-2|Ex. §3.2]]; on finite-dimensional inner product spaces [[Riesz representation theorem|LADR 6.42]]; on [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert spaces]] (bounded functionals) [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]].
+> - Every functional on $\mathbb{R}^n$ is a dot product: [[§3 Linear Maps, Convexity, and Linear Functionals#^ex-3-2|Ex. §3.2]]; on finite-dimensional inner product spaces [[Riesz representation theorem|LADR 6.42]]; on [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert spaces]] (bounded functionals) [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]].
 
 > [!remark] Remark: Convergence Without Topology
 > A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement “$x_n \to x$” has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This will be developed later in the course ([[§20 Compactness and the Unit Ball#^rem-20-4|weak convergence]]).
@@ -39,7 +39,7 @@ The theorem is a *construction* device. The simplest use:
 > \ell(a y_0) = a, \qquad \text{i.e. } \ell(y_0) = 1.
 > $$
 >
-> This is a linear functional on the one-dimensional subspace $Y$. Given any positive homogeneous subadditive $p$ on $X$ with $\ell(y) \le p(y)$ on $Y$, [[§5 Statement and Motivation#^thm-5-2|Hahn–Banach]] extends $\ell$ to a linear functional $L : X \to \mathbb{R}$ with $L \le p$ on all of $X$. (One can prescribe any value at $y_0$, not only $1$; the normalization is a convenience.)
+> This is a linear functional on the one-dimensional subspace $Y$. Given any positive homogeneous subadditive $p$ on $X$ with $\ell(y) \le p(y)$ on $Y$, [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] extends $\ell$ to a linear functional $L : X \to \mathbb{R}$ with $L \le p$ on all of $X$. (One can prescribe any value at $y_0$, not only $1$; the normalization is a convenience.)
 >
 > Thus associated to every nonzero vector of $X$ there is at least one linear functional on $X$ taking a prescribed nonzero value there. The extension is not unique.
 
@@ -53,7 +53,7 @@ The theorem is a *construction* device. The simplest use:
 The whole proof is a single computation: extend $\ell$ by one dimension while keeping $\ell \le p$. Everything else is bookkeeping.
 
 > [!theorem] Lemma §6.1: One-Step Extension
-> Let $X$, $p$, $Y$, $\ell$ be as in Theorem [[§5 Statement and Motivation#^thm-5-2|§5.2]], and suppose $Y \subsetneq X$. Fix $x_0 \in X \setminus Y$ and let
+> Let $X$, $p$, $Y$, $\ell$ be as in Theorem [[§5 Statement and Motivation#^thm-5-3|§5.3]], and suppose $Y \subsetneq X$. Fix $x_0 \in X \setminus Y$ and let
 >
 > $$
 > Z = \operatorname{span}\{x_0, Y\} = \{ a x_0 + y \mid a \in \mathbb{R},\ y \in Y \}.
@@ -197,14 +197,14 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 
 Zorn's lemma is equivalent to the axiom of choice and is taken as an axiom; no proof is given. The partial-order argument was not carried out in lecture; it is written out here.
 
-> [!proof]+ Proof of Theorem [[§5 Statement and Motivation#^thm-5-2|§5.2]]
+> [!proof]+ Proof of Theorem [[§5 Statement and Motivation#^thm-5-3|§5.3]]
 > If $Y = X$ there is nothing to do, so assume $Y \subsetneq X$. Let $P$ be the set of pairs $(Z, \ell_Z)$ with $Y \subset Z \subset X$ a linear subspace and $\ell_Z : Z \to \mathbb{R}$ a linear functional extending $\ell$ with $\ell_Z \le p$ on $Z$, ordered by extension: $(Z, \ell_Z) \le (Z', \ell_{Z'})$ iff $Z \subset Z'$ and $\ell_{Z'}|_Z = \ell_Z$. Then $(Y, \ell) \in P$, so $P \neq \varnothing$.
 >
 > *Chains have upper bounds.* Given a chain $\{(Z_i, \ell_i)\}_{i \in I}$, let $Z^{\ast} = \bigcup_i Z_i$ and define $\ell^{\ast}(z) = \ell_i(z)$ for any $i$ with $z \in Z_i$. Since the chain is nested, any two elements of $Z^{\ast}$ lie in a common $Z_i$, so $Z^{\ast}$ is a subspace and $\ell^{\ast}$ is well defined and linear; $\ell^{\ast} \le p$ on $Z^{\ast}$ because it holds on each $Z_i$. Thus $(Z^{\ast}, \ell^{\ast}) \in P$ is an upper bound.
 >
 > *Conclusion.* By Zorn's lemma $P$ has a maximal element $(Z_m, \ell_m)$. If $Z_m \neq X$, Lemma [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1|§6.1]] (with $Z_m$ in place of $Y$) extends $\ell_m$ to a strictly larger subspace keeping $\ell \le p$, contradicting maximality. Hence $Z_m = X$, and $L := \ell_m$ is the required extension.
 
-^pf-5-2
+^pf-5-3
 
 *Uses:* [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]], [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1|§6.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
 

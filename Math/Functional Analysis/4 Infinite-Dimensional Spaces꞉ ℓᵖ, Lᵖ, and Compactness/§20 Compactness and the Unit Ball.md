@@ -28,11 +28,11 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 > \overline{B_1(0)} = \{ x \in \mathbb{F}^n : \|x\| \le 1 \}
 > $$
 >
-> is compact. Indeed a sequence in it is coordinatewise bounded, so the diagonal extraction used in [[§14 New Normed Spaces from Old#^pf-14-3|Step 5]] of Theorem [[§14 New Normed Spaces from Old#^thm-14-3|§14.3]] — [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] applied $n$ times — produces a subsequence converging coordinatewise, hence in norm, and the limit still satisfies $\|x_0\| \le 1$ by continuity of the norm (Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]).
+> is compact. Indeed a sequence in it is coordinatewise bounded, so the diagonal extraction used in [[§14 New Normed Spaces from Old#^pf-14-4|Step 5]] of Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]] — [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] applied $n$ times — produces a subsequence converging coordinatewise, hence in norm, and the limit still satisfies $\|x_0\| \le 1$ by continuity of the norm (Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]).
 
 ^ex-20-1
 
-*Uses:* [[§14 New Normed Spaces from Old#^thm-14-3|§14.3]], [[Bolzano–Weierstrass Theorem|451 §11.5]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]
+*Uses:* [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]], [[Bolzano–Weierstrass Theorem|451 §11.5]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]
 
 > [!remark]- Connections
 > - In $\mathbb{R}^n$ with the Euclidean norm: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]] (Bolzano–Weierstrass in $\mathbb{R}^n$), and closed bounded sets are compact by [[Heine–Borel Theorem|Heine–Borel (590 §18.12)]].
@@ -266,7 +266,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 > $$
 >
 > Then:
-> - $Y_m$ is *closed*, because it is finite-dimensional (Corollary [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]]);
+> - $Y_m$ is *closed*, because it is finite-dimensional (Corollary [[§14 New Normed Spaces from Old#^cor-14-6|§14.6]]);
 > - $Y_m$ is a *proper* subspace of $X$, because $\dim Y_m \le m < \infty$ while $X$ is infinite-dimensional, so $X$ cannot equal the span of finitely many vectors.
 >
 > Riesz's lemma (Lemma [[§20 Compactness and the Unit Ball#^lem-20-2|§20.2]]) applied to $Y_m \subsetneq X$ therefore produces $x_{m+1} \in X$ with $\|x_{m+1}\| = 1$ and $\operatorname{dist}(x_{m+1}, Y_m) \ge \tfrac12$.
@@ -279,14 +279,14 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 
 ^pf-20-5
 
-*Uses:* [[§20 Compactness and the Unit Ball#^def-20-1|Def. §20.1]], [[§11 Normed Linear Spaces#^prop-11-5|§11.5]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]], [[§20 Compactness and the Unit Ball#^lem-20-2|§20.2]]
+*Uses:* [[§20 Compactness and the Unit Ball#^def-20-1|Def. §20.1]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§14 New Normed Spaces from Old#^cor-14-6|§14.6]], [[§20 Compactness and the Unit Ball#^lem-20-2|§20.2]]
 
 > [!remark]- Connections
 > - The finite-dimensional contrast: [[§20 Compactness and the Unit Ball#^ex-20-1|Ex. §20.1]], resting on [[Heine–Borel Theorem|Heine–Borel]] / [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]].
 > - Hence no infinite-dimensional normed space is locally compact ([[§20 Local Compactness#^def-20-1|590 Def. §20.1]]), since a compact neighborhood of 0 would contain a closed ball; compare ℝ^ω, [[§20 Local Compactness#^ex-20-5|590 Ex. §20.5]].
 
 > [!remark] Remark: Where Infinite-Dimensionality Enters
-> The hypothesis is used at exactly one point: to know that $Y_m = \operatorname{span}\{x_1, \ldots, x_m\}$ is a *proper* subspace, so that Riesz's lemma applies and the construction can continue. In a finite-dimensional space the process halts — at some stage $Y_m = X$, and there is no vector left at distance $\tfrac12$ from everything already chosen. Infinite-dimensionality is what guarantees a genuinely new direction at every step. The other hypothesis doing work is Corollary [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]]: without knowing $Y_m$ closed, Riesz's lemma would not apply either.
+> The hypothesis is used at exactly one point: to know that $Y_m = \operatorname{span}\{x_1, \ldots, x_m\}$ is a *proper* subspace, so that Riesz's lemma applies and the construction can continue. In a finite-dimensional space the process halts — at some stage $Y_m = X$, and there is no vector left at distance $\tfrac12$ from everything already chosen. Infinite-dimensionality is what guarantees a genuinely new direction at every step. The other hypothesis doing work is Corollary [[§14 New Normed Spaces from Old#^cor-14-6|§14.6]]: without knowing $Y_m$ closed, Riesz's lemma would not apply either.
 
 ^rem-20-3
 
@@ -301,7 +301,7 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 
 ^ex-20-2
 
-*Uses:* [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]], [[§11 Normed Linear Spaces#^prop-11-5|§11.5]], [[§20 Compactness and the Unit Ball#^def-20-1|Def. §20.1]]
+*Uses:* [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§20 Compactness and the Unit Ball#^def-20-1|Def. §20.1]]
 
 > [!remark] Remark: Why This Matters: Toward Weak Convergence
 > Compactness is what allows a limit to be produced when no formula for it exists. The model application: to solve an equation $P(x) = 1$ one constructs approximate solutions, $P(x_1) \approx 1$, $P(x_2)$ closer, and so on, with $\|x_j\| \le M$ for all $j$; in finite dimensions the bounded sequence $\{x_j\}$ has a convergent subsequence, and its limit solves the equation provided $P$ is continuous. Theorem [[§20 Compactness and the Unit Ball#^thm-20-5|§20.5]] says this move is unavailable in the function spaces the course is about — $L^p$, $\ell^p$, $C[a,b]$ are all infinite-dimensional.

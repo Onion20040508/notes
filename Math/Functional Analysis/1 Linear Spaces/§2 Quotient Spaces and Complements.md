@@ -173,11 +173,11 @@ Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material i
 ^prop-2-3
 
 > [!proof]+ Proof
-> Let $P = \{ W \subset X \text{ a linear subspace} : W \cap Y = \{0\} \}$, partially ordered by inclusion; $\{0\} \in P$. Chains in $P$ have upper bounds: the union of a chain of subspaces is a subspace (the argument in the [[§6 Proof of the Hahn–Banach Theorem#^pf-5-2|proof]] of Theorem [[§5 Statement and Motivation#^thm-5-2|§5.2]]), and it meets $Y$ only in $0$ since each member does. By Zorn's lemma (Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]]) $P$ has a maximal element $W$. If $W + Y \neq X$, pick $x_0 \in X \setminus (W + Y)$; Lemma [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]] gives a strictly larger element of $P$, contradicting maximality. Hence $W + Y = X$, and $W$ is a complement.
+> Let $P = \{ W \subset X \text{ a linear subspace} : W \cap Y = \{0\} \}$, partially ordered by inclusion; $\{0\} \in P$. Chains in $P$ have upper bounds: the union of a chain of subspaces is a subspace (the argument in the [[§6 Proof of the Hahn–Banach Theorem#^pf-5-3|proof]] of Theorem [[§5 Statement and Motivation#^thm-5-3|§5.3]]), and it meets $Y$ only in $0$ since each member does. By Zorn's lemma (Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]]) $P$ has a maximal element $W$. If $W + Y \neq X$, pick $x_0 \in X \setminus (W + Y)$; Lemma [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]] gives a strictly larger element of $P$, contradicting maximality. Hence $W + Y = X$, and $W$ is a complement.
 
 ^pf-2-3
 
-*Uses:* [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§5 Statement and Motivation#^thm-5-2|§5.2]], [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]], [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]]
+*Uses:* [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§5 Statement and Motivation#^thm-5-3|§5.3]], [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]], [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]]
 
 > [!remark]- Connections
 > - The finite-dimensional version, by extending a basis: [[§5 Bases#^ladr-2-33|LADR 2.33]].

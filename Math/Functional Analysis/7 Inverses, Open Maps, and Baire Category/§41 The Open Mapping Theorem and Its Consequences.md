@@ -36,7 +36,7 @@ What matters is that the ball in $Y$ is centered at the origin, not at an arbitr
 > Y = M(X) = \bigcup_{n=1}^\infty M\bigl( B(0, n) \bigr) .
 > $$
 >
-> $Y$ is complete, so by the Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-2|§40.2]]) it is of the second category: not every $M(B(0,n))$ is nowhere dense. So there is $n \in \mathbb{N}$ such that $\overline{M(B(0,n))}$ has an interior point, i.e. there are $z_0 \in Y$ and $r > 0$ with
+> $Y$ is complete, so by the Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-4|§40.4]]) it is of the second category: not every $M(B(0,n))$ is nowhere dense. So there is $n \in \mathbb{N}$ such that $\overline{M(B(0,n))}$ has an interior point, i.e. there are $z_0 \in Y$ and $r > 0$ with
 >
 > $$
 > B(z_0, r) \subset \overline{M\bigl( B(0, n) \bigr)} .
@@ -131,7 +131,7 @@ What matters is that the ball in $Y$ is centered at the origin, not at an arbitr
 
 ^pf-41-1
 
-*Uses:* [[§40 The Baire Category Theorem#^thm-40-2|§40.2]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]
+*Uses:* [[§40 The Baire Category Theorem#^thm-40-4|§40.4]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]
 
 ![[m556-41-2.svg]]
 
@@ -212,7 +212,7 @@ Banach's theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]) follows at o
 
 ^thm-41-3
 
-In other words, if both norms are complete and one of them is stronger than the other, then they are equivalent: two complete norms cannot be strictly comparable. (Compare Theorem [[§14 New Normed Spaces from Old#^thm-14-3|§14.3]]: in finite dimensions all norms are equivalent, with no assumption. Lax states the theorem for two complete norms that are *compatible*, that is, a sequence converging in both norms has the same limit in both; comparability implies compatibility. He proves it from the closed graph theorem, the reverse of the order here.)
+In other words, if both norms are complete and one of them is stronger than the other, then they are equivalent: two complete norms cannot be strictly comparable. (Compare Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]]: in finite dimensions all norms are equivalent, with no assumption. Lax states the theorem for two complete norms that are *compatible*, that is, a sequence converging in both norms has the same limit in both; comparability implies compatibility. He proves it from the closed graph theorem, the reverse of the order here.)
 
 > [!proof]+ Proof
 > Let $i : X \to X$, $i(x) = x$, be the identity. As a map $i : (X, \|\cdot\|_2) \to (X, \|\cdot\|_1)$ it is linear, and bounded by the assumption: $\|i(x)\|_1 \le c\, \|x\|_2$. It is one-to-one and onto, and both spaces are complete. By Banach's theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]), $i^{-1} : (X, \|\cdot\|_1) \to (X, \|\cdot\|_2)$ is also bounded: there is $C$ with $\|x\|_2 \le C\, \|x\|_1$ for all $x$. With the assumption, the norms are equivalent.
@@ -236,7 +236,7 @@ In other words, if both norms are complete and one of them is stronger than the 
 
 ^thm-41-4
 
-The domain is the domain of definition. Recall the example of Lecture 15 (Example [[§39 Solving Mx = y#^ex-39-2|§39.2]]): $M = \frac{d}{dt} : C^1[0,1] \to C[0,1]$, inside $X = Y = C[0,1]$, with $D(\frac{d}{dt}) = C^1[0,1]$. It is closed but not bounded; this does not contradict the theorem, because its domain is not the whole space $C[0,1]$. So a closed map that is not bounded necessarily has a domain smaller than $X$.
+The domain is the domain of definition. Recall the example of Lecture 15 (Example [[§39 Solving Mx = y#^ex-39-3|§39.3]]): $M = \frac{d}{dt} : C^1[0,1] \to C[0,1]$, inside $X = Y = C[0,1]$, with $D(\frac{d}{dt}) = C^1[0,1]$. It is closed but not bounded; this does not contradict the theorem, because its domain is not the whole space $C[0,1]$. So a closed map that is not bounded necessarily has a domain smaller than $X$.
 
 > [!proof]+ Proof
 > Let $X$ carry its norm $\|\cdot\|_X$. Define, for every $x \in X$, the **graph norm**
@@ -280,7 +280,7 @@ The domain is the domain of definition. Recall the example of Lecture 15 (Exampl
 *Uses:* [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]
 
 > [!remark] Remark: How the Theorems Fit Together
-> The chain of this section is: the Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-2|§40.2]]) $\Rightarrow$ the image of the unit ball contains a ball (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]]) $\Rightarrow$ the open mapping theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]]) $\Rightarrow$ Banach's inverse mapping theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]) $\Rightarrow$ the equivalent norm theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]) $\Rightarrow$ the closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]).
+> The chain of this section is: the Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-4|§40.4]]) $\Rightarrow$ the image of the unit ball contains a ball (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]]) $\Rightarrow$ the open mapping theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]]) $\Rightarrow$ Banach's inverse mapping theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]) $\Rightarrow$ the equivalent norm theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]) $\Rightarrow$ the closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]).
 > The closed graph theorem is used in the converse direction of the usual check: to show a linear map defined everywhere is bounded, it suffices to show that $x_n \to x$ and $Mx_n \to y$ imply $y = Mx$, which is often easier than estimating $\|Mx\|$ directly, because the convergence $Mx_n \to y$ comes for free. Completeness of both spaces is essential in every link.
 
 ^rem-41-2

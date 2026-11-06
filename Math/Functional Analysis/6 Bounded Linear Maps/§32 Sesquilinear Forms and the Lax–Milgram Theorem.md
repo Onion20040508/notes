@@ -106,7 +106,7 @@ The theorem below is the infinite-dimensional version. The naive route — expan
 ^thm-32-2
 
 > [!proof]+ Proof
-> *(Lecture 11.)* On the board the coercivity constant was renamed $\alpha$ midway, to avoid confusion with $B$; here it stays $\beta$. By conditions (1)–(3) and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|Theorem §32.1]] there is $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$ for all $x, y$. By the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Riesz representation theorem]] every $\ell \in H'$ is $\ell(x) = (x, z_0)$ for a unique $z_0 \in H$. So it suffices to show that $A$ is one-to-one and onto: then every $z_0$ is $Ay_0$ for exactly one $y_0$.
+> *(Lecture 11.)* On the board the coercivity constant was renamed $\alpha$ midway, to avoid confusion with $B$; here it stays $\beta$. By conditions (1)–(3) and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|Theorem §32.1]] there is $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$ for all $x, y$. By the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]] every $\ell \in H'$ is $\ell(x) = (x, z_0)$ for a unique $z_0 \in H$. So it suffices to show that $A$ is one-to-one and onto: then every $z_0$ is $Ay_0$ for exactly one $y_0$.
 >
 > **Step 1: $A$ is one-to-one, with a lower bound.** By coercivity and Cauchy–Schwarz, for every $x \in H$,
 >
@@ -138,7 +138,7 @@ The theorem below is the infinite-dimensional version. The naive route — expan
 
 ^pf-32-2
 
-*Uses:* [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|Theorem §32.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|§26.4]], [[§30 Boundedness and Continuity#^prop-30-2|Proposition §30.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|Theorem §25.4]], [[§23 Cauchy–Schwarz and the Induced Norm|Cauchy–Schwarz (§23)]]
+*Uses:* [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|Theorem §32.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§30 Boundedness and Continuity#^prop-30-2|Proposition §30.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|Theorem §25.4]], [[§23 Cauchy–Schwarz and the Induced Norm|Cauchy–Schwarz (§23)]]
 
 > [!remark] Remark: Where Coercivity is Used
 > Coercivity enters twice, in two different roles. In Step 1 it is combined with Cauchy–Schwarz to give the lower bound $\|Ax\| \ge \beta\|x\|$, which makes $A$ one-to-one *and* makes its range closed (Step 2): a map bounded below sends non-Cauchy sequences to non-Cauchy sequences. In Step 3 it is used on the diagonal, $B(y_0, y_0)$, to kill the orthogonal complement of the range. Neither step uses symmetry of $B$, which is the point of the theorem. The pattern “one-to-one with a lower bound, closed range, dense range” is the standard way to prove that a bounded operator on a Hilbert space is invertible.

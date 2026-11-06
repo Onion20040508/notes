@@ -13,7 +13,7 @@ tags: [functional-analysis, hub]
 ## Its proof uses
 - [[§31 Dual Spaces#^cor-31-1|Corollary §31.1: The Dual is Always a Banach Space]]
 - [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|Proposition §37.5: The Canonical Embedding X → X'']]
-- [[§42 Uniform Boundedness and Approximation#^thm-42-4|Theorem §42.4: Banach–Steinhaus]]
+- [[§42 Uniform Boundedness and Approximation#^thm-42-6|Theorem §42.6: Banach–Steinhaus]]
 
 ## Used in (Functional Analysis)
 - [[§43 Weak and Weak-Star Convergence#^thm-43-4|Theorem §43.4: The Norm of a Weak Limit]]

@@ -42,7 +42,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - Basic consequences: [[§20 Inner Products and Norms#^ladr-6-6|6.6]]. Norm: [[§20 Inner Products and Norms#^ladr-6-7|6.7]].
-> - Same definition in 556 ([[§22 Definition and Examples#^def-22-1|556 Def. §22.1]]); a complete inner product space is a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]]), and every finite-dimensional one is complete ([[§14 New Normed Spaces from Old#^cor-14-4|556 Cor. §14.4]]).
+> - Same definition in 556 ([[§22 Definition and Examples#^def-22-1|556 Def. §22.1]]); a complete inner product space is a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]]), and every finite-dimensional one is complete ([[§14 New Normed Spaces from Old#^cor-14-5|556 Cor. §14.5]]).
 > - Computational version: [[§56 Inner Product Spaces#^def-56-1|235 Def. §56.1]] (real inner products, the same axioms, with worked examples).
 
 > [!example] Example 6.3: Inner products (p. 184)

@@ -295,7 +295,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - In several variables the gradient is the Riesz representer of the derivative, $Df_{\mathbf p}(\mathbf u)=\nabla f(\mathbf p)\cdot\mathbf u$: [[Directional Derivative Formula|452 Thm. §9.1]].
-> - Same theorem for Hilbert spaces: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|556 Thm. §26.4]] (there $V$ may be infinite-dimensional and the functional must be bounded).
+> - Same theorem for Hilbert spaces: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|556 Thm. §26.5]] (there $V$ may be infinite-dimensional and the functional must be bounded).
 
 > [!example] Example 6.44: Computation illustrating Riesz representation theorem (p. 206)
 > Find $q\in\Poly_2(\R)$ with $\int_{-1}^1p(t)\cos(\pi t)\,dt=\int_{-1}^1pq$ for all $p\in\Poly_2(\R)$. Use the orthonormal basis $e_1,e_2,e_3$ of [[§21 Orthonormal Bases#^ladr-6-34|6.34]] and the formula $q=\sum_k\varphi(e_k)e_k$ from the proof of [[Riesz representation theorem|6.42]]:

@@ -208,14 +208,14 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 
 ^ex-28-1
 
-> [!theorem] Theorem §28.4: Classification of Separable Hilbert Spaces
+> [!theorem] Theorem §28.5: Classification of Separable Hilbert Spaces
 > Every [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] $H$ over $\mathbb{F}$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-2|isomorphic]] either to $\mathbb{F}^n$ for some $n \in \{0, 1, 2, \ldots\}$, or to $\ell^2$.
 >
 > *Source: HW5, Problem 2*
 >
 > *Lax: §6.4, Exercise 10*
 
-^thm-28-4
+^thm-28-5
 
 > [!proof]+ Proof
 > (HW5, Problem 2, for infinite-dimensional $H$; the finite-dimensional case is Claude's.) By Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|§28.3]], $H$ has a countable orthonormal basis.
@@ -238,7 +238,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 >
 > So $T$ is linear, one-to-one, onto, and preserves the inner product: $H$ is isomorphic to $\mathbb{F}^n$ or to $\ell^2$.
 
-^pf-28-4
+^pf-28-5
 
 *Uses:* [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|§28.3]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-2|Def. §28.2]], [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Def. §23.1]], [[§22 Definition and Examples#^ex-22-2|Ex. §22.2]]
 
@@ -246,7 +246,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > - Finite-dimensional analogue: vector spaces of the same dimension are isomorphic, [[Dimension shows whether vector spaces are isomorphic|LADR 3.70]], via coordinates [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]].
 
 > [!remark] Remark
-> The isomorphism is “take coordinates”: $x \mapsto ((x, e_j))_j$. Every result about a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] Hilbert space can therefore be checked on $\ell^2$, and the [[§27 Orthonormal Sets and Bases#^rem-27-9|earlier remark]] that $L^2[0, 2\pi]$ with the [[§27 Orthonormal Sets and Bases#^thm-27-11|Fourier basis]] is “the same” as $\ell^2(\mathbb{Z})$ is the special case $e_n = e^{inx}/\sqrt{2\pi}$. The isomorphism depends on the choice of basis, as in finite dimensions.
+> The isomorphism is “take coordinates”: $x \mapsto ((x, e_j))_j$. Every result about a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] Hilbert space can therefore be checked on $\ell^2$, and the [[§27 Orthonormal Sets and Bases#^cor-27-12|Cor. §27.12]] that $L^2[0, 2\pi]$ with the [[§27 Orthonormal Sets and Bases#^thm-27-11|Fourier basis]] is “the same” as $\ell^2(\mathbb{Z})$ is the special case $e_n = e^{inx}/\sqrt{2\pi}$. The isomorphism depends on the choice of basis, as in finite dimensions.
 
 ^rem-28-4
 

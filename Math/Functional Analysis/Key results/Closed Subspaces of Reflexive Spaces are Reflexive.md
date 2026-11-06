@@ -20,5 +20,5 @@ tags: [functional-analysis, hub]
 
 ## Connections
 - Step 1 uses the closed-subspace form of the [[Spanning Criterion]]; Step 2 uses normed [[§36 Duality in Normed Spaces#^thm-36-1|Hahn–Banach]] to make the restriction map $X' \to Y'$ onto ([[Functional Analysis Problem-Solving Techniques#^rem-t22|Technique 22]]).
-- The same restriction map gives $Y' \cong X'/Y^\perp$ ([[§37 Separable Duals and Reflexive Spaces#^rem-37-7|Remark]] after Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]]).
-- Examples of reflexive spaces: Hilbert spaces ([[§37 Separable Duals and Reflexive Spaces#^ex-37-2|Example §37.2]]) and $\ell^p$, $1 < p < \infty$ ([[§37 Separable Duals and Reflexive Spaces#^ex-37-3|Example §37.3]]); so every closed subspace of these is reflexive.
+- The same restriction map gives $Y' \cong X'/Y^\perp$ ([[§37 Separable Duals and Reflexive Spaces#^cor-37-11|Cor. §37.11]] after Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]]).
+- Examples of reflexive spaces: Hilbert spaces ([[§37 Separable Duals and Reflexive Spaces#^ex-37-3|Example §37.3]]) and $\ell^p$, $1 < p < \infty$ ([[§37 Separable Duals and Reflexive Spaces#^ex-37-4|Example §37.4]]); so every closed subspace of these is reflexive.

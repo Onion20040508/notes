@@ -27,9 +27,9 @@ tags: [functional-analysis, math556]
 > \ell\Bigl( \sum_{j=1}^n a_j\, y_{i_j} \Bigr) = \sum_{j=1}^n a_j\, \ell(y_{i_j}) = 0
 > $$
 >
-> for every finite linear combination $\sum_j a_j y_{i_j}$, and these make up $\operatorname{span}\{y_i\}$ (Proposition [[§1 Linear Spaces#^prop-1-5|§1.5]]). So $\ell(y) = 0$ for every $y \in \operatorname{span}\{y_i\}$. Now $z$ is in the closure, so there is a sequence $z_k \in \operatorname{span}\{y_i\}$ with $z_k \to z$ (Definition [[§11 Normed Linear Spaces#^def-11-7|§11.7]]). Since $\ell$ is bounded, hence continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]]), $\ell(z_k) \to \ell(z)$; and $\ell(z_k) = 0$ for every $k$. Hence $\ell(z) = 0$.
+> for every finite linear combination $\sum_j a_j y_{i_j}$, and these make up $\operatorname{span}\{y_i\}$ (Proposition [[§1 Linear Spaces#^prop-1-5|§1.5]]). So $\ell(y) = 0$ for every $y \in \operatorname{span}\{y_i\}$. Now $z$ is in the closure, so there is a sequence $z_k \in \operatorname{span}\{y_i\}$ with $z_k \to z$ (Definition [[§11 Normed Linear Spaces#^def-11-7|§11.7]]). Since $\ell$ is bounded, hence continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), $\ell(z_k) \to \ell(z)$; and $\ell(z_k) = 0$ for every $k$. Hence $\ell(z) = 0$.
 >
-> **($\Leftarrow$)** Assume that every $\ell \in X'$ with $\ell(y_i) = 0$ for all $i$ has $\ell(z) = 0$. Let $Y = \operatorname{span}\{y_i\}_{i \in \Lambda}$. A functional vanishes on all of $Y$ exactly when it vanishes on every $y_i$: one direction is the computation above, the other holds because each $y_i \in Y$. So the assumption says $\ell(z) = 0$ for every $\ell \in Y^\perp$, and by the distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]])
+> **($\Leftarrow$)** Assume that every $\ell \in X'$ with $\ell(y_i) = 0$ for all $i$ has $\ell(z) = 0$. Let $Y = \operatorname{span}\{y_i\}_{i \in \Lambda}$. A functional vanishes on all of $Y$ exactly when it vanishes on every $y_i$: one direction is the computation above, the other holds because each $y_i \in Y$. So the assumption says $\ell(z) = 0$ for every $\ell \in Y^\perp$, and by the distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]])
 >
 > $$
 > \inf_{y \in Y} \|z - y\| = \max_{\substack{\ell \in X',\ \|\ell\| \le 1 \\ \ell(y) = 0\ \forall y \in Y}} |\ell(z)| = 0 .
@@ -39,7 +39,7 @@ tags: [functional-analysis, math556]
 
 ^pf-37-1
 
-*Uses:* [[§1 Linear Spaces#^prop-1-5|§1.5]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]], [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]]
+*Uses:* [[§1 Linear Spaces#^prop-1-5|§1.5]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]
 
 > [!theorem] Corollary §37.2: Two Forms of the Spanning Criterion
 > Let $X$ be a normed linear space.
@@ -59,7 +59,7 @@ tags: [functional-analysis, math556]
 *Uses:* [[§37 Separable Duals and Reflexive Spaces#^thm-37-1|§37.1]]
 
 > [!remark] Remark: Hilbert-Space Form
-> In a Hilbert space, with $Y^\perp$ the orthogonal complement, (1) reads: a set has dense span if and only if only $0$ is orthogonal to it; and (2) is $(Y^\perp)^\perp = Y$ for closed $Y$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-6|§25.6]], Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-5|§25.5]]). The spanning criterion is the normed-space version, with functionals in place of vectors.
+> In a Hilbert space, with $Y^\perp$ the orthogonal complement, (1) reads: a set has dense span if and only if only $0$ is orthogonal to it; and (2) is $(Y^\perp)^\perp = Y$ for closed $Y$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]], Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-6|§25.6]]). The spanning criterion is the normed-space version, with functionals in place of vectors.
 
 ^rem-37-1
 
@@ -69,7 +69,7 @@ The spanning criterion in a picture: a point $z$ outside the closed subspace $Y 
 
 ## Separability of the Dual
 
-Recall that a normed linear space $X$ is **separable** if it has a countable dense subset ([[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Definition §28.1]]). For $1 \le p < \infty$ the spaces $\ell^p$ and $L^p(E)$ are separable, and so is $c_0$ (Propositions [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]] and [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]); $\ell^\infty$ and $L^\infty(E)$, $m(E) > 0$, are not (Propositions [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]] and [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]]).
+Recall that a normed linear space $X$ is **separable** if it has a countable dense subset ([[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Definition §28.1]]). For $1 \le p < \infty$ the spaces $\ell^p$ and $L^p(E)$ are separable, and so is $c_0$ (Propositions [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]] and [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]); $\ell^\infty$ and $L^\infty(E)$, $m(E) > 0$, are not (Propositions [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]] and [[§29 Sequence and Function Spaces#^prop-29-6|§29.6]]).
 
 > [!remark] Remark: Duals of the Sequence Spaces
 > Recall $(\ell^p)' = \ell^{p'}$ for $1 \le p < \infty$, $\frac1p + \frac1{p'} = 1$, so that $1 < p' \le \infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]). In particular:
@@ -77,7 +77,7 @@ Recall that a normed linear space $X$ is **separable** if it has a countable den
 > - $(c_0)' = \ell^1$, where $c_0 = \ell^\infty_0 = \{ (a_1, a_2, \ldots) : \lim_{n \to \infty} a_n = 0 \}$ with $\|a\| = \max_i |a_i| < \infty$ (homework; $c_0$ is the Banach space of Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]);
 > - $(\ell^1)' = \ell^\infty$ (the case $p = 1$).
 >
-> The last example shows that a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] space can have a non-separable dual: $\ell^1$ is separable (Proposition [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]]), but $\ell^\infty$ is not (Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]). The other direction holds.
+> The last example shows that a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] space can have a non-separable dual: $\ell^1$ is separable (Proposition [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]]), but $\ell^\infty$ is not (Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]). The other direction holds.
 
 ^rem-37-2
 
@@ -126,7 +126,7 @@ Recall that a normed linear space $X$ is **separable** if it has a countable den
 > [!remark] Remark: The Converse Fails
 > The converse is false: $\ell^1$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], while $(\ell^1)' = \ell^\infty$ is not. A separable dual forces a separable space, not conversely.
 
-^rem-37-3
+^xrem-37-3
 
 > [!theorem] Corollary §37.4: The Duals of $\ell^\infty$ and $L^\infty$
 > $(\ell^\infty)'$ is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], and neither is $(L^\infty(E))'$ for $E \subset \mathbb{R}^n$ measurable with $m(E) > 0$. In particular $(\ell^\infty)' \neq \ell^1$ and $(L^\infty)' \neq L^1$.
@@ -134,17 +134,17 @@ Recall that a normed linear space $X$ is **separable** if it has a countable den
 ^cor-37-4
 
 > [!proof]+ Proof
-> If $(\ell^\infty)'$ were [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] would make $\ell^\infty$ separable, contradicting Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]. Likewise for $L^\infty(E)$, by Proposition [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]].
-> Now $\ell^1$ and $L^1(E)$ are separable (Propositions [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]] and [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]), and separability is preserved by an isometric isomorphism $T$ (indeed by any linear bijection with $T$ and $T^{-1}$ bounded): if $D$ is countable and dense in $\ell^1$ and $\|x - d_n\| \to 0$ with $d_n \in D$, then $\|Tx - Td_n\| \le \|T\|\,\|x - d_n\| \to 0$, so $T(D)$ is countable and dense. Hence $(\ell^\infty)'$ is not isometrically isomorphic to $\ell^1$, nor $(L^\infty)'$ to $L^1$.
+> If $(\ell^\infty)'$ were [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] would make $\ell^\infty$ separable, contradicting Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]. Likewise for $L^\infty(E)$, by Proposition [[§29 Sequence and Function Spaces#^prop-29-6|§29.6]].
+> Now $\ell^1$ and $L^1(E)$ are separable (Propositions [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]] and [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]]), and separability is preserved by an isometric isomorphism $T$ (indeed by any linear bijection with $T$ and $T^{-1}$ bounded): if $D$ is countable and dense in $\ell^1$ and $\|x - d_n\| \to 0$ with $d_n \in D$, then $\|Tx - Td_n\| \le \|T\|\,\|x - d_n\| \to 0$, so $T(D)$ is countable and dense. Hence $(\ell^\infty)'$ is not isometrically isomorphic to $\ell^1$, nor $(L^\infty)'$ to $L^1$.
 
 ^pf-37-4
 
-*Uses:* [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]], [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]], [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]], [[§29 Sequence and Function Spaces#^prop-29-6|§29.6]], [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]]
 
 > [!remark] Remark: Every Identification is Ruled Out
 > This is stronger than Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]], which only showed that the particular map $a \mapsto \ell_a$, $\ell^1 \to (\ell^\infty)'$, is not onto. The corollary rules out *every* identification of $(\ell^\infty)'$ with $\ell^1$ as normed spaces, by a property ([[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separability]]) that any such identification would preserve.
 
-^rem-37-4
+^rem-37-3
 
 ## The Second Dual and Reflexive Spaces
 
@@ -186,10 +186,10 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]
 
-> [!example] Example §37.1: Hilbert Space: $\langle x, \ell \rangle$ from Both Sides
+> [!example] Example §37.2: Hilbert Space: $\langle x, \ell \rangle$ from Both Sides
 > Let $X = H$ be a Hilbert space. Each $\ell \in H'$ is $\ell(x) = (x, a) = \langle x, \ell \rangle$ for some $a \in H$, with $\|\ell\| = \|a\|$ (Theorem [[§31 Dual Spaces#^thm-31-2|§31.2]]). For $x_0 \in H$, $i(x_0)$ is the functional $\ell \mapsto \ell(x_0) = \langle x_0, \ell \rangle$ on $H'$: in the pairing $\langle x, \ell \rangle$, fixing $\ell$ gives an element of $X'$, and fixing $x$ gives an element of $X''$.
 
-^ex-37-1
+^ex-37-2
 
 > [!definition] Definition §37.1: Reflexive Space
 > Let $X$ be a normed linear space and $i : X \to X''$ the map with $i(x_0)(\ell) = \ell(x_0)$ for all $\ell \in X'$. If $i$ is onto, $X$ is called **reflexive** (a **reflexive Banach space**); one writes $X = X''$.
@@ -206,10 +206,10 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 
 ^pf-37-6
 
-> [!example] Example §37.2: Hilbert Spaces are Reflexive
+> [!example] Example §37.3: Hilbert Spaces are Reflexive
 > Let $H$ be a Hilbert space. Then $H$ is reflexive: $H' = H$ and $(H')' = H$.
 
-^ex-37-2
+^ex-37-3
 
 > [!proof]+ Proof
 > The two identifications must be combined so that the result is the map $i$ of Definition [[§37 Separable Duals and Reflexive Spaces#^def-37-1|§37.1]]. Let $\eta \in H''$. For $a \in H$ let $\ell_a = (\,\cdot\,, a) \in H'$ and put
@@ -226,11 +226,11 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 >
 > Every $\ell \in H'$ is some $\ell_a$ (Theorem [[§31 Dual Spaces#^thm-31-2|§31.2]]), so $\eta = i(x)$, and $i$ is onto.
 
-^pf-ex-37-2
+^pf-ex-37-3
 
 *Uses:* [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Def. §37.1]], [[§31 Dual Spaces#^cor-31-3|§31.3]], [[§31 Dual Spaces#^thm-31-2|§31.2]]
 
-> [!example] Example §37.3: $\ell^p$ is Reflexive for $1 < p < \infty$
+> [!example] Example §37.4: $\ell^p$ is Reflexive for $1 < p < \infty$
 > Let $1 < p < \infty$. Since $(\ell^p)' = \ell^{p'}$ with $1 < p' < \infty$ as well,
 >
 > $$
@@ -239,10 +239,10 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 >
 > so $\ell^p$ is reflexive for all $1 < p < \infty$. By contrast, $(\ell^1)' = \ell^\infty$ but $(\ell^\infty)' \neq \ell^1$.
 
-^ex-37-3
+^ex-37-4
 
 > [!proof]+ Proof
-> Let $\eta \in (\ell^p)''$. By Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], every element of $(\ell^p)'$ is $\ell_b(x) = \sum_j x_j \overline{b_j}$ for a unique $b \in \ell^{p'}$, with $\ell_{b + b'} = \ell_b + \ell_{b'}$, $\ell_{cb} = \bar c\, \ell_b$ and $\|\ell_b\| = \|b\|_{p'}$. Put $\varphi(b) = \overline{\eta(\ell_b)}$ for $b \in \ell^{p'}$. As in Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-2|§37.2]], $\varphi$ is linear and $|\varphi(b)| \le \|\eta\|\, \|b\|_{p'}$, so $\varphi \in (\ell^{p'})'$. Since $1 < p' < \infty$ and the conjugate exponent of $p'$ is $p$, Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] applied to $\ell^{p'}$ gives $x \in \ell^p$ with $\varphi(b) = \sum_j b_j \overline{x_j}$ for all $b$. Hence
+> Let $\eta \in (\ell^p)''$. By Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], every element of $(\ell^p)'$ is $\ell_b(x) = \sum_j x_j \overline{b_j}$ for a unique $b \in \ell^{p'}$, with $\ell_{b + b'} = \ell_b + \ell_{b'}$, $\ell_{cb} = \bar c\, \ell_b$ and $\|\ell_b\| = \|b\|_{p'}$. Put $\varphi(b) = \overline{\eta(\ell_b)}$ for $b \in \ell^{p'}$. As in Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-3|§37.3]], $\varphi$ is linear and $|\varphi(b)| \le \|\eta\|\, \|b\|_{p'}$, so $\varphi \in (\ell^{p'})'$. Since $1 < p' < \infty$ and the conjugate exponent of $p'$ is $p$, Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] applied to $\ell^{p'}$ gives $x \in \ell^p$ with $\varphi(b) = \sum_j b_j \overline{x_j}$ for all $b$. Hence
 >
 > $$
 > \eta(\ell_b) = \overline{\varphi(b)} = \sum_j x_j\, \overline{b_j} = \ell_b(x) = i(x)(\ell_b)
@@ -250,19 +250,19 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 >
 > for every $b$, i.e. $\eta = i(x)$.
 
-^pf-ex-37-3
+^pf-ex-37-4
 
-*Uses:* [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§37 Separable Duals and Reflexive Spaces#^ex-37-2|Ex. §37.2]]
+*Uses:* [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§37 Separable Duals and Reflexive Spaces#^ex-37-3|Ex. §37.3]]
 
 > [!remark] Remark: Why the Check is Needed
 > Reflexivity asks that the *specific* map $i$ be onto, not merely that $X''$ be isometrically isomorphic to $X$ in some way. The two differ: there are Banach spaces (James' space) isometrically isomorphic to their second dual that are not reflexive. That is why the two examples above compose the identifications explicitly and check that the result is $i$.
 
-^rem-37-5
+^rem-37-4
 
-> [!example] Example §37.4: $C[0,1]$ is Not Reflexive
+> [!example] Example §37.5: $C[0,1]$ is Not Reflexive
 > $(C[0,1], \|\cdot\|_\infty)$ is not reflexive.
 
-^ex-37-4
+^ex-37-5
 
 > [!proof]+ Proof
 > Suppose it is: $\bigl( (C[0,1])' \bigr)' = C[0,1]$. Now $C[0,1]$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], because the polynomials with rational coefficients are dense.
@@ -280,11 +280,11 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 > \|\ell_s - \ell_t\| = \sup_{\substack{f \in C[0,1] \\ \|f\|_\infty \le 1}} |(\ell_s - \ell_t)(f)| = \sup_{\substack{f \in C[0,1] \\ \|f\|_\infty \le 1}} |f(s) - f(t)| = 2 .
 > $$
 >
-> ($\le 2$ because $|f(s) - f(t)| \le |f(s)| + |f(t)|$; and the continuous $f$ that is linear from $f(s) = 1$ to $f(t) = -1$ between $s$ and $t$ and constant outside has $\|f\|_\infty = 1$ and $f(s) - f(t) = 2$.) The family $\{\ell_s\}_{s \in [0,1]}$ is not countable, and its members are at mutual distance $2$, so $(C[0,1])'$ is not separable (as in Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]: balls of radius $1$ about the $\ell_s$ are disjoint, and a dense set would need a point in each). This contradiction shows that $C[0,1]$ is not reflexive.
+> ($\le 2$ because $|f(s) - f(t)| \le |f(s)| + |f(t)|$; and the continuous $f$ that is linear from $f(s) = 1$ to $f(t) = -1$ between $s$ and $t$ and constant outside has $\|f\|_\infty = 1$ and $f(s) - f(t) = 2$.) The family $\{\ell_s\}_{s \in [0,1]}$ is not countable, and its members are at mutual distance $2$, so $(C[0,1])'$ is not separable (as in Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]: balls of radius $1$ about the $\ell_s$ are disjoint, and a dense set would need a point in each). This contradiction shows that $C[0,1]$ is not reflexive.
 
-^pf-ex-37-4
+^pf-ex-37-5
 
-*Uses:* [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]], [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]], [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]
 
 ![[m556-37-2.svg]]
 
@@ -296,11 +296,11 @@ Why $\|\ell_s - \ell_t\| = 2$: the function $f$ (blue) has $\|f\|_\infty = 1$, e
 ^cor-37-7
 
 > [!proof]+ Proof
-> If $X'$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], so is $X$ (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]]; reflexivity is not needed). If $X$ is separable, then $X'' = i(X)$ is separable, being isometrically isomorphic to $X$, and Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] applied to the normed space $X'$ shows that $X'$ is separable. For $\ell^1$: it is separable, but its dual is isometrically isomorphic to $\ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], with the bar-free pairing of the remark after it), which is not separable; so $\ell^1$ is not reflexive. The proof of Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|§37.4]] is this argument for $X = C[0,1]$. A variant shows that $c_0$ is not reflexive: if it were, $c_0'' = i(c_0)$ would be separable like $c_0$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]), while $c_0'' \cong (\ell^1)' \cong \ell^\infty$ is not (Proposition [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]). Here the corollary itself gives nothing, since $c_0$ and $c_0' \cong \ell^1$ are both separable.
+> If $X'$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], so is $X$ (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]]; reflexivity is not needed). If $X$ is separable, then $X'' = i(X)$ is separable, being isometrically isomorphic to $X$, and Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] applied to the normed space $X'$ shows that $X'$ is separable. For $\ell^1$: it is separable, but its dual is isometrically isomorphic to $\ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], with the bar-free pairing of the remark after it), which is not separable; so $\ell^1$ is not reflexive. The proof of Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|§37.5]] is this argument for $X = C[0,1]$. A variant shows that $c_0$ is not reflexive: if it were, $c_0'' = i(c_0)$ would be separable like $c_0$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]), while $c_0'' \cong (\ell^1)' \cong \ell^\infty$ is not (Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]). Here the corollary itself gives nothing, since $c_0$ and $c_0' \cong \ell^1$ are both separable.
 
 ^pf-37-7
 
-*Uses:* [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|Ex. §37.4]], [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]], [[§29 Sequence and Function Spaces#^prop-29-3|§29.3]]
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|Ex. §37.5]], [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]], [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]
 
 ![[m556-37-3.svg]]
 
@@ -372,7 +372,7 @@ The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction 
 > [!remark] Remark: Notation: $x_0 \in X''$
 > For $\ell \in X'$ write $\ell(x) = \langle x, \ell \rangle$. For fixed $x_0 \in X$, $\ell \mapsto \langle x_0, \ell \rangle$ is a bounded linear functional on $X'$, the element $\eta_{x_0} = i(x_0)$ of $(X')'$ (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]): $\eta_{x_0}(\ell) = \langle \ell, \eta_{x_0} \rangle = \langle x_0, \ell \rangle$. Instead of introducing other notation, one simply says $x_0 \in (X')'$, identifying $\eta_{x_0}$ with $x_0$; the isometric isomorphism $i$ is not written. This notation is used from now on. With it, “$X$ reflexive” reads $(X')' = X$.
 
-^rem-37-6
+^rem-37-5
 
 > [!theorem] Theorem §37.9: $X$ is Reflexive if and only if $X'$ is
 > Let $X$ be a Banach space. Then $X$ is reflexive if and only if $X'$ is reflexive.
@@ -400,7 +400,7 @@ The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction 
 
 ## Distance in the Dual
 
-The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]]) computes the distance from a vector to a subspace $Y$ by functionals in $Y^\perp$. The dual statement computes the distance from a functional to $Y^\perp$ by vectors in $Y$.
+The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]) computes the distance from a vector to a subspace $Y$ by functionals in $Y^\perp$. The dual statement computes the distance from a functional to $Y^\perp$ by vectors in $Y$.
 
 > [!theorem] Proposition §37.10: Distance from a Functional to $Y^\perp$
 > Let $X$ be a normed linear space and $Y$ a linear subspace. Then for every $\ell \in X'$,
@@ -452,6 +452,6 @@ The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-6|§36.6]]
 The distance from $\ell$ to $Y^\perp$, drawn in $X'$: the smallest ball about $\ell$ (red, drawn square as for a maximum norm) that meets $Y^\perp$ (blue) has radius $\|\ell|_Y\|_Y$, and it does meet $Y^\perp$, so the minimum is attained. The points of contact (orange) are exactly the $m_0 = \ell - \ell_1$ with $\ell_1$ a norm-preserving extension of $\ell|_Y$; extensions need not be unique, and neither need the closest point, unlike the projection in a Hilbert space.
 
 > [!remark] Remark: $Y' \cong X'/Y^\perp$
-> $Y^\perp$ is a closed subspace of $X'$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-7|§36.7]]), so $X'/Y^\perp$ carries the quotient norm $\|[\ell]\| = \inf_{m \in Y^\perp} \|\ell - m\|$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-8|§14.8]]). The proposition says $\|[\ell]\| = \|\ell|_Y\|_Y$. Two functionals have the same restriction to $Y$ exactly when they differ by an element of $Y^\perp$, so $[\ell] \mapsto \ell|_Y$ is a well-defined, linear, norm-preserving map $X'/Y^\perp \to Y'$, and it is onto by Hahn–Banach. Hence $Y'$ is isometrically isomorphic to $X'/Y^\perp$: the dual of a subspace is a quotient of the dual, just as the dual of a quotient is a subspace of the dual (Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]).
+> $Y^\perp$ is a closed subspace of $X'$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-10|§36.10]]), so $X'/Y^\perp$ carries the quotient norm $\|[\ell]\| = \inf_{m \in Y^\perp} \|\ell - m\|$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]). The proposition says $\|[\ell]\| = \|\ell|_Y\|_Y$. Two functionals have the same restriction to $Y$ exactly when they differ by an element of $Y^\perp$, so $[\ell] \mapsto \ell|_Y$ is a well-defined, linear, norm-preserving map $X'/Y^\perp \to Y'$, and it is onto by Hahn–Banach. Hence $Y'$ is isometrically isomorphic to $X'/Y^\perp$: the dual of a subspace is a quotient of the dual, just as the dual of a quotient is a subspace of the dual (Theorem [[§36 Duality in Normed Spaces#^thm-36-11|§36.11]]).
 
-^rem-37-7
+^xrem-37-7

@@ -13,7 +13,7 @@ tags: [functional-analysis, hub]
 ## Its proof uses
 - [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Theorem §23.1: Cauchy–Schwarz]]
 - [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Definition §26.1: Bounded Linear Functional]]
-- [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-4|Theorem §26.4: Riesz Representation Theorem]]
+- [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Theorem §26.5: Riesz Representation Theorem]]
 - [[§35 Measures and the Radon–Nikodym Theorem#^rem-35-1|Remark: Facts Assumed from Measure Theory]]
 - [[§35 Measures and the Radon–Nikodym Theorem#^def-35-4|Definition §35.4: Finite Measure]]
 - [[§35 Measures and the Radon–Nikodym Theorem#^def-35-5|Definition §35.5: Absolute Continuity]]

@@ -153,11 +153,11 @@ tags: [functional-analysis, math556]
 ^lem-12-2
 
 > [!proof]+ Proof
-> (Not covered in lecture.) Let $s_n \in S$ with $s_n \to x \in X$. By Proposition [[§11 Normed Linear Spaces#^prop-11-5|§11.5]](b), $\{s_n\}$ is Cauchy, so by completeness of $S$ it converges to some $s \in S$. By uniqueness of limits (Proposition [[§11 Normed Linear Spaces#^prop-11-5|§11.5]](a)), $x = s \in S$.
+> (Not covered in lecture.) Let $s_n \in S$ with $s_n \to x \in X$. By Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]](b), $\{s_n\}$ is Cauchy, so by completeness of $S$ it converges to some $s \in S$. By uniqueness of limits (Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]](a)), $x = s \in S$.
 
 ^pf-12-2
 
-*Uses:* [[§11 Normed Linear Spaces#^prop-11-5|§11.5]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]], [[§12 Completeness#^def-12-1|Def. §12.1]]
+*Uses:* [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]], [[§12 Completeness#^def-12-1|Def. §12.1]]
 
 ## Completion of a Metric Space
 
@@ -192,7 +192,7 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 > - For normed spaces: [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]; concrete completions: [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]].
 
 > [!remark] Remark: Why Classes, and Why the Objects Look Different
-> Two points were raised in lecture. First, why equivalence classes: a point $x \in M$ is the limit of many Cauchy sequences (on the real line, $(x, x, \ldots)$ and $(x + 1/n)$ both converge to $x$), and different sequences with the same destination must not be counted as different elements of $\overline{M}$. Second, the elements of $\overline{M}$ are sets of sequences, not points of $M$, so how is $M$ a subset? By the identification $x \leftrightarrow [(x, x, \ldots)]$, which is one-to-one; $M$ is not literally contained in $\overline{M}$ but is embedded in it. This is the same kind of identification as $\mathbb{R} \subset \mathbb{R} \oplus \mathbb{R}^2 = \mathbb{R}^3$ ([[§1 Linear Spaces#^ex-1-2|Ex. §1.2]]).
+> Two points were raised in lecture. First, why equivalence classes: a point $x \in M$ is the limit of many Cauchy sequences (on the real line, $(x, x, \ldots)$ and $(x + 1/n)$ both converge to $x$), and different sequences with the same destination must not be counted as different elements of $\overline{M}$. Second, the elements of $\overline{M}$ are sets of sequences, not points of $M$, so how is $M$ a subset? By the identification $x \leftrightarrow [(x, x, \ldots)]$, which is one-to-one; $M$ is not literally contained in $\overline{M}$ but is embedded in it. This is the same kind of identification as $\mathbb{R} \subset \mathbb{R} \oplus \mathbb{R}^2 = \mathbb{R}^3$ ([[§1 Linear Spaces#^ex-1-4|Ex. §1.4]]).
 
 ^rem-12-3
 

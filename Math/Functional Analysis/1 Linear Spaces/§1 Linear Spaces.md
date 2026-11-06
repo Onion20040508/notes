@@ -86,12 +86,12 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 > [!remark] Remark
 > Geometrically, in $\mathbb{R}^3$ the subspaces are the origin, lines through the origin, planes through the origin, and $\mathbb{R}^3$ itself. A plane not passing through the origin is *not* a subspace.
 
-^rem-1-2
+^xrem-1-2
 
 > [!remark] Note: Notation
 > The inclusion $Y \subset X$ allows equality; $X$ is a subspace of itself. Strict inclusion, when it matters, is written $Y \subsetneq X$.
 
-^rem-1-3
+^rem-1-2
 
 ## Sums and Direct Sums
 
@@ -145,17 +145,17 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 > [!remark]- Connections
 > - This external direct sum is Axler's product of vector spaces: [[§11 Products and Quotients of Vector Spaces#^ladr-3-87|LADR 3.87]], a vector space by [[§11 Products and Quotients of Vector Spaces#^ladr-3-89|LADR 3.89]].
 
-> [!example] Example §1.2: $\mathbb{R} \oplus \mathbb{R}^2 = \mathbb{R}^3$
+> [!example] Example §1.4: $\mathbb{R} \oplus \mathbb{R}^2 = \mathbb{R}^3$
 > An element of $\mathbb{R} \oplus \mathbb{R}^2$ is a pair $(a, (b, c))$ with $a \in \mathbb{R}$ and $(b, c) \in \mathbb{R}^2$; identifying it with $(a, b, c)$ gives $\mathbb{R} \oplus \mathbb{R}^2 = \mathbb{R}^3$.
 
-^ex-1-2
+^ex-1-4
 
 > [!remark] Remark: Direct Sum vs. Sum; Comparison with Axler
 > The direct sum $X \oplus Y$ is a set of *pairs*; it is what other texts call the (external) direct sum or the product $X \times Y$. It is defined for any two linear spaces, which need not sit inside a common ambient space. By contrast, $S + T$ is a set of *vectors* in a fixed ambient space $X$.
 >
 > This differs from the definition in Axler, where the direct sum $U_1 \oplus U_2$ is an *internal* notion: it is the sum $U_1 + U_2$ of two subspaces of a common space, with the extra requirement that every element decomposes uniquely as $u_1 + u_2$. The convention here follows Lax. When the two internal summands are subspaces of a common $X$ with $U_1 \cap U_2 = \{0\}$, the two notions agree up to the isomorphism $(u_1, u_2) \mapsto u_1 + u_2$ (Proposition [[§1 Linear Spaces#^prop-1-3|§1.3]] below), but the course uses the external definition throughout.
 
-^rem-1-4
+^rem-1-3
 
 > [!theorem] Proposition §1.3: Internal and External Direct Sums
 > Let $U$ and $V$ be linear subspaces of a linear space $X$, and define
@@ -212,7 +212,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 
 *Uses:* [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]]
 
-> [!example] Example §1.3: Span of a Single Vector
+> [!example] Example §1.5: Span of a Single Vector
 > Let $s_0 \in \mathbb{R}^2$ be a nonzero vector. Then
 >
 > $$
@@ -224,7 +224,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 > ![[m556-1-1.svg]]
 > *The span of a nonzero $s_0 \in \mathbb{R}^2$: the dashed line through the origin, containing the multiples $a s_0$ for $a > 1$ and for $a < 0$.*
 
-^ex-1-3
+^ex-1-5
 
 > [!theorem] Proposition §1.5: Span as Finite Linear Combinations
 > For any subset $S$ of a linear space $X$,
@@ -255,4 +255,4 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 > [!remark] Remark: Why Only Finite Sums
 > The sums in the span are finite. We do not, at this point, know how to form an infinite sum of vectors: an infinite sum requires taking a limit, and a linear space carries no notion of limit. Adding two vectors is part of the structure; passing to infinitely many is not, and must be separately justified once a topology is available. Finite sums are also already enough to produce a subspace, as the proof shows.
 
-^rem-1-5
+^rem-1-4

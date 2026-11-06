@@ -126,7 +126,7 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 
 > [!remark]- Connections
 > - Home of the density results: [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]] — its (iii), $C_c$ dense, is the form needed where compact support matters; the $L^1$ case is [[Continuous Functions of Compact Support are Dense in L¹|551 §24.7]].
-> - Cited in [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]] (R3), [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-2|Ex. §23.2]], and [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]] (separability of $L^p$).
+> - Cited in [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]] (R3), [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-2|Ex. §23.2]], and [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]] (separability of $L^p$).
 
 > [!theorem] Proposition §19.5: Continuous Functions are Not Dense in $L^\infty$
 > $C(\Omega)$ is not dense in $L^\infty(\Omega)$.

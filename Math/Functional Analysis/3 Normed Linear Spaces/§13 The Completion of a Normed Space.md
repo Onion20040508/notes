@@ -199,13 +199,13 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > the last equality being the definition of the norm on $\overline{X}$. An isometry is injective: $\Phi(\xi) = 0$ forces $\|\xi\| = 0$, hence $\xi = 0$.
 >
-> *Surjective.* Let $z \in Z$. By density there are $x_n \in X$ with $Jx_n \to z$. A convergent sequence is Cauchy (Proposition [[§11 Normed Linear Spaces#^prop-11-5|§11.5]]), and $\|x_n - x_m\|_X = \|Jx_n - Jx_m\|_Z$, so $\{x_n\}$ is Cauchy in $X$ and $\Phi([\{x_n\}]) = z$.
+> *Surjective.* Let $z \in Z$. By density there are $x_n \in X$ with $Jx_n \to z$. A convergent sequence is Cauchy (Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]]), and $\|x_n - x_m\|_X = \|Jx_n - Jx_m\|_Z$, so $\{x_n\}$ is Cauchy in $X$ and $\Phi([\{x_n\}]) = z$.
 >
 > Finally $\Phi([(x, x, \ldots)]) = \lim_n Jx = Jx$.
 
 ^pf-13-2
 
-*Uses:* [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§11 Normed Linear Spaces#^prop-11-5|§11.5]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]]
+*Uses:* [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]]
 
 > [!remark]- Connections
 > - Used for concrete completions: [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]] ($C^1$), [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]] ($L^p$).
@@ -243,7 +243,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 
 ## An Incomplete Normed Space
 
-> [!example] Example §13.1: $C^2[a,b]$ with a $C^1$ Norm
+> [!example] Example §13.4: $C^2[a,b]$ with a $C^1$ Norm
 > Let $C^k[a,b]$ denote the $k$ times continuously differentiable functions on $[a,b]$. The natural norm on $C^2[a,b]$ is
 >
 > $$
@@ -258,7 +258,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > which omits the second derivative, and $(X, \|\cdot\|_X)$ is a normed linear space that is *not* complete. This is another instance of the previous remark: the same set, two inequivalent norms, one complete and one not.
 
-^ex-13-1
+^ex-13-4
 
 > [!theorem] Proposition §13.4: $(C^2[a,b], \|\cdot\|_X)$ is Not Complete
 > With $\|f\|_X = \max |f| + \max |f'|$, the space $X = C^2[a,b]$ is not complete, and its completion is $C^1[a,b]$ with the same norm.
@@ -341,4 +341,4 @@ The construction by equivalence classes is abstract, but in practice the complet
 
 ^pf-13-4
 
-*Uses:* [[§12 Completeness#^thm-12-1|§12.1]], [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^prop-11-5|§11.5]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[Fundamental Theorem of Calculus|451 Fundamental Theorem of Calculus]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27 (Weierstrass approximation)]]
+*Uses:* [[§12 Completeness#^thm-12-1|§12.1]], [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[Fundamental Theorem of Calculus|451 Fundamental Theorem of Calculus]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27 (Weierstrass approximation)]]

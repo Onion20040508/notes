@@ -15,7 +15,7 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|Theorem §41.3: Equivalent Norm Theorem]]
-- [[§42 Uniform Boundedness and Approximation#^thm-42-5|Theorem §42.5: Lax Equivalence Theorem]]
+- [[§42 Uniform Boundedness and Approximation#^thm-42-8|Theorem §42.8: Lax Equivalence Theorem]]
 
 ## Connections
 - TODO

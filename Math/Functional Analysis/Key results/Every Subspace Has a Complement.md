@@ -13,7 +13,7 @@ tags: [functional-analysis, hub]
 ## Its proof uses
 - [[§2 Quotient Spaces and Complements#^lem-2-2|Lemma §2.2: One-Step Enlargement]]
 - [[§2 Quotient Spaces and Complements#^def-2-4|Definition §2.4: Complement]]
-- [[§5 Statement and Motivation#^thm-5-2|Theorem §5.2: Hahn–Banach]]
+- [[§5 Statement and Motivation#^thm-5-3|Theorem §5.3: Hahn–Banach]]
 - [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|Theorem §6.2: Zorn's Lemma]]
 
 ## Used in (Functional Analysis)

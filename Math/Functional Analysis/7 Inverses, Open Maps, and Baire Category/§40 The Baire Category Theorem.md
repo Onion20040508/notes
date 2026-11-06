@@ -63,16 +63,16 @@ Inside any ball there is a smaller closed ball that misses $\overline{E}$ entire
 ^pf-40-1
 
 > [!remark] Remark: Two Facts About Nowhere Dense Sets
-> Two facts are used below. (a) If the closed ball $\overline{B(x_1, r_1)}$ works in the lemma, so does $\overline{B(x_1, r_1')}$ for any $0 < r_1' \le r_1$, since it is a subset; so $r_1$ can be taken as small as we like. (b) $E$ and $\overline{E}$ have the same closure ($\overline{E}$ is closed, Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]]), so $E$ is nowhere dense if and only if $\overline{E}$ is. This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ in the proof below.
+> Two facts are used below. (a) If the closed ball $\overline{B(x_1, r_1)}$ works in the lemma, so does $\overline{B(x_1, r_1')}$ for any $0 < r_1' \le r_1$, since it is a subset; so $r_1$ can be taken as small as we like. (b) $E$ and $\overline{E}$ have the same closure ($\overline{E}$ is closed, Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]]), so $E$ is nowhere dense if and only if $\overline{E}$ is. This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ in the proof below.
 
-^rem-40-1
+^xrem-40-1
 
-> [!theorem] Theorem §40.2: Baire Category Theorem
+> [!theorem] Theorem §40.4: Baire Category Theorem
 > Let $X$ be a (nonempty) complete metric space. Then $X$ is of the second category: $X$ is not a countable union of nowhere dense sets.
 >
 > *Lax: §15.5, proof of Thm 9 (“Baire category principle”), p. 169*
 
-^thm-40-2
+^thm-40-4
 
 > [!proof]+ Proof
 > ($X \neq \varnothing$ is needed: the empty space is a union of empty, nowhere dense sets.) If not, assume $(X, d)$ is complete and
@@ -138,7 +138,7 @@ Inside any ball there is a smaller closed ball that misses $\overline{E}$ entire
 >
 > and $A \neq \varnothing$, contradicting Step 2.
 
-^pf-40-2
+^pf-40-4
 
 *Uses:* [[§40 The Baire Category Theorem#^lem-40-1|§40.1]]
 

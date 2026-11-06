@@ -29,7 +29,7 @@ tags: [measure-theory, hub]
 - [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|Theorem §28.3: Separable Hilbert Spaces and Countable Bases]]
 - [[§29 Sequence and Function Spaces#^prop-29-1|Proposition §29.1: ℓ^p is Separable for 1 ≤ p < ∞]]
 - [[§29 Sequence and Function Spaces#^prop-29-2|Proposition §29.2: c_0 is a Separable Banach Space]]
-- [[§29 Sequence and Function Spaces#^prop-29-4|Proposition §29.4: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
+- [[§29 Sequence and Function Spaces#^prop-29-5|Proposition §29.5: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
 
 ## Connections
 - **Proof idea.** List the n-th set as aₙ,₁, aₙ,₂, … and send aₙ,ₘ to (n, m). This puts the union in bijection with a subset of ℕ × ℕ, which is countable by the diagonal listing of [[§1 Countability and Set Theory#^ex-1-3|Ex. §1.3]].
