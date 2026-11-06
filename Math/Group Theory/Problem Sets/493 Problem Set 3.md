@@ -32,7 +32,7 @@ tags: [group-theory, math493]
 
 ^hw-3-3
 
-*Treated in [[§30 Orbit–Stabilizer|§30]] ([[§30 Orbit–Stabilizer#^thm-30-6|§30.6]]).*
+*Treated in [[§30 Orbit–Stabilizer|§30]] ([[§30 Orbit–Stabilizer#^thm-30-7|§30.7]]).*
 
 > [!question] Problem 3.4: Conjugacy Classes and Centralizers
 > For $g \in G$ let $\operatorname{Conj}(g) = \{hgh^{-1} : h \in G\}$ and $Z(g) = \{h \in G : gh = hg\}$ (the centralizer). Suppose $G$ is finite.

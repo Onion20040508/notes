@@ -201,9 +201,105 @@ tags: [group-theory, math493]
 
 ^rem-30-4
 
+## Example: The Product Formula $|AB|$
+
+For subgroups $A, B \leq G$ the product set $AB = \{ab : a \in A,\ b \in B\}$ is in general not a subgroup, so Lagrange's theorem says nothing about its size. Counting the pairs $(a, b)$ by their products does.
+
+> [!theorem] Proposition §30.6: The Product Formula
+> Let $G$ be a finite group, $A$ and $B$ subgroups of $G$, and $AB = \{ab : a \in A,\ b \in B\}$.
+>
+> 1. Each $c \in AB$ can be written as $c = ab$ with $a \in A$ and $b \in B$ in exactly $|A \cap B|$ ways.
+> 2. $|AB| = \dfrac{|A| \cdot |B|}{|A \cap B|}$, even when neither $A$ nor $B$ is normal.
+>
+> *Source: PS 8.1*
+
+^prop-30-6
+
+> [!proof]+ Proof
+> *Idea:* The pairs $(a, b)$ with $ab = c$ are the pairs $(a_1g, g^{-1}b_1)$, $g \in A \cap B$; counting all of $A \times B$ by products gives (2).
+>
+> *(Problem Set 8, Problem 8.1, as submitted.)* (1) Let $c \in AB$, say $c = a_1b_1$ with $a_1 \in A$ and $b_1 \in B$. The ways of writing $c$ as $ab$ are the elements of
+>
+> $$
+> R_c = \{(a, b) \in A \times B : ab = c\}.
+> $$
+>
+> Since $A$ and $B$ are subgroups, so is $A \cap B$. Define
+>
+> $$
+> \Phi : A \cap B \to R_c, \qquad \Phi(g) = (a_1g,\ g^{-1}b_1).
+> $$
+>
+> **Well defined.** For $g \in A \cap B$, $a_1g \in A$ since $g \in A$, and $g^{-1}b_1 \in B$ since $g \in B$; moreover $(a_1g)(g^{-1}b_1) = a_1b_1 = c$. So $\Phi(g) \in R_c$.
+>
+> **Injective.** If $\Phi(g) = \Phi(g')$, then $a_1g = a_1g'$, and cancelling $a_1$ gives $g = g'$.
+>
+> **Surjective.** Let $(a_2, b_2) \in R_c$, so $a_1b_1 = a_2b_2$. Then
+>
+> $$
+> a_1^{-1}a_2 = b_1b_2^{-1}.
+> $$
+>
+> The left-hand side lies in $A$ and the right-hand side in $B$, so $g = a_1^{-1}a_2 = b_1b_2^{-1}$ lies in $A \cap B$. Then $a_1g = a_2$ and $g^{-1}b_1 = b_2b_1^{-1}b_1 = b_2$, so $(a_2, b_2) = \Phi(g)$.
+>
+> Hence $\Phi$ is a bijection, and $c$ can be written as $ab$ with $a \in A$, $b \in B$ in exactly $|R_c| = |A \cap B|$ ways.
+>
+> (2)
+> *(Part (2) of the submitted text was not available for these notes; filled in.)* Every pair $(a, b) \in A \times B$ lies in exactly one of the sets $R_c$, $c \in AB$, namely in $R_{ab}$. So the $R_c$ partition $A \times B$, and by (1)
+>
+> $$
+> |A| \cdot |B| = |A \times B| = \sum_{c \in AB} |R_c| = |AB| \cdot |A \cap B|.
+> $$
+>
+> Dividing by $|A \cap B| \geq 1$ gives (2). Normality was never used.
+
+^pf-30-6
+
+> [!proof]+ Second proof (orbit–stabilizer)
+> *Idea:* $AB$ is the orbit of $e$ under $A \times B$ acting on $G$ by $(a, b) \star x = axb^{-1}$, and the stabilizer of $e$ is a copy of $A \cap B$.
+>
+> *(In office hours, Wed Nov 4, Speyer treated the problem as an orbit–stabilizer count; which action he used is not recorded here. The details below are filled in with the two-sided action.)* The direct product $A \times B$ (Direct Products, Definition [[§3 Basic Examples of Groups#^def-3-2|§3.2]]) acts on $G$ by $(a, b) \star x = axb^{-1}$: $(e, e) \star x = x$, and
+>
+> $$
+> (a, b) \star \bigl((a', b') \star x\bigr) = a(a'xb'^{-1})b^{-1} = (aa')\,x\,(bb')^{-1} = (aa', bb') \star x.
+> $$
+>
+> *Orbit of $e$:* $\{ab^{-1} : a \in A,\ b \in B\} = AB$, since $b \mapsto b^{-1}$ is a bijection of $B$ onto itself.
+>
+> *Stabilizer of $e$:* $(a, b) \star e = e$ iff $ab^{-1} = e$ iff $a = b$, and then $a = b \in A \cap B$. So $\operatorname{Stab}(e) = \{(g, g) : g \in A \cap B\}$, which has $|A \cap B|$ elements ($g \mapsto (g, g)$ is a bijection from $A \cap B$).
+>
+> (2) Orbit–Stabilizer (Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]]) for this action and $x = e$ gives $|A| \cdot |B| = |A \times B| = |AB| \cdot |A \cap B|$.
+>
+> (1) Now $c = ab$ iff $(a, b^{-1}) \star e = c$. Fix one such pair, $c = a_1b_1$. By When Two Group Elements Move $x$ to the Same Place (Proposition [[§30 Orbit–Stabilizer#^prop-30-1|§30.1]]), $(a, b^{-1}) \star e = (a_1, b_1^{-1}) \star e$ iff $(a, b^{-1}) \in (a_1, b_1^{-1})\operatorname{Stab}(e)$, that is, iff $(a, b^{-1}) = (a_1g, b_1^{-1}g)$ for some $g \in A \cap B$, which is then unique. Taking inverses in the second slot, the representations of $c$ are exactly the pairs $(a, b) = (a_1g, g^{-1}b_1)$, $g \in A \cap B$: there are $|\operatorname{Stab}(e)| = |A \cap B|$ of them.
+
+^pf-30-6-2
+
+*Uses:* [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§30 Orbit–Stabilizer#^prop-30-1|§30.1]]
+
+> [!remark] Remark: The Submitted Proof Is Orbit–Stabilizer for One Action
+> The submitted proof uses no group action, but it reproves, for the action $(a, b) \star x = axb^{-1}$, the two facts on which the orbit–stabilizer theorem rests. Its map $\Phi(g) = (a_1g, g^{-1}b_1)$ is the bijection $\operatorname{Stab}(e) \to \{h : h \star e = c\}$, $s \mapsto (a_1, b_1^{-1})\,s$, written with $b$ in place of $b^{-1}$; its surjectivity step, $a_1^{-1}a_2 = b_1b_2^{-1} \in A \cap B$, is the implication (1) $\Rightarrow$ (2) of When Two Group Elements Move $x$ to the Same Place (Proposition [[§30 Orbit–Stabilizer#^prop-30-1|§30.1]]). Part (2), partitioning $A \times B$ into the sets $R_c$ of equal size, is the counting step: the group is cut into the fibres of $h \mapsto h \star e$, each a coset of the stabilizer. So the theorem is not *used* there; its proof is *repeated* for this one action, with $A \cap B$ in place of $\operatorname{Stab}(e)$. Naming the action replaces both steps by one citation.
+
+^rem-30-5
+
+> [!remark] Remark: Another Action: $A$ on the Cosets $G/B$
+> *(Not from office hours.)* A one-sided action gives the formula too. Let $A$ act on the left cosets of $B$ by $a \star gB = agB$ (well defined: $gB = g'B$ gives $agB = ag'B$; the axioms are associativity). The orbit of $B$ is $\{aB : a \in A\}$, and these cosets are disjoint, have $|B|$ elements each, and fill out $AB$. The stabilizer of $B$ is $\{a \in A : aB = B\} = A \cap B$. By Orbit–Stabilizer, the orbit has $[A : A \cap B]$ elements, so
+>
+> $$
+> |AB| = [A : A \cap B] \cdot |B| = \frac{|A|}{|A \cap B|} \cdot |B|.
+> $$
+>
+> This is the injection $aB' \mapsto aB$ ($B' = A \cap B$) of Index of an Intersection (Proposition [[§29 The Index and Lagrange's Theorem#^prop-29-9|§29.9]], PS 5.1(1)), with its image identified: it is the $A$-orbit of $B$ in $G/B$.
+
+^rem-30-6
+
+> [!example] Example §30.3: $AB$ Need Not Be a Subgroup
+> *(Not from class.)* In $S_3$ take $A = \{e, (1\,3)\}$ and $B = \{e, (1\,2)\}$, as in The Index Need Not Divide (Example [[§29 The Index and Lagrange's Theorem#^ex-29-2|§29.2]]). Then $A \cap B = \{e\}$, and the formula gives $|AB| = 2 \cdot 2 / 1 = 4$: indeed $AB = \{e, (1\,2), (1\,3), (1\,3)(1\,2)\}$ with $(1\,3)(1\,2) = (1\,2\,3)$. Since $4 \nmid 6$, $AB$ is not a subgroup of $S_3$. When $A$ or $B$ is normal, $AB$ is a subgroup, and the formula is the order count $|HN| = |H| \cdot |N| / |H \cap N|$ behind the Second Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], later).
+
+^ex-30-3
+
 ## Counting Orbits: Burnside's Lemma
 
-> [!theorem] Theorem §30.6: Burnside's Lemma
+> [!theorem] Theorem §30.7: Burnside's Lemma
 > Let a finite group $G$ act on a finite set $X$. Then the number of orbits is the average number of fixed points:
 >
 > $$
@@ -212,7 +308,7 @@ tags: [group-theory, math493]
 >
 > *Source: PS 3.3*
 
-^thm-30-6
+^thm-30-7
 
 > [!proof]+ Proof
 > *Idea:* Count the pairs $(x, g)$ with $g \star x = x$ in two ways; apply orbit–stabilizer.
@@ -225,16 +321,16 @@ tags: [group-theory, math493]
 >
 > by [[§30 Orbit–Stabilizer#^thm-30-3|orbit–stabilizer]]. The orbits partition $X$ ([[§27 Orbits#^prop-27-1|§27.1]]), and every point $y$ of an orbit $O$ has $Gy = O$; so the points of $O$ contribute $|O| \cdot \frac{1}{|O|} = 1$ to the last sum, which therefore equals the number of orbits. Dividing by $|G|$ gives the result.
 
-^pf-30-6
+^pf-30-7
 
 *Uses:* [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§26 Stabilizers and Fixed Points#^def-26-2|Def. §26.2]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-2|Def. §27.2]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§27 Orbits#^prop-27-1|§27.1]]
 
-> [!example] Example §30.3: Burnside's Lemma in Action
+> [!example] Example §30.4: Burnside's Lemma in Action
 > 1. *$S_3$ on $\{1, 2, 3\}$.* The identity fixes $3$ points, each transposition $1$, each $3$-cycle $0$: $\frac{1}{6}(3 + 1 + 1 + 1 + 0 + 0) = 1$ orbit.
 > 2. *The cube on its faces.* Among the $24$ rotations ([[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-3|§32.3]]): the identity fixes $6$ faces; the $6$ rotations by $\pm 90^\circ$ and the $3$ by $180^\circ$ about face axes each fix $2$; the $8$ rotations about body diagonals and the $6$ about edge axes fix none. So $\frac{1}{24}(6 + 9 \cdot 2) = 1$ orbit, as it must be.
 > 3. *Conjugation.* For $G$ acting on itself by conjugation, $\operatorname{Fix}(g) = C_G(g) = \{h : hg = gh\}$, the centralizer of $g$ ([[§34 Conjugation as an Action and the Class Equation#^def-34-1|Def. §34.1]]), and the orbits are the conjugacy classes, so the number of conjugacy classes is the average size of a centralizer, $\frac{1}{|G|}\sum_g |C_G(g)|$. For $S_3$: $\frac{1}{6}(6 + 2 + 2 + 2 + 3 + 3) = 3$.
 
-^ex-30-3
+^ex-30-4
 
 ![[m493-28-4.svg]]
 *The double count in the proof of Burnside's lemma, for $S_3$ acting on $\{1,2,3\}$ (part 1 of the example): a dot marks each pair with $g \star x = x$. The row sums are $|\operatorname{Fix}(g)|$ (blue) and the column sums are $|\operatorname{Stab}(x)| = 6/|Gx| = 2$ (red); both add up to $|P| = 6$, so the average number of fixed points is $6/6 = 1$ orbit.*

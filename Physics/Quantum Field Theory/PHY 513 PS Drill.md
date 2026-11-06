@@ -2437,6 +2437,122 @@ $\mathcal L = \frac12(\partial_\mu\Phi)^2 - \frac12M^2\Phi^2 + \frac12(\partial_
 >
 > **Difficulty 2.** Submitted solution: the route above with relativistic states, $\mathcal M = -2\mu$, $\int d\Pi_2 = \frac{p_\ast}{4\pi M}$, $\Gamma = \frac{\mu^2}{8\pi M}\sqrt{1 - 4m^2/M^2}$, $\tau = \frac{8\pi M^2}{\mu^2\sqrt{M^2 - 4m^2}}$, with a remark on free versus asymptotic states. The vault integrates it as Example [[§C6b.6 Decay Kinematics#^ex-c6b-6-1|§C6b.6.1]] Φ → φφ, the Lifetime at Lowest Order with Theorem [[§C6b.6 Decay Kinematics#^thm-c6b-6-3|§C6b.6.3]] Two-Body Decay into Equal Masses and [[§C6b.5 Decay Widths#^cau-c6b-5-1|§C6b.5, Caution: Free states in a decay amplitude]].
 
+## Problem Set 9: A First Look at Amplitudes (due Nov 8; submitted Nov 5)
+
+### PS9.1 The Dirac propagator
+
+$S_F(x - y)_{ab} = \langle0|T\psi_a(x)\bar\psi_b(y)|0\rangle$ with the fermionic sign. (a) Insert the oscillator expansion and write each time ordering as a differential operator on $D_W$. (b) From the definition, show $(i\slashed{\partial} - m)_{ca}S_F(x - y)_{ab} = i\delta^4(x - y)\delta_{cb}$ using the equal-time anticommutators. (c) Solve this equation by a Fourier integral along a contour $C$ and express $S_C$ as an operator on $D_C$. (d) With $D_F = \theta D_W(x - y) + \theta D_W(y - x)$ (PS (2.60)), show that (c) agrees with (a).
+
+^ps9-1
+
+- [ ] Q1 **[def]** Write $S_F$ with step functions. Why the minus sign?
+- [ ] Q2 For $x^0 > y^0$, which mode-operator term survives in $\langle0|\hat\psi\hat{\bar\psi}|0\rangle$, and which spin sum appears?
+- [ ] Q3 **[why]** Why is $\slashed{p}e^{-ip(x - y)} = i\slashed{\partial}_xe^{-ip(x - y)}$ valid inside the $d^3p$ integral although $p^0 = E_{\mathbf p}$?
+- [ ] Q4 In (b), which terms vanish by the Dirac equation, and which survive from $\partial\theta$?
+- [ ] Q5 **[why]** Why does the source appear at the first time derivative here, but only at the second for the scalar?
+- [ ] Q6 **[why]** With a plus sign in place of the fermionic minus, what would the source be? Is it a delta function?
+- [ ] Q7 In (c), why do the detours of $C$ not change $\int_Ce^{-ip(x - y)}$? Where does "equating integrands" fail to determine $\tilde S_C$?
+- [ ] Q8 In (d), why does $\delta(x^0 - y^0)[D_W(x - y) - D_W(y - x)]$ vanish?
+
+> [!tip]- Hints: definitions, results, route, your solution
+> **Topic and definitions.** T11 (with the Dirac field of C5b).
+> - Fermionic time ordering Definition [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-2|§C5b.8.2]] Time-Ordered Product of Fermion Fields; Dirac Wightman functions Definition [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^def-c5b-7-1|§C5b.7.1]] Dirac Wightman Functions; equal-time anticommutators Principle [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-6|§C5b.1.6]] Equal-Time Canonical Anticommutation Relations
+> - Contour Green's functions Definition [[§C2b.5 Green's Functions and Contours#^def-c2b-5-2|§C2b.5.2]] The Green's Function of a Contour
+>
+> **Key results.** Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|§C5b.8.3]] The Dirac Feynman Propagator (part (a), (d)); Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|§C5b.8.4]] The Free Dirac Schwinger–Dyson Equation (part (b)) with Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|§C5b.8.5]] One Time Derivative: the Source Is the Equal-Time Anticommutator Itself, Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|§C5b.8.6]] The Fermionic Minus Sign of T Makes S_F a Green's Function; Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|§C5b.8.1]] Green's Functions of the Dirac Operator and [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^der-c5b-8-1b|Derivation §C5b.8.1, second route]] (part (c)); Theorem [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|§C5b.7.1]] The Dirac Wightman Functions from the Scalar One, Theorem [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-2|§C5b.7.2]] The Field Anticommutator Is a c-Number; scalar analogue Theorem [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|§C2b.6.5]] The Free Schwinger–Dyson Equation.
+>
+> **Strategy (K5, K13).** Mode expansion and spin sums for (a); product rule with $\partial_0\theta = \delta$, operator Dirac equation, equal-time anticommutator for (b); Fourier form, equate integrands off the poles, multiply by $\slashed{p} + m$ for (c); product rule on $(i\slashed{\partial} + m)D_F$ and $p \to -p$ at equal times for (d).
+>
+> **Difficulty** (a) 1, (b) 2, (c) 2, (d) 1. Submitted solution: all parts as listed. The vault integrates it as Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|§C5b.8.4]] The Free Dirac Schwinger–Dyson Equation (direct Green's-function proof) with two lesson boxes, a second route of Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|§C5b.8.1]] Green's Functions of the Dirac Operator, and Source tags on Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|§C5b.8.3]] The Dirac Feynman Propagator.
+
+### PS9.2 Four-point diagrams in φ⁴ theory to order λ²
+
+$\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2 - \frac{\lambda}{24}\phi^4$, two in, two out. (a) Draw all distinct amputated, connected four-point diagrams through order $\lambda^2$. (b) Write each in momentum space.
+
+^ps9-2
+
+- [ ] Q1 **[why]** Why do the 4–0 and 3–1 assignments not give diagrams of the amplitude?
+- [ ] Q2 How many contractions produce one $\lambda^2$ diagram, and what is the coefficient?
+- [ ] Q3 With $k_i$ flowing from the vertex to $x_i$, what are $k_i$ for incoming and outgoing particles?
+- [ ] Q4 Which delta does the $q_2$ integral, and which momentum is left to integrate?
+- [ ] Q5 **[why]** Why is the loop integral divergent, and in which variable does each diagram depend on the external momenta?
+
+> [!tip]- Hints: definitions, results, route, your solution
+> **Topic and definitions.** T11.
+> - Amputation Definition [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|§C6c.5.1]] Amputation of an External Leg; diagram of an amplitude Definition [[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|§C6c.6.1]] Diagram of a Scattering Amplitude; legs, lines, loops Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|§C6a.12.3]] Counting Legs, Lines and Loops
+>
+> **Key results.** Example [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^ex-c6c-5-1|§C6c.5.1]] φφ → φφ at Order λ² (this problem); Theorem [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-1|§C6c.5.1]] The Second-Order Terms of φ⁴ Theory; Theorem [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-3|§C6c.6.3]] Feynman Rules for iℳ, All Orders.
+>
+> **Strategy (K11, K9).** Classify by the number of particles at each vertex (4–0, 3–1, 2–2); keep the connected, amputated ones; count contractions per diagram against $\frac{1}{2!}(4!)^{-2}$; Fourier forms, vertex deltas, one loop integral left.
+>
+> **Difficulty 2.** Submitted solution: three diagrams (one per channel) at order $\lambda^2$, one at order $\lambda$, with the momentum-space integrals. The vault integrates it in Example [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^ex-c6c-5-1|§C6c.5.1]] φφ → φφ at Order λ².
+
+### PS9.3 The φ₁φ₂φ₃ theory: φ₁φ₁ → φ₂φ₂
+
+$\mathcal L = \frac12\sum_i(\partial\phi_i\partial\phi_i - m_i^2\phi_i^2) - g\phi_1\phi_2\phi_3$. (a) The diagrams of $\phi_1\phi_1 \to \phi_2\phi_2$ at $O(g^2)$. (b) The amplitude. (c) $d\sigma/d\Omega$ in the centre-of-mass frame.
+
+^ps9-3
+
+- [ ] Q1 **[why]** Why is there no $s$-channel?
+- [ ] Q2 **[def]** What are $|G|$, $S$ and $N$ for each diagram, and why is the vertex factor $-ig$?
+- [ ] Q3 Derive $\mathcal M$ and say why the $i\varepsilon$ may be dropped.
+- [ ] Q4 **[why]** Why are all four energies $E_{\rm cm}/2$ although $m_1 \ne m_2$?
+- [ ] Q5 Derive $\bigl(\frac{d\sigma}{d\Omega}\bigr)_{\rm cm} = \frac{|\mathbf p_1|}{64\pi^2E_{\rm cm}^2|\mathbf p_A|}|\mathcal M|^2$.
+
+> [!tip]- Hints: definitions, results, route, your solution
+> **Topic and definitions.** T11.
+> - The theory Model [[§C6c.6 Feynman Rules for Amplitudes#^mod-c6c-6-5|§C6c.6.5]] The Three-Scalar Theory; vertex factors Theorem [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|§C6a.12.2]] Vertex Factors of a Polynomial Interaction; external-particle contractions Lemma [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|§C6c.2.1]] Contraction of Fields with Outgoing Particles, Lemma [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|§C6c.2.2]] Contraction of Fields with Incoming Particles
+>
+> **Key results.** Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-3|§C6c.6.3]] φ₁φ₁ → φ₂φ₂ at Order g² in the Three-Scalar Theory (this problem); Theorem [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-6|§C6c.6.6]] The Vertex Content Decides Which Channels Exist (no $s$-channel); Theorem [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|§C6b.4.7]] Equal Masses in Pairs (part 5: $t, u \le 0$); Theorem [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|§C6b.4.4]] The 2 → 2 Differential Cross Section in the Centre-of-Mass Frame.
+>
+> **Strategy (K9, K11).** Read the channels off the vertex content; contract, do the vertex deltas; drop $i\varepsilon$ by $t, u \le 0$; flux factor with equal masses in pairs.
+>
+> **Difficulty 2.** Submitted solution: all parts as listed. The vault integrates it as Example [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-3|§C6c.6.3]] φ₁φ₁ → φ₂φ₂ at Order g² in the Three-Scalar Theory with Model [[§C6c.6 Feynman Rules for Amplitudes#^mod-c6c-6-5|§C6c.6.5]] The Three-Scalar Theory, Theorem [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-6|§C6c.6.6]] The Vertex Content Decides Which Channels Exist, and part 5 of Theorem [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|§C6b.4.7]] Equal Masses in Pairs.
+
+### PS9.4 Fermion scattering in Yukawa theory
+
+Elastic scattering of two (massless) fermions in Yukawa theory: (a) the amplitude; (b)–(d) spin-averaged $|\mathcal M|^2$ by traces, the massless-boson limit, the total cross section.
+
+^ps9-4
+
+- [ ] Q1 **[why]** Why is there no first-order contribution and no $s$-channel?
+- [ ] Q2 Count the exchanges for the $t$- and $u$-diagrams. Which sign does each get?
+- [ ] Q3 **[why]** Why does the copy with $z_1 \leftrightarrow z_2$ come with no extra sign?
+- [ ] Q4 **[conv]** Which convention for the bra fixes which diagram carries the minus sign?
+
+> [!tip]- Hints: definitions, results, route, your solution
+> **Topic and definitions.** T11.
+> - Yukawa theory Model [[§C6d.1 Yukawa Theory#^mod-c6d-1-1|§C6d.1.1]] Yukawa Theory; contractions with external fermions Theorem [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-1|§C6d.2.1]] The Four External Fermion Wave Functions
+>
+> **Key results.** (a): Example [[§C6d.5 Second Order#^ex-c6d-5-2|§C6d.5.2]] f f → f f at Order g², by Contractions, Theorem [[§C6d.5 Second Order#^thm-c6d-5-3|§C6d.5.3]] The Relative Sign from Fermi Statistics (second route [[§C6d.5 Second Order#^der-c6d-5-3b|Derivation §C6d.5.3, second route]]), Theorem [[§C6d.5 Second Order#^thm-c6d-5-2|§C6d.5.2]] The 1/2! Cancels the Exchange x ↔ y; Vertices Move as Even Packages. (b)–(d): dropped by Larsen (not covered in class); to be added when lectured.
+>
+> **Strategy (K11).** Two diagrams ($t$, $u$); the relative sign by counting exchanges of fermionic operators in $\hat a_{p_2}\hat a_{p_1}\hat{\bar\psi}\hat\psi\hat{\bar\psi}\hat\psi\hat a^\dagger_{p_A}\hat a^\dagger_{p_B}$.
+>
+> **Difficulty** (a) 2. Submitted solution: (a) as above, $t$ with $+$ and $u$ with $-$; (b)–(d) left blank (dropped by Larsen). The vault integrates (a) as a second route of Theorem [[§C6d.5 Second Order#^thm-c6d-5-3|§C6d.5.3]] The Relative Sign from Fermi Statistics.
+
+### PS9.5 Detailed balance
+
+For $a + b \to a' + b'$ and the reverse, with time-reversal invariant interactions, show that the unpolarized centre-of-mass cross sections satisfy $\frac{d\sigma/d\Omega'(ab \to a'b')}{d\sigma/d\Omega(a'b' \to ab)} = \frac{\mathbf k'^2(2s_{a'} + 1)(2s_{b'} + 1)}{\mathbf k^2(2s_a + 1)(2s_b + 1)}$.
+
+^ps9-5
+
+- [ ] Q1 **[def]** Define the unpolarized cross section. How does the count change for a massless particle?
+- [ ] Q2 **[why]** Why does antilinearity turn $(-i)^n$ into $(+i)^n$, and why does $t \to -t$ turn $T$ into $\bar T$?
+- [ ] Q3 Prove $\langle Ui|\hat S|Uf\rangle = \langle f|\hat S|i\rangle$.
+- [ ] Q4 **[why]** Why is the rotation by $\pi$ about $\hat{\mathbf n}$ needed, and why quantize the spins along $\hat{\mathbf n}$?
+- [ ] Q5 Show $2E_a2E_b|\mathbf v_a - \mathbf v_b| = 4|\mathbf k|E_{\rm cm}$ for unequal masses.
+- [ ] Q6 **[why]** Why are the spin sums of the two directions equal?
+
+> [!tip]- Hints: definitions, results, route, your solution
+> **Topic and definitions.** T11 (with T-reversal, C9).
+> - Unpolarized cross section Definition [[§C6b.3 The Cross Section#^def-c6b-3-5|§C6b.3.5]] Unpolarized Cross Section; spin sums are traces Theorem [[§C6b.3 The Cross Section#^thm-c6b-3-10|§C6b.3.10]] Spin Sums Are Traces: Independent of the Spin Basis; anti-time ordering Definition [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^def-c2b-6-2|§C2b.6.2]] Anti-Time-Ordered Product; $U(\mathcal T)$ Definition [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^def-c9-9-2|§C9.9.2]] Time Reversal on the Oscillators, Theorem [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-2|§C9.9.2]] Time Reversal Is Antiunitary
+>
+> **Key results.** [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance|§C9.13]] Time Reversal of the S-Matrix and Detailed Balance (this problem): Lemma [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^lem-c9-13-1|§C9.13.1]] The Adjoint of a Time-Ordered Product of Hermitian Operators Is Anti-Time-Ordered, Theorem [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-2|§C9.13.2]] Time Reversal Takes the S-Matrix to Its Adjoint, Theorem [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-3|§C9.13.3]] Reciprocity, Theorem [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-4|§C9.13.4]] Rotations Leave the S-Matrix Invariant; the Rotation by π about the Normal, Theorem [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-5|§C9.13.5]] In the Centre-of-Mass Frame, Time Reversal Flips Only the Spins, Theorem [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-6|§C9.13.6]] Detailed Balance; flux factor ★ Theorem [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|§C6b.4.3]] The Centre-of-Mass Flux Factor via λ.
+>
+> **Strategy (K13).** Fixed-spin cross sections in the CM frame; $U\hat SU^{-1} = \hat S^\dagger$ from the Dyson series; reciprocity; rotation by $\pi$ about the normal; relabel $m \to -m$ in the spin sums.
+>
+> **Difficulty 3.** Submitted solution: all steps as listed. The vault integrates it as [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance|§C9.13]] Time Reversal of the S-Matrix and Detailed Balance with Definition [[§C6b.3 The Cross Section#^def-c6b-3-5|§C6b.3.5]] Unpolarized Cross Section and Theorem [[§C6b.3 The Cross Section#^thm-c6b-3-10|§C6b.3.10]] Spin Sums Are Traces: Independent of the Spin Basis.
+
 ## Technique codes
 The moves named in the hints; where each is used, with the boxes: [[PHY 513 Midterm Review#Techniques: the moves of 513|Midterm Review: Techniques]].
 - **K1** invariants in a convenient frame

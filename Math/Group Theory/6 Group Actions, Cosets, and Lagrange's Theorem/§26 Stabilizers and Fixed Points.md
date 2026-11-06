@@ -41,7 +41,7 @@ tags: [group-theory, math493]
 ^def-26-2
 
 > [!remark]- Connections
-> - Fixed points enter [[§30 Orbit–Stabilizer#^thm-30-6|Burnside's Lemma]].
+> - Fixed points enter [[§30 Orbit–Stabilizer#^thm-30-7|Burnside's Lemma]].
 
 > [!theorem] Proposition §26.1: The Stabilizer Is a Subgroup
 > For every $x \in X$, $\operatorname{Stab}(x)$ is a subgroup of $G$. (The worksheet says “of $X$”; this is a typo — the stabilizer is a set of group elements.)

@@ -30738,6 +30738,284 @@ d(\exp)_0(A) = \frac{d}{dt}\Big|_{t=0} \exp(tA) = \frac{d}{dt}\Big|_{t=0} \varph
 
 ``If you take 635 next semester \ldots\ you will hear the word exponential map again, but that will be for any manifold that has a Riemannian structure.'' There, a tangent vector is the initial data of a geodesic, which one follows to time $1$. ``To exponentiate geometrically means that you have to have a way of launching a curve given a tangent vector \ldots\ Here we do it by taking these one-parameter groups; in geometry, you look at geodesics.'' Next topic: Lie derivatives.
 
+% ============================================================================
+% SECTION: LIE DERIVATIVES (Lecture 27, Fri Nov 6)
+% ============================================================================
+\section{Lie Derivatives}\label{sec:lie-derivative}
+
+\roadmark{Stage: dynamics}{Differentiating along a flow: on functions the Lie derivative is the field itself, on vector fields it is the bracket; commuting fields are those invariant under each other's flows.}
+
+\textit{Lecture 27. ``After today, we only have four weeks of classes plus one day,'' the last day being review for the final; reading is assigned so that differential forms start on Monday, ``that final chapter, long chapter.'' Today: Lie derivatives, ``a very general concept, and we're going to use it later more than today.''}
+
+\emph{Motivation.} Go back to the definition of $\partial/\partial x^1$ on functions $f : \mathbb{R}^m \to \mathbb{R}$ (``this is a local definition, so it could be just defined on an open set''). If $p = (a^1, \ldots, a^m)$,
+\[
+\frac{\partial f}{\partial x^1}(p) = \lim_{t \to 0} \frac{1}{t}\Big( f(a^1 + t, a^2, \ldots, a^m) - f(a^1, \ldots, a^m) \Big) ,
+\]
+``and I use the letter $t$ on purpose.'' \emph{Observation:} the integral curve of $\mathbf{X} = \partial/\partial x^1$ starting at $p$ is $\varphi_t(a) = (a^1 + t, a^2, \ldots, a^m)$, exactly what sits inside the first $f$. So, with the pullback $(\varphi_t^*f)(p) = f(\varphi_t(p))$ (Definition~\ref{def:pullback-function}),
+\[
+\frac{\partial f}{\partial x^1}(p) = \lim_{t \to 0} \frac{1}{t}\Big( (\varphi_t^*f)(p) - f(p) \Big) ,
+\]
+``and the reason is that now the right-hand side makes sense on manifolds.''
+
+\begin{defbox}[Lie Derivative of a Function]\deflabel{def:lie-derivative-function}
+Let $\mathbf{X} \in \mathfrak{X}(M)$, with flow $\varphi$, and $p \in M$. For $f \in C^\infty(M)$, the \textbf{Lie derivative} of $f$ with respect to $\mathbf{X}$ at $p$ is
+\[
+(\mathcal{L}_{\mathbf{X}} f)(p) = \lim_{t \to 0} \frac{1}{t}\Big( (\varphi_t^*f)(p) - f(p) \Big) .
+\]
+\leeref{Ch.~9, \emph{Lie Derivatives}}
+\end{defbox}
+
+``$\mathcal{L}$ is for Lie, not my friend B.'' The field goes down in the subscript, and what is being differentiated in front. Only small $t$ are needed, and $\varphi_t(p)$ is defined for $|t|$ small (Lemma~\ref{lem:flow-box}), so no completeness is required.
+
+\begin{propbox}[On Functions $\mathcal{L}_{\mathbf{X}}$ Is $\mathbf{X}$]\thmlabel{prop:lie-derivative-function}
+For $\mathbf{X} \in \mathfrak{X}(M)$ and $f \in C^\infty(M)$, $\mathcal{L}_{\mathbf{X}} f = \mathbf{X}f$. So $\mathcal{L}_{\mathbf{X}}$, as an operator on $C^\infty(M)$, is $\mathbf{X}$ itself.
+\leeref{Ch.~9, \emph{Lie Derivatives}}
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~27.)} The limit is the derivative at $t = 0$ of the real function $t \mapsto f(\varphi_t(p))$:
+\[
+(\mathcal{L}_{\mathbf{X}} f)(p) = \frac{d}{dt}\Big|_{t=0} f\big(\varphi_t(p)\big) = (\mathbf{X}f)(p),
+\]
+because $t \mapsto \varphi_t(p)$ is an integral curve of $\mathbf{X}$ starting at $p$, so its velocity at $0$, which acts on $f$ by this derivative (Definition~\ref{def:velocity-at-t}), is $\mathbf{X}_p$.
+\end{proof}
+
+``We didn't get anything new. We just get old $\mathbf{X}$. But you see, something actually did happen'': the dynamical point of view, the flow, is connected ``in a kind of a simple way'' with the operator point of view.
+
+\emph{The key idea} of $\mathcal{L}_{\mathbf{X}}$ is to replace $f$ by a tensor (``we haven't defined what tensors are''): anything that can be pulled back can go in there. The examples of interest in this course are differential forms, which pull back naturally (for one-forms, Definition~\ref{def:pullback-one-form}), and vector fields. ``Fields cannot, in general, be pulled back. But for a single time, $d\varphi_t$ is invertible, and we can use the inverse to push forward the field.''
+
+\emph{Where $\varphi_t$ is defined.} ``What if $\mathbf{X}$ is incomplete?'' By the existence of flow boxes (Lemma~\ref{lem:flow-box}), every $p$ has a neighbourhood $U$ and $\varepsilon > 0$ such that $\varphi_t$ is defined on $U$ for $|t| < \varepsilon$, ``so we can flow out all of $U$ into $M$. It may move out of itself, but it will be sent somewhere,'' and $\varphi_{-t} : \varphi_t(U) \to U$ brings it back, by the group law (Proposition~\ref{prop:group-law}). \textit{(Filled in.)} $\varphi_{-t}$ is defined and smooth on an open set containing $\varphi_t(U)$, namely $\{ q : (-t, q) \in \mathcal{D} \}$, which is open because $\mathcal{D}$ is (Theorem~\ref{thm:maximal-flow}(2)). ``You have to have $\varphi_t$ defined on an open set to take its differential as a map, not just a trajectory.''
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[thick, orange!85!black] (0,0) ellipse (1.2 and 0.85); \node[orange!85!black, font=\scriptsize] at (-0.2,-1.1) {$U$};
+\draw[thick, blue!70!black] (1.5,0.25) ellipse (1.25 and 0.75); \node[blue!70!black, font=\scriptsize, anchor=west] at (2.8,0.35) {$\varphi_t(U)$};
+\fill (-0.5,0.1) circle (1.3pt) node[left, font=\scriptsize] {$p$};
+\foreach \y in {-0.25,0.0,0.25,0.5} { \draw[->, gray!70] (-0.1,\y) -- (1.0,\y+0.1); }
+\draw[->, thick] (0.4,-0.65) to[bend right=20] node[below, font=\scriptsize] {$\varphi_t$} (1.9,-0.45);
+\draw[->, thick] (1.9,1.05) to[bend right=20] node[above, font=\scriptsize] {$\varphi_{-t}$} (0.3,0.95);
+\end{tikzpicture}
+\end{center}
+
+\begin{defbox}[Lie Derivative of a Vector Field]\deflabel{def:lie-derivative-field}
+Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, let $\varphi$ be the flow of $\mathbf{X}$, and $p \in M$. The \textbf{Lie derivative} of $\mathbf{Y}$ with respect to $\mathbf{X}$ at $p$ is
+\[
+(\mathcal{L}_{\mathbf{X}}\mathbf{Y})_p = \lim_{t \to 0} \frac{1}{t}\Big( d(\varphi_{-t})_{\varphi_t(p)}\big(\mathbf{Y}_{\varphi_t(p)}\big) - \mathbf{Y}_p \Big) \in T_pM .
+\]
+\leeref{Ch.~9, \emph{Lie Derivatives}}
+\end{defbox}
+
+``Conceptually, they play different roles \ldots\ I'm differentiating $\mathbf{Y}$ with respect to $\mathbf{X}$.'' The cartoon: along the integral curve $t \mapsto \varphi_t(p)$ take the value of $\mathbf{Y}$ at $\varphi_t(p)$, and use the flow to carry it back to $T_pM$. ``It's not just a trajectory; it's a flow,'' because we differentiate the map $\varphi_{-t}$ near $\varphi_t(p)$, which takes $\varphi_t(p)$ back to $p$ by the group law, so $d(\varphi_{-t})_{\varphi_t(p)} : T_{\varphi_t(p)}M \to T_pM$.
+
+\begin{center}
+\begin{tikzpicture}[scale=1.15]
+\draw[gray!45] plot[smooth] coordinates {(-2.400,-0.872) (-2.287,-0.831) (-2.174,-0.791) (-2.062,-0.750) (-1.949,-0.710) (-1.836,-0.669) (-1.723,-0.629) (-1.610,-0.590) (-1.497,-0.550) (-1.385,-0.512) (-1.272,-0.473) (-1.159,-0.436) (-1.046,-0.399) (-0.933,-0.363) (-0.821,-0.328) (-0.708,-0.294) (-0.595,-0.261) (-0.482,-0.229) (-0.369,-0.198) (-0.256,-0.169) (-0.144,-0.140) (-0.031,-0.113) (0.082,-0.088) (0.195,-0.064) (0.308,-0.041) (0.421,-0.020) (0.533,-0.001) (0.646,0.017) (0.759,0.033) (0.872,0.048) (0.985,0.061) (1.097,0.072) (1.210,0.081) (1.323,0.088) (1.436,0.094) (1.549,0.098) (1.662,0.100) (1.774,0.100) (1.887,0.098) (2.000,0.095)};
+\draw[gray!45] plot[smooth] coordinates {(-2.400,0.328) (-2.287,0.369) (-2.174,0.409) (-2.062,0.450) (-1.949,0.490) (-1.836,0.531) (-1.723,0.571) (-1.610,0.610) (-1.497,0.650) (-1.385,0.688) (-1.272,0.727) (-1.159,0.764) (-1.046,0.801) (-0.933,0.837) (-0.821,0.872) (-0.708,0.906) (-0.595,0.939) (-0.482,0.971) (-0.369,1.002) (-0.256,1.031) (-0.144,1.060) (-0.031,1.087) (0.082,1.112) (0.195,1.136) (0.308,1.159) (0.421,1.180) (0.533,1.199) (0.646,1.217) (0.759,1.233) (0.872,1.248) (0.985,1.261) (1.097,1.272) (1.210,1.281) (1.323,1.288) (1.436,1.294) (1.549,1.298) (1.662,1.300) (1.774,1.300) (1.887,1.298) (2.000,1.295)};
+\draw[thick, red!70!black, ->] plot[smooth] coordinates {(-2.400,-0.272) (-2.310,-0.240) (-2.220,-0.207) (-2.131,-0.175) (-2.041,-0.143) (-1.951,-0.111) (-1.861,-0.078) (-1.771,-0.046) (-1.682,-0.015) (-1.592,0.017) (-1.502,0.048) (-1.412,0.079) (-1.322,0.109) (-1.233,0.140) (-1.143,0.169) (-1.053,0.199) (-0.963,0.227) (-0.873,0.255) (-0.784,0.283) (-0.694,0.310) (-0.604,0.336) (-0.514,0.362) (-0.424,0.387) (-0.335,0.411) (-0.245,0.434) (-0.155,0.457) (-0.065,0.478) (0.024,0.499) (0.114,0.519) (0.204,0.538) (0.294,0.556) (0.384,0.573) (0.473,0.589) (0.563,0.604) (0.653,0.618) (0.743,0.631) (0.833,0.643) (0.922,0.654) (1.012,0.663) (1.102,0.672) (1.192,0.679) (1.282,0.686) (1.371,0.691) (1.461,0.695) (1.551,0.698) (1.641,0.699) (1.731,0.700) (1.820,0.699) (1.910,0.698) (2.000,0.695)};
+\node[red!70!black, font=\scriptsize, anchor=west] at (2.00,0.54) {$t \mapsto \varphi_t(p)$};
+\fill (-1.600,0.014) circle (1.4pt) node[below, font=\scriptsize] {$p$};
+\fill (1.000,0.662) circle (1.4pt) node[below right, font=\scriptsize] {$\varphi_t(p)$};
+\draw[->, thick, orange!85!black] (-1.600,0.014) -- ++(0.95,0.45) node[below right, font=\scriptsize] {$\mathbf{Y}_p \in T_pM$};
+\draw[->, thick, orange!85!black] (1.000,0.662) -- ++(0.15,1.05) node[right, font=\scriptsize, align=center] {$\mathbf{Y}_{\varphi_t(p)} \in T_{\varphi_t(p)}M$};
+\draw[->, thick, blue!70!black] (-1.600,0.014) -- ++(-0.15,1.05) node[above left, font=\scriptsize] {$V_t$};
+\draw[->, blue!70!black, dashed] (1.050,1.662) to[bend right=35] node[above=2pt, font=\scriptsize, fill=white, inner sep=1pt] {$d(\varphi_{-t})_{\varphi_t(p)}$} (-1.700,1.114);
+\node[font=\scriptsize, blue!70!black, anchor=north, align=center] at (0.2,-1.1) {$V_t = d(\varphi_{-t})_{\varphi_t(p)}\big(\mathbf{Y}_{\varphi_t(p)}\big) \in T_pM$; \quad $(\mathcal{L}_{\mathbf{X}}\mathbf{Y})_p = \lim_{t \to 0} \frac{1}{t}\big(V_t - \mathbf{Y}_p\big)$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Figure after the board.)} ``Psychologically, it's very simple. You just take the value of $\mathbf{Y}$ along the trajectory, and you use the flow to pull it back.''
+
+\emph{Observation.} The limit is the limit of a curve of vectors
+\[
+V_t = d(\varphi_{-t})_{\varphi_t(p)}\big(\mathbf{Y}_{\varphi_t(p)}\big) \in T_pM
+\]
+in the fixed vector space $T_pM$, so it is taken in any linear coordinates on $T_pM$: $(\mathcal{L}_{\mathbf{X}}\mathbf{Y})_p = \dot V_0$. Letting $p$ vary, this defines $\mathcal{L}_{\mathbf{X}}\mathbf{Y}$, a vector field on $M$. For forms ``it's a lot easier because forms pull back naturally \ldots\ vector fields don't have a very natural covariance, so we have to do this sort of complicated construction of the vector $V_t$.''
+
+A student asked how we know the limit exists, as we do for derivatives of smooth functions. ``We have to prove it, but we're not going to, because it takes a little bit.''
+
+\begin{lembox}[The Lie Derivative Exists and Is Smooth]\thmlabel{lem:lie-derivative-smooth}
+For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, the limit in Definition~\ref{def:lie-derivative-field} exists at every $p \in M$, and $\mathcal{L}_{\mathbf{X}}\mathbf{Y}$ is a smooth vector field.
+\leeref{Lemma 9.36}
+\end{lembox}
+
+\begin{proof}[Proof (to be filled)]
+``No proof for now.''
+\end{proof}
+
+``It's a generalization of the notion of derivative of functions to tensors, for this type of tensor.''
+
+\begin{exbox}[The Lie Derivative along $\partial/\partial x^1$]\exlabel{ex:lie-derivative-d1}
+On $\mathbb{R}^m$ let $\mathbf{X} = \partial/\partial x^1$ and $\mathbf{Y} = \sum_i g^i\, \partial/\partial x^i$. The flow is translation in the first variable,
+\[
+\varphi_t(x^1, \ldots, x^m) = (x^1 + t, x^2, \ldots, x^m), \qquad \text{i.e. } \varphi_t(x) = x + te_1, \quad e_1 = (1, 0, \ldots, 0) .
+\]
+Its differential is the identity everywhere, in the coordinate bases: $d(\varphi_{-t})_{x}(\partial/\partial x^i|_x) = \partial/\partial x^i|_{x - te_1}$. So
+\[
+(\mathcal{L}_{\partial/\partial x^1}\mathbf{Y})_p = \lim_{t \to 0} \frac{1}{t}\big( \mathbf{Y}_{p + te_1} - \mathbf{Y}_p \big) = \lim_{t \to 0} \frac{1}{t} \sum_{i=1}^m \big( g^i(p + te_1) - g^i(p) \big) \frac{\partial}{\partial x^i}\Big|_p = \sum_{i=1}^m \frac{\partial g^i}{\partial x^1}(p)\, \frac{\partial}{\partial x^i}\Big|_p .
+\]
+\end{exbox}
+
+``I have to do it for arbitrary $x$, not just at a point, because I have to take the differential of the time-$t$ map. I cannot just look at one trajectory.'' ``You just differentiate componentwise in this particularly simple case,'' and it ``will play a role in a proof that is coming up.''
+
+``So now I have to let the cat out of the bag and show you that this guy is somebody that we already know.'' The proof uses a normal form for a vector field near a point where it is not zero, ``actually a beautiful theorem for vector fields,'' with ``a beautiful dynamical proof,'' postponed.
+
+\begin{lembox}[Canonical Form Near a Regular Point]\thmlabel{lem:straightening}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$ with $\mathbf{X}_p \neq 0$. There is a coordinate chart $(U, \varphi = (x^1, \ldots, x^m))$ with $p \in U$ such that
+\[
+\mathbf{X}|_U = \frac{\partial}{\partial x^1} .
+\]
+\leeref{Theorem 9.22}
+\end{lembox}
+
+\begin{proof}[Proof (to be filled)]
+Postponed in Lecture~27 (``let's set it aside because we're talking about these Lie derivatives'').
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[blue!70!black, ->] plot[smooth] coordinates {(-1.400,-1.239) (-1.310,-1.246) (-1.221,-1.246) (-1.131,-1.240) (-1.041,-1.226) (-0.952,-1.207) (-0.862,-1.180) (-0.772,-1.148) (-0.683,-1.110) (-0.593,-1.066) (-0.503,-1.017) (-0.414,-0.963) (-0.324,-0.904) (-0.234,-0.842) (-0.145,-0.776) (-0.055,-0.708) (0.034,-0.637) (0.124,-0.565) (0.214,-0.491) (0.303,-0.417) (0.393,-0.343) (0.483,-0.269) (0.572,-0.196) (0.662,-0.124) (0.752,-0.054) (0.841,0.014) (0.931,0.080) (1.021,0.143) (1.110,0.203) (1.200,0.261)};
+\draw[blue!70!black, ->] plot[smooth] coordinates {(-1.400,-0.789) (-1.310,-0.796) (-1.221,-0.796) (-1.131,-0.790) (-1.041,-0.776) (-0.952,-0.757) (-0.862,-0.730) (-0.772,-0.698) (-0.683,-0.660) (-0.593,-0.616) (-0.503,-0.567) (-0.414,-0.513) (-0.324,-0.454) (-0.234,-0.392) (-0.145,-0.326) (-0.055,-0.258) (0.034,-0.187) (0.124,-0.115) (0.214,-0.041) (0.303,0.033) (0.393,0.107) (0.483,0.181) (0.572,0.254) (0.662,0.326) (0.752,0.396) (0.841,0.464) (0.931,0.530) (1.021,0.593) (1.110,0.653) (1.200,0.711)};
+\draw[blue!70!black, ->] plot[smooth] coordinates {(-1.400,-0.339) (-1.310,-0.346) (-1.221,-0.346) (-1.131,-0.340) (-1.041,-0.326) (-0.952,-0.307) (-0.862,-0.280) (-0.772,-0.248) (-0.683,-0.210) (-0.593,-0.166) (-0.503,-0.117) (-0.414,-0.063) (-0.324,-0.004) (-0.234,0.058) (-0.145,0.124) (-0.055,0.192) (0.034,0.263) (0.124,0.335) (0.214,0.409) (0.303,0.483) (0.393,0.557) (0.483,0.631) (0.572,0.704) (0.662,0.776) (0.752,0.846) (0.841,0.914) (0.931,0.980) (1.021,1.043) (1.110,1.103) (1.200,1.161)};
+\draw[blue!70!black, ->] plot[smooth] coordinates {(-1.400,0.111) (-1.310,0.104) (-1.221,0.104) (-1.131,0.110) (-1.041,0.124) (-0.952,0.143) (-0.862,0.170) (-0.772,0.202) (-0.683,0.240) (-0.593,0.284) (-0.503,0.333) (-0.414,0.387) (-0.324,0.446) (-0.234,0.508) (-0.145,0.574) (-0.055,0.642) (0.034,0.713) (0.124,0.785) (0.214,0.859) (0.303,0.933) (0.393,1.007) (0.483,1.081) (0.572,1.154) (0.662,1.226) (0.752,1.296) (0.841,1.364) (0.931,1.430) (1.021,1.493) (1.110,1.553) (1.200,1.611)};
+\draw[blue!70!black, ->] plot[smooth] coordinates {(-1.400,0.561) (-1.310,0.554) (-1.221,0.554) (-1.131,0.560) (-1.041,0.574) (-0.952,0.593) (-0.862,0.620) (-0.772,0.652) (-0.683,0.690) (-0.593,0.734) (-0.503,0.783) (-0.414,0.837) (-0.324,0.896) (-0.234,0.958) (-0.145,1.024) (-0.055,1.092) (0.034,1.163) (0.124,1.235) (0.214,1.309) (0.303,1.383) (0.393,1.457) (0.483,1.531) (0.572,1.604) (0.662,1.676) (0.752,1.746) (0.841,1.814) (0.931,1.880) (1.021,1.943) (1.110,2.003) (1.200,2.061)};
+\fill (-0.1,0.33) circle (1.3pt) node[above, font=\scriptsize] {$p$};
+\node[font=\scriptsize] at (-1.6,1.45) {$\mathbf{X}$ near $p$, $\mathbf{X}_p \neq 0$};
+\draw[->, thick] (1.9,0.1) -- node[above, font=\scriptsize] {$\varphi = (x^1, \ldots, x^m)$} (3.9,0.1);
+\draw[blue!70!black, ->] (4.2,-0.9) -- (6.8,-0.9);
+\draw[blue!70!black, ->] (4.2,-0.45) -- (6.8,-0.45);
+\draw[blue!70!black, ->] (4.2,0.0) -- (6.8,0.0);
+\draw[blue!70!black, ->] (4.2,0.45) -- (6.8,0.45);
+\draw[blue!70!black, ->] (4.2,0.9) -- (6.8,0.9);
+\fill (5.5,0.0) circle (1.3pt) node[above, font=\scriptsize] {$\varphi(p)$};
+\node[font=\scriptsize] at (5.5,1.45) {$\mathbf{X}|_U = \partial/\partial x^1$};
+\end{tikzpicture}
+\end{center}
+
+``If you have a vector field that is not zero at some point, then it won't be zero in some neighbourhood, and in some suitable coordinates, it's just going to be $\partial_1$ \ldots\ constant on all of the open set.''
+
+\begin{thmbox}[The Lie Derivative Is the Bracket]\thmlabel{thm:lie-derivative-bracket}
+For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$,
+\[
+\mathcal{L}_{\mathbf{X}}\mathbf{Y} = [\mathbf{X}, \mathbf{Y}] .
+\]
+\leeref{Theorem 9.38}
+\end{thmbox}
+
+``We just spent half an hour to recover the commutator. But it's not at all wasted time, because we got to the commutator by doing something entirely different, and it's going to have consequences, dynamical consequences.''
+
+\begin{proof}
+\textit{(Lecture~27, modulo Lemmas~\ref{lem:lie-derivative-smooth} and~\ref{lem:straightening}. The locality in Case~2 and the continuity argument in Case~3 are filled in.)} Take $p \in M$.
+
+\emph{Case 1: $\mathbf{X}$ is zero in a neighbourhood $W$ of $p$.} Then $\varphi_t(q) = q$ for all $q \in W$, since the constant curve is an integral curve there: ``nobody goes anywhere because there is no velocity.'' So $\varphi_{-t}$ is the identity on the open set $W$, $d(\varphi_{-t})_p = \mathrm{id}$, $V_t = \mathbf{Y}_p$, and $(\mathcal{L}_{\mathbf{X}}\mathbf{Y})_p = 0 \in T_pM$. Also $[\mathbf{X}, \mathbf{Y}]_p f = \mathbf{X}_p(\mathbf{Y}f) - \mathbf{Y}_p(\mathbf{X}f) = 0$, as $\mathbf{X}_p = 0$ and $\mathbf{X}f$ vanishes on $W$, so its germ at $p$ is $0$.
+
+\emph{Case 2: $\mathbf{X}_p \neq 0$.} Take the chart $(U, x^1, \ldots, x^m)$ of Lemma~\ref{lem:straightening}, with $\mathbf{X}|_U = \partial/\partial x^1$, and write $\mathbf{Y} = \sum_i g^i\, \partial/\partial x^i$ on $U$. \textit{(Filled in.)} The Lie derivative at $p$ only involves $\varphi_t$ near $p$ and $\varphi_{-t}$ near $\varphi_t(p)$, for small $t$. Choose a neighbourhood $U' \subseteq U$ of $p$ and $\varepsilon > 0$ with $\varphi_t(U') \subseteq U$ for $|t| < \varepsilon$. For $q \in U'$, the curve $t \mapsto \varphi_t(q)$, $|t| < \varepsilon$, is an integral curve of $\partial/\partial x^1$ inside $U$, so in coordinates it is $x(q) + te_1$ (Lemma~\ref{lem:integral-curves-diffeo} and uniqueness). So in the chart the flow is the translation of Example~\ref{ex:lie-derivative-d1}, and the problem ``reduces to the Euclidean'' one:
+\[
+\mathcal{L}_{\partial/\partial x^1}\mathbf{Y} = \sum_i \frac{\partial g^i}{\partial x^1}\, \frac{\partial}{\partial x^i} \qquad \text{at } p ,
+\]
+the left-hand side of the identity. The right-hand side, by Proposition~\ref{prop:bracket-coords}:
+\[
+\Big[ \frac{\partial}{\partial x^1}, \sum_i g^i \frac{\partial}{\partial x^i} \Big] = \sum_i \frac{\partial g^i}{\partial x^1}\, \frac{\partial}{\partial x^i} ,
+\]
+since ``the other term gives you nothing, because this has constant coefficients.'' They agree.
+
+\emph{Case 3: $\mathbf{X}_p = 0$, but $\mathbf{X}$ is not zero on any neighbourhood of $p$.} ``These are not the complementary cases. There's an in-between case, which is when $p$ is on the boundary of the support,'' and it ``will follow by continuity,'' given that the Lie derivative is smooth. \textit{(Filled in.)} Every neighbourhood of $p$ contains points $q$ with $\mathbf{X}_q \neq 0$, so $p$ is a limit of such points. At those points the two sides agree by Case~2, and both $\mathcal{L}_{\mathbf{X}}\mathbf{Y}$ (Lemma~\ref{lem:lie-derivative-smooth}) and $[\mathbf{X}, \mathbf{Y}]$ (Lemma~\ref{lem:bracket-field}) are continuous. In a chart around $p$ their components are continuous functions agreeing at the points $q$, hence at $p$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[scale=1.25, >=stealth]
+\draw[->, gray] (-0.4,0) -- (3.4,0) node[right, font=\scriptsize] {$x$}; \draw[->, gray] (0,-1.3) -- (0,2.0) node[above, font=\scriptsize] {$y$};
+\draw[gray!60, dashed] (0,0) circle (1.6);
+\draw[->, red!70!black, thick] (1.6,0) arc (0:62:1.6); \node[red!70!black, font=\scriptsize] at (0.55,1.75) {$t \mapsto \varphi_t(p)$};
+\fill (1.441,0.696) circle (1.2pt); \draw[->, thick, blue!70!black] (1.441,0.696) -- ++(0.9,0) node[right, font=\scriptsize] {$\mathbf{Y}_{\varphi_{t_1}(p)}$};
+\fill (0.995,1.253) circle (1.2pt); \draw[->, thick, blue!70!black] (0.995,1.253) -- ++(0.9,0) node[right, font=\scriptsize] {$\mathbf{Y}_{\varphi_{t_2}(p)}$};
+\fill (1.6,0) circle (1.3pt) node[below left, font=\scriptsize] {$p$};
+\draw[->, thick, blue!70!black] (1.6,0) -- ++(0.9,0) node[right, font=\scriptsize] {$\mathbf{Y}_p$};
+\draw[->, orange!85!black, thick] (1.6,0) -- ++(0.810,-0.391);
+\draw[->, orange!85!black, thick] (1.6,0) -- ++(0.559,-0.705);
+\node[orange!85!black, font=\scriptsize, anchor=west] at (2.45,-0.65) {$V_{t_1}, V_{t_2}$};
+\draw[->, very thick, red!70!black] (1.6,0) -- ++(0,-0.9) node[below, font=\scriptsize] {$\mathcal{L}_{\mathbf{X}}\mathbf{Y} = -\partial/\partial y$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} A check of Theorem~\ref{thm:lie-derivative-bracket} on $\mathbb{R}^2$ with the rotation field $\mathbf{X} = -y\,\partial/\partial x + x\,\partial/\partial y$, whose flow $\varphi_t$ is rotation by the angle $t$ (Example~\ref{ex:rotation-flow}), and the constant field $\mathbf{Y} = \partial/\partial x$ (blue). Since $\varphi_{-t}$ is the linear rotation by $-t$, $d(\varphi_{-t})$ is that rotation too, so the value $\mathbf{Y}_{\varphi_t(p)} = (1, 0)$ carried back to $p$ is $V_t = (\cos t, -\sin t)$ (orange): the carried-back vectors turn clockwise. Their derivative at $t = 0$ is $(0, -1)$, so $\mathcal{L}_{\mathbf{X}}\mathbf{Y} = -\partial/\partial y$ (red). By Proposition~\ref{prop:bracket-coords}, $[\mathbf{X}, \mathbf{Y}] = \big(\mathbf{X}(1) - \mathbf{Y}(-y)\big)\partial/\partial x + \big(\mathbf{X}(0) - \mathbf{Y}(x)\big)\partial/\partial y = -\partial/\partial y$ as well. Here $\mathbf{X}_0 = 0$ while $\mathbf{X}$ vanishes on no neighbourhood of $0$: the origin is a point of Case~3 of the proof.
+%% <<< END ADDED
+
+\begin{corbox}[Properties of the Lie Derivative]\thmlabel{cor:lie-derivative-properties}
+For $\mathbf{X}, \mathbf{Y}, \mathbf{Z} \in \mathfrak{X}(M)$:
+\begin{enumerate}[nosep]
+\item $\mathcal{L}_{\mathbf{X}}\mathbf{Y} = -\mathcal{L}_{\mathbf{Y}}\mathbf{X}$;
+\item $\mathcal{L}_{\mathbf{X}}[\mathbf{Y}, \mathbf{Z}] = [\mathcal{L}_{\mathbf{X}}\mathbf{Y}, \mathbf{Z}] + [\mathbf{Y}, \mathcal{L}_{\mathbf{X}}\mathbf{Z}]$.
+\end{enumerate}
+\leeref{Corollary 9.39}
+\end{corbox}
+
+\begin{proof}[Proof (to be filled after the homework)]
+From Theorem~\ref{thm:lie-derivative-bracket}. For (2), the left-hand side is $[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]]$, and a student supplied the tool: the Jacobi identity (Corollary~\ref{cor:vf-lie-algebra}). ``There's a homework problem that I'm writing for the next homework \ldots\ that is essentially one of these entries.''
+\end{proof}
+
+\textbf{Transcription note (board 11/6 and Lecture 27).} On the board, the definition of $(\mathcal{L}_{\mathbf{X}} f)(p)$ repeats the left-hand side of the motivating formula, ``$\frac{\partial f}{\partial x^1}(p) = \lim_{t \to 0} \ldots$''; the definition is the limit, as above. The board's single definition box of commuting fields and invariance is split here into Definitions~\ref{def:commuting-fields} and~\ref{def:invariant-under-flow}. Uribe cited this as ``Corollary~3.9 \ldots\ it must be 9.3,'' with a question mark; it is Lee's Corollary~9.39 (Lee's list also has $\mathcal{L}_{[\mathbf{X}, \mathbf{Y}]} = \mathcal{L}_{\mathbf{X}}\mathcal{L}_{\mathbf{Y}} - \mathcal{L}_{\mathbf{Y}}\mathcal{L}_{\mathbf{X}}$ and a product rule).
+
+\emph{Commuting vector fields.} ``Why did we spend all this time? The main application of this, which is huge, is to the case when that is zero.''
+
+\begin{defbox}[Commuting Vector Fields]\deflabel{def:commuting-fields}
+Vector fields $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ \textbf{commute} if $[\mathbf{X}, \mathbf{Y}] = 0$.
+\leeref{Ch.~9, \emph{Commuting Vector Fields}}
+\end{defbox}
+
+\begin{defbox}[Invariance under a Flow]\deflabel{def:invariant-under-flow}
+Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, and let $\varphi$ be the flow of $\mathbf{X}$. Then $\mathbf{Y}$ is \textbf{invariant under the flow} $\varphi$ of $\mathbf{X}$ if for every $t$, $\mathbf{Y}$ is $\varphi_t$-related to itself (Definition~\ref{def:F-related}): $d(\varphi_t)_p(\mathbf{Y}_p) = \mathbf{Y}_{\varphi_t(p)}$ for all $(t, p)$ in the flow domain $\mathcal{D}$.
+\leeref{Ch.~9, \emph{Commuting Vector Fields}}
+\end{defbox}
+
+For incomplete $\mathbf{X}$ the condition is read where $\varphi_t$ is defined, on the open sets of the flow-box observation above: ``the observation takes care of the possibility to make all these definitions.'' Lemma~\ref{lem:flow-related-to-itself} says that a complete field is invariant under its own flow (Lee, Corollary~9.43, without completeness).
+
+\begin{thmbox}[Commuting Fields: Invariance and Commuting Flows]\thmlabel{thm:commuting-flows}
+Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, with flows $\varphi$ and $\psi$. The following are equivalent:
+\begin{enumerate}[nosep]
+\item $[\mathbf{X}, \mathbf{Y}] = 0$;
+\item $\mathbf{Y}$ is invariant under the flow of $\mathbf{X}$;
+\item the flows commute: $\varphi_s \circ \psi_t = \psi_t \circ \varphi_s$. Precisely: for all intervals $I, J \subseteq \mathbb{R}$ containing $0$ and every $p \in M$, if $\varphi_s \circ \psi_t(p)$ or $\psi_t \circ \varphi_s(p)$ exists for all $(s, t) \in I \times J$, then the other exists too, and they are equal.
+\end{enumerate}
+If $\mathbf{X}$ and $\mathbf{Y}$ are complete, (3) just says $\varphi_s \circ \psi_t = \psi_t \circ \varphi_s$ for all $s, t \in \mathbb{R}$.
+\leeref{Theorems 9.42 and 9.44}
+\end{thmbox}
+
+\begin{proof}[Proof (to be filled)]
+To be explained in Lecture~28. Uribe's indication for (1)$\Rightarrow$(2): $[\mathbf{X}, \mathbf{Y}] = 0$ means, by Theorem~\ref{thm:lie-derivative-bracket}, that the derivative at $t = 0$ of the curve $V_t$ of pulled-back values of $\mathbf{Y}$ is zero, at every point. ``By the group law, time zero is the same as any time,'' so the derivative vanishes for every $t$, which gives invariance under the flow; ``and then there's an extra argument'' for the flows.
+\end{proof}
+
+``It justifies the importance in my mind'' of $\mathcal{L}_{\mathbf{X}}\mathbf{Y} = [\mathbf{X}, \mathbf{Y}]$. (3) is ``a little bit delicate'' when the fields are incomplete: ``maybe in heaven every field will be complete. But here we have to deal with these obstacles.'' The next homework has a problem on why it is delicate.
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[scale=1.0, >=stealth]
+\begin{scope}
+\node[font=\small] at (1.0,2.75) {$\mathbf{X} = \partial_x$, \ $\mathbf{Y} = \partial_y$: \ $[\mathbf{X}, \mathbf{Y}] = 0$};
+\fill (0,0) circle (1.4pt) node[below left, font=\scriptsize] {$p$};
+\draw[->, thick, blue!70!black] (0,0) -- node[below, font=\scriptsize] {$\varphi_s$} (2,0);
+\draw[->, thick, blue!70!black] (2,0) -- node[right, font=\scriptsize] {$\psi_t$} (2,1.6);
+\draw[->, thick, red!70!black] (0,0) -- node[left, font=\scriptsize] {$\psi_t$} (0,1.6);
+\draw[->, thick, red!70!black] (0,1.6) -- node[above, font=\scriptsize] {$\varphi_s$} (2,1.6);
+\fill (2,1.6) circle (1.6pt);
+\node[font=\scriptsize, align=center] at (1.0,-0.75) {$\psi_t \circ \varphi_s(p) = \varphi_s \circ \psi_t(p)$};
+\end{scope}
+\begin{scope}[xshift=5.2cm]
+\node[font=\small] at (1.2,2.75) {$\mathbf{X} = \partial_x$, \ $\mathbf{Y} = x\,\partial_y$: \ $[\mathbf{X}, \mathbf{Y}] = \partial_y$};
+\draw[gray!60] (0,-0.3) -- (0,2.2); \node[gray, font=\scriptsize, anchor=north east] at (0,-0.1) {$x = 0$};
+\fill (0.5,0) circle (1.4pt) node[below left, font=\scriptsize] {$p$};
+\draw[->, thick, blue!70!black] (0.5,0) -- node[below, font=\scriptsize] {$\varphi_s$} (2.0,0);
+\draw[->, thick, blue!70!black] (2.0,0) -- node[pos=0.65, left, font=\scriptsize] {$\psi_t$} (2.0,2.0);
+\draw[->, thick, red!70!black] (0.5,0) -- node[left, font=\scriptsize] {$\psi_t$} (0.5,0.5);
+\draw[->, thick, red!70!black] (0.5,0.5) -- node[below, font=\scriptsize] {$\varphi_s$} (2.0,0.5);
+\fill[blue!70!black] (2.0,2.0) circle (1.6pt); \fill[red!70!black] (2.0,0.5) circle (1.6pt);
+\draw[<->, densely dotted] (2.35,0.5) -- node[right, font=\scriptsize] {$st$} (2.35,2.0);
+\node[font=\scriptsize, align=center] at (1.25,-0.75) {blue: $\psi_t \circ \varphi_s(p)$, \ red: $\varphi_s \circ \psi_t(p)$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Condition~(3) of Theorem~\ref{thm:commuting-flows} in two examples on $\mathbb{R}^2$, with $s = 1.5$, $t = 1$. Left: the flows of $\partial_x$ and $\partial_y$ are translations, and the two routes around the rectangle end at the same point. Right: $\mathbf{Y} = x\,\partial_y$ has the flow $\psi_t(x, y) = (x, y + tx)$, a shear, so it lifts a point by $t$ times its distance from the axis $x = 0$. Moving out first (blue) gives $\psi_t \circ \varphi_s(p) = (x + s, y + t(x + s))$, moving up first (red) gives $\varphi_s \circ \psi_t(p) = (x + s, y + tx)$: they differ by $st$ in the $y$-direction. By Proposition~\ref{prop:bracket-coords}, $[\partial_x, x\,\partial_y] = \partial_y \neq 0$, and the gap is exactly $st\,[\mathbf{X}, \mathbf{Y}]$ here.
+%% <<< END ADDED
+
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
 
@@ -30836,6 +31114,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:flows}\ Maximal integral curves and flows & Chapter 9, \emph{Flows} (Example 9.10, Theorem 9.12, with its proof; the group law (9.7)); Problem 9-1 \\
 \ref{sec:complete-fields}\ Complete vector fields & Chapter 9, \emph{Flows} (Proposition 9.6, Proposition 9.7, Theorem 9.12(c)); \emph{Complete Vector Fields} (Lemma 9.15, Theorem 9.16, Corollary 9.17, Theorem 9.18) \\
 \ref{sec:exponential}\ The exponential map & Chapter 20, \emph{One-Parameter Subgroups and the Exponential Map} (Theorem 20.1, Propositions 20.2, 20.5 and 20.8, Example 20.4); Problem 20-8 \\
+\ref{sec:lie-derivative}\ Lie derivatives & Chapter 9, \emph{Lie Derivatives} (Lemma 9.36, Theorem 9.38, Corollary 9.39); \emph{Canonical Form Near a Regular Point} (Theorem 9.22); \emph{Commuting Vector Fields} (Theorem 9.42, Corollary 9.43, Theorem 9.44) \\
 \bottomrule
 \end{longtable}
 
@@ -30920,11 +31199,11 @@ Proposition 5.35 & Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.37 & Def.~\ref{def:geometric-tangent}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.38 & Thm.~\ref{thm:tangent-kernel}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Thm.~\ref{thm:rvt-manifolds} \\
 Problem 5-6 & Def.~\ref{def:geo-tangent-bundle}, Prop.~\ref{prop:geo-tangent-bundle-submanifold}, Def.~\ref{def:unit-tangent-bundle}, Prop.~\ref{prop:unit-tangent-bundle} \\
-Proposition 6.1 & Lem.~\ref{lem:measure-zero-basic} \\
+Exercise 6.1 & Lem.~\ref{lem:measure-zero-basic} \\
 Lemma 6.2 & Lem.~\ref{lem:fubini-measure-zero} \\
 Proposition 6.5 & Lem.~\ref{lem:smooth-measure-zero} \\
 Lemma 6.6 & Def.~\ref{def:measure-zero-manifold}, Prop.~\ref{prop:measure-zero-every-chart} \\
-Lemma 6.7 & Prop.~\ref{prop:measure-zero-every-chart} \\
+Exercise 6.7 & Prop.~\ref{prop:measure-zero-every-chart} \\
 Theorem 6.10 & Lem.~\ref{lem:sard-reduction}, Lem.~\ref{lem:sard-flat-points}, Thm.~\ref{thm:sard} \\
 Corollary 6.11 & Cor.~\ref{cor:sard-low-dim} \\
 Lemma 6.13 & Lem.~\ref{lem:hyperplane-lines}, Lem.~\ref{lem:projection-injective}, Lem.~\ref{lem:projection-immersion-criterion}, Lem.~\ref{lem:projection-immersion} \\
@@ -30970,6 +31249,12 @@ Theorem 9.12 & Prop.~\ref{prop:global-uniqueness}, Thm.~\ref{thm:maximal-flow}, 
 Lemma 9.15 & Lem.~\ref{lem:uniform-time} \\
 Corollary 9.17 & Thm.~\ref{thm:compact-complete} \\
 Theorem 9.18 & Thm.~\ref{thm:left-invariant-complete} \\
+Theorem 9.22 & Lem.~\ref{lem:straightening} \\
+Lemma 9.36 & Lem.~\ref{lem:lie-derivative-smooth} \\
+Theorem 9.38 & Thm.~\ref{thm:lie-derivative-bracket} \\
+Corollary 9.39 & Cor.~\ref{cor:lie-derivative-properties} \\
+Theorem 9.42 & Thm.~\ref{thm:commuting-flows} \\
+Theorem 9.44 & Thm.~\ref{thm:commuting-flows} \\
 Problem 9-1 & Cor.~\ref{cor:returning-curve-periodic}, Prop.~\ref{prop:returning-maximal-periodic} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\

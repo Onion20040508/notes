@@ -5,7 +5,7 @@ chapter: 10
 section: 71
 tags: [differentiable-manifolds, math591]
 ---
-← [[§70 Complete Vector Fields]] · ↑ [[· 10 Integral Curves and Flows]]
+← [[§70 Complete Vector Fields]] · ↑ [[· 10 Integral Curves and Flows]] · [[§72 Lie Derivatives]] →
 
 *Stage: Lie groups — The integral curve of a left-invariant field through the identity is a one-parameter subgroup; following it to time $1$ defines $\exp : \mathfrak{g} \to G$, the matrix exponential for linear groups, smooth and a local diffeomorphism at $0$.*
 

@@ -691,7 +691,7 @@ Let $G$ be a finite group and $X$ a finite set on which $G$ acts. Show that $\fr
 > - Fixed points: [[§26 Stabilizers and Fixed Points#^def-26-2|Def §26.2]]; stabilizer [[§26 Stabilizers and Fixed Points#^def-26-1|Def §26.1]]
 > - Orbit: [[§27 Orbits#^def-27-1|Def §27.1]]; orbit space [[§27 Orbits#^def-27-2|Def §27.2]], [[§27 Orbits#^def-27-4|Def §27.4]]
 >
-> **Key results.** [[§30 Orbit–Stabilizer#^thm-30-6|Thm §30.6]] (this problem); orbit–stabilizer [[§30 Orbit–Stabilizer#^thm-30-3|Thm §30.3]]; orbits partition X [[§27 Orbits#^prop-27-1|Prop §27.1]]; [[§30 Orbit–Stabilizer#^ex-30-3|Ex §30.3]].
+> **Key results.** [[§30 Orbit–Stabilizer#^thm-30-7|Thm §30.7]] (this problem); orbit–stabilizer [[§30 Orbit–Stabilizer#^thm-30-3|Thm §30.3]]; orbits partition X [[§27 Orbits#^prop-27-1|Prop §27.1]]; [[§30 Orbit–Stabilizer#^ex-30-4|Ex §30.4]].
 >
 > **Strategy (G4).** Count $P = \{(x, g) : g \star x = x\}$ by $g$ and by $x$. Orbit–stabilizer turns $\sum_x |\operatorname{Stab}(x)|$ into $|G| \sum_x 1/|Gx|$, and each orbit contributes $1$.
 >

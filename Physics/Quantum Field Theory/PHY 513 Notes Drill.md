@@ -7310,7 +7310,7 @@ $S_F(x - y) = \langle0|T\{\hat\psi(x)\hat{\bar\psi}(y)\}|0\rangle = \int\frac{d^
 
 $\tilde S^\varepsilon_F \to i(\slashed p + m)\mathcal P\frac{1}{p^2 - m^2} + \pi(\slashed p + m)\delta(p^2 - m^2)$ in $\mathcal S'$, and $\tilde S_F = \frac{i}{\slashed p - m + i\varepsilon}$ is a matrix inverse taken before the limit, see Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|§C5b.8.7]] The Dirac Propagator as a Distribution and Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-8|§C5b.8.8]] The Matrix Form of the Propagator. *Source: PS §3.5, eqs. (3.120)–(3.121) · the user's notes Ch. 10*
 
-^nd-thm-c5b-8-5
+^nd-thm-c5b-8-8
 
 - [ ] Q1 **[state]** State the $\varepsilon \to 0^+$ limit and the matrix form.
 - [ ] Q2 Compute $(\slashed p - M)(\slashed p + M)$ for a complex number $M$ and invert $\slashed p - m + i\varepsilon$.

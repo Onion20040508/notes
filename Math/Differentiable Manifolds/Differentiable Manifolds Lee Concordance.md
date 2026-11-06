@@ -90,6 +90,8 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§68 Local Existence and Uniqueness\|§68]] Local existence and uniqueness | Chapter 9, *Integral Curves* (Example 9.1, Proposition 9.2); *Flows* (uniqueness, in the proof of Theorem 9.12); Appendix D (Theorem D.1); Problem 9-1 |
 | [[§69 Maximal Integral Curves and Flows\|§69]] Maximal integral curves and flows | Chapter 9, *Flows* (Example 9.10, Theorem 9.12, with its proof; the group law (9.7)); Problem 9-1 |
 | [[§70 Complete Vector Fields\|§70]] Complete vector fields | Chapter 9, *Flows* (Proposition 9.6, Proposition 9.7, Theorem 9.12(c)); *Complete Vector Fields* (Lemma 9.15, Theorem 9.16, Corollary 9.17, Theorem 9.18) |
+| [[§71 The Exponential Map\|§71]] The exponential map | Chapter 20, *One-Parameter Subgroups and the Exponential Map* (Theorem 20.1, Propositions 20.2, 20.5 and 20.8, Example 20.4); Problem 20-8 |
+| [[§72 Lie Derivatives\|§72]] Lie derivatives | Chapter 9, *Lie Derivatives* (Lemma 9.36, Theorem 9.38, Corollary 9.39); *Canonical Form Near a Regular Point* (Theorem 9.22); *Commuting Vector Fields* (Theorem 9.42, Corollary 9.43, Theorem 9.44) |
 
 ## A.4 Index from Lee to these notes
 
@@ -144,7 +146,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 3.13 | [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]], [[§30 The Differential in Coordinates#^cor-30-6\|Cor. §30.6]] |
 | Proposition 3.14 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6\|Thm. §31.6]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-7\|Cor. §31.7]], [[§36 Submersions#^ex-36-2\|Ex. §36.2]] |
 | Proposition 3.15 | [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|Thm. §29.6]] |
-| Proposition 3.18 | [[§51 The Tangent Bundle#^def-51-4\|Def. §51.4]], [[§51 The Tangent Bundle#^def-51-5\|Def. §51.5]], [[§51 The Tangent Bundle#^prop-51-3\|Prop. §51.3]], [[§51 The Tangent Bundle#^prop-51-2\|Prop. §51.2]], [[§51 The Tangent Bundle#^prop-51-5\|Prop. §51.5]] |
+| Proposition 3.18 | [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4\|Prop. §42.4]], [[§51 The Tangent Bundle#^def-51-4\|Def. §51.4]], [[§51 The Tangent Bundle#^def-51-5\|Def. §51.5]], [[§51 The Tangent Bundle#^prop-51-2\|Prop. §51.2]], [[§51 The Tangent Bundle#^prop-51-3\|Prop. §51.3]], [[§51 The Tangent Bundle#^prop-51-5\|Prop. §51.5]] |
 | Proposition 3.23 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4\|Thm. §31.4]] |
 | Proposition 3.24 | [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|Cor. §31.5]] |
 | Corollary 3.25 | [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3\|Thm. §22.3]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|Cor. §31.5]] |
@@ -166,24 +168,27 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 5.35 | [[§37 Regular Submanifolds#^prop-37-6\|Prop. §37.6]] |
 | Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]], [[§37 Regular Submanifolds#^prop-37-6\|Prop. §37.6]] |
 | Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|Thm. §38.2]] |
+| Problem 5-6 | [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-4\|Def. §42.4]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4\|Prop. §42.4]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-5\|Def. §42.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-5\|Prop. §42.5]] |
 | Exercise 6.1 | [[§62 Sets of Measure Zero#^lem-62-1\|Lem. §62.1]] |
 | Lemma 6.2 | [[§62 Sets of Measure Zero#^lem-62-5\|Lem. §62.5]] |
 | Proposition 6.5 | [[§62 Sets of Measure Zero#^lem-62-2\|Lem. §62.2]] |
 | Lemma 6.6 | [[§62 Sets of Measure Zero#^def-62-2\|Def. §62.2]], [[§62 Sets of Measure Zero#^prop-62-4\|Prop. §62.4]] |
 | Exercise 6.7 | [[§62 Sets of Measure Zero#^prop-62-4\|Prop. §62.4]] |
-| Theorem 6.10 | [[§63 Sard's Theorem#^thm-63-3\|Thm. §63.3]] |
+| Theorem 6.10 | [[§63 Sard's Theorem#^lem-63-1\|Lem. §63.1]], [[§63 Sard's Theorem#^lem-63-2\|Lem. §63.2]], [[§63 Sard's Theorem#^thm-63-3\|Thm. §63.3]] |
 | Corollary 6.11 | [[§63 Sard's Theorem#^cor-63-4\|Cor. §63.4]] |
-| Lemma 6.13 | [[§65 The Whitney Embedding Theorem#^lem-65-3\|Lem. §65.3]], [[§65 The Whitney Embedding Theorem#^lem-65-5\|Lem. §65.5]] |
+| Lemma 6.13 | [[§65 The Whitney Embedding Theorem#^lem-65-2\|Lem. §65.2]], [[§65 The Whitney Embedding Theorem#^lem-65-3\|Lem. §65.3]], [[§65 The Whitney Embedding Theorem#^lem-65-4\|Lem. §65.4]], [[§65 The Whitney Embedding Theorem#^lem-65-5\|Lem. §65.5]] |
 | Theorem 6.15 | [[§65 The Whitney Embedding Theorem#^lem-65-1\|Lem. §65.1]], [[§65 The Whitney Embedding Theorem#^thm-65-6\|Thm. §65.6]], [[§65 The Whitney Embedding Theorem#^prop-65-8\|Prop. §65.8]], [[§65 The Whitney Embedding Theorem#^thm-65-9\|Thm. §65.9]] |
-| Theorem 6.18 | [[§65 The Whitney Embedding Theorem#^thm-65-6\|Thm. §65.6]], [[§65 The Whitney Embedding Theorem#^thm-65-9\|Thm. §65.9]] |
+| Theorem 6.18 | [[§65 The Whitney Embedding Theorem#^thm-65-6\|Thm. §65.6]], [[§65 The Whitney Embedding Theorem#^thm-65-9\|Thm. §65.9]], [[§65 The Whitney Embedding Theorem#^prop-65-10\|Prop. §65.10]] |
 | Theorem 6.35 | [[§64 Parametric Transversality#^thm-64-1\|Thm. §64.1]], [[§64 Parametric Transversality#^cor-64-2\|Cor. §64.2]] |
-| Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]] |
+| Problem 6-2 | [[§65 The Whitney Embedding Theorem#^lem-65-4\|Lem. §65.4]], [[§65 The Whitney Embedding Theorem#^lem-65-5\|Lem. §65.5]], [[§65 The Whitney Embedding Theorem#^thm-65-6\|Thm. §65.6]] |
+| Theorem 6.30 | [[§26 Transversality#^thm-26-1\|Thm. §26.1]], [[§26 Transversality#^def-26-3\|Def. §26.3]], [[§26 Transversality#^prop-26-4\|Prop. §26.4]], [[§39 Transversality and Lagrange Multipliers#^thm-39-1\|Thm. §39.1]], [[§39 Transversality and Lagrange Multipliers#^cor-39-3\|Cor. §39.3]], [[§39 Transversality and Lagrange Multipliers#^thm-39-8\|Thm. §39.8]] |
 | Example 7.3 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4\|Prop. §11.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
 | Proposition 7.26 | [[§14 Homogeneous Spaces#^def-14-4\|Def. §14.4]] |
 | Example 7.27 | [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5\|Prop. §11.5]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1\|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2\|Cor. §23.2]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
 | Example 7.28 | [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
 | Example 7.29 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2\|Ex. §23.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5\|Cor. §23.5]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
 | Example 7.30 | [[§11 Topological Groups and Classical Matrix Groups#^def-11-9\|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10\|Def. §11.10]], [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6\|Thm. §12.6]], [[§25 The Geometric Tangent Space#^thm-25-5\|Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1\|Prop. §60.1]] |
+| Problem 7-2 | [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2\|Prop. §60.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-3\|Prop. §60.3]] |
 | Problem 7-4 | [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1\|Prop. §12.1]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-2\|Cor. §12.2]] |
 | Problem 7-22 | [[§47 The Unit Quaternions and SU(2)#^def-47-1\|Def. §47.1]] |
 | Proposition 8.1 | [[§56 Vector Fields#^prop-56-1\|Prop. §56.1]] |
@@ -210,21 +215,33 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 9.6 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]], [[§70 Complete Vector Fields#^prop-70-6\|Prop. §70.6]] |
 | Proposition 9.7 | [[§70 Complete Vector Fields#^thm-70-5\|Thm. §70.5]] |
 | Example 9.10 | [[§69 Maximal Integral Curves and Flows#^ex-69-1\|Ex. §69.1]] |
-| Theorem 9.12 | [[§68 Local Existence and Uniqueness#^prop-68-3\|Prop. §68.3]], [[§69 Maximal Integral Curves and Flows#^def-69-1\|Def. §69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1\|Prop. §69.1]], [[§69 Maximal Integral Curves and Flows#^thm-69-4\|Thm. §69.4]], [[§69 Maximal Integral Curves and Flows#^lem-69-3\|Lem. §69.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-5\|Prop. §69.5]], [[§70 Complete Vector Fields#^prop-70-3\|Prop. §70.3]] |
+| Theorem 9.12 | [[§68 Local Existence and Uniqueness#^prop-68-3\|Prop. §68.3]], [[§69 Maximal Integral Curves and Flows#^thm-69-4\|Thm. §69.4]], [[§69 Maximal Integral Curves and Flows#^def-69-1\|Def. §69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1\|Prop. §69.1]], [[§69 Maximal Integral Curves and Flows#^lem-69-3\|Lem. §69.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-5\|Prop. §69.5]], [[§70 Complete Vector Fields#^prop-70-3\|Prop. §70.3]] |
 | Lemma 9.15 | [[§70 Complete Vector Fields#^lem-70-1\|Lem. §70.1]] |
 | Corollary 9.17 | [[§70 Complete Vector Fields#^thm-70-2\|Thm. §70.2]] |
 | Theorem 9.18 | [[§70 Complete Vector Fields#^thm-70-7\|Thm. §70.7]] |
+| Theorem 9.22 | [[§72 Lie Derivatives#^lem-72-3\|Lem. §72.3]] |
+| Lemma 9.36 | [[§72 Lie Derivatives#^lem-72-2\|Lem. §72.2]] |
+| Theorem 9.38 | [[§72 Lie Derivatives#^thm-72-4\|Thm. §72.4]] |
+| Corollary 9.39 | [[§72 Lie Derivatives#^cor-72-5\|Cor. §72.5]] |
+| Theorem 9.42 | [[§72 Lie Derivatives#^thm-72-6\|Thm. §72.6]] |
+| Theorem 9.44 | [[§72 Lie Derivatives#^thm-72-6\|Thm. §72.6]] |
 | Problem 9-1 | [[§68 Local Existence and Uniqueness#^cor-68-4\|Cor. §68.4]], [[§69 Maximal Integral Curves and Flows#^prop-69-2\|Prop. §69.2]] |
 | Example 10.3 | [[§41 Examples of Fibrations#^ex-41-2\|Ex. §41.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
 | Proposition 11.8 | [[§21 Linear Algebra Toolkit#^prop-21-3\|Prop. §21.3]] |
-| Proposition 11.9 | [[§52 The Cotangent Bundle#^def-52-4\|Def. §52.4]], [[§52 The Cotangent Bundle#^def-52-5\|Def. §52.5]], [[§52 The Cotangent Bundle#^prop-52-2\|Prop. §52.2]], [[§52 The Cotangent Bundle#^prop-52-1\|Prop. §52.1]], [[§52 The Cotangent Bundle#^cor-52-3\|Cor. §52.3]] |
+| Proposition 11.9 | [[§52 The Cotangent Bundle#^def-52-4\|Def. §52.4]], [[§52 The Cotangent Bundle#^def-52-5\|Def. §52.5]], [[§52 The Cotangent Bundle#^prop-52-1\|Prop. §52.1]], [[§52 The Cotangent Bundle#^prop-52-2\|Prop. §52.2]], [[§52 The Cotangent Bundle#^cor-52-3\|Cor. §52.3]] |
 | Proposition 11.11 | [[§53 One-Forms#^prop-53-1\|Prop. §53.1]] |
 | Proposition 11.20 | [[§32 The Cotangent Space#^cor-32-3\|Cor. §32.3]] |
 | Proposition 11.25 | [[§34 The Cotangent Space from Germs#^prop-34-6\|Prop. §34.6]], [[§53 One-Forms#^cor-53-4\|Cor. §53.4]] |
 | Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4\|Def. §28.4]], [[§34 The Cotangent Space from Germs#^prop-34-1\|Prop. §34.1]], [[§34 The Cotangent Space from Germs#^prop-34-2\|Prop. §34.2]], [[§34 The Cotangent Space from Germs#^thm-34-4\|Thm. §34.4]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |
+| Theorem 20.1 | [[§71 The Exponential Map#^prop-71-1\|Prop. §71.1]] |
+| Proposition 20.2 | [[§71 The Exponential Map#^thm-71-4\|Thm. §71.4]] |
+| Example 20.4 | [[§71 The Exponential Map#^thm-71-4\|Thm. §71.4]] |
+| Proposition 20.5 | [[§71 The Exponential Map#^prop-71-2\|Prop. §71.2]] |
+| Proposition 20.8 | [[§71 The Exponential Map#^cor-71-3\|Cor. §71.3]], [[§71 The Exponential Map#^prop-71-5\|Prop. §71.5]] |
+| Problem 20-8 | [[§71 The Exponential Map#^rem-71-1\|Rem. Warning in §71]] |
 | Lemma 21.1 | [[§13 Group Actions and Orbit Spaces#^lem-13-2\|Lem. §13.2]], [[§13 Group Actions and Orbit Spaces#^lem-13-3\|Lem. §13.3]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1\|Prop. §15.1]] |
 | Example 21.3 | [[§13 Group Actions and Orbit Spaces#^ex-13-6\|Ex. §13.6]] |
 | Proposition 21.4 | [[§13 Group Actions and Orbit Spaces#^def-13-4\|Def. §13.4]], [[§13 Group Actions and Orbit Spaces#^cor-13-4\|Cor. §13.4]], [[§13 Group Actions and Orbit Spaces#^thm-13-5\|Thm. §13.5]] |

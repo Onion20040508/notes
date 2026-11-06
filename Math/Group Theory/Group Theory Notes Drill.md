@@ -2399,7 +2399,7 @@ $\operatorname{Fix}(g) = \{x \in X : g \star x = x\} \subseteq X$; $g \in \opera
 - [ ] Q5 **[why]** For a $p$-group acting on $X$, what is the congruence between $|X|$ and $|X^P|$ (the fixed points of all of $P$)?
 
 > [!tip]- Hints: where it lives, examples
-> - Burnside, Theorem [[§30 Orbit–Stabilizer#^thm-30-6|§30.6]]; Examples [[§30 Orbit–Stabilizer#^ex-30-3|§30.3]].
+> - Burnside, Theorem [[§30 Orbit–Stabilizer#^thm-30-7|§30.7]]; Examples [[§30 Orbit–Stabilizer#^ex-30-4|§30.4]].
 > - $p$-group fixed points: Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-1|§54.1]].
 
 #### Orbit · P1
@@ -2430,7 +2430,7 @@ The set of orbits, $G \backslash X$ for a left action and $X/G$ for a right acti
 
 > [!tip]- Hints: where it lives, examples
 > - $G/H$ and $H \backslash G$: Proposition [[§28 Left and Right Cosets#^prop-28-1|§28.1]].
-> - Burnside: Theorem [[§30 Orbit–Stabilizer#^thm-30-6|§30.6]]; partition: Proposition [[§27 Orbits#^prop-27-1|§27.1]].
+> - Burnside: Theorem [[§30 Orbit–Stabilizer#^thm-30-7|§30.7]]; partition: Proposition [[§27 Orbits#^prop-27-1|§27.1]].
 
 #### Transitive action · P1
 
@@ -3017,7 +3017,7 @@ Proposition [[§30 Orbit–Stabilizer#^prop-30-4|§30.4]] and Corollary [[§30 O
 
 #### Burnside's lemma · P5
 
-Theorem [[§30 Orbit–Stabilizer#^thm-30-6|§30.6]] → drilled as [[493 Problem Set 3#^hw-3-3|PS3.3]].
+Theorem [[§30 Orbit–Stabilizer#^thm-30-7|§30.7]] → drilled as [[493 Problem Set 3#^hw-3-3|PS3.3]].
 
 # T7. Conjugacy, the center, the class equation, p-groups
 

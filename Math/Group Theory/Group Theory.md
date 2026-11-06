@@ -112,7 +112,7 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Lagrange's Theorem]] (§29.2)
 - [[Groups of Prime Order Are Cyclic]] (§29.7)
 - [[Orbit–Stabilizer Theorem]] (§30.3)
-- [[Burnside's Lemma]] (§30.6)
+- [[Burnside's Lemma]] (§30.7)
 - [[Conjugacy Classes of Sₙ Are Cycle Types]] (§33.3)
 - [[Class Equation]] (§34.4)
 - [[p-Groups Have Nontrivial Center]] (§35.3)

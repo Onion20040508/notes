@@ -197,7 +197,7 @@ $S_3$ is the chapter's test case for cosets: its left and right cosets of $\lang
 
 ![[§30 Orbit–Stabilizer#^ex-30-2]]
 
-Burnside's lemma for $S_3$ on $\{1, 2, 3\}$ and on itself is in [[§30 Orbit–Stabilizer#^ex-30-3|Burnside's Lemma in Action]] (in the cube part).
+Burnside's lemma for $S_3$ on $\{1, 2, 3\}$ and on itself is in [[§30 Orbit–Stabilizer#^ex-30-4|Burnside's Lemma in Action]] (in the cube part).
 
 *$S_3$ elsewhere:* ← [[§23 S₃, Aₙ, Uₙ and GLₙ#The Symmetric Group S₃|Chapter 5]] · [[§36 S₃, S₄ and GLₙ#The Symmetric Group S₃|Chapter 7]] → · [[The symmetric group S₃|all appearances]]
 
@@ -242,7 +242,7 @@ Above in this section: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-1|
 
 The rotation group of the cube is the chapter's geometric example: one group of order $24$ acting on faces, edges, vertices, colours and body diagonals. Before the full treatment above, it appears as a group of permutations of the faces and in Burnside's count.
 
-![[§30 Orbit–Stabilizer#^ex-30-3]]
+![[§30 Orbit–Stabilizer#^ex-30-4]]
 
 Two rotations become permutations of the faces in [[§25 Actions#^ex-25-3|Seeing the Permutations]] (in the $S_3$ part). Above in this section: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-3|Rotational Symmetries of the Cube]], [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-4|The Cube Group Embeds in S₆]], [[§32 Linear Groups, the Cube, S₃ and A₄#^ex-32-1|A Non-Faithful Action: Colours]], [[§32 Linear Groups, the Cube, S₃ and A₄#^thm-32-5|The Rotation Group of the Cube Is S₄]].
 

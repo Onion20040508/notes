@@ -24,7 +24,7 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 - The map $gH \mapsto Hg$ is not well defined ([[§28 Left and Right Cosets#^ex-28-2|§28]])
 - The index $[A : A \cap H]$ need not divide $[S_3 : H]$ ([[§29 The Index and Lagrange's Theorem#^ex-29-2|§29]])
 - Cosets of the point stabilizer, read off from $\alpha(3)$ and $\alpha^{-1}(3)$ ([[§30 Orbit–Stabilizer#^ex-30-2|§30]])
-- Burnside's lemma: one orbit on $\{1, 2, 3\}$, three conjugacy classes ([[§30 Orbit–Stabilizer#^ex-30-3|§30]])
+- Burnside's lemma: one orbit on $\{1, 2, 3\}$, three conjugacy classes ([[§30 Orbit–Stabilizer#^ex-30-4|§30]])
 - Three conjugacy classes, of sizes $1, 3, 2$ ([[§33 Conjugacy Classes#^ex-33-2|§33]])
 - The class equation $6 = 1 + 3 + 2$ and the trivial center ([[§34 Conjugation as an Action and the Class Equation#^ex-34-1|§34]])
 - A group with exactly three conjugacy classes has order $3$ or $6$, and $S_3$ occurs ([[§34 Conjugation as an Action and the Class Equation#^cor-34-7|§34]])
@@ -102,7 +102,7 @@ Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmet
 ![[§30 Orbit–Stabilizer#^ex-30-2]]
 
 ## Burnside's lemma: one orbit on $\{1, 2, 3\}$, three conjugacy classes
-![[§30 Orbit–Stabilizer#^ex-30-3]]
+![[§30 Orbit–Stabilizer#^ex-30-4]]
 
 ## Three conjugacy classes, of sizes $1, 3, 2$
 ![[§33 Conjugacy Classes#^ex-33-2]]

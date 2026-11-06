@@ -17,7 +17,8 @@ tags: [group-theory, hub]
 - [[§30 Orbit–Stabilizer#^prop-30-2|Proposition §30.2: The Orbit Bijection]]
 
 ## Used in (Group Theory)
-- [[§30 Orbit–Stabilizer#^thm-30-6|Theorem §30.6: Burnside's Lemma]]
+- [[§30 Orbit–Stabilizer#^prop-30-6|Proposition §30.6: The Product Formula]]
+- [[§30 Orbit–Stabilizer#^thm-30-7|Theorem §30.7: Burnside's Lemma]]
 - [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-3|Proposition §32.3: Rotational Symmetries of the Cube]]
 - [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Corollary §34.2: Class Sizes Divide the Group Order]]
 - [[§54 p-Groups and Sylow Subgroups#^prop-54-1|Proposition §54.1: Fixed Points of a p-Group Action]]
