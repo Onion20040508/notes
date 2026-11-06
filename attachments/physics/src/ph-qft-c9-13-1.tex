@@ -1,0 +1,43 @@
+% ADDED figure (2026-11-06): §C9.13, detailed balance. The scattering plane (normal n out of the page): (a) a+b -> a'+b' with spins m along n; (b) the time-reversed process (all momenta and spin projections reversed, in and out exchanged); (c) after the rotation by pi about n the momenta are restored, the projections stay reversed. Copy in qft-C/tools/hw9/figs/.
+\tikzset{
+  pin/.style={-{Stealth[length=6pt]}, line width=1.0pt, figB},
+  pout/.style={-{Stealth[length=6pt]}, line width=1.0pt, figR, densely dashed},
+  lab/.style={font=\scriptsize, inner sep=1.5pt},
+  ttl/.style={font=\small, align=center},
+}
+\newcommand{\nhat}{\draw[line width=0.5pt] (0,0) circle (0.12); \fill (0,0) circle (0.035); \node[lab, below left] at (0,-0.05) {$\hat{\mathbf n}$};}
+\begin{tikzpicture}[font=\small]
+  % (a)
+  \begin{scope}
+    \draw[pin] (0,0)--(1.5,0) node[lab, right, align=left] {$a$: $\mathbf k$\\ $m_a$};
+    \draw[pin] (0,0)--(-1.5,0) node[lab, left, align=right] {$b$: $-\mathbf k$\\ $m_b$};
+    \draw[pout] (0,0)--(0.96,1.15) node[lab, above right, align=left] {$a'$: $\mathbf k'$, $m_{a'}$};
+    \draw[pout] (0,0)--(-0.96,-1.15) node[lab, below left, align=right] {$b'$: $-\mathbf k'$, $m_{b'}$};
+    \nhat
+    \node[ttl] at (0,-2.1) {(a) $a + b \to a' + b'$};
+  \end{scope}
+  % (b)
+  \begin{scope}[xshift=5.2cm]
+    \draw[pin] (0,0)--(-0.96,-1.15) node[lab, below left, align=right] {$a'$: $-\mathbf k'$, $-m_{a'}$};
+    \draw[pin] (0,0)--(0.96,1.15) node[lab, above right, align=left] {$b'$: $\mathbf k'$, $-m_{b'}$};
+    \draw[pout] (0,0)--(-1.5,0) node[lab, left, align=right] {$a$: $-\mathbf k$\\ $-m_a$};
+    \draw[pout] (0,0)--(1.5,0) node[lab, right, align=left] {$b$: $\mathbf k$\\ $-m_b$};
+    \nhat
+    \node[ttl] at (0,-2.1) {(b) $U(\mathcal T)$: $a' + b' \to a + b$,\\ momenta and projections reversed};
+  \end{scope}
+  % (c)
+  \begin{scope}[xshift=10.4cm]
+    \draw[pin] (0,0)--(0.96,1.15) node[lab, above right, align=left] {$a'$: $\mathbf k'$, $-m_{a'}$};
+    \draw[pin] (0,0)--(-0.96,-1.15) node[lab, below left, align=right] {$b'$: $-\mathbf k'$, $-m_{b'}$};
+    \draw[pout] (0,0)--(1.5,0) node[lab, right, align=left] {$a$: $\mathbf k$\\ $-m_a$};
+    \draw[pout] (0,0)--(-1.5,0) node[lab, left, align=right] {$b$: $-\mathbf k$\\ $-m_b$};
+    \nhat
+    \draw[->, line width=0.6pt, gray] (0.45,-0.35) arc (-40:200:0.55);
+    \node[lab, gray] at (0.85,-0.55) {$\pi$};
+    \node[ttl] at (0,-2.1) {(c) then $R = e^{-i\pi\hat{\mathbf n}\cdot\mathbf J}$:\\ momenta restored, $m \to -m$ kept};
+  \end{scope}
+  % legend
+  \draw[pin] (14.0,0.6)--(14.6,0.6); \node[lab, right] at (14.6,0.6) {incoming};
+  \draw[pout] (14.0,0.1)--(14.6,0.1); \node[lab, right] at (14.6,0.1) {outgoing};
+  \node[lab, right, align=left] at (13.9,-0.55) {spins quantized\\ along $\hat{\mathbf n}$};
+\end{tikzpicture}

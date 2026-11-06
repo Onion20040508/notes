@@ -356,7 +356,7 @@ Why the integral over $\mathbf b$ is the cross section, before the definition: w
 *Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-2|Def. §C6b.1.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]
 
 > [!caution] Caution: "Total probability" is an area
-> Slide 12 calls $\int\mathcal P(\mathbf b)\,d^2b$ the "total probability"; slide 13 starts the computation of the same expression under the name $d\sigma$. $\mathcal P(\mathbf b)$ is a probability, but its integral over the plane of impact parameters has the dimension of an area: it is the probability summed over impact parameters at unit density, the cross section, not a probability ([[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]]). The user's notes and PS (4.75) call it the cross section.
+> Slide 12 calls $\int\mathcal P(\mathbf b)\,d^2b$ the "total probability"; slide 13 starts the computation of the same expression under the name $d\sigma$. $\mathcal P(\mathbf b)$ is a probability, but its integral over the plane of impact parameters has the dimension of an area: it is the probability summed over impact parameters at unit density, the cross section, not a probability ([[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]]). The user's notes and PS (4.75) call it the cross section.
 >
 > *Source: PHY 513 Lecture 15, slides 12–13 (page images) · PS §4.5, p. 105, eq. (4.75)*
 

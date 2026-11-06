@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: Yu Zhao-Huan, 量子场论讲义, §6.5.2 "散射截面", pp. 242–246, eqs. (6.307)–(6.331), Fig. 6.4 (page images checked, PDF pp. 250–254) · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slide 8 ("Cross-section … is a universal event rate"), slides 16, 20, 24, and transcript · the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)"), §15.5, §15.6 (eq. (moller)), §15.10 (paragraph "Correspondence with Yu") · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 99–101, 106, eqs. (4.59)–(4.61), (4.79)–(4.80).*
 
-**What is prepared.** A beam of particles $B$, all with the same velocity, falls on a target of particles $A$ at rest ([[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]]). **What is measured.** The number $N$ of scattering events, with the final particles in a given range of momenta, during a time $t$. The cross section is that count with the beam and the target divided out ([[§C6b.3 The Cross Section#^def-c6b-3-2|Def. §C6b.3.2]]). Applied to one $A$ and one $B$ in the box of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]], it is the rate of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]] divided by the flux, and the last power of the box volume cancels ([[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]). The Møller velocity makes the result Lorentz invariant ([[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]]); for collinear beams it is the velocity difference $|\mathbf v_A - \mathbf v_B|$ ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]), and the differential cross section ([[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]) is the formula of the lecture. The section ends with that formula written once, every factor labelled by the box that produced it. Along the way the section collects what the cross section needs in every frame: the flux factor in invariant form ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]]), the phase space and its invariance ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-8|Theorem §C6b.3.8]]), the dimension of $d\sigma$ ([[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]]), and the centre-of-mass frame with the threshold of a process ([[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]]). Yu §6.5.2 is followed step by step; the course's own derivation of the same formula, with wave packets, comes after the decays, in [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]]–[[§C6b.9 Evaluating the Cross Section|§C6b.9]].
+**What is prepared.** A beam of particles $B$, all with the same velocity, falls on a target of particles $A$ at rest ([[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]]). **What is measured.** The number $N$ of scattering events, with the final particles in a given range of momenta, during a time $t$. The cross section is that count with the beam and the target divided out ([[§C6b.3 The Cross Section#^def-c6b-3-2|Def. §C6b.3.2]]). Applied to one $A$ and one $B$ in the box of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]], it is the rate of [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]] divided by the flux, and the last power of the box volume cancels ([[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]). The Møller velocity makes the result Lorentz invariant ([[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]]); for collinear beams it is the velocity difference $|\mathbf v_A - \mathbf v_B|$ ([[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]), and the differential cross section ([[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]) is the formula of the lecture. The section ends with that formula written once, every factor labelled by the box that produced it. Along the way the section collects what the cross section needs in every frame: the flux factor in invariant form ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]]), the phase space and its invariance ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-8|Theorem §C6b.3.8]]), the dimension of $d\sigma$ ([[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]]), and the centre-of-mass frame with the threshold of a process ([[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]], [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]]). Yu §6.5.2 is followed step by step; the course's own derivation of the same formula, with wave packets, comes after the decays, in [[§C6b.8 Wave Packets and the Cross Section|§C6b.8]]–[[§C6b.9 Evaluating the Cross Section|§C6b.9]].
 
 *Conventions* ([[Larsen PHY 513]]): $\mathbf v = \mathbf p/E = \partial E_{\mathbf p}/\partial\mathbf p$, the group velocity of a packet peaked at $\mathbf p$; $a$ is the cross-sectional area of the beam (Yu: $A$) and $V$ the volume it sweeps (Yu: $V$), not the box volume $\tilde V$; $\mathcal R$ is a rate per unit volume, $R$ the rate of [[§C6b.2 Transition Probabilities in a Box|§C6b.2]] ([[§C6b.2 Transition Probabilities in a Box#^cau-c6b-2-1|§C6b.2, Caution: Names in Yu's §6.5.1]]); $S_{\rm id}$ the identical-particle factor.
 
@@ -456,7 +456,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 >
 > **What the derivation shows.**
 > - Box route and wave-packet route give the same $d\sigma$; the course's form holds in every frame reached from the rest frame of $A$ along the beam axis, the centre-of-mass frame included ([[§C6b.3 The Cross Section#^thm-c6b-3-7|Theorem §C6b.3.7]]).
-> - Dimension: $[d\sigma] = -2$ for every $n$ ([[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]]).
+> - Dimension: $[d\sigma] = -2$ for every $n$ ([[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]]).
 
 ^der-c6b-3-9
 
@@ -464,14 +464,52 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-6|P7, step 6]]
 
-> [!theorem] Theorem §C6b.3.10: The Cross Section Is an Area for Every n
+> [!definition] Definition §C6b.3.5: Unpolarized Cross Section
+> For particles with spin, $\mathcal M$ depends on the spin projections $m = s, s - 1, \dots, -s$, the $2s + 1$ states of a massive particle of spin $s$ at each momentum ([[§C3.6★ Particle States and the Little Group#^thm-c3-6-9|Theorem §C3.6.9]]). If the initial spins are not prepared and the final ones not measured, the **unpolarized** cross section averages over the initial projections and sums over the final ones: [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]] with $|\mathcal M|^2$ replaced by
+>
+> $$
+> \overline{|\mathcal M|^2} \equiv \frac{1}{(2s_A + 1)(2s_B + 1)}\sum_{m_A, m_B}\;\sum_{m_1, \dots, m_n}|\mathcal M|^2 , \qquad d\sigma = \frac{1}{4E_AE_Bv_{\rm Møl}}\,\overline{|\mathcal M|^2}\,d\Pi_n .
+> $$
+>
+> A massless particle of spin $s \ge \frac12$ has two helicity states, not $2s + 1$ ([[§C3.7★ Massless Particles and Helicity#^rem-c3-7-2|§C3.7, Remark: Parity pairs λ with −λ: photon, graviton, neutrino]]): its average is $\frac12\sum_{\lambda = \pm s}$.
+>
+> *Model:* as in [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]; *applies:* as there, unpolarized beams and undetected final spins.
+>
+> *Source: PHY 513, Problem Set 9, Problem 5 (Larsen: "the unpolarized differential cross sections"; the user's solution: "Averaging over the initial and summing over the final spins") · written here for general spins*
+
+^def-c6b-3-5
+
+> [!theorem] Theorem §C6b.3.10: Spin Sums Are Traces: Independent of the Spin Basis
+> At fixed momenta, let $\{|m\rangle\}$ be an orthonormal basis of the spin states of one particle and $|\psi\rangle$ any state.
+> 1. The sum over final projections is $\sum_{m_f}|\langle m_f|\psi\rangle|^2 = \langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ by completeness.
+> 2. The average over initial projections of an operator $X$ on the spin space is $\frac{1}{2s + 1}\sum_{m_i}\langle m_i|X|m_i\rangle = \frac{1}{2s + 1}\operatorname{Tr}X$.
+> 3. Both are independent of the orthonormal basis: $\overline{|\mathcal M|^2}$ of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]] may be computed with each particle's spin quantized along any axis.
+>
+> *Model:* as in [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]; *applies:* any spins, any order; linear algebra on each particle's spin space.
+>
+> *Source: PHY 513, Problem Set 9, Problem 5 (the user's solution, paragraph "Choice of spin axis")*
+
+^thm-c6b-3-10
+
+> [!derivation]- Derivation
+> **Step 1** (part 1). $\sum_{m_f}|\langle m_f|\psi\rangle|^2 = \sum_{m_f}\langle\psi|m_f\rangle\langle m_f|\psi\rangle = \langle\psi|\bigl(\sum_{m_f}|m_f\rangle\langle m_f|\bigr)|\psi\rangle = \langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ (completeness of an orthonormal basis, [[§45 The Completeness Relation#^prop-45-1|556 Prop. §45.1]]).
+>
+> **Step 2** (part 2). $\sum_{m_i}\langle m_i|X|m_i\rangle$ is the trace of $X$ in the basis $\{|m_i\rangle\}$.
+>
+> **Step 3** (part 3). Another orthonormal basis is $|m'\rangle = V|m\rangle$ with $V$ unitary: $\sum_{m'}|m'\rangle\langle m'| = V\mathbf 1V^\dagger = \mathbf 1$ and $\sum_{m'}\langle m'|X|m'\rangle = \operatorname{Tr}(V^\dagger XV) = \operatorname{Tr}X$ (cyclicity). With $\mathcal M$ the coefficient of the same $(2\pi)^4\delta^4$ for every choice of spins ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]), $\sum|\mathcal M|^2$ over final spins is part 1 and the initial average part 2, applied particle by particle.
+
+^der-c6b-3-10
+
+*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§45 The Completeness Relation#^prop-45-1|556 Prop. §45.1]], [[§C1.4 Change of Basis and Unitary Equivalence#^thm-c1-4-2|QM Theorem §C1.4.2]]
+
+> [!theorem] Theorem §C6b.3.11: The Cross Section Is an Area for Every n
 > With $N = 2 + n$ external particles, $[d\sigma] = -2$ for every $n$: the dimension of an area.
 >
 > *Model:* [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]] with [[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]], or [[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]] (the dimension does not depend on the route); *applies:* relativistic normalization, four spacetime dimensions; every order.
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.5, Derivation "Dimension check (filled in)"*
 
-^thm-c6b-3-10
+^thm-c6b-3-11
 
 > [!derivation]- Derivation
 > **Step 1** (the amplitude). By [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]] with $N = 2 + n$,
@@ -501,13 +539,13 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 > **What the derivation shows.**
 > - The growth of $|\mathcal M|^2$'s dimension with $n$ is exactly compensated by the phase space; checked for $n = 1, \dots, 5$ in `qft-C/tools/l15/checks.py`.
 
-^der-c6b-3-10
+^der-c6b-3-11
 
 *Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]], [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 
 ## The centre-of-mass frame
 
-> [!definition] Definition §C6b.3.5: Centre-of-Mass Frame and Centre-of-Mass Energy
+> [!definition] Definition §C6b.3.6: Centre-of-Mass Frame and Centre-of-Mass Energy
 > For a $2 \to n$ process the **centre-of-mass frame** is the inertial frame in which the total three-momentum vanishes, $\mathbf p_A + \mathbf p_B = \sum_{j=1}^n\mathbf p_j = \mathbf 0$. The **centre-of-mass energy** $E_{\rm cm}$ is the total energy there, $E_{\rm cm} = E_A + E_B = \sum_jE_j$. Because $(p_A + p_B)^2 = (E_A + E_B)^2 - |\mathbf p_A + \mathbf p_B|^2$ is a Lorentz scalar and equals $E_{\rm cm}^2$ in that frame, in every frame
 >
 > $$
@@ -520,22 +558,22 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 >
 > *Source: Yu §6.5.2, eqs. (6.332)–(6.334) (page image checked: "质心系定义为使系统总动量为零的参考系", "$E_{\rm CM}$ 是 Lorentz 不变量") · PHY 513 Lecture 15, slide 19 ("c.m.s. ($\vec p_{\rm tot} = 0$)"), slide 20 · PS §4.5, p. 106*
 
-^def-c6b-3-5
+^def-c6b-3-6
 
-> [!theorem] Theorem §C6b.3.11: The Threshold of a 2 → n Process
+> [!theorem] Theorem §C6b.3.12: The Threshold of a 2 → n Process
 > A $2 \to n$ process ($n \ge 2$) with final masses $m_1, \dots, m_n$ can occur only if
 >
 > $$
 > E_{\rm cm} > \sum_{j=1}^nm_j ,
 > $$
 >
-> with $E_{\rm cm}$ of [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]. At $E_{\rm cm} = \sum_jm_j$ the final particles are all at rest in the centre-of-mass frame and the phase space $\int d\Pi_n$ ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]]) has zero volume; below it $d\Pi_n$ has no support. The condition is the same in every frame.
+> with $E_{\rm cm}$ of [[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]]. At $E_{\rm cm} = \sum_jm_j$ the final particles are all at rest in the centre-of-mass frame and the phase space $\int d\Pi_n$ ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]]) has zero volume; below it $d\Pi_n$ has no support. The condition is the same in every frame.
 >
 > *Model:* any (kinematics); *applies:* every frame, independent of the dynamics.
 >
 > *Source: Yu §6.5.2, eq. (6.335) (page image checked, boxed: "若 $E_{\rm CM} = \sum_jm_j$，则末态相空间体积为零，散射过程不能发生"); §6.5.3, eq. (6.339) for $n = 2$*
 
-^thm-c6b-3-11
+^thm-c6b-3-12
 
 > [!derivation]- Derivation
 > **Step 1** (the centre-of-mass frame exists). $P = p_A + p_B$ has $P^0 = E_A + E_B > 0$ and $P^2 = (E_A + E_B)^2 - |\mathbf p_A + \mathbf p_B|^2 \ge (E_A + E_B)^2 - (|\mathbf p_A| + |\mathbf p_B|)^2 \ge 0$, using $E \ge |\mathbf p|$; for massive particles $E > |\mathbf p|$ and $P^2 > 0$. The boost with velocity $\mathbf P/P^0$ ($|\mathbf P|/P^0 < 1$) takes $P$ to $(\sqrt{P^2}, \mathbf 0)$ ([[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]] along $\mathbf P$).
@@ -556,15 +594,15 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 >
 > For $n = 2$ this is $\int d\Pi_2 = |\mathbf p_1|/(4\pi E_{\rm cm})$ with $|\mathbf p_1| \propto Q^{1/2}$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]]).
 >
-> **Step 4** (every frame). $E_{\rm cm}$ and the masses are Lorentz invariants ([[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]), so the condition does not depend on the frame: a process possible in the centre-of-mass frame is possible in every frame.
+> **Step 4** (every frame). $E_{\rm cm}$ and the masses are Lorentz invariants ([[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]]), so the condition does not depend on the frame: a process possible in the centre-of-mass frame is possible in every frame.
 >
 > **What the derivation shows.**
 > - $E_{\rm cm}$ is the energy available to make the final particles; Yu calls it the effective energy that excites the internal interactions.
 > - The same argument with $E_{\rm cm} = m_A$ is the decay threshold ([[§C6b.5 Decay Widths#^thm-c6b-5-8|Theorem §C6b.5.8]]).
 
-^der-c6b-3-11
+^der-c6b-3-12
 
-*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]
+*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]], [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]
 
 ## The annotated formula
 

@@ -9,11 +9,11 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors]] · ↑ [[· C6c Feynman Rules for Amplitudes]] · [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route]] →
 
-*Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.6, pp. 112–115, eqs. (4.101)–(4.104) and the rules for $\phi^4$ (p. 115) · PHY 513 Lecture 16 (Larsen, 2 Nov 2026), Part C, slides 21–26, and transcript · the user's PHY 513 notes, Lecture 16 update, §16.6–§16.9 · Yu Zhao-Huan, 量子场论讲义, §7.2, rules 6–11 (pp. 287–288); §7.3, pp. 294–296; §7.4, rules 1–5 (p. 300); §10.5.3 · Schwartz, Quantum Field Theory and the Standard Model, §7.4, pp. 97–98, eqs. (7.91)–(7.96) · PHY 513, Problem Set 8, Problem 2 (the user's solution, submitted 2026-10-30) · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), transcript ("strip off the external lines").*
+*Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.6, pp. 112–115, eqs. (4.101)–(4.104) and the rules for $\phi^4$ (p. 115) · PHY 513 Lecture 16 (Larsen, 2 Nov 2026), Part C, slides 21–26, and transcript · the user's PHY 513 notes, Lecture 16 update, §16.6–§16.9 · Yu Zhao-Huan, 量子场论讲义, §7.2, rules 6–11 (pp. 287–288); §7.3, pp. 294–296; §7.4, rules 1–5 (p. 300); §10.5.3 · Schwartz, Quantum Field Theory and the Standard Model, §7.4, pp. 97–98, eqs. (7.91)–(7.96) · PHY 513, Problem Set 8, Problem 2 (the user's solution, submitted 2026-10-30) · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), transcript ("strip off the external lines") · PHY 513, Problem Set 9, Problem 3 (the user's solution, submitted 2026-11-05).*
 
 Lecture 16, Part C, states the Feynman rules for the amplitude itself: "$i\mathcal M$ = sum over all connected, amputated diagrams". [[§C6c.2 Contractions with External Particles|§C6c.2]] expanded the $S$-matrix element between free particle states and sorted its terms ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3|Theorem §C6c.3.3]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]]). The whole route in one line, as the user's notes summarize it (Principle "From the time-evolution operator to $i\mathcal M$"): expand ${}_0\langle\mathbf p_1\mathbf p_2\cdots|T\{e^{-i\int\hat H_I}\}|\mathbf p_A\mathbf p_B\rangle_0$ between free states ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]); Wick's theorem contracts fields with each other ($D_F$) or with particles (wave functions $e^{\mp ip\cdot z}$; [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]]); omit particles going straight through ($\delta$-lines, the $\mathbb 1$), vacuum bubbles, and corrections on external legs (of the size of $\sqrt Z - 1$); what remains is $i\mathcal M$ with vertex $-i\lambda$, propagator $\frac{i}{p^2 - m^2 + i\varepsilon}$, external lines $1$, momentum conservation at each vertex, $\int\frac{d^4q}{(2\pi)^4}$ per loop and $\frac1S$.
 
-Amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|Def. §C6c.5.1]]), $S = 1$ for saturated vertices and trees ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]]) and $\phi\phi \to \phi\phi$ at order $\lambda^2$ are in [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors|§C6c.5]]. This section collects the rules: it defines the diagram of an amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]]), shows that only the vertex depends on the interaction ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-1|Theorem §C6c.6.1]]), gives the tree-level rules for any polynomial interaction ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-2|Theorem §C6c.6.2]]) and the rules at any order ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-3|Theorem §C6c.6.3]], PS (4.103)–(4.104)), enumerates the tree diagrams of a process with the $s$-, $t$-, $u$-channels ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]]), and works the cubic–quartic diagrams of Problem Set 8 (the order-$\lambda^2$ loops of $\phi\phi \to \phi\phi$: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^ex-c6c-5-1|Example §C6c.5.1]]). [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]] reaches the same rules from the correlation functions of C6a by amputation, the route that generalizes through LSZ. Yu states the rules case by case in §7.2–§7.4, read off first-order $T$-matrix elements, and justifies them in §10.5.
+Amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|Def. §C6c.5.1]]), $S = 1$ for saturated vertices and trees ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]]) and $\phi\phi \to \phi\phi$ at order $\lambda^2$ are in [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors|§C6c.5]]. This section collects the rules: it defines the diagram of an amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]]), shows that only the vertex depends on the interaction ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-1|Theorem §C6c.6.1]]), gives the tree-level rules for any polynomial interaction ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-2|Theorem §C6c.6.2]]) and the rules at any order ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-3|Theorem §C6c.6.3]], PS (4.103)–(4.104)), enumerates the tree diagrams of a process with the $s$-, $t$-, $u$-channels ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]]), states which channels a vertex allows when several fields interact ([[§C6c.6 Feynman Rules for Amplitudes#^mod-c6c-6-5|Model §C6c.6.5]], [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-6|Theorem §C6c.6.6]]), and works the cubic–quartic diagrams of Problem Set 8 and the three-scalar process of Problem Set 9 ([[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-3|Example §C6c.6.3]]; the order-$\lambda^2$ loops of $\phi\phi \to \phi\phi$: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^ex-c6c-5-1|Example §C6c.5.1]]). [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]] reaches the same rules from the correlation functions of C6a by amputation, the route that generalizes through LSZ. Yu states the rules case by case in §7.2–§7.4, read off first-order $T$-matrix elements, and justifies them in §10.5.
 
 **Setup and scope.** As in [[§C6c.2 Contractions with External Particles|§C6c.2]]: free relativistic states over $|0\rangle$ standing for the in and out states ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]), a permanent interaction ([[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]); exact at the lowest order of a process, beyond it $\sqrt Z$ per external line and the physical mass ([[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]). Each box states its scope.
 
@@ -238,6 +238,55 @@ Amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^de
 ![[ph-qft-c6b-3-2.svg]]
 *[[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]]: the four tree diagrams of $\phi\phi \to \phi\phi$ in the cubic–quartic theory with the momentum of the internal line (orange arrows) and the value of each diagram; cubic vertices orange, the quartic vertex blue. The diagrams themselves, with $S$, are [[§C6c.8 From the Question to the Formula#^ex-c6c-8-5|Example §C6c.8.5]]'s figure. Added figure.*
 
+## Several fields: which channels exist
+
+> [!model] Model §C6c.6.5: The Three-Scalar Theory
+> Three real scalar fields $\phi_1$, $\phi_2$, $\phi_3$ of masses $m_1$, $m_2$, $m_3 > 0$ with
+>
+> $$
+> \mathcal L = \frac12\sum_{i=1}^3\bigl(\partial_\mu\phi_i\,\partial^\mu\phi_i - m_i^2\phi_i^2\bigr) - g\,\phi_1\phi_2\phi_3 ,
+> $$
+>
+> $g$ a real coupling of mass dimension $1$, as the cubic coupling of [[§C6a.8 Position-Space Feynman Rules#^mod-c6a-8-2|Model §C6a.8.2]].
+> 1. *Structure.* The state space is the product of three free scalar Fock spaces ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] for each mass), free vacuum $|0\rangle$; the three fields have independent mode operators, and two fields contract only with their own kind, $\overbracket{\hat\phi_i(z_1)\hat\phi_j(z_2)} = \delta_{ij}D_F^{(m_i)}(z_1 - z_2)$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]]).
+> 2. *Interaction.* $\mathcal L_{\rm int} = -g\phi_1\phi_2\phi_3$ has no derivatives, so the conjugate momenta are those of the free theory and $\mathcal H_{\rm int} = -\mathcal L_{\rm int} = g\,\phi_1\phi_2\phi_3$, as for $\phi^4$ ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-4|Theorem §C6a.1.4]], [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-5|Theorem §C6a.1.5]]).
+> 3. *Vertex.* One vertex type, with one leg of each of $\phi_1$, $\phi_2$, $\phi_3$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]]); its factor is $-ig\cdot1!\,1!\,1! = -ig$: a vertex of distinct fields has a trivial within-vertex group ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]).
+>
+> *Assumptions:* those of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] (stable particles of masses $m_i$, $g$ small); if one mass exceeds the sum of the other two, that particle decays into them ([[§C6b.5 Decay Widths#^thm-c6b-5-8|Theorem §C6b.5.8]]).
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* the theory itself; its $S$-matrix by the rules of [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-3|Theorem §C6c.6.3]], at lowest order exactly.
+>
+> *Source: PHY 513, Problem Set 9, Problem 3 (statement, Larsen) · items 1–3 written here*
+
+^mod-c6c-6-5
+
+> [!theorem] Theorem §C6c.6.6: The Vertex Content Decides Which Channels Exist
+> 1. In a $2 \to 2$ tree diagram with two vertices and one internal line ($I = 1$, $L = 0$), each vertex carries two external particles ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 3), and a particle of field $k$ attaches only to a leg of kind $k$. A channel, the choice of the partner of $p_A$ at its vertex, exists only if some vertex type has legs of the kinds of that pair, and the two leftover legs can be contracted with each other ([[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]], 1): the vertex content decides which of $s$, $t$, $u$ occur, before any calculation.
+> 2. In the three-scalar theory ([[§C6c.6 Feynman Rules for Amplitudes#^mod-c6c-6-5|Model §C6c.6.5]]), for $\phi_1(p_A) + \phi_1(p_B) \to \phi_2(p_1) + \phi_2(p_2)$ at order $g^2$, a vertex has one $\phi_1$ leg, so the two incoming $\phi_1$ cannot meet: **no $s$-channel**. The $t$-channel ($p_A$, $p_1$ at one vertex) and the $u$-channel ($p_A$, $p_2$) exist, and the internal line is a $\phi_3$ with momentum $p_A - p_1$, respectively $p_A - p_2$.
+> 3. *Instances:* one kind of field (cubic–quartic theory) gives all three channels ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]], 2); the Yukawa vertex $\bar\psi\psi\phi$ has one $\psi$ leg, so two incoming fermions cannot meet: $ff \to ff$ has $t$ and $u$ only ([[§C6d.5 Second Order#^ex-c6d-5-2|Example §C6d.5.2]]), $f\bar f \to f\bar f$ has $s$ and $t$ ([[§C6d.5 Second Order#^ex-c6d-5-1|★ Example §C6d.5.1]]).
+>
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] with any interaction of the form of [[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]] (Yukawa alike); *applies:* tree level, two vertices, every channel counted with the particles labelled.
+>
+> *Source: PHY 513, Problem Set 9, Problem 3(a) (the user's solution: "Each vertex has exactly one leg of each of $\phi_1$, $\phi_2$, $\phi_3$ … one $\phi_1$ and one $\phi_2$ on each vertex. The remaining $\phi_3$ legs … form the internal line") · stated in general here*
+
+^thm-c6c-6-6
+
+> [!derivation]- Derivation
+> **Step 1** (two particles per vertex). Two vertices, four external particles, one internal line: by [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 3, a connected diagram with $V = 2$, $I = 1$ has $r_v - 1$ external particles at each vertex; for cubic vertices two each.
+>
+> **Step 2** (kinds). An incoming particle of field $k$ is absorbed by $\hat\phi_k^+$, an outgoing one emitted by $\hat\phi_k^-$ ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]]); the fields of other kinds have independent mode operators and give zero on it ([[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]]). So the two particles at a vertex occupy two legs of their own kinds, and the third legs of the two vertices form the internal line, which needs a nonzero contraction ([[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]], 1–2).
+>
+> **Step 3** (part 2). The vertex legs are $\phi_1\phi_2\phi_3$. $\{p_A, p_B\}$ = two $\phi_1$: one vertex has one $\phi_1$ leg, impossible. $\{p_A, p_1\}$ = $\phi_1\phi_2$: the other vertex takes $\{p_B, p_2\}$ = $\phi_1\phi_2$, and both leftover legs are $\phi_3$, contracted by $D_F^{(m_3)}$. Likewise $\{p_A, p_2\}$. Momentum conservation at the vertex of $p_A$ gives the internal momentum ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]], 1).
+>
+> **Step 4** (part 3). The cubic–quartic vertex $\phi\phi\phi$ takes any pair, and its leftover $\phi$ contracts with the other: $s$, $t$, $u$. The Yukawa vertex has one leg each of $\psi$ (absorbs an incoming fermion or emits an outgoing antifermion) and $\bar\psi$ (emits an outgoing fermion or absorbs an incoming antifermion) ([[§C6d.2 Contractions with External Fermions|§C6d.2]]); two incoming fermions would need two $\psi$ legs.
+>
+> **What the derivation shows**
+> - An $s$-channel line is a particle that $a + b$ can produce at one vertex; the vertex content decides whether it exists.
+
+^der-c6c-6-6
+
+*Uses:* [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]], [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]]
+
 ## Examples
 
 > [!example] Example §C6c.6.1: Cubic–Quartic Theory, 2 → 2 at Order g² and λ
@@ -280,6 +329,77 @@ Amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^de
 ![[ph-qft-c6-17-1.svg]]
 *The diagrams of [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]] and [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|Example §C6c.6.2]] (cubic vertices orange, quartic blue; incoming momenta left, outgoing right). Top: $2 \to 2$, the $s$-, $t$-, $u$-channel diagrams at order $g^2$ and the contact diagram at order $\lambda$. Bottom: $2 \to 3$ at order $g\lambda$, one representative of each class (I), (II), (III). Added figure, adapted from the user's solution of PHY 513, Problem Set 8, Problem 2.*
 
+> [!example] Example §C6c.6.3: φ₁φ₁ → φ₂φ₂ at Order g² in the Three-Scalar Theory
+> ![[ph-qft-c6c-6-1.svg]]
+>
+> In the three-scalar theory ([[§C6c.6 Feynman Rules for Amplitudes#^mod-c6c-6-5|Model §C6c.6.5]]), for $\phi_1(p_A) + \phi_1(p_B) \to \phi_2(p_1) + \phi_2(p_2)$ at order $g^2$,
+>
+> $$
+> \mathcal M = -g^2\Bigl[\frac{1}{(p_A - p_1)^2 - m_3^2} + \frac{1}{(p_A - p_2)^2 - m_3^2}\Bigr] , \qquad \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{|\mathbf p_1|}{64\pi^2E_{\rm cm}^2\,|\mathbf p_A|}\,|\mathcal M|^2 :
+> $$
+>
+> the $t$- and $u$-channel exchange of a $\phi_3$, no $s$-channel ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-6|Theorem §C6c.6.6]], 2), and the $i\varepsilon$ dropped because $t, u \le 0$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]], 5).
+>
+> **Step 1** (the diagrams). $O(g^2)$ means two vertices. Each vertex has exactly one leg of each of $\phi_1$, $\phi_2$, $\phi_3$, so two vertices have two legs of each field. The two incoming $\phi_1$ and the two outgoing $\phi_2$ use up all the $\phi_1$ and $\phi_2$ legs, one $\phi_1$ and one $\phi_2$ on each vertex; the remaining $\phi_3$ legs, one on each vertex, form the internal line. The particles are labelled, so a diagram is fixed by which of $p_1$, $p_2$ shares a vertex with $p_A$ (putting $p_A$ on the other vertex only exchanges the vertices): two diagrams, (t) and (u) in the figure.
+>
+> **Step 2** (the expansion term). $\langle p_1p_2|i\hat T|p_Ap_B\rangle = (2\pi)^4\delta^4(p_A + p_B - p_1 - p_2)\,i\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]), with $\hat S = \mathbb 1 + i\hat T = T\exp\bigl(-i\int d^4z\,\mathcal H_I\bigr)$ and $\mathcal H_I = g\,\hat\phi_1\hat\phi_2\hat\phi_3$. The initial state holds $\phi_1$ particles and the final state $\phi_2$ particles, so the $\mathbb 1$ does not contribute, and at $O(g^2)$
+>
+> $$
+> \langle p_1p_2|i\hat T|p_Ap_B\rangle = \langle p_1p_2|\,\frac{(-ig)^2}{2!}\int d^4z_1\,d^4z_2\;T\bigl\{(\hat\phi_1\hat\phi_2\hat\phi_3)(z_1)\,(\hat\phi_1\hat\phi_2\hat\phi_3)(z_2)\bigr\}\,|p_Ap_B\rangle .
+> $$
+>
+> **Step 3** (the contractions). With $|p\rangle = \sqrt{2E_{\mathbf p}}\,\hat a^\dagger_{\mathbf p}|0\rangle$, only the annihilation part of a field acts on an incoming particle of its own type, and only the creation part on an outgoing one ([[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]], [[§C6c.2 Contractions with External Particles#^lem-c6c-2-2|Lemma §C6c.2.2]]):
+>
+> $$
+> \hat\phi_i(z)\,|p\rangle \to e^{-ip\cdot z} , \qquad \langle p|\,\hat\phi_i(z) \to e^{ip\cdot z} .
+> $$
+>
+> Two fields contract only with their own type ([[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]]), with the propagator of mass $m_i$:
+>
+> $$
+> \overbracket{\hat\phi_i(z_1)\hat\phi_i(z_2)} = D_F^{(i)}(z_1 - z_2) = \int\frac{d^4q}{(2\pi)^4}\,\frac{i}{q^2 - m_i^2 + i\varepsilon}\,e^{-iq\cdot(z_1 - z_2)} .
+> $$
+>
+> **Step 4** (the coefficient). The group $G$ relabels the two vertices and permutes legs of the same field within a vertex. Each vertex has one leg of each field, so the within-vertex group is trivial and $|G| = 2!\cdot1\cdot1 = 2$, matching the prefactor $\frac{1}{2!}$ (vertex factor $-ig$, [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]]). The particles are labelled, so the diagram has no nontrivial symmetry, $S = 1$ ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]]), and the number of contractions giving it is $N = |G|/S = 2$ (the pair $\{p_A, p_1\}$ on $z_1$ or on $z_2$). The coefficient is $N/|G| = 1$ ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-2|Theorem §C6c.5.2]]).
+>
+> **Step 5** (diagram (t)). With $z_1$ the vertex carrying $p_A$, $p_1$, replacing each contraction by its value and doing the vertex integrals ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]),
+>
+> $$
+> \begin{aligned}
+> &(-ig)^2\int d^4z_1\,d^4z_2\;e^{-ip_A\cdot z_1}\,e^{ip_1\cdot z_1}\,D_F^{(3)}(z_1 - z_2)\,e^{-ip_B\cdot z_2}\,e^{ip_2\cdot z_2} \\
+> &= (-ig)^2\int\frac{d^4q}{(2\pi)^4}\,\frac{i}{q^2 - m_3^2 + i\varepsilon}\int d^4z_1\,e^{-i(p_A - p_1 + q)\cdot z_1}\int d^4z_2\,e^{-i(p_B - p_2 - q)\cdot z_2} \\
+> &= (-ig)^2\int\frac{d^4q}{(2\pi)^4}\,\frac{i}{q^2 - m_3^2 + i\varepsilon}\;(2\pi)^4\delta^4(p_A - p_1 + q)\,(2\pi)^4\delta^4(p_B - p_2 - q) .
+> \end{aligned}
+> $$
+>
+> In $D_F^{(3)}(z_1 - z_2)$ the phase $e^{-iq\cdot(z_1 - z_2)}$ means that $q$ flows from $z_2$ into $z_1$. The first delta fixes $q = p_1 - p_A$ and does the $q$ integral; the second becomes $\delta^4(p_A + p_B - p_1 - p_2)$:
+>
+> $$
+> (-ig)^2\,\frac{i}{(p_A - p_1)^2 - m_3^2 + i\varepsilon}\;(2\pi)^4\delta^4(p_A + p_B - p_1 - p_2) .
+> $$
+>
+> **Step 6** (diagram (u)). The same with $p_1 \leftrightarrow p_2$: the deltas are $\delta^4(p_A - p_2 + q)\,\delta^4(p_B - p_1 - q)$, the first fixes $q = p_2 - p_A$, and the diagram is $(-ig)^2\,\frac{i}{(p_A - p_2)^2 - m_3^2 + i\varepsilon}\,(2\pi)^4\delta^4(p_A + p_B - p_1 - p_2)$.
+>
+> **Step 7** (the amplitude). The sum of the two diagrams, compared with Step 2:
+>
+> $$
+> \langle p_1p_2|i\hat T|p_Ap_B\rangle = (-ig)^2\Bigl[\frac{i}{(p_A - p_1)^2 - m_3^2 + i\varepsilon} + \frac{i}{(p_A - p_2)^2 - m_3^2 + i\varepsilon}\Bigr](2\pi)^4\delta^4(p_A + p_B - p_1 - p_2) ,
+> $$
+>
+> and $(-ig)^2\,i = -ig^2$ gives the $\mathcal M$ of the statement, where the $i\varepsilon$ is dropped: in the centre-of-mass frame both $\phi_1$'s and both $\phi_2$'s have energy $E_{\rm cm}/2$, so $E_A = E_1 = E_2$ and $(p_A - p_{1,2})^2 = (E_A - E_{1,2})^2 - |\mathbf p_A - \mathbf p_{1,2}|^2 = -|\mathbf p_A - \mathbf p_{1,2}|^2 \le 0$, a Lorentz-invariant statement, so $(p_A - p_{1,2})^2 - m_3^2 \le -m_3^2 < 0$ and the denominators do not vanish ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]], 5).
+>
+> **Step 8** (the cross section). For $2 \to 2$ in the centre-of-mass frame ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|Theorem §C6b.4.4]])
+>
+> $$
+> \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{1}{2E_A\,2E_B\,|\mathbf v_A - \mathbf v_B|}\,\frac{|\mathbf p_1|}{16\pi^2E_{\rm cm}}\,|\mathcal M|^2 .
+> $$
+>
+> In this frame $\mathbf p_B = -\mathbf p_A$, and both incoming particles have mass $m_1$, so $E_A = E_B = \sqrt{|\mathbf p_A|^2 + m_1^2} = E_{\rm cm}/2$. With $\mathbf v = \mathbf p/E$, $|\mathbf v_A - \mathbf v_B| = \bigl|\frac{\mathbf p_A}{E_A} + \frac{\mathbf p_A}{E_B}\bigr| = \frac{2|\mathbf p_A|}{E_A} = \frac{4|\mathbf p_A|}{E_{\rm cm}}$, so $2E_A\,2E_B\,|\mathbf v_A - \mathbf v_B| = E_{\rm cm}^2\cdot\frac{4|\mathbf p_A|}{E_{\rm cm}} = 4|\mathbf p_A|\,E_{\rm cm}$, and the statement follows. It is part 3 of [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]] with $\beta_f/\beta_i = |\mathbf p_1|/|\mathbf p_A|$. (Integrated over all directions, the two identical $\phi_2$ would add $\frac{1}{S_{\rm id}} = \frac12$, [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-6|Theorem §C6b.4.6]]; Problem 3 asks only for $d\sigma/d\Omega$.)
+>
+> *Source: PHY 513, Problem Set 9, Problem 3(a)–(c) (the user's solution; the figure follows the user's drawings, with the vertices opened into their legs)*
+
+^ex-c6c-6-3
+
 > [!abstract]- Mathematical background
 > Proved in CA; each line says what the physics above relies on.
 >
@@ -289,6 +409,7 @@ Amputation ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^de
 > [!remark]- Connections
 > - What the rules drop is what §C6c.3–§C6c.5 sorted out: $\delta$-lines and forward pieces are the $\mathbb 1$, bubbles the vacuum's normalization — [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], [[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]].
 > - A tree amplitude with one exchanged particle is a sum of poles in the invariants of $2 \to 2$ kinematics — [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-7|Theorem §C6b.1.7]]; the loop of Example §C6c.5.1 diverges logarithmically, the starting point of renormalization (second semester).
+> - Several fields: the vertex content selects the channels, and with masses equal in pairs the exchange denominators of the $t$- and $u$-channels never vanish — [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-6|Theorem §C6c.6.6]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]], 5.
 > - With fermions the same rules hold with spinors on external lines, $S_F$ on internal ones, a sign per contraction pattern and no symmetry factors — [[§C6d.6 Momentum-Space Feynman Rules#^thm-c6d-6-2|§C6d.6, Theorem §C6d.6.2]].
 > - The vertex factors and lines are those of the correlation functions — [[§C6a.12 Feynman Rules for Polynomial Interactions|§C6a.12]]; the amputation route to the same $i\mathcal M$ and its LSZ form — [[§C6c.1 Amplitudes from Correlation Functions|§C6c.1]].
 > - With fermions too only the vertex is theory-specific, but the relative signs of several diagrams must be taken from the contractions — [[§C6d.6 Momentum-Space Feynman Rules#^thm-c6d-6-1|Theorem §C6d.6.1]], [[§C6d.6 Momentum-Space Feynman Rules#^cau-c6d-6-1|§C6d.6, Caution: Relative signs still need the contractions]].

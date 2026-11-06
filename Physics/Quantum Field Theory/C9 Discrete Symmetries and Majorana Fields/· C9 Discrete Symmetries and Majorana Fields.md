@@ -8,7 +8,7 @@ tags: [chapter, quantum-field-theory]
 # C9 Discrete Symmetries and Majorana Fields
 ← [[· C6d Feynman Rules for Fermions]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (74), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (154), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121), [[· CA Mathematical Methods|CA Mathematical Methods]] (40), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (38)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (74), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (9), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (156), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (9), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (19), [[· CA Mathematical Methods|CA Mathematical Methods]] (42), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (38)
 **Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (10), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (4), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (2), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (4)
 
 ## Sections
@@ -24,6 +24,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.10 Fermion Bilinears under Time Reversal]] — 513 notes Ch. 12 §12.5; PHY 513, Problem Set 7, Problem 2(c)
 - [[§C9.11 CPT and the CPT Theorem]] — 513 notes Ch. 12 §§12.6–12.7; PHY 513, Problem Set 7, Problems 2–3, 4(c)
 - [[§C9.12 C, T and CPT for the Complex Scalar Field]] — Yu §9.1.2–§9.1.3; PHY 513, Problem Set 7, Problem 4
+- [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance]] — PHY 513, Problem Set 9, Problem 5 (not in Yu/PS; Yu §9.5, eqs. (9.324)–(9.327) for CPT)
 
 ## Principles
 - [[§C9.8 Physical Spin versus Wave-Function Spin#^pr-c9-8-4|§C9.8.4]] Physical Spin Is the Eigenvalue of an Operator
@@ -114,3 +115,9 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-4|§C9.12.4]] The U(1) Current under P, C and T
 - [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-5|§C9.12.5]] The Free Complex Scalar Lagrangian Is C and T Invariant
 - [[§C9.12 C, T and CPT for the Complex Scalar Field#^thm-c9-12-6|§C9.12.6]] CPT on the Complex Scalar Field
+- [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^lem-c9-13-1|§C9.13.1]] The Adjoint of a Time-Ordered Product of Hermitian Operators Is Anti-Time-Ordered
+- [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-2|§C9.13.2]] Time Reversal Takes the S-Matrix to Its Adjoint
+- [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-3|§C9.13.3]] Reciprocity
+- [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-4|§C9.13.4]] Rotations Leave the S-Matrix Invariant; the Rotation by π about the Normal
+- [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-5|§C9.13.5]] In the Centre-of-Mass Frame, Time Reversal Flips Only the Spins
+- [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-6|§C9.13.6]] Detailed Balance

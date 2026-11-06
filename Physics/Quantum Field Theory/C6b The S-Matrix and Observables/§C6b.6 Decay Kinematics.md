@@ -314,7 +314,7 @@ The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] nee
 > s_{12} \equiv (p_1 + p_2)^2 , \qquad \text{likewise } s_{23} \equiv (p_2 + p_3)^2 :
 > $$
 >
-> the mass of the "effective particle" of four-momentum $p_1 + p_2$, equal to the centre-of-mass energy ([[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]) of the pair. Both are Lorentz invariants.
+> the mass of the "effective particle" of four-momentum $p_1 + p_2$, equal to the centre-of-mass energy ([[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]]) of the pair. Both are Lorentz invariants.
 >
 > *Model:* any (kinematics); *applies:* any three-body final state.
 >

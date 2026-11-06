@@ -7308,7 +7308,7 @@ $S_F(x - y) = \langle0|T\{\hat\psi(x)\hat{\bar\psi}(y)\}|0\rangle = \int\frac{d^
 
 ### [B] The Dirac propagator as a distribution and its matrix form ★
 
-$\tilde S^\varepsilon_F \to i(\slashed p + m)\mathcal P\frac{1}{p^2 - m^2} + \pi(\slashed p + m)\delta(p^2 - m^2)$ in $\mathcal S'$, and $\tilde S_F = \frac{i}{\slashed p - m + i\varepsilon}$ is a matrix inverse taken before the limit, see Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|§C5b.8.4]] The Dirac Propagator as a Distribution and Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|§C5b.8.5]] The Matrix Form of the Propagator. *Source: PS §3.5, eqs. (3.120)–(3.121) · the user's notes Ch. 10*
+$\tilde S^\varepsilon_F \to i(\slashed p + m)\mathcal P\frac{1}{p^2 - m^2} + \pi(\slashed p + m)\delta(p^2 - m^2)$ in $\mathcal S'$, and $\tilde S_F = \frac{i}{\slashed p - m + i\varepsilon}$ is a matrix inverse taken before the limit, see Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|§C5b.8.7]] The Dirac Propagator as a Distribution and Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-8|§C5b.8.8]] The Matrix Form of the Propagator. *Source: PS §3.5, eqs. (3.120)–(3.121) · the user's notes Ch. 10*
 
 ^nd-thm-c5b-8-5
 
@@ -7319,7 +7319,7 @@ $\tilde S^\varepsilon_F \to i(\slashed p + m)\mathcal P\frac{1}{p^2 - m^2} + \pi
 
 > [!tip]- Hints: route in the notes
 > - Technique: K13 (Sokhotski–Plemelj), K5.
-> - Steps 1–4 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-4|§C5b.8.4]] The Dirac Propagator as a Distribution; steps 1–3 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-5|§C5b.8.5]] The Matrix Form of the Propagator.
+> - Steps 1–4 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|§C5b.8.7]] The Dirac Propagator as a Distribution; steps 1–3 under Theorem [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-8|§C5b.8.8]] The Matrix Form of the Propagator.
 
 ### [B] The anticommutators are identities after smearing ★
 

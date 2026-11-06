@@ -206,7 +206,7 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 >
 > *Equivalently,* the scalar analogue is the $t$- and $u$-channel pair of [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-4|Theorem §C6c.6.4]], with relative $+$ ([[§C6d.5 Second Order#^thm-c6d-5-4|Theorem §C6d.5.4]], 3); the same term 2 of [[§C6d.5 Second Order#^thm-c6d-5-1|Theorem §C6d.5.1]] gives the $s$ and $t$ channels of $f\bar f \to f\bar f$ ([[§C6d.5 Second Order#^ex-c6d-5-1|Example §C6d.5.1]]).
 >
-> *Source: PHY 513 Lecture 17, slides 19–20, and transcript ("So there really are two different Orderings here"; "they are like equally good diagrams") · the user's PHY 513 notes, Lecture 17 update, §17.6, paragraph "The order", Derivation "The relative sign (filled in)", Principle "Fermion–fermion scattering in Yukawa theory", eq. (ffamp), Figure "ffscatt" · PS §4.7, pp. 116–120, eqs. (4.113)–(4.116), (4.118)–(4.119) · Yu §7.1.2, eqs. (7.78)–(7.82) · Steps 5–7 written out here*
+> *Source: PHY 513 Lecture 17, slides 19–20, and transcript ("So there really are two different Orderings here"; "they are like equally good diagrams") · the user's PHY 513 notes, Lecture 17 update, §17.6, paragraph "The order", Derivation "The relative sign (filled in)", Principle "Fermion–fermion scattering in Yukawa theory", eq. (ffamp), Figure "ffscatt" · PS §4.7, pp. 116–120, eqs. (4.113)–(4.116), (4.118)–(4.119) · Yu §7.1.2, eqs. (7.78)–(7.82) · Steps 5–7 written out here · PHY 513, Problem Set 9, Problem 4(a) (the user's solution, massless fermions allowed; the same amplitude, $t$-term $+$ and $u$-term $-$, with $p_A, p_B, p_1, p_2$ for $p, k, p', k'$; the relative sign by exchange counting: [[§C6d.5 Second Order#^der-c6d-5-3b|Derivation §C6d.5.3]], second route)*
 
 ^ex-c6d-5-2
 
@@ -247,6 +247,50 @@ The lecture's worked example: two fermions scatter into two fermions at order $g
 ^der-c6d-5-3
 
 *Uses:* [[§C6d.2 Contractions with External Fermions#^def-c6d-2-2|Def. §C6d.2.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|Theorem §C5b.4.2]], [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]], [[§C6d.5 Second Order#^ex-c6d-5-2|Example §C6d.5.2]]
+
+> [!derivation]- Derivation (second route: counting operator exchanges)
+> The first derivation reads the relative sign off the antisymmetry of the states; this one finds it in the operator string, as in Step 5 of [[§C6d.5 Second Order#^ex-c6d-5-2|Example §C6d.5.2]], by moving operators instead of counting crossings. Labels as in the user's solution: $p_A = p$, $p_B = k$ in, $p_1 = p'$, $p_2 = k'$ out.
+>
+> **Step 1** (the string). With $|p_Ap_B\rangle = \hat a^\dagger_{p_A}\hat a^\dagger_{p_B}|0\rangle$ and $\langle p_1p_2| = \langle0|\hat a_{p_2}\hat a_{p_1}$, the adjoint of the ket (the course convention, [[§C6d.5 Second Order#^rem-c6d-5-1|Remark: The overall sign is a convention]]; normalization factors suppressed), the fermionic operators of the matrix element stand in the order
+>
+> $$
+> \hat a_{p_2}\;\hat a_{p_1}\;\hat{\bar\psi}(z_1)\;\hat\psi(z_1)\;\hat{\bar\psi}(z_2)\;\hat\psi(z_2)\;\hat a^\dagger_{p_A}\;\hat a^\dagger_{p_B} ,
+> $$
+>
+> and $\hat\phi$ commutes with all of them. Each contraction is evaluated once its two operators are adjacent, and every exchange of two fermionic operators gives a factor $-1$.
+>
+> **Step 2** (the $t$-diagram, $p_A$, $p_1$ at one vertex). The pairs are $(\hat a_{p_1}\hat{\bar\psi}(z_1))$, $(\hat\psi(z_1)\hat a^\dagger_{p_A})$, $(\hat a_{p_2}\hat{\bar\psi}(z_2))$, $(\hat\psi(z_2)\hat a^\dagger_{p_B})$. Move $\hat a^\dagger_{p_A}$ to the left past $\hat\psi(z_2)$ and $\hat{\bar\psi}(z_2)$ (2 exchanges),
+>
+> $$
+> \hat a_{p_2}\;\hat a_{p_1}\;\hat{\bar\psi}(z_1)\;\hat\psi(z_1)\;\hat a^\dagger_{p_A}\;\hat{\bar\psi}(z_2)\;\hat\psi(z_2)\;\hat a^\dagger_{p_B} ,
+> $$
+>
+> then $\hat a_{p_2}$ to the right past $\hat a_{p_1}$, $\hat{\bar\psi}(z_1)$, $\hat\psi(z_1)$, $\hat a^\dagger_{p_A}$ (4 exchanges):
+>
+> $$
+> \bigl(\hat a_{p_1}\hat{\bar\psi}(z_1)\bigr)\bigl(\hat\psi(z_1)\hat a^\dagger_{p_A}\bigr)\bigl(\hat a_{p_2}\hat{\bar\psi}(z_2)\bigr)\bigl(\hat\psi(z_2)\hat a^\dagger_{p_B}\bigr) .
+> $$
+>
+> $2 + 4 = 6$ exchanges: sign $+1$.
+>
+> **Step 3** (the $u$-diagram, $p_A$, $p_2$ at one vertex). The pairs are $(\hat a_{p_2}\hat{\bar\psi}(z_1))$, $(\hat\psi(z_1)\hat a^\dagger_{p_A})$, $(\hat a_{p_1}\hat{\bar\psi}(z_2))$, $(\hat\psi(z_2)\hat a^\dagger_{p_B})$. Move $\hat a^\dagger_{p_A}$ to the left as before (2 exchanges), then $\hat a_{p_1}$ to the right past $\hat{\bar\psi}(z_1)$, $\hat\psi(z_1)$, $\hat a^\dagger_{p_A}$ (3 exchanges):
+>
+> $$
+> \bigl(\hat a_{p_2}\hat{\bar\psi}(z_1)\bigr)\bigl(\hat\psi(z_1)\hat a^\dagger_{p_A}\bigr)\bigl(\hat a_{p_1}\hat{\bar\psi}(z_2)\bigr)\bigl(\hat\psi(z_2)\hat a^\dagger_{p_B}\bigr) .
+> $$
+>
+> $2 + 3 = 5$ exchanges: sign $-1$. The two diagrams enter with a relative minus sign, $t$ with $+$ and $u$ with $-$, as in [[§C6d.5 Second Order#^ex-c6d-5-2|Example §C6d.5.2]] (2 and 3 crossings there).
+>
+> **Step 4** (the copies with $z_1 \leftrightarrow z_2$). The bilinears $\hat{\bar\psi}\hat\psi$ are bosonic, so the copy of each contraction with the vertices exchanged has no extra sign and gives the same integral after relabelling; the $\frac{1}{2!}$ cancels ([[§C6d.5 Second Order#^thm-c6d-5-2|Theorem §C6d.5.2]]). Each adjacent pair then gives its external spinor, $(\hat a_{p_1}\hat{\bar\psi}(z_1)) \to \bar u^{s_1}(p_1)e^{ip_1\cdot z_1}$, $(\hat\psi(z_1)\hat a^\dagger_{p_A}) \to u^{s_A}(p_A)e^{-ip_A\cdot z_1}$, and so on ([[§C6d.2 Contractions with External Fermions#^thm-c6d-2-1|Theorem §C6d.2.1]]), and the vertex integrals give the amplitude of [[§C6d.5 Second Order#^ex-c6d-5-2|Example §C6d.5.2]].
+>
+> **What the derivation shows**
+> - The relative sign is a parity of operator exchanges; it agrees with the crossing count ([[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4|Theorem §C6d.3.4]]) and with Fermi statistics (the first derivation). Which diagram carries the $-$ depends on the order of the bra, the relative sign does not.
+>
+> *Source: PHY 513, Problem Set 9, Problem 4(a) (the user's solution, paragraph "Relative sign")*
+
+^der-c6d-5-3b
+
+*Uses:* [[§C6d.5 Second Order#^ex-c6d-5-2|Example §C6d.5.2]], [[§C6d.5 Second Order#^thm-c6d-5-2|Theorem §C6d.5.2]], [[§C6d.5 Second Order#^rem-c6d-5-1|Remark: The overall sign is a convention]], [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-1|Theorem §C6d.2.1]], [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4|Theorem §C6d.3.4]]
 
 > [!remark] Remark: The overall sign is a convention
 > Writing $|\mathbf k, \mathbf p\rangle$ for $|\mathbf p, \mathbf k\rangle$, or $\langle\mathbf k', \mathbf p'|$ for $\langle\mathbf p', \mathbf k'|$, flips the sign of $\mathcal M$ ([[§C6d.5 Second Order#^thm-c6d-5-3|Theorem §C6d.5.3]], Step 1); $|\mathcal M|^2$, and with it every cross section, is unchanged ("Overall sign usually irrelevant (only $|\mathcal M|^2$ appears in cross-section)", slide 23). The sources differ only here:

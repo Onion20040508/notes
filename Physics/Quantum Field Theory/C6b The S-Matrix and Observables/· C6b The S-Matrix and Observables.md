@@ -8,8 +8,8 @@ tags: [chapter, quantum-field-theory]
 # C6b The S-Matrix and Observables
 ← [[· C6a Interactions and Correlation Functions]] · ↑ [[Quantum Field Theory]] · [[· C6c Feynman Rules for Amplitudes]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (18), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (55), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (41), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (16), [[· CA Mathematical Methods|CA Mathematical Methods]] (50)
-**Used by:** [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (7), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (49), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (16)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (19), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (1), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (55), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (6), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (41), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (17), [[· CA Mathematical Methods|CA Mathematical Methods]] (50)
+**Used by:** [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (1), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (7), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (50), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (16), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (19)
 
 C6b computes **the $S$-matrix and the observables made from it** (Lecture 15; the user's notes, Ch. 15), in the order of Yu §6.5 (user decision 2026-11-05): the $S$-matrix, the interacting in and out states and the invariant amplitude $\mathcal M$ (§C6b.1); transition probabilities in a box (§C6b.2) and the cross section (§C6b.3), with every factor of $d\sigma$ labelled by its origin, the flux factor in invariant form, the phase space, the centre-of-mass frame and the threshold of a process; two-body scattering kinematics with the Källén function (§C6b.4); decay widths (§C6b.5) and decay kinematics, two-body and ★ three-body with the Dalitz region (§C6b.6); the width in the propagator and the Breit–Wigner shape (§C6b.7); and the course's careful version of the cross section, with wave packets, ending with the transformation of $\sigma$ as an area (§C6b.8–§C6b.9). The amplitudes themselves — contractions with external particles, Wick's theorem between particle states, first and second order, the Feynman rules for $i\mathcal M$, amplitudes as amputated correlation functions, the classical source and the worked translations — are in [[· C6c Feynman Rules for Amplitudes]]. The correlation functions, Wick's theorem and the Feynman rules it starts from are in [[· C6a Interactions and Correlation Functions]]. In Yu's book the material of C6b is in §6.2, §6.5 and §10.6.
 
@@ -67,15 +67,16 @@ C6b follows Yu §6.5 subsection by subsection (§C6b.2–§C6b.6; the width in t
 - [[§C6b.3 The Cross Section#^thm-c6b-3-7|§C6b.3.7]] The Flux Factor in Invariant Form
 - [[§C6b.3 The Cross Section#^thm-c6b-3-8|§C6b.3.8]] The Phase Space Is Lorentz Invariant
 - [[§C6b.3 The Cross Section#^thm-c6b-3-9|§C6b.3.9]] The Differential Cross Section
-- [[§C6b.3 The Cross Section#^thm-c6b-3-10|§C6b.3.10]] The Cross Section Is an Area for Every n
-- [[§C6b.3 The Cross Section#^thm-c6b-3-11|§C6b.3.11]] The Threshold of a 2 → n Process
+- [[§C6b.3 The Cross Section#^thm-c6b-3-10|§C6b.3.10]] Spin Sums Are Traces: Independent of the Spin Basis
+- [[§C6b.3 The Cross Section#^thm-c6b-3-11|§C6b.3.11]] The Cross Section Is an Area for Every n
+- [[§C6b.3 The Cross Section#^thm-c6b-3-12|§C6b.3.12]] The Threshold of a 2 → n Process
 - [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|§C6b.4.1]] Two-Body Phase Space in the Centre-of-Mass Frame
 - [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|§C6b.4.2]] The Centre-of-Mass Momentum
 - [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|§C6b.4.3]] ★ The Centre-of-Mass Flux Factor via λ
 - [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-4|§C6b.4.4]] The 2 → 2 Differential Cross Section in the Centre-of-Mass Frame
 - [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-5|§C6b.4.5]] The Total 2 → 2 Cross Section; Azimuthal Symmetry
 - [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-6|§C6b.4.6]] Two Identical Final Particles: Half the Sphere
-- [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|§C6b.4.7]] ★ Equal Masses in Pairs
+- [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|§C6b.4.7]] Equal Masses in Pairs
 - [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|§C6b.4.8]] All Masses Equal
 - [[§C6b.5 Decay Widths#^thm-c6b-5-3|§C6b.5.3]] The Lifetime Is the Mean Decay Time
 - [[§C6b.5 Decay Widths#^thm-c6b-5-4|§C6b.5.4]] The Transition Probability of One Particle in a Box

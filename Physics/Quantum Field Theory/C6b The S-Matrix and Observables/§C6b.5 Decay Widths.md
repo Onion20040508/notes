@@ -244,7 +244,7 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 >
 > since integrating over all final momenta counts each state of identical particles $S_{\rm id}$ times ([[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-8|Theorem §C6b.2.8]] in the box, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-4|Theorem §C6b.9.4]]; Yu eqs. (6.376)–(6.377)).
 >
-> ⚑ By-product: $[\Gamma] = 1$ for every $n$. With $N = 1 + n$, $[\mathcal M] = 4 - (1 + n) = 3 - n$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]]) and $[d\Pi_n] = 2n - 4$ ([[§C6b.3 The Cross Section#^der-c6b-3-10|Derivation §C6b.3.10]], Step 2):
+> ⚑ By-product: $[\Gamma] = 1$ for every $n$. With $N = 1 + n$, $[\mathcal M] = 4 - (1 + n) = 3 - n$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]]) and $[d\Pi_n] = 2n - 4$ ([[§C6b.3 The Cross Section#^der-c6b-3-11|Derivation §C6b.3.11]], Step 2):
 >
 > $$
 > [d\Gamma] = \Bigl[\frac{1}{2m_A}\Bigr] + 2[\mathcal M] + [d\Pi_n] = -1 + 2(3 - n) + (2n - 4) = 1 :
@@ -282,27 +282,27 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 >
 > for every $n$: the width of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] is an energy, as [[§C6b.5 Decay Widths#^def-c6b-5-1|Def. §C6b.5.1]] demands. For a two-body decay $\mathcal M$ has the dimension of a mass.
 >
-> *Model:* [[§C6b.5 Decay Widths#^mod-c6b-5-1|Model §C6b.5.1]]; *applies:* relativistic normalization, four spacetime dimensions; every order. The scattering counterpart is [[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]].
+> *Model:* [[§C6b.5 Decay Widths#^mod-c6b-5-1|Model §C6b.5.1]]; *applies:* relativistic normalization, four spacetime dimensions; every order. The scattering counterpart is [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]].
 >
-> *Source: written here from [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]] and the dimension count of [[§C6b.3 The Cross Section#^der-c6b-3-10|Derivation §C6b.3.10]] · Yu §6.5.4, after eq. (6.370) ("$\Gamma$ 具有质量的量纲")*
+> *Source: written here from [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]] and the dimension count of [[§C6b.3 The Cross Section#^der-c6b-3-11|Derivation §C6b.3.11]] · Yu §6.5.4, after eq. (6.370) ("$\Gamma$ 具有质量的量纲")*
 
 ^thm-c6b-5-7
 
 > [!derivation]- Derivation
 > **Step 1** (the amplitude). By [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]], $[\mathcal M] = 4 - N = 4 - (1 + n) = 3 - n$, so $[|\mathcal M|^2] = 6 - 2n$; for $n = 2$, $[\mathcal M] = 1$.
 >
-> **Step 2** (phase space). With $[d^3p] = 3$, $[E] = 1$, $[\delta^4] = -4$ ([[§C6b.3 The Cross Section#^der-c6b-3-10|Derivation §C6b.3.10]], Step 2): $[d\Pi_n] = n(3 - 1) - 4 = 2n - 4$.
+> **Step 2** (phase space). With $[d^3p] = 3$, $[E] = 1$, $[\delta^4] = -4$ ([[§C6b.3 The Cross Section#^der-c6b-3-11|Derivation §C6b.3.11]], Step 2): $[d\Pi_n] = n(3 - 1) - 4 = 2n - 4$.
 >
 > **Step 3** (initial state). $[1/(2m_A)] = -1$.
 >
-> **Step 4** (sum). $[d\Gamma] = -1 + (6 - 2n) + (2n - 4) = 1$. The $n$-dependence of $|\mathcal M|^2$ is cancelled by that of the phase space, as in [[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]].
+> **Step 4** (sum). $[d\Gamma] = -1 + (6 - 2n) + (2n - 4) = 1$. The $n$-dependence of $|\mathcal M|^2$ is cancelled by that of the phase space, as in [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]].
 >
 > **What the derivation shows.**
 > - The ⚑ of [[§C6b.5 Decay Widths#^der-c6b-5-6|Derivation §C6b.5.6]] and of the two-body width ([[§C6b.6 Decay Kinematics#^der-c6b-6-2|Derivation §C6b.6.2]]) are this theorem at general $n$ and at $n = 2$.
 
 ^der-c6b-5-7
 
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]], [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]], [[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]]
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]], [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]], [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]]
 
 > [!theorem] Theorem §C6b.5.8: The Decay Threshold
 > A particle $A$ of mass $m_A$ can decay into $n \ge 2$ particles of masses $m_1, \dots, m_n$ only if
@@ -311,7 +311,7 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 > m_A > \sum_{j=1}^nm_j .
 > $$
 >
-> The rest frame of $A$ is the centre-of-mass frame of the decay products, $E_{\rm cm} = \sqrt{p_A^2} = m_A$ ([[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]]), and this is the threshold of [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]] with $E_{\rm cm} = m_A$: at $m_A = \sum_jm_j$ the phase space has zero volume, below it $d\Pi_n$ has no support.
+> The rest frame of $A$ is the centre-of-mass frame of the decay products, $E_{\rm cm} = \sqrt{p_A^2} = m_A$ ([[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]]), and this is the threshold of [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]] with $E_{\rm cm} = m_A$: at $m_A = \sum_jm_j$ the phase space has zero volume, below it $d\Pi_n$ has no support.
 >
 > *Model:* any (kinematics); *applies:* every frame ($m_A$ and the $m_j$ are invariants), independent of the dynamics.
 >
@@ -324,14 +324,14 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 >
 > **Step 2** (the energies). The energy part requires $\sum_jE_j = m_A$ with $E_j = \sqrt{\mathbf p_j^2 + m_j^2} \ge m_j$, equality only at $\mathbf p_j = \mathbf 0$; hence $m_A \ge \sum_jm_j$, with equality only when every product is at rest.
 >
-> **Step 3** (zero volume at equality). [[§C6b.3 The Cross Section#^der-c6b-3-11|Derivation §C6b.3.11]], Step 3, with $Q = m_A - \sum_jm_j$: $\int d\Pi_n \propto Q^{(3n-5)/2} \to 0$; for $n = 2$, $\int d\Pi_2 = |\mathbf p_1|/(4\pi m_A) \to 0$ ([[§C6b.6 Decay Kinematics#^thm-c6b-6-1|Theorem §C6b.6.1]]).
+> **Step 3** (zero volume at equality). [[§C6b.3 The Cross Section#^der-c6b-3-12|Derivation §C6b.3.12]], Step 3, with $Q = m_A - \sum_jm_j$: $\int d\Pi_n \propto Q^{(3n-5)/2} \to 0$; for $n = 2$, $\int d\Pi_2 = |\mathbf p_1|/(4\pi m_A) \to 0$ ([[§C6b.6 Decay Kinematics#^thm-c6b-6-1|Theorem §C6b.6.1]]).
 >
 > **What the derivation shows.**
 > - This is the third bullet of [[§C6b.5 Decay Widths#^der-c6b-5-6|Derivation §C6b.5.6]] ("What the derivation shows"), stated as a theorem; the kinematic filter of the first-order Feynman rules is this threshold ([[§C6c.4 First Order꞉ Enumerate, then Filter|§C6c.4]]).
 
 ^der-c6b-5-8
 
-*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-5|Def. §C6b.3.5]], [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]]
+*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]], [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]]
 
 > [!theorem] Theorem §C6b.5.9: The Width Is Frame-Independent; a Moving Particle Decays at Γ/γ
 > 1. The partial and total widths of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] are Lorentz invariants, and so is the lifetime $\tau = 1/\Gamma$: all are rest-frame quantities of $A$.
@@ -453,6 +453,6 @@ The decay rate follows from the box chain of [[§C6b.2 Transition Probabilities 
 
 > [!remark]- Connections
 > - The exponential decay law ([[§C6b.5 Decay Widths#^law-c6b-5-2|Law §C6b.5.2]]) and the lifetime are the decay constant of radioactive decay, and the width–lifetime relation is the natural line width of quantum mechanics — [[§A7.2 Radioactive Decay#^thm-a7-2-2|QM Theorem §A7.2.2]], [[§A3.5 The Heisenberg Uncertainty Principle#^def-a3-5-1|QM Def. §A3.5.1]].
-> - The decay formula is the cross-section formula with one initial particle: the factor $\frac{1}{2m_A}$ replaces the flux factor, and the threshold and the dimension count mirror those of scattering — [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]], [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]], [[§C6b.3 The Cross Section#^thm-c6b-3-10|Theorem §C6b.3.10]].
+> - The decay formula is the cross-section formula with one initial particle: the factor $\frac{1}{2m_A}$ replaces the flux factor, and the threshold and the dimension count mirror those of scattering — [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]], [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]], [[§C6b.3 The Cross Section#^thm-c6b-3-11|Theorem §C6b.3.11]].
 > - The time-dilated rate of a moving particle is the time dilation of special relativity, seen in cosmic-ray muons reaching the ground; the propagator route gives the same $m/E$ — [[§A2.1 Time Dilation#^thm-a2-1-2|REL Theorem §A2.1.2]], [[§C6b.7 The Width in the Propagator#^thm-c6b-7-3|Theorem §C6b.7.3]].
 > - The width also sets the shape of a resonance: the Breit–Wigner peak of full width $\Gamma$ — [[§C6b.7 The Width in the Propagator#^thm-c6b-7-4|Theorem §C6b.7.4]].

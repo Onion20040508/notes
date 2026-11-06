@@ -1,0 +1,54 @@
+% ADDED figure (2026-11-06): Example §C6c.6.3, φ1 φ1 → φ2 φ2 at order g² in the φ1φ2φ3 theory; t- and u-channel φ3 exchange, with the vertices opened into their legs (after the user's PS9 Problem 3(a) drawing). Source kept in qft-C/tools/hw9/figs/.
+\tikzset{
+  fone/.style={line width=0.9pt, figG},
+  ftwo/.style={line width=0.9pt, figB},
+  fthr/.style={line width=0.9pt, figR, densely dashed},
+  c3/.style={circle, fill=figO, draw=figO, inner sep=0pt, minimum size=5pt},
+  fdlab/.style={font=\scriptsize, inner sep=2.4pt},
+  fdS/.style={font=\small},
+  vtx/.style={densely dashed, line width=0.4pt, gray},
+  leg/.style={circle, fill=figO, inner sep=1.2pt},
+}
+\begin{tikzpicture}[font=\small]
+  % legend
+  \begin{scope}[xshift=-3.2cm, yshift=0.35cm]
+    \draw[fone] (0,0.5)--(0.6,0.5); \node[fdlab,right] at (0.6,0.5){$\phi_1$ ($m_1$)};
+    \draw[ftwo] (0,0)--(0.6,0); \node[fdlab,right] at (0.6,0){$\phi_2$ ($m_2$)};
+    \draw[fthr] (0,-0.5)--(0.6,-0.5); \node[fdlab,right] at (0.6,-0.5){$\phi_3$ ($m_3$)};
+    \node[c3] at (0.3,-1.05){}; \node[fdlab,right] at (0.6,-1.05){$-ig$};
+  \end{scope}
+  % (t)
+  \begin{scope}[xshift=1.2cm]
+    \draw[fone] (-1.0,1.0)--(0,0.6); \draw[ftwo] (0,0.6)--(1.0,1.0);
+    \draw[fone] (-1.0,-1.0)--(0,-0.6); \draw[ftwo] (0,-0.6)--(1.0,-1.0);
+    \draw[fthr] (0,0.6)--(0,-0.6);
+    \node[c3] at (0,0.6){}; \node[c3] at (0,-0.6){};
+    \node[fdlab,left] at (-1.0,1.0){$p_A$}; \node[fdlab,left] at (-1.0,-1.0){$p_B$};
+    \node[fdlab,right] at (1.0,1.0){$p_1$}; \node[fdlab,right] at (1.0,-1.0){$p_2$};
+    \node[fdlab,right] at (0,0){$p_A - p_1$};
+    \node[fdS,align=center] at (0,-1.75) {(t) $p_A, p_1$ at one vertex\\[1pt] $\dfrac{-ig^2}{t - m_3^2}$};
+  \end{scope}
+  % (u)
+  \begin{scope}[xshift=5.4cm]
+    \draw[fone] (-1.0,1.0)--(0,0.6); \draw[fone] (-1.0,-1.0)--(0,-0.6);
+    \draw[ftwo] (0,0.6)--(1.1,-1.0); \draw[ftwo] (0,-0.6)--(1.1,1.0);
+    \draw[fthr] (0,0.6)--(0,-0.6);
+    \node[c3] at (0,0.6){}; \node[c3] at (0,-0.6){};
+    \node[fdlab,left] at (-1.0,1.0){$p_A$}; \node[fdlab,left] at (-1.0,-1.0){$p_B$};
+    \node[fdlab,right] at (1.1,1.0){$p_1$}; \node[fdlab,right] at (1.1,-1.0){$p_2$};
+    \node[fdlab,left] at (0,0){$p_A - p_2$};
+    \node[fdS,align=center] at (0.05,-1.75) {(u) $p_A, p_2$ at one vertex\\[1pt] $\dfrac{-ig^2}{u - m_3^2}$};
+  \end{scope}
+  % opened vertices of (t)
+  \begin{scope}[xshift=9.9cm]
+    \draw[vtx] (0,0.75) circle (0.42); \draw[vtx] (0,-0.75) circle (0.42);
+    \node[leg] (a1) at (-0.27,0.86){}; \node[leg] (a2) at (0.27,0.86){}; \node[leg] (a3) at (0,0.47){};
+    \node[leg] (b1) at (-0.27,-0.86){}; \node[leg] (b2) at (0.27,-0.86){}; \node[leg] (b3) at (0,-0.47){};
+    \draw[fone] (-1.1,1.15)--(a1); \draw[ftwo] (a2)--(1.1,1.15);
+    \draw[fone] (-1.1,-1.15)--(b1); \draw[ftwo] (b2)--(1.1,-1.15);
+    \draw[fthr] (a3)--(b3);
+    \node[fdlab,left] at (-1.1,1.15){$p_A$}; \node[fdlab,left] at (-1.1,-1.15){$p_B$};
+    \node[fdlab,right] at (1.1,1.15){$p_1$}; \node[fdlab,right] at (1.1,-1.15){$p_2$};
+    \node[fdS,align=center] at (0,-1.75) {(t) opened: one leg each\\[1pt] of $\phi_1$, $\phi_2$, $\phi_3$ per vertex};
+  \end{scope}
+\end{tikzpicture}
