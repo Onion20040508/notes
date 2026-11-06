@@ -57,8 +57,18 @@ tags: [differentiable-manifolds, math591]
 
 ^def-13-2
 
+> [!example] Example §13.3: Matrix Groups Act Continuously on Column Vectors
+> The actions of Example [[§13 Group Actions and Orbit Spaces#^ex-13-1|§13.1]] are continuous (Definition [[§13 Group Actions and Orbit Spaces#^def-13-2|§13.2]]), each group carrying the topology induced from $\operatorname{Mat}(n,\mathbb{R}) = \mathbb{R}^{n^2}$. Matrix multiplication $\operatorname{Mat}(n,\mathbb{R}) \times \mathbb{R}^n \to \mathbb{R}^n$, $(g, x) \mapsto gx$, has components $(gx)_i = \sum_{j=1}^n g_{ij} x_j$, which are polynomial in the $n^2 + n$ entries of $(g, x)$; so it is continuous. For a matrix group $G \subseteq \operatorname{Mat}(n,\mathbb{R})$ the product topology on $G \times \mathbb{R}^n$ is the subspace topology from $\operatorname{Mat}(n,\mathbb{R}) \times \mathbb{R}^n$, and the action map is the restriction of matrix multiplication to this subspace, hence continuous. The complex groups acting on $\mathbb{C}^n$ are handled in the same way: the real and imaginary parts of $\sum_j g_{ij} z_j$ are polynomial in the real coordinates of $(g, z)$.
+
+^ex-13-3
+
+> [!example] Example §13.4: A Subgroup Acts Continuously by Multiplication
+> Let $G$ be a topological group and $H \le G$ a subgroup with the subspace topology. The action $(h, g) \mapsto hg$ of Example [[§13 Group Actions and Orbit Spaces#^ex-13-2|§13.2]] is continuous: it is the restriction to the subspace $H \times G$ of $G \times G$ of the multiplication $G \times G \to G$, which is continuous because $G$ is a topological group, and the restriction of a continuous map to a subspace is continuous.
+
+^ex-13-4
+
 > [!remark] Remark
-> Both examples above are continuous: matrix multiplication $g x$ is polynomial in the entries of $(g, x)$, and $(h, g) \mapsto hg$ is the restriction to $H \times G$ of the (continuous) multiplication of $G$. For a continuous action each individual map $x \mapsto g \cdot x$ is a homeomorphism of $X$ (Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]] below).
+> For a continuous action each individual map $x \mapsto g \cdot x$ is a homeomorphism of $X$ (Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]] below).
 
 ^rem-13-2
 
@@ -79,7 +89,7 @@ tags: [differentiable-manifolds, math591]
 > - Home: [[§27 Orbits#^def-27-1|493 Def. §27.1 (Orbit)]], where the orbit is written $Gx$.
 
 > [!remark] Remark: What an Orbit Is
-> The orbit of $x$ is the set of all places $x$ can be sent by the group: everything *reachable* from $x$ by acting with some $g \in G$. Two questions determine what an orbit looks like: what does the group *preserve*, and what does it *mix*? Whatever quantity is preserved by every $g$ is constant on orbits (so the orbit lies inside a level set of it); whatever the group can mix, it mixes within that level set. For rotations of $\mathbb{R}^n$ the preserved quantity is the norm $|x|$, and rotations mix everything of a given norm; so the orbits are spheres (Example [[§13 Group Actions and Orbit Spaces#^ex-13-4|§13.4]], Example [[§13 Group Actions and Orbit Spaces#^ex-13-5|§13.5]]).
+> The orbit of $x$ is the set of all places $x$ can be sent by the group: everything *reachable* from $x$ by acting with some $g \in G$. Two questions determine what an orbit looks like: what does the group *preserve*, and what does it *mix*? Whatever quantity is preserved by every $g$ is constant on orbits (so the orbit lies inside a level set of it); whatever the group can mix, it mixes within that level set. For rotations of $\mathbb{R}^n$ the preserved quantity is the norm $|x|$, and rotations mix everything of a given norm; so the orbits are spheres (Example [[§13 Group Actions and Orbit Spaces#^ex-13-6|§13.6]], Example [[§13 Group Actions and Orbit Spaces#^ex-13-7|§13.7]]).
 
 ^rem-13-3
 
@@ -136,19 +146,19 @@ tags: [differentiable-manifolds, math591]
 > - The underlying set is the orbit set of [[§27 Orbits#^def-27-4|493 Def. §27.4 (Orbit Space Notation)]], written $G \backslash X$ there for a left action.
 > - The topology is the quotient topology of [[§13 Quotient Topology#^def-13-3|590 Def. §13.3 (Quotient Space)]].
 
-> [!example] Example §13.3: $\mathbb{CP}^n$ Is an Orbit Space
+> [!example] Example §13.5: $\mathbb{CP}^n$ Is an Orbit Space
 > The relation of [[§9 Complex Projective Space#^def-9-1|Def. §9.1]] on $S^{2n+1}$, $z \sim w \iff w = \xi z$ for some $\xi \in S^1$, is precisely the orbit relation of the action of $\mathrm{U}(1) = S^1$ on $S^{2n+1}$ by scalar multiplication, $\xi \cdot z = \xi z$, which is continuous, being polynomial in the real coordinates. So $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ is an orbit space, and Proposition [[§9 Complex Projective Space#^prop-9-1|§9.1]] was our first Hausdorff orbit space. Which continuous actions have Hausdorff orbit spaces in general is the subject of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] below.
 >
 > *Lee: cf. Problem 1-9*
 
-^ex-13-3
+^ex-13-5
 
 > [!remark]- Connections
 > - The smooth structure on this orbit space: [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2 (The Standard Atlas Is Smooth)]].
 
-Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in [[§9 Complex Projective Space|Complex Projective Space]]; the circle group $\mathrm{U}(1)$ acting there in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; an orbit space in [[§13 Group Actions and Orbit Spaces#^ex-13-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§25 The Geometric Tangent Space#^rem-25-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§30 The Differential in Coordinates#^rem-30-6|Remark: The Strategy]]; and the base of the Hopf fibration in [[§46 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
+Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in [[§9 Complex Projective Space|Complex Projective Space]]; the circle group $\mathrm{U}(1)$ acting there in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; an orbit space in [[§13 Group Actions and Orbit Spaces#^ex-13-5|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§25 The Geometric Tangent Space#^rem-25-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§30 The Differential in Coordinates#^rem-30-6|Remark: The Strategy]]; and the base of the Hopf fibration in [[§46 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
 
-> [!example] Example §13.4: $\mathrm{SO}(2)$ Acting on $\mathbb{R}^2$ — the Picture
+> [!example] Example §13.6: $\mathrm{SO}(2)$ Acting on $\mathbb{R}^2$ — the Picture
 > Let $\mathrm{SO}(2,\mathbb{R})$, the rotations of the plane, act on $\mathbb{R}^2$ by matrix multiplication. A rotation preserves $|x|$, so $g \cdot x$ stays on the circle of radius $|x|$; and a rotation through the right angle takes $x$ to any prescribed point of that circle. Hence
 >
 > $$
@@ -161,7 +171,7 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 > \mathbb{R}^2/\mathrm{SO}(2) \;\cong\; [0, \infty), \qquad [x] \longmapsto |x|.
 > $$
 
-^ex-13-4
+^ex-13-6
 
 ![[m591-6-1.svg]]
 *The orbits of $\mathrm{SO}(2)$ on $\mathbb{R}^2$: each circle about the origin is one orbit and the origin is its own orbit; the projection $\pi$ collapses each circle to its radius, so $\mathbb{R}^2/\mathrm{SO}(2) \cong [0,\infty)$.*
@@ -170,7 +180,7 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 
 *(Not from lecture; animation added, vault only.)* Rotations moving points along their orbits: each circle about the origin is one orbit and the origin is fixed. Right, the orbit space, one point per circle, $\mathbb{R}^2/\mathrm{SO}(2) \cong [0, \infty)$.
 
-> [!example] Example §13.5: $\mathrm{SO}(3)$ Acting on $\mathbb{R}^3$
+> [!example] Example §13.7: $\mathrm{SO}(3)$ Acting on $\mathbb{R}^3$
 > This is the previous example one dimension up, with spheres in place of circles. Let $\mathrm{SO}(3,\mathbb{R})$ act on $\mathbb{R}^3$ by matrix multiplication. Orthogonal matrices preserve the norm ($|gx|^2 = (gx)\cdot(gx) = x \cdot x = |x|^2$), so each orbit lies in a sphere $S_r = \{|x| = r\}$ centered at the origin. In fact:
 > - $\mathcal{O}_0 = \{0\}$.
 > - For $x \neq 0$, $\mathcal{O}_x = S_{|x|}$, the whole sphere of radius $|x|$: given $y$ with $|y| = |x| = r$, let $u = x/r$, $v = y/r$, extend $u$ to an orthonormal basis $(u, u_2, u_3)$ and $v$ to an orthonormal basis $(v, v_2, v_3)$ of $\mathbb{R}^3$ (Gram–Schmidt), replacing $u_3$ by $-u_3$ if necessary so that both bases are positively oriented; then the matrix $g$ with $g u = v$, $g u_2 = v_2$, $g u_3 = v_3$ maps an orthonormal basis to an orthonormal basis, so $g \in \mathrm{O}(3)$, and it maps a positive basis to a positive basis, so $\det g > 0$, i.e. $g \in \mathrm{SO}(3)$; and $g x = r\, g u = r v = y$.
@@ -187,25 +197,25 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 > \mathbb{R}^3/\mathrm{SO}(3) \;\cong\; [0, \infty).
 > $$
 
-^ex-13-5
+^ex-13-7
 
 > [!proof]+ Proof that $\mathbb{R}^3/\mathrm{SO}(3) \cong [0,\infty)$
 > *(Not from lecture; filled in.)* Define $\rho : \mathbb{R}^3/\mathrm{SO}(3) \to [0,\infty)$ by $\rho([x]) = |x|$. It is well defined because $|gx| = |x|$, and it is a bijection by the description of the orbits ($\rho$ is injective since $[x] = [y]$ iff $|x| = |y|$, and surjective since $\rho([(r,0,0)]) = r$). It is continuous by Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]], since $\rho \circ \pi = |\cdot| : \mathbb{R}^3 \to [0,\infty)$ is continuous. Its inverse $[0,\infty) \to \mathbb{R}^3/\mathrm{SO}(3)$, $r \mapsto [(r,0,0)]$, is the composite of the continuous map $r \mapsto (r,0,0)$ with the continuous map $\pi$. Hence $\rho$ is a homeomorphism.
 
-^pf-ex-13-5
+^pf-ex-13-7
 
-*Uses:* [[§13 Group Actions and Orbit Spaces#^ex-13-5|Ex. §13.5]], [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[Universal Property of Quotient Maps]]
+*Uses:* [[§13 Group Actions and Orbit Spaces#^ex-13-7|Ex. §13.7]], [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[Universal Property of Quotient Maps]]
 
 > [!remark]- Connections
 > - The same orbits for $\mathrm{O}_3$, with the orthonormal-basis argument and the bijection with the radius: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]], [[§27 Orbits#^def-27-4|493 Def. §27.4]]; extending to an orthonormal basis is [[§21 Orthonormal Bases#^ladr-6-36|LADR 6.36]] ([[Gram–Schmidt procedure]]).
-> - With $r = 1$ this is the transitivity used in [[§14 Homogeneous Spaces#^ex-14-3|The Sphere as a Homogeneous Space, §14.3]].
+> - With $r = 1$ this is the transitivity used in [[§14 Homogeneous Spaces#^ex-14-5|The Sphere as a Homogeneous Space, §14.5]].
 
 > [!remark] Remark
 > This example was given only verbally in lecture; the proof above supplies the details. Compare it with $\mathbb{CP}^n$: there $S^1$ acts on $S^{2n+1}$ by $z \mapsto \xi z$, the orbit of $z$ is the circle $\{\xi z \mid |\xi| = 1\}$ traced inside the big sphere, and *every* orbit is a circle of the same kind—no special points. That uniformity is part of why $\mathbb{CP}^n$ comes out a manifold. The rotation examples already show one thing the coming theory must accommodate: orbits can have different “sizes” (a point and $2$-spheres), and the orbit space can have boundary ($[0,\infty)$ is a manifold *with boundary*, not a manifold). Conditions ruling this out—free actions, properness—are where the theory of quotient manifolds (Lee Ch. 21) is headed.
 
 ^rem-13-5
 
-The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-4|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-5|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-3|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
+The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
 
 ## Orbit Relations Are Open
 
@@ -306,7 +316,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 > [!remark]- Connections
 > - Applied to coset spaces in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5|§15.5]] and to $\mathbb{RP}^{n-1} = S^{n-1}/\{\pm I\}$ in [[§15 The Topology of G∕H and Real Grassmannians#^rem-15-3|On the Index]]; the special case $\mathbb{CP}^n$ was [[§9 Complex Projective Space#^prop-9-1|§9.1]].
 
-> [!example] Example §13.6: Compactness Is Needed: a Non-Hausdorff Orbit Space
+> [!example] Example §13.8: Compactness Is Needed: a Non-Hausdorff Orbit Space
 > Let the multiplicative group $\mathbb{R}^{+}$ of positive reals act on $X = \mathbb{R}^2 \setminus \{0\}$ by
 >
 > $$
@@ -317,7 +327,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 >
 > *Lee: cf. Example 21.3*
 
-^ex-13-6
+^ex-13-8
 
 ![[m591-6-2.svg]]
 *The orbits of $t \cdot (x,y) = (tx, y/t)$ in the first quadrant: the hyperbola branches $xy = c$ and the two positive half-axes. The orbit of $z_n = (1, \tfrac1n)$ also passes through $\tfrac1n \cdot z_n = (\tfrac1n, 1)$, so this one orbit has a point near $(1,0)$ and a point near $(0,1)$: $[z_n]$ converges to both $[(1,0)]$ and $[(0,1)]$, as in the proof below.*
@@ -335,16 +345,26 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 >
 > A sequence in a Hausdorff space has at most one limit (if $p \neq q$ had disjoint neighborhoods, the sequence could not be eventually in both), so $X/\mathbb{R}^{+}$ is not Hausdorff.
 
-^pf-ex-13-6
+^pf-ex-13-8
 
 *Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§3 Subspaces and Products#^prop-3-8|§3.8]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§9 Hausdorff Spaces#^thm-9-3|590 §9.3]]
 
 > [!remark] Remark: What the Example Shows
-> Every hypothesis of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] except compactness of $G$ holds here, so compactness is not removable. Seen through the criterion: the relation is open, so by Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] the graph $\Gamma$ must fail to be closed — and indeed $\big((1,\tfrac1n),(\tfrac1n,1)\big) \in \Gamma$ converges to $\big((1,0),(0,1)\big) \notin \Gamma$. The mechanism is that the orbits, the hyperbolas $xy = c$ together with the two half-axes, *accumulate on each other*: the hyperbola through $z_n$ approaches both axes at once. Compactness of $G$ is what prevents an orbit from running off to infinity and limiting onto a different orbit; properness is the general condition that does the same job for non-compact $G$.
+> Every hypothesis of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] except compactness of $G$ holds here, so compactness is not removable. Seen through the criterion, it is the closed-graph hypothesis of Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] that fails (Example [[§13 Group Actions and Orbit Spaces#^ex-13-9|§13.9]] below). The mechanism is that the orbits, the hyperbolas $xy = c$ together with the two half-axes, *accumulate on each other*: the hyperbola through $z_n$ approaches both axes at once. Compactness of $G$ is what prevents an orbit from running off to infinity and limiting onto a different orbit; properness is the general condition that does the same job for non-compact $G$.
 >
 > Note also that openness of the relation is *automatic* here (Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]]) and buys nothing by itself: the two hypotheses of Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] are genuinely independent, and for orbit spaces it is always the closed-graph half that carries the content.
 
 ^rem-13-7
+
+> [!example] Example §13.9: The Graph of the Hyperbolic Orbit Relation Is Not Closed
+> In Example [[§13 Group Actions and Orbit Spaces#^ex-13-8|§13.8]] the orbit relation is open (Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]]) and $X/\mathbb{R}^{+}$ is not Hausdorff, so by Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] the graph $\Gamma = \{\, (z, w) \in X \times X \mid z \sim w \,\}$ must fail to be closed in $X \times X$: were it closed, both hypotheses of the criterion would hold and $X/\mathbb{R}^{+}$ would be Hausdorff. A sequence in $\Gamma$ with limit outside $\Gamma$ shows this directly.
+> - *The points lie in $\Gamma$.* Acting by $t = \tfrac1n$ gives $\tfrac1n \cdot (1, \tfrac1n) = (\tfrac1n, 1)$, so $(1, \tfrac1n) \sim (\tfrac1n, 1)$, i.e. $p_n = \big((1,\tfrac1n),(\tfrac1n,1)\big) \in \Gamma$.
+> - *They converge in $X \times X$.* Coordinatewise $p_n \to p = \big((1,0),(0,1)\big)$, and both components of $p$ are nonzero, so $p \in X \times X$.
+> - *The limit is not in $\Gamma$.* The orbits of $(1,0)$ and $(0,1)$ are the positive $x$-axis and the positive $y$-axis, which are distinct (proof of Example [[§13 Group Actions and Orbit Spaces#^ex-13-8|§13.8]]); so $(1,0) \not\sim (0,1)$ and $p \notin \Gamma$.
+>
+> A closed set contains the limit of every convergent sequence in it, so $\Gamma$ is not closed.
+
+^ex-13-9
 
 > [!theorem] Theorem §13.5: Compactness of $X$ Is Not Needed
 > If a compact topological group $G$ acts continuously on a Hausdorff space $X$, then the orbit space $X/G$ is Hausdorff.
@@ -380,11 +400,36 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 ^def-13-7
 
 > [!remark] Remark: Proper Actions
-> The preceding result is the simplest of many theorems on when quotient spaces are Hausdorff. Properness is the notion that replaces compactness of $G$ altogether: every action of a compact group on a Hausdorff space is proper, and proper actions of non-compact groups are what Lee Ch. 21 treats. The examples in this course are mostly compact.
+> The preceding result is the simplest of many theorems on when quotient spaces are Hausdorff. Properness is the notion that replaces compactness of $G$ altogether: every action of a compact group on a Hausdorff space is proper (Proposition [[§13 Group Actions and Orbit Spaces#^prop-13-6|§13.6]]), and proper actions of non-compact groups are what Lee Ch. 21 treats. The examples in this course are mostly compact.
 
 ^rem-13-8
 
-> [!remark] Remark
-> Proposition [[§9 Complex Projective Space#^prop-9-1|§9.1]] is a special case: $\mathrm{U}(1) = S^1$ is compact, $S^{2n+1}$ is compact Hausdorff, and the proof given there is exactly the proof of the corollary specialized to that action.
+> [!theorem] Proposition §13.6: Actions of Compact Groups Are Proper
+> Every continuous action of a compact topological group $G$ on a Hausdorff space $X$ is proper (Definition [[§13 Group Actions and Orbit Spaces#^def-13-7|§13.7]]).
+>
+> *Lee: cf.\ Corollary 21.6, for compact Lie groups acting on manifolds*
 
-^rem-13-9
+^prop-13-6
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* To be shown: for every compact $K \subseteq X \times X$ the preimage $\Psi^{-1}(K)$ under $\Psi(g, x) = (x, g \cdot x)$ is compact. $\Psi$ is continuous by Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]], its components being the projection to $X$ and the action.
+>
+> *$\Psi^{-1}(K)$ is closed in $G \times X$.* $X \times X$ is Hausdorff (Theorem [[§3 Subspaces and Products#^thm-3-12|§3.12]]), so its compact subset $K$ is closed (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](4)), and the preimage of a closed set under the continuous map $\Psi$ is closed.
+>
+> *$\Psi^{-1}(K)$ lies in a compact set.* Let $K_1 = \mathrm{pr}_1(K) \subseteq X$ be the image of $K$ under the first projection $\mathrm{pr}_1 : X \times X \to X$; it is compact as a continuous image of a compact set (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](2)). If $(g, x) \in \Psi^{-1}(K)$, then $x = \mathrm{pr}_1(\Psi(g, x)) \in K_1$. So $\Psi^{-1}(K) \subseteq G \times K_1$, and $G \times K_1$ is compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](3)).
+>
+> *Conclusion.* $\Psi^{-1}(K)$ is closed in $G \times X$, hence closed in the subspace $G \times K_1$, being equal to its intersection with $G \times K_1$; and a closed subset of the compact space $G \times K_1$ is compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5)). So $\Psi$ is proper (Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]]), i.e. the action is proper.
+
+^pf-13-6
+
+*Uses:* [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^thm-3-12|§3.12]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]]
+
+> [!example] Example §13.10: $\mathbb{CP}^n$ Is Hausdorff by the Orbit Space Corollary
+> The Hausdorff part of Proposition [[§9 Complex Projective Space#^prop-9-1|§9.1]] is a special case of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]]. The quotient $\mathbb{CP}^n = S^{2n+1}/{\sim}$ of Definition [[§9 Complex Projective Space#^def-9-1|§9.1]] is the orbit space of $\mathrm{U}(1) = S^1$ acting on $S^{2n+1}$ by $\xi \cdot z = \xi z$: this is an action ($1z = z$ and $\xi(\eta z) = (\xi\eta)z$), and the class of $z$, $\{\, \xi z \mid \xi \in S^1 \,\}$, is the orbit of $z$. The hypotheses of the corollary hold:
+> - the action is continuous, being the restriction of $\mathbb{C} \times \mathbb{C}^{n+1} \to \mathbb{C}^{n+1}$, $(\xi, z) \mapsto \xi z$, whose real and imaginary parts are polynomial in the real coordinates;
+> - $\mathrm{U}(1) = S^1$ is compact, being closed and bounded in $\mathbb{R}^2$ (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1));
+> - $S^{2n+1}$ is compact, being closed and bounded in $\mathbb{R}^{2n+2}$, and Hausdorff, being a metric space (Proposition [[§1 Point-Set Topology Review#^prop-1-6|§1.6]](1)).
+>
+> So $\mathbb{CP}^n$ is Hausdorff. The proof given for Proposition [[§9 Complex Projective Space#^prop-9-1|§9.1]] is exactly the proof of the corollary specialized to this action.
+
+^ex-13-10

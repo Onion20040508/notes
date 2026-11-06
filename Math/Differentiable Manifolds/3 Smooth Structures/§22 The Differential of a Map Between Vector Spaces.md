@@ -89,13 +89,13 @@ Commutativity means: apply $F$ and then take coordinates, or take coordinates an
 >
 > *Compatibility.* For two linear coordinate systems $L, L'$, the overlap of the charts $(X, L)$ and $(X, L')$ is $X$, and the transition function is $L' \circ L^{-1} : \mathbb{R}^m \to \mathbb{R}^m$, a linear isomorphism with linear inverse $L \circ L'^{-1}$. Linear maps of $\mathbb{R}^m$ are smooth (their components are linear polynomials, Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)), so $L' \circ L^{-1}$ is a smooth bijection with smooth inverse, a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]), and the two charts are compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]).
 >
-> *The smooth structure.* A single chart is an atlas (Example [[§17 Differentiable Structures#^ex-17-1|§17.1]]), so by Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] the one-chart atlas $\{(X,L)\}$ determines a smooth structure, the unique maximal atlas $\overline{\{(X,L)\}}$ of charts compatible with $(X, L)$. It is the same structure for every $L$, by compatibility: $(X, L')$ is compatible with $(X, L)$, so $\overline{\{(X,L)\}}$ is a maximal atlas containing $\{(X, L')\}$, and by the uniqueness in Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] it equals $\overline{\{(X,L')\}}$.
+> *The smooth structure.* A single chart is an atlas (Example [[§17 Differentiable Structures#^ex-17-1|§17.1]]), so by Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]] the one-chart atlas $\{(X,L)\}$ determines a smooth structure, the unique maximal atlas $\overline{\{(X,L)\}}$ of charts compatible with $(X, L)$. It is the same structure for every $L$, by compatibility: $(X, L')$ is compatible with $(X, L)$, so $\overline{\{(X,L)\}}$ is a maximal atlas containing $\{(X, L')\}$, and by the uniqueness in Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]] it equals $\overline{\{(X,L')\}}$.
 >
 > *Smooth maps.* For the last claim, the coordinate representation of $F$ in the linear charts $L$ and $K$ is precisely $K \circ F \circ L^{-1} = \widetilde F$. If $F$ is smooth in the sense of Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|§22.3]], then $F = K^{-1} \circ \widetilde F \circ L$ is continuous, as a composite of continuous maps, and at every $p \in X$ the charts $(X, L) \ni p$ and $(Y, K)$, with $F(X) \subseteq Y$, have smooth coordinate representation $\widetilde F$; so $F$ is smooth in the sense of Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. Conversely, if $F$ is smooth in the sense of Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]], then by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], applied to the smooth charts $(X, L)$ and $(Y, K)$ with $F(X) \subseteq Y$, the coordinate representation $K \circ F \circ L^{-1} = \widetilde F$ is smooth; so $F$ is smooth in the sense of Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|§22.3]].
 
 ^pf-22-2
 
-*Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-2|Def. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
+*Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-2|Def. §22.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]], [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
 
 > [!remark]- Connections
 > - The one-chart atlas on $\mathbb{R}^n$: [[§17 Differentiable Structures#^ex-17-1|Ex. §17.1]]; its tangent spaces are the vector space itself, [[§30 The Differential in Coordinates#^cor-30-6|§30.6]].
@@ -185,14 +185,34 @@ $$
 > - On manifolds: agreement with the abstract differential, [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]; computing differentials by curves, [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]].
 
 > [!remark] Remark
-> Two things are worth isolating. First, the hypothesis that $F$ is smooth is used: it is what makes $\widetilde F$ differentiable so that the chain rule applies. A map can have all directional derivatives $\frac{d}{dt}\big|_0 F(p+tv)$ at a point without being differentiable there, and for such a map the formula defines nothing linear. Second, the formula uses the vector space structure of *both* spaces, in two different places: that of $X$ to form the line $p + tv$, and that of $Y$ to form the difference quotient $\frac1t\big(F(p+tv) - F(p)\big)$. Neither can be dropped, which is why the same formula will *not* serve as the definition of the differential on a general manifold: there is no “$p + tv$” and no “$F(p+tv) - F(p)$.” That is the problem [[§25 The Geometric Tangent Space|§25]] begins to address.
+> Two things are worth isolating. First, the hypothesis that $F$ is smooth is used: it is what makes $\widetilde F$ differentiable so that the chain rule applies. A map can have all directional derivatives $\frac{d}{dt}\big|_0 F(p+tv)$ at a point without being differentiable there, and for such a map the formula need not define anything linear (Example [[§22 The Differential of a Map Between Vector Spaces#^ex-22-1|§22.1]]; see also Example [[§22 The Differential of a Map Between Vector Spaces#^ex-22-2|§22.2]]). Second, the formula uses the vector space structure of *both* spaces, in two different places: that of $X$ to form the line $p + tv$, and that of $Y$ to form the difference quotient $\frac1t\big(F(p+tv) - F(p)\big)$. Neither can be dropped, which is why the same formula will *not* serve as the definition of the differential on a general manifold: there is no “$p + tv$” and no “$F(p+tv) - F(p)$.” That is the problem [[§25 The Geometric Tangent Space|§25]] begins to address.
 
 ^rem-22-2
 
 > [!remark]- Connections
-> - A witness for the first point, with every directional derivative at the origin but no derivative: [[§7 Differentiability#^rem-7-4|452 §7, Warning: The Converse Is False]]. There the directional derivatives $a^2/b$ are not even linear in the direction; [[§22 The Differential of a Map Between Vector Spaces#^ex-22-1|Example §22.1]] below is a stronger witness, whose directional derivatives are all $0$.
+> - A witness for the first point, with every directional derivative at the origin but no derivative: [[§7 Differentiability#^rem-7-4|452 §7, Warning: The Converse Is False]]. There the directional derivatives $a^2/b$ are not even linear in the direction; [[§22 The Differential of a Map Between Vector Spaces#^ex-22-2|Example §22.2]] below is a stronger witness, whose directional derivatives are all $0$.
 
-> [!example] Example §22.1: All Directional Derivatives but Not Differentiable
+> [!example] Example §22.1: Directional Derivatives That Are Not Linear in the Direction
+> *(Example supplied; not from lecture.)* Let $f : \mathbb{R}^2 \to \mathbb{R}$,
+>
+> $$
+> f(x, y) = \frac{x^2 y}{x^2 + y^2} \quad \text{for } (x, y) \neq (0, 0), \qquad f(0, 0) = 0.
+> $$
+>
+> To be shown: every directional derivative $D(v) = \frac{d}{dt}\big|_0 f(tv)$ exists, but $v \mapsto D(v)$ is not linear, so $f$ is not differentiable at $0$.
+> - *The directional derivatives.* $D(0) = 0$. For $v = (v_1, v_2) \neq 0$ and $t \neq 0$,
+>
+> $$
+> \frac{f(tv) - f(0)}{t} = \frac1t \cdot \frac{t^3 v_1^2 v_2}{t^2 (v_1^2 + v_2^2)} = \frac{v_1^2 v_2}{v_1^2 + v_2^2},
+> $$
+>
+> independent of $t$; so $D(v) = \dfrac{v_1^2 v_2}{v_1^2 + v_2^2}$.
+> - *Not linear.* $D(1,0) = 0$ and $D(0,1) = 0$, but $D(1,1) = \tfrac12 \neq D(1,0) + D(0,1)$.
+> - *Not differentiable.* If $f$ were differentiable at $0$, the chain rule along the line $t \mapsto tv$ would give $D(v) = Df_0\, v$, which is linear in $v$.
+
+^ex-22-1
+
+> [!example] Example §22.2: All Directional Derivatives but Not Differentiable
 > *(Not from lecture; added on request.)* Let $f : \mathbb{R}^2 \to \mathbb{R}$,
 >
 > $$
@@ -210,7 +230,7 @@ $$
 >
 > So the formula $Df_p(v) = \frac{d}{dt}\big|_0 f(p + tv)$ cannot be used to *prove* differentiability. The lines miss the problem: a line $y = mx$ meets the curve $y = x^3$ only at $0$ and at $x = \pm\sqrt{m}$ (when $m > 0$), a fixed distance away, and the axes meet it only at $0$; so near $0$ no line sees the value $\tfrac12$.
 
-^ex-22-1
+^ex-22-2
 
 > [!theorem] Corollary §22.4: Regular Values Without Coordinates
 > Suppose $\dim X \ge \dim Y$ and $F : X \to Y$ is smooth, and let $\widetilde F = K \circ F \circ L^{-1}$ and $\tilde p = L(p)$ be taken in linear coordinates $L$, $K$, as in [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]]. Then for $p \in X$,

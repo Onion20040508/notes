@@ -35,7 +35,7 @@ tags: [group-theory, math493]
 
 > [!remark]- Connections
 > - The orbit-space notation is restated from lecture in [[§27 Orbits#^def-27-4|Orbit Space Notation, Def. §27.4]].
-> - With topologies: the orbit space X/G with the quotient topology, [[§13 Group Actions and Orbit Spaces#^def-13-5|591 Def. §13.5]] (e.g. complex projective space as an orbit space, [[§13 Group Actions and Orbit Spaces#^ex-13-3|591 Ex. §13.3]]).
+> - With topologies: the orbit space X/G with the quotient topology, [[§13 Group Actions and Orbit Spaces#^def-13-5|591 Def. §13.5]] (e.g. complex projective space as an orbit space, [[§13 Group Actions and Orbit Spaces#^ex-13-5|591 Ex. §13.5]]).
 
 > [!definition] Definition §27.3: Transitive Action
 > The action is **transitive** if there is only one [[§27 Orbits#^def-27-1|orbit]], i.e. $Gx = X$ for some (equivalently every) $x$.

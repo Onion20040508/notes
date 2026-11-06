@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: linear — The matrix groups become smooth level sets: $\mathrm{O}(n)$ and $\mathrm{U}(n)$ by the regular value theorem, with the differential computed along straight lines.*
 
-The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-4|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-5|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-3|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
+The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
 
 The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The Classical Groups Are Topological Manifolds]] can now be kept, with [[§22 The Differential of a Map Between Vector Spaces|The Differential of a Map Between Vector Spaces]] supplying the meaning of every step.
 
@@ -137,16 +137,50 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 > - Its dimension $\frac{n(n-1)}2$ plus $n$ eigenvalues gives $\frac{n(n+1)}2$, the dimension of the symmetric matrices of Definition §23.1: the parameter count of the spectral decomposition $M=O^{\mathsf T}\Lambda O$ of a symmetric matrix ([[§R2.6 Haar Measure and the Jacobian of the Spectral Decomposition#^thm-r2-6-3|Thesis Thm. §R2.6.3]]).
 
 > [!remark] Remark
-> **The codomain is not a cosmetic choice.** It is essential that $F$ be regarded as a map into $\operatorname{Sym}(n,\mathbb{R})$ and not into $\operatorname{Mat}(n,\mathbb{R})$. Since $F(g)$ is always symmetric, $\operatorname{im} F \subseteq \operatorname{Sym}(n,\mathbb{R}) \subsetneq \operatorname{Mat}(n,\mathbb{R})$, so $F'(g)$ could never be surjective onto $\operatorname{Mat}(n,\mathbb{R})$; with that codomain $I$ would fail to be a regular value at every point and the theorem would yield nothing. Choosing the codomain to be exactly the space the map lands in is what makes the rank condition attainable — and it is also what produces the right dimension count, since $\dim \mathrm{O}(n) = n^2 - \dim(\text{codomain})$.
+> **The codomain is not a cosmetic choice.** It is essential that $F$ be regarded as a map into $\operatorname{Sym}(n,\mathbb{R})$ and not into $\operatorname{Mat}(n,\mathbb{R})$: with the larger codomain the regular value theorem yields nothing (Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23.2]]). Choosing the codomain to be exactly the space the map lands in is what makes the rank condition attainable — and it is also what produces the right dimension count, since $\dim \mathrm{O}(n) = n^2 - \dim(\text{codomain})$.
 
 ^rem-23-1
 
-> [!remark] Remark
-> The smooth structure obtained is independent of the linear coordinates used to identify $\operatorname{Mat}(n,\mathbb{R})$ with $\mathbb{R}^{n^2}$ and $\operatorname{Sym}(n,\mathbb{R})$ with $\mathbb{R}^{n(n+1)/2}$: two such identifications differ by linear isomorphisms, which are diffeomorphisms, so the level set $F^{-1}(I)$ and its graph charts transport across them without change (Proposition [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]).
+> [!example] Example §23.2: The Map $g \mapsto gg^{\mathsf T}$ into All Matrices
+> Let $n \ge 2$ and regard the map of Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]] as a map into all matrices,
+>
+> $$
+> G : \operatorname{Mat}(n,\mathbb{R}) \longrightarrow \operatorname{Mat}(n,\mathbb{R}), \qquad G(g) = g\, g^{\mathsf T}.
+> $$
+>
+> Then $G^{-1}(I) = \mathrm{O}(n)$, exactly as for $F$, but $dG_g$ is surjective at no point $g$; so $I$ fails to be a regular value of $G$ at every point of $G^{-1}(I)$, and the regular value theorem says nothing about $\mathrm{O}(n)$ through $G$.
+>
+> What has to be shown is that $dG_g : \operatorname{Mat}(n,\mathbb{R}) \to \operatorname{Mat}(n,\mathbb{R})$ is not surjective, for every $g$.
+> - *The image lies in $\operatorname{Sym}(n,\mathbb{R})$.* $G(g + tA)$ is the same polynomial in $t$ as $F(g + tA)$ in the proof of Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]], so by Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]] $dG_g(A) = Ag^{\mathsf T} + gA^{\mathsf T}$, which is symmetric (shown in that proof). Behind this: $G(g)$ is always symmetric, $\operatorname{im} G \subseteq \operatorname{Sym}(n,\mathbb{R})$, and so the velocities $dG_g(A)$ of the curves $t \mapsto G(g + tA)$ lie in $\operatorname{Sym}(n,\mathbb{R})$ too.
+> - *$\operatorname{Sym}(n,\mathbb{R})$ is a proper subspace.* $\dim \operatorname{Sym}(n,\mathbb{R}) = \tfrac{n(n+1)}{2}$ (Definition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-1|§23.1]]), and $n^2 - \tfrac{n(n+1)}{2} = \tfrac{n(n-1)}{2} > 0$ for $n \ge 2$; so $\operatorname{Sym}(n,\mathbb{R}) \subsetneq \operatorname{Mat}(n,\mathbb{R})$.
+>
+> Hence $\operatorname{im} dG_g \subseteq \operatorname{Sym}(n,\mathbb{R}) \subsetneq \operatorname{Mat}(n,\mathbb{R})$ and $dG_g$ is never surjective; in particular not at the points of $G^{-1}(I) = \mathrm{O}(n)$, which is nonempty since $I \in \mathrm{O}(n)$. By Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]] (with $\dim X = \dim Y = n^2$), $I$ is not a regular value of $G$. (For $n = 1$, $\operatorname{Sym}(1,\mathbb{R}) = \operatorname{Mat}(1,\mathbb{R})$ and nothing changes.)
 
-^rem-23-2
+^ex-23-2
 
-> [!theorem] Proposition §23.1: The Kernel of the Differential
+> [!theorem] Lemma §23.1: The Smooth Structure on $\mathrm{O}(n)$ Does Not Depend on the Linear Coordinates
+> The smooth structure on $\mathrm{O}(n)$ obtained in Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]] is independent of the linear coordinates used to identify $\operatorname{Mat}(n,\mathbb{R})$ with $\mathbb{R}^{n^2}$ and $\operatorname{Sym}(n,\mathbb{R})$ with $\mathbb{R}^{n(n+1)/2}$.
+
+^lem-23-1
+
+> [!proof]+ Proof
+> The idea: two such identifications differ by linear isomorphisms, which are diffeomorphisms (Proposition [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]), so the level set $F^{-1}(I)$ and its graph charts transport across them without change. In detail, let $(L, K)$ and $(L', K')$ be two choices of linear coordinates on $\operatorname{Mat}(n,\mathbb{R})$ and $\operatorname{Sym}(n,\mathbb{R})$, with $\widetilde F = K \circ F \circ L^{-1}$ and $\widetilde F' = K' \circ F \circ L'^{-1}$. Put $Z = L(\mathrm{O}(n)) = \widetilde F^{-1}(K(I))$ and $Z' = L'(\mathrm{O}(n)) = \widetilde F'^{-1}(K'(I))$ (proof of Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]]), with the smooth structures of Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]] given by the graph charts of $\widetilde F$ and of $\widetilde F'$. The structure $\mathcal S_L$ on $\mathrm{O}(n)$ is the one transported along the homeomorphism $L|_{\mathrm{O}(n)} : \mathrm{O}(n) \to Z$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]), and $\mathcal S_{L'}$ the one transported along $L'|_{\mathrm{O}(n)}$. In both cases the topology of $\mathrm{O}(n)$ is the subspace topology of $\operatorname{Mat}(n,\mathbb{R})$, which does not depend on the linear coordinates (Proposition [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]).
+>
+> *Step 1: $A = L' \circ L^{-1}$ restricts to a diffeomorphism $Z \to Z'$.* $A$ is a linear isomorphism of $\mathbb{R}^{n^2}$ with $A(Z) = Z'$. Let $(U_J, \varphi_J)$ be a graph chart of $Z$ and $(U'_{J'}, \varphi'_{J'})$ a graph chart of $Z'$, the latter the restriction of a coordinate projection $\pi_{I'}$. The set $\varphi_J\big(U_J \cap A^{-1}(U'_{J'})\big)$ is open, because $A|_Z$ is continuous and $\varphi_J$ is a homeomorphism, and on it
+>
+> $$
+> \varphi'_{J'} \circ A \circ \varphi_J^{-1} = \pi_{I'} \circ A \circ \varphi_J^{-1} .
+> $$
+>
+> Here $\varphi_J^{-1}$ is smooth in the Euclidean sense (observation 1 in the proof of Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]) and $A$, $\pi_{I'}$ are linear, so the composite is smooth. Every coordinate representation of $A|_Z$ in graph charts is therefore smooth, and $A|_Z : Z \to Z'$ is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]). The same argument with $A^{-1} = L \circ L'^{-1}$ and the roles of $Z$ and $Z'$ exchanged shows that $A^{-1}|_{Z'}$, the inverse of $A|_Z$, is smooth. So $A|_Z$ is a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]).
+>
+> *Step 2: the two structures agree.* With the structure $\mathcal S_L$, $L|_{\mathrm{O}(n)}$ is a diffeomorphism onto $Z$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]](2)), so $L'|_{\mathrm{O}(n)} = A|_Z \circ L|_{\mathrm{O}(n)}$ is a composite of diffeomorphisms, hence a diffeomorphism onto $Z'$. By the uniqueness in Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]](3), applied to $h = L'|_{\mathrm{O}(n)}$, the only structure on $\mathrm{O}(n)$ for which $L'|_{\mathrm{O}(n)}$ is a diffeomorphism is $\mathcal S_{L'}$; so $\mathcal S_L = \mathcal S_{L'}$. The coordinates $K$ and $K'$ entered only through the defining maps $\widetilde F$ and $\widetilde F'$, whose graph charts Step 1 used only through observations valid for every graph chart.
+
+^pf-23-1
+
+*Uses:* [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]
+
+> [!theorem] Proposition §23.2: The Kernel of the Differential
 > With $F(g) = gg^{\mathsf T}$ as above, for every $g \in \mathrm{O}(n)$,
 >
 > $$
@@ -155,7 +189,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 >
 > where $\operatorname{Skew}(n,\mathbb{R}) = \{B \mid B^{\mathsf T} = -B\}$. In particular $\ker dF_I = \operatorname{Skew}(n,\mathbb{R})$, and $\dim \ker dF_g = \tfrac{n(n-1)}{2}$ for every $g$.
 
-^prop-23-1
+^prop-23-2
 
 > [!proof]+ Proof
 > *First equality.* By definition $\ker dF_g = \{A \in \operatorname{Mat}(n,\mathbb{R}) \mid dF_g(A) = 0\}$, and $dF_g(A) = Ag^{\mathsf T} + gA^{\mathsf T}$ was computed in the proof of Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]]; matrix addition is commutative, so the condition reads $gA^{\mathsf T} + Ag^{\mathsf T} = 0$.
@@ -176,7 +210,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 > B = \begin{pmatrix} 0 & \ast \\ -(\ast)^{\mathsf T} & \ddots \end{pmatrix}, \qquad \dim \operatorname{Skew}(n,\mathbb{R}) = \binom{n}{2} = \frac{n(n-1)}{2}.
 > $$
 
-^pf-23-1
+^pf-23-2
 
 *Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]]
 
@@ -185,21 +219,21 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 > - Varying $O$ in $M=O^{\mathsf T}\Lambda O$ moves it along this tangent space, $\delta O=\delta\Omega\,O$ with $\delta\Omega$ antisymmetric, and that is where the Vandermonde volume factor of the spectral decomposition comes from ([[§R2.6 Haar Measure and the Jacobian of the Spectral Decomposition#^thm-r2-6-4|Thesis Thm. §R2.6.4]]).
 
 > [!remark] Remark: Two Readings of the Dimension
-> There are now two reasons that $\dim \mathrm{O}(n) = \tfrac{n(n-1)}{2}$, the second a combinatorial one (choosing two out of $n$): the level-set count $n^2 - \tfrac{n(n+1)}{2}$ from the regular value theorem, and the kernel count $\binom{n}{2}$ from Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1|§23.1]]. They agree by [[§21 Linear Algebra Toolkit#^prop-21-1|rank–nullity]]: $dF_g$ is surjective onto a space of dimension $\tfrac{n(n+1)}{2}$, so its kernel has dimension $n^2 - \tfrac{n(n+1)}{2}$. The kernel is not yet officially anything, but it is the *geometric tangent space* $T^{\mathrm{geo}}_g\mathrm{O}(n)$ to $\mathrm{O}(n)$ at $g$ (see [[§25 The Geometric Tangent Space|§25]]), and at $g = I$ the skew-symmetric matrices will be the *Lie algebra* $\mathfrak{so}(n)$. The same move produced $\nabla\det$ in Proposition [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], and it will recur whenever a classical group is presented as a level set.
+> There are now two reasons that $\dim \mathrm{O}(n) = \tfrac{n(n-1)}{2}$, the second a combinatorial one (choosing two out of $n$): the level-set count $n^2 - \tfrac{n(n+1)}{2}$ from the regular value theorem, and the kernel count $\binom{n}{2}$ from Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-2|§23.2]]. They agree by [[§21 Linear Algebra Toolkit#^prop-21-1|rank–nullity]]: $dF_g$ is surjective onto a space of dimension $\tfrac{n(n+1)}{2}$, so its kernel has dimension $n^2 - \tfrac{n(n+1)}{2}$. The kernel is not yet officially anything, but it is the *geometric tangent space* $T^{\mathrm{geo}}_g\mathrm{O}(n)$ to $\mathrm{O}(n)$ at $g$ (see [[§25 The Geometric Tangent Space|§25]]), and at $g = I$ the skew-symmetric matrices will be the *Lie algebra* $\mathfrak{so}(n)$. The same move produced $\nabla\det$ in Proposition [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], and it will recur whenever a classical group is presented as a level set.
 
-^rem-23-3
+^rem-23-2
 
-> [!theorem] Corollary §23.2: Consequences
+> [!theorem] Corollary §23.3: Consequences
 > $\mathrm{SO}(n)$ is a smooth manifold of dimension $\tfrac{n(n-1)}{2}$, and $\mathrm{O}(n)$ is compact.
 >
 > *Lee: Example 7.27*
 
-^cor-23-2
+^cor-23-3
 
 > [!proof]+ Proof
 > *$\mathrm{SO}(n)$ is open (and closed) in $\mathrm{O}(n)$.* By Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|§11.8]], $\mathrm{SO}(n) = \{g \in \mathrm{O}(n) \mid \det g = 1\}$. By Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], $\det g = \pm 1$ for every $g \in \mathrm{O}(n)$, so for $g \in \mathrm{O}(n)$ the conditions $\det g = 1$ and $\det g > 0$ are the same, and $\mathrm{SO}(n) = \mathrm{O}(n) \cap \det^{-1}(0,\infty)$ is an open subset of $\mathrm{O}(n)$: $\det$ is a polynomial in the entries, hence continuous on $\operatorname{Mat}(n,\mathbb{R})$, so $\det^{-1}(0,\infty)$ is open in $\operatorname{Mat}(n,\mathbb{R})$, and its intersection with $\mathrm{O}(n)$ is open in the subspace topology. ($\det$ is continuous and takes only the values $\pm1$ on $\mathrm{O}(n)$, so $\mathrm{SO}(n)$ is also closed: its complement in $\mathrm{O}(n)$ is $\mathrm{O}(n) \cap \det^{-1}(-\infty, 0)$, open by the same argument.)
 >
-> *$\mathrm{SO}(n)$ is a smooth manifold of dimension $\tfrac{n(n-1)}{2}$.* An open subset of a smooth $m$-manifold is a smooth $m$-manifold, its charts being restrictions of the given ones (Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]]). Here $M = \mathrm{O}(n)$, a smooth manifold of dimension $m = \tfrac{n(n-1)}{2}$ (Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]]), and $S = \mathrm{SO}(n)$ is open in it, as just shown; so $\mathrm{SO}(n)$ is a smooth manifold, and $\dim \mathrm{SO}(n) = m = \tfrac{n(n-1)}{2}$.
+> *$\mathrm{SO}(n)$ is a smooth manifold of dimension $\tfrac{n(n-1)}{2}$.* An open subset of a smooth $m$-manifold is a smooth $m$-manifold, its charts being restrictions of the given ones (Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]]). Here $M = \mathrm{O}(n)$, a smooth manifold of dimension $m = \tfrac{n(n-1)}{2}$ (Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]]), and $S = \mathrm{SO}(n)$ is open in it, as just shown; so $\mathrm{SO}(n)$ is a smooth manifold, and $\dim \mathrm{SO}(n) = m = \tfrac{n(n-1)}{2}$.
 >
 > *$\mathrm{O}(n)$ is compact.* Compactness of $\mathrm{O}(n)$ was shown in Corollary [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]]: it is closed as $F^{-1}(I)$ with $F$ continuous, and bounded because every column of an orthogonal matrix is a unit vector. In detail: $F$ is smooth (Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]]), hence continuous, and the point $\{I\}$ is closed in $\operatorname{Sym}(n,\mathbb{R})$, so $\mathrm{O}(n) = F^{-1}(I)$ is closed in $\operatorname{Mat}(n,\mathbb{R}) \cong \mathbb{R}^{n^2}$. By Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]](ii), $g^{\mathsf T} g = I$; its $(j,j)$ entry is
 >
@@ -209,9 +243,9 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 >
 > which says that the $j$-th column is a unit vector. Hence $|g_{ij}| \le 1$ for all $i, j$, and $\|g\|^2 = \sum_{i,j} g_{ij}^2 = n$ in the norm of Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|§11.2]], so $\mathrm{O}(n)$ lies in the closed ball of radius $\sqrt n$. Closed and bounded in $\mathbb{R}^{n^2}$, it is compact by Heine–Borel (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1)).
 
-^pf-23-2
+^pf-23-3
 
-*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§17 Differentiable Structures#^prop-17-7|§17.7]]
+*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§2 Topological Manifolds#^lem-2-10|§2.10]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§17 Differentiable Structures#^prop-17-8|§17.8]]
 
 > [!remark]- Connections
 > - Compactness is [[Heine–Borel Theorem|590 §18.12 (Heine–Borel)]].
@@ -224,7 +258,7 @@ The unitary group $\mathrm{U}(n)$ is treated the same way, with $F(g) = gg^*$ ma
 > [!remark] Remark: Where This Leaves Us
 > Every level set met so far is now a smooth manifold: $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{SO}(n)$, the spheres, and any surface cut out by a regular value. What remains owed is the global half of the internal picture: a manifold defined abstractly, not sitting inside any $\mathbb{R}^N$, has no external description until one knows it can be embedded in a Euclidean space at all. That is Whitney's embedding theorem, later in the course.
 
-^rem-23-4
+^rem-23-3
 
 ## The Unitary Group as a Smooth Manifold
 
@@ -257,10 +291,10 @@ Write $A^{\ast} = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mat
 > [!remark]- Connections
 > - Hermitian matrices are the matrices of self-adjoint operators: [[§23 Self-Adjoint and Normal Operators#^ladr-7-10|LADR 7.10]], with the conjugate transpose of [[§23 Self-Adjoint and Normal Operators#^ladr-7-7|LADR 7.7]].
 
-> [!theorem] Lemma §23.3: A One-Sided Inverse Suffices
+> [!theorem] Lemma §23.4: A One-Sided Inverse Suffices
 > If $g \in \operatorname{Mat}(n,\mathbb{C})$ satisfies $gg^* = I$, then also $g^*g = I$. Consequently $\mathrm{U}(n) = \{g \mid gg^* = I\}$.
 
-^lem-23-3
+^lem-23-4
 
 > [!proof]+ Proof
 > Let $gg^{\ast} = I$.
@@ -275,14 +309,14 @@ Write $A^{\ast} = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mat
 >
 > *The description of $\mathrm{U}(n)$.* By Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|§11.10]], $\mathrm{U}(n) = \{g \in \mathrm{GL}(n,\mathbb{C}) \mid g^{-1} = g^{\ast}\}$. If $g \in \mathrm{U}(n)$, then $gg^{\ast} = gg^{-1} = I$. Conversely, if $gg^{\ast} = I$, the two steps above show that $g$ is invertible with $g^{-1} = g^{\ast}$, so $g \in \mathrm{U}(n)$. Hence $\mathrm{U}(n) = \{g \mid gg^{\ast} = I\}$.
 
-^pf-23-3
+^pf-23-4
 
 *Uses:* [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[Invertible ⟺ nonzero determinant|LADR 9.50]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]]
 
 > [!remark]- Connections
 > - The general linear-algebra fact: [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68 (ST = I ⟺ TS = I)]]; unitary matrices in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
 
-> [!example] Example §23.2: $\mathrm{U}(n)$ Is a Smooth Manifold of Dimension $n^2$
+> [!example] Example §23.3: $\mathrm{U}(n)$ Is a Smooth Manifold of Dimension $n^2$
 > Define
 >
 > $$
@@ -293,7 +327,7 @@ Write $A^{\ast} = \bar A^{\mathsf T}$ for the conjugate transpose, so that $\mat
 >
 > *Lee: Example 7.29*
 
-^ex-23-2
+^ex-23-3
 
 ![[m591-10-6.svg]]
 *The map $F(g) = gg^{\ast}$ and its coordinate representation $\widehat F$ under the real-linear identifications $\operatorname{Mat}(n,\mathbb{C}) \cong \mathbb{R}^{2n^2}$ and $\operatorname{Herm}(n) \cong \mathbb{R}^{n^2}$.*
@@ -317,7 +351,7 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 >
 > Writing $g_{jm} = a_{jm} + i\,b_{jm}$ with $a_{jm}, b_{jm}$ the real coordinates of $g$, each summand is $g_{jm}\overline{g_{km}} = (a_{jm}a_{km} + b_{jm}b_{km}) + i\,(b_{jm}a_{km} - a_{jm}b_{km})$. So each entry $(gg^{\ast})_{jk} = \sum_m g_{jm}\overline{g_{km}}$ has real and imaginary parts that are quadratic polynomials in the real coordinates of $g$, so $F$ is smooth (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|§22.3]]).
 >
-> *$\mathrm{U}(n) = F^{-1}(I)$.* Lemma [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]]: $g \in \mathrm{U}(n) \iff gg^{\ast} = I \iff F(g) = I$.
+> *$\mathrm{U}(n) = F^{-1}(I)$.* Lemma [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|§23.4]]: $g \in \mathrm{U}(n) \iff gg^{\ast} = I \iff F(g) = I$.
 >
 > *The differential.* By Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], applied with $X = \operatorname{Mat}(n,\mathbb{C})$ and $Y = \operatorname{Herm}(n)$ as real vector spaces, for $g \in F^{-1}(I)$ and $h \in \operatorname{Mat}(n,\mathbb{C})$, $dF_g(h) = \frac{d}{dt}\big|_{t=0} F(g+th)$ with $t$ *real* — the line $g + th$ is formed with the real scalars of $X$. Since $(th)^{\ast} = \bar t\, h^{\ast} = t h^{\ast}$ for real $t$, and $^{\ast}$ is additive, $(g + th)^{\ast} = g^{\ast} + th^{\ast}$. Multiplying out,
 >
@@ -329,7 +363,7 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 >
 > the derivative at $t = 0$ of this polynomial in $t$ being its coefficient of $t$ (the constant term contributes $0$, and $\frac{d}{dt}(t^2 hh^{\ast}) = 2t\,hh^{\ast}$ vanishes at $t = 0$). It is Hermitian, as it must be: $(hg^{\ast} + gh^{\ast})^{\ast} = g^{\ast \ast }h^{\ast} + h^{\ast \ast }g^{\ast} = gh^{\ast} + hg^{\ast}$.
 >
-> *$dF_g$ is surjective.* Fix $g \in F^{-1}(I) = \mathrm{U}(n)$; we must show every $A \in \operatorname{Herm}(n)$ is $dF_g(h)$ for some $h$. Put $X = hg^{\ast}$; then $gh^{\ast} = (hg^{\ast})^{\ast} = X^{\ast}$, since $(hg^{\ast})^{\ast} = g^{\ast \ast }h^{\ast} = gh^{\ast}$, so $dF_g(h) = X + X^{\ast}$. As $g$ is invertible, $h \mapsto hg^{\ast}$ is a real-linear bijection of $\operatorname{Mat}(n,\mathbb{C})$, with inverse $X \mapsto Xg$: indeed $(hg^{\ast})g = h(g^{\ast}g) = h$ and $(Xg)g^{\ast} = X(gg^{\ast}) = X$, using $g^{\ast}g = gg^{\ast} = I$ (Lemma [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]]). So as $h$ runs over $\operatorname{Mat}(n,\mathbb{C})$, $X$ runs over all of $\operatorname{Mat}(n,\mathbb{C})$. Hence $\operatorname{im} dF_g = \{X + X^{\ast} \mid X \in \operatorname{Mat}(n,\mathbb{C})\} = \operatorname{Herm}(n)$: the inclusion $\subseteq$ because $(X + X^{\ast})^{\ast} = X^{\ast} + X$, and $\supseteq$ since any Hermitian $A$ arises from $X = \tfrac12 A$, as $\tfrac12 A + (\tfrac12 A)^{\ast} = \tfrac12 A + \tfrac12 A^{\ast} = \tfrac12 A + \tfrac12 A = A$ (the scalar $\tfrac12$ is real, so it passes through $^{\ast}$ unchanged). Explicitly $h = \tfrac12 Ag$, by $X \mapsto Xg$:
+> *$dF_g$ is surjective.* Fix $g \in F^{-1}(I) = \mathrm{U}(n)$; we must show every $A \in \operatorname{Herm}(n)$ is $dF_g(h)$ for some $h$. Put $X = hg^{\ast}$; then $gh^{\ast} = (hg^{\ast})^{\ast} = X^{\ast}$, since $(hg^{\ast})^{\ast} = g^{\ast \ast }h^{\ast} = gh^{\ast}$, so $dF_g(h) = X + X^{\ast}$. As $g$ is invertible, $h \mapsto hg^{\ast}$ is a real-linear bijection of $\operatorname{Mat}(n,\mathbb{C})$, with inverse $X \mapsto Xg$: indeed $(hg^{\ast})g = h(g^{\ast}g) = h$ and $(Xg)g^{\ast} = X(gg^{\ast}) = X$, using $g^{\ast}g = gg^{\ast} = I$ (Lemma [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|§23.4]]). So as $h$ runs over $\operatorname{Mat}(n,\mathbb{C})$, $X$ runs over all of $\operatorname{Mat}(n,\mathbb{C})$. Hence $\operatorname{im} dF_g = \{X + X^{\ast} \mid X \in \operatorname{Mat}(n,\mathbb{C})\} = \operatorname{Herm}(n)$: the inclusion $\subseteq$ because $(X + X^{\ast})^{\ast} = X^{\ast} + X$, and $\supseteq$ since any Hermitian $A$ arises from $X = \tfrac12 A$, as $\tfrac12 A + (\tfrac12 A)^{\ast} = \tfrac12 A + \tfrac12 A^{\ast} = \tfrac12 A + \tfrac12 A = A$ (the scalar $\tfrac12$ is real, so it passes through $^{\ast}$ unchanged). Explicitly $h = \tfrac12 Ag$, by $X \mapsto Xg$:
 >
 > $$
 > hg^{\ast} = \tfrac12 A gg^{\ast} = \tfrac12 A, \qquad gh^{\ast} = g\big(\tfrac12 Ag\big)^{\ast} = \tfrac12\, g g^{\ast} A^{\ast} = \tfrac12 A ,
@@ -343,20 +377,34 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 >
 > *Conclusion.* $\dim_{\mathbb{R}}\operatorname{Mat}(n,\mathbb{C}) = 2n^2 \ge n^2 = \dim_{\mathbb{R}}\operatorname{Herm}(n)$ (Definitions [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-2|§23.2]]), so by Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]] surjectivity of $dF_g$ at every $g \in F^{-1}(I)$ is exactly the statement that $I$ is a regular value. In the coordinates of the square above, this says: $\widehat F = K \circ F \circ L^{-1} : \mathbb{R}^{2n^2} \to \mathbb{R}^{n^2}$ is smooth, its Jacobian at $L(g)$ has maximal rank $n^2$ for every $g \in F^{-1}(I)$, and, $K$ being injective, $\widehat F(L(g)) = K(F(g)) = K(I) \iff F(g) = I$, so $\widehat F^{-1}(K(I)) = L(\mathrm{U}(n))$; thus $K(I)$ is a regular value of $\widehat F$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]). Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], with $W = \mathbb{R}^{2n^2}$, $n + k = 2n^2$ and $k = n^2$, makes $L(\mathrm{U}(n))$ a smooth manifold of dimension $2n^2 - n^2 = n^2$. The topology of $\mathrm{U}(n)$ is the subspace topology of $\operatorname{Mat}(n,\mathbb{C})$, defined by $L$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]]), so $L$ restricts to a homeomorphism $\mathrm{U}(n) \to L(\mathrm{U}(n))$, and transporting along it (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]) makes $\mathrm{U}(n)$ a smooth manifold of dimension $2n^2 - n^2 = n^2$.
 
-^pf-ex-23-2
+^pf-ex-23-3
 
-*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-2|Def. §23.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]], [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|§22.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]
+*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-2|Def. §23.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]], [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|§22.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|§23.4]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]
 
 > [!remark]- Connections
 > - Unitary matrices in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]]; $\mathrm{U}(1)$ is the circle, [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|Ex. §11.3]].
 > - Its tangent spaces: [[§25 The Geometric Tangent Space#^ex-25-3|Ex. §25.3]].
 
+> [!example] Example §23.4: The Differential of $g \mapsto gg^{\ast}$ Is Not Complex-Linear
+> For the map $F(g) = gg^{\ast}$ of Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|§23.3]], the derivative $dF_g(h) = hg^{\ast} + gh^{\ast}$ (computed in its proof) is real-linear but not complex-linear: $dF_g(ih) = i\,hg^{\ast} - i\,gh^{\ast}$, which differs from $i\,dF_g(h)$ unless $gh^{\ast} = 0$. In particular, for $g \in \mathrm{U}(n)$ it differs for every $h \neq 0$.
+> - *Real-linear.* $dF_g$ is the differential of a smooth map between real vector spaces, hence real-linear; directly, $(sh)^{\ast} = s\,h^{\ast}$ for real $s$, so $dF_g(sh) = s\,dF_g(h)$, and additivity is clear.
+> - *The computation.* $^{\ast}$ conjugates the entries and transposes, so $(ih)^{\ast} = \bar{i}\,h^{\ast} = -i\,h^{\ast}$, and
+>
+> $$
+> dF_g(ih) = (ih)g^{\ast} + g(ih)^{\ast} = i\,hg^{\ast} - i\,gh^{\ast}, \qquad i\,dF_g(h) = i\,hg^{\ast} + i\,gh^{\ast} .
+> $$
+>
+> The difference is $i\,dF_g(h) - dF_g(ih) = 2i\,gh^{\ast}$, which is zero exactly when $gh^{\ast} = 0$.
+> - *For $g \in \mathrm{U}(n)$.* $g$ is invertible, so $gh^{\ast} = 0$ forces $h^{\ast} = g^{-1}(gh^{\ast}) = 0$, i.e. $h = 0$. So $dF_g(ih) \neq i\,dF_g(h)$ for every $h \neq 0$, and $dF_g$ is not complex-linear.
+
+^ex-23-4
+
 > [!remark] Remark
-> **Why over $\mathbb{R}$.** The derivative $h \mapsto hg^{\ast} + gh^{\ast}$ is real-linear but not complex-linear: $dF_g(ih) = i\,hg^{\ast} - i\,gh^{\ast}$, which differs from $i\,dF_g(h)$ unless $gh^{\ast} = 0$. This is the conjugation in $g^{\ast}$ at work, and it is why Problem 4 insists that both spaces be regarded as real vector spaces. It is also why the holomorphic regular value theorem of [[§7 The Regular Value Theorem#Holomorphic Level Sets|§7, Holomorphic Level Sets]] does not apply, and why $\dim \mathrm{U}(n) = n^2$ can be odd, which no holomorphic level set can.
+> **Why over $\mathbb{R}$.** The derivative $h \mapsto hg^{\ast} + gh^{\ast}$ is real-linear but not complex-linear (Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-4|§23.4]]). This is the conjugation in $g^{\ast}$ at work, and it is why Problem 4 insists that both spaces be regarded as real vector spaces. It is also why the holomorphic regular value theorem of [[§7 The Regular Value Theorem#Holomorphic Level Sets|§7, Holomorphic Level Sets]] does not apply, and why $\dim \mathrm{U}(n) = n^2$ can be odd, which no holomorphic level set can.
 
-^rem-23-5
+^rem-23-4
 
-> [!theorem] Proposition §23.4: The Kernel of the Differential
+> [!theorem] Proposition §23.5: The Kernel of the Differential
 > For $g \in \mathrm{U}(n)$,
 >
 > $$
@@ -365,10 +413,10 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 >
 > the skew-Hermitian matrices, and $\dim_{\mathbb{R}} \mathfrak{u}(n) = n^2$.
 
-^prop-23-4
+^prop-23-5
 
 > [!proof]+ Proof
-> *$\ker dF_g = \mathfrak{u}(n)\cdot g$.* By the proof of Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23.2]], $dF_g(h) = hg^{\ast} + gh^{\ast}$, and $h \mapsto hg^{\ast}$ is a bijection of $\operatorname{Mat}(n,\mathbb{C})$ with inverse $X \mapsto Xg$. So every $h$ can be written uniquely as $h = Xg$ with $X = hg^{\ast}$ (uniquely, because $Xg = h$ forces $X = hg^{-1} = hg^{\ast}$). Then, using $(Xg)^{\ast} = g^{\ast}X^{\ast}$ and $gg^{\ast} = I$,
+> *$\ker dF_g = \mathfrak{u}(n)\cdot g$.* By the proof of Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|§23.3]], $dF_g(h) = hg^{\ast} + gh^{\ast}$, and $h \mapsto hg^{\ast}$ is a bijection of $\operatorname{Mat}(n,\mathbb{C})$ with inverse $X \mapsto Xg$. So every $h$ can be written uniquely as $h = Xg$ with $X = hg^{\ast}$ (uniquely, because $Xg = h$ forces $X = hg^{-1} = hg^{\ast}$). Then, using $(Xg)^{\ast} = g^{\ast}X^{\ast}$ and $gg^{\ast} = I$,
 >
 > $$
 > dF_g(Xg) = (Xg)g^{\ast} + g(Xg)^{\ast} = X\,gg^{\ast} + gg^{\ast}\,X^{\ast} = X + X^{\ast},
@@ -376,7 +424,7 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 >
 > which vanishes iff $X^{\ast} = -X$, i.e. iff $X \in \mathfrak{u}(n)$. So $\ker dF_g = \{Xg \mid X \in \mathfrak{u}(n)\} = \mathfrak{u}(n)\cdot g$.
 >
-> *$g\cdot\mathfrak{u}(n) = \mathfrak{u}(n)\cdot g$.* Conjugation by $g$ preserves $\mathfrak{u}(n)$: if $X^{\ast} = -X$ then $(gXg^{\ast})^{\ast} = g^{\ast \ast }X^{\ast}g^{\ast} = gX^{\ast}g^{\ast} = -gXg^{\ast}$; so $g \cdot \mathfrak{u}(n) = (g\,\mathfrak{u}(n)\,g^{-1})\cdot g = \mathfrak{u}(n)\cdot g$. In detail, both inclusions, using $g^{-1} = g^{\ast}$ and $g^{\ast}g = gg^{\ast} = I$ (Lemma [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]]): for $Y \in \mathfrak{u}(n)$,
+> *$g\cdot\mathfrak{u}(n) = \mathfrak{u}(n)\cdot g$.* Conjugation by $g$ preserves $\mathfrak{u}(n)$: if $X^{\ast} = -X$ then $(gXg^{\ast})^{\ast} = g^{\ast \ast }X^{\ast}g^{\ast} = gX^{\ast}g^{\ast} = -gXg^{\ast}$; so $g \cdot \mathfrak{u}(n) = (g\,\mathfrak{u}(n)\,g^{-1})\cdot g = \mathfrak{u}(n)\cdot g$. In detail, both inclusions, using $g^{-1} = g^{\ast}$ and $g^{\ast}g = gg^{\ast} = I$ (Lemma [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|§23.4]]): for $Y \in \mathfrak{u}(n)$,
 >
 > $$
 > gY = (gYg^{\ast})\,g, \qquad gYg^{\ast} \in \mathfrak{u}(n),
@@ -402,26 +450,26 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 >
 > The real-linear isomorphism $X \mapsto Xg$ maps $\mathfrak{u}(n)$ onto $\ker dF_g$, so $\dim_{\mathbb{R}} \ker dF_g = n^2$ as well. Rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) gives the same number from the other side: $dF_g$ is surjective onto $\operatorname{Herm}(n)$, of real dimension $n^2$, so $\dim_{\mathbb{R}} \ker dF_g = 2n^2 - n^2 = n^2$.
 
-^pf-23-4
+^pf-23-5
 
-*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
+*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|Ex. §23.3]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|§23.4]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark]- Connections
-> - The geometric tangent space of $\mathrm{U}(n)$: [[§25 The Geometric Tangent Space#^ex-25-3|Ex. §25.3]]; the orthogonal analogue: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1|§23.1]].
+> - The geometric tangent space of $\mathrm{U}(n)$: [[§25 The Geometric Tangent Space#^ex-25-3|Ex. §25.3]]; the orthogonal analogue: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-2|§23.2]].
 
-> [!theorem] Corollary §23.5: $\mathrm{U}(n)$ Is Compact
+> [!theorem] Corollary §23.6: $\mathrm{U}(n)$ Is Compact
 > $\mathrm{U}(n)$ is a compact smooth manifold of dimension $n^2$.
 >
 > *Lee: Example 7.29*
 
-^cor-23-5
+^cor-23-6
 
 > [!proof]+ Proof
-> By Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23.2]], $\mathrm{U}(n)$ is a smooth manifold of dimension $n^2$; it remains to show it is compact. By Heine–Borel (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1)) it suffices that $\mathrm{U}(n)$ be closed and bounded in $\operatorname{Mat}(n,\mathbb{C}) \cong \mathbb{R}^{2n^2}$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]]).
+> By Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|§23.3]], $\mathrm{U}(n)$ is a smooth manifold of dimension $n^2$; it remains to show it is compact. By Heine–Borel (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1)) it suffices that $\mathrm{U}(n)$ be closed and bounded in $\operatorname{Mat}(n,\mathbb{C}) \cong \mathbb{R}^{2n^2}$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]]).
 >
-> *Closed.* It is closed in $\operatorname{Mat}(n,\mathbb{C}) \cong \mathbb{R}^{2n^2}$ as $F^{-1}(I)$ with $F$ continuous: $F$ is smooth (Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23.2]]), hence continuous, and the point $\{I\}$ is closed in $\operatorname{Herm}(n)$.
+> *Closed.* It is closed in $\operatorname{Mat}(n,\mathbb{C}) \cong \mathbb{R}^{2n^2}$ as $F^{-1}(I)$ with $F$ continuous: $F$ is smooth (Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|§23.3]]), hence continuous, and the point $\{I\}$ is closed in $\operatorname{Herm}(n)$.
 >
-> *Bounded.* It is bounded because the columns of a unitary matrix are unit vectors of $\mathbb{C}^n$, so every entry has modulus at most $1$. Indeed, $g^{\ast}g = I$ (Lemma [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]]), and its $(j,j)$ entry is
+> *Bounded.* It is bounded because the columns of a unitary matrix are unit vectors of $\mathbb{C}^n$, so every entry has modulus at most $1$. Indeed, $g^{\ast}g = I$ (Lemma [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|§23.4]]), and its $(j,j)$ entry is
 >
 > $$
 > 1 = (g^{\ast}g)_{jj} = \sum_{i=1}^n \overline{g_{ij}}\, g_{ij} = \sum_{i=1}^n |g_{ij}|^2 ,
@@ -431,9 +479,9 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 >
 > Apply Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1).
 
-^pf-23-5
+^pf-23-6
 
-*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]]
+*Uses:* [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|Ex. §23.3]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|§23.4]]
 
 > [!remark]- Connections
 > - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8]](1) is [[Heine–Borel Theorem|590 §18.12 (Heine–Borel)]]; columns of unitary matrices are orthonormal by [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].

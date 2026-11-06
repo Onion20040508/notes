@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|Proposition §28.5: The Differential Is a Linear Map of Abstract Tangent Spaces]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|Theorem §29.9: Dimension of the Tangent Space]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|Theorem §29.10: Dimension of the Tangent Space]]
 - [[§56 Vector Fields#^def-56-2|Definition §56.2: The Space of Vector Fields]]
 - [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|Definition §60.3: Left-Invariant Vector Field]]
 - [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Definition §60.5: Left-Invariant Extension]]

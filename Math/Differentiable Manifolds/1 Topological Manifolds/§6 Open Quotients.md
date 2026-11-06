@@ -56,7 +56,7 @@ tags: [differentiable-manifolds, math591]
 *The direction ($\Leftarrow$): a point $(x,y)$ off the closed graph $\Gamma$ has a box $U \times V$ missing $\Gamma$, and then $\pi(U)$ and $\pi(V)$ separate $[x]$ from $[y]$.*
 
 > [!remark]- Connections
-> - Applied to orbit spaces: [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], [[§13 Group Actions and Orbit Spaces#^thm-13-5|§13.5]]; the failure mode is [[§13 Group Actions and Orbit Spaces#^ex-13-6|Ex. §13.6]].
+> - Applied to orbit spaces: [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], [[§13 Group Actions and Orbit Spaces#^thm-13-5|§13.5]]; the failure mode is [[§13 Group Actions and Orbit Spaces#^ex-13-8|Ex. §13.8]].
 > - Hausdorff spaces in MATH 590: [[§9 Hausdorff Spaces#^def-9-1|590 Def. §9.1]]; for the special case of a quotient onto a Hausdorff space, compare [[§13 Quotient Topology#^cor-13-4|590 §13.4]](2).
 
 > [!remark] Remark: No Hausdorff Hypothesis on $X$
@@ -89,11 +89,11 @@ tags: [differentiable-manifolds, math591]
 ^thm-6-3
 
 > [!proof]+ Proof (one line in lecture: project the countable basis)
-> $\pi : X \to X/{\sim}$ is a continuous surjection, and open because $\sim$ is; so [[§5 Quotient Maps#^lem-5-6|Lemma §5.6]] applies and the image of a countable basis of $X$ is a countable basis of $X/{\sim}$.
+> $\pi : X \to X/{\sim}$ is a continuous surjection, and open because $\sim$ is; so [[§5 Quotient Maps#^lem-5-7|Lemma §5.7]] applies and the image of a countable basis of $X$ is a countable basis of $X/{\sim}$.
 
 ^pf-6-3
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§5 Quotient Maps#^lem-5-6|§5.6]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§5 Quotient Maps#^lem-5-7|§5.7]]
 
 > [!remark]- Connections
 > - Reused for coset spaces: [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5|§15.5]] (second countability of $G/H$), and hence for the Grassmannians, [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]].

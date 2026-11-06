@@ -181,11 +181,11 @@ The fact that the dimension of a manifold is well-defined rests on the following
 ^rem-2-5
 
 > [!example] Example §2.1: Fails $T_2$: The Line with Two Origins
-> Let $X$ be the line with two origins ([[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]]). Then $X$ is second countable and locally Euclidean of dimension $1$, but not Hausdorff.
-> - *Not $T_2$:* shown in [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]].
-> - *Locally Euclidean.* Throughout, $\mathcal{B}$ and $N_i(\varepsilon)$ are as in [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]]. Recall that for an open $U \subseteq X$ the sets $B \cap U$, $B \in \mathcal{B}$, form a basis of the subspace topology on $U$ (an open subset of $U$ is $W \cap U$ with $W$ a union of members of $\mathcal{B}$).
+> Let $X$ be the line with two origins ([[§1 Point-Set Topology Review#^ex-1-5|Example §1.5]]). Then $X$ is second countable and locally Euclidean of dimension $1$, but not Hausdorff.
+> - *Not $T_2$:* shown in [[§1 Point-Set Topology Review#^ex-1-5|Example §1.5]].
+> - *Locally Euclidean.* Throughout, $\mathcal{B}$ and $N_i(\varepsilon)$ are as in [[§1 Point-Set Topology Review#^ex-1-5|Example §1.5]]. Recall that for an open $U \subseteq X$ the sets $B \cap U$, $B \in \mathcal{B}$, form a basis of the subspace topology on $U$ (an open subset of $U$ is $W \cap U$ with $W$ a union of members of $\mathcal{B}$).
 >
->   *Points of a ray.* Let $p$ lie in a ray and let $I = (a,b)$ be an open interval in that ray with $p \in I$; $I \in \mathcal{B}$ is open in $X$. Every member of $\mathcal{B}$ meets $I$ in an open interval or the empty set (Axiom 2 computation in [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]]), so the subspace topology on $I$ has the open subintervals of $I$ as a basis, i.e. is the usual topology on $(a,b) \subseteq \mathbb{R}$. Thus $\mathrm{id} : I \to (a,b)$ is a homeomorphism onto an open subset of $\mathbb{R}$.
+>   *Points of a ray.* Let $p$ lie in a ray and let $I = (a,b)$ be an open interval in that ray with $p \in I$; $I \in \mathcal{B}$ is open in $X$. Every member of $\mathcal{B}$ meets $I$ in an open interval or the empty set (Axiom 2 computation in [[§1 Point-Set Topology Review#^ex-1-5|Example §1.5]]), so the subspace topology on $I$ has the open subintervals of $I$ as a basis, i.e. is the usual topology on $(a,b) \subseteq \mathbb{R}$. Thus $\mathrm{id} : I \to (a,b)$ is a homeomorphism onto an open subset of $\mathbb{R}$.
 >
 >   *The origins.* Fix $i \in \{1,2\}$, let $j$ be the other index, fix $\varepsilon > 0$, and let $U = N_i(\varepsilon)$, an open neighborhood of $0_i$. Define
 >
@@ -230,12 +230,12 @@ The fact that the dimension of a manifold is well-defined rests on the following
 
 ^ex-2-1
 
-*Uses:* [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§5 Subspace Topology#^lem-5-1|590 §5.1]]
+*Uses:* [[§1 Point-Set Topology Review#^ex-1-5|Ex. §1.5]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§5 Subspace Topology#^lem-5-1|590 §5.1]]
 
 > [!remark]- Connections
 > - The same space as a quotient: [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], [[§10 The Line with Two Origins#^ex-10-1|Ex. §10.1]].
 
-The line with two origins through the course: defined by its neighbourhood bases, and not Hausdorff, in [[§1 Point-Set Topology Review#^ex-1-4|the real line with two origins]]; second countable and locally Euclidean but not Hausdorff, so not a manifold, in [[§2 Topological Manifolds#^ex-2-1|the line with two origins fails Hausdorff]]; the quotient of two lines in [[§4 Quotient Spaces and Open Maps#^ex-4-1|the line with two origins as a quotient]], the two constructions agreeing by [[§4 Quotient Spaces and Open Maps#^prop-4-2|the two constructions agree]]; and, with its description as a quotient and the Hausdorff criterion for open quotients applied to it, in [[§10 The Line with Two Origins|The Line with Two Origins]].
+The line with two origins through the course: defined by its neighbourhood bases, and not Hausdorff, in [[§1 Point-Set Topology Review#^ex-1-5|the real line with two origins]]; second countable and locally Euclidean but not Hausdorff, so not a manifold, in [[§2 Topological Manifolds#^ex-2-1|the line with two origins fails Hausdorff]]; the quotient of two lines in [[§4 Quotient Spaces and Open Maps#^ex-4-1|the line with two origins as a quotient]], the two constructions agreeing by [[§4 Quotient Spaces and Open Maps#^prop-4-2|the two constructions agree]]; and, with its description as a quotient and the Hausdorff criterion for open quotients applied to it, in [[§10 The Line with Two Origins|The Line with Two Origins]].
 
 > [!example] Example §2.2: Fails Locally Euclidean: $\mathbb{Q}$
 > $X = \mathbb{Q}$ with the subspace topology from $\mathbb{R}$ is second countable (subspace of a second countable space) and $T_2$ (metric space), but is not locally Euclidean of any dimension.
@@ -278,12 +278,17 @@ The line with two origins through the course: defined by its neighbourhood bases
 
 ^pf-2-4
 
-*Uses:* [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]], [[§2 Topological Manifolds#^ex-2-2|Ex. §2.2]], [[§2 Topological Manifolds#^ex-2-3|Ex. §2.3]], [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]]
+*Uses:* [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]], [[§2 Topological Manifolds#^ex-2-2|Ex. §2.2]], [[§2 Topological Manifolds#^ex-2-3|Ex. §2.3]], [[§1 Point-Set Topology Review#^ex-1-5|Ex. §1.5]]
 
-> [!remark] Remark: Dimension-Zero Version
-> $\mathbb{R}_{\mathrm{disc}}$ alone already works: it is $T_2$ (discrete), locally Euclidean of dimension $0$ (each $\{x\}$ is an open neighborhood homeomorphic to $\mathbb{R}^0 = \{\text{pt}\}$), and not second countable ([[§1 Point-Set Topology Review#^ex-1-2|Example §1.2]]). The next proposition says exactly why: it is uncountable.
+> [!example] Example §2.4: Dimension Zero: $\mathbb{R}_{\mathrm{disc}}$ Fails Only Second Countability
+> In Proposition [[§2 Topological Manifolds#^prop-2-4|§2.4]], the space failing only second countability can already be taken to be $\mathbb{R}_{\mathrm{disc}}$ itself, $\mathbb{R}$ with the discrete topology:
+> - *$T_2$.* If $x \neq y$, the singletons $\{x\}$ and $\{y\}$ are open (every subset is) and disjoint.
+> - *Locally Euclidean of dimension $0$.* For $x \in \mathbb{R}$, the set $\{x\}$ is an open neighborhood of $x$, and the unique map $\{x\} \to \mathbb{R}^0 = \{\text{pt}\}$ is a bijection between one-point spaces; it and its inverse are continuous, since the only open sets of a one-point space are $\emptyset$ and the whole space, whose preimages are again $\emptyset$ and the whole space. So it is a homeomorphism.
+> - *Not second countable.* This is Example [[§1 Point-Set Topology Review#^ex-1-2|§1.2]].
+>
+> The next proposition says exactly why it fails: a discrete space is a $0$-manifold precisely when it is countable, and $\mathbb{R}$ is uncountable.
 
-^rem-2-6
+^ex-2-4
 
 > [!theorem] Proposition §2.5: Zero-Dimensional Manifolds
 > A topological space is a topological manifold of dimension $0$ if and only if it is a countable discrete space.
@@ -299,10 +304,18 @@ The line with two origins through the course: defined by its neighbourhood bases
 
 *Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^ex-1-2|Ex. §1.2]], [[§2 Basis for a Topology#^rem-2-2|590 §2 (Characterization of Discrete Topology)]]
 
-> [!remark] Remark: A Warning: $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$ vs. $\mathbb{R}^2$
-> Each horizontal line of $X$ is a $1$-dimensional open subset. Since no two Euclidean spaces of different dimensions are homeomorphic ([[§2 Topological Manifolds#^thm-2-1|Theorem §2.1]]), $X$ is not homeomorphic to $\mathbb{R}^2$ even though it has the same underlying set. The topology, not the set, is what determines the dimension.
+> [!example] Example §2.5: $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$ Is Not Homeomorphic to $\mathbb{R}^2$
+> Let $X = \mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$ as in Example [[§2 Topological Manifolds#^ex-2-3|§2.3]]. Each horizontal line of $X$ is a $1$-dimensional open subset; since no two Euclidean spaces of different dimensions are homeomorphic (Theorem [[§2 Topological Manifolds#^thm-2-1|§2.1]]), $X$ is not homeomorphic to $\mathbb{R}^2$, even though it has the same underlying set.
+>
+> To be shown: there is no homeomorphism $h : X \to \mathbb{R}^2$. Suppose $h$ were one.
+>
+> 1. The line $L = \{0\} \times \mathbb{R}$ is open in $X$ and homeomorphic to $\mathbb{R}$ via the projection $(0, t) \mapsto t$ (Example [[§2 Topological Manifolds#^ex-2-3|§2.3]]).
+> 2. $h(L)$ is open in $\mathbb{R}^2$, because a homeomorphism is an open map, and nonempty; and $h|_L : L \to h(L)$ is a homeomorphism (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](2) and (3)).
+> 3. Composing, $\mathbb{R} \to L \to h(L)$ is a homeomorphism from the nonempty open set $\mathbb{R} \subseteq \mathbb{R}^1$ onto the nonempty open set $h(L) \subseteq \mathbb{R}^2$. Theorem [[§2 Topological Manifolds#^thm-2-1|§2.1]] then forces $1 = 2$ (this case, $n = 1$, is among the cases proved there), a contradiction.
+>
+> The topology, not the set, is what determines the dimension.
 
-^rem-2-7
+^ex-2-5
 
 The failure of second countability in the last example is detected by counting components. This is the mechanism behind the slogan that a space with a countable basis has countably many connected components; the precise statement needs local connectedness, which locally Euclidean spaces have.
 
@@ -333,7 +346,7 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 > [!remark] Remark
 > For general topological spaces, path connectedness is strictly stronger than connectedness (the topologist's sine curve is the standard counterexample, [[§16 Connected Subspaces of ℝ#^ex-16-7|590 §16]]). For manifolds the two coincide, because being locally Euclidean makes the space locally path connected. This is PSet 1, Problem 1.
 
-^rem-2-8
+^rem-2-6
 
 > [!theorem] Lemma §2.7: Concatenation and Reversal of Paths
 > Let $X$ be a topological space. If $\alpha$ is a path from $a$ to $b$ and $\beta$ a path from $b$ to $c$, then there is a path from $a$ to $c$. If $\alpha$ is a path from $a$ to $b$, there is a path from $b$ to $a$.
@@ -395,7 +408,7 @@ Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone poi
 > [!remark] Remark
 > This is the mechanism behind [[§2 Topological Manifolds#^prop-2-6|Proposition §2.6]]: openness of the components is what turns second countability into a bound on their number. It is also the reason [[§2 Topological Manifolds#^cor-2-2|Corollary §2.2]] can speak of the dimension being constant on components.
 
-^rem-2-9
+^rem-2-7
 
 ## Charts and Transition Functions
 
@@ -432,7 +445,7 @@ Suppose $X$ is a topological manifold of dimension $n$, and let $p \in X$. By de
 > [!remark] Remark: Charts Are Not Unique
 > Nothing in the definition pins down $U$ or $\varphi$: by the lemma, a chart can be shrunk or recomposed at will. Consequently, the fundamental picture of the first weeks of the course is: *two* charts at the same point, and the map that compares them.
 
-^rem-2-10
+^rem-2-8
 
 Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \subseteq \mathbb{R}^n$ open. The overlap $U \cap V$ is an open neighborhood of $p$, and it appears in both charts as the open sets $\varphi(U \cap V) \subseteq A$ and $\psi(U \cap V) \subseteq B$.
 
@@ -479,10 +492,10 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 >
 > Why is this the right move? Differentiability is not a topological notion: it makes no sense to ask whether a map $X \to \mathbb{R}$ on an abstract topological space is differentiable, because $X$ has no linear structure. What *does* make sense is to pull $f$ back to Euclidean space via a chart, $f \circ \varphi^{-1} : A \to \mathbb{R}$, and ask whether *that* is differentiable. For this to be independent of the chart chosen, one needs $f \circ \psi^{-1} = (f \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ to be differentiable whenever $f \circ \varphi^{-1}$ is—which is exactly the requirement that transition functions be differentiable. (He expected to begin this on Wednesday; in the event, Lecture 2 stayed with topology—see [[§3 Subspaces and Products|§3]].)
 
-^rem-2-11
+^rem-2-9
 
 > [!remark]- Connections
-> - Carried out in [[§17 Differentiable Structures#^def-17-2|Def. §17.2]] (smooth in the sense of a chart), [[§17 Differentiable Structures#^rem-17-3|the problem this creates]] and [[§17 Differentiable Structures#^thm-17-1|§17.1]].
+> - Carried out in [[§17 Differentiable Structures#^def-17-2|Def. §17.2]] (smooth in the sense of a chart), [[§17 Differentiable Structures#^rem-17-3|the problem this creates]] and [[§17 Differentiable Structures#^thm-17-2|§17.2]].
 
 > [!theorem] Proposition §2.12: Manifolds Are Locally Compact
 > Every [[§2 Topological Manifolds#^def-2-2|topological manifold]] $M$ is *[[§20 Local Compactness#^def-20-1|locally compact]]*: every point $q \in M$ has an open neighbourhood $V$ whose closure $\overline V$ is compact.

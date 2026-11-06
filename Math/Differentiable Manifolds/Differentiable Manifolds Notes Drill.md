@@ -96,7 +96,7 @@ Distinct points have disjoint neighbourhoods, see Definition [[§1 Point-Set Top
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§1 Point-Set Topology Review#^def-1-8|§1.8]].
-> - Example [[§1 Point-Set Topology Review#^ex-1-3|§1.3]]; non-example Example [[§1 Point-Set Topology Review#^ex-1-4|§1.4]] and Example [[§2 Topological Manifolds#^ex-2-1|§2.1]]; the trap: the remark *The Exam Trap* in [[§2 Topological Manifolds|§2]] (two points need not share a chart).
+> - Example [[§1 Point-Set Topology Review#^ex-1-4|§1.4]]; non-example Example [[§1 Point-Set Topology Review#^ex-1-5|§1.5]] and Example [[§2 Topological Manifolds#^ex-2-1|§2.1]]; the trap: the remark *The Exam Trap* in [[§2 Topological Manifolds|§2]] (two points need not share a chart).
 > - Used in: Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] Hausdorff Criterion (graph: Definition [[§6 Open Quotients#^def-6-1|§6.1]]), Theorem [[§13 Group Actions and Orbit Spaces#^thm-13-5|§13.5]], Theorem [[§14 Homogeneous Spaces#^thm-14-2|§14.2]] (points closed).
 
 #### Locally Euclidean · P2
@@ -129,7 +129,7 @@ A second countable, Hausdorff, locally Euclidean space of dimension $n$, see Def
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§2 Topological Manifolds#^def-2-2|§2.2]]; why the three conditions: the remark *Why These Three Conditions?* in [[§2 Topological Manifolds|§2]].
-> - Examples: Proposition [[§8 Spheres#^prop-8-1|§8.1]]; regular level sets, Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
+> - Examples: Proposition [[§8 Spheres#^prop-8-1|§8.1]]; regular level sets, Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]].
 > - Q3, Q5: Proposition [[§2 Topological Manifolds#^prop-2-4|§2.4]] with Example [[§2 Topological Manifolds#^ex-2-1|§2.1]] (not $T_2$), Example [[§2 Topological Manifolds#^ex-2-2|§2.2]] (not locally Euclidean), Example [[§2 Topological Manifolds#^ex-2-3|§2.3]] (not second countable).
 > - Q4: rational intervals on each copy, plus the sets $(-\varepsilon, 0) \cup \{0_i\} \cup (0, \varepsilon)$ with rational $\varepsilon$; see Example [[§2 Topological Manifolds#^ex-2-1|§2.1]].
 
@@ -146,7 +146,7 @@ A chart at $p$ is a homeomorphism $\varphi : U \to A$ from an open neighbourhood
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§2 Topological Manifolds#^def-2-3|§2.3]], Definition [[§2 Topological Manifolds#^def-2-4|§2.4]]; Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]].
-> - Q2: Example [[§17 Differentiable Structures#^ex-17-2|§17.2]], Example [[§17 Differentiable Structures#^ex-17-3|§17.3]]. Q3: the remark *Preview: What Makes a Manifold Differentiable* in [[§2 Topological Manifolds|§2]]. Q4: Proposition [[§17 Differentiable Structures#^prop-17-3|§17.3]].
+> - Q2: Example [[§17 Differentiable Structures#^ex-17-2|§17.2]], Example [[§17 Differentiable Structures#^ex-17-3|§17.3]]. Q3: the remark *Preview: What Makes a Manifold Differentiable* in [[§2 Topological Manifolds|§2]]. Q4: Proposition [[§17 Differentiable Structures#^prop-17-4|§17.4]].
 
 #### Subspace topology · P2
 
@@ -193,7 +193,7 @@ $W \subseteq X/{\sim}$ is open iff $\pi^{-1}(W)$ is open in $X$, see Definition 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§4 Quotient Spaces and Open Maps#^def-4-1|§4.1]], Definition [[§4 Quotient Spaces and Open Maps#^def-4-2|§4.2]]; Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]]; the remark *Warning: Nothing Is Automatically Inherited* in [[§4 Quotient Spaces and Open Maps|§4]].
 > - Q3: Definition [[§9 Complex Projective Space#^def-9-1|§9.1]]. Q4: Example [[§4 Quotient Spaces and Open Maps#^ex-4-1|§4.1]], Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]].
-> - Q5: Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-2|§4.2]], whose proof the notes leave as an exercise ("Assigned in lecture"): pull each basic set of Example [[§1 Point-Set Topology Review#^ex-1-4|§1.4]] back along $\pi$.
+> - Q5: Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-2|§4.2]], whose proof the notes leave as an exercise ("Assigned in lecture"): pull each basic set of Example [[§1 Point-Set Topology Review#^ex-1-5|§1.5]] back along $\pi$.
 
 #### Quotient map · P2
 
@@ -209,7 +209,7 @@ A surjection $F : X \to Y$ with $U$ open iff $F^{-1}(U)$ open, see Definition [[
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§5 Quotient Maps#^def-5-1|§5.1]]; constant on fibres: Definition [[§5 Quotient Maps#^def-5-2|§5.2]]; Theorem [[§5 Quotient Maps#^thm-5-1|§5.1]].
-> - Q2: Example [[§5 Quotient Maps#^ex-5-1|§5.1]], Proposition [[§5 Quotient Maps#^prop-5-5|§5.5]] (→ also drilled as [[Differentiable Manifolds HW Drill#^hw1-5|HW1.5]]).
+> - Q2: Example [[§5 Quotient Maps#^ex-5-1|§5.1]], Proposition [[§5 Quotient Maps#^prop-5-6|§5.6]] (→ also drilled as [[Differentiable Manifolds HW Drill#^hw1-5|HW1.5]]).
 > - Q4: Example [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-2|§15.2]] ($\mathbb{R}_{\mathrm{disc}} \to \mathbb{R}$; a bijective quotient map is a homeomorphism). Q5: the projection of Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]].
 
 #### Open map · P2
@@ -225,7 +225,7 @@ A continuous $F$ with $F(U)$ open for every open $U$, see Definition [[§4 Quoti
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§4 Quotient Spaces and Open Maps#^def-4-3|§4.3]]; Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]]; Corollary [[§36 Submersions#^cor-36-9|§36.9]] ("locally they are projections").
-> - Q3: Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]]. Q4: Proposition [[§5 Quotient Maps#^prop-5-5|§5.5]], Theorem [[§6 Open Quotients#^thm-6-1|§6.1]], Theorem [[§6 Open Quotients#^thm-6-3|§6.3]].
+> - Q3: Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]]. Q4: Proposition [[§5 Quotient Maps#^prop-5-6|§5.6]], Theorem [[§6 Open Quotients#^thm-6-1|§6.1]], Theorem [[§6 Open Quotients#^thm-6-3|§6.3]].
 
 #### Open equivalence relation · P2
 
@@ -242,7 +242,7 @@ $\sim$ is open if $\pi : X \to X/{\sim}$ is an open map, see Definition [[§4 Qu
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§4 Quotient Spaces and Open Maps#^def-4-4|§4.4]]; Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]].
 > - Q2: Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] ($\tilde U = \bigcup_{g} gU$, each $gU$ open by Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]]). Q3: Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]].
-> - Q4: Theorem [[§6 Open Quotients#^thm-6-1|§6.1]], Theorem [[§6 Open Quotients#^thm-6-3|§6.3]]. Q5: images of a countable basis are open only if $\pi$ is open (Lemma [[§5 Quotient Maps#^lem-5-6|§5.6]]); Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]].
+> - Q4: Theorem [[§6 Open Quotients#^thm-6-1|§6.1]], Theorem [[§6 Open Quotients#^thm-6-3|§6.3]]. Q5: images of a countable basis are open only if $\pi$ is open (Lemma [[§5 Quotient Maps#^lem-5-7|§5.7]]); Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]].
 
 #### Saturation · P2
 
@@ -272,7 +272,7 @@ $S$ is saturated if $S = \tilde S$, equivalently a union of classes, equivalentl
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§4 Quotient Spaces and Open Maps#^def-4-6|§4.6]]; Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-4|§4.4]] (part 4); Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-5|§4.5]].
-> - Q4: Example [[§13 Group Actions and Orbit Spaces#^ex-13-4|§13.4]] (orbits are the circles about $0$ and the origin).
+> - Q4: Example [[§13 Group Actions and Orbit Spaces#^ex-13-6|§13.6]] (orbits are the circles about $0$ and the origin).
 
 #### Topological group · P2
 
@@ -301,8 +301,8 @@ An action $G \times X \to X$ of a topological group that is continuous for the p
 - [ ] Q4 **[use]** For a continuous action, why is each map $x \mapsto g \cdot x$ a homeomorphism, and why is the orbit map $g \mapsto g \cdot x_0$ continuous?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§13 Group Actions and Orbit Spaces#^def-13-1|§13.1]], Definition [[§13 Group Actions and Orbit Spaces#^def-13-2|§13.2]]; Example [[§13 Group Actions and Orbit Spaces#^ex-13-1|§13.1]], Example [[§13 Group Actions and Orbit Spaces#^ex-13-3|§13.3]].
-> - Q3: Example [[§13 Group Actions and Orbit Spaces#^ex-13-6|§13.6]] versus Theorem [[§13 Group Actions and Orbit Spaces#^thm-13-5|§13.5]] (needs $G$ compact) → drilled as [[Differentiable Manifolds HW Drill#^hw1-3|HW1.3]].
+> - Definition [[§13 Group Actions and Orbit Spaces#^def-13-1|§13.1]], Definition [[§13 Group Actions and Orbit Spaces#^def-13-2|§13.2]]; Example [[§13 Group Actions and Orbit Spaces#^ex-13-1|§13.1]], Example [[§13 Group Actions and Orbit Spaces#^ex-13-5|§13.5]].
+> - Q3: Example [[§13 Group Actions and Orbit Spaces#^ex-13-8|§13.8]] versus Theorem [[§13 Group Actions and Orbit Spaces#^thm-13-5|§13.5]] (needs $G$ compact) → drilled as [[Differentiable Manifolds HW Drill#^hw1-3|HW1.3]].
 > - Q4: Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]], Definition [[§14 Homogeneous Spaces#^def-14-4|§14.4]].
 
 #### Orbit space · P2
@@ -318,7 +318,7 @@ $X/G$, the quotient of $X$ by the orbit relation $x \sim y \iff y = g \cdot x$ f
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§13 Group Actions and Orbit Spaces#^def-13-4|§13.4]], Definition [[§13 Group Actions and Orbit Spaces#^def-13-5|§13.5]]; Q2 is Proposition [[§13 Group Actions and Orbit Spaces#^prop-13-1|§13.1]] (inverses for symmetry, products for transitivity; the notes date it Lecture 4, the recording has it on Sep 4, Lecture 3).
-> - Q3: Example [[§13 Group Actions and Orbit Spaces#^ex-13-3|§13.3]]. Q4: Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]]; Example [[§13 Group Actions and Orbit Spaces#^ex-13-6|§13.6]]; Theorem [[§13 Group Actions and Orbit Spaces#^thm-13-5|§13.5]], Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]].
+> - Q3: Example [[§13 Group Actions and Orbit Spaces#^ex-13-5|§13.5]]. Q4: Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]]; Example [[§13 Group Actions and Orbit Spaces#^ex-13-8|§13.8]]; Theorem [[§13 Group Actions and Orbit Spaces#^thm-13-5|§13.5]], Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]].
 
 #### Proper map (topological) · P2
 
@@ -362,7 +362,7 @@ $X$ is homogeneous for $G$ if $G$ acts continuously and transitively on $X$, see
 - [ ] Q4 **[why]** Give a homogeneous space where $\Phi : G/H \to X$ is a continuous bijection but not a homeomorphism. Which hypothesis fails?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§14 Homogeneous Spaces#^def-14-1|§14.1]], Definition [[§14 Homogeneous Spaces#^def-14-2|§14.2]]; Example [[§14 Homogeneous Spaces#^ex-14-3|§14.3]], Corollary [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]] (Grassmannians).
+> - Definition [[§14 Homogeneous Spaces#^def-14-1|§14.1]], Definition [[§14 Homogeneous Spaces#^def-14-2|§14.2]]; Example [[§14 Homogeneous Spaces#^ex-14-5|§14.5]], Corollary [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]] (Grassmannians).
 > - Q3: Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|§15.3]] → drilled as [[Differentiable Manifolds HW Drill#^hw2-1|HW2.1]]. Q4: Example [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-2|§15.2]].
 
 #### Isotropy subgroup · P2
@@ -454,7 +454,7 @@ Locally Euclidean may be defined with homeomorphisms $\varphi : U \to A$ onto *o
 
 #### The line with two origins: second countable and locally Euclidean, not Hausdorff · P2
 
-The line with two origins is second countable and locally Euclidean of dimension $1$ but not $T_2$, see Example [[§2 Topological Manifolds#^ex-2-1|§2.1]] (the space is Example [[§1 Point-Set Topology Review#^ex-1-4|§1.4]]). *Source: Lecture 1 ("I won't prove [second countability]"); verifications filled in.* **[class exercise, Lecture 1]**
+The line with two origins is second countable and locally Euclidean of dimension $1$ but not $T_2$, see Example [[§2 Topological Manifolds#^ex-2-1|§2.1]] (the space is Example [[§1 Point-Set Topology Review#^ex-1-5|§1.5]]). *Source: Lecture 1 ("I won't prove [second countability]"); verifications filled in.* **[class exercise, Lecture 1]**
 
 ^nd-ex-2-1
 
@@ -550,7 +550,7 @@ $\pi_X : X \times Y \to X$ is an open map, see Lemma [[§4 Quotient Spaces and O
 - [ ] Q2 Compute $\pi_X(U \times V)$ for a basic open set. What if $V = \emptyset$?
 - [ ] Q3 Write a general open $A \subseteq X \times Y$ as a union of boxes; why does $\pi_X$ commute with unions?
 - [ ] Q4 **[why]** Is $\pi_X$ closed? Give a closed set of $\mathbb{R}^2$ whose projection is not closed (e.g. the hyperbola $xy = 1$).
-- [ ] Q5 How does this give that projections are quotient maps ([[Differentiable Manifolds HW Drill#^hw1-5|HW1.5]], via Proposition [[§5 Quotient Maps#^prop-5-5|§5.5]])?
+- [ ] Q5 How does this give that projections are quotient maps ([[Differentiable Manifolds HW Drill#^hw1-5|HW1.5]], via Proposition [[§5 Quotient Maps#^prop-5-6|§5.6]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Images commute with unions; images of basis elements are $U$ or $\emptyset$.
@@ -564,8 +564,8 @@ The quotient of two copies of $\mathbb{R}$ glued along $x \neq 0$ is homeomorphi
 
 - [ ] Q1 **[state]** State the proposition: which bijection, which two topologies?
 - [ ] Q2 **[def]** Define the quotient topology (Definition [[§4 Quotient Spaces and Open Maps#^def-4-2|§4.2]]).
-- [ ] Q3 For each basic set of Example [[§1 Point-Set Topology Review#^ex-1-4|§1.4]] (an interval in a ray, $N_i(\varepsilon)$), compute its preimage under $\pi$ in $(\mathbb{R} \times \{1\}) \cup (\mathbb{R} \times \{2\})$. Is it open?
-- [ ] Q4 Conversely, for $W$ open in the quotient topology and a point of $W$, find a basic set of Example [[§1 Point-Set Topology Review#^ex-1-4|§1.4]] around it inside $W$.
+- [ ] Q3 For each basic set of Example [[§1 Point-Set Topology Review#^ex-1-5|§1.5]] (an interval in a ray, $N_i(\varepsilon)$), compute its preimage under $\pi$ in $(\mathbb{R} \times \{1\}) \cup (\mathbb{R} \times \{2\})$. Is it open?
+- [ ] Q4 Conversely, for $W$ open in the quotient topology and a point of $W$, find a basic set of Example [[§1 Point-Set Topology Review#^ex-1-5|§1.5]] around it inside $W$.
 - [ ] Q5 **[why]** How is this used: why does it let you prove non-Hausdorffness by the Hausdorff criterion instead (Example [[§10 The Line with Two Origins#^ex-10-1|§10.1]])?
 
 > [!tip]- Hints: route of the proof in the notes
@@ -591,7 +591,7 @@ An equivalence relation is open iff the saturation $\tilde U = \pi^{-1}(\pi(U))$
 
 #### Open surjections push bases forward · P2
 
-If $\pi : Y \to Q$ is a continuous open surjection and $\mathcal{B}$ a basis of $Y$, then $\pi(\mathcal{B})$ is a basis of $Q$; so second countability descends, see Lemma [[§5 Quotient Maps#^lem-5-6|§5.6]]. *Source: Lecture 2 (one line); proof in the notes.*
+If $\pi : Y \to Q$ is a continuous open surjection and $\mathcal{B}$ a basis of $Y$, then $\pi(\mathcal{B})$ is a basis of $Q$; so second countability descends, see Lemma [[§5 Quotient Maps#^lem-5-7|§5.7]]. *Source: Lecture 2 (one line); proof in the notes.*
 
 ^nd-lem-5-6
 
@@ -634,7 +634,7 @@ If $\sim$ is open and $X$ is second countable, then $X/{\sim}$ is second countab
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S4.
-> - Lemma [[§5 Quotient Maps#^lem-5-6|§5.6]]: $\{\pi(B)\}$ for a countable basis $\{B\}$ of $X$.
+> - Lemma [[§5 Quotient Maps#^lem-5-7|§5.7]]: $\{\pi(B)\}$ for a countable basis $\{B\}$ of $X$.
 
 #### Orbits partition $X$ · P2
 
@@ -695,7 +695,7 @@ If $G$ and $X$ are compact and $X$ is Hausdorff, a continuous action has Hausdor
 - [ ] Q2 Which criterion do you apply, and which of its two hypotheses is Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]]?
 - [ ] Q3 Write the graph $\Gamma$ of the orbit relation as the image of a continuous map $\Psi : G \times X \to X \times X$.
 - [ ] Q4 Why is $\Gamma$ compact, and why is it closed?
-- [ ] Q5 **[why]** Without compactness of $G$ this fails: which example (Example [[§13 Group Actions and Orbit Spaces#^ex-13-6|§13.6]], [[Differentiable Manifolds HW Drill#^hw1-3|HW1.3]])?
+- [ ] Q5 **[why]** Without compactness of $G$ this fails: which example (Example [[§13 Group Actions and Orbit Spaces#^ex-13-8|§13.8]], [[Differentiable Manifolds HW Drill#^hw1-3|HW1.3]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S4, S13 (compactness gives closed images).
@@ -842,7 +842,7 @@ $\pi : G \to G/H$ is a continuous open surjection, hence a quotient map (Proposi
 
 #### Open surjections are quotient maps · P4
 
-A continuous open surjection is a quotient map, see Proposition [[§5 Quotient Maps#^prop-5-5|§5.5]]. *Source: notes (filled in).*
+A continuous open surjection is a quotient map, see Proposition [[§5 Quotient Maps#^prop-5-6|§5.6]]. *Source: notes (filled in).*
 
 ^nd-prop-5-5
 
@@ -874,7 +874,7 @@ $\mathrm{U}(n) = \{g \in \mathrm{GL}(n, \mathbb{C}) : g^{-1} = g^\ast\}$, see De
 - [ ] Q5 **[example]** State $T_I \mathrm{U}(n)$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|§11.10]]; Example [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|§11.3]] ($S^1$); Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23.2]], Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-4|§23.4]]; Definition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-2|§23.2]] ($(iA)^\ast = -iA$).
+> - Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|§11.10]]; Example [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|§11.3]] ($S^1$); Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|§23.3]], Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-5|§23.5]]; Definition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-2|§23.2]] ($(iA)^\ast = -iA$).
 > - Q5: skew-Hermitian matrices, Example [[§25 The Geometric Tangent Space#^ex-25-3|§25.3]].
 
 ### Priority 2 · stated or done in class
@@ -892,7 +892,7 @@ The rank of $DF_p$ is the dimension of its image; full rank $m$ for $F : \mathbb
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]], Definition [[§7 The Regular Value Theorem#^def-7-2|§7.2]].
-> - Q3: Proposition [[§7 The Regular Value Theorem#^prop-7-5|§7.5]], the remark *The Constraint $N \ge m$* in [[§7 The Regular Value Theorem|§7]]. Q4: Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]].
+> - Q3: Proposition [[§7 The Regular Value Theorem#^prop-7-7|§7.7]], the remark *The Constraint $N \ge m$* in [[§7 The Regular Value Theorem|§7]]. Q4: Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]], Corollary [[§7 The Regular Value Theorem#^cor-7-6|§7.6]].
 
 #### Regular point (in $\mathbb{R}^N$) · P2
 
@@ -906,7 +906,7 @@ $p$ is a regular point of $F : \mathbb{R}^N \to \mathbb{R}^m$ if $DF_p$ is surje
 - [ ] Q4 **[use]** What replaces "$DF_p$ surjective" for a smooth map of manifolds?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§7 The Regular Value Theorem#^def-7-3|§7.3]]; Example [[§7 The Regular Value Theorem#^ex-7-1|§7.1]].
+> - Definition [[§7 The Regular Value Theorem#^def-7-3|§7.3]]; Example [[§7 The Regular Value Theorem#^ex-7-2|§7.2]].
 > - Q4: Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]], Definition [[§36 Submersions#^def-36-3|§36.3]] ($F_{\ast p}$ onto).
 
 #### Regular value (in $\mathbb{R}^N$) · P2
@@ -922,8 +922,8 @@ $c$ is a regular value of $F$ if every point of $F^{-1}(c)$ is a regular point; 
 - [ ] Q5 **[use]** Which regular values give the classical groups? Name the map and the value for $\mathrm{SL}(n)$, $\mathrm{O}(n)$, $\mathrm{U}(n)$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]; Example [[§7 The Regular Value Theorem#^ex-7-1|§7.1]] (one critical point on the level set makes the value critical).
-> - Q5: Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|§12.3]] ($\det$, value $1$), Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]] ($g \mapsto gg^{\mathsf T}$, value $I$), Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23.2]] ($g \mapsto gg^\ast$, value $I$).
+> - Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]; Example [[§7 The Regular Value Theorem#^ex-7-2|§7.2]] (one critical point on the level set makes the value critical).
+> - Q5: Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|§12.3]] ($\det$, value $1$), Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]] ($g \mapsto gg^{\mathsf T}$, value $I$), Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|§23.3]] ($g \mapsto gg^\ast$, value $I$).
 > - Coordinate-free form: Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]]. Manifold version: Definition [[§36 Submersions#^def-36-4|§36.4]].
 
 #### Coordinate representation · P2
@@ -955,7 +955,7 @@ $dF_p = K^{-1} \circ \widetilde F'(\tilde p) \circ L$, the linear map making the
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|§22.5]]; Q2: Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]] (curve $t \mapsto p + tv$ in coordinates, chain rule, $K^{-1}$ commutes with $\frac{d}{dt}$); the remark *What the Curve Method Computes* in [[§22 The Differential of a Map Between Vector Spaces|§22]].
-> - Q3: Proposition [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]] ($\det(g)\operatorname{tr}(g^{-1}A)$), Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1|§23.1]] ($gA^{\mathsf T} + Ag^{\mathsf T}$).
+> - Q3: Proposition [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]] ($\det(g)\operatorname{tr}(g^{-1}A)$), Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-2|§23.2]] ($gA^{\mathsf T} + Ag^{\mathsf T}$).
 > - Q4: Lemma [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|§22.1]], Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]]. The ladder of versions: the equivalence entry *The differential* below.
 
 #### General linear group · P2
@@ -1001,8 +1001,8 @@ $\mathrm{O}(n) = \{g : (gx) \cdot (gy) = x \cdot y\} = \{g : g^{\mathsf T} g = I
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|§11.7]]; Q1: Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]].
-> - Q2: Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]], Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1|§23.1]] (into $\mathrm{Mat}(n)$, $I$ would not be a regular value: the image of $dF$ lies in $\mathrm{Sym}(n)$). Definition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-1|§23.1]].
-> - Q3: Example [[§25 The Geometric Tangent Space#^ex-25-2|§25.2]] ($\mathrm{Skew}(n)$, dimension $n(n-1)/2$). Q4: Corollary [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2|§23.2]]; $\det = \pm 1$, Example [[§16 The Classical Groups#^ex-16-1|§16.1]].
+> - Q2: Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]], Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-2|§23.2]] (into $\mathrm{Mat}(n)$, $I$ would not be a regular value: the image of $dF$ lies in $\mathrm{Sym}(n)$). Definition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-1|§23.1]].
+> - Q3: Example [[§25 The Geometric Tangent Space#^ex-25-2|§25.2]] ($\mathrm{Skew}(n)$, dimension $n(n-1)/2$). Q4: Corollary [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3|§23.3]]; $\det = \pm 1$, Example [[§16 The Classical Groups#^ex-16-1|§16.1]].
 
 #### Special orthogonal group · P2
 
@@ -1017,7 +1017,7 @@ $\mathrm{SO}(n) = \mathrm{O}(n) \cap \mathrm{SL}(n)$, see Definition [[§11 Topo
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|§11.8]]; Q2: Example [[§16 The Classical Groups#^ex-16-1|§16.1]].
-> - Q3: Corollary [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2|§23.2]] ($\mathrm{SO}(n) = \mathrm{O}(n) \cap \det^{-1}(0, \infty)$ is open in $\mathrm{O}(n)$, since $\det = \pm 1$ there).
+> - Q3: Corollary [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3|§23.3]] ($\mathrm{SO}(n) = \mathrm{O}(n) \cap \det^{-1}(0, \infty)$ is open in $\mathrm{O}(n)$, since $\det = \pm 1$ there).
 > - Q4: Definition [[§25 The Geometric Tangent Space#^def-25-3|§25.3]], Example [[§25 The Geometric Tangent Space#^ex-25-4|§25.4]].
 
 #### Complex general linear group · P2
@@ -1032,7 +1032,7 @@ $\mathrm{GL}(n, \mathbb{C}) = \det^{-1}(\mathbb{C} \setminus \{0\})$ in $\mathrm
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]].
-> - Q2: real dimension $2n^2$. Q3: Lemma [[§7 The Regular Value Theorem#^lem-7-6|§7.6]], used for Corollary [[§7 The Regular Value Theorem#^cor-7-7|§7.7]].
+> - Q2: real dimension $2n^2$. Q3: Lemma [[§7 The Regular Value Theorem#^lem-7-10|§7.10]], used for Corollary [[§7 The Regular Value Theorem#^cor-7-11|§7.11]].
 
 #### External description · P2
 
@@ -1047,7 +1047,7 @@ Near $p$, $X \cap W = F^{-1}(\vec 0)$ for a smooth $F : W \to \mathbb{R}^k$ with
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§20 Manifolds in Euclidean Space#^def-20-1|§20.1]]; Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]].
-> - Q3: the cusp $y^2 = x^3$ is $F^{-1}(0)$ for $F = y^2 - x^3$, with $\nabla F(0) = 0$ (not in the notes); in the notes, the point $f^{-1}(0)$ of Example [[§7 The Regular Value Theorem#^ex-7-1|§7.1]] is a level set but not a $1$-manifold.
+> - Q3: the cusp $y^2 = x^3$ is $F^{-1}(0)$ for $F = y^2 - x^3$, with $\nabla F(0) = 0$ (not in the notes); in the notes, the point $f^{-1}(0)$ of Example [[§7 The Regular Value Theorem#^ex-7-2|§7.2]] is a level set but not a $1$-manifold.
 
 #### Internal description · P2
 
@@ -1062,7 +1062,7 @@ Near $p$, $X \cap W$ is the image of a smooth $\alpha : V \to \mathbb{R}^{n+k}$,
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§20 Manifolds in Euclidean Space#^def-20-2|§20.2]]; Definition [[§20 Manifolds in Euclidean Space#^def-20-3|§20.3]] (a parametrization is an inverse chart); Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]].
-> - Q3: Example [[§44 Embeddings#^ex-44-1|§44.1]] (the figure-eight), Example [[§43 Immersions#^ex-43-2|§43.2]]. Q4: $\alpha(t) = (t^2, t^3)$ (not in the notes): smooth, injective, a homeomorphism onto the cusp $y^2 = x^3$, with $D\alpha_0 = 0$.
+> - Q3: Example [[§44 Embeddings#^ex-44-3|§44.3]] (the figure-eight), Example [[§43 Immersions#^ex-43-2|§43.2]]. Q4: $\alpha(t) = (t^2, t^3)$ (not in the notes): smooth, injective, a homeomorphism onto the cusp $y^2 = x^3$, with $D\alpha_0 = 0$.
 
 ## Proofs T2
 
@@ -1070,11 +1070,11 @@ Near $p$, $X \cap W$ is the image of a smooth $\alpha : V \to \mathbb{R}^{n+k}$,
 
 #### Regular value theorem (in $\mathbb{R}^{n+k}$) · P1
 
-Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] → drilled as [[Differentiable Manifolds HW Drill#^hw1-6|HW1.6]]. (The version for an open domain and any value, Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], is the same proof.)
+Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] → drilled as [[Differentiable Manifolds HW Drill#^hw1-6|HW1.6]]. (The version for an open domain and any value, Corollary [[§7 The Regular Value Theorem#^cor-7-6|§7.6]], is the same proof.)
 
 #### Holomorphic regular value theorem · P1
 
-If $F : W \subseteq \mathbb{C}^{n+k} \to \mathbb{C}^k$ is holomorphic and $F'(p)$ has complex rank $k$ on $F^{-1}(c)$, then $F^{-1}(c)$ is a manifold of real dimension $2n$; the real rank of a $\mathbb{C}$-linear map is twice its complex rank, see Corollary [[§7 The Regular Value Theorem#^cor-7-7|§7.7]] and Lemma [[§7 The Regular Value Theorem#^lem-7-6|§7.6]]. *Source: Assignment 2 (used in [[Differentiable Manifolds HW Drill#^hw2-3|HW2.3]]); proof in the notes.*
+If $F : W \subseteq \mathbb{C}^{n+k} \to \mathbb{C}^k$ is holomorphic and $F'(p)$ has complex rank $k$ on $F^{-1}(c)$, then $F^{-1}(c)$ is a manifold of real dimension $2n$; the real rank of a $\mathbb{C}$-linear map is twice its complex rank, see Corollary [[§7 The Regular Value Theorem#^cor-7-11|§7.11]] and Lemma [[§7 The Regular Value Theorem#^lem-7-10|§7.10]]. *Source: Assignment 2 (used in [[Differentiable Manifolds HW Drill#^hw2-3|HW2.3]]); proof in the notes.*
 
 ^nd-cor-7-7
 
@@ -1087,7 +1087,7 @@ If $F : W \subseteq \mathbb{C}^{n+k} \to \mathbb{C}^k$ is holomorphic and $F'(p)
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S5 (regular value theorem), S7 (linear algebra).
 > - $\sum c_j v_j = \sum (\operatorname{Re} c_j\, v_j + \operatorname{Im} c_j\, iv_j)$ for spanning; real independence from complex independence.
-> - Real rank $2k$ = maximal; Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] in the form of Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]].
+> - Real rank $2k$ = maximal; Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] in the form of Corollary [[§7 The Regular Value Theorem#^cor-7-6|§7.6]].
 
 #### Non-degenerate pairings · P1
 
@@ -1109,7 +1109,7 @@ If $B : V \times W \to \mathbb{R}$ is bilinear and non-degenerate and $V$ or $W$
 
 #### $\mathrm{U}(n)$ is a smooth manifold of dimension $n^2$ · P1
 
-Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23.2]] (with Lemma [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|§23.3]], Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-4|§23.4]]) → drilled as [[Differentiable Manifolds HW Drill#^hw2-4|HW2.4]].
+Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|§23.3]] (with Lemma [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|§23.4]], Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-5|§23.5]]) → drilled as [[Differentiable Manifolds HW Drill#^hw2-4|HW2.4]].
 
 ### Priority 2 · stated or done in class
 
@@ -1146,7 +1146,7 @@ $\nabla \det(g) \neq 0$ on $\det^{-1}(1)$ (Corollary [[§12 The Classical Groups
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S5 (regular value theorem on a well-chosen map).
 > - $A = g$: $\nabla \det(g) \cdot g = \det(g)\operatorname{tr}(I) = cn \neq 0$.
-> - $F = \det - 1$ on $\mathbb{R}^{n^2} = \mathbb{R}^{(n^2-1)+1}$, $k = 1$, then Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
+> - $F = \det - 1$ on $\mathbb{R}^{n^2} = \mathbb{R}^{(n^2-1)+1}$, $k = 1$, then Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]].
 
 #### The two descriptions of a submanifold of $\mathbb{R}^{n+k}$ agree · P2
 
@@ -1162,7 +1162,7 @@ For $X \subseteq \mathbb{R}^{n+k}$ and $p \in X$: the external description (regu
 - [ ] Q6 **[why]** In the internal description, why is "$\alpha$ is a homeomorphism onto $X \cap W$" needed, not just "injective immersion"? (Think of the figure eight.)
 
 > [!tip]- Hints: route of the proof in the notes
-> - External ⇒ (G): Steps 1–3 of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] (permute, implicit function theorem).
+> - External ⇒ (G): Steps 1–3 of Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] (permute, implicit function theorem).
 > - (G) ⇒ external: $F(x,y) = y - h(x)$, Jacobian $(-Dh_x \mid I_k)$.
 > - (G) ⇒ internal: $\alpha(x) = (x, h(x))$, inverse the projection.
 > - Internal ⇒ (G): $\alpha = (\alpha_1, \alpha_2)$ with $D\alpha_1$ invertible; $h = \alpha_2 \circ \alpha_1^{-1}$.
@@ -1181,7 +1181,7 @@ If $W \subseteq \mathbb{R}^{n+k}$ is open, $F : W \to \mathbb{R}^k$ smooth and $
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1 (transition maps), S5.
-> - Charts from Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], Step 3 (Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]] for open $W$, value $c$).
+> - Charts from Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]], Step 3 (Corollary [[§7 The Regular Value Theorem#^cor-7-6|§7.6]] for open $W$, value $c$).
 > - $\varphi_J^{-1}(u)$ has components $u^l$ ($l \in I$) or $h_J^l(u)$ ($l \in J$).
 > - $\varphi_{J'} \circ \varphi_J^{-1} = \pi_{I'} \circ \varphi_J^{-1}$: smooth parametrization up, linear projection down.
 
@@ -1218,7 +1218,7 @@ Smoothness of $F : X \to Y$ in linear coordinates does not depend on the coordin
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1.
 > - $\widetilde F' = (K'K^{-1}) \circ \widetilde F \circ (LL'^{-1})$, linear isomorphisms are smooth.
-> - Transition $L' \circ L^{-1}$ is a linear isomorphism; uniqueness in Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]].
+> - Transition $L' \circ L^{-1}$ is a linear isomorphism; uniqueness in Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]].
 
 #### Coordinate-free formula for the differential; regular values without coordinates · P2
 
@@ -1241,7 +1241,7 @@ For $F : X \to Y$ smooth between vector spaces, $dF_p(v) = \frac{d}{dt}|_{t=0} F
 
 #### $\mathrm{O}(n)$ is a smooth manifold; the kernel of the differential · P2
 
-$F(g) = gg^{\mathsf T} : \mathrm{Mat}(n,\mathbb{R}) \to \mathrm{Sym}(n,\mathbb{R})$ has $I$ as a regular value, so $\mathrm{O}(n) = F^{-1}(I)$ is a smooth manifold of dimension $\frac{n(n-1)}{2}$ (Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]]), and $\ker dF_g = g \cdot \mathrm{Skew}(n,\mathbb{R})$ (Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1|§23.1]]). *Source: Lectures 6–7 (the differential by curves; the choice $A = \frac12 Sg$: "we can check it again on Wednesday, but check that this works").* **[class exercise, Lecture 6]**
+$F(g) = gg^{\mathsf T} : \mathrm{Mat}(n,\mathbb{R}) \to \mathrm{Sym}(n,\mathbb{R})$ has $I$ as a regular value, so $\mathrm{O}(n) = F^{-1}(I)$ is a smooth manifold of dimension $\frac{n(n-1)}{2}$ (Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]]), and $\ker dF_g = g \cdot \mathrm{Skew}(n,\mathbb{R})$ (Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-2|§23.2]]). *Source: Lectures 6–7 (the differential by curves; the choice $A = \frac12 Sg$: "we can check it again on Wednesday, but check that this works").* **[class exercise, Lecture 6]**
 
 ^nd-ex-23-1
 
@@ -1261,7 +1261,7 @@ $F(g) = gg^{\mathsf T} : \mathrm{Mat}(n,\mathbb{R}) \to \mathrm{Sym}(n,\mathbb{R
 
 #### $\mathrm{SO}(n)$ is a smooth manifold; $\mathrm{O}(n)$ is compact · P2
 
-$\mathrm{SO}(n)$ is open and closed in $\mathrm{O}(n)$, hence a smooth manifold of dimension $\frac{n(n-1)}{2}$; $\mathrm{O}(n)$ is compact, see Corollary [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2|§23.2]]. *Source: notes (filled in).*
+$\mathrm{SO}(n)$ is open and closed in $\mathrm{O}(n)$, hence a smooth manifold of dimension $\frac{n(n-1)}{2}$; $\mathrm{O}(n)$ is compact, see Corollary [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3|§23.3]]. *Source: notes (filled in).*
 
 ^nd-cor-23-2
 
@@ -1272,7 +1272,7 @@ $\mathrm{SO}(n)$ is open and closed in $\mathrm{O}(n)$, hence a smooth manifold 
 - [ ] Q5 **[why]** Is $\mathrm{SL}(n,\mathbb{R})$ compact? Why does the boundedness argument fail there?
 
 > [!tip]- Hints: route of the proof in the notes
-> - $\mathrm{SO}(n) = \mathrm{O}(n) \cap \det^{-1}(0,\infty)$; Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]].
+> - $\mathrm{SO}(n) = \mathrm{O}(n) \cap \det^{-1}(0,\infty)$; Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]].
 > - $(g^{\mathsf T}g)_{jj} = \sum_i g_{ij}^2 = 1$, so $\|g\|^2 = n$; Heine–Borel.
 
 # T3. Smooth structures and smooth maps
@@ -1294,8 +1294,8 @@ $(U, \varphi)$ and $(V, \psi)$ are compatible if $\psi \circ \varphi^{-1} : \var
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]; diffeomorphism of open sets Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]; smooth in the sense of a chart Definition [[§17 Differentiable Structures#^def-17-2|§17.2]].
-> - Q2, Q3: Proposition [[§17 Differentiable Structures#^prop-17-2|§17.2]] ($\mathrm{id}$ on $\mathbb{R}$, $\mathrm{id}$ on $(0, \infty)$, $t \mapsto t^3$ on $\mathbb{R}$; the transition $t \mapsto t^{1/3}$ is not differentiable at $0$).
-> - Q4: Theorem [[§17 Differentiable Structures#^thm-17-1|§17.1]] (both directions; the remark *The Board Version* in [[§17 Differentiable Structures|§17]]).
+> - Q2, Q3: Proposition [[§17 Differentiable Structures#^prop-17-3|§17.3]] ($\mathrm{id}$ on $\mathbb{R}$, $\mathrm{id}$ on $(0, \infty)$, $t \mapsto t^3$ on $\mathbb{R}$; the transition $t \mapsto t^{1/3}$ is not differentiable at $0$).
+> - Q4: Theorem [[§17 Differentiable Structures#^thm-17-2|§17.2]] (both directions; the remark *The Board Version* in [[§17 Differentiable Structures|§17]]).
 
 #### Atlas · P2
 
@@ -1310,7 +1310,7 @@ A family of pairwise compatible charts whose domains cover $M$, see Definition [
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]; Example [[§17 Differentiable Structures#^ex-17-2|§17.2]] (four half-circles), Example [[§17 Differentiable Structures#^ex-17-3|§17.3]] (stereographic), Example [[§17 Differentiable Structures#^ex-17-4|§17.4]] (angle).
-> - Q3: Proposition [[§17 Differentiable Structures#^prop-17-3|§17.3]]. Q4: Definition [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|§18.2]], Theorem [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]] → drilled as [[Differentiable Manifolds HW Drill#^hw2-2|HW2.2]].
+> - Q3: Proposition [[§17 Differentiable Structures#^prop-17-4|§17.4]]. Q4: Definition [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|§18.2]], Theorem [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]] → drilled as [[Differentiable Manifolds HW Drill#^hw2-2|HW2.2]].
 
 #### Compatible atlases · P2
 
@@ -1326,7 +1326,7 @@ Two atlases are compatible if every chart of one is compatible with every chart 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§17 Differentiable Structures#^def-17-7|§17.7]]; Q2: Proposition [[§24 The Circle#^prop-24-1|§24.1]].
 > - Q3: Example [[§19 Smooth Functions and Smooth Maps#^ex-19-1|§19.1]], Example [[§19 Smooth Functions and Smooth Maps#^ex-19-2|§19.2]], Corollary [[§19 Smooth Functions and Smooth Maps#^cor-19-9|§19.9]] → drilled as [[Differentiable Manifolds HW Drill#^hw3-1|HW3.1]].
-> - Q4: Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] (same maximal atlas iff compatible).
+> - Q4: Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]] (same maximal atlas iff compatible).
 
 #### Maximal atlas · P2
 
@@ -1341,9 +1341,9 @@ An atlas containing every chart compatible with all its charts, see Definition [
 - [ ] Q5 **[example]** Is $(\mathbb{R}, t \mapsto t^3)$ in the maximal atlas of standard $\mathbb{R}$? Is $((0, \infty), t \mapsto t^3)$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]; Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] (cover; pairwise compatible by factoring $\chi \circ \psi^{-1} = (\chi \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ near each point with $\varphi$ from $\mathcal{A}$; maximal; unique).
-> - Q4: two atlases of the same structure would give "different" manifolds; and charts like restrictions (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]]) must be allowed.
-> - Q5: no (the transition $t \mapsto t^{1/3}$ fails at $0$), yes (Proposition [[§17 Differentiable Structures#^prop-17-2|§17.2]]).
+> - Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]; Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]] (cover; pairwise compatible by factoring $\chi \circ \psi^{-1} = (\chi \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ near each point with $\varphi$ from $\mathcal{A}$; maximal; unique).
+> - Q4: two atlases of the same structure would give "different" manifolds; and charts like restrictions (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]]) must be allowed.
+> - Q5: no (the transition $t \mapsto t^{1/3}$ fails at $0$), yes (Proposition [[§17 Differentiable Structures#^prop-17-3|§17.3]]).
 
 #### Smooth manifold structure · P2
 
@@ -1358,7 +1358,7 @@ A smooth structure on a topological manifold is a maximal atlas; a smooth manifo
 - [ ] Q5 **[example]** Give the smooth structure on a finite-dimensional vector space and explain "one, hence every, linear chart".
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§17 Differentiable Structures#^def-17-9|§17.9]]; Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]].
+> - Definition [[§17 Differentiable Structures#^def-17-9|§17.9]]; Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]].
 > - Q3: the line with two origins has a smooth atlas (two charts, identity transitions) but is not Hausdorff, so it is not a manifold (Example [[§2 Topological Manifolds#^ex-2-1|§2.1]]).
 > - Q4: Example [[§19 Smooth Functions and Smooth Maps#^ex-19-1|§19.1]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], Definition [[§19 Smooth Functions and Smooth Maps#^def-19-6|§19.6]], the remark *Distinct Structures versus Non-Diffeomorphic Manifolds* in [[§19 Smooth Functions and Smooth Maps|§19]].
 > - Q5: Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|§22.4]], Proposition [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]].
@@ -1375,7 +1375,7 @@ A chart belonging to the maximal atlas, equivalently compatible with every chart
 - [ ] Q4 **[example]** Why is a smooth chart $\varphi : U \to \varphi(U)$ a diffeomorphism onto its image?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§19 Smooth Functions and Smooth Maps#^def-19-1|§19.1]]; Q2: Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]]. Q3: $t \mapsto t^{1/3}$ (Example [[§19 Smooth Functions and Smooth Maps#^ex-19-1|§19.1]]). Q4: Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], Lemma [[§36 Submersions#^lem-36-5|§36.5]] (the converse: diffeomorphisms onto open sets are charts).
+> - Definition [[§19 Smooth Functions and Smooth Maps#^def-19-1|§19.1]]; Q2: Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]]. Q3: $t \mapsto t^{1/3}$ (Example [[§19 Smooth Functions and Smooth Maps#^ex-19-1|§19.1]]). Q4: Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], Lemma [[§36 Submersions#^lem-36-5|§36.5]] (the converse: diffeomorphisms onto open sets are charts).
 
 #### Smooth function on a manifold · P2
 
@@ -1408,7 +1408,7 @@ $F : M \to N$ is smooth if it is continuous and every $p$ has charts $(U, \varph
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]; Q2: Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]] (shrink $U$ to $U \cap F^{-1}(V)$, which needs $F$ continuous).
 > - Q3: Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]] (sandwich between transition maps). Q4: Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]].
-> - Q5: Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]].
+> - Q5: Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]].
 
 #### Diffeomorphism · P2
 
@@ -1439,8 +1439,8 @@ $M_1 \times M_2$ with the structure generated by the product charts $\varphi_1 \
 - [ ] Q4 **[example]** Why is the torus $S^1 \times S^1$ a smooth manifold of dimension $2$, and why is $\mathrm{pr}_1 : M_1 \times M_2 \to M_1$ a submersion?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§19 Smooth Functions and Smooth Maps#^def-19-7|§19.7]]; Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]] (transition $(\psi_1 \circ \varphi_1^{-1}) \times (\psi_2 \circ \varphi_2^{-1})$).
-> - Q3: Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]] ($\Theta(v, w) = \iota_{1\ast}v + \iota_{2\ast}w$ from $T_{p_1}M_1 \oplus T_{p_2}M_2$, with inverse $D \mapsto (\pi_{1\ast}D, \pi_{2\ast}D)$). Q4: Example [[§36 Submersions#^ex-36-2|§36.2]].
+> - Definition [[§19 Smooth Functions and Smooth Maps#^def-19-7|§19.7]]; Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]] (transition $(\psi_1 \circ \varphi_1^{-1}) \times (\psi_2 \circ \varphi_2^{-1})$).
+> - Q3: Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]] ($\Theta(v, w) = \iota_{1\ast}v + \iota_{2\ast}w$ from $T_{p_1}M_1 \oplus T_{p_2}M_2$, with inverse $D \mapsto (\pi_{1\ast}D, \pi_{2\ast}D)$). Q4: Example [[§36 Submersions#^ex-36-2|§36.2]].
 
 ## Proofs T3
 
@@ -1493,7 +1493,7 @@ The charts $\varphi = \mathrm{id}$ and $\psi = \sqrt[3]{\cdot}$ give two differe
 
 #### Compatibility means the two notions of smoothness agree · P2
 
-Two overlapping charts are $C^\infty$-compatible iff they declare the same functions on $U \cap V$ smooth, see Theorem [[§17 Differentiable Structures#^thm-17-1|§17.1]]. *Source: notes (filled in; reconciles the phrasings of Lectures 5 and 6).*
+Two overlapping charts are $C^\infty$-compatible iff they declare the same functions on $U \cap V$ smooth, see Theorem [[§17 Differentiable Structures#^thm-17-2|§17.2]]. *Source: notes (filled in; reconciles the phrasings of Lectures 5 and 6).*
 
 ^nd-thm-17-1
 
@@ -1510,7 +1510,7 @@ Two overlapping charts are $C^\infty$-compatible iff they declare the same funct
 
 #### Every atlas lies in a unique maximal atlas · P2
 
-For an atlas $\mathcal{A}$, the set $\overline{\mathcal{A}}$ of all charts compatible with every chart of $\mathcal{A}$ is the unique maximal atlas containing $\mathcal{A}$; two atlases are compatible iff they lie in the same maximal atlas, see Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]. *Source: Lecture 5 (uniqueness), Lecture 6 (sketch), completed in the notes.*
+For an atlas $\mathcal{A}$, the set $\overline{\mathcal{A}}$ of all charts compatible with every chart of $\mathcal{A}$ is the unique maximal atlas containing $\mathcal{A}$; two atlases are compatible iff they lie in the same maximal atlas, see Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]. *Source: Lecture 5 (uniqueness), Lecture 6 (sketch), completed in the notes.*
 
 ^nd-thm-17-5
 
@@ -1528,7 +1528,7 @@ For an atlas $\mathcal{A}$, the set $\overline{\mathcal{A}}$ of all charts compa
 
 #### The circle needs more than one chart · P2
 
-$S^1$ has no one-chart atlas, see Proposition [[§17 Differentiable Structures#^prop-17-3|§17.3]]. *Source: Lecture 5 (the reason given); filled in.*
+$S^1$ has no one-chart atlas, see Proposition [[§17 Differentiable Structures#^prop-17-4|§17.4]]. *Source: Lecture 5 (the reason given); filled in.*
 
 ^nd-prop-17-3
 
@@ -1577,7 +1577,7 @@ If $F : M \to N$ and $G : N \to P$ are smooth, so is $G \circ F$, see Lemma [[§
 
 #### The product smooth structure; projections and slices are smooth · P2
 
-Product charts $(U_1 \times U_2, \varphi_1 \times \varphi_2)$ form a smooth atlas on $M_1 \times M_2$, of dimension $m_1 + m_2$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]]); projections and slice inclusions are smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]). *Source: Lecture 11.*
+Product charts $(U_1 \times U_2, \varphi_1 \times \varphi_2)$ form a smooth atlas on $M_1 \times M_2$, of dimension $m_1 + m_2$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]); projections and slice inclusions are smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]). *Source: Lecture 11.*
 
 ^nd-prop-19-10
 
@@ -1586,7 +1586,7 @@ Product charts $(U_1 \times U_2, \varphi_1 \times \varphi_2)$ form a smooth atla
 - [ ] Q3 Why is $M_1 \times M_2$ Hausdorff and second countable, and why are product charts charts?
 - [ ] Q4 Compute the transition function of two product charts. Why is it smooth?
 - [ ] Q5 Compute the coordinate representations of $\pi_1$ and of $\iota^{p_2}$ in product charts.
-- [ ] Q6 **[why]** Where is this used: the tangent space of a product (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]]) and the 2025 graph–diagonal problem.
+- [ ] Q6 **[why]** Where is this used: the tangent space of a product (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]]) and the 2025 graph–diagonal problem.
 
 > [!tip]- Hints: route of the proof in the notes
 > - Theorem [[§3 Subspaces and Products#^thm-3-12|§3.12]]; $\varphi_1 \times \varphi_2$ continuous with continuous inverse by the universal property of the product.
@@ -1610,13 +1610,13 @@ The four-chart (projection) atlas, the angle atlas and the stereographic atlas o
 > - Strategy: S1; compare everything with one reference atlas.
 > - $\sigma_N = x/(1-y)$ on $\{y < 1\}$; $\sigma_N^{-1}(u) = (2u, u^2 - 1)/(u^2 + 1)$.
 > - Transitions: $\pi_I \circ \chi^{-1}$ (linear after smooth) and $\hat\chi \circ \varphi^{-1}$.
-> - Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]: each atlas lies in $\overline{\mathcal{A}}$.
+> - Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]: each atlas lies in $\overline{\mathcal{A}}$.
 
 ### Priority 3 · filled in, using a technique the homework drills
 
 #### Restricting and recomposing smooth charts; open subsets are smooth manifolds · P3
 
-A smooth chart restricted to an open subset, or composed with a diffeomorphism of Euclidean open sets, is again a chart of the smooth structure (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]]); an open subset $S$ of a smooth manifold is a smooth manifold whose charts are the charts of $M$ inside $S$ (Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]]). *Source: notes (filled in).*
+A smooth chart restricted to an open subset, or composed with a diffeomorphism of Euclidean open sets, is again a chart of the smooth structure (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]]); an open subset $S$ of a smooth manifold is a smooth manifold whose charts are the charts of $M$ inside $S$ (Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]]). *Source: notes (filled in).*
 
 ^nd-lem-17-6
 
@@ -1651,14 +1651,14 @@ If $F : M \to N$ is smooth, then $\psi' \circ F \circ \varphi'^{-1}$ is smooth f
 
 #### Compatibility is not an equivalence relation · P4
 
-$C^\infty$-compatibility is reflexive and symmetric but not transitive, see Proposition [[§17 Differentiable Structures#^prop-17-2|§17.2]]. *Source: notes (filled in).*
+$C^\infty$-compatibility is reflexive and symmetric but not transitive, see Proposition [[§17 Differentiable Structures#^prop-17-3|§17.3]]. *Source: notes (filled in).*
 
 ^nd-prop-17-2
 
 - [ ] Q1 **[state]** State the proposition.
 - [ ] Q2 Reflexive and symmetric: which transition functions appear?
 - [ ] Q3 Not transitive: give three charts on $\mathbb{R}$ (on $\mathbb{R}$, on $(0,\infty)$, the cube) with $1 \sim 2$, $2 \sim 3$, $1 \not\sim 3$. Check each pair.
-- [ ] Q4 **[why]** Why does this make the proof of Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] non-trivial (which step would otherwise be formal)?
+- [ ] Q4 **[why]** Why does this make the proof of Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]] non-trivial (which step would otherwise be formal)?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Overlaps with $(0,\infty)$ avoid $0$, where $t^{1/3}$ is not smooth.
@@ -1677,7 +1677,7 @@ For continuous $F : M \to N$, $p \in M$: every chart $(U_0,\varphi_0)$ at $p$ ca
 - [ ] Q5 **[why]** Where is continuity of $F$ used, and why is this lemma used "tacitly" in almost every proof about smooth maps?
 
 > [!tip]- Hints: route of the proof in the notes
-> - $F^{-1}(V)$ open by continuity; Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1); then Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]].
+> - $F^{-1}(V)$ open by continuity; Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1); then Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]].
 
 #### The two notions of diffeomorphism agree · P4
 
@@ -1706,7 +1706,7 @@ For $S \subseteq M$ open: the inclusion $\iota$ is smooth, restrictions of smoot
 - [ ] Q4 **[why]** Part (3) fails for a non-open subset with the "wrong" topology (a figure eight in $\mathbb{R}^2$): which step uses openness?
 
 > [!tip]- Hints: route of the proof in the notes
-> - Charts of $S$ are the charts of $M$ with domain in $S$ (Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]]); $\varphi \circ \iota \circ \varphi^{-1} = \mathrm{id}$.
+> - Charts of $S$ are the charts of $M$ with domain in $S$ (Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]]); $\varphi \circ \iota \circ \varphi^{-1} = \mathrm{id}$.
 > - Open in $S$ ⇒ open in $M$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]).
 
 #### Diffeomorphic is an equivalence relation; transport of structure · P4
@@ -1816,8 +1816,8 @@ $T_pM$, the vector space of all derivations at $p$, see Definition [[§28 Deriva
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]; the remark *Two Faces of a Tangent Vector* in [[§28 Derivations and the Abstract Tangent Space|§28]].
 > - Q2: Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]] (needs bump functions, Corollary [[§56 Vector Fields#^cor-56-5|§56.5]]). Q3: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]].
-> - Q4: Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]] (Uribe: smoothness of the $g_i$ is "a key point": one applies $D$ to them).
-> - Q5: $D_v$, Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]], Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]].
+> - Q4: Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]] (Uribe: smoothness of the $g_i$ is "a key point": one applies $D$ to them).
+> - Q5: $D_v$, Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]], Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]].
 
 #### Pullback of germs · P2
 
@@ -1877,9 +1877,9 @@ $\frac{\partial}{\partial x^j}\big|_p[f] = \frac{\partial f_\varphi}{\partial r^
 - [ ] Q5 **[example]** Express $\partial/\partial r$ and $\partial/\partial \theta$ in terms of $\partial/\partial x$, $\partial/\partial y$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] ("defined by going downstairs"); Q2: Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-2|§29.2]].
+> - Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] ("defined by going downstairs"); Q2: Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-3|§29.3]].
 > - Q3: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], with $\tilde x = x$, $\tilde y = y + x$: $\partial/\partial \tilde x = \partial/\partial x - \partial/\partial y$ (not in the notes; a standard check).
-> - Q4: $\delta^j_i$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]] (Step 4), Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]. Q5: Example [[§30 The Differential in Coordinates#^ex-30-1|§30.1]].
+> - Q4: $\delta^j_i$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]] (Step 4), Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]. Q5: Example [[§30 The Differential in Coordinates#^ex-30-1|§30.1]].
 
 ## Proofs T4
 
@@ -1902,11 +1902,11 @@ $I_p$ is an ideal and $I_p^2 \subseteq I_p$ (Lemma [[§28 Derivations and the Ab
 > - $D[\underline 1] = D([\underline 1][\underline 1]) = 2D[\underline 1]$.
 > - $[f] = [f - \underline{f(p)}] + [\underline{f(p)}]$.
 > - Leibniz with $f(p) = g(p) = 0$; linearity for finite sums.
-> - Used in Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5|§29.5]] and Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]].
+> - Used in Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-6|§29.6]] and Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]].
 
 #### Regular level sets of maps between manifolds are topological manifolds · P1
 
-If $F : M^m \to N^n$ is smooth and $c$ a regular value, $F^{-1}(c)$ is a topological manifold of dimension $m - n$ (Corollary [[§30 The Differential in Coordinates#^cor-30-9|§30.9]]); when $F^{-1}(c)$ lies in one chart, $c$ is regular for $F$ iff $\psi(c)$ is regular for $\tilde F$ (Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]]). *Source: notes (used in [[Differentiable Manifolds HW Drill#^hw3-4|HW3.4]]).*
+If $F : M^m \to N^n$ is smooth and $c$ a regular value, $F^{-1}(c)$ is a topological manifold of dimension $m - n$ (Corollary [[§30 The Differential in Coordinates#^cor-30-10|§30.10]]); when $F^{-1}(c)$ lies in one chart, $c$ is regular for $F$ iff $\psi(c)$ is regular for $\tilde F$ (Proposition [[§30 The Differential in Coordinates#^prop-30-9|§30.9]]). *Source: notes (used in [[Differentiable Manifolds HW Drill#^hw3-4|HW3.4]]).*
 
 ^nd-cor-30-9
 
@@ -1919,11 +1919,11 @@ If $F : M^m \to N^n$ is smooth and $c$ a regular value, $F^{-1}(c)$ is a topolog
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S5.
 > - $\tilde F(x) = \tilde c \iff F(\varphi^{-1}x) = c$ ($\psi$ injective on $V$).
-> - Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]](1) for the charts; $(F|_U)_\ast = F_\ast$ under $T_qU = T_qM$; then Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]].
+> - Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]](1) for the charts; $(F|_U)_\ast = F_\ast$ under $T_qU = T_qM$; then Corollary [[§7 The Regular Value Theorem#^cor-7-6|§7.6]].
 
 #### Maps with zero differential are constant · P1
 
-Proposition [[§30 The Differential in Coordinates#^prop-30-10|§30.10]] → drilled as [[Differentiable Manifolds HW Drill#^hw4-1|HW4.1]].
+Proposition [[§30 The Differential in Coordinates#^prop-30-11|§30.11]] → drilled as [[Differentiable Manifolds HW Drill#^hw4-1|HW4.1]].
 
 #### Velocity in coordinates · P1
 
@@ -1982,7 +1982,7 @@ For a regular level set $M = F^{-1}(c) \subseteq \mathbb{R}^{n+k}$ and $p \in M$
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S6 (prove $\subseteq$, then count dimensions), S7.
 > - $F \circ \gamma \equiv c$, so $F'(p)\gamma'(0) = 0$.
-> - Steps 1–3 of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] make $M$ locally a graph; Lemma [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]] gives dimension $n$.
+> - Steps 1–3 of Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] make $M$ locally a graph; Lemma [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]] gives dimension $n$.
 > - Rank–nullity: $\dim \ker F'(p) = (n+k) - k$. An $n$-dimensional subspace of an $n$-dimensional space is everything.
 
 #### Tangent spaces of the classical groups · P2
@@ -2000,7 +2000,7 @@ $T^{\mathrm{geo}}_I\mathrm{O}(n) = \mathrm{Skew}(n)$ (Example [[§25 The Geometr
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S6, S10, S15 (translate from $I$ to $g$).
-> - $\ker dF_g$ from Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1|§23.1]]; Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] in its vector-space form.
+> - $\ker dF_g$ from Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-2|§23.2]]; Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] in its vector-space form.
 > - $\mathrm{SL}$: $A \in T_g$ iff $\operatorname{tr}(g^{-1}A) = 0$; write $A = gB$ or $A = Bg$.
 > - $(gXg^{-1})^{\mathsf T} = -gXg^{-1}$; $\mathrm{SO}(n)$ open in $\mathrm{O}(n)$ and Lemma [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]].
 
@@ -2073,7 +2073,7 @@ $(G \circ F)_{\ast p} = G_{\ast F(p)} \circ F_{\ast p}$ and $(\mathrm{id}_M)_{\a
 
 #### Coordinate derivations are derivations · P2
 
-$\frac{\partial}{\partial x^i}|_p[f] = \frac{\partial f_\varphi}{\partial r^i}(\varphi(p))$ is well defined on germs and a derivation at $p$ (Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-2|§29.2]]); and $\partial f/\partial x^j$ is smooth on $U$ with coordinate representation $\partial f_\varphi/\partial r^j$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]). *Source: Lecture 8 ("it's linear, and the product rule will be inherited"); well-definedness filled in.*
+$\frac{\partial}{\partial x^i}|_p[f] = \frac{\partial f_\varphi}{\partial r^i}(\varphi(p))$ is well defined on germs and a derivation at $p$ (Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-3|§29.3]]); and $\partial f/\partial x^j$ is smooth on $U$ with coordinate representation $\partial f_\varphi/\partial r^j$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]). *Source: Lecture 8 ("it's linear, and the product rule will be inherited"); well-definedness filled in.*
 
 ^nd-prop-29-2
 
@@ -2091,7 +2091,7 @@ $\frac{\partial}{\partial x^i}|_p[f] = \frac{\partial f_\varphi}{\partial r^i}(\
 
 #### Hadamard's lemma and Taylor–Hadamard · P2
 
-For $f$ smooth near $a \in \mathbb{R}^n$ and a ball $B$ centred at $a$: $f(r) = f(a) + \sum_i (r^i - a^i) f_i(r)$ with $f_i$ smooth on $B$ and $f_i(a) = \partial f/\partial r^i(a)$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]]); applied twice, $f = f(a) + \sum_i (r^i - a^i)\partial_i f(a) + \sum_{i,j}(r^i - a^i)(r^j - a^j) f_{ij}$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]]). *Source: Lecture 9 ("delightfully simple"; smoothness of the $f_i$ is "a key point").*
+For $f$ smooth near $a \in \mathbb{R}^n$ and a ball $B$ centred at $a$: $f(r) = f(a) + \sum_i (r^i - a^i) f_i(r)$ with $f_i$ smooth on $B$ and $f_i(a) = \partial f/\partial r^i(a)$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]]); applied twice, $f = f(a) + \sum_i (r^i - a^i)\partial_i f(a) + \sum_{i,j}(r^i - a^i)(r^j - a^j) f_{ij}$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|§29.5]]). *Source: Lecture 9 ("delightfully simple"; smoothness of the $f_i$ is "a key point").*
 
 ^nd-lem-29-3
 
@@ -2109,7 +2109,7 @@ For $f$ smooth near $a \in \mathbb{R}^n$ and a ball $B$ centred at $a$: $f(r) = 
 
 #### Derivations on $\mathbb{R}^n$ · P2
 
-For a derivation $D$ at $a$ on open $W \subseteq \mathbb{R}^n$: $D = \sum_i D[r^i]\, \frac{\partial}{\partial r^i}|_a$, see Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5|§29.5]]. *Source: Lecture 9.*
+For a derivation $D$ at $a$ on open $W \subseteq \mathbb{R}^n$: $D = \sum_i D[r^i]\, \frac{\partial}{\partial r^i}|_a$, see Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-6|§29.6]]. *Source: Lecture 9.*
 
 ^nd-cor-29-5
 
@@ -2125,16 +2125,16 @@ For a derivation $D$ at $a$ on open $W \subseteq \mathbb{R}^n$: $D = \sum_i D[r^
 
 #### Basis theorem · P2
 
-For any chart $(U, \varphi)$ at $p$, the $\frac{\partial}{\partial x^i}|_p$ form a basis of $T_pM$, and $D = \sum_i D[x^i]\, \frac{\partial}{\partial x^i}|_p$ (universal formula), see Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]. *Source: Lecture 9.*
+For any chart $(U, \varphi)$ at $p$, the $\frac{\partial}{\partial x^i}|_p$ form a basis of $T_pM$, and $D = \sum_i D[x^i]\, \frac{\partial}{\partial x^i}|_p$ (universal formula), see Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]. *Source: Lecture 9.*
 
 ^nd-thm-29-6
 
 - [ ] Q1 **[state]** State the theorem and the universal formula.
 - [ ] Q2 Step 1: push $D$ down by the chart. What is $\tilde D[g]$, and why is this legitimate (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]])?
-- [ ] Q3 Step 2: apply Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5|§29.5]] downstairs.
+- [ ] Q3 Step 2: apply Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-6|§29.6]] downstairs.
 - [ ] Q4 Step 3: read it back upstairs with $g = f_\varphi$. Why is $\tilde D[r^i] = D[x^i]$ and $\partial f_\varphi/\partial r^i(a) = \frac{\partial}{\partial x^i}|_p[f]$?
 - [ ] Q5 Step 4: linear independence and uniqueness of the coefficients.
-- [ ] Q6 **[why]** Why does $\dim T_pM = n$ not depend on the chart (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), and how does this give smooth invariance of dimension (Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-10|§29.10]])?
+- [ ] Q6 **[why]** Why does $\dim T_pM = n$ not depend on the chart (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]), and how does this give smooth invariance of dimension (Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-11|§29.11]])?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S9.
@@ -2144,7 +2144,7 @@ For any chart $(U, \varphi)$ at $p$, the $\frac{\partial}{\partial x^i}|_p$ form
 
 #### Ambient and abstract tangent spaces agree · P2
 
-For a regular level set $M \subseteq \mathbb{R}^{n+k}$, $v \mapsto D_v$, $D_v(f) = \frac{d}{dt}|_0 f(\gamma(t))$, is an isomorphism $T^{\mathrm{geo}}_pM \to T_pM$, see Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]] (with Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]], Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]). *Source: announced in lecture in answer to a student ("they are the same, but it has to be proved"); Lecture 17: "from now on" $T^{\mathrm{geo}}_pM = T_pM$.*
+For a regular level set $M \subseteq \mathbb{R}^{n+k}$, $v \mapsto D_v$, $D_v(f) = \frac{d}{dt}|_0 f(\gamma(t))$, is an isomorphism $T^{\mathrm{geo}}_pM \to T_pM$, see Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]] (with Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]], Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]). *Source: announced in lecture in answer to a student ("they are the same, but it has to be proved"); Lecture 17: "from now on" $T^{\mathrm{geo}}_pM = T_pM$.*
 
 ^nd-thm-29-7
 
@@ -2159,7 +2159,7 @@ For a regular level set $M \subseteq \mathbb{R}^{n+k}$, $v \mapsto D_v$, $D_v(f)
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S7 (injective between equal dimensions).
 > - Locally a graph; $\varphi \circ \sigma$ has velocity $u$, then the chain rule.
-> - $D_v(x^i) = u^i$; $\dim T^{\mathrm{geo}}_pM = n$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]) $= \dim T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]).
+> - $D_v(x^i) = u^i$; $\dim T^{\mathrm{geo}}_pM = n$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]) $= \dim T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]).
 
 #### The matrix of the differential · P2
 
@@ -2231,7 +2231,7 @@ $D_{F \circ \gamma} = F_{\ast p}(D_\gamma)$; so $F_{\ast p}(D) = D_{F \circ \gam
 
 #### The tangent space of a product · P2
 
-$\Theta(v, w) = \iota_{1\ast}v + \iota_{2\ast}w$ is an isomorphism $T_{p_1}M_1 \oplus T_{p_2}M_2 \to T_p(M_1 \times M_2)$ with inverse $(\pi_{1\ast}, \pi_{2\ast})$, see Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]]; in product coordinates the summands are spanned by the $\partial/\partial x^i$ and the $\partial/\partial y^j$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-7|§31.7]]), and $D_\gamma = \iota_{1\ast}D_{\gamma_1} + \iota_{2\ast}D_{\gamma_2}$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-8|§31.8]]). *Source: Lecture 11 ("you can check that it's injective, so I won't do it").* **[class exercise, Lecture 11]**
+$\Theta(v, w) = \iota_{1\ast}v + \iota_{2\ast}w$ is an isomorphism $T_{p_1}M_1 \oplus T_{p_2}M_2 \to T_p(M_1 \times M_2)$ with inverse $(\pi_{1\ast}, \pi_{2\ast})$, see Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]]; in product coordinates the summands are spanned by the $\partial/\partial x^i$ and the $\partial/\partial y^j$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-8|§31.8]]), and $D_\gamma = \iota_{1\ast}D_{\gamma_1} + \iota_{2\ast}D_{\gamma_2}$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-9|§31.9]]). *Source: Lecture 11 ("you can check that it's injective, so I won't do it").* **[class exercise, Lecture 11]**
 
 ^nd-thm-31-4
 
@@ -2245,12 +2245,12 @@ $\Theta(v, w) = \iota_{1\ast}v + \iota_{2\ast}w$ is an isomorphism $T_{p_1}M_1 \
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S14, S7.
 > - $\pi_1 \circ \iota_1 = \mathrm{id}$; $\pi_2 \circ \iota_1$ is constant, so Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]] gives $0$.
-> - $\dim = m_1 + m_2$ on both sides (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]]).
+> - $\dim = m_1 + m_2$ on both sides (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]).
 > - Curves: $\pi_{i\ast}D_\gamma = D_{\pi_i \circ \gamma}$ by Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]].
 
 #### Partial derivatives in one factor · P2
 
-For $\varphi \in C^\infty(M \times N)$ and $v \in T_pM$, $\partial_v\varphi(q) = \frac{d}{dt}|_0 \varphi(\gamma(t), q)$ for any curve adapted to $v$, $= \sum_j v^j \frac{\partial \varphi}{\partial x^j}(p, q)$, and $\partial_v\varphi \in C^\infty(N)$, see Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]]. *Source: Lecture 18 (curves, then coordinates).*
+For $\varphi \in C^\infty(M \times N)$ and $v \in T_pM$, $\partial_v\varphi(q) = \frac{d}{dt}|_0 \varphi(\gamma(t), q)$ for any curve adapted to $v$, $= \sum_j v^j \frac{\partial \varphi}{\partial x^j}(p, q)$, and $\partial_v\varphi \in C^\infty(N)$, see Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-10|§31.10]]. *Source: Lecture 18 (curves, then coordinates).*
 
 ^nd-prop-31-7
 
@@ -2263,7 +2263,7 @@ For $\varphi \in C^\infty(M \times N)$ and $v \in T_pM$, $\partial_v\varphi(q) =
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S10 then S1.
 > - $\partial_v\varphi(q) = v[\varphi \circ \iota^q] = D_\gamma[\varphi \circ \iota^q]$.
-> - Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-8|§31.8]] and Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-7|§31.7]]; partials of a smooth function are smooth (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]).
+> - Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-9|§31.9]] and Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-8|§31.8]]; partials of a smooth function are smooth (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]).
 
 ### Priority 3 · filled in, using a technique the homework drills
 
@@ -2400,7 +2400,7 @@ $T^\ast_pM = (T_pM)^\ast$, the dual of the abstract tangent space, see Definitio
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§32 The Cotangent Space#^def-32-4|§32.4]]; Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]], Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]].
-> - Q2: Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]. Q3: Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]].
+> - Q2: Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]. Q3: Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]].
 > - Q4: none: $\sum_i \xi_i\,dx^i|_p = d\big(\sum_i \xi_i x^i\big)_p$. Pointwise every covector is a differential; for one-forms this fails (Proposition [[§53 One-Forms#^prop-53-3|§53.3]]).
 
 #### Differential of a function $df_p$ · P2
@@ -2447,7 +2447,7 @@ $F^\ast_p : T^\ast_{F(p)}N \to T^\ast_pM$, $(F^\ast_p\alpha)(v) = \alpha(F_{\ast
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§21 Linear Algebra Toolkit#^def-21-3|§21.3]], Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]]; the remark *One Symbol for Two Pullbacks* in [[§34 The Cotangent Space from Germs|§34]].
-> - Q2: Proposition [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]]. Q3: Proposition [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]] (part 3). Q4: Proposition [[§34 The Cotangent Space from Germs#^prop-34-7|§34.7]].
+> - Q2: Proposition [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]]. Q3: Proposition [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]] (part 3). Q4: Proposition [[§34 The Cotangent Space from Germs#^prop-34-8|§34.8]].
 
 ## Proofs T5
 
@@ -2542,7 +2542,7 @@ For $F : M \to N$ smooth and $f$ smooth near $F(p)$: $F_p^\ast(df_{F(p)}) = d(f 
 
 #### Pullback of covectors from the pullback of germs · P2
 
-$F_p^\ast$ on germs maps $I_q \to I_p$ and $I_q^2 \to I_p^2$, hence induces $\bar F_p^\ast : I_q/I_q^2 \to I_p/I_p^2$, which under $\Phi$ is the pullback of covectors, see Proposition [[§34 The Cotangent Space from Germs#^prop-34-7|§34.7]]. *Source: notes (filled in).*
+$F_p^\ast$ on germs maps $I_q \to I_p$ and $I_q^2 \to I_p^2$, hence induces $\bar F_p^\ast : I_q/I_q^2 \to I_p/I_p^2$, which under $\Phi$ is the pullback of covectors, see Proposition [[§34 The Cotangent Space from Germs#^prop-34-8|§34.8]]. *Source: notes (filled in).*
 
 ^nd-prop-34-7
 
@@ -2659,7 +2659,7 @@ $\operatorname{Crit}(f) = \{p : df_p = 0\}$ for $f : M \to \mathbb{R}$, see Defi
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§36 Submersions#^def-36-5|§36.5]]; Proposition [[§36 Submersions#^prop-36-2|§36.2]]; Q2: Corollary [[§36 Submersions#^cor-36-8|§36.8]] (the regular points form an open set, Corollary [[§36 Submersions#^cor-36-7|§36.7]]).
-> - Q3: $p \in \operatorname{Crit}(f)$ iff $df(p)$ lies on the zero section, Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]].
+> - Q3: $p \in \operatorname{Crit}(f)$ iff $df(p)$ lies on the zero section, Theorem [[§55 Morse Functions and the Zero Section#^thm-55-8|§55.8]].
 
 ## Proofs T6
 
@@ -2727,7 +2727,7 @@ If $\Phi : W \subseteq \mathbb{R}^n \to \mathbb{R}^n$ is smooth and $\Phi'(a)$ i
 - [ ] Q1 **[state]** State the theorem precisely: hypotheses, and what "local" means in the conclusion.
 - [ ] Q2 **[why]** Why is the conclusion only local? Give a smooth $\Phi : \mathbb{R}^2 \to \mathbb{R}^2$ with $\Phi'$ invertible everywhere that is not injective ($e^x(\cos y, \sin y)$).
 - [ ] Q3 **[why]** Why is invertibility of $\Phi'(a)$ needed? Consider $x \mapsto x^3$ at $0$: it is a smooth bijection; why is it not a diffeomorphism?
-- [ ] Q4 How is it used: in the regular value theorem (via the implicit function theorem, Theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]]), in Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], and in the submersion normal form (step 8)?
+- [ ] Q4 How is it used: in the regular value theorem (via the implicit function theorem, Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]), in Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], and in the submersion normal form (step 8)?
 
 > [!tip]- Hints: what to know
 > - Quote, do not prove (Lee, Theorem C.34).
@@ -2869,7 +2869,7 @@ For a manifold $S \subseteq \mathbb{R}^k$ of dimension $s$, $\operatorname{codim
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§26 Transversality#^def-26-1|§26.1]], Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]].
-> - Q2: Theorem [[§26 Transversality#^thm-26-1|§26.1]], Proposition [[§26 Transversality#^prop-26-4|§26.4]], Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]].
+> - Q2: Theorem [[§26 Transversality#^thm-26-1|§26.1]], Proposition [[§26 Transversality#^prop-26-5|§26.5]], Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]].
 > - Q3: Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-2|§39.2]] (the normal spaces are isomorphic). Q4: $\dim N$; Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]] (part 1).
 
 #### Transversality (Euclidean) · P1
@@ -2884,7 +2884,7 @@ $F \pitchfork S$ if $\operatorname{im} F'(p) + T^{\mathrm{geo}}_{F(p)}S = \mathb
 - [ ] Q4 **[example]** For the sphere and the plane $z = c$, for which $c$ is the intersection transverse?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§26 Transversality#^def-26-2|§26.2]]; Q2: Proposition [[§26 Transversality#^prop-26-2|§26.2]] → drilled as [[Differentiable Manifolds HW Drill#^hw2-5|HW2.5]].
+> - Definition [[§26 Transversality#^def-26-2|§26.2]]; Q2: Proposition [[§26 Transversality#^prop-26-3|§26.3]] → drilled as [[Differentiable Manifolds HW Drill#^hw2-5|HW2.5]].
 > - Q3: Example [[§26 Transversality#^ex-26-2|§26.2]] (dimension wrong; tangent formula wrong). Q4: Example [[§26 Transversality#^ex-26-1|§26.1]], Definition [[§26 Transversality#^def-26-3|§26.3]].
 
 #### Transverse intersection · P1
@@ -2899,7 +2899,7 @@ Regular level sets $S_1, S_2 \subseteq \mathbb{R}^k$ intersect transversally if 
 - [ ] Q4 **[use]** What are the codimension and tangent space of a transverse intersection?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§26 Transversality#^def-26-3|§26.3]]; Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]] (part 2), Proposition [[§26 Transversality#^prop-26-4|§26.4]].
+> - Definition [[§26 Transversality#^def-26-3|§26.3]]; Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]] (part 2), Proposition [[§26 Transversality#^prop-26-5|§26.5]].
 > - Q3: no: $1 + 1 < 3$, so the sum of the tangent lines cannot be $\mathbb{R}^3$; only disjoint curves are transverse.
 
 #### Transversality to a submanifold · P1
@@ -2935,7 +2935,7 @@ $S \subseteq M$ (subspace topology) is a regular submanifold of codimension $k$ 
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]; Q2: Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]] ($\varphi_S = x_a|_{U \cap S}$, dimension $m - k$).
-> - Q3: Proposition [[§44 Embeddings#^prop-44-12|§44.12]], Example [[§44 Embeddings#^ex-44-1|§44.1]] (dense, so would be open, Corollary [[§44 Embeddings#^cor-44-8|§44.8]]). Q4: Example [[§44 Embeddings#^ex-44-1|§44.1]] (removing the origin leaves four components).
+> - Q3: Proposition [[§44 Embeddings#^prop-44-12|§44.12]], Example [[§44 Embeddings#^ex-44-3|§44.3]] (dense, so would be open, Corollary [[§44 Embeddings#^cor-44-8|§44.8]]). Q4: Example [[§44 Embeddings#^ex-44-3|§44.3]] (removing the origin leaves four components).
 > - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]], Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]. Also: maps into $M$ with image in $S$ are smooth into $S$, Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]].
 
 #### Adapted chart · P2
@@ -2982,7 +2982,7 @@ An open $S \subseteq M$ with the smooth charts of $M$ whose domains lie in $S$, 
 - [ ] Q4 **[example]** Why are $\mathrm{GL}(n, \mathbb{R})$ and the domains $\pi^{-1}(U_\alpha)$ of a fibration open submanifolds?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]], Definition [[§3 Subspaces and Products#^def-3-2|§3.2]]; Proposition [[§17 Differentiable Structures#^prop-17-7|§17.7]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]].
+> - Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]], Definition [[§3 Subspaces and Products#^def-3-2|§3.2]]; Proposition [[§17 Differentiable Structures#^prop-17-8|§17.8]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]].
 > - Q3: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] (germs see only a neighbourhood). Q4: Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|§11.5]], Definition [[§40 Fibrations#^def-40-1|§40.1]]; Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]].
 
 #### Transverse submanifolds · P2
@@ -3028,7 +3028,7 @@ If $F:\mathbb{R}^N\to\mathbb{R}^k$ is transverse to the regular level set $S=G^{
 
 #### Transversality is the regular value condition · P1
 
-For $p\in F^{-1}(S)$, $q=F(p)$: $\operatorname{im}F'(p)+T^{\mathrm{geo}}_qS=\mathbb{R}^k$ if and only if $(G\circ F)'(p)$ is onto; so $F\pitchfork S$ if and only if $0$ is a regular value of $G\circ F$, see Proposition [[§26 Transversality#^prop-26-2|§26.2]]. *Source: filled in (setting of Assignment 2, Problem 5).*
+For $p\in F^{-1}(S)$, $q=F(p)$: $\operatorname{im}F'(p)+T^{\mathrm{geo}}_qS=\mathbb{R}^k$ if and only if $(G\circ F)'(p)$ is onto; so $F\pitchfork S$ if and only if $0$ is a regular value of $G\circ F$, see Proposition [[§26 Transversality#^prop-26-3|§26.3]]. *Source: filled in (setting of Assignment 2, Problem 5).*
 
 ^nd-prop-26-2
 
@@ -3113,7 +3113,7 @@ If $S_1,S_2\subseteq N$ are regular submanifolds with $S_1\pitchfork S_2$, then 
 - [ ] Q6 **[why]** A surface and a curve in $\mathbb{R}^3$ meeting transversally: what is the intersection? Two surfaces tangent at a point: which conclusion fails? (Compare Example [[§26 Transversality#^ex-26-1|§26.1]].)
 
 > [!tip]- Hints: route of the proof in the notes
-> - Strategy: S5 (regular value theorem on a well-chosen map), S7 (linear algebra closes the gap); the Euclidean case is Proposition [[§26 Transversality#^prop-26-4|§26.4]].
+> - Strategy: S5 (regular value theorem on a well-chosen map), S7 (linear algebra closes the gap); the Euclidean case is Proposition [[§26 Transversality#^prop-26-5|§26.5]].
 > - $G_i$ = the last $k_i$ coordinates of a slice chart (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]); $T_qS_i$ via Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]].
 > - $\dim(K_1\cap K_2)=2n-k_1-k_2-\dim(K_1+K_2)$, so the sum is everything iff $\dim\ker dG_q=n-k_1-k_2$ iff rank $k_1+k_2$.
 > - Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] on $W=U_1\cap U_2$.
@@ -3134,7 +3134,7 @@ If, in a chart $(U,\varphi)$, $U\cap S$ is cut out by setting $k$ of the coordin
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1 (work in a chart; modify the chart by a diffeomorphism of $\mathbb{R}^m$).
 > - $P$ moves positions $i_1,\dots,i_k$ to the end; $T(s)=s-(\vec 0,\vec c)$; $A=T\circ P$ is an affine diffeomorphism.
-> - Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](2): composing a smooth chart with a diffeomorphism of $\mathbb{R}^m$ gives a smooth chart.
+> - Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](2): composing a smooth chart with a diffeomorphism of $\mathbb{R}^m$ gives a smooth chart.
 > - The last $k$ entries of $A\circ\varphi$ are $x^{i_l}-c_l$. Used in Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]](2) and the regular value theorem.
 > - For Q6: $g=xy$ on $\mathbb{R}^2$ cuts out a cross, which is no submanifold near $0$.
 
@@ -3271,7 +3271,7 @@ Every chart of a regular submanifold $S\subseteq M$ near $p$ is, near $p$, the i
 > [!tip]- Hints: route (not in the notes; a sketch)
 > - Strategy: S1 (reduce to the local model).
 > - $h$ is a diffeomorphism between open subsets of $\mathbb{R}^{m-k}$ (a transition map of $S$).
-> - In the chart $\varphi$, $\Psi$ reads $(r,s)\mapsto(h(r),s)$, a diffeomorphism with inverse $(r',s)\mapsto(h^{-1}(r'),s)$; compose with $\varphi$ (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]]).
+> - In the chart $\varphi$, $\Psi$ reads $(r,s)\mapsto(h(r),s)$, a diffeomorphism with inverse $(r',s)\mapsto(h^{-1}(r'),s)$; compose with $\varphi$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]]).
 > - The last $k$ coordinates are still $x_b$, so $U'\cap S=\{x_b=0\}$, and the induced chart is $h\circ\varphi_S=\psi$.
 
 #### Smooth functions on a submanifold extend locally · P2
@@ -3294,7 +3294,7 @@ A smooth function on a regular submanifold $S\subseteq M$ extends, near each poi
 
 #### Transverse intersections of level sets · P3
 
-For regular level sets $S_i=G_i^{-1}(0)\subseteq\mathbb{R}^k$ and $q\in S_1\cap S_2$: $T_qS_1+T_qS_2=\mathbb{R}^k$ if and only if $(G_1,G_2)'(q)$ is onto; if the intersection is transverse, $S_1\cap S_2$ is a manifold with $\operatorname{codim}(S_1\cap S_2)=\operatorname{codim}S_1+\operatorname{codim}S_2$ and $T_q(S_1\cap S_2)=T_qS_1\cap T_qS_2$, see Proposition [[§26 Transversality#^prop-26-4|§26.4]]. *Source: filled in.*
+For regular level sets $S_i=G_i^{-1}(0)\subseteq\mathbb{R}^k$ and $q\in S_1\cap S_2$: $T_qS_1+T_qS_2=\mathbb{R}^k$ if and only if $(G_1,G_2)'(q)$ is onto; if the intersection is transverse, $S_1\cap S_2$ is a manifold with $\operatorname{codim}(S_1\cap S_2)=\operatorname{codim}S_1+\operatorname{codim}S_2$ and $T_q(S_1\cap S_2)=T_qS_1\cap T_qS_2$, see Proposition [[§26 Transversality#^prop-26-5|§26.5]]. *Source: filled in.*
 
 ^nd-prop-26-4
 
@@ -3309,7 +3309,7 @@ For regular level sets $S_i=G_i^{-1}(0)\subseteq\mathbb{R}^k$ and $q\in S_1\cap 
 > - Strategy: S7 (linear algebra closes the gap), S5 (regular value theorem on a well-chosen map).
 > - $\dim T_i=k-\ell_i$; the kernel of the stacked Jacobian is $T_1\cap T_2$.
 > - Both conditions say $\dim(T_1\cap T_2)=k-\ell_1-\ell_2$.
-> - $S_1\cap S_2=(G_1,G_2)^{-1}(0)$, so $0$ is a regular value of $(G_1,G_2)$ exactly when the intersection is transverse; then use Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] and Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]].
+> - $S_1\cap S_2=(G_1,G_2)^{-1}(0)$, so $0$ is a regular value of $(G_1,G_2)$ exactly when the intersection is transverse; then use Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] and Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]].
 
 #### A basis of the conormal space · P3
 
@@ -3406,7 +3406,7 @@ An open subset $S\subseteq M$ is a regular submanifold of codimension $0$ whose 
 
 > [!tip]- Hints: route of the proof in the notes
 > - With $k=0$ there are no last coordinates: adapted means $U\cap S=U$, i.e. $U\subseteq S$.
-> - (1) Restrict any chart at $p$ to $U\cap S$; then $\varphi_S=\varphi$, and the induced atlas is the open-submanifold atlas (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] gives equality of the structures).
+> - (1) Restrict any chart at $p$ to $U\cap S$; then $\varphi_S=\varphi$, and the induced atlas is the open-submanifold atlas (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]] gives equality of the structures).
 > - (2) $S=\bigcup_p U_p$ with each $U_p\subseteq S$ open in $M$.
 > - For Q5: $(0,1)\subseteq\mathbb{R}$ is open, not closed; a closed and open subset of a connected $M$ is all of $M$.
 
@@ -3498,7 +3498,7 @@ $V_y = \ker \pi_{\ast y} \subseteq T_yE$, see Definition [[§40 Fibrations#^def-
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§40 Fibrations#^def-40-5|§40.5]]; Q2: Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] ($\iota_{\ast}(T_yE_b) = \ker \pi_{\ast y}$).
 > - Q3: Proposition [[§40 Fibrations#^prop-40-5|§40.5]] ($P = \mathrm{id} - s_{\ast p} \circ \pi_{\ast y}$). Q4: no in general; along the image of a section, yes (Q3).
-> - Q5: Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]] (spanned by $\partial/\partial \xi_j$).
+> - Q5: Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]] (spanned by $\partial/\partial \xi_j$).
 
 #### Vector bundle · P2
 
@@ -3536,7 +3536,7 @@ If $\phi:\pi^{-1}(U)\to U\times F$ is a local trivialization and $f_0\in F$, the
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S14 (use $\mathrm{pr}_1\circ\phi=\pi$).
-> - $s=\iota_{\pi^{-1}(U)}\circ\phi^{-1}\circ\iota^{f_0}$ with the slice inclusion $\iota^{f_0}(u)=(u,f_0)$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]).
+> - $s=\iota_{\pi^{-1}(U)}\circ\phi^{-1}\circ\iota^{f_0}$ with the slice inclusion $\iota^{f_0}(u)=(u,f_0)$ (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]).
 > - $\pi(s(u))=\mathrm{pr}_1(\phi(\phi^{-1}(u,f_0)))=u$.
 > - Q5: the Hopf fibration, where $S^1$ acts freely and transitively on fibres (Proposition [[§46 Projective Spaces and the Hopf Fibration#^prop-46-1|§46.1]]); it has no global section (remark *Sections Need Not Exist*). For $TM$ one needs $m$ independent sections (remark *Trivializations and Frames*).
 
@@ -3558,7 +3558,7 @@ If $\pi\circ s=\mathrm{id}_M$, $y=s(p)$: $\pi_{\ast y}\circ s_{\ast p}=\mathrm{i
 > - Strategy: S14 (differentiate $\pi\circ s=\mathrm{id}_M$), S7.
 > - $u=s_{\ast p}(\pi_{\ast y}w)$ and $w-u\in V_y$ by (1).
 > - If $w=s_{\ast p}v\in V_y$, then $v=\pi_{\ast y}w=0$.
-> - $V_y=\ker\pi_{\ast y}$ is intrinsic; the horizontal complement $s_{\ast p}(T_pM)$ changes with $s$. Used in Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]] ([[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]]).
+> - $V_y=\ker\pi_{\ast y}$ is intrinsic; the horizontal complement $s_{\ast p}(T_pM)$ changes with $s$. Used in Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]] ([[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]]).
 
 #### The normal bundle of a submanifold of $\mathbb{R}^n$ is a submanifold · P1
 
@@ -3624,7 +3624,7 @@ For a fibration $\pi:E\to B$ with fibre $F$ and $b\in B$, $\pi^{-1}(b)$ is a reg
 > - Strategy: S14; the key tool is Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2) (maps into a submanifold).
 > - Submanifolds: $\pi$ and $\mathrm{pr}_1$ are submersions (Proposition [[§40 Fibrations#^prop-40-1|§40.1]](2), Example [[§36 Submersions#^ex-36-2|§36.2]]); then Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]].
 > - $\Phi$: $\iota$ is smooth into the open set $\pi^{-1}(U_\alpha)$, then $\phi_\alpha$; values lie in $\{b\}\times F$.
-> - $\Phi^{-1}$: $\phi_\alpha^{-1}\circ\iota'$ with values in $\pi^{-1}(b)$. $\{b\}\times F\cong F$ via $\mathrm{pr}_2\circ\iota'$ and the slice inclusion (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]).
+> - $\Phi^{-1}$: $\phi_\alpha^{-1}\circ\iota'$ with values in $\pi^{-1}(b)$. $\{b\}\times F\cong F$ via $\mathrm{pr}_2\circ\iota'$ and the slice inclusion (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]).
 > - Q6: Example [[§40 Fibrations#^ex-40-1|§40.1]].
 
 #### A submersion that is not a fibration · P2
@@ -3816,7 +3816,7 @@ A smooth immersion $F : M \to N$ that is a homeomorphism onto $F(M)$ with the su
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§44 Embeddings#^def-44-1|§44.1]]; Q2: Theorem [[§44 Embeddings#^thm-44-1|§44.1]], Corollary [[§44 Embeddings#^cor-44-3|§44.3]].
-> - Q3: Example [[§43 Immersions#^ex-43-2|§43.2]], Proposition [[§44 Embeddings#^prop-44-12|§44.12]] (irrational line, → drilled as [[Differentiable Manifolds HW Drill#^hw4-5|HW4.5]]), Example [[§44 Embeddings#^ex-44-1|§44.1]] (figure-eight).
+> - Q3: Example [[§43 Immersions#^ex-43-2|§43.2]], Proposition [[§44 Embeddings#^prop-44-12|§44.12]] (irrational line, → drilled as [[Differentiable Manifolds HW Drill#^hw4-5|HW4.5]]), Example [[§44 Embeddings#^ex-44-3|§44.3]] (figure-eight).
 > - Q4: $t \mapsto (t^3, 0)$ onto the $x$-axis, or the cusp $t \mapsto (t^2, t^3)$ (not immersions at $0$).
 > - Q5: Theorem [[§44 Embeddings#^thm-44-5|§44.5]], Corollary [[§44 Embeddings#^cor-44-6|§44.6]], Proposition [[§44 Embeddings#^prop-44-9|§44.9]]. Example: every section is a closed embedding, Proposition [[§44 Embeddings#^prop-44-10|§44.10]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-1|HW5.1]].
 
@@ -3850,7 +3850,7 @@ $S \subseteq N$ with some manifold topology and smooth structure making the incl
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§44 Embeddings#^def-44-4|§44.4]]; Q2: Proposition [[§44 Embeddings#^prop-44-13|§44.13]]; every regular submanifold is one, Proposition [[§44 Embeddings#^prop-44-14|§44.14]].
-> - Q3: Proposition [[§44 Embeddings#^prop-44-15|§44.15]]. Q4: Example [[§44 Embeddings#^ex-44-1|§44.1]].
+> - Q3: Proposition [[§44 Embeddings#^prop-44-15|§44.15]]. Q4: Example [[§44 Embeddings#^ex-44-3|§44.3]].
 
 ## Proofs T9
 
@@ -3904,7 +3904,7 @@ If $F:M\to N$ is an immersion at $p$ ($m\le n$), there are charts $(U,\varphi)$ 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S8 (normal forms give charts), inverse function theorem.
 > - $J$ is $n\times m$; $F_{\ast p}$ injective gives rank $m$ (rank–nullity), so $m$ rows are independent.
-> - Permutation of coordinates: Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](2).
+> - Permutation of coordinates: Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](2).
 > - The Jacobian of $(F^1,\dots,F^m)\circ\varphi_0^{-1}$ at $\varphi_0(p)$ is $A$; Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] and Lemma [[§36 Submersions#^lem-36-5|§36.5]].
 > - $\Sigma$ has inverse $(y_a,z)\mapsto(y_a,z+G(y_a))$ on $\tilde\varphi(U)\times\mathbb{R}^{n-m}$; take $V=\psi^{-1}(\tilde\varphi(U)\times\mathbb{R}^{n-m})\cap V_0$.
 
@@ -4022,7 +4022,7 @@ If $F:M\to N$ is an embedding, then $F:M\to F(M)$ is a diffeomorphism, $F(M)$ wi
 > - $F(M)$ is a regular submanifold of dimension $m$ (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]).
 > - $F_{\ast p}=\iota_{\ast F(p)}\circ\bar F_{\ast p}$ is injective, so $\bar F_{\ast p}$ is.
 > - Equal dimensions: Proposition [[§36 Submersions#^prop-36-1|§36.1]](3); bijective local diffeomorphism: Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]].
-> - Q6: the image is not a regular submanifold (Example [[§44 Embeddings#^ex-44-1|§44.1]]).
+> - Q6: the image is not a regular submanifold (Example [[§44 Embeddings#^ex-44-3|§44.3]]).
 
 #### Proper maps into manifolds are closed · P2
 
@@ -4147,7 +4147,7 @@ For an injective immersion $F$ and $S=F(M)$ with the structure of Proposition [[
 - [ ] Q2 (1) ⇔ (2): why is the equality of the two topologies the definition of an embedding, for an immersion?
 - [ ] Q3 (1) ⇒ (3): which theorem and corollary, and which uniqueness statement?
 - [ ] Q4 (3) ⇒ (2): which topology does the induced structure of a regular submanifold have?
-- [ ] Q5 **[why]** Example [[§44 Embeddings#^ex-44-1|§44.1]]: for the figure-eight and the irrational line, which of the three conditions fail, and why?
+- [ ] Q5 **[why]** Example [[§44 Embeddings#^ex-44-3|§44.3]]: for the figure-eight and the irrational line, which of the three conditions fail, and why?
 
 > [!tip]- Hints: route of the proof in the notes
 > - (1) ⇒ (3): Theorem [[§44 Embeddings#^thm-44-1|§44.1]] and Corollary [[§44 Embeddings#^cor-44-3|§44.3]], then uniqueness in Proposition [[§44 Embeddings#^prop-44-13|§44.13]].
@@ -4203,7 +4203,7 @@ $p \in \operatorname{Crit}(f)$ is nondegenerate if $\operatorname{Hess}_pf$ is a
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§54 Critical Points and the Hessian#^def-54-3|§54.3]], Definition [[§21 Linear Algebra Toolkit#^def-21-5|§21.5]]; Q2: Proposition [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]].
-> - Q3: Example [[§55 Morse Functions and the Zero Section#^ex-55-1|§55.1]]. Q4: Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]], Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
+> - Q3: Example [[§55 Morse Functions and the Zero Section#^ex-55-3|§55.3]]. Q4: Theorem [[§55 Morse Functions and the Zero Section#^thm-55-8|§55.8]], Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
 
 #### Morse function · P1
 
@@ -4217,8 +4217,8 @@ A smooth $f$ all of whose critical points are nondegenerate, see Definition [[§
 - [ ] Q4 **[example]** Is the height function on $S^2$ Morse? Is $x^3$ on $\mathbb{R}$? What is the index of each critical point of $x^2 - y^2$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]], Definition [[§54 Critical Points and the Hessian#^def-54-5|§54.5]]; Q2: Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
-> - Q3: Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]] (discrete) and compactness, Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]. Q4: yes (two nondegenerate critical points); no (Example [[§55 Morse Functions and the Zero Section#^ex-55-1|§55.1]]); index $1$.
+> - Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]], Definition [[§54 Critical Points and the Hessian#^def-54-5|§54.5]]; Q2: Theorem [[§55 Morse Functions and the Zero Section#^thm-55-8|§55.8]] → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
+> - Q3: Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]] (discrete) and compactness, Corollary [[§55 Morse Functions and the Zero Section#^cor-55-10|§55.10]]. Q4: yes (two nondegenerate critical points); no (Example [[§55 Morse Functions and the Zero Section#^ex-55-3|§55.3]]); index $1$.
 
 #### Conormal bundle · P1
 
@@ -4264,7 +4264,7 @@ For a chart $(U, \varphi = (x^i))$, $\Phi : TU \to U \times \mathbb{R}^m$, $\Phi
 - [ ] Q4 **[use]** Which local sections does $\Phi$ give? (The coordinate frame.)
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§51 The Tangent Bundle#^def-51-4|§51.4]]; $v^i = v[x^i]$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]].
+> - Definition [[§51 The Tangent Bundle#^def-51-4|§51.4]]; $v^i = v[x^i]$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]].
 > - Q3: Corollary [[§51 The Tangent Bundle#^cor-51-4|§51.4]] (part 2); the remark *Vector Bundles* in [[§51 The Tangent Bundle|§51]]. Q4: the remark *Trivializations and Frames* in [[§51 The Tangent Bundle|§51]].
 
 #### Charts of $TM$ (the tangent bundle atlas) · P2
@@ -4369,14 +4369,14 @@ At $p\in\operatorname{Crit}(f)$, $B=\operatorname{Hess}_pf$ satisfies $B^\flat=B
 - [ ] Q3 Why is $B^\flat=B^\sharp$, and why is the matrix of $B^\flat$ equal to $H_p$?
 - [ ] Q4 Prove (a)⇔(b)⇔(c)⇔(d).
 - [ ] Q5 Why does $\det H_p\neq0$ in one chart give it in every chart? Give two reasons.
-- [ ] Q6 **[why]** Is $0$ a nondegenerate critical point of $x^3$? Is it isolated? What does this say about the converse of Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]]?
+- [ ] Q6 **[why]** Is $0$ a nondegenerate critical point of $x^3$? Is it isolated? What does this say about the converse of Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]?
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S7 (linear algebra: same dimension, injective ⇔ bijective).
 > - Components of $B^\sharp(\partial_j)$ are $B(\partial_i,\partial_j)=H_{ij}(p)$; Proposition [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]](3).
 > - $\dim T_pM=\dim T_p^\ast M=m$.
 > - Every chart: $B^\flat$ is chart-free; or $\det H^{(x)}_p=(\det J)^2\det H^{(y)}_p$.
-> - Q6: Example [[§55 Morse Functions and the Zero Section#^ex-55-1|§55.1]]: degenerate but isolated.
+> - Q6: Example [[§55 Morse Functions and the Zero Section#^ex-55-3|§55.3]]: degenerate but isolated.
 
 #### The zero section of $T^\ast M$ is a regular submanifold · P1
 
@@ -4386,19 +4386,19 @@ $\mathcal Z$ is cut out by $\xi_1=\dots=\xi_m=0$ in standard coordinates, and $\
 
 #### The differential of $df$ at a critical point · P1
 
-$(s_f)_{\ast q}(\partial/\partial x^i|_q)=\partial/\partial\bar x^i+\sum_jH_{ij}(q)\,\partial/\partial\xi_j$; at a critical point the vertical part of $(s_f)_{\ast p}v$ is $\operatorname{Hess}_pf(v,\cdot)$, see Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
+$(s_f)_{\ast q}(\partial/\partial x^i|_q)=\partial/\partial\bar x^i+\sum_jH_{ij}(q)\,\partial/\partial\xi_j$; at a critical point the vertical part of $(s_f)_{\ast p}v$ is $\operatorname{Hess}_pf(v,\cdot)$, see Proposition [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]].
 
 ^nd-prop-52-9
 
 #### Transversality to the zero section · P1
 
-$s_f\pitchfork\mathcal Z$ iff every critical point of $f$ is nondegenerate, see Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (a)).
+$s_f\pitchfork\mathcal Z$ iff every critical point of $f$ is nondegenerate, see Theorem [[§55 Morse Functions and the Zero Section#^thm-55-8|§55.8]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (a)).
 
 ^nd-thm-52-10
 
 #### Critical points of a Morse function are isolated · P1
 
-For a Morse function, $\operatorname{Crit}(f)=s_f^{-1}(\mathcal Z)$ is a regular submanifold of dimension $0$, hence discrete, see Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (b)).
+For a Morse function, $\operatorname{Crit}(f)=s_f^{-1}(\mathcal Z)$ is a regular submanifold of dimension $0$, hence discrete, see Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]. → drilled as [[Differentiable Manifolds HW Drill#^hw5-3|HW5.3]] (part (b)).
 
 ^nd-cor-52-11
 
@@ -4420,7 +4420,7 @@ There is a unique topology on $TM$ for which every $TU$ is open and every chart 
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1; Lee's smooth manifold chart lemma.
-> - Every list of components occurs at each $p$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]); $\varphi(U\cap V)$ is open (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]]).
+> - Every list of components occurs at each $p$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]); $\varphi(U\cap V)$ is open (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]]).
 > - $W$ open iff $\tilde\varphi(W\cap TU)$ open in $\mathbb{R}^{2m}$ for every chart.
 > - Continuity: $\tilde\psi(W\cap TV)=(\tilde\psi\circ\tilde\varphi^{-1})(O\cap(\varphi(U\cap V)\times\mathbb{R}^m))$; transition maps are homeomorphisms (computed in Proposition [[§51 The Tangent Bundle#^prop-51-2|§51.2]] without any topology).
 > - Hausdorff: same base point — use one chart; different base points — disjoint chart domains. Second countable: countably many chart domains $U_B$ from a countable basis.
@@ -4441,7 +4441,7 @@ The charts $(TU,\tilde\varphi)$ form a smooth atlas on $TM$, with transition map
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S9 (a derivation is determined by its values on coordinate functions).
-> - The coefficient of $D$ on $\partial/\partial y^i|_p$ is $D[y^i]$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]); apply it to $D=\partial/\partial x^j|_p$.
+> - The coefficient of $D$ on $\partial/\partial y^i|_p$ is $D[y^i]$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]); apply it to $D=\partial/\partial x^j|_p$.
 > - Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]] with $F=\mathrm{id}_M$: upstairs partials are downstairs partials of $\tau$.
 > - Components $\tau^i(r)$ and $\sum_j\partial_j\tau^i(r)v^j$ are smooth in $(r,v)$.
 > - The formula only uses the definitions of the charts as bijections.
@@ -4521,7 +4521,7 @@ For $f\in C^\infty(M)$, $df:p\mapsto df_p$ is a one-form, $df=\sum_j\frac{\parti
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S9.
 > - Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] at each $p$; $df_p(\partial/\partial x^j|_p)=\partial f/\partial x^j(p)$ (Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]]).
-> - Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]], then Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3).
+> - Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]], then Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3).
 > - $d(fg)_p(v)=v[fg]=f(p)v[g]+g(p)v[f]$.
 > - Q5: Proposition [[§53 One-Forms#^prop-53-3|§53.3]].
 
@@ -4577,7 +4577,7 @@ In charts $(x^i)$ on $M$ and $(y^j)$ on $N$ with $F^j=y^j\circ F$: $F^\ast(\sum_
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1.
 > - $F_{\ast p}(\partial/\partial x^i|_p)=\sum_j\frac{\partial F^j}{\partial x^i}(p)\,\partial/\partial y^j|_{F(p)}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]).
-> - $\theta_j\circ F$ and $\partial F^j/\partial x^i$ are smooth (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]); Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3).
+> - $\theta_j\circ F$ and $\partial F^j/\partial x^i$ are smooth (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]); Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3).
 > - Shrink $U$ to $U\cap F^{-1}(V)$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]]).
 > - Q6: $dt$.
 
@@ -4605,7 +4605,7 @@ At $p\in\operatorname{Crit}(f)$, $\sum_{i,j}H_{ij}(p)v^iw^j$ (with $v^i=v[x^i]$,
 
 #### Morse functions on compact manifolds · P3
 
-$\operatorname{Crit}(f)$ is closed for any smooth $f$; if $f$ is Morse and $M$ is compact, $\operatorname{Crit}(f)$ is finite, see Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]. *Source: filled in.*
+$\operatorname{Crit}(f)$ is closed for any smooth $f$; if $f$ is Morse and $M$ is compact, $\operatorname{Crit}(f)$ is finite, see Corollary [[§55 Morse Functions and the Zero Section#^cor-55-10|§55.10]]. *Source: filled in.*
 
 ^nd-cor-52-12
 
@@ -4618,7 +4618,7 @@ $\operatorname{Crit}(f)$ is closed for any smooth $f$; if $f$ is Morse and $M$ i
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S13 (compactness upgrades local to global).
 > - (1) Corollary [[§36 Submersions#^cor-36-8|§36.8]]; or $\operatorname{Crit}(f)=s_f^{-1}(\mathcal Z)$ with $\mathcal Z$ closed.
-> - (2) Closed in compact ⇒ compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]); the open cover by the singletons $W_p\cap\operatorname{Crit}(f)=\{p\}$ (Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]]) has a finite subcover.
+> - (2) Closed in compact ⇒ compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]); the open cover by the singletons $W_p\cap\operatorname{Crit}(f)=\{p\}$ (Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]) has a finite subcover.
 > - Q5: at $\cos x=0$, $(\sin)''=-\sin x=\mp1\neq0$.
 
 # T11. Vector fields and Lie groups
@@ -4757,7 +4757,7 @@ For a section $\mathbf X$ of $TM$ (not assumed smooth) and a chart $(U,(x^j))$: 
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S9.
-> - Universal formula (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]) and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]].
+> - Universal formula (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]) and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]].
 > - $\tilde\varphi\circ\mathbf X\circ\varphi^{-1}(r)=(r,\mathbf X^1(\varphi^{-1}(r)),\dots,\mathbf X^m(\varphi^{-1}(r)))$.
 > - Continuity: $\mathbf X=\tilde\varphi^{-1}\circ(\tilde\varphi\circ\mathbf X\circ\varphi^{-1})\circ\varphi$ (Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]]).
 > - Q5: Proposition [[§56 Vector Fields#^prop-56-7|§56.7]] step 4 and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]] build a section first and prove smoothness after.
@@ -5134,7 +5134,7 @@ $L_g(h)=gh$ is a diffeomorphism of a Lie group $G$ with inverse $L_{g^{-1}}$, se
 - [ ] Q4 **[why]** For $g\neq e$, $L_g$ is a diffeomorphism of $G$. Why is it not a Lie group morphism?
 
 > [!tip]- Hints: route of the proof in the notes
-> - $L_g=\mu\circ\iota^g$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]).
+> - $L_g=\mu\circ\iota^g$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]).
 > - Associativity: $g(g^{-1}h)=h$.
 > - Q4: $L_g(e)=g\neq e$.
 
@@ -5207,7 +5207,7 @@ For $v\in T_eG$ and $f\in C^\infty(G)$, with $\varphi(g,x)=f(gx)$: $\mathbf X^vf
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S11, smoothness criterion Lemma [[§56 Vector Fields#^lem-56-8|§56.8]].
 > - $d(L_g)_e(v)[f]=v[f\circ L_g]$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]).
-> - $\varphi=f\circ\mu$; Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-9|§31.9]](3).
+> - $\varphi=f\circ\mu$; Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-10|§31.10]](3).
 > - A partial derivative of a function smooth in $(g,x)$ is smooth in $g$; smoothness of $f\circ L_g$ for each fixed $g$ would not be enough.
 
 #### The Lie algebra is the tangent space at the identity
@@ -5227,7 +5227,7 @@ $\mathrm{ev}:\mathfrak g\to T_eG$, $\mathbf X\mapsto\mathbf X_e$, is a linear is
 > - Strategy: "there is only one choice": the left-invariant extension.
 > - $\mathbf X_g=d(L_g)_e(\mathbf X_e)$ (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](3)).
 > - Surjective: Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](1), (2) and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]].
-> - $\dim T_eG=\dim G$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]).
+> - $\dim T_eG=\dim G$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]).
 
 #### The additive group of a vector space
 
@@ -5334,7 +5334,7 @@ $G=C\circ F^{-1}$ is a surjective smooth homomorphism and a two-to-one local dif
 
 ### Tangent space
 
-The geometric tangent space $T^{\mathrm{geo}}_pM = \ker F'(p)$, the derivations $T_pM$ with the coordinate basis $\partial/\partial x^i|_p$, and the velocities $D_\gamma$ describe one $n$-dimensional space, see Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]. *Source: Lectures 7–9, 11; Assignment 3; one class exercise (Lecture 8).*
+The geometric tangent space $T^{\mathrm{geo}}_pM = \ker F'(p)$, the derivations $T_pM$ with the coordinate basis $\partial/\partial x^i|_p$, and the velocities $D_\gamma$ describe one $n$-dimensional space, see Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]. *Source: Lectures 7–9, 11; Assignment 3; one class exercise (Lecture 8).*
 
 ^nd-eq-1
 
@@ -5349,8 +5349,8 @@ The geometric tangent space $T^{\mathrm{geo}}_pM = \ker F'(p)$, the derivations 
 > [!tip]- Hints: route of the proofs in the notes
 > - Strategy: S6 (tangent space of a level set = kernel), S7 (linear algebra closes the gap), S9 (Hadamard), S10 (curves).
 > - Q2–Q3: Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]: $F \circ \gamma \equiv c$ and the chain rule; then Lemma [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]], Lemma [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]] (set as "not a trivial exercise"), rank–nullity, $n$-dimensional subspace of an $n$-dimensional space.
-> - Q4: Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]: $\tilde D = \varphi_{\ast p}D$, Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-5|§29.5]] (from Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]]), $g = f_\varphi$; independence by $\partial/\partial x^i|_p[x^j] = \delta^j_i$.
-> - Q5: Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]: Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]], Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]], Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]], both dimensions $n$.
+> - Q4: Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]: $\tilde D = \varphi_{\ast p}D$, Corollary [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-6|§29.6]] (from Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]]), $g = f_\varphi$; independence by $\partial/\partial x^i|_p[x^j] = \delta^j_i$.
+> - Q5: Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]: Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]], Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]], Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]], both dimensions $n$.
 > - Q6: Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]] ($\gamma = \varphi^{-1}(\varphi(p) + ta)$, $a^i = D[x^i]$).
 > - Q7: Q3 and Q5; in Q4 one applies $D$ to the functions $g_i$, so they must be smooth.
 
@@ -5372,7 +5372,7 @@ The dual $T^\ast_pM = (T_pM)^\ast$, the dual basis $dx^i|_p$, and the germ space
 > - Strategy: S2 (define on representatives, check well-definedness), S9 (Hadamard), S7.
 > - Q2: Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] ($r \circ f = f$), Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] (Step 1), Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]. Q3: Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] (Step 2).
 > - Q4: Proposition [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]] (difference in $I_p^2$, Leibniz). Q5: left: $D[f] = D[f - f(p)]$, Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]]; right: Proposition [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]] ((2)⇒(1) by Hadamard).
-> - Q6: Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]] with $\dim T_pM = m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]), Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]; basis also from Proposition [[§34 The Cotangent Space from Germs#^prop-34-2|§34.2]].
+> - Q6: Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]] with $\dim T_pM = m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]; basis also from Proposition [[§34 The Cotangent Space from Germs#^prop-34-2|§34.2]].
 
 ### The differential
 
@@ -5391,17 +5391,17 @@ The Jacobian differential $dF_p$ of a map between vector spaces, the pushforward
 > [!tip]- Hints: route of the proofs in the notes
 > - Strategy: S1 (compute in a chart, show independence), S10 (curves).
 > - Q2: Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]] (coordinate curve $\tilde p + t\tilde v$, chain rule, $K^{-1}$ linear and continuous; Uribe: "I really encourage you to prove it").
-> - Q3: Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] ($E[y^j] = \partial/\partial x^i|_p[y^j \circ F]$, universal formula Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). Q4: Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]].
+> - Q3: Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] ($E[y^j] = \partial/\partial x^i|_p[y^j \circ F]$, universal formula Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). Q4: Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]].
 > - Q5: Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], Proposition [[§30 The Differential in Coordinates#^prop-30-7|§30.7]]. Q6: Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]] (chain rule, Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]].
 > - Q7: the remark *The Map Is Intrinsic --- the Matrix Is Not* in [[§30 The Differential in Coordinates|§30]]: rank, kernel, image.
 
 ### Smooth structure
 
-An atlas determines a unique maximal atlas, so "atlas" and "maximal atlas" give the same smooth structures, and smoothness of maps can be tested in any charts, see Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]. *Source: Lectures 5–7; one class exercise (Lecture 7).*
+An atlas determines a unique maximal atlas, so "atlas" and "maximal atlas" give the same smooth structures, and smoothness of maps can be tested in any charts, see Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]], Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]. *Source: Lectures 5–7; one class exercise (Lecture 7).*
 
 ^nd-eq-4
 
-- [ ] Q1 **[state]** State Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] (with the explicit $\overline{\mathcal{A}}$) and Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]].
+- [ ] Q1 **[state]** State Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]] (with the explicit $\overline{\mathcal{A}}$) and Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]].
 - [ ] Q2 **[state]** Show $\overline{\mathcal{A}}$ contains $\mathcal{A}$, so its domains cover $M$. Which property of compatibility is used for a chart with itself?
 - [ ] Q3 **[state]** Show two charts $(V, \psi)$, $(W, \chi)$ of $\overline{\mathcal{A}}$ are compatible: factor $\chi \circ \psi^{-1}$ near $\psi(p)$ through a chart of $\mathcal{A}$ at $p$. Why does it suffice to prove smoothness near each point?
 - [ ] Q4 **[state]** Show $\overline{\mathcal{A}}$ is maximal and is the only maximal atlas containing $\mathcal{A}$; then: two atlases are compatible iff they lie in the same maximal atlas.
@@ -5410,9 +5410,9 @@ An atlas determines a unique maximal atlas, so "atlas" and "maximal atlas" give 
 
 > [!tip]- Hints: route of the proofs in the notes
 > - Strategy: S1 (check in a chart, then show the choice does not matter).
-> - Q2–Q4: Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] (reflexivity, Proposition [[§17 Differentiable Structures#^prop-17-2|§17.2]]; $\chi \circ \psi^{-1} = (\chi \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ on $\psi(U \cap V \cap W)$).
+> - Q2–Q4: Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]] (reflexivity, Proposition [[§17 Differentiable Structures#^prop-17-3|§17.3]]; $\chi \circ \psi^{-1} = (\chi \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ on $\psi(U \cap V \cap W)$).
 > - Q5: Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]] (left to the class), Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]] ($\psi' F \varphi'^{-1} = (\psi'\psi^{-1})(\psi F \varphi^{-1})(\varphi\varphi'^{-1})$), Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]].
-> - Q6: Proposition [[§17 Differentiable Structures#^prop-17-2|§17.2]] ($\mathrm{id}$, $\mathrm{id}|_{(0,\infty)}$, $t^3$).
+> - Q6: Proposition [[§17 Differentiable Structures#^prop-17-3|§17.3]] ($\mathrm{id}$, $\mathrm{id}|_{(0,\infty)}$, $t^3$).
 
 ### Submanifolds of $\mathbb{R}^N$
 
@@ -5429,14 +5429,14 @@ For $X \subseteq \mathbb{R}^{n+k}$ near $p$: external (regular level set), inter
 
 > [!tip]- Hints: route of the proofs in the notes
 > - Strategy: S8 (normal forms give charts), S5 (regular value theorem).
-> - Q2: Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], i.e. Steps 1–3 of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] ($k$ independent columns, implicit function theorem Theorem [[§7 The Regular Value Theorem#^thm-7-1|§7.1]]).
+> - Q2: Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], i.e. Steps 1–3 of Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] ($k$ independent columns, implicit function theorem Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]).
 > - Q3: $F(x, y) = y - h(x)$ with Jacobian $(-Dh \mid I_k)$; $\alpha(x) = (x, h(x))$ with inverse the projection.
 > - Q4: inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]); then $\alpha(V_1)$ is open in $X \cap W$ because $\alpha$ is a homeomorphism onto it, so it is $X \cap$ (a box).
-> - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] (smooth, injective, open image, smooth inverse $(x, z) \mapsto (x, z + h(x))$; the rows of $\varphi'(q)$ are independent). Q6: Example [[§44 Embeddings#^ex-44-1|§44.1]] (figure-eight).
+> - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] (smooth, injective, open image, smooth inverse $(x, z) \mapsto (x, z + h(x))$; the rows of $\varphi'(q)$ are independent). Q6: Example [[§44 Embeddings#^ex-44-3|§44.3]] (figure-eight).
 
 ### Regular value theorem
 
-The Euclidean theorem ($F^{-1}(\vec 0)$ a topological, then smooth, manifold by graph charts) and the manifold theorem ($F^{-1}(q)$ a regular submanifold with $\iota_\ast(T_pS) = \ker F_{\ast p}$) agree on open subsets of $\mathbb{R}^{n+k}$, see Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]]. *Source: Lectures 3, 6, 12; Assignment 1.*
+The Euclidean theorem ($F^{-1}(\vec 0)$ a topological, then smooth, manifold by graph charts) and the manifold theorem ($F^{-1}(q)$ a regular submanifold with $\iota_\ast(T_pS) = \ker F_{\ast p}$) agree on open subsets of $\mathbb{R}^{n+k}$, see Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]], Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]]. *Source: Lectures 3, 6, 12; Assignment 1.*
 
 ^nd-eq-6
 
@@ -5450,7 +5450,7 @@ The Euclidean theorem ($F^{-1}(\vec 0)$ a topological, then smooth, manifold by 
 
 > [!tip]- Hints: route of the proofs in the notes
 > - Strategy: S5 (regular value theorem), S8 (normal forms give charts), S6 (tangent space = kernel), S7.
-> - Q2: Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] (subspace inheritance, Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]]; permutation, IFT, graph chart). Smooth: Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]].
+> - Q2: Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] (subspace inheritance, Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]]; permutation, IFT, graph chart). Smooth: Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]].
 > - Q3: Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] (parts 1–2), Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]] (constants and any $k$ coordinates).
 > - Q4: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]] ($F \circ \iota$ constant), Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] (part 3): both sides have dimension $m - n$.
 > - Q5: Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]] (1) (block lower triangular Jacobian, inverse function theorem, Lemma [[§36 Submersions#^lem-36-5|§36.5]]). Q6: Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]] (2), Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]], Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]].
@@ -5472,8 +5472,8 @@ The Euclidean notion ($\operatorname{im} F'(p) + T^{\mathrm{geo}}S = \mathbb{R}^
 > [!tip]- Hints: route of the proofs in the notes
 > - Strategy: S12 (transversality = the images span; reduce to a regular value of a composite), S5, S8.
 > - Q2: Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]] (2) and Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]: $\operatorname{im} F'(p)$ and $T^{\mathrm{geo}}_qS = \ker G'(q)$.
-> - Q3: Proposition [[§26 Transversality#^prop-26-2|§26.2]], Theorem [[§26 Transversality#^thm-26-1|§26.1]]. Q4: Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] (Steps 1–7; Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]], Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]]).
-> - Q5: Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]], Proposition [[§26 Transversality#^prop-26-4|§26.4]]. Q6: Example [[§26 Transversality#^ex-26-2|§26.2]]; Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-2|§39.2]] (normal spaces isomorphic).
+> - Q3: Proposition [[§26 Transversality#^prop-26-3|§26.3]], Theorem [[§26 Transversality#^thm-26-1|§26.1]]. Q4: Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] (Steps 1–7; Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]], Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]]).
+> - Q5: Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]], Proposition [[§26 Transversality#^prop-26-5|§26.5]]. Q6: Example [[§26 Transversality#^ex-26-2|§26.2]]; Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-2|§39.2]] (normal spaces isomorphic).
 
 ### Diffeomorphism
 
@@ -5489,5 +5489,5 @@ For open $A \subseteq \mathbb{R}^m$, $B \subseteq \mathbb{R}^n$ with their stand
 
 > [!tip]- Hints: route of the proofs in the notes
 > - Strategy: S1.
-> - Q2: the identity charts, coordinate representation $F$ itself. Q3: $F = \psi^{-1} \circ (\psi \circ F \circ \varphi^{-1}) \circ \varphi$; $\varphi$, $\psi$ are compatible with the identity charts (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]), so they and their inverses are Euclidean-smooth.
+> - Q2: the identity charts, coordinate representation $F$ itself. Q3: $F = \psi^{-1} \circ (\psi \circ F \circ \varphi^{-1}) \circ \varphi$; $\varphi$, $\psi$ are compatible with the identity charts (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]), so they and their inverses are Euclidean-smooth.
 > - Q5: $h(t) = t^{1/3}$, Example [[§19 Smooth Functions and Smooth Maps#^ex-19-2|§19.2]], Corollary [[§19 Smooth Functions and Smooth Maps#^cor-19-9|§19.9]].

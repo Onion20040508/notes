@@ -202,7 +202,7 @@ Every linear map $\mathbb{R}^2 \to \mathbb{R}$ has the form $L(h, k) = A \cdot h
 ^rem-7-4
 
 > [!remark]- Connections
-> - A stronger witness, whose directional derivatives at the origin all exist and are $0$ (so linear in the direction), yet which is not continuous there: [[§22 The Differential of a Map Between Vector Spaces#^ex-22-1|591 Ex. §22.1]].
+> - A stronger witness, whose directional derivatives at the origin all exist and are $0$ (so linear in the direction), yet which is not continuous there: [[§22 The Differential of a Map Between Vector Spaces#^ex-22-2|591 Ex. §22.2]].
 
 ## Summary
 

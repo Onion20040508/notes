@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|Definition §31.4: Partial Derivative in One Factor]]
-- [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|Theorem §31.6: The Tangent Space of a Product]]
+- [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|Theorem §31.7: The Tangent Space of a Product]]
 - [[§39 Transversality and Lagrange Multipliers#^thm-39-1|Theorem §39.1: Preimages of Transverse Submanifolds]]
 
 ## Used in (Differentiable Manifolds)

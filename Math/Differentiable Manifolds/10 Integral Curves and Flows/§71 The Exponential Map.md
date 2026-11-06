@@ -140,20 +140,13 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 >
 > The reason: many Lie groups are non-abelian. The plus on the left is the addition in the tangent space at the identity, which is commutative, while the group law is not; so the identity cannot hold in general. There is a famous formula for $\exp(A)\exp(B)$, the Baker–Campbell–Hausdorff formula, a complicated series of iterated brackets of $A$ and $B$. For a single direction, $A$ and $B = cA$, the identity holds (Corollary [[§71 The Exponential Map#^cor-71-3|§71.3]]); more generally, it holds if $A$ and $B$ commute, which is not easy to show and is not proved in the course. (Lee, Problem 20-8, characterizes the groups where it holds for all $A$, $B$.)
 >
-> *(Not from lecture.)* A concrete failure in $\mathrm{GL}(2, \mathbb{R})$, using the matrix exponential of Theorem [[§71 The Exponential Map#^thm-71-4|§71.4]]: for $A = \begin{psmallmatrix} 0 & 1 \\ 0 & 0 \end{psmallmatrix}$ and $B = \begin{psmallmatrix} 0 & 0 \\ 1 & 0 \end{psmallmatrix}$, $A^2 = B^2 = 0$, so
->
-> $$
-> \exp(A)\exp(B) = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix} = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}, \qquad
-> \exp(A + B) = \begin{pmatrix} \cosh 1 & \sinh 1 \\ \sinh 1 & \cosh 1 \end{pmatrix},
-> $$
->
-> since $(A + B)^2 = I$. Here $[A, B] = AB - BA = \begin{psmallmatrix} 1 & 0 \\ 0 & -1 \end{psmallmatrix} \neq 0$.
+> *(Not from lecture.)* A concrete failure in $\mathrm{GL}(2, \mathbb{R})$, using the matrix exponential of Theorem [[§71 The Exponential Map#^thm-71-4|§71.4]], is Example [[§71 The Exponential Map#^ex-71-1|§71.1]] below.
 
 ^rem-71-1
 
 ![[m591-71-3.svg]]
 
-*(Not from lecture; figure added.)* The two matrices of the remark acting on the unit square: $\exp(A)\exp(B)$ (blue) and $\exp(A + B)$ (red). Both have determinant $1$, so the parallelograms have the same area, but they are different maps.
+*(Not from lecture; figure added.)* The two matrices of Example [[§71 The Exponential Map#^ex-71-1|§71.1]] acting on the unit square: $\exp(A)\exp(B)$ (blue) and $\exp(A + B)$ (red). Both have determinant $1$, so the parallelograms have the same area, but they are different maps.
 
 > [!theorem] Theorem §71.4: The Exponential Map of a Linear Group
 > Let $G \subseteq \mathrm{GL}(n, \mathbb{R})$ be a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]) and $A \in \mathfrak{g}$, a matrix. Then
@@ -194,6 +187,35 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 
 *Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^def-71-1|Def. §71.1]]
 
+> [!example] Example §71.1: $\exp(A + B) \neq \exp(A)\exp(B)$ for Two Nilpotent Matrices
+> *(Not from lecture.)* In $\mathrm{GL}(2, \mathbb{R})$, for $A = \begin{psmallmatrix} 0 & 1 \\ 0 & 0 \end{psmallmatrix}$ and $B = \begin{psmallmatrix} 0 & 0 \\ 1 & 0 \end{psmallmatrix}$,
+>
+> $$
+> \exp(A)\exp(B) = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix} \neq \begin{pmatrix} \cosh 1 & \sinh 1 \\ \sinh 1 & \cosh 1 \end{pmatrix} = \exp(A + B) ,
+> $$
+>
+> a concrete failure of the identity of the warning in [[§71 The Exponential Map|§71]]. Here $[A, B] = AB - BA = \begin{psmallmatrix} 1 & 0 \\ 0 & -1 \end{psmallmatrix} \neq 0$.
+>
+> *The exponential is the series.* For $G = \mathrm{GL}(2, \mathbb{R})$, $\mathfrak{g} = \operatorname{Mat}(2, \mathbb{R})$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]), and Theorem [[§71 The Exponential Map#^thm-71-4|§71.4]] gives $\exp(C) = \sum_{\ell \ge 0} C^\ell/\ell!$.
+>
+> *$\exp(A)\exp(B)$.* $A^2 = B^2 = 0$, so all higher powers vanish and $\exp(A) = I + A$, $\exp(B) = I + B$:
+>
+> $$
+> \exp(A)\exp(B) = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix} = \begin{pmatrix} 2 & 1 \\ 1 & 1 \end{pmatrix}.
+> $$
+>
+> *$\exp(A + B)$.* $A + B = \begin{psmallmatrix} 0 & 1 \\ 1 & 0 \end{psmallmatrix}$ has $(A + B)^2 = I$, so $(A + B)^{2k} = I$ and $(A + B)^{2k+1} = A + B$. Splitting the series into even and odd terms,
+>
+> $$
+> \exp(A + B) = \Big(\sum_{k \ge 0} \frac{1}{(2k)!}\Big) I + \Big(\sum_{k \ge 0} \frac{1}{(2k+1)!}\Big)(A + B) = \cosh 1\; I + \sinh 1\; (A + B) = \begin{pmatrix} \cosh 1 & \sinh 1 \\ \sinh 1 & \cosh 1 \end{pmatrix}.
+> $$
+>
+> *They differ.* The top-left entries are $2$ and $\cosh 1 = (e + e^{-1})/2 < (3 + 1)/2 = 2$.
+>
+> *The bracket.* $AB = \begin{psmallmatrix} 1 & 0 \\ 0 & 0 \end{psmallmatrix}$ and $BA = \begin{psmallmatrix} 0 & 0 \\ 0 & 1 \end{psmallmatrix}$, so $[A, B] = \begin{psmallmatrix} 1 & 0 \\ 0 & -1 \end{psmallmatrix} \neq 0$: $A$ and $B$ do not commute.
+
+^ex-71-1
+
 > [!remark]- Connections
 > - Ordinary differential equations: $x(t) = e^{tA}x_0$ solves $x' = Ax$ — [[Matrix Exponential Solution]]. Here the same series is the integral curve of the left-invariant field $\mathbf{X}^A_g = gA$ on $\mathrm{GL}(n, \mathbb{R})$, i.e. the solution of the matrix equation $\gamma' = \gamma A$, $\gamma(0) = I$.
 
@@ -223,9 +245,9 @@ What is always true is the following local statement.
 > \mathbf{V}_{(g, A)} = \big(\mathbf{X}^A_g, 0\big) \in T_gG \oplus T_A\mathfrak{g} = T_{(g, A)}(G \times \mathfrak{g}) ,
 > $$
 >
-> using Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]], and $T_A\mathfrak{g} = \mathfrak{g}$, by the vector space structure. In the second slot one simply puts zero.
+> using Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], and $T_A\mathfrak{g} = \mathfrak{g}$, by the vector space structure. In the second slot one simply puts zero.
 >
-> *Claim: $\mathbf{V}$ is smooth* (this is where the smoothness of left multiplication is used). *(Filled in.)* By Lemma [[§56 Vector Fields#^lem-56-8|§56.8]] it suffices that $\mathbf{V}h$ is smooth for every $h \in C^\infty(G \times \mathfrak{g})$. With $\iota_A : G \to G \times \mathfrak{g}$, $x \mapsto (x, A)$, Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]] gives $\mathbf{V}_{(g,A)} = (\iota_A)_{\ast}\mathbf{X}^A_g$, so
+> *Claim: $\mathbf{V}$ is smooth* (this is where the smoothness of left multiplication is used). *(Filled in.)* By Lemma [[§56 Vector Fields#^lem-56-8|§56.8]] it suffices that $\mathbf{V}h$ is smooth for every $h \in C^\infty(G \times \mathfrak{g})$. With $\iota_A : G \to G \times \mathfrak{g}$, $x \mapsto (x, A)$, Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]] gives $\mathbf{V}_{(g,A)} = (\iota_A)_{\ast}\mathbf{X}^A_g$, so
 >
 > $$
 > (\mathbf{V}h)(g, A) = \mathbf{X}^A_g\big[h(\cdot, A)\big] = d(L_g)_e(A)\big[h(\cdot, A)\big] = A\big[x \mapsto h(gx, A)\big] .
@@ -239,7 +261,7 @@ What is always true is the following local statement.
 >
 > the partial derivatives of $\psi$ in the coordinates $y^j$ of the middle factor, which are smooth on $G \times W \times \mathfrak{g}$. So $\mathbf{V}h$ is smooth. (This is the trick of Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], now with $A$ varying too.)
 >
-> *$\mathbf{V}$ is complete* — because each $\mathbf{X}^A$ is, and the integration only takes place in the $G$ variable; the $\mathfrak{g}$ variable plays no role. For $(g, A) \in G \times \mathfrak{g}$, the curve $t \mapsto \big(\varphi^A_t(g), A\big)$ has velocity $\big(\mathbf{X}^A_{\varphi^A_t(g)}, 0\big) = \mathbf{V}_{(\varphi^A_t(g), A)}$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]]: the components of a velocity are the velocities of the components), it starts at $(g, A)$, and it is defined for all $t$, since $\mathbf{X}^A$ is complete. So the flow of $\mathbf{V}$ is
+> *$\mathbf{V}$ is complete* — because each $\mathbf{X}^A$ is, and the integration only takes place in the $G$ variable; the $\mathfrak{g}$ variable plays no role. For $(g, A) \in G \times \mathfrak{g}$, the curve $t \mapsto \big(\varphi^A_t(g), A\big)$ has velocity $\big(\mathbf{X}^A_{\varphi^A_t(g)}, 0\big) = \mathbf{V}_{(\varphi^A_t(g), A)}$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]]: the components of a velocity are the velocities of the components), it starts at $(g, A)$, and it is defined for all $t$, since $\mathbf{X}^A$ is complete. So the flow of $\mathbf{V}$ is
 >
 > $$
 > \Phi : \mathbb{R} \times G \times \mathfrak{g} \longrightarrow G \times \mathfrak{g}, \qquad (t, g, A) \longmapsto \big(\varphi^A_t(g), A\big),
@@ -265,7 +287,7 @@ What is always true is the following local statement.
 
 ^pf-71-5
 
-*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]], [[§56 Vector Fields#^lem-56-8|§56.8]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§71 The Exponential Map#^prop-71-2|§71.2]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]]
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§56 Vector Fields#^lem-56-8|§56.8]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§71 The Exponential Map#^prop-71-2|§71.2]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]]
 
 **Transcription note (board 11/4).** The board writes $\exp : \mathfrak{g} \to A$ in the statement (for $G$), $\mathbf{V}_{(g,A)} \in (T_gG) \times \mathfrak{g} = T_A\mathfrak{g}$ (the space is $T_{(g,A)}(G \times \mathfrak{g})$), and the flow as $(t, g, A) \mapsto (\varphi^A_t(g), 0)$; the second component of the flow is $A$, which the field leaves unchanged, as above.
 

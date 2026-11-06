@@ -46,11 +46,11 @@ The target $\mathbb{R}$ is itself a smooth manifold, so $f_{\ast p}$ lands in a 
 ^prop-32-1
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* (1) and (2) are the Basis Theorem ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6]]) for the chart $(\mathbb{R}, \mathrm{id}_\mathbb{R})$, with $n = 1$ and $x^1 = r$; (2) is its universal formula. (3) $\iota_c$ is linear because the vector-space operations of $T_c\mathbb{R}$ are pointwise on germs ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]): $(v + w)[r] = v[r] + w[r]$ and $(av)[r] = a\,v[r]$. By [[§32 The Cotangent Space#^def-32-2|Definition §32.2]], $\iota_c(a\,\partial/\partial r|_c) = a \cdot 1 = a$, so $\iota_c$ is surjective, and $a \mapsto a\,\partial/\partial r|_c$ is a right inverse; it is also a left inverse by (2), $v = \iota_c(v)\,\partial/\partial r|_c$.
+> *(Not from lecture; filled in.)* (1) and (2) are the Basis Theorem ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7]]) for the chart $(\mathbb{R}, \mathrm{id}_\mathbb{R})$, with $n = 1$ and $x^1 = r$; (2) is its universal formula. (3) $\iota_c$ is linear because the vector-space operations of $T_c\mathbb{R}$ are pointwise on germs ([[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2]]): $(v + w)[r] = v[r] + w[r]$ and $(av)[r] = a\,v[r]$. By [[§32 The Cotangent Space#^def-32-2|Definition §32.2]], $\iota_c(a\,\partial/\partial r|_c) = a \cdot 1 = a$, so $\iota_c$ is surjective, and $a \mapsto a\,\partial/\partial r|_c$ is a right inverse; it is also a left inverse by (2), $v = \iota_c(v)\,\partial/\partial r|_c$.
 
 ^pf-32-1
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§32 The Cotangent Space#^def-32-1|Def. §32.1]], [[§32 The Cotangent Space#^def-32-2|Def. §32.2]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§32 The Cotangent Space#^def-32-1|Def. §32.1]], [[§32 The Cotangent Space#^def-32-2|Def. §32.2]]
 
 > [!definition] Definition §32.3: The Standard Identification of $T_c\mathbb{R}$ with $\mathbb{R}$
 > For every $c \in \mathbb{R}$, $T_c\mathbb{R}$ is identified with $\mathbb{R}$ by the isomorphism $\iota_c$ of [[§32 The Cotangent Space#^prop-32-1|Proposition §32.1]]:

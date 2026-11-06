@@ -169,7 +169,7 @@ A Hermitian form, its matrix, its change of basis and its signature, as the cour
 >
 > In the physicists' form $X = -iT$: a one-parameter subgroup $e^{-isT}$ lies in $U(p, q)$ iff $T$ is $h$-self-adjoint.
 >
-> *Source: B. C. Hall, Quantum Theory for Mathematicians, Def. 16.1 (closed subgroups) and Example 16.22 with its proof (the Lie algebra of $U(n)$: $e^{tX}$ unitary for all $t$ iff $X^{\ast} = -X$, by $(e^{tX})^{\ast} = e^{tX^{\ast}}$ and differentiation at $t = 0$), run with $\eta$ inserted · the case $U(n)$ in the Math vault: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|591 Ex. §23.2]] · I. I. Cotăescu, Elements of Linear Algebra (arXiv:1602.03006), §4.2.2, Thm. 21 (the pseudo-unitary group as the group with $f^{-1} = \bar f$)*
+> *Source: B. C. Hall, Quantum Theory for Mathematicians, Def. 16.1 (closed subgroups) and Example 16.22 with its proof (the Lie algebra of $U(n)$: $e^{tX}$ unitary for all $t$ iff $X^{\ast} = -X$, by $(e^{tX})^{\ast} = e^{tX^{\ast}}$ and differentiation at $t = 0$), run with $\eta$ inserted · the case $U(n)$ in the Math vault: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|591 Ex. §23.3]] · I. I. Cotăescu, Elements of Linear Algebra (arXiv:1602.03006), §4.2.2, Thm. 21 (the pseudo-unitary group as the group with $f^{-1} = \bar f$)*
 
 ^thm-cb-9-8
 

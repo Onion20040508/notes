@@ -123,10 +123,10 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 
 > [!remark] Remark: How This Gets Used
 > This is 590 [[§13 Quotient Topology#^thm-13-3|§13]] material (Munkres Theorem 22.2, Lee Theorem A.27), stated there in the full form above; it was not repeated in lecture but is used constantly here. The recipe it encodes is: *to define a continuous map out of a quotient, never define it on the quotient.* Define it upstairs on $X$, check it is constant on the classes, check continuity upstairs — and the theorem delivers a unique continuous map downstairs. Every identification in these notes is made this way:
-> - $\rho : \mathbb{R}^3/\mathrm{SO}(3) \to [0,\infty)$, $[x] \mapsto |x|$, from the norm on $\mathbb{R}^3$ ([[§13 Group Actions and Orbit Spaces#^ex-13-5|Example §13.5]]);
+> - $\rho : \mathbb{R}^3/\mathrm{SO}(3) \to [0,\infty)$, $[x] \mapsto |x|$, from the norm on $\mathbb{R}^3$ ([[§13 Group Actions and Orbit Spaces#^ex-13-7|Example §13.7]]);
 > - $\Phi : G/H \to X$, $gH \mapsto g \cdot x_0$, from the orbit map on $G$ ([[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|Theorem §15.3]]);
 > - $\overline{F} : X/{\sim} \to Y$ recognizing a quotient map ([[§5 Quotient Maps#^prop-5-4|Proposition §5.4]]);
-> - continuity of the charts on $\mathbb{CP}^n$ and $\mathbb{RP}^n$ ([[§18 Projective Spaces as Smooth Manifolds|§18, Projective Spaces as Smooth Manifolds]]), applied locally via [[§5 Quotient Maps#^lem-5-7|Lemma §5.7]].
+> - continuity of the charts on $\mathbb{CP}^n$ and $\mathbb{RP}^n$ ([[§18 Projective Spaces as Smooth Manifolds|§18, Projective Spaces as Smooth Manifolds]]), applied locally via [[§5 Quotient Maps#^lem-5-8|Lemma §5.8]].
 >
 > Part (2) of [[§5 Quotient Maps#^thm-5-1|Theorem §5.1]] is what makes the recipe self-improving: if the map upstairs is itself a quotient map, the induced map downstairs is not merely continuous but a homeomorphism when injective, since a bijective quotient map is a homeomorphism.
 
@@ -185,25 +185,49 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > [!remark]- Connections
 > - Home in MATH 590: [[§13 Quotient Topology#^cor-13-4|590 §13.4 (Induced Bijection from Quotient)]].
 
-> [!remark] Remark: Without the Quotient-Map Hypothesis
-> *(Not from lecture.)* For a continuous surjection $F$ that is not a quotient map, $\overline{F}$ is still a continuous bijection (the first proof's argument for continuity uses only that $F$ is continuous), but it need not be a homeomorphism. Example: $f : [0, 2\pi) \to S^1$, $f(t) = (\cos t, \sin t)$, is a continuous bijection. Its fibres are single points, so $\sim$ is equality, $[0, 2\pi)/{\sim} = [0, 2\pi)$, and $\overline{f} = f$. It is not a quotient map: $U = [0, \pi)$ is open in $[0, 2\pi)$ and $f^{-1}(f(U)) = U$ ($f$ is injective), but $f(U) = \{(\cos t, \sin t) : 0 \leq t < \pi\}$ is not open in $S^1$, since every neighborhood of $f(0) = (1, 0)$ in $S^1$ contains points $(\cos t, \sin t)$ with $t$ close to $2\pi$, which are not in $f(U)$. So $f^{-1}$ is not continuous at $(1, 0)$, and $[0, 2\pi)$ and $S^1$ are not homeomorphic through $f$ (nor through any map: $S^1$ is compact and $[0, 2\pi)$ is not).
+> [!theorem] Lemma §5.5: The Induced Bijection of a Continuous Surjection
+> Let $F : X \to Y$ be a continuous surjection, not necessarily a quotient map, and let $\sim$ be the relation $a \sim b \iff F(a) = F(b)$. Then $\overline{F} : X/{\sim} \to Y$, $\overline{F}([a]) = F(a)$, is a well-defined continuous bijection with $F = \overline{F} \circ \pi$. It is a homeomorphism when $F$ is a quotient map (Proposition [[§5 Quotient Maps#^prop-5-4|§5.4]]), but without that hypothesis it need not be (Example [[§5 Quotient Maps#^ex-5-2|§5.2]]).
 
-^rem-5-2
+^lem-5-5
+
+> [!proof]+ Proof
+> *(Not from lecture.)* Well-definedness, bijectivity and $F = \overline{F} \circ \pi$ are proved as in the first proof of Proposition [[§5 Quotient Maps#^prop-5-4|§5.4]], which uses there only the definition of $\sim$ and surjectivity of $F$. Continuity: $\overline{F} \circ \pi = F$ is continuous, so $\overline{F}$ is continuous by Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]](2). This uses only that $F$ is continuous; the quotient-map hypothesis enters Proposition [[§5 Quotient Maps#^prop-5-4|§5.4]] only in the continuity of $\overline{F}^{-1}$.
+
+^pf-5-5
+
+*Uses:* [[§5 Quotient Maps#^prop-5-4|§5.4]], [[§5 Quotient Maps#^cor-5-2|§5.2]]
+
+> [!example] Example §5.2: The Circle Parametrized by a Half-Open Interval
+> *(Not from lecture.)* Let $f : [0, 2\pi) \to S^1$, $f(t) = (\cos t, \sin t)$, with $[0, 2\pi) \subseteq \mathbb{R}$ and $S^1 \subseteq \mathbb{R}^2$ carrying the subspace topologies. Then $f$ is a continuous bijection, $\overline{f} = f$ in Lemma [[§5 Quotient Maps#^lem-5-5|§5.5]], and $f$ is not a homeomorphism.
+>
+> 1. *$f$ is a continuous bijection.* Its components $\cos$ and $\sin$ are continuous. Every point of $S^1$ is $(\cos t, \sin t)$ for some $t \in [0, 2\pi)$, so $f$ is onto. If $f(t) = f(s)$ with $t, s \in [0, 2\pi)$, then $t - s \in 2\pi\mathbb{Z}$ and $|t - s| < 2\pi$, so $t = s$.
+> 2. *$\overline{f} = f$.* The fibres of $f$ are single points, so $\sim$ is equality, $[0, 2\pi)/{\sim} = [0, 2\pi)$, and $\overline{f} = f$.
+> 3. *$f$ is not a quotient map.* $U = [0, \pi) = (-1, \pi) \cap [0, 2\pi)$ is open in $[0, 2\pi)$, and $f^{-1}(f(U)) = U$ because $f$ is injective. But $f(U) = \{(\cos t, \sin t) : 0 \le t < \pi\}$ is not open in $S^1$. An open subset of $S^1$ containing $f(0) = (1, 0)$ contains $S^1 \cap B((1,0), r)$ for some $r > 0$. For $t$ with $\max(\pi, 2\pi - r) < t < 2\pi$,
+>
+> $$
+> |f(t) - (1, 0)| = |(\cos t, \sin t) - (\cos 2\pi, \sin 2\pi)| = 2\,\big|\sin\tfrac{2\pi - t}{2}\big| \le 2\pi - t < r,
+> $$
+>
+> so $f(t) \in S^1 \cap B((1,0), r)$; and $f(t) \notin f(U)$, since $t \notin U$ and $f$ is injective. So the set $f(U)$, whose preimage $U$ is open, is not open.
+> 4. *$f^{-1}$ is not continuous at $(1, 0)$.* With $t_k = 2\pi - \tfrac1k$ ($k \ge 1$), the points $f(t_k)$ converge to $(1,0)$ by the estimate in (3), but $f^{-1}(f(t_k)) = t_k \to 2\pi$, not to $f^{-1}(1, 0) = 0$.
+> 5. *No homeomorphism exists at all.* $S^1$ is closed and bounded in $\mathbb{R}^2$, hence compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1)). $[0, 2\pi)$ is not compact: the open sets $[0, 2\pi - \tfrac1k)$, $k \ge 1$, cover it, but finitely many of them have union $[0, 2\pi - \tfrac1K)$ for the largest index $K$ used, which misses $2\pi - \tfrac1{2K}$. A homeomorphism $S^1 \to [0, 2\pi)$ would carry the compact $S^1$ onto $[0, 2\pi)$ (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](2)).
+
+^ex-5-2
 
 > [!remark] Remark
 > So “quotient map” and “presentation of the target as a quotient space” are the same notion, and one may use whichever is convenient: to recognize a quotient topology, exhibit a quotient map onto it. Stated without proof in PSet 1, Problem 5.
 
-^rem-5-3
+^rem-5-2
 
-> [!theorem] Proposition §5.5: Open Surjections Are Quotient Maps
+> [!theorem] Proposition §5.6: Open Surjections Are Quotient Maps
 > A continuous open surjection $F : X \to Y$ is a quotient map.
 
-^prop-5-5
+^prop-5-6
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* ($\Rightarrow$) Continuity. ($\Leftarrow$) Suppose $F^{-1}(U)$ is open. Then $F(F^{-1}(U))$ is open, $F$ being an open map; and $F(F^{-1}(U)) = U$ because $F$ is surjective.
 
-^pf-5-5
+^pf-5-6
 
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§5 Quotient Maps#^def-5-1|Def. §5.1]]
 
@@ -211,22 +235,22 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > - Home in MATH 590: [[§13 Quotient Topology#^prop-13-2|590 §13.2]] (open or closed continuous surjections).
 > - Applied to $G \to G/H$: [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-2|§15.2]].
 
-> [!example] Example §5.2: Projections Are Quotient Maps
-> If $X_1, \ldots, X_n$ are nonempty topological spaces, every projection $\pi_i : X_1 \times \cdots \times X_n \to X_i$ is a quotient map: it is surjective (choose any point in each other factor), continuous, and open ([[§4 Quotient Spaces and Open Maps#^lem-4-3|Lemma §4.3]] and induction), so [[§5 Quotient Maps#^prop-5-5|Proposition §5.5]] applies. Nonemptiness is needed: if some $X_k = \emptyset$ the product is empty and $\pi_i$ is not surjective onto a nonempty $X_i$.
+> [!example] Example §5.3: Projections Are Quotient Maps
+> If $X_1, \ldots, X_n$ are nonempty topological spaces, every projection $\pi_i : X_1 \times \cdots \times X_n \to X_i$ is a quotient map: it is surjective (choose any point in each other factor), continuous, and open ([[§4 Quotient Spaces and Open Maps#^lem-4-3|Lemma §4.3]] and induction), so [[§5 Quotient Maps#^prop-5-6|Proposition §5.6]] applies. Nonemptiness is needed: if some $X_k = \emptyset$ the product is empty and $\pi_i$ is not surjective onto a nonempty $X_i$.
 
-^ex-5-2
+^ex-5-3
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]], [[§5 Quotient Maps#^prop-5-5|§5.5]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]], [[§5 Quotient Maps#^prop-5-6|§5.6]]
 
 > [!remark] Remark
 > This is PSet 1, Problem 5, where it is proved directly from the definition. The direct argument is worth seeing once: writing an open $\pi_i^{-1}(U)$ as a union of boxes $\bigcup_x U_{x,1} \times \cdots \times U_{x,n}$ and projecting gives $U = \bigcup_x U_{x,i}$, a union of open sets—and the step $\pi_i(U_{x,1} \times \cdots \times U_{x,n}) = U_{x,i}$ is exactly where nonemptiness of the other factors enters.
 
-^rem-5-4
+^rem-5-3
 
-> [!theorem] Lemma §5.6: Open Surjections Push Bases Forward
+> [!theorem] Lemma §5.7: Open Surjections Push Bases Forward
 > Let $\pi : Y \to Q$ be a continuous open surjection and $\mathcal{B}$ a basis for the topology of $Y$. Then $\pi(\mathcal{B}) = \{\pi(B) \mid B \in \mathcal{B}\}$ is a basis for the topology of $Q$. In particular, if $Y$ is second countable, so is $Q$.
 
-^lem-5-6
+^lem-5-7
 
 > [!proof]+ Proof
 > Each $\pi(B)$ is open, $\pi$ being an open map. Let $W \subseteq Q$ be open and $q \in W$. By surjectivity choose $y \in Y$ with $\pi(y) = q$. By continuity $\pi^{-1}(W)$ is open, and it contains $y$, so there is $B \in \mathcal{B}$ with $y \in B \subseteq \pi^{-1}(W)$. Applying $\pi$ and using $\pi(\pi^{-1}(W)) \subseteq W$,
@@ -237,11 +261,11 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 >
 > By [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]], $\pi(\mathcal{B})$ is a basis. It is the image of $\mathcal{B}$ under $B \mapsto \pi(B)$, hence countable when $\mathcal{B}$ is.
 
-^pf-5-6
+^pf-5-7
 
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]]
 
-> [!theorem] Lemma §5.7: Restricting a Quotient Map over an Open Set
+> [!theorem] Lemma §5.8: Restricting a Quotient Map over an Open Set
 > Let $p : X \to Y$ be a quotient map and $V \subseteq Y$ an open set, and put $W = p^{-1}(V)$. Then the restriction
 >
 > $$
@@ -252,7 +276,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 >
 > *Lee: Theorem A.27(e)*
 
-^lem-5-7
+^lem-5-8
 
 ![[m591-3-5.svg]]
 *The square commutes, and the horizontal arrows are inclusions of open sets. The lemma says the left arrow inherits the quotient property of the right one. Restricting a quotient map to an arbitrary subspace can destroy that property; restricting it over an open set cannot.*
@@ -266,28 +290,28 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 >
 > as $p^{-1}(A) \subseteq p^{-1}(V) = W$. The set $W = p^{-1}(V)$ is open in $X$, $V$ being open and $p$ continuous; so a subset open in $W$ is open in $X$ ([[§3 Subspaces and Products#^lem-3-2|Lemma §3.2]]), and $p^{-1}(A)$ is open in $X$. As $p$ is a quotient map, $A$ is open in $Y$, hence in $V$. The reverse implication is continuity of $q$.
 
-^pf-5-7
+^pf-5-8
 
 *Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]]
 
 > [!remark]- Connections
 > - Used for the charts on $\mathbb{CP}^n$: [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|Each φᵢ Is a Chart, §18.1]].
 
-> [!theorem] Lemma §5.8: Restricting a Quotient Map over a Closed Set
-> [[§5 Quotient Maps#^lem-5-7|Lemma §5.7]] holds with “open” replaced by “closed”: if $p : X \to Y$ is a quotient map, $V \subseteq Y$ is closed and $W = p^{-1}(V)$, then $p|_W : W \to V$ is a quotient map.
+> [!theorem] Lemma §5.9: Restricting a Quotient Map over a Closed Set
+> [[§5 Quotient Maps#^lem-5-8|Lemma §5.8]] holds with “open” replaced by “closed”: if $p : X \to Y$ is a quotient map, $V \subseteq Y$ is closed and $W = p^{-1}(V)$, then $p|_W : W \to V$ is a quotient map.
 >
 > *Lee: Theorem A.27(e)*
 
-^lem-5-8
+^lem-5-9
 
 > [!proof]+ Proof
 > By taking complements, a continuous surjection is a quotient map exactly when a set is closed iff its preimage is closed. Let $C \subseteq V$ with $q^{-1}(C) = p^{-1}(C)$ closed in $W$. Now $W$ is closed in $X$, as $V$ is closed and $p$ continuous, and a set closed in a closed subspace is closed in the whole space: it is the intersection of $W$ with a closed subset of $X$. So $p^{-1}(C)$ is closed in $X$, hence $C$ is closed in $Y$ because $p$ is a quotient map, and therefore closed in $V$.
 
-^pf-5-8
+^pf-5-9
 
-*Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^lem-5-7|§5.7]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]], [[§7 Closed Sets and Limit Points#^thm-7-3|590 §7.3]]
+*Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^lem-5-8|§5.8]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]], [[§7 Closed Sets and Limit Points#^thm-7-3|590 §7.3]]
 
 > [!remark] Remark
 > Both hypotheses are used, at different steps: that $W$ is a full preimage gives $q^{-1}(A) = p^{-1}(A)$, and that $V$ is open makes a set open in $W$ open in $X$. Without them the restriction of a quotient map need not be a quotient map. The lemma is what allows the universal property ([[§5 Quotient Maps#^thm-5-1|Theorem §5.1]]) to be applied *locally*, on an open piece of a quotient — which is exactly the situation of a chart on a quotient space ([[§18 Projective Spaces as Smooth Manifolds|§18, Projective Spaces as Smooth Manifolds]]). Both lemmas are from Assignment 2, Problem 2.
 
-^rem-5-5
+^rem-5-4

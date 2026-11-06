@@ -86,12 +86,36 @@ The angle brackets mark $\dot c$ as a vector, not a point, to keep vectors and p
 
 > [!remark] Remark: Why an Integral Curve Is an ODE
 > *(Not from lecture; added to answer how integral curves connect to ODEs.)* The definition is already an ODE, written without coordinates. In $(\ast)$ the unknown is the curve $c$; its derivative is set equal to something that depends on where $c$ currently is: the velocity at time $t$ is the arrow that $\mathbf{X}$ puts at the point where $c$ is at time $t$. The derivative of the unknown equals a known function of the unknown — that is an ODE. Proposition [[§67 Integral Curves#^prop-67-2|§67.2]] only unpacks it into components.
-> - *The simplest example.* On $\mathbb{R}$, $\mathbf{X} = x\, \frac{d}{dx}$: the equation is $\dot x = x$, so $x(t) = x_0 e^t$. The point runs away from $0$ faster and faster, because the arrows get longer further out.
+> - *The simplest example* is the field $x\, \frac{d}{dx}$ on $\mathbb{R}$, with the equation $\dot x = x$ (Example [[§67 Integral Curves#^ex-67-1|§67.1]] below).
 > - *Conversely*, every autonomous system $\dot x^i = f^i(x)$ with smooth $f^i$ on an open $U \subseteq \mathbb{R}^m$ is the system of the field $\sum_i f^i\, \partial/\partial x^i$: autonomous first-order systems on $U$ and vector fields on $U$ are the same thing. (“Autonomous”: the right-hand side does not depend on $t$, as the field does not change in time.)
-> - *Higher order.* $\ddot x = -x$ becomes, with $y = \dot x$, the first-order system $\dot x = y$, $\dot y = -x$, the field $y\, \partial_x - x\, \partial_y$ — minus the rotation field of Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]], whose integral curves it runs backwards in time. The harmonic oscillator is “follow this field in the phase plane”; likewise Hamilton's equations, for a time-independent Hamiltonian, say that the motion follows the integral curves of one vector field on phase space.
+> - *Higher order.* A higher-order equation becomes a first-order system once the lower derivatives are taken as new unknowns; the harmonic oscillator $\ddot x = -x$ becomes “follow this field in the phase plane” (Example [[§67 Integral Curves#^ex-67-2|§67.2]] below). Likewise Hamilton's equations, for a time-independent Hamiltonian, say that the motion follows the integral curves of one vector field on phase space.
 > - *Local versus global.* On a manifold a chart turns $(\ast)$ into such a system, so the local questions — existence, uniqueness, smooth dependence on the starting point — reduce to ODE theory in $\mathbb{R}^m$; this is why Theorem [[§68 Local Existence and Uniqueness#^thm-68-1|§68.1]] is quoted in its Euclidean form. What one chart cannot settle is how far a solution continues: solutions in different charts must be patched together, and a solution may escape in finite time, which already happens in $\mathbb{R}^2$ (Example [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]]). That is the content of Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]].
 
 ^rem-67-1
+
+> [!example] Example §67.1: The Field $x\,d/dx$ on the Line
+> *(Not from lecture.)* On $\mathbb{R}$, let $\mathbf{X} = x\, \frac{d}{dx}$. The integral curve starting at $x_0$ is $x(t) = x_0 e^t$, $t \in \mathbb{R}$. The point runs away from $0$ faster and faster, because the arrows get longer further out.
+>
+> *The equation.* By Proposition [[§67 Integral Curves#^prop-67-2|§67.2]], with $m = 1$ and $f^1(x) = x$, a curve $t \mapsto x(t)$ is an integral curve of $\mathbf{X}$ if and only if $\dot x = x$.
+>
+> *A solution.* $x(t) = x_0e^t$ has $\dot x(t) = x_0e^t = x(t)$ and $x(0) = x_0$.
+>
+> *The only one.* If $x$ solves $\dot x = x$ on an interval containing $0$ with $x(0) = x_0$, then $\frac{d}{dt}\big(e^{-t}x(t)\big) = e^{-t}(\dot x(t) - x(t)) = 0$, so $e^{-t}x(t) = x_0$, that is, $x(t) = x_0e^t$.
+>
+> *Running away.* For $x_0 \neq 0$ the speed is $|\dot x(t)| = |x(t)| = |x_0|e^t$: it equals the distance from $0$, which grows exponentially. For $x_0 = 0$ the curve is constant, at the zero of $\mathbf{X}$.
+
+^ex-67-1
+
+> [!example] Example §67.2: The Harmonic Oscillator as a Vector Field
+> *(Not from lecture.)* The equation $\ddot x = -x$ becomes, with $y = \dot x$, the first-order system $\dot x = y$, $\dot y = -x$, the system of the field $\mathbf{Y} = y\, \partial_x - x\, \partial_y$ on $\mathbb{R}^2$. Its integral curves are the circles about the origin, run clockwise, and the constant curve at the origin: $\mathbf{Y}$ is minus the rotation field of Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]] (later), whose integral curves it runs backwards in time.
+>
+> *The reduction.* If $\ddot x = -x$, put $y = \dot x$; then $\dot x = y$ and $\dot y = \ddot x = -x$. Conversely, if $(x, y)$ solves the system, then $\ddot x = \dot y = -x$. By Proposition [[§67 Integral Curves#^prop-67-2|§67.2]], with $f^1(x, y) = y$ and $f^2(x, y) = -x$, the system says exactly that $t \mapsto (x(t), y(t))$ is an integral curve of $\mathbf{Y}$.
+>
+> *The integral curves.* The curve $c(t) = \big(x_0\cos t + y_0\sin t,\ -x_0\sin t + y_0\cos t\big)$ starts at $(x_0, y_0)$, and $\dot x = -x_0\sin t + y_0\cos t = y$, $\dot y = -x_0\cos t - y_0\sin t = -x$; so it is the integral curve starting at $(x_0, y_0)$. It is the point $(x_0, y_0)$ rotated by the angle $-t$, so $x(t)^2 + y(t)^2 = x_0^2 + y_0^2$: for $(x_0, y_0) \neq 0$ it runs around the circle of that radius clockwise, and for $(x_0, y_0) = 0$ it is constant.
+>
+> *Minus the rotation field.* $\mathbf{Y} = -\big(-y\, \partial_x + x\, \partial_y\big)$, and $c(t)$ is the rotation of $(x_0, y_0)$ by $-t$, the integral curve of the rotation field through $(x_0, y_0)$ at time $-t$.
+
+^ex-67-2
 
 *Lecture 24 recalled the definition with the velocity written as $\dot c(t) = c_{\ast t}(d/dt)$, the derivation at $c(t)$ defined by $c$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]), and gave the velocity curve a name: every curve $c : I \to M$ has a natural lift to the tangent bundle.*
 
@@ -138,10 +162,10 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 
 *(Not from lecture; figure added.)* Proposition [[§67 Integral Curves#^prop-67-3|§67.3]] in the tangent bundle, for $M = \mathbb{R}$, where $TM = \mathbb{R} \times \mathbb{R}$ is a plane: the base point horizontally, and the fibre $T_xM$, the velocities at $x$, as the vertical line over $x$. A vector field is a section $x \mapsto (x, \mathbf{X}_x)$, so its image is a graph, which meets each fibre exactly once, and the lift of an integral curve lies on it ($\tilde c = \mathbf{X} \circ c$, Proposition [[§67 Integral Curves#^prop-67-1|§67.1]]). The curve $c(t) = t^2 - 1$ passes through $0$ at $t = -1$, moving left, and at $t = 1$, moving right. Its lift $\tilde c(t) = (t^2 - 1, 2t)$ meets the fibre $T_0M$ in the two points $(0, -2)$ and $(0, 2)$, and no graph contains both. So $c$ is an integral curve of no vector field.
 
-> [!example] Example §67.1: A Curve with a Loop
+> [!example] Example §67.3: A Curve with a Loop
 > Let $c : I \to M$ pass through the same point at two times, $c(t_1) = c(t_2)$, with different velocities $\dot c(t_1) \neq \dot c(t_2)$, as in the figure. Its lift $\tilde c$ is still a well-defined map: it records the time, not just the point. But $c$ is an integral curve of no vector field (Proposition [[§67 Integral Curves#^prop-67-3|§67.3]]).
 
-^ex-67-1
+^ex-67-3
 
 ![[m591-67-4.svg]]
 

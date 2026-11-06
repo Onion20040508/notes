@@ -7,8 +7,8 @@ tags: [chapter, differentiable-manifolds]
 # 8 Vector Fields and Lie Groups
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (3), [[· 3 Smooth Structures|3 Smooth Structures]] (39), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (74), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (10), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (1), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (11), [[· 9 Sard's Theorem|9 Sard's Theorem]] (1)
-**Used by:** [[· 9 Sard's Theorem|9 Sard's Theorem]] (3), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (18)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (1), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (3), [[· 3 Smooth Structures|3 Smooth Structures]] (39), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (75), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (10), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (1), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (11), [[· 9 Sard's Theorem|9 Sard's Theorem]] (1)
+**Used by:** [[· 9 Sard's Theorem|9 Sard's Theorem]] (3), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (19)
 **Builds on (other subjects):** [[Linear Algebra]] (2), [[Topology]] (2), [[Multivariable Analysis]] (2)
 
 ## Sections
@@ -24,7 +24,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§56 Vector Fields#^prop-56-4|Proposition §56.4: Bump Functions Exist]]: 68 later results
-- [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]: 59 later results
-- [[§56 Vector Fields#^prop-56-2|Proposition §56.2: The Space of Vector Fields Is a Real Vector Space]]: 57 later results
-- [[§56 Vector Fields#^lem-56-3|Lemma §56.3: A Vector Field Is a Derivation]]: 55 later results
+- [[§56 Vector Fields#^prop-56-4|Proposition §56.4: Bump Functions Exist]]: 72 later results
+- [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]: 61 later results
+- [[§56 Vector Fields#^prop-56-2|Proposition §56.2: The Space of Vector Fields Is a Real Vector Space]]: 59 later results
+- [[§56 Vector Fields#^lem-56-3|Lemma §56.3: A Vector Field Is a Derivation]]: 57 later results

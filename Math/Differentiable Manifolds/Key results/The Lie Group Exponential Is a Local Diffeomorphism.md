@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|Corollary §31.5: Velocity of a Composite — Computing Differentials by Curves]]
-- [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|Theorem §31.6: The Tangent Space of a Product]]
+- [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|Theorem §31.7: The Tangent Space of a Product]]
 - [[§35 Local Diffeomorphisms#^thm-35-2|Theorem §35.2: Local Diffeomorphisms Are Detected by the Differential]]
 - [[§56 Vector Fields#^lem-56-8|Lemma §56.8: A Smoothness Criterion for Vector Fields]]
 - [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Definition §60.1: Lie Group]]

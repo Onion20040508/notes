@@ -209,7 +209,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 *Uses:* [[§57 Differential Operators#^prop-57-3|§57.3]], [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§57 Differential Operators#^prop-57-1|§57.1]], [[§57 Differential Operators#^prop-57-2|§57.2]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§56 Vector Fields#^prop-56-7|§56.7]]
 
 > [!theorem] Lemma §57.5: Coordinate Derivations on a Chart
-> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart and $\partial_i = \partial/\partial x^i : C^\infty(U) \to C^\infty(U)$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]).
+> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart and $\partial_i = \partial/\partial x^i : C^\infty(U) \to C^\infty(U)$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]).
 >
 > 1. Each $\partial_i$ is a derivation of $C^\infty(U)$: $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$.
 > 2. The $\partial_i$ commute: $\partial_i \circ \partial_j = \partial_j \circ \partial_i$. Hence $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$ for every multi-index $\alpha$ (Definition [[§55 Morse Functions and the Zero Section#^def-55-3|§55.3]]).
@@ -251,7 +251,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 >
 > the sums over $|\alpha| \le j'$. The last step uses $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$, which reorders partial derivatives (Lemma [[§57 Differential Operators#^lem-57-5|§57.5]]). The coefficients $\mathbf{X}^i\, \partial_i b_\alpha$ and $\mathbf{X}^i\, b_\alpha$ are smooth on $U$ ($\mathbf{X}^i$ by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]), and the multi-indices occurring have $|\alpha| \le j'$ and $|\alpha + e_i| = |\alpha| + 1 \le j' + 1$. Collecting the terms with the same multi-index, the right side has form $j' + 1 = j$.
 >
-> *Uniqueness.* Suppose $\sum_{|\alpha| \le k} c_\alpha\, \partial^\alpha (f|_U) = 0$ for all $f \in C^\infty(M)$, with $c_\alpha \in C^\infty(U)$; we show every $c_\beta = 0$. Fix $p \in U$, let $c = (x^1(p), \ldots, x^m(p)) = \varphi(p)$, and fix $\beta$ with $|\beta| \le k$. The function $(x - c)^\beta/\beta!$ is smooth on $U$, so by Corollary [[§56 Vector Fields#^cor-56-5|§56.5]] there is $f_\beta \in C^\infty(M)$ that agrees with it on an open $W$ with $p \in W \subseteq U$. Partial derivatives on $U$ are computed from the coordinate representation on open subsets (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), so two functions that agree on $W$ have all their iterated partial derivatives equal on $W$; hence $\partial^\alpha (f_\beta|_U)(p) = \partial^\alpha\big((x - c)^\beta/\beta!\big)(p)$ for every $\alpha$. By Lemma [[§55 Morse Functions and the Zero Section#^lem-55-11|§55.11]], $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. Applying the hypothesis to $f = f_\beta$ and evaluating at $p$,
+> *Uniqueness.* Suppose $\sum_{|\alpha| \le k} c_\alpha\, \partial^\alpha (f|_U) = 0$ for all $f \in C^\infty(M)$, with $c_\alpha \in C^\infty(U)$; we show every $c_\beta = 0$. Fix $p \in U$, let $c = (x^1(p), \ldots, x^m(p)) = \varphi(p)$, and fix $\beta$ with $|\beta| \le k$. The function $(x - c)^\beta/\beta!$ is smooth on $U$, so by Corollary [[§56 Vector Fields#^cor-56-5|§56.5]] there is $f_\beta \in C^\infty(M)$ that agrees with it on an open $W$ with $p \in W \subseteq U$. Partial derivatives on $U$ are computed from the coordinate representation on open subsets (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), so two functions that agree on $W$ have all their iterated partial derivatives equal on $W$; hence $\partial^\alpha (f_\beta|_U)(p) = \partial^\alpha\big((x - c)^\beta/\beta!\big)(p)$ for every $\alpha$. By Lemma [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]], $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. Applying the hypothesis to $f = f_\beta$ and evaluating at $p$,
 >
 > $$
 > 0 = \sum_{|\alpha| \le k} c_\alpha(p)\, \partial^\alpha (f_\beta|_U)(p) = \sum_{|\alpha| \le k} c_\alpha(p)\, \partial^\alpha\Big(\frac{(x - c)^\beta}{\beta!}\Big)(p) = c_\beta(p)\, \frac{\beta!}{\beta!} = c_\beta(p) .
@@ -261,7 +261,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 
 ^pf-57-6
 
-*Uses:* [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§55 Morse Functions and the Zero Section#^def-55-3|Def. §55.3]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§56 Vector Fields#^cor-56-5|§56.5]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§57 Differential Operators#^lem-57-5|§57.5]], [[§55 Morse Functions and the Zero Section#^lem-55-11|§55.11]]
+*Uses:* [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§55 Morse Functions and the Zero Section#^def-55-3|Def. §55.3]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§56 Vector Fields#^cor-56-5|§56.5]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§57 Differential Operators#^lem-57-5|§57.5]], [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]]
 
 > [!theorem] Corollary §57.7: Differential Operators on Euclidean Space
 > On $\mathbb{R}^m$, with its standard coordinates and $\partial_i = D_{\partial/\partial x^i}$,
@@ -299,17 +299,30 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 > - The Laplacian $\Delta = \sum_i \partial_i^2$, an operator of order $2$ in $\mathrm{Diff}(\mathbb{R}^m)$: [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-28-3|Multivariable Analysis, Definition §28.3]].
 > - The same multi-index derivatives $\partial^\alpha$ on $C_c^\infty(\Omega)$ define the Sobolev norms of 556: [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3|556 Example §23.3]], [[§33 Sobolev Spaces and Weak Derivatives|556 §33]].
 
-> [!remark] Remark: Differential Operators Are Local
-> Every differential operator is a local operator ([[§56 Vector Fields#^def-56-6|Definition §56.6]]). *(Stated in Lecture 15; the reason is filled in.)* The generators are local: $(m_g f)(p) = g(p) f(p)$ depends only on $f(p)$, and $(D_\mathbf{X} f)(p) = \mathbf{X}_p[f]$ depends only on the germ of $f$ at $p$, because $\mathbf{X}_p$ is a derivation at $p$, acting on germs ([[§28 Derivations and the Abstract Tangent Space#^def-28-1|Definition §28.1]]). Sums and composites of local operators are local: if $f|_U = g|_U$ then $(Pf)|_U = (Pg)|_U$, and applying $Q$ gives $(QPf)|_U = (QPg)|_U$.
+> [!theorem] Lemma §57.8: Differential Operators Are Local
+> Every differential operator (Definition [[§57 Differential Operators#^def-57-2|§57.2]]) is a local operator (Definition [[§56 Vector Fields#^def-56-6|§56.6]]).
 
-^rem-57-1
+^lem-57-8
 
-> [!theorem] Theorem §57.8: Local Operators Are Differential Operators
-> Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. Then $P$ is a differential operator near each point: every $p \in M$ has a chart neighbourhood $U$ on which $(Pf)|_U = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha (f|_U)$ for all $f \in C^\infty(M)$, for some $k$ and some $a_\alpha \in C^\infty(U)$ — the form of Proposition [[§57 Differential Operators#^prop-57-6|§57.6]]. Conversely, every differential operator is local (the remark *[[§57 Differential Operators#^rem-57-1|Differential Operators Are Local]]* in [[§57 Differential Operators|§57]]).
+> [!proof]+ Proof
+> *(Stated in Lecture 15; the reason is filled in.)* Let $U \subseteq M$ be open and $f, g \in C^\infty(M)$ with $f|_U = g|_U$.
+>
+> *The generators are local.* $(m_h f)(p) = h(p) f(p)$ depends only on $f(p)$, so $(m_h f)|_U = (m_h g)|_U$. And $(D_\mathbf{X} f)(p) = \mathbf{X}_p[f]$ depends only on the germ of $f$ at $p$, because $\mathbf{X}_p$ is a derivation at $p$, acting on germs (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]); for $p \in U$, $f$ and $g$ agree on the neighbourhood $U$ of $p$, so they have the same germ at $p$, and $(D_\mathbf{X} f)(p) = (D_\mathbf{X} g)(p)$.
+>
+> *Sums and composites of local operators are local.* Let $P$, $Q$ be local. Then $(Pf)|_U = (Pg)|_U$ and $(Qf)|_U = (Qg)|_U$, so $((P + Q)f)|_U = ((P + Q)g)|_U$. Applying the locality of $Q$ to the functions $Pf$ and $Pg$, which agree on $U$, gives $(QPf)|_U = (QPg)|_U$.
+>
+> A differential operator is a finite sum of finite composites of generators (Definition [[§57 Differential Operators#^def-57-2|§57.2]]), so by induction on the number of operations it is local.
 
-^thm-57-8
+^pf-57-8
+
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§57 Differential Operators#^def-57-2|Def. §57.2]]
+
+> [!theorem] Theorem §57.9: Local Operators Are Differential Operators
+> Let $P : C^\infty(M) \to C^\infty(M)$ be an $\mathbb{R}$-linear local operator. Then $P$ is a differential operator near each point: every $p \in M$ has a chart neighbourhood $U$ on which $(Pf)|_U = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha (f|_U)$ for all $f \in C^\infty(M)$, for some $k$ and some $a_\alpha \in C^\infty(U)$ — the form of Proposition [[§57 Differential Operators#^prop-57-6|§57.6]]. Conversely, every differential operator is local (Lemma [[§57 Differential Operators#^lem-57-8|§57.8]]).
+
+^thm-57-9
 
 > [!proof]+ Proof (not given in this course)
 > Stated without proof in Lecture 15, for information, with the remark that the converse is the easy direction. It is Peetre's theorem. The statement is local because on a non-compact $M$ the order $k$ need not be bounded as $p$ varies, and then $P$ is not a finite sum of composites on all of $M$.
 
-^pf-57-8
+^pf-57-9

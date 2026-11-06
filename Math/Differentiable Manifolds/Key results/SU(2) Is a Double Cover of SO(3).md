@@ -38,7 +38,7 @@ tags: [differentiable-manifolds, hub]
 - [[§10 Continuous Functions#^def-10-2|590 §10.2: Homeomorphism]]
 
 ## Used in (Differentiable Manifolds)
-- (not cited later in the course)
+- [[§48 SU(2) → SO(3)꞉ The Double Cover#^cor-48-5|Corollary §48.5: SU(2) → SO(3) Is a Fibration with Two-Point Fibre]]
 
 ## Connections
 - **How.** Identify $S^3$ with the unit quaternions and with $\mathrm{SU}(2)$ ([[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]]); conjugation on the imaginary quaternions $\cong \mathbb{R}^3$ gives a homomorphism onto $\mathrm{SO}(3)$ with kernel $\{\pm 1\}$ ([[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-1|§48.1]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-2|§48.2]]), and a homomorphism of Lie groups is a local diffeomorphism once its differential at the identity is invertible ([[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|§48.3]]).

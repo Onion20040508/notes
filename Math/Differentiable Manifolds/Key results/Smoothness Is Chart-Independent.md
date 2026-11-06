@@ -26,12 +26,13 @@ tags: [differentiable-manifolds, hub]
 - [[§19 Smooth Functions and Smooth Maps#^lem-19-3|Lemma §19.3: A Chart Mapped into a Given Chart]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-6|Proposition §19.6: Inclusions of and Maps into Open Subsets]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-8|Proposition §19.8: Transport of Smooth Structure]]
-- [[§19 Smooth Functions and Smooth Maps#^prop-19-11|Proposition §19.11: Projections and Slice Inclusions Are Smooth]]
+- [[§19 Smooth Functions and Smooth Maps#^prop-19-12|Proposition §19.12: Projections and Slice Inclusions Are Smooth]]
 - [[§20 Manifolds in Euclidean Space#^lem-20-3|Lemma §20.3: Smooth Maps into and out of Regular Level Sets]]
 - [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|Proposition §22.2: A Vector Space Is a Smooth Manifold]]
+- [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-1|Lemma §23.1: The Smooth Structure on O(n) Does Not Depend on the Linear Coordinates]]
 - [[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1: Partial Derivatives Upstairs and Downstairs]]
-- [[§30 The Differential in Coordinates#^prop-30-8|Proposition §30.8: Regular Values Inside One Chart]]
-- [[§30 The Differential in Coordinates#^prop-30-10|Proposition §30.10: Maps with Zero Differential Are Constant]]
+- [[§30 The Differential in Coordinates#^prop-30-9|Proposition §30.9: Regular Values Inside One Chart]]
+- [[§30 The Differential in Coordinates#^prop-30-11|Proposition §30.11: Maps with Zero Differential Are Constant]]
 - [[§35 Local Diffeomorphisms#^thm-35-2|Theorem §35.2: Local Diffeomorphisms Are Detected by the Differential]]
 - [[§35 Local Diffeomorphisms#^cor-35-3|Corollary §35.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms]]
 - [[§36 Submersions#^lem-36-5|Lemma §36.5: Diffeomorphisms onto Open Sets Are Charts]]
@@ -43,7 +44,7 @@ tags: [differentiable-manifolds, hub]
 - [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]
 
 ## Connections
-- **Used for.** Transport of smooth structure ([[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]), smoothness of projections and slice inclusions ([[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]), diffeomorphisms onto open sets being charts ([[§36 Submersions#^lem-36-5|§36.5]], the step that finishes the [[Submersion Normal Form]]) and smooth maps into submanifolds ([[§37 Regular Submanifolds#^lem-37-5|§37.5]]).
-- **Why compatibility is needed.** The proof pays one transition function, which is smooth because both charts lie in one maximal atlas ([[Unique Maximal Atlas]], [[§17 Differentiable Structures#^thm-17-1|§17.1]]). Charts from different structures give different answers: with ℝ̃ the line with the chart ∛x, the identity ℝ → ℝ̃ is not smooth, while x ↦ x³ is a diffeomorphism ([[§19 Smooth Functions and Smooth Maps#^ex-19-1|Ex. §19.1]]).
+- **Used for.** Transport of smooth structure ([[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]]), smoothness of projections and slice inclusions ([[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]), diffeomorphisms onto open sets being charts ([[§36 Submersions#^lem-36-5|§36.5]], the step that finishes the [[Submersion Normal Form]]) and smooth maps into submanifolds ([[§37 Regular Submanifolds#^lem-37-5|§37.5]]).
+- **Why compatibility is needed.** The proof pays one transition function, which is smooth because both charts lie in one maximal atlas ([[Unique Maximal Atlas]], [[§17 Differentiable Structures#^thm-17-2|§17.2]]). Charts from different structures give different answers: with ℝ̃ the line with the chart ∛x, the identity ℝ → ℝ̃ is not smooth, while x ↦ x³ is a diffeomorphism ([[§19 Smooth Functions and Smooth Maps#^ex-19-1|Ex. §19.1]]).
 - **Same idea elsewhere.** The Euclidean core is the 452 [[Multivariable Chain Rule]]: a smooth map composed with a diffeomorphism is smooth. Between vector spaces the same check is independence of linear coordinates ([[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|§22.1]]).
 - **Coming later in the course.** Every later construction made in charts, from vector fields to integrals of differential forms, needs the same independence check; for integrals it comes from the [[Change of Variables Formula (multiple integrals)|change-of-variables formula]].

@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Its proof uses
 - [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]
-- [[§17 Differentiable Structures#^lem-17-6|Lemma §17.6: Restricting and Recomposing Smooth Charts]]
+- [[§17 Differentiable Structures#^lem-17-7|Lemma §17.7: Restricting and Recomposing Smooth Charts]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-2|Proposition §19.2: Smoothness of a Map Does Not Depend on the Charts]]
 - [[§19 Smooth Functions and Smooth Maps#^lem-19-3|Lemma §19.3: A Chart Mapped into a Given Chart]]
 - [[§19 Smooth Functions and Smooth Maps#^prop-19-4|Proposition §19.4: The Two Notions of Diffeomorphism Agree]]

@@ -11,8 +11,8 @@ Real projective space $\mathbb{RP}^n = S^n/\{\pm 1\}$ and complex projective spa
 - $\mathbb{CP}^n$ is compact ([[§9 Complex Projective Space#^prop-9-2|§9]])
 - $\mathbb{CP}^n$ as the space of complex lines, $(\mathbb{C}^{n+1} \setminus \{0\})/\mathbb{C}^\times$ ([[§9 Complex Projective Space#^prop-9-3|§9]])
 - Why the origin must be removed before dividing by $\mathbb{C}^\times$ ([[§9 Complex Projective Space#^ex-9-1|§9]])
-- $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ is an orbit space ([[§13 Group Actions and Orbit Spaces#^ex-13-3|§13]])
-- Hausdorffness of $\mathbb{CP}^n$ as a case of the compact-group criterion ([[§13 Group Actions and Orbit Spaces#^rem-13-9|§13]])
+- $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ is an orbit space ([[§13 Group Actions and Orbit Spaces#^ex-13-5|§13]])
+- Hausdorffness of $\mathbb{CP}^n$ as a case of the compact-group criterion (Example [[§13 Group Actions and Orbit Spaces#^ex-13-10|§13.10]])
 - $\mathbb{RP}^{n-1}$ is the Grassmannian of lines $\mathrm{Gr}_1(\mathbb{R}^n)$ ([[§15 The Topology of G∕H and Real Grassmannians#^def-15-3|§15]])
 - The index: $\mathrm{Gr}_1(\mathbb{R}^n) = \mathbb{RP}^{n-1} \cong S^{n-1}/\{\pm I\}$ ([[§15 The Topology of G∕H and Real Grassmannians#^rem-15-3|§15]])
 - Homogeneous coordinates $[z_0 : \cdots : z_n]$ ([[§18 Projective Spaces as Smooth Manifolds#^def-18-1|§18]])
@@ -21,7 +21,7 @@ Real projective space $\mathbb{RP}^n = S^n/\{\pm 1\}$ and complex projective spa
 - The standard atlas is smooth, so $\mathbb{CP}^n$ is a compact $2n$-manifold ([[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18]])
 - $\mathbb{CP}^n$ is a complex manifold of complex dimension $n$ ([[§18 Projective Spaces as Smooth Manifolds#^cor-18-3|§18]])
 - $\mathbb{CP}^1$ is the Riemann sphere $S^2$ ([[§18 Projective Spaces as Smooth Manifolds#^prop-18-4|§18]])
-- For $n = 1$ the transition $w \mapsto 1/w$ is the complex stereographic transition ([[§18 Projective Spaces as Smooth Manifolds#^rem-18-2|§18]])
+- For $n = 1$ the transition $w \mapsto 1/w$ is the complex stereographic transition (Example [[§18 Projective Spaces as Smooth Manifolds#^ex-18-1|§18.1]])
 - $\mathbb{RP}^n$ is a compact smooth $n$-manifold with the same kind of atlas ([[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18]])
 - The quotient and Grassmannian topologies on $\mathbb{RP}^n$ agree, and $\mathbb{RP}^1 \cong S^1$ ([[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|§18]])
 - Dimension check: $\mathbb{CP}^n = \mathrm{U}(n+1)/(\mathrm{U}(1) \times \mathrm{U}(n))$ has dimension $2n$ ([[§25 The Geometric Tangent Space#^rem-25-9|§25]])
@@ -45,10 +45,10 @@ Real projective space $\mathbb{RP}^n = S^n/\{\pm 1\}$ and complex projective spa
 ![[§9 Complex Projective Space#^ex-9-1]]
 
 ## $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ is an orbit space
-![[§13 Group Actions and Orbit Spaces#^ex-13-3]]
+![[§13 Group Actions and Orbit Spaces#^ex-13-5]]
 
 ## Hausdorffness of $\mathbb{CP}^n$ as a case of the compact-group criterion
-![[§13 Group Actions and Orbit Spaces#^rem-13-9]]
+![[§13 Group Actions and Orbit Spaces#^ex-13-10]]
 
 ## $\mathbb{RP}^{n-1}$ is the Grassmannian of lines $\mathrm{Gr}_1(\mathbb{R}^n)$
 ![[§15 The Topology of G∕H and Real Grassmannians#^def-15-3]]
@@ -75,7 +75,7 @@ Real projective space $\mathbb{RP}^n = S^n/\{\pm 1\}$ and complex projective spa
 ![[§18 Projective Spaces as Smooth Manifolds#^prop-18-4]]
 
 ## For $n = 1$ the transition $w \mapsto 1/w$ is the complex stereographic transition
-![[§18 Projective Spaces as Smooth Manifolds#^rem-18-2]]
+![[§18 Projective Spaces as Smooth Manifolds#^ex-18-1]]
 
 ## $\mathbb{RP}^n$ is a compact smooth $n$-manifold with the same kind of atlas
 ![[§18 Projective Spaces as Smooth Manifolds#^cor-18-5]]

@@ -19,7 +19,7 @@ tags: [multivariable-analysis, hub]
 - (not cited later in the course)
 
 ## Used in (Differentiable Manifolds)
-- [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1: Implicit Function Theorem — Lee Theorem C.40]]
+- [[§7 The Regular Value Theorem#^thm-7-2|Theorem §7.2: Implicit Function Theorem — Lee Theorem C.40]]
 - [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]
 - [[§47 The Unit Quaternions and SU(2)#^prop-47-3|Proposition §47.3: Hyperspherical Charts Are Adapted to S³]]
 - [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|Theorem §48.4: The Double Cover SU(2) → SO(3)]]

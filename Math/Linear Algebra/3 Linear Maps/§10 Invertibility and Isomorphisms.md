@@ -121,7 +121,7 @@ tags: [linear-algebra]
 > - For square matrices: a one-sided inverse is automatically two-sided. Fails in infinite dimensions (shift operators).
 > - In a group a one-sided inverse is automatically two-sided, [[§2 First Consequences of the Axioms#^prop-2-6|493 Prop. §2.6]]; here the reason is dimension instead, since L(V) is not a group.
 > - The failure in infinite dimensions: the right shift on ℓ² has a left inverse but is not onto, [[§28 Existence of Orthonormal Bases and Separability#^ex-28-1|556 Ex. §28.1]].
-> - Used in 591 to define the unitary group by one equation: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|591 Lemma §23.3]], proved there with determinants.
+> - Used in 591 to define the unitary group by one equation: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|591 Lemma §23.4]], proved there with determinants.
 > - Matrix version: [[§16 Characterizations of Invertible Matrices#^cor-16-2|235 Cor. §16.2]] (a one-sided inverse of a square matrix is an inverse).
 
 > [!definition] Definition 3.69: Isomorphism, isomorphic

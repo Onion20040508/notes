@@ -37,7 +37,7 @@ tags: [linear-algebra, hub]
 - [[§25 The Geometric Tangent Space#^lem-25-2|Lemma §25.2: The Geometric Tangent Space of a Graph]]
 - [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]
 - [[§25 The Geometric Tangent Space#^thm-25-7|Theorem §25.7: Dimension of the Geometric Tangent Space]]
-- [[§26 Transversality#^prop-26-4|Proposition §26.4: Transverse Intersections]]
+- [[§26 Transversality#^prop-26-5|Proposition §26.5: Transverse Intersections]]
 - [[§36 Submersions#^prop-36-1|Proposition §36.1: Dimension Constraints]]
 
 ## Connections

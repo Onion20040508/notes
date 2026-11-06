@@ -173,9 +173,14 @@ tags: [differentiable-manifolds, math591]
 > - In LADR the canonical $V \cong V''$ is mentioned in the remark after [[§12 Duality#^ladr-3-111|LADR 3.111]] (the non-canonical $V \cong V'$ goes through [[Dimension shows whether vector spaces are isomorphic|LADR 3.70]]).
 
 > [!remark] Remark
-> A finite-dimensional $V$ is also isomorphic to $V^{\ast}$, for instance by $e_i \mapsto \varepsilon^i$, but that isomorphism depends on the basis: change the basis and it changes. $V$ and $V^{\ast \ast}$ are identified *canonically*. This is why tangent vectors and covectors must be kept apart, as [[§32 The Cotangent Space#^def-32-4|Lecture 10]] did with $T_pM$ and $T_p^{\ast}M$, while the dual of $T_p^{\ast}M$ may be silently identified with $T_pM$.
+> A finite-dimensional $V$ is also isomorphic to $V^{\ast}$, but only through a choice of basis (Example [[§21 Linear Algebra Toolkit#^ex-21-1|§21.1]]). $V$ and $V^{\ast \ast}$ are identified *canonically*. This is why tangent vectors and covectors must be kept apart, as [[§32 The Cotangent Space#^def-32-4|Lecture 10]] did with $T_pM$ and $T_p^{\ast}M$, while the dual of $T_p^{\ast}M$ may be silently identified with $T_pM$.
 
 ^rem-21-1
+
+> [!example] Example §21.1: The Basis Isomorphism $V \cong V^{\ast}$ Is Not Canonical
+> A finite-dimensional $V$ is isomorphic to $V^{\ast}$, for instance by the linear map $e_i \mapsto \varepsilon^i$ sending a basis to its dual basis (Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]]); it is an isomorphism because it carries a basis to a basis (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]). But that isomorphism depends on the basis: change the basis and it changes. To see this, let $V \neq 0$ have basis $(e_1, \ldots, e_n)$ with dual basis $(\varepsilon^1, \ldots, \varepsilon^n)$, and replace $e_1$ by $e_1' = 2e_1$, keeping $e_i' = e_i$ for $i \ge 2$. The new dual basis is $\varepsilon'^1 = \tfrac12 \varepsilon^1$ and $\varepsilon'^i = \varepsilon^i$ for $i \ge 2$: indeed $\tfrac12 \varepsilon^1(2e_1) = 1$ and $\tfrac12 \varepsilon^1(e_j) = 0$ for $j \ge 2$, while for $i \ge 2$, $\varepsilon^i(2e_1) = 0$ and $\varepsilon^i(e_j) = \delta^i_j$. The first isomorphism sends $e_1 \mapsto \varepsilon^1$. The second sends $e_1' = 2e_1 \mapsto \varepsilon'^1 = \tfrac12 \varepsilon^1$, hence by linearity $e_1 \mapsto \tfrac14 \varepsilon^1$, which differs from $\varepsilon^1$ because $\varepsilon^1 \neq 0$. So the two bases give different isomorphisms $V \to V^{\ast}$.
+
+^ex-21-1
 
 > [!definition] Definition §21.3: Dual Map
 > The **dual map**, or **transpose**, of a linear map $A : V \to W$ is
@@ -302,9 +307,18 @@ A covector on $W$ becomes a covector on $V$ by first applying $A$; so the dual m
 > - Bilinear forms on a single space in LADR: [[§35 Bilinear Forms and Quadratic Forms|9A Bilinear Forms and Quadratic Forms]].
 
 > [!remark] Remark
-> Each half of non-degeneracy gives one inequality of dimensions, and it is the *pair* of inequalities that forces the isomorphisms; neither half suffices alone. The finiteness hypothesis cannot be dropped: for an infinite-dimensional $V$, the evaluation pairing $V \times V^{\ast} \to \mathbb{R}$, $(v, \lambda) \mapsto \lambda(v)$, is non-degenerate, but its map $B^\flat = \iota : V \to V^{\ast \ast}$ is injective without being onto. [[§34 The Cotangent Space from Germs#^thm-34-4|Assignment 3, Problem 3]] is exactly a pairing $T_pM \times I_p/I_p^2 \to \mathbb{R}$ to which this theorem applies.
+> Each half of non-degeneracy gives one inequality of dimensions, and it is the *pair* of inequalities that forces the isomorphisms; neither half suffices alone. The finiteness hypothesis cannot be dropped (Example [[§21 Linear Algebra Toolkit#^ex-21-2|§21.2]]). [[§34 The Cotangent Space from Germs#^thm-34-4|Assignment 3, Problem 3]] is exactly a pairing $T_pM \times I_p/I_p^2 \to \mathbb{R}$ to which this theorem applies.
 
 ^rem-21-2
+
+> [!example] Example §21.2: The Evaluation Pairing in Infinite Dimensions
+> The finiteness hypothesis of Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]] cannot be dropped: for an infinite-dimensional $V$, the evaluation pairing $B : V \times V^{\ast} \to \mathbb{R}$, $B(v, \lambda) = \lambda(v)$, is non-degenerate, but its map $B^\flat = \iota : V \to V^{\ast\ast}$ is injective without being onto. *(Argument filled in; not from lecture. It uses that every linearly independent subset of a vector space extends to a basis, which in infinite dimensions rests on Zorn's lemma.)*
+> - *$B^\flat = \iota$.* $B^\flat(v) = B(v, \cdot\,)$ is the functional $\lambda \mapsto \lambda(v)$, which is $\iota(v)$ as in Proposition [[§21 Linear Algebra Toolkit#^prop-21-3|§21.3]].
+> - *Right non-degenerate.* If $\lambda(v) = 0$ for all $v \in V$, then $\lambda = 0$ as a function on $V$.
+> - *Left non-degenerate, i.e. $\iota$ injective.* If $v \neq 0$, extend $\{v\}$ to a basis of $V$ and let $\lambda \in V^{\ast}$ be the linear functional with $\lambda(v) = 1$ and $\lambda = 0$ on the other basis vectors; then $B(v, \lambda) = 1 \neq 0$.
+> - *$\iota$ is not onto.* Choose a basis $(e_\alpha)_{\alpha \in A}$ of $V$; the index set $A$ is infinite. Let $\varepsilon^\alpha \in V^{\ast}$ be the coordinate functionals, $\varepsilon^\alpha(e_\beta) = \delta^\alpha_\beta$, and let $\sigma \in V^{\ast}$ be the functional with $\sigma(e_\alpha) = 1$ for every $\alpha$. The set $\{\varepsilon^\alpha\}_{\alpha \in A} \cup \{\sigma\}$ is linearly independent: the $\varepsilon^\alpha$ are (applying a vanishing finite combination $\sum_k c_k \varepsilon^{\alpha_k}$ to $e_{\alpha_j}$ gives $c_j = 0$), and $\sigma$ is not in their span, because a finite combination $\sum_{k=1}^m c_k \varepsilon^{\alpha_k}$ vanishes on $e_\beta$ for every $\beta \notin \{\alpha_1, \ldots, \alpha_m\}$ (such $\beta$ exist since $A$ is infinite), while $\sigma(e_\beta) = 1$. Extend this set to a basis of $V^{\ast}$, and let $\Phi \in V^{\ast\ast}$ be the linear functional with $\Phi(\sigma) = 1$ and $\Phi = 0$ on every other basis vector, in particular $\Phi(\varepsilon^\alpha) = 0$ for all $\alpha$. If $\Phi = \iota(v)$ with $v = \sum_\alpha v_\alpha e_\alpha$ (finitely many $v_\alpha \neq 0$), then $v_\alpha = \varepsilon^\alpha(v) = \Phi(\varepsilon^\alpha) = 0$ for every $\alpha$, so $v = 0$ and $\Phi = \iota(0) = 0$, contradicting $\Phi(\sigma) = 1$.
+
+^ex-21-2
 
 > [!definition] Definition §21.6: Quotient Vector Space
 > Let $W \subseteq V$ be a linear subspace. The **quotient space** $V/W$ is the set of cosets $v + W = \{v + w \mid w \in W\}$, with
@@ -416,7 +430,7 @@ The universal property as a triangle: a linear map that kills $W$ descends to $V
 
 > [!remark]- Connections
 > - Home: [[§11 Products and Quotients of Vector Spaces#^ladr-3-92|LADR 3.92 (dimension of a product)]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-93|LADR 3.93 (products and direct sums)]], [[Condition for a direct sum|LADR 1.45]].
-> - Used for the tangent space of a product: [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]].
+> - Used for the tangent space of a product: [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]].
 
 > [!remark] Remark: Direct Sum and Product
 > For two summands, or finitely many, the direct sum *is* the Cartesian product with componentwise operations. The two notions differ only for infinitely many summands: the product $\prod_\alpha V_\alpha$ contains all families $(v_\alpha)$, while the direct sum $\bigoplus_\alpha V_\alpha$ contains only those with finitely many nonzero entries.

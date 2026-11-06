@@ -6,7 +6,7 @@ tags: ["math591", "workhorse"]
 ---
 The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{SO}(n)$ and $\mathrm{U}(n)$, topologized as subsets of a Euclidean space of matrices, the running examples of the course. $\mathrm{GL}(n,\mathbb{R})$ is open in the space of matrices, and $\mathrm{SL}$, $\mathrm{O}$ and $\mathrm{U}$ are cut out by matrix equations ($\det g = 1$, $gg^{\mathsf T} = I$, $gg^* = I$), so the regular value theorem makes them manifolds, Jacobi's formula and the curve method compute the differentials, and the tangent spaces at the identity (trace-zero, skew-symmetric and skew-Hermitian matrices) are the future Lie algebras. Acting on $\mathbb{R}^n$, on spheres and on subspaces, they also produce the course's orbit spaces and homogeneous spaces. Their algebra (subgroups, the determinant homomorphism) is in [[Matrix groups GLₙ, SLₙ and O(n)]] (MATH 493). Its uses in MATH 591:
 
-- $\mathrm{U}(n)$ is not a holomorphic level set, so it must be treated over $\mathbb{R}$ ([[§7 The Regular Value Theorem#^rem-7-10|§7]])
+- $\mathrm{U}(n)$ is not a holomorphic level set, so it must be treated over $\mathbb{R}$ ([[§7 The Regular Value Theorem#^rem-7-9|§7]])
 - $\mathrm{GL}(n,\mathbb{R})$ is a topological group ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11]])
 - $\mathrm{GL}(n,\mathbb{R})$ has exactly two components ([[§16 The Classical Groups#^thm-16-2|§16]])
 - $g \in \mathrm{O}(n)$ iff $g^{\mathsf T}g = I$, so $\det g = \pm 1$ ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11]])
@@ -19,17 +19,17 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 - $\mathrm{SL}(n,\mathbb{R})$ is a manifold of dimension $n^2 - 1$ ([[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12]])
 - Dimension count: one equation for $\mathrm{SL}$, $\tfrac{n(n+1)}{2}$ for $\mathrm{O}(n)$ ([[§12 The Classical Groups Are Topological Manifolds#^rem-12-3|§12]])
 - Matrix groups act on column vectors ([[§13 Group Actions and Orbit Spaces#^ex-13-1|§13]])
-- $\mathrm{SO}(2)$ acting on $\mathbb{R}^2$: the orbit space is $[0, \infty)$ ([[§13 Group Actions and Orbit Spaces#^ex-13-4|§13]])
-- $\mathrm{SO}(3)$ acting on $\mathbb{R}^3$: the orbits are spheres ([[§13 Group Actions and Orbit Spaces#^ex-13-5|§13]])
+- $\mathrm{SO}(2)$ acting on $\mathbb{R}^2$: the orbit space is $[0, \infty)$ ([[§13 Group Actions and Orbit Spaces#^ex-13-6|§13]])
+- $\mathrm{SO}(3)$ acting on $\mathbb{R}^3$: the orbits are spheres ([[§13 Group Actions and Orbit Spaces#^ex-13-7|§13]])
 - The isotropy of the north pole under $\mathrm{SO}(3)$ is $\mathrm{SO}(2)$ ([[§14 Homogeneous Spaces#^ex-14-2|§14]])
-- $S^2 \cong \mathrm{SO}(3)/\mathrm{SO}(2)$ ([[§14 Homogeneous Spaces#^ex-14-3|§14]])
+- $S^2 \cong \mathrm{SO}(3)/\mathrm{SO}(2)$ ([[§14 Homogeneous Spaces#^ex-14-5|§14]])
 - Grassmannians are homogeneous spaces $\mathrm{O}(n)/(\mathrm{O}(k) \times \mathrm{O}(n-k))$ ([[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15]])
 - $\mathrm{O}(n)$ is a smooth manifold of dimension $\tfrac{n(n-1)}{2}$ ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23]])
-- For $\mathrm{O}(n)$, the kernel of the differential is $g \cdot \operatorname{Skew}(n,\mathbb{R})$ ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1|§23]])
-- Two readings of $\dim \mathrm{O}(n)$: level-set count and kernel count ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^rem-23-3|§23]])
-- $\mathrm{SO}(n)$ is a smooth manifold and $\mathrm{O}(n)$ is compact ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2|§23]])
-- $\mathrm{U}(n)$ is a smooth manifold of dimension $n^2$ ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23]])
-- $\mathrm{U}(n)$ is compact ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5|§23]])
+- For $\mathrm{O}(n)$, the kernel of the differential is $g \cdot \operatorname{Skew}(n,\mathbb{R})$ ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-2|§23]])
+- Two readings of $\dim \mathrm{O}(n)$: level-set count and kernel count ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^rem-23-2|§23]])
+- $\mathrm{SO}(n)$ is a smooth manifold and $\mathrm{O}(n)$ is compact ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3|§23]])
+- $\mathrm{U}(n)$ is a smooth manifold of dimension $n^2$ ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|§23]])
+- $\mathrm{U}(n)$ is compact ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-6|§23]])
 - $T_I\mathrm{O}(n) = \operatorname{Skew}(n,\mathbb{R})$ ([[§25 The Geometric Tangent Space#^ex-25-2|§25]])
 - $T_I\mathrm{U}(n) = \mathfrak{u}(n)$, the skew-Hermitian matrices ([[§25 The Geometric Tangent Space#^ex-25-3|§25]])
 - Summary: dimensions and tangent spaces of the classical groups ([[§25 The Geometric Tangent Space#^thm-25-5|§25]])
@@ -38,7 +38,7 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 - Dimension checks through homogeneous spaces of classical groups ([[§25 The Geometric Tangent Space#^rem-25-9|§25]])
 
 ## $\mathrm{U}(n)$ is not a holomorphic level set, so it must be treated over $\mathbb{R}$
-![[§7 The Regular Value Theorem#^rem-7-10]]
+![[§7 The Regular Value Theorem#^rem-7-9]]
 
 ## $\mathrm{GL}(n,\mathbb{R})$ is a topological group
 ![[§11 Topological Groups and Classical Matrix Groups#^prop-11-4]]
@@ -79,16 +79,16 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 ![[§13 Group Actions and Orbit Spaces#^ex-13-1]]
 
 ## $\mathrm{SO}(2)$ acting on $\mathbb{R}^2$: the orbit space is $[0, \infty)$
-![[§13 Group Actions and Orbit Spaces#^ex-13-4]]
+![[§13 Group Actions and Orbit Spaces#^ex-13-6]]
 
 ## $\mathrm{SO}(3)$ acting on $\mathbb{R}^3$: the orbits are spheres
-![[§13 Group Actions and Orbit Spaces#^ex-13-5]]
+![[§13 Group Actions and Orbit Spaces#^ex-13-7]]
 
 ## The isotropy of the north pole under $\mathrm{SO}(3)$ is $\mathrm{SO}(2)$
 ![[§14 Homogeneous Spaces#^ex-14-2]]
 
 ## $S^2 \cong \mathrm{SO}(3)/\mathrm{SO}(2)$
-![[§14 Homogeneous Spaces#^ex-14-3]]
+![[§14 Homogeneous Spaces#^ex-14-5]]
 
 ## Grassmannians are homogeneous spaces $\mathrm{O}(n)/(\mathrm{O}(k) \times \mathrm{O}(n-k))$
 ![[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8]]
@@ -97,19 +97,19 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 ![[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1]]
 
 ## For $\mathrm{O}(n)$, the kernel of the differential is $g \cdot \operatorname{Skew}(n,\mathbb{R})$
-![[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1]]
+![[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-2]]
 
 ## Two readings of $\dim \mathrm{O}(n)$: level-set count and kernel count
-![[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^rem-23-3]]
+![[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^rem-23-2]]
 
 ## $\mathrm{SO}(n)$ is a smooth manifold and $\mathrm{O}(n)$ is compact
-![[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-2]]
+![[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3]]
 
 ## $\mathrm{U}(n)$ is a smooth manifold of dimension $n^2$
-![[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2]]
+![[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3]]
 
 ## $\mathrm{U}(n)$ is compact
-![[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-5]]
+![[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-6]]
 
 ## $T_I\mathrm{O}(n) = \operatorname{Skew}(n,\mathbb{R})$
 ![[§25 The Geometric Tangent Space#^ex-25-2]]

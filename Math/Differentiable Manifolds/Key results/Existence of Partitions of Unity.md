@@ -15,15 +15,15 @@ tags: [differentiable-manifolds, hub]
 - [[§65 Partitions of Unity#^lem-65-1|Lemma §65.1: Closures and Unions in a Locally Finite Family]]
 - [[§65 Partitions of Unity#^def-65-2|Definition §65.2: Partition of Unity]]
 - [[§65 Partitions of Unity#^lem-65-2|Lemma §65.2: Locally Finite Sums of Smooth Functions Are Smooth]]
-- [[§65 Partitions of Unity#^def-65-4|Definition §65.4: Regular Coordinate Ball]]
+- [[§65 Partitions of Unity#^def-65-5|Definition §65.5: Regular Coordinate Ball]]
 - [[§65 Partitions of Unity#^thm-65-5|Theorem §65.5: Manifolds Are Paracompact]]
 - [[§65 Partitions of Unity#^lem-65-6|Lemma §65.6: Regular Coordinate Balls Form a Basis]]
 
 ## Used in (Differentiable Manifolds)
-- [[§65 Partitions of Unity#^prop-65-9|Proposition §65.9: Exhaustion Functions Exist]]
-- [[§66 The Whitney Embedding Theorem#^thm-66-8|Theorem §66.8: The Whitney Embedding and Immersion Theorems]]
+- [[§65 Partitions of Unity#^prop-65-8|Proposition §65.8: Bump Functions for Closed Sets]]
+- [[§65 Partitions of Unity#^prop-65-10|Proposition §65.10: Exhaustion Functions Exist]]
 
 ## Connections
 - Built from [[§65 Partitions of Unity#^lem-65-3|plateau functions]] (the bump-function construction of [[§56 Vector Fields#^prop-56-4|§56.4]]) and [[Manifolds Are Paracompact|paracompactness]].
-- Pays the "credit" of [[§66 The Whitney Embedding Theorem|§66]]: the cutoffs $\rho_i$ of [[§66 The Whitney Embedding Theorem#^prop-66-7|Proposition §66.7]] and the existence of exhaustion functions ([[§65 Partitions of Unity#^prop-65-9|Proposition §65.9]]).
+- Pays the "credit" of [[§66 The Whitney Embedding Theorem|§66]]: the cutoffs $\rho_i$ of [[§66 The Whitney Embedding Theorem#^prop-66-7|Proposition §66.7]] and the existence of exhaustion functions ([[§65 Partitions of Unity#^prop-65-10|Proposition §65.10]]).
 - Lee, *Introduction to Smooth Manifolds*, Theorem 2.23; used later to integrate forms.

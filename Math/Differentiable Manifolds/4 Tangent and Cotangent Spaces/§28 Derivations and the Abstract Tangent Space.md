@@ -7,10 +7,10 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§27 Germs]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§29 Coordinate Derivations and the Basis Theorem]] →
 
-*Stage: abstract — The abstract tangent space $T_pM$ as the derivations at $p$, and the differential $F_{\ast p}$ that pushes them forward. The two notions of tangent space agree wherever both exist (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]).*
+*Stage: abstract — The abstract tangent space $T_pM$ as the derivations at $p$, and the differential $F_{\ast p}$ that pushes them forward. The two notions of tangent space agree wherever both exist (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]).*
 
 > [!remark] Remark: Two Faces of a Tangent Vector
-> Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces. It is a *velocity*, the $\gamma'(0)$ of a curve — an element of the geometric tangent space $T^{\mathrm{geo}}_pM$, which is how [[§25 The Geometric Tangent Space#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]] met it; and it is a *derivation*, an operator that eats germs and returns numbers — an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). The same split will reappear for vector fields: as velocities attached to every point they *generate dynamics*, and as operators they lead to the *Lie derivative*.
+> Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces. It is a *velocity*, the $\gamma'(0)$ of a curve — an element of the geometric tangent space $T^{\mathrm{geo}}_pM$, which is how [[§25 The Geometric Tangent Space#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]] met it; and it is a *derivation*, an operator that eats germs and returns numbers — an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]). The same split will reappear for vector fields: as velocities attached to every point they *generate dynamics*, and as operators they lead to the *Lie derivative*.
 
 ^rem-28-1
 
@@ -83,7 +83,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]
 
 > [!remark]- Connections
-> - The geometric tangent space it replaces: [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]]; the two agree by [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]].
+> - The geometric tangent space it replaces: [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]]; the two agree by [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]].
 > - Its dual, the cotangent space: [[§32 The Cotangent Space#^def-32-4|Def. §32.4]]; all the $T_pM$ together: [[§51 The Tangent Bundle#^def-51-1|the tangent bundle, Def. §51.1]].
 
 > [!definition] Definition §28.3: The Ideal of Germs Vanishing at a Point
@@ -167,7 +167,7 @@ tags: [differentiable-manifolds, math591]
 Both parts were set as an exercise in Lecture 9; (2) is a direct consequence of the product rule and is part of a problem on Assignment 3, which introduces the ideal $I_p$ under that name. In commutative algebra the same ideal is written $\mathfrak{m}_p$, the notation used in the [[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|remark]] at the end of [[§29 Coordinate Derivations and the Basis Theorem|§29, Coordinate Derivations and the Basis Theorem]].
 
 > [!remark] Remark
-> These two are exactly what must be shown before the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|basis theorem]]. They are the entire reason the [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|Taylor–Hadamard]] expansion collapses: the constant term dies by (1), the quadratic remainder dies by (2), and only the linear term survives.
+> These two are exactly what must be shown before the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|basis theorem]]. They are the entire reason the [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|Taylor–Hadamard]] expansion collapses: the constant term dies by (1), the quadratic remainder dies by (2), and only the linear term survives.
 
 ^rem-28-2
 
@@ -419,7 +419,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 ^lem-28-8
 
 > [!proof]+ Proof
-> The inclusion $\iota$ is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]](1): in a chart of $M$ restricted to an open subset of $U$, a smooth chart by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1), its coordinate representation is the identity), and by Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-5|§28.5]] it pulls back the germ of $(f, V)$ to $\iota_p^{\ast}[f] = [f \circ \iota] = [f|_{U \cap V}]$: restriction of germs.
+> The inclusion $\iota$ is smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]](1): in a chart of $M$ restricted to an open subset of $U$, a smooth chart by Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1), its coordinate representation is the identity), and by Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-5|§28.5]] it pulls back the germ of $(f, V)$ to $\iota_p^{\ast}[f] = [f \circ \iota] = [f|_{U \cap V}]$: restriction of germs.
 >
 > *Algebra homomorphism.* Restriction is well defined and an algebra homomorphism by Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], and it is compatible with evaluation: $(\iota_p^{\ast}[f])(p) = f(p)$.
 >
@@ -437,7 +437,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 
 ^pf-28-8
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^prop-19-6|§19.6]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§28 Derivations and the Abstract Tangent Space#^def-28-5|Def. §28.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
 
 > [!theorem] Proposition §28.9: Charts Are Diffeomorphisms
 > If $(U, \varphi)$ is a smooth chart of $M$, then $\varphi : U \to \varphi(U)$ is a diffeomorphism. Consequently, for every $p \in U$,

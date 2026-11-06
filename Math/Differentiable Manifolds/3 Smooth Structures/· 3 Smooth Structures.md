@@ -10,7 +10,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (75), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (24), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (2), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (103), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (113), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (45), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (55), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (39), [[· 9 Sard's Theorem|9 Sard's Theorem]] (4)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (3), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (4), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (104), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (113), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (46), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (55), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (39), [[· 9 Sard's Theorem|9 Sard's Theorem]] (4), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (1)
 **Builds on (other subjects):** [[Linear Algebra]] (10), [[Topology]] (17), [[Multivariable Analysis]] (12)
 
 ## Sections
@@ -24,14 +24,14 @@ tags: [chapter, differentiable-manifolds]
 - [[§24 The Circle]]
 
 ## Central results
-- [[Unique Maximal Atlas]] (§17.5)
+- [[Unique Maximal Atlas]] (§17.6)
 - [[Smoothness Is Chart-Independent]] (§19.2)
 - [[Regular Level Sets Are Smooth Manifolds]] (§20.2)
 - [[Non-Degenerate Pairings]] (§21.5)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]: 326 later results
-- [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|Lemma §22.1: Independence of Coordinates]]: 318 later results
-- [[§17 Differentiable Structures#^prop-17-2|Proposition §17.2: Compatibility Is Not an Equivalence Relation]]: 317 later results
-- [[Unique Maximal Atlas|Theorem §17.5: Every Atlas Lies in a Unique Maximal Atlas]]: 317 later results
+- [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]: 343 later results
+- [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|Lemma §22.1: Independence of Coordinates]]: 335 later results
+- [[§17 Differentiable Structures#^prop-17-3|Proposition §17.3: Compatibility Is Not an Equivalence Relation]]: 334 later results
+- [[Unique Maximal Atlas|Theorem §17.6: Every Atlas Lies in a Unique Maximal Atlas]]: 334 later results

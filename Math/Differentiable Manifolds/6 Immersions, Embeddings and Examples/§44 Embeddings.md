@@ -78,11 +78,11 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 > F(M) \cap (V' \cap W) = \big(F(M) \cap W\big) \cap V' = F(U) \cap V' = F(U) = F(U) \cap W = \{\, x \in V' : y^{m+1}(x) = \cdots = y^n(x) = 0 \,\} \cap W .
 > $$
 >
-> The set $V' \cap W$ is open and contains $q \in F(U)$, and $(V' \cap W, \psi|_{V' \cap W})$ is a smooth chart (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1), $V' \cap W$ being an open subset of $V$). So $(V' \cap W, \psi)$ is an adapted chart at $q$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), and $F(M)$ is a submanifold of codimension $n - m$.
+> The set $V' \cap W$ is open and contains $q \in F(U)$, and $(V' \cap W, \psi|_{V' \cap W})$ is a smooth chart (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1), $V' \cap W$ being an open subset of $V$). So $(V' \cap W, \psi)$ is an adapted chart at $q$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), and $F(M)$ is a submanifold of codimension $n - m$.
 
 ^pf-44-1
 
-*Uses:* [[§43 Immersions#^cor-43-2|§43.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§44 Embeddings#^def-44-1|Def. §44.1]], [[§43 Immersions#^thm-43-1|§43.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§17 Differentiable Structures#^lem-17-6|§17.6]]
+*Uses:* [[§43 Immersions#^cor-43-2|§43.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§44 Embeddings#^def-44-1|Def. §44.1]], [[§43 Immersions#^thm-43-1|§43.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§17 Differentiable Structures#^lem-17-7|§17.7]]
 
 ![[m591-33-3.svg]]
 *The key step. $V$ may contain other parts of $F(M)$ (black) besides $F(U)$ (orange). Because $F(U)$ is open in $F(M)$, it is $W \cap F(M)$ for an open $W$ (shaded), and $W$ cuts the other parts away; $F(M)$ continues beyond $F(U)$ only by leaving $W$. For the irrational line no such $W$ exists, which is exactly the failure of openness.*
@@ -94,11 +94,33 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 **Transcription note.** Page 39 of the handwritten notes writes the target as $F(M) \cap V = \{0 = y^{n-m+1} = \cdots = y^m\}$; the vanishing coordinates are the last $n - m$ of them, $y^{m+1}, \ldots, y^n$, as the lecture said.
 
 > [!remark] Remark: Where Is Injectivity Used?
-> In lecture the use of injectivity was first located at the last equality. But $(*)$ concerns only $F(U)$, and the proof needs only that $F$ be an immersion ([[§43 Immersions#^def-43-1|Def. §43.1]]) which is open ([[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]]) onto its image. Covering-type maps show that a map need not be injective for its image to be a manifold: $\mathbb{R} \to S^1$, $t \mapsto (\cos t, \sin t)$ ([[§35 Local Diffeomorphisms#^ex-35-1|Ex. §35.1]]), or the two-to-one map $S^2 \to \mathbb{RP}^2$ ([[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|Ex. §46.1]]).
+> In lecture the use of injectivity was first located at the last equality. But $(*)$ concerns only $F(U)$, and the proof needs only that $F$ be an immersion ([[§43 Immersions#^def-43-1|Def. §43.1]]) which is open ([[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]]) onto its image. Covering-type maps show that a map need not be injective for its image to be a manifold (Examples [[§44 Embeddings#^ex-44-1|§44.1]] and [[§44 Embeddings#^ex-44-2|§44.2]] below) ([[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|Ex. §46.1]]).
 >
 > *The conclusion, confirmed in Uribe's follow-up email.* The proof given shows that for an immersion that is open as a map onto its image (so for all $U$ open in $M$, $F(U)$ is open in $F(M)$), $F(M)$ is a submanifold; the map $F$ does not have to be injective. The proof uses exactly two things: the normal form (the immersion hypothesis), and that $F(U)$ is open in $F(M)$ for the $U$ of the normal form; with the completion via [[§43 Immersions#^cor-43-2|Corollary §43.2]] nothing else enters. Injectivity belongs to the *idea* of an embedding — an isomorphism between $M$ and its image ([[§44 Embeddings#^cor-44-3|Corollary §44.3]]) — not to this proof. Immersions that are open maps onto their images form an unusual class of maps.
 
 ^rem-44-1
+
+> [!example] Example §44.1: A Non-Injective Map onto the Circle
+> The map $F : \mathbb{R} \to \mathbb{R}^2$, $F(t) = (\cos t, \sin t)$, is not injective, but its image $S^1$ is a regular submanifold of $\mathbb{R}^2$.
+>
+> *Not injective.* $F(0) = (1, 0) = F(2\pi)$.
+>
+> *The image is $S^1$.* $\cos^2 t + \sin^2 t = 1$, so $F(\mathbb{R}) \subseteq S^1$; and every point of $S^1$ is $(\cos t, \sin t)$ for some $t$, its polar angle, so $F(\mathbb{R}) = S^1$.
+>
+> *$S^1$ is a regular submanifold.* $S^1 = g^{-1}(1)$ for $g(x, y) = x^2 + y^2$, and $dg = 2x\, dx + 2y\, dy$ vanishes only at the origin, which is not on $S^1$; so $1$ is a regular value of $g$, and $S^1$ is a regular submanifold of $\mathbb{R}^2$ of codimension $1$ by Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]].
+>
+> $F$ is moreover an immersion ($F'(t) = (-\sin t, \cos t) \neq 0$) that is open onto its image: as a map into $S^1$ it is a local diffeomorphism (Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]]), and a local diffeomorphism is an open map. So it is an instance of Proposition [[§44 Embeddings#^prop-44-2|§44.2]] below.
+
+^ex-44-1
+
+> [!example] Example §44.2: The Two-to-One Map $S^2 \to \mathbb{RP}^2$
+> The projection $\pi : S^2 \to \mathbb{RP}^2$, $x \mapsto [x]$, is two-to-one, so not injective, but its image is the manifold $\mathbb{RP}^2$.
+>
+> *Two-to-one.* For $x, y \in S^2$, $[x] = [y]$ means $y = \lambda x$ for a real $\lambda \neq 0$; then $1 = |y| = |\lambda|\,|x| = |\lambda|$, so $\lambda = \pm 1$. Hence $\pi^{-1}([x]) = \{x, -x\}$, two distinct points since $x \neq 0$.
+>
+> *The image.* Every point of $\mathbb{RP}^2$ is a line $[y]$, $y \neq 0$, and $y/|y| \in S^2$ lies on it; so $\pi$ is onto. Its image $\mathbb{RP}^2$ is a smooth manifold (Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]]), a regular submanifold of codimension $0$ of itself (Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]](1)). That $\pi$ is a local diffeomorphism is Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|§46.1]], later.
+
+^ex-44-2
 
 > [!theorem] Proposition §44.2: Immersions That Are Open onto Their Images
 > Let $F : M \to N$ be an immersion ([[§43 Immersions#^def-43-1|Def. §43.1]]) such that $F : M \to F(M)$ is an open map ([[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]]), $F(M)$ carrying the subspace topology ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]]). Then $F(M)$ is a regular submanifold ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]) of $N$ of codimension $n - m$.
@@ -120,13 +142,13 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 > F(M) \cap (V' \cap W) = \big(F(M) \cap W\big) \cap V' = F(U) \cap V' = F(U) = F(U) \cap W = \{\, x \in V' \cap W : y^{m+1}(x) = \cdots = y^n(x) = 0 \,\},
 > $$
 >
-> the last equality by $(\ast)$ intersected with $W$. So the smooth chart $(V' \cap W, \psi|_{V' \cap W})$ (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1), $V' \cap W$ being an open subset of $V$), whose domain contains $q$, is adapted at $q$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], with $k = n - m$), and $F(M)$ is a regular submanifold of codimension $n - m$.
+> the last equality by $(\ast)$ intersected with $W$. So the smooth chart $(V' \cap W, \psi|_{V' \cap W})$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1), $V' \cap W$ being an open subset of $V$), whose domain contains $q$, is adapted at $q$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], with $k = n - m$), and $F(M)$ is a regular submanifold of codimension $n - m$.
 >
 > For example, $t \mapsto (\cos t, \sin t)$ is an immersion of $\mathbb{R}$, open onto $S^1$ and far from injective — every point of $S^1$ has infinitely many preimages — and its image $S^1$ is a submanifold of $\mathbb{R}^2$. (It is an immersion into $\mathbb{R}^2$ because its velocity $(-\sin t, \cos t)$ never vanishes, as in Example [[§43 Immersions#^ex-43-1|§43.1]]. It is open onto $S^1$ because it is a local diffeomorphism onto $S^1$ (Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]]): each $t$ has an open neighbourhood $U_t$ mapped homeomorphically onto an open subset of $S^1$, so for $O \subseteq \mathbb{R}$ open the image of $O \cap U_t$ is open in that subset, hence in $S^1$, and the image of $O$ is the union of these open sets.) The figure-eight is not open onto its image, consistent with its image not being a submanifold. (For $\beta(t) = (\sin 2t, \sin t)$ on $(-\pi, \pi)$, the set $\beta\big((-\pi/2, \pi/2)\big)$ is not open in the image: every open set of $\mathbb{R}^2$ around $\beta(0) = (0, 0)$ contains $\beta(t)$ for $t$ near $\pm\pi$, because $\beta(t) \to (\sin(\pm 2\pi), \sin(\pm\pi)) = (0, 0)$ as $t \to \pm\pi$, and these points are not in $\beta\big((-\pi/2, \pi/2)\big)$ since $\beta$ is injective.)
 
 ^pf-44-2
 
-*Uses:* [[§44 Embeddings#^thm-44-1|§44.1]], [[§43 Immersions#^thm-43-1|§43.1]], [[§43 Immersions#^cor-43-2|§43.2]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§43 Immersions#^ex-43-1|Ex. §43.1]], [[§35 Local Diffeomorphisms#^ex-35-1|Ex. §35.1]]
+*Uses:* [[§44 Embeddings#^thm-44-1|§44.1]], [[§43 Immersions#^thm-43-1|§43.1]], [[§43 Immersions#^cor-43-2|§43.2]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§43 Immersions#^ex-43-1|Ex. §43.1]], [[§35 Local Diffeomorphisms#^ex-35-1|Ex. §35.1]]
 
 > [!theorem] Corollary §44.3: An Embedding Is a Diffeomorphism onto Its Image
 > If $F : M \to N$ is an embedding ([[§44 Embeddings#^def-44-1|Def. §44.1]]), then $F : M \to F(M)$ is a diffeomorphism ([[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]), $F(M)$ carrying its induced smooth structure as a regular submanifold ([[§37 Regular Submanifolds#^prop-37-3|§37.3]]).
@@ -463,10 +485,10 @@ Closedness of the image alone is not enough: the image of the [[§43 Immersions#
 
 *Uses:* [[§44 Embeddings#^def-44-1|Def. §44.1]], [[§44 Embeddings#^prop-44-13|§44.13]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§44 Embeddings#^cor-44-3|§44.3]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
 
-> [!example] Example §44.1: Immersed but Not Regular
+> [!example] Example §44.3: Immersed but Not Regular
 > 1. *The figure-eight.* $\beta(t) = (\sin 2t, \sin t)$, $t \in (-\pi, \pi)$ (Lee, Example 4.19), is an injective immersion, so its image is an [[§44 Embeddings#^def-44-4|immersed submanifold]] of $\mathbb{R}^2$ ([[§44 Embeddings#^prop-44-13|Proposition §44.13]]). It is not a regular submanifold: in the subspace topology every small neighbourhood of the origin in the image is an X — the strand through $\beta(0)$ and the two ends returning as $t \to \pm\pi$ — and removing the origin leaves four components, which cannot happen in a $1$-manifold (as in [[§43 Immersions#^ex-43-1|Example §43.1]]).
 > 2. *The irrational line.* The curve $\gamma$ of [[§44 Embeddings#^prop-44-12|Proposition §44.12]] is an injective immersion, so its image is an immersed submanifold of $T^2$, a copy of $\mathbb{R}$ in its own topology. It is not a regular submanifold. The image is dense, so if it were regular it would be open in $T^2$ ([[§44 Embeddings#^cor-44-8|Corollary §44.8]]). But a nonempty open subset of $T^2$ containing $(e^{2\pi i a}, w)$ meets the circle $\{e^{2\pi i a}\} \times S^1$ in an open arc, which is uncountable, while the image meets that circle only in the countable set $\{\gamma(a + k) : k \in \mathbb{Z}\}$.
 
-^ex-44-1
+^ex-44-3
 
 In the immersed topology, a short interval of the irrational line is an open subset of the image; in the subspace topology, every neighbourhood of a point of the image also contains points from arbitrarily far along the line, because the line comes back densely. That is the whole difference between the two kinds of submanifold.

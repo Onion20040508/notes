@@ -103,7 +103,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark] Remark: Which Definition to Use When
 > The proposition says “basis” has a single meaning; the two definitions are just the two directions of use.
 > - **Topology already given** (e.g. $\mathbb{R}^n$ with the usual topology, or a subspace of it): use [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]] to *verify* that a proposed family is a basis. This is what the second-countability examples below do.
-> - **Topology to be constructed** (e.g. the [[§1 Point-Set Topology Review#^ex-1-4|line with two origins]], [[§3 Subspaces and Products#^def-3-3|product]] and [[§4 Quotient Spaces and Open Maps#^def-4-1|quotient]] topologies): use [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] to *generate* it from a convenient family $\mathcal{B}$, after checking axiom 2. In practice it suffices to give a basis of neighborhoods of each point; this is [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] applied to the union of the local bases.
+> - **Topology to be constructed** (e.g. the [[§1 Point-Set Topology Review#^ex-1-5|line with two origins]], [[§3 Subspaces and Products#^def-3-3|product]] and [[§4 Quotient Spaces and Open Maps#^def-4-1|quotient]] topologies): use [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] to *generate* it from a convenient family $\mathcal{B}$, after checking axiom 2. In practice it suffices to give a basis of neighborhoods of each point; this is [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] applied to the union of the local bases.
 >
 > The lecture stated [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]] and the reformulation in [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1]]; [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] was not written in lecture but is the form used implicitly whenever a topology is specified by a basis.
 
@@ -150,7 +150,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-4|Def. §1.4]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]]
 
 > [!remark] Remark
-> Part (2), read through [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]], is why it suffices to *define* a topology by specifying a basis of neighborhoods at every point — provided the family satisfies the intersection axiom there. This is how the [[§1 Point-Set Topology Review#^ex-1-4|line with two origins]] is defined below.
+> Part (2), read through [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]], is why it suffices to *define* a topology by specifying a basis of neighborhoods at every point — provided the family satisfies the intersection axiom there. This is how the [[§1 Point-Set Topology Review#^ex-1-5|line with two origins]] is defined below.
 
 ^rem-1-5
 
@@ -238,9 +238,16 @@ tags: [differentiable-manifolds, math591]
 > - The same argument in 590: [[§22 Countability Axioms#^rem-22-2|590 §22, remark after Def. §22.3]]; it is part (1) of [[§1 Point-Set Topology Review#^prop-1-3|§1.3]] with a countable basis.
 
 > [!remark] Remark
-> The contrapositive is the useful direction: to prove a space is *not* second countable it suffices to exhibit one point at which it is not first countable. That is how [[§4 Quotient Spaces and Open Maps#^ex-4-3|Example §4.3]] below shows a quotient of $\mathbb{R}$ fails second countability. The converse of the proposition is false: $\mathbb{R}$ with the discrete topology ([[§1 Point-Set Topology Review#^ex-1-2|Example §1.2]]) is first countable—$\{\{x\}\}$ is a one-element basis of neighborhoods at $x$—but not second countable.
+> The contrapositive is the useful direction: to prove a space is *not* second countable it suffices to exhibit one point at which it is not first countable. That is how Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]] below shows a quotient of $\mathbb{R}$ fails second countability. The converse of the proposition is false (Example [[§1 Point-Set Topology Review#^ex-1-3|§1.3]]).
 
 ^rem-1-7
+
+> [!example] Example §1.3: The Converse Fails: Discrete $\mathbb{R}$ Is First Countable
+> Let $X = \mathbb{R}$ with the discrete topology. Then $X$ is first countable (Definition [[§1 Point-Set Topology Review#^def-1-7|§1.7]]) but not second countable; so the converse of Proposition [[§1 Point-Set Topology Review#^prop-1-4|§1.4]] is false.
+> - *First countable.* Let $x \in X$. The singleton $\{x\}$ is open, so it is a neighborhood of $x$. Every neighborhood $U$ of $x$ contains $x$, hence $\{x\} \subseteq U$. So the one-element collection $\{\{x\}\}$ is a basis of neighborhoods of $x$ (Definition [[§1 Point-Set Topology Review#^def-1-5|§1.5]]), and it is countable.
+> - *Not second countable.* This is Example [[§1 Point-Set Topology Review#^ex-1-2|§1.2]].
+
+^ex-1-3
 
 ## Hausdorff Spaces
 
@@ -264,7 +271,7 @@ tags: [differentiable-manifolds, math591]
 
 ^rem-1-8
 
-> [!example] Example §1.3: Any Metric Space is $T_2$
+> [!example] Example §1.4: Any Metric Space is $T_2$
 > Let $d : X \times X \to \mathbb{R}$ be a metric and $p \neq q$. Put $r = \tfrac13 d(p, q) > 0$ and take
 >
 > $$
@@ -282,7 +289,7 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Example A.5*
 
-^ex-1-3
+^ex-1-4
 
 *Uses:* [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§12 Metric Topology#^def-12-1|590 Def. §12.1]]
 
@@ -292,7 +299,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - Home in 590: [[§12 Metric Topology#^thm-12-4|Every Metric Space is Hausdorff, 590 §12.4]].
 
-> [!example] Example §1.4: Non-Example: The Real Line with Two Origins
+> [!example] Example §1.5: Non-Example: The Real Line with Two Origins
 > As a *set*, let
 >
 > $$
@@ -329,7 +336,7 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Problem 1-1*
 
-^ex-1-4
+^ex-1-5
 
 *Uses:* [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]], [[§1 Point-Set Topology Review#^def-1-3|Def. §1.3]], [[§1 Point-Set Topology Review#^prop-1-2|§1.2]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§2 Basis for a Topology#^lem-2-1|590 §2.1]]
 
@@ -342,7 +349,7 @@ tags: [differentiable-manifolds, math591]
 > - The other two manifold conditions are verified in [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; the quotient description is [[§4 Quotient Spaces and Open Maps#^ex-4-1|Ex. §4.1]], and non-Hausdorffness via the diagonal criterion is [[§10 The Line with Two Origins#^ex-10-1|Ex. §10.1]].
 > - Limits are not unique here, since $1/n$ converges to both $0_1$ and $0_2$; Hausdorff spaces rule this out, [[§9 Hausdorff Spaces#^thm-9-3|590 Thm. §9.3]].
 
-The line with two origins through the course: defined by its neighbourhood bases, and not Hausdorff, in [[§1 Point-Set Topology Review#^ex-1-4|the real line with two origins]]; second countable and locally Euclidean but not Hausdorff, so not a manifold, in [[§2 Topological Manifolds#^ex-2-1|the line with two origins fails Hausdorff]]; the quotient of two lines in [[§4 Quotient Spaces and Open Maps#^ex-4-1|the line with two origins as a quotient]], the two constructions agreeing by [[§4 Quotient Spaces and Open Maps#^prop-4-2|the two constructions agree]]; and, with its description as a quotient and the Hausdorff criterion for open quotients applied to it, in [[§10 The Line with Two Origins|The Line with Two Origins]].
+The line with two origins through the course: defined by its neighbourhood bases, and not Hausdorff, in [[§1 Point-Set Topology Review#^ex-1-5|the real line with two origins]]; second countable and locally Euclidean but not Hausdorff, so not a manifold, in [[§2 Topological Manifolds#^ex-2-1|the line with two origins fails Hausdorff]]; the quotient of two lines in [[§4 Quotient Spaces and Open Maps#^ex-4-1|the line with two origins as a quotient]], the two constructions agreeing by [[§4 Quotient Spaces and Open Maps#^prop-4-2|the two constructions agree]]; and, with its description as a quotient and the Hausdorff criterion for open quotients applied to it, in [[§10 The Line with Two Origins|The Line with Two Origins]].
 
 ## Standing Facts Imported from MATH 590
 
@@ -379,7 +386,7 @@ The line with two origins through the course: defined by its neighbourhood bases
 
 > [!theorem] Proposition §1.6: Metric Spaces
 > Let $(X, d)$ be a metric space with the metric topology.
-> 1. $X$ is Hausdorff. ([[§12 Metric Topology#^thm-12-4|590 §12]]; [[§1 Point-Set Topology Review#^ex-1-3|Example §1.3]])
+> 1. $X$ is Hausdorff. ([[§12 Metric Topology#^thm-12-4|590 §12]]; [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]])
 > 2. For $A \subseteq X$, the subspace topology on $A$ coincides with the metric topology of the restricted metric $d|_{A \times A}$; in particular every subspace of a metric space is metrizable. ([[§12 Metric Topology#^thm-12-6|590 §12]])
 > 3. $X$ is second countable if and only if it is separable (has a countable dense subset). In particular $\mathbb{R}^n$, and hence every subspace of $\mathbb{R}^n$, is second countable. ([[§22 Countability Axioms#^prop-22-4|590 §22]]; [[§1 Point-Set Topology Review#^ex-1-1|Example §1.1]])
 >

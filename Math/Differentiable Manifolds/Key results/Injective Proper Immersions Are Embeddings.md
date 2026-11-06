@@ -24,6 +24,7 @@ tags: [differentiable-manifolds, hub]
 - [[§44 Embeddings#^cor-44-6|Corollary §44.6: Injective Immersions of Compact Manifolds]]
 - [[§44 Embeddings#^prop-44-9|Proposition §44.9: Closed Embeddings Are the Proper Ones]]
 - [[§66 The Whitney Embedding Theorem#^prop-66-7|Proposition §66.7: A Proper Embedding from the Slices]]
+- [[§66 The Whitney Embedding Theorem#^lem-66-8|Lemma §66.8: Proper Embeddings into ℝ²ᵐ⁺¹]]
 
 ## Connections
 - **Used for.** On a compact manifold every injective immersion is an embedding ([[§44 Embeddings#^cor-44-6|§44.6]]), and then its image is a submanifold by [[Images of Embeddings Are Submanifolds]].

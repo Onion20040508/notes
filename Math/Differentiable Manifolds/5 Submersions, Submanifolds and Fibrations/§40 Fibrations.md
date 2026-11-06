@@ -30,7 +30,7 @@ The submersions that look locally like the projection $U \times F \to U$. Their 
 > \mathrm{pr}_1 : U_\alpha \times F \to U_\alpha, \qquad \mathrm{pr}_1(b, y) = b ,
 > $$
 >
-> the [[§3 Subspaces and Products#^def-3-4|projection]] onto the first factor (Definition §3.4; written $\mathrm{pr}_1$ rather than $\pi_1$ because $\pi$ already names the fibration), which is smooth ([[§19 Smooth Functions and Smooth Maps#^prop-19-11|Proposition §19.11]]). The condition $\mathrm{pr}_1 \circ \phi_\alpha = \pi|_{\pi^{-1}(U_\alpha)}$ says that $\phi_\alpha$ keeps the base point: for $x \in \pi^{-1}(U_\alpha)$ the first component of $\phi_\alpha(x)$ is $\pi(x)$, that is, $\phi_\alpha(x) = \big(\pi(x), y\big)$ for some $y \in F$. The $\phi_\alpha$ are called **local trivializations**. $M$ is the **total space** and $B$ the **base**.
+> the [[§3 Subspaces and Products#^def-3-4|projection]] onto the first factor (Definition §3.4; written $\mathrm{pr}_1$ rather than $\pi_1$ because $\pi$ already names the fibration), which is smooth ([[§19 Smooth Functions and Smooth Maps#^prop-19-12|Proposition §19.12]]). The condition $\mathrm{pr}_1 \circ \phi_\alpha = \pi|_{\pi^{-1}(U_\alpha)}$ says that $\phi_\alpha$ keeps the base point: for $x \in \pi^{-1}(U_\alpha)$ the first component of $\phi_\alpha(x)$ is $\pi(x)$, that is, $\phi_\alpha(x) = \big(\pi(x), y\big)$ for some $y \in F$. The $\phi_\alpha$ are called **local trivializations**. $M$ is the **total space** and $B$ the **base**.
 >
 > *Lee: Ch. 10, smooth fiber bundles*
 
@@ -143,11 +143,11 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 >
 > *$\Phi^{-1}$ is smooth.* The inclusion $\iota' : \{b\} \times F \hookrightarrow U_\alpha \times F$ is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1)), and $\phi_\alpha^{-1} \circ \iota'$ is smooth into $\pi^{-1}(U_\alpha)$, hence into $E$, the inclusion of an open submanifold being smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). It takes values in the submanifold $\pi^{-1}(b)$, so it is smooth as a map into $\pi^{-1}(b)$ (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2)); that map is $\Phi^{-1}$. So $\Phi$ is a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]): the restriction and its inverse are smooth as maps into $U_\alpha \times F$ and into $E$, hence smooth into the submanifolds $\{b\} \times F$ and $\pi^{-1}(b)$.
 >
-> *$\{b\} \times F \cong F$.* Finally $\{b\} \times F \to F$, $(b, f) \mapsto f$, is a diffeomorphism by the same lemma, with inverse $f \mapsto (b, f)$. Explicitly: the first map is $\mathrm{pr}_2 \circ \iota'$, smooth because $\mathrm{pr}_2$ and $\iota'$ are (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1)). The second is the slice inclusion $\iota^{b} : F \to U_\alpha \times F$, $f \mapsto (b, f)$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]; it takes values in $\{b\} \times F$, so it is smooth into $\{b\} \times F$ by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2). The two maps are inverse to each other. Composing with $\Phi$ gives the diffeomorphism $\pi^{-1}(b) \to \{b\} \times F \cong F$.
+> *$\{b\} \times F \cong F$.* Finally $\{b\} \times F \to F$, $(b, f) \mapsto f$, is a diffeomorphism by the same lemma, with inverse $f \mapsto (b, f)$. Explicitly: the first map is $\mathrm{pr}_2 \circ \iota'$, smooth because $\mathrm{pr}_2$ and $\iota'$ are (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1)). The second is the slice inclusion $\iota^{b} : F \to U_\alpha \times F$, $f \mapsto (b, f)$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]; it takes values in $\{b\} \times F$, so it is smooth into $\{b\} \times F$ by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2). The two maps are inverse to each other. Composing with $\Phi$ gives the diffeomorphism $\pi^{-1}(b) \to \{b\} \times F \cong F$.
 
 ^pf-40-2
 
-*Uses:* [[§40 Fibrations#^prop-40-1|§40.1]], [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]], [[§36 Submersions#^ex-36-2|Ex. §36.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
+*Uses:* [[§40 Fibrations#^prop-40-1|§40.1]], [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]], [[§36 Submersions#^ex-36-2|Ex. §36.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
 
 ![[m591-16-3.svg]]
 *The fibre over $b$ and the model fibre. The trivialization $\phi_\alpha$ carries the submanifold $\pi^{-1}(b)$ onto the submanifold $\{b\} \times F$ — this is where the commuting triangle of [[§40 Fibrations#^def-40-1|Definition §40.1]] is used — and $\mathrm{pr}_2$ identifies that with $F$.*
@@ -270,7 +270,7 @@ A section in the sense of [[§40 Fibrations#^def-40-3|Definition §40.3]] is a l
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* Two things are to be shown (Definition [[§40 Fibrations#^def-40-4|§40.4]]): $s : U \to E$ is smooth, and $\pi \circ s = \mathrm{id}_U$.
 >
-> *Smooth.* $s$ is a composite of $u \mapsto (u, f_0)$ and the diffeomorphism $\phi^{-1}$. The first map is the slice inclusion $\iota^{f_0} : U \to U \times F$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]], with $M_1 = U$ and $M_2 = F$), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]. Then $\phi^{-1} : U \times F \to \pi^{-1}(U)$ is smooth, and so is the inclusion of the open submanifold $\pi^{-1}(U)$ into $E$. So $s$ is smooth as a composite of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]).
+> *Smooth.* $s$ is a composite of $u \mapsto (u, f_0)$ and the diffeomorphism $\phi^{-1}$. The first map is the slice inclusion $\iota^{f_0} : U \to U \times F$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]], with $M_1 = U$ and $M_2 = F$), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]. Then $\phi^{-1} : U \times F \to \pi^{-1}(U)$ is smooth, and so is the inclusion of the open submanifold $\pi^{-1}(U)$ into $E$. So $s$ is smooth as a composite of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]).
 >
 > *Section.* For $u \in U$, using $\pi = \mathrm{pr}_1 \circ \phi$ on $\pi^{-1}(U)$ (the commuting triangle of Definition [[§40 Fibrations#^def-40-1|§40.1]]) and $\phi \circ \phi^{-1} = \mathrm{id}$,
 >
@@ -280,7 +280,7 @@ A section in the sense of [[§40 Fibrations#^def-40-3|Definition §40.3]] is a l
 
 ^pf-40-4
 
-*Uses:* [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§40 Fibrations#^def-40-4|Def. §40.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
+*Uses:* [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§40 Fibrations#^def-40-4|Def. §40.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
 
 ![[m591-16-a5.gif|460]]
 

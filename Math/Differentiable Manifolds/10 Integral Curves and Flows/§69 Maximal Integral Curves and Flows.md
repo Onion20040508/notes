@@ -41,7 +41,7 @@ The union is nonempty, since an integral curve starting at $p$ exists (Theorem [
 
 *Uses:* [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]
 
-The maximal domains of the examples: $\mathbb{R}$ for the rotation and Euler fields (Examples [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]] and [[§68 Local Existence and Uniqueness#^ex-68-2|§68.2]]); $(-\infty, 1/(x_0y_0))$ and $(-\infty, -x_0)$ for the two examples that follow.
+The maximal domains of the examples: $\mathbb{R}$ for the rotation and Euler fields (Examples [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]] and [[§68 Local Existence and Uniqueness#^ex-68-5|§68.5]]); $(-\infty, 1/(x_0y_0))$ and $(-\infty, -x_0)$ for the two examples that follow.
 
 The next example is problematic: examples like it are what make the theory of flows necessarily elaborate.
 

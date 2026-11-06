@@ -98,10 +98,20 @@ A curve $S$ in the plane, covered by rectangles. Refining the cover shrinks the 
 
 *Uses:* [[§62 Sets of Measure Zero#^lem-62-1|§62.1]]
 
-> [!remark] Remark: Continuity Is Not Enough
-> $F(S)$ may not have measure zero if $F$ is only continuous; the Cantor function is the standard counterexample. *(Filled in.)* The Cantor function $c : [0,1] \to [0,1]$ is continuous, nondecreasing, and maps the Cantor set, which has measure zero, onto all of $[0,1]$, which does not (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4)). The smoothness used above is exactly the Lipschitz estimate, which $c$ lacks.
+> [!example] Example §62.1: The Cantor Function
+> In Lemma [[§62 Sets of Measure Zero#^lem-62-2|§62.2]], $F(S)$ may not have measure zero if $F$ is only continuous; the Cantor function is the standard counterexample. *(Filled in.)* The Cantor function $c : [0,1] \to [0,1]$ is continuous, nondecreasing, and maps the Cantor set $C$, which has measure zero, onto all of $[0,1]$, which does not.
+>
+> *Setup.* $C = \bigcap_k C_k$, where $C_0 = [0,1]$ and $C_{k+1}$ is obtained from $C_k$ by removing the open middle third of each of its intervals; so $C_k$ is a union of $2^k$ closed intervals of length $3^{-k}$. The Cantor function $c$ is continuous and nondecreasing, with $c(0) = 0$ and $c(1) = 1$, and constant on each removed open interval (its standard construction is taken as known).
+>
+> *$C$ has measure zero.* For each $k$, $C \subseteq C_k$ is covered by $2^k$ closed intervals of total length $(2/3)^k$, which tends to $0$; closed intervals are allowed by Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](3).
+>
+> *$c(C) = [0,1]$.* Let $y \in [0,1]$. By the intermediate value theorem there is $x \in [0,1]$ with $c(x) = y$. If $x \in C$ we are done. Otherwise $x$ lies in one of the removed open intervals $(a, b)$; its endpoints $a, b$ are never removed, so $a \in C$, and $c$ is constant on $(a, b)$, hence by continuity on $[a, b]$. So $c(a) = c(x) = y$ with $a \in C$.
+>
+> *$[0,1]$ does not have measure zero.* It contains the nonempty open set $(0,1)$, which does not have measure zero (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4)), and a subset of a set of measure zero has measure zero (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](1)).
+>
+> The smoothness used in Lemma [[§62 Sets of Measure Zero#^lem-62-2|§62.2]] is exactly the Lipschitz estimate, which $c$ lacks: if $|c(x) - c(y)| \le L\,|x - y|$ on $[0,1]$, the step *Cubes go to cubes* of that proof, with $n = 1$, would show that $c(C)$ has measure zero, contradicting what was just shown.
 
-^rem-62-1
+^ex-62-1
 
 > [!remark]- Connections
 > - The Cantor set [[§14 The Vitali Set and the Cantor Set#^def-14-4|551 Def. §14.4]] ([[§14 The Vitali Set and the Cantor Set#^prop-14-7|551 §14.7]]: measure zero, uncountable) and the Cantor function [[§31 Absolute Continuity#^ex-31-1|551 Ex. §31.1]].
@@ -191,4 +201,4 @@ The same piece of $S$ seen in two charts. The transition map carries one picture
 > 2. Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](1)–(2) are monotonicity and countable subadditivity of $m^{\ast}$; item (4) is $m^{\ast}(\text{closed rectangle}) =$ its volume.
 > 3. Lemma [[§62 Sets of Measure Zero#^lem-62-5|§62.5]] is the cross-section theorem (a consequence of Tonelli's theorem) for a compact, hence measurable, set: $m(A) = \int_{\mathbb{R}} m(A_c)\, dc = 0$. The proof above avoids measurability and integration and uses only compactness.
 
-^rem-62-2
+^rem-62-1

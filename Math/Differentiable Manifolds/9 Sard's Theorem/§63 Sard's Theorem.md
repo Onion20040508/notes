@@ -152,16 +152,16 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 ^cor-63-4
 
 > [!proof]+ Proof
-> *(Lecture 19.)* By linear algebra, no point in the image can be a regular value, for dimension reasons: for $p \in M$, the image of $dF_p : T_pM \to T_{F(p)}N$ has dimension at most $\dim M < \dim N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), so $dF_p$ is never onto. So the regular values are exactly the points with empty preimage, where the condition is vacuous, and $F(M)$ is the set of singular values, of measure zero by Sard's theorem.
+> *(Lecture 19.)* By linear algebra, no point in the image can be a regular value, for dimension reasons: for $p \in M$, the image of $dF_p : T_pM \to T_{F(p)}N$ has dimension at most $\dim M < \dim N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]), so $dF_p$ is never onto. So the regular values are exactly the points with empty preimage, where the condition is vacuous, and $F(M)$ is the set of singular values, of measure zero by Sard's theorem.
 
 ^pf-63-4
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]
 
 > [!remark]- Connections
 > - A measure-theory relative: the graph of a measurable function has measure zero, [[§26 Applications of Tonelli's Theorem#^cor-26-4|551 §26.4]].
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]
 
 For instance, a smooth curve $\gamma : \mathbb{R} \to \mathbb{R}^2$ never fills an open set of the plane: its image has measure zero, and so does every subset of it (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](1)), while an open set does not (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4)) — in contrast with continuous space-filling curves.
 

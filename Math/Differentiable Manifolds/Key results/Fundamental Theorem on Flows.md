@@ -19,6 +19,7 @@ tags: [differentiable-manifolds, hub]
 - [[§70 Complete Vector Fields#^lem-70-1|Lemma §70.1: Uniform Time Lemma]]
 - [[§70 Complete Vector Fields#^prop-70-3|Proposition §70.3: The Flow of a Complete Field]]
 - [[§71 The Exponential Map#^prop-71-5|Proposition §71.5: Smoothness and the Differential at 0]]
+- [[§72 Lie Derivatives#^lem-72-2|Lemma §72.2: The Inverse Flow Map φ_-t Has an Open Domain]]
 
 ## Connections
 - TODO

@@ -13,7 +13,7 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§1 Point-Set Topology Review#^prop-1-5|Proposition §1.5: Continuity and Homeomorphisms]]
 - [[§3 Subspaces and Products#^def-3-1|Definition §3.1: Subspace Topology]]
-- [[§17 Differentiable Structures#^lem-17-6|Lemma §17.6: Restricting and Recomposing Smooth Charts]]
+- [[§17 Differentiable Structures#^lem-17-7|Lemma §17.7: Restricting and Recomposing Smooth Charts]]
 - [[§37 Regular Submanifolds#^def-37-2|Definition §37.2: Regular Submanifold]]
 - [[§37 Regular Submanifolds#^def-37-3|Definition §37.3: Adapted Chart]]
 - [[§43 Immersions#^thm-43-1|Theorem §43.1: Local Normal Form for Immersions]]
@@ -29,8 +29,9 @@ tags: [differentiable-manifolds, hub]
 - [[§44 Embeddings#^prop-44-15|Proposition §44.15: When an Immersed Submanifold Is Regular]]
 - [[§47 The Unit Quaternions and SU(2)#^prop-47-5|Proposition §47.5: S³ Is SU(2)]]
 - [[§66 The Whitney Embedding Theorem#^thm-66-6|Theorem §66.6: The Whitney Theorems for Compact Manifolds]]
-- [[§66 The Whitney Embedding Theorem#^prop-66-9|Proposition §66.9: Immersions into ℝ²ᵐ from Any Embedding]]
-- [[§66 The Whitney Embedding Theorem#^cor-66-10|Corollary §66.10: Every Manifold Has a Morse Function]]
+- [[§66 The Whitney Embedding Theorem#^lem-66-8|Lemma §66.8: Proper Embeddings into ℝ²ᵐ⁺¹]]
+- [[§66 The Whitney Embedding Theorem#^prop-66-10|Proposition §66.10: Immersions into ℝ²ᵐ from Any Embedding]]
+- [[§66 The Whitney Embedding Theorem#^cor-66-12|Corollary §66.12: Every Manifold Has a Morse Function]]
 
 ## Connections
 - **Used for.** An embedding is a diffeomorphism onto its image, with the induced smooth structure of the submanifold ([[§44 Embeddings#^cor-44-3|§44.3]]). Combined with [[Injective Proper Immersions Are Embeddings]], the image of an injective immersion of a compact manifold is a submanifold.

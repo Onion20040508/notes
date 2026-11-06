@@ -15,7 +15,7 @@ tags: [differentiable-manifolds, math591]
 ^rem-12-1
 
 > [!remark]- Connections
-> - “Locally a graph near a point with $\nabla F \neq 0$”: [[§7 The Regular Value Theorem#^cor-7-2|§7.2]], home [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]].
+> - “Locally a graph near a point with $\nabla F \neq 0$”: [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], home [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]].
 > - Differentiating along curves, made coordinate-free: [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]].
 
 Throughout, identify $\operatorname{Mat}(n,\mathbb{R}) = \mathbb{R}^{n^2}$ via [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Definition §11.2]], writing $x_{ij}$ for the coordinate that reads off the $(i,j)$ entry, and for $F : \mathbb{R}^{n^2} \to \mathbb{R}$ differentiable write $\nabla F(g) \in \mathbb{R}^{n^2}$ for the gradient, with components $\partial F/\partial x_{ij}(g)$. The dot product on $\mathbb{R}^{n^2}$ is $A \cdot B = \sum_{i,j} A_{ij} B_{ij}$. The [[Multivariable Chain Rule|chain rule]] for a curve $\gamma$ reads $\frac{d}{dt} F(\gamma(t)) = \nabla F(\gamma(t)) \cdot \gamma'(t)$.
@@ -122,16 +122,22 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 *Uses:* [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-47|LADR 8.47]], [[§9 Matrices#^ladr-3-54|LADR 3.54]], [[§9 Matrices#^ladr-3-46|LADR 3.46]]
 
 > [!remark] Remark: The Gradient Itself
-> Differentiating the determinant with respect to one entry recovers the cofactor expansion along that entry's row. The directional form of [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|Proposition §12.1]] is the one used in proofs; the gradient form is what one checks against a direct computation for $n = 2$.
-> *(Computed; not from lecture.)* For $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$, $\det g = ad - bc$ and $g^{-1} = \dfrac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$, so
+> Differentiating the determinant with respect to one entry recovers the cofactor expansion along that entry's row. The directional form of [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|Proposition §12.1]] is the one used in proofs; the gradient form is what one checks against a direct computation for $n = 2$, carried out in Example [[§12 The Classical Groups Are Topological Manifolds#^ex-12-1|§12.1]].
+
+^rem-12-2
+
+> [!example] Example §12.1: The Gradient of $\det$ on $2 \times 2$ Matrices
+> *(Computed; not from lecture.)* For $n = 2$ the formula $\nabla\det(g) = \det(g)\,(g^{-1})^{\mathsf T}$ of Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-2|§12.2]] can be checked by differentiating entry by entry. For $g = \begin{pmatrix} a & b \\ c & d \end{pmatrix}$ with $ad - bc \neq 0$, $\det g = ad - bc$ and $g^{-1} = \dfrac{1}{ad - bc}\begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$. Arranging the partial derivatives of $ad - bc$ with respect to the four entries in the positions of those entries,
 >
 > $$
 > \nabla\det(g) = \begin{pmatrix} \partial_a(ad - bc) & \partial_b(ad - bc) \\ \partial_c(ad - bc) & \partial_d(ad - bc) \end{pmatrix}
 > = \begin{pmatrix} d & -c \\ -b & a \end{pmatrix}
-> = (ad - bc)\,(g^{-1})^{\mathsf T}.
+> = (ad - bc)\,(g^{-1})^{\mathsf T},
 > $$
+>
+> the last step because $(ad - bc)\,g^{-1} = \begin{pmatrix} d & -b \\ -c & a \end{pmatrix}$, whose transpose is $\begin{pmatrix} d & -c \\ -b & a \end{pmatrix}$.
 
-^rem-12-2
+^ex-12-1
 
 > [!theorem] Corollary §12.3: $1$ Is a Regular Value of $\det$
 > For every $g \in \mathrm{SL}(n,\mathbb{R})$, $\nabla \det(g) \neq 0$. Hence every point of the level set $\det^{-1}(1)$ is a regular point of $\det$, i.e. $1$ is a regular value of $\det$ ([[§7 The Regular Value Theorem#^def-7-4|Definition §7.4]]). Equivalently, $0$ is a regular value of the function $\det - 1$, which has the same gradient and the same level set $\{\det - 1 = 0\}$.
@@ -163,13 +169,13 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 > \nabla\det(g) \cdot g = \det(g)\,\operatorname{tr}(g^{-1}g) = c\,n \ne 0,
 > $$
 >
-> so $\nabla\det(g) \ne 0$ and $D\det_g$ is onto $\mathbb{R}$. [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]] gives the manifold.
+> so $\nabla\det(g) \ne 0$ and $D\det_g$ is onto $\mathbb{R}$. [[§7 The Regular Value Theorem#^thm-7-5|Theorem §7.5]] gives the manifold.
 
 ^pf-12-4
 
-*Uses:* [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-3|§7.3]]
+*Uses:* [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-5|§7.5]]
 
-The passage from “nonvanishing gradient” to “locally a graph” is the Implicit Function Theorem, proved in MATH 452 and used here as a black box. We record it in the general vector-valued form ([[§7 The Regular Value Theorem#^thm-7-1|§7.1]]), since that is what the [[§7 The Regular Value Theorem#^thm-7-3|regular value theorem]] (PSet 1, Problem 6) needs, and then specialize ([[§7 The Regular Value Theorem#^cor-7-2|§7.2]]).
+The passage from “nonvanishing gradient” to “locally a graph” is the Implicit Function Theorem, proved in MATH 452 and used here as a black box. We record it in the general vector-valued form ([[§7 The Regular Value Theorem#^thm-7-2|§7.2]]), since that is what the [[§7 The Regular Value Theorem#^thm-7-5|regular value theorem]] (PSet 1, Problem 6) needs, and then specialize ([[§7 The Regular Value Theorem#^cor-7-4|§7.4]]).
 
 > [!theorem] Corollary §12.5: $\mathrm{SL}(n,\mathbb{R})$ Is a Manifold of Dimension $n^2 - 1$
 > $\mathrm{SL}(n,\mathbb{R})$ is a topological manifold of dimension $n^2 - 1$.
@@ -179,18 +185,18 @@ The passage from “nonvanishing gradient” to “locally a graph” is the Imp
 ^cor-12-5
 
 > [!proof]+ Proof via the Regular Value Theorem
-> *(Lecture 3 gave the intuition only, leaving the proof to the homework (PSet 1, Problem 6): the gradient is nonzero, so one of its components is, and the projection forgetting that coordinate has a local inverse, making $\mathrm{SL}(n,\mathbb{R})$ locally a graph. The proof below is that homework, via [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]].)* Apply [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]] to $F = \det - 1$ on $\mathbb{R}^{n^2} = \mathbb{R}^{(n^2-1)+1}$, with $k = 1$: $F$ is a polynomial, $F^{-1}(0) = \mathrm{SL}(n,\mathbb{R})$, and $\nabla F = \nabla \det$ is nonzero at every point of that level set by [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|Corollary §12.3]], so $0$ is a regular value. Hence $\mathrm{SL}(n,\mathbb{R})$ is a topological manifold of dimension $n^2 - 1$.
+> *(Lecture 3 gave the intuition only, leaving the proof to the homework (PSet 1, Problem 6): the gradient is nonzero, so one of its components is, and the projection forgetting that coordinate has a local inverse, making $\mathrm{SL}(n,\mathbb{R})$ locally a graph. The proof below is that homework, via [[§7 The Regular Value Theorem#^thm-7-5|Theorem §7.5]].)* Apply [[§7 The Regular Value Theorem#^thm-7-5|Theorem §7.5]] to $F = \det - 1$ on $\mathbb{R}^{n^2} = \mathbb{R}^{(n^2-1)+1}$, with $k = 1$: $F$ is a polynomial, $F^{-1}(0) = \mathrm{SL}(n,\mathbb{R})$, and $\nabla F = \nabla \det$ is nonzero at every point of that level set by [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|Corollary §12.3]], so $0$ is a regular value. Hence $\mathrm{SL}(n,\mathbb{R})$ is a topological manifold of dimension $n^2 - 1$.
 
 ^pf-12-5
 
-*Uses:* [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|§12.3]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|Def. §11.6]]
+*Uses:* [[§7 The Regular Value Theorem#^thm-7-5|§7.5]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|§12.3]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|Def. §11.6]]
 
 The argument given in lecture is the same one specialized by hand; it is recorded because the explicit chart is worth seeing.
 
 > [!proof]+ Proof as given in lecture
 > Let $g \in \mathrm{SL}(n,\mathbb{R})$. Number the $N = n^2$ coordinates of $\mathbb{R}^N$ as in [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Definition §11.2]], so that coordinate $x_k$ with $k = n(i-1)+j$ is the matrix entry $x_{ij}$. By [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|Corollary §12.3]] some component of $\nabla\det(g)$ is nonzero: $\dfrac{\partial \det}{\partial x_k}(g) \neq 0$ for some $k \in \{1, \ldots, N\}$. If $k \neq N$, let $\tau : \mathbb{R}^N \to \mathbb{R}^N$ be the linear map that swaps coordinates $k$ and $N$. It is a homeomorphism (linear, and its own inverse), so $\tau(\mathrm{SL}(n,\mathbb{R}))$ is homeomorphic to $\mathrm{SL}(n,\mathbb{R})$, and it equals the level set $\{\det \circ \tau^{-1} = 1\}$ of the polynomial $\det \circ \tau^{-1}$, whose gradient at $\tau(g)$ is $\nabla\det(g)$ with coordinates $k$ and $N$ swapped, hence has nonzero last component. Since being locally Euclidean is a topological property, we may replace $(\mathrm{SL}(n,\mathbb{R}), \det)$ by $(\tau(\mathrm{SL}(n,\mathbb{R})), \det \circ \tau^{-1})$; that is, WLOG $k = N$.
 >
-> Apply [[§7 The Regular Value Theorem#^cor-7-2|Theorem §7.2]] to $F = \det$ (a polynomial, hence $C^\infty$), $a = g$, $c = 1$: there are $W' \ni g'$ open in $\mathbb{R}^{N-1}$, an interval $J \ni g_N$, and a smooth $h : W' \to J$ with
+> Apply [[§7 The Regular Value Theorem#^cor-7-4|Theorem §7.4]] to $F = \det$ (a polynomial, hence $C^\infty$), $a = g$, $c = 1$: there are $W' \ni g'$ open in $\mathbb{R}^{N-1}$, an interval $J \ni g_N$, and a smooth $h : W' \to J$ with
 >
 > $$
 > \mathrm{SL}(n,\mathbb{R}) \cap (W' \times J) = \{\, (x', h(x')) \mid x' \in W' \,\}.
@@ -212,12 +218,12 @@ The argument given in lecture is the same one specialized by hand; it is recorde
 
 ^pf-12-5-2
 
-*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|§12.3]], [[§7 The Regular Value Theorem#^cor-7-2|§7.2]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1]]
+*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|§12.3]], [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1]]
 
 > [!remark]- Connections
 > - The smooth structure on $\mathrm{SL}(n,\mathbb{R})$: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; its dimension and tangent space among all six classical groups: [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]].
 
-**Transcription note.** The board (and the handwritten notes) describe the chart as “the projection of $\mathrm{SL}(n,\mathbb{R}) \to \mathbb{R}$ by taking the last component has a local inverse.” The chart is the projection onto the *other* $n^2 - 1$ coordinates, as above; the last coordinate is the one that becomes a function $h$ of the rest. The lecture's argument for this step was heuristic; the full argument for a general regular level set is PSet 1, Problem 6 ([[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3]]), a more elaborate version of this computation.
+**Transcription note.** The board (and the handwritten notes) describe the chart as “the projection of $\mathrm{SL}(n,\mathbb{R}) \to \mathbb{R}$ by taking the last component has a local inverse.” The chart is the projection onto the *other* $n^2 - 1$ coordinates, as above; the last coordinate is the one that becomes a function $h$ of the rest. The lecture's argument for this step was heuristic; the full argument for a general regular level set is PSet 1, Problem 6 ([[§7 The Regular Value Theorem#^thm-7-5|Theorem §7.5]]), a more elaborate version of this computation.
 
 > [!remark] Remark: Dimension Count
 > $\mathrm{SL}(n,\mathbb{R})$ is cut out of $\mathbb{R}^{n^2}$ by one equation with nonvanishing gradient, and it loses exactly one dimension: $\dim \mathrm{SL}(n,\mathbb{R}) = n^2 - 1$. This is the pattern for all the classical groups: $\mathrm{O}(n)$ is cut out by the $\tfrac{n(n+1)}{2}$ independent equations $g^T g = I$ (symmetric matrix), giving $\dim \mathrm{O}(n) = n^2 - \tfrac{n(n+1)}{2} = \tfrac{n(n-1)}{2}$; checking that these equations have independent gradients is done in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Example §23.1]].
@@ -236,6 +242,6 @@ The argument given in lecture is the same one specialized by hand; it is recorde
 
 ^pf-12-6
 
-*Uses:* [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|Ex. §23.2]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]
+*Uses:* [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§3 Subspaces and Products#^prop-3-6|§3.6]], [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|Ex. §23.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]
 
-The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-4|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-5|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-3|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
+The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].

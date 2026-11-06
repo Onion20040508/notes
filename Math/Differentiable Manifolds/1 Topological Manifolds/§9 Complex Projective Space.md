@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Thread: quotients — $\mathbb{CP}^n$, the first manifold built as a quotient: the open quotient $S^{2n+1}/S^1$ is Hausdorff, second countable ([[§6 Open Quotients|§6]]) and compact, and it is the space of complex lines. Its charts come in [[§18 Projective Spaces as Smooth Manifolds|§18]].*
 
-Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in *this section*; the circle group $\mathrm{U}(1)$ acting there in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; an orbit space in [[§13 Group Actions and Orbit Spaces#^ex-13-3|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§25 The Geometric Tangent Space#^rem-25-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§30 The Differential in Coordinates#^rem-30-6|Remark: The Strategy]]; and the base of the Hopf fibration in [[§46 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
+Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, Hausdorff, second countable and compact, in *this section*; the circle group $\mathrm{U}(1)$ acting there in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; an orbit space in [[§13 Group Actions and Orbit Spaces#^ex-13-5|projective space as an orbit space]]; a smooth and complex manifold through its standard atlas in [[§18 Projective Spaces as Smooth Manifolds|Projective Spaces as Smooth Manifolds]]; a homogeneous space of $\mathrm{U}(n+1)$ in [[§25 The Geometric Tangent Space#^rem-25-9|Dimension Checks through Homogeneous Spaces]]; the domain of the moment map in [[§30 The Differential in Coordinates#^rem-30-6|Remark: The Strategy]]; and the base of the Hopf fibration in [[§46 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]].
 
 The following was set up at the end of a lecture, with the proof of the claim given only verbally; the details below reconstruct that argument. The argument is taken up again in Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]].
 
@@ -39,7 +39,7 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 ^def-9-1
 
 > [!remark]- Connections
-> - As an orbit space of $\mathrm{U}(1) = S^1$: [[§13 Group Actions and Orbit Spaces#^ex-13-3|Ex. §13.3]] (cf. group actions and orbits, [[§25 Actions#^def-25-1|493 Def. §25.1]], [[§27 Orbits#^def-27-1|493 Def. §27.1]]); charts and smooth structure in [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]]; the projection is a submersion, [[§46 Projective Spaces and the Hopf Fibration#^ex-46-2|Ex. §46.2]].
+> - As an orbit space of $\mathrm{U}(1) = S^1$: [[§13 Group Actions and Orbit Spaces#^ex-13-5|Ex. §13.5]] (cf. group actions and orbits, [[§25 Actions#^def-25-1|493 Def. §25.1]], [[§27 Orbits#^def-27-1|493 Def. §27.1]]); charts and smooth structure in [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]]; the projection is a submersion, [[§46 Projective Spaces and the Hopf Fibration#^ex-46-2|Ex. §46.2]].
 > - Real analogue in MATH 590: [[§38 Fundamental Group of Some Surfaces#^def-38-2|590 Def. §38.2 (Projective n-Space)]], [[Projective plane]].
 
 > [!theorem] Proposition §9.1: $\mathbb{CP}^n$ is Hausdorff and Second Countable
@@ -83,7 +83,7 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 *Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§6 Open Quotients#^thm-6-1|§6.1]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§1 Point-Set Topology Review#^ex-1-1|Ex. §1.1]], [[Heine–Borel Theorem]], [[§18 Compact Spaces#^thm-18-9|590 §18.9]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§12 Metric Topology#^thm-12-4|590 §12.4]]
 
 > [!remark]- Connections
-> - The general form for compact groups acting on compact Hausdorff spaces: [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], of which this is a special case ([[§13 Group Actions and Orbit Spaces#^rem-13-9|§13, Remark]]).
+> - The general form for compact groups acting on compact Hausdorff spaces: [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], of which this is a special case (Example [[§13 Group Actions and Orbit Spaces#^ex-13-10|§13.10]]).
 
 **Transcription note.** Page 7 of the handwritten notes writes the map in this argument as $S^1 \times S^{2n+1} \to S^{2n+2} \times S^{2n+2}$; the target is $S^{2n+1} \times S^{2n+1}$, where the graph of the relation lives.
 
@@ -107,7 +107,7 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 *Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^def-4-6|Def. §4.6]], [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§9 Complex Projective Space#^pf-9-1|§9.1 (openness of the relation)]], [[Continuous Image of a Compact Space is Compact]], [[Compact Subspace of a Hausdorff Space is Closed]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§19 Limit Point Compactness#^thm-19-4|590 §19.4]]
 
 > [!remark] Remark
-> The one place the group enters the direct proof is $|\lambda \vec u - \lambda \vec z_1| = |\vec u - \vec z_1|$: every $\lambda \in S^1$ is an *isometry*, so the thickening by $r$ is uniform over the whole group. That uniformity — a compact group acting by isometries — is the concrete mechanism behind [[§13 Group Actions and Orbit Spaces#^cor-13-4|Corollary §13.4]], and it is exactly what fails for $\mathbb{R}^+$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|Example §13.6]], where $t \cdot (x,y) = (tx, y/t)$ distorts distances without bound.
+> The one place the group enters the direct proof is $|\lambda \vec u - \lambda \vec z_1| = |\vec u - \vec z_1|$: every $\lambda \in S^1$ is an *isometry*, so the thickening by $r$ is uniform over the whole group. That uniformity — a compact group acting by isometries — is the concrete mechanism behind [[§13 Group Actions and Orbit Spaces#^cor-13-4|Corollary §13.4]], and it is exactly what fails for $\mathbb{R}^+$ in [[§13 Group Actions and Orbit Spaces#^ex-13-8|Example §13.8]], where $t \cdot (x,y) = (tx, y/t)$ distorts distances without bound.
 
 ^rem-9-1
 
@@ -169,8 +169,24 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 > [!remark]- Connections
 > - The $\mathbb{C}^\times$-description gives homogeneous coordinates: [[§18 Projective Spaces as Smooth Manifolds#^def-18-1|Def. §18.1]]; the real analogue is [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|§18.6]].
 
+> [!theorem] Lemma §9.4: A Punctured Complex Line Meets the Sphere in One Circle
+> For a unit vector $\vec z \in S^{2n+1} \subseteq \mathbb{C}^{n+1}$, the part of its $\mathbb{C}^\times$-orbit lying on the sphere is exactly its $S^1$-orbit:
+>
+> $$
+> \{\lambda\vec z \mid \lambda \in \mathbb{C}^\times\} \cap S^{2n+1} = \{\xi\vec z \mid \xi \in S^1\}.
+> $$
+>
+> So each punctured complex line through the origin meets $S^{2n+1}$ in precisely one circle.
+
+^lem-9-4
+
+> [!proof]+ Proof
+> For $\lambda \in \mathbb{C}^\times$, $|\lambda\vec z|^2 = \sum_k |\lambda z_k|^2 = |\lambda|^2 \sum_k |z_k|^2 = |\lambda|^2$, so $|\lambda\vec z| = |\lambda|$, which equals $1$ iff $\lambda \in S^1$. A punctured line through the origin is $\mathbb{C}^\times \vec w$ for some $\vec w \neq 0$, and $\mathbb{C}^\times\vec w = \mathbb{C}^\times(\vec w/|\vec w|)$ with $\vec w/|\vec w|$ a unit vector; by the first part it meets the sphere in the single $S^1$-orbit of $\vec w/|\vec w|$.
+
+^pf-9-4
+
 > [!remark] Remark
-> The key identity behind (2) is that for a unit vector $\vec z$ the part of its $\mathbb{C}^\times$-orbit lying on the sphere is exactly its $S^1$-orbit: $|\lambda\vec z| = |\lambda|$, which equals $1$ iff $\lambda \in S^1$. So each punctured line meets the unit sphere in precisely one circle, and normalizing $\vec z \mapsto \vec z/|\vec z|$ is the bridge between the two descriptions — a point downstairs, a whole line upstairs in one, a circle upstairs in the other.
+> Lemma [[§9 Complex Projective Space#^lem-9-4|§9.4]] is the key identity behind (2): each punctured line meets the unit sphere in precisely one circle, and normalizing $\vec z \mapsto \vec z/|\vec z|$ is the bridge between the two descriptions — a point downstairs, a whole line upstairs in one, a circle upstairs in the other.
 
 ^rem-9-2
 
@@ -178,7 +194,7 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 *A cartoon in real dimensions: the complex line $\mathbb{C}\vec z$ is drawn as a plane (blue) through the removed origin, and the unit sphere $S^{2n+1}$ cuts it in exactly one circle, the $S^1$-orbit $S^1\vec z$ (red). Normalizing $g(\vec w) = \vec w/|\vec w|$ pushes every point of the punctured line radially onto that circle — $\vec z$ and $\lambda\vec z$ land on different points of it, but on the same circle. So one $\mathbb{C}^\times$-orbit upstairs corresponds to one $S^1$-orbit, which is why $\Theta$ is a bijection.*
 
 > [!example] Example §9.1: Why the Origin Must Be Removed
-> Let $\mathbb{C}^\times$ act instead on all of $\mathbb{C}^{n+1}$ by scalar multiplication. The action is still continuous, but the orbit space acquires one extra point, the orbit $\{\lambda \cdot 0\} = \{0\}$, which is not a line; and that point cannot be separated from any other. Indeed, let $U$ be an open set of the quotient containing $\{0\}$. Its preimage is open, saturated, and contains $0$, hence contains a ball $B(0,\varepsilon)$. For every $\vec z \neq 0$ the vector $\frac{\varepsilon}{2|\vec z|}\vec z$ lies in that ball and in the orbit of $\vec z$, so by saturation the preimage contains every orbit. Thus $U$ is the whole quotient: every neighbourhood of $\{0\}$ contains every point, and the quotient is not Hausdorff. Deleting the origin removes exactly this one orbit. Every orbit accumulates at $0$ — the same pathology as [[§13 Group Actions and Orbit Spaces#^ex-13-6|Example §13.6]], where orbits accumulate on other orbits, here concentrated at a single point.
+> Let $\mathbb{C}^\times$ act instead on all of $\mathbb{C}^{n+1}$ by scalar multiplication. The action is still continuous, but the orbit space acquires one extra point, the orbit $\{\lambda \cdot 0\} = \{0\}$, which is not a line; and that point cannot be separated from any other. Indeed, let $U$ be an open set of the quotient containing $\{0\}$. Its preimage is open, saturated, and contains $0$, hence contains a ball $B(0,\varepsilon)$. For every $\vec z \neq 0$ the vector $\frac{\varepsilon}{2|\vec z|}\vec z$ lies in that ball and in the orbit of $\vec z$, so by saturation the preimage contains every orbit. Thus $U$ is the whole quotient: every neighbourhood of $\{0\}$ contains every point, and the quotient is not Hausdorff. Deleting the origin removes exactly this one orbit. Every orbit accumulates at $0$ — the same pathology as [[§13 Group Actions and Orbit Spaces#^ex-13-8|Example §13.8]], where orbits accumulate on other orbits, here concentrated at a single point.
 
 ^ex-9-1
 

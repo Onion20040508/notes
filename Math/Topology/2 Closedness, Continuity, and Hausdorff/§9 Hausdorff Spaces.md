@@ -19,7 +19,7 @@ tags: [topology, math590]
 > [!remark]- Connections
 > - Every metric space is Hausdorff: [[§12 Metric Topology#^thm-12-4|Every Metric Space is Hausdorff]].
 > - Stronger separation axioms: [[§23 Separation Axioms#^thm-23-1|Separation Hierarchy]].
-> - Why manifolds assume it: the line with two origins is [[§2 Topological Manifolds#^def-2-1|locally Euclidean]] and second countable but not Hausdorff, [[§1 Point-Set Topology Review#^ex-1-4|591 Ex. §1.4]].
+> - Why manifolds assume it: the line with two origins is [[§2 Topological Manifolds#^def-2-1|locally Euclidean]] and second countable but not Hausdorff, [[§1 Point-Set Topology Review#^ex-1-5|591 Ex. §1.5]].
 
 > [!remark] Remark: Why Hausdorff is the “Reasonable” Separation Axiom
 > The Hausdorff property is the minimal assumption that makes a topological space behave like what we expect from analysis:

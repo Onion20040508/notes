@@ -9,9 +9,9 @@ The unit sphere $S^n = \{x \in \mathbb{R}^{n+1} \mid \lvert x \rvert = 1\}$, the
 - $S^2$ is a topological $2$-manifold, by hemisphere charts ([[§8 Spheres#^ex-8-1|§8]])
 - $S^n$ is a topological $n$-manifold, covered by $2(n+1)$ hemisphere charts ([[§8 Spheres#^prop-8-1|§8]])
 - Two hemisphere charts on $S^2$: the transition map is $C^\infty$ ([[§8 Spheres#^ex-8-2|§8]])
-- The orbits of $\mathrm{SO}(3)$ on $\mathbb{R}^3$ are the concentric spheres and the origin ([[§13 Group Actions and Orbit Spaces#^ex-13-5|§13]])
+- The orbits of $\mathrm{SO}(3)$ on $\mathbb{R}^3$ are the concentric spheres and the origin ([[§13 Group Actions and Orbit Spaces#^ex-13-7|§13]])
 - The isotropy of the north pole under $\mathrm{SO}(3)$ is $\mathrm{SO}(2)$ ([[§14 Homogeneous Spaces#^ex-14-2|§14]])
-- $S^2 \cong \mathrm{SO}(3)/\mathrm{SO}(2)$ as a homogeneous space ([[§14 Homogeneous Spaces#^ex-14-3|§14]])
+- $S^2 \cong \mathrm{SO}(3)/\mathrm{SO}(2)$ as a homogeneous space ([[§14 Homogeneous Spaces#^ex-14-5|§14]])
 - $\mathbb{CP}^1$ is homeomorphic to $S^2$, via stereographic projection ([[§18 Projective Spaces as Smooth Manifolds#^prop-18-4|§18]])
 - Homeomorphic does not imply diffeomorphic: Milnor's exotic $7$-spheres ([[§19 Smooth Functions and Smooth Maps#^rem-19-4|§19]])
 - $S^7$ carries smooth structures not diffeomorphic to the standard one ([[§19 Smooth Functions and Smooth Maps#^rem-19-8|§19]])
@@ -30,13 +30,13 @@ The unit sphere $S^n = \{x \in \mathbb{R}^{n+1} \mid \lvert x \rvert = 1\}$, the
 ![[§8 Spheres#^ex-8-2]]
 
 ## The orbits of $\mathrm{SO}(3)$ on $\mathbb{R}^3$ are the concentric spheres and the origin
-![[§13 Group Actions and Orbit Spaces#^ex-13-5]]
+![[§13 Group Actions and Orbit Spaces#^ex-13-7]]
 
 ## The isotropy of the north pole under $\mathrm{SO}(3)$ is $\mathrm{SO}(2)$
 ![[§14 Homogeneous Spaces#^ex-14-2]]
 
 ## $S^2 \cong \mathrm{SO}(3)/\mathrm{SO}(2)$ as a homogeneous space
-![[§14 Homogeneous Spaces#^ex-14-3]]
+![[§14 Homogeneous Spaces#^ex-14-5]]
 
 ## $\mathbb{CP}^1$ is homeomorphic to $S^2$, via stereographic projection
 ![[§18 Projective Spaces as Smooth Manifolds#^prop-18-4]]

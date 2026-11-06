@@ -99,7 +99,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 > [!proof]+ Proof
 > *(Stated in Lecture 15, by analogy with one-forms; filled in.)* Three things are claimed: the expansion of $\mathbf{X}$ at each point of $U$, the two formulas for its coefficients, and the smoothness criterion.
 >
-> *The expansion.* Fix $p \in U$. Since $\mathbf{X}$ is a section of $TM$, $\mathbf{X}_p \in T_pM$ is a derivation at $p$. The universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], applied to $D = \mathbf{X}_p$, gives
+> *The expansion.* Fix $p \in U$. Since $\mathbf{X}$ is a section of $TM$, $\mathbf{X}_p \in T_pM$ is a derivation at $p$. The universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], applied to $D = \mathbf{X}_p$, gives
 >
 > $$
 > \mathbf{X}_p = \sum_{j=1}^m \mathbf{X}_p[x^j]\, \frac{\partial}{\partial x^j}\Big|_p = \sum_{j=1}^m \mathbf{X}^j(p)\, \frac{\partial}{\partial x^j}\Big|_p , \qquad \mathbf{X}^j(p) := \mathbf{X}_p[x^j] .
@@ -127,7 +127,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 ^pf-56-1
 
-*Uses:* [[§56 Vector Fields#^def-56-1|Def. §56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^prop-51-2|§51.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§3 Subspaces and Products#^def-3-2|Def. §3.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]]
+*Uses:* [[§56 Vector Fields#^def-56-1|Def. §56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^prop-51-2|§51.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§3 Subspaces and Products#^def-3-2|Def. §3.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]]
 
 > [!theorem] Proposition §56.2: The Space of Vector Fields Is a Real Vector Space
 > Let $M$ be a smooth manifold.
@@ -313,7 +313,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 ^prop-56-4
 
 > [!proof]+ Proof
-> *(Stated in Lecture 15, and again in Lecture 16, among technical results not needed in the homework. Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function is constructed in Euclidean space first, and then pulled back with the chart. Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in Theorem [[§66 The Whitney Embedding Theorem#^thm-66-8|§66.8]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
+> *(Stated in Lecture 15, and again in Lecture 16, among technical results not needed in the homework. Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function is constructed in Euclidean space first, and then pulled back with the chart. Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
 >
 > *1. A smooth function vanishing to infinite order.* Let $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$. By induction, for $t > 0$, $h^{(k)}(t) = P_k(1/t)\, e^{-1/t}$ with $P_k$ a polynomial, since $\frac{d}{dt}\big(P(1/t) e^{-1/t}\big) = \big(-P'(1/t)/t^2 + P(1/t)/t^2\big) e^{-1/t}$. As $s^j e^{-s} \to 0$ for $s = 1/t \to \infty$, every $h^{(k)}(t) \to 0$ as $t \to 0^+$, and the right difference quotient $\big(h^{(k)}(t) - 0\big)/t = (1/t)\, P_k(1/t)\, e^{-1/t} \to 0$ as well. So by induction every $h^{(k)}$ exists at $0$ and equals $0$, and $h$ is smooth on $\mathbb{R}$, with $h > 0$ exactly on $(0, \infty)$.
 >
@@ -329,7 +329,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 
 ^pf-56-4
 
-*Uses:* [[§66 The Whitney Embedding Theorem#^thm-66-8|§66.8]], [[§56 Vector Fields#^def-56-9|Def. §56.9]]
+*Uses:* [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], [[§56 Vector Fields#^def-56-9|Def. §56.9]]
 
 ![[m591-53-1.svg]]
 
@@ -359,7 +359,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 > [!proof]+ Proof
 > *(Lecture 16.)* Two things are claimed: $\tilde f \in C^\infty(M)$, and $[\tilde f] = [f] = \gamma$ in $C^\infty_p(M)$.
 >
-> *$\tilde f$ is smooth.* Smoothness of a function is tested at each point with a chart at that point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]), and a smooth chart may be shrunk to any smaller open neighbourhood of the point (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1)); so it suffices to cover $M$ by open sets on each of which $\tilde f$ is smooth. Take the two sets $U$ and $M \setminus \operatorname{supp}\chi$. The second is open because $\operatorname{supp}\chi$ is closed, being a closure (Definition [[§56 Vector Fields#^def-56-7|§56.7]]). They cover $M$: a point $q \notin U$ is not in $\operatorname{supp}\chi$, because $\operatorname{supp}\chi \subseteq U$.
+> *$\tilde f$ is smooth.* Smoothness of a function is tested at each point with a chart at that point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]), and a smooth chart may be shrunk to any smaller open neighbourhood of the point (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)); so it suffices to cover $M$ by open sets on each of which $\tilde f$ is smooth. Take the two sets $U$ and $M \setminus \operatorname{supp}\chi$. The second is open because $\operatorname{supp}\chi$ is closed, being a closure (Definition [[§56 Vector Fields#^def-56-7|§56.7]]). They cover $M$: a point $q \notin U$ is not in $\operatorname{supp}\chi$, because $\operatorname{supp}\chi \subseteq U$.
 > - On $U$, $\tilde f = \chi f$ is a product of the smooth functions $\chi|_U$ and $f$, hence smooth.
 > - On $M \setminus \operatorname{supp}\chi$, $\tilde f \equiv 0$. Let $q \notin \operatorname{supp}\chi$. Then $\chi(q) = 0$, since every point where $\chi \ne 0$ lies in $\operatorname{supp}\chi$. If $q \in U$, $\tilde f(q) = \chi(q)\, f(q) = 0 \cdot f(q) = 0$; if $q \notin U$, $\tilde f(q) = 0$ by definition. A constant function is smooth.
 >
@@ -377,7 +377,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 
 ^pf-56-5
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§56 Vector Fields#^def-56-7|Def. §56.7]], [[§56 Vector Fields#^def-56-9|Def. §56.9]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§56 Vector Fields#^prop-56-4|§56.4]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§56 Vector Fields#^def-56-7|Def. §56.7]], [[§56 Vector Fields#^def-56-9|Def. §56.9]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§56 Vector Fields#^prop-56-4|§56.4]]
 
 ![[m591-47-1.svg]]
 *The extension of a germ. Above: $f$ is defined only on $U$ (its ends are open), and $\chi$ (dashed) is a bump function at $p$ subordinate to $U$. Below: $\tilde f = \chi f$, extended by $0$. On $V$, where $\chi \equiv 1$, it agrees with $f$ (dotted), so it has the same germ at $p$; it dies off inside $U$ and is $0$ outside $\operatorname{supp}\chi$, so it is smooth on all of $M$.*
@@ -453,13 +453,13 @@ Derivations are local, thanks to the product rule and the existence of bump func
 >
 > So $\mathbf{X}_p$ is a derivation at $p$, i.e. $\mathbf{X}_p \in T_pM$ (Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]] and [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]). Thus $\mathbf{X} : p \mapsto \mathbf{X}_p$ is a section of $TM$, so far not known to be smooth.
 >
-> *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]), and $\mathbf{X}_p(x^j) = D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$. *(Completion.)* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to find an open $V \ni p$ on which $\mathbf{X}$ is smooth. Take one bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]), equal to $1$ on an open $V \ni p$. Then $V \subseteq U$, since $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$, extended by $0$ outside $U$: the single extension of Corollary [[§56 Vector Fields#^cor-56-5|§56.5]], smooth on $M$. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$ (because $\chi = 1$ there), so $\tilde x^j$ is a global representative of the germ of $x^j$ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and by step 1
+> *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), and $\mathbf{X}_p(x^j) = D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$. *(Completion.)* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to find an open $V \ni p$ on which $\mathbf{X}$ is smooth. Take one bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]), equal to $1$ on an open $V \ni p$. Then $V \subseteq U$, since $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$, extended by $0$ outside $U$: the single extension of Corollary [[§56 Vector Fields#^cor-56-5|§56.5]], smooth on $M$. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$ (because $\chi = 1$ there), so $\tilde x^j$ is a global representative of the germ of $x^j$ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and by step 1
 >
 > $$
 > \mathbf{X}_q(x^j) = D(\tilde x^j)(q) \qquad \text{for all } q \in V .
 > $$
 >
-> The right side is the function $D(\tilde x^j) \in C^\infty(M)$ evaluated at $q$; its restriction to $V$ is smooth. Now $(V, (x^1|_V, \ldots, x^m|_V))$ is a smooth chart (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1)), and in it the coefficients of $\mathbf{X}$ are $\mathbf{X}^j(q) = \mathbf{X}_q(x^j)$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]), which we have just shown to be smooth on $V$. By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], $\mathbf{X}$ is smooth on $V$. As $p$ was arbitrary, $\mathbf{X}$ is smooth, and $\mathbf{X} \in \mathfrak{X}(M)$.
+> The right side is the function $D(\tilde x^j) \in C^\infty(M)$ evaluated at $q$; its restriction to $V$ is smooth. Now $(V, (x^1|_V, \ldots, x^m|_V))$ is a smooth chart (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)), and in it the coefficients of $\mathbf{X}$ are $\mathbf{X}^j(q) = \mathbf{X}_q(x^j)$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]), which we have just shown to be smooth on $V$. By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], $\mathbf{X}$ is smooth on $V$. As $p$ was arbitrary, $\mathbf{X}$ is smooth, and $\mathbf{X} \in \mathfrak{X}(M)$.
 >
 > *5. $D = D_\mathbf{X}$.* Let $f \in C^\infty(M)$ and $p \in M$. The function $f$ is a global representative of its own germ $[f]$ at $p$, so step 1 with $\gamma = [f]$ and the definition of $D_\mathbf{X}$ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]) give
 >
@@ -479,7 +479,7 @@ Derivations are local, thanks to the product rule and the existence of bump func
 
 ^pf-56-7
 
-*Uses:* [[§56 Vector Fields#^cor-56-5|§56.5]], [[§56 Vector Fields#^prop-56-4|§56.4]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§56 Vector Fields#^lem-56-6|§56.6]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-3|§56.3]]
+*Uses:* [[§56 Vector Fields#^cor-56-5|§56.5]], [[§56 Vector Fields#^prop-56-4|§56.4]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§56 Vector Fields#^lem-56-6|§56.6]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-3|§56.3]]
 
 So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto the derivations of $C^\infty(M)$. *Notation (Lecture 16).* From now on $D_\mathbf{X}$ is written $\mathbf{X}$: writing $\mathbf{X}(f)$ signals that $\mathbf{X}$ is being thought of as an operator.
 
@@ -497,7 +497,7 @@ So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto 
 >
 > *$\mathbf{X}$ smooth $\Rightarrow$ every $\mathbf{X}f$ smooth.* If $\mathbf{X}$ is smooth, then $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{X}f$ is the function $D_\mathbf{X}f$, which is smooth by Lemma [[§56 Vector Fields#^lem-56-3|§56.3]].
 >
-> *Every $\mathbf{X}f$ smooth $\Rightarrow$ $\mathbf{X}$ smooth.* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to show that every $p \in M$ has an open neighbourhood $V$ on which $\mathbf{X}$ is smooth. Let $p \in M$ and $(U, (x^1, \ldots, x^m))$ a chart at $p$. Take a bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$ (extended by $0$ outside $U$) be the global function of Corollary [[§56 Vector Fields#^cor-56-5|§56.5]]. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$, so they have the same germ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and the derivation $\mathbf{X}_q$, which acts on germs, gives them the same value. In the smooth chart $(V, (x^j|_V))$ (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1)) the coefficients of $\mathbf{X}$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]) are therefore
+> *Every $\mathbf{X}f$ smooth $\Rightarrow$ $\mathbf{X}$ smooth.* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to show that every $p \in M$ has an open neighbourhood $V$ on which $\mathbf{X}$ is smooth. Let $p \in M$ and $(U, (x^1, \ldots, x^m))$ a chart at $p$. Take a bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$ (extended by $0$ outside $U$) be the global function of Corollary [[§56 Vector Fields#^cor-56-5|§56.5]]. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$, so they have the same germ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and the derivation $\mathbf{X}_q$, which acts on germs, gives them the same value. In the smooth chart $(V, (x^j|_V))$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)) the coefficients of $\mathbf{X}$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]) are therefore
 >
 > $$
 > \mathbf{X}^j(q) = \mathbf{X}_q[x^j] = \mathbf{X}_q[\tilde x^j] = (\mathbf{X}\tilde x^j)(q), \qquad q \in V,
@@ -507,4 +507,4 @@ So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto 
 
 ^pf-56-8
 
-*Uses:* [[§56 Vector Fields#^prop-56-7|§56.7]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§56 Vector Fields#^prop-56-4|§56.4]], [[§56 Vector Fields#^cor-56-5|§56.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§56 Vector Fields#^prop-56-1|§56.1]]
+*Uses:* [[§56 Vector Fields#^prop-56-7|§56.7]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§56 Vector Fields#^prop-56-4|§56.4]], [[§56 Vector Fields#^cor-56-5|§56.5]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§56 Vector Fields#^prop-56-1|§56.1]]

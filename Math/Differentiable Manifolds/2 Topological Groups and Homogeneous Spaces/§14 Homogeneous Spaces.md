@@ -129,7 +129,7 @@ tags: [differentiable-manifolds, math591]
 > [!remark]- Connections
 > - $X$ is indiscrete, the standard non-$T_1$ space: [[Discrete and indiscrete topologies]].
 
-The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-4|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-5|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-3|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
+The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
 
 > [!example] Example §14.2: Isotropy of the North Pole under $\mathrm{SO}(3)$
 > Let $\mathrm{SO}(3)$ act on $S^2 = \{x \in \mathbb{R}^3 \mid |x| = 1\}$ by rotations (matrix multiplication; it preserves the sphere since orthogonal matrices preserve norms). For $x_0 = (0,0,1)$, the answer from the floor: the isotropy consists of the rotations about the $z$-axis. In matrices, $g \cdot e_3 = e_3$ says the third column of $g$ is $e_3$; orthogonality then forces the third row to be $e_3^T$ as well (the columns are orthonormal, so the first two columns are orthogonal to $e_3$, i.e. have zero third entry), and the remaining $2 \times 2$ block is orthogonal with determinant $1$:
@@ -241,11 +241,27 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 > - In 493 the same orbits come from the *right* action $g \star h = gh$: [[§28 Left and Right Cosets#^prop-28-1|493 §28.1 (Cosets Are Orbits)]]; converting it to a left action by inverting is [[§25 Actions#^prop-25-1|493 §25.1 (A Left Action Gives a Right Action)]].
 
 > [!remark] Remark
-> The inverse in the formula is not cosmetic. The first thing one writes, $(h,g) \mapsto hg$, is also an action, but its orbits are the *right* cosets $Hg$, giving the other quotient $H \backslash G$. To produce *left* cosets from a *left* action of $H$ one must multiply on the right and invert, and that is exactly what makes the second axiom come out in the correct order, as the proof shows. For non-abelian $H$ the naive formula $(h,g) \mapsto gh$ fails the axiom outright.
+> The inverse in the formula is not cosmetic: the two formulas without it either produce the wrong cosets (Example [[§14 Homogeneous Spaces#^ex-14-3|§14.3]]) or, for non-abelian $H$, fail to be an action (Example [[§14 Homogeneous Spaces#^ex-14-4|§14.4]]). To produce *left* cosets from a *left* action of $H$ one must multiply on the right and invert, and that is exactly what makes the second axiom come out in the correct order, as the proof shows.
 >
 > Proposition [[§14 Homogeneous Spaces#^prop-14-4|§14.4]] is a statement about sets; the topological half is Definition [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|§15.1]] together with the observation that the two projections $G \to G/H$ — the canonical one of Definition [[§14 Homogeneous Spaces#^def-14-7|§14.7]] and the orbit projection of Definition [[§13 Group Actions and Orbit Spaces#^def-13-5|§13.5]] — are the same function, so the two quotient topologies they induce are the same topology.
 
 ^rem-14-5
+
+> [!example] Example §14.3: Left Multiplication Gives Right Cosets
+> The first formula one writes, $(h, g) \mapsto hg$, is also an action of $H$ on $G$ (Example [[§13 Group Actions and Orbit Spaces#^ex-13-2|§13.2]]), but its orbits are the *right* cosets: $\mathcal{O}_g = \{\, hg \mid h \in H \,\} = Hg$. So its orbit space is the set $H \backslash G$ of right cosets, the other quotient, and not $G/H$.
+
+^ex-14-3
+
+> [!example] Example §14.4: Right Multiplication Without the Inverse Is Not an Action
+> For non-abelian $H$ the naive formula $h \cdot g = gh$ fails the second axiom of Definition [[§13 Group Actions and Orbit Spaces#^def-13-1|§13.1]] outright. The first axiom holds: $e \cdot g = ge = g$. For the second, compute both sides for $h, h' \in H$ and $g \in G$:
+>
+> $$
+> h \cdot (h' \cdot g) = (g h')\, h = g\, h' h, \qquad (h h') \cdot g = g\, h h'.
+> $$
+>
+> These agree iff $g h' h = g h h'$, that is (cancelling $g$ on the left) iff $h' h = h h'$. Since $H$ is non-abelian there are $h, h' \in H$ with $h h' \neq h' h$, and for these (and any $g$, say $g = e$) the axiom fails.
+
+^ex-14-4
 
 > [!theorem] Lemma §14.5: Homogeneous Spaces Are Coset Spaces
 > Suppose $G$ acts transitively on $X$, fix a *base point* $x_0 \in X$, and let $H = H_{x_0}$. Then
@@ -278,8 +294,8 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 > - Conversely every $G/H$ carries a transitive action with isotropy $H$ at $eH$: [[§31 G Acting on Coset Spaces#^prop-31-1|493 §31.1]].
 > - Used in Quantum Field Theory: the orbit of a particle's momentum as a coset space of the Lorentz group, the mass hyperboloid $SO^+(1,3)/SO(3)$ as the sphere is $SO(3)/SO(2)$ — [[§C3.6★ Particle States and the Little Group#^rem-c3-6-1|QFT Remark: What the definition fixes, and what it leaves free]].
 
-> [!example] Example §14.3: The Sphere as a Homogeneous Space
-> $\mathrm{SO}(3)$ acts transitively on $S^2$: the orbit of $e_3$ is the whole sphere (the argument of Example [[§13 Group Actions and Orbit Spaces#^ex-13-5|§13.5]] with $r = 1$). By Example [[§14 Homogeneous Spaces#^ex-14-2|§14.2]] the isotropy of $e_3$ is the copy $H$ of $\mathrm{SO}(2)$ in the upper-left block. Hence, as sets (and, by the [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|theorem below]], as spaces),
+> [!example] Example §14.5: The Sphere as a Homogeneous Space
+> $\mathrm{SO}(3)$ acts transitively on $S^2$: the orbit of $e_3$ is the whole sphere (the argument of Example [[§13 Group Actions and Orbit Spaces#^ex-13-7|§13.7]] with $r = 1$). By Example [[§14 Homogeneous Spaces#^ex-14-2|§14.2]] the isotropy of $e_3$ is the copy $H$ of $\mathrm{SO}(2)$ in the upper-left block. Hence, as sets (and, by the [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|theorem below]], as spaces),
 >
 > $$
 > S^2 \;\cong\; \mathrm{SO}(3)/\mathrm{SO}(2).
@@ -295,7 +311,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 >
 > *Lee: Examples 21.15(a) and 21.19(a)*
 
-^ex-14-3
+^ex-14-5
 
 > [!remark]- Connections
 > - The $\mathrm{O}_3$ version of orbit and stabilizer: [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]].
@@ -310,4 +326,4 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 *(Not from lecture; animation added, vault only.)* Three moves. Rotations $h \in H$ about the vertical axis turn a frame at $N$ but fix $N$. A rotation $g$ carries $N$ to $g \cdot N$. Then $gh$ for all $h \in H$: the frame at $g \cdot N$ spins, the point stays, so the whole coset $gH$ is one point of $S^2$.
 
-The picture behind Example [[§14 Homogeneous Spaces#^ex-14-3|§14.3]]. The rotations about the vertical axis fix the north pole $N$; they form the isotropy group $H \cong \mathrm{SO}(2)$. A rotation $g$ carries $N$ to $g \cdot N$, and the rotations carrying $N$ to that same point are exactly the products $gh$ with $h \in H$: the fibre of the orbit map $\theta_N$ over $g \cdot N$ is the coset $gH$. Collapsing each fibre to a point is the passage from $\mathrm{SO}(3)$ to $\mathrm{SO}(3)/\mathrm{SO}(2)$, which is why the coset space is the sphere (Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|§15.3]]).
+The picture behind Example [[§14 Homogeneous Spaces#^ex-14-5|§14.5]]. The rotations about the vertical axis fix the north pole $N$; they form the isotropy group $H \cong \mathrm{SO}(2)$. A rotation $g$ carries $N$ to $g \cdot N$, and the rotations carrying $N$ to that same point are exactly the products $gh$ with $h \in H$: the fibre of the orbit map $\theta_N$ over $g \cdot N$ is the coset $gH$. Collapsing each fibre to a point is the passage from $\mathrm{SO}(3)$ to $\mathrm{SO}(3)/\mathrm{SO}(2)$, which is why the coset space is the sphere (Theorem [[§15 The Topology of G∕H and Real Grassmannians#^thm-15-3|§15.3]]).

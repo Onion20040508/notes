@@ -15,7 +15,7 @@ tags: [differentiable-manifolds, hub]
 - [[§21 Linear Algebra Toolkit#^thm-21-5|Theorem §21.5: Non-Degenerate Pairings]]
 - [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|Lemma §28.2: First Properties of Derivations]]
 - [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|Lemma §28.10: The Pushforward Along a Constant Map]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6: Basis Theorem]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7: Basis Theorem]]
 - [[§32 The Cotangent Space#^prop-32-2|Proposition §32.2: The Differential Evaluates Derivations]]
 - [[§32 The Cotangent Space#^cor-32-3|Corollary §32.3: Properties of the Differential of a Function]]
 - [[§32 The Cotangent Space#^def-32-5|Definition §32.5: The Differential of a Function]]
@@ -24,7 +24,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§34 The Cotangent Space from Germs#^thm-34-5|Theorem §34.5: Dimension of the Cotangent Space]]
-- [[§34 The Cotangent Space from Germs#^prop-34-7|Proposition §34.7: Pullback of Covectors from the Pullback of Germs]]
+- [[§34 The Cotangent Space from Germs#^prop-34-8|Proposition §34.8: Pullback of Covectors from the Pullback of Germs]]
 
 ## Connections
 - **What it gives.** T*_pM, defined as the dual (T_pM)*, also has a description with no dualizing: I_p/I_p², with the class of f going to df_p. So one could define the cotangent space first and the tangent space as its dual, the order Uribe called in some ways more natural ([[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|A Derivation Sees Only the First Derivatives]]). Lecture 15 recalled it when building the cotangent bundle ([[§52 The Cotangent Bundle#Lecture 15 and the Standard Coordinates|§52]]); the recap of covectors restates it ([[§50 Recap꞉ Covectors and the Four Differentials|§50]], Step 4).

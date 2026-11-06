@@ -61,7 +61,7 @@ tags: [group-theory, math493]
 *Left: $GL_3(\mathbb{R})$ has two orbits on $\mathbb{R}^3$, the origin (red) and everything else (blue); any $v \neq 0$ is reached from $e_1$ by an invertible $P$ with first column $v$. Right: $O_3(\mathbb{R})$ preserves length, so its orbits are the origin and the spheres $S_r$ (blue), and $e_1$ reaches only the vectors $w$ with $|w| = 1$. The stabilizer of $e_1$ acts as $O_2(\mathbb{R})$ on the plane $e_1^\perp$, moving the great circle $e_1^\perp \cap S_1$ (red) within itself.*
 
 > [!remark]- Connections
-> - In 591 the rotation version makes the unit sphere a homogeneous space, SO(3)/SO(2) ≅ S², [[§14 Homogeneous Spaces#^ex-14-3|591 Ex. §14.3]] (orbits as in [[§13 Group Actions and Orbit Spaces#^ex-13-5|591 Ex. §13.5]]); O(n) also acts transitively on the Grassmannians, [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|591 Prop. §15.6]].
+> - In 591 the rotation version makes the unit sphere a homogeneous space, SO(3)/SO(2) ≅ S², [[§14 Homogeneous Spaces#^ex-14-5|591 Ex. §14.5]] (orbits as in [[§13 Group Actions and Orbit Spaces#^ex-13-7|591 Ex. §13.7]]); O(n) also acts transitively on the Grassmannians, [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|591 Prop. §15.6]].
 > - Used in Relativity: the orbits of the Lorentz group are hyperboloids and light cones, where those of the rotations are spheres — [[§B1.3 Causal Structure and Proper Time#^rem-b1-3-1|REL Remark: Normal forms, and the orbits of the Lorentz group]].
 
 > [!theorem] Proposition §32.3: Rotational Symmetries of the Cube

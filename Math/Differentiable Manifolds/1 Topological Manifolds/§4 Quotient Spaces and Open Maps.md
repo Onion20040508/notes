@@ -65,7 +65,7 @@ tags: [differentiable-manifolds, math591]
 > 3. **What the open sets are.** $W \subseteq X/{\sim}$ is open iff $\pi^{-1}(W) = \bigcup_{[x] \in W} [x]$—the union in $X$ of all the classes belonging to $W$—is open in $X$. So the open sets of $X/{\sim}$ correspond exactly to the open subsets of $X$ that are *unions of classes* (the *saturated* open sets, [[§4 Quotient Spaces and Open Maps#Open Maps and Open Relations|§4, Open Maps and Open Relations]]).
 > 4. **What an identification does.** When $X/{\sim}$ is identified with a concrete space $Y$ via a bijection $\Phi$, say what $\Phi$ does to a class, and what its inverse does to a point of $Y$.
 >
-> For the line with two origins ([[§4 Quotient Spaces and Open Maps#^ex-4-1|Example §4.1]]): a point is a pair $\{(x,1), (x,2)\}$ for $x \neq 0$ or a singleton $\{(0,i)\}$; $\pi$ forgets the label except at $0$; a set is open iff its preimage, a union of such pairs and singletons, is open in the two lines; the identification with [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]] sends $\{(x,1),(x,2)\} \mapsto x$ and $\{(0,i)\} \mapsto 0_i$.
+> For the line with two origins ([[§4 Quotient Spaces and Open Maps#^ex-4-1|Example §4.1]]): a point is a pair $\{(x,1), (x,2)\}$ for $x \neq 0$ or a singleton $\{(0,i)\}$; $\pi$ forgets the label except at $0$; a set is open iff its preimage, a union of such pairs and singletons, is open in the two lines; the identification with [[§1 Point-Set Topology Review#^ex-1-5|Example §1.5]] sends $\{(x,1),(x,2)\} \mapsto x$ and $\{(0,i)\} \mapsto 0_i$.
 
 ^rem-4-1
 
@@ -81,13 +81,13 @@ tags: [differentiable-manifolds, math591]
 > X = (\mathbb{R} \times \{1\}) \cup (\mathbb{R} \times \{2\})
 > $$
 >
-> (two disjoint copies of the real line), and define $(x, 1) \sim (x, 2)$ for all $x \neq 0$ — these, together with the relations forced by reflexivity and symmetry, are the only identifications. In particular $(0,1) \not\sim (0,2)$: the two origins survive as distinct points. The quotient space is exactly the real line with two origins of [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]], which is not $T_2$ — even though $X$ itself, a disjoint union of two lines, is a metrizable space with every good property one could ask for.
+> (two disjoint copies of the real line), and define $(x, 1) \sim (x, 2)$ for all $x \neq 0$ — these, together with the relations forced by reflexivity and symmetry, are the only identifications. In particular $(0,1) \not\sim (0,2)$: the two origins survive as distinct points. The quotient space is exactly the real line with two origins of [[§1 Point-Set Topology Review#^ex-1-5|Example §1.5]], which is not $T_2$ — even though $X$ itself, a disjoint union of two lines, is a metrizable space with every good property one could ask for.
 >
 > *Lee: Problem 1-1*
 
 ^ex-4-1
 
-*Uses:* [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§4 Quotient Spaces and Open Maps#^prop-4-2|§4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]]
+*Uses:* [[§1 Point-Set Topology Review#^ex-1-5|Ex. §1.5]], [[§4 Quotient Spaces and Open Maps#^prop-4-2|§4.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]]
 
 ![[m591-3-8.svg]]
 *Two copies of $\mathbb{R}$ (blue) glued along every vertical pair $(x,1) \sim (x,2)$ with $x \neq 0$ — except the two origins (red). The glued pairs at $x = \tfrac1n$ crowd in on the unglued pair $\big((0,1),(0,2)\big)$: that is the sequence in $\Gamma$ whose limit escapes $\Gamma$ in [[§10 The Line with Two Origins#^ex-10-1|Example §10.1]], and downstairs it is why every neighbourhood of $0_1$ meets every neighbourhood of $0_2$.*
@@ -97,20 +97,20 @@ tags: [differentiable-manifolds, math591]
 *(Not from lecture; animation added, vault only.)* The quotient built in motion: the two copies of $\mathbb{R}$ are glued along every vertical pair with $x \neq 0$ and slide together into one line, except the two origins $0_1$, $0_2$. Then $x_n = 1/n$ marches in: every neighbourhood $N_1(\varepsilon)$ of $0_1$ (green) and every $N_2(\varepsilon)$ of $0_2$ (orange) contains the tail, so the sequence converges to both, and the space is not Hausdorff ([[§10 The Line with Two Origins#^ex-10-1|Example §10.1]]).
 
 > [!remark]- Connections
-> - The same space: [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]], [[§10 The Line with Two Origins#^rem-10-1|§10, The Line with Two Origins as a Quotient]], [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; via the Hausdorff criterion in [[§10 The Line with Two Origins#^ex-10-1|Ex. §10.1]].
+> - The same space: [[§1 Point-Set Topology Review#^ex-1-5|Ex. §1.5]], [[§10 The Line with Two Origins#^rem-10-1|§10, The Line with Two Origins as a Quotient]], [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]]; via the Hausdorff criterion in [[§10 The Line with Two Origins#^ex-10-1|Ex. §10.1]].
 > - A quotient of the Hausdorff $\mathbb{R}$ that is not Hausdorff, in MATH 590: [[§13 Quotient Topology#^ex-13-5|590 Ex. §13.5]].
 
 > [!theorem] Proposition §4.2: The Two Constructions Agree
-> The bijection sending the class $\{(x,1),(x,2)\}$ to $x$ for $x \neq 0$ and the class $\{(0,i)\}$ to $0_i$ is a homeomorphism from $X/{\sim}$, with the quotient topology, onto the line with two origins of [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]], with the topology generated by the neighborhood bases $(-\varepsilon,0) \cup \{0_i\} \cup (0,\varepsilon)$.
+> The bijection sending the class $\{(x,1),(x,2)\}$ to $x$ for $x \neq 0$ and the class $\{(0,i)\}$ to $0_i$ is a homeomorphism from $X/{\sim}$, with the quotient topology, onto the line with two origins of [[§1 Point-Set Topology Review#^ex-1-5|Example §1.5]], with the topology generated by the neighborhood bases $(-\varepsilon,0) \cup \{0_i\} \cup (0,\varepsilon)$.
 
 ^prop-4-2
 
 > [!proof]+ Exercise
-> Set up the bijection as above and check that a subset downstairs is open for one topology iff it is open for the other; by [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|Proposition §15.1]]-style reasoning it is enough to compare the two on the basic sets of [[§1 Point-Set Topology Review#^ex-1-4|Example §1.4]], pulling each back along $\pi$. Assigned in lecture and left here.
+> Set up the bijection as above and check that a subset downstairs is open for one topology iff it is open for the other; by [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|Proposition §15.1]]-style reasoning it is enough to compare the two on the basic sets of [[§1 Point-Set Topology Review#^ex-1-5|Example §1.5]], pulling each back along $\pi$. Assigned in lecture and left here.
 
 ^pf-4-2
 
-The line with two origins through the course: defined by its neighbourhood bases, and not Hausdorff, in [[§1 Point-Set Topology Review#^ex-1-4|the real line with two origins]]; second countable and locally Euclidean but not Hausdorff, so not a manifold, in [[§2 Topological Manifolds#^ex-2-1|the line with two origins fails Hausdorff]]; the quotient of two lines in [[§4 Quotient Spaces and Open Maps#^ex-4-1|the line with two origins as a quotient]], the two constructions agreeing by [[§4 Quotient Spaces and Open Maps#^prop-4-2|the two constructions agree]]; and, with its description as a quotient and the Hausdorff criterion for open quotients applied to it, in [[§10 The Line with Two Origins|The Line with Two Origins]].
+The line with two origins through the course: defined by its neighbourhood bases, and not Hausdorff, in [[§1 Point-Set Topology Review#^ex-1-5|the real line with two origins]]; second countable and locally Euclidean but not Hausdorff, so not a manifold, in [[§2 Topological Manifolds#^ex-2-1|the line with two origins fails Hausdorff]]; the quotient of two lines in [[§4 Quotient Spaces and Open Maps#^ex-4-1|the line with two origins as a quotient]], the two constructions agreeing by [[§4 Quotient Spaces and Open Maps#^prop-4-2|the two constructions agree]]; and, with its description as a quotient and the Hausdorff criterion for open quotients applied to it, in [[§10 The Line with Two Origins|The Line with Two Origins]].
 
 The single most useful fact about the quotient topology — that a map *out* of a quotient is continuous as soon as its composite with $\pi$ is, and that a map on $X$ constant on the classes descends to one on $X/{\sim}$ — is [[§5 Quotient Maps#^thm-5-1|Theorem §5.1]] below. It is stated in [[§5 Quotient Maps|§5, Quotient Maps]] because its natural generality is quotient maps rather than quotient spaces.
 
@@ -269,6 +269,19 @@ In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi
 > - Cited as the use of the contrapositive of [[§1 Point-Set Topology Review#^prop-1-4|§1.4]] in [[§1 Point-Set Topology Review#^rem-1-7|the remark after it]].
 
 > [!remark] Remark: Why the Diagonal
-> The mechanism is Cantor's: each candidate $U_j$ is pinned down at the single integer $j$, and $W$ is built to be strictly thinner than $U_j$ exactly there. No countable family can control all of the infinitely many arms at once, because a neighborhood of $x_0$ must specify a radius at *every* integer simultaneously—that is what collapsing infinitely many points to one costs. [[§6 Open Quotients#^thm-6-3|Theorem §6.3]] is not contradicted, because its hypothesis fails: this relation is *not* open. The saturation of the open set $(-\tfrac12, \tfrac12)$, which meets $\mathbb{Z}$ at $0$, is $(-\tfrac12,\tfrac12) \cup \mathbb{Z}$, and that is not open—no neighborhood of the point $1$ is contained in it.
+> The mechanism is Cantor's: each candidate $U_j$ is pinned down at the single integer $j$, and $W$ is built to be strictly thinner than $U_j$ exactly there. No countable family can control all of the infinitely many arms at once, because a neighborhood of $x_0$ must specify a radius at *every* integer simultaneously—that is what collapsing infinitely many points to one costs. [[§6 Open Quotients#^thm-6-3|Theorem §6.3]] is not contradicted, because its hypothesis fails: this relation is *not* open (Example [[§4 Quotient Spaces and Open Maps#^ex-4-4|§4.4]]).
 
 ^rem-4-4
+
+> [!example] Example §4.4: Collapsing the Integers Is Not an Open Relation
+> Let $\sim$ be the relation on $\mathbb{R}$ of Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]]: $x \sim y$ iff $x = y$ or both $x, y \in \mathbb{Z}$. Then $\sim$ is not open. By Proposition [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]] it suffices to find an open $U \subseteq \mathbb{R}$ whose saturation is not open.
+>
+> Take $U = (-\tfrac12, \tfrac12)$, which meets $\mathbb{Z}$ at $0$. The classes meeting $U$ are the class $\mathbb{Z}$ of $0$ and the singletons $\{x\}$, $x \in U \setminus \{0\}$; so the saturation is
+>
+> $$
+> \tilde U = (-\tfrac12, \tfrac12) \cup \mathbb{Z}.
+> $$
+>
+> It is not open, since no neighborhood of the point $1$ is contained in it: for $0 < \delta < \tfrac12$ the point $1 + \tfrac{\delta}{2}$ lies in $(1 - \delta, 1 + \delta)$ but is neither in $(-\tfrac12, \tfrac12)$ nor an integer.
+
+^ex-4-4

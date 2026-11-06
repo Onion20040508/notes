@@ -25,7 +25,7 @@ tags: [multivariable-analysis, hub]
 - [[§17 Optimization and Lagrange Multipliers#^thm-17-2|Theorem §17.2: Method of Lagrange Multipliers]]
 
 ## Used in (Differentiable Manifolds)
-- [[§7 The Regular Value Theorem#^thm-7-1|Theorem §7.1: Implicit Function Theorem — Lee Theorem C.40]]
+- [[§7 The Regular Value Theorem#^thm-7-2|Theorem §7.2: Implicit Function Theorem — Lee Theorem C.40]]
 
 ## Connections
 - **Proof idea.** F_y > 0 near the point makes F strictly increasing in y ([[§29 The Mean Value Theorem#^cor-29-7|451 §29.7]]). A sign change plus the [[Intermediate Value Theorem]] on each vertical slice gives a root, monotonicity makes it unique, and the [[Mean Value Theorem]] gives f′ = −F_x/F_y.

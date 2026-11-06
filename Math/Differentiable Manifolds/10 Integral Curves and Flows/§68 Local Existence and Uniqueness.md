@@ -188,9 +188,22 @@ In words: two integral curves that agree at some time $t_0$ agree wherever both 
 *(Figure after the board.)* The situation the claim rules out: the curves agree on $(0, \tau)$ and differ at $\tau$, with disjoint neighbourhoods $U_1, U_2$; as with any picture in a proof by contradiction, it shows a situation that cannot occur. The argument is very similar to the Euclidean one. The interval $J$ can be taken inside $I_1 \cap I_2$ because the domains are open intervals.
 
 > [!remark] Remark: Where the Hausdorff Property Is Used
-> *(Filled in.)* The claim $c_1(\tau) = c_2(\tau)$ is the one step of the proof that uses that $M$ is Hausdorff ($T_2$): it says that the set of times where the two curves agree is closed in $I_1 \cap I_2$. Without the Hausdorff property the proposition fails. The line with two origins ([[§10 The Line with Two Origins|§10]]), two copies $\mathbb{R} \times \{1\}$ and $\mathbb{R} \times \{2\}$ glued along $x \neq 0$, has smooth charts (each copy) but is not Hausdorff. The field $d/dx$, in either chart, is well defined, and $c_i(t) = (t, i)$, $t \in \mathbb{R}$, $i = 1, 2$, are integral curves of it. They agree at every $t \neq 0$ and differ at $t = 0$, where they pass through the two different origins.
+> *(Filled in.)* The claim $c_1(\tau) = c_2(\tau)$ is the one step of the proof that uses that $M$ is Hausdorff ($T_2$): it says that the set of times where the two curves agree is closed in $I_1 \cap I_2$. Without the Hausdorff property the proposition fails (Example [[§68 Local Existence and Uniqueness#^ex-68-2|§68.2]] below).
 
 ^rem-68-1
+
+> [!example] Example §68.2: Integral Curves on the Line with Two Origins
+> *(Filled in.)* The line with two origins $X$ ([[§10 The Line with Two Origins|§10]]), two copies $\mathbb{R} \times \{1\}$ and $\mathbb{R} \times \{2\}$ glued along $x \neq 0$, has smooth charts (each copy) but is not Hausdorff. The field $d/dx$, in either chart, is well defined, and $c_i(t) = (t, i)$, $t \in \mathbb{R}$, $i = 1, 2$, are integral curves of it. They agree at every $t \neq 0$ and differ at $t = 0$, where they pass through the two different origins. So the conclusion of Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]] fails on $X$.
+>
+> *The charts.* Write $[x, i]$ for the class of $(x, i)$, and $U_i = \{[x, i] : x \in \mathbb{R}\}$ for the image of the $i$-th copy. $U_i$ is open: its preimage in $\mathbb{R} \times \{1, 2\}$ is $\mathbb{R} \times \{i\}$ together with $(\mathbb{R} \setminus \{0\}) \times \{3 - i\}$. The map $\varphi_i : U_i \to \mathbb{R}$, $[x, i] \mapsto x$, is a bijection, continuous because its composite with the quotient map is the projection on $\mathbb{R} \times \{i\}$, and open because the quotient map is open (Example [[§10 The Line with Two Origins#^ex-10-1|§10.1]]); so it is a homeomorphism. On $U_1 \cap U_2 = \{[x, 1] : x \neq 0\}$ the transition map $\varphi_2 \circ \varphi_1^{-1}$ is the identity of $\mathbb{R} \setminus \{0\}$, which is smooth. The definitions of tangent vectors, vector fields and integral curves make sense for this atlas; the Hausdorff property is not used in them.
+>
+> *The field.* On $U_i$ let $\mathbf{X}$ be the coordinate field $d/dx$ of the chart $\varphi_i$. On $U_1 \cap U_2$ the two coordinate fields agree, by the change of coordinates (Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]) with the identity as transition map, whose derivative is $1$. So $\mathbf{X}$ is a well-defined smooth vector field on $X$.
+>
+> *The curves.* In the chart $\varphi_i$, $c_i(t) = [t, i]$ reads $t \mapsto t$, with $\dot x = 1$, the coefficient of $\mathbf{X}$; so $c_i$ is an integral curve of $\mathbf{X}$ (Proposition [[§67 Integral Curves#^prop-67-2|§67.2]], in a chart).
+>
+> *Agreement and disagreement.* For $t \neq 0$, $(t, 1) \sim (t, 2)$, so $c_1(t) = c_2(t)$; but $c_1(0) = [0, 1] \neq [0, 2] = c_2(0)$. Thus $c_1(1) = c_2(1)$, while $c_1$ and $c_2$ differ on the common domain $\mathbb{R}$. In the proof of Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]], run backwards from $t_0 = 1$, the step that fails is the claim that the curves agree at the end time $\tau = 0$ of their agreement: the two origins have no disjoint neighbourhoods.
+
+^ex-68-2
 
 > [!theorem] Corollary §68.4: Non-Injective Integral Curves Repeat
 > Let $c : I \to M$ be an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$, and suppose $c(t_1) = c(t_2)$ for some $t_1 < t_2$ in $I$. Put $T = t_2 - t_1 > 0$. Then
@@ -219,18 +232,38 @@ In words: two integral curves that agree at some time $t_0$ agree wherever both 
 $T$ need not be the smallest period. For the rotation field (Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]]), the integral curve $c(t) = (\cos t, \sin t)$ has $c(0) = c(4\pi)$, so $T = 4\pi$ is a period, while the smallest period is $2\pi$. A constant curve, at a zero of $\mathbf{X}$, is periodic with every $T > 0$. *(Filled in.)* The email states $c(t + T) = c(t)$ for all $t$. For a curve on a bounded interval the corollary only covers the $t$ with both $t$ and $t + T$ in $I$; for the maximal integral curve the domain is then all of $\mathbb{R}$, and the identity holds for every $t$ (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-2|§69.2]]).
 
 > [!remark] Remark: Must an Integral Curve Be Injective?
-> The question came up in Lecture 24, after Example [[§67 Integral Curves#^ex-67-1|§67.1]]; it is related to Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]. An integral curve need not be injective: at a zero of $\mathbf{X}$ the constant curve is an integral curve. *(Filled in.)* Constant curves are not the only exception: the circles of the rotation field (Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]]) are integral curves that return to the same point with the same velocity, every $2\pi$. The answer, sent by email after the lecture: if an integral curve is not injective, then it must be periodic (Corollary [[§68 Local Existence and Uniqueness#^cor-68-4|§68.4]]; for the maximal curve, Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-2|§69.2]]). Lee shows that a maximal integral curve is exactly one of: constant, injective, or periodic and nonconstant (Lee, Problem 9-1).
+> The question came up in Lecture 24, after Example [[§67 Integral Curves#^ex-67-3|§67.3]]; it is related to Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]. An integral curve need not be injective (Example [[§68 Local Existence and Uniqueness#^ex-68-3|§68.3]] below), and constant curves are not the only exception (Example [[§68 Local Existence and Uniqueness#^ex-68-4|§68.4]] below). The answer, sent by email after the lecture: if an integral curve is not injective, then it must be periodic (Corollary [[§68 Local Existence and Uniqueness#^cor-68-4|§68.4]]; for the maximal curve, Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-2|§69.2]]). Lee shows that a maximal integral curve is exactly one of: constant, injective, or periodic and nonconstant (Lee, Problem 9-1).
 
 ^rem-68-2
+
+> [!example] Example §68.3: Constant Integral Curves at Zeros
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$ with $\mathbf{X}_p = 0$. The constant curve $c : \mathbb{R} \to M$, $c(t) = p$, is an integral curve of $\mathbf{X}$, and it is not injective.
+>
+> *Integral curve.* For every $t$ and every germ $f$ at $p$, $\dot c(t)[f] = \frac{d}{dt} f(c(t)) = \frac{d}{dt} f(p) = 0$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]); so $\dot c(t) = 0 = \mathbf{X}_p = \mathbf{X}_{c(t)}$, which is $(\ast)$ of Definition [[§67 Integral Curves#^def-67-1|§67.1]].
+>
+> *Not injective.* $c(0) = p = c(1)$.
+
+^ex-68-3
+
+> [!example] Example §68.4: The Circles of the Rotation Field Return Every $2\pi$
+> *(Filled in.)* The circles of the rotation field $\mathbf{X} = -y\, \partial_x + x\, \partial_y$ (Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]]) are integral curves that return to the same point with the same velocity, every $2\pi$: they are neither injective nor constant.
+>
+> *The curves.* For $(x_0, y_0) \neq 0$, $c(t) = \big(x_0\cos t - y_0\sin t,\ x_0\sin t + y_0\cos t\big)$ is the integral curve starting at $(x_0, y_0)$ (Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]]), running around the circle of radius $|(x_0, y_0)|$.
+>
+> *Return every $2\pi$.* $\cos$ and $\sin$ have period $2\pi$, so $c(t + 2\pi) = c(t)$; and then $\dot c(t + 2\pi) = \mathbf{X}_{c(t + 2\pi)} = \mathbf{X}_{c(t)} = \dot c(t)$, the same velocity.
+>
+> *Neither injective nor constant.* $c(0) = c(2\pi)$; and $c(\pi) = -(x_0, y_0) \neq (x_0, y_0)$.
+
+^ex-68-4
 
 ![[m591-67-5.svg]]
 
 *(Not from lecture; figure added.)* The three kinds of maximal integral curve (Lee, Problem 9-1). An integral curve that comes back to a point comes back with the same velocity, the value of the field there; by Corollary [[§68 Local Existence and Uniqueness#^cor-68-4|§68.4]] it then repeats itself. The loop of the previous figure, which comes back with a different velocity, is none of the three: it is not an integral curve.
 
-> [!example] Example §68.2: The Euler Field
+> [!example] Example §68.5: The Euler Field
 > On $\mathbb{R}^2$ let $\mathbf{X} = x\, \dfrac{\partial}{\partial x} + y\, \dfrac{\partial}{\partial y}$. The integral curves solve $\dot x = x$, $\dot y = y$, so $\varphi_t(x_0, y_0) = e^t(x_0, y_0)$, $t \in \mathbb{R}$. For $(x_0, y_0) \neq 0$ the image is the open ray from the origin through $(x_0, y_0)$, since $e^t$ takes every value in $(0, \infty)$ and never $0$; at the origin the integral curve is constant.
 
-^ex-68-2
+^ex-68-5
 
 ![[m591-67-10.svg]]
 

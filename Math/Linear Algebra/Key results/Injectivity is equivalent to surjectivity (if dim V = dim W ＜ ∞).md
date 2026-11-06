@@ -19,11 +19,11 @@ tags: [linear-algebra, hub]
 - [[§24 Spectral Theorem#^ladr-7-26|7.26 Invertible quadratic expressions]]
 
 ## Used in (Differentiable Manifolds)
-- [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5: Regular Points When N ≤ m]]
+- [[§7 The Regular Value Theorem#^prop-7-7|Proposition §7.7: Regular Points When N ≤ m]]
 - [[§21 Linear Algebra Toolkit#^prop-21-3|Proposition §21.3: The Double Dual]]
 - [[§21 Linear Algebra Toolkit#^thm-21-5|Theorem §21.5: Non-Degenerate Pairings]]
 - [[§25 The Geometric Tangent Space#^cor-25-4|Corollary §25.4: Three Descriptions of the Geometric Tangent Space]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-8|Corollary §29.8: Consequences]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-9|Corollary §29.9: Consequences]]
 - [[§36 Submersions#^prop-36-1|Proposition §36.1: Dimension Constraints]]
 
 ## Connections

@@ -47,11 +47,11 @@ $$
 D = \sum_{i=1}^m D[x^i]\, \frac{\partial}{\partial x^i}\Big|_p
 $$
 
-([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|Theorem §29.6]]). So $\dim T_pM = m$, and for a level set in $\mathbb{R}^N$ the derivations are exactly the old arrows: $v \mapsto D_v$ is an isomorphism ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7]]).
+([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7]]). So $\dim T_pM = m$, and for a level set in $\mathbb{R}^N$ the derivations are exactly the old arrows: $v \mapsto D_v$ is an isomorphism ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8]]).
 
 ![[§29 Coordinate Derivations and the Basis Theorem#^def-29-2]]
 
-![[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6]]
+![[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7]]
 
 **Step 5: maps push vectors forward.** Let $F : M \to N$ be smooth. Germs travel *backwards* along $F$: a germ $[g]$ at $F(p)$ pulls back to the germ $F_p^{\ast}[g] = [g \circ F]$ at $p$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-5|Definition §28.5]]). Tangent vectors then travel *forwards*: the *pushforward*, or *differential*, of $F$ at $p$ is
 
@@ -122,14 +122,14 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 
 ![[m591-47-2.svg]]
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
 
 > [!remark] Remark: Conversion Diagram for a Tangent Vector
 > 1. *Curve to derivation.* $D_\gamma[f] = (f \circ \gamma)'(0)$, the velocity (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]]).
 > 2. *Derivation to curve.* Every $D$ is a velocity: $\gamma(t) = \varphi^{-1}\big(\varphi(p) + t\,(v^1, \ldots, v^m)\big)$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]).
-> 3. *Derivation to components.* $v^j = D[x^j] = dx^j|_p(D)$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]).
+> 3. *Derivation to components.* $v^j = D[x^j] = dx^j|_p(D)$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]).
 > 4. *Components to derivation.* $D = \sum_j v^j\, \partial/\partial x^j|_p$, where $\partial/\partial x^j|_p[f] = \partial (f \circ \varphi^{-1})/\partial r^j\,(\varphi(p))$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]).
-> 5. *Arrow to derivation.* For $M \subseteq \mathbb{R}^N$: $w \mapsto D_w$, $D_w[f] = \frac{d}{dt}\big|_{t=0} \tilde f(p + tw)$ for any smooth extension $\tilde f$; on a submanifold $T^{\mathrm{geo}}_pM \cong T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), $w$ being $\gamma'(0)$ for a curve $\gamma$ in $M$. In the identity chart of $\mathbb{R}^N$, the components of $D_w$ are the entries of $w$.
+> 5. *Arrow to derivation.* For $M \subseteq \mathbb{R}^N$: $w \mapsto D_w$, $D_w[f] = \frac{d}{dt}\big|_{t=0} \tilde f(p + tw)$ for any smooth extension $\tilde f$; on a submanifold $T^{\mathrm{geo}}_pM \cong T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), $w$ being $\gamma'(0)$ for a curve $\gamma$ in $M$. In the identity chart of $\mathbb{R}^N$, the components of $D_w$ are the entries of $w$.
 >
 > *Change of chart.* $\tilde v^j = \sum_i \frac{\partial \tilde x^j}{\partial x^i}(p)\, v^i$, the Jacobian of the transition function acting on the components (Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]).
 

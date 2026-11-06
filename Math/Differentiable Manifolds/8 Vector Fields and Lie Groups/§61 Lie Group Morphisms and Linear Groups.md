@@ -27,8 +27,19 @@ tags: [differentiable-manifolds, math591]
 
 ^def-61-1
 
+> [!example] Example §61.1: The Universal Cover of $\mathrm{SL}({2,\mathbb{R}})$
+> *(Filled in; not from lecture.)* The universal cover $\widetilde G$ of $\mathrm{SL}(2,\mathbb{R})$ is a Lie group isomorphic to no group of matrices: it admits no injective Lie group morphism into any $\mathrm{GL}(n,\mathbb{C})$, hence none into $\mathrm{GL}(n,\mathbb{R}) \subseteq \mathrm{GL}(n,\mathbb{C})$. So not every Lie group is a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]).
+>
+> *Justification (a sketch: covering spaces and the passage from Lie algebra morphisms to Lie group morphisms are beyond these notes).* An isomorphism of $\widetilde G$ onto a linear group, followed by the inclusion, would be an injective Lie group morphism into some $\mathrm{GL}(n,\mathbb{C})$; so it suffices to show that every Lie group morphism $\rho : \widetilde G \to \mathrm{GL}(n,\mathbb{C})$ fails to be injective.
+>
+> 1. *The group.* By the polar decomposition, $\mathrm{SL}(2,\mathbb{R})$ is homeomorphic to $\mathrm{SO}(2) \times P$, where $P$, the positive definite symmetric $2 \times 2$ matrices of determinant $1$, is homeomorphic to $\mathbb{R}^2$; so $\pi_1(\mathrm{SL}(2,\mathbb{R})) \cong \pi_1(S^1) \cong \mathbb{Z}$. The universal covering map $p : \widetilde G \to \mathrm{SL}(2,\mathbb{R})$ of the connected Lie group $\mathrm{SL}(2,\mathbb{R})$ makes $\widetilde G$ a connected Lie group and $p$ a Lie group morphism, with $\ker p \cong \pi_1(\mathrm{SL}(2,\mathbb{R})) \cong \mathbb{Z}$, a nontrivial subgroup.
+> 2. *Every $\rho$ factors through $p$.* The differential of $\rho$ at the identity is a Lie algebra morphism $\mathfrak{sl}(2,\mathbb{R}) \to \mathfrak{gl}(n,\mathbb{C})$; it extends complex-linearly to a Lie algebra morphism on $\mathfrak{sl}(2,\mathbb{C}) = \mathfrak{sl}(2,\mathbb{R}) \oplus i\,\mathfrak{sl}(2,\mathbb{R})$. Since $\mathrm{SL}(2,\mathbb{C})$ is simply connected, this extension is the differential of a Lie group morphism $\sigma : \mathrm{SL}(2,\mathbb{C}) \to \mathrm{GL}(n,\mathbb{C})$. With $\iota : \mathrm{SL}(2,\mathbb{R}) \hookrightarrow \mathrm{SL}(2,\mathbb{C})$ the inclusion, $\rho$ and $\sigma \circ \iota \circ p$ are Lie group morphisms with the same differential at the identity, on the connected group $\widetilde G$; so they are equal.
+> 3. *Conclusion.* Hence $\rho = \sigma \circ \iota \circ p$ is trivial on $\ker p \neq \{e\}$, and $\rho$ is not injective.
+
+^ex-61-1
+
 > [!remark] Remark: Nonlinear Groups
-> Matrix groups are also called linear groups (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]). Not every Lie group is isomorphic to a matrix group: nonlinear groups arise naturally as covers of matrix groups. *(Filled in: the standard example is the universal cover of $\mathrm{SL}(2,\mathbb{R})$, a Lie group isomorphic to no group of matrices.)* The question of Lecture 17, restated: for a matrix group, can the bracket be identified directly on the tangent space at the identity? The answer is the matrix commutator (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]); to get there, the course uses the general idea below.
+> Matrix groups are also called linear groups (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]). Not every Lie group is isomorphic to a matrix group: nonlinear groups arise naturally as covers of matrix groups, as Example [[§61 Lie Group Morphisms and Linear Groups#^ex-61-1|§61.1]] shows. The question of Lecture 17, restated: for a matrix group, can the bracket be identified directly on the tangent space at the identity? The answer is the matrix commutator (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]); to get there, the course uses the general idea below.
 
 ^rem-61-2
 
@@ -174,7 +185,7 @@ Next: the commutator, first for the general linear group, and then for any linea
 
 In particular $di_I(T_IG)$ is closed under the matrix commutator, as the image of a bracket. Lecture 19 checked this directly in one case.
 
-> [!example] Example §61.1: The Commutator of Skew-Symmetric Matrices
+> [!example] Example §61.2: The Commutator of Skew-Symmetric Matrices
 > $T_I\mathrm{O}(n) = \operatorname{Skew}(n, \mathbb{R}) = \{A : A^{\mathsf T} = -A\}$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). Written out, an element of $\operatorname{Skew}(n, \mathbb{R})$ has zero diagonal, and its entries below the diagonal are the negatives of those above:
 >
 > $$
@@ -187,12 +198,12 @@ In particular $di_I(T_IG)$ is closed under the matrix commutator, as the image o
 > $$
 > If $A, B \in \operatorname{Skew}(n,\mathbb{R})$, then $[A, B] = AB - BA \in \operatorname{Skew}(n,\mathbb{R})$.
 
-^ex-61-1
+^ex-61-2
 
 > [!proof]+ Proof
 > *(Lecture 19.)* $[A, B]^{\mathsf T} = (AB - BA)^{\mathsf T} = B^{\mathsf T}A^{\mathsf T} - A^{\mathsf T}B^{\mathsf T} = (-B)(-A) - (-A)(-B) = BA - AB = -[A, B]$. The same computation works for the unitary group, with the conjugate transpose $^{\ast}$ in place of the transpose; that was a homework problem.
 
-^pf-ex-61-1
+^pf-ex-61-2
 
 **Transcription note (Lecture 19).** Page 49 of the handwritten notes writes the evaluation map as $\mathfrak{g} \to T_eM$ and its inverse from $T_eM$; the group is $G$, so $T_eG$. The definition of the bracket there reads “$[A, B] = [\mathbf{X}^A, \mathbf{X}^B]$”; the field bracket is evaluated at the identity, $[A, B] = [\mathbf{X}^A, \mathbf{X}^B]_e$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]), as stated in lecture.
 
@@ -292,13 +303,45 @@ The second-order terms cancel as they must (Lemma [[§58 Lie Bracket and Lie Alg
 
 ^rem-61-4
 
+> [!theorem] Proposition §61.6: Fields of the Left Action on Column Vectors
+> $\mathrm{GL}(n,\mathbb{R})$ acts on *column* vectors on the left, $g \cdot p = gp$. For $A = (a_{kj}) \in \operatorname{Mat}(n,\mathbb{R})$ let $\mathbf{Z}_A$ be the corresponding field on $\mathbb{R}^n$, $(\mathbf{Z}_A)_p = \frac{d}{dt}\big|_{t=0} (I + tA)\,p = Ap$, that is, $\mathbf{Z}_A = \sum_k \big(\sum_j a_{kj}x^j\big)\partial_k$. Then
+>
+> $$
+> [\mathbf{Z}_A, \mathbf{Z}_B] = \mathbf{Z}_{BA - AB} = -\,\mathbf{Z}_{[A,B]} :
+> $$
+>
+> $A \mapsto \mathbf{Z}_A$ is an anti-homomorphism.
+
+^prop-61-6
+
+> [!proof]+ Proof
+> *(Not from the assignment; computed.)* Let $f \in C^\infty(\mathbb{R}^n)$. Write $(Bp)_k = \sum_l b_{kl}x^l$, so that $\mathbf{Z}_B f = \sum_k (Bp)_k\, \partial_k f$. By the product rule,
+>
+> $$
+> \mathbf{Z}_A(\mathbf{Z}_B f) = \sum_{j,k} (Ap)_j\, \partial_j\big[(Bp)_k\big]\, \partial_k f + \sum_{j,k} (Ap)_j\,(Bp)_k\, \partial_j\partial_k f .
+> $$
+>
+> *The first-order part.* $\partial_j\big(\sum_l b_{kl}x^l\big) = b_{kj}$, so the first sum is
+>
+> $$
+> \sum_{k} \Big(\sum_j b_{kj}\, (Ap)_j\Big)\partial_k f = \sum_k (BAp)_k\, \partial_k f = \mathbf{Z}_{BA}f .
+> $$
+>
+> *The second-order parts cancel.* The second sum, $T(A, B) = \sum_{j,k} (Ap)_j\,(Bp)_k\, \partial_j\partial_k f$, is symmetric in $A$ and $B$: relabel $j \leftrightarrow k$ and use $\partial_k\partial_j f = \partial_j\partial_k f$, as in Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-5|§61.5]].
+>
+> *Conclusion.* So $\mathbf{Z}_A(\mathbf{Z}_B f) = \mathbf{Z}_{BA}f + T(A, B)$ and $\mathbf{Z}_B(\mathbf{Z}_A f) = \mathbf{Z}_{AB}f + T(A, B)$, and since $A \mapsto \mathbf{Z}_A$ is linear ($Ap$ is linear in $A$),
+>
+> $$
+> [\mathbf{Z}_A, \mathbf{Z}_B]f = \mathbf{Z}_{BA}f - \mathbf{Z}_{AB}f = \mathbf{Z}_{BA - AB}f = -\,\mathbf{Z}_{[A,B]}f .
+> $$
+>
+> As $f$ was arbitrary, $[\mathbf{Z}_A, \mathbf{Z}_B] = -\,\mathbf{Z}_{[A,B]}$.
+
+^pf-61-6
+
+*Uses:* [[§61 Lie Group Morphisms and Linear Groups#^prop-61-5|§61.5]]
+
 > [!remark] Remark: Left and Right Actions
-> *(Not from the assignment; computed.)* $\mathrm{GL}(n,\mathbb{R})$ acts on row vectors on the right, $p \cdot g = pg$, and $A \mapsto \mathbf{X}^A$, $\mathbf{X}^A_p = \frac{d}{dt}\big|_{t=0}\, p\,(I + tA)$, preserves brackets. It acts on *column* vectors on the left, $g \cdot p = gp$; the corresponding fields $\mathbf{Z}_A$, $(\mathbf{Z}_A)_p = Ap$, satisfy
->
-> $$
-> [\mathbf{Z}_A, \mathbf{Z}_B] = \mathbf{Z}_{BA - AB} = -\,\mathbf{Z}_{[A,B]} ,
-> $$
->
-> an anti-homomorphism. Indeed $\mathbf{Z}_A = \sum_k \big(\sum_j a_{kj}x^j\big)\partial_k$, and the first-order part of $\mathbf{Z}_A(\mathbf{Z}_B f)$ is $\sum_{k} \big(\sum_j (Ap)_j\, b_{kj}\big)\partial_k f = \sum_k (BAp)_k\, \partial_k f = \mathbf{Z}_{BA}f$, the second-order parts cancelling as in Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-5|§61.5]]; so $[\mathbf{Z}_A, \mathbf{Z}_B] = \mathbf{Z}_{BA} - \mathbf{Z}_{AB}$. This is the same sign as for right-invariant fields (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]], Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-3|§60.3]]): left multiplication $X \mapsto AX$ generates right-invariant fields, and right multiplication $X \mapsto XA$ left-invariant ones. It is the lecture's aside on writing $(x)f$ (the remark *Left or Right: The Sign of the Bracket*): with maps written on the right, the right action is the one whose composites read in order, and it is the one that preserves brackets.
+> *(Not from the assignment.)* $\mathrm{GL}(n,\mathbb{R})$ acts on row vectors on the right, $p \cdot g = pg$, and $A \mapsto \mathbf{X}^A$, $\mathbf{X}^A_p = \frac{d}{dt}\big|_{t=0}\, p\,(I + tA)$, preserves brackets (Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-5|§61.5]]); the left action on column vectors gives an anti-homomorphism instead (Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-6|§61.6]]). This is the same sign as for right-invariant fields (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]], Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-3|§60.3]]): left multiplication $X \mapsto AX$ generates right-invariant fields, and right multiplication $X \mapsto XA$ left-invariant ones. It is the lecture's aside on writing $(x)f$ (the remark *Left or Right: The Sign of the Bracket*): with maps written on the right, the right action is the one whose composites read in order, and it is the one that preserves brackets.
 
 ^rem-61-5

@@ -17,6 +17,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§69 Maximal Integral Curves and Flows#^cor-69-6|Corollary §69.6: Flows Commute with Themselves]]
 - [[§70 Complete Vector Fields#^prop-70-3|Proposition §70.3: The Flow of a Complete Field]]
+- [[§72 Lie Derivatives#^lem-72-2|Lemma §72.2: The Inverse Flow Map φ_-t Has an Open Domain]]
 
 ## Connections
 - TODO

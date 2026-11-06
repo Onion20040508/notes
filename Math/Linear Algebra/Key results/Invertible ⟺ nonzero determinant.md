@@ -26,10 +26,10 @@ tags: [linear-algebra, hub]
 - [[§59 Representations and Subrepresentations#^prop-59-3|Proposition §59.3: When k1,2,3 = U_1 oplus U_2]]
 
 ## Used in (Differentiable Manifolds)
-- [[§7 The Regular Value Theorem#^prop-7-5|Proposition §7.5: Regular Points When N ≤ m]]
+- [[§7 The Regular Value Theorem#^prop-7-7|Proposition §7.7: Regular Points When N ≤ m]]
 - [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|Definition §11.5: General Linear Group]]
 - [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9: Complex Matrices and GL(n,ℂ)]]
-- [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-3|Lemma §23.3: A One-Sided Inverse Suffices]]
+- [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^lem-23-4|Lemma §23.4: A One-Sided Inverse Suffices]]
 - [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-2|Lemma §48.2: Every Rotation Has an Axis]]
 
 ## Connections

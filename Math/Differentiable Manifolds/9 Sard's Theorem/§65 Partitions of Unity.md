@@ -63,7 +63,7 @@ tags: [differentiable-manifolds, math591]
 ^lem-65-2
 
 > [!proof]+ Proof
-> *(Not from lecture; the argument the proofs of Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] and Proposition [[§65 Partitions of Unity#^prop-65-9|§65.9]] use.)* Let $p \in M$. By local finiteness $p$ has a neighbourhood meeting only finitely many supports; shrinking it, take it open, $U$, and let $F = \{ \alpha \in A : U \cap \operatorname{supp} f_\alpha \neq \varnothing \}$, a finite set. For $\alpha \notin F$, $U$ does not meet $\operatorname{supp} f_\alpha$, which contains $\{ f_\alpha \neq 0 \}$; so $f_\alpha = 0$ on $U$. Hence on $U$
+> *(Not from lecture; the argument the proofs of Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] and Proposition [[§65 Partitions of Unity#^prop-65-10|§65.10]] use.)* Let $p \in M$. By local finiteness $p$ has a neighbourhood meeting only finitely many supports; shrinking it, take it open, $U$, and let $F = \{ \alpha \in A : U \cap \operatorname{supp} f_\alpha \neq \varnothing \}$, a finite set. For $\alpha \notin F$, $U$ does not meet $\operatorname{supp} f_\alpha$, which contains $\{ f_\alpha \neq 0 \}$; so $f_\alpha = 0$ on $U$. Hence on $U$
 >
 > $$
 > f = \sum_{\alpha \in F} f_\alpha ,
@@ -122,15 +122,34 @@ The main result of this section is that every open cover has a subordinate parti
 
 *The topology.* The second step needs some point-set topology, which pays for the use of partitions of unity before their construction.
 
-> [!definition] Definition §65.3: Paracompact Space
-> A space $X$ is **paracompact** if every open cover $\{U_\alpha\}_{\alpha \in A}$ has an open refinement $\{V_i\}_{i \in \mathbb{N}}$ that covers and is locally finite (Definition [[§65 Partitions of Unity#^def-65-1|§65.1]]):
+> [!definition] Definition §65.3: Refinement of a Cover
+> Let $\{U_\alpha\}_{\alpha \in A}$ be a cover of a topological space $X$. A cover $\{V_i\}_{i \in I}$ of $X$ is a **refinement** of $\{U_\alpha\}$ if every $V_i$ lies in some $U_\alpha$: for each $i$ there is $\alpha(i) \in A$ with $V_i \subseteq U_{\alpha(i)}$. It is an **open refinement** if every $V_i$ is open. A subcover is the special case in which every $V_i$ is one of the $U_\alpha$.
+>
+> *(Lecture 22 stated the condition inside the definition of a paracompact space; stated once here.)*
+>
+> *Lee: Ch. 1, Paracompactness*
+
+^def-65-3
+
+> [!example] Example §65.5: A Locally Finite Refinement That Is Not a Subcover
+> *(Not from lecture.)* On $\mathbb{R}$, the open cover $\{(-n, n)\}_{n \ge 1}$ is not locally finite (Example [[§65 Partitions of Unity#^ex-65-2|§65.2]]). The intervals $V_k = (k - 1, k + 1)$, $k \in \mathbb{Z}$, form a locally finite open refinement of it (Definition [[§65 Partitions of Unity#^def-65-3|§65.3]]):
+> - *A cover.* Every $x \in \mathbb{R}$ lies in $V_k$ for $k = \lfloor x \rfloor$, since $k \le x < k + 1$.
+> - *A refinement.* If $|x - k| < 1$ then $|x| < |k| + 1$, so $V_k \subseteq (-n, n)$ with $n = |k| + 1$.
+> - *Locally finite.* This is Example [[§65 Partitions of Unity#^ex-65-1|§65.1]].
+>
+> It is not a subcover: $V_1 = (0, 2)$ is not one of the intervals $(-n, n)$. Refining, not only passing to a subcover, is needed here: a subcover of $\{(-n, n)\}$ must contain infinitely many of the intervals (finitely many have bounded union), and all of them contain $0$, so no subcover is locally finite at $0$.
+
+^ex-65-5
+
+> [!definition] Definition §65.4: Paracompact Space
+> A space $X$ is **paracompact** if every open cover $\{U_\alpha\}_{\alpha \in A}$ has an open refinement $\{V_i\}_{i \in \mathbb{N}}$ (Definition [[§65 Partitions of Unity#^def-65-3|§65.3]]) that covers and is locally finite (Definition [[§65 Partitions of Unity#^def-65-1|§65.1]]):
 >
 > 1. $X = \bigcup_i V_i$, and for every $i$ there is $\alpha(i)$ with $V_i \subseteq U_{\alpha(i)}$;
 > 2. every $p \in X$ has a neighbourhood $W$ such that $\{ i : W \cap V_i \neq \varnothing \}$ is finite.
 >
 > *Lee: Ch. 1, Paracompactness*
 
-^def-65-3
+^def-65-4
 
 Compactness gives a finite subcover; paracompactness gives a locally finite refinement, which need not be a subcover. (The usual definition allows refinements indexed by any set; with the countable index set of the lecture it is what holds for manifolds, Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]] below.)
 
@@ -172,18 +191,35 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 *(Not from lecture; figure added.)* The proof of Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]] for $j = 2$. The compact ring $A_2 = K_3 \setminus \operatorname{Int}K_2$ (teal) is covered by finitely many basis sets $B_x$ (blue), each inside some $U_\alpha$ and inside the open ring $W_2 = \operatorname{Int}K_4 \setminus K_1$ (between the dashed circles). Rings $W_j$ and $W_k$ with $|j - k| \ge 3$ are disjoint, so a point of $A_j$ has the neighbourhood $W_j$, which meets only the sets chosen for $j - 2, \ldots, j + 2$: the refinement is locally finite.
 
 > [!remark] Remark: Is Local Compactness Needed?
-> The board stated the theorem as “if $X$ is $T_2$ and second countable, then it is paracompact”, leaving open whether local compactness is needed. The email of Oct 26 settled it: local compactness is needed; Hausdorff, second countable and locally compact imply paracompact, and Lee proves directly what is needed for manifolds in Theorem 1.15 (p. 9). So the theorem is stated with local compactness, as above. *(Filled in.)* Why some hypothesis beyond Hausdorff and second countable is needed: A paracompact Hausdorff space is normal, in particular regular (Munkres, Theorem 41.1), and the *$K$-topology* on $\mathbb{R}$ — generated by the open intervals and the sets $(a, b) \setminus \{1/n : n \ge 1\}$ — is Hausdorff and second countable but not regular (Munkres, §31), so not paracompact. Local compactness, as above, suffices; so does regularity. For manifolds nothing changes: they are locally compact. Second countability is essential here; it was used once before, for countable subcovers in measure zero (Lemma [[§62 Sets of Measure Zero#^lem-62-3|§62.3]]).
+> The board stated the theorem as “if $X$ is $T_2$ and second countable, then it is paracompact”, leaving open whether local compactness is needed. The email of Oct 26 settled it: local compactness is needed; Hausdorff, second countable and locally compact imply paracompact, and Lee proves directly what is needed for manifolds in Theorem 1.15 (p. 9). So the theorem is stated with local compactness, as above. *(Filled in.)* Some hypothesis beyond Hausdorff and second countable is needed: the $K$-topology on $\mathbb{R}$ is Hausdorff and second countable but not paracompact (Example [[§65 Partitions of Unity#^ex-65-6|§65.6]] below). Local compactness, as above, suffices; so does regularity. For manifolds nothing changes: they are locally compact. Second countability is essential here; it was used once before, for countable subcovers in measure zero (Lemma [[§62 Sets of Measure Zero#^lem-62-3|§62.3]]).
 
 ^rem-65-1
 
-> [!definition] Definition §65.4: Regular Coordinate Ball
+> [!example] Example §65.6: The K-Topology on the Real Line
+> *(Filled in; not from lecture.)* Let $K = \{1/n : n \ge 1\}$. The *$K$-topology* on $\mathbb{R}$ is generated by the open intervals $(a, b)$ and the sets $(a, b) \setminus K$. It is Hausdorff and second countable but not regular (Munkres, §31), so not paracompact.
+>
+> *Basis.* The open intervals and the sets $(a, b) \setminus K$ cover $\mathbb{R}$, and the intersection of two of them is empty or again of one of the two forms, since $\big((a, b) \setminus K\big) \cap (c, d) = \big((a, b) \cap (c, d)\big) \setminus K$. So they form a basis, and the open sets are their unions.
+>
+> *Hausdorff.* Every open interval is open, so the $K$-topology is finer than the standard one; two distinct points have disjoint open intervals around them.
+>
+> *Second countable.* The intervals $(p, q)$ and the sets $(p, q) \setminus K$ with $p < q$ rational form a countable family. It is a basis: if $x$ lies in a basic set $(a, b)$, respectively $(a, b) \setminus K$, choose rationals $p, q$ with $a \le p < x < q \le b$; then $x \in (p, q) \subseteq (a, b)$, respectively $x \in (p, q) \setminus K \subseteq (a, b) \setminus K$.
+>
+> *Not regular.* $K$ is closed: $K \cup \{0\}$ is closed in the standard topology, so $\mathbb{R} \setminus (K \cup \{0\})$ is open, and $\mathbb{R} \setminus K$ is its union with the basic set $(-1, 1) \setminus K$. Suppose $U \ni 0$ and $V \supseteq K$ are disjoint open sets. $U$ contains a basic set $B \ni 0$. $B$ is not an interval: an interval around $0$ contains some $1/n \in K \subseteq V$, while $B \subseteq U$ and $U \cap V = \varnothing$. So $B = (a, b) \setminus K$ with $a < 0 < b$. Choose $n$ with $1/n < b$. $V$ contains a basic set $C \ni 1/n$, which is an interval $(c, d)$, since the sets $(c, d) \setminus K$ do not contain $1/n$; replacing it by $(\max(c, 0), \min(d, b))$, which still contains $1/n$, we may assume $(c, d) \subseteq (0, b)$. The interval $(c, d)$ is uncountable and $K$ is countable, so there is $z \in (c, d) \setminus K$. Then $z \in (a, b) \setminus K = B \subseteq U$ and $z \in (c, d) \subseteq V$, contradicting $U \cap V = \varnothing$. So the point $0$ and the closed set $K$ cannot be separated by open sets.
+>
+> *Not paracompact.* A paracompact Hausdorff space is normal, in particular regular (Munkres, Theorem 41.1). Munkres's paracompactness asks only for a locally finite open refinement, not a countable one, so it follows from Definition [[§65 Partitions of Unity#^def-65-4|§65.4]]. As the $K$-topology is Hausdorff but not regular, it is not paracompact.
+
+^ex-65-6
+
+> [!definition] Definition §65.5: Regular Coordinate Ball
 > An open set $B \subseteq M$ is a **regular coordinate ball** if there are a chart $(U, \varphi)$ with $B \subseteq U$ and numbers $0 < \delta < \varepsilon$ such that $\varphi(B) = B_\delta(0)$, the $\delta$-ball centred at $0$, and $B_\varepsilon(0) \subseteq \varphi(U)$ — an $\varepsilon$-ball centred at $0$ containing $\varphi(B)$, with room to spare. The room is needed to pull back the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]], equal to $1$ on $\overline{B}_\delta$ and supported in $B_\varepsilon$.
 >
 > *Lee: Ch. 1, Regular Coordinate Balls*
 
-^def-65-4
+^def-65-5
 
 ![[m591-66-4.svg]]
+
+*(Figure redrawn with the manifold side.)* Definition [[§65 Partitions of Unity#^def-65-5|§65.5]] in pictures. Left, in $M$: the chart domain $U$, the regular coordinate ball $B$ around $p = \varphi^{-1}(0)$, and the larger set $\varphi^{-1}(B_\varepsilon(0))$, which still lies in $U$. Right, their images under $\varphi$: the open set $\varphi(U) \subseteq \mathbb{R}^m$, the $\varepsilon$-ball inside it, and $\varphi(B) = B_\delta(0)$. The room between the two balls is where the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]] climbs from $1$ to $0$.
 
 > [!theorem] Lemma §65.6: Regular Coordinate Balls Form a Basis
 > Let $\{U_\alpha\}$ be an open cover of $M$. The regular coordinate balls $B$ whose chart $(U, \varphi)$ can be chosen with $U$ inside some $U_\alpha$ form a basis of the topology of $M$.
@@ -211,7 +247,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 > \varphi_i(B_i) = B_{\delta_i}(0), \qquad B_{\varepsilon_i}(0) \subseteq \varphi_i(U_i), \qquad U_i \subseteq U_{\alpha(i)} \ \text{ for some } \alpha(i) \in A
 > $$
 >
-> (Definition [[§65 Partitions of Unity#^def-65-4|§65.4]]). By Lemma [[§65 Partitions of Unity#^lem-65-1|§65.1]](1), the closures $\{\overline{B_i}\}$ also form a locally finite family.
+> (Definition [[§65 Partitions of Unity#^def-65-5|§65.5]]). By Lemma [[§65 Partitions of Unity#^lem-65-1|§65.1]](1), the closures $\{\overline{B_i}\}$ also form a locally finite family.
 >
 > *Step 2: a function positive exactly on $B_i$.* With $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$ (step 1 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]), define
 >
@@ -239,7 +275,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 ^pf-65-7
 
-*Uses:* [[§65 Partitions of Unity#^lem-65-6|§65.6]], [[§65 Partitions of Unity#^thm-65-5|§65.5]], [[§65 Partitions of Unity#^def-65-4|Def. §65.4]], [[§65 Partitions of Unity#^lem-65-1|§65.1]], [[§56 Vector Fields#^prop-56-4|§56.4]], [[§65 Partitions of Unity#^lem-65-2|§65.2]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]]
+*Uses:* [[§65 Partitions of Unity#^lem-65-6|§65.6]], [[§65 Partitions of Unity#^thm-65-5|§65.5]], [[§65 Partitions of Unity#^def-65-5|Def. §65.5]], [[§65 Partitions of Unity#^lem-65-1|§65.1]], [[§56 Vector Fields#^prop-56-4|§56.4]], [[§65 Partitions of Unity#^lem-65-2|§65.2]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]]
 
 > [!remark] Remark: Lecture 22's First Version of the Construction
 > Lecture 22 built the functions differently: pull back the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]] (with $\delta_i < \varepsilon_i$) by $\varphi_i$ and extend by zero, as in step 3 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]], which gives smooth $f_i$ with
@@ -254,44 +290,58 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 **Transcription note (Lecture 22).** Page 58 of the handwritten notes states the theorem “if $X$ is $T_2$ and 2nd countable, then it is paracompact (need locally compact?)”; as stated it is false in general, and local compactness, which manifolds have, is the missing hypothesis (the remark *Is Local Compactness Needed?* after Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]]).
 
+> [!theorem] Proposition §65.8: Bump Functions for Closed Sets
+> Let $A \subseteq M$ be closed and $U \subseteq M$ open with $A \subseteq U$. Then there is a smooth $\psi : M \to [0, 1]$ with $\psi \equiv 1$ on $A$ and $\operatorname{supp}\psi \subseteq U$.
+>
+> *Lee: Proposition 2.25*
+
+^prop-65-8
+
+> [!proof]+ Proof
+> *(Lee's proof. Not part of the assigned reading, which stops before the applications of partitions of unity; Lee's proof of the Whitney embedding theorem, Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], uses it.)* Put $U_0 = U$ and $U_1 = M \setminus A$. Both are open ($A$ is closed), and they cover $M$, since a point not in $U$ is not in $A \subseteq U$. By Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] there is a partition of unity $\{\chi_0, \chi_1\}$ subordinate to $\{U_0, U_1\}$. Let $\psi = \chi_0$. It is smooth, $0 \le \psi \le 1$, and $\operatorname{supp}\psi \subseteq U_0 = U$. For $p \in A$: $\operatorname{supp}\chi_1 \subseteq M \setminus A$, so $\chi_1(p) = 0$, and $\psi(p) = \chi_0(p) + \chi_1(p) = 1$.
+
+^pf-65-8
+
+*Uses:* [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], [[§65 Partitions of Unity#^thm-65-7|§65.7]]
+
 ## An Application: Exhaustion Functions
 
 *Lecture 23. The application of partitions of unity needed for the sketch of the noncompact Whitney embedding theorem ([[§66 The Whitney Embedding Theorem|§66]]): the existence of exhaustion functions, which partitions of unity make quick. Exhaustion functions were defined, and their existence stated, in Lecture 22 with that sketch; they are collected here so that the proof follows the statement.*
 
-> [!definition] Definition §65.5: Exhaustion Function
+> [!definition] Definition §65.6: Exhaustion Function
 > An **exhaustion function** on $M$ is a smooth function $f : M \to \mathbb{R}$, $f \ge 0$, such that for every $c \in \mathbb{R}$ the **sublevel set** $f^{-1}\big((-\infty, c]\big)$ is compact.
 >
 > *Lee: Ch. 2, Exhaustion Functions*
 
-^def-65-5
+^def-65-6
 
-The cartoon, also used in Morse theory: stand $M$ up with $f$ as the height. The level set at $c$ is the slice at height $c$, and the sublevel set is everything below it, compact for every $c$. It is not obvious that exhaustion functions always exist (Proposition [[§65 Partitions of Unity#^prop-65-9|§65.9]]).
+The cartoon, also used in Morse theory: stand $M$ up with $f$ as the height. The level set at $c$ is the slice at height $c$, and the sublevel set is everything below it, compact for every $c$. It is not obvious that exhaustion functions always exist (Proposition [[§65 Partitions of Unity#^prop-65-10|§65.10]]).
 
 The proof starts from a countable cover by open sets with compact closures, which was set as an exercise.
 
-> [!theorem] Lemma §65.8: Countable Precompact Covers
+> [!theorem] Lemma §65.9: Countable Precompact Covers
 > Every manifold $M$ has a countable open cover $\{V_i\}_{i \ge 1}$ such that $\overline{V_i}$ is compact for every $i$.
 >
 > *Lee: Proposition 2.28 (proof)*
 
-^lem-65-8
+^lem-65-9
 
 > [!proof]+ Proof
 > *(Set in Lecture 23 as an exercise, the intended argument using paracompactness; filled in, by paracompactness.)* Every $p \in M$ has an open neighbourhood $W_p$ with $\overline{W_p}$ compact (Proposition [[§2 Topological Manifolds#^prop-2-12|§2.12]]). By Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]] the cover $\{W_p\}_{p \in M}$ has a countable open refinement $\{V_i\}$ covering $M$; if it is finite, repeat one of its sets to index it by $i \ge 1$. Each $V_i$ lies in some $W_{p(i)}$, so $\overline{V_i}$ is a closed subset of the compact set $\overline{W_{p(i)}}$, hence compact. (Another way: the countable basis of precompact sets built in the proof of Lemma [[§65 Partitions of Unity#^lem-65-4|§65.4]] is already such a cover. Local finiteness of the refinement is not needed here.)
 
-^pf-65-8
+^pf-65-9
 
 *Uses:* [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§2 Topological Manifolds#^prop-2-12|§2.12]], [[§65 Partitions of Unity#^lem-65-4|§65.4]], [[§65 Partitions of Unity#^thm-65-5|§65.5]]
 
-> [!theorem] Proposition §65.9: Exhaustion Functions Exist
+> [!theorem] Proposition §65.10: Exhaustion Functions Exist
 > Every smooth manifold admits an exhaustion function.
 >
 > *Lee: Proposition 2.28*
 
-^prop-65-9
+^prop-65-10
 
 > [!proof]+ Proof
-> *(Lecture 23. The proposition was announced in Lecture 22, where the sketch of the noncompact Whitney theorem used it before it was proved.)* Let $\{V_i\}_{i \ge 1}$ be as in Lemma [[§65 Partitions of Unity#^lem-65-8|§65.8]], and let $\{\chi_i\}_{i \ge 1}$ be a partition of unity subordinate to it (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]]). Reviewing what this means (Definition [[§65 Partitions of Unity#^def-65-2|§65.2]]):
+> *(Lecture 23. The proposition was announced in Lecture 22, where the sketch of the noncompact Whitney theorem used it before it was proved.)* Let $\{V_i\}_{i \ge 1}$ be as in Lemma [[§65 Partitions of Unity#^lem-65-9|§65.9]], and let $\{\chi_i\}_{i \ge 1}$ be a partition of unity subordinate to it (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]]). Reviewing what this means (Definition [[§65 Partitions of Unity#^def-65-2|§65.2]]):
 >
 > 1. $0 \le \chi_i \le 1$ for all $i$;
 > 2. $\{\operatorname{supp}\chi_i\}$ is locally finite;
@@ -322,9 +372,9 @@ The proof starts from a countable cover by open sets with compact closures, whic
 >
 > So $p \notin f^{-1}((-\infty, c])$.
 
-^pf-65-9
+^pf-65-10
 
-*Uses:* [[§65 Partitions of Unity#^lem-65-8|§65.8]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]]
+*Uses:* [[§65 Partitions of Unity#^lem-65-9|§65.9]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]]
 
 > [!remark] Remark: Why the Closures
 > Should the contrapositive use the union of the *closures*? The proof shows the inclusion in $\bigcup_{i \le N} V_i$, which is contained in the union of the closures, so it makes no difference. The open sets give the stronger statement; the closures are where compactness lives, since the $V_i$ were chosen so that the $\overline{V_i}$ are compact, and $\bigcup_{i \le N} V_i$ alone need not be compact. Lee runs the contrapositive from $p \notin \bigcup_{j \le N} \overline{V_j}$ instead (Proposition 2.28); either way the sublevel set lands inside the compact set $\bigcup_{j \le N} \overline{V_j}$.

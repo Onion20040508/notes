@@ -40,7 +40,7 @@ Smoothness of the family means smoothness of the single map $F$, jointly in $s$ 
 > T_{(s,p)}W = \big(dF_{(s,p)}\big)^{-1}\big(T_qZ\big) \tag{1}
 > $$
 >
-> (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]): the preimage of the tangent space of $Z$ under the differential. $\pi$ is smooth, as the restriction of the smooth projection to a regular submanifold. Write tangent vectors to $S \times M$ as pairs $(\sigma, u) \in T_sS \oplus T_pM$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]]); then $d\pi(\sigma, u) = \sigma$, and
+> (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]): the preimage of the tangent space of $Z$ under the differential. $\pi$ is smooth, as the restriction of the smooth projection to a regular submanifold. Write tangent vectors to $S \times M$ as pairs $(\sigma, u) \in T_sS \oplus T_pM$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]]); then $d\pi(\sigma, u) = \sigma$, and
 >
 > $$
 > dF_{(s,p)}(0, u) = d(F_s)_p(u), \tag{2}
@@ -66,7 +66,7 @@ Smoothness of the family means smoothness of the single map $F$, jointly in $s$ 
 
 ^pf-64-1
 
-*Uses:* [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|Def. §31.4]]
+*Uses:* [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|Def. §31.4]]
 
 ![[m591-60-1.svg]]
 
@@ -143,7 +143,7 @@ A further application, Assignment 6, Problem 5 ([[§64 Parametric Transversality
 
 *Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]], [[§44 Embeddings#^prop-44-10|§44.10]], [[§25 The Geometric Tangent Space#^thm-25-7|§25.7]]
 
-This is the splitting of Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]] for $T^{\ast}M$, seen inside $\mathbb{R}^{2N}$: horizontal (along the zero section) plus vertical (along the fibre).
+This is the splitting of Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]] for $T^{\ast}M$, seen inside $\mathbb{R}^{2N}$: horizontal (along the zero section) plus vertical (along the fibre).
 
 > [!definition] Definition §64.2: Height Function
 > For $\mathbf{a} \in \mathbb{R}^N$, the **height function** in the direction $\mathbf{a}$ is $f_{\mathbf{a}} : M \to \mathbb{R}$, $f_{\mathbf{a}}(p) = p \cdot \mathbf{a}$, the restriction to $M$ of a linear function.
@@ -303,18 +303,42 @@ The image of $\pi_{\ast(\mathbf{a},p)}$ is $\{\mathbf{b} : \pi_p(\mathbf{b}) \in
 > \operatorname{Im} d(F_{\mathbf{a}})_p + T_{(p,0)}\mathcal{Z} = \{(u, A_pu)\} + \{(u', 0)\} = T_pM \times \operatorname{Im} A_p ,
 > $$
 >
-> which is all of $T_{(p,0)}T^{\mathrm{geo}}M = T_pM \times T_pM$ if and only if $A_p$ is onto, that is, $p$ is nondegenerate. So $F_{\mathbf{a}} \pitchfork \mathcal{Z}$ exactly when $f_{\mathbf{a}}$ is Morse, and the claim follows. Under the identification $T^{\mathrm{geo}}M \cong T^{\ast}M$ of the hint (“one can identify $TM \cong T^{\ast}M$ using the inner product”), $F_{\mathbf{a}}$ is the section $s_{f_{\mathbf{a}}} : p \mapsto (p, d(f_{\mathbf{a}})_p)$, and this equivalence is Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]].
+> which is all of $T_{(p,0)}T^{\mathrm{geo}}M = T_pM \times T_pM$ if and only if $A_p$ is onto, that is, $p$ is nondegenerate. So $F_{\mathbf{a}} \pitchfork \mathcal{Z}$ exactly when $f_{\mathbf{a}}$ is Morse, and the claim follows. Under the identification $T^{\mathrm{geo}}M \cong T^{\ast}M$ of the hint (“one can identify $TM \cong T^{\ast}M$ using the inner product”), $F_{\mathbf{a}}$ is the section $s_{f_{\mathbf{a}}} : p \mapsto (p, d(f_{\mathbf{a}})_p)$, and this equivalence is Theorem [[§55 Morse Functions and the Zero Section#^thm-55-8|§55.8]].
 
 ^pf-64-8-2
 
-*Uses:* [[§64 Parametric Transversality#^cor-64-2|§64.2]], [[§64 Parametric Transversality#^def-64-1|Def. §64.1]], [[§64 Parametric Transversality#^prop-64-5|§64.5]], [[§64 Parametric Transversality#^prop-64-6|§64.6]], [[§64 Parametric Transversality#^lem-64-3|§64.3]], [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]]
+*Uses:* [[§64 Parametric Transversality#^cor-64-2|§64.2]], [[§64 Parametric Transversality#^def-64-1|Def. §64.1]], [[§64 Parametric Transversality#^prop-64-5|§64.5]], [[§64 Parametric Transversality#^prop-64-6|§64.6]], [[§64 Parametric Transversality#^lem-64-3|§64.3]], [[§55 Morse Functions and the Zero Section#^thm-55-8|§55.8]]
 
 > [!remark] Remark: Directions Outside the Image
-> “Incidentally, what can you say about $f_{\mathbf{a}}$ if $\mathbf{a}$ is not in the image of $\pi$?” *(The submitted answer.)* If $\mathbf{a} \notin \pi(S)$, then $\pi^{-1}(\mathbf{a}) = \{\mathbf{a}\} \times \operatorname{Crit}(f_{\mathbf{a}})$ is empty, so $f_{\mathbf{a}}$ has no critical points; in particular it is vacuously Morse (Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]]). *(Not from the assignment.)* If $M$ is compact and nonempty, this never happens: $f_{\mathbf{a}}$ is continuous on a compact set, so it attains a maximum, at a critical point; so $\pi$ is onto. At the other extreme, $\mathbf{a} = 0$ gives $f_0 \equiv 0$, every point critical with zero Hessian, so ($m \ge 1$) $0$ is always a critical value of $\pi$.
+> “Incidentally, what can you say about $f_{\mathbf{a}}$ if $\mathbf{a}$ is not in the image of $\pi$?” *(The submitted answer.)* If $\mathbf{a} \notin \pi(S)$, then $\pi^{-1}(\mathbf{a}) = \{\mathbf{a}\} \times \operatorname{Crit}(f_{\mathbf{a}})$ is empty, so $f_{\mathbf{a}}$ has no critical points; in particular it is vacuously Morse (Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]]). Corollaries [[§64 Parametric Transversality#^cor-64-9|§64.9]] and [[§64 Parametric Transversality#^cor-64-10|§64.10]] below add two facts about the image and the critical values of $\pi$.
 
 ^rem-64-1
 
+> [!theorem] Corollary §64.9: For Compact $M$ the Projection $\pi$ Is Onto
+> If $M$ is compact and nonempty, then every $\mathbf{a} \in \mathbb{R}^N$ lies in the image of $\pi : S \to \mathbb{R}^N$ (Theorem [[§64 Parametric Transversality#^thm-64-7|§64.7]]): $\pi$ is onto, and every $f_{\mathbf{a}}$ has a critical point.
+
+^cor-64-9
+
+> [!proof]+ Proof
+> *(Not from the assignment.)* Let $\mathbf{a} \in \mathbb{R}^N$. The height function $f_{\mathbf{a}}$ (Definition [[§64 Parametric Transversality#^def-64-2|§64.2]]) is continuous on the compact nonempty set $M$, so it attains a maximum at some $p \in M$. A local extremum is a critical point (Proposition [[§36 Submersions#^prop-36-3|§36.3]]), so $p \in \operatorname{Crit}(f_{\mathbf{a}})$, and $(\mathbf{a}, p) \in \{\mathbf{a}\} \times \operatorname{Crit}(f_{\mathbf{a}}) = \pi^{-1}(\mathbf{a})$ (Theorem [[§64 Parametric Transversality#^thm-64-7|§64.7]]). So $\mathbf{a} = \pi(\mathbf{a}, p)$.
+
+^pf-64-9
+
+*Uses:* [[§64 Parametric Transversality#^def-64-2|Def. §64.2]], [[§36 Submersions#^prop-36-3|§36.3]], [[§64 Parametric Transversality#^thm-64-7|§64.7]]
+
+> [!theorem] Corollary §64.10: The Direction $0$ Is Always a Critical Value
+> If $M$ is nonempty and $m \ge 1$, then $0$ is a critical value of $\pi : S \to \mathbb{R}^N$.
+
+^cor-64-10
+
+> [!proof]+ Proof
+> *(Not from the assignment.)* For $\mathbf{a} = 0$, $f_0(p) = p \cdot 0 = 0$: $f_0 \equiv 0$. So $d(f_0)_p = 0$ for every $p$, and every point of $M$ is a critical point of $f_0$. In any chart the Hessian matrix of the constant function is the zero $m \times m$ matrix, with determinant $0$ since $m \ge 1$; so every critical point is degenerate (Proposition [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]](2), (a) $\Leftrightarrow$ (d)). As $M \neq \varnothing$, $f_0$ has a degenerate critical point and is not a Morse function (Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]]). By Theorem [[§64 Parametric Transversality#^thm-64-7|§64.7]], $0$ is not a regular value of $\pi$, that is, it is a critical value (Definition [[§36 Submersions#^def-36-4|§36.4]]).
+
+^pf-64-10
+
+*Uses:* [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]], [[§54 Critical Points and the Hessian#^def-54-4|Def. §54.4]], [[§64 Parametric Transversality#^thm-64-7|§64.7]], [[§36 Submersions#^def-36-4|Def. §36.4]]
+
 > [!remark]- ★ Remark: The Shape Operator
-> *(Beyond the course; stated, not proved here.)* For $(\mathbf{a}, p) \in S$, $\mathbf{a}$ is a normal vector at $p$, and $A_p$ is the *shape operator* (Weingarten map) of $M$ at $p$ in the normal direction $\mathbf{a}$: writing $\mathbf{a} = \pi_{\gamma(t)}(\mathbf{a}) + \nu(t)$ with $\nu(t) \perp T_{\gamma(t)}M$, $A_pu = -\nu'(0)$, the classical $S_{\mathbf{a}}(u) = -(D_u\nu)^{\top}$. The Hessian is the second fundamental form $\mathrm{II}$ paired with $\mathbf{a}$: $\operatorname{Hess}_p f_{\mathbf{a}}(u, w) = \mathbf{a} \cdot \mathrm{II}_p(u, w)$. So $f_{\mathbf{a}}$ fails to be Morse exactly when $M$ is curved degenerately in the direction $\mathbf{a}$ at some point where $\mathbf{a}$ is normal. For a hypersurface ($m = N - 1$), $\pi$ restricted to unit normals is the Gauss map, and the excluded directions are those of normals at points of zero Gauss–Kronecker curvature. The companion statement for distances, $L_{\mathbf{a}}(p) = |p - \mathbf{a}|^2$, is Milnor's (*Morse Theory*, §6): $L_{\mathbf{a}}$ is Morse if and only if $\mathbf{a}$ is not a focal point of $M$ (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-3|§42.3]]), the eigenvalue condition of the remark *Focal Points Are Centres of Curvature*.
+> *(Beyond the course; stated, not proved here.)* For $(\mathbf{a}, p) \in S$, $\mathbf{a}$ is a normal vector at $p$, and $A_p$ is the *shape operator* (Weingarten map) of $M$ at $p$ in the normal direction $\mathbf{a}$: writing $\mathbf{a} = \pi_{\gamma(t)}(\mathbf{a}) + \nu(t)$ with $\nu(t) \perp T_{\gamma(t)}M$, $A_pu = -\nu'(0)$, the classical $S_{\mathbf{a}}(u) = -(D_u\nu)^{\top}$. The Hessian is the second fundamental form $\mathrm{II}$ paired with $\mathbf{a}$: $\operatorname{Hess}_p f_{\mathbf{a}}(u, w) = \mathbf{a} \cdot \mathrm{II}_p(u, w)$. So $f_{\mathbf{a}}$ fails to be Morse exactly when $M$ is curved degenerately in the direction $\mathbf{a}$ at some point where $\mathbf{a}$ is normal. For a hypersurface ($m = N - 1$), $\pi$ restricted to unit normals is the Gauss map, and the excluded directions are those of normals at points of zero Gauss–Kronecker curvature. The companion statement for distances, $L_{\mathbf{a}}(p) = |p - \mathbf{a}|^2$, is Milnor's (*Morse Theory*, §6): $L_{\mathbf{a}}$ is Morse if and only if $\mathbf{a}$ is not a focal point of $M$ (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-3|§42.3]]), the eigenvalue condition of the remark *Focal Points in General* in [[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]].
 
 ^rem-64-2

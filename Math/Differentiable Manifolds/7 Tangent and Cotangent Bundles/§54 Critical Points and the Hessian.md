@@ -66,7 +66,7 @@ The function $f_\varphi$ is smooth on the open set $\varphi(U)$ (Proposition [[�
 > [!proof]+ Proof
 > *(Assignment 5, Problem 3: the submitted solution's description of the Hessian, written out.)* Write $g_j = \partial f/\partial x^j : U \to \mathbb{R}$ for $j = 1, \ldots, m$.
 >
-> *(1)* For $q \in U$, Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] with $D = \partial/\partial x^j|_q$ gives $df_q(\partial/\partial x^j|_q) = \partial f/\partial x^j(q) = g_j(q)$. By Proposition [[§53 One-Forms#^prop-53-2|§53.2]], $df$ is a one-form with $df = \sum_j g_j\, dx^j$ on $U$, and $g_j(q) = df_q(\partial/\partial x^j|_q)$ is exactly the $j$-th coefficient function of Proposition [[§53 One-Forms#^prop-53-1|§53.1]] for $\theta = df$. Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]], applied to the restriction of $f$ to $U$, gives that $g_j$ is smooth on $U$ and that
+> *(1)* For $q \in U$, Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] with $D = \partial/\partial x^j|_q$ gives $df_q(\partial/\partial x^j|_q) = \partial f/\partial x^j(q) = g_j(q)$. By Proposition [[§53 One-Forms#^prop-53-2|§53.2]], $df$ is a one-form with $df = \sum_j g_j\, dx^j$ on $U$, and $g_j(q) = df_q(\partial/\partial x^j|_q)$ is exactly the $j$-th coefficient function of Proposition [[§53 One-Forms#^prop-53-1|§53.1]] for $\theta = df$. Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]], applied to the restriction of $f$ to $U$, gives that $g_j$ is smooth on $U$ and that
 >
 > $$
 > g_j \circ \varphi^{-1} = \frac{\partial f_\varphi}{\partial r^j} \qquad \text{on } \varphi(U). \tag{$\ast$}
@@ -97,7 +97,7 @@ The function $f_\varphi$ is smooth on the open set $\varphi(U)$ (Proposition [[�
 
 ^pf-54-1
 
-*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§53 One-Forms#^prop-53-2|§53.2]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§54 Critical Points and the Hessian#^def-54-1|Def. §54.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]]
+*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§53 One-Forms#^prop-53-2|§53.2]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§54 Critical Points and the Hessian#^def-54-1|Def. §54.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]]
 
 > [!theorem] Proposition §54.2: Change of Coordinates for the Hessian
 > Let $(U, \varphi = (x^1, \ldots, x^m))$ and $(V, \psi = (y^1, \ldots, y^m))$ be smooth charts at $p$, with Hessian matrices $H^{(x)}_p$ and $H^{(y)}_p$ of $f$ at $p$, and let $J$ be the $m \times m$ matrix with entry
@@ -133,9 +133,9 @@ The function $f_\varphi$ is smooth on the open set $\varphi(U)$ (Proposition [[�
 > [!proof]+ Proof
 > *(Not from lecture; filled in. The idea: write $f_\varphi = f_\psi \circ \tau$ for the transition map $\tau$ and differentiate twice downstairs.)* Three things are claimed: the formula, its simplification at a critical point, and the determinant identity.
 >
-> *Setting up.* Restrict both charts to $U \cap V \ni p$; the restrictions are smooth charts by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1), applied to the open subset $U \cap V$ of $U$ and of $V$. This changes neither the Hessian matrices at $p$ nor any partial derivative at $p$: these are ordinary partial derivatives at $\varphi(p)$ or $\psi(p)$ of coordinate representations, which only get restricted to an open set around that point. So assume $U = V$. Let $\tau = \psi \circ \varphi^{-1} : \varphi(U) \to \psi(U)$ be the transition map, smooth because the charts are compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]), with components $\tau^k = r^k \circ \tau$. Put $a = \varphi(p)$, so $\tau(a) = \psi(p)$.
+> *Setting up.* Restrict both charts to $U \cap V \ni p$; the restrictions are smooth charts by Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1), applied to the open subset $U \cap V$ of $U$ and of $V$. This changes neither the Hessian matrices at $p$ nor any partial derivative at $p$: these are ordinary partial derivatives at $\varphi(p)$ or $\psi(p)$ of coordinate representations, which only get restricted to an open set around that point. So assume $U = V$. Let $\tau = \psi \circ \varphi^{-1} : \varphi(U) \to \psi(U)$ be the transition map, smooth because the charts are compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]), with components $\tau^k = r^k \circ \tau$. Put $a = \varphi(p)$, so $\tau(a) = \psi(p)$.
 >
-> *Three translations between upstairs and downstairs.* (i) $f_\varphi = f_\psi \circ \tau$ on $\varphi(U)$: for $r \in \varphi(U)$, $\varphi^{-1}(r) \in U$, so $f_\psi(\tau(r)) = f\big(\psi^{-1}(\psi(\varphi^{-1}(r)))\big) = f(\varphi^{-1}(r)) = f_\varphi(r)$. (ii) $y^k \circ \varphi^{-1} = r^k \circ \psi \circ \varphi^{-1} = \tau^k$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]](2) for $\psi$), a smooth function on $\varphi(U)$; so $y^k$ is smooth on $U$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]], with the chart $\varphi$), with coordinate representation $(y^k)_\varphi = \tau^k$. Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]], applied to $y^k \in C^\infty(U)$, gives that $\partial y^k/\partial x^j$ is smooth on $U$ and, for every $q \in U$,
+> *Three translations between upstairs and downstairs.* (i) $f_\varphi = f_\psi \circ \tau$ on $\varphi(U)$: for $r \in \varphi(U)$, $\varphi^{-1}(r) \in U$, so $f_\psi(\tau(r)) = f\big(\psi^{-1}(\psi(\varphi^{-1}(r)))\big) = f(\varphi^{-1}(r)) = f_\varphi(r)$. (ii) $y^k \circ \varphi^{-1} = r^k \circ \psi \circ \varphi^{-1} = \tau^k$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]](2) for $\psi$), a smooth function on $\varphi(U)$; so $y^k$ is smooth on $U$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]], with the chart $\varphi$), with coordinate representation $(y^k)_\varphi = \tau^k$. Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]], applied to $y^k \in C^\infty(U)$, gives that $\partial y^k/\partial x^j$ is smooth on $U$ and, for every $q \in U$,
 >
 > $$
 > \frac{\partial y^k}{\partial x^j}(q) = \frac{\partial \tau^k}{\partial r^j}\big(\varphi(q)\big), \quad\text{that is,}\quad \frac{\partial y^k}{\partial x^j} \circ \varphi^{-1} = \frac{\partial \tau^k}{\partial r^j} \ \text{ on } \varphi(U) ;
@@ -175,7 +175,7 @@ The function $f_\varphi$ is smooth on the open set $\varphi(U)$ (Proposition [[�
 
 ^pf-54-2
 
-*Uses:* [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§54 Critical Points and the Hessian#^def-54-1|Def. §54.1]], [[§36 Submersions#^prop-36-2|§36.2]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]
+*Uses:* [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§54 Critical Points and the Hessian#^def-54-1|Def. §54.1]], [[§36 Submersions#^prop-36-2|§36.2]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]
 
 > [!example] Example §54.1: The Hessian Matrix Depends on the Chart
 > Away from critical points the second sum is genuinely there. On $M = \mathbb{R}$ take $f(t) = t$ and $p = 0$, and two charts on $U = (-\tfrac12, \infty)$: $\varphi = \mathrm{id}_U$, with coordinate $x$, and $\psi(t) = t + t^2$, with coordinate $y$. Then $H^{(x)}(0) = 0$ but $H^{(y)}(0) = -2$.
@@ -183,7 +183,7 @@ The function $f_\varphi$ is smooth on the open set $\varphi(U)$ (Proposition [[�
 ^ex-54-1
 
 > [!proof]+ Working out the example
-> *$\psi$ is a smooth chart.* On $U$, $\psi'(t) = 1 + 2t > 0$, so $\psi$ is strictly increasing, a bijection of $U$ onto $(-\tfrac14, \infty)$ (as $\psi(-\tfrac12) = -\tfrac14$ and $\psi(t) \to \infty$), with inverse $\psi^{-1}(s) = \tfrac12\big(-1 + \sqrt{1 + 4s}\big)$, smooth because $1 + 4s > 0$. So $\psi$ is a diffeomorphism between open subsets of $\mathbb{R}$, and its transition maps with the global chart $\mathrm{id}_\mathbb{R}$, namely $\psi$ and $\psi^{-1}$, are smooth: $(U, \psi)$ is compatible with the standard atlas (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]), hence a smooth chart (Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]]).
+> *$\psi$ is a smooth chart.* On $U$, $\psi'(t) = 1 + 2t > 0$, so $\psi$ is strictly increasing, a bijection of $U$ onto $(-\tfrac14, \infty)$ (as $\psi(-\tfrac12) = -\tfrac14$ and $\psi(t) \to \infty$), with inverse $\psi^{-1}(s) = \tfrac12\big(-1 + \sqrt{1 + 4s}\big)$, smooth because $1 + 4s > 0$. So $\psi$ is a diffeomorphism between open subsets of $\mathbb{R}$, and its transition maps with the global chart $\mathrm{id}_\mathbb{R}$, namely $\psi$ and $\psi^{-1}$, are smooth: $(U, \psi)$ is compatible with the standard atlas (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]), hence a smooth chart (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]).
 >
 > *The two Hessians.* In $\varphi$, $f_\varphi(r) = r$, so $H^{(x)}(0) = f_\varphi''(0) = 0$. In $\psi$, $f_\psi(s) = f(\psi^{-1}(s)) = \psi^{-1}(s) = \tfrac12\big(-1 + (1 + 4s)^{1/2}\big)$, whose derivatives are
 >
@@ -197,14 +197,14 @@ The function $f_\varphi$ is smooth on the open set $\varphi(U)$ (Proposition [[�
 
 ^pf-ex-54-1
 
-*Uses:* [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-5|§17.5]], [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]]
+*Uses:* [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]]
 
 ## The Hessian at a Critical Point
 
 At a critical point the transformation law is $H^{(x)}_p = J^{\mathsf T} H^{(y)}_p J$, the law of a bilinear form, and the Hessian matrix becomes the matrix of a chart-free object.
 
 > [!theorem] Proposition §54.3: The Hessian at a Critical Point Is Well Defined
-> Let $p \in \operatorname{Crit}(f)$ and $v, w \in T_pM$. For a smooth chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$, let $v^i = v[x^i]$ and $w^j = w[x^j]$ be the components of $v$ and $w$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). Then the number
+> Let $p \in \operatorname{Crit}(f)$ and $v, w \in T_pM$. For a smooth chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$, let $v^i = v[x^i]$ and $w^j = w[x^j]$ be the components of $v$ and $w$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). Then the number
 >
 > $$
 > \sum_{i,j=1}^m H_{ij}(p)\, v^i\, w^j
@@ -319,17 +319,17 @@ The next proposition makes the condition concrete. Since $\operatorname{Hess}_p 
 >
 > *(2), (a) $\Leftrightarrow$ (b).* By Definition [[§21 Linear Algebra Toolkit#^def-21-5|§21.5]], (a) says that $B^\flat$ and $B^\sharp$ are injective. As $B^\sharp = B^\flat$ by (1), left and right non-degeneracy are the same condition, the injectivity of $B^\flat$.
 >
-> *(b) $\Leftrightarrow$ (c).* $\dim T_pM = m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]) and $\dim T_p^{\ast}M = m$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]); a linear map between spaces of the same finite dimension is injective if and only if it is bijective (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)).
+> *(b) $\Leftrightarrow$ (c).* $\dim T_pM = m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]) and $\dim T_p^{\ast}M = m$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]); a linear map between spaces of the same finite dimension is injective if and only if it is bijective (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)).
 >
 > *(b) $\Leftrightarrow$ (d).* A linear map between spaces of dimension $m$ is injective exactly when its matrix in a pair of bases is invertible, that is, has nonzero determinant. By (1) the matrix of $B^\flat$ in the bases of the chart $\varphi$ is $H_p$, so $B^\flat$ is injective if and only if $\det H_p \neq 0$.
 >
 > *(d) $\Leftrightarrow$ (e).* (e) includes (d). Conversely, if (d) holds, then (b) holds; $B^\flat$ is defined without charts, and the equivalence (b) $\Leftrightarrow$ (d) holds in every smooth chart at $p$, so $\det H_p \neq 0$ in every chart. (This also follows from $\det H^{(x)}_p = (\det J)^2 \det H^{(y)}_p$ with $\det J \neq 0$, Proposition [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]].)
 >
-> *(b) $\Leftrightarrow$ (f).* A linear map is injective exactly when it carries a basis to linearly independent vectors (a linear combination of the images is the image of the same combination of the basis vectors). By (1), $B^\flat$ carries the basis $\partial/\partial x^1|_p, \ldots, \partial/\partial x^m|_p$ of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]) to $d(\partial f/\partial x^1)_p, \ldots, d(\partial f/\partial x^m)_p$.
+> *(b) $\Leftrightarrow$ (f).* A linear map is injective exactly when it carries a basis to linearly independent vectors (a linear combination of the images is the image of the same combination of the basis vectors). By (1), $B^\flat$ carries the basis $\partial/\partial x^1|_p, \ldots, \partial/\partial x^m|_p$ of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]) to $d(\partial f/\partial x^1)_p, \ldots, d(\partial f/\partial x^m)_p$.
 
 ^pf-54-4
 
-*Uses:* [[§54 Critical Points and the Hessian#^def-54-2|Def. §54.2]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§33 Covectors in Coordinates#^def-33-1|Def. §33.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§21 Linear Algebra Toolkit#^def-21-5|Def. §21.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]]
+*Uses:* [[§54 Critical Points and the Hessian#^def-54-2|Def. §54.2]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§33 Covectors in Coordinates#^def-33-1|Def. §33.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§21 Linear Algebra Toolkit#^def-21-5|Def. §21.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]]
 
 > [!definition] Definition §54.4: Morse Function
 > A smooth function $f : M \to \mathbb{R}$ is a **Morse function** if every critical point of $f$ is nondegenerate (Definition [[§54 Critical Points and the Hessian#^def-54-3|§54.3]]). A function without critical points is a Morse function.
@@ -348,15 +348,35 @@ The next proposition makes the condition concrete. Since $\operatorname{Hess}_p 
 
 *Uses:* [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]]
 
-> [!remark] Remark: The Morse Lemma
-> *(Not from lecture; not proved here.)* For instance $f = x^2 - y^2$ on $\mathbb{R}^2$ has the single critical point $0$, with $H_0 = \mathrm{diag}(2, -2)$: nondegenerate, of index $1$ (Definition [[§54 Critical Points and the Hessian#^def-54-5|§54.5]]). The *Morse lemma* says that near a nondegenerate critical point $p$ of index $\lambda$ there is a chart $(y^1, \ldots, y^m)$ centred at $p$ in which
+> [!example] Example §54.2: The Saddle $x^2 - y^2$
+> *(Not from lecture.)* The function $f = x^2 - y^2$ on $\mathbb{R}^2$ has the single critical point $0$, with Hessian matrix $H_0 = \mathrm{diag}(2, -2)$: it is nondegenerate (Definition [[§54 Critical Points and the Hessian#^def-54-3|§54.3]]), of index $1$ (Definition [[§54 Critical Points and the Hessian#^def-54-5|§54.5]]).
+>
+> *Critical points.* In the identity chart, $\partial f/\partial x = 2x$ and $\partial f/\partial y = -2y$, so $df_{(x,y)} = 2x\, dx - 2y\, dy$ vanishes exactly at $(x, y) = (0, 0)$.
+>
+> *The Hessian matrix.* $\partial^2 f/\partial x^2 = 2$, $\partial^2 f/\partial y^2 = -2$ and $\partial^2 f/\partial x \partial y = 0$, so $H_0 = \mathrm{diag}(2, -2)$ (Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]).
+>
+> *Nondegenerate, of index $1$.* $\det H_0 = -4 \neq 0$, so $0$ is nondegenerate (Proposition [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]](2), (a) $\Leftrightarrow$ (d)). The eigenvalues of the diagonal matrix $H_0$ are its diagonal entries $2$ and $-2$, exactly one of them negative: the index is $1$.
+
+^ex-54-2
+
+> [!theorem] Proposition §54.5: The Morse Lemma
+> Let $f : M \to \mathbb{R}$ be smooth and $p$ a nondegenerate critical point of $f$ of index $\lambda$ (Definitions [[§54 Critical Points and the Hessian#^def-54-3|§54.3]] and [[§54 Critical Points and the Hessian#^def-54-5|§54.5]]). Then there is a chart $(y^1, \ldots, y^m)$ centred at $p$ in which
 >
 > $$
-> f = f(p) - (y^1)^2 - \cdots - (y^\lambda)^2 + (y^{\lambda+1})^2 + \cdots + (y^m)^2 ;
+> f = f(p) - (y^1)^2 - \cdots - (y^\lambda)^2 + (y^{\lambda+1})^2 + \cdots + (y^m)^2 .
 > $$
 >
-> so nondegenerate critical points look, up to a change of chart, like the critical point of a nondegenerate quadratic form. Neither Sylvester's law nor the Morse lemma is proved in these notes.
-> *(Computed; not from lecture.)* In the chart of the Morse lemma the Hessian matrix at $p$ is block diagonal,
+> So nondegenerate critical points look, up to a change of chart, like the critical point of a nondegenerate quadratic form.
+
+^prop-54-5
+
+> [!proof]+ Proof (to be filled)
+> *(Not from lecture.)* Neither Sylvester's law nor the Morse lemma is proved in these notes; a proof is in Milnor, *Morse Theory*, Lemma 2.2.
+
+^pf-54-5
+
+> [!theorem] Corollary §54.6: The Hessian in a Morse Chart
+> In the chart of Proposition [[§54 Critical Points and the Hessian#^prop-54-5|§54.5]] the Hessian matrix of $f$ at $p$ is block diagonal,
 >
 > $$
 > H_p = \begin{pmatrix} -2\, I_\lambda & 0 \\ 0 & 2\, I_{m-\lambda} \end{pmatrix},
@@ -364,4 +384,11 @@ The next proposition makes the condition concrete. Since $\operatorname{Hess}_p 
 >
 > with exactly $\lambda$ negative eigenvalues, the index.
 
-^rem-54-1
+^cor-54-6
+
+> [!proof]+ Proof
+> *(Computed; not from lecture.)* In the chart, $f = f(p) - \sum_{i \le \lambda} (y^i)^2 + \sum_{i > \lambda} (y^i)^2$, a sum of terms each involving one coordinate. So $\partial^2 f/\partial y^i \partial y^j = 0$ for $i \neq j$, while $\partial^2 f/\partial (y^i)^2 = -2$ for $i \le \lambda$ and $= 2$ for $i > \lambda$, at every point, in particular at $p$. This is the displayed diagonal matrix (Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]). Its eigenvalues are its diagonal entries, of which exactly $\lambda$ are negative, in agreement with the index $\lambda$ (Definition [[§54 Critical Points and the Hessian#^def-54-5|§54.5]], independent of the chart).
+
+^pf-54-6
+
+*Uses:* [[§54 Critical Points and the Hessian#^def-54-1|Def. §54.1]], [[§54 Critical Points and the Hessian#^def-54-5|Def. §54.5]]

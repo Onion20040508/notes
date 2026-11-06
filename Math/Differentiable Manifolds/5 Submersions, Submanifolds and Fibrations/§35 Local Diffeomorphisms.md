@@ -70,14 +70,35 @@ Three special types of smooth maps $F : M \to N$ are singled out by the linear a
 > [!remark]- Connections
 > - As a covering map of topological spaces: [[§31 Covering Spaces#^thm-31-2|590 §31.2]] ($\mathbb{R} \to S^1$ is a covering map).
 
-The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-10|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in [[§24 The Circle|The Circle]]; and covered by a line, a local diffeomorphism that is not injective, in [[§35 Local Diffeomorphisms#^ex-35-1|the circle covered by a line]].
+The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|U(1) is the circle]]; the homogeneous space $\mathbb{R}/\mathbb{Z}$ in [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-1|the circle as R/Z]]; three atlases — four charts, stereographic and angle — in [[§17 Differentiable Structures#^ex-17-2|the four-chart atlas]], [[§17 Differentiable Structures#^ex-17-3|the stereographic atlas]] and [[§17 Differentiable Structures#^ex-17-4|the angle atlas]], with [[§17 Differentiable Structures#^rem-17-9|three atlases and one structure]]; $\mathbb{RP}^1$ homeomorphic to it in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|The Two Topologies on RPⁿ Agree]]; its external, graph and internal descriptions, and the one smooth structure of its three atlases, in [[§24 The Circle|The Circle]]; and covered by a line, a local diffeomorphism that is not injective, in [[§35 Local Diffeomorphisms#^ex-35-1|the circle covered by a line]].
 
 The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is collected in [[§46 Projective Spaces and the Hopf Fibration|§46]].
 
 > [!remark] Remark: Covering Maps
-> The maps $\mathbb{R} \to S^1$ and $S^n \to \mathbb{RP}^n$ are *covering maps*, while $(0, 4\pi) \to S^1$ is a local diffeomorphism that is not: over the point $F(0) = (1,0)$ it has a single preimage, $2\pi$, where every other point of the circle has two. Covering maps were not defined in lecture and the distinction was postponed; it is Lee Ch. 4.
+> Covering maps were not defined in lecture and the distinction was postponed; it is Lee Ch. 4. There a *smooth covering map* is a smooth surjective map $\pi : E \to M$ between connected manifolds such that every point of $M$ has a connected open neighbourhood $V$ that is *evenly covered*: each component of $\pi^{-1}(V)$ is mapped diffeomorphically onto $V$ by $\pi$. The maps $\mathbb{R} \to S^1$ (Example [[§35 Local Diffeomorphisms#^ex-35-2|§35.2]]) and $S^n \to \mathbb{RP}^n$, $n \ge 1$ (Section [[§46 Projective Spaces and the Hopf Fibration|§46]]), are covering maps, while $(0, 4\pi) \to S^1$ is a local diffeomorphism that is not (Example [[§35 Local Diffeomorphisms#^ex-35-3|§35.3]]).
 
 ^rem-35-2
+
+> [!example] Example §35.2: The Line Covering the Circle
+> *(Not from lecture.)* The local diffeomorphism $F : \mathbb{R} \to S^1$, $F(t) = (\cos t, \sin t)$, of Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]] is a covering map, in the sense of the remark *Covering Maps* above.
+>
+> $\mathbb{R}$ and $S^1$ are connected, and $F$ is smooth (Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]]) and surjective, every point of $S^1$ being $F(s)$ for some $s \in [0, 2\pi)$. It remains to find an evenly covered neighbourhood of each $q \in S^1$. Write $q = F(t_0)$ and let $V = S^1 \setminus \{F(t_0 + \pi)\}$, the open arc of the proof of Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]]; it contains $q$, and it is connected, being the image $F\big((t_0 - \pi, t_0 + \pi)\big)$ of an interval under a continuous map. Since $F(t) = F(t_0 + \pi)$ exactly when $t \in t_0 + \pi + 2\pi\mathbb{Z}$,
+>
+> $$
+> F^{-1}(V) = \mathbb{R} \setminus \big(t_0 + \pi + 2\pi\mathbb{Z}\big) = \bigsqcup_{k \in \mathbb{Z}} U_k, \qquad U_k = \big(t_0 - \pi + 2\pi k,\ t_0 + \pi + 2\pi k\big),
+> $$
+>
+> a disjoint union of open intervals, which are therefore the components of $F^{-1}(V)$. Each $U_k$ is the interval $U$ of that proof with $t_0$ replaced by $t_0 + 2\pi k$, and the corresponding arc is the same $V$, because $F(t_0 + 2\pi k + \pi) = F(t_0 + \pi)$; so that proof shows that $F$ maps $U_k$ diffeomorphically onto $V$. Hence $V$ is evenly covered.
+
+^ex-35-2
+
+> [!example] Example §35.3: The Helix Interval Does Not Cover the Circle
+> *(Not from lecture.)* The restriction of $F(t) = (\cos t, \sin t)$ to $(0, 4\pi)$, a local diffeomorphism by Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]], is not a covering map: over the point $F(0) = (1,0)$ it has a single preimage, $2\pi$, where every other point of the circle has two.
+> - *The preimages.* $F(t) = (1, 0)$ if and only if $t \in 2\pi\mathbb{Z}$, and $(0, 4\pi) \cap 2\pi\mathbb{Z} = \{2\pi\}$. A point $q \neq (1,0)$ is $F(s)$ for exactly one $s \in (0, 2\pi)$, and its preimages in $(0, 4\pi)$ are the points of $s + 2\pi\mathbb{Z}$ lying there, namely $s$ and $s + 2\pi$.
+> - *Fibres over an evenly covered set have constant size.* If $V$ is evenly covered, each component of the preimage of $V$ is mapped bijectively onto $V$, so it contains exactly one preimage of each point of $V$; hence all points of $V$ have the same number of preimages, the number of components.
+> - *No evenly covered neighbourhood of $(1,0)$.* Every open neighbourhood $V$ of $(1,0)$ in $S^1$ contains points other than $(1,0)$, which have two preimages, while $(1,0)$ has one. So no neighbourhood of $(1,0)$ is evenly covered.
+
+^ex-35-3
 
 > [!remark]- Connections
 > - Covering maps are defined in [[§31 Covering Spaces#^def-31-2|590 Def. §31.2]]; the same failure for a half-line, $\mathbb{R}_+ \to S^1$, is [[§31 Covering Spaces#^ex-31-2|590 Ex. §31.2]].
@@ -99,7 +120,7 @@ The converse direction of the main theorem rests on one theorem from analysis, w
 
 > [!remark]- Connections
 > - Home in analysis (the two-variable version): [[Inverse Function Theorem (several variables)|452 §16.2]].
-> - The implicit function theorem it should not be confused with: [[§7 The Regular Value Theorem#^thm-7-1|§7.1]].
+> - The implicit function theorem it should not be confused with: [[§7 The Regular Value Theorem#^thm-7-2|§7.2]].
 
 Lee, Theorem C.34; taken from analysis, not proved in the course. It should not be confused with the *implicit* function theorem of [[§7 The Regular Value Theorem|§7]] — the board's “IFT” now means the inverse one. Each theorem can be derived from the other.
 
@@ -127,7 +148,7 @@ Lee, Theorem C.34; taken from analysis, not proved in the course. It should not 
 >
 > ($\Leftarrow$) Fix $p$; we must produce neighbourhoods $U' \ni p$, $V' \ni F(p)$ with $F(U') = V'$ and a smooth inverse of $F|_{U'}^{V'}$. Choose smooth charts $(U,\varphi)$ at $p$ and $(V,\psi)$ at $F(p)$ with $F(U) \subseteq V$, by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]]: take any chart $(V, \psi)$ at $F(p)$ and any chart $(U_1, \varphi_1)$ at $p$, and restrict $\varphi_1$ to the open set $U = U_1 \cap F^{-1}(V)$, open because $F$ is continuous. Let $\tilde F = \psi \circ F \circ \varphi^{-1} : \varphi(U) \to \psi(V)$, smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]].
 >
-> A bijective linear map forces $\dim M = \dim N$: $F_{\ast p}$ is a bijection $T_pM \to T_{F(p)}N$ between spaces of dimensions $m = \dim M$ and $n = \dim N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), and rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) gives $m = \dim\ker F_{\ast p} + \operatorname{rank} F_{\ast p} = 0 + n$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] the matrix of $F_{\ast p}$ is the square matrix $\tilde F'(\varphi(p))$, written out in the standard coordinates $r^1, \ldots, r^n$ of $\varphi(U)$ as
+> A bijective linear map forces $\dim M = \dim N$: $F_{\ast p}$ is a bijection $T_pM \to T_{F(p)}N$ between spaces of dimensions $m = \dim M$ and $n = \dim N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]), and rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) gives $m = \dim\ker F_{\ast p} + \operatorname{rank} F_{\ast p} = 0 + n$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] the matrix of $F_{\ast p}$ is the square matrix $\tilde F'(\varphi(p))$, written out in the standard coordinates $r^1, \ldots, r^n$ of $\varphi(U)$ as
 >
 > $$
 > \tilde F'\big(\varphi(p)\big) = \begin{pmatrix} \dfrac{\partial \tilde F^1}{\partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial \tilde F^1}{\partial r^n}\big(\varphi(p)\big) \\ \vdots & \ddots & \vdots \\ \dfrac{\partial \tilde F^n}{\partial r^1}\big(\varphi(p)\big) & \cdots & \dfrac{\partial \tilde F^n}{\partial r^n}\big(\varphi(p)\big) \end{pmatrix} ;
@@ -156,7 +177,7 @@ Lee, Theorem C.34; taken from analysis, not proved in the course. It should not 
 
 ^pf-35-2
 
-*Uses:* [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]
+*Uses:* [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]
 
 ![[m591-14-2.svg]]
 *The converse in one picture. Downstairs the Inverse Function Theorem supplies $\tilde F^{-1}$; the charts carry it upstairs as the local inverse $G = \varphi^{-1} \circ \tilde F^{-1} \circ \psi$. The only input from the hypothesis is that the bottom arrow has an invertible Jacobian at $\varphi(p)$ — which is where Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] enters.*
@@ -184,6 +205,22 @@ The Jacobian $\tilde F'(\varphi(p))$ is invertible by the lemma just cited: the 
 *Uses:* [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
 
 > [!remark] Remark
-> Not stated in lecture. Injectivity is the entire difference between the two notions, as the helix of Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]] shows: there every local inverse exists, but they cannot be assembled into a global one, because the second preimage of $q$ lies outside the domain of the local inverse. The same argument shows that a bijective local homeomorphism is a homeomorphism.
+> Not stated in lecture. Injectivity is the entire difference between the two notions, as the helix of Example [[§35 Local Diffeomorphisms#^ex-35-1|§35.1]] shows: there every local inverse exists, but they cannot be assembled into a global one, because the second preimage of $q$ lies outside the domain of the local inverse. The same argument shows that a bijective local homeomorphism is a homeomorphism (Lemma [[§35 Local Diffeomorphisms#^lem-35-4|§35.4]]).
 
 ^rem-35-3
+
+> [!theorem] Lemma §35.4: A Bijective Local Homeomorphism Is a Homeomorphism
+> Let $F : X \to Y$ be a map of topological spaces which is a *local homeomorphism*: every $p \in X$ has an open neighbourhood $U$ such that $F(U)$ is open in $Y$ and $F|_U : U \to F(U)$ is a homeomorphism. If $F$ is bijective, then $F$ is a homeomorphism.
+
+^lem-35-4
+
+> [!proof]+ Proof
+> *(Not stated in lecture.)* The argument of Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]], with continuity in place of smoothness.
+>
+> *$F$ is continuous.* Continuity is local: for $O \subseteq Y$ open, $F^{-1}(O)$ is the union over the open sets $U$ of the hypothesis of $(F|_U)^{-1}(O \cap F(U))$, each open in the open set $U$, hence open in $X$.
+>
+> *$F^{-1}$ is continuous.* Given $q \in Y$, let $p = F^{-1}(q)$, $U$ as in the hypothesis, $V = F(U)$, and $G = (F|_U)^{-1} : V \to U$, a continuous local inverse. For $y \in V$, $F(G(y)) = y = F(F^{-1}(y))$, so $G(y) = F^{-1}(y)$ because $F$ is injective; thus $F^{-1}$ agrees with $G$ on the open neighbourhood $V$ of $q$. These sets $V$ cover $Y$. For $O \subseteq X$ open, the preimage of $O$ under $F^{-1}$ is the union over them of $\{ y \in V : G(y) \in O \} = G^{-1}(O \cap U)$, each open in the open set $V$, hence open in $Y$. So $F^{-1}$ is continuous, and $F$, a continuous bijection with continuous inverse, is a homeomorphism.
+
+^pf-35-4
+
+*Uses:* [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]]

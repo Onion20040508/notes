@@ -65,7 +65,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§3 Subspaces and Products#^def-3-1|Def. §3.1]]
 
 > [!remark]- Connections
-> - Home in MATH 590: [[§5 Subspace Topology#^lem-5-2|590 §5.2]]; closed analogue [[§7 Closed Sets and Limit Points#^thm-7-3|590 §7.3]], used in [[§5 Quotient Maps#^lem-5-8|§5.8]].
+> - Home in MATH 590: [[§5 Subspace Topology#^lem-5-2|590 §5.2]]; closed analogue [[§7 Closed Sets and Limit Points#^thm-7-3|590 §7.3]], used in [[§5 Quotient Maps#^lem-5-9|§5.9]].
 
 > [!theorem] Proposition §3.3: Universal Property of the Subspace Topology
 > Let $S \subseteq X$ carry the subspace topology and let $\iota : S \hookrightarrow X$ be the inclusion.
@@ -134,7 +134,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: second countability of subspaces is [[§22 Countability Axioms#^thm-22-3|590 §22.3]]; Hausdorff is [[§9 Hausdorff Spaces#^def-9-1|590 Def. §9.1]].
-> - Used ad hoc for spheres in [[§8 Spheres#^ex-8-1|Ex. §8.1]] and [[§8 Spheres#^prop-8-1|§8.1]]; reused for level sets in [[§7 The Regular Value Theorem#^thm-7-3|§7.3]].
+> - Used ad hoc for spheres in [[§8 Spheres#^ex-8-1|Ex. §8.1]] and [[§8 Spheres#^prop-8-1|§8.1]]; reused for level sets in [[§7 The Regular Value Theorem#^thm-7-5|§7.5]].
 
 > [!theorem] Proposition §3.6: Open Subsets of Manifolds Are Manifolds
 > An open subset $S$ of a topological $n$-manifold $X$, with the subspace topology, is a topological $n$-manifold.
@@ -157,10 +157,14 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 ^def-3-2
 
-> [!remark] Remark: What Subspaces Do Not Inherit
-> Local Euclideanness is *not* hereditary: $\mathbb{R}$ is a $1$-manifold, but its subspace $\mathbb{Q}$ is not locally Euclidean ([[§2 Topological Manifolds#^ex-2-2|Example §2.2]]). By the proposition, openness is exactly what rescues it.
+> [!example] Example §3.1: Local Euclideanness Is Not Inherited by Subspaces: $\mathbb{Q} \subseteq \mathbb{R}$
+> Unlike the two conditions of Theorem [[§3 Subspaces and Products#^thm-3-5|§3.5]], local Euclideanness is *not* hereditary: $\mathbb{R}$ is a $1$-manifold, but its subspace $\mathbb{Q}$ is not locally Euclidean.
+> - *$\mathbb{R}$ is a $1$-manifold.* It is second countable (Example [[§1 Point-Set Topology Review#^ex-1-1|§1.1]]), Hausdorff (a metric space, Example [[§1 Point-Set Topology Review#^ex-1-4|§1.4]]), and the identity $\mathbb{R} \to \mathbb{R}$ is a chart around every point.
+> - *$\mathbb{Q}$, with the subspace topology, is not locally Euclidean of any dimension.* This is Example [[§2 Topological Manifolds#^ex-2-2|§2.2]].
+>
+> By Proposition [[§3 Subspaces and Products#^prop-3-6|§3.6]], openness is what rescues local Euclideanness, and $\mathbb{Q}$ is not open in $\mathbb{R}$: every interval around a rational number contains irrational numbers.
 
-^rem-3-3
+^ex-3-1
 
 ## Products
 
@@ -177,7 +181,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: [[§4 Product Topology#^def-4-1|590 Def. §4.1]]; arbitrary products in [[§11 Product Topology on Arbitrary Products#^def-11-1|590 Def. §11.1]].
-> - Smooth version: [[§19 Smooth Functions and Smooth Maps#^prop-19-10|The Product Smooth Structure, §19.10]].
+> - Smooth version: [[§19 Smooth Functions and Smooth Maps#^prop-19-11|The Product Smooth Structure, §19.11]].
 
 > [!theorem] Proposition §3.7: The Product Basis Generates a Topology
 > The collection $\mathcal{B}$ of products $U \times V$ of open sets satisfies the axioms of [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]], so it is a basis for a topology on $X \times Y$.
@@ -224,7 +228,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 > [!remark] Remark: Cartoons
 > Diagrams of the kind in the figure above are the working picture of the product topology: an open set in a product is one in which every point can be surrounded by a *box*. The box picture is what actually gets used in proofs (it reappears in the second-countability part of [[§3 Subspaces and Products#^thm-3-12|Theorem §3.12]] and in the proof of the [[§6 Open Quotients#^pf-6-1|Hausdorff Criterion]] below), and it is worth drawing every time.
 
-^rem-3-4
+^rem-3-3
 
 > [!definition] Definition §3.4: Projections of a Product
 > For sets $X$ and $Y$, the **projections** of the product $X \times Y$ onto its factors are
@@ -279,14 +283,14 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: [[§11 Product Topology on Arbitrary Products#^thm-11-1|590 §11.1 (Continuity into Product Spaces)]]; imported in [[§1 Point-Set Topology Review#^prop-1-5|§1.5]].
-> - Smooth version: [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]].
+> - Smooth version: [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]].
 
 > [!remark] Remark: Why the Universal Property Matters
 > To check that $F$ is continuous, it suffices to check it component by component. The same pattern reappears for *differentiability*: a map into a product of manifolds is smooth iff its components are. In Lee's language this is the *characteristic property* of the product topology (Lee Prop. A.16), and it characterizes the product topology uniquely ([[§3 Subspaces and Products#^cor-3-11|Corollary §3.11]] below). Together with the previous proposition this gives two independent abstract descriptions of the same topology—“coarsest making projections continuous” and “the one that lets you check maps componentwise.”
 >
 > Compare [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]]: the subspace topology is the coarsest making the inclusion continuous, and continuity of a map *into* $S$ is checked by composing with $\iota$. The quotient topology will complete the pattern in the opposite direction (Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]]): it is the *finest* making $\pi$ continuous, and continuity of a map *out of* $X/{\sim}$ is checked by precomposing with $\pi$.
 
-^rem-3-5
+^rem-3-4
 
 > [!theorem] Corollary §3.11: The Universal Property Characterizes the Product Topology
 > The product topology is the unique topology $\mathcal{T}$ on $X \times Y$ such that, for every space $Z$, a map $f : Z \to (X \times Y, \mathcal{T})$ is continuous if and only if $\pi_X \circ f$ and $\pi_Y \circ f$ are continuous.
@@ -321,9 +325,28 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: second countability of products is [[§22 Countability Axioms#^thm-22-3|590 §22.3]].
-> - Gives product manifolds their point-set hygiene: [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]].
+> - Gives product manifolds their point-set hygiene: [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]].
+
+> [!theorem] Corollary §3.13: Finite Products Inherit Both Conditions
+> Let $X_1, \ldots, X_k$ ($k \ge 1$) be topological spaces, and give $X_1 \times \cdots \times X_k$ the product topology, the one having the boxes $U_1 \times \cdots \times U_k$, $U_i \subseteq X_i$ open, as a basis (they satisfy the axioms of Definition [[§1 Point-Set Topology Review#^def-1-2|§1.2]]: the whole product is a box, and the intersection of two boxes is the box of the intersections).
+>
+> 1. If every $X_i$ is $T_2$, then $X_1 \times \cdots \times X_k$ is $T_2$.
+> 2. If every $X_i$ is second countable, then $X_1 \times \cdots \times X_k$ is second countable.
+
+^cor-3-13
+
+> [!proof]+ Proof
+> Induction on $k$; for $k = 1$ there is nothing to prove. Let $k \ge 2$ and write $P = X_1 \times \cdots \times X_{k-1}$.
+>
+> *The product topology on $X_1 \times \cdots \times X_k$ is that of $P \times X_k$* (Definition [[§3 Subspaces and Products#^def-3-3|§3.3]]), under the identification of $((x_1, \ldots, x_{k-1}), x_k)$ with $(x_1, \ldots, x_k)$. A basis element of $P \times X_k$ is $W \times U_k$ with $W$ open in $P$ and $U_k$ open in $X_k$; by Proposition [[§1 Point-Set Topology Review#^prop-1-1|§1.1]], $W$ is a union of boxes $U_1 \times \cdots \times U_{k-1}$, so $W \times U_k$ is a union of boxes $U_1 \times \cdots \times U_k$, hence open for the topology the boxes generate. Conversely each box $U_1 \times \cdots \times U_k = (U_1 \times \cdots \times U_{k-1}) \times U_k$ is a basis element of $P \times X_k$. So the two topologies have the same open sets.
+>
+> *Induction step.* By the induction hypothesis $P$ is $T_2$ (resp. second countable), and so is $X_k$; Theorem [[§3 Subspaces and Products#^thm-3-12|§3.12]] applied to $P \times X_k$ gives the claim.
+
+^pf-3-13
+
+*Uses:* [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§1 Point-Set Topology Review#^prop-1-1|§1.1]], [[§3 Subspaces and Products#^thm-3-12|§3.12]]
 
 > [!remark] Remark
-> Both statements extend to finite products by induction. For *infinite* products the story is subtler (product vs. box topology, 590 [[§11 Product Topology on Arbitrary Products#^def-11-2|§11]]), but finite products are all we need: they are how product manifolds like the torus $T^n = S^1 \times \cdots \times S^1$ will get their point-set hygiene for free, leaving only local Euclideanness to check.
+> For *infinite* products the story is subtler (product vs. box topology, 590 [[§11 Product Topology on Arbitrary Products#^def-11-2|§11]]), but finite products (Corollary [[§3 Subspaces and Products#^cor-3-13|§3.13]]) are all we need: they are how product manifolds like the torus $T^n = S^1 \times \cdots \times S^1$ will get their point-set hygiene for free, leaving only local Euclideanness to check.
 
-^rem-3-6
+^rem-3-5

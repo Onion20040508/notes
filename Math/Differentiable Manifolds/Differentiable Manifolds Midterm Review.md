@@ -35,7 +35,7 @@ Points he stressed in lecture, and where they live:
 - the line with two origins as *the* interesting non-example (Example [[§2 Topological Manifolds#^ex-2-1|§2.1]] Fails $T_2$: The Line with Two Origins);
 - the saturation of an open set under a group action is the union of its translates (Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] Orbit Relations Are Open);
 - coordinates on $\mathbb{R}^n$ are $r^i$, never $x^i$, when relating $M$ to $\mathbb{R}^n$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] Coordinate Derivations);
-- the smoothness of the functions in Hadamard's lemma is "a key point" (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]] Hadamard's Lemma);
+- the smoothness of the functions in Hadamard's lemma is "a key point" (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]] Hadamard's Lemma);
 - normal forms are *local*: the irrational line shows what goes wrong globally (Proposition [[§44 Embeddings#^prop-44-12|§44.12]] The Irrational Line on the Torus);
 - submersions are open "because locally they are projections" (Corollary [[§36 Submersions#^cor-36-9|§36.9]] Submersions Are Open Maps);
 - a smooth structure is a *maximal* atlas, "the fundamental definition" (Definition [[§17 Differentiable Structures#^def-17-9|§17.9]] Smooth Manifold Structure).
@@ -74,12 +74,12 @@ The notes show the course building each object more than once and then proving t
 
 | Object | Versions in the notes | The theorem that connects them |
 | --- | --- | --- |
-| Tangent space | geometric $T^{\mathrm{geo}}_pM$ (Definition [[§25 The Geometric Tangent Space#^def-25-1\|§25.1]]), derivations of germs (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2\|§28.2]]), coordinate basis (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2\|§29.2]]), velocities (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2\|§31.2]]) | Theorem [[§25 The Geometric Tangent Space#^thm-25-3\|§25.3]] The Geometric Tangent Space Is the Kernel of the Jacobian; Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6\|§29.6]] Basis Theorem; Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|§29.7]] Ambient and Abstract Agree; Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4\|§31.4]] Every Tangent Vector Is a Velocity |
+| Tangent space | geometric $T^{\mathrm{geo}}_pM$ (Definition [[§25 The Geometric Tangent Space#^def-25-1\|§25.1]]), derivations of germs (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2\|§28.2]]), coordinate basis (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2\|§29.2]]), velocities (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2\|§31.2]]) | Theorem [[§25 The Geometric Tangent Space#^thm-25-3\|§25.3]] The Geometric Tangent Space Is the Kernel of the Jacobian; Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|§29.7]] Basis Theorem; Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|§29.8]] Ambient and Abstract Agree; Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4\|§31.4]] Every Tangent Vector Is a Velocity |
 | Cotangent space | dual of $T_pM$ (Definition [[§32 The Cotangent Space#^def-32-4\|§32.4]]), dual basis $dx^i$ (Definition [[§33 Covectors in Coordinates#^def-33-1\|§33.1]]), germs $I_p/I_p^2$ (Definition [[§34 The Cotangent Space from Germs#^def-34-1\|§34.1]]) | Lemma [[§33 Covectors in Coordinates#^lem-33-1\|§33.1]] The Differential in Coordinates; Theorem [[§34 The Cotangent Space from Germs#^thm-34-4\|§34.4]] The Cotangent Space from Germs |
 | Differential | Jacobian (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-5\|§22.5]]), pushforward of derivations (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6\|§28.6]]), on curves | Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3\|§22.3]] Coordinate-Free Formula for the Differential; Theorem [[§30 The Differential in Coordinates#^thm-30-2\|§30.2]] The Matrix of the Differential; Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|§31.5]] Velocity of a Composite |
-| Smooth structure | atlas (Definition [[§17 Differentiable Structures#^def-17-6\|§17.6]]), maximal atlas (Definition [[§17 Differentiable Structures#^def-17-8\|§17.8]]) | Theorem [[§17 Differentiable Structures#^thm-17-5\|§17.5]] Every Atlas Lies in a Unique Maximal Atlas; Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2\|§19.2]] Smoothness of a Map Does Not Depend on the Charts |
+| Smooth structure | atlas (Definition [[§17 Differentiable Structures#^def-17-6\|§17.6]]), maximal atlas (Definition [[§17 Differentiable Structures#^def-17-8\|§17.8]]) | Theorem [[§17 Differentiable Structures#^thm-17-6\|§17.6]] Every Atlas Lies in a Unique Maximal Atlas; Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2\|§19.2]] Smoothness of a Map Does Not Depend on the Charts |
 | Submanifold of $\mathbb{R}^N$ | external and internal descriptions (Definition [[§20 Manifolds in Euclidean Space#^def-20-1\|§20.1]], Definition [[§20 Manifolds in Euclidean Space#^def-20-2\|§20.2]]), regular level set | Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1\|§20.1]] The Two Descriptions Agree; Proposition [[§37 Regular Submanifolds#^prop-37-9\|§37.9]] Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description |
-| Regular value theorem | in $\mathbb{R}^N$, for manifolds | Theorem [[§7 The Regular Value Theorem#^thm-7-3\|§7.3]] Regular Value Theorem; Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|§38.2]] The Regular Value Theorem for Manifolds; Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]] The Old and New Versions Agree |
+| Regular value theorem | in $\mathbb{R}^N$, for manifolds | Theorem [[§7 The Regular Value Theorem#^thm-7-5\|§7.5]] Regular Value Theorem; Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|§38.2]] The Regular Value Theorem for Manifolds; Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]] The Old and New Versions Agree |
 | Transversality | level sets in $\mathbb{R}^N$, maps to a submanifold | Theorem [[§26 Transversality#^thm-26-1\|§26.1]] Preimages of Transverse Level Sets; Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1\|§39.1]] Preimages of Transverse Submanifolds; Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3\|§39.3]] Special Cases of Transversality |
 | Diffeomorphism | two notions | Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-4\|§19.4]] The Two Notions of Diffeomorphism Agree |
 
@@ -96,7 +96,7 @@ The notes show the course building each object more than once and then proving t
 
 **Proofs**
 - [ ] ★★ Theorem [[§5 Quotient Maps#^thm-5-1|§5.1]] Universal Property of a Quotient Map: the tool for maps *out of* a quotient.
-- [ ] ★★ Proposition [[§5 Quotient Maps#^prop-5-5|§5.5]] Open Surjections Are Quotient Maps
+- [ ] ★★ Proposition [[§5 Quotient Maps#^prop-5-6|§5.6]] Open Surjections Are Quotient Maps
 - [ ] ★★ Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] Hausdorff Criterion and Theorem [[§6 Open Quotients#^thm-6-3|§6.3]] Second Countability of Open Quotients: the two conditions for a quotient to be a manifold.
 - [ ] ★★ Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] Orbit Relations Are Open, so orbit spaces are open quotients.
 - [ ] ★★ Theorem [[§13 Group Actions and Orbit Spaces#^thm-13-5|§13.5]] Compactness of $X$ Is Not Needed: Hausdorff orbit spaces from compact groups.
@@ -119,9 +119,9 @@ The notes show the course building each object more than once and then proving t
 - [ ] Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-5|§11.5]] General Linear Group to Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|§11.10]] Unitary Group: which equations cut out each group.
 
 **Proofs**
-- [ ] ★★ Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] Regular Value Theorem, from the implicit function theorem (quote it).
+- [ ] ★★ Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] Regular Value Theorem, from the implicit function theorem (quote it).
 - [ ] ★★ Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|§12.3]] $1$ Is a Regular Value of $\det$ and Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]] $\mathrm{SL}({n,\mathbb{R}})$ Is a Manifold of Dimension $n^2 - 1$: $\mathrm{SL}(n)$.
-- [ ] ★★ $\mathrm{O}(n)$ and $\mathrm{U}(n)$ as regular level sets: Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]] $\mathrm{O}(n)$ Is a Smooth Manifold of Dimension $\tfrac{n(n-1)}{2}$, Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-2|§23.2]] $\mathrm{U}(n)$ Is a Smooth Manifold of Dimension $n^2$. The differential's kernel and surjectivity, Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-1|§23.1]] The Kernel of the Differential.
+- [ ] ★★ $\mathrm{O}(n)$ and $\mathrm{U}(n)$ as regular level sets: Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]] $\mathrm{O}(n)$ Is a Smooth Manifold of Dimension $\tfrac{n(n-1)}{2}$, Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|§23.3]] $\mathrm{U}(n)$ Is a Smooth Manifold of Dimension $n^2$. The differential's kernel and surjectivity, Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-2|§23.2]] The Kernel of the Differential.
 - [ ] ★ Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]] Coordinate-Free Formula for the Differential, Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]] Regular Values Without Coordinates
 - [ ] ★ Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]] The Two Descriptions Agree
 
@@ -136,12 +136,12 @@ The notes show the course building each object more than once and then proving t
 - [ ] Definition [[§19 Smooth Functions and Smooth Maps#^def-19-1|§19.1]] Smooth Chart, Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]] Smooth Function on a Manifold, Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]] Smooth Map, Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]] Diffeomorphism, Definition [[§19 Smooth Functions and Smooth Maps#^def-19-7|§19.7]] Product Manifold
 
 **Proofs**
-- [ ] ★★ Theorem [[§17 Differentiable Structures#^thm-17-5|§17.5]] Every Atlas Lies in a Unique Maximal Atlas
+- [ ] ★★ Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]] Every Atlas Lies in a Unique Maximal Atlas
 - [ ] ★★ Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]] Smoothness of a Map Does Not Depend on the Charts: well-definedness via transition maps (strategy S1).
 - [ ] ★★ Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]] Composition of Smooth Maps
 - [ ] ★★ Theorem [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]] The Standard Atlas Is Smooth: compute the transition maps of $\mathbb{CP}^n$.
-- [ ] ★ Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]] Restricting and Recomposing Smooth Charts, Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]] A Chart Mapped into a Given Chart
-- [ ] ★ Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]] The Two Notions of Diffeomorphism Agree, Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]] The Product Smooth Structure
+- [ ] ★ Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]] Restricting and Recomposing Smooth Charts, Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]] A Chart Mapped into a Given Chart
+- [ ] ★ Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]] The Two Notions of Diffeomorphism Agree, Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]] The Product Smooth Structure
 - [ ] ★ Proposition [[§24 The Circle#^prop-24-1|§24.1]] The Three Circle Atlases Define One Smooth Structure: three circle atlases, one structure.
 - [ ] ★ Example [[§19 Smooth Functions and Smooth Maps#^ex-19-1|§19.1]] Two Smooth Structures on the Real Line: two different smooth structures on $\mathbb{R}$, diffeomorphic anyway.
 
@@ -161,13 +161,13 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★★ Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] The Geometric Tangent Space Is the Kernel of the Jacobian
 - [ ] ★★ Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]] First Properties of Derivations: $D(\text{const}) = 0$, and locality.
 - [ ] ★★ Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]] The Chain Rule
-- [ ] ★★ Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]] Hadamard's Lemma ⇒ Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]] Basis Theorem: a derivation is determined by its values on the coordinate functions (strategy S9).
+- [ ] ★★ Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]] Hadamard's Lemma ⇒ Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]] Basis Theorem: a derivation is determined by its values on the coordinate functions (strategy S9).
 - [ ] ★★ Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] The Matrix of the Differential
 - [ ] ★★ Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]] Every Tangent Vector Is a Velocity and Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]] Velocity of a Composite: computing differentials with curves.
 - [ ] ★★ Example [[§25 The Geometric Tangent Space#^ex-25-2|§25.2]] The Orthogonal Group, Example [[§25 The Geometric Tangent Space#^ex-25-3|§25.3]] The Unitary Group, Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]] The Classical Groups: tangent spaces of the classical groups at $I$.
-- [ ] ★ Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]] Ambient and Abstract Agree, Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] Open Subsets Have the Same Abstract Tangent Spaces, Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]] Charts Are Diffeomorphisms
-- [ ] ★ Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]] The Tangent Space of a Product
-- [ ] ★ Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]] Change of Coordinates, Proposition [[§30 The Differential in Coordinates#^prop-30-10|§30.10]] Maps with Zero Differential Are Constant
+- [ ] ★ Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]] Ambient and Abstract Agree, Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] Open Subsets Have the Same Abstract Tangent Spaces, Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]] Charts Are Diffeomorphisms
+- [ ] ★ Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]] The Tangent Space of a Product
+- [ ] ★ Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]] Change of Coordinates, Proposition [[§30 The Differential in Coordinates#^prop-30-11|§30.11]] Maps with Zero Differential Are Constant
 
 **Drill**
 - [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T4|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T4|proofs and class exercises]]
@@ -216,13 +216,13 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★★ Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] Level Sets Near a Regular Point ⇒ Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] The Regular Value Theorem for Manifolds
 - [ ] ★★ Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] Preimages of Transverse Submanifolds and Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]] Special Cases of Transversality: HW5.2.
 - [ ] ★★ Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]] Smooth Maps and Regular Submanifolds: maps into and out of submanifolds.
-- [ ] ★ Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]] Adapted Charts Give Local Defining Maps, Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description, Theorem [[§26 Transversality#^thm-26-1|§26.1]] Preimages of Transverse Level Sets, Proposition [[§26 Transversality#^prop-26-4|§26.4]] Transverse Intersections
+- [ ] ★ Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]] Adapted Charts Give Local Defining Maps, Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description, Theorem [[§26 Transversality#^thm-26-1|§26.1]] Preimages of Transverse Level Sets, Proposition [[§26 Transversality#^prop-26-5|§26.5]] Transverse Intersections
 - [ ] ★ Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-6|§39.6]] Lagrange Multipliers: HW5.4.
 
 **Drill**
 - [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T7|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T7|proofs and class exercises]]
 - [ ] 2025 midterm, Part 2.6: is a submersion transverse to every submanifold?
-- [ ] 2025 midterm, Part 3.9: graph and diagonal transverse. Use the tangent space of a product, Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]] The Tangent Space of a Product.
+- [ ] 2025 midterm, Part 3.9: graph and diagonal transverse. Use the tangent space of a product, Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]] The Tangent Space of a Product.
 - [ ] 2021 midterm, Part 2.7: intersection of submanifolds of $\mathbb{R}^3$ vs transversality.
 - [ ] 2021 midterm, Part 3.9: the differential of a restriction to an invariant submanifold.
 - [ ] Homework drills: [[Differentiable Manifolds HW Drill#^hw2-5|HW2.5]], [[Differentiable Manifolds HW Drill#^hw5-2|HW5.2]], [[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]]
@@ -274,7 +274,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] ★★ Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]] The Topology and Smooth Structure of $TM$ and Proposition [[§51 The Tangent Bundle#^prop-51-2|§51.2]] The Transition Maps of $TM$: topology, then atlas.
 - [ ] ★★ Proposition [[§52 The Cotangent Bundle#^prop-52-1|§52.1]] The Transition Maps of $T^{\ast}M$, Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]] The Topology and Smooth Structure of $TM$
 - [ ] ★★ Proposition [[§53 One-Forms#^prop-53-2|§53.2]] The Differential of a Function Is a One-Form
-- [ ] ★ Proposition [[§54 Critical Points and the Hessian#^prop-54-3|§54.3]] The Hessian at a Critical Point Is Well Defined, Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]] Transversality to the Zero Section (HW5.3), Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]] Critical Points of a Morse Function Are Isolated
+- [ ] ★ Proposition [[§54 Critical Points and the Hessian#^prop-54-3|§54.3]] The Hessian at a Critical Point Is Well Defined, Theorem [[§55 Morse Functions and the Zero Section#^thm-55-8|§55.8]] Transversality to the Zero Section (HW5.3), Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]] Critical Points of a Morse Function Are Isolated
 
 **Drill**
 - [ ] Notes drill: [[Differentiable Manifolds Notes Drill#Definitions T10|definitions]] · [[Differentiable Manifolds Notes Drill#Proofs T10|proofs and class exercises]]
@@ -307,16 +307,16 @@ Each one is a reusable move. Before writing a proof, name the move.
 - **S2 Define on representatives, then check well-definedness.** Germs, cosets, quotients, $[f]$ in $I_p/I_p^2$, $\ell_0$ on a span.
 - **S3 Maps out of a quotient go through the universal property**: Theorem [[§5 Quotient Maps#^thm-5-1|§5.1]] Universal Property of a Quotient Map.
 - **S4 Quotient → manifold.** Hausdorff via a closed relation; second countable via images of a countable basis under an open quotient map: Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] Hausdorff Criterion, Theorem [[§6 Open Quotients#^thm-6-3|§6.3]] Second Countability of Open Quotients.
-- **S5 Regular value theorem on a well-chosen map**, e.g. $A \mapsto A^{\mathsf T} A$, $\det$, (trace, det): Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] Regular Value Theorem, Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] The Regular Value Theorem for Manifolds.
+- **S5 Regular value theorem on a well-chosen map**, e.g. $A \mapsto A^{\mathsf T} A$, $\det$, (trace, det): Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] Regular Value Theorem, Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] The Regular Value Theorem for Manifolds.
 - **S6 Tangent space of a level set = kernel of the differential.** Prove $\subseteq$, then count dimensions: Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] The Geometric Tangent Space Is the Kernel of the Jacobian, Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]] Tangent Spaces of a Regular Submanifold.
 - **S7 Linear algebra closes the gap.** An injective map between spaces of equal dimension is onto; rank–nullity; a subspace of full dimension is everything.
 - **S8 Normal forms give charts.** Submersion and immersion normal forms ⇒ adapted charts: Theorem [[§36 Submersions#^thm-36-6|§36.6]] Local Normal Form for Submersions, Theorem [[§43 Immersions#^thm-43-1|§43.1]] Local Normal Form for Immersions.
-- **S9 A derivation is determined by the coordinate functions** (Hadamard): Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]] Hadamard's Lemma, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]] Basis Theorem.
+- **S9 A derivation is determined by the coordinate functions** (Hadamard): Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]] Hadamard's Lemma, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]] Basis Theorem.
 - **S10 Compute $F_{\ast}$ with curves**: $F_{\ast}(\gamma'(0)) = (F \circ \gamma)'(0)$, Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]] Velocity of a Composite.
 - **S11 Local, then global.** Germs, shrinking neighbourhoods, bump functions: Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] Open Subsets Have the Same Abstract Tangent Spaces, Corollary [[§56 Vector Fields#^cor-56-5|§56.5]] Every Germ Has a Global Representative.
 - **S12 Transversality = the images span.** Reduce to a regular value of a composite with a local defining map: Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] Preimages of Transverse Submanifolds.
-- **S13 Compactness upgrades local to global**: closed images, proper maps, finitely many critical points: Theorem [[§36 Submersions#^thm-36-10|§36.10]] Submersions from Compact Manifolds, Theorem [[§44 Embeddings#^thm-44-5|§44.5]] Injective Proper Immersions Are Embeddings, Corollary [[§55 Morse Functions and the Zero Section#^cor-55-8|§55.8]] Critical Points of a Morse Function Are Isolated.
-- **S13′ Connectedness upgrades local to global**: a local property plus a clopen set gives a global one, Theorem [[§2 Topological Manifolds#^thm-2-8|§2.8]] Connected Manifolds Are Path Connected, Proposition [[§30 The Differential in Coordinates#^prop-30-10|§30.10]] Maps with Zero Differential Are Constant.
+- **S13 Compactness upgrades local to global**: closed images, proper maps, finitely many critical points: Theorem [[§36 Submersions#^thm-36-10|§36.10]] Submersions from Compact Manifolds, Theorem [[§44 Embeddings#^thm-44-5|§44.5]] Injective Proper Immersions Are Embeddings, Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]] Critical Points of a Morse Function Are Isolated.
+- **S13′ Connectedness upgrades local to global**: a local property plus a clopen set gives a global one, Theorem [[§2 Topological Manifolds#^thm-2-8|§2.8]] Connected Manifolds Are Path Connected, Proposition [[§30 The Differential in Coordinates#^prop-30-11|§30.11]] Maps with Zero Differential Are Constant.
 - **S14 Differentiate an identity**, e.g. $\pi \circ s = \mathrm{id}$ or $G \circ F =$ const. Test closedness, Hausdorffness and continuity with sequences.
 - **S15 Symmetry**: prove it at one point (or on one slice), then move it by the group: homogeneous spaces, classical groups, $\mathrm{SU}(2)$.
 
@@ -327,13 +327,13 @@ Know each one's picture and the exact property it breaks.
 - [ ] Line with two origins (locally Euclidean + second countable, not Hausdorff): Example [[§2 Topological Manifolds#^ex-2-1|§2.1]] Fails $T_2$: The Line with Two Origins, Example [[§10 The Line with Two Origins#^ex-10-1|§10.1]] The Line with Two Origins
 - [ ] $\mathbb{Q}$ (not locally Euclidean); $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$ (not second countable): Example [[§2 Topological Manifolds#^ex-2-2|§2.2]] Fails Locally Euclidean: $\mathbb{Q}$, Example [[§2 Topological Manifolds#^ex-2-3|§2.3]] Fails Second Countability: $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$
 - [ ] A non-open relation, and a non-second-countable quotient: Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]] Non-Example, Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]] Failure of Second Countability
-- [ ] A non-Hausdorff orbit space (the group must be compact): Example [[§13 Group Actions and Orbit Spaces#^ex-13-6|§13.6]] Compactness Is Needed: a Non-Hausdorff Orbit Space; an isotropy group that is not closed: Example [[§14 Homogeneous Spaces#^ex-14-1|§14.1]] An Isotropy Group That Is Not Closed
+- [ ] A non-Hausdorff orbit space (the group must be compact): Example [[§13 Group Actions and Orbit Spaces#^ex-13-8|§13.8]] Compactness Is Needed: a Non-Hausdorff Orbit Space; an isotropy group that is not closed: Example [[§14 Homogeneous Spaces#^ex-14-1|§14.1]] An Isotropy Group That Is Not Closed
 - [ ] A continuous bijection that is not a homeomorphism: Example [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-2|§15.2]] A Continuous Bijection That Is Not a Homeomorphism
 - [ ] Two smooth structures on $\mathbb{R}$ (the $x^3$ chart): Example [[§19 Smooth Functions and Smooth Maps#^ex-19-1|§19.1]] Two Smooth Structures on the Real Line, Example [[§19 Smooth Functions and Smooth Maps#^ex-19-2|§19.2]] The Real Line with the Cube-Root Chart
 - [ ] Transversality failing two ways: Example [[§26 Transversality#^ex-26-2|§26.2]] Two Ways Transversality Can Fail
 - [ ] A surjective submersion that is not a fibration (punctured plane), and all fibres diffeomorphic but still not a fibration: Example [[§40 Fibrations#^ex-40-1|§40.1]] A Submersion That Is Not a Fibration, Example [[§40 Fibrations#^ex-40-2|§40.2]] All Fibres Diffeomorphic but Not a Fibration
 - [ ] An immersion that crosses itself; an injective immersion that is not a homeomorphism onto its image: Example [[§43 Immersions#^ex-43-1|§43.1]] An Immersion That Crosses Itself, Example [[§43 Immersions#^ex-43-2|§43.2]] An Injective Immersion That Is Not a Homeomorphism onto Its Image
-- [ ] Immersed but not regular (the irrational line on the torus): Example [[§44 Embeddings#^ex-44-1|§44.1]] Immersed but Not Regular, Proposition [[§44 Embeddings#^prop-44-12|§44.12]] The Irrational Line on the Torus
+- [ ] Immersed but not regular (the irrational line on the torus): Example [[§44 Embeddings#^ex-44-3|§44.3]] Immersed but Not Regular, Proposition [[§44 Embeddings#^prop-44-12|§44.12]] The Irrational Line on the Torus
 - [ ] A Hessian matrix that depends on the chart (away from critical points): Example [[§54 Critical Points and the Hessian#^ex-54-1|§54.1]] The Hessian Matrix Depends on the Chart
 
 ## Past midterms

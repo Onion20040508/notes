@@ -13,9 +13,9 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§7 The Regular Value Theorem#^def-7-1|Definition §7.1: Jacobian Matrix]]
 - [[§7 The Regular Value Theorem#^def-7-3|Definition §7.3: Regular Point]]
-- [[§7 The Regular Value Theorem#^thm-7-3|Theorem §7.3: Regular Value Theorem]]
-- [[§7 The Regular Value Theorem#^cor-7-4|Corollary §7.4: Open Domains and Arbitrary Values]]
 - [[§7 The Regular Value Theorem#^def-7-4|Definition §7.4: Regular Value]]
+- [[§7 The Regular Value Theorem#^thm-7-5|Theorem §7.5: Regular Value Theorem]]
+- [[§7 The Regular Value Theorem#^cor-7-6|Corollary §7.6: Open Domains and Arbitrary Values]]
 - [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]
 - [[§25 The Geometric Tangent Space#^def-25-1|Definition §25.1: Geometric Tangent Space]]
 - [[§25 The Geometric Tangent Space#^lem-25-1|Lemma §25.1: Locality of the Geometric Tangent Space]]
@@ -31,18 +31,18 @@ tags: [differentiable-manifolds, hub]
 - [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5: The Classical Groups]]
 - [[§25 The Geometric Tangent Space#^thm-25-7|Theorem §25.7: Dimension of the Geometric Tangent Space]]
 - [[§26 Transversality#^thm-26-1|Theorem §26.1: Preimages of Transverse Level Sets]]
-- [[§26 Transversality#^prop-26-2|Proposition §26.2: Transversality Is the Regular Value Condition]]
-- [[§26 Transversality#^cor-26-3|Corollary §26.3: The Regular Value Theorem as a Special Case]]
-- [[§26 Transversality#^prop-26-4|Proposition §26.4: Transverse Intersections]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7: Ambient and Abstract Agree]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-8|Corollary §29.8: Consequences]]
+- [[§26 Transversality#^prop-26-3|Proposition §26.3: Transversality Is the Regular Value Condition]]
+- [[§26 Transversality#^cor-26-4|Corollary §26.4: The Regular Value Theorem as a Special Case]]
+- [[§26 Transversality#^prop-26-5|Proposition §26.5: Transverse Intersections]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8: Ambient and Abstract Agree]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-9|Corollary §29.9: Consequences]]
 - [[§37 Regular Submanifolds#^lem-37-10|Lemma §37.10: An Adapted Chart of a Submanifold of ℝⁿ]]
 - [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|Theorem §38.2: The Regular Value Theorem for Manifolds]]
 - [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4: The Old and New Versions Agree]]
 - [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^ex-42-1|Example §42.1: Focal Points of the Parabola]]
 
 ## Connections
-- **Used for.** The tangent spaces of the classical groups at I: Skew(n) for O(n), skew-Hermitian matrices for U(n), trace-zero matrices for SL(n,ℝ) ([[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). It is the input to the [[Transverse Preimage Theorem]], to transverse intersections ([[§26 Transversality#^prop-26-4|§26.4]]) and to [[Ambient and Abstract Tangent Spaces Agree]], and the [[Regular Value Theorem for Manifolds]] generalizes it to ι_*(T_pS) = ker F_*p.
+- **Used for.** The tangent spaces of the classical groups at I: Skew(n) for O(n), skew-Hermitian matrices for U(n), trace-zero matrices for SL(n,ℝ) ([[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). It is the input to the [[Transverse Preimage Theorem]], to transverse intersections ([[§26 Transversality#^prop-26-5|§26.5]]) and to [[Ambient and Abstract Tangent Spaces Agree]], and the [[Regular Value Theorem for Manifolds]] generalizes it to ι_*(T_pS) = ker F_*p.
 - **How the proof goes.** Only T^geo_pM ⊆ ker F′(p) is proved directly, by the chain rule. The other inclusion is forced by dimension: the graph lemma ([[§25 The Geometric Tangent Space#^lem-25-2|§25.2]]) shows T^geo_pM is a subspace of dimension n, and rank–nullity ([[Fundamental theorem of linear maps]]) gives dim ker F′(p) = n ([[§25 The Geometric Tangent Space#^rem-25-4|§25, Remark]]).
 - **The regular value hypothesis matters.** Take S the x-axis in ℝ², G(x, y) = y and F(t) = (t, t²). The zero set of G ∘ F(t) = t² is the point {0}, whose tangent space is 0, but (G ∘ F)′(0) = 0 has kernel all of ℝ ([[§26 Transversality#^ex-26-2|Ex. §26.2]](b)).
 - **Same idea elsewhere.** In 452 this is the geometry of Lagrange multipliers: at a constrained extremum ∇f is orthogonal to the tangent space of the constraint set, so it lies in the span of the constraint gradients ([[Method of Lagrange Multipliers]], [[§17 Optimization and Lagrange Multipliers#^thm-17-3|452 §17.3]]).
