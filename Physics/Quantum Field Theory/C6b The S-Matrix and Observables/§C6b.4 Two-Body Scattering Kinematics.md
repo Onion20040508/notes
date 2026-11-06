@@ -20,7 +20,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 ## Two-body phase space in the centre-of-mass frame
 
 > [!remark] Remark: You must commit
-> To make $d\Pi_n$ explicit, "you must commit. … What coordinate system are you in? How many [particles] do you have? What are you actually observing?" With three or four particles in the final state the kinematics is harder, "but also a lot more data. There's literally more things you can measure": correlations and angles, so the theory predicts more. The lecture did only the simplest case; "in practice, this is not the sort of thing … you're going to work out" every time, but "the sort of thing like let me just look it up."
+> To make $d\Pi_n$ explicit one must commit to a coordinate system, a number of final particles and the quantities actually observed. With three or four particles in the final state the kinematics is harder, but there is also more data, more quantities that can be measured: correlations and angles, so the theory predicts more. Lecture 15 treats only the simplest case; in practice such kinematics is not worked out every time but looked up.
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.7*
 
@@ -52,7 +52,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 >
 > *Model:* any (kinematics); *applies:* two final particles, centre-of-mass frame; independent of the dynamics.
 >
-> *Source: PHY 513 Lecture 15, slide 20 ("Explicit expression for $n = 2$ final particles in cms: … $= \int d\Omega\frac{|\vec p_1|}{16\pi^2E_{\rm cm}}$"), and transcript ("Not that bad") · the user's PHY 513 notes, Ch. 15 §15.7, Derivation "Two-body phase space in the CM frame", eq. (dPi2) · PS §4.5, eqs. (4.81)–(4.82) · Yu §6.5.3, eqs. (6.341)–(6.343)*
+> *Source: PHY 513 Lecture 15, slide 20 ("Explicit expression for $n = 2$ final particles in cms: … $= \int d\Omega\frac{|\vec p_1|}{16\pi^2E_{\rm cm}}$"), and transcript · the user's PHY 513 notes, Ch. 15 §15.7, Derivation "Two-body phase space in the CM frame", eq. (dPi2) · PS §4.5, eqs. (4.81)–(4.82) · Yu §6.5.3, eqs. (6.341)–(6.343)*
 
 ^thm-c6b-4-1
 
@@ -89,7 +89,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 > \delta(E_1 + E_2 - E_{\rm cm}) = \frac{\delta(p_1 - p_1^\ast)}{|\partial_{p_1}(E_1 + E_2)|_{p_1^\ast}} = \frac{E_1E_2}{p_1(E_1 + E_2)}\bigg|_{p_1^\ast}\,\delta(p_1 - p_1^\ast) .
 > $$
 >
-> (The plus sign, where [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1|Theorem §C6b.9.1]] had a minus, is because $\mathbf p_2 = -\mathbf p_1$: $E_2$ also grows with $p_1$. In the lecture, "Still was a minus, but then I've gotten rid of $p_2$ when $p_2$ is minus $p_1$.")
+> (The plus sign, where [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1|Theorem §C6b.9.1]] had a minus, is because $\mathbf p_2 = -\mathbf p_1$: $E_2$ also grows with $p_1$. The sign is still a minus as long as $p_2$ is treated as independent; it becomes a plus once $p_2$ is eliminated in favour of $p_1$.)
 >
 > **Step 4** (collect). Insert Step 3 into Step 2 and do the $p_1$ integral; with $(2\pi)^2\cdot4 = 16\pi^2$ and $E_1 + E_2 = E_{\rm cm}$ at the zero,
 >
@@ -251,7 +251,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 > **Step 3** (the $\lambda$ form). Insert $|\mathbf p_1| = \frac{E_{\rm cm}}{2}\lambda^{1/2}(1, m_1^2/E_{\rm cm}^2, m_2^2/E_{\rm cm}^2)$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]], 1): $\frac{1}{4E_AE_B|\mathbf v_A - \mathbf v_B|}\cdot\frac{E_{\rm cm}\lambda^{1/2}}{2\cdot16\pi^2E_{\rm cm}} = \frac{\lambda^{1/2}}{128\pi^2E_AE_B|\mathbf v_A - \mathbf v_B|}$ (Yu (6.353)).
 >
 > **What the derivation shows.**
-> - The initial-state factor has not been simplified: "I still have all the initial stuff, which has its own simplifications, perhaps." For unequal masses the kinematics of the particular situation must be worked out ("you just look it up") → the $\lambda$ form (part 2), ★ [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|Theorem §C6b.4.3]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]].
+> - The initial-state factor has not been simplified; it may allow simplifications of its own. For unequal masses the kinematics of the particular situation must be worked out (or looked up) → the $\lambda$ form (part 2), ★ [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|Theorem §C6b.4.3]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]].
 
 ^der-c6b-4-4
 
@@ -449,7 +449,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 > the masses drop out of Steps 1–4, which hold with $|\mathbf p_1| = |\mathbf p_A| = E_{\rm cm}/2$ whatever the masses were.
 >
 > **What the derivation shows.**
-> - The $|\mathbf p_1|$ of the final phase space cancels the one of the initial velocity: "the initial state stuff and the final state stuff nicely sort of combine" (now in the statement).
+> - The $|\mathbf p_1|$ of the final phase space cancels the one of the initial velocity, so the initial-state and final-state factors combine (now in the statement).
 
 ^der-c6b-4-8
 
@@ -458,7 +458,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 *Procedure:* [[P7 From ℳ to σ or Γ#^p7-8|P7, step 8]]
 
 > [!remark] Remark: Why 1/E²: dimensional analysis
-> The result could have been guessed. $d\sigma/d\Omega$ is an area and $\mathcal M$ is dimensionless for $2 \to 2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]]), so the prefactor has dimension $(\text{energy})^{-2}$. "If particles do not sort of distinguish each other, kinematically speaking, total energy is [the] only [scale]. So it had to be basically one over the energy squared. All we can discuss is did I get the $64\pi^2$." A total cross section with an energy-independent $|\mathcal M|^2$ therefore falls like $1/E_{\rm cm}^2$ ([[§C6c.1 Amplitudes from Correlation Functions#^ex-c6c-1-2|Example §C6c.1.2]]).
+> The result could have been guessed. $d\sigma/d\Omega$ is an area and $\mathcal M$ is dimensionless for $2 \to 2$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-5|Theorem §C6b.1.5]]), so the prefactor has dimension $(\text{energy})^{-2}$. If the particles are kinematically indistinguishable, the total energy is the only scale, so the prefactor has to be one over the energy squared; only the number $64\pi^2$ is not fixed by this argument. A total cross section with an energy-independent $|\mathcal M|^2$ therefore falls like $1/E_{\rm cm}^2$ ([[§C6c.1 Amplitudes from Correlation Functions#^ex-c6c-1-2|Example §C6c.1.2]]).
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.7 (paragraph "Why $1/E_{\rm cm}^2$") · PHY 513 Lecture 16, slide 19 ("No angular dependence (feature of spin-less particles). Simple energy dependence (follows by dimensional analysis). Special to $\phi^4$-theory at leading order"; $\sigma_{\rm tot} = \lambda^2/(32\pi E_{\rm cm}^2)$, "note: identical particles")*
 

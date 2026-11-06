@@ -55,7 +55,7 @@ The chapter closes where Lecture 10 began, with spin and statistics. The theorem
 >
 > *Valid when:* every observation so far. Evidence, as these notes state it: atomic spectra and the periodic table for electrons ([[§C5b.1 Canonical Quantization of the Dirac Field#^rem-c5b-1-6|§C5b.1, Remark: Spin and statistics are an output]]), the structure of degenerate Fermi gases and the stability of matter (Connections below), and many photons in one mode in a laser. Dates and bounds: not given in the sources.
 >
-> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] (electrons) and the photon field [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^mod-c4-8-4|Model §C4.8.4]]; *applies:* an experimental input of nonrelativistic quantum mechanics that relativistic quantum field theory reproduces as an output ("It's an output, not an input", Lecture 10).
+> *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] (electrons) and the photon field [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^mod-c4-8-4|Model §C4.8.4]]; *applies:* an experimental input of nonrelativistic quantum mechanics that relativistic quantum field theory reproduces as an output, not an input.
 >
 > *Source: the user's PHY 513 notes, Ch. 10 §10.2 (paragraph "Spin and statistics are an output": "one is told, or shown by spectroscopy, that two electrons cannot occupy the same state … Photons, by contrast, are bosons, which is why many of them can occupy one mode, as in a laser") · PHY 513 Lecture 10, transcript (end of the lecture)*
 

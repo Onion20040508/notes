@@ -174,7 +174,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 > i\mathcal M^{(2)} = \frac{(-i\lambda)^2}{2}\sum_{P = P_s, P_t, P_u}\int\frac{d^4q}{(2\pi)^4}\,\frac{i}{q^2 - m^2 + i\varepsilon}\,\frac{i}{(P - q)^2 - m^2 + i\varepsilon} ;
 > $$
 >
-> (d)–(f) are not diagrams of $i\mathcal M$. "A total of three diagrams at that order. It's not a humongous number."
+> (d)–(f) are not diagrams of $i\mathcal M$.
 >
 > **Step 1** (legs and lines). Two quartic vertices, four particles: $\sum r_v = 8 = 4 + 2I$, $I = 2$; connected, $L = I - V + 1 = 1$ ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 1–2). With $e_v$ particles at vertex $v$, the free legs number $(4 - e_1) + (4 - e_2) = 2I = 4$, so $e_1 + e_2 = 4$:
 > - $(e_1, e_2) = (4, 0)$: $v_2$ closes on itself, the figure-eight beside the vertex, (d): not connected ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 3), a vacuum bubble ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]], 1);
@@ -188,7 +188,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 >
 > **Step 4** (what the integral does at large $q$). The integrand falls like $\frac{1}{q^4}$, and $\int\frac{d^4q}{q^4}$ diverges logarithmically: making sense of it is renormalization (second semester). The dependence on $P_s^2 = s$, $P_t^2 = t$, $P_u^2 = u$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-7|Theorem §C6b.1.7]]) is the energy dependence the first order lacks.
 >
-> *Source: PHY 513 Lecture 16, slide 25 (the $s$-channel loop as the connected example; "2nd and 3rd diagram are not connected"), slide 26, and transcript ("total of three diagrams at that order. It's not a humongous number") · the user's PHY 513 notes, Lecture 16 update, §16.8 "Example: $2 \to 2$ at order $\lambda^2$" (eq. (oneloop), "The symmetry factor $2$ (filled in)", "Looking ahead") and Figure "connamp" · PS §4.6, eq. (4.101), p. 112 · PHY 513, Problem Set 9, Problem 2(a)–(b) (the user's solution: the three classes 3–1, 4–0, 2–2, the $2\cdot(4\cdot3)\cdot(4\cdot3)\cdot2 = 576$ contractions per diagram against $\frac{1}{2!}(\frac{1}{4!})^2$, and the three loop integrals with $p_1 - p_3$, $p_1 - p_4$ and $p_1 + p_2$ through the loop)*
+> *Source: PHY 513 Lecture 16, slide 25 (the $s$-channel loop as the connected example; "2nd and 3rd diagram are not connected"), slide 26, and transcript ("total of three diagrams at that order") · the user's PHY 513 notes, Lecture 16 update, §16.8 "Example: $2 \to 2$ at order $\lambda^2$" (eq. (oneloop), "The symmetry factor $2$ (filled in)", "Looking ahead") and Figure "connamp" · PS §4.6, eq. (4.101), p. 112 · PHY 513, Problem Set 9, Problem 2(a)–(b) (the user's solution: the three classes 3–1, 4–0, 2–2, the $2\cdot(4\cdot3)\cdot(4\cdot3)\cdot2 = 576$ contractions per diagram against $\frac{1}{2!}(\frac{1}{4!})^2$, and the three loop integrals with $p_1 - p_3$, $p_1 - p_4$ and $p_1 + p_2$ through the loop)*
 
 ^ex-c6c-5-1
 

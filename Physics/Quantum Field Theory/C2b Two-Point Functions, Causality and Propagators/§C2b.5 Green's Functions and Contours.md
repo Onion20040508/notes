@@ -100,7 +100,7 @@ How does a free field respond to a source, $(\partial^2 + m^2)\phi = j$? One sol
 ^def-c2b-5-2
 
 > [!remark] Remark: The pole problem; two problems that are one
-> Unlike every integral of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§C2b.4 Microcausality and the Commutator Function|§C2b.4]], this one is four-dimensional: $p^0$ is now a variable, not $E_{\mathbf p}$ ([[§C2b.1 Heisenberg Fields#^rem-c2b-1-2|Remark: What is covariant and what is not yet]]), and the integrand blows up exactly at the energy one "knows in one's heart" is the right one. Two problems were swept under the rug: one cannot divide by $p^2 - m^2$ on the shell, and one cannot solve a differential equation without boundary conditions. Theorem §C2b.5.3 shows they are the same problem. The lecture's insistence is worth keeping: without a $C$, the expression is not yet anything.
+> Unlike every integral of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§C2b.4 Microcausality and the Commutator Function|§C2b.4]], this one is four-dimensional: $p^0$ is now a variable, not $E_{\mathbf p}$ ([[§C2b.1 Heisenberg Fields#^rem-c2b-1-2|Remark: What is covariant and what is not yet]]), and the integrand blows up exactly at the on-shell energy, the physically right one. Two problems have been set aside so far: one cannot divide by $p^2 - m^2$ on the shell, and one cannot solve a differential equation without boundary conditions. Theorem §C2b.5.3 shows they are the same problem. Without a $C$, the expression is not yet anything.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.4 · PHY 513 Lecture 6*
 

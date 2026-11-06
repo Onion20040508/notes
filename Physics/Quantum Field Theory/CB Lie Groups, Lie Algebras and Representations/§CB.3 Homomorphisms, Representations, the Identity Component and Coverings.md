@@ -229,7 +229,7 @@ Two examples of components (first written in [[§C9.1 Discrete Lorentz Transform
 > **4. Integers do not jump.** Along a continuous path $s \mapsto R(s)$, $s \in [0, 1]$, $R(0) = \mathbb 1$, the function $s \mapsto \det R(s)$ is continuous (a polynomial in the entries, [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|591 Prop. §11.3]]) and by step 1 takes values in $\{+1, -1\}$. The image of the interval $[0, 1]$ under a continuous map is connected ([[§15 Connected Spaces#^thm-15-3|590 Thm. §15.3]]), and the only connected subsets of $\{+1, -1\}$ are single points; so $\det R(s) = \det R(0) = +1$ for all $s$. Since $\det(-\mathbb 1) = -1$ (step 2), no such path ends at $-\mathbb 1$.
 >
 > **What the derivation shows**
-> - The argument is topological: a quantity that can only take integer values is constant along continuous paths, so it is enough to check it on small transformations (the lecture's "simplest instance of topology in the course").
+> - The argument is topological: a quantity that can only take integer values is constant along continuous paths, so it is enough to check it on small transformations.
 > - Only step 2 used the dimension; steps 1, 3, 4 hold in any dimension.
 > - The same argument with the two labels $\det\Lambda$ and $\operatorname{sgn}\Lambda^0{}_0$ is [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]], 4, for the Lorentz group.
 

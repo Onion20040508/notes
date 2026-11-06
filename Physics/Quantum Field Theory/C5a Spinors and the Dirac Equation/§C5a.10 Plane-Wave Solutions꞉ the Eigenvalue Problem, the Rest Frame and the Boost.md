@@ -265,7 +265,7 @@ Completeness follows from orthonormality: the matrix $\sum_s\xi^s\xi^{s\dagger}$
 ^def-c5a-10-4
 
 > [!caution] Caution: The slide's "angular momentum" is twice the angular momentum
-> The Lecture 9 slide "Solution of the Dirac Equation: Step 3" labels $\operatorname{diag}(\sigma^k, \sigma^k)$ the angular momentum. It is $2J^k$: the angular momentum is $\frac12\operatorname{diag}(\sigma^k, \sigma^k)$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-4|Theorem §C5a.10.4]]), with eigenvalues $\pm\frac12$, as the lecture said aloud ("the $J$ operator is a half sigma").
+> The Lecture 9 slide "Solution of the Dirac Equation: Step 3" labels $\operatorname{diag}(\sigma^k, \sigma^k)$ the angular momentum. It is $2J^k$: the angular momentum is $\frac12\operatorname{diag}(\sigma^k, \sigma^k)$ ([[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-4|Theorem §C5a.10.4]]), with eigenvalues $\pm\frac12$; the lecture itself gives the correct factor: the $J$ operator is one half of sigma.
 >
 > *Source: the user's PHY 513 notes, Ch. 9 §9.2 (Caution "Two slips in the lecture materials")*
 

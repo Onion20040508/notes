@@ -163,13 +163,13 @@ At first order the 15 contractions collapsed into two diagrams with coefficients
 *The orbit picture behind Step 5 ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]]). Left: one labelled diagram, a pairing of all half-edges (orange: leg $a$ of vertex $z_j$). Right: its diagram $D$; the map $\pi$ forgets the labels $j$ and $a$. The fiber $\pi^{-1}(D)$ is the orbit of the pairing under the relabelling group $G_n$, so $|\pi^{-1}(D)| = |G_n|/S$ by orbit–stabilizer, and dividing by $|G_n| = n!\,(4!)^n$ leaves $1/S$. (a) the tadpole, (b) the figure-eight, (c) the melon, (d)–(f) the sunset, the fish and the triangle of PHY 513, Problem Set 8, Problem 1(a); the stabilizers are the symmetries listed in [[§C6a.9 Symmetry Factors in Practice|§C6a.9]].*
 
 > [!remark] Remark: Where the 4! goes
-> Slide 17: "$\frac{1}{4!}$ largely cancels in combinatorics. It may not cancel entirely ⇒ multiply by $\frac1S$." The lecture: "If I really had four different guys that would soak up each of these lines that came out of the vertex, and each of them truly went to a different place, like $x$, $y$, $w$ and $u$ … I wouldn't have had a symmetry factor." In the tadpole two of the four legs go to $x$ and $y$, but the last two "have to play together", and nothing distinguishes which end of their loop is which. Assign the four line-ends (to $x$, to $y$, loop end 1, loop end 2) to the legs $(a, b, c, d)$, a permutation of $(1, 2, 3, 4)$: $4! = 24$ assignments. Exchanging the two loop ends gives the same contraction,
+> Slide 17: "$\frac{1}{4!}$ largely cancels in combinatorics. It may not cancel entirely ⇒ multiply by $\frac1S$." If the four lines leaving the vertex each went to a different place, like $x$, $y$, $w$ and $u$, there would be no symmetry factor. In the tadpole two of the four legs go to $x$ and $y$, but the last two are joined to each other, and nothing distinguishes which end of their loop is which. Assign the four line-ends (to $x$, to $y$, loop end 1, loop end 2) to the legs $(a, b, c, d)$, a permutation of $(1, 2, 3, 4)$: $4! = 24$ assignments. Exchanging the two loop ends gives the same contraction,
 >
 > $$
 > (a, b, c, d) \mapsto \overbracket{\hat\phi_x\hat\phi_{z_a}}\,\overbracket{\hat\phi_y\hat\phi_{z_b}}\,\overbracket{\hat\phi_{z_c}\hat\phi_{z_d}} \;\longleftarrow\; (a, b, d, c),
 > $$
 >
-> so only $\frac{24}{2} = 12$ are different (rows (b) of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]]), and $\frac{12}{4!} = \frac12$. "I would really like to have 24 distinct diagrams, please. But here … you didn't have truly four."
+> so only $\frac{24}{2} = 12$ are different (rows (b) of [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]]), and $\frac{12}{4!} = \frac12$.
 >
 > *Source: PHY 513 Lecture 14, slide 17, and transcript · the user's PHY 513 notes, Ch. 14 §14.5 (paragraph "Where the 4! goes")*
 
@@ -295,7 +295,7 @@ The other theories of Problem Set 8 used in this chapter, whose vertices the nex
 *Uses:* [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]
 
 > [!remark] Remark: What the rules say
-> The lecture's reading of the vertex: "$-i\lambda$ = amplitude for absorption/emission", "$\int d^4z$ superposition of interaction location" (slide 16); "Stuff happens. Tell me how." Between interactions "propagation is free". PS: "This is just the *superposition* principle of quantum mechanics: When a process can happen in alternative ways, we *add* the amplitudes for each possible way. To compute each individual amplitude, the Feynman rules tell us to *multiply* the amplitudes (propagators and vertex factors) for each independent part of the process" (p. 94).
+> The slides' reading of the vertex: "$-i\lambda$ = amplitude for absorption/emission", "$\int d^4z$ superposition of interaction location" (slide 16). Between interactions "propagation is free". PS: "This is just the *superposition* principle of quantum mechanics: When a process can happen in alternative ways, we *add* the amplitudes for each possible way. To compute each individual amplitude, the Feynman rules tell us to *multiply* the amplitudes (propagators and vertex factors) for each independent part of the process" (p. 94).
 >
 > *Source: PHY 513 Lecture 14, slide 16, and transcript · PS §4.4, p. 94*
 

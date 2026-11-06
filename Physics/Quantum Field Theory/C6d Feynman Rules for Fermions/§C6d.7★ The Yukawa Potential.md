@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c, extension]
 ---
 ← [[§C6d.6 Momentum-Space Feynman Rules]] · ↑ [[· C6d Feynman Rules for Fermions]] · [[§C9.1 Discrete Lorentz Transformations]] →
 
-★ *Beyond PHY 513 so far: PS §4.7, pp. 121–123, read for Lecture 17 but not covered in it; Larsen announced the nonrelativistic limit for the next week ("next week a sign will matter"). Unstar when a lecture covers it.*
+★ *Beyond PHY 513 so far: PS §4.7, pp. 121–123, read for Lecture 17 but not covered in it; the nonrelativistic limit was announced in Lecture 17 for the following week. Unstar when a lecture covers it.*
 
 *Sources: Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.7, pp. 121–123, eqs. (4.121)–(4.128) (page images checked) · PHY 513 Lecture 17, transcript ("next week we'll do something where we actually care about the sign. We'll try to double check, for example, that two like charges in fact … repel") · the user's PHY 513 notes, Lecture 17 update, §17.6, paragraph "The relative sign from antisymmetry" (the pointer to next week).*
 
@@ -177,7 +177,7 @@ What force does the exchange of the Yukawa scalar produce between two fermions? 
 > **Step 3** (potential). The amplitudes being equal, Steps 2–6 of [[§C6d.7★ The Yukawa Potential#^der-c6d-7-3|Derivation §C6d.7.3]] give the same $V(r)$.
 >
 > **What the derivation shows.**
-> - Scalar exchange attracts everything: particles and antiparticles carry the same "scalar charge" $g$. Vector exchange (QED) repels like charges and attracts opposite ones, which is the sign check Larsen announced for the next week (C6d, QED rules, and C8 Quantum electrodynamics, planned; PS §4.8, p. 125).
+> - Scalar exchange attracts everything: particles and antiparticles carry the same "scalar charge" $g$. Vector exchange (QED) repels like charges and attracts opposite ones, which is the sign check announced in Lecture 17 for the following week (C6d, QED rules, and C8 Quantum electrodynamics, planned; PS §4.8, p. 125).
 
 ^der-c6d-7-4
 

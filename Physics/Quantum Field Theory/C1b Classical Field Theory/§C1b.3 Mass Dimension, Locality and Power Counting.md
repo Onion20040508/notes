@@ -244,7 +244,7 @@ By the theorems above, every term of $\mathcal L$ has mass dimension $4$ ([[§C1
 ^def-c1b-3-1
 
 > [!remark] Remark: Why irrelevant terms die at low energy
-> With nothing in the theory but $\Lambda$ to supply a negative dimension, $g_{\mathcal O} = \tilde g_{\mathcal O}\Lambda^{-k}$. In a process at energy $E$, fields vary on the scale $1/E$ ($\partial\phi \sim E\phi$), so the term competes with the marginal ones through the pure number $\tilde g_{\mathcal O}(E/\Lambda)^k \to 0$ for $E \ll \Lambda$. The lecture's slogan: derivatives are expensive, and since $[\phi] = [\partial_\mu]$, more fields cost as much as more derivatives. Relevant terms do the opposite: the mass term matters more, relative to $E$, the lower the energy.
+> With nothing in the theory but $\Lambda$ to supply a negative dimension, $g_{\mathcal O} = \tilde g_{\mathcal O}\Lambda^{-k}$. In a process at energy $E$, fields vary on the scale $1/E$ ($\partial\phi \sim E\phi$), so the term competes with the marginal ones through the pure number $\tilde g_{\mathcal O}(E/\Lambda)^k \to 0$ for $E \ll \Lambda$. Derivatives are expensive, and since $[\phi] = [\partial_\mu]$, more fields cost as much as more derivatives. Relevant terms do the opposite: the mass term matters more, relative to $E$, the lower the energy.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.4 · PHY 513 Lecture 2, Part C*
 

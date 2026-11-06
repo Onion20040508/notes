@@ -43,7 +43,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 *Half-edges and a labelled diagram ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]]) for $E = \{x_1, x_2\}$, $n = 2$. (a) The ten half-edges: two external points and four legs at each vertex. (b) One labelled diagram $P$, a pairing of them. (c) Its multigraph $\Gamma(P)$, which forgets which leg is used. In a Feynman diagram the external points are the arguments $x_i$ and the vertices the interaction points $z_v$.*
 
 > [!caution] Caution: A Feynman diagram is a formula
-> "This lower part here looks a lot like a picture. It's not. It's a formula." Each diagram stands for a definite expression, and the drawing is shorthand: lines are $D_F$'s, points are their arguments, and where a line is drawn on the page means nothing. Lines that cross in a drawing do not meet; a line has only its two endpoints. In scalar field theory there is one kind of line; fermions and photons will bring more kinds ("not yet").
+> A diagram looks like a picture, but it is a formula. Each diagram stands for a definite expression, and the drawing is shorthand: lines are $D_F$'s, points are their arguments, and where a line is drawn on the page means nothing. Lines that cross in a drawing do not meet; a line has only its two endpoints. In scalar field theory there is one kind of line; fermions and photons will bring more kinds.
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.3 (Caution "A Feynman diagram is a formula")*
 
@@ -373,15 +373,15 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 
 *Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-4|Theorem §C5b.5.4]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-2|Theorem §C2a.5.2]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]], [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]
 
-> [!remark] Remark: The lecture's question
-> Asked in the lecture: why may $D_F(y - z)$ be written $D_F(z - y)$? "Is the function symmetric in $x$ and $y$? It is not. One of them is the complex conjugate of the other" — that is the Wightman function, $D_W(-\xi) = \overline{D_W(\xi)}$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]) — but the time-ordered combination $D_F$ is even ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]). So a line of a scalar diagram has no direction ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 1); PS make the same point for momenta: "Since $D_F(x - y) = D_F(y - x)$, the direction of $p$ is arbitrary" (p. 94).
+> [!remark] Remark: Why the Feynman propagator is symmetric and the Wightman function is not
+> Why may $D_F(y - z)$ be written $D_F(z - y)$? The Wightman function is not symmetric in $x$ and $y$: exchanging them gives the complex conjugate, $D_W(-\xi) = \overline{D_W(\xi)}$ ([[§C2b.2 The Wightman Function#^thm-c2b-2-4|Theorem §C2b.2.4]]) — but the time-ordered combination $D_F$ is even ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]). So a line of a scalar diagram has no direction ([[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 1); PS make the same point for momenta: "Since $D_F(x - y) = D_F(y - x)$, the direction of $p$ is arbitrary" (p. 94).
 >
 > *Source: PHY 513 Lecture 14, transcript (question at 42:55) · the user's PHY 513 notes, Ch. 14 §14.3 (paragraph "Why $y$ and $z$ may be exchanged") · PS §4.4, p. 94*
 
 ^rem-c6a-7-2
 
 > [!remark] Remark: The tadpole read as a process
-> Of the four $\hat a$'s and $\hat a^\dagger$'s in $\hat\phi_I(z)^4$, one absorbed what came in from $x$ and one created what went out to $y$. The remaining two had nothing else to do: one created and the other annihilated a particle at the same point, which is the loop. "They annihilated what came in, created one that came out, but there were still two guys left. Yep, they decided to create and annihilate another guy. The only option. So this combinatorial thing is going to also sort of have an intuitive content." PS read every diagram this way: "a process of particle creation, propagation, and annihilation which takes place in spacetime" (p. 92).
+> Of the four $\hat a$'s and $\hat a^\dagger$'s in $\hat\phi_I(z)^4$, one absorbed what came in from $x$ and one created what went out to $y$. The remaining two had nothing else to do: one created and the other annihilated a particle at the same point, which is the loop. The combinatorics has an intuitive content. PS read every diagram this way: "a process of particle creation, propagation, and annihilation which takes place in spacetime" (p. 92).
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.4 (paragraph "Reading the first-order tadpole as a process") · PS §4.4, p. 92*
 
@@ -429,7 +429,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 *Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]
 
 > [!remark] Remark: Why diagrams, not terms
-> Listing the $(4n + 1)!!$ terms is hopeless; grouping them into diagrams is not. The rule is the same at every order: all diagrams that connect $x$ and $y$, through however many vertices, each with its coefficient ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]). "Next up, product of six different guys. Next up, product of 10 different guys. All of the same form."
+> Listing the $(4n + 1)!!$ terms is hopeless; grouping them into diagrams is not. The rule is the same at every order: all diagrams that connect $x$ and $y$, through however many vertices, each with its coefficient ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]).
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.4 (paragraph "Higher orders")*
 

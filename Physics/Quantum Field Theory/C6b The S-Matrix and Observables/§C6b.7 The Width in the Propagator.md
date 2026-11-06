@@ -26,7 +26,7 @@ The width of [[§C6b.5 Decay Widths|§C6b.5]] appears a second time: in the prop
 >
 > the Feynman propagator $\frac{i}{p^2 - m^2 + i\varepsilon}$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]) with the infinitesimal $\varepsilon$ replaced by the finite $m\Gamma$, which radiative corrections produce: the self-energy of an unstable particle has an imaginary part on its mass shell, $Z\operatorname{Im}\Pi(m^2) = -m\Gamma$ (Yu (10.265)), and near the pole the full propagator is $\frac{iZ}{p^2 - m^2 - iZ\operatorname{Im}\Pi(m^2)} = \frac{iZ}{p^2 - m^2 + im\Gamma}$ (Yu (10.270), here with $Z \simeq 1$; beyond the course so far: [[§C6b.7 The Width in the Propagator#^rem-c6b-7-2|★ Remark: Yu's route to the width]]).
 > - *Assumptions:* a narrow width, $\Gamma \ll m$; $p^2$ near $m^2$; the field normalization of the full propagator set to 1.
-> - *Applies:* resonances, "I hit something and [make] some resonance"; a stable particle is the limit $\Gamma \to 0$.
+> - *Applies:* resonances, unstable states made in a collision; a stable particle is the limit $\Gamma \to 0$.
 >
 > *Source: PHY 513 Lecture 15, slide 23 ("Propagator in QFT with radiative corrections: $\frac{1}{p^2 - m^2 + im\Gamma}$"), and transcript ("you might be more happy if I actually give it dimensions … It's an $i m\Gamma$, where $\Gamma$ is a width") · the user's PHY 513 notes, Ch. 15 §15.8, eq. (BWprop) · PS §4.5, eq. (4.64) · Yu §10.6, eq. (10.270) (derived there from the self-energy, with $Z \simeq 1$)*
 
@@ -54,7 +54,7 @@ The width of [[§C6b.5 Decay Widths|§C6b.5]] appears a second time: in the prop
 > p^2 - m^2 = (p^0)^2 - \mathbf p^2 - m^2 = (p^0)^2 - E_{\mathbf p}^2 .
 > $$
 >
-> **Step 2** (sum and difference). "Turn this into a sum and difference", and write the sum as $2E_{\mathbf p} + (p^0 - E_{\mathbf p})$:
+> **Step 2** (sum and difference). Factor the difference of squares into a sum times a difference, and write the sum as $2E_{\mathbf p} + (p^0 - E_{\mathbf p})$:
 >
 > $$
 > (p^0)^2 - E_{\mathbf p}^2 = (p^0 + E_{\mathbf p})(p^0 - E_{\mathbf p}) = 2E_{\mathbf p}(p^0 - E_{\mathbf p}) + (p^0 - E_{\mathbf p})^2 \simeq 2E_{\mathbf p}(p^0 - E_{\mathbf p}) ,
@@ -76,7 +76,7 @@ The width of [[§C6b.5 Decay Widths|§C6b.5]] appears a second time: in the prop
 > p^0 = E_{\mathbf p}\sqrt{1 - \frac{im\Gamma}{E_{\mathbf p}^2}} = E_{\mathbf p}\Bigl(1 - \frac{im\Gamma}{2E_{\mathbf p}^2} + \frac{m^2\Gamma^2}{8E_{\mathbf p}^4} + O(\Gamma^3)\Bigr) = E_{\mathbf p} - \frac{im\Gamma}{2E_{\mathbf p}} + \frac{m^2\Gamma^2}{8E_{\mathbf p}^3} + O(\Gamma^3) ,
 > $$
 >
-> which agrees with Step 3 to first order in $\Gamma$. ("At least I don't divide by zero anymore.") Numerically, $m = 2$, $\Gamma = 0.05$, $|\mathbf p| = 1.3$: $-2\operatorname{Im}p^0 = 0.041921$ against $\frac{m}{E_{\mathbf p}}\Gamma = 0.041922$ (`qft-C/tools/l15/checks.py`).
+> which agrees with Step 3 to first order in $\Gamma$. (The pole has left the real axis, so the propagator no longer divides by zero on the mass shell.) Numerically, $m = 2$, $\Gamma = 0.05$, $|\mathbf p| = 1.3$: $-2\operatorname{Im}p^0 = 0.041921$ against $\frac{m}{E_{\mathbf p}}\Gamma = 0.041922$ (`qft-C/tools/l15/checks.py`).
 >
 > **What the derivation shows.**
 > - With $\varepsilon \to m\Gamma$ the pole at $+E_{\mathbf p}$ moves a finite distance below the real axis, where the Feynman prescription had put it infinitesimally ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]).
@@ -149,7 +149,7 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > so $\Gamma$ is the rest-frame decay rate of [[§C6b.5 Decay Widths#^def-c6b-5-1|Def. §C6b.5.1]]. In another frame the lifetime $1/\Gamma_{\rm NR} = \gamma/\Gamma = \gamma\tau$ is the dilated proper lifetime ([[§A2.1 Time Dilation#^thm-a2-1-2|REL Theorem §A2.1.2]]).
 >
 > **What the derivation shows.**
-> - Non-relativistic quantum mechanics cannot see the factor $m/E$: there $E \approx m$; "so there's some translation there that occasionally people … can get wrong" → [[§C6b.7 The Width in the Propagator#^cau-c6b-7-1|§C6b.7, Caution: The factor m/E is invisible non-relativistically]].
+> - Non-relativistic quantum mechanics cannot see the factor $m/E$: there $E \approx m$, and translating between the two is a common source of errors → [[§C6b.7 The Width in the Propagator#^cau-c6b-7-1|§C6b.7, Caution: The factor m/E is invisible non-relativistically]].
 > - The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] gives the same factor in a moving frame, $\frac{1}{2E_A}$ instead of $\frac{1}{2m_A}$ (its second ⚑).
 
 ^der-c6b-7-3
@@ -159,7 +159,7 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 *Procedure:* [[P2 Green's Functions by Contour Integration|P2]]
 
 > [!caution] Caution: The factor m/E is invisible non-relativistically
-> Non-relativistic quantum mechanics has $E_{\mathbf p} \approx m$, so its decay constant $\Gamma_{\rm NR}$ ([[§C6b.7 The Width in the Propagator#^def-c6b-7-1|Def. §C6b.7.1]]) cannot tell $\Gamma$ from $\frac{m}{E_{\mathbf p}}\Gamma$. Relativistically $\Gamma$ in $p^2 - m^2 + im\Gamma$ is the rest-frame rate, the same in every frame, and a particle moving with energy $E_{\mathbf p}$ decays at $\Gamma_{\rm NR} = \frac{m}{E_{\mathbf p}}\Gamma = \Gamma/\gamma$ ([[§C6b.7 The Width in the Propagator#^thm-c6b-7-3|Theorem §C6b.7.3]]; the box route gives the same, [[§C6b.5 Decay Widths#^thm-c6b-5-9|Theorem §C6b.5.9]]). Comparing a quoted width with a measured decay length or a non-relativistic decay constant needs this factor: "so there's some translation there that occasionally people … can get wrong."
+> Non-relativistic quantum mechanics has $E_{\mathbf p} \approx m$, so its decay constant $\Gamma_{\rm NR}$ ([[§C6b.7 The Width in the Propagator#^def-c6b-7-1|Def. §C6b.7.1]]) cannot tell $\Gamma$ from $\frac{m}{E_{\mathbf p}}\Gamma$. Relativistically $\Gamma$ in $p^2 - m^2 + im\Gamma$ is the rest-frame rate, the same in every frame, and a particle moving with energy $E_{\mathbf p}$ decays at $\Gamma_{\rm NR} = \frac{m}{E_{\mathbf p}}\Gamma = \Gamma/\gamma$ ([[§C6b.7 The Width in the Propagator#^thm-c6b-7-3|Theorem §C6b.7.3]]; the box route gives the same, [[§C6b.5 Decay Widths#^thm-c6b-5-9|Theorem §C6b.5.9]]). Comparing a quoted width with a measured decay length or a non-relativistic decay constant needs this factor, and omitting it is a common error.
 >
 > *Source: PHY 513 Lecture 15, slide 23, and transcript · the user's PHY 513 notes, Ch. 15 §15.8 (paragraph "Relation to non-relativistic decay")*
 
@@ -227,7 +227,7 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 *The Breit–Wigner shape $\lvert1/(s - m^2 + im\Gamma)\rvert^2$ as a function of $\sqrt s$, for $m/\Gamma = 10$ (solid), normalized to its peak; the full width at half maximum is $\Gamma$. Dashed: half the width (same $m$); as $\Gamma \to 0$ the normalized curve becomes $\delta(\sqrt s - m)$, a stable particle. Added figure, from the user's notes (Figure "breitwigner").*
 
 > [!remark] Remark: Why mΓ, not Γ
-> The term added to $p^2 - m^2$ must be a Lorentz scalar of dimension two; $\Gamma$ alone has dimension one, and $m\Gamma$ is the combination whose pole reproduces the rest-frame decay rate, $\Gamma_{\rm NR} = \Gamma$ at $E_{\mathbf p} = m$ ([[§C6b.7 The Width in the Propagator#^thm-c6b-7-3|Theorem §C6b.7.3]]). In the lecture: "you might be more happy if I actually give it dimensions … It's an $i\,m\Gamma$." The infinitesimal $i\varepsilon$ of a stable particle is the limit $\Gamma \to 0$; "if it weren't stable, … it actually would make life a little harder for you because this one would be finite."
+> The term added to $p^2 - m^2$ must be a Lorentz scalar of dimension two; $\Gamma$ alone has dimension one, and $m\Gamma$ is the combination whose pole reproduces the rest-frame decay rate, $\Gamma_{\rm NR} = \Gamma$ at $E_{\mathbf p} = m$ ([[§C6b.7 The Width in the Propagator#^thm-c6b-7-3|Theorem §C6b.7.3]]). Written with the right dimension, the term is $i\,m\Gamma$. The infinitesimal $i\varepsilon$ of a stable particle is the limit $\Gamma \to 0$; for an unstable particle the term stays finite, which makes calculations harder.
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.8 (paragraph "Checks (filled in)")*
 

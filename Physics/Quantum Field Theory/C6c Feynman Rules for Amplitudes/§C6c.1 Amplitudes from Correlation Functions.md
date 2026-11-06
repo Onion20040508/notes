@@ -16,7 +16,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 *Conventions* ([[Larsen PHY 513]]): as in [[§C6a.10 Feynman Rules in Momentum Space|§C6a.10]]; external momenta $p_A$, $p_B$ incoming, $p_1$, $p_2$ outgoing; "external propagator" means $\frac{i}{p^2 - m^2 + i\varepsilon}$ of a line ending at an external point.
 
 > [!theorem] Theorem §C6c.1.1: Amplitudes Are Amputated Correlation Functions
-> At lowest order, the amplitude $i\mathcal M$ of a process with $n$ external particles is the connected $n$-point correlation function in momentum space with the $n$ external propagators removed and the overall $(2\pi)^4\delta^4$ stripped off. In a diagram, external lines carry no propagator: initial and final particles are lines ending at a vertex, "but no propagator".
+> At lowest order, the amplitude $i\mathcal M$ of a process with $n$ external particles is the connected $n$-point correlation function in momentum space with the $n$ external propagators removed and the overall $(2\pi)^4\delta^4$ stripped off. In a diagram, external lines carry no propagator: initial and final particles are lines ending at a vertex, with no propagator.
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* lowest order in the couplings, with free relativistic states over $|0\rangle$ in place of the in and out states ([[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]); at that order no $\sqrt Z$ is needed; beyond it each external line carries $\sqrt Z$ and the physical mass, the LSZ formula (Lecture 16; [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|Caution: The rule is stated at lowest order]]).
 >
@@ -269,14 +269,14 @@ The diagrams of a scattering amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^
 ^cau-c6c-1-2
 
 > [!remark] Remark: Why amplitudes are easier
-> "It's actually easier than doing these correlation functions." Without the external propagators, a lowest-order process through a single vertex leaves only the vertex factor: "there's nothing left … something like a number", and the remaining work in such a problem is the phase space ([[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]]), "don't sweat over that part".
+> Amplitudes are easier to compute than correlation functions. Without the external propagators, a lowest-order process through a single vertex leaves only the vertex factor, a number, and the remaining work in such a problem is the phase space ([[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]]).
 >
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.9 (paragraph "Why it is easier")*
 
 ^rem-c6c-1-2
 
 > [!remark] Remark: Why the rule was stated early
-> At the end of the lecture Larsen said that two of the four problems of Problem Set 8 are "premature": they use Feynman rules to compute $\mathcal M$ and then $|\mathcal M|^2$, one of them with the decay formula ([[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]]), whereas Lecture 14 gave Feynman rules for correlation functions, not for amplitudes. "What you should do this week is … symmetry factors, a bit of Feynman rules, and a little bit of phase space factors." The rule of [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]] was stated for that reason, ahead of its justification in Lecture 16.
+> Two of the four problems of Problem Set 8 came ahead of the lectures: they use Feynman rules to compute $\mathcal M$ and then $|\mathcal M|^2$, one of them with the decay formula ([[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]]), whereas Lecture 14 gave Feynman rules for correlation functions, not for amplitudes. The work for that week was symmetry factors, some Feynman rules and phase-space factors. The rule of [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]] was stated for that reason, ahead of its justification in Lecture 16.
 >
 > *Source: PHY 513 Lecture 15, transcript (1:20:00) · the user's PHY 513 notes, Ch. 15 §15.9 (opening paragraph)*
 
@@ -296,7 +296,7 @@ The diagrams of a scattering amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^
 > [!remark] Remark: Next: Feynman rules for amplitudes
 > Lecture 16 (Nov 2, PS §4.6) justifies the stripping rule and gives Feynman rules for amplitudes (as announced; in the event it gave the rules by the direct route, [[§C6c.2 Contractions with External Particles|§C6c.2]]–[[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]] (amputation [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors|§C6c.5]], the rules [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]]), and left LSZ to the second semester), first in $\phi^4$ theory, then for Yukawa theory and QED, where external lines carry spinors and polarization vectors instead of propagators (Yukawa: [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-1|§C6d.2, Theorem §C6d.2.1]]; QED: C6d, QED rules (planned)). PS start from the same definition, $\langle\mathbf p_1\mathbf p_2\cdots|S|\mathbf k_A\mathbf k_B\rangle = \lim_{T\to\infty}\langle\mathbf p_1\mathbf p_2\cdots|e^{-iH(2T)}|\mathbf k_A\mathbf k_B\rangle$ (eq. (4.87)), and relate the interacting states to free ones by the same $T \to \infty(1 - i\epsilon)$ device as for the vacuum (eq. (4.88); [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]). Lecture 16 states this as a prescription: [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]].
 >
-> *Source: the user's PHY 513 notes, Ch. 15 §15.10 (paragraph "Next.") · PS §4.6, p. 108, eqs. (4.87)–(4.88) · PHY 513 Lecture 15, transcript ("which you don't really [know], but you will on Monday") · [[PHY 513 Course Log]] (Lecture 16: PS §4.6)*
+> *Source: the user's PHY 513 notes, Ch. 15 §15.10 (paragraph "Next.") · PS §4.6, p. 108, eqs. (4.87)–(4.88) · PHY 513 Lecture 15, transcript · [[PHY 513 Course Log]] (Lecture 16: PS §4.6)*
 
 ^rem-c6c-1-5
 

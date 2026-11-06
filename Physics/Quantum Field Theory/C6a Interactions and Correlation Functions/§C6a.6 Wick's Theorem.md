@@ -184,7 +184,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 > ⚑ By-product: the number of terms is $\sum_k\binom n{2k}(2k - 1)!!$ (choose the $2k$ contracted fields, then pair them, [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]); for $n = 4$: $1 + 6 + 3 = 10$ ([[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]).
 >
 > **What the derivation shows.**
-> - "It's just an induction proof" (the lecture): messy on a blackboard, but the only input is that each reordering costs a number, $D_W$, and that time ordering makes it $D_F$.
+> - The proof is a plain induction, messy when written out, but the only input is that each reordering costs a number, $D_W$, and that time ordering makes it $D_F$.
 > - The order in which the field is added matters only through the lemma's time condition; the result is symmetric.
 > - Used next: vacuum expectation values (Theorem §C6a.6.3).
 
@@ -258,7 +258,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 *Wick's theorem for four fields as on slide 10 and in PS eq. (4.39): a bracket over a pair is its contraction $D_F(x_i - x_j)$, the rest normal ordered ($N(\cdots)$ = the colons of these notes). Top: no contraction; middle: the six one-pair terms; bottom: the three complete contractions $(12)(34)$, $(13)(24)$, $(14)(23)$, with brackets of different heights where pairs cross or nest. Added figure.*
 
 > [!remark] Remark: Contracting several pairs
-> Asked in the lecture: does "contracting two pairs" simply mean two Feynman propagators? Yes. Each contraction is a $D_F$, so a term with two contractions is a product of two $D_F$'s times the normal-ordered product of the remaining fields; the contracted pairs need not be adjacent in the written product ($D_{13}:\!\hat\phi_2\hat\phi_4\!:$ in [[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]; PS p. 89: "When the contraction symbol connects two operators that are not adjacent, we still define it to give a factor of $D_F$").
+> Contracting two pairs simply gives two Feynman propagators: each contraction is a $D_F$, so a term with two contractions is a product of two $D_F$'s times the normal-ordered product of the remaining fields; the contracted pairs need not be adjacent in the written product ($D_{13}:\!\hat\phi_2\hat\phi_4\!:$ in [[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]]; PS p. 89: "When the contraction symbol connects two operators that are not adjacent, we still define it to give a factor of $D_F$").
 >
 > *Source: PHY 513 Lecture 14, slide 10, and transcript · the user's PHY 513 notes, Ch. 14 §14.2 · PS §4.3, p. 89*
 
@@ -304,7 +304,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 >
 > **Step 3** (these are the pairings). A set of disjoint pairs covering all of $\{1, \dots, n\}$ is a pairing ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]]). A set $C$ of $k$ pairs leaves $r = n - 2k$ fields; for $n$ odd, $r$ is odd, so $r \ge 1$ for every $C$ and every term vanishes. For $n$ even their number is $(n - 1)!!$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]): $n = 4$, the three of [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]]; $n = 6$, the fifteen listed in [[§C6a.7 Feynman Diagrams for Correlation Functions#^der-c6a-7-1|Derivation §C6a.7.1]].
 >
-> ⚑ By-product: for $n$ odd "there is always a field left over, too many $\hat a$'s or too many $\hat a^\dagger$'s" (the lecture) — the operator reason behind the counting reason.
+> ⚑ By-product: for $n$ odd there is always a field left over, too many $\hat a$'s or too many $\hat a^\dagger$'s — the operator reason behind the counting reason.
 >
 > **What the derivation shows.**
 > - Every free correlator is fixed by the two-point function $D_F$; the work of perturbation theory is combinatorics.
@@ -376,7 +376,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 ^ex-c6a-6-2
 
 > [!remark] Remark: Theorem and application
-> Wick's theorem is the operator statement ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), valid in any state; "the theorem itself is a little bit stronger because it tells us about the field without having put it in a particular state." The application in this course is almost always the vacuum value ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]): "the reason to introduce normal order was because it was really easy to take it in the vacuum state." The full operator form is used when the states are not the vacuum, as for scattering states (QFT C10, planned).
+> Wick's theorem is the operator statement ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), valid in any state, and so a little stronger than its vacuum value: it says something about the fields without putting them in a particular state. The application in this course is almost always the vacuum value ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]): normal ordering was introduced because normal-ordered products are easy to evaluate in the vacuum state. The full operator form is used when the states are not the vacuum, as for scattering states (QFT C10, planned).
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.2 (paragraph "Theorem and application")*
 

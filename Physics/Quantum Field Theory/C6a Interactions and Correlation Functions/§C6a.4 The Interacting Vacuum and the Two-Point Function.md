@@ -55,14 +55,14 @@ What should be computed in the interacting theory? Ultimately cross sections and
 ^def-c6a-4-2
 
 > [!remark] Remark: Why correlation functions
-> They are not themselves observables, "but it'll turn out that they are very close to observables." The amplitude interpretation is PS's: the correlation function is the amplitude for a particle or excitation to propagate from $y$ to $x$. How to get from correlation functions to cross sections and decay widths is Lectures 15–16 (QFT C10, planned; PS §4.5–§4.6). Once the two-point function is understood, the $n$-point functions follow by the same steps ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]).
+> They are not themselves observables, but they turn out to be very close to observables. The amplitude interpretation is PS's: the correlation function is the amplitude for a particle or excitation to propagate from $y$ to $x$. How to get from correlation functions to cross sections and decay widths is Lectures 15–16 (QFT C10, planned; PS §4.5–§4.6). Once the two-point function is understood, the $n$-point functions follow by the same steps ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]).
 >
 > *Source: PHY 513 Lecture 13, transcript (Part C) · the user's PHY 513 notes, Ch. 13 §13.4 · PS §4.2, pp. 82–83*
 
 ^rem-c6a-4-1
 
 > [!remark] Remark: Two complications
-> There are two complications, and the lecture names both. The fields in the correlator should be the true fields; [[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]] wrote them in terms of the free ones. The vacuum should be the true vacuum. The free vacuum $|0\rangle$ is the ground state of a collection of harmonic oscillators, annihilated by every $\hat a_{\mathbf p}$; the interaction couples all the oscillators ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-3|Theorem §C6a.1.3]]), and $\hat H|0\rangle \ne E|0\rangle$ ([[§C6a.1 From Free to Interacting Fields#^der-c6a-1-7|Derivation §C6a.1.7]], ⚑). The lecture's analogy: perturb a harmonic oscillator by an anharmonic term. The ground state was a Gaussian. It is now roughly Gaussian, but not exactly, and how far it is from a Gaussian depends on how far the potential is from a parabola. In field theory, in addition, all the momentum modes are coupled. The hope of perturbation theory is that $|\Omega\rangle$ is not far from $|0\rangle$ when $\lambda$ is small.
+> There are two complications. The fields in the correlator should be the true fields; [[§C6a.3 The Time-Evolution Operator and Time Ordering|§C6a.3]] wrote them in terms of the free ones. The vacuum should be the true vacuum. The free vacuum $|0\rangle$ is the ground state of a collection of harmonic oscillators, annihilated by every $\hat a_{\mathbf p}$; the interaction couples all the oscillators ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-3|Theorem §C6a.1.3]]), and $\hat H|0\rangle \ne E|0\rangle$ ([[§C6a.1 From Free to Interacting Fields#^der-c6a-1-7|Derivation §C6a.1.7]], ⚑). The lecture's analogy: perturb a harmonic oscillator by an anharmonic term. The ground state was a Gaussian. It is now roughly Gaussian, but not exactly, and how far it is from a Gaussian depends on how far the potential is from a parabola. In field theory, in addition, all the momentum modes are coupled. The hope of perturbation theory is that $|\Omega\rangle$ is not far from $|0\rangle$ when $\lambda$ is small.
 >
 > *Source: PHY 513 Lecture 13, slides 17–18, and transcript · the user's PHY 513 notes, Ch. 13 §13.4 (paragraph "The second complication: the vacuum")*
 
@@ -131,7 +131,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > ⚑ By-product: the iε is a choice of direction in the complex $T$ plane, the analogue of the $i\varepsilon$ that selects the Feynman contour → [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^rem-c6a-4-4|Remark: Preview: perturbation theory and the next lectures]].
 >
 > **What the derivation shows.**
-> - The ground state wins because it is damped least: "the one that will win is the ground state." The tilt plays the role of friction.
+> - The ground state wins because it is damped least. The tilt plays the role of friction.
 > - The limit is taken at fixed $\varepsilon$; the final formula does not depend on $\varepsilon$ ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-2|Example §C6a.4.2]]).
 > - Numerically (one anharmonic oscillator, [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-2|Example §C6a.4.2]]): the normalized $e^{-i\hat HT_\varepsilon}|0\rangle$ at $T = 40$ has overlap $1$ with $|\Omega\rangle$ to seven digits for $\varepsilon = 0.1$, and stays at $|\langle\Omega|0\rangle| = 0.99972$ for $\varepsilon = 0$.
 
@@ -140,7 +140,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 *Uses:* [[§24 Spectral Theorem#^ladr-7-31|LADR 7.31]], [[§45 The Completeness Relation#^cor-45-4|556 Cor. §45.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
 
 > [!caution] Caution: Two T's
-> $T$ is used for the large time and $T\{\cdots\}$ for time ordering, as in the lecture and in PS. The lecture: the large time is used "only at intermediate stages. Ultimately, take it to infinity"; in final formulas only one $T$ is left, and it means time ordering. Here time ordering is always written with braces, the large time never.
+> $T$ is used for the large time and $T\{\cdots\}$ for time ordering, as in the lecture and in PS. The large time is used only at intermediate stages and is ultimately taken to infinity; in final formulas only one $T$ is left, and it means time ordering. Here time ordering is always written with braces, the large time never.
 >
 > *Source: PHY 513 Lecture 13, transcript (slide 18) · the user's PHY 513 notes, Ch. 13 §13.4 (Caution "Two $T$'s")*
 
@@ -188,7 +188,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > **What the derivation shows.**
 > - Interpretation (slide 19): "exact time evolution takes free vacuum $|0\rangle$ to interacting vacuum $|\Omega\rangle$ after long time ($i\epsilon$ provides 'friction')": start very early with the free vacuum, the best guess, and evolve with the interactions to now.
-> - "The prefactors will just go along for the ride": they cancel in the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]).
+> - The prefactors are only carried along: they cancel in the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]).
 > - PS keeps a general reference time $t_0$ by shifting $T$ (eq. (4.28)); with $t_0 = 0$ the shift is not needed ([[§C6a.2 The Interaction Picture#^cau-c6a-2-2|§C6a.2, Caution: The reference time]]).
 
 ^der-c6a-4-2
@@ -241,7 +241,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 *Uses:* [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-1|Derivation §C6a.4.1]], [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^der-c6a-4-2|Derivation §C6a.4.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]]
 
 > [!remark] Remark: Why the bra is evolved into the future
-> The bra is not taken as the adjoint of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]]. That adjoint would be $\langle0|U(0, -T)^\dagger = \langle0|U(-T, 0)$, an evolution from the reference time back to the far past. It would also project onto $\langle\Omega|$, but the operators in the correlator would then run backwards in time on the left. Relaxing toward the far future instead makes the whole chain run forward: far past $\to$ reference time $\to$ far future. Every operator in the correlator can then be brought under one time ordering ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]). In the lecture's words: "you evolve for a very long time to the future … we're having this unitary evolution from early times to late times, and we do that via the middle."
+> The bra is not taken as the adjoint of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-2|Theorem §C6a.4.2]]. That adjoint would be $\langle0|U(0, -T)^\dagger = \langle0|U(-T, 0)$, an evolution from the reference time back to the far past. It would also project onto $\langle\Omega|$, but the operators in the correlator would then run backwards in time on the left. Relaxing toward the far future instead makes the whole chain run forward: far past $\to$ reference time $\to$ far future. Every operator in the correlator can then be brought under one time ordering ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]).
 >
 > *Source: PHY 513 Lecture 13, slide 20, and transcript · the user's PHY 513 notes, Ch. 13 §13.4 ("The bra is not obtained as the adjoint of (Omegaket)")*
 
@@ -271,7 +271,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 >
 > **Step 3** (the numerators compose). $U(T, 0)U(0, -T) = e^{i\hat H_0T}e^{-i\hat HT}\,e^{-i\hat HT}e^{i\hat H_0T} = e^{i\hat H_0T}e^{-2i\hat HT}e^{i\hat H_0T} = U(T, -T)$, by [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-2|Def. §C6a.3.2]] at $t = T$, $t' = -T$ (the composition law of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 2, written out; it holds for complex $T$ as the same algebra, the outer factors acting on $|0\rangle$ and $\langle0|$ as the identity).
 >
-> ⚑ By-product: by [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], $U(T, -T) = T\{\exp[-i\int_{-T}^Tdt\,\hat H_I(t)]\}$, computable from free fields. "even if I've done that all wrong … it will cancel out" → the denominator of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]].
+> ⚑ By-product: by [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-8|Theorem §C6a.3.8]], $U(T, -T) = T\{\exp[-i\int_{-T}^Tdt\,\hat H_I(t)]\}$, computable from free fields; whatever its value, it cancels out → the denominator of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]].
 >
 > **What the derivation shows.**
 > - Two unknowns, $E_0$ and $\langle0|\Omega\rangle$, are traded for one computable amplitude.
@@ -401,7 +401,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > \frac{N(T)}{\langle0|U(T, -T)|0\rangle} = \frac{N(T)/D(T)}{\langle0|U(T, -T)|0\rangle/D(T)} \to \frac{\langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle}{1} .
 > $$
 >
-> ⚑ By-product: the unknown $E_0$ and $\langle0|\Omega\rangle$ have disappeared; the denominator divides out "what would have happened anyway", the evolution of the vacuum without the fields. In perturbation theory it removes the vacuum bubbles (PS §4.4; [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]) → [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^rem-c6a-4-4|Remark: Preview: perturbation theory and the next lectures]].
+> ⚑ By-product: the unknown $E_0$ and $\langle0|\Omega\rangle$ have disappeared; the denominator divides out what would have happened anyway, the evolution of the vacuum without the fields. In perturbation theory it removes the vacuum bubbles (PS §4.4; [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]) → [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^rem-c6a-4-4|Remark: Preview: perturbation theory and the next lectures]].
 >
 > **What the derivation shows.**
 > - "The virtue of considering the time-ordered product is clear: it allows us to put everything inside one large $T$-operator" (PS).
@@ -466,7 +466,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > \langle0|\,U(T, 0)\,\underbrace{U(0, x^0)\,\hat\phi_I(x)\,U(x^0, 0)}_{\hat\phi_H(x)}\,\underbrace{U(0, y^0)\,\hat\phi_I(y)\,U(y^0, 0)}_{\hat\phi_H(y)}\,U(0, -T)\,|0\rangle = \langle0|\,T\Bigl\{\hat\phi_I(x)\,\hat\phi_I(y)\,e^{-i\int_{-T}^Tdt\,\hat H_I(t)}\Bigr\}\,|0\rangle \qquad (x^0 > y^0) .
 > $$
 >
-> Under one time ordering, $U(0, x^0)$ and $U(x^0, 0) = U(0, x^0)^{-1}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 3) are inverse time-ordered exponentials over the same interval and cancel. What is left is the evolution over the whole interval $[-T, T]$, written once. Read literally, "$\hat\phi_H = \hat\phi_I$" is false: $\hat\phi_H(x) = U(x^0)^\dagger\hat\phi_I(x)U(x^0) \ne \hat\phi_I(x)$ for $\lambda \ne 0$. "This one here is saying evolve all the way from minus infinity to plus infinity. I'm going to put it all here because I'm going to time order afterwards anyway."
+> Under one time ordering, $U(0, x^0)$ and $U(x^0, 0) = U(0, x^0)^{-1}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 3) are inverse time-ordered exponentials over the same interval and cancel. What is left is the evolution over the whole interval $[-T, T]$, written once. Read literally, "$\hat\phi_H = \hat\phi_I$" is false: $\hat\phi_H(x) = U(x^0)^\dagger\hat\phi_I(x)U(x^0) \ne \hat\phi_I(x)$ for $\lambda \ne 0$. The one remaining evolution operator runs all the way from minus infinity to plus infinity; all of it can be collected in one place because the product is time ordered afterwards anyway.
 >
 > *Source: PHY 513 Lecture 13, slide 21, and transcript · the user's PHY 513 notes, Ch. 13 §13.5 (paragraph "What 'cancels inside the time ordering' means")*
 
@@ -544,7 +544,7 @@ What should be computed in the interacting theory? Ultimately cross sections and
 > \frac{1}{n!}\Bigl(\frac{-i\lambda}{4!}\Bigr)^n\int d^4z_1\cdots d^4z_n\;\langle0|T\bigl\{\hat\phi_I(x)\hat\phi_I(y)\,\hat\phi_I(z_1)^4\cdots\hat\phi_I(z_n)^4\bigr\}|0\rangle .
 > $$
 >
-> The interacting two-point function is a sum of free correlators with more and more fields, and free correlators follow from the mode expansion ([[§C6a.2 The Interaction Picture#^thm-c6a-2-3|Theorem §C6a.2.3]] for two fields). Wick's theorem reduces them to products of $D_F$ (Yu §6.3; [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]; its $n = 2$ case is [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]). Lecture 14 ([[§C6a.5 Normal Ordering and Contractions|§C6a.5]]–[[§C6a.11 The iε Limit and Vacuum Bubbles|§C6a.11]]) organizes the combinatorics, does the integrals, and represents the result by diagrams with a dictionary between diagrams and formulas, the Feynman rules (PS §4.3–§4.4; [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]). Lectures 15–16 relate correlation functions to cross sections and decay widths, with Feynman rules for physical amplitudes (PS §4.5–§4.6; QFT C10, planned). The lecture also promised that the unpleasant features of this one will turn out fine — "it works out beautifully" — each curing the other: the denominator removes the vacuum bubbles ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]), and the tilt $T \to \infty(1 - i\varepsilon)$ is the same $i\varepsilon$ that defines $D_F$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]; [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|Theorem §C6a.11.1]]; PS §4.4).
+> The interacting two-point function is a sum of free correlators with more and more fields, and free correlators follow from the mode expansion ([[§C6a.2 The Interaction Picture#^thm-c6a-2-3|Theorem §C6a.2.3]] for two fields). Wick's theorem reduces them to products of $D_F$ (Yu §6.3; [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]; its $n = 2$ case is [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]]). Lecture 14 ([[§C6a.5 Normal Ordering and Contractions|§C6a.5]]–[[§C6a.11 The iε Limit and Vacuum Bubbles|§C6a.11]]) organizes the combinatorics, does the integrals, and represents the result by diagrams with a dictionary between diagrams and formulas, the Feynman rules (PS §4.3–§4.4; [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]). Lectures 15–16 relate correlation functions to cross sections and decay widths, with Feynman rules for physical amplitudes (PS §4.5–§4.6; QFT C10, planned). The unpleasant features of this formula turn out fine, each curing the other: the denominator removes the vacuum bubbles ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]), and the tilt $T \to \infty(1 - i\varepsilon)$ is the same $i\varepsilon$ that defines $D_F$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]; [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|Theorem §C6a.11.1]]; PS §4.4).
 >
 > *Source: PHY 513 Lecture 13, slides 22–23, and transcript · the user's PHY 513 notes, Ch. 13 §13.5 (paragraphs "Preview: perturbation theory", "The next lectures")*
 

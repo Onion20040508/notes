@@ -101,7 +101,7 @@ The user's notes check the definition on the hard sphere, the example worked in 
 *The classical cross section, here for a hard sphere of radius $R$ (the $a$ of CM Theorem §B4.2.4). Particles crossing the patch $d^2b$ of the impact-parameter plane leave into the solid angle $d\Omega$; a larger $b$ means a more glancing hit and a smaller deflection $\theta$, with $b = R\cos(\theta/2)$. Added figure, from the user's notes (Figure "classicalxsec").*
 
 > [!remark] Remark: The goal: a quantum, relativistic version
-> "What we want to do is to have a quantum and relativistic version of that, where it's not actually literally an area like that, but it's something that has the same properties." It should strip out "the kinematics of this situation and the quantum stuff with squared wave functions … that are completely universal. Nothing to do with the actual interaction", and leave a formula in terms of $\mathcal M$: "if you learn how to compute $M$ … you can compute the cross section." Quantum mechanics already did this for a fixed potential, with a transition rate divided by a probability current ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^def-c10-1-1|QM Def. §C10.1.1]]); the new features are two moving particles and relativistic kinematics.
+> The goal is a quantum and relativistic version of the classical cross section: not literally an area of that kind, but a quantity with the same properties. It should strip out the kinematics of the situation and the quantum factors from squared wave functions, which are completely universal and have nothing to do with the actual interaction, and leave a formula in terms of $\mathcal M$, so that knowing how to compute $\mathcal M$ is enough to compute the cross section. Quantum mechanics already did this for a fixed potential, with a transition rate divided by a probability current ([[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^def-c10-1-1|QM Def. §C10.1.1]]); the new features are two moving particles and relativistic kinematics.
 >
 > *Source: PHY 513 Lecture 15, slide 8 ("Goal: quantum, relativistic formula for $\frac{d\sigma}{d\Omega}$"), and transcript*
 
@@ -109,7 +109,7 @@ The user's notes check the definition on the hard sphere, the example worked in 
 
 ## Wave packets and the scattering probability
 
-"You're telling me these initial particles have [definite] momentum … What is their position then? There was this Heisenberg business." A momentum eigenstate is spread over all space and is not normalizable ([[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-1|§C2a.4, Caution: Plane-wave states are not normalizable]]); by "momentum $\mathbf p$" we mean "as close as I can get to momentum $\mathbf p$".
+Initial particles of definite momentum have no definite position, by the uncertainty principle. A momentum eigenstate is spread over all space and is not normalizable ([[§C2a.4 Particles and Relativistic Normalization#^cau-c2a-4-1|§C2a.4, Caution: Plane-wave states are not normalizable]]); by momentum $\mathbf p$ one means as close as possible to momentum $\mathbf p$.
 
 Three features of the packet below and where they go. The factor $1/\sqrt{2E_{\mathbf k}}$ absorbs the relativistic normalization of $|\mathbf k\rangle$, so that the norm of the packet is the plain integral $\int\frac{d^3k}{(2\pi)^3}|\phi|^2$ ([[§C6b.8 Wave Packets and the Cross Section#^thm-c6b-8-2|Theorem §C6b.8.2]]); squared, it becomes the factor $\frac{1}{2E_A2E_B}$ of $d\sigma$ ([[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3|Derivation §C6b.9.3]], Step 6; the box route gets it from $\langle i|i\rangle$, [[§C6b.2 Transition Probabilities in a Box#^thm-c6b-2-4|Theorem §C6b.2.4]]). The normalization $\int\frac{d^3k}{(2\pi)^3}|\phi|^2 = 1$ is what collapses the six remaining momentum integrals at the end (same derivation, Step 8). "Sharply peaked" means: the width $\Delta k$ of $|\phi|^2$ is small against the momentum scale $K$ on which $\mathcal M$, $E_{\mathbf k}$ and $\mathbf v$ change. For a profile with mean $\mathbf p$, Taylor's theorem gives for a smooth $F$
 
@@ -312,7 +312,7 @@ Why the integral over $\mathbf b$ is the cross section, before the definition: w
 > the $d^2b$ of $\frac{d\sigma}{d\Omega} = \frac{d^2b}{d\Omega}$.
 >
 > **What the derivation shows.**
-> - Integrating over $\mathbf b$ is what turns a probability into an area. Quantum mechanically every $\mathbf b$ contributes with its weight $\mathcal P(\mathbf b) \in [0, 1]$; the lecture calls it "very quantum": "it's not a specific $d^2b$ that gives me into my particular final … angle. It's all of them. All of them with a certain probability."
+> - Integrating over $\mathbf b$ is what turns a probability into an area. Quantum mechanically every $\mathbf b$ contributes with its weight $\mathcal P(\mathbf b) \in [0, 1]$; slide 12 calls this "very quantum": not one specific $d^2b$ leads into a given final angle, but all of them, each with a certain probability.
 
 ^der-c6b-8-4
 

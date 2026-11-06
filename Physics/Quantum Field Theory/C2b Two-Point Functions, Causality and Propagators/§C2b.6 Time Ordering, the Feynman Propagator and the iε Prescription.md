@@ -81,7 +81,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 *Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-11|Theorem §C2b.4.11]]
 
 > [!remark] Remark: Why the later operator stands to the left
-> In $\langle0|\cdots|0\rangle$ operators act on the state from right to left, so reading right to left is reading the history: the earliest acts first. Time evolution composes the same way, $U(t_3, t_2)U(t_2, t_1) = U(t_3, t_1)$ ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation|QM §C3.1]]), and Dyson's formula for interacting fields orders its exponential this way ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]). In the lecture's words: time starts on the right, things happen, and time ends on the left.
+> In $\langle0|\cdots|0\rangle$ operators act on the state from right to left, so reading right to left is reading the history: the earliest acts first. Time evolution composes the same way, $U(t_3, t_2)U(t_2, t_1) = U(t_3, t_1)$ ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation|QM §C3.1]]), and Dyson's formula for interacting fields orders its exponential this way ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]). Time starts on the right and ends on the left.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.6*
 
@@ -125,7 +125,7 @@ Which Green's function is a vacuum expectation value of field operators? The Fey
 > **Step 6** (properties). Evenness (of a distribution: $D_F[f(-\cdot)] = D_F[f]$, [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]): $T$ is symmetric in its arguments ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-1|Theorem §C2b.6.1]], 1), so $D_F(-\xi) = D_F(\xi)$. Invariance: $T\{\hat\phi\hat\phi\}$ is frame-independent (Theorem §C2b.6.1, 3) and the vacuum is invariant. Relation: for $t > 0$, $D_R + D_W(-\xi) = D_W(\xi) - D_W(-\xi) + D_W(-\xi) = D_W(\xi)$; for $t < 0$, $0 + D_W(-\xi)$.
 >
 > **What the derivation shows.**
-> - Where the retarded function says "the source acts, then there are consequences", the Feynman function is neutral about which of $x$ and $y$ came first and includes both, each with positive energy flowing forward.
+> - Where the retarded function lets the source act first and the consequences follow, the Feynman function is neutral about which of $x$ and $y$ came first and includes both, each with positive energy flowing forward.
 > - $D_F$ is a Green's function by Theorem §C2b.5.3; the operator side of this fact is Theorem §C2b.6.5.
 > - Used next: the contraction (Theorem §C2b.6.6), the $i\varepsilon$ form (Theorem §C2b.6.9), position space (Theorem §C2b.7.3).
 

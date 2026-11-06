@@ -284,7 +284,7 @@ Is the theory causal? Microcausality asks that observables at spacelike separati
 > [\hat\phi(x), \hat\phi^\dagger(y)] = \underbrace{D_W(x - y)}_{\text{particle } y \to x\ (\hat a,\,\hat a^\dagger)} - \underbrace{D_W(y - x)}_{\text{antiparticle } x \to y\ (\hat b^\dagger,\,\hat b)} = 0 \qquad ((x - y)^2 < 0) .
 > $$
 >
-> The cancellation needs both species, with the same mass: causality requires every particle to have an antiparticle with opposite charge (for the real field, itself). This is the honest content of "antiparticles are particles moving backwards in time"; the lecture's advice was not to be too disturbed by such narrations of the second term.
+> The cancellation needs both species, with the same mass: causality requires every particle to have an antiparticle with opposite charge (for the real field, itself). This is the honest content of "antiparticles are particles moving backwards in time"; such narrations attach words to the second term, and the computation is the content.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.5 (Caution "What the cancellation means, and what it does not") · PS §2.4, p. 29*
 

@@ -97,7 +97,7 @@ $$
 *Uses:* [[§C6a.2 The Interaction Picture#^def-c6a-2-2|Def. §C6a.2.2]], [[§C6a.2 The Interaction Picture#^def-c6a-2-3|Def. §C6a.2.3]], [[§C6a.1 From Free to Interacting Fields#^def-c6a-1-1|Def. §C6a.1.1]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]
 
 > [!remark] Remark: Space integrals and time integrals
-> Two questions from the lecture. *Is $\mathcal H_{\text{int}}$ a density?* Yes: every $\hat H$ in this chapter is a Hamiltonian, already integrated over space, $\hat H = \int d^3x\,\hat{\mathcal H}$, with a density at each point of space at a given time. "The Hamiltonian is never integrated over time." The time integrals that appear from here on come from solving the equation of motion of $U$; they are something extra, and together with the space integral of $\hat H_I$ they make the spacetime integrals $\int d^4z$ of perturbation theory ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]]). *If $\hat H_I$ depends on time, why were there no $\partial_t\hat H$ terms?* Because in $U(t) = e^{i\hat H_0t}e^{-i\hat Ht}$ the Hamiltonians do not depend on time: they are conserved, evaluated once at the reference time. $\hat H_I(t)$ became time dependent only by being conjugated with $e^{i\hat H_0t}$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]).
+> Two questions arise. *Is $\mathcal H_{\text{int}}$ a density?* Yes: every $\hat H$ in this chapter is a Hamiltonian, already integrated over space, $\hat H = \int d^3x\,\hat{\mathcal H}$, with a density at each point of space at a given time. The Hamiltonian itself is never integrated over time. The time integrals that appear from here on come from solving the equation of motion of $U$; they are something extra, and together with the space integral of $\hat H_I$ they make the spacetime integrals $\int d^4z$ of perturbation theory ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]]). *If $\hat H_I$ depends on time, why were there no $\partial_t\hat H$ terms?* Because in $U(t) = e^{i\hat H_0t}e^{-i\hat Ht}$ the Hamiltonians do not depend on time: they are conserved, evaluated once at the reference time. $\hat H_I(t)$ became time dependent only by being conjugated with $e^{i\hat H_0t}$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]).
 >
 > *Source: PHY 513 Lecture 13, transcript (two questions after slide 10) · the user's PHY 513 notes, Ch. 13 §13.3 (paragraphs "Space integrals and time integrals", "Where the time dependence came from")*
 
@@ -156,7 +156,7 @@ $$
 > For $t_1 \ne t_2$ the set $\{|\mathbf x - \mathbf y| < |t_1 - t_2|\}$, where $\xi^2 > 0$, has positive volume in $(\mathbf x, \mathbf y)$.
 >
 > **What the derivation shows.**
-> - Equal-time Hamiltonians commute; at different times the free fields of the two vertices fail to commute inside the light cone, and nothing makes the operator integral vanish: "in fact, they really won't". In the one-oscillator model of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-2|Example §C6a.4.2]] (pointer) the naive exponential misses $U(0.7)$ by $0.92$ in the largest matrix element (the user's notes; rerun), while the time-ordered product reproduces it.
+> - Equal-time Hamiltonians commute; at different times the free fields of the two vertices fail to commute inside the light cone, and nothing makes the operator integral vanish. In the one-oscillator model of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-2|Example §C6a.4.2]] (pointer) the naive exponential misses $U(0.7)$ by $0.92$ in the largest matrix element (the user's notes; rerun), while the time-ordered product reproduces it.
 > - Used next: part 3 of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-4|Theorem §C6a.3.4]], the naive exponential.
 
 ^der-c6a-3-3
@@ -197,7 +197,7 @@ $$
 > \end{aligned}
 > $$
 >
-> which is part 1. "Instead of there being $n$ identical expressions, they actually are $n$ different expressions, in that $H$ will be at different positions."
+> which is part 1: instead of $n$ identical expressions there are $n$ different ones, with $H$ at different positions.
 >
 > **Step 3** (part 2: commuting generators). If all $\hat H_I(t')$, $t' \in [0, t]$, commute, then
 >
@@ -316,7 +316,7 @@ $$
 > ⚑ By-product: at coincident times the order is irrelevant, both because $\hat H_I(t_1) = \hat H_I(t_2)$ there and because the coincidence set has zero volume; time ordering of $\hat H_I$'s therefore needs no convention at equal times, unlike $\hat\phi$ with $\hat\pi$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^cau-c2b-6-1|§C2b.6, Caution: The step function at zero]]).
 >
 > **What the derivation shows.**
-> - The $\frac{1}{n!}$ of the exponential series is exactly what is needed to pick one of the $n!$ time orderings: "those $1/n!$ correspond to all possible orderings … I get effectively one ordering. Which ordering? That one."
+> - The $\frac{1}{n!}$ of the exponential series is exactly what is needed to pick one of the $n!$ time orderings: the $1/n!$ compensates the sum over all possible orderings, leaving effectively one ordering, the time-ordered one.
 > - Used next: Dyson's formula ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]).
 
 ^der-c6a-3-5
@@ -412,14 +412,14 @@ $$
 *Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-5|Theorem §C6a.3.5]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-2|Theorem §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-1|Theorem §C6a.3.1]]
 
 > [!remark] Remark: How to read the time-ordered exponential
-> $T\{e^{\cdots}\}$ is not an exponential; it is the series of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]] with an instruction to be carried out at the very end. That has a useful consequence the lecture used at once: inside $T\{\cdots\}$ operators may be treated as if they commuted, exponents may be added, and the ordering is restored afterwards (the user's notes; in the lecture, one may "commute to your heart's content" as long as one time-orders at the end). The composition law ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 2) and the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]) are this rule at work. PS: "the time-ordered exponential is just a compact way of writing and remembering the correct expression."
+> $T\{e^{\cdots}\}$ is not an exponential; it is the series of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]] with an instruction to be carried out at the very end. That has a useful consequence the lecture used at once: inside $T\{\cdots\}$ operators may be treated as if they commuted, exponents may be added, and the ordering is restored afterwards (the user's notes). The composition law ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 2) and the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]) are this rule at work. PS: "the time-ordered exponential is just a compact way of writing and remembering the correct expression."
 >
 > *Source: PHY 513 Lecture 13, transcript (after slide 14) · the user's PHY 513 notes, Ch. 13 §13.3 (paragraph "How to read $T\{e^{\cdots}\}$") · PS §4.2, p. 85*
 
 ^rem-c6a-3-2
 
 > [!remark] Remark: Exact, or perturbative?
-> Asked at the end of the lecture. The formulas are exact, in the physicist's sense of the word: $\hat\phi_H = U^\dagger\hat\phi_IU$ and $U = T\{e^{-i\int\hat H_I}\}$ involve no approximation. "Mathematicians might not be happy with this": whether the series converges, and what kind of operators these are on so large a Hilbert space, are real questions, but "you have to go a little further into details before you start nitpicking." For bounded generators the series converges ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]]); (★ beyond the course: for $\phi^4$ theory the perturbation series in $\lambda$ is believed to be asymptotic rather than convergent.) The perturbative step is a separate one: expand $U$ in powers of $\lambda$ and keep the first terms ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]]). For a coupling that is not small one studies the same exact expression by nonperturbative methods, for instance numerically.
+> The formulas are exact, in the physicist's sense of the word: $\hat\phi_H = U^\dagger\hat\phi_IU$ and $U = T\{e^{-i\int\hat H_I}\}$ involve no approximation. Mathematically this is not the end: whether the series converges, and what kind of operators these are on so large a Hilbert space, are real questions, set aside at this level. For bounded generators the series converges ([[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]]); (★ beyond the course: for $\phi^4$ theory the perturbation series in $\lambda$ is believed to be asymptotic rather than convergent.) The perturbative step is a separate one: expand $U$ in powers of $\lambda$ and keep the first terms ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^ex-c6a-3-1|Example §C6a.3.1]]). For a coupling that is not small one studies the same exact expression by nonperturbative methods, for instance numerically.
 >
 > *Source: PHY 513 Lecture 13, transcript (last questions) · the user's PHY 513 notes, Ch. 13 §13.3 (paragraph "Exact, or perturbative?")*
 
@@ -614,7 +614,7 @@ $$
 ^ex-c6a-3-1
 
 > [!remark] Remark: Status
-> Slide 14 takes stock. The interacting Heisenberg field is $\hat\phi_H(t, \mathbf x) = U(t)^\dagger\hat\phi_I(t, \mathbf x)U(t)$ with $\hat\phi_I$ the free mode expansion and $U(t) = T\{e^{-i\int_0^t\hat H_I}\}$, $\hat H_I$ a polynomial in $\hat\phi_I$. Everything is written in terms of $\hat a$'s and $\hat a^\dagger$'s, with many integrals and an ordering prescription: "the prescription is complete. It's not being digested very well … Logically, we're kind of done." The work left is to organize the combinatorics (Wick's theorem, [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]) and to choose what to compute: correlation functions in the true vacuum ([[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]]).
+> Slide 14 takes stock. The interacting Heisenberg field is $\hat\phi_H(t, \mathbf x) = U(t)^\dagger\hat\phi_I(t, \mathbf x)U(t)$ with $\hat\phi_I$ the free mode expansion and $U(t) = T\{e^{-i\int_0^t\hat H_I}\}$, $\hat H_I$ a polynomial in $\hat\phi_I$. Everything is written in terms of $\hat a$'s and $\hat a^\dagger$'s, with many integrals and an ordering prescription. The prescription is complete, though not yet in a usable form: logically nothing more is needed. The work left is to organize the combinatorics (Wick's theorem, [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]) and to choose what to compute: correlation functions in the true vacuum ([[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]]).
 >
 > *Source: PHY 513 Lecture 13, slide 14, and transcript · the user's PHY 513 notes, Ch. 13 §13.3 (paragraph "Status")*
 
