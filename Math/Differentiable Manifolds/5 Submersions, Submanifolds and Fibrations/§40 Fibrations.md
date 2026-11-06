@@ -15,7 +15,7 @@ The submersions that look locally like the projection $U \times F \to U$. Their 
 
 ## Fibrations
 
-*Lecture 11. “An important class within the submersions.” Uribe introduced fibrations now because the tangent bundle, the cotangent bundle and vector bundles, coming soon, are all fibrations. The idea: surjective maps $\pi : M \to B$ that are locally like the projection $U \times F \to U$, with $U$ open in the **base** $B$ and $F$ a third, fixed manifold. There is a notation clash he apologized for — $F$ now names the fibre, not the map, which is called $\pi$.*
+*Lecture 11. Fibrations are an important class within the submersions. They are introduced now because the tangent bundle, the cotangent bundle and vector bundles, coming soon, are all fibrations. The idea: surjective maps $\pi : M \to B$ that are locally like the projection $U \times F \to U$, with $U$ open in the **base** $B$ and $F$ a third, fixed manifold. There is a notation clash: $F$ now names the fibre, not the map, which is called $\pi$.*
 
 > [!definition] Definition §40.1: Fibration
 > Let $M$, $B$ and $F$ be smooth manifolds and $\pi : M \to B$ smooth. Then $\pi$ is a **fibration with fibre $F$** if there are an open cover $\{U_\alpha\}_{\alpha \in A}$ of $B$ and, for each $\alpha$, a diffeomorphism
@@ -43,10 +43,10 @@ The submersions that look locally like the projection $U \times F \to U$. Their 
 ![[m591-16-1.svg]]
 *The local trivialization $\phi_\alpha$ over $U_\alpha$: the triangle commutes, $\mathrm{pr}_1 \circ \phi_\alpha = \pi|$.*
 
-The diagram *commutes*. A student asked what that means; Uribe: “whenever you have a diagram … all the compositions that you can construct from one place to another give you the same answer.” Here there are two routes from $\pi^{-1}(U_\alpha)$ to $U_\alpha$, and they agree: $\mathrm{pr}_1 \circ \phi_\alpha = \pi|$. Concretely, $\phi_\alpha(p) = (\pi(p), \ast)$ — its first component *is* $\pi(p)$, and only the second, a point of $F$, is new information.
+The diagram *commutes*: all the compositions that can be formed along its arrows from one place to another give the same answer. Here there are two routes from $\pi^{-1}(U_\alpha)$ to $U_\alpha$, and they agree: $\mathrm{pr}_1 \circ \phi_\alpha = \pi|$. Concretely, $\phi_\alpha(p) = (\pi(p), \ast)$ — its first component *is* $\pi(p)$, and only the second, a point of $F$, is new information.
 
 ![[m591-16-2.svg]]
-*Uribe's cartoon, and why it matters: “these cartoons are incredibly important.” On the left, the global product $B \times F$, with each fibre $\{b\} \times F$ standing over its point. On the right, a total space that need not be a product: its fibres may twist as they travel over $B$. But over each $U_\alpha$ the part $\pi^{-1}(U_\alpha)$ is identified by $\phi_\alpha$ with the straight product $U_\alpha \times F$, and the identification respects the base points, which is the commuting diagram.*
+*The cartoon of a fibration. On the left, the global product $B \times F$, with each fibre $\{b\} \times F$ standing over its point. On the right, a total space that need not be a product: its fibres may twist as they travel over $B$. But over each $U_\alpha$ the part $\pi^{-1}(U_\alpha)$ is identified by $\phi_\alpha$ with the straight product $U_\alpha \times F$, and the identification respects the base points, which is the commuting diagram.*
 
 ![[m591-16-a3.gif|460]]
 
@@ -67,7 +67,7 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 ^prop-40-1
 
 > [!proof]+ Proof
-> *(Stated in lecture; (2) as “chain rule and stuff”.)* Throughout, recall from Definition [[§40 Fibrations#^def-40-1|§40.1]] that the sets $U_\alpha$ cover $B$, that each $\pi^{-1}(U_\alpha)$ is open in $M$ (the preimage of an open set under the continuous map $\pi$), and that on it $\pi = \mathrm{pr}_1 \circ \phi_\alpha$ — the commuting diagram.
+> *(Stated in lecture; (2) by the chain rule.)* Throughout, recall from Definition [[§40 Fibrations#^def-40-1|§40.1]] that the sets $U_\alpha$ cover $B$, that each $\pi^{-1}(U_\alpha)$ is open in $M$ (the preimage of an open set under the continuous map $\pi$), and that on it $\pi = \mathrm{pr}_1 \circ \phi_\alpha$ — the commuting diagram.
 >
 > *(1)* Fix $b \in B$ and $\alpha$ with $b \in U_\alpha$ (there is one, the $U_\alpha$ covering $B$); then $\pi^{-1}(b) \subseteq \pi^{-1}(U_\alpha)$, the domain of $\phi_\alpha$.
 >
@@ -110,7 +110,7 @@ The diagram *commutes*. A student asked what that means; Uribe: “whenever you 
 The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibration, and its local but not global sections are collected in [[§46 Projective Spaces and the Hopf Fibration|§46]].
 
 > [!remark] Remark: What Comes Next
-> Tangent bundles, cotangent bundles and vector bundles are fibrations “with additional structure, where the fibres are vector spaces.” The basic notion of fibration is more general: its fibre $F$ is any manifold.
+> Tangent bundles, cotangent bundles and vector bundles are fibrations with additional structure, where the fibres are vector spaces. The basic notion of fibration is more general: its fibre $F$ is any manifold.
 
 ^rem-40-1
 
@@ -121,7 +121,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 
 ## Fibres
 
-*Lecture 12. Uribe changed the notation once more “to conform to more general usage”: the fibration is $\pi : E \to B$, with total space $E$, base $B$, and fibre $F$ — the definition as before ([[§40 Fibrations#^def-40-1|Definition §40.1]]), with $E$ in place of $M$.*
+*Lecture 12. The notation changes once more, to conform to more general usage: the fibration is $\pi : E \to B$, with total space $E$, base $B$, and fibre $F$ — the definition as before ([[§40 Fibrations#^def-40-1|Definition §40.1]]), with $E$ in place of $M$.*
 
 > [!theorem] Proposition §40.2: Fibres Are Copies of the Model Fibre
 > Let $\pi : E \to B$ be a fibration with fibre $F$ and $b \in B$. Then $\pi^{-1}(b)$ is a regular submanifold of $E$, and for every $\alpha$ with $b \in U_\alpha$ the local trivialization $\phi_\alpha$ restricts to a diffeomorphism
@@ -133,7 +133,7 @@ The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$, the first example of a fibratio
 ^prop-40-2
 
 > [!proof]+ Proof
-> *(Claimed in Lecture 12 — “I claim that they are diffeomorphic to this fibre, to the third manifold that is sitting outside, looking over [the] landscape”; filled in.)* Three things are claimed: $\pi^{-1}(b)$ is a regular submanifold of $E$; $\phi_\alpha$ restricts to a diffeomorphism $\pi^{-1}(b) \to \{b\} \times F$; and $\{b\} \times F$ is diffeomorphic to $F$.
+> *(Claimed in Lecture 12; filled in.)* Three things are claimed: $\pi^{-1}(b)$ is a regular submanifold of $E$; $\phi_\alpha$ restricts to a diffeomorphism $\pi^{-1}(b) \to \{b\} \times F$; and $\{b\} \times F$ is diffeomorphic to $F$.
 >
 > *The two submanifolds.* $\pi$ is a submersion (Proposition [[§40 Fibrations#^prop-40-1|§40.1]](2)), so its fibre $\pi^{-1}(b)$ is a regular submanifold of $E$ (Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]). Likewise the projection $\mathrm{pr}_1 : U_\alpha \times F \to U_\alpha$ is a submersion (Example [[§36 Submersions#^ex-36-2|§36.2]]), so its fibre $\{b\} \times F = \mathrm{pr}_1^{-1}(b)$ is a regular submanifold of $U_\alpha \times F$ (Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]] again). Both carry their induced smooth structures (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]).
 >
@@ -166,7 +166,7 @@ This upgrades [[§40 Fibrations#^prop-40-1|Proposition §40.1]](1) from homeomor
 >
 > *Onto.* For $x \in \mathbb{R}$, the point $(x, 0)$ is not $(0, 1)$, so it lies in $E$, and $\pi(x, 0) = x$.
 >
-> *The fibres.* Its fibres are the vertical lines $\{x\} \times \mathbb{R}$ for $x \ne 0$, “except for one”: over $0$ the fibre is $\{0\} \times (\mathbb{R} \setminus \{1\})$, two half-lines — “it wants to be a vertical line, but there's a point missing.” Indeed $\pi^{-1}(x) = \{(x, y) : (x, y) \neq (0, 1)\}$, and the excluded point has $x = 0$.
+> *The fibres.* Its fibres are the vertical lines $\{x\} \times \mathbb{R}$ for $x \ne 0$, except for one: over $0$ the fibre is $\{0\} \times (\mathbb{R} \setminus \{1\})$, a vertical line with a point missing, that is, two half-lines. Indeed $\pi^{-1}(x) = \{(x, y) : (x, y) \neq (0, 1)\}$, and the excluded point has $x = 0$.
 >
 > *Not a fibration.* If $\pi$ were a fibration with fibre $F$, all fibres would be diffeomorphic to $F$ (Proposition [[§40 Fibrations#^prop-40-2|§40.2]]), hence to each other (compose one diffeomorphism with the inverse of the other), and in particular homeomorphic. But $\{1\} \times \mathbb{R}$ is connected and $\{0\} \times (\mathbb{R} \setminus \{1\})$ is not, and connectedness is preserved by homeomorphisms. In detail: $\{1\} \times \mathbb{R}$ is homeomorphic to $\mathbb{R}$ by $(1, y) \mapsto y$, hence connected (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]](4)). $\{0\} \times (\mathbb{R} \setminus \{1\})$ is the union of the two disjoint nonempty sets $\{0\} \times (-\infty, 1)$ and $\{0\} \times (1, \infty)$, each open in it, being its intersection with the open half-plane $\{y < 1\}$, resp. $\{y > 1\}$; so it is not connected. And the image of a connected space under a homeomorphism, a continuous map, is connected (Proposition [[§1 Point-Set Topology Review#^prop-1-7|§1.7]](1)).
 
@@ -181,11 +181,11 @@ This upgrades [[§40 Fibrations#^prop-40-1|Proposition §40.1]](1) from homeomor
 
 *(Not from lecture; animation added, vault only.)* The fibre over $x$ sweeps across, $x$ from $-1.5$ to $1.5$ and back: a whole vertical line, connected, for every $x \neq 0$. Over $0$ it is broken at the missing point $(0, 1)$ into two half-lines (red), so not all fibres are homeomorphic and $\pi$ is not a fibration.
 
-A student asked the converse: if all the fibres of a surjective submersion are diffeomorphic to one manifold, must it be a fibration? Uribe: “I don't think that's true, but I don't have a quick example.” He answered it at the start of Lecture 13: yes when $\pi$ is proper, no in general ([[§40 Fibrations#^thm-40-3|Theorem §40.3]] and [[§40 Fibrations#^ex-40-2|Example §40.2]] below).
+The converse question: if all the fibres of a surjective submersion are diffeomorphic to one manifold, must it be a fibration? It was raised in Lecture 12 and answered at the start of Lecture 13: yes when $\pi$ is proper, no in general ([[§40 Fibrations#^thm-40-3|Theorem §40.3]] and [[§40 Fibrations#^ex-40-2|Example §40.2]] below).
 
 ## When Is a Submersion a Fibration?
 
-*Lecture 13 (Wed Sep 30). Uribe opened with the answer to the question left open in Lecture 12 — “I didn't know the answer right away. I thought the answer was no, and in fact the answer is no. But there's a partial yes.”*
+*Lecture 13 (Wed Sep 30). The answer to the question left open in Lecture 12: no in general, but there is a partial yes.*
 
 > [!theorem] Theorem §40.3: Ehresmann's Theorem
 > Let $\pi : E \to B$ be a surjective submersion which is *proper*: the preimage of every compact set is compact. If $B$ is connected, then $\pi$ is a fibration.
@@ -197,7 +197,7 @@ A student asked the converse: if all the fibres of a surjective submersion are d
 
 ^pf-40-3
 
-*Status.* Stated in Lecture 13, not proved: “we don't have time to do the proof, and it uses material that we're not going to cover called connections.” Uribe first recalled the case of a compact fibre, then the general statement for proper maps, which is the form given here. The intuition: a connection lets one lift a path from $b$ to $b'$ in the base to paths in $E$, and flow the fibre over $b$ onto the fibre over $b'$; properness is what lets the flow run for as long as needed, so that it identifies the fibres not just one at a time but over a whole neighbourhood — a local trivialization. The transcript renders the name as “Aristotle”; it is Ehresmann.
+*Status.* Stated in Lecture 13, not proved: the proof uses connections, which the course does not cover. The lecture first recalled the case of a compact fibre, then the general statement for proper maps, which is the form given here. The intuition: a connection lets one lift a path from $b$ to $b'$ in the base to paths in $E$, and flow the fibre over $b$ onto the fibre over $b'$; properness is what lets the flow run for as long as needed, so that it identifies the fibres not just one at a time but over a whole neighbourhood — a local trivialization. The transcript renders the name as “Aristotle”; it is Ehresmann.
 
 > [!remark]- Connections
 > - Proper maps were defined earlier, for group actions: [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]]; compactness: [[§18 Compact Spaces|590 §18]].
@@ -221,7 +221,7 @@ A student asked the converse: if all the fibres of a surjective submersion are d
 
 *Uses:* [[§36 Submersions#^ex-36-1|Ex. §36.1]]
 
-*Status.* Found for Uribe by ChatGPT, which reported that a human had posted it on a mathematics forum; given in lecture as a picture, without proof. *(Completion.)* $E$ is open in $\mathbb{R}^3$: its complement is the $t$-axis $\{(0,0,t)\}$, together with the line $\{(t, 0, t)\}$ and the single point $(1, 0, 0)$, a closed set. So $\pi$ is the restriction of a projection to an open set, hence a submersion ([[§36 Submersions#^ex-36-1|Example §36.1]]), and it is onto. Any two copies of the plane with two points removed are diffeomorphic by an affine map. That $\pi$ is not a fibration is stated, not proved, here. Uribe's intuition: as $t \to 0$ the missing point $(t, 0)$ “is colliding with $(0,0)$”, while over $t = 0$ the second missing point sits away at $(1, 0)$. He added that the example is subtler than it looks: with lines in place of planes the corresponding map would be locally trivial, and “it's the fact that you have [a] fundamental group that messes things up.”
+*Status.* From a mathematics forum (located with ChatGPT); given in lecture as a picture, without proof. *(Completion.)* $E$ is open in $\mathbb{R}^3$: its complement is the $t$-axis $\{(0,0,t)\}$, together with the line $\{(t, 0, t)\}$ and the single point $(1, 0, 0)$, a closed set. So $\pi$ is the restriction of a projection to an open set, hence a submersion ([[§36 Submersions#^ex-36-1|Example §36.1]]), and it is onto. Any two copies of the plane with two points removed are diffeomorphic by an affine map. That $\pi$ is not a fibration is stated, not proved, here. The intuition: as $t \to 0$ the missing point $(t, 0)$ collides with $(0,0)$, while over $t = 0$ the second missing point sits away at $(1, 0)$. The example is subtler than it looks: with lines in place of planes the corresponding map would be locally trivial; it is the presence of a fundamental group that spoils local triviality.
 
 ![[m591-16-6.svg]]
 *The fibres over a few values of $t$. The origin, grey, is missing from every fibre, and the missing points $(t, 0)$, red, lie on a line — dashed — which meets the line of origins exactly at $t = 0$: the collision. Over $t = 0$ (orange) the second missing point is $(1, 0)$, off that line. Each fibre on its own is a plane minus two points; what fails is the way they fit together near $t = 0$.*
@@ -237,7 +237,7 @@ A student asked the converse: if all the fibres of a surjective submersion are d
 *From Assignment 4, Problem 4, whose hint — “declare that $\Phi_i \circ s_i$ includes $U_i \to U_i \times \{1\}$, and extend the definition of $\Phi_i$ by equivariance” — contains a general principle: local trivializations and local sections are two descriptions of the same thing.*
 
 > [!definition] Definition §40.3: Section
-> Let $\pi : E \to B$ be a fibration. A **section** of $\pi$ is a smooth map $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$: “if you first go up and then down, you get the identity on the base.” It picks, smoothly in $b$, one point $s(b)$ of each fibre $\pi^{-1}(b)$.
+> Let $\pi : E \to B$ be a fibration. A **section** of $\pi$ is a smooth map $s : B \to E$ with $\pi \circ s = \mathrm{id}_B$: going up by $s$ and then down by $\pi$ gives the identity on the base. It picks, smoothly in $b$, one point $s(b)$ of each fibre $\pi^{-1}(b)$.
 >
 > *Lee: Ch. 10, Sections of Vector Bundles*
 
@@ -247,7 +247,7 @@ A student asked the converse: if all the fibres of a surjective submersion are d
 *$\pi \circ s = \mathrm{id}_B$. A section goes up, the projection comes down, and the round trip is the identity on the base.*
 
 ![[m591-17-5.svg]]
-*The cartoon of a section. The fibration is drawn as a box over its base, with fibres vertical; a section is a graph over the base, meeting every fibre exactly once — at $s(b)$ in the fibre over $b$ — so its image $s(B)$ is “a copy of $B$” inside $E$.*
+*The cartoon of a section. The fibration is drawn as a box over its base, with fibres vertical; a section is a graph over the base, meeting every fibre exactly once — at $s(b)$ in the fibre over $b$ — so its image $s(B)$ is a copy of $B$ inside $E$.*
 
 ![[m591-17-a3.gif|460]]
 

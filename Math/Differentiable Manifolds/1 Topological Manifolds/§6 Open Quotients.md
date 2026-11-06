@@ -60,7 +60,7 @@ tags: [differentiable-manifolds, math591]
 > - Hausdorff spaces in MATH 590: [[§9 Hausdorff Spaces#^def-9-1|590 Def. §9.1]]; for the special case of a quotient onto a Hausdorff space, compare [[§13 Quotient Topology#^cor-13-4|590 §13.4]](2).
 
 > [!remark] Remark: No Hausdorff Hypothesis on $X$
-> Mid-statement, Uribe began to add the hypothesis “assume $X$ is Hausdorff”—then stopped: “actually, I don't need that.” The final statement is correct as it stands: no separation assumption on $X$ is required, only openness of the relation. (Openness, moreover, is used only in the direction $\Leftarrow$; the direction $\Rightarrow$ holds for arbitrary equivalence relations, as the [[§6 Open Quotients#^pf-6-1|proof]] shows.)
+> The statement is correct as it stands: no separation assumption on $X$ (such as Hausdorff) is required, only openness of the relation. (Openness, moreover, is used only in the direction $\Leftarrow$; the direction $\Rightarrow$ holds for arbitrary equivalence relations, as the [[§6 Open Quotients#^pf-6-1|proof]] shows.)
 
 ^rem-6-1
 
@@ -77,7 +77,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§6 Open Quotients#^thm-6-1|§6.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]], [[§6 Open Quotients#^def-6-1|Def. §6.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]] (2), [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
 
 > [!remark] Remark: This Is the Tool
-> Uribe (emphasized): “this is going to be our tool for figuring out whether a quotient space is $T_2$.” The workflow it suggests, and which the [[§9 Complex Projective Space#^prop-9-1|ℂPⁿ example below]] executes: (i) show the relation is open — usually via the saturation slogan; (ii) show the graph is closed — often by exhibiting $\Gamma$ as a preimage of a closed set, or as a compact set inside a Hausdorff space.
+> This theorem is the main tool for deciding whether a quotient space is $T_2$. The workflow it suggests, and which the [[§9 Complex Projective Space#^prop-9-1|ℂPⁿ example below]] executes: (i) show the relation is open — usually via the saturation slogan; (ii) show the graph is closed — often by exhibiting $\Gamma$ as a preimage of a closed set, or as a compact set inside a Hausdorff space.
 
 ^rem-6-2
 
@@ -88,7 +88,7 @@ tags: [differentiable-manifolds, math591]
 
 ^thm-6-3
 
-> [!proof]+ Proof (one line in lecture — “project the countable basis”)
+> [!proof]+ Proof (one line in lecture: project the countable basis)
 > $\pi : X \to X/{\sim}$ is a continuous surjection, and open because $\sim$ is; so [[§5 Quotient Maps#^lem-5-6|Lemma §5.6]] applies and the image of a countable basis of $X$ is a countable basis of $X/{\sim}$.
 
 ^pf-6-3
@@ -103,4 +103,3 @@ tags: [differentiable-manifolds, math591]
 The line with two origins, read through the criterion, is collected in [[§10 The Line with Two Origins|§10]].
 
 The application of these criteria to complex projective space $\mathbb{CP}^n$ is collected in [[§9 Complex Projective Space|§9]].
-

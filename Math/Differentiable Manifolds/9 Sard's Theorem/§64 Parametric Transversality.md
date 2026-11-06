@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: analysis — Transversality of a whole family passes, by Sard's theorem, to almost every member.*
 
-*Lecture 20. “Next topic … one of my favorite theorems in the whole course … a really beautiful, useful theorem, called the transversality theorem of René Thom, or parametric transversality, that will have really beautiful consequences together with Sard's theorem.”*
+*Lecture 20. The transversality theorem of René Thom, or parametric transversality; together with Sard's theorem it has important consequences.*
 
 > [!definition] Definition §64.1: Smooth Family of Maps
 > Let $S$, $M$, $N$ be smooth manifolds. A **smooth family** of maps $M \to N$, parametrized by $S$, is a collection $\{F_s\}_{s \in S}$ of maps $F_s : M \to N$ such that $F : S \times M \to N$, $F(s, p) = F_s(p)$, is smooth. $S$ is the **parameter space**.
@@ -18,7 +18,7 @@ tags: [differentiable-manifolds, math591]
 
 ^def-64-1
 
-“Smoothness of the family is the same as smoothness of the big map” — jointly in $s$ and $p$. Each $F_s = F \circ \iota_s$, with $\iota_s : M \to S \times M$, $p \mapsto (s, p)$, the slice inclusion (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), so each $F_s$ is smooth.
+Smoothness of the family means smoothness of the single map $F$, jointly in $s$ and $p$. Each $F_s = F \circ \iota_s$, with $\iota_s : M \to S \times M$, $p \mapsto (s, p)$, the slice inclusion (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), so each $F_s$ is smooth.
 
 > [!theorem] Theorem §64.1: Parametric Transversality
 > Let $F : S \times M \to N$ be smooth, $Z \subseteq N$ a regular submanifold, and suppose $F \pitchfork Z$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]). Then $W = F^{-1}(Z)$ is a regular submanifold of $S \times M$, and with $\pi : W \to S$ the restriction of the projection $(s, p) \mapsto s$: for $s \in S$,
@@ -32,7 +32,7 @@ tags: [differentiable-manifolds, math591]
 ^thm-64-1
 
 > [!proof]+ Proof
-> *(Lecture 20 — “a nice exercise” — proved the direction “that matters for applications”, $(\Rightarrow)$; the converse is filled in.)*
+> *(Lecture 20 proved the direction that matters for applications, $(\Rightarrow)$, and left the converse as an exercise; the converse is filled in.)*
 >
 > *Preliminaries.* $W$ is a regular submanifold of $S \times M$ and, for $(s, p) \in W$ with $q = F(s, p)$,
 >
@@ -40,27 +40,27 @@ tags: [differentiable-manifolds, math591]
 > T_{(s,p)}W = \big(dF_{(s,p)}\big)^{-1}\big(T_qZ\big) \tag{1}
 > $$
 >
-> (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]; a student supplied this in class: “it's the preimage of the tangent space of $Z$ by the differential”). $\pi$ is smooth, as the restriction of the smooth projection to a regular submanifold. Write tangent vectors to $S \times M$ as pairs $(\sigma, u) \in T_sS \oplus T_pM$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]]); then $d\pi(\sigma, u) = \sigma$, and
+> (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]): the preimage of the tangent space of $Z$ under the differential. $\pi$ is smooth, as the restriction of the smooth projection to a regular submanifold. Write tangent vectors to $S \times M$ as pairs $(\sigma, u) \in T_sS \oplus T_pM$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]]); then $d\pi(\sigma, u) = \sigma$, and
 >
 > $$
 > dF_{(s,p)}(0, u) = d(F_s)_p(u), \tag{2}
 > $$
 >
-> because $F_s = F \circ \iota_s$ and $d(\iota_s)_p(u) = (0, u)$: “it's a partial derivative … when I compute this derivative, I freeze the first entry to $s$” (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]]).
+> because $F_s = F \circ \iota_s$ and $d(\iota_s)_p(u) = (0, u)$: it is a partial derivative, computed with the first entry frozen at $s$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]]).
 >
-> *$(\Rightarrow)$* Let $s$ be a regular value of $\pi$, and $p \in M$ with $q = F_s(p) = F(s,p) \in Z$. We must show $\operatorname{Im} d(F_s)_p + T_qZ = T_qN$; “clearly we have one inclusion.” Let $w \in T_qN$. Since $F \pitchfork Z$, there are $(\sigma, u) \in T_{(s,p)}(S \times M)$ and $v \in T_qZ$ with
+> *$(\Rightarrow)$* Let $s$ be a regular value of $\pi$, and $p \in M$ with $q = F_s(p) = F(s,p) \in Z$. We must show $\operatorname{Im} d(F_s)_p + T_qZ = T_qN$; the inclusion $\subseteq$ is clear. Let $w \in T_qN$. Since $F \pitchfork Z$, there are $(\sigma, u) \in T_{(s,p)}(S \times M)$ and $v \in T_qZ$ with
 >
 > $$
 > w = dF_{(s,p)}(\sigma, u) + v . \tag{$\ast$}
 > $$
 >
-> “Since $s$ is a regular value of $\pi$ … I can hit $\sigma$”: there is a tangent vector to $W$ at $(s, p)$ projecting to $\sigma$, and since $d\pi$ only reads the first component, it has the form $(\sigma, \tau)$ for some $\tau \in T_pM$. Write $(\sigma, u) = (\sigma, \tau) + (0, u - \tau)$ and substitute into $(\ast)$:
+> Since $s$ is a regular value of $\pi$, $\sigma$ is in the image of $d\pi_{(s,p)}$: there is a tangent vector to $W$ at $(s, p)$ projecting to $\sigma$, and since $d\pi$ only reads the first component, it has the form $(\sigma, \tau)$ for some $\tau \in T_pM$. Write $(\sigma, u) = (\sigma, \tau) + (0, u - \tau)$ and substitute into $(\ast)$:
 >
 > $$
 > w = dF_{(s,p)}(\sigma, \tau) + dF_{(s,p)}(0, u - \tau) + v = d(F_s)_p(u - \tau) + \big(dF_{(s,p)}(\sigma, \tau) + v\big),
 > $$
 >
-> by (2). By (1), $dF_{(s,p)}(\sigma, \tau) \in T_qZ$, so the bracket is tangent to $Z$, and $w \in \operatorname{Im} d(F_s)_p + T_qZ$. “So this implies that $F_s$ intersects $Z$ transversely.”
+> by (2). By (1), $dF_{(s,p)}(\sigma, \tau) \in T_qZ$, so the bracket is tangent to $Z$, and $w \in \operatorname{Im} d(F_s)_p + T_qZ$. So $F_s$ intersects $Z$ transversely.
 >
 > *$(\Leftarrow)$* *(Filled in.)* Suppose $F_s \pitchfork Z$, and let $(s, p) \in \pi^{-1}(s)$, so $q = F_s(p) \in Z$; we show $d\pi_{(s,p)}$ is onto $T_sS$. Let $\sigma \in T_sS$. By transversality of $F_s$, $dF_{(s,p)}(\sigma, 0) = d(F_s)_p(u) + v$ for some $u \in T_pM$, $v \in T_qZ$. By (2), $dF_{(s,p)}(\sigma, -u) = dF_{(s,p)}(\sigma, 0) - d(F_s)_p(u) = v \in T_qZ$, so $(\sigma, -u) \in T_{(s,p)}W$ by (1), and $d\pi(\sigma, -u) = \sigma$.
 
@@ -70,7 +70,7 @@ tags: [differentiable-manifolds, math591]
 
 ![[m591-60-1.svg]]
 
-The cartoon, in $S \times M$ with $S$ horizontal. $W = F^{-1}(Z)$ is the orange curve and $\pi$ projects it to $S$. At $s$ the slice $\{s\} \times M$ crosses $W$ transversally: $s$ is a regular value of $\pi$, and $F_s \pitchfork Z$. At $s'$ the slice is tangent to $W$: $s'$ is a singular value, and $F_{s'}$ need not be transverse to $Z$. At $s''$ the slice misses $W$: $F_{s''}(M) \cap Z = \varnothing$, vacuously transverse. (“I can't make a useful cartoon of what happens to the right.”)
+The cartoon, in $S \times M$ with $S$ horizontal. $W = F^{-1}(Z)$ is the orange curve and $\pi$ projects it to $S$. At $s$ the slice $\{s\} \times M$ crosses $W$ transversally: $s$ is a regular value of $\pi$, and $F_s \pitchfork Z$. At $s'$ the slice is tangent to $W$: $s'$ is a singular value, and $F_{s'}$ need not be transverse to $Z$. At $s''$ the slice misses $W$: $F_{s''}(M) \cap Z = \varnothing$, vacuously transverse.
 
 ![[m591-60-3.svg]]
 
@@ -84,13 +84,13 @@ The cartoon, in $S \times M$ with $S$ horizontal. $W = F^{-1}(Z)$ is the orange 
 ^cor-64-2
 
 > [!proof]+ Proof
-> *(Lecture 20: “pairing this with Sard's theorem”.)* By Sard's theorem (Theorem [[§63 Sard's Theorem#^thm-63-3|§63.3]]) applied to $\pi : W \to S$, the singular values of $\pi$ form a set of measure zero; for every other $s$, $F_s \pitchfork Z$ by Theorem [[§64 Parametric Transversality#^thm-64-1|§64.1]].
+> *(Lecture 20.)* By Sard's theorem (Theorem [[§63 Sard's Theorem#^thm-63-3|§63.3]]) applied to $\pi : W \to S$, the singular values of $\pi$ form a set of measure zero; for every other $s$, $F_s \pitchfork Z$ by Theorem [[§64 Parametric Transversality#^thm-64-1|§64.1]].
 
 ^pf-64-2
 
 *Uses:* [[§63 Sard's Theorem#^thm-63-3|§63.3]], [[§64 Parametric Transversality#^thm-64-1|§64.1]]
 
-“You go from transversality of the family to transversality of individual elements in the family. That's the beauty of this.”
+The corollary passes from transversality of the family to transversality of the individual members of the family.
 
 > [!example] Example §64.1: Translates Are Generically Transverse
 > Let $Y, Z \subseteq \mathbb{R}^d$ be regular submanifolds. For almost every $a \in \mathbb{R}^d$, the translate $a + Y$ intersects $Z$ transversally.
@@ -98,29 +98,29 @@ The cartoon, in $S \times M$ with $S$ horizontal. $W = F^{-1}(Z)$ is the orange 
 ^ex-64-1
 
 > [!proof]+ Proof
-> *(Lecture 20, the “first classical, very geometric application”; details filled in.)* The parameter space is $\mathbb{R}^d$ itself: $F : \mathbb{R}^d \times Y \to \mathbb{R}^d$, $F(a, p) = a + p$, “I use the vector space structure to translate.” Then $F_a(Y) = a + Y$. *$F$ is a submersion*: fixing $p$ and varying $a$, $dF_{(a,p)}(\sigma, 0) = \sigma$ for every $\sigma \in T_a\mathbb{R}^d = \mathbb{R}^d$ — “if you just vary $a$, you get anything.” So $F \pitchfork Z$ (Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]](3)), and $F^{-1}(Z) = \{ (a, p) : a + p \in Z \}$. By Corollary [[§64 Parametric Transversality#^cor-64-2|§64.2]], $F_a \pitchfork Z$ for almost every $a$. Finally $F_a : Y \to \mathbb{R}^d$ is the inclusion of $a + Y$ composed with the diffeomorphism $Y \to a + Y$, $p \mapsto a + p$ (“the translate … just the inclusion”), and $a + Y$ is a regular submanifold, a translate of one, so $F_a \pitchfork Z$ says $(a + Y) \pitchfork Z$ (Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]]).
+> *(Lecture 20, the first classical geometric application; details filled in.)* The parameter space is $\mathbb{R}^d$ itself: $F : \mathbb{R}^d \times Y \to \mathbb{R}^d$, $F(a, p) = a + p$, using the vector space structure to translate. Then $F_a(Y) = a + Y$. *$F$ is a submersion*: fixing $p$ and varying $a$, $dF_{(a,p)}(\sigma, 0) = \sigma$ for every $\sigma \in T_a\mathbb{R}^d = \mathbb{R}^d$. So $F \pitchfork Z$ (Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]](3)), and $F^{-1}(Z) = \{ (a, p) : a + p \in Z \}$. By Corollary [[§64 Parametric Transversality#^cor-64-2|§64.2]], $F_a \pitchfork Z$ for almost every $a$. Finally $F_a : Y \to \mathbb{R}^d$ is the inclusion of $a + Y$ composed with the diffeomorphism $Y \to a + Y$, $p \mapsto a + p$, and $a + Y$ is a regular submanifold, a translate of one, so $F_a \pitchfork Z$ says $(a + Y) \pitchfork Z$ (Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]]).
 
 ^pf-ex-64-1
 
 *Uses:* [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]], [[§64 Parametric Transversality#^cor-64-2|§64.2]], [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]]
 
-“Isn't that nice?” If $\dim Y + \dim Z < d$, a transverse intersection must be empty, since $T_qY + T_qZ$ has dimension at most $\dim Y + \dim Z$. So two curves in $\mathbb{R}^3$ ($1 + 1 < 3$): “translate one by a generic vector, it'll cease to intersect the other one.” For two curves in the plane that are tangent, a generic translate either separates them or makes them cross transversally. This is the idea of *general position*: a configuration is not in general position if moving one of the objects a little changes the geometry radically. “General position things are transverse, which may mean that they don't intersect. But vacuous intersection is a statement. It's a powerful statement.”
+If $\dim Y + \dim Z < d$, a transverse intersection must be empty, since $T_qY + T_qZ$ has dimension at most $\dim Y + \dim Z$. So two curves in $\mathbb{R}^3$ ($1 + 1 < 3$): translating one by a generic vector makes it disjoint from the other. For two curves in the plane that are tangent, a generic translate either separates them or makes them cross transversally. This is the idea of *general position*: a configuration is not in general position if moving one of the objects a little changes the geometry radically. Objects in general position are transverse, which may mean that they do not intersect; an empty intersection is still a meaningful, and often powerful, statement.
 
 ![[m591-60-2.svg]]
 
-Uribe's picture: $Z$ (blue) and $Y$ (red) tangent at a point, not transverse; a translate $a + Y$ meeting $Z$ in two transverse crossings; another translate $a' + Y$ disjoint from $Z$. Only translates making them tangent again are excluded, and those form a set of measure zero.
+The lecture's picture: $Z$ (blue) and $Y$ (red) tangent at a point, not transverse; a translate $a + Y$ meeting $Z$ in two transverse crossings; another translate $a' + Y$ disjoint from $Z$. Only translates making them tangent again are excluded, and those form a set of measure zero.
 
 ![[m591-60-a1.gif|420]]
 
 *(Not from lecture; animation added, vault only.)* $Y$ a circle and $Z$ the graph of $\sin$ (chosen for the picture); the translate $a + Y$ moves vertically, $a = (0.9, s)$. The number of crossings changes only at $s = 0.098$ and $s = 1.404$ (computed), where $a + Y$ is tangent to $Z$ (orange); every other translate meets $Z$ transversally, in $0$ or $2$ points.
 
-“I will give you a homework problem, an application of this … to show that if you have a manifold inside $\mathbb{R}^2$ [as transcribed], almost all linear functions restricted to the manifold are Morse. So you have a lot of Morse functions” (Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]]).
+A further application, Assignment 6, Problem 5 ([[§64 Parametric Transversality|§64]]): for a submanifold of Euclidean space, almost all linear functions restricted to the submanifold are Morse (Definition [[§54 Critical Points and the Hessian#^def-54-4|§54.4]]), so Morse functions are plentiful.
 
-**Transcription note (Lecture 20).** Page 54 of the handwritten notes writes “$\pi$ onto” under $F^{-1}(Z) \to \mathbb{R}^d$; Uribe paused (“that's not at all … yeah, it's onto”), and it is onto — for $p \in Y$ and $z \in Z$, $(z - p, p) \in F^{-1}(Z)$ when $Z \neq \varnothing$ — but surjectivity plays no role in the argument.
+**Transcription note (Lecture 20).** Page 54 of the handwritten notes writes “$\pi$ onto” under $F^{-1}(Z) \to \mathbb{R}^d$, and it is onto — for $p \in Y$ and $z \in Z$, $(z - p, p) \in F^{-1}(Z)$ when $Z \neq \varnothing$ — but surjectivity plays no role in the argument.
 
 ## Height Functions Are Almost Always Morse
 
-*Assignment 6, Problem 5: the homework announced in Lecture 20 (“almost all linear functions restricted to the manifold are Morse”). Not from lecture; the submitted solution, with the bundle facts it uses filled in ([[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]]) and its main implication completed to an equivalence.*
+*Assignment 6, Problem 5: the homework announced in Lecture 20. Not from lecture; the submitted solution, with the bundle facts it uses filled in ([[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]]) and its main implication completed to an equivalence.*
 
 *Setting.* Throughout this subsection $M \subseteq \mathbb{R}^N$ is a regular submanifold of dimension $m < N$, with the geometric tangent spaces $T^{\mathrm{geo}}_pM$, written $T_pM$ (the Setting of [[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]] with $n = N$); $T^{\mathrm{geo}}M$ is its tangent bundle with zero section $\mathcal{Z}$ and $\pi_p : \mathbb{R}^N \to T_pM$ the orthogonal projection (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-4|§42.4]], Lemma [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]]). Points of the parameter space $\mathbb{R}^N$ are written $\mathbf{a}, \mathbf{b}$. (If $m = N$, $M$ is open in $\mathbb{R}^N$ and the functions below have no critical points unless $\mathbf{a} = 0$.)
 

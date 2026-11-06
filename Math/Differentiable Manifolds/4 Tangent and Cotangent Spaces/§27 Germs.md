@@ -93,7 +93,7 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 ^prop-27-2
 
 > [!proof]+ Proof
-> *(Lecture 8 sketched the operations — “taking representatives … and shrinking to a common domain” — and skipped the checks as “tedious”; they are filled in here.)* Let $(f,U)$ and $(g,V)$ be representatives of $[f]$ and $[g]$. Four things must be checked: the operations produce germs, they do not depend on the choices, they satisfy the algebra axioms, and evaluation is a well-defined homomorphism.
+> *(Lecture 8 sketched the operations — taking representatives and shrinking to a common domain — and skipped the checks; they are filled in here.)* Let $(f,U)$ and $(g,V)$ be representatives of $[f]$ and $[g]$. Four things must be checked: the operations produce germs, they do not depend on the choices, they satisfy the algebra axioms, and evaluation is a well-defined homomorphism.
 >
 > *Existence of $W$ and smoothness.* $U \cap V$ is open and contains $p$, so $W = U \cap V$ will do; $f|_W + g|_W$ and $f|_W\, g|_W$ are smooth on $W$, so they define germs. Likewise $\lambda f$ is smooth on $U$.
 >
@@ -135,7 +135,7 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 ^def-27-3
 
 > [!remark] Remark: How to Think About a Germ
-> Uribe: “when I think of a germ, I think of a representative — a smooth function defined in a neighbourhood — but I know that it is a germ, which means I can shrink its domain arbitrarily, as long as I shrink it to a neighbourhood of $p$.” In practice one works with representatives and checks at the end that the answer is unchanged by shrinking. The formal content of the definition is exactly that shrinking is free.
+> A germ is best thought of through a representative — a smooth function defined in a neighbourhood of $p$ — remembering that, being a germ, its domain may be shrunk arbitrarily, as long as it is shrunk to a neighbourhood of $p$. In practice one works with representatives and checks at the end that the answer is unchanged by shrinking. The formal content of the definition is exactly that shrinking is free.
 
 ^rem-27-2
 
@@ -177,9 +177,9 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 >
 > which is the coefficient of $(x - x_0)^\alpha$ in the product of formal power series $\mathcal{T}[f]\,\mathcal{T}[g]$, since $(x - x_0)^\beta (x - x_0)^\gamma = (x - x_0)^{\beta+\gamma}$. Hence $\mathcal{T}\big([f][g]\big) = \mathcal{T}[fg] = \mathcal{T}[f]\,\mathcal{T}[g]$.
 >
-> *Surjective.* Surjectivity is **Borel's theorem**: every formal power series is the Taylor series at $x_0$ of some smooth function. It is cited, not proved — Uribe: “that's not so easy to show, but it's true.”
+> *Surjective.* Surjectivity is **Borel's theorem**: every formal power series is the Taylor series at $x_0$ of some smooth function. It is cited, not proved; the proof is not easy.
 >
-> *Not injective.* Failure of injectivity is elementary. Uribe: “You can have totally flat functions that are not zero”; the example is filled in. The function
+> *Not injective.* Failure of injectivity is elementary: there are totally flat functions that are not zero. The example is filled in. The function
 >
 > $$
 > f(x) = \begin{cases} e^{-1/|x-x_0|^2}, & x \neq x_0,\\ 0, & x = x_0,\end{cases}
@@ -227,6 +227,6 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 ^def-27-4
 
 > [!remark] Remark
-> The moral is that a germ carries strictly more information than its Taylor series — “one of the beauties of being in the $C^\infty$ category.” This is the same phenomenon as the rigidity of $C^\omega$ noted after Definition [[§17 Differentiable Structures#^def-17-5|§17.5]]: a real-analytic germ *is* its Taylor series, which is why there are no analytic bump functions, whereas a $C^\infty$ germ has room to spare.
+> The moral is that a germ carries strictly more information than its Taylor series. This is the same phenomenon as the rigidity of $C^\omega$ noted after Definition [[§17 Differentiable Structures#^def-17-5|§17.5]]: a real-analytic germ *is* its Taylor series, which is why there are no analytic bump functions, whereas a $C^\infty$ germ has room to spare.
 
 ^rem-27-3

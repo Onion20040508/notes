@@ -9,16 +9,16 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: symmetry — Maps of Lie groups induce maps of Lie algebras that preserve brackets; for a linear group the bracket is the matrix commutator.*
 
-*Lecture 18. “Next, we want to talk about Lie group morphisms and the Lie algebra, because we can do something now that we couldn't before.”*
+*Lecture 18. Lie group morphisms and the Lie algebra, which the identification $\mathfrak{g} \cong T_eG$ now puts within reach.*
 
 > [!remark] Remark: From Now On: $\mathfrak{g}$ Is $T_eG$
-> “From now on, as you can imagine, we will identify” the Lie algebra with the tangent space at the identity, $\mathfrak{g} \cong T_eG$ by $\mathrm{ev}$ (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]), as vector spaces, “keeping in mind that the Lie bracket comes from … commuting left-invariant fields.” That is Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|§60.4]] read through Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]: to compute the bracket of $A, B \in T_eG$,
+> From now on the Lie algebra is identified with the tangent space at the identity, $\mathfrak{g} \cong T_eG$ by $\mathrm{ev}$ (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]), as vector spaces, keeping in mind that the Lie bracket comes from commuting left-invariant fields. That is Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|§60.4]] read through Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]: to compute the bracket of $A, B \in T_eG$,
 >
 > 1. extend $A$ and $B$ to the left-invariant fields $\mathbf{X}^A$, $\mathbf{X}^B$, their left-invariant extensions (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]; they lie in $\mathfrak{g}$ by Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]]);
 > 2. take the commutator $[\mathbf{X}^A, \mathbf{X}^B]$ of vector fields;
 > 3. evaluate it at the identity: $[A, B] = [\mathbf{X}^A, \mathbf{X}^B]_e$.
 >
-> “That's the definition.” Elements of $T_eG$ are now written with capital letters: “I really kind of think of them as matrices.”
+> This is the definition. Elements of $T_eG$ are now written with capital letters, since they are thought of as matrices.
 
 ^rem-61-1
 
@@ -28,7 +28,7 @@ tags: [differentiable-manifolds, math591]
 ^def-61-1
 
 > [!remark] Remark: Nonlinear Groups
-> Matrix groups “are called linear groups, by the way” (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]). “And not every Lie group is isomorphic to a matrix group … the nonlinear groups arise naturally from making covers” of matrix groups. *(Filled in: the standard example is the universal cover of $\mathrm{SL}(2,\mathbb{R})$, a Lie group isomorphic to no group of matrices.)* The question of Lecture 17, restated: for a matrix group, “can we identify the bracket directly on the tangent space at the identity?” The answer is the matrix commutator (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]); to get there, the course uses the general idea below.
+> Matrix groups are also called linear groups (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]). Not every Lie group is isomorphic to a matrix group: nonlinear groups arise naturally as covers of matrix groups. *(Filled in: the standard example is the universal cover of $\mathrm{SL}(2,\mathbb{R})$, a Lie group isomorphic to no group of matrices.)* The question of Lecture 17, restated: for a matrix group, can the bracket be identified directly on the tangent space at the identity? The answer is the matrix commutator (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]); to get there, the course uses the general idea below.
 
 ^rem-61-2
 
@@ -39,13 +39,13 @@ tags: [differentiable-manifolds, math591]
 
 ^def-61-2
 
-A Lie group is “a manifold and a group, and the various maps are smooth”, so a morphism “preserves both structures.” In particular $F(e_H) = e_G$. *(Filled in: $F(e_H) = F(e_He_H) = F(e_H)F(e_H)$; multiply on the left by $F(e_H)^{-1}$.)* So $F$ has a differential at the identity,
+A Lie group is a manifold and a group whose group operations are smooth, so a morphism preserves both structures. In particular $F(e_H) = e_G$. *(Filled in: $F(e_H) = F(e_He_H) = F(e_H)F(e_H)$; multiply on the left by $F(e_H)^{-1}$.)* So $F$ has a differential at the identity,
 
 $$
 dF_e : T_{e}H \longrightarrow T_{e}G, \qquad \text{that is,} \qquad dF_e : \mathfrak{h} \longrightarrow \mathfrak{g},
 $$
 
-a linear map between the Lie algebras, and “the natural question is whether this map preserves commutators.”
+a linear map between the Lie algebras, and the natural question is whether this map preserves commutators.
 
 > [!definition] Definition §61.3: Lie Algebra Morphism
 > Let $\mathfrak{h}$ and $\mathfrak{g}$ be Lie algebras (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]]). A **Lie algebra morphism** is a linear map $\phi : \mathfrak{h} \to \mathfrak{g}$ that preserves brackets: $\phi([A, B]) = [\phi(A), \phi(B)]$ for all $A, B \in \mathfrak{h}$.
@@ -66,21 +66,21 @@ a linear map between the Lie algebras, and “the natural question is whether th
 ^lem-61-1
 
 > [!proof]+ Proof
-> *(Lecture 18: the “claim” in the proof that Lie group morphisms preserve brackets. The final diagram chase, left to the class as the lecture ran out of time, is completed.)* Fix $h \in H$; the displayed equality is to be shown. *$F(e) = e$.* As noted after Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]], $F(e_H) = F(e_He_H) = F(e_H)F(e_H)$, and multiplying on the left by $F(e_H)^{-1}$ gives $F(e_H) = e_G$; so $dF_e$ maps $T_eH$ to $T_eG$, and $\tilde A \in T_eG$.
+> *(Lecture 18: the claim in the proof that Lie group morphisms preserve brackets. The final diagram chase, left to the class, is completed.)* Fix $h \in H$; the displayed equality is to be shown. *$F(e) = e$.* As noted after Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]], $F(e_H) = F(e_He_H) = F(e_H)F(e_H)$, and multiplying on the left by $F(e_H)^{-1}$ gives $F(e_H) = e_G$; so $dF_e$ maps $T_eH$ to $T_eG$, and $\tilde A \in T_eG$.
 >
-> *The square.* “We have to use very much that $F$ is a group morphism.” Consider the square
+> *The square.* Here it is essential that $F$ is a group morphism. Consider the square
 >
 > $$
 > F \circ L_h = L_{F(h)} \circ F : H \to G .
 > $$
 >
-> It commutes: for $x \in H$, $F(L_h(x)) = F(hx) = F(h)F(x) = L_{F(h)}(F(x))$, where $L$ is “always left multiplication in the corresponding group.” Differentiate it at $e \in H$. Since $L_h(e) = h$ and $F(e) = e$, the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) gives the commutative square of differentials
+> It commutes: for $x \in H$, $F(L_h(x)) = F(hx) = F(h)F(x) = L_{F(h)}(F(x))$, where $L$ always denotes left multiplication in the corresponding group. Differentiate it at $e \in H$. Since $L_h(e) = h$ and $F(e) = e$, the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) gives the commutative square of differentials
 >
 > $$
 > dF_h \circ d(L_h)_e = d\big(L_{F(h)}\big)_e \circ dF_e : T_eH \to T_{F(h)}G .
 > $$
 >
-> *The chase.* *(Completed.)* “Chase where $A$ goes under this diagram”:
+> *The chase.* *(Completed.)* Chase where $A$ goes under this diagram:
 >
 > $$
 > \begin{aligned}
@@ -117,7 +117,7 @@ a linear map between the Lie algebras, and “the natural question is whether th
 ^prop-61-2
 
 > [!proof]+ Proof
-> *(Lecture 18 — “kind of a soft proof”.)* “Since the bracket is defined in terms of vector fields, I have to pass to vector fields to do the proof.” For $A \in T_eH$ let $\mathbf{X}^A \in \mathfrak{X}(H)$ be the left-invariant extension of $A$, the left-invariant field with $\mathbf{X}^A_e = A$; put $\tilde A = dF_e(A) \in T_eG$, and let $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$ be the left-invariant extension of $\tilde A$, with $\mathbf{Y}^{\tilde A}_e = \tilde A$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]] and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], applied to $H$ and to $G$).
+> *(Lecture 18, a soft proof.)* Since the bracket is defined in terms of vector fields, the proof has to pass to vector fields. For $A \in T_eH$ let $\mathbf{X}^A \in \mathfrak{X}(H)$ be the left-invariant extension of $A$, the left-invariant field with $\mathbf{X}^A_e = A$; put $\tilde A = dF_e(A) \in T_eG$, and let $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$ be the left-invariant extension of $\tilde A$, with $\mathbf{Y}^{\tilde A}_e = \tilde A$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]] and Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], applied to $H$ and to $G$).
 >
 > *Claim.* $\mathbf{X}^A$ and $\mathbf{Y}^{\tilde A}$ are $F$-related (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]).
 >
@@ -127,22 +127,22 @@ a linear map between the Lie algebras, and “the natural question is whether th
 > dF_e\big([\mathbf{X}^A, \mathbf{X}^B]_e\big) = [\mathbf{Y}^{\tilde A}, \mathbf{Y}^{\tilde B}]_{F(e)} = [\mathbf{Y}^{\tilde A}, \mathbf{Y}^{\tilde B}]_e .
 > $$
 >
-> By Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]] the left side is $dF_e([A, B])$ and the right side is $[\tilde A, \tilde B] = [dF_e(A), dF_e(B)]$: “that's exactly” the proposition. “So the fight is to prove the claim”: it is Lemma [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]], applied to $F$ and $A$, whose proof is the diagram chase above.
+> By Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]] the left side is $dF_e([A, B])$ and the right side is $[\tilde A, \tilde B] = [dF_e(A), dF_e(B)]$: that is exactly the proposition. So the work lies in the claim: it is Lemma [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]], applied to $F$ and $A$, whose proof is the diagram chase above.
 
 ^pf-61-2
 
 *Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Def. §60.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§59 Related Vector Fields#^prop-59-3|§59.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Def. §60.6]], [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]]
 
-Next: the commutator, “first for the general linear group, and then … for any linear group” (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]).
+Next: the commutator, first for the general linear group, and then for any linear group (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]).
 
 **Transcription note (Lecture 18).** Page 47 of the handwritten notes begins the proof with “take $A \in T_hH$”; $A \in T_eH$. Page 48 writes the second field as $\mathbf{Y}^{\hat B}$ in one place; it is $\mathbf{Y}^{\tilde B}$, with $\tilde B = dF_e(B)$.
 
 ## The Bracket of a Matrix Group
 
-*Lecture 19 began with a review, “just because last time was a little bit complex”: the Lie algebra $\mathfrak{g}$ of left-invariant fields, closed under commutators (Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-6|§60.6]]); the isomorphism $\mathrm{ev} : \mathfrak{g} \to T_eG$ with inverse $A \mapsto \mathbf{X}^A$ (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]), including the check that $\mathbf{X}^A$ is left-invariant (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](2)); and the bracket on $T_eG$, “I keep forgetting to do it, but it's important to write it” (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]), defined so that $\mathrm{ev}$ is an isomorphism of Lie algebras.*
+*Lecture 19 began with a review: the Lie algebra $\mathfrak{g}$ of left-invariant fields, closed under commutators (Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-6|§60.6]]); the isomorphism $\mathrm{ev} : \mathfrak{g} \to T_eG$ with inverse $A \mapsto \mathbf{X}^A$ (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]), including the check that $\mathbf{X}^A$ is left-invariant (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](2)); and the bracket on $T_eG$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]), defined so that $\mathrm{ev}$ is an isomorphism of Lie algebras.*
 
 > [!remark] Remark: The Lie Algebra in Practice
-> “In practice, when you say, `What's the Lie algebra of the orthogonal group?', the answer is never `some left-invariant fields', right? The answer is always: well, it's the tangent space at the identity” — with the bracket of Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]], which for matrix groups is the matrix commutator (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]] below). The notation $\mathfrak{gl}(d, \mathbb{R}) = T_I\mathrm{GL}(d,\mathbb{R}) = \operatorname{Mat}(d,\mathbb{R})$ is standard.
+> In practice, the Lie algebra of a group such as the orthogonal group is never described as a space of left-invariant fields; it is always the tangent space at the identity — with the bracket of Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]], which for matrix groups is the matrix commutator (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]] below). The notation $\mathfrak{gl}(d, \mathbb{R}) = T_I\mathrm{GL}(d,\mathbb{R}) = \operatorname{Mat}(d,\mathbb{R})$ is standard.
 
 ^rem-61-3
 
@@ -160,19 +160,19 @@ Next: the commutator, “first for the general linear group, and then … for an
 ^thm-61-3
 
 > [!proof]+ Proof
-> *(Lecture 19.)* “By assumption, $G$ is included in some general linear group … as a Lie subgroup, and the differential of the inclusion map at the identity is the inclusion” $di_I : T_IG \hookrightarrow \mathfrak{gl}(d, \mathbb{R})$. The inclusion is a Lie group morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]]): smooth by hypothesis, and a group morphism because the product on $G$ is matrix multiplication. So by Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2|§61.2]], for $A, B \in T_IG$,
+> *(Lecture 19.)* By assumption, $G$ is included in some general linear group as a Lie subgroup, and the differential of the inclusion map at the identity is the inclusion $di_I : T_IG \hookrightarrow \mathfrak{gl}(d, \mathbb{R})$. The inclusion is a Lie group morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]]): smooth by hypothesis, and a group morphism because the product on $G$ is matrix multiplication. So by Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2|§61.2]], for $A, B \in T_IG$,
 >
 > $$
 > di_I\big([A, B]_G\big) = \big[di_I(A), di_I(B)\big]_{\mathrm{GL}(d,\mathbb{R})} = di_I(A)\, di_I(B) - di_I(B)\, di_I(A),
 > $$
 >
-> the last step by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]. Under the identification of $T_IG$ with its image, which $di_I$ injective makes legitimate, this is $[A, B] = AB - BA$. “If we know that the bracket for the general linear group is a commutator, then for every linear group, it's got to be the commutator too, … just some algebra.” *(Filled in: a regular submanifold qualifies, since $i$ is smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), with coordinate representation $r \mapsto (r, \vec 0)$ in an adapted chart, whose differential is injective.)*
+> the last step by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]. Under the identification of $T_IG$ with its image, which $di_I$ injective makes legitimate, this is $[A, B] = AB - BA$. So once the bracket of the general linear group is known to be the commutator, the bracket of every linear group is the commutator too, by algebra alone. *(Filled in: a regular submanifold qualifies, since $i$ is smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), with coordinate representation $r \mapsto (r, \vec 0)$ in an adapted chart, whose differential is injective.)*
 
 ^pf-61-3
 
 *Uses:* [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|Def. §61.2]], [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2|§61.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]]
 
-In particular $di_I(T_IG)$ is closed under the matrix commutator, as the image of a bracket. Lecture 19 checked this directly in one case: “we have a theorem, but it's good to check.”
+In particular $di_I(T_IG)$ is closed under the matrix commutator, as the image of a bracket. Lecture 19 checked this directly in one case.
 
 > [!example] Example §61.1: The Commutator of Skew-Symmetric Matrices
 > $T_I\mathrm{O}(n) = \operatorname{Skew}(n, \mathbb{R}) = \{A : A^{\mathsf T} = -A\}$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). Written out, an element of $\operatorname{Skew}(n, \mathbb{R})$ has zero diagonal, and its entries below the diagonal are the negatives of those above:
@@ -190,11 +190,11 @@ In particular $di_I(T_IG)$ is closed under the matrix commutator, as the image o
 ^ex-61-1
 
 > [!proof]+ Proof
-> *(Lecture 19.)* $[A, B]^{\mathsf T} = (AB - BA)^{\mathsf T} = B^{\mathsf T}A^{\mathsf T} - A^{\mathsf T}B^{\mathsf T} = (-B)(-A) - (-A)(-B) = BA - AB = -[A, B]$. “You can do the same for the unitary [group] — that was the homework problem. Instead of transpose, you have star, complex transpose conjugate, and the same computation works.”
+> *(Lecture 19.)* $[A, B]^{\mathsf T} = (AB - BA)^{\mathsf T} = B^{\mathsf T}A^{\mathsf T} - A^{\mathsf T}B^{\mathsf T} = (-B)(-A) - (-A)(-B) = BA - AB = -[A, B]$. The same computation works for the unitary group, with the conjugate transpose $^{\ast}$ in place of the transpose; that was a homework problem.
 
 ^pf-ex-61-1
 
-**Transcription note (Lecture 19).** Page 49 of the handwritten notes writes the evaluation map as $\mathfrak{g} \to T_eM$ and its inverse from $T_eM$; the group is $G$, so $T_eG$. The definition of the bracket there reads “$[A, B] = [\mathbf{X}^A, \mathbf{X}^B]$”; the field bracket is evaluated at the identity, $[A, B] = [\mathbf{X}^A, \mathbf{X}^B]_e$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]), as Uribe said in lecture (“now we go back by evaluating at $e$”).
+**Transcription note (Lecture 19).** Page 49 of the handwritten notes writes the evaluation map as $\mathfrak{g} \to T_eM$ and its inverse from $T_eM$; the group is $G$, so $T_eG$. The definition of the bracket there reads “$[A, B] = [\mathbf{X}^A, \mathbf{X}^B]$”; the field bracket is evaluated at the identity, $[A, B] = [\mathbf{X}^A, \mathbf{X}^B]_e$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]), as stated in lecture.
 
 *Assignment 6, Problem 3: linear vector fields on $\mathbb{R}^n$. Not from lecture. “This is a special case of a Lie group (in this case $\mathrm{GL}(n,\mathbb{R})$) acting on the right on a manifold, in this case $\mathbb{R}^n$. Such an action induces a Lie algebra homomorphism from the Lie algebra of the group to the Lie algebra of vector fields on the manifold.”*
 

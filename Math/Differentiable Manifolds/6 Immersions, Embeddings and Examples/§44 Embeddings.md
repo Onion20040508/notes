@@ -16,7 +16,7 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 ## Embeddings and Their Images
 
 > [!definition] Definition §44.1: Embedding
-> A smooth map ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]) $F : M \to N$ is an **embedding** if it is an immersion ([[§43 Immersions#^def-43-1|Def. §43.1]]) and, as a map onto its image, $F : M \to F(M)$ is a homeomorphism ([[§10 Continuous Functions#^def-10-2|590 Def. §10.2]]), $F(M)$ carrying the subspace topology ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]]) of $N$. Injectivity is part of being a homeomorphism; Uribe wrote “(injective) immersion” and called the word redundant.
+> A smooth map ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]) $F : M \to N$ is an **embedding** if it is an immersion ([[§43 Immersions#^def-43-1|Def. §43.1]]) and, as a map onto its image, $F : M \to F(M)$ is a homeomorphism ([[§10 Continuous Functions#^def-10-2|590 Def. §10.2]]), $F(M)$ carrying the subspace topology ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]]) of $N$. Injectivity is part of being a homeomorphism, so it need not be required separately.
 >
 > *Lee: Ch. 4, Embeddings*
 
@@ -27,11 +27,11 @@ The normal form makes every immersion locally an inclusion, but an immersion's i
 > - Homeomorphisms in 590: [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]].
 
 ![[m591-33-1.svg]]
-*An embedding factors through its image as a homeomorphism followed by the inclusion — “you're taking the manifold $M$ and you're putting it inside $N$.” The figure-eight of Lee's Example 4.19 ([[§43 Immersions#Images of Immersions|§43]]) is an injective immersion for which the top arrow is not a homeomorphism.*
+*An embedding factors through its image as a homeomorphism followed by the inclusion: it puts a copy of $M$ inside $N$. The figure-eight of Lee's Example 4.19 ([[§43 Immersions#Images of Immersions|§43]]) is an injective immersion for which the top arrow is not a homeomorphism.*
 
 The standard non-example is the *irrational line on the torus*: for $\alpha$ irrational, $F : \mathbb{R} \to T^2 = \mathbb{R}^2/\mathbb{Z}^2$ (the [[Torus|torus]]), $F(t) = [t, \alpha t]$. It is an injective immersion ([[§43 Immersions#^def-43-1|Def. §43.1]]) whose image is dense in $T^2$, and it is not an embedding ([[§44 Embeddings#^prop-44-12|Proposition §44.12]] below, from Assignment 4, Problem 5; Lee, Example 4.20). In lecture its image was also said not to be a regular submanifold of $T^2$ ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]).
 
-*In lecture.* Given as “a very important category: non-examples.” “You're wrapping a line, but the slope of the line is irrational, so it never closes … like one of those spirographs.” The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is “a very nice submanifold.” But “it's local in the domain”, while being a submanifold is a statement about the whole image. Points outside $U$ “contribute segments like this, and they're going to be dense. No matter how you shrink this $V$, you won't be able to isolate only the yellow guy.”
+*In lecture.* Non-examples are an important category. Here a line is wrapped around the torus with irrational slope, so it never closes, like a spirograph curve. The normal form still applies: around any $p$ there are neighbourhoods $U$ and $V$ for which $F(U)$ is a submanifold. But the normal form is local in the domain, while being a submanifold is a statement about the whole image. Points outside $U$ contribute segments of the image that are dense, so no matter how $V$ is shrunk, it cannot isolate the piece $F(U)$ alone (orange in the figure).
 
 ![[m591-33-2.svg]]
 *The irrational line, drawn here with $\alpha = (\sqrt5 - 1)/2$. Left: nine turns of $F(\mathbb{R})$ in the square, whose opposite sides are identified; the orange piece is $F(U)$, and two other strands already cross the neighbourhood $V$. Right: a disc around $F(p)$ about $4.6$ times smaller, and the first 400 turns of the curve, which cross it in 34 strands. Shrinking further only takes more turns: every neighbourhood of $F(p)$ meets infinitely many strands.*
@@ -58,9 +58,9 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 > F(U) = \{\, x \in V' : y^{m+1}(x) = \cdots = y^n(x) = 0 \,\}. \tag{$\ast$}
 > $$
 >
-> This describes $F(U)$, not $F(M) \cap V'$: “other pieces of the image” may still pass through $V'$, as in the irrational line.
+> This describes $F(U)$, not $F(M) \cap V'$: other pieces of the image may still pass through $V'$, as in the irrational line.
 >
-> *The key step: the topological hypothesis.* “Here's where we use the very strong condition that $F$ is a topological homeomorphism to its image.” $U$ is open in $M$ and $F : M \to F(M)$ is a homeomorphism, so $F(U)$ is open in $F(M)$ (homeomorphisms are open maps, Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](2)). Since $F(M)$ carries the subspace topology, this means (Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]) that there is an open $W \subseteq N$ with
+> *The key step: the topological hypothesis.* This is where the strong condition that $F$ is a homeomorphism onto its image is used. $U$ is open in $M$ and $F : M \to F(M)$ is a homeomorphism, so $F(U)$ is open in $F(M)$ (homeomorphisms are open maps, Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](2)). Since $F(M)$ carries the subspace topology, this means (Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]) that there is an open $W \subseteq N$ with
 >
 > $$
 > F(U) = W \cap F(M) .
@@ -94,9 +94,9 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 **Transcription note.** Page 39 of the handwritten notes writes the target as $F(M) \cap V = \{0 = y^{n-m+1} = \cdots = y^m\}$; the vanishing coordinates are the last $n - m$ of them, $y^{m+1}, \ldots, y^n$, as the lecture said.
 
 > [!remark] Remark: Where Is Injectivity Used?
-> In lecture the last equality caused trouble, and a discussion. Uribe first located the use of injectivity there; a student pointed out that $(*)$ concerns only $F(U)$, and that the proof seems to need only that $F$ be an immersion ([[§43 Immersions#^def-43-1|Def. §43.1]]) which is open ([[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]]) onto its image. Another student added covering-type examples: maps that are not injective but whose images are manifolds, such as $\mathbb{R} \to S^1$, $t \mapsto (\cos t, \sin t)$ ([[§35 Local Diffeomorphisms#^ex-35-1|Ex. §35.1]]), or the two-to-one map $S^2 \to \mathbb{RP}^2$ ([[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|Ex. §46.1]]). Uribe agreed — “I don't think we're using injectivity” — and promised “a definite conclusion by email.”
+> In lecture the use of injectivity was first located at the last equality. But $(*)$ concerns only $F(U)$, and the proof needs only that $F$ be an immersion ([[§43 Immersions#^def-43-1|Def. §43.1]]) which is open ([[§4 Quotient Spaces and Open Maps#^def-4-3|Def. §4.3]]) onto its image. Covering-type maps show that a map need not be injective for its image to be a manifold: $\mathbb{R} \to S^1$, $t \mapsto (\cos t, \sin t)$ ([[§35 Local Diffeomorphisms#^ex-35-1|Ex. §35.1]]), or the two-to-one map $S^2 \to \mathbb{RP}^2$ ([[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|Ex. §46.1]]).
 >
-> *The conclusion, from Uribe's follow-up email.* The students were right: “a proof that we did today does show that for an immersion that is open as a map onto its image (so for all $U$ open in $M$, $F(U)$ is open in $F(M)$), $F(M)$ is a submanifold. The map $F$ does not have to be injective.” The proof uses exactly two things: the normal form (the immersion hypothesis), and that $F(U)$ is open in $F(M)$ for the $U$ of the normal form; with the completion via [[§43 Immersions#^cor-43-2|Corollary §43.2]] nothing else enters. Injectivity belongs to the *idea* of an embedding — “the idea of an embedding is that it is an isomorphism between $M$ and its image” ([[§44 Embeddings#^cor-44-3|Corollary §44.3]]) — not to this proof. He added that “being an immersion and an open map onto its image” is “an unusual class of maps.”
+> *The conclusion, confirmed in Uribe's follow-up email.* The proof given shows that for an immersion that is open as a map onto its image (so for all $U$ open in $M$, $F(U)$ is open in $F(M)$), $F(M)$ is a submanifold; the map $F$ does not have to be injective. The proof uses exactly two things: the normal form (the immersion hypothesis), and that $F(U)$ is open in $F(M)$ for the $U$ of the normal form; with the completion via [[§43 Immersions#^cor-43-2|Corollary §43.2]] nothing else enters. Injectivity belongs to the *idea* of an embedding — an isomorphism between $M$ and its image ([[§44 Embeddings#^cor-44-3|Corollary §44.3]]) — not to this proof. Immersions that are open maps onto their images form an unusual class of maps.
 
 ^rem-44-1
 
@@ -134,7 +134,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 ^cor-44-3
 
 > [!proof]+ Proof
-> *(Stated in Lecture 14 — “an embedding restricts to a diffeomorphism between $M$ and the image”; filled in.)* Write $\bar F : M \to F(M)$ for $F$ regarded as a map onto its image and $\iota : F(M) \hookrightarrow N$ for the inclusion, so that $F = \iota \circ \bar F$. By Theorem [[§44 Embeddings#^thm-44-1|§44.1]], $F(M)$ is a regular submanifold of $N$ of codimension $n - m$, so with its induced structure it is a smooth manifold of dimension $n - (n - m) = m$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]).
+> *(Stated in Lecture 14; filled in.)* Write $\bar F : M \to F(M)$ for $F$ regarded as a map onto its image and $\iota : F(M) \hookrightarrow N$ for the inclusion, so that $F = \iota \circ \bar F$. By Theorem [[§44 Embeddings#^thm-44-1|§44.1]], $F(M)$ is a regular submanifold of $N$ of codimension $n - m$, so with its induced structure it is a smooth manifold of dimension $n - (n - m) = m$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]).
 >
 > *Smooth.* $F$ is smooth into $N$ with values in $F(M)$, so $\bar F : M \to F(M)$ is smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2).
 >
@@ -171,7 +171,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 ^prop-44-4
 
 > [!proof]+ Proof
-> *(Lecture 14 — “it's a very funny proof. You go back and forth literally.” Uribe did not finish Claim 2 in lecture and sent the complete proof in his follow-up email; the completion of Claim 2 below is the notes' own.)* Let $C \subseteq M$ be closed. We show $\overline{F(C)} \subseteq F(C)$, so that $F(C)$ is closed. Recall that $N$, a topological manifold, is Hausdorff, and that a point lies in the closure of a set $A$ exactly when every open set containing the point meets $A$.
+> *(Lecture 14. Claim 2 was not finished in lecture; the complete proof came in Uribe's follow-up email, and the completion of Claim 2 below is the notes' own.)* Let $C \subseteq M$ be closed. We show $\overline{F(C)} \subseteq F(C)$, so that $F(C)$ is closed. Recall that $N$, a topological manifold, is Hausdorff, and that a point lies in the closure of a set $A$ exactly when every open set containing the point meets $A$.
 >
 > *Claim 1: $F(C) \cap K$ is closed for every compact $K \subseteq N$.* $F^{-1}(K)$ is compact, because $F$ is proper (Definition [[§44 Embeddings#^def-44-2|§44.2]]). So $C \cap F^{-1}(K)$, a closed subset of it, is compact: it is closed in the subspace $F^{-1}(K)$, its complement there being $(M \setminus C) \cap F^{-1}(K)$, and a closed subset of a compact space is compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5)). Its image $F\big(C \cap F^{-1}(K)\big)$ is compact, as the continuous image of a compact space (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](2)), hence closed in the Hausdorff space $N$ (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](4)). And $F\big(C \cap F^{-1}(K)\big) = F(C) \cap K$: a point of the left side is $F(c)$ with $c \in C$ and $F(c) \in K$, hence lies in $F(C) \cap K$; and conversely, a point $y \in F(C) \cap K$ is $y = F(c)$ with $c \in C$, and $F(c) = y \in K$ gives $c \in F^{-1}(K)$.
 >
@@ -211,7 +211,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 ^cor-44-6
 
 > [!proof]+ Proof
-> *(Uribe's follow-up email: “Note that $F$ is proper if $M$ is compact, a fact that can be very useful!”; the proof is filled in.)* $F$ is proper (Definition [[§44 Embeddings#^def-44-2|§44.2]]): if $K \subseteq N$ is compact, it is closed, as a compact subset of the Hausdorff space $N$ (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](4)); so $F^{-1}(K)$ is closed in $M$, $F$ being continuous; and a closed subset of the compact $M$ is compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5)). So $F$ is an injective proper immersion. Apply Theorem [[§44 Embeddings#^thm-44-5|§44.5]]: $F$ is an embedding.
+> *(From Uribe's follow-up email; the proof is filled in.)* $F$ is proper (Definition [[§44 Embeddings#^def-44-2|§44.2]]): if $K \subseteq N$ is compact, it is closed, as a compact subset of the Hausdorff space $N$ (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](4)); so $F^{-1}(K)$ is closed in $M$, $F$ being continuous; and a closed subset of the compact $M$ is compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5)). So $F$ is an injective proper immersion. Apply Theorem [[§44 Embeddings#^thm-44-5|§44.5]]: $F$ is an embedding.
 
 ^pf-44-6
 
@@ -219,8 +219,6 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 > [!remark]- Connections
 > - The topological prototype: a continuous bijection from a compact space onto a Hausdorff space is a homeomorphism, [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]] (in 591: [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](6)).
-
-*An aside from the end of the lecture.* Uribe mentioned that he is developing his own notes for the course, “based on notes that somebody took a few years ago”, edited “the night before”, and asked whether they would help, perhaps shared through Overleaf.
 
 ## Closedness and Density
 
@@ -269,7 +267,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 > [!remark]- Connections
 > - Dense subsets in 590: [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], with the [[Closure Characterization|590 closure characterization]].
 
-This is the precise form of Uribe's “no matter how you shrink $V$, you won't be able to isolate only the yellow guy”: at every point of [[§44 Embeddings#^prop-44-12|the irrational line]], local closedness fails.
+This is the precise form of the statement that no shrinking of $V$ isolates the piece $F(U)$ of the irrational line: at every point of [[§44 Embeddings#^prop-44-12|the irrational line]], local closedness fails.
 
 > [!theorem] Proposition §44.9: Closed Embeddings Are the Proper Ones
 > An embedding ([[§44 Embeddings#^def-44-1|Def. §44.1]]) $F : M \to N$ is proper ([[§44 Embeddings#^def-44-2|Def. §44.2]]) if and only if its image $F(M)$ is closed in $N$. In particular, an injective proper immersion ([[§43 Immersions#^def-43-1|Def. §43.1]]) is exactly an embedding with closed image.

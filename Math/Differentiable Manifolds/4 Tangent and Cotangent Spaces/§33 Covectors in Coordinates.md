@@ -23,7 +23,7 @@ tags: [differentiable-manifolds, math591]
 ^lem-33-1
 
 > [!proof]+ Proof
-> *(Lecture 10: “it suffices to check the identity on basis vectors.” In lecture the left side came from the matrix of $f_{\ast p}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), a $1 \times m$ row — “remember, gradients are across”, after a student first proposed $m \times 1$ — whose $j$-th entry is $\partial f/\partial x^j(p)$. Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] gives the same value directly.)*
+> *(Lecture 10: it suffices to check the identity on basis vectors. In lecture the left side came from the matrix of $f_{\ast p}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), a $1 \times m$ row — gradients go across — whose $j$-th entry is $\partial f/\partial x^j(p)$. Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] gives the same value directly.)*
 >
 > *Step 1: the $dx^i|_p$ are the dual basis.* Let $\varphi = (x^1, \ldots, x^m)$ be the chart, so that $x^i \circ \varphi^{-1} = r^i$, the $i$-th standard coordinate of $\mathbb{R}^m$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]). For each $i$ and $j$, Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] with $f = x^i$ and $D = \partial/\partial x^j|_p$, followed by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], gives
 >
@@ -79,7 +79,7 @@ tags: [differentiable-manifolds, math591]
 ^cor-33-2
 
 > [!proof]+ Proof
-> *(Lecture 15 recalled the basis $dx^j|_p$ — “a fact that I forgot to mention to remind you” — and read off the components by evaluation.)* Two things are claimed: the expansion, and the uniqueness of its coefficients.
+> *(Lecture 15 recalled the basis $dx^j|_p$ and read off the components by evaluation.)* Two things are claimed: the expansion, and the uniqueness of its coefficients.
 >
 > *The expansion.* By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], $(dx^1|_p, \ldots, dx^m|_p)$ is the dual basis (Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]]) of the basis $(\partial/\partial x^1|_p, \ldots, \partial/\partial x^m|_p)$ of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). So the second formula of Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]] applies, with $V = T_pM$, $e_j = \partial/\partial x^j|_p$, $\varepsilon^j = dx^j|_p$ and $\lambda = \xi$; with Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]] it reads
 >
@@ -109,7 +109,7 @@ tags: [differentiable-manifolds, math591]
 > \Big( \frac{\partial f}{\partial x^1}(p) \ \ \cdots \ \ \frac{\partial f}{\partial x^m}(p) \Big).
 > $$
 >
-> A student proposed $m \times 1$; it is $1 \times m$ — “gradients go across” — since the target is one-dimensional. The lecture's proof took this route and paused over the shape of the matrix; the version above goes through Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] instead, which avoids the question.
+> The matrix is $1 \times m$, not $m \times 1$ — gradients go across — since the target is one-dimensional. The lecture's proof took this route and paused over the shape of the matrix; the version above goes through Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] instead, which avoids the question.
 
 ^rem-33-1
 
@@ -117,7 +117,7 @@ tags: [differentiable-manifolds, math591]
 *The differential as a covector, for $f(x,y) = y + 0.3x^2$ near $p = (0.8, 0)$. Left: level curves of $f$ at equal spacing $\Delta$, and a tangent vector $v$ at $p$. Right: in $T_pM$, the level lines of the linear functional $df_p$ at the same spacing — the linearization of the curves on the left, straight and parallel. The value $df_p(v)$ counts, in units of $\Delta$, how many lines $v$ crosses: here exactly $2\Delta$, since $v$ ends on the line $df_p = 2\Delta$. On the left, $v$ crosses* approximately *two level curves; the curvature is what the linearization discards.*
 
 > [!remark] Remark: Differential — Not Gradient
-> “The standard formula from Calc 3 now has this manifold general interpretation.” The formula $df = \sum \partial f/\partial x^i\,dx^i$ of multivariable calculus is now a statement about covectors: the $dx^i|_p$ are not infinitesimals but the dual basis of the coordinate derivations, the coefficients are numbers, and the dual basis “extracts the components of a vector in the original basis.” What does *not* survive on a manifold is the gradient. A function on $M$ has no gradient *vector* — converting $df_p$ into a vector requires an inner product on $T_pM$, i.e. a Riemannian metric — but it always has its differential $df_p \in T_p^{\ast}M$, and that is where differentials of scalar functions live. Differential forms, later in the term, will be built from covectors, and will pull back as naturally as germs do. Uribe also announced that tangent vectors, written $D$ while thought of as derivations, will soon be written $v$. On $\mathbb{R}^n$ there is such an inner product, the dot product: Definition [[§33 Covectors in Coordinates#^def-33-2|§33.2]] and Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]] below make the conversion between the gradient and the differential precise. They are used later, for Lagrange multipliers (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-6|§39.6]]) and for the normal bundle ([[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]]).
+> The formula $df = \sum \partial f/\partial x^i\,dx^i$ of multivariable calculus is now a statement about covectors: the $dx^i|_p$ are not infinitesimals but the dual basis of the coordinate derivations, the coefficients are numbers, and the dual basis extracts the components of a vector in the original basis. What does *not* survive on a manifold is the gradient. A function on $M$ has no gradient *vector* — converting $df_p$ into a vector requires an inner product on $T_pM$, i.e. a Riemannian metric — but it always has its differential $df_p \in T_p^{\ast}M$, and that is where differentials of scalar functions live. Differential forms, later in the term, will be built from covectors, and will pull back as naturally as germs do. Tangent vectors, written $D$ while thought of as derivations, will soon be written $v$. On $\mathbb{R}^n$ there is such an inner product, the dot product: Definition [[§33 Covectors in Coordinates#^def-33-2|§33.2]] and Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]] below make the conversion between the gradient and the differential precise. They are used later, for Lagrange multipliers (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-6|§39.6]]) and for the normal bundle ([[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]]).
 
 ^rem-33-2
 

@@ -417,7 +417,7 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 
 ## Transverse Submanifolds
 
-*Review session, Oct 16 (and Uribe's email before it). The homework defined a map transverse to a submanifold (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]). “We can also talk about two submanifolds being transverse to each other, which was the original definition historically, and then it was generalized.” The Euclidean version is Definition [[§26 Transversality#^def-26-3|§26.3]].*
+*Review session, Oct 16 (and Uribe's email before it). The homework defined a map transverse to a submanifold (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]). Two submanifolds can also be transverse to each other; historically this was the original definition, later generalized to maps. The Euclidean version is Definition [[§26 Transversality#^def-26-3|§26.3]].*
 
 > [!definition] Definition §39.3: Transverse Submanifolds
 > Let $S_1, S_2 \subseteq N$ be regular submanifolds. $S_1$ **intersects $S_2$ transversally**, written $S_1 \pitchfork S_2$, if
@@ -426,13 +426,11 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 > T_qS_1 + T_qS_2 = T_qN \qquad \text{for every } q \in S_1 \cap S_2 ,
 > $$
 >
-> with $T_qS_i \subseteq T_qN$ through the inclusions (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]). The condition holds vacuously if $S_1 \cap S_2 = \varnothing$.
+> with $T_qS_i \subseteq T_qN$ through the inclusions (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]). The condition holds vacuously if $S_1 \cap S_2 = \varnothing$. The notation $S_1 \pitchfork S_2$ is a statement about the pair, not a set: unlike $S_1 \cap S_2$, it is not the result of an operation.
 >
 > *Lee: Ch. 6, Transversality*
 
 ^def-39-3
-
-On the notation: “I don't like it … to me it's very confusing, because intersection to me is an operation … This is a statement, not a set.”
 
 > [!theorem] Proposition §39.7: Transverse Submanifolds and Transverse Maps
 > $S_1 \pitchfork S_2$ if and only if the inclusion $\iota_1 : S_1 \hookrightarrow N$ is transverse to $S_2$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]).
@@ -440,7 +438,7 @@ On the notation: “I don't like it … to me it's very confusing, because inter
 ^prop-39-7
 
 > [!proof]+ Proof
-> *(Stated in the review session: “if you look at the definitions, it's the same”; written out.)* $\iota_1^{-1}(S_2) = S_1 \cap S_2$, and for $q$ in it, $(\iota_1)_{\ast q}(T_qS_1)$ is $T_qS_1$ regarded as a subspace of $T_qN$. So the condition of Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]] for $F = \iota_1$ at $q$ is $T_qS_1 + T_qS_2 = T_qN$.
+> *(Stated in the review session as immediate from the definitions; written out.)* $\iota_1^{-1}(S_2) = S_1 \cap S_2$, and for $q$ in it, $(\iota_1)_{\ast q}(T_qS_1)$ is $T_qS_1$ regarded as a subspace of $T_qN$. So the condition of Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]] for $F = \iota_1$ at $q$ is $T_qS_1 + T_qS_2 = T_qN$.
 
 ^pf-39-7
 
@@ -458,7 +456,7 @@ On the notation: “I don't like it … to me it's very confusing, because inter
 ^thm-39-8
 
 > [!proof]+ Proof
-> *(The theorem “that you proved in homework”, first in the Euclidean case, Proposition [[§26 Transversality#^prop-26-4|§26.4]]; “again, that's just a linear algebra thing.” The manifold version is filled in, along the Euclidean proof.)* Let $n = \dim N$, $k_i = \operatorname{codim} S_i$, and $q \in S_1 \cap S_2$.
+> *(Proved in the homework in the Euclidean case, Proposition [[§26 Transversality#^prop-26-4|§26.4]], where it is a linear-algebra fact. The manifold version is filled in, along the Euclidean proof.)* Let $n = \dim N$, $k_i = \operatorname{codim} S_i$, and $q \in S_1 \cap S_2$.
 >
 > *Local defining functions.* Take a slice chart $(U_i, \varphi_i)$ for $S_i$ at $q$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), so that $U_i \cap S_i = G_i^{-1}(0)$, where $G_i : U_i \to \mathbb{R}^{k_i}$ is the last $k_i$ coordinates of $\varphi_i$. $G_i$ is a submersion (a coordinate projection composed with a chart), so by the regular value theorem (Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]) $T_qS_i = \ker (dG_i)_q$, a subspace of $T_qN$ of dimension $n - k_i$.
 >
@@ -482,8 +480,8 @@ On the notation: “I don't like it … to me it's very confusing, because inter
 
 *Uses:* [[§26 Transversality#^prop-26-4|§26.4]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]
 
-*The picture*, asked for by a student (“wonderful picture … great question, I haven't drawn enough pictures”). In $\mathbb{R}^3$, if $S_1$ is a surface and $S_2$ a curve, at a point of intersection the tangent plane and the tangent line must add up to all of $\mathbb{R}^3$, so the curve “has to come across like that … it has to pierce” the surface. If both are surfaces, two planes add up to $\mathbb{R}^3$ exactly when they are different, and then they meet in a line: the surfaces cut through each other along a curve. “It's really a local picture … just the vector space picture.”
+*The picture.* In $\mathbb{R}^3$, if $S_1$ is a surface and $S_2$ a curve, at a point of intersection the tangent plane and the tangent line must add up to all of $\mathbb{R}^3$, so the curve has to pierce the surface. If both are surfaces, two planes add up to $\mathbb{R}^3$ exactly when they are different, and then they meet in a line: the surfaces cut through each other along a curve. The picture is local: it is the vector-space picture of the tangent spaces at a point of intersection.
 
 ![[m591-37-1.svg]]
 
-Codimensions add: $1 + 2 = 3$ for a surface and a curve, a point; $1 + 1 = 2$ for two surfaces, a curve. In the Morse problem of the homework the same thing happened in $T^{\ast}M$: the section $s_f = df$ “was actually an embedding because it was a section, so it's the same as intersecting the image of the embedding with the zero section” (Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]]), and there $m + m = 2m$, the full dimension: the intersection is a set of isolated points.
+Codimensions add: $1 + 2 = 3$ for a surface and a curve, a point; $1 + 1 = 2$ for two surfaces, a curve. In the Morse problem of the homework the same thing happened in $T^{\ast}M$: the section $s_f = df$ is an embedding, because it is a section, so the question is the same as intersecting the image of this embedding with the zero section (Theorem [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]]), and there $m + m = 2m$, the full dimension: the intersection is a set of isolated points.

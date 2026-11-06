@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Reference: Lee Ch. 21, the section on homogeneous spaces; Lee Example 1.36 (Grassmannians). Logistics: a substitute lectures on Friday Sep 11; smooth structures are scheduled to begin then.*
 
 > [!remark] Remark: Why This Section
-> *Homogeneous spaces* are spaces on which a group acts transitively. They are identified with coset spaces $G/H$, which are themselves orbit spaces (of $H$ acting on $G$), so everything in [[§13 Group Actions and Orbit Spaces|§13]] applies. This is how spheres, projective spaces, and Grassmannians acquire their topology in one stroke: “that's a natural way to give a topology to homogeneous spaces.”
+> *Homogeneous spaces* are spaces on which a group acts transitively. They are identified with coset spaces $G/H$, which are themselves orbit spaces (of $H$ acting on $G$), so everything in [[§13 Group Actions and Orbit Spaces|§13]] applies. This is how spheres, projective spaces, and Grassmannians acquire their topology in one stroke; it is the natural way to give a topology to a homogeneous space.
 
 ^rem-14-1
 
@@ -40,7 +40,7 @@ tags: [differentiable-manifolds, math591]
 ^def-14-2
 
 > [!remark] Remark
-> For a transitive action the orbit space $X/G$ is a single point, “which is not that interesting.” The interesting quotient is a different one: $X$ itself will be exhibited as a quotient $G/H$ of the *group*, by the action of a subgroup $H$ on $G$.
+> For a transitive action the orbit space $X/G$ is a single point. The interesting quotient is a different one: $X$ itself will be exhibited as a quotient $G/H$ of the *group*, by the action of a subgroup $H$ on $G$.
 
 ^rem-14-2
 
@@ -97,7 +97,7 @@ tags: [differentiable-manifolds, math591]
 ^thm-14-2
 
 > [!proof]+ Exercise
-> *(Claimed in Lecture 4 — “this is a closed subgroup”; filled in.)* Consider the orbit map $\theta_{x_0} : G \to X$, $\theta_{x_0}(g) = g \cdot x_0$, of Definition [[§14 Homogeneous Spaces#^def-14-4|§14.4]], and identify $H_{x_0}$ as a preimage under it. Two things are to be checked: that $\theta_{x_0}$ is continuous, and that the relevant subset of $X$ is closed. Uribe stated the result and said the closedness “may be the next assignment”; it was not proved in lecture, and the argument is left here.
+> *(Claimed in Lecture 4; filled in.)* Consider the orbit map $\theta_{x_0} : G \to X$, $\theta_{x_0}(g) = g \cdot x_0$, of Definition [[§14 Homogeneous Spaces#^def-14-4|§14.4]], and identify $H_{x_0}$ as a preimage under it. Two things are to be checked: that $\theta_{x_0}$ is continuous, and that the relevant subset of $X$ is closed. The result was stated without proof in lecture; the argument is recorded here.
 
 ^pf-14-2
 
@@ -190,7 +190,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 ^lem-14-3
 
 > [!proof]+ Proof
-> *(Used in Lecture 4 as “$gH = g'H \iff g^{-1}g' \in H$”; filled in.)* ($\Rightarrow$) $g' = g'e \in g'H = gH$, so $g' = gh$ for some $h \in H$, i.e. $g^{-1}g' = h \in H$. ($\Leftarrow$) If $g^{-1}g' = h \in H$, then $g' = gh$, so $g'H = ghH = gH$ (as $hH = H$ for $h \in H$, $H$ being a subgroup). For the partition: $g \in gH$, and if $gH \cap g'H \ni a$, then $aH = gH$ and $aH = g'H$ by the first part, so $gH = g'H$.
+> *(Used in Lecture 4 in the form $gH = g'H \iff g^{-1}g' \in H$; filled in.)* ($\Rightarrow$) $g' = g'e \in g'H = gH$, so $g' = gh$ for some $h \in H$, i.e. $g^{-1}g' = h \in H$. ($\Leftarrow$) If $g^{-1}g' = h \in H$, then $g' = gh$, so $g'H = ghH = gH$ (as $hH = H$ for $h \in H$, $H$ being a subgroup). For the partition: $g \in gH$, and if $gH \cap g'H \ni a$, then $aH = gH$ and $aH = g'H$ by the first part, so $gH = g'H$.
 
 ^pf-14-3
 
@@ -261,7 +261,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 ^lem-14-5
 
 > [!proof]+ Proof
-> *(Lecture 4 checked well-definedness — translate “the so-called base point” — on the board; injectivity and surjectivity are filled in.)* *Well defined.* If $gH = g'H$ then $g' = gh$ with $h \in H$ (Lemma [[§14 Homogeneous Spaces#^lem-14-3|§14.3]]), and
+> *(Lecture 4 checked well-definedness on the board, by translating the base point; injectivity and surjectivity are filled in.)* *Well defined.* If $gH = g'H$ then $g' = gh$ with $h \in H$ (Lemma [[§14 Homogeneous Spaces#^lem-14-3|§14.3]]), and
 >
 > $$
 > g' \cdot x_0 = (gh) \cdot x_0 = g \cdot (h \cdot x_0) = g \cdot x_0,

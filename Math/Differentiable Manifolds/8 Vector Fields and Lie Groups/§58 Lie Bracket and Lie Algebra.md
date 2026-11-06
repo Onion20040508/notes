@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: fields — Two vector fields, composed as operators, give a second-order operator; their commutator cancels the second derivatives and is again a vector field, so $\mathfrak{X}(M)$ is a Lie algebra.*
 
-*Lecture 16. “Who cares? There is one reason we care … when we look at commutators.”*
+*Lecture 16. Differential operators matter here because of commutators.*
 
 > [!definition] Definition §58.1: The Lie Bracket of Vector Fields
 > For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, regarded as [[§56 Vector Fields#^lem-56-3|operators]] on $C^\infty(M)$ ([[§56 Vector Fields#^def-56-4|Definition §56.4]]), the **commutator** or **Lie bracket** is the operator
@@ -22,7 +22,7 @@ tags: [differentiable-manifolds, math591]
 
 ^def-58-1
 
-Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\mathrm{Diff}_2(M)$ ([[§57 Differential Operators#^def-57-3|Definition §57.3]]) — “you get second derivatives in local coordinates” — but “something very, very nice happens when you look at the commutator.”
+Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\mathrm{Diff}_2(M)$ ([[§57 Differential Operators#^def-57-3|Definition §57.3]]), with second derivatives in local coordinates; but the commutator is much better behaved.
 
 > [!theorem] Lemma §58.1: The Bracket of Vector Fields Is a Vector Field
 > $[\mathbf{X}, \mathbf{Y}]$ is a [[§56 Vector Fields#^def-56-5|derivation]] of $C^\infty(M)$; hence, by [[§56 Vector Fields#^prop-56-7|Proposition §56.7]], it is a [[§56 Vector Fields#^def-56-1|vector field]].
@@ -32,7 +32,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 ^lem-58-1
 
 > [!proof]+ Proof
-> *(Lecture 16 — “tedious algebra … the key thing is the product rule.”)* By Definition [[§56 Vector Fields#^def-56-5|§56.5]], three things have to be shown: that $[\mathbf{X}, \mathbf{Y}]$ takes $C^\infty(M)$ to $C^\infty(M)$, that it is $\mathbb{R}$-linear, and that it satisfies the product rule. Throughout, $\mathbf{X}f$ is the function $p \mapsto \mathbf{X}_p[f]$. By Lemma [[§56 Vector Fields#^lem-56-3|§56.3]], $\mathbf{X}$ and $\mathbf{Y}$ are derivations of $C^\infty(M)$: each is linear, and $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$, $\mathbf{Y}(fg) = f\,\mathbf{Y}g + g\,\mathbf{Y}f$.
+> *(Lecture 16: routine algebra, the key ingredient being the product rule.)* By Definition [[§56 Vector Fields#^def-56-5|§56.5]], three things have to be shown: that $[\mathbf{X}, \mathbf{Y}]$ takes $C^\infty(M)$ to $C^\infty(M)$, that it is $\mathbb{R}$-linear, and that it satisfies the product rule. Throughout, $\mathbf{X}f$ is the function $p \mapsto \mathbf{X}_p[f]$. By Lemma [[§56 Vector Fields#^lem-56-3|§56.3]], $\mathbf{X}$ and $\mathbf{Y}$ are derivations of $C^\infty(M)$: each is linear, and $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$, $\mathbf{Y}(fg) = f\,\mathbf{Y}g + g\,\mathbf{Y}f$.
 >
 > *An operator.* For $f \in C^\infty(M)$, $\mathbf{Y}f \in C^\infty(M)$ by Lemma [[§56 Vector Fields#^lem-56-3|§56.3]], and then $\mathbf{X}(\mathbf{Y}f) \in C^\infty(M)$ by the same lemma applied to the smooth function $\mathbf{Y}f$. Likewise $\mathbf{X}f$ and then $\mathbf{Y}(\mathbf{X}f)$ are smooth. So their difference $[\mathbf{X}, \mathbf{Y}](f)$ is smooth.
 >
@@ -88,7 +88,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 ^ex-58-1
 
 > [!proof]+ Proof
-> *(Lecture 16 — “an exercise in multivariable calculus.”)* Both sides are vector fields: the left side by Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], the right side by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], since its coefficients are products of smooth functions. A vector field is determined by its operator (the uniqueness in Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]), so it suffices that both sides give the same function when applied to any $f \in C^\infty(\mathbb{R}^2)$. In the standard chart, Lemma [[§56 Vector Fields#^lem-56-3|§56.3]] gives $\mathbf{X}h = a\, \partial h/\partial x$ and $\mathbf{Y}h = b\, \partial h/\partial y$ for every smooth $h$.
+> *(Lecture 16: an exercise in multivariable calculus.)* Both sides are vector fields: the left side by Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], the right side by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], since its coefficients are products of smooth functions. A vector field is determined by its operator (the uniqueness in Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]), so it suffices that both sides give the same function when applied to any $f \in C^\infty(\mathbb{R}^2)$. In the standard chart, Lemma [[§56 Vector Fields#^lem-56-3|§56.3]] gives $\mathbf{X}h = a\, \partial h/\partial x$ and $\mathbf{Y}h = b\, \partial h/\partial y$ for every smooth $h$.
 >
 > Apply both composites to $f$ and use the product rule for the partial derivatives $\partial/\partial x$ and $\partial/\partial y$:
 >
@@ -233,7 +233,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > - In classical mechanics the Poisson bracket is bilinear, antisymmetric and satisfies the Jacobi identity ([[§B8.1 Poisson Brackets#^thm-b8-1-2|CM Theorem §B8.1.2]]), so the phase-space functions form a Lie algebra: [[§B8.1 Poisson Brackets#^rem-b8-1-1|CM Remark: The structure behind the four rules]].
 > - In quantum mechanics the commutator of operators has the same algebra, Jacobi identity included: [[§B2.4 Commutators and the Generalized Uncertainty Principle#^thm-b2-4-1|QM Theorem §B2.4.1]].
 
-The three terms come from one by permuting $X, Y, Z$ cyclically: “move $Y$ to the left position, $Z$ one over to the left, and $X$ jumps to the last position.”
+The three terms come from one by permuting $X, Y, Z$ cyclically: $Y$ moves to the left position, $Z$ one place to the left, and $X$ to the last position.
 
 > [!theorem] Proposition §58.4: Commutators of an Associative Product
 > Let $A$ be a real vector space with a bilinear *associative* product $(X, Y) \mapsto X \ast Y$. Then the commutator $[X, Y] = X \ast Y - Y \ast X$ is bilinear, skew-symmetric, and satisfies the [[§58 Lie Bracket and Lie Algebra#^def-58-2|Jacobi identity]]; so $(A, [\cdot,\cdot])$ is a [[§58 Lie Bracket and Lie Algebra#^def-58-2|Lie algebra]].
@@ -241,7 +241,7 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: “move $Y$ to 
 ^prop-58-4
 
 > [!proof]+ Proof
-> *(Stated in Lecture 16 as “a general fact”; filled in. “The key thing is that it be an associative product.”)* By Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]], three properties of the commutator have to be checked; it takes values in $A$, since $A$ is closed under $\ast$ and subtraction. Bilinearity of $\ast$ means $(aX + bX') \ast Y = a\,X \ast Y + b\,X' \ast Y$ and $X \ast (aY + bY') = a\,X \ast Y + b\,X \ast Y'$ for $a, b \in \mathbb{R}$.
+> *(Stated in Lecture 16 as a general fact, the key hypothesis being that the product is associative; filled in.)* By Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]], three properties of the commutator have to be checked; it takes values in $A$, since $A$ is closed under $\ast$ and subtraction. Bilinearity of $\ast$ means $(aX + bX') \ast Y = a\,X \ast Y + b\,X' \ast Y$ and $X \ast (aY + bY') = a\,X \ast Y + b\,X \ast Y'$ for $a, b \in \mathbb{R}$.
 >
 > *Skew-symmetry.* Directly from the definition, $[Y, X] = Y \ast X - X \ast Y = -(X \ast Y - Y \ast X) = -[X, Y]$.
 >
@@ -288,7 +288,7 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: “move $Y$ to 
 ^cor-58-5
 
 > [!proof]+ Proof
-> *(Lecture 16: the bracket of fields “comes from the product, which is the composition, which is associative.” Filled in.)* By Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]], what has to be shown is that $\mathfrak{X}(M)$ is a real vector space, that the bracket maps $\mathfrak{X}(M) \times \mathfrak{X}(M)$ into $\mathfrak{X}(M)$, and that it is bilinear, skew-symmetric and satisfies the Jacobi identity. In this proof write $D_\mathbf{X}$ for $\mathbf{X}$ regarded as an operator (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]), to keep the field and its operator apart.
+> *(Lecture 16: the bracket of fields comes from a product, composition, which is associative. Filled in.)* By Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]], what has to be shown is that $\mathfrak{X}(M)$ is a real vector space, that the bracket maps $\mathfrak{X}(M) \times \mathfrak{X}(M)$ into $\mathfrak{X}(M)$, and that it is bilinear, skew-symmetric and satisfies the Jacobi identity. In this proof write $D_\mathbf{X}$ for $\mathbf{X}$ regarded as an operator (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]), to keep the field and its operator apart.
 >
 > *The space and the bracket.* $\mathfrak{X}(M)$ is a real vector space by Proposition [[§56 Vector Fields#^prop-56-2|§56.2]]. By Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], $\mathfrak{X}(M)$, identified with the derivations, is closed under the commutator: for $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ the commutator of $D_\mathbf{X}$ and $D_\mathbf{Y}$ is the operator of the vector field $[\mathbf{X}, \mathbf{Y}]$,
 >
@@ -319,7 +319,7 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: “move $Y$ to 
 
 *Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^def-58-2|Def. §58.2]], [[§58 Lie Bracket and Lie Algebra#^prop-58-4|§58.4]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§56 Vector Fields#^prop-56-7|§56.7]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§56 Vector Fields#^def-56-4|Def. §56.4]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
-“Which I don't recommend you check by hand. It's a big computation.” The Lie algebra $\mathfrak{X}(M)$ is infinite-dimensional (for $\dim M \ge 1$). The finite-dimensional Lie algebras of [[§60 Lie Groups and Left-Invariant Vector Fields|§60]] sit inside it.
+Checking the Jacobi identity for vector fields directly by hand is a big computation. The Lie algebra $\mathfrak{X}(M)$ is infinite-dimensional (for $\dim M \ge 1$). The finite-dimensional Lie algebras of [[§60 Lie Groups and Left-Invariant Vector Fields|§60]] sit inside it.
 
 The bracket of two vector fields is one instance of a general fact about the ring of differential operators ([[§57 Differential Operators|§57]]): a commutator is always of lower order than the composites it is made from.
 
@@ -377,7 +377,7 @@ So two differential operators commute “up to lower order”. For $k = l = 1$, 
 ^ex-58-3
 
 > [!proof]+ Proof
-> *(Lecture 16 mentioned only that the cross product satisfies the Jacobi identity — “if you want to be really mean to your 215 students, give them the Jacobi identity for the cross product. Don't do that.” The proof via the hat map is filled in.)* There are three steps: the bracket identity $[\hat a, \hat b] = \widehat{a \times b}$; that $\operatorname{Skew}(3,\mathbb{R})$ is a Lie algebra under the commutator; and the transfer of the Lie algebra axioms to $(\mathbb{R}^3, \times)$ along the hat map.
+> *(Lecture 16 mentioned only that the cross product satisfies the Jacobi identity. The proof via the hat map is filled in.)* There are three steps: the bracket identity $[\hat a, \hat b] = \widehat{a \times b}$; that $\operatorname{Skew}(3,\mathbb{R})$ is a Lie algebra under the commutator; and the transfer of the Lie algebra axioms to $(\mathbb{R}^3, \times)$ along the hat map.
 >
 > *The identity.* Two $3 \times 3$ matrices are equal if they agree on every $x \in \mathbb{R}^3$, so fix $x$. By Definition [[§25 The Geometric Tangent Space#^def-25-3|§25.3]], $\hat v\, y = v \times y$ for all $v, y$, so $\hat a \hat b\, x = a \times (b \times x)$ and $\hat b \hat a\, x = b \times (a \times x)$. The vector identity $u \times (v \times w) = v\,(u \cdot w) - w\,(u \cdot v)$, with $(u, v, w) = (a, b, x)$ and with $(u, v, w) = (b, a, x)$, gives
 >

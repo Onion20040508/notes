@@ -126,7 +126,7 @@ The zero section is the first of a family of submanifolds of $T^{\ast}M$, one fo
 > 1. $S = M$ (codimension $0$, Proposition [[§37 Regular Submanifolds#^prop-37-4|§37.4]]): $N_pM = 0$, since a covector vanishing on all of $T_pM$ is zero, and $N^{\ast}M = \mathcal{Z}$ is the zero section, cut out by $\xi_1 = \cdots = \xi_m = 0$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]](1));
 > 2. $S = \{p\}$ (codimension $m$): $T_p\{p\} = 0$, so $N_p\{p\} = T_p^{\ast}M$, and $N^{\ast}\{p\} = \pi^{-1}(p)$ is the fibre over $p$, cut out by $\bar x^1 = \cdots = \bar x^m = 0$ in a chart with $\varphi(p) = 0$.
 >
-> In the language of symplectic geometry, not developed in these notes, $N^{\ast}S$ is a Lagrangian submanifold of $T^{\ast}M$ — the cotangent side where, in Uribe's words in the remark *No Normal Vectors Without a Metric*, Hamiltonian mechanics takes place.
+> In the language of symplectic geometry, not developed in these notes, $N^{\ast}S$ is a Lagrangian submanifold of $T^{\ast}M$ — the cotangent side where, as the remark *No Normal Vectors Without a Metric* notes, Hamiltonian mechanics takes place.
 
 ^rem-55-1
 
@@ -423,9 +423,9 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 *Uses:* [[§54 Critical Points and the Hessian#^def-54-1|Def. §54.1]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§36 Submersions#^prop-36-2|§36.2]], [[§55 Morse Functions and the Zero Section#^thm-55-7|§55.7]], [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]]
 
 > [!remark] Remark: Review Session: Why the Hessian Needs a Critical Point
-> *Review session, Oct 16, in answer to “is there a careful definition of the Hessian?” — “That's a beautiful question.”* The fact: for $f : M \to \mathbb{R}$, $\operatorname{Hess}_p f$ is only *intrinsically* defined if $df_p = 0$. If $df_p = 0$ it is a well-defined quadratic form, a symmetric bilinear form on $T_pM$ (Proposition [[§54 Critical Points and the Hessian#^prop-54-3|§54.3]]); if $df_p \neq 0$ it is not: “of course you can write everything in coordinates and take the Hessian in coordinates. But … when you change coordinates, the new Hessian would involve first derivatives of $f$. So it doesn't transform as a quadratic form” (Proposition [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]], Example [[§54 Critical Points and the Hessian#^ex-54-1|§54.1]]).
+> *Review session, Oct 16, in answer to a question asking for a careful definition of the Hessian.* The fact: for $f : M \to \mathbb{R}$, $\operatorname{Hess}_p f$ is only *intrinsically* defined if $df_p = 0$. If $df_p = 0$ it is a well-defined quadratic form, a symmetric bilinear form on $T_pM$ (Proposition [[§54 Critical Points and the Hessian#^prop-54-3|§54.3]]); if $df_p \neq 0$ it is not: the Hessian matrix can always be written down in coordinates, but under a change of coordinates the new matrix involves first derivatives of $f$, so it does not transform as a quadratic form (Proposition [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]], Example [[§54 Critical Points and the Hessian#^ex-54-1|§54.1]]).
 >
-> “And there's a beautiful geometric reason,” in $T^{\ast}M$. At a critical point $p$ the section $S_f = s_f(M)$ meets the zero section $\mathcal{Z}$ at $(p, 0)$, and along $\mathcal{Z}$ the tangent space of $T^{\ast}M$ splits canonically into the part tangent to $\mathcal{Z}$ and the vertical part, the tangent space to the fibre, which is $T_p^{\ast}M$ itself (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]]): $T_{(p,0)}(T^{\ast}M) = \zeta_{\ast p}(T_pM) \oplus j_p(T_p^{\ast}M)$. “This is the crucial thing that allows you to identify the quadratic form”: push $v \in T_pM$ forward by $s_f$; the vertical component of $(s_f)_{\ast p}v$ is the covector $\operatorname{Hess}_p f(v, \cdot)$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]]). *(Filled in.)* Away from the zero section the vertical space is still canonical, but there is no canonical complement to project along, so “the vertical component of $(s_f)_{\ast p}v$” depends on the chart — the geometric counterpart of the first-derivative term in the transformation law. Uribe ran out of time here; the full argument is the one already in these notes.
+> There is also a geometric reason, in $T^{\ast}M$. At a critical point $p$ the section $S_f = s_f(M)$ meets the zero section $\mathcal{Z}$ at $(p, 0)$, and along $\mathcal{Z}$ the tangent space of $T^{\ast}M$ splits naturally into the part tangent to $\mathcal{Z}$ and the vertical part, the tangent space to the fibre, which is $T_p^{\ast}M$ itself (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]]): $T_{(p,0)}(T^{\ast}M) = \zeta_{\ast p}(T_pM) \oplus j_p(T_p^{\ast}M)$. This splitting is what identifies the quadratic form: push $v \in T_pM$ forward by $s_f$; the vertical component of $(s_f)_{\ast p}v$ is the covector $\operatorname{Hess}_p f(v, \cdot)$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]]). *(Filled in.)* Away from the zero section the vertical space is still canonical, but there is no canonical complement to project along, so the vertical component of $(s_f)_{\ast p}v$ depends on the chart — the geometric counterpart of the first-derivative term in the transformation law. The full argument is the one already in these notes.
 
 ^rem-55-3
 
@@ -433,7 +433,7 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 
 The picture from the review session. At $(p, 0)$ the tangent vector $(s_f)_{\ast p}v$ to $S_f$ splits into a part along the zero section, $\zeta_{\ast p}v$, and a vertical part in the fibre $T_p^{\ast}M$; the vertical part is $\operatorname{Hess}_p f(v, \cdot)$.
 
-**Transcription note (review session).** Page 52 of the handwritten notes writes the key identification as “$T_pZ \cong T_p^{\ast}M$”. The tangent space of the zero section is $T_p\mathcal{Z} \cong T_pM$; it is the *vertical* space at $(p,0)$, equivalently the quotient $T_{(p,0)}(T^{\ast}M)/T_p\mathcal{Z}$, that is canonically $T_p^{\ast}M$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]]).
+**Transcription note (review session).** Page 52 of the handwritten notes writes the key identification as “$T_pZ \cong T_p^{\ast}M$”. The tangent space of the zero section is $T_p\mathcal{Z} \cong T_pM$; it is the *vertical* space at $(p,0)$, equivalently the quotient $T_{(p,0)}(T^{\ast}M)/T_p\mathcal{Z}$, that is naturally $T_p^{\ast}M$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]]).
 
 ## Critical Points of Morse Functions
 
@@ -495,9 +495,9 @@ The converse fails: in Example [[§55 Morse Functions and the Zero Section#^ex-5
 
 ## The Hessian from the Zero Section
 
-*Lecture 20, the day of the midterm. “What I want to do today and Friday is go over certain topics that … don't fit in the narrative of vector fields. … Math doesn't exist as a narrative, right? It's all there at the same time, and we make stories about it, because that's what people do.” Vector fields resume, from the dynamical point of view, on Monday. First the Hessian: “I mentioned something last time, but I didn't write anything down … Let's take the time to do it.”*
+*Lecture 20, the day of the midterm: topics that do not fit in the narrative of vector fields. Vector fields resume, from the dynamical point of view, on Monday. First the Hessian, mentioned in the previous lecture without being written down.*
 
-*The claim* (Proposition [[§54 Critical Points and the Hessian#^prop-54-3|§54.3]] and Definition [[§54 Critical Points and the Hessian#^def-54-2|§54.2]]): if $f : M \to \mathbb{R}$ is smooth and $df_p = 0$, there is a well-defined quadratic form, a symmetric bilinear form $\operatorname{Hess}_p f : T_pM \times T_pM \to \mathbb{R}$, whose matrix in any coordinates is $\big(\partial^2 f/\partial x^i \partial x^j(p)\big)$. “You can always, in any coordinate system, at any point, write this matrix, but it doesn't define a coordinate-independent quadratic form unless you are at a critical point.” Lecture 20 explained why, coordinate-free.
+*The claim* (Proposition [[§54 Critical Points and the Hessian#^prop-54-3|§54.3]] and Definition [[§54 Critical Points and the Hessian#^def-54-2|§54.2]]): if $f : M \to \mathbb{R}$ is smooth and $df_p = 0$, there is a well-defined quadratic form, a symmetric bilinear form $\operatorname{Hess}_p f : T_pM \times T_pM \to \mathbb{R}$, whose matrix in any coordinates is $\big(\partial^2 f/\partial x^i \partial x^j(p)\big)$. This matrix can be written in any coordinate system at any point, but it defines a coordinate-independent quadratic form only at a critical point. Lecture 20 explained why, coordinate-free.
 
 *The observation that makes it go.* At a point $(p, 0)$ of the zero section $\mathcal{Z}$ of $T^{\ast}M$, the zero section and the fibre $\pi^{-1}(p) = T_p^{\ast}M$ are transverse and complementary, so (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]])
 
@@ -505,7 +505,7 @@ $$
 T_{(p,0)}(T^{\ast}M) = T_{(p,0)}\mathcal{Z} \oplus T_{(p,0)}\pi^{-1}(p) \cong T_pM \oplus T_p^{\ast}M ,
 $$
 
-“without choosing any coordinates”: the zero section is naturally $M$, and the tangent space to the fibre, a vector space, is the fibre itself. Now consider the section $s_f : M \to T^{\ast}M$, $q \mapsto (q, df_q)$, of the homework. If $df_p = 0$, then $s_f(p) = (p, 0)$, and $\operatorname{Im}(s_f)_{\ast p} \subseteq T_{(p,0)}(T^{\ast}M) = T_pM \oplus T_p^{\ast}M$.
+without choosing any coordinates: the zero section is naturally $M$, and the tangent space to the fibre, a vector space, is the fibre itself. Now consider the section $s_f : M \to T^{\ast}M$, $q \mapsto (q, df_q)$, of the homework. If $df_p = 0$, then $s_f(p) = (p, 0)$, and $\operatorname{Im}(s_f)_{\ast p} \subseteq T_{(p,0)}(T^{\ast}M) = T_pM \oplus T_p^{\ast}M$.
 
 > [!theorem] Proposition §55.10: The Hessian as the Graph of $(s_f)_{\ast p}$
 > Let $f : M \to \mathbb{R}$ be smooth and $p \in \operatorname{Crit}(f)$. In the splitting $T_{(p,0)}(T^{\ast}M) = T_pM \oplus T_p^{\ast}M$ above, $\operatorname{Im}(s_f)_{\ast p}$ is the graph of a unique linear map $h_p : T_pM \to T_p^{\ast}M$, and
@@ -519,9 +519,9 @@ $$
 ^prop-55-10
 
 > [!proof]+ Proof
-> *(Lecture 20, with the details Uribe skipped — “I will skip the details” — filled in from the propositions already in these notes.)* *A graph.* Since $s_f$ is a section, $\pi \circ s_f = \mathrm{id}_M$, so $\pi_{\ast(p,0)} \circ (s_f)_{\ast p} = \mathrm{id}$ by the chain rule. The projection onto the first summand of the splitting is $\pi_{\ast(p,0)}$ (it kills the vertical summand, Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]](1), and is the identity on $T_{(p,0)}\mathcal{Z} \cong T_pM$, as $\pi \circ \zeta = \mathrm{id}_M$). So $(s_f)_{\ast p}u = (u, h_p(u))$ for a unique $h_p(u) \in T_p^{\ast}M$, and $h_p$ is linear because $(s_f)_{\ast p}$ is: the image “passes the vertical line test”, an $m$-dimensional subspace that is the graph of $h_p$. “For example, if $f$ is constant, then this is zero, and you get just the horizontal.”
+> *(Lecture 20, with the details skipped in lecture filled in from the propositions already in these notes.)* *A graph.* Since $s_f$ is a section, $\pi \circ s_f = \mathrm{id}_M$, so $\pi_{\ast(p,0)} \circ (s_f)_{\ast p} = \mathrm{id}$ by the chain rule. The projection onto the first summand of the splitting is $\pi_{\ast(p,0)}$ (it kills the vertical summand, Proposition [[§55 Morse Functions and the Zero Section#^prop-55-5|§55.5]](1), and is the identity on $T_{(p,0)}\mathcal{Z} \cong T_pM$, as $\pi \circ \zeta = \mathrm{id}_M$). So $(s_f)_{\ast p}u = (u, h_p(u))$ for a unique $h_p(u) \in T_p^{\ast}M$, and $h_p$ is linear because $(s_f)_{\ast p}$ is: the image “passes the vertical line test”, an $m$-dimensional subspace that is the graph of $h_p$. For example, if $f$ is constant, then $h_p = 0$ and the image is just the horizontal summand.
 >
-> *The Hessian.* “A map from a vector space to its dual … is the same as a bilinear map”: $(u, v) \mapsto h_p(u)(v)$. By Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]](3), the vertical component of $(s_f)_{\ast p}u$ is $\operatorname{Hess}_p f(u, \cdot\,)$, so $h_p(u) = \operatorname{Hess}_p f(u, \cdot\,)$. In coordinates, the matrix of $(s_f)_{\ast p}$ is $\binom{I}{H_p}$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]](2), the homework computation), and “once you unravel everything … the matrix of $h_p$ in the induced coordinates is just this bottom” block.
+> *The Hessian.* A linear map from a vector space to its dual is the same as a bilinear map on it, here $(u, v) \mapsto h_p(u)(v)$. By Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]](3), the vertical component of $(s_f)_{\ast p}u$ is $\operatorname{Hess}_p f(u, \cdot\,)$, so $h_p(u) = \operatorname{Hess}_p f(u, \cdot\,)$. In coordinates, the matrix of $(s_f)_{\ast p}$ is $\binom{I}{H_p}$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]](2), the homework computation), so the matrix of $h_p$ in the induced coordinates is the bottom block $H_p$.
 
 ^pf-55-10
 
@@ -531,20 +531,20 @@ $$
 
 The splitting at a point of the zero section, and the image of $(s_f)_{\ast p}$ in it: a line through the origin that “passes the vertical line test”, the graph of $h_p$. Its slope is the Hessian: $h_p(u) = \operatorname{Hess}_p f(u, \cdot\,)$. A line through the origin is such a graph exactly when it meets the vertical axis (the fibre direction) only in $0$.
 
-*Away from a critical point.* The horizontal summand “has nothing to do with $f$. It's just because … we have the zero section, and then we have the fibre, and they're just sitting there”; at $(p, df_p)$ with $df_p \neq 0$ the fibre is still there, but there is no zero section through the point. A student asked why one cannot use some other section through $(p, df_p)$: “Yeah, you can put a section, but you have to make a choice … because you make a choice, you don't have a well-defined” Hessian. In coordinates (“which we haven't done much of”), with two charts $(x^i)$ and $(y^j)$, $\partial f/\partial x^i = \sum_j (\partial y^j/\partial x^i)\, \partial f/\partial y^j$, and differentiating again,
+*Away from a critical point.* The horizontal summand has nothing to do with $f$: it is there because the zero section and the fibre are there; at $(p, df_p)$ with $df_p \neq 0$ the fibre is still there, but there is no zero section through the point. Some other section through $(p, df_p)$ could play the role of the zero section, but it has to be chosen, and because of that choice the resulting Hessian is not well defined. In coordinates, with two charts $(x^i)$ and $(y^j)$, $\partial f/\partial x^i = \sum_j (\partial y^j/\partial x^i)\, \partial f/\partial y^j$, and differentiating again,
 
 $$
 \frac{\partial^2 f}{\partial x^k \partial x^i} = \sum_j \frac{\partial^2 y^j}{\partial x^k \partial x^i}\, \frac{\partial f}{\partial y^j} + \sum_{j,l} \frac{\partial y^j}{\partial x^i}\, \frac{\partial y^l}{\partial x^k}\, \frac{\partial^2 f}{\partial y^l \partial y^j} :
 $$
 
-the first sum “will not go away in general”, so the matrix “doesn't transform like a quadratic form unless these guys are zero” (Proposition [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]]).
+the first sum does not vanish in general, so the matrix does not transform like a quadratic form unless the first partials $\partial f/\partial y^j$ are zero (Proposition [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]]).
 
 > [!remark] Remark: Natural Is Not Canonical
-> “Natural is not the same thing as canonical. This was [drilled] into me when I was your age. *Canonical* means that this is how we do it: we follow the canon, an established set of traditions. *Natural* means that this is how nature does it. It's not a convention. It's just sitting there, in the mathematical world.” The splitting $T_{(p,0)}(T^{\ast}M) = T_pM \oplus T_p^{\ast}M$ “is natural. It's not canonical.”
+> Natural is not the same thing as canonical. *Canonical* means that this is how it is done by convention: one follows the canon, an established set of traditions. *Natural* means that it is not a convention: the object is simply there in the mathematical world. The splitting $T_{(p,0)}(T^{\ast}M) = T_pM \oplus T_p^{\ast}M$ is natural, not canonical.
 
 ^rem-55-4
 
-*Jets.* “In the same sort of direction”: for every $k$ the quotient of germs by a power of $I_p$ makes sense, generalizing $T_p^{\ast}M \cong I_p/I_p^2$ (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]).
+*Jets.* In the same direction: for every $k$ the quotient of germs by a power of $I_p$ makes sense, generalizing $T_p^{\ast}M \cong I_p/I_p^2$ (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]).
 
 > [!definition] Definition §55.2: Jets
 > Let $p \in M$ and $k \ge 0$. The space of **$k$-jets** at $p$ is
@@ -598,7 +598,7 @@ the first sum “will not go away in general”, so the matrix “doesn't transf
 ^prop-55-12
 
 > [!proof]+ Proof
-> *(Lecture 20: “this just isolates … the partial sum of the Taylor series. You kill derivatives of order $k+1$ and higher.” Filled in.)* It suffices to show that $[g] \in I_p^{k+1}$ if and only if all partials of $g$ of orders $0, \ldots, k$ vanish at $p$. *Only if.* A product $g_1 \cdots g_{k+1}$ of germs vanishing at $p$: by the Leibniz rule, a partial derivative of order $\le k$ of the product is a sum of products in each of which some factor $g_i$ is not differentiated, and so vanishes at $p$; sums of such products behave the same. *If.* Applying Hadamard's lemma (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]]) repeatedly to the coefficient functions, as in the proof of Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]], gives, on a ball about $p$,
+> *(Lecture 20: the quotient isolates the partial sum of the Taylor series, killing derivatives of order $k+1$ and higher. Filled in.)* It suffices to show that $[g] \in I_p^{k+1}$ if and only if all partials of $g$ of orders $0, \ldots, k$ vanish at $p$. *Only if.* A product $g_1 \cdots g_{k+1}$ of germs vanishing at $p$: by the Leibniz rule, a partial derivative of order $\le k$ of the product is a sum of products in each of which some factor $g_i$ is not differentiated, and so vanishes at $p$; sums of such products behave the same. *If.* Applying Hadamard's lemma (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]]) repeatedly to the coefficient functions, as in the proof of Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]], gives, on a ball about $p$,
 >
 > $$
 > g = \sum_{|\alpha| \le k} \frac{\partial^\alpha g(p)}{\alpha!}\, x^\alpha + \sum_{|\beta| = k+1} x^\beta\, g_\beta
@@ -614,6 +614,9 @@ the first sum “will not go away in general”, so the matrix “doesn't transf
 
 *(Not from lecture; figure added.)* The jets of a function $f$ of one variable at $p$, drawn as its Taylor polynomials (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-12|§55.12]]): the $0$-jet $T_0$ is the value $f(p)$, the $1$-jet $T_1$ the tangent line, the $2$-jet $T_2$ the osculating parabola. Two germs have the same $k$-jet when their difference lies in $I_p^{k+1}$, that is, vanishes to order $k + 1$ at $p$. For $k = 1$, removing the value leaves $I_p/I_p^2 \cong T_p^{\ast}M$ (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]): the $1$-jet of a germ vanishing at $p$ is its differential.
 
-“This is called a space of jets … they are useful in some circles. If you take $k = 2$, you can package the information contained in the function — the value, the first derivative, the second derivative — in some abstract object.” But “within them you cannot separate naturally the first and the second partials, unless you have a special situation” — a critical point being the special situation that gives the Hessian.
+> [!remark] Remark: Jets and the Hessian
+> Jets are useful in some areas. For $k = 2$, the jet packages the information contained in the function at $p$ — the value, the first derivatives, the second derivatives — in one abstract object. Within $J^2_p$, however, the first and the second partials cannot be separated naturally, except in a special situation; a critical point is the special situation, and it gives the Hessian.
 
-**Transcription note (Lecture 20).** Page 53 of the handwritten notes writes the jet space as $C^\infty_p(M)/I_p^k$, which keeps derivatives through order $k - 1$; Uribe corrected it in lecture (“maybe I should put $k + 1$ here”), and the $k$-jet is $C^\infty_p(M)/I_p^{k+1}$. The splitting there is written at “$(0, p)$”; in these notes the point of the zero section over $p$ is $(p, 0)$.
+^rem-55-5
+
+**Transcription note (Lecture 20).** Page 53 of the handwritten notes writes the jet space as $C^\infty_p(M)/I_p^k$, which keeps derivatives through order $k - 1$; it was corrected to $k + 1$ in lecture, and the $k$-jet is $C^\infty_p(M)/I_p^{k+1}$. The splitting there is written at “$(0, p)$”; in these notes the point of the zero section over $p$ is $(p, 0)$.

@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: fields — Smooth sections of $T^{\ast}M$, a covector at every point; functions give one-forms through $d$, but not every one-form is a $df$; one-forms pull back along smooth maps, and $d$ commutes with pulling back.*
 
-*Lecture 15. The sections of the cotangent bundle, and the operator $d$ that produces them from functions — “which will be the beginning of a chain of operators when we discuss the de Rham cohomology.”*
+*Lecture 15. The sections of the cotangent bundle, and the operator $d$ that produces them from functions — the first of a chain of operators that will appear with de Rham cohomology.*
 
 A one-form is a section of the cotangent bundle ([[§40 Fibrations#^def-40-3|Definition §40.3]]): it picks a covector in every fibre $T_p^{\ast}M$. Every vector bundle has sections, the zero section at least — unlike a general fibration: the Hopf fibration has none ([[§46 Projective Spaces and the Hopf Fibration#^rem-46-1|Remark: Sections Need Not Exist]]).
 
@@ -40,10 +40,10 @@ In words: a one-form chooses one covector at every point of $M$, and the choice 
 > - On open subsets of $\mathbb{R}^n$: [[§36 Introduction to Differential Forms#^def-36-2|452 Def. §36.2]] (differential forms, here in degree 1).
 > - The value at one point is a covector, an element of a dual space: [[§32 The Cotangent Space#^def-32-4|Def. §32.4]], [[§12 Duality#^ladr-3-110|LADR 3.110]].
 
-Uribe on the notation: “$\theta$ is really a function of two variables, a point and a vector, and you want to make room for the vector variable” — so the point goes into the subscript and the vector into the parentheses. A student asked where a $\theta_p$ comes from; the answer is that the definition describes *every* one-form, and the examples come next.
+The notation reflects that $\theta$ is really a function of two variables, a point and a vector: the point goes into the subscript, to make room for the vector variable in the parentheses. The definition describes *every* one-form; examples come next.
 
 > [!definition] Definition §53.2: The Space of One-Forms
-> The set of all one-forms on $M$ is written $C^\infty(M, T^{\ast}M)$ (Uribe's notation; also $\Omega^1(M)$).
+> The set of all one-forms on $M$ is written $C^\infty(M, T^{\ast}M)$ (the lecture's notation; also $\Omega^1(M)$).
 >
 > *Lee: Ch. 11, Covector Fields*
 
@@ -71,7 +71,7 @@ Uribe on the notation: “$\theta$ is really a function of two variables, a poin
 ^prop-53-1
 
 > [!proof]+ Proof
-> *(Lecture 15 stated it — “smoothness of the form will translate into these functions being smooth”; the proof is filled in.)* Three things are claimed: the expansion of $\theta$ on $U$ with the stated coefficients, (1); the coordinate representation, (2); and the smoothness criterion, (3). Since $\theta$ is a section, $\pi \circ \theta = \mathrm{id}_M$, so $\theta(p) = (p, \theta_p)$ with $\theta_p \in T_p^{\ast}M$ for every $p$.
+> *(Stated in Lecture 15; the proof is filled in.)* Three things are claimed: the expansion of $\theta$ on $U$ with the stated coefficients, (1); the coordinate representation, (2); and the smoothness criterion, (3). Since $\theta$ is a section, $\pi \circ \theta = \mathrm{id}_M$, so $\theta(p) = (p, \theta_p)$ with $\theta_p \in T_p^{\ast}M$ for every $p$.
 >
 > *(1) The expansion.* The equation $\theta = \sum_j \theta_j\, dx^j$ on $U$ means $\theta_p = \sum_j \theta_j(p)\, dx^j|_p$ for every $p \in U$. At each $p \in U$ the $dx^j|_p$ form a basis of $T_p^{\ast}M$ dual to the $\partial/\partial x^j|_p$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]), and Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]] with $\alpha = \theta_p$ gives
 >
@@ -142,7 +142,7 @@ Uribe on the notation: “$\theta$ is really a function of two variables, a poin
 > - On $\mathbb{R}^3$, $d$ on functions is the gradient: [[§38 The Exterior Derivative#^prop-38-1|452 §38.1]], [[§39 Closed and Exact Forms#^prop-39-1|452 §39.1]].
 
 > [!example] Example §53.1: Two One-Forms on the Plane
-> On $\mathbb{R}^2$ with coordinates $x, y$, any expression $a(x,y)\, dx + b(x,y)\, dy$ with smooth $a, b$ is a one-form. Uribe's two examples:
+> On $\mathbb{R}^2$ with coordinates $x, y$, any expression $a(x,y)\, dx + b(x,y)\, dy$ with smooth $a, b$ is a one-form. The lecture's two examples:
 >
 > $$
 > \theta = \tfrac12\,(x\, dy - y\, dx), \qquad \sigma = \tfrac12\,(x\, dx + y\, dy) .
@@ -189,13 +189,13 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 > [!remark]- Connections
 > - In 452: exact forms are closed, [[§39 Closed and Exact Forms#^prop-39-5|452 §39.5]] (closed and exact: [[§39 Closed and Exact Forms#^def-39-2|452 Def. §39.2]]); in vector-field language, a gradient field is irrotational, [[§13 The Three Differential Operators꞉ Gradient, Curl, Divergence#^def-13-2|452 Def. §13.2]].
 
-“You know this from multivariable calculus in various different forms. Not every vector field is a gradient field”: the condition is the vanishing of the curl, “a curl condition.”
+This is familiar from multivariable calculus: not every vector field is a gradient field, and the condition is the vanishing of the curl.
 
 ![[m591-44-1.svg]]
 *The two forms of [[§53 One-Forms#^ex-53-1|Example §53.1]], drawn as arrows. A one-form is not an arrow — it eats arrows — so the picture uses the Euclidean dot product to turn $a\,dx + b\,dy$ into the vector $(a, b)$; this identification is available in $\mathbb{R}^2$, not on a general manifold, and it is how “$df$” becomes the “gradient” of calculus. Right: $\sigma = df$ for $f = \tfrac14(x^2+y^2)$, and its arrows cross the level circles of $f$ at right angles, as a gradient's must. Left: $\theta$'s arrows run along the circles. If $\theta$ were $df$, then $f$ would increase steadily all the way around a circle and return to its starting value — impossible.*
 
 > [!remark] Remark: The Condition Is Not Sufficient
-> The mixed-partials condition is necessary but not sufficient, and Uribe flagged this as “the beginning of de Rham theory”: whether it suffices “has to do with the topology of the domain.” The standard example (Lee, Example 11.36; not from lecture) is
+> The mixed-partials condition is necessary but not sufficient, and this is the beginning of de Rham theory: whether it suffices depends on the topology of the domain. The standard example (Lee, Example 11.36; not from lecture) is
 >
 > $$
 > \omega = \frac{x\, dy - y\, dx}{x^2 + y^2} \quad \text{on } \mathbb{R}^2 \setminus \{0\} .
@@ -301,7 +301,7 @@ $\theta$ is not the differential of any function, as the next proposition shows.
 ^cor-53-4
 
 > [!proof]+ Proof
-> *(Lecture 15 stated it in this form, “one says that the pullback map commutes with $d$”.)* Both sides are sections of $T^{\ast}M$, and two sections are equal when their values agree at every point; so fix $p \in M$ and compute the two values.
+> *(Lecture 15 stated it in this form: the pullback map commutes with $d$.)* Both sides are sections of $T^{\ast}M$, and two sections are equal when their values agree at every point; so fix $p \in M$ and compute the two values.
 >
 > *Left side.* By Proposition [[§53 One-Forms#^prop-53-2|§53.2]], $df$ is a one-form on $N$ whose value at $F(p)$ is $df_{F(p)}$. By Definition [[§53 One-Forms#^def-53-4|§53.4]] with $\theta = df$,
 >

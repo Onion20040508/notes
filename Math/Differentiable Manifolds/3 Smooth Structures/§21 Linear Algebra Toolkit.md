@@ -419,6 +419,6 @@ The universal property as a triangle: a linear map that kills $W$ descends to $V
 > - Used for the tangent space of a product: [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]].
 
 > [!remark] Remark: Direct Sum and Product
-> For two summands, or finitely many, the direct sum *is* the Cartesian product with componentwise operations — the point Uribe said in Lecture 11 he had forgotten the reason for. The two notions differ only for infinitely many summands: the product $\prod_\alpha V_\alpha$ contains all families $(v_\alpha)$, while the direct sum $\bigoplus_\alpha V_\alpha$ contains only those with finitely many nonzero entries.
+> For two summands, or finitely many, the direct sum *is* the Cartesian product with componentwise operations. The two notions differ only for infinitely many summands: the product $\prod_\alpha V_\alpha$ contains all families $(v_\alpha)$, while the direct sum $\bigoplus_\alpha V_\alpha$ contains only those with finitely many nonzero entries.
 
 ^rem-21-3

@@ -12,11 +12,11 @@ tags: [differentiable-manifolds, math591]
 ## Two Descriptions of a Manifold in Euclidean Space
 
 > [!remark] Remark: The Closing Remark
-> The lecture ended before the “main theorem,” which the lecturer named as the [[§7 The Regular Value Theorem#^thm-7-1|implicit function theorem]], and summarized its message instead:
+> The lecture ended before the main theorem, the [[§7 The Regular Value Theorem#^thm-7-1|implicit function theorem]], and summarized its message instead:
 >
 > > There are two ways to look at a manifold sitting in a big ambient space. Either it is defined by the simultaneous zeros of some functions, or it is parametrized. The implicit function theorem says it does not matter — they are the same thing.
 >
-> So one may think of a manifold *internally*, through parametrizations, or *externally*, through the equations that cut it out of the ambient space. “We started with the circle, sum of squares equals one, and we have parametrizations like $\theta$.” The rest of this subsection makes the slogan precise; none of it was proved in lecture, and the two halves are in quite different states in these notes.
+> So one may think of a manifold *internally*, through parametrizations, or *externally*, through the equations that cut it out of the ambient space. The circle shows both: it is cut out by the equation $x^2 + y^2 = 1$, and it is parametrized by the angle $\theta$. The rest of this subsection makes the slogan precise; none of it was proved in lecture, and the two halves are in quite different states in these notes.
 
 ^rem-20-1
 
@@ -89,13 +89,13 @@ tags: [differentiable-manifolds, math591]
 The circle in its three descriptions is collected in [[§24 The Circle|§24]].
 
 > [!remark] Remark: A Parametrization Is an Inverse Chart
-> “A parametrization is just another name for my inverse” — if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[· 1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§12 The Classical Groups Are Topological Manifolds|§12, The Classical Groups Are Topological Manifolds]]. Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]] says the two carry the same information locally, which is why one may pass freely between “solve the equations” and “draw the parametrization” — “the same thing.”
+> A parametrization is just another name for the inverse of a chart: if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[· 1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§12 The Classical Groups Are Topological Manifolds|§12, The Classical Groups Are Topological Manifolds]]. Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]] says the two carry the same information locally, which is why one may pass freely between solving the equations and drawing the parametrization.
 
 ^rem-20-2
 
 ## Smooth Structures on Regular Level Sets
 
-*Lecture 6. Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] produced a* topological *manifold from a regular level set. The charts it produced were not arbitrary, and the point of this subsection is that they are automatically smoothly compatible — so the regular value theorem is in fact a machine for manufacturing smooth manifolds. “This is a powerful way of constructing examples.”*
+*Lecture 6. Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] produced a* topological *manifold from a regular level set. The charts it produced were not arbitrary, and the point of this subsection is that they are automatically smoothly compatible — so the regular value theorem is in fact a machine for manufacturing smooth manifolds.*
 
 Recall the construction in the proof of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]]. Index the coordinates of $\mathbb{R}^{n+k}$ by $\{1, \ldots, n+k\}$. For $p \in M = F^{-1}(c)$, the hypothesis $\operatorname{rank} F'(p) = k$ says that some $k$ of the $n+k$ columns of $F'(p)$ are linearly independent. Choose such a set of indices $J$, $|J| = k$, and let $I = \{1,\ldots,n+k\} \setminus J$ be the complementary $n$ indices. Write $x_J \in \mathbb{R}^J$ and $x_I \in \mathbb{R}^I$ for the corresponding groups of coordinates. The [[§7 The Regular Value Theorem#^thm-7-1|implicit function theorem]] then solves for $x_J$ in terms of $x_I$: there are an open box $U_J \times V_J' \ni p$ and a smooth $h_J : V_J \to \mathbb{R}^J$ with
 
@@ -134,7 +134,7 @@ The inverse $\varphi_J^{-1}$ is a parametrization of that piece of $M$, in the f
 The proof in one picture. The transition function between two graph charts factors through the ambient space: a parametrization up, followed by a linear projection down. Both legs are smooth in the Euclidean sense, so the composite is.
 
 > [!proof]+ Proof
-> *(Lecture 6 worked the surface of Example [[§20 Manifolds in Euclidean Space#^ex-20-1|§20.1]] first, then gave this general argument: “the general thing is just harder to write.”)* What has to be shown: the charts $(U_J, \varphi_J)$ cover $M$ and are pairwise $C^\infty$-compatible, so that they form an atlas (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]) on the topological manifold $M$; the smooth structure is then the maximal atlas containing them.
+> *(Lecture 6 worked the surface of Example [[§20 Manifolds in Euclidean Space#^ex-20-1|§20.1]] first, then gave this general argument, which differs from it only in notation.)* What has to be shown: the charts $(U_J, \varphi_J)$ cover $M$ and are pairwise $C^\infty$-compatible, so that they form an atlas (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]) on the topological manifold $M$; the smooth structure is then the maximal atlas containing them.
 >
 > *$M$ is a topological $n$-manifold, and the $(U_J, \varphi_J)$ are charts.* By Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], in the form of Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]] for the open domain $W$ and the value $c$, $M = F^{-1}(c)$ with the subspace topology is a topological manifold of dimension $n$, and Step 3 of that proof shows that each $\varphi_J = \pi_I|_{U_J}$ is a homeomorphism of the open set $U_J \subseteq M$ onto the open set $V_J \subseteq \mathbb{R}^I \cong \mathbb{R}^n$ (with $|I| = n$), i.e. a chart (Definition [[§2 Topological Manifolds#^def-2-3|§2.3]]).
 >
@@ -202,7 +202,7 @@ The proof in one picture. The transition function between two graph charts facto
 The same level sets are submanifolds in the sense of Lecture 12, and their graph-chart structure is the induced one (Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]]).
 
 > [!remark] Remark
-> The only thing that varies between charts is *which* $k$ coordinates are solved for, and the whole proof is the observation that a projection composed with a parametrization is smooth no matter which choice is made. Uribe made the same point while declining to write the general indices out: “the notation becomes a mess, but it's the same thing.” Note also that the charts are graphs of smooth maps, which is what makes the parametrization smooth — the topological argument of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] only needed $h_J$ continuous.
+> The only thing that varies between charts is *which* $k$ coordinates are solved for, and the whole proof is the observation that a projection composed with a parametrization is smooth no matter which choice is made. Note also that the charts are graphs of smooth maps, which is what makes the parametrization smooth — the topological argument of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]] only needed $h_J$ continuous.
 
 ^rem-20-3
 

@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: bundles — The cotangent spaces assembled into $T^{\ast}M$, with charts from the dual bases; covector components transform by the inverse transpose.*
 
-*Lecture 13 defined the cotangent bundle — “completely analogous” to the tangent bundle, with the dual bases in place of the coordinate bases; Lecture 15 returned to it for the homework.*
+*Lecture 13 defined the cotangent bundle — completely analogous to the tangent bundle, with the dual bases in place of the coordinate bases; Lecture 15 returned to it for the homework.*
 
 > [!definition] Definition §52.1: The Cotangent Bundle as a Set
 > Let $M$ be a smooth manifold of dimension $m$. Its **cotangent bundle** is the set
@@ -133,7 +133,7 @@ The definitions and results of this section run parallel to those for the tangen
 ^prop-52-1
 
 > [!proof]+ Proof
-> *(Lecture 13: “completely analogous”, with the change “we use the dual basis”, and the formula for $dx^i$ given; the rest is filled in.)* Fix $p \in U \cap V$. Four things are to be shown, in order: the formula for $dx^i|_p$; the formula for $\eta_j$; that $\big[\partial x^i/\partial y^j(p)\big]$ is the inverse of $\big[\partial y^i/\partial x^j(p)\big]$, which gives the transition map; and that the transition maps are diffeomorphisms.
+> *(Lecture 13: completely analogous to the tangent bundle, using the dual basis, with the formula for $dx^i$ given; the rest is filled in.)* Fix $p \in U \cap V$. Four things are to be shown, in order: the formula for $dx^i|_p$; the formula for $\eta_j$; that $\big[\partial x^i/\partial y^j(p)\big]$ is the inverse of $\big[\partial y^i/\partial x^j(p)\big]$, which gives the transition map; and that the transition maps are diffeomorphisms.
 >
 > *The formula for $dx^i|_p$.* It is Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] applied to the function $f = x^i$, smooth near $p$, in the chart $\psi = (y^1, \ldots, y^m)$ at $p$: the lemma gives $d(x^i)_p = \sum_j \partial x^i/\partial y^j(p)\, dy^j|_p$.
 >
@@ -183,7 +183,7 @@ The definitions and results of this section run parallel to those for the tangen
 ^prop-52-2
 
 > [!proof]+ Proof
-> *(Not from lecture — “completely analogous”; filled in.)* Apply Lemma [[§51 The Tangent Bundle#^lem-51-1|§51.1]] with $X = T^{\ast}M$, $n = 2m$, and the sets $T^{\ast}U$ with the maps $\hat\varphi$, indexed by the smooth charts $(U, \varphi)$ of $M$. Each $\hat\varphi$ is injective, being a bijection of $T^{\ast}U$ onto $\varphi(U) \times \mathbb{R}^m$ (Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]). The five conditions:
+> *(Not from lecture, which called it completely analogous to the tangent case; filled in.)* Apply Lemma [[§51 The Tangent Bundle#^lem-51-1|§51.1]] with $X = T^{\ast}M$, $n = 2m$, and the sets $T^{\ast}U$ with the maps $\hat\varphi$, indexed by the smooth charts $(U, \varphi)$ of $M$. Each $\hat\varphi$ is injective, being a bijection of $T^{\ast}U$ onto $\varphi(U) \times \mathbb{R}^m$ (Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]). The five conditions:
 >
 > *(1) and (2).* By Proposition [[§52 The Cotangent Bundle#^prop-52-1|§52.1]], $\hat\varphi(T^{\ast}U \cap T^{\ast}V) = \varphi(U \cap V) \times \mathbb{R}^m$ is open in $\mathbb{R}^{2m}$; with $V = U$ this is $\hat\varphi(T^{\ast}U) = \varphi(U) \times \mathbb{R}^m$.
 >
@@ -245,14 +245,14 @@ The definitions and results of this section run parallel to those for the tangen
 
 ## Lecture 15 and the Standard Coordinates
 
-*Lecture 15 returned to the cotangent bundle — “we did define it, but it was all very quick” — because the homework uses it: “the standard coordinates on $T^{\ast}M$, which are also trivializations”, with the components found by evaluating on the dual basis, as in [[§52 The Cotangent Bundle#^def-52-4|Definitions §52.4]] and [[§52 The Cotangent Bundle#^def-52-5|§52.5]]. He also recalled that the cotangent space has a description from germs, $T_p^{\ast}M \cong I_p/I_p^2$ ([[§34 The Cotangent Space from Germs#^thm-34-4|Theorem §34.4]]): “the cotangent space is, in a way, very extremely natural from the point of view of functions.”*
+*Lecture 15 returned to the cotangent bundle, defined only briefly before, because the homework uses it: the standard coordinates on $T^{\ast}M$, which are also trivializations, with the components found by evaluating on the dual basis, as in [[§52 The Cotangent Bundle#^def-52-4|Definitions §52.4]] and [[§52 The Cotangent Bundle#^def-52-5|§52.5]]. It also recalled that the cotangent space has a description from germs, $T_p^{\ast}M \cong I_p/I_p^2$ ([[§34 The Cotangent Space from Germs#^thm-34-4|Theorem §34.4]]), which makes it very natural from the point of view of functions.*
 
 **Transcription note.** Page 40 of the handwritten notes writes the standard coordinates as a map on $T^{\ast}M$; they are defined on $T^{\ast}U$, the part of the bundle over the chart domain, as Uribe corrected in lecture.
 
-“We'll see that the cotangent bundle has a natural structure that the tangent bundle doesn't have.” $TM$ and $T^*M$ are isomorphic as vector bundles, “but not naturally isomorphic — we have to make choices to construct an isomorphism” (a metric, for instance, as in the [[§37 Regular Submanifolds#^rem-37-1|remark on conormal spaces]]). This is stated, not proved, here.
+The cotangent bundle has a natural structure that the tangent bundle does not have. $TM$ and $T^*M$ are isomorphic as vector bundles, but not naturally isomorphic: constructing an isomorphism requires choices (a metric, for instance, as in the [[§37 Regular Submanifolds#^rem-37-1|remark on conormal spaces]]). This is stated, not proved, here.
 
 > [!remark] Remark: Review Session: The Standard Atlases
-> *Review session, Friday Oct 16, in answer to “can you go over the construction of the atlas for the tangent bundle and cotangent bundle?”* Any manifold has “some sort of large infinity of coordinate charts”; the *standard* ones are the most useful. Start with any chart $(U, \varphi = (x^1, \ldots, x^m))$. Then
+> *Review session, Friday Oct 16, on the construction of the atlases of the tangent and cotangent bundles.* Any manifold has an enormous number of coordinate charts; the *standard* ones are the most useful. Start with any chart $(U, \varphi = (x^1, \ldots, x^m))$. Then
 >
 > $$
 > \begin{aligned}
@@ -261,8 +261,8 @@ The definitions and results of this section run parallel to those for the tangen
 > \end{aligned}
 > $$
 >
-> where the first arrow is “in the language of bundles, a trivialization” (Definitions [[§51 The Tangent Bundle#^def-51-4|§51.4]] and [[§51 The Tangent Bundle#^def-51-5|§51.5]]). “What makes this thing hard is that I don't have an explicit formula for the $v^i$” — they are defined as the coefficients of $v = \sum_i v^i\, \partial/\partial x^i|_p$ — to which a student answered that there is one, $v^i = v[x^i]$: “That's true. Thank you. That's very good” (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). For $T^{\ast}M$ the same, with covectors: $\alpha = \sum_i \alpha_i\, dx^i|_p$, and again “a dual way of writing what the $\alpha_i$ are”: $\alpha_i = \alpha(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). There is a unique topology on $TM$ making these charts homeomorphisms (“we didn't prove this; we just accepted it” in lecture; Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]] for $T^{\ast}M$), and the transition functions are smooth (Proposition [[§52 The Cotangent Bundle#^prop-52-1|§52.1]]).
+> where the first arrow is, in the language of bundles, a trivialization (Definitions [[§51 The Tangent Bundle#^def-51-4|§51.4]] and [[§51 The Tangent Bundle#^def-51-5|§51.5]]). The $v^i$ are defined as the coefficients of $v = \sum_i v^i\, \partial/\partial x^i|_p$, and they have an explicit formula, $v^i = v[x^i]$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]). For $T^{\ast}M$ the same, with covectors: $\alpha = \sum_i \alpha_i\, dx^i|_p$, and dually $\alpha_i = \alpha(\partial/\partial x^i|_p)$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). There is a unique topology on $TM$ making these charts homeomorphisms (accepted without proof in lecture; Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]] for $T^{\ast}M$), and the transition functions are smooth (Proposition [[§52 The Cotangent Bundle#^prop-52-1|§52.1]]).
 >
-> *Coordinates on $T^{\ast}M$.* By a “slight abuse of notation” the first $m$ components of the chart of $T^{\ast}U$ are written $x^1, \ldots, x^m$ again, and the last $m$ are “traditionally called $p_1, \ldots, p_m$”, $p_i(\alpha) = \alpha_i$ — the $\xi_i$ of these notes. A student asked about tangent vectors to $T^{\ast}M$ and germs on it: “at this point you have to say, okay, I just have a manifold that has dimension $2m$ … and now I apply the general theory”: $\sum_i a^i\, \partial/\partial x^i + \sum_j \beta_j\, \partial/\partial p_j$. “You can keep taking tangent bundles forever.” In November, with differential forms, the cotangent bundle will turn out to carry an intrinsically defined two-form, the *symplectic form* — “and you who are interested in physics will see how this comes up in Hamiltonian mechanics.”
+> *Coordinates on $T^{\ast}M$.* By a slight abuse of notation the first $m$ components of the chart of $T^{\ast}U$ are written $x^1, \ldots, x^m$ again, and the last $m$ are traditionally called $p_1, \ldots, p_m$, $p_i(\alpha) = \alpha_i$ — the $\xi_i$ of these notes. Tangent vectors to $T^{\ast}M$ and germs on it come from the general theory, applied to $T^{\ast}M$ as a manifold of dimension $2m$: $\sum_i a^i\, \partial/\partial x^i + \sum_j \beta_j\, \partial/\partial p_j$. One can keep taking tangent bundles forever. In November, with differential forms, the cotangent bundle will turn out to carry an intrinsically defined two-form, the *symplectic form*, which is how it enters Hamiltonian mechanics.
 
 ^rem-52-1

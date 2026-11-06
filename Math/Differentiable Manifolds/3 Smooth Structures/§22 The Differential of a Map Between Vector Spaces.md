@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: linear — The derivative of a map between finite-dimensional vector spaces, without coordinates — the model for the differential of a smooth map.*
 
-*Lecture 7. “A careful analysis of what we did last time — last time I was rushing.” The $\mathrm{O}(n)$ argument computed a derivative by differentiating along straight lines and read off surjectivity from the result, without ever writing a Jacobian matrix. This section says exactly what that computes and why it is legitimate. “For now it's all linear algebra,” but it is also the template for the differential of a map between manifolds, to come.*
+*Lecture 7. The $\mathrm{O}(n)$ argument computed a derivative by differentiating along straight lines and read off surjectivity from the result, without ever writing a Jacobian matrix. This section says exactly what that computes and why it is legitimate. For now it is all linear algebra, but it is also the template for the differential of a map between manifolds, to come.*
 
 Throughout, $X$ and $Y$ are finite-dimensional real vector spaces, of dimensions $m$ and $n$, and $F : X \to Y$ is a map of sets.
 
@@ -46,7 +46,7 @@ $$
 \widetilde F = K \circ F \circ L^{-1}.
 $$
 
-Commutativity means: apply $F$ and then take coordinates, or take coordinates and then apply $\widetilde F$; the result is the same. “$\widetilde F$ is just $F$ expressed in coordinates.”
+Commutativity means: apply $F$ and then take coordinates, or take coordinates and then apply $\widetilde F$; the result is the same: $\widetilde F$ is $F$ expressed in coordinates.
 
 > [!definition] Definition §22.3: Smooth Map Between Vector Spaces
 > $F : X \to Y$ is **smooth** if $\widetilde F = K \circ F \circ L^{-1} : \mathbb{R}^m \to \mathbb{R}^n$ is smooth for any choice of linear coordinates $L, K$ — equivalently, by Lemma [[§22 The Differential of a Map Between Vector Spaces#^lem-22-1|§22.1]], for some choice.
@@ -54,12 +54,12 @@ Commutativity means: apply $F$ and then take coordinates, or take coordinates an
 ^def-22-3
 
 > [!theorem] Lemma §22.1: Independence of Coordinates
-> If the coordinate representation $\widetilde F = K \circ F \circ L^{-1}$ of [[§22 The Differential of a Map Between Vector Spaces#^def-22-2|Def. §22.2]] is smooth for one choice of linear coordinates $L$ on $X$ and $K$ on $Y$, it is smooth for every choice. Hence “any” in [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]] may be replaced by “some” — Uribe's “little observation” in Lecture 7.
+> If the coordinate representation $\widetilde F = K \circ F \circ L^{-1}$ of [[§22 The Differential of a Map Between Vector Spaces#^def-22-2|Def. §22.2]] is smooth for one choice of linear coordinates $L$ on $X$ and $K$ on $Y$, it is smooth for every choice. Hence “any” in [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|Def. §22.3]] may be replaced by “some”.
 
 ^lem-22-1
 
 > [!proof]+ Proof
-> *(Not proved in lecture, where it was called “a little observation”; filled in.)* Let $L', K'$ be another choice, with $\widetilde F' = K' F L'^{-1}$; we show $\widetilde F'$ is smooth, given that $\widetilde F = K F L^{-1}$ is. Since $L$ and $K$ are bijections, $F$ can be recovered from $\widetilde F$:
+> *(Not proved in lecture; filled in.)* Let $L', K'$ be another choice, with $\widetilde F' = K' F L'^{-1}$; we show $\widetilde F'$ is smooth, given that $\widetilde F = K F L^{-1}$ is. Since $L$ and $K$ are bijections, $F$ can be recovered from $\widetilde F$:
 >
 > $$
 > K^{-1} \circ \widetilde F \circ L = K^{-1} \circ K \circ F \circ L^{-1} \circ L = F .
@@ -108,7 +108,7 @@ Commutativity means: apply $F$ and then take coordinates, or take coordinates an
 ^def-22-4
 
 > [!remark] Remark
-> This is the sense in which $\operatorname{Mat}(n,\mathbb{R})$, $\operatorname{Sym}(n,\mathbb{R})$, and $\operatorname{Mat}(n,\mathbb{C})$ are smooth manifolds without anyone having chosen coordinates on them. Uribe: “you can think of this as an abstract vector space that I make into a manifold by choosing a linear chart, and it won't matter which linear chart I choose — they are all smoothly compatible.”
+> This is the sense in which $\operatorname{Mat}(n,\mathbb{R})$, $\operatorname{Sym}(n,\mathbb{R})$, and $\operatorname{Mat}(n,\mathbb{C})$ are smooth manifolds without anyone having chosen coordinates on them. Such a space is an abstract vector space made into a manifold by choosing a linear chart, and it does not matter which linear chart is chosen: they are all smoothly compatible.
 
 ^rem-22-1
 
@@ -185,7 +185,7 @@ $$
 > - On manifolds: agreement with the abstract differential, [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]; computing differentials by curves, [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]].
 
 > [!remark] Remark
-> Two things are worth isolating. First, the hypothesis that $F$ is smooth is used: it is what makes $\widetilde F$ differentiable so that the chain rule applies. A map can have all directional derivatives $\frac{d}{dt}\big|_0 F(p+tv)$ at a point without being differentiable there, and for such a map the formula defines nothing linear. Second, the formula uses the vector space structure of *both* spaces, in two different places: that of $X$ to form the line $p + tv$, and that of $Y$ to form the difference quotient $\frac1t\big(F(p+tv) - F(p)\big)$. Uribe stopped to ask the class where $Y$'s structure enters, and this is the answer. Neither can be dropped, which is why the same formula will *not* serve as the definition of the differential on a general manifold: there is no “$p + tv$” and no “$F(p+tv) - F(p)$.” That is the problem [[§25 The Geometric Tangent Space|§25]] begins to address.
+> Two things are worth isolating. First, the hypothesis that $F$ is smooth is used: it is what makes $\widetilde F$ differentiable so that the chain rule applies. A map can have all directional derivatives $\frac{d}{dt}\big|_0 F(p+tv)$ at a point without being differentiable there, and for such a map the formula defines nothing linear. Second, the formula uses the vector space structure of *both* spaces, in two different places: that of $X$ to form the line $p + tv$, and that of $Y$ to form the difference quotient $\frac1t\big(F(p+tv) - F(p)\big)$. Neither can be dropped, which is why the same formula will *not* serve as the definition of the differential on a general manifold: there is no “$p + tv$” and no “$F(p+tv) - F(p)$.” That is the problem [[§25 The Geometric Tangent Space|§25]] begins to address.
 
 ^rem-22-2
 
@@ -242,6 +242,6 @@ $$
 > - The manifold versions of this definition of regular value: [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§36 Submersions#^def-36-4|Def. §36.4]].
 
 > [!remark] Remark: What the Curve Method Computes
-> Read together, Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]] and Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]] are the license for the computation in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds|The Orthogonal Group as a Smooth Manifold]]. The board computation $\frac{d}{dt}\big|_0 F(g + tA)$ is not a shortcut around the Jacobian — it *is* the Jacobian, packaged as the linear map $A \mapsto dF_g(A)$ and read off without coordinates; and the surjectivity of that linear map *is* the maximal-rank condition, likewise without coordinates. Written as a matrix, $dF_g$ for $\mathrm{O}(n)$ would have $n(n+1)/2$ rows and $n^2$ columns of partial derivatives. None of it is needed. “Using curves to compute differentials is a basic technique in this subject.”
+> Read together, Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]] and Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]] are the license for the computation in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds|The Orthogonal Group as a Smooth Manifold]]. The board computation $\frac{d}{dt}\big|_0 F(g + tA)$ is not a shortcut around the Jacobian — it *is* the Jacobian, packaged as the linear map $A \mapsto dF_g(A)$ and read off without coordinates; and the surjectivity of that linear map *is* the maximal-rank condition, likewise without coordinates. Written as a matrix, $dF_g$ for $\mathrm{O}(n)$ would have $n(n+1)/2$ rows and $n^2$ columns of partial derivatives. None of it is needed. Using curves to compute differentials is a basic technique in this subject.
 
 ^rem-22-3

@@ -34,7 +34,7 @@ In this chapter curves are mostly called $c : I \to M$, with velocity $\dot c(t)
 
 *(Not from lecture; animation added, vault only.)* Integral curves on a surface in $\mathbb{R}^3$: $\mathbf{X}_p = e_3 - \langle e_3, p\rangle p$, the tangential part of the vertical, on $S^2$ (chosen for the picture; green arrows: $\mathbf{X}$ at the moving points). Points start near the south pole and climb their meridians toward the north pole; both poles are zeros of $\mathbf{X}$ and stay fixed.
 
-“This is the key notion. You might have seen this in your ordinary differential equations.”
+This is the key notion of the chapter, familiar from ordinary differential equations (Proposition [[§67 Integral Curves#^prop-67-2|§67.2]]).
 
 > [!theorem] Proposition §67.1: The Velocity Curve
 > Let $c : I \to M$ be a smooth curve. Then $\dot c : I \to TM$, $t \mapsto \dot c(t)$, is a smooth curve in $TM$ lying over $c$, that is, $\pi \circ \dot c = c$. A smooth curve $c$ is an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$ if and only if $\dot c = \mathbf{X} \circ c$ as maps $I \to TM$.
@@ -44,7 +44,7 @@ In this chapter curves are mostly called $c : I \to M$, with velocity $\dot c(t)
 ^prop-67-1
 
 > [!proof]+ Proof
-> *(Not from lecture; added from a question: “how is $\dot c$ defined, when $M$ is a general manifold?”)* *Over $c$.* $\dot c(t) \in T_{c(t)}M$ by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]], so $\pi(\dot c(t)) = c(t)$ (Definition [[§51 The Tangent Bundle#^def-51-2|§51.2]]).
+> *(Not from lecture; added to answer how $\dot c$ is defined when $M$ is a general manifold.)* *Over $c$.* $\dot c(t) \in T_{c(t)}M$ by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]], so $\pi(\dot c(t)) = c(t)$ (Definition [[§51 The Tangent Bundle#^def-51-2|§51.2]]).
 >
 > *Smooth.* Let $t_0 \in I$ and $(U, \varphi = (x^1, \ldots, x^m))$ a chart at $c(t_0)$; on the open interval $I_0 = c^{-1}(U) \ni t_0$, $\dot c$ takes values in $TU$. In the chart $\tilde\varphi$ of $TM$ over $U$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]), whose last $m$ entries are the components in the coordinate basis, Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-2|§31.2]] gives
 >
@@ -82,10 +82,10 @@ So an integral curve is a curve whose velocity curve in $TM$ is the field read a
 
 *Uses:* [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]]
 
-The angle brackets mark $\dot c$ as a vector, not a point: “I've been trained … that you should distinguish vectors from points.” What the proposition shows is that $(\ast)$ is a *system of first-order ODEs*, usually nonlinear. All the derivatives are on the left-hand side, solved for: the right-hand side involves no derivatives. And it is a genuine *system*, because the equation for $\dot x^i$ involves, in principle, all of the $x$'s. (Lee: solving a system of ODEs is called “integrating” it, hence the name *integral* curve.)
+The angle brackets mark $\dot c$ as a vector, not a point, to keep vectors and points distinct. What the proposition shows is that $(\ast)$ is a *system of first-order ODEs*, usually nonlinear. All the derivatives are on the left-hand side, solved for: the right-hand side involves no derivatives. And it is a genuine *system*, because the equation for $\dot x^i$ involves, in principle, all of the $x$'s. (Lee: solving a system of ODEs is called “integrating” it, hence the name *integral* curve.)
 
 > [!remark] Remark: Why an Integral Curve Is an ODE
-> *(Not from lecture; added from a question: “how did integral curves suddenly connect to ODEs?”)* The definition is already an ODE, written without coordinates. In $(\ast)$ the unknown is the curve $c$; its derivative is set equal to something that depends on where $c$ currently is: “the velocity at time $t$ is the arrow that $\mathbf{X}$ puts at the point where $c$ is at time $t$.” The derivative of the unknown equals a known function of the unknown — that is an ODE. Proposition [[§67 Integral Curves#^prop-67-2|§67.2]] only unpacks it into components.
+> *(Not from lecture; added to answer how integral curves connect to ODEs.)* The definition is already an ODE, written without coordinates. In $(\ast)$ the unknown is the curve $c$; its derivative is set equal to something that depends on where $c$ currently is: the velocity at time $t$ is the arrow that $\mathbf{X}$ puts at the point where $c$ is at time $t$. The derivative of the unknown equals a known function of the unknown — that is an ODE. Proposition [[§67 Integral Curves#^prop-67-2|§67.2]] only unpacks it into components.
 > - *The simplest example.* On $\mathbb{R}$, $\mathbf{X} = x\, \frac{d}{dx}$: the equation is $\dot x = x$, so $x(t) = x_0 e^t$. The point runs away from $0$ faster and faster, because the arrows get longer further out.
 > - *Conversely*, every autonomous system $\dot x^i = f^i(x)$ with smooth $f^i$ on an open $U \subseteq \mathbb{R}^m$ is the system of the field $\sum_i f^i\, \partial/\partial x^i$: autonomous first-order systems on $U$ and vector fields on $U$ are the same thing. (“Autonomous”: the right-hand side does not depend on $t$, as the field does not change in time.)
 > - *Higher order.* $\ddot x = -x$ becomes, with $y = \dot x$, the first-order system $\dot x = y$, $\dot y = -x$, the field $y\, \partial_x - x\, \partial_y$ — minus the rotation field of Example [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]], whose integral curves it runs backwards in time. The harmonic oscillator is “follow this field in the phase plane”; likewise Hamilton's equations, for a time-independent Hamiltonian, say that the motion follows the integral curves of one vector field on phase space.
@@ -93,7 +93,7 @@ The angle brackets mark $\dot c$ as a vector, not a point: “I've been trained 
 
 ^rem-67-1
 
-*Lecture 24 recalled the definition with the velocity written “in a fancy way”, $\dot c(t) = c_{\ast t}(d/dt)$, “the derivation at $c(t)$ defined by $c$” (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]), and gave the velocity curve a name: “to any curve $c : I \to M$ one can naturally associate a lift” to the tangent bundle.*
+*Lecture 24 recalled the definition with the velocity written as $\dot c(t) = c_{\ast t}(d/dt)$, the derivation at $c(t)$ defined by $c$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]), and gave the velocity curve a name: every curve $c : I \to M$ has a natural lift to the tangent bundle.*
 
 > [!definition] Definition §67.2: Lift of a Curve
 > Let $c : I \to M$ be a smooth curve. Its **lift** to the tangent bundle is the curve
@@ -124,7 +124,7 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 ^prop-67-3
 
 > [!proof]+ Proof
-> *(Lecture 24: “the field is single-valued at each point.”)* By $(\ast)$ at the times $t_1$ and $t_2$, and since $c(t_1) = c(t_2)$,
+> *(Lecture 24. The point is that the field has a single value at each point.)* By $(\ast)$ at the times $t_1$ and $t_2$, and since $c(t_1) = c(t_2)$,
 >
 > $$
 > \dot c(t_1) = \mathbf{X}_{c(t_1)} = \mathbf{X}_{c(t_2)} = \dot c(t_2) .
@@ -139,7 +139,7 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 *(Not from lecture; figure added.)* Proposition [[§67 Integral Curves#^prop-67-3|§67.3]] in the tangent bundle, for $M = \mathbb{R}$, where $TM = \mathbb{R} \times \mathbb{R}$ is a plane: the base point horizontally, and the fibre $T_xM$, the velocities at $x$, as the vertical line over $x$. A vector field is a section $x \mapsto (x, \mathbf{X}_x)$, so its image is a graph, which meets each fibre exactly once, and the lift of an integral curve lies on it ($\tilde c = \mathbf{X} \circ c$, Proposition [[§67 Integral Curves#^prop-67-1|§67.1]]). The curve $c(t) = t^2 - 1$ passes through $0$ at $t = -1$, moving left, and at $t = 1$, moving right. Its lift $\tilde c(t) = (t^2 - 1, 2t)$ meets the fibre $T_0M$ in the two points $(0, -2)$ and $(0, 2)$, and no graph contains both. So $c$ is an integral curve of no vector field.
 
 > [!example] Example §67.1: A Curve with a Loop
-> Let $c : I \to M$ pass through the same point at two times, $c(t_1) = c(t_2)$, with different velocities $\dot c(t_1) \neq \dot c(t_2)$, as in the figure. Its lift $\tilde c$ is still a well-defined map: it records the time, not just the point. “But this cannot be an integral curve of anything” (Proposition [[§67 Integral Curves#^prop-67-3|§67.3]]).
+> Let $c : I \to M$ pass through the same point at two times, $c(t_1) = c(t_2)$, with different velocities $\dot c(t_1) \neq \dot c(t_2)$, as in the figure. Its lift $\tilde c$ is still a well-defined map: it records the time, not just the point. But $c$ is an integral curve of no vector field (Proposition [[§67 Integral Curves#^prop-67-3|§67.3]]).
 
 ^ex-67-1
 
@@ -153,7 +153,7 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 
 *(Not from lecture; animation added, vault only.)* The same picture turning, so that its depth is visible: the grey loop lies in $M$, the blue lift lies over it at the height of the direction of $\dot c$, and the red dashed fibre over the crossing point meets the lift twice, at $135^\circ$ and $45^\circ$. Seen from the side, the two branches of the lift are clearly apart.
 
-*Simple and useful lemmas,* (Lecture 24) for any $\mathbf{X} \in \mathfrak{X}(M)$, “completely general.”
+*Simple and useful lemmas* (Lecture 24), valid for any $\mathbf{X} \in \mathfrak{X}(M)$.
 
 > [!theorem] Lemma §67.4: Translation and Rescaling
 > Let $c : I \to M$ be an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$.
@@ -166,7 +166,7 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 ^lem-67-4
 
 > [!proof]+ Proof
-> *(Lecture 24: “immediate by chain rule”; filled in.)* Both domains are open intervals (for $\lambda = 0$ the second is all of $\mathbb{R}$). Fix $t$ in the domain and a germ $f$ at $\tilde c(t)$; by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and the chain rule for real functions of one variable:
+> *(Lecture 24: immediate from the chain rule; filled in.)* Both domains are open intervals (for $\lambda = 0$ the second is all of $\mathbb{R}$). Fix $t$ in the domain and a germ $f$ at $\tilde c(t)$; by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and the chain rule for real functions of one variable:
 >
 > $$
 > \dot{\tilde c}(t)[f] = \frac{d}{dt} f\big(c(t + t_0)\big) = (f \circ c)'(t + t_0) = \dot c(t + t_0)[f] = \mathbf{X}_{c(t + t_0)}[f] = \mathbf{X}_{\tilde c(t)}[f]
@@ -184,7 +184,7 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 
 *Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|Def. §31.3]]
 
-“You can always translate time. We're going to use it a lot.” Rescaling: “you can rescale a field pointwise by a fixed factor, and the integral curves of that are easily related to the integral curves of the original.” With $\lambda = -1$: the integral curves of $-\mathbf{X}$ are those of $\mathbf{X}$ run backwards.
+Time can always be translated, and this is used often below. Rescaling a field pointwise by a fixed factor gives integral curves simply related to those of the original field. With $\lambda = -1$: the integral curves of $-\mathbf{X}$ are those of $\mathbf{X}$ run backwards.
 
 ![[m591-67-8.svg]]
 
@@ -198,7 +198,7 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 ^lem-67-5
 
 > [!proof]+ Proof
-> *(Lecture 24: “the check” in the proof of Theorem [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]], there for a chart; written here for any diffeomorphism.)* $F \circ c$ is smooth, as a composite of smooth maps. Fix $t \in I$. By the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), the velocity of $F \circ c$ at $t$ is
+> *(Lecture 24: the verification step in the proof of Theorem [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]], there for a chart; written here for any diffeomorphism.)* $F \circ c$ is smooth, as a composite of smooth maps. Fix $t \in I$. By the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), the velocity of $F \circ c$ at $t$ is
 >
 > $$
 > (F \circ c)_{\ast t}\Big(\frac{d}{dt}\Big) = dF_{c(t)}\Big(c_{\ast t}\Big(\frac{d}{dt}\Big)\Big) = dF_{c(t)}\big(\dot c(t)\big),
@@ -216,4 +216,4 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 
 *Uses:* [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§59 Related Vector Fields#^def-59-1|Def. §59.1]]
 
-“This is a kind of naturality that I will come back to, because this is very general.” (Lee, Proposition 9.6: a smooth $F$ takes integral curves of $\mathbf{X}$ to integral curves of $\mathbf{Y}$ for all integral curves exactly when $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related.)
+This is a kind of naturality that recurs later in greater generality (Lee, Proposition 9.6: a smooth $F$ takes integral curves of $\mathbf{X}$ to integral curves of $\mathbf{Y}$ for all integral curves exactly when $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related.)

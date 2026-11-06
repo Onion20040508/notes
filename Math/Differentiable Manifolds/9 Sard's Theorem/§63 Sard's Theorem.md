@@ -10,7 +10,7 @@ tags: [differentiable-manifolds, math591]
 *Stage: analysis — Almost every value of a smooth map is regular.*
 
 > [!remark] Remark: Recall: Regular and Singular Values
-> For $F : M \to N$ smooth, $q \in N$ is a regular value if $dF_p$ is onto for every $p \in F^{-1}(q)$ (Definition [[§36 Submersions#^def-36-4|§36.4]]); in particular every $q \notin F(M)$ is a regular value. A value that is not regular is a *singular value* — Uribe's word in Lecture 19; “critical value” in Definition [[§36 Submersions#^def-36-4|§36.4]] and in Lee. Likewise $p \in M$ is a critical (singular) point if $dF_p$ is not onto (Definition [[§36 Submersions#^def-36-3|§36.3]]).
+> For $F : M \to N$ smooth, $q \in N$ is a regular value if $dF_p$ is onto for every $p \in F^{-1}(q)$ (Definition [[§36 Submersions#^def-36-4|§36.4]]); in particular every $q \notin F(M)$ is a regular value. A value that is not regular is a *singular value* — the term used in Lecture 19; “critical value” in Definition [[§36 Submersions#^def-36-4|§36.4]] and in Lee. Likewise $p \in M$ is a critical (singular) point if $dF_p$ is not onto (Definition [[§36 Submersions#^def-36-3|§36.3]]).
 
 ^rem-63-1
 
@@ -78,7 +78,7 @@ Lemma [[§63 Sard's Theorem#^lem-63-2|§63.2]] for $m = 2$, $n = 1$, $k = 2$ ($n
 > [!remark]- Connections
 > - "Measure zero" is Lebesgue-null: outer measure [[§10 Lebesgue Outer Measure#^def-10-4|551 Def. §10.4]]; so the regular values of a smooth map are of full measure (almost every value is regular).
 
-“So almost all values are regular … and this is going to have a lot of applications. Trust me, we're going to see them. They're very cute.”
+So almost every value of a smooth map is regular. The theorem has many applications, starting with Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]] and parametric transversality ([[§64 Parametric Transversality|§64]]).
 
 ![[m591-59-1.svg]]
 
@@ -89,7 +89,7 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 *(Not from lecture; animation added, vault only.)* The level $c$ sweeps from $-4$ to $4$ and back across $f(x) = x^3 - 3x$; its preimages are marked with their slopes. Every $c$ is a regular value except $\pm 2$, where a preimage has $f' = 0$ (red): the set of critical values is two points.
 
 > [!proof]+ Proof
-> *(Not given in lecture — “it's a big theorem. It's a long proof” — filled in, following Lee's proof of Theorem 6.10.)* By Lemma [[§63 Sard's Theorem#^lem-63-1|§63.1]], it suffices to prove, for every $m \ge 0$, the Euclidean statement
+> *(Not given in lecture, the proof being long; filled in, following Lee's proof of Theorem 6.10.)* By Lemma [[§63 Sard's Theorem#^lem-63-1|§63.1]], it suffices to prove, for every $m \ge 0$, the Euclidean statement
 >
 > **$(\mathrm{S}_m)$:** for every open $U \subseteq \mathbb{R}^m$, every $n \ge 0$ and every smooth $F : U \to \mathbb{R}^n$, the set $F(C)$ has measure zero in $\mathbb{R}^n$, where $C = \{ x \in U : \operatorname{rank} DF(x) < n \}$.
 >
@@ -151,16 +151,18 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 
 ^cor-63-4
 
-> [!remark]- Connections
-> - A measure-theory relative: the graph of a measurable function has measure zero, [[§26 Applications of Tonelli's Theorem#^cor-26-4|551 §26.4]].
-
 > [!proof]+ Proof
-> *(Lecture 19.)* “By linear algebra, no point in the image can be a regular value, because … the dimensions don't work out”: for $p \in M$, the image of $dF_p : T_pM \to T_{F(p)}N$ has dimension at most $\dim M < \dim N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), so $dF_p$ is never onto. So the regular values are exactly the points with empty preimage — “this is a vacuous thing” — and $F(M)$ is the set of singular values, of measure zero by Sard's theorem.
+> *(Lecture 19.)* By linear algebra, no point in the image can be a regular value, for dimension reasons: for $p \in M$, the image of $dF_p : T_pM \to T_{F(p)}N$ has dimension at most $\dim M < \dim N$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), so $dF_p$ is never onto. So the regular values are exactly the points with empty preimage, where the condition is vacuous, and $F(M)$ is the set of singular values, of measure zero by Sard's theorem.
 
 ^pf-63-4
 
 *Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]
 
-“That's one observation, but there will be many other nice applications of this.” For instance, a smooth curve $\gamma : \mathbb{R} \to \mathbb{R}^2$ never fills an open set of the plane: its image has measure zero, and so does every subset of it (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](1)), while an open set does not (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4)) — in contrast with continuous space-filling curves.
+> [!remark]- Connections
+> - A measure-theory relative: the graph of a measurable function has measure zero, [[§26 Applications of Tonelli's Theorem#^cor-26-4|551 §26.4]].
+
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]
+
+For instance, a smooth curve $\gamma : \mathbb{R} \to \mathbb{R}^2$ never fills an open set of the plane: its image has measure zero, and so does every subset of it (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](1)), while an open set does not (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4)) — in contrast with continuous space-filling curves.
 
 **Transcription note (Lecture 19).** Page 50 of the handwritten notes states the image lemma for “$F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open”. As written, with $m$ unrestricted, it is false for $m > n$: the projection $\mathbb{R}^2 \to \mathbb{R}$, $(x, y) \mapsto x$, maps the $x$-axis, of measure zero in $\mathbb{R}^2$, onto $\mathbb{R}$. Lemma [[§62 Sets of Measure Zero#^lem-62-2|§62.2]] takes $m = n$, as Lee does and as the application to transition maps needs. (For $m < n$ the conclusion holds for every $S$, by Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]].)

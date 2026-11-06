@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, math591]
 
 *References: Lee Ch. 4. Lecture 10.*
 
-Three special types of smooth maps $F : M \to N$ are singled out by the linear algebra of their differentials: *local diffeomorphisms*, whose differentials are bijective; *submersions*, whose differentials are surjective; and *immersions*, whose differentials are injective. The theme of the section is that in each case a property of the linear maps $F_{\ast p}$ — computable from a Jacobian — controls the behaviour of $F$ itself near $p$. Immersions, listed with the others in Lecture 10, were treated only in Lecture 13, after the tangent bundle, and have their own section, [[§43 Immersions|§43]]; everything up to the tangent bundle is the theory of submersions. “That's why we're discussing them in this context.”
+Three special types of smooth maps $F : M \to N$ are singled out by the linear algebra of their differentials: *local diffeomorphisms*, whose differentials are bijective; *submersions*, whose differentials are surjective; and *immersions*, whose differentials are injective. The theme of the section is that in each case a property of the linear maps $F_{\ast p}$ — computable from a Jacobian — controls the behaviour of $F$ itself near $p$. Immersions, listed with the others in Lecture 10, were treated only in Lecture 13, after the tangent bundle, and have their own section, [[§43 Immersions|§43]]; everything up to the tangent bundle is the theory of submersions.
 
 > [!definition] Definition §35.1: Local Diffeomorphism
 > A smooth map $F : M \to N$ is a **local diffeomorphism** if for every $p \in M$ there are neighbourhoods $U$ of $p$ and $V$ of $F(p)$ with $F(U) = V$ such that $F|_U^V : U \to V$ — the restriction of $F$ to $U$, regarded as a map onto $V$ — has a smooth inverse. Such an inverse $G : V \to U$ is a **local inverse** of $F$ at $p$.
@@ -33,7 +33,7 @@ Three special types of smooth maps $F : M \to N$ are singled out by the linear a
 ^ex-35-1
 
 > [!proof]+ Proof
-> *(Stated in Lecture 10 as an example, without proof — the covering-map distinction was “postponed”; filled in.)* Three things are claimed: $F$ is a local diffeomorphism (Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]]), so is its restriction to $(0, 4\pi)$, and neither map is injective. Two elementary facts about $F$ are used throughout: $F(t) = F(t')$ if and only if $t - t' \in 2\pi\mathbb{Z}$, since cosine and sine together determine an angle up to a multiple of $2\pi$; and every point of $S^1$ is $F(s)$ for exactly one $s$ in any half-open interval of length $2\pi$.
+> *(Stated in Lecture 10 as an example, without proof — the covering-map distinction was postponed; filled in.)* Three things are claimed: $F$ is a local diffeomorphism (Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]]), so is its restriction to $(0, 4\pi)$, and neither map is injective. Two elementary facts about $F$ are used throughout: $F(t) = F(t')$ if and only if $t - t' \in 2\pi\mathbb{Z}$, since cosine and sine together determine an angle up to a multiple of $2\pi$; and every point of $S^1$ is $F(s)$ for exactly one $s$ in any half-open interval of length $2\pi$.
 >
 > *$F$ is smooth into $S^1$.* Its components $\cos t$ and $\sin t$ are smooth, so $F$ is smooth as a map $\mathbb{R} \to \mathbb{R}^2$; and $\cos^2 t + \sin^2 t = 1$, so its values lie in the regular level set $S^1$, with the smooth structure of Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]. By Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]](2), with $P = \mathbb{R}$ and $G = F$, $F$ is therefore smooth into $S^1$.
 >
@@ -75,7 +75,7 @@ The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topolo
 The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is collected in [[§46 Projective Spaces and the Hopf Fibration|§46]].
 
 > [!remark] Remark: Covering Maps
-> Uribe noted that $\mathbb{R} \to S^1$ and $S^n \to \mathbb{RP}^n$ are *covering maps*, while $(0, 4\pi) \to S^1$ is a local diffeomorphism that is not: over the point $F(0) = (1,0)$ it has a single preimage, $2\pi$, where every other point of the circle has two. Covering maps were not defined in lecture and the distinction was postponed (“we're running a little bit behind schedule”); it is Lee Ch. 4.
+> The maps $\mathbb{R} \to S^1$ and $S^n \to \mathbb{RP}^n$ are *covering maps*, while $(0, 4\pi) \to S^1$ is a local diffeomorphism that is not: over the point $F(0) = (1,0)$ it has a single preimage, $2\pi$, where every other point of the circle has two. Covering maps were not defined in lecture and the distinction was postponed; it is Lee Ch. 4.
 
 ^rem-35-2
 
@@ -83,7 +83,7 @@ The projection $S^n \to \mathbb{RP}^n$, a two-to-one local diffeomorphism, is co
 > - Covering maps are defined in [[§31 Covering Spaces#^def-31-2|590 Def. §31.2]]; the same failure for a half-line, $\mathbb{R}_+ \to S^1$, is [[§31 Covering Spaces#^ex-31-2|590 Ex. §31.2]].
 > - Used in Quantum Mechanics: $S^3 \to \mathbb{RP}^3$ is $SU(2) \to SO(3)$; because $SU(2)$ is simply connected ([[Sⁿ is Simply Connected for n ≥ 2|590 §37.3]]) and $SO(3)$ is not ([[§38 Fundamental Group of Some Surfaces#^thm-38-3|590 §38.3]]), the sign of a spinor under a rotation by $2\pi$ cannot be removed — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|QM Theorem §C5.2.8]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^rem-c5-2-6|QM ★ Remark: Why the sign cannot be removed]].
 
-The converse direction of the main theorem rests on one theorem from analysis — “that's really what's paying the bills here.”
+The converse direction of the main theorem rests on one theorem from analysis, which does all the real work.
 
 > [!theorem] Theorem §35.1: Inverse Function Theorem
 > Let $W \subseteq \mathbb{R}^n$ be open, $\Phi : W \to \mathbb{R}^n$ smooth, and $a \in W$ with $\Phi'(a)$ invertible. Then there are open sets $U_0 \ni a$ in $W$ and $V_0 \ni \Phi(a)$ in $\mathbb{R}^n$ such that $\Phi(U_0) = V_0$ and $\Phi|_{U_0} : U_0 \to V_0$ is bijective with smooth inverse.
@@ -111,7 +111,7 @@ Lee, Theorem C.34; taken from analysis, not proved in the course. It should not 
 ^thm-35-2
 
 > [!proof]+ Proof
-> *(Lecture 10. The forward direction was supplied by a student at Uribe's prompting — use the local inverse and the chain rule; for the converse the inverse function theorem “is really what's paying the bills here.” The identification of $(F|_U^V)_{\ast p}$ with $F_{\ast p}$ is a completion.)* ($\Rightarrow$) Fix $p \in M$, and let $U$, $V$ and the local inverse $G : V \to U$ at $p$ be as in Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]], so that $G \circ F|_U^V = \mathrm{id}_U$ and $F|_U^V \circ G = \mathrm{id}_V$. By the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), applied to these two composites at $p$ and at $F(p)$ respectively, together with $(\mathrm{id})_\ast = \mathrm{id}$,
+> *(Lecture 10. The forward direction uses the local inverse and the chain rule; the converse rests on the inverse function theorem. The identification of $(F|_U^V)_{\ast p}$ with $F_{\ast p}$ is a completion.)* ($\Rightarrow$) Fix $p \in M$, and let $U$, $V$ and the local inverse $G : V \to U$ at $p$ be as in Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]], so that $G \circ F|_U^V = \mathrm{id}_U$ and $F|_U^V \circ G = \mathrm{id}_V$. By the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), applied to these two composites at $p$ and at $F(p)$ respectively, together with $(\mathrm{id})_\ast = \mathrm{id}$,
 >
 > $$
 > G_{\ast F(p)} \circ (F|_U^V)_{\ast p} = (\mathrm{id}_U)_{\ast p} = \mathrm{id}, \qquad (F|_U^V)_{\ast p} \circ G_{\ast F(p)} = (\mathrm{id}_V)_{\ast F(p)} = \mathrm{id},
@@ -134,7 +134,7 @@ Lee, Theorem C.34; taken from analysis, not proved in the course. It should not 
 > $$
 > so the latter is invertible, since its rank is the rank of $F_{\ast p}$, namely $n$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)).
 >
-> By the Inverse Function Theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]), applied to $\Phi = \tilde F$ on $W = \varphi(U)$ at $a = \varphi(p)$, there are open sets $\tilde A \ni \varphi(p)$ in $\varphi(U)$ and $\tilde B \ni \tilde F(\varphi(p))$ such that $\tilde F(\tilde A) = \tilde B$ and $\tilde F|_{\tilde A} : \tilde A \to \tilde B$ is bijective with smooth inverse; note $\tilde B = \tilde F(\tilde A) \subseteq \psi(V)$. Put $U' = \varphi^{-1}(\tilde A)$ and $V' = \psi^{-1}(\tilde B)$, neighbourhoods of $p$ and $F(p)$: they are open because $\varphi$ and $\psi$ are homeomorphisms onto open sets — “shrinking $\varphi(U)$ is the same as shrinking $U$.” On $U$ we have $F = \psi^{-1} \circ \tilde F \circ \varphi$, by the definition of $\tilde F$ and $F(U) \subseteq V$; so
+> By the Inverse Function Theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]), applied to $\Phi = \tilde F$ on $W = \varphi(U)$ at $a = \varphi(p)$, there are open sets $\tilde A \ni \varphi(p)$ in $\varphi(U)$ and $\tilde B \ni \tilde F(\varphi(p))$ such that $\tilde F(\tilde A) = \tilde B$ and $\tilde F|_{\tilde A} : \tilde A \to \tilde B$ is bijective with smooth inverse; note $\tilde B = \tilde F(\tilde A) \subseteq \psi(V)$. Put $U' = \varphi^{-1}(\tilde A)$ and $V' = \psi^{-1}(\tilde B)$, neighbourhoods of $p$ and $F(p)$: they are open because $\varphi$ and $\psi$ are homeomorphisms onto open sets: shrinking $\varphi(U)$ is the same as shrinking $U$. On $U$ we have $F = \psi^{-1} \circ \tilde F \circ \varphi$, by the definition of $\tilde F$ and $F(U) \subseteq V$; so
 >
 > $$
 > F(U') = \psi^{-1}\big(\tilde F(\varphi(U'))\big) = \psi^{-1}\big(\tilde F(\tilde A)\big) = \psi^{-1}(\tilde B) = V' ,
@@ -161,7 +161,7 @@ Lee, Theorem C.34; taken from analysis, not proved in the course. It should not 
 ![[m591-14-2.svg]]
 *The converse in one picture. Downstairs the Inverse Function Theorem supplies $\tilde F^{-1}$; the charts carry it upstairs as the local inverse $G = \varphi^{-1} \circ \tilde F^{-1} \circ \psi$. The only input from the hypothesis is that the bottom arrow has an invertible Jacobian at $\varphi(p)$ — which is where Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] enters.*
 
-A student asked why $\tilde F'(\varphi(p))$ is invertible; Uribe's answer was the lemma just cited: the Jacobian *is* the matrix of $F_{\ast p}$ in coordinate bases, and $F_{\ast p}$ is bijective by hypothesis. The practical content of the theorem is that “being a local diffeomorphism is detectable” by computing one Jacobian at each point, rather than by exhibiting local inverses.
+The Jacobian $\tilde F'(\varphi(p))$ is invertible by the lemma just cited: the Jacobian *is* the matrix of $F_{\ast p}$ in coordinate bases, and $F_{\ast p}$ is bijective by hypothesis. The practical content of the theorem is that being a local diffeomorphism is detectable by computing one Jacobian at each point, rather than by exhibiting local inverses.
 
 > [!theorem] Corollary §35.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms
 > A smooth map $F : M \to N$ is a diffeomorphism if and only if it is a bijective local diffeomorphism. Consequently, a smooth bijection with $F_{*p}$ bijective at every $p \in M$ is a diffeomorphism.

@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: fields — Vector fields and multiplications by functions generate a ring of operators on $C^\infty(M)$; its elements have an order, and in a chart they are the linear partial differential operators with smooth coefficients.*
 
-*Lecture 15 introduced the ring of differential operators in passing, as an aside to the locality of derivations ([[§56 Vector Fields#^lem-56-6|Lemma §56.6]]): its definition, the fact that its elements are local, and Peetre's theorem “FYI”. Those are collected here. Everything else in this subsection — the algebra of multiplications and vector fields, the order of an operator, the coordinate form and the commutator estimate in [[§58 Lie Bracket and Lie Algebra#^prop-58-6|§58]] — is not from lecture; it makes precise the remark that differential operators “are given by differential expressions in local coordinates.”*
+*Lecture 15 introduced the ring of differential operators in passing, as an aside to the locality of derivations ([[§56 Vector Fields#^lem-56-6|Lemma §56.6]]): its definition, the fact that its elements are local, and, without proof, Peetre's theorem. Those are collected here. Everything else in this subsection — the algebra of multiplications and vector fields, the order of an operator, the coordinate form and the commutator estimate in [[§58 Lie Bracket and Lie Algebra#^prop-58-6|§58]] — is not from lecture; it makes precise the remark that differential operators are given by differential expressions in local coordinates.*
 
 > [!definition] Definition §57.1: Multiplication Operator
 > For $g \in C^\infty(M)$, the **multiplication operator** $m_g : C^\infty(M) \to C^\infty(M)$ is $m_g f = g f$.
@@ -67,7 +67,7 @@ tags: [differentiable-manifolds, math591]
 
 ^def-57-2
 
-Uribe: “I can take a vector field, apply it … I can compose that with multiplication by a function, or compose it with another vector field, and do finitely many of these things, and add linear combinations of such things.” (The name $\mathrm{Diff}(M)$ is not from lecture.)
+In words: apply a vector field, compose with multiplication by a function or with another vector field, do finitely many of these things, and take linear combinations of the results. (The name $\mathrm{Diff}(M)$ is not from lecture.)
 
 > [!theorem] Proposition §57.2: Vector Fields and Multiplication Operators
 > Let $\mathbf{X} \in \mathfrak{X}(M)$ and $g \in C^\infty(M)$. Then
@@ -100,7 +100,7 @@ Uribe: “I can take a vector field, apply it … I can compose that with multip
 *Uses:* [[§56 Vector Fields#^def-56-3|Def. §56.3]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§56 Vector Fields#^def-56-5|Def. §56.5]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§57 Differential Operators#^def-57-1|Def. §57.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
 > [!example] Example §57.1: Differential Operators in Coordinates
-> *(Not from lecture.)* On $M = \mathbb{R}$ with coordinate $x$, write $\partial = D_{\partial/\partial x}$. Then $P = \partial \circ \partial + m_x \circ \partial$ is a differential operator, $Pf = f'' + x f'$, of [[§57 Differential Operators#^def-57-3|order]] $2$ ([[§57 Differential Operators#^def-57-3|Definition §57.3]] below). On $M = \mathbb{R}^2$ the Laplacian $\Delta = \partial_x \circ \partial_x + \partial_y \circ \partial_y$ is one, also of order $2$. Composites can always be rewritten with the multiplications in front, because of the product rule $\partial \circ m_g = m_{\partial g} + m_g \circ \partial$ ([[§57 Differential Operators#^prop-57-2|Proposition §57.2]] (2)): for instance $\partial \circ m_x \circ \partial = \partial + m_x \circ \partial \circ \partial$, that is, $(x f')' = f' + x f''$. Rewriting every composite in this way is how [[§57 Differential Operators#^prop-57-6|Proposition §57.6]] below puts any differential operator, in a chart, in the form $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients $a_\alpha$ — “they are given by differential expressions in local coordinates.”
+> *(Not from lecture.)* On $M = \mathbb{R}$ with coordinate $x$, write $\partial = D_{\partial/\partial x}$. Then $P = \partial \circ \partial + m_x \circ \partial$ is a differential operator, $Pf = f'' + x f'$, of [[§57 Differential Operators#^def-57-3|order]] $2$ ([[§57 Differential Operators#^def-57-3|Definition §57.3]] below). On $M = \mathbb{R}^2$ the Laplacian $\Delta = \partial_x \circ \partial_x + \partial_y \circ \partial_y$ is one, also of order $2$. Composites can always be rewritten with the multiplications in front, because of the product rule $\partial \circ m_g = m_{\partial g} + m_g \circ \partial$ ([[§57 Differential Operators#^prop-57-2|Proposition §57.2]] (2)): for instance $\partial \circ m_x \circ \partial = \partial + m_x \circ \partial \circ \partial$, that is, $(x f')' = f' + x f''$. Rewriting every composite in this way is how [[§57 Differential Operators#^prop-57-6|Proposition §57.6]] below puts any differential operator, in a chart, in the form $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients $a_\alpha$: differential operators are given by differential expressions in local coordinates.
 
 ^ex-57-1
 
@@ -300,7 +300,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 > - The same multi-index derivatives $\partial^\alpha$ on $C_c^\infty(\Omega)$ define the Sobolev norms of 556: [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3|556 Example §23.3]], [[§33 Sobolev Spaces and Weak Derivatives|556 §33]].
 
 > [!remark] Remark: Differential Operators Are Local
-> Every differential operator is a local operator ([[§56 Vector Fields#^def-56-6|Definition §56.6]]). *(Lecture 15: “these are all local operators”; the reason is filled in.)* The generators are local: $(m_g f)(p) = g(p) f(p)$ depends only on $f(p)$, and $(D_\mathbf{X} f)(p) = \mathbf{X}_p[f]$ depends only on the germ of $f$ at $p$, because $\mathbf{X}_p$ is a derivation at $p$, acting on germs ([[§28 Derivations and the Abstract Tangent Space#^def-28-1|Definition §28.1]]). Sums and composites of local operators are local: if $f|_U = g|_U$ then $(Pf)|_U = (Pg)|_U$, and applying $Q$ gives $(QPf)|_U = (QPg)|_U$.
+> Every differential operator is a local operator ([[§56 Vector Fields#^def-56-6|Definition §56.6]]). *(Stated in Lecture 15; the reason is filled in.)* The generators are local: $(m_g f)(p) = g(p) f(p)$ depends only on $f(p)$, and $(D_\mathbf{X} f)(p) = \mathbf{X}_p[f]$ depends only on the germ of $f$ at $p$, because $\mathbf{X}_p$ is a derivation at $p$, acting on germs ([[§28 Derivations and the Abstract Tangent Space#^def-28-1|Definition §28.1]]). Sums and composites of local operators are local: if $f|_U = g|_U$ then $(Pf)|_U = (Pg)|_U$, and applying $Q$ gives $(QPf)|_U = (QPg)|_U$.
 
 ^rem-57-1
 
@@ -310,6 +310,6 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 ^thm-57-8
 
 > [!proof]+ Proof (not given in this course)
-> Stated in Lecture 15 “FYI”: “There's a theorem which is that every local operator … is a differential operator, and conversely, of course, the converse is easy. … We're not going to prove this theorem, but it's true.” It is Peetre's theorem. The statement is local because on a non-compact $M$ the order $k$ need not be bounded as $p$ varies, and then $P$ is not a finite sum of composites on all of $M$.
+> Stated without proof in Lecture 15, for information, with the remark that the converse is the easy direction. It is Peetre's theorem. The statement is local because on a non-compact $M$ the order $k$ need not be bounded as $p$ varies, and then $P$ is not a finite sum of composites on all of $M$.
 
 ^pf-57-8

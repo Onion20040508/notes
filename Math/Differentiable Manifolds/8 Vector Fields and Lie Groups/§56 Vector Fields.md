@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: fields — Smooth sections of $TM$, a tangent vector at every point — and vector fields acting on functions, as derivations of $C^\infty(M)$.*
 
-*Lecture 15: “now we want to start a big chapter, new chapter, and now it is on vector fields.” References: Lee Ch. 8. The definition itself was given in Lectures 12 and 13, with the tangent bundle; Lecture 15 restated it “analogously” to one-forms.*
+*Lecture 15: a new chapter, on vector fields. References: Lee Ch. 8. The definition itself was given in Lectures 12 and 13, with the tangent bundle; Lecture 15 restated it by analogy with one-forms.*
 
 ## Vector Fields and Their Coordinates
 
@@ -32,7 +32,7 @@ tags: [differentiable-manifolds, math591]
 
 ^def-56-1
 
-In words: a vector field chooses one tangent vector at every point of $M$, and the choice varies smoothly — “for every point, [it] selects a tangent vector at that point.”
+In words: a vector field chooses one tangent vector at every point of $M$, and the choice varies smoothly.
 
 ![[m591-44-2.svg]]
 *A vector field in two pictures, on the circle $M = S^1$ with $\mathbf{X} = c(\theta)\,\partial/\partial\theta$, $c(\theta) = 0.55 + 0.35\sin\theta$. Left: the usual picture, an arrow $\mathbf{X}(p)$ at each point $p$. Right: the tangent bundle $TS^1$, with $S^1$ cut open at $(1,0)$; each fibre $T_pM$ is a vertical line over $p$, and the height of a point on it measures the vector $c\,\partial/\partial\theta$ (above the dashed zero section: counterclockwise). The vector field is the curve $\mathbf{X}(M)$, which meets every fibre exactly once — that is the condition $\mathbf{X}(p) \in T_pM$ — and $\pi \circ \mathbf{X} = \mathrm{id}_M$ says that the point of the curve above $p$ projects back to $p$. The points $p_1, p_2, p_3$ carry the same colour in both pictures.*
@@ -97,7 +97,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 ^prop-56-1
 
 > [!proof]+ Proof
-> *(Stated in Lecture 15, “analogously” to one-forms; filled in.)* Three things are claimed: the expansion of $\mathbf{X}$ at each point of $U$, the two formulas for its coefficients, and the smoothness criterion.
+> *(Stated in Lecture 15, by analogy with one-forms; filled in.)* Three things are claimed: the expansion of $\mathbf{X}$ at each point of $U$, the two formulas for its coefficients, and the smoothness criterion.
 >
 > *The expansion.* Fix $p \in U$. Since $\mathbf{X}$ is a section of $TM$, $\mathbf{X}_p \in T_pM$ is a derivation at $p$. The universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], applied to $D = \mathbf{X}_p$, gives
 >
@@ -164,7 +164,7 @@ In words: a vector field chooses one tangent vector at every point of $M$, and t
 
 *Uses:* [[§56 Vector Fields#^def-56-1|Def. §56.1]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§56 Vector Fields#^prop-56-1|§56.1]]
 
-By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — the same pointwise check gives $(fg)\mathbf{X} = f(g\mathbf{X})$, $(f + g)\mathbf{X} = f\mathbf{X} + g\mathbf{X}$ and $f(\mathbf{X} + \mathbf{Y}) = f\mathbf{X} + f\mathbf{Y}$ — which is what Uribe meant by “an algebra over the smooth functions” in Lecture 17. It is infinite-dimensional as a real vector space (for $\dim M \ge 1$), but over $C^\infty(U)$ the fields on a chart domain $U$ have the basis $\partial/\partial x^1, \ldots, \partial/\partial x^m$ ([[§56 Vector Fields#^prop-56-1|Proposition §56.1]]).
+By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — the same pointwise check gives $(fg)\mathbf{X} = f(g\mathbf{X})$, $(f + g)\mathbf{X} = f\mathbf{X} + g\mathbf{X}$ and $f(\mathbf{X} + \mathbf{Y}) = f\mathbf{X} + f\mathbf{Y}$ — which is the sense in which Lecture 17 calls it an algebra over the smooth functions. It is infinite-dimensional as a real vector space (for $\dim M \ge 1$), but over $C^\infty(U)$ the fields on a chart domain $U$ have the basis $\partial/\partial x^1, \ldots, \partial/\partial x^m$ ([[§56 Vector Fields#^prop-56-1|Proposition §56.1]]).
 
 > [!remark] Remark: Vector Fields and One-Forms Side by Side
 > | Field | A section of | In a chart | Picture |
@@ -179,7 +179,7 @@ By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — t
 ## Vector Fields as Derivations
 
 > [!remark] Remark: Two Faces of a Vector Field
-> “Just as tangent vectors, fields have a double life.” Tangent vectors were defined as derivations and then shown to be velocities of curves ([[§31 Tangent Vectors as Velocities of Curves|§31]]). Vector fields likewise have two faces: *operators on functions*, studied first because it continues the definition by derivations; and *dynamics on $M$* — integral curves, the trajectories that follow the field, to come later.
+> Like tangent vectors, vector fields have a double life. Tangent vectors were defined as derivations and then shown to be velocities of curves ([[§31 Tangent Vectors as Velocities of Curves|§31]]). Vector fields likewise have two faces: *operators on functions*, studied first because it continues the definition by derivations; and *dynamics on $M$* — integral curves, the trajectories that follow the field, to come later.
 
 ^rem-56-2
 
@@ -194,7 +194,7 @@ By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — t
 
 ^def-56-4
 
-*(Not from lecture: Uribe uses the word without defining it — “it's an $\mathbb{R}$-linear operator”.)* $C^\infty(M)$ is a real vector space under pointwise addition and scalar multiplication, and an operator $P$ is *$\mathbb{R}$-linear*, or a *linear operator*, if it is a [[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]] of this space: $P(af + bg) = a\,Pf + b\,Pg$ for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$. Operators can be added, $(P + Q)f = Pf + Qf$, and composed, $(P \circ Q)f = P(Qf)$, and sums and composites of linear operators are linear. Examples: $f \mapsto D_\mathbf{X}f$ for a vector field $\mathbf{X}$ ([[§56 Vector Fields#^lem-56-3|Lemma §56.3]] below), and multiplication by a fixed function, $f \mapsto gf$ ([[§57 Differential Operators#^def-57-1|Definition §57.1]] below). A [[§56 Vector Fields#^def-56-5|derivation]], a [[§56 Vector Fields#^def-56-6|local operator]] and a [[§57 Differential Operators#^def-57-2|differential operator]], defined below, are operators with extra properties; the [[§58 Lie Bracket and Lie Algebra#^def-58-1|Lie bracket]] of [[§58 Lie Bracket and Lie Algebra|§58]] is the commutator of two operators.
+*(Not from lecture: the lecture uses the word, for an $\mathbb{R}$-linear operator, without defining it.)* $C^\infty(M)$ is a real vector space under pointwise addition and scalar multiplication, and an operator $P$ is *$\mathbb{R}$-linear*, or a *linear operator*, if it is a [[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]] of this space: $P(af + bg) = a\,Pf + b\,Pg$ for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$. Operators can be added, $(P + Q)f = Pf + Qf$, and composed, $(P \circ Q)f = P(Qf)$, and sums and composites of linear operators are linear. Examples: $f \mapsto D_\mathbf{X}f$ for a vector field $\mathbf{X}$ ([[§56 Vector Fields#^lem-56-3|Lemma §56.3]] below), and multiplication by a fixed function, $f \mapsto gf$ ([[§57 Differential Operators#^def-57-1|Definition §57.1]] below). A [[§56 Vector Fields#^def-56-5|derivation]], a [[§56 Vector Fields#^def-56-6|local operator]] and a [[§57 Differential Operators#^def-57-2|differential operator]], defined below, are operators with extra properties; the [[§58 Lie Bracket and Lie Algebra#^def-58-1|Lie bracket]] of [[§58 Lie Bracket and Lie Algebra|§58]] is the commutator of two operators.
 
 > [!definition] Definition §56.5: Derivation of $C^\infty(M)$
 > A **derivation** of $C^\infty(M)$ is an $\mathbb{R}$-linear [[§56 Vector Fields#^def-56-4|operator]] $D : C^\infty(M) \to C^\infty(M)$ ([[§56 Vector Fields#^def-56-4|Definition §56.4]]) satisfying the product rule
@@ -215,7 +215,7 @@ By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — t
 ^lem-56-3
 
 > [!proof]+ Proof
-> *(Lecture 15: linearity and the product rule are “an immediate consequence of the corresponding properties for tangent vectors”, applied at each point. Smoothness of $D_\mathbf{X}f$, which the lecture did not address, is filled in.)* Three things are claimed: the chart formula, smoothness of $D_\mathbf{X}f$, and that $D_\mathbf{X}$ is $\mathbb{R}$-linear and satisfies the product rule (Definition [[§56 Vector Fields#^def-56-5|§56.5]]). Throughout, $[f]$ denotes the germ at $p$ of $f \in C^\infty(M)$.
+> *(Lecture 15: linearity and the product rule are an immediate consequence of the corresponding properties of tangent vectors, applied at each point. Smoothness of $D_\mathbf{X}f$, which the lecture did not address, is filled in.)* Three things are claimed: the chart formula, smoothness of $D_\mathbf{X}f$, and that $D_\mathbf{X}$ is $\mathbb{R}$-linear and satisfies the product rule (Definition [[§56 Vector Fields#^def-56-5|§56.5]]). Throughout, $[f]$ denotes the germ at $p$ of $f \in C^\infty(M)$.
 >
 > *The chart formula.* Let $(U, \varphi = (x^j))$ be a chart and $p \in U$. By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], $\mathbf{X}_p = \sum_j \mathbf{X}^j(p)\, \partial/\partial x^j|_p$. Derivations at $p$ are added and scaled pointwise (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]), so evaluating at $[f]$ and using Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]],
 >
@@ -264,7 +264,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 
 ^def-56-6
 
-“Even though $D$ a priori is defined on functions on $M$, it's actually going to be given by local data”: knowing $f$ on $U$ determines $Df$ on $U$.
+Although a local operator $D$ is a priori defined on functions on all of $M$, it is given by local data: knowing $f$ on $U$ determines $Df$ on $U$.
 
 > [!definition] Definition §56.7: Support
 > The **support** of a function $\chi : M \to \mathbb{R}$ is the *[[§8 Interior and Closure#^def-8-2|closure]]* of the set where it is nonzero,
@@ -291,19 +291,19 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 
 ^def-56-9
 
-“It's a technical term, and it's not a joke”: the graph is a plateau, equal to $1$ near $p$ and dying off to $0$ outside a compact set — “smooth, but not analytic”, since an analytic function equal to $1$ on an open set would equal $1$ on the whole connected domain.
+*Bump function* is a technical term: the graph is a plateau, equal to $1$ near $p$ and dying off to $0$ outside a compact set — smooth, but not analytic, since an analytic function equal to $1$ on an open set would equal $1$ on the whole connected domain.
 
 ![[m591-44-3.svg]]
 *A bump function at $p$, after the board sketch, with the front quarter cut away. $M$ is a plane, and the graph of $\chi$ is a surface over it: $\chi \equiv 1$ on a disc around $p$ (the blue plateau, at height $1$); from its edge the graph falls smoothly to $0$ (orange); and $\chi = 0$ outside the compact set $\operatorname{supp}\chi$, whose boundary is the dashed circle on $M$. The two cut faces show the profile of $\chi$ along two rays from $p$, and $p$ lies on $M$ at their inner corner, directly below the plateau, where $\chi(p) = 1$. The cross-section below shows the same profile along a whole line through $p$.*
 
 ![[m591-45-1.svg]]
-*A bump function, drawn over a one-dimensional slice of $M$ (the graph is the plateau of Uribe's picture, in cross-section). It equals $1$ on a neighbourhood of $p$, is smooth everywhere, and vanishes outside its support, which is compact and lies inside the given open set $U$. This one is built from $h(t) = e^{-1/t}$ for $t > 0$, $h(t) = 0$ for $t \le 0$, as $\chi(x) = h(b - |x|)/\big(h(b - |x|) + h(|x| - a)\big)$, which is $1$ for $|x| \le a$ and $0$ for $|x| \ge b$.*
+*A bump function, drawn over a one-dimensional slice of $M$ (the graph is the plateau of the lecture's picture, in cross-section). It equals $1$ on a neighbourhood of $p$, is smooth everywhere, and vanishes outside its support, which is compact and lies inside the given open set $U$. This one is built from $h(t) = e^{-1/t}$ for $t > 0$, $h(t) = 0$ for $t \le 0$, as $\chi(x) = h(b - |x|)/\big(h(b - |x|) + h(|x| - a)\big)$, which is $1$ for $|x| \le a$ and $0$ for $|x| \ge b$.
 
 ![[m591-45-a1.gif|480]]
 
 *(Not from lecture; animation added, vault only.)* Left: $h(t) = e^{-1/t}$ (dashed) and the smooth step $g = h(t)/(h(t) + h(1 - t))$, $0$ for $t \le 0$ and $1$ for $t \ge 1$. Right: the bump $\chi(x) = g\big((r_2 - |x|)/(r_2 - r_1)\big)$ as the radii vary, $1$ on the plateau $[-r_1, r_1]$ (blue) and $0$ outside $(-r_2, r_2)$, smooth everywhere.
 
-**Transcription note.** Page 41 of the handwritten notes defines $\operatorname{supp}(\chi) = \{q \in M : \chi(q) \neq 0\}$; the support is the *closure* of that set, as Uribe said (“and then you take the closure of that”). Without the closure, the support of a bump function would not be compact.
+**Transcription note.** Page 41 of the handwritten notes defines $\operatorname{supp}(\chi) = \{q \in M : \chi(q) \neq 0\}$; the support is the *closure* of that set, as stated in lecture. Without the closure, the support of a bump function would not be compact.
 
 > [!theorem] Proposition §56.4: Bump Functions Exist
 > For every open $U \subseteq M$ and every $p \in U$ there is a [[§56 Vector Fields#^def-56-9|bump function]] $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq U$.
@@ -313,7 +313,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 ^prop-56-4
 
 > [!proof]+ Proof
-> *(Stated in Lecture 15, and again in Lecture 16 — “we're going to prove it next week, but not this week” — as “technical things that you will not be using in homework.” “The existence is not so obvious, but it's true.” Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function “is constructed in the Euclidean space first, and then you pull back with the chart.” Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in Theorem [[§65 The Whitney Embedding Theorem#^thm-65-9|§65.9]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
+> *(Stated in Lecture 15, and again in Lecture 16, among technical results not needed in the homework. Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function is constructed in Euclidean space first, and then pulled back with the chart. Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in Theorem [[§65 The Whitney Embedding Theorem#^thm-65-9|§65.9]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
 >
 > *1. A smooth function vanishing to infinite order.* Let $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$. By induction, for $t > 0$, $h^{(k)}(t) = P_k(1/t)\, e^{-1/t}$ with $P_k$ a polynomial, since $\frac{d}{dt}\big(P(1/t) e^{-1/t}\big) = \big(-P'(1/t)/t^2 + P(1/t)/t^2\big) e^{-1/t}$. As $s^j e^{-s} \to 0$ for $s = 1/t \to \infty$, every $h^{(k)}(t) \to 0$ as $t \to 0^+$, and the right difference quotient $\big(h^{(k)}(t) - 0\big)/t = (1/t)\, P_k(1/t)\, e^{-1/t} \to 0$ as well. So by induction every $h^{(k)}$ exists at $0$ and equals $0$, and $h$ is smooth on $\mathbb{R}$, with $h > 0$ exactly on $(0, \infty)$.
 >
@@ -339,7 +339,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 > - The flat function $e^{-1/x^2}$, smooth but not its Taylor series: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]].
 > - Bump functions were already granted (Lee, Proposition 2.25) in [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Germ Derivations and Global Derivations, §28.3]].
 
-*Terminology (Lecture 16).* A function $\chi$ with $\operatorname{supp}\chi \subseteq U$ is said to be *subordinate to $U$*, “because this is a condition that is going to show up several times.”
+*Terminology (Lecture 16).* A function $\chi$ with $\operatorname{supp}\chi \subseteq U$ is said to be *subordinate to $U$*; the condition shows up several times.
 
 *Lecture 16: the corollary of the [[§56 Vector Fields#^prop-56-4|bump function lemma]] that the proof of [[§56 Vector Fields#^prop-56-7|Proposition §56.7]] uses.*
 
@@ -388,9 +388,9 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 ^lem-56-6
 
 > [!proof]+ Proof
-> *(Lecture 16, in full: “you'll see how incredibly powerful the product rule is.”)* Let $D$ be a derivation of $C^\infty(M)$, $U \subseteq M$ open, and $f, g \in C^\infty(M)$ with $f|_U = g|_U$; we must show $(Df)|_U = (Dg)|_U$.
+> *(Lecture 16, in full.)* Let $D$ be a derivation of $C^\infty(M)$, $U \subseteq M$ open, and $f, g \in C^\infty(M)$ with $f|_U = g|_U$; we must show $(Df)|_U = (Dg)|_U$.
 >
-> *Reduction to the kernel.* Put $h = f - g \in C^\infty(M)$; then $h|_U = 0$. By linearity of $D$, $Df - Dg = D(f - g) = Dh$. So it suffices to show: if $h|_U = 0$ then $(Dh)|_U = 0$ — “like showing that something is injective by showing that the kernel is zero.”
+> *Reduction to the kernel.* Put $h = f - g \in C^\infty(M)$; then $h|_U = 0$. By linearity of $D$, $Df - Dg = D(f - g) = Dh$. So it suffices to show: if $h|_U = 0$ then $(Dh)|_U = 0$ — as one shows that a linear map is injective by showing that its kernel is zero.
 >
 > *The kernel.* Let $h|_U = 0$ and fix $p \in U$. By Proposition [[§56 Vector Fields#^prop-56-4|§56.4]] there is a bump function $\chi$ at $p$ subordinate to $U$: $\chi \in C^\infty(M)$, $\operatorname{supp}\chi \subseteq U$, and $\chi \equiv 1$ near $p$, in particular $\chi(p) = 1$ (Definition [[§56 Vector Fields#^def-56-9|§56.9]]). The product $\chi h$ is the zero function on $M$. Indeed, for $q \in U$, $h(q) = 0$; and for $q \notin U$, $q \notin \operatorname{supp}\chi$, so $\chi(q) = 0$ (every point where $\chi \ne 0$ lies in the support, Definition [[§56 Vector Fields#^def-56-7|§56.7]]). A linear map sends $0$ to $0$, so $D(\chi h) = D(0) = 0$; and by the product rule (Definition [[§56 Vector Fields#^def-56-5|§56.5]]),
 >
@@ -410,14 +410,14 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 
 *Uses:* [[§56 Vector Fields#^def-56-5|Def. §56.5]], [[§56 Vector Fields#^def-56-6|Def. §56.6]], [[§56 Vector Fields#^def-56-9|Def. §56.9]], [[§56 Vector Fields#^def-56-7|Def. §56.7]], [[§56 Vector Fields#^prop-56-4|§56.4]]
 
-“Derivations are local, thanks to the product rule and the existence of bump functions.”
+Derivations are local, thanks to the product rule and the existence of bump functions.
 
 > [!remark]- Connections
 > - The pointwise version, a derivation of $C^\infty(M)$ at $p$ only sees a function near $p$ (Lee, Proposition 3.8), in the proof of [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Germ Derivations and Global Derivations, §28.3]].
 
-*Lecture 15, after stating the lemma (proved above in Lecture 16): “I want to make an observation.”* The observation was the ring of differential operators, generated by the operators $D_\mathbf{X}$ and the multiplications by functions, all of whose elements are local; it is collected, with what follows from it, in the next section, [[§57 Differential Operators|§57]].
+*Lecture 15, after stating the lemma (proved above in Lecture 16), made an observation.* The observation was the ring of differential operators, generated by the operators $D_\mathbf{X}$ and the multiplications by functions, all of whose elements are local; it is collected, with what follows from it, in the next section, [[§57 Differential Operators|§57]].
 
-*Lecture 16 proved the converse of [[§56 Vector Fields#^lem-56-3|Lemma §56.3]]. “It's not an immediate thing at all … tangent vectors are defined in terms of germs”, local objects near a point, “whereas” a derivation of $C^\infty(M)$ “a priori” acts on functions on all of $M$. Locality ([[§56 Vector Fields#^lem-56-6|Lemma §56.6]]) is half the bridge; the other half is that germs can be globalized ([[§56 Vector Fields#^cor-56-5|Corollary §56.5]]).*
+*Lecture 16 proved the converse of [[§56 Vector Fields#^lem-56-3|Lemma §56.3]]. This is not immediate: tangent vectors are defined in terms of germs, local objects near a point, whereas a derivation of $C^\infty(M)$ a priori acts on functions on all of $M$. Locality ([[§56 Vector Fields#^lem-56-6|Lemma §56.6]]) is half the bridge; the other half is that germs can be globalized ([[§56 Vector Fields#^cor-56-5|Corollary §56.5]]).*
 
 > [!theorem] Proposition §56.7: Derivations Are Vector Fields
 > Conversely, every [[§56 Vector Fields#^def-56-5|derivation]] $D$ of $C^\infty(M)$ is of the form $D = D_\mathbf{X}$ ([[§56 Vector Fields#^lem-56-3|Lemma §56.3]]) for a unique $\mathbf{X} \in \mathfrak{X}(M)$.
@@ -427,7 +427,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 ^prop-56-7
 
 > [!proof]+ Proof
-> *(Lecture 16, in the lecture's steps. Uribe “skip[ped] a little bit the details” of smoothness; they are completed below, as are two steps the lecture did not state: that each $\mathbf{X}_p$ is a derivation at $p$, and uniqueness.)* Let $D$ be a derivation of $C^\infty(M)$. We must produce $\mathbf{X} \in \mathfrak{X}(M)$, i.e. a smooth section of $TM$, with $D_\mathbf{X} = D$, and show that it is the only one.
+> *(Lecture 16, in the lecture's steps. The lecture skipped some details of smoothness; they are completed below, as are two steps the lecture did not state: that each $\mathbf{X}_p$ is a derivation at $p$, and uniqueness.)* Let $D$ be a derivation of $C^\infty(M)$. We must produce $\mathbf{X} \in \mathfrak{X}(M)$, i.e. a smooth section of $TM$, with $D_\mathbf{X} = D$, and show that it is the only one.
 >
 > *1. Define $\mathbf{X}$ pointwise.* For $p \in M$ and a germ $\gamma \in C^\infty_p(M)$, set
 >
@@ -437,7 +437,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 >
 > which exists by Corollary [[§56 Vector Fields#^cor-56-5|§56.5]] (with a bump function supplied by Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]).
 >
-> *2. It is well defined.* Let $f, f' \in C^\infty(M)$ both represent $\gamma$. Then $(f, M) \sim (f', M)$, so there is an open $W \ni p$ with $f|_W = f'|_W$ (Definition [[§27 Germs#^def-27-1|§27.1]]). By Lemma [[§56 Vector Fields#^lem-56-6|§56.6]], applied with the open set $W$, $(Df)|_W = (Df')|_W$; since $p \in W$, $(Df)(p) = (Df')(p)$. So $\mathbf{X}_p(\gamma)$ does not depend on the choice of $f$. “So you see, we need all these lemmas.”
+> *2. It is well defined.* Let $f, f' \in C^\infty(M)$ both represent $\gamma$. Then $(f, M) \sim (f', M)$, so there is an open $W \ni p$ with $f|_W = f'|_W$ (Definition [[§27 Germs#^def-27-1|§27.1]]). By Lemma [[§56 Vector Fields#^lem-56-6|§56.6]], applied with the open set $W$, $(Df)|_W = (Df')|_W$; since $p \in W$, $(Df)(p) = (Df')(p)$. So $\mathbf{X}_p(\gamma)$ does not depend on the choice of $f$.
 >
 > *3. Each $\mathbf{X}_p$ is a derivation at $p$.* *(Completion.)* Let $\gamma, \delta \in C^\infty_p(M)$ with global representatives $f, g$, and $a, b \in \mathbb{R}$. Germ operations are computed on representatives (Proposition [[§27 Germs#^prop-27-2|§27.2]]), here on the common domain $M$, so $af + bg$ is a global representative of $a\gamma + b\delta$, and $fg$ one of $\gamma\delta$. By step 1 and the linearity of $D$,
 >
@@ -453,7 +453,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 >
 > So $\mathbf{X}_p$ is a derivation at $p$, i.e. $\mathbf{X}_p \in T_pM$ (Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]] and [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]). Thus $\mathbf{X} : p \mapsto \mathbf{X}_p$ is a section of $TM$, so far not known to be smooth.
 >
-> *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]), and “$\mathbf{X}_p(x^j)$ is $D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$.” *(Completion.)* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to find an open $V \ni p$ on which $\mathbf{X}$ is smooth. Take one bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]), equal to $1$ on an open $V \ni p$. Then $V \subseteq U$, since $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$, extended by $0$ outside $U$: the single extension of Corollary [[§56 Vector Fields#^cor-56-5|§56.5]], smooth on $M$. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$ (because $\chi = 1$ there), so $\tilde x^j$ is a global representative of the germ of $x^j$ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and by step 1
+> *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]), and $\mathbf{X}_p(x^j) = D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$. *(Completion.)* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to find an open $V \ni p$ on which $\mathbf{X}$ is smooth. Take one bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]), equal to $1$ on an open $V \ni p$. Then $V \subseteq U$, since $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$, extended by $0$ outside $U$: the single extension of Corollary [[§56 Vector Fields#^cor-56-5|§56.5]], smooth on $M$. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$ (because $\chi = 1$ there), so $\tilde x^j$ is a global representative of the germ of $x^j$ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and by step 1
 >
 > $$
 > \mathbf{X}_q(x^j) = D(\tilde x^j)(q) \qquad \text{for all } q \in V .
@@ -481,7 +481,7 @@ The goal of this section is the converse of the lemma: every derivation of $C^\i
 
 *Uses:* [[§56 Vector Fields#^cor-56-5|§56.5]], [[§56 Vector Fields#^prop-56-4|§56.4]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§56 Vector Fields#^lem-56-6|§56.6]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-3|§56.3]]
 
-So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto the derivations of $C^\infty(M)$. *Notation (Lecture 16).* From now on $D_\mathbf{X}$ is written $\mathbf{X}$: “you say to yourself, I'm thinking of $\mathbf{X}$ as an operator … if you say $\mathbf{X}(f)$, then it's an operator.”
+So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto the derivations of $C^\infty(M)$. *Notation (Lecture 16).* From now on $D_\mathbf{X}$ is written $\mathbf{X}$: writing $\mathbf{X}(f)$ signals that $\mathbf{X}$ is being thought of as an operator.
 
 **Transcription note.** Page 43 of the handwritten notes asks “is $\mathbf{X}_p$ $C^\infty$?”; the question is whether the field $\mathbf{X}$ is smooth, $\mathbf{X}_p$ being a single tangent vector. The same line writes the coordinates as $(x^1, \ldots, x^n)$ and then sums to $m$; the dimension is $m$ throughout.
 

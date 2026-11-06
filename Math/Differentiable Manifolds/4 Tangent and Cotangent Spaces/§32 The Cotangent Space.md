@@ -11,9 +11,9 @@ tags: [differentiable-manifolds, math591]
 
 ## Differentials of Functions and the Cotangent Space
 
-*Lecture 10: “a very special case — a very important case.” The target is $N = \mathbb{R}$, and the differential of a scalar function becomes a covector.*
+*Lecture 10: a very special and very important case. The target is $N = \mathbb{R}$, and the differential of a scalar function becomes a covector.*
 
-The target $\mathbb{R}$ is itself a smooth manifold, so $f_{\ast p}$ lands in a tangent space of $\mathbb{R}$. The lecture disposed of these tangent spaces in one line — “we identify this with $\mathbb{R}$ forever” — and the next three boxes spell that line out: the chart and coordinate of $\mathbb{R}$, its coordinate derivation, and the identification.
+The target $\mathbb{R}$ is itself a smooth manifold, so $f_{\ast p}$ lands in a tangent space of $\mathbb{R}$. The lecture disposed of these tangent spaces in one line — each is identified with $\mathbb{R}$ once and for all — and the next three boxes spell that line out: the chart and coordinate of $\mathbb{R}$, its coordinate derivation, and the identification.
 
 > [!definition] Definition §32.1: The Standard Coordinate on $\mathbb{R}$
 > $\mathbb{R}$ is a smooth $1$-manifold, with the smooth structure of the single global chart $(\mathbb{R}, \mathrm{id}_\mathbb{R})$ ([[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Definition §22.4]], with $X = \mathbb{R}$ and $L = \mathrm{id}_\mathbb{R}$). Its [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|coordinate function]] is written $r$:
@@ -63,7 +63,6 @@ The target $\mathbb{R}$ is itself a smooth manifold, so $f_{\ast p}$ lands in a 
 
 Concretely, $a\,\partial/\partial r|_c$ is the derivation $h \mapsto a\,h'(c)$: differentiation at $c$ at speed $a$, the [[§31 Tangent Vectors as Velocities of Curves|velocity]] of the curve $t \mapsto c + at$. The identification records the speed $a$ and forgets the base point $c$; this is why it can be made for all $c$ at once.
 
-
 > [!definition] Definition §32.4: Cotangent Space
 > Let $M$ be a smooth manifold and $p \in M$. The **cotangent space** of $M$ at $p$ is the dual of the abstract tangent space,
 >
@@ -95,7 +94,7 @@ Concretely, $a\,\partial/\partial r|_c$ is the derivation $h \mapsto a\,h'(c)$: 
 ^def-32-5
 
 ![[m591-13-1.svg]]
-*The differential of a function is its pushforward followed by the permanent identification of every tangent space of $\mathbb{R}$ with $\mathbb{R}$; so $df_p$ is the pushforward $f_{\ast p}$ under another name. The notation $T_p^{\ast}M$ puts the star on the $T$ “to save some ink.”*
+*The differential of a function is its pushforward followed by the permanent identification of every tangent space of $\mathbb{R}$ with $\mathbb{R}$; so $df_p$ is the pushforward $f_{\ast p}$ under another name. The notation $T_p^{\ast}M$ puts the star on the $T$, as a shorthand for $(T_pM)^{\ast}$.*
 
 > [!remark]- Connections
 > - The linear algebra: the dual space is [[§12 Duality#^ladr-3-110|LADR 3.110]].

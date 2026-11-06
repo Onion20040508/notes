@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: abstract — In charts the differential $F_{\ast p}$ is the Jacobian of the coordinate representation, and the chain rule is matrix multiplication.*
 
-*Lecture 9. The differential $F_{\ast p}$ is defined without coordinates; choosing charts on both sides turns it into a matrix, and the matrix is the Jacobian of the coordinate representation. “This should be very much reminiscent of the things we said about vector spaces — another instance of the same thing.”*
+*Lecture 9. The differential $F_{\ast p}$ is defined without coordinates; choosing charts on both sides turns it into a matrix, and the matrix is the Jacobian of the coordinate representation. This is another instance of the vector-space picture of [[§22 The Differential of a Map Between Vector Spaces|§22]].*
 
 Let $F : M \to N$ be smooth, $\dim M = m$, $\dim N = n$, and $p \in M$. Choose smooth charts $(U, \varphi)$ of $M$ with $p \in U$ and $(V, \psi)$ of $N$ with $F(U) \subseteq V$ — possible because $F$ is smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]) — and write
 
@@ -57,7 +57,7 @@ $$
 *Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]
 
 > [!remark] Remark: Why This Identity Carries So Much
-> Uribe stated it in Lecture 10 and recalled it at the decisive moment of Lecture 11 — it is marked with “!!!” on page 30 of the handwritten notes. When a student asked whether the matrix in the proof of the normal form should be written with $\tilde F$, the answer was: “it's the same thing … that's how we define partials.” Partial derivatives on a manifold are *defined* by going downstairs, so the matrix of partials of the components $F^j$ upstairs is literally the ordinary Jacobian of $\tilde F$ downstairs. This is what turns every local computation on a manifold into calculus in $\mathbb{R}^m$, and it is used in:
+> This identity was stated in Lecture 10 and recalled at the decisive moment of Lecture 11 — it is marked with “!!!” on page 30 of the handwritten notes. In particular the matrix in the proof of the normal form is the same whether written with the components $F^j$ or with $\tilde F$. Partial derivatives on a manifold are *defined* by going downstairs, so the matrix of partials of the components $F^j$ upstairs is literally the ordinary Jacobian of $\tilde F$ downstairs. This is what turns every local computation on a manifold into calculus in $\mathbb{R}^m$, and it is used in:
 > 1. the matrix of the differential (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), which is a one-line proof because of it;
 > 2. regular values in one chart (Proposition [[§30 The Differential in Coordinates#^prop-30-8|§30.8]]): the rank of $F_{*p}$ is the rank of $\tilde F'(\varphi(p))$;
 > 3. the proof of the local normal form (Theorem [[§36 Submersions#^thm-36-6|§36.6]]), where the matrix $\big[\partial F^j/\partial x^i(p)\big]$ is built from the components $F^j$ but is the Jacobian of $\tilde F$;
@@ -103,7 +103,7 @@ $$
 ^thm-30-2
 
 > [!proof]+ Proof
-> *(Lecture 10 — “once you think about it a little bit, it's a one-line proof.”)* Three things are claimed: $F_{\ast p}$ is linear; the displayed formula for $F_{\ast p}(\partial/\partial x^i|_p)$; and the description of the matrix of $F_{\ast p}$.
+> *(Lecture 10.)* Three things are claimed: $F_{\ast p}$ is linear; the displayed formula for $F_{\ast p}(\partial/\partial x^i|_p)$; and the description of the matrix of $F_{\ast p}$.
 >
 > *Linearity.* This is Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]: $F_{\ast p}$ maps $T_pM$ into $T_{F(p)}N$ and is linear.
 >
@@ -121,7 +121,7 @@ $$
 >
 > Substituting these coefficients into the universal formula gives $F_{\ast p}(\partial/\partial x^i|_p) = \sum_j \partial F^j/\partial x^i(p)\, \partial/\partial y^j|_{F(p)}$. That is the formula.
 >
-> *The matrix.* By Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3), with the basis $e_i = \partial/\partial x^i|_p$ of $T_pM$ (the basis $\mathcal{B}_M$) and the basis $f_j = \partial/\partial y^j|_{F(p)}$ of $T_{F(p)}N$ (the basis $\mathcal{B}_N$), the $i$-th column of the matrix of $F_{\ast p}$ consists of the coefficients of $F_{\ast p}(\partial/\partial x^i|_p)$ in the basis $\mathcal{B}_N$, and its entry in row $j$ is the coefficient of $f_j$. By the formula, that coefficient is $\partial F^j/\partial x^i(p)$; so $j$ is the row index and $i$ the column index. For the identification with $\tilde F'(\varphi(p))$ — the “claim” of the lecture — this is Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]: the partials are *defined* through the chart, and $F^j \circ \varphi^{-1} = \tilde F^j$, so $\partial F^j/\partial x^i(p) = \partial \tilde F^j/\partial r^i(\varphi(p))$, which is the $(j,i)$ entry of $\tilde F'(\varphi(p))$, row $j$ of the Jacobian being the gradient of the $j$-th component $\tilde F^j$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]). So the two $n \times m$ matrices agree entry by entry. “It's all the same.”
+> *The matrix.* By Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3), with the basis $e_i = \partial/\partial x^i|_p$ of $T_pM$ (the basis $\mathcal{B}_M$) and the basis $f_j = \partial/\partial y^j|_{F(p)}$ of $T_{F(p)}N$ (the basis $\mathcal{B}_N$), the $i$-th column of the matrix of $F_{\ast p}$ consists of the coefficients of $F_{\ast p}(\partial/\partial x^i|_p)$ in the basis $\mathcal{B}_N$, and its entry in row $j$ is the coefficient of $f_j$. By the formula, that coefficient is $\partial F^j/\partial x^i(p)$; so $j$ is the row index and $i$ the column index. For the identification with $\tilde F'(\varphi(p))$ — the claim of the lecture — this is Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]: the partials are *defined* through the chart, and $F^j \circ \varphi^{-1} = \tilde F^j$, so $\partial F^j/\partial x^i(p) = \partial \tilde F^j/\partial r^i(\varphi(p))$, which is the $(j,i)$ entry of $\tilde F'(\varphi(p))$, row $j$ of the Jacobian being the gradient of the $j$-th component $\tilde F^j$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]). So the two $n \times m$ matrices agree entry by entry.
 
 ^pf-30-2
 
@@ -132,11 +132,11 @@ $$
 > - The same statement between vector spaces: [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]].
 
 > [!remark] Remark
-> **Which index is the row.** Uribe's mnemonic, “from the mid-nineteenth century”: *gradients go across*. Row $j$ of the matrix is the gradient of the single function $F^j$, so moving along a row changes $i$; the column $i$ is the image of the $i$-th basis vector, as it must be for the matrix of a linear map.
+> **Which index is the row.** The mnemonic is *gradients go across*. Row $j$ of the matrix is the gradient of the single function $F^j$, so moving along a row changes $i$; the column $i$ is the image of the $i$-th basis vector, as it must be for the matrix of a linear map.
 
 ^rem-30-2
 
-**Transcription notes.** Page 26 of the handwritten notes calls $\mathcal{B}_N$ a basis “of $T_{F(p)}M$”. Page 27 (Lecture 10) repeats the lemma with the basis written $\{\partial/\partial y^j|_p,\ 1 \le j \le m\}$ “of $T_{F(p)}M$” — three slips at once: the base point is $F(p)$, the index runs to $n = \dim N$, and the space is $T_{F(p)}N$. In the same proof the universal formula is written with $\partial/\partial y^j|_p$ for $\partial/\partial y^j|_{F(p)}$. A student asked whether the index on $F^j$ belongs upstairs or downstairs; upstairs, as for coordinates, with $j$ the row index. Uribe also announced that the partials will from now on be written in calculus notation, $\partial F^j/\partial x^i(p)$ rather than $\partial/\partial x^i|_p[F^j]$.
+**Transcription notes.** Page 26 of the handwritten notes calls $\mathcal{B}_N$ a basis “of $T_{F(p)}M$”. Page 27 (Lecture 10) repeats the lemma with the basis written $\{\partial/\partial y^j|_p,\ 1 \le j \le m\}$ “of $T_{F(p)}M$” — three slips at once: the base point is $F(p)$, the index runs to $n = \dim N$, and the space is $T_{F(p)}N$. In the same proof the universal formula is written with $\partial/\partial y^j|_p$ for $\partial/\partial y^j|_{F(p)}$. The index on $F^j$ belongs upstairs, as for coordinates, with $j$ the row index. From now on the partials are written in calculus notation, $\partial F^j/\partial x^i(p)$ rather than $\partial/\partial x^i|_p[F^j]$.
 
 > [!theorem] Corollary §30.3: The Chain Rule in Coordinates
 > Let $F : M \to N$ and $G : N \to O$ be smooth, with charts $(U,\varphi)$ at $p$, $(V,\psi)$ at $F(p)$ and $(W,\chi)$ at $G(F(p))$ such that $F(U) \subseteq V$ and $G(V) \subseteq W$, and write $\tilde F = \psi \circ F \circ \varphi^{-1}$, $\tilde G = \chi \circ G \circ \psi^{-1}$ and $\widetilde{G \circ F} = \chi \circ (G \circ F) \circ \varphi^{-1}$ for the coordinate representations. Then $\widetilde{G \circ F} = \tilde G \circ \tilde F$ on $\varphi(U)$, and
@@ -446,14 +446,14 @@ $$
 > \gamma'(0) = \lim_{h \to 0} \frac{1}{h}\big(\gamma(h) - \gamma(0)\big)
 > $$
 >
-> makes sense in any vector space with a topology in which to take the limit (“you could take it in a Banach space … if you're doing functional analysis”).
+> makes sense in any vector space with a topology in which to take the limit — for instance a Banach space, as in functional analysis.
 
 ^rem-30-4
 
 Moreover, all the tangent spaces of $V$ are identified with one another, and with $V$, by *translations*.
 
 > [!definition] Definition §30.1: Translation
-> Let $V$ be a finite-dimensional vector space and $p \in V$ (“I want to call it $p$ because I want to think of it as a point”). The **translation** by $p$ is
+> Let $V$ be a finite-dimensional vector space and $p \in V$. The **translation** by $p$ is
 >
 > $$
 > \tau_p : V \to V, \qquad \tau_p(v) = v + p ,
@@ -473,7 +473,7 @@ Moreover, all the tangent spaces of $V$ are identified with one another, and wit
 ^prop-30-7
 
 > [!proof]+ Proof
-> *(Lecture 17: “its pushforward is the identification”; filled in.)*
+> *(Lecture 17 stated that the pushforward of $\tau_p$ is the identification; filled in.)*
 >
 > *(1)* Fix a linear coordinate system $L : V \to \mathbb{R}^m$, a chart of $V$ with domain $V$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|§22.4]]), and put $\tilde p = L(p)$. For $x \in \mathbb{R}^m$, by the definition of $\tau_p$ and the linearity of $L$,
 >
@@ -497,11 +497,11 @@ Moreover, all the tangent spaces of $V$ are identified with one another, and wit
 
 *Uses:* [[§30 The Differential in Coordinates#^def-30-1|Def. §30.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
 
-“This is a canonical way to identify all of these tangent vectors. … That's what we did already”: a [[§25 The Geometric Tangent Space#^def-25-1|geometric tangent vector]] to the circle at $p$ was drawn as a vector in $\mathbb{R}^2$, which silently translates it back to the origin.
+This is a canonical way to identify all the tangent spaces of $V$, and it was already in use: a [[§25 The Geometric Tangent Space#^def-25-1|geometric tangent vector]] to the circle at $p$ was drawn as a vector in $\mathbb{R}^2$, which silently translates it back to the origin.
 
 **Transcription note (Lecture 17).** Page 45 of the handwritten notes writes the identification as “$T_pM \cong T_0V \cong V$”; it is $T_pV \cong T_0V \cong V$.
 
-Uribe added: “this is actually kind of like a left-invariant vector field. It is a left-invariant vector field.” For fixed $v$, the field $p \mapsto D_v|_p$ is the [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|left-invariant field]], with value $D_v|_0$ at the identity, of the [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]] $(V, +)$ ([[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-2|Example §60.2]]).
+For fixed $v$, the field $p \mapsto D_v|_p$ is a left-invariant vector field: it is the [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|left-invariant field]], with value $D_v|_0$ at the identity, of the [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]] $(V, +)$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-2|§60.2]]).
 
 > [!definition] Definition §30.2: Rank of a Smooth Map
 > Let $F : M \to N$ be a smooth map. The **rank** of $F$ at $p$ is the rank of the linear map $F_{\ast p} : T_pM \to T_{F(p)}N$ of abstract tangent spaces; by Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] it is the rank of the Jacobian of any coordinate representation.
@@ -535,7 +535,7 @@ Uribe added: “this is actually kind of like a left-invariant vector field. It 
 > - The Euclidean definition it extends: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]; restated with critical values in [[§36 Submersions#^def-36-4|Def. §36.4]].
 
 > [!remark] Remark: The Map Is Intrinsic — the Matrix Is Not
-> Uribe's closing point. The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. *(Computed; not from lecture.)* Explicitly, if $(U', \varphi')$ and $(V', \psi')$ are other charts at $p$ and $F(p)$ with $F(U') \subseteq V'$, and $\hat F = \psi' \circ F \circ \varphi'^{-1}$ is the coordinate representation in them, then near $\varphi'(p)$, $\hat F = (\psi' \circ \psi^{-1}) \circ \tilde F \circ (\varphi \circ \varphi'^{-1})$, and the Euclidean chain rule gives the product of an $n \times n$, an $n \times m$ and an $m \times m$ matrix,
+> The linear map $F_{\ast p}$ is defined with no choices, but its matrix depends on both charts: by Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], changing them multiplies the matrix on each side by the Jacobian of a transition function. *(Computed; not from lecture.)* Explicitly, if $(U', \varphi')$ and $(V', \psi')$ are other charts at $p$ and $F(p)$ with $F(U') \subseteq V'$, and $\hat F = \psi' \circ F \circ \varphi'^{-1}$ is the coordinate representation in them, then near $\varphi'(p)$, $\hat F = (\psi' \circ \psi^{-1}) \circ \tilde F \circ (\varphi \circ \varphi'^{-1})$, and the Euclidean chain rule gives the product of an $n \times n$, an $n \times m$ and an $m \times m$ matrix,
 >
 > $$
 > \hat F'\big(\varphi'(p)\big) = \big(\psi' \circ \psi^{-1}\big)'\big(\psi(F(p))\big)\; \tilde F'\big(\varphi(p)\big)\; \big(\varphi \circ \varphi'^{-1}\big)'\big(\varphi'(p)\big),

@@ -41,7 +41,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 ^pf-16-2
 
-**Not proved here.** Stated in lecture with “we'll say more about that.” The usual argument reduces a matrix of positive determinant to the identity by a path, using Gaussian elimination or the polar decomposition together with connectedness of $\mathrm{SO}(n)$. Only [[§16 The Classical Groups#^prop-16-1|Proposition §16.1]] is needed below.
+**Not proved here.** Stated in lecture without proof. The usual argument reduces a matrix of positive determinant to the identity by a path, using Gaussian elimination or the polar decomposition together with connectedness of $\mathrm{SO}(n)$. Only [[§16 The Classical Groups#^prop-16-1|Proposition §16.1]] is needed below.
 
 ![[m591-5-1.svg]]
 *$\mathrm{O}(2)$ as two circles: the rotations $\mathrm{SO}(2)$ over $\det = +1$ and the reflections $R_\theta S$ over $\det = -1$.*
@@ -62,7 +62,7 @@ $$
 The determinant is continuous with only the values $\pm 1$ on $\mathrm{O}(n)$, so it splits $\mathrm{O}(n)$ into two disjoint open and closed pieces, by the argument that disconnects $\mathrm{GL}(n,\mathbb{R})$ ([[§16 The Classical Groups#^prop-16-1|Proposition §16.1]]). That each piece is connected, so that $\mathrm{O}(n)$ has exactly two components, is Lee's Proposition 21.34.
 
 > [!example] Example §16.1: Why $\mathrm{SO}(n)$ Is a Proper Subgroup of $\mathrm{O}(n)$
-> A student asked why one bothers to intersect with $\mathrm{SL}$: does $\mathrm{O}(n)$ not already sit inside $\mathrm{SL}(n)$? No: $\det = \pm 1$, and both signs occur. The reflection
+> Intersecting with $\mathrm{SL}$ is not redundant: $\mathrm{O}(n)$ does not sit inside $\mathrm{SL}(n)$, since $\det = \pm 1$ and both signs occur. The reflection
 >
 > $$
 > g = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}

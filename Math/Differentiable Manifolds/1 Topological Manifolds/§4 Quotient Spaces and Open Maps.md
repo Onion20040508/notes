@@ -129,7 +129,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 
 ^lem-4-3
 
-> [!proof]+ Proof (not given in lecture — “go home and check yourself”)
+> [!proof]+ Proof (not given in lecture; left as an exercise)
 > First, for a basis element: $\pi_X(U \times V) = U$ if $V \neq \emptyset$ (and $= \emptyset$ if $V = \emptyset$), open either way. A general open $A \subseteq X \times Y$ is a union of basis elements, $A = \bigcup_i U_i \times V_i$, and images commute with unions:
 >
 > $$
@@ -154,7 +154,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 > \pi^{-1}\!\left(\pi\!\left(-\tfrac12, \tfrac12\right)\right) = \left(-\tfrac12, \tfrac12\right) \cup \{1\},
 > $$
 >
-> because the identified point $[0] = [1]$ has the *two* preimages $0$ and $1$. This set is not open in $\mathbb{R}$ (no neighborhood of $1$ fits inside), so $\pi\left(-\tfrac12,\tfrac12\right)$ is not open in the quotient, and $\sim$ is not an open relation. Uribe: “I love little examples like this.”
+> because the identified point $[0] = [1]$ has the *two* preimages $0$ and $1$. This set is not open in $\mathbb{R}$ (no neighborhood of $1$ fits inside), so $\pi\left(-\tfrac12,\tfrac12\right)$ is not open in the quotient, and $\sim$ is not an open relation.
 
 ^ex-4-2
 
@@ -230,7 +230,7 @@ The single most useful fact about the quotient topology — that a map *out* of 
 In lecture, saturation was named after the proposition, as the set $\pi^{-1}(\pi(U))$ appearing in it; the notion is worth having on its own (it recurs for orbit spaces in [[§13 Group Actions and Orbit Spaces|§13]]), which is why it is defined first here, with its elementary properties.
 
 > [!remark] Remark: In Words
-> The saturation of $U$ is $U$ together with everything equivalent to something in $U$ — “you push forward and then take the preimage.” [[§4 Quotient Spaces and Open Maps#^prop-4-6|Proposition §4.6]] then reads as a slogan: *$\sim$ is open iff the saturation of every open set is open.* In the [[§4 Quotient Spaces and Open Maps#^ex-4-2|non-example above]], saturating $\left(-\tfrac12,\tfrac12\right)$ adjoined the isolated point $1$ and destroyed openness. In the [[§9 Complex Projective Space#^prop-9-1|ℂPⁿ example below]], saturating an open set means rotating it in every possible way, which *preserves* openness — that contrast is the whole point of the definition.
+> The saturation of $U$ is $U$ together with everything equivalent to something in $U$ — that is, $\pi^{-1}(\pi(U))$: push forward and then take the preimage. [[§4 Quotient Spaces and Open Maps#^prop-4-6|Proposition §4.6]] then reads as a slogan: *$\sim$ is open iff the saturation of every open set is open.* In the [[§4 Quotient Spaces and Open Maps#^ex-4-2|non-example above]], saturating $\left(-\tfrac12,\tfrac12\right)$ adjoined the isolated point $1$ and destroyed openness. In the [[§9 Complex Projective Space#^prop-9-1|ℂPⁿ example below]], saturating an open set means rotating it in every possible way, which *preserves* openness — that contrast is the whole point of the definition.
 
 ^rem-4-3
 

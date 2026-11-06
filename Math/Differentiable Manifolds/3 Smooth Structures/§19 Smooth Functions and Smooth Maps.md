@@ -52,7 +52,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-1|Def. §19.1]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-9|Def. §17.9]], [[Multivariable Chain Rule|452 §12.2]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§2 Topological Manifolds#^prop-2-11|§2.11]]
 
 > [!remark] Remark
-> The point of logic Uribe stopped to make: the definition says “there *exists* a chart,” and the proposition upgrades it to “*any* chart.” Without the proposition, smoothness of $f$ would appear to depend on which charts one happened to test it in. The upgrade costs exactly one use of compatibility — which is what compatibility was designed to buy ([[§17 Differentiable Structures#^thm-17-1|§17.1]]). He assigned this as an exercise, not to be collected: “you have to wrestle with this.”
+> The point of logic: the definition says “there *exists* a chart,” and the proposition upgrades it to “*any* chart.” Without the proposition, smoothness of $f$ would appear to depend on which charts one happened to test it in. The upgrade costs exactly one use of compatibility — which is what compatibility was designed to buy ([[§17 Differentiable Structures#^thm-17-1|§17.1]]). The proposition was set in lecture as an exercise, not to be collected.
 
 ^rem-19-1
 
@@ -176,7 +176,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 ^lem-19-5
 
 > [!proof]+ Proof
-> *(Lecture 7: “something that I would trust ChatGPT to prove without looking at the answer”; filled in.)* $G \circ F$ is continuous as a composite of continuous maps. Fix $p \in M$; we must produce charts at $p$ and at $G(F(p))$ satisfying Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. The order of choices matters.
+> *(Lecture 7, as a routine verification; filled in.)* $G \circ F$ is continuous as a composite of continuous maps. Fix $p \in M$; we must produce charts at $p$ and at $G(F(p))$ satisfying Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. The order of choices matters.
 >
 > *Step 1: charts for $G$ at $F(p)$.* Since $G$ is smooth, there are smooth charts $(V, \psi)$ of $N$ with $F(p) \in V$ and $(W, \chi)$ of $P$ with $G(V) \subseteq W$ such that $\chi \circ G \circ \psi^{-1}$ is smooth on $\psi(V)$.
 >
@@ -269,7 +269,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 ^rem-19-4
 
 > [!remark] Remark
-> Uribe: “the composition of smooth maps is smooth is something I would trust ChatGPT to prove without looking at the answer.” The only content is Step 2 — the middle charts produced by the two hypotheses need not agree, and one must shrink the domain using continuity of $F$ and then pay one transition function to switch. “Just compose the two” skips exactly this.
+> That a composite of smooth maps is smooth is a routine verification. The only content is Step 2 — the middle charts produced by the two hypotheses need not agree, and one must shrink the domain using continuity of $F$ and then pay one transition function to switch. “Just compose the two” skips exactly this.
 
 ^rem-19-5
 
@@ -288,7 +288,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 ^ex-19-1
 
 > [!proof]+ Working out the example
-> *(Lecture 5 introduced this example — the two structures are “not compatible, but isomorphic” — and Lecture 6 returned to it: “different, but isomorphic. We're going to say diffeomorphic.” Worked out here.)* *Step 1: the formula of a chart is not a legality condition.* One is tempted to object that $\psi$ “is not smooth.” On a bare topological manifold that question is not yet posed: “smooth” for a function on $M$ has no meaning until a structure is fixed, and here $\psi$ is what supplies the structure. What makes $\sqrt[3]{\,\cdot\,}$ look illegitimate is a silent comparison against the standard structure of $\mathbb{R}$ — and that comparison is not part of Definition [[§17 Differentiable Structures#^def-17-1|§17.1]]; it is the compatibility question of [[§17 Differentiable Structures|§17]], arriving early and in disguise. Any homeomorphism onto an open set is a chart, whatever its formula. The formula is irrelevant to whether the chart may be written down, and decisive for which structure it produces.
+> *(Lecture 5 introduced this example — the two structures are not compatible, but isomorphic — and Lecture 6 returned to it, naming this kind of isomorphism *diffeomorphism*. Worked out here.)* *Step 1: the formula of a chart is not a legality condition.* One is tempted to object that $\psi$ “is not smooth.” On a bare topological manifold that question is not yet posed: “smooth” for a function on $M$ has no meaning until a structure is fixed, and here $\psi$ is what supplies the structure. What makes $\sqrt[3]{\,\cdot\,}$ look illegitimate is a silent comparison against the standard structure of $\mathbb{R}$ — and that comparison is not part of Definition [[§17 Differentiable Structures#^def-17-1|§17.1]]; it is the compatibility question of [[§17 Differentiable Structures|§17]], arriving early and in disguise. Any homeomorphism onto an open set is a chart, whatever its formula. The formula is irrelevant to whether the chart may be written down, and decisive for which structure it produces.
 >
 > *Step 2: each chart is smooth for its own structure.* By Definition [[§17 Differentiable Structures#^def-17-2|§17.2]], a function $h : \mathbb{R} \to \mathbb{R}$ is smooth in the sense of $\psi$ iff $h \circ \psi^{-1}$ is smooth, where $\psi^{-1}(y) = y^3$. Taking $h = \psi$ gives $\psi \circ \psi^{-1} = \mathrm{id}$, which is smooth. So $\sqrt[3]{\,\cdot\,}$ *is* a smooth function on $\widetilde{\mathbb{R}}$. Nothing is special about this chart: the coordinate representation of any chart in its own coordinates is the identity, so every chart of an atlas is smooth for the structure that atlas generates. In the same way $\psi : \widetilde{\mathbb{R}} \to \mathbb{R}$ is a diffeomorphism — a chart is exactly an identification of its domain with a piece of Euclidean space, carried out in whichever coordinate the chart names. Explicitly, by Definitions [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]] and [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]: $\psi$ is a homeomorphism, so continuous with continuous inverse $\psi^{-1}(y) = y^3$; in the charts $(\mathbb{R}, \psi)$ of $\widetilde{\mathbb{R}}$ and $(\mathbb{R}, \mathrm{id})$ of $\mathbb{R}$ its coordinate representation is $\mathrm{id} \circ \psi \circ \psi^{-1} = \mathrm{id}_{\mathbb{R}}$, and that of $\psi^{-1}$ is $\psi \circ \psi^{-1} \circ \mathrm{id}^{-1} = \mathrm{id}_{\mathbb{R}}$, both smooth.
 >
@@ -468,7 +468,7 @@ To compare two smooth manifolds one needs smooth *maps* between them.
 > - Product topology in 590: [[§4 Product Topology#^def-4-1|590 Def. §4.1]]; the tangent space of a product: [[§31 Tangent Vectors as Velocities of Curves#^thm-31-6|§31.6]].
 
 > [!definition] Definition §19.7: Product Manifold
-> The **product manifold** $M_1 \times M_2$ is the product space with the smooth structure generated by the product charts ([[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]]). If $\varphi_1 = (x^1, \ldots, x^{m_1})$ and $\varphi_2 = (y^1, \ldots, y^{m_2})$, the coordinate functions of the product chart are $x^i \circ \pi_1$ and $y^j \circ \pi_2$, written again $x^i$, $y^j$: “the $x$'s and then the $y$'s”.
+> The **product manifold** $M_1 \times M_2$ is the product space with the smooth structure generated by the product charts ([[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]]). If $\varphi_1 = (x^1, \ldots, x^{m_1})$ and $\varphi_2 = (y^1, \ldots, y^{m_2})$, the coordinate functions of the product chart are $x^i \circ \pi_1$ and $y^j \circ \pi_2$, written again $x^i$, $y^j$: the $x$'s and then the $y$'s.
 
 ^def-19-7
 

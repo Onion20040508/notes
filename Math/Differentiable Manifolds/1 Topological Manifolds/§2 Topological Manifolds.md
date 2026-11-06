@@ -25,7 +25,7 @@ tags: [differentiable-manifolds, math591]
 ^def-2-1
 
 > [!remark] Remark: Quantifier Order
-> As first written on the board, the definition read “$\forall p\ \exists U\ \exists \varphi: U \to \mathbb{R}^n$,” with $n$ implicitly fixed. A student asked whether $n$ is allowed to depend on $p$; the answer in this course is **no**: “$\exists n$” comes *before* “$\forall p$.” See the remark “[[§2 Topological Manifolds#^rem-2-3|Conventions on the Dimension]]” below for what happens under the other convention.
+> As first written on the board, the definition read “$\forall p\ \exists U\ \exists \varphi: U \to \mathbb{R}^n$,” with $n$ implicitly fixed. Is $n$ allowed to depend on $p$? In this course the answer is **no**: “$\exists n$” comes *before* “$\forall p$.” See the remark “[[§2 Topological Manifolds#^rem-2-3|Conventions on the Dimension]]” below for what happens under the other convention.
 
 ^rem-2-1
 
@@ -51,7 +51,7 @@ tags: [differentiable-manifolds, math591]
 ## Dimension
 
 > [!remark] Remark: Conventions on the Dimension
-> Manifold theory is an old subject (a couple of hundred years, depending on where one starts counting), and conventions vary between books. In particular, **some books allow $n$ to depend on $p$**. Under that convention, the union of a sphere and a line (disjoint) would be a manifold with dimension $2$ on one component and $1$ on the other. It is a theorem, however, that $n$ is then constant on connected components ([[§2 Topological Manifolds#^cor-2-2|Corollary §2.2]] below). A second convention, which follows Lee: the empty set satisfies the definition of a topological $n$-manifold for *every* $n$, which is why statements about dimension, such as Lee's Theorem 1.2, are made for nonempty manifolds. This is a minor point—but the general lesson is important: *when you read a book on this subject, always check its conventions first.* (Uribe warns this gets worse in MATH 635, Riemannian geometry.)
+> Manifold theory is an old subject (a couple of hundred years, depending on where one starts counting), and conventions vary between books. In particular, **some books allow $n$ to depend on $p$**. Under that convention, the union of a sphere and a line (disjoint) would be a manifold with dimension $2$ on one component and $1$ on the other. It is a theorem, however, that $n$ is then constant on connected components ([[§2 Topological Manifolds#^cor-2-2|Corollary §2.2]] below). A second convention, which follows Lee: the empty set satisfies the definition of a topological $n$-manifold for *every* $n$, which is why statements about dimension, such as Lee's Theorem 1.2, are made for nonempty manifolds. This is a minor point—but the general lesson is important: *when you read a book on this subject, always check its conventions first.* (Conventions diverge even more in Riemannian geometry, MATH 635.)
 
 ^rem-2-3
 
@@ -227,8 +227,6 @@ The fact that the dimension of a manifold is well-defined rests on the following
 >   a countable subcollection of $\mathcal{B}$ (indexed by subsets of $\mathbb{Q}^2$ and $\{1,2\} \times \mathbb{Q}$). We verify [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]]. Let $W$ be open and $x \in W$; then $x$ lies in some member $B \in \mathcal{B}$ with $B \subseteq W$.
 >   If $x$ lies in a ray: either $B = (a,b)$ is an interval, or $B = N_k(\delta)$ and then $x \in (-\delta, 0)$ or $x \in (0,\delta)$, an interval contained in $B$; in both cases $x$ lies in an open interval $(a,b) \subseteq W$ inside a ray, and choosing rationals $a < a' < x < b' < b$ with $(a',b')$ still inside the ray gives $x \in (a',b') \in \mathcal{B}_{\mathbb{Q}}$ and $(a',b') \subseteq W$.
 >   If $x = 0_i$: the only members of $\mathcal{B}$ containing $0_i$ are the $N_i(\delta)$, so $B = N_i(\delta)$; choose $q \in \mathbb{Q}$ with $0 < q < \delta$, and then $0_i \in N_i(q) \subseteq N_i(\delta) \subseteq W$ with $N_i(q) \in \mathcal{B}_{\mathbb{Q}}$.
->
-> Uribe: this is the *trickiest* of the three counterexamples to come up with—once you have one, there are a million variations.
 
 ^ex-2-1
 
@@ -283,7 +281,7 @@ The line with two origins through the course: defined by its neighbourhood bases
 *Uses:* [[§2 Topological Manifolds#^ex-2-1|Ex. §2.1]], [[§2 Topological Manifolds#^ex-2-2|Ex. §2.2]], [[§2 Topological Manifolds#^ex-2-3|Ex. §2.3]], [[§1 Point-Set Topology Review#^ex-1-4|Ex. §1.4]]
 
 > [!remark] Remark: Dimension-Zero Version
-> A student observed that $\mathbb{R}_{\mathrm{disc}}$ alone already works: it is $T_2$ (discrete), locally Euclidean of dimension $0$ (each $\{x\}$ is an open neighborhood homeomorphic to $\mathbb{R}^0 = \{\text{pt}\}$), and not second countable ([[§1 Point-Set Topology Review#^ex-1-2|Example §1.2]]). The next proposition says exactly why: it is uncountable.
+> $\mathbb{R}_{\mathrm{disc}}$ alone already works: it is $T_2$ (discrete), locally Euclidean of dimension $0$ (each $\{x\}$ is an open neighborhood homeomorphic to $\mathbb{R}^0 = \{\text{pt}\}$), and not second countable ([[§1 Point-Set Topology Review#^ex-1-2|Example §1.2]]). The next proposition says exactly why: it is uncountable.
 
 ^rem-2-6
 
@@ -302,11 +300,11 @@ The line with two origins through the course: defined by its neighbourhood bases
 *Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^ex-1-2|Ex. §1.2]], [[§2 Basis for a Topology#^rem-2-2|590 §2 (Characterization of Discrete Topology)]]
 
 > [!remark] Remark: A Warning: $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$ vs. $\mathbb{R}^2$
-> A student asked whether the horizontal lines are homeomorphic to $\mathbb{R}^2$. No: each line is a $1$-dimensional open subset. Since no two Euclidean spaces of different dimensions are homeomorphic ([[§2 Topological Manifolds#^thm-2-1|Theorem §2.1]]), $X$ is not homeomorphic to $\mathbb{R}^2$ even though it has the same underlying set. The topology, not the set, is what determines the dimension.
+> Each horizontal line of $X$ is a $1$-dimensional open subset. Since no two Euclidean spaces of different dimensions are homeomorphic ([[§2 Topological Manifolds#^thm-2-1|Theorem §2.1]]), $X$ is not homeomorphic to $\mathbb{R}^2$ even though it has the same underlying set. The topology, not the set, is what determines the dimension.
 
 ^rem-2-7
 
-The failure of second countability in the last example is detected by counting components. This is the mechanism Uribe alluded to (“when you have a countable basis, the number of connected components is countable”); the precise statement needs local connectedness, which locally Euclidean spaces have.
+The failure of second countability in the last example is detected by counting components. This is the mechanism behind the slogan that a space with a countable basis has countably many connected components; the precise statement needs local connectedness, which locally Euclidean spaces have.
 
 > [!theorem] Proposition §2.6: Countably Many Components
 > If $X$ is locally Euclidean and second countable, then $X$ has at most countably many connected components.
@@ -328,7 +326,7 @@ The failure of second countability in the last example is detected by counting c
 
 The sphere $S^2$ with its hemisphere charts, and the spheres $S^n$ as topological manifolds, are collected in [[§8 Spheres|§8]].
 
-Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone point, a closed disk—the last of these is a manifold *with boundary*). There was no time to discuss these in lecture; the homework is where such examples live. Uribe emphasized that the most interesting examples of the course are in the homework, which is a reason to do it without AI.
+Many spaces are *not* topological manifolds (e.g. two lines crossing, a cone point, a closed disk—the last of these is a manifold *with boundary*). Such examples are treated in the homework.
 
 ## Connectedness and Path Connectedness
 
@@ -463,7 +461,7 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 ^prop-2-11
 
 > [!proof]+ Proof
-> *(Stated in Lecture 1 — “for a topological manifold, this will be a continuous map, homeomorphism actually”; filled in.)* $U \cap V$ is open in $U$, so $\varphi(U \cap V)$ is open in $A$ ($\varphi$ is a homeomorphism, hence an open map), and therefore open in $\mathbb{R}^n$ since $A$ is; likewise for $\psi(U \cap V)$. The map $\varphi^{-1}|_{\varphi(U \cap V)} : \varphi(U \cap V) \to U \cap V$ is a homeomorphism (restriction of one), as is $\psi|_{U \cap V} : U \cap V \to \psi(U \cap V)$; their composite is a homeomorphism.
+> *(Stated in Lecture 1; filled in.)* $U \cap V$ is open in $U$, so $\varphi(U \cap V)$ is open in $A$ ($\varphi$ is a homeomorphism, hence an open map), and therefore open in $\mathbb{R}^n$ since $A$ is; likewise for $\psi(U \cap V)$. The map $\varphi^{-1}|_{\varphi(U \cap V)} : \varphi(U \cap V) \to U \cap V$ is a homeomorphism (restriction of one), as is $\psi|_{U \cap V} : U \cap V \to \psi(U \cap V)$; their composite is a homeomorphism.
 
 ^pf-2-11
 
@@ -494,7 +492,7 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 ^prop-2-12
 
 > [!proof]+ Proof
-> *(Lecture 14, asking for it to be added to the notes: “that's obviously true, because you go down to Euclidean space. You have an open set. You just take the ball … and pull it up”; filled in.)* Take a [[§2 Topological Manifolds#^def-2-3|chart]] $(U, \varphi)$ at $q$ and $\varepsilon > 0$ with the closed ball $\overline{B}_\varepsilon(\varphi(q)) \subseteq \varphi(U)$. Put $V = \varphi^{-1}\big(B_\varepsilon(\varphi(q))\big)$, open in $U$ and hence in $M$, and $K = \varphi^{-1}\big(\overline{B}_\varepsilon(\varphi(q))\big)$. $K$ is compact, the image of a compact set under the continuous map $\varphi^{-1}$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (2)), hence closed in the [[§1 Point-Set Topology Review#^def-1-8|Hausdorff]] space $M$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (4)). Since $V \subseteq K$, also $\overline V \subseteq K$, and a closed subset of a compact set is compact ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (5)).
+> *(Added at the request of Lecture 14, which sketched the method: pass to Euclidean space through a chart, take a ball there, and pull it back; filled in.)* Take a [[§2 Topological Manifolds#^def-2-3|chart]] $(U, \varphi)$ at $q$ and $\varepsilon > 0$ with the closed ball $\overline{B}_\varepsilon(\varphi(q)) \subseteq \varphi(U)$. Put $V = \varphi^{-1}\big(B_\varepsilon(\varphi(q))\big)$, open in $U$ and hence in $M$, and $K = \varphi^{-1}\big(\overline{B}_\varepsilon(\varphi(q))\big)$. $K$ is compact, the image of a compact set under the continuous map $\varphi^{-1}$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (2)), hence closed in the [[§1 Point-Set Topology Review#^def-1-8|Hausdorff]] space $M$ ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (4)). Since $V \subseteq K$, also $\overline V \subseteq K$, and a closed subset of a compact set is compact ([[§1 Point-Set Topology Review#^prop-1-8|§1.8]] (5)).
 
 ^pf-2-12
 

@@ -44,7 +44,7 @@ tags: [differentiable-manifolds, math591]
 ## The Möbius Band
 
 > [!example] Example §41.2: The Möbius Band
-> The Möbius band fibres over its core circle, with an interval as fibre: “no matter where you cut it, it just looks like a [strip]. But globally, it's not a product.” Concretely, let $E = \big(\mathbb{R} \times (-1, 1)\big)/{\sim}$ with $(s, t) \sim (s + n, (-1)^n t)$ for $n \in \mathbb{Z}$, and $\pi[s, t] = [s] \in \mathbb{R}/\mathbb{Z} \cong S^1$.
+> The Möbius band fibres over its core circle, with an interval as fibre: wherever it is cut, it looks locally like a strip, but globally it is not a product. Concretely, let $E = \big(\mathbb{R} \times (-1, 1)\big)/{\sim}$ with $(s, t) \sim (s + n, (-1)^n t)$ for $n \in \mathbb{Z}$, and $\pi[s, t] = [s] \in \mathbb{R}/\mathbb{Z} \cong S^1$.
 >
 > *Lee: Example 10.3*
 

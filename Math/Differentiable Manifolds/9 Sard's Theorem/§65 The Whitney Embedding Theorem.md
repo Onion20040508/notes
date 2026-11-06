@@ -9,9 +9,9 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: analysis — Every manifold sits inside some Euclidean space; Sard's theorem pushes the dimension down to $2m + 1$.*
 
-*Lecture 21. “There isn't enough time in the semester to cover everything that's on the syllabus, and the only way to cover more is to skip some proofs … I never quite get to degree theory, which is a really cool topic that is officially on the syllabus. So I will be assigning reading.” Then: “Today we're going to talk about the Whitney embedding and immersion theorems.”*
+*Lecture 21: the Whitney embedding and immersion theorems. (To cover more of the syllabus some proofs are skipped; degree theory, officially on the syllabus, is left to assigned reading.)*
 
-The proof, for $M$ compact, has two parts with “totally different” ideas: bump functions embed $M$ in some $\mathbb{R}^k$ (Lemma [[§65 The Whitney Embedding Theorem#^lem-65-1|§65.1]]), and projections along well-chosen lines lower the dimension (Lemmas [[§65 The Whitney Embedding Theorem#^lem-65-3|§65.3]] and [[§65 The Whitney Embedding Theorem#^lem-65-5|§65.5]]). The lemmas come first; Theorem [[§65 The Whitney Embedding Theorem#^thm-65-6|§65.6]] assembles them. The general case, Theorem [[§65 The Whitney Embedding Theorem#^thm-65-9|§65.9]], is sketched in [[§65 The Whitney Embedding Theorem|§65]].
+The proof, for $M$ compact, has two parts with entirely different ideas: bump functions embed $M$ in some $\mathbb{R}^k$ (Lemma [[§65 The Whitney Embedding Theorem#^lem-65-1|§65.1]]), and projections along well-chosen lines lower the dimension (Lemmas [[§65 The Whitney Embedding Theorem#^lem-65-3|§65.3]] and [[§65 The Whitney Embedding Theorem#^lem-65-5|§65.5]]). The lemmas come first; Theorem [[§65 The Whitney Embedding Theorem#^thm-65-6|§65.6]] assembles them. The general case, Theorem [[§65 The Whitney Embedding Theorem#^thm-65-9|§65.9]], is sketched in [[§65 The Whitney Embedding Theorem|§65]].
 
 > [!theorem] Lemma §65.1: Compact Manifolds Embed in Some $\mathbb{R}^k$
 > Let $M$ be a compact smooth manifold of dimension $m$. Then there is an embedding $F : M \to \mathbb{R}^k$ for some $k$.
@@ -21,9 +21,9 @@ The proof, for $M$ compact, has two parts with “totally different” ideas: bu
 ^lem-65-1
 
 > [!proof]+ Proof
-> *(Lecture 21, Part I of the proof of Theorem [[§65 The Whitney Embedding Theorem#^thm-65-6|§65.6]], in the lecture's steps with details filled in.)* “We're going to use bump functions” — “this idea of partition of unity … is kind of behind it.”
+> *(Lecture 21, Part I of the proof of Theorem [[§65 The Whitney Embedding Theorem#^thm-65-6|§65.6]], in the lecture's steps with details filled in.)* The tool is bump functions; the idea of a partition of unity ([[§66 Partitions of Unity|§66]]) is behind the construction.
 >
-> *The cover.* For every $x \in M$ choose a chart $(U_x, \varphi_x)$ at $x$ and an open coordinate ball $B_x \ni x$ with $\overline{B_x} \subseteq U_x$ and $\varphi_x(\overline{B_x})$ a closed ball in $\mathbb{R}^m$ — possible because $\varphi_x(U_x)$ is open, so it contains a closed Euclidean ball about $\varphi_x(x)$, “and then I pull it back.” Let $\chi_x \in C^\infty_0(M)$ with $\operatorname{supp}\chi_x \subseteq U_x$ and $\chi_x \equiv 1$ on $\overline{B_x}$ (the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]). The *open* balls $B_x$ cover $M$ — in lecture Uribe first wrote the cover with the $U_x$, and corrected it: “I want to put a $B$. It's very important.” $M$ is compact, so finitely many cover; relabel them $B_1, \ldots, B_n$, with charts $(U_i, \varphi_i)$ and bump functions $\chi_i$.
+> *The cover.* For every $x \in M$ choose a chart $(U_x, \varphi_x)$ at $x$ and an open coordinate ball $B_x \ni x$ with $\overline{B_x} \subseteq U_x$ and $\varphi_x(\overline{B_x})$ a closed ball in $\mathbb{R}^m$ — possible because $\varphi_x(U_x)$ is open, so it contains a closed Euclidean ball about $\varphi_x(x)$, whose preimage under $\varphi_x$ is $\overline{B_x}$. Let $\chi_x \in C^\infty_0(M)$ with $\operatorname{supp}\chi_x \subseteq U_x$ and $\chi_x \equiv 1$ on $\overline{B_x}$ (the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]). The *open* balls $B_x$ cover $M$; it matters that the cover is by the $B_x$, not the $U_x$, since the steps below use $\chi_i \equiv 1$ on $B_i$. $M$ is compact, so finitely many cover; relabel them $B_1, \ldots, B_n$, with charts $(U_i, \varphi_i)$ and bump functions $\chi_i$.
 >
 > *The map.* Each $\chi_i\varphi_i : M \to \mathbb{R}^m$, defined as $\chi_i \varphi_i$ on $U_i$ and $0$ outside, is smooth: it is smooth on $U_i$ and zero on the open set $M \setminus \operatorname{supp}\chi_i$, and these cover $M$ ($\operatorname{supp}\chi_i$ is compact, hence closed). Define
 >
@@ -31,13 +31,13 @@ The proof, for $M$ compact, has two parts with “totally different” ideas: bu
 > F = \big(\chi_1\varphi_1, \ldots, \chi_n\varphi_n, \chi_1, \ldots, \chi_n\big) : M \to \mathbb{R}^{nm + n},
 > $$
 >
-> “a super big” Euclidean space: $n$ blocks of $m$ components, then $n$ scalars. “It's really very, very clever.”
+> a large Euclidean space: $n$ blocks of $m$ components, then $n$ scalars.
 >
-> *$F$ is injective.* Suppose $F(p) = F(q)$. There is $i$ with $p \in B_i$, so $\chi_i(p) = 1$. The last $n$ components of $F$ are the $\chi$'s, so $\chi_i(q) = \chi_i(p) = 1$; in particular $\chi_i(q) \neq 0$, so $q \in U_i$, because $\chi_i$ vanishes outside $U_i$. “I don't know that $q$ is in $B_i$, but I don't care.” The $i$-th block gives $\chi_i(p)\varphi_i(p) = \chi_i(q)\varphi_i(q)$, that is, $\varphi_i(p) = \varphi_i(q)$; “the charts are bijective, so $p = q$.” “Because we put the $\chi$'s here, we are able to conclude that $p$ and $q$ … are in the same coordinate chart.”
+> *$F$ is injective.* Suppose $F(p) = F(q)$. There is $i$ with $p \in B_i$, so $\chi_i(p) = 1$. The last $n$ components of $F$ are the $\chi$'s, so $\chi_i(q) = \chi_i(p) = 1$; in particular $\chi_i(q) \neq 0$, so $q \in U_i$, because $\chi_i$ vanishes outside $U_i$ ($q$ need not lie in $B_i$). The $i$-th block gives $\chi_i(p)\varphi_i(p) = \chi_i(q)\varphi_i(q)$, that is, $\varphi_i(p) = \varphi_i(q)$; the charts are bijective, so $p = q$. The last $n$ components, the $\chi$'s, are what place $p$ and $q$ in the same coordinate chart.
 >
-> *$F$ is an immersion.* Write $F = (F_1, \ldots, F_n, \chi_1, \ldots, \chi_n)$ with $F_j = \chi_j\varphi_j : M \to \mathbb{R}^m$. Let $p \in M$, $v \in T_pM$, and $\gamma$ a curve with $\gamma(0) = p$ and $D_\gamma = v$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]). “Use curves”: $dF_p(v) = \frac{d}{dt}\big|_{t=0} F(\gamma(t)) = (v_1, \ldots, v_n, \ldots)$, with $v_j = d(F_j)_p(v) \in \mathbb{R}^m$, componentwise. Choose $i$ with $p \in B_i$. Then $\chi_i \equiv 1$ on the open set $B_i \ni p$, so $F_i = \varphi_i$ near $p$ and $v_i = d(\varphi_i)_p(v)$ — equivalently $d(\chi_i)_p = 0$, since $\chi_i \equiv 1$ in a neighbourhood of $p$. As $\varphi_i$ is a diffeomorphism onto its image (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), $v \neq 0$ gives $v_i \neq 0$, so $dF_p(v) \neq 0$: $dF_p$ is injective.
+> *$F$ is an immersion.* Write $F = (F_1, \ldots, F_n, \chi_1, \ldots, \chi_n)$ with $F_j = \chi_j\varphi_j : M \to \mathbb{R}^m$. Let $p \in M$, $v \in T_pM$, and $\gamma$ a curve with $\gamma(0) = p$ and $D_\gamma = v$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]). Using curves, $dF_p(v) = \frac{d}{dt}\big|_{t=0} F(\gamma(t)) = (v_1, \ldots, v_n, \ldots)$, with $v_j = d(F_j)_p(v) \in \mathbb{R}^m$, componentwise. Choose $i$ with $p \in B_i$. Then $\chi_i \equiv 1$ on the open set $B_i \ni p$, so $F_i = \varphi_i$ near $p$ and $v_i = d(\varphi_i)_p(v)$ — equivalently $d(\chi_i)_p = 0$, since $\chi_i \equiv 1$ in a neighbourhood of $p$. As $\varphi_i$ is a diffeomorphism onto its image (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), $v \neq 0$ gives $v_i \neq 0$, so $dF_p(v) \neq 0$: $dF_p$ is injective.
 >
-> *An embedding.* An injective immersion of a compact manifold is an embedding (Corollary [[§44 Embeddings#^cor-44-6|§44.6]]). “End of Part I.”
+> *An embedding.* An injective immersion of a compact manifold is an embedding (Corollary [[§44 Embeddings#^cor-44-6|§44.6]]).
 
 ^pf-65-1
 
@@ -45,7 +45,7 @@ The proof, for $M$ compact, has two parts with “totally different” ideas: bu
 
 ![[m591-61-1.svg]]
 
-Uribe's cartoon for injectivity: $\chi_i \equiv 1$ on $\overline{B}_i$ (“it could be one a little bit outside too”), and zero outside $U_i$. So $\chi_i(q) = 1$ forces $q \in U_i$, where the chart $\varphi_i$ separates points.
+The lecture's cartoon for injectivity: $\chi_i \equiv 1$ on $\overline{B}_i$ (possibly also a little outside it), and zero outside $U_i$. So $\chi_i(q) = 1$ forces $q \in U_i$, where the chart $\varphi_i$ separates points.
 
 *Part II: lower the ambient dimension.* By Lemma [[§65 The Whitney Embedding Theorem#^lem-65-1|§65.1]], a compact $M$ may be taken to be a regular submanifold $M \subseteq \mathbb{R}^N$ (the image of the embedding, Theorem [[§44 Embeddings#^thm-44-1|§44.1]]). Regard $\mathbb{R}^{N-1} \subseteq \mathbb{R}^N$ by $x \mapsto (x, 0)$. To every line $\ell \subseteq \mathbb{R}^N$ through $0$ that is transverse to $\mathbb{R}^{N-1}$, that is, not contained in it, so that $\mathbb{R}^N = \mathbb{R}^{N-1} \oplus \ell$, associate the projection along $\ell$, a linear map $\mathbb{R}^N \to \mathbb{R}^{N-1}$ with kernel $\ell$, and its restriction
 
@@ -53,7 +53,7 @@ $$
 \pi_\ell : M \longrightarrow \mathbb{R}^{N-1} .
 $$
 
-(“Do you guys know the difference between complementary and supplementary? I learned that in elementary school, and I'm still trying to figure out what the difference is.”) We want: *if $N > 2m + 1$, there is an $\ell$ such that $\pi_\ell$ is an embedding.* Applying this repeatedly lowers $N$ to $2m + 1$, “until we're out of parameters.”
+We want: *if $N > 2m + 1$, there is an $\ell$ such that $\pi_\ell$ is an embedding.* Applying this repeatedly lowers $N$ to $2m + 1$, where the hypothesis $N > 2m + 1$ stops holding.
 
 > [!theorem] Lemma §65.2: Lines in a Hyperplane Have Measure Zero
 > Identify $\mathbb{R}^{N-1}$ with $\{y \in \mathbb{R}^N : y^N = 0\}$. The set
@@ -81,13 +81,13 @@ $$
 ^lem-65-3
 
 > [!proof]+ Proof
-> *(Lecture 21, Part II of the proof of Theorem [[§65 The Whitney Embedding Theorem#^thm-65-6|§65.6]].)* “The clever idea”: let $\Delta = \{ (p, p) : p \in M \}$, closed in $M \times M$ since $M$ is Hausdorff, and
+> *(Lecture 21, Part II of the proof of Theorem [[§65 The Whitney Embedding Theorem#^thm-65-6|§65.6]].)* The key idea: let $\Delta = \{ (p, p) : p \in M \}$, closed in $M \times M$ since $M$ is Hausdorff, and
 >
 > $$
 > \sigma : (M \times M) \setminus \Delta \longrightarrow \mathbb{RP}^{N-1}, \qquad (p, q) \longmapsto \operatorname{span}(q - p),
 > $$
 >
-> the line through $0$ parallel to the secant from $p$ to $q$, “the vector $\vec{pq}$, as in Calc 3”; $q - p \neq 0$ because $p \neq q$. *(Filled in.)* $\sigma$ is smooth: it is $(p, q) \mapsto q - p \in \mathbb{R}^N \setminus \{0\}$ followed by the quotient map to $\mathbb{RP}^{N-1}$, which in the chart $\varphi_i$ of Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]] is $w \mapsto (w_k/w_i)_{k \neq i}$, rational with nonvanishing denominator. Its domain is open in $M \times M$, of dimension $2m$, and $\dim \mathbb{RP}^{N-1} = N - 1$. If $2m < N - 1$, the image of $\sigma$ has measure zero (Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]]). So do the lines contained in $\mathbb{R}^{N-1}$: they form a copy of $\mathbb{RP}^{N-2}$, of lower dimension — “the things that are not transverse to $\mathbb{R}^{N-1}$ is a projective space of lower dimension” — whose image under the smooth inclusion has measure zero by the same corollary (Lemma [[§65 The Whitney Embedding Theorem#^lem-65-2|§65.2]]). A union of two sets of measure zero has measure zero (Proposition [[§62 Sets of Measure Zero#^prop-62-4|§62.4]]), so its complement is dense (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4), in charts): “pick $\ell$ not in the image and transverse to $\mathbb{R}^{N-1}$.” For such $\ell$, $\pi_\ell$ is injective: $\pi_\ell(p) = \pi_\ell(q)$ means $q - p \in \ker = \ell$, so for $p \neq q$, $\ell = \operatorname{span}(q - p) = \sigma(p, q)$, contrary to the choice. “I'm going to lose injectivity precisely when I have a $p$ and a $q$ parallel to the line of projection.” The condition $2m < N - 1$ is $N > 2m + 1$, “precisely the bound.”
+> the line through $0$ parallel to the secant from $p$ to $q$, the vector $\vec{pq}$; $q - p \neq 0$ because $p \neq q$. *(Filled in.)* $\sigma$ is smooth: it is $(p, q) \mapsto q - p \in \mathbb{R}^N \setminus \{0\}$ followed by the quotient map to $\mathbb{RP}^{N-1}$, which in the chart $\varphi_i$ of Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]] is $w \mapsto (w_k/w_i)_{k \neq i}$, rational with nonvanishing denominator. Its domain is open in $M \times M$, of dimension $2m$, and $\dim \mathbb{RP}^{N-1} = N - 1$. If $2m < N - 1$, the image of $\sigma$ has measure zero (Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]]). So do the lines contained in $\mathbb{R}^{N-1}$: they form a copy of $\mathbb{RP}^{N-2}$, of lower dimension, whose image under the smooth inclusion has measure zero by the same corollary (Lemma [[§65 The Whitney Embedding Theorem#^lem-65-2|§65.2]]). A union of two sets of measure zero has measure zero (Proposition [[§62 Sets of Measure Zero#^prop-62-4|§62.4]]), so its complement is dense (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4), in charts): pick $\ell$ not in the image of $\sigma$ and transverse to $\mathbb{R}^{N-1}$. For such $\ell$, $\pi_\ell$ is injective: $\pi_\ell(p) = \pi_\ell(q)$ means $q - p \in \ker = \ell$, so for $p \neq q$, $\ell = \operatorname{span}(q - p) = \sigma(p, q)$, contrary to the choice. So injectivity is lost exactly when the secant of some pair $p \neq q$ is parallel to the line of projection. The condition $2m < N - 1$ is $N > 2m + 1$, exactly the bound in the statement.
 
 ^pf-65-3
 
@@ -95,7 +95,7 @@ $$
 
 ![[m591-61-2.svg]]
 
-Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide along lines parallel to $\ell$ onto $\mathbb{R}^{N-1}$. Two points $p \neq q$ collide exactly when the secant $q - p$ is parallel to $\ell$; choosing $\ell$ outside the image of $\sigma$ avoids every such pair. “That's a beautiful proof of the non-optimal Whitney embedding theorem.”
+Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide along lines parallel to $\ell$ onto $\mathbb{R}^{N-1}$. Two points $p \neq q$ collide exactly when the secant $q - p$ is parallel to $\ell$; choosing $\ell$ outside the image of $\sigma$ avoids every such pair. This argument gives the non-optimal Whitney embedding theorem, into $\mathbb{R}^{2m+1}$.
 
 ![[m591-61-3.svg]]
 
@@ -145,7 +145,7 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 ^lem-65-5
 
 > [!proof]+ Proof
-> *(Assignment 6, Problem 4: the submitted solution, written there for $N = 2m + 1$; it uses $N$ only through $2m - 1 < N - 1$, so it proves the lemma for every $N > 2m$, one less than Lemma [[§65 The Whitney Embedding Theorem#^lem-65-3|§65.3]] needs.)* Uribe's sketch from Lecture 21: “The same idea … instead of pairs $(p, q)$ to create a line, you take tangent vectors. You take $p$ and $q$ infinitesimally close together”: map nonzero tangent vectors to lines, $(p, v) \mapsto \mathbb{R}v$, with $T_pM \subseteq \mathbb{R}^N$ (“in the homework you replace this by $v$ of length one”), and choose $\ell$ also outside its image. “What remains to be proved is that if you have a line that is not in here, then you get an immersion, and that's going to be precisely because the differential of the projection is just the projection.”
+> *(Assignment 6, Problem 4: the submitted solution, written there for $N = 2m + 1$; it uses $N$ only through $2m - 1 < N - 1$, so it proves the lemma for every $N > 2m$, one less than Lemma [[§65 The Whitney Embedding Theorem#^lem-65-3|§65.3]] needs.)* Lecture 21 sketched the same idea as for Lemma [[§65 The Whitney Embedding Theorem#^lem-65-3|§65.3]], with tangent vectors in place of pairs $(p, q)$, as if $p$ and $q$ were infinitesimally close together: map nonzero tangent vectors to lines, $(p, v) \mapsto \mathbb{R}v$, with $T_pM \subseteq \mathbb{R}^N$ (the homework restricts to unit vectors $v$), and choose $\ell$ also outside its image. A line outside this image gives an immersion precisely because the differential of the projection is the projection itself (Lemma [[§65 The Whitney Embedding Theorem#^lem-65-4|§65.4]]).
 >
 > *$G(UM)$ has measure zero.* By Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-5|§42.5]], $UM$ is a regular submanifold of $\mathbb{R}^{2N}$ of dimension $2m - 1$, and $G : UM \to \mathbb{RP}^{N-1}$, $G(x, u) = [u]$, is smooth (Lemma [[§65 The Whitney Embedding Theorem#^lem-65-4|§65.4]]). Since $\dim UM = 2m - 1 < N - 1 = \dim \mathbb{RP}^{N-1}$, Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]] shows that $G(UM)$ has measure zero in $\mathbb{RP}^{N-1}$.
 >
@@ -165,15 +165,15 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 ^thm-65-6
 
 > [!proof]+ Proof
-> *(Lecture 21, “two steps … totally different. The technology, the ideas are totally different.” The steps are Lemma [[§65 The Whitney Embedding Theorem#^lem-65-1|§65.1]] and Lemmas [[§65 The Whitney Embedding Theorem#^lem-65-3|§65.3]]–[[§65 The Whitney Embedding Theorem#^lem-65-5|§65.5]]; the immersion lemma was a homework problem, Assignment 6, Problem 4, filled in above.)*
+> *(Lecture 21, in two steps with entirely different ideas: Lemma [[§65 The Whitney Embedding Theorem#^lem-65-1|§65.1]] and Lemmas [[§65 The Whitney Embedding Theorem#^lem-65-3|§65.3]]–[[§65 The Whitney Embedding Theorem#^lem-65-5|§65.5]]; the immersion lemma was a homework problem, Assignment 6, Problem 4, filled in above.)*
 >
 > *Step 1: some Euclidean space.* By Lemma [[§65 The Whitney Embedding Theorem#^lem-65-1|§65.1]] there is an embedding $M \to \mathbb{R}^N$ for some $N$. Its image is a regular submanifold diffeomorphic to $M$ (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]); replace $M$ by it.
 >
 > *Step 2: one dimension less.* Suppose $N > 2m + 1$. By Lemmas [[§65 The Whitney Embedding Theorem#^lem-65-3|§65.3]] and [[§65 The Whitney Embedding Theorem#^lem-65-5|§65.5]], the lines $\ell$ that lie in $\mathbb{R}^{N-1}$, or for which $\pi_\ell$ is not injective, or not an immersion, form the union of two sets of measure zero in $\mathbb{RP}^{N-1}$, which has measure zero (Proposition [[§62 Sets of Measure Zero#^prop-62-4|§62.4]]). A set of measure zero contains no nonempty open set (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4), in a chart), so it is not all of $\mathbb{RP}^{N-1}$: choose $\ell$ outside it. Then $\pi_\ell : M \to \mathbb{R}^{N-1}$ is an injective immersion of a compact manifold, hence an embedding (Corollary [[§44 Embeddings#^cor-44-6|§44.6]]), and its image is a regular submanifold of $\mathbb{R}^{N-1}$ diffeomorphic to $M$.
 >
-> *Step 3: repeat.* Apply Step 2 while $N > 2m + 1$, lowering $N$ by one each time, “until we're out of parameters”: this ends with an embedding $M \to \mathbb{R}^{2m+1}$.
+> *Step 3: repeat.* Apply Step 2 while $N > 2m + 1$, lowering $N$ by one each time until $N = 2m + 1$: this ends with an embedding $M \to \mathbb{R}^{2m+1}$.
 >
-> *Step 4: the immersion.* *(Assignment 6, Problem 4; the submitted solution's reduction.)* Now $M \subseteq \mathbb{R}^{2m+1}$, and $N = 2m + 1 > 2m$, so Lemma [[§65 The Whitney Embedding Theorem#^lem-65-5|§65.5]] gives a line $\ell \not\subseteq \mathbb{R}^{2m}$ with $\pi_\ell : M \to \mathbb{R}^{2m}$ an immersion. For the original manifold, compose with the diffeomorphism $\iota$ from $M$ onto its image in $\mathbb{R}^{2m+1}$: if $F'$ is an immersion of $\iota(M)$, then so is $F' \circ \iota$, since by the chain rule $d(F' \circ \iota)_x = dF'_{\iota(x)} \circ d\iota_x$, where $d\iota_x$ is an isomorphism onto $T_{\iota(x)}\iota(M)$ and $dF'_{\iota(x)}$ is injective on $T_{\iota(x)}\iota(M)$. “One more projection”: where the embedding stops at $2m + 1$, the immersion goes one dimension further.
+> *Step 4: the immersion.* *(Assignment 6, Problem 4; the submitted solution's reduction.)* Now $M \subseteq \mathbb{R}^{2m+1}$, and $N = 2m + 1 > 2m$, so Lemma [[§65 The Whitney Embedding Theorem#^lem-65-5|§65.5]] gives a line $\ell \not\subseteq \mathbb{R}^{2m}$ with $\pi_\ell : M \to \mathbb{R}^{2m}$ an immersion. For the original manifold, compose with the diffeomorphism $\iota$ from $M$ onto its image in $\mathbb{R}^{2m+1}$: if $F'$ is an immersion of $\iota(M)$, then so is $F' \circ \iota$, since by the chain rule $d(F' \circ \iota)_x = dF'_{\iota(x)} \circ d\iota_x$, where $d\iota_x$ is an isomorphism onto $T_{\iota(x)}\iota(M)$ and $dF'_{\iota(x)}$ is injective on $T_{\iota(x)}\iota(M)$. So one more projection is possible: where the embedding stops at $2m + 1$, the immersion goes one dimension further.
 
 ^pf-65-6
 
@@ -181,7 +181,7 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 
 ## The Noncompact Case: A Sketch
 
-*Lecture 22. “An indication of a sketch of proof, very sketchy … I already said several times we can't prove everything,” with “chapter and verse” of the rest in Lee to follow by email. The noncompact proof has the same two parts as the compact one — first put $M$ in some Euclidean space, then project as much as you can — and Uribe sketched only the first. “The main tool is going to be a theorem that I hope to prove later”: the existence of exhaustion functions. “Notation and terminology are key to doing math. It's a nice name, exhaustion function.”*
+*Lecture 22. Only a sketch of the proof, with precise references to Lee for the rest. The noncompact proof has the same two parts as the compact one — first put $M$ in some Euclidean space, then project as much as you can — and the lecture sketched only the first. The main tool is the existence of exhaustion functions (Proposition [[§65 The Whitney Embedding Theorem#^prop-65-7|§65.7]]), proved later.*
 
 > [!definition] Definition §65.1: Exhaustion Function
 > An **exhaustion function** on $M$ is a smooth function $f : M \to \mathbb{R}$, $f \ge 0$, such that for every $c \in \mathbb{R}$ the **sublevel set** $f^{-1}\big((-\infty, c]\big)$ is compact.
@@ -190,7 +190,7 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 
 ^def-65-1
 
-“The cartoon, which is used in Morse theory”: stand $M$ up with $f$ as the height. The level set at $c$ is the slice at height $c$, and the sublevel set is everything below it, compact for every $c$ — “and it's not obvious, but these things always exist.”
+The cartoon, also used in Morse theory: stand $M$ up with $f$ as the height. The level set at $c$ is the slice at height $c$, and the sublevel set is everything below it, compact for every $c$. It is not obvious that exhaustion functions always exist (Proposition [[§65 The Whitney Embedding Theorem#^prop-65-7|§65.7]]).
 
 > [!theorem] Proposition §65.7: Exhaustion Functions Exist
 > Every smooth manifold admits an exhaustion function.
@@ -200,17 +200,17 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 ^prop-65-7
 
 > [!proof]+ Proof (Lecture 23)
-> Announced in Lecture 22 and proved with partitions of unity — “right now we're sort of buying on credit. We have to pay the bill.” Uribe's email of Oct 26: “On Wednesday I will discuss the construction of exhaustion functions, which is Proposition 2.28.” The proof is in [[§66 Partitions of Unity|§66]], after partitions of unity ([[§66 Partitions of Unity|§66]]).
+> Announced in Lecture 22, used there before it is proved, and proved in Lecture 23 with partitions of unity. The proof is in [[§66 Partitions of Unity|§66]], after partitions of unity ([[§66 Partitions of Unity|§66]]).
 
 ^pf-65-7
 
-*Slicing $M$ into compact pieces.* “The idea is going to be that we're going to use these level sets … to slice the manifold into compact pieces. They will have a boundary, but I'm going to ignore that. And basically, we're going to be able to embed each piece and keep track of overlaps.” Let $f$ be an exhaustion function. Its singular values have measure zero (Theorem [[§63 Sard's Theorem#^thm-63-3|§63.3]]), so every interval contains regular values; for each $i = 0, 1, 2, \ldots$ pick regular values $a_i, b_i$ with $i < a_i < b_i < i + 1$, and put
+*Slicing $M$ into compact pieces.* The idea is to use level sets of an exhaustion function to slice $M$ into compact pieces, which have boundary (ignored in the sketch), to embed each piece, and to keep track of the overlaps. Let $f$ be an exhaustion function. Its singular values have measure zero (Theorem [[§63 Sard's Theorem#^thm-63-3|§63.3]]), so every interval contains regular values; for each $i = 0, 1, 2, \ldots$ pick regular values $a_i, b_i$ with $i < a_i < b_i < i + 1$, and put
 
 $$
 E_i = f^{-1}\big([b_{i-1}, a_{i+1}]\big), \qquad D_i = f^{-1}\big([i, i+1]\big) \qquad (i \ge 1),
 $$
 
-with $E_0 = f^{-1}\big((-\infty, a_1]\big)$ and $D_0 = f^{-1}\big((-\infty, 1]\big)$ (“you have to do something a little bit different at the beginning”). Each $E_i$ is compact (a closed subset of a sublevel set), and a manifold with boundary, because $b_{i-1}$ and $a_{i+1}$ are regular values. Then $M = \bigcup_i D_i$, $D_i \subseteq \operatorname{Int}E_i$, and the observation “that will be useful later”:
+with $E_0 = f^{-1}\big((-\infty, a_1]\big)$ and $D_0 = f^{-1}\big((-\infty, 1]\big)$. Each $E_i$ is compact (a closed subset of a sublevel set), and a manifold with boundary, because $b_{i-1}$ and $a_{i+1}$ are regular values. Then $M = \bigcup_i D_i$, $D_i \subseteq \operatorname{Int}E_i$, and, for later use,
 
 $$
 E_i \cap E_{i+2} = \varnothing ,
@@ -220,7 +220,7 @@ since $E_i \subseteq f^{-1}\big((-\infty, a_{i+1}]\big)$ and $E_{i+2} \subseteq 
 
 ![[m591-65-2.svg]]
 
-Left: a sublevel set of an exhaustion function on a surface with holes, as on the board. *(Not from lecture: the surface is plotted, not drawn.)* Here $M$ is the boundary of a thickened ladder in $\mathbb{R}^3$, the zero set of a smooth function: a noncompact surface (it continues upward) with a hole between consecutive rungs, and $f$ is the height, an exhaustion function on $M$; the sublevel set $f^{-1}\big((-\infty, c]\big)$ (orange) is compact. Right: the slicing (“Lee doesn't have a figure”). $E_i$ runs from the regular value $b_{i-1}$, just below $i$, to $a_{i+1}$, just above $i + 1$, and contains the band $D_i$ (teal) between the integer levels $i$ and $i + 1$ in its interior. The height has critical points at the top and bottom of each rung, where the topology of the sublevel sets changes (the starting point of Morse theory); the levels $c$, $a_i$, $b_i$ are regular values, so they miss these heights, and each $E_i$ is a compact manifold with boundary — here $E_i$ contains two of the holes.
+Left: a sublevel set of an exhaustion function on a surface with holes, as on the board. *(Not from lecture: the surface is plotted, not drawn.)* Here $M$ is the boundary of a thickened ladder in $\mathbb{R}^3$, the zero set of a smooth function: a noncompact surface (it continues upward) with a hole between consecutive rungs, and $f$ is the height, an exhaustion function on $M$; the sublevel set $f^{-1}\big((-\infty, c]\big)$ (orange) is compact. Right: the slicing (not pictured in Lee). $E_i$ runs from the regular value $b_{i-1}$, just below $i$, to $a_{i+1}$, just above $i + 1$, and contains the band $D_i$ (teal) between the integer levels $i$ and $i + 1$ in its interior. The height has critical points at the top and bottom of each rung, where the topology of the sublevel sets changes (the starting point of Morse theory); the levels $c$, $a_i$, $b_i$ are regular values, so they miss these heights, and each $E_i$ is a compact manifold with boundary — here $E_i$ contains two of the holes.
 
 > [!theorem] Proposition §65.8: A Proper Embedding from the Slices
 > Let $f$ be an exhaustion function on $M$, $\dim M = m$, and $E_i, D_i$ as above. Suppose that each $E_i$ admits an embedding $F_i : E_i \to \mathbb{R}^{2m+1}$, and let $\rho_i : M \to \mathbb{R}$ be smooth with $\operatorname{supp}\rho_i \subseteq \operatorname{Int}E_i$ and $\rho_i \equiv 1$ on a neighbourhood of $D_i$. Then
@@ -236,11 +236,11 @@ Left: a sublevel set of an exhaustion function on a surface with holes, as on th
 ^prop-65-8
 
 > [!proof]+ Proof
-> *(Lecture 22 gave the construction and the reason for properness; injectivity and the immersion property “are completely analogous to the compact [case] … you can read it in Lee,” and are filled in from Lee. The two hypotheses are the lecture's “credit”: that compact manifolds with boundary embed in $\mathbb{R}^{2m+1}$ — “forgetting that we have manifolds with boundary, which we haven't discussed” — and that the cutoffs $\rho_i$ exist, which partitions of unity provide.)*
+> *(Lecture 22 gave the construction and the reason for properness; injectivity and the immersion property, completely analogous to the compact case, are filled in from Lee. The two hypotheses are assumed, not proved, in the lecture: that compact manifolds with boundary embed in $\mathbb{R}^{2m+1}$ (manifolds with boundary are not discussed in the course), and that the cutoffs $\rho_i$ exist, which partitions of unity provide.)*
 >
-> *$F$ is smooth.* $\rho_iF_i$, “in principle only defined on $E_i$, … extends smoothly as zero outside”: it is smooth on the open set $\operatorname{Int}E_i$ and zero on the open set $M \setminus \operatorname{supp}\rho_i$, which together cover $M$. “These sums that look very, very scary are actually locally finite”: the $E_i$ with $i$ of one parity are pairwise disjoint closed sets, and only finitely many of them meet a neighbourhood $f^{-1}\big((c - 1, c + 1)\big)$, since $E_i \subseteq f^{-1}([i - 1, i + 2])$. So near each point at most one term of each sum is nonzero.
+> *$F$ is smooth.* $\rho_iF_i$, a priori defined only on $E_i$, extends smoothly by zero outside $E_i$: it is smooth on the open set $\operatorname{Int}E_i$ and zero on the open set $M \setminus \operatorname{supp}\rho_i$, which together cover $M$. The sums are locally finite: the $E_i$ with $i$ of one parity are pairwise disjoint closed sets, and only finitely many of them meet a neighbourhood $f^{-1}\big((c - 1, c + 1)\big)$, since $E_i \subseteq f^{-1}([i - 1, i + 2])$. So near each point at most one term of each sum is nonzero.
 >
-> *$F$ is proper* — “properness comes from having $f$” as a component. If $K \subseteq \mathbb{R}^{2(2m+1)+1}$ is compact, the last coordinate is bounded on $K$, say by $c$, so $F^{-1}(K)$ is a closed subset of the compact sublevel set $f^{-1}\big((-\infty, c]\big)$, hence compact (Definition [[§44 Embeddings#^def-44-2|§44.2]]).
+> *$F$ is proper* — properness comes from having $f$ as a component. If $K \subseteq \mathbb{R}^{2(2m+1)+1}$ is compact, the last coordinate is bounded on $K$, say by $c$, so $F^{-1}(K)$ is a closed subset of the compact sublevel set $f^{-1}\big((-\infty, c]\big)$, hence compact (Definition [[§44 Embeddings#^def-44-2|§44.2]]).
 >
 > *$F$ is injective.* Suppose $F(p) = F(q)$. Then $f(p) = f(q)$, so if $p \in D_j$ then $q \in D_j$, and $\rho_j(p) = \rho_j(q) = 1$. In the block of the parity of $j$, every other term vanishes at $p$ and $q$: for $i \neq j$ of that parity $|i - j| \ge 2$, so $\operatorname{supp}\rho_i \subseteq E_i$ misses $E_j \supseteq D_j$. So that block reads $F_j(p) = F_j(q)$, and $F_j$ is injective: $p = q$.
 >
@@ -252,13 +252,16 @@ Left: a sublevel set of an exhaustion function on a surface with holes, as on th
 
 *Uses:* [[§44 Embeddings#^def-44-2|Def. §44.2]], [[§44 Embeddings#^thm-44-5|§44.5]]
 
-A student asked whether the last coordinate is there for injectivity. “This entry here makes it proper”: “an exhaustion function is proper,” and properness is what turns an injective immersion of a noncompact manifold into an embedding. “That's a beautiful, clever idea.”
+> [!remark] Remark: {Why the Last Coordinate Is $f$}
+> The last coordinate $f$ in Proposition [[§65 The Whitney Embedding Theorem#^prop-65-8|§65.8]] is not there for injectivity: it makes $F$ proper, since an exhaustion function is proper, and properness is what turns an injective immersion of a noncompact manifold into an embedding (Theorem [[§44 Embeddings#^thm-44-5|§44.5]]).
+
+^rem-65-1
 
 ![[m591-65-1.svg]]
 
-*(Not from lecture; figure added.)* Why the noncompact embedding is made proper. The curve $\gamma(t) = \big(\sin 2s, \sin s\big)$, $s = \pi + 2\arctan t$, is an injective immersion $\mathbb{R} \to \mathbb{R}^2$, but both ends approach $\gamma(0)$: the preimage of a small closed disc $\overline{B}$ about $\gamma(0)$ contains two half-lines, so $\gamma$ is not proper, and its image is not an embedded submanifold near $\gamma(0)$. Adding an exhaustion function as an extra coordinate (“this entry here makes it proper”) pulls the ends apart in height, which is what Proposition [[§65 The Whitney Embedding Theorem#^prop-65-8|§65.8]] does with $f$.
+*(Not from lecture; figure added.)* Why the noncompact embedding is made proper. The curve $\gamma(t) = \big(\sin 2s, \sin s\big)$, $s = \pi + 2\arctan t$, is an injective immersion $\mathbb{R} \to \mathbb{R}^2$, but both ends approach $\gamma(0)$: the preimage of a small closed disc $\overline{B}$ about $\gamma(0)$ contains two half-lines, so $\gamma$ is not proper, and its image is not an embedded submanifold near $\gamma(0)$. Adding an exhaustion function as an extra coordinate makes the map proper: it pulls the ends apart in height, which is what Proposition [[§65 The Whitney Embedding Theorem#^prop-65-8|§65.8]] does with $f$.
 
-*The projection step*, only indicated: “since you now have a noncompact manifold, the thing can be all over the place.” $\mathbb{R}^{2(2m+1)}$ is diffeomorphic to an open ball, so the first two blocks can be squeezed into a ball, and with $f$ as the last coordinate the image lies in a tube, ball $\times\ \mathbb{R}$; “once you have it in a tube, you can start controlling the projections. The projections have to be proper.” Reading: Lee, Lemma 6.14 and its figure; Uribe's email of Oct 26 assigns Lemmas 6.13 and 6.14 and Theorem 6.15 for the noncompact case.
+*The projection step*, only indicated: for a noncompact manifold the image can spread all over the ambient space. $\mathbb{R}^{2(2m+1)}$ is diffeomorphic to an open ball, so the first two blocks can be squeezed into a ball, and with $f$ as the last coordinate the image lies in a tube, ball $\times\ \mathbb{R}$; once the image lies in a tube the projections can be controlled, and they have to be proper. Reading: Lee, Lemma 6.14 and its figure; the email of Oct 26 assigns Lemmas 6.13 and 6.14 and Theorem 6.15 for the noncompact case.
 
 > [!theorem] Theorem §65.9: The Whitney Embedding and Immersion Theorems
 > Let $M$ be a smooth manifold of dimension $m$. Then there is an embedding $M \to \mathbb{R}^{2m+1}$ and an immersion $M \to \mathbb{R}^{2m}$.
@@ -267,12 +270,12 @@ A student asked whether the last coordinate is there for injectivity. “This en
 
 ^thm-65-9
 
-“In other words, any manifold is diffeomorphic to a submanifold of some Euclidean space” (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]). The course proves the compact case in full (Theorem [[§65 The Whitney Embedding Theorem#^thm-65-6|§65.6]]). The noncompact case, which first makes the embedding proper, is sketched above and assigned as reading in Lee (Lemma 6.14 and Theorem 6.15): “he has a beautiful picture.”
+In other words, every manifold is diffeomorphic to a submanifold of some Euclidean space (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]). The course proves the compact case in full (Theorem [[§65 The Whitney Embedding Theorem#^thm-65-6|§65.6]]). The noncompact case, which first makes the embedding proper, is sketched above and assigned as reading in Lee (Lemma 6.14 and Theorem 6.15), which has a figure of the construction.
 
 > [!remark] Remark: The Hard Version
-> In the “hard” version the dimensions are one less: an embedding into $\mathbb{R}^{2m}$ and an immersion into $\mathbb{R}^{2m-1}$ (for $m > 1$ in the second; Lee, Theorems 6.19 and 6.20). “We will not discuss this at all. The proof is very specialized and really long … The smaller the codimension, the tighter it is, and you have to wrestle the manifold more to get it in there. It's like packing your clothes in a suitcase.”
+> In the “hard” version the dimensions are one less: an embedding into $\mathbb{R}^{2m}$ and an immersion into $\mathbb{R}^{2m-1}$ (for $m > 1$ in the second; Lee, Theorems 6.19 and 6.20). The course does not discuss it: the proof is very specialized and long. The smaller the codimension, the tighter the fit, and the harder the manifold must be manipulated to fit in.
 
-^rem-65-1
+^rem-65-2
 
 > [!proof]+ Proof (sketch; the details are reading in Lee)
 > *(Lecture 22 sketched the noncompact case; the rest is assigned reading.)* For $M$ compact this is Theorem [[§65 The Whitney Embedding Theorem#^thm-65-6|§65.6]]. In general, take an exhaustion function $f$ (Proposition [[§65 The Whitney Embedding Theorem#^prop-65-7|§65.7]]) and slice $M$ into the compact pieces $E_i$ above. Each $E_i$, a compact manifold with boundary, embeds in $\mathbb{R}^{2m+1}$ by the method of Theorem [[§65 The Whitney Embedding Theorem#^thm-65-6|§65.6]] (manifolds with boundary are not treated in these notes), and the cutoffs $\rho_i$ come from partitions of unity (Theorem [[§66 Partitions of Unity#^thm-66-1|§66.1]], [[§66 Partitions of Unity|§66]]); Proposition [[§65 The Whitney Embedding Theorem#^prop-65-8|§65.8]] then gives a proper embedding $M \to \mathbb{R}^{2(2m+1)+1}$. Lowering the dimension to $2m + 1$ needs projections that stay proper: squeeze the image into a tube, ball $\times\ \mathbb{R}$, and project as in Lemmas [[§65 The Whitney Embedding Theorem#^lem-65-3|§65.3]]–[[§65 The Whitney Embedding Theorem#^lem-65-5|§65.5]] (Lee, Lemma 6.14 and Theorem 6.15). The immersion into $\mathbb{R}^{2m}$ is Lee, Theorem 6.18; in the compact case it is part of the homework.

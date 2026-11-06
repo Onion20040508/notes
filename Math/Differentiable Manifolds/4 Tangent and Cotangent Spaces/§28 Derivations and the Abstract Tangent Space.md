@@ -10,7 +10,7 @@ tags: [differentiable-manifolds, math591]
 *Stage: abstract — The abstract tangent space $T_pM$ as the derivations at $p$, and the differential $F_{\ast p}$ that pushes them forward. The two notions of tangent space agree wherever both exist (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]).*
 
 > [!remark] Remark: Two Faces of a Tangent Vector
-> Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces — “like Janus.” It is a *velocity*, the $\gamma'(0)$ of a curve — an element of the geometric tangent space $T^{\mathrm{geo}}_pM$, which is how [[§25 The Geometric Tangent Space#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]] met it; and it is a *derivation*, an operator that eats germs and returns numbers — an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). The same split will reappear for vector fields: as velocities attached to every point they *generate dynamics*, and as operators they lead to the *Lie derivative*.
+> Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces. It is a *velocity*, the $\gamma'(0)$ of a curve — an element of the geometric tangent space $T^{\mathrm{geo}}_pM$, which is how [[§25 The Geometric Tangent Space#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]] met it; and it is a *derivation*, an operator that eats germs and returns numbers — an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). The same split will reappear for vector fields: as velocities attached to every point they *generate dynamics*, and as operators they lead to the *Lie derivative*.
 
 ^rem-28-1
 
@@ -164,10 +164,10 @@ tags: [differentiable-manifolds, math591]
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§27 Germs#^prop-27-2|§27.2]]
 
-Both parts were set as an exercise in Lecture 9, where Uribe noted that (2) is “a very simple consequence of the product rule” and is part of a problem on Assignment 3, which introduces the ideal $I_p$ under that name. In commutative algebra the same ideal is written $\mathfrak{m}_p$, the notation used in the [[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|remark]] at the end of [[§29 Coordinate Derivations and the Basis Theorem|§29, Coordinate Derivations and the Basis Theorem]].
+Both parts were set as an exercise in Lecture 9; (2) is a direct consequence of the product rule and is part of a problem on Assignment 3, which introduces the ideal $I_p$ under that name. In commutative algebra the same ideal is written $\mathfrak{m}_p$, the notation used in the [[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|remark]] at the end of [[§29 Coordinate Derivations and the Basis Theorem|§29, Coordinate Derivations and the Basis Theorem]].
 
 > [!remark] Remark
-> Uribe listed exactly these two as what must be shown before the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|basis theorem]], and deferred them to the following lecture. They are the entire reason the [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|Taylor–Hadamard]] expansion collapses: the constant term dies by (1), the quadratic remainder dies by (2), and only the linear term survives.
+> These two are exactly what must be shown before the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|basis theorem]]. They are the entire reason the [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|Taylor–Hadamard]] expansion collapses: the constant term dies by (1), the quadratic remainder dies by (2), and only the linear term survives.
 
 ^rem-28-2
 
@@ -215,7 +215,7 @@ Both steps borrowed from Lee are now in these notes: bump functions are Proposit
 
 ## Pushing Derivations Forward
 
-*Lecture 9. Derivations can be pushed forward along smooth maps. In lecture this appeared in the middle of the proof of the basis theorem, as a “new derivation” $\tilde D$ on $\mathbb{R}^n$ built from one on $M$, and was defined properly only afterwards — “the order of my presentation is not ideal.” Here it comes first, so the proof can cite it.*
+*Lecture 9. Derivations can be pushed forward along smooth maps. In lecture this appeared in the middle of the proof of the basis theorem, as a “new derivation” $\tilde D$ on $\mathbb{R}^n$ built from one on $M$, and was defined properly only afterwards. Here it comes first, so the proof can cite it.*
 
 Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The construction has two steps: functions are pulled back, and derivations, being linear functionals on functions, are pushed forward by duality.
 
@@ -275,7 +275,7 @@ Throughout, $F : M \to N$ is a smooth map of smooth manifolds and $p \in M$. The
 > F_{*p} : T_pM \longrightarrow T_{F(p)}N, \qquad D \longmapsto F_{*p}D,
 > $$
 >
-> a map from tangent vectors at $p$ in $M$ to tangent vectors at $F(p)$ in $N$, also written $dF_p$. (Uribe: “the awkward notation $F_{*p}$.”) So $F_{*p}$ acts on derivations; its value $F_{*p}D$ is again a derivation, which acts on germs at $F(p)$.
+> a map from tangent vectors at $p$ in $M$ to tangent vectors at $F(p)$ in $N$, also written $dF_p$. So $F_{*p}$ acts on derivations; its value $F_{*p}D$ is again a derivation, which acts on germs at $F(p)$.
 >
 > *Lee: Ch. 3, The Differential of a Smooth Map*
 
@@ -359,7 +359,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 ^thm-28-6
 
 > [!proof]+ Proof
-> *(Lecture 10: “the proof of the chain rule is one line” — pullbacks compose in the opposite order, because composition is associative. The dualization that follows was set as an exercise, “use this to conclude the proof”; it is filled in.)* $G \circ F$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), so $(G \circ F)_{\ast p}$ is defined. Two linear maps $T_pM \to T_{G(F(p))}P$ are equal if they agree at every $D$, and two derivations at $G(F(p))$ are equal if they agree at every germ; so fix $D \in T_pM$ and a germ $[g]$ at $G(F(p))$.
+> *(Lecture 10: the pullback identity takes one line — pullbacks compose in the opposite order, because composition is associative. The dualization that follows was set as an exercise; it is filled in.)* $G \circ F$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), so $(G \circ F)_{\ast p}$ is defined. Two linear maps $T_pM \to T_{G(F(p))}P$ are equal if they agree at every $D$, and two derivations at $G(F(p))$ are equal if they agree at every germ; so fix $D \in T_pM$ and a germ $[g]$ at $G(F(p))$.
 >
 > *Pullback reverses composition:* $(G\circ F)_p^{\ast} = F_p^{\ast} \circ G_{F(p)}^{\ast}$, since $g \circ (G \circ F) = (g \circ G) \circ F$. Indeed, by Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-5|§28.5]] applied three times (to $G \circ F$ at $p$, to $F$ at $p$, and to $G$ at $F(p)$),
 >
@@ -388,7 +388,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 > - The chain rule of calculus: [[Multivariable Chain Rule|452 §12.2 (Multivariable Chain Rule)]].
 > - Duals compose in the opposite order, $(ST)' = T'S'$: [[§12 Duality#^ladr-3-120|LADR 3.120]]; 591's version, [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]].
 
-**Lecture 10.** Uribe stated this as the Chain Rule and proved the pullback identity $(G \circ F)_p^{\ast} = F_p^{\ast} \circ G_{F(p)}^{\ast}$ on the board — “see, you know that this is the right point of view when proofs become one line” — leaving the dualization as an exercise; the displayed computation above is that exercise. Pullbacks compose in the *opposite* order, so pushforwards, being their duals, compose in the *same* order as the maps. (The theorem appeared here, ahead of the lecture, because the two results below depend on it.)
+**Lecture 10.** Stated as the Chain Rule, with the pullback identity $(G \circ F)_p^{\ast} = F_p^{\ast} \circ G_{F(p)}^{\ast}$ proved on the board and the dualization left as an exercise; the displayed computation above is that exercise. Pullbacks compose in the *opposite* order, so pushforwards, being their duals, compose in the *same* order as the maps. (The theorem appeared here, ahead of the lecture, because the two results below depend on it.)
 
 > [!theorem] Corollary §28.7: Diffeomorphisms Induce Isomorphisms
 > If $\Phi : M \to N$ is a diffeomorphism, then $\Phi_{*p} : T_pM \to T_{\Phi(p)}N$ is a linear isomorphism, with inverse $(\Phi^{-1})_{*\Phi(p)}$.

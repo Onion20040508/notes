@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Reference: Lee Ch. 1, “Smooth Structures.” Lecture 5 was given by a substitute; the transcript is poor, so several steps below are reconstructions and are flagged as such.*
 
 > [!remark] Remark: Why This Section
-> “We want to describe differentiable manifolds. So we take a topological manifold and decorate it a little.” A topological manifold supports the notion of a *continuous* function and nothing finer; the whole point of a differentiable structure is to make the phrase “$f$ is differentiable” meaningful on an abstract space that has no linear structure of its own. Differentiability could mean $C^1, C^2, \ldots$; **in this course it always means $C^\infty$**, and “smooth” and “differentiable” are used interchangeably. Everything below was previewed in [[§2 Topological Manifolds#Charts and Transition Functions|§2, Charts and Transition Functions]]; the new content is the compatibility requirement and the bookkeeping (atlases, maximal atlases) needed to make the resulting notion independent of choices.
+> A differentiable manifold is a topological manifold decorated with extra structure. A topological manifold supports the notion of a *continuous* function and nothing finer; the whole point of a differentiable structure is to make the phrase “$f$ is differentiable” meaningful on an abstract space that has no linear structure of its own. Differentiability could mean $C^1, C^2, \ldots$; **in this course it always means $C^\infty$**, and “smooth” and “differentiable” are used interchangeably. Everything below was previewed in [[§2 Topological Manifolds#Charts and Transition Functions|§2, Charts and Transition Functions]]; the new content is the compatibility requirement and the bookkeeping (atlases, maximal atlases) needed to make the resulting notion independent of choices.
 
 ^rem-17-1
 
@@ -30,7 +30,7 @@ tags: [differentiable-manifolds, math591]
 > - Charts of a smooth structure: [[§19 Smooth Functions and Smooth Maps#^def-19-1|Def. §19.1]].
 
 > [!remark] Remark
-> Requiring $\varphi(U)$ to be open is not an extra condition: by invariance of domain ([[§2 Topological Manifolds#^thm-2-1|§2.1]] and the discussion there) a continuous injection from an open subset of $\mathbb{R}^n$ into $\mathbb{R}^n$ is automatically open. The lecture stated only “$\varphi$ is a homeomorphism onto its image”; we build openness into the definition to avoid invoking a hard theorem.
+> Requiring $\varphi(U)$ to be open is not an extra condition: by invariance of domain ([[§2 Topological Manifolds#^thm-2-1|§2.1]] and the discussion there) a continuous injection from an open subset of $\mathbb{R}^n$ into $\mathbb{R}^n$ is automatically open. The lecture stated only that $\varphi$ is a homeomorphism onto its image; we build openness into the definition to avoid invoking a hard theorem.
 
 ^rem-17-2
 
@@ -54,7 +54,7 @@ tags: [differentiable-manifolds, math591]
 ^def-17-2
 
 > [!remark] Remark: The Problem This Creates
-> [[§17 Differentiable Structures#^def-17-2|Def. §17.2]] depends on $\varphi$, not only on $U$. If a point lies in two chart domains $U$ and $V$, there are *two* notions of smoothness available on $U \cap V$, and nothing so far says they agree. That is the question the rest of the subsection answers: “you've got a notion of what it means to be differentiable here, and a notion of what it means to be differentiable there — are they consistent?”
+> [[§17 Differentiable Structures#^def-17-2|Def. §17.2]] depends on $\varphi$, not only on $U$. If a point lies in two chart domains $U$ and $V$, there are *two* notions of smoothness available on $U \cap V$, and nothing so far says they agree. That is the question the rest of the subsection answers: are the notion of differentiability given by one chart and the notion given by the other consistent?
 
 ^rem-17-3
 
@@ -146,7 +146,7 @@ tags: [differentiable-manifolds, math591]
 ^def-17-5
 
 > [!remark] Remark: Comparing the Classes
-> Uribe: “it's all given by what you ask of the transition functions between charts.” Two cautions on how these classes compare, since the lecture's answer to a student's question was explicitly hedged. First, *lowering $k$ gains nothing*: by a theorem of Whitney, every $C^k$ structure with $k \ge 1$ contains a compatible $C^\infty$ structure, unique up to diffeomorphism, so $C^1$ and $C^\infty$ manifolds are the same objects up to isomorphism. What is genuinely different is $C^0$: there exist topological manifolds carrying *no* smooth structure at all. Second, regularity does matter for *theorems about maps*. Sard's theorem — that the set of critical values of $F : \mathbb{R}^N \to \mathbb{R}^m$ has measure zero — requires $F$ to be $C^k$ with $k \ge \max(1, N-m+1)$, and fails for $C^1$ maps otherwise. Real-analytic manifolds are harder to work with for a different reason: $C^\omega$ functions are rigid, so there are no bump functions and hence no partitions of unity, a tool we will rely on constantly.
+> Everything is determined by what is asked of the transition functions between charts. Two cautions on how these classes compare. First, *lowering $k$ gains nothing*: by a theorem of Whitney, every $C^k$ structure with $k \ge 1$ contains a compatible $C^\infty$ structure, unique up to diffeomorphism, so $C^1$ and $C^\infty$ manifolds are the same objects up to isomorphism. What is genuinely different is $C^0$: there exist topological manifolds carrying *no* smooth structure at all. Second, regularity does matter for *theorems about maps*. Sard's theorem — that the set of critical values of $F : \mathbb{R}^N \to \mathbb{R}^m$ has measure zero — requires $F$ to be $C^k$ with $k \ge \max(1, N-m+1)$, and fails for $C^1$ maps otherwise. Real-analytic manifolds are harder to work with for a different reason: $C^\omega$ functions are rigid, so there are no bump functions and hence no partitions of unity, a tool we will rely on constantly.
 
 ^rem-17-6
 
@@ -303,7 +303,7 @@ tags: [differentiable-manifolds, math591]
 > - The circle as a level set, and the implicit function theorem solving for $y$ (452): [[Unit circle and unit sphere]].
 > - The same charts as graph charts of a regular level set: [[§24 The Circle#^ex-24-1|Ex. §24.1]]; all three circle atlases give one structure: [[§24 The Circle#^prop-24-1|§24.1]].
 
-The board wrote “$x^2 + y^2 = 0$” when setting up the first transition function; the equation of the circle is of course $x^2 + y^2 = 1$. The sign in each transition function is dictated by the quadrant — this is what the lecture meant by “sometimes the square root is positive, sometimes negative; look at the picture to see where you are.” Note also that $\sqrt{1-t^2}$ is *not* smooth at $t = \pm 1$; it does not need to be, because those values are not in the domain of any transition function. Cutting at the axes is exactly what keeps the bad points out.
+The board wrote “$x^2 + y^2 = 0$” when setting up the first transition function; the equation of the circle is of course $x^2 + y^2 = 1$. The sign in each transition function is dictated by the quadrant: the square root is sometimes positive and sometimes negative, and the picture shows which. Note also that $\sqrt{1-t^2}$ is *not* smooth at $t = \pm 1$; it does not need to be, because those values are not in the domain of any transition function. Cutting at the axes is exactly what keeps the bad points out.
 
 ![[m591-8-2.svg]]
 *Left: the four half-circles, drawn at staggered radii so the overlaps are visible. $U_1$ and $U_3$ never meet, nor do $U_2$ and $U_4$; the four nonempty overlaps are the open quadrant arcs, where consecutive colors run alongside each other. Right: the chart $\varphi_2$ on the upper half-circle is vertical projection onto the $x$-axis, a homeomorphism onto $(-1,1)$. Each of the four charts is a projection onto the axis its half-circle is a graph over, which is why the transition functions come out as $\pm\sqrt{1-t^2}$.*
@@ -321,7 +321,7 @@ The board wrote “$x^2 + y^2 = 0$” when setting up the first transition funct
 *Uses:* [[§17 Differentiable Structures#^def-17-1|Def. §17.1]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem|590 §18.12 (Heine–Borel)]], [[Continuous Image of a Compact Space is Compact|590 §18.3]], [[Compact Subspace of a Hausdorff Space is Closed|590 §18.4]], [[§15 Connected Spaces#^lem-15-1|590 §15.1]], [[§16 Connected Subspaces of ℝ#^cor-16-2|590 §16.2]]
 
 > [!remark] Remark
-> “It is absolutely essential to break the circle into charts.” The obstruction is global (compactness), not local: every point of $S^1$ has arbitrarily small neighborhoods that are perfectly good chart domains. A student asked which open sets can serve; the answer is the next proposition.
+> It is essential to break the circle into several charts. The obstruction is global (compactness), not local: every point of $S^1$ has arbitrarily small neighborhoods that are perfectly good chart domains. Which open sets can serve is the content of the next proposition.
 
 ^rem-17-9
 
@@ -339,7 +339,7 @@ The board wrote “$x^2 + y^2 = 0$” when setting up the first transition funct
 > \sigma_S \circ \sigma_N^{-1}(u) = \frac{2u/(u^2+1)}{1 + (u^2-1)/(u^2+1)} = \frac{2u}{2u^2} = \frac{1}{u},
 > $$
 >
-> a diffeomorphism of $\mathbb{R} \setminus \{0\}$ onto itself. So $\{(S^1 \setminus \{N\}, \sigma_N), (S^1 \setminus \{S\}, \sigma_S)\}$ is an atlas with only two charts. (“It is going to be a rational function”: here $u \mapsto 1/u$.) Consistently with [[§17 Differentiable Structures#^prop-17-3|§17.3]], two is the minimum.
+> a diffeomorphism of $\mathbb{R} \setminus \{0\}$ onto itself. So $\{(S^1 \setminus \{N\}, \sigma_N), (S^1 \setminus \{S\}, \sigma_S)\}$ is an atlas with only two charts. (The transition is a rational function, here $u \mapsto 1/u$.) Consistently with [[§17 Differentiable Structures#^prop-17-3|§17.3]], two is the minimum.
 >
 > *Lee: Problem 1-7*
 
@@ -396,7 +396,7 @@ The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axi
 > \varphi_b \circ \varphi_a^{-1}(\theta) = \begin{cases} \theta + 2\pi, & \theta \in (0,\pi), \\ \theta, & \theta \in (\pi, 2\pi), \end{cases}
 > $$
 >
-> a translation on each component of its domain, hence a diffeomorphism. A parametrization is just the inverse of a chart — “putting labels on points” — so the two descriptions carry the same information.
+> a translation on each component of its domain, hence a diffeomorphism. A parametrization is just the inverse of a chart — it puts labels on points — so the two descriptions carry the same information.
 
 ^ex-17-4
 
@@ -406,7 +406,7 @@ The vertical ray is the case $P = S$: the line through $N$ and $S$ meets the axi
 > - Polar angle as a coordinate (452): [[Polar and spherical coordinates]]; parametrizations as inverse charts: [[§20 Manifolds in Euclidean Space#^rem-20-2|§20, Remark: A Parametrization Is an Inverse Chart]].
 
 > [!remark] Remark: Three Atlases and One Structure
-> $S^1$ thus carries at least three different atlases. They are not competing structures: every chart of one is compatible with every chart of another, so they determine the *same* smooth structure. This is proved in [[§24 The Circle#^prop-24-1|§24.1]], once regular level sets are available. For instance, on the arc where $U_2$ (upper half, coordinate $x$) meets $U_a$ the transition is $\theta \mapsto \cos\theta$ with inverse $x \mapsto \arccos x$, and $\sigma_N \circ \varphi_2^{-1}(x) = x/(1 - \sqrt{1-x^2})$ is smooth on $(-1,0) \cup (0,1)$. “Which atlas you write down is a matter of convenience” — what is intrinsic is the maximal atlas they all generate.
+> $S^1$ thus carries at least three different atlases. They are not competing structures: every chart of one is compatible with every chart of another, so they determine the *same* smooth structure. This is proved in [[§24 The Circle#^prop-24-1|§24.1]], once regular level sets are available. For instance, on the arc where $U_2$ (upper half, coordinate $x$) meets $U_a$ the transition is $\theta \mapsto \cos\theta$ with inverse $x \mapsto \arccos x$, and $\sigma_N \circ \varphi_2^{-1}(x) = x/(1 - \sqrt{1-x^2})$ is smooth on $(-1,0) \cup (0,1)$. Which atlas one writes down is a matter of convenience; what is intrinsic is the maximal atlas they all generate.
 
 ^rem-17-10
 
@@ -460,7 +460,7 @@ The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topolo
 > \chi \circ \psi^{-1} = (\chi \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1}),
 > $$
 >
-> where $\varphi \circ \psi^{-1}$ maps $\psi(O)$ into $\varphi(O) \subseteq \varphi(U \cap W)$, the domain of $\chi \circ \varphi^{-1}$. Both factors are smooth because $(U,\varphi)$ is compatible with each of $(W,\chi)$ and $(V,\psi)$ — this factorization is the “little bit of diagram chasing” of the lecture. In detail: $(V,\psi) \in \overline{\mathcal{A}}$ is compatible with $(U,\varphi) \in \mathcal{A}$, so by symmetry of compatibility (Proposition [[§17 Differentiable Structures#^prop-17-2|§17.2]]) the transition $\varphi \circ \psi^{-1} : \psi(U \cap V) \to \varphi(U \cap V)$ is a diffeomorphism, in particular smooth; and $(W,\chi) \in \overline{\mathcal{A}}$ is compatible with $(U,\varphi)$, so the transition $\chi \circ \varphi^{-1} : \varphi(U \cap W) \to \chi(U \cap W)$ is smooth. A composite of smooth maps is smooth (chain rule). Hence $\chi \circ \psi^{-1}$ is smooth near $\psi(p)$. As $p$ was arbitrary it is smooth on all of $\psi(V\cap W)$, and exchanging the roles of the two charts gives smoothness of the inverse: the same argument with $(V,\psi)$ and $(W,\chi)$ renamed into each other shows that $\psi \circ \chi^{-1}$ is smooth on $\chi(V \cap W)$. So $(V,\psi)$ and $(W,\chi)$ are compatible, and $\overline{\mathcal{A}}$ is an atlas.
+> where $\varphi \circ \psi^{-1}$ maps $\psi(O)$ into $\varphi(O) \subseteq \varphi(U \cap W)$, the domain of $\chi \circ \varphi^{-1}$. Both factors are smooth because $(U,\varphi)$ is compatible with each of $(W,\chi)$ and $(V,\psi)$ — this factorization is the diagram chase sketched in lecture. In detail: $(V,\psi) \in \overline{\mathcal{A}}$ is compatible with $(U,\varphi) \in \mathcal{A}$, so by symmetry of compatibility (Proposition [[§17 Differentiable Structures#^prop-17-2|§17.2]]) the transition $\varphi \circ \psi^{-1} : \psi(U \cap V) \to \varphi(U \cap V)$ is a diffeomorphism, in particular smooth; and $(W,\chi) \in \overline{\mathcal{A}}$ is compatible with $(U,\varphi)$, so the transition $\chi \circ \varphi^{-1} : \varphi(U \cap W) \to \chi(U \cap W)$ is smooth. A composite of smooth maps is smooth (chain rule). Hence $\chi \circ \psi^{-1}$ is smooth near $\psi(p)$. As $p$ was arbitrary it is smooth on all of $\psi(V\cap W)$, and exchanging the roles of the two charts gives smoothness of the inverse: the same argument with $(V,\psi)$ and $(W,\chi)$ renamed into each other shows that $\psi \circ \chi^{-1}$ is smooth on $\chi(V \cap W)$. So $(V,\psi)$ and $(W,\chi)$ are compatible, and $\overline{\mathcal{A}}$ is an atlas.
 >
 > *$\overline{\mathcal{A}}$ is maximal.* If a chart $(V,\psi)$ is compatible with every chart of $\overline{\mathcal{A}}$, then in particular with every chart of $\mathcal{A} \subseteq \overline{\mathcal{A}}$, so $(V,\psi) \in \overline{\mathcal{A}}$ by definition. This is the condition of Definition [[§17 Differentiable Structures#^def-17-8|§17.8]].
 >
@@ -472,7 +472,7 @@ The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topolo
 
 *Uses:* [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^def-17-7|Def. §17.7]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]], [[§17 Differentiable Structures#^prop-17-2|§17.2]], [[Multivariable Chain Rule|452 §12.2]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]
 
-Lecture 5 argued uniqueness only (“anything in one is contained in the other, so they are equal”), taking for granted that the collection of all compatible charts is an atlas. Lecture 6 returned to the lemma: Uribe defined $\overline{\mathcal{A}}$ as above, called maximality “not that hard” and the atlas property “more substantial”, and sketched it — a point of the overlap lies in some chart of $\mathcal{A}$, compatible with both charts, “and then you have to do a little bit of diagram chasing” — skipping the details for time. The proof above completes that sketch. That step is the one with content, and the [[§17 Differentiable Structures#^rem-17-8|remark on non-transitivity above]] shows it really needs the mediating chart $(U,\varphi) \in \mathcal{A}$: without an atlas to pass through, pairwise compatibility with a single chart proves nothing. Compare Lee, Proposition 1.17.
+Lecture 5 argued uniqueness only (each of two such maximal atlases is contained in the other, so they are equal), taking for granted that the collection of all compatible charts is an atlas. Lecture 6 returned to the lemma: it defined $\overline{\mathcal{A}}$ as above, treated maximality as the easy part and the atlas property as the substantial one, and sketched the latter — a point of the overlap lies in some chart of $\mathcal{A}$, compatible with both charts, followed by a diagram chase — without the details. The proof above completes that sketch. That step is the one with content, and the [[§17 Differentiable Structures#^rem-17-8|remark on non-transitivity above]] shows it really needs the mediating chart $(U,\varphi) \in \mathcal{A}$: without an atlas to pass through, pairwise compatibility with a single chart proves nothing. Compare Lee, Proposition 1.17.
 
 > [!definition] Definition §17.9: Smooth Manifold Structure
 > A **differentiable (smooth) structure** on a topological manifold $M$ is a maximal atlas $\mathcal{A}$ on $M$. A **smooth manifold** is a pair $\mathcal{M} = (M, \mathcal{A})$. By [[§17 Differentiable Structures#^thm-17-5|§17.5]], specifying any atlas specifies a smooth structure, and two atlases specify the same structure exactly when they are compatible.

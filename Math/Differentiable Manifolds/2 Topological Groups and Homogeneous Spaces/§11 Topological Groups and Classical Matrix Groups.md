@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Reference: Lee Ch. 7 (“Lie Groups”). For the calculus: MATH 452 notes ([[§15 The Implicit Function Theorem|Implicit Function Theorem]]).*
 
 > [!remark] Remark: Why This Section
-> Topological groups are the precursor of *Lie groups*, one of the main topics later in the course; and the classical matrix groups introduced here “are going to be our friends for the semester, and hopefully for later on in life.” Besides being examples of manifolds in their own right ([[§12 The Classical Groups Are Topological Manifolds|§12, The Classical Groups Are Topological Manifolds]]), they are the groups whose *actions* produce the quotient manifolds of [[§13 Group Actions and Orbit Spaces|§13]]–[[§14 Homogeneous Spaces|§14]]: spheres, projective spaces, Grassmannians.
+> Topological groups are the precursor of *Lie groups*, one of the main topics later in the course; and the classical matrix groups introduced here recur throughout the course. Besides being examples of manifolds in their own right ([[§12 The Classical Groups Are Topological Manifolds|§12, The Classical Groups Are Topological Manifolds]]), they are the groups whose *actions* produce the quotient manifolds of [[§13 Group Actions and Orbit Spaces|§13]]–[[§14 Homogeneous Spaces|§14]]: spheres, projective spaces, Grassmannians.
 
 ^rem-11-1
 
@@ -33,7 +33,7 @@ tags: [differentiable-manifolds, math591]
 > - The two ingredients: groups, [[§1 The Definition of a Group#^def-1-1|493 Def. §1.1]]; the product topology, [[§4 Product Topology#^def-4-1|590 Def. §4.1]] (591: [[§3 Subspaces and Products#^def-3-3|Def. §3.3]]).
 
 > [!example] Example §11.1: Discrete Groups
-> Any group $G$ with the discrete topology is a topological group: every subset is open, so every map out of $G$ or $G \times G$ (which is also discrete) is continuous. Uribe: mathematically immediate, but it “actually shows up in useful ways.”
+> Any group $G$ with the discrete topology is a topological group: every subset is open, so every map out of $G$ or $G \times G$ (which is also discrete) is continuous.
 
 ^ex-11-1
 
@@ -182,7 +182,7 @@ tags: [differentiable-manifolds, math591]
 ^prop-11-4
 
 > [!proof]+ Proof
-> *(Lecture 3: the formulas are algebraic — the product in the coordinates, the inverse “using cofactors and determinants” — “so one and two are algebraic maps, hence continuous.” The details are filled in below.)* Multiplication: $(gh)_{ik} = \sum_j g_{ij} h_{jk}$ is a polynomial in the entries of $(g,h) \in \mathbb{R}^{n^2} \times \mathbb{R}^{n^2} = \mathbb{R}^{2n^2}$, so $\operatorname{Mat} \times \operatorname{Mat} \to \operatorname{Mat}$ is continuous; its restriction to $\mathrm{GL} \times \mathrm{GL}$ (subspace of the product, which is the product of the subspaces) is continuous and lands in $\mathrm{GL}$, hence is continuous into $\mathrm{GL}$ by [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]]. Inversion: by the cofactor formula, $g^{-1} = \operatorname{adj}(g)/\det(g)$, where each entry of the adjugate $\operatorname{adj}(g)$ is a polynomial in the entries of $g$ and $\det(g) \neq 0$ on $\mathrm{GL}$; so each entry of $g^{-1}$ is a rational function with nonvanishing denominator, hence continuous on $\mathrm{GL}$. Uribe's summary: “one and two are algebraic maps, hence continuous.”
+> *(Lecture 3: the formulas are algebraic — the product in the coordinates, the inverse via cofactors and determinants — so multiplication and inversion are algebraic maps, hence continuous. The details are filled in below.)* Multiplication: $(gh)_{ik} = \sum_j g_{ij} h_{jk}$ is a polynomial in the entries of $(g,h) \in \mathbb{R}^{n^2} \times \mathbb{R}^{n^2} = \mathbb{R}^{2n^2}$, so $\operatorname{Mat} \times \operatorname{Mat} \to \operatorname{Mat}$ is continuous; its restriction to $\mathrm{GL} \times \mathrm{GL}$ (subspace of the product, which is the product of the subspaces) is continuous and lands in $\mathrm{GL}$, hence is continuous into $\mathrm{GL}$ by [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]]. Inversion: by the cofactor formula, $g^{-1} = \operatorname{adj}(g)/\det(g)$, where each entry of the adjugate $\operatorname{adj}(g)$ is a polynomial in the entries of $g$ and $\det(g) \neq 0$ on $\mathrm{GL}$; so each entry of $g^{-1}$ is a rational function with nonvanishing denominator, hence continuous on $\mathrm{GL}$.
 
 ^pf-11-4
 
@@ -234,7 +234,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 ^prop-11-5
 
 > [!proof]+ Proof
-> *(Stated in Lecture 3 — “$g \in \mathrm{O}(n) \iff g^{-1} = g^{\mathsf T}$”; filled in.)* Writing the dot product as $x \cdot y = x^T y$, we have $(gx)\cdot(gy) = x^T g^T g\, y$. If $g^T g = I$ this equals $x^T y$, so (ii) $\Rightarrow$ (i). Conversely, if (i) holds, take $x = e_i$, $y = e_j$: then $(g^T g)_{ij} = e_i^T g^T g\, e_j = e_i \cdot e_j = \delta_{ij}$, so $g^T g = I$. *(Computed; not from lecture.)* Since $e_i^T g^T g\, e_j = (ge_i) \cdot (ge_j)$ and $ge_j = g_j$ is the $j$-th column of $g$, written out
+> *(Stated in Lecture 3 in the form $g \in \mathrm{O}(n) \iff g^{-1} = g^{\mathsf T}$; filled in.)* Writing the dot product as $x \cdot y = x^T y$, we have $(gx)\cdot(gy) = x^T g^T g\, y$. If $g^T g = I$ this equals $x^T y$, so (ii) $\Rightarrow$ (i). Conversely, if (i) holds, take $x = e_i$, $y = e_j$: then $(g^T g)_{ij} = e_i^T g^T g\, e_j = e_i \cdot e_j = \delta_{ij}$, so $g^T g = I$. *(Computed; not from lecture.)* Since $e_i^T g^T g\, e_j = (ge_i) \cdot (ge_j)$ and $ge_j = g_j$ is the $j$-th column of $g$, written out
 >
 > $$
 > g^T g = \begin{pmatrix}
@@ -321,7 +321,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, why 
 > \mathrm{U}(1) = \{\, \xi \in \mathbb{C} \setminus \{0\} \mid |\xi| = 1 \,\} = S^1,
 > $$
 >
-> the unit circle, which is the notation “everybody uses.” This is the group acting in the construction of $\mathbb{CP}^n$ ([[§9 Complex Projective Space|§9]]).
+> the unit circle, which is the standard notation. This is the group acting in the construction of $\mathbb{CP}^n$ ([[§9 Complex Projective Space|§9]]).
 
 ^ex-11-3
 

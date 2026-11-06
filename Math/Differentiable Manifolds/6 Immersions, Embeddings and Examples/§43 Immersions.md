@@ -15,10 +15,10 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 
 ## Immersions
 
-*Lecture 13. “Next class of special maps”: Lecture 10 listed immersions among the special types of map, and the definition has been on record since ([[§36 Submersions#^def-36-2|Definition §36.2]]); Lecture 13 is where they were first treated seriously, after the tangent bundle ([[§51 The Tangent Bundle|§51]]).*
+*Lecture 13. The next class of special maps: Lecture 10 listed immersions among the special types of map, and the definition has been on record since ([[§36 Submersions#^def-36-2|Definition §36.2]]); Lecture 13 is where they were first treated seriously, after the tangent bundle ([[§51 The Tangent Bundle|§51]]).*
 
 > [!definition] Definition §43.1: Immersions
-> Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$. $F$ is an **immersion at $p$** if $F_{\ast p} : T_pM \to T_{F(p)}N$ is injective — which forces $m \le n$, since an injective linear map cannot lower dimension — and an **immersion** if it is an immersion at every point. “Go from a lower-dimensional manifold to a bigger one.”
+> Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$. $F$ is an **immersion at $p$** if $F_{\ast p} : T_pM \to T_{F(p)}N$ is injective — which forces $m \le n$, since an injective linear map cannot lower dimension — and an **immersion** if it is an immersion at every point.
 >
 > *Lee: Ch. 4, Immersions*
 
@@ -45,7 +45,7 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 >
 > *1. Start with any coordinates.* Take charts $(U_0, \varphi_0 = (x^1, \ldots, x^m))$ at $p$ and $(V_0, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U_0) \subseteq V_0$, shrinking $U_0$ if necessary, and write $F^j = y^j \circ F$. *(Completion.)* Such charts exist by Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]]. Shrinking means: replace $U_0$ by $U_0 \cap F^{-1}(V_0)$, which is open because $F$ is continuous and contains $p$; the restriction of the smooth chart $\varphi_0$ to it is again a smooth chart (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1); its transition maps are restrictions of the old ones). The components $F^j : U_0 \to \mathbb{R}$ are smooth, since $F^j \circ \varphi_0^{-1}$ is the $j$-th component of the smooth coordinate representation $\psi \circ F \circ \varphi_0^{-1}$ (Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]).
 >
-> *2. The Jacobian is taller than wide.* $J = \big[\partial F^j/\partial x^i(p)\big]$ is the matrix of $F_{\ast p}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]): $n$ rows and $m$ columns, “fewer columns than rows.” Written out,
+> *2. The Jacobian is taller than wide.* $J = \big[\partial F^j/\partial x^i(p)\big]$ is the matrix of $F_{\ast p}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]): $n$ rows and $m$ columns. Written out,
 >
 > $$
 > J = \begin{pmatrix} \dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^1}{\partial x^m}(p) \\ \vdots & & \vdots \\ \vdots & & \vdots \\ \dfrac{\partial F^n}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p) \end{pmatrix} .
@@ -65,7 +65,7 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 > \Phi'\big(\varphi_0(p)\big) = \Big[\frac{\partial (F^j \circ \varphi_0^{-1})}{\partial r^i}\big(\varphi_0(p)\big)\Big]_{1 \le j, i \le m} = \Big[\frac{\partial F^j}{\partial x^i}(p)\Big]_{1 \le j, i \le m} = A .
 > $$
 >
-> It is invertible, so by the inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]) — “I always say implicit, but in this case I want the inverse function theorem” — this map is a local diffeomorphism near $p$, and, possibly after shrinking $U_0$ to some $U \ni p$, it is a chart:
+> It is invertible, so by the inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]) this map is a local diffeomorphism near $p$, and, possibly after shrinking $U_0$ to some $U \ni p$, it is a chart:
 >
 > $$
 > \tilde\varphi = \big(F^1, \ldots, F^m\big)\big|_U : U \longrightarrow \tilde\varphi(U) \subseteq \mathbb{R}^m .
@@ -85,9 +85,9 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 > \hat F(r) = \big(r, \ G^1(r), \ldots, G^{n-m}(r)\big), \qquad G^k = F^{m+k} \circ \tilde\varphi^{-1} ,
 > $$
 >
-> with $G = (G^1, \ldots, G^{n-m})$ smooth on $\tilde\varphi(U)$: $G^k = r^{m+k} \circ \hat F$ is a component of $\hat F$, the coordinate representation of the smooth map $F$ in smooth charts (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]). “I don't get zeros yet. I get something”: $\hat F$ is the graph of $G$ over $\tilde\varphi(U)$.
+> with $G = (G^1, \ldots, G^{n-m})$ smooth on $\tilde\varphi(U)$: $G^k = r^{m+k} \circ \hat F$ is a component of $\hat F$, the coordinate representation of the smooth map $F$ in smooth charts (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]]). The last $n - m$ components are not yet zero: $\hat F$ is the graph of $G$ over $\tilde\varphi(U)$.
 >
-> *6. Straighten the graph.* “You can always straighten out a graph to make it zero.” Define new coordinates on $N$ by keeping the first $m$ and shifting the rest: “I always mess up my indices … so I'm going to cheat”
+> *6. Straighten the graph.* A graph can always be straightened out to zero by a change of coordinates. Define new coordinates on $N$ by keeping the first $m$ and shifting the rest:
 >
 > $$
 > \tilde y^i = y^i \quad (1 \le i \le m), \qquad \tilde y^i = y^i - G^{i-m}\big(y^1, \ldots, y^m\big) \quad (m+1 \le i \le n),
@@ -103,7 +103,7 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 >
 > In detail: $\tilde\varphi(U) \times \mathbb{R}^{n-m}$ is open in $\mathbb{R}^n$, a product of open sets; $\Sigma$ and the proposed inverse both leave the first block $y_a$ unchanged, so both map this set into itself; the two composites are the identity, since $\big(y_a, (y_b - G(y_a)) + G(y_a)\big) = (y_a, y_b)$ and $\big(y_a, (z + G(y_a)) - G(y_a)\big) = (y_a, z)$; and both are smooth, their components being $y_a$ and $y_b \mp G(y_a)$ with $G$ smooth (step 5). So on the open set $V = \psi^{-1}\big(\tilde\varphi(U) \times \mathbb{R}^{n-m}\big) \cap V_0$ the map $\tilde\psi$ is a smooth chart. In detail: $V$ is open, the preimage of an open set under the continuous $\psi$, and $V \subseteq V_0$, so $(V, \psi|_V)$ is a smooth chart (Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1)), whose image $\psi(V) = \psi(V_0) \cap \big(\tilde\varphi(U) \times \mathbb{R}^{n-m}\big)$ lies in the domain of $\Sigma$. On $V$, $\tilde\psi = \Sigma \circ \psi|_V$, so $(V, \tilde\psi)$ is a smooth chart by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](2), applied to $(V, \psi|_V)$ and the diffeomorphism $\Sigma$ of $\tilde\varphi(U) \times \mathbb{R}^{n-m}$ onto itself. (Equivalently: $\psi|_V$ is a diffeomorphism of $V$ onto the open set $\psi(V)$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], for the restricted chart), and $\Sigma$ restricts to a diffeomorphism of $\psi(V)$ onto $\Sigma(\psi(V))$, which is open because $\Sigma$ is a homeomorphism of the open set $\tilde\varphi(U) \times \mathbb{R}^{n-m}$ onto itself (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](3)); so $\tilde\psi$ is a diffeomorphism onto an open subset of $\mathbb{R}^n$, hence a chart by Lemma [[§36 Submersions#^lem-36-5|§36.5]].) And $F(U) \subseteq V$, because the first $m$ coordinates of $\psi(F(u))$ are $\tilde\varphi(u) \in \tilde\varphi(U)$: by step 5, $\psi(F(u)) = \hat F(\tilde\varphi(u)) = \big(\tilde\varphi(u), G(\tilde\varphi(u))\big)$, and $F(u) \in V_0$. In particular $F(p) \in V$.
 >
-> *7. These do the job.* “We're not changing the first $m$ — we already have the inclusion here — but we're fixing the other ones.” *(Completion.)* For $r \in \tilde\varphi(U)$,
+> *7. These do the job.* The first $m$ coordinates are unchanged, since they already give the inclusion; only the others are corrected. *(Completion.)* For $r \in \tilde\varphi(U)$,
 >
 > $$
 > \tilde\psi \circ F \circ \tilde\varphi^{-1}(r) = \Sigma\big(\hat F(r)\big) = \Sigma\big(r, G(r)\big) = \big(r, \, G(r) - G(r)\big) = (r, \vec 0) .
@@ -131,7 +131,7 @@ $$
 $$
 *
 
-*Status.* Stated in Lecture 13 — “a little bit technical … better do it fresh at the beginning of the class” — and proved at the start of Lecture 14, above. It is the counterpart of [[§36 Submersions#^thm-36-6|Theorem §36.6]]: there $F$ was locally a projection, here it is locally an inclusion.
+*Status.* Stated in Lecture 13 and proved at the start of Lecture 14, above. It is the counterpart of [[§36 Submersions#^thm-36-6|Theorem §36.6]]: there $F$ was locally a projection, here it is locally an inclusion.
 
 > [!remark]- Connections
 > - The mirror-image result for submersions: [[§36 Submersions#^thm-36-6|Local Normal Form for Submersions, §36.6]]; the case $m = n$: [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], via the [[§35 Local Diffeomorphisms#^thm-35-1|Inverse Function Theorem, §35.1]] ([[Inverse Function Theorem (several variables)|452 §16.2]]).
@@ -148,7 +148,7 @@ What the image of an immersion looks like — locally a submanifold, globally no
 ^cor-43-2
 
 > [!proof]+ Proof
-> *(Lecture 13 gave the idea — the image of $\tilde F$ is an open set times zeros, “and so since what happens below happens upstairs too”, $F(U)$ is a submanifold — adding “I'm feeling a little bit uneasy, because I want to say after restriction, possibly after restricting $U$.” Completed here: shrinking $V$ instead of $U$ settles it.)* Let $(U, \varphi)$ and $(V, \psi = (y^1, \ldots, y^n))$ be the charts of Theorem [[§43 Immersions#^thm-43-1|§43.1]]: $F(U) \subseteq V$ and $\psi\big(F(\varphi^{-1}(r))\big) = \tilde F(r) = (r, \vec 0)$ for $r \in \varphi(U)$. Putting $r = \varphi(u)$, this reads
+> *(Lecture 13 gave the idea: the image of $\tilde F$ is an open set times zeros, and what happens in the charts happens on the manifolds too, so $F(U)$ is a submanifold — possibly after restricting $U$, the lecture added, without settling the point. Completed here: shrinking $V$ instead of $U$ settles it.)* Let $(U, \varphi)$ and $(V, \psi = (y^1, \ldots, y^n))$ be the charts of Theorem [[§43 Immersions#^thm-43-1|§43.1]]: $F(U) \subseteq V$ and $\psi\big(F(\varphi^{-1}(r))\big) = \tilde F(r) = (r, \vec 0)$ for $r \in \varphi(U)$. Putting $r = \varphi(u)$, this reads
 >
 > $$
 > \psi\big(F(u)\big) = \big(\varphi(u), \vec 0\big) \qquad (u \in U).
@@ -182,7 +182,7 @@ What the image of an immersion looks like — locally a submanifold, globally no
 > - The global version needs a topological condition: [[§43 Immersions#^rem-43-1|Remark: Embeddings — Next Time]].
 > - The global statement, for embeddings: [[§44 Embeddings#^thm-44-1|§44.1]].
 
-“But the really interesting thing about these immersions is that globally it doesn't have to be the case”: the whole image of an immersion need not be a submanifold. There are two ways for this to fail.
+Globally this need not be the case: the whole image of an immersion need not be a submanifold. There are two ways for this to fail.
 
 > [!example] Example §43.1: An Immersion That Crosses Itself
 > $\gamma : \mathbb{R} \to \mathbb{R}^2$, $\gamma(t) = (t^2 - 1, \ t^3 - t)$, is an immersion, but it is not injective, and its image is not a submanifold of $\mathbb{R}^2$: near the origin the image looks like an X.
@@ -208,7 +208,7 @@ What the image of an immersion looks like — locally a submanifold, globally no
 >
 > *Not injective.* $\gamma(1) = (1 - 1, \ 1 - 1) = (0, 0)$ and $\gamma(-1) = (1 - 1, \ -1 + 1) = (0, 0)$, so $\gamma(1) = \gamma(-1) = (0, 0)$, and $\gamma$ is not injective.
 >
-> *Not a submanifold: the lecture's argument.* Near the origin the image consists of two arcs crossing transversally, one through $\gamma(-1)$ and one through $\gamma(1)$, with tangent directions $\gamma'(\mp 1) = (\mp 2, 2)$. “What is the proof? If you remove the point of intersection from an X, you get four connected components. If you remove a point from an interval, you get two.” This is the lecture's level of rigour: made precise, it compares small connected neighbourhoods of the crossing point in the image with those of a point of a $1$-manifold.
+> *Not a submanifold: the lecture's argument.* Near the origin the image consists of two arcs crossing transversally, one through $\gamma(-1)$ and one through $\gamma(1)$, with tangent directions $\gamma'(\mp 1) = (\mp 2, 2)$. Removing the point of intersection from an X leaves four connected components; removing a point from an interval leaves two. This is the lecture's level of rigour: made precise, it compares small connected neighbourhoods of the crossing point in the image with those of a point of a $1$-manifold.
 >
 > *Not a submanifold: a complete argument.* *(Completion, by tangent spaces instead of connected components.)* Let $C = \gamma(\mathbb{R})$, and suppose that $C$ were a regular submanifold of $\mathbb{R}^2$ of some codimension $k$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), with its induced structure (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]). By the display above at $t = \pm 1$,
 >
@@ -237,11 +237,11 @@ What the image of an immersion looks like — locally a submanifold, globally no
 ^ex-43-2
 
 > [!proof]+ Proof
-> *(Lecture 13: “it's like you're making a hook with a piece of wire … but the wire is open, it doesn't have an end”; the discontinuity argument is filled in.)* Since $\gamma$ is injective, it is a bijection of $(a, b)$ onto its image $\gamma\big((a,b)\big)$, which carries the subspace topology of $\mathbb{R}^2$ (Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]); we show that the inverse $\gamma^{-1} : \gamma\big((a,b)\big) \to (a, b)$ is not continuous at $P$, so that $\gamma$ is not a homeomorphism onto its image.
+> *(Lecture 13 described the curve as a hook bent from a piece of wire that is open, without an end point; the discontinuity argument is filled in.)* Since $\gamma$ is injective, it is a bijection of $(a, b)$ onto its image $\gamma\big((a,b)\big)$, which carries the subspace topology of $\mathbb{R}^2$ (Definition [[§3 Subspaces and Products#^def-3-1|§3.1]]); we show that the inverse $\gamma^{-1} : \gamma\big((a,b)\big) \to (a, b)$ is not continuous at $P$, so that $\gamma$ is not a homeomorphism onto its image.
 >
 > Choose $t_k \to b$, with $t_k \in (a, b)$. Then $\gamma(t_k) \to P = \gamma(t_0)$ in the image: by hypothesis $\gamma(t_k) \to P$ in $\mathbb{R}^2$, and every open set of the image containing $P$ has the form $O \cap \gamma\big((a,b)\big)$ with $O$ open in $\mathbb{R}^2$ and $P \in O$, so it contains $\gamma(t_k)$ for all large $k$. But $t_k \to b \ne t_0$, so $\gamma^{-1}(\gamma(t_k)) = t_k$ does not converge to $\gamma^{-1}(P) = t_0$: choose $\varepsilon > 0$ with $t_0 + \varepsilon < b$; since $t_k \to b$, eventually $t_k > t_0 + \varepsilon$, so $t_k \notin (t_0 - \varepsilon, t_0 + \varepsilon)$. If $\gamma^{-1}$ were continuous at $P$, the preimage under $\gamma^{-1}$ of the open interval $(t_0 - \varepsilon, t_0 + \varepsilon) \ni t_0$ would contain an open set of the image containing $P$, hence $\gamma(t_k)$ for all large $k$, and then $t_k = \gamma^{-1}(\gamma(t_k)) \in (t_0 - \varepsilon, t_0 + \varepsilon)$ for those $k$ — a contradiction. So $\gamma^{-1} : \gamma\big((a,b)\big) \to (a, b)$ is not continuous at $P$.
 >
-> The image near $P$ consists of the strand through $P$ together with the end arriving at it: “this point now doesn't look like an X, but it looks like a T”; removing it leaves three pieces, not two.
+> The image near $P$ consists of the strand through $P$ together with the end arriving at it: the point looks like a T, not an X, and removing it leaves three pieces, not two.
 
 ^pf-ex-43-2
 
@@ -258,6 +258,6 @@ What the image of an immersion looks like — locally a submanifold, globally no
 > - The image of Lee's figure-eight, as a topological space, is the wedge of two circles: [[Figure eight|590 Figure eight]].
 
 > [!remark] Remark: Embeddings — Next Time
-> To make the image of an [[§43 Immersions#^def-43-1|immersion]] a [[§37 Regular Submanifolds#^def-37-2|submanifold]], “you have to add a topological condition”: an *[[§44 Embeddings#^def-44-1|embedding]]* is an immersion that is a homeomorphism onto its image, and its image is a submanifold ([[§44 Embeddings#^thm-44-1|Theorem §44.1]]). Both were done in Lecture 14, together with the proof of the normal form above: see [[§44 Embeddings|§44]].
+> To make the image of an [[§43 Immersions#^def-43-1|immersion]] a [[§37 Regular Submanifolds#^def-37-2|submanifold]], a topological condition has to be added: an *[[§44 Embeddings#^def-44-1|embedding]]* is an immersion that is a homeomorphism onto its image, and its image is a submanifold ([[§44 Embeddings#^thm-44-1|Theorem §44.1]]). Both were done in Lecture 14, together with the proof of the normal form above: see [[§44 Embeddings|§44]].
 
 ^rem-43-1

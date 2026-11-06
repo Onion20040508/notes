@@ -295,6 +295,6 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 ^rem-26-5
 
 > [!remark] Remark: What Is Still Missing
-> Everything above presupposes an ambient $\mathbb{R}^{n+k}$: [[§25 The Geometric Tangent Space#^def-25-1|Definition §25.1]] of the geometric tangent space $T^{\mathrm{geo}}_pM$ uses its vector space structure to differentiate $\gamma$, and [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]] uses the Jacobian of the defining map $F$. For an abstract smooth manifold neither is available — “if you have a sphere you can think of the tangent plane, but that is a subspace of $\mathbb{R}^3$. If you do not have $\mathbb{R}^3$, then what do you do? You do not have room to put your vectors.” [[§27 Germs|The next sections]] build the *abstract* tangent space $T_pM$ from the charts alone.
+> Everything above presupposes an ambient $\mathbb{R}^{n+k}$: [[§25 The Geometric Tangent Space#^def-25-1|Definition §25.1]] of the geometric tangent space $T^{\mathrm{geo}}_pM$ uses its vector space structure to differentiate $\gamma$, and [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]] uses the Jacobian of the defining map $F$. For an abstract smooth manifold neither is available: the tangent plane to a sphere is a subspace of $\mathbb{R}^3$, and without an ambient space there is no room to put the vectors. [[§27 Germs|The next sections]] build the *abstract* tangent space $T_pM$ from the charts alone.
 
 ^rem-26-6

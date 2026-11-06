@@ -7,7 +7,7 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§61 Lie Group Morphisms and Linear Groups]] · ↑ [[· 9 Sard's Theorem]] · [[§63 Sard's Theorem]] →
 
-*Stage: analysis — Sets that are negligible, in Euclidean space and then on manifolds: “this is not really measure theory. It's just the notion of sets of measure zero.”*
+*Stage: analysis — Sets that are negligible, in Euclidean space and then on manifolds. Only the notion of a set of measure zero is needed, not measure theory.*
 
 > [!definition] Definition §62.1: Measure Zero in $\mathbb{R}^n$
 > A set $S \subseteq \mathbb{R}^n$ has **measure zero** if for every $\varepsilon > 0$ there is a countable cover $\{C_a\}$ of $S$ such that each $C_a$ is an open **rectangle**, a product of open intervals $C_a = (\alpha_1, \beta_1) \times \cdots \times (\alpha_n, \beta_n)$, and
@@ -19,10 +19,11 @@ tags: [differentiable-manifolds, math591]
 > *Lee: Ch. 6, Sets of Measure Zero; Appendix C*
 
 ^def-62-1
+
 > [!remark]- Connections
 > - Lebesgue measure: $S$ has measure zero exactly when its outer measure is $0$, [[§10 Lebesgue Outer Measure#^def-10-4|551 Def. §10.4]] (covers by closed rectangles, [[§10 Lebesgue Outer Measure#^def-10-3|551 Def. §10.3]], [[§10 Lebesgue Outer Measure#^def-10-1|551 Def. §10.1]]); such sets are measurable, [[§11 Lebesgue Measurable Sets#^ex-11-1|551 Ex. §11.1]].
 
-“They could be closed, but let's say open.” In three dimensions the rectangles are solid boxes. “You should think of them as being very small, very thin. And for example, they cannot contain an open set. But it's much more than that, actually.”
+The rectangles could equally be taken closed (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](3)). In three dimensions the rectangles are solid boxes. They should be thought of as very small and very thin; for example, a set of measure zero cannot contain an open set (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4)), but the condition is much stronger than that.
 
 ![[m591-58-1.svg]]
 
@@ -43,11 +44,9 @@ A curve $S$ in the plane, covered by rectangles. Refining the cover shrinks the 
 > *Lee: Proposition C.18, Exercise 6.1, Corollary C.25*
 
 ^lem-62-1
-> [!remark]- Connections
-> - Items (1)–(2) are monotonicity and countable subadditivity of outer measure, [[§10 Lebesgue Outer Measure#^prop-10-1|551 §10.1]]; countable sets: [[§10 Lebesgue Outer Measure#^ex-10-2|551 Ex. §10.2]]; item (4): the outer measure of a closed rectangle is its volume, [[§10 Lebesgue Outer Measure#^prop-10-2|551 §10.2]].
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in. Item (4) is Uribe's “they cannot contain an open set”.)*
+> *(Not from lecture; filled in. Item (4) is the observation after Definition [[§62 Sets of Measure Zero#^def-62-1|§62.1]] that a set of measure zero cannot contain an open set.)*
 >
 > *(1)* A cover of the larger set covers the smaller one.
 >
@@ -60,6 +59,11 @@ A curve $S$ in the plane, covered by rectangles. Refining the cover shrinks the 
 
 ^pf-62-1
 
+*Uses:* [[§62 Sets of Measure Zero#^def-62-1|Def. §62.1]]
+
+> [!remark]- Connections
+> - Items (1)–(2) are monotonicity and countable subadditivity of outer measure, [[§10 Lebesgue Outer Measure#^prop-10-1|551 §10.1]]; countable sets: [[§10 Lebesgue Outer Measure#^ex-10-2|551 Ex. §10.2]]; item (4): the outer measure of a closed rectangle is its volume, [[§10 Lebesgue Outer Measure#^prop-10-2|551 §10.2]].
+
 > [!theorem] Lemma §62.2: Smooth Maps Preserve Measure Zero
 > Let $U \subseteq \mathbb{R}^n$ be open, $F : U \to \mathbb{R}^n$ smooth, and $S \subseteq U$ a set of measure zero. Then $F(S)$ has measure zero.
 >
@@ -68,15 +72,15 @@ A curve $S$ in the plane, covered by rectangles. Refining the cover shrinks the 
 ^lem-62-2
 
 > [!proof]+ Proof
-> *(Lecture 19 gave the idea: “I'm not going to prove this, but I want to tell you the idea of the proof.” The details are filled in.)*
+> *(Lecture 19 gave only the idea of the proof; the details are filled in.)*
 >
-> *The idea.* “Differentiable maps, $C^\infty$ maps, are locally Lipschitz”: for every compact $K \subseteq U$ there is a constant $C$ with
+> *The idea.* Smooth maps are locally Lipschitz: for every compact $K \subseteq U$ there is a constant $C$ with
 >
 > $$
 > |F(x) - F(y)| \le C\, |x - y| \qquad \text{for all } x, y \in K,
 > $$
 >
-> and “somehow $C$ has to do with — not quite, but it's essentially — the sup of the partial derivatives over $K$.” This “of course implies continuity, but it's a lot more strong”: “it's going to map cubes to cubes of comparable volume.”
+> and $C$ is essentially, though not exactly, the supremum of the partial derivatives over $K$. This implies continuity but is much stronger: $F$ maps cubes into cubes of comparable volume.
 >
 > *Reduction to a closed cube.* $U$ is the union of the countably many closed cubes with rational corners and rational side lengths that lie in $U$ (each $x \in U$ has an open ball in $U$ about it, and a small rational cube containing $x$ inside that ball). So $F(S) = \bigcup_Q F(S \cap Q)$ over countably many closed cubes $Q \subseteq U$, and by Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](2) it suffices to show that $F(S \cap Q)$ has measure zero.
 >
@@ -95,9 +99,10 @@ A curve $S$ in the plane, covered by rectangles. Refining the cover shrinks the 
 *Uses:* [[§62 Sets of Measure Zero#^lem-62-1|§62.1]]
 
 > [!remark] Remark: Continuity Is Not Enough
-> “You have to be careful. Just for fun, this is not true”: $F(S)$ may not have measure zero if $F$ is only continuous — “Cantor's function. It's a standard counterexample.” *(Filled in.)* The Cantor function $c : [0,1] \to [0,1]$ is continuous, nondecreasing, and maps the Cantor set, which has measure zero, onto all of $[0,1]$, which does not (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4)). The smoothness used above is exactly the Lipschitz estimate, which $c$ lacks. “As you can see, we're really talking about analysis here.”
+> $F(S)$ may not have measure zero if $F$ is only continuous; the Cantor function is the standard counterexample. *(Filled in.)* The Cantor function $c : [0,1] \to [0,1]$ is continuous, nondecreasing, and maps the Cantor set, which has measure zero, onto all of $[0,1]$, which does not (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4)). The smoothness used above is exactly the Lipschitz estimate, which $c$ lacks.
 
 ^rem-62-1
+
 > [!remark]- Connections
 > - The Cantor set [[§14 The Vitali Set and the Cantor Set#^def-14-4|551 Def. §14.4]] ([[§14 The Vitali Set and the Cantor Set#^prop-14-7|551 §14.7]]: measure zero, uncountable) and the Cantor function [[§31 Absolute Continuity#^ex-31-1|551 Ex. §31.1]].
 
@@ -105,16 +110,16 @@ A curve $S$ in the plane, covered by rectangles. Refining the cover shrinks the 
 
 *(Not from lecture.)* The Cantor function $c$: constant on each removed middle third, it climbs only on the Cantor set. So $c$ maps a set of measure zero (orange; shown at the second stage of the construction) onto the whole interval $[0,1]$ (teal). Its slopes are unbounded near the Cantor set, which is the Lipschitz estimate of Lemma [[§62 Sets of Measure Zero#^lem-62-2|§62.2]] failing.
 
-*“Because of this lemma, we can define sets of measure zero on a manifold.”*
+Lemma [[§62 Sets of Measure Zero#^lem-62-2|§62.2]] is what makes it possible to define sets of measure zero on a manifold.
 
 > [!definition] Definition §62.2: Measure Zero in a Manifold
-> Let $M$ be a smooth manifold of dimension $m$ and $S \subseteq M$ any subset (“I'm not assuming it's a submanifold. It's just a set”). $S$ has **measure zero** if $S$ can be covered by coordinate charts $\{(U_\alpha, \varphi_\alpha)\}$, $S \subseteq \bigcup_\alpha U_\alpha$, such that for every $\alpha$ the set $\varphi_\alpha(S \cap U_\alpha) \subseteq \mathbb{R}^m$ has measure zero (Definition [[§62 Sets of Measure Zero#^def-62-1|§62.1]]).
+> Let $M$ be a smooth manifold of dimension $m$ and $S \subseteq M$ any subset, not necessarily a submanifold. $S$ has **measure zero** if $S$ can be covered by coordinate charts $\{(U_\alpha, \varphi_\alpha)\}$, $S \subseteq \bigcup_\alpha U_\alpha$, such that for every $\alpha$ the set $\varphi_\alpha(S \cap U_\alpha) \subseteq \mathbb{R}^m$ has measure zero (Definition [[§62 Sets of Measure Zero#^def-62-1|§62.1]]).
 >
 > *Lee: Ch. 6, Sets of Measure Zero; Lemma 6.6*
 
 ^def-62-2
 
-A student asked whether any number of charts is allowed. “Yeah, but you can always do with a countable [number], because of second countability” — the next lemma.
+Any number of charts is allowed in Definition [[§62 Sets of Measure Zero#^def-62-2|§62.2]], but countably many always suffice, because $M$ is second countable — the next lemma.
 
 > [!theorem] Lemma §62.3: Countable Subcovers
 > Let $X$ be a second-countable space (Definition [[§1 Point-Set Topology Review#^def-1-6|§1.6]]), $A \subseteq X$, and $\{U_\alpha\}$ a family of open sets covering $A$. Then countably many of the $U_\alpha$ cover $A$.
@@ -136,7 +141,7 @@ A student asked whether any number of charts is allowed. “Yeah, but you can al
 ^prop-62-4
 
 > [!proof]+ Proof
-> *(Stated in Lecture 19 as an observation, “by the lemma”; filled in.)* Let $\{(U_\alpha, \varphi_\alpha)\}$ be as in Definition [[§62 Sets of Measure Zero#^def-62-2|§62.2]], and $(U, \varphi)$ any chart. By Lemma [[§62 Sets of Measure Zero#^lem-62-3|§62.3]] (manifolds are second countable), countably many $U_\alpha$ cover $S \cap U$, and
+> *(Stated in Lecture 19 as an observation; filled in.)* Let $\{(U_\alpha, \varphi_\alpha)\}$ be as in Definition [[§62 Sets of Measure Zero#^def-62-2|§62.2]], and $(U, \varphi)$ any chart. By Lemma [[§62 Sets of Measure Zero#^lem-62-3|§62.3]] (manifolds are second countable), countably many $U_\alpha$ cover $S \cap U$, and
 >
 > $$
 > \varphi(S \cap U \cap U_\alpha) = \big(\varphi \circ \varphi_\alpha^{-1}\big)\big(\varphi_\alpha(S \cap U \cap U_\alpha)\big),
@@ -160,6 +165,7 @@ The same piece of $S$ seen in two charts. The transition map carries one picture
 > *Lee: Lemma 6.2*
 
 ^lem-62-5
+
 > [!remark]- Connections
 > - Measure theory's version: the cross-section theorem [[§25 Invariance Properties and Fubini's Theorem#^thm-25-4|551 §25.4]] (from Tonelli) gives $m(A)=\int m(A_c)\,dc$ for measurable $A$; Fubini [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 §25.6]].
 
@@ -179,7 +185,7 @@ The same piece of $S$ seen in two charts. The transition map carries one picture
 *(Not from lecture.)* The proof of Lemma [[§62 Sets of Measure Zero#^lem-62-5|§62.5]] for a compact $A$ in the plane ($n = 2$). The slice of $A$ at $c$ (teal) has measure zero, so it is covered by finitely many small intervals, $U_c$. By compactness the same intervals still cover the slices at all $c'$ near $c$, in an interval $J_c$, so $A \cap (J_c \times \mathbb{R})$ lies in the thin boxes $J_c \times U_c$ (orange). Finitely many $J_c$ cover the first coordinate's range, overlapping at most twice, and the total area is at most $2 \times$ (length) $\times$ (the slices' cover size).
 
 > [!remark] Remark: Measure Zero and Lebesgue Measure
-> *(Not from lecture.)* Uribe: “this is not really measure theory. It's just the notion of sets of measure zero.” For readers who know Lebesgue measure the dictionary is short.
+> *(Not from lecture.)* The course uses only the notion of a set of measure zero, not measure theory. For readers who know Lebesgue measure the dictionary is short.
 >
 > 1. $S \subseteq \mathbb{R}^n$ has measure zero in the sense of Definition [[§62 Sets of Measure Zero#^def-62-1|§62.1]] exactly when its Lebesgue outer measure is $m^{\ast}(S) = 0$ (outer measure is defined with countable covers by rectangles, open or closed, as in Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](3)); such sets are Lebesgue measurable.
 > 2. Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](1)–(2) are monotonicity and countable subadditivity of $m^{\ast}$; item (4) is $m^{\ast}(\text{closed rectangle}) =$ its volume.

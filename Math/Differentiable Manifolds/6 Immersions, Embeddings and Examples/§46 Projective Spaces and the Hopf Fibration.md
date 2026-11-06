@@ -17,7 +17,7 @@ The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through
 ^ex-46-1
 
 > [!proof]+ Proof
-> *(Stated in Lecture 10 as an example, without proof — the covering-map distinction was “postponed”; filled in.)* Three things are claimed: $\pi$ is smooth; it is a local diffeomorphism, that is (Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]]), every $x \in S^n$ has a neighbourhood $U$ that $\pi$ maps onto a neighbourhood $V$ of $\pi(x)$ with $\pi|_U^V$ having a smooth inverse; and every fibre of $\pi$ has exactly two points.
+> *(Stated in Lecture 10 as an example, without proof — the covering-map distinction was postponed; filled in.)* Three things are claimed: $\pi$ is smooth; it is a local diffeomorphism, that is (Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]]), every $x \in S^n$ has a neighbourhood $U$ that $\pi$ maps onto a neighbourhood $V$ of $\pi(x)$ with $\pi|_U^V$ having a smooth inverse; and every fibre of $\pi$ has exactly two points.
 >
 > *Setup.* Use coordinates $x_0, \ldots, x_n$ on $\mathbb{R}^{n+1}$, matching the charts $(U_i, \varphi_i)$ of Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]]: $U_i = \{[x] \mid x_i \neq 0\}$ and $\varphi_i([x]) = (x_k/x_i)_{k \neq i}$. Whether $x_i \neq 0$ does not depend on the representative, since $(\lambda x)_i = \lambda x_i$ with $\lambda \neq 0$. Give $S^n = \{|x|^2 = 1\}$ its level-set structure (Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]), so that Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] applies to maps out of and into $S^n$. For each $i$ and $\varepsilon = \pm 1$ let
 >
@@ -84,7 +84,7 @@ The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through
 > [!remark]- Connections
 > - Proved below, as a consequence of the local triviality of the Hopf fibration: [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|Ex. §46.3]] with [[§40 Fibrations#^prop-40-1|§40.1]](2).
 
-Stated in lecture as an example (“the projection you worked with from a sphere to complex projective space”); not proved in that lecture; the proof follows [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|Example §46.3]] below. The dimensions are consistent, $2n \le 2n+1$. A proof needs the differential of a map *out of* a level set in terms of the ambient Jacobian, which Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] makes available for smoothness but not yet for differentials.
+Stated in lecture as an example (the projection from the sphere to complex projective space, used in the homework); not proved in that lecture; the proof follows [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|Example §46.3]] below. The dimensions are consistent, $2n \le 2n+1$. A proof needs the differential of a map *out of* a level set in terms of the ambient Jacobian, which Lemma [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]] makes available for smoothness but not yet for differentials.
 
 > [!example] Example §46.3: The Hopf Fibration $S^{2n+1} \to \mathbb{CP}^n$
 > The projection $\pi : S^{2n+1} \to \mathbb{CP}^n$, $\pi(z) = [z]$, is a fibration with fibre $S^1$. Over the chart domain $U_j = \{z_j \ne 0\}$ a local trivialization is
@@ -149,7 +149,7 @@ Stated in lecture as an example (“the projection you worked with from a sphere
 With [[§40 Fibrations#^prop-40-1|Proposition §40.1]](2), this also proves [[§46 Projective Spaces and the Hopf Fibration#^ex-46-2|Example §46.2]], which Lecture 10 stated without proof: the projection $S^{2n+1} \to \mathbb{CP}^n$ is a submersion. Its fibres are the circles $\{\lambda z : |\lambda| = 1\}$.
 
 > [!remark] Remark: Sections Need Not Exist
-> “A fact”: the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ of [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|Example §46.3]] — “the fibration that you're working with in homework” — has no continuous section, for $n \ge 1$. (For $n = 0$ the base is a single point.) This is stated, not proved, here; a proof uses the fundamental group. A vector bundle, by contrast, always has sections — the zero section at least — and in fact “a very infinite-dimensional space” of them.
+> The Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ of [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|Example §46.3]], the fibration of the homework, has no continuous section, for $n \ge 1$. (For $n = 0$ the base is a single point.) This is stated, not proved, here; a proof uses the fundamental group. A vector bundle, by contrast, always has sections — the zero section at least — and in fact an infinite-dimensional space of them.
 
 ^rem-46-1
 

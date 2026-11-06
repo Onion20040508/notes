@@ -30,7 +30,7 @@ tags: [differentiable-manifolds, math591]
 ^def-29-1
 
 > [!remark] Remark
-> **A notational discipline.** Uribe stopped to insist on this. The $x^i$ live *upstairs*, as functions on the manifold, and the $r^i$ *downstairs*, as functions on $\mathbb{R}^n$; conflating them is the main source of confusion in what follows. The identity $(x^i)_\varphi = r^i$ is the bridge between the two rows: it says that the coordinate functions, written in their own chart, are the standard coordinates. It also shows that each $x^i$ is a smooth function on $U$, by Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]], since $r^i$ is smooth.
+> **A notational discipline.** The $x^i$ live *upstairs*, as functions on the manifold, and the $r^i$ *downstairs*, as functions on $\mathbb{R}^n$; conflating them is the main source of confusion in what follows. The identity $(x^i)_\varphi = r^i$ is the bridge between the two rows: it says that the coordinate functions, written in their own chart, are the standard coordinates. It also shows that each $x^i$ is a smooth function on $U$, by Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]], since $r^i$ is smooth.
 
 ^rem-29-1
 
@@ -88,7 +88,7 @@ tags: [differentiable-manifolds, math591]
 ^prop-29-2
 
 > [!proof]+ Proof
-> *(Lecture 8: “it's linear, and the product rule will be inherited from the product rule of the ordinary partial derivatives” — the *Linear* and *Leibniz* steps below. Well-definedness is filled in.)*
+> *(Lecture 8: the map is linear, and the product rule is inherited from the product rule of the ordinary partial derivatives — the *Linear* and *Leibniz* steps below. Well-definedness is filled in.)*
 >
 > Three things are to be shown: the value $\partial f_\varphi/\partial r^i(\varphi(p))$ does not depend on the representative of $[f]$; the resulting map is linear; and it satisfies the Leibniz rule of Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]. For a representative $(f, U_1)$, $f_\varphi = f \circ \varphi^{-1}$ is defined on the open set $\varphi(U \cap U_1) \ni \varphi(p)$ and smooth there (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], applied on the open set $U \cap U_1$ with the restricted chart, a smooth chart by Lemma [[§17 Differentiable Structures#^lem-17-6|§17.6]](1)), so its partial derivatives at $\varphi(p)$ exist.
 >
@@ -118,7 +118,7 @@ tags: [differentiable-manifolds, math591]
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-1|§19.1]], [[§17 Differentiable Structures#^lem-17-6|§17.6]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
 
-The proof of the Basis Theorem below needs a form of Taylor expansion whose remainder is not an estimate but an exact, *smooth* term — “a theorem from calculus” that is not usually taught there. It is built in two steps: first order, then the first-order statement applied again.
+The proof of the Basis Theorem below needs a form of Taylor expansion whose remainder is not an estimate but an exact, *smooth* term — a theorem from calculus that is not usually taught there. It is built in two steps: first order, then the first-order statement applied again.
 
 > [!theorem] Lemma §29.3: Hadamard's Lemma
 > Let $W \subseteq \mathbb{R}^n$ be open, $a = (a^1,\ldots,a^n) \in W$, $f : W \to \mathbb{R}$ smooth, and $B \subseteq W$ an open ball centred at $a$. Then there are smooth functions $f_1, \ldots, f_n$ on $B$ with
@@ -134,7 +134,7 @@ The proof of the Basis Theorem below needs a form of Taylor expansion whose rema
 ^lem-29-3
 
 > [!proof]+ Proof
-> *(Lecture 9: “the proof is delightfully simple.”)* Fix $r \in B$. The segment $t \mapsto a + t(r - a)$, $t \in [0,1]$, runs from $a$ to $r$ and stays in $B$, a ball being convex. Put $h(t) = f\big(a + t(r-a)\big)$. It is defined on the set of $t$ with $a + t(r-a) \in W$, which is open (the preimage of the open $W$ under a continuous map) and contains $[0,1]$, hence also open intervals around $0$ and $1$, hence an open interval containing $[0,1]$; there $h$ is smooth, as the composite of $f$ with an affine map. By the fundamental theorem of calculus, $f(r) - f(a) = h(1) - h(0) = \int_0^1 h'(t)\, dt$, and by the chain rule, since $\frac{d}{dt}\big(a^i + t(r^i - a^i)\big) = r^i - a^i$,
+> *(Lecture 9.)* Fix $r \in B$. The segment $t \mapsto a + t(r - a)$, $t \in [0,1]$, runs from $a$ to $r$ and stays in $B$, a ball being convex. Put $h(t) = f\big(a + t(r-a)\big)$. It is defined on the set of $t$ with $a + t(r-a) \in W$, which is open (the preimage of the open $W$ under a continuous map) and contains $[0,1]$, hence also open intervals around $0$ and $1$, hence an open interval containing $[0,1]$; there $h$ is smooth, as the composite of $f$ with an affine map. By the fundamental theorem of calculus, $f(r) - f(a) = h(1) - h(0) = \int_0^1 h'(t)\, dt$, and by the chain rule, since $\frac{d}{dt}\big(a^i + t(r^i - a^i)\big) = r^i - a^i$,
 >
 > $$
 > h'(t) = \sum_{i=1}^n \frac{\partial f}{\partial r^i}\big(a + t(r-a)\big)\,(r^i - a^i) .
@@ -162,7 +162,7 @@ The proof of the Basis Theorem below needs a form of Taylor expansion whose rema
 
 **Transcription note.** In Lecture 9 the path in the integral was first written with the wrong endpoints; a student corrected it to the convex combination $t(r - a) + a$, which runs from $a$ at $t = 0$ to $r$ at $t = 1$, as above.
 
-Uribe called the proof “delightfully simple.” A student corrected the path on the board: it must be the segment $a + t(r - a)$, equal to $a$ at $t = 0$ and to $r$ at $t = 1$. Convexity of $B$ is what the proof uses — “everything is local,” but the neighbourhood must contain the segment from $a$ to each of its points, which is why a ball (or any set star-shaped about $a$) is taken.
+The path must be the segment $a + t(r - a)$, equal to $a$ at $t = 0$ and to $r$ at $t = 1$. Convexity of $B$ is what the proof uses — everything is local, but the neighbourhood must contain the segment from $a$ to each of its points, which is why a ball (or any set star-shaped about $a$) is taken.
 
 > [!theorem] Lemma §29.4: Taylor–Hadamard
 > In the setting of Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]], there are smooth functions $f_{ij}$ on $B$, $1 \le i, j \le n$, with
@@ -189,7 +189,7 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 ^lem-29-4
 
 > [!proof]+ Proof
-> *(Lecture 9, exactly: first order, then “apply the claim to each $f_i$” and substitute back. Uribe wrote the quadratic term with a factor $\tfrac12$ — “doesn't matter” — which the notes absorb into $f_{ij}$; the value of $f_{ij}(a)$ at the end is a completion, the lecture needing only that the $f_{ij}$ are smooth.)*
+> *(Lecture 9, exactly: first order, then the claim applied to each $f_i$ and substituted back. The lecture wrote the quadratic term with a factor $\tfrac12$, which the notes absorb into $f_{ij}$; the value of $f_{ij}(a)$ at the end is a completion, the lecture needing only that the $f_{ij}$ are smooth.)*
 >
 > *Two applications of Hadamard.* Apply Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]] to $f$, obtaining smooth $f_1, \ldots, f_n$ on $B$ with
 >
@@ -224,10 +224,10 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 > [!remark]- Connections
 > - Taylor's theorem with an estimated remainder: [[Multivariable Taylor's Theorem|452 §11.2 (Multivariable Taylor's Theorem)]]; in one variable, [[§31 Taylor's Theorem#^thm-31-2|451 §31.2]].
 
-**On the factor $\tfrac12$.** The board states the lemma with $\tfrac12 \sum_{i,j}$ in front of the quadratic term; Uribe added it “just for consistency,” saying it “doesn't matter.” For the *existence* statement that is right — replacing $f_{ij}$ by $2f_{ij}$ converts one form into the other. But the two forms are not interchangeable as written: the iterated proof above produces the version *without* the $\tfrac12$, and with $f_{ij}(a) = \tfrac12 \partial_{ij} f(a)$. The board's normalization is the one in which $f_{ij}(a) = \partial_{ij} f(a)$, matching the Hessian term $\tfrac12 \sum \partial_{ij}f(a)(r^i - a^i)(r^j - a^j)$ of the ordinary Taylor polynomial. A numerical check on a test function confirms the unscaled identity to machine precision and shows the scaled one, with the same $f_{ij}$, to be off. Nothing below depends on the normalization, since only the vanishing of the quadratic term under a derivation is used.
+**On the factor $\tfrac12$.** The board states the lemma with $\tfrac12 \sum_{i,j}$ in front of the quadratic term, added in lecture for consistency and said not to matter. For the *existence* statement that is right — replacing $f_{ij}$ by $2f_{ij}$ converts one form into the other. But the two forms are not interchangeable as written: the iterated proof above produces the version *without* the $\tfrac12$, and with $f_{ij}(a) = \tfrac12 \partial_{ij} f(a)$. The board's normalization is the one in which $f_{ij}(a) = \partial_{ij} f(a)$, matching the Hessian term $\tfrac12 \sum \partial_{ij}f(a)(r^i - a^i)(r^j - a^j)$ of the ordinary Taylor polynomial. A numerical check on a test function confirms the unscaled identity to machine precision and shows the scaled one, with the same $f_{ij}$, to be off. Nothing below depends on the normalization, since only the vanishing of the quadratic term under a derivation is used.
 
 > [!remark] Remark
-> **What matters.** “The point is that these functions don't blow up at $a$”: the remainder is a product of two factors vanishing at $a$ with a *smooth* function, not merely a quantity that is small compared with $|r - a|^2$. The same iteration continues to any order.
+> **What matters.** The functions $f_{ij}$ do not blow up at $a$: the remainder is a product of two factors vanishing at $a$ with a *smooth* function, not merely a quantity that is small compared with $|r - a|^2$. The same iteration continues to any order.
 
 ^rem-29-2
 
@@ -268,7 +268,7 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 > D[f] = 0 + \sum_{i=1}^n \frac{\partial f}{\partial r^i}(a)\, D[r^i] + 0 ,
 > $$
 >
-> the first formula. So $D$ sees only the linear part of $f$: “the ultimate formula in the Euclidean case.”
+> the first formula. So $D$ sees only the linear part of $f$.
 >
 > *The second formula.* $\partial/\partial r^i|_a$ is the coordinate derivation (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]) of the identity chart $(W, \mathrm{id}_W)$, whose coordinate functions are the $r^i$ and in which $f_{\mathrm{id}} = f$; so $\partial/\partial r^i|_a[f] = \partial f/\partial r^i(a)$, and it is a derivation at $a$ (Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-2|§29.2]]). Derivations are added and scaled pointwise (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]), so for every germ $[f]$, by the first formula,
 >
@@ -300,7 +300,7 @@ Uribe called the proof “delightfully simple.” A student corrected the path o
 ^thm-29-6
 
 > [!proof]+ Proof
-> *(Lecture 9. In lecture the derivation $\tilde D$ was introduced inside this proof — “this is how you push forward derivations … we'll come back to this construction immediately after” — and Uribe remarked that “the order of my presentation is not ideal.” The notes define the pushforward first, in [[§28 Derivations and the Abstract Tangent Space|§28]], so that the proof can cite it.)* Let $D \in T_pM$ and put $a = \varphi(p) = (r_0^1, \ldots, r_0^n)$. What has to be shown: the $n$ derivations $\partial/\partial x^i|_p$, which lie in $T_pM$ by Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-2|§29.2]], span $T_pM$ — this is the universal formula, Steps 1–3 — and are linearly independent, Step 4.
+> *(Lecture 9. In lecture the derivation $\tilde D$ was introduced inside this proof, as the pushforward of $D$, and the pushforward construction was taken up only afterwards. The notes define the pushforward first, in [[§28 Derivations and the Abstract Tangent Space|§28]], so that the proof can cite it.)* Let $D \in T_pM$ and put $a = \varphi(p) = (r_0^1, \ldots, r_0^n)$. What has to be shown: the $n$ derivations $\partial/\partial x^i|_p$, which lie in $T_pM$ by Proposition [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-2|§29.2]], span $T_pM$ — this is the universal formula, Steps 1–3 — and are linearly independent, Step 4.
 >
 > *Step 1: push $D$ down.* Let $\tilde D = \varphi_{\ast p}D \in T_a\,\varphi(U)$, the chart pushforward of Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]] (with $D$ regarded as a derivation on germs on $U$, by the identification $T_pM = T_pU$ of Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]). By Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] with $F = \varphi$, $\tilde D[g] = D\big(\varphi_p^{\ast}[g]\big) = D[g \circ \varphi]$ for germs $g$ at $a$.
 >
@@ -371,7 +371,7 @@ $$
 ^thm-29-7
 
 > [!proof]+ Proof
-> **Announced in lecture.** Stated in lecture in answer to a student's question — “are the ambient and the abstract tangent spaces the same, just defined differently?” — with the answer that they are, but that it has to be proved. Injectivity is Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]; that $D_v$ really is a derivation is Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]]; surjectivity follows from the basis theorem (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]), both spaces having dimension $n$. In detail:
+> **Announced in lecture.** Stated in lecture: the ambient and the abstract tangent spaces are the same space defined differently, but this has to be proved. Injectivity is Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]; that $D_v$ really is a derivation is Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]]; surjectivity follows from the basis theorem (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]), both spaces having dimension $n$. In detail:
 >
 > *The map lands in $T_pM$.* Near $p$, $M$ is the graph of a smooth function, after permuting coordinates (Step 2 of the proof of Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), and passing to this open piece changes neither the geometric tangent space (Lemma [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]]) nor the germs at $p$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]); so $D_v$ is defined by Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]]. By Proposition [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]](1), $D_v(f)$ depends only on the germ $[f]$, so $D_v$ is a map $C_p^\infty(M) \to \mathbb{R}$; by (3) it is linear and obeys the Leibniz rule, so it is a derivation at $p$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]), $D_v \in T_pM$; and by (2) it does not depend on the graph piece used, only on $v$.
 >
@@ -413,7 +413,7 @@ $$
 **Comparison with Lee.** Lee meets the two kinds of tangent vector in the opposite order. He defines $T_pM$ by derivations first, identifies geometric and abstract tangent vectors in $\mathbb{R}^n$ (Proposition 3.2), and only later, for embedded submanifolds, shows $T_pS = \ker d\Phi_p$ (Proposition 5.38). The course starts geometrically, with $T^{\mathrm{geo}}_pM = \ker F'(p)$ inside the ambient space (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), and reaches derivations afterwards. The consequence above is where the two orders meet.
 
 > [!remark] Remark: A Derivation Sees Only the First Derivatives
-> The basis theorem showed that, of the whole Taylor expansion of a germ, a derivation sees only the *linear* term — “of the entire Taylor series of the germ, all I care about are the first partials.” [[§34 The Cotangent Space from Germs|§34]] says this algebraically: $I_p$ is a maximal ideal, being the kernel of evaluation; $I_p^2$ consists exactly of the germs vanishing to *second* order (Proposition [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]]); and $I_p/I_p^2$ is canonically the *cotangent space* $T_p^{\ast}M$ of Definition [[§32 The Cotangent Space#^def-32-4|§32.4]], built with no dualizing at all (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]). This is the sense in which, as Uribe remarked when he first set out to define the abstract tangent space, “it is more natural to define the dual”: the cotangent space comes first, and the abstract tangent space is its dual. We follow Lee and do not take that route.
+> The basis theorem showed that, of the whole Taylor expansion of a germ, a derivation sees only the *linear* term, that is, the first partials. [[§34 The Cotangent Space from Germs|§34]] says this algebraically: $I_p$ is a maximal ideal, being the kernel of evaluation; $I_p^2$ consists exactly of the germs vanishing to *second* order (Proposition [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]]); and $I_p/I_p^2$ is canonically the *cotangent space* $T_p^{\ast}M$ of Definition [[§32 The Cotangent Space#^def-32-4|§32.4]], built with no dualizing at all (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]). This is the sense in which it is more natural to define the dual first: the cotangent space comes first, and the abstract tangent space is its dual. We follow Lee and do not take that route.
 
 ^rem-29-3
 

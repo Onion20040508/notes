@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Reference: Lee Ch. 21 (“Quotient Manifolds”), the sections on group actions and quotients by group actions.*
 
 > [!remark] Remark: Why This Section
-> This returns to the quotient thread of [[§4 Quotient Spaces and Open Maps|§4]]–[[§6 Open Quotients|§6]]: a great many interesting manifolds are quotients, and among those, most are *orbit spaces* of group actions. [[§6 Open Quotients|§6]] gave a criterion (Theorem [[§6 Open Quotients#^thm-6-1|§6.1]]) for a quotient by an *open* relation to be Hausdorff. The main result here is that orbit relations of continuous actions are *always* open, so the criterion applies to every orbit space—“this is one of the main uses of our theorem”—and the payoff is a clean sufficient condition (Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]]) for an orbit space to be Hausdorff.
+> This returns to the quotient thread of [[§4 Quotient Spaces and Open Maps|§4]]–[[§6 Open Quotients|§6]]: a great many interesting manifolds are quotients, and among those, most are *orbit spaces* of group actions. [[§6 Open Quotients|§6]] gave a criterion (Theorem [[§6 Open Quotients#^thm-6-1|§6.1]]) for a quotient by an *open* relation to be Hausdorff. The main result here is that orbit relations of continuous actions are *always* open, so the criterion applies to every orbit space — one of its main uses — and the payoff is a clean sufficient condition (Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]]) for an orbit space to be Hausdorff.
 
 ^rem-13-1
 
@@ -102,7 +102,7 @@ tags: [differentiable-manifolds, math591]
 ^prop-13-1
 
 > [!proof]+ Proof
-> *(Claimed in Lecture 4 — “Claim: this is an equivalence relation”; filled in.)* *Reflexive:* $x = e \cdot x$. *Symmetric:* if $y = g \cdot x$ then $g^{-1} \cdot y = g^{-1} \cdot (g \cdot x) = (g^{-1} g) \cdot x = e \cdot x = x$, so $x = g^{-1} \cdot y$. *Transitive:* if $y = g \cdot x$ and $z = h \cdot y$ then $z = h \cdot (g \cdot x) = (hg) \cdot x$. The class of $x$ is $\{y \mid \exists g,\ y = g \cdot x\} = \mathcal{O}_x$ by definition. Equivalence classes of an equivalence relation partition the underlying set.
+> *(Claimed in Lecture 4; filled in.)* *Reflexive:* $x = e \cdot x$. *Symmetric:* if $y = g \cdot x$ then $g^{-1} \cdot y = g^{-1} \cdot (g \cdot x) = (g^{-1} g) \cdot x = e \cdot x = x$, so $x = g^{-1} \cdot y$. *Transitive:* if $y = g \cdot x$ and $z = h \cdot y$ then $z = h \cdot (g \cdot x) = (hg) \cdot x$. The class of $x$ is $\{y \mid \exists g,\ y = g \cdot x\} = \mathcal{O}_x$ by definition. Equivalence classes of an equivalence relation partition the underlying set.
 
 ^pf-13-1
 
@@ -201,7 +201,7 @@ Complex projective space through the course: the open quotient $S^{2n+1}/S^1$, H
 > - With $r = 1$ this is the transitivity used in [[§14 Homogeneous Spaces#^ex-14-3|The Sphere as a Homogeneous Space, §14.3]].
 
 > [!remark] Remark
-> This example was Uribe's last-minute illustration, given verbally; the proof above supplies the details. Compare it with $\mathbb{CP}^n$: there $S^1$ acts on $S^{2n+1}$ by $z \mapsto \xi z$, the orbit of $z$ is the circle $\{\xi z \mid |\xi| = 1\}$ traced inside the big sphere, and *every* orbit is a circle of the same kind—no special points. That uniformity is part of why $\mathbb{CP}^n$ comes out a manifold. The rotation examples already show one thing the coming theory must accommodate: orbits can have different “sizes” (a point and $2$-spheres), and the orbit space can have boundary ($[0,\infty)$ is a manifold *with boundary*, not a manifold). Conditions ruling this out—free actions, properness—are where the theory of quotient manifolds (Lee Ch. 21) is headed.
+> This example was given only verbally in lecture; the proof above supplies the details. Compare it with $\mathbb{CP}^n$: there $S^1$ acts on $S^{2n+1}$ by $z \mapsto \xi z$, the orbit of $z$ is the circle $\{\xi z \mid |\xi| = 1\}$ traced inside the big sphere, and *every* orbit is a circle of the same kind—no special points. That uniformity is part of why $\mathbb{CP}^n$ comes out a manifold. The rotation examples already show one thing the coming theory must accommodate: orbits can have different “sizes” (a point and $2$-spheres), and the orbit space can have boundary ($[0,\infty)$ is a manifold *with boundary*, not a manifold). Conditions ruling this out—free actions, properness—are where the theory of quotient manifolds (Lee Ch. 21) is headed.
 
 ^rem-13-5
 
@@ -222,7 +222,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 ^lem-13-2
 
 > [!proof]+ Proof
-> *(Lecture 4, in full: Uribe gave this proof “because I want to model what is expected of you when you write your homework.”)* (1) $L_g$ is the composite
+> *(Lecture 4, in full, as a model for written homework; see Remark [[§13 Group Actions and Orbit Spaces#^rem-13-6|remark]].)* (1) $L_g$ is the composite
 >
 > $$
 > X \longrightarrow G \times X \longrightarrow X, \qquad x \longmapsto (g, x) \longmapsto g \cdot x .
@@ -236,13 +236,13 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 ^pf-13-2
 
-*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]]
+*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]], [[§13 Group Actions and Orbit Spaces#^rem-13-6|§13.6]]
 
 > [!remark]- Connections
 > - The algebraic half (2)–(3) is [[§25 Actions#^prop-25-2|493 §25.2 (Each Group Element Acts Bijectively)]]; (2) says $g \mapsto L_g$ is a homomorphism, as in [[§25 Actions#^thm-25-3|493 §25.3]].
 
 > [!remark] Remark: A Model Proof
-> Uribe: “the reason I want to do this with simple proofs is because I want to model what is expected of you when you write your homework.” The features to imitate: name the map you are studying ($L_g$); prove continuity by exhibiting it as a composite of maps already known to be continuous; get the inverse from the algebra (the action axioms), not from a separate argument; and say which axiom is used where.
+> This proof was given in full as a model of what is expected in written homework. The features to imitate: name the map you are studying ($L_g$); prove continuity by exhibiting it as a composite of maps already known to be continuous; get the inverse from the algebra (the action axioms), not from a separate argument; and say which axiom is used where.
 
 ^rem-13-6
 
@@ -353,10 +353,10 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 ^thm-13-5
 
-**Not proved in this course.** Stated in lecture as a strengthening of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], with the proof declined: “another ten minutes of point-set topology which we will not take.” The gap is exactly the step where compactness of $X$ was used — in Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] it made $\Psi(G \times X) = \Gamma$ compact, hence closed; without it one shows directly that $\Gamma$ is closed, using compactness of $G$ alone (a tube-lemma argument). Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] is the version proved in lecture, and it suffices for every application below, since all the groups met are compact and all the spaces are compact Hausdorff. For completeness, the tube-lemma argument is short enough to give here.
+**Not proved in this course.** Stated in lecture as a strengthening of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], with the proof omitted. The gap is exactly the step where compactness of $X$ was used — in Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] it made $\Psi(G \times X) = \Gamma$ compact, hence closed; without it one shows directly that $\Gamma$ is closed, using compactness of $G$ alone (a tube-lemma argument). Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] is the version proved in lecture, and it suffices for every application below, since all the groups met are compact and all the spaces are compact Hausdorff. For completeness, the tube-lemma argument is short enough to give here.
 
 > [!proof]+ Proof of Theorem §10.5 (filled in; not from lecture)
-> *(Stated in Lecture 4 — “compactness of $X$ is not strictly necessary”; filled in.)* By Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] the orbit relation is open, so by Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] it suffices to show that $\Gamma = \{(x, g\cdot x)\}$ is closed in $X \times X$. Let $(x, y) \notin \Gamma$, so that $g \cdot x \ne y$ for every $g \in G$. For each $g$, choose disjoint open sets $U_g \ni g \cdot x$ and $V_g \ni y$, using that $X$ is Hausdorff. By continuity of the action at $(g, x)$, choose open $A_g \ni g$ and $B_g \ni x$ with $a \cdot x' \in U_g$ for all $a \in A_g$ and $x' \in B_g$. The sets $A_g$ cover the compact $G$, so finitely many, $A_{g_1}, \ldots, A_{g_m}$, suffice; put $B = \bigcap_i B_{g_i}$ and $V = \bigcap_i V_{g_i}$, open neighbourhoods of $x$ and $y$. If some $(x', y') \in B \times V$ had $y' = a \cdot x'$, then $a \in A_{g_i}$ for some $i$, whence $y' \in U_{g_i}$; but also $y' \in V \subseteq V_{g_i}$, which is disjoint from $U_{g_i}$. So $B \times V$ misses $\Gamma$, and $\Gamma$ is closed.
+> *(Stated in Lecture 4, as the remark that compactness of $X$ is not necessary; filled in.)* By Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]] the orbit relation is open, so by Theorem [[§6 Open Quotients#^thm-6-1|§6.1]] it suffices to show that $\Gamma = \{(x, g\cdot x)\}$ is closed in $X \times X$. Let $(x, y) \notin \Gamma$, so that $g \cdot x \ne y$ for every $g \in G$. For each $g$, choose disjoint open sets $U_g \ni g \cdot x$ and $V_g \ni y$, using that $X$ is Hausdorff. By continuity of the action at $(g, x)$, choose open $A_g \ni g$ and $B_g \ni x$ with $a \cdot x' \in U_g$ for all $a \in A_g$ and $x' \in B_g$. The sets $A_g$ cover the compact $G$, so finitely many, $A_{g_1}, \ldots, A_{g_m}$, suffice; put $B = \bigcap_i B_{g_i}$ and $V = \bigcap_i V_{g_i}$, open neighbourhoods of $x$ and $y$. If some $(x', y') \in B \times V$ had $y' = a \cdot x'$, then $a \in A_{g_i}$ for some $i$, whence $y' \in U_{g_i}$; but also $y' \in V \subseteq V_{g_i}$, which is disjoint from $U_{g_i}$. So $B \times V$ misses $\Gamma$, and $\Gamma$ is closed.
 
 ^pf-13-5
 
@@ -380,7 +380,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 ^def-13-7
 
 > [!remark] Remark: Proper Actions
-> Uribe: “this is one of many theorems people are interested in on when quotient spaces are Hausdorff, and this is the simplest one.” Properness is the notion that replaces compactness of $G$ altogether: every action of a compact group on a Hausdorff space is proper, and proper actions of non-compact groups are what Lee Ch. 21 treats. He warned that his own examples will be mostly compact — “I tend to be a compact-manifold person.”
+> The preceding result is the simplest of many theorems on when quotient spaces are Hausdorff. Properness is the notion that replaces compactness of $G$ altogether: every action of a compact group on a Hausdorff space is proper, and proper actions of non-compact groups are what Lee Ch. 21 treats. The examples in this course are mostly compact.
 
 ^rem-13-8
 

@@ -103,9 +103,9 @@ tags: [differentiable-manifolds, math591]
 > [!remark] Remark: Which Definition to Use When
 > The proposition says “basis” has a single meaning; the two definitions are just the two directions of use.
 > - **Topology already given** (e.g. $\mathbb{R}^n$ with the usual topology, or a subspace of it): use [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]] to *verify* that a proposed family is a basis. This is what the second-countability examples below do.
-> - **Topology to be constructed** (e.g. the [[§1 Point-Set Topology Review#^ex-1-4|line with two origins]], [[§3 Subspaces and Products#^def-3-3|product]] and [[§4 Quotient Spaces and Open Maps#^def-4-1|quotient]] topologies): use [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] to *generate* it from a convenient family $\mathcal{B}$, after checking axiom 2. Uribe phrases this as “it suffices to give a basis of neighborhoods of each point,” which is [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] applied to the union of the local bases.
+> - **Topology to be constructed** (e.g. the [[§1 Point-Set Topology Review#^ex-1-4|line with two origins]], [[§3 Subspaces and Products#^def-3-3|product]] and [[§4 Quotient Spaces and Open Maps#^def-4-1|quotient]] topologies): use [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] to *generate* it from a convenient family $\mathcal{B}$, after checking axiom 2. In practice it suffices to give a basis of neighborhoods of each point; this is [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] applied to the union of the local bases.
 >
-> Uribe stated [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]] and the reformulation in [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1]]; [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] was not written in lecture but is the form used implicitly whenever a topology is specified by a basis.
+> The lecture stated [[§1 Point-Set Topology Review#^def-1-1|Definition §1.1]] and the reformulation in [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1]]; [[§1 Point-Set Topology Review#^def-1-2|Definition §1.2]] was not written in lecture but is the form used implicitly whenever a topology is specified by a basis.
 
 ^rem-1-3
 
@@ -260,7 +260,7 @@ tags: [differentiable-manifolds, math591]
 > - For quotients, Hausdorffness is decided by the [[§6 Open Quotients#^thm-6-1|Hausdorff criterion, §6.1]].
 
 > [!remark] Remark
-> There is a whole hierarchy of separation axioms ($T_0, T_1, T_{2\frac12}, T_3, T_{3\frac12}, \ldots$; see [[§23 Separation Axioms#^rem-23-2|590 §23]]). Uribe's editorial: learning all of them is mostly a waste of time. For manifolds, $T_2$ is the one that matters.
+> There is a whole hierarchy of separation axioms ($T_0, T_1, T_{2\frac12}, T_3, T_{3\frac12}, \ldots$; see [[§23 Separation Axioms#^rem-23-2|590 §23]]). For manifolds, $T_2$ is the one that matters.
 
 ^rem-1-8
 
@@ -333,7 +333,7 @@ tags: [differentiable-manifolds, math591]
 
 *Uses:* [[§1 Point-Set Topology Review#^def-1-2|Def. §1.2]], [[§1 Point-Set Topology Review#^def-1-3|Def. §1.3]], [[§1 Point-Set Topology Review#^prop-1-2|§1.2]], [[§1 Point-Set Topology Review#^def-1-5|Def. §1.5]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§2 Basis for a Topology#^lem-2-1|590 §2.1]]
 
-*Provenance.* Lecture 1 gave the set, the neighbourhood bases of $0_1$ and $0_2$, and the verdict “you cannot separate the two origins.” It sketched the other two conditions in words: second countability (“I won't prove [it] … each one has a countable basis”) and local Euclideanness (“there's an obvious bijection with $(-\varepsilon, \varepsilon)$, and this turns out to be a homeomorphism”). The verification above that the proposed sets form a basis, and the precise non-separation argument, are filled in.
+*Provenance.* Lecture 1 gave the set, the neighbourhood bases of $0_1$ and $0_2$, and the verdict that the two origins cannot be separated. It sketched the other two conditions in words: second countability (each piece has a countable basis; not proved in lecture) and local Euclideanness (the evident bijection with $(-\varepsilon, \varepsilon)$ is a homeomorphism). The verification above that the proposed sets form a basis, and the precise non-separation argument, are filled in.
 
 ![[m591-1-2.svg]]
 *The basic neighbourhoods $N_1(\varepsilon)$ and $N_2(\varepsilon)$ of the two origins share the punctured interval $(-\varepsilon,0)\cup(0,\varepsilon)$, so no neighbourhoods of $0_1$ and $0_2$ are disjoint.*

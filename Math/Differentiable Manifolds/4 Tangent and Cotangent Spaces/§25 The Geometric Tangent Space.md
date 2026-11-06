@@ -9,10 +9,10 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: geometric — Tangent vectors as velocities inside the ambient space, $T^{\mathrm{geo}}_pM = \ker F'(p)$ — available only for manifolds presented by equations.*
 
-*Reference: Lee Ch. 3, “Tangent Vectors.” Begun at the end of Lecture 7; the abstract definition is promised for Friday. Logistics: a grader (a doctoral student) has been assigned; HW3 Problem 1 is the diffeomorphism $\mathbb{R} \cong \widetilde{\mathbb{R}}$ of [[§19 Smooth Functions and Smooth Maps#^ex-19-1|Example §19.1]].*
+*Reference: Lee Ch. 3, “Tangent Vectors.” Begun at the end of Lecture 7; the abstract definition is promised for Friday. HW3 Problem 1 is the diffeomorphism $\mathbb{R} \cong \widetilde{\mathbb{R}}$ of [[§19 Smooth Functions and Smooth Maps#^ex-19-1|Example §19.1]].*
 
 > [!remark] Remark: Why This Section
-> The goal is to attach to each point $p$ of a smooth manifold $M$ a vector space $T_pM$, the *abstract tangent space*, so that maps between manifolds acquire differentials $dF_p : T_pM \to T_{F(p)}N$ as in [[§22 The Differential of a Map Between Vector Spaces|§22]]. The obstacle is that the familiar picture — a plane resting on a surface — lives in an ambient space: “if you have a sphere you can think of the tangent plane, but that is a subspace of $\mathbb{R}^3$. If you do not have $\mathbb{R}^3$, then what do you do? You do not have room to put your vectors.” An abstract manifold has no ambient space, so the construction “is going to take a little while.” This section therefore treats the case where an ambient space *is* available, and defines there the *geometric tangent space* $T^{\mathrm{geo}}_pM$ — as motivation, and because it covers all the matrix groups. The abstract $T_pM$ is built in [[§27 Germs|§27]], and the cotangent space in [[§32 The Cotangent Space|§32]]. (Uribe noted that it is in some ways more natural to define the dual space first — the cotangent space — but follows Lee in not doing so.)
+> The goal is to attach to each point $p$ of a smooth manifold $M$ a vector space $T_pM$, the *abstract tangent space*, so that maps between manifolds acquire differentials $dF_p : T_pM \to T_{F(p)}N$ as in [[§22 The Differential of a Map Between Vector Spaces|§22]]. The obstacle is that the familiar picture — a plane resting on a surface — lives in an ambient space: the tangent plane to a sphere is a subspace of $\mathbb{R}^3$, and without the $\mathbb{R}^3$ there is no room to put the vectors. An abstract manifold has no ambient space, so the construction takes some work. This section therefore treats the case where an ambient space *is* available, and defines there the *geometric tangent space* $T^{\mathrm{geo}}_pM$ — as motivation, and because it covers all the matrix groups. The abstract $T_pM$ is built in [[§27 Germs|§27]], and the cotangent space in [[§32 The Cotangent Space|§32]]. (It is in some ways more natural to define the dual space first — the cotangent space — but the course follows Lee in not doing so.)
 
 ^rem-25-1
 
@@ -54,7 +54,7 @@ Throughout this subsection $W \subseteq \mathbb{R}^{n+k}$ is open, $F : W \to \m
 
 “Smooth” for $\gamma$ means smooth as a map into the Euclidean space $\mathbb{R}^{n+k}$; the constraint that it take values in $M$ is a separate condition. The derivative $\gamma'(0)$ is computed with the vector space structure of $\mathbb{R}^{n+k}$, which is exactly what an abstract manifold lacks. The figure shows the definition: a curve $\gamma$ drawn on $M$ through $p$, its velocity $v$ at $t=0$ (a vector of the ambient space, drawn from $p$), and the plane these velocities sweep out as $\gamma$ ranges over all such curves — which [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]] identifies as $\ker F'(p)$, and which is therefore orthogonal to the gradient $\nabla F(p)$, shown in grey for contrast. Note that $T^{\mathrm{geo}}_pM$ is drawn as a plane through $p$ only as an aid: as a subspace of $\mathbb{R}^{n+k}$ it passes through the origin, and it is the *translate* to $p$ that is tangent to $M$.
 
-It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition §25.1]] that $T^{\mathrm{geo}}_pM$ is closed under addition: given two curves through $p$ with velocities $v$ and $w$, there is no evident curve with velocity $v + w$. “How do I add two curves?” Both this and the dimension follow from an algebraic description.
+It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition §25.1]] that $T^{\mathrm{geo}}_pM$ is closed under addition: given two curves through $p$ with velocities $v$ and $w$, there is no evident curve with velocity $v + w$. Both this and the dimension follow from an algebraic description.
 
 > [!theorem] Lemma §25.1: Locality of the Geometric Tangent Space
 > If $M' \subseteq M$ is open in $M$ and $p \in M'$, then $T^{\mathrm{geo}}_pM' = T^{\mathrm{geo}}_pM$.
@@ -96,7 +96,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 ^lem-25-2
 
 > [!proof]+ Proof
-> *(Set in Lecture 8 as an exercise — “not a trivial exercise”; filled in.)* Write $L = G'(x_0) : \mathbb{R}^n \to \mathbb{R}^k$ and $\Gamma = \{(u, Lu) \mid u \in \mathbb{R}^n\}$ for its graph. The claim is $T^{\mathrm{geo}}_pM = \Gamma$, proved as two inclusions, followed by the dimension count.
+> *(Set in Lecture 8 as an exercise; filled in.)* Write $L = G'(x_0) : \mathbb{R}^n \to \mathbb{R}^k$ and $\Gamma = \{(u, Lu) \mid u \in \mathbb{R}^n\}$ for its graph. The claim is $T^{\mathrm{geo}}_pM = \Gamma$, proved as two inclusions, followed by the dimension count.
 >
 > $\subseteq$: let $\gamma : (-\varepsilon,\varepsilon) \to M$ be smooth with $\gamma(0) = p$, and write $\gamma = (\gamma_1, \gamma_2)$ with $\gamma_1$ into $\mathbb{R}^n$ and $\gamma_2$ into $\mathbb{R}^k$. Both components are smooth, since their coordinates are coordinates of $\gamma$. For each $t$, $\gamma(t) \in M$ means $\gamma(t) = (x, G(x))$ for some $x \in A$; comparing first components, $x = \gamma_1(t)$, so
 >
@@ -146,7 +146,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]], [[Multivariable Chain Rule|452 §12.2]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark] Remark
-> Uribe stated this lemma and left it as an exercise, calling it “not a trivial exercise”; the proof above is short but both inclusions are needed, and the $\supseteq$ half — lifting a straight line from the chart — is the construction that reappears in [[§27 Germs|§27]] as the curve defining $D_v$. In words: *the geometric tangent space to a graph is the graph of the differential.*
+> This lemma was set as an exercise in Lecture 8; the proof above is short but both inclusions are needed, and the $\supseteq$ half — lifting a straight line from the chart — is the construction that reappears in [[§27 Germs|§27]] as the curve defining $D_v$. In words: *the geometric tangent space to a graph is the graph of the differential.*
 
 ^rem-25-3
 
@@ -173,7 +173,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 > [!proof]+ Proof
 > The order is Lecture 8's sketch, which built on an inclusion proved in Lecture 7. The plan: prove $T^{\mathrm{geo}}_pM \subseteq \ker F'(p)$ directly, show both sides have dimension $n$, and conclude equality.
 >
-> *1. The inclusion (Lecture 7: “last time we saw this inclusion”).* $T^{\mathrm{geo}}_pM \subseteq \ker F'(p)$. Let $v \in T^{\mathrm{geo}}_pM$ with $\gamma$ as in Definition [[§25 The Geometric Tangent Space#^def-25-1|§25.1]], so $v = \gamma'(0)$, $\gamma(0) = p$ and $\gamma(t) \in M \subseteq W$ for all $t$. The composite $F \circ \gamma : (-\varepsilon,\varepsilon) \to \mathbb{R}^k$ is smooth, being a composite of smooth maps between Euclidean spaces, and since $\gamma(t) \in M = F^{-1}(c)$ for every $t$ it is the constant $c$; a constant curve has velocity $\vec 0$. Differentiating at $t = 0$ and applying the chain rule for curves (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]),
+> *1. The inclusion (Lecture 7).* $T^{\mathrm{geo}}_pM \subseteq \ker F'(p)$. Let $v \in T^{\mathrm{geo}}_pM$ with $\gamma$ as in Definition [[§25 The Geometric Tangent Space#^def-25-1|§25.1]], so $v = \gamma'(0)$, $\gamma(0) = p$ and $\gamma(t) \in M \subseteq W$ for all $t$. The composite $F \circ \gamma : (-\varepsilon,\varepsilon) \to \mathbb{R}^k$ is smooth, being a composite of smooth maps between Euclidean spaces, and since $\gamma(t) \in M = F^{-1}(c)$ for every $t$ it is the constant $c$; a constant curve has velocity $\vec 0$. Differentiating at $t = 0$ and applying the chain rule for curves (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]),
 >
 > $$
 > \vec 0 = \frac{d}{dt}\Big|_{t=0} F(\gamma(t)) = F'(\gamma(0))\,\gamma'(0) = F'(p)\, v ,
@@ -181,7 +181,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 >
 > so $v \in \ker F'(p)$.
 >
-> *2. Everything is local near $p$, so WLOG $M$ is a graph.* “Since everything is local near $p$ … these regular level sets are locally graphs of functions, for various choices of variables.” *(Completion.)* The proof of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], in the form of Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]] (open domain $W$, value $c$), gives the following. There is a permutation of coordinates $\rho : \mathbb{R}^{n+k} \to \mathbb{R}^{n+k}$ (Step 1 there), an open box $V \times V' \subseteq \mathbb{R}^n \times \mathbb{R}^k$ containing $\rho(p)$, and a smooth $G : V \to V'$ (Steps 2–3 there) with
+> *2. Everything is local near $p$, so WLOG $M$ is a graph.* Regular level sets are locally graphs of functions, for various choices of variables. *(Completion.)* The proof of Theorem [[§7 The Regular Value Theorem#^thm-7-3|§7.3]], in the form of Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]] (open domain $W$, value $c$), gives the following. There is a permutation of coordinates $\rho : \mathbb{R}^{n+k} \to \mathbb{R}^{n+k}$ (Step 1 there), an open box $V \times V' \subseteq \mathbb{R}^n \times \mathbb{R}^k$ containing $\rho(p)$, and a smooth $G : V \to V'$ (Steps 2–3 there) with
 >
 > $$
 > \rho(M) \cap (V \times V') = \{(x, G(x)) \mid x \in V\} .
@@ -195,7 +195,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 >
 > Next, $M' = \rho(M) \cap (V \times V')$ is open in $\rho(M)$, because $V \times V'$ is open in $\mathbb{R}^{n+k}$, and contains $\rho(p)$; so by Lemma [[§25 The Geometric Tangent Space#^lem-25-1|§25.1]] the geometric tangent space is unchanged on passing to this open piece: $T^{\mathrm{geo}}_{\rho(p)}\rho(M) = T^{\mathrm{geo}}_{\rho(p)}M'$.
 >
-> *3. The claim: the tangent space to a graph is the graph of the derivative.* Write $\rho(p) = (x_0, G(x_0))$ with $x_0 \in V$. Lemma [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]], applied to the graph $M'$ of $G$ over the open set $A = V$ — set in lecture as “not a trivial exercise” — gives $T^{\mathrm{geo}}_{\rho(p)}M' = \{(u, G'(x_0)u) \mid u \in \mathbb{R}^n\}$, a linear subspace of dimension $n$. By Step 2, $T^{\mathrm{geo}}_pM = \rho^{-1}\big(T^{\mathrm{geo}}_{\rho(p)}M'\big)$ is the image of this subspace under the linear isomorphism $\rho^{-1}$; so $T^{\mathrm{geo}}_pM$ is a linear subspace of $\mathbb{R}^{n+k}$ of dimension $n$.
+> *3. The claim: the tangent space to a graph is the graph of the derivative.* Write $\rho(p) = (x_0, G(x_0))$ with $x_0 \in V$. Lemma [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]], applied to the graph $M'$ of $G$ over the open set $A = V$ gives $T^{\mathrm{geo}}_{\rho(p)}M' = \{(u, G'(x_0)u) \mid u \in \mathbb{R}^n\}$, a linear subspace of dimension $n$. By Step 2, $T^{\mathrm{geo}}_pM = \rho^{-1}\big(T^{\mathrm{geo}}_{\rho(p)}M'\big)$ is the image of this subspace under the linear isomorphism $\rho^{-1}$; so $T^{\mathrm{geo}}_pM$ is a linear subspace of $\mathbb{R}^{n+k}$ of dimension $n$.
 >
 > *4. The kernel has dimension $n$, by rank–nullity.* Since $c$ is a regular value and $p \in F^{-1}(c)$, the Jacobian $F'(p) : \mathbb{R}^{n+k} \to \mathbb{R}^k$ is surjective, i.e. has rank $k$ (Definitions [[§7 The Regular Value Theorem#^def-7-4|§7.4]] and [[§7 The Regular Value Theorem#^def-7-3|§7.3]]). Rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) gives
 >
@@ -203,7 +203,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 > \dim \ker F'(p) = \dim \mathbb{R}^{n+k} - \operatorname{rank} F'(p) = (n+k) - k = n .
 > $$
 >
-> *5. “We must have equality.”* By Steps 1, 3 and 4, $T^{\mathrm{geo}}_pM$ is an $n$-dimensional subspace contained in the $n$-dimensional subspace $\ker F'(p)$. A basis of $T^{\mathrm{geo}}_pM$ consists of $n$ linearly independent vectors of $\ker F'(p)$, and $n$ independent vectors in an $n$-dimensional space form a basis of it; so they span $\ker F'(p)$, and $\ker F'(p) \subseteq T^{\mathrm{geo}}_pM$. The two are equal.
+> *5. Equality.* By Steps 1, 3 and 4, $T^{\mathrm{geo}}_pM$ is an $n$-dimensional subspace contained in the $n$-dimensional subspace $\ker F'(p)$. A basis of $T^{\mathrm{geo}}_pM$ consists of $n$ linearly independent vectors of $\ker F'(p)$, and $n$ independent vectors in an $n$-dimensional space form a basis of it; so they span $\ker F'(p)$, and $\ker F'(p) \subseteq T^{\mathrm{geo}}_pM$. The two are equal.
 
 ^pf-25-3
 
@@ -214,7 +214,7 @@ It is not obvious from [[§25 The Geometric Tangent Space#^def-25-1|Definition �
 > - Orthogonality to the gradients is the geometry behind [[Method of Lagrange Multipliers|452 §17.2 (Lagrange multipliers)]].
 
 > [!remark] Remark
-> The structure is worth noticing, because it is not the obvious one. Only the *easy* inclusion is proved directly; the reverse inclusion is never constructed, but forced by a dimension count. Uribe: “it's best actually to prove something else” — namely the graph lemma, from which both the vector space structure and the dimension of $T^{\mathrm{geo}}_pM$ are immediate, after which “we must have equality.”
+> The structure is worth noticing, because it is not the obvious one. Only the *easy* inclusion is proved directly; the reverse inclusion is never constructed, but forced by a dimension count. The efficient route is to prove something else — the graph lemma, from which both the vector space structure and the dimension of $T^{\mathrm{geo}}_pM$ are immediate, after which equality is forced.
 
 ^rem-25-4
 
@@ -530,7 +530,7 @@ $$
 $$
 
 ![[m591-12-1.svg]]
-*The chart triangle for the graph case, as drawn on the board. Downstairs is the open set $A \subseteq \mathbb{R}^n$; upstairs is the manifold. The chart $\varphi(x, G(x)) = x$ and its inverse $\varphi^{-1}(x) = (x, G(x))$ pass between them, and the triangle commutes: $f = f_\varphi \circ \varphi$. Smoothness of $f$* means *smoothness of $f_\varphi$, so every computation with $f$ can be pushed downstairs, done in ordinary calculus, and read back. That is the manoeuvre in the next definition: the curve is built downstairs as a straight line, lifted upstairs by $\varphi^{-1}$, and the derivative taken downstairs again. “Upstairs and downstairs are very useful terminologies.”*
+*The chart triangle for the graph case, as drawn on the board. Downstairs is the open set $A \subseteq \mathbb{R}^n$; upstairs is the manifold. The chart $\varphi(x, G(x)) = x$ and its inverse $\varphi^{-1}(x) = (x, G(x))$ pass between them, and the triangle commutes: $f = f_\varphi \circ \varphi$. Smoothness of $f$* means *smoothness of $f_\varphi$, so every computation with $f$ can be pushed downstairs, done in ordinary calculus, and read back. That is the manoeuvre in the next definition: the curve is built downstairs as a straight line, lifted upstairs by $\varphi^{-1}$, and the derivative taken downstairs again. The words *upstairs* and *downstairs* are used in this sense from now on.*
 
 > [!definition] Definition §25.4: The Directional Derivative Attached to a Tangent Vector
 > Let $M \subseteq \mathbb{R}^{n+k}$ be the graph of a smooth $G : A \to \mathbb{R}^k$ on an open $A \subseteq \mathbb{R}^n$, with chart $\varphi(x, G(x)) = x$, and $p = (x_0, G(x_0))$. Let $v \in T^{\mathrm{geo}}_pM$, let $u \in \mathbb{R}^n$ be the vector with $v = (u, G'(x_0)u)$ (Lemma [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]]), and let $\gamma(t) = (x_0 + tu, G(x_0 + tu))$ be the lifted line, a curve in $M$ with $\gamma(0) = p$ and $\gamma'(0) = v$. For $f$ a smooth real-valued function on a neighbourhood of $p$ in $M$, set
@@ -560,7 +560,7 @@ $$
 > [!proof]+ Proof
 > Throughout, $f$ is smooth on an open neighbourhood of $p$ in $M$, $f_\varphi = f \circ \varphi^{-1}$, so that $f = f_\varphi \circ \varphi$ on that neighbourhood, and by the third expression in Definition [[§25 The Geometric Tangent Space#^def-25-4|§25.4]], $D_v(f) = u \cdot \nabla f_\varphi(x_0)$.
 >
-> *(1)* $\gamma(t)$ lies in any given neighbourhood of $p$ for $|t|$ small, so only the values of $f$ near $p$ enter — “we don't need the whole manifold.” In detail: suppose $f$ and $g$ are smooth near $p$ and agree on an open $W \ni p$ of $M$, say $W = M \cap O$ with $O$ open in $\mathbb{R}^{n+k}$. The curve $\gamma$ is continuous with values in $M$, so $\gamma^{-1}(W) = \gamma^{-1}(O)$ is open in its interval of definition and contains $0$; hence it contains some $(-\delta,\delta)$. For $|t| < \delta$, $\gamma(t) \in W$ and $f(\gamma(t)) = g(\gamma(t))$. Two functions of $t$ that agree on $(-\delta,\delta)$ have the same difference quotients at $0$ for $0 < |t| < \delta$, hence the same derivative at $0$:
+> *(1)* $\gamma(t)$ lies in any given neighbourhood of $p$ for $|t|$ small, so only the values of $f$ near $p$ enter. In detail: suppose $f$ and $g$ are smooth near $p$ and agree on an open $W \ni p$ of $M$, say $W = M \cap O$ with $O$ open in $\mathbb{R}^{n+k}$. The curve $\gamma$ is continuous with values in $M$, so $\gamma^{-1}(W) = \gamma^{-1}(O)$ is open in its interval of definition and contains $0$; hence it contains some $(-\delta,\delta)$. For $|t| < \delta$, $\gamma(t) \in W$ and $f(\gamma(t)) = g(\gamma(t))$. Two functions of $t$ that agree on $(-\delta,\delta)$ have the same difference quotients at $0$ for $0 < |t| < \delta$, hence the same derivative at $0$:
 >
 > $$
 > D_v(f) = \frac{d}{dt}\Big|_{t=0} f(\gamma(t)) = \frac{d}{dt}\Big|_{t=0} g(\gamma(t)) = D_v(g) .
@@ -632,7 +632,7 @@ $$
 *Uses:* [[§25 The Geometric Tangent Space#^def-25-4|Def. §25.4]], [[§25 The Geometric Tangent Space#^lem-25-2|§25.2]]
 
 > [!remark] Remark
-> Uribe's version of this argument: the numbers $D_v(f) = u \cdot \nabla f_\varphi(x_0)$ range over the dot products of $u$ with an arbitrary vector, because the gradient of a function at a point can be prescribed freely; so knowing all of them determines $u$. Taking $f$ to be the coordinate functions is the cheapest way to prescribe it.
+> The lecture's version of this argument: the numbers $D_v(f) = u \cdot \nabla f_\varphi(x_0)$ range over the dot products of $u$ with an arbitrary vector, because the gradient of a function at a point can be prescribed freely; so knowing all of them determines $u$. Taking $f$ to be the coordinate functions is the cheapest way to prescribe it.
 >
 > The conclusion is that a tangent vector loses nothing by being replaced by the operator it defines — and the operator, unlike the vector, makes sense with no ambient space in sight. *Tangent vectors will be defined as operators:* you feed them a function and they return a number.
 

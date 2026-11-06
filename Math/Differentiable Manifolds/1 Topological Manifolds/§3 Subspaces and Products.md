@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Reference: Lee Appendix A (“Subspaces, Products, Disjoint Unions, and Quotients”); MATH 590 notes [[§5 Subspace Topology|§5]] (subspaces), [[§4 Product Topology|§4]] (products), [[§13 Quotient Topology|§13]] (quotients).*
 
 > [!remark] Remark: Why This Section
-> Many of the most important manifolds are not defined by charts directly but are *constructed* out of other spaces: complex projective space, Grassmannians, moduli spaces are all quotients. Uribe: “quotients are the most important construction; a lot of really neat, important manifolds are constructed as quotients of others.” The guiding question of the lecture, for each construction, is whether the two point-set conditions in the definition of a manifold are *heritable*: if $X$ is $T_2$ and second countable, is the new space too? For subspaces and products the answer is an easy yes; for quotients *everything can go wrong*, and the substance of the lecture is a usable criterion for when it doesn't.
+> Many of the most important manifolds are not defined by charts directly but are *constructed* out of other spaces: complex projective space, Grassmannians, moduli spaces are all quotients, and quotients are the most important of the constructions below. The guiding question of the lecture, for each construction, is whether the two point-set conditions in the definition of a manifold are *heritable*: if $X$ is $T_2$ and second countable, is the new space too? For subspaces and products the answer is an easy yes; for quotients *everything can go wrong*, and the substance of the lecture is a usable criterion for when it doesn't.
 
 ^rem-3-1
 
@@ -187,7 +187,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 ^prop-3-7
 
 > [!proof]+ Proof
-> *(Lecture 2 described the product topology by boxes — “for any point $(x,y)$ in $A$, I can fit a box”; that the boxes form a basis is filled in.)* Axiom 1 is clear, since $X \times Y \in \mathcal{B}$. Axiom 2 holds with room to spare, because $\mathcal{B}$ is closed under finite intersections:
+> *(Lecture 2 described the product topology by boxes: around any point $(x,y)$ of an open set $A$ one can fit a box inside $A$; that the boxes form a basis is filled in.)* Axiom 1 is clear, since $X \times Y \in \mathcal{B}$. Axiom 2 holds with room to spare, because $\mathcal{B}$ is closed under finite intersections:
 >
 > $$
 > (U_1 \times V_1) \cap (U_2 \times V_2) = (U_1 \cap U_2) \times (V_1 \cap V_2).
@@ -222,7 +222,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 *Uses:* [[§3 Subspaces and Products#^def-3-3|Def. §3.3]], [[§3 Subspaces and Products#^prop-3-7|§3.7]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^prop-1-1|§1.1]]
 
 > [!remark] Remark: Cartoons
-> Uribe on the figure above: diagrams of this kind are “incredibly important and useful”—an open set in a product is one in which every point can be surrounded by a *box*. The box picture is what actually gets used in proofs (it reappears in the second-countability part of [[§3 Subspaces and Products#^thm-3-12|Theorem §3.12]] and in the proof of the [[§6 Open Quotients#^pf-6-1|Hausdorff Criterion]] below), and he encourages drawing it every time.
+> Diagrams of the kind in the figure above are the working picture of the product topology: an open set in a product is one in which every point can be surrounded by a *box*. The box picture is what actually gets used in proofs (it reappears in the second-countability part of [[§3 Subspaces and Products#^thm-3-12|Theorem §3.12]] and in the proof of the [[§6 Open Quotients#^pf-6-1|Hausdorff Criterion]] below), and it is worth drawing every time.
 
 ^rem-3-4
 
@@ -282,7 +282,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 > - Smooth version: [[§19 Smooth Functions and Smooth Maps#^prop-19-10|§19.10]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]].
 
 > [!remark] Remark: Why the Universal Property Matters
-> “To check that $F$ is continuous, you just check component by component.” Uribe flagged that the same pattern will reappear for *differentiability*: a map into a product of manifolds will be smooth iff its components are. In Lee's language this is the *characteristic property* of the product topology (Lee Prop. A.16), and it characterizes the product topology uniquely ([[§3 Subspaces and Products#^cor-3-11|Corollary §3.11]] below). Together with the previous proposition this gives two independent abstract descriptions of the same topology—“coarsest making projections continuous” and “the one that lets you check maps componentwise.”
+> To check that $F$ is continuous, it suffices to check it component by component. The same pattern reappears for *differentiability*: a map into a product of manifolds is smooth iff its components are. In Lee's language this is the *characteristic property* of the product topology (Lee Prop. A.16), and it characterizes the product topology uniquely ([[§3 Subspaces and Products#^cor-3-11|Corollary §3.11]] below). Together with the previous proposition this gives two independent abstract descriptions of the same topology—“coarsest making projections continuous” and “the one that lets you check maps componentwise.”
 >
 > Compare [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]]: the subspace topology is the coarsest making the inclusion continuous, and continuity of a map *into* $S$ is checked by composing with $\iota$. The quotient topology will complete the pattern in the opposite direction (Proposition [[§5 Quotient Maps#^cor-5-2|§5.2]]): it is the *finest* making $\pi$ continuous, and continuity of a map *out of* $X/{\sim}$ is checked by precomposing with $\pi$.
 
@@ -310,7 +310,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 ^thm-3-12
 
-> [!proof]+ Proof (not given in lecture — “it's point-set topology”)
+> [!proof]+ Proof (not given in lecture)
 > (1) Let $(x, y) \neq (x', y')$; they differ in some coordinate, say $x \neq x'$ (the other case is symmetric). Choose disjoint open $U \ni x$, $U' \ni x'$ in $X$. Then $U \times Y$ and $U' \times Y$ are disjoint open neighborhoods of the two points.
 >
 > (2) If $\{U_\alpha\}_{\alpha \in A}$ and $\{V_\beta\}_{\beta \in B}$ are countable bases of $X$ and $Y$, then $\{U_\alpha \times V_\beta\}_{(\alpha,\beta) \in A \times B}$ is a countable collection ($A \times B$ countable), and it is a basis: given $(x,y) \in W$ open, the box characterization gives $U \times V \subseteq W$ around $(x,y)$, and then $U_\alpha \subseteq U$, $V_\beta \subseteq V$ around $x, y$ give $(x,y) \in U_\alpha \times V_\beta \subseteq W$.

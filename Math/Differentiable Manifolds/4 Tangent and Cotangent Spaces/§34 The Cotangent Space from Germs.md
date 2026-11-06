@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: abstract, dual — The cotangent space recovered from germs alone, $T_p^{\ast}M \cong I_p/I_p^2$, with no dualizing; covectors then pull back along smooth maps, as germs do.*
 
-*Assignment 3, Problem 3. The cotangent space was defined in Lecture 10 as the dual $(T_pM)^{\ast}$. This subsection shows that it also has a description with no dualizing at all, in terms of germs alone — “as you can see, it has the natural definition $I_p/I_p^2$.” The proof splits into four results: a characterization of $I_p^2$, a basis of the quotient, a non-degenerate pairing, and the isomorphism, which then comes from the [[§21 Linear Algebra Toolkit#^thm-21-5|Linear Algebra Toolkit]] for free.*
+*Assignment 3, Problem 3. The cotangent space was defined in Lecture 10 as the dual $(T_pM)^{\ast}$. This subsection shows that it also has a description with no dualizing at all, in terms of germs alone: the natural definition $I_p/I_p^2$. The proof splits into four results: a characterization of $I_p^2$, a basis of the quotient, a non-degenerate pairing, and the isomorphism, which then comes from the [[§21 Linear Algebra Toolkit#^thm-21-5|Linear Algebra Toolkit]] for free.*
 
 > [!definition] Definition §34.1: The Space $I_p/I_p^2$
 > $I_p/I_p^2$ is the quotient vector space (Definition [[§21 Linear Algebra Toolkit#^def-21-6|§21.6]]) of $I_p$ by its subspace $I_p^2$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-1|§28.1]]). The class of $[f] \in I_p$ is written ${[}[f]{]} = [f] + I_p^2$, and ${[}[f]{]} = {[}[f']{]}$ iff $[f'] - [f] \in I_p^2$.
@@ -217,15 +217,15 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 *Uses:* [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§32 The Cotangent Space#^cor-32-3|§32.3]], [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]
 
 ![[m591-13-3.svg]]
-*The three spaces and their three bases. $\Phi$ sends the class of a germ to its differential, so the coordinate classes go to the coordinate covectors, and those are the dual basis of the coordinate derivations. Uribe's $dx^i|_p$ of Lecture 10 and the classes ${[}[x^i - x^i(p)]{]}$ of Problem 3 are the same objects, seen through $\Phi$.*
+*The three spaces and their three bases. $\Phi$ sends the class of a germ to its differential, so the coordinate classes go to the coordinate covectors, and those are the dual basis of the coordinate derivations. The $dx^i|_p$ of Lecture 10 and the classes ${[}[x^i - x^i(p)]{]}$ of Problem 3 are the same objects, seen through $\Phi$.*
 
 > [!remark] Remark: The Most Natural Description
-> Lecture 15 came back to this theorem: “the cotangent space is, in a way, very extremely natural from the point of view of functions.” The tangent space needed derivations; the cotangent space needs only functions — germs vanishing at $p$, modulo those vanishing to second order. This is one reason why the cotangent bundle will turn out to carry structure that the tangent bundle does not.
+> Lecture 15 came back to this theorem: from the point of view of functions, the cotangent space is the more natural of the two. The tangent space needed derivations; the cotangent space needs only functions — germs vanishing at $p$, modulo those vanishing to second order. This is one reason why the cotangent bundle will turn out to carry structure that the tangent bundle does not.
 
 ^rem-34-2
 
 > [!remark] Remark: Review Session: The More Natural Space
-> *Review session, Oct 16, recalling this homework problem.* $I_p$, the germs vanishing at $p$, is an ideal, and $T_p^{\ast}M \cong I_p/I_p^2$ naturally: “nothing with curves, nothing with ambient spaces … very, very general and very quick.” Uribe recalled a professor of his at MIT: “this tells you that the cotangent space really is the more natural space. … It has a one-page definition, and it has this symplectic structure that is … God-given. It's just sitting there” — even though we are less used to working with the dual object.
+> *Review session, Oct 16, recalling this homework problem.* $I_p$, the germs vanishing at $p$, is an ideal, and $T_p^{\ast}M \cong I_p/I_p^2$ naturally, with nothing about curves and nothing about ambient spaces — a very general and very quick description. This is a sense in which the cotangent space really is the more natural space: it has a one-page definition, and the cotangent bundle carries a symplectic structure with no choices made — even though one is less used to working with the dual object.
 
 ^rem-34-3
 
@@ -247,15 +247,15 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 
 *Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§34 The Cotangent Space from Germs#^prop-34-2|§34.2]], [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]
 
-Equal dimension is what makes the isomorphisms of Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]] possible, but the dimension count alone does not produce them: any two spaces of dimension $m$ are isomorphic, by choosing bases. What Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]] adds is that $\Phi$ needs no choice. Between $T_pM$ and $T_p^{\ast}M$ themselves there is no such choice-free isomorphism, which is why the tangent and cotangent bundles are isomorphic “but not naturally” ([[§52 The Cotangent Bundle|§52]]).
+Equal dimension is what makes the isomorphisms of Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]] possible, but the dimension count alone does not produce them: any two spaces of dimension $m$ are isomorphic, by choosing bases. What Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]] adds is that $\Phi$ needs no choice. Between $T_pM$ and $T_p^{\ast}M$ themselves there is no such choice-free isomorphism, which is why the tangent and cotangent bundles are isomorphic, but not naturally ([[§52 The Cotangent Bundle|§52]]).
 
 **Assignment 3, Problem 3.** Part (a) is the well-definedness in Proposition [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]]. Part (b) is its non-degeneracy, and the “therefore” of (b) is Theorem [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], which uses *both* halves: right non-degeneracy bounds $\dim I_p/I_p^2 \le n$, left non-degeneracy gives $n \le \dim I_p/I_p^2$. The submitted solution reaches the isomorphism by another route: it shows $\Phi$ injective by right non-degeneracy and surjective by checking that $\Phi({[}[x^i - x^i(p)]{]})$ is the dual basis — which is part (3) of the theorem.
 
-**Comparison with Lee.** In the text of Chapter 11, Lee defines the cotangent space as the dual $(T_pM)^{\ast}$, motivated as the coordinate-independent replacement for the gradient. The description of this subsection is his Problem 11-4. Part (a) is Proposition [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]], down to the phrase “vanishes to second order”, and part (b) is Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]](1)–(2). There are two differences. First, Lee's $I_p$ consists of smooth functions on all of $M$ vanishing at $p$, not germs, so his version needs bump functions to pass between local and global, as everywhere in his treatment (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]]). Second, Lee proves the isomorphism directly, showing that $f \mapsto df_p$ vanishes on $I_p^2$ and descends to the quotient, where Assignment 3 goes through a non-degenerate pairing and the pairing theorem. His remark to the problem adds two points: some treatments define $T_p^{\ast}M$ first, as $I_p/I_p^2$, and then $T_pM$ as its dual — the order Uribe called in some ways more natural — and covectors, as classes of functions $M \to \mathbb{R}$, are dual to tangent vectors as classes of curves $\mathbb{R} \to M$ (his Problem 3-8; here Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]). The quotient $I_p/I_p^2$ is also the manifold analogue of the Zariski cotangent space of algebraic geometry.
+**Comparison with Lee.** In the text of Chapter 11, Lee defines the cotangent space as the dual $(T_pM)^{\ast}$, motivated as the coordinate-independent replacement for the gradient. The description of this subsection is his Problem 11-4. Part (a) is Proposition [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]], down to the phrase “vanishes to second order”, and part (b) is Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]](1)–(2). There are two differences. First, Lee's $I_p$ consists of smooth functions on all of $M$ vanishing at $p$, not germs, so his version needs bump functions to pass between local and global, as everywhere in his treatment (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]]). Second, Lee proves the isomorphism directly, showing that $f \mapsto df_p$ vanishes on $I_p^2$ and descends to the quotient, where Assignment 3 goes through a non-degenerate pairing and the pairing theorem. His remark to the problem adds two points: some treatments define $T_p^{\ast}M$ first, as $I_p/I_p^2$, and then $T_pM$ as its dual — in some ways the more natural order — and covectors, as classes of functions $M \to \mathbb{R}$, are dual to tangent vectors as classes of curves $\mathbb{R} \to M$ (his Problem 3-8; here Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]). The quotient $I_p/I_p^2$ is also the manifold analogue of the Zariski cotangent space of algebraic geometry.
 
 ## Pulling Back Covectors
 
-*Lecture 15. A smooth map pushes tangent vectors forward; dually, it pulls covectors back. “Functions pull back by composition, and you can pull back actually any one-form by using the dual map of the forward star.”*
+*Lecture 15. A smooth map pushes tangent vectors forward; dually, it pulls covectors back. Functions pull back by composition, and any one-form pulls back by the dual of the pushforward $F_\ast$.*
 
 > [!definition] Definition §34.3: Pullback of Covectors
 > Let $F : M \to N$ be smooth and $p \in M$. The **pullback of covectors** at $p$ is the dual map ([[§21 Linear Algebra Toolkit#^def-21-3|Definition §21.3]]) of the pushforward $F_{\ast p} : T_pM \to T_{F(p)}N$:
@@ -302,7 +302,7 @@ its $j$-th column holding the components of $F_p^{\ast}\,dy^j|_{F(p)}$.
 ^prop-34-6
 
 > [!proof]+ Proof
-> *(Lecture 15 — “every equal sign is a definition … maybe this is best to be reflected upon at your coffee shop of choice.”)* For $v \in T_pM$:
+> *(Lecture 15: every equality below is a definition.)* For $v \in T_pM$:
 >
 > $$
 > F_p^*\big(df_{F(p)}\big)(v) = df_{F(p)}\big(F_{*p}v\big) = \big(F_{*p}v\big)[f] = v[f \circ F] = d(f \circ F)_p(v) .
@@ -321,7 +321,7 @@ its $j$-th column holding the components of $F_p^{\ast}\,dy^j|_{F(p)}$.
 > \xi_{\nabla(f \circ F)(p)}\big(D_w|_p\big) = d(f \circ F)_p\big(D_w|_p\big) = df_{F(p)}\big(D_{J_F(p)w}|_{F(p)}\big) = \nabla f(F(p)) \cdot J_F(p)w = \big(J_F(p)^{\mathsf T}\, \nabla f(F(p))\big) \cdot w = \xi_{J_F(p)^{\mathsf T} \nabla f(F(p))}\big(D_w|_p\big) ,
 > $$
 >
-> the first and third equalities being part (3) of Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]] (for $f \circ F$ at $p$, and for $f$ at $F(p)$), the second the proposition above together with the definition of $F_p^{\ast}$; as $v \mapsto \xi_v$ is injective, $\nabla(f \circ F)(p) = J_F(p)^{\mathsf T}\, \nabla f(F(p))$. Uribe added that the pushforward $F_\ast$ “we should have called the differential of $F$ ages ago”: for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{\ast p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
+> the first and third equalities being part (3) of Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]] (for $f \circ F$ at $p$, and for $f$ at $F(p)$), the second the proposition above together with the definition of $F_p^{\ast}$; as $v \mapsto \xi_v$ is injective, $\nabla(f \circ F)(p) = J_F(p)^{\mathsf T}\, \nabla f(F(p))$. The pushforward $F_\ast$ is the differential of $F$: for a function $f : M \to \mathbb{R}$, $df_p$ is $f_{\ast p}$ followed by the identification $T_{f(p)}\mathbb{R} \cong \mathbb{R}$.
 
 ^rem-34-5
 
@@ -369,4 +369,4 @@ its $j$-th column holding the components of $F_p^{\ast}\,dy^j|_{F(p)}$.
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|§28.4]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]], [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]], [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]]
 
-So in the germ picture no dual map is needed: a covector at $q$ is a class of germs vanishing at $q$, and it pulls back by composing with $F$, exactly as germs do. One operation, $[g] \mapsto [g \circ F]$, moves everything: tangent vectors act on germs, so they are pushed *forward* by precomposing with it; covectors are classes of germs, so they are pulled *back* by it. “Functions pull back by composition” (Lecture 15) covers covectors too.
+So in the germ picture no dual map is needed: a covector at $q$ is a class of germs vanishing at $q$, and it pulls back by composing with $F$, exactly as germs do. One operation, $[g] \mapsto [g \circ F]$, moves everything: tangent vectors act on germs, so they are pushed *forward* by precomposing with it; covectors are classes of germs, so they are pulled *back* by it. The principle that functions pull back by composition (Lecture 15) covers covectors too.

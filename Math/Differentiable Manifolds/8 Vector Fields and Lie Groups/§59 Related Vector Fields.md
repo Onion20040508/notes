@@ -9,12 +9,12 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: fields — Vector fields cannot be pushed forward along an arbitrary smooth map, but two fields can be related by one; related fields have related brackets, and a diffeomorphism carries fields and brackets across.*
 
-*Lecture 17. “Back to vector fields … we're currently taking the operator point of view. Later on, we'll talk about them as generators of dynamics.” Recap: every [[§56 Vector Fields#^def-56-1|vector field]] defines a [[§56 Vector Fields#^def-56-5|derivation]] of $C^\infty(M)$, and conversely ([[§56 Vector Fields#^lem-56-3|Lemma §56.3]], [[§56 Vector Fields#^prop-56-7|Proposition §56.7]]); so the [[§58 Lie Bracket and Lie Algebra#^def-58-1|commutator]] of two fields is again a field ([[§58 Lie Bracket and Lie Algebra#^lem-58-1|Lemma §58.1]]). Officially, a vector field is a smooth section of the tangent bundle ([[§56 Vector Fields#^def-56-1|Definition §56.1]]).*
+*Lecture 17. Back to vector fields, still from the operator point of view; vector fields as generators of dynamics come later. Recap: every [[§56 Vector Fields#^def-56-1|vector field]] defines a [[§56 Vector Fields#^def-56-5|derivation]] of $C^\infty(M)$, and conversely (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]], Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]); so the [[§58 Lie Bracket and Lie Algebra#^def-58-1|commutator]] of two fields is again a field (Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]). Officially, a vector field is a smooth section of the tangent bundle (Definition [[§56 Vector Fields#^def-56-1|§56.1]]).*
 
 > [!remark] Remark: Vector Fields Do Not Push Forward
-> Given a [[§19 Smooth Functions and Smooth Maps#^def-19-3|smooth map]] $F : M \to N$, “in general, we cannot push forward or pull back vector fields”: vector fields have no functorial properties, “as opposed to [[§53 One-Forms#^def-53-1|differential forms]], … they can always be [[§53 One-Forms#^def-53-4|pulled back]].” Single tangent vectors *can* be [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushed forward]], by $dF_p$; the trouble is assembling the results into a field on $N$.
-> - If $F$ is not injective, two points $p_1 \ne p_2$ with $F(p_1) = F(p_2) = q$ give two candidates $dF_{p_1}(\mathbf{X}_{p_1})$ and $dF_{p_2}(\mathbf{X}_{p_2})$ at $q$, in general different: “which one am I going to push …? It's a multi-valued object.”
-> - If $F$ is not surjective, a point $q' \notin F(M)$ gets no candidate at all: “I would have no way of defining [the field] outside the image.”
+> Given a [[§19 Smooth Functions and Smooth Maps#^def-19-3|smooth map]] $F : M \to N$, in general vector fields can be neither pushed forward nor pulled back: vector fields have no functorial properties, as opposed to [[§53 One-Forms#^def-53-1|differential forms]], which can always be [[§53 One-Forms#^def-53-4|pulled back]]. Single tangent vectors *can* be [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushed forward]], by $dF_p$; the trouble is assembling the results into a field on $N$.
+> - If $F$ is not injective, two points $p_1 \ne p_2$ with $F(p_1) = F(p_2) = q$ give two candidates $dF_{p_1}(\mathbf{X}_{p_1})$ and $dF_{p_2}(\mathbf{X}_{p_2})$ at $q$, in general different, so the would-be pushforward is multi-valued.
+> - If $F$ is not surjective, a point $q' \notin F(M)$ gets no candidate at all, so nothing defines the field outside the image.
 
 ^rem-59-1
 
@@ -24,7 +24,7 @@ tags: [differentiable-manifolds, math591]
 The exception is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]], where each $q \in N$ is $F(p)$ for exactly one $p$.
 
 > [!remark] Remark: Notation: $dF_p$
-> *Lecture 17:* “I'm going to switch the notation to $dF$ … $dF$ will replace $F_\ast$. It's a more common notation.” From here on the [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushforward]] of Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] is written
+> *Lecture 17* switches to the more common notation $dF$, which replaces $F_\ast$. From here on the [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushforward]] of Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] is written
 >
 > $$
 > dF_p = F_{\ast p} : T_pM \to T_{F(p)}N ,
@@ -49,7 +49,7 @@ The exception is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorph
 
 *(Not from lecture; animation added, vault only.)* A diffeomorphism $F_s$ (a family chosen for the picture) bends the plane, grid and all, while $\mathbf{X} = \partial_x$ is carried along. The arrow at $F_s(p)$ is $d(F_s)_p(\mathbf{X}_p)$: it rides to the new point and turns and stretches with the grid. The result is $(F_s)_\ast\mathbf{X}$.
 
-It is smooth, so $F_{\ast}\mathbf{X} \in \mathfrak{X}(N)$: this is [[§59 Related Vector Fields#^prop-59-2|Proposition §59.2]] below. “However, it can happen that you have … fields that are related by $F$, that correspond to one another … It's something that you don't construct. It's something that happens.”
+It is smooth, so $F_{\ast}\mathbf{X} \in \mathfrak{X}(N)$: this is [[§59 Related Vector Fields#^prop-59-2|Proposition §59.2]] below. For a general $F$, however, a field on $M$ and a field on $N$ can still be related by $F$, corresponding to one another: relatedness is not a construction but something that may happen.
 
 > [!definition] Definition §59.2: $F$-Related Vector Fields
 > Let $F : M \to N$ be [[§19 Smooth Functions and Smooth Maps#^def-19-3|smooth]], $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{Y} \in \mathfrak{X}(N)$. Then $\mathbf{X}$ and $\mathbf{Y}$ are **$F$-related** if
@@ -66,7 +66,7 @@ It is smooth, so $F_{\ast}\mathbf{X} \in \mathfrak{X}(N)$: this is [[§59 Relate
 
 *(Not from lecture; animation added, vault only.)* $F : \mathbb{R} \to S^1$, $F(t) = e^{it}$, with $\mathbb{R}$ drawn as a helix over the circle. The field $\mathbf{X} = \frac{d}{dt}$ (blue arrows along the helix) and $\mathbf{Y} = \partial_\theta$ (red) are $F$-related: $dF_t(\mathbf{X}_t) = \mathbf{Y}_{F(t)}$ at every $t$. The definition needs only that, not injectivity: both turns of the helix over a point give the same red arrow.
 
-The definition was completed in class by a student: push the value of $\mathbf{X}$ at $p$ forward, “and if it happens that every time I do that, I get the value of $\mathbf{Y}$ at the same point, then we say that the two vector fields are related by $F$.” No injectivity or surjectivity is assumed. Points outside $F(M)$ impose nothing on $\mathbf{Y}$, and two points with the same image must push forward to the same vector. “It's a very useful notion at times.”
+In words: push the value of $\mathbf{X}$ at $p$ forward; if every time this gives the value of $\mathbf{Y}$ at the image point $F(p)$, the two vector fields are related by $F$. No injectivity or surjectivity is assumed. Points outside $F(M)$ impose nothing on $\mathbf{Y}$, and two points with the same image must push forward to the same vector.
 *(Computed; not from lecture.)* In charts $(U, (x^1, \ldots, x^m))$ of $M$ and $(V, (y^1, \ldots, y^n))$ of $N$ with $F(U) \subseteq V$, $m = \dim M$, $n = \dim N$, write $F^j = y^j \circ F$, $\mathbf{X} = \sum_i \mathbf{X}^i\, \partial/\partial x^i$ and $\mathbf{Y} = \sum_j \mathbf{Y}^j\, \partial/\partial y^j$. The matrix of $dF_p$ is the Jacobian of Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], so the condition reads, at every $p \in U$,
 
 $$
@@ -81,7 +81,7 @@ $$
 $$
 
 > [!example] Example §59.1: Fields Related by a Projection
-> Let $\pi : \mathbb{R}^2 \to \mathbb{R}$, $\pi(x, y) = x$, and $\mathbf{Y} = b(x)\, \dfrac{d}{dx}$ with $b \in C^\infty(\mathbb{R})$ — “any vector field on $\mathbb{R}$ I can write like this.” The fields on $\mathbb{R}^2$ that are [[§59 Related Vector Fields#^def-59-2|π-related]] to $\mathbf{Y}$ are exactly
+> Let $\pi : \mathbb{R}^2 \to \mathbb{R}$, $\pi(x, y) = x$, and $\mathbf{Y} = b(x)\, \dfrac{d}{dx}$ with $b \in C^\infty(\mathbb{R})$ — every vector field on $\mathbb{R}$ can be written like this. The fields on $\mathbb{R}^2$ that are [[§59 Related Vector Fields#^def-59-2|π-related]] to $\mathbf{Y}$ are exactly
 >
 > $$
 > \mathbf{X} = b(x)\, \frac{\partial}{\partial x} + c(x, y)\, \frac{\partial}{\partial y}, \qquad c \in C^\infty(\mathbb{R}^2) \text{ arbitrary.}
@@ -90,7 +90,7 @@ $$
 ^ex-59-1
 
 > [!proof]+ Proof
-> *(Lecture 17, as a question to the class: “What can I put in the blanks here?” The first component “has to be this guy”; the second, “anything”. The computation is filled in.)* By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]] in the standard chart of $\mathbb{R}^2$, every vector field on $\mathbb{R}^2$ can be written $\mathbf{X} = a\, \partial_x + c\, \partial_y$ with $a, c \in C^\infty(\mathbb{R}^2)$. Since $\pi(x, y) = x$, Definition [[§59 Related Vector Fields#^def-59-2|§59.2]] says that $\mathbf{X}$ is $\pi$-related to $\mathbf{Y}$ if and only if $d\pi_{(x,y)}(\mathbf{X}_{(x,y)}) = \mathbf{Y}_x$ for every $(x, y)$. So compute the left side.
+> *(Lecture 17, as a question to the class: which components can a $\pi$-related field have? The first component is forced to be $b(x)$; the second is arbitrary. The computation is filled in.)* By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]] in the standard chart of $\mathbb{R}^2$, every vector field on $\mathbb{R}^2$ can be written $\mathbf{X} = a\, \partial_x + c\, \partial_y$ with $a, c \in C^\infty(\mathbb{R}^2)$. Since $\pi(x, y) = x$, Definition [[§59 Related Vector Fields#^def-59-2|§59.2]] says that $\mathbf{X}$ is $\pi$-related to $\mathbf{Y}$ if and only if $d\pi_{(x,y)}(\mathbf{X}_{(x,y)}) = \mathbf{Y}_x$ for every $(x, y)$. So compute the left side.
 >
 > *The pushforwards of the coordinate vectors.* Let $[g]$ be a germ at $x$ on $\mathbb{R}$. The function $g \circ \pi$ is $(x', y') \mapsto g(x')$. By Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] and then Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] in the standard chart,
 >
@@ -118,7 +118,7 @@ $$
 
 *Uses:* [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§32 The Cotangent Space#^def-32-2|Def. §32.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-6|§29.6]]
 
-“All I care about is the horizontal component … they all should be the same” along each vertical line, the fibre $\pi^{-1}(x)$, “corresponding to the value down here.”
+Only the horizontal component matters, and it must be the same along each vertical line, the fibre $\pi^{-1}(x)$, equal to the value of $\mathbf{Y}$ at $x$ below.
 
 ![[m591-49-3.svg]]
 *Fields on $\mathbb{R}^2$ that are $\pi$-related to $\mathbf{Y} = b(x)\,\frac{d}{dx}$: along each fibre $\pi^{-1}(x)$ (dashed) the horizontal part (dotted) is $b(x)$, and the vertical part is arbitrary.*
@@ -146,7 +146,7 @@ $$
 *The pullback $F^{\ast}$ intertwines the two fields as operators: the square commutes exactly when $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related.*
 
 > [!proof]+ Proof
-> *(Lecture 17, “let's have a peek at the proof”; the step for the converse is filled in.)* The two forms of the condition are the same, since $(\mathbf{X} \circ F^{\ast})(g) = \mathbf{X}(g \circ F)$ and $(F^{\ast} \circ \mathbf{Y})(g) = (\mathbf{Y}g) \circ F$; and both sides are functions on $M$, so the condition says that they agree at every $p \in M$, for every $g$. Let $g \in C^\infty(N)$ and $p \in M$. The value at $p$ of a field applied to a function is the tangent vector at $p$ applied to its germ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]). With this, and the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) for $D = \mathbf{X}_p$ — “we pull back germs, so we push forward derivations” —
+> *(Lecture 17, a sketch of the proof; the step for the converse is filled in.)* The two forms of the condition are the same, since $(\mathbf{X} \circ F^{\ast})(g) = \mathbf{X}(g \circ F)$ and $(F^{\ast} \circ \mathbf{Y})(g) = (\mathbf{Y}g) \circ F$; and both sides are functions on $M$, so the condition says that they agree at every $p \in M$, for every $g$. Let $g \in C^\infty(N)$ and $p \in M$. The value at $p$ of a field applied to a function is the tangent vector at $p$ applied to its germ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]). With this, and the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) for $D = \mathbf{X}_p$ — germs pull back, so derivations push forward —
 >
 > $$
 > \mathbf{X}(g \circ F)(p) = \mathbf{X}_p[g \circ F] = dF_p(\mathbf{X}_p)[g],
@@ -162,7 +162,7 @@ $$
 > dF_p(\mathbf{X}_p)[h] = dF_p(\mathbf{X}_p)[g] = \mathbf{Y}_{F(p)}[g] = \mathbf{Y}_{F(p)}[h] .
 > $$
 >
-> So the two derivations agree on every germ, and are equal as maps on $C^\infty_{F(p)}(N)$: $dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)}$. As $p$ was arbitrary, the fields are $F$-related. “It's a trivial if and only if once you realize” this.
+> So the two derivations agree on every germ, and are equal as maps on $C^\infty_{F(p)}(N)$: $dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)}$. As $p$ was arbitrary, the fields are $F$-related.
 
 ^pf-59-1
 
@@ -206,7 +206,7 @@ $$
 
 *Uses:* [[§59 Related Vector Fields#^def-59-1|Def. §59.1]], [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§56 Vector Fields#^lem-56-8|§56.8]]
 
-*“Now the reason I wanted to do it this way”* — through operators — is the following proposition.
+The reason for the characterization through operators is the following proposition.
 
 > [!theorem] Proposition §59.3: Naturality of the Bracket
 > Let $F : M \to N$ be [[§19 Smooth Functions and Smooth Maps#^def-19-3|smooth]], $\mathbf{X}_1, \mathbf{X}_2 \in \mathfrak{X}(M)$ and $\mathbf{Y}_1, \mathbf{Y}_2 \in \mathfrak{X}(N)$. If $\mathbf{X}_i$ is [[§59 Related Vector Fields#^def-59-2|F-related]] to $\mathbf{Y}_i$ for $i = 1, 2$, then the [[§58 Lie Bracket and Lie Algebra#^def-58-1|bracket]] $[\mathbf{X}_1, \mathbf{X}_2]$ is $F$-related to $[\mathbf{Y}_1, \mathbf{Y}_2]$.
@@ -216,7 +216,7 @@ $$
 ^prop-59-3
 
 > [!proof]+ Proof
-> *(Omitted in Lecture 17 as an exercise: “it's just a matter of chasing the definitions … being $F$-related means that $F^{\ast}$ commutes with the derivations. So you just play with the symbols; it all comes out.” Filled in.)* The brackets $[\mathbf{X}_1, \mathbf{X}_2] \in \mathfrak{X}(M)$ and $[\mathbf{Y}_1, \mathbf{Y}_2] \in \mathfrak{X}(N)$ are vector fields (Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]). By Proposition [[§59 Related Vector Fields#^prop-59-1|§59.1]], it suffices to show
+> *(Omitted in Lecture 17 as an exercise in chasing the definitions: being $F$-related means that $F^{\ast}$ commutes with the derivations. Filled in.)* The brackets $[\mathbf{X}_1, \mathbf{X}_2] \in \mathfrak{X}(M)$ and $[\mathbf{Y}_1, \mathbf{Y}_2] \in \mathfrak{X}(N)$ are vector fields (Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]). By Proposition [[§59 Related Vector Fields#^prop-59-1|§59.1]], it suffices to show
 >
 > $$
 > [\mathbf{X}_1, \mathbf{X}_2](g \circ F) = \big([\mathbf{Y}_1, \mathbf{Y}_2]\, g\big) \circ F \qquad \text{for every } g \in C^\infty(N).
@@ -247,8 +247,6 @@ $$
 ^pf-59-3
 
 *Uses:* [[§59 Related Vector Fields#^prop-59-1|§59.1]], [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^lem-56-3|§56.3]]
-
-On omitting this proof: “In a class like this, you cannot prove everything. First of all, there is no time, and second, you would be bored to tears. … But on the other hand, if we just say, oh, you can read the proof, then you don't get a feeling for the subject. So there is a line there somewhere, or a zone, where you have to prove enough, but not too much.” Feedback on where that line should sit is “always welcome.”
 
 > [!theorem] Corollary §59.4: Diffeomorphisms Preserve Brackets
 > If $F : M \to N$ is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]] and $\mathbf{X}_1, \mathbf{X}_2 \in \mathfrak{X}(M)$, then $F_{\ast}[\mathbf{X}_1, \mathbf{X}_2] = [F_{\ast}\mathbf{X}_1, F_{\ast}\mathbf{X}_2]$.
@@ -282,7 +280,7 @@ On omitting this proof: “In a class like this, you cannot prove everything. Fi
 
 ^rem-59-3
 
-*Lecture 21 opened with the last problem of the midterm — “there's always a question that is hard, but it's okay … I hope we're still friends.”*
+*Lecture 21 opened with the last problem of the midterm.*
 
 > [!definition] Definition §59.3: Vector Field Tangent to a Submanifold
 > Let $S \subseteq M$ be a regular submanifold, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(M)$. Then $\mathbf{X}$ is **tangent to $S$** if
@@ -304,7 +302,7 @@ On omitting this proof: “In a class like this, you cannot prove everything. Fi
 > \mathbf{X} = \sum_{i=1}^k f^i\, \frac{\partial}{\partial x^i} + \sum_{a=1}^{m-k} g^a\, \frac{\partial}{\partial y^a}
 > $$
 >
-> (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]). Then $\mathbf{X}_p \in T_pS$ for every $p \in S \cap U$ if and only if $g^a(x, 0) = 0$ for every $a$ and every point $(x, 0)$ of $S \cap U$: along $S$, “there is no $y$ component.”
+> (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]). Then $\mathbf{X}_p \in T_pS$ for every $p \in S \cap U$ if and only if $g^a(x, 0) = 0$ for every $a$ and every point $(x, 0)$ of $S \cap U$: along $S$, there is no $y$ component.
 
 ^lem-59-5
 
@@ -329,20 +327,20 @@ On omitting this proof: “In a class like this, you cannot prove everything. Fi
 ^prop-59-6
 
 > [!proof]+ Proof
-> *(Lecture 21, “not in excruciating detail”; the bookkeeping is filled in.)* “Use adapted coordinates”: near $p \in S$ take a slice chart $(x, y) = (x^1, \ldots, x^k, y^1, \ldots, y^{m-k})$ with $S = \{ y = 0 \}$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]); on the exam, $M$ was two-dimensional, “but they could be vector-valued … the codimension or the dimension doesn't matter.” Write
+> *(Lecture 21, in outline; the bookkeeping is filled in.)* Use adapted coordinates: near $p \in S$ take a slice chart $(x, y) = (x^1, \ldots, x^k, y^1, \ldots, y^{m-k})$ with $S = \{ y = 0 \}$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]); on the exam, $M$ was two-dimensional, but $x$ and $y$ may be vector-valued: neither the dimension nor the codimension matters. Write
 >
 > $$
 > \mathbf{X} = \sum_i f^i\, \frac{\partial}{\partial x^i} + \sum_a g^a\, \frac{\partial}{\partial y^a}, \qquad
 > \mathbf{Y} = \sum_i u^i\, \frac{\partial}{\partial x^i} + \sum_a v^a\, \frac{\partial}{\partial y^a} .
 > $$
 >
-> By Lemma [[§59 Related Vector Fields#^lem-59-5|§59.5]], tangency says $g^a(x, 0) = 0$ and $v^a(x, 0) = 0$: “there is no $y$ component.” We show the $\partial/\partial y^b$ components of $[\mathbf{X}, \mathbf{Y}]$ have the same property. By Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], that component is
+> By Lemma [[§59 Related Vector Fields#^lem-59-5|§59.5]], tangency says $g^a(x, 0) = 0$ and $v^a(x, 0) = 0$: there is no $y$ component along $S$. We show the $\partial/\partial y^b$ components of $[\mathbf{X}, \mathbf{Y}]$ have the same property. By Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], that component is
 >
 > $$
 > \mathbf{X}(v^b) - \mathbf{Y}(g^b) = \sum_i f^i\, \frac{\partial v^b}{\partial x^i} + \sum_a g^a\, \frac{\partial v^b}{\partial y^a} - \sum_i u^i\, \frac{\partial g^b}{\partial x^i} - \sum_a v^a\, \frac{\partial g^b}{\partial y^a} .
 > $$
 >
-> Evaluate at $y = 0$. The terms with $\partial/\partial x^i$ vanish for one reason: “how do you evaluate the partial with respect to $x$ at $y = 0$? You fix $y$ to zero and differentiate with respect to $x$, but when I set $y$ to zero, I get zero” — $\frac{\partial v^b}{\partial x^i}(x, 0) = \frac{\partial}{\partial x^i}\big(v^b(x, 0)\big) = 0$, and likewise for $g^b$. The terms with $\partial/\partial y^a$ vanish “for a different reason”: “I don't know that these partials are zero, but these guys are” — the coefficients $g^a(x, 0)$ and $v^a(x, 0)$. So the $y$-components of $[\mathbf{X}, \mathbf{Y}]$ vanish on $S$, and $[\mathbf{X}, \mathbf{Y}]_p \in T_pS$ for $p \in S$.
+> Evaluate at $y = 0$. The terms with $\partial/\partial x^i$ vanish for one reason: a partial with respect to $x$ at $y = 0$ is computed by first setting $y = 0$ and then differentiating in $x$, and with $y = 0$ the function is already zero — $\frac{\partial v^b}{\partial x^i}(x, 0) = \frac{\partial}{\partial x^i}\big(v^b(x, 0)\big) = 0$, and likewise for $g^b$. The terms with $\partial/\partial y^a$ vanish for a different reason: the partials $\partial v^b/\partial y^a$ and $\partial g^b/\partial y^a$ need not be zero, but their coefficients $g^a(x, 0)$ and $v^a(x, 0)$ are. So the $y$-components of $[\mathbf{X}, \mathbf{Y}]$ vanish on $S$, and $[\mathbf{X}, \mathbf{Y}]_p \in T_pS$ for $p \in S$.
 
 ^pf-59-6
 

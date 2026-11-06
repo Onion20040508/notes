@@ -48,7 +48,7 @@ $$
 ![[m591-40-1.svg]]
 *A covector drawn as a stack of parallel lines. In $\mathbb{R}^2$ (or in one tangent space, after choosing a basis) the covector $\alpha = 2\,dx + dy$ is pictured by its level lines $\{\alpha = 0\}, \{\alpha = 1\}, \ldots$; its value on an arrow is the number of lines the arrow crosses, with sign. $v = \partial_x + \partial_y$ crosses three, so $\alpha(v) = 3$; $w = 0.6\,\partial_x - 1.2\,\partial_y$ runs along the lines, so $\alpha(w) = 0$. For $\alpha = df_p$ the lines are the level sets of the linear approximation of $f$ at $p$: closely spaced lines mean a steep $f$. An arrow and a stack of lines are different kinds of objects; only an inner product turns one into the other.*
 
-**Step 4: the cotangent space from germs alone.** The differential of $f$ depends only on $f$ to first order: $T_p^{\ast}M \cong I_p/I_p^2$, the germs vanishing at $p$ modulo those vanishing to second order, by ${[}[f - f(p)]{]} \mapsto df_p$ ([[§34 The Cotangent Space from Germs#^thm-34-4|Theorem §34.4]]). So covectors can be built from functions without mentioning tangent vectors at all — the cotangent space is “very extremely natural from the point of view of functions” ([[§34 The Cotangent Space from Germs#^rem-34-2|Remark: The Most Natural Description]]).
+**Step 4: the cotangent space from germs alone.** The differential of $f$ depends only on $f$ to first order: $T_p^{\ast}M \cong I_p/I_p^2$, the germs vanishing at $p$ modulo those vanishing to second order, by ${[}[f - f(p)]{]} \mapsto df_p$ ([[§34 The Cotangent Space from Germs#^thm-34-4|Theorem §34.4]]). So covectors can be built from functions without mentioning tangent vectors at all; from the point of view of functions the cotangent space is the most natural object ([[§34 The Cotangent Space from Germs#^rem-34-2|Remark: The Most Natural Description]]).
 
 ![[§34 The Cotangent Space from Germs#^def-34-1]]
 
@@ -79,7 +79,7 @@ an $m \times n$ matrix whose $j$-th column lists the components of $F_p^{\ast}(d
 | differential of a function at $p$ | $df_p$ | $T_pM \to \mathbb{R}$, a covector | [[§32 The Cotangent Space#^def-32-5\|Definition §32.5]] |
 | the operator $d$ | $d$ | a function $f$ to the one-form $df$ | [[§53 One-Forms#^prop-53-2\|Proposition §53.2]] |
 
-How they fit: on open subsets of $\mathbb{R}^n$ the second is the first ([[§30 The Differential in Coordinates#^prop-30-5|Proposition §30.5]]); Lee writes $dF_p$ for what these notes call $F_{\ast p}$, and Uribe said in Lecture 15 that $F_{\ast p}$ “we should have called the differential of $F$ ages ago”. The third is the second for maps into $\mathbb{R}$. The fourth collects the third over all points: $df$ is the field $p \mapsto df_p$, a one-form ([[§53 One-Forms|§53]]).
+How they fit: on open subsets of $\mathbb{R}^n$ the second is the first ([[§30 The Differential in Coordinates#^prop-30-5|Proposition §30.5]]); Lee writes $dF_p$ for what these notes call $F_{\ast p}$, and Lecture 15 likewise called $F_{\ast p}$ the differential of $F$. The third is the second for maps into $\mathbb{R}$. The fourth collects the third over all points: $df$ is the field $p \mapsto df_p$, a one-form ([[§53 One-Forms|§53]]).
 
 **Step 7: forward and backward.** Given $F : M \to N$:
 
