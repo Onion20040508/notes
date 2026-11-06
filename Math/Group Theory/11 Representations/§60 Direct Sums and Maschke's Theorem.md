@@ -5,9 +5,9 @@ chapter: 11
 section: 60
 tags: [group-theory, math493]
 ---
-← [[§59 Representations and Subrepresentations]] · ↑ [[· 11 Representations]]
+← [[§59 Representations and Subrepresentations]] · ↑ [[· 11 Representations]] · [[§61 Simple Representations]] →
 
-*Source: Lecture and Worksheet 14 (Wed Nov 4); WS 14.7–14.8 are to be presented Fri Nov 6. Reference for the linear algebra: Axler, Linear Algebra Done Right, Ch. 6 (orthonormal bases, orthogonal complements).*
+*Source: Lecture and Worksheet 14 (Wed Nov 4); lecture (Fri Nov 6), with WS 14.7–14.8 presented by students. Reference for the linear algebra: Axler, Linear Algebra Done Right, Ch. 6 (orthonormal bases, orthogonal complements).*
 
 > [!definition] Definition §60.1: Internal Direct Sum of Subspaces
 > Let $W$ be a vector space and $U$, $V$ subspaces of $W$. $W$ is the **direct sum**, or **internal direct sum**, of $U$ and $V$, written $W = U \oplus V$, if
@@ -291,43 +291,169 @@ This is the internal direct sum of the remark *Two Meanings of “Direct Sum”*
 > [!theorem] Proposition §60.8: Averaging Gives an Inner Product
 > $\langle\ ,\ \rangle$ (Definition [[§60 Direct Sums and Maschke's Theorem#^def-60-5|§60.5]]) is an inner product on $W$.
 >
-> *Source: WS 14.7*
+> *Source: WS 14.7; presented by students 11/6*
 
 ^prop-60-8
 
-> [!proof]+ Proof (to be filled)
-> WS 14.7 is to be presented in class on Fri Nov 6.
+> [!proof]+ Proof
+> *Idea:* each axiom holds for every term $(gu, gv)$ of the sum, hence for the sum.
+>
+> We check the three conditions of Definition [[§60 Direct Sums and Maschke's Theorem#^def-60-2|§60.2]]; each follows from the corresponding property of $(\ ,\ )$, term by term.
+>
+> *Symmetric.* $\langle u, v \rangle = \sum_g (gu, gv) = \sum_g (gv, gu) = \langle v, u \rangle$, by symmetry of $(\ ,\ )$ in each term.
+>
+> *Positive definite.* Let $u \neq 0$. Each $\rho(g)$ is invertible, so $gu \neq 0$ and $(gu, gu) > 0$ for every $g$. Hence $\langle u, u \rangle = \sum_g (gu, gu)$ is a sum of $|G| \geq 1$ positive numbers, and is positive.
+>
+> *Bilinear.* For $a, b \in \mathbb{R}$, using first that each $g$ acts linearly and then that $(\ ,\ )$ is bilinear,
+>
+> $$
+> \langle au_1 + bu_2, v \rangle = \sum_g \big(a\,gu_1 + b\,gu_2,\ gv\big) = a\sum_g (gu_1, gv) + b\sum_g (gu_2, gv) = a\langle u_1, v \rangle + b\langle u_2, v \rangle;
+> $$
+>
+> linearity in the second variable follows from this and symmetry.
 
 ^pf-60-8
+
+*Uses:* [[§60 Direct Sums and Maschke's Theorem#^def-60-2|Def. §60.2]]
 
 > [!theorem] Proposition §60.9: $G$ Preserves the Averaged Inner Product
 > $\langle hv, hw \rangle = \langle v, w \rangle$ for all $h \in G$ and $v, w \in W$.
 >
-> *Source: WS 14.8*
+> *Source: WS 14.8; presented by a student 11/6*
 
 ^prop-60-9
 
-> [!proof]+ Proof (to be filled)
-> WS 14.8 is to be presented in class on Fri Nov 6.
+> [!proof]+ Proof
+> *Idea:* re-index the sum by $k = gh$.
+>
+> Let $h \in G$ and $v, w \in W$. Since $g(hv) = (gh)v$,
+>
+> $$
+> \langle hv, hw \rangle = \sum_{g \in G} \big((gh)v, (gh)w\big) = \sum_{k \in G} (kv, kw) = \langle v, w \rangle,
+> $$
+>
+> because as $g$ runs over $G$, so does $k = gh$: right multiplication $g \mapsto gh$ is a bijection $G \to G$, with inverse $k \mapsto kh^{-1}$. Equivalently, the right coset $Gh$ is all of $G$.
 
 ^pf-60-9
+
+**Transcription note (board 11/6).** The handwritten notes write $\langle g'u, g'v \rangle = \sum_{g} \langle g'gu, g'gv \rangle = \sum_{k} \langle ku, kv \rangle$, with the new brackets inside the sum and the bijection $g \mapsto hg$. By Definition [[§60 Direct Sums and Maschke's Theorem#^def-60-5|§60.5]] the terms are $\big((gg')u, (gg')v\big)$, with the original inner product, and the re-indexing uses right multiplication by $g'$; left multiplication is also a bijection of $G$, but it is not the one that occurs here.
 
 ![[m493-60-4.svg]]
 
 *(Not from lecture; figure added.)* The averaged inner product for $S_3$ acting on $U_2$ (Example [[§59 Representations and Subrepresentations#^ex-59-3|§59.3]]), drawn in the coordinates $x_1, x_2$ of the basis $f_1, f_2$. Take for $(\ ,\ )$ the dot product of coordinates. It is not preserved: the grey ellipses $\{v : (gv, gv) = 1\}$ for $g \neq e$ differ from the red unit circle. The level set $\langle v, v \rangle = 6$ of the averaged form (blue) is mapped to itself by all six matrices of the table in §59, as WS 14.8 asserts.
 
+> [!remark] Remark: Symmetrizing
+> Propositions [[§60 Direct Sums and Maschke's Theorem#^prop-60-8|§60.8]] and [[§60 Direct Sums and Maschke's Theorem#^prop-60-9|§60.9]] are an instance of a general *symmetrizing* construction: given something with less symmetry than wanted, add it up over the group (in other contexts, multiply or average it), and the result is invariant. They also show the benefit of treating symmetric bilinear forms as objects in their own right, rather than always working with one favourite dot product: the inner product that does the work here is not the one chosen at the start.
+>
+> *Source: lecture 11/6*
+
+^rem-60-3
+
 > [!theorem] Corollary §60.10: Maschke's Theorem over $\mathbb{R}$
 > Let $G$ be finite and $W$ a finite-dimensional real representation of $G$. Every subrepresentation $U$ of $W$ has a complementary subrepresentation $V$, with $W = U \oplus V$.
 >
-> *Source: WS 14*
+> *Source: WS 14; lecture 11/6*
 
 ^cor-60-10
 
 > [!proof]+ Proof
 > *Idea:* Make $G$ preserve an inner product by averaging, then take the orthogonal complement.
 >
-> Choose any inner product on $W$ (for instance, the dot product of coordinates in some basis). By Propositions [[§60 Direct Sums and Maschke's Theorem#^prop-60-8|§60.8]] and [[§60 Direct Sums and Maschke's Theorem#^prop-60-9|§60.9]], the averaged form $\langle\ ,\ \rangle$ is an inner product preserved by $G$, so Corollary [[§60 Direct Sums and Maschke's Theorem#^cor-60-7|§60.7]] applies with $V = U^\perp$, the orthogonal complement for $\langle\ ,\ \rangle$. (This rests on WS 14.7 and 14.8, to be presented Fri Nov 6.) Since $|G| \neq 0$ in $\mathbb{R}$, this is the case $k = \mathbb{R}$ of Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-4|§60.4]].
+> Choose any inner product on $W$ (for instance, the dot product of coordinates in some basis). By Propositions [[§60 Direct Sums and Maschke's Theorem#^prop-60-8|§60.8]] and [[§60 Direct Sums and Maschke's Theorem#^prop-60-9|§60.9]], the averaged form $\langle\ ,\ \rangle$ is an inner product preserved by $G$, so Corollary [[§60 Direct Sums and Maschke's Theorem#^cor-60-7|§60.7]] applies with $V = U^\perp$, the orthogonal complement for $\langle\ ,\ \rangle$. Since $|G| \neq 0$ in $\mathbb{R}$, this is the case $k = \mathbb{R}$ of Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-4|§60.4]].
 
 ^pf-60-10
 
 *Uses:* [[§60 Direct Sums and Maschke's Theorem#^prop-60-8|§60.8]], [[§60 Direct Sums and Maschke's Theorem#^prop-60-9|§60.9]], [[§60 Direct Sums and Maschke's Theorem#^cor-60-7|§60.7]], [[§60 Direct Sums and Maschke's Theorem#^thm-60-4|§60.4]]
+
+> [!theorem] Corollary §60.11: Finite Groups Act by Orthogonal Matrices
+> Let $G$ be a finite group and $W$ a finite-dimensional real representation of $G$. Then $G$ preserves some inner product on $W$, and in a suitable basis every $\rho(g)$ is an orthogonal matrix: $M^T M = I$. In words: a finite group may always be taken to act by rotations and reflections.
+>
+> *Source: lecture 11/6*
+
+^cor-60-11
+
+> [!proof]+ Proof
+> *Idea:* write the matrices in a basis that is orthonormal for an inner product $G$ preserves.
+>
+> Choose any inner product $(\ ,\ )$ on $W$. By Propositions [[§60 Direct Sums and Maschke's Theorem#^prop-60-8|§60.8]] and [[§60 Direct Sums and Maschke's Theorem#^prop-60-9|§60.9]], the averaged form $\langle\ ,\ \rangle$ (Definition [[§60 Direct Sums and Maschke's Theorem#^def-60-5|§60.5]]) is an inner product preserved by $G$. Choose a basis $w_1, \ldots, w_n$ of $W$ orthonormal for $\langle\ ,\ \rangle$ (it exists by Gram–Schmidt), so that every $x \in W$ is $x = \sum_k \langle x, w_k \rangle w_k$. Fix $g \in G$ and let $M$ be the matrix of $\rho(g)$ in this basis: column $j$ holds the coordinates of $gw_j$, so $M_{kj} = \langle gw_j, w_k \rangle$. Then, expanding $gw_i$ and $gw_j$ in the orthonormal basis,
+>
+> $$
+> (M^TM)_{ij} = \sum_k M_{ki} M_{kj} = \sum_k \langle gw_i, w_k \rangle \langle gw_j, w_k \rangle = \langle gw_i, gw_j \rangle = \langle w_i, w_j \rangle = \begin{cases} 1 & i = j, \\ 0 & i \neq j, \end{cases}
+> $$
+>
+> where the third equality is bilinearity together with $\langle w_k, w_l \rangle = 0$ for $k \neq l$ and $= 1$ for $k = l$, and the fourth is Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-9|§60.9]]. So $M^TM = I$. Preserving an inner product is thus the basis-free way of saying “acting by orthogonal matrices”.
+
+^pf-60-11
+
+*Uses:* [[§60 Direct Sums and Maschke's Theorem#^prop-60-8|§60.8]], [[§60 Direct Sums and Maschke's Theorem#^prop-60-9|§60.9]], [[§60 Direct Sums and Maschke's Theorem#^def-60-5|Def. §60.5]]
+
+> [!example] Example §60.2: $S_3$ in an Orthonormal Basis
+> Return to $S_3$ acting on $\mathbb{R}^3 = U \oplus V$ as in Example [[§60 Direct Sums and Maschke's Theorem#^ex-60-1|§60.1]]: $U = \mathbb{R}(1,1,1)$, and $V = U^\perp$ is the sum-zero plane. $S_3$ preserves the dot product, since it permutes coordinates. The bases of $V$ used so far, $f_1, f_2$ (Example [[§59 Representations and Subrepresentations#^ex-59-3|§59.3]]) and $v_1, v_2$ (Example [[§60 Direct Sums and Maschke's Theorem#^ex-60-1|§60.1]]), are not orthonormal, and neither is the orthogonal basis $(1,-1,0), (1,1,-2)$. Normalizing the last one gives an orthonormal basis of $V$, less convenient for hand computation:
+>
+> $$
+> b_1 = \tfrac{1}{\sqrt{2}}(1, -1, 0), \qquad b_2 = \tfrac{1}{\sqrt{6}}(1, 1, -2).
+> $$
+>
+> In this basis the matrices are orthogonal, as Corollary [[§60 Direct Sums and Maschke's Theorem#^cor-60-11|§60.11]] predicts:
+>
+> $$
+> \rho_V\big((1\,2)\big) = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad \rho_V\big((1\,2\,3)\big) = \begin{pmatrix} -\tfrac12 & -\tfrac{\sqrt3}{2} \\ \tfrac{\sqrt3}{2} & -\tfrac12 \end{pmatrix}.
+> $$
+>
+> $(1\,2)$ swaps the first two coordinates, so it negates $b_1$ and fixes $b_2$: it is the reflection in the line $\mathbb{R}b_2$. For $(1\,2\,3)$, which sends $(x_1, x_2, x_3)$ to $(x_3, x_1, x_2)$: $gb_1 = \tfrac{1}{\sqrt2}(0, 1, -1) = -\tfrac12 b_1 + \tfrac{\sqrt3}{2} b_2$ and $gb_2 = \tfrac{1}{\sqrt6}(-2, 1, 1) = -\tfrac{\sqrt3}{2} b_1 - \tfrac12 b_2$ (the coefficients are the dot products with $b_1$ and $b_2$), so $(1\,2\,3)$ is the rotation by $120^\circ$.
+>
+> *Source: lecture 11/6; the matrices not from class*
+
+^ex-60-2
+
+![[m493-60-5.svg]]
+
+*(Not from lecture; figure added.)* The plane $V$ of Example [[§60 Direct Sums and Maschke's Theorem#^ex-60-2|§60.2]], drawn in the orthonormal basis $b_1, b_2$. The projections $\bar e_i = e_i - \tfrac13(1,1,1)$ of the standard basis vectors form an equilateral triangle, and $S_3$ acts on $V$ as its symmetry group: the transpositions are the reflections in the three dashed mirror lines (each through the vertex it fixes), the $3$-cycles are the rotations by $\pm 120^\circ$. Rotations and reflections are exactly what orthogonal $2 \times 2$ matrices are.
+
+> [!remark] Remark: Beyond $\mathbb{R}$ and Beyond Finite Groups
+> - *Other fields.* Maschke's theorem in full (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-4|§60.4]]) needs only $|G| \neq 0$ in $k$; for $S_3$, of order $6$, this excludes the fields of characteristic $2$ and $3$. Its proof, and counterexamples when $|G| = 0$ in $k$, are on the upcoming problem set.
+> - *Compact Lie groups.* Beyond this course, which has no manifold prerequisite: for a compact Lie group the same proof works, with the sum over $G$ replaced by an integral over $G$ against an invariant measure.
+>
+> *Source: lecture 11/6*
+
+^rem-60-4
+
+> [!definition] Definition §60.6: Sesquilinear Form
+> Let $V$ be a complex vector space. A **sesquilinear form** (“one and a half times linear”) is a map $\langle\ ,\ \rangle: V \times V \to \mathbb{C}$ that is additive in each variable,
+>
+> $$
+> \langle u_1 + u_2, v \rangle = \langle u_1, v \rangle + \langle u_2, v \rangle, \qquad \langle u, v_1 + v_2 \rangle = \langle u, v_1 \rangle + \langle u, v_2 \rangle,
+> $$
+>
+> and satisfies, for $\lambda \in \mathbb{C}$,
+>
+> $$
+> \langle \lambda u, v \rangle = \lambda \langle u, v \rangle, \qquad \langle u, \lambda v \rangle = \bar\lambda \langle u, v \rangle.
+> $$
+>
+> Authors disagree about which variable carries the complex conjugate; here it is the second.
+>
+> *Source: board 11/6*
+
+^def-60-6
+
+> [!definition] Definition §60.7: Hermitian Form
+> A sesquilinear form $\langle\ ,\ \rangle$ on a complex vector space $V$ (Definition [[§60 Direct Sums and Maschke's Theorem#^def-60-6|§60.6]]) is **Hermitian** if $\langle u, v \rangle = \overline{\langle v, u \rangle}$ for all $u, v \in V$. Then $\langle u, u \rangle \in \mathbb{R}$ for every $u$, since $\langle u, u \rangle$ equals its own complex conjugate. Hermitian is the complex counterpart of symmetric.
+>
+> *Source: board 11/6*
+
+^def-60-7
+
+> [!definition] Definition §60.8: Positive Definite Hermitian Form
+> A Hermitian form $\langle\ ,\ \rangle$ on $V$ (Definition [[§60 Direct Sums and Maschke's Theorem#^def-60-7|§60.7]]) is **positive definite** if $\langle u, u \rangle > 0$ for every $u \neq 0$; the inequality makes sense because $\langle u, u \rangle$ is real. A positive definite Hermitian form is the complex counterpart of an inner product (Definition [[§60 Direct Sums and Maschke's Theorem#^def-60-2|§60.2]]).
+>
+> *Source: board 11/6*
+
+^def-60-8
+
+> [!remark] Remark: Why Not Bilinear, and Unitary Matrices
+> A bilinear form on a complex vector space cannot be positive definite: $\langle iv, iv \rangle = i^2 \langle v, v \rangle = -\langle v, v \rangle$, so $\langle v, v \rangle$ and $\langle iv, iv \rangle$ cannot both be positive. Positive definite Hermitian forms are the complex replacement for inner products. The whole theory carries over, with complex conjugates in the right places: orthonormal bases exist, and the matrices preserving the form are the **unitary** matrices, $\bar M^T M = I$, the analogue of orthogonal matrices (compare the unitary group $U_n(\mathbb{C})$ in the remark *Where the Groups of Lie Type Come From* in [[§56 Simple Groups of Small Order|§56]]). The averaging argument of Propositions [[§60 Direct Sums and Maschke's Theorem#^prop-60-8|§60.8]] and [[§60 Direct Sums and Maschke's Theorem#^prop-60-9|§60.9]] works verbatim: a finite group acting on a finite-dimensional complex vector space preserves a positive definite Hermitian form and acts by unitary matrices in a suitable basis, and Maschke's theorem over $\mathbb{C}$ follows in the same way. This is a side topic of the course; notes on sesquilinear forms are linked on the course Canvas site.
+>
+> *Source: lecture 11/6*
+
+^rem-60-5
