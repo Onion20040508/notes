@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 26.4", "Lax §6.3, Thm 4"]
+aliases: ["MATH 556 26.5", "Lax §6.3, Thm 4"]
 tags: [functional-analysis, hub]
 ---
 ![[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5]]

@@ -26,7 +26,7 @@ The third step ([[§62 Simple Representations|§62]]) names the pieces. A repres
 - [[§62 Simple Representations]]
 
 ## Central results
-- [[Maschke's Theorem]] (§60.4)
+- [[Maschke's Theorem]] (§60.5)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

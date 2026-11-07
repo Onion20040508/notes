@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 43.6", "weak limit in the closed convex hull", "Lax §10.1, Thm 6"]
+aliases: ["MATH 556 43.7", "weak limit in the closed convex hull", "Lax §10.1, Thm 6"]
 tags: [functional-analysis, hub]
 ---
 ![[§43 Weak and Weak-Star Convergence#^thm-43-7]]

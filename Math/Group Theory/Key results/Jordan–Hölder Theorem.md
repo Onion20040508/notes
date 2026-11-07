@@ -16,7 +16,7 @@ tags: [group-theory, hub]
 - [[§51 The Grid of Intersections#^prop-51-6|Proposition §51.6: The Crossing Square]]
 
 ## Used in (Group Theory)
-- (not cited later in the course)
+- [[§52 The Jordan–Hölder Theorem#^prop-52-2|Proposition §52.2: Solvable Groups and Composition Factors of Prime Order]]
 
 ## Connections
 - TODO

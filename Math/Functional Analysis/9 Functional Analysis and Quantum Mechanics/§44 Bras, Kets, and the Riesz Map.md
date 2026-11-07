@@ -76,13 +76,24 @@ tags: [functional-analysis, math556, companion]
 
 *Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-2|Def. §44.2]]
 
-> [!remark]- Connections
-> - Finite-dimensional version: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]]).
-
 > [!remark] Remark
-> The Riesz map needs no basis, only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast [[§21 Linear Algebra Toolkit#^prop-21-2|MATH 591]]: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis — the inner product is exactly the extra structure that removes the choice. The price is that $R$ is conjugate-linear, so over $\mathbb{C}$ the identification is with the complex conjugate space $\overline{H}$. In finite dimensions this is the familiar fact that the functional corresponding to a column vector $a$ is the conjugate transpose $a^\dagger$. For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object; this is where the course is heading.
+> The Riesz map needs no basis, only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast [[§21 Linear Algebra Toolkit#^prop-21-2|MATH 591]]: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis — the inner product is exactly the extra structure that removes the choice. The price is that $R$ is conjugate-linear, so over $\mathbb{C}$ the identification is with the complex conjugate space $\overline{H}$; in finite dimensions this is the conjugate transpose (Example [[§44 Bras, Kets, and the Riesz Map#^ex-44-1|§44.1]]). For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object; this is where the course is heading.
 
 ^rem-44-2
+
+> [!example] Example §44.1: The Riesz Map on $\mathbb{C}^n$ is the Conjugate Transpose
+> Let $H = \mathbb{C}^n$ with $(x, a) = \sum_{j=1}^n x_j\, \bar{a}_j$, and write vectors as columns. The functional corresponding to a column vector $a$ is the conjugate transpose $a^\dagger = \bar{a}^{T}$, a row vector acting by matrix multiplication:
+>
+> $$
+> R(a)(x) = \ell_a(x) = (x, a) = \sum_{j=1}^n \bar{a}_j\, x_j = a^\dagger x .
+> $$
+>
+> The conjugation is what makes $R$ conjugate-linear (Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]](2)): $(ca)^\dagger = \bar{c}\, a^\dagger$, so $R(ca) = \bar{c}\, R(a)$.
+
+^ex-44-1
+
+> [!remark]- Connections
+> - Finite-dimensional version: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]]).
 
 > [!remark]- Connections
 > - The basis-dependent isomorphism $V \cong V^*$: [[§21 Linear Algebra Toolkit#^prop-21-2|591 §21.2]] (dual basis), [[§12 Duality#^ladr-3-110|LADR 3.110]]; isomorphisms from non-degenerate pairings: [[§21 Linear Algebra Toolkit#^thm-21-5|591 §21.5]].
@@ -108,9 +119,27 @@ tags: [functional-analysis, math556, companion]
 ^def-44-4
 
 > [!remark] Remark
-> Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]] is the precise content of the physicists' rule that “every bra is the adjoint of a ket, and every linear functional is a bra”: the second half is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz's theorem]] and is false without completeness and boundedness. The rule $\langle ca| = \bar{c}\,\langle a|$ is conjugate-linearity of $R$. The outer product $|a\rangle\langle b|$ is linear in $x$, has range in $\operatorname{span}\{a\}$, and satisfies $\|\,|a\rangle\langle b|\,x\| \le \|a\|\,\|b\|\,\|x\|$ by [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]]; it is a bounded operator of rank at most one.
+> Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]] is the precise content of the physicists' rule that “every bra is the adjoint of a ket, and every linear functional is a bra”: the second half is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz's theorem]] and is false without completeness and boundedness. The rule $\langle ca| = \bar{c}\,\langle a|$ is conjugate-linearity of $R$. The outer product $|a\rangle\langle b|$ is a bounded operator of rank at most one (Proposition [[§44 Bras, Kets, and the Riesz Map#^prop-44-3|§44.3]]).
 
 ^rem-44-3
+
+> [!theorem] Proposition §44.3: Outer Products are Bounded of Rank at Most One
+> Let $H$ be a Hilbert space and $a, b \in H$. The outer product $|a\rangle\langle b|$ (Definition [[§44 Bras, Kets, and the Riesz Map#^def-44-4|§44.4]]) is linear, has range in $\operatorname{span}\{a\}$, and satisfies
+>
+> $$
+> \bigl\|\, |a\rangle\langle b|\,x \bigr\| \le \|a\|\,\|b\|\,\|x\| \qquad \text{for all } x \in H .
+> $$
+>
+> So it is a bounded linear map $H \to H$ of rank at most one.
+
+^prop-44-3
+
+> [!proof]+ Proof
+> *Linear in $x$:* the inner product is linear in its first argument, so $|a\rangle\langle b|\,(\alpha x + \beta y) = (\alpha x + \beta y, b)\, a = \alpha (x, b)\, a + \beta (y, b)\, a$. *Range:* each value $(x, b)\, a$ is a scalar multiple of $a$, so the range lies in $\operatorname{span}\{a\}$, of dimension at most one. *Bound:* by Cauchy–Schwarz (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]), $\|(x, b)\, a\| = |(x, b)|\,\|a\| \le \|x\|\,\|b\|\,\|a\|$.
+
+^pf-44-3
+
+*Uses:* [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]
 
 > [!remark]- Connections
 > - Used in Quantum Mechanics: Dirac's axioms for kets, bras and operators, of which Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]] and Definitions [[§44 Bras, Kets, and the Riesz Map#^def-44-3|§44.3]] and [[§44 Bras, Kets, and the Riesz Map#^def-44-4|§44.4]] are the rigorous content — [[§C1.2 Kets, Bras, Operators and Matrix Representations#^pr-c1-2-1|QM Principle §C1.2.1]], [[§C1.2 Kets, Bras, Operators and Matrix Representations#^rem-c1-2-1|QM Remark: What the axioms add to level B, and what they are rigorously]].

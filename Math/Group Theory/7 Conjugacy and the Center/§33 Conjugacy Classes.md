@@ -196,12 +196,22 @@ tags: [group-theory, math493]
 
 ^pf-33-4
 
-*Uses:* [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§33 Conjugacy Classes#^def-33-3|Def. §33.3]], [[§14 Invariant Subspaces#^ladr-5-11|LADR 5.11]], [[§37 Determinants#^ladr-9-65|LADR 9.65]], [[§37 Determinants#^ladr-9-50|LADR 9.50]]
-
 > [!remark] Remark: What the Argument Uses
-> The direction ($\supseteq$) needed the eigenvalues to be *distinct*, which forced diagonalizability. For a diagonal matrix with a repeated eigenvalue, e.g. $\begin{pmatrix} 3 & 0 \\ 0 & 3 \end{pmatrix} = 3I$, the conjugacy class is just $\{3I\}$ (it is [[§35 The Center#^def-35-1|central]]), while $\begin{pmatrix} 3 & 1 \\ 0 & 3 \end{pmatrix}$ has the same characteristic polynomial but is not similar to $3I$. Conjugacy classes in $GL_n(\mathbb{C})$ are classified in general by Jordan normal form, of which this problem is the diagonalizable case.
+> The direction ($\supseteq$) needed the eigenvalues to be *distinct*, which forced diagonalizability. For a repeated eigenvalue the characteristic polynomial no longer determines the conjugacy class: Examples [[§33 Conjugacy Classes#^ex-33-3|§33.3]] and [[§33 Conjugacy Classes#^ex-33-4|§33.4]]. Conjugacy classes in $GL_n(\mathbb{C})$ are classified in general by Jordan normal form, of which this problem is the diagonalizable case.
 
 ^rem-33-1
+
+> [!example] Example §33.3: The Conjugacy Class of $3I$
+> The diagonal matrix $3I = \begin{pmatrix} 3 & 0 \\ 0 & 3 \end{pmatrix} \in GL_2(\mathbb{C})$, with the repeated eigenvalue $3$, has conjugacy class $\{3I\}$: for every $S \in GL_2(\mathbb{C})$, $S(3I)S^{-1} = 3\,SS^{-1} = 3I$, since the scalar $3$ can be pulled out of the matrix product. Equivalently, $3I$ commutes with every matrix, so it is [[§35 The Center#^def-35-1|central]] in $GL_2(\mathbb{C})$.
+
+^ex-33-3
+
+> [!example] Example §33.4: Same Characteristic Polynomial as $3I$, Not Similar to It
+> Let $J = \begin{pmatrix} 3 & 1 \\ 0 & 3 \end{pmatrix}$. It is upper triangular, so $\det(xI - J) = (x - 3)^2 = \det(xI - 3I)$, and $\det J = 9 \neq 0$, so $J \in GL_2(\mathbb{C})$. But $J$ is not similar to $3I$: by Example [[§33 Conjugacy Classes#^ex-33-3|§33.3]] the only matrix similar to $3I$ is $3I$ itself, and $J \neq 3I$ (their $(1,2)$ entries are $1$ and $0$).
+
+^ex-33-4
+
+*Uses:* [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§33 Conjugacy Classes#^def-33-3|Def. §33.3]], [[§14 Invariant Subspaces#^ladr-5-11|LADR 5.11]], [[§37 Determinants#^ladr-9-65|LADR 9.65]], [[§37 Determinants#^ladr-9-50|LADR 9.50]]
 
 > [!remark]- Connections
 > - Jordan normal form: [[§32 Consequences of Generalized Eigenspace Decomposition#^ladr-8-46|LADR 8.46 (Jordan form)]].

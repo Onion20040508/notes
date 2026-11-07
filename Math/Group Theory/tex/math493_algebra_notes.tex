@@ -488,8 +488,18 @@ Let $a, b \in G$.
 \end{proof}
 
 \begin{rembox}[Why One-Sided Suffices Here but Not in General]\label{rem:why-one-sided-suffices-here-but-not-general}
-In a group, checking $ab = e$ alone certifies $b = a^{-1}$; the other equation $ba = e$ comes free. This is special to groups (it uses that $a$ already \emph{has} a two-sided inverse). In monoids --- e.g.\ functions $X \to X$ under composition for infinite $X$ --- a one-sided inverse need not be two-sided: the shift $n \mapsto n + 1$ on $\mathbb{N}$ has a left inverse but no right inverse.
+In a group, checking $ab = e$ alone certifies $b = a^{-1}$; the other equation $ba = e$ comes free. This is special to groups (it uses that $a$ already \emph{has} a two-sided inverse). In monoids --- e.g.\ functions $X \to X$ under composition for infinite $X$ --- a one-sided inverse need not be two-sided (Example~\ref{ex:shift-on-n-one-sided-inverse}).
 \end{rembox}
+
+\begin{exbox}[{The Shift on $\mathbb{N}$: a One-Sided Inverse That Is Not Two-Sided}]\label{ex:shift-on-n-one-sided-inverse}
+Functions $\mathbb{N} \to \mathbb{N}$ under composition form a monoid (composition is associative, with identity $\operatorname{id}_{\mathbb{N}}$), not a group. In it, the shift $s(n) = n + 1$ has a left inverse but no right inverse.
+
+Let $n_0$ be the least element of $\mathbb{N}$ (whichever convention is used for $\mathbb{N}$). Note that $s(n) = n + 1 > n \geq n_0$, so $n_0$ is not a value of $s$.
+
+\textbf{A left inverse.} Define $t \colon \mathbb{N} \to \mathbb{N}$ by $t(n_0) = n_0$ and $t(n) = n - 1$ for $n > n_0$ (then $n - 1 \geq n_0$, so $t(n) \in \mathbb{N}$). For every $n \in \mathbb{N}$, $s(n) = n + 1 > n_0$, hence $t(s(n)) = (n + 1) - 1 = n$. So $t \circ s = \operatorname{id}_{\mathbb{N}}$.
+
+\textbf{No right inverse.} Suppose $r \colon \mathbb{N} \to \mathbb{N}$ satisfied $s \circ r = \operatorname{id}_{\mathbb{N}}$. Then $n_0 = s(r(n_0)) = r(n_0) + 1 \geq n_0 + 1$, a contradiction. In particular the left inverse $t$ is not two-sided: $s(t(n_0)) = n_0 + 1 \neq n_0$, so $s \circ t \neq \operatorname{id}_{\mathbb{N}}$.
+\end{exbox}
 
 \begin{propbox}[{Unique Solvability of Linear Equations}]\label{prop:unique-solvability-linear-equations}
 Let $a, b \in G$. The equation $ax = b$ has exactly one solution $x \in G$, namely $x = a^{-1} b$; and $xa = b$ has exactly one solution, namely $x = b a^{-1}$.
@@ -508,9 +518,24 @@ In the multiplication table of a finite group, every element appears exactly onc
 In the row of $a$, the element $b$ appears in column $x$ iff $ax = b$, and by Unique Solvability this has exactly one solution: existence gives ``at least once,'' uniqueness (cancellation) ``at most once.'' Columns are handled the same way with $xa = b$.
 \end{proof}
 
-\begin{rembox}[The Converse Fails]\label{rem:converse-fails}
-A Latin square need not be a group table, since associativity is not encoded row by row. The property is visible in the $S_3$ table (\ref{sec:cycles}).
-\end{rembox}
+The Latin square property is visible in the $S_3$ table (\ref{sec:cycles}). Its converse fails:
+
+\begin{exbox}[{A Latin Square That Is Not a Group Table}]\label{ex:latin-square-not-group-table}
+A Latin square need not be a group table, since associativity is not encoded row by row. On the set $\{0, 1, 2\}$ define an operation $\ast$ by the table (entry in row $x$, column $y$ is $x \ast y$; it records $x - y$, brought into $\{0, 1, 2\}$ by adding $3$ if negative):
+\begin{center}
+\begin{tabular}{c|ccc}
+$\ast$ & $0$ & $1$ & $2$ \\ \hline
+$0$ & $0$ & $2$ & $1$ \\
+$1$ & $1$ & $0$ & $2$ \\
+$2$ & $2$ & $1$ & $0$
+\end{tabular}
+\end{center}
+\textbf{It is a Latin square:} the rows read $0, 2, 1$; $\ 1, 0, 2$; $\ 2, 1, 0$, and the columns read $0, 1, 2$; $\ 2, 0, 1$; $\ 1, 2, 0$, so each of $0, 1, 2$ appears exactly once in every row and every column.
+
+\textbf{It is not a group table:} the operation is not associative, since
+\[ (0 \ast 1) \ast 1 = 2 \ast 1 = 1, \qquad 0 \ast (1 \ast 1) = 0 \ast 0 = 0. \]
+(It has no identity element either: an identity $e$ would need row $e$ to read $0, 1, 2$, and no row does.) So no group has this table, although the table has the property of Corollary~\ref{cor:latin-square-property}.
+\end{exbox}
 
 \section{Basic Examples of Groups}\label{sec:examples}
 
@@ -712,8 +737,20 @@ For $n < 0$, write $n = -p$ with $p > 0$: $(g^m)^{-p} = \big((g^m)^p\big)^{-1} \
 The exponent laws concern powers of a \emph{single} element. For two elements:
 \[ (gh)^2 = ghgh, \text{ which in general is not } g^2 h^2; \]
 \[ (gh)^{-1} = h^{-1} g^{-1}, \text{ which in general is not } g^{-1} h^{-1}. \]
-Each identity $(gh)^n = g^n h^n$ ($n = 2$ or $n = -1$) holds for all $g, h$ exactly when $G$ is abelian (\ref{sec:conjugation-products}, Characterizations of Abelian Groups). In $S_3$ with $g = (1\,2)$, $h = (2\,3)$: $(gh)^2 = (1\,3\,2) \neq e = g^2 h^2$, and $(gh)^{-1} = (1\,3\,2) \neq (1\,2\,3) = g^{-1}h^{-1}$.
+Each identity $(gh)^n = g^n h^n$ ($n = 2$ or $n = -1$) holds for all $g, h$ exactly when $G$ is abelian (\ref{sec:conjugation-products}, Characterizations of Abelian Groups). Examples~\ref{ex:s3-square-of-product-non-law} and~\ref{ex:s3-inverse-of-product-non-law} show both failing in $S_3$.
 \end{rembox}
+
+\begin{exbox}[{$(gh)^2 \neq g^2 h^2$ in $S_3$}]\label{ex:s3-square-of-product-non-law}
+In $S_3$ take $g = (1\,2)$ and $h = (2\,3)$. \textit{To show:} $(gh)^2 \neq g^2 h^2$.
+
+Tracking each point through $gh$ (right factor first): $1 \mapsto 1 \mapsto 2$, $2 \mapsto 3 \mapsto 3$, $3 \mapsto 2 \mapsto 1$, so $gh = (1\,2\,3)$. Applying $(1\,2\,3)$ twice gives $1 \mapsto 3$, $2 \mapsto 1$, $3 \mapsto 2$, so $(gh)^2 = (1\,3\,2) \neq e$. On the other hand each transposition squares to $e$, so $g^2 h^2 = e \cdot e = e$. Hence $(gh)^2 = (1\,3\,2) \neq e = g^2 h^2$.
+\end{exbox}
+
+\begin{exbox}[{$(gh)^{-1} \neq g^{-1} h^{-1}$ in $S_3$}]\label{ex:s3-inverse-of-product-non-law}
+In $S_3$ take $g = (1\,2)$ and $h = (2\,3)$ again, so $gh = (1\,2\,3)$ (Example~\ref{ex:s3-square-of-product-non-law}). \textit{To show:} $(gh)^{-1} \neq g^{-1} h^{-1}$.
+
+The inverse of $(1\,2\,3)$ reverses its arrows, so $(gh)^{-1} = (1\,3\,2)$. Each transposition is its own inverse, so $g^{-1} h^{-1} = gh = (1\,2\,3)$. These differ, since $(1\,3\,2)$ sends $1$ to $3$ and $(1\,2\,3)$ sends $1$ to $2$. Hence $(gh)^{-1} = (1\,3\,2) \neq (1\,2\,3) = g^{-1} h^{-1}$; the correct formula is $(gh)^{-1} = h^{-1} g^{-1}$ (Proposition~\ref{prop:inverse-product}).
+\end{exbox}
 
 \begin{defbox}[Subgroup Generated by an Element]\label{def:subgroup-generated-element}
 Let $G$ be a group and let $g \in G$. We define
@@ -783,11 +820,28 @@ with the empty word ($N = 0$) equal to $e$. Equivalently, since $g^{n}$ is itsel
 (The same definition, with the $g_i$ ranging over a set $S$, gives $\langle S \rangle$ for an arbitrary, possibly infinite, subset $S \subseteq G$.)
 \end{defbox}
 
-\begin{rembox}[Two Checks on the Definition]\label{rem:two-checks-definition}
-\begin{itemize}[nosep]
-    \item \textbf{Consistency with $k = 1$:} For a single generator, every word $g^{n_1} g^{n_2} \cdots g^{n_N}$ collapses to $g^{n_1 + \cdots + n_N}$ by the Exponent Laws, recovering $\langle g \rangle = \{g^n\}$.
-    \item \textbf{Abelian case:} If $G$ is abelian, the factors of any word can be sorted by index and merged, so the first attempt $\prod_{i=1}^k g_i^{n_i}$ \emph{does} give the whole subgroup. The failure in $S_3$ is a genuinely non-abelian phenomenon, and $S_3$ is the smallest non-abelian group available to exhibit it.
-\end{itemize}
+\begin{lembox}[{Words in a Single Generator}]\label{lem:words-single-generator-collapse}
+For $g \in G$, the set of words in the single generator $g$ is $\langle g \rangle = \{g^n : n \in \mathbb{Z}\}$ of Definition~\ref{def:subgroup-generated-element}. So the definition by words is consistent with the case $k = 1$.
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} A word in one letter collapses to a single power by the Exponent Laws.\par
+For $k = 1$ every index $m_i$ equals $1$, so a word is $g^{n_1} g^{n_2} \cdots g^{n_N}$. By law (2) of the Exponent Laws, applied $N - 1$ times, it equals $g^{n_1 + \cdots + n_N}$, an element of $\{g^n\}$; the empty word is $e = g^0$. Conversely, each $g^n$ is the word with $N = 1$ and $n_1 = n$.
+\end{proof}
+
+\begin{lembox}[{Generated Subgroups in an Abelian Group}]\label{lem:generated-subgroup-abelian-fixed-order-products}
+If $G$ is abelian and $g_1, \ldots, g_k \in G$, then
+\[ \langle g_1, \ldots, g_k \rangle = \left\{ \prod_{i=1}^{k} g_i^{n_i} : n_1, \ldots, n_k \in \mathbb{Z} \right\}; \]
+that is, the first attempt of Example~\ref{ex:crafting-definition-gen-g1-gk} \emph{does} give the whole subgroup.
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} In an abelian group the factors of a word can be sorted by index and merged.\par
+Each product $g_1^{n_1} \cdots g_k^{n_k}$ is a word ($N = k$, $m_i = i$), so the right side is contained in $\langle g_1, \ldots, g_k \rangle$. Conversely, let $w = g_{m_1}^{n_1} \cdots g_{m_N}^{n_N}$ be a word. Since $G$ is abelian, swapping two adjacent factors does not change the product, so the factors can be reordered with all factors of index $1$ first, then those of index $2$, and so on. By law (2) of the Exponent Laws the factors of index $i$ merge into the single power $g_i^{a_i}$, where $a_i$ is the sum of the exponents $n_j$ with $m_j = i$ (and $a_i = 0$, $g_i^0 = e$, if the index $i$ does not occur). Hence $w = g_1^{a_1} \cdots g_k^{a_k}$ lies in the right side.
+\end{proof}
+
+\begin{rembox}[{Fixed-Order Products: a Non-Abelian Failure}]\label{rem:fixed-order-products-non-abelian-failure}
+By Lemma~\ref{lem:generated-subgroup-abelian-fixed-order-products}, the failure of the fixed-order products in $S_3$ (Example~\ref{ex:crafting-definition-gen-g1-gk}) is a genuinely non-abelian phenomenon, and $S_3$ is the smallest non-abelian group available to exhibit it.
 \end{rembox}
 
 \begin{propbox}[{The Top-Down Characterization of $\langle g_1, \ldots, g_k \rangle$}]\label{prop:top-down-characterization-gen-g1-gk}
@@ -830,14 +884,18 @@ Let $m = |G|$ and consider the $m + 1$ elements $g^0, g^1, g^2, \ldots, g^m$ of 
 So the set of positive integers $N$ with $g^N = e$ is nonempty; by well-ordering it has a least element, which is $\operatorname{ord}(g)$, and it is at most $m = |G|$.
 \end{proof}
 
+\begin{exbox}[{An Element of Infinite Order: $1 \in \mathbb{Z}$}]\label{ex:one-has-infinite-order-in-z}
+In $(\mathbb{Z}, +)$, written additively, the $N$-th power of $1$ is $N \cdot 1 = 1 + \cdots + 1 = N$ (induction on $N$ from Definition~\ref{def:integer-powers}). For every $N \geq 1$, $N \cdot 1 = N \neq 0$, so no positive $N$ kills $1$, and $1$ has infinite order. The powers $k \cdot 1 = k$ ($k \in \mathbb{Z}$) are pairwise distinct: they never repeat, because there is unlimited room. So the finiteness hypothesis in Proposition~\ref{prop:every-element-finite-group-has-finite-order} cannot be dropped.
+\end{exbox}
+
 \begin{rembox}[Where Finiteness Enters]\label{rem:where-finiteness-enters}
-The argument is the pigeonhole principle and fails without finiteness: in $(\mathbb{Z}, +)$ the element $1$ satisfies $N \cdot 1 = N \neq 0$ for every $N \geq 1$, so it has infinite order --- the powers never repeat because there is unlimited room. The same pigeonhole appears elsewhere in these notes: it is why following $a, \sigma(a), \sigma^2(a), \ldots$ must return to $a$ in the disjoint cycle decomposition (\ref{sec:disjoint}), and why every nonzero class modulo a prime is invertible (\ref{sec:units}). This proposition gives only $\operatorname{ord}(g) \leq |G|$; the stronger statement $\operatorname{ord}(g) \mid |G|$ requires Lagrange's theorem (\ref{sec:lagrange}).
+The argument is the pigeonhole principle and fails without finiteness, as Example~\ref{ex:one-has-infinite-order-in-z} shows. The same pigeonhole appears elsewhere in these notes: it is why following $a, \sigma(a), \sigma^2(a), \ldots$ must return to $a$ in the disjoint cycle decomposition (\ref{sec:disjoint}), and why every nonzero class modulo a prime is invertible (\ref{sec:units}). This proposition gives only $\operatorname{ord}(g) \leq |G|$; the stronger statement $\operatorname{ord}(g) \mid |G|$ requires Lagrange's theorem (\ref{sec:lagrange}).
 
 Note also that the pigeonhole supplies \emph{some} coincidence $g^i = g^j$, not a canonical one, and different pairs generally give different exponents: if $g^3 = g^7 = g^{11}$, the pairs $(3,7)$ and $(3,11)$ give $g^4 = e$ and $g^8 = e$ respectively. This is harmless, because the order is defined as the \emph{least} positive such exponent, taken after the fact. In truth every exponent killing $g$ is a multiple of the order: $\{N \in \mathbb{Z} : g^N = e\}$ is the kernel of the homomorphism $k \mapsto g^k$, hence a subgroup of $\mathbb{Z}$, hence equal to $\operatorname{ord}(g)\mathbb{Z}$ (\ref{sec:zoo} and \ref{sec:cyclic}). In the example, $8$ is a multiple of $4$, not a coincidence.
 \end{rembox}
 
 \begin{rembox}[Two Meanings of ``Order'']\label{rem:two-meanings-order}
-$|G|$ counts elements of a group; $\operatorname{ord}(g)$ counts how many times $g$ must be multiplied by itself to return to $e$. They are related by $\operatorname{ord}(g) = |\langle g \rangle|$, the order of the cyclic subgroup $g$ generates (proved in \ref{sec:cyclic}, Classification of Cyclic Groups: if $\operatorname{ord}(g) = n$ then $\langle g \rangle = \{e, g, \ldots, g^{n-1}\}$ has exactly $n$ elements). Consequently a group of order $n$ is cyclic if and only if it contains an element of order $n$ (Corollary in \ref{sec:cyclic}). Examples: in $U_7$, $\operatorname{ord}(2) = 3$ and $\operatorname{ord}(3) = 6 = |U_7|$, so $3$ generates and $2$ does not; in $U_8$ every non-identity element has order $2 < 4 = |U_8|$, so $U_8$ is not cyclic.
+$|G|$ counts elements of a group; $\operatorname{ord}(g)$ counts how many times $g$ must be multiplied by itself to return to $e$. They are related by $\operatorname{ord}(g) = |\langle g \rangle|$, the order of the cyclic subgroup $g$ generates (proved in \ref{sec:cyclic}, Classification of Cyclic Groups: if $\operatorname{ord}(g) = n$ then $\langle g \rangle = \{e, g, \ldots, g^{n-1}\}$ has exactly $n$ elements). Consequently a group of order $n$ is cyclic if and only if it contains an element of order $n$ (Corollary in \ref{sec:cyclic}). Examples~\ref{ex:u7-cyclic-generated-by-3} and~\ref{ex:u8-not-cyclic-classification} in \ref{sec:cyclic} apply this: in $U_7$, $3$ has order $6$ and generates while $2$ has order $3$ and does not; in $U_8$ every non-identity element has order $2$, so $U_8$ is not cyclic.
 \end{rembox}
 
 \section{A Zoo of Subgroups (WS 1.7)}\label{sec:zoo}
@@ -879,8 +937,13 @@ In additive notation, the words of the generated subgroup are sums of copies of 
 \end{proof}
 
 \begin{rembox}[{The Dependency of $U_n$ on B\'ezout}]\label{rem:dependency-un-bezout}
-The proof that $U_n$ is a group invoked B\'ezout's identity. Generated Subgroups of $\mathbb{Z}$, and B\'ezout derives B\'ezout from the classification of subgroups of $\mathbb{Z}$, which used only the division algorithm --- so the dependency chain is: well-ordering $\Rightarrow$ division algorithm $\Rightarrow$ subgroups of $\mathbb{Z}$ $\Rightarrow$ B\'ezout $\Rightarrow$ $U_n$ is a group. Pinter's Chapter 5 exercise ``show $\mathbb{Z}$ is generated by $5$ and $7$'' is the case $\gcd(5, 7) = 1$.
+The proof that $U_n$ is a group invoked B\'ezout's identity. Generated Subgroups of $\mathbb{Z}$, and B\'ezout derives B\'ezout from the classification of subgroups of $\mathbb{Z}$, which used only the division algorithm --- so the dependency chain is: well-ordering $\Rightarrow$ division algorithm $\Rightarrow$ subgroups of $\mathbb{Z}$ $\Rightarrow$ B\'ezout $\Rightarrow$ $U_n$ is a group.
 \end{rembox}
+
+\begin{exbox}[{$\mathbb{Z}$ Is Generated by $5$ and $7$}]\label{ex:z-generated-by-5-and-7}
+Pinter's Chapter 5 exercise ``show $\mathbb{Z}$ is generated by $5$ and $7$'' is the case $\gcd(5, 7) = 1$ of Corollary~\ref{cor:generated-subgroups-z-bezout}. Indeed $5$ and $7$ are distinct primes, so their only common positive divisor is $1$, and the corollary gives $\langle 5, 7 \rangle = \mathbb{Z}$. Explicitly, $3 \cdot 5 + (-2) \cdot 7 = 15 - 14 = 1$, so $1 \in \langle 5, 7 \rangle$, and then every $m \in \mathbb{Z}$ is $m = (3m) \cdot 5 + (-2m) \cdot 7 \in \langle 5, 7 \rangle$.
+\srcline{cf.\ Pinter Ch.\ 5}
+\end{exbox}
 
 \subsection{\texorpdfstring{Subgroups of $\mathbb{Z}^2$}{Subgroups of ℤ²}}
 
@@ -985,7 +1048,7 @@ The six groups display the full spectrum: $\mathbb{Z}$ and $S_3$ admit complete,
 
 $S_3$ is the smallest non-abelian group, and Chapter~1 uses it to refute identities that hold only in abelian groups: cancelling on opposite sides, $(gh)^2 = g^2h^2$, and building $\langle g_1, g_2 \rangle$ from powers taken in a fixed order.
 
-Example~\ref{ex:mixed-hypothesis-does-not-cancel} shows that $gh_1 = h_2g$ does not give $h_1 = h_2$; the remark \emph{Two Non-Laws} (\ref{sec:subgroups}) refutes $(gh)^2 = g^2h^2$ and $(gh)^{-1} = g^{-1}h^{-1}$ with two transpositions; Example~\ref{ex:crafting-definition-gen-g1-gk} shows that products of powers in a fixed order need not form a subgroup, and the remark \emph{Two Checks on the Definition} (\ref{sec:subgroups}) notes that $S_3$ is the smallest group in which this happens. Its six subgroups, which WS~1.7 also asks for, are classified in \ref{sec:s3-subgroups}.
+Example~\ref{ex:mixed-hypothesis-does-not-cancel} shows that $gh_1 = h_2g$ does not give $h_1 = h_2$; Examples~\ref{ex:s3-square-of-product-non-law} and~\ref{ex:s3-inverse-of-product-non-law} refute $(gh)^2 = g^2h^2$ and $(gh)^{-1} = g^{-1}h^{-1}$ with two transpositions; Example~\ref{ex:crafting-definition-gen-g1-gk} shows that products of powers in a fixed order need not form a subgroup, and the remark \emph{Fixed-Order Products: a Non-Abelian Failure} (\ref{sec:subgroups}) notes that $S_3$ is the smallest group in which this happens. Its six subgroups, which WS~1.7 also asks for, are classified in \ref{sec:s3-subgroups}.
 
 \textit{$S_3$ elsewhere: first appearance in the course; next, Chapter~3 (\ref{sec:rev-ch3-s3}).}
 
@@ -993,7 +1056,7 @@ Example~\ref{ex:mixed-hypothesis-does-not-cancel} shows that $gh_1 = h_2g$ does 
 
 $(\mathbb{Z}, +)$ is the model infinite cyclic group: it is generated by $1$, which has infinite order. Its subgroups are exactly the $n\mathbb{Z}$, the fact behind B\'ezout and behind everything in Chapter~\ref{ch:modn}.
 
-Definition~\ref{def:additive-groups-z-q-r} introduces it; Proposition~\ref{prop:intersections-subgroups} uses $2\mathbb{Z} \cup 3\mathbb{Z}$ to show that a union of subgroups need not be a subgroup; Definition~\ref{def:cyclic-groups} records $\mathbb{Z} = \langle 1 \rangle$; the remark \emph{Where Finiteness Enters} (\ref{sec:subgroups}) shows that $1$ has infinite order and that the exponents killing an element $g$ form $\operatorname{ord}(g)\mathbb{Z}$. The classification is the first subsection of this section: Proposition~\ref{prop:subgroups-z}, Corollary~\ref{cor:generated-subgroups-z-bezout}, and Example~\ref{ex:subgroups-z2-partial-list} for $\mathbb{Z}^2$.
+Definition~\ref{def:additive-groups-z-q-r} introduces it; Proposition~\ref{prop:intersections-subgroups} uses $2\mathbb{Z} \cup 3\mathbb{Z}$ to show that a union of subgroups need not be a subgroup; Definition~\ref{def:cyclic-groups} records $\mathbb{Z} = \langle 1 \rangle$; Example~\ref{ex:one-has-infinite-order-in-z} shows that $1$ has infinite order, and the remark \emph{Where Finiteness Enters} (\ref{sec:subgroups}) that the exponents killing an element $g$ form $\operatorname{ord}(g)\mathbb{Z}$. The classification is the first subsection of this section: Proposition~\ref{prop:subgroups-z}, Corollary~\ref{cor:generated-subgroups-z-bezout}, and Example~\ref{ex:subgroups-z2-partial-list} for $\mathbb{Z}^2$.
 
 \textit{$\mathbb{Z}$ elsewhere: first appearance in the course; next, Chapter~\ref{ch:modn}, which is devoted to it.}
 
@@ -1001,7 +1064,7 @@ Definition~\ref{def:additive-groups-z-q-r} introduces it; Proposition~\ref{prop:
 
 Chapter~1 uses $\mathbb{Z}/n\mathbb{Z}$ and $U_n$ before constructing them in Chapter~\ref{ch:modn}: as a group under addition, as the cyclic group generated by $[1]$, and, through $U_7$ and $U_8$, as the first test of whether a group is cyclic.
 
-Example~\ref{ex:groups-non-groups} lists $(\mathbb{Z}/n\mathbb{Z}, +)$ as a group and $(\mathbb{Z}/n\mathbb{Z} \setminus \{[0]\}, \times)$ as one exactly when $n$ is prime; Definition~\ref{def:cyclic-groups} (in the previous part) gives $\mathbb{Z}/n\mathbb{Z} = \langle [1] \rangle$; the remark \emph{Two Meanings of ``Order''} (\ref{sec:subgroups}) finds that $3$ generates $U_7$ while $U_8$ is not cyclic; the remark \emph{The Dependency of $U_n$ on B\'ezout} in this section traces the proof that $U_n$ is a group back to the subgroups of $\mathbb{Z}$.
+Example~\ref{ex:groups-non-groups} lists $(\mathbb{Z}/n\mathbb{Z}, +)$ as a group and $(\mathbb{Z}/n\mathbb{Z} \setminus \{[0]\}, \times)$ as one exactly when $n$ is prime; Definition~\ref{def:cyclic-groups} (in the previous part) gives $\mathbb{Z}/n\mathbb{Z} = \langle [1] \rangle$; the remark \emph{Two Meanings of ``Order''} (\ref{sec:subgroups}) points ahead to Examples~\ref{ex:u7-cyclic-generated-by-3} and~\ref{ex:u8-not-cyclic-classification} (\ref{sec:cyclic}): $3$ generates $U_7$ while $U_8$ is not cyclic; the remark \emph{The Dependency of $U_n$ on B\'ezout} in this section traces the proof that $U_n$ is a group back to the subgroups of $\mathbb{Z}$.
 
 \textit{$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere: first appearance in the course; next, Chapter~\ref{ch:modn}, which is devoted to it.}
 
@@ -1305,8 +1368,12 @@ which exhibits $\gcd(ab, n) = 1$ by B\'ezout. So $[a][b] = [ab] \in U_n$.
 \end{proof}
 
 \begin{rembox}[{Computing Inverses in $U_n$}]\label{rem:computing-inverses-un}
-The proof is constructive: the extended Euclidean algorithm computes the B\'ezout coefficients, hence the inverse. E.g.\ in $U_{10} = \{[1], [3], [7], [9]\}$: from $3 \cdot 7 = 21 \equiv 1$, $[3]^{-1} = [7]$.
+The proof is constructive: the extended Euclidean algorithm computes the B\'ezout coefficients, hence the inverse (as in Example~\ref{ex:computing-inverse-extended-euclidean-algorithm}).
 \end{rembox}
+
+\begin{exbox}[{The Inverse of $[3]$ in $U_{10}$}]\label{ex:inverse-of-3-in-u10}
+$U_{10} = \{[1], [3], [7], [9]\}$, the classes of the $a \in \{1, \ldots, 10\}$ with $\gcd(a, 10) = 1$. Since $3 \cdot 7 = 21 = 2 \cdot 10 + 1 \equiv 1 \pmod{10}$, we have $[3][7] = [1]$, and $[7][3] = [1]$ as $U_{10}$ is abelian; by Uniqueness of Inverses, $[3]^{-1} = [7]$. The extended Euclidean algorithm finds the same inverse: $10 = 3 \cdot 3 + 1$ gives $1 = 10 - 3 \cdot 3$, so $3 \cdot (-3) \equiv 1 \pmod{10}$ and $[3]^{-1} = [-3] = [7]$.
+\end{exbox}
 
 \begin{propbox}[{$\mathbb{Z}/n\mathbb{Z}$ Is a Field if and only if $n$ Is Prime}]\label{prop:z-nz-field-if-only-if-n-prime}
 For $n \geq 2$, $\mathbb{Z}/n\mathbb{Z}$ with its addition and multiplication is a field if and only if $n$ is prime. For $p$ prime this field is written $\mathbb{F}_p$, and $\mathbb{F}_p^\times = U_p = \mathbb{Z}/p\mathbb{Z} \setminus \{[0]\}$.
@@ -1536,12 +1603,25 @@ Track each element through the product, rightmost factor first. $a_1$: the right
 \end{proof}
 
 \begin{rembox}[Cycles Need Not Be Disjoint]\label{rem:cycles-need-not-disjoint}
-Uniqueness in the decomposition theorem depends on disjointness. With overlapping cycles the same permutation has many expressions --- e.g.\ $(1\,2)(2\,3) = (1\,2\,3)$ --- and factorizations into transpositions are far from unique; only the \emph{parity} of the number of transpositions is an invariant of the permutation, as proved in \ref{sec:sign} (Parity of a Permutation).
+Uniqueness in the decomposition theorem depends on disjointness. With overlapping cycles the same permutation has many expressions (Example~\ref{ex:three-cycle-overlapping-cycle-expressions}), and factorizations into transpositions are far from unique; only the \emph{parity} of the number of transpositions is an invariant of the permutation, as proved in \ref{sec:sign} (Parity of a Permutation).
 \end{rembox}
 
+\begin{exbox}[{Several Cycle Expressions for $(1\,2\,3)$}]\label{ex:three-cycle-overlapping-cycle-expressions}
+The $3$-cycle $(1\,2\,3) \in S_3$ is its own disjoint cycle decomposition, but with overlapping cycles it has other expressions:
+\begin{enumerate}
+    \item $(1\,2)(2\,3) = (1\,2\,3)$: tracking right factor first, $1 \mapsto 1 \mapsto 2$, $2 \mapsto 3 \mapsto 3$, $3 \mapsto 2 \mapsto 1$ (as in Example~\ref{ex:group-s3-detail});
+    \item $(1\,3)(1\,2) = (1\,2\,3)$: the case $r = 3$ of Proposition~\ref{prop:every-permutation-product-transpositions}; directly, $1 \mapsto 2 \mapsto 2$, $2 \mapsto 1 \mapsto 3$, $3 \mapsto 3 \mapsto 1$.
+\end{enumerate}
+So $(1\,2\,3)$ has two different factorizations into transpositions, neither of them disjoint; both use two transpositions, an even number, as the parity invariant requires.
+\end{exbox}
+
 \begin{rembox}[Finite Sets Only]\label{rem:finite-sets-only}
-The theorem is about $S_n$, i.e.\ finite sets. For an infinite set $X$, a bijection can have infinite orbits with no return --- the shift $n \mapsto n + 1$ on $\mathbb{Z}$ is a single ``infinite cycle'' --- so finite cycle notation does not describe all of $S_X$. Throughout this course, $S_n$ is finite.
+The theorem is about $S_n$, i.e.\ finite sets. For an infinite set $X$, a bijection can have infinite orbits with no return (Example~\ref{ex:shift-on-z-infinite-cycle}), so finite cycle notation does not describe all of $S_X$. Throughout this course, $S_n$ is finite.
 \end{rembox}
+
+\begin{exbox}[{The Shift on $\mathbb{Z}$: an Infinite Cycle}]\label{ex:shift-on-z-infinite-cycle}
+Let $s \colon \mathbb{Z} \to \mathbb{Z}$, $s(n) = n + 1$. It is a bijection, with inverse $n \mapsto n - 1$, so $s \in S_{\mathbb{Z}}$. Following the arrows from any $a \in \mathbb{Z}$ gives $a, a + 1, a + 2, \ldots$, and $s^m(a) = a + m \neq a$ for every $m \geq 1$: the orbit never returns, so $s$ is a single ``infinite cycle''. It is not a product of finitely many cycles: each cycle moves only finitely many integers, so such a product fixes every integer moved by none of its factors --- all but finitely many --- whereas $s$ moves every integer.
+\end{exbox}
 
 \section{\texorpdfstring{The Symmetric Group $S_3$}{The Symmetric Group S₃}}\label{sec:s3-subgroups}
 
@@ -1823,8 +1903,13 @@ Let $h_1, h_2 \in H$ and put $g_i = \varphi^{-1}(h_i)$, so that $\varphi(g_i) = 
 \end{proof}
 
 \begin{rembox}[Contrast with Topology]\label{rem:contrast-topology}
-This is a genuinely algebraic phenomenon. ``Preserves the operation'' is an \emph{equation} between elements, and a bijection transports equations in both directions. Continuity is not an equation, and a continuous bijection need not have a continuous inverse: $[0, 2\pi) \to S^1$, $t \mapsto e^{it}$, is a continuous bijection whose inverse is discontinuous at $1$ (590 notes). That is why a homeomorphism must be \emph{defined} as a continuous bijection with continuous inverse, whereas a group isomorphism is simply a bijective homomorphism.
+This is a genuinely algebraic phenomenon. ``Preserves the operation'' is an \emph{equation} between elements, and a bijection transports equations in both directions. Continuity is not an equation, and a continuous bijection need not have a continuous inverse (Example~\ref{ex:continuous-bijection-discontinuous-inverse}). That is why a homeomorphism must be \emph{defined} as a continuous bijection with continuous inverse, whereas a group isomorphism is simply a bijective homomorphism.
 \end{rembox}
+
+\begin{exbox}[{A Continuous Bijection with Discontinuous Inverse}]\label{ex:continuous-bijection-discontinuous-inverse}
+Let $f \colon [0, 2\pi) \to S^1 = \{z \in \mathbb{C} : |z| = 1\}$, $f(t) = e^{it}$. It is continuous, and it is a bijection: every point of $S^1$ is $e^{it}$ for exactly one $t \in [0, 2\pi)$. Its inverse $g = f^{-1}$ is discontinuous at $1$: $g(1) = 0$, but the points $z_m = e^{i(2\pi - 1/m)}$ ($m \geq 1$) converge to $e^{2\pi i} = 1$, while $g(z_m) = 2\pi - 1/m \to 2\pi \neq 0$.
+\srcline{590 notes}
+\end{exbox}
 
 \begin{propbox}[{Composition; $\cong$ Is an Equivalence Relation}]\label{prop:composition-iso-equivalence-relation}
 \begin{enumerate}
@@ -1924,9 +2009,24 @@ using the homomorphism property twice and centrality of $z$. So $\varphi(z) \in 
 \textbf{(2)} Put $H' = \varphi(G')$, a subgroup of $H$ by Images and Preimages of Subgroups (\ref{sec:homs}). If $g' \in G'$ with $g' \neq e_G$, then $\varphi(g') \neq \varphi(e_G) = e_H$ by injectivity, so $H' \neq \{e_H\}$. If $g \in G \setminus G'$, then $\varphi(g) \notin H'$: otherwise $\varphi(g) = \varphi(g')$ for some $g' \in G'$, and injectivity would give $g = g' \in G'$. So $H' \neq H$. The general statement follows from part (3) of Images and Preimages of Subgroups (\ref{sec:homs}) applied to $\varphi$ and $\varphi^{-1}$; orders are preserved since $\varphi$ is a bijection, and inclusions since $\varphi$ is a map of sets.
 \end{proof}
 
-\begin{rembox}[Using These to Distinguish Groups]\label{rem:using-these-distinguish-groups}
-Both give non-isomorphism tests. For instance $|Z(\mathbb{Z}/6\mathbb{Z})| = 6$ while $|Z(S_3)| = 1$ (\ref{sec:center}), re-proving $\mathbb{Z}/6\mathbb{Z} \not\cong S_3$ without invoking commutativity directly. And since the subgroup lattices correspond, a group with no proper nontrivial subgroup cannot be isomorphic to one that has such a subgroup: $\mathbb{Z}/4\mathbb{Z}$ has the subgroup $\{[0],[2]\}$ and $U_8$ has $\{1,3\}$, whereas $\mathbb{Z}/5\mathbb{Z}$, of prime order, has none (\ref{sec:lagrange}).
-\end{rembox}
+Both parts of the proposition give non-isomorphism tests.
+
+\begin{exbox}[{$\mathbb{Z}/6\mathbb{Z} \not\cong S_3$ via Centers}]\label{ex:z6z-not-iso-s3-via-centers}
+By part (1), isomorphic groups have centers of the same size. Since $\mathbb{Z}/6\mathbb{Z}$ is abelian, all of its elements are central, so $|Z(\mathbb{Z}/6\mathbb{Z})| = 6$. In $S_3$ only $e$ is central, so $|Z(S_3)| = 1$ (\ref{sec:center}): from the table in Example~\ref{ex:group-s3-detail}, each non-identity element fails to commute with some element,
+\[ (1\,2)(2\,3) = (1\,2\,3) \neq (1\,3\,2) = (2\,3)(1\,2), \qquad (1\,3)(1\,2) = (1\,2\,3) \neq (1\,3\,2) = (1\,2)(1\,3), \]
+\[ (1\,2\,3)(1\,2) = (1\,3) \neq (2\,3) = (1\,2)(1\,2\,3), \qquad (1\,3\,2)(1\,2) = (2\,3) \neq (1\,3) = (1\,2)(1\,3\,2), \]
+the first pair settling both $(1\,2)$ and $(2\,3)$. As $6 \neq 1$, this re-proves $\mathbb{Z}/6\mathbb{Z} \not\cong S_3$ without invoking commutativity directly.
+\end{exbox}
+
+\begin{exbox}[{Groups With and Without a Proper Nontrivial Subgroup}]\label{ex:proper-nontrivial-subgroups-z4-u8-z5}
+Since the subgroup lattices correspond (part (2)), a group with no proper nontrivial subgroup cannot be isomorphic to one that has such a subgroup.
+\begin{enumerate}
+    \item $\mathbb{Z}/4\mathbb{Z}$ has the subgroup $\{[0], [2]\}$: it contains $[0]$, $[2] + [2] = [0]$, and $-[2] = [2]$; it is neither $\{[0]\}$ nor the whole group.
+    \item $U_8$ has the subgroup $\{1, 3\}$: $3 \cdot 3 = 9 \equiv 1 \pmod 8$, so it is closed and $3^{-1} = 3$; it is neither $\{1\}$ nor $U_8$.
+    \item $\mathbb{Z}/5\mathbb{Z}$, of prime order, has none (\ref{sec:lagrange}). Directly: if $H \leq \mathbb{Z}/5\mathbb{Z}$ contains $[a] \neq [0]$, then $\gcd(a, 5) = 1$, so by the Invertibility Criterion there is $x \in \{1, \ldots, 4\}$ with $ax \equiv 1 \pmod 5$; then $[1] = [a] + \cdots + [a]$ ($x$ terms) lies in $H$, hence so does every $[m] = [1] + \cdots + [1]$, and $H = \mathbb{Z}/5\mathbb{Z}$.
+\end{enumerate}
+So $\mathbb{Z}/5\mathbb{Z}$ is isomorphic to neither $\mathbb{Z}/4\mathbb{Z}$ nor $U_8$ (which here also follows from $|\mathbb{Z}/5\mathbb{Z}| = 5 \neq 4$).
+\end{exbox}
 
 \begin{propbox}[{$\mathbb{Z}/4\mathbb{Z} \cong U_5$}]\label{prop:z-4z-iso-u5}
 The map $\varphi: \mathbb{Z}/4\mathbb{Z} \to (\mathbb{Z}/5\mathbb{Z})^\times$, $\ k \mapsto 2^k$, is an isomorphism. Explicitly,
@@ -1969,8 +2069,17 @@ which exhaust $U_7 = \{1, \ldots, 6\}$. So $U_7 = \langle 3 \rangle$ is cyclic o
 \end{proof}
 
 \begin{rembox}[Reading Cyclicity off a Table]\label{rem:reading-cyclicity-off-table}
-Both questions reduce to: does the unit group have a generator? In the $U_7$ table (WS 2.2), the row of $3$ read as successive powers cycles through all six elements; in the $U_8$ table, every row returns to $1$ after two steps, so no element generates. A group of order $4$ in which every element squares to the identity cannot be cyclic; a group of order $n$ with an element whose powers exhaust it is $\cong \mathbb{Z}/n\mathbb{Z}$ by the argument of (2), which is made general in the Classification of Cyclic Groups (\ref{sec:cyclic}).
+Both questions reduce to: does the unit group have a generator? In the $U_7$ table (WS 2.2), the row of $3$ read as successive powers cycles through all six elements; in the $U_8$ table, every row returns to $1$ after two steps, so no element generates. A group of order $4$ in which every element squares to the identity cannot be cyclic (Lemma~\ref{lem:order-4-squares-to-e-not-cyclic}); a group of order $n$ with an element whose powers exhaust it is $\cong \mathbb{Z}/n\mathbb{Z}$ by the argument of (2), which is made general in the Classification of Cyclic Groups (\ref{sec:cyclic}).
 \end{rembox}
+
+\begin{lembox}[{A Group of Order $4$ in Which Every Element Squares to $e$ Is Not Cyclic}]\label{lem:order-4-squares-to-e-not-cyclic}
+Let $G$ be a group of order $4$ with $g^2 = e$ for every $g \in G$. Then $G$ is not cyclic. In particular $U_8$ is not cyclic.
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} Each $\langle g \rangle$ has at most two elements.\par
+Let $g \in G$. For $k \in \mathbb{Z}$ write $k = 2q + r$ with $r \in \{0, 1\}$ (Division Algorithm); by the Exponent Laws, $g^k = (g^2)^q g^r = e^q g^r = g^r \in \{e, g\}$. So $\langle g \rangle \subseteq \{e, g\}$ has at most $2 < 4 = |G|$ elements, and $\langle g \rangle \neq G$. As $g$ was arbitrary, $G$ has no generator. Every element of $U_8$ squares to $1$ (Example~\ref{ex:table-u8}), so $U_8$ is not cyclic.
+\end{proof}
 
 \begin{center}
 \includegraphics[width=0.92\textwidth]{tables}
@@ -2042,9 +2151,19 @@ A group $G$ of finite order $n$ is cyclic if and only if it contains an element 
 For any $g$, $\operatorname{ord}(g) = |\langle g \rangle|$ by the Classification of Cyclic Groups. If $\operatorname{ord}(g) = n$, then $\langle g \rangle$ is a subset of $G$ with $n = |G|$ elements, hence equals $G$. Conversely, if $G = \langle g \rangle$, then $\operatorname{ord}(g) = |\langle g \rangle| = |G| = n$.
 \end{proof}
 
-\begin{rembox}[{WS 2.5 and WS 2.7(2) as Instances}]\label{rem:ws-2-5-ws-2-7-2-instances}
-$U_5 = \langle 2 \rangle$ with $2$ of order $4$, and $U_7 = \langle 3 \rangle$ with $3$ of order $6$; the theorem gives $U_5 \cong \mathbb{Z}/4\mathbb{Z}$ and $U_7 \cong \mathbb{Z}/6\mathbb{Z}$ with the same maps $k \mapsto 2^k$, $k \mapsto 3^k$ constructed there. In each case the well-definedness step (``$2^4 \equiv 1$'') is exactly the computation of the kernel $n\mathbb{Z}$. The theorem also explains why $U_8$ is not cyclic: a cyclic group of order $4$ would be $\cong \mathbb{Z}/4\mathbb{Z}$, which has an element of order $4$, and $U_8$ has none.
-\end{rembox}
+\begin{exbox}[{$U_5$ Is Cyclic, Generated by $2$}]\label{ex:u5-cyclic-instance-classification}
+The powers of $2$ modulo $5$ are $2^1 = 2$, $2^2 = 4$, $2^3 = 8 \equiv 3$, $2^4 = 16 \equiv 1$, so $2$ has order $4 = |U_5|$, and by Corollary~\ref{cor:cyclic-iff-element-order-g}, $U_5 = \langle 2 \rangle$. Theorem~\ref{thm:classification-cyclic-groups}(1) then gives $U_5 \cong \mathbb{Z}/4\mathbb{Z}$ via $k \mapsto 2^k$, the same map constructed by hand in Proposition~\ref{prop:z-4z-iso-u5} (WS 2.5). Its well-definedness step there (``$2^4 \equiv 1$'') is exactly the computation of the kernel $4\mathbb{Z}$ of $k \mapsto 2^k$ on $\mathbb{Z}$.
+\end{exbox}
+
+\begin{exbox}[{$U_7$ Is Cyclic, Generated by $3$ but Not by $2$}]\label{ex:u7-cyclic-generated-by-3}
+The powers of $3$ modulo $7$ are $3, 2, 6, 4, 5, 1$ (Proposition~\ref{prop:u8-u7}(2)), so $3$ has order $6 = |U_7|$, and by Corollary~\ref{cor:cyclic-iff-element-order-g}, $U_7 = \langle 3 \rangle$. Theorem~\ref{thm:classification-cyclic-groups}(1) gives $U_7 \cong \mathbb{Z}/6\mathbb{Z}$ via $k \mapsto 3^k$, the map constructed in Proposition~\ref{prop:u8-u7}(2) (WS 2.7(2)); again its well-definedness step (``$3^6 \equiv 1$'') is the computation of the kernel $6\mathbb{Z}$.
+
+By contrast $2^1 = 2$, $2^2 = 4$, $2^3 = 8 \equiv 1$, so $2$ has order $3 < 6$, and $2$ does not generate $U_7$ (by the corollary, the generators are exactly the elements of order $6$). Indeed $\langle 2 \rangle = \{1, 2, 4\}$ has $\operatorname{ord}(2) = 3$ elements (Example~\ref{ex:z-6z-to-u7-k-maps-2k}).
+\end{exbox}
+
+\begin{exbox}[{$U_8$ Is Not Cyclic}]\label{ex:u8-not-cyclic-classification}
+$U_8 = \{1, 3, 5, 7\}$, and $3^2 = 9$, $5^2 = 25$, $7^2 = 49$ are all $\equiv 1 \pmod 8$ (the diagonal of Example~\ref{ex:table-u8}), so every non-identity element has order $2 < 4 = |U_8|$. By Corollary~\ref{cor:cyclic-iff-element-order-g}, $U_8$ is not cyclic. The theorem explains this too: a cyclic group of order $4$ would be $\cong \mathbb{Z}/4\mathbb{Z}$, which has an element of order $4$ (namely $[1]$), and an isomorphism preserves the orders of elements (Proposition~\ref{prop:homomorphisms-orders-elements}(3)); $U_8$ has none.
+\end{exbox}
 
 \begin{propbox}[{The Homomorphism $k \mapsto g^k$ and $\langle g \rangle \cong \mathbb{Z}/N\mathbb{Z}$}]\label{prop:homomorphism-k-maps-gk-gen-g-iso-z-nz}
 Let $G$ be a group and $g \in G$.
@@ -2277,7 +2396,7 @@ This is the proposition Characterizations of Abelian Groups in \ref{sec:conjugat
 
 Chapter~4 sees $S_3$ whole: its multiplication table, and its non-commutativity and trivial center as invariants showing that $S_3 \not\cong \mathbb{Z}/6\mathbb{Z}$, the other group of order $6$.
 
-Example~\ref{ex:table-s3} gives the table (WS~2.4); Proposition~\ref{prop:two-isomorphism-invariants} concludes $S_3 \not\cong \mathbb{Z}/6\mathbb{Z}$ from commutativity; the remark \emph{Using These to Distinguish Groups} (\ref{sec:isos}) re-proves it with centers.
+Example~\ref{ex:table-s3} gives the table (WS~2.4); Proposition~\ref{prop:two-isomorphism-invariants} concludes $S_3 \not\cong \mathbb{Z}/6\mathbb{Z}$ from commutativity; Example~\ref{ex:z6z-not-iso-s3-via-centers} (\ref{sec:isos}) re-proves it with centers.
 
 \textit{$S_3$ elsewhere: previous, Chapter~3 (\ref{sec:rev-ch3-s3}); next, Chapter~5 (\ref{sec:rev-ch5-s3}).}
 
@@ -2293,7 +2412,7 @@ Example~\ref{ex:homomorphisms-their-kernels}(2) (in the $GL_n$ part) computes th
 
 The small groups $\mathbb{Z}/4\mathbb{Z}$, $\mathbb{Z}/6\mathbb{Z}$, $U_5$, $U_7$ and $U_8$ are the chapter's worked cases. Their tables are written out; $U_5 \cong \mathbb{Z}/4\mathbb{Z}$ and $U_7 \cong \mathbb{Z}/6\mathbb{Z}$ are cyclic, while $U_8$, in which every element squares to $1$, is the Klein four-group $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$. The subgroups of a finite cyclic group are read off from the divisors of its order.
 
-Examples~\ref{ex:tables-z-4z-u5}--\ref{ex:table-u8} give the tables (WS~2.1--2.3); Example~\ref{ex:z-6z-to-u7-k-maps-2k} is a homomorphism $\mathbb{Z}/6\mathbb{Z} \to U_7$ that is neither injective nor surjective; Proposition~\ref{prop:two-isomorphism-invariants} (in the $S_3$ part) also separates $\mathbb{Z}/4\mathbb{Z}$ from $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$; Proposition~\ref{prop:z-4z-iso-u5} and the remark \emph{Reading the Isomorphism off the Tables} find $\mathbb{Z}/4\mathbb{Z} \cong U_5$, and Proposition~\ref{prop:u8-u7} with the remark \emph{Reading Cyclicity off a Table} settles $U_8$ and $U_7$ (\ref{sec:isos}); the remark \emph{WS~2.5 and WS~2.7(2) as Instances} (\ref{sec:cyclic}) re-derives both from the classification; Example~\ref{ex:subgroups-z-12z} lists the subgroups of $\mathbb{Z}/12\mathbb{Z}$.
+Examples~\ref{ex:tables-z-4z-u5}--\ref{ex:table-u8} give the tables (WS~2.1--2.3); Example~\ref{ex:z-6z-to-u7-k-maps-2k} is a homomorphism $\mathbb{Z}/6\mathbb{Z} \to U_7$ that is neither injective nor surjective; Proposition~\ref{prop:two-isomorphism-invariants} (in the $S_3$ part) also separates $\mathbb{Z}/4\mathbb{Z}$ from $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$; Proposition~\ref{prop:z-4z-iso-u5} and the remark \emph{Reading the Isomorphism off the Tables} find $\mathbb{Z}/4\mathbb{Z} \cong U_5$, and Proposition~\ref{prop:u8-u7} with the remark \emph{Reading Cyclicity off a Table} settles $U_8$ and $U_7$ (\ref{sec:isos}); Examples~\ref{ex:u5-cyclic-instance-classification}--\ref{ex:u8-not-cyclic-classification} (\ref{sec:cyclic}) re-derive these from the classification; Example~\ref{ex:subgroups-z-12z} lists the subgroups of $\mathbb{Z}/12\mathbb{Z}$.
 
 \textit{$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere: previous, Chapter~\ref{ch:modn}, which is devoted to it; next, Chapter~5 (\ref{sec:rev-ch5-zn}).}
 
@@ -2325,8 +2444,20 @@ The set of all such polynomials is written $k[x_1, \ldots, x_n]$, the \textbf{po
 A \textbf{commutative ring} is a set $R$ with two operations $+$ and $\cdot$ such that $(R, +)$ is an abelian group with identity $0$, and multiplication is associative, commutative, has an identity $1$, and distributes over addition. Thus a commutative ring satisfies all the field axioms except that nonzero elements need not have multiplicative inverses. Rings are treated properly later in the course.
 \end{defbox}
 
-\begin{rembox}[{$k[x_1, \ldots, x_n]$ as a Ring}]\label{rem:k-x1-xn-ring}
-$k[x_1, \ldots, x_n]$ is a commutative ring but not a field: $x_1$ has no inverse, since no polynomial $g$ satisfies $x_1 g = 1$ (the product would have degree $\geq 1$). $\mathbb{Z}$ is another example. Polynomials are treated here as \emph{formal expressions} determined by their coefficients, not as functions; over an infinite field the two viewpoints agree, but the formal one is what the algebra uses.
+\begin{exbox}[{$k[x_1, \ldots, x_n]$ Is a Commutative Ring but Not a Field}]\label{ex:polynomial-ring-commutative-not-field}
+\textit{To show:} $k[x_1, \ldots, x_n]$ is a commutative ring, and $x_1$ has no multiplicative inverse in it.
+
+\textbf{Commutative ring.} Addition is coefficientwise, so $(k[x_1, \ldots, x_n], +)$ is an abelian group, as $(k, +)$ is, with identity the zero polynomial. Multiplication is defined on monomials by adding exponent vectors and extended by distributivity, so it distributes over addition by construction, and it is associative and commutative with identity the monomial $1$, because addition of exponent vectors is associative and commutative with identity $(0, \ldots, 0)$ and multiplication in $k$ is associative and commutative.
+
+\textbf{Not a field.} Suppose $x_1 g = 1$. If $g = 0$, then $x_1 g = 0 \neq 1$. Otherwise, multiplying by $x_1$ sends each monomial of $g$ to a monomial with the exponent of $x_1$ raised by one, and distinct monomials stay distinct, so every monomial of $x_1 g$ with nonzero coefficient has degree $\geq 1$; the product would have degree $\geq 1$, whereas $1$ has degree $0$. So no polynomial $g$ satisfies $x_1 g = 1$, and $x_1 \neq 0$ has no inverse.
+\end{exbox}
+
+\begin{exbox}[{$\mathbb{Z}$ Is a Commutative Ring but Not a Field}]\label{ex:integers-commutative-ring-not-field}
+$(\mathbb{Z}, +)$ is an abelian group with identity $0$ (Definition~\ref{def:additive-groups-z-q-r}), and integer multiplication is associative, commutative, has identity $1$, and distributes over addition; so $\mathbb{Z}$ is a commutative ring. It is not a field: $2 \neq 0$ has no multiplicative inverse in $\mathbb{Z}$, since $2x$ is even for every $x \in \mathbb{Z}$ while $1$ is odd.
+\end{exbox}
+
+\begin{rembox}[{Polynomials as Formal Expressions}]\label{rem:polynomials-formal-expressions}
+Polynomials are treated here as \emph{formal expressions} determined by their coefficients, not as functions; over an infinite field the two viewpoints agree, but the formal one is what the algebra uses.
 \end{rembox}
 
 \begin{defbox}[{The Action of $S_n$ on $k[x_1, \ldots, x_n]$}]\label{def:action-sn-k-x1-xn}
@@ -3013,9 +3144,13 @@ If $y = g \star x$ for some $g \in G$ (i.e.\ $y$ lies in the orbit of $x$, \ref{
 The equality is the proposition. Conjugation $c_g$ is an automorphism of $G$ (\ref{sec:conjugation-products}), so its restriction to $\operatorname{Stab}(x)$ is an injective homomorphism with image $g\operatorname{Stab}(x)g^{-1} = \operatorname{Stab}(y)$.
 \end{proof}
 
-\begin{rembox}[Reading the Proposition]\label{rem:reading-proposition}
-Moving the point by $g$ conjugates its stabilizer by $g$. For the point stabilizer $H = \operatorname{Stab}(n) \subseteq S_n$ of \ref{sec:orbit-stabilizer}, this says $\operatorname{Stab}(\sigma(n)) = \sigma H \sigma^{-1}$.
-\end{rembox}
+In words: moving the point by $g$ conjugates its stabilizer by $g$.
+
+\begin{exbox}[{Point Stabilizers in $S_n$ Are Conjugate}]\label{ex:stab-point-stabilizers-sn-conjugate}
+Let $S_n$ act on $\{1, \ldots, n\}$ by $\sigma \star i = \sigma(i)$, and let $H = \operatorname{Stab}(n) = \{\tau \in S_n : \tau(n) = n\}$ be the point stabilizer of \ref{sec:orbit-stabilizer}. Then for every $\sigma \in S_n$,
+\[ \operatorname{Stab}(\sigma(n)) = \sigma H \sigma^{-1}. \]
+This is Proposition~\ref{prop:stabilizers-points-same-orbit-conjugate} with $x = n$ and $g = \sigma$, since $\sigma \star n = \sigma(n)$. Directly: for $\tau \in S_n$, $\tau(\sigma(n)) = \sigma(n)$ holds if and only if $(\sigma^{-1}\tau\sigma)(n) = n$ (apply $\sigma^{-1}$, resp.\ $\sigma$, to both sides), i.e.\ if and only if $\sigma^{-1}\tau\sigma \in H$, i.e.\ if and only if $\tau = \sigma(\sigma^{-1}\tau\sigma)\sigma^{-1} \in \sigma H \sigma^{-1}$.
+\end{exbox}
 
 \section{Orbits}\label{sec:orbits}
 
@@ -3078,8 +3213,21 @@ Fix a group $G$ and a subgroup $H \subseteq G$. For $g_1, g_2 \in G$:
 \end{defbox}
 
 \begin{rembox}[Why Two Definitions, and When They Agree]\label{rem:why-two-definitions-when-they-agree}
-Since $H$ is a subgroup, $g_1 g_2^{-1} \in H \iff g_2 g_1^{-1} \in H$ (closure under inverses), so the right relation is symmetric in the two elements as expected. If $G$ is abelian, $g_1^{-1}g_2 = g_2 g_1^{-1}$ and the two relations coincide; in general they differ. For $G = (\mathbb{Z}, +)$ and $H = n\mathbb{Z}$, both relations read $-g_1 + g_2 \in n\mathbb{Z}$, i.e.\ $g_1 \equiv g_2 \pmod n$: ordinary congruence.
+Since $H$ is a subgroup, $g_1 g_2^{-1} \in H \iff g_2 g_1^{-1} \in H$ (closure under inverses), so the right relation is symmetric in the two elements as expected. In an abelian group the two relations coincide (Lemma~\ref{lem:cosets-left-right-congruence-agree-abelian}); in general they differ. For $\mathbb{Z}$ and $n\mathbb{Z}$ both are ordinary congruence (Example~\ref{ex:cosets-congruence-modulo-nz}).
 \end{rembox}
+
+\begin{lembox}[{Left and Right Congruence Agree in Abelian Groups}]\label{lem:cosets-left-right-congruence-agree-abelian}
+Let $G$ be abelian and $H \leq G$. Then for $g_1, g_2 \in G$: $g_1 \equiv_\ell g_2 \pmod H$ if and only if $g_1 \equiv_r g_2 \pmod H$.
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} In an abelian group $g_1^{-1}g_2 = g_2g_1^{-1}$, the inverse of $g_1g_2^{-1}$.\par
+By definition, $g_1 \equiv_\ell g_2$ means $g_1^{-1}g_2 \in H$. Since $G$ is abelian, $g_1^{-1}g_2 = g_2 g_1^{-1}$, and $g_2g_1^{-1} = (g_1g_2^{-1})^{-1}$. As $H$ is closed under inverses, $(g_1g_2^{-1})^{-1} \in H$ if and only if $g_1g_2^{-1} \in H$, which is $g_1 \equiv_r g_2$.
+\end{proof}
+
+\begin{exbox}[{Congruence Modulo $n\mathbb{Z}$}]\label{ex:cosets-congruence-modulo-nz}
+Let $G = (\mathbb{Z}, +)$ and $H = n\mathbb{Z}$. In additive notation $g_1^{-1}g_2$ is $-g_1 + g_2$ and $g_1g_2^{-1}$ is $g_1 - g_2$. So $g_1 \equiv_\ell g_2 \pmod{n\mathbb{Z}}$ means $-g_1 + g_2 \in n\mathbb{Z}$, i.e.\ $n \mid g_2 - g_1$, i.e.\ $g_1 \equiv g_2 \pmod n$; and $g_1 \equiv_r g_2 \pmod{n\mathbb{Z}}$ means $n \mid g_1 - g_2$, the same condition (as Lemma~\ref{lem:cosets-left-right-congruence-agree-abelian} predicts, $\mathbb{Z}$ being abelian). Both relations are ordinary congruence modulo $n$.
+\end{exbox}
 
 \begin{defbox}[{Left and Right Cosets}]\label{def:left-right-cosets}
 For $g \in G$ and $H \leq G$, the \textbf{left coset} of $H$ containing $g$ and the \textbf{right coset} are
@@ -3212,8 +3360,16 @@ $(\mathbb{Z}/p\mathbb{Z})^\times$ is a group with $p - 1$ elements (\ref{sec:uni
 \end{proof}
 
 \begin{rembox}[Uses of Lagrange]\label{rem:uses-lagrange}
-The divisibility $|H| \mid |G|$ is the main tool for locating subgroups of a finite group: e.g.\ the subgroups of $S_3$ (\ref{sec:s3-subgroups}) have orders $1, 2, 3, 6$, and no subgroup of order $4$ or $5$ can exist. The corollary explains the pattern observed in \ref{sec:homs}: for $\varphi: \mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$, the image had $3$ elements and the kernel $2$, with $3 \cdot 2 = 6$ --- the index of $\operatorname{Ker}(\varphi)$ equals $|\operatorname{Im}(\varphi)|$, a fact that the first isomorphism theorem will make precise. Note also that the converse of Lagrange fails in general: a divisor of $|G|$ need not be the order of a subgroup.
+The divisibility $|H| \mid |G|$ is the main tool for locating subgroups of a finite group (Example~\ref{ex:lagrange-subgroup-orders-s3}). It also explains the pattern observed in \ref{sec:homs} for $\mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$ (Example~\ref{ex:lagrange-pattern-z6-to-u7}): the index of the kernel equals the order of the image, a fact that the first isomorphism theorem will make precise for every homomorphism. Note also that the converse of Lagrange fails in general: a divisor of $|G|$ need not be the order of a subgroup (Example~\ref{ex:converse-lagrange-fails-a4}, below).
 \end{rembox}
+
+\begin{exbox}[{Orders of Subgroups of $S_3$}]\label{ex:lagrange-subgroup-orders-s3}
+By Lagrange, the order of a subgroup of $S_3$ divides $|S_3| = 6$, so it is one of $1, 2, 3, 6$; in particular $S_3$ has no subgroup of order $4$ or $5$, since neither number divides $6$. All four orders occur: the subgroups of $S_3$ (Proposition~\ref{prop:subgroups-s3}, \ref{sec:s3-subgroups}) have orders $1, 2, 2, 2, 3, 6$.
+\end{exbox}
+
+\begin{exbox}[{The Pattern in $\mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$}]\label{ex:lagrange-pattern-z6-to-u7}
+For $\varphi: \mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$, Example~\ref{ex:z-6z-to-u7-k-maps-2k} found $\operatorname{Im}(\varphi) = \{1, 2, 4\}$, with $3$ elements, and $\operatorname{Ker}(\varphi) = \{0, 3\}$, with $2$, so that $3 \cdot 2 = 6$. Lagrange accounts for this. The kernel is a subgroup of $\mathbb{Z}/6\mathbb{Z}$ (\ref{sec:homs}), so $[\mathbb{Z}/6\mathbb{Z} : \operatorname{Ker}(\varphi)] = 6/2 = 3$, which equals $|\operatorname{Im}(\varphi)|$. And the image is $\langle 2 \rangle \leq U_7$, of order $\operatorname{ord}(2) = 3$, which divides $|U_7| = 6$, as Order of an Element Divides $|G|$ (Corollary~\ref{cor:order-element-divides-g-g-g-e}) requires.
+\end{exbox}
 
 
 \begin{propbox}[{The Index Is Multiplicative}]\label{prop:index-multiplicative}
@@ -3268,9 +3424,32 @@ If $|G| = p$ is prime, the only subgroups of $G$ are $\{e\}$ and $G$.
 By Lagrange, a subgroup has order dividing $p$, hence $1$ or $p$; the first gives $\{e\}$, the second gives $G$ by the cardinality argument above.
 \end{proof}
 
+\begin{corbox}[{Exactly One Group of Each Prime Order}]\label{cor:lagrange-exactly-one-group-prime-order}
+Let $p$ be a prime.
+\begin{enumerate}
+    \item Up to isomorphism there is exactly one group of order $p$, namely $\mathbb{Z}/p\mathbb{Z}$.
+    \item In a group of order $p$ every non-identity element is a generator, so such a group has exactly $p - 1$ generators.
+\end{enumerate}
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} Groups of Prime Order gives $G \cong \mathbb{Z}/p\mathbb{Z}$ and $G = \langle g \rangle$ for every $g \neq e$.\par
+\textbf{(1)} $\mathbb{Z}/p\mathbb{Z}$ is a group of order $p$. If $G$ and $G'$ are groups of order $p$, then $G \cong \mathbb{Z}/p\mathbb{Z}$ and $G' \cong \mathbb{Z}/p\mathbb{Z}$ by Groups of Prime Order (Theorem~\ref{thm:groups-prime-order}); since the inverse of an isomorphism is an isomorphism and a composite of isomorphisms is an isomorphism, $G \cong G'$.
+
+\textbf{(2)} By the same theorem $G = \langle g \rangle$ for every $g \neq e$, and there are $p - 1$ such $g$. The identity is not a generator, since $\langle e \rangle = \{e\} \neq G$ as $p \geq 2$. So the generators are exactly the $p - 1$ non-identity elements.
+\end{proof}
+
 \begin{rembox}[{A Classification, for Once}]\label{rem:classification-once}
-For each prime $p$ there is exactly one group of order $p$ up to isomorphism. This is the first complete classification in these notes that covers infinitely many orders: contrast order $4$, where there are two groups ($\mathbb{Z}/4\mathbb{Z}$ and the Klein four-group $\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, distinguished in \ref{sec:isos}), and order $6$, where there are two ($\mathbb{Z}/6\mathbb{Z}$ and $S_3$, distinguished by commutativity). The proof also shows that in a group of prime order, \emph{every} non-identity element is a generator --- so such a group has $p - 1$ generators.
+Corollary~\ref{cor:lagrange-exactly-one-group-prime-order} is the first complete classification in these notes that covers infinitely many orders: contrast order $4$, where there are two groups (Example~\ref{ex:lagrange-two-groups-order-4}), and order $6$, where there are two (Example~\ref{ex:lagrange-two-groups-order-6}).
 \end{rembox}
+
+\begin{exbox}[{Two Groups of Order $4$}]\label{ex:lagrange-two-groups-order-4}
+$\mathbb{Z}/4\mathbb{Z}$ and the Klein four-group $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ both have order $4$ but are not isomorphic, as shown in \ref{sec:isos}: in $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ every element $v$ satisfies $v + v = 0$, while in $\mathbb{Z}/4\mathbb{Z}$ the element $1$ has $1 + 1 = 2 \neq 0$. An isomorphism $\varphi: \mathbb{Z}/4\mathbb{Z} \to \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ would give $\varphi(2) = \varphi(1) + \varphi(1) = 0 = \varphi(0)$, contradicting injectivity. (That every group of order $4$ is isomorphic to one of these two is asserted here, not proved.)
+\end{exbox}
+
+\begin{exbox}[{Two Groups of Order $6$}]\label{ex:lagrange-two-groups-order-6}
+$\mathbb{Z}/6\mathbb{Z}$ and $S_3$ both have order $6$ but are not isomorphic, being distinguished by commutativity. $\mathbb{Z}/6\mathbb{Z}$ is abelian; $S_3$ is not, since $(1\,2)(2\,3) = (1\,2\,3)$ while $(2\,3)(1\,2) = (1\,3\,2)$. An isomorphism $\varphi: \mathbb{Z}/6\mathbb{Z} \to S_3$ would make $S_3$ abelian: any $x, y \in S_3$ are $\varphi(a), \varphi(b)$ by surjectivity, and then $xy = \varphi(a + b) = \varphi(b + a) = yx$. (That every group of order $6$ is isomorphic to one of these two is asserted here, not proved.)
+\end{exbox}
 \textit{Problem Set 5, Problem 1.}
 
 \begin{propbox}[{Index of an Intersection}]\label{prop:index-intersection}
@@ -3471,14 +3650,21 @@ Dividing by $|A \cap B| \geq 1$ gives (2). Normality was never used.
 (1) Now $c = ab$ iff $(a, b^{-1}) \star e = c$. Fix one such pair, $c = a_1b_1$. By When Two Group Elements Move $x$ to the Same Place (Proposition~\ref{prop:when-two-group-elements-move-x-same-place}), $(a, b^{-1}) \star e = (a_1, b_1^{-1}) \star e$ iff $(a, b^{-1}) \in (a_1, b_1^{-1})\operatorname{Stab}(e)$, that is, iff $(a, b^{-1}) = (a_1g, b_1^{-1}g)$ for some $g \in A \cap B$, which is then unique. Taking inverses in the second slot, the representations of $c$ are exactly the pairs $(a, b) = (a_1g, g^{-1}b_1)$, $g \in A \cap B$: there are $|\operatorname{Stab}(e)| = |A \cap B|$ of them.
 \end{proof}
 
-\begin{rembox}[The Submitted Proof Is Orbit--Stabilizer for One Action]\label{rem:product-formula-is-orbit-stabilizer}
-The submitted proof uses no group action, but it reproves, for the action $(a, b) \star x = axb^{-1}$, the two facts on which the orbit--stabilizer theorem rests. Its map $\Phi(g) = (a_1g, g^{-1}b_1)$ is the bijection $\operatorname{Stab}(e) \to \{h : h \star e = c\}$, $s \mapsto (a_1, b_1^{-1})\,s$, written with $b$ in place of $b^{-1}$; its surjectivity step, $a_1^{-1}a_2 = b_1b_2^{-1} \in A \cap B$, is the implication (1) $\Rightarrow$ (2) of When Two Group Elements Move $x$ to the Same Place (Proposition~\ref{prop:when-two-group-elements-move-x-same-place}). Part (2), partitioning $A \times B$ into the sets $R_c$ of equal size, is the counting step: the group is cut into the fibres of $h \mapsto h \star e$, each a coset of the stabilizer. So the theorem is not \emph{used} there; its proof is \emph{repeated} for this one action, with $A \cap B$ in place of $\operatorname{Stab}(e)$. Naming the action replaces both steps by one citation.
-\end{rembox}
-
-\begin{rembox}[{Another Action: $A$ on the Cosets $G/B$}]\label{rem:product-formula-coset-action}
-\textit{(Not from office hours.)} A one-sided action gives the formula too. Let $A$ act on the left cosets of $B$ by $a \star gB = agB$ (well defined: $gB = g'B$ gives $agB = ag'B$; the axioms are associativity). The orbit of $B$ is $\{aB : a \in A\}$, and these cosets are disjoint, have $|B|$ elements each, and fill out $AB$. The stabilizer of $B$ is $\{a \in A : aB = B\} = A \cap B$. By Orbit--Stabilizer, the orbit has $[A : A \cap B]$ elements, so
+\begin{proof}[Third proof ($A$ acting on the cosets $G/B$)]
+\textit{Idea:} The $A$-orbit of $B$ in $G/B$ consists of the cosets making up $AB$, and its stabilizer is $A \cap B$.\par
+\textit{(Not from office hours.)} A one-sided action gives the formula too. Let $A$ act on the left cosets of $B$ by $a \star gB = agB$ (well defined: $gB = g'B$ gives $agB = ag'B$; the axioms are associativity; this is the action of Proposition~\ref{prop:action-g-g-h} restricted to $A$). The orbit of $B$ is $\{aB : a \in A\}$, and these cosets
+\begin{itemize}[nosep]
+    \item are disjoint, since distinct left cosets of $B$ are disjoint (Proposition~\ref{prop:cosets-equivalence-classes});
+    \item have $|B|$ elements each (All Cosets Have the Same Size, Proposition~\ref{prop:all-cosets-have-same-size});
+    \item fill out $AB$, since $\bigcup_{a \in A} aB = \{ab : a \in A,\ b \in B\} = AB$.
+\end{itemize}
+So $|AB| = |\{aB : a \in A\}| \cdot |B|$. The stabilizer of $B$ is $\{a \in A : aB = B\} = A \cap B$, because $aB = B$ if and only if $a \in B$ (\ref{sec:cosets}). By Orbit--Stabilizer (Theorem~\ref{thm:orbit-stabilizer}, for the group $A$), the orbit has $[A : A \cap B]$ elements, so
 \[ |AB| = [A : A \cap B] \cdot |B| = \frac{|A|}{|A \cap B|} \cdot |B|. \]
 This is the injection $aB' \mapsto aB$ ($B' = A \cap B$) of Index of an Intersection (Proposition~\ref{prop:index-intersection}, PS 5.1(1)), with its image identified: it is the $A$-orbit of $B$ in $G/B$.
+\end{proof}
+
+\begin{rembox}[The Submitted Proof Is Orbit--Stabilizer for One Action]\label{rem:product-formula-is-orbit-stabilizer}
+The submitted proof uses no group action, but it reproves, for the action $(a, b) \star x = axb^{-1}$, the two facts on which the orbit--stabilizer theorem rests. Its map $\Phi(g) = (a_1g, g^{-1}b_1)$ is the bijection $\operatorname{Stab}(e) \to \{h : h \star e = c\}$, $s \mapsto (a_1, b_1^{-1})\,s$, written with $b$ in place of $b^{-1}$; its surjectivity step, $a_1^{-1}a_2 = b_1b_2^{-1} \in A \cap B$, is the implication (1) $\Rightarrow$ (2) of When Two Group Elements Move $x$ to the Same Place (Proposition~\ref{prop:when-two-group-elements-move-x-same-place}). Part (2), partitioning $A \times B$ into the sets $R_c$ of equal size, is the counting step: the group is cut into the fibres of $h \mapsto h \star e$, each a coset of the stabilizer. So the theorem is not \emph{used} there; its proof is \emph{repeated} for this one action, with $A \cap B$ in place of $\operatorname{Stab}(e)$. Naming the action replaces both steps by one citation.
 \end{rembox}
 
 \begin{exbox}[{$AB$ Need Not Be a Subgroup}]\label{ex:product-set-not-subgroup}
@@ -3683,7 +3869,7 @@ Example~\ref{ex:seeing-permutations} turns the rotations of a triangle into $A_3
 
 $A_4$ refutes the converse of Lagrange: $6$ divides $|A_4| = 12$, but $A_4$ has no subgroup of order $6$. The class sizes $1, 6, 3, 8, 6$ of $S_4$ are announced as an instance of orbit--stabilizer, and $S_4$ turns out to be the rotation group of the cube. The Klein four-group, met in Chapter~4 as $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, is one of the two groups of order $4$.
 
-Example~\ref{ex:converse-lagrange-fails-a4} gives the $A_4$ counterexample; the remark \emph{A Classification, for Once} (\ref{sec:lagrange}; in the $\mathbb{Z}/n\mathbb{Z}$ part) names the two groups of order $4$; the remark \emph{Where Orbit--Stabilizer Has Already Appeared} (\ref{sec:orbit-stabilizer}) gives the class sizes of $S_4$; Theorem~\ref{thm:rotation-group-cube-s4} and the remark \emph{The Cleanest Description} above identify the rotation group of the cube with $S_4$.
+Example~\ref{ex:converse-lagrange-fails-a4} gives the $A_4$ counterexample; Example~\ref{ex:lagrange-two-groups-order-4} (\ref{sec:lagrange}) names the two groups of order $4$; the remark \emph{Where Orbit--Stabilizer Has Already Appeared} (\ref{sec:orbit-stabilizer}) gives the class sizes of $S_4$; Theorem~\ref{thm:rotation-group-cube-s4} and the remark \emph{The Cleanest Description} above identify the rotation group of the cube with $S_4$.
 
 \textit{$S_4$, $A_4$ and $K$ elsewhere: first appearance in the course; next, Chapter~7 (\ref{sec:rev-ch7-s4}).}
 
@@ -3691,7 +3877,7 @@ Example~\ref{ex:converse-lagrange-fails-a4} gives the $A_4$ counterexample; the 
 
 Lagrange's theorem pays off for the cyclic groups: Fermat's little theorem is Lagrange in $U_p$, and every group of prime order $p$ is $\mathbb{Z}/p\mathbb{Z}$, the chapter's one complete classification. $\mathbb{Z}/3\mathbb{Z}$ and $\mathbb{Z}/4\mathbb{Z}$ also serve as small groups acting on sets.
 
-Example~\ref{ex:seeing-permutations} (in the $S_3$ part) lets $\mathbb{Z}/3\mathbb{Z}$ rotate a triangle and $\mathbb{Z}/4\mathbb{Z}$ act unfaithfully on two points; Corollary~\ref{cor:fermats-little-theorem} is Fermat's little theorem; Theorem~\ref{thm:groups-prime-order} (PS~2.5) and the remark \emph{A Classification, for Once} (\ref{sec:lagrange}) classify the groups of prime order.
+Example~\ref{ex:seeing-permutations} (in the $S_3$ part) lets $\mathbb{Z}/3\mathbb{Z}$ rotate a triangle and $\mathbb{Z}/4\mathbb{Z}$ act unfaithfully on two points; Corollary~\ref{cor:fermats-little-theorem} is Fermat's little theorem; Theorem~\ref{thm:groups-prime-order} (PS~2.5) and Corollary~\ref{cor:lagrange-exactly-one-group-prime-order} classify the groups of prime order.
 
 \textit{$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere: previous, Chapter~5 (\ref{sec:rev-ch5-zn}); next, Chapter~8 (\ref{sec:rev-ch8-zn}).}
 
@@ -3828,8 +4014,16 @@ Let $D = \begin{pmatrix} 3 & 0 \\ 0 & 4 \end{pmatrix} \in GL_2(\mathbb{C})$. The
 \end{proof}
 
 \begin{rembox}[What the Argument Uses]\label{rem:what-argument-uses}
-The direction ($\supseteq$) needed the eigenvalues to be \emph{distinct}, which forced diagonalizability. For a diagonal matrix with a repeated eigenvalue, e.g.\ $\begin{pmatrix} 3 & 0 \\ 0 & 3 \end{pmatrix} = 3I$, the conjugacy class is just $\{3I\}$ (it is central), while $\begin{pmatrix} 3 & 1 \\ 0 & 3 \end{pmatrix}$ has the same characteristic polynomial but is not similar to $3I$. Conjugacy classes in $GL_n(\mathbb{C})$ are classified in general by Jordan normal form, of which this problem is the diagonalizable case.
+The direction ($\supseteq$) needed the eigenvalues to be \emph{distinct}, which forced diagonalizability. For a repeated eigenvalue the characteristic polynomial no longer determines the conjugacy class: Examples~\ref{ex:conj-class-scalar-3i} and~\ref{ex:conj-jordan-block-not-similar-3i}. Conjugacy classes in $GL_n(\mathbb{C})$ are classified in general by Jordan normal form, of which this problem is the diagonalizable case.
 \end{rembox}
+
+\begin{exbox}[{The Conjugacy Class of $3I$}]\label{ex:conj-class-scalar-3i}
+The diagonal matrix $3I = \begin{pmatrix} 3 & 0 \\ 0 & 3 \end{pmatrix} \in GL_2(\mathbb{C})$, with the repeated eigenvalue $3$, has conjugacy class $\{3I\}$: for every $S \in GL_2(\mathbb{C})$, $S(3I)S^{-1} = 3\,SS^{-1} = 3I$, since the scalar $3$ can be pulled out of the matrix product. Equivalently, $3I$ commutes with every matrix, so it is central in $GL_2(\mathbb{C})$.
+\end{exbox}
+
+\begin{exbox}[{Same Characteristic Polynomial as $3I$, Not Similar to It}]\label{ex:conj-jordan-block-not-similar-3i}
+Let $J = \begin{pmatrix} 3 & 1 \\ 0 & 3 \end{pmatrix}$. It is upper triangular, so $\det(xI - J) = (x - 3)^2 = \det(xI - 3I)$, and $\det J = 9 \neq 0$, so $J \in GL_2(\mathbb{C})$. But $J$ is not similar to $3I$: by Example~\ref{ex:conj-class-scalar-3i} the only matrix similar to $3I$ is $3I$ itself, and $J \neq 3I$ (their $(1,2)$ entries are $1$ and $0$).
+\end{exbox}
 
 \section{Conjugation as an Action and the Class Equation}\label{sec:conjugation-action}
 
@@ -3967,9 +4161,10 @@ so $z_1z_2 \in Z(G)$. If $z \in Z(G)$, then from $zg = gz$, multiplying on both 
 \emph{$Z(G) = G$ iff $G$ abelian:} $Z(G) = G$ says every $z \in G$ commutes with every $g \in G$, which is the definition of abelian.
 \end{proof}
 
-\begin{rembox}[A Second Proof]\label{rem:second-proof}
-$Z(G)$ is the kernel of the homomorphism $G \to S_G$ given by the conjugation action (\ref{sec:conjugation-action}), and kernels are subgroups (\ref{sec:homs}) --- indeed normal subgroups (\ref{sec:normal-sources}).
-\end{rembox}
+\begin{proof}[Second proof (that $Z(G)$ is a subgroup)]
+\textit{Idea:} $Z(G)$ is a kernel.\par
+$Z(G)$ is the kernel of the homomorphism $G \to S_G$ given by the conjugation action (The Conjugation Action, Proposition~\ref{prop:conjugation-action}), and kernels are subgroups (\ref{sec:homs}) --- indeed normal subgroups (\ref{sec:normal-sources}).
+\end{proof}
 
 \begin{defbox}[{$p$-Group}]\label{def:p-group}
 For a prime $p$, a \textbf{$p$-group} is a group of order $p^k$ for some $k \geq 0$. The theorem below is the starting point for their structure theory.
@@ -4023,7 +4218,7 @@ Examples~\ref{ex:conjugacy-classes-s3-s4} and~\ref{ex:class-equations-s3-s4} (in
 
 In $GL_n(\mathbb{C})$ conjugacy is similarity of matrices. A diagonal matrix with distinct eigenvalues is conjugate exactly to the matrices with the same characteristic polynomial, scalar matrices are central, and in general Jordan form classifies the classes.
 
-Definition~\ref{def:similar-matrices} identifies conjugacy with similarity; Proposition~\ref{prop:conjugacy-class-diagonal-matrix} (WS~3.3) computes the class of $\operatorname{diag}(3, 4)$; the remark \emph{What the Argument Uses} (\ref{sec:conjugacy}) treats repeated eigenvalues; the remark \emph{Reading Chapter~\ref{ch:conjugacy} Through Actions} (\ref{sec:conjugation-action}) recasts these classes as orbits of $GL_n(\mathbb{C})$.
+Definition~\ref{def:similar-matrices} identifies conjugacy with similarity; Proposition~\ref{prop:conjugacy-class-diagonal-matrix} (WS~3.3) computes the class of $\operatorname{diag}(3, 4)$; the remark \emph{What the Argument Uses} (\ref{sec:conjugacy}), with Examples~\ref{ex:conj-class-scalar-3i} and~\ref{ex:conj-jordan-block-not-similar-3i}, treats repeated eigenvalues; the remark \emph{Reading Chapter~\ref{ch:conjugacy} Through Actions} (\ref{sec:conjugation-action}) recasts these classes as orbits of $GL_n(\mathbb{C})$.
 
 \textit{$GL_n$ elsewhere: previous, Chapter~6 (\ref{sec:rev-ch6-gl}); next, Chapter~8 (\ref{sec:rev-ch8-gl}).}
 
@@ -4063,7 +4258,7 @@ Since the second factor lies in $H$, the conclusion holds if and only if $v_1^{-
 
 ($\Rightarrow$) Suppose the operation is well defined, and let $g \in G$, $h \in H$. Take $u_1 = e$, $u_2 = h$, and $v_1 = v_2 = g^{-1}$. The hypotheses hold ($u_1^{-1}u_2 = h \in H$, $v_1^{-1}v_2 = e \in H$), so the conclusion gives $v_1^{-1}(u_1^{-1}u_2)v_1 = ghg^{-1} \in H$.
 
-A second proof of ($\Leftarrow$), from lecture 9/25, multiplies cosets as sets; it needs Section~\ref{sec:normal} and is given there, after Remark~\ref{rem:multiplying-sets}.
+A second proof of ($\Leftarrow$), from lecture 9/25, multiplies cosets as sets; it needs Section~\ref{sec:normal} and is given there, as Proposition~\ref{prop:normal-coset-multiplication-set-products}.
 \end{proof}
 
 \section{Normal Subgroups}\label{sec:normal}
@@ -4123,11 +4318,17 @@ For a subgroup $H$ of a group $G$, the following are equivalent:
 Here $gH$, $Hg$, $gHg^{-1}$ are subsets of $G$, and ``multiplying an equality of subsets by $g$'' means applying the bijection $x \mapsto xg$ of $G$ to both sides; this is legitimate for equalities of sets, and preserves inclusions as well.
 \end{rembox}
 
-\begin{rembox}[{Second Proof of ($\Leftarrow$) in Proposition~\ref{prop:when-coset-multiplication-well-defined}}]\label{rem:second-proof-proposition}
-Using products of subsets and $g_2'N = Ng_2'$ for normal $N$ (Characterizations of Normality, \ref{sec:normal}): if $g_1N = g_1'N$ and $g_2N = g_2'N$, then
-\[ g_1g_2N = g_1g_2'N = g_1Ng_2' = g_1'Ng_2' = g_1'g_2'N. \]
+\begin{propbox}[{Coset Multiplication Modulo a Normal Subgroup, by Products of Sets}]\label{prop:normal-coset-multiplication-set-products}
+Let $N \trianglelefteq G$. If $g_1N = g_1'N$ and $g_2N = g_2'N$, then $g_1g_2N = g_1'g_2'N$. (This is the direction ($\Leftarrow$) of Proposition~\ref{prop:when-coset-multiplication-well-defined}, proved here a second way.)
 \srcline{lecture 9/25}
-\end{rembox}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} Slide $N$ past $g_2'$ using $g_2'N = Ng_2'$, exchange $g_1$ for $g_1'$, and slide back.\par
+Using products of subsets and $g_2'N = Ng_2'$ for normal $N$ (Characterizations of Normality, Proposition~\ref{prop:characterizations-normality}(3)):
+\[ g_1g_2N = g_1g_2'N = g_1Ng_2' = g_1'Ng_2' = g_1'g_2'N. \]
+The first equality is $g_2N = g_2'N$ multiplied on the left by $g_1$; the second is $g_2'N = Ng_2'$ multiplied on the left by $g_1$; the third is $g_1N = g_1'N$ multiplied on the right by $g_2'$; the fourth is $Ng_2' = g_2'N$ multiplied on the left by $g_1'$ (each multiplication applies a bijection of $G$ to both sides, Remark~\ref{rem:multiplying-sets}).
+\end{proof}
 
 \begin{thmbox}[{Five Characterizations of Normality}]\label{thm:five-characterizations-normality}
 Let $G$ be a group and $N$ a subgroup. The following are equivalent:
@@ -4451,7 +4652,7 @@ Let $N \trianglelefteq G$. With coset multiplication, $G/N$ is a group, with ide
 
 \begin{proof}
 \textit{Idea:} Each group axiom in $G/N$ follows from the same axiom in $G$, via representatives.\par
-The operation is well defined by When Coset Multiplication Is Well Defined (\ref{sec:multiplying-cosets}); the lecture's set-product proof is recorded as a remark after Remark~\ref{rem:multiplying-sets}. Every property reduces to the corresponding property of $G$ by computing with representatives: \emph{associativity}, $(g_1N\,g_2N)\,g_3N = (g_1g_2)g_3N = g_1(g_2g_3)N = g_1N\,(g_2N\,g_3N)$; \emph{identity}, $(eN)(gN) = gN = (gN)(eN)$; \emph{inverses}, $(gN)(g^{-1}N) = eN = (g^{-1}N)(gN)$. The count is the definition of the index together with Lagrange (\ref{sec:lagrange}).
+The operation is well defined by When Coset Multiplication Is Well Defined (\ref{sec:multiplying-cosets}); the lecture's set-product proof is Proposition~\ref{prop:normal-coset-multiplication-set-products}. Every property reduces to the corresponding property of $G$ by computing with representatives: \emph{associativity}, $(g_1N\,g_2N)\,g_3N = (g_1g_2)g_3N = g_1(g_2g_3)N = g_1N\,(g_2N\,g_3N)$; \emph{identity}, $(eN)(gN) = gN = (gN)(eN)$; \emph{inverses}, $(gN)(g^{-1}N) = eN = (g^{-1}N)(gN)$. The count is the definition of the index together with Lagrange (\ref{sec:lagrange}).
 \end{proof}
 
 \begin{propbox}[{Every Normal Subgroup Is a Kernel}]\label{prop:every-normal-subgroup-kernel}
@@ -4464,9 +4665,16 @@ Let $N \trianglelefteq G$. The canonical projection $\pi: G \to G/N$, $g \mapsto
 $\pi(g_1g_2) = g_1g_2N = (g_1N)(g_2N) = \pi(g_1)\pi(g_2)$ by the definition of the operation; $\pi$ is surjective by construction. The identity of $G/N$ is $N$, so $\operatorname{Ker}\pi = \{g : gN = N\} = \{g : g \in N\} = N$ (\ref{sec:cosets}).
 \end{proof}
 
-\begin{rembox}[Kernels and Normal Subgroups Are the Same Thing]\label{rem:kernels-normal-subgroups-same-thing}
-Together with Kernels Are Normal, the proposition says: the normal subgroups of $G$ are exactly the kernels of homomorphisms out of $G$. This is why normality, a condition that looks technical, is the natural one.
-\end{rembox}
+\begin{corbox}[{Kernels and Normal Subgroups Are the Same Thing}]\label{cor:quotient-normal-subgroups-exactly-kernels}
+A subset $N \subseteq G$ is a normal subgroup of $G$ if and only if $N = \operatorname{Ker}\alpha$ for some homomorphism $\alpha$ out of $G$.
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} Combine Kernels Are Normal with Every Normal Subgroup Is a Kernel.\par
+($\Leftarrow$) Kernels are normal subgroups (Kernels Are Normal, Proposition~\ref{prop:kernels-normal}). ($\Rightarrow$) If $N \trianglelefteq G$, then $N = \operatorname{Ker}\pi$ for the canonical projection $\pi: G \to G/N$ (Proposition~\ref{prop:every-normal-subgroup-kernel}).
+\end{proof}
+
+This is why normality, a condition that looks technical, is the natural one.
 
 \begin{exbox}[Quotient Groups]\label{ex:quotient-groups}
 \begin{enumerate}[nosep]
@@ -4519,9 +4727,15 @@ Let $S$ be a set of representatives for $G/N$ that is also a subgroup of $G$. Th
 The composite is the restriction of the projection $\pi$ to $S$, hence a homomorphism. The fibres of $\pi$ are the cosets of $N$, and $S$ contains exactly one element of each, so the composite is a bijection. For $S \cap N$: $N = eN$ is a coset, and $e \in S$ because $S$ is a subgroup; by uniqueness $e$ is the only element of $S$ in $N$. (This is also the special case $H = S$ of the Second Isomorphism Theorem, \ref{thm:second-isomorphism-theorem}.)
 \end{proof}
 
-\begin{rembox}[{Life Is Especially Nice When $S$ Is a Subgroup}]\label{rem:life-especially-nice-when-s-subgroup}
-In $S_3/A_3$ the representatives $\{e, (2\,3)\}$ form a subgroup, so $S_3/A_3 \cong \langle (2\,3) \rangle$. In $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\}$ no choice works: a subgroup set of representatives would have order $2$, and the only subgroup of order $2$ is $\{0, 2\} = N$ itself, which lies in a single coset. The quotient is still $\cong \mathbb{Z}/2\mathbb{Z}$; it just is not realized by a subgroup of $\mathbb{Z}/4\mathbb{Z}$.
-\end{rembox}
+Life is especially nice when $S$ is a subgroup, but a set of representatives forming a subgroup need not exist.
+
+\begin{exbox}[{$S_3/A_3$ Is Realized by the Subgroup $\langle (2\,3) \rangle$}]\label{ex:representatives-s3-a3-subgroup-23}
+In $S_3/A_3$ the representatives $S = \{e, (2\,3)\}$ of Example~\ref{ex:s3-a3} form a subgroup, namely $\langle (2\,3) \rangle$, since $(2\,3)^2 = e$. By Representatives Forming a Subgroup (Proposition~\ref{prop:representatives-forming-subgroup}), $S_3/A_3 \cong \langle (2\,3) \rangle$.
+\end{exbox}
+
+\begin{exbox}[{No Subgroup of Representatives for $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\}$}]\label{ex:representatives-z4-no-subgroup}
+In $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\}$ no choice of representatives is a subgroup. There are two cosets, $\{0, 2\}$ and $\{1, 3\}$, so a set of representatives has exactly $2$ elements, one from each coset; a subgroup set of representatives would therefore have order $2$. A subgroup of order $2$ consists of $0$ and an element $x \neq 0$ with $x + x = 0$; in $\mathbb{Z}/4\mathbb{Z}$ the only such $x$ is $2$ (as $1 + 1 = 2$ and $3 + 3 = 2$), so the only subgroup of order $2$ is $\{0, 2\} = N$ itself, which lies in a single coset. The quotient is still $\cong \mathbb{Z}/2\mathbb{Z}$ (Example~\ref{ex:z-4z-2z-4z}); it just is not realized by a subgroup of $\mathbb{Z}/4\mathbb{Z}$.
+\end{exbox}
 
 
 
@@ -4557,9 +4771,14 @@ G/N \arrow[r, "\beta", "\cong"'] & I = \operatorname{Im}\alpha \arrow[u, hook]
 \end{center}
 
 \begin{rembox}[{Images Are Quotients}]\label{rem:images-quotients}
-Whenever $G$ is mapped into another group --- into some $S_n$, some $GL_n(k)$, by various actions --- the image looks like a quotient of $G$, determined entirely by what is sent to the identity. So understanding all possible images of $G$ amounts to understanding its normal subgroups. Note the asymmetry: kernels are always normal, but images are merely subgroups and need not be normal; for example $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$, has image $\langle (1\,2) \rangle$, which is not normal (WS 6.5, \ref{sec:normal-sources}). This is one way in which groups are harder than vector spaces.
+Whenever $G$ is mapped into another group --- into some $S_n$, some $GL_n(k)$, by various actions --- the image looks like a quotient of $G$, determined entirely by what is sent to the identity. So understanding all possible images of $G$ amounts to understanding its normal subgroups. Note the asymmetry: kernels are always normal, but images are merely subgroups and need not be normal (Example~\ref{ex:first-iso-z2-to-s3-non-normal-image}; WS 6.5, \ref{sec:normal-sources}). This is one way in which groups are harder than vector spaces.
 \srcline{lecture}
 \end{rembox}
+
+\begin{exbox}[{$\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$: a Non-Normal Image}]\label{ex:first-iso-z2-to-s3-non-normal-image}
+The map $\alpha: \mathbb{Z}/2\mathbb{Z} \to S_3$, $\alpha(a) = (1\,2)^a$, is a homomorphism whose image is not normal. It is well defined because $(1\,2)^2 = e$: if $a' = a + 2m$, then $(1\,2)^{a'} = (1\,2)^a\big((1\,2)^2\big)^m = (1\,2)^a$. It is a homomorphism by the Exponent Laws, $(1\,2)^{a + b} = (1\,2)^a(1\,2)^b$. Its image is $\{e, (1\,2)\} = \langle (1\,2) \rangle$, which is not normal in $S_3$: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin \langle (1\,2) \rangle$ (Images Need Not Be Normal, Proposition~\ref{prop:images-need-not-normal}). Its kernel $\{0\}$ is, like every kernel, normal.
+\srcline{lecture}
+\end{exbox}
 
 \begin{corbox}[{$|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$}]\label{cor:g-ker-alpha-im-alpha}
 Let $G$ be finite and $\alpha: G \to H$ a homomorphism. Then $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$.
@@ -4811,10 +5030,22 @@ because $\pi(a_1) \in B_1$, $\pi(a_2) \in B_2$ and $B_1 \trianglelefteq B_2$. By
 So $f$ is an isomorphism (Definition~\ref{def:isomorphism-isomorphic-groups}), and $A_2/A_1 \cong B_2/B_1$.
 \end{proof}
 
-\begin{rembox}[{Indices Along the Correspondence}]\label{rem:indices-along-correspondence}
-By part (1), $A_2/A_1$ and $B_2/B_1$ are in bijection, so $[A_2 : A_1] = [B_2 : B_1]$: the correspondence preserves indices. For $G = S_4$ and $N = K$, with $S_4/K \cong S_3$, the subgroup $A_4$ corresponds to $A_3$ and $K$ to $\{e\}$: $[A_4 : K] = 3 = [A_3 : \{e\}]$ and $[S_4 : A_4] = 2 = [S_3 : A_3]$.
+\begin{corbox}[{Indices Along the Correspondence}]\label{cor:correspondence-preserves-indices}
+In the setting of Proposition~\ref{prop:quotients-along-correspondence}, $[A_2 : A_1] = [B_2 : B_1]$: the correspondence preserves indices.
 \srcline{review session 10/21}
-\end{rembox}
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} The index counts cosets, and part (1) matches the cosets.\par
+By part (1) of Proposition~\ref{prop:quotients-along-correspondence}, $A_2/A_1$ and $B_2/B_1$ are in bijection, so they have the same number of elements (in $\mathbb{Z}_{>0} \cup \{\infty\}$). The index is the number of left cosets (Definition~\ref{def:index}), so $[A_2 : A_1] = [B_2 : B_1]$.
+\end{proof}
+
+\begin{exbox}[{Indices Along the Correspondence for $S_4$ and $K$}]\label{ex:correspondence-indices-s4-k}
+Take $G = S_4$ and $N = K$. The pair-partition homomorphism $\alpha: S_4 \to S_3$ is surjective with kernel $K$, so $S_4/K \cong S_3$ via $gK \mapsto \alpha(g)$, and $\alpha(A_4) = A_3$ (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}). Under this identification the subgroup $A_4 \supseteq K$ corresponds to $A_4/K \leftrightarrow \alpha(A_4) = A_3$, the subgroup $K$ to $K/K \leftrightarrow \{e\}$, and $S_4$ to $S_3$. By Lagrange,
+\[ [A_4 : K] = \tfrac{12}{4} = 3 = [A_3 : \{e\}], \qquad [S_4 : A_4] = \tfrac{24}{12} = 2 = \tfrac{6}{3} = [S_3 : A_3], \]
+as Corollary~\ref{cor:correspondence-preserves-indices} predicts.
+\srcline{review session 10/21}
+\end{exbox}
 
 %% >>> ADDED: figure (not from lecture)
 \begin{center}
@@ -5251,7 +5482,7 @@ all of determinant $a^2 + b^2 > 0$. Hence every element of $C_{GL_2(\mathbb{R})}
 
 $S_3$ has exactly three normal subgroups, $\{e\}$, $A_3$ and $S_3$: $\langle (1\,2) \rangle$ is the standard non-normal subgroup, while $A_3$ is normal of index $2$ and $S_3/A_3 \cong \mathbb{Z}/2\mathbb{Z}$, realized by the subgroup $\langle (2\,3) \rangle$. $S_3$ also shows that a product $AB$ of subgroups need not be a subgroup, and it returns as the quotient $S_4/K$ and as $PSL_2(\mathbb{F}_2)$.
 
-Example~\ref{ex:non-normal-subgroup-s3} shows that $\langle (1\,2) \rangle$ is not normal, and Example~\ref{ex:index-2-examples}(1) that $\langle (1\,2\,3) \rangle$ is; Proposition~\ref{prop:images-need-not-normal} uses the inclusion of $\langle (1\,2) \rangle$ to show that images need not be normal; Example~\ref{ex:normal-subgroups-s3-s4} finds all normal subgroups from the conjugacy classes; Example~\ref{ex:quotient-groups}(3) (in the $\mathbb{Z}$ part), Example~\ref{ex:s3-a3} and the remark \emph{Life Is Especially Nice When $S$ Is a Subgroup} (\ref{sec:representatives}) compute $S_3/A_3$; Example~\ref{ex:second-isomorphism-theorem-action}(1) below obtains $\langle (1\,2) \rangle \cong S_3/A_3$ from the Second Isomorphism Theorem; Example~\ref{ex:ab-need-not-subgroup} (PS~4.1(1)) shows that $AB$ need not be a subgroup; Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3} and Example~\ref{ex:two-exceptions} (in the $S_4$ part) give $S_4/K \cong S_3$ and $PSL_2(\mathbb{F}_2) \cong S_3$.
+Example~\ref{ex:non-normal-subgroup-s3} shows that $\langle (1\,2) \rangle$ is not normal, and Example~\ref{ex:index-2-examples}(1) that $\langle (1\,2\,3) \rangle$ is; Proposition~\ref{prop:images-need-not-normal} uses the inclusion of $\langle (1\,2) \rangle$ to show that images need not be normal; Example~\ref{ex:normal-subgroups-s3-s4} finds all normal subgroups from the conjugacy classes; Example~\ref{ex:quotient-groups}(3) (in the $\mathbb{Z}$ part), Example~\ref{ex:s3-a3} and Example~\ref{ex:representatives-s3-a3-subgroup-23} (\ref{sec:representatives}) compute $S_3/A_3$; Example~\ref{ex:second-isomorphism-theorem-action}(1) below obtains $\langle (1\,2) \rangle \cong S_3/A_3$ from the Second Isomorphism Theorem; Example~\ref{ex:ab-need-not-subgroup} (PS~4.1(1)) shows that $AB$ need not be a subgroup; Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3} and Example~\ref{ex:two-exceptions} (in the $S_4$ part) give $S_4/K \cong S_3$ and $PSL_2(\mathbb{F}_2) \cong S_3$.
 
 \begin{exbox}[{The Second Isomorphism Theorem in Action}]\label{ex:second-isomorphism-theorem-action}
 \begin{enumerate}[nosep]
@@ -5294,7 +5525,7 @@ The remark \emph{Motivation: Quotients} (\ref{sec:multiplying-cosets}) takes $\m
 
 $\mathbb{Z}/4\mathbb{Z}$ is the first quotient computed with representatives: $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\}$ is cyclic of order $2$, but unlike $S_3/A_3$ no subgroup of representatives realizes it. The First Isomorphism Theorem explains Chapter~4's $\mathbb{Z}/6\mathbb{Z} \to U_7$, and the abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$.
 
-Example~\ref{ex:z-4z-2z-4z} computes the quotient; the remark \emph{Life Is Especially Nice When $S$ Is a Subgroup} (in the $S_3$ part) contrasts it with $S_3/A_3$; Example~\ref{ex:first-isomorphism-theorem-action}(3) (in the $A_n$ part) gives $(\mathbb{Z}/6\mathbb{Z})/\{[0], [3]\} \cong \mathbb{Z}/3\mathbb{Z}$; Theorem~\ref{thm:abelian-simple-groups} identifies the abelian simple groups.
+Example~\ref{ex:z-4z-2z-4z} computes the quotient; Example~\ref{ex:representatives-z4-no-subgroup} contrasts it with $S_3/A_3$; Example~\ref{ex:first-isomorphism-theorem-action}(3) (in the $A_n$ part) gives $(\mathbb{Z}/6\mathbb{Z})/\{[0], [3]\} \cong \mathbb{Z}/3\mathbb{Z}$; Theorem~\ref{thm:abelian-simple-groups} identifies the abelian simple groups.
 
 \textit{$\mathbb{Z}/n\mathbb{Z}$ and $U_n$ elsewhere: previous, Chapter~6 (\ref{sec:rev-ch6-zn}); no later appearance yet.}
 
@@ -5367,8 +5598,27 @@ It suffices to show $\chi(hgh^{-1}) = \chi(g)$ for all $g, h \in G$, since eleme
 \end{proof}
 
 \begin{rembox}[Where Commutativity of $A$ Is Needed]\label{rem:where-commutativity-a-needed}
-The middle step swaps $\chi(g)$ past $\chi(h^{-1})$, which requires $A$ abelian. For a homomorphism into a non-abelian target the conclusion fails: the identity map $S_3 \to S_3$ sends the conjugate elements $(1\,2)$ and $(1\,3)$ to different values. What survives in general is only that $\varphi$ carries conjugates to conjugates: $\varphi(hgh^{-1}) = \varphi(h)\varphi(g)\varphi(h)^{-1}$.
+The middle step swaps $\chi(g)$ past $\chi(h^{-1})$, which requires $A$ abelian. For a homomorphism into a non-abelian target the conclusion fails (Example~\ref{ex:identity-s3-separates-conjugates}). What survives in general is only that a homomorphism carries conjugates to conjugates (Lemma~\ref{lem:homomorphisms-carry-conjugates}).
 \end{rembox}
+
+\begin{exbox}[{The Identity of $S_3$ Separates Conjugates}]\label{ex:identity-s3-separates-conjugates}
+The identity map $\operatorname{id}: S_3 \to S_3$ is a homomorphism into a non-abelian group which takes different values on two conjugate elements, so Proposition~\ref{prop:characters-constant-conjugacy-classes} fails without the hypothesis that the target is abelian.
+\begin{itemize}[nosep]
+    \item \emph{$(1\,2)$ and $(1\,3)$ are conjugate.} With $h = (2\,3)$, Conjugation Relabels the Entries (Lemma~\ref{lem:conjugation-relabels-entries}) gives $h\,(1\,2)\,h^{-1} = (h(1)\ h(2)) = (1\,3)$.
+    \item \emph{Their values differ.} $\operatorname{id}((1\,2)) = (1\,2) \neq (1\,3) = \operatorname{id}((1\,3))$, since $(1\,2)$ fixes $3$ and $(1\,3)$ does not.
+\end{itemize}
+\end{exbox}
+
+\begin{lembox}[{Homomorphisms Carry Conjugates to Conjugates}]\label{lem:homomorphisms-carry-conjugates}
+Let $\varphi: G \to H$ be a homomorphism. Then for all $g, h \in G$,
+\[ \varphi(hgh^{-1}) = \varphi(h)\,\varphi(g)\,\varphi(h)^{-1}. \]
+In particular $\varphi$ maps each conjugacy class of $G$ into a conjugacy class of $H$.
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} apply the homomorphism property twice and use that $\varphi$ preserves inverses.\par
+Since $\varphi$ is a homomorphism, $\varphi(hgh^{-1}) = \varphi(h)\varphi(g)\varphi(h^{-1})$, and $\varphi(h^{-1}) = \varphi(h)^{-1}$ (Homomorphisms Preserve Identity and Inverses, Proposition~\ref{prop:homomorphisms-preserve-identity-inverses}). So the image of the conjugate $hgh^{-1}$ of $g$ is the conjugate of $\varphi(g)$ by $\varphi(h)$; hence all elements of the conjugacy class of $g$ are sent into the conjugacy class of $\varphi(g)$.
+\end{proof}
 
 \begin{thmbox}[{A Common Eigenvector Yields a Character}]\label{thm:common-eigenvector-yields-character}
 Let $k$ be a field, $V$ a $k$-vector space, and let $G$ act on $V$ by linear maps --- for instance $G$ a subgroup of $GL(V)$; in lecture, $k = \mathbb{C}$. Suppose $v \in V$ is nonzero and is an eigenvector of every $g \in G$, say $g v = \lambda(g)\,v$ for a scalar $\lambda(g) \in k$. Then $\lambda(g) \in k^\times$ for every $g$, and
@@ -5400,8 +5650,12 @@ This is the lecture's explanation of a fact that is a genuine surprise from the 
 \end{exbox}
 
 \begin{rembox}[One-Dimensional Representations]\label{rem:one-dimensional-representations}
-A character $G \to k^\times = GL_1(k)$ is precisely a $1$-dimensional representation of $G$. The theorem says that a line in $V$ fixed by all of $G$ (a common eigenvector spans one) carves a $1$-dimensional representation out of a larger one. For $S_n$ acting on polynomials, the line spanned by $\Delta$ gives the sign; the line spanned by any symmetric polynomial gives the trivial character $\sigma \mapsto 1$. Decomposing a representation into such pieces is the central problem of the second half of the course.
+A character $G \to k^\times = GL_1(k)$ is precisely a $1$-dimensional representation of $G$. The theorem says that a line in $V$ fixed by all of $G$ (a common eigenvector spans one) carves a $1$-dimensional representation out of a larger one. For $S_n$ acting on polynomials, the line spanned by $\Delta$ gives the sign (Example~\ref{ex:delta-sign-character}); the line spanned by any symmetric polynomial gives the trivial character $\sigma \mapsto 1$ (Example~\ref{ex:symmetric-polynomial-trivial-character}). Decomposing a representation into such pieces is the central problem of the second half of the course.
 \end{rembox}
+
+\begin{exbox}[{Symmetric Polynomials and the Trivial Character}]\label{ex:symmetric-polynomial-trivial-character}
+Let $V$ be a space of polynomials in $x_1, \ldots, x_n$ over $k$ that is stable under permuting the variables, for instance the homogeneous polynomials of a fixed degree $d$, with $S_n$ acting by permuting variables. Let $f \in V$ be a nonzero symmetric polynomial (Definition~\ref{def:symmetric-polynomial}); for example $f = (x_1 + \cdots + x_n)^d$ in degree $d$. By definition $\sigma \cdot f = f = 1 \cdot f$ for every $\sigma \in S_n$, so $f$ is a common eigenvector with $\lambda(\sigma) = 1$ for all $\sigma$. The character of Theorem~\ref{thm:common-eigenvector-yields-character} is therefore the trivial character $\sigma \mapsto 1$.
+\end{exbox}
 
 \section{Commutators}\label{sec:commutators}
 
@@ -5519,8 +5773,14 @@ Define $\iota_a: \{\pm 1\} \to A$ by $\iota_a(1) = e_A$ and $\iota_a(-1) = a$. I
 \end{proof}
 
 \begin{rembox}[{The Characters of $S_n$, Completely}]\label{rem:characters-sn-completely}
-PS 4.5 shows every character of $S_n$ is ``trivial or the sign in disguise''; the corollary shows every such candidate actually occurs. For $A = \mathbb{C}^\times$ the square roots of $1$ are $\pm 1$, so $S_n$ ($n \geq 2$) has exactly two characters with values in $\mathbb{C}^\times$: the trivial one and $\sgn$.
+PS 4.5 shows every character of $S_n$ is ``trivial or the sign in disguise''; the corollary shows every such candidate actually occurs. Example~\ref{ex:characters-sn-complex-values} works this out for $A = \mathbb{C}^\times$.
 \end{rembox}
+
+\begin{exbox}[{The Characters of $S_n$ with Values in $\mathbb{C}^\times$}]\label{ex:characters-sn-complex-values}
+Let $n \geq 2$. Then $S_n$ has exactly two characters with values in $\mathbb{C}^\times$: the trivial one and $\sgn$.
+
+By Corollary~\ref{cor:every-square-root-ea-gives-character} with $A = \mathbb{C}^\times$, the characters $S_n \to \mathbb{C}^\times$ correspond bijectively to the $a \in \mathbb{C}^\times$ with $a^2 = 1$. In the field $\mathbb{C}$, $a^2 = 1$ means $(a - 1)(a + 1) = 0$, i.e.\ $a = 1$ or $a = -1$: the square roots of $1$ are $\pm 1$. For $a = 1$, $\chi_1$ is the trivial character. For $a = -1$, $\chi_{-1}$ is $1$ on $A_n$ and $-1$ off $A_n$, which is $\sgn$. These two are different, since $\sgn((1\,2)) = -1$.
+\end{exbox}
 
 \begin{propbox}[{Normal Subgroups with Trivial Intersection Commute}]\label{prop:normal-subgroups-trivial-intersection-commute}
 Let $M$ and $N$ be normal subgroups of $G$ with $M \cap N = \{e\}$. Then $mn = nm$ for all $m \in M$ and $n \in N$.
@@ -5533,8 +5793,20 @@ Let $x = mnm^{-1}n^{-1}$. Grouping as $x = (mnm^{-1})\,n^{-1}$: $mnm^{-1} \in N$
 \[ mn = mn\,(m^{-1}n^{-1}nm) = (mnm^{-1}n^{-1})\,nm = nm. \]
 \end{proof}
 
+The proof shows more:
+
+\begin{lembox}[{Commutators of Two Normal Subgroups Lie in Their Intersection}]\label{lem:commutators-two-normal-subgroups}
+Let $M$ and $N$ be normal subgroups of $G$. Then every commutator $mnm^{-1}n^{-1}$ with $m \in M$ and $n \in N$ lies in $M \cap N$.
+\srcline{the proof of PS 4.2}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} group $mnm^{-1}n^{-1}$ in two ways.\par
+Let $x = mnm^{-1}n^{-1}$. As $x = (mnm^{-1})\,n^{-1}$ with $mnm^{-1} \in N$ ($N$ is normal) and $n^{-1} \in N$, $x \in N$. As $x = m\,(nm^{-1}n^{-1})$ with $nm^{-1}n^{-1} \in M$ ($M$ is normal) and $m \in M$, $x \in M$. So $x \in M \cap N$. (This is the first half of the proof of Proposition~\ref{prop:normal-subgroups-trivial-intersection-commute}, which did not use $M \cap N = \{e\}$.)
+\end{proof}
+
 \begin{rembox}[{Commutators of Normal Subgroups}]\label{rem:commutators-normal-subgroups}
-The proof shows more: for normal $M, N$, every commutator $mnm^{-1}n^{-1}$ with $m \in M$, $n \in N$ lies in $M \cap N$. When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$; this is the first step toward recognizing $G$ as a direct product $M \times N$ when also $MN = G$ (not from class), carried out in Internal Direct Products Are Direct Products (Theorem~\ref{thm:internal-direct-product}, WS 11.1).
+When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$ (Lemma~\ref{lem:commutators-two-normal-subgroups} and Proposition~\ref{prop:normal-subgroups-trivial-intersection-commute}); this is the first step toward recognizing $G$ as a direct product $M \times N$ when also $MN = G$ (not from class), carried out in Internal Direct Products Are Direct Products (Theorem~\ref{thm:internal-direct-product}, WS 11.1).
 \end{rembox}
 \textit{Problem Set 5, Problems 3 and 4.}
 
@@ -5559,8 +5831,18 @@ Let $n \geq 5$. Then $[A_n, A_n] = A_n$, and every character $\psi: A_n \to A$ i
 By the lemma (Lemma~\ref{lem:3-cycles-commutators-an}) every $3$-cycle lies in $[A_n, A_n]$, and $A_n$ is generated by $3$-cycles (Generators of $A_n$, Theorem~\ref{thm:generators-an}); so $[A_n, A_n] = A_n$. A character kills every commutator (Characters Kill Commutators, Proposition~\ref{prop:characters-kill-commutators}), so $\psi$ is trivial on the $3$-cycles; as a homomorphism, it is then trivial on all of $A_n$, every element being a product of $3$-cycles.
 \end{proof}
 
-\begin{rembox}[{Small $n$, and the Link to Simplicity}]\label{rem:small-n-simplicity}
-The bound $n \geq 5$ is sharp. $A_3 \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so the identity map is a nontrivial character. $A_4$ has the nontrivial character $\alpha|_{A_4}: A_4 \to A_3$ of The Pair-Partition Homomorphism (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}), so $[A_4, A_4] \subseteq K \neq A_4$. For $n \geq 5$ the theorem also follows from simplicity (Theorem~\ref{thm:an-simple-n-ge-5}): $[A_n, A_n]$ is normal and, since $A_n$ is not abelian, nontrivial, hence equal to $A_n$. PS 5.3 gives a much shorter direct proof.
+The bound $n \geq 5$ in Theorem~\ref{thm:characters-an-trivial} is sharp, as the next two examples show.
+
+\begin{exbox}[{A Nontrivial Character of $A_3$}]\label{ex:nontrivial-character-a3}
+$A_3 = \{e, (1\,2\,3), (1\,3\,2)\} = \langle (1\,2\,3) \rangle \cong \mathbb{Z}/3\mathbb{Z}$ is cyclic, hence abelian. So the identity map $A_3 \to A_3$ is a homomorphism into an abelian group, i.e.\ a character (Example~\ref{ex:characters}(4)), and it is nontrivial because $A_3 \neq \{e\}$. Consistently, $[A_3, A_3] = \{e\} \neq A_3$ (Proposition~\ref{prop:properties-commutator-subgroup}(3)).
+\end{exbox}
+
+\begin{exbox}[{A Nontrivial Character of $A_4$}]\label{ex:nontrivial-character-a4}
+Let $\alpha: S_4 \to S_P \cong S_3$ be The Pair-Partition Homomorphism (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}). Its restriction $\alpha|_{A_4}$ is a homomorphism with kernel $A_4 \cap K = K$, so by the First Isomorphism Theorem (Theorem~\ref{thm:first-isomorphism-theorem}) its image is a subgroup of $S_P \cong S_3$ isomorphic to $A_4/K \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}$ (by that proposition). A subgroup of order $3$ of $S_3$ is generated by a $3$-cycle, and both $3$-cycles lie in $A_3$; so the image is the alternating subgroup, written $A_3$, which is cyclic and hence abelian. So $\alpha|_{A_4}: A_4 \to A_3$ is a character of $A_4$, nontrivial since its image has $3$ elements. By Proposition~\ref{prop:properties-commutator-subgroup}(2), $[A_4, A_4] \subseteq \operatorname{Ker}\alpha|_{A_4} = K \neq A_4$.
+\end{exbox}
+
+\begin{rembox}[{The Link to Simplicity}]\label{rem:small-n-simplicity}
+For $n \geq 5$ the theorem also follows from simplicity (Theorem~\ref{thm:an-simple-n-ge-5}): $[A_n, A_n]$ is normal and, since $A_n$ is not abelian, nontrivial, hence equal to $A_n$. PS 5.3 gives a much shorter direct proof.
 \end{rembox}
 
 \begin{exbox}[{Products of Commutators That Are Not Commutators}]\label{ex:products-commutators-not-commutators}
@@ -5581,7 +5863,7 @@ Identify $T(0, 0, M)$ with the matrix $M \in \mathbb{R}^{p \times r} \cong \math
     \item the \emph{commutators} correspond to the set $C = \{AY - XB\}$;
     \item \emph{products} of commutators correspond to sums of elements of $C$, and every $M$ is such a sum, $M = \sum_i (A_iY_i - X_iB_i)$ (part (2) of Example~\ref{ex:products-commutators-not-commutators}).
 \end{itemize}
-So $[G, G] = \langle C \rangle$ is all of $\mathbb{R}^{pr}$. The set $C$ is closed under scaling, $\lambda(AY - XB) = (\lambda A)Y - (\lambda X)B$, and consists of matrices of rank $\leq 2q$; when $2q < \min(p, r)$, as in part (3), it is a thin, cone-shaped subset. In fact $C$ is exactly the set of matrices of rank $\leq 2q$ \textit{(not from class)}: such an $M$ factors as $M = UV$ with $U$ of size $p \times 2q$ and $V$ of size $2q \times r$, and writing $U = [\,A \mid -X\,]$ and $V = \begin{bmatrix} Y \\ B \end{bmatrix}$ gives $M = AY - XB$. (So when $2q \geq \min(p, r)$, every element of $[G, G]$ is a commutator.)
+So $[G, G] = \langle C \rangle$ is all of $\mathbb{R}^{pr}$. The set $C$ is closed under scaling, $\lambda(AY - XB) = (\lambda A)Y - (\lambda X)B$, and consists of matrices of rank $\leq 2q$; when $2q < \min(p, r)$, as in part (3), it is a thin, cone-shaped subset. In fact $C$ is exactly the set of matrices of rank $\leq 2q$, so that when $2q \geq \min(p, r)$ every element of $[G, G]$ is a commutator (Proposition~\ref{prop:block-group-commutators-rank}, after the figure).
 \srcline{review session 10/21}
 \end{rembox}
 
@@ -5607,6 +5889,24 @@ So $[G, G] = \langle C \rangle$ is all of $\mathbb{R}^{pr}$. The set $C$ is clos
 \captionof{figure}{The commutators of the group of PS 5.4 form a cone $C$ inside $\mathbb{R}^{pr}$ (sketch, after the review session's picture; the case $2q < \min(p, r)$). The cone is not closed under addition, but its sums fill the whole space, which is $[G,G]$.}
 \end{center}
 
+\begin{propbox}[{The Commutators of the Block Group Are the Matrices of Rank at Most $2q$}]\label{prop:block-group-commutators-rank}
+In the group $G$ of Example~\ref{ex:products-commutators-not-commutators}, identify $T(0, 0, M)$ with $M \in \mathbb{R}^{p \times r}$. Then the commutators of $G$ correspond to the set
+\[ C = \{AY - XB : A, X \in \mathbb{R}^{p \times q},\ Y, B \in \mathbb{R}^{q \times r}\} = \{M \in \mathbb{R}^{p \times r} : \operatorname{rank} M \leq 2q\}. \]
+In particular, if $2q \geq \min(p, r)$, every element of $[G, G]$ is a commutator.
+\srcline{review session 10/21; the inclusion $\supseteq$ not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} a matrix of rank at most $2q$ factors through $\mathbb{R}^{2q}$; split the factorization into two blocks of size $q$.\par
+By part (1) of Example~\ref{ex:products-commutators-not-commutators}, the commutator of $T(A, B, C')$ and $T(X, Y, Z)$ is $T(0, 0, AY - XB)$, and $A, B, X, Y$ can be chosen freely; so the commutators correspond exactly to the elements of the set $\{AY - XB\}$.
+
+($\subseteq$) As in part (3) of that example, $\operatorname{rank}(AY - XB) \leq \operatorname{rank}(AY) + \operatorname{rank}(XB) \leq q + q = 2q$, since $AY$ and $XB$ are products through $\mathbb{R}^q$.
+
+($\supseteq$) Let $M$ have rank $k \leq 2q$. Choose a basis $u_1, \ldots, u_k$ of the column space of $M$ and let $U$ be the $p \times 2q$ matrix with columns $u_1, \ldots, u_k, 0, \ldots, 0$. Each column of $M$ is a linear combination of $u_1, \ldots, u_k$; recording its coefficients in the corresponding column of a $2q \times r$ matrix $V$ (with zeros in rows $k+1, \ldots, 2q$) gives $M = UV$. Write $U = [\,A \mid -X\,]$ with $A, X$ of size $p \times q$, and $V = \begin{bmatrix} Y \\ B \end{bmatrix}$ with $Y, B$ of size $q \times r$. Block multiplication gives $M = UV = AY + (-X)B = AY - XB \in C$.
+
+Finally, if $2q \geq \min(p, r)$, every $M \in \mathbb{R}^{p \times r}$ has rank $\leq \min(p, r) \leq 2q$, so lies in $C$; since $[G, G] = \{T(0, 0, M)\}$ (part (2) of the example), every element of $[G, G]$ is a commutator.
+\end{proof}
+
 \textit{Lecture, Fri Oct 9.}
 
 \begin{propbox}[{Abelian Quotients and Commutators}]\label{prop:abelian-quotients-commutators}
@@ -5628,9 +5928,25 @@ So $gN$ and $hN$ commute iff this is the identity $N$ of $H/N$, i.e.\ iff $ghg^{
 \textbf{(2) $\Leftrightarrow$ (3).} $D(H)$ is the subgroup generated by the commutators (Definition~\ref{def:commutator-subgroup}), i.e.\ the smallest subgroup containing them. So a subgroup $N$ contains all commutators iff it contains $D(H)$.
 \end{proof}
 
-\begin{rembox}[{$D(H)$ Is the Smallest Normal Subgroup with Abelian Quotient}]\label{rem:derived-smallest-normal}
-With $N = D(H)$, the proposition recovers The Abelianization Is Abelian (Proposition~\ref{prop:abelianization-abelian}). Conversely, it says that $D(H)$ is contained in every normal subgroup with abelian quotient. So $H^{\mathrm{ab}} = H/D(H)$ is the largest abelian quotient of $H$. This is the fact used in \ref{sec:solvable}: in a chain with abelian quotients, every commutator of $G_j$ lies in $G_{j-1}$.
-\end{rembox}
+\begin{corbox}[{$D(H)$ Is the Smallest Normal Subgroup with Abelian Quotient}]\label{cor:derived-subgroup-smallest-abelian-quotient}
+Let $H$ be a group.
+\begin{enumerate}
+    \item $H/D(H)$ is abelian; this recovers The Abelianization Is Abelian (Proposition~\ref{prop:abelianization-abelian}).
+    \item If $N \trianglelefteq H$ and $H/N$ is abelian, then $D(H) \subseteq N$.
+\end{enumerate}
+So $H^{\mathrm{ab}} = H/D(H)$ is the largest abelian quotient of $H$: for every $N$ as in (2), $hD(H) \mapsto hN$ is a well-defined surjective homomorphism $H^{\mathrm{ab}} \to H/N$.
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} apply Proposition~\ref{prop:abelian-quotients-commutators} with $N = D(H)$, and in the direction (1) $\Rightarrow$ (3).\par
+\textbf{(1)} $D(H)$ is normal in $H$ (Proposition~\ref{prop:properties-commutator-subgroup}(1)) and $D(H) \subseteq D(H)$, so (3) $\Rightarrow$ (1) of Proposition~\ref{prop:abelian-quotients-commutators} with $N = D(H)$ shows that $H/D(H)$ is abelian.
+
+\textbf{(2)} This is (1) $\Rightarrow$ (3) of the same proposition.
+
+\textbf{Largest abelian quotient.} Let $N$ be as in (2), so $D(H) \subseteq N$. If $hD(H) = h'D(H)$, then $h^{-1}h' \in D(H) \subseteq N$, so $hN = h'N$: the map is well defined. It is a homomorphism, since $hD(H) \cdot h'D(H) = hh'D(H) \mapsto hh'N = hN \cdot h'N$, and it is surjective, since $hN$ is the image of $hD(H)$.
+\end{proof}
+
+This is the fact used in \ref{sec:solvable}: in a chain with abelian quotients, every commutator of $G_j$ lies in $G_{j-1}$.
 
 
 % ============================================================================
@@ -5649,8 +5965,17 @@ in which each $G_{j-1}$ is normal in $G_j$ and each quotient $G_j/G_{j-1}$ is ab
 \end{defbox}
 
 \begin{rembox}[{Normal in the Next Term Only}]\label{rem:normal-in-next-term}
-Each $G_{j-1}$ is required to be normal in $G_j$, not in $G$. For example, in the chain for $S_4$ below, $K$ is normal in $A_4$ (and happens to be normal in $S_4$ as well), but in general the terms of such a chain need not be normal in $G$. Normality is not transitive: $A \trianglelefteq B \trianglelefteq C$ does not imply $A \trianglelefteq C$ (Example~\ref{ex:normality-not-transitive}, PS 6.1). Every abelian group is solvable, via the chain $\{e\} \trianglelefteq G$.
+Each $G_{j-1}$ is required to be normal in $G_j$, not in $G$. For example, in the chain for $S_4$ below, $K$ is normal in $A_4$ (and happens to be normal in $S_4$ as well), but in general the terms of such a chain need not be normal in $G$. Normality is not transitive: $A \trianglelefteq B \trianglelefteq C$ does not imply $A \trianglelefteq C$ (Example~\ref{ex:normality-not-transitive}, PS 6.1).
 \end{rembox}
+
+\begin{propbox}[{Abelian Groups Are Solvable}]\label{prop:abelian-groups-solvable}
+Every abelian group $G$ is solvable, via the chain $\{e\} \trianglelefteq G$.
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} the one-step chain has the single quotient $G/\{e\} \cong G$.\par
+In the chain $\{e\} = G_0 \trianglelefteq G_1 = G$, the subgroup $\{e\}$ is normal in $G$, since $g e g^{-1} = e$ for every $g$. The only quotient is $G/\{e\}$, which is isomorphic to $G$ via $g\{e\} \mapsto g$ (each coset $g\{e\} = \{g\}$ has one element), hence abelian. So the chain is as in Definition~\ref{def:solvable-group}.
+\end{proof}
 
 \begin{propbox}[{$S_3$ and $S_4$ Are Solvable}]\label{prop:s3-s4-solvable}
 The chains
@@ -5736,14 +6061,28 @@ So each quotient of the chain for $S$ is (isomorphic to) a \emph{subgroup} of th
 \textbf{(2)} Let $\varphi: G_j \to \pi(G_j)/\pi(G_{j-1})$, $\varphi(x) = \pi(x)\pi(G_{j-1})$, the restriction of $\pi$ to $G_j$ followed by the projection; it is a surjective homomorphism, and $G_{j-1} \subseteq \operatorname{Ker}\varphi$ because $\pi(G_{j-1})$ is the identity of the target. \emph{Well defined on cosets:} if $xG_{j-1} = yG_{j-1}$, then $y = xn$ with $n \in G_{j-1}$, so $\varphi(y) = \varphi(x)\varphi(n) = \varphi(x)$. The induced map is a homomorphism because $\varphi$ is, and surjective because $\varphi$ is.
 \end{proof}
 
+\begin{propbox}[{The Quotients of the Image Chain in $G/N$}]\label{prop:image-chain-quotients-g-mod-n}
+Let $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_m = G$ be a chain, $N \trianglelefteq G$, $Q = G/N$, and $\pi: G \to Q$ the projection. Then for $1 \leq j \leq m$ \[ \pi(G_j) \cong G_j/(G_j \cap N) \cong G_jN/N \qquad\text{and}\qquad \pi(G_j)/\pi(G_{j-1}) \cong (G_jN/N)\big/(G_{j-1}N/N) \cong G_jN/G_{j-1}N. \]
+\srcline{lecture 10/9}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} First, then Second, then Third Isomorphism Theorem.\par
+\emph{First formula.} The restriction of $\pi$ to $G_j$ is a homomorphism with image $\pi(G_j)$ and kernel $G_j \cap N$, so $\pi(G_j) \cong G_j/(G_j \cap N)$ by the First Isomorphism Theorem (Theorem~\ref{thm:first-isomorphism-theorem}); and $G_j/(G_j \cap N) \cong G_jN/N$ by the Second Isomorphism Theorem (Theorem~\ref{thm:second-isomorphism-theorem}). In fact $\pi(G_j) = \{gN : g \in G_j\}$ equals $G_jN/N = \{xN : x \in G_jN\}$ as a set of cosets, since $(gn)N = gN$ for $n \in N$.
+
+\emph{Second formula.} By the normality step in the proof of Quotients of Solvable Groups Are Solvable (Proposition~\ref{prop:quotients-solvable}), which uses only $G_{j-1} \trianglelefteq G_j$, $\pi(G_{j-1})$ is normal in $\pi(G_j)$. Its preimage under the surjection $G_jN \to \pi(G_j)$, $x \mapsto xN$, is $\{x \in G_jN : xN \in \pi(G_{j-1})\} = G_{j-1}N$, so $G_{j-1}N \trianglelefteq G_jN$ (Preimages and Images of Normal Subgroups, Proposition~\ref{prop:preimages-images-normal-subgroups}(1)). Now $N \subseteq G_{j-1}N$ are normal subgroups of $G_jN$, and the Third Isomorphism Theorem (Theorem~\ref{thm:third-isomorphism-theorem}) in the group $G_jN$ gives
+\[ \pi(G_j)/\pi(G_{j-1}) = (G_jN/N)\big/(G_{j-1}N/N) \cong G_jN/G_{j-1}N. \qedhere \]
+\end{proof}
+
 \begin{rembox}[{The Trap: Do Not Cancel $N$}]\label{rem:do-not-cancel-n}
-For $Q = G/N$, the isomorphism theorems describe the pieces of the chain for $Q$:
-\[ \pi(G_j) \cong G_j/(G_j \cap N) \cong G_jN/N \]
-(First, then Second Isomorphism Theorem, Theorems~\ref{thm:first-isomorphism-theorem} and~\ref{thm:second-isomorphism-theorem}), and so, by the Third Isomorphism Theorem (Theorem~\ref{thm:third-isomorphism-theorem}),
-\[ \pi(G_j)/\pi(G_{j-1}) \cong (G_jN/N)\big/(G_{j-1}N/N) \cong G_jN/G_{j-1}N. \]
-It is tempting to ``cancel $N$'' and conclude $\pi(G_j)/\pi(G_{j-1}) \cong G_j/G_{j-1}$. This is false in general: for $N = G$, every $\pi(G_j)$ is trivial, while $G_j/G_{j-1}$ need not be. The correct relation is the surjection of part (2) of Subquotients: An Injection and a Surjection (Proposition~\ref{prop:subquotient-maps}): $G_j/G_{j-1}$ maps \emph{onto} $\pi(G_j)/\pi(G_{j-1})$, with a kernel that can be nontrivial. The lecture's advice: rather than chase isomorphism-theorem formulas, write down the obviously well-defined injection or surjection.
+For $Q = G/N$, Proposition~\ref{prop:image-chain-quotients-g-mod-n} describes the pieces of the chain for $Q$: $\pi(G_j)/\pi(G_{j-1}) \cong G_jN/G_{j-1}N$. It is tempting to ``cancel $N$'' and conclude $\pi(G_j)/\pi(G_{j-1}) \cong G_j/G_{j-1}$. This is false in general (Example~\ref{ex:cancelling-n-fails}). The correct relation is the surjection of part (2) of Subquotients: An Injection and a Surjection (Proposition~\ref{prop:subquotient-maps}): $G_j/G_{j-1}$ maps \emph{onto} $\pi(G_j)/\pi(G_{j-1})$, with a kernel that can be nontrivial. The lecture's advice: rather than chase isomorphism-theorem formulas, write down the obviously well-defined injection or surjection.
 \srcline{lecture 10/9}
 \end{rembox}
+
+\begin{exbox}[{Cancelling $N$ Fails for $N = G$}]\label{ex:cancelling-n-fails}
+Take $N = G$. Then $Q = G/G$ is the trivial group, so every $\pi(G_j)$ is trivial and every quotient $\pi(G_j)/\pi(G_{j-1})$ is trivial (consistently with Proposition~\ref{prop:image-chain-quotients-g-mod-n}: $G_jN/G_{j-1}N = G/G$). But $G_j/G_{j-1}$ need not be trivial: for $G = S_3$ with the chain $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ (Proposition~\ref{prop:s3-s4-solvable}), $G_1/G_0 \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}$. So $\pi(G_1)/\pi(G_0) \not\cong G_1/G_0$. The surjection $G_j/G_{j-1} \twoheadrightarrow \pi(G_j)/\pi(G_{j-1})$ of Proposition~\ref{prop:subquotient-maps}(2) here has all of $G_j/G_{j-1}$ as its kernel.
+\srcline{lecture 10/9}
+\end{exbox}
 
 \section{The Derived Series}\label{sec:derived-series}
 
@@ -5798,9 +6137,25 @@ Let $n \geq 5$ and suppose $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G
 \end{proof}
 
 \begin{rembox}[{The Derived Series as a Crank}]\label{rem:derived-series-crank}
-The definition of solvability asks us to hunt for a chain, as in WS 9.1. The derived series is the mechanical alternative: turn the crank $H \mapsto D(H)$ and see whether $\{e\}$ is reached. For a finite group each step either shrinks the group or changes nothing, and once $D_{k+1}(G) = D_k(G)$ the series is stuck forever. So a finite group's series either reaches $\{e\}$ (solvable) or gets stuck at a nontrivial group $H$ with $D(H) = H$ (not solvable): $S_5 \trianglerighteq A_5 \trianglerighteq A_5 \trianglerighteq \cdots$. The lecture noted that infinite groups can instead descend forever without reaching $\{e\}$ (free groups are an example; not from class).
+The definition of solvability asks us to hunt for a chain, as in WS 9.1. The derived series is the mechanical alternative: turn the crank $H \mapsto D(H)$ and see whether $\{e\}$ is reached. For a finite group the series either reaches $\{e\}$ (solvable) or gets stuck at a nontrivial group $H$ with $D(H) = H$ (not solvable), by Proposition~\ref{prop:derived-series-finite-stabilizes}: $S_5 \trianglerighteq A_5 \trianglerighteq A_5 \trianglerighteq \cdots$ (Example~\ref{ex:derived-series-sn}(3)). The lecture noted that infinite groups can instead descend forever without reaching $\{e\}$ (free groups are an example; not from class).
 \srcline{lecture 10/9}
 \end{rembox}
+
+\begin{propbox}[{The Derived Series of a Finite Group Stabilizes}]\label{prop:derived-series-finite-stabilizes}
+Let $G$ be a finite group.
+\begin{enumerate}
+    \item $D_{k+1}(G) \subseteq D_k(G)$ for every $k$, and there is a $k$ with $D_{k+1}(G) = D_k(G)$; for such $k$, $D_j(G) = D_k(G)$ for all $j \geq k$.
+    \item With $H = D_k(G)$ for such a $k$: if $H = \{e\}$, then $G$ is solvable; otherwise $H$ is a nontrivial group with $D(H) = H$, and $G$ is not solvable.
+\end{enumerate}
+\srcline{lecture 10/9}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} the orders $|D_k(G)|$ can drop only finitely often; once a step changes nothing, no later step does.\par
+\textbf{(1)} For any group $L$, $D(L)$ is a subgroup of $L$, so $D_{k+1}(G) = D(D_k(G)) \subseteq D_k(G)$. Hence $|G| = |D_0(G)| \geq |D_1(G)| \geq \cdots \geq 1$, a weakly decreasing sequence of positive integers, which can decrease strictly only finitely many times. So for some $k$, $|D_{k+1}(G)| = |D_k(G)|$, and since $D_{k+1}(G) \subseteq D_k(G)$ are finite, $D_{k+1}(G) = D_k(G)$. If $D_j(G) = D_k(G)$ for some $j \geq k$, then $D_{j+1}(G) = D(D_j(G)) = D(D_k(G)) = D_{k+1}(G) = D_k(G)$; by induction $D_j(G) = D_k(G)$ for all $j \geq k$.
+
+\textbf{(2)} If $H = \{e\}$, then $D_k(G) = \{e\}$ and $G$ is solvable by Solvability via the Derived Series (Theorem~\ref{thm:solvable-derived-series}). If $H \neq \{e\}$, then $D(H) = D_{k+1}(G) = D_k(G) = H$. Every term of the series is $\neq \{e\}$: for $j \geq k$, $D_j(G) = H$ by (1), and for $j < k$, $D_j(G) \supseteq D_k(G) = H$. So $D_N(G) \neq \{e\}$ for every $N$, and $G$ is not solvable by the same theorem.
+\end{proof}
 % ============================================================================
 % SECTION: COMPOSITION SERIES (Lecture and Worksheet 12, Wed Oct 28)
 % ============================================================================
@@ -5828,12 +6183,22 @@ A subnormal series is a \textbf{quasi-composition series} if every quotient $G_j
 \end{defbox}
 
 \begin{rembox}[{Quasi-Composition Series}]\label{rem:quasi-composition-cleanup}
-The term is the lecturer's own and is not standard. (WS 12 says ``a composition series where \ldots''; a subnormal series is meant.) A trivial quotient $G_j/G_{j-1}$ just means $G_{j-1} = G_j$, a repeated term. Deleting the repeated terms turns a quasi-composition series into a composition series with the same simple quotients. Quasi-composition series are convenient in the proof below, where trivial quotients arise naturally.
+The term is the lecturer's own and is not standard. (WS 12 says ``a composition series where \ldots''; a subnormal series is meant.) A trivial quotient $G_j/G_{j-1}$ just means $G_{j-1} = G_j$, a repeated term, and deleting the repeated terms gives a composition series (Lemma~\ref{lem:quasi-composition-delete-repeats}). Quasi-composition series are convenient in the proof below, where trivial quotients arise naturally.
 \srcline{lecture 10/28}
 \end{rembox}
 
+\begin{lembox}[{Deleting Repeated Terms of a Quasi-Composition Series}]\label{lem:quasi-composition-delete-repeats}
+Let $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ be a quasi-composition series. A quotient $G_j/G_{j-1}$ is trivial if and only if $G_{j-1} = G_j$. Deleting every term equal to its predecessor gives a composition series of $G$ whose quotients are the nontrivial (that is, simple) quotients of the original series, in the same order.
+\srcline{lecture 10/28}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} removing a repeated term merges a trivial step into its neighbour without changing that neighbour's quotient.\par
+$G_j/G_{j-1}$ is trivial iff $xG_{j-1} = G_{j-1}$ for every $x \in G_j$, iff every $x \in G_j$ lies in $G_{j-1}$, iff $G_j = G_{j-1}$ (as $G_{j-1} \subseteq G_j$). Suppose $G_{j-1} = G_j$ with $j < N$, and delete $G_j$. The new consecutive pair $G_{j-1} \trianglelefteq G_{j+1}$ is literally the old pair $G_j \trianglelefteq G_{j+1}$, with the same quotient; the other pairs are unchanged; and the trivial quotient $G_j/G_{j-1}$ has disappeared. (If $j = N$, delete $G_{N-1}$ instead, which equals $G_N = G$, with the same effect.) Repeating this finitely many times removes all trivial quotients; each remaining quotient was simple or trivial and is not trivial, so it is simple. The ends $\{e\}$ and $G$ remain, so the result is a composition series.
+\end{proof}
+
 \begin{rembox}[{Relation to Solvable Groups}]\label{rem:composition-solvable}
-\textit{(Not from class.)} The chain in the definition of a solvable group (Definition~\ref{def:solvable-group}) is a subnormal series whose quotients are abelian; a composition series is one whose quotients are simple. Since the abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ (Theorem~\ref{thm:abelian-simple-groups}), a composition series all of whose factors are cyclic of prime order shows that $G$ is solvable. Conversely, a finite solvable group has such a composition series: refine each abelian quotient $G_j/G_{j-1}$ by a composition series of it (Lemma~\ref{lem:finite-composition-series}) and pull back, as in the proof of that lemma. Combined with the Jordan--H\"older theorem: \emph{a finite group is solvable if and only if all of its composition factors are cyclic of prime order.} For example, $\{e\} \trianglelefteq \langle (1\,2)(3\,4) \rangle \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$, with $K$ the Klein four-group, has factors $\mathbb{Z}/2, \mathbb{Z}/2, \mathbb{Z}/3, \mathbb{Z}/2$, while $A_5$ has the single factor $A_5$.
+\textit{(Not from class.)} The chain in the definition of a solvable group (Definition~\ref{def:solvable-group}) is a subnormal series whose quotients are abelian; a composition series is one whose quotients are simple. Since the abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ (Theorem~\ref{thm:abelian-simple-groups}), the two notions meet: \emph{a finite group is solvable if and only if all of its composition factors are cyclic of prime order} (Proposition~\ref{prop:solvable-iff-prime-composition-factors}, after the Jordan--H\"older theorem, with the examples $S_4$ and $A_5$).
 \end{rembox}
 
 \begin{propbox}[{$\mathbb{Z}$ Has No Composition Series}]\label{prop:z-no-composition-series}
@@ -5943,7 +6308,7 @@ using $N_2N_1 = N_1N_2 = G$ from (1). Since $N_2 \cap N_1 = N_1 \cap N_2$, this 
 \end{proof}
 
 \begin{rembox}[{The Quotient by $N_1 \cap N_2$}]\label{rem:two-simple-quotients-product}
-In this situation one can further show that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$. \textit{(Proof not from class.)} In $\bar G = G/(N_1 \cap N_2)$, the images $\bar N_i = N_i/(N_1 \cap N_2)$ are normal, they intersect trivially, since $\bar N_1 \cap \bar N_2 = (N_1 \cap N_2)/(N_1 \cap N_2)$, and $\bar N_1 \bar N_2 = \bar G$ because $N_1 N_2 = G$. So $\bar G \cong \bar N_1 \times \bar N_2$ by Internal Direct Products Are Direct Products (Theorem~\ref{thm:internal-direct-product}, in Chapter~10).
+In this situation one can further show that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$. This needs Internal Direct Products Are Direct Products (Theorem~\ref{thm:internal-direct-product}, in Chapter~10), and is proved there as Corollary~\ref{cor:two-simple-quotients-product}.
 \end{rembox}
 
 % ============================================================================
@@ -6422,6 +6787,42 @@ Then $Y_j$ is spanned by the $e_k$ with $\sigma^{-1}(k) \leq j$, so $Z_{ij} = X_
 
 \textit{(Figure after the board's cube, with the grid added.)} The lecture's three-dimensional picture, $n = 3$ and $\sigma = (2\,3)$: the line $X_1 = Y_1 = \langle e_1 \rangle$ lies in two different planes, $X_2 = \langle e_1, e_2 \rangle$ and $Y_2 = \langle e_1, e_3 \rangle$. In the grid (right; $X$-series on the top row, $Y$-series on the right column) equalities appear inside the grid even though none occur along its edges: for instance $Z_{22} = X_2 \cap Y_2 = \langle e_1 \rangle = Z_{11}$. The column changeovers are at rows $\tau(1) = 1$, $\tau(2) = 3$, $\tau(3) = 2$, which is $\sigma^{-1} = (2\,3)$.
 
+\begin{propbox}[{Solvable Groups and Composition Factors of Prime Order}]\label{prop:solvable-iff-prime-composition-factors}
+Let $G$ be a finite group.
+\begin{enumerate}
+    \item If $G$ has a composition series all of whose factors are cyclic of prime order, then $G$ is solvable.
+    \item If $G$ is solvable, then $G$ has such a composition series.
+    \item Hence $G$ is solvable if and only if all of its composition factors are cyclic of prime order.
+\end{enumerate}
+\srcline{not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} cyclic factors are abelian; conversely, refine each abelian quotient by a composition series of it and pull back; Jordan--H\"older makes ``the'' composition factors well defined.\par
+\textbf{(1)} Each $\mathbb{Z}/p\mathbb{Z}$ is abelian, so such a composition series is a chain as in Definition~\ref{def:solvable-group}.
+
+\textbf{(2)} Let $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ have abelian quotients. Fix $j$. The finite group $G_j/G_{j-1}$ has a composition series $\{e\} = Q_0 \trianglelefteq \cdots \trianglelefteq Q_b = G_j/G_{j-1}$ (Finite Groups Have Composition Series, Lemma~\ref{lem:finite-composition-series}). With $\pi_j: G_j \to G_j/G_{j-1}$ the projection, the argument in the proof of that lemma shows that
+\[ G_{j-1} = \pi_j^{-1}(Q_0) \trianglelefteq \pi_j^{-1}(Q_1) \trianglelefteq \cdots \trianglelefteq \pi_j^{-1}(Q_b) = G_j \]
+is a chain with quotients $\pi_j^{-1}(Q_i)/\pi_j^{-1}(Q_{i-1}) \cong Q_i/Q_{i-1}$. Each $Q_i/Q_{i-1}$ is simple, and abelian, being a quotient of a subgroup of the abelian group $G_j/G_{j-1}$; so it is $\cong \mathbb{Z}/p\mathbb{Z}$ for a prime $p$ (Abelian Simple Groups, Theorem~\ref{thm:abelian-simple-groups}). Inserting these chains between $G_{j-1}$ and $G_j$ for every $j$ gives a composition series of $G$ all of whose factors are cyclic of prime order.
+
+\textbf{(3)} $G$ has a composition series (Lemma~\ref{lem:finite-composition-series}), and by the Jordan--H\"older Theorem (Theorem~\ref{thm:jordan-holder}) all of its composition series have the same factors up to isomorphism and order. If $G$ is solvable, the series from (2) has factors cyclic of prime order, hence so do all. Conversely, if the composition factors are cyclic of prime order, $G$ is solvable by (1).
+\end{proof}
+
+\begin{exbox}[{A Composition Series of $S_4$}]\label{ex:composition-series-s4}
+The chain $\{e\} \trianglelefteq \langle (1\,2)(3\,4) \rangle \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$, with $K$ the Klein four-group (Definition~\ref{def:klein-four-group}), is a composition series with factors $\mathbb{Z}/2, \mathbb{Z}/2, \mathbb{Z}/3, \mathbb{Z}/2$.
+\begin{itemize}[nosep]
+    \item \emph{Normality.} $\langle (1\,2)(3\,4) \rangle = \{e, (1\,2)(3\,4)\}$ has index $2$ in $K$, and $A_4$ has index $2$ in $S_4$, so both are normal (Subgroups of Index $2$ Are Normal, Proposition~\ref{prop:subgroups-index-2-normal}); $K \trianglelefteq A_4$ by The Pair-Partition Homomorphism (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}).
+    \item \emph{Quotients.} By Lagrange (Theorem~\ref{thm:lagrange}) the quotients have orders $2$, $4/2 = 2$, $12/4 = 3$ and $24/12 = 2$, all prime, so each is cyclic of prime order (Groups of Prime Order, Theorem~\ref{thm:groups-prime-order}), hence simple (Theorem~\ref{thm:abelian-simple-groups}).
+\end{itemize}
+By Proposition~\ref{prop:solvable-iff-prime-composition-factors}(1) this shows again that $S_4$ is solvable, and by the Jordan--H\"older theorem every composition series of $S_4$ has these factors.
+\srcline{not from class}
+\end{exbox}
+
+\begin{exbox}[{The Composition Factor of $A_5$}]\label{ex:composition-factor-a5}
+$A_5$ is simple (Theorem~\ref{thm:an-simple-n-ge-5}), so $\{e\} \trianglelefteq A_5$ is a composition series with the single factor $A_5$; by the Jordan--H\"older theorem every composition series of $A_5$ has exactly this one factor. $A_5$ has order $60$, which is not prime, so the factor is not cyclic of prime order, and by Proposition~\ref{prop:solvable-iff-prime-composition-factors}(3) $A_5$ is not solvable, in agreement with Corollary~\ref{cor:an-sn-not-solvable}.
+\srcline{not from class}
+\end{exbox}
+
 \section{\texorpdfstring{$S_3$, $S_4$, $A_n$ and $GL_n$}{S₃, S₄, Aₙ and GLₙ}}\label{sec:rev-ch9}
 
 \textit{The recurring groups as the first part of Chapter~9 saw them: characters take values in abelian groups, so they cannot separate conjugates and they kill commutators; and the solvable groups are those built from abelian pieces; composition series break them into simple pieces, the composition factors. Each part gathers the chapter's items about one group, in order.}
@@ -6430,7 +6831,7 @@ Then $Y_j$ is spanned by the $e_k$ with $\sigma^{-1}(k) \leq j$, so $Z_{ij} = X_
 
 $S_3$ shows why a character needs an abelian target: the identity map $S_3 \to S_3$ separates the conjugate transpositions $(1\,2)$ and $(1\,3)$.
 
-The remark \emph{Where Commutativity of $A$ Is Needed} (\ref{sec:characters}) gives the example.
+Example~\ref{ex:identity-s3-separates-conjugates} gives the example.
 
 $S_3$ is solvable without being abelian: the chain $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ has the abelian quotients $\mathbb{Z}/3\mathbb{Z}$ and $\{\pm 1\}$, and the derived series $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$ reaches $\{e\}$ in two steps.
 
@@ -6446,7 +6847,7 @@ $S_4$ is solvable through $\{e\} \trianglelefteq K \trianglelefteq A_4 \triangle
 
 Proposition~\ref{prop:s3-s4-solvable} (WS 9.1) gives the chain; Example~\ref{ex:derived-series-sn}(2) computes the derived series, finding $(1\,2)(3\,4)$ as a commutator of two $3$-cycles of $A_4$.
 
-Refining $\{e\} \trianglelefteq K$ by $\langle (1\,2)(3\,4) \rangle$ gives a composition series of $S_4$, with factors $\mathbb{Z}/2, \mathbb{Z}/2, \mathbb{Z}/3, \mathbb{Z}/2$ (the remark \emph{Relation to Solvable Groups} in \ref{sec:composition-series}); by the Jordan--H\"older theorem (Theorem~\ref{thm:jordan-holder}) every composition series of $S_4$ has these factors.
+Refining $\{e\} \trianglelefteq K$ by $\langle (1\,2)(3\,4) \rangle$ gives a composition series of $S_4$, with factors $\mathbb{Z}/2, \mathbb{Z}/2, \mathbb{Z}/3, \mathbb{Z}/2$ (Example~\ref{ex:composition-series-s4}); by the Jordan--H\"older theorem (Theorem~\ref{thm:jordan-holder}) every composition series of $S_4$ has these factors.
 
 $A_4$ also appears in the $A_n$ part below, as the case $n = 4$ of the commutator computations.
 
@@ -6456,9 +6857,9 @@ $A_4$ also appears in the $A_n$ part below, as the case $n = 4$ of the commutato
 
 $A_n$ is the commutator subgroup of $S_n$: every $3$-cycle is a commutator and no transposition is. Hence every character of $S_n$ is trivial on $A_n$, and the abelianization of $S_n$ is $S_n/A_n \cong \{\pm 1\}$. For $n \geq 5$, $A_n$ is also its own commutator subgroup, so its characters are trivial; $A_3$ and $A_4$ show that the bound is sharp.
 
-Propositions~\ref{prop:3-cycles-commutators} and~\ref{prop:transpositions-not-commutators} (PS~2.4) separate $3$-cycles from transpositions; Theorem~\ref{thm:commutator-subgroup-sn} (PS~4.5) proves $[S_n, S_n] = A_n$; Example~\ref{ex:abelianization-sn} computes the abelianization; Lemma~\ref{lem:3-cycles-commutators-an} and Theorem~\ref{thm:characters-an-trivial} (PS~5.3) prove $[A_n, A_n] = A_n$ for $n \geq 5$; the remark \emph{Small $n$, and the Link to Simplicity} (\ref{sec:commutators}) treats $A_3$ and $A_4$ and compares with the simplicity of $A_n$.
+Propositions~\ref{prop:3-cycles-commutators} and~\ref{prop:transpositions-not-commutators} (PS~2.4) separate $3$-cycles from transpositions; Theorem~\ref{thm:commutator-subgroup-sn} (PS~4.5) proves $[S_n, S_n] = A_n$; Example~\ref{ex:abelianization-sn} computes the abelianization; Lemma~\ref{lem:3-cycles-commutators-an} and Theorem~\ref{thm:characters-an-trivial} (PS~5.3) prove $[A_n, A_n] = A_n$ for $n \geq 5$; Examples~\ref{ex:nontrivial-character-a3} and~\ref{ex:nontrivial-character-a4} treat $A_3$ and $A_4$, and the remark \emph{The Link to Simplicity} (\ref{sec:commutators}) compares with the simplicity of $A_n$.
 
-For $n \geq 5$, $A_n$ is not solvable, and hence neither is $S_n$: a simple non-abelian group has no chain with abelian quotients, and the derived series of $S_n$ stalls at $A_n = D(A_n)$. So $S_n$ is solvable exactly for $n \leq 4$. For $n \geq 5$, $\{e\} \trianglelefteq A_n \trianglelefteq S_n$ is a composition series, with factors $A_n$ and $\mathbb{Z}/2\mathbb{Z}$; the factor $A_n$ is not cyclic of prime order, as non-solvability requires (the remark \emph{Relation to Solvable Groups} in \ref{sec:composition-series}).
+For $n \geq 5$, $A_n$ is not solvable, and hence neither is $S_n$: a simple non-abelian group has no chain with abelian quotients, and the derived series of $S_n$ stalls at $A_n = D(A_n)$. So $S_n$ is solvable exactly for $n \leq 4$. For $n \geq 5$, $\{e\} \trianglelefteq A_n \trianglelefteq S_n$ is a composition series, with factors $A_n$ and $\mathbb{Z}/2\mathbb{Z}$; the factor $A_n$ is not cyclic of prime order, as non-solvability requires (Proposition~\ref{prop:solvable-iff-prime-composition-factors}).
 
 Example~\ref{ex:derived-series-sn}(3) shows the derived series stalling; Corollary~\ref{cor:an-sn-not-solvable} proves non-solvability from the simplicity of $A_n$ and Proposition~\ref{prop:subgroups-solvable}.
 
@@ -6725,9 +7126,14 @@ By WS 10.2 (Proposition~\ref{prop:unitriangular-sylow}), $P$ is a Sylow $p$-subg
 \end{proof}
 
 \begin{rembox}[{A Surprising Consequence}]\label{rem:sylow-surprising}
-The corollary is not obvious from linear algebra. For instance, any subgroup with $16$ elements of $GL_{10^6}(\mathbb{F}_2)$, however its matrices look, becomes a group of upper triangular matrices after a single change of basis. The proof gives no formula for the change of basis; it comes from a counting argument.
+The corollary is not obvious from linear algebra (Example~\ref{ex:order-16-subgroups-gl-f2}). The proof gives no formula for the change of basis; it comes from a counting argument.
 \srcline{lecture 10/12}
 \end{rembox}
+
+\begin{exbox}[{Subgroups of Order $16$ in $GL_{10^6}(\mathbb{F}_2)$}]\label{ex:order-16-subgroups-gl-f2}
+Any subgroup $Q$ with $16$ elements of $GL_{10^6}(\mathbb{F}_2)$, however its matrices look, becomes a group of upper triangular matrices after a single change of basis. Indeed, $|Q| = 16 = 2^4$, so $Q$ is a $2$-subgroup of $GL_n(\mathbb{F}_2)$ with $n = 10^6$, and Corollary~\ref{cor:p-subgroups-gln-unitriangular} (with $p = 2$) gives $\gamma \in GL_n(\mathbb{F}_2)$ with $\gamma^{-1}Q\gamma \subseteq P$, the unitriangular matrices, which are upper triangular. Replacing each $q \in Q$ by $\gamma^{-1}q\gamma$ is the change of basis to the basis formed by the columns of $\gamma$.
+\srcline{lecture 10/12}
+\end{exbox}
 
 \begin{propbox}[{Sylow Subgroups of a Subgroup}]\label{prop:sylow-of-subgroup}
 Let $\Gamma$ be a finite group with a Sylow $p$-subgroup $\Pi$, and let $G$ be a subgroup of $\Gamma$.
@@ -6909,13 +7315,14 @@ Let $p < q$ be primes with $q \not\equiv 1 \pmod p$, and let $|G| = pq$. Then $G
 \[ G \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z} \cong \mathbb{Z}/pq\mathbb{Z}. \]
 \end{proof}
 
-\begin{rembox}[{When $q \equiv 1 \pmod p$}]\label{rem:order-pq-hypothesis}
-\textit{(Not from lecture.)} The hypothesis cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic. There $n_3 = 1$ but $n_2 = 3$ (Example~\ref{ex:sylow-s3-s4}), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step. What remains is a semidirect product: $S_3 \cong \mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ (Example~\ref{ex:s3-external-semidirect}).
-\end{rembox}
+\begin{exbox}[{When $q \equiv 1 \pmod p$: $S_3$}]\label{ex:order-pq-hypothesis-s3}
+The hypothesis $q \not\equiv 1 \pmod p$ of Proposition~\ref{prop:groups-order-pq} cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic, as it is not even abelian: $(1\,2)(2\,3) = (1\,2\,3) \neq (1\,3\,2) = (2\,3)(1\,2)$. There $n_3 = 1$ but $n_2 = 3$ (Example~\ref{ex:sylow-s3-s4}), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step. What remains is a semidirect product: $S_3 \cong \mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ (Example~\ref{ex:s3-external-semidirect}).
+\srcline{not from lecture}
+\end{exbox}
 
 \subsection{\texorpdfstring{Flags and the Sylow Subgroups of $GL_n(\mathbb{F}_p)$}{Flags and the Sylow Subgroups of GLn(Fp)}}\label{sub:flags-sylow-gln}
 
-\textit{Source: office hours (Wed Nov 4), from the board. The board gives the orders and the orbit counts for $n = 2, 3$; the identification with flags, the Bruhat remark and the link to the Sylow count are not from class.}
+\textit{Source: office hours (Wed Nov 4), from the board. The board gives the orders and the orbit counts for $n = 2, 3$; the identification with flags, the Bruhat decomposition and the link to the Sylow count are not from class.}
 
 Throughout, $G = GL_n(\mathbb{F}_p)$, $B \leq G$ is the subgroup of invertible upper triangular matrices, and $P \leq B$ is the unitriangular group of WS 10.2 (Proposition~\ref{prop:unitriangular-sylow}), a Sylow $p$-subgroup of $G$. The board writes $U$ for $P$.
 
@@ -7144,10 +7551,24 @@ labels & $(1\,2)$, \ $e$ & $(1\,3)$; \ $(1\,2\,3)$, $(1\,3\,2)$; \ $(1\,2)$, $(2
 \end{tikzpicture}
 \end{center}
 
-\begin{rembox}[{The Bruhat Decomposition}]\label{rem:bruhat-decomposition}
-The pattern is general. Viewing each $w \in S_n$ as a permutation matrix, $G = \bigsqcup_{w \in S_n} BwB$ (the \textbf{Bruhat decomposition}), and each $BwB/B \subseteq G/B$ is a single $P$-orbit of size $p^{\ell(w)}$, where $\ell(w)$ is the number of inversions of $w$. Hence
-\[ |G/B| = \sum_{w \in S_n} p^{\ell(w)} = (1 + p)(1 + p + p^2) \cdots (1 + p + \cdots + p^{n-1}), \]
-the ``$p$-factorial'', which at $p = 1$ gives $|S_n| = n!$. For $n = 3$: $(1 + p)(1 + p + p^2) = p^3 + 2p^2 + 2p + 1$, as on the board. The label $w$ of a flag is its relative position with respect to $\mathcal{F}_0$: up to replacing $w$ by $w^{-1}$ (a matter of conventions), it is the permutation that the Jordan--H\"older pipes read off from the two flags in Example~\ref{ex:jh-flags}. (Not proved here.)
+\begin{propbox}[{The Bruhat Decomposition}]\label{prop:bruhat-decomposition-gln}
+Let $G = GL_n(\mathbb{F}_p)$, with $B$ and $P$ as above, and view each $w \in S_n$ as a permutation matrix.
+\begin{enumerate}
+    \item $G = \bigsqcup_{w \in S_n} BwB$ (the \textbf{Bruhat decomposition}).
+    \item Each $BwB/B \subseteq G/B$ is a single $P$-orbit of size $p^{\ell(w)}$, where $\ell(w)$ is the number of inversions of $w$.
+    \item Hence
+    \[ |G/B| = \sum_{w \in S_n} p^{\ell(w)} = (1 + p)(1 + p + p^2) \cdots (1 + p + \cdots + p^{n-1}), \]
+    the ``$p$-factorial''.
+\end{enumerate}
+\srcline{not from class}
+\end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+Not proved in the course; the standard proof brings a matrix to the form $bwb'$ by row and column reduction with upper triangular matrices.
+\end{proof}
+
+\begin{rembox}[{Flags and Relative Position}]\label{rem:bruhat-decomposition}
+The pattern of the board is general (Proposition~\ref{prop:bruhat-decomposition-gln}). At $p = 1$ the $p$-factorial gives $|S_n| = n!$. For $n = 3$: $(1 + p)(1 + p + p^2) = p^3 + 2p^2 + 2p + 1$, as on the board. The label $w$ of a flag is its relative position with respect to $\mathcal{F}_0$: up to replacing $w$ by $w^{-1}$ (a matter of conventions), it is the permutation that the Jordan--H\"older pipes read off from the two flags in Example~\ref{ex:jh-flags}. (Not proved here.)
 \srcline{not from class}
 \end{rembox}
 
@@ -7321,8 +7742,17 @@ Which numbers $n \leq 100$ are the order of a simple group? The slides list $n =
 \end{proof}
 
 \begin{rembox}[{Notation for This Section}]\label{rem:small-simple-notation}
-Throughout, $G$ is finite, $p$ is a prime dividing $|G|$, and $|G| = p^k m$ with $p \nmid m$. Write $n_p$ for the number of Sylow $p$-subgroups of $G$. The conjugate $gPg^{-1}$ of a Sylow $p$-subgroup $P$ is again a Sylow $p$-subgroup, since conjugation by $g$ is an isomorphism (Proposition~\ref{prop:conjugation-automorphism}); so $G$ acts on the set of Sylow $p$-subgroups by conjugation, $g \cdot P = gPg^{-1}$, as in the proof of Theorem~\ref{thm:sylow-third}.
+Throughout, $G$ is finite, $p$ is a prime dividing $|G|$, and $|G| = p^k m$ with $p \nmid m$. Write $n_p$ for the number of Sylow $p$-subgroups of $G$. $G$ acts on the set of Sylow $p$-subgroups by conjugation, $g \cdot P = gPg^{-1}$ (Lemma~\ref{lem:conjugation-permutes-sylow-subgroups}), as in the proof of Theorem~\ref{thm:sylow-third}.
 \end{rembox}
+
+\begin{lembox}[{Conjugation Permutes the Sylow $p$-Subgroups}]\label{lem:conjugation-permutes-sylow-subgroups}
+If $P$ is a Sylow $p$-subgroup of $G$ and $g \in G$, then $gPg^{-1}$ is again a Sylow $p$-subgroup. Hence $g \cdot P = gPg^{-1}$ is an action of $G$ on the set of Sylow $p$-subgroups.
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} conjugation by $g$ is an automorphism, so it preserves subgroups and their orders.\par
+Conjugation $c_g: x \mapsto gxg^{-1}$ is an isomorphism $G \to G$ (Conjugation Is an Automorphism, Proposition~\ref{prop:conjugation-automorphism}). So $gPg^{-1} = c_g(P)$ is a subgroup of $G$ (the image of a subgroup under a homomorphism, Proposition~\ref{prop:images-preimages-subgroups}), and $|gPg^{-1}| = |P| = p^k$ because $c_g$ is injective; hence $gPg^{-1}$ is a Sylow $p$-subgroup. The action axioms hold: $e \cdot P = P$, and $g \cdot (h \cdot P) = g(hPh^{-1})g^{-1} = (gh)P(gh)^{-1} = (gh) \cdot P$.
+\end{proof}
 
 \begin{defbox}[{Normalizer}]\label{def:normalizer}
 Let $H \leq G$. The \textbf{normalizer} of $H$ in $G$ is
@@ -7331,9 +7761,26 @@ the stabilizer of $H$ under the action of $G$ on its subgroups by conjugation.
 \srcline{lecture 10/23}
 \end{defbox}
 
-\begin{rembox}[{Basic Properties of the Normalizer}]\label{rem:normalizer-properties}
-$N(H)$ is a subgroup of $G$, since stabilizers are subgroups (Proposition~\ref{prop:stabilizer-subgroup}); it contains $H$, since $hHh^{-1} = H$ for $h \in H$; and $H \trianglelefteq N(H)$, directly from the definition. $H$ is normal in $G$ (Definition~\ref{def:normal-subgroup}) if and only if $N(H) = G$.
-\end{rembox}
+\begin{propbox}[{Basic Properties of the Normalizer}]\label{prop:normalizer-basic-properties}
+Let $H \leq G$.
+\begin{enumerate}
+    \item $N(H)$ is a subgroup of $G$.
+    \item $H \subseteq N(H)$.
+    \item $H \trianglelefteq N(H)$.
+    \item $H$ is normal in $G$ (Definition~\ref{def:normal-subgroup}) if and only if $N(H) = G$.
+\end{enumerate}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $N(H)$ is a stabilizer, and normality is the condition $gHg^{-1} = H$ for all $g$.\par
+\textbf{(1)} $N(H)$ is the stabilizer of $H$ for the conjugation action of $G$ on its subgroups (Definition~\ref{def:normalizer}), and stabilizers are subgroups (Proposition~\ref{prop:stabilizer-subgroup}).
+
+\textbf{(2)} For $h \in H$, $hHh^{-1} \subseteq H$ because $H$ is closed under products and inverses; applying this to $h^{-1}$ gives $h^{-1}Hh \subseteq H$, so $H = h(h^{-1}Hh)h^{-1} \subseteq hHh^{-1}$. Hence $hHh^{-1} = H$ and $h \in N(H)$.
+
+\textbf{(3)} By (2), $H$ is a subgroup of $N(H)$, and for $g \in N(H)$, $gHg^{-1} = H$; in particular $ghg^{-1} \in H$ for all $h \in H$, which is normality of $H$ in $N(H)$.
+
+\textbf{(4)} If $N(H) = G$, then $gHg^{-1} = H$ for all $g \in G$, so $H \trianglelefteq G$. Conversely, if $H \trianglelefteq G$, then $gHg^{-1} \subseteq H$ for every $g$, and applying this to $g^{-1}$ gives $H \subseteq gHg^{-1}$ as in (2); so $gHg^{-1} = H$ for every $g$, i.e.\ $N(H) = G$.
+\end{proof}
 
 \begin{propbox}[{$n_p$ and the Normalizer}]\label{prop:np-normalizer-index}
 Let $P$ be a Sylow $p$-subgroup of $G$. Then $n_p = [G : N(P)]$, and
@@ -7389,9 +7836,16 @@ If $n_p = 1$, then the Sylow $p$-subgroup $P$ is normal in $G$. If moreover $|G|
 $P$ is normal by Corollary~\ref{cor:sylow-normal-unique}(2): $gPg^{-1}$ is a Sylow $p$-subgroup for every $g \in G$, and $P$ is the only one, so $gPg^{-1} = P$. Since $p$ divides $|G|$, $|P| = p^k > 1$; if $|G|$ is not a power of $p$, then $m > 1$, so $|P| = p^k < |G|$.
 \end{proof}
 
-\begin{rembox}[{The Sylow Test}]\label{rem:sylow-test}
-So to show that no group of order $n$ is simple, it suffices to find a prime $p \mid n$ such that the only divisor $d$ of $m$ with $d \equiv 1 \pmod p$ is $d = 1$ (Proposition~\ref{prop:np-normalizer-index}, Corollary~\ref{cor:unique-sylow-not-simple}). This rules out a large part of the table.
-\end{rembox}
+\begin{corbox}[{The Sylow Test}]\label{cor:sylow-test-simplicity}
+Let $n = p^k m$ with $p$ prime, $p \nmid m$ and $m > 1$ (that is, $n$ is not a power of $p$). If the only divisor $d$ of $m$ with $d \equiv 1 \pmod p$ is $d = 1$, then no group of order $n$ is simple.
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} the constraints on $n_p$ leave only $n_p = 1$.\par
+Let $|G| = n$. By Proposition~\ref{prop:np-normalizer-index}, $n_p$ divides $m$ and $n_p \equiv 1 \pmod p$, so $n_p = 1$ by hypothesis. Since $|G|$ is not a power of $p$, Corollary~\ref{cor:unique-sylow-not-simple} shows that $G$ is not simple.
+\end{proof}
+
+This rules out a large part of the table.
 
 \begin{exbox}[{Order $21$}]\label{ex:order-21}
 $21 = 3 \cdot 7$. The candidates are: $n_3 \mid 7$ and $n_3 \equiv 1 \pmod 3$, so $n_3 \in \{1, 7\}$; $n_7 \mid 3$ and $n_7 \equiv 1 \pmod 7$, so $n_7 = 1$ ($3 \not\equiv 1 \pmod 7$). Hence the Sylow $7$-subgroup is normal, and no group of order $21$ is simple. (Marked $\diamondsuit 7$ on the slides.) Both values of $n_3$ occur: $n_3 = 1$ for $\mathbb{Z}/21\mathbb{Z}$, and $n_3 = 7$ for $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$ (Example~\ref{ex:z7-semidirect-z3}).
@@ -7537,8 +7991,32 @@ disjoint transpositions. Since $\operatorname{sgn}$ is a homomorphism and every 
 Thus $\ker(\operatorname{sgn} \circ \phi)$ is a normal subgroup of $G$ other than $\{e\}$ and $G$, so $G$ is not simple.
 \end{proof}
 
-\begin{rembox}[{A Normal Subgroup of Index $2$}]\label{rem:order-2-mod-4-index-two}
-\textit{(Not from class.)} The proof gives more: $\operatorname{Ker}(\operatorname{sgn} \circ \phi)$ has index $2$ (Lemma~\ref{lem:leave-an}), so every group of order $2m$ with $m > 1$ odd has a normal subgroup of index $2$. The element $t$ also comes directly from Cauchy's theorem (Theorem~\ref{thm:cauchys-theorem}). The cycle count of part (2) works for any $g \in G$: if $g$ has order $d$, the orbits of $x \mapsto gx$ are the right cosets $\langle g \rangle x$, each with $d$ elements, so $\phi(g)$ is a product of $|G|/d$ disjoint $d$-cycles and $\operatorname{sgn}\phi(g) = (-1)^{(d-1)|G|/d}$. For $d = 2$ and $|G|/2$ odd, this is $-1$.
+The proof gives more:
+
+\begin{corbox}[{Groups of Order $2m$, $m$ Odd, Have a Normal Subgroup of Index $2$}]\label{cor:order-2m-odd-index-two}
+Let $m > 1$ be odd. Every group $G$ of order $2m$ has a normal subgroup of index $2$, namely $\operatorname{Ker}(\operatorname{sgn} \circ \phi)$ for the left-multiplication embedding $\phi: G \to S_{2m}$.
+\srcline{not from class}
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} the proof of Proposition~\ref{prop:order-2-mod-4} shows that $\phi(G) \not\subseteq A_{2m}$; then Lemma~\ref{lem:leave-an} gives the index.\par
+Write $m = 2k + 1$; then $|G| = 4k + 2 \equiv 2 \pmod 4$ and $|G| > 2$ since $m > 1$. Parts (1) and (2) of the proof of Proposition~\ref{prop:order-2-mod-4} give $t \in G$ with $\operatorname{sgn}\phi(t) = -1$, so $\phi(G) \not\subseteq A_{2m}$. By Homomorphisms That Leave $A_N$ (Lemma~\ref{lem:leave-an}), $\phi^{-1}(A_{2m}) = \operatorname{Ker}(\operatorname{sgn} \circ \phi)$ is a normal subgroup of $G$ of index $2$.
+\end{proof}
+
+\begin{lembox}[{The Sign of Left Multiplication}]\label{lem:sign-left-multiplication}
+Let $G$ be finite, $\phi: G \to S_{|G|}$ the left-multiplication embedding, $\phi(g)(x) = gx$, and let $g \in G$ have order $d$. Then the orbits of $\phi(g)$ are the right cosets $\langle g \rangle x$, each with $d$ elements, $\phi(g)$ is a product of $|G|/d$ disjoint $d$-cycles, and
+\[ \operatorname{sgn}\phi(g) = (-1)^{(d-1)|G|/d}. \]
+For $d = 2$ and $|G|/2$ odd, this is $-1$.
+\srcline{not from class}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} on each right coset of $\langle g \rangle$, left multiplication by $g$ is a single $d$-cycle.\par
+Following $x$ under $\phi(g)$ gives $x \mapsto gx \mapsto g^2x \mapsto \cdots$, so the orbit of $x$ is $\{g^ix : i \in \mathbb{Z}\} = \langle g \rangle x$. Its elements $x, gx, \ldots, g^{d-1}x$ are distinct, since $g^ix = g^jx$ gives $g^i = g^j$, and $g^dx = x$; so on $\langle g \rangle x$, $\phi(g)$ acts as the $d$-cycle $(x\ \ gx\ \ \cdots\ \ g^{d-1}x)$. The right cosets of $\langle g \rangle$ partition $G$ into $|G|/d$ sets of size $d$, so $\phi(g)$ is a product of $|G|/d$ disjoint $d$-cycles. A $d$-cycle has sign $(-1)^{d-1}$ and $\operatorname{sgn}$ is a homomorphism (\ref{sec:sign}), so $\operatorname{sgn}\phi(g) = \big((-1)^{d-1}\big)^{|G|/d} = (-1)^{(d-1)|G|/d}$. For $d = 2$ the exponent is $|G|/2$, which is odd by assumption, giving $-1$.
+\end{proof}
+
+\begin{rembox}[{Another Source for $t$}]\label{rem:order-2-mod-4-index-two}
+\textit{(Not from class.)} The element $t$ of part (1) also comes directly from Cauchy's theorem (Theorem~\ref{thm:cauchys-theorem}), and part (2) is the case $d = 2$ of Lemma~\ref{lem:sign-left-multiplication}.
 \end{rembox}
 
 \begin{propbox}[{There Is No Simple Group of Order $56$}]\label{prop:no-simple-56}
@@ -7590,8 +8068,30 @@ is a disjoint union. Therefore
 But $P_1 \cup P_2 \cup Q$ is a subset of $G$, so $|P_1 \cup P_2 \cup Q| \leq |G| = 56$, a contradiction. Hence there is no simple group of order $56$.
 \end{proof}
 
+The count shows more. First, the general tool:
+
+\begin{lembox}[{Counting Elements of Order $p$}]\label{lem:count-elements-order-p}
+If the Sylow $p$-subgroups of $G$ have order $p$, then any two of them intersect trivially, and $G$ has exactly $n_p(p - 1)$ elements of order $p$.
+\srcline{not from class}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} distinct subgroups of prime order meet trivially, and each contains $p - 1$ elements of order $p$.\par
+Let $Q \neq Q'$ be Sylow $p$-subgroups. $Q \cap Q'$ is a subgroup of $Q$, so its order divides $p$ (Lagrange, Theorem~\ref{thm:lagrange}); order $p$ would give $Q = Q \cap Q' = Q'$. So $Q \cap Q' = \{e\}$. Each non-identity element of a group of prime order $p$ has order $p$ (its order divides $p$ and is not $1$), so each Sylow $p$-subgroup contains exactly $p - 1$ elements of order $p$. Conversely, an element $x$ of order $p$ generates a subgroup $\langle x \rangle$ of order $p$, which is a Sylow $p$-subgroup since these have order $p$. So the elements of order $p$ are the non-identity elements of the $n_p$ Sylow $p$-subgroups, which are pairwise disjoint sets of $p - 1$ elements: there are $n_p(p - 1)$ of them.
+\end{proof}
+
+\begin{propbox}[{Groups of Order $56$ Have a Normal Sylow Subgroup}]\label{prop:order-56-normal-sylow}
+In a group of order $56$, $n_7 = 8$ forces $n_2 = 1$. So every group of order $56$ has a normal Sylow $7$-subgroup or a normal Sylow $2$-subgroup.
+\srcline{not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} eight Sylow $7$-subgroups use up $48$ elements, and a Sylow $2$-subgroup must fit in the remaining $8$.\par
+Let $|G| = 56 = 2^3 \cdot 7$. As in part (1) of the proof of Proposition~\ref{prop:no-simple-56}, $n_7 \in \{1, 8\}$. If $n_7 = 1$, the Sylow $7$-subgroup is normal (Corollary~\ref{cor:sylow-normal-unique}). If $n_7 = 8$, the Sylow $7$-subgroups have order $7$, so by Lemma~\ref{lem:count-elements-order-p} $G$ has exactly $8 \cdot 6 = 48$ elements of order $7$, which leaves a set $R$ of $56 - 48 = 8$ elements. A Sylow $2$-subgroup $P$ has $8$ elements, whose orders divide $8$ (Lagrange), so none has order $7$; hence $P \subseteq R$, and as $|P| = 8 = |R|$, $P = R$. So every Sylow $2$-subgroup equals $R$: there is only one, $n_2 = 1$, and it is normal (Corollary~\ref{cor:sylow-normal-unique}).
+\end{proof}
+
 \begin{rembox}[{What the Count Gives}]\label{rem:order-56-count}
-\textit{(Not from class.)} The count shows more. The eight Sylow $7$-subgroups contain exactly $48$ elements of order $7$, which leaves $56 - 48 = 8$ elements; a Sylow $2$-subgroup has $8$ elements, none of order $7$, so it consists of exactly these $8$, and there is only one. So $n_7 = 8$ forces $n_2 = 1$: every group of order $56$ has a normal Sylow $7$-subgroup or a normal Sylow $2$-subgroup (Corollary~\ref{cor:sylow-normal-unique}). The general tool: if the Sylow $p$-subgroups of $G$ have order $p$, any two of them intersect trivially, and $G$ has exactly $n_p(p - 1)$ elements of order $p$. The same approach of counting elements handles a number of other orders as well, for example $30$ (this sentence is from lecture).
+The same approach of counting elements handles a number of other orders as well, for example $30$ (this sentence is from lecture).
 \end{rembox}
 
 \begin{thmbox}[{Simple Groups of Order at Most $100$}]\label{thm:simple-order-le-100}
@@ -7855,9 +8355,36 @@ is an isomorphism. In particular $G \cong N_1 \times N_2$.
 \emph{Surjective.} Every element of $G = N_1N_2$ has the form $n_1n_2$.
 \end{proof}
 
+\begin{corbox}[{The Quotient by $N_1 \cap N_2$ Is a Direct Product}]\label{cor:two-simple-quotients-product}
+Let $G$ be a finite group and $N_1 \neq N_2$ normal subgroups such that $G/N_1$ and $G/N_2$ are both simple, as in Two Normal Subgroups with Simple Quotients (Lemma~\ref{lem:two-simple-quotients}). Then
+\[ G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2). \]
+\srcline{not from class}
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} in $\bar G = G/(N_1 \cap N_2)$ the images of $N_1$ and $N_2$ are normal, meet trivially and generate.\par
+\textit{(Not from class.)} Let $M = N_1 \cap N_2$, normal in $G$ as an intersection of normal subgroups, and $\pi: G \to \bar G = G/M$ the projection. Since $M \subseteq N_i$, $\bar N_i = \pi(N_i) = N_i/M$, and it is normal in $\bar G$ because $\pi$ is surjective (Preimages and Images of Normal Subgroups, Proposition~\ref{prop:preimages-images-normal-subgroups}(3)).
+
+\emph{Trivial intersection.} If $xM \in \bar N_1 \cap \bar N_2$, then $xM = n_1M = n_2M$ with $n_i \in N_i$, so $x \in n_1M \subseteq N_1$ and $x \in n_2M \subseteq N_2$; hence $x \in M$ and $xM = M$. So $\bar N_1 \cap \bar N_2 = \{M\}$, which is $M/M$.
+
+\emph{Generation.} By Lemma~\ref{lem:two-simple-quotients}(1), $N_1N_2 = G$, so every $gM$ with $g = n_1n_2$ equals $(n_1M)(n_2M) \in \bar N_1 \bar N_2$. So $\bar N_1 \bar N_2 = \bar G$.
+
+By Internal Direct Products Are Direct Products (Theorem~\ref{thm:internal-direct-product}), $\bar G \cong \bar N_1 \times \bar N_2$.
+\end{proof}
+
 \begin{rembox}[{Two Forms of the Criterion}]\label{rem:two-direct-product-criteria}
-\textit{(Not from class.)} Internal Direct Products (Lemma~\ref{lem:internal-direct-product}, from PS 6.3(5)) is the finite version: commuting subgroups $H, L$ with $H \cap L = \{e\}$ and $|H|\,|L| = |G|$. For finite $G$ and normal $N_1, N_2$ with $N_1 \cap N_2 = \{e\}$, the conditions $G = N_1N_2$ and $|N_1|\,|N_2| = |G|$ are equivalent, because $|N_1N_2| = |N_1|\,|N_2|$ (The Order of a Product of Subgroups, Lemma~\ref{lem:order-product-subgroups}). The theorem above needs no finiteness.
+\textit{(Not from class.)} Internal Direct Products (Lemma~\ref{lem:internal-direct-product}, from PS 6.3(5)) is the finite version: commuting subgroups $H, L$ with $H \cap L = \{e\}$ and $|H|\,|L| = |G|$. For finite $G$ and normal $N_1, N_2$ with $N_1 \cap N_2 = \{e\}$, its counting condition is equivalent to $G = N_1N_2$ (Lemma~\ref{lem:product-condition-versus-order-condition}). The theorem above needs no finiteness.
 \end{rembox}
+
+\begin{lembox}[{$G = N_1N_2$ Versus $|N_1|\,|N_2| = |G|$}]\label{lem:product-condition-versus-order-condition}
+Let $G$ be finite and $N_1, N_2 \trianglelefteq G$ with $N_1 \cap N_2 = \{e\}$. Then $G = N_1N_2$ if and only if $|N_1|\,|N_2| = |G|$.
+\srcline{not from class}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} $|N_1N_2| = |N_1|\,|N_2|$ when the intersection is trivial.\par
+By The Order of a Product of Subgroups (Lemma~\ref{lem:order-product-subgroups}), $|N_1N_2| = |N_1|\,|N_2|/|N_1 \cap N_2| = |N_1|\,|N_2|$. If $G = N_1N_2$, then $|G| = |N_1|\,|N_2|$. Conversely, if $|N_1|\,|N_2| = |G|$, then $N_1N_2 \subseteq G$ has $|G|$ elements, so $N_1N_2 = G$, as $G$ is finite.
+\end{proof}
 
 \begin{exbox}[{$\mathbb{Z}/15\mathbb{Z}$}]\label{ex:z15-internal-direct-product}
 In $\mathbb{Z}/15\mathbb{Z}$ (written additively), $N_1 = 3\mathbb{Z}/15\mathbb{Z}$ has $5$ elements and $N_2 = 5\mathbb{Z}/15\mathbb{Z}$ has $3$ elements. Both are normal, as the group is abelian. $N_1 \cap N_2$ is a subgroup of both, so its order divides $\gcd(5, 3) = 1$ (Lagrange, Theorem~\ref{thm:lagrange}). And $N_1 + N_2$ is a subgroup containing $N_1$ and $N_2$ (Lemma~\ref{lem:hn-subgroup-when-n-normal}), so its order is divisible by $5$ and $3$, hence is $15$. So $\mathbb{Z}/15\mathbb{Z}$ is the internal direct product of $3\mathbb{Z}/15\mathbb{Z} \cong \mathbb{Z}/5\mathbb{Z}$ and $5\mathbb{Z}/15\mathbb{Z} \cong \mathbb{Z}/3\mathbb{Z}$, and $\mathbb{Z}/15\mathbb{Z} \cong \mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ (Theorem~\ref{thm:internal-direct-product}).
@@ -7879,9 +8406,20 @@ $G = S_3$, $N = A_3 = \langle (1\,2\,3) \rangle$ (Definition~\ref{def:alternatin
 \end{exbox}
 
 \begin{rembox}[{Why More Data Is Needed}]\label{rem:semidirect-more-data}
-For a direct product, $N_1$ and $N_2$ alone determine $G$. For a semidirect product, $N$ and $S$ do not: one also needs to know how $S$ acts on $N$. For example, $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$ and $S_3$ are both semidirect products of a normal subgroup of order $3$ and a subgroup of order $2$.
+For a direct product, $N_1$ and $N_2$ alone determine $G$. For a semidirect product, $N$ and $S$ do not: one also needs to know how $S$ acts on $N$ (Example~\ref{ex:two-semidirect-products-orders-3-2}).
 \srcline{lecture 10/26}
 \end{rembox}
+
+\begin{exbox}[{$\mathbb{Z}/6\mathbb{Z}$ and $S_3$: Same $N$ and $S$, Different Groups}]\label{ex:two-semidirect-products-orders-3-2}
+$\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$ and $S_3$ are both semidirect products of a normal subgroup of order $3$ and a subgroup of order $2$, but they are not isomorphic.
+\begin{itemize}[nosep]
+    \item \emph{$\mathbb{Z}/6\mathbb{Z}$.} Take $N = \{0, 2, 4\}$ of order $3$ and $S = \{0, 3\}$ of order $2$. $N$ is normal since the group is abelian; $N \cap S = \{0\}$; and $N + S$ is a subgroup (Lemma~\ref{lem:hn-subgroup-when-n-normal}) whose order is divisible by $3$ and $2$ (Lagrange), hence is $6$. (Here $S$ is normal too, and $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ by Theorem~\ref{thm:internal-direct-product}.)
+    \item \emph{$S_3$.} $N = A_3$ and $S = \langle (1\,2) \rangle$, by Example~\ref{ex:s3-internal-semidirect}.
+    \item \emph{Not isomorphic.} $\mathbb{Z}/6\mathbb{Z}$ is abelian and $S_3$ is not: $(1\,2)(2\,3) = (1\,2\,3) \neq (1\,3\,2) = (2\,3)(1\,2)$.
+\end{itemize}
+In both cases $N \cong \mathbb{Z}/3\mathbb{Z}$ and $S \cong \mathbb{Z}/2\mathbb{Z}$ (groups of prime order, Theorem~\ref{thm:groups-prime-order}); what differs is the action of $S$ on $N$: trivial in $\mathbb{Z}/6\mathbb{Z}$, inversion in $S_3$ (Example~\ref{ex:s3-external-semidirect} below).
+\srcline{lecture 10/26}
+\end{exbox}
 
 \begin{propbox}[{The Quotient by $N$}]\label{prop:semidirect-quotient}
 In an internal semidirect product, $G/N \cong S$.
@@ -7986,9 +8524,27 @@ These agree, because $\varphi_{s_1}\big(n_2\varphi_{s_2}(n_3)\big) = \varphi_{s_
 \[ (e, s)(n, e)(e, s^{-1}) = \big(\varphi_s(n), s\big)(e, s^{-1}) = \big(\varphi_s(n)\,\varphi_s(e), e\big) = \big(\varphi_s(n), e\big). \]
 \end{proof}
 
-\begin{rembox}[{Direct Products as a Special Case}]\label{rem:semidirect-trivial-action}
-\textit{(Not from class.)} If $\varphi$ is trivial ($\varphi(s) = \mathrm{id}_N$ for all $s$), the rule becomes $(n_1, s_1)(n_2, s_2) = (n_1n_2, s_1s_2)$, and $N \rtimes_\varphi S = N \times S$. In the internal picture, $\varphi$ is trivial exactly when every element of $S$ commutes with every element of $N$. Given $G = NS$, this happens exactly when $S$ is also normal: if $S$ commutes with $N$, then $nsSs^{-1}n^{-1} = nSn^{-1} = S$; conversely, if $S$ is normal, Normal Subgroups with Trivial Intersection Commute (Proposition~\ref{prop:normal-subgroups-trivial-intersection-commute}) applies. This recovers Theorem~\ref{thm:internal-direct-product} (WS 11.1).
-\end{rembox}
+\begin{propbox}[{Direct Products as a Special Case}]\label{prop:semidirect-trivial-action-direct}
+\begin{enumerate}
+    \item If $\varphi: S \to \operatorname{Aut}(N)$ is trivial ($\varphi(s) = \mathrm{id}_N$ for all $s$), then $N \rtimes_\varphi S = N \times S$.
+    \item In an internal semidirect product of $N$ and $S$, with $\varphi$ given by conjugation, $\varphi$ is trivial exactly when every element of $S$ commutes with every element of $N$.
+    \item Given $G = NS$ as in (2), this happens exactly when $S$ is also normal in $G$.
+\end{enumerate}
+\srcline{not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} with trivial action the multiplication rule is componentwise; $\varphi(s)$ is conjugation by $s$.\par
+\textbf{(1)} With $\varphi(s_1) = \mathrm{id}_N$, the rule of Definition~\ref{def:external-semidirect-product} becomes $(n_1, s_1)(n_2, s_2) = (n_1n_2, s_1s_2)$, the componentwise product of $N \times S$ (Definition~\ref{def:direct-products}) on the same set of pairs.
+
+\textbf{(2)} $\varphi(s) = \mathrm{id}_N$ means $sns^{-1} = n$, i.e.\ $sn = ns$, for every $n \in N$; so $\varphi$ is trivial iff this holds for every $s \in S$.
+
+\textbf{(3)} If $S$ commutes with $N$, let $g = ns \in G$ with $n \in N$, $s \in S$. Then $sSs^{-1} = S$, and $ns'n^{-1} = s'$ for every $s' \in S$, so
+\[ gSg^{-1} = n\,(sSs^{-1})\,n^{-1} = nSn^{-1} = S, \]
+and $S$ is normal. Conversely, if $S$ is normal, then $N$ and $S$ are normal subgroups with $N \cap S = \{e\}$, and Normal Subgroups with Trivial Intersection Commute (Proposition~\ref{prop:normal-subgroups-trivial-intersection-commute}) shows that they commute.
+\end{proof}
+
+Together with Theorem~\ref{thm:internal-external-semidirect}(1), this recovers Theorem~\ref{thm:internal-direct-product} (WS 11.1).
 
 \begin{exbox}[{$\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$}]\label{ex:z7-semidirect-z3}
 Let $N = \mathbb{Z}/7\mathbb{Z}$ and $S = \mathbb{Z}/3\mathbb{Z}$, and let $k \in \mathbb{Z}/3\mathbb{Z}$ act on $x \in \mathbb{Z}/7\mathbb{Z}$ by
@@ -8448,9 +9004,28 @@ the upper left block is the matrix of $\rho_U(g)$ in the basis $(u_i)$, and the 
 \end{center}
 
 
-\begin{rembox}[{The Lower Right Block}]\label{rem:lower-right-block}
-The board labels the lower right block $\rho_{W/U}$. Indeed $U$ is $G$-invariant, so $g(w + U) := gw + U$ is a well-defined action of $G$ on the quotient space $W/U$ (if $w - w' \in U$ then $gw - gw' = g(w - w') \in U$), by linear maps, and the lower right block is its matrix in the basis $v_1 + U, \ldots, v_n + U$: if $gv_j = \sum_i a_{ij}u_i + \sum_l c_{lj}v_l$, then $g(v_j + U) = \sum_l c_{lj}(v_l + U)$. So a subrepresentation alone gives a block triangular form with blocks $\rho_U$ and $\rho_{W/U}$, and a complementary subrepresentation $V$ is what kills the block $\ast$; then $V \cong W/U$ as representations, via $v \mapsto v + U$ (Definition~\ref{def:isomorphism-representations}).
+\begin{propbox}[{The Lower Right Block Is the Quotient Representation}]\label{prop:lower-right-block-quotient-representation}
+Let $W$, $U$ and the basis $(u_1, \ldots, u_m, v_1, \ldots, v_n)$ be as in Proposition~\ref{prop:subrepresentation-block-triangular}.
+\begin{enumerate}
+    \item $g(w + U) := gw + U$ is a well-defined action of $G$ on the quotient space $W/U$ by linear maps, so $W/U$ is a representation of $G$.
+    \item The lower right block of $\rho_W(g)$ is the matrix of $g$ acting on $W/U$, in the basis $v_1 + U, \ldots, v_n + U$.
+    \item If $V$ is a subrepresentation with $W = U \oplus V$, then $v \mapsto v + U$ is an isomorphism of representations $V \to W/U$ (Definition~\ref{def:isomorphism-representations}).
+\end{enumerate}
 \srcline{board 11/4; the quotient action not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $U$ is $G$-invariant, so $g$ passes to cosets of $U$; the $u$-components of $gv_j$ vanish modulo $U$.\par
+\textbf{(1)} \emph{Well defined:} if $w + U = w' + U$, then $w - w' \in U$, so $gw - gw' = g(w - w') \in U$ because $U$ is $G$-invariant, i.e.\ $gw + U = gw' + U$. The action axioms and linearity hold in $W/U$ because they hold in $W$: $e(w + U) = w + U$, $g_1(g_2(w + U)) = g_1g_2w + U = (g_1g_2)(w + U)$, $g\big((w + U) + (w' + U)\big) = g(w + w') + U = (gw + U) + (gw' + U)$, and $g(c(w + U)) = c\,gw + U = c\,(g(w + U))$.
+
+\textbf{(2)} The cosets $v_1 + U, \ldots, v_n + U$ form a basis of $W/U$: they span, since $u_i + U = U$ is zero in $W/U$, and there are $n = \dim W - \dim U = \dim W/U$ of them. If $gv_j = \sum_i a_{ij}u_i + \sum_l c_{lj}v_l$, then $g(v_j + U) = gv_j + U = \sum_l c_{lj}(v_l + U)$, since the $u_i$ lie in $U$. So column $j$ of the matrix of $g$ on $W/U$ is $(c_{1j}, \ldots, c_{nj})^{\mathsf{T}}$, which is column $j$ of the lower right block of $\rho_W(g)$.
+
+\textbf{(3)} The map $\theta(v) = v + U$ is linear, and it commutes with the action: $\theta(gv) = gv + U = g(v + U) = g\,\theta(v)$. It is injective: $v + U = U$ means $v \in U \cap V = \{0\}$. It is surjective: every $w \in W$ is $u + v$ with $u \in U$, $v \in V$, so $w + U = v + U = \theta(v)$. So $\theta$ is an invertible homomorphism of representations.
+\end{proof}
+
+\begin{rembox}[{The Lower Right Block}]\label{rem:lower-right-block}
+The board labels the lower right block $\rho_{W/U}$ (Proposition~\ref{prop:lower-right-block-quotient-representation}). So a subrepresentation alone gives a block triangular form with blocks $\rho_U$ and $\rho_{W/U}$, and a complementary subrepresentation $V$ is what kills the block $\ast$; then $V \cong W/U$ as representations.
+\srcline{board 11/4}
 \end{rembox}
 
 \begin{thmbox}[{Maschke's Theorem}]\label{thm:maschke}
@@ -8720,8 +9295,18 @@ A Hermitian form $\langle\ ,\ \rangle$ on $V$ (Definition~\ref{def:hermitian-for
 \srcline{board 11/6; MATH 420 slides}
 \end{defbox}
 
+\begin{lembox}[{No Bilinear Form on a Complex Space Is Positive Definite}]\label{lem:no-positive-definite-complex-bilinear}
+Let $V \neq \{0\}$ be a complex vector space. There is no bilinear form $\langle\ ,\ \rangle$ on $V$ with $\langle v, v \rangle$ a positive real number for every $v \neq 0$.
+\srcline{lecture 11/6}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} scaling by $i$ multiplies $\langle v, v \rangle$ by $i^2 = -1$.\par
+Let $\langle\ ,\ \rangle$ be bilinear and $v \neq 0$. Then $iv \neq 0$ and, by bilinearity, $\langle iv, iv \rangle = i^2 \langle v, v \rangle = -\langle v, v \rangle$. So $\langle v, v \rangle$ and $\langle iv, iv \rangle$ cannot both be positive.
+\end{proof}
+
 \begin{rembox}[{Why Not Bilinear, and Unitary Matrices}]\label{rem:why-not-bilinear-unitary}
-A bilinear form on a complex vector space cannot be positive definite: $\langle iv, iv \rangle = i^2 \langle v, v \rangle = -\langle v, v \rangle$, so $\langle v, v \rangle$ and $\langle iv, iv \rangle$ cannot both be positive. Positive definite Hermitian forms are the complex replacement for inner products. The whole theory carries over, with complex conjugates in the right places: orthonormal bases exist (Proposition~\ref{prop:gram-schmidt-hermitian} below), and the matrices preserving the form are the \textbf{unitary} matrices, $\bar M^T M = I$, that is $M^\dagger M = I$ (Definition~\ref{def:conjugate-transpose}), the analogue of orthogonal matrices (compare the unitary group $U_n(\mathbb{C})$ in the remark \emph{Where the Groups of Lie Type Come From} in \ref{sec:small-simple-groups}). The averaging argument of Propositions~\ref{prop:averaged-inner-product} and~\ref{prop:averaged-inner-product-preserved} works verbatim: a finite group acting on a finite-dimensional complex vector space preserves a positive definite Hermitian form and acts by unitary matrices in a suitable basis, and Maschke's theorem over $\mathbb{C}$ follows in the same way. This is a side topic of the course; the MATH 420 slides on complex inner products, posted on Canvas, are worked out in the rest of this section.
+A bilinear form on a complex vector space cannot be positive definite (Lemma~\ref{lem:no-positive-definite-complex-bilinear}). Positive definite Hermitian forms are the complex replacement for inner products. The whole theory carries over, with complex conjugates in the right places: orthonormal bases exist (Proposition~\ref{prop:gram-schmidt-hermitian} below), and the matrices preserving the form are the \textbf{unitary} matrices, $\bar M^T M = I$, that is $M^\dagger M = I$ (Definition~\ref{def:conjugate-transpose}), the analogue of orthogonal matrices (compare the unitary group $U_n(\mathbb{C})$ in the remark \emph{Where the Groups of Lie Type Come From} in \ref{sec:small-simple-groups}). The averaging argument of Propositions~\ref{prop:averaged-inner-product} and~\ref{prop:averaged-inner-product-preserved} works verbatim: a finite group acting on a finite-dimensional complex vector space preserves a positive definite Hermitian form and acts by unitary matrices in a suitable basis, and Maschke's theorem over $\mathbb{C}$ follows in the same way. This is a side topic of the course; the MATH 420 slides on complex inner products, posted on Canvas, are worked out in the rest of this section.
 \srcline{lecture 11/6}
 \end{rembox}
 

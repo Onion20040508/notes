@@ -123,26 +123,48 @@ This is the internal direct sum of the remark *Two Meanings of “Direct Sum”*
 
 ![[m493-60-2.svg]]
 
-*(Not from lecture; figure added.)* The two shapes side by side. Column $j$ of $\rho_W(g)$ holds the coordinates of $g$ applied to the $j$-th basis vector. If both $U$ and $V$ are subrepresentations, the $U$-columns stay in the $U$-rows and the $V$-columns in the $V$-rows (left). If only $U$ is, the $v_j$-columns may have entries anywhere: the red block $\ast$ is what a complementary subrepresentation removes, and the lower right block is $\rho_{W/U}(g)$ (the remark *The Lower Right Block*).
-
-> [!remark] Remark: The Lower Right Block
-> The board labels the lower right block $\rho_{W/U}$. Indeed $U$ is $G$-invariant, so $g(w + U) := gw + U$ is a well-defined action of $G$ on the quotient space $W/U$ (if $w - w' \in U$ then $gw - gw' = g(w - w') \in U$), by linear maps, and the lower right block is its matrix in the basis $v_1 + U, \ldots, v_n + U$: if $gv_j = \sum_i a_{ij}u_i + \sum_l c_{lj}v_l$, then $g(v_j + U) = \sum_l c_{lj}(v_l + U)$. So a subrepresentation alone gives a block triangular form with blocks $\rho_U$ and $\rho_{W/U}$, and a complementary subrepresentation $V$ is what kills the block $\ast$; then $V \cong W/U$ as representations, via $v \mapsto v + U$ (Definition [[§59 Representations and Subrepresentations#^def-59-5|§59.5]]).
+> [!theorem] Proposition §60.4: The Lower Right Block Is the Quotient Representation
+> Let $W$, $U$ and the basis $(u_1, \ldots, u_m, v_1, \ldots, v_n)$ be as in Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-3|§60.3]].
+>
+> 1. $g(w + U) := gw + U$ is a well-defined action of $G$ on the quotient space $W/U$ by linear maps, so $W/U$ is a representation of $G$.
+> 2. The lower right block of $\rho_W(g)$ is the matrix of $g$ acting on $W/U$, in the basis $v_1 + U, \ldots, v_n + U$.
+> 3. If $V$ is a subrepresentation with $W = U \oplus V$, then $v \mapsto v + U$ is an isomorphism of representations $V \to W/U$ (Definition [[§59 Representations and Subrepresentations#^def-59-5|§59.5]]).
 >
 > *Source: board 11/4; the quotient action not from class*
 
+^prop-60-4
+
+> [!proof]+ Proof
+> *Idea:* $U$ is $G$-invariant, so $g$ passes to cosets of $U$; the $u$-components of $gv_j$ vanish modulo $U$.
+>
+> **(1)** *Well defined:* if $w + U = w' + U$, then $w - w' \in U$, so $gw - gw' = g(w - w') \in U$ because $U$ is $G$-invariant, i.e. $gw + U = gw' + U$. The action axioms and linearity hold in $W/U$ because they hold in $W$: $e(w + U) = w + U$, $g_1(g_2(w + U)) = g_1g_2w + U = (g_1g_2)(w + U)$, $g\big((w + U) + (w' + U)\big) = g(w + w') + U = (gw + U) + (gw' + U)$, and $g(c(w + U)) = c\,gw + U = c\,(g(w + U))$.
+>
+> **(2)** The cosets $v_1 + U, \ldots, v_n + U$ form a basis of $W/U$: they span, since $u_i + U = U$ is zero in $W/U$, and there are $n = \dim W - \dim U = \dim W/U$ of them. If $gv_j = \sum_i a_{ij}u_i + \sum_l c_{lj}v_l$, then $g(v_j + U) = gv_j + U = \sum_l c_{lj}(v_l + U)$, since the $u_i$ lie in $U$. So column $j$ of the matrix of $g$ on $W/U$ is $(c_{1j}, \ldots, c_{nj})^{\mathsf{T}}$, which is column $j$ of the lower right block of $\rho_W(g)$.
+>
+> **(3)** The map $\theta(v) = v + U$ is linear, and it commutes with the action: $\theta(gv) = gv + U = g(v + U) = g\,\theta(v)$. It is injective: $v + U = U$ means $v \in U \cap V = \{0\}$. It is surjective: every $w \in W$ is $u + v$ with $u \in U$, $v \in V$, so $w + U = v + U = \theta(v)$. So $\theta$ is an invertible homomorphism of representations.
+
+^pf-60-4
+
+> [!remark] Remark: The Lower Right Block
+> The board labels the lower right block $\rho_{W/U}$ (Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-4|§60.4]]). So a subrepresentation alone gives a block triangular form with blocks $\rho_U$ and $\rho_{W/U}$, and a complementary subrepresentation $V$ is what kills the block $\ast$; then $V \cong W/U$ as representations.
+>
+> *Source: board 11/4*
+
 ^rem-60-1
 
-> [!theorem] Theorem §60.4: Maschke's Theorem
+*(Not from lecture; figure added.)* The two shapes side by side. Column $j$ of $\rho_W(g)$ holds the coordinates of $g$ applied to the $j$-th basis vector. If both $U$ and $V$ are subrepresentations, the $U$-columns stay in the $U$-rows and the $V$-columns in the $V$-rows (left). If only $U$ is, the $v_j$-columns may have entries anywhere: the red block $\ast$ is what a complementary subrepresentation removes, and the lower right block is $\rho_{W/U}(g)$ (the remark *The Lower Right Block*).
+
+> [!theorem] Theorem §60.5: Maschke's Theorem
 > Let $G$ be a finite group and $k$ a field in which $|G| \neq 0$. Let $W$ be a finite-dimensional representation of $G$ over $k$ and $U \subseteq W$ a subrepresentation. Then there is a subrepresentation $V \subseteq W$ with $W = U \oplus V$.
 >
 > *Source: WS 14; lecture 11/4*
 
-^thm-60-4
+^thm-60-5
 
 > [!proof]+ Proof (to be filled)
 > The general case is on the problem set; it is added here after the problem set is submitted. The case $k = \mathbb{R}$ is Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|§61.6]], in [[§61 Invariant Inner Products and Maschke over ℝ|§61]].
 
-^pf-60-4
+^pf-60-5
 
 *Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|§61.6]]
 

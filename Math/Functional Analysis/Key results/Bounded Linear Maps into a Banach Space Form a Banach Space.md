@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 30.5", "L(X,Y) is a Banach space", "dual space is complete", "Lax §15.1, Thms 2–3"]
+aliases: ["MATH 556 30.6", "L(X,Y) is a Banach space", "dual space is complete", "Lax §15.1, Thms 2–3"]
 tags: [functional-analysis, hub]
 ---
 ![[§30 Boundedness and Continuity#^thm-30-6]]

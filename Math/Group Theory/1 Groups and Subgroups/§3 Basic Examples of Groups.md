@@ -158,7 +158,7 @@ In each example, associativity is inherited from a known associative operation (
 > - The same group as a topological group and manifold in 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|591 Def. §11.8]], and [[Classical Groups Are Manifolds]].
 > - Used in Quantum Mechanics: the rotation group $SO(3)$ acting on kets — [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]]; it is covered twice by $SU(2)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|QM Theorem §C5.2.8]].
 
-Each of $SL_n(k)$, $O(n)$ and $SO(n)$ is a subgroup of the corresponding general linear group (verified in [[§5 A Zoo of Subgroups#^ex-5-4|Ex. §5.4]], where $SO(2)$ is identified with the rotations of the plane).
+Each of $SL_n(k)$, $O(n)$ and $SO(n)$ is a subgroup of the corresponding general linear group (verified in [[§5 A Zoo of Subgroups#^ex-5-5|Ex. §5.5]], where $SO(2)$ is identified with the rotations of the plane).
 
 > [!example] Example §3.1: Groups and Non-Groups
 > Deciding whether $(G, \cdot)$ is a group usually comes down to identity and inverses; associativity is inherited from arithmetic or composition.

@@ -33,10 +33,24 @@ tags: [group-theory, math493]
 
 ^pf-41-1
 
-*Uses:* [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
+*Uses:* [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 ![[m493-38-1.svg]]
 *The First Isomorphism Theorem: every homomorphism factors as the projection $\pi$, the isomorphism $\beta$, and the inclusion of the image.*
+
+> [!remark] Remark: Images Are Quotients
+> Whenever $G$ is mapped into another group — into some $S_n$, some $GL_n(k)$, by various actions — the image looks like a quotient of $G$, determined entirely by what is sent to the identity. So understanding all possible images of $G$ amounts to understanding its normal subgroups. Note the asymmetry: kernels are always normal, but images are merely subgroups and need not be normal (Example [[§41 The First and Second Isomorphism Theorems#^ex-41-1|§41.1]]; [[§39 Sources of Normal Subgroups#^prop-39-3|WS 6.5]], [[§39 Sources of Normal Subgroups|§39]]). This is one way in which groups are harder than vector spaces.
+>
+> *Source: lecture*
+
+^rem-41-1
+
+> [!example] Example §41.1: $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$: a Non-Normal Image
+> The map $\alpha: \mathbb{Z}/2\mathbb{Z} \to S_3$, $\alpha(a) = (1\,2)^a$, is a homomorphism whose image is not normal. It is well defined because $(1\,2)^2 = e$: if $a' = a + 2m$, then $(1\,2)^{a'} = (1\,2)^a\big((1\,2)^2\big)^m = (1\,2)^a$. It is a homomorphism by the Exponent Laws, $(1\,2)^{a + b} = (1\,2)^a(1\,2)^b$. Its image is $\{e, (1\,2)\} = \langle (1\,2) \rangle$, which is not normal in $S_3$: $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3) \notin \langle (1\,2) \rangle$ (Images Need Not Be Normal, Proposition [[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]]). Its kernel $\{0\}$ is, like every kernel, normal.
+>
+> *Source: lecture*
+
+^ex-41-1
 
 > [!remark]- Connections
 > - Vector-space version: [[First isomorphism theorem]] (LADR 3.107).
@@ -44,13 +58,6 @@ tags: [group-theory, math493]
 > - Set-level version: [[§22 Partitions and Equivalence Relations#^prop-22-5|250 Prop. §22.5]] (a surjection induces a bijection on the quotient set).
 > - Used in Quantum Mechanics: $SO(3) \cong SU(2)/\{\pm1\}$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|QM Theorem §C5.2.8]].
 > - Used in Quantum Field Theory: $SO^+(1,3) \cong SL(2, \mathbb C)/\{\pm1\}$ — [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9|QFT Theorem §CB.16.9]].
-
-> [!remark] Remark: Images Are Quotients
-> Whenever $G$ is mapped into another group — into some $S_n$, some $GL_n(k)$, by various actions — the image looks like a quotient of $G$, determined entirely by what is sent to the identity. So understanding all possible images of $G$ amounts to understanding its normal subgroups. Note the asymmetry: kernels are always normal, but images are merely subgroups and need not be normal; for example $\mathbb{Z}/2\mathbb{Z} \to S_3$, $a \mapsto (1\,2)^a$, has image $\langle (1\,2) \rangle$, which is not normal ([[§39 Sources of Normal Subgroups#^prop-39-3|WS 6.5]], §39). This is one way in which groups are harder than vector spaces.
->
-> *Source: lecture*
-
-^rem-41-1
 
 > [!theorem] Corollary §41.2: $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$
 > Let $G$ be finite and $\alpha: G \to H$ a homomorphism. Then $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$.
@@ -73,14 +80,14 @@ tags: [group-theory, math493]
 
 ^rem-41-2
 
-> [!example] Example §41.1: The First Isomorphism Theorem in Action
+> [!example] Example §41.2: The First Isomorphism Theorem in Action
 > 1. $\operatorname{sgn}: S_n \to \{\pm 1\}$ is surjective for $n \geq 2$, with kernel $A_n$; so $S_n/A_n \cong \{\pm 1\}$ and $|A_n| = n!/2$.
 > 2. $\det: GL_n(k) \to k^\times$ is surjective ($\det \operatorname{diag}(a, 1, \ldots, 1) = a$), with kernel $SL_n(k)$; so $GL_n(k)/SL_n(k) \cong k^\times$.
 > 3. $\mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$ has kernel $\{[0], [3]\}$ and image $\{1, 2, 4\}$ ([[§15 Homomorphisms#^ex-15-2|Ex. §15.2]]); indeed $6 = 2 \cdot 3$, and $(\mathbb{Z}/6\mathbb{Z})/\{[0],[3]\} \cong \{1, 2, 4\} \cong \mathbb{Z}/3\mathbb{Z}$.
 > 4. In [[§39 Sources of Normal Subgroups#^thm-39-5|PS 3.2]] (§39), $G/N \cong \varphi(G) \leq S_{G/H}$, so $[G : N] = |\varphi(G)|$ divides $n!$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]] — part (3) of [[§39 Sources of Normal Subgroups#^prop-39-6|The Normal Core]], recorded there.
 > 5. The conjugation homomorphism $G \to \operatorname{Aut}(G)$, $a \mapsto c_a$, has kernel $Z(G)$ and image the inner automorphisms ([[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|PS 1.2]], §18); so $G/Z(G) \cong \operatorname{Inn}(G)$, the group of inner automorphisms.
 
-^ex-41-1
+^ex-41-2
 
 ![[m493-38-2.svg]]
 *Part 3 of the example, $\alpha: \mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$. The kernel $N = \{[0], [3]\}$ (red) and its cosets are exactly the fibres of $\alpha$: each coset goes to a single element of the image $I = \{1, 2, 4\}$ (blue). So $\beta(gN) = \alpha(g)$ is well defined and bijective, $(\mathbb{Z}/6\mathbb{Z})/N \cong I$, and $6 = 2 \cdot 3$.*
@@ -130,13 +137,13 @@ tags: [group-theory, math493]
 >
 > *Inverses (PS 4.1(2)).* For $hn \in HN$, $(hn)^{-1} = n^{-1}h^{-1} = h^{-1}\big(hn^{-1}h^{-1}\big)$ ([[§2 First Consequences of the Axioms#^prop-2-4|Inverse of a Product]]). Here $h^{-1} \in H$, and $hn^{-1}h^{-1} \in N$ by [[§38 Normal Subgroups#^def-38-1|normality]] applied to $n^{-1} \in N$; so $(hn)^{-1} \in HN$.
 >
-> By the symmetric argument, $HN$ is also a subgroup when $H$, rather than $N$, is normal (as [[493 Problem Set 4#^hw-4-1|PS 4.1(2)]] notes). Without either hypothesis it can fail: $AB$ Need Not Be a Subgroup ([[§41 The First and Second Isomorphism Theorems#^ex-41-2|Ex. §41.2]]), below.
+> By the symmetric argument, $HN$ is also a subgroup when $H$, rather than $N$, is normal (as [[493 Problem Set 4#^hw-4-1|PS 4.1(2)]] notes). Without either hypothesis it can fail: $AB$ Need Not Be a Subgroup ([[§41 The First and Second Isomorphism Theorems#^ex-41-3|Ex. §41.3]]), below.
 
 ^pf-41-3
 
 *Uses:* [[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
 
-> [!example] Example §41.2: $AB$ Need Not Be a Subgroup
+> [!example] Example §41.3: $AB$ Need Not Be a Subgroup
 > Without normality, the [[§41 The First and Second Isomorphism Theorems#^def-41-1|product set]] of two [[§4 Subgroups#^def-4-1|subgroups]] can fail to be a subgroup. In $S_3$ ([[§10 Cycle Notation and the Group S₃#^ex-10-1|Ex. §10.1]]) take $A = \{e, (1\,2)\}$ and $B = \{e, (1\,3)\}$. Then
 >
 > $$ AB = \{e,\ (1\,3),\ (1\,2),\ (1\,2)(1\,3)\} = \{e,\ (1\,2),\ (1\,3),\ (1\,3\,2)\}, $$
@@ -145,7 +152,7 @@ tags: [group-theory, math493]
 >
 > *Source: PS 4.1(1)*
 
-^ex-41-2
+^ex-41-3
 
 > [!theorem] Lemma §41.4: Restricting a Homomorphism
 > Let $f: X \to Y$ be a [[§15 Homomorphisms#^def-15-1|homomorphism]] and $X' \leq X$ a subgroup. Then the restriction $f|_{X'}: X' \to Y$ is a homomorphism with $\operatorname{Ker}(f|_{X'}) = \operatorname{Ker}(f) \cap X'$.
@@ -243,14 +250,14 @@ tags: [group-theory, math493]
 > [!proof]+ Proof
 > *Idea:* The Second Isomorphism Theorem with $H = S$, where $SN = G$ and $S \cap N = \{e\}$.
 >
-> Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ ([[§40 Quotient Groups#^prop-40-4|Representatives Forming a Subgroup]], §40.4). The [[§41 The First and Second Isomorphism Theorems#^thm-41-5|theorem]] gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
+> Take $H = S$. Every $g \in G$ lies in some coset $sN$ with $s \in S$, so $SN = G$; and $S \cap N = \{e\}$ ([[§40 Quotient Groups#^prop-40-5|Representatives Forming a Subgroup]], §40.5). The [[§41 The First and Second Isomorphism Theorems#^thm-41-5|theorem]] gives $S \cong S/\{e\} = S/(S \cap N) \cong SN/N = G/N$.
 
 ^pf-41-7
 
-*Uses:* [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], [[§40 Quotient Groups#^def-40-2|Def. §40.2]], [[§40 Quotient Groups#^prop-40-4|§40.4]]
+*Uses:* [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], [[§40 Quotient Groups#^def-40-2|Def. §40.2]], [[§40 Quotient Groups#^prop-40-5|§40.5]]
 
 > [!remark]- Connections
-> - Proved directly, without the theorem: [[§40 Quotient Groups#^prop-40-4|Representatives Forming a Subgroup]] (§40.4).
+> - Proved directly, without the theorem: [[§40 Quotient Groups#^prop-40-5|Representatives Forming a Subgroup]] (§40.5).
 
 [[§45 S₃, S₄, A₄ and A₅#^ex-45-3|Example §45.3]], in the $GL_n$ part of [[§45 S₃, S₄, A₄ and A₅|§45]], applies the theorem to $GL_2^+(\mathbb{R})$, $SL_2(\mathbb{R})$ and the scalar matrices.
 
@@ -262,7 +269,7 @@ tags: [group-theory, math493]
 ^cor-41-8
 
 > [!proof]+ Proof
-> By the Second Isomorphism Theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-5|Theorem §41.5]]), $A/(A \cap H) \cong AH/H$, and $AH/H = \pi(A)$ is a subgroup of the finite group $G/H$. By Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]) in $G/H$, $[A : A \cap H] = |AH/H|$ divides $|G/H| = [G : H]$. (Compare [[§29 The Index and Lagrange's Theorem#^prop-29-9|Proposition §29.9]] and [[§29 The Index and Lagrange's Theorem#^ex-29-2|Example §29.2]] (PS 5.1), where $H$ is not normal and divisibility fails.)
+> By the Second Isomorphism Theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-5|Theorem §41.5]]), $A/(A \cap H) \cong AH/H$, and $AH/H = \pi(A)$ is a subgroup of the finite group $G/H$. By Lagrange ([[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]) in $G/H$, $[A : A \cap H] = |AH/H|$ divides $|G/H| = [G : H]$. (Compare [[§29 The Index and Lagrange's Theorem#^prop-29-10|Proposition §29.10]] and [[§29 The Index and Lagrange's Theorem#^ex-29-6|Example §29.6]] (PS 5.1), where $H$ is not normal and divisibility fails.)
 
 ^pf-41-8
 

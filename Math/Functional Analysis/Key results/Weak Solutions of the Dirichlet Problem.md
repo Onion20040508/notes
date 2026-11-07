@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 34.2", "Dirichlet problem (weak solutions)", "Existence and Uniqueness of Weak Solutions"]
+aliases: ["MATH 556 34.3", "Dirichlet problem (weak solutions)", "Existence and Uniqueness of Weak Solutions"]
 tags: [functional-analysis, hub]
 ---
 ![[§34 Weak Solutions of the Dirichlet Problem#^thm-34-3]]

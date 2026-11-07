@@ -44,7 +44,7 @@ tags: [group-theory, math493]
 > g \star (g'H) = \big(g''(g')^{-1}g'\big)H = g''H;
 > $$
 >
-> so any coset can be moved to any other, and $G/H$ is a single orbit. *Stabilizer of $eH$:* $g \star (eH) = gH$, so $g \in \operatorname{Stab}(eH)$ iff $gH = H$ iff $g \in H$ ([[§28 Left and Right Cosets#^prop-28-2|§28.2]]). Hence $\operatorname{Stab}(eH) = H$.
+> so any coset can be moved to any other, and $G/H$ is a single orbit. *Stabilizer of $eH$:* $g \star (eH) = gH$, so $g \in \operatorname{Stab}(eH)$ iff $gH = H$ iff $g \in H$ ([[§28 Left and Right Cosets#^prop-28-3|§28.3]]). Hence $\operatorname{Stab}(eH) = H$.
 >
 > **(3)** Since $g'H = g' \star (eH)$, the [[§26 Stabilizers and Fixed Points#^cor-26-3|corollary on stabilizers along an orbit]] gives
 >
@@ -54,7 +54,7 @@ tags: [group-theory, math493]
 
 ^pf-31-1
 
-*Uses:* [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-3|Def. §27.3]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§26 Stabilizers and Fixed Points#^cor-26-3|§26.3]]
+*Uses:* [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§25 Actions#^def-25-1|Def. §25.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§27 Orbits#^def-27-3|Def. §27.3]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§26 Stabilizers and Fixed Points#^cor-26-3|§26.3]]
 
 ![[m493-29-1.svg]]
 *$S_3$ acting on $S_3/H$ for $H = \{e, (1\,2)\}$: the three points are the three left cosets. Single elements carry $eH$ to each other coset, and $(1\,2\,3) = (2\,3)(1\,3)^{-1}$ carries $(1\,3)H$ to $(2\,3)H$, as in the proof of transitivity. The stabilizers (red) are the conjugates $g'H(g')^{-1}$, one for each point.*

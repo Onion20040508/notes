@@ -108,7 +108,7 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[The Sign Homomorphism]] (§21.3)
 - [[Actions Are Homomorphisms to S_X]] (§25.3)
 - [[Cayley's Theorem]] (§25.5)
-- [[Cosets Partition a Group]] (§28.2)
+- [[Cosets Partition a Group]] (§28.3)
 - [[Lagrange's Theorem]] (§29.2)
 - [[Groups of Prime Order Are Cyclic]] (§29.7)
 - [[Orbit–Stabilizer Theorem]] (§30.3)
@@ -122,7 +122,7 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[First Isomorphism Theorem for Groups]] (§41.1)
 - [[Second Isomorphism Theorem for Groups]] (§41.5)
 - [[Correspondence Theorem for Groups]] (§42.3)
-- [[Third Isomorphism Theorem for Groups]] (§42.5)
+- [[Third Isomorphism Theorem for Groups]] (§42.6)
 - [[Aₙ Is Simple for n ≥ 5]] (§43.9)
 - [[Jordan–Hölder Theorem]] (§52.1)
 - [[Groups of Order p²]] (§54.7)
@@ -130,11 +130,11 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Second Sylow Theorem]] (§55.6)
 - [[Third Sylow Theorem]] (§55.9)
 - [[Groups of Order pq]] (§55.11)
-- [[Groups of Order 2 mod 4 Are Not Simple]] (§56.7)
-- [[Simple Groups of Order 60 Are A₅]] (§56.13)
+- [[Groups of Order 2 mod 4 Are Not Simple]] (§56.10)
+- [[Simple Groups of Order 60 Are A₅]] (§56.20)
 - [[Internal Direct Product Theorem]] (§57.1)
 - [[Internal and External Semidirect Products Agree]] (§58.6)
-- [[Maschke's Theorem]] (§60.4)
+- [[Maschke's Theorem]] (§60.5)
 
 ## Summaries
 - [[Group Theory Conventions and Notation]]: symbols and the course's conventions (right-to-left composition, $e$ for the identity, …), each linked to where it is defined.
@@ -167,6 +167,7 @@ The results from other subjects that this course's proofs and definitions cite m
 
 **[[Topology]]**
 - [[§26 Algebra Prerequisites꞉ Groups#^prop-26-4|Proposition §26.4: Bijectivity via Two-Sided Inverse]] (2)
+- [[§10 Continuous Functions#^def-10-2|Definition §10.2: Homeomorphism]] (1)
 
 ## Workhorse examples
 - [[Matrix groups GLₙ, SLₙ and O(n)]]: $GL_n(k)$ and its subgroups $SL_n$, $O(n)$, $SO(n)$; the determinant as homomorphism and character

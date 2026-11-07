@@ -14,6 +14,7 @@ tags: [group-theory, hub]
 - [[§1 The Definition of a Group#^def-1-1|Definition §1.1: Group]]
 
 ## Used in (Group Theory)
+- [[§2 First Consequences of the Axioms#^ex-2-2|Example §2.2: The Shift on ℕ: a One-Sided Inverse That Is Not Two-Sided]]
 - [[§2 First Consequences of the Axioms#^prop-2-3|Proposition §2.3: Uniqueness of Inverses]]
 - [[§2 First Consequences of the Axioms#^prop-2-6|Proposition §2.6: One-Sided Inverses Suffice]]
 - [[§2 First Consequences of the Axioms#^prop-2-7|Proposition §2.7: Unique Solvability of Linear Equations]]

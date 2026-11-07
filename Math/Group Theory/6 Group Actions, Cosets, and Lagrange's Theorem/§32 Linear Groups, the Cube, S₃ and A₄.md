@@ -189,11 +189,11 @@ $S_3$ is the chapter's test case for cosets: its left and right cosets of $\lang
 
 ![[§25 Actions#^ex-25-3]]
 
-![[§28 Left and Right Cosets#^ex-28-1]]
-
 ![[§28 Left and Right Cosets#^ex-28-2]]
 
-![[§29 The Index and Lagrange's Theorem#^ex-29-2]]
+![[§28 Left and Right Cosets#^ex-28-3]]
+
+![[§29 The Index and Lagrange's Theorem#^ex-29-6]]
 
 ![[§30 Orbit–Stabilizer#^ex-30-2]]
 
@@ -205,7 +205,7 @@ Burnside's lemma for $S_3$ on $\{1, 2, 3\}$ and on itself is in [[§30 Orbit–S
 
 $A_4$ refutes the converse of Lagrange: $6$ divides $|A_4| = 12$, but $A_4$ has no subgroup of order $6$. The class sizes $1, 6, 3, 8, 6$ of $S_4$ are announced as an instance of orbit–stabilizer, and $S_4$ turns out to be the rotation group of the cube. The Klein four-group, met in [[§19 S₃, ℤ∕nℤ and Uₙ#ℤ∕nℤ and Uₙ|Chapter 4]] as $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, is one of the two groups of order $4$.
 
-![[§29 The Index and Lagrange's Theorem#^ex-29-1]]
+![[§29 The Index and Lagrange's Theorem#^ex-29-3]]
 
 ![[§30 Orbit–Stabilizer#^rem-30-2]]
 

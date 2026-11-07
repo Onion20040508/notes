@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 36.6", "distance formula", "annihilator distance"]
+aliases: ["MATH 556 36.8", "distance formula", "annihilator distance"]
 tags: [functional-analysis, hub]
 ---
 ![[§36 Duality in Normed Spaces#^thm-36-8]]
@@ -15,6 +15,7 @@ tags: [functional-analysis, hub]
 - [[§36 Duality in Normed Spaces#^thm-36-2|Theorem §36.2: The Norm as a Maximum over the Dual]]
 
 ## Used in (Functional Analysis)
+- [[§36 Duality in Normed Spaces#^cor-36-9|Corollary §36.9: A Point Outside a Closed Subspace is Separated by a Functional]]
 - [[§37 Separable Duals and Reflexive Spaces#^thm-37-1|Theorem §37.1: Spanning Criterion]]
 
 ## Connections

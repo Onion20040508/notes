@@ -39,7 +39,7 @@ tags: [group-theory, math493]
 >
 > **($\Rightarrow$) (lecture 10/12).** Let $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ be a chain with abelian quotients. We claim that $D_k(G) \subseteq G_{N-k}$ for $k = 0, 1, \ldots, N$; the case $k = N$ gives $D_N(G) \subseteq G_0 = \{e\}$. Two facts are used:
 > 1. if $H \subseteq L$ are subgroups, then $D(H) \subseteq D(L)$: every commutator of elements of $H$ is a commutator of elements of $L$, so the subgroup $D(L)$ contains all the generators of $D(H)$ ([[§47 Commutators#^def-47-2|Definition §47.2]]);
-> 2. if $M \trianglelefteq H$ and $H/M$ is abelian, then $D(H) \subseteq M$ (Abelian Quotients and Commutators, [[§47 Commutators#^prop-47-11|Proposition §47.11]]).
+> 2. if $M \trianglelefteq H$ and $H/M$ is abelian, then $D(H) \subseteq M$ (Abelian Quotients and Commutators, [[§47 Commutators#^prop-47-13|Proposition §47.13]]).
 >
 > *Base case.* $D_0(G) = G = G_N$. *Inductive step.* If $D_{k-1}(G) \subseteq G_{N-k+1}$, then
 >
@@ -49,12 +49,12 @@ tags: [group-theory, math493]
 
 ^pf-49-1
 
-*Uses:* [[§49 The Derived Series#^def-49-1|Def. §49.1]], [[§47 Commutators#^prop-47-4|§47.4]], [[§47 Commutators#^prop-47-6|§47.6]], [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§47 Commutators#^def-47-2|Def. §47.2]], [[§47 Commutators#^prop-47-11|§47.11]]
+*Uses:* [[§49 The Derived Series#^def-49-1|Def. §49.1]], [[§47 Commutators#^prop-47-4|§47.4]], [[§47 Commutators#^prop-47-6|§47.6]], [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§47 Commutators#^def-47-2|Def. §47.2]], [[§47 Commutators#^prop-47-13|§47.13]]
 
 > [!example] Example §49.1: Derived Series of $S_3$, $S_4$ and $S_n$
 > 1. $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$: $D(S_3) = A_3$ by The Commutator Subgroup and Characters of $S_n$ ([[§47 Commutators#^thm-47-5|Theorem §47.5]]), and $D(A_3) = \{e\}$ since $A_3$ is [[§1 The Definition of a Group#^def-1-2|abelian]].
-> 2. $S_4 \trianglerighteq A_4 \trianglerighteq K \trianglerighteq \{e\}$. Here $D(A_4) = K$: on one hand $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so $D(A_4) \subseteq K$ (Abelian Quotients and Commutators, [[§47 Commutators#^prop-47-11|Proposition §47.11]]); on the other hand $(1\,2\,3)(1\,2\,4)(1\,2\,3)^{-1}(1\,2\,4)^{-1} = (1\,2)(3\,4)$, and $D(A_4)$ is [[§47 Commutators#^prop-47-4|normal]] in $A_4$, so it also contains the conjugates $(1\,3)(2\,4)$ and $(1\,4)(2\,3)$ of $(1\,2)(3\,4)$ by $(1\,2\,3)$ and $(1\,3\,2)$. Finally $D(K) = \{e\}$ since $K$ is abelian.
-> 3. For $n \geq 5$: $D(S_n) = A_n$ and $D(A_n) = A_n$ (Characters of $A_n$ Are Trivial for $n \geq 5$, [[§47 Commutators#^thm-47-10|Theorem §47.10]]), so the series is $S_n \trianglerighteq A_n \trianglerighteq A_n \trianglerighteq \cdots$ and never reaches $\{e\}$.
+> 2. $S_4 \trianglerighteq A_4 \trianglerighteq K \trianglerighteq \{e\}$. Here $D(A_4) = K$: on one hand $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so $D(A_4) \subseteq K$ (Abelian Quotients and Commutators, [[§47 Commutators#^prop-47-13|Proposition §47.13]]); on the other hand $(1\,2\,3)(1\,2\,4)(1\,2\,3)^{-1}(1\,2\,4)^{-1} = (1\,2)(3\,4)$, and $D(A_4)$ is [[§47 Commutators#^prop-47-4|normal]] in $A_4$, so it also contains the conjugates $(1\,3)(2\,4)$ and $(1\,4)(2\,3)$ of $(1\,2)(3\,4)$ by $(1\,2\,3)$ and $(1\,3\,2)$. Finally $D(K) = \{e\}$ since $K$ is abelian.
+> 3. For $n \geq 5$: $D(S_n) = A_n$ and $D(A_n) = A_n$ (Characters of $A_n$ Are Trivial for $n \geq 5$, [[§47 Commutators#^thm-47-11|Theorem §47.11]]), so the series is $S_n \trianglerighteq A_n \trianglerighteq A_n \trianglerighteq \cdots$ and never reaches $\{e\}$.
 >
 > *Source: not from class*
 
@@ -68,13 +68,36 @@ tags: [group-theory, math493]
 ^cor-49-2
 
 > [!proof]+ Proof
-> Let $n \geq 5$ and suppose $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = A_n$ is a chain with abelian quotients. Let $j$ be the largest index with $G_j \neq A_n$. Then $G_j \trianglelefteq G_{j+1} = A_n$, and $A_n$ is [[§43 Simple Groups#^def-43-1|simple]] ([[§43 Simple Groups#^thm-43-9|Theorem §43.9]]), so $G_j = \{e\}$; but then $G_{j+1}/G_j \cong A_n$ is not abelian, a contradiction. So $A_n$ is not solvable, and neither is $S_n$, which contains $A_n$ (Subgroups of Solvable Groups Are Solvable, [[§48 Solvable Groups#^prop-48-2|Proposition §48.2]]). For $n \leq 4$, $S_n$ is a subgroup of $S_4$ (fixing the remaining points), hence solvable ([[§48 Solvable Groups#^prop-48-1|Proposition §48.1]]). (This argument uses simplicity of $A_n$; by WS 9.6 ([[§49 The Derived Series#^thm-49-1|Theorem §49.1]]) the derived series in [[§49 The Derived Series#^ex-49-1|Example §49.1]] gives the same conclusion.)
+> Let $n \geq 5$ and suppose $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = A_n$ is a chain with abelian quotients. Let $j$ be the largest index with $G_j \neq A_n$. Then $G_j \trianglelefteq G_{j+1} = A_n$, and $A_n$ is [[§43 Simple Groups#^def-43-1|simple]] ([[§43 Simple Groups#^thm-43-9|Theorem §43.9]]), so $G_j = \{e\}$; but then $G_{j+1}/G_j \cong A_n$ is not abelian, a contradiction. So $A_n$ is not solvable, and neither is $S_n$, which contains $A_n$ (Subgroups of Solvable Groups Are Solvable, [[§48 Solvable Groups#^prop-48-3|Proposition §48.3]]). For $n \leq 4$, $S_n$ is a subgroup of $S_4$ (fixing the remaining points), hence solvable ([[§48 Solvable Groups#^prop-48-2|Proposition §48.2]]). (This argument uses simplicity of $A_n$; by WS 9.6 ([[§49 The Derived Series#^thm-49-1|Theorem §49.1]]) the derived series in [[§49 The Derived Series#^ex-49-1|Example §49.1]] gives the same conclusion.)
 
 ^pf-49-2
 
-*Uses:* [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§43 Simple Groups#^def-43-1|Def. §43.1]], [[§43 Simple Groups#^thm-43-9|§43.9]], [[§48 Solvable Groups#^prop-48-2|§48.2]], [[§48 Solvable Groups#^prop-48-1|§48.1]], [[§49 The Derived Series#^thm-49-1|§49.1]], [[§49 The Derived Series#^ex-49-1|Ex. §49.1]]
+*Uses:* [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§43 Simple Groups#^def-43-1|Def. §43.1]], [[§43 Simple Groups#^thm-43-9|§43.9]], [[§48 Solvable Groups#^prop-48-3|§48.3]], [[§48 Solvable Groups#^prop-48-2|§48.2]], [[§49 The Derived Series#^thm-49-1|§49.1]], [[§49 The Derived Series#^ex-49-1|Ex. §49.1]]
 
 > [!remark] Remark: The Derived Series as a Crank
-> The [[§48 Solvable Groups#^def-48-1|definition of solvability]] asks us to hunt for a chain, as in WS 9.1 ([[§48 Solvable Groups#^prop-48-1|Proposition §48.1]]). The [[§49 The Derived Series#^def-49-1|derived series]] is the mechanical alternative: turn the crank $H \mapsto D(H)$ and see whether $\{e\}$ is reached. For a finite group each step either shrinks the group or changes nothing, and once $D_{k+1}(G) = D_k(G)$ the series is stuck forever. So a finite group's series either reaches $\{e\}$ (solvable) or gets stuck at a nontrivial group $H$ with $D(H) = H$ (not solvable): $S_5 \trianglerighteq A_5 \trianglerighteq A_5 \trianglerighteq \cdots$. The lecture noted that infinite groups can instead descend forever without reaching $\{e\}$ (free groups are an example; not from class).
+> The [[§48 Solvable Groups#^def-48-1|definition of solvability]] asks us to hunt for a chain, as in WS 9.1. The [[§49 The Derived Series#^def-49-1|derived series]] is the mechanical alternative: turn the crank $H \mapsto D(H)$ and see whether $\{e\}$ is reached. For a finite group the series either reaches $\{e\}$ (solvable) or gets stuck at a nontrivial group $H$ with $D(H) = H$ (not solvable), by Proposition [[§49 The Derived Series#^prop-49-3|§49.3]]: $S_5 \trianglerighteq A_5 \trianglerighteq A_5 \trianglerighteq \cdots$ (Example [[§49 The Derived Series#^ex-49-1|§49.1]](3)). The lecture noted that infinite groups can instead descend forever without reaching $\{e\}$ (free groups are an example; not from class).
+>
+> *Source: lecture 10/9*
 
 ^rem-49-2
+
+> [!theorem] Proposition §49.3: The Derived Series of a Finite Group Stabilizes
+> Let $G$ be a finite group.
+>
+> 1. $D_{k+1}(G) \subseteq D_k(G)$ for every $k$, and there is a $k$ with $D_{k+1}(G) = D_k(G)$; for such $k$, $D_j(G) = D_k(G)$ for all $j \geq k$.
+> 2. With $H = D_k(G)$ for such a $k$: if $H = \{e\}$, then $G$ is solvable; otherwise $H$ is a nontrivial group with $D(H) = H$, and $G$ is not solvable.
+>
+> *Source: lecture 10/9*
+
+^prop-49-3
+
+> [!proof]+ Proof
+> *Idea:* the orders $|D_k(G)|$ can drop only finitely often; once a step changes nothing, no later step does.
+>
+> **(1)** For any group $L$, $D(L)$ is a subgroup of $L$, so $D_{k+1}(G) = D(D_k(G)) \subseteq D_k(G)$. Hence $|G| = |D_0(G)| \geq |D_1(G)| \geq \cdots \geq 1$, a weakly decreasing sequence of positive integers, which can decrease strictly only finitely many times. So for some $k$, $|D_{k+1}(G)| = |D_k(G)|$, and since $D_{k+1}(G) \subseteq D_k(G)$ are finite, $D_{k+1}(G) = D_k(G)$. If $D_j(G) = D_k(G)$ for some $j \geq k$, then $D_{j+1}(G) = D(D_j(G)) = D(D_k(G)) = D_{k+1}(G) = D_k(G)$; by induction $D_j(G) = D_k(G)$ for all $j \geq k$.
+>
+> **(2)** If $H = \{e\}$, then $D_k(G) = \{e\}$ and $G$ is solvable by Solvability via the Derived Series (Theorem [[§49 The Derived Series#^thm-49-1|§49.1]]). If $H \neq \{e\}$, then $D(H) = D_{k+1}(G) = D_k(G) = H$. Every term of the series is $\neq \{e\}$: for $j \geq k$, $D_j(G) = H$ by (1), and for $j < k$, $D_j(G) \supseteq D_k(G) = H$. So $D_N(G) \neq \{e\}$ for every $N$, and $G$ is not solvable by the same theorem.
+
+^pf-49-3
+
+*Uses:* [[§49 The Derived Series#^thm-49-1|§49.1]]

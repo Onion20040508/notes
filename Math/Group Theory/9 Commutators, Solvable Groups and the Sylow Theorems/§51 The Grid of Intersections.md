@@ -124,7 +124,7 @@ with simple quotients $S_i = X_i/X_{i-1}$ and $T_j = Y_j/Y_{j-1}$.
 >
 > Since $Z_{i(j-1)} \trianglelefteq Z_{ij}$ (Proposition [[§51 The Grid of Intersections#^prop-51-2|§51.2]]) and $\pi$ is surjective, the image $\pi(Z_{i(j-1)})$ is normal in $H_{ij}$ (Proposition [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], WS 6.6(3)).
 >
-> This is part (1) of Proposition [[§48 Solvable Groups#^prop-48-4|§48.4]], applied in the group $Y_j$ to the chain $Z_{0j} \trianglelefteq \cdots \trianglelefteq Z_{mj} = Y_j$ and the subgroup $Y_{j-1}$, whose intersections with the chain are the $Z_{i(j-1)}$. The new ingredient is the normality in (2).
+> This is part (1) of Proposition [[§48 Solvable Groups#^prop-48-5|§48.5]], applied in the group $Y_j$ to the chain $Z_{0j} \trianglelefteq \cdots \trianglelefteq Z_{mj} = Y_j$ and the subgroup $Y_{j-1}$, whose intersections with the chain are the $Z_{i(j-1)}$. The new ingredient is the normality in (2).
 >
 > **(3)** By (1) and (2), each $H_{i(j-1)}$ is isomorphic to a normal subgroup of $H_{ij}$, giving a chain up the column
 >
@@ -136,7 +136,7 @@ with simple quotients $S_i = X_i/X_{i-1}$ and $T_j = Y_j/Y_{j-1}$.
 
 ^pf-51-4
 
-*Uses:* [[§41 The First and Second Isomorphism Theorems#^lem-41-4|§41.4]], [[§51 The Grid of Intersections#^lem-51-1|§51.1]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§51 The Grid of Intersections#^prop-51-2|§51.2]], [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§48 Solvable Groups#^prop-48-4|§48.4]]
+*Uses:* [[§41 The First and Second Isomorphism Theorems#^lem-41-4|§41.4]], [[§51 The Grid of Intersections#^lem-51-1|§51.1]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§51 The Grid of Intersections#^prop-51-2|§51.2]], [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§48 Solvable Groups#^prop-48-5|§48.5]]
 
 > [!remark] Remark: The Possible Squares
 > Consider one square of the grid. To keep the subscripts out of the way, the lecture names its corners
@@ -207,7 +207,7 @@ with simple quotients $S_i = X_i/X_{i-1}$ and $T_j = Y_j/Y_{j-1}$.
 > [D : A] = [D : C]\,[C : A] = |S_i| \cdot |T_j|, \qquad [D : A] = [D : B]\,[B : A] = |T_j| \cdot 1,
 > $$
 >
-> so $|S_i| = 1$, impossible for a simple group. The quotient argument above works for infinite groups too. Another student proposed comparing $(D/A)/(B/A) \cong D/B$ and $(D/A)/(C/A) \cong D/C$ (Third Isomorphism Theorem, Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|§42.5]]), which is the same argument in other words. In the crossing square the count gives only $|S_i| = |T_j|$: this suggests the isomorphism of the next proposition, but does not prove it.
+> so $|S_i| = 1$, impossible for a simple group. The quotient argument above works for infinite groups too. Another student proposed comparing $(D/A)/(B/A) \cong D/B$ and $(D/A)/(C/A) \cong D/C$ (Third Isomorphism Theorem, Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]]), which is the same argument in other words. In the crossing square the count gives only $|S_i| = |T_j|$: this suggests the isomorphism of the next proposition, but does not prove it.
 >
 > *Source: lecture 10/30*
 

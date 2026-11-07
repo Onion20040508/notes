@@ -11,24 +11,18 @@ tags: [group-theory, hub]
 - [[§4 Subgroups#^lem-4-4|Lemma §4.4: Exponent Laws]], in [[§4 Subgroups]]
 
 ## Its proof uses
-- [[§1 The Definition of a Group#^prop-1-1|Proposition §1.1: Generalized Associativity]]
 - [[§2 First Consequences of the Axioms#^prop-2-3|Proposition §2.3: Uniqueness of Inverses]]
-- [[§2 First Consequences of the Axioms#^prop-2-4|Proposition §2.4: Inverse of a Product]]
-- [[§4 Subgroups#^def-4-2|Definition §4.2: Integer Powers]]
-
-## Its proof uses (other subjects)
-- [[§1 The Set ℕ of Natural Numbers#^thm-1-1|451 §1.1: Principle of Mathematical Induction]]
 
 ## Used in (Group Theory)
 - [[§4 Subgroups#^prop-4-5|Proposition §4.5: ⟨g⟩ Is a Subgroup]]
 - [[§4 Subgroups#^prop-4-6|Proposition §4.6: ⟨g⟩ Is the Smallest Subgroup Containing g]]
-- [[§4 Subgroups#^prop-4-8|Proposition §4.8: Every Element of a Finite Group Has Finite Order]]
+- [[§4 Subgroups#^prop-4-10|Proposition §4.10: Every Element of a Finite Group Has Finite Order]]
 - [[§11 Disjoint Cycle Decomposition#^thm-11-3|Theorem §11.3: Disjoint Cycle Decomposition]]
 - [[§11 Disjoint Cycle Decomposition#^prop-11-4|Proposition §11.4: Computing with Disjoint Cycles]]
 - [[§13 The Symmetric Group S₃#^prop-13-1|Proposition §13.1: Subgroups of S_3]]
 - [[§16 Isomorphisms#^prop-16-4|Proposition §16.4: Homomorphisms and Orders of Elements]]
 - [[§16 Isomorphisms#^prop-16-7|Proposition §16.7: ℤ/4ℤ ≅ U_5]]
-- [[§16 Isomorphisms#^prop-16-8|Proposition §16.8: U_8 and U_7]]
+- [[§16 Isomorphisms#^lem-16-9|Lemma §16.9: A Group of Order 4 in Which Every Element Squares to e Is Not Cyclic]]
 - [[§17 Cyclic Groups#^thm-17-1|Theorem §17.1: Classification of Cyclic Groups]]
 - [[§17 Cyclic Groups#^prop-17-3|Proposition §17.3: The Homomorphism k ↦ g^k and ⟨g⟩ ≅ ℤ/Nℤ]]
 - [[§17 Cyclic Groups#^thm-17-4|Theorem §17.4: Subgroups of Cyclic Groups Are Cyclic]]

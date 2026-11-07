@@ -50,7 +50,7 @@ tags: [differentiable-manifolds, math591]
 ^ex-13-2
 
 > [!remark]- Connections
-> - In 493 the orbits of this action are the right cosets: [[§28 Left and Right Cosets#^prop-28-1|493 §28.1 (Cosets Are Orbits)]]; the left-coset version is [[§14 Homogeneous Spaces#^prop-14-4|§14.4]].
+> - In 493 the orbits of this action are the right cosets: [[§28 Left and Right Cosets#^prop-28-2|493 §28.2 (Cosets Are Orbits)]]; the left-coset version is [[§14 Homogeneous Spaces#^prop-14-4|§14.4]].
 
 > [!definition] Definition §13.2: Continuous Action
 > If $G$ is a topological group and $X$ a topological space, an action is **continuous** if the map $G \times X \to X$, $(g,x) \mapsto g \cdot x$, is continuous (product topology on $G \times X$).

@@ -62,10 +62,33 @@ Inside any ball there is a smaller closed ball that misses $\overline{E}$ entire
 
 ^pf-40-1
 
-> [!remark] Remark: Two Facts About Nowhere Dense Sets
-> Two facts are used below. (a) If the closed ball $\overline{B(x_1, r_1)}$ works in the lemma, so does $\overline{B(x_1, r_1')}$ for any $0 < r_1' \le r_1$, since it is a subset; so $r_1$ can be taken as small as we like. (b) $E$ and $\overline{E}$ have the same closure ($\overline{E}$ is closed, Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]]), so $E$ is nowhere dense if and only if $\overline{E}$ is. This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ in the proof below.
+Two facts are used in the proof below.
 
-^xrem-40-1
+> [!theorem] Lemma §40.2: Smaller Balls Also Work
+> Let $E \subset X$, and let $B(x_1, r_1)$ satisfy the conclusion of Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]] for the ball $B(x_0, r)$: $\overline{B(x_1, r_1)} \subset B(x_0, r)$ and $\overline{B(x_1, r_1)} \cap \overline{E} = \varnothing$. Then $B(x_1, r_1')$ satisfies the same two conditions for every $0 < r_1' \le r_1$. So $r_1$ can be taken as small as we like.
+
+^lem-40-2
+
+> [!proof]+ Proof
+> *(Not from lecture.)* $B(x_1, r_1') \subset B(x_1, r_1)$, since $d(x, x_1) < r_1' \le r_1$. Closure preserves inclusion (a limit of points of the smaller set is a limit of points of the larger one, Definition [[§11 Normed Linear Spaces#^def-11-7|§11.7]]), so $\overline{B(x_1, r_1')} \subset \overline{B(x_1, r_1)}$. Both conditions pass to subsets.
+
+^pf-40-2
+
+*Uses:* [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]]
+
+> [!theorem] Lemma §40.3: $E$ is Nowhere Dense if and only if $\overline{E}$ is
+> Let $(X, d)$ be a metric space and $E \subset X$. Then $E$ is nowhere dense if and only if $\overline{E}$ is nowhere dense.
+
+^lem-40-3
+
+> [!proof]+ Proof
+> *(Not from lecture.)* $\overline{E}$ is closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]]), so the closure of $\overline{E}$ is $\overline{E}$ itself: $E$ and $\overline{E}$ have the same closure. By Definition [[§40 The Baire Category Theorem#^def-40-1|§40.1]](1), both statements say that this common closure has no interior points.
+
+^pf-40-3
+
+*Uses:* [[§11 Normed Linear Spaces#^prop-11-7|§11.7]], [[§40 The Baire Category Theorem#^def-40-1|Def. §40.1]]
+
+This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ in the proof below.
 
 > [!theorem] Theorem §40.4: Baire Category Theorem
 > Let $X$ be a (nonempty) complete metric space. Then $X$ is of the second category: $X$ is not a countable union of nowhere dense sets.
@@ -96,7 +119,7 @@ Inside any ball there is a smaller closed ball that misses $\overline{E}$ entire
 > \overline{B(x_2, r_2)} \subset B(x_1, r_1), \qquad \overline{B(x_2, r_2)} \cap \overline{E}_2 = \varnothing .
 > $$
 >
-> (The radius can always be made smaller: if a closed ball works, so does any smaller closed ball with the same center, fact (a) of the remark *Two Facts About Nowhere Dense Sets*.) Continue. Assume we have obtained
+> (The radius can always be made smaller: if a closed ball works, so does any smaller closed ball with the same center, Lemma [[§40 The Baire Category Theorem#^lem-40-2|§40.2]].) Continue. Assume we have obtained
 >
 > $$
 > B(x_{n-1}, r_{n-1}) \subset \cdots \subset B(x_2, r_2) \subset B(x_1, r_1) \subset B(x_0, 1)

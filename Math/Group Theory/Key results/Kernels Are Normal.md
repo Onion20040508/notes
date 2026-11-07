@@ -18,18 +18,19 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§39 Sources of Normal Subgroups#^thm-39-5|Theorem §39.5: A Normal Subgroup Inside a Subgroup of Finite Index]]
 - [[§39 Sources of Normal Subgroups#^prop-39-9|Proposition §39.9: Normal Subgroups of GL_2(ℝ)]]
+- [[§40 Quotient Groups#^cor-40-3|Corollary §40.3: Kernels and Normal Subgroups Are the Same Thing]]
 - [[§41 The First and Second Isomorphism Theorems#^thm-41-1|Theorem §41.1: First Isomorphism Theorem]]
 - [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Theorem §41.5: Second Isomorphism Theorem]]
-- [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|Theorem §42.5: Third Isomorphism Theorem]]
+- [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|Theorem §42.6: Third Isomorphism Theorem]]
 - [[§43 Simple Groups#^prop-43-3|Proposition §43.3: Homomorphisms out of a Simple Group]]
 - [[§43 Simple Groups#^prop-43-10|Proposition §43.10: The Pair-Partition Homomorphism S_4 → S_3]]
-- [[§50 Composition Series#^lem-50-2|Lemma §50.2: Finite Groups Have Composition Series]]
-- [[§55 The Sylow Theorems#^prop-55-13|Proposition §55.13: Sylow p-Subgroups of GLₙ(𝔽_p) and Flags]]
-- [[§56 Simple Groups of Small Order#^prop-56-4|Proposition §56.4: The Conjugation Homomorphism G → S_n_p]]
-- [[§56 Simple Groups of Small Order#^lem-56-5|Lemma §56.5: Homomorphisms That Leave A_N]]
+- [[§50 Composition Series#^lem-50-3|Lemma §50.3: Finite Groups Have Composition Series]]
+- [[§55 The Sylow Theorems#^prop-55-14|Proposition §55.14: Sylow p-Subgroups of GLₙ(𝔽_p) and Flags]]
+- [[§56 Simple Groups of Small Order#^prop-56-7|Proposition §56.7: The Conjugation Homomorphism G → S_n_p]]
+- [[§56 Simple Groups of Small Order#^lem-56-8|Lemma §56.8: Homomorphisms That Leave A_N]]
 - [[§58 Semidirect Products#^thm-58-6|Theorem §58.6: Internal and External Semidirect Products Agree]]
 
 ## Connections
-- **Converse.** Every normal subgroup is the kernel of G → G/N ([[§40 Quotient Groups#^prop-40-2|§40.2]]), so normal subgroups and kernels are the same thing ([[§40 Quotient Groups#^rem-40-2|Kernels and Normal Subgroups Are the Same Thing]]). Images need not be normal ([[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]]).
+- **Converse.** Every normal subgroup is the kernel of G → G/N ([[§40 Quotient Groups#^prop-40-2|§40.2]]), so normal subgroups and kernels are the same thing (Corollary [[§40 Quotient Groups#^cor-40-3|§40.3]]). Images need not be normal ([[§39 Sources of Normal Subgroups#^prop-39-3|§39.3]]).
 - **Used for.** Producing normal subgroups without checking conjugates: Aₙ = Ker sgn, SL_n = Ker det, and Z(G) as the kernel of the conjugation action ([[§39 Sources of Normal Subgroups#^ex-39-2|Ex. §39.2]]); K = Ker(S₄ → S₃) ([[§43 Simple Groups#^prop-43-10|§43.10]]); the normal core ([[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]]). It is the first step of the [[First Isomorphism Theorem for Groups]], and it makes homomorphisms out of a simple group injective or trivial ([[§43 Simple Groups#^prop-43-3|§43.3]]).
 - **Same idea elsewhere.** The 590 notes prove it in one line ([[§27 Free Groups and Presentations#^rem-27-17|Remark after Definition §21.12]]) and use it to form presentations F/N ([[§27 Free Groups and Presentations#^def-27-6|Group Presentation]]). For vector spaces a null space is a subspace ([[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]]) with no extra condition, since every subspace is the null space of its quotient map.

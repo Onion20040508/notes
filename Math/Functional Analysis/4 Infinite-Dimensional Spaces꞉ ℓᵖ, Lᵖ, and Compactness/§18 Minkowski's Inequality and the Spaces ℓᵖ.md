@@ -94,9 +94,20 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 *Uses:* [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]]
 
 > [!remark] Remark: Where the Finiteness is Used
-> The case of infinite sums is handled by the structure above: Steps 1–2 are valid as inequalities in $[0,\infty]$ regardless, but Step 3 divides by $\|a+b\|_p^{\,p-1}$, and “$\infty \le \infty \cdot C$” cannot be cancelled to “$\infty \le C$.” The truncation makes every quantity finite, and monotone convergence of the partial sums then carries the inequality to the full series. This is a general pattern: prove the estimate in a setting where everything is finite, then pass to the limit through an increasing family. Minkowski fails for $0 < p < 1$: the same computation cannot be run because [[§17 Hölder's Inequality for Sequences#^thm-17-1|Hölder]] needs $q \ge 1$, and in fact $\|\cdot\|_p$ is then not subadditive: for $a = e_1$ and $b = e_2$, $\|a + b\|_p = 2^{1/p} > 2 = \|a\|_p + \|b\|_p$.
+> The case of infinite sums is handled by the structure above: Steps 1–2 are valid as inequalities in $[0,\infty]$ regardless, but Step 3 divides by $\|a+b\|_p^{\,p-1}$, and “$\infty \le \infty \cdot C$” cannot be cancelled to “$\infty \le C$.” The truncation makes every quantity finite, and monotone convergence of the partial sums then carries the inequality to the full series. This is a general pattern: prove the estimate in a setting where everything is finite, then pass to the limit through an increasing family. Minkowski fails for $0 < p < 1$: the same computation cannot be run because [[§17 Hölder's Inequality for Sequences#^thm-17-1|Hölder]] needs $q \ge 1$, and in fact $\|\cdot\|_p$ is then not subadditive (Example [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^ex-18-1|§18.1]]).
 
 ^rem-18-1
+
+> [!example] Example §18.1: Minkowski Fails for $0 < p < 1$
+> Let $0 < p < 1$ and define $\|a\|_p = \bigl( \sum_i |a_i|^p \bigr)^{1/p}$ by the same formula as for $p \ge 1$. Take $a = e_1 = (1, 0, 0, \ldots)$ and $b = e_2 = (0, 1, 0, \ldots)$. We show $\|a + b\|_p > \|a\|_p + \|b\|_p$, so $\|\cdot\|_p$ is not subadditive.
+>
+> Each of $a$, $b$ has a single nonzero entry, equal to $1$, so $\|a\|_p = \|b\|_p = (1^p)^{1/p} = 1$ and $\|a\|_p + \|b\|_p = 2$. The sequence $a + b = (1, 1, 0, \ldots)$ has two entries equal to $1$, so $\|a + b\|_p = (1 + 1)^{1/p} = 2^{1/p}$. Since $0 < p < 1$, the exponent $1/p$ exceeds $1$, and $t \mapsto 2^t$ is strictly increasing, so $2^{1/p} > 2^1 = 2$. Hence
+>
+> $$
+> \|a + b\|_p = 2^{1/p} > 2 = \|a\|_p + \|b\|_p .
+> $$
+
+^ex-18-1
 
 ## The Spaces ℓᵖ
 
@@ -136,13 +147,24 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 
 *Uses:* [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]]
 
-> [!remark]- Connections
-> - The function-space counterpart: [[§35 Lᵖ as a Banach Space#^thm-35-3|551 §35.3]] ($L^p$ is a normed linear space).
+> [!example] Example §18.2: $\ell^p$ is Infinite-Dimensional
+> Let $1 \le p \le \infty$ and let $e_j = (0, \ldots, 0, 1, 0, \ldots)$, with the $1$ in the $j$-th place; so $e_1 = (1,0,0,\ldots)$, $e_2 = (0,1,0,\ldots)$, \dots. We show that $e_1, e_2, \ldots$ lie in $\ell^p$ and are linearly independent, so that $\ell^p$ is infinite-dimensional.
+>
+> *Membership.* $e_j$ has a single nonzero entry, equal to $1$, so $\|e_j\|_p = 1$ for $p < \infty$ and $\|e_j\|_\infty = 1$; in particular $e_j \in \ell^p$.
+>
+> *Independence.* Let $n \in \mathbb{N}$ and $c_1, \ldots, c_n \in \mathbb{F}$ with $\sum_{j=1}^n c_j e_j = 0$. The left side is the sequence $(c_1, \ldots, c_n, 0, 0, \ldots)$, and a sequence is $0$ only if every entry is $0$; so $c_1 = \cdots = c_n = 0$.
+>
+> So for every $n$ the space $\ell^p$ contains $n$ linearly independent vectors. A space of finite dimension $d$ contains no $d + 1$ linearly independent vectors, so $\ell^p$ is not finite-dimensional.
+
+^ex-18-2
 
 > [!remark] Remark
-> $\ell^p$ is the first genuinely infinite-dimensional normed space in the course: it contains the linearly independent sequences $e_1 = (1,0,0,\ldots)$, $e_2 = (0,1,0,\ldots)$, …. Unlike the norms $\|\cdot\|_p$ on $\mathbb{R}^n$, the spaces $\ell^p$ for different $p$ are different sets, and their norms are not equivalent where both are defined.
+> $\ell^p$ is the first genuinely infinite-dimensional normed space in the course (Example [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^ex-18-2|§18.2]]). Unlike the norms $\|\cdot\|_p$ on $\mathbb{R}^n$, the spaces $\ell^p$ for different $p$ are different sets, and their norms are not equivalent where both are defined.
 
 ^rem-18-2
+
+> [!remark]- Connections
+> - The function-space counterpart: [[§35 Lᵖ as a Banach Space#^thm-35-3|551 §35.3]] ($L^p$ is a normed linear space).
 
 > [!theorem] Proposition §18.4: Nesting of the $\ell^p$ Spaces
 > Let $1 \le p < q \le \infty$.
@@ -261,9 +283,6 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 
 ^rem-18-4
 
-![[m556-13-2.svg]]
-*The order of limits in Step 2. Each row is one term $a^{(n)}$ of the Cauchy sequence, each column one coordinate $i$. (1) Compare rows $n$ and $m$ on the first $k$ coordinates only (red box), a finite sum $< \varepsilon^p$; (2) let $m \to \infty$ column by column inside the box, legitimate because there are only $k$ columns; (3) only then let $k \to \infty$, which is harmless because the bound $\varepsilon^p$ does not depend on $k$. Doing (3) before (2) would mean exchanging $m \to \infty$ with an infinite sum.*
-
 > [!remark] Remark: The Coordinate Formulation
 > Step 1 can be shortened by working with one coordinate at a time. Fix a coordinate $i$. A single term of a series of non-negative numbers is at most the sum, so
 >
@@ -278,9 +297,25 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 > $$
 >
 > Put $a = (a_1, a_2, \ldots) \in \ell$. This is the candidate. Nothing has been proved about it yet: it is not known that $a \in \ell^p$, nor that $a^{(n)} \to a$ in $\|\cdot\|_p$; only that each coordinate converges.
-> The two formulations are the same thing: convergence in $\mathbb{F}^k$ is coordinatewise convergence, and only the coordinates are used afterwards. The alternating sequence $e_1, e_2, e_1, e_2, \ldots$ may look like a worry for coordinatewise limits; it is not Cauchy in $\ell^p$ ($\|e_1 - e_2\|_p = 2^{1/p}$ does not go to $0$), so it is not a counterexample to anything.
+> The two formulations are the same thing: convergence in $\mathbb{F}^k$ is coordinatewise convergence, and only the coordinates are used afterwards. The alternating sequence $e_1, e_2, e_1, e_2, \ldots$ may look like a worry for coordinatewise limits; it is not a counterexample to anything (Example [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^ex-18-3|§18.3]]).
 
 ^rem-18-5
+
+> [!example] Example §18.3: An Alternating Sequence of Unit Vectors in $\ell^p$
+> Let $1 \le p \le \infty$ and let $x^{(n)} = e_1$ for $n$ odd and $x^{(n)} = e_2$ for $n$ even, i.e. the sequence $e_1, e_2, e_1, e_2, \ldots$ in $\ell^p$. Its coordinates do not converge: the first coordinate runs through $1, 0, 1, 0, \ldots$. We show that it is not Cauchy in $\ell^p$, so the proof of Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]], which starts from a Cauchy sequence, says nothing about it.
+>
+> For every $n$, $x^{(n)} - x^{(n+1)} = \pm (e_1 - e_2)$, a sequence with exactly two nonzero entries, $1$ and $-1$. Hence
+>
+> $$
+> \bigl\| x^{(n)} - x^{(n+1)} \bigr\|_p = \bigl( 1^p + 1^p \bigr)^{1/p} = 2^{1/p} \quad (p < \infty), \qquad \bigl\| x^{(n)} - x^{(n+1)} \bigr\|_\infty = 1 ,
+> $$
+>
+> for every $n$. Consecutive terms stay a fixed positive distance apart, so the Cauchy condition fails (take $\varepsilon$ below that distance and $m = n + 1$).
+
+^ex-18-3
+
+![[m556-13-2.svg]]
+*The order of limits in Step 2. Each row is one term $a^{(n)}$ of the Cauchy sequence, each column one coordinate $i$. (1) Compare rows $n$ and $m$ on the first $k$ coordinates only (red box), a finite sum $< \varepsilon^p$; (2) let $m \to \infty$ column by column inside the box, legitimate because there are only $k$ columns; (3) only then let $k \to \infty$, which is harmless because the bound $\varepsilon^p$ does not depend on $k$. Doing (3) before (2) would mean exchanging $m \to \infty$ with an infinite sum.*
 
 > [!remark] Remark: Comparison with Lax
 > Three differences of route in [[§17 Hölder's Inequality for Sequences|§17]]–[[§18 Minkowski's Inequality and the Spaces ℓᵖ|§18]]. Lax states Hölder's inequality without proof, referring to Courant; here it is proved from Young's inequality (Lemma [[§16 Means and Young's Inequality#^lem-16-3|§16.3]]). Lax obtains Minkowski's inequality from the *duality formula* $\|x\|_p = \max_{\|u\|_q = 1} |(x, u)|$ with $(x,u) = \sum_j a_j c_j$ (his Theorem 5): a maximum of sums is at most a sum of maxima, so subadditivity is immediate once the formula is known, and the formula itself rests on the equality case of Hölder. The route in lecture (Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]]) avoids the equality case at the price of the truncation argument. The duality formula is the first appearance of the dual-space theme that returns in Lax's Chapter 8. Finally, Lax asserts the completeness of $\ell^p$ and $\ell^\infty$ without proof (examples (a)–(b)); Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]] proves it.

@@ -15,6 +15,7 @@ tags: [functional-analysis, hub]
 - [[§11 Normed Linear Spaces#^prop-11-8|Proposition §11.8: Metric Interior Points are Interior Points]]
 
 ## Used in (Functional Analysis)
+- [[§43 Weak and Weak-Star Convergence#^cor-43-6|Corollary §43.6: Hyperplane Separation over ℂ]]
 - [[§43 Weak and Weak-Star Convergence#^thm-43-7|Theorem §43.7: Mazur's Theorem]]
 
 ## Connections

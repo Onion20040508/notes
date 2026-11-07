@@ -125,6 +125,8 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 
 *Uses:* [[§27 Orthonormal Sets and Bases#^def-27-3|Def. §27.3]]
 
+Read through Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], Theorem [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]] is the theory of Fourier series in $L^2$:
+
 > [!theorem] Proposition §27.4: Only Countably Many Coefficients are Nonzero
 > Let $\{e_\alpha\}_{\alpha \in \Lambda}$ be orthonormal in an inner product space $X$, and $x \in X$. Then the set
 >
@@ -351,7 +353,7 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 *Uses:* [[§27 Orthonormal Sets and Bases#^def-27-2|Def. §27.2]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
 
 > [!remark] Remark
-> The proof never uses that the $f_n$ are orthonormal beyond making completeness of $\{f_n\}$ a meaningful notion; the mechanism is that $x \perp f_n$ makes each coefficient $(x, e_n)$ small, and Parseval turns “all coefficients small in $\ell^2$” into “$\|x\|$ smaller than itself”. Some hypothesis of this kind is needed: in $\ell^2$ the shifted sequence $f_n = e_{n+1}$ is orthonormal but not complete ($e_1 \perp f_n$ for all $n$), and there $\sum_n \|e_n - f_n\|^2 = \infty$.
+> The proof never uses that the $f_n$ are orthonormal beyond making completeness of $\{f_n\}$ a meaningful notion; the mechanism is that $x \perp f_n$ makes each coefficient $(x, e_n)$ small, and Parseval turns “all coefficients small in $\ell^2$” into “$\|x\|$ smaller than itself”. Some hypothesis of this kind is needed: the shifted standard basis of $\ell^2$ is orthonormal but not complete, and it is far from the standard basis (Example [[§27 Orthonormal Sets and Bases#^ex-27-2|§27.2]]).
 
 ^rem-27-8
 
@@ -361,6 +363,17 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 > In $\ell^2$ with $(a, b) = \sum_j a_j \overline{b_j}$, let $e_j = (0, \ldots, 0, 1, 0, \ldots)$ with the $1$ in the $j$-th place. Then $(e_i, e_j) = \delta_{ij}$, so $\{e_j\}_{j \ge 1}$ is orthonormal, and $(a, e_j) = a_j$. It is complete: if $(a, e_j) = a_j = 0$ for all $j$ then $a = 0$. By Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]] it is an orthonormal basis: $a = \sum_j a_j e_j$ in $\ell^2$, and Parseval's equality is $\|a\|_2^2 = \sum_j |a_j|^2$, the definition of the norm.
 
 ^ex-27-1
+
+> [!example] Example §27.2: The Shifted Standard Basis of $\ell^2$
+> In $\ell^2$ let $e_n$ be the standard basis (Example [[§27 Orthonormal Sets and Bases#^ex-27-1|§27.1]]) and $f_n = e_{n+1}$, $n \ge 1$. We show that $\{f_n\}$ is orthonormal but not complete, and that $\sum_n \|e_n - f_n\|^2 = \infty$; so Proposition [[§27 Orthonormal Sets and Bases#^prop-27-10|§27.10]] fails once its hypothesis $\sum_n \|e_n - f_n\|^2 < 1$ is dropped.
+>
+> *Orthonormal.* $(f_n, f_m) = (e_{n+1}, e_{m+1}) = \delta_{nm}$.
+>
+> *Not complete.* $(e_1, f_n) = (e_1, e_{n+1}) = 0$ for every $n \ge 1$, and $e_1 \neq 0$.
+>
+> *Far from $\{e_n\}$.* $e_n - f_n = e_n - e_{n+1}$ has exactly two nonzero entries, $1$ and $-1$, so $\|e_n - f_n\|^2 = 2$ for every $n$, and $\sum_n \|e_n - f_n\|^2 = \infty$.
+
+^ex-27-2
 
 > [!theorem] Theorem §27.11: The Fourier Basis of $L^2[0,2\pi]$
 > In the complex space $L^2[0,2\pi]$, the functions
@@ -388,6 +401,24 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 
 *Uses:* [[§27 Orthonormal Sets and Bases#^def-27-1|Def. §27.1]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
 
+> [!theorem] Corollary §27.12: Fourier Series in $L^2$
+> Let $e_n(x) = e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$. Every $f \in L^2[0,2\pi]$ is
+>
+> $$
+> f = \sum_{n \in \mathbb{Z}} c_n e_n, \qquad c_n = (f, e_n) = \frac{1}{\sqrt{2\pi}} \int_0^{2\pi} f(x)\, e^{-inx}\, dx,
+> $$
+>
+> the series converging in the $L^2$ norm (not necessarily pointwise), and Parseval's equality reads $\int_0^{2\pi} |f|^2 = \sum_n |c_n|^2$.
+
+^cor-27-12
+
+> [!proof]+ Proof
+> By Theorem [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]], $\{e_n\}_{n \in \mathbb{Z}}$ is an orthonormal basis, so Definition [[§27 Orthonormal Sets and Bases#^def-27-4|§27.4]] gives $f = \sum_n (f, e_n)\, e_n$, the sum converging in $L^2[0,2\pi]$ in the sense of Proposition [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]]. The coefficient is $c_n = (f, e_n) = \int_0^{2\pi} f(x)\, \overline{e^{inx}/\sqrt{2\pi}}\, dx = \frac{1}{\sqrt{2\pi}} \int_0^{2\pi} f(x)\, e^{-inx}\, dx$, since $\overline{e^{inx}} = e^{-inx}$. Parseval's equality is Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]](3), with $\|f\|^2 = \int_0^{2\pi} |f|^2$.
+
+^pf-27-12
+
+*Uses:* [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]], [[§27 Orthonormal Sets and Bases#^def-27-4|Def. §27.4]], [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
+
 ![[m556-20-a1.gif|480]]
 
 *(Not from lecture; animation added, vault only.)* The Fourier basis at work on the square wave $f = 1$ on $(0, \pi)$, $-1$ on $(\pi, 2\pi)$ (chosen for the picture). The partial sums $S_N = \sum_{|n| \le N} (f, e_n)e_n$ for $N = 0, 1, 3, \ldots, 25$. Right: the coefficients $|(f, e_n)|^2 + |(f, e_{-n})|^2$, blue once included. $\|f - S_N\|^2 = \|f\|^2 - \sum_{|n| \le N}|(f, e_n)|^2$ falls from $1.19$ ($N = 1$) to $0.10$ ($N = 25$), and tends to $0$ since the basis is complete.
@@ -400,11 +431,6 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 > - Computational version, real form on C[0, 2π]: orthogonality of the trigonometric system [[§57 Applications of Inner Product Spaces#^prop-57-2|235 Prop. §57.2]], the coefficient formulas [[§57 Applications of Inner Product Spaces#^thm-57-3|235 Thm. §57.3]], and convergence in the mean [[§57 Applications of Inner Product Spaces#^thm-57-4|235 Thm. §57.4]], with worked Fourier approximations.
 > - Computational version: convergence in the mean of the Fourier series of any $f$ with $\int f^2<\infty$, [[§15★ Mean Error and Convergence in Mean#^thm-15-6|341 Thm. §15.6]], and pointwise convergence for sectionally smooth $f$, [[§16★ Proof of Convergence#^thm-16-4|341 Thm. §16.4]], with worked examples.
 > - Used in Electromagnetism: the Fourier modes of separation of variables in Cartesian coordinates, their closure as a Dirac comb, and the field of a mesh of charged wires — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]], [[§C6.2 Separation in Cartesian and Spherical Coordinates#^ex-c6-2-2|EM Example §C6.2.2]].
-
-> [!remark] Remark: Fourier Series
-> Read through Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], this is the theory of Fourier series in $L^2$: every $f \in L^2[0,2\pi]$ is $f = \sum_{n \in \mathbb{Z}} c_n e_n$ with $c_n = (f, e_n) = \frac{1}{\sqrt{2\pi}} \int_0^{2\pi} f(x)\, e^{-inx}\, dx$, the series converging in the $L^2$ norm (not necessarily pointwise), and Parseval's equality reads $\int_0^{2\pi} |f|^2 = \sum_n |c_n|^2$.
-
-^xrem-27-9
 
 > [!remark]- Connections
 > - Computational version: real Fourier series and their coefficients, [[§9 Periodic Functions and Fourier Series#^def-9-3|341 Def. §9.3]], and the complex coefficients $c_n$, [[§19★ Complex Methods#^def-19-1|341 Def. §19.1]], with worked examples.

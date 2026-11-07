@@ -8,7 +8,7 @@ The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $1
 
 - $\mathbb{Z}/4\mathbb{Z} \not\cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ ([[§16 Isomorphisms#^prop-16-3|§16]])
 - $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$: the Klein group as a unit group ([[§16 Isomorphisms#^prop-16-8|§16]])
-- $A_4$ has no subgroup of order $6$: the converse of Lagrange fails ([[§29 The Index and Lagrange's Theorem#^ex-29-1|§29]])
+- $A_4$ has no subgroup of order $6$: the converse of Lagrange fails ([[§29 The Index and Lagrange's Theorem#^ex-29-3|§29]])
 - Order $4$: exactly two groups, $\mathbb{Z}/4\mathbb{Z}$ and the Klein four-group ([[§29 The Index and Lagrange's Theorem#^rem-29-3|§29]])
 - The class sizes $1, 6, 3, 8, 6$ of $S_4$ divide $24$, by orbit–stabilizer ([[§30 Orbit–Stabilizer#^rem-30-2|§30]])
 - The rotation group of the cube is $S_4$ ([[§32 Linear Groups, the Cube, S₃ and A₄#^thm-32-5|§32]])
@@ -22,7 +22,7 @@ The symmetric group $S_4$ (order $24$), its alternating subgroup $A_4$ (order $1
 - $PSL_2(\mathbb{F}_3) \cong A_4$, which is not simple ([[§43 Simple Groups#^ex-43-3|§43]])
 - $S_4/K \cong S_3$ by the Second Isomorphism Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-1|§45]])
 - The six subgroups of $S_4$ containing $K$, by the Correspondence Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-2|§45]])
-- $S_4$ is solvable, through $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$ ([[§48 Solvable Groups#^prop-48-1|§48]])
+- $S_4$ is solvable, through $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$ ([[§48 Solvable Groups#^prop-48-2|§48]])
 - The derived series $S_4 \trianglerighteq A_4 \trianglerighteq K \trianglerighteq \{e\}$, with $(1\,2)(3\,4)$ a commutator in $A_4$ ([[§49 The Derived Series#^ex-49-1|§49]])
 
 ## Chapter by chapter
@@ -36,7 +36,7 @@ Revisit parts for $S_4$, $A_4$ and $K$, chapter by chapter: [[§32 Linear Groups
 ![[§16 Isomorphisms#^prop-16-8]]
 
 ## $A_4$ has no subgroup of order $6$: the converse of Lagrange fails
-![[§29 The Index and Lagrange's Theorem#^ex-29-1]]
+![[§29 The Index and Lagrange's Theorem#^ex-29-3]]
 
 ## Order $4$: exactly two groups, $\mathbb{Z}/4\mathbb{Z}$ and the Klein four-group
 ![[§29 The Index and Lagrange's Theorem#^rem-29-3]]
@@ -78,7 +78,7 @@ Revisit parts for $S_4$, $A_4$ and $K$, chapter by chapter: [[§32 Linear Groups
 ![[§45 S₃, S₄, A₄ and A₅#^ex-45-2]]
 
 ## $S_4$ is solvable, through $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$
-![[§48 Solvable Groups#^prop-48-1]]
+![[§48 Solvable Groups#^prop-48-2]]
 
 ## The derived series $S_4 \trianglerighteq A_4 \trianglerighteq K \trianglerighteq \{e\}$
 ![[§49 The Derived Series#^ex-49-1]]

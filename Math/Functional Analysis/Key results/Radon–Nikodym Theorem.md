@@ -25,7 +25,7 @@ tags: [functional-analysis, hub]
 - [[§20 The Lebesgue Integral for Simple Functions#^thm-20-7|551 §20.7: Monotone Convergence Theorem (MCT)]]
 
 ## Used in (Functional Analysis)
-- (not cited later in the course)
+- [[§35 Measures and the Radon–Nikodym Theorem#^lem-35-2|Lemma §35.2: The Set Where the Representer Exceeds One is Null]]
 
 ## Connections
 - **What it says.** If $\nu \ll \mu$ for finite measures, then $\nu$ has a density with respect to $\mu$: $\nu(E) = \int_E g\, d\mu$, $g = d\nu/d\mu$ ([[§35 Measures and the Radon–Nikodym Theorem#^def-35-6|Def. §35.6]]). The converse direction, a non-negative integrable $g$ defining an absolutely continuous measure, is Measure Theory's measure induced by a function ([[§21 Consequences of the Monotone Convergence Theorem#^def-21-1|551 Def. §21.1]]).

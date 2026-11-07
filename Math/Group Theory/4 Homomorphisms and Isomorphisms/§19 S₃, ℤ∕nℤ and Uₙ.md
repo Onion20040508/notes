@@ -17,7 +17,7 @@ Chapter 4 sees $S_3$ whole: its multiplication table, and its non-commutativity 
 
 ![[§16 Isomorphisms#^prop-16-3]]
 
-![[§16 Isomorphisms#^rem-16-4]]
+![[§16 Isomorphisms#^ex-16-2]]
 
 *$S_3$ elsewhere:* ← [[§13 The Symmetric Group S₃#S₃ Earlier in This Chapter|Chapter 3]] · [[§23 S₃, Aₙ, Uₙ and GLₙ#The Symmetric Group S₃|Chapter 5]] → · [[The symmetric group S₃|all appearances]]
 
@@ -48,15 +48,15 @@ The small groups $\mathbb{Z}/4\mathbb{Z}$, $\mathbb{Z}/6\mathbb{Z}$, $U_5$, $U_7
 
 ![[§16 Isomorphisms#^prop-16-7]]
 
-![[§16 Isomorphisms#^rem-16-5]]
+![[§16 Isomorphisms#^rem-16-4]]
 
 ![[§16 Isomorphisms#^prop-16-8]]
 
-![[§16 Isomorphisms#^rem-16-6]]
-
-![[§17 Cyclic Groups#^rem-17-1]]
+![[§16 Isomorphisms#^rem-16-5]]
 
 ![[§17 Cyclic Groups#^ex-17-1]]
+
+![[§17 Cyclic Groups#^ex-17-4]]
 
 [[§16 Isomorphisms#^prop-16-3|Two Isomorphism Invariants]] (in the $S_3$ part) also separates $\mathbb{Z}/4\mathbb{Z}$ from $\mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$.
 

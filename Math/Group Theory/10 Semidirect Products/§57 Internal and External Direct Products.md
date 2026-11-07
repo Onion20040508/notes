@@ -63,10 +63,52 @@ tags: [group-theory, math493]
 
 *Uses:* [[§47 Commutators#^prop-47-8|§47.8]], [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[§15 Homomorphisms#^prop-15-3|§15.3]]
 
+> [!theorem] Corollary §57.2: The Quotient by $N_1 \cap N_2$ Is a Direct Product
+> Let $G$ be a finite group and $N_1 \neq N_2$ normal subgroups such that $G/N_1$ and $G/N_2$ are both simple, as in Two Normal Subgroups with Simple Quotients (Lemma [[§50 Composition Series#^lem-50-4|§50.4]]). Then
+>
+> $$
+> G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2).
+> $$
+>
+> *Source: not from class*
+
+^cor-57-2
+
+> [!proof]+ Proof
+> *Idea:* in $\bar G = G/(N_1 \cap N_2)$ the images of $N_1$ and $N_2$ are normal, meet trivially and generate.
+>
+> *(Not from class.)* Let $M = N_1 \cap N_2$, normal in $G$ as an intersection of normal subgroups, and $\pi: G \to \bar G = G/M$ the projection. Since $M \subseteq N_i$, $\bar N_i = \pi(N_i) = N_i/M$, and it is normal in $\bar G$ because $\pi$ is surjective (Preimages and Images of Normal Subgroups, Proposition [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]](3)).
+>
+> *Trivial intersection.* If $xM \in \bar N_1 \cap \bar N_2$, then $xM = n_1M = n_2M$ with $n_i \in N_i$, so $x \in n_1M \subseteq N_1$ and $x \in n_2M \subseteq N_2$; hence $x \in M$ and $xM = M$. So $\bar N_1 \cap \bar N_2 = \{M\}$, which is $M/M$.
+>
+> *Generation.* By Lemma [[§50 Composition Series#^lem-50-4|§50.4]](1), $N_1N_2 = G$, so every $gM$ with $g = n_1n_2$ equals $(n_1M)(n_2M) \in \bar N_1 \bar N_2$. So $\bar N_1 \bar N_2 = \bar G$.
+>
+> By Internal Direct Products Are Direct Products (Theorem [[§57 Internal and External Direct Products#^thm-57-1|§57.1]]), $\bar G \cong \bar N_1 \times \bar N_2$.
+
+^pf-57-2
+
+*Uses:* [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§50 Composition Series#^lem-50-4|§50.4]], [[§57 Internal and External Direct Products#^thm-57-1|§57.1]]
+
 > [!remark] Remark: Two Forms of the Criterion
-> *(Not from class.)* Internal Direct Products (Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-6|§54.6]], from PS 6.3(5)) is the finite version: commuting subgroups $H, L$ with $H \cap L = \{e\}$ and $|H|\,|L| = |G|$. For finite $G$ and normal $N_1, N_2$ with $N_1 \cap N_2 = \{e\}$, the conditions $G = N_1N_2$ and $|N_1|\,|N_2| = |G|$ are equivalent, because $|N_1N_2| = |N_1|\,|N_2|$ (The Order of a Product of Subgroups, Lemma [[§55 The Sylow Theorems#^lem-55-8|§55.8]]). The theorem above needs no finiteness.
+> *(Not from class.)* Internal Direct Products (Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-6|§54.6]], from PS 6.3(5)) is the finite version: commuting subgroups $H, L$ with $H \cap L = \{e\}$ and $|H|\,|L| = |G|$. For finite $G$ and normal $N_1, N_2$ with $N_1 \cap N_2 = \{e\}$, its counting condition is equivalent to $G = N_1N_2$ (Lemma [[§57 Internal and External Direct Products#^lem-57-3|§57.3]]). The theorem above needs no finiteness.
 
 ^rem-57-2
+
+> [!theorem] Lemma §57.3: $G = N_1N_2$ Versus $|N_1|\,|N_2| = |G|$
+> Let $G$ be finite and $N_1, N_2 \trianglelefteq G$ with $N_1 \cap N_2 = \{e\}$. Then $G = N_1N_2$ if and only if $|N_1|\,|N_2| = |G|$.
+>
+> *Source: not from class*
+
+^lem-57-3
+
+> [!proof]+ Proof
+> *Idea:* $|N_1N_2| = |N_1|\,|N_2|$ when the intersection is trivial.
+>
+> By The Order of a Product of Subgroups (Lemma [[§55 The Sylow Theorems#^lem-55-8|§55.8]]), $|N_1N_2| = |N_1|\,|N_2|/|N_1 \cap N_2| = |N_1|\,|N_2|$. If $G = N_1N_2$, then $|G| = |N_1|\,|N_2|$. Conversely, if $|N_1|\,|N_2| = |G|$, then $N_1N_2 \subseteq G$ has $|G|$ elements, so $N_1N_2 = G$, as $G$ is finite.
+
+^pf-57-3
+
+*Uses:* [[§55 The Sylow Theorems#^lem-55-8|§55.8]]
 
 > [!example] Example §57.1: $\mathbb{Z}/15\mathbb{Z}$
 > In $\mathbb{Z}/15\mathbb{Z}$ (written additively), $N_1 = 3\mathbb{Z}/15\mathbb{Z}$ has $5$ elements and $N_2 = 5\mathbb{Z}/15\mathbb{Z}$ has $3$ elements. Both are normal, as the group is abelian. $N_1 \cap N_2$ is a subgroup of both, so its order divides $\gcd(5, 3) = 1$ (Lagrange, Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]). And $N_1 + N_2$ is a subgroup containing $N_1$ and $N_2$ (Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]), so its order is divisible by $5$ and $3$, hence is $15$. So $\mathbb{Z}/15\mathbb{Z}$ is the internal direct product of $3\mathbb{Z}/15\mathbb{Z} \cong \mathbb{Z}/5\mathbb{Z}$ and $5\mathbb{Z}/15\mathbb{Z} \cong \mathbb{Z}/3\mathbb{Z}$, and $\mathbb{Z}/15\mathbb{Z} \cong \mathbb{Z}/5\mathbb{Z} \times \mathbb{Z}/3\mathbb{Z}$ (Theorem [[§57 Internal and External Direct Products#^thm-57-1|§57.1]]).

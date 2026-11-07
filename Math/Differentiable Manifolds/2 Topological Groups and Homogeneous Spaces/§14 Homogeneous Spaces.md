@@ -197,7 +197,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 *Uses:* [[§14 Homogeneous Spaces#^def-14-5|Def. §14.5]], [[§4 Subgroups#^def-4-1|493 Def. §4.1]]
 
 > [!remark]- Connections
-> - Home of this result: [[§28 Left and Right Cosets#^prop-28-2|493 §28.2 (Cosets Are the Equivalence Classes)]]; hub [[Cosets Partition a Group]].
+> - Home of this result: [[§28 Left and Right Cosets#^prop-28-3|493 §28.3 (Cosets Are the Equivalence Classes)]]; hub [[Cosets Partition a Group]].
 
 > [!definition] Definition §14.7: The Canonical Projection
 > The **canonical projection** associated with $H \le G$ is the map
@@ -238,7 +238,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 *Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§13 Group Actions and Orbit Spaces#^def-13-3|Def. §13.3]], [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]], [[§14 Homogeneous Spaces#^def-14-5|Def. §14.5]], [[§14 Homogeneous Spaces#^def-14-6|Def. §14.6]]
 
 > [!remark]- Connections
-> - In 493 the same orbits come from the *right* action $g \star h = gh$: [[§28 Left and Right Cosets#^prop-28-1|493 §28.1 (Cosets Are Orbits)]]; converting it to a left action by inverting is [[§25 Actions#^prop-25-1|493 §25.1 (A Left Action Gives a Right Action)]].
+> - In 493 the same orbits come from the *right* action $g \star h = gh$: [[§28 Left and Right Cosets#^prop-28-2|493 §28.2 (Cosets Are Orbits)]]; converting it to a left action by inverting is [[§25 Actions#^prop-25-1|493 §25.1 (A Left Action Gives a Right Action)]].
 
 > [!remark] Remark
 > The inverse in the formula is not cosmetic: the two formulas without it either produce the wrong cosets (Example [[§14 Homogeneous Spaces#^ex-14-3|§14.3]]) or, for non-abelian $H$, fail to be an action (Example [[§14 Homogeneous Spaces#^ex-14-4|§14.4]]). To produce *left* cosets from a *left* action of $H$ one must multiply on the right and invert, and that is exactly what makes the second axiom come out in the correct order, as the proof shows.

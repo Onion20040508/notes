@@ -207,11 +207,29 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 > - *$x$ inside $K$.* Dividing by $a$ must *stretch* $x$, so $a$ decreases from $1$; the points $x/a$ move outward and reach the boundary at $a = p_K(x) \le 1$. Every $a$ above this is admissible, no $a$ below it is, and again the crossing scale is the infimum.
 >
 > ![[m556-5-3.svg]]
-> *The two halves of (b). Left, $x \notin K$: as $a$ grows past $p_K(x)$ the point $x/a$ enters $K$. Right, $x \in K$: as $a$ shrinks below $p_K(x)$ the point $x/a$ leaves $K$. In both, $x/p_K(x)$ (red) is where the ray crosses the boundary.*
 >
-> Two refinements. Whether the crossing scale itself belongs to $A(x)$ depends on whether the boundary point belongs to $K$: for the closed disk $A(x) = [\|x\|, \infty)$, for the open disk $A(x) = (\|x\|, \infty)$; the infimum is the same. And “until the edge” presupposes that the ray exits $K$. If it does not (part (c), and the example below), there is no edge to reach, $a$ can decrease all the way to $0$, and $p_K(x) = 0$ with $x \neq 0$. So $p_K(x) = 0$ does not force $x = 0$; exactly when a gauge is a norm is settled in Proposition [[§11 Normed Linear Spaces#^prop-11-1|§11.1]].
+> Two refinements. Whether the crossing scale itself belongs to $A(x)$ depends on whether the boundary point belongs to $K$; the infimum is the same either way (Example [[§7 Convex Sets and the Gauge#^ex-7-1|§7.1]] below compares the closed and the open disk). And “until the edge” presupposes that the ray exits $K$. If it does not (part (c), and Example [[§7 Convex Sets and the Gauge#^ex-7-2|§7.2]]), there is no edge to reach, $a$ can decrease all the way to $0$, and $p_K(x) = 0$ with $x \neq 0$. So $p_K(x) = 0$ does not force $x = 0$; exactly when a gauge is a norm is settled in Proposition [[§11 Normed Linear Spaces#^prop-11-1|§11.1]].
 
 ^rem-7-6
+
+> [!example] Example §7.1: Admissible Scales for the Closed and the Open Disk
+> In $X = \mathbb{R}^2$ let $\overline{D} = \{ x : \|x\| \le 1 \}$ and $D = \{ x : \|x\| < 1 \}$, with $\|\cdot\|$ the Euclidean length $p_1$ of Example [[§5 Statement and Motivation#^ex-5-1|§5.1]]. For $x \neq 0$, the admissible sets $A(x) = \{ a > 0 : x/a \in K \}$, for $K = \overline{D}$ and $K = D$, are
+>
+> $$
+> A_{\overline{D}}(x) = [\|x\|, \infty), \qquad A_D(x) = (\|x\|, \infty);
+> $$
+>
+> the crossing scale $\|x\|$ belongs to the first and not to the second, while both infima equal $\|x\|$.
+>
+> *(Justification filled in.)* Both sets are convex by Proposition [[§7 Convex Sets and the Gauge#^prop-7-1|§7.1]] with $p = p_1$. Every point of $D$ is an interior point of $D$ (Proposition [[§7 Convex Sets and the Gauge#^prop-7-2|§7.2]]), in particular $0$; since $D \subset \overline{D}$, the segments $ty$, $|t| < \varepsilon(y)$, found for $D$ also lie in $\overline{D}$, so $0$ is an interior point of $\overline{D}$ too. Thus both gauges are defined. Fix $x \neq 0$ and $a > 0$. By positive homogeneity of $p_1$, $\|x/a\| = \|x\|/a$, so
+>
+> $$
+> \frac{x}{a} \in \overline{D} \iff \frac{\|x\|}{a} \le 1 \iff a \ge \|x\|, \qquad \frac{x}{a} \in D \iff \frac{\|x\|}{a} < 1 \iff a > \|x\|.
+> $$
+>
+> This gives the two intervals, and $p_{\overline{D}}(x) = p_D(x) = \|x\|$. In line with Lemma [[§7 Convex Sets and the Gauge#^lem-7-4|§7.4]], the endpoint is admissible exactly when the boundary point $x/\|x\|$ (on the unit circle) lies in the set. (For $x = 0$ both admissible sets are $(0, \infty)$, by Proposition [[§7 Convex Sets and the Gauge#^prop-7-5|§7.5]](a).)
+
+^ex-7-1
 
 > [!example] Example §7.2: A Gauge Vanishing Off the Origin
 > Let $X = \mathbb{R}^2$ and $K = \{ (x_1, x_2) : x_1 < 1 \}$, an open half-plane containing $0$ as an interior point. For $x = (x_1, x_2)$ with $x_1 \le 0$, every point $sx$, $s \ge 0$, has first coordinate $sx_1 \le 0 < 1$, so the whole ray lies in $K$ and $p_K(x) = 0$. For $x_1 > 0$, $x/a \in K$ iff $x_1/a < 1$ iff $a > x_1$, so $A(x) = (x_1, \infty)$ and $p_K(x) = x_1$. Altogether $p_K(x) = \max\{x_1, 0\}$: positive homogeneous, subadditive, non-negative, and zero on a whole half-plane.

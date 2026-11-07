@@ -108,12 +108,20 @@ tags: [group-theory, math493]
 
 ^pf-26-3
 
+In words: moving the point by $g$ conjugates its stabilizer by $g$.
+
+> [!example] Example §26.1: Point Stabilizers in $S_n$ Are Conjugate
+> Let $S_n$ act on $\{1, \ldots, n\}$ by $\sigma \star i = \sigma(i)$, and let $H = \operatorname{Stab}(n) = \{\tau \in S_n : \tau(n) = n\}$ be the point stabilizer of [[§30 Orbit–Stabilizer|§30]]. Then for every $\sigma \in S_n$,
+>
+> $$
+> \operatorname{Stab}(\sigma(n)) = \sigma H \sigma^{-1}.
+> $$
+>
+> This is Proposition [[§26 Stabilizers and Fixed Points#^prop-26-2|§26.2]] with $x = n$ and $g = \sigma$, since $\sigma \star n = \sigma(n)$. Directly: for $\tau \in S_n$, $\tau(\sigma(n)) = \sigma(n)$ holds if and only if $(\sigma^{-1}\tau\sigma)(n) = n$ (apply $\sigma^{-1}$, resp. $\sigma$, to both sides), i.e. if and only if $\sigma^{-1}\tau\sigma \in H$, i.e. if and only if $\tau = \sigma(\sigma^{-1}\tau\sigma)\sigma^{-1} \in \sigma H \sigma^{-1}$.
+
+^ex-26-1
+
 *Uses:* [[§26 Stabilizers and Fixed Points#^prop-26-2|§26.2]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark]- Connections
 > - Used in part (3) of [[§31 G Acting on Coset Spaces#^prop-31-1|The Action of G on G∕H, §31.1]]; for finite $G$ the equality of stabilizer orders along an orbit also follows from [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer]].
-
-> [!remark] Remark: Reading the Proposition
-> Moving the point by $g$ conjugates its stabilizer by $g$. For the point stabilizer $H = \operatorname{Stab}(n) \subseteq S_n$ of [[§30 Orbit–Stabilizer#^def-30-1|Def. §30.1]], this says $\operatorname{Stab}(\sigma(n)) = \sigma H \sigma^{-1}$.
-
-^rem-26-1

@@ -53,7 +53,7 @@ For example, if a group of people sit in a room on separate chairs, the number o
 The same statement holds for infinite sets, with $|X| > |Y|$ in the sense of [[§14a Uncountable Sets#^def-14a-1|Definition §14a.1]]; there it is the Cantor–Schröder–Bernstein theorem in disguise ([[§14a Uncountable Sets#^cor-14a-5|Corollary §14a.5]]).
 
 > [!remark]- Connections
-> - The pigeonhole principle in group theory: every element of a finite group has finite order, [[§4 Subgroups#^prop-4-8|493 Prop. §4.8]] (and its remark on where finiteness enters).
+> - The pigeonhole principle in group theory: every element of a finite group has finite order, [[§4 Subgroups#^prop-4-10|493 Prop. §4.10]] (and its remark on where finiteness enters).
 
 > [!example] Example §11.1: Birthdays and Friends
 > (a) In any group of more than twelve people, two have their birthdays in the same month: apply the pigeonhole principle to the function sending each person to the month of their birthday.

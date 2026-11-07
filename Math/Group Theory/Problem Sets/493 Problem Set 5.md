@@ -17,7 +17,7 @@ tags: [group-theory, math493]
 
 ^hw-5-1
 
-*Treated in [[§29 The Index and Lagrange's Theorem|§29]] ([[§29 The Index and Lagrange's Theorem#^prop-29-9|§29.9]], [[§29 The Index and Lagrange's Theorem#^ex-29-2|Ex. §29.2]]); the normal case in [[§41 The First and Second Isomorphism Theorems#^cor-41-8|§41.8]].*
+*Treated in [[§29 The Index and Lagrange's Theorem|§29]] ([[§29 The Index and Lagrange's Theorem#^prop-29-10|§29.10]], [[§29 The Index and Lagrange's Theorem#^ex-29-6|Ex. §29.6]]); the normal case in [[§41 The First and Second Isomorphism Theorems#^cor-41-8|§41.8]].*
 
 > [!question] Problem 5.2: Conjugacy in a Normal Subgroup
 > Let $N \trianglelefteq G$ ([[§38 Normal Subgroups#^def-38-1|normal subgroup]]), $g \in N$, and $Z_G(g) = \{h \in G : gh = hg\}$ (the [[§34 Conjugation as an Action and the Class Equation#^def-34-1|centralizer]]).
@@ -37,7 +37,7 @@ tags: [group-theory, math493]
 
 ^hw-5-3
 
-*Treated in [[§47 Commutators|§47]] ([[§47 Commutators#^lem-47-9|§47.9]], [[§47 Commutators#^thm-47-10|§47.10]]).*
+*Treated in [[§47 Commutators|§47]] ([[§47 Commutators#^lem-47-10|§47.10]], [[§47 Commutators#^thm-47-11|§47.11]]).*
 
 > [!question] Problem 5.4: Elements of $D(G)$ That Are Not Commutators
 > For the group $G$ of block matrices $\begin{bmatrix} I_p & A & C \\ 0 & I_q & B \\ 0 & 0 & I_r \end{bmatrix}$:
@@ -47,4 +47,4 @@ tags: [group-theory, math493]
 
 ^hw-5-4
 
-*Treated in [[§47 Commutators|§47]] ([[§47 Commutators#^ex-47-2|Ex. §47.2]]).*
+*Treated in [[§47 Commutators|§47]] ([[§47 Commutators#^ex-47-5|Ex. §47.5]]).*

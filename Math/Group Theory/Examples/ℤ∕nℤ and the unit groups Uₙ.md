@@ -31,7 +31,7 @@ The cyclic group $\mathbb{Z}/n\mathbb{Z}$ of residue classes modulo $n$ under ad
 - $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ is not cyclic, while $U_7 \cong \mathbb{Z}/6\mathbb{Z}$ ([[§16 Isomorphisms#^prop-16-8|§16]])
 - Every cyclic group of order $n$ is isomorphic to $\mathbb{Z}/n\mathbb{Z}$ ([[§17 Cyclic Groups#^thm-17-1|§17]])
 - Generators and subgroups of a finite cyclic group ([[§17 Cyclic Groups#^cor-17-6|§17]])
-- The six subgroups of $\mathbb{Z}/12\mathbb{Z}$ ([[§17 Cyclic Groups#^ex-17-1|§17]])
+- The six subgroups of $\mathbb{Z}/12\mathbb{Z}$ ([[§17 Cyclic Groups#^ex-17-4|§17]])
 - $U_n$ is the product of the unit groups of its prime-power factors ([[§22 The Structure of Uₙ#^thm-22-2|§22]])
 - Euler's totient formula ([[§22 The Structure of Uₙ#^cor-22-3|§22]])
 - Examples: $U_{15}$, $U_{10}$, $U_{24}$ as products of cyclic groups ([[§22 The Structure of Uₙ#^ex-22-1|§22]])
@@ -41,8 +41,8 @@ The cyclic group $\mathbb{Z}/n\mathbb{Z}$ of residue classes modulo $n$ under ad
 - One group of each prime order; two of order $4$ and two of order $6$ ([[§29 The Index and Lagrange's Theorem#^rem-29-3|§29]])
 - $\mathbb{Z}/n\mathbb{Z}$ is the quotient of $\mathbb{Z}$ by $n\mathbb{Z}$ ([[§40 Quotient Groups#^ex-40-1|§40]])
 - $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\}$ computed with representatives ([[§40 Quotient Groups#^ex-40-2|§40]])
-- $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\} \cong \mathbb{Z}/2\mathbb{Z}$ is not realized by a subgroup of representatives ([[§40 Quotient Groups#^rem-40-3|§40]])
-- The First Isomorphism Theorem for $\mathbb{Z}/6\mathbb{Z} \to U_7$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-1|§41]])
+- $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\} \cong \mathbb{Z}/2\mathbb{Z}$ is not realized by a subgroup of representatives ([[§40 Quotient Groups#^ex-40-4|Ex. §40.4]])
+- The First Isomorphism Theorem for $\mathbb{Z}/6\mathbb{Z} \to U_7$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-2|§41]])
 - The abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ ([[§43 Simple Groups#^thm-43-1|§43]])
 
 ## Chapter by chapter
@@ -125,7 +125,7 @@ Revisit parts for $\mathbb{Z}/n\mathbb{Z}$ and $U_n$, chapter by chapter: [[§5 
 ![[§17 Cyclic Groups#^cor-17-6]]
 
 ## The six subgroups of $\mathbb{Z}/12\mathbb{Z}$
-![[§17 Cyclic Groups#^ex-17-1]]
+![[§17 Cyclic Groups#^ex-17-4]]
 
 ## $U_n$ is the product of the unit groups of its prime-power factors
 ![[§22 The Structure of Uₙ#^thm-22-2]]
@@ -155,10 +155,10 @@ Revisit parts for $\mathbb{Z}/n\mathbb{Z}$ and $U_n$, chapter by chapter: [[§5 
 ![[§40 Quotient Groups#^ex-40-2]]
 
 ## $(\mathbb{Z}/4\mathbb{Z})/\{0, 2\} \cong \mathbb{Z}/2\mathbb{Z}$ is not realized by a subgroup of representatives
-![[§40 Quotient Groups#^rem-40-3]]
+![[§40 Quotient Groups#^ex-40-4]]
 
 ## The First Isomorphism Theorem for $\mathbb{Z}/6\mathbb{Z} \to U_7$
-![[§41 The First and Second Isomorphism Theorems#^ex-41-1]]
+![[§41 The First and Second Isomorphism Theorems#^ex-41-2]]
 
 ## The abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$
 ![[§43 Simple Groups#^thm-43-1]]

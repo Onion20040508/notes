@@ -31,15 +31,22 @@ tags: [group-theory, math493]
 
 ^pf-16-1
 
+> [!remark] Remark: Contrast with Topology
+> This is a genuinely algebraic phenomenon. “Preserves the operation” is an *equation* between elements, and a bijection transports equations in both directions. Continuity is not an equation, and a continuous bijection need not have a continuous inverse (Example [[§16 Isomorphisms#^ex-16-1|§16.1]]). That is why a homeomorphism must be *defined* as a continuous bijection with continuous inverse, whereas a group isomorphism is simply a bijective homomorphism.
+
+^rem-16-1
+
+> [!example] Example §16.1: A Continuous Bijection with Discontinuous Inverse
+> Let $f \colon [0, 2\pi) \to S^1 = \{z \in \mathbb{C} : |z| = 1\}$, $f(t) = e^{it}$. It is continuous, and it is a bijection: every point of $S^1$ is $e^{it}$ for exactly one $t \in [0, 2\pi)$. Its inverse $g = f^{-1}$ is discontinuous at $1$: $g(1) = 0$, but the points $z_m = e^{i(2\pi - 1/m)}$ ($m \geq 1$) converge to $e^{2\pi i} = 1$, while $g(z_m) = 2\pi - 1/m \to 2\pi \neq 0$.
+>
+> *Source: [[§10 Continuous Functions#^def-10-2|590 notes]]*
+
+^ex-16-1
+
 *Uses:* [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark]- Connections
 > - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-5|Inverse of an Isomorphism is a Homomorphism]] (590 §26.5).
-
-> [!remark] Remark: Contrast with Topology
-> This is a genuinely algebraic phenomenon. “Preserves the operation” is an *equation* between elements, and a bijection transports equations in both directions. Continuity is not an equation, and a continuous bijection need not have a continuous inverse: $[0, 2\pi) \to S^1$, $t \mapsto e^{it}$, is a continuous bijection whose inverse is discontinuous at $1$ ([[§10 Continuous Functions#^def-10-2|590 notes]]). That is why a homeomorphism must be *defined* as a continuous bijection with continuous inverse, whereas a group isomorphism is simply a bijective homomorphism.
-
-^rem-16-1
 
 > [!remark]- Connections
 > - MATH 590 counterpart: [[§26 Algebra Prerequisites꞉ Groups#^rem-26-5|Contrast with Topology]] (590 §26); the definition it contrasts with: [[§10 Continuous Functions#^def-10-2|Homeomorphism]] (590 §10.2).
@@ -147,7 +154,7 @@ tags: [group-theory, math493]
 > - MATH 590 version: [[§26 Algebra Prerequisites꞉ Groups#^thm-26-6|Isomorphisms Preserve All Algebraic Properties]] (590 §26.6).
 
 > [!remark] Remark: Using Invariants
-> To prove $G \not\cong H$, exhibit one of these quantities on which they differ. [[§16 Isomorphisms#^prop-16-3|WS 2.6]] used (2) and (3) with $n = 2$; [[§16 Isomorphisms#^prop-16-8|WS 2.7(1)]] used (3) with $n = 2$, or equivalently (5). Any property expressible purely in terms of the group operation is preserved in this way, by the same mechanism: transport the property through $\varphi$ or $\varphi^{-1}$ using the homomorphism identity. Conversely, matching invariants never *prove* isomorphism; for that one must construct the map, as in [[§16 Isomorphisms#^prop-16-7|WS 2.5]], [[§16 Isomorphisms#^prop-16-8|2.7(2)]], [[§16 Isomorphisms#^prop-16-9|2.8]].
+> To prove $G \not\cong H$, exhibit one of these quantities on which they differ. [[§16 Isomorphisms#^prop-16-3|WS 2.6]] used (2) and (3) with $n = 2$; [[§16 Isomorphisms#^prop-16-8|WS 2.7(1)]] used (3) with $n = 2$, or equivalently (5). Any property expressible purely in terms of the group operation is preserved in this way, by the same mechanism: transport the property through $\varphi$ or $\varphi^{-1}$ using the homomorphism identity. Conversely, matching invariants never *prove* isomorphism; for that one must construct the map, as in [[§16 Isomorphisms#^prop-16-7|WS 2.5]], [[§16 Isomorphisms#^prop-16-8|2.7(2)]], [[§16 Isomorphisms#^prop-16-10|2.8]].
 
 ^rem-16-3
 
@@ -175,12 +182,35 @@ tags: [group-theory, math493]
 
 ^pf-16-6
 
+Both parts of the proposition give non-isomorphism tests.
+
+> [!example] Example §16.2: $\mathbb{Z}/6\mathbb{Z} \not\cong S_3$ via Centers
+> By part (1), isomorphic groups have centers of the same size. Since $\mathbb{Z}/6\mathbb{Z}$ is abelian, all of its elements are central, so $|Z(\mathbb{Z}/6\mathbb{Z})| = 6$. In $S_3$ only $e$ is central, so $|Z(S_3)| = 1$ ([[§35 The Center|§35]]): from the table in Example [[§10 Cycle Notation and the Group S₃#^ex-10-1|§10.1]], each non-identity element fails to commute with some element,
+>
+> $$
+> (1\,2)(2\,3) = (1\,2\,3) \neq (1\,3\,2) = (2\,3)(1\,2), \qquad (1\,3)(1\,2) = (1\,2\,3) \neq (1\,3\,2) = (1\,2)(1\,3),
+> $$
+>
+> $$
+> (1\,2\,3)(1\,2) = (1\,3) \neq (2\,3) = (1\,2)(1\,2\,3), \qquad (1\,3\,2)(1\,2) = (2\,3) \neq (1\,3) = (1\,2)(1\,3\,2),
+> $$
+>
+> the first pair settling both $(1\,2)$ and $(2\,3)$. As $6 \neq 1$, this re-proves $\mathbb{Z}/6\mathbb{Z} \not\cong S_3$ without invoking commutativity directly.
+
+^ex-16-2
+
+> [!example] Example §16.3: Groups With and Without a Proper Nontrivial Subgroup
+> Since the subgroup lattices correspond (part (2)), a group with no proper nontrivial subgroup cannot be isomorphic to one that has such a subgroup.
+>
+> 1. $\mathbb{Z}/4\mathbb{Z}$ has the subgroup $\{[0], [2]\}$: it contains $[0]$, $[2] + [2] = [0]$, and $-[2] = [2]$; it is neither $\{[0]\}$ nor the whole group.
+> 2. $U_8$ has the subgroup $\{1, 3\}$: $3 \cdot 3 = 9 \equiv 1 \pmod 8$, so it is closed and $3^{-1} = 3$; it is neither $\{1\}$ nor $U_8$.
+> 3. $\mathbb{Z}/5\mathbb{Z}$, of prime order, has none ([[§29 The Index and Lagrange's Theorem|§29]]). Directly: if $H \leq \mathbb{Z}/5\mathbb{Z}$ contains $[a] \neq [0]$, then $\gcd(a, 5) = 1$, so by the Invertibility Criterion there is $x \in \{1, \ldots, 4\}$ with $ax \equiv 1 \pmod 5$; then $[1] = [a] + \cdots + [a]$ ($x$ terms) lies in $H$, hence so does every $[m] = [1] + \cdots + [1]$, and $H = \mathbb{Z}/5\mathbb{Z}$.
+>
+> So $\mathbb{Z}/5\mathbb{Z}$ is isomorphic to neither $\mathbb{Z}/4\mathbb{Z}$ nor $U_8$ (which here also follows from $|\mathbb{Z}/5\mathbb{Z}| = 5 \neq 4$).
+
+^ex-16-3
+
 *Uses:* [[§35 The Center#^def-35-1|Def. §35.1]], [[§35 The Center#^def-35-2|Def. §35.2]], [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§15 Homomorphisms#^prop-15-4|§15.4]]
-
-> [!remark] Remark: Using These to Distinguish Groups
-> Both give non-isomorphism tests. For instance $|Z(\mathbb{Z}/6\mathbb{Z})| = 6$ while $|Z(S_3)| = 1$ ([[§35 The Center#^def-35-2|§35]]), re-proving $\mathbb{Z}/6\mathbb{Z} \not\cong S_3$ without invoking commutativity directly. And since the subgroup lattices correspond, a group with no proper nontrivial subgroup cannot be isomorphic to one that has such a subgroup: $\mathbb{Z}/4\mathbb{Z}$ has the subgroup $\{[0],[2]\}$ and $U_8$ has $\{1,3\}$, whereas $\mathbb{Z}/5\mathbb{Z}$, of prime order, has none ([[§29 The Index and Lagrange's Theorem#^cor-29-8|§29.8]]).
-
-^rem-16-4
 
 > [!theorem] Proposition §16.7: $\mathbb{Z}/4\mathbb{Z} \cong U_5$
 > The map $\varphi: \mathbb{Z}/4\mathbb{Z} \to (\mathbb{Z}/5\mathbb{Z})^\times$, $\ k \mapsto 2^k$, is an isomorphism. Explicitly,
@@ -209,12 +239,12 @@ tags: [group-theory, math493]
 *Uses:* [[§7 The Group ℤ∕nℤ#^def-7-2|Def. §7.2]], [[§8 Invertibility and Unit Groups#^def-8-4|Def. §8.4]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark]- Connections
-> - An instance of the [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]] (§17.1): see [[§17 Cyclic Groups#^rem-17-1|Remark §17.1]].
+> - An instance of the [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]] (§17.1): see [[§17 Cyclic Groups#^ex-17-1|Ex. §17.1]].
 
 > [!remark] Remark: Reading the Isomorphism off the Tables
 > Relabel the $\mathbb{Z}/4\mathbb{Z}$ table by $0 \to 1$, $1 \to 2$, $2 \to 4$, $3 \to 3$ and reorder rows and columns to $1, 2, 3, 4$; the result is the $U_5$ table. One spot check: $1 + 3 = 0$ in $\mathbb{Z}/4\mathbb{Z}$ corresponds to $2 \cdot 3 = 6 \equiv 1$ in $U_5$. The isomorphism turns multiplication modulo $5$ into addition of exponents modulo $4$ — a finite version of the logarithm, and the reason $U_5$ “looks like” a cyclic group: it is generated by $2$.
 
-^rem-16-5
+^rem-16-4
 
 > [!theorem] Proposition §16.8: $U_8$ and $U_7$
 > 1. $(\mathbb{Z}/8\mathbb{Z})^\times \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, and hence $(\mathbb{Z}/8\mathbb{Z})^\times \not\cong \mathbb{Z}/4\mathbb{Z}$.
@@ -245,26 +275,40 @@ tags: [group-theory, math493]
 
 ^pf-16-8
 
+> [!remark] Remark: Reading Cyclicity off a Table
+> Both questions reduce to: does the unit group have a generator? In the $U_7$ table ([[§14 Multiplication Tables#^ex-14-3|WS 2.2]]), the row of $3$ read as successive powers cycles through all six elements; in the $U_8$ table, every row returns to $1$ after two steps, so no element generates. A group of order $4$ in which every element squares to the identity cannot be cyclic (Lemma [[§16 Isomorphisms#^lem-16-9|§16.9]]); a group of order $n$ with an element whose powers exhaust it is $\cong \mathbb{Z}/n\mathbb{Z}$ by the argument of (2), which is made general in the [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]] ([[§17 Cyclic Groups|§17]]).
+
+^rem-16-5
+
+> [!theorem] Lemma §16.9: A Group of Order $4$ in Which Every Element Squares to $e$ Is Not Cyclic
+> Let $G$ be a group of order $4$ with $g^2 = e$ for every $g \in G$. Then $G$ is not cyclic. In particular $U_8$ is not cyclic.
+
+^lem-16-9
+
+> [!proof]+ Proof
+> *Idea:* Each $\langle g \rangle$ has at most two elements.
+>
+> Let $g \in G$. For $k \in \mathbb{Z}$ write $k = 2q + r$ with $r \in \{0, 1\}$ (Division Algorithm); by the Exponent Laws, $g^k = (g^2)^q g^r = e^q g^r = g^r \in \{e, g\}$. So $\langle g \rangle \subseteq \{e, g\}$ has at most $2 < 4 = |G|$ elements, and $\langle g \rangle \neq G$. As $g$ was arbitrary, $G$ has no generator. Every element of $U_8$ squares to $1$ (Example [[§14 Multiplication Tables#^ex-14-4|§14.4]]), so $U_8$ is not cyclic.
+
+^pf-16-9
+
+*Uses:* [[§14 Multiplication Tables#^ex-14-4|Ex. §14.4]]
+
 *Uses:* [[§14 Multiplication Tables#^ex-14-4|Ex. §14.4]], [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[§16 Isomorphisms#^prop-16-3|§16.3]], [[§16 Isomorphisms#^prop-16-2|§16.2]], [[§16 Isomorphisms#^prop-16-7|§16.7]], [[§4 Subgroups#^lem-4-4|§4.4]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark]- Connections
-> - Part (2) as an instance of the [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]] (§17.1), and why $U_8$ is not cyclic: [[§17 Cyclic Groups#^rem-17-1|Remark §17.1]].
-
-> [!remark] Remark: Reading Cyclicity off a Table
-> Both questions reduce to: does the unit group have a generator? In the $U_7$ table ([[§14 Multiplication Tables#^ex-14-3|WS 2.2]]), the row of $3$ read as successive powers cycles through all six elements; in the $U_8$ table, every row returns to $1$ after two steps, so no element generates. A group of order $4$ in which every element squares to the identity cannot be cyclic; a group of order $n$ with an element whose powers exhaust it is $\cong \mathbb{Z}/n\mathbb{Z}$ by the argument of (2), which is made general in the [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]] (§17.1).
-
-^rem-16-6
+> - Part (2) as an instance of the [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]] (§17.1), and why $U_8$ is not cyclic: [[§17 Cyclic Groups#^ex-17-1|Ex. §17.1]].
 
 ![[m493-16-1.svg]]
 *Colour-coded tables. Listing $U_5$ in the order $2^0, 2^1, 2^2, 2^3$ reproduces the colour pattern of $\mathbb{Z}/4\mathbb{Z}$ ([[§16 Isomorphisms#^prop-16-7|WS 2.5]]: $\mathbb{Z}/4\mathbb{Z} \cong U_5$). No ordering of $U_8$ can: its diagonal (outlined in red) is constantly the identity, so every element squares to $1$ ([[§16 Isomorphisms#^prop-16-8|WS 2.7]]).*
 
-> [!theorem] Proposition §16.9: Structure of $\mathbb{R}^\times$ and $\mathbb{Q}^\times$
+> [!theorem] Proposition §16.10: Structure of $\mathbb{R}^\times$ and $\mathbb{Q}^\times$
 > 1. $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \mathbb{Z}/2\mathbb{Z}$, where $\mathbb{R}_{>0}$ is the positive reals under multiplication.
 > 2. $\mathbb{Q}^\times \cong \mathbb{Z}^{\oplus\infty} \times \mathbb{Z}/2\mathbb{Z}$, where $\mathbb{Z}^{\oplus\infty}$ is the group of integer sequences $(a_1, a_2, \ldots)$ with only finitely many nonzero terms, under componentwise addition.
 >
 > *Source: WS 2.8*
 
-^prop-16-9
+^prop-16-10
 
 > [!proof]+ Proof
 > *Idea:* Split a nonzero number into absolute value and sign; factor rational absolute values into primes.
@@ -279,7 +323,7 @@ tags: [group-theory, math493]
 >
 > Define $\varphi(q) = \big((a_1, a_2, \ldots),\, s(q)\big)$ with $s$ the sign class as in (1). Homomorphism: multiplying rationals adds exponents prime by prime and multiplies signs, i.e. adds sign classes. Injective: uniqueness of the factorization. Surjective: any finitely supported exponent sequence and sign defines a rational. Hence $\varphi$ is an isomorphism.
 
-^pf-16-9
+^pf-16-10
 
 *Uses:* [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|§9.2]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
@@ -292,11 +336,11 @@ tags: [group-theory, math493]
 >
 > *Bijection.* Define $\beta\big((a_i), \varepsilon\big) = (-1)^\varepsilon \prod_{i \geq 1} p_i^{a_i}$, a finite product since almost all $a_i$ are $0$; $(-1)^\varepsilon$ is well defined for $\varepsilon \in \mathbb{Z}/2\mathbb{Z}$ since $(-1)^2 = 1$. For $q \in \mathbb{Q}^\times$ with $|q| = m/n$, $\prod_i p_i^{a_i(q)} = \prod_i p_i^{v_i(m)} \big/ \prod_i p_i^{v_i(n)} = m/n = |q|$, so $\beta(\alpha(q)) = (-1)^{s(q)}|q| = q$. Conversely, given $\big((a_i), \varepsilon\big)$, the number $r = \prod_i p_i^{a_i} > 0$ equals $m/n$ with $m = \prod_{a_i > 0} p_i^{a_i}$ and $n = \prod_{a_i < 0} p_i^{-a_i}$, so $v_i(m) - v_i(n) = \max(a_i, 0) - \max(-a_i, 0) = a_i$; and $(-1)^\varepsilon r$ has absolute value $r$ and sign class $\varepsilon$. Hence $\alpha\big(\beta((a_i), \varepsilon)\big) = \big((a_i), \varepsilon\big)$. So $\beta$ is a two-sided inverse of $\alpha$, and $\alpha$ is an isomorphism.
 
-^pf-16-9-2
+^pf-16-10-2
 
 *Uses:* [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|§9.2]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
 > [!remark] Remark: Interpretation
 > Both isomorphisms split a multiplicative group into “size” and “sign.” In (2), the size part says that, as a group, the positive rationals are freely generated by the primes: $\mathbb{Q}_{>0} \cong \mathbb{Z}^{\oplus\infty}$ is the group-theoretic content of the [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|Fundamental Theorem of Arithmetic]].
 
-^rem-16-7
+^rem-16-6

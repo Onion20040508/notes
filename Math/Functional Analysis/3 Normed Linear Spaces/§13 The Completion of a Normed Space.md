@@ -230,16 +230,45 @@ The construction by equivalence classes is abstract, but in practice the complet
 > [!remark] Remark: How Do We Know We Have Not Added Too Much?
 > Corollary [[§13 The Completion of a Normed Space#^cor-13-3|§13.3]] answers this: there is no freedom. The construction adds only limits of Cauchy sequences in $X$ and identifies two sequences whenever they head for the same place, so nothing extra can appear.
 >
-> A larger complete space containing $X$ need not be the completion. For example, with the usual absolute value, the completion of $\mathbb{Q}$ is $\mathbb{R}$, and $\mathbb{R} \subset \mathbb{C}$ with $\mathbb{C}$ complete — but $\mathbb{C}$ is not the completion of $\mathbb{Q}$, because a Cauchy sequence of rationals cannot converge to a non-real number. Similarly, $\mathbb{R} \subset \mathbb{R}^2$ is a complete space containing $\mathbb{R}$, and is not its completion. The condition that fails is density.
+> A larger complete space containing $X$ need not be the completion (Examples [[§13 The Completion of a Normed Space#^ex-13-1|§13.1]] and [[§13 The Completion of a Normed Space#^ex-13-2|§13.2]] below). The condition that fails is density.
 >
 > Also worth separating: the definition of $\overline{X}$ is by equivalence classes, and the description “$X$ together with all its limit points” is a way of thinking, not a definition — before the construction there is no ambient space in which those limit points live.
 
 ^rem-13-5
 
+> [!example] Example §13.1: $\mathbb{C}$ is Not the Completion of $\mathbb{Q}$
+> With the usual absolute value, the completion of $\mathbb{Q}$ is $\mathbb{R}$, and $\mathbb{R} \subset \mathbb{C}$ with $\mathbb{C}$ complete — but $\mathbb{C}$ is not the completion of $\mathbb{Q}$, because a Cauchy sequence of rationals cannot converge to a non-real number.
+>
+> *(Justification filled in.)* *What is to be shown.* $\mathbb{Q}$ is dense in its completion (Proposition [[§12 Completeness#^prop-12-3|§12.3]](c)), and an isometric bijection fixing $\mathbb{Q}$ would carry this density over. So it suffices to show that $\mathbb{Q}$ is not dense in $\mathbb{C}$, although $\mathbb{C}$ is complete.
+>
+> 1. *$\mathbb{C}$ is complete.* As a metric space $\mathbb{C}$ is $\mathbb{R}^2$ with the Euclidean distance. If $z_n = x_n + i y_n$ is Cauchy, then $|x_n - x_m| \le |z_n - z_m|$ and $|y_n - y_m| \le |z_n - z_m|$, so $\{x_n\}$ and $\{y_n\}$ are Cauchy in $\mathbb{R}$ and converge to some $x, y$; then $|z_n - (x + iy)| \le |x_n - x| + |y_n - y| \to 0$.
+> 2. *Limits of rationals are real.* If $q_n \in \mathbb{Q}$ and $q_n \to z$ in $\mathbb{C}$, then $|\operatorname{Im} z| = |\operatorname{Im}(z - q_n)| \le |z - q_n| \to 0$, so $z \in \mathbb{R}$. For instance $|q - i| = \sqrt{q^2 + 1} \ge 1$ for every $q \in \mathbb{Q}$, so $i$ is not a limit of rationals.
+>
+> Hence the closure of $\mathbb{Q}$ in $\mathbb{C}$ is contained in $\mathbb{R} \neq \mathbb{C}$, and $\mathbb{Q}$ is not dense in $\mathbb{C}$.
+
+^ex-13-1
+
+> [!example] Example §13.2: $\mathbb{R}^2$ is Not the Completion of $\mathbb{R}$
+> $\mathbb{R}$, embedded in $\mathbb{R}^2$ as the axis $\{(x, 0)\}$, lies in the complete space $\mathbb{R}^2$, and $\mathbb{R}^2$ is not its completion.
+>
+> *(Justification filled in.)* $\mathbb{R}^2$ with the Euclidean norm is complete by the coordinatewise argument of Example [[§13 The Completion of a Normed Space#^ex-13-1|§13.1]](1), and $x \mapsto (x, 0)$ preserves distances. But $\mathbb{R}$ is not dense in $\mathbb{R}^2$: $\|(x, 0) - (0, 1)\| = \sqrt{x^2 + 1} \ge 1$ for every $x$, so $(0, 1)$ is not a limit of points of the axis. The completion of $\mathbb{R}$ is $\mathbb{R}$ itself: $\mathbb{R}$ is complete and dense in itself, so Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]] applies with $Z = \mathbb{R}$ and $J$ the identity.
+
+^ex-13-2
+
 > [!remark] Remark: The Norm Decides, Not the Set
-> A second trap. As *sets*, $C[a,b] \subset L^1[a,b]$, and $L^1[a,b]$ is complete; but $L^1[a,b]$ is not the completion of $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$, which is already complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]) and is therefore its own completion. The two norms $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ are not [[§14 New Normed Spaces from Old#^def-14-1|equivalent]], so they give different topologies, different Cauchy sequences, and different completions. A normed linear space is the pair $(X, \|\cdot\|)$, never the set alone; the completion is determined by the norm. The same set $C[a,b]$ with the $L^p$ norm, $1 \le p < \infty$, does have completion $L^p[a,b]$ ([[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]]).
+> A second trap. As *sets*, $C[a,b] \subset L^1[a,b]$, and $L^1[a,b]$ is complete; but $L^1[a,b]$ is not the completion of $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$ (Example [[§13 The Completion of a Normed Space#^ex-13-3|§13.3]] below). A normed linear space is the pair $(X, \|\cdot\|)$, never the set alone; the completion is determined by the norm. The same set $C[a,b]$ with the $L^p$ norm, $1 \le p < \infty$, does have completion $L^p[a,b]$ ([[§19 The Function Spaces Lᵖ(Ω)|§19]]).
 
 ^rem-13-6
+
+> [!example] Example §13.3: $L^1[a,b]$ is Not the Completion of $(C[a,b], \|\cdot\|_\infty)$
+> As *sets*, $C[a,b] \subset L^1[a,b]$ (via $f \mapsto [f]$), and $L^1[a,b]$ is complete (Chapter 4, [[§19 The Function Spaces Lᵖ(Ω)|§19]], used here ahead of its definition); but $L^1[a,b]$ is not the completion of $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$, which is already complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]) and is therefore its own completion. The two norms $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ are not [[§14 New Normed Spaces from Old#^def-14-1|equivalent]] (Example [[§14 New Normed Spaces from Old#^ex-14-1|§14.1]] in [[§14 New Normed Spaces from Old|§14]]), so they give different topologies, different Cauchy sequences, and different completions.
+>
+> *(Justification filled in.)*
+>
+> 1. *$\bigl(C[a,b], \|\cdot\|_\infty\bigr)$ is its own completion.* It is a Banach space and is dense in itself, so Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]] with $Z = C[a,b]$ and $J$ the identity identifies its completion with $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$.
+> 2. *The inclusion into $L^1[a,b]$ does not preserve the norm.* For $n \ge 1$ let $f_n(t) = \max\{0,\, 1 - n(t - a)/(b - a)\}$, a continuous tent with $f_n(a) = 1$, supported in $[a, a + (b-a)/n]$. Then $\|f_n\|_\infty = 1$ while $\|f_n\|_{L^1} = \int_a^b f_n = (b - a)/(2n) \to 0$. If $L^1[a,b]$ were the completion, the identification would restrict on $C[a,b]$ to $f \mapsto [f]$ and be isometric, i.e. $\|f\|_{L^1} = \|f\|_\infty$ for every $f \in C[a,b]$; the tents $f_n$ contradict this.
+
+^ex-13-3
 
 ## An Incomplete Normed Space
 

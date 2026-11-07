@@ -109,7 +109,7 @@ tags: [group-theory, math493]
 
 ^pf-47-4
 
-*Uses:* [[§47 Commutators#^def-47-2|Def. §47.2]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§4 Subgroups#^prop-4-7|§4.7]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§47 Commutators#^prop-47-1|§47.1]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§47 Commutators#^def-47-1|Def. §47.1]]
+*Uses:* [[§47 Commutators#^def-47-2|Def. §47.2]], [[§4 Subgroups#^def-4-5|Def. §4.5]], [[§4 Subgroups#^prop-4-9|§4.9]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§47 Commutators#^prop-47-1|§47.1]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§47 Commutators#^def-47-1|Def. §47.1]]
 
 > [!theorem] Theorem §47.5: The Commutator Subgroup and Characters of $S_n$
 > For $n \geq 2$, $[S_n, S_n] = A_n$. Consequently every [[§46 Characters#^def-46-1|character]] $\chi: S_n \to A$ is trivial on $A_n$ and is determined by its value $c = \chi(\tau)$ on any transposition $\tau$, which satisfies $c^2 = e_A$: $\chi(\sigma) = e_A$ for even $\sigma$ and $\chi(\sigma) = c$ for odd $\sigma$.
@@ -127,7 +127,7 @@ tags: [group-theory, math493]
 
 ^pf-47-5
 
-*Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|Def. §21.3]], [[§47 Commutators#^prop-47-4|§47.4]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]], [[§47 Commutators#^prop-47-2|§47.2]], [[§4 Subgroups#^prop-4-7|§4.7]], [[§33 Conjugacy Classes#^prop-33-2|§33.2]], [[§46 Characters#^prop-46-1|§46.1]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§46 Characters#^def-46-1|Def. §46.1]], [[§33 Conjugacy Classes#^lem-33-1|§33.1]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]], [[§15 Homomorphisms#^prop-15-1|§15.1]]
+*Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|Def. §21.3]], [[§47 Commutators#^prop-47-4|§47.4]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]], [[§47 Commutators#^prop-47-2|§47.2]], [[§4 Subgroups#^prop-4-9|§4.9]], [[§33 Conjugacy Classes#^prop-33-2|§33.2]], [[§46 Characters#^prop-46-1|§46.1]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§46 Characters#^def-46-1|Def. §46.1]], [[§33 Conjugacy Classes#^lem-33-1|§33.1]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]], [[§15 Homomorphisms#^prop-15-1|§15.1]]
 
 > [!remark] Remark: What the Theorem Says About $S_n$
 > In $S_n$ all $3$-cycles are commutators and no transposition is, and [[§47 Commutators#^thm-47-5|the theorem]] shows that characters of $S_n$ can only distinguish even from odd permutations: $\operatorname{sgn}$ is essentially the only nontrivial one.
@@ -152,16 +152,16 @@ tags: [group-theory, math493]
 ^prop-47-6
 
 > [!proof]+ Proof
-> Let $N = [G,G]$. For $a, b \in G$, $(aN)(bN)(aN)^{-1}(bN)^{-1} = aba^{-1}b^{-1}N = N$, since the commutator $aba^{-1}b^{-1}$ lies in $N$. So $(aN)(bN) = (bN)(aN)$.
+> Let $N = [G,G]$. For $a, b \in G$, $(aN)(bN)(aN)^{-1}(bN)^{-1} = aba^{-1}b^{-1}N = N$, since the [[§47 Commutators#^def-47-1|commutator]] $aba^{-1}b^{-1}$ lies in $N$. So $(aN)(bN) = (bN)(aN)$.
 >
-> *Second proof, by the coset criterion ([[493 Problem Set 4#^hw-4-4|PS 4.4(2)]]).* For $x, y \in G$, $xN = yN$ iff $x^{-1}y \in N$ ([[§28 Left and Right Cosets#^prop-28-2|§28.2]]). With $x = ab$ and $y = ba$, $x^{-1}y = b^{-1}a^{-1}ba$, which is the [[§47 Commutators#^def-47-1|commutator]] of the pair $(b^{-1}, a^{-1})$ and so lies in $N$. Hence $(ab)N = (ba)N$, i.e. $(aN)(bN) = (bN)(aN)$.
+> *Second proof, by the coset criterion ([[493 Problem Set 4#^hw-4-4|PS 4.4(2)]]).* For $x, y \in G$, $xN = yN$ iff $x^{-1}y \in N$ ([[§28 Left and Right Cosets#^prop-28-3|§28.3]]). With $x = ab$ and $y = ba$, $x^{-1}y = b^{-1}a^{-1}ba$, which is the [[§47 Commutators#^def-47-1|commutator]] of the pair $(b^{-1}, a^{-1})$ and so lies in $N$. Hence $(ab)N = (ba)N$, i.e. $(aN)(bN) = (bN)(aN)$.
 
 ^pf-47-6
 
-*Uses:* [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§47 Commutators#^def-47-2|Def. §47.2]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]], [[§47 Commutators#^def-47-1|Def. §47.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
+*Uses:* [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§47 Commutators#^def-47-2|Def. §47.2]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]], [[§47 Commutators#^def-47-1|Def. §47.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
 
 > [!example] Example §47.1: The Abelianization of $S_n$
-> For $n \geq 2$, $S_n/[S_n, S_n] = S_n/A_n \cong \{\pm 1\}$: by The Commutator Subgroup and Characters of $S_n$ ([[§47 Commutators#^thm-47-5|§47.5]]), $[S_n, S_n] = A_n$, and the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]] applied to the surjective homomorphism $\operatorname{sgn}$, whose kernel is $A_n$, gives $S_n/A_n \cong \{\pm 1\}$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-1|Ex. §41.1]]).
+> For $n \geq 2$, $S_n/[S_n, S_n] = S_n/A_n \cong \{\pm 1\}$: by The Commutator Subgroup and Characters of $S_n$ ([[§47 Commutators#^thm-47-5|§47.5]]), $[S_n, S_n] = A_n$, and the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|First Isomorphism Theorem]] applied to the surjective homomorphism $\operatorname{sgn}$, whose kernel is $A_n$, gives $S_n/A_n \cong \{\pm 1\}$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-2|Ex. §41.2]]).
 >
 > *Source: not from class*
 
@@ -183,12 +183,19 @@ tags: [group-theory, math493]
 
 ^pf-47-7
 
-*Uses:* [[§46 Characters#^def-46-1|Def. §46.1]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|Def. §21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§16 Isomorphisms#^prop-16-2|§16.2]], [[§47 Commutators#^thm-47-5|§47.5]]
-
 > [!remark] Remark: The Characters of $S_n$, Completely
-> [[§47 Commutators#^thm-47-5|PS 4.5]] shows every character of $S_n$ is “trivial or the sign in disguise”; [[§47 Commutators#^cor-47-7|the corollary]] shows every such candidate actually occurs. For $A = \mathbb{C}^\times$ ([[§3 Basic Examples of Groups#^def-3-4|Def. §3.4]]) the square roots of $1$ are $\pm 1$, so $S_n$ ($n \geq 2$) has exactly two characters with values in $\mathbb{C}^\times$: the trivial one and $\operatorname{sgn}$ ([[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]]).
+> [[§47 Commutators#^thm-47-5|PS 4.5]] shows every character of $S_n$ is “trivial or the sign in disguise”; [[§47 Commutators#^cor-47-7|the corollary]] shows every such candidate actually occurs. Example [[§47 Commutators#^ex-47-2|§47.2]] works this out for $A = \mathbb{C}^\times$.
 
 ^rem-47-3
+
+> [!example] Example §47.2: The Characters of $S_n$ with Values in $\mathbb{C}^\times$
+> Let $n \geq 2$. Then $S_n$ has exactly two characters with values in $\mathbb{C}^\times$: the trivial one and $\operatorname{sgn}$.
+>
+> By Corollary [[§47 Commutators#^cor-47-7|§47.7]] with $A = \mathbb{C}^\times$, the characters $S_n \to \mathbb{C}^\times$ correspond bijectively to the $a \in \mathbb{C}^\times$ with $a^2 = 1$. In the field $\mathbb{C}$, $a^2 = 1$ means $(a - 1)(a + 1) = 0$, i.e. $a = 1$ or $a = -1$: the square roots of $1$ are $\pm 1$. For $a = 1$, $\chi_1$ is the trivial character. For $a = -1$, $\chi_{-1}$ is $1$ on $A_n$ and $-1$ off $A_n$, which is $\operatorname{sgn}$. These two are different, since $\operatorname{sgn}((1\,2)) = -1$.
+
+^ex-47-2
+
+*Uses:* [[§46 Characters#^def-46-1|Def. §46.1]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|Def. §21.3]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§16 Isomorphisms#^prop-16-2|§16.2]], [[§47 Commutators#^thm-47-5|§47.5]]
 
 > [!theorem] Proposition §47.8: Normal Subgroups with Trivial Intersection Commute
 > Let $M$ and $N$ be [[§38 Normal Subgroups#^def-38-1|normal subgroups]] of $G$ with $M \cap N = \{e\}$. Then $mn = nm$ for all $m \in M$ and $n \in N$.
@@ -206,21 +213,39 @@ tags: [group-theory, math493]
 
 ^pf-47-8
 
-*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§4 Subgroups#^def-4-1|Def. §4.1]]
+> [!theorem] Lemma §47.9: Commutators of Two Normal Subgroups Lie in Their Intersection
+> Let $M$ and $N$ be normal subgroups of $G$. Then every commutator $mnm^{-1}n^{-1}$ with $m \in M$ and $n \in N$ lies in $M \cap N$.
+>
+> *Source: the proof of PS 4.2*
+
+^lem-47-9
+
+> [!proof]+ Proof
+> *Idea:* group $mnm^{-1}n^{-1}$ in two ways.
+>
+> Let $x = mnm^{-1}n^{-1}$. As $x = (mnm^{-1})\,n^{-1}$ with $mnm^{-1} \in N$ ($N$ is normal) and $n^{-1} \in N$, $x \in N$. As $x = m\,(nm^{-1}n^{-1})$ with $nm^{-1}n^{-1} \in M$ ($M$ is normal) and $m \in M$, $x \in M$. So $x \in M \cap N$. (This is the first half of the proof of Proposition [[§47 Commutators#^prop-47-8|§47.8]], which did not use $M \cap N = \{e\}$.)
+
+^pf-47-9
+
+*Uses:* [[§47 Commutators#^prop-47-8|§47.8]]
+
+The proof shows more:
 
 > [!remark] Remark: Commutators of Normal Subgroups
-> [[§47 Commutators#^pf-47-8|The proof]] shows more: for normal $M, N$, every [[§47 Commutators#^def-47-1|commutator]] $mnm^{-1}n^{-1}$ with $m \in M$, $n \in N$ lies in $M \cap N$. When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$; this is the first step toward recognizing $G$ as a [[§3 Basic Examples of Groups#^def-3-2|direct product]] $M \times N$ when also $MN = G$ ([[§41 The First and Second Isomorphism Theorems#^def-41-1|Def. §41.1]]) (not from class), carried out in Internal Direct Products Are Direct Products (Theorem [[§57 Internal and External Direct Products#^thm-57-1|§57.1]], WS 11.1).
+> When $M \cap N = \{e\}$, elements of $M$ commute with elements of $N$ (Lemma [[§47 Commutators#^lem-47-9|§47.9]] and Proposition [[§47 Commutators#^prop-47-8|§47.8]]); this is the first step toward recognizing $G$ as a [[§3 Basic Examples of Groups#^def-3-2|direct product]] $M \times N$ when also $MN = G$ (not from class), carried out in Internal Direct Products Are Direct Products (Theorem [[§57 Internal and External Direct Products#^thm-57-1|§57.1]], WS 11.1).
 
 ^rem-47-4
 
 *Problem Set 5, Problems 3 and 4.*
 
-> [!theorem] Lemma §47.9: $3$-Cycles Are Commutators in $A_n$
+*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§4 Subgroups#^def-4-1|Def. §4.1]]
+
+> [!theorem] Lemma §47.10: $3$-Cycles Are Commutators in $A_n$
 > Let $n \geq 5$. Every $3$-cycle $(i\,j\,k)$ is a commutator $g_1g_2g_1^{-1}g_2^{-1}$ with $g_1, g_2 \in A_n$.
 >
 > *Source: PS 5.3(1)*
 
-^lem-47-9
+^lem-47-10
 
 > [!proof]+ Proof
 > *Idea:* Make the odd conjugators even by multiplying each by a disjoint transposition $(l\,m)$.
@@ -229,32 +254,46 @@ tags: [group-theory, math493]
 >
 > $$ g_1g_2g_1^{-1}g_2^{-1} = (l\,m)(j\,k)(l\,m)(i\,j)(l\,m)(j\,k)(l\,m)(i\,j) = (j\,k)(i\,j)(j\,k)(i\,j) = (i\,j\,k). $$
 
-^pf-47-9
+^pf-47-10
 
 *Uses:* [[§47 Commutators#^prop-47-2|§47.2]]
 
-> [!theorem] Theorem §47.10: Characters of $A_n$ Are Trivial for $n \geq 5$
+This is the fact used in [[§48 Solvable Groups|§48]]: in a chain with abelian quotients, every commutator of $G_j$ lies in $G_{j-1}$.
+
+> [!theorem] Theorem §47.11: Characters of $A_n$ Are Trivial for $n \geq 5$
 > Let $n \geq 5$. Then $[A_n, A_n] = A_n$, and every character $\psi: A_n \to A$ is trivial.
 >
 > *Source: PS 5.3*
 
-^thm-47-10
+^thm-47-11
 
 > [!proof]+ Proof
 > *Idea:* In $A_n$ every $3$-cycle is a commutator, and $3$-cycles generate $A_n$.
 >
-> By the lemma ([[§47 Commutators#^lem-47-9|Lemma §47.9]]) every $3$-cycle lies in $[A_n, A_n]$, and $A_n$ is generated by $3$-cycles (Generators of $A_n$, [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]]); so $[A_n, A_n] = A_n$. A character kills every commutator (Characters Kill Commutators, [[§47 Commutators#^prop-47-1|§47.1]]), so $\psi$ is trivial on the $3$-cycles; as a homomorphism, it is then trivial on all of $A_n$, every element being a product of $3$-cycles.
+> By the lemma ([[§47 Commutators#^lem-47-10|Lemma §47.10]]) every $3$-cycle lies in $[A_n, A_n]$, and $A_n$ is generated by $3$-cycles (Generators of $A_n$, [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]]); so $[A_n, A_n] = A_n$. A character kills every commutator (Characters Kill Commutators, [[§47 Commutators#^prop-47-1|§47.1]]), so $\psi$ is trivial on the $3$-cycles; as a homomorphism, it is then trivial on all of $A_n$, every element being a product of $3$-cycles.
 
-^pf-47-10
+^pf-47-11
 
-*Uses:* [[§47 Commutators#^lem-47-9|§47.9]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]], [[§47 Commutators#^prop-47-1|§47.1]]
+*Uses:* [[§47 Commutators#^lem-47-10|§47.10]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]], [[§47 Commutators#^prop-47-1|§47.1]]
 
-> [!remark] Remark: Small $n$, and the Link to Simplicity
-> The bound $n \geq 5$ is sharp. $A_3 \cong \mathbb{Z}/3\mathbb{Z}$ is abelian, so the identity map is a nontrivial character. $A_4$ has the nontrivial character $\alpha|_{A_4}: A_4 \to A_3$ of The Pair-Partition Homomorphism ([[§43 Simple Groups#^prop-43-10|§43.10]]), so $[A_4, A_4] \subseteq K \neq A_4$. For $n \geq 5$ the theorem also follows from simplicity ([[§43 Simple Groups#^thm-43-9|Theorem §43.9]]): $[A_n, A_n]$ is normal and, since $A_n$ is not abelian, nontrivial, hence equal to $A_n$. PS 5.3 gives a much shorter direct proof.
+> [!example] Example §47.3: A Nontrivial Character of $A_3$
+> $A_3 = \{e, (1\,2\,3), (1\,3\,2)\} = \langle (1\,2\,3) \rangle \cong \mathbb{Z}/3\mathbb{Z}$ is cyclic, hence abelian. So the identity map $A_3 \to A_3$ is a homomorphism into an abelian group, i.e. a character (Example [[§46 Characters#^ex-46-1|§46.1]](4)), and it is nontrivial because $A_3 \neq \{e\}$. Consistently, $[A_3, A_3] = \{e\} \neq A_3$ (Proposition [[§47 Commutators#^prop-47-4|§47.4]](3)).
+
+^ex-47-3
+
+> [!example] Example §47.4: A Nontrivial Character of $A_4$
+> Let $\alpha: S_4 \to S_P \cong S_3$ be The Pair-Partition Homomorphism (Proposition [[§43 Simple Groups#^prop-43-10|§43.10]]). Its restriction $\alpha|_{A_4}$ is a homomorphism with kernel $A_4 \cap K = K$, so by the First Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]) its image is a subgroup of $S_P \cong S_3$ isomorphic to $A_4/K \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}$ (by that proposition). A subgroup of order $3$ of $S_3$ is generated by a $3$-cycle, and both $3$-cycles lie in $A_3$; so the image is the alternating subgroup, written $A_3$, which is cyclic and hence abelian. So $\alpha|_{A_4}: A_4 \to A_3$ is a character of $A_4$, nontrivial since its image has $3$ elements. By Proposition [[§47 Commutators#^prop-47-4|§47.4]](2), $[A_4, A_4] \subseteq \operatorname{Ker}\alpha|_{A_4} = K \neq A_4$.
+
+^ex-47-4
+
+The bound $n \geq 5$ in Theorem [[§47 Commutators#^thm-47-11|§47.11]] is sharp, as the next two examples show.
+
+> [!remark] Remark: The Link to Simplicity
+> For $n \geq 5$ the theorem also follows from simplicity (Theorem [[§43 Simple Groups#^thm-43-9|§43.9]]): $[A_n, A_n]$ is normal and, since $A_n$ is not abelian, nontrivial, hence equal to $A_n$. PS 5.3 gives a much shorter direct proof.
 
 ^rem-47-5
 
-> [!example] Example §47.2: Products of Commutators That Are Not Commutators
+> [!example] Example §47.5: Products of Commutators That Are Not Commutators
 > $[G,G]$ is defined as the subgroup *generated* by commutators; this example shows that it can contain elements that are not themselves commutators. Fix $p, q, r \geq 1$ and let $G$ be the group of real block matrices
 >
 > $$ T(A, B, C) = \begin{bmatrix} I_p & A & C \\ 0 & I_q & B \\ 0 & 0 & I_r \end{bmatrix} \qquad (A \text{ is } p \times q,\ B \text{ is } q \times r,\ C \text{ is } p \times r). $$
@@ -268,18 +307,46 @@ tags: [group-theory, math493]
 >
 > *Source: PS 5.4*
 
-^ex-47-2
+^ex-47-5
 
 > [!remark] Remark: PS 5.4 Pictured
 > Identify $T(0, 0, M)$ with the matrix $M \in \mathbb{R}^{p \times r} \cong \mathbb{R}^{pr}$. Multiplication becomes addition, $T(0,0,M_1)\,T(0,0,M_2) = T(0,0,M_1 + M_2)$, so:
 > - the *commutators* correspond to the set $C = \{AY - XB\}$;
-> - *products* of commutators correspond to sums of elements of $C$, and every $M$ is such a sum, $M = \sum_i (A_iY_i - X_iB_i)$ (part (2) of [[§47 Commutators#^ex-47-2|Example §47.2]]).
+> - *products* of commutators correspond to sums of elements of $C$, and every $M$ is such a sum, $M = \sum_i (A_iY_i - X_iB_i)$ (part (2) of [[§47 Commutators#^ex-47-5|Example §47.5]]).
 >
-> So $[G, G] = \langle C \rangle$ is all of $\mathbb{R}^{pr}$. The set $C$ is closed under scaling, $\lambda(AY - XB) = (\lambda A)Y - (\lambda X)B$, and consists of matrices of rank $\leq 2q$; when $2q < \min(p, r)$, as in part (3), it is a thin, cone-shaped subset. In fact $C$ is exactly the set of matrices of rank $\leq 2q$ *(not from class)*: such an $M$ factors as $M = UV$ with $U$ of size $p \times 2q$ and $V$ of size $2q \times r$, and writing $U = [\,A \mid -X\,]$ and $V = \begin{bmatrix} Y \\ B \end{bmatrix}$ gives $M = AY - XB$. (So when $2q \geq \min(p, r)$, every element of $[G, G]$ is a commutator.)
+> So $[G, G] = \langle C \rangle$ is all of $\mathbb{R}^{pr}$. The set $C$ is closed under scaling, $\lambda(AY - XB) = (\lambda A)Y - (\lambda X)B$, and consists of matrices of rank $\leq 2q$; when $2q < \min(p, r)$, as in part (3), it is a thin, cone-shaped subset. In fact $C$ is exactly the set of matrices of rank $\leq 2q$, so that when $2q \geq \min(p, r)$ every element of $[G, G]$ is a commutator (Proposition [[§47 Commutators#^prop-47-12|§47.12]], after the figure).
 >
 > *Source: review session 10/21*
 
 ^rem-47-6
+
+> [!theorem] Proposition §47.12: The Commutators of the Block Group Are the Matrices of Rank at Most $2q$
+> In the group $G$ of Example [[§47 Commutators#^ex-47-5|§47.5]], identify $T(0, 0, M)$ with $M \in \mathbb{R}^{p \times r}$. Then the commutators of $G$ correspond to the set
+>
+> $$
+> C = \{AY - XB : A, X \in \mathbb{R}^{p \times q},\ Y, B \in \mathbb{R}^{q \times r}\} = \{M \in \mathbb{R}^{p \times r} : \operatorname{rank} M \leq 2q\}.
+> $$
+>
+> In particular, if $2q \geq \min(p, r)$, every element of $[G, G]$ is a commutator.
+>
+> *Source: review session 10/21; the inclusion $\supseteq$ not from class*
+
+^prop-47-12
+
+> [!proof]+ Proof
+> *Idea:* a matrix of rank at most $2q$ factors through $\mathbb{R}^{2q}$; split the factorization into two blocks of size $q$.
+>
+> By part (1) of Example [[§47 Commutators#^ex-47-5|§47.5]], the commutator of $T(A, B, C')$ and $T(X, Y, Z)$ is $T(0, 0, AY - XB)$, and $A, B, X, Y$ can be chosen freely; so the commutators correspond exactly to the elements of the set $\{AY - XB\}$.
+>
+> ($\subseteq$) As in part (3) of that example, $\operatorname{rank}(AY - XB) \leq \operatorname{rank}(AY) + \operatorname{rank}(XB) \leq q + q = 2q$, since $AY$ and $XB$ are products through $\mathbb{R}^q$.
+>
+> ($\supseteq$) Let $M$ have rank $k \leq 2q$. Choose a basis $u_1, \ldots, u_k$ of the column space of $M$ and let $U$ be the $p \times 2q$ matrix with columns $u_1, \ldots, u_k, 0, \ldots, 0$. Each column of $M$ is a linear combination of $u_1, \ldots, u_k$; recording its coefficients in the corresponding column of a $2q \times r$ matrix $V$ (with zeros in rows $k+1, \ldots, 2q$) gives $M = UV$. Write $U = [\,A \mid -X\,]$ with $A, X$ of size $p \times q$, and $V = \begin{bmatrix} Y \\ B \end{bmatrix}$ with $Y, B$ of size $q \times r$. Block multiplication gives $M = UV = AY + (-X)B = AY - XB \in C$.
+>
+> Finally, if $2q \geq \min(p, r)$, every $M \in \mathbb{R}^{p \times r}$ has rank $\leq \min(p, r) \leq 2q$, so lies in $C$; since $[G, G] = \{T(0, 0, M)\}$ (part (2) of the example), every element of $[G, G]$ is a commutator.
+
+^pf-47-12
+
+*Uses:* [[§47 Commutators#^ex-47-5|Ex. §47.5]]
 
 ![[m493-47-1.svg]]
 
@@ -287,7 +354,7 @@ tags: [group-theory, math493]
 
 *Lecture, Fri Oct 9.*
 
-> [!theorem] Proposition §47.11: Abelian Quotients and Commutators
+> [!theorem] Proposition §47.13: Abelian Quotients and Commutators
 > Let $N \trianglelefteq H$ ([[§38 Normal Subgroups#^def-38-1|normal]]). The following are equivalent:
 > 1. $H/N$ is [[§1 The Definition of a Group#^def-1-2|abelian]];
 > 2. every [[§47 Commutators#^def-47-1|commutator]] $ghg^{-1}h^{-1}$ ($g, h \in H$) lies in $N$;
@@ -295,7 +362,7 @@ tags: [group-theory, math493]
 >
 > *Source: lecture 10/9*
 
-^prop-47-11
+^prop-47-13
 
 > [!proof]+ Proof
 > *Idea:* $gN$ and $hN$ commute iff $ghg^{-1}h^{-1} \in N$.
@@ -308,11 +375,29 @@ tags: [group-theory, math493]
 >
 > **(2) $\Leftrightarrow$ (3).** $D(H)$ is the subgroup generated by the commutators ([[§47 Commutators#^def-47-2|Definition §47.2]]), i.e. the smallest subgroup containing them. So a subgroup $N$ contains all commutators iff it contains $D(H)$.
 
-^pf-47-11
+^pf-47-13
+
+> [!theorem] Corollary §47.14: $D(H)$ Is the Smallest Normal Subgroup with Abelian Quotient
+> Let $H$ be a group.
+>
+> 1. $H/D(H)$ is abelian; this recovers The Abelianization Is Abelian (Proposition [[§47 Commutators#^prop-47-6|§47.6]]).
+> 2. If $N \trianglelefteq H$ and $H/N$ is abelian, then $D(H) \subseteq N$.
+>
+> So $H^{\mathrm{ab}} = H/D(H)$ is the largest abelian quotient of $H$: for every $N$ as in (2), $hD(H) \mapsto hN$ is a well-defined surjective homomorphism $H^{\mathrm{ab}} \to H/N$.
+
+^cor-47-14
+
+> [!proof]+ Proof
+> *Idea:* apply Proposition [[§47 Commutators#^prop-47-13|§47.13]] with $N = D(H)$, and in the direction (1) $\Rightarrow$ (3).
+>
+> **(1)** $D(H)$ is normal in $H$ (Proposition [[§47 Commutators#^prop-47-4|§47.4]](1)) and $D(H) \subseteq D(H)$, so (3) $\Rightarrow$ (1) of Proposition [[§47 Commutators#^prop-47-13|§47.13]] with $N = D(H)$ shows that $H/D(H)$ is abelian.
+>
+> **(2)** This is (1) $\Rightarrow$ (3) of the same proposition.
+>
+> **Largest abelian quotient.** Let $N$ be as in (2), so $D(H) \subseteq N$. If $hD(H) = h'D(H)$, then $h^{-1}h' \in D(H) \subseteq N$, so $hN = h'N$: the map is well defined. It is a homomorphism, since $hD(H) \cdot h'D(H) = hh'D(H) \mapsto hh'N = hN \cdot h'N$, and it is surjective, since $hN$ is the image of $hD(H)$.
+
+^pf-47-14
+
+*Uses:* [[§47 Commutators#^prop-47-13|§47.13]], [[§47 Commutators#^prop-47-4|§47.4]]
 
 *Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§47 Commutators#^def-47-1|Def. §47.1]], [[§47 Commutators#^def-47-2|Def. §47.2]]
-
-> [!remark] Remark: $D(H)$ Is the Smallest Normal Subgroup with Abelian Quotient
-> With $N = D(H)$, the proposition recovers The Abelianization Is Abelian ([[§47 Commutators#^prop-47-6|Proposition §47.6]]). Conversely, it says that $D(H)$ is contained in every normal subgroup with abelian quotient. So $H^{\mathrm{ab}} = H/D(H)$ is the largest abelian quotient of $H$. This is the fact used in [[§48 Solvable Groups|§48]]: in a chain with abelian quotients, every commutator of $G_j$ lies in $G_{j-1}$.
-
-^rem-47-7

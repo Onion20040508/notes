@@ -189,13 +189,31 @@ tags: [functional-analysis, math556]
 
 *Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|Def. §33.6]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]]
 
-> [!remark]- Connections
-> - The fundamental lemma for continuous functions on an interval, with its proof by a bump: [[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-2|CM Lemma §B5.1.2]].
-
-> [!remark] Remark: Weak and Classical Derivatives Agree Where $f$ is Smooth
-> Does the weak derivative always match the pointwise derivative? Where $f$ is $C^1$ in a region, take test functions supported in that region; there the weak derivative is the classical one (Lemma [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-4|§33.4]]). Where $f$ has a singularity, there is no pointwise derivative to compare with, and a weak derivative is an element of $L^p$, defined only almost everywhere: it has no value at a single point.
+> [!remark] Remark: Weak and Pointwise Derivatives
+> Does the weak derivative always match the pointwise derivative? Where $f$ is $C^1$ in a region, the weak derivative is the classical one there (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-5|§33.5]] below). Where $f$ has a singularity, there is no pointwise derivative to compare with, and a weak derivative is an element of $L^p$, defined only almost everywhere: it has no value at a single point.
 
 ^rem-33-5
+
+> [!theorem] Corollary §33.5: Weak and Classical Derivatives Agree Where $f$ is Smooth
+> Let $\Omega \subset \mathbb{R}^n$ be open, $f \in L^p(\Omega)$ with weak derivative $f_j$ in the $x_j$-direction (Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|§33.6]]), and $U \subset \Omega$ open. If $f$ agrees a.e. on $U$ with a function $g \in C^1(U)$, then $f_j = \partial_{x_j} g$ a.e. on $U$.
+
+^cor-33-5
+
+> [!proof]+ Proof
+> (The argument indicated in lecture, written out.) Let $\varphi \in C_c^\infty(U)$, and let $\tilde\varphi$ be $\varphi$ on $U$ and $0$ on $\Omega \setminus U$. Then $\tilde\varphi \in C_c^\infty(\Omega)$: its support $\operatorname{supp}\varphi$ is a compact subset of $U \subset \Omega$, and $\tilde\varphi$ is $C^\infty$ on each of the open sets $U$ and $\Omega \setminus \operatorname{supp}\varphi$, which cover $\Omega$ (as in the proof of Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|§33.1]]). By the definition of the weak derivative, applied to $\tilde\varphi$, and since $\tilde\varphi$ and $\partial_{x_j}\tilde\varphi$ vanish outside $U$,
+>
+> $$
+> \int_U f_j\, \varphi\, dx = -\int_U f\, \partial_{x_j}\varphi\, dx = -\int_U g\, \partial_{x_j}\varphi\, dx = \int_U \partial_{x_j} g\; \varphi\, dx ,
+> $$
+>
+> the second equality because $f = g$ a.e. on $U$, the third by Lemma [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]] on the open set $U$. So $h = f_j - \partial_{x_j} g$ satisfies $\int_U h\, \varphi = 0$ for every $\varphi \in C_c^\infty(U)$. It is locally integrable on $U$ ($f_j \in L^p$, and $\partial_{x_j} g$ is continuous), so by the fundamental lemma of the calculus of variations, as in the proof of Lemma [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-4|§33.4]], $h = 0$ a.e. on $U$.
+
+^pf-33-5
+
+*Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|§33.1]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-4|§33.4]]
+
+> [!remark]- Connections
+> - The fundamental lemma for continuous functions on an interval, with its proof by a bump: [[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-2|CM Lemma §B5.1.2]].
 
 > [!definition] Definition §33.7: Sobolev Space via Weak Derivatives
 > For $\Omega \subset \mathbb{R}^n$ open, an integer $k \ge 0$ and $1 \le p \le \infty$,
@@ -207,9 +225,25 @@ tags: [functional-analysis, math556]
 ^def-33-7
 
 > [!remark] Remark
-> Both descriptions of $W^{k,p}$ are used: the completion of Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-2|§33.2]], and the weak-derivative space above. Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]] shows that every element of the completion (for $k = 1$) has its weak first derivatives in $L^p$, so the completion sits inside the weak-derivative space. That the two coincide for reasonable $\Omega$ (every function with weak derivatives in $L^p$ is a $W^{k,p}$-limit of smooth functions) is the Meyers–Serrin theorem, which was not covered.
+> Both descriptions of $W^{k,p}$ are used: the completion of Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-2|§33.2]], and the weak-derivative space above. For $k = 1$ the completion sits inside the weak-derivative space (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-6|§33.6]] below). That the two coincide for reasonable $\Omega$ (every function with weak derivatives in $L^p$ is a $W^{k,p}$-limit of smooth functions) is the Meyers–Serrin theorem, which was not covered.
 
 ^rem-33-6
+
+> [!theorem] Corollary §33.6: The Completion Sits Inside the Weak-Derivative Space
+> Let $\overline{\Omega} \subset \mathbb{R}^n$ be bounded and closed with interior $\Omega$, $1 \le p < \infty$, and let $\{g_n\} \subset C^\infty(\overline{\Omega})$ be Cauchy in $|\cdot|_{W^{1,p}}$ (Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-1|§33.1]]). Then there are $f \in L^p(\Omega)$ and, for each $j$, $f_j \in L^p(\Omega)$ with $g_n \to f$ and $\partial_{x_j} g_n \to f_j$ in $L^p(\Omega)$; $f_j$ is the weak derivative $\partial_{x_j} f$, so $f \in W^{1,p}(\Omega)$ in the sense of Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-7|§33.7]]; and $f$, $f_j$ depend only on the element of the completion represented by $\{g_n\}$.
+
+^cor-33-6
+
+> [!proof]+ Proof
+> (Details filled in.) *The limits exist.* $\|g_n - g_m\|_{L^p} \le |g_n - g_m|_{W^{1,p}}$ and $\|\partial_{x_j} g_n - \partial_{x_j} g_m\|_{L^p} \le |g_n - g_m|_{W^{1,p}}$, since these are terms of the sum defining the norm. So $\{g_n\}$ and each $\{\partial_{x_j} g_n\}$ are Cauchy in $L^p(\Omega)$, which is complete (Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]]); call the limits $f$ and $f_j$.
+>
+> *Weak derivatives.* By Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], $\int_\Omega f_j \varphi = -\int_\Omega f\, \partial_{x_j}\varphi$ for every $\varphi \in C_c^\infty(\Omega)$; by Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|§33.6]], $f_j$ is the weak derivative of $f$ in the $x_j$-direction. Since $f$ and all $f_j$ lie in $L^p(\Omega)$, $f \in W^{1,p}(\Omega)$ (Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-7|§33.7]] with $k = 1$).
+>
+> *Independence of the representative.* If $\{h_n\}$ is an equivalent Cauchy sequence, $|g_n - h_n|_{W^{1,p}} \to 0$, then $\|g_n - h_n\|_{L^p} \to 0$ and $\|\partial_{x_j} g_n - \partial_{x_j} h_n\|_{L^p} \to 0$, so $\{h_n\}$ and $\{\partial_{x_j} h_n\}$ have the same $L^p$ limits $f$ and $f_j$.
+
+^pf-33-6
+
+*Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|Def. §33.6]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-7|Def. §33.7]]
 
 > [!remark]- Connections
 > - The continuum limit of the multipole-lattice model takes its configurations in $W^{1,2}$: unit-vector fields whose components have square-integrable weak first derivatives on every ball ([[§M7.1 Configurations as Maps; Potential and Stiffness; When the Continuum Limit is Well Posed#^def-m7-1-5|Thesis Def. §M7.1.5]]).
@@ -406,9 +440,39 @@ tags: [functional-analysis, math556]
 > [!remark] Remark: What “Zero on the Boundary” Means
 > One may think of $f \in H^1_0(\Omega)$ as $C_c^\infty$ in spirit, equal to $0$ on $\partial\Omega$ in an appropriate sense; making this precise needs much more of Sobolev space theory and is outside the course. Why only in an appropriate sense: for $f \in L^2$ alone, boundary values mean nothing, since $\partial\Omega$ has measure zero and an $L^2$ function can be changed there at will. What makes the boundary condition meaningful is that $\nabla f \in L^2$ as well. A function that stays away from $0$ up to $\partial\Omega$ and is $0$ outside has a jump at the boundary, and a jump has no $L^2$ derivative — its derivative is a [[§33 Sobolev Spaces and Weak Derivatives#^rem-33-7|delta]] (Example [[§33 Sobolev Spaces and Weak Derivatives#^ex-33-3|§33.3]]).
 >
-> Precisely: if $g_n \in C_c^\infty(\Omega)$ converge to $f$ in $H^1_0(\Omega)$, their extensions by zero (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|§33.1]]) have the same norms, so they are [[§11 Normed Linear Spaces#^def-11-5|Cauchy]] in the $W^{1,2}(\mathbb{R}^n)$ norm; hence the extension $\tilde f$ of $f$ by zero has [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|weak derivatives]] in $L^2(\mathbb{R}^n)$, namely the extensions of $\partial_{x_j} f$ (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]] on $\mathbb{R}^n$). In one dimension, $\tilde f$ therefore cannot jump at an endpoint of $\Omega$.
+> Precisely: the extension $\tilde f$ of $f$ by zero has [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|weak derivatives]] in $L^2(\mathbb{R}^n)$, namely the extensions of $\partial_{x_j} f$ (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-10|§33.10]] below). In one dimension, $\tilde f$ therefore cannot jump at an endpoint of $\Omega$.
 
 ^rem-33-10
+
+> [!theorem] Proposition §33.10: Extension by Zero of an $H^1_0$ Function
+> Let $\Omega \subset \mathbb{R}^n$ be bounded and open and $f \in H^1_0(\Omega)$, with weak derivatives $\partial_{x_j} f \in L^2(\Omega)$ (the $L^2$ limits of $\partial_{x_j} g_n$ for $g_n \in C_c^\infty(\Omega)$ converging to $f$ in $H^1_0(\Omega)$, as in the proof of Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|§33.9]]). Let $\tilde f$ and $\tilde h_j$ be the extensions of $f$ and $\partial_{x_j} f$ by $0$ to $\mathbb{R}^n$. Then $\tilde h_j$ is the weak derivative of $\tilde f$ on $\mathbb{R}^n$:
+>
+> $$
+> \int_{\mathbb{R}^n} \tilde h_j\, \varphi\, dx = -\int_{\mathbb{R}^n} \tilde f\, \partial_{x_j}\varphi\, dx \qquad \text{for all } \varphi \in C_c^\infty(\mathbb{R}^n),\ j = 1, \ldots, n .
+> $$
+>
+> In particular $\tilde f \in W^{1,2}(\mathbb{R}^n)$ in the sense of Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-7|§33.7]].
+
+^prop-33-10
+
+> [!proof]+ Proof
+> *(Not from lecture.)* Choose $g_n \in C_c^\infty(\Omega)$ with $g_n \to f$ and $\partial_{x_j} g_n \to \partial_{x_j} f$ in $L^2(\Omega)$. By Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|§33.1]], the extension $\tilde g_n$ of $g_n$ by zero lies in $C_c^\infty(\mathbb{R}^n)$, and $\partial_{x_j} \tilde g_n$ is the extension by zero of $\partial_{x_j} g_n$: the two agree on $\Omega$, and both vanish on the open set $\mathbb{R}^n \setminus \operatorname{supp} g_n$, where $\tilde g_n = 0$. Since the differences vanish outside $\Omega$,
+>
+> $$
+> \|\tilde g_n - \tilde f\|_{L^2(\mathbb{R}^n)} = \|g_n - f\|_{L^2(\Omega)} \to 0, \qquad \|\partial_{x_j}\tilde g_n - \tilde h_j\|_{L^2(\mathbb{R}^n)} = \|\partial_{x_j} g_n - \partial_{x_j} f\|_{L^2(\Omega)} \to 0
+> $$
+>
+> (in particular the extensions have the same norms as the $g_n$, and $\{\tilde g_n\}$ is Cauchy in the $W^{1,2}(\mathbb{R}^n)$ norm). Fix $\varphi \in C_c^\infty(\mathbb{R}^n)$. By Lemma [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]] on $\mathbb{R}^n$ with $g = \tilde g_n \in C^1(\mathbb{R}^n)$,
+>
+> $$
+> \int_{\mathbb{R}^n} \partial_{x_j}\tilde g_n\, \varphi\, dx = -\int_{\mathbb{R}^n} \tilde g_n\, \partial_{x_j}\varphi\, dx \qquad \text{for every } n .
+> $$
+>
+> Let $n \to \infty$, as in the proof of Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]: by Cauchy–Schwarz in $L^2(\mathbb{R}^n)$, $\bigl| \int (\tilde g_n - \tilde f)\, \partial_{x_j}\varphi \bigr| \le \|\tilde g_n - \tilde f\|_{L^2}\, \|\partial_{x_j}\varphi\|_{L^2} \to 0$, and likewise $\bigl| \int (\partial_{x_j}\tilde g_n - \tilde h_j)\, \varphi \bigr| \le \|\partial_{x_j}\tilde g_n - \tilde h_j\|_{L^2}\, \|\varphi\|_{L^2} \to 0$; $\varphi$ and $\partial_{x_j}\varphi$ are continuous with compact support, hence in $L^2$. This gives the identity. Finally $\tilde f$ and the $\tilde h_j$ lie in $L^2(\mathbb{R}^n)$, so $\tilde f \in W^{1,2}(\mathbb{R}^n)$.
+
+^pf-33-10
+
+*Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|§33.1]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]
 
 ![[m556-33-4.svg]]
 *In one dimension, extended by zero: an element of $H^1_0(a,b)$ must come down to $0$ at the endpoints; a function that jumps there does not belong, although as an $L^2$ function it could be changed at the two endpoints without changing anything.*

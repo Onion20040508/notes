@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 42.3", "uniform boundedness", "pointwise bounded implies uniformly bounded", "Lax §10.1, Thms 2–3"]
+aliases: ["MATH 556 42.5", "uniform boundedness", "pointwise bounded implies uniformly bounded", "Lax §10.1, Thms 2–3"]
 tags: [functional-analysis, hub]
 ---
 ![[§42 Uniform Boundedness and Approximation#^thm-42-5]]

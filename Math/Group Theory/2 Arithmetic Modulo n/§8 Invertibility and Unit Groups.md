@@ -237,16 +237,21 @@ tags: [group-theory, math493]
 
 ^pf-8-3
 
+> [!remark] Remark: Computing Inverses in $U_n$
+> The proof is constructive: the extended Euclidean algorithm computes the Bézout coefficients, hence the inverse (as in Example [[§8 Invertibility and Unit Groups#^ex-8-3|§8.3]]).
+
+^rem-8-3
+
+> [!example] Example §8.6: The Inverse of $[3]$ in $U_{10}$
+> $U_{10} = \{[1], [3], [7], [9]\}$, the classes of the $a \in \{1, \ldots, 10\}$ with $\gcd(a, 10) = 1$. Since $3 \cdot 7 = 21 = 2 \cdot 10 + 1 \equiv 1 \pmod{10}$, we have $[3][7] = [1]$, and $[7][3] = [1]$ as $U_{10}$ is abelian; by Uniqueness of Inverses, $[3]^{-1} = [7]$. The extended Euclidean algorithm finds the same inverse: $10 = 3 \cdot 3 + 1$ gives $1 = 10 - 3 \cdot 3$, so $3 \cdot (-3) \equiv 1 \pmod{10}$ and $[3]^{-1} = [-3] = [7]$.
+
+^ex-8-6
+
 *Uses:* [[§5 A Zoo of Subgroups#^cor-5-2|§5.2]], [[§8 Invertibility and Unit Groups#^prop-8-1|§8.1]], [[§8 Invertibility and Unit Groups#^def-8-1|Def. §8.1]], [[§8 Invertibility and Unit Groups#^def-8-4|Def. §8.4]], [[§7 The Group ℤ∕nℤ#^def-7-2|Def. §7.2]], [[§7 The Group ℤ∕nℤ#^prop-7-1|§7.1]], [[§1 The Definition of a Group#^def-1-1|Def. §1.1]]
 
 > [!remark]- Connections
 > - The structure of $U_n$ via the Chinese Remainder Theorem: [[§22 The Structure of Uₙ#^thm-22-2|Uₙ as a Product of Prime-Power Unit Groups]] (PS 1.6(3)).
 > - Its multiplication tables for small $n$: [[§14 Multiplication Tables#^ex-14-3|Table of U₇]], [[§14 Multiplication Tables#^ex-14-4|Table of U₈]].
-
-> [!remark] Remark: Computing Inverses in $U_n$
-> The proof is constructive: the extended Euclidean algorithm computes the Bézout coefficients, hence the inverse. E.g. in $U_{10} = \{[1], [3], [7], [9]\}$: from $3 \cdot 7 = 21 \equiv 1$, $[3]^{-1} = [7]$.
-
-^rem-8-3
 
 > [!theorem] Proposition §8.4: $\mathbb{Z}/n\mathbb{Z}$ Is a Field if and only if $n$ Is Prime
 > For $n \geq 2$, $\mathbb{Z}/n\mathbb{Z}$ with its addition and multiplication is a field if and only if $n$ is prime. For $p$ prime this field is written $\mathbb{F}_p$, and $\mathbb{F}_p^\times = U_p = \mathbb{Z}/p\mathbb{Z} \setminus \{[0]\}$.

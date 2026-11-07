@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 14.8", "Lax §5.1, Thm 1"]
+aliases: ["MATH 556 14.9", "Lax §5.1, Thm 1"]
 tags: [functional-analysis, hub]
 ---
 ![[§14 New Normed Spaces from Old#^thm-14-9]]
@@ -24,6 +24,7 @@ tags: [functional-analysis, hub]
 ## Used in (Functional Analysis)
 - [[§14 New Normed Spaces from Old#^prop-14-10|Proposition §14.10: The Quotient Seminorm; Closedness is Necessary]]
 - [[§36 Duality in Normed Spaces#^thm-36-11|Theorem §36.11: The Dual of a Quotient]]
+- [[§37 Separable Duals and Reflexive Spaces#^cor-37-11|Corollary §37.11: The Dual of a Subspace: Y' ≅ X'/Y^perp]]
 - [[§39 Solving Mx = y#^thm-39-1|Theorem §39.1: Null Space and the Induced Map]]
 
 ## Connections

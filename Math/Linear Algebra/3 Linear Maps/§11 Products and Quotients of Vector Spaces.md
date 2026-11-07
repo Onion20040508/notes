@@ -181,7 +181,7 @@ tags: [linear-algebra]
 
 > [!remark]- Connections
 > - The key to well-definedness in [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]] and to $\nullsp\pi=U$ in [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
-> - Group version: the cosets of a subgroup partition the group, [[§28 Left and Right Cosets#^prop-28-2|493 Prop. §28.2]] (hub [[Cosets Partition a Group]]).
+> - Group version: the cosets of a subgroup partition the group, [[§28 Left and Right Cosets#^prop-28-3|493 Prop. §28.3]] (hub [[Cosets Partition a Group]]).
 > - Measure-theory use: viewing $\R$ as a vector space over $\mathbb Q$ (a scalar field outside Axler's $\F$), the translates $x+\mathbb Q$ of the subspace $\mathbb Q$ partition $\R$; the Vitali set picks one point from each class meeting $[0,1]$, [[§14 The Vitali Set and the Cantor Set#^def-14-3|551 Def. §14.3]] ([[The Vitali Set is Not Measurable]]).
 
 > [!definition] Definition 3.102: Addition and scalar multiplication on V∕U

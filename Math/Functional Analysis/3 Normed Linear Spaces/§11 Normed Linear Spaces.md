@@ -57,9 +57,27 @@ tags: [functional-analysis, math556]
 *Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§7 Convex Sets and the Gauge#^prop-7-1|§7.1]], [[§7 Convex Sets and the Gauge#^prop-7-5|§7.5]], [[§7 Convex Sets and the Gauge#^prop-7-6|§7.6]]
 
 > [!remark] Remark: Relation to the Functions $p$ of Chapter 2
-> By (a), every [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] statement applies with $p = \|\cdot\|$ or $p = C\|\cdot\|$. The converse of (a) is false, and not only because a positive homogeneous subadditive $p$ may take negative values: even a non-negative one with $p(x) = 0 \Rightarrow x = 0$ need not be a norm, since nothing forces $p(-x) = p(x)$. On $\mathbb{R}$, $p(x) = \max\{x, 0\} + 2\max\{-x, 0\}$ is such a function, with $p(1) = 1 \neq 2 = p(-1)$. By (b) and (c), norms on a real space correspond to convex sets with $0$ interior that contain no full ray and are symmetric; the unit ball is the geometric picture of the norm, as with the disk, square and diamond of Example [[§5 Statement and Motivation#^ex-5-2|§5.2]].
+> By (a), every [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] statement applies with $p = \|\cdot\|$ or $p = C\|\cdot\|$. The converse of (a) is false, and not only because a positive homogeneous subadditive $p$ may take negative values: even a non-negative one with $p(x) = 0 \Rightarrow x = 0$ need not be a norm, since nothing forces $p(-x) = p(x)$ (Example [[§11 Normed Linear Spaces#^ex-11-1|§11.1]] below). By (b) and (c), norms on a real space correspond to convex sets with $0$ interior that contain no full ray and are symmetric; the unit ball is the geometric picture of the norm, as with the disk, square and diamond of Example [[§5 Statement and Motivation#^ex-5-2|§5.2]].
 
 ^rem-11-2
+
+> [!example] Example §11.1: An Asymmetric Positive Homogeneous Subadditive Function on $\mathbb{R}$
+> On $X = \mathbb{R}$ let
+>
+> $$
+> p(x) = \max\{x, 0\} + 2\max\{-x, 0\}.
+> $$
+>
+> Then $p$ is positive homogeneous, subadditive and non-negative, with $p(x) = 0 \Rightarrow x = 0$; but $p(1) = 1 \neq 2 = p(-1)$, so $p$ is not a norm. This shows that the converse of Proposition [[§11 Normed Linear Spaces#^prop-11-1|§11.1]](a) fails even for non-negative $p$ vanishing only at $0$.
+>
+> *(Justification filled in.)* Write $x^+ = \max\{x, 0\}$ and $x^- = \max\{-x, 0\}$, so $p(x) = x^+ + 2x^-$.
+>
+> 1. *Positive homogeneity.* For $a \ge 0$, $(ax)^+ = \max\{ax, 0\} = a\max\{x, 0\} = a\,x^+$, and likewise $(ax)^- = a\,x^-$; hence $p(ax) = a\,p(x)$.
+> 2. *Subadditivity.* $x + y \le x^+ + y^+$ and $0 \le x^+ + y^+$, so $(x+y)^+ \le x^+ + y^+$; applied to $-x, -y$ this gives $(x+y)^- \le x^- + y^-$. Adding the first inequality to twice the second, $p(x+y) \le p(x) + p(y)$.
+> 3. *Non-negativity and $p(x) = 0 \Rightarrow x = 0$.* Both terms are $\ge 0$. If $p(x) = 0$ then $x^+ = x^- = 0$, i.e. $x \le 0$ and $x \ge 0$, so $x = 0$.
+> 4. *Not a norm.* $p(1) = 1$ and $p(-1) = 2$, whereas homogeneity with $a = -1$ would require $p(-1) = |{-1}|\,p(1) = p(1)$.
+
+^ex-11-1
 
 > [!example] Example §11.2: Norms on $\mathbb{R}^n$
 > On $X = \mathbb{R}^n$, the following are norms:
@@ -177,11 +195,26 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 *Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]]
 
 > [!remark] Remark: What This Does and Does Not Say
-> The statement is not circular, although it can sound so. It compares two metric spaces: $X$ with $d(x,y) = \|x - y\|$, and $\mathbb{R}$ with $|s - t|$; neither metric is defined in terms of the continuity being asserted. Only subadditivity and homogeneity are used — positivity is not — so the same proof shows any seminorm, and any positive homogeneous subadditive $p$ that happens to satisfy $p(-x) = p(x)$, is $1$-Lipschitz.
+> The statement is not circular, although it can sound so. It compares two metric spaces: $X$ with $d(x,y) = \|x - y\|$, and $\mathbb{R}$ with $|s - t|$; neither metric is defined in terms of the continuity being asserted. Only subadditivity and homogeneity are used — positivity is not — so the same proof shows any seminorm, and any positive homogeneous subadditive $p$ that happens to satisfy $p(-x) = p(x)$, is $1$-Lipschitz (Lemma [[§11 Normed Linear Spaces#^lem-11-5|§11.5]] below).
 >
 > The question has content whenever a second topology is present. Whether a norm $\|\cdot\|_1$ is continuous with respect to another norm $\|\cdot\|_2$ is settled by Proposition [[§14 New Normed Spaces from Old#^prop-14-2|§14.2]]: exactly when $\|x\|_1 \le C\|x\|_2$ for some constant $C$, which is one half of equivalence of the two norms; on $\mathbb{R}^n$ this always holds, in infinite dimensions it need not. Later in the course $X$ will also carry the weak topology, in which the norm is *not* continuous. (Not covered in lecture.)
 
 ^rem-11-3
+
+> [!theorem] Lemma §11.5: Reverse Triangle Inequality for Seminorms
+> 1. If $q$ is a seminorm on $X$ (Definition [[§11 Normed Linear Spaces#^def-11-2|§11.2]]), then $\bigl|\, q(x) - q(y) \,\bigr| \le q(x - y)$ for all $x, y \in X$; that is, $q$ is $1$-Lipschitz with respect to $q(x - y)$.
+> 2. If $X$ is a real linear space and $p : X \to \mathbb{R}$ is positive homogeneous and subadditive with $p(-x) = p(x)$ for all $x$, then $p$ is a seminorm, so (1) applies to it.
+
+^lem-11-5
+
+> [!proof]+ Proof
+> (Not covered in lecture.) (1) This is the proof of Lemma [[§11 Normed Linear Spaces#^lem-11-3|§11.3]] with $q$ in place of the norm. Subadditivity applied to $x = (x - y) + y$ gives $q(x) - q(y) \le q(x - y)$. Exchanging $x$ and $y$ gives $q(y) - q(x) \le q(y - x)$, and $q(y - x) = q\bigl((-1)(x - y)\bigr) = |{-1}|\,q(x - y) = q(x - y)$ by homogeneity. The two inequalities together bound the absolute value. Positivity was not used.
+>
+> (2) Non-negativity: $0 = p(0) \le p(x) + p(-x) = 2p(x)$, using Lemma [[§5 Statement and Motivation#^lem-5-1|§5.1]] and subadditivity. Homogeneity for real $a$: for $a \ge 0$ it is positive homogeneity, and for $a < 0$, $p(ax) = p\bigl(|a|(-x)\bigr) = |a|\,p(-x) = |a|\,p(x)$. Subadditivity is assumed. So $p$ is a seminorm.
+
+^pf-11-5
+
+*Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§5 Statement and Motivation#^lem-5-1|§5.1]]
 
 > [!definition] Definition §11.5: Cauchy Sequence
 > A sequence $\{x_n\} \subset X$ is **Cauchy** if for every $\varepsilon > 0$ there is $N = N(\varepsilon) \in \mathbb{N}$ such that
@@ -207,16 +240,26 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 ^pf-11-6
 
+> [!remark] Remark
+> Convergence refers to a limit *in $X$*; a Cauchy sequence has its terms approaching one another with no limit mentioned. The converse of (b) fails: a Cauchy sequence may fail to converge because the point it is heading toward is missing from $X$ — the standard example being a sequence of rationals approaching $\sqrt{2}$ inside $\mathbb{Q}$ (Example [[§11 Normed Linear Spaces#^ex-11-3|§11.3]] below). Spaces without this defect are the subject of the [[§12 Completeness|next section]]. Both statements, and their proofs, hold verbatim in any metric space.
+
+^rem-11-4
+
+> [!example] Example §11.3: A Cauchy Sequence in $\mathbb{Q}$ with No Limit in $\mathbb{Q}$
+> In the metric space $\mathbb{Q}$ with $d(x, y) = |x - y|$, a sequence of rationals approaching $\sqrt{2}$ is Cauchy but has no limit in $\mathbb{Q}$. So the converse of Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]](b), read in a metric space, fails.
+>
+> *(Justification filled in.)* Let $q_n = \lfloor 10^n \sqrt{2} \rfloor / 10^n$, the decimal truncation of $\sqrt{2}$ to $n$ places; $q_n \in \mathbb{Q}$ and $0 \le \sqrt{2} - q_n < 10^{-n}$.
+>
+> 1. *Cauchy.* $|q_m - q_k| \le |q_m - \sqrt{2}| + |\sqrt{2} - q_k| < 10^{-m} + 10^{-k}$, which is $< \varepsilon$ once $m, k \ge N$ with $2 \cdot 10^{-N} < \varepsilon$. This condition involves only distances between rationals, so $\{q_n\}$ is Cauchy in $\mathbb{Q}$.
+> 2. *No limit in $\mathbb{Q}$.* Suppose $q_n \to q$ with $q \in \mathbb{Q}$. Then $|q - \sqrt{2}| \le |q - q_n| + |q_n - \sqrt{2}| \to 0$, so $q = \sqrt{2}$, which is irrational — a contradiction.
+
+^ex-11-3
+
 *Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]]
 
 > [!remark]- Connections
 > - The real-line and metric versions: [[§10a Cauchy Sequences#^thm-10a-1|451 §10a.1]] (convergent implies Cauchy), [[§13 Some Topological Concepts in Metric Spaces#^rem-13-4|451, uniqueness of limits]].
 > - Part (a) holds in every Hausdorff space ([[§9 Hausdorff Spaces#^thm-9-3|590 Thm. §9.3]]), and metric spaces are Hausdorff ([[§12 Metric Topology#^thm-12-4|590 Thm. §12.4]]).
-
-> [!remark] Remark
-> Convergence refers to a limit *in $X$*; a Cauchy sequence has its terms approaching one another with no limit mentioned. The converse of (b) fails: a Cauchy sequence may fail to converge because the point it is heading toward is missing from $X$ — the standard example being a sequence of rationals approaching $\sqrt{2}$ inside $\mathbb{Q}$. Spaces without this defect are the subject of the [[§12 Completeness|next section]]. Both statements, and their proofs, hold verbatim in any metric space.
-
-^rem-11-4
 
 > [!definition] Definition §11.6: Closed Subset
 > A subset $S$ of a normed linear space (or metric space) $X$ is **closed** if it contains the limits of all its convergent sequences: whenever $\{s_n\} \subset S$ and $s_n \to x$ with $x \in X$, then $x \in S$.

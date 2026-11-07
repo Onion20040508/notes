@@ -53,18 +53,45 @@ tags: [group-theory, math493]
 
 ^pf-46-1
 
+> [!remark] Remark: Where Commutativity of $A$ Is Needed
+> The middle step swaps $\chi(g)$ past $\chi(h^{-1})$, which requires $A$ abelian. For a homomorphism into a non-abelian target the conclusion fails (Example [[§46 Characters#^ex-46-2|§46.2]]). What survives in general is only that a homomorphism carries conjugates to conjugates (Lemma [[§46 Characters#^lem-46-2|§46.2]]).
+
+^rem-46-3
+
+> [!example] Example §46.2: The Identity of $S_3$ Separates Conjugates
+> The identity map $\operatorname{id}: S_3 \to S_3$ is a homomorphism into a non-abelian group which takes different values on two conjugate elements, so Proposition [[§46 Characters#^prop-46-1|§46.1]] fails without the hypothesis that the target is abelian.
+> - *$(1\,2)$ and $(1\,3)$ are conjugate.* With $h = (2\,3)$, Conjugation Relabels the Entries (Lemma [[§33 Conjugacy Classes#^lem-33-1|§33.1]]) gives $h\,(1\,2)\,h^{-1} = (h(1)\ h(2)) = (1\,3)$.
+> - *Their values differ.* $\operatorname{id}((1\,2)) = (1\,2) \neq (1\,3) = \operatorname{id}((1\,3))$, since $(1\,2)$ fixes $3$ and $(1\,3)$ does not.
+
+^ex-46-2
+
+> [!theorem] Lemma §46.2: Homomorphisms Carry Conjugates to Conjugates
+> Let $\varphi: G \to H$ be a homomorphism. Then for all $g, h \in G$,
+>
+> $$
+> \varphi(hgh^{-1}) = \varphi(h)\,\varphi(g)\,\varphi(h)^{-1}.
+> $$
+>
+> In particular $\varphi$ maps each conjugacy class of $G$ into a conjugacy class of $H$.
+
+^lem-46-2
+
+> [!proof]+ Proof
+> *Idea:* apply the homomorphism property twice and use that $\varphi$ preserves inverses.
+>
+> Since $\varphi$ is a homomorphism, $\varphi(hgh^{-1}) = \varphi(h)\varphi(g)\varphi(h^{-1})$, and $\varphi(h^{-1}) = \varphi(h)^{-1}$ (Homomorphisms Preserve Identity and Inverses, Proposition [[§15 Homomorphisms#^prop-15-1|§15.1]]). So the image of the conjugate $hgh^{-1}$ of $g$ is the conjugate of $\varphi(g)$ by $\varphi(h)$; hence all elements of the conjugacy class of $g$ are sent into the conjugacy class of $\varphi(g)$.
+
+^pf-46-2
+
+*Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]]
+
 *Uses:* [[§46 Characters#^def-46-1|Def. §46.1]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]]
 
 > [!remark]- Connections
 > - Used in [[§47 Commutators#^thm-47-5|The Commutator Subgroup and Characters of Sₙ]] to pin down all characters of $S_n$.
 > - The model case: the determinant, a character of GLₙ, is a similarity invariant, [[§37 Determinants#^ladr-9-52|LADR 9.52]]; the trace is also constant on conjugacy classes, [[§33 Trace꞉ A Connection Between Matrices and Operators#^ladr-8-50|LADR 8.50]], without being a character.
 
-> [!remark] Remark: Where Commutativity of $A$ Is Needed
-> The middle step swaps $\chi(g)$ past $\chi(h^{-1})$, which requires $A$ abelian. For a homomorphism into a non-abelian target the conclusion fails: the identity map $S_3 \to S_3$ sends the conjugate elements $(1\,2)$ and $(1\,3)$ to different values. What survives in general is only that $\varphi$ carries conjugates to conjugates: $\varphi(hgh^{-1}) = \varphi(h)\varphi(g)\varphi(h)^{-1}$.
-
-^rem-46-3
-
-> [!theorem] Theorem §46.2: A Common Eigenvector Yields a Character
+> [!theorem] Theorem §46.3: A Common Eigenvector Yields a Character
 > Let $k$ be a field, $V$ a $k$-vector space, and let $G$ act on $V$ by linear maps — for instance $G$ a subgroup of $GL(V)$; in lecture, $k = \mathbb{C}$. Suppose $v \in V$ is nonzero and is an eigenvector of every $g \in G$, say $g v = \lambda(g)\,v$ for a scalar $\lambda(g) \in k$. Then $\lambda(g) \in k^\times$ for every $g$, and
 >
 > $$ \lambda: G \to k^\times $$
@@ -73,7 +100,7 @@ tags: [group-theory, math493]
 >
 > *Source: lecture; PS 2.3(1)*
 
-^thm-46-2
+^thm-46-3
 
 > [!proof]+ Proof
 > *Idea:* Compute $(g_1g_2)v$ in two ways; since $v \neq 0$, the scalars must agree.
@@ -88,7 +115,7 @@ tags: [group-theory, math493]
 >
 > On the other hand $(g_1g_2)v = \lambda(g_1g_2)v$ by definition of $\lambda$ at $g_1 g_2 \in G$. Comparing and cancelling $v$ gives $\lambda(g_1 g_2) = \lambda(g_1)\lambda(g_2)$.
 
-^pf-46-2
+^pf-46-3
 
 *Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§7 Vector Space of Linear Maps#^ladr-3-10|LADR 3.10]], [[§3 Basic Examples of Groups#^def-3-4|Def. §3.4]], [[§46 Characters#^def-46-1|Def. §46.1]]
 
@@ -96,7 +123,7 @@ tags: [group-theory, math493]
 > - Eigenvectors in linear algebra: [[§14 Invariant Subspaces#^ladr-5-8|Eigenvector]] (LADR 5.8); here one vector is an eigenvector of every operator in $G$ simultaneously.
 > - Where a common eigenvector comes from in linear algebra: two commuting operators on a finite-dimensional complex space always have one, [[§18 Commuting Operators#^ladr-5-78|LADR 5.78]].
 
-> [!example] Example §46.2: $\Delta$ and the Sign Character
+> [!example] Example §46.3: $\Delta$ and the Sign Character
 > Let $V$ be the space of homogeneous polynomials of degree $\binom{n}{2}$ in $x_1, \ldots, x_n$ over $k$, with $S_n \subseteq GL(V)$ acting by permuting variables ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|Def. §20.3]]). Take
 >
 > $$ \Delta = \prod_{1 \leq i < j \leq n}(x_i - x_j). $$
@@ -105,15 +132,20 @@ tags: [group-theory, math493]
 >
 > $$ \lambda = \operatorname{sgn}: S_n \to k^\times, \qquad \lambda(\sigma) = (-1)^{\operatorname{inv}(\sigma)} \in \{\pm 1\}. $$
 >
-> Consistently with [[§46 Characters#^thm-46-2|the theorem]], its values are nonzero.
+> Consistently with [[§46 Characters#^thm-46-3|the theorem]], its values are nonzero.
 >
 > This is the lecture's explanation of a fact that is a genuine surprise from the inversion-count definition $\operatorname{sgn}(\sigma) = (-1)^{\#\{(i,j) : i < j,\ \sigma(i) > \sigma(j)\}}$ alone: counting inversions gives no visible reason for $\operatorname{sgn}(\sigma\tau) = \operatorname{sgn}(\sigma)\operatorname{sgn}(\tau)$, but reading the sign as an eigenvalue on the common eigenvector $\Delta$ makes multiplicativity automatic.
 >
 > *Source: lecture; PS 2.3(2)*
 
-^ex-46-2
+^ex-46-3
 
 > [!remark] Remark: One-Dimensional Representations
-> A character $G \to k^\times = GL_1(k)$ is precisely a $1$-dimensional representation of $G$. [[§46 Characters#^thm-46-2|The theorem]] says that a line in $V$ fixed by all of $G$ (a common eigenvector spans one) carves a $1$-dimensional representation out of a larger one. For $S_n$ acting on polynomials, the line spanned by $\Delta$ gives the sign; the line spanned by any symmetric polynomial gives the trivial character $\sigma \mapsto 1$. Decomposing a representation into such pieces is the central problem of the second half of the course.
+> A character $G \to k^\times = GL_1(k)$ is precisely a $1$-dimensional representation of $G$. [[§46 Characters#^thm-46-3|The theorem]] says that a line in $V$ fixed by all of $G$ (a common eigenvector spans one) carves a $1$-dimensional representation out of a larger one. For $S_n$ acting on polynomials, the line spanned by $\Delta$ gives the sign (Example [[§46 Characters#^ex-46-3|§46.3]]); the line spanned by any symmetric polynomial gives the trivial character $\sigma \mapsto 1$ (Example [[§46 Characters#^ex-46-4|§46.4]]). Decomposing a representation into such pieces is the central problem of the second half of the course.
 
 ^rem-46-4
+
+> [!example] Example §46.4: Symmetric Polynomials and the Trivial Character
+> Let $V$ be a space of polynomials in $x_1, \ldots, x_n$ over $k$ that is stable under permuting the variables, for instance the homogeneous polynomials of a fixed degree $d$, with $S_n$ acting by permuting variables. Let $f \in V$ be a nonzero symmetric polynomial (Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-4|§20.4]]); for example $f = (x_1 + \cdots + x_n)^d$ in degree $d$. By definition $\sigma \cdot f = f = 1 \cdot f$ for every $\sigma \in S_n$, so $f$ is a common eigenvector with $\lambda(\sigma) = 1$ for all $\sigma$. The character of Theorem [[§46 Characters#^thm-46-3|§46.3]] is therefore the trivial character $\sigma \mapsto 1$.
+
+^ex-46-4

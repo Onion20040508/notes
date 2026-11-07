@@ -20,6 +20,7 @@ tags: [functional-analysis, hub]
 - [[§25 Projection and Orthogonal Decomposition#^prop-25-3|Proposition §25.3: M^perp is a Closed Subspace]]
 
 ## Used in (Functional Analysis)
+- [[§25 Projection and Orthogonal Decomposition#^prop-25-5|Proposition §25.5: Riesz's Lemma with Constant One in a Hilbert Space]]
 - [[§25 Projection and Orthogonal Decomposition#^thm-25-7|Theorem §25.7: The Double Complement]]
 - [[§25 Projection and Orthogonal Decomposition#^prop-25-9|Proposition §25.9: Even and Odd Functions]]
 - [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|Lemma §26.4: The Kernel Has Codimension One]]

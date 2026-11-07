@@ -294,8 +294,26 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 
 *Uses:* [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]], [[§31 Dual Spaces#^ex-31-1|Ex. §31.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]
 
-> [!remark] Remark: The Pairing Without the Bar
-> Over $\mathbb{C}$ one can equally use the pairing without the bar: $a \mapsto \ell_{\bar a}$, $\ell_{\bar a}(x) = \sum_j x_j a_j$, is a *linear* one-to-one, onto, norm-preserving map $\ell^{p'} \to (\ell^p)'$, i.e. an isometric isomorphism. With the bar, the case $p = 2$ is the Riesz representation of $(\ell^2)'$ (Example [[§31 Dual Spaces#^ex-31-1|§31.1]]), and the map is conjugate-linear exactly like the Riesz map (Corollary [[§31 Dual Spaces#^cor-31-3|§31.3]]). The test vector $x_j = |a_j|^{p'-2} a_j$ of Step 2 is the vector for which Hölder's inequality is an equality; the same choice reappears below.
+> [!theorem] Corollary §36.5: The Pairing Without the Bar
+> Let $1 \le p < \infty$ and $\frac1p + \frac1{p'} = 1$. For $a \in \ell^{p'}$ put $\ell_{\bar a}(x) = \sum_j x_j a_j$, $x \in \ell^p$. Then $a \mapsto \ell_{\bar a}$ is a *linear*, one-to-one, onto, norm-preserving map $\ell^{p'} \to (\ell^p)'$, i.e. an isometric isomorphism. (Over $\mathbb{R}$ it is the map $a \mapsto \ell_a$ of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]].)
+
+^cor-36-5
+
+> [!proof]+ Proof
+> *(Not from lecture.)* Let $C(a) = \bar a = (\overline{a_1}, \overline{a_2}, \ldots)$. Since $|\overline{a_j}| = |a_j|$, $C$ maps $\ell^{p'}$ into itself with $\|C(a)\|_{p'} = \|a\|_{p'}$; $C \circ C$ is the identity, so $C$ is one-to-one and onto; and $C(a + b) = C(a) + C(b)$, $C(ca) = \bar c\, C(a)$. The map $a \mapsto \ell_{\bar a}$ is the composite of $C$ with $b \mapsto \ell_b$, which by Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] is one-to-one, onto $(\ell^p)'$ and norm-preserving, with $\ell_{b + b'} = \ell_b + \ell_{b'}$ and $\ell_{cb} = \bar c\, \ell_b$. Hence $a \mapsto \ell_{\bar a}$ is one-to-one and onto, $\|\ell_{\bar a}\| = \|\bar a\|_{p'} = \|a\|_{p'}$, and it is linear:
+>
+> $$
+> \ell_{\overline{a + a'}} = \ell_{\bar a + \bar a'} = \ell_{\bar a} + \ell_{\bar a'}, \qquad \ell_{\overline{ca}} = \ell_{\bar c\, \bar a} = \overline{\bar c}\, \ell_{\bar a} = c\, \ell_{\bar a} .
+> $$
+>
+> Finally $\ell_{\bar a}(x) = \sum_j x_j\, \overline{\overline{a_j}} = \sum_j x_j a_j$, as stated.
+
+^pf-36-5
+
+*Uses:* [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]
+
+> [!remark] Remark: The Barred Pairing and the Test Vector
+> With the bar, the case $p = 2$ is the Riesz representation of $(\ell^2)'$ (Example [[§31 Dual Spaces#^ex-31-1|§31.1]]), and the map $a \mapsto \ell_a$ is conjugate-linear exactly like the Riesz map (Corollary [[§31 Dual Spaces#^cor-31-3|§31.3]]); over $\mathbb{C}$ one can equally use the pairing without the bar (Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]]). The test vector $x_j = |a_j|^{p'-2} a_j$ of Step 2 is the vector for which Hölder's inequality is an equality; the same choice reappears below.
 
 ^rem-36-3
 
@@ -324,11 +342,41 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 > \|f\|_{L^p} = \sup \Bigl\{ \Bigl| \int f(x)\, \overline{g(x)}\, d\mu(x) \Bigr| : \|g\|_{L^{p'}} = 1 \Bigr\} .
 > $$
 >
-> For $1 < p < \infty$ the maximum can also be exhibited directly: for $a \neq 0$, $b_j = |a_j|^{p-2} a_j / \|a\|_p^{p-1}$ ($b_j = 0$ where $a_j = 0$) has $\|b\|_{p'}^{p'} = \sum_j |a_j|^{(p-1)p'} / \|a\|_p^{(p-1)p'} = 1$, since $(p-1)p' = p$, and $\sum_j a_j \overline{b_j} = \sum_j |a_j|^p / \|a\|_p^{p-1} = \|a\|_p$; for $p = 1$ take $b_j = a_j/|a_j|$ where $a_j \neq 0$ and $b_j = 1$ elsewhere. Together with Hölder this proves Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] without Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], and the same choice $g = |f|^{p-2} f / \|f\|_{L^p}^{p-1}$ shows the supremum for functions is a maximum for $1 \le p < \infty$. This is Lax's route to Minkowski's inequality (Concordance, C.2). What Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] adds is that *every* bounded functional on $\ell^p$ is of the form $\ell_b$.
+> The maximizing $b$, and $g$ for functions, can also be exhibited directly (Proposition [[§36 Duality in Normed Spaces#^prop-36-7|§36.7]] below); together with Hölder this proves Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] without Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]. This is Lax's route to Minkowski's inequality (Concordance, C.2). What Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] adds is that *every* bounded functional on $\ell^p$ is of the form $\ell_b$.
 
 ^rem-36-4
+
+> [!theorem] Proposition §36.7: The Maximizer in the Duality Formula
+> Let $1 \le p < \infty$ and $\frac1p + \frac1{p'} = 1$.
+>
+> 1. Let $a \in \ell^p$, $a \neq 0$. For $1 < p < \infty$ let $b_j = |a_j|^{p-2} a_j / \|a\|_p^{p-1}$ where $a_j \neq 0$ and $b_j = 0$ where $a_j = 0$; for $p = 1$ let $b_j = a_j/|a_j|$ where $a_j \neq 0$ and $b_j = 1$ elsewhere. Then $b \in \ell^{p'}$, $\|b\|_{p'} = 1$ and $\sum_j a_j \overline{b_j} = \|a\|_p$.
+> 2. Let $f \in L^p(\Omega)$, $f \neq 0$. Let $g = |f|^{p-2} f / \|f\|_{L^p}^{p-1}$ on $\{ f \neq 0 \}$ and $g = 0$ on $\{ f = 0 \}$ (for $p = 1$, $g = f/|f|$ on $\{ f \neq 0 \}$). Then $\|g\|_{L^{p'}} = 1$ and $\int f \bar g = \|f\|_{L^p}$, so the supremum in the duality formula for functions is a maximum. (The computation is the same for any measure $\mu$.)
+> 3. Consequently Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] follows from Hölder's inequality alone, without Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]].
+
+^prop-36-7
+
+> [!proof]+ Proof
+> *(Not from lecture.)* Throughout, $p + p' = p p'$ (multiply $\frac1p + \frac1{p'} = 1$ by $p p'$), so $(p - 1)\, p' = p$.
+>
+> (1) *$1 < p < \infty$.* $|b_j| = |a_j|^{p-1} / \|a\|_p^{p-1}$, so
+>
+> $$
+> \|b\|_{p'}^{p'} = \sum_j \frac{|a_j|^{(p-1)p'}}{\|a\|_p^{(p-1)p'}} = \sum_j \frac{|a_j|^p}{\|a\|_p^p} = 1 ,
+> $$
+>
+> and $a_j \overline{b_j} = |a_j|^{p-2} a_j \overline{a_j} / \|a\|_p^{p-1} = |a_j|^p / \|a\|_p^{p-1}$, so $\sum_j a_j \overline{b_j} = \|a\|_p^p / \|a\|_p^{p-1} = \|a\|_p$. *$p = 1$.* $|b_j| = 1$ for every $j$, so $\|b\|_\infty = 1$; and $a_j \overline{b_j} = |a_j|$ where $a_j \neq 0$, $= 0$ where $a_j = 0$, so $\sum_j a_j \overline{b_j} = \|a\|_1$.
+>
+> (2) The same computation with integrals: for $1 < p < \infty$, $\int |g|^{p'} = \int |f|^{(p-1)p'} / \|f\|_{L^p}^{p} = 1$ and $f \bar g = |f|^p / \|f\|_{L^p}^{p-1}$, so $\int f \bar g = \|f\|_{L^p}$. For $p = 1$, $|g| \le 1$ everywhere and $|g| = 1$ on $\{ f \neq 0 \}$, which has positive measure because $f \neq 0$ in $L^1$; so $\|g\|_{L^\infty} = 1$, and $f \bar g = |f|$, so $\int f \bar g = \|f\|_{L^1}$. By Hölder's inequality (Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]]), $\bigl| \int f \bar h \bigr| \le \|f\|_{L^p} \|h\|_{L^{p'}} = \|f\|_{L^p}$ for every $h$ with $\|h\|_{L^{p'}} = 1$; so the supremum is $\|f\|_{L^p}$, attained at $g$.
+>
+> (3) For $a \in \ell^p$ and $\|b\|_{p'} = 1$, Hölder's inequality (Theorem [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]]) gives $\bigl| \sum_j a_j \overline{b_j} \bigr| \le \|a\|_p \|b\|_{p'} = \|a\|_p$. For $a \neq 0$ the $b$ of (1) attains this bound; for $a = 0$ every $b$ (e.g. $b = e_1$) gives $0 = \|a\|_p$. So the maximum in Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] exists and equals $\|a\|_p$.
+
+^pf-36-7
+
+*Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]], [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]], [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]]
+
 ![[m556-36-3.svg]]
-*Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] in $\mathbb{R}^2$ for $p = 3$, $p' = \tfrac32$. For $a$ on the unit sphere of $\ell^3$, the maximizing $b_j = |a_j|^{p-2} a_j$ (the remark Why Duality Formulas are Useful) lies on the unit sphere of $\ell^{3/2}$ (dashed), and the line $\sum_j x_j b_j = 1$ touches the $\ell^3$ ball exactly at $a$: by Hölder every $x$ in the ball has $\sum_j x_j b_j \le 1$, with equality at $a$. The maximizer is the normal of the supporting line.*
+
+Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] in $\mathbb{R}^2$ for $p = 3$, $p' = \tfrac32$. For $a$ on the unit sphere of $\ell^3$, the maximizing $b_j = |a_j|^{p-2} a_j$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-7|§36.7]]) lies on the unit sphere of $\ell^{3/2}$ (dashed), and the line $\sum_j x_j b_j = 1$ touches the $\ell^3$ ball exactly at $a$: by Hölder every $x$ in the ball has $\sum_j x_j b_j \le 1$, with equality at $a$. The maximizer is the normal of the supporting line.
 
 ![[m556-36-a3.gif|420]]
 
@@ -428,9 +476,21 @@ A heuristic, pretending there is an inner product: the distance from $z$ to $Y$ 
 
 > [!remark] Remark: How to Find the Proof
 > How one would think of the subspace $Y_1$: first, believe the statement, because it is true in a Hilbert space (the picture above). Then what is left is to find an $\ell$ with $\|\ell\| \le 1$, $\ell = 0$ on $Y$ (in a sense perpendicular to $Y$) and $\ell(z_0) = m$. On the span of $z_0$ and $Y$ these requirements leave no choice (up to replacing $m$ by $e^{i\theta} m$), so define $\ell$ there, check its norm, and let Hahn–Banach extend it. Extensions are usually not unique; on the smaller space there is no choice. The proof of Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] is the same argument with $Y = \{0\}$.
-> Closedness of $Y$ is not needed: if $z_0$ lies in the closure of $Y$ but not in $Y$, then $m = 0$ and the construction gives $L = 0$. If $Y$ is closed and $z_0 \notin Y$, then $m > 0$ (a ball around $z_0$ misses $Y$), so there is an $L \in X'$ vanishing on $Y$ with $L(z_0) \neq 0$.
+> Closedness of $Y$ is not needed: if $z_0$ lies in the closure of $Y$ but not in $Y$, then $m = 0$ and the construction gives $L = 0$. If $Y$ is closed and $z_0 \notin Y$, the functional is not zero (Corollary [[§36 Duality in Normed Spaces#^cor-36-9|§36.9]]).
 
 ^rem-36-6
+
+> [!theorem] Corollary §36.9: A Point Outside a Closed Subspace is Separated by a Functional
+> Let $X$ be a normed linear space, $Y$ a closed linear subspace and $z_0 \in X \setminus Y$. Then there is $L \in X'$ with $\|L\| \le 1$, $L(y) = 0$ for all $y \in Y$, and $L(z_0) = \inf_{y \in Y} \|z_0 - y\| > 0$.
+
+^cor-36-9
+
+> [!proof]+ Proof
+> *(Not from lecture.)* $X \setminus Y$ is open and contains $z_0$, so some ball $B(z_0, r)$, $r > 0$, misses $Y$: $\|z_0 - y\| \ge r$ for every $y \in Y$. Hence $m = \inf_{y \in Y} \|z_0 - y\| \ge r > 0$. Step 2 of the proof of Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]] gives $L \in X'$ with $\|L\| \le 1$, $L = 0$ on $Y$ and $L(z_0) = m$.
+
+^pf-36-9
+
+*Uses:* [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]
 
 ## The Annihilator
 
@@ -550,8 +610,20 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]] read
 *Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]
 
 > [!remark] Remark: No Hahn–Banach Needed Here
-> *(Not from lecture.)* Every step of the proof is a direct computation with the quotient norm: Step 3 builds the functional on $X/Y$ from $\ell$ itself, so nothing has to be extended. The companion statement for a subspace, $Y' \cong X'/Y^\perp$ (the remark after Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]]), is different: there a functional on $Y$ must be extended to $X$, and onto-ness needs Hahn–Banach (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]). Closedness of $Y$ is used only to make the quotient norm a norm; for a non-closed $Y$, $Y^\perp = (\overline{Y})^\perp$ (a bounded functional vanishing on $Y$ vanishes on its closure), and the theorem applies to $\overline{Y}$.
+> *(Not from lecture.)* Every step of the proof is a direct computation with the quotient norm: Step 3 builds the functional on $X/Y$ from $\ell$ itself, so nothing has to be extended. The companion statement for a subspace, $Y' \cong X'/Y^\perp$ (Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-11|§37.11]]), is different: there a functional on $Y$ must be extended to $X$, and onto-ness needs Hahn–Banach (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]). Closedness of $Y$ is used only to make the quotient norm a norm; for a non-closed $Y$, the theorem applies to $\overline{Y}$ (Lemma [[§36 Duality in Normed Spaces#^lem-36-12|§36.12]]).
 
 ^rem-36-8
+
+> [!theorem] Lemma §36.12: The Annihilator of the Closure
+> Let $X$ be a normed linear space and $Y$ a linear subspace. Then $\overline{Y}$ is a closed linear subspace, $Y^\perp = (\overline{Y})^\perp$, and consequently $(X/\overline{Y})'$ is isometrically isomorphic to $Y^\perp$.
+
+^lem-36-12
+
+> [!proof]+ Proof
+> *(Not from lecture.)* $\overline{Y}$ is closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]]), and a linear subspace: if $y_n \to z$, $y_n' \to z'$ with $y_n, y_n' \in Y$, then $c y_n + c' y_n' \in Y$ converges to $c z + c' z'$. If $\ell$ vanishes on $\overline{Y}$, it vanishes on $Y \subset \overline{Y}$: $(\overline{Y})^\perp \subset Y^\perp$. Conversely, let $\ell \in Y^\perp$ and $z \in \overline{Y}$, $z = \lim y_n$ with $y_n \in Y$; $\ell$ is continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), so $\ell(z) = \lim_n \ell(y_n) = 0$. Hence $Y^\perp \subset (\overline{Y})^\perp$. Finally Theorem [[§36 Duality in Normed Spaces#^thm-36-11|§36.11]], applied to the closed subspace $\overline{Y}$, gives $(X/\overline{Y})' \cong (\overline{Y})^\perp = Y^\perp$.
+
+^pf-36-12
+
+*Uses:* [[§11 Normed Linear Spaces#^prop-11-7|§11.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^thm-36-11|§36.11]]
 
 Motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]), and in any linear space $X \cong X/Y \oplus Y$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]); so $X/Y$ and $Y^\perp$ look like each other's dual. This material (Lecture 13) is on the midterm.

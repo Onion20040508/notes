@@ -22,11 +22,11 @@ tags: [group-theory, math493]
 > [!proof]+ Proof
 > *Idea:* Apply $g_1^{-1}$, then use the coset criterion with $H = \operatorname{Stab}(x)$.
 >
-> (1) $\Leftrightarrow$ (2): apply $g_1^{-1}$ to both sides of (1) to get $x = (g_1^{-1}g_2) \star x$, which is (2); apply $g_1$ to (2) to recover (1). (2) $\Leftrightarrow$ (3): this is the coset criterion of [[§28 Left and Right Cosets#^prop-28-2|§28.2]], $g_1H = g_2H \iff g_1^{-1}g_2 \in H$, with $H = \operatorname{Stab}(x)$.
+> (1) $\Leftrightarrow$ (2): apply $g_1^{-1}$ to both sides of (1) to get $x = (g_1^{-1}g_2) \star x$, which is (2); apply $g_1$ to (2) to recover (1). (2) $\Leftrightarrow$ (3): this is the coset criterion of [[§28 Left and Right Cosets#^prop-28-3|§28.3]], $g_1H = g_2H \iff g_1^{-1}g_2 \in H$, with $H = \operatorname{Stab}(x)$.
 
 ^pf-30-1
 
-*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§26 Stabilizers and Fixed Points#^prop-26-1|§26.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]]
+*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§26 Stabilizers and Fixed Points#^prop-26-1|§26.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]]
 
 > [!theorem] Proposition §30.2: The Orbit Bijection
 > Let $G$ act on $X$ and $x \in X$. The map
@@ -46,7 +46,7 @@ tags: [group-theory, math493]
 >
 > Write $H = \operatorname{Stab}(x)$. Three things must be checked, and the first is the one that is easy to overlook.
 >
-> **Well defined.** The formula uses a representative $g$ of the coset $gH$, so we must check the value is unchanged if another representative is used. Suppose $g_1 H = g_2 H$. Then $g_1 = g_2 h$ for some $h \in H$ ([[§28 Left and Right Cosets#^prop-28-2|§28.2]]), and since $h \star x = x$ by definition of the stabilizer,
+> **Well defined.** The formula uses a representative $g$ of the coset $gH$, so we must check the value is unchanged if another representative is used. Suppose $g_1 H = g_2 H$. Then $g_1 = g_2 h$ for some $h \in H$ ([[§28 Left and Right Cosets#^prop-28-3|§28.3]]), and since $h \star x = x$ by definition of the stabilizer,
 >
 > $$
 > g_1 \star x = (g_2 h) \star x = g_2 \star (h \star x) = g_2 \star x,
@@ -62,7 +62,7 @@ tags: [group-theory, math493]
 
 ^pf-30-2
 
-*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§30 Orbit–Stabilizer#^prop-30-1|§30.1]]
+*Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]], [[§27 Orbits#^def-27-1|Def. §27.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§30 Orbit–Stabilizer#^prop-30-1|§30.1]]
 
 ![[m493-28-1.svg]]
 *The orbit map $g \mapsto g \star x$ factors through the coset space $G/\operatorname{Stab}(x)$, and the induced map is a bijection onto the orbit.*
@@ -159,13 +159,13 @@ tags: [group-theory, math493]
 >
 > ($\Leftarrow$) Suppose $\alpha(n) = \beta(n)$. Then $(\beta^{-1}\alpha)(n) = \beta^{-1}(\alpha(n)) = \beta^{-1}(\beta(n)) = n$, so $\beta^{-1}\alpha \in H$. Given $\alpha h_1 \in \alpha H$, put $h_2 = (\beta^{-1}\alpha)h_1 \in H$ (closure); then $\beta h_2 = \beta\beta^{-1}\alpha h_1 = \alpha h_1$, so $\alpha H \subseteq \beta H$. The hypothesis is symmetric in $\alpha, \beta$, so the reverse inclusion follows likewise.
 >
-> *(Alternatively: by [[§28 Left and Right Cosets#^prop-28-2|§28.2]], $\alpha H = \beta H$ iff $\alpha^{-1}\beta \in H$ iff $(\alpha^{-1}\beta)(n) = n$ iff $\beta(n) = \alpha(n)$.)*
+> *(Alternatively: by [[§28 Left and Right Cosets#^prop-28-3|§28.3]], $\alpha H = \beta H$ iff $\alpha^{-1}\beta \in H$ iff $(\alpha^{-1}\beta)(n) = n$ iff $\beta(n) = \alpha(n)$.)*
 >
 > **Right cosets.** ($\Rightarrow$) $\alpha = e\alpha \in H\alpha = H\beta$ gives $\alpha = h\beta$ with $h \in H$; then $\alpha^{-1} = \beta^{-1}h^{-1}$, so $\alpha^{-1}h = \beta^{-1}$ and, evaluating at $n$ with $h(n) = n$, $\beta^{-1}(n) = \alpha^{-1}(h(n)) = \alpha^{-1}(n)$. ($\Leftarrow$) If $\alpha^{-1}(n) = \beta^{-1}(n)$, then $(\beta\alpha^{-1})(n) = \beta(\beta^{-1}(n)) = n$, so $\beta\alpha^{-1} \in H$; for $h_2\beta \in H\beta$ put $h_1 = h_2(\beta\alpha^{-1}) \in H$, giving $h_1\alpha = h_2\beta$, so $H\beta \subseteq H\alpha$, and symmetrically.
 
 ^pf-30-4
 
-*Uses:* [[§30 Orbit–Stabilizer#^def-30-1|Def. §30.1]], [[§28 Left and Right Cosets#^def-28-2|Def. §28.2]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]]
+*Uses:* [[§30 Orbit–Stabilizer#^def-30-1|Def. §30.1]], [[§28 Left and Right Cosets#^def-28-2|Def. §28.2]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]]
 
 > [!theorem] Corollary §30.5: Index of the Stabilizer
 > The map $\alpha H \mapsto \alpha(n)$ is a bijection from the set $S_n/H$ of left cosets to $\{1, 2, \ldots, n\}$. Hence $[S_n : H] = n$, and Lagrange gives
@@ -184,7 +184,7 @@ tags: [group-theory, math493]
 *Uses:* [[§30 Orbit–Stabilizer#^prop-30-4|§30.4]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§30 Orbit–Stabilizer#^def-30-1|Def. §30.1]]
 
 > [!example] Example §30.2: Left and Right Cosets of $H$ in $S_3$
-> Take $n = 3$, so $H = \{e, (1\,2)\}$, and let $\alpha = (1\,2\,3)$, $\beta = (1\,3)$. Then $\alpha(3) = 1 = \beta(3)$, so $\alpha H = \beta H$ by [[§30 Orbit–Stabilizer#^prop-30-4|Left Cosets Record α(n)]]. But $\alpha^{-1}(3) = 2$ while $\beta^{-1}(3) = 1$, so $H\alpha \neq H\beta$. This is the same pair of cosets computed directly in [[§28 Left and Right Cosets#^ex-28-2|Ex. §28.2]].
+> Take $n = 3$, so $H = \{e, (1\,2)\}$, and let $\alpha = (1\,2\,3)$, $\beta = (1\,3)$. Then $\alpha(3) = 1 = \beta(3)$, so $\alpha H = \beta H$ by [[§30 Orbit–Stabilizer#^prop-30-4|Left Cosets Record α(n)]]. But $\alpha^{-1}(3) = 2$ while $\beta^{-1}(3) = 1$, so $H\alpha \neq H\beta$. This is the same pair of cosets computed directly in [[§28 Left and Right Cosets#^ex-28-3|Ex. §28.3]].
 
 ^ex-30-2
 
@@ -192,7 +192,7 @@ tags: [group-theory, math493]
 *The cosets of $H = \{e, (1\,2)\}$ in $S_3$, sorted as in §30.4: each left coset $\alpha H$ (row) collects the permutations with one value of $\alpha(3)$, each right coset $H\alpha$ (column) those with one value of $\alpha^{-1}(3)$. The pair $\alpha = (1\,2\,3)$, $\beta = (1\,3)$ (red) share a row, since $\alpha(3) = \beta(3) = 1$, but not a column, since $\alpha^{-1}(3) = 2 \neq 1 = \beta^{-1}(3)$. The left half is the orbit bijection $S_3/H \to \{1,2,3\}$ of §30.5.*
 
 > [!remark] Remark: Why the Bijection $G/H \to H\backslash G$ Uses $g^{-1}$
-> This example explains the shape of the map in [[§28 Left and Right Cosets#^prop-28-3|§28.3]]. Left cosets of the stabilizer record $\alpha(n)$; right cosets record $\alpha^{-1}(n)$. The two decompositions of $S_n$ are therefore genuinely different — they sort permutations by different data — but they are matched by the operation $\alpha \mapsto \alpha^{-1}$, which converts one datum into the other. This is exactly why the natural bijection is $gH \mapsto Hg^{-1}$ and not $gH \mapsto Hg$.
+> This example explains the shape of the map in [[§28 Left and Right Cosets#^prop-28-4|§28.4]]. Left cosets of the stabilizer record $\alpha(n)$; right cosets record $\alpha^{-1}(n)$. The two decompositions of $S_n$ are therefore genuinely different — they sort permutations by different data — but they are matched by the operation $\alpha \mapsto \alpha^{-1}$, which converts one datum into the other. This is exactly why the natural bijection is $gH \mapsto Hg^{-1}$ and not $gH \mapsto Hg$.
 
 ^rem-30-3
 
@@ -276,24 +276,33 @@ For subgroups $A, B \leq G$ the product set $AB = \{ab : a \in A,\ b \in B\}$ is
 
 *Uses:* [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§30 Orbit–Stabilizer#^prop-30-1|§30.1]]
 
-> [!remark] Remark: The Submitted Proof Is Orbit–Stabilizer for One Action
-> The submitted proof uses no group action, but it reproves, for the action $(a, b) \star x = axb^{-1}$, the two facts on which the orbit–stabilizer theorem rests. Its map $\Phi(g) = (a_1g, g^{-1}b_1)$ is the bijection $\operatorname{Stab}(e) \to \{h : h \star e = c\}$, $s \mapsto (a_1, b_1^{-1})\,s$, written with $b$ in place of $b^{-1}$; its surjectivity step, $a_1^{-1}a_2 = b_1b_2^{-1} \in A \cap B$, is the implication (1) $\Rightarrow$ (2) of When Two Group Elements Move $x$ to the Same Place (Proposition [[§30 Orbit–Stabilizer#^prop-30-1|§30.1]]). Part (2), partitioning $A \times B$ into the sets $R_c$ of equal size, is the counting step: the group is cut into the fibres of $h \mapsto h \star e$, each a coset of the stabilizer. So the theorem is not *used* there; its proof is *repeated* for this one action, with $A \cap B$ in place of $\operatorname{Stab}(e)$. Naming the action replaces both steps by one citation.
-
-^rem-30-5
-
-> [!remark] Remark: Another Action: $A$ on the Cosets $G/B$
-> *(Not from office hours.)* A one-sided action gives the formula too. Let $A$ act on the left cosets of $B$ by $a \star gB = agB$ (well defined: $gB = g'B$ gives $agB = ag'B$; the axioms are associativity). The orbit of $B$ is $\{aB : a \in A\}$, and these cosets are disjoint, have $|B|$ elements each, and fill out $AB$. The stabilizer of $B$ is $\{a \in A : aB = B\} = A \cap B$. By Orbit–Stabilizer, the orbit has $[A : A \cap B]$ elements, so
+> [!proof]+ Third proof ($A$ acting on the cosets $G/B$)
+> *Idea:* The $A$-orbit of $B$ in $G/B$ consists of the cosets making up $AB$, and its stabilizer is $A \cap B$.
+>
+> *(Not from office hours.)* A one-sided action gives the formula too. Let $A$ act on the left cosets of $B$ by $a \star gB = agB$ (well defined: $gB = g'B$ gives $agB = ag'B$; the axioms are associativity; this is the action of Proposition [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]] restricted to $A$). The orbit of $B$ is $\{aB : a \in A\}$, and these cosets
+> - are disjoint, since distinct left cosets of $B$ are disjoint (Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]]);
+> - have $|B|$ elements each (All Cosets Have the Same Size, Proposition [[§29 The Index and Lagrange's Theorem#^prop-29-1|§29.1]]);
+> - fill out $AB$, since $\bigcup_{a \in A} aB = \{ab : a \in A,\ b \in B\} = AB$.
+>
+> So $|AB| = |\{aB : a \in A\}| \cdot |B|$. The stabilizer of $B$ is $\{a \in A : aB = B\} = A \cap B$, because $aB = B$ if and only if $a \in B$ ([[§28 Left and Right Cosets|§28]]). By Orbit–Stabilizer (Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], for the group $A$), the orbit has $[A : A \cap B]$ elements, so
 >
 > $$
 > |AB| = [A : A \cap B] \cdot |B| = \frac{|A|}{|A \cap B|} \cdot |B|.
 > $$
 >
-> This is the injection $aB' \mapsto aB$ ($B' = A \cap B$) of Index of an Intersection (Proposition [[§29 The Index and Lagrange's Theorem#^prop-29-9|§29.9]], PS 5.1(1)), with its image identified: it is the $A$-orbit of $B$ in $G/B$.
+> This is the injection $aB' \mapsto aB$ ($B' = A \cap B$) of Index of an Intersection (Proposition [[§29 The Index and Lagrange's Theorem#^prop-29-10|§29.10]], PS 5.1(1)), with its image identified: it is the $A$-orbit of $B$ in $G/B$.
 
-^rem-30-6
+^pf-30-6-3
+
+*Uses:* [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§29 The Index and Lagrange's Theorem#^prop-29-1|§29.1]], [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]], [[§29 The Index and Lagrange's Theorem#^prop-29-10|§29.10]]
+
+> [!remark] Remark: The Submitted Proof Is Orbit–Stabilizer for One Action
+> The submitted proof uses no group action, but it reproves, for the action $(a, b) \star x = axb^{-1}$, the two facts on which the orbit–stabilizer theorem rests. Its map $\Phi(g) = (a_1g, g^{-1}b_1)$ is the bijection $\operatorname{Stab}(e) \to \{h : h \star e = c\}$, $s \mapsto (a_1, b_1^{-1})\,s$, written with $b$ in place of $b^{-1}$; its surjectivity step, $a_1^{-1}a_2 = b_1b_2^{-1} \in A \cap B$, is the implication (1) $\Rightarrow$ (2) of When Two Group Elements Move $x$ to the Same Place (Proposition [[§30 Orbit–Stabilizer#^prop-30-1|§30.1]]). Part (2), partitioning $A \times B$ into the sets $R_c$ of equal size, is the counting step: the group is cut into the fibres of $h \mapsto h \star e$, each a coset of the stabilizer. So the theorem is not *used* there; its proof is *repeated* for this one action, with $A \cap B$ in place of $\operatorname{Stab}(e)$. Naming the action replaces both steps by one citation.
+
+^rem-30-5
 
 > [!example] Example §30.3: $AB$ Need Not Be a Subgroup
-> *(Not from class.)* In $S_3$ take $A = \{e, (1\,3)\}$ and $B = \{e, (1\,2)\}$, as in The Index Need Not Divide (Example [[§29 The Index and Lagrange's Theorem#^ex-29-2|§29.2]]). Then $A \cap B = \{e\}$, and the formula gives $|AB| = 2 \cdot 2 / 1 = 4$: indeed $AB = \{e, (1\,2), (1\,3), (1\,3)(1\,2)\}$ with $(1\,3)(1\,2) = (1\,2\,3)$. Since $4 \nmid 6$, $AB$ is not a subgroup of $S_3$. When $A$ or $B$ is normal, $AB$ is a subgroup, and the formula is the order count $|HN| = |H| \cdot |N| / |H \cap N|$ behind the Second Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], later).
+> *(Not from class.)* In $S_3$ take $A = \{e, (1\,3)\}$ and $B = \{e, (1\,2)\}$, as in The Index Need Not Divide (Example [[§29 The Index and Lagrange's Theorem#^ex-29-6|§29.6]]). Then $A \cap B = \{e\}$, and the formula gives $|AB| = 2 \cdot 2 / 1 = 4$: indeed $AB = \{e, (1\,2), (1\,3), (1\,3)(1\,2)\}$ with $(1\,3)(1\,2) = (1\,2\,3)$. Since $4 \nmid 6$, $AB$ is not a subgroup of $S_3$. When $A$ or $B$ is normal, $AB$ is a subgroup, and the formula is the order count $|HN| = |H| \cdot |N| / |H \cap N|$ behind the Second Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], later).
 
 ^ex-30-3
 

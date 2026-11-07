@@ -38,7 +38,7 @@ tags: [group-theory, math493]
 
 ^hw-2-3
 
-*Treated in [[§46 Characters|§46]] ([[§46 Characters#^thm-46-2|A Common Eigenvector Yields a Character]]; (2): [[§46 Characters#^ex-46-2|Ex. §46.2]]).*
+*Treated in [[§46 Characters|§46]] ([[§46 Characters#^thm-46-3|A Common Eigenvector Yields a Character]]; (2): [[§46 Characters#^ex-46-3|Ex. §46.3]]).*
 
 > [!question] Problem 2.4: Characters and Commutators
 > Let $G$ and $A$ be groups with $A$ abelian and $\chi: G \to A$ a homomorphism (a **character**). An element $h \in G$ is a **commutator** if $h = g_1g_2g_1^{-1}g_2^{-1}$ for some $g_1, g_2 \in G$.

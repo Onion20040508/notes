@@ -9,7 +9,7 @@ tags: [group-theory, math493]
 
 *Source: Lecture and Worksheet 14 (Wed Nov 4); lecture (Fri Nov 6), with WS 14.7–14.8 presented by students. Reference for the linear algebra: Axler, Linear Algebra Done Right, Ch. 6 (orthonormal bases, orthogonal complements). Complex forms: also the MATH 420 slides *Complex inner products*, posted for this course.*
 
-Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-4|§60.4]]) has a geometric proof. If $G$ preserves an inner product, the orthogonal complement of a subrepresentation is again a subrepresentation; and an inner product that $G$ preserves always exists, obtained by averaging any inner product over $G$. The section ends with two consequences of averaging: a finite group acts by orthogonal matrices in a suitable basis, and, over $\mathbb{C}$, by unitary matrices, which preserve a positive definite Hermitian form. The last part sets up these complex forms: sesquilinear and Hermitian forms, their matrices, and orthonormal bases by Gram–Schmidt.
+Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-5|§60.5]]) has a geometric proof. If $G$ preserves an inner product, the orthogonal complement of a subrepresentation is again a subrepresentation; and an inner product that $G$ preserves always exists, obtained by averaging any inner product over $G$. The section ends with two consequences of averaging: a finite group acts by orthogonal matrices in a suitable basis, and, over $\mathbb{C}$, by unitary matrices, which preserve a positive definite Hermitian form. The last part sets up these complex forms: sesquilinear and Hermitian forms, their matrices, and orthonormal bases by Gram–Schmidt.
 
 > [!definition] Definition §61.1: Inner Product
 > An **inner product** on a real vector space $W$ is a positive definite symmetric bilinear form $\langle\ ,\ \rangle: W \times W \to \mathbb{R}$:
@@ -220,11 +220,11 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 > [!proof]+ Proof
 > *Idea:* Make $G$ preserve an inner product by averaging, then take the orthogonal complement.
 >
-> Choose any inner product on $W$ (for instance, the dot product of coordinates in some basis). By Propositions [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]] and [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], the averaged form $\langle\ ,\ \rangle$ is an inner product preserved by $G$, so Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-3|§61.3]] applies with $V = U^\perp$, the orthogonal complement for $\langle\ ,\ \rangle$. Since $|G| \neq 0$ in $\mathbb{R}$, this is the case $k = \mathbb{R}$ of Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-4|§60.4]].
+> Choose any inner product on $W$ (for instance, the dot product of coordinates in some basis). By Propositions [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]] and [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], the averaged form $\langle\ ,\ \rangle$ is an inner product preserved by $G$, so Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-3|§61.3]] applies with $V = U^\perp$, the orthogonal complement for $\langle\ ,\ \rangle$. Since $|G| \neq 0$ in $\mathbb{R}$, this is the case $k = \mathbb{R}$ of Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-5|§60.5]].
 
 ^pf-61-6
 
-*Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]], [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-3|§61.3]], [[§60 Direct Sums and Maschke's Theorem#^thm-60-4|§60.4]]
+*Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]], [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-3|§61.3]], [[§60 Direct Sums and Maschke's Theorem#^thm-60-5|§60.5]]
 
 > [!theorem] Corollary §61.7: Finite Groups Act by Orthogonal Matrices
 > Let $G$ be a finite group and $W$ a finite-dimensional real representation of $G$. Then $G$ preserves some inner product on $W$, and in a suitable basis every $\rho(g)$ is an orthogonal matrix: $M^T M = I$. In words: a finite group may always be taken to act by rotations and reflections.
@@ -272,7 +272,7 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 *(Not from lecture; figure added.)* The plane $V$ of Example [[§61 Invariant Inner Products and Maschke over ℝ#^ex-61-1|§61.1]], drawn in the orthonormal basis $b_1, b_2$. The projections $\bar e_i = e_i - \tfrac13(1,1,1)$ of the standard basis vectors form an equilateral triangle, and $S_3$ acts on $V$ as its symmetry group: the transpositions are the reflections in the three dashed mirror lines (each through the vertex it fixes), the $3$-cycles are the rotations by $\pm 120^\circ$. Rotations and reflections are exactly what orthogonal $2 \times 2$ matrices are.
 
 > [!remark] Remark: Beyond $\mathbb{R}$ and Beyond Finite Groups
-> - *Other fields.* Maschke's theorem in full (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-4|§60.4]]) needs only $|G| \neq 0$ in $k$; for $S_3$, of order $6$, this excludes the fields of characteristic $2$ and $3$. Its proof, and counterexamples when $|G| = 0$ in $k$, are on the upcoming problem set.
+> - *Other fields.* Maschke's theorem in full (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-5|§60.5]]) needs only $|G| \neq 0$ in $k$; for $S_3$, of order $6$, this excludes the fields of characteristic $2$ and $3$. Its proof, and counterexamples when $|G| = 0$ in $k$, are on the upcoming problem set.
 > - *Compact Lie groups.* Beyond this course, which has no manifold prerequisite: for a compact Lie group the same proof works, with the sum over $G$ replaced by an integral over $G$ against an invariant measure.
 >
 > *Source: lecture 11/6*
@@ -330,8 +330,22 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 
 ^def-61-7
 
+> [!theorem] Lemma §61.8: No Bilinear Form on a Complex Space Is Positive Definite
+> Let $V \neq \{0\}$ be a complex vector space. There is no bilinear form $\langle\ ,\ \rangle$ on $V$ with $\langle v, v \rangle$ a positive real number for every $v \neq 0$.
+>
+> *Source: lecture 11/6*
+
+^lem-61-8
+
+> [!proof]+ Proof
+> *Idea:* scaling by $i$ multiplies $\langle v, v \rangle$ by $i^2 = -1$.
+>
+> Let $\langle\ ,\ \rangle$ be bilinear and $v \neq 0$. Then $iv \neq 0$ and, by bilinearity, $\langle iv, iv \rangle = i^2 \langle v, v \rangle = -\langle v, v \rangle$. So $\langle v, v \rangle$ and $\langle iv, iv \rangle$ cannot both be positive.
+
+^pf-61-8
+
 > [!remark] Remark: Why Not Bilinear, and Unitary Matrices
-> A bilinear form on a complex vector space cannot be positive definite: $\langle iv, iv \rangle = i^2 \langle v, v \rangle = -\langle v, v \rangle$, so $\langle v, v \rangle$ and $\langle iv, iv \rangle$ cannot both be positive. Positive definite Hermitian forms are the complex replacement for inner products. The whole theory carries over, with complex conjugates in the right places: orthonormal bases exist (Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-10|§61.10]] below), and the matrices preserving the form are the **unitary** matrices, $\bar M^T M = I$, that is $M^\dagger M = I$ (Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-8|§61.8]]), the analogue of orthogonal matrices (compare the unitary group $U_n(\mathbb{C})$ in the remark *Where the Groups of Lie Type Come From* in [[§56 Simple Groups of Small Order|§56]]). The averaging argument of Propositions [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]] and [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]] works verbatim: a finite group acting on a finite-dimensional complex vector space preserves a positive definite Hermitian form and acts by unitary matrices in a suitable basis, and Maschke's theorem over $\mathbb{C}$ follows in the same way. This is a side topic of the course; the MATH 420 slides on complex inner products, posted on Canvas, are worked out in the rest of this section.
+> A bilinear form on a complex vector space cannot be positive definite (Lemma [[§61 Invariant Inner Products and Maschke over ℝ#^lem-61-8|§61.8]]). Positive definite Hermitian forms are the complex replacement for inner products. The whole theory carries over, with complex conjugates in the right places: orthonormal bases exist (Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-11|§61.11]] below), and the matrices preserving the form are the **unitary** matrices, $\bar M^T M = I$, that is $M^\dagger M = I$ (Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-8|§61.8]]), the analogue of orthogonal matrices (compare the unitary group $U_n(\mathbb{C})$ in the remark *Where the Groups of Lie Type Come From* in [[§56 Simple Groups of Small Order|§56]]). The averaging argument of Propositions [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]] and [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]] works verbatim: a finite group acting on a finite-dimensional complex vector space preserves a positive definite Hermitian form and acts by unitary matrices in a suitable basis, and Maschke's theorem over $\mathbb{C}$ follows in the same way. This is a side topic of the course; the MATH 420 slides on complex inner products, posted on Canvas, are worked out in the rest of this section.
 >
 > *Source: lecture 11/6*
 
@@ -357,7 +371,7 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 
 ^def-61-9
 
-> [!theorem] Proposition §61.8: Sesquilinear Forms on $\mathbb{C}^n$ Are Matrices
+> [!theorem] Proposition §61.9: Sesquilinear Forms on $\mathbb{C}^n$ Are Matrices
 > Write vectors of $\mathbb{C}^n$ as columns, and let $e_1, \ldots, e_n$ be the standard basis.
 >
 > 1. For every complex $n \times n$ matrix $Q$, $\langle x, y \rangle = y^\dagger Q x$ is a sesquilinear form on $\mathbb{C}^n$ (Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-5|§61.5]]). Every sesquilinear form on $\mathbb{C}^n$ is of this form for exactly one $Q$, namely $Q_{ij} = \langle e_j, e_i \rangle$.
@@ -365,7 +379,7 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 >
 > *Source: MATH 420 slides, in the convention of Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-5|§61.5]]*
 
-^prop-61-8
+^prop-61-9
 
 > [!proof]+ Proof
 > *Idea:* expand both vectors in the standard basis; the form is determined by its values $\langle e_j, e_i \rangle$.
@@ -402,7 +416,7 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 >
 > where the fourth equality is the formula $y^\dagger Q x = \sum_{a,b} \bar y_a Q_{ab} x_b$ with $a = j$, $b = i$. So the form is Hermitian.
 
-^pf-61-8
+^pf-61-9
 
 *Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-5|Def. §61.5]]
 
@@ -413,7 +427,7 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 > Q = \begin{pmatrix} 3 & 5 + 3i & -2 + 3i \\ 5 - 3i & 7 & -4i \\ -2 - 3i & 4i & 11 \end{pmatrix}
 > $$
 >
-> is Hermitian (Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-9|§61.9]]): the diagonal entries $3, 7, 11$ are real, and each entry below the diagonal is the conjugate of its mirror image above it, $\overline{5 + 3i} = 5 - 3i$, $\overline{-2 + 3i} = -2 - 3i$, $\overline{-4i} = 4i$. So $\langle x, y \rangle = y^\dagger Q x$ is a Hermitian form on $\mathbb{C}^3$ (Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-8|§61.8]]). The diagonal of every Hermitian matrix is real, since $Q_{ii} = \overline{Q_{ii}}$.
+> is Hermitian (Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-9|§61.9]]): the diagonal entries $3, 7, 11$ are real, and each entry below the diagonal is the conjugate of its mirror image above it, $\overline{5 + 3i} = 5 - 3i$, $\overline{-2 + 3i} = -2 - 3i$, $\overline{-4i} = 4i$. So $\langle x, y \rangle = y^\dagger Q x$ is a Hermitian form on $\mathbb{C}^3$ (Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-9|§61.9]]). The diagonal of every Hermitian matrix is real, since $Q_{ii} = \overline{Q_{ii}}$.
 >
 > Hermitian does not imply positive definite. For $x = (5 + 3i, -3, 0)$ only the upper left $2 \times 2$ block of $Q$ contributes, and its two off-diagonal terms $\bar x_1 Q_{12} x_2$ and $\bar x_2 Q_{21} x_1$ are complex conjugates of each other:
 >
@@ -432,7 +446,7 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 > \langle p, q \rangle = p_1 \bar q_1 + p_2 \bar q_2 + \cdots + p_n \bar q_n = q^\dagger p,
 > $$
 >
-> the form of Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-8|§61.8]] with $Q = I$; it is Hermitian since $I^\dagger = I$. Writing $p_k = x_k + y_k i$ with $x_k, y_k \in \mathbb{R}$,
+> the form of Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-9|§61.9]] with $Q = I$; it is Hermitian since $I^\dagger = I$. Writing $p_k = x_k + y_k i$ with $x_k, y_k \in \mathbb{R}$,
 >
 > $$
 > \langle p, p \rangle = (x_1 + y_1 i)(x_1 - y_1 i) + \cdots + (x_n + y_n i)(x_n - y_n i) = x_1^2 + y_1^2 + \cdots + x_n^2 + y_n^2 \geq 0,
@@ -450,7 +464,7 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 
 ^ex-61-4
 
-> [!theorem] Proposition §61.9: Orthogonal Projection for a Positive Definite Hermitian Form
+> [!theorem] Proposition §61.10: Orthogonal Projection for a Positive Definite Hermitian Form
 > Let $V$ be a complex vector space with a positive definite Hermitian form $\langle\ ,\ \rangle$, and let $u_1, \ldots, u_k$ be an orthogonal basis of a subspace $L$: the $u_i$ are nonzero and $\langle u_i, u_j \rangle = 0$ for $i \neq j$. Define
 >
 > $$
@@ -464,7 +478,7 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 >
 > *Source: MATH 420 slides, in the convention of Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-5|§61.5]]*
 
-^prop-61-9
+^prop-61-10
 
 > [!proof]+ Proof
 > *Idea:* the coefficient of $u_i$ is chosen so that $v - P_L(v)$ has no $u_i$-component; the other $u_j$ do not interfere, being orthogonal to $u_i$.
@@ -481,16 +495,16 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 >
 > A general $u \in L$ is $u = \sum_j c_j u_j$, and by conjugate-linearity in the second variable $\langle v - P_L(v), u \rangle = \sum_j \bar c_j \langle v - P_L(v), u_j \rangle = 0$.
 
-^pf-61-9
+^pf-61-10
 
 *Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-7|Def. §61.7]], [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-5|Def. §61.5]]
 
-> [!theorem] Proposition §61.10: Orthonormal Bases for a Positive Definite Hermitian Form
+> [!theorem] Proposition §61.11: Orthonormal Bases for a Positive Definite Hermitian Form
 > Let $V$ be a finite-dimensional complex vector space with a positive definite Hermitian form $\langle\ ,\ \rangle$. Then $V$ has an orthonormal basis, i.e. a basis $w_1, \ldots, w_n$ with $\langle w_i, w_j \rangle = 1$ if $i = j$ and $0$ otherwise. It is obtained from any basis by the Gram–Schmidt algorithm, exactly as over $\mathbb{R}$.
 >
 > *Source: MATH 420 slides*
 
-^prop-61-10
+^prop-61-11
 
 > [!proof]+ Proof
 > *Idea:* subtract from each basis vector its projection onto the span of the previous ones, then scale to length $1$.
@@ -501,28 +515,28 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 > u_1 = v_1, \qquad u_k = v_k - P_{L_{k-1}}(v_k) \quad (2 \leq k \leq n), \qquad \text{where } L_{k-1} = \operatorname{span}(u_1, \ldots, u_{k-1})
 > $$
 >
-> and $P_{L_{k-1}}$ is the projection of Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-9|§61.9]]. We show by induction on $k$ that $u_1, \ldots, u_k$ are nonzero and pairwise orthogonal, with $\operatorname{span}(u_1, \ldots, u_k) = \operatorname{span}(v_1, \ldots, v_k)$. (The statement for $k - 1$ makes $u_1, \ldots, u_{k-1}$ an orthogonal basis of $L_{k-1}$, so $P_{L_{k-1}}$ is defined.)
+> and $P_{L_{k-1}}$ is the projection of Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-10|§61.10]]. We show by induction on $k$ that $u_1, \ldots, u_k$ are nonzero and pairwise orthogonal, with $\operatorname{span}(u_1, \ldots, u_k) = \operatorname{span}(v_1, \ldots, v_k)$. (The statement for $k - 1$ makes $u_1, \ldots, u_{k-1}$ an orthogonal basis of $L_{k-1}$, so $P_{L_{k-1}}$ is defined.)
 >
 > *$k = 1$.* $u_1 = v_1 \neq 0$, since $v_1$ belongs to a basis.
 >
-> *From $k - 1$ to $k$.* By Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-9|§61.9]](2), $u_k = v_k - P_{L_{k-1}}(v_k)$ is orthogonal to $L_{k-1}$, so $\langle u_k, u_i \rangle = 0$ for $i < k$, and $\langle u_i, u_k \rangle = \overline{\langle u_k, u_i \rangle} = 0$ by the Hermitian property. Next, $P_{L_{k-1}}(v_k)$ lies in $L_{k-1}$, which equals $\operatorname{span}(v_1, \ldots, v_{k-1})$ by the induction hypothesis; so $u_k \in \operatorname{span}(v_1, \ldots, v_k)$ and $v_k = u_k + P_{L_{k-1}}(v_k) \in \operatorname{span}(u_1, \ldots, u_k)$, which gives $\operatorname{span}(u_1, \ldots, u_k) = \operatorname{span}(v_1, \ldots, v_k)$. Finally, if $u_k = 0$, then $v_k = P_{L_{k-1}}(v_k)$ would lie in $\operatorname{span}(v_1, \ldots, v_{k-1})$, contradicting the linear independence of $v_1, \ldots, v_k$; so $u_k \neq 0$.
+> *From $k - 1$ to $k$.* By Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-10|§61.10]](2), $u_k = v_k - P_{L_{k-1}}(v_k)$ is orthogonal to $L_{k-1}$, so $\langle u_k, u_i \rangle = 0$ for $i < k$, and $\langle u_i, u_k \rangle = \overline{\langle u_k, u_i \rangle} = 0$ by the Hermitian property. Next, $P_{L_{k-1}}(v_k)$ lies in $L_{k-1}$, which equals $\operatorname{span}(v_1, \ldots, v_{k-1})$ by the induction hypothesis; so $u_k \in \operatorname{span}(v_1, \ldots, v_k)$ and $v_k = u_k + P_{L_{k-1}}(v_k) \in \operatorname{span}(u_1, \ldots, u_k)$, which gives $\operatorname{span}(u_1, \ldots, u_k) = \operatorname{span}(v_1, \ldots, v_k)$. Finally, if $u_k = 0$, then $v_k = P_{L_{k-1}}(v_k)$ would lie in $\operatorname{span}(v_1, \ldots, v_{k-1})$, contradicting the linear independence of $v_1, \ldots, v_k$; so $u_k \neq 0$.
 >
 > *Normalizing.* Each $\langle u_k, u_k \rangle$ is a positive real number (positive definiteness), so $w_k = u_k / \sqrt{\langle u_k, u_k \rangle}$ is defined. For a real scalar $r$, $\langle r u, r u \rangle = r \bar r \langle u, u \rangle = r^2 \langle u, u \rangle$, so $\langle w_k, w_k \rangle = 1$; scaling keeps $\langle w_i, w_j \rangle = 0$ for $i \neq j$. The $w_1, \ldots, w_n$ span $\operatorname{span}(v_1, \ldots, v_n) = V$, and $n$ vectors spanning the $n$-dimensional space $V$ form a basis.
 
-^pf-61-10
+^pf-61-11
 
-*Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-9|§61.9]]
+*Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-10|§61.10]]
 
 ![[m493-61-4.svg]]
 
-*(Not from lecture; figure added.)* One step of the Gram–Schmidt algorithm in the proof of Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-10|§61.10]]: $u_2$ is $v_2$ minus its projection onto the span of $u_1$, so it is orthogonal to $u_1$, and $u_1, u_2$ span the same subspace as $v_1, v_2$. The picture is drawn in a real plane; over $\mathbb{C}$ the coefficient $\langle v_2, u_1 \rangle / \langle u_1, u_1 \rangle$ is a complex number, and $\operatorname{span}(u_1)$ is a complex line.
+*(Not from lecture; figure added.)* One step of the Gram–Schmidt algorithm in the proof of Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-11|§61.11]]: $u_2$ is $v_2$ minus its projection onto the span of $u_1$, so it is orthogonal to $u_1$, and $u_1, u_2$ span the same subspace as $v_1, v_2$. The picture is drawn in a real plane; over $\mathbb{C}$ the coefficient $\langle v_2, u_1 \rangle / \langle u_1, u_1 \rangle$ is a complex number, and $\operatorname{span}(u_1)$ is a complex line.
 
 > [!remark] Remark: Which Variable Is Conjugate-Linear
 > These notes follow the board of 11/6: $\langle\ ,\ \rangle$ is linear in the first variable and conjugate-linear in the second (Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-5|§61.5]]). The MATH 420 slides on complex inner products, posted for this course, use the opposite convention: a form $B$ with $B(v, cw) = c\,B(v, w)$ and $B(cv, w) = \bar c\,B(v, w)$. The two are related by $B(v, w) = \langle w, v \rangle$, and the translation changes nothing else:
 > - $B$ is Hermitian, or positive definite, exactly when $\langle\ ,\ \rangle$ is, and for Hermitian forms $B(v, w) = 0$ exactly when $\langle v, w \rangle = 0$, so orthogonality means the same;
-> - on $\mathbb{C}^n$ the two use the same matrix $Q$: $B(x, y) = x^\dagger Q y$ and $\langle x, y \rangle = y^\dagger Q x$ (Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-8|§61.8]]);
+> - on $\mathbb{C}^n$ the two use the same matrix $Q$: $B(x, y) = x^\dagger Q y$ and $\langle x, y \rangle = y^\dagger Q x$ (Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-9|§61.9]]);
 > - the standard form of Example [[§61 Invariant Inner Products and Maschke over ℝ#^ex-61-4|§61.4]] is $B(p, q) = \bar p_1 q_1 + \cdots + \bar p_n q_n$;
-> - the coefficient $\langle v, u_i \rangle$ in the projection of Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-9|§61.9]] is $B(u_i, v)$.
+> - the coefficient $\langle v, u_i \rangle$ in the projection of Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-10|§61.10]] is $B(u_i, v)$.
 >
 > Both conventions are common. Linear in the first variable (as here, and in Axler) is more usual in pure mathematics; linear in the second is more usual in applied mathematics, physics and engineering. Many texts write $A^\ast$ for $A^\dagger$, and $\ast$ also denotes the dual space $V^\ast$, so the meaning of $\ast$ has to be read from the context.
 >
@@ -531,5 +545,5 @@ The rest of the section works out the complex theory along the MATH 420 slides o
 ^rem-61-5
 
 > [!remark]- Connections
-> - Linear Algebra: Axler's inner product ([[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]]) is a positive definite Hermitian form in the convention of Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-5|§61.5]] (linear in the first slot). The Gram–Schmidt procedure ([[§21 Orthonormal Bases#^ladr-6-32|LADR 6.32]]) and the existence of orthonormal bases ([[§21 Orthonormal Bases#^ladr-6-35|LADR 6.35]]) are Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-10|§61.10]].
+> - Linear Algebra: Axler's inner product ([[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]]) is a positive definite Hermitian form in the convention of Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-5|§61.5]] (linear in the first slot). The Gram–Schmidt procedure ([[§21 Orthonormal Bases#^ladr-6-32|LADR 6.32]]) and the existence of orthonormal bases ([[§21 Orthonormal Bases#^ladr-6-35|LADR 6.35]]) are Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-11|§61.11]].
 > - Spectral theorems quoted in Example [[§61 Invariant Inner Products and Maschke over ℝ#^ex-61-2|§61.2]]: real symmetric matrices ([[§24 Spectral Theorem#^ladr-7-29|LADR 7.29]]) and complex normal, in particular Hermitian, matrices ([[§24 Spectral Theorem#^ladr-7-31|LADR 7.31]]) are diagonalizable in an orthonormal basis.

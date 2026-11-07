@@ -68,10 +68,14 @@ tags: [group-theory, math493]
 
 *Uses:* [[§35 The Center#^def-35-1|Def. §35.1]], [[§35 The Center#^def-35-2|Def. §35.2]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§1 The Definition of a Group#^def-1-2|Def. §1.2]]
 
-> [!remark] Remark: A Second Proof
-> $Z(G)$ is the kernel of the homomorphism $G \to S_G$ given by the conjugation action ([[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]]), and kernels are subgroups ([[§15 Homomorphisms#^prop-15-2|§15.2]]) — indeed normal subgroups ([[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]).
+> [!proof]+ Second proof (that $Z(G)$ is a subgroup)
+> *Idea:* $Z(G)$ is a kernel.
+>
+> $Z(G)$ is the kernel of the homomorphism $G \to S_G$ given by the conjugation action (The Conjugation Action, Proposition [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]]), and kernels are subgroups ([[§15 Homomorphisms|§15]]) — indeed normal subgroups ([[§39 Sources of Normal Subgroups|§39]]).
 
-^rem-35-1
+^pf-35-2-2
+
+*Uses:* [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]]
 
 > [!definition] Definition §35.3: $p$-Group
 > For a prime $p$, a **$p$-group** is a group of order $p^k$ for some $k \geq 0$. [[§35 The Center#^thm-35-3|The theorem below]] is the starting point for their structure theory.

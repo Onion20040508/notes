@@ -57,6 +57,27 @@ tags: [functional-analysis, math556]
 
 ^thm-17-1
 
+> [!remark] Remark
+> The proof is a direct application of Young's inequality: the normalization makes the right-hand side of Young sum to exactly $1$, and the exponents $p, q$ are chosen so that $|a_i'|^p$ and $|b_i'|^q$ are the two numbers being averaged. Nothing in the argument needed the sums to be finite in advance; that is why the theorem is stated on all of $\ell$, and why the finite-dimensional inequality (Corollary [[§17 Hölder's Inequality for Sequences#^cor-17-2|§17.2]] below) is a special case.
+
+^rem-17-2
+
+> [!theorem] Corollary §17.2: Hölder's Inequality in $\mathbb{F}^n$
+> Let $1 \le p \le \infty$, let $q$ be the conjugate exponent, and let $a, b \in \mathbb{R}^n$ or $\mathbb{C}^n$. With $\|a\|_p = \bigl(\sum_{i=1}^n |a_i|^p\bigr)^{1/p}$ for $p < \infty$ and $\|a\|_\infty = \max_{1 \le i \le n} |a_i|$,
+>
+> $$
+> \sum_{i=1}^n |a_i b_i| \le \|a\|_p \|b\|_q .
+> $$
+
+^cor-17-2
+
+> [!proof]+ Proof
+> This is the special case of Theorem [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]] for sequences with $a_i = b_i = 0$ for $i > n$. Extend $a$ and $b$ by zeros to $\tilde a = (a_1, \ldots, a_n, 0, 0, \ldots)$ and $\tilde b$ in $\ell$. The added terms contribute nothing: $\sum_{i \ge 1} |\tilde a_i \tilde b_i| = \sum_{i=1}^n |a_i b_i|$, $\|\tilde a\|_p = \|a\|_p$, and $\|\tilde b\|_q = \|b\|_q$ (for the exponent $\infty$, $\sup_i |\tilde a_i| = \max_{i \le n} |a_i|$ since the remaining entries are $0 \le |a_i|$). Theorem [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]] applied to $\tilde a, \tilde b$ gives the claim.
+
+^pf-17-2
+
+*Uses:* [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]]
+
 For $p = q = 2$ this is the Cauchy–Schwarz inequality (Proposition [[§16 Means and Young's Inequality#^prop-16-1|§16.1]]) for infinite sequences.
 
 > [!proof]+ Proof
@@ -113,8 +134,3 @@ For $p = q = 2$ this is the Cauchy–Schwarz inequality (Proposition [[§16 Mean
 > [!remark]- Connections
 > - The integral version, home of the inequality in the vault: [[Hölder's Inequality|551 §34.5]], proved by the same normalize–Young–integrate argument; in this course [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]] (cited) and [[§19 The Function Spaces Lᵖ(Ω)#^lem-19-7|§19.7]] (continuous functions, HW3).
 > - Used for Minkowski's inequality [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]] and for the convergence of the $\ell^2$ inner product in [[§22 Definition and Examples#^ex-22-2|Ex. §22.2]].
-
-> [!remark] Remark
-> The proof is a direct application of Young's inequality: the normalization makes the right-hand side of Young sum to exactly $1$, and the exponents $p, q$ are chosen so that $|a_i'|^p$ and $|b_i'|^q$ are the two numbers being averaged. The finite-dimensional inequality $\sum_{i=1}^n |a_i b_i| \le \|a\|_p \|b\|_q$ on $\mathbb{R}^n$ or $\mathbb{C}^n$ is the special case of sequences with $a_i = b_i = 0$ for $i > n$. Nothing in the argument needed the sums to be finite in advance; that is why the theorem is stated on all of $\ell$.
-
-^rem-17-2

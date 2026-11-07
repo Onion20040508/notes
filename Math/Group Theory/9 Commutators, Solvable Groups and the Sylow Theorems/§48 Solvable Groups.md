@@ -21,11 +21,25 @@ tags: [group-theory, math493]
 ^def-48-1
 
 > [!remark] Remark: Normal in the Next Term Only
-> Each $G_{j-1}$ is required to be [[§38 Normal Subgroups#^def-38-1|normal]] in $G_j$, not in $G$. For example, in the chain for $S_4$ [[§48 Solvable Groups#^prop-48-1|below]], $K$ is normal in $A_4$ (and happens to be normal in $S_4$ as well), but in general the terms of such a chain need not be normal in $G$. Normality is not transitive: $A \trianglelefteq B \trianglelefteq C$ does not imply $A \trianglelefteq C$ (Example [[§39 Sources of Normal Subgroups#^ex-39-4|§39.4]], PS 6.1). Every [[§1 The Definition of a Group#^def-1-2|abelian]] group is [[§48 Solvable Groups#^def-48-1|solvable]], via the chain $\{e\} \trianglelefteq G$.
+> Each $G_{j-1}$ is required to be normal in $G_j$, not in $G$. For example, in the chain for $S_4$ [[§48 Solvable Groups#^prop-48-2|below]], $K$ is normal in $A_4$ (and happens to be normal in $S_4$ as well), but in general the terms of such a chain need not be normal in $G$. Normality is not transitive: $A \trianglelefteq B \trianglelefteq C$ does not imply $A \trianglelefteq C$ (Example [[§39 Sources of Normal Subgroups#^ex-39-4|§39.4]], PS 6.1).
 
 ^rem-48-1
 
-> [!theorem] Proposition §48.1: $S_3$ and $S_4$ Are Solvable
+> [!theorem] Proposition §48.1: Abelian Groups Are Solvable
+> Every abelian group $G$ is [[§48 Solvable Groups#^def-48-1|solvable]], via the chain $\{e\} \trianglelefteq G$.
+
+^prop-48-1
+
+> [!proof]+ Proof
+> *Idea:* the one-step chain has the single quotient $G/\{e\} \cong G$.
+>
+> In the chain $\{e\} = G_0 \trianglelefteq G_1 = G$, the subgroup $\{e\}$ is normal in $G$, since $g e g^{-1} = e$ for every $g$. The only quotient is $G/\{e\}$, which is isomorphic to $G$ via $g\{e\} \mapsto g$ (each coset $g\{e\} = \{g\}$ has one element), hence abelian. So the chain is as in Definition [[§48 Solvable Groups#^def-48-1|§48.1]].
+
+^pf-48-1
+
+*Uses:* [[§48 Solvable Groups#^def-48-1|Def. §48.1]]
+
+> [!theorem] Proposition §48.2: $S_3$ and $S_4$ Are Solvable
 > The chains
 >
 > $$ \{e\} \trianglelefteq A_3 \trianglelefteq S_3 \qquad\text{and}\qquad \{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4 $$
@@ -34,7 +48,7 @@ tags: [group-theory, math493]
 >
 > *Source: WS 9.1*
 
-^prop-48-1
+^prop-48-2
 
 > [!proof]+ Proof
 > *Idea:* Each step is normal, with quotient of order $2$, $3$ or $4$, hence abelian.
@@ -43,7 +57,7 @@ tags: [group-theory, math493]
 >
 > *$S_4$.* $K \trianglelefteq A_4$ and $A_4/K \cong \mathbb{Z}/3\mathbb{Z}$ (The Pair-Partition Homomorphism, [[§43 Simple Groups#^prop-43-10|Proposition §43.10]]); $A_4 \trianglelefteq S_4$ (index $2$) with $S_4/A_4 \cong \{\pm 1\}$; and $K/\{e\} \cong K$ is abelian, having order $4$ (Groups of Order $4$ Are Abelian, [[§34 Conjugation as an Action and the Class Equation#^prop-34-6|Proposition §34.6]]). All three quotients are abelian.
 
-^pf-48-1
+^pf-48-2
 
 *Uses:* [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|Def. §21.3]], [[§39 Sources of Normal Subgroups#^prop-39-1|§39.1]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§43 Simple Groups#^prop-43-10|§43.10]], [[§34 Conjugation as an Action and the Class Equation#^prop-34-6|§34.6]], [[§1 The Definition of a Group#^def-1-2|Def. §1.2]]
 
@@ -54,19 +68,19 @@ tags: [group-theory, math493]
 > - *$A_4/K$ is abelian.* $|A_4/K| = 12/4 = 3$ (Lagrange, [[§29 The Index and Lagrange's Theorem#^thm-29-2|Theorem §29.2]]) is prime, so $A_4/K$ is cyclic (Groups of Prime Order, [[§29 The Index and Lagrange's Theorem#^thm-29-7|Theorem §29.7]]), hence abelian.
 > - *$S_4/A_4$ is abelian.* $A_4 \trianglelefteq S_4$ (index $2$, [[§39 Sources of Normal Subgroups#^prop-39-1|Proposition §39.1]]), and $|S_4/A_4| = 2$ is prime, so $S_4/A_4$ is cyclic, hence abelian.
 
-^pf-48-1-2
+^pf-48-2-2
 
 *Uses:* [[§39 Sources of Normal Subgroups#^def-39-1|Def. §39.1]], [[§33 Conjugacy Classes#^lem-33-1|§33.1]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]], [[§39 Sources of Normal Subgroups#^prop-39-1|§39.1]]
 
 > [!remark]- Connections
 > - The same chains are the derived series of $S_3$ and $S_4$: [[§49 The Derived Series#^ex-49-1|Ex. §49.1]] (1) and (2).
 
-> [!theorem] Proposition §48.2: Subgroups of Solvable Groups Are Solvable
+> [!theorem] Proposition §48.3: Subgroups of Solvable Groups Are Solvable
 > If $G$ is [[§48 Solvable Groups#^def-48-1|solvable]] and $S \leq G$, then $S$ is solvable.
 >
 > *Source: WS 9.2; lecture 10/7, 10/9*
 
-^prop-48-2
+^prop-48-3
 
 > [!proof]+ Proof
 > *Idea:* Intersect the chain with $S$; each new quotient embeds in $G_j/G_{j-1}$.
@@ -81,7 +95,7 @@ tags: [group-theory, math493]
 >
 > *Abelian quotients.* The composite $\alpha: S \cap G_j \hookrightarrow G_j \twoheadrightarrow G_j/G_{j-1}$ is a homomorphism with kernel $(S \cap G_j) \cap G_{j-1} = S \cap G_{j-1}$ (Restricting a Homomorphism, [[§41 The First and Second Isomorphism Theorems#^lem-41-4|Lemma §41.4]]). By the First Isomorphism Theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|Theorem §41.1]]), $(S \cap G_j)/(S \cap G_{j-1}) \cong \operatorname{Im}\alpha$, a subgroup of the abelian group $G_j/G_{j-1}$, hence abelian.
 >
-> *Second proof of the abelian step (lecture 10/9).* By Abelian Quotients and Commutators ([[§47 Commutators#^prop-47-11|Proposition §47.11]]), it suffices to show that every commutator of $S \cap G_j$ lies in $S \cap G_{j-1}$. Let $g, h \in S \cap G_j$. Then $ghg^{-1}h^{-1} \in G_{j-1}$, because $g, h \in G_j$ and $G_j/G_{j-1}$ is abelian; and $ghg^{-1}h^{-1} \in S$, because $g, h \in S$. Hence $ghg^{-1}h^{-1} \in S \cap G_{j-1}$.
+> *Second proof of the abelian step (lecture 10/9).* By Abelian Quotients and Commutators ([[§47 Commutators#^prop-47-13|Proposition §47.13]]), it suffices to show that every commutator of $S \cap G_j$ lies in $S \cap G_{j-1}$. Let $g, h \in S \cap G_j$. Then $ghg^{-1}h^{-1} \in G_{j-1}$, because $g, h \in G_j$ and $G_j/G_{j-1}$ is [[§1 The Definition of a Group#^def-1-2|abelian]]; and $ghg^{-1}h^{-1} \in S$, because $g, h \in S$. Hence $ghg^{-1}h^{-1} \in S \cap G_{j-1}$.
 >
 > *Third proof of the abelian step (Second Isomorphism Theorem).* *(Not from lecture; from the student's worksheet solutions.)* Apply the Second Isomorphism Theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-5|Theorem §41.5]]) in the group $G_j$, with the subgroup $S \cap G_j$ in the role of $H$ and the normal subgroup $G_{j-1}$ in the role of $N$. Since $(S \cap G_j) \cap G_{j-1} = S \cap G_{j-1}$,
 >
@@ -89,18 +103,18 @@ tags: [group-theory, math493]
 >
 > a subgroup of an abelian group, hence abelian.
 
-^pf-48-2
+^pf-48-3
 
-*Uses:* [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§4 Subgroups#^prop-4-3|§4.3]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§41 The First and Second Isomorphism Theorems#^lem-41-4|§41.4]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§1 The Definition of a Group#^def-1-2|Def. §1.2]], [[§47 Commutators#^prop-47-11|§47.11]], [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]]
+*Uses:* [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§4 Subgroups#^prop-4-3|§4.3]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§41 The First and Second Isomorphism Theorems#^lem-41-4|§41.4]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§1 The Definition of a Group#^def-1-2|Def. §1.2]], [[§47 Commutators#^prop-47-13|§47.13]], [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]]
 
-> [!theorem] Proposition §48.3: Quotients of Solvable Groups Are Solvable
+> [!theorem] Proposition §48.4: Quotients of Solvable Groups Are Solvable
 > If $G$ is [[§48 Solvable Groups#^def-48-1|solvable]] and $\pi: G \to Q$ is a surjective [[§15 Homomorphisms#^def-15-1|homomorphism]] (for instance, the [[§40 Quotient Groups#^prop-40-2|projection]] onto a [[§40 Quotient Groups#^def-40-1|quotient group]] $G/N$), then $Q$ is solvable. For a chain $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ as in [[§48 Solvable Groups#^def-48-1|the definition]], the natural candidate chain is
 >
 > $$ \{e\} = \pi(G_0) \;\leq\; \pi(G_1) \;\leq\; \cdots \;\leq\; \pi(G_N) = Q. $$
 >
 > *Source: WS 9.3; lecture 10/9*
 
-^prop-48-3
+^prop-48-4
 
 > [!proof]+ Proof
 > *Idea:* Push the chain forward by $\pi$; images of commutators of $G_j$ lie in $\pi(G_{j-1})$.
@@ -113,17 +127,17 @@ tags: [group-theory, math493]
 >
 > since $ghg^{-1} \in G_{j-1}$, as $G_{j-1} \trianglelefteq G_j$. So $\pi(G_{j-1}) \trianglelefteq \pi(G_j)$.
 >
-> *Abelian quotients.* By Abelian Quotients and Commutators ([[§47 Commutators#^prop-47-11|Proposition §47.11]]), it suffices to show that every commutator of $\pi(G_j)$ lies in $\pi(G_{j-1})$. Let $g, h \in G_j$. Since $G_j/G_{j-1}$ is abelian, the same proposition gives $ghg^{-1}h^{-1} \in G_{j-1}$. Hence
+> *Abelian quotients.* By Abelian Quotients and Commutators ([[§47 Commutators#^prop-47-13|Proposition §47.13]]), it suffices to show that every commutator of $\pi(G_j)$ lies in $\pi(G_{j-1})$. Let $g, h \in G_j$. Since $G_j/G_{j-1}$ is abelian, the same proposition gives $ghg^{-1}h^{-1} \in G_{j-1}$. Hence
 >
 > $$ \pi(g)\,\pi(h)\,\pi(g)^{-1}\pi(h)^{-1} = \pi(ghg^{-1}h^{-1}) \in \pi(G_{j-1}). $$
 >
 > So $\pi(G_j)/\pi(G_{j-1})$ is abelian, and $Q$ is solvable.
 
-^pf-48-3
+^pf-48-4
 
-*Uses:* [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§15 Homomorphisms#^prop-15-4|§15.4]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§47 Commutators#^prop-47-11|§47.11]]
+*Uses:* [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§15 Homomorphisms#^prop-15-4|§15.4]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§47 Commutators#^prop-47-13|§47.13]]
 
-> [!theorem] Proposition §48.4: Subquotients: An Injection and a Surjection
+> [!theorem] Proposition §48.5: Subquotients: An Injection and a Surjection
 > Let $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ be a chain, let $S \leq G$, and let $\pi: G \to Q$ be a surjective [[§15 Homomorphisms#^def-15-1|homomorphism]].
 > 1. $x(S \cap G_{j-1}) \mapsto xG_{j-1}$ is a well-defined injective homomorphism
 >
@@ -133,32 +147,58 @@ tags: [group-theory, math493]
 >
 >    $$ G_j/G_{j-1} \twoheadrightarrow \pi(G_j)/\pi(G_{j-1}). $$
 >
-> So each quotient of the chain for $S$ is (isomorphic to) a *subgroup* of the corresponding quotient for $G$, and each quotient of the chain for $Q$ is a *quotient* (homomorphic image) of it. Since subgroups and homomorphic images of abelian groups are abelian, this proves the abelian steps of WS 9.2 and WS 9.3 once more ([[§48 Solvable Groups#^prop-48-2|Proposition §48.2]], [[§48 Solvable Groups#^prop-48-3|Proposition §48.3]]).
+> So each quotient of the chain for $S$ is (isomorphic to) a *subgroup* of the corresponding quotient for $G$, and each quotient of the chain for $Q$ is a *quotient* (homomorphic image) of it. Since subgroups and homomorphic images of abelian groups are abelian, this proves the abelian steps of WS 9.2 and WS 9.3 once more ([[§48 Solvable Groups#^prop-48-3|Proposition §48.3]], [[§48 Solvable Groups#^prop-48-4|Proposition §48.4]]).
 >
 > *Source: lecture 10/9*
 
-^prop-48-4
+^prop-48-5
 
 > [!proof]+ Proof
 > *Idea:* Both maps are induced by the obvious homomorphisms out of $S \cap G_j$ and $G_j$.
 >
-> **(1)** This is the map induced by $\alpha: S \cap G_j \to G_j/G_{j-1}$, $x \mapsto xG_{j-1}$, whose kernel is $S \cap G_{j-1}$ (proof of Subgroups of Solvable Groups Are Solvable, [[§48 Solvable Groups#^prop-48-2|Proposition §48.2]]). By the First Isomorphism Theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|Theorem §41.1]]) it is a well-defined isomorphism onto $\operatorname{Im}\alpha$, hence injective into $G_j/G_{j-1}$.
+> **(1)** This is the map induced by $\alpha: S \cap G_j \to G_j/G_{j-1}$, $x \mapsto xG_{j-1}$, whose kernel is $S \cap G_{j-1}$ (proof of Subgroups of Solvable Groups Are Solvable, [[§48 Solvable Groups#^prop-48-3|Proposition §48.3]]). By the First Isomorphism Theorem ([[§41 The First and Second Isomorphism Theorems#^thm-41-1|Theorem §41.1]]) it is a well-defined isomorphism onto $\operatorname{Im}\alpha$, hence injective into $G_j/G_{j-1}$.
 >
 > **(2)** Let $\varphi: G_j \to \pi(G_j)/\pi(G_{j-1})$, $\varphi(x) = \pi(x)\pi(G_{j-1})$, the restriction of $\pi$ to $G_j$ followed by the projection; it is a surjective homomorphism, and $G_{j-1} \subseteq \operatorname{Ker}\varphi$ because $\pi(G_{j-1})$ is the identity of the target. *Well defined on cosets:* if $xG_{j-1} = yG_{j-1}$, then $y = xn$ with $n \in G_{j-1}$, so $\varphi(y) = \varphi(x)\varphi(n) = \varphi(x)$. The induced map is a homomorphism because $\varphi$ is, and surjective because $\varphi$ is.
 
-^pf-48-4
+^pf-48-5
 
-*Uses:* [[§48 Solvable Groups#^prop-48-2|§48.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]]
+*Uses:* [[§48 Solvable Groups#^prop-48-3|§48.3]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]]
+
+> [!theorem] Proposition §48.6: The Quotients of the Image Chain in $G/N$
+> Let $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_m = G$ be a chain, $N \trianglelefteq G$, $Q = G/N$, and $\pi: G \to Q$ the projection. Then for $1 \leq j \leq m$
+> $$
+> \pi(G_j) \cong G_j/(G_j \cap N) \cong G_jN/N \qquad\text{and}\qquad \pi(G_j)/\pi(G_{j-1}) \cong (G_jN/N)\big/(G_{j-1}N/N) \cong G_jN/G_{j-1}N.
+> $$
+>
+> *Source: lecture 10/9*
+
+^prop-48-6
+
+> [!proof]+ Proof
+> *Idea:* First, then Second, then Third Isomorphism Theorem.
+>
+> *First formula.* The restriction of $\pi$ to $G_j$ is a homomorphism with image $\pi(G_j)$ and kernel $G_j \cap N$, so $\pi(G_j) \cong G_j/(G_j \cap N)$ by the First Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]); and $G_j/(G_j \cap N) \cong G_jN/N$ by the Second Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]]). In fact $\pi(G_j) = \{gN : g \in G_j\}$ equals $G_jN/N = \{xN : x \in G_jN\}$ as a set of cosets, since $(gn)N = gN$ for $n \in N$.
+>
+> *Second formula.* By the normality step in the proof of Quotients of Solvable Groups Are Solvable (Proposition [[§48 Solvable Groups#^prop-48-4|§48.4]]), which uses only $G_{j-1} \trianglelefteq G_j$, $\pi(G_{j-1})$ is [[§38 Normal Subgroups#^def-38-1|normal]] in $\pi(G_j)$. Its preimage under the surjection $G_jN \to \pi(G_j)$, $x \mapsto xN$, is $\{x \in G_jN : xN \in \pi(G_{j-1})\} = G_{j-1}N$, so $G_{j-1}N \trianglelefteq G_jN$ (Preimages and Images of Normal Subgroups, Proposition [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]](1)). Now $N \subseteq G_{j-1}N$ are normal subgroups of $G_jN$, and the Third Isomorphism Theorem (Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]]) in the group $G_jN$ gives
+>
+> $$
+> \pi(G_j)/\pi(G_{j-1}) = (G_jN/N)\big/(G_{j-1}N/N) \cong G_jN/G_{j-1}N.
+> $$
+
+^pf-48-6
+
+*Uses:* [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], [[§48 Solvable Groups#^prop-48-4|§48.4]], [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]]
 
 > [!remark] Remark: The Trap: Do Not Cancel $N$
-> For $Q = G/N$, the isomorphism theorems describe the pieces of the chain for $Q$:
+> For $Q = G/N$, Proposition [[§48 Solvable Groups#^prop-48-6|§48.6]] describes the pieces of the chain for $Q$: $\pi(G_j)/\pi(G_{j-1}) \cong G_jN/G_{j-1}N$. It is tempting to “cancel $N$” and conclude $\pi(G_j)/\pi(G_{j-1}) \cong G_j/G_{j-1}$. This is false in general (Example [[§48 Solvable Groups#^ex-48-1|§48.1]]). The correct relation is the surjection of part (2) of Subquotients: An Injection and a Surjection (Proposition [[§48 Solvable Groups#^prop-48-5|§48.5]]): $G_j/G_{j-1}$ maps *onto* $\pi(G_j)/\pi(G_{j-1})$, with a kernel that can be nontrivial. The lecture's advice: rather than chase isomorphism-theorem formulas, write down the obviously well-defined injection or surjection.
 >
-> $$ \pi(G_j) \cong G_j/(G_j \cap N) \cong G_jN/N $$
->
-> (First, then Second Isomorphism Theorem, [[§41 The First and Second Isomorphism Theorems#^thm-41-1|Theorems §41.1]] and [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]]), and so, by the Third Isomorphism Theorem ([[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|Theorem §42.5]]),
->
-> $$ \pi(G_j)/\pi(G_{j-1}) \cong (G_jN/N)\big/(G_{j-1}N/N) \cong G_jN/G_{j-1}N. $$
->
-> It is tempting to “cancel $N$” and conclude $\pi(G_j)/\pi(G_{j-1}) \cong G_j/G_{j-1}$. This is false in general: for $N = G$, every $\pi(G_j)$ is trivial, while $G_j/G_{j-1}$ need not be. The correct relation is the surjection of part (2) of [[§48 Solvable Groups#^prop-48-4|Proposition §48.4]]: $G_j/G_{j-1}$ maps *onto* $\pi(G_j)/\pi(G_{j-1})$, with a kernel that can be nontrivial. The lecture's advice: rather than chase isomorphism-theorem formulas, write down the obviously well-defined injection or surjection.
+> *Source: lecture 10/9*
 
 ^rem-48-2
+
+> [!example] Example §48.1: Cancelling $N$ Fails for $N = G$
+> Take $N = G$. Then $Q = G/G$ is the trivial group, so every $\pi(G_j)$ is trivial and every quotient $\pi(G_j)/\pi(G_{j-1})$ is trivial (consistently with Proposition [[§48 Solvable Groups#^prop-48-6|§48.6]]: $G_jN/G_{j-1}N = G/G$). But $G_j/G_{j-1}$ need not be trivial: for $G = S_3$ with the chain $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ (Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]]), $G_1/G_0 \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}$. So $\pi(G_1)/\pi(G_0) \not\cong G_1/G_0$. The surjection $G_j/G_{j-1} \twoheadrightarrow \pi(G_j)/\pi(G_{j-1})$ of Proposition [[§48 Solvable Groups#^prop-48-5|§48.5]](2) here has all of $G_j/G_{j-1}$ as its kernel.
+>
+> *Source: lecture 10/9*
+
+^ex-48-1

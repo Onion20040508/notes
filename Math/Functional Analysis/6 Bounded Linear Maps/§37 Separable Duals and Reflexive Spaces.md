@@ -123,10 +123,12 @@ Recall that a normed linear space $X$ is **separable** if it has a countable den
 
 *Uses:* [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|§37.2]]
 
-> [!remark] Remark: The Converse Fails
-> The converse is false: $\ell^1$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], while $(\ell^1)' = \ell^\infty$ is not. A separable dual forces a separable space, not conversely.
+> [!example] Example §37.1: A Separable Space with a Non-Separable Dual
+> The converse of Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] is false: $\ell^1$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], while $(\ell^1)' = \ell^\infty$ is not. A separable dual forces a separable space, not conversely.
+>
+> *Justification* (filled in). $\ell^1$ is separable by Proposition [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]]. By Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] with $p = 1$, $p' = \infty$, the map $a \mapsto \ell_a$ is one-to-one from $\ell^\infty$ onto $(\ell^1)'$, additive, with $\ell_{-b} = -\ell_b$ and $\|\ell_a\| = \|a\|_\infty$; so $\|\ell_a - \ell_b\| = \|\ell_{a - b}\| = \|a - b\|_\infty$. Suppose $D \subset (\ell^1)'$ were countable and dense, and let $D_0 = \{ b \in \ell^\infty : \ell_b \in D \}$, a countable set. For $a \in \ell^\infty$ and $\varepsilon > 0$ there is $\ell_b \in D$ with $\|\ell_a - \ell_b\| < \varepsilon$, i.e. $b \in D_0$ with $\|a - b\|_\infty < \varepsilon$. So $D_0$ would be dense in $\ell^\infty$, contradicting Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]. Hence $(\ell^1)'$ is not separable.
 
-^xrem-37-3
+^ex-37-1
 
 > [!theorem] Corollary §37.4: The Duals of $\ell^\infty$ and $L^\infty$
 > $(\ell^\infty)'$ is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], and neither is $(L^\infty(E))'$ for $E \subset \mathbb{R}^n$ measurable with $m(E) > 0$. In particular $(\ell^\infty)' \neq \ell^1$ and $(L^\infty)' \neq L^1$.
@@ -296,11 +298,11 @@ Why $\|\ell_s - \ell_t\| = 2$: the function $f$ (blue) has $\|f\|_\infty = 1$, e
 ^cor-37-7
 
 > [!proof]+ Proof
-> If $X'$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], so is $X$ (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]]; reflexivity is not needed). If $X$ is separable, then $X'' = i(X)$ is separable, being isometrically isomorphic to $X$, and Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] applied to the normed space $X'$ shows that $X'$ is separable. For $\ell^1$: it is separable, but its dual is isometrically isomorphic to $\ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], with the bar-free pairing of the remark after it), which is not separable; so $\ell^1$ is not reflexive. The proof of Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|§37.5]] is this argument for $X = C[0,1]$. A variant shows that $c_0$ is not reflexive: if it were, $c_0'' = i(c_0)$ would be separable like $c_0$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]), while $c_0'' \cong (\ell^1)' \cong \ell^\infty$ is not (Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]). Here the corollary itself gives nothing, since $c_0$ and $c_0' \cong \ell^1$ are both separable.
+> If $X'$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], so is $X$ (Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]]; reflexivity is not needed). If $X$ is separable, then $X'' = i(X)$ is separable, being isometrically isomorphic to $X$, and Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] applied to the normed space $X'$ shows that $X'$ is separable. For $\ell^1$: it is separable, but its dual is isometrically isomorphic to $\ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], with the bar-free pairing of Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]]), which is not separable; so $\ell^1$ is not reflexive. The proof of Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|§37.5]] is this argument for $X = C[0,1]$. A variant shows that $c_0$ is not reflexive: if it were, $c_0'' = i(c_0)$ would be separable like $c_0$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]), while $c_0'' \cong (\ell^1)' \cong \ell^\infty$ is not (Proposition [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]). Here the corollary itself gives nothing, since $c_0$ and $c_0' \cong \ell^1$ are both separable.
 
 ^pf-37-7
 
-*Uses:* [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|Ex. §37.5]], [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]], [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]], [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|Ex. §37.5]], [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]], [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]
 
 ![[m556-37-3.svg]]
 
@@ -451,7 +453,16 @@ The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]
 
 The distance from $\ell$ to $Y^\perp$, drawn in $X'$: the smallest ball about $\ell$ (red, drawn square as for a maximum norm) that meets $Y^\perp$ (blue) has radius $\|\ell|_Y\|_Y$, and it does meet $Y^\perp$, so the minimum is attained. The points of contact (orange) are exactly the $m_0 = \ell - \ell_1$ with $\ell_1$ a norm-preserving extension of $\ell|_Y$; extensions need not be unique, and neither need the closest point, unlike the projection in a Hilbert space.
 
-> [!remark] Remark: $Y' \cong X'/Y^\perp$
-> $Y^\perp$ is a closed subspace of $X'$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-10|§36.10]]), so $X'/Y^\perp$ carries the quotient norm $\|[\ell]\| = \inf_{m \in Y^\perp} \|\ell - m\|$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]). The proposition says $\|[\ell]\| = \|\ell|_Y\|_Y$. Two functionals have the same restriction to $Y$ exactly when they differ by an element of $Y^\perp$, so $[\ell] \mapsto \ell|_Y$ is a well-defined, linear, norm-preserving map $X'/Y^\perp \to Y'$, and it is onto by Hahn–Banach. Hence $Y'$ is isometrically isomorphic to $X'/Y^\perp$: the dual of a subspace is a quotient of the dual, just as the dual of a quotient is a subspace of the dual (Theorem [[§36 Duality in Normed Spaces#^thm-36-11|§36.11]]).
+> [!theorem] Corollary §37.11: The Dual of a Subspace: $Y' \cong X'/Y^\perp$
+> Let $X$ be a normed linear space and $Y$ a linear subspace. Then $[\ell] \mapsto \ell|_Y$ is an isometric isomorphism of $X'/Y^\perp$ onto $Y'$. In particular $Y'$ is isometrically isomorphic to $X'/Y^\perp$.
 
-^xrem-37-7
+^cor-37-11
+
+> [!proof]+ Proof
+> *(Not from lecture.)* $Y^\perp$ is a closed subspace of $X'$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-10|§36.10]]), so $X'/Y^\perp$ carries the quotient norm $\|[\ell]\| = \inf_{m \in Y^\perp} \|\ell - m\|$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]). Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]] says $\|[\ell]\| = \|\ell|_Y\|_Y$. Two functionals have the same restriction to $Y$ exactly when they differ by an element of $Y^\perp$: $\ell|_Y = \ell'|_Y$ if and only if $(\ell - \ell')(y) = 0$ for all $y \in Y$, i.e. $[\ell] = [\ell']$. The direction “$\Leftarrow$” makes $\Phi([\ell]) = \ell|_Y$ well defined, and “$\Rightarrow$” makes it one-to-one. $\Phi$ is linear, since $(c\ell + c'\ell')|_Y = c\, \ell|_Y + c'\, \ell'|_Y$, and norm-preserving by the formula above. It is onto by Hahn–Banach (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]): every $\ell_0 \in Y'$ extends to some $\ell \in X'$, and then $\Phi([\ell]) = \ell_0$.
+
+^pf-37-11
+
+*Uses:* [[§36 Duality in Normed Spaces#^prop-36-10|§36.10]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
+
+The dual of a subspace is a quotient of the dual, just as the dual of a quotient is a subspace of the dual (Theorem [[§36 Duality in Normed Spaces#^thm-36-11|§36.11]]).

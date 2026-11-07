@@ -72,18 +72,33 @@ tags: [group-theory, math493]
 
 ^pf-12-2
 
+> [!remark] Remark: Cycles Need Not Be Disjoint
+> Uniqueness in the [[§11 Disjoint Cycle Decomposition#^thm-11-3|decomposition theorem]] depends on disjointness. With overlapping cycles the same permutation has many expressions (Example [[§12 Multiplying and Conjugating Cycles#^ex-12-2|§12.2]]), and factorizations into transpositions are far from unique; only the *parity* of the number of transpositions is an invariant of the permutation, as proved in [[§21 The Sign Homomorphism and the Alternating Group|§21]] (Parity of a Permutation).
+
+^rem-12-1
+
+> [!example] Example §12.2: Several Cycle Expressions for $(1\,2\,3)$
+> The $3$-cycle $(1\,2\,3) \in S_3$ is its own disjoint cycle decomposition, but with overlapping cycles it has other expressions:
+>
+> 1. $(1\,2)(2\,3) = (1\,2\,3)$: tracking right factor first, $1 \mapsto 1 \mapsto 2$, $2 \mapsto 3 \mapsto 3$, $3 \mapsto 2 \mapsto 1$ (as in Example [[§10 Cycle Notation and the Group S₃#^ex-10-1|§10.1]]);
+> 2. $(1\,3)(1\,2) = (1\,2\,3)$: the case $r = 3$ of Proposition [[§12 Multiplying and Conjugating Cycles#^prop-12-2|§12.2]]; directly, $1 \mapsto 2 \mapsto 2$, $2 \mapsto 1 \mapsto 3$, $3 \mapsto 3 \mapsto 1$.
+>
+> So $(1\,2\,3)$ has two different factorizations into transpositions, neither of them disjoint; both use two transpositions, an even number, as the parity invariant requires.
+
+^ex-12-2
+
+> [!remark] Remark: Finite Sets Only
+> The [[§11 Disjoint Cycle Decomposition#^thm-11-3|theorem]] is about $S_n$, i.e. finite sets. For an infinite set $X$, a bijection can have infinite orbits with no return (Example [[§12 Multiplying and Conjugating Cycles#^ex-12-3|§12.3]]), so finite cycle notation does not describe all of $S_X$. Throughout this course, $S_n$ is finite.
+
+^rem-12-2
+
+> [!example] Example §12.3: The Shift on $\mathbb{Z}$: an Infinite Cycle
+> Let $s \colon \mathbb{Z} \to \mathbb{Z}$, $s(n) = n + 1$. It is a bijection, with inverse $n \mapsto n - 1$, so $s \in S_{\mathbb{Z}}$. Following the arrows from any $a \in \mathbb{Z}$ gives $a, a + 1, a + 2, \ldots$, and $s^m(a) = a + m \neq a$ for every $m \geq 1$: the orbit never returns, so $s$ is a single “infinite cycle”. It is not a product of finitely many cycles: each cycle moves only finitely many integers, so such a product fixes every integer moved by none of its factors — all but finitely many — whereas $s$ moves every integer.
+
+^ex-12-3
+
 *Uses:* [[§10 Cycle Notation and the Group S₃#^def-10-2|Def. §10.2]], [[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]]
 
 > [!remark]- Connections
 > - Sharper generating sets: [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|Generators of Sₙ]] (PS 1.5(3)); the parity of the number of factors: [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Parity of a Permutation]].
 > - Used in Quantum Mechanics: with [[§12 Multiplying and Conjugating Cycles#^prop-12-1|Proposition §12.1]], in the proof that a permutation can act on a physical state of identical particles only as $+1$ or as its sign — [[§C12.1★ Permutation Symmetry and the Symmetrization Postulate#^thm-c12-1-5|QM Theorem §C12.1.5]].
-
-> [!remark] Remark: Cycles Need Not Be Disjoint
-> Uniqueness in the [[§11 Disjoint Cycle Decomposition#^thm-11-3|decomposition theorem]] depends on disjointness. With overlapping cycles the same permutation has many expressions — e.g. $(1\,2)(2\,3) = (1\,2\,3)$ — and factorizations into transpositions are far from unique; only the *parity* of the number of transpositions is an invariant of the permutation, as proved in [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]] (Parity of a Permutation).
-
-^rem-12-1
-
-> [!remark] Remark: Finite Sets Only
-> The [[§11 Disjoint Cycle Decomposition#^thm-11-3|theorem]] is about $S_n$, i.e. finite sets. For an infinite set $X$, a bijection can have infinite orbits with no return — the shift $n \mapsto n + 1$ on $\mathbb{Z}$ is a single “infinite cycle” — so finite cycle notation does not describe all of $S_X$. Throughout this course, $S_n$ is finite.
-
-^rem-12-2

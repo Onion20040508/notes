@@ -63,32 +63,46 @@ tags: [group-theory, math493]
 >
 > **(3) $\Rightarrow$ (4)** is clear: every left coset $gH$ equals the right coset $Hg$, and conversely.
 >
-> **(4) $\Rightarrow$ (3).** Let $g \in G$. By (4), the left coset $gH$ is also a right coset, and it contains $g$. The right cosets partition $G$ ([[§28 Left and Right Cosets#^prop-28-2|§28.2]]), and the one containing $g$ is $Hg$; hence $gH = Hg$.
+> **(4) $\Rightarrow$ (3).** Let $g \in G$. By (4), the left coset $gH$ is also a right coset, and it contains $g$. The right cosets partition $G$ ([[§28 Left and Right Cosets#^prop-28-3|§28.3]]), and the one containing $g$ is $Hg$; hence $gH = Hg$.
 >
 > **(1) $\Rightarrow$ (3) directly (lecture 9/25).** Write $N := H$, and let $g \in G$ and $n \in N$. Then $gn = (gng^{-1})g \in Ng$, because $gng^{-1} \in N$; so $gN \subseteq Ng$. Similarly $ng = g(g^{-1}ng) \in gN$, because $g^{-1}ng = g^{-1}n(g^{-1})^{-1} \in N$; so $Ng \subseteq gN$.
 
 ^pf-38-2
 
-*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]]
+*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]]
 
 > [!remark]- Connections
-> - Worksheet form: [[§38 Normal Subgroups#^thm-38-3|Five Characterizations of Normality]] (WS 6.1).
+> - Worksheet form: [[§38 Normal Subgroups#^thm-38-4|Five Characterizations of Normality]] (WS 6.1).
 
 > [!remark] Remark: Multiplying Sets
 > Here $gH$, $Hg$, $gHg^{-1}$ are subsets of $G$, and “multiplying an equality of subsets by $g$” means applying the bijection $x \mapsto xg$ of $G$ to both sides; this is legitimate for equalities of sets, and preserves inclusions as well.
 
 ^rem-38-2
 
-> [!remark] Remark: Second Proof of (⇐) in Proposition §37.1 (lecture 9/25)
-> Using products of subsets and $g_2'N = Ng_2'$ for normal $N$ ([[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]]): if $g_1N = g_1'N$ and $g_2N = g_2'N$, then
+> [!theorem] Proposition §38.3: Coset Multiplication Modulo a Normal Subgroup, by Products of Sets
+> Let $N \trianglelefteq G$. If $g_1N = g_1'N$ and $g_2N = g_2'N$, then $g_1g_2N = g_1'g_2'N$. (This is the direction ($\Leftarrow$) of Proposition [[§37 Multiplying Cosets#^prop-37-1|§37.1]], proved here a second way.)
 >
-> $$ g_1g_2N = g_1g_2'N = g_1Ng_2' = g_1'Ng_2' = g_1'g_2'N. $$
+> *Source: lecture 9/25*
 
-^rem-38-3
+^prop-38-3
 
-*Uses:* [[§37 Multiplying Cosets#^prop-37-1|§37.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets]]
+> [!proof]+ Proof
+> *Idea:* Slide $N$ past $g_2'$ using $g_2'N = Ng_2'$, exchange $g_1$ for $g_1'$, and slide back.
+>
+> Using products of subsets and $g_2'N = Ng_2'$ for normal $N$ (Characterizations of Normality, Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]](3)):
+>
+> $$
+> g_1g_2N = g_1g_2'N = g_1Ng_2' = g_1'Ng_2' = g_1'g_2'N.
+> $$
+>
+> The first equality is $g_2N = g_2'N$ multiplied on the left by $g_1$; the second is $g_2'N = Ng_2'$ multiplied on the left by $g_1$; the third is $g_1N = g_1'N$ multiplied on the right by $g_2'$; the fourth is $Ng_2' = g_2'N$ multiplied on the left by $g_1'$ (each multiplication applies a bijection of $G$ to both sides, Remark [[§38 Normal Subgroups#^rem-38-2|remark]]).
 
-> [!theorem] Theorem §38.3: Five Characterizations of Normality
+^pf-38-3
+
+*Uses:* [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets]]
+
+
+> [!theorem] Theorem §38.4: Five Characterizations of Normality
 > Let $G$ be a group and $N$ a subgroup. The following are equivalent:
 > 1. for all $g \in G$, $gNg^{-1} = N$;
 > 2. $N$ is a union of (some of the) conjugacy classes of $G$;
@@ -100,7 +114,7 @@ tags: [group-theory, math493]
 >
 > *Source: WS 6.1*
 
-^thm-38-3
+^thm-38-4
 
 > [!proof]+ Proof
 > *Idea:* Compare each condition with (1) via conjugacy classes, $\operatorname{Stab}(gN) = gNg^{-1}$, cosets, and well-definedness.
@@ -131,15 +145,15 @@ tags: [group-theory, math493]
 >
 > **(1) $\Rightarrow$ (4).** Let $gN$ be a left coset. Multiplying the equality $gNg^{-1} = N$ of (1) on the right by $g$ (Remark [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]]) gives $gN = Ng$; so $gN$ is the right coset $Ng$.
 >
-> **(4) $\Rightarrow$ (1).** Let $g \in G$. By (4), $gN = Nx$ for some $x \in G$. Now $g = ge \in gN = Nx$, and also $g = eg \in Ng$. The right cosets are the equivalence classes of $\equiv_r \pmod N$ (Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]](2)), and two equivalence classes with a common element are equal (Proposition [[§24 Equivalence Relations and Partitions#^prop-24-1|§24.1]]); so $Nx = Ng$. Hence $gN = Ng$, and multiplying on the right by $g^{-1}$ (Remark [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]]) gives $gNg^{-1} = N$.
+> **(4) $\Rightarrow$ (1).** Let $g \in G$. By (4), $gN = Nx$ for some $x \in G$. Now $g = ge \in gN = Nx$, and also $g = eg \in Ng$. The right cosets are the equivalence classes of $\equiv_r \pmod N$ (Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]](2)), and two equivalence classes with a common element are equal (Proposition [[§24 Equivalence Relations and Partitions#^prop-24-1|§24.1]]); so $Nx = Ng$. Hence $gN = Ng$, and multiplying on the right by $g^{-1}$ (Remark [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]]) gives $gNg^{-1} = N$.
 >
 > **(1) $\Leftrightarrow$ (5).** Condition (5) says precisely that the rule $(g_1N)(g_2N) := (g_1g_2)N$ is a well-defined operation on $G/N$, i.e. that the result does not depend on the representatives $g_1, g_2$ chosen. By Proposition [[§37 Multiplying Cosets#^prop-37-1|§37.1]], this holds if and only if $gNg^{-1} \subseteq N$ for all $g \in G$, which is equivalent to (1) by Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]], (1) $\Leftrightarrow$ (2).
 >
 > Finally, since (1) is equivalent to “$gNg^{-1} \subseteq N$ for all $g \in G$”, which is Definition [[§38 Normal Subgroups#^def-38-1|§38.1]], the subgroups satisfying (1)–(5) are exactly the normal subgroups of $G$.
 
-^pf-38-3
+^pf-38-4
 
-*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§24 Equivalence Relations and Partitions#^prop-24-1|§24.1]], [[§37 Multiplying Cosets#^prop-37-1|§37.1]]
+*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§24 Equivalence Relations and Partitions#^prop-24-1|§24.1]], [[§37 Multiplying Cosets#^prop-37-1|§37.1]]
 
 > [!proof]+ Second proof (self-contained, via the cycle (1) ⇒ (4) ⇒ (5) ⇒ (1); WS 6.1)
 > *Idea:* Lemma (L) turns inclusions into equalities; then prove the cycle (1) $\Rightarrow$ (4) $\Rightarrow$ (5) $\Rightarrow$ (1).
@@ -170,13 +184,13 @@ tags: [group-theory, math493]
 >
 > $$ ng^{-1}N = g^{-1}N. $$
 >
-> By the coset criterion (Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]](1)), $(g^{-1})^{-1}(ng^{-1}) = gng^{-1} \in N$. Hence $gNg^{-1} \subseteq N$ for all $g$, and (1) follows from (L).
+> By the coset criterion (Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]](1)), $(g^{-1})^{-1}(ng^{-1}) = gng^{-1} \in N$. Hence $gNg^{-1} \subseteq N$ for all $g$, and (1) follows from (L).
 >
 > By (L), (1) is equivalent to “$gNg^{-1} \subseteq N$ for all $g \in G$”, which is Definition [[§38 Normal Subgroups#^def-38-1|§38.1]]; so the subgroups satisfying (1)–(5) are exactly the normal subgroups of $G$.
 
-^pf-38-3-2
+^pf-38-4-2
 
-*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]], [[§27 Orbits#^prop-27-1|§27.1]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]]
+*Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]], [[§27 Orbits#^prop-27-1|§27.1]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^rem-38-2|Multiplying Sets (§38)]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]]
 
 > [!remark]- Connections
 > - Lecture form: [[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]].
@@ -184,10 +198,10 @@ tags: [group-theory, math493]
 > [!remark] Remark: Relation to the Lecture
 > Four of the five conditions have already appeared: (1) is characterization (2) of [[§38 Normal Subgroups#^prop-38-2|Characterizations of Normality]] (lecture), (4) is its characterization (4), (5) is the well-definedness of coset multiplication ([[§37 Multiplying Cosets#^prop-37-1|§37.1]]), and (2) is [[§39 Sources of Normal Subgroups#^prop-39-7|Normal Subgroups Are Unions of Conjugacy Classes]] (§39). Condition (3) is new: it phrases normality through the action of $G$ on $G/N$ from Worksheet 5 ([[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]]).
 
-^rem-38-4
+^rem-38-3
 
 > [!example] Example §38.1: A Non-Normal Subgroup of $S_3$
-> Let $G = S_3$ and $H = \{e, (1\,2)\}$. As computed in [[§28 Left and Right Cosets#^ex-28-1|Ex. §28.1]],
+> Let $G = S_3$ and $H = \{e, (1\,2)\}$. As computed in [[§28 Left and Right Cosets#^ex-28-2|Ex. §28.2]],
 >
 > $$ (1\,3)H = \{(1\,3),\ (1\,2\,3)\} \neq \{(1\,3),\ (1\,3\,2)\} = H(1\,3), $$
 >

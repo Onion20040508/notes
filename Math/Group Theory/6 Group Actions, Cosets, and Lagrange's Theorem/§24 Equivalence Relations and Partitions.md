@@ -67,7 +67,7 @@ The goal is to decompose a group $G$ into disjoint subsets, given a subgroup $H$
 
 > [!remark]- Connections
 > - The same pattern in linear algebra: [[§11 Products and Quotients of Vector Spaces#^ladr-3-101|Two translates of a subspace are equal or disjoint]] (LADR 3.101); in MATH 590: [[§13 Quotient Topology#^def-13-3|Quotient Space]] (590 Def. §13.3).
-> - Applied to orbits and cosets: [[§27 Orbits#^prop-27-2|The Orbit Relation]], [[§28 Left and Right Cosets#^prop-28-2|Cosets Are the Equivalence Classes]].
+> - Applied to orbits and cosets: [[§27 Orbits#^prop-27-2|The Orbit Relation]], [[§28 Left and Right Cosets#^prop-28-3|Cosets Are the Equivalence Classes]].
 > - Elementary version: [[§22 Partitions and Equivalence Relations#^thm-22-3|250 Thm. §22.3]] (classes are equal or disjoint) and [[§22 Partitions and Equivalence Relations#^cor-22-4|250 Cor. §22.4]].
 
 > [!theorem] Proposition §24.2: Partitions Come from Equivalence Relations

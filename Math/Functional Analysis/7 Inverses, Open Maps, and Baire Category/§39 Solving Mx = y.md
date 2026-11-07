@@ -172,15 +172,25 @@ So a bounded linear bijection $M$ has a bounded inverse exactly when $M$ is an o
 
 Closedness of a graph, in a picture. Left: the points $(x_n, Mx_n)$ of the graph converge, and the limit lies on the graph. Right: the example above, $Mx = x$ on the polynomials in $C[0,1]$; the Taylor polynomials $x_n$ of $e^t$ give points $(x_n, x_n)$ of the graph converging to $(e^t, e^t)$, which is missing, since $e^t$ is not a polynomial. $M$ is continuous but not closed: its domain is not closed.
 
+> [!remark] Remark: Why Not “Closed Sets to Closed Sets”
+> A closed map is not defined, by analogy with open maps, as one taking closed sets to closed sets: that is a different notion, not equivalent to this one (Example [[§39 Solving Mx = y#^ex-39-2|§39.2]]), and it is not the one used here; the graph definition is.
+
+^rem-39-3
+
+> [!example] Example §39.2: The Projection onto the First Coordinate
+> *(Not from lecture.)* The projection $P : \mathbb{R}^2 \to \mathbb{R}$, $P(x, y) = x$, is closed in the graph sense (Definition [[§39 Solving Mx = y#^def-39-3|§39.3]]), but it maps the closed set $H = \{ (x, y) : xy = 1 \}$ onto $\mathbb{R} \setminus \{0\}$, which is not closed.
+>
+> *Closed graph.* $P$ is linear and $|P(x, y)| = |x| \le \|(x, y)\|$ for the Euclidean norm, so $P$ is bounded, hence continuous, hence closed by Example [[§39 Solving Mx = y#^ex-39-1|§39.1]].
+>
+> *$H$ is closed.* If $(x_n, y_n) \in H$ and $(x_n, y_n) \to (x, y)$, then $x_n \to x$ and $y_n \to y$, so $xy = \lim_n x_n y_n = 1$ and $(x, y) \in H$.
+>
+> *$P(H) = \mathbb{R} \setminus \{0\}$, not closed.* If $xy = 1$ then $x \neq 0$; conversely, for $x \neq 0$, $(x, 1/x) \in H$ and $P(x, 1/x) = x$. The points $\frac1n \in P(H)$ converge to $0 \notin P(H)$, so $P(H)$ is not closed.
+
+^ex-39-2
+
 ![[m556-39-a1.gif|460]]
 
 *(Not from lecture; animation added, vault only.)* The right half of the figure in motion: the Taylor polynomials $T_n$ of $e^x$, $n = 0, \ldots, 8$, converge to $e^x$ (red) in $C[0, 1]$, with the error falling below $10^{-6}$ (right). The graph points $(T_n, MT_n) = (T_n, T_n)$ converge to $(e^x, e^x)$, which is not on the graph, since $e^x$ is not a polynomial.
-
-> [!remark] Remark: Why Not “Closed Sets to Closed Sets”
-> A closed map is not defined, by analogy with open maps, as one taking closed sets to closed sets: that is a different notion, not equivalent to this one, and it is not the one used here; the graph definition is.
-> For instance, the projection $P(x, y) = x$ from $\mathbb{R}^2$ to $\mathbb{R}$ is continuous, hence closed in the graph sense, but it maps the closed set $\{ (x, y) : xy = 1 \}$ onto $\mathbb{R} \setminus \{0\}$, which is not closed.
-
-^rem-39-3
 
 A closed map need not be continuous. This is why one cares about such a weak notion — differentiation, the most important operator in analysis, is not bounded, but it is closed.
 
@@ -240,6 +250,20 @@ A closed map need not be continuous. This is why one cares about such a weak not
 
 > [!remark] Remark: Which $C^1$; the Graph Norm
 > Here $C^1$ is classical $C^1$. The domain is $C^1$ even though there are differentiable functions that are not $C^1$: the domain may be chosen smaller than the largest possible one, but not larger; here only $C^1$ matters.
-> The proof is the argument that $C^1[a,b]$ is complete in the norm $\max|f| + \max|f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]). That is no coincidence: a linear map is closed exactly when its domain is complete in the *graph norm* $\|x\| + \|Mx\|$, provided $X$ and $Y$ are complete. Note that $D(M) = C^1[0,1]$ is not closed in $C[0,1]$ (it is dense), which is how a closed map can fail to be continuous.
+> The proof is the argument that $C^1[a,b]$ is complete in the norm $\max|f| + \max|f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]). That is no coincidence: a linear map is closed exactly when its domain is complete in the *graph norm* $\|x\| + \|Mx\|$, provided $X$ and $Y$ are complete (Proposition [[§39 Solving Mx = y#^prop-39-4|§39.4]]), and for $M = \frac{d}{dt}$ the graph norm is $\max|x| + \max|x'|$. Note that $D(M) = C^1[0,1]$ is not closed in $C[0,1]$ (it is dense), which is how a closed map can fail to be continuous.
 
 ^rem-39-4
+
+> [!theorem] Proposition §39.4: Closed if and only if the Domain is Complete in the Graph Norm
+> Let $X, Y$ be Banach spaces, $D(M) \subset X$ a linear subspace and $M : D(M) \to Y$ linear. On $D(M)$ let $\|x\|_G = \|x\|_X + \|Mx\|_Y$, the **graph norm**. Then $M$ is a closed map (Definition [[§39 Solving Mx = y#^def-39-3|§39.3]]) if and only if $(D(M), \|\cdot\|_G)$ is complete.
+
+^prop-39-4
+
+> [!proof]+ Proof
+> *(Not from lecture.)* $\|\cdot\|_G$ is a norm on $D(M)$: it is homogeneous and subadditive because $M$ is linear and $\|\cdot\|_X$, $\|\cdot\|_Y$ are norms, and $\|x\|_G \ge \|x\|_X > 0$ for $x \neq 0$. Note that $\|x_n - x\|_G \to 0$ means exactly $x_n \to x$ in $X$ and $Mx_n \to Mx$ in $Y$.
+>
+> **($\Rightarrow$)** Let $M$ be closed and $\{x_n\} \subset D(M)$ Cauchy in $\|\cdot\|_G$. Since $\|x_n - x_m\|_X$ and $\|Mx_n - Mx_m\|_Y$ are both at most $\|x_n - x_m\|_G$, $\{x_n\}$ is Cauchy in $X$ and $\{Mx_n\}$ is Cauchy in $Y$. Both are complete, so $x_n \to x_0$ in $X$ and $Mx_n \to y_0$ in $Y$. As $M$ is closed, $x_0 \in D(M)$ and $y_0 = Mx_0$. Hence $\|x_n - x_0\|_G = \|x_n - x_0\|_X + \|Mx_n - Mx_0\|_Y \to 0$.
+>
+> **($\Leftarrow$)** Let $(D(M), \|\cdot\|_G)$ be complete, and let $x_n \in D(M)$ with $x_n \to x_0$ in $X$ and $Mx_n \to y_0$ in $Y$. Convergent sequences are Cauchy, so $\|x_n - x_m\|_G = \|x_n - x_m\|_X + \|Mx_n - Mx_m\|_Y \to 0$: $\{x_n\}$ is Cauchy in $\|\cdot\|_G$, and $x_n \to x$ in $\|\cdot\|_G$ for some $x \in D(M)$. Then $x_n \to x$ in $X$ and $Mx_n \to Mx$ in $Y$; by uniqueness of limits, $x_0 = x \in D(M)$ and $y_0 = Mx = Mx_0$. So $M$ is closed. (This direction does not use completeness of $X$ and $Y$.)
+
+^pf-39-4

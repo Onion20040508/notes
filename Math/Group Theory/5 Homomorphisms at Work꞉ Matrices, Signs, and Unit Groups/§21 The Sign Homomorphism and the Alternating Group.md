@@ -45,7 +45,7 @@ tags: [group-theory, math493]
 *Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^def-21-1|Def. §21.1]]
 
 ![[m493-20-1.svg]]
-*Bubble sort on the sequence $(4, 3, 1, 2)$ of $\sigma = (1\,4\,2\,3)$ from [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-2|Ex. §20.2]]. Each red crossing swaps an adjacent inversion and lowers $\operatorname{inv}$ by exactly one, so sorting takes $\operatorname{inv}(\sigma) = 5$ swaps and $\operatorname{sgn}(\sigma) = (-1)^5 = -1$. Two wires cross exactly when their values form an inversion ($1$ and $2$ never cross). Reading the swaps backwards gives [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]] (1): $\sigma = t_5 t_4 t_3 t_2 t_1 = (2\,3)(1\,2)(3\,4)(2\,3)(1\,2)$.*
+*Bubble sort on the sequence $(4, 3, 1, 2)$ of $\sigma = (1\,4\,2\,3)$ from [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-4|Ex. §20.4]]. Each red crossing swaps an adjacent inversion and lowers $\operatorname{inv}$ by exactly one, so sorting takes $\operatorname{inv}(\sigma) = 5$ swaps and $\operatorname{sgn}(\sigma) = (-1)^5 = -1$. Two wires cross exactly when their values form an inversion ($1$ and $2$ never cross). Reading the swaps backwards gives [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]] (1): $\sigma = t_5 t_4 t_3 t_2 t_1 = (2\,3)(1\,2)(3\,4)(2\,3)(1\,2)$.*
 
 ![[m493-20-a1.gif|460]]
 
@@ -119,11 +119,11 @@ tags: [group-theory, math493]
 >
 > $$ (\sigma\tau) \cdot \Delta = \sigma \cdot (\tau \cdot \Delta) = \sigma \cdot \big(\operatorname{sgn}(\tau)\,\Delta\big) = \operatorname{sgn}(\tau)\,(\sigma \cdot \Delta) = \operatorname{sgn}(\tau)\operatorname{sgn}(\sigma)\,\Delta. $$
 >
-> The left side is also $\operatorname{sgn}(\sigma\tau)\,\Delta$, and $\Delta \neq 0$, so $\operatorname{sgn}(\sigma\tau) = \operatorname{sgn}(\sigma)\operatorname{sgn}(\tau)$. This is the argument of Theorem [[§46 Characters#^thm-46-2|§46.2]] (A Common Eigenvector Yields a Character), with the common eigenvector $\Delta$.
+> The left side is also $\operatorname{sgn}(\sigma\tau)\,\Delta$, and $\Delta \neq 0$, so $\operatorname{sgn}(\sigma\tau) = \operatorname{sgn}(\sigma)\operatorname{sgn}(\tau)$. This is the argument of Theorem [[§46 Characters#^thm-46-3|§46.3]] (A Common Eigenvector Yields a Character), with the common eigenvector $\Delta$.
 
 ^pf-21-3-2
 
-*Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|§21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|§20.1]], [[§46 Characters#^thm-46-2|§46.2]]
+*Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|§21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|§20.1]], [[§46 Characters#^thm-46-3|§46.3]]
 
 ![[m493-21-2.svg]]
 
@@ -251,7 +251,7 @@ tags: [group-theory, math493]
 
 ^pf-21-9
 
-*Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-8|§21.8]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§4 Subgroups#^prop-4-7|§4.7]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]], [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-6|§21.6]], [[§11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]]
+*Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-8|§21.8]], [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§4 Subgroups#^prop-4-9|§4.9]], [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]], [[§21 The Sign Homomorphism and the Alternating Group#^lem-21-6|§21.6]], [[§11 Disjoint Cycle Decomposition#^lem-11-1|§11.1]]
 
 > [!remark]- Connections
 > - 3-cycles drive the simplicity of $A_n$: [[§43 Simple Groups#^lem-43-8|§43.8]], [[§43 Simple Groups#^thm-43-9|§43.9]]; and they are commutators: [[§47 Commutators#^prop-47-2|§47.2]], [[§47 Commutators#^thm-47-5|The Commutator Subgroup and Characters of Sₙ]].
@@ -276,7 +276,7 @@ tags: [group-theory, math493]
 *Uses:* [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|§21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def. §21.2]], [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|Def. §21.3]]
 
 > [!remark]- Connections
-> - In the language of actions: $A_n = \operatorname{Stab}(\Delta)$ ([[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]); $\Delta$ as a common eigenvector giving the sign character: [[§46 Characters#^ex-46-2|Ex. §46.2]].
+> - In the language of actions: $A_n = \operatorname{Stab}(\Delta)$ ([[§26 Stabilizers and Fixed Points#^def-26-1|Def. §26.1]]); $\Delta$ as a common eigenvector giving the sign character: [[§46 Characters#^ex-46-3|Ex. §46.3]].
 
 > [!remark] Remark: The Origin of the Names
 > This is the historical origin of the names: the symmetric group is attached to the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-4|symmetric polynomials]], and the alternating group is the stabilizer of the alternating polynomial $\Delta$ (whose square, the discriminant, is symmetric). The homomorphism $\operatorname{sgn}$ is also the first nontrivial [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7|representation]] of $S_n$ into $GL_1 = \mathbb{Q}^\times$, alongside the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-8|permutation representation]] $\sigma \mapsto M(\sigma)$ into $GL_n$.

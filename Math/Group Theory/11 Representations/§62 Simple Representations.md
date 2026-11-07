@@ -26,7 +26,7 @@ tags: [group-theory, math493]
 ^def-62-2
 
 > [!theorem] Proposition §62.1: Simple Equals Irreducible
-> Let $G$ be finite and $V$ a finite-dimensional real representation of $G$ (more generally, a representation over a field in which $|G| \neq 0$, once Maschke's theorem, Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-4|§60.4]], is proved in general). Then $V$ is simple if and only if $V$ is irreducible.
+> Let $G$ be finite and $V$ a finite-dimensional real representation of $G$ (more generally, a representation over a field in which $|G| \neq 0$, once Maschke's theorem, Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-5|§60.5]], is proved in general). Then $V$ is simple if and only if $V$ is irreducible.
 >
 > *Source: board 11/6*
 

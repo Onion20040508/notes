@@ -18,7 +18,7 @@ tags: [group-theory, math493]
 
 ^hw-4-1
 
-*Treated in [[§41 The First and Second Isomorphism Theorems#The Second Isomorphism Theorem|§41]] ($HN$ Is a Subgroup When $N$ Is Normal, [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]; $AB$ Need Not Be a Subgroup, [[§41 The First and Second Isomorphism Theorems#^ex-41-2|Ex. §41.2]]).*
+*Treated in [[§41 The First and Second Isomorphism Theorems#The Second Isomorphism Theorem|§41]] ($HN$ Is a Subgroup When $N$ Is Normal, [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]; $AB$ Need Not Be a Subgroup, [[§41 The First and Second Isomorphism Theorems#^ex-41-3|Ex. §41.3]]).*
 
 > [!question] Problem 4.2: Normal Subgroups with Trivial Intersection
 > Let $M$ and $N$ be [[§38 Normal Subgroups#^def-38-1|normal subgroups]] of $G$ with $M \cap N = \{e\}$. Show that $mn = nm$ for all $m \in M$, $n \in N$. Hint: write the conclusion as $mnm^{-1}n^{-1} = 1$.

@@ -170,14 +170,88 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 ^def-35-6
 
 > [!remark] Remark: Where Absolute Continuity is Used
-> Absolute continuity $\nu \ll \mu$ is not used through Step 3; it enters in Step 4. It is needed only for $F_1$. For $F_2$ it is automatic: ($\ast$) with $f = \chi_{F_2}$ and $\mu(F_2) = 0$ gives $\int_{F_2} g_0\, d\nu = 0$ with $g_0 > 1$ on $F_2$, so $\nu(F_2) = 0$. But $\nu(F_1) = 0$ can fail without absolute continuity. Example: $X = [0,1]$, $\mu$ Lebesgue measure, $\nu = \delta_0$ the [[§12 Borel Sets and Measure Spaces#^ex-12-2|unit point mass]] at $0$. Then ($\ast$) forces $g_0 = 1$ $\mu$-a.e. and $g_0(0) = 0$, so $F_1 = \{0\}$ has $\mu(F_1) = 0$ but $\nu(F_1) = 1$: the point mass hides exactly where $g_0 = 0$, and no density exists.
+> Absolute continuity $\nu \ll \mu$ is not used through Step 3; it enters in Step 4. It is needed only for $F_1$. For $F_2$ it is automatic (Lemma [[§35 Measures and the Radon–Nikodym Theorem#^lem-35-2|§35.2]]). But $\nu(F_1) = 0$ can fail without absolute continuity (Example [[§35 Measures and the Radon–Nikodym Theorem#^ex-35-3|§35.3]]).
 
 ^rem-35-2
 
+> [!theorem] Lemma §35.2: The Set Where the Representer Exceeds One is Null
+> Let $\mu, \nu$ be finite measures on $(X, \mathcal{A})$, *not* assumed to satisfy $\nu \ll \mu$, and let $g_0$ be a real-valued measurable representative of the element of $H = L^2(\mu + \nu)$ found in Step 2 of the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]], so that (?) holds for all $f \in H$. Then $F_2 = \{ x : g_0(x) > 1 \}$ has $\mu(F_2) = 0$ and $\nu(F_2) = 0$.
+
+^lem-35-2
+
+> [!proof]+ Proof
+> *(Not from lecture.)* Steps 1–3 of the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]] do not use $\nu \ll \mu$; in particular Step 3 gives $\mu(F_2) = 0$. Now apply (?) with $f = \chi_{F_2} \in H$. The left side is $\int_{F_2} (1 - g_0)\, d\mu = 0$, an integral over a $\mu$-null set. Since $g_0 > 1$ on $F_2$,
+>
+> $$
+> 0 = \int_{F_2} g_0\, d\nu \ge \int_{F_2} 1\, d\nu = \nu(F_2) \ge 0 ,
+> $$
+>
+> so $\nu(F_2) = 0$.
+
+^pf-35-2
+
+*Uses:* [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]]
+
+> [!example] Example §35.3: A Point Mass Has No Density
+> *(Not from lecture.)* Let $X = [0,1]$ with its Lebesgue measurable sets, $\mu$ Lebesgue measure, and $\nu = \delta_0$ the unit point mass at $0$: $\nu(E) = 1$ if $0 \in E$ and $\nu(E) = 0$ otherwise. Both are finite measures, and $\nu \not\ll \mu$, since $\mu(\{0\}) = 0$ but $\nu(\{0\}) = 1$. We show that in the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]] the set $F_1 = \{ g_0 \le 0 \}$ has $\mu(F_1) = 0$ but $\nu(F_1) = 1$, so Step 4 fails, and that no density exists.
+>
+> *The representer.* Let $g_0 = \chi_{(0,1]}$, a bounded function, so $g_0 \in H = L^2(\mu + \nu)$. For $f \in H$,
+>
+> $$
+> \int_X f\, g_0\, d(\mu + \nu) = \int_{(0,1]} f\, d\mu + f(0)\, g_0(0) = \int_X f\, d\mu = \ell(f) ,
+> $$
+>
+> since $g_0(0) = 0$ and $\mu(\{0\}) = 0$. By the uniqueness in Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], this $g_0$ is the element of $H$ found in Step 2: $g_0 = 1$ $\mu$-a.e. and $g_0(0) = 0$.
+>
+> *$F_1$.* For this representative $F_1 = \{0\}$; any other representative differs from it on a $(\mu + \nu)$-null set, which is null for $\mu$ and for $\nu$. Hence $\mu(F_1) = 0$ but $\nu(F_1) = 1$: the point mass hides exactly where $g_0 = 0$.
+>
+> *No density.* If $\nu(E) = \int_E g\, d\mu$ for all $E$, then $E = \{0\}$ gives $1 = \nu(\{0\}) = \int_{\{0\}} g\, d\mu = 0$, a contradiction. So the hypothesis $\nu \ll \mu$ cannot be dropped from Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]].
+
+^ex-35-3
+
 > [!remark] Remark
-> The truncation in Step 5 is necessary, not cosmetic. On $X = [0,1]$ with $\mu$ Lebesgue measure and $d\nu = x^{-1/2}\, dx$ (a finite measure, $\nu \ll \mu$), the proof produces $g_0 = 1/(1 + x^{-1/2})$, and $\chi_X / g_0 = 1 + x^{-1/2}$ has $\int (1 + x^{-1/2})^2\, d(\mu + \nu) = \int_0^1 (1 + x^{-1/2})^3\, dx = \infty$. Here $d\nu/d\mu = x^{-1/2}$ (Definition [[§35 Measures and the Radon–Nikodym Theorem#^def-35-6|§35.6]]). The density is unique $\mu$-a.e., and the theorem also holds for $\sigma$-finite and for signed measures. Neither was covered.
+> The truncation in Step 5 is necessary, not cosmetic (Example [[§35 Measures and the Radon–Nikodym Theorem#^ex-35-4|§35.4]]). The density is unique $\mu$-a.e. (Proposition [[§35 Measures and the Radon–Nikodym Theorem#^prop-35-3|§35.3]]), and the theorem also holds for $\sigma$-finite and for signed measures. Neither extension was covered.
 
 ^rem-35-3
+
+> [!example] Example §35.4: An Unbounded Density: Truncation is Needed
+> *(Not from lecture.)* Let $X = [0,1]$, $\mu$ Lebesgue measure, and $\nu(E) = \int_E x^{-1/2}\, dx$, i.e. $d\nu = x^{-1/2}\, dx$. We show: $\nu$ is a finite measure with $\nu \ll \mu$; the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]] produces $g_0 = 1/(1 + x^{-1/2})$; and the untruncated test function $\chi_X/g_0$ of Step 5 is not in $H = L^2(\mu + \nu)$.
+>
+> *$\nu$.* $\nu(X) = \int_0^1 x^{-1/2}\, dx = 2 < \infty$, and if $\mu(E) = 0$ then $\nu(E)$, an integral over a null set, is $0$.
+>
+> *The representer.* Let $g_0(x) = 1/(1 + x^{-1/2})$ for $0 < x \le 1$ (and $g_0(0) = 0$; the point $0$ is $(\mu+\nu)$-null). Then $0 \le g_0 \le 1$, so $g_0 \in H$, and $g_0\,(1 + x^{-1/2}) = 1$. Since $d(\mu + \nu) = (1 + x^{-1/2})\, dx$, for $f \in H$
+>
+> $$
+> \int_X f\, g_0\, d(\mu + \nu) = \int_0^1 f(x)\, g_0(x)\, (1 + x^{-1/2})\, dx = \int_0^1 f\, dx = \ell(f) ,
+> $$
+>
+> so by the uniqueness in Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]] this is the $g_0$ of Step 2.
+>
+> *The test function.* $\chi_X/g_0 = 1 + x^{-1/2}$, and
+>
+> $$
+> \int_X (1 + x^{-1/2})^2\, d(\mu + \nu) = \int_0^1 (1 + x^{-1/2})^3\, dx \ge \int_0^1 x^{-3/2}\, dx = \infty .
+> $$
+>
+> So $\chi_X/g_0 \notin H$, and Step 5 cannot use it for $E = X$; the truncation is needed. The density is $g = (1 - g_0)/g_0 = x^{-1/2}$, i.e. $d\nu/d\mu = x^{-1/2}$ (Definition [[§35 Measures and the Radon–Nikodym Theorem#^def-35-6|§35.6]]), unbounded near $0$.
+
+^ex-35-4
+
+> [!theorem] Proposition §35.3: The Radon–Nikodym Derivative is Unique
+> Let $\mu, \nu$ be finite measures on $(X, \mathcal{A})$, and let $g, h \ge 0$ be measurable, in $L^1(\mu)$, with $\nu(E) = \int_E g\, d\mu = \int_E h\, d\mu$ for all $E \in \mathcal{A}$. Then $g = h$ $\mu$-a.e.
+
+^prop-35-3
+
+> [!proof]+ Proof
+> *(Not from lecture.)* Let $E = \{ g > h \}$ and $E_k = \{ g - h > \frac1k \}$, $k \in \mathbb{N}$; these are measurable and $E = \bigcup_k E_k$. Since $g, h \in L^1(\mu)$, $\int_E (g - h)\, d\mu = \nu(E) - \nu(E) = 0$. As $g - h > 0$ on $E$ and $g - h > \frac1k$ on $E_k \subset E$,
+>
+> $$
+> 0 = \int_E (g - h)\, d\mu \ge \int_{E_k} (g - h)\, d\mu \ge \tfrac1k\, \mu(E_k) \ge 0 ,
+> $$
+>
+> so $\mu(E_k) = 0$ for every $k$, and $\mu(E) \le \sum_k \mu(E_k) = 0$. Exchanging $g$ and $h$, $\mu(\{ h > g \}) = 0$. Hence $g = h$ $\mu$-a.e.
+
+^pf-35-3
 
 > [!remark]- Connections
 > - The power singularities behind the example ($\int_0^1 x^{-a}\,dx < \infty$ iff $a < 1$): [[Power singularities 1∕xᵃ]]; $1/\sqrt{x} \in L^1 \setminus L^2$ on $(0,1)$, [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-5|551 Ex. §34.5]].

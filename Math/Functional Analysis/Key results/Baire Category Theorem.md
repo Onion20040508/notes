@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 40.2", "Baire", "complete metric spaces are of the second category", "Lax §15.5, proof of Thm 9"]
+aliases: ["MATH 556 40.4", "Baire", "complete metric spaces are of the second category", "Lax §15.5, proof of Thm 9"]
 tags: [functional-analysis, hub]
 ---
 ![[§40 The Baire Category Theorem#^thm-40-4]]

@@ -116,12 +116,24 @@ The two moves of the proof: cut off the tail, which is small because the series 
 
 ^pf-29-2
 
-*Uses:* [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§3 Countability of Rationals and Unions#^cor-3-2|551 §3.2]]
+> [!theorem] Corollary §29.3: $c_0$ is a Closed Subspace of $\ell^\infty$
+> *(Not from lecture.)* $c_0$ is a linear subspace of $\ell^\infty$, the norm $|\cdot|$ of Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]] is the restriction of $\|\cdot\|_\infty$ (on $c_0$ the supremum is a maximum), and $c_0$ is closed in $\ell^\infty$.
+
+^cor-29-3
+
+> [!proof]+ Proof
+> A sequence tending to $0$ is bounded, so $c_0 \subset \ell^\infty$, and $c_0$ is a linear subspace by Step 2 of the proof of Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]. For $a \in c_0$, Step 1 of that proof shows that $\sup_n |a_n|$ is attained, so $\|a\|_\infty = \max_n |a_n| = |a|$. Closedness: let $a^{(k)} \in c_0$ with $\|a^{(k)} - a\|_\infty \to 0$ for some $a \in \ell^\infty$. Given $\varepsilon > 0$ there is $N$ with $|a^{(k)}_n - a_n| \le \varepsilon$ for all $n$ and all $k \ge N$; this is (?), and the part “$a \in c_0$” of Step 4 uses nothing else, so $a \in c_0$. Thus Step 4 is exactly the statement that a uniform limit of sequences tending to $0$ tends to $0$. (Alternatively: $c_0$ is complete by Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]], hence closed by Lemma [[§12 Completeness#^lem-12-2|§12.2]].)
+
+^pf-29-3
+
+*Uses:* [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]], [[§12 Completeness#^lem-12-2|§12.2]]
 
 > [!remark] Remark
-> $c_0$ sits inside $\ell^\infty$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]]) with the same norm (on $c_0$ the supremum is a maximum), and it is closed there: Step 4 is exactly the statement that a uniform limit of sequences tending to $0$ tends to $0$. The truncation argument of [[Functional Analysis Problem-Solving Techniques#^rem-t15|Technique 15]] works for $c_0$ because the tail of an element of $c_0$ is small in the supremum norm — which is precisely what fails for a general bounded sequence.
+> The truncation argument of Technique 15 works for $c_0$ because the tail of an element of $c_0$ is small in the supremum norm — which is precisely what fails for a general bounded sequence.
 
 ^rem-29-1
+
+*Uses:* [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§3 Countability of Rationals and Unions#^cor-3-2|551 §3.2]]
 
 > [!theorem] Proposition §29.4: $\ell^\infty$ is Not Separable
 > $\ell^\infty$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]]) is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
@@ -243,9 +255,14 @@ A continuous $g$ and a step function on cubes with rational endpoints and ration
 Any two of the functions $f_t = \chi_{[0,t]}$ differ by $1$ on an interval of positive length, so they are at $L^\infty$-distance $1$: uncountably many points, pairwise $1$ apart. Balls of radius $\frac12$ about them are disjoint, and a dense set would need a point in each. In $L^p$, $p < \infty$, the same two functions are at distance $(t-s)^{1/p}$, which is small when $t$ is close to $s$.
 
 > [!remark] Remark
-> The hypothesis $m(E) > 0$ is added here: if $m(E) = 0$, then $L^\infty(E) = \{0\}$, which is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]]. Measure theory supplies the examples of functional analysis: without $L^p$ the course has few examples beyond sequence spaces.
+> The hypothesis $m(E) > 0$ is added here; without it the proposition fails (Example [[§29 Sequence and Function Spaces#^ex-29-1|§29.1]]). Measure theory supplies the examples of functional analysis: without $L^p$ the course has few examples beyond sequence spaces.
 
 ^rem-29-2
+
+> [!example] Example §29.1: $L^\infty$ of a Null Set
+> Let $E \subset \mathbb{R}^n$ be measurable with $m(E) = 0$, and identify functions equal almost everywhere, as in the proof of Proposition [[§29 Sequence and Function Spaces#^prop-29-6|§29.6]]. Then $L^\infty(E) = \{0\}$, which is separable. Indeed, for every measurable $f$ on $E$ the set $\{x \in E : f(x) \neq 0\}$ is contained in $E$, a set of measure zero, so $f = 0$ almost everywhere and its class is $0$. The countable set $\{0\}$ is then dense in $L^\infty(E) = \{0\}$.
+
+^ex-29-1
 
 *Chain:* ← [[§21 ℝⁿ, C［a,b］, ℓᵖ and Lᵖ|Chapter 4]] · [[§38 ℝⁿ, Cᵐ and Lᵖ|Chapter 6]] →
 

@@ -92,8 +92,56 @@ tags: [group-theory, math493]
 
 ^ex-52-2
 
+> [!theorem] Proposition §52.2: Solvable Groups and Composition Factors of Prime Order
+> Let $G$ be a finite group.
+>
+> 1. If $G$ has a composition series all of whose factors are cyclic of prime order, then $G$ is solvable.
+> 2. If $G$ is solvable, then $G$ has such a composition series.
+> 3. Hence $G$ is solvable if and only if all of its composition factors are cyclic of prime order.
+>
+> *Source: not from class*
+
+^prop-52-2
+
+> [!proof]+ Proof
+> *Idea:* cyclic factors are abelian; conversely, refine each abelian quotient by a composition series of it and pull back; Jordan–Hölder makes “the” composition factors well defined.
+>
+> **(1)** Each $\mathbb{Z}/p\mathbb{Z}$ is abelian, so such a composition series is a chain as in Definition [[§48 Solvable Groups#^def-48-1|§48.1]].
+>
+> **(2)** Let $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ have abelian quotients. Fix $j$. The finite group $G_j/G_{j-1}$ has a composition series $\{e\} = Q_0 \trianglelefteq \cdots \trianglelefteq Q_b = G_j/G_{j-1}$ (Finite Groups Have Composition Series, Lemma [[§50 Composition Series#^lem-50-3|§50.3]]). With $\pi_j: G_j \to G_j/G_{j-1}$ the projection, the argument in the proof of that lemma shows that
+>
+> $$
+> G_{j-1} = \pi_j^{-1}(Q_0) \trianglelefteq \pi_j^{-1}(Q_1) \trianglelefteq \cdots \trianglelefteq \pi_j^{-1}(Q_b) = G_j
+> $$
+>
+> is a chain with quotients $\pi_j^{-1}(Q_i)/\pi_j^{-1}(Q_{i-1}) \cong Q_i/Q_{i-1}$. Each $Q_i/Q_{i-1}$ is simple, and abelian, being a quotient of a subgroup of the abelian group $G_j/G_{j-1}$; so it is $\cong \mathbb{Z}/p\mathbb{Z}$ for a prime $p$ (Abelian Simple Groups, Theorem [[§43 Simple Groups#^thm-43-1|§43.1]]). Inserting these chains between $G_{j-1}$ and $G_j$ for every $j$ gives a composition series of $G$ all of whose factors are cyclic of prime order.
+>
+> **(3)** $G$ has a composition series (Lemma [[§50 Composition Series#^lem-50-3|§50.3]]), and by the Jordan–Hölder Theorem (Theorem [[§52 The Jordan–Hölder Theorem#^thm-52-1|§52.1]]) all of its composition series have the same factors up to isomorphism and order. If $G$ is solvable, the series from (2) has factors cyclic of prime order, hence so do all. Conversely, if the composition factors are cyclic of prime order, $G$ is solvable by (1).
+
+^pf-52-2
+
+*Uses:* [[§48 Solvable Groups#^def-48-1|Def. §48.1]], [[§50 Composition Series#^lem-50-3|§50.3]], [[§43 Simple Groups#^thm-43-1|§43.1]], [[§52 The Jordan–Hölder Theorem#^thm-52-1|§52.1]]
+
+> [!example] Example §52.3: A Composition Series of $S_4$
+> The chain $\{e\} \trianglelefteq \langle (1\,2)(3\,4) \rangle \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$, with $K$ the Klein four-group (Definition [[§39 Sources of Normal Subgroups#^def-39-1|§39.1]]), is a composition series with factors $\mathbb{Z}/2, \mathbb{Z}/2, \mathbb{Z}/3, \mathbb{Z}/2$.
+> - *Normality.* $\langle (1\,2)(3\,4) \rangle = \{e, (1\,2)(3\,4)\}$ has index $2$ in $K$, and $A_4$ has index $2$ in $S_4$, so both are normal (Subgroups of Index $2$ Are Normal, Proposition [[§39 Sources of Normal Subgroups#^prop-39-1|§39.1]]); $K \trianglelefteq A_4$ by The Pair-Partition Homomorphism (Proposition [[§43 Simple Groups#^prop-43-10|§43.10]]).
+> - *Quotients.* By Lagrange (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]) the quotients have orders $2$, $4/2 = 2$, $12/4 = 3$ and $24/12 = 2$, all prime, so each is cyclic of prime order (Groups of Prime Order, Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]]), hence simple (Theorem [[§43 Simple Groups#^thm-43-1|§43.1]]).
+>
+> By Proposition [[§52 The Jordan–Hölder Theorem#^prop-52-2|§52.2]](1) this shows again that $S_4$ is solvable, and by the Jordan–Hölder theorem every composition series of $S_4$ has these factors.
+>
+> *Source: not from class*
+
+^ex-52-3
+
+> [!example] Example §52.4: The Composition Factor of $A_5$
+> $A_5$ is simple (Theorem [[§43 Simple Groups#^thm-43-9|§43.9]]), so $\{e\} \trianglelefteq A_5$ is a composition series with the single factor $A_5$; by the Jordan–Hölder theorem every composition series of $A_5$ has exactly this one factor. $A_5$ has order $60$, which is not prime, so the factor is not cyclic of prime order, and by Proposition [[§52 The Jordan–Hölder Theorem#^prop-52-2|§52.2]](3) $A_5$ is not solvable, in agreement with Corollary [[§49 The Derived Series#^cor-49-2|§49.2]].
+>
+> *Source: not from class*
+
+^ex-52-4
+
 > [!remark]- Connections
-> - The permutation relating two complete flags is their relative position in the Bruhat decomposition: [[§55 The Sylow Theorems#^rem-55-4|the remark The Bruhat Decomposition]] (§55, office hours 11/4).
+> - The permutation relating two complete flags is their relative position in the Bruhat decomposition: [[§55 The Sylow Theorems#^rem-55-3|the remark The Bruhat Decomposition]] (§55, office hours 11/4).
 
 ![[m493-50-4.svg]]
 

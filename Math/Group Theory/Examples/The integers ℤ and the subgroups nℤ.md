@@ -12,7 +12,7 @@ The additive group $(\mathbb{Z}, +)$, the infinite cyclic group, and its subgrou
 - $1$ has infinite order in $\mathbb{Z}$; the exponents killing $g$ form $\operatorname{ord}(g)\mathbb{Z}$ ([[§4 Subgroups#^rem-4-4|§4]])
 - The subgroups of $\mathbb{Z}$ are exactly the $n\mathbb{Z}$ ([[§5 A Zoo of Subgroups#^prop-5-1|§5]])
 - $a\mathbb{Z} + b\mathbb{Z} = \gcd(a, b)\mathbb{Z}$, and Bézout's identity ([[§5 A Zoo of Subgroups#^cor-5-2|§5]])
-- Subgroups of $\mathbb{Z}^2$: products $m\mathbb{Z} \times n\mathbb{Z}$ and other lattices ([[§5 A Zoo of Subgroups#^ex-5-1|§5]])
+- Subgroups of $\mathbb{Z}^2$: products $m\mathbb{Z} \times n\mathbb{Z}$ and other lattices ([[§5 A Zoo of Subgroups#^ex-5-2|§5]])
 - The dependency chain in $\mathbb{Z}$, from the division algorithm to unit groups ([[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^rem-9-1|§9]])
 - Reduction $\mathbb{Z} \to \mathbb{Z}/n\mathbb{Z}$ has kernel $n\mathbb{Z}$ ([[§15 Homomorphisms#^ex-15-1|§15]])
 - Every infinite cyclic group is isomorphic to $\mathbb{Z}$ ([[§17 Cyclic Groups#^thm-17-1|§17]])
@@ -43,7 +43,7 @@ Revisit parts for $\mathbb{Z}$, chapter by chapter: [[§5 A Zoo of Subgroups#ℤ
 ![[§5 A Zoo of Subgroups#^cor-5-2]]
 
 ## Subgroups of $\mathbb{Z}^2$: products $m\mathbb{Z} \times n\mathbb{Z}$ and other lattices
-![[§5 A Zoo of Subgroups#^ex-5-1]]
+![[§5 A Zoo of Subgroups#^ex-5-2]]
 
 ## The dependency chain in $\mathbb{Z}$, from the division algorithm to unit groups
 ![[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^rem-9-1]]

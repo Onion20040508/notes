@@ -81,12 +81,25 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 
 ^pf-1-1
 
+> [!example] Example §1.2: The Subspaces of $\mathbb{R}^3$
+> Geometrically, in $\mathbb{R}^3$ the subspaces are the origin, lines through the origin, planes through the origin, and $\mathbb{R}^3$ itself.
+>
+> *(Justification filled in.)* Each set on the list is a subspace: $\{0\}$ and $\mathbb{R}^3$ trivially, and a line $\operatorname{span}\{u\}$ ($u \neq 0$) or a plane $\operatorname{span}\{u, v\}$ ($u, v$ linearly independent) through the origin because a span is a subspace (Proposition [[§1 Linear Spaces#^prop-1-4|§1.4]]). Conversely, let $Y \subset \mathbb{R}^3$ be a subspace. By linear algebra $Y$ has a basis with $\dim Y \in \{0, 1, 2, 3\}$ elements, and $Y$ is the span of that basis (Proposition [[§1 Linear Spaces#^prop-1-5|§1.5]]):
+> - $\dim Y = 0$: $Y = \operatorname{span}\{\varnothing\} = \{0\}$, the origin;
+> - $\dim Y = 1$: $Y = \operatorname{span}\{u\}$ with $u \neq 0$, a line through the origin;
+> - $\dim Y = 2$: $Y = \operatorname{span}\{u, v\}$ with $u, v$ independent, a plane through the origin;
+> - $\dim Y = 3$: three independent vectors in $\mathbb{R}^3$ form a basis of $\mathbb{R}^3$, so $Y = \mathbb{R}^3$.
+
+^ex-1-2
+
+> [!example] Example §1.3: A Plane Not Through the Origin
+> A plane in $\mathbb{R}^3$ not passing through the origin is *not* a subspace.
+>
+> *(Justification filled in.)* Such a plane does not contain $0$, while every linear subspace contains $0$ (Proposition [[§1 Linear Spaces#^prop-1-1|§1.1]]). Concretely, write the plane as $P = \{ x : a \cdot x = c \}$ with $a \neq 0$; $0 \notin P$ means $c \neq 0$. Closure under scalar multiplication fails as well: if $x \in P$ then $a \cdot (2x) = 2c \neq c$, so $2x \notin P$.
+
+^ex-1-3
+
 *Uses:* [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]]
-
-> [!remark] Remark
-> Geometrically, in $\mathbb{R}^3$ the subspaces are the origin, lines through the origin, planes through the origin, and $\mathbb{R}^3$ itself. A plane not passing through the origin is *not* a subspace.
-
-^xrem-1-2
 
 > [!remark] Note: Notation
 > The inclusion $Y \subset X$ allows equality; $X$ is a subspace of itself. Strict inclusion, when it matters, is written $Y \subsetneq X$.

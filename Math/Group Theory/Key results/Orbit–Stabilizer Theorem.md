@@ -26,8 +26,8 @@ tags: [group-theory, hub]
 - [[§55 The Sylow Theorems#^thm-55-9|Theorem §55.9: The Third Sylow Theorem]]
 - [[§55 The Sylow Theorems#^cor-55-10|Corollary §55.10: The Number of Sylow Subgroups Divides ∣G∣]]
 - [[§55 The Sylow Theorems#^prop-55-12|Proposition §55.12: Complete Flags Are G/B]]
-- [[§55 The Sylow Theorems#^prop-55-13|Proposition §55.13: Sylow p-Subgroups of GLₙ(𝔽_p) and Flags]]
-- [[§56 Simple Groups of Small Order#^prop-56-2|Proposition §56.2: n_p and the Normalizer]]
+- [[§55 The Sylow Theorems#^prop-55-14|Proposition §55.14: Sylow p-Subgroups of GLₙ(𝔽_p) and Flags]]
+- [[§56 Simple Groups of Small Order#^prop-56-4|Proposition §56.4: n_p and the Normalizer]]
 
 ## Connections
 - **Used for.** Class sizes divide |G| ([[§34 Conjugation as an Action and the Class Equation#^cor-34-2|§34.2]]), hence the [[Class Equation]]. Also [[Burnside's Lemma]], the 24 rotations of the cube (6 faces, each with a stabilizer of order 4; [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-3|§32.3]]), and n! = (n − 1)! · n from the point stabilizer in Sₙ ([[§30 Orbit–Stabilizer#^cor-30-5|§30.5]]).

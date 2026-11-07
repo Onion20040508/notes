@@ -221,10 +221,35 @@ Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, 
 
 *Uses:* [[§11 Normed Linear Spaces#^prop-11-8|§11.8]], [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]
 
-> [!remark] Remark: Complex Scalars
-> Over $\mathbb{C}$, apply the theorem to $X$ regarded as a real normed space: it gives a real-linear bounded $\ell_r$, and $\ell(x) = \ell_r(x) - i\, \ell_r(ix)$ is a complex-linear bounded functional with $\operatorname{Re} \ell = \ell_r$ (as in the complex Hahn–Banach theorem, Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]). The conclusion becomes $\operatorname{Re} \ell(x_0) > a > \operatorname{Re} \ell(x)$ for $x \in K$, and the proof of Mazur's theorem below goes through with $\operatorname{Re} \ell$.
+> [!theorem] Corollary §43.6: Hyperplane Separation over $\mathbb{C}$
+> *(Not from lecture.)* Let $X$ be a normed linear space over $\mathbb{C}$, $K$ a closed convex set in $X$, and $x_0 \notin K$. Then there exist $a \in \mathbb{R}$ and $\ell \in X'$ such that
+>
+> $$
+> \operatorname{Re} \ell(x_0) > a > \operatorname{Re} \ell(x) \qquad \text{for all } x \in K .
+> $$
 
-^xrem-43-1
+^cor-43-6
+
+> [!proof]+ Proof
+> Regard $X$ as a real normed space $X_{\mathbb{R}}$ (the same vectors and norm, with scalars restricted to $\mathbb{R}$). $K$ is still closed (the norm is the same) and convex (convexity only uses real coefficients $t \in [0,1]$), and $x_0 \notin K$. Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]] gives $a \in \mathbb{R}$ and a real-linear bounded $\ell_r : X \to \mathbb{R}$ with $\ell_r(x_0) > a > \ell_r(x)$ for all $x \in K$. Define, as in the complex Hahn–Banach theorem (Theorem [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]),
+>
+> $$
+> \ell(x) = \ell_r(x) - i\, \ell_r(ix) .
+> $$
+>
+> *$\ell$ is complex-linear.* It is additive and real-homogeneous because $\ell_r$ is, and $\ell(ix) = \ell_r(ix) - i\,\ell_r(-x) = \ell_r(ix) + i\,\ell_r(x) = i\bigl( \ell_r(x) - i\,\ell_r(ix) \bigr) = i\,\ell(x)$; together, $\ell((s + it)x) = s\,\ell(x) + t\,\ell(ix) = (s + it)\,\ell(x)$.
+>
+> *$\operatorname{Re} \ell = \ell_r$,* by construction.
+>
+> *$\ell$ is bounded.* Given $x$, write $\ell(x) = |\ell(x)|\, e^{i\varphi}$ and put $c = e^{-i\varphi}$. Then $\ell(cx) = |\ell(x)|$ is real, so $|\ell(x)| = \operatorname{Re} \ell(cx) = \ell_r(cx) \le \|\ell_r\|\, \|cx\| = \|\ell_r\|\, \|x\|$. Hence $\ell \in X'$.
+>
+> Finally $\operatorname{Re} \ell(x_0) = \ell_r(x_0) > a > \ell_r(x) = \operatorname{Re} \ell(x)$ for $x \in K$.
+
+^pf-43-6
+
+*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]], [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]]
+
+The proof of Mazur's theorem below goes through over $\mathbb{C}$ with $\operatorname{Re} \ell$ in place of $\ell$, using Corollary [[§43 Weak and Weak-Star Convergence#^cor-43-6|§43.6]].
 
 > [!theorem] Theorem §43.7: Mazur's Theorem
 > Let $X$ be a normed linear space, $\{x_n\}_{n=1}^\infty \subset X$, $x_0 \in X$, and $x_n \rightharpoonup x_0$ in $X$. Then $x_0$ belongs to the closed convex hull of $\{x_n\}_{n=1}^\infty$. That is, for every $\varepsilon > 0$ there are finitely many terms $x_1, \ldots, x_j$ of the sequence and $\lambda_k \ge 0$, $k = 1, \ldots, j$, with $\sum_{k=1}^j \lambda_k = 1$, such that
@@ -295,17 +320,39 @@ Does every bounded sequence have a weakly convergent subsequence? This is a diff
 
 ^def-43-2
 
-> [!remark] Remark: Weak Implies Weak-$\ast$
-> On $X'$ two notions are available: weak convergence ($X'$ is a normed space, test against $(X')' = X''$) and weak-$\ast$ convergence (test against $X$). Since $X \subset X''$ (isometrically embedded), $\ell_n \rightharpoonup \ell_0$ in $X'$ implies $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ in $X'$: weak convergence tests against every element of $X''$, weak-$\ast$ only against those in $X$. So weak-$\ast$ is the weaker notion. *(Not from lecture.)* If $X$ is reflexive, every element of $X''$ is in $X$, and the two notions coincide (Lax §10.3, Remark 1).
+On $X'$ two notions are available: weak convergence ($X'$ is a normed space, test against $(X')' = X''$) and weak-$\ast$ convergence (test against $X$).
 
-^xrem-43-3
+> [!theorem] Proposition §43.8: Weak Implies Weak-$\ast$
+> Let $X$ be a normed linear space, and $\{\ell_n\}_{n=1}^\infty$, $\ell_0$ in $X'$.
+>
+> 1. If $\ell_n \rightharpoonup \ell_0$ in $X'$, then $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ in $X'$. So weak-$\ast$ is the weaker notion.
+> 2. *(Not from lecture.)* If $X$ is reflexive (Definition [[§37 Separable Duals and Reflexive Spaces#^def-37-1|§37.1]]), the two notions coincide.
+>
+> *Lax: §10.3, Remark 1 (part (2))*
+
+^prop-43-8
+
+> [!proof]+ Proof
+> (1) Since $X \subset X''$, isometrically embedded by $i(x)(\ell) = \ell(x)$ (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]), each $x \in X$ gives the test element $i(x) \in X''$, and weak convergence in $X'$ gives
+>
+> $$
+> \ell_n(x) = i(x)(\ell_n) \longrightarrow i(x)(\ell_0) = \ell_0(x) .
+> $$
+>
+> As $x \in X$ is arbitrary, $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$. Weak convergence tests against every element of $X''$, weak-$\ast$ only against those in $X$.
+>
+> (2) If $X$ is reflexive, every element of $X''$ is in $X$: for $\eta \in X''$ there is $x \in X$ with $\eta = i(x)$. So if $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$, then $\eta(\ell_n) = \ell_n(x) \to \ell_0(x) = \eta(\ell_0)$ for every $\eta \in X''$, i.e. $\ell_n \rightharpoonup \ell_0$. With (1), the two notions coincide.
+
+^pf-43-8
+
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]
 
 > [!example] Example §43.4: Weak-$\ast$ but Not Weak
 > $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ does not imply $\ell_n \rightharpoonup \ell_0$. Let $\ell^\infty_0 = c_0 = \{ (a_1, a_2, \ldots) : \lim_n a_n = 0 \}$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]). Then $(c_0)' = \ell^1$ (homework) and $(\ell^1)' = \ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]). Consider $e_n = (0, \ldots, 0, 1, 0, \ldots) \in \ell^1$.
 > - $e_n \overset{\ast}{\rightharpoonup} 0$ in $\ell^1 = (c_0)'$: for every $a = (a_1, a_2, \ldots) \in c_0$, $\langle a, e_n \rangle = a_n \to 0$.
 > - $e_n \not\rightharpoonup 0$ in $\ell^1$: for $a = (a_1, a_2, \ldots) \in \ell^\infty = (\ell^1)'$, $\langle e_n, a \rangle = a_n$, which need not converge, since $a$ is only bounded.
 >
-> For instance $a = (1, 1, 1, \ldots)$ gives $\langle e_n, a \rangle = 1 \not\to 0$, and $a = (1, -1, 1, -1, \ldots)$ gives a sequence with no limit at all, so $\{e_n\}$ has no weak limit in $\ell^1$ (any weak limit would also be a weak-$\ast$ limit, hence $0$ by uniqueness). (The pairings are the bar-free ones, $\langle x, b \rangle = \sum_j x_j b_j$, of the remark after Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]].)
+> For instance $a = (1, 1, 1, \ldots)$ gives $\langle e_n, a \rangle = 1 \not\to 0$, and $a = (1, -1, 1, -1, \ldots)$ gives a sequence with no limit at all, so $\{e_n\}$ has no weak limit in $\ell^1$ (any weak limit would also be a weak-$\ast$ limit, hence $0$ by uniqueness). (The pairings are the bar-free ones, $\langle x, b \rangle = \sum_j x_j b_j$, of Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]].)
 >
 > *(Not from lecture.)* Lax's example (§10.3, Example 5) is of the same kind: the averages $m_n(h) = \frac{n}{2} \int_{-1/n}^{1/n} h(t)\, dt$ are functionals on $C[-1, 1]$ that converge weak-$\ast$ to the point evaluation $h \mapsto h(0)$, but not weakly, since against a bounded function with a jump at $0$ the averages do not converge to its value at $0$.
 
@@ -333,9 +380,19 @@ As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of t
 *Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]
 
 > [!remark] Remark: The Weak-$\ast$ Criteria Need $X$ Complete
-> In the lecture the theorem above, and the next one, were stated for a normed linear space $X$; Lax (§10.3) assumes $X$ Banach from the start. Banach–Steinhaus, however, needs the domain of the maps to be complete, and here the domain is $X$ (in Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]] the domain was $X'$, which is always complete). The direction ($\Leftarrow$) holds for any normed $X$ (the $\varepsilon/2$ argument does not use completeness), but ($\Rightarrow$), weak-$\ast$ convergent implies bounded, can fail. On $X = c_{00}$, the finitely supported sequences with the maximum norm, let $\ell_n(x) = n\, x_n$: then $\ell_n(x) = 0$ once $n$ exceeds the support of $x$, so $\ell_n \overset{\ast}{\rightharpoonup} 0$, but $\|\ell_n\| = n$. So in both theorems $X$ is assumed to be a Banach space; the bound $\|\ell_0\| \le \liminf \|\ell_n\|$ holds for any normed $X$.
+> In the lecture the theorem above, and the next one, were stated for a normed linear space $X$; Lax (§10.3) assumes $X$ Banach from the start. Banach–Steinhaus, however, needs the domain of the maps to be complete, and here the domain is $X$ (in Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]] the domain was $X'$, which is always complete). The direction ($\Leftarrow$) holds for any normed $X$ (the $\varepsilon/2$ argument does not use completeness), but ($\Rightarrow$), weak-$\ast$ convergent implies bounded, can fail (Example [[§43 Weak and Weak-Star Convergence#^ex-43-5|§43.5]]). So in both theorems $X$ is assumed to be a Banach space; the bound $\|\ell_0\| \le \liminf \|\ell_n\|$ holds for any normed $X$.
 
 ^rem-43-2
+
+> [!example] Example §43.5: An Unbounded Weak-$\ast$ Null Sequence on $c_{00}$
+> *(Not from lecture.)* Let $X = c_{00}$, the finitely supported sequences with the maximum norm (not complete, Example [[§42 Uniform Boundedness and Approximation#^ex-42-2|§42.2]]), and $\ell_n(x) = n\, x_n$. These are the functionals $A_n$ of Example [[§42 Uniform Boundedness and Approximation#^ex-42-2|§42.2]], so $\ell_n \in X'$ with $\|\ell_n\| = n$.
+>
+> 1. *$\ell_n \overset{\ast}{\rightharpoonup} 0$.* For each $x \in c_{00}$, $\ell_n(x) = 0$ once $n$ exceeds the support of $x$, so $\ell_n(x) \to 0$.
+> 2. *Not bounded.* $\sup_n \|\ell_n\| = \sup_n n = \infty$.
+>
+> So for the normed space $c_{00}$ the direction ($\Rightarrow$) of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-9|§43.9]] fails, and so does the boundedness in Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-10|§43.10]].
+
+^ex-43-5
 
 > [!theorem] Theorem §43.10: The Norm of a Weak-$\ast$ Limit
 > Let $X$ be a Banach space, $\{\ell_n\}_{n=1}^\infty \subset X'$, $\ell_0 \in X'$, and assume $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ in $X'$. Then $\sup_n \|\ell_n\| < \infty$, and

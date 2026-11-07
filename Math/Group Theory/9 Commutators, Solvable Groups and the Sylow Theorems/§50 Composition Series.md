@@ -39,39 +39,53 @@ The course has used the analogy that simple groups are atoms and other groups ar
 ^def-50-3
 
 > [!remark] Remark: Quasi-Composition Series
-> The term is the lecturer's own and is not standard. (WS 12 says “a composition series where …”; a subnormal series is meant.) A trivial quotient $G_j/G_{j-1}$ just means $G_{j-1} = G_j$, a repeated term. Deleting the repeated terms turns a quasi-composition series into a composition series with the same simple quotients. Quasi-composition series are convenient in the proof below, where trivial quotients arise naturally.
+> The term is the lecturer's own and is not standard. (WS 12 says “a composition series where \ldots”; a subnormal series is meant.) A trivial quotient $G_j/G_{j-1}$ just means $G_{j-1} = G_j$, a repeated term, and deleting the repeated terms gives a composition series (Lemma [[§50 Composition Series#^lem-50-1|§50.1]]). Quasi-composition series are convenient in the proof below, where trivial quotients arise naturally.
 >
 > *Source: lecture 10/28*
 
 ^rem-50-1
 
+> [!theorem] Lemma §50.1: Deleting Repeated Terms of a Quasi-Composition Series
+> Let $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ be a quasi-composition series. A quotient $G_j/G_{j-1}$ is trivial if and only if $G_{j-1} = G_j$. Deleting every term equal to its predecessor gives a composition series of $G$ whose quotients are the nontrivial (that is, simple) quotients of the original series, in the same order.
+>
+> *Source: lecture 10/28*
+
+^lem-50-1
+
+> [!proof]+ Proof
+> *Idea:* removing a repeated term merges a trivial step into its neighbour without changing that neighbour's quotient.
+>
+> $G_j/G_{j-1}$ is trivial iff $xG_{j-1} = G_{j-1}$ for every $x \in G_j$, iff every $x \in G_j$ lies in $G_{j-1}$, iff $G_j = G_{j-1}$ (as $G_{j-1} \subseteq G_j$). Suppose $G_{j-1} = G_j$ with $j < N$, and delete $G_j$. The new consecutive pair $G_{j-1} \trianglelefteq G_{j+1}$ is literally the old pair $G_j \trianglelefteq G_{j+1}$, with the same quotient; the other pairs are unchanged; and the trivial quotient $G_j/G_{j-1}$ has disappeared. (If $j = N$, delete $G_{N-1}$ instead, which equals $G_N = G$, with the same effect.) Repeating this finitely many times removes all trivial quotients; each remaining quotient was simple or trivial and is not trivial, so it is simple. The ends $\{e\}$ and $G$ remain, so the result is a composition series.
+
+^pf-50-1
+
 > [!remark] Remark: Relation to Solvable Groups
-> *(Not from class.)* The chain in the definition of a solvable group (Definition [[§48 Solvable Groups#^def-48-1|§48.1]]) is a subnormal series whose quotients are abelian; a composition series is one whose quotients are simple. Since the abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ (Theorem [[§43 Simple Groups#^thm-43-1|§43.1]]), a composition series all of whose factors are cyclic of prime order shows that $G$ is solvable. Conversely, a finite solvable group has such a composition series: refine each abelian quotient $G_j/G_{j-1}$ by a composition series of it (Lemma [[§50 Composition Series#^lem-50-2|§50.2]]) and pull back, as in the proof of that lemma. Combined with the Jordan–Hölder theorem: *a finite group is solvable if and only if all of its composition factors are cyclic of prime order.* For example, $\{e\} \trianglelefteq \langle (1\,2)(3\,4) \rangle \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$, with $K$ the Klein four-group, has factors $\mathbb{Z}/2, \mathbb{Z}/2, \mathbb{Z}/3, \mathbb{Z}/2$, while $A_5$ has the single factor $A_5$.
+> *(Not from class.)* The chain in the definition of a solvable group (Definition [[§48 Solvable Groups#^def-48-1|§48.1]]) is a subnormal series whose quotients are abelian; a composition series is one whose quotients are simple. Since the abelian simple groups are exactly the $\mathbb{Z}/p\mathbb{Z}$ (Theorem [[§43 Simple Groups#^thm-43-1|§43.1]]), the two notions meet: *a finite group is solvable if and only if all of its composition factors are cyclic of prime order* (Proposition [[§52 The Jordan–Hölder Theorem#^prop-52-2|§52.2]], after the Jordan–Hölder theorem, with the examples $S_4$ and $A_5$).
 
 ^rem-50-2
 
-> [!theorem] Proposition §50.1: $\mathbb{Z}$ Has No Composition Series
+> [!theorem] Proposition §50.2: $\mathbb{Z}$ Has No Composition Series
 > Not every group has a composition series: $\mathbb{Z}$ has none.
 >
 > *Source: lecture 10/28*
 
-^prop-50-1
+^prop-50-2
 
 > [!proof]+ Proof
 > *Idea:* the factors of a composition series of an abelian group are finite, so the group would be finite.
 >
 > *(Lecture 10/28, answering a student's question.)* Suppose $\{0\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = \mathbb{Z}$ were a composition series. Every quotient $G_j/G_{j-1}$ is a quotient of a subgroup of an abelian group, hence abelian, and simple, hence $\cong \mathbb{Z}/p\mathbb{Z}$ for a prime $p$ (Theorem [[§43 Simple Groups#^thm-43-1|§43.1]]). Then $|G_j| = |G_{j-1}| \cdot |G_j/G_{j-1}|$ (Lagrange, Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]) shows by induction that every $G_j$ is finite, including $G_N = \mathbb{Z}$, a contradiction.
 
-^pf-50-1
+^pf-50-2
 
 *Uses:* [[§43 Simple Groups#^thm-43-1|§43.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
 
-> [!theorem] Lemma §50.2: Finite Groups Have Composition Series
+> [!theorem] Lemma §50.3: Finite Groups Have Composition Series
 > Every finite group $G$ has a composition series.
 >
 > *Source: lecture 10/28*
 
-^lem-50-2
+^lem-50-3
 
 > [!proof]+ Proof
 > *Idea:* split $G$ at a proper nontrivial normal subgroup $N$ and stitch a series of $N$ to the preimage of a series of $G/N$.
@@ -94,17 +108,17 @@ The course has used the analogy that simple groups are atoms and other groups ar
 > \pi^{-1}(Q_j)/\pi^{-1}(Q_{j-1}) \cong Q_j/Q_{j-1},
 > $$
 >
-> which is simple. (The board cites the Third Isomorphism Theorem, Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|§42.5]], or the correspondence theorem, Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]], for this isomorphism; the argument above gives it directly.) Hence the stitched chain is a composition series of $G$.
+> which is simple. (The board cites the Third Isomorphism Theorem, Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]], or the correspondence theorem, Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]], for this isomorphism; the argument above gives it directly.) Hence the stitched chain is a composition series of $G$.
 
-^pf-50-2
+^pf-50-3
 
-*Uses:* [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|§42.5]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]]
+*Uses:* [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]]
 
 ![[m493-56-3.svg]]
 
-*(Not from lecture; figure added, after the lecture's image.)* The proof of Lemma [[§50 Composition Series#^lem-50-2|§50.2]]: the normal subgroup $N$ is the island in the stream from $\{e\}$ to $G$. A composition series of $N$ reaches the island, and the preimages $\pi^{-1}(Q_j)$ of a composition series of $G/N$ carry the bridge on to $G$; each new quotient is $\cong Q_j/Q_{j-1}$.
+*(Not from lecture; figure added, after the lecture's image.)* The proof of Lemma [[§50 Composition Series#^lem-50-3|§50.3]]: the normal subgroup $N$ is the island in the stream from $\{e\}$ to $G$. A composition series of $N$ reaches the island, and the preimages $\pi^{-1}(Q_j)$ of a composition series of $G/N$ carry the bridge on to $G$; each new quotient is $\cong Q_j/Q_{j-1}$.
 
-> [!theorem] Lemma §50.3: Two Normal Subgroups with Simple Quotients
+> [!theorem] Lemma §50.4: Two Normal Subgroups with Simple Quotients
 > Let $G$ be a finite group and $N_1 \neq N_2$ normal subgroups such that $G/N_1$ and $G/N_2$ are both simple. Then:
 >
 > 1. $N_1 N_2 = G$;
@@ -112,7 +126,7 @@ The course has used the analogy that simple groups are atoms and other groups ar
 >
 > *Source: PS 7.4*
 
-^lem-50-3
+^lem-50-4
 
 > [!proof]+ Proof
 > *Idea:* $N_1N_2/N_1$ is a normal subgroup of the simple group $G/N_1$, and likewise for $N_2$; they cannot both be trivial since $N_1 \neq N_2$, so $N_1N_2 = G$, and the Second Isomorphism Theorem gives the quotients.
@@ -179,9 +193,9 @@ The course has used the analogy that simple groups are atoms and other groups ar
 >
 > using $N_2N_1 = N_1N_2 = G$ from (1). Since $N_2 \cap N_1 = N_1 \cap N_2$, this is $G/N_1 \cong N_2/(N_1 \cap N_2)$.
 
-^pf-50-3
+^pf-50-4
 
 > [!remark] Remark: The Quotient by $N_1 \cap N_2$
-> In this situation one can further show that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$. *(Proof not from class.)* In $\bar G = G/(N_1 \cap N_2)$, the images $\bar N_i = N_i/(N_1 \cap N_2)$ are normal, they intersect trivially, since $\bar N_1 \cap \bar N_2 = (N_1 \cap N_2)/(N_1 \cap N_2)$, and $\bar N_1 \bar N_2 = \bar G$ because $N_1 N_2 = G$. So $\bar G \cong \bar N_1 \times \bar N_2$ by Internal Direct Products Are Direct Products (Theorem [[§57 Internal and External Direct Products#^thm-57-1|§57.1]], in Chapter 10).
+> In this situation one can further show that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$. This needs Internal Direct Products Are Direct Products (Theorem [[§57 Internal and External Direct Products#^thm-57-1|§57.1]], in Chapter 10), and is proved there as Corollary [[§57 Internal and External Direct Products#^cor-57-2|§57.2]].
 
 ^rem-50-3

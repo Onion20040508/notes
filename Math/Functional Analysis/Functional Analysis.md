@@ -61,14 +61,14 @@ graph TD
   C6 -.->|on credit| C5
   X1 -.->|2| C6
   X2 -.->|13| C4
-  X2 -.->|13| C5
+  X2 -.->|11| C5
   X2 -.->|13| C6
   X2 -.->|3| C9
   X5 -.->|2| C6
   X4 -.->|2| C2
-  X4 -.->|10| C3
+  X4 -.->|11| C3
   X4 -.->|11| C4
-  X4 -.->|6| C5
+  X4 -.->|4| C5
   X4 -.->|8| C6
 ```
 
@@ -86,7 +86,7 @@ graph TD
 ## Central results
 - [[Every Subspace Has a Complement]] (§2.3)
 - [[X ≅ X∕Y ⊕ Y]] (§2.6)
-- [[Hahn–Banach Theorem]] (§5.2)
+- [[Hahn–Banach Theorem]] (§5.3)
 - [[One-Step Extension Lemma]] (§6.1)
 - [[Zorn's Lemma]] (§6.2)
 - [[The Gauge Is Positive Homogeneous and Subadditive]] (§7.6)
@@ -96,43 +96,43 @@ graph TD
 - [[Norms Are Gauges]] (§11.1)
 - [[Continuous Functions with the Sup Norm Form a Banach Space]] (§12.1)
 - [[Completion of a Normed Space]] (§13.1)
-- [[All Norms on a Finite-Dimensional Space Are Equivalent]] (§14.3)
-- [[Quotient Norm]] (§14.8)
+- [[All Norms on a Finite-Dimensional Space Are Equivalent]] (§14.4)
+- [[Quotient Norm]] (§14.9)
 - [[ℓᵖ Is a Banach Space]] (§18.5)
 - [[Riesz's Lemma]] (§20.2)
 - [[The Unit Ball of an Infinite-Dimensional Space Is Not Compact]] (§20.5)
 - [[Jordan–von Neumann Theorem]] (§24.2)
 - [[Closest Point in a Closed Convex Set]] (§25.2)
 - [[Orthogonal Decomposition Theorem]] (§25.4)
-- [[Riesz Representation Theorem (Hilbert spaces)]] (§26.4)
+- [[Riesz Representation Theorem (Hilbert spaces)]] (§26.5)
 - [[Bessel's Inequality]] (§27.5)
 - [[Characterizations of an Orthonormal Basis]] (§27.8)
 - [[Existence of Orthonormal Bases]] (§28.1)
 - [[Separable Hilbert Spaces Have Countable Orthonormal Bases]] (§28.3)
 - [[Bounded Linear Maps Are Continuous]] (§30.2)
-- [[Bounded Linear Maps into a Banach Space Form a Banach Space]] (§30.5)
+- [[Bounded Linear Maps into a Banach Space Form a Banach Space]] (§30.6)
 - [[Bounded Sesquilinear Forms Are Bounded Operators]] (§32.1)
 - [[Lax–Milgram Theorem]] (§32.2)
-- [[Poincaré Inequality]] (§33.6)
-- [[Weak Solutions of the Dirichlet Problem]] (§34.2)
+- [[Poincaré Inequality]] (§33.8)
+- [[Weak Solutions of the Dirichlet Problem]] (§34.3)
 - [[Radon–Nikodym Theorem]] (§35.1)
 - [[Hahn–Banach Theorem for Normed Spaces]] (§36.1)
 - [[The Norm as a Maximum over the Dual]] (§36.2)
 - [[The Dual of ℓᵖ]] (§36.4)
-- [[Distance to a Subspace via Functionals]] (§36.6)
+- [[Distance to a Subspace via Functionals]] (§36.8)
 - [[Spanning Criterion]] (§37.1)
 - [[Separable Dual Implies Separable Space]] (§37.3)
 - [[Closed Subspaces of Reflexive Spaces are Reflexive]] (§37.8)
 - [[Banach's Inverse Mapping Theorem]] (§39.2)
-- [[Baire Category Theorem]] (§40.2)
+- [[Baire Category Theorem]] (§40.4)
 - [[Open Mapping Theorem]] (§41.2)
 - [[Closed Graph Theorem]] (§41.4)
-- [[Uniform Boundedness Principle]] (§42.3)
-- [[Banach–Steinhaus Theorem]] (§42.4)
-- [[Lax Equivalence Theorem]] (§42.5)
+- [[Uniform Boundedness Principle]] (§42.5)
+- [[Banach–Steinhaus Theorem]] (§42.6)
+- [[Lax Equivalence Theorem]] (§42.8)
 - [[Criterion for Weak Convergence]] (§43.3)
 - [[Hyperplane Separation in a Normed Space]] (§43.5)
-- [[Mazur's Theorem]] (§43.6)
+- [[Mazur's Theorem]] (§43.7)
 
 ## Summaries
 - [[Functional Analysis Lax Concordance]]: notation, where the course's route differs from Lax's, the chapter map, and every Lax result cited in these notes with its counterpart here.
@@ -149,27 +149,27 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§4 Span and Linear Independence#^ladr-2-22|Theorem 2.22: Length of linearly independent list ≤ length of spanning list]] (1)
 
 **[[Measure Theory]]**
-- [[Countable Union of Countable Sets is Countable]] (5)
+- [[Countable Union of Countable Sets is Countable]] (4)
 - [[Dominated Convergence Theorem]] (3)
 - [[§35 Lᵖ as a Banach Space#^thm-35-12|Theorem §35.12: Density in Lᵖ]] (3)
 - [[Hölder's Inequality]] (2)
 - [[Minkowski's Inequality]] (2)
 - [[Monotone Convergence Theorem (Lebesgue)]] (2)
 - [[Riesz–Fischer Theorem]] (2)
-- [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2: ℚ is countable]] (2)
+- [[§13 Approximation and Continuity of Measure#^prop-13-4|Proposition §13.4: Continuity of Measure from Below]] (2)
 
 **[[Topology]]**
 - [[§19 Limit Point Compactness#^thm-19-4|Theorem §19.4: Equivalence for Metrizable Spaces]] (1)
 - [[§18 Compact Spaces#^thm-18-3|Theorem §18.3: Continuous Image of Compact is Compact]] (1)
 
 **[[Single Variable Analysis]]**
-- [[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3: Cauchy Implies Convergent]] (7)
+- [[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3: Cauchy Implies Convergent]] (6)
+- [[Bolzano–Weierstrass Theorem]] (3)
 - [[§33 Properties of the Riemann Integral#^thm-33-3|Theorem §33.3: Monotonicity of the Integral]] (3)
 - [[§34 Fundamental Theorem of Calculus#^thm-34-3|Theorem §34.3: Integration by Parts]] (3)
 - [[§34 Fundamental Theorem of Calculus#^thm-34-1|Theorem §34.1: Fundamental Theorem of Calculus I]] (3)
 - [[Fundamental Theorem of Calculus]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-4|Theorem §33.4: Absolute Values]] (2)
-- [[Bolzano–Weierstrass Theorem]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-5|Theorem §33.5: Additivity over Subintervals]] (2)
 
 **[[Multivariable Analysis]]**

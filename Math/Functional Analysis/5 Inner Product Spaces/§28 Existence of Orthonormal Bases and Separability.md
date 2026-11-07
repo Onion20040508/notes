@@ -195,8 +195,18 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 
 ^def-28-2
 
+> [!theorem] Lemma §28.4: Inner-Product-Preserving Maps are Isometric and One-to-One
+> Let $H_1$, $H_2$ be Hilbert spaces over the same field and $T : H_1 \to H_2$ a linear map with $(Tx, Ty)_2 = (x, y)_1$ for all $x, y \in H_1$. Then $\|Tx - Ty\|_2 = \|x - y\|_1$ for all $x, y \in H_1$, i.e. $T$ is an *isometry*, and $T$ is one-to-one.
+
+^lem-28-4
+
+> [!proof]+ Proof
+> By linearity $Tx - Ty = T(x - y)$, so $\|Tx - Ty\|_2^2 = (T(x-y), T(x-y))_2 = (x - y, x - y)_1 = \|x - y\|_1^2$. If $Tx = 0$, then $\|x\|_1 = \|Tx\|_2 = 0$ (the case $y = 0$), so $x = 0$; a linear map with trivial kernel is one-to-one.
+
+^pf-28-4
+
 > [!remark] Remark: Isomorphic or Isometric?
-> An isomorphism in this sense also preserves distance: $\|Tx - Ty\|_2^2 = (T(x-y), T(x-y))_2 = \|x - y\|_1^2$, so $T$ is an *isometry*. Preserving the inner product already forces one-to-one ($Tx = 0$ gives $\|x\|_1 = \|Tx\|_2 = 0$). What it does not force is *onto*, which is why the definition requires a bijection; the next example shows the difference. (The example is not from lecture.)
+> By Lemma [[§28 Existence of Orthonormal Bases and Separability#^lem-28-4|§28.4]], an isomorphism in this sense also preserves distance, so $T$ is an *isometry*, and preserving the inner product already forces one-to-one. What it does not force is *onto*, which is why the definition requires a bijection; the next example shows the difference. (The example is not from lecture.)
 
 ^rem-28-3
 
@@ -246,7 +256,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > - Finite-dimensional analogue: vector spaces of the same dimension are isomorphic, [[Dimension shows whether vector spaces are isomorphic|LADR 3.70]], via coordinates [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]].
 
 > [!remark] Remark
-> The isomorphism is “take coordinates”: $x \mapsto ((x, e_j))_j$. Every result about a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] Hilbert space can therefore be checked on $\ell^2$, and the [[§27 Orthonormal Sets and Bases#^cor-27-12|Cor. §27.12]] that $L^2[0, 2\pi]$ with the [[§27 Orthonormal Sets and Bases#^thm-27-11|Fourier basis]] is “the same” as $\ell^2(\mathbb{Z})$ is the special case $e_n = e^{inx}/\sqrt{2\pi}$. The isomorphism depends on the choice of basis, as in finite dimensions.
+> The isomorphism is “take coordinates”: $x \mapsto ((x, e_j))_j$. Every result about a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] Hilbert space can therefore be checked on $\ell^2$, and the statement of Corollary [[§27 Orthonormal Sets and Bases#^cor-27-12|§27.12]] that $L^2[0, 2\pi]$ with the [[§27 Orthonormal Sets and Bases#^thm-27-11|Fourier basis]] is “the same” as $\ell^2(\mathbb{Z})$ is the special case $e_n = e^{inx}/\sqrt{2\pi}$. The isomorphism depends on the choice of basis, as in finite dimensions.
 
 ^rem-28-4
 

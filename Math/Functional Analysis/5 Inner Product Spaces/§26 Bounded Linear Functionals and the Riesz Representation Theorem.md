@@ -24,13 +24,42 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique 
 
 ^def-26-1
 
-> [!remark]- Connections
-> - The general notion for maps between normed spaces: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]; the dual space of bounded functionals: [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]].
+> [!example] Example §26.1: Linear Functionals on $\mathbb{R}^n$ are Bounded
+> Give $\mathbb{R}^n$ the Euclidean norm $\|x\| = (x \cdot x)^{1/2}$. By Example [[§3 Linear Maps, Convexity, and Linear Functionals#^ex-3-2|§3.2]] every linear functional on $\mathbb{R}^n$ is $\ell(x) = a \cdot x$ for some $a \in \mathbb{R}^n$. We show $\ell$ is bounded. By Cauchy–Schwarz (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], for the dot product),
+>
+> $$
+> |\ell(x)| = |a \cdot x| \le \|a\|\,\|x\| \qquad \text{for all } x \in \mathbb{R}^n ,
+> $$
+>
+> so $c = \|a\|$ works in Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|§26.1]] when $a \neq 0$ (and any $c > 0$ works when $a = 0$).
+
+^ex-26-1
+
+> [!theorem] Proposition §26.1: Linear Functionals on Finite-Dimensional Spaces are Bounded
+> Every linear functional on a finite-dimensional normed linear space is bounded.
+
+^prop-26-1
+
+> [!proof]+ Proof
+> Let $X$ be finite-dimensional with norm $\|\cdot\|$ and $\ell$ a linear functional on $X$. If $X = \{0\}$, any $c > 0$ works. Otherwise let $e_1, \ldots, e_n$ be a basis, and for $x = \sum_i a_i e_i$ put $\|x\|_1 = \sum_i |a_i|$. By linearity and the triangle inequality in $\mathbb{F}$,
+>
+> $$
+> |\ell(x)| = \Bigl| \sum_i a_i\, \ell(e_i) \Bigr| \le \sum_i |a_i|\,|\ell(e_i)| \le \Bigl( \max_i |\ell(e_i)| \Bigr) \|x\|_1 .
+> $$
+>
+> By Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]], $\|\cdot\|_1$ is equivalent to the given norm, so $\|x\|_1 \le C\|x\|$ for some $C$ and all $x$. Hence $|\ell(x)| \le c\,\|x\|$ with $c = \max\bigl\{ C \max_i |\ell(e_i)|,\, 1 \bigr\} > 0$.
+
+^pf-26-1
+
+*Uses:* [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]]
 
 > [!remark] Remark: Why Boundedness
-> On $\mathbb{R}^n$ every linear functional is bounded: $|a \cdot x| \le \|a\|\,\|x\|$ by [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]], so $c = \|a\|$ works. More generally every linear functional on a finite-dimensional normed space is bounded (with a basis $e_1, \ldots, e_n$ and $x = \sum_i a_i e_i$, $|\ell(x)| \le \sum_i |a_i|\,|\ell(e_i)| \le \bigl(\max_i |\ell(e_i)|\bigr)\|x\|_1$, and $\|\cdot\|_1$ is equivalent to the given norm by Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]]). In infinite dimensions this fails — the [[§11 Normed Linear Spaces#^rem-11-3|remark]] after Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]] and the [[§24 The Parallelogram Law and Jordan–von Neumann#^rem-24-1|remark]] after Theorem [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2|§24.2]] both mention functionals built from a Hamel basis that are unbounded on every ball — so boundedness is a genuine hypothesis, and it is the one that makes the finite-dimensional picture survive. “Bounded” does not mean bounded as a function: a nonzero linear functional is never bounded on all of $X$, since $\ell(nx) = n\ell(x)$; it means bounded on the unit ball.
+> In finite dimensions every linear functional is bounded (Example [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-1|§26.1]], Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]]). In infinite dimensions this fails — the [[§11 Normed Linear Spaces#^rem-11-3|remark]] after Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]] and the [[§24 The Parallelogram Law and Jordan–von Neumann#^rem-24-1|remark]] after Theorem [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2|§24.2]] (with Example [[§24 The Parallelogram Law and Jordan–von Neumann#^ex-24-1|§24.1]]) both mention functionals built from a Hamel basis that are unbounded on every ball — so boundedness is a genuine hypothesis, and it is the one that makes the finite-dimensional picture survive. “Bounded” does not mean bounded as a function: a nonzero linear functional is never bounded on all of $X$, since $\ell(nx) = n\ell(x)$; it means bounded on the unit ball.
 
 ^rem-26-1
+
+> [!remark]- Connections
+> - The general notion for maps between normed spaces: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]; the dual space of bounded functionals: [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]].
 
 > [!theorem] Proposition §26.2: Bounded Means Continuous
 > For a linear functional $\ell$ on a normed linear space $X$, the following are equivalent:
@@ -173,9 +202,20 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal vector to $N$, a multiple of $x_0$. The level sets $\{\ell = c\}$ are the translates of $N$, and $\ell(x)$ records only which translate $x$ lies on, i.e. the $N^\perp$-component $kx_0$ of $x$.
 
 > [!remark] Remark: Reading the Statement
-> Part (1) is the easy direction and holds in any inner product space. Part (2) is the content: on a Hilbert space there are *no other* bounded linear functionals than the ones given by inner products, exactly as on $\mathbb{R}^n$. For example, on $L^2$ every bounded linear functional is $f \mapsto \int f\,\bar{g}$ for a unique $g \in L^2$. The vector is on the *second* slot because the functional must be linear in $x$, and the inner product is linear in its first argument; with the physicists' convention it would be $(a, x)$.
+> Part (1) is the easy direction and holds in any inner product space. Part (2) is the content: on a Hilbert space there are *no other* bounded linear functionals than the ones given by inner products, exactly as on $\mathbb{R}^n$ (Example [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-2|§26.2]] spells this out for $L^2$). The vector is on the *second* slot because the functional must be linear in $x$, and the inner product is linear in its first argument; with the physicists' convention it would be $(a, x)$.
 
 ^rem-26-3
+
+> [!example] Example §26.2: Bounded Linear Functionals on $L^2$
+> Let $\Omega \subset \mathbb{R}^n$ be a domain. Every bounded linear functional $\ell$ on $L^2(\Omega)$ is of the form
+>
+> $$
+> \ell(f) = \int_\Omega f(x)\, \overline{g(x)}\, dx \qquad (f \in L^2(\Omega))
+> $$
+>
+> for a unique $g \in L^2(\Omega)$; conversely every such formula defines a bounded linear functional. Indeed $L^2(\Omega)$ with $(f, g) = \int_\Omega f \bar g$ (Example [[§22 Definition and Examples#^ex-22-3|§22.3]]) is a Hilbert space (Example [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-1|§23.1]]), so Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]](2) gives a unique $g$ with $\ell(f) = (f, g) = \int_\Omega f \bar g$ for all $f$, and Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]](1) gives the converse.
+
+^ex-26-2
 
 > [!remark] Remark
 > On method: when proving a big theorem, the simple examples from linear algebra very often give the answer, so start with simple examples and go from there. Here the finite-dimensional picture dictated both the object to study ($\ker \ell$) and the candidate ($a$ normal to it); the analysis consisted of making the orthogonal decomposition available, which is where completeness of $H$ and boundedness of $\ell$ enter.
@@ -222,6 +262,23 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 
 *Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Def. §23.1]]
 
+> [!theorem] Corollary §26.7: Variational Form of the Riesz Representation Theorem
+> *(Not from lecture.)* Let $H$ be a Hilbert space over $\mathbb{R}$ and $\ell \in H'$, with Riesz representer $u^{\ast}$: $\ell(v) = (v, u^{\ast})$ for all $v \in H$ (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]). Then $u^{\ast}$ is the unique minimizer over $H$ of $f(v) = \frac12\|v\|^2 - \ell(v)$.
+
+^cor-26-7
+
+> [!proof]+ Proof
+> $K = H$ is nonempty, closed and convex, so Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-6|§26.6]] applies, with the $u^{\ast}$ of part (a) the Riesz representer (as in its proof). By part (b), $f$ has a unique minimizer over $H$, namely the point of $H$ closest to $u^{\ast}$. Since $u^{\ast} \in H$ and $\|u^{\ast} - u^{\ast}\| = 0$, that point is $u^{\ast}$.
+
+^pf-26-7
+
+*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-6|§26.6]]
+
+> [!remark] Remark
+> The proof of Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-6|§26.6]] is “complete the square”: adding and subtracting $\frac12\|u^{\ast}\|^2$ turns the minimization of $f$ into the minimization of a distance, which is the projection theorem. For $K = H$ the minimizer is $u^{\ast}$ itself (Corollary [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^cor-26-7|§26.7]]), so minimizing $\frac12\|v\|^2 - \ell(v)$ over $H$ produces the Riesz representer of $\ell$ — the variational form of the Riesz representation theorem, and the prototype of Dirichlet's principle. For a proper $K$ the minimizer is the projection of $u^{\ast}$ onto $K$, the starting point of variational inequalities (obstacle problems).
+
+^rem-26-6
+
 > [!remark]- Connections
 > - Finite-dimensional counterpart, minimizing the distance to a subspace: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
 > - The pattern as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t17|Technique 17]].
@@ -229,7 +286,4 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 ![[m556-19-2.svg]]
 *Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-6|§26.6]] in one picture: the closed convex set $K$ (blue), the Riesz representer $u^\ast$ of $\ell$ (grey arrow from $0$), and the level sets of $f(v) = \tfrac12\|u^\ast - v\|^2 - \tfrac12\|u^\ast\|^2$, which are circles centred at $u^\ast$ (dashed). The small circles miss $K$ and the large one cuts it; the red circle $\{f = f(u_0)\}$ is the first to touch $K$, at the minimizer $u_0$ — the point of $K$ closest to $u^\ast$ ([[§25 Projection and Orthogonal Decomposition#^thm-25-2|projection theorem]]) — and the red segment from $u^\ast$ to $u_0$ is perpendicular to the supporting line of $K$ at $u_0$ (grey). For $K = H$ the minimizer would be $u^\ast$ itself ([[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^rem-26-6|remark]]). (Drawn for these notes in the vault; not in the course tex.)*
 
-> [!remark] Remark
 > The proof is “complete the square”: adding and subtracting $\frac12\|u^*\|^2$ turns the minimization of $f$ into the minimization of a distance, which is the [[§25 Projection and Orthogonal Decomposition#^thm-25-2|projection theorem]]. For $K = H$ the minimizer is $u^*$ itself, so minimizing $\frac12\|v\|^2 - \ell(v)$ over $H$ produces the Riesz representer of $\ell$ — the variational form of the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]], and the prototype of Dirichlet's principle. For a proper $K$ the minimizer is the projection of $u^*$ onto $K$, the starting point of variational inequalities (obstacle problems).
-
-^rem-26-6

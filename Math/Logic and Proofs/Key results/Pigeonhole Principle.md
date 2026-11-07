@@ -20,4 +20,4 @@ tags: [logic-and-proofs, hub]
 - [[§21 Congruence Classes and the Arithmetic of Remainders#^thm-21-6|Theorem §21.6: Solving [a][x] = [b] in ℤ_m]]
 
 ## Connections
-- The pigeonhole principle in group theory: every element of a finite group has finite order, [[§4 Subgroups#^prop-4-8|493 Prop. §4.8]] (and its remark on where finiteness enters).
+- The pigeonhole principle in group theory: every element of a finite group has finite order, [[§4 Subgroups#^prop-4-10|493 Prop. §4.10]] (and its remark on where finiteness enters).

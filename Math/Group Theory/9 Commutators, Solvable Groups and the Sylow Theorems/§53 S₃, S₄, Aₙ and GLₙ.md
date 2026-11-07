@@ -17,7 +17,7 @@ $S_3$ shows why a character needs an abelian target: the identity map $S_3 \to S
 
 $S_3$ is solvable without being abelian: the chain $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ has the abelian quotients $\mathbb{Z}/3\mathbb{Z}$ and $\{\pm 1\}$, and the derived series $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$ reaches $\{e\}$ in two steps.
 
-![[§48 Solvable Groups#^prop-48-1]]
+![[§48 Solvable Groups#^prop-48-2]]
 
 ![[§49 The Derived Series#^ex-49-1]]
 
@@ -31,9 +31,9 @@ The same chain is the only composition series of $S_3$ ($A_3$ is its only proper
 
 $S_4$ is solvable through $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$, with quotients $K$, $\mathbb{Z}/3\mathbb{Z}$ and $\{\pm 1\}$, and this chain is its derived series: $D(S_4) = A_4$, $D(A_4) = K$, $D(K) = \{e\}$. Here $K$ is normal in all of $S_4$, more than the definition asks ([[§48 Solvable Groups#^rem-48-1|Remark: Normal in the Next Term Only]]).
 
-[[§48 Solvable Groups#^prop-48-1|Proposition §48.1]] (WS 9.1) gives the chain; [[§49 The Derived Series#^ex-49-1|Example §49.1]](2) computes the derived series, finding $(1\,2)(3\,4)$ as a commutator of two $3$-cycles of $A_4$ (both in the $S_3$ part).
+[[§48 Solvable Groups#^prop-48-2|Proposition §48.2]] (WS 9.1) gives the chain; [[§49 The Derived Series#^ex-49-1|Example §49.1]](2) computes the derived series, finding $(1\,2)(3\,4)$ as a commutator of two $3$-cycles of $A_4$ (both in the $S_3$ part).
 
-Refining $\{e\} \trianglelefteq K$ by $\langle (1\,2)(3\,4) \rangle$ gives a composition series of $S_4$, with factors $\mathbb{Z}/2, \mathbb{Z}/2, \mathbb{Z}/3, \mathbb{Z}/2$ (the remark *Relation to Solvable Groups* in [[§50 Composition Series|§50]]); by the Jordan–Hölder theorem (Theorem [[§52 The Jordan–Hölder Theorem#^thm-52-1|§52.1]]) every composition series of $S_4$ has these factors.
+Refining $\{e\} \trianglelefteq K$ by $\langle (1\,2)(3\,4) \rangle$ gives a composition series of $S_4$, with factors $\mathbb{Z}/2, \mathbb{Z}/2, \mathbb{Z}/3, \mathbb{Z}/2$ (Example [[§52 The Jordan–Hölder Theorem#^ex-52-3|§52.3]]); by the Jordan–Hölder theorem (Theorem [[§52 The Jordan–Hölder Theorem#^thm-52-1|§52.1]]) every composition series of $S_4$ has these factors.
 
 $A_4$ also appears in the $A_n$ part below, as the case $n = 4$ of the commutator computations.
 
@@ -47,17 +47,17 @@ $A_n$ is the commutator subgroup of $S_n$: every $3$-cycle is a commutator ([[§
 
 ![[§47 Commutators#^ex-47-1]]
 
-![[§47 Commutators#^lem-47-9]]
+![[§47 Commutators#^lem-47-10]]
 
-![[§47 Commutators#^thm-47-10]]
+![[§47 Commutators#^thm-47-11]]
 
 ![[§47 Commutators#^rem-47-5]]
 
-For $n \geq 5$, $A_n$ is not solvable, and hence neither is $S_n$: a simple non-abelian group has no chain with abelian quotients, and the derived series of $S_n$ stalls at $A_n = D(A_n)$. So $S_n$ is solvable exactly for $n \leq 4$. For $n \geq 5$, $\{e\} \trianglelefteq A_n \trianglelefteq S_n$ is a composition series, with factors $A_n$ and $\mathbb{Z}/2\mathbb{Z}$; the factor $A_n$ is not cyclic of prime order, as non-solvability requires (the remark *Relation to Solvable Groups* in [[§50 Composition Series|§50]]).
+For $n \geq 5$, $A_n$ is not solvable, and hence neither is $S_n$: a simple non-abelian group has no chain with abelian quotients, and the derived series of $S_n$ stalls at $A_n = D(A_n)$. So $S_n$ is solvable exactly for $n \leq 4$. For $n \geq 5$, $\{e\} \trianglelefteq A_n \trianglelefteq S_n$ is a composition series, with factors $A_n$ and $\mathbb{Z}/2\mathbb{Z}$; the factor $A_n$ is not cyclic of prime order, as non-solvability requires (Proposition [[§52 The Jordan–Hölder Theorem#^prop-52-2|§52.2]]).
 
 ![[§49 The Derived Series#^cor-49-2]]
 
-[[§49 The Derived Series#^ex-49-1|Example §49.1]](3) (in the $S_3$ part) shows the derived series stalling; the corollary proves non-solvability from the [[§43 Simple Groups#^thm-43-9|simplicity]] of $A_n$ and [[§48 Solvable Groups#^prop-48-2|Proposition §48.2]].
+[[§49 The Derived Series#^ex-49-1|Example §49.1]](3) (in the $S_3$ part) shows the derived series stalling; the corollary proves non-solvability from the [[§43 Simple Groups#^thm-43-9|simplicity]] of $A_n$ and [[§48 Solvable Groups#^prop-48-3|Proposition §48.3]].
 
 *$A_n$ elsewhere:* ← [[§45 S₃, S₄, A₄ and A₅#The Alternating Groups Aₙ|Chapter 8]] · no later appearance yet · [[The alternating group A₅|all appearances]]
 
@@ -69,6 +69,6 @@ The determinant is the model character of $GL_n(k)$, and a character is the same
 
 ![[§46 Characters#^rem-46-4]]
 
-![[§47 Commutators#^ex-47-2]]
+![[§47 Commutators#^ex-47-5]]
 
 *$GL_n$ elsewhere:* ← [[§45 S₃, S₄, A₄ and A₅#GLₙ, SLₙ and O(n)|Chapter 8]] · [[§54 p-Groups and Sylow Subgroups#^prop-54-5|the Sylow part of Chapter 9]] → (where $GL_n(\mathbb{F}_p)$ appears once) · [[Matrix groups GLₙ, SLₙ and O(n)|all appearances]]

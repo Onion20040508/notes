@@ -23,7 +23,7 @@ tags: [group-theory, math493]
 ^def-27-1
 
 > [!remark]- Connections
-> - Orbit size is the index of the stabilizer: [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer]]; cosets are orbits: [[§28 Left and Right Cosets#^prop-28-1|Cosets Are Orbits]].
+> - Orbit size is the index of the stabilizer: [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–Stabilizer]]; cosets are orbits: [[§28 Left and Right Cosets#^prop-28-2|Cosets Are Orbits]].
 > - With topologies: orbits as in [[§13 Group Actions and Orbit Spaces#^def-13-3|591 Def. §13.3]].
 
 > [!definition] Definition §27.2: Orbit Space
@@ -86,7 +86,7 @@ tags: [group-theory, math493]
 > - The orbit space is the [[§22 Partitions and Equivalence Relations#^def-22-6|quotient set]] (250 Def. §22.6) of this relation; with a topology it is a quotient space in MATH 590: [[§13 Quotient Topology#^def-13-3|Quotient Space]] (590 Def. §13.3).
 > - Same relation in 591, [[§13 Group Actions and Orbit Spaces#^def-13-4|591 Def. §13.4]] and [[§13 Group Actions and Orbit Spaces#^prop-13-1|591 Prop. §13.1]]; for a continuous action it is an open equivalence relation, [[§13 Group Actions and Orbit Spaces#^lem-13-3|591 Lemma §13.3]].
 
-The left cosets of $H \leq G$ are the special case of $H$ acting on $G$ by right multiplication, discussed [[§28 Left and Right Cosets#^prop-28-1|below]].
+The left cosets of $H \leq G$ are the special case of $H$ acting on $G$ by right multiplication, discussed [[§28 Left and Right Cosets#^prop-28-2|below]].
 
 > [!definition] Definition §27.4: Orbit Space Notation
 > For a left action of $G$ on $X$, the set of orbits is written

@@ -27,8 +27,8 @@ tags: [measure-theory, hub]
 ## Used in (Functional Analysis)
 - [[§27 Orthonormal Sets and Bases#^prop-27-4|Proposition §27.4: Only Countably Many Coefficients are Nonzero]]
 - [[§28 Existence of Orthonormal Bases and Separability#^thm-28-3|Theorem §28.3: Separable Hilbert Spaces and Countable Bases]]
+- [[§29 Sequence and Function Spaces#^rem-29-1|Remark]]
 - [[§29 Sequence and Function Spaces#^prop-29-1|Proposition §29.1: ℓ^p is Separable for 1 ≤ p < ∞]]
-- [[§29 Sequence and Function Spaces#^prop-29-2|Proposition §29.2: c_0 is a Separable Banach Space]]
 - [[§29 Sequence and Function Spaces#^prop-29-5|Proposition §29.5: Lᵖ(E) is Separable for 1 ≤ p < ∞]]
 
 ## Connections

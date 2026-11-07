@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 42.5", "consistency plus stability equals convergence", "Lax §34.3, Thm 8"]
+aliases: ["MATH 556 42.8", "consistency plus stability equals convergence", "Lax §34.3, Thm 8"]
 tags: [functional-analysis, hub]
 ---
 ![[§42 Uniform Boundedness and Approximation#^thm-42-8]]

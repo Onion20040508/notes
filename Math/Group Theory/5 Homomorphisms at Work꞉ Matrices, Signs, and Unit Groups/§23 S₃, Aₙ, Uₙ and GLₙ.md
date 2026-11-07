@@ -13,9 +13,9 @@ tags: [group-theory, math493]
 
 $S_3$ is the first group seen acting on something other than $\{1, 2, 3\}$: on polynomials in three variables and, through permutation matrices, on $k^3$.
 
-![[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-1]]
+![[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-3]]
 
-![[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-2]]
+![[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-4]]
 
 *$S_3$ elsewhere:* ← [[§19 S₃, ℤ∕nℤ and Uₙ#The Symmetric Group S₃|Chapter 4]] · [[§32 Linear Groups, the Cube, S₃ and A₄#The Symmetric Group S₃|Chapter 6]] → · [[The symmetric group S₃|all appearances]]
 

@@ -191,6 +191,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §10.1, Thms 4$'$ and 5 | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-4\|§43.4]] | The Norm of a Weak Limit |
 | §10.1, Thm 6 (for a closed convex $K$ containing the $x_n$; proved with support functions, §8.4 Thm 17) | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-7\|§43.7]] | Mazur's Theorem |
 | §10.3, definition (there $X$ is a Banach space) | Definition [[§43 Weak and Weak-Star Convergence#^def-43-2\|§43.2]] | Weak-$\ast$ Convergence |
+| §10.3, Remark 1 (part (2)) | Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-8\|§43.8]] | Weak Implies Weak-$\ast$ |
 | §10.3, Thm 11 (bounded) and Exercise 6 (the norm bound) | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-10\|§43.10]] | The Norm of a Weak-$\ast$ Limit |
 | §15.1, definition of continuous map | Definition [[§30 Boundedness and Continuity#^def-30-1\|§30.1]] | Continuous Linear Map |
 | §15.1, (2) and ($2'$) | Definition [[§30 Boundedness and Continuity#^def-30-2\|§30.2]] | Bounded Linear Map |
@@ -200,6 +201,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §15.1, Thm 1 | Proposition [[§30 Boundedness and Continuity#^prop-30-2\|§30.2]] | Continuous if and only if Bounded |
 | §15.1, Thms 2–3 | Theorem [[§30 Boundedness and Continuity#^thm-30-6\|§30.6]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |
 | §15.2, Thm 6 (the direction $\Leftarrow$); §15.3, Thm 7 and Cor 7$'$ (the direction $\Rightarrow$) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6\|§42.6]] | Banach–Steinhaus |
+| §15.2, Thm 6 | Proposition [[§42 Uniform Boundedness and Approximation#^prop-42-7\|§42.7]] | Banach–Steinhaus Without a Given Limit |
 | §15.5, proof of Thm 9 (“Baire category principle”), p. 169 | Theorem [[§40 The Baire Category Theorem#^thm-40-4\|§40.4]] | Baire Category Theorem |
 | §15.5, Thm 9 | Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1\|§41.1]] | The Image of the Unit Ball Contains a Ball About $0$ |
 | §15.5, Thm 10 (the open mapping principle) | Definition [[§39 Solving Mx = y#^def-39-2\|§39.2]] | Open Map |

@@ -97,9 +97,33 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 > [!remark] Remark: Why This is the Right Definition
 > The boundary condition $u = 0$ is [[§33 Sobolev Spaces and Weak Derivatives#^rem-33-8|built into the space]] $H^1_0(\Omega)$, and the equation is the identity of Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-1|§34.1]], which makes sense as soon as $u, v \in H^1_0$ and $f \in L^2$, because only first derivatives in $L^2$ appear. A strong (classical) solution is a weak solution; a weak solution need not be strong, and showing that it is (for smooth $f$) is the regularity theory of PDE. The only difference between the two notions is the class of functions in which a solution is sought.
 >
-> To pass from $v \in C_c^2$ to $v \in H^1_0$: if $u \in H^1_0(\Omega)$ satisfies the identity for all $v \in C_c^\infty(\Omega)$, it satisfies it for all $v \in H^1_0(\Omega)$, because $C_c^\infty$ is dense in $H^1_0$ ([[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|Def. §33.9]], [[§12 Completeness#^prop-12-3|§12.3]]) and both sides are continuous in $v$ for the $H^1_0$ norm (by [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]], $|\int \nabla u \cdot \nabla v| \le \|\nabla u\|_{L^2}\|\nabla v\|_{L^2}$ and $|\int f v| \le \|f\|_{L^2}\|v\|_{L^2}$). That a classical solution of $(D)$ lies in $H^1_0(\Omega)$ is true for domains with a reasonable boundary, but is not proved here.
+> To pass from $v \in C_c^2$ to $v \in H^1_0$, see Lemma [[§34 Weak Solutions of the Dirichlet Problem#^lem-34-2|§34.2]] below. That a classical solution of $(D)$ lies in $H^1_0(\Omega)$ is true for domains with a reasonable boundary, but is not proved here.
 
 ^rem-34-4
+
+> [!theorem] Lemma §34.2: Test Functions Suffice in the Weak Equation
+> Let $\Omega \subset \mathbb{R}^n$ be a bounded domain, $f \in L^2(\Omega)$ and $u \in H^1_0(\Omega)$. If
+>
+> $$
+> \int_\Omega \nabla u \cdot \nabla v\, dx = \int_\Omega f\, v\, dx
+> $$
+>
+> holds for all $v \in C_c^\infty(\Omega)$ (for instance, for all $v \in C_c^2(\Omega)$, as in Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-1|§34.1]]), then it holds for all $v \in H^1_0(\Omega)$, i.e. $u$ is a weak solution of $(D)$ (Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|§34.2]]).
+
+^lem-34-2
+
+> [!proof]+ Proof
+> *(Not from lecture.)* For $w \in H^1_0(\Omega)$ let $L_1(w) = \int_\Omega \nabla u \cdot \nabla w\, dx$ and $L_2(w) = \int_\Omega f\, w\, dx$. Both are linear in $w$, and bounded for the $H^1_0$ norm: by [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]], pointwise in $\mathbb{R}^n$ and then in $L^2$,
+>
+> $$
+> |L_1(w)| \le \|\nabla u\|_{L^2}\, \|\nabla w\|_{L^2} \le \|\nabla u\|_{L^2}\, \|w\|_{H^1_0}, \qquad |L_2(w)| \le \|f\|_{L^2}\, \|w\|_{L^2} \le \|f\|_{L^2}\, \|w\|_{H^1_0} .
+> $$
+>
+> So $L_1$ and $L_2$ are continuous on $H^1_0(\Omega)$ (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]). Let $v \in H^1_0(\Omega)$. Since $H^1_0(\Omega)$ is the completion of $C_c^\infty(\Omega)$ (Definition [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|§33.9]]), there are $v_k \in C_c^\infty(\Omega)$ with $v_k \to v$ in $H^1_0(\Omega)$. By assumption $L_1(v_k) = L_2(v_k)$ for every $k$, and letting $k \to \infty$, $L_1(v) = L_2(v)$. If the identity holds for all $v \in C_c^2(\Omega)$, it holds in particular for all $v \in C_c^\infty(\Omega) \subset C_c^2(\Omega)$.
+
+^pf-34-2
+
+*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|Def. §33.9]]
 
 > [!theorem] Theorem §34.3: Existence and Uniqueness of Weak Solutions
 > Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $f \in L^2(\Omega)$. Then $(D)$ has a unique weak solution $u \in H^1_0(\Omega)$.

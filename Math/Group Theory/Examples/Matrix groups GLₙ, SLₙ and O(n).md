@@ -9,7 +9,7 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 - $GL_n(k)$ is a group, non-abelian for $n \geq 2$ ([[§3 Basic Examples of Groups#^def-3-6|§3]])
 - The subgroups $SL_n(k)$, $O(n)$ and $SO(n)$ ([[§3 Basic Examples of Groups#^def-3-7|§3.7]], [[§3 Basic Examples of Groups#^def-3-8|§3.8]], [[§3 Basic Examples of Groups#^def-3-9|§3.9]])
 - $S_n$ and $GL_n(k)$ are the two fundamental non-abelian families ([[§3 Basic Examples of Groups#^rem-3-2|§3]])
-- A zoo of subgroups of $GL_2(\mathbb{R})$ and $GL_3(\mathbb{R})$ ([[§5 A Zoo of Subgroups#^ex-5-4|§5]])
+- A zoo of subgroups of $GL_2(\mathbb{R})$ and $GL_3(\mathbb{R})$ ([[§5 A Zoo of Subgroups#^ex-5-5|§5]])
 - $GL_n(\mathbb{R})$ contains copies of essentially every group we meet ([[§5 A Zoo of Subgroups#^rem-5-3|§5]])
 - $\det$ is a homomorphism with kernel $SL_n$ ([[§15 Homomorphisms#^ex-15-1|§15]])
 - Permutation matrices give an injective homomorphism $S_n \to GL_n(k)$ ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20]])
@@ -26,7 +26,7 @@ The general linear group $GL_n(k)$ of invertible $n \times n$ matrices over a fi
 - Conjugacy classes of matrices as orbits of $GL_n(\mathbb{C})$ ([[§34 Conjugation as an Action and the Class Equation#^rem-34-2|§34]])
 - $SL_n(\mathbb{R}) = \operatorname{Ker}(\det)$ is normal ([[§39 Sources of Normal Subgroups#^ex-39-2|§39]])
 - Normal and non-normal subgroups of $GL_2(\mathbb{R})$ ([[§39 Sources of Normal Subgroups#^prop-39-9|§39]])
-- $GL_n(k)/SL_n(k) \cong k^\times$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-1|§41]])
+- $GL_n(k)/SL_n(k) \cong k^\times$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-2|§41]])
 - The projective special linear group $PSL_n(F) = SL_n(F)/Z$ ([[§43 Simple Groups#^def-43-2|§43]])
 - $PSL_n(F)$ is simple, with two exceptions ([[§43 Simple Groups#^thm-43-13|§43]])
 - The exceptions: $PSL_2(\mathbb{F}_2) \cong S_3$ and $PSL_2(\mathbb{F}_3) \cong A_4$ ([[§43 Simple Groups#^ex-43-3|§43]])
@@ -54,7 +54,7 @@ Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SL
 ![[§3 Basic Examples of Groups#^rem-3-2]]
 
 ## A zoo of subgroups of $GL_2(\mathbb{R})$ and $GL_3(\mathbb{R})$
-![[§5 A Zoo of Subgroups#^ex-5-4]]
+![[§5 A Zoo of Subgroups#^ex-5-5]]
 
 ## $GL_n(\mathbb{R})$ contains copies of essentially every group we meet
 ![[§5 A Zoo of Subgroups#^rem-5-3]]
@@ -105,7 +105,7 @@ Revisit parts for $GL_n$, chapter by chapter: [[§5 A Zoo of Subgroups#GLₙ, SL
 ![[§39 Sources of Normal Subgroups#^prop-39-9]]
 
 ## $GL_n(k)/SL_n(k) \cong k^\times$
-![[§41 The First and Second Isomorphism Theorems#^ex-41-1]]
+![[§41 The First and Second Isomorphism Theorems#^ex-41-2]]
 
 ## The projective special linear group $PSL_n(F) = SL_n(F)/Z$
 ![[§43 Simple Groups#^def-43-2]]

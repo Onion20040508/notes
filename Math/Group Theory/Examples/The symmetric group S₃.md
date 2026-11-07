@@ -8,21 +8,21 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 
 - The mixed hypothesis $gh_1 = h_2g$ does not cancel ([[§2 First Consequences of the Axioms#^ex-2-1|§2]])
 - $(gh)^2 \neq g^2h^2$ and $(gh)^{-1} \neq g^{-1}h^{-1}$ for two transpositions ([[§4 Subgroups#^rem-4-1|§4]])
-- Products of powers of the generators in a fixed order do not give $\langle g_1, g_2 \rangle$ ([[§4 Subgroups#^ex-4-1|§4]])
-- $S_3$ is the smallest group in which the fixed-order products fail ([[§4 Subgroups#^rem-4-2|§4]])
+- Products of powers of the generators in a fixed order do not give $\langle g_1, g_2 \rangle$ ([[§4 Subgroups#^ex-4-3|§4]])
+- $S_3$ is the smallest group in which the fixed-order products fail ([[§4 Subgroups#^lem-4-7|Lem. §4.7]])
 - Elements in two-line and cycle notation, non-commutativity, and the multiplication table ([[§10 Cycle Notation and the Group S₃#^ex-10-1|§10]])
 - $S_3$ has exactly six subgroups ([[§13 The Symmetric Group S₃#^prop-13-1|§13]])
 - The subgroup lattice: orders $1, 2, 3, 6$ all divide $6$ ([[§13 The Symmetric Group S₃#^rem-13-1|§13]])
 - The mixed hypothesis revisited: conjugation relabels a transposition ([[§13 The Symmetric Group S₃#^ex-13-1|§13]])
 - The multiplication table as a worksheet problem (WS 2.4) ([[§14 Multiplication Tables#^ex-14-5|§14]])
 - $S_3 \not\cong \mathbb{Z}/6\mathbb{Z}$, since one is abelian and the other is not ([[§16 Isomorphisms#^prop-16-3|§16]])
-- The trivial center re-proves $S_3 \not\cong \mathbb{Z}/6\mathbb{Z}$ ([[§16 Isomorphisms#^rem-16-4|§16]])
-- $S_3$ permuting three variables: $x_1x_2 + x_2x_3 + x_1x_3$ is symmetric ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-1|§20]])
-- The permutation matrices of $(1\,2\,3)$ and $(1\,2)$ ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-2|§20]])
+- The trivial center re-proves $S_3 \not\cong \mathbb{Z}/6\mathbb{Z}$ ([[§16 Isomorphisms#^ex-16-2|Ex. §16.2]])
+- $S_3$ permuting three variables: $x_1x_2 + x_2x_3 + x_1x_3$ is symmetric ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-3|§20]])
+- The permutation matrices of $(1\,2\,3)$ and $(1\,2)$ ([[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-4|§20]])
 - $\mathbb{Z}/3\mathbb{Z}$ rotating a triangle maps onto $A_3 \leq S_3$ ([[§25 Actions#^ex-25-3|§25]])
-- Left and right cosets of $\langle (1\,2) \rangle$ differ ([[§28 Left and Right Cosets#^ex-28-1|§28]])
-- The map $gH \mapsto Hg$ is not well defined ([[§28 Left and Right Cosets#^ex-28-2|§28]])
-- The index $[A : A \cap H]$ need not divide $[S_3 : H]$ ([[§29 The Index and Lagrange's Theorem#^ex-29-2|§29]])
+- Left and right cosets of $\langle (1\,2) \rangle$ differ ([[§28 Left and Right Cosets#^ex-28-2|§28]])
+- The map $gH \mapsto Hg$ is not well defined ([[§28 Left and Right Cosets#^ex-28-3|§28]])
+- The index $[A : A \cap H]$ need not divide $[S_3 : H]$ ([[§29 The Index and Lagrange's Theorem#^ex-29-6|§29]])
 - Cosets of the point stabilizer, read off from $\alpha(3)$ and $\alpha^{-1}(3)$ ([[§30 Orbit–Stabilizer#^ex-30-2|§30]])
 - Burnside's lemma: one orbit on $\{1, 2, 3\}$, three conjugacy classes ([[§30 Orbit–Stabilizer#^ex-30-4|§30]])
 - Three conjugacy classes, of sizes $1, 3, 2$ ([[§33 Conjugacy Classes#^ex-33-2|§33]])
@@ -34,13 +34,13 @@ The symmetric group $S_3$ of all permutations of $\{1, 2, 3\}$: six elements, na
 - The normal subgroups $\{e\}$, $A_3$, $S_3$ as unions of conjugacy classes ([[§39 Sources of Normal Subgroups#^ex-39-3|§39]])
 - $S_3/A_3$ is cyclic of order $2$ ([[§40 Quotient Groups#^ex-40-1|§40]])
 - $S_3/A_3$ computed with the representatives $\{e, (2\,3)\}$ ([[§40 Quotient Groups#^ex-40-3|§40]])
-- The representatives $\{e, (2\,3)\}$ form a subgroup, so $S_3/A_3 \cong \langle (2\,3) \rangle$ ([[§40 Quotient Groups#^rem-40-3|§40]])
-- $AB$ need not be a subgroup: $A = \langle (1\,2) \rangle$, $B = \langle (1\,3) \rangle$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-2|§41]])
+- The representatives $\{e, (2\,3)\}$ form a subgroup, so $S_3/A_3 \cong \langle (2\,3) \rangle$ ([[§40 Quotient Groups#^ex-40-4|Ex. §40.4]])
+- $AB$ need not be a subgroup: $A = \langle (1\,2) \rangle$, $B = \langle (1\,3) \rangle$ ([[§41 The First and Second Isomorphism Theorems#^ex-41-3|§41]])
 - $S_3$ as the quotient $S_4/K$ ([[§43 Simple Groups#^prop-43-10|§43]])
 - $PSL_2(\mathbb{F}_2) \cong S_3$, which is not simple ([[§43 Simple Groups#^ex-43-3|§43]])
 - $\langle (1\,2) \rangle \cong S_3/A_3$, and $S_4/K \cong S_3$, by the Second Isomorphism Theorem ([[§45 S₃, S₄, A₄ and A₅#^ex-45-1|§45]])
 - The identity $S_3 \to S_3$ is not constant on conjugacy classes, so characters need an abelian target ([[§46 Characters#^rem-46-3|§46]])
-- $S_3$ is solvable, through $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ ([[§48 Solvable Groups#^prop-48-1|§48]])
+- $S_3$ is solvable, through $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ ([[§48 Solvable Groups#^prop-48-2|§48]])
 - The derived series $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$ ([[§49 The Derived Series#^ex-49-1|§49]])
 
 ## Chapter by chapter
@@ -54,10 +54,10 @@ Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmet
 ![[§4 Subgroups#^rem-4-1]]
 
 ## Products of powers of the generators in a fixed order do not give $\langle g_1, g_2 \rangle$
-![[§4 Subgroups#^ex-4-1]]
+![[§4 Subgroups#^ex-4-3]]
 
 ## $S_3$ is the smallest group in which the fixed-order products fail
-![[§4 Subgroups#^rem-4-2]]
+![[§4 Subgroups#^lem-4-7]]
 
 ## Elements in two-line and cycle notation, non-commutativity, and the multiplication table
 ![[§10 Cycle Notation and the Group S₃#^ex-10-1]]
@@ -78,25 +78,25 @@ Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmet
 ![[§16 Isomorphisms#^prop-16-3]]
 
 ## The trivial center re-proves $S_3 \not\cong \mathbb{Z}/6\mathbb{Z}$
-![[§16 Isomorphisms#^rem-16-4]]
+![[§16 Isomorphisms#^ex-16-2]]
 
 ## $S_3$ permuting three variables: $x_1x_2 + x_2x_3 + x_1x_3$ is symmetric
-![[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-1]]
+![[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-3]]
 
 ## The permutation matrices of $(1\,2\,3)$ and $(1\,2)$
-![[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-2]]
+![[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-4]]
 
 ## $\mathbb{Z}/3\mathbb{Z}$ rotating a triangle maps onto $A_3 \leq S_3$
 ![[§25 Actions#^ex-25-3]]
 
 ## Left and right cosets of $\langle (1\,2) \rangle$ differ
-![[§28 Left and Right Cosets#^ex-28-1]]
-
-## The map $gH \mapsto Hg$ is not well defined
 ![[§28 Left and Right Cosets#^ex-28-2]]
 
+## The map $gH \mapsto Hg$ is not well defined
+![[§28 Left and Right Cosets#^ex-28-3]]
+
 ## The index $[A : A \cap H]$ need not divide $[S_3 : H]$
-![[§29 The Index and Lagrange's Theorem#^ex-29-2]]
+![[§29 The Index and Lagrange's Theorem#^ex-29-6]]
 
 ## Cosets of the point stabilizer, read off from $\alpha(3)$ and $\alpha^{-1}(3)$
 ![[§30 Orbit–Stabilizer#^ex-30-2]]
@@ -132,10 +132,10 @@ Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmet
 ![[§40 Quotient Groups#^ex-40-3]]
 
 ## The representatives $\{e, (2\,3)\}$ form a subgroup, so $S_3/A_3 \cong \langle (2\,3) \rangle$
-![[§40 Quotient Groups#^rem-40-3]]
+![[§40 Quotient Groups#^ex-40-4]]
 
 ## $AB$ need not be a subgroup: $A = \langle (1\,2) \rangle$, $B = \langle (1\,3) \rangle$
-![[§41 The First and Second Isomorphism Theorems#^ex-41-2]]
+![[§41 The First and Second Isomorphism Theorems#^ex-41-3]]
 
 ## $S_3$ as the quotient $S_4/K$
 ![[§43 Simple Groups#^prop-43-10]]
@@ -150,7 +150,7 @@ Revisit parts for $S_3$, chapter by chapter: [[§5 A Zoo of Subgroups#The Symmet
 ![[§46 Characters#^rem-46-3]]
 
 ## $S_3$ is solvable, through $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$
-![[§48 Solvable Groups#^prop-48-1]]
+![[§48 Solvable Groups#^prop-48-2]]
 
 ## The derived series $S_3 \trianglerighteq A_3 \trianglerighteq \{e\}$
 ![[§49 The Derived Series#^ex-49-1]]

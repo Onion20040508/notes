@@ -16,7 +16,7 @@ tags: [group-theory, hub]
 - [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|Proposition §20.5: σ ↦ M(σ) Is an Injective Homomorphism Sₙ → GLₙ(k)]]
 - [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Definition §21.2: The Sign; Even and Odd Permutations]]
 - [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Theorem §21.2: Three Formulas for the Sign]]
-- [[§46 Characters#^thm-46-2|Theorem §46.2: A Common Eigenvector Yields a Character]]
+- [[§46 Characters#^thm-46-3|Theorem §46.3: A Common Eigenvector Yields a Character]]
 
 ## Its proof uses (other subjects)
 - [[§37 Determinants#^ladr-9-49|LADR 9.49 Determinant is multiplicative]]
@@ -25,16 +25,16 @@ tags: [group-theory, hub]
 - [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Corollary §21.4: Parity of a Permutation]]
 - [[§21 The Sign Homomorphism and the Alternating Group#^prop-21-5|Proposition §21.5: Size of Aₙ]]
 - [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|Theorem §21.9: Generators of Aₙ]]
+- [[§47 Commutators#^ex-47-2|Example §47.2: The Characters of Sₙ with Values in ℂ^×]]
 - [[§47 Commutators#^prop-47-3|Proposition §47.3: Transpositions Are Not Commutators]]
 - [[§47 Commutators#^thm-47-5|Theorem §47.5: The Commutator Subgroup and Characters of Sₙ]]
-- [[§47 Commutators#^cor-47-7|Corollary §47.7: Every Square Root of e_A Gives a Character]]
-- [[§48 Solvable Groups#^prop-48-1|Proposition §48.1: S_3 and S_4 Are Solvable]]
-- [[§56 Simple Groups of Small Order#^lem-56-5|Lemma §56.5: Homomorphisms That Leave A_N]]
+- [[§48 Solvable Groups#^prop-48-2|Proposition §48.2: S_3 and S_4 Are Solvable]]
+- [[§56 Simple Groups of Small Order#^lem-56-8|Lemma §56.8: Homomorphisms That Leave A_N]]
 
 ## Used in (Differentiable Manifolds)
 - [[§11 Topological Groups and Classical Matrix Groups#^prop-11-2|Proposition §11.2: Properties of the Sign]]
 
 ## Connections
-- **Used for.** Aₙ = Ker sgn is normal of order n!/2 ([[§21 The Sign Homomorphism and the Alternating Group#^prop-21-5|§21.5]], [[§41 The First and Second Isomorphism Theorems#^ex-41-1|Ex. §41.1]]), and the parity of a permutation is well defined ([[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]]). Transpositions are not commutators ([[§47 Commutators#^prop-47-3|§47.3]]), and [Sₙ, Sₙ] = Aₙ ([[§47 Commutators#^thm-47-5|§47.5]]), so every character of Sₙ factors through sgn. Aₙ itself has no nontrivial character for n ≥ 5 ([[§47 Commutators#^thm-47-10|§47.10]]).
-- **Three definitions.** The sign can be defined by Δ, by inversions, or as det ∘ M ([[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]], [[§21 The Sign Homomorphism and the Alternating Group#^rem-21-2|The Sign as det ∘ M]]). Δ spans a line on which Sₙ acts by sgn ([[§46 Characters#^ex-46-2|Ex. §46.2]]).
+- **Used for.** Aₙ = Ker sgn is normal of order n!/2 ([[§21 The Sign Homomorphism and the Alternating Group#^prop-21-5|§21.5]], [[§41 The First and Second Isomorphism Theorems#^ex-41-2|Ex. §41.2]]), and the parity of a permutation is well defined ([[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|§21.4]]). Transpositions are not commutators ([[§47 Commutators#^prop-47-3|§47.3]]), and [Sₙ, Sₙ] = Aₙ ([[§47 Commutators#^thm-47-5|§47.5]]), so every character of Sₙ factors through sgn. Aₙ itself has no nontrivial character for n ≥ 5 ([[§47 Commutators#^thm-47-11|§47.11]]).
+- **Three definitions.** The sign can be defined by Δ, by inversions, or as det ∘ M ([[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]], [[§21 The Sign Homomorphism and the Alternating Group#^rem-21-2|The Sign as det ∘ M]]). Δ spans a line on which Sₙ acts by sgn ([[§46 Characters#^ex-46-3|Ex. §46.3]]).
 - **Same idea elsewhere.** LADR defines the sign by inversions ([[§36 Alternating Multilinear Forms#^ladr-9-32|LADR 9.32]]) and uses it in the formula for the determinant ([[§37 Determinants#^ladr-9-46|LADR 9.46]]). Multiplicativity of det ([[§37 Determinants#^ladr-9-49|LADR 9.49]]) is what makes sgn a homomorphism here.

@@ -21,14 +21,14 @@ tags: [group-theory, math493]
 > [!proof]+ Proof
 > *Idea:* With only two cosets on each side, both are $H$ and its complement $G \setminus H$.
 >
-> There are exactly two left cosets. One of them is $H = eH$, and since the left cosets partition $G$, the other is the complement $G \setminus H$. Likewise there are exactly two right cosets (the number of right cosets equals the number of left cosets, [[§28 Left and Right Cosets#^prop-28-3|§28.3]]), namely $H$ and $G \setminus H$. So the set of left cosets equals the set of right cosets, and $H$ is normal by characterization (4) ([[§38 Normal Subgroups#^prop-38-2|§38.2]]).
+> There are exactly two left cosets. One of them is $H = eH$, and since the left cosets partition $G$, the other is the complement $G \setminus H$. Likewise there are exactly two right cosets (the number of right cosets equals the number of left cosets, [[§28 Left and Right Cosets#^prop-28-4|§28.4]]), namely $H$ and $G \setminus H$. So the set of left cosets equals the set of right cosets, and $H$ is normal by characterization (4) ([[§38 Normal Subgroups#^prop-38-2|§38.2]]).
 
 ^pf-39-1
 
-*Uses:* [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§38 Normal Subgroups#^prop-38-2|§38.2]]
+*Uses:* [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§28 Left and Right Cosets#^prop-28-4|§28.4]], [[§38 Normal Subgroups#^prop-38-2|§38.2]]
 
 > [!example] Example §39.1: Index-$2$ Examples
-> 1. In $S_3$, the subgroup $\langle (1\,2\,3) \rangle$ has order $3$, hence index $6/3 = 2$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]], so it is normal. *(Not from lecture; from the student's worksheet solutions.)* Alternatively, $\langle (1\,2\,3) \rangle = \{e\} \cup \{(1\,2\,3), (1\,3\,2)\}$ is a union of conjugacy classes of $S_3$ ([[§34 Conjugation as an Action and the Class Equation#^ex-34-1|Ex. §34.1]]), hence normal by [[§38 Normal Subgroups#^thm-38-3|Theorem §38.3]], (1) $\Leftrightarrow$ (2).
+> 1. In $S_3$, the subgroup $\langle (1\,2\,3) \rangle$ has order $3$, hence index $6/3 = 2$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]], so it is normal. *(Not from lecture; from the student's worksheet solutions.)* Alternatively, $\langle (1\,2\,3) \rangle = \{e\} \cup \{(1\,2\,3), (1\,3\,2)\}$ is a union of conjugacy classes of $S_3$ ([[§34 Conjugation as an Action and the Class Equation#^ex-34-1|Ex. §34.1]]), hence normal by [[§38 Normal Subgroups#^thm-38-4|Theorem §38.4]], (1) $\Leftrightarrow$ (2).
 > 2. For every $n \geq 2$, $[S_n : A_n] = 2$ ([[§21 The Sign Homomorphism and the Alternating Group#^prop-21-5|§21.5]]: $|A_n| = n!/2$), so $A_n$ is a normal subgroup of $S_n$.
 >
 > *Source: lecture; WS 6.2(2)*
@@ -135,7 +135,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 
 ^pf-39-5
 
-*Uses:* [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§25 Actions#^thm-25-3|§25.3]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]]
+*Uses:* [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§25 Actions#^thm-25-3|§25.3]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]]
 
 ![[m493-36-1.svg]]
 *The proof of PS 3.2: $N = \operatorname{Ker}\varphi$, and $\bar\varphi(gN) = \varphi(g)$ is injective, so $[G : N] \leq n!$.*
@@ -161,7 +161,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 *Uses:* [[§25 Actions#^def-25-4|Def. §25.4]], [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]], [[§38 Normal Subgroups#^prop-38-2|§38.2]], [[§39 Sources of Normal Subgroups#^thm-39-5|§39.5]], [[§15 Homomorphisms#^prop-15-2|§15.2]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]
 
 > [!remark]- Connections
-> - Part (3) recorded again as item 4 of [[§41 The First and Second Isomorphism Theorems#^ex-41-1|The First Isomorphism Theorem in Action]].
+> - Part (3) recorded again as item 4 of [[§41 The First and Second Isomorphism Theorems#^ex-41-2|The First Isomorphism Theorem in Action]].
 
 ## Unions of Conjugacy Classes
 
@@ -180,7 +180,7 @@ The converse also holds: every normal subgroup is the kernel of a homomorphism, 
 *Uses:* [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§33 Conjugacy Classes#^def-33-1|Def. §33.1]], [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]], [[§27 Orbits#^prop-27-1|§27.1]]
 
 > [!remark]- Connections
-> - This is condition (2) of [[§38 Normal Subgroups#^thm-38-3|Five Characterizations of Normality]]; used to prove [[§43 Simple Groups#^prop-43-6|A₅ Is Simple]].
+> - This is condition (2) of [[§38 Normal Subgroups#^thm-38-4|Five Characterizations of Normality]]; used to prove [[§43 Simple Groups#^prop-43-6|A₅ Is Simple]].
 
 > [!definition] Definition §39.1: The Klein Four-Group $K$
 > The **Klein four-group** is the subset
@@ -271,7 +271,7 @@ So $K \cong U_8$ ([[§16 Isomorphisms#^prop-16-8|Proposition §16.8]]): the Klei
 > [!proof]+ Proof
 > *Idea:* Explicit conjugates leave $D$ and $T$; $SL_2(\mathbb{R})$ is a kernel, and $\pm I_2$ are central.
 >
-> *(Not from lecture; filled in.)* All four sets are subgroups of $GL_2(\mathbb{R})$: (1)–(3) by Example [[§5 A Zoo of Subgroups#^ex-5-4|§5.4]], and (4) because $(-I_2)^2 = I_2$, so $\{I_2, -I_2\}$ contains $I_2$ and is closed under products and inverses. By Definition [[§38 Normal Subgroups#^def-38-1|§38.1]], a subgroup $H$ is not normal as soon as there are $g \in GL_2(\mathbb{R})$ and $h \in H$ with $ghg^{-1} \notin H$.
+> *(Not from lecture; filled in.)* All four sets are subgroups of $GL_2(\mathbb{R})$: (1)–(3) by Example [[§5 A Zoo of Subgroups#^ex-5-5|§5.5]], and (4) because $(-I_2)^2 = I_2$, so $\{I_2, -I_2\}$ contains $I_2$ and is closed under products and inverses. By Definition [[§38 Normal Subgroups#^def-38-1|§38.1]], a subgroup $H$ is not normal as soon as there are $g \in GL_2(\mathbb{R})$ and $h \in H$ with $ghg^{-1} \notin H$.
 >
 > **(1) Not normal.** Let $D$ be the subgroup of invertible diagonal matrices, and take
 >
@@ -305,4 +305,4 @@ So $K \cong U_8$ ([[§16 Isomorphisms#^prop-16-8|Proposition §16.8]]): the Klei
 
 ^pf-39-9
 
-*Uses:* [[§5 A Zoo of Subgroups#^ex-5-4|Ex. §5.4]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§15 Homomorphisms#^ex-15-1|Ex. §15.1]], [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]
+*Uses:* [[§5 A Zoo of Subgroups#^ex-5-5|Ex. §5.5]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§15 Homomorphisms#^ex-15-1|Ex. §15.1]], [[§3 Basic Examples of Groups#^def-3-7|Def. §3.7]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]]

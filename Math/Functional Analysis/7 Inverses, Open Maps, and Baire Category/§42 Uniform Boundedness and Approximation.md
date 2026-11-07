@@ -29,21 +29,54 @@ The lecture began by restating the main results of [[§41 The Open Mapping Theor
 
 *Uses:* [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]]
 
-> [!remark] Remark: The Hypothesis Forces $T$ Onto
-> The hypothesis forces $T$ to be onto: $T(X)$ is a linear subspace of $Y$ containing a ball $B(0, \delta)$, and a subspace containing a ball about $0$ is everything ($y = \frac{2\|y\|}{\delta} \cdot \frac{\delta\, y}{2\|y\|}$ for $y \neq 0$). So the general form says: *if $X$ is Banach and $R(T)$ is of the second category, then $T$ is onto and open.* When $Y$ is Banach and $T$ is onto, $R(T) = Y$ is of the second category by Baire, and Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]] is recovered.
+> [!theorem] Corollary §42.2: The General Form Forces $T$ Onto
+> *(Not from lecture.)* Let $X$ be a Banach space, $Y$ a normed linear space, and $T \in \mathcal{L}(X, Y)$ with $R(T)$ of the second category in $Y$. Then $T$ is onto. Together with Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-1|§42.1]]: *if $X$ is Banach and $R(T)$ is of the second category, then $T$ is onto and open.*
 
-^xrem-42-1
+^cor-42-2
 
-> [!remark] Remark: $Y$ Turns Out to Be Complete
-> *(Not from lecture; filled in.)* Lax states this theorem with $Y$ a Banach space. Allowing $Y$ to be only normed gains nothing in the end: under the hypothesis, $Y$ *is* complete. Let $\{y_k\}$ be Cauchy in $Y$ and $\delta$ as in the proof ($B(0, \delta) \subset T(B(0,1))$, so $B(0, \rho\delta) \subset T(B(0, \rho))$ for $\rho > 0$). Pass to a subsequence with $\|y_{k+1} - y_k\| < \delta\, 2^{-k}$; it suffices that this subsequence converges, because a Cauchy sequence with a convergent subsequence converges. Choose $x_k \in X$ with $Tx_k = y_{k+1} - y_k$ and $\|x_k\| < 2^{-k}$. Then $\sum_k \|x_k\| < \infty$, so $\sum_k x_k$ converges in the Banach space $X$ to some $x$ (as in Step 6 of the proof of Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]]), and by continuity and linearity of $T$,
+> [!proof]+ Proof
+> $T(X)$ is a linear subspace of $Y$, since $T$ is linear. It contains a ball about $0$: the proof of Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-1|§42.1]] gives $\delta > 0$ with $B(0, \delta) \subset T(B(0, 1)) \subset T(X)$. A linear subspace $V \subset Y$ containing $B(0, \delta)$ is all of $Y$: $0 \in V$, and for $y \neq 0$ the vector $z = \frac{\delta\, y}{2\|y\|}$ has $\|z\| = \frac{\delta}{2} < \delta$, so $z \in V$, and then
+>
+> $$
+> y = \frac{2\|y\|}{\delta} \cdot \frac{\delta\, y}{2\|y\|} = \frac{2\|y\|}{\delta}\, z \in V ,
+> $$
+>
+> because $V$ is closed under scalar multiplication. Hence $T(X) = Y$. That $T$ is open is Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-1|§42.1]].
+
+^pf-42-2
+
+*Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-1|§42.1]]
+
+When $Y$ is a Banach space and $T$ is onto, $R(T) = Y$ is of the second category by Baire (Theorem [[§40 The Baire Category Theorem#^thm-40-4|§40.4]]), and Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]] is recovered from the general form.
+
+> [!theorem] Proposition §42.3: $Y$ Turns Out to Be Complete
+> *(Not from lecture; filled in.)* Under the hypotheses of Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-1|§42.1]] ($X$ a Banach space, $Y$ a normed linear space, $T \in \mathcal{L}(X, Y)$, $R(T)$ of the second category in $Y$), $Y$ is a Banach space.
+
+^prop-42-3
+
+> [!proof]+ Proof
+> Let $\{y_k\}$ be Cauchy in $Y$, and let $\delta > 0$ be as in the proof of Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-1|§42.1]]: $B(0, \delta) \subset T(B(0,1))$. Then $B(0, \rho\delta) \subset T(B(0, \rho))$ for every $\rho > 0$: if $\|y\| < \rho\delta$, then $y/\rho \in B(0, \delta)$, so $y/\rho = Tx$ with $\|x\| < 1$, and $y = T(\rho x)$ with $\|\rho x\| < \rho$.
+>
+> *Reduction to a subsequence.* It suffices that some subsequence converges, because a Cauchy sequence with a convergent subsequence converges: if $y_{k_j} \to y$, then $\|y_k - y\| \le \|y_k - y_{k_j}\| + \|y_{k_j} - y\|$, and both terms are small for $k$ and $j$ large. Choose $k_1 < k_2 < \cdots$ with $\|y_m - y_n\| < \delta\, 2^{-j}$ for all $m, n \ge k_j$; then $\|y_{k_{j+1}} - y_{k_j}\| < \delta\, 2^{-j}$. Renaming, we may assume $\|y_{k+1} - y_k\| < \delta\, 2^{-k}$ for all $k$.
+>
+> *Lifting the increments.* Since $y_{k+1} - y_k \in B(0, \delta\, 2^{-k}) \subset T(B(0, 2^{-k}))$, choose $x_k \in X$ with $Tx_k = y_{k+1} - y_k$ and $\|x_k\| < 2^{-k}$. Then $\sum_k \|x_k\| < \infty$, so $\sum_k x_k$ converges in the Banach space $X$ to some $x$ (as in Step 6 of the proof of Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]]).
+>
+> *Conclusion.* By linearity of $T$ the sum telescopes, and by continuity of $T$,
 >
 > $$
 > y_{K+1} - y_1 = T\Bigl( \sum_{k=1}^{K} x_k \Bigr) \longrightarrow Tx \qquad (K \to \infty),
 > $$
 >
-> so $y_K \to y_1 + Tx$. Hence $Y$ is a Banach space, and the general form is the open mapping theorem for the Banach spaces $X$ and $Y$ with the hypothesis “onto” replaced by the weaker-looking “range of the second category”. This is Lax's Theorem 16, and in Rudin's *Functional Analysis* (Theorem 2.11) the same argument is carried out for complete metric linear spaces.
+> so $y_K \to y_1 + Tx$. Hence every Cauchy sequence in $Y$ converges, and $Y$ is a Banach space.
 
-^xrem-42-2
+^pf-42-3
+
+*Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-1|§42.1]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]]
+
+> [!remark] Remark: What the General Form Gains
+> *(Not from lecture.)* Lax states this theorem with $Y$ a Banach space. Allowing $Y$ to be only normed gains nothing in the end: under the hypothesis, $Y$ *is* complete (Proposition [[§42 Uniform Boundedness and Approximation#^prop-42-3|§42.3]]). So the general form is the open mapping theorem for the Banach spaces $X$ and $Y$ with the hypothesis “onto” replaced by the weaker-looking “range of the second category”. This is Lax's Theorem 16, and in Rudin's *Functional Analysis* (Theorem 2.11) the same argument is carried out for complete metric linear spaces.
+
+^rem-42-1
 
 ## A Second Equivalent Norm Theorem
 
@@ -78,10 +111,17 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 
 *Uses:* [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]
 
-> [!remark] Remark: The Compatibility Condition is Needed
-> Completeness of both norms alone does not suffice. On an infinite-dimensional Banach space $(X, \|\cdot\|_1)$, choose a Hamel basis normalized to $\|e\|_1 = 1$, pick countably many of its elements $e_1, e_2, \ldots$, and let $\varphi$ be the linear map with $\varphi(e_k) = k\, e_k$ that fixes the other basis elements. It is a linear bijection (its inverse multiplies $e_k$ by $1/k$) and is unbounded. *(Not from lecture.)* Then $\|x\|_2 = \|\varphi x\|_1$ is a complete norm ($\varphi$ is an isometry of $(X, \|\cdot\|_2)$ onto $(X, \|\cdot\|_1)$), but $\|e_k\|_2 = k$ while $\|e_k\|_1 = 1$, so the norms are not equivalent; the compatibility condition fails.
+> [!example] Example §42.1: Two Complete Norms That Are Not Equivalent
+> *(Not from lecture.)* Completeness of both norms alone does not suffice in Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-4|§42.4]]; the compatibility condition is needed.
+>
+> On an infinite-dimensional Banach space $(X, \|\cdot\|_1)$, choose a Hamel basis normalized to $\|e\|_1 = 1$, pick countably many of its elements $e_1, e_2, \ldots$, and let $\varphi : X \to X$ be the linear map with $\varphi(e_k) = k\, e_k$ that fixes the other basis elements. Put $\|x\|_2 = \|\varphi x\|_1$.
+>
+> 1. *$\varphi$ is a linear bijection and is unbounded.* Let $\psi$ be the linear map with $\psi(e_k) = e_k / k$ that fixes the other basis elements (its inverse multiplies $e_k$ by $1/k$). Then $\psi\varphi$ and $\varphi\psi$ fix every basis element, so both are the identity, and $\varphi$ is bijective with inverse $\psi$. It is unbounded, since $\|e_k\|_1 = 1$ and $\|\varphi e_k\|_1 = k$.
+> 2. *$\|\cdot\|_2$ is a complete norm.* It is a norm: $\|x\|_2 \ge 0$, with $\|x\|_2 = 0$ iff $\varphi x = 0$ iff $x = 0$ ($\varphi$ is one-to-one); homogeneity and the triangle inequality follow from the linearity of $\varphi$ and the corresponding properties of $\|\cdot\|_1$. By definition $\varphi$ is an isometry of $(X, \|\cdot\|_2)$ onto $(X, \|\cdot\|_1)$. If $\{x_n\}$ is Cauchy in $\|\cdot\|_2$, then $\{\varphi x_n\}$ is Cauchy in $\|\cdot\|_1$, so $\varphi x_n \to z$ for some $z \in X$; with $x = \psi z$, $\|x_n - x\|_2 = \|\varphi x_n - z\|_1 \to 0$.
+> 3. *The norms are not equivalent.* $\|e_k\|_2 = \|k\, e_k\|_1 = k$ while $\|e_k\|_1 = 1$, so there is no $c$ with $\|x\|_2 \le c\, \|x\|_1$ for all $x$.
+> 4. *The compatibility condition fails.* Otherwise Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-4|§42.4]] would make the two complete norms equivalent, contradicting (3).
 
-^xrem-42-3
+^ex-42-1
 
 ## The Uniform Boundedness Principle
 
@@ -141,10 +181,22 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 
 *Uses:* [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]
 
-> [!remark] Remark: Completeness of $X$ is Needed
-> Let $c_{00}$ be the finitely supported sequences with $\|x\| = \max_n |x_n|$ (not complete), and $A_n x = n\, x_n$, a bounded linear functional with $\|A_n\| = n$. For each fixed $x \in c_{00}$, $A_n x = 0$ once $n$ exceeds the support of $x$, so $\sup_n |A_n x| < \infty$; but $\sup_n \|A_n\| = \infty$. The proof breaks exactly at the completeness of $(X, \|\cdot\|_2)$. The proof here is the closed-graph route; the more common proof, Lax's (§10.1, Theorem 2), applies Baire directly to the closed sets $\{ x : \sup_\alpha \|A_\alpha x\| \le k \}$: one of them contains a ball, and subadditivity and homogeneity of $x \mapsto \|A_\alpha x\|$ carry the bound to the unit ball. Lax's Theorem 7 of §15.3 assumes even less, only that each $\ell(A_\alpha x)$, $\ell \in Y'$, is bounded, and reduces to the present case by applying the principle twice.
+> [!example] Example §42.2: Pointwise but Not Uniformly Bounded Functionals on $c_{00}$
+> *(Not from lecture.)* Completeness of $X$ is needed in Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]. Let $c_{00}$ be the finitely supported sequences with $\|x\| = \max_n |x_n|$, and $A_n x = n\, x_n$.
+>
+> 1. *$c_{00}$ is not complete.* Let $x^{(N)} = (1, \frac12, \ldots, \frac1N, 0, 0, \ldots)$. For $M > N$, $\|x^{(M)} - x^{(N)}\| = \frac{1}{N+1}$, so $\{x^{(N)}\}$ is Cauchy. If $x^{(N)} \to x$ in $c_{00}$, then for each $j$, $|x^{(N)}_j - x_j| \le \|x^{(N)} - x\| \to 0$, so $x_j = \frac1j$ for every $j$, and $x$ is not finitely supported, a contradiction.
+> 2. *Each $A_n$ is a bounded linear functional with $\|A_n\| = n$.* $A_n$ is linear, and $|A_n x| = n|x_n| \le n\|x\|$, so $\|A_n\| \le n$; the unit vector $e_n$ gives $A_n e_n = n$, so $\|A_n\| = n$.
+> 3. *Pointwise bounded.* Fix $x \in c_{00}$, say $x_j = 0$ for $j > K$. Then $A_n x = 0$ once $n > K$, so $\sup_n |A_n x| = \max_{n \le K} n|x_n| < \infty$.
+> 4. *Not uniformly bounded.* $\sup_n \|A_n\| = \sup_n n = \infty$.
+>
+> So the conclusion of Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]] fails on the normed space $c_{00}$. The proof breaks exactly at the completeness of $(X, \|\cdot\|_2)$.
 
-^xrem-42-4
+^ex-42-2
+
+> [!remark] Remark: Other Proofs of the Principle
+> The proof here is the closed-graph route; the more common proof, Lax's (§10.1, Theorem 2), applies Baire directly to the closed sets $\{ x : \sup_\alpha \|A_\alpha x\| \le k \}$: one of them contains a ball, and subadditivity and homogeneity of $x \mapsto \|A_\alpha x\|$ carry the bound to the unit ball. Lax's Theorem 7 of §15.3 assumes even less, only that each $\ell(A_\alpha x)$, $\ell \in Y'$, is bounded, and reduces to the present case by applying the principle twice.
+
+^rem-42-2
 
 ## The Banach–Steinhaus Theorem
 
@@ -177,9 +229,28 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 *Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]
 
 > [!remark] Remark: Which Hypotheses Each Direction Uses
-> *(Not from lecture.)* Only ($\Rightarrow$) uses the completeness of $X$, through the uniform boundedness principle; ($\Leftarrow$) is an $\varepsilon/2$ argument valid in any normed spaces. Lax's Theorem 6 (§15.2) is a variant of ($\Leftarrow$) in which no limit $A$ is given: if $\sup_n \|A_n\| < \infty$ and $\lim A_n x$ exists for $x$ in a dense set, then it exists for all $x$; there $Y$ must be complete, since the limit has to be produced (the same $\varepsilon/2$ estimate shows that $\{A_n x\}$ is Cauchy).
+> *(Not from lecture.)* Only ($\Rightarrow$) uses the completeness of $X$, through the uniform boundedness principle; ($\Leftarrow$) is an $\varepsilon/2$ argument valid in any normed spaces. Lax's Theorem 6 (§15.2) is a variant of ($\Leftarrow$) in which no limit $A$ is given (Proposition [[§42 Uniform Boundedness and Approximation#^prop-42-7|§42.7]]); there $Y$ must be complete, since the limit has to be produced.
 
 ^rem-42-3
+
+> [!theorem] Proposition §42.7: Banach–Steinhaus Without a Given Limit
+> *(Not from lecture.)* Let $X$ be a normed linear space, $Y$ a Banach space, and $\{A_n\}$ a sequence of bounded linear maps $X \to Y$ with $\sup_n \|A_n\| \le M < \infty$. If $\lim_{n \to \infty} A_n y$ exists for every $y$ in a dense subset $D$ of $X$, then $\lim_{n \to \infty} A_n x$ exists for every $x \in X$.
+>
+> *Lax: §15.2, Thm 6*
+
+^prop-42-7
+
+> [!proof]+ Proof
+> Let $x \in X$. Since $Y$ is complete, it suffices to show that $\{A_n x\}$ is Cauchy. For every $y \in D$, by the same $\varepsilon/2$ estimate as in the proof of ($\Leftarrow$) above,
+>
+> $$
+> \begin{aligned}\|A_n x - A_m x\| &\le \|A_n(x - y)\| + \|A_n y - A_m y\| + \|A_m(y - x)\| \\
+> &\le 2M\, \|x - y\| + \|A_n y - A_m y\| .\end{aligned}
+> $$
+>
+> Given $\varepsilon > 0$, first choose $y \in D$ with $2M\|x - y\| < \varepsilon/2$ (density), then $N$ with $\|A_n y - A_m y\| < \varepsilon/2$ for $n, m > N$ (the convergent sequence $\{A_n y\}$ is Cauchy). Then $\|A_n x - A_m x\| < \varepsilon$ for $n, m > N$.
+
+^pf-42-7
 
 ## The Lax Equivalence Theorem
 

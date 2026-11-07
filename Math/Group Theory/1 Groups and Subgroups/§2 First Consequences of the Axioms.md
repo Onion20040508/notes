@@ -176,12 +176,23 @@ tags: [group-theory, math493]
 
 ^pf-2-6
 
-*Uses:* [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§2 First Consequences of the Axioms#^prop-2-3|§2.3]]
-
 > [!remark] Remark: Why One-Sided Suffices Here but Not in General
-> In a group, checking $ab = e$ alone certifies $b = a^{-1}$; the other equation $ba = e$ comes free. This is special to groups (it uses that $a$ already *has* a two-sided inverse). In monoids — e.g. functions $X \to X$ under composition for infinite $X$ — a one-sided inverse need not be two-sided: the shift $n \mapsto n + 1$ on $\mathbb{N}$ has a left inverse but no right inverse.
+> In a group, checking $ab = e$ alone certifies $b = a^{-1}$; the other equation $ba = e$ comes free. This is special to groups (it uses that $a$ already *has* a two-sided inverse). In monoids — e.g. functions $X \to X$ under composition for infinite $X$ — a one-sided inverse need not be two-sided (Example [[§2 First Consequences of the Axioms#^ex-2-2|§2.2]]).
 
 ^rem-2-4
+
+> [!example] Example §2.2: The Shift on $\mathbb{N}$: a One-Sided Inverse That Is Not Two-Sided
+> Functions $\mathbb{N} \to \mathbb{N}$ under composition form a monoid (composition is associative, with identity $\operatorname{id}_{\mathbb{N}}$), not a group. In it, the shift $s(n) = n + 1$ has a left inverse but no right inverse.
+>
+> Let $n_0$ be the least element of $\mathbb{N}$ (whichever convention is used for $\mathbb{N}$). Note that $s(n) = n + 1 > n \geq n_0$, so $n_0$ is not a value of $s$.
+>
+> **A left inverse.** Define $t \colon \mathbb{N} \to \mathbb{N}$ by $t(n_0) = n_0$ and $t(n) = n - 1$ for $n > n_0$ (then $n - 1 \geq n_0$, so $t(n) \in \mathbb{N}$). For every $n \in \mathbb{N}$, $s(n) = n + 1 > n_0$, hence $t(s(n)) = (n + 1) - 1 = n$. So $t \circ s = \operatorname{id}_{\mathbb{N}}$.
+>
+> **No right inverse.** Suppose $r \colon \mathbb{N} \to \mathbb{N}$ satisfied $s \circ r = \operatorname{id}_{\mathbb{N}}$. Then $n_0 = s(r(n_0)) = r(n_0) + 1 \geq n_0 + 1$, a contradiction. In particular the left inverse $t$ is not two-sided: $s(t(n_0)) = n_0 + 1 \neq n_0$, so $s \circ t \neq \operatorname{id}_{\mathbb{N}}$.
+
+^ex-2-2
+
+*Uses:* [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§2 First Consequences of the Axioms#^prop-2-3|§2.3]]
 
 > [!remark]- Connections
 > - For linear maps between spaces of the same finite dimension one-sided also suffices, for a different reason (dimension): [[§10 Invertibility and Isomorphisms#^ladr-3-68|ST = I ⟺ TS = I]]; the infinite-dimensional shifts on $\mathbb{F}^\infty$ fail it exactly like the shift on $\mathbb{N}$ ([[§10 Invertibility and Isomorphisms#^ladr-3-65|LADR 3.65]]).
@@ -212,12 +223,31 @@ tags: [group-theory, math493]
 
 ^pf-2-8
 
+The Latin square property is visible in the $S_3$ table ([[§10 Cycle Notation and the Group S₃|§10]]). Its converse fails:
+
+> [!example] Example §2.3: A Latin Square That Is Not a Group Table
+> A Latin square need not be a group table, since associativity is not encoded row by row. On the set $\{0, 1, 2\}$ define an operation $\ast$ by the table (entry in row $x$, column $y$ is $x \ast y$; it records $x - y$, brought into $\{0, 1, 2\}$ by adding $3$ if negative):
+> \begin{center}
+> \begin{tabular}{c|ccc}
+> $\ast$ & $0$ & $1$ & $2$ \ \hline
+> $0$ & $0$ & $2$ & $1$ \\
+> $1$ & $1$ & $0$ & $2$ \\
+> $2$ & $2$ & $1$ & $0$
+> \end{tabular}
+> \end{center}
+> **It is a Latin square:** the rows read $0, 2, 1$; $\ 1, 0, 2$; $\ 2, 1, 0$, and the columns read $0, 1, 2$; $\ 2, 0, 1$; $\ 1, 2, 0$, so each of $0, 1, 2$ appears exactly once in every row and every column.
+>
+> **It is not a group table:** the operation is not associative, since
+>
+> $$
+> (0 \ast 1) \ast 1 = 2 \ast 1 = 1, \qquad 0 \ast (1 \ast 1) = 0 \ast 0 = 0.
+> $$
+>
+> (It has no identity element either: an identity $e$ would need row $e$ to read $0, 1, 2$, and no row does.) So no group has this table, although the table has the property of Corollary [[§2 First Consequences of the Axioms#^cor-2-8|§2.8]].
+
+^ex-2-3
+
 *Uses:* [[§2 First Consequences of the Axioms#^prop-2-7|§2.7]]
 
 > [!remark]- Connections
 > - Multiplication tables are defined and computed in [[§14 Multiplication Tables#^def-14-1|Multiplication Table]]; the unit-group analogue (finiteness plus cancellation): [[§8 Invertibility and Unit Groups#^prop-8-2|Multiplication by a Nonzero Class Permutes the Nonzero Classes]].
-
-> [!remark] Remark: The Converse Fails
-> A Latin square need not be a group table, since associativity is not encoded row by row. The property is visible in the $S_3$ table ([[§10 Cycle Notation and the Group S₃#^ex-10-1|Ex. §10.1]]).
-
-^rem-2-5

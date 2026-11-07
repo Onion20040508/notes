@@ -78,7 +78,7 @@ Each of $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$ is an abelian group under $+$, 
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§3 Basic Examples of Groups#^def-3-1|§3.1]]; $1$ has infinite order, remark [[§4 Subgroups#^rem-4-4|Where Finiteness Enters]].
-> - Subgroups of $\mathbb{Z}$: Proposition [[§5 A Zoo of Subgroups#^prop-5-1|§5.1]]; of $\mathbb{R}$: Example [[§5 A Zoo of Subgroups#^ex-5-2|§5.2]] and Proposition [[§5 A Zoo of Subgroups#^prop-5-3|§5.3]].
+> - Subgroups of $\mathbb{Z}$: Proposition [[§5 A Zoo of Subgroups#^prop-5-1|§5.1]]; of $\mathbb{R}$: Example [[§5 A Zoo of Subgroups#^ex-5-3|§5.3]] and Proposition [[§5 A Zoo of Subgroups#^prop-5-3|§5.3]].
 
 #### Direct product · P1
 
@@ -123,7 +123,7 @@ $k^\times = (k \setminus \{0\}, \cdot)$ is a group by condition (2) of the field
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§3 Basic Examples of Groups#^def-3-4|§3.4]]; $\mathbb{F}_p^\times = U_p$, Proposition [[§8 Invertibility and Unit Groups#^prop-8-4|§8.4]].
-> - $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \mathbb{Z}/2\mathbb{Z}$ by $x \mapsto (|x|, \text{sign})$, Proposition [[§16 Isomorphisms#^prop-16-9|§16.9]] (WS 2.8).
+> - $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \mathbb{Z}/2\mathbb{Z}$ by $x \mapsto (|x|, \text{sign})$, Proposition [[§16 Isomorphisms#^prop-16-10|§16.10]] (WS 2.8).
 
 #### Symmetric groups · P1
 
@@ -157,7 +157,7 @@ $GL_n(k)$ is the group of invertible $n \times n$ matrices over a field $k$ unde
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§3 Basic Examples of Groups#^def-3-6|§3.6]] with its verification; closure by $(AB)(B^{-1}A^{-1}) = I_n$.
 > - $\begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}$, $\begin{pmatrix} 1 & 0 \\ 1 & 1 \end{pmatrix}$.
-> - Copies: scalars ($\mathbb{R}^\times$), $\begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}$ ($(\mathbb{R}, +)$), $SO(2)$ (rotations), permutation matrices ($S_2$): Example [[§5 A Zoo of Subgroups#^ex-5-4|§5.4]].
+> - Copies: scalars ($\mathbb{R}^\times$), $\begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}$ ($(\mathbb{R}, +)$), $SO(2)$ (rotations), permutation matrices ($S_2$): Example [[§5 A Zoo of Subgroups#^ex-5-5|§5.5]].
 
 #### Special linear group · P1
 
@@ -171,7 +171,7 @@ $SL_n(k) = \{A \in GL_n(k) : \det A = 1\}$, see Definition [[§3 Basic Examples 
 - [ ] Q4 **[why]** Is $\{A : \det A = 2\}$ a subgroup? Which condition fails first?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§3 Basic Examples of Groups#^def-3-7|§3.7]]; verification in Example [[§5 A Zoo of Subgroups#^ex-5-4|§5.4]].
+> - Definition [[§3 Basic Examples of Groups#^def-3-7|§3.7]]; verification in Example [[§5 A Zoo of Subgroups#^ex-5-5|§5.5]].
 > - Kernel of $\det : GL_n(\mathbb{R}) \to \mathbb{R}^\times$, onto via $\operatorname{diag}(\lambda, 1, \ldots, 1)$: Example [[§15 Homomorphisms#^ex-15-1|§15.1]](1).
 
 #### Orthogonal group · P1
@@ -186,7 +186,7 @@ $O(n) = \{A \in GL_n(\mathbb{R}) : A^{\mathsf{T}}A = I_n\}$, see Definition [[§
 - [ ] Q4 **[why]** What are the possible determinants of $A \in O(n)$, and why?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§3 Basic Examples of Groups#^def-3-8|§3.8]]; verification in Example [[§5 A Zoo of Subgroups#^ex-5-4|§5.4]]: $(AB)^{\mathsf{T}}AB = B^{\mathsf{T}}B$, and $A^{-1} = A^{\mathsf{T}}$.
+> - Definition [[§3 Basic Examples of Groups#^def-3-8|§3.8]]; verification in Example [[§5 A Zoo of Subgroups#^ex-5-5|§5.5]]: $(AB)^{\mathsf{T}}AB = B^{\mathsf{T}}B$, and $A^{-1} = A^{\mathsf{T}}$.
 > - Permutation matrices: $M(\sigma)^{-1} = M(\sigma)^{\mathsf{T}}$, Proposition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]].
 > - $\det(A)^2 = \det(A^{\mathsf{T}}A) = 1$.
 
@@ -203,7 +203,7 @@ $SO(n) = O(n) \cap SL_n(\mathbb{R})$, see Definition [[§3 Basic Examples of Gro
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§3 Basic Examples of Groups#^def-3-9|§3.9]]; intersections of subgroups, Proposition [[§4 Subgroups#^prop-4-3|§4.3]].
-> - $R_\theta$ rotation matrices, $R_\theta R_\varphi = R_{\theta + \varphi}$; $\langle R_{2\pi/n} \rangle \cong C_n$: Example [[§5 A Zoo of Subgroups#^ex-5-4|§5.4]].
+> - $R_\theta$ rotation matrices, $R_\theta R_\varphi = R_{\theta + \varphi}$; $\langle R_{2\pi/n} \rangle \cong C_n$: Example [[§5 A Zoo of Subgroups#^ex-5-5|§5.5]].
 
 #### Subgroup · P1
 
@@ -219,7 +219,7 @@ $H \subseteq G$ is a subgroup if $e_G \in H$, $h \in H \Rightarrow h^{-1} \in H$
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§4 Subgroups#^def-4-1|§4.1]]; Proposition [[§4 Subgroups#^prop-4-1|§4.1]], Proposition [[§4 Subgroups#^prop-4-2|§4.2]], Proposition [[§4 Subgroups#^prop-4-3|§4.3]].
-> - Union fails: $2 + 3 = 5$. Checkerboard: Example [[§5 A Zoo of Subgroups#^ex-5-1|§5.1]].
+> - Union fails: $2 + 3 = 5$. Checkerboard: Example [[§5 A Zoo of Subgroups#^ex-5-2|§5.2]].
 > - $\varnothing$ satisfies the one-step condition vacuously but contains no identity.
 
 #### Subgroup generated by an element · P1
@@ -249,7 +249,7 @@ A word in $g_1, \ldots, g_k$ is a finite product $g_{m_1}^{n_1} \cdots g_{m_N}^{
 - [ ] Q4 **[why]** In $S_3$, $(1\,2)(2\,3)(1\,2) = (1\,3)$. What does this say about reduced words?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§4 Subgroups#^def-4-4|§4.4]]; Example [[§4 Subgroups#^ex-4-1|§4.1]] (WS 1.6), where the inverse reverses order and negates exponents (WS 1.4).
+> - Definition [[§4 Subgroups#^def-4-4|§4.4]]; Example [[§4 Subgroups#^ex-4-3|§4.3]] (WS 1.6), where the inverse reverses order and negates exponents (WS 1.4).
 
 #### Subgroup generated by several elements · P1
 
@@ -264,7 +264,7 @@ $\langle g_1, \ldots, g_k \rangle$ is the set of all words in $g_1, \ldots, g_k$
 - [ ] Q5 **[example]** Which generating sets of $S_n$ and $A_n$ appear in the notes?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§4 Subgroups#^def-4-5|§4.5]]; Proposition [[§4 Subgroups#^prop-4-7|§4.7]]; remark [[§4 Subgroups#^rem-4-2|Two Checks on the Definition]].
+> - Definition [[§4 Subgroups#^def-4-5|§4.5]]; Proposition [[§4 Subgroups#^prop-4-9|§4.9]]; Lemma [[§4 Subgroups#^lem-4-7|§4.7]].
 > - $\langle a, b \rangle = \gcd(a, b)\mathbb{Z}$: Corollary [[§5 A Zoo of Subgroups#^cor-5-2|§5.2]].
 > - $S_n$: Theorem [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-7|§21.7]]; $A_n$: Theorem [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|§21.9]].
 
@@ -297,7 +297,7 @@ $g$ has finite order if $g^N = e$ for some $N \geq 1$, and $\operatorname{ord}(g
 - [ ] Q5 **[why]** Why must every element of a finite group have finite order? Where does the argument fail for $\mathbb{Z}$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§4 Subgroups#^def-4-7|§4.7]]; Proposition [[§4 Subgroups#^prop-4-8|§4.8]] (pigeonhole).
+> - Definition [[§4 Subgroups#^def-4-7|§4.7]]; Proposition [[§4 Subgroups#^prop-4-10|§4.10]] (pigeonhole).
 > - Kernel of $k \mapsto g^k$ is $\operatorname{ord}(g)\mathbb{Z}$: Proposition [[§17 Cyclic Groups#^prop-17-3|§17.3]](2); $\operatorname{ord}(g^k) = n/\gcd(n, k)$: Proposition [[§17 Cyclic Groups#^prop-17-5|§17.5]].
 > - Disjoint cycles: order is the lcm, Proposition [[§11 Disjoint Cycle Decomposition#^prop-11-4|§11.4]].
 
@@ -452,7 +452,7 @@ $ax = b$ has exactly one solution $x = a^{-1}b$ and $xa = b$ exactly one, $x = b
 
 > [!tip]- Hints: route of the proof in the notes
 > - Existence $a(a^{-1}b) = b$; uniqueness by left cancellation (Proposition [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]]).
-> - Remark [[§2 First Consequences of the Axioms#^rem-2-5|The Converse Fails]] (associativity); tables in Definition [[§14 Multiplication Tables#^def-14-1|§14.1]].
+> - Example [[§2 First Consequences of the Axioms#^ex-2-3|§2.3]] (associativity); tables in Definition [[§14 Multiplication Tables#^def-14-1|§14.1]].
 
 #### ⟨g⟩ is a subgroup · P1
 
@@ -473,7 +473,7 @@ $\langle g \rangle = \{g^k : k \in \mathbb{Z}\}$ is a subgroup of $G$, see Propo
 
 #### Defining ⟨g₁,…,g_k⟩ · P1
 
-The right definition of $\langle g_1, \ldots, g_k \rangle$ is the set of all words; products of powers in a fixed order fail, see Example [[§4 Subgroups#^ex-4-1|§4.1]]. *Source: WS 1.6.*
+The right definition of $\langle g_1, \ldots, g_k \rangle$ is the set of all words; products of powers in a fixed order fail, see Example [[§4 Subgroups#^ex-4-3|§4.3]]. *Source: WS 1.6.*
 
 ^nd-ex-4-1
 
@@ -508,7 +508,7 @@ The subgroups of $(\mathbb{Z}, +)$ are exactly $n\mathbb{Z}$, $n = 0, 1, 2, \ldo
 
 #### Subgroups of ℤ² · P1
 
-Subgroups of $\mathbb{Z}^2$ include cyclic ones $\langle (a, b) \rangle$, products $m\mathbb{Z} \times n\mathbb{Z}$, and rank-two lattices not of product form such as $\langle (1,1), (1,-1) \rangle = \{(x, y) : x \equiv y \pmod 2\}$, see Example [[§5 A Zoo of Subgroups#^ex-5-1|§5.1]]. *Source: WS 1.7.*
+Subgroups of $\mathbb{Z}^2$ include cyclic ones $\langle (a, b) \rangle$, products $m\mathbb{Z} \times n\mathbb{Z}$, and rank-two lattices not of product form such as $\langle (1,1), (1,-1) \rangle = \{(x, y) : x \equiv y \pmod 2\}$, see Example [[§5 A Zoo of Subgroups#^ex-5-2|§5.2]]. *Source: WS 1.7.*
 
 ^nd-ex-5-1
 
@@ -525,7 +525,7 @@ Subgroups of $\mathbb{Z}^2$ include cyclic ones $\langle (a, b) \rangle$, produc
 
 #### Subgroups of ℝ: list and dichotomy · P1
 
-Subgroups of $(\mathbb{R}, +)$ include $a\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{Z}[\tfrac12]$, $a\mathbb{Z} + b\mathbb{Z}$; every $H \neq \{0\}$ is either $a\mathbb{Z}$ for a unique $a > 0$ or dense, and $\mathbb{Z} + \sqrt2\,\mathbb{Z}$ is dense, see Example [[§5 A Zoo of Subgroups#^ex-5-2|§5.2]], Proposition [[§5 A Zoo of Subgroups#^prop-5-3|§5.3]] and Example [[§5 A Zoo of Subgroups#^ex-5-3|§5.3]]. *Source: WS 1.7 (list); dichotomy from the notes.*
+Subgroups of $(\mathbb{R}, +)$ include $a\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{Z}[\tfrac12]$, $a\mathbb{Z} + b\mathbb{Z}$; every $H \neq \{0\}$ is either $a\mathbb{Z}$ for a unique $a > 0$ or dense, and $\mathbb{Z} + \sqrt2\,\mathbb{Z}$ is dense, see Example [[§5 A Zoo of Subgroups#^ex-5-3|§5.3]], Proposition [[§5 A Zoo of Subgroups#^prop-5-3|§5.3]] and Example [[§5 A Zoo of Subgroups#^ex-5-4|§5.4]]. *Source: WS 1.7 (list); dichotomy from the notes.*
 
 ^nd-prop-5-3
 
@@ -543,7 +543,7 @@ Subgroups of $(\mathbb{R}, +)$ include $a\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{Z}[
 
 #### Subgroups of GL₂(ℝ) and GL₃(ℝ) · P1
 
-$GL_n(\mathbb{R})$ ($n = 2, 3$) contains $SL_n$, scalars, diagonal, upper-triangular and unipotent matrices, $O(n)$, $SO(n)$, permutation matrices, $GL_n(\mathbb{Q})$, $GL_n(\mathbb{Z})$, cyclic subgroups and block copies, see Example [[§5 A Zoo of Subgroups#^ex-5-4|§5.4]]. *Source: WS 1.7.*
+$GL_n(\mathbb{R})$ ($n = 2, 3$) contains $SL_n$, scalars, diagonal, upper-triangular and unipotent matrices, $O(n)$, $SO(n)$, permutation matrices, $GL_n(\mathbb{Q})$, $GL_n(\mathbb{Z})$, cyclic subgroups and block copies, see Example [[§5 A Zoo of Subgroups#^ex-5-5|§5.5]]. *Source: WS 1.7.*
 
 ^nd-ex-5-4
 
@@ -603,7 +603,7 @@ For all $m, n \in \mathbb{Z}$: $(g^n)^{-1} = g^{-n}$, $g^mg^n = g^{m+n}$, $(g^m)
 
 #### Elements of a finite group have finite order · P4
 
-In a finite group every $g$ has $g^N = e$ for some $N \geq 1$, and $\operatorname{ord}(g) \leq |G|$, see Proposition [[§4 Subgroups#^prop-4-8|§4.8]]. *Source: notes.*
+In a finite group every $g$ has $g^N = e$ for some $N \geq 1$, and $\operatorname{ord}(g) \leq |G|$, see Proposition [[§4 Subgroups#^prop-4-10|§4.10]]. *Source: notes.*
 
 ^nd-prop-4-8
 
@@ -681,7 +681,7 @@ Any nonempty intersection of subgroups is a subgroup; unions need not be, see Pr
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G1; each condition is checked "coordinatewise in $i$".
-> - Used in Proposition [[§4 Subgroups#^prop-4-7|§4.7]] and Definition [[§3 Basic Examples of Groups#^def-3-9|§3.9]].
+> - Used in Proposition [[§4 Subgroups#^prop-4-9|§4.9]] and Definition [[§3 Basic Examples of Groups#^def-3-9|§3.9]].
 
 #### ⟨g⟩ is the smallest subgroup containing g · P5
 
@@ -701,7 +701,7 @@ Every subgroup containing $g$ contains $\langle g \rangle$; and $\langle g \rang
 
 #### Top-down characterization of ⟨g₁,…,g_k⟩ · P5
 
-$\langle g_1, \ldots, g_k \rangle$ is the smallest subgroup containing the $g_i$ and equals the intersection of all such subgroups, see Proposition [[§4 Subgroups#^prop-4-7|§4.7]]. *Source: notes.*
+$\langle g_1, \ldots, g_k \rangle$ is the smallest subgroup containing the $g_i$ and equals the intersection of all such subgroups, see Proposition [[§4 Subgroups#^prop-4-9|§4.9]]. *Source: notes.*
 
 ^nd-prop-4-7
 
@@ -765,7 +765,7 @@ $\mathbb{Z}/n\mathbb{Z} = \{[a]\}$ with $[a] + [b] := [a + b]$ is an abelian gro
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§7 The Group ℤ∕nℤ#^def-7-1|§7.1]]; Proposition [[§7 The Group ℤ∕nℤ#^prop-7-1|§7.1]].
-> - $\langle [1] \rangle$; generators $[1], [5], [7], [11]$: Example [[§17 Cyclic Groups#^ex-17-1|§17.1]].
+> - $\langle [1] \rangle$; generators $[1], [5], [7], [11]$: Example [[§17 Cyclic Groups#^ex-17-4|§17.4]].
 > - $[0]$ has no inverse; restrict to $U_n$, Definition [[§8 Invertibility and Unit Groups#^def-8-4|§8.4]]. Reduction $x \mapsto [x]$: Example [[§15 Homomorphisms#^ex-15-1|§15.1]](2).
 
 #### Well-defined · P1
@@ -938,7 +938,7 @@ Every $n \geq 2$ is a product of primes, unique up to order, see Theorem [[§9 E
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: strong induction plus Euclid (G14).
 > - $p_1 \mid q_1 \cdots q_l$, Euclid repeatedly, $p_1 = q_j$ since $q_j$ is prime; cancel.
-> - Proposition [[§16 Isomorphisms#^prop-16-9|§16.9]](2); Theorem [[§22 The Structure of Uₙ#^thm-22-2|§22.2]].
+> - Proposition [[§16 Isomorphisms#^prop-16-10|§16.10]](2); Theorem [[§22 The Structure of Uₙ#^thm-22-2|§22.2]].
 
 ### Priority 2 · problem sets (about a quarter)
 
@@ -1041,7 +1041,7 @@ For $p$ prime and $p \nmid a$, $[x] \mapsto [a][x]$ is a bijection of $\{[1], \l
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: pigeonhole with cancellation (G14).
 > - Euclid's lemma, Lemma [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^lem-9-1|§9.1]]: $p \mid a(i - j)$ gives $p \mid i - j$.
-> - $p - 1$ distinct values in a set of size $p - 1$. Remark [[§8 Invertibility and Unit Groups#^rem-8-2|Finiteness Plus Cancellation]]; compare Proposition [[§4 Subgroups#^prop-4-8|§4.8]].
+> - $p - 1$ distinct values in a set of size $p - 1$. Remark [[§8 Invertibility and Unit Groups#^rem-8-2|Finiteness Plus Cancellation]]; compare Proposition [[§4 Subgroups#^prop-4-10|§4.10]].
 
 #### Euclid's lemma · P5
 
@@ -1265,7 +1265,7 @@ For finite $G = \{g_1, \ldots, g_n\}$, the multiplication (Cayley) table has $g_
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§14 Multiplication Tables#^def-14-1|§14.1]]; Latin square property Corollary [[§2 First Consequences of the Axioms#^cor-2-8|§2.8]].
 > - Example [[§14 Multiplication Tables#^ex-14-1|§14.1]] ($\mathbb{Z}/4\mathbb{Z}$, $U_5$); Example [[§14 Multiplication Tables#^ex-14-5|§14.5]] ($S_3$: $(1\,2\,3)$ and $(1\,3\,2)$).
-> - Remark [[§16 Isomorphisms#^rem-16-5|Reading the Isomorphism off the Tables]].
+> - Remark [[§16 Isomorphisms#^rem-16-4|Reading the Isomorphism off the Tables]].
 
 #### Group homomorphism · P1
 
@@ -1487,7 +1487,7 @@ The multiplication table of $U_7$ is symmetric and the position of $1$ in each r
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G14; G10.
-> - $3$ has order $6$, $2$ has order $3$: remark [[§16 Isomorphisms#^rem-16-6|Reading Cyclicity off a Table]], Proposition [[§16 Isomorphisms#^prop-16-8|§16.8]](2).
+> - $3$ has order $6$, $2$ has order $3$: remark [[§16 Isomorphisms#^rem-16-5|Reading Cyclicity off a Table]], Proposition [[§16 Isomorphisms#^prop-16-8|§16.8]](2).
 
 #### Table of U₈ · P1
 
@@ -1589,7 +1589,7 @@ If $G \cong H$ and $G$ is commutative, so is $H$; if $g^2 = e$ for all $g \in G$
 > - Strategy: transport a property through $\varphi$ or $\varphi^{-1}$.
 > - $\varphi^{-1}(h_1h_2) = \varphi^{-1}(h_2h_1)$, then injectivity.
 > - $h^2 = \varphi(g^2) = \varphi(e_G) = e_H$; $1 + 1 = 2 \neq 0$ in $\mathbb{Z}/4\mathbb{Z}$.
-> - Centre sizes $6$ vs $1$ (remark [[§16 Isomorphisms#^rem-16-4|Using These to Distinguish Groups]]); an element of order $6$ (Proposition [[§16 Isomorphisms#^prop-16-5|§16.5]]).
+> - Centre sizes $6$ vs $1$ (Example [[§16 Isomorphisms#^ex-16-2|§16.2]]); an element of order $6$ (Proposition [[§16 Isomorphisms#^prop-16-5|§16.5]]).
 
 #### ℤ/4ℤ ≅ U₅ · P1
 
@@ -1607,7 +1607,7 @@ $\varphi : \mathbb{Z}/4\mathbb{Z} \to U_5$, $k \mapsto 2^k$ is an isomorphism ($
 > - Strategy: G2 (well-definedness), then G14.
 > - $2^4 = 16 \equiv 1 \pmod 5$: Lemma [[§7 The Group ℤ∕nℤ#^lem-7-2|§7.2]].
 > - $4^k$ is well defined ($4^4 \equiv 1$) but $4$ has order $2$: image $\{1, 4\}$.
-> - Remark [[§17 Cyclic Groups#^rem-17-1|WS 2.5 and WS 2.7(2) as Instances]].
+> - Example [[§17 Cyclic Groups#^ex-17-1|§17.1]].
 
 #### U₈ and U₇ · P1
 
@@ -1629,7 +1629,7 @@ $U_8 \cong \mathbb{Z}/2\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$, hence $U_8 \no
 
 #### Structure of ℝ^× and ℚ^× · P1
 
-$\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \mathbb{Z}/2\mathbb{Z}$ and $\mathbb{Q}^\times \cong \mathbb{Z}^{\oplus\infty} \times \mathbb{Z}/2\mathbb{Z}$, see Proposition [[§16 Isomorphisms#^prop-16-9|§16.9]]. *Source: WS 2.8.*
+$\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \mathbb{Z}/2\mathbb{Z}$ and $\mathbb{Q}^\times \cong \mathbb{Z}^{\oplus\infty} \times \mathbb{Z}/2\mathbb{Z}$, see Proposition [[§16 Isomorphisms#^prop-16-10|§16.10]]. *Source: WS 2.8.*
 
 ^nd-prop-16-9
 
@@ -1643,7 +1643,7 @@ $\mathbb{R}^\times \cong \mathbb{R}_{>0} \times \mathbb{Z}/2\mathbb{Z}$ and $\ma
 > - Strategy: split into "size" and "sign".
 > - "Negative times negative is positive" is $[1] + [1] = [0]$.
 > - Theorem [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-2|§9.2]], extended by clearing denominators.
-> - A rational has finitely many prime factors. Remark [[§16 Isomorphisms#^rem-16-7|Interpretation]].
+> - A rational has finitely many prime factors. Remark [[§16 Isomorphisms#^rem-16-6|Interpretation]].
 
 #### Classification of cyclic groups · P1
 
@@ -1681,7 +1681,7 @@ $\varphi_g : \mathbb{Z} \to G$, $k \mapsto g^k$ is a homomorphism; if $\operator
 > - Strategy: G5, G2, G14.
 > - $g^{k + Nm} = g^k(g^N)^m = g^k$; Lemma [[§7 The Group ℤ∕nℤ#^lem-7-2|§7.2]].
 > - $g^k = e$ with $k \neq 0$ gives $g^{|k|} = e$.
-> - $\mathbb{Z}/0\mathbb{Z} = \mathbb{Z}$; remark [[§17 Cyclic Groups#^rem-17-2|Relation to the Classification]].
+> - $\mathbb{Z}/0\mathbb{Z} = \mathbb{Z}$; remark [[§17 Cyclic Groups#^rem-17-1|Relation to the Classification]].
 
 #### Characterizations of abelian groups, worksheet form · P1
 
@@ -1793,7 +1793,7 @@ In $G = \langle g \rangle$ of order $n$: $g^k$ generates iff $\gcd(k, n) = 1$ (s
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G14, G3 (Lagrange for "no other orders").
 > - Proposition [[§17 Cyclic Groups#^prop-17-5|§17.5]], Corollary [[§17 Cyclic Groups#^cor-17-2|§17.2]], Theorem [[§17 Cyclic Groups#^thm-17-4|§17.4]] ($g^n = e \in H$ gives $m \mid n$).
-> - Example [[§17 Cyclic Groups#^ex-17-1|§17.1]]; $U_8$ has three subgroups of order $2$.
+> - Example [[§17 Cyclic Groups#^ex-17-4|§17.4]]; $U_8$ has three subgroups of order $2$.
 
 ### Priority 5 · notes only (Pinter, MATH 412, not from class)
 
@@ -1859,7 +1859,7 @@ If $G = \langle g \rangle$ and $H \leq G$, $H \neq \{e\}$, then $H = \langle g^m
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: smallest positive exponent plus division algorithm (G14).
 > - $g^r = g^t(g^m)^{-q} \in H$.
-> - Proposition [[§5 A Zoo of Subgroups#^prop-5-1|§5.1]]; the checkerboard $\langle (1,1), (1,-1) \rangle \leq \mathbb{Z}^2$ (Example [[§5 A Zoo of Subgroups#^ex-5-1|§5.1]]) is not cyclic.
+> - Proposition [[§5 A Zoo of Subgroups#^prop-5-1|§5.1]]; the checkerboard $\langle (1,1), (1,-1) \rangle \leq \mathbb{Z}^2$ (Example [[§5 A Zoo of Subgroups#^ex-5-2|§5.2]]) is not cyclic.
 
 #### The order of a power · P5
 
@@ -1913,7 +1913,7 @@ $k[x_1, \ldots, x_n]$ is the set of finite $k$-linear combinations of monomials 
 - [ ] Q4 **[why]** Why are polynomials treated as formal expressions, not functions? (Think of $x^p - x$ over $\mathbb{F}_p$.)
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-1|§20.1]]; remark [[§20 Polynomial Rings, Permutation Matrices, and Representations#^rem-20-1|k as a Ring]].
+> - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-1|§20.1]]; Example [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-1|§20.1]].
 > - $\sigma \cdot \Delta = \pm \Delta$ with $\Delta \neq 0$: Theorem [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|§21.2]].
 > - Over $\mathbb{F}_p$ the nonzero polynomial $x^p - x$ vanishes at every point.
 
@@ -1929,7 +1929,7 @@ $(\sigma \cdot f)(x_1, \ldots, x_n) = f(x_{\sigma(1)}, \ldots, x_{\sigma(n)})$: 
 - [ ] Q4 **[why]** Why does the rule "replace $x_i$ by $x_{\sigma(i)}$" give $\sigma \cdot (\tau \cdot f) = (\sigma\tau) \cdot f$ and not $(\tau\sigma) \cdot f$? Track the variable in position $i$.
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|§20.3]]; Example [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-1|§20.1]]; Proposition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|§20.1]].
+> - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|§20.3]]; Example [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-3|§20.3]]; Proposition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|§20.1]].
 > - Remark [[§20 Polynomial Rings, Permutation Matrices, and Representations#^rem-20-4|Group Actions]].
 
 #### Permutation matrix · P2
@@ -1945,7 +1945,7 @@ $M(\sigma)$ is the matrix of the linear map $e_i \mapsto e_{\sigma(i)}$: column 
 - [ ] Q5 **[use]** What are $M(\sigma)^{-1}$ and $\det M(\sigma)$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|§20.6]]; Example [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-2|§20.2]] (recipe: columns $e_{\sigma(1)}, \ldots, e_{\sigma(n)}$).
+> - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|§20.6]]; Example [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-4|§20.4]] (recipe: columns $e_{\sigma(1)}, \ldots, e_{\sigma(n)}$).
 > - Remark [[§20 Polynomial Rings, Permutation Matrices, and Representations#^rem-20-3|Row vs. Column Convention]]; Proposition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|§20.5]]; $\det M(\sigma) = \operatorname{sgn}\sigma$ (Definition [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|§21.2]]).
 
 #### Inversions of a permutation · P2
@@ -2009,7 +2009,7 @@ A commutative ring is $(R, +, \cdot)$ with $(R, +)$ abelian and $\cdot$ associat
 - [ ] Q4 **[why]** Is $\mathbb{Z}/6\mathbb{Z}$ a commutative ring? A field? Which elements are units?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-2|§20.2]]; remark [[§20 Polynomial Rings, Permutation Matrices, and Representations#^rem-20-1|k as a Ring]] ($x_1 g = 1$ impossible by degree).
+> - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-2|§20.2]]; Example [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-1|§20.1]] ($x_1 g = 1$ impossible by degree).
 > - $\mathbb{Z}$, $k[x]$, $\mathbb{Z}/6\mathbb{Z}$ with units $U_6 = \{1, 5\}$ (Proposition [[§8 Invertibility and Unit Groups#^prop-8-4|§8.4]]).
 
 #### Symmetric polynomial · P5
@@ -2024,7 +2024,7 @@ $f$ is symmetric if $\sigma \cdot f = f$ for all $\sigma \in S_n$, see Definitio
 - [ ] Q4 **[why]** Is $\Delta$ symmetric? Is $\Delta^2$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-4|§20.4]]; Example [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-1|§20.1]]; strategy G7 (work on generators).
+> - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-4|§20.4]]; Example [[§20 Polynomial Rings, Permutation Matrices, and Representations#^ex-20-3|§20.3]]; strategy G7 (work on generators).
 > - $(1\,2)$ and $(1\,2\,3)$ generate $S_3$; $\Delta$ is alternating, $\Delta^2$ symmetric (remark [[§21 The Sign Homomorphism and the Alternating Group#^rem-21-3|The Origin of the Names]]).
 
 #### Standard basis of kⁿ · P5
@@ -2054,7 +2054,7 @@ A representation of $G$ is a homomorphism $G \to GL_n(k)$ (more generally $G \to
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7|§20.7]]; Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-8|§20.8]]; $\operatorname{sgn}$ into $GL_1 = \mathbb{Q}^\times$ (remark [[§21 The Sign Homomorphism and the Alternating Group#^rem-21-3|The Origin of the Names]]).
-> - Rotations $[k] \mapsto R_{2\pi k/n}$; $t \mapsto \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}$ (Example [[§5 A Zoo of Subgroups#^ex-5-4|§5.4]]).
+> - Rotations $[k] \mapsto R_{2\pi k/n}$; $t \mapsto \begin{pmatrix} 1 & t \\ 0 & 1 \end{pmatrix}$ (Example [[§5 A Zoo of Subgroups#^ex-5-5|§5.5]]).
 > - $GL_1(k) = k^\times$.
 
 #### Alternating polynomial · P5
@@ -2351,7 +2351,7 @@ A map $X \times G \to X$ with $x \star (g_2g_1) = (x \star g_2) \star g_1$ and $
 - [ ] Q4 **[why]** Why is $(x, g) \mapsto gx$ (without inverse) not a right action for non-abelian $G$?
 
 > [!tip]- Hints: where it lives, examples
-> - Right multiplication by $H$ has orbits the left cosets $gH$: Proposition [[§28 Left and Right Cosets#^prop-28-1|§28.1]].
+> - Right multiplication by $H$ has orbits the left cosets $gH$: Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]].
 > - Conversion $x \star g = g^{-1}x$: Proposition [[§25 Actions#^prop-25-1|§25.1]].
 
 #### Kernel of an action · P1
@@ -2414,7 +2414,7 @@ $Gx = \{g \star x : g \in G\} \subseteq X$, see Definition [[§27 Orbits#^def-27
 - [ ] Q4 **[why]** Why do orbits partition $X$, and how does $|Gx|$ relate to $|G|$?
 
 > [!tip]- Hints: where it lives, examples
-> - Conjugation orbits are conjugacy classes (Definition [[§33 Conjugacy Classes#^def-33-1|§33.1]]); right-multiplication orbits are left cosets (Proposition [[§28 Left and Right Cosets#^prop-28-1|§28.1]]).
+> - Conjugation orbits are conjugacy classes (Definition [[§33 Conjugacy Classes#^def-33-1|§33.1]]); right-multiplication orbits are left cosets (Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]]).
 > - Partition: Proposition [[§27 Orbits#^prop-27-1|§27.1]]; size: Theorem [[§30 Orbit–Stabilizer#^thm-30-3|§30.3]].
 
 #### Orbit space · P1
@@ -2429,7 +2429,7 @@ The set of orbits, $G \backslash X$ for a left action and $X/G$ for a right acti
 - [ ] Q4 **[why]** Why is the orbit space a partition of $X$ (and not just a set of subsets)?
 
 > [!tip]- Hints: where it lives, examples
-> - $G/H$ and $H \backslash G$: Proposition [[§28 Left and Right Cosets#^prop-28-1|§28.1]].
+> - $G/H$ and $H \backslash G$: Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]].
 > - Burnside: Theorem [[§30 Orbit–Stabilizer#^thm-30-7|§30.7]]; partition: Proposition [[§27 Orbits#^prop-27-1|§27.1]].
 
 #### Transitive action · P1
@@ -2492,7 +2492,7 @@ $R_x = \{y \in X : x \sim y\}$, which contains $x$, see Definition [[§24 Equiva
 - [ ] Q4 **[why]** Why do the classes of the orbit relation equal the orbits $Gx$?
 
 > [!tip]- Hints: where it lives, examples
-> - Classes of $\equiv_\ell$ are the left cosets, Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]].
+> - Classes of $\equiv_\ell$ are the left cosets, Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]].
 > - Classes of the orbit relation are orbits, Proposition [[§27 Orbits#^prop-27-2|§27.2]].
 
 #### Partition · P3
@@ -2507,7 +2507,7 @@ A collection of nonempty subsets (parts) of $X$ with every element in exactly on
 - [ ] Q4 **[why]** Why must the parts be nonempty for the dictionary with equivalence relations to work?
 
 > [!tip]- Hints: where it lives, examples
-> - Cosets of $\{e, (1\,2)\}$: Example [[§28 Left and Right Cosets#^ex-28-1|§28.1]].
+> - Cosets of $\{e, (1\,2)\}$: Example [[§28 Left and Right Cosets#^ex-28-2|§28.2]].
 > - Orbits of $O_3$: Proposition [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|§32.2]].
 
 #### Arrow notation · P3
@@ -2551,7 +2551,7 @@ $g_1 \equiv_\ell g_2 \pmod H$ iff $g_1^{-1}g_2 \in H$; $g_1 \equiv_r g_2 \pmod H
 - [ ] Q4 **[why]** Why do the two relations agree when $G$ is abelian, and what are their classes in general?
 
 > [!tip]- Hints: where it lives, examples
-> - Classes: Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]].
+> - Classes: Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]].
 > - $\mathbb{Z}$ case: ordinary congruence (remark [[§28 Left and Right Cosets#^rem-28-1|§28]]).
 
 #### Left and right cosets · P3
@@ -2567,8 +2567,8 @@ $gH = \{gh : h \in H\}$ and $Hg = \{hg : h \in H\}$, see Definition [[§28 Left 
 - [ ] Q5 **[why]** For which subgroups do left and right cosets coincide?
 
 > [!tip]- Hints: where it lives, examples
-> - Example [[§28 Left and Right Cosets#^ex-28-1|§28.1]]; [[Group Theory HW Drill#^ps2-1|PS2.1]] is Proposition [[§30 Orbit–Stabilizer#^prop-30-4|§30.4]].
-> - $gH = Hg$ for all $g$ is normality, Theorem [[§38 Normal Subgroups#^thm-38-3|§38.3]].
+> - Example [[§28 Left and Right Cosets#^ex-28-2|§28.2]]; [[Group Theory HW Drill#^ps2-1|PS2.1]] is Proposition [[§30 Orbit–Stabilizer#^prop-30-4|§30.4]].
+> - $gH = Hg$ for all $g$ is normality, Theorem [[§38 Normal Subgroups#^thm-38-4|§38.4]].
 
 #### Index · P3
 
@@ -2582,7 +2582,7 @@ $[G : H]$ is the number of left cosets of $H$ in $G$, in $\mathbb{Z}_{>0} \cup \
 - [ ] Q4 **[why]** Give a subgroup of infinite index in an infinite group, and one of finite index.
 
 > [!tip]- Hints: where it lives, examples
-> - Left/right bijection $gH \mapsto Hg^{-1}$: Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]].
+> - Left/right bijection $gH \mapsto Hg^{-1}$: Proposition [[§28 Left and Right Cosets#^prop-28-4|§28.4]].
 > - $[S_n : \operatorname{Stab}(n)] = n$: Corollary [[§30 Orbit–Stabilizer#^cor-30-5|§30.5]].
 
 ### Priority 5 · notes only (Pinter, MATH 412, not from class)
@@ -2619,7 +2619,7 @@ If $(g, x) \mapsto gx$ is a left action, then $x \star g := g^{-1}x$ is a right 
 
 > [!tip]- Hints: route of the proof in the notes
 > - $(x \star g_2) \star g_1 = g_1^{-1}(g_2^{-1}x) = (g_2g_1)^{-1}x$ (socks and shoes).
-> - Same trick: the bijection $gH \mapsto Hg^{-1}$, Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]].
+> - Same trick: the bijection $gH \mapsto Hg^{-1}$, Proposition [[§28 Left and Right Cosets#^prop-28-4|§28.4]].
 
 #### Each group element acts bijectively · P1
 
@@ -2717,7 +2717,7 @@ $g_1 \star x = g_2 \star x \iff g_1^{-1}g_2 \in \operatorname{Stab}(x) \iff g_1\
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G2.
-> - Apply $g_1^{-1}$; then $g_1H = g_2H \iff g_1^{-1}g_2 \in H$ (Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]]).
+> - Apply $g_1^{-1}$; then $g_1H = g_2H \iff g_1^{-1}g_2 \in H$ (Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]]).
 
 #### The orbit bijection · P1
 
@@ -2842,7 +2842,7 @@ For an equivalence relation, $R_{x_1} \cap R_{x_2} \neq \varnothing \iff R_{x_1}
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: unwind the definitions; the three axioms used once each.
 > - $x_1 \sim y$, $y \sim x_2$ (symmetry) give $x_1 \sim x_2$ (transitivity); covering is reflexivity.
-> - Applied in Propositions [[§28 Left and Right Cosets#^prop-28-2|§28.2]] and [[§27 Orbits#^prop-27-2|§27.2]].
+> - Applied in Propositions [[§28 Left and Right Cosets#^prop-28-3|§28.3]] and [[§27 Orbits#^prop-27-2|§27.2]].
 
 #### Partitions come from equivalence relations · P3
 
@@ -2863,7 +2863,7 @@ Every partition comes from a unique equivalence relation, "same part", see Propo
 
 #### Cosets are orbits · P3
 
-$H$ acts on $G$ on the right by multiplication with orbits the left cosets ($G/H$), and on the left with orbits the right cosets ($H \backslash G$); so $[G : H] = |G/H|$, see Proposition [[§28 Left and Right Cosets#^prop-28-1|§28.1]]. *Source: lecture.*
+$H$ acts on $G$ on the right by multiplication with orbits the left cosets ($G/H$), and on the left with orbits the right cosets ($H \backslash G$); so $[G : H] = |G/H|$, see Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]]. *Source: lecture.*
 
 ^nd-prop-28-1
 
@@ -2879,7 +2879,7 @@ $H$ acts on $G$ on the right by multiplication with orbits the left cosets ($G/H
 
 #### Cosets are the equivalence classes · P3
 
-$\equiv_\ell \pmod H$ and $\equiv_r \pmod H$ are equivalence relations with classes the left and right cosets, so $G$ is the disjoint union of its left (and of its right) cosets, see Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]]. *Source: lecture 9/11.*
+$\equiv_\ell \pmod H$ and $\equiv_r \pmod H$ are equivalence relations with classes the left and right cosets, so $G$ is the disjoint union of its left (and of its right) cosets, see Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]]. *Source: lecture 9/11.*
 
 ^nd-prop-28-2
 
@@ -2896,7 +2896,7 @@ $\equiv_\ell \pmod H$ and $\equiv_r \pmod H$ are equivalence relations with clas
 
 #### The natural bijection $G/H \to H \backslash G$ · P3
 
-$gH \mapsto Hg^{-1}$ is a well-defined bijection with inverse $Hg \mapsto g^{-1}H$, so left and right cosets are equinumerous; $gH \mapsto Hg$ is not well defined, see Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]] and Example [[§28 Left and Right Cosets#^ex-28-2|§28.2]]. *Source: lecture 9/11 ("I'll leave for you as an exercise"; "That's actually a very good exercise").* **[class exercise, 9/11]**
+$gH \mapsto Hg^{-1}$ is a well-defined bijection with inverse $Hg \mapsto g^{-1}H$, so left and right cosets are equinumerous; $gH \mapsto Hg$ is not well defined, see Proposition [[§28 Left and Right Cosets#^prop-28-4|§28.4]] and Example [[§28 Left and Right Cosets#^ex-28-3|§28.3]]. *Source: lecture 9/11 ("I'll leave for you as an exercise"; "That's actually a very good exercise").* **[class exercise, 9/11]**
 
 ^nd-prop-28-3
 
@@ -2941,8 +2941,8 @@ $|G| = |H| \cdot [G : H]$ (both sides finite together); so $|H|$ divides $|G|$ f
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G3 (Lagrange and divisibility).
-> - Partition: Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]]; sizes: Proposition [[§29 The Index and Lagrange's Theorem#^prop-29-1|§29.1]].
-> - $A_4$: Example [[§29 The Index and Lagrange's Theorem#^ex-29-1|§29.1]]: index $2$ is normal, so $g^2 \in H$ for all $g$, so all eight $3$-cycles lie in $H$.
+> - Partition: Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]]; sizes: Proposition [[§29 The Index and Lagrange's Theorem#^prop-29-1|§29.1]].
+> - $A_4$: Example [[§29 The Index and Lagrange's Theorem#^ex-29-3|§29.3]]: index $2$ is normal, so $g^2 \in H$ for all $g$, so all eight $3$-cycles lie in $H$.
 
 #### Order of an element divides $|G|$; Fermat's little theorem · P3
 
@@ -3009,7 +3009,7 @@ Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]] and Corollary
 
 #### Index of an intersection · P5
 
-Proposition [[§29 The Index and Lagrange's Theorem#^prop-29-9|§29.9]] and Example [[§29 The Index and Lagrange's Theorem#^ex-29-2|§29.2]] → drilled as [[493 Problem Set 5#^hw-5-1|PS5.1]].
+Proposition [[§29 The Index and Lagrange's Theorem#^prop-29-10|§29.10]] and Example [[§29 The Index and Lagrange's Theorem#^ex-29-6|§29.6]] → drilled as [[493 Problem Set 5#^hw-5-1|PS5.1]].
 
 #### Left cosets of the point stabilizer record $\alpha(n)$ · P5
 
@@ -3083,7 +3083,7 @@ $Z(G)$ is the set of central elements, see Definition [[§35 The Center#^def-35-
 - [ ] Q4 **[why]** For a $p$-group, why is $Z(G) \neq \{e\}$, and how does one central element $z \neq e$ start the classification of groups of order $p^2$?
 
 > [!tip]- Hints: where it lives, examples
-> - Kernel of $h \mapsto c_h$: Proposition [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]], remark [[§35 The Center#^rem-35-1|§35]].
+> - Kernel of $h \mapsto c_h$: Proposition [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|§34.1]], Proposition [[§35 The Center#^prop-35-2|§35.2]].
 > - Theorem [[§35 The Center#^thm-35-3|§35.3]]; Theorem [[§54 p-Groups and Sylow Subgroups#^thm-54-7|§54.7]].
 
 ### Priority 2 · problem sets (about a quarter)
@@ -3255,7 +3255,7 @@ $Z(G)$ is an abelian subgroup of $G$, and $Z(G) = G$ iff $G$ is abelian, see Pro
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G1, or G5 (kernel of $h \mapsto c_h$).
 > - Multiply $zg = gz$ by $z^{-1}$ on both sides.
-> - Remark [[§35 The Center#^rem-35-1|§35]]: kernels are normal.
+> - Proposition [[§35 The Center#^prop-35-2|§35.2]]: kernels are normal.
 
 ### Priority 2 · problem sets (about a quarter)
 
@@ -3347,7 +3347,7 @@ $H \leq G$ is normal, $H \trianglelefteq G$, if $gHg^{-1} \subseteq H$ for all $
 - [ ] Q5 **[why]** Why is normality exactly what makes $G/H$ a group? Is normality transitive?
 
 > [!tip]- Hints: where it lives, examples
-> - Characterizations: Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]], Theorem [[§38 Normal Subgroups#^thm-38-3|§38.3]], Proposition [[§39 Sources of Normal Subgroups#^prop-39-7|§39.7]].
+> - Characterizations: Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]], Theorem [[§38 Normal Subgroups#^thm-38-4|§38.4]], Proposition [[§39 Sources of Normal Subgroups#^prop-39-7|§39.7]].
 > - Examples [[§39 Sources of Normal Subgroups#^ex-39-1|§39.1]], [[§39 Sources of Normal Subgroups#^ex-39-2|§39.2]], [[§38 Normal Subgroups#^ex-38-1|§38.1]]; not transitive: Example [[§39 Sources of Normal Subgroups#^ex-39-4|§39.4]] ([[Group Theory HW Drill#^ps6-1|PS6.1]]).
 
 #### Simple group · P1
@@ -3409,7 +3409,7 @@ For $N \trianglelefteq G$, $G/N = \{gN\}$ with $(g_1N)(g_2N) = (g_1g_2)N$, and c
 - [ ] Q4 **[why]** Why must $N$ be normal for the operation to make sense? What fails for $\{e, (1\,2)\} \leq S_3$?
 
 > [!tip]- Hints: where it lives, examples
-> - Examples [[§40 Quotient Groups#^ex-40-1|§40.1]], [[§41 The First and Second Isomorphism Theorems#^ex-41-1|§41.1]]; $S_4/K \cong S_3$: Proposition [[§43 Simple Groups#^prop-43-10|§43.10]].
+> - Examples [[§40 Quotient Groups#^ex-40-1|§40.1]], [[§41 The First and Second Isomorphism Theorems#^ex-41-2|§41.2]]; $S_4/K \cong S_3$: Proposition [[§43 Simple Groups#^prop-43-10|§43.10]].
 > - Well-definedness: Proposition [[§37 Multiplying Cosets#^prop-37-1|§37.1]].
 
 #### Set of representatives · P3
@@ -3424,7 +3424,7 @@ $S \subseteq G$ meeting every coset of $N$ in exactly one element, i.e. $G = \bi
 - [ ] Q4 **[why]** Why can no subgroup of $\mathbb{Z}/4\mathbb{Z}$ be a set of representatives for $\{0, 2\}$?
 
 > [!tip]- Hints: where it lives, examples
-> - Proposition [[§40 Quotient Groups#^prop-40-3|§40.3]]; Examples [[§40 Quotient Groups#^ex-40-2|§40.2]], [[§40 Quotient Groups#^ex-40-3|§40.3]]; remark [[§40 Quotient Groups#^rem-40-3|§40]].
+> - Proposition [[§40 Quotient Groups#^prop-40-4|§40.4]]; Examples [[§40 Quotient Groups#^ex-40-2|§40.2]], [[§40 Quotient Groups#^ex-40-3|§40.3]]; Example [[§40 Quotient Groups#^ex-40-4|§40.4]].
 
 #### The product set $HN$ · P3
 
@@ -3438,7 +3438,7 @@ $HN = \{hn : h \in H, n \in N\}$ for subgroups $H, N$, see Definition [[§41 The
 - [ ] Q4 **[why]** Compute $SL_2(\mathbb{R})Z$ for $Z$ the scalar matrices.
 
 > [!tip]- Hints: where it lives, examples
-> - Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]], Example [[§41 The First and Second Isomorphism Theorems#^ex-41-2|§41.2]], Corollary [[§41 The First and Second Isomorphism Theorems#^cor-41-6|§41.6]], Lemma [[§55 The Sylow Theorems#^lem-55-8|§55.8]].
+> - Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]], Example [[§41 The First and Second Isomorphism Theorems#^ex-41-3|§41.3]], Corollary [[§41 The First and Second Isomorphism Theorems#^cor-41-6|§41.6]], Lemma [[§55 The Sylow Theorems#^lem-55-8|§55.8]].
 > - $GL_2^+(\mathbb{R})$: Example [[§45 S₃, S₄, A₄ and A₅#^ex-45-3|§45.3]].
 
 ## Proofs T8
@@ -3447,7 +3447,7 @@ $HN = \{hn : h \in H, n \in N\}$ for subgroups $H, N$, see Definition [[§41 The
 
 #### Five characterizations of normality · P1
 
-For $N \leq G$, TFAE: (1) $gNg^{-1} = N$ for all $g$; (2) $N$ is a union of conjugacy classes; (3) all points of $G/N$ have the same stabilizer for $G \curvearrowright G/N$; (4) every left coset is a right coset; (5) coset multiplication is well defined, see Theorem [[§38 Normal Subgroups#^thm-38-3|§38.3]]. *Source: WS 6.1. Proof pending in the notes (four of the five links are proved elsewhere).*
+For $N \leq G$, TFAE: (1) $gNg^{-1} = N$ for all $g$; (2) $N$ is a union of conjugacy classes; (3) all points of $G/N$ have the same stabilizer for $G \curvearrowright G/N$; (4) every left coset is a right coset; (5) coset multiplication is well defined, see Theorem [[§38 Normal Subgroups#^thm-38-4|§38.4]]. *Source: WS 6.1. Proof pending in the notes (four of the five links are proved elsewhere).*
 
 ^nd-thm-38-3
 
@@ -3458,7 +3458,7 @@ For $N \leq G$, TFAE: (1) $gNg^{-1} = N$ for all $g$; (2) $N$ is a union of conj
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G6, G13.
-> - Remark [[§38 Normal Subgroups#^rem-38-4|§38]] maps each condition to its proof: Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]], Proposition [[§37 Multiplying Cosets#^prop-37-1|§37.1]], Proposition [[§39 Sources of Normal Subgroups#^prop-39-7|§39.7]].
+> - Remark [[§38 Normal Subgroups#^rem-38-3|§38]] maps each condition to its proof: Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]], Proposition [[§37 Multiplying Cosets#^prop-37-1|§37.1]], Proposition [[§39 Sources of Normal Subgroups#^prop-39-7|§39.7]].
 > - (3): $\operatorname{Stab}(gN) = gNg^{-1}$ and $\operatorname{Stab}(eN) = N$ (Proposition [[§31 G Acting on Coset Spaces#^prop-31-1|§31.1]]).
 
 #### A non-normal subgroup and index-2 examples · P1
@@ -3475,7 +3475,7 @@ $\{e, (1\,2)\}$ is not normal in $S_3$; $\langle (1\,2\,3) \rangle \triangleleft
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G10 and G13.
-> - $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3)$; $(1\,3)H \neq H(1\,3)$ (Example [[§28 Left and Right Cosets#^ex-28-1|§28.1]]).
+> - $(1\,3)(1\,2)(1\,3)^{-1} = (2\,3)$; $(1\,3)H \neq H(1\,3)$ (Example [[§28 Left and Right Cosets#^ex-28-2|§28.2]]).
 > - Index $2$ (Proposition [[§39 Sources of Normal Subgroups#^prop-39-1|§39.1]]); $A_n = \operatorname{Ker}\operatorname{sgn}$.
 
 #### Kernels are normal · P1
@@ -3646,7 +3646,7 @@ $A \mapsto \pi(A)$ and $B \mapsto \pi^{-1}(B)$ are mutually inverse bijections b
 
 #### Quotients along the correspondence; Third Isomorphism Theorem · P1
 
-For $N \subseteq A_1 \subseteq A_2$: $A_2/A_1 \leftrightarrow B_2/B_1$, $A_1 \trianglelefteq A_2 \iff B_1 \trianglelefteq B_2$, and then $A_2/A_1 \cong B_2/B_1$; in particular $(G/N)/(K/N) \cong G/K$ for $N \subseteq K$ normal, see Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]] and Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|§42.5]]. *Source: WS 8.6; third theorem named in lecture 10/2, not covered. Proofs pending in the notes.*
+For $N \subseteq A_1 \subseteq A_2$: $A_2/A_1 \leftrightarrow B_2/B_1$, $A_1 \trianglelefteq A_2 \iff B_1 \trianglelefteq B_2$, and then $A_2/A_1 \cong B_2/B_1$; in particular $(G/N)/(K/N) \cong G/K$ for $N \subseteq K$ normal, see Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]] and Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]]. *Source: WS 8.6; third theorem named in lecture 10/2, not covered. Proofs pending in the notes.*
 
 ^nd-prop-42-4
 
@@ -3658,7 +3658,7 @@ For $N \subseteq A_1 \subseteq A_2$: $A_2/A_1 \leftrightarrow B_2/B_1$, $A_1 \tr
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G5 and G2.
 > - $gN \mapsto gK$ is well defined as $N \subseteq K$; its kernel is $K/N$; First Isomorphism Theorem.
-> - Remark [[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-4|§42]]: $A_1 = K$, $A_2 = G$.
+> - Remark [[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-3|§42]]: $A_1 = K$, $A_2 = G$.
 
 #### Abelian simple groups · P1
 
@@ -3751,7 +3751,7 @@ $PSL_n(F)$ is simple for $n \geq 2$ except $PSL_2(\mathbb{F}_2) \cong S_3$ and $
 
 #### When coset multiplication is well defined · P3
 
-$(g_1H)(g_2H) := (g_1g_2)H$ is well defined on $G/H$ iff $gHg^{-1} \subseteq H$ for all $g$, see Proposition [[§37 Multiplying Cosets#^prop-37-1|§37.1]]; a second proof of ($\Leftarrow$) multiplies cosets as sets, see remark [[§38 Normal Subgroups#^rem-38-3|§38]]. *Source: lecture 9/21; second proof lecture 9/25.*
+$(g_1H)(g_2H) := (g_1g_2)H$ is well defined on $G/H$ iff $gHg^{-1} \subseteq H$ for all $g$, see Proposition [[§37 Multiplying Cosets#^prop-37-1|§37.1]]; a second proof of ($\Leftarrow$) multiplies cosets as sets, see Proposition [[§38 Normal Subgroups#^prop-38-3|§38.3]]. *Source: lecture 9/21; second proof lecture 9/25.*
 
 ^nd-prop-37-1
 
@@ -3817,8 +3817,8 @@ If $[G : H] = 2$ then $H \trianglelefteq G$, see Proposition [[§39 Sources of N
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G13.
-> - Left/right counts agree (Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]]); condition (4) of Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]].
-> - Index $3$: $\{e, (1\,2)\} \leq S_3$; $A_4$: Example [[§29 The Index and Lagrange's Theorem#^ex-29-1|§29.1]].
+> - Left/right counts agree (Proposition [[§28 Left and Right Cosets#^prop-28-4|§28.4]]); condition (4) of Proposition [[§38 Normal Subgroups#^prop-38-2|§38.2]].
+> - Index $3$: $\{e, (1\,2)\} \leq S_3$; $A_4$: Example [[§29 The Index and Lagrange's Theorem#^ex-29-3|§29.3]].
 
 #### $K$ is an abelian subgroup of $S_4$ · P3
 
@@ -3867,11 +3867,11 @@ For $N \trianglelefteq G$, $\pi : G \to G/N$ is a surjective homomorphism with $
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G5.
 > - $\pi(g) = N \iff gN = N \iff g \in N$.
-> - Remark [[§40 Quotient Groups#^rem-40-2|§40]].
+> - Corollary [[§40 Quotient Groups#^cor-40-3|§40.3]].
 
 #### Multiplying through representatives · P3
 
-If $S$ is a set of representatives and $s_1s_2 = s_3n$ ($s_3 \in S$, $n \in N$, unique), then $(s_1N)(s_2N) = s_3N$, see Proposition [[§40 Quotient Groups#^prop-40-3|§40.3]]. *Source: lecture 10/2.*
+If $S$ is a set of representatives and $s_1s_2 = s_3n$ ($s_3 \in S$, $n \in N$, unique), then $(s_1N)(s_2N) = s_3N$, see Proposition [[§40 Quotient Groups#^prop-40-4|§40.4]]. *Source: lecture 10/2.*
 
 ^nd-prop-40-3
 
@@ -3888,7 +3888,7 @@ If $S$ is a set of representatives and $s_1s_2 = s_3n$ ($s_3 \in S$, $n \in N$, 
 
 #### Representatives forming a subgroup · P3
 
-If a set of representatives $S$ for $G/N$ is a subgroup, then $S \cap N = \{e\}$ and $s \mapsto sN$ is an isomorphism $S \cong G/N$, see Proposition [[§40 Quotient Groups#^prop-40-4|§40.4]] and Corollary [[§41 The First and Second Isomorphism Theorems#^cor-41-7|§41.7]]. *Source: lecture 10/2.*
+If a set of representatives $S$ for $G/N$ is a subgroup, then $S \cap N = \{e\}$ and $s \mapsto sN$ is an isomorphism $S \cong G/N$, see Proposition [[§40 Quotient Groups#^prop-40-5|§40.5]] and Corollary [[§41 The First and Second Isomorphism Theorems#^cor-41-7|§41.7]]. *Source: lecture 10/2.*
 
 ^nd-prop-40-4
 
@@ -3919,7 +3919,7 @@ For $\alpha : G \to H$ with $N = \operatorname{Ker}\alpha$, $I = \operatorname{I
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G5 and G2.
 > - $g = g'n \Rightarrow \alpha(g) = \alpha(g')$; $h = g^{-1}g' \in N$.
-> - Examples [[§41 The First and Second Isomorphism Theorems#^ex-41-1|§41.1]]; remark [[§41 The First and Second Isomorphism Theorems#^rem-41-1|§41]].
+> - Examples [[§41 The First and Second Isomorphism Theorems#^ex-41-2|§41.2]]; remark [[§41 The First and Second Isomorphism Theorems#^rem-41-1|§41]].
 
 #### $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$ · P3
 
@@ -4064,7 +4064,7 @@ Example [[§39 Sources of Normal Subgroups#^ex-39-4|§39.4]] → drilled as [[49
 
 #### $HN$ is a subgroup when $N$ is normal · P5
 
-Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]] and Example [[§41 The First and Second Isomorphism Theorems#^ex-41-2|§41.2]] → drilled as [[493 Problem Set 4#^hw-4-1|PS4.1]]. (Lecture 10/2: "This is going [to be] homework"; also WS 8.1.)
+Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]] and Example [[§41 The First and Second Isomorphism Theorems#^ex-41-3|§41.3]] → drilled as [[493 Problem Set 4#^hw-4-1|PS4.1]]. (Lecture 10/2: "This is going [to be] homework"; also WS 8.1.)
 
 #### $S_n$ is not simple for $n \geq 3$ · P5
 
@@ -4117,8 +4117,8 @@ $[G, G] = D(G)$ is the subgroup generated by all commutators, see Definition [[�
 - [ ] Q4 **[why]** Why is $D(G)$ the smallest normal subgroup with abelian quotient?
 
 > [!tip]- Hints: where it lives, examples
-> - Theorem [[§47 Commutators#^thm-47-5|§47.5]] ($D(S_n) = A_n$), Example [[§49 The Derived Series#^ex-49-1|§49.1]] ($D(A_4) = K$), Theorem [[§47 Commutators#^thm-47-10|§47.10]].
-> - Proposition [[§47 Commutators#^prop-47-4|§47.4]], Proposition [[§47 Commutators#^prop-47-11|§47.11]].
+> - Theorem [[§47 Commutators#^thm-47-5|§47.5]] ($D(S_n) = A_n$), Example [[§49 The Derived Series#^ex-49-1|§49.1]] ($D(A_4) = K$), Theorem [[§47 Commutators#^thm-47-11|§47.11]].
+> - Proposition [[§47 Commutators#^prop-47-4|§47.4]], Proposition [[§47 Commutators#^prop-47-13|§47.13]].
 
 #### Solvable group · P1
 
@@ -4132,8 +4132,8 @@ $G$ is solvable if there is a chain $\{e\} = G_0 \trianglelefteq G_1 \trianglele
 - [ ] Q4 **[why]** Why must $G_{j-1}$ be normal only in $G_j$, not in $G$? Why are $A_n$, $S_n$ ($n \geq 5$) not solvable?
 
 > [!tip]- Hints: where it lives, examples
-> - Remark [[§48 Solvable Groups#^rem-48-1|§48]]; Proposition [[§48 Solvable Groups#^prop-48-1|§48.1]].
-> - Propositions [[§48 Solvable Groups#^prop-48-2|§48.2]], [[§48 Solvable Groups#^prop-48-3|§48.3]]; Theorem [[§49 The Derived Series#^thm-49-1|§49.1]]; Corollary [[§49 The Derived Series#^cor-49-2|§49.2]].
+> - Remark [[§48 Solvable Groups#^rem-48-1|§48]]; Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]].
+> - Propositions [[§48 Solvable Groups#^prop-48-3|§48.3]], [[§48 Solvable Groups#^prop-48-4|§48.4]]; Theorem [[§49 The Derived Series#^thm-49-1|§49.1]]; Corollary [[§49 The Derived Series#^cor-49-2|§49.2]].
 
 #### Derived series · P1
 
@@ -4178,7 +4178,7 @@ $h = g_1g_2g_1^{-1}g_2^{-1}$ for some $g_1, g_2 \in G$, see Definition [[§47 Co
 - [ ] Q4 **[why]** Why is $G$ abelian iff $e$ is the only commutator? Is a product of commutators always a commutator?
 
 > [!tip]- Hints: where it lives, examples
-> - [[Group Theory HW Drill#^ps2-4|PS2.4]]: Propositions [[§47 Commutators#^prop-47-2|§47.2]], [[§47 Commutators#^prop-47-3|§47.3]]; [[Group Theory HW Drill#^ps5-4|PS5.4]]: Example [[§47 Commutators#^ex-47-2|§47.2]].
+> - [[Group Theory HW Drill#^ps2-4|PS2.4]]: Propositions [[§47 Commutators#^prop-47-2|§47.2]], [[§47 Commutators#^prop-47-3|§47.3]]; [[Group Theory HW Drill#^ps5-4|PS5.4]]: Example [[§47 Commutators#^ex-47-5|§47.5]].
 
 #### Abelianization · P2
 
@@ -4193,7 +4193,7 @@ $G^{\mathrm{ab}} = G/[G, G]$, see Definition [[§47 Commutators#^def-47-3|§47.3
 
 > [!tip]- Hints: where it lives, examples
 > - Example [[§47 Commutators#^ex-47-1|§47.1]]: $S_n/A_n \cong \{\pm 1\}$; Proposition [[§47 Commutators#^prop-47-6|§47.6]] ([[Group Theory HW Drill#^ps4-4-2|PS4.4(2)]]).
-> - Remark [[§47 Commutators#^rem-47-7|§47]].
+> - Corollary [[§47 Commutators#^cor-47-14|§47.14]].
 
 ## Proofs T9
 
@@ -4217,7 +4217,7 @@ $[G, G] \trianglelefteq G$; every character is trivial on $[G, G]$; $[G, G] = \{
 
 #### $S_3$ and $S_4$ are solvable · P1
 
-The chains $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ and $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$ have abelian quotients, see Proposition [[§48 Solvable Groups#^prop-48-1|§48.1]]. *Source: WS 9.1.*
+The chains $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ and $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$ have abelian quotients, see Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]]. *Source: WS 9.1.*
 
 ^nd-prop-48-1
 
@@ -4234,7 +4234,7 @@ The chains $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ and $\{e\} \trianglel
 
 #### Subgroups of solvable groups are solvable · P1
 
-If $G$ is solvable with chain $(G_j)$ and $S \leq G$, then $(S \cap G_j)$ is a chain for $S$ with abelian quotients, see Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]]. *Source: WS 9.2; lecture 10/7, 10/9.*
+If $G$ is solvable with chain $(G_j)$ and $S \leq G$, then $(S \cap G_j)$ is a chain for $S$ with abelian quotients, see Proposition [[§48 Solvable Groups#^prop-48-3|§48.3]]. *Source: WS 9.2; lecture 10/7, 10/9.*
 
 ^nd-prop-48-2
 
@@ -4247,11 +4247,11 @@ If $G$ is solvable with chain $(G_j)$ and $S \leq G$, then $(S \cap G_j)$ is a c
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G9 (move properties along subgroups) and G8.
 > - Kernel $(S \cap G_j) \cap G_{j-1}$ by Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-4|§41.4]]; image a subgroup of an abelian group.
-> - Second proof: Proposition [[§47 Commutators#^prop-47-11|§47.11]].
+> - Second proof: Proposition [[§47 Commutators#^prop-47-13|§47.13]].
 
 #### Quotients of solvable groups are solvable · P1
 
-If $G$ is solvable and $\pi : G \to Q$ is surjective, then $(\pi(G_j))$ is a chain for $Q$ with abelian quotients, see Proposition [[§48 Solvable Groups#^prop-48-3|§48.3]]. *Source: WS 9.3; lecture 10/9.*
+If $G$ is solvable and $\pi : G \to Q$ is surjective, then $(\pi(G_j))$ is a chain for $Q$ with abelian quotients, see Proposition [[§48 Solvable Groups#^prop-48-4|§48.4]]. *Source: WS 9.3; lecture 10/9.*
 
 ^nd-prop-48-3
 
@@ -4263,7 +4263,7 @@ If $G$ is solvable and $\pi : G \to Q$ is surjective, then $(\pi(G_j))$ is a cha
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G9 and G8.
-> - $\pi(ghg^{-1}h^{-1}) \in \pi(G_{j-1})$ by Proposition [[§47 Commutators#^prop-47-11|§47.11]].
+> - $\pi(ghg^{-1}h^{-1}) \in \pi(G_{j-1})$ by Proposition [[§47 Commutators#^prop-47-13|§47.13]].
 > - Remark [[§48 Solvable Groups#^rem-48-2|§48]] (do not cancel $N$).
 
 #### Solvability via the derived series · P1
@@ -4282,7 +4282,7 @@ $G$ is solvable iff $D_N(G) = \{e\}$ for some $N$, see Theorem [[§49 The Derive
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G8 and G9.
 > - ($\Leftarrow$) Propositions [[§47 Commutators#^prop-47-4|§47.4]] and [[§47 Commutators#^prop-47-6|§47.6]] applied to $D_k(G)$.
-> - ($\Rightarrow$) $D_k(G) = D(D_{k-1}(G)) \subseteq D(G_{N-k+1}) \subseteq G_{N-k}$ by fact (1), then Proposition [[§47 Commutators#^prop-47-11|§47.11]].
+> - ($\Rightarrow$) $D_k(G) = D(D_{k-1}(G)) \subseteq D(G_{N-k+1}) \subseteq G_{N-k}$ by fact (1), then Proposition [[§47 Commutators#^prop-47-13|§47.13]].
 
 #### $A_n$ and $S_n$ are not solvable for $n \geq 5$ · P1
 
@@ -4298,14 +4298,14 @@ For $n \geq 5$ neither $A_n$ nor $S_n$ is solvable, so $S_n$ is solvable iff $n 
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G9 and G13.
-> - Simplicity: Theorem [[§43 Simple Groups#^thm-43-9|§43.9]]; subgroups: Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]]; Proposition [[§48 Solvable Groups#^prop-48-1|§48.1]].
-> - $(1\,2\,3)(1\,2\,4)(1\,2\,3)^{-1}(1\,2\,4)^{-1} = (1\,2)(3\,4)$; $D(A_n) = A_n$ by Theorem [[§47 Commutators#^thm-47-10|§47.10]].
+> - Simplicity: Theorem [[§43 Simple Groups#^thm-43-9|§43.9]]; subgroups: Proposition [[§48 Solvable Groups#^prop-48-3|§48.3]]; Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]].
+> - $(1\,2\,3)(1\,2\,4)(1\,2\,3)^{-1}(1\,2\,4)^{-1} = (1\,2)(3\,4)$; $D(A_n) = A_n$ by Theorem [[§47 Commutators#^thm-47-11|§47.11]].
 
 ### Priority 3 · lectures and class exercises
 
 #### Abelian quotients and commutators · P3
 
-For $N \trianglelefteq H$: $H/N$ abelian $\iff$ every commutator of $H$ lies in $N$ $\iff$ $D(H) \subseteq N$, see Proposition [[§47 Commutators#^prop-47-11|§47.11]]. *Source: lecture 10/9.*
+For $N \trianglelefteq H$: $H/N$ abelian $\iff$ every commutator of $H$ lies in $N$ $\iff$ $D(H) \subseteq N$, see Proposition [[§47 Commutators#^prop-47-13|§47.13]]. *Source: lecture 10/9.*
 
 ^nd-prop-47-11
 
@@ -4317,11 +4317,11 @@ For $N \trianglelefteq H$: $H/N$ abelian $\iff$ every commutator of $H$ lies in 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G8.
 > - The commutator of cosets is the coset of the commutator; $D(H)$ is the smallest subgroup containing the commutators.
-> - Used in Propositions [[§48 Solvable Groups#^prop-48-2|§48.2]], [[§48 Solvable Groups#^prop-48-3|§48.3]] and Theorem [[§49 The Derived Series#^thm-49-1|§49.1]]; remark [[§47 Commutators#^rem-47-7|§47]].
+> - Used in Propositions [[§48 Solvable Groups#^prop-48-3|§48.3]], [[§48 Solvable Groups#^prop-48-4|§48.4]] and Theorem [[§49 The Derived Series#^thm-49-1|§49.1]]; Corollary [[§47 Commutators#^cor-47-14|§47.14]].
 
 #### Subquotients: an injection and a surjection · P3
 
-$(S \cap G_j)/(S \cap G_{j-1}) \hookrightarrow G_j/G_{j-1}$ and $G_j/G_{j-1} \twoheadrightarrow \pi(G_j)/\pi(G_{j-1})$ are well-defined homomorphisms, see Proposition [[§48 Solvable Groups#^prop-48-4|§48.4]]. *Source: lecture 10/9.*
+$(S \cap G_j)/(S \cap G_{j-1}) \hookrightarrow G_j/G_{j-1}$ and $G_j/G_{j-1} \twoheadrightarrow \pi(G_j)/\pi(G_{j-1})$ are well-defined homomorphisms, see Proposition [[§48 Solvable Groups#^prop-48-5|§48.5]]. *Source: lecture 10/9.*
 
 ^nd-prop-48-4
 
@@ -4343,7 +4343,7 @@ Proposition [[§46 Characters#^prop-46-1|§46.1]] → drilled as [[493 Problem S
 
 #### A common eigenvector yields a character · P5
 
-Theorem [[§46 Characters#^thm-46-2|§46.2]] and Example [[§46 Characters#^ex-46-2|§46.2]] → drilled as [[493 Problem Set 2#^hw-2-3|PS2.3]] (also shown in lecture 9/23: the sign as the eigenvalue on $\Delta$).
+Theorem [[§46 Characters#^thm-46-3|§46.3]] and Example [[§46 Characters#^ex-46-3|§46.3]] → drilled as [[493 Problem Set 2#^hw-2-3|PS2.3]] (also shown in lecture 9/23: the sign as the eigenvalue on $\Delta$).
 
 #### Characters kill commutators; 3-cycles are and transpositions are not commutators · P5
 
@@ -4363,11 +4363,11 @@ Proposition [[§47 Commutators#^prop-47-8|§47.8]] → drilled as [[493 Problem 
 
 #### Characters of $A_n$ are trivial for $n \geq 5$ · P5
 
-Lemma [[§47 Commutators#^lem-47-9|§47.9]] and Theorem [[§47 Commutators#^thm-47-10|§47.10]] → drilled as [[493 Problem Set 5#^hw-5-3|PS5.3]].
+Lemma [[§47 Commutators#^lem-47-10|§47.10]] and Theorem [[§47 Commutators#^thm-47-11|§47.11]] → drilled as [[493 Problem Set 5#^hw-5-3|PS5.3]].
 
 #### Products of commutators that are not commutators · P5
 
-Example [[§47 Commutators#^ex-47-2|§47.2]] → drilled as [[493 Problem Set 5#^hw-5-4|PS5.4]].
+Example [[§47 Commutators#^ex-47-5|§47.5]] → drilled as [[493 Problem Set 5#^hw-5-4|PS5.4]].
 
 # T10. The Sylow theorems
 
@@ -4403,7 +4403,7 @@ For $|G| = p^km$ with $p \nmid m$, a subgroup of order $p^k$, see Definition [[�
 - [ ] Q5 **[why]** Why is a Sylow $p$-subgroup of $GL_n(\mathbb{F}_p)$ of order $p^{\binom{n}{2}}$?
 
 > [!tip]- Hints: where it lives, examples
-> - Example [[§54 p-Groups and Sylow Subgroups#^ex-54-1|§54.1]] ($3, 1$ and $3, 4$), Example [[§55 The Sylow Theorems#^ex-55-1|§55.1]] ($n_5 = 6$), Example [[§54 p-Groups and Sylow Subgroups#^ex-54-2|§54.2]].
+> - Example [[§54 p-Groups and Sylow Subgroups#^ex-54-1|§54.1]] ($3, 1$ and $3, 4$), Example [[§55 The Sylow Theorems#^ex-55-2|§55.2]] ($n_5 = 6$), Example [[§54 p-Groups and Sylow Subgroups#^ex-54-2|§54.2]].
 > - Theorems [[§55 The Sylow Theorems#^thm-55-4|§55.4]], [[§55 The Sylow Theorems#^thm-55-6|§55.6]], [[§55 The Sylow Theorems#^thm-55-9|§55.9]]; order: Proposition [[§54 p-Groups and Sylow Subgroups#^prop-54-4|§54.4]].
 
 ## Proofs T10
@@ -4567,7 +4567,7 @@ $S_3$: three Sylow $2$-subgroups $\langle (i\,j) \rangle$, one Sylow $3$-subgrou
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G10 and G12.
 > - Correspondence for $S_4$ and $K$: Example [[§45 S₃, S₄, A₄ and A₅#^ex-45-2|§45.2]]; eight $3$-cycles, two per subgroup.
-> - Remark [[§55 The Sylow Theorems#^rem-55-3|§55]] ($3 \equiv 1 \pmod 2$).
+> - Example [[§55 The Sylow Theorems#^ex-55-4|§55.4]] ($3 \equiv 1 \pmod 2$).
 
 #### A Sylow 5-subgroup of $GL_2(\mathbb{F}_5)$ · P3
 
@@ -4648,7 +4648,7 @@ For finite $H, K \leq G$, $|HK| = |H||K|/|H \cap K|$, see Lemma [[§55 The Sylow
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G3 (counting fibres).
 > - $d = h^{-1}h' = kk'^{-1} \in H \cap K$.
-> - $|AB| = 4$ does not divide $6$ (Example [[§41 The First and Second Isomorphism Theorems#^ex-41-2|§41.2]]).
+> - $|AB| = 4$ does not divide $6$ (Example [[§41 The First and Second Isomorphism Theorems#^ex-41-3|§41.3]]).
 
 #### The number of Sylow subgroups divides $|G|$ · P3
 
@@ -4669,7 +4669,7 @@ $n_p$ divides $|G|$, in fact $n_p \mid m$ where $|G| = p^km$; with Sylow III, $n
 
 #### The Sylow 5-subgroups of $S_5$ · P3
 
-$S_5$ has $n_5 = 6$ Sylow $5$-subgroups, see Example [[§55 The Sylow Theorems#^ex-55-1|§55.1]]. *Source: lecture 10/16.*
+$S_5$ has $n_5 = 6$ Sylow $5$-subgroups, see Example [[§55 The Sylow Theorems#^ex-55-2|§55.2]]. *Source: lecture 10/16.*
 
 ^nd-ex-52-1
 
@@ -4686,7 +4686,7 @@ $S_5$ has $n_5 = 6$ Sylow $5$-subgroups, see Example [[§55 The Sylow Theorems#^
 
 #### Groups of order 15 · P3
 
-Every group of order $15$ is cyclic, see Example [[§55 The Sylow Theorems#^ex-55-2|§55.2]]. *Source: lecture 10/16.*
+Every group of order $15$ is cyclic, see Example [[§55 The Sylow Theorems#^ex-55-3|§55.3]]. *Source: lecture 10/16.*
 
 ^nd-ex-52-2
 
@@ -4700,7 +4700,7 @@ Every group of order $15$ is cyclic, see Example [[§55 The Sylow Theorems#^ex-5
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G12, then G14 (CRT).
 > - Corollaries [[§55 The Sylow Theorems#^cor-55-10|§55.10]], [[§55 The Sylow Theorems#^cor-55-7|§55.7]]; Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-6|§54.6]].
-> - Order $6$: $n_2 = 3$ is allowed (remark [[§55 The Sylow Theorems#^rem-55-3|§55]]).
+> - Order $6$: $n_2 = 3$ is allowed (Example [[§55 The Sylow Theorems#^ex-55-4|§55.4]]).
 
 #### Groups of order $pq$ · P3
 
@@ -4717,7 +4717,7 @@ For primes $p < q$ with $q \not\equiv 1 \pmod p$, every group of order $pq$ is c
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: G12, G14.
 > - Divisors of $pq$ are $1, p, q, pq$; mod $q$: $p \not\equiv 1$ since $1 < p < q$.
-> - Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-6|§54.6]]; remark [[§55 The Sylow Theorems#^rem-55-3|§55]].
+> - Lemma [[§54 p-Groups and Sylow Subgroups#^lem-54-6|§54.6]]; Example [[§55 The Sylow Theorems#^ex-55-4|§55.4]].
 
 ### Priority 5 · notes only (Pinter, MATH 412, not from class)
 

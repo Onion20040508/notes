@@ -99,7 +99,7 @@ tags: [group-theory, math493]
 *Uses:* [[§25 Actions#^def-25-1|Def. §25.1]], [[§25 Actions#^def-25-2|Def. §25.2]], [[§2 First Consequences of the Axioms#^prop-2-4|§2.4]]
 
 > [!remark] Remark: Left and Right Are Interchangeable
-> The proposition (and its mirror image) show that left and right actions carry the same information: inverting the group element converts one into the other. The distinction matters only for bookkeeping the order of composition. The same inversion produces the bijection $gH \mapsto Hg^{-1}$ between left and right cosets ([[§28 Left and Right Cosets#^prop-28-3|§28.3]]).
+> The proposition (and its mirror image) show that left and right actions carry the same information: inverting the group element converts one into the other. The distinction matters only for bookkeeping the order of composition. The same inversion produces the bijection $gH \mapsto Hg^{-1}$ between left and right cosets ([[§28 Left and Right Cosets#^prop-28-4|§28.4]]).
 
 ^rem-25-3
 

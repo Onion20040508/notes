@@ -15,7 +15,7 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|Corollary §37.4: The Duals of ℓ^∞ and L^∞]]
-- [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|Example §37.4: C[0,1] is Not Reflexive]]
+- [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|Example §37.5: C[0,1] is Not Reflexive]]
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-7|Corollary §37.7: Separability of X and X' for Reflexive X]]
 
 ## Connections

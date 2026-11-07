@@ -19,7 +19,7 @@ The alternating group $A_5$ of even permutations of five letters, of order $60$.
 - Which classes of $S_5$ split in $A_5$, explained by centralizers ([[§44 Conjugacy in a Normal Subgroup#^ex-44-1|§44]])
 - $[S_n, S_n] = A_n$ ([[§47 Commutators#^thm-47-5|§47]])
 - The abelianization $S_n/A_n \cong \{\pm 1\}$ ([[§47 Commutators#^ex-47-1|§47]])
-- $[A_n, A_n] = A_n$, so every character of $A_n$ is trivial, for $n \geq 5$ ([[§47 Commutators#^thm-47-10|§47]])
+- $[A_n, A_n] = A_n$, so every character of $A_n$ is trivial, for $n \geq 5$ ([[§47 Commutators#^thm-47-11|§47]])
 - For $n \geq 5$ the derived series of $S_n$ stalls at $A_n$ ([[§49 The Derived Series#^ex-49-1|§49]])
 - $A_n$ and $S_n$ are not solvable for $n \geq 5$, so $S_n$ is solvable exactly for $n \leq 4$ ([[§49 The Derived Series#^cor-49-2|§49]])
 
@@ -67,7 +67,7 @@ Revisit parts for $A_n$, chapter by chapter: [[§23 S₃, Aₙ, Uₙ and GLₙ#T
 ![[§47 Commutators#^ex-47-1]]
 
 ## $[A_n, A_n] = A_n$, so every character of $A_n$ is trivial, for $n \geq 5$
-![[§47 Commutators#^thm-47-10]]
+![[§47 Commutators#^thm-47-11]]
 
 ## For $n \geq 5$ the derived series of $S_n$ stalls at $A_n$
 ![[§49 The Derived Series#^ex-49-1]]

@@ -56,11 +56,27 @@ tags: [functional-analysis, math556]
 *Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]]
 
 > [!remark] Remark: Comparison with Lax
-> Lax requires $p(ax) = a\,p(x)$ only for $a > 0$. The two definitions agree: for $a > 0$ alone, $p(0) = p(2 \cdot 0) = 2p(0)$ gives $p(0) = 0$, which is the case $a = 0$.
+> Lax requires $p(ax) = a\,p(x)$ only for $a > 0$. The two definitions agree (Lemma [[§5 Statement and Motivation#^lem-5-2|§5.2]] below).
 
 ^rem-5-2
 
 Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{R}$: the product $0 \cdot p(x)$ is $0$ only because $p(x)$ is a finite number, which is why the gauge later must first be shown finite ([[§7 Convex Sets and the Gauge#^prop-7-3|§7.3]]).
+
+> [!theorem] Lemma §5.2: Positive Homogeneity: Positive Scalars Suffice
+> Let $p : X \to \mathbb{R}$ satisfy $p(ax) = a\,p(x)$ for all $a > 0$ and all $x \in X$ (Lax's condition). Then $p(0) = 0$, and $p(ax) = a\,p(x)$ holds also for $a = 0$; so $p$ is positive homogeneous in the sense of Definition [[§5 Statement and Motivation#^def-5-1|§5.1]]. Conversely, a positive homogeneous $p$ satisfies Lax's condition. Hence the two definitions agree.
+
+^lem-5-2
+
+> [!proof]+ Proof
+> The converse is immediate, since $a > 0$ is a special case of $a \ge 0$. For the main claim, apply the hypothesis with $a = 2$ and $x = 0$:
+>
+> $$
+> p(0) = p(2 \cdot 0) = 2\,p(0).
+> $$
+>
+> Subtracting the real number $p(0)$ from both sides gives $p(0) = 0$. Then for every $x \in X$, $p(0 \cdot x) = p(0) = 0 = 0 \cdot p(x)$, which is the case $a = 0$.
+
+^pf-5-2
 
 > [!example] Example §5.1: Three Examples on $\mathbb{R}^n$
 > On $X = \mathbb{R}^n$, the following are positive homogeneous and subadditive:

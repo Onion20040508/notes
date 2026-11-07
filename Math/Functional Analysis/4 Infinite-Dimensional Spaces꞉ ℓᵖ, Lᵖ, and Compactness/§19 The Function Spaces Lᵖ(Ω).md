@@ -46,14 +46,34 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 
 ^def-19-1
 
+> [!remark] Remark: What “Integrable” Means Here
+> In lecture the definition asked only that $f$ be integrable on $\Omega$, and “integrable” was deliberately left unspecified. Rigorously the condition is that $f$ be Lebesgue measurable with finite integral of $|f|^p$; for $p > 1$ this does not require $\int_\Omega |f| < \infty$ (Example [[§19 The Function Spaces Lᵖ(Ω)#^ex-19-1|§19.1]]). Functions agreeing outside a set of measure zero are identified, and $\|f\|_{L^\infty}$ is the [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-9|essential supremum]]; without the identification, positivity of the norm fails (Example [[§19 The Function Spaces Lᵖ(Ω)#^ex-19-2|§19.2]]). Since MATH 551 is not a prerequisite for this course, “integrable” may be read as covering every function that comes up, with continuous functions as the safe case (continuous on a compact $\Omega$ implies Riemann integrable); the theory can be made rigorous later. The full treatment — Lebesgue integral, $L^p$, [[Hölder's Inequality|Hölder]], [[Minkowski's Inequality|Minkowski]], [[Riesz–Fischer Theorem|Riesz–Fischer]], [[Dominated Convergence Theorem|dominated]] and [[Monotone Convergence Theorem (Lebesgue)|monotone convergence]], [[Fatou's Lemma|Fatou]] — is in the MATH 551 notes, Chapters on [[· 4 Integration Theory|Lebesgue integration]] and [[· 6 Lᵖ Spaces|Lᵖ spaces]], and that is the version to rely on. (For those without it: chapter 2 of the posted reference notes.)
+
+^rem-19-2
+
+> [!example] Example §19.1: A Function in $L^2$ but Not in $L^1$
+> Let $\Omega = (1, \infty)$ and $f(x) = 1/x$. We show $\int_\Omega |f|^2 < \infty$ but $\int_\Omega |f| = \infty$, so $f \in L^2(\Omega)$ and $f \notin L^1(\Omega)$.
+>
+> $f$ is continuous and positive on $\Omega$, so both integrals are limits of integrals over $(1, R)$ as $R \to \infty$ (improper Riemann integrals of non-negative continuous functions, which agree with the Lebesgue integrals by monotone convergence). Now
+>
+> $$
+> \int_1^R \frac{dx}{x^2} = 1 - \frac1R \xrightarrow[R \to \infty]{} 1, \qquad \int_1^R \frac{dx}{x} = \log R \xrightarrow[R \to \infty]{} \infty .
+> $$
+>
+> So $\|f\|_{L^2} = 1$, while $\int_\Omega |f| = \infty$.
+
+^ex-19-1
+
+> [!example] Example §19.2: A Nonzero Function of Norm Zero
+> Let $1 \le p < \infty$, let $\Omega$ be a domain, fix $x_0 \in \Omega$, and let $f(x_0) = 1$ and $f(x) = 0$ for $x \neq x_0$. Then $f$ is not the zero function, but $\|f\|_p = 0$.
+>
+> Indeed $|f|^p$ vanishes except at the single point $x_0$, and a point has measure zero, so $\int_\Omega |f|^p = 0$ and $\|f\|_p = 0$. (For a Riemann integral on an interval the same holds: changing a function at one point does not change its integral.) So $\|\cdot\|_p$ fails positivity on functions, and becomes a norm only after functions agreeing outside a set of measure zero are identified; then $f$ and $0$ are the same element of $L^p(\Omega)$.
+
+^ex-19-2
+
 > [!remark]- Connections
 > - The rigorous definitions: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-6|551 Def. §34.6]] ($L^p$, measurable functions), [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-8|551 Def. §34.8]] ($L^\infty$) and [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-9|551 Def. §34.9]] (essential supremum).
 > - The sequence analogue: [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]].
-
-> [!remark] Remark: What “Integrable” Means Here
-> In lecture the definition asked only that $f$ be integrable on $\Omega$, and “integrable” was deliberately left unspecified. Rigorously the condition is that $f$ be Lebesgue measurable with finite integral of $|f|^p$; for $p > 1$ this does not require $\int_\Omega |f| < \infty$ ($1/x$ on $(1, \infty)$ is in $L^2$ but not in $L^1$). Functions agreeing outside a set of measure zero are identified, and $\|f\|_{L^\infty}$ is the [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-9|essential supremum]]; without the identification, positivity of the norm fails ($f = 0$ except at one point has $\|f\|_p = 0$). Since MATH 551 is not a prerequisite for this course, “integrable” may be read as covering every function that comes up, with continuous functions as the safe case (continuous on a compact $\Omega$ implies Riemann integrable); the theory can be made rigorous later. The full treatment — Lebesgue integral, $L^p$, [[Hölder's Inequality|Hölder]], [[Minkowski's Inequality|Minkowski]], [[Riesz–Fischer Theorem|Riesz–Fischer]], [[Dominated Convergence Theorem|dominated]] and [[Monotone Convergence Theorem (Lebesgue)|monotone convergence]], [[Fatou's Lemma|Fatou]] — is in the MATH 551 notes, Chapters on [[· 4 Integration Theory|Lebesgue integration]] and [[· 6 Lᵖ Spaces|Lᵖ spaces]], and that is the version to rely on. (For those without it: chapter 2 of the posted reference notes.)
-
-^rem-19-2
 
 > [!theorem] Theorem §19.1: Hölder's Inequality for Functions
 > Let $1 \le p \le \infty$ and $q$ its conjugate. For $f \in L^p(\Omega)$, $g \in L^q(\Omega)$,

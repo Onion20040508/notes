@@ -28,8 +28,22 @@ tags: [group-theory, math493]
 
 ^def-20-2
 
-> [!remark] Remark: $k[x_1, \ldots, x_n]$ as a Ring
-> $k[x_1, \ldots, x_n]$ is a commutative ring but not a field: $x_1$ has no inverse, since no polynomial $g$ satisfies $x_1 g = 1$ (the product would have degree $\geq 1$). $\mathbb{Z}$ is another example. Polynomials are treated here as *formal expressions* determined by their coefficients, not as functions; over an infinite field the two viewpoints agree, but the formal one is what the algebra uses.
+> [!example] Example §20.1: $k[x_1, \ldots, x_n]$ Is a Commutative Ring but Not a Field
+> *To show:* $k[x_1, \ldots, x_n]$ is a commutative ring, and $x_1$ has no multiplicative inverse in it.
+>
+> **Commutative ring.** Addition is coefficientwise, so $(k[x_1, \ldots, x_n], +)$ is an abelian group, as $(k, +)$ is, with identity the zero polynomial. Multiplication is defined on monomials by adding exponent vectors and extended by distributivity, so it distributes over addition by construction, and it is associative and commutative with identity the monomial $1$, because addition of exponent vectors is associative and commutative with identity $(0, \ldots, 0)$ and multiplication in $k$ is associative and commutative.
+>
+> **Not a field.** Suppose $x_1 g = 1$. If $g = 0$, then $x_1 g = 0 \neq 1$. Otherwise, multiplying by $x_1$ sends each monomial of $g$ to a monomial with the exponent of $x_1$ raised by one, and distinct monomials stay distinct, so every monomial of $x_1 g$ with nonzero coefficient has degree $\geq 1$; the product would have degree $\geq 1$, whereas $1$ has degree $0$. So no polynomial $g$ satisfies $x_1 g = 1$, and $x_1 \neq 0$ has no inverse.
+
+^ex-20-1
+
+> [!example] Example §20.2: $\mathbb{Z}$ Is a Commutative Ring but Not a Field
+> $(\mathbb{Z}, +)$ is an abelian group with identity $0$ (Definition [[§3 Basic Examples of Groups#^def-3-1|§3.1]]), and integer multiplication is associative, commutative, has identity $1$, and distributes over addition; so $\mathbb{Z}$ is a commutative ring. It is not a field: $2 \neq 0$ has no multiplicative inverse in $\mathbb{Z}$, since $2x$ is even for every $x \in \mathbb{Z}$ while $1$ is odd.
+
+^ex-20-2
+
+> [!remark] Remark: Polynomials as Formal Expressions
+> Polynomials are treated here as *formal expressions* determined by their coefficients, not as functions; over an infinite field the two viewpoints agree, but the formal one is what the algebra uses.
 
 ^rem-20-1
 
@@ -52,13 +66,13 @@ tags: [group-theory, math493]
 > [!remark]- Connections
 > - The companion notion, *alternating*: [[§21 The Sign Homomorphism and the Alternating Group#^def-21-4|Alternating Polynomial]]; $A_n$ as the stabilizer of $\Delta$: [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-10|Cor. §21.10]].
 
-> [!example] Example §20.1: Permuting Variables
+> [!example] Example §20.3: Permuting Variables
 > Let $n = 3$ and $\sigma = (1\,2\,3)$, so $x_1 \mapsto x_2$, $x_2 \mapsto x_3$, $x_3 \mapsto x_1$.
 > - $f = x_1 + 2x_2 + 3x_3$: $\ \sigma \cdot f = x_2 + 2x_3 + 3x_1$. Not symmetric.
 > - $f = x_1 x_2 + x_2 x_3 + x_1 x_3$: $\ \sigma \cdot f = x_2 x_3 + x_3 x_1 + x_2 x_1 = f$. Checking the transposition $(1\,2)$ as well gives $x_2 x_1 + x_1 x_3 + x_2 x_3 = f$; since $(1\,2)$ and $(1\,2\,3)$ generate $S_3$ ([[§13 The Symmetric Group S₃#^prop-13-1|§13.1]]), $f$ is symmetric. It is the second **elementary symmetric polynomial** $e_2$; the others are $e_1 = x_1 + x_2 + x_3$ and $e_3 = x_1 x_2 x_3$.
 > - $\Delta = \prod_{1 \leq i < j \leq n}(x_i - x_j)$ is the polynomial of [[493 Problem Set 1#^hw-1-5|PS 1.5]]. For $n = 2$, $\Delta = x_1 - x_2$, and $(1\,2) \cdot \Delta = x_2 - x_1 = -\Delta$: not symmetric, but changed only by a sign. The behavior of $\Delta$ under general $\sigma$ is the content of that problem ([[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Three Formulas for the Sign]]).
 
-^ex-20-1
+^ex-20-3
 
 > [!theorem] Proposition §20.1: Compatibility of the Action with Composition
 > For all $\sigma, \tau \in S_n$ and $f, g \in k[x_1, \ldots, x_n]$:
@@ -174,7 +188,7 @@ tags: [group-theory, math493]
 > - Linear-algebra home: the matrix of a linear map, [[§9 Matrices#^ladr-3-31|LADR 3.31]].
 > - Computational version: [[§15 Elementary Matrices and the Inversion Algorithm#^def-15-2|235 Def. §15.2]] (permutation matrices, all six for n = 3).
 
-> [!example] Example §20.2: $M(\sigma)$ for $\sigma = (1\,2\,3)$
+> [!example] Example §20.4: $M(\sigma)$ for $\sigma = (1\,2\,3)$
 > Since $\sigma(1) = 2$, $\sigma(2) = 3$, $\sigma(3) = 1$, the columns are $e_2, e_3, e_1$:
 >
 > $$
@@ -191,7 +205,7 @@ tags: [group-theory, math493]
 >
 > To read $\sigma$ off a matrix, locate the $1$ in each column: column $i$ has its $1$ in row $\sigma(i)$. Row $j$ has its $1$ in column $\sigma^{-1}(j)$. Any matrix with exactly one $1$ in each row and column, zeros elsewhere, is $M(\sigma)$ for a unique $\sigma$.
 
-^ex-20-2
+^ex-20-4
 
 ![[m493-19-1.svg]]
 *$M(\sigma)$ for $\sigma = (1\,2\,3)$, as in Ex. §20.2. Column $i$ is $e_{\sigma(i)}$, so its single $1$ (red) sits in row $\sigma(i)$. Multiplying a vector by $M(\sigma)$ therefore carries the entry in position $i$ to position $\sigma(i)$ (right): $a$ moves from $1$ to $2$, $b$ from $2$ to $3$, $c$ from $3$ to $1$.*
@@ -238,7 +252,7 @@ tags: [group-theory, math493]
 > - Used in Quantum Field Theory: representations of Lie groups and Lie algebras on a carrier space, with equivalence, invariant subspaces, irreducibility and unitarity — [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-4|QFT Def. §CB.3.4]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-6|QFT Def. §CB.3.6]]; and Schur's lemma, which these notes do not contain yet (the representation theory of the second half of the course), so its home in the vault is [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-4|QFT Theorem §CB.7.4]].
 
 > [!definition] Definition §20.8: Permutation Representation
-> The homomorphism $\sigma \mapsto M(\sigma)$, $S_n \to GL_n(k)$, of [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|the proposition just proved]] is the **permutation representation** of $S_n$: it realizes $S_n$ as a group of matrices, with composition of permutations becoming matrix multiplication, and its image is the subgroup of permutation matrices listed among the subgroups of $GL_n(\mathbb{R})$ in [[§5 A Zoo of Subgroups#^ex-5-4|WS 1.7]].
+> The homomorphism $\sigma \mapsto M(\sigma)$, $S_n \to GL_n(k)$, of [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|the proposition just proved]] is the **permutation representation** of $S_n$: it realizes $S_n$ as a group of matrices, with composition of permutations becoming matrix multiplication, and its image is the subgroup of permutation matrices listed among the subgroups of $GL_n(\mathbb{R})$ in [[§5 A Zoo of Subgroups#^ex-5-5|WS 1.7]].
 
 ^def-20-8
 

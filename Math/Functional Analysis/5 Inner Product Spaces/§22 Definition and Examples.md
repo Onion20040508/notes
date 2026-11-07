@@ -28,20 +28,48 @@ tags: [functional-analysis, math556]
 
 ^def-22-1
 
-> [!remark]- Connections
-> - The finite-dimensional definition: [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]] (inner product), [[§20 Inner Products and Norms#^ladr-6-4|LADR 6.4]] (inner product space).
-> - Computational version: [[§56 Inner Product Spaces#^def-56-1|235 Def. §56.1]] (the real axioms, with weighted, evaluation and integral inner products worked out).
-
 > [!remark] Remark: Reading the Complex Axioms
 > Three points.
 >
 > First, the placement of the conjugate is a convention: here the inner product is linear in the *first* argument and conjugate-linear in the second, which is the usual convention in mathematics. Physics texts put the conjugate on the first argument. Nothing depends on the choice, but formulas must be read consistently, and every computation below uses this one.
 >
-> Second, sesquilinearity forces the conjugate in the second slot: if the product were linear in both slots then, taking $a = i$ and $y = z = x$, skew-symmetry would give $i(x,x) = (ix, x) = \overline{(x, ix)} = \overline{i(x,x)} = -i\,\overline{(x,x)}$, which fails for $(x,x) > 0$. “Sesqui” is Latin for one and a half: linear in one argument, conjugate-linear in the other.
+> Second, sesquilinearity forces the conjugate in the second slot: a product linear in both slots cannot be skew-symmetric and positive (Lemma [[§22 Definition and Examples#^lem-22-2|§22.2]]). “Sesqui” is Latin for one and a half: linear in one argument, conjugate-linear in the other.
 >
-> Third, positivity is a statement about a real number even though $(\cdot,\cdot)$ is complex-valued: skew-symmetry applied with $y = x$ gives $(x,x) = \overline{(x,x)}$, so $(x,x) \in \mathbb{R}$ automatically, and the inequality $(x,x) \ge 0$ makes sense. The real case is the special case of the complex one in which all values are real and conjugation does nothing. (The second and third points were not made in lecture.)
+> Third, positivity is a statement about a real number even though $(\cdot,\cdot)$ is complex-valued: $(x,x) \in \mathbb{R}$ automatically (Lemma [[§22 Definition and Examples#^lem-22-1|§22.1]]), and the inequality $(x,x) \ge 0$ makes sense. The real case is the special case of the complex one in which all values are real and conjugation does nothing. (The second and third points were not made in lecture.)
 
 ^rem-22-1
+
+> [!theorem] Lemma §22.1: The Number $(x,x)$ is Real
+> *(Not from lecture.)* Let $X$ be a complex linear space and $(\cdot,\cdot) : X \times X \to \mathbb{C}$ skew-symmetric, $(x,y) = \overline{(y,x)}$ for all $x, y$. Then $(x,x) \in \mathbb{R}$ for every $x \in X$.
+
+^lem-22-1
+
+> [!proof]+ Proof
+> Skew-symmetry with $y = x$ gives $(x,x) = \overline{(x,x)}$, and a complex number equal to its own conjugate is real.
+
+^pf-22-1
+
+> [!theorem] Lemma §22.2: A Complex Inner Product Cannot Be Bilinear
+> *(Not from lecture.)* Let $X \neq \{0\}$ be a complex linear space. There is no function $(\cdot,\cdot) : X \times X \to \mathbb{C}$ that is linear in both arguments, skew-symmetric, and positive.
+
+^lem-22-2
+
+> [!proof]+ Proof
+> Suppose $(\cdot,\cdot)$ has all three properties, and fix $x \neq 0$; by positivity $(x,x) > 0$. Using linearity in the first argument (with $a = i$), skew-symmetry, linearity in the second argument (with $a = i$, $y = z = x$), and $\overline{i w} = -i\,\overline{w}$,
+>
+> $$
+> i(x,x) = (ix, x) = \overline{(x, ix)} = \overline{i(x,x)} = -i\,\overline{(x,x)} = -i\,(x,x),
+> $$
+>
+> the last step because $(x,x)$ is real (Lemma [[§22 Definition and Examples#^lem-22-1|§22.1]]). Hence $2i(x,x) = 0$, i.e. $(x,x) = 0$, contradicting $(x,x) > 0$.
+
+^pf-22-2
+
+*Uses:* [[§22 Definition and Examples#^lem-22-1|§22.1]]
+
+> [!remark]- Connections
+> - The finite-dimensional definition: [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]] (inner product), [[§20 Inner Products and Norms#^ladr-6-4|LADR 6.4]] (inner product space).
+> - Computational version: [[§56 Inner Product Spaces#^def-56-1|235 Def. §56.1]] (the real axioms, with weighted, evaluation and integral inner products worked out).
 
 > [!remark]- Connections
 > - The physicists' convention, used in the quantum mechanics chapter: [[§44 Bras, Kets, and the Riesz Map#^rem-44-1|Remark: Conventions]].

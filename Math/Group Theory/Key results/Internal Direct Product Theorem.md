@@ -16,7 +16,7 @@ tags: [group-theory, hub]
 - [[§47 Commutators#^prop-47-8|Proposition §47.8: Normal Subgroups with Trivial Intersection Commute]]
 
 ## Used in (Group Theory)
-- (not cited later in the course)
+- [[§57 Internal and External Direct Products#^cor-57-2|Corollary §57.2: The Quotient by N_1 ∩ N_2 Is a Direct Product]]
 
 ## Connections
 - TODO

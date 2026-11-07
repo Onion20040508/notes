@@ -80,7 +80,7 @@ tags: [group-theory, math493]
 >
 > **(2) $\Phi(\Psi(B)) = B$, i.e. $\pi(\pi^{-1}(B)) = B$.** If $g \in \pi^{-1}(B)$, then $\pi(g) \in B$ by the definition of the preimage; so $\pi(\pi^{-1}(B)) \subseteq B$. Conversely, let $b \in B$. Since $\pi$ is surjective (Proposition [[§40 Quotient Groups#^prop-40-2|§40.2]]), $b = \pi(g)$ for some $g \in G$; then $g \in \pi^{-1}(B)$, so $b \in \pi(\pi^{-1}(B))$.
 >
-> **(3) $\Psi(\Phi(A)) = A$, i.e. $\pi^{-1}(\pi(A)) = A$ when $N \subseteq A$.** If $a \in A$, then $\pi(a) \in \pi(A)$; so $A \subseteq \pi^{-1}(\pi(A))$. Conversely, let $g \in \pi^{-1}(\pi(A))$. Then $\pi(g) = \pi(a)$ for some $a \in A$, i.e. $gN = aN$, which by the coset criterion (Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]](1), Definition [[§28 Left and Right Cosets#^def-28-1|§28.1]]) means $a^{-1}g \in N$. Since $N \subseteq A$, also $a^{-1}g \in A$, and by closure of $A$ under products
+> **(3) $\Psi(\Phi(A)) = A$, i.e. $\pi^{-1}(\pi(A)) = A$ when $N \subseteq A$.** If $a \in A$, then $\pi(a) \in \pi(A)$; so $A \subseteq \pi^{-1}(\pi(A))$. Conversely, let $g \in \pi^{-1}(\pi(A))$. Then $\pi(g) = \pi(a)$ for some $a \in A$, i.e. $gN = aN$, which by the coset criterion (Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]](1), Definition [[§28 Left and Right Cosets#^def-28-1|§28.1]]) means $a^{-1}g \in N$. Since $N \subseteq A$, also $a^{-1}g \in A$, and by closure of $A$ under products
 >
 > $$ g = a\,(a^{-1}g) \in A . $$
 >
@@ -92,9 +92,9 @@ tags: [group-theory, math493]
 
 ^pf-42-3
 
-*Uses:* [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]]
+*Uses:* [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]]
 
-> [!theorem] Proposition §42.4: Quotients Along the Correspondence
+> [!theorem] Proposition §42.4: [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Quotients Along the Correspondence]]
 > Let $N \subseteq A_1 \subseteq A_2 \subseteq G$ be subgroups containing the normal subgroup $N$, let $\pi: G \to G/N$ be the projection, and let $B_1 = \pi(A_1)$, $B_2 = \pi(A_2)$.
 > 1. $gA_1 \mapsto \pi(g)B_1$ is a bijection $A_2/A_1 \to B_2/B_1$.
 > 2. $A_1 \trianglelefteq A_2$ if and only if $B_1 \trianglelefteq B_2$.
@@ -115,7 +115,7 @@ tags: [group-theory, math493]
 >
 > $$ \begin{aligned} gA_1 = g'A_1 &\iff g^{-1}g' \in A_1 \iff \pi(g^{-1}g') \in B_1 \\ &\iff \pi(g)^{-1}\pi(g') \in B_1 \iff \pi(g)B_1 = \pi(g')B_1 . \end{aligned} $$
 >
-> The first and the last equivalence are the coset criterion (Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]](1), Definition [[§28 Left and Right Cosets#^def-28-1|§28.1]]), for the subgroup $A_1$ of $A_2$ and for the subgroup $B_1$ of $B_2$; the second is $(\ast)$ with $x = g^{-1}g'$; the third holds because $\pi$ is a homomorphism (Proposition [[§15 Homomorphisms#^prop-15-1|§15.1]]). Read from left to right, the chain says that $\pi(g)B_1$ does not depend on the representative $g$ of $gA_1$, so $f$ is well defined; read from right to left, it says that $f$ is injective. $f$ is surjective: an element of $B_2/B_1$ is $bB_1$ with $b \in B_2 = \pi(A_2)$, so $b = \pi(g)$ for some $g \in A_2$, and $bB_1 = f(gA_1)$.
+> The first and the last equivalence are the coset criterion (Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]](1), Definition [[§28 Left and Right Cosets#^def-28-1|§28.1]]), for the subgroup $A_1$ of $A_2$ and for the subgroup $B_1$ of $B_2$; the second is $(\ast)$ with $x = g^{-1}g'$; the third holds because $\pi$ is a homomorphism (Proposition [[§15 Homomorphisms#^prop-15-1|§15.1]]). Read from left to right, the chain says that $\pi(g)B_1$ does not depend on the representative $g$ of $gA_1$, so $f$ is well defined; read from right to left, it says that $f$ is injective. $f$ is surjective: an element of $B_2/B_1$ is $bB_1$ with $b \in B_2 = \pi(A_2)$, so $b = \pi(g)$ for some $g \in A_2$, and $bB_1 = f(gA_1)$.
 >
 > **(2)** (The argument of Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]](2), carried out inside $A_2$.)
 >
@@ -139,25 +139,47 @@ tags: [group-theory, math493]
 
 ^pf-42-4
 
-*Uses:* [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
+*Uses:* [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]], [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
 
-> [!remark] Remark: Indices Along the Correspondence
-> By part (1) of [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Quotients Along the Correspondence]], $A_2/A_1$ and $B_2/B_1$ are in bijection, so $[A_2 : A_1] = [B_2 : B_1]$: the correspondence preserves indices. For $G = S_4$ and $N = K$, with $S_4/K \cong S_3$ ([[§43 Simple Groups#^prop-43-10|the pair-partition homomorphism]]), the subgroup $A_4$ corresponds to $A_3$ and $K$ to $\{e\}$: $[A_4 : K] = 3 = [A_3 : \{e\}]$ and $[S_4 : A_4] = 2 = [S_3 : A_3]$.
+> [!theorem] Corollary §42.5: Indices Along the Correspondence
+> In the setting of Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]], $[A_2 : A_1] = [B_2 : B_1]$: the correspondence preserves indices.
 >
 > *Source: review session 10/21*
 
-^rem-42-2
+^cor-42-5
+
+> [!proof]+ Proof
+> *Idea:* The index counts cosets, and part (1) matches the cosets.
+>
+> By part (1) of Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]], $A_2/A_1$ and $B_2/B_1$ are in bijection, so they have the same number of elements (in $\mathbb{Z}_{>0} \cup \{\infty\}$). The index is the number of left cosets (Definition [[§29 The Index and Lagrange's Theorem#^def-29-1|§29.1]]), so $[A_2 : A_1] = [B_2 : B_1]$.
+
+^pf-42-5
+
+*Uses:* [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]], [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]]
+
+> [!example] Example §42.1: Indices Along the Correspondence for $S_4$ and $K$
+> Take $G = S_4$ and $N = K$. The pair-partition homomorphism $\alpha: S_4 \to S_3$ is surjective with kernel $K$, so $S_4/K \cong S_3$ via $gK \mapsto \alpha(g)$, and $\alpha(A_4) = A_3$ (Proposition [[§43 Simple Groups#^prop-43-10|§43.10]]). Under this identification the subgroup $A_4 \supseteq K$ corresponds to $A_4/K \leftrightarrow \alpha(A_4) = A_3$, the subgroup $K$ to $K/K \leftrightarrow \{e\}$, and $S_4$ to $S_3$. By Lagrange,
+>
+> $$
+> [A_4 : K] = \tfrac{12}{4} = 3 = [A_3 : \{e\}], \qquad [S_4 : A_4] = \tfrac{24}{12} = 2 = \tfrac{6}{3} = [S_3 : A_3],
+> $$
+>
+> as Corollary [[§42 The Correspondence and Third Isomorphism Theorems#^cor-42-5|§42.5]] predicts.
+>
+> *Source: review session 10/21*
+
+^ex-42-1
 
 ![[m493-42-2.svg]]
 
 *The correspondence for $G = S_4$ and $N = K$: the subgroups of $S_4$ containing $K$ (left; $P_1, P_2, P_3$ are the three subgroups of order $8$) and the subgroups of $S_4/K \cong S_3$ (right; $\tau_1, \tau_2, \tau_3$ the transpositions). Lines denote inclusion, and each red number is the index of the smaller group in the larger; corresponding lines carry the same index. (Not from lecture; added.)*
 
-> [!theorem] Theorem §42.5: Third Isomorphism Theorem
+> [!theorem] Theorem §42.6: Third Isomorphism Theorem
 > Let $N \subseteq K$ be [[§38 Normal Subgroups#^def-38-1|normal subgroups]] of $G$ (here $K$ is arbitrary, not the Klein four-group). Then $K/N$ is a normal subgroup of $G/N$ ([[§40 Quotient Groups#^def-40-1|Def. §40.1]]), and $(G/N)/(K/N) \cong G/K$.
 >
 > *Source: named in lecture 10/2; not covered*
 
-^thm-42-5
+^thm-42-6
 
 > [!proof]+ Proof
 > *Idea:* $gN \mapsto gK$ is a surjective homomorphism $G/N \to G/K$ with kernel $K/N$.
@@ -172,7 +194,7 @@ tags: [group-theory, math493]
 >
 > and its inverse is an isomorphism (Proposition [[§16 Isomorphisms#^prop-16-1|§16.1]]), so $(G/N)/(K/N) \cong G/K$.
 >
-> **Second route, through the First Isomorphism Theorem.** Define $\alpha: G/N \to G/K$ by $\alpha(gN) = gK$. *Well defined:* if $gN = g'N$, then $g^{-1}g' \in N \subseteq K$ by the coset criterion (Proposition [[§28 Left and Right Cosets#^prop-28-2|§28.2]](1), Definition [[§28 Left and Right Cosets#^def-28-1|§28.1]]), so $gK = g'K$. *Homomorphism:* by Definition [[§40 Quotient Groups#^def-40-1|§40.1]], applied in $G/N$ and in $G/K$,
+> **Second route, through the First Isomorphism Theorem.** Define $\alpha: G/N \to G/K$ by $\alpha(gN) = gK$. *Well defined:* if $gN = g'N$, then $g^{-1}g' \in N \subseteq K$ by the coset criterion (Proposition [[§28 Left and Right Cosets#^prop-28-3|§28.3]](1), Definition [[§28 Left and Right Cosets#^def-28-1|§28.1]]), so $gK = g'K$. *Homomorphism:* by Definition [[§40 Quotient Groups#^def-40-1|§40.1]], applied in $G/N$ and in $G/K$,
 >
 > $$ \alpha\big((gN)(g'N)\big) = \alpha(gg'N) = gg'K = (gK)(g'K) = \alpha(gN)\,\alpha(g'N). $$
 >
@@ -184,18 +206,18 @@ tags: [group-theory, math493]
 >
 > $$ (G/N)/(K/N) = (G/N)/\operatorname{Ker}\alpha \cong \operatorname{Im}\alpha = G/K . $$
 
-^pf-42-5
+^pf-42-6
 
-*Uses:* [[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-1|Notation A/N (§42)]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§28 Left and Right Cosets#^prop-28-2|§28.2]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]
+*Uses:* [[§42 The Correspondence and Third Isomorphism Theorems#^rem-42-1|Notation A/N (§42)]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-1|§42.1]], [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|§42.4]], [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§28 Left and Right Cosets#^def-28-1|Def. §28.1]], [[§40 Quotient Groups#^def-40-1|Def. §40.1]], [[§40 Quotient Groups#^thm-40-1|§40.1]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]
 
 > [!remark] Remark: The Isomorphism Theorems
-> The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The [[§41 The First and Second Isomorphism Theorems#^thm-41-1|first]] identifies $G/N$ with an image; the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|second]] and [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|third]] compare quotients of subgroups and quotients of quotients. Experimenting with small groups is the way to make them intuitive.
+> The lecture's theme: these theorems are about how to work in a quotient that did not come to you as the image of some map. The [[§41 The First and Second Isomorphism Theorems#^thm-41-1|first]] identifies $G/N$ with an image; the [[§41 The First and Second Isomorphism Theorems#^thm-41-5|second]] and [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|third]] compare quotients of subgroups and quotients of quotients. Experimenting with small groups is the way to make them intuitive.
 
-^rem-42-3
+^rem-42-2
 
 > [!remark] Remark: Naming the Isomorphism Theorems
-> Part (3) of [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4]] with $A_1 = K$ and $A_2 = G$ is the Third Isomorphism Theorem, $G/K \cong (G/N)/(K/N)$, [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-5|Theorem §42.5]], just above. Worksheet 8 calls the correspondence theorem the “third/fourth isomorphism theorem”; textbooks vary, and many call it the correspondence (or lattice) theorem and number it fourth. Note also that the worksheet's “$N \subset A$” allows $A = N$, which corresponds to the trivial subgroup of $G/N$.
+> Part (3) of [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-4|Proposition §42.4]] with $A_1 = K$ and $A_2 = G$ is the Third Isomorphism Theorem, $G/K \cong (G/N)/(K/N)$, [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|Theorem §42.6]], just above. Worksheet 8 calls the correspondence theorem the “third/fourth isomorphism theorem”; textbooks vary, and many call it the correspondence (or lattice) theorem and number it fourth. Note also that the worksheet's “$N \subset A$” allows $A = N$, which corresponds to the trivial subgroup of $G/N$.
 
-^rem-42-4
+^rem-42-3
 
 [[§45 S₃, S₄, A₄ and A₅#^ex-45-2|Example §45.2]], in the $S_4$ part of [[§45 S₃, S₄, A₄ and A₅|§45]], lists the six subgroups of $S_4$ containing $K$.

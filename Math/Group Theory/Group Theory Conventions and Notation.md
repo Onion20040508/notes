@@ -36,7 +36,7 @@ tags: [group-theory, math493]
 | $N \rtimes_\varphi S$, $S \ltimes_\varphi N$ | Semidirect product: $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$. | [[§58 Semidirect Products#^def-58-2\|Def. §58.2]] |
 | $HN$ | Product set $\{hn : h \in H,\ n \in N\}$. | [[§41 The First and Second Isomorphism Theorems#^def-41-1\|Def. §41.1]] |
 | $X \sqcup Y$ | Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$. | [[§40 Quotient Groups#^def-40-2\|Def. §40.2]] |
-| $\hookrightarrow$, $\twoheadrightarrow$ | An injective map; a surjective map. | [[§40 Quotient Groups#^prop-40-4\|§40.4]] |
+| $\hookrightarrow$, $\twoheadrightarrow$ | An injective map; a surjective map. | [[§40 Quotient Groups#^prop-40-5\|§40.5]] |
 | $kX$ | Permutation representation on formal combinations of the $e_x$, $x \in X$. | [[§59 Representations and Subrepresentations#^def-59-2\|Def. §59.2]] |
 | $U \oplus V$ | Internal direct sum of subspaces: $U \cap V = \{0\}$, $U + V = W$. | [[§60 Direct Sums and Maschke's Theorem#^def-60-1\|Def. §60.1]] |
 | $U^\perp$, $P_U$ | Orthogonal complement of $U$; orthogonal projection onto $U$. | [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-2\|Def. §61.2]], [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-1\|§61.1]] |

@@ -315,11 +315,24 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 
 *Uses:* [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]], [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]
 
+> [!remark] Remark
+> The hypothesis $X = Y + Y^\perp$ holds automatically in finite dimensions, and in infinite dimensions it holds when $X$ is complete and $Y$ is closed (the orthogonal decomposition theorem, Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]). It can fail for a general subspace (Example [[§2 Quotient Spaces and Complements#^ex-2-3|§2.3]] below), and then $Y^\perp$ is *not* a complement — although by Proposition [[§2 Quotient Spaces and Complements#^prop-2-3|§2.3]] some other complement always exists. This is why the orthogonal version is only “roughly” true, while the algebraic version (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]) is unconditional.
+
+^rem-2-5
+
+> [!example] Example §2.3: A Subspace of $\ell^2$ with Trivial Orthogonal Complement
+> This example uses $\ell^2$ with the inner product of [[· 5 Inner Product Spaces|Chapter 5]], $(a, b) = \sum_i a_i \overline{b_i}$ (Example [[§22 Definition and Examples#^ex-22-2|§22.2]]), ahead of its definition. In $\ell^2$, the finitely supported sequences form a subspace $Y$ with $Y^\perp = \{0\}$, so $Y + Y^\perp = Y \neq \ell^2$, and $Y^\perp$ is *not* a complement of $Y$: the hypothesis $X = Y + Y^\perp$ of Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] fails.
+>
+> *(Justification partly filled in.)*
+>
+> 1. *$Y$ is a subspace.* A sum or scalar multiple of finitely supported sequences is finitely supported, and a finitely supported sequence has finite $\|\cdot\|_2$, so $Y \subset \ell^2$ is a linear subspace.
+> 2. *$Y^\perp = \{0\}$.* The unit vectors $e_i = (0, \ldots, 0, 1, 0, \ldots)$ lie in $Y$. If $z \in Y^\perp$, then $0 = (z, e_i) = z_i$ for every $i$, so $z = 0$.
+> 3. *$Y \neq \ell^2$.* The sequence $(2^{-i})_{i \ge 1}$ lies in $\ell^2$, since $\sum_i 4^{-i} < \infty$, but none of its entries vanishes, so it is not finitely supported.
+>
+> By (2) and (3), $Y + Y^\perp = Y + \{0\} = Y \neq \ell^2$.
+
+^ex-2-3
+
 > [!remark]- Connections
 > - The inner product and $Y^\perp$ in this course: [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]] (the orthogonal decomposition, which supplies $X = Y + Y^\perp$ for closed $Y$ in a Hilbert space).
 > - In finite dimensions: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]], and $V = U \oplus U^\perp$ ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]]).
-
-> [!remark] Remark
-> The hypothesis $X = Y + Y^\perp$ holds automatically in finite dimensions, and in infinite dimensions it holds when $X$ is complete and $Y$ is closed (the orthogonal decomposition theorem, Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]). It can fail for a general subspace: in $\ell^2$ with the inner product of [[· 5 Inner Product Spaces|Chapter 5]], the finitely supported sequences form a subspace $Y$ with $Y^\perp = \{0\}$, since $(z, e_i) = z_i$, so $Y + Y^\perp = Y \neq \ell^2$. Then $Y^\perp$ is *not* a complement — although by Proposition [[§2 Quotient Spaces and Complements#^prop-2-3|§2.3]] some other complement always exists. This is why the orthogonal version is only “roughly” true, while the algebraic version (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]) is unconditional.
-
-^rem-2-5

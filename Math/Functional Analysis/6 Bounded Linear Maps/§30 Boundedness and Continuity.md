@@ -135,8 +135,26 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to points that all stay outside the unit ball, so $Ty_n \not\to T0$.
 
+> [!theorem] Corollary §30.3: Bounded Linear Maps are Lipschitz
+> Let $T : X \to Y$ be a bounded linear map. Then
+>
+> $$
+> \|Tx - Tx'\|_Y \le \|T\|\, \|x - x'\|_X \qquad \text{for all } x, x' \in X ;
+> $$
+>
+> so $T$ is Lipschitz continuous with constant $\|T\|$, uniformly on all of $X$.
+
+^cor-30-3
+
+> [!proof]+ Proof
+> If $X = \{0\}$ both sides are $0$. Otherwise, by linearity $Tx - Tx' = T(x - x')$, and Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]](b) gives $\|T(x - x')\|_Y \le \|T\|\, \|x - x'\|_X$.
+
+^pf-30-3
+
+*Uses:* [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
+
 > [!remark] Remark
-> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§44 Bras, Kets, and the Riesz Map#^def-44-2|§44.2]]. The companion chapter's bounded operators on $H$ (Definition [[§45 The Completeness Relation#^def-45-1|§45.1]]) are the case $X = Y = H$. Since $\|Tx - Tx'\|_Y \le \|T\|\, \|x - x'\|_X$, a bounded linear map is even Lipschitz continuous, uniformly on all of $X$.
+> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§44 Bras, Kets, and the Riesz Map#^def-44-2|§44.2]]. The companion chapter's bounded operators on $H$ (Definition [[§45 The Completeness Relation#^def-45-1|§45.1]]) are the case $X = Y = H$. A bounded linear map is even Lipschitz continuous, uniformly on all of $X$ (Corollary [[§30 Boundedness and Continuity#^cor-30-3|§30.3]]).
 
 ^rem-30-1
 

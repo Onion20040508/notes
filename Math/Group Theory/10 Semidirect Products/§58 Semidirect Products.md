@@ -24,11 +24,23 @@ tags: [group-theory, math493]
 ^ex-58-1
 
 > [!remark] Remark: Why More Data Is Needed
-> For a direct product, $N_1$ and $N_2$ alone determine $G$. For a semidirect product, $N$ and $S$ do not: one also needs to know how $S$ acts on $N$. For example, $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$ and $S_3$ are both semidirect products of a normal subgroup of order $3$ and a subgroup of order $2$.
+> For a direct product, $N_1$ and $N_2$ alone determine $G$. For a semidirect product, $N$ and $S$ do not: one also needs to know how $S$ acts on $N$ (Example [[§58 Semidirect Products#^ex-58-2|§58.2]]).
 >
 > *Source: lecture 10/26*
 
 ^rem-58-1
+
+> [!example] Example §58.2: $\mathbb{Z}/6\mathbb{Z}$ and $S_3$: Same $N$ and $S$, Different Groups
+> $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$ and $S_3$ are both semidirect products of a normal subgroup of order $3$ and a subgroup of order $2$, but they are not isomorphic.
+> - *$\mathbb{Z}/6\mathbb{Z}$.* Take $N = \{0, 2, 4\}$ of order $3$ and $S = \{0, 3\}$ of order $2$. $N$ is normal since the group is abelian; $N \cap S = \{0\}$; and $N + S$ is a subgroup (Lemma [[§41 The First and Second Isomorphism Theorems#^lem-41-3|§41.3]]) whose order is divisible by $3$ and $2$ (Lagrange), hence is $6$. (Here $S$ is normal too, and $\mathbb{Z}/6\mathbb{Z} \cong \mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z}$ by Theorem [[§57 Internal and External Direct Products#^thm-57-1|§57.1]].)
+> - *$S_3$.* $N = A_3$ and $S = \langle (1\,2) \rangle$, by Example [[§58 Semidirect Products#^ex-58-1|§58.1]].
+> - *Not isomorphic.* $\mathbb{Z}/6\mathbb{Z}$ is abelian and $S_3$ is not: $(1\,2)(2\,3) = (1\,2\,3) \neq (1\,3\,2) = (2\,3)(1\,2)$.
+>
+> In both cases $N \cong \mathbb{Z}/3\mathbb{Z}$ and $S \cong \mathbb{Z}/2\mathbb{Z}$ (groups of prime order, Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]]); what differs is the action of $S$ on $N$: trivial in $\mathbb{Z}/6\mathbb{Z}$, inversion in $S_3$ (Example [[§58 Semidirect Products#^ex-58-4|§58.4]] below).
+>
+> *Source: lecture 10/26*
+
+^ex-58-2
 
 > [!theorem] Proposition §58.1: The Quotient by $N$
 > In an internal semidirect product, $G/N \cong S$.
@@ -202,12 +214,37 @@ tags: [group-theory, math493]
 
 *Uses:* [[§58 Semidirect Products#^prop-58-4|§58.4]], [[§58 Semidirect Products#^prop-58-2|§58.2]], [[§39 Sources of Normal Subgroups#^prop-39-2|§39.2]], [[§58 Semidirect Products#^thm-58-5|§58.5]]
 
-> [!remark] Remark: Direct Products as a Special Case
-> *(Not from class.)* If $\varphi$ is trivial ($\varphi(s) = \mathrm{id}_N$ for all $s$), the rule becomes $(n_1, s_1)(n_2, s_2) = (n_1n_2, s_1s_2)$, and $N \rtimes_\varphi S = N \times S$. In the internal picture, $\varphi$ is trivial exactly when every element of $S$ commutes with every element of $N$. Given $G = NS$, this happens exactly when $S$ is also normal: if $S$ commutes with $N$, then $nsSs^{-1}n^{-1} = nSn^{-1} = S$; conversely, if $S$ is normal, Normal Subgroups with Trivial Intersection Commute (Proposition [[§47 Commutators#^prop-47-8|§47.8]]) applies. This recovers Theorem [[§57 Internal and External Direct Products#^thm-57-1|§57.1]] (WS 11.1).
+> [!theorem] Proposition §58.7: Direct Products as a Special Case
+> 1. If $\varphi: S \to \operatorname{Aut}(N)$ is trivial ($\varphi(s) = \mathrm{id}_N$ for all $s$), then $N \rtimes_\varphi S = N \times S$.
+> 2. In an internal semidirect product of $N$ and $S$, with $\varphi$ given by conjugation, $\varphi$ is trivial exactly when every element of $S$ commutes with every element of $N$.
+> 3. Given $G = NS$ as in (2), this happens exactly when $S$ is also normal in $G$.
+>
+> *Source: not from class*
 
-^rem-58-3
+^prop-58-7
 
-> [!example] Example §58.2: $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$
+> [!proof]+ Proof
+> *Idea:* with trivial action the multiplication rule is componentwise; $\varphi(s)$ is conjugation by $s$.
+>
+> **(1)** With $\varphi(s_1) = \mathrm{id}_N$, the rule of Definition [[§58 Semidirect Products#^def-58-2|§58.2]] becomes $(n_1, s_1)(n_2, s_2) = (n_1n_2, s_1s_2)$, the componentwise product of $N \times S$ (Definition [[§3 Basic Examples of Groups#^def-3-2|§3.2]]) on the same set of pairs.
+>
+> **(2)** $\varphi(s) = \mathrm{id}_N$ means $sns^{-1} = n$, i.e. $sn = ns$, for every $n \in N$; so $\varphi$ is trivial iff this holds for every $s \in S$.
+>
+> **(3)** If $S$ commutes with $N$, let $g = ns \in G$ with $n \in N$, $s \in S$. Then $sSs^{-1} = S$, and $ns'n^{-1} = s'$ for every $s' \in S$, so
+>
+> $$
+> gSg^{-1} = n\,(sSs^{-1})\,n^{-1} = nSn^{-1} = S,
+> $$
+>
+> and $S$ is normal. Conversely, if $S$ is normal, then $N$ and $S$ are normal subgroups with $N \cap S = \{e\}$, and Normal Subgroups with Trivial Intersection Commute (Proposition [[§47 Commutators#^prop-47-8|§47.8]]) shows that they commute.
+
+^pf-58-7
+
+*Uses:* [[§58 Semidirect Products#^def-58-2|Def. §58.2]], [[§3 Basic Examples of Groups#^def-3-2|Def. §3.2]], [[§47 Commutators#^prop-47-8|§47.8]]
+
+Together with Theorem [[§58 Semidirect Products#^thm-58-6|§58.6]](1), this recovers Theorem [[§57 Internal and External Direct Products#^thm-57-1|§57.1]] (WS 11.1).
+
+> [!example] Example §58.3: $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$
 > Let $N = \mathbb{Z}/7\mathbb{Z}$ and $S = \mathbb{Z}/3\mathbb{Z}$, and let $k \in \mathbb{Z}/3\mathbb{Z}$ act on $x \in \mathbb{Z}/7\mathbb{Z}$ by
 >
 > $$
@@ -224,24 +261,24 @@ tags: [group-theory, math493]
 >
 > *Source: lecture 10/26*
 
-^ex-58-2
+^ex-58-3
 
 ![[m493-55-1.svg]]
 
-*(Not from lecture; figure added.)* The action in Example [[§58 Semidirect Products#^ex-58-2|§58.2]]: the generator $1 \in \mathbb{Z}/3\mathbb{Z}$ permutes $\mathbb{Z}/7\mathbb{Z}$ by $x \mapsto 2x$, fixing $0$ and cycling the other six elements in two $3$-cycles. Because $2^3 \equiv 1 \pmod 7$, applying it three times is the identity, which is what makes $k \mapsto (x \mapsto 2^kx)$ a homomorphism $\mathbb{Z}/3\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/7\mathbb{Z})$.
+*(Not from lecture; figure added.)* The action in Example [[§58 Semidirect Products#^ex-58-3|§58.3]]: the generator $1 \in \mathbb{Z}/3\mathbb{Z}$ permutes $\mathbb{Z}/7\mathbb{Z}$ by $x \mapsto 2x$, fixing $0$ and cycling the other six elements in two $3$-cycles. Because $2^3 \equiv 1 \pmod 7$, applying it three times is the identity, which is what makes $k \mapsto (x \mapsto 2^kx)$ a homomorphism $\mathbb{Z}/3\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/7\mathbb{Z})$.
 
 ![[m493-55-2.svg]]
 
 *(Not from lecture; figure added.)* The $21$ elements $(n, s)$ of $\mathbb{Z}/7\mathbb{Z} \rtimes \mathbb{Z}/3\mathbb{Z}$. The bottom row is the normal subgroup $\tilde N$, and the rows are its cosets, one for each $s$: this is $G/\tilde N \cong \mathbb{Z}/3\mathbb{Z}$ (Proposition [[§58 Semidirect Products#^prop-58-1|§58.1]]). The column $n = 0$ is $\tilde S$, which is not normal. The arrows are left multiplication by $(0, 1)$ on the bottom row, $(0, 1)(n, 0) = (2n, 1)$: moving up a row applies the action.
 
-> [!example] Example §58.3: $S_3$ as an External Semidirect Product
+> [!example] Example §58.4: $S_3$ as an External Semidirect Product
 > *(Not from class.)* Let $\varphi: \mathbb{Z}/2\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/3\mathbb{Z})$ send $1$ to $x \mapsto -x$. Then $\mathbb{Z}/3\mathbb{Z} \rtimes_\varphi \mathbb{Z}/2\mathbb{Z} \cong S_3$: in $S_3 = A_3 \rtimes \langle (1\,2) \rangle$ (Example [[§58 Semidirect Products#^ex-58-1|§58.1]]), conjugation by $(1\,2)$ sends $(1\,2\,3)$ to $(2\,1\,3) = (1\,3\,2) = (1\,2\,3)^{-1}$, which under $A_3 \cong \mathbb{Z}/3\mathbb{Z}$, $(1\,2\,3)^x \leftrightarrow x$, is $x \mapsto -x$. Apply part (1) of Theorem [[§58 Semidirect Products#^thm-58-6|§58.6]]. With $\varphi$ trivial instead, one gets $\mathbb{Z}/3\mathbb{Z} \times \mathbb{Z}/2\mathbb{Z} \cong \mathbb{Z}/6\mathbb{Z}$.
 
-^ex-58-3
+^ex-58-4
 
 > [!remark] Remark: Notation and Mnemonics
 > Conventions differ on the order: $N \rtimes S$ and $S \ltimes N$ mean the same group, with $N$ normal and $S$ acting. Two mnemonics from the lecture: the triangle in $\rtimes$ or $\ltimes$ is like the symbol $\trianglelefteq$ and points toward the normal subgroup; and the vertical stroke stands on the side of $S$, the group that acts on $N$. Note that $N$ is not assumed to be normal in anything at the start; the input is just two groups and an action, and $N$ becomes normal in $N \rtimes_\varphi S$ (Theorem [[§58 Semidirect Products#^thm-58-6|§58.6]](2)).
 >
 > *Source: lecture 10/26*
 
-^rem-58-4
+^rem-58-3

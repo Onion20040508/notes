@@ -212,14 +212,25 @@ The next theorem says it is the *only* obstruction.
 
 *Uses:* [[§24 The Parallelogram Law and Jordan–von Neumann#^prop-24-1|§24.1]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]]
 
+> [!remark] Remark
+> Two points about the proof. First, the only genuinely analytic step is real homogeneity: additivity yields it for rational scalars by pure algebra, and continuity of the norm extends it to the reals. Additivity alone would not suffice — there exist additive functions $\mathbb{R} \to \mathbb{R}$ that are not linear, constructed from a Hamel basis (Example [[§24 The Parallelogram Law and Jordan–von Neumann#^ex-24-1|§24.1]]) — which is why continuity must be invoked. Second, the complex case is reduced to the real one exactly as in the [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|complex Hahn–Banach theorem]]: the real part determines everything, because $\operatorname{Im}(x,y) = \operatorname{Re}(x, iy)$, just as $\operatorname{Im}\ell(x) = -\operatorname{Re}\ell(ix)$ there.
+
+^rem-24-1
+
+> [!example] Example §24.1: An Additive Function That is Not Linear
+> *(Construction filled in.)* A function $f : \mathbb{R} \to \mathbb{R}$ is *additive* if $f(s + t) = f(s) + f(t)$ for all $s, t \in \mathbb{R}$. We construct an additive $f$ that is not linear, i.e. not of the form $f(t) = ct$.
+>
+> *A Hamel basis.* Regard $\mathbb{R}$ as a linear space over $\mathbb{Q}$. Let $P$ be the set of $\mathbb{Q}$-linearly independent subsets of $\mathbb{R}$ that contain $1$, ordered by inclusion. $P \neq \varnothing$ since $\{1\} \in P$, and the union of a chain in $P$ lies in $P$, because each finite subset of the union lies in a single member of the chain and is therefore independent. By Zorn's lemma (Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]]) $P$ has a maximal element $B$. $B$ spans $\mathbb{R}$ over $\mathbb{Q}$: if some $t$ were not a finite $\mathbb{Q}$-combination of elements of $B$, then $B \cup \{t\}$ would be independent, contradicting maximality. So every $t \in \mathbb{R}$ is, uniquely, a finite combination $t = \sum_{b \in B} q_b(t)\, b$ with $q_b(t) \in \mathbb{Q}$, all but finitely many equal to $0$.
+>
+> *$B$ contains an element other than $1$.* Otherwise every real number would be a rational multiple of $1$, i.e. $\mathbb{R} = \mathbb{Q}$, which is false since $\mathbb{R}$ is uncountable and $\mathbb{Q}$ is countable.
+>
+> *The function.* Let $f(t) = q_1(t)$, the coefficient of $1$. Adding the expansions of $s$ and $t$ gives an expansion of $s + t$, so by uniqueness $q_1(s + t) = q_1(s) + q_1(t)$: $f$ is additive. If $f$ were linear, then $f(t) = t f(1) = t$ for all $t$, because $f(1) = 1$. But for $b \in B$ with $b \neq 1$, the expansion of $b$ is $b$ itself, so $f(b) = 0$, while $b \neq 0$ since $0$ lies in no linearly independent set. Hence $f(b) \neq b$, and $f$ is additive but not linear.
+
+^ex-24-1
+
 > [!remark]- Connections
 > - The finite-dimensional parallelogram equality, whose remark names Jordan–von Neumann: [[§20 Inner Products and Norms#^ladr-6-21|LADR 6.21]].
 > - Used to rule out $p \neq 2$: [[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|§24.3]]; and as an application of [[Functional Analysis Problem-Solving Techniques#^ex-t10|Technique 10]].
-
-> [!remark] Remark
-> Two points about the proof. First, the only genuinely analytic step is real homogeneity: additivity yields it for rational scalars by pure algebra, and continuity of the norm extends it to the reals. Additivity alone would not suffice — there exist additive functions $\mathbb{R} \to \mathbb{R}$ that are not linear, constructed from a Hamel basis — which is why continuity must be invoked. Second, the complex case is reduced to the real one exactly as in the [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|complex Hahn–Banach theorem]]: the real part determines everything, because $\operatorname{Im}(x,y) = \operatorname{Re}(x, iy)$, just as $\operatorname{Im}\ell(x) = -\operatorname{Re}\ell(ix)$ there.
-
-^rem-24-1
 
 > [!theorem] Corollary §24.3: Only $p = 2$ Gives an Inner Product
 > Let $1 \le p \le \infty$ with $p \neq 2$. The norm $\|\cdot\|_p$ on $\mathbb{F}^n$ ($n \ge 2$), on $\ell^p$, and on $L^p(\Omega)$ does not come from an inner product.

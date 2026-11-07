@@ -383,7 +383,7 @@ Give a similar criterion for when $\alpha^{-1}(n) = \beta^{-1}(n)$.
 > - The point stabilizer in S_n: [[§30 Orbit–Stabilizer#^def-30-1|Def §30.1]]; stabilizer in general [[§26 Stabilizers and Fixed Points#^def-26-1|Def §26.1]]
 > - Left and right cosets: [[§28 Left and Right Cosets#^def-28-2|Def §28.2]]; congruence modulo a subgroup [[§28 Left and Right Cosets#^def-28-1|Def §28.1]]
 >
-> **Key results.** [[§30 Orbit–Stabilizer#^prop-30-4|Prop §30.4]] (this problem); [[§30 Orbit–Stabilizer#^cor-30-5|Cor §30.5]] (index $n$); [[§30 Orbit–Stabilizer#^ex-30-2|Ex §30.2]]; [[§30 Orbit–Stabilizer#^rem-30-3|Remark: Why the Bijection Uses the Inverse]]; [[§30 Orbit–Stabilizer#^rem-30-4|Remark: As an Instance of Orbit–Stabilizer]]; cosets are equivalence classes [[§28 Left and Right Cosets#^prop-28-2|Prop §28.2]]; [[§30 Orbit–Stabilizer#^prop-30-1|Prop §30.1]] (WS 5.1, the general criterion); [[§28 Left and Right Cosets#^ex-28-2|Ex §28.2]].
+> **Key results.** [[§30 Orbit–Stabilizer#^prop-30-4|Prop §30.4]] (this problem); [[§30 Orbit–Stabilizer#^cor-30-5|Cor §30.5]] (index $n$); [[§30 Orbit–Stabilizer#^ex-30-2|Ex §30.2]]; [[§30 Orbit–Stabilizer#^rem-30-3|Remark: Why the Bijection Uses the Inverse]]; [[§30 Orbit–Stabilizer#^rem-30-4|Remark: As an Instance of Orbit–Stabilizer]]; cosets are equivalence classes [[§28 Left and Right Cosets#^prop-28-3|Prop §28.3]]; [[§30 Orbit–Stabilizer#^prop-30-1|Prop §30.1]] (WS 5.1, the general criterion); [[§28 Left and Right Cosets#^ex-28-3|Ex §28.3]].
 >
 > **Difficulty** (a) 1, (b) 1. Submitted solution: proves elementwise inclusion in both directions and invokes symmetry, then mirrors the argument for right cosets. The $S_3$ example appears as a remark. Statement note: "symmetric group of order $n$" on the sheet means degree $n$; the order is $n!$.
 
@@ -434,7 +434,7 @@ Suppose that $G$ has a subgroup $G'$ other than $G$ and $\{e\}$. Show that $H$ h
 > - Central element: [[§35 The Center#^def-35-1|Def §35.1]]; center [[§35 The Center#^def-35-2|Def §35.2]]
 > - Subgroup: [[§4 Subgroups#^def-4-1|Def §4.1]]; subgroup criteria [[§4 Subgroups#^prop-4-2|Prop §4.2]]
 >
-> **Key results.** [[§16 Isomorphisms#^prop-16-6|Prop §16.6]] (this problem); images of subgroups [[§15 Homomorphisms#^prop-15-4|Prop §15.4]]; [[§15 Homomorphisms#^prop-15-1|Prop §15.1]]; the inverse of an isomorphism [[§16 Isomorphisms#^prop-16-1|Prop §16.1]]; [[§16 Isomorphisms#^rem-16-4|Remark: Using These to Distinguish Groups]]; [[§29 The Index and Lagrange's Theorem#^cor-29-8|Cor §29.8]].
+> **Key results.** [[§16 Isomorphisms#^prop-16-6|Prop §16.6]] (this problem); images of subgroups [[§15 Homomorphisms#^prop-15-4|Prop §15.4]]; [[§15 Homomorphisms#^prop-15-1|Prop §15.1]]; the inverse of an isomorphism [[§16 Isomorphisms#^prop-16-1|Prop §16.1]]; [[§16 Isomorphisms#^ex-16-2|Ex. §16.2]]; [[§29 The Index and Lagrange's Theorem#^cor-29-8|Cor §29.8]].
 >
 > **Difficulty** (a) 1, (b) 1. Submitted solution: (a) is the direct computation. (b) proves the subgroup axioms for $\phi(G')$ from scratch, including $\phi(e) = e$, and uses injectivity twice. The notes add the statement $\phi(Z(G)) = Z(H)$ and the correspondence of subgroup lattices.
 
@@ -483,7 +483,7 @@ Let $V$ be the vector space of degree $\binom{n}{2}$ polynomials in $x_1, \ldots
 > - Character: [[§46 Characters#^def-46-1|Def §46.1]]; multiplicative group of a field [[§3 Basic Examples of Groups#^def-3-4|Def §3.4]]
 > - Action of S_n on polynomials: [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-3|Def §20.3]]; the sign [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|Def §21.2]]; alternating polynomial [[§21 The Sign Homomorphism and the Alternating Group#^def-21-4|Def §21.4]]
 >
-> **Key results.** (1) [[§46 Characters#^thm-46-2|Thm §46.2]]. (2) [[§46 Characters#^ex-46-2|Ex §46.2]], using [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Thm §21.2]]; [[§46 Characters#^rem-46-4|Remark: One-Dimensional Representations]]; [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-10|Cor §21.10]].
+> **Key results.** (1) [[§46 Characters#^thm-46-3|Thm §46.3]]. (2) [[§46 Characters#^ex-46-3|Ex §46.3]], using [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-2|Thm §21.2]]; [[§46 Characters#^rem-46-4|Remark: One-Dimensional Representations]]; [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-10|Cor §21.10]].
 >
 > **Difficulty** (a) 1, (b) 1. Submitted solution: (a) checks that the values lie in $k^\times$ and that the eigenvalue is unique before proving the homomorphism property. (b) takes $\Delta$ with a degree count, gets the eigenvalue from PS1.5(1), and concludes $\lambda = \epsilon$. It quotes 1.5(a), which was proved over $\mathbb{Q}$, for an arbitrary field without comment; the sign argument there does not depend on the field. The characteristic-2 case, where $\lambda$ is trivial, is not discussed.
 
@@ -560,7 +560,7 @@ Let $s$ be an element of $S_n$ of the form $(i\,j)$. Show that $s$ is not a comm
 > - Conjugacy class: [[§33 Conjugacy Classes#^def-33-1|Def §33.1]]; conjugate elements [[§18 Conjugation, Products, and Pointwise Products#^def-18-3|Def §18.3]]
 > - Commutator: [[§47 Commutators#^def-47-1|Def §47.1]]; commutator subgroup [[§47 Commutators#^def-47-2|Def §47.2]]
 >
-> **Key results.** (1) [[§46 Characters#^prop-46-1|Prop §46.1]] and [[§46 Characters#^rem-46-3|Remark: Where Commutativity Is Needed]]. (2) [[§47 Commutators#^prop-47-1|Prop §47.1]] and [[§47 Commutators#^rem-47-1|Remark: The Contrapositive as a Tool]]. (3) [[§47 Commutators#^prop-47-2|Prop §47.2]]. (4) [[§47 Commutators#^prop-47-3|Prop §47.3]], with [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Cor §21.4]]. Later: [[§47 Commutators#^thm-47-5|Thm §47.5]] ($[S_n, S_n] = A_n$); [[§47 Commutators#^lem-47-9|Lem §47.9]].
+> **Key results.** (1) [[§46 Characters#^prop-46-1|Prop §46.1]] and [[§46 Characters#^rem-46-3|Remark: Where Commutativity Is Needed]]. (2) [[§47 Commutators#^prop-47-1|Prop §47.1]] and [[§47 Commutators#^rem-47-1|Remark: The Contrapositive as a Tool]]. (3) [[§47 Commutators#^prop-47-2|Prop §47.2]]. (4) [[§47 Commutators#^prop-47-3|Prop §47.3]], with [[§21 The Sign Homomorphism and the Alternating Group#^cor-21-4|Cor §21.4]]. Later: [[§47 Commutators#^thm-47-5|Thm §47.5]] ($[S_n, S_n] = A_n$); [[§47 Commutators#^lem-47-10|Lem §47.10]].
 >
 > **Difficulty** (a) 1, (b) 1, (c) 1, (d) 1. Submitted solution: (a) writes $g_1$ and $g_2$ as conjugates of a common $g$. (c) goes through $(i\,k\,j)^2$ and $(i\,k\,j) = (j\,k)(i\,j)$. (d) computes the sign via $\det$ of a column swap.
 
@@ -584,7 +584,7 @@ Let $p$ be a prime number and let $G$ be a group of order $p$. Show that $G$ is 
 > - Order of a group, of an element: [[§4 Subgroups#^def-4-6|Def §4.6]], [[§4 Subgroups#^def-4-7|Def §4.7]]; cyclic group [[§4 Subgroups#^def-4-8|Def §4.8]]
 > - Subgroup generated by an element: [[§4 Subgroups#^def-4-3|Def §4.3]]; the cyclic group Z/nZ [[§7 The Group ℤ∕nℤ#^def-7-1|Def §7.1]]
 >
-> **Key results.** [[§29 The Index and Lagrange's Theorem#^thm-29-7|Thm §29.7]] (this problem); finite order [[§4 Subgroups#^prop-4-8|Prop §4.8]]; Lagrange [[§29 The Index and Lagrange's Theorem#^thm-29-2|Thm §29.2]] and [[§29 The Index and Lagrange's Theorem#^cor-29-3|Cor §29.3]]; classification of cyclic groups [[§17 Cyclic Groups#^thm-17-1|Thm §17.1]]; $k \mapsto g^k$ [[§17 Cyclic Groups#^prop-17-3|Prop §17.3]]; [[§29 The Index and Lagrange's Theorem#^cor-29-8|Cor §29.8]].
+> **Key results.** [[§29 The Index and Lagrange's Theorem#^thm-29-7|Thm §29.7]] (this problem); finite order [[§4 Subgroups#^prop-4-10|Prop §4.10]]; Lagrange [[§29 The Index and Lagrange's Theorem#^thm-29-2|Thm §29.2]] and [[§29 The Index and Lagrange's Theorem#^cor-29-3|Cor §29.3]]; classification of cyclic groups [[§17 Cyclic Groups#^thm-17-1|Thm §17.1]]; $k \mapsto g^k$ [[§17 Cyclic Groups#^prop-17-3|Prop §17.3]]; [[§29 The Index and Lagrange's Theorem#^cor-29-8|Cor §29.8]].
 >
 > **Strategy (G3, G12).** $\operatorname{ord}(g) \mid p$ and $g \neq e$, so $\operatorname{ord}(g) = p$ and $\langle g \rangle = G$.
 >
@@ -867,9 +867,9 @@ Suppose that $B$ is a normal subgroup of $G$. Show that, in this case, $AB$ is a
 > **Topic and definitions.** Product sets of subgroups; normality.
 > - Subgroup: [[§4 Subgroups#^def-4-1|Def §4.1]]; subgroup criteria [[§4 Subgroups#^prop-4-2|Prop §4.2]]
 > - The product set $AB$ (written $HN$ in the notes): [[§41 The First and Second Isomorphism Theorems#^def-41-1|Def §41.1]]
-> - Normal subgroup: [[§38 Normal Subgroups#^def-38-1|Def §38.1]]; equivalent forms [[§38 Normal Subgroups#^thm-38-3|Thm §38.3]]
+> - Normal subgroup: [[§38 Normal Subgroups#^def-38-1|Def §38.1]]; equivalent forms [[§38 Normal Subgroups#^thm-38-4|Thm §38.4]]
 >
-> **Key results.** (1) is [[§41 The First and Second Isomorphism Theorems#^ex-41-2|Ex §41.2]]; (2) is [[§41 The First and Second Isomorphism Theorems#^lem-41-3|Lem §41.3]]. Used: multiplying cycles [[§12 Multiplying and Conjugating Cycles#^ex-12-1|Ex §12.1]], subgroups of $S_3$ [[§13 The Symmetric Group S₃#^prop-13-1|Prop §13.1]], Lagrange [[§29 The Index and Lagrange's Theorem#^thm-29-2|Thm §29.2]]. Used later by the Second Isomorphism Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Thm §41.5]] and the order formula [[§41 The First and Second Isomorphism Theorems#^cor-41-6|Cor §41.6]].
+> **Key results.** (1) is [[§41 The First and Second Isomorphism Theorems#^ex-41-3|Ex §41.3]]; (2) is [[§41 The First and Second Isomorphism Theorems#^lem-41-3|Lem §41.3]]. Used: multiplying cycles [[§12 Multiplying and Conjugating Cycles#^ex-12-1|Ex §12.1]], subgroups of $S_3$ [[§13 The Symmetric Group S₃#^prop-13-1|Prop §13.1]], Lagrange [[§29 The Index and Lagrange's Theorem#^thm-29-2|Thm §29.2]]. Used later by the Second Isomorphism Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Thm §41.5]] and the order formula [[§41 The First and Second Isomorphism Theorems#^cor-41-6|Cor §41.6]].
 >
 > **Difficulty 1.** Submitted solution: (1) the $S_3$ example above with the product $(1\,2)(1\,3) = (1\,3\,2)$ traced point by point, and failure of closure under inverses; (2) a direct check of identity, closure (via $h = c^{-1}bc$) and inverses (via $a^{-1}(ab^{-1}a^{-1})$). The notes' Lem §41.3 combines the lecture's closure step with the submitted identity and inverse steps; Ex §41.2 is part (1) and adds the $4 \nmid 6$ remark.
 
@@ -894,7 +894,7 @@ Let $G$ be a group and let $M$ and $N$ be normal subgroups of $G$ with $M \cap N
 > - Commutator: [[§47 Commutators#^def-47-1|Def §47.1]]
 > - Conjugation: [[§18 Conjugation, Products, and Pointwise Products#^def-18-2|Def §18.2]]
 >
-> **Key results.** [[§47 Commutators#^prop-47-8|Prop §47.8]] (this problem); [[§47 Commutators#^rem-47-4|Remark: Commutators of Normal Subgroups]]; reused in the internal direct product criterion [[§54 p-Groups and Sylow Subgroups#^lem-54-6|Lem §54.6]] (second sufficient condition); the counterexample subgroups of [[§41 The First and Second Isomorphism Theorems#^ex-41-2|Ex §41.2]].
+> **Key results.** [[§47 Commutators#^prop-47-8|Prop §47.8]] (this problem); [[§47 Commutators#^rem-47-4|Remark: Commutators of Normal Subgroups]]; reused in the internal direct product criterion [[§54 p-Groups and Sylow Subgroups#^lem-54-6|Lem §54.6]] (second sufficient condition); the counterexample subgroups of [[§41 The First and Second Isomorphism Theorems#^ex-41-3|Ex §41.3]].
 >
 > **Strategy (G6, G8).** The commutator $x = mnm^{-1}n^{-1}$ lies in $N$ (group as $(mnm^{-1})\,n^{-1}$) and in $M$ (group as $m\,(nm^{-1}n^{-1})$), hence is $e$.
 >
@@ -971,11 +971,11 @@ Let $G^{\mathrm{ab}} = G/D(G)$, the abelianization of $G$. Show that $G^{\mathrm
 > [!tip]- Hints: definitions and results for the whole problem
 > **Topic and definitions.**
 > - Commutator: [[§47 Commutators#^def-47-1|Def §47.1]]; commutator subgroup $D(G)$ [[§47 Commutators#^def-47-2|Def §47.2]]
-> - Subgroup generated by a set, words: [[§4 Subgroups#^def-4-4|Def §4.4]], [[§4 Subgroups#^def-4-5|Def §4.5]]; top-down description [[§4 Subgroups#^prop-4-7|Prop §4.7]]
+> - Subgroup generated by a set, words: [[§4 Subgroups#^def-4-4|Def §4.4]], [[§4 Subgroups#^def-4-5|Def §4.5]]; top-down description [[§4 Subgroups#^prop-4-9|Prop §4.9]]
 > - Normal subgroup [[§38 Normal Subgroups#^def-38-1|Def §38.1]]; quotient group [[§40 Quotient Groups#^def-40-1|Def §40.1]]; abelianization [[§47 Commutators#^def-47-3|Def §47.3]]
 > - Congruence modulo a subgroup: [[§28 Left and Right Cosets#^def-28-1|Def §28.1]]
 >
-> **Key results.** (1) is [[§47 Commutators#^prop-47-4|Prop §47.4]](1); (2) is [[§47 Commutators#^prop-47-6|Prop §47.6]] (second proof). Used: conjugation is an automorphism [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|Prop §18.1]], $G/N$ is a group [[§40 Quotient Groups#^thm-40-1|Thm §40.1]], cosets as equivalence classes [[§28 Left and Right Cosets#^prop-28-2|Prop §28.2]]. Related: [[§47 Commutators#^prop-47-11|Prop §47.11]], [[§47 Commutators#^rem-47-7|Remark: Smallest Normal Subgroup with Abelian Quotient]], [[§47 Commutators#^ex-47-1|Ex §47.1]], [[§47 Commutators#^ex-47-2|Ex §47.2]].
+> **Key results.** (1) is [[§47 Commutators#^prop-47-4|Prop §47.4]](1); (2) is [[§47 Commutators#^prop-47-6|Prop §47.6]] (second proof). Used: conjugation is an automorphism [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|Prop §18.1]], $G/N$ is a group [[§40 Quotient Groups#^thm-40-1|Thm §40.1]], cosets as equivalence classes [[§28 Left and Right Cosets#^prop-28-3|Prop §28.3]]. Related: [[§47 Commutators#^prop-47-13|Prop §47.13]], [[§47 Commutators#^cor-47-14|Cor. §47.14]], [[§47 Commutators#^ex-47-1|Ex §47.1]], [[§47 Commutators#^ex-47-5|Ex §47.5]].
 >
 > **Difficulty 1.** Submitted solution: (1) inverse of a commutator is a commutator, conjugate of a commutator is a commutator, then conjugate a product factor by factor; (2) proves $(ba)D \subseteq (ab)D$ by an explicit element computation and swaps roles, then gives an alternative proof via the coset criterion. The alternative is the notes' second proof of Prop §47.6; part (1) is the proof of Prop §47.4(1).
 
@@ -1090,7 +1090,7 @@ Prove or disprove: $[A : B]$ divides $[G : H]$.
 > - Action [[§25 Actions#^def-25-1|Def §25.1]]; stabilizer [[§26 Stabilizers and Fixed Points#^def-26-1|Def §26.1]]; orbit [[§27 Orbits#^def-27-1|Def §27.1]]
 > - Well-defined map: [[§7 The Group ℤ∕nℤ#^def-7-2|Def §7.2]]
 >
-> **Key results.** (1) is [[§29 The Index and Lagrange's Theorem#^prop-29-9|Prop §29.9]]; (2) is [[§29 The Index and Lagrange's Theorem#^ex-29-2|Ex §29.2]]; the normal case [[§41 The First and Second Isomorphism Theorems#^cor-41-8|Cor §41.8]]. Used: the action on $G/H$ [[§31 G Acting on Coset Spaces#^prop-31-1|Prop §31.1]], orbit–stabilizer [[§30 Orbit–Stabilizer#^thm-30-3|Thm §30.3]], Lagrange [[§29 The Index and Lagrange's Theorem#^thm-29-2|Thm §29.2]], Second Isomorphism Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Thm §41.5]].
+> **Key results.** (1) is [[§29 The Index and Lagrange's Theorem#^prop-29-10|Prop §29.10]]; (2) is [[§29 The Index and Lagrange's Theorem#^ex-29-6|Ex §29.6]]; the normal case [[§41 The First and Second Isomorphism Theorems#^cor-41-8|Cor §41.8]]. Used: the action on $G/H$ [[§31 G Acting on Coset Spaces#^prop-31-1|Prop §31.1]], orbit–stabilizer [[§30 Orbit–Stabilizer#^thm-30-3|Thm §30.3]], Lagrange [[§29 The Index and Lagrange's Theorem#^thm-29-2|Thm §29.2]], Second Isomorphism Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-5|Thm §41.5]].
 >
 > **Difficulty** (1) 1, (2) 1. Submitted solution: (1) proves the injection $aB \mapsto aH$ (well defined and injective) rather than using the hinted action; (2) the $S_3$ counterexample with the cosets $H$, $(1\,3)H$, $(2\,3)H$ listed. These are Prop §29.9 and Ex §29.2; Cor §41.8 (normal case) is an addition in the notes.
 
@@ -1216,7 +1216,7 @@ Show that $\psi(\sigma) = 1$ for all $\sigma \in A_n$.
 > - Character: [[§46 Characters#^def-46-1|Def §46.1]]; commutator [[§47 Commutators#^def-47-1|Def §47.1]]
 > - $A_n$: [[§21 The Sign Homomorphism and the Alternating Group#^def-21-3|Def §21.3]]; disjoint cycles [[§11 Disjoint Cycle Decomposition#^def-11-1|Def §11.1]]
 >
-> **Key results.** (1) is [[§47 Commutators#^lem-47-9|Lem §47.9]]; (2)–(3) are [[§47 Commutators#^thm-47-10|Thm §47.10]]. Used: characters kill commutators [[§47 Commutators#^prop-47-1|Prop §47.1]], 3-cycles are commutators in $S_n$ [[§47 Commutators#^prop-47-2|Prop §47.2]], disjoint cycles commute [[§11 Disjoint Cycle Decomposition#^lem-11-2|Lem §11.2]], generators of $A_n$ [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|Thm §21.9]]. Related: [[§47 Commutators#^rem-47-5|Remark: Small n and Simplicity]], transpositions are not commutators [[§47 Commutators#^prop-47-3|Prop §47.3]], $A_n$ simple [[§43 Simple Groups#^thm-43-9|Thm §43.9]], the pair-partition homomorphism [[§43 Simple Groups#^prop-43-10|Prop §43.10]].
+> **Key results.** (1) is [[§47 Commutators#^lem-47-10|Lem §47.10]]; (2)–(3) are [[§47 Commutators#^thm-47-11|Thm §47.11]]. Used: characters kill commutators [[§47 Commutators#^prop-47-1|Prop §47.1]], 3-cycles are commutators in $S_n$ [[§47 Commutators#^prop-47-2|Prop §47.2]], disjoint cycles commute [[§11 Disjoint Cycle Decomposition#^lem-11-2|Lem §11.2]], generators of $A_n$ [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-9|Thm §21.9]]. Related: [[§47 Commutators#^rem-47-5|Remark: Small n and Simplicity]], transpositions are not commutators [[§47 Commutators#^prop-47-3|Prop §47.3]], $A_n$ simple [[§43 Simple Groups#^thm-43-9|Thm §43.9]], the pair-partition homomorphism [[§43 Simple Groups#^prop-43-10|Prop §43.10]].
 >
 > **Difficulty** (1) 2, (2) 1, (3) 1. Submitted solution: (1) cites PS 2.4(c) for $(i\,j\,k) = (j\,k)(i\,j)(j\,k)(i\,j)$ and uses $g_1 = (l\,m)(j\,k)$, $g_2 = (l\,m)(i\,j)$; (2) cites PS 2.4(b) applied to $A_n$; (3) uses the generators $(1\,2\,j)$ from PS 1.5. Integrated as Lem §47.9 and Thm §47.10.
 
@@ -1276,10 +1276,10 @@ Show that if $T(0, 0, M)$ is a commutator then $\operatorname{rank}(M) \leq 2q$.
 > [!tip]- Hints: definitions and results for the whole problem
 > **Topic and definitions.**
 > - Commutator [[§47 Commutators#^def-47-1|Def §47.1]]; commutator subgroup [[§47 Commutators#^def-47-2|Def §47.2]]
-> - Subgroup generated by a set [[§4 Subgroups#^def-4-5|Def §4.5]]; top-down description [[§4 Subgroups#^prop-4-7|Prop §4.7]]; subgroup criteria [[§4 Subgroups#^prop-4-2|Prop §4.2]]
+> - Subgroup generated by a set [[§4 Subgroups#^def-4-5|Def §4.5]]; top-down description [[§4 Subgroups#^prop-4-9|Prop §4.9]]; subgroup criteria [[§4 Subgroups#^prop-4-2|Prop §4.2]]
 > - $GL_n(\mathbb{R})$: [[§3 Basic Examples of Groups#^def-3-6|Def §3.6]]
 >
-> **Key results.** [[§47 Commutators#^ex-47-2|Ex §47.2]] (this problem); [[§47 Commutators#^prop-47-4|Prop §47.4]].
+> **Key results.** [[§47 Commutators#^ex-47-5|Ex §47.5]] (this problem); [[§47 Commutators#^prop-47-4|Prop §47.4]].
 >
 > **Difficulty** (1) 1, (2) 2, (3) 2. Submitted solution: introduces $T(A, B, C)$ and derives everything from the product formula; (2) uses a row of ones in $A'$ and a column of ones in $Y$, rescaled by $\lambda/q$; (3) proves the two rank inequalities and uses $M$ with $I_{2q+1}$ in the corner. Ex §47.2 is the condensed version.
 >

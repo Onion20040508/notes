@@ -62,12 +62,39 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 
 ^pf-14-2
 
+Anything defined in terms of convergence cannot tell equivalent norms apart. Conversely, completeness can tell inequivalent norms apart:
+
+> [!theorem] Corollary §14.3: A Complete and an Incomplete Norm are Not Equivalent
+> Let $\|\cdot\|_1$ and $\|\cdot\|_2$ be norms on one linear space $X$ such that $(X, \|\cdot\|_1)$ is complete and $(X, \|\cdot\|_2)$ is not. Then $\|\cdot\|_1$ and $\|\cdot\|_2$ are not equivalent.
+
+^cor-14-3
+
+> [!proof]+ Proof
+> If they were equivalent, Proposition [[§14 New Normed Spaces from Old#^prop-14-1|§14.1]] would give that $(X, \|\cdot\|_1)$ is complete if and only if $(X, \|\cdot\|_2)$ is, contradicting the hypothesis.
+
+^pf-14-3
+
+*Uses:* [[§14 New Normed Spaces from Old#^prop-14-1|§14.1]]
+
+> [!example] Example §14.1: $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ on $C[a,b]$ are Not Equivalent
+> On $C[a,b]$ ($a < b$) consider $\|f\|_\infty = \max_{[a,b]} |f|$ and $\|f\|_{L^1} = \int_a^b |f(t)|\,dt$. The space is complete under $\|\cdot\|_\infty$ and not under $\|\cdot\|_{L^1}$, so by Corollary [[§14 New Normed Spaces from Old#^cor-14-3|§14.3]] the two norms are not equivalent.
+>
+> *(Justification filled in.)* $\|\cdot\|_{L^1}$ is a norm on $C[a,b]$: homogeneity and the triangle inequality follow from those of $|\cdot|$ and linearity and monotonicity of the integral, and a continuous $|f| \ge 0$ with $\int_a^b |f| = 0$ vanishes identically. Completeness under $\|\cdot\|_\infty$ is Theorem [[§12 Completeness#^thm-12-1|§12.1]]. For incompleteness under $\|\cdot\|_{L^1}$, let $c = (a+b)/2$ and, for $n > 2/(b-a)$ (so that $c + 1/n < b$),
+>
+> $$
+> g_n(t) = \begin{cases} 0, & a \le t \le c, \\ n(t - c), & c \le t \le c + 1/n, \\ 1, & c + 1/n \le t \le b, \end{cases}
+> $$
+>
+> a continuous function with values in $[0,1]$.
+>
+> 1. *Cauchy.* For $m \ge n$, $g_m$ and $g_n$ agree outside $[c, c + 1/n]$ and both take values in $[0,1]$, so $\|g_m - g_n\|_{L^1} \le 1/n$.
+> 2. *No continuous limit.* Suppose $\|g_n - g\|_{L^1} \to 0$ with $g \in C[a,b]$. Since $g_n = 0$ on $[a,c]$, $\int_a^c |g| \le \|g - g_n\|_{L^1} \to 0$, so $g = 0$ on $[a,c]$ by continuity. For $0 < \delta < b - c$ and $n \ge 1/\delta$, $g_n = 1$ on $[c + \delta, b]$, so $\int_{c+\delta}^b |g - 1| \le \|g - g_n\|_{L^1} \to 0$ and $g = 1$ on $[c + \delta, b]$. As $\delta$ is arbitrary, $g = 1$ on $(c, b]$, while $g(c) = 0$: $g$ is not continuous at $c$, a contradiction.
+>
+> So $\{g_n\}$ is Cauchy in $\bigl(C[a,b], \|\cdot\|_{L^1}\bigr)$ without a limit there.
+
+^ex-14-1
+
 *Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]]
-
-> [!remark] Remark
-> Anything defined in terms of convergence cannot tell equivalent norms apart. Conversely, two norms on one set for which the space is complete under one and not under the other cannot be equivalent — as for $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ on $C[a,b]$.
-
-^xrem-14-1
 
 > [!theorem] Theorem §14.4: All Norms on a Finite-Dimensional Space are Equivalent
 > Let $X$ be a finite-dimensional linear space over $\mathbb{F}$. Any two norms on $X$ are equivalent.
@@ -121,16 +148,23 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 
 ^pf-14-4
 
+> [!remark] Remark: Finite Dimension is Necessary
+> The two inequalities are of different depth. $C_1\|x\|' \le \|x\|_1$ is pure algebra (Step 3): a norm is controlled by its values on a basis. The reverse inequality needs compactness of the unit sphere, which is exactly what fails in infinite dimensions (Example [[§14 New Normed Spaces from Old#^ex-14-2|§14.2]] below), and correspondingly the theorem fails there: on $\ell^1$ the norms $\|\cdot\|_1$ and $\|\cdot\|_2$ are not equivalent (Proposition [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-4|§18.4]](c)). Note also what Step 4 shows: an arbitrary norm is continuous for the $\|\cdot\|_1$-topology before we know the two are equivalent; this is the easy direction of Proposition [[§14 New Normed Spaces from Old#^prop-14-2|§14.2]].
+
+^rem-14-1
+
+> [!example] Example §14.2: The Unit Sphere of $\ell^1$ is Not Sequentially Compact
+> This example uses $\ell^1$ (Definition [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|§18.1]], Chapter 4) ahead of its definition. The unit sphere $\{a \in \ell^1 : \|a\|_1 = 1\}$ contains the unit vectors $e_1, e_2, \ldots$ with $\|e_i - e_j\|_1 = 2$ for $i \neq j$, and $\{e_i\}$ has no convergent subsequence. So Step 5 of the proof of Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]] has no infinite-dimensional analogue.
+>
+> *(Justification filled in.)* $e_i$ has a single nonzero entry $1$, so $\|e_i\|_1 = 1$; for $i \neq j$, $e_i - e_j$ has exactly two nonzero entries, $1$ and $-1$, so $\|e_i - e_j\|_1 = 2$. A convergent subsequence $\{e_{i_r}\}$ would be Cauchy (Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]](b)), so $\|e_{i_r} - e_{i_s}\|_1 < 1$ for all large $r \neq s$; but distinct terms are at distance $2$.
+
+^ex-14-2
+
 *Uses:* [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[Bolzano–Weierstrass Theorem|451 Bolzano–Weierstrass]]
 
 > [!remark]- Connections
 > - The case $X = \mathbb{R}^n$ with the Euclidean and max norms: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]], [[§12 Metric Topology#^thm-12-2|590 §12.2]]; coordinatewise Bolzano–Weierstrass in $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]].
 > - Used later: the $p$-norms on $\mathbb{R}^2$ after [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-4|§18.4]], the compact unit ball [[§20 Compactness and the Unit Ball#^ex-20-1|Ex. §20.1]]; through [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]], completeness of $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]).
-
-> [!remark] Remark: Finite Dimension is Necessary
-> The two inequalities are of different depth. $C_1\|x\|' \le \|x\|_1$ is pure algebra (Step 3): a norm is controlled by its values on a basis. The reverse inequality needs compactness of the unit sphere, which is exactly what fails in infinite dimensions — the unit sphere of $\ell^1$ contains $e_1, e_2, \ldots$ with $\|e_i - e_j\|_1 = 2$, no convergent subsequence — and correspondingly the theorem fails there: on $\ell^1$ the norms $\|\cdot\|_1$ and $\|\cdot\|_2$ are not equivalent (Proposition [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-4|§18.4]](c)). Note also what Step 4 shows: an arbitrary norm is continuous for the $\|\cdot\|_1$-topology before we know the two are equivalent; this is the easy direction of Proposition [[§14 New Normed Spaces from Old#^prop-14-2|§14.2]].
-
-^rem-14-1
 
 > [!theorem] Corollary §14.5: Finite-Dimensional Normed Spaces are Complete
 > Every finite-dimensional normed linear space is a Banach space.
@@ -161,10 +195,18 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 
 *Uses:* [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]], [[§12 Completeness#^lem-12-2|§12.2]], [[§14 New Normed Spaces from Old#^prop-14-7|§14.7]]
 
-> [!remark] Remark: Finite Dimension is Necessary
-> The corollary fails for infinite-dimensional subspaces. The finitely supported sequences $c_{00} = \{ a \in \ell : a_i = 0 \text{ for all but finitely many } i \}$ form a subspace of $\ell^p$, $1 \le p < \infty$, which is not closed: for $a \in \ell^p$ the truncations $(a_1, \ldots, a_n, 0, \ldots)$ lie in $c_{00}$ and converge to $a$, since $\sum_{i > n} |a_i|^p \to 0$, while $a = (2^{-i})_{i \ge 1}$, say, is not finitely supported. This is why Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]] had to assume $Y$ closed.
+> [!example] Example §14.3: The Finitely Supported Sequences are Not Closed in $\ell^p$
+> Corollary [[§14 New Normed Spaces from Old#^cor-14-6|§14.6]] fails for infinite-dimensional subspaces. The finitely supported sequences $c_{00} = \{ a \in \ell : a_i = 0 \text{ for all but finitely many } i \}$ form a subspace of $\ell^p$, $1 \le p < \infty$ (Definition [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|§18.1]], used here ahead of its definition), which is not closed: for $a \in \ell^p$ the truncations $(a_1, \ldots, a_n, 0, \ldots)$ lie in $c_{00}$ and converge to $a$, since $\sum_{i > n} |a_i|^p \to 0$, while $a = (2^{-i})_{i \ge 1}$, say, is not finitely supported. This is why Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]] had to assume $Y$ closed.
+>
+> *(Details filled in.)*
+>
+> 1. *$c_{00}$ is a subspace of $\ell^p$.* A finitely supported sequence has a finite sum $\sum_i |a_i|^p$, so $c_{00} \subset \ell^p$; sums and scalar multiples of finitely supported sequences are finitely supported.
+> 2. *Truncations converge.* For $a \in \ell^p$ and $a^{(n)} = (a_1, \ldots, a_n, 0, \ldots) \in c_{00}$, $\|a - a^{(n)}\|_p^p = \sum_{i > n} |a_i|^p$, the tail of the convergent series $\sum_i |a_i|^p$, which tends to $0$. So every $a \in \ell^p$ lies in the closure $\overline{c_{00}}$.
+> 3. *$c_{00} \neq \ell^p$.* $a = (2^{-i})_{i \ge 1}$ has $\sum_i |a_i|^p = \sum_i 2^{-ip} < \infty$, so $a \in \ell^p$, and no entry vanishes, so $a \notin c_{00}$.
+>
+> Thus $\overline{c_{00}} = \ell^p \neq c_{00}$, and $c_{00}$ is not closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](b)).
 
-^xrem-14-3
+^ex-14-3
 
 ## Subspaces and Direct Sums
 
