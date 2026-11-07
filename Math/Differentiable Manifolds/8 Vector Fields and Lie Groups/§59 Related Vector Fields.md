@@ -347,6 +347,7 @@ The reason for the characterization through operators is the following propositi
 *Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], [[§59 Related Vector Fields#^lem-59-5|§59.5]]
 
 ![[m591-56-5.svg]]
+*A field tangent to $S$, near $S$. Left: $S$ in $M$ and the domain $U$ of a slice chart $\varphi = (x, y)$. Right: in the chart, $\varphi(S \cap U) = \{y = 0\}$, and $\mathbf{X} = f\,\partial_x + g\,\partial_y$ is tangent to $S$ exactly when $g(x, 0) = 0$: on the slice its arrows point along it.*
 
 **Comparison with Lee.** Lee proves this (Corollary 8.32) with related fields: on $S$, $\mathbf{X}$ and $\mathbf{Y}$ restrict to fields $\iota$-related to them, and the naturality of the bracket (Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]]) applied to the inclusion $\iota : S \to M$ does the rest. The coordinate proof above is the one given in class.
 

@@ -119,7 +119,7 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 *The two changes of chart in one diagram, as on the board. On $M$, the chart $\tilde\varphi$ is made from the first $m$ components of $F$, which turns $F$ into the graph $\hat F$; on $N$, the straightening $\Sigma$ removes the graph, so that $\tilde F = \Sigma \circ \hat F$ is the inclusion.*
 
 ![[m591-32-2.svg]]
-*Step 6 in a picture ($m = n - m = 1$). Before: the image of $\hat F$ is the graph $y_b = G(y_a)$ over $\tilde\varphi(U)$. After: each point is moved straight down by $G(y_a)$, and the graph becomes a piece of the $y_a$-axis — an open interval, over the same $\tilde\varphi(U)$.*
+*Step 6 in a picture ($m = n - m = 1$). On $N$ (left), $F(U)$ is a curve in the chart domain $V$; the rest of $F(M)$ may leave $V$. Before (middle): $\psi$ carries $F(U)$ to the image of $\hat F$, the graph $y_b = G(y_a)$ over $\tilde\varphi(U)$. After (right): each point is moved straight down by $G(y_a)$, and the graph becomes a piece of the $y_a$-axis — an open interval, over the same $\tilde\varphi(U)$.*
 
 **Transcription note.** Page 38 of the handwritten notes begins the proof with “start with any coordinates with $\varphi(U) \subset V$”; the condition is $F(U) \subseteq V$. In the lecture the shifted coordinates were first spoken as $G^{i-m}(y^1, \ldots, y^n)$; the arguments are the first $m$ coordinates, $y^1, \ldots, y^m$, as on page 38.
 

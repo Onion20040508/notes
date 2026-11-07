@@ -199,6 +199,7 @@ The Lie derivative of a vector field turns out to be a known operation, the brac
 ^pf-72-5
 
 ![[m591-72-3.svg]]
+*[[§72 Lie Derivatives#^lem-72-5|Lemma §72.5]] in a picture. Left: integral curves of $\mathbf{X}$ in $M$ near $p$ (continuing outside $U$), and the chart domain $U$. Right: in the chart $\varphi$, the same curves are the parallel lines on which $x^2, \ldots, x^m$ are constant, run at unit speed in $x^1$.*
 
 A field that is nonzero at $p$ is nonzero on a neighbourhood of $p$, by continuity, and in suitable coordinates there it is the constant field $\partial_1$: its integral curves are straightened into parallel lines.
 
