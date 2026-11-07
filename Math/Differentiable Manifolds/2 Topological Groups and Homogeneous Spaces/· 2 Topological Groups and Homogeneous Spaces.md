@@ -29,7 +29,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|Proposition §11.3: Determinant Is Continuous]]: 339 later results
-- [[§14 Homogeneous Spaces#^lem-14-3|Lemma §14.3: When Two Cosets Coincide]]: 337 later results
-- [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|Proposition §11.5: Equivalent Description of O(n,ℝ)]]: 336 later results
-- [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|Proposition §15.6: O(n) Acts Transitively on Gr_k(ℝⁿ)]]: 335 later results
+- [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|Proposition §11.3: Determinant Is Continuous]]: 343 later results
+- [[§14 Homogeneous Spaces#^lem-14-3|Lemma §14.3: When Two Cosets Coincide]]: 341 later results
+- [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|Proposition §11.5: Equivalent Description of O(n,ℝ)]]: 340 later results
+- [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|Proposition §15.6: O(n) Acts Transitively on Gr_k(ℝⁿ)]]: 339 later results

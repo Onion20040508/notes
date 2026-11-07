@@ -22,6 +22,7 @@ tags: [differentiable-manifolds, hub]
 - [[§70 Complete Vector Fields#^lem-70-1|Lemma §70.1: Uniform Time Lemma]]
 - [[§71 The Exponential Map#^prop-71-1|Proposition §71.1: One-Parameter Subgroups]]
 - [[§71 The Exponential Map#^prop-71-2|Proposition §71.2: Exponentials of Multiples]]
+- [[§72 Lie Derivatives#^thm-72-9|Theorem §72.9: Commuting Fields: Invariance and Commuting Flows]]
 
 ## Connections
 - TODO

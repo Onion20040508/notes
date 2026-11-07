@@ -219,12 +219,12 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Lemma 9.15 | [[§70 Complete Vector Fields#^lem-70-1\|Lem. §70.1]] |
 | Corollary 9.17 | [[§70 Complete Vector Fields#^thm-70-2\|Thm. §70.2]] |
 | Theorem 9.18 | [[§70 Complete Vector Fields#^thm-70-7\|Thm. §70.7]] |
-| Theorem 9.22 | [[§72 Lie Derivatives#^lem-72-4\|Lem. §72.4]] |
-| Lemma 9.36 | [[§72 Lie Derivatives#^lem-72-3\|Lem. §72.3]] |
-| Theorem 9.38 | [[§72 Lie Derivatives#^thm-72-5\|Thm. §72.5]] |
-| Corollary 9.39 | [[§72 Lie Derivatives#^cor-72-6\|Cor. §72.6]] |
-| Theorem 9.42 | [[§72 Lie Derivatives#^thm-72-7\|Thm. §72.7]] |
-| Theorem 9.44 | [[§72 Lie Derivatives#^thm-72-7\|Thm. §72.7]] |
+| Theorem 9.22 | [[§72 Lie Derivatives#^lem-72-5\|Lem. §72.5]] |
+| Lemma 9.36 | [[§72 Lie Derivatives#^lem-72-4\|Lem. §72.4]] |
+| Theorem 9.38 | [[§72 Lie Derivatives#^thm-72-6\|Thm. §72.6]] |
+| Corollary 9.39 | [[§72 Lie Derivatives#^cor-72-7\|Cor. §72.7]] |
+| Theorem 9.42 | [[§72 Lie Derivatives#^thm-72-9\|Thm. §72.9]] |
+| Theorem 9.44 | [[§72 Lie Derivatives#^thm-72-9\|Thm. §72.9]] |
 | Problem 9-1 | [[§68 Local Existence and Uniqueness#^cor-68-4\|Cor. §68.4]], [[§69 Maximal Integral Curves and Flows#^prop-69-2\|Prop. §69.2]] |
 | Example 10.3 | [[§41 Examples of Fibrations#^ex-41-2\|Ex. §41.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |

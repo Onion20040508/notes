@@ -8,7 +8,7 @@ tags: [chapter, differentiable-manifolds]
 ↑ [[Differentiable Manifolds]]
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (40), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (9), [[· 3 Smooth Structures|3 Smooth Structures]] (104)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (108), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (40), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (87), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (75), [[· 9 Sard's Theorem|9 Sard's Theorem]] (9), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (15)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (1), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (108), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (40), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (87), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (75), [[· 9 Sard's Theorem|9 Sard's Theorem]] (9), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (17)
 **Builds on (other subjects):** [[Linear Algebra]] (16), [[Topology]] (4), [[Single Variable Analysis]] (2), [[Multivariable Analysis]] (10)
 
 ## Sections
@@ -36,7 +36,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§27 Germs#^prop-27-1|Proposition §27.1: Agreement Near a Point Is an Equivalence Relation]]: 242 later results
-- [[§27 Germs#^prop-27-2|Proposition §27.2: C_p^∞(M) Is an ℝ-Algebra]]: 242 later results
-- [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Proposition §28.3: Germ Derivations and Global Derivations]]: 242 later results
-- [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|Proposition §28.4: Properties of the Pullback]]: 236 later results
+- [[§27 Germs#^prop-27-1|Proposition §27.1: Agreement Near a Point Is an Equivalence Relation]]: 246 later results
+- [[§27 Germs#^prop-27-2|Proposition §27.2: C_p^∞(M) Is an ℝ-Algebra]]: 246 later results
+- [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|Proposition §28.3: Germ Derivations and Global Derivations]]: 246 later results
+- [[§28 Derivations and the Abstract Tangent Space#^prop-28-4|Proposition §28.4: Properties of the Pullback]]: 240 later results

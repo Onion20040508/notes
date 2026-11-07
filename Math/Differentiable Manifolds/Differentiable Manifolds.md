@@ -154,8 +154,8 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56
 - [[Left-Invariant Vector Fields Are Complete]] (§70.7)
 - [[One-Parameter Subgroups Are Integral Curves Through the Identity]] (§71.1)
 - [[The Lie Group Exponential Is a Local Diffeomorphism]] (§71.5)
-- [[The Lie Derivative Is the Bracket]] (§72.5)
-- [[Commuting Vector Fields Have Commuting Flows]] (§72.7)
+- [[The Lie Derivative Is the Bracket]] (§72.6)
+- [[Commuting Vector Fields Have Commuting Flows]] (§72.9)
 
 ## Summaries
 - [[Differentiable Manifolds Midterm Review]]: midterm plan and checklist (definitions, core proofs, strategies, counterexamples, past exams), with [[Differentiable Manifolds HW Drill]] (every homework problem broken into small questions) and [[Differentiable Manifolds Notes Drill]] (definitions, core proofs, class exercises, equivalences).

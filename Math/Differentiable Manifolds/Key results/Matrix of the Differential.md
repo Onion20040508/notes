@@ -49,6 +49,7 @@ tags: [differentiable-manifolds, hub]
 - [[§55 Morse Functions and the Zero Section#^prop-55-1|Proposition §55.1: The Zero Section Is a Regular Submanifold]]
 - [[§55 Morse Functions and the Zero Section#^prop-55-6|Proposition §55.6: The Vertical Space of T^*M Along the Zero Section]]
 - [[§55 Morse Functions and the Zero Section#^prop-55-7|Proposition §55.7: The Differential of df at a Critical Point]]
+- [[§72 Lie Derivatives#^lem-72-4|Lemma §72.4: The Lie Derivative Exists and Is Smooth]]
 
 ## Connections
 - **Used for.** Every local computation with differentials: the chain rule and change of coordinates in matrices ([[§30 The Differential in Coordinates#^cor-30-3|§30.3]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]), agreement with the Jacobian on ℝⁿ ([[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), regular values inside one chart ([[§30 The Differential in Coordinates#^prop-30-9|§30.9]]), the [[Local Diffeomorphism Criterion]], the [[Submersion Normal Form]] and the transition maps of TM ([[Tangent Bundle Is a Smooth Manifold]]).

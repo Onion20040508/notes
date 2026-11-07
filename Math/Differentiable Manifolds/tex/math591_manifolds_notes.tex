@@ -31698,6 +31698,19 @@ Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi : \mathcal{D} \to M$ (Th
 \end{tikzpicture}
 \end{center}
 
+\begin{lembox}[{$\varphi_t$ Is a Diffeomorphism from $M_t$ onto $M_{-t}$}]\thmlabel{lem:flow-diffeo-Mt}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi : \mathcal{D} \to M$ (Theorem~\ref{thm:maximal-flow}). For $t \in \mathbb{R}$ let $M_t = \{ p \in M : (t, p) \in \mathcal{D} \}$. Then $M_t$ is open, and $\varphi_t$ maps $M_t$ diffeomorphically onto $M_{-t}$, with inverse $\varphi_{-t}$.
+\leeref{Theorem 9.12(c)}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; Lee's argument, used below for every time $t$, where Lemma~\ref{lem:flow-inverse-open-domain} covers small $|t|$.)} \emph{Open and smooth.} The map $j_t : M \to \mathbb{R} \times M$, $j_t(p) = (t, p)$, is continuous, and $M_t = j_t^{-1}(\mathcal{D})$ is open because $\mathcal{D}$ is (Theorem~\ref{thm:maximal-flow}(2)); $\varphi_t = \varphi \circ j_t$ is smooth on $M_t$.
+
+\emph{$\varphi_t(M_t) \subseteq M_{-t}$.} Let $p \in M_t$, i.e.\ $t \in (\alpha(p), \beta(p))$, and $q = \varphi_t(p)$. By Proposition~\ref{prop:group-law}(1), $(\alpha(q), \beta(q)) = (\alpha(p) - t, \beta(p) - t)$, which contains $-t$ because $0 \in (\alpha(p), \beta(p))$. So $q \in M_{-t}$.
+
+\emph{Inverse.} For $p \in M_t$, Proposition~\ref{prop:group-law}(2) with $s = t$ and time $-t$ (allowed, since $-t + t = 0 \in (\alpha(p), \beta(p))$) gives $\varphi_{-t}(\varphi_t(p)) = \varphi_0(p) = p$. The same argument with $-t$ in place of $t$ shows that $\varphi_{-t}$ maps $M_{-t}$ into $M_t$ and $\varphi_t(\varphi_{-t}(q)) = q$ for $q \in M_{-t}$. So $\varphi_t : M_t \to M_{-t}$ and $\varphi_{-t} : M_{-t} \to M_t$ are smooth and inverse to each other.
+\end{proof}
+
 \begin{defbox}[Lie Derivative of a Vector Field]\deflabel{def:lie-derivative-field}
 Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, let $\varphi$ be the flow of $\mathbf{X}$, and $p \in M$. The \textbf{Lie derivative} of $\mathbf{Y}$ with respect to $\mathbf{X}$ at $p$ is
 \[
@@ -31739,8 +31752,14 @@ For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, the limit in Definition~\ref{d
 \leeref{Lemma 9.36}
 \end{lembox}
 
-\begin{proof}[Proof (to be filled)]
-Stated without proof in Lecture~27.
+\begin{proof}
+\textit{(Stated without proof in Lecture~27; Lee's proof, filled in.)} Fix $p \in M$ and a chart $(U, (x^i))$ at $p$. Since $\mathcal{D}$ is open, $(0, p) \in \mathcal{D}$ and $\varphi$ is continuous with $\varphi(0, p) = p$, there are $\delta > 0$ and open sets $U_1 \subseteq U_0 \subseteq U$ containing $p$ with $(-\delta, \delta) \times U_0 \subseteq \mathcal{D}$, $\varphi\big((-\delta, \delta) \times U_0\big) \subseteq U$ and $\varphi\big((-\delta, \delta) \times U_1\big) \subseteq U_0$. Write $\varphi^i(t, x)$ for the components of $\varphi$ on $(-\delta, \delta) \times U_0$ in the chart.
+
+Let $|t| < \delta$ and $x \in U_1$. Then $\varphi_t(x) \in U_0$, and on the open set $U_0$ the map $\varphi_{-t} = \varphi(-t, \cdot\,)$ is defined with values in $U$; the Jacobian of its coordinate representation at $\varphi_t(x)$ is the matrix $\big(\frac{\partial \varphi^i}{\partial x^j}(-t, \varphi(t, x))\big)$. Hence, by Theorem~\ref{lem:differential-matrix} (the matrix of a differential in coordinates is the Jacobian of the coordinate representation),
+\[
+V_t(x) := d(\varphi_{-t})_{\varphi_t(x)}\big(\mathbf{Y}_{\varphi_t(x)}\big) = \sum_{i,j} \frac{\partial \varphi^i}{\partial x^j}\big(-t, \varphi(t, x)\big)\, Y^j\big(\varphi(t, x)\big)\, \frac{\partial}{\partial x^i}\Big|_x ,
+\]
+where $Y^j$ are the components of $\mathbf{Y}$. The coefficient of $\partial/\partial x^i|_x$ is a smooth function of $(t, x) \in (-\delta, \delta) \times U_1$, a composite of smooth functions. Therefore $(\mathcal{L}_{\mathbf{X}}\mathbf{Y})_x$, the $t$-derivative at $t = 0$ of this expression (Definition~\ref{def:lie-derivative-field}), exists for each $x \in U_1$, and its coefficients $\frac{\partial}{\partial t}\big|_{t=0}$ of smooth functions of $(t, x)$ are smooth in $x$. As $p$ was arbitrary, $\mathcal{L}_{\mathbf{X}}\mathbf{Y}$ is defined everywhere and is a smooth vector field. The same formula shows that $t \mapsto V_t(x)$ is a smooth curve in $T_xM$ for $|t| < \delta$.
 \end{proof}
 
 \begin{exbox}[The Lie Derivative along $\partial/\partial x^1$]\exlabel{ex:lie-derivative-d1}
@@ -31855,6 +31874,59 @@ From Theorem~\ref{thm:lie-derivative-bracket}. For (2), the left-hand side is $[
 
 \textbf{Transcription note (board 11/6 and Lecture 27).} On the board, the definition of $(\mathcal{L}_{\mathbf{X}} f)(p)$ repeats the left-hand side of the motivating formula, ``$\frac{\partial f}{\partial x^1}(p) = \lim_{t \to 0} \ldots$''; the definition is the limit, as above. The board's single definition box of commuting fields and invariance is split here into Definitions~\ref{def:commuting-fields} and~\ref{def:invariant-under-flow}. Uribe cited this as Lee's Corollary~3.9, then 9.3, with a question mark; it is Lee's Corollary~9.39 (Lee's list also has $\mathcal{L}_{[\mathbf{X}, \mathbf{Y}]} = \mathcal{L}_{\mathbf{X}}\mathcal{L}_{\mathbf{Y}} - \mathcal{L}_{\mathbf{Y}}\mathcal{L}_{\mathbf{X}}$ and a product rule).
 
+The derivative of the curve $V_t$ at $t = 0$ is $(\mathcal{L}_{\mathbf{X}}\mathbf{Y})_p$ by definition. The next proposition computes it at every time; it is the key step in Theorem~\ref{thm:commuting-flows}.
+
+\begin{propbox}[The Derivative of the Pulled-Back Field at Any Time]\thmlabel{prop:pulled-back-derivative}
+Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, let $\varphi$ be the flow of $\mathbf{X}$, and $p \in M$. For $t \in (\alpha(p), \beta(p))$ put
+\[
+V_t = d(\varphi_{-t})_{\varphi_t(p)}\big(\mathbf{Y}_{\varphi_t(p)}\big) \in T_pM .
+\]
+Then $t \mapsto V_t$ is a smooth curve in $T_pM$, and for every $t_0 \in (\alpha(p), \beta(p))$
+\[
+\frac{d}{dt}\Big|_{t = t_0} V_t = d(\varphi_{-t_0})_{\varphi_{t_0}(p)}\Big( (\mathcal{L}_{\mathbf{X}}\mathbf{Y})_{\varphi_{t_0}(p)} \Big) .
+\]
+\leeref{Proposition 9.41}
+\end{propbox}
+
+\begin{proof}
+\textit{(Reading assigned by email after Lecture~27: Lee, Proposition~9.41 and Theorems~9.42 and~9.44; not presented in lecture. Lee's proof.)} $V_t$ is defined: $\varphi_t(p) \in M_{-t}$, where $\varphi_{-t}$ is defined and smooth (Lemma~\ref{lem:flow-diffeo-Mt}). Fix $t_0$ and put $q = \varphi_{t_0}(p)$. For small $|s|$, write $W_s = d(\varphi_{-s})_{\varphi_s(q)}\big(\mathbf{Y}_{\varphi_s(q)}\big) \in T_qM$, the curve of Definition~\ref{def:lie-derivative-field} at the point $q$.
+
+\emph{Step 1: $V_{t_0 + s} = d(\varphi_{-t_0})_q (W_s)$ for small $|s|$.} By Proposition~\ref{prop:group-law}(2), $\varphi_{t_0 + s}(p) = \varphi_s(q)$, for $|s|$ small enough that $t_0 + s \in (\alpha(p), \beta(p))$ and $s \in (\alpha(q), \beta(q))$. Near $\varphi_s(q)$ the two maps $\varphi_{-t_0 - s}$ and $\varphi_{-t_0} \circ \varphi_{-s}$ agree: both are defined on the open set of points $x$ with $\varphi_{-s}(x) \in M_{-t_0}$, which contains $\varphi_s(q)$ (since $\varphi_{-s}(\varphi_s(q)) = q \in M_{-t_0}$, Lemma~\ref{lem:flow-diffeo-Mt}), and there $\varphi_{-t_0}(\varphi_{-s}(x)) = \varphi_{-t_0 - s}(x)$ by the group law. By the chain rule, and because $\varphi_{-s}(\varphi_s(q)) = q$,
+\[
+d(\varphi_{-t_0 - s})_{\varphi_s(q)} = d(\varphi_{-t_0})_q \circ d(\varphi_{-s})_{\varphi_s(q)} .
+\]
+Applying this to $\mathbf{Y}_{\varphi_s(q)} = \mathbf{Y}_{\varphi_{t_0 + s}(p)}$ gives $V_{t_0 + s} = d(\varphi_{-t_0})_q(W_s)$.
+
+\emph{Step 2: differentiate.} By the proof of Lemma~\ref{lem:lie-derivative-smooth} at the point $q$, $s \mapsto W_s$ is a smooth curve in $T_qM$ near $s = 0$, with derivative $(\mathcal{L}_{\mathbf{X}}\mathbf{Y})_q$ at $s = 0$. The map $d(\varphi_{-t_0})_q : T_qM \to T_pM$ is linear and does not depend on $s$, so $s \mapsto V_{t_0 + s}$ is smooth near $0$ and
+\[
+\frac{d}{ds}\Big|_{s = 0} V_{t_0 + s} = d(\varphi_{-t_0})_q\Big( \frac{d}{ds}\Big|_{s = 0} W_s \Big) = d(\varphi_{-t_0})_q\big( (\mathcal{L}_{\mathbf{X}}\mathbf{Y})_q \big) .
+\]
+As $t_0$ was arbitrary, $V_t$ is smooth on $(\alpha(p), \beta(p))$, with the stated derivative.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=1.1]
+\fill[gray!14] (-3.50,-0.15) -- (-1.90,-0.15) -- (-1.60,1.45) -- (-3.20,1.45) -- cycle;
+\node[font=\scriptsize, gray!60!black] at (-1.45,1.30) {$T_pM$};
+\fill[gray!14] (0.66,0.45) -- (2.26,0.45) -- (2.56,2.05) -- (0.96,2.05) -- cycle;
+\node[font=\scriptsize, gray!60!black] at (2.71,1.90) {$T_qM$};
+\draw[thick, red!70!black, ->] plot[smooth] coordinates {(-2.990,-0.089) (-2.890,-0.067) (-2.791,-0.045) (-2.691,-0.022) (-2.591,0.002) (-2.492,0.027) (-2.392,0.052) (-2.292,0.077) (-2.193,0.102) (-2.093,0.128) (-1.993,0.154) (-1.894,0.179) (-1.794,0.205) (-1.694,0.230) (-1.595,0.254) (-1.495,0.279) (-1.395,0.302) (-1.296,0.325) (-1.196,0.347) (-1.096,0.369) (-0.997,0.390) (-0.897,0.409) (-0.797,0.428) (-0.698,0.446) (-0.598,0.463) (-0.498,0.478) (-0.399,0.493) (-0.299,0.507) (-0.199,0.519) (-0.100,0.530) (-0.000,0.541) (0.100,0.550) (0.199,0.559) (0.299,0.566) (0.399,0.572) (0.498,0.578) (0.598,0.583) (0.698,0.587) (0.797,0.590) (0.897,0.593) (0.997,0.595) (1.096,0.597) (1.196,0.598) (1.296,0.600) (1.395,0.601) (1.495,0.602) (1.595,0.603) (1.694,0.604) (1.794,0.606) (1.894,0.608) (1.993,0.611) (2.093,0.614) (2.193,0.618) (2.292,0.623) (2.392,0.629) (2.492,0.636) (2.591,0.644) (2.691,0.654) (2.791,0.665) (2.890,0.677) (2.990,0.692)};
+\node[red!70!black, font=\scriptsize, anchor=west] at (2.99,0.69) {$t \mapsto \varphi_t(p)$};
+\fill (-2.600,0.000) circle (1.4pt) node[below left, font=\scriptsize] {$p$};
+\fill (1.560,0.603) circle (1.4pt) node[below=3pt, font=\scriptsize] {$q = \varphi_{t_0}(p)$};
+\draw[orange!85!black, thick, densely dotted] plot[smooth] coordinates {(1.210,1.783) (1.260,1.748) (1.310,1.718) (1.360,1.691) (1.410,1.667) (1.460,1.648) (1.510,1.631) (1.560,1.619) (1.610,1.610) (1.660,1.604) (1.710,1.603) (1.760,1.604) (1.810,1.610) (1.860,1.619) (1.910,1.631) (1.960,1.648) (2.010,1.667) (2.060,1.691) (2.110,1.718) (2.160,1.748) (2.210,1.783)};
+\draw[->, thick, orange!85!black] (1.560,0.603) -- (1.710,1.603);
+\node[orange!85!black, font=\scriptsize, above] at (2.210,1.783) {$W_s$};
+\draw[blue!70!black, thick, densely dotted] plot[smooth] coordinates {(-3.250,0.930) (-3.186,0.942) (-3.124,0.954) (-3.064,0.966) (-3.006,0.978) (-2.950,0.990) (-2.896,1.002) (-2.844,1.014) (-2.794,1.026) (-2.746,1.038) (-2.700,1.050) (-2.656,1.062) (-2.614,1.074) (-2.574,1.086) (-2.536,1.098) (-2.500,1.110) (-2.466,1.122) (-2.434,1.134) (-2.404,1.146) (-2.376,1.158) (-2.350,1.170)};
+\draw[->, thick, blue!70!black] (-2.600,0.000) -- (-2.700,1.050);
+\node[blue!70!black, font=\scriptsize, above] at (-2.350,1.170) {$V_{t_0+s}$};
+\draw[->, violet!75!black, thick] (1.06,2.25) to[bend right=25] node[above, font=\scriptsize, fill=white, inner sep=1pt] {$d(\varphi_{-t_0})_q$ (fixed, linear)} (-2.10,1.60);
+\node[font=\scriptsize, align=left, anchor=north west] at (-3.4,-0.9) {$W_s = d(\varphi_{-s})_{\varphi_s(q)}(\mathbf{Y}_{\varphi_s(q)})$, \ $\dot W_0 = (\mathcal{L}_{\mathbf{X}}\mathbf{Y})_q$;\\$V_{t_0+s} = d(\varphi_{-t_0})_q(W_s)$, \ so $\dot V_{t_0} = d(\varphi_{-t_0})_q\big((\mathcal{L}_{\mathbf{X}}\mathbf{Y})_q\big)$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added, after Lee's Fig.~9.14.)} The proof of Proposition~\ref{prop:pulled-back-derivative}. To differentiate $V_t$ at $t_0$, move the base point to $q = \varphi_{t_0}(p)$: near $t_0$, $V_t$ is the curve $W_s$ of the Lie derivative at $q$, carried back to $T_pM$ by the one fixed linear map $d(\varphi_{-t_0})_q$. So the velocity of $V_t$ at $t_0$ is the Lie derivative at $q$, carried back.
+
 \emph{Commuting vector fields.} The main application of Theorem~\ref{thm:lie-derivative-bracket} is to the case $[\mathbf{X}, \mathbf{Y}] = 0$.
 
 \begin{defbox}[Commuting Vector Fields]\deflabel{def:commuting-fields}
@@ -31875,12 +31947,40 @@ Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, with flows $\varphi$ and $\psi
 \item $\mathbf{Y}$ is invariant under the flow of $\mathbf{X}$;
 \item the flows commute: $\varphi_s \circ \psi_t = \psi_t \circ \varphi_s$. Precisely: for all intervals $I, J \subseteq \mathbb{R}$ containing $0$ and every $p \in M$, if $\varphi_s \circ \psi_t(p)$ or $\psi_t \circ \varphi_s(p)$ exists for all $(s, t) \in I \times J$, then the other exists too, and they are equal.
 \end{enumerate}
-If $\mathbf{X}$ and $\mathbf{Y}$ are complete, (3) just says $\varphi_s \circ \psi_t = \psi_t \circ \varphi_s$ for all $s, t \in \mathbb{R}$.
+If $\mathbf{X}$ and $\mathbf{Y}$ are complete, (3) just says $\varphi_s \circ \psi_t = \psi_t \circ \varphi_s$ for all $s, t \in \mathbb{R}$. Since $[\mathbf{Y}, \mathbf{X}] = -[\mathbf{X}, \mathbf{Y}]$, (1)--(3) are also equivalent to: $\mathbf{X}$ is invariant under the flow $\psi$ of $\mathbf{Y}$ (Lee, Theorem~9.42(c)).
 \leeref{Theorems 9.42 and 9.44}
 \end{thmbox}
 
-\begin{proof}[Proof (to be filled)]
-To be explained in Lecture~28. The indication given in lecture for (1)$\Rightarrow$(2): $[\mathbf{X}, \mathbf{Y}] = 0$ means, by Theorem~\ref{thm:lie-derivative-bracket}, that the derivative at $t = 0$ of the curve $V_t$ of pulled-back values of $\mathbf{Y}$ is zero, at every point. By the group law, the derivative of $V_t$ at any time $t$ is the derivative at time $0$ at the point $\varphi_t(p)$, carried back to $p$; so it vanishes for every $t$, $V_t$ is constant, and $\mathbf{Y}$ is invariant under the flow. A further argument gives (3).
+\begin{proof}
+\textit{(Lecture~27's indication for (1)$\Rightarrow$(2).)} $[\mathbf{X}, \mathbf{Y}] = 0$ means, by Theorem~\ref{thm:lie-derivative-bracket}, that the derivative at $t = 0$ of the curve $V_t$ of pulled-back values of $\mathbf{Y}$ is zero, at every point; by the group law, the derivative of $V_t$ at any time $t$ is the derivative at time $0$ at the point $\varphi_t(p)$, carried back to $p$ (Proposition~\ref{prop:pulled-back-derivative}); so it vanishes for every $t$, $V_t$ is constant, and $\mathbf{Y}$ is invariant under the flow.
+
+\textit{(Reading assigned by email after Lecture~27: Lee, Proposition~9.41 and Theorems~9.42 and~9.44; not presented in lecture. Lee's proof.)} Throughout, for $p \in M$ let $V_t = d(\varphi_{-t})_{\varphi_t(p)}\big(\mathbf{Y}_{\varphi_t(p)}\big)$, $t \in (\alpha(p), \beta(p))$, as in Proposition~\ref{prop:pulled-back-derivative}; $V_0 = \mathbf{Y}_p$. By Lemma~\ref{lem:flow-diffeo-Mt}, $d(\varphi_{-t})_{\varphi_t(p)}$ and $d(\varphi_t)_p$ are inverse linear isomorphisms, so
+\[
+\mathbf{Y} \text{ is invariant at } (t, p), \text{ i.e. } d(\varphi_t)_p(\mathbf{Y}_p) = \mathbf{Y}_{\varphi_t(p)} \iff V_t = \mathbf{Y}_p . \tag{$\dagger$}
+\]
+
+\emph{(1)$\Rightarrow$(2)} (Lee 9.42). Let $[\mathbf{X}, \mathbf{Y}] = 0$. Then $\mathcal{L}_{\mathbf{X}}\mathbf{Y} = 0$ everywhere (Theorem~\ref{thm:lie-derivative-bracket}), so by Proposition~\ref{prop:pulled-back-derivative} the derivative of $V_t$ vanishes at every $t \in (\alpha(p), \beta(p))$. A curve in the vector space $T_pM$ with zero derivative on an interval is constant (apply the mean value theorem to each component in a basis), so $V_t = V_0 = \mathbf{Y}_p$ for all $t$, and by ($\dagger$) $\mathbf{Y}$ is invariant under $\varphi$.
+
+\emph{(2)$\Rightarrow$(1)} (Lee 9.42). If $\mathbf{Y}$ is invariant under $\varphi$, then by ($\dagger$) $V_t = \mathbf{Y}_p$ for all $t$, so $(\mathcal{L}_{\mathbf{X}}\mathbf{Y})_p = \frac{d}{dt}\big|_{t=0} V_t = 0$ (Definition~\ref{def:lie-derivative-field}), and $[\mathbf{X}, \mathbf{Y}]_p = 0$ by Theorem~\ref{thm:lie-derivative-bracket}. As $p$ was arbitrary, $[\mathbf{X}, \mathbf{Y}] = 0$.
+
+\emph{The symmetric statement.} $[\mathbf{Y}, \mathbf{X}] = -[\mathbf{X}, \mathbf{Y}]$, so the same two arguments with the roles of $\mathbf{X}$ and $\mathbf{Y}$ exchanged show: $[\mathbf{X}, \mathbf{Y}] = 0$ if and only if $\mathbf{X}$ is invariant under $\psi$.
+
+\emph{(1)$\Rightarrow$(3)} (Lee 9.44). Let $[\mathbf{X}, \mathbf{Y}] = 0$, $p \in M$, and $I, J$ open intervals containing $0$ such that $\psi_t \circ \varphi_s(p)$ is defined for all $(s, t) \in I \times J$. (If instead $\varphi_s \circ \psi_t(p)$ is defined on $I \times J$, exchange the roles of $\mathbf{X}$ and $\mathbf{Y}$.) By the symmetric statement, $\mathbf{X}$ is invariant under $\psi$. Fix $t \in J$ and let $\gamma(s) = \psi_t(\varphi_s(p))$, $s \in I$. Then $\gamma(0) = \psi_t(p)$, and by the chain rule (Corollary~\ref{cor:velocity-composite}), the fact that $s \mapsto \varphi_s(p)$ is an integral curve of $\mathbf{X}$, and invariance of $\mathbf{X}$ under $\psi$ at the point $\varphi_s(p)$ (where $\psi_t$ is defined),
+\[
+\dot\gamma(s) = d(\psi_t)_{\varphi_s(p)}\big(\mathbf{X}_{\varphi_s(p)}\big) = \mathbf{X}_{\psi_t(\varphi_s(p))} = \mathbf{X}_{\gamma(s)} .
+\]
+So $\gamma : I \to M$ is an integral curve of $\mathbf{X}$ starting at $\psi_t(p)$. The maximal integral curve $\varphi^{\psi_t(p)}$ extends every integral curve starting at $\psi_t(p)$ (Theorem~\ref{thm:maximal-flow}(1), Proposition~\ref{prop:global-uniqueness}), so its domain contains $I$ and $\varphi_s(\psi_t(p)) = \gamma(s) = \psi_t(\varphi_s(p))$ for all $s \in I$. Hence both compositions are defined on $I \times J$ and agree.
+
+\emph{(3)$\Rightarrow$(1)} (Lee 9.44). Assume the flows commute in the sense of (3), and let $p \in M$. The map $(s, t) \mapsto \psi_t(\varphi_s(p))$ is defined near $(0, 0)$: $\psi$ is defined on an open set $(-\varepsilon_2, \varepsilon_2) \times U$ around $(0, p)$ in its domain, and $\varphi_s(p) \in U$ for $|s| < \varepsilon_1$ by continuity. With $\varepsilon = \min(\varepsilon_1, \varepsilon_2)$ and $I = J = (-\varepsilon, \varepsilon)$, (3) gives $\varphi_s(\psi_t(p)) = \psi_t(\varphi_s(p))$ for $|s|, |t| < \varepsilon$. Fix $|s| < \varepsilon$ and differentiate in $t$ at $t = 0$. On the left, $t \mapsto \psi_t(p)$ has velocity $\mathbf{Y}_p$ at $t = 0$, so the chain rule (Corollary~\ref{cor:velocity-composite}) gives $d(\varphi_s)_p(\mathbf{Y}_p)$; on the right, $t \mapsto \psi_t(\varphi_s(p))$ is the integral curve of $\mathbf{Y}$ through $\varphi_s(p)$, with velocity $\mathbf{Y}_{\varphi_s(p)}$ at $t = 0$. So $d(\varphi_s)_p(\mathbf{Y}_p) = \mathbf{Y}_{\varphi_s(p)}$, that is, $V_s = \mathbf{Y}_p$ for $|s| < \varepsilon$ by ($\dagger$). Hence $(\mathcal{L}_{\mathbf{X}}\mathbf{Y})_p = \frac{d}{ds}\big|_{s=0} V_s = 0$ and $[\mathbf{X}, \mathbf{Y}]_p = 0$ (Theorem~\ref{thm:lie-derivative-bracket}).
+\end{proof}
+
+\begin{corbox}[Every Vector Field Is Invariant under Its Own Flow]\thmlabel{cor:invariant-own-flow}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi$. Then $d(\varphi_t)_p(\mathbf{X}_p) = \mathbf{X}_{\varphi_t(p)}$ for all $(t, p) \in \mathcal{D}$.
+\leeref{Corollary 9.43}
+\end{corbox}
+
+\begin{proof}
+\textit{(Lee's proof; not presented in lecture.)} $[\mathbf{X}, \mathbf{X}] = 0$, so Theorem~\ref{thm:commuting-flows} (1)$\Rightarrow$(2) with $\mathbf{Y} = \mathbf{X}$ gives the invariance. For complete $\mathbf{X}$ this is Lemma~\ref{lem:flow-related-to-itself}.
 \end{proof}
 
 \begin{rembox}[Commuting Flows of Incomplete Fields]\label{rem:commuting-flows-incomplete}

@@ -28,7 +28,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§62 Sets of Measure Zero#^lem-62-1|Lemma §62.1: Basic Properties of Measure Zero]]: 79 later results
-- [[§62 Sets of Measure Zero#^lem-62-2|Lemma §62.2: Smooth Maps Preserve Measure Zero]]: 78 later results
-- [[§62 Sets of Measure Zero#^lem-62-3|Lemma §62.3: Countable Subcovers]]: 77 later results
-- [[§62 Sets of Measure Zero#^prop-62-4|Proposition §62.4: Measure Zero Is Seen in Every Chart]]: 76 later results
+- [[§62 Sets of Measure Zero#^lem-62-1|Lemma §62.1: Basic Properties of Measure Zero]]: 82 later results
+- [[§62 Sets of Measure Zero#^lem-62-2|Lemma §62.2: Smooth Maps Preserve Measure Zero]]: 81 later results
+- [[§62 Sets of Measure Zero#^lem-62-3|Lemma §62.3: Countable Subcovers]]: 80 later results
+- [[§62 Sets of Measure Zero#^prop-62-4|Proposition §62.4: Measure Zero Is Seen in Every Chart]]: 79 later results
