@@ -1,0 +1,18 @@
+% Figure for Thermal and Statistical Physics §C1.8 (cycle A->B->C->A of one mole of monatomic ideal gas in the (V, p) plane, computed with T_C = 2^(-2/3) T_H; units V_0 and R T_H / V_0).
+\begin{tikzpicture}[font=\small, >=stealth]
+  \begin{axis}[nfig, width=8.6cm, height=6cm, xmin=0.7, xmax=2.3, ymin=0, ymax=1.2, xlabel={$V/V_0$}, ylabel={$pV_0/RT_H$}, xtick={1,2}, ytick={0.315,0.5,1}, yticklabels={$0.315$,$0.5$,$1$}]
+    \addplot[fill=figB!12, draw=none, domain=1:2, samples=60] {1/x} \closedcycle;
+    \addplot[fill=white, draw=none, domain=1:2, samples=60] {x^(-5/3)} \closedcycle;
+    \addplot[domain=1:2, samples=60, figR, line width=1.1pt] {1/x};
+    \addplot[domain=1:2, samples=60, figB, line width=1.1pt] {x^(-5/3)};
+    \addplot[figO, line width=1.1pt] coordinates {(2,0.5) (2,0.315)};
+    \addplot[only marks, mark=*, mark size=1.8pt] coordinates {(1,1) (2,0.5) (2,0.315)};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:1,1) {$A$};
+    \node[font=\scriptsize, anchor=south west] at (axis cs:2,0.5) {$B$};
+    \node[font=\scriptsize, anchor=north west] at (axis cs:2,0.315) {$C$};
+    \node[font=\scriptsize, figR, anchor=south west] at (axis cs:1.38,0.74) {isothermal $T_H$};
+    \node[font=\scriptsize, figB, anchor=north east] at (axis cs:1.42,0.53) {reversible adiabat};
+    \node[font=\scriptsize, anchor=center] at (axis cs:1.74,0.5) {$W_{\mathrm{net}}$};
+    \node[font=\scriptsize, figO, anchor=west] at (axis cs:2.04,0.41) {cooling};
+  \end{axis}
+\end{tikzpicture}

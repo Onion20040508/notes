@@ -1,15 +1,15 @@
 ---
 type: subject
 discipline: physics
-courses: ["PHY 287 (UMass, M. Kandula, Fall 2023)", "PHY 306 (Stony Brook, F. Ringer, Spring 2025)"]
-textbooks: ["OpenStax, University Physics Vol. 2", "Schroeder, An Introduction to Thermal Physics", "Blundell & Blundell, Concepts in Thermal Physics", "Schwartz, Physics 181 Statistical Mechanics lectures"]
+courses: ["PHY 287 (UMass, M. Kandula, Fall 2023)", "PHY 306 (Stony Brook, F. Ringer, Spring 2025)", "PHY 510 (UMich, X. Mao, Fall 2026)"]
+textbooks: ["OpenStax, University Physics Vol. 2", "Schroeder, An Introduction to Thermal Physics", "Blundell & Blundell, Concepts in Thermal Physics", "Schwartz, Physics 181 Statistical Mechanics lectures", "Mao, PHY 510 notes", "Sethna, Statistical Mechanics"]
 conventions: "[[University Physics]]"
-status: levels A and B done
+status: "levels A and B done; level C in progress (C0, C1)"
 tags: [subject, thermal-and-statistical-physics]
 ---
 # Thermal and Statistical Physics
 
-Temperature, heat, the kinetic theory of gases and the laws of thermodynamics, then statistical mechanics, in three levels: **A** introductory (University Physics Vol. 2; PHY 287), **B** upper-level (PHY 306; Schroeder; Blundell; Schwartz's statistical-mechanics lectures; the user's own notes), **C** graduate. Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). The mechanics it uses is in [[Classical Mechanics]]. At level B, ★ marks material beyond the course (PHY 306: its syllabus, problem sets and the user's notes): whole sections are starred in the lists below, and folded ★ callouts inside a section are side topics.
+Temperature, heat, the kinetic theory of gases and the laws of thermodynamics, then statistical mechanics, in three levels: **A** introductory (University Physics Vol. 2; PHY 287), **B** upper-level (PHY 306; Schroeder; Blundell; Schwartz's statistical-mechanics lectures; the user's own notes), **C** graduate (PHY 510, Mao, chapters following the course notes; conventions in [[Mao PHY 510]], lectures in [[PHY 510 Course Log]]). Statements are marked by layer: *principles* (assumed), *laws* (empirical, with their range), *theorems* (derived, with a derivation and a *Uses:* line) and *models* (idealisations). The mechanics it uses is in [[Classical Mechanics]]. At level B, ★ marks material beyond the course (PHY 306: its syllabus, problem sets and the user's notes): whole sections are starred in the lists below, and folded ★ callouts inside a section are side topics.
 
 ## Level A — introductory
 - [[· A1 Temperature and Heat]]
@@ -31,6 +31,10 @@ Temperature, heat, the kinetic theory of gases and the laws of thermodynamics, t
 - [[· B11★ Photons and Phonons]]
 - [[· B12★ Bose–Einstein Condensation]]
 - [[· B13★ Fermi Gases]]
+
+## Level C — graduate
+- [[· C0 The Arrow of Time]]
+- [[· C1 Thermodynamics after Carathéodory]]
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -54,6 +58,8 @@ graph TD
   B11["B11★ Photons and Phonons"]
   B12["B12★ Bose–Einstein Condensation"]
   B13["B13★ Fermi Gases"]
+  C0["C0 The Arrow of Time"]
+  C1["C1 Thermodynamics after Carathéodory"]
   A1 -->|1| A2
   A1 -->|1| A3
   A2 -->|15| A3
@@ -124,6 +130,12 @@ graph TD
   B4 -->|2| B9
   B7 -->|6| B9
   B8 -->|3| B9
+  A1 -->|2| C1
+  A3 -->|1| C1
+  A4 -->|3| C1
+  B1 -->|4| C1
+  B2 -->|5| C1
+  B3 -->|2| C1
   A2 -.->|1| A1
   A3 -.->|2| A1
   B11 -.->|1| A1
@@ -156,7 +168,7 @@ graph TD
 ```
 
 ## Planned
-Chapters without notes yet; sources in brackets (∅ = no typed source).
+Chapters without notes yet. Level C follows the chapters of Mao's PHY 510 notes.
 
-**Level C — graduate** (levels A and B are written, above)
-C1 Foundations: Liouville, ergodicity [Schwartz, brief] · C2 Ising model, mean field, Landau theory [∅] · C3 Critical phenomena and the renormalization group [∅] · C4 Fluctuations and linear response [∅] · C5 Non-equilibrium: Boltzmann, Langevin, Onsager [∅] · C6 Density matrix [∅] (the density operator and quantum statistical mechanics are developed in [[· C11 Density Matrices and Entanglement|QM C11]])
+**Level C — graduate** (C0 and C1 are written, above)
+C2 The Fundamental Assumption · C3 Classical and Quantum Microstates · C4a Entropy and Ensembles · C4b Quantum Gases · C5 From Microscopic Reversibility to the Master Equation · C6 Random Walks, Brownian Motion and Diffusion · Unit 3 chapters (emergence of order, fluctuations and criticality, complexity, physics of learning) as they are lectured. The density operator has its home in [[· C11 Density Matrices and Entanglement|QM C11]].

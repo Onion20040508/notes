@@ -1,0 +1,16 @@
+% Figure for Thermal and Statistical Physics §C1.8 (leaves U V^{2/3} = const of a monatomic ideal gas; a free expansion from V_i to 2V_i at fixed U, dashed; level curves computed from the formula).
+\begin{tikzpicture}[font=\small, >=stealth]
+  \begin{axis}[nfig, width=9cm, height=6.2cm, xmin=0, xmax=3.2, ymin=0, ymax=3.2, xlabel={$V/V_i$}, ylabel={$U/U_i$}, xtick={1,2}, ytick={1}]
+    \addplot[domain=0.25:3.2, samples=80, figB] {1.0*x^(-2/3)};
+    \addplot[domain=0.25:3.2, samples=80, figB] {1.5874*x^(-2/3)};
+    \addplot[domain=0.25:3.2, samples=80, figB!45] {0.6*x^(-2/3)};
+    \addplot[domain=0.33:3.2, samples=80, figB!45] {2.4*x^(-2/3)};
+    \draw[-{Stealth[length=2.4mm]}, figR, line width=1.1pt, dashed] (axis cs:1,1) -- (axis cs:2,1);
+    \addplot[only marks, mark=*, mark size=2pt, figR] coordinates {(1,1) (2,1)};
+    \node[font=\scriptsize, figB, anchor=center] at (axis cs:2.72,0.66) {leaf of the start};
+    \node[font=\scriptsize, figB, anchor=center] at (axis cs:2.72,1.0) {leaf of the end};
+    \node[font=\scriptsize, figR, anchor=center] at (axis cs:2.42,2.1) {$\Delta U = 0$, $\Delta S = R\ln 2$};
+    \draw[figR!60, thin] (axis cs:2.2,1.98) -- (axis cs:1.55,1.03);
+    \draw[-{Stealth[length=2mm]}, figG] (axis cs:0.45,0.5) -- (axis cs:0.45,1.05) node[midway, right, font=\scriptsize] {$S$ grows};
+  \end{axis}
+\end{tikzpicture}

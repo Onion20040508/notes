@@ -9,7 +9,7 @@ tags: [chapter, thermal-and-statistical-physics]
 ← [[· A4 The Second Law of Thermodynamics]] · ↑ [[Thermal and Statistical Physics]] · [[· B2 The Laws of Thermodynamics, Formally]] →
 
 **Builds on:** —
-**Used by:** [[· B2 The Laws of Thermodynamics, Formally|B2 The Laws of Thermodynamics, Formally]] (16), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (13), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (2), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (2), [[· B9 Phases and Phase Transitions|B9 Phases and Phase Transitions]] (2)
+**Used by:** [[· B2 The Laws of Thermodynamics, Formally|B2 The Laws of Thermodynamics, Formally]] (16), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (13), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (2), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (2), [[· B9 Phases and Phase Transitions|B9 Phases and Phase Transitions]] (2), [[· C1 Thermodynamics after Carathéodory|C1 Thermodynamics after Carathéodory]] (4)
 
 ## Sections
 - [[§B1.1 Exact and Inexact Differentials]] — Blundell App. C.6, ch. 11; user notes §1–3; PHY 306 PS1, Midterm

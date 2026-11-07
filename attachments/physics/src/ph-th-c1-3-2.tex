@@ -1,0 +1,19 @@
+% Figure for Thermal and Statistical Physics §C1.3 (the car: turn, drive, turn back, drive back gives a sideways displacement; computed with s = 3, turning angle 35 degrees).
+\begin{tikzpicture}[font=\small, >=stealth]
+  \def\car#1#2#3#4{\begin{scope}[shift={(#1,#2)}, rotate=#3]\draw[#4, thick, fill=#4!15, rounded corners=1pt] (-0.42,-0.22) rectangle (0.42,0.22); \draw[#4, thick, -{Stealth[length=1.8mm]}] (0,0) -- (0.62,0);\end{scope}}
+  \coordinate (A) at (0,0); \coordinate (B) at (2.457,1.721); \coordinate (C) at (-0.543,1.721);
+  \draw[black!30, thin, dashed] (-2.6,0) -- (4.2,0);
+  \draw[black!30, thin, dashed] (-2.6,1.721) -- (4.2,1.721);
+  \draw[-{Stealth[length=2.6mm]}, figB, line width=0.9pt] ($(A)!0.17!(B)$) -- ($(A)!0.84!(B)$);
+  \draw[-{Stealth[length=2.6mm]}, figB, line width=0.9pt] ($(B)+(-0.5,0)$) -- ($(C)+(0.75,0)$);
+  \car{0}{0}{0}{figR}
+  \begin{scope}[opacity=0.55]\car{0}{0}{35}{figB}\end{scope}
+  \car{2.457}{1.721}{0}{figB}
+  \car{-0.543}{1.721}{0}{figG}
+  \node[font=\scriptsize, figR, anchor=north] at (0,-0.34) {start; 1. turn by $\theta$};
+  \node[font=\scriptsize, figB, anchor=north west] at (1.25,0.8) {2. drive $s$};
+  \node[font=\scriptsize, figB, anchor=west] at (3.2,2.05) {3. turn back};
+  \node[font=\scriptsize, figB, anchor=south] at (0.95,1.8) {4. drive back $s$};
+  \node[font=\scriptsize, figG, anchor=south] at (-0.543,2.0) {end};
+  \draw[{Stealth[length=2mm]}-{Stealth[length=2mm]}, figO, line width=0.9pt] (-1.8,0) -- (-1.8,1.721) node[midway, left, font=\scriptsize, align=right] {sideways\\ displacement\\ $s\sin\theta \approx s\,\theta$};
+\end{tikzpicture}

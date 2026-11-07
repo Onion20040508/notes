@@ -1,0 +1,19 @@
+% Figure for Thermal and Statistical Physics §C1.3 (leaves of the reversible adiabatic foliation in the (X, U) plane, tangent hyperplane at a state, accessible side). After Mao, Figure 1.1.
+\begin{tikzpicture}[font=\small, >=stealth]
+  \begin{axis}[nfig, width=9.5cm, height=6.6cm, xmin=0.5, xmax=4.3, ymin=0, ymax=6.2, xlabel={$X_1$}, ylabel={$U$}, xtick=\empty, ytick=\empty, clip=true]
+    \addplot[domain=0.5:4.3, samples=60, figB] {1.0*x^(-2/3)};
+    \addplot[domain=0.5:4.3, samples=60, figB] {2.2*x^(-2/3)};
+    \addplot[domain=0.5:4.3, samples=60, figB] {3.8*x^(-2/3)};
+    \addplot[domain=1.1:2.9, samples=2, figR, line width=1.2pt] {1.397-0.465*(x-2)};
+    \addplot[only marks, mark=*, mark size=2pt, figR] coordinates {(2,1.386)};
+    \draw[-{Stealth[length=2.4mm]}, figG, line width=1pt] (axis cs:2,1.386) -- (axis cs:2,2.30);
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:3.45,0.28) {$\Sigma_1$};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:3.45,0.72) {$\Sigma_2$};
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:3.45,1.28) {$\Sigma_3$};
+    \node[font=\scriptsize, figR, anchor=north east] at (axis cs:1.9,1.25) {$x$};
+    \node[font=\scriptsize, figR, anchor=center] at (axis cs:1.5,0.32) {$\delta Q_{\mathrm{rev}} = 0$ at $x$};
+    \draw[figR!60, thin] (axis cs:1.5,0.45) -- (axis cs:1.42,1.63);
+    \node[font=\scriptsize, figG, align=left, anchor=west] at (axis cs:2.08,2.75) {irreversible adiabatic:\\ only toward larger $\Sigma$};
+    \node[font=\scriptsize, align=left, anchor=west] at (axis cs:1.75,5.4) {$\delta Q_{\mathrm{rev}} = \Theta\,d\Sigma$};
+  \end{axis}
+\end{tikzpicture}
