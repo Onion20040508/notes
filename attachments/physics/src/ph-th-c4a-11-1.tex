@@ -1,0 +1,10 @@
+% Figure for Thermal and Statistical Physics §C4a.11 (freely jointed 1D chain: applied force f a/(k_B T) = artanh(X/La) against X/La, with the linear spring f a/k_B T = X/La).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=8.4cm, height=5.8cm, xmin=-1, xmax=1, ymin=-3, ymax=3, axis lines=middle, xlabel={$\bar X/La$}, ylabel={$fa/k_BT$}, xtick={-1,1}, ytick={-2,2}, xlabel style={anchor=north west}, ylabel style={anchor=south}]
+    \addplot[domain=-0.995:0.995, samples=200, figB] {0.5*ln((1+x)/(1-x))};
+    \addplot[domain=-1:1, samples=2, figR, dashed] {x};
+    \draw[black!40, dotted] (axis cs:1,-3) -- (axis cs:1,3); \draw[black!40, dotted] (axis cs:-1,-3) -- (axis cs:-1,3);
+    \node[font=\scriptsize, figB, anchor=west] at (axis cs:0.55,2.3) {exact};
+    \node[font=\scriptsize, figR, anchor=north west] at (axis cs:0.1,-0.9) {linear spring};
+  \end{axis}
+\end{tikzpicture}
