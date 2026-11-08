@@ -8,8 +8,8 @@ tags: [chapter, thermal-and-statistical-physics]
 # C5 From Microscopic Reversibility to the Master Equation
 ← [[· C4b Quantum Gases]] · ↑ [[Thermal and Statistical Physics]] · [[· C6 Random Walks, Brownian Motion and Diffusion]] →
 
-**Builds on:** [[· B5 Kinetic Theory and Transport|B5 Kinetic Theory and Transport]] (1), [[· C0 The Arrow of Time|C0 The Arrow of Time]] (3), [[· C4a Entropy and Ensembles|C4a Entropy and Ensembles]] (2)
-**Used by:** [[· C6 Random Walks, Brownian Motion and Diffusion|C6 Random Walks, Brownian Motion and Diffusion]] (5)
+**Builds on:** [[· B5 Kinetic Theory and Transport|B5 Kinetic Theory and Transport]] (3), [[· C0 The Arrow of Time|C0 The Arrow of Time]] (4), [[· C1 Thermodynamics after Carathéodory|C1 Thermodynamics after Carathéodory]] (4), [[· C3 Classical and Quantum Microstates|C3 Classical and Quantum Microstates]] (1), [[· C4a Entropy and Ensembles|C4a Entropy and Ensembles]] (4)
+**Used by:** [[· C6 Random Walks, Brownian Motion and Diffusion|C6 Random Walks, Brownian Motion and Diffusion]] (9)
 
 Mao's Chapter 5 (Unit 2). How reversible microscopic dynamics, viewed through a part of the system, acquires memory, then a forward-time Markov description: the master equation, detailed balance and relaxation.
 
@@ -37,10 +37,14 @@ Mao's Chapter 5 (Unit 2). How reversible microscopic dynamics, viewed through a 
 - [[§C5.5 The Master Equation#^thm-c5-5-2|§C5.5.2]] The Effective Equation Has No Backward Stochastic Evolution
 - [[§C5.5 The Master Equation#^thm-c5-5-3|§C5.5.3]] Every Rate Matrix Has a Stationary Distribution
 - [[§C5.5 The Master Equation#^thm-c5-5-4|§C5.5.4]] Every Nonstationary Mode Decays
-- [[§C5.6 Detailed Balance#^thm-c5-6-1|§C5.6.1]] What Detailed Balance Means
+- [[§C5.6 Detailed Balance#^thm-c5-6-1|§C5.6.1]] Detailed Balance Makes Stationary Paths Reversible
 - [[§C5.6 Detailed Balance#^thm-c5-6-2|§C5.6.2]] Kolmogorov's Cycle Criterion
-- [[§C5.6 Detailed Balance#^thm-c5-6-3|§C5.6.3]] Thermal Local Detailed Balance
+- [[§C5.6 Detailed Balance#^thm-c5-6-3|§C5.6.3]] The Thermal Ratio Makes the Gibbs Distribution Stationary
+- [[§C5.6 Detailed Balance#^thm-c5-6-4|§C5.6.4]] Detailed Balance Gives a Real Spectrum
 - [[§C5.7 System Entropy during Relaxation#^thm-c5-7-1|§C5.7.1]] System Entropy Rises in Equal-Rate Relaxation
+- [[§C5.7 System Entropy during Relaxation#^thm-c5-7-2|§C5.7.2]] ★ Relative Entropy to the Stationary State Never Increases
+- [[§C5.7 System Entropy during Relaxation#^thm-c5-7-3|§C5.7.3]] ★ Entropy Production of a Master Equation
+- [[§C5.7 System Entropy during Relaxation#^thm-c5-7-4|§C5.7.4]] ★ Boltzmann's H-Theorem
 
 ## Models
 - [[§C5.2 A Spring Chain: Memory from Reversible Springs#^mod-c5-2-1|§C5.2.1]] The Spring Chain

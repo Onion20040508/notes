@@ -8,7 +8,7 @@ tags: [chapter, thermal-and-statistical-physics]
 # C4b Quantum Gases
 ← [[· C4a Entropy and Ensembles]] · ↑ [[Thermal and Statistical Physics]] · [[· C5 From Microscopic Reversibility to the Master Equation]] →
 
-**Builds on:** [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (2), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (9), [[· B11★ Photons and Phonons|B11 Photons and Phonons]] (4), [[· B12★ Bose–Einstein Condensation|B12 Bose–Einstein Condensation]] (5), [[· B13★ Fermi Gases|B13 Fermi Gases]] (4), [[· C1 Thermodynamics after Carathéodory|C1 Thermodynamics after Carathéodory]] (2), [[· C3 Classical and Quantum Microstates|C3 Classical and Quantum Microstates]] (2), [[· C4a Entropy and Ensembles|C4a Entropy and Ensembles]] (13)
+**Builds on:** [[· B8 The Classical Ideal Gas and Equipartition|B8 The Classical Ideal Gas and Equipartition]] (2), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (11), [[· B11★ Photons and Phonons|B11 Photons and Phonons]] (5), [[· B12★ Bose–Einstein Condensation|B12 Bose–Einstein Condensation]] (6), [[· B13★ Fermi Gases|B13 Fermi Gases]] (4), [[· C1 Thermodynamics after Carathéodory|C1 Thermodynamics after Carathéodory]] (2), [[· C3 Classical and Quantum Microstates|C3 Classical and Quantum Microstates]] (3), [[· C4a Entropy and Ensembles|C4a Entropy and Ensembles]] (13)
 **Used by:** —
 
 Mao's Chapter 4, second half. Ideal quantum gases from the grand ensemble, one orbital at a time: polylogarithms, the classical limit, black-body radiation, Bose–Einstein condensation and the degenerate Fermi gas.
@@ -41,7 +41,7 @@ Mao's Chapter 4, second half. Ideal quantum gases from the grand ensemble, one o
 - [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-3|§C4b.3.3]] Two Dispersions
 - [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-4|§C4b.3.4]] Continuum Formulas, with the Ground State Kept Aside
 - [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-1|§C4b.4.1]] $\ln\Xi$ Is a Polylogarithm
-- [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-2|§C4b.4.2]] Three Facts about $G_q$
+- [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-2|§C4b.4.2]] Four Facts about $G_q$
 - [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|§C4b.4.3]] One Function Gives $N$, $U$ and $p$
 - [[§C4b.5 Massive Gases and the Classical Limit#^thm-c4b-5-1|§C4b.5.1]] The Classical Limit Is $\lambda_T \ll a_s$
 - [[§C4b.5 Massive Gases and the Classical Limit#^thm-c4b-5-2|§C4b.5.2]] Classical Ideal-Gas Thermodynamics
@@ -55,6 +55,7 @@ Mao's Chapter 4, second half. Ideal quantum gases from the grand ensemble, one o
 - [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-3|§C4b.7.3]] Transition Temperature and Condensate Fraction
 - [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-4|§C4b.7.4]] When Can Excited States Saturate?
 - [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-5|§C4b.7.5]] Energy and Heat Capacity below $T_c$
+- [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-7|§C4b.7.7]] The Condensate Is One Extended Orbital
 - [[§C4b.8 The Degenerate Fermi Gas#^thm-c4b-8-1|§C4b.8.1]] The Fermi Gas at Zero Temperature
 - [[§C4b.8 The Degenerate Fermi Gas#^thm-c4b-8-2|§C4b.8.2]] Only a Thin Shell Is Thermally Active
 - [[§C4b.9★ Low-Temperature Fermi Thermodynamics#^thm-c4b-9-1|§C4b.9.1]] Sommerfeld Expansion of the Fermi Polylogarithm

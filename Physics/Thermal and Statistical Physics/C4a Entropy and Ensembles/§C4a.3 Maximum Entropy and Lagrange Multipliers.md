@@ -11,25 +11,42 @@ tags: [thermal-physics, level-c]
 
 *Sources: Mao, PHY 510 notes, §4.3.1–§4.3.3, eqs. (4.16)–(4.25) and box "Lagrange multipliers: a bead on a circular wire" · Jaynes, Information Theory and Statistical Mechanics (1957), §2–§3; II, §10 · PHY 510 Lectures 9/24, 9/29.*
 
-Knowing only the mean energy of a system leaves many probability distributions possible. Which one describes it? Jaynes's answer is a rule of inference: take the distribution with the largest entropy among those that agree with what is known. This section states the rule, distinguishes the two kinds of information it can use, and solves the maximization in general with Lagrange multipliers. Level B stated the same principle as a remark and solved its main cases ([[§B6.3 Entropy, Information and the Gibbs Paradox#^rem-b6-3-2|Remark: The maximum-entropy principle]], [[§B6.3 Entropy, Information and the Gibbs Paradox#^thm-b6-3-4|Theorem §B6.3.4]]); here it is the starting point of the ensembles.
+A prescribed mean energy is a single linear condition on the $p_i$, met by a whole family of distributions. Jaynes's rule of inference selects the member of largest entropy ([[§C4a.3 Maximum Entropy and Lagrange Multipliers#^pr-c4a-3-1|Principle §C4a.3.1]]); information enters either by removing states or by fixing means ([[§C4a.3 Maximum Entropy and Lagrange Multipliers#^cau-c4a-3-1|§C4a.3, Caution: Restricting the states versus prescribing a mean]]); and Lagrange multipliers solve the general problem ([[§C4a.3 Maximum Entropy and Lagrange Multipliers#^thm-c4a-3-3|Theorem §C4a.3.3]]). Level B stated the same principle as a remark and solved its main cases ([[§B6.3 Entropy, Information and the Gibbs Paradox#^rem-b6-3-2|Remark: The maximum-entropy principle]], [[§B6.3 Entropy, Information and the Gibbs Paradox#^thm-b6-3-4|Theorem §B6.3.4]]); here it is the starting point of the ensembles.
 
 **Setup.** A fixed set of allowed microstates $i$, with the values $A_\alpha(i)$ of some observables in each, and the entropy $H[p] = -\sum_ip_i\ln p_i$ of [[§C4a.2 The Entropy of a Statistical State#^def-c4a-2-1|Def. §C4a.2.1]]. External parameters such as $V$ are held fixed.
 
 ## The principle
 
 > [!principle] Principle §C4a.3.1: Jaynes's Maximum-Entropy Principle
-> When the available information is incomplete, assign the probability distribution that has the largest entropy $H[p]$ among all distributions compatible with that information. It builds in what is known and commits to nothing else about which microstate is occupied.
+> Let the available information define a set $\mathcal C$ of compatible distributions. Assign
 >
-> For quantum systems the maximized quantity is $H_{\text{vN}}[\hat\rho]$, over density operators with the prescribed expectation values.
+> $$
+> p^\ast = \arg\max_{p\in\mathcal C}H[p] ,
+> $$
 >
-> *Domain:* statistical inference from macroscopic information; the microscopic alternatives (and, classically, the measure $d\Gamma$) must be fixed first, with distinct states of equal energy counted separately.
+> and in quantum mechanics
+>
+> $$
+> \hat\rho^\ast = \arg\max\bigl\{H_{\text{vN}}[\hat\rho] : \hat\rho \ge 0,\ \operatorname{Tr}\hat\rho = 1,\ \operatorname{Tr}\hat\rho\hat A_\alpha = \bar A_\alpha\bigr\} .
+> $$
+>
+> Any other member of $\mathcal C$ has lower entropy, so it asserts more about the microstate than the data contain.
+>
+> *Domain:* inference from macroscopic data. Fixed beforehand:
+> - the list of microstates, each counted once even when several share an energy;
+> - classically, the measure $d\Gamma$ ([[§C4a.2 The Entropy of a Statistical State#^cau-c4a-2-1|§C4a.2, Caution: The reference measure must be fixed]]).
 >
 > *Source: Mao §4.3.1, box "Jaynes's maximum-entropy principle (MaxEnt)" · Jaynes (1957), §2–§3; II, §10 · Lecture 9/24*
 
 ^pr-c4a-3-1
 
 > [!caution] Caution: Restricting the states versus prescribing a mean
-> Information enters in two different places. A **restriction** removes microstates from the set: a fixed particle number excludes every state with another $N$. A **mean constraint** keeps the states and restricts the probabilities: a prescribed mean energy allows many $E_i$ but requires $\sum_ip_iE_i = U$. Getting the ensemble right means deciding which kind each piece of information is.
+> | kind of information | what it changes | example |
+> | --- | --- | --- |
+> | **restriction** | the index set of $\sum_i$ | exact $N$: other particle numbers are not in the set |
+> | **mean constraint** | a linear condition on the $p_i$, i.e. a hyperplane in the simplex | $\sum_ip_iE_i = U$, with every $E_i$ still allowed |
+>
+> Treating one kind as the other gives a different ensemble ([[§C4a.3 Maximum Entropy and Lagrange Multipliers#^def-c4a-3-1|Def. §C4a.3.1]]).
 
 ^cau-c4a-3-1
 
@@ -95,7 +112,7 @@ Knowing only the mean energy of a system leaves many probability distributions p
 >
 > It is the unique maximum when it exists.
 >
-> *Model:* a fixed set of allowed states; *applies:* when $Z$ converges and the prescribed means can be reached with all $p_i > 0$; at the edges of the allowed range the maximum can sit on fewer states.
+> *Model:* a fixed set of allowed states; *applies:* $Z(\eta)$ finite and $(\bar A_\alpha)$ inside the range of attainable means; at an endpoint such as $U = E_{\min}$ no finite $\eta$ exists and the maximizer lives on a subset of the states.
 >
 > *Source: Mao §4.3.3, eqs. (4.18)–(4.25) · Lecture 9/29 · level-B home: [[§B6.3 Entropy, Information and the Gibbs Paradox#^thm-b6-3-4|Theorem §B6.3.4]]*
 
@@ -114,26 +131,33 @@ Knowing only the mean energy of a system leaves many probability distributions p
 >
 > **Step 4** (means). $-\partial_{\eta_\alpha}\ln Z = \frac1Z\sum_iA_\alpha(i)e^{-\sum_\gamma\eta_\gamma A_\gamma(i)} = \sum_ip_i^\ast A_\alpha(i)$, which must equal $\bar A_\alpha$.
 >
-> **Step 5** (maximum, unique). $H$ is strictly concave on the probability simplex: its second variation is $\delta^2H = -\sum_i(\delta p_i)^2/p_i < 0$ for every nonzero $\delta p$ with $p_i > 0$. The constraints are linear, so they cut out a convex set, and a stationary point of a strictly concave function on a convex set is its unique global maximum.
+> **Step 5** (maximum, unique). Let $q$ be any distribution on the allowed states meeting the constraints. Since every $p_i^\ast > 0$, Gibbs' inequality [[§B6.3 Entropy, Information and the Gibbs Paradox#^thm-b6-3-3|Theorem §B6.3.3]] gives
+>
+> $$
+> H[q] \le -\sum_iq_i\ln p_i^\ast = \sum_iq_i\Bigl[\ln Z + \sum_\alpha\eta_\alpha A_\alpha(i)\Bigr] = \ln Z + \sum_\alpha\eta_\alpha\bar A_\alpha = H[p^\ast] ,
+> $$
+>
+> with equality iff $q = p^\ast$. The last equality is the same computation with $q = p^\ast$. This covers countably many states as well.
 
 ^der-c4a-3-2
 
-*Uses:* [[§C4a.3 Maximum Entropy and Lagrange Multipliers#^pr-c4a-3-1|Principle §C4a.3.1]]
+*Uses:* [[§C4a.3 Maximum Entropy and Lagrange Multipliers#^pr-c4a-3-1|Principle §C4a.3.1]], [[§C4a.2 The Entropy of a Statistical State#^def-c4a-2-1|Def. §C4a.2.1]], [[§B6.3 Entropy, Information and the Gibbs Paradox#^thm-b6-3-3|Theorem §B6.3.3]]
 
 > [!example] Example §C4a.3.1: Lagrange Multipliers: a Bead on a Circular Wire
 > A bead of mass $m$ slides on a vertical circular wire of radius $R$; find the extremes of $U = mgy$ subject to $q(x, y) = x^2 + y^2 = R^2$.
 >
-> 1. **Geometry.** Level curves of $q$ are circles and those of $U$ are horizontal lines. Where a line of constant $U$ crosses the wire, the bead can move along the wire to raise or lower $U$; the extremes are where a line of constant $U$ is tangent to the wire.
-> 2. **Why $d\mathcal L = 0$ means tangency.** With $\mathcal L(x, y, \lambda) = U - \lambda(q - R^2)$ and $x$, $y$, $\lambda$ independent,
+> 1. **Direct route.** On the wire $x = R\sin\theta$, $y = -R\cos\theta$, so $U(\theta) = -mgR\cos\theta$ and $dU/d\theta = mgR\sin\theta$ vanishes at $\theta = 0$ (bottom) and $\theta = \pi$ (top).
+> 2. **Multiplier route.** With $\mathcal L(x, y, \lambda) = U - \lambda(q - R^2)$ and $x$, $y$, $\lambda$ independent,
 >
 > $$
 > d\mathcal L = \Bigl(\frac{\partial U}{\partial x} - \lambda\frac{\partial q}{\partial x}\Bigr)dx + \Bigl(\frac{\partial U}{\partial y} - \lambda\frac{\partial q}{\partial y}\Bigr)dy - (q - R^2)\,d\lambda = 0
 > $$
 >
-> for all $dx$, $dy$, $d\lambda$ gives $\nabla U = \lambda\nabla q$ and $q = R^2$. Each gradient is normal to its own level curve, so parallel gradients mean tangent curves; $\lambda$ lets their sizes and signs differ. Mechanically, the force along the wire vanishes.
-> 3. **Solution.** $0 = 2\lambda x$, $mg = 2\lambda y$, $x^2 + y^2 = R^2$. Since $mg \neq 0$, $\lambda \neq 0$, so $x = 0$ and $y = \pm R$: the minimum $-mgR$ at the bottom, the maximum $mgR$ at the top.
+> for all $dx$, $dy$, $d\lambda$ gives $\nabla U = \lambda\nabla q$ and $q = R^2$.
+> 3. **The two routes agree.** The wire's tangent is $t = \partial_\theta(x, y)/R = (\cos\theta, \sin\theta)$, and $\nabla q = 2(x, y) \perp t$, $\nabla q \ne 0$. In the plane, $\nabla U = \lambda\nabla q$ for some $\lambda$ iff $\nabla U\cdot t = 0$, and $\nabla U\cdot t = R^{-1}dU/d\theta$.
+> 4. **Solution.** $0 = 2\lambda x$, $mg = 2\lambda y$, $x^2 + y^2 = R^2$. Since $mg \neq 0$, $\lambda \neq 0$, so $x = 0$ and $y = \pm R$: the minimum $-mgR$ at the bottom, the maximum $mgR$ at the top.
 >
-> In MaxEnt the variables are the $p_i$, and normalization and the prescribed means play the wire.
+> [[§C4a.3 Maximum Entropy and Lagrange Multipliers#^thm-c4a-3-3|Theorem §C4a.3.3]] is the multiplier route with $(p_i)$ for $(x, y)$ and the $1 + r$ linear constraints for $q = R^2$.
 >
 > *Source: Mao §4.3.3, box "Lagrange multipliers: a bead on a circular wire"*
 

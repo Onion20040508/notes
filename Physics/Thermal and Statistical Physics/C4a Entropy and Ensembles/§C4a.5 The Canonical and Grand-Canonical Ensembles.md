@@ -24,7 +24,7 @@ The general MaxEnt solution ([[§C4a.3 Maximum Entropy and Lagrange Multipliers#
 > dH_{\max} = \eta_E\,dU, \qquad \eta_E = \Bigl(\frac{\partial H_{\max}}{\partial U}\Bigr)_{V,N} = \frac1{k_B}\Bigl(\frac{\partial S_{\text{eq}}}{\partial U}\Bigr)_{V,N} = \frac1{k_BT} \equiv \beta ,
 > $$
 >
-> the same inverse temperature that state counting produced ([[§C2.4 Temperature and Entropy from Counting#^def-c2-4-1|Def. §C2.4.1]]).
+> which coincides with the microcanonical $\beta = \partial\ln\Omega/\partial E$ of [[§C2.4 Temperature and Entropy from Counting#^def-c2-4-1|Def. §C2.4.1]].
 >
 > *Model:* [[§C4a.3 Maximum Entropy and Lagrange Multipliers#^thm-c4a-3-3|Theorem §C4a.3.3]] with one constraint; *applies:* neighbouring MaxEnt states with the same energies $E_i$.
 >
@@ -48,13 +48,14 @@ The general MaxEnt solution ([[§C4a.3 Maximum Entropy and Lagrange Multipliers#
 *Uses:* [[§C4a.3 Maximum Entropy and Lagrange Multipliers#^thm-c4a-3-3|Theorem §C4a.3.3]], [[§C4a.4 Why the Maximum Is Thermodynamic Entropy#^thm-c4a-4-6|Theorem §C4a.4.6]], [[§C1.6 Thermodynamic Potentials and Variational Principles#^thm-c1-6-2|Theorem §C1.6.2]]
 
 > [!theorem] Theorem §C4a.5.2: The Canonical Ensemble
-> At fixed $V$, $N$ with prescribed mean energy, or in contact with a reservoir at $T$,
+> At fixed $V$, $N$ with prescribed mean energy, or in contact with a reservoir at $T$ ([[§C4a.5 The Canonical and Grand-Canonical Ensembles#^thm-c4a-5-5|Theorem §C4a.5.5]]),
 >
 > $$
 > p_i^{\text{can}} = \frac{e^{-\beta E_i}}{Z}, \qquad Z(\beta, V, N) = \sum_ie^{-\beta E_i}, \qquad U = \sum_ip_i^{\text{can}}E_i = -\Bigl(\frac{\partial\ln Z}{\partial\beta}\Bigr)_{V,N} .
 > $$
 >
-> The sum runs over all microstates with particle number $N$, whatever their energy. Either $U$ is given and fixes $\beta$, or a reservoir fixes $T$ and the formula predicts $U$; individual microstates have different energies in both readings.
+> - Index set: every microstate with particle number $N$, at every energy.
+> - Two readings of the same formula: (1) $U$ given: solve $U = -\partial_\beta\ln Z$ for $\beta$; (2) $T$ given: $U$ follows.
 >
 > *Model:* [[§C4a.3 Maximum Entropy and Lagrange Multipliers#^def-c4a-3-1|Def. §C4a.3.1]], second row; *applies:* $Z$ convergent.
 >
@@ -78,7 +79,7 @@ The general MaxEnt solution ([[§C4a.3 Maximum Entropy and Lagrange Multipliers#
 > dH_{\max} = \eta_E\,dU + \eta_N\,d\bar N, \qquad \eta_E = \beta = \frac{1}{k_BT}, \qquad \eta_N = -\beta\mu ,
 > $$
 >
-> and the **fugacity** is $z \equiv e^{-\eta_N} = e^{\beta\mu}$, one factor per particle in the weight $e^{-\eta_NN_i} = z^{N_i}$.
+> and the **fugacity** is $z \equiv e^{-\eta_N} = e^{\beta\mu}$, so that $e^{-\eta_NN_i} = z^{N_i}$.
 >
 > *Model:* [[§C4a.3 Maximum Entropy and Lagrange Multipliers#^thm-c4a-3-3|Theorem §C4a.3.3]] with two constraints; *applies:* $\mu$ the chemical potential of $dU = T\,dS + \mu\,d\bar N$ at fixed $V$.
 >
@@ -93,14 +94,15 @@ The general MaxEnt solution ([[§C4a.3 Maximum Entropy and Lagrange Multipliers#
 
 ^der-c4a-5-3
 
-*Uses:* [[§C4a.5 The Canonical and Grand-Canonical Ensembles#^thm-c4a-5-1|Theorem §C4a.5.1]], [[§C4a.4 Why the Maximum Is Thermodynamic Entropy#^thm-c4a-4-6|Theorem §C4a.4.6]]
+*Uses:* [[§C4a.5 The Canonical and Grand-Canonical Ensembles#^thm-c4a-5-1|Theorem §C4a.5.1]], [[§C4a.4 Why the Maximum Is Thermodynamic Entropy#^thm-c4a-4-6|Theorem §C4a.4.6]], [[§C1.6 Thermodynamic Potentials and Variational Principles#^thm-c1-6-2|Theorem §C1.6.2]]
 
 > [!theorem] Theorem §C4a.5.4: The Grand-Canonical Ensemble
 > $$
 > p_i^{\text{gc}} = \frac{e^{-\beta(E_i - \mu N_i)}}{\Xi} = \frac{z^{N_i}e^{-\beta E_i}}{\Xi}, \qquad \Xi(\beta, \mu, V) = \sum_ie^{-\beta(E_i - \mu N_i)} ,
 > $$
 >
-> the sum running over all energies and all particle numbers. Either the means $U$, $\bar N$ fix $T$, $\mu$, or reservoirs fix $T$, $\mu$ and the distribution predicts $U$, $\bar N$.
+> - Index set: every microstate at every energy and every particle number.
+> - Two readings: (1) $U$, $\bar N$ given: solve for $T$, $\mu$; (2) $T$, $\mu$ given by a reservoir ([[§C4a.5 The Canonical and Grand-Canonical Ensembles#^thm-c4a-5-5|Theorem §C4a.5.5]]): $U$, $\bar N$ follow.
 >
 > *Model:* [[§C4a.3 Maximum Entropy and Lagrange Multipliers#^def-c4a-3-1|Def. §C4a.3.1]], third row; *applies:* $\Xi$ convergent.
 >
@@ -118,34 +120,44 @@ The general MaxEnt solution ([[§C4a.3 Maximum Entropy and Lagrange Multipliers#
 ## The same ensembles from a reservoir
 
 > [!theorem] Theorem §C4a.5.5: Canonical and Grand-Canonical Weights from a Reservoir
-> Let a small system be weakly coupled to a large reservoir, the pair isolated and microcanonical. Then for a system microstate $i$
+> System and reservoir $R$, weakly coupled, together isolated with uniform weights on pair states. For a system microstate $i$:
+>
+> 1. Exactly (energy exchange only),
 >
 > $$
-> p_i = \frac{\Omega_R(E_{\text{tot}} - E_i, N_R)}{\sum_j\Omega_R(E_{\text{tot}} - E_j, N_R)} \simeq \frac{e^{-\beta E_i}}{Z}
+> p_i = \frac{\Omega_R(E_{\text{tot}} - E_i, N_R)}{\sum_j\Omega_R(E_{\text{tot}} - E_j, N_R)} ;
 > $$
 >
-> with energy exchange, and $p_i \simeq e^{-\beta(E_i - \mu N_i)}/\Xi$ when particles are exchanged as well. The system's states are unequally likely, though the pair's are equal, because different system states leave different numbers of reservoir states. The probability of an energy level is $P(E) = g(E)e^{-\beta E}/Z$, with $g(E)$ its degeneracy.
+> all the $i$-dependence sits in $\Omega_R$.
+> 2. For a large reservoir, $p_i \simeq e^{-\beta E_i}/Z$, and with particle exchange $p_i \simeq e^{-\beta(E_i - \mu N_i)}/\Xi$, where $T$, $\mu$ are the reservoir's.
+> 3. Per energy level, $P(E) = g(E)e^{-\beta E}/Z$, with $g(E)$ the degeneracy.
 >
-> *Model:* [[§C2.4 Temperature and Entropy from Counting#^mod-c2-4-1|Model §C2.4.1]] with $B$ a reservoir; *applies:* the reservoir so large that the exchanges do not change its $T$ and $\mu$, so its entropy is linear over the relevant range.
+> *Model:* [[§C2.4 Temperature and Entropy from Counting#^mod-c2-4-1|Model §C2.4.1]] with $B$ a reservoir, exchanging energy, and for the grand case also particles; *applies:* $E_i^2 \ll k_BT^2C_R$ for the relevant $E_i$, with $C_R$ the reservoir's heat capacity (likewise for $N_i$), which holds as $C_R \to \infty$ at fixed $E_i$.
 >
 > *Source: PHY 510 Problem Set 4, Problem 3, official solution · level-B home: [[§B7.1 The Boltzmann Factor and the Partition Function#^thm-b7-1-1|Theorem §B7.1.1]]*
 
 ^thm-c4a-5-5
 
 > [!derivation]- Derivation
-> **Step 1** (counting). Fixing the system in $i$ fixes the reservoir energy $E_{\text{tot}} - E_i$ (and $N_{\text{tot}} - N_i$). Every compatible pair state is equally likely ([[§C2.1 Microstates, Macrostates and the Microcanonical Ensemble#^pr-c2-1-1|Principle §C2.1.1]]), so $p_i \propto \Omega_R$ of the reservoir.
+> **Step 1** (item 1). The pair states with the system in $i$ are $i$ combined with any reservoir state of energy $E_{\text{tot}} - E_i$ (and particle number $N_{\text{tot}} - N_i$). Uniform pair weights ([[§C2.1 Microstates, Macrostates and the Microcanonical Ensemble#^pr-c2-1-1|Principle §C2.1.1]]) make $p_i$ proportional to their number $\Omega_R$.
 >
-> **Step 2** (expand). With $S_R = k_B\ln\Omega_R$, $\partial S_R/\partial E_R = 1/T$ and $\partial S_R/\partial N_R = -\mu/T$,
+> **Step 2** (second-order expansion, energy). Write $\ln\Omega_R = S_R/k_B$, so $\partial_{E_R}\ln\Omega_R = \beta$ and $\partial_{E_R}\beta = -1/(k_BT^2C_R)$. Then
 >
 > $$
-> S_R(E_{\text{tot}} - E_i, N_{\text{tot}} - N_i) \simeq S_R(E_{\text{tot}}, N_{\text{tot}}) - \frac{E_i}{T} + \frac{\mu N_i}{T} .
+> \ln\Omega_R(E_{\text{tot}} - E_i) = \ln\Omega_R(E_{\text{tot}}) - \beta E_i - \frac{E_i^2}{2k_BT^2C_R} + \dots
 > $$
 >
-> The sign of the last term is $(-N_i)(-\mu/T)$. Higher terms involve derivatives of $1/T$ and $\mu/T$ with respect to the reservoir's variables, which vanish for a large reservoir.
+> The quadratic term is negligible exactly under the *applies* condition; dropping it, $\Omega_R(E_{\text{tot}} - E_i) \simeq \Omega_R(E_{\text{tot}})\,e^{-\beta E_i}$, and the $i$-independent factor $\Omega_R(E_{\text{tot}})$ drops out of item 1's ratio: $p_i = e^{-\beta E_i}/Z$.
 >
-> **Step 3** (normalize). Exponentiate $S_R/k_B$; the common factor cancels in the ratio.
+> **Step 3** (particles). Now $\partial_{N_R}\ln\Omega_R = -\beta\mu$ and $N_R = N_{\text{tot}} - N_i$, so the linear term in $N_i$ is $(-N_i)(-\beta\mu) = +\beta\mu N_i$:
 >
-> **Step 4** (levels). All $g(E)$ states of energy $E$ have the same weight, so their probabilities add.
+> $$
+> \ln\Omega_R(E_{\text{tot}} - E_i, N_{\text{tot}} - N_i) \simeq \ln\Omega_R(E_{\text{tot}}, N_{\text{tot}}) - \beta(E_i - \mu N_i) ,
+> $$
+>
+> with second-order terms again suppressed by the reservoir's size. Normalizing gives $e^{-\beta(E_i - \mu N_i)}/\Xi$.
+>
+> **Step 4** (item 3). The $g(E)$ states at energy $E$ share one weight; add them.
 
 ^der-c4a-5-5
 

@@ -13,7 +13,7 @@ tags: [thermal-physics, level-c, extension]
 
 *Sources: Mao, PHY 510 notes, §4.4.1–§4.4.3, eqs. (4.74)–(4.88) and boxes "From a Laplace transform to a Legendre transform", "Saddle point approximation beyond thermodynamics" · NIST DLMF §2.4 (cited by Mao).*
 
-The partition function sums Boltzmann weights over microstates. Grouping the states by energy makes it a Laplace transform of the density of states, which is exact. For a large system, the logarithm of that Laplace transform becomes a Legendre transform of the microcanonical entropy: summing over energies turns into minimizing $E - TS$. This section shows how, and why it is a different statement from the exact relation $\ln Z = -\beta F$ of [[§C4a.6 Massieu Functions and Thermodynamic Potentials#^thm-c4a-6-2|Theorem §C4a.6.2]]. Level B proves the equivalence of the ensembles more briefly ([[§B7.2 Free Energy from the Partition Function#^thm-b7-2-5|Theorem §B7.2.5]]).
+The partition function sums Boltzmann weights over microstates. Grouping the states by energy makes it a Laplace transform of the density of states, which is exact. For a large system, the logarithm of that Laplace transform becomes a Legendre transform of the microcanonical entropy: the sum over $E$ is dominated by the energy that minimizes $E - TS_{\text{mc}}(E)$. This section shows how, and why it is a different statement from the exact relation $\ln Z = -\beta F$ of [[§C4a.6 Massieu Functions and Thermodynamic Potentials#^thm-c4a-6-2|Theorem §C4a.6.2]]. Level B proves the equivalence of the ensembles more briefly ([[§B7.2 Free Energy from the Partition Function#^thm-b7-2-5|Theorem §B7.2.5]]).
 
 **Setup.** Fixed $V$, $N$ unless they are summed over; temperatures $T > 0$; an extensive system, so that energies and entropies scale with $N$.
 
@@ -24,7 +24,11 @@ The partition function sums Boltzmann weights over microstates. Grouping the sta
 > g(E) = \int d\Gamma_N(X)\,\delta\bigl(E - H_N(X)\bigr) \quad\text{(classical)}, \qquad g(E) = \operatorname{Tr}_{\mathcal H_N}\delta(E - \hat H) = \sum_\nu\delta(E - E_\nu) \quad\text{(quantum)} .
 > $$
 >
-> It has dimensions of inverse energy. The number of states in a shell is dimensionless, $\Omega(E, \Delta E) = \int_E^{E+\Delta E}g(E')\,dE' \simeq g(E)\Delta E$, and $S_{\text{mc}}(E, V, N) = k_B\ln\Omega$ for one fixed shell convention.
+> $g$ carries units of $1/\text{energy}$; the logarithm is therefore taken of the shell count, a pure number:
+>
+> $$
+> \Omega(E, \Delta E) = \int_E^{E+\Delta E}g(E')\,dE' \simeq g(E)\Delta E, \qquad S_{\text{mc}}(E, V, N) = k_B\ln\Omega \quad(\text{one fixed }\Delta E) .
+> $$
 >
 > *Source: Mao §4.4.1, eqs. (4.74)–(4.76) · level B: [[§B10.1 Bose–Einstein and Fermi–Dirac Distributions#^def-b10-1-2|Def. §B10.1.2]] (one-particle density of states, a different object)*
 
@@ -55,8 +59,6 @@ The partition function sums Boltzmann weights over microstates. Grouping the sta
 > \Xi(\beta, z, V) = \sum_{N=0}^\infty z^NZ(\beta; N), \qquad z = e^{\beta\mu} .
 > $$
 >
-> $Z$ sums over energies at fixed $N$, and $\Xi$ also over particle numbers.
->
 > *Model:* [[§C4a.5 The Canonical and Grand-Canonical Ensembles#^thm-c4a-5-4|Theorem §C4a.5.4]]; *applies:* exact.
 >
 > *Source: Mao §4.4.1, eq. (4.78)*
@@ -81,7 +83,8 @@ The partition function sums Boltzmann weights over microstates. Grouping the sta
 > \varphi(\tilde s) \equiv \lim_{\lambda\to\infty}\frac{\ln\hat f_\lambda(\lambda\tilde s)}{\lambda} = \max_{x\ge0}\bigl[h(x) - \tilde sx\bigr], \qquad h'(x^\ast) = \tilde s, \qquad \varphi'(\tilde s) = -x^\ast .
 > $$
 >
-> The prefactor, which records the width of the maximum, drops out of the limit. If the maximizer is not unique the max formula still holds (a Legendre–Fenchel transform), but $\varphi$ need not be differentiable.
+> 1. The Gaussian factor is $O(\lambda^{-1/2})$, so its logarithm is $O(\ln\lambda)$ and does not survive in $\varphi$.
+> 2. With several maximizers, $\varphi = \sup_x[h(x) - \tilde sx]$ still holds (Legendre–Fenchel transform), and $\varphi$ has a kink where the maximizer jumps.
 >
 > *Model:* Laplace's method; *applies:* as stated.
 >
@@ -92,7 +95,7 @@ The partition function sums Boltzmann weights over microstates. Grouping the sta
 > [!derivation]- Derivation
 > **Step 1** (expand). $h(x) - \tilde sx = h(x^\ast) - \tilde sx^\ast + \tfrac12h''(x^\ast)(x - x^\ast)^2 + O((x - x^\ast)^3)$.
 >
-> **Step 2** (Gaussian). $\int dx\,e^{-\frac\lambda2|h''|(x - x^\ast)^2} = \sqrt{2\pi/(\lambda|h''|)}$ ([[§B4.1 Probability Distributions and the Gaussian#^thm-b4-1-3|Theorem §B4.1.3]]). The region contributing has width $\lambda^{-1/2}$, so the cubic term is $O(\lambda^{-1/2})$ in the exponent and the rest of the line is exponentially smaller.
+> **Step 2** (Gaussian). $\int dx\,e^{-\frac\lambda2|h''|(x - x^\ast)^2} = \sqrt{2\pi/(\lambda|h''|)}$ ([[§B4.1 Probability Distributions and the Gaussian#^thm-b4-1-3|Theorem §B4.1.3]]). The region contributing has width $\lambda^{-1/2}$, so the cubic term is $O(\lambda^{-1/2})$ in the exponent. Outside $|x - x^\ast| < \delta$, concavity and uniqueness give $h - \tilde sx \le h(x^\ast) - \tilde sx^\ast - \epsilon$ for some $\epsilon(\delta) > 0$; if the integral converges at some $\lambda_0$, that part is at most $e^{(\lambda - \lambda_0)[h(x^\ast) - \tilde sx^\ast - \epsilon]}\hat f_{\lambda_0}(\lambda_0\tilde s)$ for $\lambda \ge \lambda_0$, exponentially smaller than the peak.
 >
 > **Step 3** (limit). $\frac1\lambda\ln\hat f_\lambda = h(x^\ast) - \tilde sx^\ast + O(\lambda^{-1}\ln\lambda)$.
 >
@@ -109,9 +112,15 @@ The partition function sums Boltzmann weights over microstates. Grouping the sta
 > \ln Z(\beta) \simeq \max_E\Bigl[\frac{S_{\text{mc}}(E)}{k_B} - \beta E\Bigr] = \frac{S_{\text{mc}}(E^\ast)}{k_B} - \beta E^\ast, \qquad F = -k_BT\ln Z \simeq \min_E\bigl[E - TS_{\text{mc}}(E)\bigr] ,
 > $$
 >
-> with $(\partial S_{\text{mc}}/\partial E)_{V,N} = 1/T$ at $E^\ast$: the selected energy has the reservoir's temperature. Compare the exact $\ln Z = S_{\text{eq}}(U)/k_B - \beta U$ ([[§C4a.6 Massieu Functions and Thermodynamic Potentials#^thm-c4a-6-2|Theorem §C4a.6.2]]). The extra step replaces the entropy of the whole distribution by the entropy of one shell; for a stable system with a unique $E^\ast/N$, $U \simeq E^\ast$ and $S_{\text{eq}}(U) \simeq S_{\text{mc}}(E^\ast)$ at leading extensive order, but they differ at finite size.
+> with $(\partial S_{\text{mc}}/\partial E)_{V,N} = 1/T$ at $E^\ast$. Against the exact $\ln Z = S_{\text{eq}}(U)/k_B - \beta U$ of [[§C4a.6 Massieu Functions and Thermodynamic Potentials#^thm-c4a-6-2|Theorem §C4a.6.2]],
 >
-> *Model:* extensive system, unique maximum; *applies:* leading order in $N$.
+> $$
+> S_{\text{eq}}(U) - S_{\text{mc}}(E^\ast) = k_B\beta(U - E^\ast) + O(k_B\ln N), \qquad \frac{U - E^\ast}{N} \to 0 ,
+> $$
+>
+> so the two entropies agree per particle, not exactly.
+>
+> *Model:* extensive, thermodynamically stable system ($S_{\text{mc}}$ strictly concave in $E$), unique maximum; *applies:* leading order in $N$.
 >
 > *Source: Mao §4.4.2, eqs. (4.79)–(4.84)*
 
@@ -120,7 +129,7 @@ The partition function sums Boltzmann weights over microstates. Grouping the sta
 > [!derivation]- Derivation
 > **Step 1.** $g(E)\Delta E \simeq \Omega = e^{S_{\text{mc}}/k_B}$, so [[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-1|Theorem §C4a.9.1]] becomes $Z \simeq \int\frac{dE}{\Delta E}\exp[S_{\text{mc}}(E)/k_B - \beta E]$. A finite lower energy bound $E_0$ factors out as $e^{-\beta E_0}$, leaving a one-sided transform.
 >
-> **Step 2.** Write $E = Nx$, $S_{\text{mc}}/k_B = Ns(x)$: the exponent is $N[s(x) - \beta x]$, and [[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-3|Theorem §C4a.9.3]] with $\lambda = N$ gives the max formula; the prefactor and $\Delta E$ contribute $O(\ln N)$.
+> **Step 2.** Write $E = Nx$, $S_{\text{mc}}/k_B = Ns(x)$: the exponent is $N[s(x) - \beta x]$, and [[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-3|Theorem §C4a.9.3]] with $\lambda = N$ gives the max formula; the prefactor, $\Delta E$ and the Jacobian $dE = N\,dx$ contribute $O(\ln N)$.
 >
 > **Step 3.** Multiply by $-k_BT$: a maximum of $S/k_B - \beta E$ is a minimum of $E - TS$. Stationarity gives $\partial S_{\text{mc}}/\partial E = k_B\beta = 1/T$.
 
@@ -141,7 +150,13 @@ The partition function sums Boltzmann weights over microstates. Grouping the sta
 > \Delta(T, p, N) = \int_0^\infty\frac{dV}{V_0}e^{-\beta pV}Z(\beta; V), \qquad G(T, p, N) = -k_BT\ln\Delta \simeq \min_V\bigl[F(T, V, N) + pV\bigr], \quad p = -\Bigl(\frac{\partial F}{\partial V}\Bigr)_{T,N} .
 > $$
 >
-> Each transform lets an extensive quantity fluctuate while a reservoir fixes its conjugate intensive variable. The reference volume $V_0$ does not affect bulk thermodynamics.
+> | ensemble | summed over (fluctuates) | set by the reservoir |
+> | --- | --- | --- |
+> | canonical | $E$ | $T$ |
+> | grand canonical | $E$, $N$ | $T$, $\mu$ |
+> | isothermal–isobaric | $E$, $V$ | $T$, $p$ |
+>
+> The reference volume $V_0$ changes $G$ by $O(k_BT)$ only.
 >
 > *Model:* reservoirs of $T$ and $\mu$, or of $T$ and $p$; *applies:* leading order in system size; the partition-function definitions are exact.
 >
@@ -150,7 +165,7 @@ The partition function sums Boltzmann weights over microstates. Grouping the sta
 ^thm-c4a-9-5
 
 > [!derivation]- Derivation
-> **Grand.** [[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-2|Theorem §C4a.9.2]] with $Z(\beta; N) \simeq \sum_E e^{S_{\text{mc}}/k_B - \beta E}$, then [[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-3|Theorem §C4a.9.3]] in both $E$ and $N$; stationarity in each gives the two conditions.
+> **Grand.** [[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-2|Theorem §C4a.9.2]] with $Z(\beta; N) \simeq \sum_E e^{S_{\text{mc}}/k_B - \beta E}$, then [[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-3|Theorem §C4a.9.3]] in both $E$ and $N$; stationarity in each gives the two conditions. This uses the two-variable form of Laplace's method (Hessian of $S_{\text{mc}}(E, N)$ negative definite, i.e. joint concavity) and, for the sum over integer $N$, the bound $\max_N \le \sum_N \le (\#\text{terms})\max_N$, whose logarithm differs from $\ln\max_N$ by $O(\ln N)$.
 >
 > **Gibbs.** $Z(\beta; V) = e^{-\beta F(T,V,N)}$ exactly, so $\Delta = \int\frac{dV}{V_0}e^{-\beta[F + pV]}$, and [[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-3|Theorem §C4a.9.3]] in $V$ gives the minimum; stationarity gives $p = -\partial F/\partial V$. $\ln V_0$ is $O(1)$, not extensive.
 
@@ -159,19 +174,17 @@ The partition function sums Boltzmann weights over microstates. Grouping the sta
 *Uses:* [[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-2|Theorem §C4a.9.2]], [[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-3|Theorem §C4a.9.3]]
 
 > [!remark]- ★ Remark: Saddle points beyond thermodynamics
-> The step from a Laplace transform to a Legendre transform is the saddle-point method, named for the shape of the exponent in the complex plane, and it recurs across physics.
+> [[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-3|Theorem §C4a.9.3]] is the real-exponent case of the saddle-point method. Other cases, with their homes:
 >
-> 1. **Classical mechanics.** With the action $A[q] = \int dt\,(\tfrac m2\dot q^2 - W(q))$, the classical path makes $A$ stationary, $\delta A = 0$, which gives $m\ddot q = -W'(q)$; it need not be a minimum.
-> 2. **Quantum amplitudes.** Feynman's propagator is $K = \int\mathcal Dq\,e^{iA[q]/\hbar}$. Paths away from $\delta A = 0$ have rapidly varying phases that cancel when the action changes by many $\hbar$, and stationary phase recovers classical mechanics. The $i$ makes the paths interfere instead of adding as positive weights.
-> 3. **Imaginary time.** Setting $t = -i\tau$ (a Wick rotation) turns $e^{-i\hat Ht/\hbar}$ into $e^{-\hat H\tau/\hbar}$ and $e^{iA/\hbar}$ into $e^{-A_E/\hbar}$ with $A_E = \int d\tau\,[\tfrac m2(dq/d\tau)^2 + W(q)]$. With $\tau_f = \beta\hbar$ the trace closes the paths:
+> 1. **Stationary action**, $\delta A = 0$ for $A[q] = \int dt\,(\tfrac m2\dot q^2 - W(q))$, as the dominant path: [[§C4.2 The Feynman Path Integral#^rem-c4-2-2|QM Remark: Hamilton's principle, from axiom to consequence]].
+> 2. **Oscillating exponent** $e^{iA[q]/\hbar}$ in $K = \int\mathcal Dq\,e^{iA/\hbar}$: stationary phase [[§C4.2 The Feynman Path Integral#^thm-c4-2-5|QM Theorem §C4.2.5]] and the classical limit [[§C4.2 The Feynman Path Integral#^thm-c4-2-6|QM Theorem §C4.2.6]].
+> 3. **Imaginary time**, $t = -i\tau$, so $iA \to -A_E$ with $A_E = \int_0^{\beta\hbar}d\tau\,[\tfrac m2(dq/d\tau)^2 + W(q)]$, and the trace closes the paths ([[§C4.2 The Feynman Path Integral#^rem-c4-2-4|QM Remark: Imaginary time and statistical mechanics]]):
 >
 > $$
 > Z = \operatorname{Tr}e^{-\beta\hat H} = \int_{q(0) = q(\beta\hbar)}\mathcal Dq\,e^{-A_E[q]/\hbar} .
 > $$
 >
-> 4. **Fields.** After a Wick rotation, a quantum field theory in $d$ space dimensions has the form of a statistical field theory in $d + 1$ Euclidean dimensions; at temperature $T$ the extra direction has length $\beta\hbar$, with bosonic fields periodic and fermionic fields antiperiodic around it. Reading the weights as probabilities needs a real Euclidean action and a suitable measure, which not every quantum field theory has.
->
-> The shared lesson: a sum over many possibilities yields a variational principle when the stationary contributions dominate.
+> 4. **Fields at temperature $T$**: the same construction in $d + 1$ dimensions, with boundary conditions $\phi(\tau + \beta\hbar) = \pm\phi(\tau)$ ($+$ bosons, $-$ fermions); the weights $e^{-A_E/\hbar}$ are probabilities only when $A_E$ is real (Tong, *Statistical Field Theory*, §2.3).
 >
 > *Source: Mao §4.4.2, box "Saddle point approximation beyond thermodynamics" (citing Feynman Lectures II, Ch. 19; Feynman 1948; Tong, Statistical Field Theory, §2.3; Laine and Vuorinen) · QM home of path integrals: [[§C4.2 The Feynman Path Integral|QM §C4.2]]*
 

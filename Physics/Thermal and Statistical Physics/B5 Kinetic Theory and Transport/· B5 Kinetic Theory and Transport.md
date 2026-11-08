@@ -9,7 +9,7 @@ tags: [chapter, thermal-and-statistical-physics]
 ← [[· B4 Probability and Fluctuations]] · ↑ [[Thermal and Statistical Physics]] · [[· B6 The Microcanonical Ensemble and Entropy]] →
 
 **Builds on:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (4), [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (11), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (23), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (3)
-**Used by:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (3), [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (5), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (1), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (1), [[· C3 Classical and Quantum Microstates|C3 Classical and Quantum Microstates]] (1), [[· C5 From Microscopic Reversibility to the Master Equation|C5 From Microscopic Reversibility to the Master Equation]] (1)
+**Used by:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (3), [[· A2 The Kinetic Theory of Gases|A2 The Kinetic Theory of Gases]] (5), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (1), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (1), [[· C3 Classical and Quantum Microstates|C3 Classical and Quantum Microstates]] (1), [[· C5 From Microscopic Reversibility to the Master Equation|C5 From Microscopic Reversibility to the Master Equation]] (3), [[· C6 Random Walks, Brownian Motion and Diffusion|C6 Random Walks, Brownian Motion and Diffusion]] (1)
 
 ## Sections
 - [[§B5.1 The Maxwell–Boltzmann Distribution and Effusion]] — Blundell 5–7; Schwartz L4

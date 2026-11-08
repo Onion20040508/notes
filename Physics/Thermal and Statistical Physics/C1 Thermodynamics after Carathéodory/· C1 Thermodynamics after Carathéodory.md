@@ -9,7 +9,7 @@ tags: [chapter, thermal-and-statistical-physics]
 ← [[· C0 The Arrow of Time]] · ↑ [[Thermal and Statistical Physics]] · [[· C2 The Fundamental Assumption]] →
 
 **Builds on:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (2), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (1), [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (3), [[· B1 The Mathematical Toolkit of Thermodynamics|B1 The Mathematical Toolkit of Thermodynamics]] (4), [[· B2 The Laws of Thermodynamics, Formally|B2 The Laws of Thermodynamics, Formally]] (5), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (2)
-**Used by:** [[· C2 The Fundamental Assumption|C2 The Fundamental Assumption]] (7), [[· C4a Entropy and Ensembles|C4a Entropy and Ensembles]] (8), [[· C4b Quantum Gases|C4b Quantum Gases]] (2)
+**Used by:** [[· C2 The Fundamental Assumption|C2 The Fundamental Assumption]] (7), [[· C4a Entropy and Ensembles|C4a Entropy and Ensembles]] (11), [[· C4b Quantum Gases|C4b Quantum Gases]] (2), [[· C5 From Microscopic Reversibility to the Master Equation|C5 From Microscopic Reversibility to the Master Equation]] (4)
 
 Mao's Chapter 1. Thermodynamics rebuilt from one geometric principle, with entropy and temperature as consequences; levels A and B took the engine route.
 

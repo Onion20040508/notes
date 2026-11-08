@@ -27,7 +27,7 @@ Chapter C2 gave equal weights to the microstates of an isolated system. A system
 > \tfrac12(1) + \tfrac14(2) + \tfrac18(3) + \tfrac18(3) = \tfrac74 .
 > $$
 >
-> Four outcomes in both cases, but the second leaves less to resolve on average. Counting outcomes is not enough; the probabilities matter.
+> Same $n = 4$, mean cost $2$ versus $\tfrac74$: a measure of uncertainty must see the $p_i$, not just $n$.
 >
 > *Source: Mao §4.1, box "Finding a prize: one dollar per question" · Lecture 9/22*
 
@@ -44,7 +44,7 @@ Chapter C2 gave equal weights to the microstates of an isolated system. A system
 > H(p_1, \dots, p_n) = H(P_1, \dots, P_r) + \sum_aP_a\,H\Bigl(\Bigl\{\frac{p_i}{P_a}\Bigr\}_{i\in G_a}\Bigr) ,
 > $$
 >
-> learning the outcome in two stages costs the same as learning it at once. Groups of probability zero are omitted.
+> that is, (cost of naming the group) $+$ (mean cost of naming the member inside it). Groups with $P_a = 0$ have no conditional distribution and are left out of the sum.
 >
 > *Source: Mao §4.1, eq. (4.2) · Shannon (1948), §6*
 
@@ -57,7 +57,7 @@ Chapter C2 gave equal weights to the microstates of an isolated system. A system
 > H\bigl(\tfrac12, \tfrac14, \tfrac18, \tfrac18\bigr) = H\bigl(\tfrac12, \tfrac12\bigr) + \tfrac12H(1) + \tfrac12H\bigl(\tfrac12, \tfrac14, \tfrac14\bigr) ,
 > $$
 >
-> with $H(1) = 0$. The second-stage term is an average because only half the rounds need it.
+> with $H(1) = 0$. The weights $\tfrac12$ in front of the second-stage terms are the group probabilities $P_a$ of [[§C4a.1 Shannon Entropy#^def-c4a-1-1|Def. §C4a.1.1]] (3).
 >
 > *Source: Mao §4.1, box "Learning one of four outcomes in two stages"*
 
@@ -137,7 +137,15 @@ Chapter C2 gave equal weights to the microstates of an isolated system. A system
 ^def-c4a-1-2
 
 > [!example] Example §C4a.1.3: A Code for the Prize
-> For the probabilities $(\tfrac12, \tfrac14, \tfrac18, \tfrac18)$, record the answers of [[§C4a.1 Shannon Entropy#^ex-c4a-1-1|Example §C4a.1.1]] as $0$ for yes, $1$ for no: $A = 0$, $B = 10$, $C = 110$, $D = 111$. The receiver reads "is it $A$?", "is it $B$?", "is it $C$?" in order and restarts after each outcome: $10110111 = 10\,|\,110\,|\,111 = BCD$, and $AAAB = 00010$ takes five digits instead of eight. Since every question halves the remaining probability, $p_i = 2^{-\ell_i}$, so
+> For the probabilities $(\tfrac12, \tfrac14, \tfrac18, \tfrac18)$, write the answers of [[§C4a.1 Shannon Entropy#^ex-c4a-1-1|Example §C4a.1.1]] as digits, $0$ = yes and $1$ = no:
+>
+> | box | $A$ | $B$ | $C$ | $D$ |
+> |---|---|---|---|---|
+> | codeword | $0$ | $10$ | $110$ | $111$ |
+>
+> - Decoding: split the stream after each complete answer sequence, $10110111 = 10\,|\,110\,|\,111 = BCD$.
+> - Length: $AAAB \mapsto 00010$ has $5$ digits; a fixed-length code ($2$ digits per box) would use $8$.
+> - Each question here splits the remaining probability in half, so $p_i = 2^{-\ell_i}$ and
 >
 > $$
 > \ell_i = -\log_2p_i, \qquad \langle\ell\rangle = \sum_ip_i\ell_i = \tfrac74 = H[p] .
@@ -154,7 +162,13 @@ Chapter C2 gave equal weights to the microstates of an isolated system. A system
 > H[p] \le \langle\ell\rangle_{\min} < H[p] + 1 .
 > $$
 >
-> Coding long blocks of independent outcomes together brings the length per outcome as close to $H$ as desired. So $H$ is the limiting number of binary digits per outcome needed to record a long sequence without loss; compression works by giving short codewords to frequent outcomes.
+> For blocks of $k$ independent outcomes coded as one symbol,
+>
+> $$
+> \lim_{k\to\infty}\frac{\langle\ell_k\rangle_{\min}}{k} = H[p] ,
+> $$
+>
+> so $H$ is the price in digits per outcome of lossless recording.
 >
 > *Model:* independent outcomes, known probabilities, shared code; *applies:* lossless prefix codes.
 >
@@ -163,7 +177,7 @@ Chapter C2 gave equal weights to the microstates of an isolated system. A system
 ^thm-c4a-1-3
 
 > [!derivation]- Derivation
-> **Step 1** (Kraft). A prefix code satisfies $\sum_i2^{-\ell_i} \le 1$. Let $\ell_{\max}$ be the longest length. A codeword of length $\ell_i$ is the beginning of $2^{\ell_{\max}-\ell_i}$ strings of length $\ell_{\max}$, and the prefix property makes these sets disjoint for different $i$. There are $2^{\ell_{\max}}$ strings in all, so $\sum_i2^{\ell_{\max}-\ell_i} \le 2^{\ell_{\max}}$. Conversely, lengths with $\sum_i2^{-\ell_i} \le 1$ can be realized by a prefix code: assign codewords in order of increasing length, each the first string not beginning with an earlier codeword.
+> **Step 1** (Kraft). A prefix code satisfies $\sum_i2^{-\ell_i} \le 1$. Let $\ell_{\max}$ be the longest length. A codeword of length $\ell_i$ is the beginning of $2^{\ell_{\max}-\ell_i}$ strings of length $\ell_{\max}$, and the prefix property makes these sets disjoint for different $i$. There are $2^{\ell_{\max}}$ strings in all, so $\sum_i2^{\ell_{\max}-\ell_i} \le 2^{\ell_{\max}}$. Conversely, lengths with $\sum_i2^{-\ell_i} \le 1$ can be realized by a prefix code: sort $\ell_1 \le \ell_2 \le \dots$ and choose codewords in turn. At step $i$ the earlier codewords are beginnings of $\sum_{j<i}2^{\ell_i-\ell_j} < 2^{\ell_i}$ strings of length $\ell_i$ (strict since $\sum_{j\le i}2^{-\ell_j} \le 1$), so a free string of length $\ell_i$ remains; it is not a beginning of an earlier codeword, since those are no longer.
 >
 > **Step 2** (lower bound). With $q_i = 2^{-\ell_i}/\sum_j2^{-\ell_j}$,
 >
@@ -171,7 +185,7 @@ Chapter C2 gave equal weights to the microstates of an isolated system. A system
 > \langle\ell\rangle - H = \sum_ip_i\log_2\frac{p_i}{q_i} - \log_2\sum_j2^{-\ell_j} \ge 0 ,
 > $$
 >
-> since the first term is a relative entropy, nonnegative by Jensen's inequality ($-\sum p_i\log_2(q_i/p_i) \ge -\log_2\sum q_i = 0$), and the second is $\ge 0$ by Step 1.
+> since the first term is a relative entropy, nonnegative by Gibbs' inequality [[§B6.3 Entropy, Information and the Gibbs Paradox#^thm-b6-3-3|Theorem §B6.3.3]] (Jensen over the $i$ with $p_i > 0$: $-\sum p_i\log_2(q_i/p_i) \ge -\log_2\sum_{p_i>0}q_i \ge 0$), and the second is $\ge 0$ by Step 1.
 >
 > **Step 3** (upper bound). Take $\ell_i = \lceil-\log_2p_i\rceil$. Then $\sum_i2^{-\ell_i} \le \sum_ip_i = 1$, so a prefix code with these lengths exists, and $\ell_i < -\log_2p_i + 1$ gives $\langle\ell\rangle < H + 1$.
 >
@@ -184,19 +198,19 @@ Chapter C2 gave equal weights to the microstates of an isolated system. A system
 ## Surprisal
 
 > [!definition] Definition §C4a.1.3: Surprisal
-> The **surprisal** of an outcome of probability $p_i$ is
+> The **surprisal** (information content) of an outcome of probability $p_i$ is
 >
 > $$
-> I_i = -\log_2p_i ,
+> I_i = -\log_2p_i \ \text{bits}.
 > $$
 >
-> the information supplied by learning it. It is additive for independent outcomes, $-\log_2(pq) = -\log_2p - \log_2q$, and its mean is the entropy:
+> 1. $I_i = 0$ for a certain outcome and grows as $p_i$ shrinks.
+> 2. For independent outcomes, $-\log_2(pq) = -\log_2p - \log_2q$.
+> 3. $I$ is a random variable on the outcomes, and $H$ is its expectation:
 >
 > $$
 > \langle I\rangle = \sum_ip_i(-\log_2p_i) = H[p] .
 > $$
->
-> Surprisal belongs to one outcome; entropy is its average, the uncertainty before the outcome is known.
 >
 > *Source: Mao §4.1, box "Information and surprisal", eqs. (4.6)–(4.7)*
 
@@ -209,7 +223,13 @@ Chapter C2 gave equal weights to the microstates of an isolated system. A system
 > I_{\text{yes}} = 3\ \text{bits}, \qquad I_{\text{no}} = -\log_2\tfrac78 \simeq 0.193\ \text{bits}, \qquad H(\text{answer}) = \tfrac18(3) + \tfrac78(0.193) \simeq 0.544\ \text{bits} .
 > $$
 >
-> One answer can carry more than a bit, but only rarely; on average a yes–no answer carries at most one bit, reached when the two answers are equally likely, as for "is it $A$?". The uncertainty about the box before asking is $\tfrac74$ bits.
+> So $I_{\text{yes}} > 1$ bit is possible, but by [[§C4a.1 Shannon Entropy#^thm-c4a-1-2|Theorem §C4a.1.2]] with $n = 2$,
+>
+> $$
+> H(\text{answer}) \le H\bigl(\tfrac12, \tfrac12\bigr) = 1\ \text{bit},
+> $$
+>
+> with equality for "is it $A$?" (answers $\tfrac12, \tfrac12$). A question strategy is a prefix code, so by [[§C4a.1 Shannon Entropy#^thm-c4a-1-3|Theorem §C4a.1.3]] no strategy averages fewer than $H[p] = \tfrac74$ questions; the one in [[§C4a.1 Shannon Entropy#^ex-c4a-1-1|Example §C4a.1.1]] attains this.
 >
 > *Source: Mao §4.1, box "Information and surprisal"*
 

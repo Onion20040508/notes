@@ -16,20 +16,27 @@ Fermions respond to the same degeneracy scale in the opposite way. Exclusion for
 **Setup.** Uniform three-dimensional gas, $\epsilon = \hbar^2k^2/(2m)$, $g(\epsilon) = A\epsilon^{1/2}$ ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-3|Theorem §C4b.3.3]]), fixed $N$ and $V$, Fermi occupation $f(\epsilon) = 1/(e^{(\epsilon - \mu)/k_BT} + 1)$.
 
 > [!caution] Caution: Fixed $\mu$ or fixed $N$
-> At fixed $\mu$, all finite-temperature Fermi curves cross at $f(\mu) = \tfrac12$ and sharpen over a width $\sim k_BT$ as $T$ drops. At fixed $N$, $\mu$ itself moves with $T$ to keep $N = \int g f\,d\epsilon$, and the curves no longer share a crossing point. Which is held fixed must be stated.
+> $f(\mu) = \tfrac12$ at every $T$, so curves of $f$ at one fixed $\mu$ all cross at $\epsilon = \mu$. For a gas of given $N$ the crossing point is $\mu(T) = E_F[1 - \tfrac{\pi^2}{12}(T/T_F)^2 + \cdots]$ ([[§C4b.9★ Low-Temperature Fermi Thermodynamics#^thm-c4b-9-2|Theorem §C4b.9.2]]), which moves down as $T$ rises; a plot or formula of $f$ against $T$ has to say which of $\mu$, $N$ is held.
 
 ^cau-c4b-8-1
 
 > [!definition] Definition §C4b.8.1: Fermi Energy, Wave Number and Temperature
-> $E_F \equiv \mu(T = 0)$. At $T = 0$, $f(\epsilon) \to \Theta(E_F - \epsilon)$: orbitals fill one particle per state up to $E_F$. The occupied ball $|\mathbf k| < k_F$ is the **Fermi sea**, its surface the **Fermi surface**, and
+> For a Fermi gas of given $N$, $V$:
 >
 > $$
-> E_F = \frac{\hbar^2k_F^2}{2m}, \qquad T_F = \frac{E_F}{k_B} .
+> E_F \equiv \mu(T = 0), \qquad k_F \equiv \frac{\sqrt{2mE_F}}{\hbar}\quad\Bigl(\text{so } E_F = \frac{\hbar^2k_F^2}{2m}\Bigr), \qquad T_F \equiv \frac{E_F}{k_B} .
 > $$
 >
 > *Source: Mao §4.6.6, eqs. (4.156), (4.158) · level-B home: [[§B13.1★ The Degenerate Fermi Gas and Metals#^def-b13-1-1|Def. §B13.1.1]]*
 
 ^def-c4b-8-1
+
+> [!definition] Definition §C4b.8.2: Fermi Sea and Fermi Surface
+> As $T \to 0$, $f(\epsilon) \to \Theta(E_F - \epsilon)$ for $\epsilon \ne E_F$: the occupied orbitals are those with $|\mathbf k| < k_F$ ([[§C4b.8 The Degenerate Fermi Gas#^def-c4b-8-1|Def. §C4b.8.1]]). This ball in $\mathbf k$-space is the **Fermi sea**; its boundary sphere $|\mathbf k| = k_F$ is the **Fermi surface**.
+>
+> *Source: Mao §4.6.6 · level-B home: [[§B13.1★ The Degenerate Fermi Gas and Metals#^def-b13-1-1|Def. §B13.1.1]]*
+
+^def-c4b-8-2
 
 > [!theorem] Theorem §C4b.8.1: The Fermi Gas at Zero Temperature
 > $$
@@ -37,77 +44,76 @@ Fermions respond to the same degeneracy scale in the opposite way. Exclusion for
 > $$
 >
 > $$
-> U(0) = \tfrac35NE_F, \qquad p(0)V = \tfrac25NE_F, \qquad C_V(0) = 0 .
+> U(0) = \tfrac35NE_F, \qquad p(0)V = \tfrac25NE_F, \qquad B(0) = -V\Bigl(\frac{\partial p}{\partial V}\Bigr)_N = \tfrac53p(0) .
 > $$
 >
-> For spin-$\tfrac12$ electrons ($g_s = 2$), $k_F = (3\pi^2\rho_3)^{1/3}$. The **degeneracy pressure** comes from exclusion and the kinetic cost of filling momentum states, with no repulsion and no thermal motion; since $E_F \propto (N/V)^{2/3}$, compression raises the energy even at $T = 0$.
+> For spin-$\tfrac12$ electrons ($g_s = 2$), $k_F = (3\pi^2\rho_3)^{1/3}$. Here $p(0) = -(\partial U(0)/\partial V)_N$ is the degeneracy pressure: $U(0) \propto N^{5/3}V^{-2/3}$ by exclusion alone, with no interaction and $T = 0$.
 >
-> *Model:* the Setup; *applies:* $T = 0$; $C_V(0) = 0$ from [[§C4b.9★ Low-Temperature Fermi Thermodynamics#^thm-c4b-9-2|Theorem §C4b.9.2]].
+> *Model:* the Setup; *applies:* $T = 0$.
 >
 > *Source: Mao §4.6.6, eqs. (4.157)–(4.161) · level-B home: [[§B13.1★ The Degenerate Fermi Gas and Metals#^thm-b13-1-2|Theorem §B13.1.2]]*
 
 ^thm-c4b-8-1
 
 > [!derivation]- Derivation
-> **Step 1** ($k_F$). $N = \int_0^{E_F}g\,d\epsilon$, which in $k$-space is the number of orbitals in the ball: $g_sV\cdot\frac43\pi k_F^3/(2\pi)^3 = g_sVk_F^3/(6\pi^2)$ ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]).
+> **Step 1** ($k_F$). $N = \int_0^{E_F}g\,d\epsilon$, which in $k$-space is the number of orbitals in the Fermi sea ([[§C4b.8 The Degenerate Fermi Gas#^def-c4b-8-2|Def. §C4b.8.2]]): $g_sV\cdot\frac43\pi k_F^3/(2\pi)^3 = g_sVk_F^3/(6\pi^2)$ ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]).
 >
 > **Step 2** ($T_F$ vs $T_Q$). $k_BT_F = \frac{\hbar^2}{2m}(6\pi^2\rho_3/g_s)^{2/3}$ and $k_BT_Q = \frac{2\pi\hbar^2}{m}(\rho_3/g_s)^{2/3}$ ([[§C4b.7 Bose–Einstein Condensation#^def-c4b-7-1|Def. §C4b.7.1]]), ratio $\frac{(6\pi^2)^{2/3}}{4\pi} = \frac{(36\pi^4)^{1/3}}{4\pi} = \frac{(36\pi)^{1/3}}{4} \simeq 1.209$.
 >
 > **Step 3** ($U$). With $g \propto \epsilon^{1/2}$, $U(0)/N = \int_0^{E_F}\epsilon^{3/2}d\epsilon\big/\int_0^{E_F}\epsilon^{1/2}d\epsilon = \frac{(2/5)E_F^{5/2}}{(2/3)E_F^{3/2}} = \frac35E_F$.
 >
-> **Step 4** ($p$). $p(0) = -(\partial U(0)/\partial V)_N$ with $U(0) \propto NE_F \propto V^{-2/3}$ gives $p = \frac{2U(0)}{3V}$, the $T = 0$ case of $U = \tfrac32pV$ ([[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]]).
+> **Step 4** ($p$). $p(0) = -(\partial U(0)/\partial V)_N$ with $U(0) \propto NE_F \propto N^{5/3}V^{-2/3}$ gives $p = \frac{2U(0)}{3V}$, the $T = 0$ case of $U = \tfrac32pV$ ([[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]]).
+>
+> **Step 5** ($B$). $p(0) \propto V^{-5/3}$ at fixed $N$, so $-V\,\partial_Vp = \tfrac53p$.
 
 ^der-c4b-8-1
 
-*Uses:* [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]], [[§C4b.7 Bose–Einstein Condensation#^def-c4b-7-1|Def. §C4b.7.1]], [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]]
+*Uses:* [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]], [[§C4b.7 Bose–Einstein Condensation#^def-c4b-7-1|Def. §C4b.7.1]], [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]], [[§C4b.8 The Degenerate Fermi Gas#^def-c4b-8-2|Def. §C4b.8.2]]
 
 > [!theorem] Theorem §C4b.8.2: Only a Thin Shell Is Thermally Active
-> For $T \ll T_F$, only orbitals within $\sim k_BT$ of $E_F$ change their occupation. About $g(E_F)k_BT \sim NT/T_F$ particles are excited, each by $\sim k_BT$, so
+> For $T \ll T_F$, $f$ differs from $\Theta(E_F - \epsilon)$ appreciably only for $|\epsilon - E_F| \lesssim k_BT$. That window holds $g(E_F)k_BT \sim NT/T_F$ particles, each excited by $\sim k_BT$, so
 >
 > $$
-> U(T) - U(0) \sim N\frac{(k_BT)^2}{E_F}, \qquad C_V \sim Nk_B\frac{T}{T_F} ,
+> U(T) - U(0) \sim N\frac{(k_BT)^2}{E_F}, \qquad C_V \sim Nk_B\frac{T}{T_F} \xrightarrow{\ T\to0\ } 0 ,
 > $$
 >
-> far below the classical $\tfrac32Nk_B$. The exact coefficient is in [[§C4b.9★ Low-Temperature Fermi Thermodynamics#^thm-c4b-9-2|Theorem §C4b.9.2]].
+> linearly in $T$, and $C_V \ll \tfrac32Nk_B$ throughout $T \ll T_F$. The coefficient is fixed in [[§C4b.9★ Low-Temperature Fermi Thermodynamics#^thm-c4b-9-2|Theorem §C4b.9.2]].
 >
-> *Model:* the Setup; *applies:* $T \ll T_F$; an estimate.
+> *Model:* the Setup; *applies:* $T \ll T_F$; an order-of-magnitude estimate.
 >
 > *Source: Mao §4.6.7, eq. (4.162) · level-B home: [[§B13.1★ The Degenerate Fermi Gas and Metals#^thm-b13-1-4|Theorem §B13.1.4]]*
 
 ^thm-c4b-8-2
 
 > [!derivation]- Derivation
-> An orbital far below $E_F$ has no empty orbital within $k_BT$ to move to, so it stays full. In a shell of width $k_BT$ there are $g(E_F)k_BT$ orbitals, and $g(E_F) = \frac32N/E_F$ for $g \propto \epsilon^{1/2}$ (from $N = \tfrac23AE_F^{3/2}$). Each excitation costs $\sim k_BT$; multiply, then differentiate in $T$.
+> At energy $E_F - \Delta$ with $\Delta \gg k_BT$ the occupation is $1 - e^{-\Delta/k_BT}$: thermal excitation needs an empty orbital within $\sim k_BT$, and there is none so deep in the sea. In the window $|\epsilon - E_F| \lesssim k_BT$ there are $g(E_F)k_BT$ orbitals, and $g(E_F) = \frac32N/E_F$ for $g \propto \epsilon^{1/2}$ (from $N = \tfrac23AE_F^{3/2}$). Each excitation costs $\sim k_BT$; multiply to get $U - U(0)$, then differentiate in $T$: $C_V \sim 2Nk_B^2T/E_F \propto T$.
 
 ^der-c4b-8-2
 
 *Uses:* [[§C4b.8 The Degenerate Fermi Gas#^thm-c4b-8-1|Theorem §C4b.8.1]]
 
 > [!example] Example §C4b.8.1: A Metal's Electrons Are Degenerate at Room Temperature
-> For $\rho_3 = 10^{29}\ \text{m}^{-3}$ and $g_s = 2$: $k_F = (3\pi^2\times10^{29})^{1/3} \simeq 1.44\times10^{10}\ \text{m}^{-1}$, $E_F = \hbar^2k_F^2/(2m_e) \simeq 7.9$ eV, $T_F \simeq 9.1\times10^4$ K. At $300$ K, $T/T_F \simeq 0.003$: strongly degenerate. A metal's measured heat capacity also includes the lattice.
+> For $\rho_3 = 10^{29}\ \text{m}^{-3}$ and $g_s = 2$: $k_F = (3\pi^2\times10^{29})^{1/3} \simeq 1.44\times10^{10}\ \text{m}^{-1}$, $E_F = \hbar^2k_F^2/(2m_e) \simeq 7.9$ eV, $T_F \simeq 9.1\times10^4$ K. At $300$ K, $T/T_F \simeq 0.003$: strongly degenerate, and the electronic $C_V/Nk_B = \tfrac{\pi^2}2T/T_F \simeq 0.016$ ([[§C4b.9★ Low-Temperature Fermi Thermodynamics#^thm-c4b-9-2|Theorem §C4b.9.2]]), against $3$ per atom from the lattice. Per mole of electrons the linear coefficient is $\gamma = \pi^2R/(2T_F) \simeq 0.45\ \text{mJ mol}^{-1}\text{K}^{-2}$, the size of the measured linear term $\gamma T$ of metals, visible only below a few kelvin ([[§B11.2★ Phonons and the Debye Model#^law-b11-2-3|Law §B11.2.3]]).
 >
-> *Source: Mao §4.6.7*
+> *Source: Mao §4.6.7; $C_V$ and $\gamma$ computed here · QM home of the free-electron model: [[§A6.2 Crystalline Solids and the Free-Electron Model#^mod-a6-2-2|QM Model §A6.2.2]]*
 
 ^ex-c4b-8-1
 
-> [!example] Example §C4b.8.2: The Same Scale, Two Outcomes
-> For uniform ideal gases in three dimensions with quadratic dispersion:
+> [!remark] Remark: The same scale, two outcomes
+> Uniform ideal gases in three dimensions, $\epsilon = \hbar^2k^2/2m$; each entry links the box that proves it.
 >
 > | | bosons | fermions |
 > | --- | --- | --- |
-> | classical regime | $T \gg T_Q$ | $T \gg T_Q$ |
-> | characteristic scale | $T_c \simeq 0.527\,T_Q$ | $T_F \simeq 1.21\,T_Q$ |
-> | mechanism | excited states saturate; ground occupation macroscopic | exclusion fills orbitals up to $E_F$ |
-> | low-$T$ chemical potential | $\mu \to 0^-$ ($0$ when condensed) | $\mu \to E_F$ |
-> | $T = 0$ energy and pressure | zero | $U/N = \tfrac35E_F$, $p = \tfrac25\rho_3E_F$ |
-> | low-$T$ heat capacity | $C_V \propto T^{3/2}$ | $C_V \propto T$ |
-> | finite-$T$ transition | yes, at $T_c$ | no, a smooth crossover |
+> | crossover scale ($\rho_3\lambda_T^3/g_s = 1$) | $T_Q$, [[§C4b.7 Bose–Einstein Condensation#^def-c4b-7-1|Def. §C4b.7.1]] | $T_Q$, [[§C4b.7 Bose–Einstein Condensation#^def-c4b-7-1|Def. §C4b.7.1]] |
+> | low-$T$ scale | $T_c = 0.527\,T_Q$, [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-3|Theorem §C4b.7.3]] | $T_F = 1.21\,T_Q$, [[§C4b.8 The Degenerate Fermi Gas#^thm-c4b-8-1|Theorem §C4b.8.1]] |
+> | $\mu$ as $T \to 0$ | $0^-$, with $\mu \simeq -g_sk_BT/N_0$, [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-2|Theorem §C4b.7.2]] | $E_F[1 - \tfrac{\pi^2}{12}(T/T_F)^2]$, [[§C4b.9★ Low-Temperature Fermi Thermodynamics#^thm-c4b-9-2|Theorem §C4b.9.2]] |
+> | $T = 0$ energy, pressure | $0$, $0$, [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-5|Theorem §C4b.7.5]] | $\tfrac35NE_F$, $\tfrac25\rho_3E_F$, [[§C4b.8 The Degenerate Fermi Gas#^thm-c4b-8-1|Theorem §C4b.8.1]] |
+> | low-$T$ $C_V/Nk_B$ | $1.926\,(T/T_c)^{3/2}$, [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-5|Theorem §C4b.7.5]] | $\tfrac{\pi^2}2\,T/T_F$, [[§C4b.9★ Low-Temperature Fermi Thermodynamics#^thm-c4b-9-2|Theorem §C4b.9.2]] |
+> | sharp transition at $T > 0$ | at $T_c$ ($N_0/N$ nonanalytic), [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-3|Theorem §C4b.7.3]] | none: a smooth crossover |
 >
-> Both scales are $k_BT_{\text{deg}} \sim \frac{\hbar^2}m(\rho_3/g_s)^{2/3}$, the point $\rho_3\lambda_T^3/g_s \sim 1$ where exchange matters. Photons, with no fixed $N$, condense neither way. Interactions, traps and other dispersions can change every row.
->
-> *Source: Mao §4.6.9, eq. (4.168) and comparison table*
+> Photons are not in the table: with $\mu = 0$ and no fixed $N$ ([[§C4b.6 The Photon Gas and Black-Body Radiation#^thm-c4b-6-1|Theorem §C4b.6.1]]) there is neither a $T_c$ nor an $E_F$. Every row assumes the Setup; traps change the bosonic column ([[§C4b.7 Bose–Einstein Condensation#^ex-c4b-7-1|Example §C4b.7.1]]).
 
-^ex-c4b-8-2
+^rem-c4b-8-1
 
 > [!remark]- Connections
 > - The exact low-temperature coefficients come from the large-$\ln z$ limit of the polylogarithm — [[§C4b.9★ Low-Temperature Fermi Thermodynamics|§C4b.9]].

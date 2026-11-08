@@ -8,8 +8,8 @@ tags: [chapter, thermal-and-statistical-physics]
 # C4a Entropy and Ensembles
 ← [[· C3 Classical and Quantum Microstates]] · ↑ [[Thermal and Statistical Physics]] · [[· C4b Quantum Gases]] →
 
-**Builds on:** [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (3), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (3), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (3), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (9), [[· C1 Thermodynamics after Carathéodory|C1 Thermodynamics after Carathéodory]] (8), [[· C2 The Fundamental Assumption|C2 The Fundamental Assumption]] (12), [[· C3 Classical and Quantum Microstates|C3 Classical and Quantum Microstates]] (6)
-**Used by:** [[· C4b Quantum Gases|C4b Quantum Gases]] (13), [[· C5 From Microscopic Reversibility to the Master Equation|C5 From Microscopic Reversibility to the Master Equation]] (2)
+**Builds on:** [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (3), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (4), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (8), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (9), [[· C1 Thermodynamics after Carathéodory|C1 Thermodynamics after Carathéodory]] (11), [[· C2 The Fundamental Assumption|C2 The Fundamental Assumption]] (13), [[· C3 Classical and Quantum Microstates|C3 Classical and Quantum Microstates]] (3)
+**Used by:** [[· C4b Quantum Gases|C4b Quantum Gases]] (13), [[· C5 From Microscopic Reversibility to the Master Equation|C5 From Microscopic Reversibility to the Master Equation]] (4), [[· C6 Random Walks, Brownian Motion and Diffusion|C6 Random Walks, Brownian Motion and Diffusion]] (2)
 
 Mao's Chapter 4, first half. Shannon's entropy, Jaynes's maximum-entropy principle, the canonical and grand-canonical ensembles, their potentials as Legendre transforms of the entropy, and fluctuations.
 
@@ -36,7 +36,7 @@ Mao's Chapter 4, first half. Shannon's entropy, Jaynes's maximum-entropy princip
 - [[§C4a.3 Maximum Entropy and Lagrange Multipliers#^thm-c4a-3-2|§C4a.3.2]] The Microcanonical Ensemble Maximizes Entropy in a Shell
 - [[§C4a.3 Maximum Entropy and Lagrange Multipliers#^thm-c4a-3-3|§C4a.3.3]] Maximum Entropy with Mean Constraints Is Exponential
 - [[§C4a.4 Why the Maximum Is Thermodynamic Entropy#^thm-c4a-4-2|§C4a.4.2]] Assignments with Given Populations
-- [[§C4a.4 Why the Maximum Is Thermodynamic Entropy#^thm-c4a-4-3|§C4a.4.3]] The Most Probable Fractions Are the MaxEnt Probabilities
+- [[§C4a.4 Why the Maximum Is Thermodynamic Entropy#^thm-c4a-4-3|§C4a.4.3]] Population Lists Concentrate on the MaxEnt Fractions
 - [[§C4a.4 Why the Maximum Is Thermodynamic Entropy#^lem-c4a-4-4|§C4a.4.4]] The Count Splits into Which List and Which Assignment
 - [[§C4a.4 Why the Maximum Is Thermodynamic Entropy#^thm-c4a-4-5|§C4a.4.5]] The Collection's Entropy Is $M$ Times the Maximum
 - [[§C4a.4 Why the Maximum Is Thermodynamic Entropy#^thm-c4a-4-6|§C4a.4.6]] Maximum Shannon Entropy Is Thermodynamic Entropy

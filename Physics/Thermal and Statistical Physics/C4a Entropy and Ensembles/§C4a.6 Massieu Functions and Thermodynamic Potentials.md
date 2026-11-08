@@ -11,7 +11,7 @@ tags: [thermal-physics, level-c]
 
 *Sources: Mao, PHY 510 notes, §4.3.7, eqs. (4.43)–(4.52) and the closing table · PHY 510 Lecture 10/1.*
 
-MaxEnt produces the entropy as a function of the prescribed means; a partition function is naturally a function of the multipliers. The two are Legendre transforms of each other, exactly, for a system of any size. Multiplying by $-k_BT$ turns the transform of the entropy into the familiar free energies, so the structure of Chapter C1 ([[§C1.7 Thermodynamic Phase Space and Legendre Transforms|§C1.7]]) reappears, now in the entropy representation. Level B obtained $F = -k_BT\ln Z$ and $\Phi = -k_BT\ln\Xi$ directly ([[§B7.2 Free Energy from the Partition Function#^thm-b7-2-1|Theorem §B7.2.1]], [[§B7.3 The Grand Canonical Ensemble#^thm-b7-3-3|Theorem §B7.3.3]]).
+Two functions describe the same MaxEnt states: $H_{\max}(\{\bar A_\alpha\})$, the value of the maximum, and $\ln Z(\{\eta_\alpha\})$, the log of the normalization. Each is the Legendre transform of the other, with no large-size approximation. Multiplying by $-k_BT$ turns the transform of the entropy into the familiar free energies, so the structure of Chapter C1 ([[§C1.7 Thermodynamic Phase Space and Legendre Transforms|§C1.7]]) reappears, now in the entropy representation. Level B obtained $F = -k_BT\ln Z$ and $\Phi = -k_BT\ln\Xi$ directly ([[§B7.2 Free Energy from the Partition Function#^thm-b7-2-1|Theorem §B7.2.1]], [[§B7.3 The Grand Canonical Ensemble#^thm-b7-3-3|Theorem §B7.3.3]]).
 
 **Setup.** The MaxEnt distribution $p_i^\ast = Z^{-1}\exp[-\sum_\alpha\eta_\alpha A_\alpha(i)]$ of [[§C4a.3 Maximum Entropy and Lagrange Multipliers#^thm-c4a-3-3|Theorem §C4a.3.3]], with external parameters such as $V$ fixed. For the grand ensemble, $Z$ stands for $\Xi$.
 
@@ -69,7 +69,13 @@ MaxEnt produces the entropy as a function of the prescribed means; a partition f
 > \ln Z(\beta, V, N) = \frac{S_{\text{eq}}}{k_B} - \beta U, \qquad S_{\text{eq}} = k_B(\ln Z + \beta U), \qquad F(T, V, N) = U - TS_{\text{eq}} = -k_BT\ln Z .
 > $$
 >
-> In the entropy representation $\ln Z$ trades $U$ for $\beta$; in the energy representation of Chapter C1, $F$ trades $S$ for $T$ ([[§C1.7 Thermodynamic Phase Space and Legendre Transforms#^ex-c1-7-1|Example §C1.7.1]]). The two describe one family of canonical states, related by $\ln Z = -\beta F$.
+> As Legendre transforms in the entropy and the energy representation ([[§C1.7 Thermodynamic Phase Space and Legendre Transforms#^ex-c1-7-1|Example §C1.7.1]]),
+>
+> $$
+> \ln Z(\beta) = \max_U\Bigl[\frac{S_{\text{eq}}(U)}{k_B} - \beta U\Bigr], \qquad F(T) = \min_S\bigl[U(S) - TS\bigr] ,
+> $$
+>
+> and $\max_U[S/k_B - \beta U] = -\beta\min_U[U - TS]$ is the relation $\ln Z = -\beta F$.
 >
 > *Model:* [[§C4a.5 The Canonical and Grand-Canonical Ensembles#^thm-c4a-5-2|Theorem §C4a.5.2]]; *applies:* exact, any size.
 >
@@ -95,7 +101,7 @@ MaxEnt produces the entropy as a function of the prescribed means; a partition f
 > \Phi(T, V, \mu) = U - TS_{\text{eq}} - \mu\bar N = -k_BT\ln\Xi .
 > $$
 >
-> $\Phi$ trades $(S, \bar N)$ for $(T, \mu)$.
+> In the energy representation, $\Phi(T, V, \mu) = \min_{S,\bar N}\bigl[U(S, V, \bar N) - TS - \mu\bar N\bigr]$.
 >
 > *Model:* [[§C4a.5 The Canonical and Grand-Canonical Ensembles#^thm-c4a-5-4|Theorem §C4a.5.4]]; *applies:* exact, any size.
 >
@@ -111,27 +117,33 @@ MaxEnt produces the entropy as a function of the prescribed means; a partition f
 *Uses:* [[§C4a.6 Massieu Functions and Thermodynamic Potentials#^thm-c4a-6-1|Theorem §C4a.6.1]], [[§C4a.4 Why the Maximum Is Thermodynamic Entropy#^thm-c4a-4-6|Theorem §C4a.4.6]], [[§C4a.5 The Canonical and Grand-Canonical Ensembles#^thm-c4a-5-4|Theorem §C4a.5.4]]
 
 > [!caution] Caution: Fixed fugacity is not fixed $\mu$
-> In $U = -(\partial\ln\Xi/\partial\beta)_{\eta_N, V}$ the multiplier $\eta_N = -\ln z$ is held fixed, which means fixed fugacity $z = e^{\beta\mu}$. Holding $\mu$ fixed instead gives a different derivative, $-(\partial\ln\Xi/\partial\beta)_{\mu,V} = U - \mu\bar N$ ([[§C4a.10 Ensembles at a Glance and Fluctuations#^thm-c4a-10-3|Theorem §C4a.10.3]]).
+> $U = -(\partial\ln\Xi/\partial\beta)_{\eta_N, V}$ holds $\eta_N = -\ln z$, hence $z = e^{\beta\mu}$, constant; along that derivative $\mu = k_BT\ln z$ varies with $T$. The derivative at constant $\mu$ is another quantity, $-(\partial\ln\Xi/\partial\beta)_{\mu,V} = U - \mu\bar N$ ([[§C4a.10 Ensembles at a Glance and Fluctuations#^thm-c4a-10-3|Theorem §C4a.10.3]]).
 
 ^cau-c4a-6-1
 
 > [!example] Example §C4a.6.1: The Entropy Representation at a Glance
-> With $S = S_{\text{eq}}$, $\beta = 1/k_BT$, $V$ fixed (and $N$ in the canonical column):
+> One row per case ($S \equiv S_{\text{eq}}$; volume held fixed everywhere):
 >
-> | | general MaxEnt | canonical | grand canonical |
-> | --- | --- | --- | --- |
-> | entropy | $dH_{\max} = \sum_\alpha\eta_\alpha\,d\bar A_\alpha$ | $d(S/k_B) = \beta\,dU$ | $d(S/k_B) = \beta\,dU - \beta\mu\,d\bar N$ |
-> | Massieu | $d\ln Z = -\sum_\alpha\bar A_\alpha\,d\eta_\alpha$ | $d(-\beta F) = -U\,d\beta$ | $d(-\beta\Phi) = -U\,d\beta + \bar N\,d(\beta\mu)$ |
-> | relation | $\ln Z = H_{\max} - \sum_\alpha\eta_\alpha\bar A_\alpha$ | $\ln Z = -\beta F = S/k_B - \beta U$ | $\ln\Xi = -\beta\Phi = S/k_B - \beta U + \beta\mu\bar N$ |
+> | case | variables of $S/k_B$ → of the Massieu function | $d(S/k_B)$ | $d(\text{Massieu})$ | Massieu function |
+> | --- | --- | --- | --- | --- |
+> | general MaxEnt | $\bar A_\alpha \to \eta_\alpha$ | $\sum_\alpha\eta_\alpha\,d\bar A_\alpha$ | $d\ln Z = -\sum_\alpha\bar A_\alpha\,d\eta_\alpha$ | $\ln Z = H_{\max} - \sum_\alpha\eta_\alpha\bar A_\alpha$ |
+> | canonical, $N$ fixed | $U \to \beta$ | $\beta\,dU$ | $d(-\beta F) = -U\,d\beta$ | $\ln Z = -\beta F = S/k_B - \beta U$ |
+> | grand canonical | $(U, \bar N) \to (\beta, \beta\mu)$ | $\beta\,dU - \beta\mu\,d\bar N$ | $d(-\beta\Phi) = -U\,d\beta + \bar N\,d(\beta\mu)$ | $\ln\Xi = -\beta\Phi = S/k_B - \beta U + \beta\mu\bar N$ |
 >
-> In entropy units the Massieu functions are $k_B\ln Z = -F/T$ and $k_B\ln\Xi = -\Phi/T$.
+> Times $k_B$, the last column reads $k_B\ln Z = -F/T$, $k_B\ln\Xi = -\Phi/T$.
 >
 > *Source: Mao §4.3.7, closing table*
 
 ^ex-c4a-6-1
 
 > [!caution] Caution: These relations are exact
-> Nothing here replaced the ensemble by a single energy shell; $\ln Z = -\beta F$ with $F = U - TS_{\text{eq}}$ holds for any system size. The large-system step, which relates $S_{\text{eq}}$ to the microcanonical $S_{\text{mc}}$ of one shell, is separate ([[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-4|Theorem §C4a.9.4]]).
+> $S_{\text{eq}}$ here is the canonical entropy, not the shell entropy $S_{\text{mc}}$. One two-level system (levels $0$, $\epsilon$) shows the difference: $\ln Z = -\beta F$ holds with
+>
+> $$
+> \frac{S_{\text{eq}}}{k_B} = \ln\bigl(1 + e^{-\beta\epsilon}\bigr) + \frac{\beta\epsilon}{e^{\beta\epsilon} + 1} > 0 \quad (0 < T < \infty) ,
+> $$
+>
+> while a sharp shell at either level holds one state, $S_{\text{mc}} = 0$. Equating the two is a large-system statement ([[§C4a.9★ Density of States, Laplace and Legendre#^thm-c4a-9-4|Theorem §C4a.9.4]]).
 
 ^cau-c4a-6-2
 
