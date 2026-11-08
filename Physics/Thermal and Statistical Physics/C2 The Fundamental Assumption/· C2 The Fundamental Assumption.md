@@ -9,7 +9,7 @@ tags: [chapter, thermal-and-statistical-physics]
 ← [[· C1 Thermodynamics after Carathéodory]] · ↑ [[Thermal and Statistical Physics]] · [[· C3 Classical and Quantum Microstates]] →
 
 **Builds on:** [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (10), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (7), [[· C0 The Arrow of Time|C0 The Arrow of Time]] (3), [[· C1 Thermodynamics after Carathéodory|C1 Thermodynamics after Carathéodory]] (7)
-**Used by:** [[· C4a Entropy and Ensembles|C4a Entropy and Ensembles]] (12)
+**Used by:** [[· C4a Entropy and Ensembles|C4a Entropy and Ensembles]] (12), [[· C6 Random Walks, Brownian Motion and Diffusion|C6 Random Walks, Brownian Motion and Diffusion]] (2)
 
 Mao's Chapter 2. One assumption, equal weights for accessible microstates, and what counting alone gives: typicality, the statistical meaning of irreversibility, temperature and entropy.
 

@@ -33,3 +33,13 @@ Conventions of level C of [[Thermal and Statistical Physics]], as in Mao's PHY 5
 | Grand potential | $\Phi = -k_BT\ln\Xi$ (Mao's PS5 writes $\Omega$) | level B: $\Phi$ |
 | Massieu functions | $\ln Z = -\beta F$, $\ln\Xi = -\beta\Phi$ (dimensionless) | |
 | Density of states | $g(E)$ of complete $N$-particle states (§C4a.9★) | level B: one-particle $g(\epsilon)$ |
+| Orbital, occupation | orbital $\ell$ (complete one-particle state), $n_\ell$; mean occupation $f(\epsilon) = 1/(e^{\beta(\epsilon - \mu)} \mp 1)$ | level B: $\bar n$ |
+| Density of states | one-particle $g(\epsilon) = A\epsilon^{\nu-1}$, $\nu = d/s$ for $\epsilon \propto k^s$ | level B: $g(\epsilon)$, three dimensions |
+| Polylogarithm | $G_q(z) = \operatorname{Li}_q(z)$ (bosons), $-\operatorname{Li}_q(-z)$ (fermions), PS6's notation | level B: $f_\nu$, $g_\nu$ in places |
+| Degeneracy scales | $\lambda_T = h/\sqrt{2\pi mk_BT}$, $a_s = (g_s/\rho_3)^{1/3}$, $T_Q$ with $\lambda_T(T_Q) = a_s$; $T_c \simeq 0.527\,T_Q$, $T_F \simeq 1.21\,T_Q$ | |
+| Open system | observed part $S$, environment $E$; reduced state $p_S$, $\rho_S$ | QM C11: system and environment, $\rho_S$ |
+| Rates | $W_{ij}$ = rate from $j$ to $i$ (column convention), $W_{jj} = -\sum_{i\neq j}W_{ij}$; flow $F_{ij} = W_{ij}p_j$; current $J_{ij} = F_{ij} - F_{ji}$; $\dot{\mathbf p} = W\mathbf p$ | level B: $w_{ij}$ symmetric rates |
+| Stationary distribution | $\boldsymbol\pi$ (or $\mathbf p^{\text{ss}}$), $W\boldsymbol\pi = 0$ | |
+| Random walk | step $\pm a$ per tick $\Delta t$ with probabilities $q_\pm$; drift $u$, diffusion coefficient $D = a^2/(2\Delta t)$ | level B: $D$ from a random walk, $\ell^2/2\tau$ |
+| Langevin | $m\ddot x = -\gamma\dot x - U' + \zeta$, $\tau_m = m/\gamma$, mobility $\mu = 1/\gamma$ (not the chemical potential) | level B: same model |
+| Susceptibility | $\chi(\omega) = 1/(K - m\omega^2 - i\gamma\omega)$ with time dependence $e^{-i\omega t}$; $\chi = \chi' + i\chi''$ | WO B: driven oscillator with $e^{+i\omega t}$ (sign of the imaginary part flips) |

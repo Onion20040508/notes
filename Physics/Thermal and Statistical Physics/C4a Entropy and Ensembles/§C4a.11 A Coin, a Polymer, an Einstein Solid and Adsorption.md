@@ -7,7 +7,7 @@ section: C4a.11
 conventions: "[[Mao PHY 510]]"
 tags: [thermal-physics, level-c]
 ---
-← [[§C4a.10 Ensembles at a Glance and Fluctuations]] · ↑ [[· C4a Entropy and Ensembles]]
+← [[§C4a.10 Ensembles at a Glance and Fluctuations]] · ↑ [[· C4a Entropy and Ensembles]] · [[§C4b.1 Orbitals and Occupations]] →
 
 *Sources: PHY 510 Problem Set 4, Problem 2, and Problem Set 5, Problems 1, 3, 4, with official solutions (Mao, Fall 2026).*
 

@@ -9,7 +9,7 @@ tags: [chapter, thermal-and-statistical-physics]
 ← [[· C2 The Fundamental Assumption]] · ↑ [[Thermal and Statistical Physics]] · [[· C4a Entropy and Ensembles]] →
 
 **Builds on:** [[· B5 Kinetic Theory and Transport|B5 Kinetic Theory and Transport]] (1), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (1), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (1)
-**Used by:** [[· C4a Entropy and Ensembles|C4a Entropy and Ensembles]] (6)
+**Used by:** [[· C4a Entropy and Ensembles|C4a Entropy and Ensembles]] (6), [[· C4b Quantum Gases|C4b Quantum Gases]] (2)
 
 Mao's Chapter 3. What a microstate is, classically and quantum mechanically, side by side: densities and density operators, their Liouville dynamics, reduced states of parts, and identical particles.
 

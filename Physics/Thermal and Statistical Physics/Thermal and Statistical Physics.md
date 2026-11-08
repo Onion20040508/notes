@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 287 (UMass, M. Kandula, Fall 2023)", "PHY 306 (Stony Brook, F. Ringer, Spring 2025)", "PHY 510 (UMich, X. Mao, Fall 2026)"]
 textbooks: ["OpenStax, University Physics Vol. 2", "Schroeder, An Introduction to Thermal Physics", "Blundell & Blundell, Concepts in Thermal Physics", "Schwartz, Physics 181 Statistical Mechanics lectures", "Mao, PHY 510 notes", "Sethna, Statistical Mechanics"]
 conventions: "[[University Physics]]"
-status: "levels A and B done; level C in progress (C0–C4a)"
+status: "levels A and B done; level C in progress (C0–C6)"
 tags: [subject, thermal-and-statistical-physics]
 ---
 # Thermal and Statistical Physics
@@ -38,6 +38,9 @@ Temperature, heat, the kinetic theory of gases and the laws of thermodynamics, t
 - [[· C2 The Fundamental Assumption]]
 - [[· C3 Classical and Quantum Microstates]]
 - [[· C4a Entropy and Ensembles]] (★ §C4a.9)
+- [[· C4b Quantum Gases]] (★ §C4b.9)
+- [[· C5 From Microscopic Reversibility to the Master Equation]]
+- [[· C6 Random Walks, Brownian Motion and Diffusion]]
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -66,6 +69,9 @@ graph TD
   C2["C2 The Fundamental Assumption"]
   C3["C3 Classical and Quantum Microstates"]
   C4a["C4a Entropy and Ensembles"]
+  C4b["C4b Quantum Gases"]
+  C5["C5 From Microscopic Reversibility to the Master Equation"]
+  C6["C6 Random Walks, Brownian Motion and Diffusion"]
   A1 -->|1| A2
   A1 -->|1| A3
   A2 -->|15| A3
@@ -156,6 +162,21 @@ graph TD
   C1 -->|8| C4a
   C2 -->|12| C4a
   C3 -->|6| C4a
+  B10 -->|9| C4b
+  B11 -->|4| C4b
+  B12 -->|5| C4b
+  B13 -->|4| C4b
+  B8 -->|2| C4b
+  C1 -->|2| C4b
+  C3 -->|2| C4b
+  C4a -->|13| C4b
+  B5 -->|1| C5
+  C0 -->|3| C5
+  C4a -->|2| C5
+  B4 -->|10| C6
+  B8 -->|4| C6
+  C2 -->|2| C6
+  C5 -->|5| C6
   A2 -.->|1| A1
   A3 -.->|2| A1
   B11 -.->|1| A1
@@ -190,5 +211,5 @@ graph TD
 ## Planned
 Chapters without notes yet. Level C follows the chapters of Mao's PHY 510 notes.
 
-**Level C — graduate** (C0–C4a are written, above)
-C4b Quantum Gases · C5 From Microscopic Reversibility to the Master Equation · C6 Random Walks, Brownian Motion and Diffusion · Unit 3 chapters (emergence of order, fluctuations and criticality, complexity, physics of learning) as they are lectured. The density operator has its home in [[· C11 Density Matrices and Entanglement|QM C11]].
+**Level C — graduate** (C0–C6 are written, above; Units 1 and 2 of PHY 510)
+Unit 3 chapters (emergence of order, fluctuations and criticality, complexity, physics of learning) as they are lectured. The density operator has its home in [[· C11 Density Matrices and Entanglement|QM C11]].

@@ -9,7 +9,7 @@ tags: [chapter, thermal-and-statistical-physics]
 ← [[· B11★ Photons and Phonons]] · ↑ [[Thermal and Statistical Physics]] · [[· B13★ Fermi Gases]] →
 
 **Builds on:** [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (2), [[· B9 Phases and Phase Transitions|B9 Phases and Phase Transitions]] (1), [[· B10 Quantum Statistics|B10 Quantum Statistics]] (17)
-**Used by:** [[· B10 Quantum Statistics|B10 Quantum Statistics]] (3)
+**Used by:** [[· B10 Quantum Statistics|B10 Quantum Statistics]] (3), [[· C4b Quantum Gases|C4b Quantum Gases]] (5)
 
 ## Sections
 - [[§B12.1★ Bose–Einstein Condensation]] — Schwartz L12; Blundell 30; Schroeder 7.6

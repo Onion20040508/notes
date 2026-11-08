@@ -6,10 +6,10 @@ chapter: C4a
 tags: [chapter, thermal-and-statistical-physics]
 ---
 # C4a Entropy and Ensembles
-← [[· C3 Classical and Quantum Microstates]] · ↑ [[Thermal and Statistical Physics]]
+← [[· C3 Classical and Quantum Microstates]] · ↑ [[Thermal and Statistical Physics]] · [[· C4b Quantum Gases]] →
 
 **Builds on:** [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (3), [[· B4 Probability and Fluctuations|B4 Probability and Fluctuations]] (3), [[· B6 The Microcanonical Ensemble and Entropy|B6 The Microcanonical Ensemble and Entropy]] (3), [[· B7 The Canonical and Grand Canonical Ensembles|B7 The Canonical and Grand Canonical Ensembles]] (9), [[· C1 Thermodynamics after Carathéodory|C1 Thermodynamics after Carathéodory]] (8), [[· C2 The Fundamental Assumption|C2 The Fundamental Assumption]] (12), [[· C3 Classical and Quantum Microstates|C3 Classical and Quantum Microstates]] (6)
-**Used by:** —
+**Used by:** [[· C4b Quantum Gases|C4b Quantum Gases]] (13), [[· C5 From Microscopic Reversibility to the Master Equation|C5 From Microscopic Reversibility to the Master Equation]] (2)
 
 Mao's Chapter 4, first half. Shannon's entropy, Jaynes's maximum-entropy principle, the canonical and grand-canonical ensembles, their potentials as Legendre transforms of the entropy, and fluctuations.
 
