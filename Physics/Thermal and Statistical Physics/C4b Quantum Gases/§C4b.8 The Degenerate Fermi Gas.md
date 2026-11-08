@@ -13,7 +13,7 @@ tags: [thermal-physics, level-c]
 
 Fermions respond to the same degeneracy scale in the opposite way. Exclusion forces them to fill orbitals one per state up to a Fermi energy, which leaves a gas with large energy and pressure at zero temperature. On heating only a thin shell near the top of the filled sea can change, which is why the electronic heat capacity of a metal is small. Level B covers the degenerate Fermi gas as a ★ section ([[§B13.1★ The Degenerate Fermi Gas and Metals#^thm-b13-1-2|Theorem §B13.1.2]], [[§B13.1★ The Degenerate Fermi Gas and Metals#^thm-b13-1-4|Theorem §B13.1.4]]).
 
-**Setup.** Uniform three-dimensional gas, $\epsilon = \hbar^2k^2/(2m)$, $g(\epsilon) = A\epsilon^{1/2}$ ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-3|Theorem §C4b.3.3]]), fixed $N$ and $V$, Fermi occupation $f(\epsilon) = 1/(e^{(\epsilon - \mu)/k_BT} + 1)$.
+**Setup.** Uniform three-dimensional gas, $\epsilon = \hbar^2k^2/(2m)$, $g(\epsilon) = A\epsilon^{1/2}$ ([[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-3|Theorem §C4b.3.3]]), fixed $N$ and $V$, Fermi occupation $f(\epsilon) = 1/(e^{(\epsilon - \mu)/k_BT} + 1)$.
 
 > [!caution] Caution: Fixed $\mu$ or fixed $N$
 > $f(\mu) = \tfrac12$ at every $T$, so curves of $f$ at one fixed $\mu$ all cross at $\epsilon = \mu$. For a gas of given $N$ the crossing point is $\mu(T) = E_F[1 - \tfrac{\pi^2}{12}(T/T_F)^2 + \cdots]$ ([[§C4b.9★ Low-Temperature Fermi Thermodynamics#^thm-c4b-9-2|Theorem §C4b.9.2]]), which moves down as $T$ rises; a plot or formula of $f$ against $T$ has to say which of $\mu$, $N$ is held.
@@ -56,7 +56,7 @@ Fermions respond to the same degeneracy scale in the opposite way. Exclusion for
 ^thm-c4b-8-1
 
 > [!derivation]- Derivation
-> **Step 1** ($k_F$). $N = \int_0^{E_F}g\,d\epsilon$, which in $k$-space is the number of orbitals in the Fermi sea ([[§C4b.8 The Degenerate Fermi Gas#^def-c4b-8-2|Def. §C4b.8.2]]): $g_sV\cdot\frac43\pi k_F^3/(2\pi)^3 = g_sVk_F^3/(6\pi^2)$ ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]).
+> **Step 1** ($k_F$). $N = \int_0^{E_F}g\,d\epsilon$, which in $k$-space is the number of orbitals in the Fermi sea ([[§C4b.8 The Degenerate Fermi Gas#^def-c4b-8-2|Def. §C4b.8.2]]): $g_sV\cdot\frac43\pi k_F^3/(2\pi)^3 = g_sVk_F^3/(6\pi^2)$ ([[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]).
 >
 > **Step 2** ($T_F$ vs $T_Q$). $k_BT_F = \frac{\hbar^2}{2m}(6\pi^2\rho_3/g_s)^{2/3}$ and $k_BT_Q = \frac{2\pi\hbar^2}{m}(\rho_3/g_s)^{2/3}$ ([[§C4b.7 Bose–Einstein Condensation#^def-c4b-7-1|Def. §C4b.7.1]]), ratio $\frac{(6\pi^2)^{2/3}}{4\pi} = \frac{(36\pi^4)^{1/3}}{4\pi} = \frac{(36\pi)^{1/3}}{4} \simeq 1.209$.
 >
@@ -68,7 +68,7 @@ Fermions respond to the same degeneracy scale in the opposite way. Exclusion for
 
 ^der-c4b-8-1
 
-*Uses:* [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]], [[§C4b.7 Bose–Einstein Condensation#^def-c4b-7-1|Def. §C4b.7.1]], [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]], [[§C4b.8 The Degenerate Fermi Gas#^def-c4b-8-2|Def. §C4b.8.2]]
+*Uses:* [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]], [[§C4b.7 Bose–Einstein Condensation#^def-c4b-7-1|Def. §C4b.7.1]], [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]], [[§C4b.8 The Degenerate Fermi Gas#^def-c4b-8-2|Def. §C4b.8.2]]
 
 > [!theorem] Theorem §C4b.8.2: Only a Thin Shell Is Thermally Active
 > For $T \ll T_F$, $f$ differs from $\Theta(E_F - \epsilon)$ appreciably only for $|\epsilon - E_F| \lesssim k_BT$. That window holds $g(E_F)k_BT \sim NT/T_F$ particles, each excited by $\sim k_BT$, so

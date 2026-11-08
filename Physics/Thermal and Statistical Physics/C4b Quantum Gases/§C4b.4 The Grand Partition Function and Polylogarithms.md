@@ -7,7 +7,7 @@ section: C4b.4
 conventions: "[[Mao PHY 510]]"
 tags: [thermal-physics, level-c]
 ---
-← [[§C4b.3 Summing over Orbitals: the Density of States]] · ↑ [[· C4b Quantum Gases]] · [[§C4b.5 Massive Gases and the Classical Limit]] →
+← [[§C4b.3 Summing over Orbitals꞉ the Density of States]] · ↑ [[· C4b Quantum Gases]] · [[§C4b.5 Massive Gases and the Classical Limit]] →
 
 *Sources: Mao, PHY 510 notes, §4.5.5, eqs. (4.120)–(4.130), boxes "Three useful functions", "One grand partition function generates the gas thermodynamics" and Figure 4.2 · NIST DLMF §25.12 (cited by Mao) · Kardar, Statistical Physics of Particles, §7.3–§7.6 (Mao's suggested reading) · PHY 510 Lecture 10/6 · PHY 510 Problem Set 6, part (c), official solution.*
 
@@ -68,14 +68,14 @@ $\ln\Xi$ is a function of $(\beta, z, V)$, and $N$, $U$ and $p$ are its three fi
 > \ln\Xi_{\text{cont}} = \mp A\beta^{-\nu}\int_0^\infty x^{\nu-1}\ln(1 \mp ze^{-x})\,dx = A\,\Gamma(\nu)\,\beta^{-\nu}\,G_{\nu+1}(z) .
 > $$
 >
-> *Model:* [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]] with $g = A\epsilon^{\nu-1}$; *applies:* $\nu > 0$, physical $z$; for bosons also $z = 1$, for every $\nu > 0$ (the order $\nu + 1$ exceeds 1).
+> *Model:* [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]] with $g = A\epsilon^{\nu-1}$; *applies:* $\nu > 0$, physical $z$; for bosons also $z = 1$, for every $\nu > 0$ (the order $\nu + 1$ exceeds 1).
 >
 > *Source: Mao §4.5.5, eqs. (4.120)–(4.121) and the display after (4.122)*
 
 ^thm-c4b-4-1
 
 > [!derivation]- Derivation
-> **Step 1** (substitute). $\ln\Xi = \mp\int g(\epsilon)\ln(1 \mp ze^{-\beta\epsilon})\,d\epsilon$ ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]]); with $\epsilon = x/\beta$, $g\,d\epsilon = A\beta^{-\nu}x^{\nu-1}dx$.
+> **Step 1** (substitute). $\ln\Xi = \mp\int g(\epsilon)\ln(1 \mp ze^{-\beta\epsilon})\,d\epsilon$ ([[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]]); with $\epsilon = x/\beta$, $g\,d\epsilon = A\beta^{-\nu}x^{\nu-1}dx$.
 >
 > **Step 2** (by parts). Take $u = \mp\ln(1 \mp ze^{-x})$, $dv = x^{\nu-1}dx$, so $v = x^\nu/\nu$ and $du = -dx/(z^{-1}e^x \mp 1)$. Then
 >
@@ -89,7 +89,7 @@ $\ln\Xi$ is a function of $(\beta, z, V)$, and $N$, $U$ and $p$ are its three fi
 
 ^der-c4b-4-1
 
-*Uses:* [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]], [[§C4b.4 The Grand Partition Function and Polylogarithms#^def-c4b-4-4|Def. §C4b.4.4]]
+*Uses:* [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]], [[§C4b.4 The Grand Partition Function and Polylogarithms#^def-c4b-4-4|Def. §C4b.4.4]]
 
 > [!theorem] Theorem §C4b.4.2: Four Facts about $G_q$
 > 1. **Series:** for $0 < z < 1$, $G_q(z) = \sum_{j\ge1}(\pm1)^{j+1}z^j/j^q$; in particular $\operatorname{Li}_1(w) = -\ln(1 - w)$.

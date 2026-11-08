@@ -11,7 +11,7 @@ tags: [thermal-physics, level-c]
 
 *Sources: Mao, PHY 510 notes, §4.5.1–§4.5.2, eqs. (4.93)–(4.99) and boxes "Orbital label versus occupation number", "Wave–particle duality" · PHY 510 Lecture 10/6.*
 
-For particles that do not interact, the grand partition function will turn out to be a product over one-particle states, $\Xi = \prod_\ell\Xi_\ell$ ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]]). That product splits the ideal quantum gas into two independent tasks, and this chapter takes them in turn:
+For particles that do not interact, the grand partition function will turn out to be a product over one-particle states, $\Xi = \prod_\ell\Xi_\ell$ ([[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]]). That product splits the ideal quantum gas into two independent tasks, and this chapter takes them in turn:
 
 1. **list the one-particle states** — a wave problem in a box, the same for atoms, electrons, photons and phonons (this section);
 2. **find the occupation of each** — one grand-canonical sum per state ([[§C4b.2 One Orbital in the Grand Ensemble|§C4b.2]]).

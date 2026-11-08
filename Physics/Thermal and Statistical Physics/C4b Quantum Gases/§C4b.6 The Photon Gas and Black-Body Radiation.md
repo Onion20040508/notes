@@ -13,7 +13,7 @@ tags: [thermal-physics, level-c]
 
 A cavity in equilibrium with its walls fills with thermal radiation. Its modes are electromagnetic waves, each a quantum oscillator, so black-body radiation is the Bose gas of [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]] with a linear dispersion, two polarizations, and one new input: photon number is not conserved, so $\mu = 0$. Everything else, the Stefan–Boltzmann law, the radiation pressure, the photon number, Planck's spectrum, follows from the general formulas. Level B has the full treatment as a ★ section ([[§B11.1★ Blackbody Radiation from Statistical Mechanics#^mod-b11-1-1|Model §B11.1.1]], [[§B11.1★ Blackbody Radiation from Statistical Mechanics#^thm-b11-1-4|Theorem §B11.1.4]]); in PHY 510 it is core material.
 
-**Setup.** Bose statistics, $\epsilon = \hbar ck$, $g_s = 2$, so $g(\epsilon) = \frac{V}{\pi^2\hbar^3c^3}\epsilon^2$ ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-3|Theorem §C4b.3.3]]) and $\nu = 3$. The vacuum energy of the modes is a temperature-independent constant and is subtracted.
+**Setup.** Bose statistics, $\epsilon = \hbar ck$, $g_s = 2$, so $g(\epsilon) = \frac{V}{\pi^2\hbar^3c^3}\epsilon^2$ ([[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-3|Theorem §C4b.3.3]]) and $\nu = 3$. The vacuum energy of the modes is a temperature-independent constant and is subtracted.
 
 > [!theorem] Theorem §C4b.6.1: Black-Body Photons Have $\mu = 0$
 > For radiation in equilibrium with walls that emit and absorb photons, $\mu_\gamma = 0$ and $z = 1$ at every temperature, and each mode has the Bose occupation $\langle n_\ell\rangle = 1/(e^{\beta\hbar\omega_\ell} - 1)$.
@@ -96,13 +96,13 @@ A cavity in equilibrium with its walls fills with thermal radiation. Its modes a
 > [!derivation]- Derivation
 > **Step 1.** $\langle E\rangle = \hbar\omega\langle n\rangle$ with [[§C4b.6 The Photon Gas and Black-Body Radiation#^thm-c4b-6-1|Theorem §C4b.6.1]]; the limits are [[§C4b.2 One Orbital in the Grand Ensemble#^thm-c4b-2-2|Theorem §C4b.2.2]], part 2, and $e^{x} - 1 \simeq e^x$ for $x \gg 1$.
 >
-> **Step 2.** $U = \sum_\ell\hbar\omega_\ell\langle n_\ell\rangle$, equal to $-\partial_\beta\ln\Xi$ at $z = 1$. Replace the sum with $\int D(\omega)\,d\omega$ ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]): $D(\omega) = g(\epsilon)\,d\epsilon/d\omega = \hbar g(\hbar\omega)$.
+> **Step 2.** $U = \sum_\ell\hbar\omega_\ell\langle n_\ell\rangle$, equal to $-\partial_\beta\ln\Xi$ at $z = 1$. Replace the sum with $\int D(\omega)\,d\omega$ ([[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]): $D(\omega) = g(\epsilon)\,d\epsilon/d\omega = \hbar g(\hbar\omega)$.
 >
 > **Step 3.** $u_\omega = D(\omega)\langle E_\omega\rangle/V$; its integral is $U/V$ of [[§C4b.6 The Photon Gas and Black-Body Radiation#^thm-c4b-6-2|Theorem §C4b.6.2]]. For the other variables, $u_\nu\,d\nu = u_\omega\,d\omega$ with $d\omega = 2\pi\,d\nu$, and $u_\lambda\,|d\lambda| = u_\omega\,d\omega$ with $|d\omega/d\lambda| = 2\pi c/\lambda^2$.
 
 ^der-c4b-6-3
 
-*Uses:* [[§C4b.6 The Photon Gas and Black-Body Radiation#^thm-c4b-6-1|Theorem §C4b.6.1]], [[§C4b.2 One Orbital in the Grand Ensemble#^thm-c4b-2-2|Theorem §C4b.2.2]], [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]
+*Uses:* [[§C4b.6 The Photon Gas and Black-Body Radiation#^thm-c4b-6-1|Theorem §C4b.6.1]], [[§C4b.2 One Orbital in the Grand Ensemble#^thm-c4b-2-2|Theorem §C4b.2.2]], [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]
 
 ![[ph-th-c4b-6-1.svg]]
 

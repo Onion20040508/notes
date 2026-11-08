@@ -13,7 +13,7 @@ tags: [thermal-physics, level-c]
 
 For massive particles the number equation contains $T$ and $\rho_3$ only through one length, the thermal wavelength $\lambda_T$, compared with the spacing $a_s$ of particles that share an internal state. This section shows that $z \ll 1$, the condition under which the Bose and Fermi occupations both reduce to Maxwell–Boltzmann, is $\lambda_T \ll a_s$; recovers the classical ideal gas; and computes the first correction from exchange alone. Level B has the same quantities ([[§B8.1 The Partition Function of the Ideal Gas#^def-b8-1-1|Def. §B8.1.1]], [[§B10.2 Quantum and Classical Ideal Gases#^def-b10-2-1|Def. §B10.2.1]], [[§B10.2 Quantum and Classical Ideal Gases#^thm-b10-2-4|Theorem §B10.2.4]]).
 
-**Setup.** Nonrelativistic particles in three dimensions, $g(\epsilon) = A\epsilon^{1/2}$ ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-3|Theorem §C4b.3.3]]), with the master formulas of [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]] at $\nu = \tfrac32$; number density $\rho_3 = N/V$.
+**Setup.** Nonrelativistic particles in three dimensions, $g(\epsilon) = A\epsilon^{1/2}$ ([[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-3|Theorem §C4b.3.3]]), with the master formulas of [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]] at $\nu = \tfrac32$; number density $\rho_3 = N/V$.
 
 > [!definition] Definition §C4b.5.1: Thermal Wavelength
 > $$
@@ -47,7 +47,7 @@ For massive particles the number equation contains $T$ and $\rho_3$ only through
 ^thm-c4b-5-1
 
 > [!derivation]- Derivation (number equation)
-> [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]] with $\nu = \tfrac32$: $N = A\Gamma(\tfrac32)(k_BT)^{3/2}G_{3/2}(z)$, and $A = \frac{g_sV}{4\pi^2}(2m/\hbar^2)^{3/2}$ ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-3|Theorem §C4b.3.3]]), $\Gamma(\tfrac32) = \sqrt\pi/2$. Then $A\Gamma(\tfrac32)(k_BT)^{3/2} = \frac{g_sV\sqrt\pi}{8\pi^2}\bigl(\frac{2mk_BT}{\hbar^2}\bigr)^{3/2} = g_sV\bigl(\frac{mk_BT}{2\pi\hbar^2}\bigr)^{3/2} = g_sV/\lambda_T^3$, using $\frac{\sqrt\pi}{8\pi^2}2^{3/2} = (2\pi)^{-3/2}$.
+> [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]] with $\nu = \tfrac32$: $N = A\Gamma(\tfrac32)(k_BT)^{3/2}G_{3/2}(z)$, and $A = \frac{g_sV}{4\pi^2}(2m/\hbar^2)^{3/2}$ ([[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-3|Theorem §C4b.3.3]]), $\Gamma(\tfrac32) = \sqrt\pi/2$. Then $A\Gamma(\tfrac32)(k_BT)^{3/2} = \frac{g_sV\sqrt\pi}{8\pi^2}\bigl(\frac{2mk_BT}{\hbar^2}\bigr)^{3/2} = g_sV\bigl(\frac{mk_BT}{2\pi\hbar^2}\bigr)^{3/2} = g_sV/\lambda_T^3$, using $\frac{\sqrt\pi}{8\pi^2}2^{3/2} = (2\pi)^{-3/2}$.
 
 ^der-c4b-5-1
 
@@ -56,11 +56,11 @@ For massive particles the number equation contains $T$ and $\rho_3$ only through
 >
 > **Step 2.** $\beta(\epsilon - \mu) = \beta\epsilon - \ln z \ge -\ln z \gg 1$.
 >
-> **Step 3.** Then $ze^{-\beta\epsilon} \ll 1$ in $f = ze^{-\beta\epsilon}/(1 \mp ze^{-\beta\epsilon})$, so the $\mp$ is negligible. (Step 3 is where the statistics is dropped; replacing the sum by the integral, [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]], is a separate approximation that holds at any $z$.)
+> **Step 3.** Then $ze^{-\beta\epsilon} \ll 1$ in $f = ze^{-\beta\epsilon}/(1 \mp ze^{-\beta\epsilon})$, so the $\mp$ is negligible. (Step 3 is where the statistics is dropped; replacing the sum by the integral, [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]], is a separate approximation that holds at any $z$.)
 
 ^der-c4b-5-2
 
-*Uses:* [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]], [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-3|Theorem §C4b.3.3]], [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-2|Theorem §C4b.4.2]]
+*Uses:* [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|Theorem §C4b.4.3]], [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-3|Theorem §C4b.3.3]], [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-2|Theorem §C4b.4.2]]
 
 > [!example] Example §C4b.5.1: Classical and Degenerate Gases
 > Degeneracy parameter $\rho_3\lambda_T^3/g_s$, from [[§C4b.5 Massive Gases and the Classical Limit#^def-c4b-5-1|Def. §C4b.5.1]] and [[§C4b.5 Massive Gases and the Classical Limit#^thm-c4b-5-1|Theorem §C4b.5.1]]:

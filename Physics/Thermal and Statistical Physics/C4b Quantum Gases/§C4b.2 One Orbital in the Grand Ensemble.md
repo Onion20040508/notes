@@ -7,7 +7,7 @@ section: C4b.2
 conventions: "[[Mao PHY 510]]"
 tags: [thermal-physics, level-c]
 ---
-← [[§C4b.1 Orbitals and Occupations]] · ↑ [[· C4b Quantum Gases]] · [[§C4b.3 Summing over Orbitals: the Density of States]] →
+← [[§C4b.1 Orbitals and Occupations]] · ↑ [[· C4b Quantum Gases]] · [[§C4b.3 Summing over Orbitals꞉ the Density of States]] →
 
 *Sources: Mao, PHY 510 notes, §4.5.3, eqs. (4.100)–(4.108) and Figure 4.1 · PHY 510 Lecture 10/6.*
 
@@ -27,7 +27,7 @@ The grand-canonical weight ([[§C4a.5 The Canonical and Grand-Canonical Ensemble
 >
 > For bosons the condition must hold for every orbital, so $\mu < \epsilon_0$, the lowest one-particle energy.
 >
-> *Model:* [[§C4a.5 The Canonical and Grand-Canonical Ensembles#^thm-c4a-5-4|Theorem §C4a.5.4]] for the Setup; *applies:* noninteracting particles, for which $P_\ell$ is a marginal of a product distribution (Step 1; the full product is [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]]).
+> *Model:* [[§C4a.5 The Canonical and Grand-Canonical Ensembles#^thm-c4a-5-4|Theorem §C4a.5.4]] for the Setup; *applies:* noninteracting particles, for which $P_\ell$ is a marginal of a product distribution (Step 1; the full product is [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]]).
 >
 > *Source: Mao §4.5.3, eqs. (4.100)–(4.105) · level-B home: [[§B10.1 Bose–Einstein and Fermi–Dirac Distributions#^thm-b10-1-3|Theorem §B10.1.3]]*
 

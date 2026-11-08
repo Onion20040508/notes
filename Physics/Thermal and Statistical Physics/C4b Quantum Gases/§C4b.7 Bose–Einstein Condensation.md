@@ -74,13 +74,13 @@ For bosons at fixed density, every occupation falls as $T$ drops unless $\mu$ mo
 ^thm-c4b-7-2
 
 > [!derivation]- Derivation
-> **Step 1.** The ground orbital, $\epsilon = 0$, $g_s$ internal states, has total occupation $g_s/(e^{-\beta\mu} - 1)$ ([[§C4b.2 One Orbital in the Grand Ensemble#^def-c4b-2-1|Def. §C4b.2.1]]). In the integral it has weight zero ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]]); dropping it costs nothing when $N_0/V \to 0$ and everything when $N_0 = O(V)$.
+> **Step 1.** The ground orbital, $\epsilon = 0$, $g_s$ internal states, has total occupation $g_s/(e^{-\beta\mu} - 1)$ ([[§C4b.2 One Orbital in the Grand Ensemble#^def-c4b-2-1|Def. §C4b.2.1]]). In the integral it has weight zero ([[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]]); dropping it costs nothing when $N_0/V \to 0$ and everything when $N_0 = O(V)$.
 >
 > **Step 2.** Solve $N_0(e^{-\beta\mu} - 1) = g_s$ for $\mu$, and expand $\ln(1 + g_s/N_0) \simeq g_s/N_0$ for $N_0 \gg g_s$.
 
 ^der-c4b-7-2
 
-*Uses:* [[§C4b.2 One Orbital in the Grand Ensemble#^def-c4b-2-1|Def. §C4b.2.1]], [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]]
+*Uses:* [[§C4b.2 One Orbital in the Grand Ensemble#^def-c4b-2-1|Def. §C4b.2.1]], [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-4|Theorem §C4b.3.4]]
 
 > [!theorem] Theorem §C4b.7.3: Transition Temperature and Condensate Fraction
 > Condensation sets in when the excited capacity equals $N$:
@@ -209,15 +209,15 @@ For bosons at fixed density, every occupation falls as $T$ drops unless $\mu$ mo
 ^thm-c4b-7-7
 
 > [!derivation]- Derivation
-> **Step 1.** In the grand ensemble of [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], $\langle\hat a^\dagger_{\mathbf k}\hat a_{\mathbf k'}\rangle = \delta_{\mathbf k\mathbf k'}\langle\hat n_{\mathbf k}\rangle$, since the states are diagonal in the occupations. With [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-2|Theorem §C4b.7.2]] and [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-3|Theorem §C4b.7.3]] this gives part 1.
+> **Step 1.** In the grand ensemble of [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], $\langle\hat a^\dagger_{\mathbf k}\hat a_{\mathbf k'}\rangle = \delta_{\mathbf k\mathbf k'}\langle\hat n_{\mathbf k}\rangle$, since the states are diagonal in the occupations. With [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-2|Theorem §C4b.7.2]] and [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-3|Theorem §C4b.7.3]] this gives part 1.
 >
-> **Step 2.** Then $\rho_1(\mathbf r, \mathbf r') = V^{-1}\sum_{\mathbf k}\langle\hat n_{\mathbf k}\rangle e^{i\mathbf k\cdot(\mathbf r' - \mathbf r)}$. At $\mathbf r = \mathbf r'$ the sum is $N/V$ (part 2). Keep the $\mathbf k = 0$ term and replace the rest by an integral ([[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]).
+> **Step 2.** Then $\rho_1(\mathbf r, \mathbf r') = V^{-1}\sum_{\mathbf k}\langle\hat n_{\mathbf k}\rangle e^{i\mathbf k\cdot(\mathbf r' - \mathbf r)}$. At $\mathbf r = \mathbf r'$ the sum is $N/V$ (part 2). Keep the $\mathbf k = 0$ term and replace the rest by an integral ([[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]).
 >
 > **Step 3.** $f(\epsilon_k) \propto k^{-2}$ near $k = 0$ (at $\mu = 0$) and decays exponentially at large $k$, so it is integrable over $d^3k$; by the Riemann–Lebesgue lemma its Fourier transform tends to $0$ at large separation, leaving $N_0/V$. Above $T_c$, $N_0/V \to 0$ and $\mu < 0$, so only the decaying integral remains.
 
 ^der-c4b-7-6
 
-*Uses:* [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-2|Theorem §C4b.7.2]], [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-3|Theorem §C4b.7.3]], [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]
+*Uses:* [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-2|Theorem §C4b.7.2]], [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-3|Theorem §C4b.7.3]], [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]
 
 > [!remark]- Connections
 > - The same scale $T_Q$ sets the Fermi temperature, $T_F \simeq 1.21\,T_Q$ — [[§C4b.8 The Degenerate Fermi Gas#^thm-c4b-8-1|Theorem §C4b.8.1]].

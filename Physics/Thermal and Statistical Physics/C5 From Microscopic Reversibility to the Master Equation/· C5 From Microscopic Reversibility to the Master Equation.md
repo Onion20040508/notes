@@ -15,7 +15,7 @@ Mao's Chapter 5 (Unit 2). How reversible microscopic dynamics, viewed through a 
 
 ## Sections
 - [[§C5.1 Complete and Reduced Dynamics]] — Mao Unit 2 §5.1; Lecture 10/27
-- [[§C5.2 A Spring Chain: Memory from Reversible Springs]] — Mao §5.1.1; Lecture 10/27
+- [[§C5.2 A Spring Chain꞉ Memory from Reversible Springs]] — Mao §5.1.1; Lecture 10/27
 - [[§C5.3 Dephasing, Rephasing and Effective Friction]] — Mao §5.1.2; Lecture 10/27
 - [[§C5.4 Markov Dynamics and the Apparent Arrow of Time]] — Mao §5.2; Lectures 10/27, 10/29
 - [[§C5.5 The Master Equation]] — Mao §5.3–5.4; Lecture 10/29; PS7 P2
@@ -25,8 +25,8 @@ Mao's Chapter 5 (Unit 2). How reversible microscopic dynamics, viewed through a 
 
 ## Theorems
 - [[§C5.1 Complete and Reduced Dynamics#^thm-c5-1-1|§C5.1.1]] A Reduced State Does Not Evolve on Its Own
-- [[§C5.2 A Spring Chain: Memory from Reversible Springs#^thm-c5-2-2|§C5.2.2]] Environmental Normal Modes
-- [[§C5.2 A Spring Chain: Memory from Reversible Springs#^thm-c5-2-3|§C5.2.3]] Exact Equation with Memory for the Observed Mass
+- [[§C5.2 A Spring Chain꞉ Memory from Reversible Springs#^thm-c5-2-2|§C5.2.2]] Environmental Normal Modes
+- [[§C5.2 A Spring Chain꞉ Memory from Reversible Springs#^thm-c5-2-3|§C5.2.3]] Exact Equation with Memory for the Observed Mass
 - [[§C5.3 Dephasing, Rephasing and Effective Friction#^thm-c5-3-1|§C5.3.1]] Dephasing Time
 - [[§C5.3 Dephasing, Rephasing and Effective Friction#^thm-c5-3-2|§C5.3.2]] Rephasing Time
 - [[§C5.3 Dephasing, Rephasing and Effective Friction#^thm-c5-3-3|§C5.3.3]] Effective Friction from a Long Chain
@@ -47,4 +47,4 @@ Mao's Chapter 5 (Unit 2). How reversible microscopic dynamics, viewed through a 
 - [[§C5.7 System Entropy during Relaxation#^thm-c5-7-4|§C5.7.4]] ★ Boltzmann's H-Theorem
 
 ## Models
-- [[§C5.2 A Spring Chain: Memory from Reversible Springs#^mod-c5-2-1|§C5.2.1]] The Spring Chain
+- [[§C5.2 A Spring Chain꞉ Memory from Reversible Springs#^mod-c5-2-1|§C5.2.1]] The Spring Chain

@@ -16,7 +16,7 @@ Mao's Chapter 4, second half. Ideal quantum gases from the grand ensemble, one o
 ## Sections
 - [[§C4b.1 Orbitals and Occupations]] — Mao §4.5.1–4.5.2; Lecture 10/6
 - [[§C4b.2 One Orbital in the Grand Ensemble]] — Mao §4.5.3; Lecture 10/6
-- [[§C4b.3 Summing over Orbitals: the Density of States]] — Mao §4.5.4; Lecture 10/6
+- [[§C4b.3 Summing over Orbitals꞉ the Density of States]] — Mao §4.5.4; Lecture 10/6
 - [[§C4b.4 The Grand Partition Function and Polylogarithms]] — Mao §4.5.5; Lecture 10/6; PS6 (c)
 - [[§C4b.5 Massive Gases and the Classical Limit]] — Mao §4.5.6; Lecture 10/8; PS6 (d)
 - [[§C4b.6 The Photon Gas and Black-Body Radiation]] — Mao §4.5.7; Lecture 10/8
@@ -36,10 +36,10 @@ Mao's Chapter 4, second half. Ideal quantum gases from the grand ensemble, one o
 - [[§C4b.2 One Orbital in the Grand Ensemble#^thm-c4b-2-1|§C4b.2.1]] Grand-Canonical Statistics of One Orbital
 - [[§C4b.2 One Orbital in the Grand Ensemble#^thm-c4b-2-2|§C4b.2.2]] Two Different Classical Limits
 - [[§C4b.2 One Orbital in the Grand Ensemble#^thm-c4b-2-3|§C4b.2.3]] Occupation Fluctuations
-- [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-1|§C4b.3.1]] The Grand Partition Function Factorizes over Orbitals
-- [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|§C4b.3.2]] Counting Orbitals; the One-Particle Density of States
-- [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-3|§C4b.3.3]] Two Dispersions
-- [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-4|§C4b.3.4]] Continuum Formulas, with the Ground State Kept Aside
+- [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-1|§C4b.3.1]] The Grand Partition Function Factorizes over Orbitals
+- [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|§C4b.3.2]] Counting Orbitals; the One-Particle Density of States
+- [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-3|§C4b.3.3]] Two Dispersions
+- [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-4|§C4b.3.4]] Continuum Formulas, with the Ground State Kept Aside
 - [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-1|§C4b.4.1]] $\ln\Xi$ Is a Polylogarithm
 - [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-2|§C4b.4.2]] Four Facts about $G_q$
 - [[§C4b.4 The Grand Partition Function and Polylogarithms#^thm-c4b-4-3|§C4b.4.3]] One Function Gives $N$, $U$ and $p$

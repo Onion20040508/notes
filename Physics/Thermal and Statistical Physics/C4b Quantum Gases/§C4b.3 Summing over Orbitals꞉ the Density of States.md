@@ -74,7 +74,7 @@ The whole gas is assembled from the one-orbital results of [[§C4b.2 One Orbital
 > \sum_\ell(\cdots) \longrightarrow \frac{g_sV}{(2\pi)^3}\int d^3k\,(\cdots), \qquad g(k)\,dk = \frac{g_sV}{2\pi^2}k^2\,dk .
 > $$
 >
-> For an isotropic, increasing dispersion $\epsilon(k)$ the density of states of [[§C4b.3 Summing over Orbitals: the Density of States#^def-c4b-3-1|Def. §C4b.3.1]] is
+> For an isotropic, increasing dispersion $\epsilon(k)$ the density of states of [[§C4b.3 Summing over Orbitals꞉ the Density of States#^def-c4b-3-1|Def. §C4b.3.1]] is
 >
 > $$
 > g(\epsilon) = g(k)\frac{dk}{d\epsilon} = \frac{g_sV}{2\pi^2}k^2\frac{dk}{d\epsilon} .
@@ -95,7 +95,7 @@ The whole gas is assembled from the one-orbital results of [[§C4b.2 One Orbital
 
 ^der-c4b-3-2
 
-*Uses:* [[§C4b.1 Orbitals and Occupations#^thm-c4b-1-1|Theorem §C4b.1.1]], [[§C4b.3 Summing over Orbitals: the Density of States#^def-c4b-3-1|Def. §C4b.3.1]]
+*Uses:* [[§C4b.1 Orbitals and Occupations#^thm-c4b-1-1|Theorem §C4b.1.1]], [[§C4b.3 Summing over Orbitals꞉ the Density of States#^def-c4b-3-1|Def. §C4b.3.1]]
 
 > [!theorem] Theorem §C4b.3.3: Two Dispersions
 > 1. **Nonrelativistic**, $\epsilon = \hbar^2k^2/(2m)$:
@@ -110,7 +110,7 @@ The whole gas is assembled from the one-orbital results of [[§C4b.2 One Orbital
 > g(\epsilon) = \frac{g_sV}{2\pi^2\hbar^3c^3}\epsilon^2 .
 > $$
 >
-> *Model:* [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]; *applies:* either statistics; part 1 for $p \ll mc$, part 2 for $p \gg mc$ (exact for massless particles).
+> *Model:* [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]; *applies:* either statistics; part 1 for $p \ll mc$, part 2 for $p \gg mc$ (exact for massless particles).
 >
 > *Source: Mao §4.5.4, eqs. (4.117)–(4.118)*
 
@@ -123,7 +123,7 @@ The whole gas is assembled from the one-orbital results of [[§C4b.2 One Orbital
 
 ^der-c4b-3-3
 
-*Uses:* [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]
+*Uses:* [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]
 
 > [!theorem] Theorem §C4b.3.4: Continuum Formulas, with the Ground State Kept Aside
 > $$
@@ -132,19 +132,19 @@ The whole gas is assembled from the one-orbital results of [[§C4b.2 One Orbital
 >
 > and $\ln\Xi$ is the integral of $\ln\Xi_\ell$ against $g(\epsilon)$. If one orbital $\ell_0$ carries a finite fraction of the particles, $f(\epsilon_{\ell_0})/N \not\to 0$, it is added by hand: $N = f(\epsilon_{\ell_0}) + N_{\text{cont}}$, the Bose condensate case $N = N_0 + N_{\text{cont}}$ of [[§C4b.7 Bose–Einstein Condensation#^thm-c4b-7-2|Theorem §C4b.7.2]].
 >
-> *Model:* [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]; *applies:* large box, and $\max_\ell f(\epsilon_\ell)/N \to 0$ for the orbitals left in the integral.
+> *Model:* [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]; *applies:* large box, and $\max_\ell f(\epsilon_\ell)/N \to 0$ for the orbitals left in the integral.
 >
 > *Source: Mao §4.5.4, eq. (4.119)*
 
 ^thm-c4b-3-4
 
 > [!derivation]- Derivation
-> Group the orbitals of [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]] by energy using [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]: $\sum_\ell F(\epsilon_\ell)$ is a Riemann sum for $\int F(\epsilon)g(\epsilon)\,d\epsilon$, accurate when $F$ changes little over the level spacing near the bottom of the spectrum, $\sim(2\pi\hbar)^2/(2mL^2)$ for massive particles. Any single orbital enters the integral with weight $g(\epsilon)\,d\epsilon \to 0$, so an orbital holding a finite fraction of $N$ is lost and must be added separately.
+> Group the orbitals of [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]] by energy using [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]: $\sum_\ell F(\epsilon_\ell)$ is a Riemann sum for $\int F(\epsilon)g(\epsilon)\,d\epsilon$, accurate when $F$ changes little over the level spacing near the bottom of the spectrum, $\sim(2\pi\hbar)^2/(2mL^2)$ for massive particles. Any single orbital enters the integral with weight $g(\epsilon)\,d\epsilon \to 0$, so an orbital holding a finite fraction of $N$ is lost and must be added separately.
 
 ^der-c4b-3-4
 
-*Uses:* [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], [[§C4b.3 Summing over Orbitals: the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]
+*Uses:* [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-1|Theorem §C4b.3.1]], [[§C4b.3 Summing over Orbitals꞉ the Density of States#^thm-c4b-3-2|Theorem §C4b.3.2]]
 
 > [!remark]- Connections
 > - The same counting in $d$ dimensions, with a sphere area $S_{d-1}$, gives $g(\epsilon) = A\epsilon^{\nu-1}$ with $\nu = d/s$ for $\epsilon \propto k^s$ — [[§C4b.10 Quantum Gases in Any Dimension#^ex-c4b-10-1|Example §C4b.10.1]] (PHY 510 Problem Set 6, part (b)).
-> - Contrast: [[§C4b.3 Summing over Orbitals: the Density of States#^def-c4b-3-1|Def. §C4b.3.1]] counts one-particle orbitals per unit energy, while the many-body $g(E)$ of [[§C4a.9★ Density of States, Laplace and Legendre#^def-c4a-9-1|Def. §C4a.9.1]] counts complete microstates of the whole system per unit energy.
+> - Contrast: [[§C4b.3 Summing over Orbitals꞉ the Density of States#^def-c4b-3-1|Def. §C4b.3.1]] counts one-particle orbitals per unit energy, while the many-body $g(E)$ of [[§C4a.9★ Density of States, Laplace and Legendre#^def-c4a-9-1|Def. §C4a.9.1]] counts complete microstates of the whole system per unit energy.
