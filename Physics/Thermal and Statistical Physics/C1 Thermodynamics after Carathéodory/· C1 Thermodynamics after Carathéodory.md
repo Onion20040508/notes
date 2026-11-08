@@ -27,6 +27,8 @@ Mao's Chapter 1. Thermodynamics rebuilt from one geometric principle, with entro
 - [[§C1.1 Systems, Equilibrium and the First Two Laws#^pr-c1-1-2|§C1.1.2]] Zeroth Law of Thermodynamics
 - [[§C1.1 Systems, Equilibrium and the First Two Laws#^pr-c1-1-4|§C1.1.4]] First Law of Thermodynamics
 - [[§C1.3 Carathéodory's Principle and the Integrating Factor#^pr-c1-3-1|§C1.3.1]] Carathéodory's Principle
+- [[§C1.5 The Second Law for Irreversible Processes#^pr-c1-5-3|§C1.5.3]] Irreversibility Cannot Be Undone
+- [[§C1.5 The Second Law for Irreversible Processes#^pr-c1-5-4|§C1.5.4]] Entropy Is Additive over Parts
 
 ## Theorems
 - [[§C1.1 Systems, Equilibrium and the First Two Laws#^thm-c1-1-3|§C1.1.3]] Empirical Temperature
@@ -42,12 +44,12 @@ Mao's Chapter 1. Thermodynamics rebuilt from one geometric principle, with entro
 - [[§C1.4 Temperature and Entropy#^thm-c1-4-5|§C1.4.5]] Entropy Is Single-Valued
 - [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-1|§C1.5.1]] Adiabatic Processes Reach One Side of Each Surface
 - [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-2|§C1.5.2]] General Statement of the Second Law
-- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-3|§C1.5.3]] Kelvin–Planck Statement
-- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-4|§C1.5.4]] Clausius Statement
-- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-6|§C1.5.6]] Entropy Change of a Reservoir
-- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-7|§C1.5.7]] Entropy Balance
-- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-8|§C1.5.8]] Clausius Inequality
-- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-9|§C1.5.9]] Clausius Inequality for a Cycle
+- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-5|§C1.5.5]] Kelvin–Planck Statement
+- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-6|§C1.5.6]] Clausius Statement
+- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-8|§C1.5.8]] Entropy Change of a Reservoir
+- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-9|§C1.5.9]] Entropy Balance
+- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-10|§C1.5.10]] Clausius Inequality
+- [[§C1.5 The Second Law for Irreversible Processes#^thm-c1-5-11|§C1.5.11]] Clausius Inequality for a Cycle
 - [[§C1.6 Thermodynamic Potentials and Variational Principles#^thm-c1-6-1|§C1.6.1]] Entropy Maximum
 - [[§C1.6 Thermodynamic Potentials and Variational Principles#^thm-c1-6-2|§C1.6.2]] Fundamental Thermodynamic Relation
 - [[§C1.6 Thermodynamic Potentials and Variational Principles#^thm-c1-6-3|§C1.6.3]] Free Energy Bounds the Work at Fixed Temperature
@@ -62,4 +64,4 @@ Mao's Chapter 1. Thermodynamics rebuilt from one geometric principle, with entro
 ## Models
 - [[§C1.1 Systems, Equilibrium and the First Two Laws#^mod-c1-1-1|§C1.1.1]] Reversible Process
 - [[§C1.4 Temperature and Entropy#^mod-c1-4-1|§C1.4.1]] Two Systems in Thermal Contact
-- [[§C1.5 The Second Law for Irreversible Processes#^mod-c1-5-5|§C1.5.5]] Heat Reservoir
+- [[§C1.5 The Second Law for Irreversible Processes#^mod-c1-5-7|§C1.5.7]] Heat Reservoir
