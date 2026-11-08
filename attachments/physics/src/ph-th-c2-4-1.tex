@@ -1,0 +1,12 @@
+% Figure for Thermal and Statistical Physics §C2.4 (S/(N k_B) = h(n) and eps*beta = ln((1-n)/n) for N two-level units, against the excitation fraction n).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, name=a, width=6.4cm, height=5cm, xmin=0, xmax=1, ymin=0, ymax=0.8, xlabel={$n = E/(N\epsilon)$}, ylabel={$S/(Nk_B)$}, xtick={0,0.5,1}, ytick={0,0.693}, yticklabels={$0$,$\ln 2$}]
+    \addplot[domain=0.001:0.999, samples=200, figB] {-x*ln(x)-(1-x)*ln(1-x)};
+    \draw[black!35, dashed] (axis cs:0.5,0) -- (axis cs:0.5,0.75);
+  \end{axis}
+  \begin{axis}[nfig, at={(a.east)}, anchor=west, xshift=1.6cm, width=6.4cm, height=5cm, xmin=0, xmax=1, ymin=-4.5, ymax=4.5, axis x line=middle, xlabel={$n$}, ylabel={$\epsilon\beta$}, xtick={0.5,1}, ytick={-4,0,4}, xlabel style={anchor=west}]
+    \addplot[domain=0.011:0.989, samples=200, figR] {ln((1-x)/x)};
+    \node[font=\scriptsize, anchor=west] at (axis cs:0.14,3.0) {$\beta > 0$: $T > 0$};
+    \node[font=\scriptsize, anchor=west] at (axis cs:0.5,-3.0) {$\beta < 0$: $T < 0$};
+  \end{axis}
+\end{tikzpicture}

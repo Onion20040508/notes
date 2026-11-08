@@ -1,0 +1,9 @@
+% Figure for Thermal and Statistical Physics §C2.2 (density N P_N(Nn) of the up-fraction n for N = 10, 100, 1000 from the large-deviation form exp{N[h(n)-ln2]}/sqrt(2 pi N n(1-n)) times N).
+\begin{tikzpicture}[font=\small]
+  \begin{axis}[nfig, width=9cm, height=5.6cm, xmin=0, xmax=1, ymin=0, ymax=29, xlabel={$n = N_\uparrow/N$}, ylabel={$N\,P_N(Nn)$}, xtick={0,0.25,0.5,0.75,1}, legend style={font=\scriptsize, draw=none, fill=none, at={(0.98,0.97)}, anchor=north east}, legend cell align=left]
+    \addplot[domain=0.005:0.995, samples=300, figO] {10*exp(10*(-x*ln(x)-(1-x)*ln(1-x)-ln(2)))/sqrt(2*pi*10*x*(1-x))};
+    \addplot[domain=0.01:0.99, samples=400, figG] {100*exp(100*(-x*ln(x)-(1-x)*ln(1-x)-ln(2)))/sqrt(2*pi*100*x*(1-x))};
+    \addplot[domain=0.38:0.62, samples=400, figB] {1000*exp(1000*(-x*ln(x)-(1-x)*ln(1-x)-ln(2)))/sqrt(2*pi*1000*x*(1-x))};
+    \legend{$N = 10$, $N = 100$, $N = 1000$}
+  \end{axis}
+\end{tikzpicture}

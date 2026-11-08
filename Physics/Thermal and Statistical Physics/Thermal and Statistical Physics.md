@@ -4,7 +4,7 @@ discipline: physics
 courses: ["PHY 287 (UMass, M. Kandula, Fall 2023)", "PHY 306 (Stony Brook, F. Ringer, Spring 2025)", "PHY 510 (UMich, X. Mao, Fall 2026)"]
 textbooks: ["OpenStax, University Physics Vol. 2", "Schroeder, An Introduction to Thermal Physics", "Blundell & Blundell, Concepts in Thermal Physics", "Schwartz, Physics 181 Statistical Mechanics lectures", "Mao, PHY 510 notes", "Sethna, Statistical Mechanics"]
 conventions: "[[University Physics]]"
-status: "levels A and B done; level C in progress (C0, C1)"
+status: "levels A and B done; level C in progress (C0–C2)"
 tags: [subject, thermal-and-statistical-physics]
 ---
 # Thermal and Statistical Physics
@@ -35,6 +35,7 @@ Temperature, heat, the kinetic theory of gases and the laws of thermodynamics, t
 ## Level C — graduate
 - [[· C0 The Arrow of Time]]
 - [[· C1 Thermodynamics after Carathéodory]]
+- [[· C2 The Fundamental Assumption]]
 
 ### How the chapters build on each other
 Arrows point from a chapter to the chapters that use it; labels count the citations from statements, derivations and *Uses:* lines. Dashed arrows are forward references.
@@ -60,6 +61,7 @@ graph TD
   B13["B13★ Fermi Gases"]
   C0["C0 The Arrow of Time"]
   C1["C1 Thermodynamics after Carathéodory"]
+  C2["C2 The Fundamental Assumption"]
   A1 -->|1| A2
   A1 -->|1| A3
   A2 -->|15| A3
@@ -136,6 +138,10 @@ graph TD
   B1 -->|4| C1
   B2 -->|5| C1
   B3 -->|2| C1
+  B4 -->|10| C2
+  B6 -->|7| C2
+  C0 -->|3| C2
+  C1 -->|7| C2
   A2 -.->|1| A1
   A3 -.->|2| A1
   B11 -.->|1| A1
@@ -170,5 +176,5 @@ graph TD
 ## Planned
 Chapters without notes yet. Level C follows the chapters of Mao's PHY 510 notes.
 
-**Level C — graduate** (C0 and C1 are written, above)
-C2 The Fundamental Assumption · C3 Classical and Quantum Microstates · C4a Entropy and Ensembles · C4b Quantum Gases · C5 From Microscopic Reversibility to the Master Equation · C6 Random Walks, Brownian Motion and Diffusion · Unit 3 chapters (emergence of order, fluctuations and criticality, complexity, physics of learning) as they are lectured. The density operator has its home in [[· C11 Density Matrices and Entanglement|QM C11]].
+**Level C — graduate** (C0–C2 are written, above)
+C3 Classical and Quantum Microstates · C4a Entropy and Ensembles · C4b Quantum Gases · C5 From Microscopic Reversibility to the Master Equation · C6 Random Walks, Brownian Motion and Diffusion · Unit 3 chapters (emergence of order, fluctuations and criticality, complexity, physics of learning) as they are lectured. The density operator has its home in [[· C11 Density Matrices and Entanglement|QM C11]].

@@ -18,3 +18,7 @@ Conventions of level C of [[Thermal and Statistical Physics]], as in Mao's PHY 5
 | Time reversal | $\mathcal T$ on states ([[§C0.1 Microscopic Reversibility#^def-c0-1-1\|Def. §C0.1.1]]) | QM C8★ and QFT: other symbols, $U(\mathcal T)$ in QFT |
 | Thermodynamic phase space | $\mathcal T$, coordinates $(U, q^a, p_a)$ ([[§C1.7 Thermodynamic Phase Space and Legendre Transforms#^def-c1-7-1\|Def. §C1.7.1]]) | Same letter as time reversal; the two never meet in one section |
 | Physical constants | $\hbar$, $k_B$ explicit | |
+| Accessible set and count | $\Gamma_{\text{acc}}$, $\Omega_{\text{acc}}$; macrostate $\Gamma_M$, multiplicity $\Omega(M)$ ([[§C2.1 Microstates, Macrostates and the Microcanonical Ensemble#^def-c2-1-2\|Def. §C2.1.2]]) | level B: $\Omega$ |
+| Binary entropy function | $h(n) = -n\ln n - (1-n)\ln(1-n)$, natural logarithms ([[§C2.2 Typicality in Large Systems#^def-c2-2-1\|Def. §C2.2.1]]) | |
+| Inverse temperature | $\beta = (\partial\ln\Omega/\partial E)_{V,N} = 1/k_BT$ ([[§C2.4 Temperature and Entropy from Counting#^def-c2-4-1\|Def. §C2.4.1]]) | same at level B |
+| Energy of a microcanonical system | $E$ (Ch. 2) and $U$ (Ch. 1) for the same quantity | |

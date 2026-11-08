@@ -1,0 +1,8 @@
+% Figure for Thermal and Statistical Physics §C2.5 (stars and bars: 5 quanta and 3 separators for 4 oscillators, giving (2,0,1,2)).
+\begin{tikzpicture}[font=\small]
+  \foreach \x in {0,1,4,6,7} \fill[figB] (\x*0.7,0) circle (0.17);
+  \foreach \x in {2,3,5} \draw[figR, line width=1.6pt] (\x*0.7,-0.32) -- (\x*0.7,0.32);
+  \foreach \x/\l in {0.35/{$n_1 = 2$},1.75/{$n_2 = 0$},2.8/{$n_3 = 1$},4.55/{$n_4 = 2$}} \node[font=\scriptsize, anchor=north] at (\x,-0.45) {\l};
+  \node[font=\scriptsize, figB, anchor=west] at (5.6,0.25) {quantum $\hbar\omega$};
+  \node[font=\scriptsize, figR, anchor=west] at (5.6,-0.2) {separator};
+\end{tikzpicture}

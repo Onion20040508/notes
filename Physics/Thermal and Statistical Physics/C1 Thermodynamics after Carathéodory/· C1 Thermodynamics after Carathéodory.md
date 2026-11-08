@@ -6,10 +6,10 @@ chapter: C1
 tags: [chapter, thermal-and-statistical-physics]
 ---
 # C1 Thermodynamics after Carathéodory
-← [[· C0 The Arrow of Time]] · ↑ [[Thermal and Statistical Physics]]
+← [[· C0 The Arrow of Time]] · ↑ [[Thermal and Statistical Physics]] · [[· C2 The Fundamental Assumption]] →
 
 **Builds on:** [[· A1 Temperature and Heat|A1 Temperature and Heat]] (2), [[· A3 The First Law of Thermodynamics|A3 The First Law of Thermodynamics]] (1), [[· A4 The Second Law of Thermodynamics|A4 The Second Law of Thermodynamics]] (3), [[· B1 The Mathematical Toolkit of Thermodynamics|B1 The Mathematical Toolkit of Thermodynamics]] (4), [[· B2 The Laws of Thermodynamics, Formally|B2 The Laws of Thermodynamics, Formally]] (5), [[· B3 Thermodynamic Potentials|B3 Thermodynamic Potentials]] (2)
-**Used by:** —
+**Used by:** [[· C2 The Fundamental Assumption|C2 The Fundamental Assumption]] (7)
 
 Mao's Chapter 1. Thermodynamics rebuilt from one geometric principle, with entropy and temperature as consequences; levels A and B took the engine route.
 

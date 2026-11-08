@@ -9,7 +9,7 @@ tags: [chapter, thermal-and-statistical-physics]
 ← [[· B13★ Fermi Gases]] · ↑ [[Thermal and Statistical Physics]] · [[· C1 Thermodynamics after Carathéodory]] →
 
 **Builds on:** —
-**Used by:** —
+**Used by:** [[· C2 The Fundamental Assumption|C2 The Fundamental Assumption]] (3)
 
 The opening lecture of PHY 510: microscopic dynamics has no arrow of time, macroscopic processes do.
 
