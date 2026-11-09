@@ -192,7 +192,7 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 *(Not from lecture; figure added.)* The case $3 = 0$: the $27$ vectors of $\mathbb{F}_3^3$, coordinates $0, 1, 2$. The nine vectors with $x + y + z = 0$ form $U_2$ (blue), and the three multiples of $(1,1,1)$, which make up $U_1$ (red rings), all lie among them. So $U_1 \subseteq U_2$, $U_1 + U_2 = U_2 \neq \mathbb{F}_3^3$, and the decomposition fails.
 
 > [!remark] Remark: Why This Is “Tricky”
-> The worksheet did not say what the field is, and the answer depends on it. The lecturer's point: subrepresentations and decompositions into them are very useful, but there are subtleties, and fields in which $3 = 0$ (or $p = 0$) are part of the course. Two further observations (not from class): over $\mathbb{F}_3$, the “orthogonal complement” $U_2$ of $U_1$ contains $U_1$, so complements for a dot product need not be complements in the sense of direct sums over arbitrary fields, which is why WS 14 works over $\mathbb{R}$ ([[§61 Invariant Inner Products and Maschke over ℝ|§61]]). And $|S_3| = 6$, so Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-5|§60.5]]) guarantees a complement whenever $6 \neq 0$ in $k$. Over $\mathbb{F}_2$ its hypothesis fails, yet $3 = 1 \neq 0$ and the decomposition still holds: Maschke's condition is sufficient, not necessary.
+> The worksheet did not say what the field is, and the answer depends on it. The lecturer's point: subrepresentations and decompositions into them are very useful, but there are subtleties, and fields in which $3 = 0$ (or $p = 0$) are part of the course. Two further observations (not from class): over $\mathbb{F}_3$, the “orthogonal complement” $U_2$ of $U_1$ contains $U_1$, so complements for a dot product need not be complements in the sense of direct sums over arbitrary fields, which is why WS 14 works over $\mathbb{R}$ ([[§61 Invariant Inner Products and Maschke over ℝ|§61]]). And $|S_3| = 6$, so Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]) guarantees a complement whenever $6 \neq 0$ in $k$. Over $\mathbb{F}_2$ its hypothesis fails, yet $3 = 1 \neq 0$ and the decomposition still holds: Maschke's condition is sufficient, not necessary.
 >
 > *Source: lecture 11/2; the last two observations not from class*
 
@@ -230,7 +230,23 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 
 ^prop-59-4
 
-> [!proof]+ Proof (to be filled)
-> WS 13.6 was not reached in class on 11/2.
+> [!proof]+ Proof
+> *Idea:* $\varphi$ commutes with the action, so the action carries the kernel and the image into themselves.
+>
+> **(1)** *(The argument of Problem Set 9, Problem 9.3(3), as submitted, with $\varphi$ in place of $\pi$.)* Since $\varphi$ is linear, $\operatorname{Ker}\varphi$ is a subspace of $U$. Let $u \in \operatorname{Ker}\varphi$ and $g \in G$. Then, since $g$ acts linearly,
+>
+> $$
+> \varphi(gu) = g\varphi(u) = g0 = 0,
+> $$
+>
+> so $gu \in \operatorname{Ker}\varphi$. Hence $\operatorname{Ker}\varphi$ is $G$-stable, i.e. a subrepresentation of $U$.
+>
+> **(2)** *(Not from class; filled in.)* Since $\varphi$ is linear, $\operatorname{Im}\varphi$ is a subspace of $V$. Let $v \in \operatorname{Im}\varphi$, say $v = \varphi(u)$ with $u \in U$, and let $g \in G$. Then
+>
+> $$
+> gv = g\varphi(u) = \varphi(gu) \in \operatorname{Im}\varphi.
+> $$
+>
+> Hence $\operatorname{Im}\varphi$ is $G$-stable, i.e. a subrepresentation of $V$.
 
 ^pf-59-4

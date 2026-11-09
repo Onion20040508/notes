@@ -282,7 +282,7 @@ The diagrams of a scattering amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^
 
 ^rem-c6c-1-3
 
-> [!remark] Remark: Summary: from amplitudes to observables
+> [!remark] Remark: From amplitudes to observables (summary)
 > - $\hat S = \mathbb 1 + i\hat T$ and $\langle f|i\hat T|i\rangle = (2\pi)^4\delta^4(p_i - p_f)\,i\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]). "$\mathcal M$ is wave function overlap ${}_{\rm out}\langle\vec p_1\vec p_2\ldots|\vec k_A\vec k_B\ldots\rangle_{\rm in}$ except for removal of: trivial scattering (in = out); overall $\delta$-function that conserves 4-momentum." "Central goal of QFT: compute and analyze $\mathcal M$."
 > - Cross section: $d\sigma = \frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}|\mathcal M|^2d\Pi_n$ ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]); the denominator is the kinematics of the two initial particles, invariant under boosts along the beam ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]]).
 > - Phase space: $d\Pi_n$ ([[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]]); two bodies in the centre-of-mass frame $\int d\Omega\,\frac{|\mathbf p_1|}{16\pi^2E_{\rm cm}}$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]); all masses equal, $(d\sigma/d\Omega)_{\rm cm} = |\mathcal M|^2/(64\pi^2E_{\rm cm}^2)$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|Theorem §C6b.4.8]]).
@@ -293,7 +293,7 @@ The diagrams of a scattering amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^
 
 ^rem-c6c-1-4
 
-> [!remark] Remark: Next: Feynman rules for amplitudes
+> [!remark] Remark: Feynman rules for amplitudes (next)
 > Lecture 16 (Nov 2, PS §4.6) justifies the stripping rule and gives Feynman rules for amplitudes (as announced; in the event it gave the rules by the direct route, [[§C6c.2 Contractions with External Particles|§C6c.2]]–[[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]] (amputation [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors|§C6c.5]], the rules [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]]), and left LSZ to the second semester), first in $\phi^4$ theory, then for Yukawa theory and QED, where external lines carry spinors and polarization vectors instead of propagators (Yukawa: [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-1|§C6d.2, Theorem §C6d.2.1]]; QED: C6d, QED rules (planned)). PS start from the same definition, $\langle\mathbf p_1\mathbf p_2\cdots|S|\mathbf k_A\mathbf k_B\rangle = \lim_{T\to\infty}\langle\mathbf p_1\mathbf p_2\cdots|e^{-iH(2T)}|\mathbf k_A\mathbf k_B\rangle$ (eq. (4.87)), and relate the interacting states to free ones by the same $T \to \infty(1 - i\epsilon)$ device as for the vacuum (eq. (4.88); [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-1|Theorem §C6a.4.1]]). Lecture 16 states this as a prescription: [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]].
 >
 > *Source: the user's PHY 513 notes, Ch. 15 §15.10 (paragraph "Next.") · PS §4.6, p. 108, eqs. (4.87)–(4.88) · PHY 513 Lecture 15, transcript · [[PHY 513 Course Log]] (Lecture 16: PS §4.6)*

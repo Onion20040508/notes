@@ -123,6 +123,8 @@ This is the internal direct sum of the remark *Two Meanings of “Direct Sum”*
 
 ![[m493-60-2.svg]]
 
+*(Not from lecture; figure added.)* The two shapes side by side. Column $j$ of $\rho_W(g)$ holds the coordinates of $g$ applied to the $j$-th basis vector. If both $U$ and $V$ are subrepresentations, the $U$-columns stay in the $U$-rows and the $V$-columns in the $V$-rows (left). If only $U$ is, the $v_j$-columns may have entries anywhere: the red block $\ast$ is what a complementary subrepresentation removes, and the lower right block is $\rho_{W/U}(g)$ (the remark *The Lower Right Block*).
+
 > [!theorem] Proposition §60.4: The Lower Right Block Is the Quotient Representation
 > Let $W$, $U$ and the basis $(u_1, \ldots, u_m, v_1, \ldots, v_n)$ be as in Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-3|§60.3]].
 >
@@ -152,22 +154,272 @@ This is the internal direct sum of the remark *Two Meanings of “Direct Sum”*
 
 ^rem-60-1
 
-*(Not from lecture; figure added.)* The two shapes side by side. Column $j$ of $\rho_W(g)$ holds the coordinates of $g$ applied to the $j$-th basis vector. If both $U$ and $V$ are subrepresentations, the $U$-columns stay in the $U$-rows and the $V$-columns in the $V$-rows (left). If only $U$ is, the $v_j$-columns may have entries anywhere: the red block $\ast$ is what a complementary subrepresentation removes, and the lower right block is $\rho_{W/U}(g)$ (the remark *The Lower Right Block*).
+## Idempotents
 
-> [!theorem] Theorem §60.5: Maschke's Theorem
-> Let $G$ be a finite group and $k$ a field in which $|G| \neq 0$. Let $W$ be a finite-dimensional representation of $G$ over $k$ and $U \subseteq W$ a subrepresentation. Then there is a subrepresentation $V \subseteq W$ with $W = U \oplus V$.
+*Source: Problem Set 9, Problems 9.2 and 9.3(1) (submitted); Worksheet 15 (Mon Nov 9).*
+
+Maschke's theorem is proved by building a projection onto $U$ that commutes with $G$. The linear algebra behind it is the theory of idempotents, which Problem Set 9 and Worksheet 15 both start from.
+
+> [!definition] Definition §60.2: Idempotent
+> Let $V$ be a vector space. A linear map $\pi: V \to V$ is **idempotent** if $\pi^2 = \pi$, i.e. $\pi(\pi(v)) = \pi(v)$ for all $v \in V$.
 >
-> *Source: WS 14; lecture 11/4*
+> *Source: PS 9.2; WS 15*
 
-^thm-60-5
+^def-60-2
 
-> [!proof]+ Proof (to be filled)
-> The general case is on the problem set; it is added here after the problem set is submitted. The case $k = \mathbb{R}$ is Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|§61.6]], in [[§61 Invariant Inner Products and Maschke over ℝ|§61]].
+> [!theorem] Lemma §60.5: An Idempotent Fixes Its Image
+> If $\pi: V \to V$ is idempotent, then $\pi(w) = w$ for every $w \in \operatorname{Im}\pi$.
+>
+> *Source: PS 9.2*
+
+^lem-60-5
+
+> [!proof]+ Proof
+> *(Problem Set 9, Problem 9.2, first step, as submitted.)* Let $w \in \operatorname{Im}(\pi)$, say $w = \pi(v)$ for some $v \in V$. Then
+>
+> $$
+> \pi(w) = \pi^2(v) = \pi(v) = w.
+> $$
 
 ^pf-60-5
 
-*Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|§61.6]]
+> [!theorem] Proposition §60.6: An Idempotent Splits the Space
+> If $\pi: V \to V$ is idempotent, then $V$ is the direct sum of $\operatorname{Ker}(\pi)$ and $\operatorname{Im}(\pi)$ (Definition [[§60 Direct Sums and Maschke's Theorem#^def-60-1|§60.1]]):
+>
+> $$
+> V = \operatorname{Ker}(\pi) \oplus \operatorname{Im}(\pi), \qquad v = \big(v - \pi(v)\big) + \pi(v).
+> $$
+>
+> *Source: PS 9.2; WS 15.1*
+
+^prop-60-6
+
+> [!proof]+ Proof
+> *Idea:* $v - \pi(v)$ is killed by $\pi$, and a vector in both pieces satisfies $v = \pi(v) = 0$.
+>
+> *(Problem Set 9, Problem 9.2, as submitted; its first step is Lemma [[§60 Direct Sums and Maschke's Theorem#^lem-60-5|§60.5]].)* Since $\pi$ is linear, $\operatorname{Ker}(\pi)$ and $\operatorname{Im}(\pi)$ are subspaces of $V$. Throughout, $v$ denotes an arbitrary element of $V$, $u$ an element of $\operatorname{Ker}(\pi)$, and $w$ an element of $\operatorname{Im}(\pi)$.
+>
+> **$V = \operatorname{Ker}(\pi) + \operatorname{Im}(\pi)$.** Let $v \in V$, and set $u = v - \pi(v)$ and $w = \pi(v)$. Then $w \in \operatorname{Im}(\pi)$, and
+>
+> $$
+> \pi(u) = \pi(v) - \pi^2(v) = \pi(v) - \pi(v) = 0,
+> $$
+>
+> so $u \in \operatorname{Ker}(\pi)$. Hence $v = u + w$ with $u \in \operatorname{Ker}(\pi)$ and $w \in \operatorname{Im}(\pi)$.
+>
+> **$\operatorname{Ker}(\pi) \cap \operatorname{Im}(\pi) = \{0\}$.** Let $v \in \operatorname{Ker}(\pi) \cap \operatorname{Im}(\pi)$. Since $v \in \operatorname{Im}(\pi)$, $\pi(v) = v$ by Lemma [[§60 Direct Sums and Maschke's Theorem#^lem-60-5|§60.5]]; since $v \in \operatorname{Ker}(\pi)$, $\pi(v) = 0$. Hence $v = 0$.
+>
+> Since $V = \operatorname{Ker}(\pi) + \operatorname{Im}(\pi)$ and $\operatorname{Ker}(\pi) \cap \operatorname{Im}(\pi) = \{0\}$, by the criterion for a direct sum of two subspaces (Axler 1.46), $V = \operatorname{Ker}(\pi) \oplus \operatorname{Im}(\pi)$.
+
+^pf-60-6
+
+*Uses:* [[§60 Direct Sums and Maschke's Theorem#^lem-60-5|§60.5]]
+
+> [!theorem] Lemma §60.7: The Complementary Idempotent
+> If $\pi: V \to V$ is idempotent, then so is $\mathrm{id}_V - \pi$, and
+>
+> $$
+> \operatorname{Im}(\mathrm{id}_V - \pi) = \operatorname{Ker}(\pi), \qquad \operatorname{Ker}(\mathrm{id}_V - \pi) = \operatorname{Im}(\pi).
+> $$
+>
+> So the decomposition of Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-6|§60.6]] is $v = (\mathrm{id}_V - \pi)(v) + \pi(v)$, with the roles of the two idempotents exchanged when $\pi$ is replaced by $\mathrm{id}_V - \pi$.
+>
+> *Source: not from class*
+
+^lem-60-7
+
+> [!proof]+ Proof
+> *(Not from class; filled in.)* *Idempotent:* $(\mathrm{id}_V - \pi)^2 = \mathrm{id}_V - 2\pi + \pi^2 = \mathrm{id}_V - 2\pi + \pi = \mathrm{id}_V - \pi$.
+>
+> *Image.* For $v \in V$, $\pi\big((\mathrm{id}_V - \pi)(v)\big) = \pi(v) - \pi^2(v) = 0$, so $\operatorname{Im}(\mathrm{id}_V - \pi) \subseteq \operatorname{Ker}(\pi)$. Conversely, if $v \in \operatorname{Ker}(\pi)$, then $v = v - \pi(v) = (\mathrm{id}_V - \pi)(v) \in \operatorname{Im}(\mathrm{id}_V - \pi)$.
+>
+> *Kernel.* $(\mathrm{id}_V - \pi)(v) = 0$ means $v = \pi(v)$. If $v = \pi(v)$, then $v \in \operatorname{Im}(\pi)$. Conversely, if $v \in \operatorname{Im}(\pi)$, then $\pi(v) = v$ by Lemma [[§60 Direct Sums and Maschke's Theorem#^lem-60-5|§60.5]].
+
+^pf-60-7
+
+*Uses:* [[§60 Direct Sums and Maschke's Theorem#^lem-60-5|§60.5]]
+
+> [!example] Example §60.2: An Idempotent That Is Not an Orthogonal Projection
+> *(Not from class.)* On $\mathbb{R}^2$ let $\pi(x, y) = (x - y, 0)$. Then $\pi(\pi(x, y)) = \pi(x - y, 0) = (x - y, 0)$, so $\pi$ is idempotent, with image the $x$-axis and kernel the line $y = x$. Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-6|§60.6]] splits $(x, y) = (y, y) + (x - y, 0)$. The kernel is not perpendicular to the image, so $\pi$ is not the orthogonal projection onto the $x$-axis for the dot product ([[§61 Invariant Inner Products and Maschke over ℝ|§61]]). An idempotent is a projection onto its image *along* its kernel, and the kernel can be any complement of the image.
+
+^ex-60-2
+
+> [!theorem] Lemma §60.8: Every Subspace Is the Image of an Idempotent
+> Let $W$ be a finite-dimensional vector space and $U \subseteq W$ a subspace. Then there is an idempotent $P: W \to W$ with $\operatorname{Im}(P) = U$.
+>
+> *Source: PS 9.3(1)*
+
+^lem-60-8
+
+> [!proof]+ Proof
+> *Idea:* Extend a basis of $U$ to a basis of $W$; keep the vectors of $U$ and send the others to $0$.
+>
+> *(Problem Set 9, Problem 9.3(1), as submitted.)* Let $e_1, \ldots, e_m$ be a basis of $U$. Since every linearly independent list in $W$ extends to a basis of $W$ (Axler 2.32), we may extend it to a basis $e_1, \ldots, e_n$ of $W$. Since a linear map is determined by its values on a basis (Axler 3.4), there is a unique linear map $P: W \to W$ with
+>
+> $$
+> P(e_i) = e_i \quad (1 \leq i \leq m), \qquad P(e_i) = 0 \quad (m < i \leq n).
+> $$
+>
+> *$\operatorname{Im}(P) = U$.* Each $P(e_i)$ is either $e_i$ with $i \leq m$ or $0$, so it lies in $U$; since the $e_i$ span $W$ and $U$ is a subspace, $P(w) \in U$ for all $w \in W$, i.e. $\operatorname{Im}(P) \subseteq U$. Conversely, $P$ fixes $e_1, \ldots, e_m$, so by linearity $P(u) = u$ for all $u \in U$; hence $U \subseteq \operatorname{Im}(P)$.
+>
+> *$P$ is idempotent.* For $i \leq m$, $P^2(e_i) = P(e_i) = e_i$, and for $i > m$, $P^2(e_i) = P(0) = 0 = P(e_i)$. Thus the linear maps $P^2$ and $P$ agree on a basis of $W$, so $P^2 = P$.
+>
+> If $W$ is infinite-dimensional, the same construction applies: by Zorn's lemma, every basis of $U$ extends to a basis of $W$, and a linear map is still determined by its values on a basis.
+
+^pf-60-8
+
+Such a $P$ depends on the choice of the extra basis vectors $e_{m+1}, \ldots, e_n$, which span its kernel. When $W$ is a representation and $U$ a subrepresentation, $\operatorname{Ker}(P)$ is in general not a subrepresentation: in Example [[§60 Direct Sums and Maschke's Theorem#^ex-60-3|§60.3]] below no complement of $U$ is. Averaging over $G$ repairs this.
+
+> [!theorem] Lemma §60.9: Averaging a Linear Map over $G$
+> Let $G$ be a finite group and $k$ a field in which $|G| \neq 0$. Let $W$ and $W'$ be representations of $G$ over $k$ and $P: W \to W'$ a linear map. Then
+>
+> $$
+> \pi(w) = \frac{1}{|G|}\sum_{h \in G} h^{-1}P(hw)
+> $$
+>
+> is a homomorphism of representations $W \to W'$ (Definition [[§59 Representations and Subrepresentations#^def-59-4|§59.4]]). If $P$ is already a homomorphism of representations, then $\pi = P$.
+>
+> *Source: PS 9.3(2)–(3)*
+
+^lem-60-9
+
+> [!proof]+ Proof
+> *Idea:* Moving $g$ inside the sum re-indexes it by $h \mapsto hg$.
+>
+> *(Problem Set 9, Problem 9.3(2) and (3), as submitted. The computation uses neither that $P$ is idempotent nor that $W' = W$.)* *$\pi$ is linear.* For each $h \in G$, the map $w \mapsto h^{-1}P(hw)$ is the composition of the linear maps $w \mapsto hw$, $P$, and $v \mapsto h^{-1}v$, hence linear. Since $|G| \neq 0$ in $k$, the scalar $\frac{1}{|G|}$ exists, and $\pi$ is a scalar multiple of a finite sum of linear maps, hence linear.
+>
+> *$\pi$ is a homomorphism of representations.* Let $g \in G$ and $w \in W$. Since $g$ acts linearly on $W'$, it commutes with finite sums and with the scalar $\frac{1}{|G|}$, so, writing the summation index as $h'$,
+>
+> $$
+> g\pi(w) = \frac{1}{|G|} \sum_{h' \in G} g\big(h'^{-1} P(h'w)\big) = \frac{1}{|G|} \sum_{h' \in G} (g h'^{-1}) P(h'w),
+> $$
+>
+> using the compatibility axiom of the action. Right multiplication $h \mapsto hg$ is a bijection $G \to G$, with inverse $h' \mapsto h'g^{-1}$, so we may substitute $h' = hg$ and sum over $h \in G$. Since $g(hg)^{-1} = gg^{-1}h^{-1} = h^{-1}$ and $(hg)w = h(gw)$,
+>
+> $$
+> g\pi(w) = \frac{1}{|G|} \sum_{h \in G} \big(g(hg)^{-1}\big) P\big((hg)w\big) = \frac{1}{|G|} \sum_{h \in G} h^{-1} P\big(h(gw)\big) = \pi(gw).
+> $$
+>
+> Since $g \in G$ and $w \in W$ were arbitrary, $\pi(gw) = g\pi(w)$ for all $g \in G$ and $w \in W$.
+>
+> *If $P$ is a homomorphism.* *(Not from class; filled in.)* Then $h^{-1}P(hw) = h^{-1}hP(w) = P(w)$ for every $h$, so $\pi(w) = \frac{1}{|G|}\big(|G| \cdot 1_k\big)P(w) = P(w)$.
+
+^pf-60-9
+
+## Maschke's Theorem
+
+> [!theorem] Theorem §60.10: Maschke's Theorem
+> Let $G$ be a finite group and $k$ a field in which $|G| \neq 0$. Let $W$ be a finite-dimensional representation of $G$ over $k$ and $U \subseteq W$ a subrepresentation. Then there is a subrepresentation $V \subseteq W$ with $W = U \oplus V$.
+>
+> *Source: WS 14; lecture 11/4; proof PS 9.3*
+
+^thm-60-10
+
+> [!proof]+ Proof
+> *Idea:* Start from any idempotent $P$ with image $U$ and average it over $G$. The average $\pi$ is still an idempotent with image $U$, and it commutes with $G$, so its kernel is a complementary subrepresentation.
+>
+> *(Problem Set 9, Problem 9.3, as submitted.)* **Step 1: an idempotent with image $U$.** By Lemma [[§60 Direct Sums and Maschke's Theorem#^lem-60-8|§60.8]] (PS 9.3(1)) there is an idempotent linear map $P: W \to W$ with image $U$. It is not required to be a homomorphism of representations. Define
+>
+> $$
+> \pi(w) = \frac{1}{|G|}\sum_{h \in G} h^{-1}P(hw).
+> $$
+>
+> By Lemma [[§60 Direct Sums and Maschke's Theorem#^lem-60-9|§60.9]], $\pi$ is linear.
+>
+> **Step 2: $\pi$ is an idempotent with image $U$** (PS 9.3(2)). *$\pi(u) = u$ for $u \in U$.* Let $u \in U$ and $h \in G$. Since $U$ is a subrepresentation, $hu \in U = \operatorname{Im}(P)$. Since $P$ is idempotent, it is the identity on $\operatorname{Im}(P)$ (Lemma [[§60 Direct Sums and Maschke's Theorem#^lem-60-5|§60.5]]); hence $P(hu) = hu$. By the axioms of a group action, $h^{-1}(hu) = (h^{-1}h)u = eu = u$. Hence
+>
+> $$
+> \pi(u) = \frac{1}{|G|} \sum_{h \in G} h^{-1}P(hu) = \frac{1}{|G|} \sum_{h \in G} u = \frac{1}{|G|}\big(|G| \cdot 1_k\big)\, u = u,
+> $$
+>
+> where the last step uses $|G| \cdot 1_k \neq 0$.
+>
+> *$\operatorname{Im}(\pi) = U$.* Let $w \in W$ and $h \in G$. Then $P(hw) \in \operatorname{Im}(P) = U$, and since $U$ is a subrepresentation, $h^{-1}P(hw) \in U$. Since $U$ is a subspace, the scalar multiple $\pi(w)$ of the sum of these elements lies in $U$; hence $\operatorname{Im}(\pi) \subseteq U$. Conversely, every $u \in U$ satisfies $u = \pi(u) \in \operatorname{Im}(\pi)$, so $U \subseteq \operatorname{Im}(\pi)$.
+>
+> *$\pi$ is idempotent.* For $w \in W$, $\pi(w) \in \operatorname{Im}(\pi) = U$, so $\pi^2(w) = \pi(\pi(w)) = \pi(w)$ since $\pi$ fixes every element of $U$. Hence $\pi^2 = \pi$.
+>
+> **Step 3: the complement** (PS 9.3(3)). By Lemma [[§60 Direct Sums and Maschke's Theorem#^lem-60-9|§60.9]] with $W' = W$, $\pi(gw) = g\pi(w)$ for all $g \in G$ and $w \in W$: $\pi$ is a homomorphism of representations. So $\operatorname{Ker}(\pi)$ is a subrepresentation of $W$ (Kernels and Images Are Subrepresentations, Proposition [[§59 Representations and Subrepresentations#^prop-59-4|§59.4]](1), whose proof is the submitted argument).
+>
+> Finally, by Step 2 and Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-6|§60.6]] (PS 9.2), $W = \operatorname{Ker}(\pi) \oplus \operatorname{Im}(\pi) = \operatorname{Ker}(\pi) \oplus U$, so $V = \operatorname{Ker}(\pi)$ is a subrepresentation of $W$ with $W = U \oplus V$.
+
+^pf-60-10
+
+*Uses:* [[§60 Direct Sums and Maschke's Theorem#^lem-60-8|§60.8]], [[§60 Direct Sums and Maschke's Theorem#^lem-60-9|§60.9]], [[§60 Direct Sums and Maschke's Theorem#^lem-60-5|§60.5]], [[§59 Representations and Subrepresentations#^prop-59-4|§59.4]], [[§60 Direct Sums and Maschke's Theorem#^prop-60-6|§60.6]]
+
+For $k = \mathbb{R}$ there is a second, geometric proof, by averaging an inner product instead of an idempotent: Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|§61.6]], in [[§61 Invariant Inner Products and Maschke over ℝ|§61]].
 
 “$|G| \neq 0$ in $k$” means that $1 + 1 + \cdots + 1$ ($|G|$ terms) is not $0$ in $k$, that is, the characteristic of $k$ does not divide $|G|$; it holds for every finite group when $k = \mathbb{Q}$, $\mathbb{R}$ or $\mathbb{C}$. *(Not from class.)* By Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-2|§60.2]], the theorem says that every subrepresentation can be split off, so that all the matrices $\rho_W(g)$ become block diagonal at once. For $S_3$ acting on $k\{1,2,3\}$ the condition means $6 \neq 0$ in $k$; compare Proposition [[§59 Representations and Subrepresentations#^prop-59-3|§59.3]], where the decomposition $U_1 \oplus U_2$ fails when $3 = 0$, and the remark *Why This Is “Tricky”* in [[§59 Representations and Subrepresentations|§59]].
 
 **Transcription note (board 11/4).** The board states the theorem with “let $V$ be a finite dim rep of $G$ over $k$, let $U \subseteq V$ be a subrep”; the representation is $W$, as in the conclusion “$\exists$ subrep $V \subseteq W$ s.t. $W = U \oplus V$” and on the worksheet.
+
+## When Maschke's Theorem Fails
+
+*Source: Problem Set 9, Problem 9.4 (submitted).*
+
+Neither hypothesis of Maschke's theorem can be dropped: one shear matrix gives a counterexample both for an infinite group and for a finite group whose order is $0$ in $k$.
+
+> [!example] Example §60.3: Maschke Fails for the Infinite Group $\mathbb{Z}$
+> Let $G = \mathbb{Z}$ and define $\rho: \mathbb{Z} \to GL_2(\mathbb{R})$ by $\rho(x) = \left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)$. This is a homomorphism, since $\left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)\left(\begin{smallmatrix} 1 & y \\ 0 & 1 \end{smallmatrix}\right) = \left(\begin{smallmatrix} 1 & x + y \\ 0 & 1 \end{smallmatrix}\right)$. With $e_1 = (1, 0)$, the line $\mathbb{R}e_1$ is a subrepresentation of $\mathbb{R}^2$, but there is no subrepresentation $V$ with $\mathbb{R}^2 = \mathbb{R}e_1 \oplus V$.
+>
+> *Source: PS 9.4(1)*
+
+^ex-60-3
+
+> [!proof]+ Proof
+> *Idea:* A complement is a line $\mathbb{R}(a, 1)$, and $\rho(1)$ slides $(a, 1)$ to $(a + 1, 1)$, off that line.
+>
+> *(Problem Set 9, Problem 9.4(1), as submitted.)* *$\mathbb{R}e_1$ is a subrepresentation.* $\mathbb{R}e_1$ is a subspace of $\mathbb{R}^2$, and for $x \in \mathbb{Z}$ and $a \in \mathbb{R}$,
+>
+> $$
+> \rho(x)\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} 1 & x \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} a \\ 0 \end{pmatrix} \in \mathbb{R}e_1.
+> $$
+>
+> *No complementary subrepresentation.* Suppose $V \subseteq \mathbb{R}^2$ is a subspace with $\mathbb{R}^2 = \mathbb{R}e_1 \oplus V$. Then $\dim V = 2 - 1 = 1$, so $V = \mathbb{R}v$ for some $v = (b, c) \neq 0$. Since $\mathbb{R}e_1 \cap V = \{0\}$, $v \notin \mathbb{R}e_1$, so $c \neq 0$, and replacing $v$ by $c^{-1}v$ we may take $v = (a, 1)$ with $a = b/c$. Every element of $V$ has the form $\lambda v = (\lambda a, \lambda)$, so the only element of $V$ with second coordinate $1$ is $v$. Now
+>
+> $$
+> \rho(1)\, v = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a \\ 1 \end{pmatrix} = \begin{pmatrix} a + 1 \\ 1 \end{pmatrix} \neq v,
+> $$
+>
+> so $\rho(1)v \notin V$. Hence $V$ is not a subrepresentation, and no subrepresentation $V$ satisfies $\mathbb{R}^2 = \mathbb{R}e_1 \oplus V$.
+
+^pf-ex-60-3
+
+> [!example] Example §60.4: Maschke Fails When $|G| = 0$ in $k$
+> Let $p$ be prime, $G = \mathbb{Z}/p\mathbb{Z}$ and $\mathbb{F} = \mathbb{Z}/p\mathbb{Z}$, and define $\rho: G \to GL_2(\mathbb{F})$ by the same matrices $\rho(x) = \left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)$, now with $x \in \mathbb{F}$; the product rule above shows again that $\rho$ is a homomorphism. Then $\mathbb{F}e_1$ is a subrepresentation of $\mathbb{F}^2$, but there is no subrepresentation $V$ with $\mathbb{F}^2 = \mathbb{F}e_1 \oplus V$. Here $G$ is finite, but $|G| = p = 0$ in $\mathbb{F}$.
+>
+> *Source: PS 9.4(2)*
+
+^ex-60-4
+
+> [!proof]+ Proof
+> *(Problem Set 9, Problem 9.4(2), as submitted.)* *$\mathbb{F}e_1$ is a subrepresentation.* $\mathbb{F}e_1$ is a subspace of $\mathbb{F}^2$, and for $x \in \mathbb{Z}/p\mathbb{Z}$ and $a \in \mathbb{F}$,
+>
+> $$
+> \rho(x)\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} 1 & x \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} a \\ 0 \end{pmatrix} \in \mathbb{F}e_1.
+> $$
+>
+> *No complementary subrepresentation.* Suppose $V \subseteq \mathbb{F}^2$ is a subspace with $\mathbb{F}^2 = \mathbb{F}e_1 \oplus V$. Then $\dim V = 1$, so $V = \mathbb{F}v$ for some $v = (b, c) \neq 0$. Since $\mathbb{F}e_1 \cap V = \{0\}$, $c \neq 0$; since $\mathbb{F}$ is a field, $c$ is invertible, and replacing $v$ by $c^{-1}v$ we may take $v = (a, 1)$. As before, the only element of $V$ with second coordinate $1$ is $v$. Since $1 \neq 0$ in $\mathbb{Z}/p\mathbb{Z}$,
+>
+> $$
+> \rho(1)\, v = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a \\ 1 \end{pmatrix} = \begin{pmatrix} a + 1 \\ 1 \end{pmatrix} \neq v,
+> $$
+>
+> so $\rho(1)v \notin V$. Hence no subrepresentation $V$ satisfies $\mathbb{F}^2 = \mathbb{F}e_1 \oplus V$.
+
+^pf-ex-60-4
+
+> [!proof]+ Second proof of both examples (block diagonal form)
+> *(Not from class.)* Let $k$ be $\mathbb{R}$ or $\mathbb{F}$, and suppose $k^2 = ke_1 \oplus V$ with $V$ a subrepresentation, say $V = kv$. By Bases of a Direct Sum (Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-1|§60.1]]), $(e_1, v)$ is a basis of $k^2$, and by Direct Sums Give Block Diagonal Matrices (Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-2|§60.2]]) the matrix of $\rho(1)$ in this basis is diagonal: $\rho(1)e_1 = e_1$ and $\rho(1)v = cv$ for some $c \in k$. The trace does not depend on the basis (the remark *Checking Answers in Different Bases* in [[§59 Representations and Subrepresentations|§59]]), and in the standard basis $\operatorname{Tr}\rho(1) = 1 + 1$. So $1 + c = 1 + 1$, and $c = 1$. Then $\rho(1)$ fixes both basis vectors, so $\rho(1) = I$. But $\rho(1) = \left(\begin{smallmatrix} 1 & 1 \\ 0 & 1 \end{smallmatrix}\right) \neq I$, since $1 \neq 0$ in $k$. In other words, a complement would make the shear $\rho(1)$ diagonalizable, and a diagonalizable matrix whose eigenvalues are all $1$ is $I$.
+
+^pf-ex-60-4-2
+
+*Uses:* [[§60 Direct Sums and Maschke's Theorem#^prop-60-1|§60.1]], [[§60 Direct Sums and Maschke's Theorem#^prop-60-2|§60.2]]
+
+![[m493-60-6.svg]]
+
+*(Not from lecture; figure added.)* The shear $\rho(1)$ of Examples [[§60 Direct Sums and Maschke's Theorem#^ex-60-3|§60.3]] and [[§60 Direct Sums and Maschke's Theorem#^ex-60-4|§60.4]]. A line through $0$ other than the $x$-axis meets the line $y = 1$ in one point $v = (a, 1)$, and $\rho(1)$ slides that point to $(a + 1, 1)$, which lies on a different line (left: $v = (-1, 1)$, $\rho(1)v = (0, 1)$, $\rho(1)^2v = (1, 1)$). So the red $x$-axis $\mathbb{R}e_1$ is the only line that $\rho(1)$ maps to itself, and no line can serve as a complement. Over $\mathbb{F}_3$ (right) the plane has nine points and four lines through $0$. The red points form $\mathbb{F}e_1$, and the row $y = 1$ contains one point of each other line. $\rho(1)$ slides that row by $e_1$, cyclically mod $3$, so it permutes the lines $L_0 \to L_1 \to L_2 \to L_0$ and fixes none of them.
+
+> [!remark] Remark: Where Each Hypothesis Is Used
+> *(Not from class.)* In the proof of Maschke's theorem, $G$ finite makes $\sum_{h \in G}$ a finite sum, and $|G| \neq 0$ in $k$ allows the division by $|G|$ that gives $\pi(u) = u$ in Step 2. For $G = \mathbb{Z}$ there is no finite average to take. For $G = \mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$ the sum $\sum_h h^{-1}P(hu) = p \cdot u$ is $0$ for every $u \in U$. In both cases the examples show that no other construction can help either.
+
+^rem-60-2

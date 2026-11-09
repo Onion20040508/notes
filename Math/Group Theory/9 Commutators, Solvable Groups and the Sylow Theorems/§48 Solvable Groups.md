@@ -202,3 +202,108 @@ tags: [group-theory, math493]
 > *Source: lecture 10/9*
 
 ^ex-48-1
+
+> [!theorem] Theorem §48.7: Extensions of Solvable Groups Are Solvable
+> Let $N \trianglelefteq G$, and suppose that $N$ and $G/N$ are solvable, with chains
+>
+> $$
+> \{e\} = N_0 \trianglelefteq N_1 \trianglelefteq \cdots \trianglelefteq N_a = N, \qquad \{e\} = H_0 \trianglelefteq H_1 \trianglelefteq \cdots \trianglelefteq H_b = G/N
+> $$
+>
+> whose quotients $N_i/N_{i-1}$ and $H_j/H_{j-1}$ are abelian. Let $\pi: G \to G/N$ be the projection and $K_j = \pi^{-1}(H_j)$. Then
+>
+> $$
+> \{e\} = N_0 \trianglelefteq \cdots \trianglelefteq N_a = N = K_0 \trianglelefteq K_1 \trianglelefteq \cdots \trianglelefteq K_b = G
+> $$
+>
+> is a chain with abelian quotients, and $K_j/K_{j-1} \cong H_j/H_{j-1}$. In particular $G$ is solvable.
+>
+> *Source: PS 9.1*
+
+^thm-48-7
+
+> [!proof]+ Proof
+> *Idea:* Pull the chain of $G/N$ back to $G$. It starts at $N$, where the chain of $N$ can be attached, and by the Third Isomorphism Theorem pulling back does not change the quotients.
+>
+> *(Problem Set 9, Problem 9.1, as submitted; $\{1\}$ is written $\{e\}$.)* For $j = 0, \ldots, b$ let $K_j = \pi^{-1}(H_j)$. By the proposition on preimages of subgroups of $G/N$ (Proposition [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]]), each $K_j$ is a subgroup of $G$ containing $N$. Since $\pi(g) = gN = N$ if and only if $g \in N$, we have $K_0 = \pi^{-1}(\{e\}) = N$, and $K_b = \pi^{-1}(G/N) = G$. Since $H_{j-1} \subseteq H_j$, also $K_{j-1} \subseteq K_j$.
+>
+> **$K_{j-1} \trianglelefteq K_j$.** Fix $j \in \{1, \ldots, b\}$. Since $N \trianglelefteq G$ and $N \subseteq K_j$, $N \trianglelefteq K_j$. Since $\pi$ is surjective,
+>
+> $$
+> K_j/N = \{kN : k \in K_j\} = \pi(K_j) = H_j,
+> $$
+>
+> so the restriction $\pi|_{K_j}: K_j \to H_j$ is the quotient map $K_j \to K_j/N$. Since $H_{j-1} \trianglelefteq H_j$, the correspondence theorem for $N \trianglelefteq K_j$ (Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]]) shows that
+>
+> $$
+> (\pi|_{K_j})^{-1}(H_{j-1}) = \pi^{-1}(H_{j-1}) \cap K_j = K_{j-1}
+> $$
+>
+> is normal in $K_j$.
+>
+> **The quotients $K_j/K_{j-1}$ are abelian.** As above, $K_{j-1}/N = \pi(K_{j-1}) = H_{j-1}$. By the third isomorphism theorem (Theorem [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]], in the group $K_j$),
+>
+> $$
+> K_j/K_{j-1} \cong (K_j/N)\big/(K_{j-1}/N) = H_j/H_{j-1},
+> $$
+>
+> which is abelian.
+>
+> **The chain for $G$.** Concatenating the chain of $N$ with the chain $\{K_j\}$ at $N_a = N = K_0$ gives
+>
+> $$
+> \{e\} = N_0 \trianglelefteq N_1 \trianglelefteq \cdots \trianglelefteq N_a = N = K_0 \trianglelefteq K_1 \trianglelefteq \cdots \trianglelefteq K_b = G.
+> $$
+>
+> Its successive quotients are the $N_i/N_{i-1}$, abelian by hypothesis, and the $K_j/K_{j-1} \cong H_j/H_{j-1}$, abelian by the above. Setting $G_k = N_k$ for $0 \leq k \leq a$ and $G_{a+j} = K_j$ for $0 \leq j \leq b$, we obtain a chain $\{e\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_{a+b} = G$ with abelian quotients, so $G$ is solvable.
+
+^pf-48-7
+
+*Uses:* [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]]
+
+> [!theorem] Corollary §48.8: Solvability Is Decided by $N$ and $G/N$
+> Let $N \trianglelefteq G$. Then $G$ is solvable if and only if $N$ and $G/N$ are solvable.
+>
+> *Source: not from class; PS 9.1 with WS 9.2–9.3*
+
+^cor-48-8
+
+> [!proof]+ Proof
+> *(Not from class; filled in.)* If $G$ is solvable, then $N$ is solvable as a subgroup of $G$ (Subgroups of Solvable Groups Are Solvable, Proposition [[§48 Solvable Groups#^prop-48-3|§48.3]]), and $G/N$ is solvable as the image of $G$ under the surjective projection $G \to G/N$ (Quotients of Solvable Groups Are Solvable, Proposition [[§48 Solvable Groups#^prop-48-4|§48.4]]). Conversely, if $N$ and $G/N$ are solvable, then $G$ is solvable by Theorem [[§48 Solvable Groups#^thm-48-7|§48.7]].
+
+^pf-48-8
+
+*Uses:* [[§48 Solvable Groups#^prop-48-3|§48.3]], [[§48 Solvable Groups#^prop-48-4|§48.4]], [[§48 Solvable Groups#^thm-48-7|§48.7]]
+
+> [!example] Example §48.2: $S_4$ from $K$ and $S_3$
+> *(Not from class.)* Theorem [[§48 Solvable Groups#^thm-48-7|§48.7]] rebuilds the chain of $S_4$ from two smaller pieces. The Pair-Partition Homomorphism $\alpha: S_4 \to S_3$ (Proposition [[§43 Simple Groups#^prop-43-10|§43.10]]) is surjective with kernel $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$, so $S_4/K \cong S_3$ by the First Isomorphism Theorem (Theorem [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]]). $K$ is abelian, hence solvable via $\{e\} \trianglelefteq K$ (Proposition [[§48 Solvable Groups#^prop-48-1|§48.1]]), and $S_3$ is solvable via $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ (Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]]). So $S_4$ is solvable. The chain the theorem produces consists of $\{e\} \trianglelefteq K$ followed by the preimages of $\{e\}$, $A_3$ and $S_3$ under $\alpha$. These are $K$, a subgroup $\alpha^{-1}(A_3)$ of index $[S_3 : A_3] = 2$ in $S_4$ (Indices Along the Correspondence, Corollary [[§42 The Correspondence and Third Isomorphism Theorems#^cor-42-5|§42.5]]), and $S_4$. A subgroup of index $2$ in $S_4$ is $A_4$ (The Subgroup of Index $2$ in $S_m$, Lemma [[§56 Simple Groups of Small Order#^lem-56-18|§56.18]]), so the chain is
+>
+> $$
+> \{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4,
+> $$
+>
+> the chain of Proposition [[§48 Solvable Groups#^prop-48-2|§48.2]], with quotients $K$, $A_4/K \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}$ and $S_4/A_4 \cong S_3/A_3 \cong \mathbb{Z}/2\mathbb{Z}$.
+
+^ex-48-2
+
+> [!theorem] Corollary §48.9: $p$-Groups Are Solvable
+> Let $p$ be prime and $|G| = p^k$ with $k \geq 0$. Then $G$ is solvable.
+>
+> *Source: not from class*
+
+^cor-48-9
+
+> [!proof]+ Proof
+> *Idea:* The center is a nontrivial abelian normal subgroup, and $G/Z(G)$ is a smaller $p$-group.
+>
+> *(Not from class; filled in.)* Induction on $k$. If $k = 0$, then $G = \{e\}$ is abelian, hence solvable (Proposition [[§48 Solvable Groups#^prop-48-1|§48.1]]). Let $k \geq 1$, and assume that every group of order $p^j$ with $j < k$ is solvable. The center $Z(G)$ (Definition [[§35 The Center#^def-35-2|§35.2]]) is a subgroup (Proposition [[§35 The Center#^prop-35-2|§35.2]]). It is normal, since $gzg^{-1} = zgg^{-1} = z$ for $z \in Z(G)$ and $g \in G$, and it is abelian, since its elements commute with every element of $G$. By Groups of Prime-Power Order Have Nontrivial Center (Theorem [[§35 The Center#^thm-35-3|§35.3]]), $Z(G) \neq \{e\}$. By Lagrange's theorem (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]), $|Z(G)|$ divides $p^k$, so $|Z(G)| = p^i$ with $1 \leq i \leq k$, and
+>
+> $$
+> |G/Z(G)| = \frac{|G|}{|Z(G)|} = p^{k-i}, \qquad k - i < k.
+> $$
+>
+> So $G/Z(G)$ is solvable by the induction hypothesis, and $Z(G)$ is solvable since it is abelian (Proposition [[§48 Solvable Groups#^prop-48-1|§48.1]]). By Theorem [[§48 Solvable Groups#^thm-48-7|§48.7]], $G$ is solvable.
+
+^pf-48-9
+
+*Uses:* [[§48 Solvable Groups#^prop-48-1|§48.1]], [[§35 The Center#^def-35-2|Def. §35.2]], [[§35 The Center#^prop-35-2|§35.2]], [[§35 The Center#^thm-35-3|§35.3]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§48 Solvable Groups#^thm-48-7|§48.7]]

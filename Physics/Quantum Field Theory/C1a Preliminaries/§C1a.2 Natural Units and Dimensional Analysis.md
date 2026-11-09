@@ -215,7 +215,7 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 >
 > **Step 3** (restore the length). Target type: length, built from an energy: [[§C1a.2 Natural Units and Dimensional Analysis#^thm-c1a-2-1|Theorem §C1a.2.1]] with $d = -1$ gives the reduced wavelength $\hbar c/E_\gamma \simeq 197\ \text{MeV fm}/3.6\ \text{MeV} \simeq 55$ fm, and the wavelength $\lambda = 2\pi\hbar c/E_\gamma \simeq 3.4\times10^2$ fm.
 >
-> Whether one quotes $\lambda$ or the reduced $\hbar c/E_\gamma$ is a factor $2\pi$ of convention; "tens to hundreds of fermi", two orders of magnitude larger than a nucleon, is the physics.
+> Whether one quotes $\lambda$ or the reduced $\hbar c/E_\gamma$ is a factor $2\pi$ of convention; "of order a hundred fermi" is the physics, some two orders of magnitude larger than a nucleon.
 >
 > *Source: PHY 513, Problem Set 1, Problem 4(a)–(d), with the course solution · the user's PHY 513 notes, Ch. 2 §2.4 (Derivation "Restoring units: the wavelength of an annihilation photon")*
 

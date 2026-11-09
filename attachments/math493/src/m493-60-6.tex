@@ -1,0 +1,54 @@
+% Figure from MATH 493 notes, section 60. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth]
+\begin{scope}
+\draw[->, black!55, thin] (-1.9,0) -- (2.2,0) node[right, font=\scriptsize] {$x$};
+\draw[->, black!55, thin] (0,-1.3) -- (0,1.75) node[above, font=\scriptsize] {$y$};
+\draw[black!40, densely dotted] (-1.9,1) -- (2.15,1) node[right, font=\scriptsize, black!60] {$y = 1$};
+\draw[red!70!black, line width=1.6pt] (-1.8,0) -- (2.0,0);
+\node[red!70!black, font=\scriptsize, anchor=north] at (1.5,-0.05) {$\mathbb{R} e_1$};
+\draw[black!55, thick, dashed] (0.884,-0.884) -- (-1.131,1.131);
+\draw[black!75, thick] (-0.000,-1.250) -- (0.000,1.600);
+\draw[blue!70!black, thick] (-0.884,-0.884) -- (1.131,1.131);
+\draw[->, orange!85!black, thick, shorten <=3pt, shorten >=3pt] (-1.0,1) to[bend left=35] (0.0,1);
+\draw[->, orange!85!black, thick, shorten <=3pt, shorten >=3pt] (0.0,1) to[bend left=35] (1.0,1);
+\fill[black!55] (-1.0,1) circle (1.6pt);
+\fill[black!75] (0.0,1) circle (1.6pt);
+\fill[blue!70!black] (1.0,1) circle (1.6pt);
+\node[font=\scriptsize, black!55, anchor=north east] at (-1.02,0.98) {$v$};
+\node[font=\scriptsize, black!75, anchor=north west] at (0.03,0.97) {$\rho(1)v$};
+\node[font=\scriptsize, blue!70!black, anchor=north west] at (1.05,0.97) {$\rho(1)^2 v$};
+\node[font=\scriptsize, orange!85!black] at (-0.5,1.5) {$+e_1$};
+\node[font=\scriptsize, align=center] at (0.1,-1.75) {over $\mathbb{R}$: $\rho(1)(x, y) = (x + y, y)$ slides\\the line $y = 1$ by $e_1$, so each line\\$\mathbb{R}v \neq \mathbb{R}e_1$ is moved};
+\end{scope}
+\begin{scope}[xshift=4.6cm, yshift=-0.9cm]
+\draw[black!22] (0.00,0.00) circle (5pt);
+\draw[black!22] (0.00,0.90) circle (5pt);
+\draw[black!22] (0.00,1.80) circle (5pt);
+\draw[black!22] (0.90,0.00) circle (5pt);
+\draw[black!22] (0.90,0.90) circle (5pt);
+\draw[black!22] (0.90,1.80) circle (5pt);
+\draw[black!22] (1.80,0.00) circle (5pt);
+\draw[black!22] (1.80,0.90) circle (5pt);
+\draw[black!22] (1.80,1.80) circle (5pt);
+\fill[blue!70!black] (0.00,0.90) circle (3.2pt);
+\fill[blue!70!black] (0.00,1.80) circle (3.2pt);
+\fill[orange!85!black] (0.90,0.90) circle (3.2pt);
+\fill[orange!85!black] (1.80,1.80) circle (3.2pt);
+\fill[green!50!black] (1.80,0.90) circle (3.2pt);
+\fill[green!50!black] (0.90,1.80) circle (3.2pt);
+\fill[red!70!black] (0.90,0) circle (3.2pt);
+\fill[red!70!black] (1.80,0) circle (3.2pt);
+\fill (0,0) circle (3.2pt);
+\node[font=\scriptsize] at (0.00,-0.42) {$0$};
+\node[font=\scriptsize] at (-0.42,0.00) {$0$};
+\node[font=\scriptsize] at (0.90,-0.42) {$1$};
+\node[font=\scriptsize] at (-0.42,0.90) {$1$};
+\node[font=\scriptsize] at (1.80,-0.42) {$2$};
+\node[font=\scriptsize] at (-0.42,1.80) {$2$};
+\draw[->, orange!85!black, thick, shorten <=5pt, shorten >=5pt] (0,0.90) -- (0.90,0.90);
+\draw[->, orange!85!black, thick, shorten <=5pt, shorten >=5pt] (0.90,0.90) -- (1.80,0.90);
+\draw[->, orange!85!black, thick, shorten <=5pt, shorten >=5pt] (1.80,0.90) .. controls (2.35,1.65) and (-0.55,1.65) .. (0,0.90);
+\node[font=\scriptsize] at (1.95,-1.25) {over $\mathbb{F} = \mathbb{F}_3$: row $y = 1$ slides by $e_1$ (mod $3$)};
+\end{scope}
+\node[font=\scriptsize, align=left, anchor=west] at (6.95,0.45) {\textcolor{red!70!black}{$\bullet$} \ $\mathbb{F} e_1$ (fixed)\\\textcolor{blue!70!black}{$\bullet$} \ $L_0 = \mathbb{F}(0,1)$\\\textcolor{orange!85!black}{$\bullet$} \ $L_1 = \mathbb{F}(1,1)$\\\textcolor{green!50!black}{$\bullet$} \ $L_2 = \mathbb{F}(2,1)$\\\rule{0pt}{10pt}$\rho(1): L_0 \to L_1 \to L_2 \to L_0$};
+\end{tikzpicture}

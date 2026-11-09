@@ -609,7 +609,7 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 
 ^rem-c6a-11-2
 
-> [!remark] Remark: Summary: from the master formula to Feynman diagrams
+> [!remark] Remark: From the master formula to Feynman diagrams (summary)
 > - Wick's theorem: $T\{\hat\phi_1\cdots\hat\phi_n\} = \,:\!\hat\phi_1\cdots\hat\phi_n\!: +$ all contractions, a contraction being $D_F$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]); in the vacuum, $\sum_{\text{pairings}}\prod D_F$ ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]).
 > - Each pairing is a diagram; the pairings of one diagram are an orbit, and the coefficient is $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]).
 > - In $\phi^4$ theory the interacting correlator is the sum of all diagrams attached to the external points ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]), with a line $D_F$ or $\frac{i}{p^2 - m^2 + i\varepsilon}$; a vertex $-i\lambda\int d^4z$, or $-i\lambda$ with momentum conservation; integration over undetermined momenta; a factor $1/S$ ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]], [[§C6a.10 Feynman Rules in Momentum Space#^thm-c6a-10-2|Theorem §C6a.10.2]]).
@@ -626,8 +626,8 @@ A delta function at zero momentum in a finite box is the volume, $(2\pi)^3\delta
 
 ^rem-c6a-11-4
 
-> [!remark] Remark: Preview: from correlation functions to cross sections
-> Slide 26: the next lecture relates correlation functions to more conventional observables (cross sections, decay widths); then come the Feynman rules for physical amplitudes in $\phi^4$ theory, and after that in QED (PS §4.5–§4.8; [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]], [[· C6d Feynman Rules for Fermions|C6d]]; QFT C10, planned). The answer is built from the same pieces as here: products of the same propagators and vertices. Lecture 15 (Oct 28) did the first step: the $S$-matrix and the amplitude $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude|§C6b.1]]), cross sections ([[§C6b.8 Wave Packets and the Cross Section|§C6b.8]], [[§C6b.9 Evaluating the Cross Section|§C6b.9]], [[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]]), decay rates ([[§C6b.5 Decay Widths|§C6b.5]]), and the rule that amplitudes are these correlation functions with the external propagators stripped off ([[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]]).
+> [!remark] Remark: From correlation functions to cross sections (preview)
+> Slide 26: the next lecture relates correlation functions to more conventional observables (cross sections, decay widths); then come the Feynman rules for physical amplitudes in $\phi^4$ theory, and after that in QED (PS §4.5–§4.8; [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]], [[· C6d Feynman Rules for Fermions|C6d]]). The answer is built from the same pieces as here: products of the same propagators and vertices. Lecture 15 (Oct 28) did the first step: the $S$-matrix and the amplitude $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude|§C6b.1]]), cross sections ([[§C6b.8 Wave Packets and the Cross Section|§C6b.8]], [[§C6b.9 Evaluating the Cross Section|§C6b.9]], [[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]]), decay rates ([[§C6b.5 Decay Widths|§C6b.5]]), and the rule that amplitudes are these correlation functions with the external propagators stripped off ([[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]]).
 >
 > *Source: PHY 513 Lecture 14, slide 26, and transcript*
 

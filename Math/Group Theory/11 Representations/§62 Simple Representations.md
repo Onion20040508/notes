@@ -5,7 +5,7 @@ chapter: 11
 section: 62
 tags: [group-theory, math493]
 ---
-← [[§61 Invariant Inner Products and Maschke over ℝ]] · ↑ [[· 11 Representations]]
+← [[§61 Invariant Inner Products and Maschke over ℝ]] · ↑ [[· 11 Representations]] · [[§63 Invariant Vectors and Characters]] →
 
 *Source: Lecture (Fri Nov 6).*
 
@@ -26,7 +26,7 @@ tags: [group-theory, math493]
 ^def-62-2
 
 > [!theorem] Proposition §62.1: Simple Equals Irreducible
-> Let $G$ be finite and $V$ a finite-dimensional real representation of $G$ (more generally, a representation over a field in which $|G| \neq 0$, once Maschke's theorem, Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-5|§60.5]], is proved in general). Then $V$ is simple if and only if $V$ is irreducible.
+> Let $G$ be finite and $V$ a finite-dimensional real representation of $G$ (more generally, a finite-dimensional representation over a field in which $|G| \neq 0$, by Maschke's theorem, Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]). Then $V$ is simple if and only if $V$ is irreducible.
 >
 > *Source: board 11/6*
 
@@ -41,11 +41,11 @@ tags: [group-theory, math493]
 >
 > *Irreducible $\Rightarrow$ simple.* Suppose $V$ is not simple. Since $V \neq \{0\}$, it has a subrepresentation $U$ with $\{0\} \subsetneq U \subsetneq V$. By Maschke's theorem over $\mathbb{R}$ (Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|§61.6]]) there is a subrepresentation $U'$ with $V = U \oplus U'$, and $U' \neq \{0\}$, since otherwise $V = U + U' = U$. So $V$ is the direct sum of two nonzero subrepresentations, and $V$ is not irreducible.
 >
-> Only the second direction uses Maschke's theorem.
+> Only the second direction uses Maschke's theorem. Over a field in which $|G| \neq 0$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]) replaces Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|§61.6]] there, and the argument is otherwise unchanged.
 
 ^pf-62-1
 
-*Uses:* [[§62 Simple Representations#^def-62-1|Def. §62.1]], [[§62 Simple Representations#^def-62-2|Def. §62.2]], [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|§61.6]]
+*Uses:* [[§62 Simple Representations#^def-62-1|Def. §62.1]], [[§62 Simple Representations#^def-62-2|Def. §62.2]], [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|§61.6]], [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]
 
 > [!definition] Definition §62.3: Direct Sum of Several Subspaces
 > Let $V$ be a vector space and $V_1, \ldots, V_r$ subspaces of $V$. $V$ is the **direct sum** of $V_1, \ldots, V_r$, written $V = V_1 \oplus \cdots \oplus V_r$, if every $v \in V$ can be written in exactly one way as
@@ -97,6 +97,20 @@ For $r = 2$ this is Definition [[§60 Direct Sums and Maschke's Theorem#^def-60-
 
 *(Not from lecture; figure added.)* The proof of Corollary [[§62 Simple Representations#^cor-62-2|§62.2]] as a tree, for a representation of dimension $5$. A piece that is not simple is split by Maschke's theorem into two subrepresentations of smaller dimension; the leaves are simple. In a basis made of bases of the leaves, every $\rho(g)$ is block diagonal, with one block per simple summand (Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-2|§60.2]], applied at each split).
 
+> [!theorem] Corollary §62.3: Every Representation Is a Direct Sum of Simples, over Any Field with $|G| \neq 0$
+> Let $G$ be finite, $k$ a field in which $|G| \neq 0$, and $V$ a finite-dimensional representation of $G$ over $k$. Then $V = V_1 \oplus \cdots \oplus V_r$ (Definition [[§62 Simple Representations#^def-62-3|§62.3]]) for simple subrepresentations $V_1, \ldots, V_r$ of $V$, with $r = 0$ when $V = \{0\}$.
+>
+> *Source: not from class; available since PS 9.3 proves Maschke's theorem*
+
+^cor-62-3
+
+> [!proof]+ Proof
+> *(Not from class.)* The proof of Corollary [[§62 Simple Representations#^cor-62-2|§62.2]] applies word for word after one renaming: “real representation” becomes “representation over $k$”, and Maschke's theorem over $\mathbb{R}$ (Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|§61.6]]) becomes Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]), proved in [[§60 Direct Sums and Maschke's Theorem|§60]] for every field in which $|G| \neq 0$. That citation is the only place where the field enters. Every other step uses only dimensions and direct sums, which work over any field.
+
+^pf-62-3
+
+*Uses:* [[§62 Simple Representations#^cor-62-2|§62.2]], [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|§61.6]], [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]
+
 > [!example] Example §62.1: $S_3$ on $\mathbb{R}^3$ as a Sum of Simples
 > $\mathbb{R}^3 = U \oplus V$, with $U = \mathbb{R}(1,1,1)$ and $V$ the sum-zero plane (Example [[§60 Direct Sums and Maschke's Theorem#^ex-60-1|§60.1]]), is a decomposition into simple representations, as in Corollary [[§62 Simple Representations#^cor-62-2|§62.2]].
 >
@@ -127,8 +141,9 @@ For $r = 2$ this is Definition [[§60 Direct Sums and Maschke's Theorem#^def-60-
 
 > [!remark] Remark: A Payoff in Group Theory
 > Representation theory also proves theorems about groups. A first example: every finite group of order $p^a q^b$, with $p$ and $q$ prime, is solvable (Definition [[§48 Solvable Groups#^def-48-1|§48.1]]). Compare the groups of order $pq$ ([[§55 The Sylow Theorems|§55]]), which a problem set classifies as semidirect products of one cyclic group by another.
-> *(Not from class.)* The result is Burnside's $p^aq^b$ theorem, not to be confused with Burnside's Lemma (Theorem [[§30 Orbit–Stabilizer#^thm-30-7|§30.7]]).
+> *(Not from class.)* The result is Burnside's $p^aq^b$ theorem, not to be confused with Burnside's Lemma (Theorem [[§30 Orbit–Stabilizer#^thm-30-7|§30.7]]). Its proof uses characters of representations ([[§63 Invariant Vectors and Characters|§63]]) to find a proper nontrivial normal subgroup $N$, and finishes with Extensions of Solvable Groups Are Solvable (Theorem [[§48 Solvable Groups#^thm-48-7|§48.7]], PS 9.1): $N$ and $G/N$ have orders of the same form, so they are solvable by induction on $|G|$.
 >
 > *Source: lecture 11/6*
 
 ^rem-62-2
+

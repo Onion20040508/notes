@@ -9,7 +9,7 @@ tags: [group-theory, math493]
 
 *Source: Lecture and Worksheet 14 (Wed Nov 4); lecture (Fri Nov 6), with WS 14.7–14.8 presented by students. Reference for the linear algebra: Axler, Linear Algebra Done Right, Ch. 6 (orthonormal bases, orthogonal complements). Complex forms: also the MATH 420 slides *Complex inner products*, posted for this course.*
 
-Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-5|§60.5]]) has a geometric proof. If $G$ preserves an inner product, the orthogonal complement of a subrepresentation is again a subrepresentation; and an inner product that $G$ preserves always exists, obtained by averaging any inner product over $G$. The section ends with two consequences of averaging: a finite group acts by orthogonal matrices in a suitable basis, and, over $\mathbb{C}$, by unitary matrices, which preserve a positive definite Hermitian form. The last part sets up these complex forms: sesquilinear and Hermitian forms, their matrices, and orthonormal bases by Gram–Schmidt.
+Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]) has a geometric proof. If $G$ preserves an inner product, the orthogonal complement of a subrepresentation is again a subrepresentation; and an inner product that $G$ preserves always exists, obtained by averaging any inner product over $G$. The section ends with two consequences of averaging: a finite group acts by orthogonal matrices in a suitable basis, and, over $\mathbb{C}$, by unitary matrices, which preserve a positive definite Hermitian form. The last part sets up these complex forms: sesquilinear and Hermitian forms, their matrices, and orthonormal bases by Gram–Schmidt.
 
 > [!definition] Definition §61.1: Inner Product
 > An **inner product** on a real vector space $W$ is a positive definite symmetric bilinear form $\langle\ ,\ \rangle: W \times W \to \mathbb{R}$:
@@ -220,11 +220,11 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 > [!proof]+ Proof
 > *Idea:* Make $G$ preserve an inner product by averaging, then take the orthogonal complement.
 >
-> Choose any inner product on $W$ (for instance, the dot product of coordinates in some basis). By Propositions [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]] and [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], the averaged form $\langle\ ,\ \rangle$ is an inner product preserved by $G$, so Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-3|§61.3]] applies with $V = U^\perp$, the orthogonal complement for $\langle\ ,\ \rangle$. Since $|G| \neq 0$ in $\mathbb{R}$, this is the case $k = \mathbb{R}$ of Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-5|§60.5]].
+> Choose any inner product on $W$ (for instance, the dot product of coordinates in some basis). By Propositions [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]] and [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], the averaged form $\langle\ ,\ \rangle$ is an inner product preserved by $G$, so Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-3|§61.3]] applies with $V = U^\perp$, the orthogonal complement for $\langle\ ,\ \rangle$. Since $|G| \neq 0$ in $\mathbb{R}$, this is the case $k = \mathbb{R}$ of Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]].
 
 ^pf-61-6
 
-*Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]], [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-3|§61.3]], [[§60 Direct Sums and Maschke's Theorem#^thm-60-5|§60.5]]
+*Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]], [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-3|§61.3]], [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]
 
 > [!theorem] Corollary §61.7: Finite Groups Act by Orthogonal Matrices
 > Let $G$ be a finite group and $W$ a finite-dimensional real representation of $G$. Then $G$ preserves some inner product on $W$, and in a suitable basis every $\rho(g)$ is an orthogonal matrix: $M^T M = I$. In words: a finite group may always be taken to act by rotations and reflections.
@@ -272,7 +272,7 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 *(Not from lecture; figure added.)* The plane $V$ of Example [[§61 Invariant Inner Products and Maschke over ℝ#^ex-61-1|§61.1]], drawn in the orthonormal basis $b_1, b_2$. The projections $\bar e_i = e_i - \tfrac13(1,1,1)$ of the standard basis vectors form an equilateral triangle, and $S_3$ acts on $V$ as its symmetry group: the transpositions are the reflections in the three dashed mirror lines (each through the vertex it fixes), the $3$-cycles are the rotations by $\pm 120^\circ$. Rotations and reflections are exactly what orthogonal $2 \times 2$ matrices are.
 
 > [!remark] Remark: Beyond $\mathbb{R}$ and Beyond Finite Groups
-> - *Other fields.* Maschke's theorem in full (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-5|§60.5]]) needs only $|G| \neq 0$ in $k$; for $S_3$, of order $6$, this excludes the fields of characteristic $2$ and $3$. Its proof, and counterexamples when $|G| = 0$ in $k$, are on the upcoming problem set.
+> - *Other fields.* Maschke's theorem in full (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]) needs only $|G| \neq 0$ in $k$; for $S_3$, of order $6$, this excludes the fields of characteristic $2$ and $3$. Its proof (Problem Set 9) averages an idempotent instead of an inner product, and Examples [[§60 Direct Sums and Maschke's Theorem#^ex-60-3|§60.3]] and [[§60 Direct Sums and Maschke's Theorem#^ex-60-4|§60.4]] show what goes wrong for an infinite group or when $|G| = 0$ in $k$ (both in [[§60 Direct Sums and Maschke's Theorem|§60]]).
 > - *Compact Lie groups.* Beyond this course, which has no manifold prerequisite: for a compact Lie group the same proof works, with the sum over $G$ replaced by an integral over $G$ against an invariant measure.
 >
 > *Source: lecture 11/6*
