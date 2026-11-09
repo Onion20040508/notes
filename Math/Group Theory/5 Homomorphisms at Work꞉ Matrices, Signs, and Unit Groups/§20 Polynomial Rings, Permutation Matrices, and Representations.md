@@ -256,7 +256,7 @@ tags: [group-theory, math493]
 
 ^def-20-8
 
-*(Not from class.)* Both notions return in general in Part II: representations of any group on any vector space (Definition [[§59 Representations and Subrepresentations#^def-59-1|§59.1]]) and permutation representations of any $G$-set (Definition [[§59 Representations and Subrepresentations#^def-59-2|§59.2]]).
+*(Not from class.)* Both notions return in general in Part II: representations of any group on any vector space (Definition [[§61 Representations and Subrepresentations#^def-61-1|§61.1]]) and permutation representations of any $G$-set (Definition [[§61 Representations and Subrepresentations#^def-61-2|§61.2]]).
 
 > [!remark] Remark: Group Actions
 > The three ways $S_n$ has appeared — on $\{1, \ldots, n\}$, on $k^n$ via $M(\sigma)$, and on $k[x_1, \ldots, x_n]$ — are instances of a single notion, that of a *group action*, developed in [[· 6 Group Actions, Cosets, and Lagrange's Theorem|Chapter 6]]; the compatibility statements proved above are exactly the [[§25 Actions#^def-25-1|action axioms]].

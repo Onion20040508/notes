@@ -2,16 +2,16 @@
 type: section
 subject: "[[Group Theory]]"
 chapter: 11
-section: 61
+section: 63
 tags: [group-theory, math493]
 ---
-← [[§60 Direct Sums and Maschke's Theorem]] · ↑ [[· 11 Representations]] · [[§62 Sesquilinear and Hermitian Forms]] →
+← [[§62 Direct Sums and Maschke's Theorem]] · ↑ [[· 11 Representations and Maschke's Theorem]] · [[§64 Sesquilinear and Hermitian Forms]] →
 
 *Source: Lecture and Worksheet 14 (Wed Nov 4); lecture (Fri Nov 6), with WS 14.7–14.8 presented by students. Reference for the linear algebra: Axler, Linear Algebra Done Right, Ch. 6 (orthonormal bases, orthogonal complements).*
 
-Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]) has a geometric proof. If $G$ preserves an inner product, the orthogonal complement of a subrepresentation is again a subrepresentation; and an inner product that $G$ preserves always exists, obtained by averaging any inner product over $G$. The section ends with a consequence of averaging: a finite group acts by orthogonal matrices in a suitable basis. Over $\mathbb{C}$ the same averaging gives unitary matrices, which preserve a positive definite Hermitian form; these complex forms are set up in [[§62 Sesquilinear and Hermitian Forms|§62]].
+Over $\mathbb{R}$, Maschke's theorem (Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]) has a geometric proof. If $G$ preserves an inner product, the orthogonal complement of a subrepresentation is again a subrepresentation; and an inner product that $G$ preserves always exists, obtained by averaging any inner product over $G$. The section ends with a consequence of averaging: a finite group acts by orthogonal matrices in a suitable basis. Over $\mathbb{C}$ the same averaging gives unitary matrices, which preserve a positive definite Hermitian form; these complex forms are set up in [[§64 Sesquilinear and Hermitian Forms|§64]].
 
-> [!definition] Definition §61.1: Inner Product
+> [!definition] Definition §63.1: Inner Product
 > An **inner product** on a real vector space $W$ is a positive definite symmetric bilinear form $\langle\ ,\ \rangle: W \times W \to \mathbb{R}$:
 >
 > 1. bilinear: linear in each argument when the other is fixed;
@@ -20,12 +20,12 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 >
 > *Source: WS 14*
 
-^def-61-1
+^def-63-1
 
 > [!remark]- Connections
 > - Linear Algebra: [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]] (inner products over $\mathbb{R}$ and $\mathbb{C}$).
 
-> [!definition] Definition §61.2: Orthogonal Complement
+> [!definition] Definition §63.2: Orthogonal Complement
 > Let $W$ be a real vector space with an inner product $\langle\ ,\ \rangle$ and $U \subseteq W$ a subspace. The **orthogonal complement** of $U$ is
 >
 > $$
@@ -34,12 +34,12 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 >
 > *Source: WS 14*
 
-^def-61-2
+^def-63-2
 
 > [!remark]- Connections
 > - Linear Algebra: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-46|LADR 6.46]].
 
-> [!definition] Definition §61.3: $G$ Preserves an Inner Product
+> [!definition] Definition §63.3: $G$ Preserves an Inner Product
 > Let $W$ be a real representation of $G$ with an inner product $\langle\ ,\ \rangle$. $G$ **preserves** $\langle\ ,\ \rangle$ if
 >
 > $$
@@ -50,17 +50,17 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 >
 > *Source: WS 14*
 
-^def-61-3
+^def-63-3
 
 > [!remark]- Connections
 > - Linear Algebra: an orthogonal map is an isometry, [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]].
 
-> [!theorem] Proposition §61.1: Direct Sum of a Subspace and Its Orthogonal Complement
+> [!theorem] Proposition §63.1: Direct Sum of a Subspace and Its Orthogonal Complement
 > Let $W$ be a finite-dimensional real vector space with an inner product and $U \subseteq W$ a subspace. Then $W = U \oplus U^\perp$.
 >
 > *Source: WS 14.4; board 11/4*
 
-^prop-61-1
+^prop-63-1
 
 > [!proof]+ Proof
 > *Idea:* Positive definiteness gives $U \cap U^\perp = \{0\}$; the orthogonal projection $P_U$ splits every $w$ as $P_U(w) + (w - P_U(w))$.
@@ -83,7 +83,7 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 >
 > since only the term $j = i$ survives, and $\langle w, u_i \rangle = \langle u_i, w \rangle$ by symmetry. Hence $w = P_U(w) + \big(w - P_U(w)\big) \in U + U^\perp$.
 
-^pf-61-1
+^pf-63-1
 
 > [!remark]- Connections
 > - Linear Algebra: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]] (the same statement) and [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-57|LADR 6.57]] (properties of $P_U$, with the formula used here in part (i)).
@@ -93,12 +93,12 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 
 *(Not from lecture; figure added.)* The proof of Proposition §60.5 in $\mathbb{R}^3$ with the dot product: $U$ is a plane with orthonormal basis $u_1, u_2$, and $U^\perp$ is the normal line. $P_U(w)$ is the foot of the perpendicular from $w$ to $U$, and the remainder $w - P_U(w)$ (red) is parallel to $U^\perp$.
 
-> [!theorem] Proposition §61.2: Orthogonal Complements of Subrepresentations
-> Let $W$ be a real representation of $G$ with an inner product preserved by $G$ (Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-3|§61.3]]), and let $U$ be a subrepresentation. Then $U^\perp$ is a subrepresentation.
+> [!theorem] Proposition §63.2: Orthogonal Complements of Subrepresentations
+> Let $W$ be a real representation of $G$ with an inner product preserved by $G$ (Definition [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-3|§63.3]]), and let $U$ be a subrepresentation. Then $U^\perp$ is a subrepresentation.
 >
 > *Source: WS 14.5; board 11/4*
 
-^prop-61-2
+^prop-63-2
 
 > [!proof]+ Proof
 > *Idea:* Move $g$ to the other side of the inner product as $g^{-1}$.
@@ -111,32 +111,32 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 >
 > because $g^{-1}u \in U$ ($U$ is a subrepresentation) and $w \in U^\perp$.
 
-^pf-61-2
+^pf-63-2
 
-> [!theorem] Corollary §61.3: Maschke for Representations Preserving an Inner Product
+> [!theorem] Corollary §63.3: Maschke for Representations Preserving an Inner Product
 > Let $W$ be a finite-dimensional real representation of a group $G$ (finite or not) that preserves an inner product on $W$, and let $U$ be a subrepresentation. Then $V = U^\perp$ is a subrepresentation with $W = U \oplus V$.
 >
 > *Source: WS 14.6*
 
-^cor-61-3
+^cor-63-3
 
 > [!proof]+ Proof
-> *(Lecture 11/4.)* $W = U \oplus U^\perp$ by Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-1|§61.1]], and $U^\perp$ is a subrepresentation by Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-2|§61.2]].
+> *(Lecture 11/4.)* $W = U \oplus U^\perp$ by Proposition [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-1|§63.1]], and $U^\perp$ is a subrepresentation by Proposition [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-2|§63.2]].
 
-^pf-61-3
+^pf-63-3
 
-*Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-1|§61.1]], [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-2|§61.2]]
+*Uses:* [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-1|§63.1]], [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-2|§63.2]]
 
-**Transcription note (WS 14).** Problem 14.6 says “$W$ preserves an inner product”; “$G$ preserves” is meant (Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-3|§61.3]]).
+**Transcription note (WS 14).** Problem 14.6 says “$W$ preserves an inner product”; “$G$ preserves” is meant (Definition [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-3|§63.3]]).
 
 > [!remark] Remark: Physical Meaning
 > That $G$ preserves an inner product means that $G$ acts by orthogonal matrices, which preserve lengths and angles: a natural condition for symmetries of objects in space. The lecture noted that physicists also meet symmetries of space-time, which preserve a form that is not positive definite. The remaining step is to show that for a *finite* group such an inner product always exists, even if the given one is not preserved.
 >
 > *Source: lecture 11/4*
 
-^rem-61-1
+^rem-63-1
 
-> [!definition] Definition §61.4: The Averaged Inner Product
+> [!definition] Definition §63.4: The Averaged Inner Product
 > Let $W$ be a real representation of a finite group $G$, and let $(\ ,\ )$ be any inner product on $W$, not necessarily preserved by $G$. Define
 >
 > $$
@@ -145,21 +145,21 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 >
 > *Source: WS 14*
 
-^def-61-4
+^def-63-4
 
 **Transcription note (WS 14).** The worksheet prints the sum as $\sum_{g \in G} \langle gv, gw \rangle$, with the new brackets on both sides; the sum uses the original inner product $(\ ,\ )$.
 
-> [!theorem] Proposition §61.4: Averaging Gives an Inner Product
-> $\langle\ ,\ \rangle$ (Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-4|§61.4]]) is an inner product on $W$.
+> [!theorem] Proposition §63.4: Averaging Gives an Inner Product
+> $\langle\ ,\ \rangle$ (Definition [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-4|§63.4]]) is an inner product on $W$.
 >
 > *Source: WS 14.7; presented by students 11/6*
 
-^prop-61-4
+^prop-63-4
 
 > [!proof]+ Proof
 > *Idea:* each axiom holds for every term $(gu, gv)$ of the sum, hence for the sum.
 >
-> We check the three conditions of Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-1|§61.1]]; each follows from the corresponding property of $(\ ,\ )$, term by term.
+> We check the three conditions of Definition [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-1|§63.1]]; each follows from the corresponding property of $(\ ,\ )$, term by term.
 >
 > *Symmetric.* $\langle u, v \rangle = \sum_g (gu, gv) = \sum_g (gv, gu) = \langle v, u \rangle$, by symmetry of $(\ ,\ )$ in each term.
 >
@@ -173,16 +173,16 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 >
 > linearity in the second variable follows from this and symmetry.
 
-^pf-61-4
+^pf-63-4
 
-*Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-1|Def. §61.1]]
+*Uses:* [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-1|Def. §63.1]]
 
-> [!theorem] Proposition §61.5: $G$ Preserves the Averaged Inner Product
+> [!theorem] Proposition §63.5: $G$ Preserves the Averaged Inner Product
 > $\langle hv, hw \rangle = \langle v, w \rangle$ for all $h \in G$ and $v, w \in W$.
 >
 > *Source: WS 14.8; presented by a student 11/6*
 
-^prop-61-5
+^prop-63-5
 
 > [!proof]+ Proof
 > *Idea:* re-index the sum by $k = gh$.
@@ -195,67 +195,67 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 >
 > because as $g$ runs over $G$, so does $k = gh$: right multiplication $g \mapsto gh$ is a bijection $G \to G$, with inverse $k \mapsto kh^{-1}$. Equivalently, the right coset $Gh$ is all of $G$.
 
-^pf-61-5
+^pf-63-5
 
-**Transcription note (board 11/6).** The handwritten notes write $\langle g'u, g'v \rangle = \sum_{g} \langle g'gu, g'gv \rangle = \sum_{k} \langle ku, kv \rangle$, with the new brackets inside the sum and the bijection $g \mapsto hg$. By Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-4|§61.4]] the terms are $\big((gg')u, (gg')v\big)$, with the original inner product, and the re-indexing uses right multiplication by $g'$; left multiplication is also a bijection of $G$, but it is not the one that occurs here.
+**Transcription note (board 11/6).** The handwritten notes write $\langle g'u, g'v \rangle = \sum_{g} \langle g'gu, g'gv \rangle = \sum_{k} \langle ku, kv \rangle$, with the new brackets inside the sum and the bijection $g \mapsto hg$. By Definition [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-4|§63.4]] the terms are $\big((gg')u, (gg')v\big)$, with the original inner product, and the re-indexing uses right multiplication by $g'$; left multiplication is also a bijection of $G$, but it is not the one that occurs here.
 
 ![[m493-60-4.svg]]
 
-*(Not from lecture; figure added.)* The averaged inner product for $S_3$ acting on $U_2$ (Example [[§59 Representations and Subrepresentations#^ex-59-3|§59.3]]), drawn in the coordinates $x_1, x_2$ of the basis $f_1, f_2$. Take for $(\ ,\ )$ the dot product of coordinates. It is not preserved: the grey ellipses $\{v : (gv, gv) = 1\}$ for $g \neq e$ differ from the red unit circle. The level set $\langle v, v \rangle = 6$ of the averaged form (blue) is mapped to itself by all six matrices of the table in §59, as WS 14.8 asserts.
+*(Not from lecture; figure added.)* The averaged inner product for $S_3$ acting on $U_2$ (Example [[§61 Representations and Subrepresentations#^ex-61-3|§61.3]]), drawn in the coordinates $x_1, x_2$ of the basis $f_1, f_2$. Take for $(\ ,\ )$ the dot product of coordinates. It is not preserved: the grey ellipses $\{v : (gv, gv) = 1\}$ for $g \neq e$ differ from the red unit circle. The level set $\langle v, v \rangle = 6$ of the averaged form (blue) is mapped to itself by all six matrices of the table in §59, as WS 14.8 asserts.
 
 > [!remark] Remark: Symmetrizing
-> Propositions [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]] and [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]] are an instance of a general *symmetrizing* construction: given something with less symmetry than wanted, add it up over the group (in other contexts, multiply or average it), and the result is invariant. They also show the benefit of treating symmetric bilinear forms as objects in their own right, rather than always working with one favourite dot product: the inner product that does the work here is not the one chosen at the start.
+> Propositions [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-4|§63.4]] and [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-5|§63.5]] are an instance of a general *symmetrizing* construction: given something with less symmetry than wanted, add it up over the group (in other contexts, multiply or average it), and the result is invariant. They also show the benefit of treating symmetric bilinear forms as objects in their own right, rather than always working with one favourite dot product: the inner product that does the work here is not the one chosen at the start.
 >
 > *Source: lecture 11/6*
 
-^rem-61-2
+^rem-63-2
 
-> [!theorem] Corollary §61.6: Maschke's Theorem over $\mathbb{R}$
+> [!theorem] Corollary §63.6: Maschke's Theorem over $\mathbb{R}$
 > Let $G$ be finite and $W$ a finite-dimensional real representation of $G$. Every subrepresentation $U$ of $W$ has a complementary subrepresentation $V$, with $W = U \oplus V$.
 >
 > *Source: WS 14; lecture 11/6*
 
-^cor-61-6
+^cor-63-6
 
 > [!proof]+ Proof
 > *Idea:* Make $G$ preserve an inner product by averaging, then take the orthogonal complement.
 >
-> Choose any inner product on $W$ (for instance, the dot product of coordinates in some basis). By Propositions [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]] and [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], the averaged form $\langle\ ,\ \rangle$ is an inner product preserved by $G$, so Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-3|§61.3]] applies with $V = U^\perp$, the orthogonal complement for $\langle\ ,\ \rangle$. Since $|G| \neq 0$ in $\mathbb{R}$, this is the case $k = \mathbb{R}$ of Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]].
+> Choose any inner product on $W$ (for instance, the dot product of coordinates in some basis). By Propositions [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-4|§63.4]] and [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-5|§63.5]], the averaged form $\langle\ ,\ \rangle$ is an inner product preserved by $G$, so Corollary [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-3|§63.3]] applies with $V = U^\perp$, the orthogonal complement for $\langle\ ,\ \rangle$. Since $|G| \neq 0$ in $\mathbb{R}$, this is the case $k = \mathbb{R}$ of Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]].
 
-^pf-61-6
+^pf-63-6
 
-*Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]], [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-3|§61.3]], [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]
+*Uses:* [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-4|§63.4]], [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-5|§63.5]], [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-3|§63.3]], [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]
 
-> [!theorem] Corollary §61.7: Finite Groups Act by Orthogonal Matrices
+> [!theorem] Corollary §63.7: Finite Groups Act by Orthogonal Matrices
 > Let $G$ be a finite group and $W$ a finite-dimensional real representation of $G$. Then $G$ preserves some inner product on $W$, and in a suitable basis every $\rho(g)$ is an orthogonal matrix: $M^T M = I$. In words: a finite group may always be taken to act by rotations and reflections.
 >
 > *Source: lecture 11/6*
 
-^cor-61-7
+^cor-63-7
 
 > [!proof]+ Proof
 > *Idea:* write the matrices in a basis that is orthonormal for an inner product $G$ preserves.
 >
-> Choose any inner product $(\ ,\ )$ on $W$. By Propositions [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]] and [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], the averaged form $\langle\ ,\ \rangle$ (Definition [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-4|§61.4]]) is an inner product preserved by $G$. Choose a basis $w_1, \ldots, w_n$ of $W$ orthonormal for $\langle\ ,\ \rangle$ (it exists by Gram–Schmidt), so that every $x \in W$ is $x = \sum_k \langle x, w_k \rangle w_k$. Fix $g \in G$ and let $M$ be the matrix of $\rho(g)$ in this basis: column $j$ holds the coordinates of $gw_j$, so $M_{kj} = \langle gw_j, w_k \rangle$. Then, expanding $gw_i$ and $gw_j$ in the orthonormal basis,
+> Choose any inner product $(\ ,\ )$ on $W$. By Propositions [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-4|§63.4]] and [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-5|§63.5]], the averaged form $\langle\ ,\ \rangle$ (Definition [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-4|§63.4]]) is an inner product preserved by $G$. Choose a basis $w_1, \ldots, w_n$ of $W$ orthonormal for $\langle\ ,\ \rangle$ (it exists by Gram–Schmidt), so that every $x \in W$ is $x = \sum_k \langle x, w_k \rangle w_k$. Fix $g \in G$ and let $M$ be the matrix of $\rho(g)$ in this basis: column $j$ holds the coordinates of $gw_j$, so $M_{kj} = \langle gw_j, w_k \rangle$. Then, expanding $gw_i$ and $gw_j$ in the orthonormal basis,
 >
 > $$
 > (M^TM)_{ij} = \sum_k M_{ki} M_{kj} = \sum_k \langle gw_i, w_k \rangle \langle gw_j, w_k \rangle = \langle gw_i, gw_j \rangle = \langle w_i, w_j \rangle = \begin{cases} 1 & i = j, \\ 0 & i \neq j, \end{cases}
 > $$
 >
-> where the third equality is bilinearity together with $\langle w_k, w_l \rangle = 0$ for $k \neq l$ and $= 1$ for $k = l$, and the fourth is Proposition [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]]. So $M^TM = I$. Preserving an inner product is thus the basis-free way of saying “acting by orthogonal matrices”.
+> where the third equality is bilinearity together with $\langle w_k, w_l \rangle = 0$ for $k \neq l$ and $= 1$ for $k = l$, and the fourth is Proposition [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-5|§63.5]]. So $M^TM = I$. Preserving an inner product is thus the basis-free way of saying “acting by orthogonal matrices”.
 
-^pf-61-7
+^pf-63-7
 
-*Uses:* [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|§61.4]], [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|§61.5]], [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-4|Def. §61.4]]
+*Uses:* [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-4|§63.4]], [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-5|§63.5]], [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-4|Def. §63.4]]
 
-> [!example] Example §61.1: $S_3$ in an Orthonormal Basis
-> Return to $S_3$ acting on $\mathbb{R}^3 = U \oplus V$ as in Example [[§60 Direct Sums and Maschke's Theorem#^ex-60-1|§60.1]]: $U = \mathbb{R}(1,1,1)$, and $V = U^\perp$ is the sum-zero plane. $S_3$ preserves the dot product, since it permutes coordinates. The bases of $V$ used so far, $f_1, f_2$ (Example [[§59 Representations and Subrepresentations#^ex-59-3|§59.3]]) and $v_1, v_2$ (Example [[§60 Direct Sums and Maschke's Theorem#^ex-60-1|§60.1]]), are not orthonormal, and neither is the orthogonal basis $(1,-1,0), (1,1,-2)$. Normalizing the last one gives an orthonormal basis of $V$, less convenient for hand computation:
+> [!example] Example §63.1: $S_3$ in an Orthonormal Basis
+> Return to $S_3$ acting on $\mathbb{R}^3 = U \oplus V$ as in Example [[§62 Direct Sums and Maschke's Theorem#^ex-62-1|§62.1]]: $U = \mathbb{R}(1,1,1)$, and $V = U^\perp$ is the sum-zero plane. $S_3$ preserves the dot product, since it permutes coordinates. The bases of $V$ used so far, $f_1, f_2$ (Example [[§61 Representations and Subrepresentations#^ex-61-3|§61.3]]) and $v_1, v_2$ (Example [[§62 Direct Sums and Maschke's Theorem#^ex-62-1|§62.1]]), are not orthonormal, and neither is the orthogonal basis $(1,-1,0), (1,1,-2)$. Normalizing the last one gives an orthonormal basis of $V$, less convenient for hand computation:
 >
 > $$
 > b_1 = \tfrac{1}{\sqrt{2}}(1, -1, 0), \qquad b_2 = \tfrac{1}{\sqrt{6}}(1, 1, -2).
 > $$
 >
-> In this basis the matrices are orthogonal, as Corollary [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-7|§61.7]] predicts:
+> In this basis the matrices are orthogonal, as Corollary [[§63 Invariant Inner Products and Maschke over ℝ#^cor-63-7|§63.7]] predicts:
 >
 > $$
 > \rho_V\big((1\,2)\big) = \begin{pmatrix} -1 & 0 \\ 0 & 1 \end{pmatrix}, \qquad \rho_V\big((1\,2\,3)\big) = \begin{pmatrix} -\tfrac12 & -\tfrac{\sqrt3}{2} \\ \tfrac{\sqrt3}{2} & -\tfrac12 \end{pmatrix}.
@@ -265,16 +265,16 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's T
 >
 > *Source: lecture 11/6; the matrices not from class*
 
-^ex-61-1
+^ex-63-1
 
 ![[m493-60-5.svg]]
 
-*(Not from lecture; figure added.)* The plane $V$ of Example [[§61 Invariant Inner Products and Maschke over ℝ#^ex-61-1|§61.1]], drawn in the orthonormal basis $b_1, b_2$. The projections $\bar e_i = e_i - \tfrac13(1,1,1)$ of the standard basis vectors form an equilateral triangle, and $S_3$ acts on $V$ as its symmetry group: the transpositions are the reflections in the three dashed mirror lines (each through the vertex it fixes), the $3$-cycles are the rotations by $\pm 120^\circ$. Rotations and reflections are exactly what orthogonal $2 \times 2$ matrices are.
+*(Not from lecture; figure added.)* The plane $V$ of Example [[§63 Invariant Inner Products and Maschke over ℝ#^ex-63-1|§63.1]], drawn in the orthonormal basis $b_1, b_2$. The projections $\bar e_i = e_i - \tfrac13(1,1,1)$ of the standard basis vectors form an equilateral triangle, and $S_3$ acts on $V$ as its symmetry group: the transpositions are the reflections in the three dashed mirror lines (each through the vertex it fixes), the $3$-cycles are the rotations by $\pm 120^\circ$. Rotations and reflections are exactly what orthogonal $2 \times 2$ matrices are.
 
 > [!remark] Remark: Beyond $\mathbb{R}$ and Beyond Finite Groups
-> - *Other fields.* Maschke's theorem in full (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]) needs only $|G| \neq 0$ in $k$; for $S_3$, of order $6$, this excludes the fields of characteristic $2$ and $3$. Its proof (Problem Set 9) averages an idempotent instead of an inner product, and Examples [[§60 Direct Sums and Maschke's Theorem#^ex-60-3|§60.3]] and [[§60 Direct Sums and Maschke's Theorem#^ex-60-4|§60.4]] show what goes wrong for an infinite group or when $|G| = 0$ in $k$ (both in [[§60 Direct Sums and Maschke's Theorem|§60]]).
+> - *Other fields.* Maschke's theorem in full (Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]) needs only $|G| \neq 0$ in $k$; for $S_3$, of order $6$, this excludes the fields of characteristic $2$ and $3$. Its proof (Problem Set 9) averages an idempotent instead of an inner product, and Examples [[§62 Direct Sums and Maschke's Theorem#^ex-62-3|§62.3]] and [[§62 Direct Sums and Maschke's Theorem#^ex-62-4|§62.4]] show what goes wrong for an infinite group or when $|G| = 0$ in $k$ (both in [[§62 Direct Sums and Maschke's Theorem|§62]]).
 > - *Compact Lie groups.* Beyond this course, which has no manifold prerequisite: for a compact Lie group the same proof works, with the sum over $G$ replaced by an integral over $G$ against an invariant measure.
 >
 > *Source: lecture 11/6*
 
-^rem-61-3
+^rem-63-3

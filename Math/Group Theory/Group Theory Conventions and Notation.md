@@ -34,16 +34,17 @@ tags: [group-theory, math493]
 | $PSL_n(F)$ | Projective special linear group $SL_n(F)/Z$. | [[§43 Simple Groups#^def-43-2\|Def. §43.2]] |
 | $n_p$, $N_G(H)$ | Number of Sylow $p$-subgroups; normalizer of $H$. | [[§56 Simple Groups of Small Order#^rem-56-2\|§56]], [[§56 Simple Groups of Small Order#^def-56-1\|Def. §56.1]] |
 | $N \rtimes_\varphi S$, $S \ltimes_\varphi N$ | Semidirect product: $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$. | [[§58 Semidirect Products#^def-58-2\|Def. §58.2]] |
-| $\sigma_{(g, \lambda)}$, $\operatorname{Aff}(V)$ | The affine map $x \mapsto gx + \lambda$; the group of all affine maps of $V$, $\cong V \rtimes GL(V)$. | [[§58 Semidirect Products#^prop-58-8\|Prop. §58.8]], [[§58 Semidirect Products#^ex-58-5\|Ex. §58.5]] |
+| $\sigma_{(g, \lambda)}$, $\operatorname{Aff}(V)$ | The affine map $x \mapsto gx + \lambda$; the group of all affine maps of $V$, $\cong V \rtimes GL(V)$. | [[§59 Groups of Affine Maps#^prop-59-1\|Prop. §59.1]], [[§59 Groups of Affine Maps#^ex-59-1\|Ex. §59.1]] |
 | $HN$ | Product set $\{hn : h \in H,\ n \in N\}$. | [[§41 The First and Second Isomorphism Theorems#^def-41-1\|Def. §41.1]] |
 | $X \sqcup Y$ | Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$. | [[§40 Quotient Groups#^def-40-2\|Def. §40.2]] |
 | $\hookrightarrow$, $\twoheadrightarrow$ | An injective map; a surjective map. | [[§40 Quotient Groups#^prop-40-5\|§40.5]] |
-| $kX$ | Permutation representation on formal combinations of the $e_x$, $x \in X$. | [[§59 Representations and Subrepresentations#^def-59-2\|Def. §59.2]] |
-| $U \oplus V$ | Internal direct sum of subspaces: $U \cap V = \{0\}$, $U + V = W$. | [[§60 Direct Sums and Maschke's Theorem#^def-60-1\|Def. §60.1]] |
-| $U^\perp$, $P_U$ | Orthogonal complement of $U$; orthogonal projection onto $U$. | [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-2\|Def. §61.2]], [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-1\|§61.1]] |
-| $V_1 \oplus \cdots \oplus V_r$ | Direct sum of several subspaces: every $v$ is uniquely $v_1 + \cdots + v_r$, $v_i \in V_i$. | [[§63 Simple Representations#^def-63-3\|Def. §63.3]] |
-| $M^\dagger = \bar M^T$ | Conjugate transpose ([[§62 Sesquilinear and Hermitian Forms#^def-62-4\|Def. §62.4]]); $M$ is Hermitian if $M = M^\dagger$, unitary if $M^\dagger M = I$. | [[§62 Sesquilinear and Hermitian Forms#^rem-62-1\|§62]] |
-| $V^G$ | Invariant vectors of a representation: $gv = v$ for all $g$. | [[§64 Invariant Vectors#^def-64-3\|Def. §64.3]] |
-| $\chi_V$ | Character of a representation, $\chi_V(g) = \operatorname{Tr}\rho_V(g)$; not a character in the sense of §46 unless $\dim V = 1$. | [[§65 Characters of Representations#^def-65-1\|Def. §65.1]] |
-| $\operatorname{Tr}$ | Trace of a matrix or of a linear map. | [[§64 Invariant Vectors#^def-64-2\|Def. §64.2]] |
+| $kX$ | Permutation representation on formal combinations of the $e_x$, $x \in X$. | [[§61 Representations and Subrepresentations#^def-61-2\|Def. §61.2]] |
+| $U \oplus V$ | Internal direct sum of subspaces: $U \cap V = \{0\}$, $U + V = W$. | [[§62 Direct Sums and Maschke's Theorem#^def-62-1\|Def. §62.1]] |
+| $U^\perp$, $P_U$ | Orthogonal complement of $U$; orthogonal projection onto $U$. | [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-2\|Def. §63.2]], [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-1\|§63.1]] |
+| $V_1 \oplus \cdots \oplus V_r$ | Direct sum of several subspaces: every $v$ is uniquely $v_1 + \cdots + v_r$, $v_i \in V_i$. | [[§65 Simple Representations#^def-65-3\|Def. §65.3]] |
+| $M^\dagger = \bar M^T$ | Conjugate transpose ([[§64 Sesquilinear and Hermitian Forms#^def-64-4\|Def. §64.4]]); $M$ is Hermitian if $M = M^\dagger$, unitary if $M^\dagger M = I$. | [[§64 Sesquilinear and Hermitian Forms#^rem-64-1\|§64]] |
+| $V^G$ | Invariant vectors of a representation: $gv = v$ for all $g$. | [[§66 Invariant Vectors#^def-66-3\|Def. §66.3]] |
+| $\chi_V$ | Character of a representation, $\chi_V(g) = \operatorname{Tr}\rho_V(g)$; not a character in the sense of §46 unless $\dim V = 1$. | [[§67 Characters of Representations#^def-67-1\|Def. §67.1]] |
+| $\operatorname{Hom}(V, W)$, $\operatorname{Hom}_G(V, W)$ | Linear maps $V \to W$, a representation by $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$; its invariant vectors, the homomorphisms of representations. | [[§68 Actions on Matrix Spaces#^def-68-1\|Def. §68.1]], [[§68 Actions on Matrix Spaces#^def-68-2\|§68.2]] |
+| $\operatorname{Tr}$ | Trace of a matrix or of a linear map. | [[§66 Invariant Vectors#^def-66-1\|Def. §66.1]], [[§66 Invariant Vectors#^def-66-2\|§66.2]] |
 | *WS $k.m$*, *PS $k.m$* | Provenance tags: Worksheet $k$ / Problem Set $k$, Problem $m$. | [[493 Problem Set 1\|PS 1]], [[493 Problem Set 2\|PS 2]], [[493 Problem Set 3\|PS 3]] |

@@ -17,8 +17,8 @@ tags: [group-theory, hub]
 - [[§58 Semidirect Products#^thm-58-5|Theorem §58.5: N ⋊_φ S Is a Group]]
 
 ## Used in (Group Theory)
-- [[§58 Semidirect Products#^cor-58-10|Corollary §58.10: Semidirect Products of Solvable Groups Are Solvable]]
-- [[§58 Semidirect Products#^prop-58-11|Proposition §58.11: Groups of Order pq Are Semidirect Products]]
+- [[§59 Groups of Affine Maps#^cor-59-3|Corollary §59.3: Semidirect Products of Solvable Groups Are Solvable]]
+- [[§60 Groups of Order pq as Semidirect Products#^prop-60-1|Proposition §60.1: Groups of Order pq Are Semidirect Products]]
 
 ## Connections
 - TODO

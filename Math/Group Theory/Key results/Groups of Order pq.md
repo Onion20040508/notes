@@ -21,8 +21,8 @@ tags: [group-theory, hub]
 - [[§55 The Sylow Theorems#^cor-55-10|Corollary §55.10: The Number of Sylow Subgroups Divides ∣G∣]]
 
 ## Used in (Group Theory)
-- [[§58 Semidirect Products#^prop-58-11|Proposition §58.11: Groups of Order pq Are Semidirect Products]]
-- [[§58 Semidirect Products#^thm-58-14|Theorem §58.14: Classification of Groups of Order pq]]
+- [[§60 Groups of Order pq as Semidirect Products#^prop-60-1|Proposition §60.1: Groups of Order pq Are Semidirect Products]]
+- [[§60 Groups of Order pq as Semidirect Products#^thm-60-4|Theorem §60.4: Classification of Groups of Order pq]]
 
 ## Connections
 - TODO

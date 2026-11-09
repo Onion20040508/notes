@@ -11,7 +11,7 @@ tags: [subject, group-theory]
 ---
 # Group Theory
 
-MATH 493, *Honors Algebra I* (Fall 2026, David Speyer), taught about two-thirds inquiry-based: worksheets on Mondays and Wednesdays, a catch-up lecture and a quiz on Fridays. Classical group theory up to fall break, the representation theory of finite groups after it. Reference text: Pinter, *A Book of Abstract Algebra*. Section numbers §1–§65 are the notes' own; the notes are in logical order, and [[Group Theory Course Log]] records the order in which things were taught. Provenance tags on items: *WS k.m* = worksheet problem, *PS k.m* = problem set, *lecture*; items marked *not from class*, *cf. Pinter* or *cf. MATH 412* are supplementary. LaTeX source (still being extended during the term): `tex/math493_algebra_notes.tex`. **Pace (from Oct 5):** about one IBL worksheet per week; the switch to representation theory may come around fall break but is no longer a fixed deadline. Next topic: the Sylow theorems. **Schedule (from Oct 14):** Sylow II and III on Fri Oct 16, then fall break. No problem set over the break or in the week after it, because of the midterm; the topic list for the exam is on Canvas. After the break: representation theory or more finite group theory (undecided as of Oct 14).
+MATH 493, *Honors Algebra I* (Fall 2026, David Speyer), taught about two-thirds inquiry-based: worksheets on Mondays and Wednesdays, a catch-up lecture and a quiz on Fridays. Classical group theory up to fall break, the representation theory of finite groups after it. Reference text: Pinter, *A Book of Abstract Algebra*. Section numbers §1–§68 are the notes' own; the notes are in logical order, and [[Group Theory Course Log]] records the order in which things were taught. Provenance tags on items: *WS k.m* = worksheet problem, *PS k.m* = problem set, *lecture*; items marked *not from class*, *cf. Pinter* or *cf. MATH 412* are supplementary. LaTeX source (still being extended during the term): `tex/math493_algebra_notes.tex`. **Pace (from Oct 5):** about one IBL worksheet per week; the switch to representation theory may come around fall break but is no longer a fixed deadline. Next topic: the Sylow theorems. **Schedule (from Oct 14):** Sylow II and III on Fri Oct 16, then fall break. No problem set over the break or in the week after it, because of the midterm; the topic list for the exam is on Canvas. After the break: representation theory or more finite group theory (undecided as of Oct 14).
 
 ## Roadmap
 These notes follow the course, and the course studies groups through two families of examples and one organizing idea. Along the *numbers* thread live $\mathbb{Z}$, $\mathbb{Z}/n\mathbb{Z}$ and the unit groups $U_n$: abelian, mostly cyclic, and governed by the [[Division Algorithm|division algorithm]]. Along the *symmetries* thread live $S_n$ and $GL_n(k)$: non-abelian, and computed with cycles and matrices. Chapters 1–3 set up both families; Chapters 4–5 compare them through *homomorphisms*, which [[Classification of Cyclic Groups|classify the cyclic groups]] and produce [[The Sign Homomorphism|the sign]] and the [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-5|permutation matrices]]. The organizing idea is the *group action* (Chapter 6): an action of $G$ on a set is the same thing as a homomorphism $G \to S_X$ ([[Actions Are Homomorphisms to S_X|§25.3]]). Cosets are the orbits of a subgroup acting by multiplication, which gives [[Lagrange's Theorem]]; conjugation is $G$ acting on itself, which gives conjugacy classes, the [[Class Equation|class equation]] and the [[§35 The Center#^def-35-2|center]] (Chapter 7); and the subgroups whose cosets can be multiplied are the normal ones, which gives [[Quotient Groups|quotient groups]] and the [[First Isomorphism Theorem for Groups|First Isomorphism Theorem]] (Chapter 8). The two threads meet again in the [[§46 Characters#^def-46-1|characters]] of Chapter 9: homomorphisms to abelian groups, of which the sign is the first example.
@@ -36,7 +36,8 @@ graph TD
   C8["8 Normal Subgroups and Quotient Groups"]
   C9["9 Commutators, Solvable Groups and the Sylow Theorems"]
   C10["10 Semidirect Products"]
-  C11["11 Representations"]
+  C11["11 Representations and Maschke's Theorem"]
+  C12["12 Characters"]
   X1["Linear Algebra (LADR)"]
   X2["Single Variable Analysis (451)"]
   X3["Topology (590)"]
@@ -51,6 +52,7 @@ graph TD
   C8 --> C9
   C9 --> C10
   C9 --> C11
+  C11 --> C12
   C2 -.->|on credit| C1
   C3 -.->|on credit| C1
   C4 -.->|on credit| C2
@@ -84,7 +86,8 @@ graph TD
 - [[· 8 Normal Subgroups and Quotient Groups]]
 - [[· 9 Commutators, Solvable Groups and the Sylow Theorems]]
 - [[· 10 Semidirect Products]]
-- [[· 11 Representations]]
+- [[· 11 Representations and Maschke's Theorem]]
+- [[· 12 Characters]]
 
 ## Planned topics (syllabus)
 First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems ✓ (§52–§53); solvable groups ✓ (§48–§49; quotients and the derived-series criterion pending); composition series and the Jordan–Hölder theorem (begun, §50; proof to be finished Oct 30); simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups (orders ≤ 100 begun, §54; orders 30, 56, 90 on Problem Set 7); solvable and nilpotent groups; direct and semidirect products ✓ (§55–§56); central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups.
@@ -135,9 +138,10 @@ First half (before fall break): groups and group actions ✓; the orbit–stabil
 - [[Simple Groups of Order 60 Are A₅]] (§56.20)
 - [[Internal Direct Product Theorem]] (§57.1)
 - [[Internal and External Semidirect Products Agree]] (§58.6)
-- [[Classification of Groups of Order pq]] (§58.14)
-- [[Maschke's Theorem]] (§60.10)
-- [[Dimension of the Invariants]] (§64.10)
+- [[Classification of Groups of Order pq]] (§60.4)
+- [[Maschke's Theorem]] (§62.10)
+- [[Dimension of the Invariants]] (§66.10)
+- [[Dimension of Hom_G(V, W)]] (§68.4)
 
 ## Summaries
 - [[Group Theory Conventions and Notation]]: symbols and the course's conventions (right-to-left composition, $e$ for the identity, …), each linked to where it is defined.

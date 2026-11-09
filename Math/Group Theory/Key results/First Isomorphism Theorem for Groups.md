@@ -31,7 +31,7 @@ tags: [group-theory, hub]
 - [[§51 The Grid of Intersections#^prop-51-4|Proposition §51.4: Horizontal Edges Propagate]]
 - [[§56 Simple Groups of Small Order#^prop-56-7|Proposition §56.7: The Conjugation Homomorphism G → S_n_p]]
 - [[§56 Simple Groups of Small Order#^lem-56-8|Lemma §56.8: Homomorphisms That Leave A_N]]
-- [[§58 Semidirect Products#^prop-58-9|Proposition §58.9: Translations Form the Normal Subgroup]]
+- [[§59 Groups of Affine Maps#^prop-59-2|Proposition §59.2: Translations Form the Normal Subgroup]]
 
 ## Used in (Topology)
 - [[§27 Free Groups and Presentations#^def-27-6|Definition §27.6: Group Presentation]]

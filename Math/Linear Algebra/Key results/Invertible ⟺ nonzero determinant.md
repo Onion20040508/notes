@@ -23,7 +23,7 @@ tags: [linear-algebra, hub]
 - [[§3 Basic Examples of Groups#^def-3-6|Definition §3.6: General Linear Groups GLₙ(k)]]
 - [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-1|Proposition §32.1: GL_3(ℝ) Acting on ℝ³]]
 - [[§33 Conjugacy Classes#^ex-33-4|Example §33.4: Same Characteristic Polynomial as 3I, Not Similar to It]]
-- [[§59 Representations and Subrepresentations#^prop-59-3|Proposition §59.3: When k1,2,3 = U_1 oplus U_2]]
+- [[§61 Representations and Subrepresentations#^prop-61-3|Proposition §61.3: When k1,2,3 = U_1 oplus U_2]]
 
 ## Used in (Differentiable Manifolds)
 - [[§7 The Regular Value Theorem#^prop-7-7|Proposition §7.7: Regular Points When N ≤ m]]

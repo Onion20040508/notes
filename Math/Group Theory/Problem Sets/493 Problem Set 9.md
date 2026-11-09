@@ -24,7 +24,7 @@ tags: [group-theory, math493]
 
 ^hw-9-2
 
-*Treated in [[§60 Direct Sums and Maschke's Theorem|§60]] (Lemma [[§60 Direct Sums and Maschke's Theorem#^lem-60-5|§60.5]], Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-6|§60.6]]).*
+*Treated in [[§62 Direct Sums and Maschke's Theorem|§62]] (Lemma [[§62 Direct Sums and Maschke's Theorem#^lem-62-5|§62.5]], Proposition [[§62 Direct Sums and Maschke's Theorem#^prop-62-6|§62.6]]).*
 
 > [!question] Problem 9.3: Maschke's Theorem
 > In this problem, we prove Maschke's theorem. Let $G$ be a finite group and let $k$ be a field where $|G| \neq 0$. Let $W$ be a representation of $G$ and let $U$ be a subrepresentation. We must construct a second subrepresentation $V$ such that $W$ is the direct sum of $U$ and $V$.
@@ -47,7 +47,7 @@ tags: [group-theory, math493]
 
 ^hw-9-3
 
-*Treated in [[§60 Direct Sums and Maschke's Theorem|§60]] (Lemmas [[§60 Direct Sums and Maschke's Theorem#^lem-60-8|§60.8]] and [[§60 Direct Sums and Maschke's Theorem#^lem-60-9|§60.9]], the proof of Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]) and [[§59 Representations and Subrepresentations|§59]] (Proposition [[§59 Representations and Subrepresentations#^prop-59-4|§59.4]]).*
+*Treated in [[§62 Direct Sums and Maschke's Theorem|§62]] (Lemmas [[§62 Direct Sums and Maschke's Theorem#^lem-62-8|§62.8]] and [[§62 Direct Sums and Maschke's Theorem#^lem-62-9|§62.9]], the proof of Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]) and [[§61 Representations and Subrepresentations|§61]] (Proposition [[§61 Representations and Subrepresentations#^prop-61-4|§61.4]]).*
 
 > [!question] Problem 9.4: When Maschke's Theorem Fails
 > In this problem, we will see that Maschke's theorem becomes false when the hypotheses that $|G|$ is finite, or that $|G| \neq 0$ in $k$, are wrong.
@@ -57,7 +57,7 @@ tags: [group-theory, math493]
 
 ^hw-9-4
 
-*Treated in [[§60 Direct Sums and Maschke's Theorem|§60]] (Examples [[§60 Direct Sums and Maschke's Theorem#^ex-60-3|§60.3]] and [[§60 Direct Sums and Maschke's Theorem#^ex-60-4|§60.4]]).*
+*Treated in [[§62 Direct Sums and Maschke's Theorem|§62]] (Examples [[§62 Direct Sums and Maschke's Theorem#^ex-62-3|§62.3]] and [[§62 Direct Sums and Maschke's Theorem#^ex-62-4|§62.4]]).*
 
 > [!question] Problem 9.5: Affine Maps and Semidirect Products
 > In this problem, we will see a situation where we can understand semidirect products concretely in terms of matrices. Let $V$ be a vector space over a field $k$. Let $G$ be a subgroup of $GL(V)$ and let $L \subseteq V$ be a subgroup of the additive group of $V$ with the property that $gL = L$ for each $g \in G$. Define $\Gamma$ to be the set of affine linear transformations of the form $x \mapsto gx + \lambda$, for $g \in G$ and $\lambda \in L$.
@@ -69,4 +69,4 @@ tags: [group-theory, math493]
 
 ^hw-9-5
 
-*Treated in [[§58 Semidirect Products|§58]] (Proposition [[§58 Semidirect Products#^prop-58-8|§58.8]]; the lizard tiling's group in the form of Example [[§58 Semidirect Products#^ex-58-7|§58.7]]).*
+*Treated in [[§59 Groups of Affine Maps|§59]] (Proposition [[§59 Groups of Affine Maps#^prop-59-1|§59.1]]; the lizard tiling's group in the form of Example [[§59 Groups of Affine Maps#^ex-59-3|§59.3]]).*

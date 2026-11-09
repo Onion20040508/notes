@@ -31,7 +31,7 @@ This chapter sets up the language used everywhere else: the [[§1 The Definition
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[Cancellation Laws in Groups|Proposition §2.1: Cancellation, and What the Mixed Hypothesis Really Gives]]: 218 later results
-- [[§2 First Consequences of the Axioms#^prop-2-3|Proposition §2.3: Uniqueness of Inverses]]: 218 later results
-- [[§2 First Consequences of the Axioms#^prop-2-4|Proposition §2.4: Inverse of a Product]]: 218 later results
-- [[§2 First Consequences of the Axioms#^prop-2-7|Proposition §2.7: Unique Solvability of Linear Equations]]: 218 later results
+- [[Cancellation Laws in Groups|Proposition §2.1: Cancellation, and What the Mixed Hypothesis Really Gives]]: 225 later results
+- [[§2 First Consequences of the Axioms#^prop-2-3|Proposition §2.3: Uniqueness of Inverses]]: 225 later results
+- [[§2 First Consequences of the Axioms#^prop-2-4|Proposition §2.4: Inverse of a Product]]: 225 later results
+- [[§2 First Consequences of the Axioms#^prop-2-7|Proposition §2.7: Unique Solvability of Linear Equations]]: 225 later results

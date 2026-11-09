@@ -11,7 +11,7 @@ tags: [chapter, group-theory]
 
 The strategy of [[§43 Simple Groups|§43]] is to understand a group $G$ through a normal subgroup $N$ and the quotient $G/N$, and then to understand how the two pieces are put together. This chapter treats the simplest ways of putting pieces together. In a direct product the pieces do not interact. In a semidirect product one piece acts on the other by automorphisms, and the action is extra data: the same two pieces can be assembled in different ways.
 
-Two families of examples close the chapter ([[§58 Semidirect Products|§58]]). Groups of affine maps $x \mapsto gx + \lambda$ are semidirect products $L \rtimes G$ of translations by linear maps. Every group of order $pq$ is a semidirect product $\mathbb{Z}/q\mathbb{Z} \rtimes \mathbb{Z}/p\mathbb{Z}$, and the possible actions are the solutions of $a^p \equiv 1 \bmod q$.
+Two families of examples close the chapter. Groups of affine maps $x \mapsto gx + \lambda$ are semidirect products $L \rtimes G$ of translations by linear maps ([[§59 Groups of Affine Maps|§59]]). Every group of order $pq$ is a semidirect product $\mathbb{Z}/q\mathbb{Z} \rtimes \mathbb{Z}/p\mathbb{Z}$, and the possible actions are the solutions of $a^p \equiv 1 \bmod q$ ([[§60 Groups of Order pq as Semidirect Products|§60]]).
 
 **Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (3), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (3), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (2), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (3), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (8), [[· 9 Commutators, Solvable Groups and the Sylow Theorems|9 Commutators, Solvable Groups and the Sylow Theorems]] (14)
 **Used by:** [[· 9 Commutators, Solvable Groups and the Sylow Theorems|9 Commutators, Solvable Groups and the Sylow Theorems]] (3)
@@ -20,11 +20,13 @@ Two families of examples close the chapter ([[§58 Semidirect Products|§58]]). 
 ## Sections
 - [[§57 Internal and External Direct Products]]
 - [[§58 Semidirect Products]]
+- [[§59 Groups of Affine Maps]]
+- [[§60 Groups of Order pq as Semidirect Products]]
 
 ## Central results
 - [[Internal Direct Product Theorem]] (§57.1)
 - [[Internal and External Semidirect Products Agree]] (§58.6)
-- [[Classification of Groups of Order pq]] (§58.14)
+- [[Classification of Groups of Order pq]] (§60.4)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).

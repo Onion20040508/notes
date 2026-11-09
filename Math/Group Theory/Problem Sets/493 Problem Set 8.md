@@ -40,7 +40,7 @@ tags: [group-theory, math493]
 
 ^hw-8-3
 
-*Treated in [[§55 The Sylow Theorems|§55]] (Proposition [[§55 The Sylow Theorems#^prop-55-11|§55.11]], second proof) and [[§58 Semidirect Products|§58]] (Proposition [[§58 Semidirect Products#^prop-58-11|§58.11]], Lemma [[§58 Semidirect Products#^lem-58-12|§58.12]], Proposition [[§58 Semidirect Products#^prop-58-13|§58.13]], Theorem [[§58 Semidirect Products#^thm-58-14|§58.14]]).*
+*Treated in [[§55 The Sylow Theorems|§55]] (Proposition [[§55 The Sylow Theorems#^prop-55-11|§55.11]], second proof) and [[§60 Groups of Order pq as Semidirect Products|§60]] (Proposition [[§60 Groups of Order pq as Semidirect Products#^prop-60-1|§60.1]], Lemma [[§60 Groups of Order pq as Semidirect Products#^lem-60-2|§60.2]], Proposition [[§60 Groups of Order pq as Semidirect Products#^prop-60-3|§60.3]], Theorem [[§60 Groups of Order pq as Semidirect Products#^thm-60-4|§60.4]]).*
 
 > [!question] Problem 8.4: Simple Groups of Order $60$, Again
 > We try to repair Problem 7.1 on the last problem set. I don't think that it was false as stated, but it was certainly too hard and the hints weren't well-phrased. Let $G$ be a simple group of order $60$.
@@ -72,4 +72,4 @@ tags: [group-theory, math493]
 
 ^hw-8-5
 
-*Treated in [[§64 Invariant Vectors|§64]] (Definition [[§64 Invariant Vectors#^def-64-1|§64.1]], Proposition [[§64 Invariant Vectors#^prop-64-1|§64.1]], Corollary [[§64 Invariant Vectors#^cor-64-2|§64.2]], Proposition [[§64 Invariant Vectors#^prop-64-3|§64.3]]).*
+*Treated in [[§66 Invariant Vectors|§66]] (Definition [[§66 Invariant Vectors#^def-66-1|§66.1]], Proposition [[§66 Invariant Vectors#^prop-66-1|§66.1]], Corollary [[§66 Invariant Vectors#^cor-66-2|§66.2]], Proposition [[§66 Invariant Vectors#^prop-66-3|§66.3]]).*

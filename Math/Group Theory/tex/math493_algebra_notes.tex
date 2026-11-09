@@ -327,9 +327,10 @@ $U^\perp$, \ $P_U$ & Orthogonal complement of $U$; orthogonal projection onto $U
 $V_1 \oplus \cdots \oplus V_r$ & Direct sum of several subspaces: every $v$ is uniquely $v_1 + \cdots + v_r$, $v_i \in V_i$ (\ref{sec:simple-representations}). \\
 $M^\dagger = \bar M^T$ & Conjugate transpose (Definition~\ref{def:conjugate-transpose}); $M$ is Hermitian if $M = M^\dagger$, unitary if $M^\dagger M = I$ (\ref{sec:hermitian-forms}). \\
 $V^G$, \ $\chi_V$ & Invariant vectors of a representation; its character $\chi_V(g) = \operatorname{Tr}\rho_V(g)$, not a character in the sense of \ref{sec:characters} unless $\dim V = 1$ (\ref{sec:invariants}, \ref{sec:characters-of-representations}). \\
+$\operatorname{Hom}(V, W)$, \ $\operatorname{Hom}_G(V, W)$ & Linear maps $V \to W$, a representation by $g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1})$; its invariant vectors, the homomorphisms of representations (\ref{sec:hom-representation}). \\
 $\operatorname{Tr}$ & Trace of a matrix or of a linear map (\ref{sec:invariants}). \\
 $N \rtimes_\varphi S$, \ $S \ltimes_\varphi N$ & Semidirect product, $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$ (\ref{sec:semidirect-products}). \\
-$\sigma_{(g, \lambda)}$, \ $\operatorname{Aff}(V)$ & The affine map $x \mapsto gx + \lambda$; the group of all affine maps of $V$, $\cong V \rtimes GL(V)$ (\ref{sub:affine-maps}). \\
+$\sigma_{(g, \lambda)}$, \ $\operatorname{Aff}(V)$ & The affine map $x \mapsto gx + \lambda$; the group of all affine maps of $V$, $\cong V \rtimes GL(V)$ (\ref{sec:affine-maps}). \\
 $HN$ & Product set $\{hn : h \in H,\ n \in N\}$ (\ref{sec:second-iso}). \\
 $X \sqcup Y$ & Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$ (\ref{sec:representatives}). \\
 $\hookrightarrow$, \ $\twoheadrightarrow$ & An injective map; a surjective map. \\
@@ -7427,7 +7428,7 @@ Hence $\phi$ is an isomorphism, and $G \cong Q \times P$.
 \end{proof}
 
 \begin{exbox}[{When $q \equiv 1 \pmod p$: $S_3$}]\label{ex:order-pq-hypothesis-s3}
-The hypothesis $q \not\equiv 1 \pmod p$ of Proposition~\ref{prop:groups-order-pq} cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic, as it is not even abelian: $(1\,2)(2\,3) = (1\,2\,3) \neq (1\,3\,2) = (2\,3)(1\,2)$. There $n_3 = 1$ but $n_2 = 3$ (Example~\ref{ex:sylow-s3-s4}), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step. What remains is a semidirect product: $S_3 \cong \mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ (Example~\ref{ex:s3-external-semidirect}). For every group of order $pq$ this is Proposition~\ref{prop:order-pq-semidirect} (PS 8.3), in \ref{sub:order-pq-semidirect}.
+The hypothesis $q \not\equiv 1 \pmod p$ of Proposition~\ref{prop:groups-order-pq} cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic, as it is not even abelian: $(1\,2)(2\,3) = (1\,2\,3) \neq (1\,3\,2) = (2\,3)(1\,2)$. There $n_3 = 1$ but $n_2 = 3$ (Example~\ref{ex:sylow-s3-s4}), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step. What remains is a semidirect product: $S_3 \cong \mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ (Example~\ref{ex:s3-external-semidirect}). For every group of order $pq$ this is Proposition~\ref{prop:order-pq-semidirect} (PS 8.3), in \ref{sec:order-pq-semidirect}.
 \srcline{not from lecture}
 \end{exbox}
 
@@ -8448,7 +8449,7 @@ where $\mathbb{H}$ denotes the quaternions (notation for the third family varies
 
 \textit{Source: Lecture and Worksheet 11 (Mon Oct 26); the whole worksheet was done on the boards in class. The board work is not in the notes, so the proofs below are written out in standard form.}
 
-The strategy of \ref{sec:simple} is to understand a group $G$ through a normal subgroup $N$ and the quotient $G/N$, and then to understand how the two pieces are put together. This chapter treats the simplest ways of putting pieces together. In a direct product the pieces do not interact. In a semidirect product one piece acts on the other by automorphisms, and the action is extra data: the same two pieces can be assembled in different ways.
+The strategy of \ref{sec:simple} is to understand a group $G$ through a normal subgroup $N$ and the quotient $G/N$, and then to understand how the two pieces are put together. This chapter treats the simplest ways of putting pieces together. In a direct product the pieces do not interact. In a semidirect product one piece acts on the other by automorphisms, and the action is extra data: the same two pieces can be assembled in different ways. The chapter ends with two families of examples: groups of affine maps $x \mapsto gx + \lambda$ (\ref{sec:affine-maps}) and the groups of order $pq$ (\ref{sec:order-pq-semidirect}).
 
 \section{Internal and External Direct Products}\label{sec:internal-direct-products}
 
@@ -8794,7 +8795,10 @@ Conventions differ on the order: $N \rtimes S$ and $S \ltimes N$ mean the same g
 \end{rembox}
 
 
-\subsection{Groups of Affine Maps}\label{sub:affine-maps}
+% ============================================================================
+% SECTION: GROUPS OF AFFINE MAPS (Problem Set 9, Problem 9.5)
+% ============================================================================
+\section{Groups of Affine Maps}\label{sec:affine-maps}
 
 \textit{Source: Problem Set 9, Problem 9.5 (submitted). The examples after the proposition are not from class.}
 
@@ -9045,7 +9049,10 @@ All the groups of affine maps above are solvable, since in each of them $L$ and 
 \textit{(Not from class.)} Let $p < q$ be primes and $|G| = pq$. The number $n_q$ of Sylow $q$-subgroups divides $p$ and is $\equiv 1 \pmod q$ (The Number of Sylow Subgroups Divides $|G|$, Corollary~\ref{cor:sylow-number-divides}). Since $p < q$, the only divisor of $p$ that is $\equiv 1 \pmod q$ is $1$, so $n_q = 1$. The Sylow $q$-subgroup $Q$, which exists by the First Sylow Theorem (Theorem~\ref{thm:sylow-first}), is therefore normal (A Normal Sylow Subgroup Is the Only One, Corollary~\ref{cor:sylow-normal-unique}(2)). $Q$ has prime order $q$ and $G/Q$ has prime order $p$. A group of prime order is cyclic, generated by any non-identity element by Lagrange's theorem, hence abelian and solvable. By Corollary~\ref{cor:solvable-iff-normal-quotient}, $G$ is solvable. This covers the case $q \equiv 1 \pmod p$ as well, where $G$ need not be cyclic (Example~\ref{ex:order-pq-hypothesis-s3}).
 \end{exbox}
 
-\subsection{\texorpdfstring{Groups of Order $pq$ as Semidirect Products}{Groups of Order pq as Semidirect Products}}\label{sub:order-pq-semidirect}
+% ============================================================================
+% SECTION: GROUPS OF ORDER pq AS SEMIDIRECT PRODUCTS (Problem Set 8, Problem 8.3)
+% ============================================================================
+\section{\texorpdfstring{Groups of Order $pq$ as Semidirect Products}{Groups of Order pq as Semidirect Products}}\label{sec:order-pq-semidirect}
 
 \textit{Source: Problem Set 8, Problem 8.3 (submitted Thu Nov 5). The example at the end is not from class.}
 
@@ -9184,7 +9191,7 @@ Part (1) is Proposition~\ref{prop:groups-order-pq}. In part (2), every group of 
 % ============================================================================
 \part{Representation Theory}
 
-\chapter{Representations}\label{ch:representations}
+\chapter{Representations and Maschke's Theorem}\label{ch:representations}
 
 \textit{Source: Lecture and Worksheet 13 (Mon Nov 2).}
 
@@ -10380,13 +10387,20 @@ Representation theory also proves theorems about groups. A first example: every 
 \end{rembox}
 
 % ============================================================================
+% CHAPTER: CHARACTERS (Worksheets 15 and 16; lecture Mon Nov 9)
+% ============================================================================
+\chapter{Characters}\label{ch:rep-characters}
+
+\textit{Source: Lecture and Worksheet 15 (Mon Nov 9); Worksheet 16.}
+
+By Chapter~\ref{ch:representations} (\ref{sec:simple-representations}), representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). The chapter starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces (\ref{sec:invariants}). The same count, applied to the representation $\operatorname{Hom}(V, W)$, gives the number of independent homomorphisms between two representations (\ref{sec:hom-representation}).
+
+% ============================================================================
 % SECTION: INVARIANT VECTORS (Worksheet 15; lecture Mon Nov 9)
 % ============================================================================
 \section{Invariant Vectors}\label{sec:invariants}
 
 \textit{Source: Lecture and Worksheet 15 (Mon Nov 9); Problem Set 8, Problem 8.5 (submitted Thu Nov 5) for the trace. Reference: Axler, \emph{Linear Algebra Done Right} (projections, trace).}
-
-By \ref{sec:simple-representations}, representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). This section starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces.
 
 A representation always contains the vectors that no element of $G$ moves. For a finite group, averaging over $G$ is an idempotent onto these vectors. So they split off as a direct summand, and their number, the dimension of that summand, is the average of the traces of the matrices $\rho_V(g)$. Worksheet 15 opens with the linear algebra: idempotents (Definition~\ref{def:idempotent}) and WS 15.1, that an idempotent splits $V$ as kernel $\oplus$ image (Proposition~\ref{prop:idempotent-kernel-image}). Both are in \ref{sec:maschke}, with the proof from Problem Set 9 and the lecture's remark on what needs a basis. This section starts with the trace of a matrix (Problem Set 8, Problem 8.5) and the trace of an idempotent.
 
@@ -10712,7 +10726,7 @@ Let $V$ be a finite-dimensional representation of $G$. Then
 
 \textbf{(2)} \textit{(Board 11/9.)} Since $\rho_V$ is a homomorphism (Representations Are Homomorphisms to $GL(V)$, Proposition~\ref{prop:representations-homomorphisms-glv}),
 \[ \rho_V(hgh^{-1}) = \rho_V(h)\,\rho_V(g)\,\rho_V(h)^{-1}, \]
-and $\operatorname{Tr}(SAS^{-1}) = \operatorname{Tr}(A)$ for invertible $S$, equivalently $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ (the paragraph after Definition~\ref{def:trace-linear-map}). Hence $\chi_V(hgh^{-1}) = \operatorname{Tr}\rho_V(g) = \chi_V(g)$.
+and $\operatorname{Tr}(SAS^{-1}) = \operatorname{Tr}(A)$ for invertible $S$ (Corollary~\ref{cor:trace-conjugation}, from $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$, Proposition~\ref{prop:trace-ab-ba}). Hence $\chi_V(hgh^{-1}) = \operatorname{Tr}\rho_V(g) = \chi_V(g)$.
 \end{proof}
 
 So a character is determined by one value per conjugacy class, which is much less data than one value per element: groups usually have many fewer conjugacy classes than elements. This is the analogue of Characters Are Constant on Conjugacy Classes (Proposition~\ref{prop:characters-constant-conjugacy-classes}) for the new meaning of the word, with a different reason: the trace is invariant under conjugation, while a homomorphism to an abelian group is constant on conjugacy classes because the target is commutative.
@@ -10803,6 +10817,194 @@ permutation, $\mathbb{R}^3 = \mathbb{R}(1,1,1) \oplus U$ & $3$ & $1$ & $0$
 \textit{(Not from class.)} The character of the permutation representation $k\{1,2,3\} = k^3$ of $S_3$ takes the values $3$, $1$, $0$ on the three conjugacy classes (Example~\ref{ex:characters-s3}). The value $0$ at $(1\,2\,3)$ does not lie in $k^\times$, so $\chi$ is not a homomorphism $S_3 \to k^\times$. And $\chi(e) = 3 \neq 1$ whenever $2 \neq 0$ in $k$, while a homomorphism sends $e$ to $1$.
 \end{exbox}
 
+% ============================================================================
+% SECTION: ACTIONS ON MATRIX SPACES (Worksheet 16; handed out Mon Nov 9)
+% ============================================================================
+\section{Actions on Matrix Spaces}\label{sec:hom-representation}
+
+\textit{Source: Worksheet 16 (handed out Mon Nov 9). The worksheet's problems and its theorem are stated here; the lecture on it has not been held yet, so all proofs are filled in and will be replaced by the board proofs. Reference: Axler, \emph{Linear Algebra Done Right} (matrices of linear maps, eigenvalues).}
+
+Theorem~\ref{thm:dim-invariants-character} computes the dimension of the invariant vectors of any representation from its character. This section applies it to the representation $\operatorname{Hom}(V, W)$, whose invariant vectors are the homomorphisms of representations $V \to W$ (Proposition~\ref{prop:hom-invariants}). The result is a formula for the number of independent homomorphisms between two representations in terms of their characters. Over $\mathbb{R}$ and $\mathbb{C}$ the formula simplifies, because there $\chi_V(g^{-1})$ is $\chi_V(g)$ or its complex conjugate.
+
+\begin{defbox}[{The Representation $\operatorname{Hom}(V, W)$}]\label{def:hom-representation}
+Let $V$ and $W$ be representations of a group $G$ over $k$, and let $\operatorname{Hom}(V, W)$ be the vector space of linear maps from $V$ to $W$. For $g \in G$ and $\alpha \in \operatorname{Hom}(V, W)$ set
+\[ g \ast \alpha = \rho_W(g) \circ \alpha \circ \rho_V(g^{-1}). \]
+\srcline{WS 16}
+\end{defbox}
+
+\textbf{Transcription note.} Worksheet 16 prints $g \ast \alpha = \rho_V(g) \circ \alpha \circ \rho_W(g^{-1})$. For $\alpha: V \to W$ these maps cannot be composed unless $V = W$: $\rho_W(g^{-1})$ acts on $W$, but $\alpha$ is defined on $V$. With $V$ and $W$ exchanged, as in Definition~\ref{def:hom-representation}, the composition makes sense, and the invariant maps are the $\alpha$ with $\alpha \circ \rho_V = \rho_W \circ \alpha$, as the worksheet says next. This is the action $(g \cdot A)(w) = g\,A(g^{-1}w)$ of Proposition~\ref{prop:hom-invariants}(1). The exchange also affects WS 16.2 (Proposition~\ref{prop:character-hom}) but not the worksheet's theorem (Theorem~\ref{thm:dim-hom-g}).
+
+\begin{propbox}[{$\operatorname{Hom}(V, W)$ Is a Representation}]\label{prop:hom-is-representation}
+The rule of Definition~\ref{def:hom-representation} is an action of $G$ on $\operatorname{Hom}(V, W)$ by linear maps. So $\operatorname{Hom}(V, W)$ is a representation of $G$.
+\srcline{WS 16.1}
+\end{propbox}
+
+\begin{proof}
+\textit{(Filled in.)} This is Proposition~\ref{prop:hom-invariants}(1), with $V$, $W$ in place of $W$, $W'$: there the action is written $(g \cdot A)(w) = g\,A(g^{-1}w)$, which is $\big(\rho_W(g) \circ A \circ \rho_V(g^{-1})\big)(w)$. In the present notation the check of the action axioms reads as follows. Since $\rho_V(e) = \mathrm{id}_V$ and $\rho_W(e) = \mathrm{id}_W$, $e \ast \alpha = \alpha$. Since $\rho_V$ and $\rho_W$ are homomorphisms (Proposition~\ref{prop:representations-homomorphisms-glv}),
+\[ g \ast (h \ast \alpha) = \rho_W(g)\,\rho_W(h) \circ \alpha \circ \rho_V(h^{-1})\,\rho_V(g^{-1}) = \rho_W(gh) \circ \alpha \circ \rho_V\big((gh)^{-1}\big) = (gh) \ast \alpha. \]
+Each map $\alpha \mapsto g \ast \alpha$ is linear, because composition with a fixed linear map on either side is linear in $\alpha$.
+\end{proof}
+
+\begin{defbox}[{$\operatorname{Hom}_G(V, W)$}]\label{def:hom-g}
+Let $V$ and $W$ be representations of $G$. The set of homomorphisms of $G$-representations $V \to W$ (Definition~\ref{def:homomorphism-representations}), that is, of linear maps $\alpha: V \to W$ with $\alpha \circ \rho_V(g) = \rho_W(g) \circ \alpha$ for all $g \in G$, is written $\operatorname{Hom}_G(V, W)$.
+\srcline{WS 16}
+\end{defbox}
+
+By Proposition~\ref{prop:hom-invariants}(2), $\operatorname{Hom}_G(V, W)$ is the space of invariant vectors $\operatorname{Hom}(V, W)^G$ of the representation of Definition~\ref{def:hom-representation}. In particular it is a subspace of $\operatorname{Hom}(V, W)$ (Lemma~\ref{lem:invariants-subrepresentation}).
+
+\begin{lembox}[{The Trace of $\alpha \mapsto S \circ \alpha \circ R$}]\label{lem:trace-sandwich}
+Let $V$ and $W$ be finite-dimensional vector spaces over $k$, and let $R: V \to V$ and $S: W \to W$ be linear. The map
+\[ T: \operatorname{Hom}(V, W) \to \operatorname{Hom}(V, W), \qquad T(\alpha) = S \circ \alpha \circ R, \]
+is linear, and $\operatorname{Tr}(T) = \operatorname{Tr}(S)\operatorname{Tr}(R)$.
+\srcline{not from class; the computation behind WS 16.2}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} In the basis of matrix units $E_{ij}$, the coefficient of $E_{ij}$ in $S E_{ij} R$ is $S_{ii}R_{jj}$, and the sum of these over all $i, j$ factors.\par
+\textit{(Filled in, following the worksheet's hint to name the matrices.)} $T$ is linear, since composition with fixed linear maps is linear in $\alpha$. Choose a basis $v_1, \ldots, v_n$ of $V$ and a basis $w_1, \ldots, w_m$ of $W$. Sending a linear map to its matrix in these bases identifies $\operatorname{Hom}(V, W)$ with the space of $m \times n$ matrices, and composition of maps becomes the product of matrices (Axler, Ch.~3). Write $R = (R_{jl})$, an $n \times n$ matrix, and $S = (S_{ki})$, an $m \times m$ matrix. Then $T$ becomes $X \mapsto SXR$ on $m \times n$ matrices.
+
+A basis of the $m \times n$ matrices is given by the matrix units $E_{ij}$, $1 \leq i \leq m$, $1 \leq j \leq n$, where $E_{ij}$ has the entry $1$ in position $(i, j)$ and $0$ elsewhere; every matrix $X$ is $\sum_{i,j} X_{ij}E_{ij}$, so the coefficient of $E_{ij}$ in $X$ is the entry $X_{ij}$. The $(k, l)$ entry of $SE_{ij}R$ is
+\[ (SE_{ij}R)_{kl} = \sum_{a, b} S_{ka}\,(E_{ij})_{ab}\,R_{bl} = S_{ki}R_{jl}, \]
+because $(E_{ij})_{ab}$ is $1$ for $(a, b) = (i, j)$ and $0$ otherwise. The diagonal entry of the matrix of $T$ at the basis vector $E_{ij}$ is the coefficient of $E_{ij}$ in $T(E_{ij}) = SE_{ij}R$, that is, its $(i, j)$ entry $S_{ii}R_{jj}$. The trace of $T$ is the sum of these diagonal entries (Definition~\ref{def:trace-linear-map}):
+\[ \operatorname{Tr}(T) = \sum_{i=1}^m \sum_{j=1}^n S_{ii}R_{jj} = \Big(\sum_{i=1}^m S_{ii}\Big)\Big(\sum_{j=1}^n R_{jj}\Big) = \operatorname{Tr}(S)\operatorname{Tr}(R). \]
+\end{proof}
+
+\begin{propbox}[{The Character of $\operatorname{Hom}(V, W)$}]\label{prop:character-hom}
+Let $V$ and $W$ be finite-dimensional representations of $G$ over $k$. Then for every $g \in G$
+\[ \chi_{\operatorname{Hom}(V, W)}(g) = \operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = \big(\operatorname{Tr}\rho_W(g)\big)\big(\operatorname{Tr}\rho_V(g^{-1})\big) = \chi_W(g)\,\chi_V(g^{-1}). \]
+\srcline{WS 16.2, with $V$ and $W$ exchanged (see the transcription note above)}
+\end{propbox}
+
+\begin{proof}
+\textit{(Filled in.)} By Definition~\ref{def:hom-representation}, $\rho_{\operatorname{Hom}(V, W)}(g)$ is the map $\alpha \mapsto S \circ \alpha \circ R$ with $S = \rho_W(g)$ and $R = \rho_V(g^{-1})$. By Lemma~\ref{lem:trace-sandwich} its trace is $\operatorname{Tr}(S)\operatorname{Tr}(R) = \chi_W(g)\,\chi_V(g^{-1})$ (Definition~\ref{def:character-representation}).
+\end{proof}
+
+Worksheet 16.2 prints $\operatorname{Tr}\rho_{\operatorname{Hom}(V, W)}(g) = (\operatorname{Tr}\rho_V(g))(\operatorname{Tr}\rho_W(g^{-1}))$, which is the formula for the action as the worksheet prints it. The two versions differ by replacing $g$ with $g^{-1}$, and they have the same sum over $G$. So the theorem holds as printed.
+
+\begin{thmbox}[{Dimension of $\operatorname{Hom}_G(V, W)$}]\label{thm:dim-hom-g}
+Let $k$ be a field containing $\mathbb{Q}$, let $G$ be a finite group, and let $V$ and $W$ be finite-dimensional representations of $G$ over $k$, with characters $\chi_V$ and $\chi_W$. Then
+\[ \dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_{g \in G} \chi_V(g)\,\chi_W(g^{-1}). \]
+\srcline{WS 16, theorem}
+\end{thmbox}
+
+\begin{proof}
+\textit{Idea:} $\operatorname{Hom}_G(V, W)$ is the space of invariant vectors of $\operatorname{Hom}(V, W)$, whose dimension is the average of the character of $\operatorname{Hom}(V, W)$.\par
+\textit{(Filled in, along the worksheet's outline.)} $\operatorname{Hom}(V, W)$ is a finite-dimensional representation of $G$ (Proposition~\ref{prop:hom-is-representation}; its dimension is $\dim V \cdot \dim W$, the number of matrix units in the proof of Lemma~\ref{lem:trace-sandwich}), and $\operatorname{Hom}_G(V, W) = \operatorname{Hom}(V, W)^G$ (Proposition~\ref{prop:hom-invariants}(2)). By Dimension of the Invariants (Theorem~\ref{thm:dim-invariants-character}) and Proposition~\ref{prop:character-hom},
+\[ \dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_{g \in G} \chi_{\operatorname{Hom}(V, W)}(g) = \frac{1}{|G|}\sum_{g \in G} \chi_W(g)\,\chi_V(g^{-1}). \]
+Inversion $g \mapsto g^{-1}$ is a bijection of $G$, so the sum does not change when $g$ is replaced by $g^{-1}$ in every term:
+\[ \frac{1}{|G|}\sum_{g \in G} \chi_W(g)\,\chi_V(g^{-1}) = \frac{1}{|G|}\sum_{g \in G} \chi_W(g^{-1})\,\chi_V(g). \]
+\end{proof}
+
+\begin{corbox}[{Homomorphisms in Both Directions}]\label{cor:hom-g-symmetric}
+In the setting of Theorem~\ref{thm:dim-hom-g}, $\dim \operatorname{Hom}_G(V, W) = \dim \operatorname{Hom}_G(W, V)$.
+\srcline{not from class}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from class.)} By Theorem~\ref{thm:dim-hom-g} for the pair $(W, V)$, $\dim \operatorname{Hom}_G(W, V) = \frac{1}{|G|}\sum_{g} \chi_W(g)\,\chi_V(g^{-1})$. The last display of the proof of Theorem~\ref{thm:dim-hom-g} shows that this equals $\frac{1}{|G|}\sum_{g} \chi_V(g)\,\chi_W(g^{-1}) = \dim \operatorname{Hom}_G(V, W)$.
+\end{proof}
+
+\subsection{\texorpdfstring{Characters at $g^{-1}$ over $\mathbb{R}$ and $\mathbb{C}$}{Characters at the Inverse over R and C}}\label{sub:characters-at-inverses}
+
+The formula of Theorem~\ref{thm:dim-hom-g} simplifies when the field is $\mathbb{R}$ or $\mathbb{C}$.
+
+\begin{propbox}[{Characters of Real Representations at Inverses}]\label{prop:character-inverse-real}
+Let $G$ be a finite group and $V$ a finite-dimensional representation of $G$ over $\mathbb{R}$. Choose a basis of $V$ in which $G$ acts by orthogonal matrices (Corollary~\ref{cor:orthogonal-matrices}). In this basis, for every $g \in G$,
+\[ \rho_V(g^{-1}) = \rho_V(g)^{-1} = \rho_V(g)^T. \]
+Consequently $\chi_V(g^{-1}) = \chi_V(g)$ for every $g \in G$.
+\srcline{WS 16.3}
+\end{propbox}
+
+\begin{proof}
+\textit{(Filled in.)} \emph{Why such a basis exists.} This is Finite Groups Act by Orthogonal Matrices (Corollary~\ref{cor:orthogonal-matrices}): $G$ preserves the averaged inner product (Proposition~\ref{prop:averaged-inner-product-preserved}), and in a basis that is orthonormal for it every $\rho_V(g)$ is an orthogonal matrix.
+
+\emph{The two equalities.} Since $\rho_V$ is a homomorphism (Proposition~\ref{prop:representations-homomorphisms-glv}), $\rho_V(g^{-1})\rho_V(g) = \rho_V(e) = I$, so $\rho_V(g^{-1}) = \rho_V(g)^{-1}$. Write $M = \rho_V(g)$. It is orthogonal, $M^TM = I$, so $M^{-1} = M^T$.
+
+\emph{The characters.} A matrix and its transpose have the same diagonal entries, so $\operatorname{Tr}(M^T) = \operatorname{Tr}(M)$ (Definition~\ref{def:trace-matrix}). The trace of a linear map does not depend on the basis (Corollary~\ref{cor:trace-conjugation}), so it may be computed in this basis:
+\[ \chi_V(g^{-1}) = \operatorname{Tr}\rho_V(g^{-1}) = \operatorname{Tr}(M^T) = \operatorname{Tr}(M) = \chi_V(g). \]
+\end{proof}
+
+\begin{propbox}[{Complex Matrices of Finite Order}]\label{prop:finite-order-matrix}
+Let $A$ be an $n \times n$ complex matrix with $A^m = I$ for some positive integer $m$.
+\begin{enumerate}
+    \item $A$ is diagonalizable, and every eigenvalue $\lambda$ of $A$ satisfies $\lambda^m = 1$; in particular $|\lambda| = 1$.
+    \item $\operatorname{Tr}(A^{-1}) = \overline{\operatorname{Tr}(A)}$.
+\end{enumerate}
+\srcline{WS 16.4}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $A$ generates a representation of the finite group $\mathbb{Z}/m\mathbb{Z}$ on $\mathbb{C}^n$; Maschke's theorem splits off one eigenvector at a time. On the unit circle, $\lambda^{-1} = \bar\lambda$.\par
+\textit{(Filled in; the worksheet's hint for (2) is to use the eigenvalues.)} $A$ is invertible, with inverse $A^{m-1}$.
+
+\textbf{(1) Eigenvalues.} Let $Av = \lambda v$ with $v \neq 0$. Then $v = A^mv = \lambda^m v$, so $\lambda^m = 1$. Taking absolute values, $|\lambda|^m = 1$, and $|\lambda|$ is a nonnegative real number, so $|\lambda| = 1$.
+
+\textbf{(1) Diagonalizable.} We show by induction on $\dim U$ that every subspace $U \subseteq \mathbb{C}^n$ with $AU \subseteq U$ has a basis of eigenvectors of $A$; the case $U = \mathbb{C}^n$ is the claim. If $U = \{0\}$ there is nothing to show. Let $U \neq \{0\}$. The rule $j \mapsto (A|_U)^j$ is well defined on $j \bmod m$, because $A^m = I$, and it is a homomorphism $\mathbb{Z}/m\mathbb{Z} \to GL(U)$. So $U$ is a representation of the finite group $\mathbb{Z}/m\mathbb{Z}$ over $\mathbb{C}$ (Proposition~\ref{prop:representations-homomorphisms-glv}), and its subrepresentations are the subspaces $U' \subseteq U$ with $AU' \subseteq U'$ (such a subspace is preserved by every power of $A$). A linear map from a nonzero finite-dimensional complex vector space to itself has an eigenvector (Axler, Ch.~5); let $v \in U$ be an eigenvector of $A|_U$. The line $\mathbb{C}v$ is a subrepresentation. Since $|\mathbb{Z}/m\mathbb{Z}| = m \neq 0$ in $\mathbb{C}$, Maschke's theorem (Theorem~\ref{thm:maschke}) gives a subrepresentation $U'$ with $U = \mathbb{C}v \oplus U'$. Then $AU' \subseteq U'$ and $\dim U' = \dim U - 1$, so by induction $U'$ has a basis of eigenvectors of $A$. Together with $v$ it is a basis of $U$ (Bases of a Direct Sum, Proposition~\ref{prop:bases-direct-sum}).
+
+\textbf{(2)} By (1) there is an invertible matrix $P$ with $A = PDP^{-1}$, $D = \operatorname{diag}(\lambda_1, \ldots, \lambda_n)$, where the $\lambda_i$ are the eigenvalues of $A$ with multiplicity. Then $A^{-1} = PD^{-1}P^{-1}$ with $D^{-1} = \operatorname{diag}(\lambda_1^{-1}, \ldots, \lambda_n^{-1})$. Since $|\lambda_i| = 1$, $\lambda_i\overline{\lambda_i} = |\lambda_i|^2 = 1$, so $\lambda_i^{-1} = \overline{\lambda_i}$. By The Trace of a Diagonalizable Matrix (Proposition~\ref{prop:trace-diagonalizable}, PS 8.5(3)), applied to $A^{-1}$ and to $A$,
+\[ \operatorname{Tr}(A^{-1}) = \sum_{i=1}^n \lambda_i^{-1} = \sum_{i=1}^n \overline{\lambda_i} = \overline{\sum_{i=1}^n \lambda_i} = \overline{\operatorname{Tr}(A)}. \]
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\draw[->, black!55, thin] (-2.5,0) -- (2.7,0) node[right, font=\scriptsize] {$\operatorname{Re}$};
+\draw[->, black!55, thin] (0,-2.4) -- (0,2.5) node[above, font=\scriptsize] {$\operatorname{Im}$};
+\draw[black!40] (0,0) circle (1.8);
+\foreach \k in {0,...,5} { \fill[black!55] ({60*\k}:1.8) circle (1.2pt); }
+\node[font=\scriptsize, black!55, anchor=north west] at (1.8,0) {$1$};
+\draw[->, very thick, blue!70!black] (0,0) -- (60:1.8) node[above right=-1pt, font=\scriptsize] {$\lambda_1 = e^{2\pi i/6}$};
+\draw[->, very thick, blue!70!black] (0,0) -- (120:1.8) node[above left=-1pt, font=\scriptsize] {$\lambda_2 = e^{2\pi i \cdot 2/6}$};
+\draw[->, very thick, red!70!black] (0,0) -- (-60:1.8) node[below right=-1pt, font=\scriptsize] {$\lambda_1^{-1} = \overline{\lambda_1}$};
+\draw[->, very thick, red!70!black] (0,0) -- (-120:1.8) node[below left=-1pt, font=\scriptsize] {$\lambda_2^{-1} = \overline{\lambda_2}$};
+\draw[<->, orange!85!black, thin, dashed] (60:1.55) -- (-60:1.55);
+\draw[<->, orange!85!black, thin, dashed] (120:1.55) -- (-120:1.55);
+\node[font=\scriptsize, align=left, anchor=west] at (3.6,0.9) {$A = \operatorname{diag}(\lambda_1, \lambda_2)$, \ $A^6 = I$};
+\node[font=\scriptsize, align=left, anchor=west, blue!70!black] at (3.6,0.2) {$\operatorname{Tr}A = \lambda_1 + \lambda_2 = i\sqrt{3}$};
+\node[font=\scriptsize, align=left, anchor=west, red!70!black] at (3.6,-0.5) {$\operatorname{Tr}A^{-1} = \overline{\lambda_1} + \overline{\lambda_2} = -i\sqrt{3}$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Proposition~\ref{prop:finite-order-matrix} for $A = \operatorname{diag}(\lambda_1, \lambda_2)$ with $\lambda_1 = e^{2\pi i/6}$ and $\lambda_2 = e^{2\pi i \cdot 2/6}$, so that $A^6 = I$. The eigenvalues of a matrix with $A^6 = I$ are among the six marked points of the unit circle. Inverting a point of the unit circle reflects it in the real axis (dashed), which is complex conjugation. So the eigenvalues of $A^{-1}$ (red) are the conjugates of those of $A$ (blue), and the two traces are conjugate: $i\sqrt{3}$ and $-i\sqrt{3}$.
+%% <<< END ADDED
+
+\begin{corbox}[{Characters of Complex Representations at Inverses}]\label{cor:character-inverse-complex}
+Let $G$ be a finite group and $V$ a finite-dimensional complex representation of $G$. Then for every $g \in G$
+\[ \chi_V(g^{-1}) = \overline{\chi_V(g)}. \]
+\srcline{WS 16.5}
+\end{corbox}
+
+\begin{proof}
+\textit{(Filled in.)} Choose a basis of $V$ and let $A$ be the matrix of $\rho_V(g)$ in it. Let $m = |G|$. Then $g^m = e$ (Corollary~\ref{cor:order-element-divides-g-g-g-e}), so $A^m$ is the matrix of $\rho_V(g)^m = \rho_V(g^m) = \rho_V(e)$, the identity matrix. The matrix of $\rho_V(g^{-1}) = \rho_V(g)^{-1}$ is $A^{-1}$. By Proposition~\ref{prop:finite-order-matrix}(2),
+\[ \chi_V(g^{-1}) = \operatorname{Tr}(A^{-1}) = \overline{\operatorname{Tr}(A)} = \overline{\chi_V(g)}. \]
+\end{proof}
+
+\begin{proof}[Second proof (unitary matrices; outline)]
+\textit{(The route Worksheet 16 mentions for readers who know sesquilinear forms. It rests on the statement in the remark \emph{Why Not Bilinear, and Unitary Matrices} in \ref{sec:hermitian-forms}, whose averaging argument is not written out in these notes.)} A finite group acting on a finite-dimensional complex vector space preserves a positive definite Hermitian form, and in a basis that is orthonormal for it (Proposition~\ref{prop:gram-schmidt-hermitian}) every $M = \rho_V(g)$ is unitary, $M^\dagger M = I$ (Definition~\ref{def:conjugate-transpose}). As in the proof of Proposition~\ref{prop:character-inverse-real}, $\rho_V(g^{-1}) = M^{-1} = M^\dagger$. The diagonal entries of $M^\dagger = \bar M^T$ are the conjugates of those of $M$, so $\chi_V(g^{-1}) = \operatorname{Tr}(M^\dagger) = \overline{\operatorname{Tr}(M)} = \overline{\chi_V(g)}$.
+\end{proof}
+
+\begin{corbox}[{Dimension of $\operatorname{Hom}_G(V, W)$ over $\mathbb{R}$ and $\mathbb{C}$}]\label{cor:dim-hom-g-real-complex}
+Let $G$ be a finite group and let $V$, $W$ be finite-dimensional representations of $G$ over $k$.
+\begin{enumerate}
+    \item If $k = \mathbb{R}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\chi_W(g)$.
+    \item If $k = \mathbb{C}$, then $\dim \operatorname{Hom}_G(V, W) = \dfrac{1}{|G|}\displaystyle\sum_{g \in G} \chi_V(g)\,\overline{\chi_W(g)}$.
+\end{enumerate}
+\srcline{WS 16: the simplification announced before WS 16.3; the two formulas are not printed on the worksheet}
+\end{corbox}
+
+\begin{proof}
+\textit{(Filled in.)} Both fields contain $\mathbb{Q}$, so Theorem~\ref{thm:dim-hom-g} applies. Substitute $\chi_W(g^{-1}) = \chi_W(g)$ over $\mathbb{R}$ (Proposition~\ref{prop:character-inverse-real}) and $\chi_W(g^{-1}) = \overline{\chi_W(g)}$ over $\mathbb{C}$ (Corollary~\ref{cor:character-inverse-complex}).
+\end{proof}
+
+\begin{exbox}[{Homomorphisms between Representations of $S_3$}]\label{ex:hom-g-s3}
+\textit{(Not from class.)} Over $\mathbb{R}$, take the characters of $S_3$ from Example~\ref{ex:characters-s3}, as values on the classes of $e$, $(1\,2)$, $(1\,2\,3)$, of sizes $1$, $3$, $2$: trivial $(1, 1, 1)$, sign $(1, -1, 1)$, $U = (1,1,1)^\perp$ with $(2, 0, -1)$, and $\mathbb{R}^3$ with $(3, 1, 0)$. A sum over $G$ of a function that is constant on conjugacy classes is the sum over the classes of (class size) $\times$ (value). By Corollary~\ref{cor:dim-hom-g-real-complex}(1):
+\begin{enumerate}
+    \item $\dim \operatorname{Hom}_G(U, U) = \frac16(1 \cdot 4 + 3 \cdot 0 + 2 \cdot 1) = 1$. The homomorphisms $U \to U$ are the multiples of the identity.
+    \item $\dim \operatorname{Hom}_G(\mathrm{triv}, U) = \frac16(1 \cdot 2 + 3 \cdot 0 + 2 \cdot (-1)) = 0$, and $\dim \operatorname{Hom}_G(\mathrm{triv}, \mathrm{sign}) = \frac16(1 - 3 + 2) = 0$: the only homomorphism is $0$.
+    \item $\dim \operatorname{Hom}_G(\mathrm{sign}, \mathrm{sign}) = \frac16(1 + 3 + 2) = 1$.
+    \item $\dim \operatorname{Hom}_G(\mathbb{R}^3, \mathbb{R}^3) = \frac16(1 \cdot 9 + 3 \cdot 1 + 2 \cdot 0) = 2$. Two independent homomorphisms are the identity and the averaging operator $\pi$ of Example~\ref{ex:invariants-s3}, whose matrix is $\frac13$ times the all-ones matrix; $\pi$ commutes with every $\rho(g)$ (the proof of Corollary~\ref{cor:invariants-split-off}) and is not a multiple of the identity.
+\end{enumerate}
+\end{exbox}
+
 
 \appendix
 \chapter{Review: Toolkits, Standard Examples, and Traps}\label{ch:review}
@@ -10837,6 +11039,7 @@ permutation, $\mathbb{R}^3 = \mathbb{R}(1,1,1) \oplus U$ & $3$ & $1$ & $0$
     \item \textbf{To split off a subrepresentation $U$ (finite $G$, real $W$).} Average any inner product over $G$, $\langle v, w \rangle = \sum_g (gv, gw)$; then $U^\perp$ is a complementary subrepresentation (Corollary~\ref{cor:maschke-real}), and in a basis adapted to $W = U \oplus U^\perp$ all $\rho(g)$ are block diagonal (Proposition~\ref{prop:direct-sum-block-diagonal}). In general this is Maschke's theorem, valid when $|G| \neq 0$ in $k$ (Theorem~\ref{thm:maschke}).
     \item \textbf{To split off a subrepresentation $U$ (finite $G$, $|G| \neq 0$ in $k$).} Take any idempotent $P$ with image $U$ (extend a basis of $U$) and average it, $\pi(w) = \frac{1}{|G|}\sum_h h^{-1}P(hw)$; then $\operatorname{Ker}\pi$ is a complementary subrepresentation (the proof of Theorem~\ref{thm:maschke}). For $U = V^G$ the averaging map $\frac{1}{|G|}\sum_g g$ does it directly (\ref{sec:invariants}).
     \item \textbf{To compute $\dim V^G$ or a character ($G$ finite, $\mathbb{Q} \subseteq k$).} $\dim V^G = \frac{1}{|G|}\sum_g \chi_V(g)$ (Theorem~\ref{thm:dim-invariants-character}). Characters are constant on conjugacy classes and add over direct sums, so a character table needs one column per conjugacy class; for a permutation representation, $\chi(g)$ is the number of fixed points of $g$, and the formula counts orbits (Burnside's Lemma) (\ref{sec:invariants}, \ref{sec:characters-of-representations}).
+    \item \textbf{To count the homomorphisms between two representations ($G$ finite, $\mathbb{Q} \subseteq k$).} $\dim \operatorname{Hom}_G(V, W) = \frac{1}{|G|}\sum_g \chi_V(g)\chi_W(g^{-1})$ (Theorem~\ref{thm:dim-hom-g}); over $\mathbb{R}$ replace $\chi_W(g^{-1})$ by $\chi_W(g)$, over $\mathbb{C}$ by $\overline{\chi_W(g)}$ (Corollary~\ref{cor:dim-hom-g-real-complex}). Sum over conjugacy classes, weighting each by its size.
     \item \textbf{To show a representation is simple.} Rule out subrepresentations other than $\{0\}$ and $V$; in dimension $2$ these are invariant lines, i.e.\ common eigenvectors of all $\rho(g)$ (a rotation by $120^\circ$ has no real eigenvector; Example~\ref{ex:s3-r3-simples}). Under Maschke's hypotheses, simple is the same as irreducible (not a direct sum of two nonzero subrepresentations; Proposition~\ref{prop:simple-iff-irreducible}), and every representation is a direct sum of simple ones (Corollary~\ref{cor:direct-sum-of-simples}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
@@ -10933,9 +11136,9 @@ Mon Nov 2 \newline lecture; Worksheet 13 & Part~II begins: representations; acti
 Wed Nov 4 \newline lecture; Worksheet 14 & $S_3$ on $\mathbb{R}^3$ in three bases; block diagonal and block triangular matrices; Maschke's theorem (statement); $W = U \oplus U^\perp$; orthogonal complements of subrepresentations & \ref{sec:maschke} (14.1--14.3), \ref{sec:invariant-inner-products} (14.4--14.6; 14.7--14.8 presented Fri Nov 6) \\
 Fri Nov 6 \newline lecture & WS 14.7--14.8 (the averaged inner product); finite groups act by orthogonal matrices; sesquilinear and Hermitian forms (with the MATH 420 slides \emph{Complex inner products}: conjugate transpose, forms on $\mathbb{C}^n$ as matrices, Gram--Schmidt); simple and irreducible representations; every representation is a direct sum of simples & \ref{sec:invariant-inner-products}, \ref{sec:hermitian-forms}, \ref{sec:simple-representations} \\
 Wed Nov 4 \newline office hours & $GL_n(\mathbb{F}_p)$ acting on complete flags $G/B$; orbits of the unitriangular group of sizes $p^{\ell(w)}$ for $n = 2, 3$ & \ref{sub:flags-sylow-gln} \\
-Thu Nov 5 \newline Problem Set 8 (submitted) & The product formula $|AB| = |A|\,|B|/|A \cap B|$; subgroups of index $2$ are normal; groups of order $pq$ as semidirect products $\mathbb{Z}/q\mathbb{Z} \rtimes \mathbb{Z}/p\mathbb{Z}$, classified by the solutions of $a^p \equiv 1 \bmod q$; simple groups of order $60$ through the action on $A_6/G$; the trace, $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ & \ref{sub:product-formula} (8.1), \ref{sec:normal-sources} (8.2), \ref{sub:order-pq}, \ref{sub:order-pq-semidirect} (8.3), \ref{sub:order-60} (8.4), \ref{sec:invariants} (8.5) \\
+Thu Nov 5 \newline Problem Set 8 (submitted) & The product formula $|AB| = |A|\,|B|/|A \cap B|$; subgroups of index $2$ are normal; groups of order $pq$ as semidirect products $\mathbb{Z}/q\mathbb{Z} \rtimes \mathbb{Z}/p\mathbb{Z}$, classified by the solutions of $a^p \equiv 1 \bmod q$; simple groups of order $60$ through the action on $A_6/G$; the trace, $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ & \ref{sub:product-formula} (8.1), \ref{sec:normal-sources} (8.2), \ref{sub:order-pq}, \ref{sec:order-pq-semidirect} (8.3), \ref{sub:order-60} (8.4), \ref{sec:invariants} (8.5) \\
 Mon Nov 9 \newline lecture; Worksheet 15 & Idempotents and their trace; invariant vectors and the averaging operator; $V = V^G \oplus \operatorname{Ker}\pi$; $\dim V^G$ as the average trace; characters, constant on conjugacy classes and additive over direct sums; the start of the character table of $S_3$ & \ref{sec:maschke}, \ref{sec:invariants}, \ref{sec:characters-of-representations} \\
-Thu Nov 12 \newline Problem Set 9 (submitted) & Extensions of solvable groups; idempotents split $V = \operatorname{Ker} \oplus \operatorname{Im}$; the proof of Maschke's theorem; counterexamples for $\mathbb{Z}$ and for $\mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$; affine maps as semidirect products & \ref{sec:solvable} (9.1), \ref{sec:maschke} (9.2--9.4), \ref{sec:semidirect-products} (9.5) \\
+Thu Nov 12 \newline Problem Set 9 (submitted) & Extensions of solvable groups; idempotents split $V = \operatorname{Ker} \oplus \operatorname{Im}$; the proof of Maschke's theorem; counterexamples for $\mathbb{Z}$ and for $\mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$; affine maps as semidirect products & \ref{sec:solvable} (9.1), \ref{sec:maschke} (9.2--9.4), \ref{sec:affine-maps} (9.5) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 
@@ -11294,7 +11497,7 @@ Let $G$ be a group of order $pq$, let $P$ be a $p$-Sylow subgroup and let $Q$ be
 \end{enumerate}
 I won't have you do the rest of this, because it is really number theory, not group theory but, whenever $q \equiv 1 \bmod p$, there are exactly $p$ solutions to $a^p \equiv 1 \bmod q$. The trivial solution $a = 1$ corresponds to $G \cong \mathbb{Z}/p\mathbb{Z} \times \mathbb{Z}/q\mathbb{Z}$. The $p - 1$ nontrivial roots give a non-abelian group of order $pq$; all of these non-abelian groups of order $pq$ are isomorphic to each other.
 \end{hwbox}
-\textit{Treated in \ref{sub:order-pq} (Proposition~\ref{prop:groups-order-pq}, second proof) and \ref{sub:order-pq-semidirect} (Proposition~\ref{prop:order-pq-semidirect}, Lemma~\ref{lem:aut-zq}, Proposition~\ref{prop:hom-zp-aut-zq}, Theorem~\ref{thm:classification-order-pq}).}
+\textit{Treated in \ref{sub:order-pq} (Proposition~\ref{prop:groups-order-pq}, second proof) and \ref{sec:order-pq-semidirect} (Proposition~\ref{prop:order-pq-semidirect}, Lemma~\ref{lem:aut-zq}, Proposition~\ref{prop:hom-zp-aut-zq}, Theorem~\ref{thm:classification-order-pq}).}
 
 \begin{hwbox}[{Simple Groups of Order $60$, Again}]{8.4}\label{hw:8.4}
 We try to repair Problem 7.1 on the last problem set. I don't think that it was false as stated, but it was certainly too hard and the hints weren't well-phrased. Let $G$ be a simple group of order $60$.
@@ -11379,7 +11582,7 @@ In this problem, we will see a situation where we can understand semidirect prod
 \end{enumerate}
 The problem set illustrates this on its second page with a tiling of the plane by lizards. $V$ is that copy of $\mathbb{R}^2$, with the origin at a marked point in the centre of the image. $G$ is a copy of $\mathbb{Z}/3\mathbb{Z}$, acting by rotations by $120^\circ$ around that point, and $L$ consists of the translations which slide the lizards to themselves. Then $\Gamma$ is the full group of symmetries of the tiling, decomposed as $L \rtimes G$. (The problem set says ``direct product'' here; $L \rtimes G$ is a semidirect product.) This is one of seventeen ``wallpaper'' groups which mathematicians have classified.
 \end{hwbox}
-\textit{Treated in \ref{sec:semidirect-products} (Proposition~\ref{prop:affine-semidirect}; the lizard tiling's group in the form of Example~\ref{ex:affine-wallpaper-p3}).}
+\textit{Treated in \ref{sec:affine-maps} (Proposition~\ref{prop:affine-semidirect}; the lizard tiling's group in the form of Example~\ref{ex:affine-wallpaper-p3}).}
 
 \chapter{Index of Definitions and Results}\label{ch:index}
 
@@ -11392,25 +11595,34 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em abelian\dotfill \pageref{def:abelian-group}\par
 \noindent\hangindent=1em abelianization\dotfill \pageref{def:abelianization}\par
 \noindent\hangindent=1em action\dotfill \pageref{def:action-right-action}\par
+\noindent\hangindent=1em action of $S_n$ on polynomials\dotfill \pageref{def:action-sn-k-x1-xn}\par
+\noindent\hangindent=1em additive groups $\mathbb{Z}$, $\mathbb{Q}$, $\mathbb{R}$\dotfill \pageref{def:additive-groups-z-q-r}\par
 \noindent\hangindent=1em adjacent inversion\dotfill \pageref{def:inversions-permutation}\par
 \noindent\hangindent=1em alternating\dotfill \pageref{def:alternating-polynomial}\par
 \noindent\hangindent=1em alternating group\dotfill \pageref{def:alternating-group-an}\par
 \noindent\hangindent=1em automorphism\dotfill \pageref{def:automorphisms-aut-g}\par
+\noindent\hangindent=1em averaged inner product\dotfill \pageref{def:averaged-inner-product}\par
+\noindent\hangindent=1em averaging operator\dotfill \pageref{def:averaging-map}\par
 \noindent\hangindent=1em canonical projection\dotfill \pageref{def:quotient-group}\par
 \noindent\hangindent=1em Cayley table\dotfill \pageref{def:multiplication-table}\par
 \noindent\hangindent=1em center\dotfill \pageref{def:center-z-g}\par
 \noindent\hangindent=1em central\dotfill \pageref{def:central-elements-center-z-g}\par
 \noindent\hangindent=1em centralizer\dotfill \pageref{def:centralizer}\par
-\noindent\hangindent=1em character\dotfill \pageref{def:character}\par
+\noindent\hangindent=1em character\dotfill \pageref{def:character}, \pageref{def:character-representation}\par
+\noindent\hangindent=1em character table\dotfill \pageref{def:character-table}\par
 \noindent\hangindent=1em commutative\dotfill \pageref{def:abelian-group}, \pageref{def:commuting-elements}\par
 \noindent\hangindent=1em commutative ring\dotfill \pageref{def:commutative-ring-provisional}\par
 \noindent\hangindent=1em commutator\dotfill \pageref{def:commutator}\par
 \noindent\hangindent=1em commutator subgroup\dotfill \pageref{def:commutator-subgroup}\par
 \noindent\hangindent=1em commute\dotfill \pageref{def:commuting-elements}\par
+\noindent\hangindent=1em complete flag\dotfill \pageref{def:complete-flag}\par
+\noindent\hangindent=1em composition factors\dotfill \pageref{def:composition-series}\par
+\noindent\hangindent=1em composition series\dotfill \pageref{def:composition-series}\par
 \noindent\hangindent=1em congruence class\dotfill \pageref{def:residue-classes}\par
 \noindent\hangindent=1em congruent to $b$ modulo $n$\dotfill \pageref{def:congruence-modulo-n}\par
 \noindent\hangindent=1em conjugacy class\dotfill \pageref{def:conjugacy-class}\par
 \noindent\hangindent=1em conjugate\dotfill \pageref{def:conjugate-elements}\par
+\noindent\hangindent=1em conjugate transpose\dotfill \pageref{def:conjugate-transpose}\par
 \noindent\hangindent=1em conjugation by $a$\dotfill \pageref{def:conjugation-conjugate-elements-inner}\par
 \noindent\hangindent=1em coordinates\dotfill \pageref{def:standard-basis-kn}\par
 \noindent\hangindent=1em coprime\dotfill \pageref{def:greatest-common-divisor-coprime}\par
@@ -11422,12 +11634,16 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em derived subgroup\dotfill \pageref{def:commutator-subgroup}\par
 \noindent\hangindent=1em diagonal\dotfill \pageref{def:structure-maps-product}\par
 \noindent\hangindent=1em direct product\dotfill \pageref{def:direct-products}\par
+\noindent\hangindent=1em direct sum\dotfill \pageref{def:internal-direct-sum-subspaces}, \pageref{def:direct-sum-several}\par
 \noindent\hangindent=1em disjoint\dotfill \pageref{def:disjoint-cycles}\par
+\noindent\hangindent=1em edge quotients $H_{ij}$ and $V_{ij}$\dotfill \pageref{def:jh-edge-quotients}\par
 \noindent\hangindent=1em empty word\dotfill \pageref{def:word-subgroup-generated-several-elements}\par
 \noindent\hangindent=1em equivalence class\dotfill \pageref{def:equivalence-class}\par
 \noindent\hangindent=1em equivalence relation\dotfill \pageref{def:equivalence-relation}\par
 \noindent\hangindent=1em Euler's totient\dotfill \pageref{def:eulers-totient-function}\par
 \noindent\hangindent=1em even\dotfill \pageref{def:sign-even-odd-permutations}\par
+\noindent\hangindent=1em external direct product\dotfill \pageref{def:internal-direct-product}\par
+\noindent\hangindent=1em external semidirect product\dotfill \pageref{def:external-semidirect-product}\par
 \noindent\hangindent=1em faithful\dotfill \pageref{def:faithful-action}\par
 \noindent\hangindent=1em field\dotfill \pageref{def:field-provisional-definition}\par
 \noindent\hangindent=1em finite order\dotfill \pageref{def:order-element}\par
@@ -11436,18 +11652,32 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em general linear group\dotfill \pageref{def:general-linear-groups-gln-k}\par
 \noindent\hangindent=1em generator\dotfill \pageref{def:cyclic-groups}\par
 \noindent\hangindent=1em greatest common divisor\dotfill \pageref{def:greatest-common-divisor-coprime}\par
+\noindent\hangindent=1em grid $Z_{ij}$\dotfill \pageref{def:jh-grid}\par
 \noindent\hangindent=1em group\dotfill \pageref{def:group}\par
 \noindent\hangindent=1em group homomorphism\dotfill \pageref{def:group-homomorphism}\par
+\noindent\hangindent=1em Hermitian\dotfill \pageref{def:hermitian-form}, \pageref{def:hermitian-matrix}\par
+\noindent\hangindent=1em $\operatorname{Hom}(G, H)$\dotfill \pageref{def:hom-g-h-pointwise-product}\par
+\noindent\hangindent=1em $\operatorname{Hom}_G(V, W)$\dotfill \pageref{def:hom-g}\par
+\noindent\hangindent=1em homomorphism of $G$-representations\dotfill \pageref{def:homomorphism-representations}\par
+\noindent\hangindent=1em idempotent\dotfill \pageref{def:idempotent}\par
 \noindent\hangindent=1em image\dotfill \pageref{def:image-kernel}\par
 \noindent\hangindent=1em inclusions\dotfill \pageref{def:structure-maps-product}\par
 \noindent\hangindent=1em index\dotfill \pageref{def:index}\par
 \noindent\hangindent=1em infinite order\dotfill \pageref{def:order-element}\par
 \noindent\hangindent=1em inner automorphisms\dotfill \pageref{def:inner-automorphism}\par
+\noindent\hangindent=1em inner product\dotfill \pageref{def:inner-product-real}\par
+\noindent\hangindent=1em integer powers\dotfill \pageref{def:integer-powers}\par
+\noindent\hangindent=1em internal direct product\dotfill \pageref{def:internal-direct-product}\par
+\noindent\hangindent=1em internal direct sum\dotfill \pageref{def:internal-direct-sum-subspaces}\par
+\noindent\hangindent=1em internal semidirect product\dotfill \pageref{def:internal-semidirect-product}\par
+\noindent\hangindent=1em invariant vectors\dotfill \pageref{def:invariant-vectors}\par
 \noindent\hangindent=1em inverse of $a$ modulo $n$\dotfill \pageref{def:invertibility-modulo-n}\par
 \noindent\hangindent=1em inversion\dotfill \pageref{def:inversions-permutation}\par
 \noindent\hangindent=1em invertible modulo $n$\dotfill \pageref{def:invertibility-modulo-n}\par
+\noindent\hangindent=1em irreducible representation\dotfill \pageref{def:irreducible-representation}\par
 \noindent\hangindent=1em isomorphic\dotfill \pageref{def:isomorphism-isomorphic-groups}\par
 \noindent\hangindent=1em isomorphism\dotfill \pageref{def:isomorphism-isomorphic-groups}\par
+\noindent\hangindent=1em isomorphism of $G$-representations\dotfill \pageref{def:isomorphism-representations}\par
 \noindent\hangindent=1em kernel\dotfill \pageref{def:kernel}, \pageref{def:kernel-action-faithful-action}\par
 \noindent\hangindent=1em Klein four-group\dotfill \pageref{def:klein-four-group}\par
 \noindent\hangindent=1em left action\dotfill \pageref{def:action-right-action}, \pageref{def:arrow-notation}\par
@@ -11458,41 +11688,54 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em multiple\dotfill \pageref{def:divisibility}\par
 \noindent\hangindent=1em multiplication map\dotfill \pageref{def:structure-maps-product}\par
 \noindent\hangindent=1em multiplication table\dotfill \pageref{def:multiplication-table}\par
+\noindent\hangindent=1em multiplicative group of a field\dotfill \pageref{def:multiplicative-group-field-k-x}\par
 \noindent\hangindent=1em $n$ divides $m$\dotfill \pageref{def:divisibility}\par
 \noindent\hangindent=1em normal subgroup\dotfill \pageref{def:normal-subgroup}\par
+\noindent\hangindent=1em normalizer\dotfill \pageref{def:normalizer}\par
 \noindent\hangindent=1em odd\dotfill \pageref{def:sign-even-odd-permutations}\par
 \noindent\hangindent=1em orbit\dotfill \pageref{def:orbit-orbit-space}\par
 \noindent\hangindent=1em orbit space\dotfill \pageref{def:orbit-space}, \pageref{def:orbit-space-notation}\par
 \noindent\hangindent=1em order\dotfill \pageref{def:order-group-order-element-cyclic-groups}, \pageref{def:order-element}\par
+\noindent\hangindent=1em orthogonal complement\dotfill \pageref{def:orthogonal-complement}\par
 \noindent\hangindent=1em orthogonal group\dotfill \pageref{def:orthogonal-group}\par
 \noindent\hangindent=1em partition\dotfill \pageref{def:partition}, \pageref{def:cycle-type}\par
 \noindent\hangindent=1em parts\dotfill \pageref{def:partition}\par
 \noindent\hangindent=1em permutation matrix\dotfill \pageref{def:permutation-matrices}\par
-\noindent\hangindent=1em permutation representation\dotfill \pageref{def:permutation-representation}\par
+\noindent\hangindent=1em permutation representation\dotfill \pageref{def:permutation-representation}, \pageref{def:permutation-representation-g-set}\par
 \noindent\hangindent=1em $p$-group\dotfill \pageref{def:p-group}\par
+\noindent\hangindent=1em point stabilizer in $S_n$\dotfill \pageref{def:point-stabilizer-sn}\par
 \noindent\hangindent=1em pointwise product\dotfill \pageref{def:pointwise-product}\par
 \noindent\hangindent=1em polynomial\dotfill \pageref{def:polynomial-ring-several-variables}\par
 \noindent\hangindent=1em polynomial ring\dotfill \pageref{def:polynomial-ring-several-variables}\par
+\noindent\hangindent=1em positive definite Hermitian form\dotfill \pageref{def:positive-definite-hermitian}\par
+\noindent\hangindent=1em preserves an inner product\dotfill \pageref{def:preserves-inner-product}\par
+\noindent\hangindent=1em product set $HN$\dotfill \pageref{def:product-set-hn}\par
 \noindent\hangindent=1em projections\dotfill \pageref{def:structure-maps-product}\par
 \noindent\hangindent=1em projective special linear group\dotfill \pageref{def:projective-special-linear-group}\par
 \noindent\hangindent=1em $p$-subgroup\dotfill \pageref{def:p-subgroup}\par
+\noindent\hangindent=1em quasi-composition series\dotfill \pageref{def:quasi-composition-series}\par
 \noindent\hangindent=1em quotient\dotfill \pageref{def:quotient-remainder-a-n}\par
 \noindent\hangindent=1em quotient group\dotfill \pageref{def:quotient-group}\par
+\noindent\hangindent=1em quotients of a subnormal series\dotfill \pageref{def:subnormal-series}\par
 \noindent\hangindent=1em $r$-cycle\dotfill \pageref{def:cycle-notation}\par
 \noindent\hangindent=1em reflexive\dotfill \pageref{def:equivalence-relation}\par
 \noindent\hangindent=1em relation\dotfill \pageref{def:equivalence-relation}\par
 \noindent\hangindent=1em relatively prime\dotfill \pageref{def:greatest-common-divisor-coprime}\par
 \noindent\hangindent=1em remainder\dotfill \pageref{def:quotient-remainder-a-n}\par
 \noindent\hangindent=1em remainder of $a$ modulo $n$\dotfill \pageref{def:quotient-remainder-a-n}\par
-\noindent\hangindent=1em representation\dotfill \pageref{def:representation-permutation-representation}\par
+\noindent\hangindent=1em representation\dotfill \pageref{def:representation-permutation-representation}, \pageref{def:representation}\par
+\noindent\hangindent=1em representation on $\operatorname{Hom}(V, W)$\dotfill \pageref{def:hom-representation}\par
 \noindent\hangindent=1em representative\dotfill \pageref{def:residue-classes}\par
 \noindent\hangindent=1em residue class\dotfill \pageref{def:residue-classes}\par
 \noindent\hangindent=1em right action\dotfill \pageref{def:right-action}, \pageref{def:arrow-notation}\par
 \noindent\hangindent=1em right congruent\dotfill \pageref{def:congruence-modulo-subgroup}\par
 \noindent\hangindent=1em right coset\dotfill \pageref{def:left-right-cosets}\par
+\noindent\hangindent=1em sesquilinear form\dotfill \pageref{def:sesquilinear-form}\par
+\noindent\hangindent=1em set of representatives\dotfill \pageref{def:set-representatives}\par
 \noindent\hangindent=1em sign\dotfill \pageref{def:sign-even-odd-permutations}\par
 \noindent\hangindent=1em similar\dotfill \pageref{def:similar-matrices}\par
 \noindent\hangindent=1em simple\dotfill \pageref{def:simple-group}\par
+\noindent\hangindent=1em simple representation\dotfill \pageref{def:simple-representation}\par
 \noindent\hangindent=1em solvable\dotfill \pageref{def:solvable-group}\par
 \noindent\hangindent=1em special linear group\dotfill \pageref{def:special-linear-orthogonal-special-orthogonal}\par
 \noindent\hangindent=1em special orthogonal group\dotfill \pageref{def:special-orthogonal-group}\par
@@ -11502,9 +11745,12 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em subgroup\dotfill \pageref{def:subgroup}\par
 \noindent\hangindent=1em subgroup generated by $g$\dotfill \pageref{def:subgroup-generated-element}\par
 \noindent\hangindent=1em subgroup generated by $g_1, \ldots, g_k$\dotfill \pageref{def:subgroup-generated-several-elements}\par
+\noindent\hangindent=1em subnormal series\dotfill \pageref{def:subnormal-series}\par
+\noindent\hangindent=1em subrepresentation\dotfill \pageref{def:subrepresentation}\par
 \noindent\hangindent=1em Sylow $p$-subgroup\dotfill \pageref{def:sylow-subgroup}\par
 \noindent\hangindent=1em symmetric\dotfill \pageref{def:symmetric-polynomial}, \pageref{def:equivalence-relation}\par
 \noindent\hangindent=1em symmetric group\dotfill \pageref{def:symmetric-groups-sx-sn}\par
+\noindent\hangindent=1em trace\dotfill \pageref{def:trace-matrix}, \pageref{def:trace-linear-map}\par
 \noindent\hangindent=1em transitive\dotfill \pageref{def:equivalence-relation}, \pageref{def:transitive-action}\par
 \noindent\hangindent=1em transposition\dotfill \pageref{def:cycle-notation}\par
 \noindent\hangindent=1em two-line notation\dotfill \pageref{def:two-line-cycle-notation}\par
@@ -11522,23 +11768,37 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em $3$-Cycles Are Commutators in $A_n$\dotfill \pageref{lem:3-cycles-commutators-an}\par
 \noindent\hangindent=1em $3$-Cycles Are Conjugate in $A_n$ for $n \geq 5$\dotfill \pageref{lem:3-cycles-conjugate-an-n-ge-5}\par
 \noindent\hangindent=1em A Common Eigenvector Yields a Character\dotfill \pageref{thm:common-eigenvector-yields-character}\par
+\noindent\hangindent=1em A Group of Order $4$ in Which Every Element Squares to $e$ Is Not Cyclic\dotfill \pageref{lem:order-4-squares-to-e-not-cyclic}\par
 \noindent\hangindent=1em A Left Action Gives a Right Action\dotfill \pageref{prop:left-action-gives-right-action}\par
 \noindent\hangindent=1em A Natural Bijection $G/H \to H\backslash G$\dotfill \pageref{prop:natural-bijection-g-h-to-h-g}\par
 \noindent\hangindent=1em A Normal Image in a Simple Group\dotfill \pageref{cor:normal-image-simple-group}\par
 \noindent\hangindent=1em A Normal Subgroup Inside a Subgroup of Finite Index\dotfill \pageref{thm:normal-subgroup-inside-subgroup-finite-index}\par
+\noindent\hangindent=1em A Normal Sylow Subgroup Is the Only One\dotfill \pageref{cor:sylow-normal-unique}\par
+\noindent\hangindent=1em A Subrepresentation Gives Block Triangular Matrices\dotfill \pageref{prop:subrepresentation-block-triangular}\par
 \noindent\hangindent=1em A Subset That Is a Group Is a Subgroup\dotfill \pageref{prop:subset-group-subgroup}\par
+\noindent\hangindent=1em A Unique Sylow Subgroup Rules Out Simplicity\dotfill \pageref{cor:unique-sylow-not-simple}\par
 \noindent\hangindent=1em $A_5$ Is Simple\dotfill \pageref{prop:a5-simple}\par
 \noindent\hangindent=1em $A_5$ Is the Smallest Non-Abelian Simple Group\dotfill \pageref{thm:a5-smallest-non-abelian-simple-group}\par
+\noindent\hangindent=1em Abelian Groups Are Solvable\dotfill \pageref{prop:abelian-groups-solvable}\par
+\noindent\hangindent=1em Abelian Quotients and Commutators\dotfill \pageref{prop:abelian-quotients-commutators}\par
 \noindent\hangindent=1em Abelian Simple Groups\dotfill \pageref{thm:abelian-simple-groups}\par
 \noindent\hangindent=1em Actions Are Homomorphisms to $S_X$\dotfill \pageref{thm:actions-homomorphisms-sx}\par
 \noindent\hangindent=1em Addition of Residue Classes Is Well-Defined; $\mathbb{Z}/n\mathbb{Z}$ Is a Group\dotfill \pageref{prop:addition-residue-classes-well-defined-z-nz-group}\par
 \noindent\hangindent=1em Adjacent Transpositions from $(1\,j)$'s\dotfill \pageref{lem:adjacent-transpositions-1-j-s}\par
 \noindent\hangindent=1em All Cosets Have the Same Size\dotfill \pageref{prop:all-cosets-have-same-size}\par
 \noindent\hangindent=1em $A_n$ and $S_n$ Are Not Solvable for $n \geq 5$\dotfill \pageref{cor:an-sn-not-solvable}\par
+\noindent\hangindent=1em An Idempotent Fixes Its Image\dotfill \pageref{lem:idempotent-fixes-image}\par
+\noindent\hangindent=1em An Idempotent Splits the Space\dotfill \pageref{prop:idempotent-kernel-image}\par
 \noindent\hangindent=1em $A_n$ Is Simple for $n \geq 5$\dotfill \pageref{thm:an-simple-n-ge-5}\par
 \noindent\hangindent=1em $A_n$ Is the Stabilizer of $\Delta$\dotfill \pageref{cor:an-stabilizer-delta}\par
 \noindent\hangindent=1em An $r$-Cycle Has Order $r$\dotfill \pageref{lem:r-cycle-has-order-r}\par
+\noindent\hangindent=1em Automorphisms of $\mathbb{Z}/q\mathbb{Z}$\dotfill \pageref{lem:aut-zq}\par
+\noindent\hangindent=1em Averaging a Linear Map over $G$\dotfill \pageref{lem:averaging-linear-map}\par
+\noindent\hangindent=1em Averaging Gives an Inner Product\dotfill \pageref{prop:averaged-inner-product}\par
+\noindent\hangindent=1em Bases of a Direct Sum\dotfill \pageref{prop:bases-direct-sum}\par
+\noindent\hangindent=1em Basic Properties of the Normalizer\dotfill \pageref{prop:normalizer-basic-properties}\par
 \noindent\hangindent=1em Burnside's Lemma\dotfill \pageref{thm:burnsides-lemma}\par
+\noindent\hangindent=1em Burnside's Lemma from the Trace Formula\dotfill \pageref{cor:burnside-from-characters}\par
 \noindent\hangindent=1em Cancellation, and What the Mixed Hypothesis Really Gives\dotfill \pageref{prop:cancellation-what-mixed-hypothesis-really-gives}\par
 \noindent\hangindent=1em Cauchy's Theorem\dotfill \pageref{thm:cauchys-theorem}\par
 \noindent\hangindent=1em Cayley's Theorem\dotfill \pageref{thm:cayleys-theorem}\par
@@ -11546,14 +11806,22 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Characterizations of Abelian Groups\dotfill \pageref{prop:characterizations-abelian-groups}\par
 \noindent\hangindent=1em Characterizations of Abelian Groups, Worksheet Form\dotfill \pageref{prop:characterizations-abelian-groups-worksheet-form}\par
 \noindent\hangindent=1em Characterizations of Normality\dotfill \pageref{prop:characterizations-normality}\par
+\noindent\hangindent=1em Characters Add over Direct Sums\dotfill \pageref{prop:characters-add}\par
+\noindent\hangindent=1em Characters Are Class Functions\dotfill \pageref{prop:character-class-function}\par
 \noindent\hangindent=1em Characters Are Constant on Conjugacy Classes\dotfill \pageref{prop:characters-constant-conjugacy-classes}\par
 \noindent\hangindent=1em Characters Kill Commutators\dotfill \pageref{prop:characters-kill-commutators}\par
 \noindent\hangindent=1em Characters of $A_n$ Are Trivial for $n \geq 5$\dotfill \pageref{thm:characters-an-trivial}\par
+\noindent\hangindent=1em Characters of Complex Representations at Inverses\dotfill \pageref{cor:character-inverse-complex}\par
+\noindent\hangindent=1em Characters of Real Representations at Inverses\dotfill \pageref{prop:character-inverse-real}\par
 \noindent\hangindent=1em Chinese Remainder Theorem\dotfill \pageref{thm:chinese-remainder-theorem}\par
 \noindent\hangindent=1em Class Sizes Divide the Group Order\dotfill \pageref{cor:class-sizes-divide-group-order}\par
 \noindent\hangindent=1em Classification of Cyclic Groups\dotfill \pageref{thm:classification-cyclic-groups}\par
 \noindent\hangindent=1em Classification of Finite Fields\dotfill \pageref{thm:classification-finite-fields}\par
+\noindent\hangindent=1em Classification of Groups of Order $pq$\dotfill \pageref{thm:classification-order-pq}\par
+\noindent\hangindent=1em Commutators of Two Normal Subgroups Lie in Their Intersection\dotfill \pageref{lem:commutators-two-normal-subgroups}\par
 \noindent\hangindent=1em Compatibility of the Action with Composition\dotfill \pageref{prop:compatibility-action-composition}\par
+\noindent\hangindent=1em Complete Flags Are $G/B$\dotfill \pageref{prop:flags-g-mod-b}\par
+\noindent\hangindent=1em Complex Matrices of Finite Order\dotfill \pageref{prop:finite-order-matrix}\par
 \noindent\hangindent=1em Composition; $\cong$ Is an Equivalence Relation\dotfill \pageref{prop:composition-iso-equivalence-relation}\par
 \noindent\hangindent=1em Computing with Disjoint Cycles\dotfill \pageref{prop:computing-disjoint-cycles}\par
 \noindent\hangindent=1em Congruence Is an Equivalence Relation with Remainder Classes\dotfill \pageref{prop:congruence-equivalence-relation-remainder}\par
@@ -11561,15 +11829,28 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Conjugacy Class of a Diagonal Matrix\dotfill \pageref{prop:conjugacy-class-diagonal-matrix}\par
 \noindent\hangindent=1em Conjugacy Classes in $S_n$ Are Cycle Types\dotfill \pageref{thm:conjugacy-classes-sn-cycle-types}\par
 \noindent\hangindent=1em Conjugacy Relative to a Normal Subgroup\dotfill \pageref{prop:conjugacy-normal-subgroup}\par
+\noindent\hangindent=1em Conjugate Matrices Have the Same Trace\dotfill \pageref{cor:trace-conjugation}\par
 \noindent\hangindent=1em Conjugation Is an Automorphism\dotfill \pageref{prop:conjugation-automorphism}\par
+\noindent\hangindent=1em Conjugation Permutes the Sylow $p$-Subgroups\dotfill \pageref{lem:conjugation-permutes-sylow-subgroups}\par
 \noindent\hangindent=1em Conjugation Relabels a Cycle\dotfill \pageref{prop:conjugation-relabels-cycle}\par
+\noindent\hangindent=1em Conjugation Relabels the Entries\dotfill \pageref{lem:conjugation-relabels-entries}\par
 \noindent\hangindent=1em Coprime to Each Factor, Coprime to the Product\dotfill \pageref{lem:coprime-each-factor-coprime-product}\par
+\noindent\hangindent=1em Coset Multiplication Modulo a Normal Subgroup, by Products of Sets\dotfill \pageref{prop:normal-coset-multiplication-set-products}\par
 \noindent\hangindent=1em Cosets Are Orbits\dotfill \pageref{prop:cosets-orbits}\par
 \noindent\hangindent=1em Cosets Are the Equivalence Classes\dotfill \pageref{prop:cosets-equivalence-classes}\par
+\noindent\hangindent=1em Counting Elements of Order $p$\dotfill \pageref{lem:count-elements-order-p}\par
 \noindent\hangindent=1em Counting Linearly Independent Tuples\dotfill \pageref{lem:count-independent-tuples}\par
 \noindent\hangindent=1em Cyclic iff There Is an Element of Order $|G|$\dotfill \pageref{cor:cyclic-iff-element-order-g}\par
+\noindent\hangindent=1em Deleting Repeated Terms of a Quasi-Composition Series\dotfill \pageref{lem:quasi-composition-delete-repeats}\par
 \noindent\hangindent=1em Descending a Map to $\mathbb{Z}/n\mathbb{Z}$\dotfill \pageref{lem:descending-map-z-nz}\par
+\noindent\hangindent=1em $D(H)$ Is the Smallest Normal Subgroup with Abelian Quotient\dotfill \pageref{cor:derived-subgroup-smallest-abelian-quotient}\par
 \noindent\hangindent=1em Dichotomy for Subgroups of $\mathbb{R}$\dotfill \pageref{prop:dichotomy-subgroups-r}\par
+\noindent\hangindent=1em Dimension of $\operatorname{Hom}_G(V, W)$\dotfill \pageref{thm:dim-hom-g}\par
+\noindent\hangindent=1em Dimension of $\operatorname{Hom}_G(V, W)$ over $\mathbb{R}$ and $\mathbb{C}$\dotfill \pageref{cor:dim-hom-g-real-complex}\par
+\noindent\hangindent=1em Dimension of the Invariants\dotfill \pageref{thm:dim-invariants-character}\par
+\noindent\hangindent=1em Direct Products as a Special Case\dotfill \pageref{prop:semidirect-trivial-action-direct}\par
+\noindent\hangindent=1em Direct Sum of a Subspace and Its Orthogonal Complement\dotfill \pageref{prop:orthogonal-complement-direct-sum}\par
+\noindent\hangindent=1em Direct Sums Give Block Diagonal Matrices\dotfill \pageref{prop:direct-sum-block-diagonal}\par
 \noindent\hangindent=1em Disjoint Cycle Decomposition\dotfill \pageref{thm:disjoint-cycle-decomposition}\par
 \noindent\hangindent=1em Disjoint Cycles Commute\dotfill \pageref{lem:disjoint-cycles-commute}\par
 \noindent\hangindent=1em Division Algorithm\dotfill \pageref{lem:division-algorithm}\par
@@ -11582,33 +11863,59 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Every Finite Group Is a Matrix Group\dotfill \pageref{cor:every-finite-group-matrix-group}\par
 \noindent\hangindent=1em Every Normal Subgroup Is a Kernel\dotfill \pageref{prop:every-normal-subgroup-kernel}\par
 \noindent\hangindent=1em Every Permutation Is a Product of Transpositions\dotfill \pageref{prop:every-permutation-product-transpositions}\par
+\noindent\hangindent=1em Every Representation Is a Direct Sum of Simples\dotfill \pageref{cor:direct-sum-of-simples}\par
+\noindent\hangindent=1em Every Representation Is a Direct Sum of Simples, over Any Field with $|G| \neq 0$\dotfill \pageref{cor:direct-sum-of-simples-general}\par
+\noindent\hangindent=1em Every Square Root of $e_A$ Gives a Character\dotfill \pageref{cor:every-square-root-ea-gives-character}\par
+\noindent\hangindent=1em Every Subspace Is the Image of an Idempotent\dotfill \pageref{lem:subspace-image-idempotent}\par
+\noindent\hangindent=1em Exactly One Group of Each Prime Order\dotfill \pageref{cor:lagrange-exactly-one-group-prime-order}\par
 \noindent\hangindent=1em Exactly Three Conjugacy Classes: Order $3$ or $6$\dotfill \pageref{cor:exactly-three-conjugacy-classes-order-3-or-6}\par
 \noindent\hangindent=1em Exponent Laws\dotfill \pageref{lem:exponent-laws}\par
+\noindent\hangindent=1em Extensions of Solvable Groups Are Solvable\dotfill \pageref{thm:extension-solvable}\par
 \noindent\hangindent=1em Faithful Actions Embed $G$ in $S_X$\dotfill \pageref{prop:faithful-actions-embed-g-sx}\par
 \noindent\hangindent=1em Fermat's Little Theorem\dotfill \pageref{cor:fermats-little-theorem}\par
+\noindent\hangindent=1em Finite Groups Act by Orthogonal Matrices\dotfill \pageref{cor:orthogonal-matrices}\par
+\noindent\hangindent=1em Finite Groups Have Composition Series\dotfill \pageref{lem:finite-composition-series}\par
 \noindent\hangindent=1em First Examples of Normal Subgroups\dotfill \pageref{prop:first-examples-normal-subgroups}\par
 \noindent\hangindent=1em First Isomorphism Theorem\dotfill \pageref{thm:first-isomorphism-theorem}\par
 \noindent\hangindent=1em Five Characterizations of Normality\dotfill \pageref{thm:five-characterizations-normality}\par
 \noindent\hangindent=1em Fixed Points of a $p$-Group Action\dotfill \pageref{prop:p-group-fixed-point}\par
+\noindent\hangindent=1em Four Impossible Squares\dotfill \pageref{prop:jh-impossible-squares}\par
 \noindent\hangindent=1em Further Isomorphism Invariants\dotfill \pageref{prop:further-isomorphism-invariants}\par
 \noindent\hangindent=1em $|G| = |\operatorname{Ker}\alpha| \cdot |\operatorname{Im}\alpha|$\dotfill \pageref{cor:g-ker-alpha-im-alpha}\par
+\noindent\hangindent=1em $G = N_1N_2$ Versus $|N_1|\,|N_2| = |G|$\dotfill \pageref{lem:product-condition-versus-order-condition}\par
+\noindent\hangindent=1em $G$ Preserves the Averaged Inner Product\dotfill \pageref{prop:averaged-inner-product-preserved}\par
 \noindent\hangindent=1em Generalized Associativity\dotfill \pageref{prop:generalized-associativity}\par
+\noindent\hangindent=1em Generated Subgroups in an Abelian Group\dotfill \pageref{lem:generated-subgroup-abelian-fixed-order-products}\par
 \noindent\hangindent=1em Generated Subgroups of $\mathbb{Z}$, and B\'ezout\dotfill \pageref{cor:generated-subgroups-z-bezout}\par
 \noindent\hangindent=1em Generators and Subgroups of a Finite Cyclic Group\dotfill \pageref{cor:generators-subgroups-finite-cyclic-group}\par
 \noindent\hangindent=1em Generators of $A_n$\dotfill \pageref{thm:generators-an}\par
 \noindent\hangindent=1em Generators of $S_n$\dotfill \pageref{thm:generators-sn}\par
 \noindent\hangindent=1em $GL_3(\mathbb{R})$ Acting on $\mathbb{R}^3$\dotfill \pageref{prop:gl3-r-acting-r3}\par
 \noindent\hangindent=1em $G/N$ Is a Group\dotfill \pageref{thm:g-n-group}\par
+\noindent\hangindent=1em Groups of Affine Maps Are Semidirect Products\dotfill \pageref{prop:affine-semidirect}\par
+\noindent\hangindent=1em Groups of Order $2 \bmod 4$ Are Not Simple\dotfill \pageref{prop:order-2-mod-4}\par
+\noindent\hangindent=1em Groups of Order $2m$, $m$ Odd, Have a Normal Subgroup of Index $2$\dotfill \pageref{cor:order-2m-odd-index-two}\par
 \noindent\hangindent=1em Groups of Order $4$ Are Abelian\dotfill \pageref{prop:groups-order-4-abelian}\par
+\noindent\hangindent=1em Groups of Order $56$ Have a Normal Sylow Subgroup\dotfill \pageref{prop:order-56-normal-sylow}\par
 \noindent\hangindent=1em Groups of Order $p^2$\dotfill \pageref{thm:groups-order-p-squared}\par
 \noindent\hangindent=1em Groups of Order $p^2$ Are Abelian\dotfill \pageref{cor:order-p-squared-abelian}\par
+\noindent\hangindent=1em Groups of Order $pq$\dotfill \pageref{prop:groups-order-pq}\par
+\noindent\hangindent=1em Groups of Order $pq$ Are Semidirect Products\dotfill \pageref{prop:order-pq-semidirect}\par
 \noindent\hangindent=1em Groups of Prime Order\dotfill \pageref{thm:groups-prime-order}\par
 \noindent\hangindent=1em Groups of Prime Order Have No Proper Nontrivial Subgroups\dotfill \pageref{cor:groups-prime-order-have-no-proper-nontrivial}\par
 \noindent\hangindent=1em Groups of Prime-Power Order Have Nontrivial Center\dotfill \pageref{thm:groups-prime-power-order-have-nontrivial-center}\par
+\noindent\hangindent=1em $HN$ Is a Subgroup When $N$ Is Normal\dotfill \pageref{lem:hn-subgroup-when-n-normal}\par
 \noindent\hangindent=1em Homomorphisms and Orders of Elements\dotfill \pageref{prop:homomorphisms-orders-elements}\par
+\noindent\hangindent=1em Homomorphisms Are the Invariant Vectors of $\operatorname{Hom}(W, W')$\dotfill \pageref{prop:hom-invariants}\par
+\noindent\hangindent=1em Homomorphisms Carry Conjugates to Conjugates\dotfill \pageref{lem:homomorphisms-carry-conjugates}\par
+\noindent\hangindent=1em Homomorphisms in Both Directions\dotfill \pageref{cor:hom-g-symmetric}\par
 \noindent\hangindent=1em Homomorphisms into a Simple Group\dotfill \pageref{prop:homomorphisms-into-simple-group}\par
 \noindent\hangindent=1em Homomorphisms out of a Simple Group\dotfill \pageref{prop:homomorphisms-out-simple-group}\par
 \noindent\hangindent=1em Homomorphisms Preserve Identity and Inverses\dotfill \pageref{prop:homomorphisms-preserve-identity-inverses}\par
+\noindent\hangindent=1em Homomorphisms That Leave $A_N$\dotfill \pageref{lem:leave-an}\par
+\noindent\hangindent=1em Homomorphisms $\mathbb{Z}/p\mathbb{Z} \to \operatorname{Aut}(\mathbb{Z}/q\mathbb{Z})$\dotfill \pageref{prop:hom-zp-aut-zq}\par
+\noindent\hangindent=1em $\operatorname{Hom}(V, W)$ Is a Representation\dotfill \pageref{prop:hom-is-representation}\par
+\noindent\hangindent=1em Horizontal Edges Propagate\dotfill \pageref{prop:jh-horizontal-edges}\par
 \noindent\hangindent=1em Image and Kernel Are Subgroups\dotfill \pageref{prop:image-kernel-subgroups}\par
 \noindent\hangindent=1em Images and Preimages of Subgroups\dotfill \pageref{prop:images-preimages-subgroups}\par
 \noindent\hangindent=1em Images Need Not Be Normal\dotfill \pageref{prop:images-need-not-normal}\par
@@ -11616,106 +11923,185 @@ Terms defined in the definition boxes, and named theorems, propositions, lemmas 
 \noindent\hangindent=1em Index of an Intersection\dotfill \pageref{prop:index-intersection}\par
 \noindent\hangindent=1em Index of an Intersection, Normal Case\dotfill \pageref{cor:index-intersection-normal}\par
 \noindent\hangindent=1em Index of the Stabilizer\dotfill \pageref{cor:index-stabilizer}\par
+\noindent\hangindent=1em Indices Along the Correspondence\dotfill \pageref{cor:correspondence-preserves-indices}\par
+\noindent\hangindent=1em Internal and External Semidirect Products Agree\dotfill \pageref{thm:internal-external-semidirect}\par
 \noindent\hangindent=1em Internal Direct Products\dotfill \pageref{lem:internal-direct-product}\par
+\noindent\hangindent=1em Internal Direct Products Are Direct Products\dotfill \pageref{thm:internal-direct-product}\par
+\noindent\hangindent=1em Intersections in the Grid\dotfill \pageref{lem:jh-grid-intersections}\par
 \noindent\hangindent=1em Intersections of Subgroups\dotfill \pageref{prop:intersections-subgroups}\par
+\noindent\hangindent=1em Invariants Split Off\dotfill \pageref{cor:invariants-split-off}\par
 \noindent\hangindent=1em Inverse of a Product\dotfill \pageref{prop:inverse-product}\par
 \noindent\hangindent=1em Inverse of a Product of $n$ Elements\dotfill \pageref{cor:inverse-product-n-elements}\par
 \noindent\hangindent=1em Invertibility Criterion\dotfill \pageref{prop:invertibility-criterion}\par
 \noindent\hangindent=1em Invertible Matrices Have Independent Columns\dotfill \pageref{lem:invertible-iff-columns-independent}\par
 \noindent\hangindent=1em Isomorphism Invariants\dotfill \pageref{prop:isomorphism-invariants}\par
+\noindent\hangindent=1em Jordan--H\"older Theorem\dotfill \pageref{thm:jordan-holder}\par
 \noindent\hangindent=1em $K$ Is an Abelian Subgroup of $S_4$\dotfill \pageref{prop:klein-four-group}\par
+\noindent\hangindent=1em Kernels and Images Are Subrepresentations\dotfill \pageref{prop:kernels-images-subrepresentations}\par
+\noindent\hangindent=1em Kernels and Normal Subgroups Are the Same Thing\dotfill \pageref{cor:quotient-normal-subgroups-exactly-kernels}\par
 \noindent\hangindent=1em Kernels Are Normal\dotfill \pageref{prop:kernels-normal}\par
 \noindent\hangindent=1em Lagrange\dotfill \pageref{thm:lagrange}\par
 \noindent\hangindent=1em $\langle g \rangle$ Is a Subgroup\dotfill \pageref{prop:gen-g-subgroup}\par
 \noindent\hangindent=1em $\langle g \rangle$ Is the Smallest Subgroup Containing $g$\dotfill \pageref{prop:gen-g-smallest-subgroup-containing-g}\par
 \noindent\hangindent=1em Latin Square Property\dotfill \pageref{cor:latin-square-property}\par
+\noindent\hangindent=1em Left and Right Congruence Agree in Abelian Groups\dotfill \pageref{lem:cosets-left-right-congruence-agree-abelian}\par
 \noindent\hangindent=1em Left Cosets Record $\alpha(n)$, Right Cosets Record $\alpha^{-1}(n)$\dotfill \pageref{prop:left-cosets-record-alpha-n-right-cosets-record}\par
 \noindent\hangindent=1em Linear Extension\dotfill \pageref{thm:linear-extension}\par
-\noindent\hangindent=1em $\mathbb{Z}/4\mathbb{Z} \cong U_5$\dotfill \pageref{prop:z-4z-iso-u5}\par
-\noindent\hangindent=1em $\mathbb{Z}/n\mathbb{Z}$ Is a Field if and only if $n$ Is Prime\dotfill \pageref{prop:z-nz-field-if-only-if-n-prime}\par
+\noindent\hangindent=1em Maschke for Representations Preserving an Inner Product\dotfill \pageref{cor:maschke-preserved-inner-product}\par
+\noindent\hangindent=1em Maschke's Theorem\dotfill \pageref{thm:maschke}\par
+\noindent\hangindent=1em Maschke's Theorem over $\mathbb{R}$\dotfill \pageref{cor:maschke-real}\par
 \noindent\hangindent=1em Multiplication by a Nonzero Class Permutes the Nonzero Classes Modulo $p$\dotfill \pageref{prop:multiplication-nonzero-class-permutes-nonzero}\par
+\noindent\hangindent=1em Multiplication in the Form $ns$\dotfill \pageref{prop:semidirect-multiplication}\par
+\noindent\hangindent=1em Multiplying Through Representatives\dotfill \pageref{prop:multiplying-through-representatives}\par
+\noindent\hangindent=1em $N \rtimes_\varphi S$ Is a Group\dotfill \pageref{thm:semidirect-group}\par
+\noindent\hangindent=1em No Bilinear Form on a Complex Space Is Positive Definite\dotfill \pageref{lem:no-positive-definite-complex-bilinear}\par
 \noindent\hangindent=1em No Zero Divisors in a Field\dotfill \pageref{prop:no-zero-divisors-field}\par
 \noindent\hangindent=1em Normal Subgroups Are Unions of Conjugacy Classes\dotfill \pageref{prop:normal-subgroups-unions-conjugacy-classes}\par
 \noindent\hangindent=1em Normal Subgroups of $GL_2(\mathbb{R})$\dotfill \pageref{prop:normal-subgroups-gl2-r}\par
+\noindent\hangindent=1em Normal Subgroups with Trivial Intersection Commute\dotfill \pageref{prop:normal-subgroups-trivial-intersection-commute}\par
+\noindent\hangindent=1em Normality in the Grid\dotfill \pageref{prop:jh-grid-normality}\par
+\noindent\hangindent=1em $n_p$ and the Normalizer\dotfill \pageref{prop:np-normalizer-index}\par
 \noindent\hangindent=1em $O_3(\mathbb{R})$ Acting on $\mathbb{R}^3$\dotfill \pageref{prop:o3-r-acting-r3}\par
 \noindent\hangindent=1em One-Sided Inverses Suffice\dotfill \pageref{prop:one-sided-inverses-suffice}\par
 \noindent\hangindent=1em Orbits Partition $X$\dotfill \pageref{prop:orbits-partition-x}\par
 \noindent\hangindent=1em Orbit--Stabilizer\dotfill \pageref{thm:orbit-stabilizer}\par
 \noindent\hangindent=1em Order of an Element Divides $|G|$; $g^{|G|} = e$\dotfill \pageref{cor:order-element-divides-g-g-g-e}\par
+\noindent\hangindent=1em Orthogonal Complements of Subrepresentations\dotfill \pageref{prop:orthogonal-complement-subrepresentation}\par
+\noindent\hangindent=1em Orthogonal Projection for a Positive Definite Hermitian Form\dotfill \pageref{prop:orthogonal-projection-hermitian}\par
+\noindent\hangindent=1em Orthonormal Bases for a Positive Definite Hermitian Form\dotfill \pageref{prop:gram-schmidt-hermitian}\par
 \noindent\hangindent=1em $p$ Divides $|Z(G)|$\dotfill \pageref{cor:p-divides-z-g}\par
 \noindent\hangindent=1em Parity of a Permutation\dotfill \pageref{cor:parity-permutation}\par
 \noindent\hangindent=1em Partitions Come from Equivalence Relations\dotfill \pageref{prop:partitions-come-equivalence-relations}\par
 \noindent\hangindent=1em Permutation Representation of $S_X$\dotfill \pageref{prop:permutation-representation-sx}\par
 \noindent\hangindent=1em Permutations of the Basis Give Invertible Linear Maps\dotfill \pageref{cor:permutations-basis-give-invertible-linear-maps}\par
+\noindent\hangindent=1em $p$-Groups Are Solvable\dotfill \pageref{cor:p-groups-solvable}\par
 \noindent\hangindent=1em Pointwise Products of Homomorphisms\dotfill \pageref{prop:pointwise-products-homomorphisms}\par
 \noindent\hangindent=1em Preimages and Images of Normal Subgroups\dotfill \pageref{prop:preimages-images-normal-subgroups}\par
 \noindent\hangindent=1em Preimages of Subgroups of $G/N$\dotfill \pageref{prop:preimages-subgroups-quotient}\par
+\noindent\hangindent=1em Primes and Prime Powers\dotfill \pageref{prop:primes-prime-powers-simple}\par
 \noindent\hangindent=1em Products of Two $(1\,j)$'s\dotfill \pageref{lem:products-two-1-j-s}\par
+\noindent\hangindent=1em Proper Subgroups of $A_n$ Have Index at Least $n$\dotfill \pageref{prop:an-subgroup-index}\par
 \noindent\hangindent=1em Properties of the Commutator Subgroup\dotfill \pageref{prop:properties-commutator-subgroup}\par
 \noindent\hangindent=1em $PSL_n(F)$ Is Simple\dotfill \pageref{thm:psln-f-simple}\par
 \noindent\hangindent=1em $p$-Subgroups and Conjugates of a Sylow Subgroup\dotfill \pageref{prop:p-subgroups-conjugates-sylow}\par
+\noindent\hangindent=1em $p$-Subgroups Lie in a Conjugate of a Sylow Subgroup\dotfill \pageref{lem:p-subgroup-in-conjugate-sylow}\par
+\noindent\hangindent=1em $p$-Subgroups of $GL_n(\mathbb{F}_p)$ Are Conjugate into Unitriangular Matrices\dotfill \pageref{cor:p-subgroups-gln-unitriangular}\par
 \noindent\hangindent=1em Quotients Along the Correspondence\dotfill \pageref{prop:quotients-along-correspondence}\par
 \noindent\hangindent=1em Quotients of Solvable Groups Are Solvable\dotfill \pageref{prop:quotients-solvable}\par
+\noindent\hangindent=1em Representations Are Homomorphisms to $GL(V)$\dotfill \pageref{prop:representations-homomorphisms-glv}\par
+\noindent\hangindent=1em Representatives Forming a Subgroup\dotfill \pageref{prop:representatives-forming-subgroup}\par
 \noindent\hangindent=1em Restricting a Homomorphism\dotfill \pageref{lem:restricting-homomorphism}\par
 \noindent\hangindent=1em Rotational Symmetries of the Cube\dotfill \pageref{prop:rotational-symmetries-cube}\par
+\noindent\hangindent=1em $S$ Acts on $N$ by Automorphisms\dotfill \pageref{prop:semidirect-action}\par
 \noindent\hangindent=1em $S_3$ and $S_4$ Are Solvable\dotfill \pageref{prop:s3-s4-solvable}\par
+\noindent\hangindent=1em Second Isomorphism Theorem\dotfill \pageref{thm:second-isomorphism-theorem}\par
+\noindent\hangindent=1em Semidirect Products of Solvable Groups Are Solvable\dotfill \pageref{cor:semidirect-solvable}\par
+\noindent\hangindent=1em Sesquilinear Forms on $\mathbb{C}^n$ Are Matrices\dotfill \pageref{prop:sesquilinear-matrix}\par
 \noindent\hangindent=1em $\sigma \mapsto M(\sigma)$ Is an Injective Homomorphism $S_n \to GL_n(k)$\dotfill \pageref{prop:sigma-maps-m-sigma-injective-homomorphism-sn-to}\par
+\noindent\hangindent=1em Simple Equals Irreducible\dotfill \pageref{prop:simple-iff-irreducible}\par
+\noindent\hangindent=1em Simple Groups Land in $A_{n_p}$\dotfill \pageref{cor:simple-land-an}\par
+\noindent\hangindent=1em Simple Groups of Order $60$\dotfill \pageref{thm:simple-order-60}\par
+\noindent\hangindent=1em Simple Groups of Order at Most $100$\dotfill \pageref{thm:simple-order-le-100}\par
 \noindent\hangindent=1em Size of $A_n$\dotfill \pageref{prop:size-an}\par
 \noindent\hangindent=1em $S_n$ Is Not Simple for $n \geq 3$\dotfill \pageref{cor:sn-not-simple-n-ge-3}\par
+\noindent\hangindent=1em Solvability Is Decided by $N$ and $G/N$\dotfill \pageref{cor:solvable-iff-normal-quotient}\par
 \noindent\hangindent=1em Solvability via the Derived Series\dotfill \pageref{thm:solvable-derived-series}\par
+\noindent\hangindent=1em Solvable Groups and Composition Factors of Prime Order\dotfill \pageref{prop:solvable-iff-prime-composition-factors}\par
 \noindent\hangindent=1em Sorting by Adjacent Swaps\dotfill \pageref{lem:sorting-adjacent-swaps}\par
 \noindent\hangindent=1em Stabilizers Along an Orbit Are Conjugate\dotfill \pageref{cor:stabilizers-along-orbit-conjugate}\par
 \noindent\hangindent=1em Stabilizers of Points in the Same Orbit Are Conjugate\dotfill \pageref{prop:stabilizers-points-same-orbit-conjugate}\par
 \noindent\hangindent=1em Structure of $\mathbb{R}^\times$ and $\mathbb{Q}^\times$\dotfill \pageref{prop:structure-r-x-q-x}\par
+\noindent\hangindent=1em Subgroup Representatives, Again\dotfill \pageref{cor:subgroup-representatives-again}\par
 \noindent\hangindent=1em Subgroups of Cyclic Groups Are Cyclic\dotfill \pageref{thm:subgroups-cyclic-groups-cyclic}\par
 \noindent\hangindent=1em Subgroups of Index $2$ Are Normal\dotfill \pageref{prop:subgroups-index-2-normal}\par
-\noindent\hangindent=1em Subgroups of $\mathbb{Z}$\dotfill \pageref{prop:subgroups-z}\par
+\noindent\hangindent=1em Subgroups of Index $n$ in $A_n$\dotfill \pageref{prop:an-index-n}\par
 \noindent\hangindent=1em Subgroups of $S_3$\dotfill \pageref{prop:subgroups-s3}\par
 \noindent\hangindent=1em Subgroups of Solvable Groups Are Solvable\dotfill \pageref{prop:subgroups-solvable}\par
+\noindent\hangindent=1em Subgroups of $\mathbb{Z}$\dotfill \pageref{prop:subgroups-z}\par
+\noindent\hangindent=1em Subquotients: An Injection and a Surjection\dotfill \pageref{prop:subquotient-maps}\par
 \noindent\hangindent=1em Surjectivity and Injectivity via Image and Kernel\dotfill \pageref{prop:surjectivity-injectivity-via-image-kernel}\par
+\noindent\hangindent=1em Sylow $p$-Subgroups of $GL_n(\mathbb{F}_p)$ and Flags\dotfill \pageref{prop:sylow-gln-flags}\par
 \noindent\hangindent=1em Sylow Subgroups of a Subgroup\dotfill \pageref{prop:sylow-of-subgroup}\par
 \noindent\hangindent=1em The Abelianization Is Abelian\dotfill \pageref{prop:abelianization-abelian}\par
 \noindent\hangindent=1em The Action of $G$ on $G/H$\dotfill \pageref{prop:action-g-g-h}\par
+\noindent\hangindent=1em The Average Is Idempotent\dotfill \pageref{prop:averaging-idempotent}\par
+\noindent\hangindent=1em The Bruhat Decomposition\dotfill \pageref{prop:bruhat-decomposition-gln}\par
 \noindent\hangindent=1em The Center Is a Subgroup\dotfill \pageref{prop:center-subgroup}\par
+\noindent\hangindent=1em The Character of $\operatorname{Hom}(V, W)$\dotfill \pageref{prop:character-hom}\par
 \noindent\hangindent=1em The Class Equation\dotfill \pageref{thm:class-equation}\par
 \noindent\hangindent=1em The Class Equation, Reciprocal Form\dotfill \pageref{cor:class-equation-reciprocal-form}\par
 \noindent\hangindent=1em The Commutator Subgroup of $S_n$\dotfill \pageref{thm:commutator-subgroup-sn}\par
+\noindent\hangindent=1em The Commutators of the Block Group Are the Matrices of Rank at Most $2q$\dotfill \pageref{prop:block-group-commutators-rank}\par
+\noindent\hangindent=1em The Complementary Idempotent\dotfill \pageref{lem:complementary-idempotent}\par
 \noindent\hangindent=1em The Conjugation Action\dotfill \pageref{prop:conjugation-action}\par
+\noindent\hangindent=1em The Conjugation Homomorphism $G \to S_{n_p}$\dotfill \pageref{prop:conjugation-hom-sylow}\par
 \noindent\hangindent=1em The Correspondence Theorem\dotfill \pageref{thm:correspondence}\par
+\noindent\hangindent=1em The Crossing Square\dotfill \pageref{prop:jh-crossing-square}\par
 \noindent\hangindent=1em The Cube Group Embeds in $S_6$\dotfill \pageref{prop:cube-group-embeds-s6}\par
+\noindent\hangindent=1em The Derived Series of a Finite Group Stabilizes\dotfill \pageref{prop:derived-series-finite-stabilizes}\par
 \noindent\hangindent=1em The First Sylow Theorem\dotfill \pageref{thm:sylow-first}\par
 \noindent\hangindent=1em The Homomorphism $k \mapsto g^k$ and $\langle g \rangle \cong \mathbb{Z}/N\mathbb{Z}$\dotfill \pageref{prop:homomorphism-k-maps-gk-gen-g-iso-z-nz}\par
+\noindent\hangindent=1em The Image of the Average Is the Invariants\dotfill \pageref{prop:averaging-image}\par
 \noindent\hangindent=1em The Index Is Multiplicative\dotfill \pageref{prop:index-multiplicative}\par
 \noindent\hangindent=1em The Inverse of an Isomorphism Is an Isomorphism\dotfill \pageref{prop:inverse-isomorphism-isomorphism}\par
+\noindent\hangindent=1em The Lower Right Block Is the Quotient Representation\dotfill \pageref{prop:lower-right-block-quotient-representation}\par
 \noindent\hangindent=1em The Normal Core\dotfill \pageref{prop:normal-core}\par
+\noindent\hangindent=1em The Number of Sylow Subgroups Divides $|G|$\dotfill \pageref{cor:sylow-number-divides}\par
 \noindent\hangindent=1em The Orbit Bijection\dotfill \pageref{prop:orbit-bijection}\par
 \noindent\hangindent=1em The Orbit Relation\dotfill \pageref{prop:orbit-relation}\par
 \noindent\hangindent=1em The Order of a Power\dotfill \pageref{prop:order-power}\par
+\noindent\hangindent=1em The Order of a Product of Subgroups\dotfill \pageref{lem:order-product-subgroups}\par
+\noindent\hangindent=1em The Order of $GL_n(\mathbb{F}_p)$\dotfill \pageref{prop:order-gln-fp}\par
 \noindent\hangindent=1em The Order of $SN$\dotfill \pageref{cor:order-sn}\par
 \noindent\hangindent=1em The Pair-Partition Homomorphism $S_4 \to S_3$\dotfill \pageref{prop:pair-partition-homomorphism-s4-to-s3}\par
+\noindent\hangindent=1em The Permutation Representation Is a Representation\dotfill \pageref{prop:permutation-representation-is-representation}\par
 \noindent\hangindent=1em The Product and Its Universal Property\dotfill \pageref{prop:product-universal-property}\par
+\noindent\hangindent=1em The Product Formula\dotfill \pageref{prop:product-formula}\par
+\noindent\hangindent=1em The Quotient by $N$\dotfill \pageref{prop:semidirect-quotient}\par
+\noindent\hangindent=1em The Quotient by $N_1 \cap N_2$ Is a Direct Product\dotfill \pageref{cor:two-simple-quotients-product}\par
+\noindent\hangindent=1em The Quotients of the Image Chain in $G/N$\dotfill \pageref{prop:image-chain-quotients-g-mod-n}\par
 \noindent\hangindent=1em The Rotation Group of the Cube Is $S_4$\dotfill \pageref{thm:rotation-group-cube-s4}\par
 \noindent\hangindent=1em The Second Sylow Theorem\dotfill \pageref{thm:sylow-second}\par
 \noindent\hangindent=1em The Sign Is a Homomorphism\dotfill \pageref{thm:sign-homomorphism}\par
+\noindent\hangindent=1em The Sign of Left Multiplication\dotfill \pageref{lem:sign-left-multiplication}\par
+\noindent\hangindent=1em The Simple Groups of Order at Most $100$\dotfill \pageref{cor:simple-le-100-a5}\par
 \noindent\hangindent=1em The Stabilizer Is a Subgroup\dotfill \pageref{prop:stabilizer-subgroup}\par
+\noindent\hangindent=1em The Subgroup of Index $2$ in $S_m$\dotfill \pageref{lem:index-two-sm}\par
+\noindent\hangindent=1em The Sylow Test\dotfill \pageref{cor:sylow-test-simplicity}\par
 \noindent\hangindent=1em The Third Sylow Theorem\dotfill \pageref{thm:sylow-third}\par
 \noindent\hangindent=1em The Top-Down Characterization of $\langle g_1, \ldots, g_k \rangle$\dotfill \pageref{prop:top-down-characterization-gen-g1-gk}\par
+\noindent\hangindent=1em The Trace of a Diagonalizable Matrix\dotfill \pageref{prop:trace-diagonalizable}\par
+\noindent\hangindent=1em The Trace of a Product in Either Order\dotfill \pageref{prop:trace-ab-ba}\par
+\noindent\hangindent=1em The Trace of $\alpha \mapsto S \circ \alpha \circ R$\dotfill \pageref{lem:trace-sandwich}\par
+\noindent\hangindent=1em The Trace of an Idempotent\dotfill \pageref{prop:trace-idempotent}\par
+\noindent\hangindent=1em The Two Edge Paths\dotfill \pageref{prop:jh-edge-paths}\par
 \noindent\hangindent=1em The Unitriangular Matrices Are a Sylow $p$-Subgroup of $GL_n(\mathbb{F}_p)$\dotfill \pageref{prop:unitriangular-sylow}\par
+\noindent\hangindent=1em There Is No Simple Group of Order $56$\dotfill \pageref{prop:no-simple-56}\par
+\noindent\hangindent=1em Third Isomorphism Theorem\dotfill \pageref{thm:third-isomorphism-theorem}\par
 \noindent\hangindent=1em Three Conjugacy Classes Force Order at Most $6$\dotfill \pageref{prop:three-conjugacy-classes-force-order-at-most-6}\par
 \noindent\hangindent=1em Three Formulas for the Sign\dotfill \pageref{thm:three-formulas-sign}\par
+\noindent\hangindent=1em Translations Form the Normal Subgroup\dotfill \pageref{prop:affine-translations-normal}\par
 \noindent\hangindent=1em Transpositions Are Not Commutators\dotfill \pageref{prop:transpositions-not-commutators}\par
 \noindent\hangindent=1em Two Isomorphism Invariants\dotfill \pageref{prop:two-isomorphism-invariants}\par
+\noindent\hangindent=1em Two Normal Subgroups with Simple Quotients\dotfill \pageref{lem:two-simple-quotients}\par
 \noindent\hangindent=1em Two Pairs of Elements of $A_5$\dotfill \pageref{prop:two-pairs-a5}\par
 \noindent\hangindent=1em $U_8$ and $U_7$\dotfill \pageref{prop:u8-u7}\par
 \noindent\hangindent=1em $U_n$ as a Product of Prime-Power Unit Groups\dotfill \pageref{thm:un-product-prime-power-unit-groups}\par
 \noindent\hangindent=1em $U_n$ Is a Group\dotfill \pageref{prop:un-group}\par
+\noindent\hangindent=1em Unique Factorization $g = ns$\dotfill \pageref{prop:semidirect-unique-factorization}\par
 \noindent\hangindent=1em Unique Prime Factorization\dotfill \pageref{thm:unique-prime-factorization}\par
 \noindent\hangindent=1em Unique Solvability of Linear Equations\dotfill \pageref{prop:unique-solvability-linear-equations}\par
 \noindent\hangindent=1em Uniqueness of Inverses\dotfill \pageref{prop:uniqueness-inverses}\par
 \noindent\hangindent=1em Uniqueness of the Identity\dotfill \pageref{prop:uniqueness-identity}\par
+\noindent\hangindent=1em $V^G$ Is a Subrepresentation\dotfill \pageref{lem:invariants-subrepresentation}\par
 \noindent\hangindent=1em When Coset Multiplication Is Well Defined\dotfill \pageref{prop:when-coset-multiplication-well-defined}\par
+\noindent\hangindent=1em When $k\{1,2,3\} = U_1 \oplus U_2$\dotfill \pageref{prop:k123-direct-sum}\par
 \noindent\hangindent=1em When Two Group Elements Move $x$ to the Same Place\dotfill \pageref{prop:when-two-group-elements-move-x-same-place}\par
 \noindent\hangindent=1em Which $A_n$ Are Simple\dotfill \pageref{cor:which-an-simple}\par
+\noindent\hangindent=1em Words in a Single Generator\dotfill \pageref{lem:words-single-generator-collapse}\par
+\noindent\hangindent=1em $\mathbb{Z}$ Has No Composition Series\dotfill \pageref{prop:z-no-composition-series}\par
+\noindent\hangindent=1em $\mathbb{Z}/4\mathbb{Z} \cong U_5$\dotfill \pageref{prop:z-4z-iso-u5}\par
+\noindent\hangindent=1em $\mathbb{Z}/n\mathbb{Z}$ Is a Field if and only if $n$ Is Prime\dotfill \pageref{prop:z-nz-field-if-only-if-n-prime}\par
 \end{multicols}
 
 \end{document}

@@ -2,14 +2,14 @@
 type: section
 subject: "[[Group Theory]]"
 chapter: 11
-section: 59
+section: 61
 tags: [group-theory, math493]
 ---
-← [[§58 Semidirect Products]] · ↑ [[· 11 Representations]] · [[§60 Direct Sums and Maschke's Theorem]] →
+← [[§60 Groups of Order pq as Semidirect Products]] · ↑ [[· 11 Representations and Maschke's Theorem]] · [[§62 Direct Sums and Maschke's Theorem]] →
 
 *Source: Lecture and Worksheet 13 (Mon Nov 2). Not covered in the Pinter chapters used so far.*
 
-> [!definition] Definition §59.1: Representation
+> [!definition] Definition §61.1: Representation
 > Let $G$ be a group and $k$ a field. A **representation** of $G$ (over $k$) is a $k$-vector space $V$ together with an action of $G$ on $V$ by linear maps. That is, $\star: G \times V \to V$ satisfies, for $g, g_1, g_2 \in G$, $v, v_1, v_2 \in V$ and $c \in k$:
 >
 > $$
@@ -21,23 +21,23 @@ tags: [group-theory, math493]
 >
 > *Source: lecture 11/2; WS 13*
 
-^def-59-1
+^def-61-1
 
-The linearity axioms say exactly that, for each fixed $g$, the map $v \mapsto g \star v$ is linear; the action axioms are those of an action on the set $V$ (Definition [[§25 Actions#^def-25-1|§25.1]]). *(Not from class.)* Problem Set 1 already used the word, for a homomorphism $G \to GL_n(k)$ (Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7|§20.7]]); Proposition [[§59 Representations and Subrepresentations#^prop-59-1|§59.1]] below shows the two definitions agree.
+The linearity axioms say exactly that, for each fixed $g$, the map $v \mapsto g \star v$ is linear; the action axioms are those of an action on the set $V$ (Definition [[§25 Actions#^def-25-1|§25.1]]). *(Not from class.)* Problem Set 1 already used the word, for a homomorphism $G \to GL_n(k)$ (Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-7|§20.7]]); Proposition [[§61 Representations and Subrepresentations#^prop-61-1|§61.1]] below shows the two definitions agree.
 
-> [!theorem] Proposition §59.1: Representations Are Homomorphisms to $GL(V)$
+> [!theorem] Proposition §61.1: Representations Are Homomorphisms to $GL(V)$
 > A representation of $G$ on $V$ is the same thing as a group homomorphism $\rho: G \to GL(V)$, the group of invertible linear maps $V \to V$ under composition. The correspondence is $\rho(g)(v) = g \star v$.
 >
 > *Source: WS 13.1*
 
-^prop-59-1
+^prop-61-1
 
 > [!proof]+ Proof
 > *Idea:* The action axioms are the homomorphism property; the linearity axioms say each $\rho(g)$ is linear.
 >
 > *(Worksheet session 11/2.)* Given a representation, let $\rho(g): V \to V$ be $v \mapsto g \star v$, which is linear by the linearity axioms. The action axioms say $\rho(e) = \mathrm{id}_V$ and $\rho(g_1g_2) = \rho(g_1) \circ \rho(g_2)$. In particular $\rho(g)\rho(g^{-1}) = \rho(e) = \mathrm{id}_V = \rho(g^{-1})\rho(g)$, so $\rho(g)$ is invertible and $\rho: G \to GL(V)$ is a homomorphism. Conversely, given a homomorphism $\rho$, the rule $g \star v := \rho(g)(v)$ satisfies the action axioms because $\rho$ is a homomorphism (so $\rho(e) = \mathrm{id}_V$, Proposition [[§15 Homomorphisms#^prop-15-1|§15.1]]), and the linearity axioms because each $\rho(g)$ is linear. The two constructions are inverse to each other. This is the linear version of Theorem [[§25 Actions#^thm-25-3|§25.3]], Actions Are Homomorphisms to $S_X$.
 
-^pf-59-1
+^pf-61-1
 
 *Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]], [[§25 Actions#^thm-25-3|§25.3]]
 
@@ -46,23 +46,23 @@ The linearity axioms say exactly that, for each fixed $g$, the map $v \mapsto g 
 >
 > *Source: WS 13*
 
-^rem-59-1
+^rem-61-1
 
-> [!example] Example §59.1: The Trivial Representation
+> [!example] Example §61.1: The Trivial Representation
 > Let $V = k$, one-dimensional, with $g \star v = v$ for all $g$ and $v$. In matrices, $\rho(g) = [\,1\,]$, the $1 \times 1$ identity matrix, for every $g \in G$.
 >
 > *Source: WS 13.2*
 
-^ex-59-1
+^ex-61-1
 
-> [!example] Example §59.2: One-Dimensional Representations and Characters
+> [!example] Example §61.2: One-Dimensional Representations and Characters
 > Since $GL_1(k) = k^\times$, a one-dimensional representation is the same thing as a character $\chi: G \to k^\times$ (Definition [[§46 Characters#^def-46-1|§46.1]]). For example, the sign (Definition [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|§21.2]], a homomorphism by Theorem [[§21 The Sign Homomorphism and the Alternating Group#^thm-21-3|§21.3]]) gives the **sign representation** of $S_n$ on $k$, $\sigma \star v = \operatorname{sgn}(\sigma)\,v$. The trivial representation is the trivial character.
 >
 > *Source: not from class*
 
-^ex-59-2
+^ex-61-2
 
-> [!definition] Definition §59.2: Permutation Representation
+> [!definition] Definition §61.2: Permutation Representation
 > Let $G$ act on a set $X$. Let $kX$ be the vector space with basis $\{e_x : x \in X\}$: its elements are formal sums $\sum_{x \in X} a_x e_x$ with $a_x \in k$ and $a_x = 0$ for all but finitely many $x$. The **permutation representation** is
 >
 > $$
@@ -71,9 +71,9 @@ The linearity axioms say exactly that, for each fixed $g$, the map $v \mapsto g 
 >
 > *Source: WS 13.3*
 
-^def-59-2
+^def-61-2
 
-> [!theorem] Proposition §59.2: The Permutation Representation Is a Representation
+> [!theorem] Proposition §61.2: The Permutation Representation Is a Representation
 > 1. $kX$ with this rule is a representation of $G$.
 > 2. For $S_3$ acting on $\{1, 2, 3\}$, in the basis $e_1, e_2, e_3$,
 >
@@ -83,7 +83,7 @@ The linearity axioms say exactly that, for each fixed $g$, the map $v \mapsto g 
 >
 > *Source: WS 13.3*
 
-^prop-59-2
+^prop-61-2
 
 > [!proof]+ Proof
 > *Idea:* The rule moves basis vectors as the action moves points, so the action axioms for $X$ give those for $kX$.
@@ -98,22 +98,22 @@ The linearity axioms say exactly that, for each fixed $g$, the map $v \mapsto g 
 >
 > **(2)** $(1\,2\,3)$ sends $e_1 \mapsto e_2$, $e_2 \mapsto e_3$, $e_3 \mapsto e_1$; these are the three columns. For $X = \{1, \ldots, n\}$ and $G = S_n$, $\rho(\sigma)$ is the permutation matrix $M(\sigma)$ (Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|§20.6]]), and the homomorphism $\sigma \mapsto M(\sigma)$ found there is this representation.
 
-^pf-59-2
+^pf-61-2
 
 *Uses:* [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-6|Def. §20.6]]
 
 *(Not from class.)* For $X = \{1, \ldots, n\}$ and $G = S_n$ this is the permutation representation $\sigma \mapsto M(\sigma)$ of Problem Set 1 (Definition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^def-20-8|§20.8]]). For finite $X$ the permutation representation is the composite of the homomorphism $G \to S_X$ of the action (Theorem [[§25 Actions#^thm-25-3|§25.3]]) with $\sigma \mapsto T_\sigma$, $S_X \to GL(k^X)$ (Proposition [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-4|§20.4]]): it is “the action, made linear”.
 
-> [!definition] Definition §59.3: Subrepresentation
+> [!definition] Definition §61.3: Subrepresentation
 > Let $V$ be a representation of $G$. A **subrepresentation** of $V$ is a subspace $U \subseteq V$ with $g \star u \in U$ for all $g \in G$ and $u \in U$ (a $G$-invariant subspace).
 >
 > *Source: WS 13*
 
-^def-59-3
+^def-61-3
 
 A subrepresentation is itself a representation of $G$, by restricting the action: the axioms hold in $U$ because they hold in $V$. $\{0\}$ and $V$ are always subrepresentations.
 
-> [!example] Example §59.3: Two Subrepresentations of $k\{1,2,3\}$
+> [!example] Example §61.3: Two Subrepresentations of $k\{1,2,3\}$
 > Let $S_3$ act on $k\{1,2,3\} = k^3$ as in WS 13.3, so $\sigma$ permutes the coordinates.
 >
 > 1. $U_1 = k\,(1,1,1)$, the span of the all-ones vector. Permuting coordinates fixes $(1,1,1)$, so $U_1$ is a subrepresentation, and every $g$ acts as the identity: in the basis $(1,1,1)$, $\rho_{U_1}(g) = [\,1\,]$. So $U_1$ is a copy of the trivial representation.
@@ -138,7 +138,7 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 >
 > *Source: WS 13.4; board 11/2*
 
-^ex-59-3
+^ex-61-3
 
 **Transcription note (board 11/2).** With $f_1 = (1,-1,0)$, $f_2 = (1,0,-1)$, the handwritten notes write $(1\,2) \star f_2 = f_1$ and first record the matrix $\left(\begin{smallmatrix} -1 & 1 \\ 0 & 0 \end{smallmatrix}\right)$. In fact $(1\,2) \star f_2 = (0,1,-1) = -f_1 + f_2$, and the matrix is $\left(\begin{smallmatrix} -1 & -1 \\ 0 & 1 \end{smallmatrix}\right)$, the third matrix on the board. The first one has determinant $0$, so it cannot be the matrix of $(1\,2)$ in any basis: the lecture's trace and determinant check (trace $0$, determinant $-1$) catches it.
 
@@ -159,14 +159,14 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 >
 > *Source: lecture 11/2*
 
-^rem-59-2
+^rem-61-2
 
-> [!theorem] Proposition §59.3: When $k\{1,2,3\} = U_1 \oplus U_2$
+> [!theorem] Proposition §61.3: When $k\{1,2,3\} = U_1 \oplus U_2$
 > $k\{1,2,3\}$ is the (internal) [[§3 Subspaces#^ladr-1-41|direct sum]] of $U_1$ and $U_2$ if and only if $3 \neq 0$ in $k$. If $3 = 0$ in $k$ (for example $k = \mathbb{F}_3$), then $U_1 \subseteq U_2$.
 >
 > *Source: WS 13.5; board 11/2*
 
-^prop-59-3
+^prop-61-3
 
 > [!proof]+ Proof
 > *Idea:* Put bases of $U_1$ and $U_2$ side by side; the direct sum holds exactly when the resulting $3 \times 3$ matrix is invertible, and its determinant is $3$.
@@ -185,20 +185,20 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 >
 > since $-2 = 1$ when $3 = 0$: the all-ones vector lies in $U_2$. (Directly: $(1,1,1) \in U_2$ iff $1 + 1 + 1 = 0$.)
 
-^pf-59-3
+^pf-61-3
 
 ![[m493-59-3.svg]]
 
 *(Not from lecture; figure added.)* The case $3 = 0$: the $27$ vectors of $\mathbb{F}_3^3$, coordinates $0, 1, 2$. The nine vectors with $x + y + z = 0$ form $U_2$ (blue), and the three multiples of $(1,1,1)$, which make up $U_1$ (red rings), all lie among them. So $U_1 \subseteq U_2$, $U_1 + U_2 = U_2 \neq \mathbb{F}_3^3$, and the decomposition fails.
 
 > [!remark] Remark: Why This Is “Tricky”
-> The worksheet did not say what the field is, and the answer depends on it. The lecturer's point: subrepresentations and decompositions into them are very useful, but there are subtleties, and fields in which $3 = 0$ (or $p = 0$) are part of the course. Two further observations (not from class): over $\mathbb{F}_3$, the “orthogonal complement” $U_2$ of $U_1$ contains $U_1$, so complements for a dot product need not be complements in the sense of direct sums over arbitrary fields, which is why WS 14 works over $\mathbb{R}$ ([[§61 Invariant Inner Products and Maschke over ℝ|§61]]). And $|S_3| = 6$, so Maschke's theorem (Theorem [[§60 Direct Sums and Maschke's Theorem#^thm-60-10|§60.10]]) guarantees a complement whenever $6 \neq 0$ in $k$. Over $\mathbb{F}_2$ its hypothesis fails, yet $3 = 1 \neq 0$ and the decomposition still holds: Maschke's condition is sufficient, not necessary.
+> The worksheet did not say what the field is, and the answer depends on it. The lecturer's point: subrepresentations and decompositions into them are very useful, but there are subtleties, and fields in which $3 = 0$ (or $p = 0$) are part of the course. Two further observations (not from class): over $\mathbb{F}_3$, the “orthogonal complement” $U_2$ of $U_1$ contains $U_1$, so complements for a dot product need not be complements in the sense of direct sums over arbitrary fields, which is why WS 14 works over $\mathbb{R}$ ([[§63 Invariant Inner Products and Maschke over ℝ|§63]]). And $|S_3| = 6$, so Maschke's theorem (Theorem [[§62 Direct Sums and Maschke's Theorem#^thm-62-10|§62.10]]) guarantees a complement whenever $6 \neq 0$ in $k$. Over $\mathbb{F}_2$ its hypothesis fails, yet $3 = 1 \neq 0$ and the decomposition still holds: Maschke's condition is sufficient, not necessary.
 >
 > *Source: lecture 11/2; the last two observations not from class*
 
-^rem-59-3
+^rem-61-3
 
-> [!definition] Definition §59.4: Homomorphism of Representations
+> [!definition] Definition §61.4: Homomorphism of Representations
 > Let $U$ and $V$ be representations of $G$ over the same field $k$. A **homomorphism of $G$-representations** is a $k$-linear map $\varphi: U \to V$ with
 >
 > $$
@@ -209,18 +209,18 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 >
 > *Source: WS 13*
 
-^def-59-4
+^def-61-4
 
-> [!definition] Definition §59.5: Isomorphism of Representations
-> An **isomorphism of $G$-representations** is an invertible homomorphism of $G$-representations (Definition [[§59 Representations and Subrepresentations#^def-59-4|§59.4]]).
+> [!definition] Definition §61.5: Isomorphism of Representations
+> An **isomorphism of $G$-representations** is an invertible homomorphism of $G$-representations (Definition [[§61 Representations and Subrepresentations#^def-61-4|§61.4]]).
 >
 > *Source: WS 13*
 
-^def-59-5
+^def-61-5
 
 **Transcription note (WS 13).** The worksheet prints the condition as “$\rho_V(\varphi(g)(u)) = \varphi(\rho_U(g)(v))$”, which mixes up the arguments; the definition above is the standard one, and the one the worksheet's problems use.
 
-> [!theorem] Proposition §59.4: Kernels and Images Are Subrepresentations
+> [!theorem] Proposition §61.4: Kernels and Images Are Subrepresentations
 > Let $\varphi: U \to V$ be a homomorphism of $G$-representations. Then
 >
 > 1. $\operatorname{Ker}\varphi$ is a subrepresentation of $U$;
@@ -228,7 +228,7 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 >
 > *Source: WS 13.6*
 
-^prop-59-4
+^prop-61-4
 
 > [!proof]+ Proof
 > *Idea:* $\varphi$ commutes with the action, so the action carries the kernel and the image into themselves.
@@ -249,4 +249,4 @@ A subrepresentation is itself a representation of $G$, by restricting the action
 >
 > Hence $\operatorname{Im}\varphi$ is $G$-stable, i.e. a subrepresentation of $V$.
 
-^pf-59-4
+^pf-61-4
