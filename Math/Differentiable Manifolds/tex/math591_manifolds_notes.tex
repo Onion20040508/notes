@@ -32152,7 +32152,7 @@ Its differential is the identity everywhere, in the coordinate bases: $d(\varphi
 The flow is written down at every point $x$, not only along the trajectory of $p$, because the definition takes the differential of the time-$t$ map. Here the Lie derivative is componentwise differentiation of $\mathbf{Y}$ in the direction $x^1$; this case is the core of the proof of Theorem~\ref{thm:lie-derivative-bracket}.
 \end{exbox}
 
-The Lie derivative of a vector field turns out to be a known operation, the bracket. The proof uses a normal form for a vector field near a point where it does not vanish; its proof, by the flow, is postponed.
+The Lie derivative of a vector field turns out to be a known operation, the bracket. The proof uses a normal form for a vector field near a point where it does not vanish; its proof, by the flow, was postponed to Lecture~28 and is given after the lemma.
 
 \begin{lembox}[Canonical Form Near a Regular Point]\thmlabel{lem:straightening}
 Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$ with $\mathbf{X}_p \neq 0$. There is a coordinate chart $(U, \varphi = (x^1, \ldots, x^m))$ with $p \in U$ such that
@@ -32162,9 +32162,125 @@ Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$ with $\mathbf{X}_p \neq 0$. T
 \leeref{Theorem 9.22}
 \end{lembox}
 
-\begin{proof}[Proof (to be filled)]
-Postponed in Lecture~27.
+\begin{proof}
+\textit{(Lecture~28, the last proof on vector fields in the course. Here $\varphi$ is the flow of $\mathbf{X}$, so the charts are called $\psi$ and $y$ along the way. Details marked are filled in.)} Start with any coordinates $\psi = (u^1, \ldots, u^m)$ at $p$, centred: $\psi(p) = 0$.
+
+\emph{Step 1: a linear change of coordinates.} Find an invertible linear map $L : \mathbb{R}^m \to \mathbb{R}^m$ such that, for the new coordinates $(y^1, \ldots, y^m) = L(u^1, \ldots, u^m)$, i.e.\ $y^i = \sum_j a_{ij} u^j$,
+\[
+\mathbf{X}_p = \frac{\partial}{\partial y^1}\Big|_p \qquad (\text{at } p \text{ only}).
+\]
+This is possible because $\mathbf{X}_p \neq 0$: in the $u$-coordinates $\mathbf{X}_p$ is a nonzero vector of $\mathbb{R}^m$, and $L$ only has to send it to $e_1$; $L$ need not be a rotation, and may have to rescale.
+
+\begin{center}
+\begin{tikzpicture}[scale=0.95]
+\draw[->, gray!60] (-0.3,0) -- (2.2,0) node[right, font=\scriptsize, text=black] {$u^1$};
+\draw[->, gray!60] (0,-0.3) -- (0,1.8) node[above, font=\scriptsize, text=black] {$u^2$};
+\draw[->, very thick, orange!85!black] (0,0) -- (1.4,1.1) node[above right, font=\scriptsize] {$\mathbf{X}_p$};
+\fill (0,0) circle (1.2pt) node[below left, font=\scriptsize] {$p$};
+\draw[->, thick] (2.6,0.8) -- node[above, font=\scriptsize] {$L$} (3.6,0.8);
+\begin{scope}[xshift=4.3cm]
+\draw[->, gray!60] (-0.3,0) -- (2.2,0) node[right, font=\scriptsize, text=black] {$y^1$};
+\draw[->, gray!60] (0,-0.3) -- (0,1.8) node[above, font=\scriptsize, text=black] {$y^2$};
+\draw[->, very thick, orange!85!black] (0,0) -- (1.0,0) node[below=2pt, font=\scriptsize] {$\mathbf{X}_p = e_1$};
+\fill (0,0) circle (1.2pt) node[below left, font=\scriptsize] {$p$};
+\node[font=\scriptsize, orange!70!black] at (1.2,1.2) {in the new coordinates};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+
+Let $V \subseteq M$ be the domain of $(y^1, \ldots, y^m)$, and introduce the hypersurface
+\[
+S = \{ y^1 = 0 \} \subseteq V , \qquad \dim S = m - 1 ,
+\]
+with coordinates $(y^2, \ldots, y^m)$. On $V$, $\mathbf{X}|_V = \sum_i f^i\, \partial/\partial y^i$ with $f^1(p) = 1$ and $f^i(p) = 0$ for $i = 2, \ldots, m$. Shrinking $V$, we may assume $f^1 \neq 0$ on $S$: then $\mathbf{X}$ is transverse to $S$ at every point of $S$. (The assumption is geometric, a field crossing $S$ everywhere; the argument below only uses $f^1(p) \neq 0$.)
+
+\emph{Step 2: flow out $S$.} Flow out $S$ by the flow of $\mathbf{X}$: the integral curves through all the points of $S$ fill a neighbourhood of $p$. By a flow box at $p$ (Lemma~\ref{lem:flow-box}), shrinking $S$ around $p$ (a step added in class after a student's question), there is $\varepsilon > 0$ such that
+\[
+\theta : (-\varepsilon, \varepsilon) \times S \longrightarrow M, \qquad (t, q) \longmapsto \varphi_t(q)
+\]
+is defined; it is smooth, as the restriction of the flow (Theorem~\ref{thm:maximal-flow}(2)).
+
+\emph{Claim: $d\theta_{(0,p)} = \mathrm{Id}$,} in the coordinates $(t, y^2, \ldots, y^m)$ on $(-\varepsilon, \varepsilon) \times S$ and $(y^1, \ldots, y^m)$ on $V$. Since $\theta(0, q) = q$, the curves $t \mapsto \theta(0, y^2, \ldots, y^i + t, \ldots, y^m)$, $i = 2, \ldots, m$, are the coordinate curves of $S$, so in the $S$ directions $d\theta_{(0,p)}$ is the identity block. And $t \mapsto \theta(t, 0, \ldots, 0) = \varphi_t(p)$ is the integral curve through $p$, whose velocity at $t = 0$ is $\mathbf{X}_p = \partial/\partial y^1|_p$, by the choice of the $y$-coordinates. So $d\theta_{(0,p)}$ sends each coordinate vector to the coordinate vector of the same index. The dimensions match, $1 + (m - 1) = m$, so by the inverse function theorem (Theorem~\ref{thm:inverse-function} in charts, as in the proof of Theorem~\ref{thm:local-diffeo-criterion}, at the single point $(0, p)$), $\theta$ is a local diffeomorphism near $(0, p)$: there are a neighbourhood $U$ of $p$ and an inverse
+\[
+\theta^{-1} : U \longrightarrow (-\varepsilon, \varepsilon) \times S
+\]
+(onto an open neighbourhood of $(0, p)$, shrinking $\varepsilon$ and $S$ again).
+
+\emph{Step 3: the coordinates.} Define
+\[
+(x^1, \ldots, x^m) = (t, y^2, \ldots, y^m) \circ \theta^{-1} \qquad \text{on } U .
+\]
+\textit{(Filled in.)} This is a chart: a composite of the diffeomorphism $\theta^{-1}$ onto an open set and the coordinates $(t, y^2, \ldots, y^m)$, so a diffeomorphism of $U$ onto an open subset of $\mathbb{R}^m$ (Proposition~\ref{prop:chart-diffeo}). Geometrically: given $q \in U$, there is $(t, r) \in (-\varepsilon, \varepsilon) \times S$ with $q = \theta(t, r)$: the integral curve starting at $r \in S$ passes through $q$ at time $t$. So $x^1(q) = t$ is the time it takes to flow from $S$ to $q$, and $(x^2, \ldots, x^m)(q)$ are the $y$-coordinates of the point $r$ where the curve through $q$, traced back, meets $S$.
+
+\emph{In these coordinates, $\mathbf{X} = \partial/\partial x^1$.} $\partial/\partial x^1|_q$ is the velocity of the curve that fixes all other coordinates and translates $x^1$ (Proposition~\ref{prop:velocity-coords}). That curve is $s \mapsto \theta(t + s, r) = \varphi_{t+s}(r)$, which equals $\varphi_s(q)$ by the group law (Proposition~\ref{prop:group-law}): the integral curve of $\mathbf{X}$ through $q$. Its velocity at $s = 0$ is $\mathbf{X}_q$. So the $x^1$-coordinate curves are exactly the integral curves of $\mathbf{X}$.
 \end{proof}
+
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\fill[gray!8] (-1.430,-1.170) rectangle (1.430,1.170);
+\draw[gray!55, thin] (-1.300,-1.170) -- (-1.300,1.170);
+\draw[gray!55, thin] (-0.650,-1.170) -- (-0.650,1.170);
+\draw[gray!55, thin] (0.650,-1.170) -- (0.650,1.170);
+\draw[gray!55, thin] (1.300,-1.170) -- (1.300,1.170);
+\draw[blue!70!black, thick] (-1.430,-1.040) -- (1.430,-1.040);
+\draw[-{Stealth[length=5pt]}, blue!70!black] (0.806,-1.040) -- (0.910,-1.040);
+\draw[blue!70!black, thick] (-1.430,-0.520) -- (1.430,-0.520);
+\draw[-{Stealth[length=5pt]}, blue!70!black] (0.806,-0.520) -- (0.910,-0.520);
+\draw[blue!70!black, thick] (-1.430,0.000) -- (1.430,0.000);
+\draw[-{Stealth[length=5pt]}, blue!70!black] (0.806,0.000) -- (0.910,0.000);
+\draw[blue!70!black, thick] (-1.430,0.520) -- (1.430,0.520);
+\draw[-{Stealth[length=5pt]}, blue!70!black] (0.806,0.520) -- (0.910,0.520);
+\draw[blue!70!black, thick] (-1.430,1.040) -- (1.430,1.040);
+\draw[-{Stealth[length=5pt]}, blue!70!black] (0.806,1.040) -- (0.910,1.040);
+\draw[very thick, orange!85!black] (0,-1.170) -- (0,1.170);
+\draw[thin] (-1.430,-1.170) rectangle (1.430,1.170);
+\draw[-stealth, thin, gray] (-1.630,-1.470) -- (1.780,-1.470) node[right, font=\scriptsize, text=black] {$t$};
+\node[font=\scriptsize] at (-1.430,-1.670) {$-\varepsilon$};
+\node[font=\scriptsize] at (1.430,-1.670) {$\varepsilon$};
+\node[font=\scriptsize] at (0,-1.670) {$0$};
+\node[font=\scriptsize, orange!85!black] at (0,1.420) {$\{0\} \times S$};
+\node[font=\small] at (0.000,1.920) {$(-\varepsilon, \varepsilon) \times S$};
+\draw[red!70!black, thick] (0,0.780) -- (1.040,0.780);
+\fill (0,0) circle (1.3pt) node[below left, font=\scriptsize, fill=white, inner sep=1pt] {$(0, p)$};
+\fill[red!70!black] (0,0.780) circle (1.4pt) node[left, font=\scriptsize, fill=white, inner sep=1pt] {$(0, r)$};
+\fill[red!70!black] (1.040,0.780) circle (1.4pt) node[above=2pt, font=\scriptsize, fill=white, inner sep=1pt] {$(t, r)$};
+\draw[->, thick] (2.25,0.35) to[bend left=20] node[above, font=\scriptsize] {$\theta(t, q) = \varphi_t(q)$} (4.45,0.35);
+\draw[<-, thick] (2.25,-0.35) to[bend right=20] node[below, font=\scriptsize] {$\theta^{-1} = (x^1, \ldots, x^m)$} (4.45,-0.35);
+\fill[gray!8] plot coordinates {(5.496,1.408) (5.433,1.210) (5.383,1.008) (5.345,0.802) (5.320,0.594) (5.308,0.381) (5.309,0.165) (5.324,-0.055) (5.352,-0.278) (5.393,-0.505) (6.900,-1.305) (6.872,-1.299) (6.844,-1.293) (6.816,-1.287) (6.788,-1.280) (6.759,-1.273) (6.731,-1.265) (6.703,-1.258) (6.675,-1.250) (6.646,-1.242) (6.618,-1.234) (6.589,-1.225) (6.561,-1.216) (6.532,-1.207) (6.504,-1.197) (6.475,-1.187) (6.446,-1.177) (6.418,-1.167) (6.389,-1.157) (6.360,-1.146) (6.331,-1.135) (6.302,-1.123) (6.273,-1.112) (6.244,-1.100) (6.215,-1.087) (6.185,-1.075) (6.156,-1.062) (6.127,-1.049) (6.097,-1.036) (6.068,-1.022) (6.038,-1.009) (6.009,-0.995) (5.979,-0.980) (5.949,-0.966) (5.919,-0.951) (5.889,-0.936) (5.859,-0.920) (5.829,-0.905) (5.799,-0.889) (5.769,-0.873) (5.739,-0.856) (5.709,-0.840) (5.678,-0.823) (5.648,-0.806) (5.618,-0.788) (5.587,-0.770) (5.557,-0.752) (5.526,-0.734) (5.495,-0.716) (5.464,-0.697) (5.434,-0.678) (6.921,-1.309) (6.949,-1.315) (6.977,-1.320) (7.005,-1.325) (7.033,-1.329) (7.061,-1.333) (7.088,-1.337) (7.116,-1.341) (7.144,-1.344) (7.172,-1.347) (7.200,-1.350) (7.227,-1.353) (7.255,-1.355) (7.283,-1.357) (7.311,-1.358) (7.338,-1.360) (7.366,-1.361) (7.394,-1.361) (7.421,-1.362) (7.449,-1.362) (7.477,-1.362) (7.504,-1.361) (7.532,-1.360) (7.560,-1.359) (7.587,-1.358) (7.615,-1.356) (7.643,-1.354) (7.671,-1.352) (7.698,-1.349) (7.726,-1.346) (7.754,-1.343) (7.782,-1.339) (7.809,-1.335) (7.837,-1.331) (7.865,-1.326) (7.893,-1.321) (7.921,-1.316) (7.949,-1.310) (7.977,-1.304) (8.005,-1.298) (8.033,-1.292) (8.061,-1.285) (8.089,-1.277) (8.118,-1.270) (8.146,-1.262) (8.174,-1.253) (8.203,-1.245) (8.231,-1.236) (8.259,-1.226) (8.288,-1.217) (8.339,-1.035) (8.409,-0.681) (8.458,-0.332) (8.486,0.010) (8.493,0.347) (8.479,0.679) (8.445,1.004) (8.392,1.325) (8.319,1.639) (8.227,1.949) (8.190,2.014) (8.167,1.991) (8.145,1.968) (8.121,1.946) (8.098,1.924) (8.074,1.903) (8.051,1.882) (8.027,1.861) (8.003,1.841) (7.978,1.821) (7.954,1.801) (7.929,1.782) (7.905,1.763) (7.880,1.744) (7.855,1.726) (7.829,1.708) (7.804,1.690) (7.779,1.673) (7.753,1.656) (7.727,1.640) (7.701,1.624) (7.675,1.608) (7.649,1.592) (7.623,1.577) (7.597,1.563) (7.571,1.548) (7.544,1.534) (7.517,1.520) (7.491,1.507) (7.464,1.494) (7.437,1.482) (7.410,1.469) (7.383,1.457) (7.356,1.446) (7.329,1.435) (7.302,1.424) (7.274,1.413) (7.247,1.403) (7.219,1.393) (7.192,1.384) (7.164,1.375) (7.137,1.366) (7.109,1.358) (7.081,1.349) (7.054,1.342) (7.026,1.334) (6.998,1.327) (6.970,1.320) (6.942,1.314) (6.914,1.308) (6.893,1.304) (6.865,1.298) (6.837,1.293) (6.809,1.288) (6.781,1.284) (6.752,1.279) (6.724,1.276) (6.696,1.272) (6.668,1.269) (6.640,1.266) (6.611,1.263) (6.583,1.261) (6.555,1.259) (6.526,1.258) (6.498,1.256) (6.470,1.256) (6.442,1.255) (6.413,1.255) (6.385,1.255) (6.357,1.255) (6.328,1.255) (6.300,1.256) (6.272,1.258) (6.243,1.259) (6.215,1.261) (6.187,1.263) (6.159,1.266) (6.130,1.268) (6.102,1.271) (6.074,1.275) (6.046,1.278) (6.017,1.282) (5.989,1.286) (5.961,1.291) (5.933,1.296) (5.905,1.301) (5.877,1.306) (5.849,1.312) (5.821,1.318) (5.793,1.324) (5.765,1.330) (5.737,1.337) (5.710,1.344) (5.682,1.352) (5.654,1.359) (5.626,1.367) (5.599,1.375) (5.571,1.384) (5.544,1.392) (5.516,1.401)} -- cycle;
+\draw[thick] plot[smooth cycle] coordinates {(9.249,0.362) (9.220,0.717) (9.132,1.063) (8.989,1.391) (8.793,1.693) (8.550,1.962) (8.266,2.191) (7.947,2.374) (7.602,2.507) (7.240,2.586) (6.869,2.610) (6.499,2.577) (6.139,2.489) (5.798,2.347) (5.484,2.156) (5.206,1.920) (4.971,1.645) (4.784,1.338) (4.649,1.006) (4.571,0.658) (4.552,0.303) (4.591,-0.050) (4.688,-0.394) (4.840,-0.718) (5.044,-1.015) (5.295,-1.278) (5.585,-1.500) (5.909,-1.675) (6.257,-1.799) (6.622,-1.869) (6.993,-1.883) (7.362,-1.841) (7.720,-1.744) (8.057,-1.594) (8.365,-1.395) (8.636,-1.152) (8.864,-0.871) (9.043,-0.559) (9.168,-0.224) (9.236,0.126)};
+\node[font=\scriptsize] at (5.021,-1.436) {$V$};
+\node[font=\scriptsize, gray!60!black] at (5.088,-0.797) {$U$};
+\draw[gray!55, thin] plot[smooth] coordinates {(5.573,-0.762) (5.552,-0.668) (5.532,-0.574) (5.515,-0.480) (5.500,-0.387) (5.487,-0.294) (5.476,-0.202) (5.467,-0.111) (5.460,-0.020) (5.455,0.071) (5.452,0.161) (5.451,0.250) (5.452,0.339) (5.456,0.428) (5.461,0.516) (5.468,0.603) (5.477,0.690) (5.488,0.777) (5.502,0.863) (5.517,0.948) (5.534,1.033) (5.553,1.118) (5.573,1.202) (5.596,1.286) (5.621,1.369)};
+\draw[gray!55, thin] plot[smooth] coordinates {(6.252,-1.103) (6.239,-1.003) (6.228,-0.903) (6.217,-0.803) (6.208,-0.704) (6.200,-0.604) (6.193,-0.505) (6.187,-0.406) (6.183,-0.307) (6.179,-0.208) (6.177,-0.109) (6.175,-0.011) (6.175,0.088) (6.176,0.186) (6.178,0.284) (6.181,0.382) (6.185,0.480) (6.190,0.578) (6.197,0.675) (6.204,0.773) (6.213,0.870) (6.223,0.968) (6.233,1.065) (6.245,1.162) (6.258,1.258)};
+\draw[gray!55, thin] plot[smooth] coordinates {(7.531,-1.360) (7.547,-1.238) (7.561,-1.116) (7.573,-0.995) (7.584,-0.873) (7.594,-0.752) (7.603,-0.630) (7.610,-0.509) (7.616,-0.388) (7.620,-0.268) (7.623,-0.147) (7.625,-0.027) (7.625,0.094) (7.624,0.214) (7.621,0.334) (7.618,0.453) (7.613,0.573) (7.606,0.692) (7.598,0.812) (7.589,0.931) (7.579,1.050) (7.567,1.168) (7.554,1.287) (7.539,1.405) (7.523,1.524)};
+\draw[gray!55, thin] plot[smooth] coordinates {(8.166,-1.256) (8.198,-1.115) (8.227,-0.974) (8.253,-0.835) (8.276,-0.696) (8.296,-0.558) (8.312,-0.420) (8.326,-0.284) (8.336,-0.148) (8.343,-0.013) (8.348,0.121) (8.349,0.255) (8.347,0.388) (8.342,0.520) (8.334,0.651) (8.324,0.782) (8.310,0.911) (8.293,1.040) (8.274,1.169) (8.251,1.296) (8.226,1.423) (8.198,1.549) (8.167,1.675) (8.133,1.799) (8.097,1.923)};
+\draw[blue!70!black, thick] plot[smooth] coordinates {(5.404,-0.553) (5.481,-0.600) (5.559,-0.644) (5.636,-0.687) (5.713,-0.729) (5.790,-0.769) (5.866,-0.807) (5.942,-0.843) (6.017,-0.878) (6.093,-0.911) (6.167,-0.943) (6.242,-0.972) (6.316,-1.000) (6.390,-1.026) (6.464,-1.051) (6.537,-1.073) (6.610,-1.094) (6.683,-1.113) (6.755,-1.131) (6.828,-1.146) (6.900,-1.160) (6.972,-1.172) (7.044,-1.182) (7.116,-1.190) (7.187,-1.196) (7.259,-1.200) (7.330,-1.203) (7.402,-1.203) (7.473,-1.202) (7.545,-1.198) (7.617,-1.193) (7.688,-1.185) (7.760,-1.175) (7.832,-1.163) (7.904,-1.150) (7.977,-1.133) (8.049,-1.115) (8.122,-1.095) (8.195,-1.072) (8.268,-1.047) (8.342,-1.020)};
+\draw[-{Stealth[length=5pt]}, blue!70!black] (6.042,-0.889) -- (6.142,-0.932);
+\draw[blue!70!black, thick] plot[smooth] coordinates {(5.324,-0.064) (5.404,-0.107) (5.484,-0.149) (5.563,-0.188) (5.643,-0.226) (5.722,-0.262) (5.802,-0.297) (5.881,-0.329) (5.960,-0.360) (6.039,-0.389) (6.118,-0.416) (6.196,-0.441) (6.275,-0.464) (6.353,-0.486) (6.432,-0.505) (6.510,-0.523) (6.588,-0.538) (6.666,-0.552) (6.744,-0.563) (6.822,-0.573) (6.900,-0.580) (6.978,-0.585) (7.056,-0.589) (7.133,-0.590) (7.211,-0.589) (7.289,-0.586) (7.367,-0.580) (7.445,-0.573) (7.523,-0.563) (7.601,-0.551) (7.679,-0.536) (7.757,-0.520) (7.835,-0.501) (7.913,-0.479) (7.992,-0.456) (8.071,-0.429) (8.149,-0.401) (8.228,-0.369) (8.307,-0.336) (8.386,-0.299) (8.466,-0.260)};
+\draw[-{Stealth[length=5pt]}, blue!70!black] (5.986,-0.370) -- (6.091,-0.407);
+\draw[blue!70!black, thick] plot[smooth] coordinates {(5.309,0.408) (5.388,0.369) (5.467,0.333) (5.546,0.298) (5.625,0.265) (5.705,0.234) (5.784,0.204) (5.864,0.177) (5.943,0.151) (6.023,0.127) (6.103,0.106) (6.182,0.086) (6.262,0.068) (6.342,0.052) (6.422,0.039) (6.501,0.027) (6.581,0.017) (6.661,0.010) (6.741,0.004) (6.820,0.001) (6.900,0.000) (6.980,0.001) (7.059,0.004) (7.139,0.010) (7.219,0.018) (7.299,0.028) (7.378,0.040) (7.458,0.055) (7.538,0.072) (7.618,0.092) (7.697,0.114) (7.777,0.138) (7.857,0.165) (7.936,0.194) (8.016,0.226) (8.095,0.261) (8.174,0.298) (8.254,0.337) (8.333,0.380) (8.411,0.425) (8.490,0.472)};
+\draw[-{Stealth[length=5pt]}, blue!70!black] (5.970,0.143) -- (6.076,0.113);
+\draw[blue!70!black, thick] plot[smooth] coordinates {(5.355,0.863) (5.430,0.831) (5.506,0.800) (5.583,0.772) (5.659,0.745) (5.736,0.720) (5.813,0.697) (5.890,0.675) (5.967,0.656) (6.044,0.638) (6.122,0.623) (6.200,0.609) (6.277,0.598) (6.355,0.588) (6.433,0.581) (6.511,0.575) (6.588,0.572) (6.666,0.571) (6.744,0.572) (6.822,0.575) (6.900,0.580) (6.978,0.587) (7.056,0.597) (7.133,0.609) (7.211,0.623) (7.288,0.640) (7.366,0.659) (7.443,0.680) (7.520,0.704) (7.597,0.730) (7.673,0.758) (7.750,0.789) (7.826,0.822) (7.901,0.858) (7.977,0.896) (8.052,0.937) (8.126,0.980) (8.200,1.026) (8.274,1.074) (8.347,1.125) (8.419,1.179)};
+\draw[-{Stealth[length=5pt]}, blue!70!black] (5.993,0.650) -- (6.096,0.628);
+\draw[blue!70!black, thick] plot[smooth] coordinates {(5.460,1.301) (5.531,1.277) (5.601,1.254) (5.672,1.233) (5.743,1.213) (5.815,1.196) (5.887,1.180) (5.959,1.166) (6.031,1.154) (6.103,1.144) (6.175,1.135) (6.248,1.129) (6.320,1.124) (6.393,1.122) (6.465,1.121) (6.538,1.122) (6.611,1.126) (6.683,1.131) (6.756,1.139) (6.828,1.148) (6.900,1.160) (6.972,1.174) (7.044,1.190) (7.115,1.208) (7.187,1.228) (7.258,1.251) (7.328,1.275) (7.399,1.302) (7.469,1.331) (7.538,1.363) (7.607,1.397) (7.675,1.433) (7.743,1.471) (7.810,1.511) (7.877,1.554) (7.942,1.599) (8.007,1.647) (8.071,1.696) (8.134,1.748) (8.195,1.803) (8.256,1.859)};
+\draw[-{Stealth[length=5pt]}, blue!70!black] (6.055,1.150) -- (6.151,1.138);
+\draw[very thick, orange!85!black] (6.900,-1.305) -- (6.900,1.305);
+\draw[->, orange!85!black, thick] (6.900,-1.160) -- (7.319,-1.234);
+\draw[->, orange!85!black, thick] (6.900,-0.580) -- (7.353,-0.617);
+\draw[->, orange!85!black, thick] (6.900,0.580) -- (7.353,0.617);
+\draw[->, orange!85!black, thick] (6.900,1.160) -- (7.319,1.234);
+\draw[->, orange!85!black, very thick] (6.900,0.000) -- (7.364,0.000) node[below right=-1pt, font=\scriptsize] {$\mathbf{X}_p$};
+\node[font=\scriptsize, orange!85!black, anchor=south] at (6.900,1.355) {$S = \{y^1 = 0\}$};
+\fill (6.900,0.000) circle (1.3pt) node[below left, font=\scriptsize] {$p$};
+\draw[red!70!black, thick] plot[smooth] coordinates {(6.900,0.870) (7.010,0.886) (7.119,0.907) (7.228,0.933) (7.337,0.963) (7.445,0.999) (7.552,1.039) (7.659,1.084) (7.765,1.134) (7.869,1.189) (7.973,1.250)};
+\fill[red!70!black] (6.900,0.870) circle (1.4pt) node[left, font=\scriptsize] {$r$};
+\fill[red!70!black] (7.973,1.250) circle (1.4pt) node[above right=-1pt, font=\scriptsize, fill=white, inner sep=1pt] {$q = \theta(t, r)$};
+\node[font=\scriptsize, gray!50!black, anchor=west] at (8.166,-1.456) {$\varphi_1(S)$};
+\draw[->, gray!50] (4.363,0.000) -- (9.582,0.000) node[right, font=\scriptsize, text=black] {$y^1$};
+\end{tikzpicture}
+\end{center}
+
+\textit{(Figure after the board, redrawn from a computed field.)} The \emph{flowout} of the transverse slice $S$, for the field $\mathbf{X} = \big(1 - 0.15 (y^2)^2\big)\, \partial/\partial y^1 + (0.5\, y^1 + 0.2\, y^2)\, \partial/\partial y^2$ on the plane, with $\mathbf{X}_p = \partial/\partial y^1|_p$ at $p = 0$. Left: the domain $(-\varepsilon, \varepsilon) \times S$ of $\theta$, with the lines $\{t\} \times S$ (grey) and $(-\varepsilon, \varepsilon) \times \{r\}$ (blue). Right: their images in $V$, the slices $\varphi_t(S)$ (grey, $t = \pm 0.5, \pm 1$) and the integral curves of $\mathbf{X}$ through points of $S$ (blue); the shaded region is $U = \theta\big((-\varepsilon, \varepsilon) \times S\big)$. Each point $q$ near $p$ is reached by exactly one integral curve from $S$, after a time $t$: here $q = \theta(t, r)$ with $t = 0.8$ (red). The chart $\theta^{-1}$ gives $q$ the coordinates $x^1(q) = t$, the time from $S$ to $q$, and $(x^2, \ldots, x^m)(q) = (y^2, \ldots, y^m)(r)$, the coordinates of the starting point. The construction reappears in classical mechanics, where $t$ is physical time. Lee proves the theorem with his flowout theorem (Theorem~9.20); the inverse function theorem above does the same job locally.
 
 \begin{center}
 \begin{tikzpicture}[>=Stealth, scale=0.95]
@@ -32536,6 +32652,603 @@ whose difference is $\begin{psmallmatrix} 0 & (e^s - e^{-s}) \sinh t \\ (e^{-s} 
 \emph{Check against Proposition~\ref{prop:bracket-flows}} \textit{(filled in)}. By Proposition~\ref{prop:bracket-coords}, with components $(x, -y)$ and $(y, x)$, $[\mathbf{X}, \mathbf{Y}] = (\mathbf{X}(y) - \mathbf{Y}(x))\, \partial_x + (\mathbf{X}(x) - \mathbf{Y}(-y))\, \partial_y = -2y\, \partial_x + 2x\, \partial_y$. In the proposition the flow of $\mathbf{Y}$ is applied last in the first term; here that is $\psi_t \circ \varphi_s - \varphi_s \circ \psi_t = -2 \sinh s\, \sinh t \begin{psmallmatrix} 0 & 1 \\ -1 & 0 \end{psmallmatrix}$, whose mixed derivative at $(0, 0)$, applied to $p = (x, y)$, is $-2(y, -x) = (-2y, 2x) = [\mathbf{X}, \mathbf{Y}]_p$.
 \end{proof}
 
+% ============================================================================
+% CHAPTER: DIFFERENTIAL FORMS (Lecture 28, Mon Nov 9, 2026)
+% ============================================================================
+\chapter{Differential Forms}
+
+\textit{Lecture 28. This chapter, planned to run until Thanksgiving, is differential forms and Stokes' theorem. It will need manifolds with boundary, orientations, integrals of forms, and the general Stokes theorem. It opens with the theorem to be generalized, recalled from Calculus~III (\ref{sec:stokes-calc3}); the next section reads its integrand as a two-form (\ref{sec:two-form-integrand}), and the multilinear algebra behind that reading starts in \ref{sec:multilinear}.}
+
+% ============================================================================
+% SECTION: STOKES' THEOREM IN CALCULUS III
+% ============================================================================
+\section{Stokes' Theorem in Calculus III}\label{sec:stokes-calc3}
+
+\roadmark{Stage: forms}{The theorem to be generalized, recalled from Calculus~III: parametrized surfaces, orientation by a unit normal, surface integrals, the induced orientation of the boundary, and Stokes' theorem in $\mathbb{R}^3$.}
+
+\textit{(Lecture 28.)} The course reviews Stokes' theorem of Calculus~III because it is the theorem to be generalized. The definitions of this section are recalled from Calculus~III (Stewart, Sections~16.6--16.8, in MATH 233) and from MATH 452 (\S\S31--34), where the theorem is proved. They are restated in the notation of the lecture, which differs from both:
+
+\begin{center}
+\small
+\begin{tabular}{llll}
+\toprule
+ & these notes & Calculus~III (Stewart) & MATH 452 \\ \midrule
+vector field & $\mathbf{X} = (f^1, f^2, f^3)$, $\vec G = (g^1, g^2, g^3)$ & $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j} + R\,\mathbf{k}$ & $\mathbf{F} = (P, Q, R)$ \\
+coordinates on $\mathbb{R}^3$ & $x^1, x^2, x^3$ & $x, y, z$ & $x, y, z$ \\
+parametrization & $\vec r(s, t)$, $(s, t) \in D$ & $\mathbf{r}(u, v)$ & $\mathbf{X}(u, v)$ \\
+tangent vectors & $\vec r_s$, $\vec r_t$ & $\mathbf{r}_u$, $\mathbf{r}_v$ & $\mathbf{X}_u$, $\mathbf{X}_v$ \\
+unit normal & $\mathbf{n}$ & $\mathbf{n}$ & $\hat n$ \\
+\bottomrule
+\end{tabular}
+\end{center}
+In these notes a bold $\mathbf{X}$ is always a vector field; in MATH 452 the same letter is the parametrization of the surface.
+
+\begin{defbox}[Parametrized Surface]\deflabel{def:parametrized-surface}
+Let $D \subseteq \mathbb{R}^2$ be a compact region of the $(s, t)$-plane bounded by a piecewise smooth closed curve, and let $\vec r : D \to \mathbb{R}^3$ be the restriction of a smooth map defined on an open set containing $D$,
+\[
+\vec r(s, t) = \big( x^1(s, t), x^2(s, t), x^3(s, t) \big) .
+\]
+The image $S = \vec r(D)$ is a \textbf{parametrized surface}, and $\vec r$ is a \textbf{parametrization} of $S$.
+\end{defbox}
+
+\textit{(Recalled from Calculus~III: Stewart, Section~16.6; MATH 452, \S31.)} The partial derivatives
+\[
+\vec r_s = \frac{\partial \vec r}{\partial s} = (x^1_s, x^2_s, x^3_s), \qquad \vec r_t = \frac{\partial \vec r}{\partial t} = (x^1_t, x^2_t, x^3_t)
+\]
+are two fields of vectors along $S$, tangent to $S$: $\vec r_s$ is the velocity of the curve $s \mapsto \vec r(s, t)$ with $t$ fixed, $\vec r_t$ that of $t \mapsto \vec r(s, t)$. The standard grid of $D$ goes to a mesh of these curves on $S$ (figure below).
+
+\begin{defbox}[Regular Parametrization]\deflabel{def:regular-parametrization}
+A parametrization $\vec r : D \to \mathbb{R}^3$ (Definition~\ref{def:parametrized-surface}) is \textbf{regular} if $\vec r_s \times \vec r_t \neq 0$ at every point of $D$, that is, if $\vec r_s$ and $\vec r_t$ are linearly independent everywhere.
+\end{defbox}
+
+\textit{(Recalled from Calculus~III: Stewart, Section~16.6, a smooth surface; MATH 452, \S31.)} Regular means that the Jacobian $d\vec r$, the $3 \times 2$ matrix with columns $\vec r_s, \vec r_t$, has rank~$2$: on the interior of $D$, $\vec r$ is an immersion (Definition~\ref{def:immersion}). ``In 95\% of the examples in Calc~III,'' a single injective regular parametrization covers $S$; when $\vec r$ restricted to the interior of $D$ is moreover a homeomorphism onto its image, it is an embedding (Definition~\ref{def:embedding}), its image is a regular submanifold of $\mathbb{R}^3$ (Theorem~\ref{thm:embedding-image}), and the inverse of $\vec r$ is a chart of that submanifold.
+
+\begin{defbox}[Orientation of a Surface by a Unit Normal]\deflabel{def:surface-orientation}
+Let $S \subseteq \mathbb{R}^3$ be a $2$-dimensional regular submanifold (Definition~\ref{def:submanifold}). A \textbf{unit normal field} on $S$ is a continuous map $\mathbf{n} : S \to \mathbb{R}^3$ such that for every $q \in S$, $\mathbf{n}(q)$ is a unit vector perpendicular to the tangent plane $T_qS \subseteq \mathbb{R}^3$. A choice of unit normal field is an \textbf{orientation} of $S$, and $S$ with this choice is an \textbf{oriented surface}.
+\end{defbox}
+
+\textit{(Recalled from Calculus~III: Stewart, Section~16.7; MATH 452, \S32.)} At each point there are two unit normals, $\mathbf{n}(q)$ and $-\mathbf{n}(q)$; the orientation is a continuous choice of one of them. The continuity is part of the definition (a student's question in Lecture~28): ``it's supposed to vary'' continuously. If $\mathbf{n}$ is an orientation, so is $-\mathbf{n}$.
+
+\begin{defbox}[Positive Parametrization]\deflabel{def:positive-parametrization}
+Let $S$ be oriented by $\mathbf{n}$ (Definition~\ref{def:surface-orientation}). A regular parametrization $\vec r : D \to S$ (Definition~\ref{def:regular-parametrization}) is \textbf{positive} if the normal $\vec r_s \times \vec r_t$ points in the direction of $\mathbf{n}$:
+\[
+\vec r_s \times \vec r_t = |\vec r_s \times \vec r_t|\; \mathbf{n}\big(\vec r(s, t)\big) \qquad \text{for all } (s, t) \in D .
+\]
+\end{defbox}
+
+\textit{(Lecture~28; Stewart, Section~16.7, calls $\mathbf{n} = \vec r_s \times \vec r_t / |\vec r_s \times \vec r_t|$ the orientation that a parametrization ``supplies''.)} Exchanging $s$ and $t$ turns a positive parametrization into a negative one, since $\vec r_t \times \vec r_s = -\vec r_s \times \vec r_t$. The inverse of a positive parametrization will be a positively oriented chart, once orientations of manifolds are defined.
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\draw[-stealth, gray!60] (-0.2,0) -- (2.5,0) node[right, font=\scriptsize, text=black] {$s$};
+\draw[-stealth, gray!60] (0,-0.2) -- (0,2.45) node[above, font=\scriptsize, text=black] {$t$};
+\fill[gray!8] (0.2,0.2) rectangle (2.200,2.200);
+\draw[orange!85!black, thin] (0.2,0.200) -- (2.200,0.200);
+\draw[blue!70!black, thin] (0.200,0.2) -- (0.200,2.200);
+\draw[orange!85!black, thin] (0.2,0.600) -- (2.200,0.600);
+\draw[blue!70!black, thin] (0.600,0.2) -- (0.600,2.200);
+\draw[orange!85!black, thin] (0.2,1.000) -- (2.200,1.000);
+\draw[blue!70!black, thin] (1.000,0.2) -- (1.000,2.200);
+\draw[orange!85!black, thin] (0.2,1.400) -- (2.200,1.400);
+\draw[blue!70!black, thin] (1.400,0.2) -- (1.400,2.200);
+\draw[orange!85!black, thin] (0.2,1.800) -- (2.200,1.800);
+\draw[blue!70!black, thin] (1.800,0.2) -- (1.800,2.200);
+\draw[orange!85!black, thin] (0.2,2.200) -- (2.200,2.200);
+\draw[blue!70!black, thin] (2.200,0.2) -- (2.200,2.200);
+\draw[thick] (0.2,0.2) rectangle (2.200,2.200);
+\draw[->, very thick, orange!85!black] (1.400,1.000) -- (2.000,1.000) node[below right=-2pt, font=\scriptsize] {$e_s$};
+\draw[->, very thick, blue!70!black] (1.400,1.000) -- (1.400,1.600) node[above left=-2pt, font=\scriptsize] {$e_t$};
+\fill (1.400,1.000) circle (1.4pt) node[below left, font=\scriptsize, fill=white, inner sep=1pt] {$(s_0, t_0)$};
+\node[font=\small] at (1.2,2.55) {$D$};
+\draw[->, thick] (2.75,1.25) to[bend left=22] node[above, font=\scriptsize] {$\vec r$} (4.1,1.25);
+\draw[-stealth, gray!60] (6.400,-0.200) -- (3.790,-2.175) node[below left, font=\scriptsize, text=black] {$x^1$};
+\draw[-stealth, gray!60] (6.400,-0.200) -- (9.984,-1.530) node[right, font=\scriptsize, text=black] {$x^2$};
+\draw[-stealth, gray!60] (6.400,-0.200) -- (6.400,2.323) node[above, font=\scriptsize, text=black] {$x^3$};
+\fill[gray!8] plot coordinates {(6.529,0.526) (6.470,0.512) (6.411,0.498) (6.352,0.483) (6.294,0.468) (6.235,0.452) (6.176,0.435) (6.117,0.417) (6.058,0.397) (5.999,0.376) (5.941,0.353) (5.882,0.329) (5.823,0.302) (5.764,0.273) (5.705,0.242) (5.646,0.209) (5.587,0.173) (5.529,0.135) (5.470,0.094) (5.411,0.051) (5.352,0.005) (5.293,-0.044) (5.234,-0.095) (5.176,-0.148) (5.117,-0.204) (5.058,-0.262) (4.999,-0.322) (4.940,-0.384) (4.881,-0.449) (4.823,-0.515) (4.823,-0.515) (4.897,-0.538) (4.971,-0.562) (5.045,-0.587) (5.119,-0.613) (5.193,-0.640) (5.267,-0.669) (5.342,-0.698) (5.416,-0.728) (5.490,-0.760) (5.564,-0.792) (5.638,-0.826) (5.712,-0.860) (5.786,-0.896) (5.861,-0.932) (5.935,-0.970) (6.009,-1.009) (6.083,-1.049) (6.157,-1.090) (6.231,-1.132) (6.305,-1.175) (6.380,-1.219) (6.454,-1.264) (6.528,-1.310) (6.602,-1.358) (6.676,-1.406) (6.750,-1.455) (6.825,-1.506) (6.899,-1.557) (6.973,-1.610) (6.973,-1.610) (7.032,-1.549) (7.090,-1.489) (7.149,-1.432) (7.208,-1.377) (7.267,-1.324) (7.326,-1.273) (7.385,-1.225) (7.444,-1.179) (7.502,-1.136) (7.561,-1.095) (7.620,-1.057) (7.679,-1.021) (7.738,-0.988) (7.797,-0.958) (7.855,-0.929) (7.914,-0.903) (7.973,-0.880) (8.032,-0.858) (8.091,-0.838) (8.150,-0.821) (8.208,-0.805) (8.267,-0.790) (8.326,-0.777) (8.385,-0.765) (8.444,-0.755) (8.503,-0.745) (8.562,-0.735) (8.620,-0.726) (8.679,-0.717) (8.679,-0.717) (8.605,-0.660) (8.531,-0.603) (8.457,-0.548) (8.383,-0.493) (8.308,-0.440) (8.234,-0.387) (8.160,-0.336) (8.086,-0.286) (8.012,-0.236) (7.938,-0.188) (7.864,-0.141) (7.789,-0.095) (7.715,-0.050) (7.641,-0.006) (7.567,0.037) (7.493,0.078) (7.419,0.119) (7.345,0.159) (7.270,0.198) (7.196,0.235) (7.122,0.272) (7.048,0.307) (6.974,0.341) (6.900,0.375) (6.826,0.407) (6.751,0.438) (6.677,0.468) (6.603,0.498) (6.529,0.526)} -- cycle;
+\draw[orange!85!black, thin] plot[smooth] coordinates {(6.529,0.526) (6.470,0.512) (6.411,0.498) (6.352,0.483) (6.294,0.468) (6.235,0.452) (6.176,0.435) (6.117,0.417) (6.058,0.397) (5.999,0.376) (5.941,0.353) (5.882,0.329) (5.823,0.302) (5.764,0.273) (5.705,0.242) (5.646,0.209) (5.587,0.173) (5.529,0.135) (5.470,0.094) (5.411,0.051) (5.352,0.005) (5.293,-0.044) (5.234,-0.095) (5.176,-0.148) (5.117,-0.204) (5.058,-0.262) (4.999,-0.322) (4.940,-0.384) (4.881,-0.449) (4.823,-0.515)};
+\draw[blue!70!black, thin] plot[smooth] coordinates {(6.529,0.526) (6.603,0.498) (6.677,0.468) (6.751,0.438) (6.826,0.407) (6.900,0.375) (6.974,0.341) (7.048,0.307) (7.122,0.272) (7.196,0.235) (7.270,0.198) (7.345,0.159) (7.419,0.119) (7.493,0.078) (7.567,0.037) (7.641,-0.006) (7.715,-0.050) (7.789,-0.095) (7.864,-0.141) (7.938,-0.188) (8.012,-0.236) (8.086,-0.286) (8.160,-0.336) (8.234,-0.387) (8.308,-0.440) (8.383,-0.493) (8.457,-0.548) (8.531,-0.603) (8.605,-0.660) (8.679,-0.717)};
+\draw[orange!85!black, thin] plot[smooth] coordinates {(6.959,0.348) (6.900,0.335) (6.841,0.322) (6.782,0.309) (6.724,0.295) (6.665,0.280) (6.606,0.264) (6.547,0.247) (6.488,0.228) (6.429,0.208) (6.371,0.186) (6.312,0.163) (6.253,0.137) (6.194,0.109) (6.135,0.079) (6.076,0.047) (6.018,0.012) (5.959,-0.025) (5.900,-0.065) (5.841,-0.107) (5.782,-0.152) (5.723,-0.200) (5.664,-0.249) (5.606,-0.302) (5.547,-0.357) (5.488,-0.414) (5.429,-0.473) (5.370,-0.534) (5.311,-0.598) (5.253,-0.663)};
+\draw[blue!70!black, thin] plot[smooth] coordinates {(6.188,0.439) (6.262,0.412) (6.336,0.384) (6.410,0.354) (6.484,0.324) (6.558,0.293) (6.633,0.261) (6.707,0.227) (6.781,0.193) (6.855,0.157) (6.929,0.121) (7.003,0.083) (7.077,0.045) (7.152,0.005) (7.226,-0.036) (7.300,-0.078) (7.374,-0.121) (7.448,-0.165) (7.522,-0.210) (7.596,-0.256) (7.671,-0.303) (7.745,-0.351) (7.819,-0.400) (7.893,-0.451) (7.967,-0.502) (8.041,-0.554) (8.115,-0.608) (8.190,-0.662) (8.264,-0.718) (8.338,-0.775)};
+\draw[orange!85!black, thin] plot[smooth] coordinates {(7.389,0.135) (7.330,0.123) (7.271,0.111) (7.213,0.099) (7.154,0.086) (7.095,0.072) (7.036,0.057) (6.977,0.041) (6.918,0.023) (6.859,0.004) (6.801,-0.016) (6.742,-0.039) (6.683,-0.064) (6.624,-0.091) (6.565,-0.120) (6.506,-0.151) (6.448,-0.185) (6.389,-0.221) (6.330,-0.260) (6.271,-0.301) (6.212,-0.345) (6.153,-0.391) (6.095,-0.440) (6.036,-0.491) (5.977,-0.545) (5.918,-0.601) (5.859,-0.659) (5.800,-0.720) (5.741,-0.782) (5.683,-0.846)};
+\draw[blue!70!black, thin] plot[smooth] coordinates {(5.846,0.313) (5.921,0.287) (5.995,0.260) (6.069,0.232) (6.143,0.203) (6.217,0.172) (6.291,0.141) (6.365,0.109) (6.440,0.075) (6.514,0.041) (6.588,0.005) (6.662,-0.031) (6.736,-0.069) (6.810,-0.108) (6.884,-0.147) (6.959,-0.188) (7.033,-0.230) (7.107,-0.273) (7.181,-0.317) (7.255,-0.362) (7.329,-0.408) (7.403,-0.455) (7.478,-0.504) (7.552,-0.553) (7.626,-0.603) (7.700,-0.655) (7.774,-0.707) (7.848,-0.761) (7.922,-0.815) (7.997,-0.871)};
+\draw[orange!85!black, thin] plot[smooth] coordinates {(7.819,-0.113) (7.760,-0.124) (7.701,-0.135) (7.643,-0.147) (7.584,-0.159) (7.525,-0.172) (7.466,-0.185) (7.407,-0.201) (7.348,-0.217) (7.290,-0.235) (7.231,-0.255) (7.172,-0.276) (7.113,-0.300) (7.054,-0.326) (6.995,-0.354) (6.936,-0.384) (6.878,-0.417) (6.819,-0.452) (6.760,-0.490) (6.701,-0.530) (6.642,-0.573) (6.583,-0.618) (6.525,-0.666) (6.466,-0.716) (6.407,-0.769) (6.348,-0.824) (6.289,-0.881) (6.230,-0.941) (6.172,-1.002) (6.113,-1.065)};
+\draw[blue!70!black, thin] plot[smooth] coordinates {(5.505,0.119) (5.579,0.094) (5.653,0.068) (5.728,0.041) (5.802,0.012) (5.876,-0.017) (5.950,-0.047) (6.024,-0.078) (6.098,-0.111) (6.172,-0.144) (6.247,-0.179) (6.321,-0.214) (6.395,-0.251) (6.469,-0.289) (6.543,-0.327) (6.617,-0.367) (6.691,-0.408) (6.766,-0.450) (6.840,-0.493) (6.914,-0.537) (6.988,-0.582) (7.062,-0.628) (7.136,-0.675) (7.210,-0.724) (7.285,-0.773) (7.359,-0.823) (7.433,-0.875) (7.507,-0.927) (7.581,-0.981) (7.655,-1.035)};
+\draw[orange!85!black, thin] plot[smooth] coordinates {(8.249,-0.398) (8.190,-0.407) (8.131,-0.417) (8.073,-0.428) (8.014,-0.439) (7.955,-0.451) (7.896,-0.464) (7.837,-0.478) (7.778,-0.493) (7.720,-0.510) (7.661,-0.529) (7.602,-0.549) (7.543,-0.572) (7.484,-0.597) (7.425,-0.624) (7.367,-0.653) (7.308,-0.685) (7.249,-0.719) (7.190,-0.756) (7.131,-0.795) (7.072,-0.837) (7.013,-0.881) (6.955,-0.928) (6.896,-0.977) (6.837,-1.029) (6.778,-1.083) (6.719,-1.139) (6.660,-1.197) (6.602,-1.258) (6.543,-1.320)};
+\draw[blue!70!black, thin] plot[smooth] coordinates {(5.164,-0.159) (5.238,-0.183) (5.312,-0.208) (5.386,-0.234) (5.460,-0.261) (5.535,-0.289) (5.609,-0.318) (5.683,-0.349) (5.757,-0.380) (5.831,-0.413) (5.905,-0.446) (5.979,-0.481) (6.054,-0.516) (6.128,-0.553) (6.202,-0.591) (6.276,-0.629) (6.350,-0.669) (6.424,-0.710) (6.498,-0.752) (6.573,-0.795) (6.647,-0.839) (6.721,-0.884) (6.795,-0.930) (6.869,-0.978) (6.943,-1.026) (7.017,-1.075) (7.092,-1.126) (7.166,-1.177) (7.240,-1.230) (7.314,-1.283)};
+\draw[orange!85!black, thin] plot[smooth] coordinates {(8.679,-0.717) (8.620,-0.726) (8.562,-0.735) (8.503,-0.745) (8.444,-0.755) (8.385,-0.765) (8.326,-0.777) (8.267,-0.790) (8.208,-0.805) (8.150,-0.821) (8.091,-0.838) (8.032,-0.858) (7.973,-0.880) (7.914,-0.903) (7.855,-0.929) (7.797,-0.958) (7.738,-0.988) (7.679,-1.021) (7.620,-1.057) (7.561,-1.095) (7.502,-1.136) (7.444,-1.179) (7.385,-1.225) (7.326,-1.273) (7.267,-1.324) (7.208,-1.377) (7.149,-1.432) (7.090,-1.489) (7.032,-1.549) (6.973,-1.610)};
+\draw[blue!70!black, thin] plot[smooth] coordinates {(4.823,-0.515) (4.897,-0.538) (4.971,-0.562) (5.045,-0.587) (5.119,-0.613) (5.193,-0.640) (5.267,-0.669) (5.342,-0.698) (5.416,-0.728) (5.490,-0.760) (5.564,-0.792) (5.638,-0.826) (5.712,-0.860) (5.786,-0.896) (5.861,-0.932) (5.935,-0.970) (6.009,-1.009) (6.083,-1.049) (6.157,-1.090) (6.231,-1.132) (6.305,-1.175) (6.380,-1.219) (6.454,-1.264) (6.528,-1.310) (6.602,-1.358) (6.676,-1.406) (6.750,-1.455) (6.825,-1.506) (6.899,-1.557) (6.973,-1.610)};
+\draw[thick] plot coordinates {(6.529,0.526) (6.470,0.512) (6.411,0.498) (6.352,0.483) (6.294,0.468) (6.235,0.452) (6.176,0.435) (6.117,0.417) (6.058,0.397) (5.999,0.376) (5.941,0.353) (5.882,0.329) (5.823,0.302) (5.764,0.273) (5.705,0.242) (5.646,0.209) (5.587,0.173) (5.529,0.135) (5.470,0.094) (5.411,0.051) (5.352,0.005) (5.293,-0.044) (5.234,-0.095) (5.176,-0.148) (5.117,-0.204) (5.058,-0.262) (4.999,-0.322) (4.940,-0.384) (4.881,-0.449) (4.823,-0.515) (4.823,-0.515) (4.897,-0.538) (4.971,-0.562) (5.045,-0.587) (5.119,-0.613) (5.193,-0.640) (5.267,-0.669) (5.342,-0.698) (5.416,-0.728) (5.490,-0.760) (5.564,-0.792) (5.638,-0.826) (5.712,-0.860) (5.786,-0.896) (5.861,-0.932) (5.935,-0.970) (6.009,-1.009) (6.083,-1.049) (6.157,-1.090) (6.231,-1.132) (6.305,-1.175) (6.380,-1.219) (6.454,-1.264) (6.528,-1.310) (6.602,-1.358) (6.676,-1.406) (6.750,-1.455) (6.825,-1.506) (6.899,-1.557) (6.973,-1.610) (6.973,-1.610) (7.032,-1.549) (7.090,-1.489) (7.149,-1.432) (7.208,-1.377) (7.267,-1.324) (7.326,-1.273) (7.385,-1.225) (7.444,-1.179) (7.502,-1.136) (7.561,-1.095) (7.620,-1.057) (7.679,-1.021) (7.738,-0.988) (7.797,-0.958) (7.855,-0.929) (7.914,-0.903) (7.973,-0.880) (8.032,-0.858) (8.091,-0.838) (8.150,-0.821) (8.208,-0.805) (8.267,-0.790) (8.326,-0.777) (8.385,-0.765) (8.444,-0.755) (8.503,-0.745) (8.562,-0.735) (8.620,-0.726) (8.679,-0.717) (8.679,-0.717) (8.605,-0.660) (8.531,-0.603) (8.457,-0.548) (8.383,-0.493) (8.308,-0.440) (8.234,-0.387) (8.160,-0.336) (8.086,-0.286) (8.012,-0.236) (7.938,-0.188) (7.864,-0.141) (7.789,-0.095) (7.715,-0.050) (7.641,-0.006) (7.567,0.037) (7.493,0.078) (7.419,0.119) (7.345,0.159) (7.270,0.198) (7.196,0.235) (7.122,0.272) (7.048,0.307) (6.974,0.341) (6.900,0.375) (6.826,0.407) (6.751,0.438) (6.677,0.468) (6.603,0.498) (6.529,0.526)} -- cycle;
+\draw[->, very thick, orange!85!black] (6.365,-0.236) -- (5.597,-0.738) node[below=1pt, font=\scriptsize, fill=white, inner sep=1pt] {$\vec r_s$};
+\draw[->, very thick, blue!70!black] (6.365,-0.236) -- (7.333,-0.715) node[above right=-2pt, font=\scriptsize, fill=white, inner sep=1pt] {$\vec r_t$};
+\draw[->, very thick, red!70!black] (6.365,-0.236) -- (6.526,0.744) node[above, font=\scriptsize] {$\vec r_s \times \vec r_t$};
+\fill (6.365,-0.236) circle (1.4pt);
+\node[font=\small] at (9.229,-0.417) {$S = \vec r(D)$};
+\end{tikzpicture}
+\end{center}
+\textit{(Figure after the board, redrawn from a computed surface.)} A positive parametrization. Left: the parameter domain $D$ with its grid, the lines $t = \text{const}$ (orange) and $s = \text{const}$ (blue), and the unit vectors $e_s, e_t$ at a point $(s_0, t_0)$. Right: the image $S = \vec r(D)$; the grid goes to the mesh of the two families of curves on $S$, and $e_s, e_t$ go to the tangent vectors $\vec r_s, \vec r_t$ at $\vec r(s_0, t_0)$, the velocities of the orange and the blue curve through that point. The normal $\vec r_s \times \vec r_t$ (red) points to the side from which the mesh is seen here; orienting $S$ by that side makes $\vec r$ positive (Definition~\ref{def:positive-parametrization}). The surface drawn is $\vec r(s, t) = \big(1.7s + 0.3,\ 1.5t + 0.3,\ 0.75 + 0.25 \sin 2.4s - 0.3t^2 + 0.1st\big)$ on $D = [0, 1]^2$.
+%% <<< END ADDED
+
+\begin{defbox}[Surface Integral of a Vector Field]\deflabel{def:flux-integral}
+Let $S$ be oriented by $\mathbf{n}$, let $\vec r : D \to S$ be a positive parametrization (Definition~\ref{def:positive-parametrization}) that is injective on the interior of $D$, and let $\vec G = (g^1, g^2, g^3)$ be a continuous vector field on $S$. The \textbf{surface integral} (or \textbf{flux}) of $\vec G$ through $S$ is
+\[
+\iint_S \vec G \cdot d\vec S = \iint_S (\vec G \cdot \mathbf{n})\, dS = \iint_D \vec G\big(\vec r(s, t)\big) \cdot \mathbf{n}\big(\vec r(s, t)\big)\, |\vec r_s \times \vec r_t|\; ds\, dt ,
+\]
+where $dS = |\vec r_s \times \vec r_t|\, ds\, dt$ is the element of surface area and $d\vec S = \mathbf{n}\, dS$.
+\leeref{Ch.~16, \emph{Surface Integrals}}
+\end{defbox}
+
+\textit{(Recalled from Calculus~III: Stewart, Section~16.7; MATH 452, Definition~32.1.)} The factor $|\vec r_s \times \vec r_t|\, ds\, dt$ is the area of the parallelogram spanned by $\vec r_s\, ds$ and $\vec r_t\, dt$, the image of a small rectangle of $D$ to first order. That the integral does not depend on the positive parametrization is the change of variables formula (MATH 452, \S\S24 and~32); for integrals of forms it will be proved in this course.
+
+\begin{defbox}[Induced Orientation of the Boundary Curve]\deflabel{def:induced-boundary-orientation}
+Let $S$ be a compact oriented surface with boundary in $\mathbb{R}^3$, oriented by $\mathbf{n}$, whose boundary $\partial S$ is a piecewise smooth closed curve (or a finite union of such curves). The \textbf{induced orientation} of $\partial S$ is the direction of travel along $\partial S$ in which a walker with $\mathbf{n}$ pointing from his feet to his head has the surface on his left. With this orientation, $\partial S$ is \textbf{positively oriented}.
+\end{defbox}
+
+\textit{(Lecture~28: the right-hand rule, or ``Amp\`ere's little guy''; Stewart, Section~16.8; MATH 452, Theorem~34.1.)} Surfaces with boundary are taken here in the sense of Calculus~III; manifolds with boundary come later in the chapter. The walker can be traded for a formula of the kind that will generalize: put the outward direction first.
+
+\begin{lembox}[The Induced Orientation Puts the Outward Direction First]\thmlabel{lem:outward-first}
+In the setting of Definition~\ref{def:induced-boundary-orientation}, let $q \in \partial S$ be a point where $\partial S$ is smooth, let $T$ be the unit tangent vector of $\partial S$ at $q$ in the direction of travel, and let $\nu$ be the unit vector tangent to $S$ at $q$, perpendicular to $T$ and pointing out of $S$. Then $\partial S$ is positively oriented at $q$ if and only if
+\[
+\nu \times T = \mathbf{n}(q) .
+\]
+\end{lembox}
+
+\begin{proof}
+\textit{(Filled in.)} The vectors $\nu, T$ are orthonormal and span $T_qS$, and $\mathbf{n} = \mathbf{n}(q)$ is a unit vector perpendicular to both. So $\nu \times T$, a unit vector perpendicular to $\nu$ and $T$, is $\pm\mathbf{n}$; we show that it is $+\mathbf{n}$ exactly when the surface is on the walker's left.
+
+\emph{The walker's left.} A walker facing the unit vector $T$ with his head along the unit vector $\mathbf{n} \perp T$ has his left along $\mathbf{n} \times T$: for $T = e_1$ and $\mathbf{n} = e_3$ his left is $e_2 = e_3 \times e_1$, and every such pair $(T, \mathbf{n})$ is carried to $(e_1, e_3)$ by a rotation, which preserves cross products. The surface lies on his left exactly when the inward vector $-\nu$ is his left, $\mathbf{n} \times T = -\nu$.
+
+\emph{The two conditions agree.} If $\nu \times T = \mathbf{n}$, then $(\nu, T, \mathbf{n})$ is a positively oriented orthonormal basis, so its cross products are cyclic: $T \times \mathbf{n} = \nu$, and $\mathbf{n} \times T = -T \times \mathbf{n} = -\nu$. If instead $\nu \times T = -\mathbf{n}$, the same argument with $-\mathbf{n}$ in place of $\mathbf{n}$ gives $(-\mathbf{n}) \times T = -\nu$, so $\mathbf{n} \times T = \nu \neq -\nu$. Hence the surface is on the walker's left if and only if $\nu \times T = \mathbf{n}$.
+\end{proof}
+
+For a region of the $(x^1, x^2)$-plane oriented by $\mathbf{n} = e_3$, the lemma says that the boundary is traversed counterclockwise: on the right edge of a disk, $\nu = e_1$ and $T = e_2$, and $e_1 \times e_2 = e_3$. This is the orientation of Green's theorem.
+
+\begin{thmbox}[Stokes' Theorem in $\mathbb{R}^3$]\thmlabel{thm:stokes-calc3}
+Let $S \subseteq \mathbb{R}^3$ be a compact oriented surface with boundary, oriented by $\mathbf{n}$ (Definition~\ref{def:surface-orientation}), with $\partial S$ carrying the induced orientation (Definition~\ref{def:induced-boundary-orientation}), and let $\mathbf{X} = (f^1, f^2, f^3)$ be a smooth vector field on a neighbourhood of $S$. Then
+\[
+\oint_{\partial S} \mathbf{X} \cdot d\vec r = \iint_S (\nabla \times \mathbf{X}) \cdot d\vec S ,
+\]
+where the right-hand side is the surface integral of Definition~\ref{def:flux-integral}, $d\vec S = \mathbf{n}\, dS$.
+\leeref{Theorem 16.34}
+\end{thmbox}
+
+\begin{proof}[Proof (not given in this course)]
+The theorem is proved in MATH 452 (Theorem~34.1: first for graphs, then for parametrized surfaces, by pulling both sides back to the parameter domain and applying Green's theorem there); Stewart (Section~16.8) proves the case of a graph. In this course it will be a special case of the general Stokes theorem, which is how Lee deduces it (Theorem~16.34).
+\end{proof}
+
+The ingredients, all to be generalized:
+\begin{itemize}[nosep]
+\item a \emph{surface with boundary}: manifolds with boundary will be needed;
+\item an \emph{orientation}: in Calculus~III a unit normal field $\mathbf{n}$ (Definition~\ref{def:surface-orientation});
+\item the \emph{induced orientation} on $\partial S$, by the right-hand rule (Definition~\ref{def:induced-boundary-orientation}, Lemma~\ref{lem:outward-first});
+\item the \emph{integrals} on the two sides: a line integral of $\mathbf{X}$ and a surface integral of $\nabla \times \mathbf{X}$ (Definition~\ref{def:flux-integral});
+\item the operation $\mathbf{X} \mapsto \nabla \times \mathbf{X}$.
+\end{itemize}
+All of them have to be understood and generalized to manifolds.
+
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\fill[blue!6] plot coordinates {(-2.004,0.752) (-2.086,0.705) (-2.162,0.656) (-2.233,0.605) (-2.297,0.553) (-2.356,0.499) (-2.409,0.444) (-2.456,0.388) (-2.496,0.331) (-2.530,0.273) (-2.557,0.214) (-2.578,0.155) (-2.592,0.095) (-2.599,0.035) (-2.599,-0.025) (-2.593,-0.085) (-2.580,-0.144) (-2.561,-0.204) (-2.535,-0.262) (-2.502,-0.321) (-2.463,-0.378) (-2.418,-0.434) (-2.366,-0.489) (-2.308,-0.543) (-2.245,-0.596) (-2.175,-0.647) (-2.100,-0.696) (-2.019,-0.744) (-1.933,-0.789) (-1.843,-0.833) (-1.747,-0.874) (-1.647,-0.913) (-1.543,-0.950) (-1.434,-0.985) (-1.322,-1.016) (-1.207,-1.045) (-1.088,-1.072) (-0.967,-1.096) (-0.843,-1.117) (-0.717,-1.135) (-0.589,-1.150) (-0.460,-1.162) (-0.329,-1.171) (-0.198,-1.177) (-0.066,-1.180) (0.066,-1.180) (0.198,-1.177) (0.329,-1.171) (0.460,-1.162) (0.589,-1.150) (0.717,-1.135) (0.843,-1.117) (0.967,-1.096) (1.088,-1.072) (1.207,-1.045) (1.322,-1.016) (1.434,-0.985) (1.543,-0.950) (1.647,-0.913) (1.747,-0.874) (1.843,-0.833) (1.933,-0.789) (2.019,-0.744) (2.100,-0.696) (2.175,-0.647) (2.245,-0.596) (2.308,-0.543) (2.366,-0.489) (2.418,-0.434) (2.463,-0.378) (2.502,-0.321) (2.535,-0.262) (2.561,-0.204) (2.580,-0.144) (2.593,-0.085) (2.599,-0.025) (2.599,0.035) (2.592,0.095) (2.578,0.155) (2.557,0.214) (2.530,0.273) (2.496,0.331) (2.456,0.388) (2.409,0.444) (2.356,0.499) (2.297,0.553) (2.233,0.605) (2.162,0.656) (2.086,0.705) (2.004,0.752) (2.004,0.752) (1.902,0.807) (1.799,0.859) (1.696,0.908) (1.593,0.955) (1.490,0.998) (1.388,1.039) (1.285,1.076) (1.182,1.111) (1.079,1.143) (0.977,1.172) (0.874,1.198) (0.771,1.221) (0.668,1.241) (0.565,1.259) (0.463,1.273) (0.360,1.285) (0.257,1.293) (0.154,1.299) (0.051,1.302) (-0.051,1.302) (-0.154,1.299) (-0.257,1.293) (-0.360,1.285) (-0.463,1.273) (-0.565,1.259) (-0.668,1.241) (-0.771,1.221) (-0.874,1.198) (-0.977,1.172) (-1.079,1.143) (-1.182,1.111) (-1.285,1.076) (-1.388,1.039) (-1.490,0.998) (-1.593,0.955) (-1.696,0.908) (-1.799,0.859) (-1.902,0.807) (-2.004,0.752)} -- cycle;
+\draw[blue!25, thin] plot[smooth] coordinates {(-0.000,1.226) (-0.036,1.226) (-0.072,1.225) (-0.108,1.223) (-0.143,1.221) (-0.179,1.218) (-0.214,1.215) (-0.249,1.211) (-0.283,1.206) (-0.317,1.200) (-0.350,1.194) (-0.383,1.188) (-0.416,1.181) (-0.447,1.173) (-0.478,1.165) (-0.508,1.156) (-0.538,1.146) (-0.566,1.136) (-0.594,1.126) (-0.621,1.115) (-0.647,1.104) (-0.671,1.092) (-0.695,1.080) (-0.718,1.067) (-0.739,1.054) (-0.760,1.041) (-0.779,1.027) (-0.797,1.013) (-0.814,0.998) (-0.829,0.983) (-0.843,0.968) (-0.856,0.953) (-0.868,0.938) (-0.878,0.922) (-0.887,0.906) (-0.894,0.890) (-0.900,0.874) (-0.905,0.858) (-0.908,0.842) (-0.910,0.825) (-0.910,0.809) (-0.909,0.793) (-0.906,0.776) (-0.903,0.760) (-0.897,0.744) (-0.890,0.728) (-0.882,0.712) (-0.873,0.696) (-0.862,0.681) (-0.850,0.665) (-0.836,0.650) (-0.822,0.635) (-0.805,0.621) (-0.788,0.607) (-0.769,0.593) (-0.750,0.579) (-0.729,0.566) (-0.707,0.553) (-0.683,0.540) (-0.659,0.528) (-0.634,0.517) (-0.608,0.506) (-0.580,0.495) (-0.552,0.485) (-0.523,0.475) (-0.493,0.466) (-0.463,0.457) (-0.431,0.449) (-0.399,0.442) (-0.367,0.435) (-0.334,0.429) (-0.300,0.423) (-0.266,0.418) (-0.231,0.414) (-0.196,0.410) (-0.161,0.407) (-0.125,0.404) (-0.090,0.402) (-0.054,0.401) (-0.018,0.400) (0.018,0.400) (0.054,0.401) (0.090,0.402) (0.125,0.404) (0.161,0.407) (0.196,0.410) (0.231,0.414) (0.266,0.418) (0.300,0.423) (0.334,0.429) (0.367,0.435) (0.399,0.442) (0.431,0.449) (0.463,0.457) (0.493,0.466) (0.523,0.475) (0.552,0.485) (0.580,0.495) (0.608,0.506) (0.634,0.517) (0.659,0.528) (0.683,0.540) (0.707,0.553) (0.729,0.566) (0.750,0.579) (0.769,0.593) (0.788,0.607) (0.805,0.621) (0.822,0.635) (0.836,0.650) (0.850,0.665) (0.862,0.681) (0.873,0.696) (0.882,0.712) (0.890,0.728) (0.897,0.744) (0.903,0.760) (0.906,0.776) (0.909,0.793) (0.910,0.809) (0.910,0.825) (0.908,0.842) (0.905,0.858) (0.900,0.874) (0.894,0.890) (0.887,0.906) (0.878,0.922) (0.868,0.938) (0.856,0.953) (0.843,0.968) (0.829,0.983) (0.814,0.998) (0.797,1.013) (0.779,1.027) (0.760,1.041) (0.739,1.054) (0.718,1.067) (0.695,1.080) (0.671,1.092) (0.647,1.104) (0.621,1.115) (0.594,1.126) (0.566,1.136) (0.538,1.146) (0.508,1.156) (0.478,1.165) (0.447,1.173) (0.416,1.181) (0.383,1.188) (0.350,1.194) (0.317,1.200) (0.283,1.206) (0.249,1.211) (0.214,1.215) (0.179,1.218) (0.143,1.221) (0.108,1.223) (0.072,1.225) (0.036,1.226) (0.000,1.226)};
+\draw[blue!25, thin] plot[smooth] coordinates {(-0.766,1.222) (-0.831,1.208) (-0.894,1.192) (-0.956,1.176) (-1.017,1.158) (-1.076,1.139) (-1.133,1.119) (-1.188,1.098) (-1.242,1.077) (-1.293,1.054) (-1.343,1.030) (-1.390,1.006) (-1.436,0.980) (-1.479,0.954) (-1.519,0.927) (-1.558,0.900) (-1.594,0.872) (-1.627,0.843) (-1.658,0.813) (-1.687,0.783) (-1.712,0.753) (-1.735,0.722) (-1.756,0.690) (-1.773,0.659) (-1.788,0.627) (-1.800,0.595) (-1.809,0.562) (-1.816,0.530) (-1.819,0.497) (-1.820,0.464) (-1.818,0.432) (-1.813,0.399) (-1.805,0.367) (-1.794,0.334) (-1.781,0.302) (-1.765,0.271) (-1.746,0.239) (-1.724,0.208) (-1.700,0.177) (-1.673,0.147) (-1.643,0.117) (-1.611,0.088) (-1.576,0.059) (-1.539,0.032) (-1.499,0.004) (-1.457,-0.022) (-1.413,-0.048) (-1.367,-0.073) (-1.318,-0.097) (-1.268,-0.120) (-1.215,-0.143) (-1.161,-0.164) (-1.104,-0.184) (-1.046,-0.203) (-0.987,-0.222) (-0.926,-0.239) (-0.863,-0.255) (-0.799,-0.270) (-0.734,-0.284) (-0.667,-0.296) (-0.600,-0.307) (-0.532,-0.318) (-0.462,-0.327) (-0.392,-0.334) (-0.322,-0.341) (-0.251,-0.346) (-0.180,-0.350) (-0.108,-0.352) (-0.036,-0.354) (0.036,-0.354) (0.108,-0.352) (0.180,-0.350) (0.251,-0.346) (0.322,-0.341) (0.392,-0.334) (0.462,-0.327) (0.532,-0.318) (0.600,-0.307) (0.667,-0.296) (0.734,-0.284) (0.799,-0.270) (0.863,-0.255) (0.926,-0.239) (0.987,-0.222) (1.046,-0.203) (1.104,-0.184) (1.161,-0.164) (1.215,-0.143) (1.268,-0.120) (1.318,-0.097) (1.367,-0.073) (1.413,-0.048) (1.457,-0.022) (1.499,0.004) (1.539,0.032) (1.576,0.059) (1.611,0.088) (1.643,0.117) (1.673,0.147) (1.700,0.177) (1.724,0.208) (1.746,0.239) (1.765,0.271) (1.781,0.302) (1.794,0.334) (1.805,0.367) (1.813,0.399) (1.818,0.432) (1.820,0.464) (1.819,0.497) (1.816,0.530) (1.809,0.562) (1.800,0.595) (1.788,0.627) (1.773,0.659) (1.756,0.690) (1.735,0.722) (1.712,0.753) (1.687,0.783) (1.658,0.813) (1.627,0.843) (1.594,0.872) (1.558,0.900) (1.519,0.927) (1.479,0.954) (1.436,0.980) (1.390,1.006) (1.343,1.030) (1.293,1.054) (1.242,1.077) (1.188,1.098) (1.133,1.119) (1.076,1.139) (1.017,1.158) (0.956,1.176) (0.894,1.192) (0.831,1.208) (0.766,1.222)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (0.023,0.886) (0.046,0.844) (0.070,0.799) (0.093,0.752) (0.116,0.703) (0.139,0.651) (0.162,0.597) (0.186,0.542) (0.209,0.484) (0.232,0.423) (0.255,0.361) (0.278,0.296) (0.302,0.229) (0.325,0.160) (0.348,0.089) (0.371,0.016) (0.394,-0.060) (0.418,-0.138) (0.441,-0.218) (0.464,-0.300) (0.487,-0.385) (0.510,-0.472) (0.534,-0.560) (0.557,-0.652) (0.580,-0.745) (0.603,-0.840) (0.627,-0.938) (0.650,-1.038) (0.673,-1.140)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (0.063,0.897) (0.127,0.865) (0.190,0.830) (0.254,0.794) (0.317,0.755) (0.380,0.714) (0.444,0.671) (0.507,0.626) (0.571,0.578) (0.634,0.529) (0.697,0.477) (0.761,0.423) (0.824,0.366) (0.888,0.308) (0.951,0.247) (1.014,0.184) (1.078,0.119) (1.141,0.052) (1.205,-0.018) (1.268,-0.090) (1.331,-0.164) (1.395,-0.240) (1.458,-0.318) (1.521,-0.399) (1.585,-0.482) (1.648,-0.567) (1.712,-0.654) (1.775,-0.743) (1.838,-0.835)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (0.087,0.915) (0.173,0.901) (0.260,0.885) (0.346,0.867) (0.433,0.846) (0.520,0.824) (0.606,0.799) (0.693,0.772) (0.779,0.743) (0.866,0.711) (0.953,0.677) (1.039,0.642) (1.126,0.603) (1.212,0.563) (1.299,0.521) (1.386,0.476) (1.472,0.429) (1.559,0.380) (1.645,0.329) (1.732,0.275) (1.819,0.220) (1.905,0.162) (1.992,0.101) (2.078,0.039) (2.165,-0.025) (2.252,-0.092) (2.338,-0.161) (2.425,-0.232) (2.511,-0.306)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (0.087,0.936) (0.173,0.943) (0.260,0.948) (0.346,0.951) (0.433,0.952) (0.520,0.950) (0.606,0.946) (0.693,0.940) (0.779,0.932) (0.866,0.922) (0.953,0.909) (1.039,0.894) (1.126,0.877) (1.212,0.858) (1.299,0.837) (1.386,0.813) (1.472,0.787) (1.559,0.759) (1.645,0.729) (1.732,0.697) (1.819,0.662) (1.905,0.625) (1.992,0.586) (2.078,0.545) (2.165,0.501) (2.252,0.456) (2.338,0.408) (2.425,0.358) (2.511,0.306)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (0.063,0.954) (0.127,0.980) (0.190,1.003) (0.254,1.024) (0.317,1.043) (0.380,1.060) (0.444,1.074) (0.507,1.086) (0.571,1.096) (0.634,1.104) (0.697,1.110) (0.761,1.113) (0.824,1.115) (0.888,1.114) (0.951,1.110) (1.014,1.105) (1.078,1.097) (1.141,1.088) (1.205,1.076) (1.268,1.062) (1.331,1.045) (1.395,1.027) (1.458,1.006) (1.521,0.983) (1.585,0.958) (1.648,0.930)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (0.023,0.965) (0.046,1.001) (0.070,1.035) (0.093,1.066) (0.116,1.096) (0.139,1.123) (0.162,1.148) (0.186,1.171) (0.209,1.191) (0.232,1.210) (0.255,1.226) (0.278,1.240) (0.302,1.252) (0.325,1.261) (0.348,1.268) (0.371,1.274) (0.394,1.277) (0.418,1.277) (0.441,1.276)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (-0.023,0.965) (-0.046,1.001) (-0.070,1.035) (-0.093,1.066) (-0.116,1.096) (-0.139,1.123) (-0.162,1.148) (-0.186,1.171) (-0.209,1.191) (-0.232,1.210) (-0.255,1.226) (-0.278,1.240) (-0.302,1.252) (-0.325,1.261) (-0.348,1.268) (-0.371,1.274) (-0.394,1.277) (-0.418,1.277) (-0.441,1.276)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (-0.063,0.954) (-0.127,0.980) (-0.190,1.003) (-0.254,1.024) (-0.317,1.043) (-0.380,1.060) (-0.444,1.074) (-0.507,1.086) (-0.571,1.096) (-0.634,1.104) (-0.697,1.110) (-0.761,1.113) (-0.824,1.115) (-0.888,1.114) (-0.951,1.110) (-1.014,1.105) (-1.078,1.097) (-1.141,1.088) (-1.205,1.076) (-1.268,1.062) (-1.331,1.045) (-1.395,1.027) (-1.458,1.006) (-1.521,0.983) (-1.585,0.958) (-1.648,0.930)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (-0.087,0.936) (-0.173,0.943) (-0.260,0.948) (-0.346,0.951) (-0.433,0.952) (-0.520,0.950) (-0.606,0.946) (-0.693,0.940) (-0.779,0.932) (-0.866,0.922) (-0.953,0.909) (-1.039,0.894) (-1.126,0.877) (-1.212,0.858) (-1.299,0.837) (-1.386,0.813) (-1.472,0.787) (-1.559,0.759) (-1.645,0.729) (-1.732,0.697) (-1.819,0.662) (-1.905,0.625) (-1.992,0.586) (-2.078,0.545) (-2.165,0.501) (-2.252,0.456) (-2.338,0.408) (-2.425,0.358) (-2.511,0.306)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (-0.087,0.915) (-0.173,0.901) (-0.260,0.885) (-0.346,0.867) (-0.433,0.846) (-0.520,0.824) (-0.606,0.799) (-0.693,0.772) (-0.779,0.743) (-0.866,0.711) (-0.953,0.677) (-1.039,0.642) (-1.126,0.603) (-1.212,0.563) (-1.299,0.521) (-1.386,0.476) (-1.472,0.429) (-1.559,0.380) (-1.645,0.329) (-1.732,0.275) (-1.819,0.220) (-1.905,0.162) (-1.992,0.101) (-2.078,0.039) (-2.165,-0.025) (-2.252,-0.092) (-2.338,-0.161) (-2.425,-0.232) (-2.511,-0.306)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (-0.063,0.897) (-0.127,0.865) (-0.190,0.830) (-0.254,0.794) (-0.317,0.755) (-0.380,0.714) (-0.444,0.671) (-0.507,0.626) (-0.571,0.578) (-0.634,0.529) (-0.697,0.477) (-0.761,0.423) (-0.824,0.366) (-0.888,0.308) (-0.951,0.247) (-1.014,0.184) (-1.078,0.119) (-1.141,0.052) (-1.205,-0.018) (-1.268,-0.090) (-1.331,-0.164) (-1.395,-0.240) (-1.458,-0.318) (-1.521,-0.399) (-1.585,-0.482) (-1.648,-0.567) (-1.712,-0.654) (-1.775,-0.743) (-1.838,-0.835)};
+\draw[blue!25, thin] plot[smooth] coordinates {(0.000,0.927) (-0.023,0.886) (-0.046,0.844) (-0.070,0.799) (-0.093,0.752) (-0.116,0.703) (-0.139,0.651) (-0.162,0.597) (-0.186,0.542) (-0.209,0.484) (-0.232,0.423) (-0.255,0.361) (-0.278,0.296) (-0.302,0.229) (-0.325,0.160) (-0.348,0.089) (-0.371,0.016) (-0.394,-0.060) (-0.418,-0.138) (-0.441,-0.218) (-0.464,-0.300) (-0.487,-0.385) (-0.510,-0.472) (-0.534,-0.560) (-0.557,-0.652) (-0.580,-0.745) (-0.603,-0.840) (-0.627,-0.938) (-0.650,-1.038) (-0.673,-1.140)};
+\draw[thick, blue!50!black] plot[smooth] coordinates {(2.004,0.752) (1.902,0.807) (1.799,0.859) (1.696,0.908) (1.593,0.955) (1.490,0.998) (1.388,1.039) (1.285,1.076) (1.182,1.111) (1.079,1.143) (0.977,1.172) (0.874,1.198) (0.771,1.221) (0.668,1.241) (0.565,1.259) (0.463,1.273) (0.360,1.285) (0.257,1.293) (0.154,1.299) (0.051,1.302) (-0.051,1.302) (-0.154,1.299) (-0.257,1.293) (-0.360,1.285) (-0.463,1.273) (-0.565,1.259) (-0.668,1.241) (-0.771,1.221) (-0.874,1.198) (-0.977,1.172) (-1.079,1.143) (-1.182,1.111) (-1.285,1.076) (-1.388,1.039) (-1.490,0.998) (-1.593,0.955) (-1.696,0.908) (-1.799,0.859) (-1.902,0.807) (-2.004,0.752)};
+\draw[thick, red!70!black, dashed] plot[smooth] coordinates {(2.004,0.752) (1.954,0.779) (1.902,0.805) (1.848,0.830) (1.793,0.855) (1.736,0.879) (1.677,0.902) (1.617,0.924) (1.556,0.946) (1.493,0.966) (1.429,0.986) (1.364,1.005) (1.297,1.023) (1.229,1.040) (1.160,1.056) (1.090,1.072) (1.019,1.086) (0.948,1.099) (0.875,1.112) (0.801,1.123) (0.727,1.133) (0.652,1.143) (0.577,1.151) (0.501,1.158) (0.425,1.165) (0.348,1.170) (0.271,1.174) (0.194,1.177) (0.116,1.179) (0.039,1.180) (-0.039,1.180) (-0.116,1.179) (-0.194,1.177) (-0.271,1.174) (-0.348,1.170) (-0.425,1.165) (-0.501,1.158) (-0.577,1.151) (-0.652,1.143) (-0.727,1.133) (-0.801,1.123) (-0.875,1.112) (-0.948,1.099) (-1.019,1.086) (-1.090,1.072) (-1.160,1.056) (-1.229,1.040) (-1.297,1.023) (-1.364,1.005) (-1.429,0.986) (-1.493,0.966) (-1.556,0.946) (-1.617,0.924) (-1.677,0.902) (-1.736,0.879) (-1.793,0.855) (-1.848,0.830) (-1.902,0.805) (-1.954,0.779) (-2.004,0.752)};
+\draw[very thick, red!70!black] plot[smooth] coordinates {(-2.004,0.752) (-2.086,0.705) (-2.162,0.656) (-2.233,0.605) (-2.297,0.553) (-2.356,0.499) (-2.409,0.444) (-2.456,0.388) (-2.496,0.331) (-2.530,0.273) (-2.557,0.214) (-2.578,0.155) (-2.592,0.095) (-2.599,0.035) (-2.599,-0.025) (-2.593,-0.085) (-2.580,-0.144) (-2.561,-0.204) (-2.535,-0.262) (-2.502,-0.321) (-2.463,-0.378) (-2.418,-0.434) (-2.366,-0.489) (-2.308,-0.543) (-2.245,-0.596) (-2.175,-0.647) (-2.100,-0.696) (-2.019,-0.744) (-1.933,-0.789) (-1.843,-0.833) (-1.747,-0.874) (-1.647,-0.913) (-1.543,-0.950) (-1.434,-0.985) (-1.322,-1.016) (-1.207,-1.045) (-1.088,-1.072) (-0.967,-1.096) (-0.843,-1.117) (-0.717,-1.135) (-0.589,-1.150) (-0.460,-1.162) (-0.329,-1.171) (-0.198,-1.177) (-0.066,-1.180) (0.066,-1.180) (0.198,-1.177) (0.329,-1.171) (0.460,-1.162) (0.589,-1.150) (0.717,-1.135) (0.843,-1.117) (0.967,-1.096) (1.088,-1.072) (1.207,-1.045) (1.322,-1.016) (1.434,-0.985) (1.543,-0.950) (1.647,-0.913) (1.747,-0.874) (1.843,-0.833) (1.933,-0.789) (2.019,-0.744) (2.100,-0.696) (2.175,-0.647) (2.245,-0.596) (2.308,-0.543) (2.366,-0.489) (2.418,-0.434) (2.463,-0.378) (2.502,-0.321) (2.535,-0.262) (2.561,-0.204) (2.580,-0.144) (2.593,-0.085) (2.599,-0.025) (2.599,0.035) (2.592,0.095) (2.578,0.155) (2.557,0.214) (2.530,0.273) (2.496,0.331) (2.456,0.388) (2.409,0.444) (2.356,0.499) (2.297,0.553) (2.233,0.605) (2.162,0.656) (2.086,0.705) (2.004,0.752)};
+\draw[-{Stealth[length=7pt]}, red!70!black, very thick] (-2.498,-0.327) -- (-2.433,-0.417);
+\draw[-{Stealth[length=7pt]}, red!70!black, very thick] (1.036,-1.083) -- (1.224,-1.041);
+\draw[-{Stealth[length=7pt]}, red!70!black, very thick] (2.584,-0.131) -- (2.599,-0.036);
+\node[red!70!black, font=\small] at (1.481,-1.363) {$\partial S$};
+\draw[->, thick, orange!85!black] (0.000,0.927) -- (0.000,1.900);
+\fill[orange!85!black] (0.000,0.927) circle (0.9pt);
+\draw[->, thick, orange!85!black] (-1.313,0.210) -- (-1.710,0.972);
+\fill[orange!85!black] (-1.313,0.210) circle (0.9pt);
+\draw[->, thick, orange!85!black] (1.390,0.272) -- (1.811,1.052);
+\fill[orange!85!black] (1.390,0.272) circle (0.9pt);
+\draw[->, thick, orange!85!black] (0.841,1.056) -- (1.110,2.072);
+\fill[orange!85!black] (0.841,1.056) circle (0.9pt);
+\draw[->, thick, orange!85!black] (0.669,-0.426) -- (0.861,0.169);
+\fill[orange!85!black] (0.669,-0.426) circle (0.9pt);
+\node[orange!85!black, font=\small, anchor=west] at (0.020,1.900) {$\mathbf{n}$};
+\node[font=\small, blue!50!black] at (1.099,0.035) {$S$};
+\draw[thick, black!80] (-0.893,-0.840) -- (-1.018,-0.553);
+\draw[thick, black!80] (-0.893,-0.840) -- (-0.570,-1.156);
+\draw[thick, black!80] (-0.893,-0.840) -- (-0.967,-1.100);
+\draw[thick, black!80] (-0.994,-0.609) -- (-0.633,-0.794);
+\draw[thick, black!80] (-0.994,-0.609) -- (-1.180,-0.717);
+\draw[thick, black!80, fill=white] (-1.061,-0.454) circle (3.2pt);
+\draw[->, black!70] (-0.862,-0.482) -- (-0.068,-0.593) node[right, font=\scriptsize] {walks along $\partial S$};
+\end{tikzpicture}
+\end{center}
+\textit{(Figure after the board, redrawn from a computed surface.)} The cap $x^3 = 0.4\,\big(1 - (x^1)^2 - (x^2)^2\big)$ over the unit disk, oriented by the upward unit normal $\mathbf{n}$ (orange, drawn at a few points). Its boundary $\partial S$ is the unit circle in the $(x^1, x^2)$-plane, with the induced orientation (red): counterclockwise seen from above, dashed where the cap hides it. ``Amp\`ere's little guy'' stands on $\partial S$ with $\mathbf{n}$ from his feet to his head; at the rim the normal leans outward, so he leans too. Walking in the direction of $\partial S$ he has the surface on his left (Definition~\ref{def:induced-boundary-orientation}); at his position the outward direction $\nu$ points towards the viewer and $T$ to the right, and $\nu \times T = \mathbf{n}$ (Lemma~\ref{lem:outward-first}).
+
+\emph{The surface integral, computed.} The right-hand side of Stokes' theorem is the surface integral of a field, $\nabla \times \mathbf{X}$. For any field $\vec G = (g^1, g^2, g^3)$, how is $\iint_S \vec G \cdot d\vec S$ computed? Parametrize $S$ positively; then the integrand is a $3 \times 3$ determinant, the ``magic formula'' of the lecture.
+
+\begin{lembox}[The Surface Integrand as a Determinant]\thmlabel{lem:flux-determinant}
+Let $\vec r : D \to S$ be a positive parametrization of the surface $S$ oriented by $\mathbf{n}$ (Definition~\ref{def:positive-parametrization}), and $\vec G = (g^1, g^2, g^3)$ a continuous field on $S$. At every point of $D$, with $\vec G$ evaluated at $\vec r(s, t)$,
+\[
+\det \begin{pmatrix} g^1 & g^2 & g^3 \\ x^1_s & x^2_s & x^3_s \\ x^1_t & x^2_t & x^3_t \end{pmatrix} = \vec G \cdot (\vec r_s \times \vec r_t) = (\vec G \cdot \mathbf{n})\, |\vec r_s \times \vec r_t| .
+\]
+Consequently
+\[
+\iint_S \vec G \cdot d\vec S = \iint_D \det \begin{pmatrix} g^1 & g^2 & g^3 \\ x^1_s & x^2_s & x^3_s \\ x^1_t & x^2_t & x^3_t \end{pmatrix} ds\, dt .
+\]
+\end{lembox}
+
+\begin{proof}
+\textit{(Lecture~28 states the formula, ``$\vec G \cdot d\vec S = \det(\ldots)\, ds\, dt = (\vec G \cdot \mathbf{n})\, dS$''; the proof is filled in.)} \emph{The first equality.} Expand the determinant along the first row:
+\[
+\det(\ldots) = g^1 \big(x^2_s x^3_t - x^3_s x^2_t\big) - g^2 \big(x^1_s x^3_t - x^3_s x^1_t\big) + g^3 \big(x^1_s x^2_t - x^2_s x^1_t\big) .
+\]
+The three brackets, with the sign of the middle one moved inside, are the components of the cross product,
+\[
+\vec r_s \times \vec r_t = \big( x^2_s x^3_t - x^3_s x^2_t,\ \ x^3_s x^1_t - x^1_s x^3_t,\ \ x^1_s x^2_t - x^2_s x^1_t \big) ,
+\]
+so the determinant is $g^1 (\vec r_s \times \vec r_t)^1 + g^2 (\vec r_s \times \vec r_t)^2 + g^3 (\vec r_s \times \vec r_t)^3 = \vec G \cdot (\vec r_s \times \vec r_t)$, the triple product.
+
+\emph{The second equality.} Since $\vec r$ is positive, $\vec r_s \times \vec r_t = |\vec r_s \times \vec r_t|\, \mathbf{n}$ (Definition~\ref{def:positive-parametrization}); taking the dot product with $\vec G$ gives $\vec G \cdot (\vec r_s \times \vec r_t) = (\vec G \cdot \mathbf{n})\, |\vec r_s \times \vec r_t|$.
+
+\emph{The integral.} By Definition~\ref{def:flux-integral}, $\iint_S \vec G \cdot d\vec S$ is the integral over $D$ of $(\vec G \cdot \mathbf{n})\, |\vec r_s \times \vec r_t|$, which by the two equalities is the integral of the determinant.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\fill[blue!12] plot coordinates {(0.000,0.000) (2.731,-0.342) (4.352,0.474) (1.621,0.815)} -- cycle;
+\draw[thick, blue!70!black] plot coordinates {(0.000,0.000) (2.731,-0.342) (4.352,0.474) (1.621,0.815)} -- cycle;
+\fill[orange!12, opacity=0.6] plot coordinates {(1.040,1.757) (3.771,1.415) (5.392,2.230) (2.661,2.572)} -- cycle;
+\draw[orange!70!black, thin] (0.000,0.000) -- (1.040,1.757);
+\draw[orange!70!black, thin] (2.731,-0.342) -- (3.771,1.415);
+\draw[orange!70!black, thin] (4.352,0.474) -- (5.392,2.230);
+\draw[orange!70!black, thin, dashed] (1.621,0.815) -- (2.661,2.572);
+\draw[orange!70!black, thin] plot coordinates {(1.040,1.757) (3.771,1.415) (5.392,2.230) (2.661,2.572)} -- cycle;
+\draw[->, very thick, orange!85!black] (0.000,0.000) -- (1.040,1.757) node[left, font=\scriptsize] {$\vec G$};
+\draw[->, very thick, blue!70!black] (0.000,0.000) -- (2.731,-0.342) node[below, font=\scriptsize] {$\vec r_s\, \Delta s$};
+\draw[->, very thick, blue!70!black] (0.000,0.000) -- (1.621,0.815) node[left, font=\scriptsize] {$\vec r_t\, \Delta t$};
+\draw[densely dashed, red!70!black, thick] (3.216,1.994) -- (3.267,0.358);
+\fill[red!70!black] (3.267,0.358) circle (1.1pt);
+\node[red!70!black, font=\scriptsize, anchor=west] at (3.322,1.176) {height $\vec G \cdot \mathbf{n}$};
+\draw[->, thick, red!70!black] (2.731,-0.342) -- (2.703,0.532) node[right, font=\scriptsize] {$\mathbf{n}$};
+\node[blue!70!black, font=\scriptsize, align=center] at (1.713,0.244) {area\\ $|\vec r_s \times \vec r_t|\, \Delta s\, \Delta t$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Lemma~\ref{lem:flux-determinant} in one picture. A small rectangle $\Delta s \times \Delta t$ of $D$ goes, to first order, to the parallelogram spanned by $\vec r_s\, \Delta s$ and $\vec r_t\, \Delta t$ (blue), of area $|\vec r_s \times \vec r_t|\, \Delta s\, \Delta t$. The field $\vec G$ (orange) sweeps it out into a slanted box, whose volume is the absolute value of the determinant with rows $\vec G$, $\vec r_s\, \Delta s$, $\vec r_t\, \Delta t$. The volume is also base times height, and the height is the component $\vec G \cdot \mathbf{n}$ of $\vec G$ along the unit normal (red, dashed from the centre of the top face down to the plane of the base). If $\vec G$ is the velocity of a fluid, the box is the fluid crossing the patch in unit time: this is why $\iint_S \vec G \cdot d\vec S$ is called a flux. The sign of the determinant records on which side of the patch $\vec G$ points.
+%% <<< END ADDED
+
+% ============================================================================
+% SECTION: THE INTEGRAND IS A TWO-FORM
+% ============================================================================
+\section{The Integrand Is a Two-Form}\label{sec:two-form-integrand}
+
+\roadmark{Stage: forms}{Reading the Calculus~III surface integrand as a two-form: the $2 \times 2$ minors $dx^i \wedge dx^j$ fed the two tangent vectors; and the shape of the general Stokes theorem.}
+
+\textit{(Lecture 28.)} Back to manifolds, thinking geometrically: what kind of object is integrated in the surface integral of \ref{sec:stokes-calc3}? Expand the determinant of Lemma~\ref{lem:flux-determinant} along its top row:
+\[
+g^1\big(x^2_s x^3_t - x^2_t x^3_s\big) + g^2\big(x^3_s x^1_t - x^3_t x^1_s\big) + g^3\big(x^1_s x^2_t - x^1_t x^2_s\big) .
+\]
+\textit{(The lecture wrote the first term; the other two are filled in.)} Each bracket is a $2 \times 2$ minor of the matrix with rows $\vec r_s, \vec r_t$: a scalar extracted from the two vectors $\vec r_s, \vec r_t$, linearly in each of them. A function that is fed two vectors and returns a scalar in this way is a two-form.
+
+\begin{defbox}[The Two-Forms $dx^i \wedge dx^j$ on $\mathbb{R}^3$]\deflabel{def:dx-wedge-dx}
+For $i, j \in \{1, 2, 3\}$, define the bilinear map
+\[
+dx^i \wedge dx^j : \mathbb{R}^3 \times \mathbb{R}^3 \longrightarrow \mathbb{R}, \qquad (u, v) \longmapsto \det \begin{pmatrix} u^i & u^j \\ v^i & v^j \end{pmatrix} = u^i v^j - u^j v^i .
+\]
+\leeref{Ch.~14, \emph{The Wedge Product}}
+\end{defbox}
+
+\textit{(Lecture~28, on the board for $(i, j) = (2, 3)$: ``because of the indices involved here, which are the two and the three, this is going to be called $dx^2 \wedge dx^3$.'' The other pairs are filled in the same way.)} The name will be explained by the wedge product of covectors: $dx^i$ is the covector $u \mapsto u^i$ (Definition~\ref{def:dual}), and $dx^i \wedge dx^j$ is built from $dx^i$ and $dx^j$.
+
+\begin{lembox}[Properties of $dx^i \wedge dx^j$]\thmlabel{lem:dx-wedge-properties}
+For $i, j \in \{1, 2, 3\}$ and $u, v \in \mathbb{R}^3$:
+\begin{enumerate}[nosep]
+\item $dx^i \wedge dx^j$ is bilinear, and alternating: $(dx^i \wedge dx^j)(v, u) = -(dx^i \wedge dx^j)(u, v)$; in particular $(dx^i \wedge dx^j)(u, u) = 0$;
+\item $dx^j \wedge dx^i = -\,dx^i \wedge dx^j$, and $dx^i \wedge dx^i = 0$;
+\item the values of the three forms $dx^2 \wedge dx^3$, $dx^3 \wedge dx^1$, $dx^1 \wedge dx^2$ on $(u, v)$ are the three components of the cross product:
+\[
+u \times v = \big( (dx^2 \wedge dx^3)(u, v),\ (dx^3 \wedge dx^1)(u, v),\ (dx^1 \wedge dx^2)(u, v) \big) ;
+\]
+\item $(dx^i \wedge dx^j)(u, v)$ is the signed area of the parallelogram spanned by the projections of $u$ and $v$ to the $(x^i, x^j)$-plane, positive when the projection of $u$ turns to the projection of $v$ counterclockwise as seen with the $x^i$-axis pointing right and the $x^j$-axis up.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} All four are properties of $2 \times 2$ determinants.
+
+(1) For fixed $v$, $u \mapsto u^i v^j - u^j v^i$ is linear, since $u \mapsto u^i$ and $u \mapsto u^j$ are; likewise in $v$. Exchanging $u$ and $v$ gives $v^i u^j - v^j u^i = -(u^i v^j - u^j v^i)$. With $v = u$ this says $(dx^i \wedge dx^j)(u, u) = -(dx^i \wedge dx^j)(u, u)$, so it is $0$.
+
+(2) $(dx^j \wedge dx^i)(u, v) = u^j v^i - u^i v^j = -(u^i v^j - u^j v^i)$ for all $u, v$; and $(dx^i \wedge dx^i)(u, v) = u^i v^i - u^i v^i = 0$.
+
+(3) By definition of the cross product, $u \times v = (u^2 v^3 - u^3 v^2,\ u^3 v^1 - u^1 v^3,\ u^1 v^2 - u^2 v^1)$, and the three components are, by Definition~\ref{def:dx-wedge-dx}, the values of $dx^2 \wedge dx^3$, $dx^3 \wedge dx^1$ and $dx^1 \wedge dx^2$ on $(u, v)$.
+
+(4) The projection to the $(x^i, x^j)$-plane sends $u$ to the plane vector $(u^i, u^j)$ and $v$ to $(v^i, v^j)$. The determinant of two plane vectors $a, b$ is $|a|\,|b| \sin\phi$, with $\phi$ the counterclockwise angle from $a$ to $b$; this is the area of the parallelogram they span, with the sign of $\sin \phi$. Applied to $a = (u^i, u^j)$, $b = (v^i, v^j)$, it gives the claim.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\fill[gray!5] plot coordinates {(0.000,0.000) (3.314,-1.053) (3.314,2.788) (0.000,3.841)} -- cycle;
+\draw[gray!40, thin] plot coordinates {(0.000,0.000) (3.314,-1.053) (3.314,2.788) (0.000,3.841)} -- cycle;
+\fill[gray!5] plot coordinates {(0.000,0.000) (-2.589,-1.348) (-2.589,2.494) (0.000,3.841)} -- cycle;
+\draw[gray!40, thin] plot coordinates {(0.000,0.000) (-2.589,-1.348) (-2.589,2.494) (0.000,3.841)} -- cycle;
+\fill[gray!5] plot coordinates {(0.000,0.000) (-2.589,-1.348) (0.725,-2.401) (3.314,-1.053)} -- cycle;
+\draw[gray!40, thin] plot coordinates {(0.000,0.000) (-2.589,-1.348) (0.725,-2.401) (3.314,-1.053)} -- cycle;
+\draw[-stealth, gray!70] (0.000,0.000) -- (-2.901,-1.510) node[below left, font=\scriptsize, text=black] {$x^1$};
+\draw[-stealth, gray!70] (0.000,0.000) -- (3.714,-1.180) node[below right, font=\scriptsize, text=black] {$x^2$};
+\draw[-stealth, gray!70] (0.000,0.000) -- (0.000,4.305) node[above, font=\scriptsize, text=black] {$x^3$};
+\fill[green!45!black!30, opacity=0.8] plot coordinates {(0.686,2.100) (0.686,1.464) (1.782,0.505) (1.782,1.141)} -- cycle;
+\draw[green!45!black, thin] plot coordinates {(0.686,2.100) (0.686,1.464) (1.782,0.505) (1.782,1.141)} -- cycle;
+\draw[->, green!45!black, thick] (0.686,2.100) -- (0.686,1.464);
+\draw[->, green!45!black, thick] (0.686,2.100) -- (1.782,1.141);
+\draw[gray!45, densely dotted] (0.195,1.845) -- (0.686,2.100);
+\draw[gray!45, densely dotted] (-0.662,0.763) -- (0.686,1.464);
+\draw[gray!45, densely dotted] (0.640,-0.089) -- (1.782,0.505);
+\draw[gray!45, densely dotted] (1.497,0.993) -- (1.782,1.141);
+\fill[orange!85!black!30, opacity=0.8] plot coordinates {(-0.491,2.063) (-1.348,0.981) (-1.142,0.477) (-0.285,1.559)} -- cycle;
+\draw[orange!85!black, thin] plot coordinates {(-0.491,2.063) (-1.348,0.981) (-1.142,0.477) (-0.285,1.559)} -- cycle;
+\draw[->, orange!85!black, thick] (-0.491,2.063) -- (-1.348,0.981);
+\draw[->, orange!85!black, thick] (-0.491,2.063) -- (-0.285,1.559);
+\draw[gray!45, densely dotted] (0.195,1.845) -- (-0.491,2.063);
+\draw[gray!45, densely dotted] (-0.662,0.763) -- (-1.348,0.981);
+\draw[gray!45, densely dotted] (0.640,-0.089) -- (-1.142,0.477);
+\draw[gray!45, densely dotted] (1.497,0.993) -- (-0.285,1.559);
+\fill[red!70!black!30, opacity=0.8] plot coordinates {(0.195,-0.473) (-0.662,-0.920) (0.640,-1.161) (1.497,-0.715)} -- cycle;
+\draw[red!70!black, thin] plot coordinates {(0.195,-0.473) (-0.662,-0.920) (0.640,-1.161) (1.497,-0.715)} -- cycle;
+\draw[->, red!70!black, thick] (0.195,-0.473) -- (-0.662,-0.920);
+\draw[->, red!70!black, thick] (0.195,-0.473) -- (1.497,-0.715);
+\draw[gray!45, densely dotted] (0.195,1.845) -- (0.195,-0.473);
+\draw[gray!45, densely dotted] (-0.662,0.763) -- (-0.662,-0.920);
+\draw[gray!45, densely dotted] (0.640,-0.089) -- (0.640,-1.161);
+\draw[gray!45, densely dotted] (1.497,0.993) -- (1.497,-0.715);
+\node[green!45!black, font=\scriptsize, above] at (2.799,2.753) {$dx^2 \wedge dx^3(u, v) = 0.46$};
+\node[orange!85!black, font=\scriptsize, above] at (-2.321,2.236) {$dx^3 \wedge dx^1(u, v) = 0.55$};
+\node[red!70!black, font=\scriptsize, below right] at (0.246,-1.500) {$dx^1 \wedge dx^2(u, v) = 0.92$};
+\fill[blue!25, opacity=0.9] plot coordinates {(0.195,1.845) (-0.662,0.763) (0.640,-0.089) (1.497,0.993)} -- cycle;
+\draw[blue!70!black, thick] plot coordinates {(0.195,1.845) (-0.662,0.763) (0.640,-0.089) (1.497,0.993)} -- cycle;
+\draw[->, very thick, blue!70!black] (0.195,1.845) -- (-0.662,0.763) node[right, font=\scriptsize, fill=white, inner sep=1pt] {$u$};
+\draw[->, very thick, blue!70!black] (0.195,1.845) -- (1.497,0.993) node[left, font=\scriptsize, fill=white, inner sep=1pt] {$v$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Lemma~\ref{lem:dx-wedge-properties}(3) and~(4). A parallelogram spanned by $u, v \in \mathbb{R}^3$ (blue) and its shadows on the three coordinate planes: on the $(x^2, x^3)$-plane (green), the $(x^3, x^1)$-plane (orange) and the $(x^1, x^2)$-plane (red), with the shadows of $u$ and $v$ drawn as arrows. The signed areas of the shadows are the values of $dx^2 \wedge dx^3$, $dx^3 \wedge dx^1$, $dx^1 \wedge dx^2$ on $(u, v)$, and together they are $u \times v$. Here $u = (0.96, 0, -0.48)$ and $v = (-0.23, 0.96, -0.46)$, so $u \times v = (0.46, 0.55, 0.92)$: all three shadows are positively oriented. A shadow whose orientation is reversed gives a negative value, and a parallelogram seen edge-on from a coordinate axis has a shadow of area $0$ there.
+%% <<< END ADDED
+
+\begin{propbox}[The Surface Integrand Is a Two-Form]\thmlabel{prop:flux-two-form}
+Let $\vec r : D \to S$ be a positive parametrization of the oriented surface $S$ and $\vec G = (g^1, g^2, g^3)$ a continuous field on $S$. Put
+\[
+\omega_{\vec G} = g^1\, dx^2 \wedge dx^3 + g^2\, dx^3 \wedge dx^1 + g^3\, dx^1 \wedge dx^2 ,
+\]
+a two-form with variable coefficients: at each point $q \in S$ the bilinear map $(u, v) \mapsto g^1(q)\, (dx^2 \wedge dx^3)(u, v) + g^2(q)\, (dx^3 \wedge dx^1)(u, v) + g^3(q)\, (dx^1 \wedge dx^2)(u, v)$. Then at every point of $D$, with the coefficients evaluated at $\vec r(s, t)$,
+\[
+\vec G \cdot (\vec r_s \times \vec r_t) = \omega_{\vec G}(\vec r_s, \vec r_t), \qquad \text{so} \qquad \iint_S \vec G \cdot d\vec S = \iint_D \omega_{\vec G}(\vec r_s, \vec r_t)\, ds\, dt .
+\]
+\end{propbox}
+
+\begin{proof}
+\textit{(Lecture~28: ``$\vec G \cdot d\vec S = (g^1\, dx^2 \wedge dx^3 + \cdots)(\vec r_s, \vec r_t)\, ds\, dt$''; the details are filled in.)} By Lemma~\ref{lem:dx-wedge-properties}(3) with $u = \vec r_s$, $v = \vec r_t$, the components of $\vec r_s \times \vec r_t$ are $(dx^2 \wedge dx^3)(\vec r_s, \vec r_t)$, $(dx^3 \wedge dx^1)(\vec r_s, \vec r_t)$ and $(dx^1 \wedge dx^2)(\vec r_s, \vec r_t)$. So
+\[
+\vec G \cdot (\vec r_s \times \vec r_t) = g^1 (dx^2 \wedge dx^3)(\vec r_s, \vec r_t) + g^2 (dx^3 \wedge dx^1)(\vec r_s, \vec r_t) + g^3 (dx^1 \wedge dx^2)(\vec r_s, \vec r_t) = \omega_{\vec G}(\vec r_s, \vec r_t) .
+\]
+By Lemma~\ref{lem:flux-determinant}, $\iint_S \vec G \cdot d\vec S$ is the integral over $D$ of $\vec G \cdot (\vec r_s \times \vec r_t)$, hence of $\omega_{\vec G}(\vec r_s, \vec r_t)$.
+\end{proof}
+
+So the thing integrated in a surface integral is a two-form: at every point, evaluate the coefficients $g^i$ to get scalars and combine the three basic forms; then feed it the two tangent vectors $\vec r_s, \vec r_t$, and integrate the result over $D$. In Calculus~III one does exactly this in Stokes' theorem without saying so. By Lemma~\ref{lem:dx-wedge-properties}(4), $\omega_{\vec G}(\vec r_s, \vec r_t)\, ds\, dt$ weighs the shadows of the small parallelogram on the three coordinate planes by the components of $\vec G$.
+
+\emph{Where this is going: the general Stokes theorem.} \textit{(In the lecture this came right after Stokes' theorem in $\mathbb{R}^3$.)} The theorem of this chapter will read
+\[
+\int_{\partial S} \alpha = \int_S d\alpha .
+\]
+Here $S$ is an oriented manifold with boundary of dimension $m$, its boundary $\partial S$ has dimension $m - 1$, $\alpha$ is a \emph{differential form} of degree $m - 1$, and $d\alpha$, the \emph{exterior derivative} of $\alpha$, has degree $m$: to integrate a form over a manifold, the degree of the form has to match the dimension of the manifold. Matching the ingredients with Theorem~\ref{thm:stokes-calc3} ($m = 2$):
+\begin{itemize}[nosep]
+\item the field $\mathbf{X}$ on the left becomes a one-form, a section of the cotangent bundle (Definition~\ref{def:one-form}), the kind of form already known;
+\item the integrand on the right becomes a two-form, as in Proposition~\ref{prop:flux-two-form};
+\item $\mathbf{X} \mapsto \nabla \times \mathbf{X}$ is an instance of $d$.
+\end{itemize}
+Green's theorem, the divergence theorem, the fundamental theorem of calculus for line integrals, and also Cauchy's theorem in complex analysis are instances of the same formula (asked about the divergence theorem: ``They're all the same.''). For Cauchy's theorem, $d\alpha$ is zero. \textit{(Filled in: with $\alpha = f\, dz$ for holomorphic $f$, $d\alpha = \frac{\partial f}{\partial \bar z}\, d\bar z \wedge dz = 0$.)}
+
+% ============================================================================
+% SECTION: MULTILINEAR ALGEBRA
+% ============================================================================
+\section{Multilinear Algebra}\label{sec:multilinear}
+
+\roadmark{Stage: forms}{Alternating multilinear forms on a vector space: the pointwise objects that differential forms are made of.}
+
+\textit{(Lecture 28.)} Forms are needed in every degree, not just two: this takes some multilinear algebra. Uribe thinks of these objects as minors of large determinants.
+
+\begin{defbox}[Linear $k$-Form]\deflabel{def:linear-k-form}
+Let $V$ be an $m$-dimensional real vector space and $k \in \{0, 1, 2, \ldots\}$. A \textbf{linear $k$-form} on $V$ is a multilinear map
+\[
+\alpha : \underbrace{V \times \cdots \times V}_{k} \longrightarrow \mathbb{R}
+\]
+(linear in each entry with the others fixed) that is \textbf{alternating}: exchanging two entries changes the sign,
+\[
+\alpha(v^1, \ldots, v^i, \ldots, v^j, \ldots, v^k) = -\alpha(v^1, \ldots, v^j, \ldots, v^i, \ldots, v^k) \qquad (i \neq j) .
+\]
+\leeref{Ch.~12, \emph{Symmetric and Alternating Tensors}; Ch.~14, \emph{The Algebra of Alternating Tensors}}
+\end{defbox}
+
+The definition copies the determinant, which changes sign when two columns are exchanged. For $k = 1$ the alternating condition is empty and the linear $1$-forms are the covectors, $V^*$ (Definition~\ref{def:dual}); for $k = 0$ the linear $0$-forms are, by convention, the scalars. On a manifold there will be one of these at each point, with $V$ the tangent space.
+
+\begin{exbox}[Linear $k$-Forms]\exlabel{ex:linear-k-forms}
+\begin{enumerate}[nosep]
+\item On $\mathbb{R}^3$, each $dx^i \wedge dx^j$ (Definition~\ref{def:dx-wedge-dx}) is a linear $2$-form, by Lemma~\ref{lem:dx-wedge-properties}(1).
+\item On $\mathbb{R}^m$, the determinant $\alpha(v^1, \ldots, v^m) = \det(v^1 \cdots v^m)$ of the matrix with columns $v^1, \ldots, v^m$ is a linear $m$-form: it is linear in each column, and exchanging two columns changes its sign. For $m = 2$, $\det(v, w)$ is the signed area of the parallelogram spanned by $v$ and $w$ (figure below).
+\item On $\mathbb{R}^m$, fix rows $1 \le i_1, \ldots, i_k \le m$. Let $\alpha(v^1, \ldots, v^k)$ be the $k \times k$ minor in the rows $i_1, \ldots, i_k$ of the $m \times k$ matrix with columns $v^1, \ldots, v^k$. Then $\alpha$ is a linear $k$-form, by the same two properties of the $k \times k$ determinant. This generalizes item~1, where $m = 3$, $k = 2$ and the rows are $i, j$.
+\end{enumerate}
+\end{exbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} (2) Multilinearity: expanding along the $j$-th column, $\det$ is a linear function of $v^j$ with the other columns fixed. Exchanging two columns changes the sign of a determinant. (3) The minor is the determinant of the $k \times k$ matrix whose $a$-th column is $(v^a_{i_1}, \ldots, v^a_{i_k})$; this column depends linearly on $v^a$, and exchanging $v^a$ and $v^{a'}$ exchanges two columns. So (2) applies. (1) is (3) with $m = 3$, $k = 2$, $(i_1, i_2) = (i, j)$, written with rows and columns exchanged, which does not change a determinant.
+\end{proof}
+
+\begin{lembox}[Permuting the Entries of a $k$-Form]\thmlabel{lem:k-form-permutation}
+Let $\alpha$ be a linear $k$-form on $V$ (Definition~\ref{def:linear-k-form}) and $v^1, \ldots, v^k \in V$. For every permutation $\sigma \in S_k$,
+\[
+\alpha\big(v^{\sigma(1)}, \ldots, v^{\sigma(k)}\big) = \sgn(\sigma)\, \alpha(v^1, \ldots, v^k) ,
+\]
+with $\sgn$ the sign of a permutation (Definition~\ref{def:sgn}). Conversely, a multilinear map $V \times \cdots \times V \to \mathbb{R}$ with this property for every $\sigma \in S_k$ is alternating.
+\leeref{Exercise 12.17}
+\end{lembox}
+
+\begin{proof}
+\textit{(Discussed with Uribe after Lecture~28; the proof is written out here.)} For $\rho \in S_k$ write $\alpha_\rho = \alpha\big(v^{\rho(1)}, \ldots, v^{\rho(k)}\big)$, the value on the list rearranged by $\rho$; products of permutations are composites, $(\rho\tau)(i) = \rho(\tau(i))$.
+
+\emph{Step 1: one more transposition changes the sign.} Let $\rho \in S_k$ and let $\tau = (a\ b)$ be a transposition, $a \neq b$. Put $u^i = v^{\rho(i)}$, so that $\alpha_\rho = \alpha(u^1, \ldots, u^k)$. Then $v^{(\rho\tau)(i)} = u^{\tau(i)}$, and since $\tau(a) = b$, $\tau(b) = a$ and $\tau(i) = i$ otherwise, the list $\big(u^{\tau(1)}, \ldots, u^{\tau(k)}\big)$ is the list $(u^1, \ldots, u^k)$ with the entries in places $a$ and $b$ exchanged. By the alternating property (Definition~\ref{def:linear-k-form}),
+\[
+\alpha_{\rho\tau} = \alpha\big(u^{\tau(1)}, \ldots, u^{\tau(k)}\big) = -\alpha(u^1, \ldots, u^k) = -\alpha_\rho .
+\]
+
+\emph{Step 2: induction along a factorization.} By Proposition~\ref{prop:sgn}(3), $\sigma = \tau_1 \tau_2 \cdots \tau_r$ for some transpositions $\tau_1, \ldots, \tau_r$, and $\sgn(\sigma) = (-1)^r$ (for $\sigma = \mathrm{id}$ take $r = 0$). Put $\rho_0 = \mathrm{id}$ and $\rho_j = \tau_1 \cdots \tau_j$, so $\rho_j = \rho_{j-1}\tau_j$ and $\rho_r = \sigma$. Step~1 with $\rho = \rho_{j-1}$ and $\tau = \tau_j$ gives $\alpha_{\rho_j} = -\alpha_{\rho_{j-1}}$ for $j = 1, \ldots, r$, hence
+\[
+\alpha\big(v^{\sigma(1)}, \ldots, v^{\sigma(k)}\big) = \alpha_{\rho_r} = (-1)^r \alpha_{\rho_0} = \sgn(\sigma)\, \alpha(v^1, \ldots, v^k) .
+\]
+
+\emph{The converse.} If the identity holds for every $\sigma$, take $\sigma = (i\ j)$ with $i \neq j$: its sign is $-1$ (Proposition~\ref{prop:sgn}(2)), and the rearranged list is $(v^1, \ldots, v^k)$ with the entries $i$ and $j$ exchanged. So exchanging two entries changes the sign: the map is alternating.
+\end{proof}
+
+For $k = 2$ the lemma is the definition. For the determinant (Example~\ref{ex:linear-k-forms}(2)) it says that permuting the columns multiplies the determinant by the sign of the permutation, the fact behind the Leibniz formula. The sign does not depend on how $\sigma$ is written as a product of transpositions (Proposition~\ref{prop:sgn}(3)); without that, Step~2 would give two different values for one number. Lee uses the lemma to find a basis of $\Lambda^k(V^*)$ (Lemma~14.7 and Proposition~14.8).
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\fill[gray!10] plot coordinates {(0.000,0.000) (1.470,-0.241) (2.490,0.150) (1.021,0.391)} -- cycle;
+\fill[gray!10] plot coordinates {(0.000,0.000) (1.470,-0.241) (1.788,1.053) (0.319,1.294)} -- cycle;
+\fill[gray!10] plot coordinates {(0.000,0.000) (1.021,0.391) (1.339,1.685) (0.319,1.294)} -- cycle;
+\draw[gray!55, thin] (1.470,-0.241) -- (2.490,0.150);
+\draw[gray!55, thin] (1.021,0.391) -- (2.490,0.150);
+\draw[gray!55, thin] (1.470,-0.241) -- (1.788,1.053);
+\draw[gray!55, thin] (0.319,1.294) -- (1.788,1.053);
+\draw[gray!55, thin] (1.021,0.391) -- (1.339,1.685);
+\draw[gray!55, thin] (0.319,1.294) -- (1.339,1.685);
+\draw[gray!55, thin] (2.490,0.150) -- (2.809,1.444);
+\draw[gray!55, thin] (1.788,1.053) -- (2.809,1.444);
+\draw[gray!55, thin] (1.339,1.685) -- (2.809,1.444);
+\draw[->, very thick, blue!70!black] (0.000,0.000) -- (1.470,-0.241) node[below, font=\scriptsize] {$v^1$};
+\node[font=\tiny, draw=gray, circle, inner sep=0.8pt, fill=white] at (0.911,-0.149) {1};
+\draw[->, very thick, orange!85!black] (0.000,0.000) -- (1.021,0.391) node[right, font=\scriptsize] {$v^2$};
+\node[font=\tiny, draw=gray, circle, inner sep=0.8pt, fill=white] at (0.633,0.242) {2};
+\draw[->, very thick, red!70!black] (0.000,0.000) -- (0.319,1.294) node[above left, font=\scriptsize] {$v^3$};
+\node[font=\tiny, draw=gray, circle, inner sep=0.8pt, fill=white] at (0.198,0.802) {3};
+\draw[-{Stealth[length=6pt]}, black!75, thick] plot[smooth] coordinates {(0.705,-0.087) (0.717,-0.076) (0.726,-0.064) (0.734,-0.052) (0.741,-0.040) (0.745,-0.028) (0.749,-0.016) (0.750,-0.004) (0.750,0.008) (0.748,0.020) (0.744,0.032) (0.739,0.044) (0.732,0.056) (0.723,0.068) (0.713,0.080) (0.701,0.091) (0.688,0.102) (0.673,0.113) (0.656,0.124) (0.638,0.135) (0.619,0.145) (0.598,0.155) (0.576,0.164) (0.553,0.173)};
+\node[font=\scriptsize, align=center] at (0.550,-1.15) {order $(v^1, v^2, v^3)$\\ $\alpha(v^1, v^2, v^3)$};
+\node[font=\large, green!45!black] at (3.159,1.594) {$+$};
+\fill[gray!10] plot coordinates {(4.300,0.000) (5.770,-0.241) (6.790,0.150) (5.321,0.391)} -- cycle;
+\fill[gray!10] plot coordinates {(4.300,0.000) (5.770,-0.241) (6.088,1.053) (4.619,1.294)} -- cycle;
+\fill[gray!10] plot coordinates {(4.300,0.000) (5.321,0.391) (5.639,1.685) (4.619,1.294)} -- cycle;
+\draw[gray!55, thin] (5.770,-0.241) -- (6.790,0.150);
+\draw[gray!55, thin] (5.321,0.391) -- (6.790,0.150);
+\draw[gray!55, thin] (5.770,-0.241) -- (6.088,1.053);
+\draw[gray!55, thin] (4.619,1.294) -- (6.088,1.053);
+\draw[gray!55, thin] (5.321,0.391) -- (5.639,1.685);
+\draw[gray!55, thin] (4.619,1.294) -- (5.639,1.685);
+\draw[gray!55, thin] (6.790,0.150) -- (7.109,1.444);
+\draw[gray!55, thin] (6.088,1.053) -- (7.109,1.444);
+\draw[gray!55, thin] (5.639,1.685) -- (7.109,1.444);
+\draw[->, very thick, blue!70!black] (4.300,0.000) -- (5.770,-0.241) node[below, font=\scriptsize] {$v^1$};
+\node[font=\tiny, draw=gray, circle, inner sep=0.8pt, fill=white] at (5.211,-0.149) {3};
+\draw[->, very thick, orange!85!black] (4.300,0.000) -- (5.321,0.391) node[right, font=\scriptsize] {$v^2$};
+\node[font=\tiny, draw=gray, circle, inner sep=0.8pt, fill=white] at (4.933,0.242) {1};
+\draw[->, very thick, red!70!black] (4.300,0.000) -- (4.619,1.294) node[above left, font=\scriptsize] {$v^3$};
+\node[font=\tiny, draw=gray, circle, inner sep=0.8pt, fill=white] at (4.498,0.802) {2};
+\draw[-{Stealth[length=6pt]}, black!75, thick] plot[smooth] coordinates {(4.802,0.259) (4.802,0.291) (4.800,0.322) (4.797,0.352) (4.793,0.382) (4.788,0.411) (4.781,0.438) (4.774,0.465) (4.765,0.491) (4.755,0.515) (4.745,0.538) (4.733,0.560) (4.720,0.581) (4.706,0.600) (4.691,0.618) (4.676,0.635) (4.659,0.650) (4.642,0.663) (4.623,0.675) (4.604,0.685) (4.585,0.694) (4.564,0.701) (4.543,0.706) (4.522,0.710)};
+\node[font=\scriptsize, align=center] at (4.850,-1.15) {order $(v^2, v^3, v^1)$\\ $\alpha(v^2, v^3, v^1) = +\alpha(v^1, v^2, v^3)$};
+\node[font=\large, green!45!black] at (7.459,1.594) {$+$};
+\fill[gray!10] plot coordinates {(8.600,0.000) (10.070,-0.241) (11.090,0.150) (9.621,0.391)} -- cycle;
+\fill[gray!10] plot coordinates {(8.600,0.000) (10.070,-0.241) (10.388,1.053) (8.919,1.294)} -- cycle;
+\fill[gray!10] plot coordinates {(8.600,0.000) (9.621,0.391) (9.939,1.685) (8.919,1.294)} -- cycle;
+\draw[gray!55, thin] (10.070,-0.241) -- (11.090,0.150);
+\draw[gray!55, thin] (9.621,0.391) -- (11.090,0.150);
+\draw[gray!55, thin] (10.070,-0.241) -- (10.388,1.053);
+\draw[gray!55, thin] (8.919,1.294) -- (10.388,1.053);
+\draw[gray!55, thin] (9.621,0.391) -- (9.939,1.685);
+\draw[gray!55, thin] (8.919,1.294) -- (9.939,1.685);
+\draw[gray!55, thin] (11.090,0.150) -- (11.409,1.444);
+\draw[gray!55, thin] (10.388,1.053) -- (11.409,1.444);
+\draw[gray!55, thin] (9.939,1.685) -- (11.409,1.444);
+\draw[->, very thick, blue!70!black] (8.600,0.000) -- (10.070,-0.241) node[below, font=\scriptsize] {$v^1$};
+\node[font=\tiny, draw=gray, circle, inner sep=0.8pt, fill=white] at (9.511,-0.149) {2};
+\draw[->, very thick, orange!85!black] (8.600,0.000) -- (9.621,0.391) node[right, font=\scriptsize] {$v^2$};
+\node[font=\tiny, draw=gray, circle, inner sep=0.8pt, fill=white] at (9.233,0.242) {1};
+\draw[->, very thick, red!70!black] (8.600,0.000) -- (8.919,1.294) node[above left, font=\scriptsize] {$v^3$};
+\node[font=\tiny, draw=gray, circle, inner sep=0.8pt, fill=white] at (8.798,0.802) {3};
+\draw[-{Stealth[length=6pt]}, black!75, thick] plot[smooth] coordinates {(9.153,0.173) (9.176,0.164) (9.198,0.155) (9.219,0.145) (9.238,0.135) (9.256,0.124) (9.273,0.113) (9.288,0.102) (9.301,0.091) (9.313,0.080) (9.323,0.068) (9.332,0.056) (9.339,0.044) (9.344,0.032) (9.348,0.020) (9.350,0.008) (9.350,-0.004) (9.349,-0.016) (9.345,-0.028) (9.341,-0.040) (9.334,-0.052) (9.326,-0.064) (9.317,-0.076) (9.305,-0.087)};
+\node[font=\scriptsize, align=center] at (9.150,-1.15) {order $(v^2, v^1, v^3)$\\ $\alpha(v^2, v^1, v^3) = -\alpha(v^1, v^2, v^3)$};
+\node[font=\large, red!70!black] at (11.759,1.594) {$-$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Lemma~\ref{lem:k-form-permutation} for $k = 3$ and $\alpha = \det$ on $\mathbb{R}^3$, the signed volume. The same box, spanned by $v^1$ (blue), $v^2$ (orange) and $v^3$ (red), is read in three orders; the circled numbers give each vector's place in the order. Curl the fingers of the right hand from the first entry to the second (black arc): if the third entry lies on the side of the thumb the order is right-handed and the value is $+\mathrm{vol}$, otherwise $-\mathrm{vol}$. Left: $(v^1, v^2, v^3)$, right-handed. Middle: the cyclic order $(v^2, v^3, v^1)$ is a product of two transpositions, $\sgn = +1$, and is right-handed again. Right: exchanging $v^1$ and $v^2$, one transposition, $\sgn = -1$, gives the left-handed order and the value changes sign.
+%% <<< END ADDED
+
+\begin{lembox}[Alternating Forms Vanish on Dependent Vectors]\thmlabel{lem:alternating-dependent}
+Let $\alpha$ be a linear $k$-form on $V$ (Definition~\ref{def:linear-k-form}).
+\begin{enumerate}[nosep]
+\item If two of the entries are equal, $v^i = v^j$ for some $i \neq j$, then $\alpha(v^1, \ldots, v^k) = 0$.
+\item If $v^1, \ldots, v^k$ are linearly dependent, then $\alpha(v^1, \ldots, v^k) = 0$.
+\end{enumerate}
+\leeref{Lemma 14.1}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in, as in LADR, 9.28.)} (1) Exchanging the two equal entries does not change the list, but changes the sign of $\alpha$: $\alpha(v^1, \ldots, v^k) = -\alpha(v^1, \ldots, v^k)$, so the value is $0$.
+
+(2) Some $v^j$ is a linear combination of the others, $v^j = \sum_{i \neq j} c_i v^i$. By linearity of $\alpha$ in the $j$-th entry,
+\[
+\alpha(v^1, \ldots, v^j, \ldots, v^k) = \sum_{i \neq j} c_i\, \alpha(v^1, \ldots, \underbrace{v^i}_{j\text{-th entry}}, \ldots, v^k) ,
+\]
+and in the $i$-th term the vector $v^i$ appears twice, in the entries $i$ and $j$; by~(1) every term is $0$.
+\end{proof}
+
+\begin{corbox}[No Nonzero $k$-Forms of Degree above the Dimension]\thmlabel{cor:forms-above-dimension}
+If $k > m = \dim V$, the only linear $k$-form on $V$ is $0$.
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in.)} Any $k > m$ vectors in the $m$-dimensional space $V$ are linearly dependent, so every value of a linear $k$-form is $0$ by Lemma~\ref{lem:alternating-dependent}(2).
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\fill[blue!70!black!15] (0.000,0.000) -- (1.500,0.350) -- (2.050,1.500) -- (0.550,1.150) -- cycle;
+\draw[->, very thick, black!80] (0.000,0.000) -- (1.500,0.350) node[right, font=\scriptsize] {$v$};
+\draw[->, very thick, black!80] (0.000,0.000) -- (0.550,1.150) node[above, font=\scriptsize] {$w$};
+\draw[-{Stealth[length=5pt]}, blue!70!black, thick] plot[smooth] coordinates {(0.438,0.102) (0.435,0.116) (0.431,0.129) (0.427,0.142) (0.422,0.155) (0.417,0.168) (0.412,0.181) (0.406,0.194) (0.400,0.206) (0.393,0.219) (0.386,0.231) (0.379,0.242) (0.371,0.254) (0.363,0.265) (0.355,0.276) (0.346,0.287) (0.337,0.298) (0.328,0.308) (0.318,0.318) (0.308,0.328) (0.298,0.337) (0.288,0.346) (0.277,0.355) (0.266,0.363) (0.254,0.371) (0.243,0.379) (0.231,0.386) (0.219,0.393) (0.207,0.400) (0.194,0.406)};
+\node[font=\scriptsize, align=center] at (0.900,-0.55) {$\alpha(v, w) = \det(v, w) > 0$};
+\fill[red!70!black!15] (3.300,0.000) -- (3.850,1.150) -- (5.350,1.500) -- (4.800,0.350) -- cycle;
+\draw[->, very thick, black!80] (3.300,0.000) -- (3.850,1.150) node[above, font=\scriptsize] {$w$};
+\draw[->, very thick, black!80] (3.300,0.000) -- (4.800,0.350) node[right, font=\scriptsize] {$v$};
+\draw[-{Stealth[length=5pt]}, red!70!black, thick] plot[smooth] coordinates {(3.494,0.406) (3.507,0.400) (3.519,0.393) (3.531,0.386) (3.543,0.379) (3.554,0.371) (3.566,0.363) (3.577,0.355) (3.588,0.346) (3.598,0.337) (3.608,0.328) (3.618,0.318) (3.628,0.308) (3.637,0.298) (3.646,0.287) (3.655,0.276) (3.663,0.265) (3.671,0.254) (3.679,0.242) (3.686,0.231) (3.693,0.219) (3.700,0.206) (3.706,0.194) (3.712,0.181) (3.717,0.168) (3.722,0.155) (3.727,0.142) (3.731,0.129) (3.735,0.116) (3.738,0.102)};
+\node[font=\scriptsize, align=center] at (4.200,-0.55) {$\alpha(w, v) = -\alpha(v, w)$};
+\fill[gray!15] (6.600,0.000) -- (8.100,0.350) -- (8.925,0.542) -- (7.425,0.193) -- cycle;
+\draw[->, very thick, black!80] (6.600,0.000) -- (8.100,0.350) node[right, font=\scriptsize] {$v$};
+\draw[->, very thick, black!80] (6.600,0.000) -- (7.425,0.193) node[right, font=\scriptsize] {$$};
+\draw[->, very thick, orange!85!black] (6.600,0.000) -- (7.425,0.193) node[below right=-1pt, font=\scriptsize] {$w$};
+\node[font=\scriptsize, align=center] at (7.500,-0.55) {$w = 0.55\,v$: \ $\alpha(v, w) = 0$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} The $2$-form $\alpha = \det$ on $\mathbb{R}^2$ (Example~\ref{ex:linear-k-forms}(2)) as signed area. Left: $\alpha(v, w)$ is the area of the parallelogram spanned by $v$ and $w$, positive because $v$ turns to $w$ counterclockwise. Middle: exchanging the entries reverses the direction of turning and the sign, $\alpha(w, v) = -\alpha(v, w)$, the alternating condition of Definition~\ref{def:linear-k-form}. Right: for dependent vectors, here $w = 0.55\, v$, the parallelogram is flat and $\alpha(v, w) = 0$ (Lemma~\ref{lem:alternating-dependent}).
+%% <<< END ADDED
+
+\begin{propbox}[The Space of $k$-Forms]\thmlabel{prop:dim-k-forms}
+The set $\Lambda^k V$ of all linear $k$-forms on the $m$-dimensional space $V$ is a vector space, of dimension $\binom{m}{k}$.
+\leeref{Proposition 14.8}
+\end{propbox}
+
+\begin{proof}[Proof (to be filled)]
+That linear combinations of alternating multilinear maps are again alternating and multilinear is immediate, so $\Lambda^k V$ is a subspace of the space of all functions $V^k \to \mathbb{R}$. The dimension, by writing down a basis, is for Lecture~29.
+\end{proof}
+
+In particular $\Lambda^k V = 0$ for $k > m$ (this is Corollary~\ref{cor:forms-above-dimension}, proved directly), and $\Lambda^m V$ is one-dimensional, spanned by the determinant in any basis. Lee writes $\Lambda^k(V^*)$ for this space.
+
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
 
@@ -32635,6 +33348,9 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:complete-fields}\ Complete vector fields & Chapter 9, \emph{Flows} (Proposition 9.6, Proposition 9.7, Theorem 9.12(c)); \emph{Complete Vector Fields} (Lemma 9.15, Theorem 9.16, Corollary 9.17, Theorem 9.18, Lemma 9.19); Problem 9-6 \\
 \ref{sec:exponential}\ The exponential map & Chapter 20, \emph{One-Parameter Subgroups and the Exponential Map} (Theorem 20.1, Propositions 20.2, 20.5 and 20.8, Example 20.4); Problem 20-8 \\
 \ref{sec:lie-derivative}\ Lie derivatives & Chapter 9, \emph{Lie Derivatives} (Lemma 9.36, Theorem 9.38, Corollary 9.39); \emph{Canonical Form Near a Regular Point} (Theorem 9.22); \emph{Commuting Vector Fields} (Theorem 9.42, Corollary 9.43, Theorem 9.44) \\
+\ref{sec:stokes-calc3}\ Stokes' theorem in Calculus III & Chapter 16, \emph{Surface Integrals} (Theorem 16.34); the general theorem: \emph{Stokes's Theorem} (Theorem 16.11) \\
+\ref{sec:two-form-integrand}\ The integrand is a two-form & Chapter 14, \emph{The Wedge Product} \\
+\ref{sec:multilinear}\ Multilinear algebra & Chapter 12, \emph{Symmetric and Alternating Tensors}; Chapter 14, \emph{The Algebra of Alternating Tensors} (Proposition 14.8) \\
 \bottomrule
 \end{longtable}
 
@@ -32723,10 +33439,12 @@ Proposition 5.38 & Thm.~\ref{thm:tangent-kernel}, Cor.~\ref{cor:tangent-three}, 
 Proposition 5.47 & Prop.~\ref{prop:whitney-slices} \\
 Problem 5-6 & Def.~\ref{def:geo-tangent-bundle}, Prop.~\ref{prop:geo-tangent-bundle-submanifold}, Def.~\ref{def:unit-tangent-bundle}, Prop.~\ref{prop:unit-tangent-bundle} \\
 Exercise 6.1 & Lem.~\ref{lem:measure-zero-basic} \\
+Proposition 6.1 & Lem.~\ref{lem:measure-zero-basic} \\
 Lemma 6.2 & Lem.~\ref{lem:fubini-measure-zero} \\
 Proposition 6.5 & Lem.~\ref{lem:smooth-measure-zero} \\
 Lemma 6.6 & Def.~\ref{def:measure-zero-manifold}, Prop.~\ref{prop:measure-zero-every-chart} \\
 Exercise 6.7 & Prop.~\ref{prop:measure-zero-every-chart} \\
+Lemma 6.7 & Prop.~\ref{prop:measure-zero-every-chart} \\
 Theorem 6.10 & Lem.~\ref{lem:sard-reduction}, Lem.~\ref{lem:sard-flat-points}, Thm.~\ref{thm:sard} \\
 Corollary 6.11 & Cor.~\ref{cor:sard-low-dim} \\
 Lemma 6.13 & Lem.~\ref{lem:hyperplane-lines}, Lem.~\ref{lem:projection-injective}, Lem.~\ref{lem:projection-immersion-criterion}, Lem.~\ref{lem:projection-immersion} \\
@@ -32770,7 +33488,7 @@ Lemma 9.4 & Lem.~\ref{lem:translation-rescaling} \\
 Proposition 9.6 & Lem.~\ref{lem:integral-curves-diffeo}, Prop.~\ref{prop:naturality-integral-curves} \\
 Proposition 9.7 & Thm.~\ref{thm:action-generator} \\
 Example 9.10 & Ex.~\ref{ex:finite-escape} \\
-Theorem 9.12 & Prop.~\ref{prop:global-uniqueness}, Thm.~\ref{thm:maximal-flow}, Def.~\ref{def:maximal-domain}, Prop.~\ref{prop:maximal-curve}, Lem.~\ref{lem:flow-box}, Prop.~\ref{prop:group-law}, Prop.~\ref{prop:complete-flow} \\
+Theorem 9.12 & Prop.~\ref{prop:global-uniqueness}, Thm.~\ref{thm:maximal-flow}, Def.~\ref{def:maximal-domain}, Prop.~\ref{prop:maximal-curve}, Lem.~\ref{lem:flow-box}, Prop.~\ref{prop:group-law}, Prop.~\ref{prop:complete-flow}, Lem.~\ref{lem:flow-diffeo-Mt} \\
 Lemma 9.15 & Lem.~\ref{lem:uniform-time} \\
 Theorem 9.16 & Cor.~\ref{cor:compact-support-complete} \\
 Corollary 9.17 & Thm.~\ref{thm:compact-complete} \\
@@ -32780,7 +33498,9 @@ Theorem 9.22 & Lem.~\ref{lem:straightening} \\
 Lemma 9.36 & Lem.~\ref{lem:lie-derivative-smooth} \\
 Theorem 9.38 & Thm.~\ref{thm:lie-derivative-bracket} \\
 Corollary 9.39 & Cor.~\ref{cor:lie-derivative-properties} \\
+Proposition 9.41 & Prop.~\ref{prop:pulled-back-derivative} \\
 Theorem 9.42 & Thm.~\ref{thm:commuting-flows} \\
+Corollary 9.43 & Cor.~\ref{cor:invariant-own-flow} \\
 Theorem 9.44 & Thm.~\ref{thm:commuting-flows} \\
 Problem 9-1 & Cor.~\ref{cor:returning-curve-periodic}, Prop.~\ref{prop:returning-maximal-periodic} \\
 Problem 9-6 & Thm.~\ref{thm:escape-lemma}, Cor.~\ref{cor:escape-tail} \\
@@ -32794,6 +33514,10 @@ Proposition 11.11 & Prop.~\ref{prop:one-form-coords} \\
 Proposition 11.20 & Cor.~\ref{cor:df-properties} \\
 Proposition 11.25 & Prop.~\ref{prop:pullback-d}, Cor.~\ref{cor:pullback-d-forms} \\
 Problem 11-4 & Def.~\ref{def:Ip}, Def.~\ref{def:Ip-square}, Prop.~\ref{prop:second-order}, Prop.~\ref{prop:ideal-basis}, Thm.~\ref{thm:cotangent-ideal} \\
+Exercise 12.17 & Lem.~\ref{lem:k-form-permutation} \\
+Lemma 14.1 & Lem.~\ref{lem:alternating-dependent} \\
+Proposition 14.8 & Prop.~\ref{prop:dim-k-forms} \\
+Theorem 16.34 & Thm.~\ref{thm:stokes-calc3} \\
 Theorem 17.26 & Thm.~\ref{thm:inv-dim} \\
 Theorem 20.1 & Prop.~\ref{prop:one-parameter-subgroup} \\
 Proposition 20.2 & Thm.~\ref{thm:exp-matrix} \\
@@ -32804,7 +33528,7 @@ Problem 20-8 & Rem.~\textit{Warning} in \ref{sec:exponential} \\
 Lemma 21.1 & Lem.~\ref{lem:Lg}, Lem.~\ref{lem:orbit-open}, Prop.~\ref{prop:GH-open-sets} \\
 Example 21.3 & Ex.~\ref{ex:nonhausdorff-orbit} \\
 Proposition 21.4 & Def.~\ref{def:orbit-relation}, Cor.~\ref{cor:orbit-T2}, Thm.~\ref{thm:orbit-T2-strong} \\
-Corollary 21.6 & Cor.~\ref{cor:orbit-T2}, Thm.~\ref{thm:orbit-T2-strong} \\
+Corollary 21.6 & Cor.~\ref{cor:orbit-T2}, Thm.~\ref{thm:orbit-T2-strong}, Prop.~\ref{prop:compact-group-actions-proper} \\
 Example 21.14 & Ex.~\ref{ex:circle-RZ} \\
 Example 21.15 & Def.~\ref{def:transitive-action}, Def.~\ref{def:homogeneous}, Ex.~\ref{ex:s2-homogeneous} \\
 Theorem 21.17 & Def.~\ref{def:cosets}, Def.~\ref{def:coset-space}, Lem.~\ref{lem:cosets}, Def.~\ref{def:coset-projection}, Prop.~\ref{prop:GH-orbit-space}, Def.~\ref{def:GH-topology}, Prop.~\ref{prop:GH-open-sets}, Cor.~\ref{cor:GH-quotient-map}, Cor.~\ref{cor:GH-nice} \\

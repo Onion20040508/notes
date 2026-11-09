@@ -21,6 +21,7 @@ tags: [differentiable-manifolds, hub]
 - [[§71 The Exponential Map#^prop-71-10|Proposition §71.10: Smoothness and the Differential at 0]]
 - [[§72 Lie Derivatives#^lem-72-2|Lemma §72.2: The Inverse Flow Map φ_-t Has an Open Domain]]
 - [[§72 Lie Derivatives#^lem-72-3|Lemma §72.3: φ_t Is a Diffeomorphism from M_t onto M_-t]]
+- [[§72 Lie Derivatives#^lem-72-5|Lemma §72.5: Canonical Form Near a Regular Point]]
 - [[§72 Lie Derivatives#^thm-72-9|Theorem §72.9: Commuting Fields: Invariance and Commuting Flows]]
 - [[§72 Lie Derivatives#^lem-72-11|Lemma §72.11: The Mixed Derivative of Two Flows]]
 

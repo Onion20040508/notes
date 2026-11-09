@@ -5,25 +5,20 @@ chapter: 11
 section: 73
 tags: [differentiable-manifolds, math591]
 ---
-← · ↑ · →
+← [[§72 Lie Derivatives]] · ↑ [[· 11 Differential Forms]] · [[§74 The Integrand Is a Two-Form]] →
 
 *Stage: forms — The theorem to be generalized, recalled from Calculus III: parametrized surfaces, orientation by a unit normal, surface integrals, the induced orientation of the boundary, and Stokes' theorem in $\mathbb{R}^3$.*
 
 *(Lecture 28.)* The course reviews Stokes' theorem of Calculus III because it is the theorem to be generalized. The definitions of this section are recalled from Calculus III (Stewart, Sections 16.6–16.8, in MATH 233) and from MATH 452 (§§31–34), where the theorem is proved. They are restated in the notation of the lecture, which differs from both:
 
-\begin{center}
-\small
-\begin{tabular}{llll}
-\toprule
-& these notes & Calculus III (Stewart) & MATH 452 \ \midrule
-vector field & $\mathbf{X} = (f^1, f^2, f^3)$, $\vec G = (g^1, g^2, g^3)$ & $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j} + R\,\mathbf{k}$ & $\mathbf{F} = (P, Q, R)$ \\
-coordinates on $\mathbb{R}^3$ & $x^1, x^2, x^3$ & $x, y, z$ & $x, y, z$ \\
-parametrization & $\vec r(s, t)$, $(s, t) \in D$ & $\mathbf{r}(u, v)$ & $\mathbf{X}(u, v)$ \\
-tangent vectors & $\vec r_s$, $\vec r_t$ & $\mathbf{r}_u$, $\mathbf{r}_v$ & $\mathbf{X}_u$, $\mathbf{X}_v$ \\
-unit normal & $\mathbf{n}$ & $\mathbf{n}$ & $\hat n$ \\
-\bottomrule
-\end{tabular}
-\end{center}
+| | these notes | Calculus III ([[§133 Parametric Surfaces and Their Areas\|Stewart]]) | [[§31 Surface Integrals\|MATH 452]] |
+|---|---|---|---|
+| vector field | $\mathbf{X} = (f^1, f^2, f^3)$, $\vec G = (g^1, g^2, g^3)$ | $\mathbf{F} = P\,\mathbf{i} + Q\,\mathbf{j} + R\,\mathbf{k}$ | $\mathbf{F} = (P, Q, R)$ |
+| coordinates on $\mathbb{R}^3$ | $x^1, x^2, x^3$ | $x, y, z$ | $x, y, z$ |
+| parametrization | $\vec r(s, t)$, $(s, t) \in D$ | $\mathbf{r}(u, v)$ | $\mathbf{X}(u, v)$ |
+| tangent vectors | $\vec r_s$, $\vec r_t$ | $\mathbf{r}_u$, $\mathbf{r}_v$ | $\mathbf{X}_u$, $\mathbf{X}_v$ |
+| unit normal | $\mathbf{n}$ | $\mathbf{n}$ | $\hat n$ |
+
 In these notes a bold $\mathbf{X}$ is always a vector field; in MATH 452 the same letter is the parametrization of the surface.
 
 > [!definition] Definition §73.1: Parametrized Surface
@@ -36,6 +31,9 @@ In these notes a bold $\mathbf{X}$ is always a vector field; in MATH 452 the sam
 > The image $S = \vec r(D)$ is a **parametrized surface**, and $\vec r$ is a **parametrization** of $S$.
 
 ^def-73-1
+
+> [!remark]- Connections
+> - Calculus III: [[§133 Parametric Surfaces and Their Areas#^def-133-1|Calc Def. §133.1]] (Stewart 16.6, parameters $u, v$); MATH 452: [[§31 Surface Integrals#^def-31-1|452 Def. §31.1]] (the parametrization is called $\mathbf{X}$ there).
 
 *(Recalled from Calculus III: Stewart, Section 16.6; MATH 452, §31.)* The partial derivatives
 
@@ -50,12 +48,18 @@ are two fields of vectors along $S$, tangent to $S$: $\vec r_s$ is the velocity 
 
 ^def-73-2
 
+> [!remark]- Connections
+> - Calculus III calls such a surface smooth: [[§133 Parametric Surfaces and Their Areas#^def-133-4|Calc Def. §133.4]]; MATH 452: regular points, [[§31 Surface Integrals#^def-31-3|452 Def. §31.3]].
+
 *(Recalled from Calculus III: Stewart, Section 16.6, a smooth surface; MATH 452, §31.)* Regular means that the Jacobian $d\vec r$, the $3 \times 2$ matrix with columns $\vec r_s, \vec r_t$, has rank $2$: on the interior of $D$, $\vec r$ is an immersion (Definition [[§36 Submersions#^def-36-2|§36.2]]). “In 95\% of the examples in Calc III,” a single injective regular parametrization covers $S$; when $\vec r$ restricted to the interior of $D$ is moreover a homeomorphism onto its image, it is an embedding (Definition [[§44 Embeddings#^def-44-1|§44.1]]), its image is a regular submanifold of $\mathbb{R}^3$ (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]), and the inverse of $\vec r$ is a chart of that submanifold.
 
 > [!definition] Definition §73.3: Orientation of a Surface by a Unit Normal
 > Let $S \subseteq \mathbb{R}^3$ be a $2$-dimensional regular submanifold (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]). A **unit normal field** on $S$ is a continuous map $\mathbf{n} : S \to \mathbb{R}^3$ such that for every $q \in S$, $\mathbf{n}(q)$ is a unit vector perpendicular to the tangent plane $T_qS \subseteq \mathbb{R}^3$. A choice of unit normal field is an **orientation** of $S$, and $S$ with this choice is an **oriented surface**.
 
 ^def-73-3
+
+> [!remark]- Connections
+> - Calculus III: [[§135 Oriented Surfaces and Flux#^def-135-1|Calc Def. §135.1]], with an animation of why the Möbius strip has no orientation.
 
 *(Recalled from Calculus III: Stewart, Section 16.7; MATH 452, §32.)* At each point there are two unit normals, $\mathbf{n}(q)$ and $-\mathbf{n}(q)$; the orientation is a continuous choice of one of them. The continuity is part of the definition (a student's question in Lecture 28): “it's supposed to vary” continuously. If $\mathbf{n}$ is an orientation, so is $-\mathbf{n}$.
 
@@ -67,6 +71,9 @@ are two fields of vectors along $S$, tangent to $S$: $\vec r_s$ is the velocity 
 > $$
 
 ^def-73-4
+
+> [!remark]- Connections
+> - Calculus III: the orientation a parametrization supplies, [[§135 Oriented Surfaces and Flux#^def-135-2|Calc Def. §135.2]].
 
 *(Lecture 28; Stewart, Section 16.7, calls $\mathbf{n} = \vec r_s \times \vec r_t / |\vec r_s \times \vec r_t|$ the orientation that a parametrization “supplies”.)* Exchanging $s$ and $t$ turns a positive parametrization into a negative one, since $\vec r_t \times \vec r_s = -\vec r_s \times \vec r_t$. The inverse of a positive parametrization will be a positively oriented chart, once orientations of manifolds are defined.
 
@@ -87,12 +94,18 @@ are two fields of vectors along $S$, tangent to $S$: $\vec r_s$ is the velocity 
 
 ^def-73-5
 
+> [!remark]- Connections
+> - Calculus III: [[§135 Oriented Surfaces and Flux#^def-135-5|Calc Def. §135.5]] and the formula through a parametrization, [[§135 Oriented Surfaces and Flux#^thm-135-1|Calc Thm. §135.1]]; MATH 452: [[§32 Flux Integrals and the Divergence Theorem in ℝ³#^def-32-1|452 Def. §32.1]].
+
 *(Recalled from Calculus III: Stewart, Section 16.7; MATH 452, Definition 32.1.)* The factor $|\vec r_s \times \vec r_t|\, ds\, dt$ is the area of the parallelogram spanned by $\vec r_s\, ds$ and $\vec r_t\, dt$, the image of a small rectangle of $D$ to first order. That the integral does not depend on the positive parametrization is the change of variables formula (MATH 452, §§24 and 32); for integrals of forms it will be proved in this course.
 
 > [!definition] Definition §73.6: Induced Orientation of the Boundary Curve
 > Let $S$ be a compact oriented surface with boundary in $\mathbb{R}^3$, oriented by $\mathbf{n}$, whose boundary $\partial S$ is a piecewise smooth closed curve (or a finite union of such curves). The **induced orientation** of $\partial S$ is the direction of travel along $\partial S$ in which a walker with $\mathbf{n}$ pointing from his feet to his head has the surface on his left. With this orientation, $\partial S$ is **positively oriented**.
 
 ^def-73-6
+
+> [!remark]- Connections
+> - Calculus III: [[§136 Stokes' Theorem#^def-136-1|Calc Def. §136.1]] (the same walker); MATH 452: [[§34 Stokes' Theorem in ℝ³#^rem-34-1|452 Remark: Orientation Convention]].
 
 *(Lecture 28: the right-hand rule, or “Amp\`ere's little guy”; Stewart, Section 16.8; MATH 452, Theorem 34.1.)* Surfaces with boundary are taken here in the sense of Calculus III; manifolds with boundary come later in the chapter. The walker can be traded for a formula of the kind that will generalize: put the outward direction first.
 
@@ -129,6 +142,10 @@ For a region of the $(x^1, x^2)$-plane oriented by $\mathbf{n} = e_3$, the lemma
 
 ^thm-73-2
 
+> [!remark]- Connections
+> - Proofs: [[§34 Stokes' Theorem in ℝ³#^pf-34-1|452, graph surfaces]] and [[§34 Stokes' Theorem in ℝ³#^pf-34-1-2|452, general parametrized surfaces]] (Theorem [[§34 Stokes' Theorem in ℝ³#^thm-34-1|§34.1]]); Calculus III statement [[§136 Stokes' Theorem#^thm-136-1|Calc Thm. §136.1]].
+> - The general theorem in MATH 452 (forms on $\mathbb{R}^n$): [[§40 The Generalized Stokes' Theorem#^thm-40-1|452 Thm. §40.1]].
+
 > [!proof]+ Proof (not given in this course)
 > The theorem is proved in MATH 452 (Theorem 34.1: first for graphs, then for parametrized surfaces, by pulling both sides back to the parameter domain and applying Green's theorem there); Stewart (Section 16.8) proves the case of a graph. In this course it will be a special case of the general Stokes theorem, which is how Lee deduces it (Theorem 16.34).
 
@@ -147,6 +164,10 @@ All of them have to be understood and generalized to manifolds.
 
 *(Figure after the board, redrawn from a computed surface.)* The cap $x^3 = 0.4\,\big(1 - (x^1)^2 - (x^2)^2\big)$ over the unit disk, oriented by the upward unit normal $\mathbf{n}$ (orange, drawn at a few points). Its boundary $\partial S$ is the unit circle in the $(x^1, x^2)$-plane, with the induced orientation (red): counterclockwise seen from above, dashed where the cap hides it. “Amp\`ere's little guy” stands on $\partial S$ with $\mathbf{n}$ from his feet to his head; at the rim the normal leans outward, so he leans too. Walking in the direction of $\partial S$ he has the surface on his left (Definition [[§73 Stokes' Theorem in Calculus III#^def-73-6|§73.6]]); at his position the outward direction $\nu$ points towards the viewer and $T$ to the right, and $\nu \times T = \mathbf{n}$ (Lemma [[§73 Stokes' Theorem in Calculus III#^lem-73-1|§73.1]]).
 
+![[m591-73-a1.gif|520]]
+
+*(Not from lecture; animation added, vault only.)* Ampère's little guy walks once around $\partial S$ on the cap of the figure, with his head along $\mathbf{n}$ (orange) and the surface on his left: seen from above he goes counterclockwise (faint while the cap hides him). Then the orientation is reversed, $-\mathbf{n}$: he now hangs under the cap (dashed), head along $-\mathbf{n}$, and keeping the surface on his left he walks clockwise, so the induced orientation of $\partial S$ is reversed too (Definition [[§73 Stokes' Theorem in Calculus III#^def-73-6|§73.6]]).
+
 *The surface integral, computed.* The right-hand side of Stokes' theorem is the surface integral of a field, $\nabla \times \mathbf{X}$. For any field $\vec G = (g^1, g^2, g^3)$, how is $\iint_S \vec G \cdot d\vec S$ computed? Parametrize $S$ positively; then the integrand is a $3 \times 3$ determinant, the “magic formula” of the lecture.
 
 > [!theorem] Lemma §73.3: The Surface Integrand as a Determinant
@@ -163,6 +184,9 @@ All of them have to be understood and generalized to manifolds.
 > $$
 
 ^lem-73-3
+
+> [!remark]- Connections
+> - The triple product as a determinant: [[§97 Triple Products and Torque#^thm-97-1|Calc Thm. §97.1]].
 
 > [!proof]+ Proof
 > *(Lecture 28 states the formula, “$\vec G \cdot d\vec S = \det(\ldots)\, ds\, dt = (\vec G \cdot \mathbf{n})\, dS$”; the proof is filled in.)* *The first equality.* Expand the determinant along the first row:

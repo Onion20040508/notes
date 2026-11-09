@@ -5,7 +5,7 @@ chapter: 11
 section: 74
 tags: [differentiable-manifolds, math591]
 ---
-← · ↑ · →
+← [[§73 Stokes' Theorem in Calculus III]] · ↑ [[· 11 Differential Forms]] · [[§75 Multilinear Algebra]] →
 
 *Stage: forms — Reading the Calculus III surface integrand as a two-form: the $2 \times 2$ minors $dx^i \wedge dx^j$ fed the two tangent vectors; and the shape of the general Stokes theorem.*
 
@@ -27,6 +27,9 @@ $$
 > *Lee: Ch. 14, The Wedge Product*
 
 ^def-74-1
+
+> [!remark]- Connections
+> - MATH 452 defines the wedge product of forms on $\mathbb{R}^n$ by its rules: [[§37 The Algebra of Differential Forms#^def-37-1|452 Def. §37.1]]. Its [[§36 Introduction to Differential Forms#^def-36-2|§36]] has the shadow picture of Lemma [[§74 The Integrand Is a Two-Form#^lem-74-1|§74.1]] with an animation of a turning parallelogram (in 452's notation).
 
 *(Lecture 28, on the board for $(i, j) = (2, 3)$: “because of the indices involved here, which are the two and the three, this is going to be called $dx^2 \wedge dx^3$.” The other pairs are filled in the same way.)* The name will be explained by the wedge product of covectors: $dx^i$ is the covector $u \mapsto u^i$ (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]), and $dx^i \wedge dx^j$ is built from $dx^i$ and $dx^j$.
 
@@ -78,6 +81,9 @@ $$
 > $$
 
 ^prop-74-2
+
+> [!remark]- Connections
+> - The same computation in MATH 452's notation: [[§37 The Algebra of Differential Forms#^ex-37-3|452 Ex. §37.3]], and [[§37 The Algebra of Differential Forms#^rem-37-3|452 Remark: The Cross Product Is the Pullback in Disguise]].
 
 > [!proof]+ Proof
 > *(Lecture 28: “$\vec G \cdot d\vec S = (g^1\, dx^2 \wedge dx^3 + \cdots)(\vec r_s, \vec r_t)\, ds\, dt$”; the details are filled in.)* By Lemma [[§74 The Integrand Is a Two-Form#^lem-74-1|§74.1]](3) with $u = \vec r_s$, $v = \vec r_t$, the components of $\vec r_s \times \vec r_t$ are $(dx^2 \wedge dx^3)(\vec r_s, \vec r_t)$, $(dx^3 \wedge dx^1)(\vec r_s, \vec r_t)$ and $(dx^1 \wedge dx^2)(\vec r_s, \vec r_t)$. So

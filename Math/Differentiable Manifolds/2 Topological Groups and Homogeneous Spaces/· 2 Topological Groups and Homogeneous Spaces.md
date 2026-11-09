@@ -10,7 +10,7 @@ tags: [chapter, differentiable-manifolds]
 
 
 **Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (68), [[· 3 Smooth Structures|3 Smooth Structures]] (4), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (24), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (9), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (5), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (9), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (3), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (1)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (24), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (9), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (5), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (9), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (3), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (1), [[· 11 Differential Forms|11 Differential Forms]] (2)
 **Builds on (other subjects):** [[Linear Algebra]] (18), [[Topology]] (16), [[Single Variable Analysis]] (1), [[Multivariable Analysis]] (6)
 
 ## Sections
@@ -29,7 +29,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|Proposition §11.3: Determinant Is Continuous]]: 361 later results
-- [[§14 Homogeneous Spaces#^lem-14-3|Lemma §14.3: When Two Cosets Coincide]]: 359 later results
-- [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|Proposition §11.5: Equivalent Description of O(n,ℝ)]]: 358 later results
-- [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|Proposition §15.6: O(n) Acts Transitively on Gr_k(ℝⁿ)]]: 357 later results
+- [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|Proposition §11.3: Determinant Is Continuous]]: 362 later results
+- [[§14 Homogeneous Spaces#^lem-14-3|Lemma §14.3: When Two Cosets Coincide]]: 360 later results
+- [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|Proposition §11.5: Equivalent Description of O(n,ℝ)]]: 359 later results
+- [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|Proposition §15.6: O(n) Acts Transitively on Gr_k(ℝⁿ)]]: 358 later results

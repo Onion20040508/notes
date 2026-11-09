@@ -11,7 +11,7 @@ tags: [subject, differentiable-manifolds]
 ---
 # Differentiable Manifolds
 
-MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§72 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
+MATH 591, *Introduction to Differentiable Manifolds* (Fall 2026, Alejandro Uribe), a first-year PhD course; text Lee, *Introduction to Smooth Manifolds* (2nd ed.), reference Tu, *An Introduction to Manifolds*. Section numbers §1–§75 are the notes' own; every box ends with its counterpart in Lee (*Lee: …*), and [[Differentiable Manifolds Lee Concordance]] reads the two side by side. [[Differentiable Manifolds Course Log]] records the lectures and the homework. LaTeX source (still being extended during the term): `tex/math591_manifolds_notes.tex`.
 
 ## Roadmap
 These notes follow the course, and the course builds manifolds in two ways that run as parallel threads. Along the *equations* thread, manifolds are cut out of Euclidean space as level sets: spheres, then $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n)$, $\mathrm{U}(n)$. Along the *quotients* thread, they are glued together by identifying points: $\mathbb{CP}^n$, orbit spaces, coset spaces $G/H$, Grassmannians. Chapters 1 and 2 develop the two threads side by side, and in Chapters 3 and 4 they part ways over tangent spaces. A manifold built by equations has an ambient space, and its tangent vectors can be taken as velocities inside it (the *geometric* stage). A manifold built by quotients has none, and needs the *abstract* tangent space of derivations. Between them sits a *linear* stage, the linear algebra that both need. The threads meet again in the theorem that the two tangent spaces agree wherever both exist. After that the course turns to maps and what they build. Submersions come first ([[§36 Submersions|§36]]): their normal form makes the regular value theorem work on any manifold, completing the equations thread in submanifolds ([[§37 Regular Submanifolds|§37]]); the submersions that are locally products are the fibrations ([[§40 Fibrations|§40]]); and the tangent spaces themselves assemble into one, the tangent bundle ([[§51 The Tangent Bundle|§51]]). Immersions, the maps dual to submersions, begin a new arc ([[§43 Immersions|§43]]), which leads to embeddings, the immersions whose images are submanifolds ([[§44 Embeddings|§44]]).
@@ -36,6 +36,7 @@ graph TD
   C8["8 Vector Fields and Lie Groups"]
   C9["9 Sard's Theorem"]
   C10["10 Integral Curves and Flows"]
+  C11["11 Differential Forms"]
   X1["Topology (590)"]
   X2["Multivariable Analysis (452)"]
   X3["Linear Algebra (LADR)"]
@@ -47,6 +48,7 @@ graph TD
   C4 --> C5
   C5 --> C6
   C5 --> C7
+  C5 --> C11
   C6 --> C8
   C7 --> C8
   C8 --> C9
@@ -97,6 +99,7 @@ graph TD
 - [[· 8 Vector Fields and Lie Groups]]
 - [[· 9 Sard's Theorem]]
 - [[· 10 Integral Curves and Flows]]
+- [[· 11 Differential Forms]]
 
 ## Planned topics (syllabus)
 Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56, as derivations of $C^\infty(M)$; differential operators, §57; the Lie bracket, §58; related vector fields, §59); one-forms ✓ (§53; differential forms of higher degree to come); submanifolds ✓; immersions/submersions ✓ (immersion normal form stated); Sard's theorem ✓ (§62–§63; parametric transversality §64, partitions of unity and exhaustion functions §65, Whitney embedding §66); integral curves and flows (begun, §67–§68); transversality (in Euclidean space, §26); Lie groups and algebras (begun: Lie groups, left-invariant vector fields and the Lie algebra of a Lie group, §60; Lie group morphisms and linear groups, §61; classical matrix groups and their tangent spaces at $I$); Stokes' theorem; de Rham cohomology; other topics time permitting.
