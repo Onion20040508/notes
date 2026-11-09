@@ -15,7 +15,8 @@ tags: [differentiable-manifolds, hub]
 - [[§70 Complete Vector Fields#^lem-70-1|Lemma §70.1: Uniform Time Lemma]]
 
 ## Used in (Differentiable Manifolds)
-- (not cited later in the course)
+- [[§70 Complete Vector Fields#^lem-70-3|Lemma §70.3: Uniform Time on a Compact Set]]
+- [[§70 Complete Vector Fields#^cor-70-6|Corollary §70.6: Compactly Supported Vector Fields Are Complete]]
 
 ## Connections
 - TODO

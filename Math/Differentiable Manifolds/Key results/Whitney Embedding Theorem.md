@@ -13,7 +13,7 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§63 Sard's Theorem#^thm-63-3|Theorem §63.3: Sard's Theorem]]
 - [[§65 Partitions of Unity#^prop-65-8|Proposition §65.8: Bump Functions for Closed Sets]]
-- [[§65 Partitions of Unity#^prop-65-10|Proposition §65.10: Exhaustion Functions Exist]]
+- [[§65 Partitions of Unity#^prop-65-13|Proposition §65.13: Exhaustion Functions Exist]]
 - [[§66 The Whitney Embedding Theorem#^lem-66-1|Lemma §66.1: Compact Manifolds Embed in Some ℝᵏ]]
 - [[§66 The Whitney Embedding Theorem#^prop-66-7|Proposition §66.7: A Proper Embedding from the Slices]]
 - [[§66 The Whitney Embedding Theorem#^lem-66-8|Lemma §66.8: Proper Embeddings into ℝ²ᵐ⁺¹]]

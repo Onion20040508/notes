@@ -21,9 +21,11 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§65 Partitions of Unity#^prop-65-8|Proposition §65.8: Bump Functions for Closed Sets]]
-- [[§65 Partitions of Unity#^prop-65-10|Proposition §65.10: Exhaustion Functions Exist]]
+- [[§65 Partitions of Unity#^prop-65-10|Proposition §65.10: Extension of Smooth Functions from a Closed Submanifold]]
+- [[§65 Partitions of Unity#^thm-65-11|Theorem §65.11: Extension of Vector Fields from a Submanifold]]
+- [[§65 Partitions of Unity#^prop-65-13|Proposition §65.13: Exhaustion Functions Exist]]
 
 ## Connections
 - Built from [[§65 Partitions of Unity#^lem-65-3|plateau functions]] (the bump-function construction of [[§56 Vector Fields#^prop-56-4|§56.4]]) and [[Manifolds Are Paracompact|paracompactness]].
-- Pays the "credit" of [[§66 The Whitney Embedding Theorem|§66]]: the cutoffs $\rho_i$ of [[§66 The Whitney Embedding Theorem#^prop-66-7|Proposition §66.7]] and the existence of exhaustion functions ([[§65 Partitions of Unity#^prop-65-10|Proposition §65.10]]).
+- Pays the "credit" of [[§66 The Whitney Embedding Theorem|§66]]: the cutoffs $\rho_i$ of [[§66 The Whitney Embedding Theorem#^prop-66-7|Proposition §66.7]] and the existence of exhaustion functions ([[§65 Partitions of Unity#^prop-65-13|Proposition §65.13]]).
 - Lee, *Introduction to Smooth Manifolds*, Theorem 2.23; used later to integrate forms.

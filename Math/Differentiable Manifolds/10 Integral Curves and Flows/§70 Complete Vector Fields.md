@@ -68,7 +68,7 @@ In general it is hard to tell whether a given vector field is complete, so resul
 
 *(Figure after the board.)* The horizontal line is $M$ and the vertical direction is $\mathbb{R}$: over each $p$, the maximal domain $(\alpha(p), \beta(p))$, between the graphs $t = \beta(p) > 0$ and $t = \alpha(p) < 0$. The lemma's hypothesis is that a uniform strip $(-\varepsilon, \varepsilon) \times M$ fits inside; its conclusion is that the whole of $\mathbb{R} \times M$ does.
 
-Announced at the end of Lecture 24 and proved in Lecture 25 (Theorems [[§70 Complete Vector Fields#^thm-70-2|§70.2]] and [[§70 Complete Vector Fields#^thm-70-7|§70.7]] below), as consequences of Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]]:
+Announced at the end of Lecture 24 and proved in Lecture 25 (Theorems [[§70 Complete Vector Fields#^thm-70-2|§70.2]] and [[§70 Complete Vector Fields#^thm-70-11|§70.11]] below), as consequences of Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]]:
 - every vector field on a compact manifold is complete, since compactness gives a uniform time (Lee, Corollary 9.17);
 - every left-invariant vector field on a Lie group is complete, because solutions can be left-translated (Lee, Theorem 9.18).
 
@@ -106,7 +106,85 @@ So on a compact manifold there is no need to check where the flow is defined.
 
 *Complete fields and actions of $\mathbb{R}$.* Suppose $\mathbf{X}$ is complete. Then $\mathcal{D} = \mathbb{R} \times M$, so for every $t \in \mathbb{R}$ there is a map $\varphi_t : M \to M$, and the group law holds for all $s, t$.
 
-> [!theorem] Proposition §70.3: The Flow of a Complete Field
+*(Assignment 7, Problem 4.)* The argument of Theorem [[§70 Complete Vector Fields#^thm-70-2|§70.2]] works on any compact subset, and it shows that an integral curve which stops in finite time must leave every compact set.
+
+> [!theorem] Lemma §70.3: Uniform Time on a Compact Set
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ and $K \subseteq M$ compact. There is $\varepsilon > 0$ with $(-\varepsilon, \varepsilon) \subseteq (\alpha(q), \beta(q))$ for every $q \in K$.
+
+^lem-70-3
+
+> [!proof]+ Proof
+> *(Assignment 7, Problem 4: the submitted solution, the step “a uniform time of existence on $K$”. For $K = M$ compact it is the proof of Theorem [[§70 Complete Vector Fields#^thm-70-2|§70.2]].)* By Lemma [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]], for each $q \in K$ there are $\varepsilon_q > 0$ and an open neighbourhood $U_q$ of $q$ in $M$ with $(-\varepsilon_q, \varepsilon_q) \times U_q \subseteq \mathcal{D}$ (Definition [[§69 Maximal Integral Curves and Flows#^def-69-2|§69.2]]); that is, $\alpha(q') \le -\varepsilon_q$ and $\beta(q') \ge \varepsilon_q$ for all $q' \in U_q$. Since $q \in U_q$ for each $q \in K$, $\{U_q\}_{q \in K}$ is a cover of $K$ by open subsets of $M$. Since $K$ is compact, there are $q_1, \ldots, q_m \in K$ with
+>
+> $$
+> K \subseteq U_{q_1} \cup \cdots \cup U_{q_m} .
+> $$
+>
+> Let $\varepsilon = \min\{\varepsilon_{q_1}, \ldots, \varepsilon_{q_m}\}$, positive as a minimum of finitely many positive numbers. For $q' \in K$ choose $j$ with $q' \in U_{q_j}$; then $\alpha(q') \le -\varepsilon_{q_j} \le -\varepsilon$ and $\beta(q') \ge \varepsilon_{q_j} \ge \varepsilon$.
+
+^pf-70-3
+
+*Uses:* [[§70 Complete Vector Fields#^thm-70-2|§70.2]], [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]], [[§69 Maximal Integral Curves and Flows#^def-69-2|Def. §69.2]]
+
+> [!theorem] Theorem §70.4: The Escape Lemma
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$ with $\beta(p) < +\infty$. Then the image $\varphi^p\big((\alpha(p), \beta(p))\big)$ of the maximal integral curve is not contained in any compact subset of $M$. The same holds if $\alpha(p) > -\infty$.
+>
+> *Lee: Lemma 9.19*
+
+^thm-70-4
+
+In words: an incomplete integral curve has to escape every compact set — to infinity, as in Example [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]], or off an edge, as in Example [[§69 Maximal Integral Curves and Flows#^ex-69-2|§69.2]].
+
+> [!proof]+ Proof
+> *(Assignment 7, Problem 4: the submitted solution. The case $\alpha(p) > -\infty$ is filled in.)* Suppose, for contradiction, that $\varphi^p\big((\alpha(p), \beta(p))\big) \subseteq K$ for some compact $K \subseteq M$, and let $\varepsilon > 0$ be as in Lemma [[§70 Complete Vector Fields#^lem-70-3|§70.3]]: $\beta(q') \ge \varepsilon$ for all $q' \in K$. Since $\beta(p) < +\infty$, we may choose $s$ with
+>
+> $$
+> \max\{0, \beta(p) - \varepsilon\} < s < \beta(p) .
+> $$
+>
+> Then $\alpha(p) < 0 < s < \beta(p)$, so $q = \varphi^p(s)$ is defined. By assumption $q \in K$, so $\beta(q) \ge \varepsilon$. On the other hand, by the group law (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]](1)), $(\alpha(q), \beta(q)) = (\alpha(p) - s, \beta(p) - s)$, so
+>
+> $$
+> \beta(q) = \beta(p) - s < \varepsilon ,
+> $$
+>
+> a contradiction.
+>
+> *The case $\alpha(p) > -\infty$* *(filled in)*: the maximal integral curve of $-\mathbf{X}$ starting at $p$ is $t \mapsto \varphi^p(-t)$ on $(-\beta(p), -\alpha(p))$ (Lemma [[§67 Integral Curves#^lem-67-4|§67.4]](2), as in the proof of Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]]); it has the same image and a finite right end $-\alpha(p)$, so the first case applies to it.
+
+^pf-70-4
+
+*Uses:* [[§70 Complete Vector Fields#^lem-70-3|§70.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]], [[§67 Integral Curves#^lem-67-4|§67.4]], [[§70 Complete Vector Fields#^lem-70-1|§70.1]]
+
+> [!theorem] Corollary §70.5: The Tail Escapes
+> If $\beta(p) < +\infty$, then for every $t_0 \in (\alpha(p), \beta(p))$ the set $\varphi^p\big([t_0, \beta(p))\big)$ is not contained in any compact subset of $M$. Equivalently: if $\varphi^p\big([t_0, \beta(p))\big)$ lies in a compact set for some $t_0$, then $\beta(p) = +\infty$.
+>
+> *Lee: Lemma 9.19*
+
+^cor-70-5
+
+> [!proof]+ Proof
+> *(Filled in. The proof of Theorem [[§70 Complete Vector Fields#^thm-70-4|§70.4]] uses the hypothesis only at the point $\varphi^p(s)$, for $s$ close to $\beta(p)$; so it proves this stronger statement, which is Lee's form.)* Suppose $\varphi^p\big([t_0, \beta(p))\big) \subseteq K$, $K$ compact, and take $\varepsilon$ for $K$ as in Lemma [[§70 Complete Vector Fields#^lem-70-3|§70.3]]. Choose $s$ with $\max\{t_0, 0, \beta(p) - \varepsilon\} < s < \beta(p)$. Then $s \in [t_0, \beta(p))$, so $q = \varphi^p(s) \in K$ and $\beta(q) \ge \varepsilon$, while $\beta(q) = \beta(p) - s < \varepsilon$ by Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]](1): a contradiction.
+
+^pf-70-5
+
+*Uses:* [[§70 Complete Vector Fields#^thm-70-4|§70.4]], [[§70 Complete Vector Fields#^lem-70-3|§70.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]]
+
+> [!theorem] Corollary §70.6: Compactly Supported Vector Fields Are Complete
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ have compact support $\operatorname{supp}\mathbf{X} = \overline{\{q \in M : \mathbf{X}_q \neq 0\}}$. Then $\mathbf{X}$ is complete.
+>
+> *Lee: Theorem 9.16*
+
+^cor-70-6
+
+> [!proof]+ Proof
+> *(Not from the assignment; filled in, from the escape lemma.)* Let $p \in M$ and suppose $\beta(p) < +\infty$. By Theorem [[§70 Complete Vector Fields#^thm-70-4|§70.4]], the image of $\varphi^p$ is not contained in the compact set $K = \operatorname{supp}\mathbf{X}$: there is $t_0 \in (\alpha(p), \beta(p))$ with $q = \varphi^p(t_0) \notin K$, so $\mathbf{X}_q = 0$. Then the constant curve at $q$ is an integral curve defined on $\mathbb{R}$ (Example [[§68 Local Existence and Uniqueness#^ex-68-3|§68.3]]), so $\beta(q) = +\infty$ (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]). But $\beta(q) = \beta(p) - t_0 < +\infty$ by Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]](1), a contradiction. So $\beta(p) = +\infty$; and $\alpha(p) = -\infty$ by the same argument applied to $-\mathbf{X}$, which has the same support, as in the proof of Theorem [[§70 Complete Vector Fields#^thm-70-4|§70.4]]. Theorem [[§70 Complete Vector Fields#^thm-70-2|§70.2]] is the case of a compact $M$, where every support is compact.
+
+^pf-70-6
+
+*Uses:* [[§70 Complete Vector Fields#^thm-70-4|§70.4]], [[§68 Local Existence and Uniqueness#^ex-68-3|Ex. §68.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]], [[§70 Complete Vector Fields#^thm-70-2|§70.2]]
+
+> [!theorem] Proposition §70.7: The Flow of a Complete Field
 > Let $\mathbf{X} \in \mathfrak{X}(M)$ be complete, with flow $\varphi : \mathbb{R} \times M \to M$. Then
 >
 > $$
@@ -117,26 +195,26 @@ So on a compact manifold there is no need to check where the flow is defined.
 >
 > *Lee: Ch. 9, Flows; Theorem 9.12(c)*
 
-^prop-70-3
+^prop-70-7
 
 > [!proof]+ Proof
 > *(Lecture 25; details filled in.)* $\varphi_0(p) = \varphi^p(0) = p$. All maximal domains are $\mathbb{R}$, so Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]] applies for all $s, t \in \mathbb{R}$: $\varphi_t \circ \varphi_s = \varphi_{t + s}$. In particular $\varphi_{-t} \circ \varphi_t = \varphi_0 = \mathrm{id}_M = \varphi_t \circ \varphi_{-t}$, so $\varphi_t$ is a bijection with inverse $\varphi_{-t}$. Each $\varphi_t$ is smooth, as the smooth map $\varphi$ (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)) restricted to the slice $\{t\} \times M$; so is its inverse $\varphi_{-t}$. In the action notation, $0 \cdot p = p$ and the group law reads $t \cdot (s \cdot p) = (t + s) \cdot p$, the two conditions of Definition [[§13 Group Actions and Orbit Spaces#^def-13-1|§13.1]] for the group $(\mathbb{R}, +)$, whose identity is $0$ and whose product is $+$.
 
-^pf-70-3
+^pf-70-7
 
 *Uses:* [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]], [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]]
 
 There is a clash of notations: for an action, $(t, p) \mapsto t \cdot p$; for a flow, $(t, p) \mapsto \varphi_t(p)$. It is only a matter of notation; the two describe the same thing.
 
-> [!theorem] Lemma §70.4: A Complete Field Is Related to Itself by Its Flow
+> [!theorem] Lemma §70.8: A Complete Field Is Related to Itself by Its Flow
 > Let $\mathbf{X} \in \mathfrak{X}(M)$ be complete, with flow $\varphi$. For every $t \in \mathbb{R}$, $\mathbf{X}$ is $\varphi_t$-related to itself: $d(\varphi_t)_p(\mathbf{X}_p) = \mathbf{X}_{\varphi_t(p)}$ for every $p \in M$.
 >
 > *Lee: Ch. 9, Flows*
 
-^lem-70-4
+^lem-70-8
 
 > [!proof]+ Proof
-> *(Lecture 26, a warm-up; the lemma is a kind of infinitesimal version of the group law.)* Fix $t$ and $p$. To compute $d(\varphi_t)_p(\mathbf{X}_p)$ one needs a curve whose velocity is $\mathbf{X}_p$: $\mathbf{X}_p = \frac{d}{ds}\big|_{s=0} \varphi_s(p)$. By Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]] (applied to the curve $s \mapsto \varphi_s(p)$ and the map $\varphi_t$) and the group law (Proposition [[§70 Complete Vector Fields#^prop-70-3|§70.3]]),
+> *(Lecture 26, a warm-up; the lemma is a kind of infinitesimal version of the group law.)* Fix $t$ and $p$. To compute $d(\varphi_t)_p(\mathbf{X}_p)$ one needs a curve whose velocity is $\mathbf{X}_p$: $\mathbf{X}_p = \frac{d}{ds}\big|_{s=0} \varphi_s(p)$. By Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]] (applied to the curve $s \mapsto \varphi_s(p)$ and the map $\varphi_t$) and the group law (Proposition [[§70 Complete Vector Fields#^prop-70-7|§70.7]]),
 >
 > $$
 > d(\varphi_t)_p(\mathbf{X}_p) = \frac{d}{ds}\Big|_{s=0} \varphi_t\big(\varphi_s(p)\big) = \frac{d}{ds}\Big|_{s=0} \varphi_{t+s}(p) = \mathbf{X}_{\varphi_t(p)} .
@@ -144,12 +222,12 @@ There is a clash of notations: for an action, $(t, p) \mapsto t \cdot p$; for a 
 >
 > The last step is the translation lemma: $s \mapsto \varphi_{t+s}(p) = \varphi^p(t + s)$ is an integral curve (Lemma [[§67 Integral Curves#^lem-67-4|§67.4]](1)), so its velocity at $s = 0$ is the value of the field at $\varphi_t(p)$. So $\varphi_t$ pushes $\mathbf{X}$ forward to $\mathbf{X}$ itself, at the image point.
 
-^pf-70-4
+^pf-70-8
 
-*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§70 Complete Vector Fields#^prop-70-3|§70.3]], [[§67 Integral Curves#^lem-67-4|§67.4]]
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§70 Complete Vector Fields#^prop-70-7|§70.7]], [[§67 Integral Curves#^lem-67-4|§67.4]]
 
 > [!definition] Definition §70.2: Infinitesimal Generator
-> If $\mathbf{X} \in \mathfrak{X}(M)$ is complete, it is the **infinitesimal generator** of the $\mathbb{R}$-action $\varphi$ of Proposition [[§70 Complete Vector Fields#^prop-70-3|§70.3]].
+> If $\mathbf{X} \in \mathfrak{X}(M)$ is complete, it is the **infinitesimal generator** of the $\mathbb{R}$-action $\varphi$ of Proposition [[§70 Complete Vector Fields#^prop-70-7|§70.7]].
 >
 > *Lee: Ch. 9, Flows*
 
@@ -157,7 +235,7 @@ There is a clash of notations: for an action, $(t, p) \mapsto t \cdot p$; for a 
 
 This is half of a theorem: a complete vector field gives rise to an $\mathbb{R}$-action on $M$. The converse is also true.
 
-> [!theorem] Theorem §70.5: Every Smooth $\mathbb{R}$-Action Has a Generator
+> [!theorem] Theorem §70.9: Every Smooth $\mathbb{R}$-Action Has a Generator
 > Let $\varphi : \mathbb{R} \times M \to M$ be a smooth action of $(\mathbb{R}, +)$ on $M$, written $\varphi_t(p) = \varphi^p(t) = \varphi(t, p)$. Define
 >
 > $$
@@ -168,7 +246,7 @@ This is half of a theorem: a complete vector field gives rise to an $\mathbb{R}$
 >
 > *Lee: Proposition 9.7*
 
-^thm-70-5
+^thm-70-9
 
 > [!proof]+ Proof
 > *(Lecture 25. The smoothness of $\mathbf{X}$ and the last step, skipped in lecture, are filled in.)*
@@ -191,7 +269,7 @@ This is half of a theorem: a complete vector field gives rise to an $\mathbb{R}$
 >
 > *$\mathbf{X}$ is complete and $\theta = \varphi$.* Completeness of $\mathbf{X}$ cannot be assumed; it has to come out of the proof. In lecture it was to follow from the group law, a step that was skipped. *(Filled in, by maximality instead.)* $\varphi^p$ is an integral curve starting at $p$ defined on all of $\mathbb{R}$, so by Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]] the maximal domain of $p$ contains $\mathbb{R}$, and $\theta^p = \varphi^p$. This holds for every $p$: $\mathbf{X}$ is complete and $\theta = \varphi$ on $\mathcal{D}_{\mathbf{X}} = \mathbb{R} \times M$.
 
-^pf-70-5
+^pf-70-9
 
 *Uses:* [[§31 Tangent Vectors as Velocities of Curves#^cor-31-2|§31.2]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
 
@@ -199,12 +277,12 @@ So complete vector fields on $M$ and smooth $\mathbb{R}$-actions on $M$ are the 
 
 *Naturality of integral curves.*
 
-> [!theorem] Proposition §70.6: Naturality of Integral Curves
+> [!theorem] Proposition §70.10: Naturality of Integral Curves
 > Let $F : M \to N$ be smooth, $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{Y} \in \mathfrak{X}(N)$. Then $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]) if and only if, for every integral curve $c : I \to M$ of $\mathbf{X}$, $F \circ c : I \to N$ is an integral curve of $\mathbf{Y}$.
 >
 > *Lee: Proposition 9.6*
 
-^prop-70-6
+^prop-70-10
 
 In words: composing integral curves of $\mathbf{X}$ with $F$ gives integral curves of $\mathbf{Y}$ exactly when the two fields are $F$-related.
 
@@ -219,21 +297,21 @@ In words: composing integral curves of $\mathbf{X}$ with $F$ gives integral curv
 >
 > $(\Leftarrow)$ Given $p \in M$, let $c$ be an integral curve of $\mathbf{X}$ starting at $p$ (Theorem [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]]). $F \circ c$ is an integral curve of $\mathbf{Y}$, so at $t = 0$, by the display, $\mathbf{Y}_{F(p)} = dF_p(\dot c(0)) = dF_p(\mathbf{X}_p)$.
 
-^pf-70-6
+^pf-70-10
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]]
 
 Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] is the case of a diffeomorphism $F$ and $\mathbf{Y} = F_\ast\mathbf{X}$, the unique field $F$-related to $\mathbf{X}$ (Proposition [[§59 Related Vector Fields#^prop-59-2|§59.2]]). A very important case of $F$-related fields is that of left-invariant fields on a Lie group.
 
-> [!theorem] Theorem §70.7: Left-Invariant Fields Are Complete
+> [!theorem] Theorem §70.11: Left-Invariant Fields Are Complete
 > Every left-invariant vector field $\mathbf{X}$ on a Lie group $G$ is complete. Moreover, $\varphi^g(t) = g\, \varphi^e(t)$ for all $g \in G$ and $t \in \mathbb{R}$.
 >
 > *Lee: Theorem 9.18*
 
-^thm-70-7
+^thm-70-11
 
 > [!proof]+ Proof
-> *(Lecture 25, by the uniform time lemma.)* Let $\varepsilon > 0$ be such that the integral curve of $\mathbf{X}$ starting at $e \in G$ is defined for $|t| < \varepsilon$ (any $\varepsilon$ with $(-\varepsilon, \varepsilon) \subseteq (\alpha(e), \beta(e))$). Pick $g \in G$. The left translation $L_g : G \to G$ is smooth and $\mathbf{X}$ is $L_g$-related to itself (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]]), so by Proposition [[§70 Complete Vector Fields#^prop-70-6|§70.6]]
+> *(Lecture 25, by the uniform time lemma.)* Let $\varepsilon > 0$ be such that the integral curve of $\mathbf{X}$ starting at $e \in G$ is defined for $|t| < \varepsilon$ (any $\varepsilon$ with $(-\varepsilon, \varepsilon) \subseteq (\alpha(e), \beta(e))$). Pick $g \in G$. The left translation $L_g : G \to G$ is smooth and $\mathbf{X}$ is $L_g$-related to itself (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]]), so by Proposition [[§70 Complete Vector Fields#^prop-70-10|§70.10]]
 >
 > $$
 > t \mapsto L_g\big(\varphi_t(e)\big) = g\, \varphi^e(t)
@@ -241,9 +319,9 @@ Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] is the case of a diffeomorphism 
 >
 > is an integral curve of $\mathbf{X}$, defined for the same values of $t$, $|t| < \varepsilon$. It starts at $L_g(e) = g$, with velocity $dL_g(\mathbf{X}_e) = \mathbf{X}_g$. *(On the board the starting point and the initial velocity were run together; the starting point is $g$, and $\mathbf{X}_g$ is the velocity there.)* So the integral curve starting at $g$ is defined at least for $|t| < \varepsilon$, with $\varepsilon$ independent of $g$, as $g$ was arbitrary; by Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]], $\mathbf{X}$ is complete. *(Filled in.)* For the last statement, now $\varphi^e$ is defined on $\mathbb{R}$, and the same argument shows that $t \mapsto g\varphi^e(t)$ is an integral curve on $\mathbb{R}$ starting at $g$, so it is $\varphi^g$ (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]).
 
-^pf-70-7
+^pf-70-11
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], [[§70 Complete Vector Fields#^prop-70-6|§70.6]], [[§70 Complete Vector Fields#^lem-70-1|§70.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-5|§60.5]], [[§70 Complete Vector Fields#^prop-70-10|§70.10]], [[§70 Complete Vector Fields#^lem-70-1|§70.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
 
 ![[m591-70-6.svg]]
 

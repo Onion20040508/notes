@@ -289,7 +289,7 @@ The reason for the characterization through operators is the following propositi
 > \mathbf{X}_p \in \iota_{\ast p}(T_pS) \qquad \text{for every } p \in S .
 > $$
 >
-> Identifying $T_pS$ with the subspace $\iota_{\ast p}(T_pS) \subseteq T_pM$ (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]), this reads $\mathbf{X}_p \in T_pS$ for every $p \in S$. Nothing is required at points of $M \setminus S$.
+> Identifying $T_pS$ with the subspace $\iota_{\ast p}(T_pS) \subseteq T_pM$ (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]), this reads $\mathbf{X}_p \in T_pS$ for every $p \in S$. Nothing is required at points of $M \setminus S$.
 >
 > *Lee: Ch. 8, Vector Fields on Submanifolds*
 
@@ -307,7 +307,7 @@ The reason for the characterization through operators is the following propositi
 ^lem-59-5
 
 > [!proof]+ Proof
-> *(Not from lecture; the step the proof of Proposition [[§59 Related Vector Fields#^prop-59-6|§59.6]] uses, written out.)* Let $p \in S \cap U$. By Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]], applied to the adapted chart with the coordinates along $S$ listed first, $\iota_{\ast p}(T_pS) = \operatorname{Span}\{ \partial/\partial x^1|_p, \ldots, \partial/\partial x^k|_p \}$. The $m$ vectors $\partial/\partial x^i|_p$, $\partial/\partial y^a|_p$ form a basis of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), and
+> *(Not from lecture; the step the proof of Proposition [[§59 Related Vector Fields#^prop-59-6|§59.6]] uses, written out.)* Let $p \in S \cap U$. By Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], applied to the adapted chart with the coordinates along $S$ listed first, $\iota_{\ast p}(T_pS) = \operatorname{Span}\{ \partial/\partial x^1|_p, \ldots, \partial/\partial x^k|_p \}$. The $m$ vectors $\partial/\partial x^i|_p$, $\partial/\partial y^a|_p$ form a basis of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), and
 >
 > $$
 > \mathbf{X}_p = \sum_i f^i(p)\, \frac{\partial}{\partial x^i}\Big|_p + \sum_a g^a(p)\, \frac{\partial}{\partial y^a}\Big|_p .
@@ -317,7 +317,7 @@ The reason for the characterization through operators is the following propositi
 
 ^pf-59-5
 
-*Uses:* [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]
+*Uses:* [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]
 
 > [!theorem] Proposition §59.6: Brackets of Fields Tangent to a Submanifold
 > Let $S \subseteq M$ be a regular submanifold and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ tangent to $S$ (Definition [[§59 Related Vector Fields#^def-59-3|§59.3]]). Then $[\mathbf{X}, \mathbf{Y}]$ is also tangent to $S$.
@@ -352,3 +352,31 @@ The reason for the characterization through operators is the following propositi
 **Comparison with Lee.** Lee proves this (Corollary 8.32) with related fields: on $S$, $\mathbf{X}$ and $\mathbf{Y}$ restrict to fields $\iota$-related to them, and the naturality of the bracket (Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]]) applied to the inclusion $\iota : S \to M$ does the rest. The coordinate proof above is the one given in class.
 
 **Transcription note (Lecture 21).** Page 55 of the handwritten notes records the $\partial_y$ component of $[f\partial_x, v\partial_y]$ as $\partial v/\partial x|_{y = 0}$; it is $f\, \partial v/\partial x|_{y = 0}$, which vanishes for the same reason.
+
+> [!theorem] Lemma §59.7: Vector Fields on a Submanifold Extend Locally
+> Let $S \subseteq M$ be a regular submanifold of dimension $k$, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(S)$. Let $(U, (x, y))$ be an adapted chart with $S \cap U = \{y = 0\}$ and image a product $V \times W$, $\vec 0 \in W$ (Lemma [[§37 Regular Submanifolds#^lem-37-6|§37.6]], where the codimension is $m - k$), and $\pi : U \to U \cap S$ the retraction of Lemma [[§37 Regular Submanifolds#^lem-37-7|§37.7]]. Write $\mathbf{X} = \sum_{i=1}^k X^i\, \partial/\partial x^i|^S$ on $U \cap S$, in the induced chart $x|_{U \cap S}$ of $S$. Then
+>
+> $$
+> \mathbf{Y} = \sum_{i=1}^k (X^i \circ \pi)\, \frac{\partial}{\partial x^i} \in \mathfrak{X}(U)
+> $$
+>
+> satisfies $\mathbf{Y}_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $p \in U \cap S$. In particular $\mathbf{Y}$ is tangent to $S$ (Definition [[§59 Related Vector Fields#^def-59-3|§59.3]]).
+
+^lem-59-7
+
+> [!proof]+ Proof
+> *(Assignment 7, Problem 1: the submitted solution, the step “the local extension”.)* *$\mathbf{Y}$ is smooth.* Since $\mathbf{X}$ is a smooth vector field on $S$, its coefficients $X^i$ in the chart $x|_{U \cap S}$ of $S$ are smooth functions on $U \cap S$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], on the manifold $S$). By Lemma [[§37 Regular Submanifolds#^lem-37-8|§37.8]], each $X^i \circ \pi$ is smooth on $U$; the coefficients of $\partial/\partial y^a$ are $0$, also smooth. By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], $\mathbf{Y} \in \mathfrak{X}(U)$.
+>
+> *$\mathbf{Y}$ extends $\mathbf{X}$.* Let $p \in U \cap S$. Since $\pi(p) = p$, the coefficients of $\mathbf{Y}_p$ are $X^i(p)$ for $i \le k$ and $0$ for the $\partial/\partial y^a$. By linearity of $\iota_{\ast p}$ and Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] (with $x^1, \ldots, x^k$ the coordinates of $S$), $\iota_{\ast p}(\partial/\partial x^i|^S_p) = \partial/\partial x^i|_p$, so
+>
+> $$
+> \iota_{\ast p}(\mathbf{X}_p) = \sum_{i=1}^k X^i(p)\, \iota_{\ast p}\Big(\frac{\partial}{\partial x^i}\Big|^S_p\Big) = \sum_{i=1}^k X^i(p)\, \frac{\partial}{\partial x^i}\Big|_p = \mathbf{Y}_p .
+> $$
+>
+> *Tangency* *(filled in)*: $\mathbf{Y}_p = \iota_{\ast p}(\mathbf{X}_p) \in \iota_{\ast p}(T_pS)$ for $p \in U \cap S$; equivalently, $\mathbf{Y}$ has no $\partial/\partial y$ component at all (Lemma [[§59 Related Vector Fields#^lem-59-5|§59.5]]).
+
+^pf-59-7
+
+*Uses:* [[§56 Vector Fields#^prop-56-1|§56.1]], [[§37 Regular Submanifolds#^lem-37-8|§37.8]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§59 Related Vector Fields#^lem-59-5|§59.5]]
+
+The local extension depends on the chart; a global one is glued from local ones with a partition of unity, in Theorem [[§65 Partitions of Unity#^thm-65-11|§65.11]].

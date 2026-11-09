@@ -10648,6 +10648,99 @@ X \arrow[r, dashed, "G"] \arrow[dr, "G"'] & S \arrow[d, hook, "\iota"] \\
 
 Left, (1): in an adapted chart and its induced chart the inclusion is $j(r) = (r, \vec 0)$. Right, (2): a smooth map into $M$ whose values lie in $S$ factors through $S$, and the factor --- dashed --- is smooth.
 
+\begin{lembox}[Adapted Charts with Product Image]\thmlabel{lem:adapted-product}
+Let $S \subseteq M$ be a regular submanifold of codimension $k$ and $p \in S$. There is an adapted chart $(U, \varphi = (x_a, x_b))$ at $p$ (Definition~\ref{def:adapted-chart}) whose image is a product
+\[
+\varphi(U) = V \times W, \qquad V \subseteq \mathbb{R}^{m-k} \text{ and } W \subseteq \mathbb{R}^k \text{ open cubes}, \quad \vec 0 \in W .
+\]
+For such a chart $\varphi(U \cap S) = V \times \{\vec 0\}$, and the induced chart $\varphi_S = x_a|_{U \cap S}$ of $S$ (Proposition~\ref{prop:submanifold-structure}) has image $V$ and inverse $\varphi_S^{-1}(a) = \varphi^{-1}(a, \vec 0)$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~1: the submitted solution, written in the notation of this section, where $k$ is the codimension. The second paragraph details its sentence ``since $\varphi_\alpha(S \cap U_\alpha) = V_\alpha \times \{0\}$, its image is $V_\alpha$''.)} Let $(U_0, \varphi_0)$ be an adapted chart at $p$. Then $\varphi_0(p) = (a_0, \vec 0)$ for some $a_0 \in \mathbb{R}^{m-k}$, and the open set $\varphi_0(U_0)$ contains a product $V \times W$ of open cubes $V \subseteq \mathbb{R}^{m-k}$ around $a_0$ and $W \subseteq \mathbb{R}^k$ around $\vec 0$. Put $U = \varphi_0^{-1}(V \times W)$, an open subset of $U_0$, and $\varphi = \varphi_0|_U$. By Lemma~\ref{lem:smooth-chart-modify}(1), $(U, \varphi)$ is a smooth chart; it is still adapted, since
+\[
+U \cap S = \{\, q \in U_0 : x_b(q) = \vec 0 \,\} \cap U = \{\, q \in U : x_b(q) = \vec 0 \,\},
+\]
+and its image is $V \times W$.
+
+\emph{The image of $U \cap S$.} Every point of $V \times W$ is $\varphi(q)$ for exactly one $q \in U$, and $q \in S$ if and only if its last $k$ coordinates vanish. So $\varphi(U \cap S) = (V \times W) \cap (\mathbb{R}^{m-k} \times \{\vec 0\}) = V \times \{\vec 0\}$, using $\vec 0 \in W$. Taking first components, $\varphi_S(U \cap S) = V$; and for $a \in V$ the point $\varphi^{-1}(a, \vec 0)$ lies in $U \cap S$ and has $x_a$-coordinates $a$, so $\varphi_S^{-1}(a) = \varphi^{-1}(a, \vec 0)$.
+\end{proof}
+
+\begin{lembox}[A Local Smooth Retraction onto a Submanifold]\thmlabel{lem:local-retraction}
+Let $(U, \varphi)$ be an adapted chart with $\varphi(U) = V \times W$ as in Lemma~\ref{lem:adapted-product}, and let $P : V \times W \to V \times W$, $P(a, b) = (a, \vec 0)$. Then
+\[
+\pi = \varphi^{-1} \circ P \circ \varphi : U \longrightarrow U
+\]
+is smooth, $\pi(U) = U \cap S$, and $\pi(q) = q$ for every $q \in U \cap S$. As a map $U \to S$ it is smooth: a smooth retraction of $U$ onto $U \cap S$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~1: the submitted solution. Smoothness, the equality $\pi(U) = U \cap S$ and smoothness into $S$ are filled in.)} $P$ is well defined since $\vec 0 \in W$, and smooth, as the restriction of a linear map; so $\pi$ is a composite of smooth maps, hence smooth. For $q \in U$, $\varphi(\pi(q)) = P(\varphi(q))$ has last $k$ coordinates $\vec 0$, so the coordinates $x_b$ of $\pi(q)$ vanish and $\pi(q) \in U \cap S$. For $p \in U \cap S$, $\varphi(p) = (a, \vec 0)$ for some $a \in V$ (Lemma~\ref{lem:adapted-product}), so $P$ fixes $\varphi(p)$ and $\pi(p) = p$. In particular $U \cap S = \pi(U \cap S) \subseteq \pi(U) \subseteq U \cap S$, so $\pi(U) = U \cap S$. Finally $\pi$ is smooth into $M$ with image in $S$, so it is smooth as a map into $S$ by Lemma~\ref{lem:maps-into-submanifold}(2).
+\end{proof}
+
+\begin{center}
+\begin{tikzpicture}[scale=1.1,
+  declare function={nx(\u)=-0.8*\u/sqrt(1+0.64*\u*\u); ny(\u)=1/sqrt(1+0.64*\u*\u);
+                    fx(\u,\v)=\u+\v*nx(\u); fy(\u,\v)=0.4*\u*\u+\v*ny(\u);}]
+  \begin{scope}[yshift=-0.9cm]
+    \draw[gray,rounded corners=12pt] (-2.6,-0.8) rectangle (2.6,2.55);
+    \node[gray] at (-2.3,-0.5) {$M$};
+    \fill[gray!12]
+      plot[domain=0.4:1.9,samples=30,variable=\t] ({fx(\t,-0.55)},{fy(\t,-0.55)}) --
+      plot[domain=-0.55:0.55,samples=10,variable=\t] ({fx(1.9,\t)},{fy(1.9,\t)}) --
+      plot[domain=1.9:0.4,samples=30,variable=\t] ({fx(\t,0.55)},{fy(\t,0.55)}) --
+      plot[domain=0.55:-0.55,samples=10,variable=\t] ({fx(0.4,\t)},{fy(0.4,\t)}) -- cycle;
+    \foreach \c in {0.5875,0.775,0.9625,1.15,1.3375,1.525,1.7125}
+      \draw[gray!45] plot[domain=-0.55:0.55,samples=10,variable=\t] ({fx(\c,\t)},{fy(\c,\t)});
+    \foreach \c in {-0.275,0.275}
+      \draw[gray!45] plot[domain=0.4:1.9,samples=30,variable=\t] ({fx(\t,\c)},{fy(\t,\c)});
+    \draw[thick]
+      plot[domain=0.4:1.9,samples=30,variable=\t] ({fx(\t,-0.55)},{fy(\t,-0.55)}) --
+      plot[domain=-0.55:0.55,samples=10,variable=\t] ({fx(1.9,\t)},{fy(1.9,\t)}) --
+      plot[domain=1.9:0.4,samples=30,variable=\t] ({fx(\t,0.55)},{fy(\t,0.55)}) --
+      plot[domain=0.55:-0.55,samples=10,variable=\t] ({fx(0.4,\t)},{fy(0.4,\t)}) -- cycle;
+    \node[below] at ({fx(0.9,-0.55)},{fy(0.9,-0.55)}) {$U$};
+    \draw[thick,blue!60] plot[domain=-2.3:2.3,samples=60,variable=\t] ({\t},{0.4*\t*\t});
+    \draw[very thick,blue] plot[domain=0.4:1.9,samples=30,variable=\t] ({\t},{0.4*\t*\t});
+    \node[blue!70,right] at (-2.15,2.25) {$S$};
+    \draw[red,thick,dashed,->] plot[domain=0.4:0.04,samples=10,variable=\t] ({fx(0.96,\t)},{fy(0.96,\t)});
+    \fill ({fx(0.96,0.4)},{fy(0.96,0.4)}) circle (1.6pt) node[above left] {$q$};
+    \fill[blue] (0.96,0.3686) circle (1.6pt) node[right,xshift=2pt,yshift=-4pt] {$\pi(q)$};
+  \end{scope}
+  \begin{scope}[xshift=7.7cm]
+    \draw[thick] (-2,-1) rectangle (2,1);
+    \foreach \c in {-1.5,-1,-0.5,0,0.5,1,1.5} \draw[gray!35] (\c,-1) -- (\c,1);
+    \foreach \c in {-0.5,0.5} \draw[gray!35] (-2,\c) -- (2,\c);
+    \draw[very thick,blue] (-2,0) -- (2,0);
+    \node[blue,right] at (2,0) {$V \times \{0\}$};
+    \draw[red,thick,dashed,->] (-0.5,0.73) -- (-0.5,0.05);
+    \node[red,left] at (-0.5,0.39) {$P$};
+    \fill (-0.5,0.73) circle (1.6pt) node[right] {$\varphi(q) = (a,b)$};
+    \fill[blue] (-0.5,0) circle (1.6pt) node[below right] {$(a,0)$};
+    \node[above] at (0,1) {$V \times W$};
+    \node[gray] at (0,-1.3) {\small $a \in V \subseteq \mathbb{R}^{m-k}$};
+    \node[gray,rotate=90] at (-2.3,0) {\small $b \in W \subseteq \mathbb{R}^{k}$};
+  \end{scope}
+  \draw[->,thick] (3.0,1.0) to[bend left=15] node[above] {$\varphi$} (5.0,1.0);
+  \draw[->,thick] (5.0,-1.0) to[bend left=15] node[below] {$\varphi^{-1}$} (3.0,-1.0);
+\end{tikzpicture}
+\end{center}
+The retraction of Lemma~\ref{lem:local-retraction} for a curve $S$ in a surface $M$ ($m = 2$, $k = 1$). In the chart, $P$ drops each point vertically onto $V \times \{0\}$; on $M$, $\pi$ slides $q$ along the coordinate line $x_a = \text{const}$ through it to the point $\pi(q)$ of $S$. \textit{(The figure of the submitted solution of Assignment~7, Problem~1.)}
+
+\begin{lembox}[Smooth Functions on a Submanifold Extend Locally]\thmlabel{lem:local-function-extension}
+Let $(U, \varphi)$ and $\pi$ be as in Lemma~\ref{lem:local-retraction}, and let $f : U \cap S \to \mathbb{R}$ be smooth on the open subset $U \cap S$ of $S$. Then $f \circ \pi$ is smooth on $U$ and equals $f$ on $U \cap S$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~1: the submitted solution, where it is done for the components of a vector field.)} For $(a, b) \in V \times W$, $\pi(\varphi^{-1}(a, b)) = \varphi^{-1}(P(a, b)) = \varphi^{-1}(a, \vec 0) = \varphi_S^{-1}(a)$ by Lemma~\ref{lem:adapted-product}, so
+\[
+(f \circ \pi) \circ \varphi^{-1}(a, b) = f\big(\varphi^{-1}(a, \vec 0)\big) = \big(f \circ \varphi_S^{-1}\big)(a) .
+\]
+This is the projection $(a, b) \mapsto a$ followed by $f \circ \varphi_S^{-1}$, which is smooth on $V$ because $f$ is smooth and $(U \cap S, \varphi_S)$ is a chart of $S$. So the coordinate representation of $f \circ \pi$ in the chart $(U, \varphi)$ is smooth, and $f \circ \pi$ is smooth on $U$. On $U \cap S$, $\pi$ is the identity (Lemma~\ref{lem:local-retraction}), so $f \circ \pi = f$ there.
+
+\textit{(Second proof, filled in.)} $f \circ \pi$ is the composite of the smooth map $\pi : U \to U \cap S$ of Lemma~\ref{lem:local-retraction} with the smooth function $f$.
+\end{proof}
+
 \begin{propbox}[Tangent Spaces of a Regular Submanifold]\thmlabel{prop:submanifold-tangent}
 Let $S \subseteq M$ be a regular submanifold of codimension $k$ and $p \in S$. Then $\iota_{*p} : T_pS \to T_pM$ is injective. In an adapted chart $(x^1, \ldots, x^m)$ at $p$, writing $\partial/\partial x^i|^S_p$ for the coordinate derivations of the induced chart $(x^1, \ldots, x^{m-k})$ of $S$,
 \[
@@ -18678,6 +18771,26 @@ A field tangent to $S$, near $S$. Left: $S$ in $M$ and the domain $U$ of a slice
 
 \textbf{Transcription note (Lecture 21).} Page~55 of the handwritten notes records the $\partial_y$ component of $[f\partial_x, v\partial_y]$ as $\partial v/\partial x|_{y = 0}$; it is $f\, \partial v/\partial x|_{y = 0}$, which vanishes for the same reason.
 
+\begin{lembox}[Vector Fields on a Submanifold Extend Locally]\thmlabel{lem:vf-local-extension}
+Let $S \subseteq M$ be a regular submanifold of dimension $k$, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(S)$. Let $(U, (x, y))$ be an adapted chart with $S \cap U = \{y = 0\}$ and image a product $V \times W$, $\vec 0 \in W$ (Lemma~\ref{lem:adapted-product}, where the codimension is $m - k$), and $\pi : U \to U \cap S$ the retraction of Lemma~\ref{lem:local-retraction}. Write $\mathbf{X} = \sum_{i=1}^k X^i\, \partial/\partial x^i|^S$ on $U \cap S$, in the induced chart $x|_{U \cap S}$ of $S$. Then
+\[
+\mathbf{Y} = \sum_{i=1}^k (X^i \circ \pi)\, \frac{\partial}{\partial x^i} \in \mathfrak{X}(U)
+\]
+satisfies $\mathbf{Y}_p = \iota_{*p}(\mathbf{X}_p)$ for every $p \in U \cap S$. In particular $\mathbf{Y}$ is tangent to $S$ (Definition~\ref{def:field-tangent}).
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~1: the submitted solution, the step ``the local extension''.)} \emph{$\mathbf{Y}$ is smooth.} Since $\mathbf{X}$ is a smooth vector field on $S$, its coefficients $X^i$ in the chart $x|_{U \cap S}$ of $S$ are smooth functions on $U \cap S$ (Proposition~\ref{prop:vf-coords}, on the manifold $S$). By Lemma~\ref{lem:local-function-extension}, each $X^i \circ \pi$ is smooth on $U$; the coefficients of $\partial/\partial y^a$ are $0$, also smooth. By Proposition~\ref{prop:vf-coords}, $\mathbf{Y} \in \mathfrak{X}(U)$.
+
+\emph{$\mathbf{Y}$ extends $\mathbf{X}$.} Let $p \in U \cap S$. Since $\pi(p) = p$, the coefficients of $\mathbf{Y}_p$ are $X^i(p)$ for $i \le k$ and $0$ for the $\partial/\partial y^a$. By linearity of $\iota_{*p}$ and Proposition~\ref{prop:submanifold-tangent} (with $x^1, \ldots, x^k$ the coordinates of $S$), $\iota_{*p}(\partial/\partial x^i|^S_p) = \partial/\partial x^i|_p$, so
+\[
+\iota_{*p}(\mathbf{X}_p) = \sum_{i=1}^k X^i(p)\, \iota_{*p}\Big(\frac{\partial}{\partial x^i}\Big|^S_p\Big) = \sum_{i=1}^k X^i(p)\, \frac{\partial}{\partial x^i}\Big|_p = \mathbf{Y}_p .
+\]
+\emph{Tangency} \textit{(filled in)}: $\mathbf{Y}_p = \iota_{*p}(\mathbf{X}_p) \in \iota_{*p}(T_pS)$ for $p \in U \cap S$; equivalently, $\mathbf{Y}$ has no $\partial/\partial y$ component at all (Lemma~\ref{lem:tangent-adapted}).
+\end{proof}
+
+The local extension depends on the chart; a global one is glued from local ones with a partition of unity, in Theorem~\ref{thm:vf-extension}.
+
 % ============================================================================
 % SECTION: LIE GROUPS AND LEFT-INVARIANT VECTOR FIELDS
 % ============================================================================
@@ -20668,6 +20781,76 @@ Let $A \subseteq M$ be closed and $U \subseteq M$ open with $A \subseteq U$. The
 
 \begin{proof}
 \textit{(Lee's proof. Not part of the assigned reading, which stops before the applications of partitions of unity; Lee's proof of the Whitney embedding theorem, Theorem~\ref{thm:whitney}, uses it.)} Put $U_0 = U$ and $U_1 = M \setminus A$. Both are open ($A$ is closed), and they cover $M$, since a point not in $U$ is not in $A \subseteq U$. By Theorem~\ref{thm:partition-of-unity} there is a partition of unity $\{\chi_0, \chi_1\}$ subordinate to $\{U_0, U_1\}$. Let $\psi = \chi_0$. It is smooth, $0 \le \psi \le 1$, and $\operatorname{supp}\psi \subseteq U_0 = U$. For $p \in A$: $\operatorname{supp}\chi_1 \subseteq M \setminus A$, so $\chi_1(p) = 0$, and $\psi(p) = \chi_0(p) + \chi_1(p) = 1$.
+\end{proof}
+
+\subsection{Application: Extending Functions and Vector Fields from a Submanifold}\label{sub:extension-submanifold}
+
+\textit{(Assignment~7, Problem~1, and what its proof gives.)} The standard use of a partition of unity: build an object locally, in charts, and glue the local pieces. Here the local pieces come from adapted charts (Lemmas~\ref{lem:local-function-extension} and~\ref{lem:vf-local-extension}), and the gluing is the next lemma.
+
+\begin{lembox}[Gluing Vector Fields with a Partition of Unity]\thmlabel{lem:vf-gluing}
+Let $\{U_\alpha\}_{\alpha \in A}$ be an open cover of $M$, $\mathbf{Y}_\alpha \in \mathfrak{X}(U_\alpha)$ for each $\alpha \in A$, and $\{\chi_\alpha\}_{\alpha \in A}$ a partition of unity subordinate to the cover (Definition~\ref{def:partition-of-unity}). Then:
+\begin{enumerate}
+\item each field $\chi_\alpha \mathbf{Y}_\alpha$, extended by $0$ outside $U_\alpha$, is a smooth vector field on $M$;
+\item $\widetilde{\mathbf{X}} = \sum_{\alpha \in A} \chi_\alpha \mathbf{Y}_\alpha$ is a well-defined smooth vector field on $M$;
+\item if $p \in M$ and $v \in T_pM$ satisfy $(\mathbf{Y}_\alpha)_p = v$ for every $\alpha$ with $p \in U_\alpha$, then $\widetilde{\mathbf{X}}_p = v$.
+\end{enumerate}
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~1: the submitted solution, the steps ``Gluing'' and ``$\widetilde X$ extends $X$''.)} \emph{(1)} The field $\chi_\alpha \mathbf{Y}_\alpha$, $(\chi_\alpha \mathbf{Y}_\alpha)_q = \chi_\alpha(q)(\mathbf{Y}_\alpha)_q$ for $q \in U_\alpha$ and $0$ outside $U_\alpha$, is smooth on the open set $U_\alpha$, as the product of a smooth function and a smooth vector field; it vanishes on the open set $M \setminus \operatorname{supp}\chi_\alpha$; and these two open sets cover $M$, since $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$. Smoothness is local, so $\chi_\alpha \mathbf{Y}_\alpha \in \mathfrak{X}(M)$.
+
+\emph{(2)} Let $q \in M$. Since $\{\operatorname{supp}\chi_\alpha\}_{\alpha \in A}$ is locally finite, $q$ has an open neighbourhood $N$ for which $F = \{\alpha \in A : N \cap \operatorname{supp}\chi_\alpha \neq \varnothing\}$ is finite. For $\alpha \notin F$, $\chi_\alpha \mathbf{Y}_\alpha \equiv 0$ on $N$, so on $N$
+\[
+\widetilde{\mathbf{X}} = \sum_{\alpha \in F} \chi_\alpha \mathbf{Y}_\alpha ,
+\]
+a finite sum of smooth vector fields. Hence $\widetilde{\mathbf{X}}$ is a well-defined vector field, smooth on $N$; as $q$ was arbitrary, $\widetilde{\mathbf{X}} \in \mathfrak{X}(M)$.
+
+\emph{(3)} For $\alpha$ with $p \notin U_\alpha$, $\chi_\alpha(p) = 0$, since $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$. Let $A_p = \{\alpha \in A : p \in U_\alpha\}$. Then $\sum_{\alpha \in A_p} \chi_\alpha(p) = \sum_{\alpha \in A} \chi_\alpha(p) = 1$, and
+\[
+\widetilde{\mathbf{X}}_p = \sum_{\alpha \in A_p} \chi_\alpha(p)\, (\mathbf{Y}_\alpha)_p = \Big(\sum_{\alpha \in A_p} \chi_\alpha(p)\Big)\, v = v . \qedhere
+\]
+\end{proof}
+
+\begin{propbox}[Extension of Smooth Functions from a Closed Submanifold]\thmlabel{prop:function-extension}
+Let $S \subseteq M$ be a regular submanifold that is closed in $M$, and $f \in C^\infty(S)$. Then there is $\tilde f \in C^\infty(M)$ with $\tilde f|_S = f$.
+\leeref{Lemma 5.34}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from the assignment; filled in: the proof of Theorem~\ref{thm:vf-extension} below, with functions in place of vector fields.)} By Lemma~\ref{lem:adapted-product}, $S$ is covered by the domains of adapted charts $(U_\alpha, \varphi_\alpha)$, $\alpha \in A'$, with product images; let $\pi_\alpha : U_\alpha \to U_\alpha \cap S$ be their retractions (Lemma~\ref{lem:local-retraction}). Since $S$ is closed, $U_0 = M \setminus S$ is open, and $\{U_\alpha\}_{\alpha \in A}$, $A = A' \sqcup \{0\}$, is an open cover of $M$. Take a subordinate partition of unity $\{\chi_\alpha\}_{\alpha \in A}$ (Theorem~\ref{thm:partition-of-unity}). Put $f_\alpha = f|_{U_\alpha \cap S} \circ \pi_\alpha \in C^\infty(U_\alpha)$ for $\alpha \in A'$, equal to $f$ on $U_\alpha \cap S$ by Lemma~\ref{lem:local-function-extension}, and $f_0 = 0$. As in Lemma~\ref{lem:vf-gluing}(1), each $\chi_\alpha f_\alpha$, extended by $0$, is smooth on $M$, with support in $\operatorname{supp}\chi_\alpha$; these supports are locally finite, so $\tilde f = \sum_{\alpha \in A} \chi_\alpha f_\alpha$ is smooth (Lemma~\ref{lem:locally-finite-sum-smooth}). For $p \in S$: $\chi_0(p) = 0$, since $\operatorname{supp}\chi_0 \subseteq M \setminus S$; $\chi_\alpha(p) = 0$ if $p \notin U_\alpha$; and $f_\alpha(p) = f(p)$ if $p \in U_\alpha$, $\alpha \in A'$. So $\tilde f(p) = \big(\sum_{\alpha} \chi_\alpha(p)\big) f(p) = f(p)$.
+\end{proof}
+
+\begin{thmbox}[Extension of Vector Fields from a Submanifold]\thmlabel{thm:vf-extension}
+Let $S \subseteq M$ be a regular submanifold, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(S)$.
+\begin{enumerate}
+\item There are an open set $W \supseteq S$ of $M$ and $\widetilde{\mathbf{X}} \in \mathfrak{X}(W)$ with $\widetilde{\mathbf{X}}_p = \iota_{*p}(\mathbf{X}_p)$ for every $p \in S$.
+\item If $S$ is closed in $M$, one can take $W = M$: there is $\widetilde{\mathbf{X}} \in \mathfrak{X}(M)$ with $\widetilde{\mathbf{X}}_p = \iota_{*p}(\mathbf{X}_p)$ for every $p \in S$, that is, $\mathbf{X}$ is $\iota$-related to $\widetilde{\mathbf{X}}$ (Definition~\ref{def:F-related}).
+\end{enumerate}
+\leeref{Problem 8-15}
+\end{thmbox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~1: the submitted solution, which proves (2); its steps are stated above as Lemmas~\ref{lem:adapted-product}, \ref{lem:local-retraction}, \ref{lem:local-function-extension}, \ref{lem:vf-local-extension} and~\ref{lem:vf-gluing}. The problem as posted did not assume $S$ closed; the submitted solution adds this hypothesis, which Example~\ref{ex:vf-no-extension} shows is needed for (2). Part (1) is filled in.)} For $p \in S$, $\widetilde{\mathbf{X}}_p \in T_pM$ while $\mathbf{X}_p \in T_pS$, so ``$\widetilde{\mathbf{X}}$ extends $\mathbf{X}$'' means $\widetilde{\mathbf{X}}_p = \iota_{*p}(\mathbf{X}_p)$; $\iota_{*p}$ is kept explicit throughout.
+
+\emph{(2) The open cover.} By Lemma~\ref{lem:adapted-product}, every point of $S$ lies in the domain of an adapted chart with product image; let $\{(U_\alpha, \varphi_\alpha)\}_{\alpha \in A'}$ be a family of such charts whose domains cover $S$. Since $S$ is closed in $M$, $U_0 = M \setminus S$ is open in $M$. With $A = A' \sqcup \{0\}$, $\{U_\alpha\}_{\alpha \in A}$ is an open cover of $M$: every $p \in S$ lies in some $U_\alpha$ with $\alpha \in A'$, and every $p \notin S$ lies in $U_0$.
+
+\emph{The partition of unity.} By Theorem~\ref{thm:partition-of-unity} there is a partition of unity $\{\chi_\alpha\}_{\alpha \in A}$ subordinate to $\{U_\alpha\}_{\alpha \in A}$.
+
+\emph{The local extensions.} For $\alpha \in A'$, Lemma~\ref{lem:vf-local-extension} gives $\mathbf{Y}_\alpha \in \mathfrak{X}(U_\alpha)$ with $(\mathbf{Y}_\alpha)_p = \iota_{*p}(\mathbf{X}_p)$ for $p \in U_\alpha \cap S$; let $\mathbf{Y}_0 = 0 \in \mathfrak{X}(U_0)$.
+
+\emph{Gluing.} By Lemma~\ref{lem:vf-gluing}(1) and~(2), $\widetilde{\mathbf{X}} = \sum_{\alpha \in A} \chi_\alpha \mathbf{Y}_\alpha \in \mathfrak{X}(M)$. Let $p \in S$. Then $p \notin U_0$, and $(\mathbf{Y}_\alpha)_p = \iota_{*p}(\mathbf{X}_p)$ for every $\alpha \in A'$ with $p \in U_\alpha$; by Lemma~\ref{lem:vf-gluing}(3) with $v = \iota_{*p}(\mathbf{X}_p)$, $\widetilde{\mathbf{X}}_p = \iota_{*p}(\mathbf{X}_p)$.
+
+\emph{(1)} \textit{(Filled in.)} Without closedness, let $W = \bigcup_{\alpha \in A'} U_\alpha$, an open set containing $S$ and an open submanifold of $M$ (Definition~\ref{def:open-submanifold-smooth}). The $U_\alpha$, $\alpha \in A'$, form an open cover of $W$; Theorem~\ref{thm:partition-of-unity} on the manifold $W$ gives a subordinate partition of unity, and the gluing step, without the index $0$, gives $\widetilde{\mathbf{X}} \in \mathfrak{X}(W)$ with $\widetilde{\mathbf{X}}_p = \iota_{*p}(\mathbf{X}_p)$ for $p \in S$.
+\end{proof}
+
+\begin{exbox}[A Vector Field on a Non-Closed Submanifold That Does Not Extend]\exlabel{ex:vf-no-extension}
+\textit{(Not from the assignment.)} In $M = \mathbb{R}^2$ let $S = \{(x, 0) : x > 0\}$, and on $S$ let $\mathbf{X} = \frac{1}{x}\, \frac{\partial}{\partial x}\big|^S$. There is no $\widetilde{\mathbf{X}} \in \mathfrak{X}(\mathbb{R}^2)$ with $\widetilde{\mathbf{X}}_p = \iota_{*p}(\mathbf{X}_p)$ for every $p \in S$. So the hypothesis ``$S$ closed'' in Theorem~\ref{thm:vf-extension}(2) cannot be dropped; by part~(1), $\mathbf{X}$ does extend to the open set $W = \{(x, y) : x > 0\}$, for instance by $\frac{1}{x}\, \partial/\partial x$.
+\end{exbox}
+
+\begin{proof}
+\textit{(Filled in.)} \emph{The setting.} On $U = \{(x, y) : x > 0\}$ the identity chart $(x, y)$ of $\mathbb{R}^2$ is adapted to $S$, with $S \cap U = S = \{y = 0\}$; so $S$ is a regular submanifold of dimension $1$, with chart $x|_S$, and $\mathbf{X}$ is smooth on $S$, its coefficient $1/x$ being smooth for $x > 0$. $S$ is not closed: $(0, 0) \in \overline{S} \setminus S$.
+
+\emph{No extension.} Suppose $\widetilde{\mathbf{X}} \in \mathfrak{X}(\mathbb{R}^2)$ extends $\mathbf{X}$, and write $\widetilde{\mathbf{X}} = a\, \partial/\partial x + b\, \partial/\partial y$ with $a, b$ smooth, hence continuous, on $\mathbb{R}^2$ (Proposition~\ref{prop:vf-coords}). For $p = (x, 0) \in S$, $\iota_{*p}(\partial/\partial x|^S_p) = \partial/\partial x|_p$ (Proposition~\ref{prop:submanifold-tangent}), so $\widetilde{\mathbf{X}}_p = \frac{1}{x}\, \partial/\partial x|_p$ and $a(x, 0) = 1/x$. As $x \to 0^+$, $a(x, 0) \to +\infty$; but $a$ is continuous at $(0, 0)$, so $a(x, 0) \to a(0, 0)$, a real number. This contradiction shows that no extension exists.
 \end{proof}
 
 % ============================================================================
@@ -31190,6 +31373,59 @@ Let $\varepsilon = \min\{ \varepsilon_{p_j} : j = 1, \ldots, k \} > 0$. \emph{Cl
 
 \emph{Complete fields and actions of $\mathbb{R}$.} Suppose $\mathbf{X}$ is complete. Then $\mathcal{D} = \mathbb{R} \times M$, so for every $t \in \mathbb{R}$ there is a map $\varphi_t : M \to M$, and the group law holds for all $s, t$.
 
+\textit{(Assignment~7, Problem~4.)} The argument of Theorem~\ref{thm:compact-complete} works on any compact subset, and it shows that an integral curve which stops in finite time must leave every compact set.
+
+\begin{lembox}[Uniform Time on a Compact Set]\thmlabel{lem:uniform-time-compact}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ and $K \subseteq M$ compact. There is $\varepsilon > 0$ with $(-\varepsilon, \varepsilon) \subseteq (\alpha(q), \beta(q))$ for every $q \in K$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~4: the submitted solution, the step ``a uniform time of existence on $K$''. For $K = M$ compact it is the proof of Theorem~\ref{thm:compact-complete}.)} By Lemma~\ref{lem:flow-box}, for each $q \in K$ there are $\varepsilon_q > 0$ and an open neighbourhood $U_q$ of $q$ in $M$ with $(-\varepsilon_q, \varepsilon_q) \times U_q \subseteq \mathcal{D}$ (Definition~\ref{def:flow-box}); that is, $\alpha(q') \le -\varepsilon_q$ and $\beta(q') \ge \varepsilon_q$ for all $q' \in U_q$. Since $q \in U_q$ for each $q \in K$, $\{U_q\}_{q \in K}$ is a cover of $K$ by open subsets of $M$. Since $K$ is compact, there are $q_1, \ldots, q_m \in K$ with
+\[
+K \subseteq U_{q_1} \cup \cdots \cup U_{q_m} .
+\]
+Let $\varepsilon = \min\{\varepsilon_{q_1}, \ldots, \varepsilon_{q_m}\}$, positive as a minimum of finitely many positive numbers. For $q' \in K$ choose $j$ with $q' \in U_{q_j}$; then $\alpha(q') \le -\varepsilon_{q_j} \le -\varepsilon$ and $\beta(q') \ge \varepsilon_{q_j} \ge \varepsilon$.
+\end{proof}
+
+\begin{thmbox}[The Escape Lemma]\thmlabel{thm:escape-lemma}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$ with $\beta(p) < +\infty$. Then the image $\varphi^p\big((\alpha(p), \beta(p))\big)$ of the maximal integral curve is not contained in any compact subset of $M$. The same holds if $\alpha(p) > -\infty$.
+\leeref{Lemma 9.19}
+\end{thmbox}
+
+In words: an incomplete integral curve has to escape every compact set --- to infinity, as in Example~\ref{ex:finite-escape}, or off an edge, as in Example~\ref{ex:half-line}.
+
+\begin{proof}
+\textit{(Assignment~7, Problem~4: the submitted solution. The case $\alpha(p) > -\infty$ is filled in.)} Suppose, for contradiction, that $\varphi^p\big((\alpha(p), \beta(p))\big) \subseteq K$ for some compact $K \subseteq M$, and let $\varepsilon > 0$ be as in Lemma~\ref{lem:uniform-time-compact}: $\beta(q') \ge \varepsilon$ for all $q' \in K$. Since $\beta(p) < +\infty$, we may choose $s$ with
+\[
+\max\{0, \beta(p) - \varepsilon\} < s < \beta(p) .
+\]
+Then $\alpha(p) < 0 < s < \beta(p)$, so $q = \varphi^p(s)$ is defined. By assumption $q \in K$, so $\beta(q) \ge \varepsilon$. On the other hand, by the group law (Proposition~\ref{prop:group-law}(1)), $(\alpha(q), \beta(q)) = (\alpha(p) - s, \beta(p) - s)$, so
+\[
+\beta(q) = \beta(p) - s < \varepsilon ,
+\]
+a contradiction.
+
+\emph{The case $\alpha(p) > -\infty$} \textit{(filled in)}: the maximal integral curve of $-\mathbf{X}$ starting at $p$ is $t \mapsto \varphi^p(-t)$ on $(-\beta(p), -\alpha(p))$ (Lemma~\ref{lem:translation-rescaling}(2), as in the proof of Lemma~\ref{lem:uniform-time}); it has the same image and a finite right end $-\alpha(p)$, so the first case applies to it.
+\end{proof}
+
+\begin{corbox}[The Tail Escapes]\thmlabel{cor:escape-tail}
+If $\beta(p) < +\infty$, then for every $t_0 \in (\alpha(p), \beta(p))$ the set $\varphi^p\big([t_0, \beta(p))\big)$ is not contained in any compact subset of $M$. Equivalently: if $\varphi^p\big([t_0, \beta(p))\big)$ lies in a compact set for some $t_0$, then $\beta(p) = +\infty$.
+\leeref{Lemma 9.19}
+\end{corbox}
+
+\begin{proof}
+\textit{(Filled in. The proof of Theorem~\ref{thm:escape-lemma} uses the hypothesis only at the point $\varphi^p(s)$, for $s$ close to $\beta(p)$; so it proves this stronger statement, which is Lee's form.)} Suppose $\varphi^p\big([t_0, \beta(p))\big) \subseteq K$, $K$ compact, and take $\varepsilon$ for $K$ as in Lemma~\ref{lem:uniform-time-compact}. Choose $s$ with $\max\{t_0, 0, \beta(p) - \varepsilon\} < s < \beta(p)$. Then $s \in [t_0, \beta(p))$, so $q = \varphi^p(s) \in K$ and $\beta(q) \ge \varepsilon$, while $\beta(q) = \beta(p) - s < \varepsilon$ by Proposition~\ref{prop:group-law}(1): a contradiction.
+\end{proof}
+
+\begin{corbox}[Compactly Supported Vector Fields Are Complete]\thmlabel{cor:compact-support-complete}
+Let $\mathbf{X} \in \mathfrak{X}(M)$ have compact support $\operatorname{supp}\mathbf{X} = \overline{\{q \in M : \mathbf{X}_q \neq 0\}}$. Then $\mathbf{X}$ is complete.
+\leeref{Theorem 9.16}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from the assignment; filled in, from the escape lemma.)} Let $p \in M$ and suppose $\beta(p) < +\infty$. By Theorem~\ref{thm:escape-lemma}, the image of $\varphi^p$ is not contained in the compact set $K = \operatorname{supp}\mathbf{X}$: there is $t_0 \in (\alpha(p), \beta(p))$ with $q = \varphi^p(t_0) \notin K$, so $\mathbf{X}_q = 0$. Then the constant curve at $q$ is an integral curve defined on $\mathbb{R}$ (Example~\ref{ex:constant-integral-curve-at-zero}), so $\beta(q) = +\infty$ (Proposition~\ref{prop:maximal-curve}). But $\beta(q) = \beta(p) - t_0 < +\infty$ by Proposition~\ref{prop:group-law}(1), a contradiction. So $\beta(p) = +\infty$; and $\alpha(p) = -\infty$ by the same argument applied to $-\mathbf{X}$, which has the same support, as in the proof of Theorem~\ref{thm:escape-lemma}. Theorem~\ref{thm:compact-complete} is the case of a compact $M$, where every support is compact.
+\end{proof}
+
 \begin{propbox}[The Flow of a Complete Field]\thmlabel{prop:complete-flow}
 Let $\mathbf{X} \in \mathfrak{X}(M)$ be complete, with flow $\varphi : \mathbb{R} \times M \to M$. Then
 \[
@@ -31494,6 +31730,97 @@ The reason: many Lie groups are non-abelian. The plus on the left is the additio
 \textit{(Not from lecture; figure added.)} The two matrices of Example~\ref{ex:exp-not-additive-nilpotent-pair} acting on the unit square: $\exp(A)\exp(B)$ (blue) and $\exp(A + B)$ (red). Both have determinant $1$, so the parallelograms have the same area, but they are different maps.
 %% <<< END ADDED
 
+\textit{(Assignment~7, Problem~5.)} The exponential map of a subgroup is the restriction of that of the larger group, because the integral curves are; for a linear group this identifies $\exp$ with the matrix exponential series, completing the proof of Theorem~\ref{thm:exp-matrix} below. The series facts are those of its proof: $e^{tA} = \sum_{\ell \ge 0} \frac{t^\ell}{\ell!} A^\ell$ converges and may be differentiated term by term, $\frac{d}{dt} e^{tA} = A\, e^{tA} = e^{tA} A$.
+
+\begin{lembox}[The Matrix Exponential Is Invertible]\thmlabel{lem:matrix-exp-invertible}
+For $A \in \Mat(n, \mathbb{R})$ and $t \in \mathbb{R}$, $e^{tA}\, e^{-tA} = I$. So $e^{tA} \in \GL(n, \mathbb{R})$, with inverse $e^{-tA}$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from lecture; filled in. The outline of the proof of Theorem~\ref{thm:exp-matrix} and the submitted solution of Assignment~7, Problem~5(b), use that $e^{tA}$ is invertible without proof.)} Each entry of a product of matrix-valued curves is a sum of products of entries, so the product rule holds: $\frac{d}{dt}(B(t)C(t)) = B'(t)C(t) + B(t)C'(t)$. With $\frac{d}{dt} e^{tA} = A e^{tA} = e^{tA} A$ and, by the chain rule, $\frac{d}{dt} e^{-tA} = -A\, e^{-tA}$,
+\[
+\frac{d}{dt}\big(e^{tA} e^{-tA}\big) = \big(e^{tA} A\big) e^{-tA} + e^{tA}\big(-A\, e^{-tA}\big) = 0 .
+\]
+So every entry of $e^{tA} e^{-tA}$ is a function on $\mathbb{R}$ with zero derivative, hence constant, and at $t = 0$ the product is $I \cdot I = I$. Thus $e^{tA} e^{-tA} = I$ for all $t$; then $\det(e^{tA}) \det(e^{-tA}) = 1$, so $e^{tA}$ is invertible, and its inverse is $e^{-tA}$, since a one-sided inverse of a square matrix is the inverse.
+\end{proof}
+
+\begin{lembox}[Integral Curves of a Left-Invariant Field on a Lie Subgroup]\thmlabel{lem:subgroup-integral-curves}
+Let $H$ be a Lie group and $G \subseteq H$ a subgroup that is a Lie group with the inclusion $\iota : G \hookrightarrow H$ smooth and $d\iota_e$ injective --- a Lie subgroup, as in Theorem~\ref{thm:linear-group-bracket} --- so that $\mathfrak{g} = T_eG$ is identified with $d\iota_e(\mathfrak{g}) \subseteq \mathfrak{h} = T_eH$. For $A \in \mathfrak{g}$ let $\mathbf{A}^G \in \mathfrak{X}(G)$ and $\mathbf{A}^H \in \mathfrak{X}(H)$ be the left-invariant fields with $\mathbf{A}^G_e = A$ and $\mathbf{A}^H_e = d\iota_e(A)$. Then $\mathbf{A}^G$ is $\iota$-related to $\mathbf{A}^H$, and for every integral curve $\gamma$ of $\mathbf{A}^G$, $\iota \circ \gamma$ is an integral curve of $\mathbf{A}^H$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~5(a): the submitted solution. The relatedness is also Lemma~\ref{lem:morphism-related} for the morphism $\iota$, and the second statement Proposition~\ref{prop:naturality-integral-curves}; the solution proves both directly.)} $\iota$ is a Lie group morphism (Definition~\ref{def:lie-group-morphism}), and by Definition~\ref{def:left-invariant-extension}
+\[
+\mathbf{A}^G_g = d(L_g)_e(A) \quad (g \in G), \qquad \mathbf{A}^H_h = d(L_h)_e\big(d\iota_e(A)\big) \quad (h \in H),
+\]
+where $L_g$ and $L_h$ are left translations in $G$ and in $H$.
+
+\emph{$\mathbf{A}^G$ is $\iota$-related to $\mathbf{A}^H$.} Let $g \in G$. For $k \in G$, since $\iota$ is a homomorphism, $\iota \circ L_g(k) = \iota(gk) = \iota(g)\iota(k) = L_{\iota(g)} \circ \iota(k)$; so $\iota \circ L_g = L_{\iota(g)} \circ \iota$ as maps $G \to H$. Differentiating at $e$ by the chain rule, with $L_g(e) = g$ and $\iota(e) = e$,
+\[
+d\iota_g \circ d(L_g)_e = d(L_{\iota(g)})_e \circ d\iota_e : T_eG \to T_{\iota(g)}H .
+\]
+Applying both sides to $A$,
+\[
+d\iota_g\big(\mathbf{A}^G_g\big) = d\iota_g\big(d(L_g)_e(A)\big) = d(L_{\iota(g)})_e\big(d\iota_e(A)\big) = \mathbf{A}^H_{\iota(g)} \qquad \text{for all } g \in G .
+\]
+
+\emph{Integral curves.} Let $\gamma : J \to G$ be an integral curve of $\mathbf{A}^G$, so $\gamma'(t) = \mathbf{A}^G_{\gamma(t)}$ for $t \in J$. The curve $\iota \circ \gamma : J \to H$ is smooth, and by the chain rule and the relatedness,
+\[
+(\iota \circ \gamma)'(t) = d\iota_{\gamma(t)}\big(\gamma'(t)\big) = d\iota_{\gamma(t)}\big(\mathbf{A}^G_{\gamma(t)}\big) = \mathbf{A}^H_{\iota(\gamma(t))} \qquad \text{for all } t \in J .
+\]
+So $\iota \circ \gamma$ is an integral curve of $\mathbf{A}^H$.
+\end{proof}
+
+\begin{corbox}[The Exponential Map of a Lie Subgroup]\thmlabel{cor:exp-subgroup}
+In the setting of Lemma~\ref{lem:subgroup-integral-curves}, for $A \in \mathfrak{g}$ and $t \in \mathbb{R}$,
+\[
+\iota\big(\exp_G(tA)\big) = \exp_H\big(t\, d\iota_e(A)\big) .
+\]
+So the exponential map of $G$ is the restriction of that of $H$ to $\mathfrak{g} \subseteq \mathfrak{h}$, and $\exp_H(tA) \in G$ for all $t$.
+\end{corbox}
+
+\begin{proof}
+\textit{(Filled in.)} $\mathbf{A}^G$ is complete (Theorem~\ref{thm:left-invariant-complete}), and its integral curve starting at $e$ is $\gamma(t) = \exp_G(tA)$, $t \in \mathbb{R}$ (Proposition~\ref{prop:exp-tA}). By Lemma~\ref{lem:subgroup-integral-curves}, $\iota \circ \gamma$ is an integral curve of $\mathbf{A}^H$ defined on $\mathbb{R}$ and starting at $\iota(e) = e$; so it is the maximal integral curve of $\mathbf{A}^H$ starting at $e$ (Proposition~\ref{prop:maximal-curve}), which is $t \mapsto \exp_H(t\, d\iota_e(A))$ (Proposition~\ref{prop:exp-tA}).
+\end{proof}
+
+\begin{corbox}[Lie Group Morphisms Commute with the Exponential Map]\thmlabel{cor:exp-natural}
+Let $F : H \to G$ be a Lie group morphism. Then $F(\exp_H A) = \exp_G\big(dF_e(A)\big)$ for every $A \in \mathfrak{h}$.
+\leeref{Proposition 20.8(g)}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from the assignment; filled in: the proof of Corollary~\ref{cor:exp-subgroup} with $F$ in place of $\iota$.)} Let $\mathbf{X}^A \in \mathfrak{X}(H)$ and $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$, $\tilde A = dF_e(A)$, be the left-invariant extensions; they are $F$-related (Lemma~\ref{lem:morphism-related}). The integral curve $t \mapsto \exp_H(tA)$ of $\mathbf{X}^A$ starting at $e$ is defined on $\mathbb{R}$ (Theorem~\ref{thm:left-invariant-complete}, Proposition~\ref{prop:exp-tA}), so $t \mapsto F(\exp_H(tA))$ is an integral curve of $\mathbf{Y}^{\tilde A}$ on $\mathbb{R}$ (Proposition~\ref{prop:naturality-integral-curves}) starting at $F(e) = e$. By Proposition~\ref{prop:maximal-curve} it is $t \mapsto \exp_G(t\tilde A)$ (Proposition~\ref{prop:exp-tA}); take $t = 1$.
+\end{proof}
+
+\begin{propbox}[Integral Curves of Left-Invariant Fields on a Linear Group]\thmlabel{prop:linear-group-integral-curves}
+Let $G \subseteq \GL(n, \mathbb{R})$ be a linear group that is a Lie subgroup (Theorem~\ref{thm:linear-group-bracket}), with $\mathfrak{g}$ identified with a subspace of $\Mat(n, \mathbb{R})$, and $A \in \mathfrak{g}$. For every $g \in G$ the integral curve of the left-invariant field $\mathbf{A}^G$ starting at $g$ is
+\[
+t \longmapsto g\, e^{tA} = g \Big(\sum_{\ell=0}^\infty \frac{t^\ell}{\ell!} A^\ell\Big), \qquad t \in \mathbb{R} .
+\]
+In particular $g\, e^{tA} \in G$ for all $t$.
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~5(b): the submitted solution, with the invertibility of $e^{tA}$ supplied by Lemma~\ref{lem:matrix-exp-invertible}; the solution takes $c(t) \in \GL(n, \mathbb{R})$ for granted.)} Let $\iota : G \hookrightarrow \GL(n, \mathbb{R})$ be the inclusion. Since $\GL(n, \mathbb{R})$ is open in $\Mat(n, \mathbb{R})$, $T_X \GL(n, \mathbb{R}) = \Mat(n, \mathbb{R})$ for each $X$ (Example~\ref{ex:left-invariant-GL}); the velocity of a matrix-valued curve is its entrywise derivative, and $A \in \mathfrak{g}$ is identified with the matrix $d\iota_e(A)$. Let $\mathbf{A}^{\GL}$ be the left-invariant field on $\GL(n, \mathbb{R})$ with $\mathbf{A}^{\GL}_I = A$.
+
+\emph{The field $\mathbf{A}^{\GL}$.} For $h \in \GL(n, \mathbb{R})$, $L_h(X) = hX$ is the restriction of the linear map $X \mapsto hX$ of $\Mat(n, \mathbb{R})$. Computing its differential along the curve $t \mapsto I + tA$, which passes through $I$ with velocity $A$,
+\[
+\mathbf{A}^{\GL}_h = d(L_h)_I(A) = \frac{d}{dt}\Big|_{t=0} h(I + tA) = \frac{d}{dt}\Big|_{t=0} (h + t\, hA) = hA ,
+\]
+as in Example~\ref{ex:left-invariant-GL}.
+
+\emph{$t \mapsto g\,e^{tA}$ is an integral curve of $\mathbf{A}^{\GL}$.} Let $g \in G$ and $c(t) = g \sum_{\ell \ge 0} \frac{t^\ell}{\ell!} A^\ell$, $t \in \mathbb{R}$. By Lemma~\ref{lem:matrix-exp-invertible}, $c(t) = g\, e^{tA}$ is a product of invertible matrices, so $c : \mathbb{R} \to \GL(n, \mathbb{R})$; and $c(0) = gI = g$. Differentiating term by term, the $\ell = 0$ term $I$ is constant, and for $\ell \ge 1$, $\frac{d}{dt}\frac{t^\ell}{\ell!} A^\ell = \frac{t^{\ell-1}}{(\ell-1)!} A^\ell$. Since left multiplication by $g$ and right multiplication by $A$ are linear and continuous, reindexing with $m = \ell - 1$ gives
+\[
+c'(t) = g \sum_{m=0}^\infty \frac{t^m}{m!} A^{m+1} = \Big(g \sum_{m=0}^\infty \frac{t^m}{m!} A^m\Big) A = c(t)\, A = \mathbf{A}^{\GL}_{c(t)} \qquad \text{for all } t \in \mathbb{R} .
+\]
+
+\emph{Comparison with $\mathbf{A}^G$.} Left-invariant fields are complete (Theorem~\ref{thm:left-invariant-complete}), so the integral curve $\gamma$ of $\mathbf{A}^G$ starting at $g$ is defined on $\mathbb{R}$. By Lemma~\ref{lem:subgroup-integral-curves} with $H = \GL(n, \mathbb{R})$, $\iota \circ \gamma : \mathbb{R} \to \GL(n, \mathbb{R})$ is an integral curve of $\mathbf{A}^{\GL}$ with $\iota \circ \gamma(0) = g$. So $c$ and $\iota \circ \gamma$ are integral curves of $\mathbf{A}^{\GL}$ on $\mathbb{R}$ with the same starting point, and by uniqueness (Proposition~\ref{prop:global-uniqueness})
+\[
+c(t) = \iota(\gamma(t)) \qquad \text{for all } t \in \mathbb{R} .
+\]
+Hence $c(t) \in G$ for all $t$, and $c$ is the integral curve of $\mathbf{A}^G$ starting at $g$.
+\end{proof}
+
 \begin{thmbox}[The Exponential Map of a Linear Group]\thmlabel{thm:exp-matrix}
 Let $G \subseteq \GL(n, \mathbb{R})$ be a linear group (Definition~\ref{def:linear-group}) and $A \in \mathfrak{g}$, a matrix. Then
 \[
@@ -31503,12 +31830,12 @@ the series converging in any norm on $\Mat(n, \mathbb{R})$.
 \leeref{Proposition 20.2, Example 20.4}
 \end{thmbox}
 
-\begin{proof}[Proof (outline from Lecture~26; to be completed after the homework)]
-\textit{(The lecture gave the case $G = \GL(n, \mathbb{R})$ in outline; the series facts are an exercise, and the case of a general $G \subseteq \GL(n, \mathbb{R})$ needs an extra argument, which is part of the homework. The proof is to be filled in after the assignment is submitted.)} The method is once again uniqueness. Show it first for $G = \GL(n, \mathbb{R})$. Define $e^A = \sum_{\ell \ge 0} A^\ell / \ell!$. Then
+\begin{proof}[Proof (outline from Lecture~26; the general case from Assignment~7, Problem~5)]
+\textit{(The lecture gave the case $G = \GL(n, \mathbb{R})$ in outline; the series facts are an exercise, and the case of a general $G \subseteq \GL(n, \mathbb{R})$ needs an extra argument, which is part of the homework: Proposition~\ref{prop:linear-group-integral-curves}, Assignment~7, Problem~5(b).)} The method is once again uniqueness. Show it first for $G = \GL(n, \mathbb{R})$. Define $e^A = \sum_{\ell \ge 0} A^\ell / \ell!$. Then
 \[
 \frac{d}{dt}\, e^{tA} = A\, e^{tA} = e^{tA} A ,
 \]
-by manipulating the series: it converges strongly enough in norm to be differentiated term by term; differentiating $t^\ell$ brings out a factor $\ell$, which cancels against $\ell!$, and the resulting shift of index produces the extra factor $A$, which can be put on the left or on the right. So $\gamma(t) = e^{tA}$ is a curve in $\GL(n, \mathbb{R})$ (it is invertible), and
+by manipulating the series: it converges strongly enough in norm to be differentiated term by term; differentiating $t^\ell$ brings out a factor $\ell$, which cancels against $\ell!$, and the resulting shift of index produces the extra factor $A$, which can be put on the left or on the right. So $\gamma(t) = e^{tA}$ is a curve in $\GL(n, \mathbb{R})$ (it is invertible, Lemma~\ref{lem:matrix-exp-invertible}), and
 \[
 \frac{d}{dt}\gamma(t) = e^{tA} A = d\big(L_{e^{tA}}\big)_e(A) = \mathbf{X}^A_{e^{tA}} ,
 \]
@@ -31517,7 +31844,7 @@ because $L_{e^{tA}} : g \mapsto e^{tA} g$ is the restriction to $\GL(n, \mathbb{
 \left\{ \begin{aligned} \tfrac{d}{dt}\gamma(t) &= \mathbf{X}^A_{\gamma(t)} \\ \gamma(0) &= e \end{aligned} \right.
 \qquad \Longrightarrow \qquad e^{tA} = \varphi^A_t(e) ,
 \]
-and at $t = 1$, $e^A = \exp(A)$ by Definition~\ref{def:exponential-map}. For a general $G \subseteq \GL(n, \mathbb{R})$: in the homework.
+and at $t = 1$, $e^A = \exp(A)$ by Definition~\ref{def:exponential-map}. For a general $G \subseteq \GL(n, \mathbb{R})$: by Proposition~\ref{prop:linear-group-integral-curves} with $g = e = I$, the integral curve of the left-invariant field $\mathbf{X}^A$ on $G$ starting at $e$ is $t \mapsto e^{tA}$, and at $t = 1$, $\exp(A) = e^A$ by Definition~\ref{def:exponential-map}. \textit{(Completed with Assignment~7, Problem~5.)}
 \end{proof}
 
 \begin{exbox}[{$\exp(A + B) \neq \exp(A)\exp(B)$ for Two Nilpotent Matrices}]\exlabel{ex:exp-not-additive-nilpotent-pair}
@@ -32106,6 +32433,109 @@ For incomplete fields, condition~(3) is delicate: $\varphi_s \circ \psi_t(p)$ ne
 \textit{(Not from lecture; figure added.)} Condition~(3) of Theorem~\ref{thm:commuting-flows} in two examples on $\mathbb{R}^2$, with $s = 1.5$, $t = 1$. Left: the flows of $\partial_x$ and $\partial_y$ are translations, and the two routes around the rectangle end at the same point. Right: $\mathbf{Y} = x\,\partial_y$ has the flow $\psi_t(x, y) = (x, y + tx)$, a shear, so it lifts a point by $t$ times its distance from the axis $x = 0$. Moving out first (blue) gives $\psi_t \circ \varphi_s(p) = (x + s, y + t(x + s))$, moving up first (red) gives $\varphi_s \circ \psi_t(p) = (x + s, y + tx)$: they differ by $st$ in the $y$-direction. By Proposition~\ref{prop:bracket-coords}, $[\partial_x, x\,\partial_y] = \partial_y \neq 0$, and the gap is exactly $st\,[\mathbf{X}, \mathbf{Y}]$ here.
 %% <<< END ADDED
 
+\textit{(Assignment~7, Problems~2 and~3.)} Condition~(3) of Theorem~\ref{thm:commuting-flows} has an infinitesimal version: the bracket is the mixed second derivative of the difference of the two compositions of the flows.
+
+\begin{lembox}[The Mixed Derivative of Two Flows]\thmlabel{lem:mixed-derivative-flows}
+Let $U \subseteq \mathbb{R}^n$ be open, $\mathbf{X} = \sum_i f^i\, \partial/\partial x^i$ and $\mathbf{Y} = \sum_i g^i\, \partial/\partial x^i$ in $\mathfrak{X}(U)$, with flows $\varphi$ and $\psi$, and $p \in U$. Then $(s, t) \mapsto \psi_s \circ \varphi_t(p)$ is defined and smooth on a neighbourhood of $(0, 0)$ in $\mathbb{R}^2$, and
+\[
+\frac{\partial^2}{\partial t\, \partial s}\big(\psi_s \circ \varphi_t(p)\big)\Big|_{(s, t) = (0, 0)} = \sum_{i=1}^n \mathbf{X}(g^i)(p)\, \frac{\partial}{\partial x^i}\Big|_p ,
+\]
+the second derivative of a map into $\mathbb{R}^n$ being read as a vector at $\psi_0 \circ \varphi_0(p) = p$ through $\mathbb{R}^n \cong T_p\mathbb{R}^n$, $e_i \mapsto \partial/\partial x^i|_p$.
+\end{lembox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~2(a): the submitted solution. The domain of definition is filled in.)} Write $\varphi(t, q) = \varphi_t(q)$ and $\psi(s, q) = \psi_s(q)$, with components $\varphi^j$ and $\psi^i$; they are smooth on the flow domains $\mathcal{D}_{\mathbf{X}}, \mathcal{D}_{\mathbf{Y}}$, open subsets of $\mathbb{R} \times U$ containing $\{0\} \times U$ (Theorem~\ref{thm:maximal-flow}). \emph{Domain} \textit{(filled in)}: the set of $(s, t)$ with $(t, p) \in \mathcal{D}_{\mathbf{X}}$ and $(s, \varphi(t, p)) \in \mathcal{D}_{\mathbf{Y}}$ is open, as the preimage of the open set $\mathcal{D}_{\mathbf{Y}}$ under the continuous map $(s, t) \mapsto (s, \varphi(t, p))$ on the open set $\mathbb{R} \times \{t : (t, p) \in \mathcal{D}_{\mathbf{X}}\}$; it contains $(0, 0)$, and on it $F(s, t) = \psi_s \circ \varphi_t(p)$ is a composite of smooth maps. We write $\partial/\partial x^j$ for the partial derivative in the $j$-th coordinate of $\mathbb{R}^n$; for $\psi^i(s, q)$ it acts on the variable $q$. Let $f = (f^1, \ldots, f^n)$ and $g = (g^1, \ldots, g^n) : U \to \mathbb{R}^n$. Since $\varphi$ and $\psi$ are the flows of $\mathbf{X}$ and $\mathbf{Y}$, $\varphi(0, q) = \psi(0, q) = q$ and
+\[
+\frac{\partial \varphi^j}{\partial t}(t, q) = f^j(\varphi(t, q)), \qquad \frac{\partial \psi^i}{\partial s}(s, q) = g^i(\psi(s, q)) .
+\]
+By Clairaut's theorem the mixed partials of $F$ agree, so it suffices to compute $\frac{d}{ds}\big[\partial_t F(s, 0)\big]_{s=0}$. By the chain rule, using $\varphi(0, p) = p$ and $\frac{\partial \varphi}{\partial t}(0, p) = \mathbf{X}_p$,
+\[
+\frac{\partial}{\partial t}\, \psi_s(\varphi_t(p))\Big|_{t=0} = d(\psi_s)_p(\mathbf{X}_p) \in T_{\psi_s(p)}\mathbb{R}^n .
+\]
+As $s$ varies these vectors lie in different tangent spaces; to differentiate in $s$ we use $T_q\mathbb{R}^n \cong \mathbb{R}^n$ and compute in components. The matrix of $d(\psi_s)_p$ is $\big(\frac{\partial \psi^i}{\partial x^j}(s, p)\big)_{i, j}$, so
+\[
+d(\psi_s)_p(\mathbf{X}_p) = \sum_{i=1}^n \Big(\sum_{j=1}^n \frac{\partial \psi^i}{\partial x^j}(s, p)\, f^j(p)\Big)\, \frac{\partial}{\partial x^i}\Big|_{\psi_s(p)} .
+\]
+Fix $i$. The factors $f^j(p)$ do not depend on $s$. By Clairaut's theorem for $\psi^i$, $\partial_s$ and $\partial/\partial x^j$ commute; and since $\frac{\partial \psi^i}{\partial s}(0, q) = g^i(q)$ for all $q \in U$, $\frac{\partial^2 \psi^i}{\partial x^j\, \partial s}(0, p) = \frac{\partial g^i}{\partial x^j}(p)$. Hence the $i$-th component of the mixed partial is
+\[
+\frac{\partial}{\partial s}\Big[\sum_{j=1}^n \frac{\partial \psi^i}{\partial x^j}(s, p)\, f^j(p)\Big]_{s=0} = \sum_{j=1}^n f^j(p)\, \frac{\partial g^i}{\partial x^j}(p) = \mathbf{X}_p(g^i) = \mathbf{X}(g^i)(p) .
+\]
+Since $\psi_0(p) = p$, identifying $e_i$ with $\partial/\partial x^i|_p$ gives the formula.
+\end{proof}
+
+\begin{propbox}[The Bracket Measures the Failure of Flows to Commute]\thmlabel{prop:bracket-flows}
+In the setting of Lemma~\ref{lem:mixed-derivative-flows},
+\[
+\frac{\partial^2}{\partial t\, \partial s}\big(\psi_s \circ \varphi_t(p) - \varphi_t \circ \psi_s(p)\big)\Big|_{(s, t) = (0, 0)} = [\mathbf{X}, \mathbf{Y}]_p .
+\]
+\end{propbox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~2(b): the submitted solution. Its last step recomputes Proposition~\ref{prop:bracket-coords}.)} Both maps are smooth near $(0, 0)$ (Lemma~\ref{lem:mixed-derivative-flows}, and the same with the roles exchanged), so by linearity the left side is the difference of the two mixed partials. By Clairaut's theorem, $\frac{\partial^2}{\partial t\, \partial s}$ and $\frac{\partial^2}{\partial s\, \partial t}$ agree on $(s, t) \mapsto \varphi_t \circ \psi_s(p)$, and Lemma~\ref{lem:mixed-derivative-flows} with the roles of $(\mathbf{X}, f, \varphi, t)$ and $(\mathbf{Y}, g, \psi, s)$ interchanged gives
+\[
+\frac{\partial^2}{\partial s\, \partial t}\big(\varphi_t \circ \psi_s(p)\big)\Big|_{(0, 0)} = \sum_{i=1}^n \mathbf{Y}(f^i)(p)\, \frac{\partial}{\partial x^i}\Big|_p .
+\]
+Together with the lemma, the left side is $\sum_i \big(\mathbf{X}(g^i)(p) - \mathbf{Y}(f^i)(p)\big)\, \partial/\partial x^i|_p$.
+
+It remains to identify this with $[\mathbf{X}, \mathbf{Y}]_p$. Let $h \in C^\infty(U)$. Then $\mathbf{Y}h = \sum_i g^i\, \frac{\partial h}{\partial x^i}$ and $\mathbf{X}h = \sum_j f^j\, \frac{\partial h}{\partial x^j}$, so by the product rule
+\[
+\mathbf{X}(\mathbf{Y}h) = \sum_{i=1}^n \mathbf{X}(g^i)\, \frac{\partial h}{\partial x^i} + \sum_{i, j=1}^n f^j g^i\, \frac{\partial^2 h}{\partial x^j\, \partial x^i}, \qquad \mathbf{Y}(\mathbf{X}h) = \sum_{i=1}^n \mathbf{Y}(f^i)\, \frac{\partial h}{\partial x^i} + \sum_{i, j=1}^n g^j f^i\, \frac{\partial^2 h}{\partial x^j\, \partial x^i} .
+\]
+Relabelling $i \leftrightarrow j$ in the last sum and using Clairaut's theorem for $h$, the second-order sums are equal and cancel in $[\mathbf{X}, \mathbf{Y}]h = \mathbf{X}(\mathbf{Y}h) - \mathbf{Y}(\mathbf{X}h)$:
+\[
+[\mathbf{X}, \mathbf{Y}]h = \sum_{i=1}^n \big(\mathbf{X}(g^i) - \mathbf{Y}(f^i)\big)\, \frac{\partial h}{\partial x^i} .
+\]
+Evaluating at $p$ for every $h$ gives $[\mathbf{X}, \mathbf{Y}]_p = \sum_i \big(\mathbf{X}(g^i)(p) - \mathbf{Y}(f^i)(p)\big)\, \partial/\partial x^i|_p$, the left side.
+\end{proof}
+
+The statement is local, so on a manifold it holds in any chart at $p$, with the difference taken in the chart (the remark of the assignment); since the right side does not depend on the chart, neither does the left. In the second example of the figure above, $\psi_t \circ \varphi_s(p) - \varphi_s \circ \psi_t(p) = (0, st)$, whose mixed derivative is $(0, 1)$, that is $\partial_y = [\mathbf{X}, \mathbf{Y}]$.
+
+\begin{corbox}[Commuting Flows Have Zero Bracket]\thmlabel{cor:commuting-flows-bracket}
+Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ with flows $\varphi$ and $\psi$. If for every $p \in M$ there is a neighbourhood $N$ of $(0, 0)$ in $\mathbb{R}^2$ with $\psi_s \circ \varphi_t(p) = \varphi_t \circ \psi_s(p)$ for all $(s, t) \in N$, then $[\mathbf{X}, \mathbf{Y}] = 0$.
+\end{corbox}
+
+\begin{proof}
+\textit{(Filled in; a second proof of (3)~$\Rightarrow$~(1) in Theorem~\ref{thm:commuting-flows}.)} Fix $p$ and a chart $(U, \phi)$ at $p$. The pushforwards of $\mathbf{X}|_U$ and $\mathbf{Y}|_U$ by the diffeomorphism $\phi : U \to \phi(U)$ are fields on $\phi(U) \subseteq \mathbb{R}^n$ whose integral curves are the images under $\phi$ of those of $\mathbf{X}$ and $\mathbf{Y}$ in $U$ (Proposition~\ref{prop:naturality-integral-curves}); for $(s, t)$ near $(0, 0)$ all the points involved stay in $U$, so near $(0, 0)$ the compositions of their flows at $\phi(p)$ are $\phi(\psi_s \circ \varphi_t(p))$ and $\phi(\varphi_t \circ \psi_s(p))$, which agree by hypothesis. By Proposition~\ref{prop:bracket-flows} the bracket of the pushed-forward fields vanishes at $\phi(p)$, and it is the pushforward of $[\mathbf{X}, \mathbf{Y}]$ (Corollary~\ref{cor:diffeo-bracket}); so $[\mathbf{X}, \mathbf{Y}]_p = 0$.
+\end{proof}
+
+\begin{exbox}[Two Linear Fields with Non-Commuting Flows]\exlabel{ex:noncommuting-linear-flows}
+On $\mathbb{R}^2$ let $\mathbf{X} = x\, \partial/\partial x - y\, \partial/\partial y$ and $\mathbf{Y} = y\, \partial/\partial x + x\, \partial/\partial y$. Both are complete, and their flows are the linear maps
+\[
+\varphi_s = \begin{pmatrix} e^{s} & 0 \\ 0 & e^{-s} \end{pmatrix}, \qquad \psi_t = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix} .
+\]
+They do not commute: for all $(s, t) \in J \times K = \mathbb{R} \times \mathbb{R}$ both compositions are defined, and
+\[
+\varphi_s \circ \psi_t - \psi_t \circ \varphi_s = 2 \sinh s\, \sinh t \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix},
+\]
+which is nonzero whenever $s \neq 0$ and $t \neq 0$.
+\leeref{Problem 9-18}
+\end{exbox}
+
+\begin{proof}
+\textit{(Assignment~7, Problem~3: the submitted solution. The check against Proposition~\ref{prop:bracket-flows} is filled in.)} Let $c(t) = (c_1(t), c_2(t))$ be a smooth curve with $c(0) = (x_0, y_0)$.
+
+\emph{The flow of $\mathbf{X}$.} Since $\mathbf{X}_{c(t)} = c_1(t)\, \partial_x|_{c(t)} - c_2(t)\, \partial_y|_{c(t)}$, $c$ is an integral curve of $\mathbf{X}$ if and only if $\dot c_1 = c_1$, $\dot c_2 = -c_2$, whose solution with $c(0) = (x_0, y_0)$ is $c(t) = (x_0 e^{t}, y_0 e^{-t})$, defined for all $t$.
+
+\emph{The flow of $\mathbf{Y}$.} Since $\mathbf{Y}_{c(t)} = c_2(t)\, \partial_x|_{c(t)} + c_1(t)\, \partial_y|_{c(t)}$, $c$ is an integral curve of $\mathbf{Y}$ if and only if $\dot c_1 = c_2$, $\dot c_2 = c_1$. Differentiating, $\ddot c_1 = c_1$ and $\ddot c_2 = c_2$, with $c_1(0) = x_0$, $\dot c_1(0) = y_0$, $c_2(0) = y_0$, $\dot c_2(0) = x_0$. The solutions of $u'' = u$ are $u = A \cosh t + B \sinh t$, so
+\[
+c(t) = (x_0 \cosh t + y_0 \sinh t,\ x_0 \sinh t + y_0 \cosh t), \qquad t \in \mathbb{R} ;
+\]
+indeed $\dot c_1 = c_2$ and $\dot c_2 = c_1$.
+
+Both integral curves are defined on $\mathbb{R}$, so they are the maximal ones (Proposition~\ref{prop:maximal-curve}), $\mathbf{X}$ and $\mathbf{Y}$ are complete, and the flows are the linear maps of the statement.
+
+\emph{The flows do not commute.} Take $J = K = \mathbb{R}$. The compositions are the linear maps with matrices
+\[
+\varphi_s \circ \psi_t = \begin{pmatrix} e^{s} \cosh t & e^{s} \sinh t \\ e^{-s} \sinh t & e^{-s} \cosh t \end{pmatrix}, \qquad \psi_t \circ \varphi_s = \begin{pmatrix} e^{s} \cosh t & e^{-s} \sinh t \\ e^{s} \sinh t & e^{-s} \cosh t \end{pmatrix},
+\]
+whose difference is $\begin{psmallmatrix} 0 & (e^s - e^{-s}) \sinh t \\ (e^{-s} - e^s) \sinh t & 0 \end{psmallmatrix} = 2 \sinh s\, \sinh t \begin{psmallmatrix} 0 & 1 \\ -1 & 0 \end{psmallmatrix}$. For instance, at $(s, t) = (1, 1)$ and the point $(0, 1)$,
+\[
+\varphi_1 \circ \psi_1(0, 1) = (e \sinh 1,\ e^{-1} \cosh 1) \neq (e^{-1} \sinh 1,\ e^{-1} \cosh 1) = \psi_1 \circ \varphi_1(0, 1) .
+\]
+
+\emph{Check against Proposition~\ref{prop:bracket-flows}} \textit{(filled in)}. By Proposition~\ref{prop:bracket-coords}, with components $(x, -y)$ and $(y, x)$, $[\mathbf{X}, \mathbf{Y}] = (\mathbf{X}(y) - \mathbf{Y}(x))\, \partial_x + (\mathbf{X}(x) - \mathbf{Y}(-y))\, \partial_y = -2y\, \partial_x + 2x\, \partial_y$. In the proposition the flow of $\mathbf{Y}$ is applied last in the first term; here that is $\psi_t \circ \varphi_s - \varphi_s \circ \psi_t = -2 \sinh s\, \sinh t \begin{psmallmatrix} 0 & 1 \\ -1 & 0 \end{psmallmatrix}$, whose mixed derivative at $(0, 0)$, applied to $p = (x, y)$, is $-2(y, -x) = (-2y, 2x) = [\mathbf{X}, \mathbf{Y}]_p$.
+\end{proof}
+
 \appendix
 \chapter{Concordance with Lee}\label{app:lee}
 
@@ -32202,7 +32632,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:integral-curves}\ Integral curves & Chapter 9, \emph{Integral Curves} ((9.1), Lemmas 9.3 and 9.4, Proposition 9.6) \\
 \ref{sec:ode-existence}\ Local existence and uniqueness & Chapter 9, \emph{Integral Curves} (Example 9.1, Proposition 9.2); \emph{Flows} (uniqueness, in the proof of Theorem 9.12); Appendix D (Theorem D.1); Problem 9-1 \\
 \ref{sec:flows}\ Maximal integral curves and flows & Chapter 9, \emph{Flows} (Example 9.10, Theorem 9.12, with its proof; the group law (9.7)); Problem 9-1 \\
-\ref{sec:complete-fields}\ Complete vector fields & Chapter 9, \emph{Flows} (Proposition 9.6, Proposition 9.7, Theorem 9.12(c)); \emph{Complete Vector Fields} (Lemma 9.15, Theorem 9.16, Corollary 9.17, Theorem 9.18) \\
+\ref{sec:complete-fields}\ Complete vector fields & Chapter 9, \emph{Flows} (Proposition 9.6, Proposition 9.7, Theorem 9.12(c)); \emph{Complete Vector Fields} (Lemma 9.15, Theorem 9.16, Corollary 9.17, Theorem 9.18, Lemma 9.19); Problem 9-6 \\
 \ref{sec:exponential}\ The exponential map & Chapter 20, \emph{One-Parameter Subgroups and the Exponential Map} (Theorem 20.1, Propositions 20.2, 20.5 and 20.8, Example 20.4); Problem 20-8 \\
 \ref{sec:lie-derivative}\ Lie derivatives & Chapter 9, \emph{Lie Derivatives} (Lemma 9.36, Theorem 9.38, Corollary 9.39); \emph{Canonical Form Near a Regular Point} (Theorem 9.22); \emph{Commuting Vector Fields} (Theorem 9.42, Corollary 9.43, Theorem 9.44) \\
 \bottomrule
@@ -32286,6 +32716,7 @@ Proposition 5.5 & Prop.~\ref{prop:proper-iff-closed} \\
 Theorem 5.8 & Def.~\ref{def:submanifold}, Def.~\ref{def:adapted-chart}, Prop.~\ref{prop:submanifold-structure} \\
 Corollary 5.14 & Thm.~\ref{thm:regular-value}, Prop.~\ref{prop:level-set-smooth}, Thm.~\ref{thm:rvt-manifolds} \\
 Corollary 5.30 & Lem.~\ref{lem:maps-into-submanifold} \\
+Lemma 5.34 & Prop.~\ref{prop:function-extension}, Lem.~\ref{lem:local-function-extension} \\
 Proposition 5.35 & Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.37 & Def.~\ref{def:geometric-tangent}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Prop.~\ref{prop:submanifold-tangent} \\
 Proposition 5.38 & Thm.~\ref{thm:tangent-kernel}, Cor.~\ref{cor:tangent-three}, Thm.~\ref{thm:ambient-abstract}, Thm.~\ref{thm:rvt-manifolds} \\
@@ -32331,6 +32762,7 @@ Theorem 8.37 & Def.~\ref{def:left-invariant-extension}, Lem.~\ref{lem:left-invar
 Proposition 8.41 & Thm.~\ref{thm:linear-group-bracket} \\
 Theorem 8.44 & Lem.~\ref{lem:morphism-related}, Prop.~\ref{prop:morphism-preserves-bracket} \\
 Theorem 8.46 & Thm.~\ref{thm:linear-group-bracket} \\
+Problem 8-15 & Thm.~\ref{thm:vf-extension}, Lem.~\ref{lem:vf-local-extension}, Ex.~\ref{ex:vf-no-extension} \\
 Example 9.1 & Ex.~\ref{ex:rotation-flow} \\
 Proposition 9.2 & Thm.~\ref{thm:ode-local-manifold} \\
 Lemma 9.3 & Lem.~\ref{lem:translation-rescaling} \\
@@ -32340,8 +32772,10 @@ Proposition 9.7 & Thm.~\ref{thm:action-generator} \\
 Example 9.10 & Ex.~\ref{ex:finite-escape} \\
 Theorem 9.12 & Prop.~\ref{prop:global-uniqueness}, Thm.~\ref{thm:maximal-flow}, Def.~\ref{def:maximal-domain}, Prop.~\ref{prop:maximal-curve}, Lem.~\ref{lem:flow-box}, Prop.~\ref{prop:group-law}, Prop.~\ref{prop:complete-flow} \\
 Lemma 9.15 & Lem.~\ref{lem:uniform-time} \\
+Theorem 9.16 & Cor.~\ref{cor:compact-support-complete} \\
 Corollary 9.17 & Thm.~\ref{thm:compact-complete} \\
 Theorem 9.18 & Thm.~\ref{thm:left-invariant-complete} \\
+Lemma 9.19 & Thm.~\ref{thm:escape-lemma}, Cor.~\ref{cor:escape-tail}, Lem.~\ref{lem:uniform-time-compact} \\
 Theorem 9.22 & Lem.~\ref{lem:straightening} \\
 Lemma 9.36 & Lem.~\ref{lem:lie-derivative-smooth} \\
 Theorem 9.38 & Thm.~\ref{thm:lie-derivative-bracket} \\
@@ -32349,6 +32783,8 @@ Corollary 9.39 & Cor.~\ref{cor:lie-derivative-properties} \\
 Theorem 9.42 & Thm.~\ref{thm:commuting-flows} \\
 Theorem 9.44 & Thm.~\ref{thm:commuting-flows} \\
 Problem 9-1 & Cor.~\ref{cor:returning-curve-periodic}, Prop.~\ref{prop:returning-maximal-periodic} \\
+Problem 9-6 & Thm.~\ref{thm:escape-lemma}, Cor.~\ref{cor:escape-tail} \\
+Problem 9-18 & Ex.~\ref{ex:noncommuting-linear-flows} \\
 Example 10.3 & Ex.~\ref{ex:mobius} \\
 Proposition 11.1 & Def.~\ref{def:dual}, Def.~\ref{def:dual-basis}, Prop.~\ref{prop:dual-basis} \\
 Proposition 11.4 & Def.~\ref{def:dual-map}, Prop.~\ref{prop:dual-map} \\
@@ -32363,7 +32799,7 @@ Theorem 20.1 & Prop.~\ref{prop:one-parameter-subgroup} \\
 Proposition 20.2 & Thm.~\ref{thm:exp-matrix} \\
 Example 20.4 & Thm.~\ref{thm:exp-matrix} \\
 Proposition 20.5 & Prop.~\ref{prop:exp-tA} \\
-Proposition 20.8 & Cor.~\ref{cor:exp-law}, Prop.~\ref{prop:exp-smooth} \\
+Proposition 20.8 & Cor.~\ref{cor:exp-law}, Prop.~\ref{prop:exp-smooth}, Cor.~\ref{cor:exp-natural} \\
 Problem 20-8 & Rem.~\textit{Warning} in \ref{sec:exponential} \\
 Lemma 21.1 & Lem.~\ref{lem:Lg}, Lem.~\ref{lem:orbit-open}, Prop.~\ref{prop:GH-open-sets} \\
 Example 21.3 & Ex.~\ref{ex:nonhausdorff-orbit} \\

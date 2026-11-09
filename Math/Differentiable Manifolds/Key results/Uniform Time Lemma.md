@@ -18,7 +18,8 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§70 Complete Vector Fields#^thm-70-2|Theorem §70.2: Vector Fields on Compact Manifolds Are Complete]]
-- [[§70 Complete Vector Fields#^thm-70-7|Theorem §70.7: Left-Invariant Fields Are Complete]]
+- [[§70 Complete Vector Fields#^thm-70-4|Theorem §70.4: The Escape Lemma]]
+- [[§70 Complete Vector Fields#^thm-70-11|Theorem §70.11: Left-Invariant Fields Are Complete]]
 
 ## Connections
 - TODO

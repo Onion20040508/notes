@@ -327,7 +327,7 @@ The derivative of the curve $V_t$ at $t = 0$ is $(\mathcal{L}_{\mathbf{X}}\mathb
 ^def-72-3
 
 > [!definition] Definition §72.4: Invariance under a Flow
-> Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, and let $\varphi$ be the flow of $\mathbf{X}$. Then $\mathbf{Y}$ is **invariant under the flow** $\varphi$ of $\mathbf{X}$ if for every $t$, $\mathbf{Y}$ is $\varphi_t$-related to itself (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]): $d(\varphi_t)_p(\mathbf{Y}_p) = \mathbf{Y}_{\varphi_t(p)}$ for all $(t, p)$ in the flow domain $\mathcal{D}$. For incomplete $\mathbf{X}$ the condition is read where $\varphi_t$ is defined, on the open sets of Lemma [[§72 Lie Derivatives#^lem-72-2|§72.2]] above. A complete field is invariant under its own flow (Lemma [[§70 Complete Vector Fields#^lem-70-4|§70.4]]; Lee, Corollary 9.43, without completeness).
+> Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, and let $\varphi$ be the flow of $\mathbf{X}$. Then $\mathbf{Y}$ is **invariant under the flow** $\varphi$ of $\mathbf{X}$ if for every $t$, $\mathbf{Y}$ is $\varphi_t$-related to itself (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]): $d(\varphi_t)_p(\mathbf{Y}_p) = \mathbf{Y}_{\varphi_t(p)}$ for all $(t, p)$ in the flow domain $\mathcal{D}$. For incomplete $\mathbf{X}$ the condition is read where $\varphi_t$ is defined, on the open sets of Lemma [[§72 Lie Derivatives#^lem-72-2|§72.2]] above. A complete field is invariant under its own flow (Lemma [[§70 Complete Vector Fields#^lem-70-8|§70.8]]; Lee, Corollary 9.43, without completeness).
 >
 > *Lee: Ch. 9, Commuting Vector Fields*
 
@@ -383,11 +383,11 @@ The derivative of the curve $V_t$ at $t = 0$ is $(\mathcal{L}_{\mathbf{X}}\mathb
 ^cor-72-10
 
 > [!proof]+ Proof
-> *(Lee's proof; not presented in lecture.)* $[\mathbf{X}, \mathbf{X}] = 0$, so Theorem [[§72 Lie Derivatives#^thm-72-9|§72.9]] (1)$\Rightarrow$(2) with $\mathbf{Y} = \mathbf{X}$ gives the invariance. For complete $\mathbf{X}$ this is Lemma [[§70 Complete Vector Fields#^lem-70-4|§70.4]].
+> *(Lee's proof; not presented in lecture.)* $[\mathbf{X}, \mathbf{X}] = 0$, so Theorem [[§72 Lie Derivatives#^thm-72-9|§72.9]] (1)$\Rightarrow$(2) with $\mathbf{Y} = \mathbf{X}$ gives the invariance. For complete $\mathbf{X}$ this is Lemma [[§70 Complete Vector Fields#^lem-70-8|§70.8]].
 
 ^pf-72-10
 
-*Uses:* [[§72 Lie Derivatives#^thm-72-9|§72.9]], [[§70 Complete Vector Fields#^lem-70-4|§70.4]]
+*Uses:* [[§72 Lie Derivatives#^thm-72-9|§72.9]], [[§70 Complete Vector Fields#^lem-70-8|§70.8]]
 
 > [!remark] Remark: Commuting Flows of Incomplete Fields
 > For incomplete fields, condition (3) is delicate: $\varphi_s \circ \psi_t(p)$ need not be defined for all $s, t$, which is why it is stated with intervals $I$, $J$ on which one of the two compositions exists. A problem on the next homework shows why this care is needed.
@@ -397,5 +397,151 @@ The derivative of the curve $V_t$ at $t = 0$ is $(\mathcal{L}_{\mathbf{X}}\mathb
 ![[m591-72-5.svg]]
 
 *(Not from lecture; figure added.)* Condition (3) of Theorem [[§72 Lie Derivatives#^thm-72-9|§72.9]] in two examples on $\mathbb{R}^2$, with $s = 1.5$, $t = 1$. Left: the flows of $\partial_x$ and $\partial_y$ are translations, and the two routes around the rectangle end at the same point. Right: $\mathbf{Y} = x\,\partial_y$ has the flow $\psi_t(x, y) = (x, y + tx)$, a shear, so it lifts a point by $t$ times its distance from the axis $x = 0$. Moving out first (blue) gives $\psi_t \circ \varphi_s(p) = (x + s, y + t(x + s))$, moving up first (red) gives $\varphi_s \circ \psi_t(p) = (x + s, y + tx)$: they differ by $st$ in the $y$-direction. By Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], $[\partial_x, x\,\partial_y] = \partial_y \neq 0$, and the gap is exactly $st\,[\mathbf{X}, \mathbf{Y}]$ here.
+
+*(Assignment 7, Problems 2 and 3.)* Condition (3) of Theorem [[§72 Lie Derivatives#^thm-72-9|§72.9]] has an infinitesimal version: the bracket is the mixed second derivative of the difference of the two compositions of the flows.
+
+> [!theorem] Lemma §72.11: The Mixed Derivative of Two Flows
+> Let $U \subseteq \mathbb{R}^n$ be open, $\mathbf{X} = \sum_i f^i\, \partial/\partial x^i$ and $\mathbf{Y} = \sum_i g^i\, \partial/\partial x^i$ in $\mathfrak{X}(U)$, with flows $\varphi$ and $\psi$, and $p \in U$. Then $(s, t) \mapsto \psi_s \circ \varphi_t(p)$ is defined and smooth on a neighbourhood of $(0, 0)$ in $\mathbb{R}^2$, and
+>
+> $$
+> \frac{\partial^2}{\partial t\, \partial s}\big(\psi_s \circ \varphi_t(p)\big)\Big|_{(s, t) = (0, 0)} = \sum_{i=1}^n \mathbf{X}(g^i)(p)\, \frac{\partial}{\partial x^i}\Big|_p ,
+> $$
+>
+> the second derivative of a map into $\mathbb{R}^n$ being read as a vector at $\psi_0 \circ \varphi_0(p) = p$ through $\mathbb{R}^n \cong T_p\mathbb{R}^n$, $e_i \mapsto \partial/\partial x^i|_p$.
+
+^lem-72-11
+
+> [!proof]+ Proof
+> *(Assignment 7, Problem 2(a): the submitted solution. The domain of definition is filled in.)* Write $\varphi(t, q) = \varphi_t(q)$ and $\psi(s, q) = \psi_s(q)$, with components $\varphi^j$ and $\psi^i$; they are smooth on the flow domains $\mathcal{D}_{\mathbf{X}}, \mathcal{D}_{\mathbf{Y}}$, open subsets of $\mathbb{R} \times U$ containing $\{0\} \times U$ (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]]). *Domain* *(filled in)*: the set of $(s, t)$ with $(t, p) \in \mathcal{D}_{\mathbf{X}}$ and $(s, \varphi(t, p)) \in \mathcal{D}_{\mathbf{Y}}$ is open, as the preimage of the open set $\mathcal{D}_{\mathbf{Y}}$ under the continuous map $(s, t) \mapsto (s, \varphi(t, p))$ on the open set $\mathbb{R} \times \{t : (t, p) \in \mathcal{D}_{\mathbf{X}}\}$; it contains $(0, 0)$, and on it $F(s, t) = \psi_s \circ \varphi_t(p)$ is a composite of smooth maps. We write $\partial/\partial x^j$ for the partial derivative in the $j$-th coordinate of $\mathbb{R}^n$; for $\psi^i(s, q)$ it acts on the variable $q$. Let $f = (f^1, \ldots, f^n)$ and $g = (g^1, \ldots, g^n) : U \to \mathbb{R}^n$. Since $\varphi$ and $\psi$ are the flows of $\mathbf{X}$ and $\mathbf{Y}$, $\varphi(0, q) = \psi(0, q) = q$ and
+>
+> $$
+> \frac{\partial \varphi^j}{\partial t}(t, q) = f^j(\varphi(t, q)), \qquad \frac{\partial \psi^i}{\partial s}(s, q) = g^i(\psi(s, q)) .
+> $$
+>
+> By Clairaut's theorem the mixed partials of $F$ agree, so it suffices to compute $\frac{d}{ds}\big[\partial_t F(s, 0)\big]_{s=0}$. By the chain rule, using $\varphi(0, p) = p$ and $\frac{\partial \varphi}{\partial t}(0, p) = \mathbf{X}_p$,
+>
+> $$
+> \frac{\partial}{\partial t}\, \psi_s(\varphi_t(p))\Big|_{t=0} = d(\psi_s)_p(\mathbf{X}_p) \in T_{\psi_s(p)}\mathbb{R}^n .
+> $$
+>
+> As $s$ varies these vectors lie in different tangent spaces; to differentiate in $s$ we use $T_q\mathbb{R}^n \cong \mathbb{R}^n$ and compute in components. The matrix of $d(\psi_s)_p$ is $\big(\frac{\partial \psi^i}{\partial x^j}(s, p)\big)_{i, j}$, so
+>
+> $$
+> d(\psi_s)_p(\mathbf{X}_p) = \sum_{i=1}^n \Big(\sum_{j=1}^n \frac{\partial \psi^i}{\partial x^j}(s, p)\, f^j(p)\Big)\, \frac{\partial}{\partial x^i}\Big|_{\psi_s(p)} .
+> $$
+>
+> Fix $i$. The factors $f^j(p)$ do not depend on $s$. By Clairaut's theorem for $\psi^i$, $\partial_s$ and $\partial/\partial x^j$ commute; and since $\frac{\partial \psi^i}{\partial s}(0, q) = g^i(q)$ for all $q \in U$, $\frac{\partial^2 \psi^i}{\partial x^j\, \partial s}(0, p) = \frac{\partial g^i}{\partial x^j}(p)$. Hence the $i$-th component of the mixed partial is
+>
+> $$
+> \frac{\partial}{\partial s}\Big[\sum_{j=1}^n \frac{\partial \psi^i}{\partial x^j}(s, p)\, f^j(p)\Big]_{s=0} = \sum_{j=1}^n f^j(p)\, \frac{\partial g^i}{\partial x^j}(p) = \mathbf{X}_p(g^i) = \mathbf{X}(g^i)(p) .
+> $$
+>
+> Since $\psi_0(p) = p$, identifying $e_i$ with $\partial/\partial x^i|_p$ gives the formula.
+
+^pf-72-11
+
+*Uses:* [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]]
+
+> [!theorem] Proposition §72.12: The Bracket Measures the Failure of Flows to Commute
+> In the setting of Lemma [[§72 Lie Derivatives#^lem-72-11|§72.11]],
+>
+> $$
+> \frac{\partial^2}{\partial t\, \partial s}\big(\psi_s \circ \varphi_t(p) - \varphi_t \circ \psi_s(p)\big)\Big|_{(s, t) = (0, 0)} = [\mathbf{X}, \mathbf{Y}]_p .
+> $$
+
+^prop-72-12
+
+> [!proof]+ Proof
+> *(Assignment 7, Problem 2(b): the submitted solution. Its last step recomputes Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]].)* Both maps are smooth near $(0, 0)$ (Lemma [[§72 Lie Derivatives#^lem-72-11|§72.11]], and the same with the roles exchanged), so by linearity the left side is the difference of the two mixed partials. By Clairaut's theorem, $\frac{\partial^2}{\partial t\, \partial s}$ and $\frac{\partial^2}{\partial s\, \partial t}$ agree on $(s, t) \mapsto \varphi_t \circ \psi_s(p)$, and Lemma [[§72 Lie Derivatives#^lem-72-11|§72.11]] with the roles of $(\mathbf{X}, f, \varphi, t)$ and $(\mathbf{Y}, g, \psi, s)$ interchanged gives
+>
+> $$
+> \frac{\partial^2}{\partial s\, \partial t}\big(\varphi_t \circ \psi_s(p)\big)\Big|_{(0, 0)} = \sum_{i=1}^n \mathbf{Y}(f^i)(p)\, \frac{\partial}{\partial x^i}\Big|_p .
+> $$
+>
+> Together with the lemma, the left side is $\sum_i \big(\mathbf{X}(g^i)(p) - \mathbf{Y}(f^i)(p)\big)\, \partial/\partial x^i|_p$.
+>
+> It remains to identify this with $[\mathbf{X}, \mathbf{Y}]_p$. Let $h \in C^\infty(U)$. Then $\mathbf{Y}h = \sum_i g^i\, \frac{\partial h}{\partial x^i}$ and $\mathbf{X}h = \sum_j f^j\, \frac{\partial h}{\partial x^j}$, so by the product rule
+>
+> $$
+> \mathbf{X}(\mathbf{Y}h) = \sum_{i=1}^n \mathbf{X}(g^i)\, \frac{\partial h}{\partial x^i} + \sum_{i, j=1}^n f^j g^i\, \frac{\partial^2 h}{\partial x^j\, \partial x^i}, \qquad \mathbf{Y}(\mathbf{X}h) = \sum_{i=1}^n \mathbf{Y}(f^i)\, \frac{\partial h}{\partial x^i} + \sum_{i, j=1}^n g^j f^i\, \frac{\partial^2 h}{\partial x^j\, \partial x^i} .
+> $$
+>
+> Relabelling $i \leftrightarrow j$ in the last sum and using Clairaut's theorem for $h$, the second-order sums are equal and cancel in $[\mathbf{X}, \mathbf{Y}]h = \mathbf{X}(\mathbf{Y}h) - \mathbf{Y}(\mathbf{X}h)$:
+>
+> $$
+> [\mathbf{X}, \mathbf{Y}]h = \sum_{i=1}^n \big(\mathbf{X}(g^i) - \mathbf{Y}(f^i)\big)\, \frac{\partial h}{\partial x^i} .
+> $$
+>
+> Evaluating at $p$ for every $h$ gives $[\mathbf{X}, \mathbf{Y}]_p = \sum_i \big(\mathbf{X}(g^i)(p) - \mathbf{Y}(f^i)(p)\big)\, \partial/\partial x^i|_p$, the left side.
+
+^pf-72-12
+
+*Uses:* [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], [[§72 Lie Derivatives#^lem-72-11|§72.11]]
+
+The statement is local, so on a manifold it holds in any chart at $p$, with the difference taken in the chart (the remark of the assignment); since the right side does not depend on the chart, neither does the left. In the second example of the figure above, $\psi_t \circ \varphi_s(p) - \varphi_s \circ \psi_t(p) = (0, st)$, whose mixed derivative is $(0, 1)$, that is $\partial_y = [\mathbf{X}, \mathbf{Y}]$.
+
+> [!theorem] Corollary §72.13: Commuting Flows Have Zero Bracket
+> Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ with flows $\varphi$ and $\psi$. If for every $p \in M$ there is a neighbourhood $N$ of $(0, 0)$ in $\mathbb{R}^2$ with $\psi_s \circ \varphi_t(p) = \varphi_t \circ \psi_s(p)$ for all $(s, t) \in N$, then $[\mathbf{X}, \mathbf{Y}] = 0$.
+
+^cor-72-13
+
+> [!proof]+ Proof
+> *(Filled in; a second proof of (3) $\Rightarrow$ (1) in Theorem [[§72 Lie Derivatives#^thm-72-9|§72.9]].)* Fix $p$ and a chart $(U, \phi)$ at $p$. The pushforwards of $\mathbf{X}|_U$ and $\mathbf{Y}|_U$ by the diffeomorphism $\phi : U \to \phi(U)$ are fields on $\phi(U) \subseteq \mathbb{R}^n$ whose integral curves are the images under $\phi$ of those of $\mathbf{X}$ and $\mathbf{Y}$ in $U$ (Proposition [[§70 Complete Vector Fields#^prop-70-10|§70.10]]); for $(s, t)$ near $(0, 0)$ all the points involved stay in $U$, so near $(0, 0)$ the compositions of their flows at $\phi(p)$ are $\phi(\psi_s \circ \varphi_t(p))$ and $\phi(\varphi_t \circ \psi_s(p))$, which agree by hypothesis. By Proposition [[§72 Lie Derivatives#^prop-72-12|§72.12]] the bracket of the pushed-forward fields vanishes at $\phi(p)$, and it is the pushforward of $[\mathbf{X}, \mathbf{Y}]$ (Corollary [[§59 Related Vector Fields#^cor-59-4|§59.4]]); so $[\mathbf{X}, \mathbf{Y}]_p = 0$.
+
+^pf-72-13
+
+*Uses:* [[§72 Lie Derivatives#^thm-72-9|§72.9]], [[§70 Complete Vector Fields#^prop-70-10|§70.10]], [[§72 Lie Derivatives#^prop-72-12|§72.12]], [[§59 Related Vector Fields#^cor-59-4|§59.4]]
+
+> [!example] Example §72.2: Two Linear Fields with Non-Commuting Flows
+> On $\mathbb{R}^2$ let $\mathbf{X} = x\, \partial/\partial x - y\, \partial/\partial y$ and $\mathbf{Y} = y\, \partial/\partial x + x\, \partial/\partial y$. Both are complete, and their flows are the linear maps
+>
+> $$
+> \varphi_s = \begin{pmatrix} e^{s} & 0 \\ 0 & e^{-s} \end{pmatrix}, \qquad \psi_t = \begin{pmatrix} \cosh t & \sinh t \\ \sinh t & \cosh t \end{pmatrix} .
+> $$
+>
+> They do not commute: for all $(s, t) \in J \times K = \mathbb{R} \times \mathbb{R}$ both compositions are defined, and
+>
+> $$
+> \varphi_s \circ \psi_t - \psi_t \circ \varphi_s = 2 \sinh s\, \sinh t \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix},
+> $$
+>
+> which is nonzero whenever $s \neq 0$ and $t \neq 0$.
+>
+> *Lee: Problem 9-18*
+
+^ex-72-2
+
+> [!proof]+ Proof
+> *(Assignment 7, Problem 3: the submitted solution. The check against Proposition [[§72 Lie Derivatives#^prop-72-12|§72.12]] is filled in.)* Let $c(t) = (c_1(t), c_2(t))$ be a smooth curve with $c(0) = (x_0, y_0)$.
+>
+> *The flow of $\mathbf{X}$.* Since $\mathbf{X}_{c(t)} = c_1(t)\, \partial_x|_{c(t)} - c_2(t)\, \partial_y|_{c(t)}$, $c$ is an integral curve of $\mathbf{X}$ if and only if $\dot c_1 = c_1$, $\dot c_2 = -c_2$, whose solution with $c(0) = (x_0, y_0)$ is $c(t) = (x_0 e^{t}, y_0 e^{-t})$, defined for all $t$.
+>
+> *The flow of $\mathbf{Y}$.* Since $\mathbf{Y}_{c(t)} = c_2(t)\, \partial_x|_{c(t)} + c_1(t)\, \partial_y|_{c(t)}$, $c$ is an integral curve of $\mathbf{Y}$ if and only if $\dot c_1 = c_2$, $\dot c_2 = c_1$. Differentiating, $\ddot c_1 = c_1$ and $\ddot c_2 = c_2$, with $c_1(0) = x_0$, $\dot c_1(0) = y_0$, $c_2(0) = y_0$, $\dot c_2(0) = x_0$. The solutions of $u'' = u$ are $u = A \cosh t + B \sinh t$, so
+>
+> $$
+> c(t) = (x_0 \cosh t + y_0 \sinh t,\ x_0 \sinh t + y_0 \cosh t), \qquad t \in \mathbb{R} ;
+> $$
+>
+> indeed $\dot c_1 = c_2$ and $\dot c_2 = c_1$.
+>
+> Both integral curves are defined on $\mathbb{R}$, so they are the maximal ones (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]), $\mathbf{X}$ and $\mathbf{Y}$ are complete, and the flows are the linear maps of the statement.
+>
+> *The flows do not commute.* Take $J = K = \mathbb{R}$. The compositions are the linear maps with matrices
+>
+> $$
+> \varphi_s \circ \psi_t = \begin{pmatrix} e^{s} \cosh t & e^{s} \sinh t \\ e^{-s} \sinh t & e^{-s} \cosh t \end{pmatrix}, \qquad \psi_t \circ \varphi_s = \begin{pmatrix} e^{s} \cosh t & e^{-s} \sinh t \\ e^{s} \sinh t & e^{-s} \cosh t \end{pmatrix},
+> $$
+>
+> whose difference is $\begin{psmallmatrix} 0 & (e^s - e^{-s}) \sinh t \\ (e^{-s} - e^s) \sinh t & 0 \end{psmallmatrix} = 2 \sinh s\, \sinh t \begin{psmallmatrix} 0 & 1 \\ -1 & 0 \end{psmallmatrix}$. For instance, at $(s, t) = (1, 1)$ and the point $(0, 1)$,
+>
+> $$
+> \varphi_1 \circ \psi_1(0, 1) = (e \sinh 1,\ e^{-1} \cosh 1) \neq (e^{-1} \sinh 1,\ e^{-1} \cosh 1) = \psi_1 \circ \varphi_1(0, 1) .
+> $$
+>
+> *Check against Proposition [[§72 Lie Derivatives#^prop-72-12|§72.12]]* *(filled in)*. By Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], with components $(x, -y)$ and $(y, x)$, $[\mathbf{X}, \mathbf{Y}] = (\mathbf{X}(y) - \mathbf{Y}(x))\, \partial_x + (\mathbf{X}(x) - \mathbf{Y}(-y))\, \partial_y = -2y\, \partial_x + 2x\, \partial_y$. In the proposition the flow of $\mathbf{Y}$ is applied last in the first term; here that is $\psi_t \circ \varphi_s - \varphi_s \circ \psi_t = -2 \sinh s\, \sinh t \begin{psmallmatrix} 0 & 1 \\ -1 & 0 \end{psmallmatrix}$, whose mixed derivative at $(0, 0)$, applied to $p = (x, y)$, is $-2(y, -x) = (-2y, 2x) = [\mathbf{X}, \mathbf{Y}]_p$.
+
+^pf-ex-72-2
+
+*Uses:* [[§72 Lie Derivatives#^prop-72-12|§72.12]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]]
 
 \appendix

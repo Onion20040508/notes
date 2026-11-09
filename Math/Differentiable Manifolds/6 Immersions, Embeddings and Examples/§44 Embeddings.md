@@ -160,7 +160,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 >
 > *Smooth.* $F$ is smooth into $N$ with values in $F(M)$, so $\bar F : M \to F(M)$ is smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2).
 >
-> *Immersion.* Its differential followed by the injective $\iota_\ast$ (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]) is the injective $F_\ast$: by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), $F_{\ast p} = \iota_{\ast F(p)} \circ \bar F_{\ast p}$ for $p \in M$. If $\bar F_{\ast p} v = 0$, then $F_{\ast p} v = \iota_{\ast F(p)}(0) = 0$, so $v = 0$ because $F$ is an immersion. So $\bar F_{\ast p}$ is injective for every $p$.
+> *Immersion.* Its differential followed by the injective $\iota_\ast$ (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]) is the injective $F_\ast$: by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), $F_{\ast p} = \iota_{\ast F(p)} \circ \bar F_{\ast p}$ for $p \in M$. If $\bar F_{\ast p} v = 0$, then $F_{\ast p} v = \iota_{\ast F(p)}(0) = 0$, so $v = 0$ because $F$ is an immersion. So $\bar F_{\ast p}$ is injective for every $p$.
 >
 > *Local diffeomorphism.* Both manifolds have dimension $m$ and $\bar F$ is an immersion at every point, so it is a local diffeomorphism (Proposition [[§36 Submersions#^prop-36-1|§36.1]](3)).
 >
@@ -168,7 +168,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 ^pf-44-3
 
-*Uses:* [[§44 Embeddings#^thm-44-1|§44.1]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§36 Submersions#^prop-36-1|§36.1]], [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]], [[§44 Embeddings#^def-44-1|Def. §44.1]]
+*Uses:* [[§44 Embeddings#^thm-44-1|§44.1]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§36 Submersions#^prop-36-1|§36.1]], [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]], [[§44 Embeddings#^def-44-1|Def. §44.1]]
 
 ## Proper Maps
 
@@ -452,11 +452,11 @@ Closedness of the image alone is not enough: the image of the [[§43 Immersions#
 ^prop-44-14
 
 > [!proof]+ Proof
-> *(Not from lecture.)* Check Definition [[§44 Embeddings#^def-44-4|§44.4]]. With the subspace topology and the induced smooth structure, $S$ is a topological manifold and a smooth manifold (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]). The inclusion $\iota : S \hookrightarrow N$ is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]]) and $\iota_{\ast p}$ is injective at every $p \in S$ (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]), so $\iota$ is a smooth immersion (Definition [[§43 Immersions#^def-43-1|§43.1]]).
+> *(Not from lecture.)* Check Definition [[§44 Embeddings#^def-44-4|§44.4]]. With the subspace topology and the induced smooth structure, $S$ is a topological manifold and a smooth manifold (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]). The inclusion $\iota : S \hookrightarrow N$ is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]]) and $\iota_{\ast p}$ is injective at every $p \in S$ (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]), so $\iota$ is a smooth immersion (Definition [[§43 Immersions#^def-43-1|§43.1]]).
 
 ^pf-44-14
 
-*Uses:* [[§44 Embeddings#^def-44-4|Def. §44.4]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-6|§37.6]], [[§43 Immersions#^def-43-1|Def. §43.1]]
+*Uses:* [[§44 Embeddings#^def-44-4|Def. §44.4]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§43 Immersions#^def-43-1|Def. §43.1]]
 
 > [!theorem] Proposition §44.15: When an Immersed Submanifold Is Regular
 > Let $F : M \to N$ be an injective immersion, and give $S = F(M)$ the structure of [[§44 Embeddings#^prop-44-13|Proposition §44.13]]. The following are equivalent:

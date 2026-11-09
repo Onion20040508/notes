@@ -21,6 +21,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§72 Lie Derivatives#^cor-72-10|Corollary §72.10: Every Vector Field Is Invariant under Its Own Flow]]
+- [[§72 Lie Derivatives#^cor-72-13|Corollary §72.13: Commuting Flows Have Zero Bracket]]
 
 ## Connections
 - TODO

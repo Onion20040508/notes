@@ -2952,8 +2952,8 @@ A smooth chart $(U, \varphi)$ of $M$ with $U \cap S = \{x^{m-k+1} = \cdots = x^m
 
 > [!tip]- Hints: where it lives, examples
 > - Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]] ("a random chart of $M$ is not adapted"); Q2: Proposition [[§37 Regular Submanifolds#^prop-37-2|§37.2]].
-> - Q3: Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]], Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]]. Q4: Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]]; converse: Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] (part 2).
-> - Q5: polar coordinates $(\theta, r - 1)$ on the slit plane, or the graph construction in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]].
+> - Q3: Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]]. Q4: Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]]; converse: Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]] (part 2).
+> - Q5: polar coordinates $(\theta, r - 1)$ on the slit plane, or the graph construction in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]].
 
 #### Conormal space · P2
 
@@ -2967,7 +2967,7 @@ $N_pS = \{\xi \in T^\ast_pM : \xi = 0 \text{ on } \iota_{\ast p}(T_pS)\}$, the a
 - [ ] Q4 **[example]** For $M \subseteq \mathbb{R}^n$, how does $N_pM$ match $(T^{\mathrm{geo}}_pM)^\perp$?
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]; Q2: Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]] ($dx^{m-k+1}|_p, \ldots, dx^m|_p$), Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]] ($dG^j|_p$).
+> - Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]; Q2: Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]] ($dx^{m-k+1}|_p, \ldots, dx^m|_p$), Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]] ($dG^j|_p$).
 > - Q3: the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]. Q4: Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-3|§42.3]]. Bundle version: Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]].
 
 #### Open submanifold of a smooth manifold · P2
@@ -3049,7 +3049,7 @@ For $p\in F^{-1}(S)$, $q=F(p)$: $\operatorname{im}F'(p)+T^{\mathrm{geo}}_qS=\mat
 
 #### Adapted charts give local defining maps · P1
 
-For an adapted chart $(U,\varphi=(x_a,x_b))$, the map $x_b:U\to\mathbb{R}^k$ is smooth, a submersion at every point of $U$, $U\cap S=x_b^{-1}(\vec 0)$ with $\vec 0$ a regular value, and $\iota_{\ast q}(T_qS)=\ker(x_b)_{\ast q}$ for $q\in U\cap S$: a regular submanifold is locally a regular level set, see Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]]. *Source: filled in (Step 2 of Assignment 5, Problem 2).*
+For an adapted chart $(U,\varphi=(x_a,x_b))$, the map $x_b:U\to\mathbb{R}^k$ is smooth, a submersion at every point of $U$, $U\cap S=x_b^{-1}(\vec 0)$ with $\vec 0$ a regular value, and $\iota_{\ast q}(T_qS)=\ker(x_b)_{\ast q}$ for $q\in U\cap S$: a regular submanifold is locally a regular level set, see Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]]. *Source: filled in (Step 2 of Assignment 5, Problem 2).*
 
 ^nd-prop-37-7
 
@@ -3063,13 +3063,13 @@ For an adapted chart $(U,\varphi=(x_a,x_b))$, the map $x_b:U\to\mathbb{R}^k$ is 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S7 (a subspace of the same dimension is everything).
 > - Coordinate representation $(r^1,\dots,r^m)\mapsto(r^{m-k+1},\dots,r^m)$, Jacobian $(0\mid I_k)$.
-> - Inclusion: $(x_b)_{\ast q}$ kills $\partial/\partial x^i|_q$ for $i\le m-k$, whose span is $\iota_{\ast q}(T_qS)$ (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]).
+> - Inclusion: $(x_b)_{\ast q}$ kills $\partial/\partial x^i|_q$ for $i\le m-k$, whose span is $\iota_{\ast q}(T_qS)$ (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]).
 > - Dimensions: $m-k$ on both sides (rank–nullity, $\operatorname{rank}(x_b)_{\ast q}=k$).
 > - This is the input of Step 2 of Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]].
 
 #### Facts about an adapted chart in $\mathbb{R}^n$ · P1
 
-For a chart of $\mathbb{R}^n$ adapted to $M$ with $G=(x^{m+1},\dots,x^n)$: $J(q)=G'(q)$ has rank $n-m$, $T^{\mathrm{geo}}_qM=\ker J(q)$, the columns $X_1(q),\dots,X_m(q)$ of $(\varphi^{-1})'(\varphi(q))$ span $T^{\mathrm{geo}}_qM$, and the gradients $\nabla G^s(q)$ are a basis of $(T^{\mathrm{geo}}_qM)^\perp$, see Lemma [[§37 Regular Submanifolds#^lem-37-10|§37.10]]. These are the steps of Assignment 5, Problem 5(a). → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]].
+For a chart of $\mathbb{R}^n$ adapted to $M$ with $G=(x^{m+1},\dots,x^n)$: $J(q)=G'(q)$ has rank $n-m$, $T^{\mathrm{geo}}_qM=\ker J(q)$, the columns $X_1(q),\dots,X_m(q)$ of $(\varphi^{-1})'(\varphi(q))$ span $T^{\mathrm{geo}}_qM$, and the gradients $\nabla G^s(q)$ are a basis of $(T^{\mathrm{geo}}_qM)^\perp$, see Lemma [[§37 Regular Submanifolds#^lem-37-13|§37.13]]. These are the steps of Assignment 5, Problem 5(a). → drilled as [[Differentiable Manifolds HW Drill#^hw5-5|HW5.5]].
 
 ^nd-lem-37-10
 
@@ -3114,7 +3114,7 @@ If $S_1,S_2\subseteq N$ are regular submanifolds with $S_1\pitchfork S_2$, then 
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S5 (regular value theorem on a well-chosen map), S7 (linear algebra closes the gap); the Euclidean case is Proposition [[§26 Transversality#^prop-26-5|§26.5]].
-> - $G_i$ = the last $k_i$ coordinates of a slice chart (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]); $T_qS_i$ via Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]].
+> - $G_i$ = the last $k_i$ coordinates of a slice chart (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]); $T_qS_i$ via Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]].
 > - $\dim(K_1\cap K_2)=2n-k_1-k_2-\dim(K_1+K_2)$, so the sum is everything iff $\dim\ker dG_q=n-k_1-k_2$ iff rank $k_1+k_2$.
 > - Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]] on $W=U_1\cap U_2$.
 
@@ -3180,7 +3180,7 @@ For each adapted chart $(U,\varphi=(x_a,x_b))$, $\varphi_S=x_a|_{U\cap S}$ is a 
 
 #### Tangent spaces of a regular submanifold · P2
 
-$\iota_{\ast p}:T_pS\to T_pM$ is injective; in an adapted chart, $\iota_{\ast p}(\partial/\partial x^i|^S_p)=\partial/\partial x^i|_p$ for $i\le m-k$, so $\iota_{\ast p}(T_pS)$ is the span of the first $m-k$ coordinate vectors; by curves, $\iota_{\ast p}D_\gamma=D_{\iota\circ\gamma}$, see Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]. *Source: Lecture 12, "immediate from the definitions"; filled in.* **[class exercise, Lecture 12]**
+$\iota_{\ast p}:T_pS\to T_pM$ is injective; in an adapted chart, $\iota_{\ast p}(\partial/\partial x^i|^S_p)=\partial/\partial x^i|_p$ for $i\le m-k$, so $\iota_{\ast p}(T_pS)$ is the span of the first $m-k$ coordinate vectors; by curves, $\iota_{\ast p}D_\gamma=D_{\iota\circ\gamma}$, see Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]. *Source: Lecture 12, "immediate from the definitions"; filled in.* **[class exercise, Lecture 12]**
 
 ^nd-prop-37-6
 
@@ -3313,7 +3313,7 @@ For regular level sets $S_i=G_i^{-1}(0)\subseteq\mathbb{R}^k$ and $q\in S_1\cap 
 
 #### A basis of the conormal space · P3
 
-In an adapted chart at $p$, $\xi=\sum_i\xi_i\,dx^i|_p$ lies in $N_pS$ if and only if $\xi_i=0$ for $i\le m-k$; so $dx^{m-k+1}|_p,\dots,dx^m|_p$ is a basis of $N_pS$ and $\dim N_pS=k$, see Proposition [[§37 Regular Submanifolds#^prop-37-8|§37.8]]. *Source: filled in.*
+In an adapted chart at $p$, $\xi=\sum_i\xi_i\,dx^i|_p$ lies in $N_pS$ if and only if $\xi_i=0$ for $i\le m-k$; so $dx^{m-k+1}|_p,\dots,dx^m|_p$ is a basis of $N_pS$ and $\dim N_pS=k$, see Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]]. *Source: filled in.*
 
 ^nd-prop-37-8
 
@@ -3325,14 +3325,14 @@ In an adapted chart at $p$, $\xi=\sum_i\xi_i\,dx^i|_p$ lies in $N_pS$ if and onl
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S7.
-> - $\iota_{\ast p}(T_pS)=\operatorname{span}\{\partial/\partial x^i|_p:i\le m-k\}$ (Proposition [[§37 Regular Submanifolds#^prop-37-6|§37.6]]); $\xi_i=\xi(\partial/\partial x^i|_p)$.
+> - $\iota_{\ast p}(T_pS)=\operatorname{span}\{\partial/\partial x^i|_p:i\le m-k\}$ (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]); $\xi_i=\xi(\partial/\partial x^i|_p)$.
 > - $\xi\in N_pS$ iff $\xi=\sum_{j>m-k}\xi_j\,dx^j|_p$.
 > - No metric, no orthogonality: with an inner product $T_p^\ast M\cong T_pM$ and $N_pS$ becomes the normal space (remark *No Normal Vectors Without a Metric*).
 > - Used in Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]] ([[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]]).
 
 #### Regular submanifolds of Euclidean space: the slice description · P3
 
-For $X\subseteq\mathbb{R}^{n+k}$ and $p\in X$: $X$ is described externally (equivalently internally, or as a graph) near $p$ if and only if there is a chart of $\mathbb{R}^{n+k}$ at $p$ adapted to $X$; so the regular submanifolds of $\mathbb{R}^{n+k}$ are exactly the manifolds of the geometric stage, see Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]. *Source: filled in.*
+For $X\subseteq\mathbb{R}^{n+k}$ and $p\in X$: $X$ is described externally (equivalently internally, or as a graph) near $p$ if and only if there is a chart of $\mathbb{R}^{n+k}$ at $p$ adapted to $X$; so the regular submanifolds of $\mathbb{R}^{n+k}$ are exactly the manifolds of the geometric stage, see Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]]. *Source: filled in.*
 
 ^nd-prop-37-9
 
@@ -3702,7 +3702,7 @@ Over a chart $(U,\varphi)$ of $\mathbb{R}^n$ adapted to $M$, with $J(q)=G'(q)$, 
 
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1, S7; recipe of the remark *Where Explicit Trivializations Come From* (a smoothly varying basis of each fibre).
-> - (1) Lemma [[§37 Regular Submanifolds#^lem-37-10|§37.10]](4); $JJ^{\mathsf T}c=0$ gives $|J^{\mathsf T}c|^2=0$, and $c\mapsto J^{\mathsf T}c$ is injective.
+> - (1) Lemma [[§37 Regular Submanifolds#^lem-37-13|§37.13]](4); $JJ^{\mathsf T}c=0$ gives $|J^{\mathsf T}c|^2=0$, and $c\mapsto J^{\mathsf T}c$ is injective.
 > - (2) $(JJ^{\mathsf T})^{-1}JJ^{\mathsf T}c=c$; for $v=J^{\mathsf T}c$, $J^{\mathsf T}(JJ^{\mathsf T})^{-1}Jv=v$.
 > - Smooth: entries of $(JJ^{\mathsf T})^{-1}$ by the cofactor formula; $\Theta_U$ smooth into $\mathbb{R}^{2n}$ with values in $\mathcal{N}$, then Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2).
 > - Q7: the formula $\hat\Phi$ is written on all of $U\times\mathbb{R}^n$, which needs $\det(JJ^{\mathsf T})\neq0$ on $U$.
@@ -5416,7 +5416,7 @@ An atlas determines a unique maximal atlas, so "atlas" and "maximal atlas" give 
 
 ### Submanifolds of $\mathbb{R}^N$
 
-For $X \subseteq \mathbb{R}^{n+k}$ near $p$: external (regular level set), internal (parametrization), graph, and slice (adapted chart) descriptions are equivalent, see Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]. *Source: Lectures 5–6, 12 (proofs not from lecture).*
+For $X \subseteq \mathbb{R}^{n+k}$ near $p$: external (regular level set), internal (parametrization), graph, and slice (adapted chart) descriptions are equivalent, see Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]]. *Source: Lectures 5–6, 12 (proofs not from lecture).*
 
 ^nd-eq-5
 
@@ -5432,7 +5432,7 @@ For $X \subseteq \mathbb{R}^{n+k}$ near $p$: external (regular level set), inter
 > - Q2: Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]], i.e. Steps 1–3 of Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] ($k$ independent columns, implicit function theorem Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]).
 > - Q3: $F(x, y) = y - h(x)$ with Jacobian $(-Dh \mid I_k)$; $\alpha(x) = (x, h(x))$ with inverse the projection.
 > - Q4: inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]); then $\alpha(V_1)$ is open in $X \cap W$ because $\alpha$ is a homeomorphism onto it, so it is $X \cap$ (a box).
-> - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] (smooth, injective, open image, smooth inverse $(x, z) \mapsto (x, z + h(x))$; the rows of $\varphi'(q)$ are independent). Q6: Example [[§44 Embeddings#^ex-44-3|§44.3]] (figure-eight).
+> - Q5: Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]] (smooth, injective, open image, smooth inverse $(x, z) \mapsto (x, z + h(x))$; the rows of $\varphi'(q)$ are independent). Q6: Example [[§44 Embeddings#^ex-44-3|§44.3]] (figure-eight).
 
 ### Regular value theorem
 
@@ -5472,7 +5472,7 @@ The Euclidean notion ($\operatorname{im} F'(p) + T^{\mathrm{geo}}S = \mathbb{R}^
 > [!tip]- Hints: route of the proofs in the notes
 > - Strategy: S12 (transversality = the images span; reduce to a regular value of a composite), S5, S8.
 > - Q2: Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]] (2) and Proposition [[§30 The Differential in Coordinates#^prop-30-5|§30.5]]: $\operatorname{im} F'(p)$ and $T^{\mathrm{geo}}_qS = \ker G'(q)$.
-> - Q3: Proposition [[§26 Transversality#^prop-26-3|§26.3]], Theorem [[§26 Transversality#^thm-26-1|§26.1]]. Q4: Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] (Steps 1–7; Proposition [[§37 Regular Submanifolds#^prop-37-7|§37.7]], Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]]).
+> - Q3: Proposition [[§26 Transversality#^prop-26-3|§26.3]], Theorem [[§26 Transversality#^thm-26-1|§26.1]]. Q4: Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] (Steps 1–7; Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]], Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]]).
 > - Q5: Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]], Proposition [[§26 Transversality#^prop-26-5|§26.5]]. Q6: Example [[§26 Transversality#^ex-26-2|§26.2]]; Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-2|§39.2]] (normal spaces isomorphic).
 
 ### Diffeomorphism

@@ -17,7 +17,7 @@ tags: [differentiable-manifolds, hub]
 - [[§36 Submersions#^thm-36-6|Theorem §36.6: Local Normal Form for Submersions]]
 - [[§37 Regular Submanifolds#^prop-37-2|Proposition §37.2: Two Observations on Adapted Charts]]
 - [[§37 Regular Submanifolds#^prop-37-3|Proposition §37.3: The Induced Smooth Structure]]
-- [[§37 Regular Submanifolds#^prop-37-6|Proposition §37.6: Tangent Spaces of a Regular Submanifold]]
+- [[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9: Tangent Spaces of a Regular Submanifold]]
 - [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|Lemma §38.1: Level Sets Near a Regular Point]]
 
 ## Used in (Differentiable Manifolds)
@@ -35,5 +35,5 @@ tags: [differentiable-manifolds, hub]
 ## Connections
 - **Used for.** Every fibre of a submersion is a submanifold ([[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]), in particular every fibre of a fibration ([[§40 Fibrations#^prop-40-2|§40.2]]). It contains the Euclidean versions, with the same smooth structure and tangent spaces ([[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]], [[§38 The Regular Value Theorem for Manifolds#^rem-38-1|The Regular Value Theorems — Old and New]]).
 - **Proof, and its limits.** Near each point of the level set F is a projection, by the [[Submersion Normal Form]], so the level set is a coordinate slice. Fibres of a submersion can still change type: (x, y) ↦ x on ℝ² ∖ {(0, 1)} has one broken fibre ([[§40 Fibrations#^ex-40-1|Ex. §40.1]]). Even all fibres diffeomorphic does not make a fibration ([[§40 Fibrations#^ex-40-2|Ex. §40.2]]), unless the map is also proper and the base connected ([[§40 Fibrations#^thm-40-3|Ehresmann]]).
-- **Same idea elsewhere.** ι_*(T_pS) = ker F_*p generalizes [[Geometric Tangent Space Is the Kernel of the Jacobian]], and dim S = m − n is rank–nullity ([[Fundamental theorem of linear maps]]). The conormal space, of dimension the codimension ([[§37 Regular Submanifolds#^prop-37-8|§37.8]]), is LADR's annihilator ([[§12 Duality#^ladr-3-121|LADR 3.121]], [[§12 Duality#^ladr-3-125|LADR 3.125]]).
+- **Same idea elsewhere.** ι_*(T_pS) = ker F_*p generalizes [[Geometric Tangent Space Is the Kernel of the Jacobian]], and dim S = m − n is rank–nullity ([[Fundamental theorem of linear maps]]). The conormal space, of dimension the codimension ([[§37 Regular Submanifolds#^prop-37-11|§37.11]]), is LADR's annihilator ([[§12 Duality#^ladr-3-121|LADR 3.121]], [[§12 Duality#^ladr-3-125|LADR 3.125]]).
 - **Coming later in the course.** Transversality on manifolds: the preimage of a submanifold under a transverse map is a submanifold of the same codimension, and this theorem is the case of a point. Sard's theorem makes regular values, and transversality, generic.

@@ -2,13 +2,13 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 71.5", "exponential map of a Lie group", "exp is a local diffeomorphism", "Lee Proposition 20.8"]
+aliases: ["MATH 591 71.10", "exponential map of a Lie group", "exp is a local diffeomorphism", "Lee Proposition 20.8"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§71 The Exponential Map#^prop-71-5]]
+![[§71 The Exponential Map#^prop-71-10]]
 
 ## Treated in
-- [[§71 The Exponential Map#^prop-71-5|Proposition §71.5: Smoothness and the Differential at 0]], in [[§71 The Exponential Map]]
+- [[§71 The Exponential Map#^prop-71-10|Proposition §71.10: Smoothness and the Differential at 0]], in [[§71 The Exponential Map]]
 
 ## Its proof uses
 - [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|Corollary §31.5: Velocity of a Composite — Computing Differentials by Curves]]

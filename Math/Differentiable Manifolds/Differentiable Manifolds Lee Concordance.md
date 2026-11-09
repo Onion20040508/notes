@@ -89,7 +89,7 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§67 Integral Curves\|§67]] Integral curves | Chapter 9, *Integral Curves* ((9.1), Lemmas 9.3 and 9.4, Proposition 9.6) |
 | [[§68 Local Existence and Uniqueness\|§68]] Local existence and uniqueness | Chapter 9, *Integral Curves* (Example 9.1, Proposition 9.2); *Flows* (uniqueness, in the proof of Theorem 9.12); Appendix D (Theorem D.1); Problem 9-1 |
 | [[§69 Maximal Integral Curves and Flows\|§69]] Maximal integral curves and flows | Chapter 9, *Flows* (Example 9.10, Theorem 9.12, with its proof; the group law (9.7)); Problem 9-1 |
-| [[§70 Complete Vector Fields\|§70]] Complete vector fields | Chapter 9, *Flows* (Proposition 9.6, Proposition 9.7, Theorem 9.12(c)); *Complete Vector Fields* (Lemma 9.15, Theorem 9.16, Corollary 9.17, Theorem 9.18) |
+| [[§70 Complete Vector Fields\|§70]] Complete vector fields | Chapter 9, *Flows* (Proposition 9.6, Proposition 9.7, Theorem 9.12(c)); *Complete Vector Fields* (Lemma 9.15, Theorem 9.16, Corollary 9.17, Theorem 9.18, Lemma 9.19); Problem 9-6 |
 | [[§71 The Exponential Map\|§71]] The exponential map | Chapter 20, *One-Parameter Subgroups and the Exponential Map* (Theorem 20.1, Propositions 20.2, 20.5 and 20.8, Example 20.4); Problem 20-8 |
 | [[§72 Lie Derivatives\|§72]] Lie derivatives | Chapter 9, *Lie Derivatives* (Lemma 9.36, Theorem 9.38, Corollary 9.39); *Canonical Form Near a Regular Point* (Theorem 9.22); *Commuting Vector Fields* (Theorem 9.42, Corollary 9.43, Theorem 9.44) |
 
@@ -134,7 +134,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem 2.23 | [[§65 Partitions of Unity#^thm-65-7\|Thm. §65.7]] |
 | Proposition 2.25 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]], [[§56 Vector Fields#^prop-56-4\|Prop. §56.4]] |
 | Lemma 2.26 | [[§56 Vector Fields#^cor-56-5\|Cor. §56.5]] |
-| Proposition 2.28 | [[§65 Partitions of Unity#^prop-65-10\|Prop. §65.10]], [[§65 Partitions of Unity#^lem-65-9\|Lem. §65.9]] |
+| Proposition 2.28 | [[§65 Partitions of Unity#^prop-65-13\|Prop. §65.13]], [[§65 Partitions of Unity#^lem-65-12\|Lem. §65.12]] |
 | Lemma 3.1 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-2\|Lem. §28.2]] |
 | Proposition 3.2 | [[§25 The Geometric Tangent Space#^def-25-4\|Def. §25.4]], [[§25 The Geometric Tangent Space#^prop-25-9\|Prop. §25.9]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4\|Lem. §29.4]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-6\|Cor. §29.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|Thm. §29.8]] |
 | Corollary 3.3 | [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-6\|Cor. §29.6]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|Thm. §29.7]], [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]] |
@@ -165,8 +165,9 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem 5.8 | [[§37 Regular Submanifolds#^def-37-2\|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3\|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-3\|Prop. §37.3]] |
 | Corollary 5.14 | [[§7 The Regular Value Theorem#^thm-7-5\|Thm. §7.5]], [[§20 Manifolds in Euclidean Space#^prop-20-2\|Prop. §20.2]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|Thm. §38.2]] |
 | Corollary 5.30 | [[§37 Regular Submanifolds#^lem-37-5\|Lem. §37.5]] |
-| Proposition 5.35 | [[§37 Regular Submanifolds#^prop-37-6\|Prop. §37.6]] |
-| Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|Thm. §29.8]], [[§37 Regular Submanifolds#^prop-37-6\|Prop. §37.6]] |
+| Lemma 5.34 | [[§65 Partitions of Unity#^prop-65-10\|Prop. §65.10]], [[§37 Regular Submanifolds#^lem-37-8\|Lem. §37.8]] |
+| Proposition 5.35 | [[§37 Regular Submanifolds#^prop-37-9\|Prop. §37.9]] |
+| Proposition 5.37 | [[§25 The Geometric Tangent Space#^def-25-1\|Def. §25.1]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|Thm. §29.8]], [[§37 Regular Submanifolds#^prop-37-9\|Prop. §37.9]] |
 | Proposition 5.38 | [[§25 The Geometric Tangent Space#^thm-25-3\|Thm. §25.3]], [[§25 The Geometric Tangent Space#^cor-25-4\|Cor. §25.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|Thm. §29.8]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|Thm. §38.2]] |
 | Problem 5-6 | [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-4\|Def. §42.4]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4\|Prop. §42.4]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-5\|Def. §42.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-5\|Prop. §42.5]] |
 | Exercise 6.1 | [[§62 Sets of Measure Zero#^lem-62-1\|Lem. §62.1]] |
@@ -208,17 +209,20 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 8.41 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3\|Thm. §61.3]] |
 | Theorem 8.44 | [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1\|Lem. §61.1]], [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2\|Prop. §61.2]] |
 | Theorem 8.46 | [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3\|Thm. §61.3]] |
+| Problem 8-15 | [[§65 Partitions of Unity#^thm-65-11\|Thm. §65.11]], [[§59 Related Vector Fields#^lem-59-7\|Lem. §59.7]], [[§65 Partitions of Unity#^ex-65-7\|Ex. §65.7]] |
 | Example 9.1 | [[§68 Local Existence and Uniqueness#^ex-68-1\|Ex. §68.1]] |
 | Proposition 9.2 | [[§68 Local Existence and Uniqueness#^thm-68-2\|Thm. §68.2]] |
 | Lemma 9.3 | [[§67 Integral Curves#^lem-67-4\|Lem. §67.4]] |
 | Lemma 9.4 | [[§67 Integral Curves#^lem-67-4\|Lem. §67.4]] |
-| Proposition 9.6 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]], [[§70 Complete Vector Fields#^prop-70-6\|Prop. §70.6]] |
-| Proposition 9.7 | [[§70 Complete Vector Fields#^thm-70-5\|Thm. §70.5]] |
+| Proposition 9.6 | [[§67 Integral Curves#^lem-67-5\|Lem. §67.5]], [[§70 Complete Vector Fields#^prop-70-10\|Prop. §70.10]] |
+| Proposition 9.7 | [[§70 Complete Vector Fields#^thm-70-9\|Thm. §70.9]] |
 | Example 9.10 | [[§69 Maximal Integral Curves and Flows#^ex-69-1\|Ex. §69.1]] |
-| Theorem 9.12 | [[§68 Local Existence and Uniqueness#^prop-68-3\|Prop. §68.3]], [[§69 Maximal Integral Curves and Flows#^thm-69-4\|Thm. §69.4]], [[§69 Maximal Integral Curves and Flows#^def-69-1\|Def. §69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1\|Prop. §69.1]], [[§69 Maximal Integral Curves and Flows#^lem-69-3\|Lem. §69.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-5\|Prop. §69.5]], [[§70 Complete Vector Fields#^prop-70-3\|Prop. §70.3]] |
+| Theorem 9.12 | [[§68 Local Existence and Uniqueness#^prop-68-3\|Prop. §68.3]], [[§69 Maximal Integral Curves and Flows#^thm-69-4\|Thm. §69.4]], [[§69 Maximal Integral Curves and Flows#^def-69-1\|Def. §69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-1\|Prop. §69.1]], [[§69 Maximal Integral Curves and Flows#^lem-69-3\|Lem. §69.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-5\|Prop. §69.5]], [[§70 Complete Vector Fields#^prop-70-7\|Prop. §70.7]] |
 | Lemma 9.15 | [[§70 Complete Vector Fields#^lem-70-1\|Lem. §70.1]] |
+| Theorem 9.16 | [[§70 Complete Vector Fields#^cor-70-6\|Cor. §70.6]] |
 | Corollary 9.17 | [[§70 Complete Vector Fields#^thm-70-2\|Thm. §70.2]] |
-| Theorem 9.18 | [[§70 Complete Vector Fields#^thm-70-7\|Thm. §70.7]] |
+| Theorem 9.18 | [[§70 Complete Vector Fields#^thm-70-11\|Thm. §70.11]] |
+| Lemma 9.19 | [[§70 Complete Vector Fields#^thm-70-4\|Thm. §70.4]], [[§70 Complete Vector Fields#^cor-70-5\|Cor. §70.5]], [[§70 Complete Vector Fields#^lem-70-3\|Lem. §70.3]] |
 | Theorem 9.22 | [[§72 Lie Derivatives#^lem-72-5\|Lem. §72.5]] |
 | Lemma 9.36 | [[§72 Lie Derivatives#^lem-72-4\|Lem. §72.4]] |
 | Theorem 9.38 | [[§72 Lie Derivatives#^thm-72-6\|Thm. §72.6]] |
@@ -226,6 +230,8 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Theorem 9.42 | [[§72 Lie Derivatives#^thm-72-9\|Thm. §72.9]] |
 | Theorem 9.44 | [[§72 Lie Derivatives#^thm-72-9\|Thm. §72.9]] |
 | Problem 9-1 | [[§68 Local Existence and Uniqueness#^cor-68-4\|Cor. §68.4]], [[§69 Maximal Integral Curves and Flows#^prop-69-2\|Prop. §69.2]] |
+| Problem 9-6 | [[§70 Complete Vector Fields#^thm-70-4\|Thm. §70.4]], [[§70 Complete Vector Fields#^cor-70-5\|Cor. §70.5]] |
+| Problem 9-18 | [[§72 Lie Derivatives#^ex-72-2\|Ex. §72.2]] |
 | Example 10.3 | [[§41 Examples of Fibrations#^ex-41-2\|Ex. §41.2]] |
 | Proposition 11.1 | [[§21 Linear Algebra Toolkit#^def-21-1\|Def. §21.1]], [[§21 Linear Algebra Toolkit#^def-21-2\|Def. §21.2]], [[§21 Linear Algebra Toolkit#^prop-21-2\|Prop. §21.2]] |
 | Proposition 11.4 | [[§21 Linear Algebra Toolkit#^def-21-3\|Def. §21.3]], [[§21 Linear Algebra Toolkit#^prop-21-4\|Prop. §21.4]] |
@@ -237,10 +243,10 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Problem 11-4 | [[§28 Derivations and the Abstract Tangent Space#^def-28-3\|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4\|Def. §28.4]], [[§34 The Cotangent Space from Germs#^prop-34-1\|Prop. §34.1]], [[§34 The Cotangent Space from Germs#^prop-34-2\|Prop. §34.2]], [[§34 The Cotangent Space from Germs#^thm-34-4\|Thm. §34.4]] |
 | Theorem 17.26 | [[§2 Topological Manifolds#^thm-2-1\|Thm. §2.1]] |
 | Theorem 20.1 | [[§71 The Exponential Map#^prop-71-1\|Prop. §71.1]] |
-| Proposition 20.2 | [[§71 The Exponential Map#^thm-71-4\|Thm. §71.4]] |
-| Example 20.4 | [[§71 The Exponential Map#^thm-71-4\|Thm. §71.4]] |
+| Proposition 20.2 | [[§71 The Exponential Map#^thm-71-9\|Thm. §71.9]] |
+| Example 20.4 | [[§71 The Exponential Map#^thm-71-9\|Thm. §71.9]] |
 | Proposition 20.5 | [[§71 The Exponential Map#^prop-71-2\|Prop. §71.2]] |
-| Proposition 20.8 | [[§71 The Exponential Map#^cor-71-3\|Cor. §71.3]], [[§71 The Exponential Map#^prop-71-5\|Prop. §71.5]] |
+| Proposition 20.8 | [[§71 The Exponential Map#^cor-71-3\|Cor. §71.3]], [[§71 The Exponential Map#^prop-71-10\|Prop. §71.10]], [[§71 The Exponential Map#^cor-71-7\|Cor. §71.7]] |
 | Problem 20-8 | [[§71 The Exponential Map#^rem-71-1\|Rem. Warning in §71]] |
 | Lemma 21.1 | [[§13 Group Actions and Orbit Spaces#^lem-13-2\|Lem. §13.2]], [[§13 Group Actions and Orbit Spaces#^lem-13-3\|Lem. §13.3]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1\|Prop. §15.1]] |
 | Example 21.3 | [[§13 Group Actions and Orbit Spaces#^ex-13-8\|Ex. §13.8]] |

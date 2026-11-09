@@ -63,7 +63,7 @@ tags: [differentiable-manifolds, math591]
 ^lem-65-2
 
 > [!proof]+ Proof
-> *(Not from lecture; the argument the proofs of Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] and Proposition [[§65 Partitions of Unity#^prop-65-10|§65.10]] use.)* Let $p \in M$. By local finiteness $p$ has a neighbourhood meeting only finitely many supports; shrinking it, take it open, $U$, and let $F = \{ \alpha \in A : U \cap \operatorname{supp} f_\alpha \neq \varnothing \}$, a finite set. For $\alpha \notin F$, $U$ does not meet $\operatorname{supp} f_\alpha$, which contains $\{ f_\alpha \neq 0 \}$; so $f_\alpha = 0$ on $U$. Hence on $U$
+> *(Not from lecture; the argument the proofs of Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] and Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]] use.)* Let $p \in M$. By local finiteness $p$ has a neighbourhood meeting only finitely many supports; shrinking it, take it open, $U$, and let $F = \{ \alpha \in A : U \cap \operatorname{supp} f_\alpha \neq \varnothing \}$, a finite set. For $\alpha \notin F$, $U$ does not meet $\operatorname{supp} f_\alpha$, which contains $\{ f_\alpha \neq 0 \}$; so $f_\alpha = 0$ on $U$. Hence on $U$
 >
 > $$
 > f = \sum_{\alpha \in F} f_\alpha ,
@@ -304,6 +304,93 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 *Uses:* [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], [[§65 Partitions of Unity#^thm-65-7|§65.7]]
 
+## Application: Extending Functions and Vector Fields from a Submanifold
+
+*(Assignment 7, Problem 1, and what its proof gives.)* The standard use of a partition of unity: build an object locally, in charts, and glue the local pieces. Here the local pieces come from adapted charts (Lemmas [[§37 Regular Submanifolds#^lem-37-8|§37.8]] and [[§59 Related Vector Fields#^lem-59-7|§59.7]]), and the gluing is the next lemma.
+
+> [!theorem] Lemma §65.9: Gluing Vector Fields with a Partition of Unity
+> Let $\{U_\alpha\}_{\alpha \in A}$ be an open cover of $M$, $\mathbf{Y}_\alpha \in \mathfrak{X}(U_\alpha)$ for each $\alpha \in A$, and $\{\chi_\alpha\}_{\alpha \in A}$ a partition of unity subordinate to the cover (Definition [[§65 Partitions of Unity#^def-65-2|§65.2]]). Then:
+>
+> 1. each field $\chi_\alpha \mathbf{Y}_\alpha$, extended by $0$ outside $U_\alpha$, is a smooth vector field on $M$;
+> 2. $\widetilde{\mathbf{X}} = \sum_{\alpha \in A} \chi_\alpha \mathbf{Y}_\alpha$ is a well-defined smooth vector field on $M$;
+> 3. if $p \in M$ and $v \in T_pM$ satisfy $(\mathbf{Y}_\alpha)_p = v$ for every $\alpha$ with $p \in U_\alpha$, then $\widetilde{\mathbf{X}}_p = v$.
+
+^lem-65-9
+
+> [!proof]+ Proof
+> *(Assignment 7, Problem 1: the submitted solution, the steps “Gluing” and “$\widetilde X$ extends $X$”.)* *(1)* The field $\chi_\alpha \mathbf{Y}_\alpha$, $(\chi_\alpha \mathbf{Y}_\alpha)_q = \chi_\alpha(q)(\mathbf{Y}_\alpha)_q$ for $q \in U_\alpha$ and $0$ outside $U_\alpha$, is smooth on the open set $U_\alpha$, as the product of a smooth function and a smooth vector field; it vanishes on the open set $M \setminus \operatorname{supp}\chi_\alpha$; and these two open sets cover $M$, since $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$. Smoothness is local, so $\chi_\alpha \mathbf{Y}_\alpha \in \mathfrak{X}(M)$.
+>
+> *(2)* Let $q \in M$. Since $\{\operatorname{supp}\chi_\alpha\}_{\alpha \in A}$ is locally finite, $q$ has an open neighbourhood $N$ for which $F = \{\alpha \in A : N \cap \operatorname{supp}\chi_\alpha \neq \varnothing\}$ is finite. For $\alpha \notin F$, $\chi_\alpha \mathbf{Y}_\alpha \equiv 0$ on $N$, so on $N$
+>
+> $$
+> \widetilde{\mathbf{X}} = \sum_{\alpha \in F} \chi_\alpha \mathbf{Y}_\alpha ,
+> $$
+>
+> a finite sum of smooth vector fields. Hence $\widetilde{\mathbf{X}}$ is a well-defined vector field, smooth on $N$; as $q$ was arbitrary, $\widetilde{\mathbf{X}} \in \mathfrak{X}(M)$.
+>
+> *(3)* For $\alpha$ with $p \notin U_\alpha$, $\chi_\alpha(p) = 0$, since $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$. Let $A_p = \{\alpha \in A : p \in U_\alpha\}$. Then $\sum_{\alpha \in A_p} \chi_\alpha(p) = \sum_{\alpha \in A} \chi_\alpha(p) = 1$, and
+>
+> $$
+> \widetilde{\mathbf{X}}_p = \sum_{\alpha \in A_p} \chi_\alpha(p)\, (\mathbf{Y}_\alpha)_p = \Big(\sum_{\alpha \in A_p} \chi_\alpha(p)\Big)\, v = v .
+> $$
+
+^pf-65-9
+
+> [!theorem] Proposition §65.10: Extension of Smooth Functions from a Closed Submanifold
+> Let $S \subseteq M$ be a regular submanifold that is closed in $M$, and $f \in C^\infty(S)$. Then there is $\tilde f \in C^\infty(M)$ with $\tilde f|_S = f$.
+>
+> *Lee: Lemma 5.34*
+
+^prop-65-10
+
+> [!proof]+ Proof
+> *(Not from the assignment; filled in: the proof of Theorem [[§65 Partitions of Unity#^thm-65-11|§65.11]] below, with functions in place of vector fields.)* By Lemma [[§37 Regular Submanifolds#^lem-37-6|§37.6]], $S$ is covered by the domains of adapted charts $(U_\alpha, \varphi_\alpha)$, $\alpha \in A'$, with product images; let $\pi_\alpha : U_\alpha \to U_\alpha \cap S$ be their retractions (Lemma [[§37 Regular Submanifolds#^lem-37-7|§37.7]]). Since $S$ is closed, $U_0 = M \setminus S$ is open, and $\{U_\alpha\}_{\alpha \in A}$, $A = A' \sqcup \{0\}$, is an open cover of $M$. Take a subordinate partition of unity $\{\chi_\alpha\}_{\alpha \in A}$ (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]]). Put $f_\alpha = f|_{U_\alpha \cap S} \circ \pi_\alpha \in C^\infty(U_\alpha)$ for $\alpha \in A'$, equal to $f$ on $U_\alpha \cap S$ by Lemma [[§37 Regular Submanifolds#^lem-37-8|§37.8]], and $f_0 = 0$. As in Lemma [[§65 Partitions of Unity#^lem-65-9|§65.9]](1), each $\chi_\alpha f_\alpha$, extended by $0$, is smooth on $M$, with support in $\operatorname{supp}\chi_\alpha$; these supports are locally finite, so $\tilde f = \sum_{\alpha \in A} \chi_\alpha f_\alpha$ is smooth (Lemma [[§65 Partitions of Unity#^lem-65-2|§65.2]]). For $p \in S$: $\chi_0(p) = 0$, since $\operatorname{supp}\chi_0 \subseteq M \setminus S$; $\chi_\alpha(p) = 0$ if $p \notin U_\alpha$; and $f_\alpha(p) = f(p)$ if $p \in U_\alpha$, $\alpha \in A'$. So $\tilde f(p) = \big(\sum_{\alpha} \chi_\alpha(p)\big) f(p) = f(p)$.
+
+^pf-65-10
+
+*Uses:* [[§65 Partitions of Unity#^thm-65-11|§65.11]], [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§37 Regular Submanifolds#^lem-37-7|§37.7]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§37 Regular Submanifolds#^lem-37-8|§37.8]], [[§65 Partitions of Unity#^lem-65-9|§65.9]], [[§65 Partitions of Unity#^lem-65-2|§65.2]]
+
+> [!theorem] Theorem §65.11: Extension of Vector Fields from a Submanifold
+> Let $S \subseteq M$ be a regular submanifold, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(S)$.
+>
+> 1. There are an open set $W \supseteq S$ of $M$ and $\widetilde{\mathbf{X}} \in \mathfrak{X}(W)$ with $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $p \in S$.
+> 2. If $S$ is closed in $M$, one can take $W = M$: there is $\widetilde{\mathbf{X}} \in \mathfrak{X}(M)$ with $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $p \in S$, that is, $\mathbf{X}$ is $\iota$-related to $\widetilde{\mathbf{X}}$ (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]).
+>
+> *Lee: Problem 8-15*
+
+^thm-65-11
+
+> [!proof]+ Proof
+> *(Assignment 7, Problem 1: the submitted solution, which proves (2); its steps are stated above as Lemmas [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§37 Regular Submanifolds#^lem-37-7|§37.7]], [[§37 Regular Submanifolds#^lem-37-8|§37.8]], [[§59 Related Vector Fields#^lem-59-7|§59.7]] and [[§65 Partitions of Unity#^lem-65-9|§65.9]]. The problem as posted did not assume $S$ closed; the submitted solution adds this hypothesis, which Example [[§65 Partitions of Unity#^ex-65-7|§65.7]] shows is needed for (2). Part (1) is filled in.)* For $p \in S$, $\widetilde{\mathbf{X}}_p \in T_pM$ while $\mathbf{X}_p \in T_pS$, so “$\widetilde{\mathbf{X}}$ extends $\mathbf{X}$” means $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$; $\iota_{\ast p}$ is kept explicit throughout.
+>
+> *(2) The open cover.* By Lemma [[§37 Regular Submanifolds#^lem-37-6|§37.6]], every point of $S$ lies in the domain of an adapted chart with product image; let $\{(U_\alpha, \varphi_\alpha)\}_{\alpha \in A'}$ be a family of such charts whose domains cover $S$. Since $S$ is closed in $M$, $U_0 = M \setminus S$ is open in $M$. With $A = A' \sqcup \{0\}$, $\{U_\alpha\}_{\alpha \in A}$ is an open cover of $M$: every $p \in S$ lies in some $U_\alpha$ with $\alpha \in A'$, and every $p \notin S$ lies in $U_0$.
+>
+> *The partition of unity.* By Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] there is a partition of unity $\{\chi_\alpha\}_{\alpha \in A}$ subordinate to $\{U_\alpha\}_{\alpha \in A}$.
+>
+> *The local extensions.* For $\alpha \in A'$, Lemma [[§59 Related Vector Fields#^lem-59-7|§59.7]] gives $\mathbf{Y}_\alpha \in \mathfrak{X}(U_\alpha)$ with $(\mathbf{Y}_\alpha)_p = \iota_{\ast p}(\mathbf{X}_p)$ for $p \in U_\alpha \cap S$; let $\mathbf{Y}_0 = 0 \in \mathfrak{X}(U_0)$.
+>
+> *Gluing.* By Lemma [[§65 Partitions of Unity#^lem-65-9|§65.9]](1) and (2), $\widetilde{\mathbf{X}} = \sum_{\alpha \in A} \chi_\alpha \mathbf{Y}_\alpha \in \mathfrak{X}(M)$. Let $p \in S$. Then $p \notin U_0$, and $(\mathbf{Y}_\alpha)_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $\alpha \in A'$ with $p \in U_\alpha$; by Lemma [[§65 Partitions of Unity#^lem-65-9|§65.9]](3) with $v = \iota_{\ast p}(\mathbf{X}_p)$, $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$.
+>
+> *(1)* *(Filled in.)* Without closedness, let $W = \bigcup_{\alpha \in A'} U_\alpha$, an open set containing $S$ and an open submanifold of $M$ (Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]]). The $U_\alpha$, $\alpha \in A'$, form an open cover of $W$; Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] on the manifold $W$ gives a subordinate partition of unity, and the gluing step, without the index $0$, gives $\widetilde{\mathbf{X}} \in \mathfrak{X}(W)$ with $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$ for $p \in S$.
+
+^pf-65-11
+
+*Uses:* [[§37 Regular Submanifolds#^lem-37-6|§37.6]], [[§37 Regular Submanifolds#^lem-37-7|§37.7]], [[§37 Regular Submanifolds#^lem-37-8|§37.8]], [[§59 Related Vector Fields#^lem-59-7|§59.7]], [[§65 Partitions of Unity#^lem-65-9|§65.9]], [[§65 Partitions of Unity#^ex-65-7|Ex. §65.7]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§37 Regular Submanifolds#^def-37-1|Def. §37.1]]
+
+> [!example] Example §65.7: A Vector Field on a Non-Closed Submanifold That Does Not Extend
+> *(Not from the assignment.)* In $M = \mathbb{R}^2$ let $S = \{(x, 0) : x > 0\}$, and on $S$ let $\mathbf{X} = \frac{1}{x}\, \frac{\partial}{\partial x}\big|^S$. There is no $\widetilde{\mathbf{X}} \in \mathfrak{X}(\mathbb{R}^2)$ with $\widetilde{\mathbf{X}}_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $p \in S$. So the hypothesis “$S$ closed” in Theorem [[§65 Partitions of Unity#^thm-65-11|§65.11]](2) cannot be dropped; by part (1), $\mathbf{X}$ does extend to the open set $W = \{(x, y) : x > 0\}$, for instance by $\frac{1}{x}\, \partial/\partial x$.
+
+^ex-65-7
+
+> [!proof]+ Proof
+> *(Filled in.)* *The setting.* On $U = \{(x, y) : x > 0\}$ the identity chart $(x, y)$ of $\mathbb{R}^2$ is adapted to $S$, with $S \cap U = S = \{y = 0\}$; so $S$ is a regular submanifold of dimension $1$, with chart $x|_S$, and $\mathbf{X}$ is smooth on $S$, its coefficient $1/x$ being smooth for $x > 0$. $S$ is not closed: $(0, 0) \in \overline{S} \setminus S$.
+>
+> *No extension.* Suppose $\widetilde{\mathbf{X}} \in \mathfrak{X}(\mathbb{R}^2)$ extends $\mathbf{X}$, and write $\widetilde{\mathbf{X}} = a\, \partial/\partial x + b\, \partial/\partial y$ with $a, b$ smooth, hence continuous, on $\mathbb{R}^2$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]). For $p = (x, 0) \in S$, $\iota_{\ast p}(\partial/\partial x|^S_p) = \partial/\partial x|_p$ (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]), so $\widetilde{\mathbf{X}}_p = \frac{1}{x}\, \partial/\partial x|_p$ and $a(x, 0) = 1/x$. As $x \to 0^+$, $a(x, 0) \to +\infty$; but $a$ is continuous at $(0, 0)$, so $a(x, 0) \to a(0, 0)$, a real number. This contradiction shows that no extension exists.
+
+^pf-ex-65-7
+
+*Uses:* [[§56 Vector Fields#^prop-56-1|§56.1]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]]
+
 ## An Application: Exhaustion Functions
 
 *Lecture 23. The application of partitions of unity needed for the sketch of the noncompact Whitney embedding theorem ([[§66 The Whitney Embedding Theorem|§66]]): the existence of exhaustion functions, which partitions of unity make quick. Exhaustion functions were defined, and their existence stated, in Lecture 22 with that sketch; they are collected here so that the proof follows the statement.*
@@ -315,33 +402,33 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 ^def-65-6
 
-The cartoon, also used in Morse theory: stand $M$ up with $f$ as the height. The level set at $c$ is the slice at height $c$, and the sublevel set is everything below it, compact for every $c$. It is not obvious that exhaustion functions always exist (Proposition [[§65 Partitions of Unity#^prop-65-10|§65.10]]).
+The cartoon, also used in Morse theory: stand $M$ up with $f$ as the height. The level set at $c$ is the slice at height $c$, and the sublevel set is everything below it, compact for every $c$. It is not obvious that exhaustion functions always exist (Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]]).
 
 The proof starts from a countable cover by open sets with compact closures, which was set as an exercise.
 
-> [!theorem] Lemma §65.9: Countable Precompact Covers
+> [!theorem] Lemma §65.12: Countable Precompact Covers
 > Every manifold $M$ has a countable open cover $\{V_i\}_{i \ge 1}$ such that $\overline{V_i}$ is compact for every $i$.
 >
 > *Lee: Proposition 2.28 (proof)*
 
-^lem-65-9
+^lem-65-12
 
 > [!proof]+ Proof
 > *(Set in Lecture 23 as an exercise, the intended argument using paracompactness; filled in, by paracompactness.)* Every $p \in M$ has an open neighbourhood $W_p$ with $\overline{W_p}$ compact (Proposition [[§2 Topological Manifolds#^prop-2-12|§2.12]]). By Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]] the cover $\{W_p\}_{p \in M}$ has a countable open refinement $\{V_i\}$ covering $M$; if it is finite, repeat one of its sets to index it by $i \ge 1$. Each $V_i$ lies in some $W_{p(i)}$, so $\overline{V_i}$ is a closed subset of the compact set $\overline{W_{p(i)}}$, hence compact. (Another way: the countable basis of precompact sets built in the proof of Lemma [[§65 Partitions of Unity#^lem-65-4|§65.4]] is already such a cover. Local finiteness of the refinement is not needed here.)
 
-^pf-65-9
+^pf-65-12
 
 *Uses:* [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§2 Topological Manifolds#^prop-2-12|§2.12]], [[§65 Partitions of Unity#^lem-65-4|§65.4]], [[§65 Partitions of Unity#^thm-65-5|§65.5]]
 
-> [!theorem] Proposition §65.10: Exhaustion Functions Exist
+> [!theorem] Proposition §65.13: Exhaustion Functions Exist
 > Every smooth manifold admits an exhaustion function.
 >
 > *Lee: Proposition 2.28*
 
-^prop-65-10
+^prop-65-13
 
 > [!proof]+ Proof
-> *(Lecture 23. The proposition was announced in Lecture 22, where the sketch of the noncompact Whitney theorem used it before it was proved.)* Let $\{V_i\}_{i \ge 1}$ be as in Lemma [[§65 Partitions of Unity#^lem-65-9|§65.9]], and let $\{\chi_i\}_{i \ge 1}$ be a partition of unity subordinate to it (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]]). Reviewing what this means (Definition [[§65 Partitions of Unity#^def-65-2|§65.2]]):
+> *(Lecture 23. The proposition was announced in Lecture 22, where the sketch of the noncompact Whitney theorem used it before it was proved.)* Let $\{V_i\}_{i \ge 1}$ be as in Lemma [[§65 Partitions of Unity#^lem-65-12|§65.12]], and let $\{\chi_i\}_{i \ge 1}$ be a partition of unity subordinate to it (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]]). Reviewing what this means (Definition [[§65 Partitions of Unity#^def-65-2|§65.2]]):
 >
 > 1. $0 \le \chi_i \le 1$ for all $i$;
 > 2. $\{\operatorname{supp}\chi_i\}$ is locally finite;
@@ -372,9 +459,9 @@ The proof starts from a countable cover by open sets with compact closures, whic
 >
 > So $p \notin f^{-1}((-\infty, c])$.
 
-^pf-65-10
+^pf-65-13
 
-*Uses:* [[§65 Partitions of Unity#^lem-65-9|§65.9]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]]
+*Uses:* [[§65 Partitions of Unity#^lem-65-12|§65.12]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]]
 
 > [!remark] Remark: Why the Closures
 > Should the contrapositive use the union of the *closures*? The proof shows the inclusion in $\bigcup_{i \le N} V_i$, which is contained in the union of the closures, so it makes no difference. The open sets give the stronger statement; the closures are where compactness lives, since the $V_i$ were chosen so that the $\overline{V_i}$ are compact, and $\bigcup_{i \le N} V_i$ alone need not be compact. Lee runs the contrapositive from $p \notin \bigcup_{j \le N} \overline{V_j}$ instead (Proposition 2.28); either way the sublevel set lands inside the compact set $\bigcup_{j \le N} \overline{V_j}$.

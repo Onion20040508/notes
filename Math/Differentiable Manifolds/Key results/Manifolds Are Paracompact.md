@@ -17,7 +17,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§65 Partitions of Unity#^thm-65-7|Theorem §65.7: Existence of Partitions of Unity]]
-- [[§65 Partitions of Unity#^lem-65-9|Lemma §65.9: Countable Precompact Covers]]
+- [[§65 Partitions of Unity#^lem-65-12|Lemma §65.12: Countable Precompact Covers]]
 
 ## Connections
 - The proof uses an [[§65 Partitions of Unity#^lem-65-4|exhaustion by compact sets]] and refines by basis elements, e.g. regular coordinate balls ([[§65 Partitions of Unity#^lem-65-6|Lemma §65.6]]).

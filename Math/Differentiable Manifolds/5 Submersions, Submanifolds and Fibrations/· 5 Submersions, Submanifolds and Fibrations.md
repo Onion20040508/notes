@@ -7,8 +7,8 @@ tags: [chapter, differentiable-manifolds]
 # 5 Submersions, Submanifolds and Fibrations
 ↑ [[Differentiable Manifolds]]
 
-**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (37), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (5), [[· 3 Smooth Structures|3 Smooth Structures]] (113), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (108), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (1)
-**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 3 Smooth Structures|3 Smooth Structures]] (1), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (71), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (37), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (10), [[· 9 Sard's Theorem|9 Sard's Theorem]] (23), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (1)
+**Builds on:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (37), [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (5), [[· 3 Smooth Structures|3 Smooth Structures]] (114), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (108), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (1)
+**Used by:** [[· 1 Topological Manifolds|1 Topological Manifolds]] (2), [[· 3 Smooth Structures|3 Smooth Structures]] (1), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (71), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (37), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (14), [[· 9 Sard's Theorem|9 Sard's Theorem]] (31), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (1)
 **Builds on (other subjects):** [[Linear Algebra]] (2), [[Topology]] (12), [[Multivariable Analysis]] (1)
 
 ## Sections
@@ -29,7 +29,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]: 341 later results
-- [[§37 Regular Submanifolds#^prop-37-1|Proposition §37.1: Open Subsets of a Product]]: 338 later results
-- [[§37 Regular Submanifolds#^prop-37-3|Proposition §37.3: The Induced Smooth Structure]]: 138 later results
-- [[Local Diffeomorphism Criterion|Theorem §35.2: Local Diffeomorphisms Are Detected by the Differential]]: 137 later results
+- [[§35 Local Diffeomorphisms#^thm-35-1|Theorem §35.1: Inverse Function Theorem]]: 359 later results
+- [[§37 Regular Submanifolds#^prop-37-1|Proposition §37.1: Open Subsets of a Product]]: 356 later results
+- [[§37 Regular Submanifolds#^prop-37-3|Proposition §37.3: The Induced Smooth Structure]]: 156 later results
+- [[§37 Regular Submanifolds#^lem-37-5|Lemma §37.5: Smooth Maps and Regular Submanifolds]]: 153 later results

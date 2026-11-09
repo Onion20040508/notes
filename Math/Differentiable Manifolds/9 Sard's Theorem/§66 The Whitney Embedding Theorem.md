@@ -181,9 +181,9 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 
 ## The Noncompact Case: A Sketch
 
-*Lecture 22. Only a sketch of the proof, with precise references to Lee for the rest. The noncompact proof has the same two parts as the compact one — first put $M$ in some Euclidean space, then project as much as you can — and the lecture sketched only the first. The main tool is the existence of exhaustion functions (Proposition [[§65 Partitions of Unity#^prop-65-10|§65.10]]), proved in [[§65 Partitions of Unity|§65]] with partitions of unity.*
+*Lecture 22. Only a sketch of the proof, with precise references to Lee for the rest. The noncompact proof has the same two parts as the compact one — first put $M$ in some Euclidean space, then project as much as you can — and the lecture sketched only the first. The main tool is the existence of exhaustion functions (Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]]), proved in [[§65 Partitions of Unity|§65]] with partitions of unity.*
 
-The sketch uses an exhaustion function (Definition [[§65 Partitions of Unity#^def-65-6|§65.6]]): a smooth $f \ge 0$ on $M$ whose sublevel sets $f^{-1}\big((-\infty, c]\big)$ are all compact. Every smooth manifold has one (Proposition [[§65 Partitions of Unity#^prop-65-10|§65.10]]); both are in [[§65 Partitions of Unity|§65]], where partitions of unity give the proof.
+The sketch uses an exhaustion function (Definition [[§65 Partitions of Unity#^def-65-6|§65.6]]): a smooth $f \ge 0$ on $M$ whose sublevel sets $f^{-1}\big((-\infty, c]\big)$ are all compact. Every smooth manifold has one (Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]]); both are in [[§65 Partitions of Unity|§65]], where partitions of unity give the proof.
 
 *Slicing $M$ into compact pieces.* The idea is to use level sets of an exhaustion function to slice $M$ into compact pieces, which have boundary (ignored in the sketch), to embed each piece, and to keep track of the overlaps. Let $f$ be an exhaustion function. Its singular values have measure zero (Theorem [[§63 Sard's Theorem#^thm-63-3|§63.3]]), so every interval contains regular values; for each $i = 0, 1, 2, \ldots$ pick regular values $a_i, b_i$ with $i < a_i < b_i < i + 1$, and put
 
@@ -258,7 +258,7 @@ Left: a sublevel set of an exhaustion function on a surface with holes, as on th
 > T_R(S) = \{ x \in \mathbb{R}^n : |x - y| < R \text{ for some } y \in S \} .
 > $$
 >
-> *Step 1: a proper embedding into a tube.* Let $F : M \to \mathbb{R}^N$ be an embedding. The map $G : \mathbb{R}^N \to B^N = \{ y : |y| < 1 \}$, $G(x) = x / \sqrt{1 + |x|^2}$, is a diffeomorphism: it is smooth, $|G(x)|^2 = |x|^2 / (1 + |x|^2) < 1$, and $y \mapsto y / \sqrt{1 - |y|^2}$ is a smooth inverse (if $y = G(x)$ then $1 - |y|^2 = 1/(1 + |x|^2)$, so $y / \sqrt{1 - |y|^2} = x$; the other composite is checked the same way). Let $f$ be an exhaustion function on $M$ (Proposition [[§65 Partitions of Unity#^prop-65-10|§65.10]]) and
+> *Step 1: a proper embedding into a tube.* Let $F : M \to \mathbb{R}^N$ be an embedding. The map $G : \mathbb{R}^N \to B^N = \{ y : |y| < 1 \}$, $G(x) = x / \sqrt{1 + |x|^2}$, is a diffeomorphism: it is smooth, $|G(x)|^2 = |x|^2 / (1 + |x|^2) < 1$, and $y \mapsto y / \sqrt{1 - |y|^2}$ is a smooth inverse (if $y = G(x)$ then $1 - |y|^2 = 1/(1 + |x|^2)$, so $y / \sqrt{1 - |y|^2} = x$; the other composite is checked the same way). Let $f$ be an exhaustion function on $M$ (Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]]) and
 >
 > $$
 > \Phi_0 = (G \circ F, f) : M \longrightarrow \mathbb{R}^{N+1} .
@@ -284,7 +284,7 @@ Left: a sublevel set of an exhaustion function on a surface with holes, as on th
 
 ^pf-66-8
 
-*Uses:* [[§65 Partitions of Unity#^prop-65-10|§65.10]], [[§44 Embeddings#^thm-44-5|§44.5]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]], [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]], [[§62 Sets of Measure Zero#^lem-62-1|§62.1]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§66 The Whitney Embedding Theorem#^lem-66-4|§66.4]]
+*Uses:* [[§65 Partitions of Unity#^prop-65-13|§65.13]], [[§44 Embeddings#^thm-44-5|§44.5]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]], [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]], [[§62 Sets of Measure Zero#^lem-62-1|§62.1]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§66 The Whitney Embedding Theorem#^lem-66-4|§66.4]]
 
 > [!theorem] Proposition §66.9: The Slices Are Compact and Embed in $\mathbb{R}^{2m+1}$
 > Let $f$ be an exhaustion function on $M$, $\dim M = m$, and let $b < a$ be regular values of $f$. Let $E = f^{-1}\big([b, a]\big)$, or $E = f^{-1}\big((-\infty, a]\big)$.
@@ -343,7 +343,7 @@ This gives the immersion half of Theorem [[§66 The Whitney Embedding Theorem#^t
 >
 > *$M$ compact.* Lemma [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]] gives an embedding into some $\mathbb{R}^k$.
 >
-> *$M$ noncompact.* Let $f$ be an exhaustion function (Proposition [[§65 Partitions of Unity#^prop-65-10|§65.10]]), and let $a_i, b_i$, $D_i$, $E_i$ be as in the slicing above: regular values $i < a_i < b_i < i + 1$ (they exist by Theorem [[§63 Sard's Theorem#^thm-63-3|§63.3]]), $D_0 = f^{-1}\big((-\infty, 1]\big)$, $E_0 = f^{-1}\big((-\infty, a_1]\big)$, and for $i \ge 1$, $D_i = f^{-1}\big([i, i + 1]\big)$, $E_i = f^{-1}\big([b_{i-1}, a_{i+1}]\big)$. By Proposition [[§66 The Whitney Embedding Theorem#^prop-66-9|§66.9]], each $E_i$ admits an embedding $F_i : E_i \to \mathbb{R}^{2m+1}$.
+> *$M$ noncompact.* Let $f$ be an exhaustion function (Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]]), and let $a_i, b_i$, $D_i$, $E_i$ be as in the slicing above: regular values $i < a_i < b_i < i + 1$ (they exist by Theorem [[§63 Sard's Theorem#^thm-63-3|§63.3]]), $D_0 = f^{-1}\big((-\infty, 1]\big)$, $E_0 = f^{-1}\big((-\infty, a_1]\big)$, and for $i \ge 1$, $D_i = f^{-1}\big([i, i + 1]\big)$, $E_i = f^{-1}\big([b_{i-1}, a_{i+1}]\big)$. By Proposition [[§66 The Whitney Embedding Theorem#^prop-66-9|§66.9]], each $E_i$ admits an embedding $F_i : E_i \to \mathbb{R}^{2m+1}$.
 >
 > *The cutoffs.* For $i \ge 1$ choose $c_i, d_i$ with $b_{i-1} < c_i < i$ and $i + 1 < d_i < a_{i+1}$, and put $A_i = f^{-1}\big([c_i, d_i]\big)$, $U_i = f^{-1}\big((b_{i-1}, a_{i+1})\big)$; for $i = 0$ choose $1 < d_0 < a_1$ and put $A_0 = f^{-1}\big((-\infty, d_0]\big)$, $U_0 = f^{-1}\big((-\infty, a_1)\big)$. $A_i$ is closed, $U_i$ is open, $A_i \subseteq U_i$, and $U_i \subseteq E_i$, so $U_i \subseteq \operatorname{Int}E_i$. Proposition [[§65 Partitions of Unity#^prop-65-8|§65.8]] gives a smooth $\rho_i : M \to [0, 1]$ with $\rho_i \equiv 1$ on $A_i$, hence on the open neighbourhood $f^{-1}\big((c_i, d_i)\big)$ of $D_i$ (for $i = 0$, $f^{-1}\big((-\infty, d_0)\big)$), and $\operatorname{supp}\rho_i \subseteq U_i \subseteq \operatorname{Int}E_i$.
 >
@@ -359,7 +359,7 @@ This gives the immersion half of Theorem [[§66 The Whitney Embedding Theorem#^t
 
 ^pf-66-11
 
-*Uses:* [[§66 The Whitney Embedding Theorem#^lem-66-8|§66.8]], [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]], [[§65 Partitions of Unity#^prop-65-10|§65.10]], [[§63 Sard's Theorem#^thm-63-3|§63.3]], [[§66 The Whitney Embedding Theorem#^prop-66-9|§66.9]], [[§65 Partitions of Unity#^prop-65-8|§65.8]], [[§66 The Whitney Embedding Theorem#^prop-66-7|§66.7]], [[§66 The Whitney Embedding Theorem#^prop-66-10|§66.10]]
+*Uses:* [[§66 The Whitney Embedding Theorem#^lem-66-8|§66.8]], [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]], [[§65 Partitions of Unity#^prop-65-13|§65.13]], [[§63 Sard's Theorem#^thm-63-3|§63.3]], [[§66 The Whitney Embedding Theorem#^prop-66-9|§66.9]], [[§65 Partitions of Unity#^prop-65-8|§65.8]], [[§66 The Whitney Embedding Theorem#^prop-66-7|§66.7]], [[§66 The Whitney Embedding Theorem#^prop-66-10|§66.10]]
 
 In other words, every manifold is diffeomorphic to a submanifold of some Euclidean space (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]). The course proves the compact case in full (Theorem [[§66 The Whitney Embedding Theorem#^thm-66-6|§66.6]]). The noncompact case, which first makes the embedding proper, was sketched in Lecture 22 and assigned as reading in Lee (Lemma 6.14 and Theorem 6.15, with a figure of the tube construction); the proof above is Lee's, with two facts about manifolds with boundary cited (Proposition [[§66 The Whitney Embedding Theorem#^prop-66-9|§66.9]]).
 
