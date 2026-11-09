@@ -12,7 +12,7 @@ tags: [functional-analysis, math556]
 This is the first application of [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]], and the reason the theorem was stated with a general $p$ rather than a norm: the $p$ that gets used is the [[§7 Convex Sets and the Gauge#^def-7-2|gauge]] of a convex set. Recall (Definitions [[§5 Statement and Motivation#^def-5-3|§5.3]] and [[§5 Statement and Motivation#^def-5-4|§5.4]]) that for a nonzero linear functional $\ell : X \to \mathbb{R}$ and $c \in \mathbb{R}$, $\{\ell = c\}$ is a hyperplane and $\{\ell < c\}$, $\{\ell > c\}$ are the two half-spaces it bounds; in $\mathbb{R}^n$, with $\ell(x) = a \cdot x$, which side is “$> c$” is determined by the direction of $a$.
 
 > [!theorem] Theorem §8.1: Hyperplane Separation; Geometric Hahn–Banach
-> Let $X$ be a linear space over $\mathbb{R}$, let $K \subset X$ be a nonempty convex set in which every point is an interior point, and let $y_0 \in X$ with $y_0 \notin K$. Then there is a hyperplane that separates $y_0$ from $K$: there exist a linear functional $\ell : X \to \mathbb{R}$ and $c_0 \in \mathbb{R}$ such that
+> Let $X$ be a linear space over $\mathbb{R}$, let $K \subset X$ be a nonempty [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|convex set]] in which every point is an [[§7 Convex Sets and the Gauge#^def-7-1|interior point]], and let $y_0 \in X$ with $y_0 \notin K$. Then there is a [[§5 Statement and Motivation#^def-5-3|hyperplane]] that separates $y_0$ from $K$: there exist a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]] $\ell : X \to \mathbb{R}$ and $c_0 \in \mathbb{R}$ such that
 >
 > $$
 > \ell(y_0) = c_0 \qquad \text{but} \qquad \ell(x) < c_0 \quad \text{for all } x \in K.

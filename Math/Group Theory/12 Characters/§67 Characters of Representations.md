@@ -105,7 +105,7 @@ So a character is determined by one value per conjugacy class, which is much les
 > | permutation, $\mathbb{R}^3 = \mathbb{R}(1,1,1) \oplus U$ | $3$ | $1$ | $0$ |
 >
 > - *Trivial:* every $\rho(g)$ is the $1 \times 1$ matrix $[1]$.
-> - *Permutation representation:* the trace of a permutation matrix counts the basis vectors $e_i$ sent to themselves, i.e. the fixed points: $3$ for $e$, $1$ for $(1\,2)$, whose matrix $\left(\begin{smallmatrix} 0&1&0\\1&0&0\\0&0&1 \end{smallmatrix}\right)$ has one $1$ on the diagonal, and $0$ for $(1\,2\,3)$. It is not simple.
+> - *Permutation representation:* the trace of a permutation matrix counts the basis vectors $e_i$ sent to themselves, i.e. the [[§26 Stabilizers and Fixed Points#^def-26-2|fixed points]]: $3$ for $e$, $1$ for $(1\,2)$, whose matrix $\left(\begin{smallmatrix} 0&1&0\\1&0&0\\0&0&1 \end{smallmatrix}\right)$ has one $1$ on the diagonal, and $0$ for $(1\,2\,3)$. It is not simple.
 > - *$U$:* by additivity (Proposition [[§67 Characters of Representations#^prop-67-2|§67.2]]), $\chi_U = \chi_{\mathbb{R}^3} - \chi_{\mathrm{triv}} = (2, 0, -1)$, matching the traces of the matrices $\rho_{U_2}(g)$ in Example [[§61 Representations and Subrepresentations#^ex-61-3|§61.3]].
 > - *Sign:* $\rho(g) = [\operatorname{sgn} g]$, so the values are those of $\operatorname{sgn}$: $1$, $-1$, and $1$ for the even permutation $(1\,2\,3)$.
 >

@@ -237,6 +237,7 @@ tags: [group-theory, math493]
 
 ^pf-8-3
 
+*Uses:* [[§5 A Zoo of Subgroups#^cor-5-2|§5.2]], [[§8 Invertibility and Unit Groups#^prop-8-1|§8.1]], [[§7 The Group ℤ∕nℤ#^prop-7-1|§7.1]]
 > [!remark] Remark: Computing Inverses in $U_n$
 > The proof is constructive: the extended Euclidean algorithm computes the Bézout coefficients, hence the inverse (as in Example [[§8 Invertibility and Unit Groups#^ex-8-3|§8.3]]).
 

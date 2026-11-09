@@ -10,7 +10,7 @@ tags: [functional-analysis, math556]
 *Stage: norms — Thread: convexity. A norm is a symmetric gauge (Proposition [[§11 Normed Linear Spaces#^prop-11-1|§11.1]]); with it come distance, convergence and closed sets.*
 
 > [!remark] Note: Notation
-> Wu writes norms as $|x|$ on the board. These notes use $\|x\|$, reserving $|\cdot|$ for the modulus of a scalar; the two appear side by side in the homogeneity axiom.
+> On the board norms are written $|x|$. These notes use $\|x\|$, reserving $|\cdot|$ for the modulus of a scalar; the two appear side by side in the homogeneity axiom.
 
 ^rem-11-1
 
@@ -54,7 +54,7 @@ tags: [functional-analysis, math556]
 
 ^pf-11-1
 
-*Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§7 Convex Sets and the Gauge#^prop-7-1|§7.1]], [[§7 Convex Sets and the Gauge#^prop-7-5|§7.5]], [[§7 Convex Sets and the Gauge#^prop-7-6|§7.6]]
+*Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]], [[§7 Convex Sets and the Gauge#^prop-7-1|§7.1]], [[§7 Convex Sets and the Gauge#^prop-7-5|§7.5]], [[§7 Convex Sets and the Gauge#^prop-7-6|§7.6]]
 
 > [!remark] Remark: Relation to the Functions $p$ of Chapter 2
 > By (a), every [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] statement applies with $p = \|\cdot\|$ or $p = C\|\cdot\|$. The converse of (a) is false, and not only because a positive homogeneous subadditive $p$ may take negative values: even a non-negative one with $p(x) = 0 \Rightarrow x = 0$ need not be a norm, since nothing forces $p(-x) = p(x)$ (Example [[§11 Normed Linear Spaces#^ex-11-1|§11.1]] below). By (b) and (c), norms on a real space correspond to convex sets with $0$ interior that contain no full ray and are symmetric; the unit ball is the geometric picture of the norm, as with the disk, square and diamond of Example [[§5 Statement and Motivation#^ex-5-2|§5.2]].
@@ -145,7 +145,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 ^def-11-4
 
 > [!remark]- Connections
-> - In 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-4|551 Def. §34.4]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]].
+> - In 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-3|551 Def. §34.3]]; in a metric space: [[§13 Some Topological Concepts in Metric Spaces#^def-13-2|451 Def. §13.2]].
 > - Convergence in a topological space: [[§8 Interior and Closure#^def-8-6|590 Def. §8.6]], which for the norm metric is this definition.
 
 > [!theorem] Lemma §11.3: Reverse Triangle Inequality
@@ -214,7 +214,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 ^pf-11-5
 
-*Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§5 Statement and Motivation#^lem-5-1|§5.1]]
+*Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§11 Normed Linear Spaces#^def-11-2|Def. §11.2]], [[§5 Statement and Motivation#^lem-5-1|§5.1]]
 
 > [!definition] Definition §11.5: Cauchy Sequence
 > A sequence $\{x_n\} \subset X$ is **Cauchy** if for every $\varepsilon > 0$ there is $N = N(\varepsilon) \in \mathbb{N}$ such that
@@ -240,6 +240,12 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 ^pf-11-6
 
+*Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]]
+
+> [!remark]- Connections
+> - The real-line and metric versions: [[§10a Cauchy Sequences#^thm-10a-1|451 §10a.1]] (convergent implies Cauchy), [[§13 Some Topological Concepts in Metric Spaces#^rem-13-4|451, uniqueness of limits]].
+> - Part (a) holds in every Hausdorff space ([[§9 Hausdorff Spaces#^thm-9-3|590 Thm. §9.3]]), and metric spaces are Hausdorff ([[§12 Metric Topology#^thm-12-4|590 Thm. §12.4]]).
+
 > [!remark] Remark
 > Convergence refers to a limit *in $X$*; a Cauchy sequence has its terms approaching one another with no limit mentioned. The converse of (b) fails: a Cauchy sequence may fail to converge because the point it is heading toward is missing from $X$ — the standard example being a sequence of rationals approaching $\sqrt{2}$ inside $\mathbb{Q}$ (Example [[§11 Normed Linear Spaces#^ex-11-3|§11.3]] below). Spaces without this defect are the subject of the [[§12 Completeness|next section]]. Both statements, and their proofs, hold verbatim in any metric space.
 
@@ -254,12 +260,6 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > 2. *No limit in $\mathbb{Q}$.* Suppose $q_n \to q$ with $q \in \mathbb{Q}$. Then $|q - \sqrt{2}| \le |q - q_n| + |q_n - \sqrt{2}| \to 0$, so $q = \sqrt{2}$, which is irrational — a contradiction.
 
 ^ex-11-3
-
-*Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]]
-
-> [!remark]- Connections
-> - The real-line and metric versions: [[§10a Cauchy Sequences#^thm-10a-1|451 §10a.1]] (convergent implies Cauchy), [[§13 Some Topological Concepts in Metric Spaces#^rem-13-4|451, uniqueness of limits]].
-> - Part (a) holds in every Hausdorff space ([[§9 Hausdorff Spaces#^thm-9-3|590 Thm. §9.3]]), and metric spaces are Hausdorff ([[§12 Metric Topology#^thm-12-4|590 Thm. §12.4]]).
 
 > [!definition] Definition §11.6: Closed Subset
 > A subset $S$ of a normed linear space (or metric space) $X$ is **closed** if it contains the limits of all its convergent sequences: whenever $\{s_n\} \subset S$ and $s_n \to x$ with $x \in X$, then $x \in S$.

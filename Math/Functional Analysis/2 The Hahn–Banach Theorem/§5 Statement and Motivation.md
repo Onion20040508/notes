@@ -78,6 +78,8 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 
 ^pf-5-2
 
+*Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]]
+
 > [!example] Example §5.1: Three Examples on $\mathbb{R}^n$
 > On $X = \mathbb{R}^n$, the following are positive homogeneous and subadditive:
 > - (a) $p_1(x) = \Bigl(\sum_{i=1}^n x_i^2\Bigr)^{1/2} = \|x\|$, the Euclidean length. For $a \geq 0$,
@@ -107,7 +109,7 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 > ![[m556-3-1.svg]]
 > *The three sets $\{p < 1\}$ in $\mathbb{R}^2$: the open disk, square and diamond. The boundaries are dashed because the points with $p = 1$ are not included.*
 >
-> All three sets are convex. This is not a coincidence: there is a correspondence between convex sets and positive homogeneous subadditive functions, to be made precise [[§7 Convex Sets and the Gauge#^cor-7-8|later in the course]]. In finite dimensions the picture already suggests it.
+> All three sets are [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|convex]]. This is not a coincidence: there is a correspondence between convex sets and positive homogeneous subadditive functions, to be made precise [[§7 Convex Sets and the Gauge#^cor-7-8|later in the course]]. In finite dimensions the picture already suggests it.
 
 ^ex-5-2
 
@@ -118,7 +120,7 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 ## The Hahn–Banach Theorem (Real Version)
 
 > [!theorem] Theorem §5.3: Hahn–Banach
-> Let $X$ be a linear space over $\mathbb{R}$, and let $p : X \to \mathbb{R}$ be positive homogeneous and subadditive. Let $Y$ be a linear subspace of $X$ and $\ell : Y \to \mathbb{R}$ a linear functional on $Y$ satisfying
+> Let $X$ be a linear space over $\mathbb{R}$, and let $p : X \to \mathbb{R}$ be [[§5 Statement and Motivation#^def-5-1|positive homogeneous]] and [[§5 Statement and Motivation#^def-5-2|subadditive]]. Let $Y$ be a [[§1 Linear Spaces#^def-1-2|linear subspace]] of $X$ and $\ell : Y \to \mathbb{R}$ a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]] on $Y$ satisfying
 >
 > $$
 > \ell(y) \leq p(y) \qquad \text{for all } y \in Y.
@@ -136,6 +138,7 @@ Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{
 
 > [!remark]- Connections
 > - Proof: [[§6 Proof of the Hahn–Banach Theorem#^pf-5-3|§6]]. Applied to a gauge: [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]. Complex scalars: [[§9 The Complex Hahn–Banach Theorem#^thm-9-2|§9.2]].
+> - In normed spaces, with $p$ a multiple of the norm (norm-preserving extension): [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]].
 
 > [!remark] Note: Notation
 > Throughout these notes a functional given on a subspace is written $\ell$ and its extension $L$. The lecture and Lax keep the name $\ell$ for the extension; the distinction is kept here because several proofs manipulate both at once.

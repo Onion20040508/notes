@@ -92,6 +92,7 @@ tags: [group-theory, math493]
 
 ^pf-29-4
 
+*Uses:* [[§8 Invertibility and Unit Groups#^prop-8-3|§8.3]], [[§29 The Index and Lagrange's Theorem#^cor-29-3|§29.3]]
 > [!remark] Remark: Uses of Lagrange
 > The divisibility $|H| \mid |G|$ is the main tool for locating subgroups of a finite group (Example [[§29 The Index and Lagrange's Theorem#^ex-29-1|§29.1]]). It also explains the pattern observed in [[§15 Homomorphisms|§15]] for $\mathbb{Z}/6\mathbb{Z} \to U_7$, $k \mapsto 2^k$ (Example [[§29 The Index and Lagrange's Theorem#^ex-29-2|§29.2]]): the index of the kernel equals the order of the image, a fact that the [[§41 The First and Second Isomorphism Theorems#^thm-41-1|first isomorphism theorem]] will make precise for every homomorphism. Note also that the [[§29 The Index and Lagrange's Theorem#^ex-29-3|converse of Lagrange fails]] in general: a divisor of $|G|$ need not be the order of a subgroup (Example [[§29 The Index and Lagrange's Theorem#^ex-29-3|§29.3]], below).
 
@@ -197,6 +198,7 @@ tags: [group-theory, math493]
 
 ^pf-29-8
 
+*Uses:* [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]]
 > [!theorem] Corollary §29.9: Exactly One Group of Each Prime Order
 > Let $p$ be a prime.
 >

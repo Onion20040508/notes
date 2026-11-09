@@ -875,7 +875,7 @@ $M = G^{-1}(0)$, $G : N \to \mathbb{R}^k$, $0$ a regular value. Prove $\{dG^1_p,
 
 ^hw5-4-b
 
-- [ ] Q4 Show $\dim N_pM = k$ using an adapted chart. (Or without a chart: $\iota_p^{\ast}$ is onto because $\iota_{\ast p}$ is injective, the dual of an injection being a surjection; then rank–nullity. The official route, [[§37 Regular Submanifolds#^pf-37-11-2|second proof of Prop §37.8]].)
+- [ ] Q4 Show $\dim N_pM = k$ using an adapted chart. (Or without a chart: $\iota_p^{\ast}$ is onto because $\iota_{\ast p}$ is injective, the dual of an injection being a surjection; then rank–nullity. The official route, [[§37 Regular Submanifolds#^pf-37-11-2|second proof of Prop §37.11]].)
 - [ ] Q5 Show $dG^j_p \in N_pM$.
 - [ ] Q6 Show the $dG^j_p$ are independent: if $\sum c_j dG^j_p = 0$, pick $v$ with $G_{\ast p}v = c$.
 - [ ] Q7 Derive $d\Phi_p = \sum\lambda_j dG^j_p$ (in $\mathbb{R}^n$: $\nabla\Phi = \sum\lambda_j\nabla G^j$) at critical points; why are the $\lambda_j$ unique?

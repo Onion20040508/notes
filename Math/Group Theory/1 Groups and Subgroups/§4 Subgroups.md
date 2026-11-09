@@ -121,6 +121,7 @@ tags: [group-theory, math493]
 
 ^pf-4-4
 
+*Uses:* [[§2 First Consequences of the Axioms#^prop-2-3|§2.3]]
 > [!remark] Remark: Two Non-Laws
 > The exponent laws concern powers of a *single* element. For two elements:
 >
@@ -359,6 +360,7 @@ tags: [group-theory, math493]
 
 ^pf-4-10
 
+*Uses:* [[§4 Subgroups#^lem-4-4|§4.4]], [[§1 The Set ℕ of Natural Numbers#^thm-1-2|451 §1.2]]
 > [!example] Example §4.4: An Element of Infinite Order: $1 \in \mathbb{Z}$
 > In $(\mathbb{Z}, +)$, written additively, the $N$-th power of $1$ is $N \cdot 1 = 1 + \cdots + 1 = N$ (induction on $N$ from Definition [[§4 Subgroups#^def-4-2|§4.2]]). For every $N \geq 1$, $N \cdot 1 = N \neq 0$, so no positive $N$ kills $1$, and $1$ has infinite order. The powers $k \cdot 1 = k$ ($k \in \mathbb{Z}$) are pairwise distinct: they never repeat, because there is unlimited room. So the finiteness hypothesis in Proposition [[§4 Subgroups#^prop-4-10|§4.10]] cannot be dropped.
 

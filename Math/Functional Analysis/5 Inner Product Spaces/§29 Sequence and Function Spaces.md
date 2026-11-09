@@ -31,11 +31,11 @@ The $L^2$ inner product restricted to $C[a,b]$ proves a sharp integral inequalit
 
 ## ℓᵖ, ℓ², ℓ∞ and c₀
 
-$\ell^2$ is the one $\ell^p$ whose norm comes from an inner product (and [[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|only p = 2]] does), and it is a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-1|example]]). The sequence spaces supply the counterexamples: in $\ell^1$ closest points need not be unique ([[§25 Projection and Orthogonal Decomposition#^rem-25-2|remark]]); $c_{00} \subset \ell^2$ shows that orthogonal decomposition needs a closed subspace; and the shifted vectors $e_{n+1}$ are orthonormal but not complete ([[§27 Orthonormal Sets and Bases#^rem-27-8|remark]]), while the standard basis is an orthonormal basis.
+$\ell^2$ is the one $\ell^p$ whose norm comes from an inner product (and [[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|only p = 2]] does), and it is a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-1|example]]). The sequence spaces supply the counterexamples: in $\ell^1$ closest points need not be unique ([[§25 Projection and Orthogonal Decomposition#^ex-25-1|example]]); $c_{00} \subset \ell^2$ shows that orthogonal decomposition needs a closed subspace; and the shifted vectors $e_{n+1}$ are orthonormal but not complete ([[§27 Orthonormal Sets and Bases#^ex-27-2|example]]), while the standard basis is an orthonormal basis.
 
 ![[§22 Definition and Examples#^ex-22-2]]
 
-![[§25 Projection and Orthogonal Decomposition#^rem-25-5]]
+![[§25 Projection and Orthogonal Decomposition#^ex-25-4]]
 
 ![[§27 Orthonormal Sets and Bases#^ex-27-1]]
 
@@ -91,10 +91,10 @@ The two moves of the proof: cut off the tail, which is small because the series 
 > *A uniform estimate.* Let $\varepsilon > 0$ and choose $N$ with $|a^{(k)} - a^{(m)}| < \varepsilon$ for all $k, m \ge N$. Then $|a^{(k)}_n - a^{(m)}_n| < \varepsilon$ for all $n$ and all $k, m \ge N$. Fix $n$ and $k \ge N$ and let $m \to \infty$; since $a^{(m)}_n \to a_n$ and non-strict inequalities survive limits,
 >
 > $$
-> |a^{(k)}_n - a_n| \le \varepsilon \qquad \text{for all } n \text{ and all } k \ge N. \tag{5.4}
+> |a^{(k)}_n - a_n| \le \varepsilon \qquad \text{for all } n \text{ and all } k \ge N. \tag{5.5}
 > $$
 >
-> *$a \in c_0$.* With $\varepsilon$ and $N$ as above, $a^{(N)} \in c_0$, so there is $n_0$ with $|a^{(N)}_n| < \varepsilon$ for $n > n_0$. By (5.4), for $n > n_0$,
+> *$a \in c_0$.* With $\varepsilon$ and $N$ as above, $a^{(N)} \in c_0$, so there is $n_0$ with $|a^{(N)}_n| < \varepsilon$ for $n > n_0$. By (5.5), for $n > n_0$,
 >
 > $$
 > |a_n| \le |a_n - a^{(N)}_n| + |a^{(N)}_n| < \varepsilon + \varepsilon = 2\varepsilon .
@@ -102,7 +102,7 @@ The two moves of the proof: cut off the tail, which is small because the series 
 >
 > As $\varepsilon > 0$ was arbitrary, $a_n \to 0$, i.e. $a \in c_0$.
 >
-> *Convergence.* For $k \ge N$, $a^{(k)} - a \in c_0$ by Step 2, and by (5.4) every term of it has modulus at most $\varepsilon$; so $|a^{(k)} - a| \le \varepsilon$. Hence $a^{(k)} \to a$ in $c_0$, and $(c_0, |\cdot|)$ is a Banach space.
+> *Convergence.* For $k \ge N$, $a^{(k)} - a \in c_0$ by Step 2, and by (5.5) every term of it has modulus at most $\varepsilon$; so $|a^{(k)} - a| \le \varepsilon$. Hence $a^{(k)} \to a$ in $c_0$, and $(c_0, |\cdot|)$ is a Banach space.
 >
 > **Step 5: $c_0$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].** Let
 >
@@ -116,24 +116,24 @@ The two moves of the proof: cut off the tail, which is small because the series 
 
 ^pf-29-2
 
+*Uses:* [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§3 Countability of Rationals and Unions#^cor-3-2|551 §3.2]]
+
 > [!theorem] Corollary §29.3: $c_0$ is a Closed Subspace of $\ell^\infty$
 > *(Not from lecture.)* $c_0$ is a linear subspace of $\ell^\infty$, the norm $|\cdot|$ of Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]] is the restriction of $\|\cdot\|_\infty$ (on $c_0$ the supremum is a maximum), and $c_0$ is closed in $\ell^\infty$.
 
 ^cor-29-3
 
 > [!proof]+ Proof
-> A sequence tending to $0$ is bounded, so $c_0 \subset \ell^\infty$, and $c_0$ is a linear subspace by Step 2 of the proof of Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]. For $a \in c_0$, Step 1 of that proof shows that $\sup_n |a_n|$ is attained, so $\|a\|_\infty = \max_n |a_n| = |a|$. Closedness: let $a^{(k)} \in c_0$ with $\|a^{(k)} - a\|_\infty \to 0$ for some $a \in \ell^\infty$. Given $\varepsilon > 0$ there is $N$ with $|a^{(k)}_n - a_n| \le \varepsilon$ for all $n$ and all $k \ge N$; this is (?), and the part “$a \in c_0$” of Step 4 uses nothing else, so $a \in c_0$. Thus Step 4 is exactly the statement that a uniform limit of sequences tending to $0$ tends to $0$. (Alternatively: $c_0$ is complete by Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]], hence closed by Lemma [[§12 Completeness#^lem-12-2|§12.2]].)
+> A sequence tending to $0$ is bounded, so $c_0 \subset \ell^\infty$, and $c_0$ is a linear subspace by Step 2 of the proof of Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]. For $a \in c_0$, Step 1 of that proof shows that $\sup_n |a_n|$ is attained, so $\|a\|_\infty = \max_n |a_n| = |a|$. Closedness: let $a^{(k)} \in c_0$ with $\|a^{(k)} - a\|_\infty \to 0$ for some $a \in \ell^\infty$. Given $\varepsilon > 0$ there is $N$ with $|a^{(k)}_n - a_n| \le \varepsilon$ for all $n$ and all $k \ge N$; this is (5.5), and the part “$a \in c_0$” of Step 4 uses nothing else, so $a \in c_0$. Thus Step 4 is exactly the statement that a uniform limit of sequences tending to $0$ tends to $0$. (Alternatively: $c_0$ is complete by Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]], hence closed by Lemma [[§12 Completeness#^lem-12-2|§12.2]].)
 
 ^pf-29-3
 
 *Uses:* [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]], [[§12 Completeness#^lem-12-2|§12.2]]
 
 > [!remark] Remark
-> The truncation argument of Technique 15 works for $c_0$ because the tail of an element of $c_0$ is small in the supremum norm — which is precisely what fails for a general bounded sequence.
+> The truncation argument of [[Functional Analysis Problem-Solving Techniques#^rem-t15|Technique 15]] works for $c_0$ because the tail of an element of $c_0$ is small in the supremum norm — which is precisely what fails for a general bounded sequence.
 
 ^rem-29-1
-
-*Uses:* [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]], [[§4 The Completeness Axiom#^thm-4-7|451 §4.7]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§3 Countability of Rationals and Unions#^cor-3-2|551 §3.2]]
 
 > [!theorem] Proposition §29.4: $\ell^\infty$ is Not Separable
 > $\ell^\infty$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]]) is not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
@@ -206,7 +206,7 @@ $L^2(\Omega)$ carries the integral inner product and is a Hilbert space. $C_c(\m
 
 ^pf-29-5
 
-*Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^def-19-1|Def. §19.1]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-4|§19.4]], [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]], [[Minkowski's Inequality|551 §35.2]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]]
+*Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^def-19-1|Def. §19.1]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-4|§19.4]], [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-2|§19.2]], [[Minkowski's Inequality|551 §35.2]], [[Countable Union of Countable Sets is Countable|551 §3.1]], [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]]
 
 > [!remark]- Connections
 > - Vault home: [[§35 Lᵖ as a Banach Space#^cor-35-13|551 §35.13]], via density of step functions and of $C_c$ in $L^p$, [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]] (its (iii) is the compactly supported density used in Step 1).

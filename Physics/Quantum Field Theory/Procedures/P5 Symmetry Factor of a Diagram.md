@@ -40,7 +40,7 @@ Turns a Feynman diagram of a polynomial interaction into its coefficient: the sy
 | One-loop $2 \to 2$ ($s$, $t$, $u$) | $\phi^4$, $n = 2$: $1152$ | $576$ each, $S = 2$: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^ex-c6c-5-1\|Example §C6c.5.1]] | $2!$ (two parallel lines) |
 | Source vacuum lines | $j\phi$, $2m$ vertices: $(2m)!$ | one orbit, $S = 2^m\,m!$: [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-3\|Theorem §C6c.7.3]] | $2^m$ flips, $m!$ lines |
 | Yukawa diagrams | $\bar\psi\psi\phi$: three kinds of legs, $\lvert G\rvert = n!$ | every diagram with external points $S = 1$; second-order bubbles $S = 2$: [[§C6d.4 First Order#^thm-c6d-4-7\|Theorem §C6d.4.7]] | no leg permutations |
-| Photon lines | C6d, QED rules (planned) | | |
+| Photon lines | [[§C8.4 Feynman Rules for QED#^thm-c8-4-4\|Theorem §C8.4.4]], item 3 | | |
 
 ## Pitfalls
 

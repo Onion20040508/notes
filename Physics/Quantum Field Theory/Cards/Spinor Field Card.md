@@ -178,6 +178,16 @@ Microcausality:
 | fermion line | written against the arrow: $\bar u\cdots u$, $\bar u\cdots v$, $\bar v\cdots u$, $\bar v\cdots v$, a number | [[§C6d.2 Contractions with External Fermions#^thm-c6d-2-4\|Theorem §C6d.2.4]] |
 | signs | each diagram $(-1)^{\#\text{crossings}}$ of its contractions with the external states; closed loop $-1$ and a trace; no symmetry factors; relative sign $-$ for exchanged fermions, $+$ for exchanged bosons | [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-4\|Theorem §C6d.3.4]], [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-5|Theorem §C6d.3.5]], [[§C6d.5 Second Order#^thm-c6d-5-4|Theorem §C6d.5.4]], [[§C6d.4 First Order#^thm-c6d-4-6\|Theorem §C6d.4.6]], [[§C6d.4 First Order#^thm-c6d-4-7\|Theorem §C6d.4.7]] |
 
+## 9c. QED and the nonrelativistic limit (Lecture 18)
+
+| | formula | home |
+| --- | --- | --- |
+| QED | $\mathcal L = \bar\psi(i\slashed D - m)\psi - \frac14F^2$, $D_\mu = \partial_\mu + ieA_\mu$; vertex $-ie\gamma^\mu$; $e$ the charge of the particle of $\hat\psi$ | [[§C8.1 The QED Lagrangian and the Covariant Derivative#^mod-c8-1-1\|Model §C8.1.1]], [[§C8.1 The QED Lagrangian and the Covariant Derivative#^thm-c8-1-4\|Theorem §C8.1.4]], [[§C8.4 Feynman Rules for QED#^thm-c8-4-3\|Theorem §C8.4.3]] |
+| spinor products, $\lvert\mathbf p\rvert \ll m$ | $\bar u^{s'}(p')u^s(p) \to 2m\,\delta^{ss'}$, $\bar u^{s'}(p')\gamma^0u^s(p) \to 2m\,\delta^{ss'}$, $\bar u\gamma^iu = O(\lvert\mathbf p\rvert)$; $\bar v^r(k)v^{r'}(k') \to -2m\,\delta^{rr'}$, $\bar v^r(k)\gamma^0v^{r'}(k') \to +2m\,\delta^{rr'}$ | [[§C6d.7 The Yukawa Potential#^thm-c6d-7-1\|Theorem §C6d.7.1]], [[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^thm-c8-5-1\|Theorem §C8.5.1]], [[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^thm-c8-5-4\|Theorem §C8.5.4]] |
+| Born comparison | $i\mathcal M_{\rm NR} = -i\tilde V(\mathbf q)$, $\mathcal M_{\rm NR}$ without the factors $2m\,\delta$ | [[§C6d.7 The Yukawa Potential#^def-c6d-7-1\|Def. §C6d.7.1]], [[§C6d.7 The Yukawa Potential#^thm-c6d-7-5\|Theorem §C6d.7.5]] |
+| contraction sign | $ff'$: $+$ (2 crossings); $f\bar f'$: $-$ (3); $\bar f\bar f'$: $+$ (4); with $(\vert f\rangle)^\dagger = \langle f\vert$ the sign of $\mathcal M$ relative to the $\mathbb 1$ of $\hat S$ is physical | [[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^thm-c8-5-5\|Theorem §C8.5.5]], [[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^thm-c8-5-6\|Theorem §C8.5.6]] |
+| potentials | scalar: $-\frac{g^2}{4\pi r}e^{-m_\phi r}$ for $ff$, $f\bar f$, $\bar f\bar f$; vector: $+\frac{e^2}{4\pi r}$ for $ff$, $\bar f\bar f$, $-\frac{e^2}{4\pi r}$ for $f\bar f$ | [[§C6d.7 The Yukawa Potential#^thm-c6d-7-3\|Theorem §C6d.7.3]], [[§C6d.7 The Yukawa Potential#^thm-c6d-7-4\|Theorem §C6d.7.4]], [[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^thm-c8-5-7\|Theorem §C8.5.7]], [[§C8.5 The Coulomb Potential, and Why Like Charges Repel#^pr-c8-5-8\|Principle §C8.5.8]] |
+
 ## 10. Parity
 
 | | Formula | Home |

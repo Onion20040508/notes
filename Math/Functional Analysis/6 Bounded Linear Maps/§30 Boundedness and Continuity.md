@@ -202,13 +202,13 @@ The completeness of $C^m(\overline{\Omega})$ in this norm is not needed for Exam
 >
 > **Step 1: limits of the derivatives.** Let $\{f_k\}$ be Cauchy in $C^m(\overline{\Omega})$. For each $|\alpha| \le m$, $\|\partial^\alpha f_k - \partial^\alpha f_j\|_\infty \le \|f_k - f_j\|_{C^m(\overline{\Omega})}$, so $\{\partial^\alpha f_k\}_k$ is Cauchy in $(C(\overline{\Omega}), \|\cdot\|_\infty)$. This space is complete: $\overline{\Omega}$ is compact (closed and bounded), and the proof of Theorem [[§12 Completeness#^thm-12-1|§12.1]] carries over with $[a,b]$ replaced by $\overline{\Omega}$. So $\partial^\alpha f_k \to g_\alpha$ uniformly on $\overline{\Omega}$, for some $g_\alpha \in C(\overline{\Omega})$.
 >
-> **Step 2: one derivative.** *Claim:* if $h_k$ are functions on $\Omega$ whose partial derivatives $\partial_{x_i} h_k$ exist and are continuous on $\Omega$, and $h_k \to h$, $\partial_{x_i} h_k \to g$ uniformly on $\Omega$ with $g$ continuous, then $\partial_{x_i} h$ exists on $\Omega$ and equals $g$. Fix $x \in \Omega$ and $r > 0$ with $B_r(x) \subset \Omega$ ($\Omega$ is open). For $|t| < r$ the segment from $x$ to $x + t e_i$ lies in $B_r(x)$, and the fundamental theorem of calculus for $s \mapsto h_k(x + s e_i)$ gives
+> **Step 2: one derivative.** *Claim:* if $h_k$ are functions on $\Omega$ whose partial derivatives $\partial_{x_i} h_k$ exist and are continuous on $\Omega$, and $h_k \to h$, $\partial_{x_i} h_k \to g$ uniformly on $\Omega$ with $g$ continuous, then $\partial_{x_i} h$ exists on $\Omega$ and equals $g$. Fix $x \in \Omega$ and $r > 0$ with $B_r(x) \subset \Omega$ ($\Omega$ is open). For $|t| < r$ the segment from $x$ to $x + t e_i$ lies in $B_r(x)$, and the [[§34 Fundamental Theorem of Calculus#^thm-34-1|fundamental theorem of calculus]] for $s \mapsto h_k(x + s e_i)$ gives
 >
 > $$
 > h_k(x + t e_i) - h_k(x) = \int_0^t \partial_{x_i} h_k(x + s e_i)\, ds .
 > $$
 >
-> As $k \to \infty$ the left side tends to $h(x + t e_i) - h(x)$, and the right side to $\int_0^t g(x + s e_i)\, ds$, since the difference is at most $|t| \sup_\Omega |\partial_{x_i} h_k - g| \to 0$. So $h(x + t e_i) - h(x) = \int_0^t g(x + s e_i)\, ds$ for $|t| < r$, and since $s \mapsto g(x + s e_i)$ is continuous, the fundamental theorem of calculus gives $\partial_{x_i} h(x) = g(x)$.
+> As $k \to \infty$ the left side tends to $h(x + t e_i) - h(x)$, and the right side to $\int_0^t g(x + s e_i)\, ds$, since the difference is at most $|t| \sup_\Omega |\partial_{x_i} h_k - g| \to 0$. So $h(x + t e_i) - h(x) = \int_0^t g(x + s e_i)\, ds$ for $|t| < r$, and since $s \mapsto g(x + s e_i)$ is continuous, the fundamental theorem of calculus in its second form ([[§34 Fundamental Theorem of Calculus#^thm-34-4|451 §34.4]]) gives $\partial_{x_i} h(x) = g(x)$.
 >
 > **Step 3: all derivatives up to order $m$.** Put $g = g_0$. We show by induction on $|\alpha| \le m$ that $\partial^\alpha g$ exists on $\Omega$ and equals $g_\alpha$; the case $\alpha = 0$ is the definition. If $1 \le |\alpha| \le m$, let $i$ be the smallest index with $\alpha_i \ge 1$ and $\beta = \alpha - e_i$. Then $\partial^\alpha = \partial_{x_i} \partial^\beta$, because $\partial_{x_i}^{\alpha_i}$ is the leftmost factor of $\partial^\alpha$, and $\partial^\beta g = g_\beta$ by the induction hypothesis. Apply Step 2 to $h_k = \partial^\beta f_k$: these converge uniformly to $g_\beta$, and $\partial_{x_i} h_k = \partial^\alpha f_k$ is continuous and converges uniformly to $g_\alpha$. So $\partial_{x_i} g_\beta = g_\alpha$, i.e. $\partial^\alpha g = g_\alpha$. Hence the derivatives of $g$ up to order $m$ exist, are continuous, and extend continuously to $\overline{\Omega}$ (as the $g_\alpha$): $g \in C^m(\overline{\Omega})$.
 >
@@ -216,7 +216,7 @@ The completeness of $C^m(\overline{\Omega})$ in this norm is not needed for Exam
 
 ^pf-30-4
 
-*Uses:* [[§30 Boundedness and Continuity#^ex-30-1|Ex. §30.1]], [[§12 Completeness#^thm-12-1|Thm. §12.1]]
+*Uses:* [[§30 Boundedness and Continuity#^ex-30-1|Ex. §30.1]], [[§12 Completeness#^thm-12-1|§12.1]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 §34.4]]
 
 > [!theorem] Proposition §30.5: Differentiation is Unbounded in the Maximum Norm
 > Give $C^\infty(\overline{\Omega})$ the norm $\|f\| = \max_{x \in \overline{\Omega}} |f(x)|$ (a norm under which $C^\infty(\overline{\Omega})$ is not complete). Then $Tf = \partial_{x_1} f$ is a linear map $C^\infty(\overline{\Omega}) \to C^\infty(\overline{\Omega})$ that is *not* bounded: there is no $M$ with $\max_{\overline{\Omega}} |\partial_{x_1} f| \le M \max_{\overline{\Omega}} |f|$ for all $f$.
@@ -248,6 +248,8 @@ The same happens in one variable with only one derivative available, which is th
 
 > [!theorem] Proposition §30.6: $\frac{d}{dt}$ is Unbounded from $C^1[0,1]$ to $C[0,1]$ in the Maximum Norm
 > Let $\|f\|_\infty = \max_{t \in [0,1]} |f(t)|$ for $f \in C[0,1]$. The linear map $M = \frac{d}{dt}$ is not bounded from $(C^1[0,1], \|\cdot\|_\infty)$ to $(C[0,1], \|\cdot\|_\infty)$.
+>
+> *Source: HW9, Problem 1*
 
 ^prop-30-6
 
@@ -265,7 +267,7 @@ The same happens in one variable with only one derivative available, which is th
 *Uses:* [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]
 
 > [!remark] Remark
-> The two examples have the same formula and opposite answers. In the first, the norm of the target counts one derivative fewer than the norm of the domain, so the derivative taken by $T$ is already paid for; in the second, both norms see only the values of $f$, and derivatives cannot be controlled by the values of a function.
+> Example [[§30 Boundedness and Continuity#^ex-30-1|§30.1]] and Proposition [[§30 Boundedness and Continuity#^prop-30-5|§30.5]] have the same formula and opposite answers. In the first, the norm of the target counts one derivative fewer than the norm of the domain, so the derivative taken by $T$ is already paid for; in the second, both norms see only the values of $f$, and derivatives cannot be controlled by the values of a function.
 
 ^rem-30-2
 

@@ -75,7 +75,7 @@ Recall that the closed unit ball in $\mathbb{R}^n$ is compact, while the closed 
 > [!example] Example §43.1: Weak but Not Strong Convergence in $\ell^2$
 > In $\ell^2 = \{ a = (a_1, a_2, \ldots) : \sum_{j=1}^\infty |a_j|^2 < \infty \}$ let $e_n = (0, \ldots, 0, 1, 0, \ldots)$, with $1$ in the $n$-th place; $\|e_n\|_{\ell^2} = 1$. Claim: $e_n \rightharpoonup 0$ in $\ell^2$, but $\{e_n\}$ does not converge strongly.
 >
-> Indeed, $(\ell^2)' = \ell^2$: every $\ell \in (\ell^2)'$ is $\ell(x) = (x, a)$ for some $a = (a_1, a_2, \ldots) \in \ell^2$ (Riesz representation). Then $(e_n, a) = \overline{a_n}$, and $\sum_n |a_n|^2 < \infty$ forces $a_n \to 0$ as $n \to \infty$ (the terms of a convergent series tend to $0$). So $\ell(e_n) \to 0 = \ell(0)$. If $\{e_n\}$ converged strongly to some $x$, then by Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]] it would also converge weakly to $x$, so $x = 0$ by uniqueness; but $\|e_n - 0\| = 1$ for all $n$.
+> Indeed, $(\ell^2)' = \ell^2$: every $\ell \in (\ell^2)'$ is $\ell(x) = (x, a)$ for some $a = (a_1, a_2, \ldots) \in \ell^2$ ([[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation]]). Then $(e_n, a) = \overline{a_n}$, and $\sum_n |a_n|^2 < \infty$ forces $a_n \to 0$ as $n \to \infty$ (the terms of a convergent series tend to $0$). So $\ell(e_n) \to 0 = \ell(0)$. If $\{e_n\}$ converged strongly to some $x$, then by Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]] it would also converge weakly to $x$, so $x = 0$ by uniqueness; but $\|e_n - 0\| = 1$ for all $n$.
 >
 > *Lax: Ch. 10, Example 1 (left as an exercise there)*
 
@@ -101,7 +101,7 @@ The same holds in any Hilbert space, by an abstract argument.
 
 ^pf-43-2
 
-*Uses:* [[§27 Orthonormal Sets and Bases#^thm-27-5|§27.5]]
+*Uses:* [[§27 Orthonormal Sets and Bases#^thm-27-5|§27.5]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]
 
 > [!example] Example §43.2: $\sin(mx) \rightharpoonup 0$ in $L^2[0, 2\pi]$
 > In $L^2([0, 2\pi])$ the functions $f_m(x) = \frac{1}{\sqrt\pi} \sin(mx)$, $m = 1, 2, \ldots$, form an orthonormal set (left to the class).
@@ -116,6 +116,8 @@ The same holds in any Hilbert space, by an abstract argument.
 ^ex-43-2
 
 ![[m556-43-1.svg]]
+
+*The graph of $\sin(mx)$ for large $m$: it oscillates between $-1$ and $1$ faster and faster without settling down.*
 
 ![[m556-43-2.svg]]
 
@@ -202,6 +204,8 @@ Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, 
 
 ![[m556-43-3.svg]]
 
+*The closed convex set $K$ (blue), its enlargement $K_\varepsilon$ (dashed red), which still misses $x_0$, and a separating hyperplane $\{\ell = a\}$ with $x_0$ strictly on one side and $K$ strictly on the other.*
+
 > [!proof]+ Proof
 > If $K = \varnothing$, take $\ell = 0$ and $a = -1$. Otherwise let $d = \inf_{y \in K} \|x_0 - y\|$; then $d > 0$, since otherwise there are $y_k \in K$ with $y_k \to x_0$, and $K$ closed would give $x_0 \in K$. Fix $0 < \varepsilon < d$ and define $K_\varepsilon$ as above.
 >
@@ -277,7 +281,7 @@ In other words, the weak limit can be approximated in norm by convex combination
 
 ^pf-43-7
 
-*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]
+*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-4|Def. §3.4]]
 
 ![[m556-43-4.svg]]
 
@@ -286,7 +290,7 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 ## $\sin(mx)$ in $L^p$
 
 > [!example] Example §43.3: $\sin(mx) \rightharpoonup 0$ in $L^p[0, 2\pi]$ for $1 < p < \infty$
-> We know $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]]). Since $|\sin(mx)| \le 1$, also $\sin(mx) \in L^p([0, 2\pi])$ for $1 \le p < \infty$. *Question:* does $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$ for all $1 < p < \infty$? Yes. (The case $p = 1$ is subtler and is excluded here; see Remark [[§43 Weak and Weak-Star Convergence#^rem-43-1|remark]].)
+> We know $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]]). Since $|\sin(mx)| \le 1$, also $\sin(mx) \in L^p([0, 2\pi])$ for $1 \le p < \infty$. *Question:* does $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$ for all $1 < p < \infty$? Yes. (The case $p = 1$ is subtler and is excluded here; see [[§43 Weak and Weak-Star Convergence#^rem-43-1|the remark Two Questions for Homework]].)
 >
 > Recall $(L^p)' = L^{p'}$ with $\frac1p + \frac1{p'} = 1$, so $1 < p' < \infty$ (Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]). We check the two conditions of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]].
 >
@@ -345,7 +349,7 @@ On $X'$ two notions are available: weak convergence ($X'$ is a normed space, tes
 
 ^pf-43-8
 
-*Uses:* [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]], [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Def. §37.1]]
 
 > [!example] Example §43.4: Weak-$\ast$ but Not Weak
 > $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ does not imply $\ell_n \rightharpoonup \ell_0$. Let $\ell^\infty_0 = c_0 = \{ (a_1, a_2, \ldots) : \lim_n a_n = 0 \}$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]). Then $(c_0)' = \ell^1$ (homework) and $(\ell^1)' = \ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]). Consider $e_n = (0, \ldots, 0, 1, 0, \ldots) \in \ell^1$.

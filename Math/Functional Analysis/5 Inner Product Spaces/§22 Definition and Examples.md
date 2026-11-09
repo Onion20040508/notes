@@ -28,6 +28,10 @@ tags: [functional-analysis, math556]
 
 ^def-22-1
 
+> [!remark]- Connections
+> - The finite-dimensional definition: [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]] (inner product), [[§20 Inner Products and Norms#^ladr-6-4|LADR 6.4]] (inner product space).
+> - Computational version: [[§56 Inner Product Spaces#^def-56-1|235 Def. §56.1]] (the real axioms, with weighted, evaluation and integral inner products worked out).
+
 > [!remark] Remark: Reading the Complex Axioms
 > Three points.
 >
@@ -38,6 +42,9 @@ tags: [functional-analysis, math556]
 > Third, positivity is a statement about a real number even though $(\cdot,\cdot)$ is complex-valued: $(x,x) \in \mathbb{R}$ automatically (Lemma [[§22 Definition and Examples#^lem-22-1|§22.1]]), and the inequality $(x,x) \ge 0$ makes sense. The real case is the special case of the complex one in which all values are real and conjugation does nothing. (The second and third points were not made in lecture.)
 
 ^rem-22-1
+
+> [!remark]- Connections
+> - The physicists' convention, used in the quantum mechanics chapter: [[§44 Bras, Kets, and the Riesz Map#^rem-44-1|Remark: Conventions]].
 
 > [!theorem] Lemma §22.1: The Number $(x,x)$ is Real
 > *(Not from lecture.)* Let $X$ be a complex linear space and $(\cdot,\cdot) : X \times X \to \mathbb{C}$ skew-symmetric, $(x,y) = \overline{(y,x)}$ for all $x, y$. Then $(x,x) \in \mathbb{R}$ for every $x \in X$.
@@ -66,13 +73,6 @@ tags: [functional-analysis, math556]
 ^pf-22-2
 
 *Uses:* [[§22 Definition and Examples#^lem-22-1|§22.1]]
-
-> [!remark]- Connections
-> - The finite-dimensional definition: [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]] (inner product), [[§20 Inner Products and Norms#^ladr-6-4|LADR 6.4]] (inner product space).
-> - Computational version: [[§56 Inner Product Spaces#^def-56-1|235 Def. §56.1]] (the real axioms, with weighted, evaluation and integral inner products worked out).
-
-> [!remark]- Connections
-> - The physicists' convention, used in the quantum mechanics chapter: [[§44 Bras, Kets, and the Riesz Map#^rem-44-1|Remark: Conventions]].
 
 > [!example] Example §22.1: Euclidean Spaces
 > On $\mathbb{R}^n$, $(x,y) = \sum_{i=1}^n x_i y_i$ is an inner product — the dot product. On $\mathbb{C}^n$,
@@ -120,7 +120,7 @@ tags: [functional-analysis, math556]
 ^ex-22-3
 
 > [!remark]- Connections
-> - $L^2(E)$ as a Hilbert space in 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^rem-34-1|551 Remark §19.1]]; Hölder's inequality there: [[Hölder's Inequality|551 §34.5]].
+> - $L^2(E)$ as a Hilbert space in 551: [[§34 Normed Linear Spaces and Lᵖ Spaces#^rem-34-1|551 §34, Remark]]; Hölder's inequality there: [[Hölder's Inequality|551 §34.5]].
 > - Computational version: [[§56 Inner Product Spaces#^ex-56-4|235 Ex. §56.4]] (the same integral inner product on the continuous functions C[a, b]).
 
 > [!remark] Remark

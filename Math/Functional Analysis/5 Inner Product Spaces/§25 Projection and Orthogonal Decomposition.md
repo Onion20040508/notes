@@ -57,70 +57,6 @@ Everything from here on uses completeness, and the results are the ones for whic
 
 ^thm-25-2
 
-> [!remark] Remark: Where Each Hypothesis Enters
-> Convexity puts the midpoint $\tfrac{y_m + y_n}{2}$ in $K$, which is what makes the cross term in the parallelogram law large and forces $\|y_n - y_m\|$ small; this is the whole mechanism, and it is why the parallelogram law — hence an inner product, not merely a norm — is needed. Completeness of $H$ turns the Cauchy sequence into a limit; closedness of $K$ keeps that limit in $K$. The theorem fails without each: in $\ell^1$ (no inner product) closest points need not be unique (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-1|§25.1]]); in an incomplete inner product space a minimizing sequence need not converge (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-2|§25.2]]); for $K$ open the infimum need not be attained (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-3|§25.3]]). The same midpoint argument gives uniqueness.
-
-^rem-25-2
-
-> [!example] Example §25.1: Closest Points in $\ell^1$ Need Not Be Unique
-> *(Details filled in.)* In the Banach space $\ell^1$ (Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]) let
->
-> $$
-> K = \{ t e_1 + (1 - t) e_2 : 0 \le t \le 1 \}, \qquad x_0 = 0 .
-> $$
->
-> We show that $K$ is nonempty, closed and convex, and that every point of $K$ is a closest point to $x_0$.
->
-> *Convex.* For $t, s, \lambda \in [0,1]$, $(1 - \lambda)\bigl( t e_1 + (1-t) e_2 \bigr) + \lambda \bigl( s e_1 + (1-s) e_2 \bigr) = u e_1 + (1 - u) e_2$ with $u = (1 - \lambda) t + \lambda s \in [0,1]$.
->
-> *Closed.* Let $y_k = t_k e_1 + (1 - t_k) e_2 \in K$ converge to $y$ in $\ell^1$. A single coordinate is at most the $\ell^1$ norm, so $|t_k - y_1| \le \|y_k - y\|_1 \to 0$, and $t_k \to t := y_1 \in [0,1]$ because $[0,1]$ is closed. Then $\|y_k - (t e_1 + (1-t) e_2)\|_1 = |t_k - t| + |t - t_k| \to 0$, and by uniqueness of limits $y = t e_1 + (1-t) e_2 \in K$.
->
-> *Every point is closest.* For $y = t e_1 + (1-t) e_2 \in K$, $\|x_0 - y\|_1 = |t| + |1 - t| = t + (1 - t) = 1$. So $\operatorname{dist}(x_0, K) = 1$, and it is attained at every one of the infinitely many points of $K$.
->
-> Here $\ell^1$ is complete and $K$ is closed and convex; what is missing is the parallelogram law, which fails in $\ell^1$ (Corollary [[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|§24.3]]).
-
-^ex-25-1
-
-> [!example] Example §25.2: No Closest Point in an Incomplete Inner Product Space
-> *(Details filled in.)* Let $X = c_{00}$, the finitely supported sequences, with the inner product $(y, z) = \sum_i y_i \overline{z_i}$ of $\ell^2$ (Example [[§22 Definition and Examples#^ex-22-2|§22.2]]); $X$ is an inner product space that is not complete. Let $a = (1, \tfrac12, \tfrac13, \ldots) \in \ell^2$, which is not in $c_{00}$, and
->
-> $$
-> K = \{ y \in c_{00} : (y, a) = 1 \} = \Bigl\{ y \in c_{00} : \sum_i \frac{y_i}{i} = 1 \Bigr\}, \qquad x_0 = 0 .
-> $$
->
-> We show that $K$ is a nonempty closed convex subset of $X$, that $\operatorname{dist}(x_0, K) = 1/\|a\|$, that no point of $K$ attains it, and that a minimizing sequence has no limit in $X$. All norms are $\ell^2$ norms.
->
-> *Nonempty, convex, closed.* $e_1 \in K$. If $(y, a) = (z, a) = 1$ and $\lambda \in [0,1]$, then $((1 - \lambda) y + \lambda z, a) = 1$. If $y_k \in K$ and $y_k \to y$ in $X$, then $(y_k, a) \to (y, a)$ by continuity of the inner product of $\ell^2$ (Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]), so $(y, a) = 1$ and $y \in K$.
->
-> *A lower bound.* For $y \in K$, Cauchy–Schwarz (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]) gives $1 = |(y, a)| \le \|y\|\,\|a\|$, so $\|y\| \ge 1/\|a\|$.
->
-> *A minimizing sequence.* Let $a^{(n)} = (1, \tfrac12, \ldots, \tfrac1n, 0, 0, \ldots) \in c_{00}$ and $y^{(n)} = a^{(n)} / \|a^{(n)}\|^2$. Then $(y^{(n)}, a) = \sum_{i \le n} i^{-2} / \|a^{(n)}\|^2 = 1$, so $y^{(n)} \in K$, and $\|y^{(n)}\| = 1/\|a^{(n)}\| \to 1/\|a\|$ because $\|a^{(n)}\|^2 = \sum_{i \le n} i^{-2} \to \|a\|^2$. With the lower bound, $\operatorname{dist}(x_0, K) = 1/\|a\|$.
->
-> *Not attained.* Suppose $y \in K$ with $\|y\| = 1/\|a\|$, and put $c = 1/\|a\|^2$. Expanding as in (?), and using $(y, a) = 1$,
->
-> $$
-> \|y - c\,a\|^2 = \|y\|^2 - 2c\operatorname{Re}(y, a) + c^2 \|a\|^2 = \frac{1}{\|a\|^2} - \frac{2}{\|a\|^2} + \frac{1}{\|a\|^2} = 0 ,
-> $$
->
-> so $y = a / \|a\|^2$, which has every entry nonzero and is not in $c_{00}$: a contradiction.
->
-> *The minimizing sequence does not converge in $X$.* In $\ell^2$, $a^{(n)} \to a$ (the tail $\sum_{i > n} i^{-2} \to 0$) and $\|a^{(n)}\| \to \|a\|$, so $y^{(n)} \to a / \|a\|^2$; in particular $\{y^{(n)}\}$ is Cauchy in $X$. A limit in $X$ would be a limit in $\ell^2$, hence equal to $a / \|a\|^2 \notin c_{00}$ by uniqueness of limits. So the Cauchy minimizing sequence has no limit in $X$: exactly the step of Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]] that uses completeness.
-
-^ex-25-2
-
-> [!example] Example §25.3: An Open Convex Set Without a Closest Point
-> *(Details filled in.)* Let $H \neq \{0\}$ be a Hilbert space, $K = \{ y \in H : \|y\| < 1 \}$ the open unit ball, and $x_0 \in H$ with $\|x_0\| = 2$. We show that $K$ is nonempty and convex, that $\operatorname{dist}(x_0, K) = 1$, and that no point of $K$ attains it.
->
-> *Convex.* If $\|y\|, \|z\| < 1$ and $\lambda \in [0,1]$, then $\|(1 - \lambda) y + \lambda z\| \le (1 - \lambda)\|y\| + \lambda\|z\| < 1$. And $0 \in K$.
->
-> *No point attains the distance $1$.* For $y \in K$, the reverse triangle inequality gives $\|x_0 - y\| \ge \|x_0\| - \|y\| > 2 - 1 = 1$.
->
-> *The infimum is $1$.* For $0 < t < 1$, $y_t = \tfrac{t}{2} x_0$ has $\|y_t\| = t < 1$, so $y_t \in K$, and $\|x_0 - y_t\| = (1 - \tfrac t2)\,\|x_0\| = 2 - t \to 1$ as $t \to 1$.
->
-> So $\operatorname{dist}(x_0, K) = 1$ is not attained. The points $y_t$ approach $x_0 / 2$, which has norm $1$ and lies outside $K$: $K$ is not closed.
-
-^ex-25-3
-
 ![[m556-18-1.svg]]
 *A minimizing sequence $y_n \in K$ (gray dashes) with $\|x_0 - y_n\| \to \operatorname{dist}(x_0, K)$, converging to the closest point $y_0$ (red). The dotted arc is the sphere of radius $\operatorname{dist}(x_0, K)$ about $x_0$: it touches $K$ only at $y_0$. The proof has to produce $y_0$ as a limit, which is where completeness and closedness enter.*
 
@@ -182,6 +118,70 @@ Everything from here on uses completeness, and the results are the ones for whic
 ![[m556-18-a1.gif|480]]
 
 *(Not from lecture; animation added, vault only.)* The half-plane $K = \{x_1 + x_2 \ge 2\}$ of the figure and a point $x_0$ moving on a circle. Left, Euclidean: the ball of radius $\operatorname{dist}(x_0, K)$ touches $K$ at a single point (red), the foot of the perpendicular. Right, $\ell^1$: the ball is a diamond whose edge is parallel to $\partial K$, and it touches along a whole segment of closest points.
+
+> [!remark] Remark: Where Each Hypothesis Enters
+> Convexity puts the midpoint $\tfrac{y_m + y_n}{2}$ in $K$, which is what makes the cross term in the parallelogram law large and forces $\|y_n - y_m\|$ small; this is the whole mechanism, and it is why the parallelogram law — hence an inner product, not merely a norm — is needed. Completeness of $H$ turns the Cauchy sequence into a limit; closedness of $K$ keeps that limit in $K$. The theorem fails without each: in $\ell^1$ (no inner product) closest points need not be unique (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-1|§25.1]]); in an incomplete inner product space a minimizing sequence need not converge (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-2|§25.2]]); for $K$ open the infimum need not be attained (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-3|§25.3]]). The same midpoint argument gives uniqueness.
+
+^rem-25-2
+
+> [!example] Example §25.1: Closest Points in $\ell^1$ Need Not Be Unique
+> *(Details filled in.)* In the Banach space $\ell^1$ (Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]) let
+>
+> $$
+> K = \{ t e_1 + (1 - t) e_2 : 0 \le t \le 1 \}, \qquad x_0 = 0 .
+> $$
+>
+> We show that $K$ is nonempty, closed and convex, and that every point of $K$ is a closest point to $x_0$.
+>
+> *Convex.* For $t, s, \lambda \in [0,1]$, $(1 - \lambda)\bigl( t e_1 + (1-t) e_2 \bigr) + \lambda \bigl( s e_1 + (1-s) e_2 \bigr) = u e_1 + (1 - u) e_2$ with $u = (1 - \lambda) t + \lambda s \in [0,1]$.
+>
+> *Closed.* Let $y_k = t_k e_1 + (1 - t_k) e_2 \in K$ converge to $y$ in $\ell^1$. A single coordinate is at most the $\ell^1$ norm, so $|t_k - y_1| \le \|y_k - y\|_1 \to 0$, and $t_k \to t := y_1 \in [0,1]$ because $[0,1]$ is closed. Then $\|y_k - (t e_1 + (1-t) e_2)\|_1 = |t_k - t| + |t - t_k| \to 0$, and by uniqueness of limits $y = t e_1 + (1-t) e_2 \in K$.
+>
+> *Every point is closest.* For $y = t e_1 + (1-t) e_2 \in K$, $\|x_0 - y\|_1 = |t| + |1 - t| = t + (1 - t) = 1$. So $\operatorname{dist}(x_0, K) = 1$, and it is attained at every one of the infinitely many points of $K$.
+>
+> Here $\ell^1$ is complete and $K$ is closed and convex; what is missing is the parallelogram law, which fails in $\ell^1$ (Corollary [[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|§24.3]]).
+
+^ex-25-1
+
+> [!example] Example §25.2: No Closest Point in an Incomplete Inner Product Space
+> *(Details filled in.)* Let $X = c_{00}$, the finitely supported sequences, with the inner product $(y, z) = \sum_i y_i \overline{z_i}$ of $\ell^2$ (Example [[§22 Definition and Examples#^ex-22-2|§22.2]]); $X$ is an inner product space that is not complete. Let $a = (1, \tfrac12, \tfrac13, \ldots) \in \ell^2$, which is not in $c_{00}$, and
+>
+> $$
+> K = \{ y \in c_{00} : (y, a) = 1 \} = \Bigl\{ y \in c_{00} : \sum_i \frac{y_i}{i} = 1 \Bigr\}, \qquad x_0 = 0 .
+> $$
+>
+> We show that $K$ is a nonempty closed convex subset of $X$, that $\operatorname{dist}(x_0, K) = 1/\|a\|$, that no point of $K$ attains it, and that a minimizing sequence has no limit in $X$. All norms are $\ell^2$ norms.
+>
+> *Nonempty, convex, closed.* $e_1 \in K$. If $(y, a) = (z, a) = 1$ and $\lambda \in [0,1]$, then $((1 - \lambda) y + \lambda z, a) = 1$. If $y_k \in K$ and $y_k \to y$ in $X$, then $(y_k, a) \to (y, a)$ by continuity of the inner product of $\ell^2$ (Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]), so $(y, a) = 1$ and $y \in K$.
+>
+> *A lower bound.* For $y \in K$, Cauchy–Schwarz (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]) gives $1 = |(y, a)| \le \|y\|\,\|a\|$, so $\|y\| \ge 1/\|a\|$.
+>
+> *A minimizing sequence.* Let $a^{(n)} = (1, \tfrac12, \ldots, \tfrac1n, 0, 0, \ldots) \in c_{00}$ and $y^{(n)} = a^{(n)} / \|a^{(n)}\|^2$. Then $(y^{(n)}, a) = \sum_{i \le n} i^{-2} / \|a^{(n)}\|^2 = 1$, so $y^{(n)} \in K$, and $\|y^{(n)}\| = 1/\|a^{(n)}\| \to 1/\|a\|$ because $\|a^{(n)}\|^2 = \sum_{i \le n} i^{-2} \to \|a\|^2$. With the lower bound, $\operatorname{dist}(x_0, K) = 1/\|a\|$.
+>
+> *Not attained.* Suppose $y \in K$ with $\|y\| = 1/\|a\|$, and put $c = 1/\|a\|^2$. Expanding as in [[§23 Cauchy–Schwarz and the Induced Norm#^pf-23-1|(5.1)]], and using $(y, a) = 1$,
+>
+> $$
+> \|y - c\,a\|^2 = \|y\|^2 - 2c\operatorname{Re}(y, a) + c^2 \|a\|^2 = \frac{1}{\|a\|^2} - \frac{2}{\|a\|^2} + \frac{1}{\|a\|^2} = 0 ,
+> $$
+>
+> so $y = a / \|a\|^2$, which has every entry nonzero and is not in $c_{00}$: a contradiction.
+>
+> *The minimizing sequence does not converge in $X$.* In $\ell^2$, $a^{(n)} \to a$ (the tail $\sum_{i > n} i^{-2} \to 0$) and $\|a^{(n)}\| \to \|a\|$, so $y^{(n)} \to a / \|a\|^2$; in particular $\{y^{(n)}\}$ is Cauchy in $X$. A limit in $X$ would be a limit in $\ell^2$, hence equal to $a / \|a\|^2 \notin c_{00}$ by uniqueness of limits. So the Cauchy minimizing sequence has no limit in $X$: exactly the step of Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]] that uses completeness.
+
+^ex-25-2
+
+> [!example] Example §25.3: An Open Convex Set Without a Closest Point
+> *(Details filled in.)* Let $H \neq \{0\}$ be a Hilbert space, $K = \{ y \in H : \|y\| < 1 \}$ the open unit ball, and $x_0 \in H$ with $\|x_0\| = 2$. We show that $K$ is nonempty and convex, that $\operatorname{dist}(x_0, K) = 1$, and that no point of $K$ attains it.
+>
+> *Convex.* If $\|y\|, \|z\| < 1$ and $\lambda \in [0,1]$, then $\|(1 - \lambda) y + \lambda z\| \le (1 - \lambda)\|y\| + \lambda\|z\| < 1$. And $0 \in K$.
+>
+> *No point attains the distance $1$.* For $y \in K$, the reverse triangle inequality gives $\|x_0 - y\| \ge \|x_0\| - \|y\| > 2 - 1 = 1$.
+>
+> *The infimum is $1$.* For $0 < t < 1$, $y_t = \tfrac{t}{2} x_0$ has $\|y_t\| = t < 1$, so $y_t \in K$, and $\|x_0 - y_t\| = (1 - \tfrac t2)\,\|x_0\| = 2 - t \to 1$ as $t \to 1$.
+>
+> So $\operatorname{dist}(x_0, K) = 1$ is not attained. The points $y_t$ approach $x_0 / 2$, which has norm $1$ and lies outside $K$: $K$ is not closed.
+
+^ex-25-3
 
 > [!remark] Remark: Comparison with Lax
 > The statement and proof are Lax's Theorem 6.2, which assumes $K$ nonempty; the hypothesis is needed (for $K = \varnothing$ the infimum is $+\infty$) and was missing from an earlier version of these notes. Lax also proves the same result in any *uniformly convex* Banach space (§5.2, Theorem 8), where the parallelogram law is replaced by a quantitative form of the strict convexity of the unit ball; Hilbert spaces are the model case. Not covered in lecture.
@@ -260,50 +260,6 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 ^thm-25-4
 
-> [!remark] Remark: The Promise of Lecture 1 is Kept
-> Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements|§2]] suggested; the remark following Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] identified exactly this theorem as the missing piece. The hypotheses are sharp: for the subspace $c_{00} \subset \ell^2$, which is not closed, both (1) and (2) fail (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-4|§25.4]]). For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]]).
-
-^rem-25-5
-
-> [!example] Example §25.4: The Non-Closed Subspace $c_{00}$ of $\ell^2$
-> Let $c_{00} \subset \ell^2$ be the subspace of finitely supported sequences, and $a = (1, \tfrac12, \tfrac13, \ldots) \in \ell^2$. Then $a \notin c_{00}$, but $a$ is the $\ell^2$-limit of its truncations $(1, \ldots, \tfrac1n, 0, \ldots) \in c_{00}$ (the tail $\sum_{i > n} i^{-2}$ tends to $0$), so $c_{00}$ is not closed. We show that both conclusions of Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]] fail for $Y = c_{00}$.
->
-> *$c_{00}^\perp = \{0\}$.* Each $e_j$ lies in $c_{00}$. If $v \in c_{00}^\perp$, then $0 = (v, e_j) = v_j \cdot \overline{1} = v_j$ for every $j$, so $v = 0$.
->
-> *(1) fails.* $c_{00} + c_{00}^\perp = c_{00} + \{0\} = c_{00}$, which does not contain $a$; so $\ell^2 \neq c_{00} \oplus c_{00}^\perp$.
->
-> *(2) fails.* $(c_{00}^\perp)^\perp = \{0\}^\perp = \ell^2$, since every vector is orthogonal to $0$; and $\ell^2 \neq c_{00}$.
-
-^ex-25-4
-
-> [!remark] Remark
-> The proof of (1) is the first-variation argument of calculus, in the form “at a minimum the derivative vanishes”: $y_0$ minimizes $y \mapsto \|x_0 - y\|^2$ over $Y$, so moving $y_0$ along any direction $y \in Y$ cannot decrease the value, and (?) is the statement that the linear term in $t$ of the expansion must vanish. The rotation $t = s e^{i\theta}$ is Technique 8 again. Riesz's lemma (Lemma [[§20 Compactness and the Unit Ball#^lem-20-2|§20.2]]) was the substitute for this argument in a bare normed space; here the constant $\tfrac12$ improves to an exact orthogonal vector, as the remark *On the Constant* after Proposition [[§20 Compactness and the Unit Ball#^prop-20-4|§20.4]] anticipated; Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-5|§25.5]] below records this.
-
-^rem-25-6
-
-> [!theorem] Proposition §25.5: Riesz's Lemma with Constant One in a Hilbert Space
-> *(Not covered in lecture.)*
->
-> 1. Let $X$ be an inner product space, $Y \subset X$ a linear subspace, and $z \in Y^\perp$ with $\|z\| = 1$. Then $\|z - y\| \ge 1$ for every $y \in Y$, and $\operatorname{dist}(z, Y) = 1$.
-> 2. Let $H$ be a Hilbert space and $Y$ a closed proper subspace of $H$. Then there is $z \in Y^\perp$ with $\|z\| = 1$; hence $\operatorname{dist}(z, Y) = 1$, and Corollary [[§20 Compactness and the Unit Ball#^cor-20-3|§20.3]] holds with $\theta = 1$, in contrast with Proposition [[§20 Compactness and the Unit Ball#^prop-20-4|§20.4]].
-
-^prop-25-5
-
-> [!proof]+ Proof
-> (1) Let $y \in Y$. Then $(z, y) = 0$, and $(y, z) = \overline{(z, y)} = 0$. Expanding by sesquilinearity,
->
-> $$
-> \|z - y\|^2 = \|z\|^2 - (z, y) - (y, z) + \|y\|^2 = 1 + \|y\|^2 \ge 1 .
-> $$
->
-> So $\operatorname{dist}(z, Y) \ge 1$, and $y = 0 \in Y$ gives $\|z - 0\| = 1$; hence $\operatorname{dist}(z, Y) = 1$.
->
-> (2) Since $Y \neq H$, choose $x_0 \in H \setminus Y$. By Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]](1), $x_0 = y_0 + v$ with $y_0 \in Y$ and $v \in Y^\perp$, and $v \neq 0$, for otherwise $x_0 = y_0 \in Y$. Put $z = v / \|v\|$. Then $\|z\| = 1$ and $z \in Y^\perp$, a linear subspace (Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]]). Apply (1).
-
-^pf-25-5
-
-*Uses:* [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]]
-
 ![[m556-18-2.svg]]
 *The decomposition $x_0 = y_0 + v$: $y_0 \in Y$ is the closest point of $Y$ to $x_0$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]), and the error $v = x_0 - y_0$ (red arrow) is perpendicular to $Y$, i.e. parallel to the line $Y^\perp$.*
 
@@ -355,6 +311,50 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > - The finite-dimensional home: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]] ($V = U \oplus U^\perp$), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] ($(U^\perp)^\perp = U$), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]] (orthogonal projection).
 > - Used for the Riesz representation theorem: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|§26.4]].
 > - Computational version: [[§52 Orthogonal Projections#^thm-52-1|235 Thm. §52.1]] (the ℝⁿ case, with the projection computed from an orthogonal basis) and, for (2), [[§50 Orthogonal Complements and Angles#^cor-50-4|235 Cor. §50.4]].
+
+> [!remark] Remark: The Promise of Lecture 1 is Kept
+> Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] suggested; the remark following Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] identified exactly this theorem as the missing piece. The hypotheses are sharp: for the subspace $c_{00} \subset \ell^2$, which is not closed, both (1) and (2) fail (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-4|§25.4]]). For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]]).
+
+^rem-25-5
+
+> [!example] Example §25.4: The Non-Closed Subspace $c_{00}$ of $\ell^2$
+> Let $c_{00} \subset \ell^2$ be the subspace of finitely supported sequences, and $a = (1, \tfrac12, \tfrac13, \ldots) \in \ell^2$. Then $a \notin c_{00}$, but $a$ is the $\ell^2$-limit of its truncations $(1, \ldots, \tfrac1n, 0, \ldots) \in c_{00}$ (the tail $\sum_{i > n} i^{-2}$ tends to $0$), so $c_{00}$ is not closed. We show that both conclusions of Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]] fail for $Y = c_{00}$.
+>
+> *$c_{00}^\perp = \{0\}$.* Each $e_j$ lies in $c_{00}$. If $v \in c_{00}^\perp$, then $0 = (v, e_j) = v_j \cdot \overline{1} = v_j$ for every $j$, so $v = 0$.
+>
+> *(1) fails.* $c_{00} + c_{00}^\perp = c_{00} + \{0\} = c_{00}$, which does not contain $a$; so $\ell^2 \neq c_{00} \oplus c_{00}^\perp$.
+>
+> *(2) fails.* $(c_{00}^\perp)^\perp = \{0\}^\perp = \ell^2$, since every vector is orthogonal to $0$; and $\ell^2 \neq c_{00}$.
+
+^ex-25-4
+
+> [!remark] Remark
+> The proof of (1) is the first-variation argument of calculus, in the form “at a minimum the derivative vanishes”: $y_0$ minimizes $y \mapsto \|x_0 - y\|^2$ over $Y$, so moving $y_0$ along any direction $y \in Y$ cannot decrease the value, and [[§25 Projection and Orthogonal Decomposition#^pf-25-4|(5.3)]] is the statement that the linear term in $t$ of the expansion must vanish. The rotation $t = s e^{i\theta}$ is [[Functional Analysis Problem-Solving Techniques#^rem-t8|Technique 8]] again. Riesz's lemma (Lemma [[§20 Compactness and the Unit Ball#^lem-20-2|§20.2]]) was the substitute for this argument in a bare normed space; here the constant $\tfrac12$ improves to an exact orthogonal vector, as the remark *On the Constant* after Proposition [[§20 Compactness and the Unit Ball#^prop-20-4|§20.4]] anticipated; Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-5|§25.5]] below records this.
+
+^rem-25-6
+
+> [!theorem] Proposition §25.5: Riesz's Lemma with Constant One in a Hilbert Space
+> *(Not covered in lecture.)*
+>
+> - (1) Let $X$ be an inner product space, $Y \subset X$ a linear subspace, and $z \in Y^\perp$ with $\|z\| = 1$. Then $\|z - y\| \ge 1$ for every $y \in Y$, and $\operatorname{dist}(z, Y) = 1$.
+> - (2) Let $H$ be a Hilbert space and $Y$ a closed proper subspace of $H$. Then there is $z \in Y^\perp$ with $\|z\| = 1$; hence $\operatorname{dist}(z, Y) = 1$, and Corollary [[§20 Compactness and the Unit Ball#^cor-20-3|§20.3]] holds with $\theta = 1$, in contrast with Proposition [[§20 Compactness and the Unit Ball#^prop-20-4|§20.4]].
+
+^prop-25-5
+
+> [!proof]+ Proof
+> (1) Let $y \in Y$. Then $(z, y) = 0$, and $(y, z) = \overline{(z, y)} = 0$. Expanding by sesquilinearity,
+>
+> $$
+> \|z - y\|^2 = \|z\|^2 - (z, y) - (y, z) + \|y\|^2 = 1 + \|y\|^2 \ge 1 .
+> $$
+>
+> So $\operatorname{dist}(z, Y) \ge 1$, and $y = 0 \in Y$ gives $\|z - 0\| = 1$; hence $\operatorname{dist}(z, Y) = 1$.
+>
+> (2) Since $Y \neq H$, choose $x_0 \in H \setminus Y$. By Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]](1), $x_0 = y_0 + v$ with $y_0 \in Y$ and $v \in Y^\perp$, and $v \neq 0$, for otherwise $x_0 = y_0 \in Y$. Put $z = v / \|v\|$. Then $\|z\| = 1$ and $z \in Y^\perp$, a linear subspace (Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]]). Apply (1).
+
+^pf-25-5
+
+*Uses:* [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]]
 
 ## The Double Complement
 
@@ -505,7 +505,7 @@ For $f(x) = e^x$ the decomposition is $e^x = \cosh x + \sinh x$: the even part i
 > \int_a^b |f''(x)|^2\,dx \ge \frac{4}{L},
 > $$
 >
-> with equality for $f_*(x) = (x - a)\bigl( 1 - \tfrac{x-a}{L} \bigr)^2$.
+> with equality for $f_{\ast}(x) = (x - a)\bigl( 1 - \tfrac{x-a}{L} \bigr)^2$.
 >
 > *Source: HW4, Problem 4*
 
@@ -554,7 +554,7 @@ For $f(x) = e^x$ the decomposition is $e^x = \cosh x + \sinh x$: the even part i
 > **Step 4: sharpness.** (Not part of the homework.) Let $f_{\ast}(x) = (x - a)\bigl(1 - \frac{x - a}{L}\bigr)^2$. With $t = x - a$, $f_{\ast} = t - \frac{2t^2}{L} + \frac{t^3}{L^2}$, so $f_{\ast}(a) = 0$ and $f_{\ast}(b) = L - 2L + L = 0$; $f_{\ast}' = 1 - \frac{4t}{L} + \frac{3t^2}{L^2}$ equals $1$ at $t = 0$ and $1 - 4 + 3 = 0$ at $t = L$; and $f_{\ast}'' = -\frac{4}{L} + \frac{6t}{L^2} = -\frac{4}{L}\,g$. Hence, by Step 2,
 >
 > $$
-> \int_a^b |f_*''|^2\,dx = \frac{16}{L^2} \int_a^b g^2\,dx = \frac{16}{L^2} \cdot \frac{L}{4} = \frac{4}{L}.
+> \int_a^b |f_{\ast}''|^2\,dx = \frac{16}{L^2} \int_a^b g^2\,dx = \frac{16}{L^2} \cdot \frac{L}{4} = \frac{4}{L}.
 > $$
 
 ^pf-25-10

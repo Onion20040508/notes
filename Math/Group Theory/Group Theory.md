@@ -90,7 +90,7 @@ graph TD
 - [[· 12 Characters]]
 
 ## Planned topics (syllabus)
-First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems ✓ (§52–§53); solvable groups ✓ (§48–§49; quotients and the derived-series criterion pending); composition series and the Jordan–Hölder theorem (begun, §50; proof to be finished Oct 30); simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups (orders ≤ 100 begun, §54; orders 30, 56, 90 on Problem Set 7); solvable and nilpotent groups; direct and semidirect products ✓ (§55–§56); central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups.
+First half (before fall break): groups and group actions ✓; the orbit–stabilizer theorem ✓; normal subgroups and quotient groups ✓; the isomorphism theorems (first ✓, second ✓, third stated); the Sylow theorems ✓ (§54–§55); solvable groups ✓ (§48–§49); composition series and the Jordan–Hölder theorem ✓ (§50–§52); simplicity of alternating groups ✓ and of $PSL_n(F)$ (stated); classification of small simple groups ✓ (orders ≤ 100, §56; orders 30, 56, 90 and 60 on Problem Sets 7 and 8); solvable and nilpotent groups; direct and semidirect products ✓ (§57–§60); central and abelian extensions, ideally culminating in the Schur–Zassenhaus theorem. Second half: the representation theory of finite groups (begun: §61–§68; Maschke's theorem ✓, characters begun).
 
 ## Central results
 - [[Cancellation Laws in Groups]] (§2.1)

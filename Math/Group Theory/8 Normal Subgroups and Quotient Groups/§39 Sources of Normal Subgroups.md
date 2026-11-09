@@ -25,6 +25,8 @@ tags: [group-theory, math493]
 
 ^pf-39-1
 
+*Uses:* [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§28 Left and Right Cosets#^prop-28-4|§28.4]], [[§38 Normal Subgroups#^prop-38-2|§38.2]]
+
 > [!proof]+ Second proof (conjugating by an element outside $H$)
 > *Idea:* If a conjugate $g_0h_1g_0^{-1}$ of an element of $H$ fell outside $H$, it would lie in the other coset $g_0H$, and cancelling $g_0$ would put $g_0$ in $H$.
 >
@@ -45,8 +47,6 @@ tags: [group-theory, math493]
 > So $gHg^{-1} \subseteq H$ for all $g \in G$. Applying this to $g^{-1}$ gives $g^{-1}Hg \subseteq H$, hence $H \subseteq gHg^{-1}$, and so $gHg^{-1} = H$ for all $g \in G$. Thus $H$ is normal in $G$.
 
 ^pf-39-1-2
-
-*Uses:* [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§28 Left and Right Cosets#^prop-28-4|§28.4]], [[§38 Normal Subgroups#^prop-38-2|§38.2]]
 
 > [!example] Example §39.1: Index-$2$ Examples
 > 1. In $S_3$, the subgroup $\langle (1\,2\,3) \rangle$ has order $3$, hence index $6/3 = 2$ by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange]], so it is normal. *(Not from lecture; from the student's worksheet solutions.)* Alternatively, $\langle (1\,2\,3) \rangle = \{e\} \cup \{(1\,2\,3), (1\,3\,2)\}$ is a union of conjugacy classes of $S_3$ ([[§34 Conjugation as an Action and the Class Equation#^ex-34-1|Ex. §34.1]]), hence normal by [[§38 Normal Subgroups#^thm-38-4|Theorem §38.4]], (1) $\Leftrightarrow$ (2).

@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: forms — Alternating multilinear forms on a vector space: the pointwise objects that differential forms are made of.*
 
-*(Lecture 28.)* Forms are needed in every degree, not just two: this takes some multilinear algebra. Uribe thinks of these objects as minors of large determinants.
+*(Lecture 28.)* Forms are needed in every degree, not just two: this takes some multilinear algebra. A useful way to think of these objects is as minors of large determinants (Example [[§75 Multilinear Algebra#^ex-75-1|§75.1]](3)).
 
 > [!definition] Definition §75.1: Linear $k$-Form
 > Let $V$ be an $m$-dimensional real vector space and $k \in \{0, 1, 2, \ldots\}$. A **linear $k$-form** on $V$ is a multilinear map
@@ -150,5 +150,3 @@ For $k = 2$ the lemma is the definition. For the determinant (Example [[§75 Mul
 ^pf-75-4
 
 In particular $\Lambda^k V = 0$ for $k > m$ (this is Corollary [[§75 Multilinear Algebra#^cor-75-3|§75.3]], proved directly), and $\Lambda^m V$ is one-dimensional, spanned by the determinant in any basis. Lee writes $\Lambda^k(V^{\ast})$ for this space.
-
-\appendix

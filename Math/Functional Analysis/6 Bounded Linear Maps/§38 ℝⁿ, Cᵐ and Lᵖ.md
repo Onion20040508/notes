@@ -21,7 +21,7 @@ Every linear map out of a finite-dimensional space is bounded, so on $\mathbb{R}
 
 ## Cᵐ and C∞
 
-Differentiation is the test case for boundedness. With the $C^m$ norm on the domain and the $C^{m-1}$ norm on the target it is bounded, with norm at most $1$; Proposition [[§30 Boundedness and Continuity#^prop-30-4|§30.4]] (completeness of $C^m(\overline{\Omega})$) generalizes the completeness of $C^1$ in [[§13 The Completion of a Normed Space#^prop-13-4|Chapter 3]]. The proposition below states the case of $C^\infty(\overline{\Omega})$ with the maximum norm on both sides, and Proposition [[§30 Boundedness and Continuity#^prop-30-6|§30.6]] the case of $\frac{d}{dt}$ on $C^1[0,1]$ (HW9, Problem 1).
+Differentiation is the test case for boundedness. With the $C^m$ norm on the domain and the $C^{m-1}$ norm on the target it is bounded, with norm at most $1$; Proposition [[§30 Boundedness and Continuity#^prop-30-4|§30.4]] (completeness of $C^m(\overline{\Omega})$) generalizes the completeness of $C^1$ in Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]. The proposition below states the case of $C^\infty(\overline{\Omega})$ with the maximum norm on both sides, and Proposition [[§30 Boundedness and Continuity#^prop-30-6|§30.6]] the case of $\frac{d}{dt}$ on $C^1[0,1]$ (HW9, Problem 1).
 
 ![[§30 Boundedness and Continuity#^ex-30-1]]
 
@@ -43,4 +43,4 @@ Lecture 12 used $L^2$ twice more. The [[§34 Weak Solutions of the Dirichlet Pro
 
 *(Not from lecture; summary of Lecture 14.)* Lecture 14 sorted the course's spaces by [[§37 Separable Duals and Reflexive Spaces#^def-37-1|reflexivity]]. Hilbert spaces, in particular $L^2$ and $\ell^2$, and $\ell^p$ for $1 < p < \infty$ are reflexive (Examples [[§37 Separable Duals and Reflexive Spaces#^ex-37-3|§37.3]] and [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|§37.4]]); $C[0,1]$, $\ell^1$ and $c_0$ are not (Example [[§37 Separable Duals and Reflexive Spaces#^ex-37-5|§37.5]], Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-7|§37.7]]), and the duals of $\ell^\infty$ and $L^\infty$ are not [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], so they are not $\ell^1$ and $L^1$ (Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]]).
 
-*Chain:* ← [[§29 Sequence and Function Spaces|Chapter 5]] · [[§46 Position Eigenstates and Continuous Resolutions#^thm-46-2|Chapter 7 (L² as a state space)]] →
+*Chain:* ← [[§29 Sequence and Function Spaces|Chapter 5]] · [[§46 Position Eigenstates and Continuous Resolutions#^thm-46-2|Chapter 9 (L² as a state space)]] →

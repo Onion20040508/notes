@@ -10,7 +10,7 @@ tags: [group-theory, math493]
 *Reference: not covered in the Pinter chapters used so far.*
 
 > [!definition] Definition §58.1: Internal Semidirect Product
-> Let $G$ be a group, $N \trianglelefteq G$ a normal subgroup, and $S \leq G$ a subgroup (not necessarily normal), with $N \cap S = \{e\}$ and $G = NS$. Then $G$ is the **(internal) semidirect product** of $N$ and $S$.
+> Let $G$ be a group, $N \trianglelefteq G$ a [[§38 Normal Subgroups#^def-38-1|normal subgroup]], and $S \leq G$ a subgroup (not necessarily normal), with $N \cap S = \{e\}$ and $G = NS$. Then $G$ is the **(internal) semidirect product** of $N$ and $S$.
 >
 > *Source: lecture 10/26; WS 11*
 
@@ -76,7 +76,7 @@ tags: [group-theory, math493]
 > In an internal semidirect product, for $s \in S$ let $\varphi(s): N \to N$, $n \mapsto sns^{-1}$. Then:
 >
 > 1. $\varphi(s)$ is an automorphism of $N$, an isomorphism $N \to N$ (Definition [[§18 Conjugation, Products, and Pointwise Products#^def-18-1|§18.1]]);
-> 2. $\varphi: S \to \operatorname{Aut}(N)$ is a group homomorphism: $\varphi(ss') = \varphi(s) \circ \varphi(s')$.
+> 2. $\varphi: S \to \operatorname{Aut}(N)$ is a [[§15 Homomorphisms#^def-15-1|group homomorphism]]: $\varphi(ss') = \varphi(s) \circ \varphi(s')$.
 >
 > Equivalently, $s \star n = sns^{-1}$ is an action of $S$ on $N$ by automorphisms.
 >

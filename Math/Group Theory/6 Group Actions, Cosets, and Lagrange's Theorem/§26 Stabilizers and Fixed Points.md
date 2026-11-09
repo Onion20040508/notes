@@ -108,6 +108,7 @@ tags: [group-theory, math493]
 
 ^pf-26-3
 
+*Uses:* [[§26 Stabilizers and Fixed Points#^prop-26-2|§26.2]], [[§18 Conjugation, Products, and Pointwise Products#^prop-18-1|§18.1]]
 In words: moving the point by $g$ conjugates its stabilizer by $g$.
 
 > [!example] Example §26.1: Point Stabilizers in $S_n$ Are Conjugate

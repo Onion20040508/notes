@@ -91,7 +91,7 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§62 Direct Sums and Maschke's T
 
 ![[m493-60-3.svg]]
 
-*(Not from lecture; figure added.)* The proof of Proposition §60.5 in $\mathbb{R}^3$ with the dot product: $U$ is a plane with orthonormal basis $u_1, u_2$, and $U^\perp$ is the normal line. $P_U(w)$ is the foot of the perpendicular from $w$ to $U$, and the remainder $w - P_U(w)$ (red) is parallel to $U^\perp$.
+*(Not from lecture; figure added.)* The proof of Proposition [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-1|§63.1]] in $\mathbb{R}^3$ with the dot product: $U$ is a plane with orthonormal basis $u_1, u_2$, and $U^\perp$ is the normal line. $P_U(w)$ is the foot of the perpendicular from $w$ to $U$, and the remainder $w - P_U(w)$ (red) is parallel to $U^\perp$.
 
 > [!theorem] Proposition §63.2: Orthogonal Complements of Subrepresentations
 > Let $W$ be a real representation of $G$ with an inner product preserved by $G$ (Definition [[§63 Invariant Inner Products and Maschke over ℝ#^def-63-3|§63.3]]), and let $U$ be a subrepresentation. Then $U^\perp$ is a subrepresentation.
@@ -201,7 +201,7 @@ Over $\mathbb{R}$, Maschke's theorem (Theorem [[§62 Direct Sums and Maschke's T
 
 ![[m493-60-4.svg]]
 
-*(Not from lecture; figure added.)* The averaged inner product for $S_3$ acting on $U_2$ (Example [[§61 Representations and Subrepresentations#^ex-61-3|§61.3]]), drawn in the coordinates $x_1, x_2$ of the basis $f_1, f_2$. Take for $(\ ,\ )$ the dot product of coordinates. It is not preserved: the grey ellipses $\{v : (gv, gv) = 1\}$ for $g \neq e$ differ from the red unit circle. The level set $\langle v, v \rangle = 6$ of the averaged form (blue) is mapped to itself by all six matrices of the table in §59, as WS 14.8 asserts.
+*(Not from lecture; figure added.)* The averaged inner product for $S_3$ acting on $U_2$ (Example [[§61 Representations and Subrepresentations#^ex-61-3|§61.3]]), drawn in the coordinates $x_1, x_2$ of the basis $f_1, f_2$. Take for $(\ ,\ )$ the dot product of coordinates. It is not preserved: the grey ellipses $\{v : (gv, gv) = 1\}$ for $g \neq e$ differ from the red unit circle. The level set $\langle v, v \rangle = 6$ of the averaged form (blue) is mapped to itself by all six matrices of the table in [[§61 Representations and Subrepresentations|§61]], as WS 14.8 asserts.
 
 > [!remark] Remark: Symmetrizing
 > Propositions [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-4|§63.4]] and [[§63 Invariant Inner Products and Maschke over ℝ#^prop-63-5|§63.5]] are an instance of a general *symmetrizing* construction: given something with less symmetry than wanted, add it up over the group (in other contexts, multiply or average it), and the result is invariant. They also show the benefit of treating symmetric bilinear forms as objects in their own right, rather than always working with one favourite dot product: the inner product that does the work here is not the one chosen at the start.

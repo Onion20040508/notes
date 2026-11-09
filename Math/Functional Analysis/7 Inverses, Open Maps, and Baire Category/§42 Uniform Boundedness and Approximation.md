@@ -16,14 +16,14 @@ tags: [functional-analysis, math556]
 The lecture began by restating the main results of [[§41 The Open Mapping Theorem and Its Consequences|§41]] (the closed graph theorem, Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]], and the equivalent norm theorem, Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]), together with the more general form of the open mapping theorem announced there, in which $Y$ need not be complete.
 
 > [!theorem] Theorem §42.1: Open Mapping Theorem, General Form
-> Let $X$ be a Banach space, $Y$ a normed linear space, and $T \in \mathcal{L}(X, Y)$. Assume $R(T)$ is of the second category in $Y$. Then for every open $O \subset X$, $T(O) = \{ Tx : x \in O \}$ is open in $Y$.
+> Let $X$ be a Banach space, $Y$ a normed linear space, and $T \in \mathcal{L}(X, Y)$. Assume $R(T)$ is [[§40 The Baire Category Theorem#^def-40-1|of the second category]] in $Y$. Then for every open $O \subset X$, $T(O) = \{ Tx : x \in O \}$ is open in $Y$.
 >
 > *Lax: §15.5, Thm 16 and Exercise 13 (there $Y$ is a Banach space, and the conclusion is $R(T) = Y$)*
 
 ^thm-42-1
 
 > [!proof]+ Proof
-> (Stated in lecture, as the weakening announced in the remark *Where Completeness is Used* in [[§41 The Open Mapping Theorem and Its Consequences|§41]].) Only Step 1 of the proof of Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]] used the completeness of $Y$, and only to know that the union $\bigcup_n T(B(0,n))$ is of the second category. Here $R(T) = T(X) = \bigcup_{n=1}^\infty T(B(0,n))$ is of the second category by assumption, so some $T(B(0,n))$ is not nowhere dense in $Y$, i.e. $\overline{T(B(0,n))}$ (closure in $Y$) has an interior point. Steps 2–4 use only the linearity of $T$ and properties of closures in the normed space $Y$; Steps 5–6 use the completeness of $X$ and the continuity of $T$. So $B(0, \delta) \subset T(B(0, 1))$ for some $\delta > 0$, and the proof of Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]] from Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]], which uses only linearity, shows that $T$ is open.
+> (Stated in lecture, as the weakening announced in the remark *Where Completeness is Used* in [[§41 The Open Mapping Theorem and Its Consequences#^rem-41-1|§41]].) Only Step 1 of the proof of Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]] used the completeness of $Y$, and only to know that the union $\bigcup_n T(B(0,n))$ is of the second category. Here $R(T) = T(X) = \bigcup_{n=1}^\infty T(B(0,n))$ is of the second category by assumption, so some $T(B(0,n))$ is not nowhere dense in $Y$, i.e. $\overline{T(B(0,n))}$ (closure in $Y$) has an interior point. Steps 2–4 use only the linearity of $T$ and properties of closures in the normed space $Y$; Steps 5–6 use the completeness of $X$ and the continuity of $T$. So $B(0, \delta) \subset T(B(0, 1))$ for some $\delta > 0$, and the proof of Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]] from Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]], which uses only linearity, shows that $T$ is open.
 
 ^pf-42-1
 
@@ -96,8 +96,7 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 ^thm-42-4
 
 > [!proof]+ Proof
-> We use the closed graph theorem. $(X, \|\cdot\|_1)$ and $(X, \|\cdot\|_2)$ are Banach spaces by assumption. Consider the identity $i : X \to X$, $x \mapsto x$, as a map $i : (X, \|\cdot\|_1) \to (X, \|\cdot\|_2)$, defined on all of $X$. By the assumption it is a closed linear map:
-> its graph is $G = \{ (x, x) : x \in X \}$, and if $(x_n, x_n) \in G$ converges to $(x^{(1)}, x^{(2)})$ in $(X, \|\cdot\|_1) \times (X, \|\cdot\|_2)$, i.e. $x_n \to x^{(1)}$ in $\|\cdot\|_1$ and $x_n \to x^{(2)}$ in $\|\cdot\|_2$, then $x^{(2)} = x^{(1)} = i(x^{(1)})$. By Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]], $i : (X, \|\cdot\|_1) \to (X, \|\cdot\|_2)$ is a bounded linear map, so there is $c > 0$ with
+> We use the closed graph theorem. $(X, \|\cdot\|_1)$ and $(X, \|\cdot\|_2)$ are Banach spaces by assumption. Consider the identity $i : X \to X$, $x \mapsto x$, as a map $i : (X, \|\cdot\|_1) \to (X, \|\cdot\|_2)$, defined on all of $X$. By the assumption it is a closed linear map: its graph is $G = \{ (x, x) : x \in X \}$, and if $(x_n, x_n) \in G$ converges to $(x^{(1)}, x^{(2)})$ in $(X, \|\cdot\|_1) \times (X, \|\cdot\|_2)$, i.e. $x_n \to x^{(1)}$ in $\|\cdot\|_1$ and $x_n \to x^{(2)}$ in $\|\cdot\|_2$, then $x^{(2)} = x^{(1)} = i(x^{(1)})$. By Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]], $i : (X, \|\cdot\|_1) \to (X, \|\cdot\|_2)$ is a bounded linear map, so there is $c > 0$ with
 >
 > $$
 > \|x\|_2 \le c\, \|x\|_1 \qquad \text{for all } x \in X .
@@ -145,8 +144,7 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 > \|x\|_2 = \|x\|_X + \sup_{\alpha \in \Lambda} \|A_\alpha x\|_Y , \qquad x \in X .
 > $$
 >
-> *$\|\cdot\|_2$ is a norm* (left as an exercise).
-> It is finite by the assumption of pointwise boundedness. Homogeneity: $\|A_\alpha(ax)\|_Y = |a|\,\|A_\alpha x\|_Y$, and constants pull out of suprema. Triangle inequality: $\|A_\alpha(x + x')\|_Y \le \|A_\alpha x\|_Y + \|A_\alpha x'\|_Y \le \sup_\beta \|A_\beta x\|_Y + \sup_\beta \|A_\beta x'\|_Y$ for every $\alpha$; take the supremum over $\alpha$ and add $\|x + x'\|_X \le \|x\|_X + \|x'\|_X$. Positivity: $\|x\|_2 \ge \|x\|_X$. In particular $\|x\|_X \le \|x\|_2$.
+> *$\|\cdot\|_2$ is a norm* (left as an exercise). It is finite by the assumption of pointwise boundedness. Homogeneity: $\|A_\alpha(ax)\|_Y = |a|\,\|A_\alpha x\|_Y$, and constants pull out of suprema. Triangle inequality: $\|A_\alpha(x + x')\|_Y \le \|A_\alpha x\|_Y + \|A_\alpha x'\|_Y \le \sup_\beta \|A_\beta x\|_Y + \sup_\beta \|A_\beta x'\|_Y$ for every $\alpha$; take the supremum over $\alpha$ and add $\|x + x'\|_X \le \|x\|_X + \|x'\|_X$. Positivity: $\|x\|_2 \ge \|x\|_X$. In particular $\|x\|_X \le \|x\|_2$.
 >
 > *$(X, \|\cdot\|_2)$ is complete.* Let $\{x_n\}$ be Cauchy in $(X, \|\cdot\|_2)$: for every $\varepsilon > 0$ there is $N$ such that for all $n, m > N$
 >
@@ -166,8 +164,7 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 > \|x_n - x_0\|_X + \sup_{\alpha \in \Lambda} \|A_\alpha x_n - A_\alpha x_0\|_Y = \|x_n - x_0\|_2 \le \varepsilon \qquad (n > N) .
 > $$
 >
-> So $x_n \to x_0$ in $\|\cdot\|_2$, and $(X, \|\cdot\|_2)$ is a Banach space.
-> (The limit $A_\alpha x_0$ comes from continuity of $A_\alpha$, not from completeness of $Y$; this is why $Y$ need only be normed.)
+> So $x_n \to x_0$ in $\|\cdot\|_2$, and $(X, \|\cdot\|_2)$ is a Banach space. (The limit $A_\alpha x_0$ comes from continuity of $A_\alpha$, not from completeness of $Y$; this is why $Y$ need only be normed.)
 >
 > *Conclusion.* By the equivalent norm theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]), there is $C_0 > 0$ such that for all $x \in X$
 >
@@ -204,15 +201,14 @@ The equivalent norm theorem needs the two norms to be comparable. The following 
 > Let $X$ be a Banach space and $Y$ a normed linear space. Let $\{A_n\}$ be a sequence of bounded linear maps $X \to Y$, and $A \in \mathcal{L}(X, Y)$. Then $\lim_{n \to \infty} A_n x = Ax$ for all $x \in X$ if and only if
 >
 > 1. $\sup_{n \in \mathbb{N}} \|A_n\| < \infty$, and
-> 2. $\lim_{n \to \infty} A_n x = Ax$ for all $x \in D$, where $D$ is a dense subset of $X$.
+> 2. $\lim_{n \to \infty} A_n x = Ax$ for all $x \in D$, where $D$ is a [[§11 Normed Linear Spaces#^def-11-8|dense subset]] of $X$.
 >
 > *Lax: §15.2, Thm 6 (the direction $\Leftarrow$); §15.3, Thm 7 and Cor 7$'$ (the direction $\Rightarrow$)*
 
 ^thm-42-6
 
 > [!proof]+ Proof
-> **($\Rightarrow$)** By the uniform boundedness principle.
-> For each $x$, the sequence $\{A_n x\}$ converges in $Y$, hence is bounded: $\sup_n \|A_n x\| < \infty$. Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]] gives (1). (2) holds with $D = X$.
+> **($\Rightarrow$)** By the uniform boundedness principle. For each $x$, the sequence $\{A_n x\}$ converges in $Y$, hence is bounded: $\sup_n \|A_n x\| < \infty$. Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]] gives (1). (2) holds with $D = X$.
 >
 > **($\Leftarrow$)** Assume $\sup_n \|A_n\| + \|A\| \le M < \infty$, and that $D$ is a dense subset of $X$ with $A_n y \to Ay$ for every $y \in D$. Let $x \in X$; we want $\|A_n x - Ax\| \to 0$. For every $y \in D$,
 >

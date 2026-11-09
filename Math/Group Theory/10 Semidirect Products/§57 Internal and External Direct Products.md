@@ -25,7 +25,7 @@ tags: [group-theory, math493]
 *(Not from lecture; figure added, after the board sketch.)* An internal direct sum in $\mathbb{R}^3$: a plane $L_1$ and a line $L_2$ meeting only at $0$. Every $v$ splits uniquely as $v = v_1 + v_2$ with $v_1 \in L_1$, $v_2 \in L_2$, so $v \mapsto (v_1, v_2)$ identifies $\mathbb{R}^3$ with the external direct sum $L_1 \oplus L_2$.
 
 > [!definition] Definition §57.1: Internal Direct Product
-> Let $G$ be a group and $N_1, N_2$ normal subgroups of $G$ with $N_1 \cap N_2 = \{e\}$ and $G = N_1N_2$. Then $G$ is the **internal direct product** of $N_1$ and $N_2$. By contrast, the **external direct product** $N_1 \times N_2$ is the group of pairs with componentwise multiplication (Definition [[§3 Basic Examples of Groups#^def-3-2|§3.2]]); it is built from $N_1$ and $N_2$ without any ambient group.
+> Let $G$ be a group and $N_1, N_2$ [[§38 Normal Subgroups#^def-38-1|normal subgroups]] of $G$ with $N_1 \cap N_2 = \{e\}$ and $G = N_1N_2$. Then $G$ is the **internal direct product** of $N_1$ and $N_2$. By contrast, the **external direct product** $N_1 \times N_2$ is the group of pairs with componentwise multiplication (Definition [[§3 Basic Examples of Groups#^def-3-2|§3.2]]); it is built from $N_1$ and $N_2$ without any ambient group.
 >
 > *Source: lecture 10/26; WS 11*
 

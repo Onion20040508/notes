@@ -62,6 +62,8 @@ The constants must work for all $x$ at once: the condition says that the ratio $
 
 ^pf-14-2
 
+*Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]]
+
 Anything defined in terms of convergence cannot tell equivalent norms apart. Conversely, completeness can tell inequivalent norms apart:
 
 > [!theorem] Corollary §14.3: A Complete and an Incomplete Norm are Not Equivalent
@@ -93,8 +95,6 @@ Anything defined in terms of convergence cannot tell equivalent norms apart. Con
 > So $\{g_n\}$ is Cauchy in $\bigl(C[a,b], \|\cdot\|_{L^1}\bigr)$ without a limit there.
 
 ^ex-14-1
-
-*Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]]
 
 > [!theorem] Theorem §14.4: All Norms on a Finite-Dimensional Space are Equivalent
 > Let $X$ be a finite-dimensional linear space over $\mathbb{F}$. Any two norms on $X$ are equivalent.
@@ -148,6 +148,12 @@ Anything defined in terms of convergence cannot tell equivalent norms apart. Con
 
 ^pf-14-4
 
+*Uses:* [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[Bolzano–Weierstrass Theorem|451 Bolzano–Weierstrass]], [[§20 Compactness and the Unit Ball#^def-20-1|Def. §20.1]]
+
+> [!remark]- Connections
+> - The case $X = \mathbb{R}^n$ with the Euclidean and max norms: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]], [[§12 Metric Topology#^thm-12-2|590 §12.2]]; coordinatewise Bolzano–Weierstrass in $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]].
+> - Used later: the $p$-norms on $\mathbb{R}^2$ after [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-4|§18.4]], the compact unit ball [[§20 Compactness and the Unit Ball#^ex-20-1|Ex. §20.1]]; through [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]], completeness of $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]).
+
 > [!remark] Remark: Finite Dimension is Necessary
 > The two inequalities are of different depth. $C_1\|x\|' \le \|x\|_1$ is pure algebra (Step 3): a norm is controlled by its values on a basis. The reverse inequality needs compactness of the unit sphere, which is exactly what fails in infinite dimensions (Example [[§14 New Normed Spaces from Old#^ex-14-2|§14.2]] below), and correspondingly the theorem fails there: on $\ell^1$ the norms $\|\cdot\|_1$ and $\|\cdot\|_2$ are not equivalent (Proposition [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-4|§18.4]](c)). Note also what Step 4 shows: an arbitrary norm is continuous for the $\|\cdot\|_1$-topology before we know the two are equivalent; this is the easy direction of Proposition [[§14 New Normed Spaces from Old#^prop-14-2|§14.2]].
 
@@ -159,12 +165,6 @@ Anything defined in terms of convergence cannot tell equivalent norms apart. Con
 > *(Justification filled in.)* $e_i$ has a single nonzero entry $1$, so $\|e_i\|_1 = 1$; for $i \neq j$, $e_i - e_j$ has exactly two nonzero entries, $1$ and $-1$, so $\|e_i - e_j\|_1 = 2$. A convergent subsequence $\{e_{i_r}\}$ would be Cauchy (Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]](b)), so $\|e_{i_r} - e_{i_s}\|_1 < 1$ for all large $r \neq s$; but distinct terms are at distance $2$.
 
 ^ex-14-2
-
-*Uses:* [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[Bolzano–Weierstrass Theorem|451 Bolzano–Weierstrass]]
-
-> [!remark]- Connections
-> - The case $X = \mathbb{R}^n$ with the Euclidean and max norms: [[§13 Some Topological Concepts in Metric Spaces#^prop-13-1|451 §13.1]], [[§12 Metric Topology#^thm-12-2|590 §12.2]]; coordinatewise Bolzano–Weierstrass in $\mathbb{R}^n$: [[§13 Some Topological Concepts in Metric Spaces#^thm-13-3|451 §13.3]].
-> - Used later: the $p$-norms on $\mathbb{R}^2$ after [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^prop-18-4|§18.4]], the compact unit ball [[§20 Compactness and the Unit Ball#^ex-20-1|Ex. §20.1]]; through [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]], completeness of $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]).
 
 > [!theorem] Corollary §14.5: Finite-Dimensional Normed Spaces are Complete
 > Every finite-dimensional normed linear space is a Banach space.
@@ -241,7 +241,7 @@ Anything defined in terms of convergence cannot tell equivalent norms apart. Con
 ^prop-14-8
 
 > [!proof]+ Proof
-> (Left as an exercise in lecture.) Write $\|(x,y)\|_{\ast}$ for any of the three, and $N_{\ast}$ for the corresponding norm on $\mathbb{R}^2$ ($N_2(s,t) = (s^2 + t^2)^{1/2}$, $N_\infty(s,t) = \max\{|s|,|t|\}$, $N_1(s,t) = |s| + |t|$), so that $\|(x,y)\|_{\ast} = N_{\ast}(\|x\|_X, \|y\|_Y)$. Each $N_{\ast}$ is a norm on $\mathbb{R}^2$ (Examples [[§11 Normed Linear Spaces#^ex-11-2|§11.2]] and [[§5 Statement and Motivation#^ex-5-1|Ex. §5.1]]) and is *monotone* on the non-negative quadrant: $0 \le s \le s'$, $0 \le t \le t'$ imply $N_{\ast}(s,t) \le N_{\ast}(s',t')$, as is clear from the three formulas.
+> (Left as an exercise in lecture.) Write $\|(x,y)\|_{\ast}$ for any of the three, and $N_{\ast}$ for the corresponding norm on $\mathbb{R}^2$ ($N_2(s,t) = (s^2 + t^2)^{1/2}$, $N_\infty(s,t) = \max\{|s|,|t|\}$, $N_1(s,t) = |s| + |t|$), so that $\|(x,y)\|_{\ast} = N_{\ast}(\|x\|_X, \|y\|_Y)$. Each $N_{\ast}$ is a norm on $\mathbb{R}^2$ (Examples [[§11 Normed Linear Spaces#^ex-11-2|§11.2]] and [[§5 Statement and Motivation#^ex-5-1|§5.1]]) and is *monotone* on the non-negative quadrant: $0 \le s \le s'$, $0 \le t \le t'$ imply $N_{\ast}(s,t) \le N_{\ast}(s',t')$, as is clear from the three formulas.
 >
 > *Positivity.* $\|(x,y)\|_{\ast} \ge 0$, and it is $0$ iff $N_{\ast}(\|x\|_X, \|y\|_Y) = 0$ iff $\|x\|_X = \|y\|_Y = 0$ iff $x = 0$ and $y = 0$ iff $(x,y) = (0,0)$.
 >
@@ -251,8 +251,8 @@ Anything defined in terms of convergence cannot tell equivalent norms apart. Con
 >
 > $$
 > \begin{aligned}
-> \|(x,y) + (x',y')\|_* &= N_*\bigl(\|x+x'\|_X, \|y+y'\|_Y\bigr) \le N_*\bigl(\|x\|_X + \|x'\|_X,\ \|y\|_Y + \|y'\|_Y\bigr) \\
-> &\le N_*(\|x\|_X, \|y\|_Y) + N_*(\|x'\|_X, \|y'\|_Y) = \|(x,y)\|_* + \|(x',y')\|_*.
+> \|(x,y) + (x',y')\|_{\ast} &= N_{\ast}\bigl(\|x+x'\|_X, \|y+y'\|_Y\bigr) \le N_{\ast}\bigl(\|x\|_X + \|x'\|_X,\ \|y\|_Y + \|y'\|_Y\bigr) \\
+> &\le N_{\ast}(\|x\|_X, \|y\|_Y) + N_{\ast}(\|x'\|_X, \|y'\|_Y) = \|(x,y)\|_{\ast} + \|(x',y')\|_{\ast}.
 > \end{aligned}
 > $$
 

@@ -4334,7 +4334,7 @@ Let $N \trianglelefteq G$. If $g_1N = g_1'N$ and $g_2N = g_2'N$, then $g_1g_2N =
 \textit{Idea:} Slide $N$ past $g_2'$ using $g_2'N = Ng_2'$, exchange $g_1$ for $g_1'$, and slide back.\par
 Using products of subsets and $g_2'N = Ng_2'$ for normal $N$ (Characterizations of Normality, Proposition~\ref{prop:characterizations-normality}(3)):
 \[ g_1g_2N = g_1g_2'N = g_1Ng_2' = g_1'Ng_2' = g_1'g_2'N. \]
-The first equality is $g_2N = g_2'N$ multiplied on the left by $g_1$; the second is $g_2'N = Ng_2'$ multiplied on the left by $g_1$; the third is $g_1N = g_1'N$ multiplied on the right by $g_2'$; the fourth is $Ng_2' = g_2'N$ multiplied on the left by $g_1'$ (each multiplication applies a bijection of $G$ to both sides, Remark~\ref{rem:multiplying-sets}).
+The first equality is $g_2N = g_2'N$ multiplied on the left by $g_1$; the second is $g_2'N = Ng_2'$ multiplied on the left by $g_1$; the third is $g_1N = g_1'N$ multiplied on the right by $g_2'$; the fourth is $Ng_2' = g_2'N$ multiplied on the left by $g_1'$ (each multiplication applies a bijection of $G$ to both sides, the remark \emph{Multiplying Sets}).
 \end{proof}
 
 \begin{thmbox}[{Five Characterizations of Normality}]\label{thm:five-characterizations-normality}
@@ -4369,9 +4369,9 @@ the second equality by (1). So every element of $G/N$ has the same stabilizer, n
 \textbf{(3) $\Rightarrow$ (1).} By (3), every element of $G/N$ has the same stabilizer as $eN$, and $\operatorname{Stab}(eN) = N$ by Proposition~\ref{prop:action-g-g-h}(2). For $g \in G$, Proposition~\ref{prop:action-g-g-h}(3) then gives
 \[ gNg^{-1} = \operatorname{Stab}(gN) = \operatorname{Stab}(eN) = N. \]
 
-\textbf{(1) $\Rightarrow$ (4).} Let $gN$ be a left coset. Multiplying the equality $gNg^{-1} = N$ of (1) on the right by $g$ (Remark~\ref{rem:multiplying-sets}) gives $gN = Ng$; so $gN$ is the right coset $Ng$.
+\textbf{(1) $\Rightarrow$ (4).} Let $gN$ be a left coset. Multiplying the equality $gNg^{-1} = N$ of (1) on the right by $g$ (the remark \emph{Multiplying Sets}) gives $gN = Ng$; so $gN$ is the right coset $Ng$.
 
-\textbf{(4) $\Rightarrow$ (1).} Let $g \in G$. By (4), $gN = Nx$ for some $x \in G$. Now $g = ge \in gN = Nx$, and also $g = eg \in Ng$. The right cosets are the equivalence classes of $\equiv_r \pmod N$ (Proposition~\ref{prop:cosets-equivalence-classes}(2)), and two equivalence classes with a common element are equal (Proposition~\ref{prop:equivalence-classes-partition-set}); so $Nx = Ng$. Hence $gN = Ng$, and multiplying on the right by $g^{-1}$ (Remark~\ref{rem:multiplying-sets}) gives $gNg^{-1} = N$.
+\textbf{(4) $\Rightarrow$ (1).} Let $g \in G$. By (4), $gN = Nx$ for some $x \in G$. Now $g = ge \in gN = Nx$, and also $g = eg \in Ng$. The right cosets are the equivalence classes of $\equiv_r \pmod N$ (Proposition~\ref{prop:cosets-equivalence-classes}(2)), and two equivalence classes with a common element are equal (Proposition~\ref{prop:equivalence-classes-partition-set}); so $Nx = Ng$. Hence $gN = Ng$, and multiplying on the right by $g^{-1}$ (the remark \emph{Multiplying Sets}) gives $gNg^{-1} = N$.
 
 \textbf{(1) $\Leftrightarrow$ (5).} Condition (5) says precisely that the rule $(g_1N)(g_2N) := (g_1g_2)N$ is a well-defined operation on $G/N$, i.e.\ that the result does not depend on the representatives $g_1, g_2$ chosen. By Proposition~\ref{prop:when-coset-multiplication-well-defined}, this holds if and only if $gNg^{-1} \subseteq N$ for all $g \in G$, which is equivalent to (1) by Proposition~\ref{prop:characterizations-normality}, (1)~$\Leftrightarrow$~(2).
 
@@ -4395,7 +4395,7 @@ Finally, since (1) is equivalent to ``$gNg^{-1} \subseteq N$ for all $g \in G$''
 
 \textbf{(4) $\Rightarrow$ (5).} First, $gN = Ng$ for every $g \in G$. By (4), $gN = Nh$ for some $h \in G$. Then $g = ge \in gN = Nh$, say $g = n_0h$ with $n_0 \in N$, so $h = n_0^{-1}g$ and
 \[ Nh = \{nn_0^{-1}g : n \in N\} = Ng, \]
-since $n \mapsto nn_0^{-1}$ is a bijection $N \to N$. Hence $gN = Ng$. Now let $g_1N = g_1'N$ and $g_2N = g_2'N$. Then (Remark~\ref{rem:multiplying-sets})
+since $n \mapsto nn_0^{-1}$ is a bijection $N \to N$. Hence $gN = Ng$. Now let $g_1N = g_1'N$ and $g_2N = g_2'N$. Then (the remark \emph{Multiplying Sets})
 \[ g_1g_2N = g_1(Ng_2) = (g_1N)g_2 = (g_1'N)g_2 = g_1'(Ng_2) = g_1'(g_2N) = g_1'(g_2'N) = g_1'g_2'N. \]
 
 \textbf{(5) $\Rightarrow$ (1).} Let $g \in G$ and $n \in N$. Since $n \in N$, $nN = N = eN$. Applying (5) with $g_1 = n$, $g_1' = e$ and $g_2 = g_2' = g^{-1}$ gives
@@ -5112,7 +5112,7 @@ Let $N \subseteq K$ be normal subgroups of $G$ (here $K$ is arbitrary, not the K
 \textit{Idea:} $gN \mapsto gK$ is a surjective homomorphism $G/N \to G/K$ with kernel $K/N$.\par
 \textit{(Not from lecture; filled in.)} Let $\pi: G \to G/N$ be the projection.
 
-\textbf{$K/N$ is normal in $G/N$.} By Remark~\ref{rem:notation-a-n}, $K/N = \pi(K)$. Since $K$ is a subgroup of $G$ containing $N$ and $K \trianglelefteq G$, Proposition~\ref{prop:images-subgroups-containing-n}(2) gives $\pi(K) \trianglelefteq G/N$.
+\textbf{$K/N$ is normal in $G/N$.} By the remark \emph{Notation $A/N$}, $K/N = \pi(K)$. Since $K$ is a subgroup of $G$ containing $N$ and $K \trianglelefteq G$, Proposition~\ref{prop:images-subgroups-containing-n}(2) gives $\pi(K) \trianglelefteq G/N$.
 
 \textbf{The isomorphism.} Apply Proposition~\ref{prop:quotients-along-correspondence} with $A_1 = K$ and $A_2 = G$, so that $N \subseteq K \subseteq G$, $B_1 = \pi(K) = K/N$, and $B_2 = \pi(G) = G/N$ because $\pi$ is surjective (Proposition~\ref{prop:every-normal-subgroup-kernel}). Since $K \trianglelefteq G$, part (3) gives the isomorphism
 \[ G/K \to (G/N)/(K/N), \qquad gK \mapsto \pi(g)\,(K/N) = (gN)(K/N), \]
@@ -6922,7 +6922,7 @@ The same chain is the only composition series of $S_3$ ($A_3$ is its only proper
 
 \subsection{\texorpdfstring{$S_4$, $A_4$ and the Klein Four-Group $K$}{S₄, A₄ and the Klein Four-Group K}}\label{sec:rev-ch9-s4}
 
-$S_4$ is solvable through $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$, with quotients $K$, $\mathbb{Z}/3\mathbb{Z}$ and $\{\pm 1\}$, and this chain is its derived series: $D(S_4) = A_4$, $D(A_4) = K$, $D(K) = \{e\}$. Here $K$ is normal in all of $S_4$, more than the definition asks (Remark~\ref{rem:normal-in-next-term}).
+$S_4$ is solvable through $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$, with quotients $K$, $\mathbb{Z}/3\mathbb{Z}$ and $\{\pm 1\}$, and this chain is its derived series: $D(S_4) = A_4$, $D(A_4) = K$, $D(K) = \{e\}$. Here $K$ is normal in all of $S_4$, more than the definition asks (the remark \emph{Normal in the Next Term Only} in \ref{sec:solvable}).
 
 Proposition~\ref{prop:s3-s4-solvable} (WS 9.1) gives the chain; Example~\ref{ex:derived-series-sn}(2) computes the derived series, finding $(1\,2)(3\,4)$ as a commutator of two $3$-cycles of $A_4$.
 

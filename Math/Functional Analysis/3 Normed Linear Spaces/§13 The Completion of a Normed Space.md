@@ -153,7 +153,7 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 
 ^pf-13-1
 
-*Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]] (completeness of $\mathbb{R}$)
+*Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]] (completeness of $\mathbb{R}$)
 
 > [!remark]- Connections
 > - The same construction for $\mathbb{Q} \subset \mathbb{R}$: [[§10a Cauchy Sequences#^rem-10a-4|451 Remark (construction of the reals)]]; there $\Phi = \lim$ is [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|451 Theorem §6★.12]], and uniqueness is [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14|451 §6★.14]].
@@ -205,7 +205,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 
 ^pf-13-2
 
-*Uses:* [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]]
+*Uses:* [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]]
 
 > [!remark]- Connections
 > - Used for concrete completions: [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]] ($C^1$), [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]] ($L^p$).
@@ -261,7 +261,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 ^rem-13-6
 
 > [!example] Example §13.3: $L^1[a,b]$ is Not the Completion of $(C[a,b], \|\cdot\|_\infty)$
-> As *sets*, $C[a,b] \subset L^1[a,b]$ (via $f \mapsto [f]$), and $L^1[a,b]$ is complete (Chapter 4, [[§19 The Function Spaces Lᵖ(Ω)|§19]], used here ahead of its definition); but $L^1[a,b]$ is not the completion of $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$, which is already complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]) and is therefore its own completion. The two norms $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ are not [[§14 New Normed Spaces from Old#^def-14-1|equivalent]] (Example [[§14 New Normed Spaces from Old#^ex-14-1|§14.1]] in [[§14 New Normed Spaces from Old|§14]]), so they give different topologies, different Cauchy sequences, and different completions.
+> As *sets*, $C[a,b] \subset L^1[a,b]$ (via $f \mapsto [f]$), and $L^1[a,b]$ is complete (Chapter 4, [[§19 The Function Spaces Lᵖ(Ω)|§19]], used here ahead of its definition); but $L^1[a,b]$ is not the completion of $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$, which is already complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]) and is therefore its own completion. The two norms $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ are not [[§14 New Normed Spaces from Old#^def-14-1|equivalent]] (Example [[§14 New Normed Spaces from Old#^ex-14-1|§14.1]] in [[§14 New Normed Spaces from Old#Equivalent Norms|§14]]), so they give different topologies, different Cauchy sequences, and different completions.
 >
 > *(Justification filled in.)*
 >
@@ -297,8 +297,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 ^prop-13-4
 
 > [!proof]+ Proof
-> (HW3, Problem 2.)
-> Throughout, $C^k([a,b])$ ($k = 1, 2$) denotes the functions $f : [a,b] \to \mathbb{F}$ that are $k$ times differentiable on $[a,b]$ (one-sided at the endpoints) with $f^{(k)}$ continuous, and $\|g\|_\infty = \max_{[a,b]} |g|$ for $g \in C([a,b])$; $(C([a,b]), \|\cdot\|_\infty)$ is a Banach space (Theorem [[§12 Completeness#^thm-12-1|§12.1]]). Write $\|f\| = \|f\|_X = \|f\|_\infty + \|f'\|_\infty$. For complex-valued functions, differentiation and integration act on real and imaginary parts, so the fundamental theorem of calculus holds, and $\bigl|\int_\alpha^\beta h\bigr| \leq \int_\alpha^\beta |h|$ for continuous $h$. We show that $(X, \|\cdot\|)$ is a normed linear space, that it is *not* complete, and that its completion is $C^1([a,b])$ with the same norm.
+> (HW3, Problem 2.) Throughout, $C^k([a,b])$ ($k = 1, 2$) denotes the functions $f : [a,b] \to \mathbb{F}$ that are $k$ times differentiable on $[a,b]$ (one-sided at the endpoints) with $f^{(k)}$ continuous, and $\|g\|_\infty = \max_{[a,b]} |g|$ for $g \in C([a,b])$; $(C([a,b]), \|\cdot\|_\infty)$ is a Banach space (Theorem [[§12 Completeness#^thm-12-1|§12.1]]). Write $\|f\| = \|f\|_X = \|f\|_\infty + \|f'\|_\infty$. For complex-valued functions, differentiation and integration act on real and imaginary parts, so the fundamental theorem of calculus holds, and $\bigl|\int_\alpha^\beta h\bigr| \leq \int_\alpha^\beta |h|$ for continuous $h$. We show that $(X, \|\cdot\|)$ is a normed linear space, that it is *not* complete, and that its completion is $C^1([a,b])$ with the same norm.
 >
 > **Part 1: $(X, \|\cdot\|)$ is a normed linear space.** If $f, g \in X$ and $c \in \mathbb{F}$, then $(f + g)' = f' + g'$, $(f+g)'' = f'' + g''$, $(cf)' = cf'$ and $(cf)'' = cf''$, all continuous; so $X$ is a linear subspace of $C([a,b])$, hence a linear space. The norm is well defined because $f$ and $f'$ are continuous on $[a,b]$, so both maxima exist.
 >

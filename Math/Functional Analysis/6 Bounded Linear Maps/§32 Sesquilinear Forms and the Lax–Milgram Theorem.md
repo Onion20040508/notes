@@ -116,7 +116,7 @@ The theorem below is the infinite-dimensional version. The naive route — expan
 >
 > $$ \|Ax\| \ge \beta\, \|x\| \qquad \text{for all } x \in H . \tag{LM} $$
 >
-> In particular $Ax = 0$ implies $x = 0$; since $A$ is linear, $A$ is one-to-one. More than that, $A$ is bounded below, by (?).
+> In particular $Ax = 0$ implies $x = 0$; since $A$ is linear, $A$ is one-to-one. More than that, $A$ is bounded below, by (LM).
 >
 > **Step 2: the range of $A$ is closed.** Let $R(A) = \{Ax : x \in H\}$. It is a linear subspace, since $a_1 A x_1 + a_2 A x_2 = A(a_1 x_1 + a_2 x_2)$. Let $\{Ax_n\}$ be a sequence in $R(A)$ converging to some $z \in H$; we show $z \in R(A)$. A convergent sequence is Cauchy, and by (LM) and linearity,
 >
@@ -138,7 +138,7 @@ The theorem below is the infinite-dimensional version. The naive route — expan
 
 ^pf-32-2
 
-*Uses:* [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|Theorem §32.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§30 Boundedness and Continuity#^prop-30-2|Proposition §30.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|Theorem §25.4]], [[§23 Cauchy–Schwarz and the Induced Norm|Cauchy–Schwarz (§23)]]
+*Uses:* [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|§32.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§30 Boundedness and Continuity#^prop-30-2|§30.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]
 
 > [!remark] Remark: Where Coercivity is Used
 > Coercivity enters twice, in two different roles. In Step 1 it is combined with Cauchy–Schwarz to give the lower bound $\|Ax\| \ge \beta\|x\|$, which makes $A$ one-to-one *and* makes its range closed (Step 2): a map bounded below sends non-Cauchy sequences to non-Cauchy sequences. In Step 3 it is used on the diagonal, $B(y_0, y_0)$, to kill the orthogonal complement of the range. Neither step uses symmetry of $B$, which is the point of the theorem. The pattern “one-to-one with a lower bound, closed range, dense range” is the standard way to prove that a bounded operator on a Hilbert space is invertible.
@@ -163,7 +163,7 @@ The theorem below is the infinite-dimensional version. The naive route — expan
 
 ![[m556-23-a2.gif|480]]
 
-*(Not from lecture; animation added, vault only.)* The $A$ of the figure, with rows $(2, 2)$ and $(-2, 1)$. As $x$ goes around the unit circle, the arrow $\frac14 Ax$ (red) turns away from $x$, but always by less than $90^\circ$, between $45^\circ$ and $63^\circ$. Right: $(x, Ax) = 2x_1^2 + x_2^2$, never below $\beta = 1$ and equal to it at $\pm e_2$. Dashed: the ellipse $B(x, x) = 1$.
+*(Not from lecture; animation added, vault only.)* The $A$ of the figure, with rows $(2, 2)$ and $(-2, 1)$. As $x$ goes around the unit circle, the arrow $\frac14 Ax$ (red) turns away from $x$, but always by less than $90^\circ$: the angle stays between about $42^\circ$ and $65^\circ$ ($45^\circ$ at $x = e_1$, $63^\circ$ at $x = e_2$). Right: $(x, Ax) = 2x_1^2 + x_2^2$, never below $\beta = 1$ and equal to it at $\pm e_2$. Dashed: the ellipse $B(x, x) = 1$.
 
 > [!theorem] Lemma §32.3: A Symmetric Coercive Form Has a Sign
 > Let $B$ satisfy (1)–(4) of Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]] and $B(x, y) = \overline{B(y, x)}$ for all $x, y$. Then either $B(x, x) \ge \beta\|x\|^2$ for all $x$, or $B(x, x) \le -\beta\|x\|^2$ for all $x$.

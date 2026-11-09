@@ -175,12 +175,12 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 ^rem-35-2
 
 > [!theorem] Lemma §35.2: The Set Where the Representer Exceeds One is Null
-> Let $\mu, \nu$ be finite measures on $(X, \mathcal{A})$, *not* assumed to satisfy $\nu \ll \mu$, and let $g_0$ be a real-valued measurable representative of the element of $H = L^2(\mu + \nu)$ found in Step 2 of the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]], so that (?) holds for all $f \in H$. Then $F_2 = \{ x : g_0(x) > 1 \}$ has $\mu(F_2) = 0$ and $\nu(F_2) = 0$.
+> Let $\mu, \nu$ be finite measures on $(X, \mathcal{A})$, *not* assumed to satisfy $\nu \ll \mu$, and let $g_0$ be a real-valued measurable representative of the element of $H = L^2(\mu + \nu)$ found in Step 2 of the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]], so that ($\ast$) holds for all $f \in H$. Then $F_2 = \{ x : g_0(x) > 1 \}$ has $\mu(F_2) = 0$ and $\nu(F_2) = 0$.
 
 ^lem-35-2
 
 > [!proof]+ Proof
-> *(Not from lecture.)* Steps 1–3 of the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]] do not use $\nu \ll \mu$; in particular Step 3 gives $\mu(F_2) = 0$. Now apply (?) with $f = \chi_{F_2} \in H$. The left side is $\int_{F_2} (1 - g_0)\, d\mu = 0$, an integral over a $\mu$-null set. Since $g_0 > 1$ on $F_2$,
+> *(Not from lecture.)* Steps 1–3 of the proof of Theorem [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]] do not use $\nu \ll \mu$; in particular Step 3 gives $\mu(F_2) = 0$. Now apply ($\ast$) with $f = \chi_{F_2} \in H$. The left side is $\int_{F_2} (1 - g_0)\, d\mu = 0$, an integral over a $\mu$-null set. Since $g_0 > 1$ on $F_2$,
 >
 > $$
 > 0 = \int_{F_2} g_0\, d\nu \ge \int_{F_2} 1\, d\nu = \nu(F_2) \ge 0 ,
@@ -237,6 +237,9 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 
 ^ex-35-4
 
+> [!remark]- Connections
+> - The power singularities behind the example ($\int_0^1 x^{-a}\,dx < \infty$ iff $a < 1$): [[Power singularities 1∕xᵃ]]; $1/\sqrt{x} \in L^1 \setminus L^2$ on $(0,1)$, [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-5|551 Ex. §34.5]].
+
 > [!theorem] Proposition §35.3: The Radon–Nikodym Derivative is Unique
 > Let $\mu, \nu$ be finite measures on $(X, \mathcal{A})$, and let $g, h \ge 0$ be measurable, in $L^1(\mu)$, with $\nu(E) = \int_E g\, d\mu = \int_E h\, d\mu$ for all $E \in \mathcal{A}$. Then $g = h$ $\mu$-a.e.
 
@@ -252,6 +255,3 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 > so $\mu(E_k) = 0$ for every $k$, and $\mu(E) \le \sum_k \mu(E_k) = 0$. Exchanging $g$ and $h$, $\mu(\{ h > g \}) = 0$. Hence $g = h$ $\mu$-a.e.
 
 ^pf-35-3
-
-> [!remark]- Connections
-> - The power singularities behind the example ($\int_0^1 x^{-a}\,dx < \infty$ iff $a < 1$): [[Power singularities 1∕xᵃ]]; $1/\sqrt{x} \in L^1 \setminus L^2$ on $(0,1)$, [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-5|551 Ex. §34.5]].

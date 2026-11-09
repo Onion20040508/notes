@@ -187,7 +187,7 @@ tags: [group-theory, math493]
 
 ^pf-48-6
 
-*Uses:* [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], [[§48 Solvable Groups#^prop-48-4|§48.4]], [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]]
+*Uses:* [[§41 The First and Second Isomorphism Theorems#^thm-41-1|§41.1]], [[§41 The First and Second Isomorphism Theorems#^thm-41-5|§41.5]], [[§48 Solvable Groups#^prop-48-4|§48.4]], [[§39 Sources of Normal Subgroups#^prop-39-4|§39.4]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]], [[§38 Normal Subgroups#^def-38-1|Def. §38.1]]
 
 > [!remark] Remark: The Trap: Do Not Cancel $N$
 > For $Q = G/N$, Proposition [[§48 Solvable Groups#^prop-48-6|§48.6]] describes the pieces of the chain for $Q$: $\pi(G_j)/\pi(G_{j-1}) \cong G_jN/G_{j-1}N$. It is tempting to “cancel $N$” and conclude $\pi(G_j)/\pi(G_{j-1}) \cong G_j/G_{j-1}$. This is false in general (Example [[§48 Solvable Groups#^ex-48-1|§48.1]]). The correct relation is the surjection of part (2) of Subquotients: An Injection and a Surjection (Proposition [[§48 Solvable Groups#^prop-48-5|§48.5]]): $G_j/G_{j-1}$ maps *onto* $\pi(G_j)/\pi(G_{j-1})$, with a kernel that can be nontrivial. The lecture's advice: rather than chase isomorphism-theorem formulas, write down the obviously well-defined injection or surjection.

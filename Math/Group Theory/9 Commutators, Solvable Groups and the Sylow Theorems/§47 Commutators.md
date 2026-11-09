@@ -183,6 +183,7 @@ tags: [group-theory, math493]
 
 ^pf-47-7
 
+*Uses:* [[§47 Commutators#^thm-47-5|§47.5]]
 > [!remark] Remark: The Characters of $S_n$, Completely
 > [[§47 Commutators#^thm-47-5|PS 4.5]] shows every character of $S_n$ is “trivial or the sign in disguise”; [[§47 Commutators#^cor-47-7|the corollary]] shows every such candidate actually occurs. Example [[§47 Commutators#^ex-47-2|§47.2]] works this out for $A = \mathbb{C}^\times$.
 
@@ -377,6 +378,7 @@ The bound $n \geq 5$ in Theorem [[§47 Commutators#^thm-47-11|§47.11]] is sharp
 
 ^pf-47-13
 
+*Uses:* [[§47 Commutators#^def-47-2|Def. §47.2]]
 > [!theorem] Corollary §47.14: $D(H)$ Is the Smallest Normal Subgroup with Abelian Quotient
 > Let $H$ be a group.
 >

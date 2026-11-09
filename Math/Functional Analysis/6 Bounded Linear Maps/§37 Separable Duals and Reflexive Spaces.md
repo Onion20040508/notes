@@ -39,7 +39,7 @@ tags: [functional-analysis, math556]
 
 ^pf-37-1
 
-*Uses:* [[§1 Linear Spaces#^prop-1-5|§1.5]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]
+*Uses:* [[§1 Linear Spaces#^prop-1-5|§1.5]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]], [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]]
 
 > [!theorem] Corollary §37.2: Two Forms of the Spanning Criterion
 > Let $X$ be a normed linear space.
@@ -56,7 +56,7 @@ tags: [functional-analysis, math556]
 
 ^pf-37-2
 
-*Uses:* [[§37 Separable Duals and Reflexive Spaces#^thm-37-1|§37.1]]
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^thm-37-1|§37.1]], [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]]
 
 > [!remark] Remark: Hilbert-Space Form
 > In a Hilbert space, with $Y^\perp$ the orthogonal complement, (1) reads: a set has dense span if and only if only $0$ is orthogonal to it; and (2) is $(Y^\perp)^\perp = Y$ for closed $Y$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]], Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-6|§25.6]]). The spanning criterion is the normed-space version, with functionals in place of vectors.
@@ -121,7 +121,7 @@ Recall that a normed linear space $X$ is **separable** if it has a countable den
 
 ^pf-37-3
 
-*Uses:* [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|§37.2]]
+*Uses:* [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Def. §28.1]], [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|§37.2]]
 
 > [!example] Example §37.1: A Separable Space with a Non-Separable Dual
 > The converse of Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]] is false: $\ell^1$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], while $(\ell^1)' = \ell^\infty$ is not. A separable dual forces a separable space, not conversely.
@@ -199,7 +199,7 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 ^def-37-1
 
 > [!theorem] Proposition §37.6: A Reflexive Space is a Banach Space
-> If $X$ is reflexive, then $X$ is complete.
+> If $X$ is [[§37 Separable Duals and Reflexive Spaces#^def-37-1|reflexive]], then $X$ is complete.
 
 ^prop-37-6
 
@@ -207,6 +207,8 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 > *(Stated in lecture without proof; filled in.)* Let $\{x_n\}$ be Cauchy in $X$. Since $i$ is an isometry, $\|i(x_n) - i(x_m)\| = \|x_n - x_m\|$, so $\{i(x_n)\}$ is Cauchy in $X''$, which is a Banach space; let $\eta = \lim_n i(x_n)$. As $i$ is onto, $\eta = i(x)$ for some $x \in X$, and $\|x_n - x\| = \|i(x_n) - i(x)\| \to 0$.
 
 ^pf-37-6
+
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Def. §37.1]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]], [[§31 Dual Spaces#^cor-31-1|§31.1]]
 
 > [!example] Example §37.3: Hilbert Spaces are Reflexive
 > Let $H$ be a Hilbert space. Then $H$ is reflexive: $H' = H$ and $(H')' = H$.
@@ -268,7 +270,7 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 
 > [!proof]+ Proof
 > Suppose it is: $\bigl( (C[0,1])' \bigr)' = C[0,1]$. Now $C[0,1]$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]], because the polynomials with rational coefficients are dense.
-> (By the Weierstrass approximation theorem, for $f \in C[0,1]$ and $\varepsilon > 0$ there is a polynomial $P(x) = \sum_{k=0}^n c_k x^k$ with $\|f - P\|_\infty < \varepsilon$; choosing $q_k \in \mathbb{Q}_{\mathbb{F}}$ with $|c_k - q_k| < \varepsilon/(n+1)$ and using $|x^k| \le 1$ on $[0,1]$, $Q = \sum q_k x^k$ has $\|P - Q\|_\infty < \varepsilon$. The polynomials with coefficients in $\mathbb{Q}_{\mathbb{F}}$ form a countable set, as in Step 2 above.) Then $(C[0,1])'$ would be separable: its dual $((C[0,1])')'$ is $i(C[0,1])$, isometrically isomorphic to $C[0,1]$ and hence separable (as in the proof of Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]]), and Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], applied to the normed space $X = (C[0,1])'$, gives that $X$ is separable.
+> (By the [[§27 Weierstrass's Approximation Theorem (Not Covered)|Weierstrass approximation theorem]], for $f \in C[0,1]$ and $\varepsilon > 0$ there is a polynomial $P(x) = \sum_{k=0}^n c_k x^k$ with $\|f - P\|_\infty < \varepsilon$; choosing $q_k \in \mathbb{Q}_{\mathbb{F}}$ with $|c_k - q_k| < \varepsilon/(n+1)$ and using $|x^k| \le 1$ on $[0,1]$, $Q = \sum q_k x^k$ has $\|P - Q\|_\infty < \varepsilon$. The polynomials with coefficients in $\mathbb{Q}_{\mathbb{F}}$ form a countable set, as in Step 2 above.) Then $(C[0,1])'$ would be separable: its dual $((C[0,1])')'$ is $i(C[0,1])$, isometrically isomorphic to $C[0,1]$ and hence separable (as in the proof of Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]]), and Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], applied to the normed space $X = (C[0,1])'$, gives that $X$ is separable.
 >
 > This is not true. For $s \in [0,1]$ define $\ell_s(f) = f(s)$ for $f \in C[0,1]$. Then $\ell_s : C[0,1] \to \mathbb{R}$ is linear, and
 >
@@ -286,14 +288,14 @@ the **second dual** of $X$. Every $x_0 \in X$ gives an element of $X''$ by evalu
 
 ^pf-ex-37-5
 
-*Uses:* [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]], [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Def. §37.1]], [[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27 (Weierstrass approximation)]], [[§37 Separable Duals and Reflexive Spaces#^cor-37-4|§37.4]], [[§37 Separable Duals and Reflexive Spaces#^thm-37-3|§37.3]], [[§29 Sequence and Function Spaces#^prop-29-4|§29.4]]
 
 ![[m556-37-2.svg]]
 
 Why $\|\ell_s - \ell_t\| = 2$: the function $f$ (blue) has $\|f\|_\infty = 1$, equals $1$ up to $s$ and $-1$ from $t$ on, so $(\ell_s - \ell_t)(f) = f(s) - f(t) = 2$ (red). However close $s$ and $t$ are, $f$ can drop from $1$ to $-1$ between them, so the uncountably many point evaluations stay at mutual distance $2$.
 
 > [!theorem] Corollary §37.7: Separability of $X$ and $X'$ for Reflexive $X$
-> Let $X$ be reflexive. Then $X$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] if and only if $X'$ is separable. In particular $\ell^1$ is not reflexive.
+> Let $X$ be [[§37 Separable Duals and Reflexive Spaces#^def-37-1|reflexive]]. Then $X$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] if and only if $X'$ is separable. In particular $\ell^1$ is not reflexive.
 
 ^cor-37-7
 
@@ -311,7 +313,7 @@ Why $\|\ell_s - \ell_t\| = 2$: the function $f$ (blue) has $\|f\|_\infty = 1$, e
 ## Closed Subspaces of Reflexive Spaces
 
 > [!theorem] Theorem §37.8: Closed Subspaces of Reflexive Spaces are Reflexive
-> Let $X$ be a reflexive Banach space and $Y$ a closed linear subspace of $X$. Then $Y$ is reflexive.
+> Let $X$ be a [[§37 Separable Duals and Reflexive Spaces#^def-37-1|reflexive]] Banach space and $Y$ a closed linear subspace of $X$. Then $Y$ is reflexive.
 
 ^thm-37-8
 
@@ -363,7 +365,7 @@ Why $\|\ell_s - \ell_t\| = 2$: the function $f$ (blue) has $\|f\|_\infty = 1$, e
 
 ^pf-37-8
 
-*Uses:* [[§31 Dual Spaces#^cor-31-3|§31.3]], [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|§37.2]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
+*Uses:* [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Def. §37.1]], [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]], [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|§37.2]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
 ![[m556-37-4.svg]]
 
@@ -377,7 +379,7 @@ The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction 
 ^rem-37-5
 
 > [!theorem] Theorem §37.9: $X$ is Reflexive if and only if $X'$ is
-> Let $X$ be a Banach space. Then $X$ is reflexive if and only if $X'$ is reflexive.
+> Let $X$ be a Banach space. Then $X$ is [[§37 Separable Duals and Reflexive Spaces#^def-37-1|reflexive]] if and only if $X'$ is reflexive.
 
 ^thm-37-9
 
@@ -447,7 +449,7 @@ The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]
 
 ^pf-37-10
 
-*Uses:* [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
+*Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
 ![[m556-37-5.svg]]
 
@@ -463,6 +465,6 @@ The distance from $\ell$ to $Y^\perp$, drawn in $X'$: the smallest ball about $\
 
 ^pf-37-11
 
-*Uses:* [[§36 Duality in Normed Spaces#^prop-36-10|§36.10]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
+*Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]], [[§36 Duality in Normed Spaces#^prop-36-10|§36.10]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
 The dual of a subspace is a quotient of the dual, just as the dual of a quotient is a subspace of the dual (Theorem [[§36 Duality in Normed Spaces#^thm-36-11|§36.11]]).

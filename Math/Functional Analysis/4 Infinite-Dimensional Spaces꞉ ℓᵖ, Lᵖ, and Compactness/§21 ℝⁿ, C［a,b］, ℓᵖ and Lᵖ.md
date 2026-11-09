@@ -11,7 +11,7 @@ tags: [functional-analysis, math556]
 
 ## ℝⁿ
 
-Chapter 4 starts and ends in $\mathbb{R}^n$. Cauchy–Schwarz in $\mathbb{R}^n$ opens the chain Young–Hölder–Minkowski, and Hölder on $\mathbb{R}^n$ or $\mathbb{C}^n$ is the finitely supported case of Hölder for sequences ([[§17 Hölder's Inequality for Sequences#^rem-17-2|remark]]). The closed unit ball of $\mathbb{F}^n$ is compact under any norm, and by [[§20 Compactness and the Unit Ball#^thm-20-5|the unit ball theorem]] this happens only in finite dimension.
+Chapter 4 starts and ends in $\mathbb{R}^n$. Cauchy–Schwarz in $\mathbb{R}^n$ opens the chain Young–Hölder–Minkowski, and Hölder on $\mathbb{R}^n$ or $\mathbb{C}^n$ is the finitely supported case of Hölder for sequences (Corollary [[§17 Hölder's Inequality for Sequences#^cor-17-2|§17.2]]). The closed unit ball of $\mathbb{F}^n$ is compact under any norm, and by [[§20 Compactness and the Unit Ball#^thm-20-5|the unit ball theorem]] this happens only in finite dimension.
 
 ![[§16 Means and Young's Inequality#^prop-16-1]]
 

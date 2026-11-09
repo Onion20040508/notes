@@ -134,7 +134,7 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 
 *Uses:* [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-1|Theorem §C5a.14.1]], [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]
 
-These identities shorten strings in which an index is contracted across other $\gamma$'s, as happens in every amplitude with a photon exchanged between fermion lines (QFT C8, planned).
+These identities shorten strings in which an index is contracted across other $\gamma$'s, as happens in every amplitude with a photon exchanged between fermion lines ([[§C8.4 Feynman Rules for QED#^ex-c8-4-1|Example §C8.4.1]]; QED processes: C8, planned).
 
 ## Traces
 

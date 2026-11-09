@@ -140,7 +140,7 @@ tags: [functional-analysis, math556]
 
 ^pf-31-4
 
-*Uses:* [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]]
+*Uses:* [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35.1]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]]
 
 > [!remark] Remark
 > On the board: $(L^p)' = L^{p'}$ with no range for $p$. The range $1 \le p < \infty$ is added here: for $p = \infty$ the statement fails (the dual of $L^\infty$ is larger than $L^1$), as noted in Lecture 13 (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
@@ -163,6 +163,8 @@ A first dual norm computed by hand. The space is $C[0,1]$ with the maximum norm 
 > $$
 > \|\ell\| = \int_0^1 |f_0(t)|\, dt .
 > $$
+>
+> *Source: HW8, Problem 1*
 
 ^prop-31-5
 

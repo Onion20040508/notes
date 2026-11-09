@@ -57,7 +57,7 @@ This is the internal direct sum of the remark *Two Meanings of “Direct Sum”*
 
 ![[m493-60-1.svg]]
 
-*(Not from lecture; figure added.)* The three bases of Example §60.1 in one picture. $g = (1\,2\,3)$ fixes the line $U$ (orange) pointwise and maps the plane $V$ (blue) to itself, turning it by $120^\circ$, so a basis made of a basis of $U$ and a basis of $V$ gives a block diagonal matrix. The coordinate plane $\operatorname{span}(e_2, e_3)$ (red, solid) is not mapped to itself but to $\operatorname{span}(e_3, e_1)$ (dashed), so the basis $u, e_2, e_3$ gives only a block triangular matrix.
+*(Not from lecture; figure added.)* The three bases of Example [[§62 Direct Sums and Maschke's Theorem#^ex-62-1|§62.1]] in one picture. $g = (1\,2\,3)$ fixes the line $U$ (orange) pointwise and maps the plane $V$ (blue) to itself, turning it by $120^\circ$, so a basis made of a basis of $U$ and a basis of $V$ gives a block diagonal matrix. The coordinate plane $\operatorname{span}(e_2, e_3)$ (red, solid) is not mapped to itself but to $\operatorname{span}(e_3, e_1)$ (dashed), so the basis $u, e_2, e_3$ gives only a block triangular matrix.
 
 ![[m493-60-a1.gif|600]]
 

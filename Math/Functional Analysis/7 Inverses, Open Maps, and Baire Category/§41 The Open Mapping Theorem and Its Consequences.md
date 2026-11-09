@@ -29,14 +29,13 @@ In lecture, the open mapping theorem was stated first, Banach's theorem was deri
 What matters is that the ball in $Y$ is centered at the origin, not at an arbitrary point: linearity then moves it anywhere and rescales it.
 
 > [!proof]+ Proof of Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]]
-> **Step 1: some $\overline{M(B(0,n))}$ has an interior point.**
-> Every $x \in X$ has $\|x\| < n$ for some $n \in \mathbb{N}$, so $X = \bigcup_{n=1}^\infty B(0, n)$. Since $M$ is onto,
+> **Step 1: some $\overline{M(B(0,n))}$ has an interior point.** Every $x \in X$ has $\|x\| < n$ for some $n \in \mathbb{N}$, so $X = \bigcup_{n=1}^\infty B(0, n)$. Since $M$ is onto,
 >
 > $$
 > Y = M(X) = \bigcup_{n=1}^\infty M\bigl( B(0, n) \bigr) .
 > $$
 >
-> $Y$ is complete, so by the Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-4|§40.4]]) it is of the second category: not every $M(B(0,n))$ is nowhere dense. So there is $n \in \mathbb{N}$ such that $\overline{M(B(0,n))}$ has an interior point, i.e. there are $z_0 \in Y$ and $r > 0$ with
+> $Y$ is complete, so by the Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-4|§40.4]]) it is of the second category (Definition [[§40 The Baire Category Theorem#^def-40-1|§40.1]]): not every $M(B(0,n))$ is nowhere dense. So there is $n \in \mathbb{N}$ such that $\overline{M(B(0,n))}$ has an interior point, i.e. there are $z_0 \in Y$ and $r > 0$ with
 >
 > $$
 > B(z_0, r) \subset \overline{M\bigl( B(0, n) \bigr)} .
@@ -57,8 +56,7 @@ What matters is that the ball in $Y$ is centered at the origin, not at an arbitr
 >
 > *With the closure* (left as an exercise): if $z_k \in M(B(0,n))$ and $z_k \to z$, then $-z_k \in M(B(0,n))$ and $-z_k \to -z$, so $-z \in \overline{M(B(0,n))}$. If $y_{1,k} \to y_1$ and $y_{2,k} \to y_2$ with $y_{i,k} \in M(B(0,n))$, then $\alpha y_{1,k} + (1-\alpha) y_{2,k} \in M(B(0,n))$ converges to $\alpha y_1 + (1-\alpha) y_2$, which therefore lies in $\overline{M(B(0,n))}$.
 >
-> **Step 3: a ball about the origin.** By symmetry, $B(-z_0, r) \subset \overline{M(B(0,n))}$ as well.
-> (If $y \in B(-z_0, r)$ then $-y \in B(z_0, r)$, so $-y$, and hence $y$, lies in $\overline{M(B(0,n))}$.) By convexity, everything between the two balls is in $\overline{M(B(0,n))}$, and in particular
+> **Step 3: a ball about the origin.** By symmetry, $B(-z_0, r) \subset \overline{M(B(0,n))}$ as well. (If $y \in B(-z_0, r)$ then $-y \in B(z_0, r)$, so $-y$, and hence $y$, lies in $\overline{M(B(0,n))}$.) By convexity, everything between the two balls is in $\overline{M(B(0,n))}$, and in particular
 >
 > $$
 > B(0, r) \subset \overline{M\bigl( B(0, n) \bigr)} :
@@ -120,8 +118,7 @@ What matters is that the ball in $Y$ is centered at the origin, not at an arbitr
 > \Bigl\| \sum_{j=m+1}^n x_j \Bigr\| \le \sum_{j=m+1}^n \|x_j\| \to 0 \qquad (n, m \to \infty) ,
 > $$
 >
-> the tail of a convergent series. $X$ is a Banach space, so there is $x^0 \in X$ with $\lim_{n \to \infty} \sum_{j=0}^n x_j = x^0$, and
-> $\|x^0\| = \lim_n \bigl\| \sum_{j=0}^n x_j \bigr\| \le \frac12$ (continuity of the norm, Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]). In particular $x^0 \in B(0, 1)$. Finally, by $(\ddagger)$ and the linearity of $M$, $\|y_0 - M(\sum_{j=0}^n x_j)\| < \delta/3^{n+1} \to 0$, and $M$ is continuous, so
+> the tail of a convergent series. $X$ is a Banach space, so there is $x^0 \in X$ with $\lim_{n \to \infty} \sum_{j=0}^n x_j = x^0$, and $\|x^0\| = \lim_n \bigl\| \sum_{j=0}^n x_j \bigr\| \le \frac12$ (continuity of the norm, Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]). In particular $x^0 \in B(0, 1)$. Finally, by $(\ddagger)$ and the linearity of $M$, $\|y_0 - M(\sum_{j=0}^n x_j)\| < \delta/3^{n+1} \to 0$, and $M$ is continuous, so
 >
 > $$
 > y_0 = \lim_{n \to \infty} M\Bigl( \sum_{j=0}^n x_j \Bigr) = M x^0 .
@@ -142,7 +139,7 @@ The successive approximation of Steps 5–6: $Mx_0$ approximates $y_0$ to within
 *(Not from lecture; animation added, vault only.)* Steps 5–6 for an onto $M$ of the plane (chosen for the picture), with corrections $x_j$ that are only approximately right at each step (error $\sim 3^{-j}$). Right: $Mx_0 + \cdots + Mx_j$ approaches $y_0$, the residual shrinking by about $1/3$ each time (dashed circles of radius $\sim 3^{-(j+1)}$). Left: the corrections, a third of the size each time, so their sum converges.
 
 > [!theorem] Theorem §41.2: Open Mapping Theorem
-> Let $X, Y$ be Banach spaces and $M : X \to Y$ a bounded linear map that is onto (surjective, $R(M) = Y$). Then $M$ is an open map: for every open $O \subset X$, $M(O)$ is open in $Y$.
+> Let $X, Y$ be Banach spaces and $M : X \to Y$ a bounded linear map that is onto (surjective, $R(M) = Y$). Then $M$ is an [[§39 Solving Mx = y#^def-39-2|open map]]: for every open $O \subset X$, $M(O)$ is open in $Y$.
 >
 > *Lax: §15.5, Thm 10*
 
@@ -180,7 +177,7 @@ The open mapping theorem from Theorem [[§41 The Open Mapping Theorem and Its Co
 Banach's theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]) follows at once.
 
 > [!proof]+ Proof of Banach's theorem from the open mapping theorem
-> Let $M : X \to Y$ be bounded, linear, one-to-one and onto, so that $M^{-1} : Y \to X$ exists; it is linear ([[§39 Solving Mx = y|§39]]). A linear map is bounded if and only if it is continuous, and continuous if and only if the inverse image of every open set is open (Lemma [[§39 Solving Mx = y#^lem-39-3|§39.3]]). For $O \subset X$ open, the inverse image of $O$ under $M^{-1}$ is
+> Let $M : X \to Y$ be bounded, linear, one-to-one and onto, so that $M^{-1} : Y \to X$ exists; it is linear ([[§39 Solving Mx = y|§39]]). A linear map is bounded if and only if it is continuous (Proposition [[§30 Boundedness and Continuity#^prop-30-2|§30.2]]), and continuous if and only if the inverse image of every open set is open (Lemma [[§39 Solving Mx = y#^lem-39-3|§39.3]]). For $O \subset X$ open, the inverse image of $O$ under $M^{-1}$ is
 >
 > $$
 > (M^{-1})^{-1}(O) = M(O) ,
@@ -190,7 +187,7 @@ Banach's theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]) follows at o
 
 ^pf-39-2
 
-*Uses:* [[§39 Solving Mx = y#^lem-39-3|§39.3]]
+*Uses:* [[§39 Solving Mx = y#^lem-39-3|§39.3]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]], [[§30 Boundedness and Continuity#^prop-30-2|§30.2]]
 
 > [!remark] Remark: Where Completeness is Used
 > Completeness of $Y$ is used once, in Step 1, through Baire: what is needed is only that $Y = R(M)$ is of the second category, and the assumption can be weakened accordingly. Completeness of $X$ is used in Step 6, to sum the corrections. The proof has two halves of different nature: Baire gives a ball in the *closure* of the image (Steps 1–4), and successive approximation removes the closure (Steps 5–6).
@@ -252,7 +249,7 @@ In other words, if both norms are complete and one of them is stronger than the 
 ## The Closed Graph Theorem
 
 > [!theorem] Theorem §41.4: Closed Graph Theorem
-> Let $X, Y$ be Banach spaces and $D(M) \subset X$. Assume $M : D(M) \to Y$ is a closed (linear) map. If $D(M) = X$, then $M \in \mathcal{L}(X, Y)$.
+> Let $X, Y$ be Banach spaces and $D(M) \subset X$. Assume $M : D(M) \to Y$ is a [[§39 Solving Mx = y#^def-39-3|closed (linear) map]]. If $D(M) = X$, then $M \in \mathcal{L}(X, Y)$.
 >
 > *Lax: §15.5, Thm 12*
 
@@ -267,8 +264,7 @@ The domain is the domain of definition. Recall the example of Lecture 15 (Exampl
 > \|x\|_G = \|x\|_X + \|Mx\|_Y .
 > $$
 >
-> *It is a norm* (left as an exercise).
-> Homogeneity: $\|ax\|_G = |a|\,\|x\|_X + \|aMx\|_Y = |a|\,\|x\|_G$, by linearity of $M$. Triangle inequality: $\|x + x'\|_X \le \|x\|_X + \|x'\|_X$ and $\|M(x + x')\|_Y = \|Mx + Mx'\|_Y \le \|Mx\|_Y + \|Mx'\|_Y$; add. Positivity: $\|x\|_G \ge \|x\|_X$, which is $> 0$ for $x \neq 0$. We also have
+> *It is a norm* (left as an exercise). Homogeneity: $\|ax\|_G = |a|\,\|x\|_X + \|aMx\|_Y = |a|\,\|x\|_G$, by linearity of $M$. Triangle inequality: $\|x + x'\|_X \le \|x\|_X + \|x'\|_X$ and $\|M(x + x')\|_Y = \|Mx + Mx'\|_Y \le \|Mx\|_Y + \|Mx'\|_Y$; add. Positivity: $\|x\|_G \ge \|x\|_X$, which is $> 0$ for $x \neq 0$. We also have
 >
 > $$
 > \|x\|_X \le \|x\|_G \qquad \text{for all } x \in X .
@@ -280,8 +276,7 @@ The domain is the domain of definition. Recall the example of Lecture 15 (Exampl
 > \|x_n - x_m\|_X + \|Mx_n - Mx_m\|_Y < \varepsilon \qquad \text{for all } n, m > N .
 > $$
 >
-> Ignoring one term at a time, $\{x_n\}$ is Cauchy in $(X, \|\cdot\|_X)$ and $\{Mx_n\}$ is Cauchy in $(Y, \|\cdot\|_Y)$. Both are Banach spaces, so there are $x_0 \in X$ and $y_0 \in Y$ with $x_n \to x_0$ in $X$ and $Mx_n \to y_0$ in $Y$; that is, $(x_n, Mx_n) \to (x_0, y_0)$ in $X \times Y$. Since $M$ is closed (and $x_0 \in X = D(M)$), $y_0 = Mx_0$. Now let $m \to \infty$ in the Cauchy inequality:
-> by continuity of the norms,
+> Ignoring one term at a time, $\{x_n\}$ is Cauchy in $(X, \|\cdot\|_X)$ and $\{Mx_n\}$ is Cauchy in $(Y, \|\cdot\|_Y)$. Both are Banach spaces, so there are $x_0 \in X$ and $y_0 \in Y$ with $x_n \to x_0$ in $X$ and $Mx_n \to y_0$ in $Y$; that is, $(x_n, Mx_n) \to (x_0, y_0)$ in $X \times Y$. Since $M$ is closed (and $x_0 \in X = D(M)$), $y_0 = Mx_0$. Now let $m \to \infty$ in the Cauchy inequality: by continuity of the norms,
 >
 > $$
 > \|x_n - x_0\|_X + \|Mx_n - Mx_0\|_Y \le \varepsilon \qquad \text{for all } n > N ,

@@ -58,7 +58,7 @@ Both examples of [[§27 Orthonormal Sets and Bases|§27]] (Example [[§27 Orthon
 > - Computational version: [[§53 The Gram–Schmidt Process#^cor-53-2|235 Cor. §53.2]] (every nonzero subspace of ℝⁿ has an orthonormal basis, by Gram–Schmidt).
 
 > [!definition] Definition §28.1: Separable Space
-> A normed linear space $X$ is **[[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]]** if it has a countable dense subset: a countable $D \subset X$ such that every $x \in X$ is a limit of a sequence in $D$. Completeness is not required.
+> A normed linear space $X$ is **separable** if it has a countable dense subset: a countable $D \subset X$ such that every $x \in X$ is a limit of a sequence in $D$. Completeness is not required.
 >
 > *Lax: §5.1, definition of separable space*
 
@@ -133,7 +133,7 @@ Both examples of [[§27 Orthonormal Sets and Bases|§27]] (Example [[§27 Orthon
 > \Bigl\| \sum_{j=1}^n \bigl( (x, e_j) - a_j \bigr) e_j \Bigr\|^2 = \sum_{j=1}^n |(x, e_j) - a_j|^2 < n \cdot \frac{\varepsilon^2}{4n} = \frac{\varepsilon^2}{4},
 > $$
 >
-> so $\bigl\| x - \sum_{j=1}^n a_j e_j \bigr\| < \varepsilon/2 + \varepsilon/2 = \varepsilon$. The tail of the expansion is small, as for $\ell^p$ ([[§29 Sequence and Function Spaces#^prop-29-1|§29.1]], below).
+> so $\bigl\| x - \sum_{j=1}^n a_j e_j \bigr\| < \varepsilon/2 + \varepsilon/2 = \varepsilon$. The tail of the expansion is small, as for $\ell^p$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-1|§29.1]] below).
 
 ^pf-28-3
 
@@ -147,7 +147,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > **Step 1: a linearly independent subsequence.** Discard elements that depend linearly on earlier ones. Precisely: let $n_1$ be the first index with $y_{n_1} \neq 0$, and put $y_1' = y_{n_1}$. Having chosen $n_1 < \cdots < n_k$, let $n_{k+1}$ be the first index $n > n_k$ with $y_n \notin \operatorname{span}\{y_1', \ldots, y_k'\}$, and put $y_{k+1}' = y_{n_{k+1}}$; if there is no such index, stop. The result $D' = \{y_1', y_2', \ldots\}$ (finite or infinite) is linearly independent by construction, and every element of $D$ is a linear combination of elements of $D'$: an element $y_j$ that was discarded, with $n_k < j < n_{k+1}$ (or $j > n_k$ if the process stopped at $k$), lies in $\operatorname{span}\{y_1', \ldots, y_k'\}$, and $y_j = 0$ if $j < n_1$. So
 >
 > $$
-> \text{for every } y_j \in D \text{ there is } k \text{ with } y_j \in \operatorname{span}\{y_1', \ldots, y_k'\}. \tag{5.5}
+> \text{for every } y_j \in D \text{ there is } k \text{ with } y_j \in \operatorname{span}\{y_1', \ldots, y_k'\}. \tag{5.4}
 > $$
 >
 > **Step 2: Gram–Schmidt.** Lemma [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|§28.2]] gives an orthonormal sequence $\{e_1, e_2, \ldots\}$ with
@@ -158,7 +158,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 >
 > It is countable; it remains to show it is complete, hence (Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]) an orthonormal basis.
 >
-> **Step 3: completeness.** Let $x \in H$ with $(x, e_j) = 0$ for all $j$; we show $x = 0$. Since $D$ is dense in $H$, there is a sequence $y_{n_k} \in D$ with $\lim_{k \to \infty} y_{n_k} = x$. By (5.5) and Step 2, each $y_{n_k}$ lies in $\operatorname{span}\{e_1, \ldots, e_{j_k}\}$ for some $j_k$, say $y_{n_k} = \sum_{j=1}^{j_k} a_j^{(k)} e_j$. Then
+> **Step 3: completeness.** Let $x \in H$ with $(x, e_j) = 0$ for all $j$; we show $x = 0$. Since $D$ is dense in $H$, there is a sequence $y_{n_k} \in D$ with $\lim_{k \to \infty} y_{n_k} = x$. By (5.4) and Step 2, each $y_{n_k}$ lies in $\operatorname{span}\{e_1, \ldots, e_{j_k}\}$ for some $j_k$, say $y_{n_k} = \sum_{j=1}^{j_k} a_j^{(k)} e_j$. Then
 >
 > $$
 > (x, y_{n_k}) = \sum_{j=1}^{j_k} \overline{a_j^{(k)}}\, (x, e_j) = 0 \qquad \text{for all } k,

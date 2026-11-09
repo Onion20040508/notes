@@ -29,9 +29,9 @@ $$
 ^def-74-1
 
 > [!remark]- Connections
-> - MATH 452 defines the wedge product of forms on $\mathbb{R}^n$ by its rules: [[§37 The Algebra of Differential Forms#^def-37-1|452 Def. §37.1]]. Its [[§36 Introduction to Differential Forms#^def-36-2|§36]] has the shadow picture of Lemma [[§74 The Integrand Is a Two-Form#^lem-74-1|§74.1]] with an animation of a turning parallelogram (in 452's notation).
+> - MATH 452 defines the wedge product of forms on $\mathbb{R}^n$ by its rules: [[§37 The Algebra of Differential Forms#^def-37-1|452 Def. §37.1]]. Its [[§36 Introduction to Differential Forms#^def-36-2|452 §36]] has the shadow picture of Lemma [[§74 The Integrand Is a Two-Form#^lem-74-1|§74.1]] with an animation of a turning parallelogram (in 452's notation).
 
-*(Lecture 28, on the board for $(i, j) = (2, 3)$: “because of the indices involved here, which are the two and the three, this is going to be called $dx^2 \wedge dx^3$.” The other pairs are filled in the same way.)* The name will be explained by the wedge product of covectors: $dx^i$ is the covector $u \mapsto u^i$ (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]), and $dx^i \wedge dx^j$ is built from $dx^i$ and $dx^j$.
+*(Lecture 28, on the board for $(i, j) = (2, 3)$, named $dx^2 \wedge dx^3$ after the two indices involved; the other pairs are filled in the same way.)* The name will be explained by the wedge product of covectors: $dx^i$ is the covector $u \mapsto u^i$ (Definition [[§21 Linear Algebra Toolkit#^def-21-1|§21.1]]), and $dx^i \wedge dx^j$ is built from $dx^i$ and $dx^j$.
 
 > [!theorem] Lemma §74.1: Properties of $dx^i \wedge dx^j$
 > For $i, j \in \{1, 2, 3\}$ and $u, v \in \mathbb{R}^3$:
@@ -111,4 +111,9 @@ Here $S$ is an oriented manifold with boundary of dimension $m$, its boundary $\
 - the integrand on the right becomes a two-form, as in Proposition [[§74 The Integrand Is a Two-Form#^prop-74-2|§74.2]];
 - $\mathbf{X} \mapsto \nabla \times \mathbf{X}$ is an instance of $d$.
 
-Green's theorem, the divergence theorem, the fundamental theorem of calculus for line integrals, and also Cauchy's theorem in complex analysis are instances of the same formula (asked about the divergence theorem: “They're all the same.”). For Cauchy's theorem, $d\alpha$ is zero. *(Filled in: with $\alpha = f\, dz$ for holomorphic $f$, $d\alpha = \frac{\partial f}{\partial \bar z}\, d\bar z \wedge dz = 0$.)*
+Green's theorem, the divergence theorem, the fundamental theorem of calculus for line integrals, and also Cauchy's theorem in complex analysis are instances of the same formula. For Cauchy's theorem, $d\alpha$ is zero. *(Filled in: with $\alpha = f\, dz$ for holomorphic $f$, $d\alpha = \frac{\partial f}{\partial \bar z}\, d\bar z \wedge dz = 0$.)*
+
+> [!remark]- Connections
+> - Green's theorem: [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]], and as the planar case of Stokes' theorem [[§27 Line Integrals and Green's Theorem#^thm-27-3|452 Thm. §27.3]]; Calculus III: [[§130 Green's Theorem#^thm-130-1|Calc Thm. §130.1]].
+> - The divergence theorem: [[§32 Flux Integrals and the Divergence Theorem in ℝ³#^thm-32-1|452 Thm. §32.1]]; Calculus III: [[§137 The Divergence Theorem#^thm-137-1|Calc Thm. §137.1]].
+> - Cauchy's theorem: [[§51 Proof of the Theorem (Cauchy–Goursat Theorem)#^thm-51-3|Complex Variables Thm. §51.3]].

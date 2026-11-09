@@ -151,7 +151,7 @@ tags: [functional-analysis, math556]
 ^def-23-1
 
 > [!remark]- Connections
-> - Complete normed spaces: [[§12 Completeness#^def-12-2|Def. §12.2]] (Banach space); in 551, [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-5|551 Def. §34.5]], where $L^2$ is noted to be a Hilbert space ([[§34 Normed Linear Spaces and Lᵖ Spaces#^rem-34-1|551 Remark §19.1]]).
+> - Complete normed spaces: [[§12 Completeness#^def-12-2|Def. §12.2]] (Banach space); in 551, [[§34 Normed Linear Spaces and Lᵖ Spaces#^def-34-5|551 Def. §34.5]], where $L^2$ is noted to be a Hilbert space ([[§34 Normed Linear Spaces and Lᵖ Spaces#^rem-34-1|551 §34, Remark]]).
 
 > [!example] Example §23.1: Hilbert Spaces
 > $\mathbb{R}^n$ and $\mathbb{C}^n$ with the dot product are Hilbert spaces, being finite-dimensional (Corollary [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]]); so are $\ell^2$ and $L^2(\Omega)$ with the inner products of [[§22 Definition and Examples|§22]], complete by Theorems [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]] and [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]].
@@ -175,7 +175,7 @@ tags: [functional-analysis, math556]
 ^ex-23-2
 
 > [!remark]- Connections
-> - Density of $C_c$ in $L^p$: [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]] (iii); for $L^1$, [[Continuous Functions of Compact Support are Dense in L¹|551 §16]].
+> - Density of $C_c$ in $L^p$: [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]] (iii); for $L^1$, [[Continuous Functions of Compact Support are Dense in L¹|551 §24.7]].
 
 > [!example] Example §23.3: Sobolev Spaces
 > Let $\Omega \subset \mathbb{R}^n$ be a domain, $k \ge 0$ an integer, and $X = C_c^\infty(\Omega)$, the smooth functions whose support is a compact subset of $\Omega$. For a multi-index $\alpha = (\alpha_1, \ldots, \alpha_n)$ write $|\alpha| = \alpha_1 + \cdots + \alpha_n$ and

@@ -32701,13 +32701,13 @@ are two fields of vectors along $S$, tangent to $S$: $\vec r_s$ is the velocity 
 A parametrization $\vec r : D \to \mathbb{R}^3$ (Definition~\ref{def:parametrized-surface}) is \textbf{regular} if $\vec r_s \times \vec r_t \neq 0$ at every point of $D$, that is, if $\vec r_s$ and $\vec r_t$ are linearly independent everywhere.
 \end{defbox}
 
-\textit{(Recalled from Calculus~III: Stewart, Section~16.6, a smooth surface; MATH 452, \S31.)} Regular means that the Jacobian $d\vec r$, the $3 \times 2$ matrix with columns $\vec r_s, \vec r_t$, has rank~$2$: on the interior of $D$, $\vec r$ is an immersion (Definition~\ref{def:immersion}). ``In 95\% of the examples in Calc~III,'' a single injective regular parametrization covers $S$; when $\vec r$ restricted to the interior of $D$ is moreover a homeomorphism onto its image, it is an embedding (Definition~\ref{def:embedding}), its image is a regular submanifold of $\mathbb{R}^3$ (Theorem~\ref{thm:embedding-image}), and the inverse of $\vec r$ is a chart of that submanifold.
+\textit{(Recalled from Calculus~III: Stewart, Section~16.6, a smooth surface; MATH 452, \S31.)} Regular means that the Jacobian $d\vec r$, the $3 \times 2$ matrix with columns $\vec r_s, \vec r_t$, has rank~$2$: on the interior of $D$, $\vec r$ is an immersion (Definition~\ref{def:immersion}). In most examples of Calculus~III a single injective regular parametrization covers $S$; when $\vec r$ restricted to the interior of $D$ is moreover a homeomorphism onto its image, it is an embedding (Definition~\ref{def:embedding}), its image is a regular submanifold of $\mathbb{R}^3$ (Theorem~\ref{thm:embedding-image}), and the inverse of $\vec r$ is a chart of that submanifold.
 
 \begin{defbox}[Orientation of a Surface by a Unit Normal]\deflabel{def:surface-orientation}
 Let $S \subseteq \mathbb{R}^3$ be a $2$-dimensional regular submanifold (Definition~\ref{def:submanifold}). A \textbf{unit normal field} on $S$ is a continuous map $\mathbf{n} : S \to \mathbb{R}^3$ such that for every $q \in S$, $\mathbf{n}(q)$ is a unit vector perpendicular to the tangent plane $T_qS \subseteq \mathbb{R}^3$. A choice of unit normal field is an \textbf{orientation} of $S$, and $S$ with this choice is an \textbf{oriented surface}.
 \end{defbox}
 
-\textit{(Recalled from Calculus~III: Stewart, Section~16.7; MATH 452, \S32.)} At each point there are two unit normals, $\mathbf{n}(q)$ and $-\mathbf{n}(q)$; the orientation is a continuous choice of one of them. The continuity is part of the definition (a student's question in Lecture~28): ``it's supposed to vary'' continuously. If $\mathbf{n}$ is an orientation, so is $-\mathbf{n}$.
+\textit{(Recalled from Calculus~III: Stewart, Section~16.7; MATH 452, \S32.)} At each point there are two unit normals, $\mathbf{n}(q)$ and $-\mathbf{n}(q)$; the orientation is a continuous choice of one of them. The continuity is part of the definition. If $\mathbf{n}$ is an orientation, so is $-\mathbf{n}$.
 
 \begin{defbox}[Positive Parametrization]\deflabel{def:positive-parametrization}
 Let $S$ be oriented by $\mathbf{n}$ (Definition~\ref{def:surface-orientation}). A regular parametrization $\vec r : D \to S$ (Definition~\ref{def:regular-parametrization}) is \textbf{positive} if the normal $\vec r_s \times \vec r_t$ points in the direction of $\mathbf{n}$:
@@ -32947,7 +32947,7 @@ dx^i \wedge dx^j : \mathbb{R}^3 \times \mathbb{R}^3 \longrightarrow \mathbb{R}, 
 \leeref{Ch.~14, \emph{The Wedge Product}}
 \end{defbox}
 
-\textit{(Lecture~28, on the board for $(i, j) = (2, 3)$: ``because of the indices involved here, which are the two and the three, this is going to be called $dx^2 \wedge dx^3$.'' The other pairs are filled in the same way.)} The name will be explained by the wedge product of covectors: $dx^i$ is the covector $u \mapsto u^i$ (Definition~\ref{def:dual}), and $dx^i \wedge dx^j$ is built from $dx^i$ and $dx^j$.
+\textit{(Lecture~28, on the board for $(i, j) = (2, 3)$, named $dx^2 \wedge dx^3$ after the two indices involved; the other pairs are filled in the same way.)} The name will be explained by the wedge product of covectors: $dx^i$ is the covector $u \mapsto u^i$ (Definition~\ref{def:dual}), and $dx^i \wedge dx^j$ is built from $dx^i$ and $dx^j$.
 
 \begin{lembox}[Properties of $dx^i \wedge dx^j$]\thmlabel{lem:dx-wedge-properties}
 For $i, j \in \{1, 2, 3\}$ and $u, v \in \mathbb{R}^3$:
@@ -33053,7 +33053,7 @@ Here $S$ is an oriented manifold with boundary of dimension $m$, its boundary $\
 \item the integrand on the right becomes a two-form, as in Proposition~\ref{prop:flux-two-form};
 \item $\mathbf{X} \mapsto \nabla \times \mathbf{X}$ is an instance of $d$.
 \end{itemize}
-Green's theorem, the divergence theorem, the fundamental theorem of calculus for line integrals, and also Cauchy's theorem in complex analysis are instances of the same formula (asked about the divergence theorem: ``They're all the same.''). For Cauchy's theorem, $d\alpha$ is zero. \textit{(Filled in: with $\alpha = f\, dz$ for holomorphic $f$, $d\alpha = \frac{\partial f}{\partial \bar z}\, d\bar z \wedge dz = 0$.)}
+Green's theorem, the divergence theorem, the fundamental theorem of calculus for line integrals, and also Cauchy's theorem in complex analysis are instances of the same formula. For Cauchy's theorem, $d\alpha$ is zero. \textit{(Filled in: with $\alpha = f\, dz$ for holomorphic $f$, $d\alpha = \frac{\partial f}{\partial \bar z}\, d\bar z \wedge dz = 0$.)}
 
 % ============================================================================
 % SECTION: MULTILINEAR ALGEBRA
@@ -33062,7 +33062,7 @@ Green's theorem, the divergence theorem, the fundamental theorem of calculus for
 
 \roadmark{Stage: forms}{Alternating multilinear forms on a vector space: the pointwise objects that differential forms are made of.}
 
-\textit{(Lecture 28.)} Forms are needed in every degree, not just two: this takes some multilinear algebra. Uribe thinks of these objects as minors of large determinants.
+\textit{(Lecture 28.)} Forms are needed in every degree, not just two: this takes some multilinear algebra. A useful way to think of these objects is as minors of large determinants (Example~\ref{ex:linear-k-forms}(3)).
 
 \begin{defbox}[Linear $k$-Form]\deflabel{def:linear-k-form}
 Let $V$ be an $m$-dimensional real vector space and $k \in \{0, 1, 2, \ldots\}$. A \textbf{linear $k$-form} on $V$ is a multilinear map

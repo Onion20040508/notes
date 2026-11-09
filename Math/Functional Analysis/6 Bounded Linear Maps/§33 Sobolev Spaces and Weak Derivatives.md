@@ -99,7 +99,7 @@ tags: [functional-analysis, math556]
 ^prop-33-1
 
 > [!proof]+ Proof
-> (Stated in lecture.) *Distance.* The function $d(x) = \operatorname{dist}(x, \mathbb{R}^n \setminus \Omega)$ is continuous (it is $1$-Lipschitz), and $d(x) > 0$ for $x \in K$ because $K \subset \Omega$ and $\Omega$ is [[§20 Compactness and the Unit Ball#^def-20-2|open]], so a [[§11 Normed Linear Spaces#^def-11-10|ball]] around $x$ lies in $\Omega$. A continuous function on the [[§33 Sobolev Spaces and Weak Derivatives#^def-33-4|compact]] set $K$ [[§18 Compact Spaces#^thm-18-3|attains its minimum]], so $\min_K d > 0$.
+> (Stated in lecture.) *Distance.* The function $d(x) = \operatorname{dist}(x, \mathbb{R}^n \setminus \Omega)$ is continuous (it is $1$-Lipschitz), and $d(x) > 0$ for $x \in K$ because $K \subset \Omega$ and $\Omega$ is [[§20 Compactness and the Unit Ball#^def-20-2|open]], so a [[§11 Normed Linear Spaces#^def-11-10|ball]] around $x$ lies in $\Omega$. A continuous function on the [[§20 Compactness and the Unit Ball#^def-20-4|compact]] set $K$ [[§18 Compact Spaces#^thm-18-3|attains its minimum]], so $\min_K d > 0$.
 >
 > *Smoothness.* The open sets $\Omega$ and $\mathbb{R}^n \setminus K$ cover $\mathbb{R}^n$, since $K \subset \Omega$. On $\Omega$, $\tilde f = f$ is $C^\infty$. On $\mathbb{R}^n \setminus K$, $\tilde f = 0$: $f$ vanishes on $\Omega \setminus K$ by [[§33 Sobolev Spaces and Weak Derivatives#^def-33-3|definition of the support]], and $\tilde f = 0$ outside $\Omega$. Being $C^\infty$ is a local property, so $\tilde f \in C^\infty(\mathbb{R}^n)$, and its support is $K$, which is compact.
 
@@ -399,7 +399,7 @@ tags: [functional-analysis, math556]
 
 ^pf-33-8
 
-*Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|Def. §33.5]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 §25.6]]
+*Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|Def. §33.5]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|§33.1]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 §34.1]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 §25.6]]
 
 ![[m556-33-2.svg]]
 *The proof in one picture: $f$ vanishes on the left face of the box, so its value at $x$ is the integral of $\partial_{x_1} f$ along the horizontal segment that reaches $x$, and Cauchy–Schwarz turns the length $2L$ of that segment into the constant. The constant depends only on the width of $\Omega$ in one direction. The principle: a function that is zero somewhere can be controlled by its gradient.*
@@ -472,7 +472,7 @@ tags: [functional-analysis, math556]
 
 ^pf-33-10
 
-*Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|§33.1]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]
+*Uses:* [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-1|§33.1]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]
 
 ![[m556-33-4.svg]]
 *In one dimension, extended by zero: an element of $H^1_0(a,b)$ must come down to $0$ at the endpoints; a function that jumps there does not belong, although as an $L^2$ function it could be changed at the two endpoints without changing anything.*

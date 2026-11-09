@@ -69,7 +69,7 @@ graph TD
   X4 -.->|11| C3
   X4 -.->|11| C4
   X4 -.->|4| C5
-  X4 -.->|8| C6
+  X4 -.->|10| C6
 ```
 
 ## Chapters
@@ -164,10 +164,10 @@ The results from other subjects that this course's proofs and definitions cite m
 
 **[[Single Variable Analysis]]**
 - [[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3: Cauchy Implies Convergent]] (6)
+- [[§34 Fundamental Theorem of Calculus#^thm-34-1|Theorem §34.1: Fundamental Theorem of Calculus I]] (4)
 - [[Bolzano–Weierstrass Theorem]] (3)
 - [[§33 Properties of the Riemann Integral#^thm-33-3|Theorem §33.3: Monotonicity of the Integral]] (3)
 - [[§34 Fundamental Theorem of Calculus#^thm-34-3|Theorem §34.3: Integration by Parts]] (3)
-- [[§34 Fundamental Theorem of Calculus#^thm-34-1|Theorem §34.1: Fundamental Theorem of Calculus I]] (3)
 - [[Fundamental Theorem of Calculus]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-4|Theorem §33.4: Absolute Values]] (2)
 - [[§33 Properties of the Riemann Integral#^thm-33-5|Theorem §33.5: Additivity over Subintervals]] (2)

@@ -125,8 +125,6 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 
 *Uses:* [[§27 Orthonormal Sets and Bases#^def-27-3|Def. §27.3]]
 
-Read through Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], Theorem [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]] is the theory of Fourier series in $L^2$:
-
 > [!theorem] Proposition §27.4: Only Countably Many Coefficients are Nonzero
 > Let $\{e_\alpha\}_{\alpha \in \Lambda}$ be orthonormal in an inner product space $X$, and $x \in X$. Then the set
 >
@@ -300,8 +298,8 @@ Read through Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], Theor
 > - Finite-dimensional home (expansion and Parseval in an orthonormal basis): [[§21 Orthonormal Bases#^ladr-6-30|LADR 6.30]].
 > - Restated in Dirac notation as the completeness relation: [[§45 The Completeness Relation#^thm-45-2|§45.2]], [[§45 The Completeness Relation#^cor-45-4|§45.4]].
 > - Used in Electromagnetism: the completeness of the Legendre polynomials in $L^2[-1, 1]$, which justifies expanding boundary potentials in Legendre series — [[§B3.4 Separation of Variables in Spherical Coordinates#^thm-b3-4-2|EM Theorem §B3.4.2]]. At level C: orthonormality, completeness and closure of the separated eigenfunctions of electrostatics — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]].
-> - Computational version: the finite expansion with the same coefficients, [[§51 Orthogonal Sets#^thm-51-2|235 Thm. §51.2]]; why the 235 lectures’ “basis” of harmonics is one only in this series sense, [[§31 Linearly Independent Sets; Bases#^rem-31-4|235 Remark §25.4]].
-> - Computational version: Parseval's equality for Fourier series, [[§15★ Mean Error and Convergence in Mean#^thm-15-4|341 Thm. §15.4]] (used to sum series such as $\sum1/n^4$), and for normalized eigenfunctions, [[§30 Expansion in Series of Eigenfunctions#^rem-30-1|341 Remark §24.1]].
+> - Computational version: the finite expansion with the same coefficients, [[§51 Orthogonal Sets#^thm-51-2|235 Thm. §51.2]]; why the 235 lectures’ “basis” of harmonics is one only in this series sense, [[§31 Linearly Independent Sets; Bases#^rem-31-4|235 Remark in §31: Bases with Infinitely Many Elements]].
+> - Computational version: Parseval's equality for Fourier series, [[§15★ Mean Error and Convergence in Mean#^thm-15-4|341 Thm. §15.4]] (used to sum series such as $\sum1/n^4$), and for normalized eigenfunctions, [[§30 Expansion in Series of Eigenfunctions#^rem-30-1|341 Remark in §30: Normalized Eigenfunctions and Parseval's Identity]].
 
 > [!remark] Remark
 > In finite dimensions these are the familiar facts: a complete orthonormal set is a basis, every vector is the sum of its components, and its squared length is the sum of the squared components. The theorem says that all three survive in any Hilbert space once the sums are interpreted correctly — countable support, then convergence — and that [[§27 Orthonormal Sets and Bases#^thm-27-5|Bessel's inequality]] becomes an equality exactly for complete sets.
@@ -400,6 +398,8 @@ Read through Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], Theor
 ^pf-27-11
 
 *Uses:* [[§27 Orthonormal Sets and Bases#^def-27-1|Def. §27.1]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
+
+Read through Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], Theorem [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]] is the theory of Fourier series in $L^2$:
 
 > [!theorem] Corollary §27.12: Fourier Series in $L^2$
 > Let $e_n(x) = e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$. Every $f \in L^2[0,2\pi]$ is

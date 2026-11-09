@@ -403,7 +403,7 @@ Worksheet 15's formula therefore generalizes Burnside's Lemma from permutation r
 > *(Not from class.)* Let $\mathbb{Q} \subseteq k$.
 >
 > 1. If $G$ acts trivially on $V$ (Example [[§61 Representations and Subrepresentations#^ex-61-1|§61.1]]), then $V^G = V$ and $\operatorname{Tr}\rho_V(g) = \operatorname{Tr}(\mathrm{id}_V) = \dim V$ for every $g$, so Theorem [[§66 Invariant Vectors#^thm-66-10|§66.10]] reads $\dim V = \frac{1}{|G|} \cdot |G| \dim V$.
-> 2. Let $n \geq 2$ and let $S_n$ act on $k$ by $\sigma \cdot c = \operatorname{sgn}(\sigma)\,c$, the sign representation (Example [[§61 Representations and Subrepresentations#^ex-61-2|§61.2]]). An invariant $c$ satisfies $-c = (1\,2) \cdot c = c$, so $2c = 0$ and $c = 0$: $k^{S_n} = \{0\}$. On the other side $\operatorname{Tr}\rho(\sigma) = \operatorname{sgn}(\sigma)$, and $\sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) = 0$, since the even permutations $A_n$ and the odd permutations, the other coset of $A_n$, have $n!/2$ elements each. So both sides of the theorem are $0$.
+> 2. Let $n \geq 2$ and let $S_n$ act on $k$ by $\sigma \cdot c = \operatorname{sgn}(\sigma)\,c$, the sign representation (Example [[§61 Representations and Subrepresentations#^ex-61-2|§61.2]]). An invariant $c$ satisfies $-c = (1\,2) \cdot c = c$, so $2c = 0$ and $c = 0$: $k^{S_n} = \{0\}$. On the other side $\operatorname{Tr}\rho(\sigma) = \operatorname{sgn}(\sigma)$, and $\sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) = 0$, since the even permutations $A_n$ and the [[§21 The Sign Homomorphism and the Alternating Group#^def-21-2|odd permutations]], the other coset of $A_n$, have $n!/2$ elements each. So both sides of the theorem are $0$.
 
 ^ex-66-3
 
@@ -418,7 +418,7 @@ Worksheet 15's formula therefore generalizes Burnside's Lemma from permutation r
 > $$
 >
 > Its matrix is $\frac13$ times the all-ones matrix, $\operatorname{Ker}\pi = U_2$, and Corollary [[§66 Invariant Vectors#^cor-66-8|§66.8]] is the decomposition $k^3 = U_1 \oplus U_2$ of When $k\{1,2,3\} = U_1 \oplus U_2$ (Proposition [[§61 Representations and Subrepresentations#^prop-61-3|§61.3]]).
-> 3. *The count.* $\rho(\sigma)$ is a permutation matrix, so its trace is the number of fixed points of $\sigma$ (Corollary [[§66 Invariant Vectors#^cor-66-11|§66.11]](1)): $3$ for $e$, $1$ for each of the three transpositions, $0$ for each of the two $3$-cycles. So
+> 3. *The count.* $\rho(\sigma)$ is a permutation matrix, so its trace is the number of [[§26 Stabilizers and Fixed Points#^def-26-2|fixed points]] of $\sigma$ (Corollary [[§66 Invariant Vectors#^cor-66-11|§66.11]](1)): $3$ for $e$, $1$ for each of the three transpositions, $0$ for each of the two $3$-cycles. So
 >
 > $$
 > \frac16\big(3 + 3 \cdot 1 + 2 \cdot 0\big) = 1 = \dim U_1.

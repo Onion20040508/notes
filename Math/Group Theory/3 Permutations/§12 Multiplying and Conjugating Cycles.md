@@ -72,6 +72,7 @@ tags: [group-theory, math493]
 
 ^pf-12-2
 
+*Uses:* [[§11 Disjoint Cycle Decomposition#^thm-11-3|§11.3]]
 > [!remark] Remark: Cycles Need Not Be Disjoint
 > Uniqueness in the [[§11 Disjoint Cycle Decomposition#^thm-11-3|decomposition theorem]] depends on disjointness. With overlapping cycles the same permutation has many expressions (Example [[§12 Multiplying and Conjugating Cycles#^ex-12-2|§12.2]]), and factorizations into transpositions are far from unique; only the *parity* of the number of transpositions is an invariant of the permutation, as proved in [[§21 The Sign Homomorphism and the Alternating Group|§21]] (Parity of a Permutation).
 

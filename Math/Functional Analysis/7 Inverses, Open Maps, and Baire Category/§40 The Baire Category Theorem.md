@@ -106,8 +106,7 @@ This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ 
 >
 > We want to show there is at least one point of $X$ that lies in no $E_n$, a contradiction. The idea is to construct a sequence of nested closed balls, the $n$-th one avoiding $E_n$, and to use completeness to find a point in all of them.
 >
-> **Step 1: nested balls.** Take the open ball $B(x_0, 1)$ with radius $1$ about some $x_0 \in X$ (in a normed space one can take $B(0,1)$;
-> in a metric space any center will do). By Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]] there is $B(x_1, r_1)$, $r_1 > 0$, with $\overline{B(x_1, r_1)} \subset B(x_0, 1) \cap \overline{E}_1^{\,c}$, i.e.
+> **Step 1: nested balls.** Take the open ball $B(x_0, 1)$ with radius $1$ about some $x_0 \in X$ (in a normed space one can take $B(0,1)$; in a metric space any center will do). By Lemma [[§40 The Baire Category Theorem#^lem-40-1|§40.1]] there is $B(x_1, r_1)$, $r_1 > 0$, with $\overline{B(x_1, r_1)} \subset B(x_0, 1) \cap \overline{E}_1^{\,c}$, i.e.
 >
 > $$
 > \overline{B(x_1, r_1)} \subset B(x_0, 1), \qquad \overline{B(x_1, r_1)} \cap \overline{E}_1 = \varnothing .
@@ -163,7 +162,7 @@ This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ 
 
 ^pf-40-4
 
-*Uses:* [[§40 The Baire Category Theorem#^lem-40-1|§40.1]]
+*Uses:* [[§40 The Baire Category Theorem#^lem-40-1|§40.1]], [[§40 The Baire Category Theorem#^lem-40-2|§40.2]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]]
 
 ![[m556-40-2.svg]]
 

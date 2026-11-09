@@ -11,7 +11,7 @@ Linear functionals take values in the scalars. The next objects are linear maps 
 
 **Builds on:** [[· 1 Linear Spaces|1 Linear Spaces]] (12), [[· 2 The Hahn–Banach Theorem|2 The Hahn–Banach Theorem]] (2), [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (30), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (17), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (49)
 **Used by:** [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (1), [[· 7 Inverses, Open Maps, and Baire Category|7 Inverses, Open Maps, and Baire Category]] (2), [[· 8 Weak Convergence|8 Weak Convergence]] (9)
-**Builds on (other subjects):** [[Linear Algebra]] (2), [[Measure Theory]] (13), [[Topology]] (1), [[Single Variable Analysis]] (8), [[Multivariable Analysis]] (2)
+**Builds on (other subjects):** [[Linear Algebra]] (2), [[Measure Theory]] (13), [[Topology]] (1), [[Single Variable Analysis]] (10), [[Multivariable Analysis]] (2)
 
 ## Sections
 - [[§30 Boundedness and Continuity]]

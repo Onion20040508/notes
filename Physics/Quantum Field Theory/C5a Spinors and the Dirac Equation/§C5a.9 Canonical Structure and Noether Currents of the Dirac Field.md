@@ -130,7 +130,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 > **What the derivation shows**
 > - ⚑ By-product: the classical charge is positive definite, unlike the scalar's ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]); it is Quantum Mechanics' probability density. After quantization with anticommutators, normal-ordered, it becomes particles minus antiparticles and can have either sign ([[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-3|Theorem §C5b.5.3]]).
 > - ⚑ By-product: the sign of the Noether current is opposite to the conventional one, as for the complex scalar ([[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|§C1b.6, Caution: Sign and normalization of the U(1) current]]).
-> - Used next: coupled to the photon, $e\,j^\mu A_\mu$ (QFT C8, planned); its matrix elements are split by the Gordon identity ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]]).
+> - Used next: coupled to the photon, $e\,j^\mu A_\mu$ ([[§C8.1 The QED Lagrangian and the Covariant Derivative#^thm-c8-1-3|Theorem §C8.1.3]]: $\mathcal L_{\rm int} = -e\,j^\mu A_\mu$); its matrix elements are split by the Gordon identity ([[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-9|Theorem §C5a.14.9]]).
 
 ^der-c5a-9-3
 

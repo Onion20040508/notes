@@ -144,10 +144,6 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 ![[m556-15-1.svg]]
 *The picture drawn in Lecture 6, for $Y$ a line in $\mathbb{R}^2$: $y_0$ is only an almost-closest point, $d \le a = \|x_0 - y_0\| < 2d$, and $z = (x_0 - y_0)/a$ is the unit vector in the same direction. Every point of $Y$ is at distance at least $d/a > \tfrac12$ from $z$; here $z$ lies above the dashed line.*
 
-![[m556-15-a1.gif|460]]
-
-*(Not from lecture; animation added, vault only.)* The orthonormal sequence $f_n = \sin(nx)/\sqrt\pi$ on the unit sphere of $L^2[0, 2\pi]$, $n = 1, \ldots, 20$ (previous one faint). Any two are at distance $\sqrt2$, so no subsequence converges, and the closed unit ball is not compact. Yet for a fixed $g$ (gray, $g \propto x^2(2\pi - x)$, chosen for the picture) the coefficients $(f_n, g)$ tend to $0$ (right), as Bessel's inequality forces.
-
 > [!remark]- Connections
 > - In an inner product space the closest point exists ([[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]) and the unit vector can be taken orthogonal: [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], and the remark contrasting the two arguments, [[§25 Projection and Orthogonal Decomposition#^rem-25-6|Remark §25]].
 
@@ -302,6 +298,10 @@ Without an inner product there is no notion of perpendicularity, so one cannot a
 ^ex-20-2
 
 *Uses:* [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§20 Compactness and the Unit Ball#^def-20-1|Def. §20.1]]
+
+![[m556-15-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The orthonormal sequence $f_n = \sin(nx)/\sqrt\pi$ on the unit sphere of $L^2[0, 2\pi]$, $n = 1, \ldots, 20$ (previous one faint). Any two are at distance $\sqrt2$, so no subsequence converges, and the closed unit ball is not compact. Yet for a fixed $g$ (gray, $g \propto x^2(2\pi - x)$, chosen for the picture) the coefficients $(f_n, g)$ tend to $0$ (right), as Bessel's inequality forces.
 
 > [!remark] Remark: Why This Matters: Toward Weak Convergence
 > Compactness is what allows a limit to be produced when no formula for it exists. The model application: to solve an equation $P(x) = 1$ one constructs approximate solutions, $P(x_1) \approx 1$, $P(x_2)$ closer, and so on, with $\|x_j\| \le M$ for all $j$; in finite dimensions the bounded sequence $\{x_j\}$ has a convergent subsequence, and its limit solves the equation provided $P$ is continuous. Theorem [[§20 Compactness and the Unit Ball#^thm-20-5|§20.5]] says this move is unavailable in the function spaces the course is about — $L^p$, $\ell^p$, $C[a,b]$ are all infinite-dimensional.

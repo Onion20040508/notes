@@ -123,7 +123,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 
 ^pf-34-2
 
-*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|Def. §33.9]]
+*Uses:* [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|Def. §33.9]]
 
 > [!theorem] Theorem §34.3: Existence and Uniqueness of Weak Solutions
 > Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $f \in L^2(\Omega)$. Then $(D)$ has a unique weak solution $u \in H^1_0(\Omega)$.

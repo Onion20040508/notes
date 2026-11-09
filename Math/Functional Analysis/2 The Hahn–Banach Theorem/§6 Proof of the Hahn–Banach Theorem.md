@@ -21,10 +21,11 @@ Before the proof, two remarks on why the set of linear functionals on $X$ is wor
 ^rem-6-1
 
 > [!remark]- Connections
+> - “Enough functionals” made precise in a normed space (if $\ell(x) = 0$ for every bounded $\ell$ then $x = 0$): [[§36 Duality in Normed Spaces#^cor-36-3|§36.3]].
 > - Every functional on $\mathbb{R}^n$ is a dot product: [[§3 Linear Maps, Convexity, and Linear Functionals#^ex-3-2|Ex. §3.2]]; on finite-dimensional inner product spaces [[Riesz representation theorem|LADR 6.42]]; on [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert spaces]] (bounded functionals) [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]].
 
 > [!remark] Remark: Convergence Without Topology
-> A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement “$x_n \to x$” has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This will be developed later in the course ([[§20 Compactness and the Unit Ball#^rem-20-4|weak convergence]]).
+> A linear space carries no notion of distance, so for a sequence $\{x_n\} \subset X$ the statement “$x_n \to x$” has no meaning. But for a linear functional $\ell$, the sequence $\ell(x_n)$ is a sequence of scalars, and convergence of scalars is understood. So linear functionals let one speak of a sequence in $X$ converging, at least in the sense that $\ell(x_n) \to \ell(x)$ for the functionals $\ell$ under consideration. This will be developed later in the course ([[§43 Weak and Weak-Star Convergence#^def-43-1|weak convergence]]).
 
 ^rem-6-2
 
@@ -47,6 +48,7 @@ The theorem is a *construction* device. The simplest use:
 
 > [!remark]- Connections
 > - The same construction, with $p$ the gauge of a convex set, is Steps 2–3 of the separation theorem: [[§8 The Hyperplane Separation Theorem#^pf-8-1|§8.1]].
+> - In a normed space a dominating $p$ is always available (a multiple of the norm), and the construction gives a functional of norm $1$ with $\ell(y_0) = \|y_0\|$: [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]].
 
 ## The One-Step Extension
 
@@ -164,7 +166,7 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 
 ^pf-6-1
 
-*Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[Completeness Axiom|451 §4.4]]
+*Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]], [[§5 Statement and Motivation#^def-5-2|Def. §5.2]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[Completeness Axiom|451 Def. §4.4]]
 
 ![[m556-4-2.svg]]
 *Steps 3–4 on the real line. Each red number $\ell(y') - p(-x_0 + y')$ is a lower bound for $c = L(x_0)$ and each blue number $p(x_0 + y) - \ell(y)$ an upper bound. Inequality (4) says every red number lies to the left of every blue one, so the supremum of the red numbers is at most the infimum of the blue ones, and the green interval between them is nonempty; any $c$ in it satisfies (3). The proof takes the left endpoint.*

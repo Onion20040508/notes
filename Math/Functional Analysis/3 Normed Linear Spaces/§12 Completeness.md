@@ -238,10 +238,10 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 
 ^pf-12-3
 
-*Uses:* [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§11 Normed Linear Spaces#^def-11-3|Def. §11.3]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]], [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]
+*Uses:* [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§11 Normed Linear Spaces#^def-11-3|Def. §11.3]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]], [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]
 
 > [!remark]- Connections
-> - The same construction one level down: ℝ as Cauchy classes of ℚ ([[§10a Cauchy Sequences#^rem-10a-4|451 Remark §10.4]]); (c) and (d) for $M = \mathbb{Q}$ are [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-9|451 §6★.9]] and [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-10|451 §6★.10]].
+> - The same construction one level down: ℝ as Cauchy classes of ℚ ([[§10a Cauchy Sequences#^rem-10a-4|451 Remark (construction of the reals)]]); (c) and (d) for $M = \mathbb{Q}$ are [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-9|451 §6★.9]] and [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-10|451 §6★.10]].
 > - The normed version, where the linear structure and the norm are added: Theorem [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]; uniqueness: Corollary [[§13 The Completion of a Normed Space#^cor-13-3|§13.3]].
 
 > [!example] Example §12.1: Completions of Subsets of $\mathbb{R}^n$

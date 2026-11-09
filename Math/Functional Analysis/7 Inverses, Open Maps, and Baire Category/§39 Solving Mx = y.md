@@ -47,8 +47,7 @@ $$
 ^thm-39-1
 
 > [!proof]+ Proof
-> (1)
-> *Linear subspace:* $M0 = 0$, and if $Mx_1 = Mx_2 = 0$ then $M(c_1 x_1 + c_2 x_2) = c_1 Mx_1 + c_2 Mx_2 = 0$. *Closed:* if $x_n \in N$ and $x_n \to x_0$, then, $M$ being bounded and hence continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), $0 = Mx_n \to Mx_0$, so $Mx_0 = 0$.
+> (1) *Linear subspace:* $M0 = 0$, and if $Mx_1 = Mx_2 = 0$ then $M(c_1 x_1 + c_2 x_2) = c_1 Mx_1 + c_2 Mx_2 = 0$. *Closed:* if $x_n \in N$ and $x_n \to x_0$, then, $M$ being bounded and hence continuous (Proposition [[§30 Boundedness and Continuity#^prop-30-2|§30.2]]), $0 = Mx_n \to Mx_0$, so $Mx_0 = 0$.
 >
 > (2) Since $N$ is closed, $X/N$ is a normed linear space (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]): its elements are the equivalence classes $[x] = \{ x + w : w \in N \}$, $x \in X$, with $[x_1] = [x_2]$ if and only if $x_1 - x_2 \in N$, and
 >
@@ -66,8 +65,7 @@ $$
 >
 > The implication “$\Leftarrow$” says the value $Mx$ does not depend on the representative $x$ of $[x]$: $M_0$ is well defined. The implication “$\Rightarrow$” says $M_0[x_1] = M_0[x_2]$ forces $[x_1] = [x_2]$: $M_0$ is one-to-one.
 >
-> **Linear.**
-> $M_0(c_1[x_1] + c_2[x_2]) = M_0[c_1 x_1 + c_2 x_2] = M(c_1 x_1 + c_2 x_2) = c_1 M_0[x_1] + c_2 M_0[x_2]$.
+> **Linear.** $M_0(c_1[x_1] + c_2[x_2]) = M_0[c_1 x_1 + c_2 x_2] = M(c_1 x_1 + c_2 x_2) = c_1 M_0[x_1] + c_2 M_0[x_2]$.
 >
 > **Bounded.** For every $w \in N$, $Mx = M(x + w)$, so
 >
@@ -85,8 +83,7 @@ $$
 >
 > **Onto $R(M)$.** The values of $M_0$ are the values $Mx$ of $M$, so $M_0(X/N) = R(M)$; with one-to-one, $M_0 : X/N \to R(M)$ is a bijection.
 >
-> **$\|M_0\| = \|M\|$.**
-> Since $\|[x]\| \le \|x\|$ (take $w = 0$ in the infimum), for every $x \in X$
+> **$\|M_0\| = \|M\|$.** Since $\|[x]\| \le \|x\|$ (take $w = 0$ in the infimum), for every $x \in X$
 >
 > $$
 > \|Mx\| = \|M_0[x]\| \le \|M_0\|\, \|[x]\| \le \|M_0\|\, \|x\| ,
@@ -96,7 +93,7 @@ $$
 
 ^pf-39-1
 
-*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]
+*Uses:* [[§30 Boundedness and Continuity#^prop-30-2|§30.2]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]
 
 > [!remark] Remark: The First Isomorphism Theorem, with Norms
 > Algebraically, Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]](2) is the first isomorphism theorem of linear algebra: $X/N(M) \cong R(M)$. The null space often represents a symmetry of the problem, and quotienting it out removes the non-uniqueness; restricting the target to $R(M)$ removes the non-existence. What the theorem does not give is a bounded inverse: $M_0^{-1} : R(M) \to X/N$ is linear but need not be bounded, and $R(M)$ need not be closed in $Y$. If $X$ and $Y$ are Banach spaces and $R(M)$ is closed, then $X/N$ and $R(M)$ are Banach spaces, and Banach's theorem below shows that $M_0^{-1}$ is bounded. So question (3) is the real one.
@@ -110,7 +107,7 @@ Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]] as a diagram: $M$ factors as th
 ## Banach's Theorem and Open Maps
 
 > [!theorem] Theorem §39.2: Banach's Inverse Mapping Theorem
-> Let $X, Y$ be Banach spaces and $M : X \to Y$ a bounded linear map. Assume $M$ is one-to-one and onto. Then $M^{-1} : Y \to X$ is also a bounded linear map.
+> Let $X, Y$ be Banach spaces and $M : X \to Y$ a [[§30 Boundedness and Continuity#^def-30-2|bounded linear map]]. Assume $M$ is one-to-one and onto. Then $M^{-1} : Y \to X$ is also a bounded linear map.
 > The inverse is *not* assumed to be bounded, and it is essential that *both* $X$ and $Y$ are Banach spaces.
 >
 > *Lax: §15.5, Thm 11*
@@ -172,6 +169,10 @@ So a bounded linear bijection $M$ has a bounded inverse exactly when $M$ is an o
 
 Closedness of a graph, in a picture. Left: the points $(x_n, Mx_n)$ of the graph converge, and the limit lies on the graph. Right: the example above, $Mx = x$ on the polynomials in $C[0,1]$; the Taylor polynomials $x_n$ of $e^t$ give points $(x_n, x_n)$ of the graph converging to $(e^t, e^t)$, which is missing, since $e^t$ is not a polynomial. $M$ is continuous but not closed: its domain is not closed.
 
+![[m556-39-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The right half of the figure in motion: the Taylor polynomials $T_n$ of $e^x$, $n = 0, \ldots, 8$, converge to $e^x$ (red) in $C[0, 1]$, with the error falling below $10^{-6}$ (right). The graph points $(T_n, MT_n) = (T_n, T_n)$ converge to $(e^x, e^x)$, which is not on the graph, since $e^x$ is not a polynomial.
+
 > [!remark] Remark: Why Not “Closed Sets to Closed Sets”
 > A closed map is not defined, by analogy with open maps, as one taking closed sets to closed sets: that is a different notion, not equivalent to this one (Example [[§39 Solving Mx = y#^ex-39-2|§39.2]]), and it is not the one used here; the graph definition is.
 
@@ -187,10 +188,6 @@ Closedness of a graph, in a picture. Left: the points $(x_n, Mx_n)$ of the graph
 > *$P(H) = \mathbb{R} \setminus \{0\}$, not closed.* If $xy = 1$ then $x \neq 0$; conversely, for $x \neq 0$, $(x, 1/x) \in H$ and $P(x, 1/x) = x$. The points $\frac1n \in P(H)$ converge to $0 \notin P(H)$, so $P(H)$ is not closed.
 
 ^ex-39-2
-
-![[m556-39-a1.gif|460]]
-
-*(Not from lecture; animation added, vault only.)* The right half of the figure in motion: the Taylor polynomials $T_n$ of $e^x$, $n = 0, \ldots, 8$, converge to $e^x$ (red) in $C[0, 1]$, with the error falling below $10^{-6}$ (right). The graph points $(T_n, MT_n) = (T_n, T_n)$ converge to $(e^x, e^x)$, which is not on the graph, since $e^x$ is not a polynomial.
 
 A closed map need not be continuous. This is why one cares about such a weak notion — differentiation, the most important operator in analysis, is not bounded, but it is closed.
 

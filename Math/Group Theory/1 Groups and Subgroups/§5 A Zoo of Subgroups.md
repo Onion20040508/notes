@@ -65,6 +65,7 @@ tags: [group-theory, math493]
 
 ^pf-5-2
 
+*Uses:* [[§5 A Zoo of Subgroups#^prop-5-1|§5.1]]
 > [!remark] Remark: The Dependency of $U_n$ on Bézout
 > The proof that $U_n$ is a group invoked Bézout's identity. Generated Subgroups of $\mathbb{Z}$, and Bézout derives Bézout from the [[§5 A Zoo of Subgroups#^prop-5-1|classification of subgroups]] of $\mathbb{Z}$, which used only the division algorithm — so the dependency chain is: well-ordering $\Rightarrow$ division algorithm $\Rightarrow$ subgroups of $\mathbb{Z}$ $\Rightarrow$ Bézout $\Rightarrow$ $U_n$ is a group.
 

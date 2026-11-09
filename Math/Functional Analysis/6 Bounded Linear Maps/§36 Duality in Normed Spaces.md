@@ -9,7 +9,7 @@ tags: [functional-analysis, math556]
 
 *Stage: maps — Thread: functionals. Hahn–Banach with a multiple of the norm as dominating function: there are enough bounded functionals to compute norms and distances, and the dual of $\ell^p$ is $\ell^{p'}$.*
 
-Recall ([[§31 Dual Spaces|§31]]) that for a normed linear space $X$ over $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$ the dual space $X'$ consists of the bounded linear functionals $\ell : X \to \mathbb{F}$, with
+Recall ([[§31 Dual Spaces|§31]]) that for a normed linear space $X$ over $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$ the [[§31 Dual Spaces#^def-31-1|dual space]] $X'$ consists of the bounded linear functionals $\ell : X \to \mathbb{F}$, with
 
 $$
 \|\ell\| = \sup_{x \neq 0} \frac{|\ell(x)|}{\|x\|} = \sup_{\|x\| = 1} |\ell(x)| ,
@@ -24,7 +24,7 @@ This lecture explains why $X'$ is called the *dual* space: just as $\|\ell\|$ is
 The Hahn–Banach theorem of Chapter 2 needed no norm, only a positive homogeneous subadditive $p$. On a normed space there is a more specific version, in which $p$ is a multiple of the norm.
 
 > [!theorem] Theorem §36.1: Hahn–Banach for Normed Spaces
-> Let $X$ be a normed linear space over $\mathbb{F}$, $Y$ a linear subspace of $X$ (a normed linear space with the same norm), and $\ell : Y \to \mathbb{F}$ a bounded linear functional on $Y$, with norm
+> Let $X$ be a normed linear space over $\mathbb{F}$, $Y$ a linear subspace of $X$ (a normed linear space with the same norm), and $\ell : Y \to \mathbb{F}$ a [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|bounded linear functional]] on $Y$, with norm
 >
 > $$
 > \|\ell\|_Y = \sup_{y \in Y,\ \|y\| \le 1} |\ell(y)| .
@@ -116,14 +116,15 @@ For $\ell \in X'$, $\|\ell\|$ is computed as a supremum of $|\ell(x)|$ over $\|x
 > **Step 3: conclusion.** By Step 2, $\sup_{\|\ell\| \le 1} |\ell(y_0)| \ge |L_0(y_0)| = \|y_0\|$; with Step 1 the supremum equals $\|y_0\|$, and it is attained at $L_0$, so it is a maximum.
 
 ^pf-36-2
+
+*Uses:* [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
+
 ![[m556-36-2.svg]]
 *Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] in $\mathbb{R}^2$ with the norm $\|x\| = |x_1| + |x_2|$, whose unit ball is the blue square. A functional $\ell(x) = c_1 x_1 + c_2 x_2$ has norm $\max(|c_1|, |c_2|)$, and $\|\ell\| \le 1$ means that the ball lies in the strip $|\ell| \le 1$. A norming functional for $y_0$ ($\|\ell\| = 1$, $\ell(y_0) = \|y_0\| = 1$) is a line $\ell = 1$ touching the ball at $y_0$ with the ball on one side — a supporting line. Left: at a point of an edge it is unique. Right: at a corner there are many; this is the non-uniqueness of Hahn–Banach extensions (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]) seen in the plane.*
 
 ![[m556-36-a1.gif|460]]
 
 *(Not from lecture; animation added, vault only.)* $\|x\|_1$ for $x = (0.9, 0.5)$ as a maximum: $\ell = (c_1, c_2)$ runs around the dual unit sphere $\max|c_j| = 1$ (the square), and the level line $\{\ell = \ell(x)\}$ through $x$ is drawn. $\ell(x)$ (right) is largest, $1.4 = \|x\|_1$, at the vertex $\ell = (1, 1)$, where the level line supports the blue unit ball.
-
-*Uses:* [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
 > [!remark] Remark: Duality
 > The two formulas
@@ -153,6 +154,7 @@ For $\ell \in X'$, $\|\ell\|$ is computed as a supremum of $|\ell(x)|$ over $\|x
 > a sum of non-negative terms; hence $|a_n| = 1$ for every $n$, contradicting $a_n \to 0$.
 
 ^ex-36-1
+
 ![[m556-36-4.svg]]
 *Example [[§36 Duality in Normed Spaces#^ex-36-1|§36.1]]: the values $\ell(a^{(N)}) = 1 - 2^{-N}$ on the unit vectors $a^{(N)} = (1, \ldots, 1, 0, \ldots)$ of $c_0$ increase to $\|\ell\| = 1$. Reaching $1$ would need $|a_n| = 1$ for every $n$, which no element of $c_0$ has: the supremum over the unit ball of $X$ is not attained, while the maximum over the unit ball of $X'$ in Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] always is.*
 
@@ -172,7 +174,7 @@ For $\ell \in X'$, $\|\ell\|$ is computed as a supremum of $|\ell(x)|$ over $\|x
 
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]
 
-This is the precise form of the remark in [[§6 Proof of the Hahn–Banach Theorem|§6]] that Hahn–Banach guarantees “enough” linear functionals: on a normed space there are enough *bounded* ones to tell points apart.
+This is the precise form of the remark in [[§6 Proof of the Hahn–Banach Theorem#^rem-6-1|§6]] that Hahn–Banach guarantees “enough” linear functionals: on a normed space there are enough *bounded* ones to tell points apart.
 
 ## The Dual of $\ell^p$
 
@@ -181,14 +183,14 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 > [!theorem] Theorem §36.4: The Dual of $\ell^p$
 > Let $1 \le p < \infty$ and $\frac1p + \frac1{p'} = 1$, so that $1 < p' \le \infty$.
 >
-> 1. For $a = (a_1, a_2, \ldots) \in \ell^{p'}$,
+> - (1) For $a = (a_1, a_2, \ldots) \in \ell^{p'}$,
 >
-> $$
-> \ell_a(x) = \sum_{j=1}^\infty x_j\, \overline{a_j}, \qquad x = (x_1, x_2, \ldots) \in \ell^p,
-> $$
+>   $$
+>   \ell_a(x) = \sum_{j=1}^\infty x_j\, \overline{a_j}, \qquad x = (x_1, x_2, \ldots) \in \ell^p,
+>   $$
 >
-> defines $\ell_a \in (\ell^p)'$, with $\|\ell_a\| \le \|a\|_{p'}$.
-> 2. For every $\ell \in (\ell^p)'$, the numbers $a_j = \overline{\ell(e_j)}$ form a sequence $a \in \ell^{p'}$ with $\|a\|_{p'} \le \|\ell\|$, and $\ell = \ell_a$.
+>   defines $\ell_a \in (\ell^p)'$, with $\|\ell_a\| \le \|a\|_{p'}$.
+> - (2) For every $\ell \in (\ell^p)'$, the numbers $a_j = \overline{\ell(e_j)}$ form a sequence $a \in \ell^{p'}$ with $\|a\|_{p'} \le \|\ell\|$, and $\ell = \ell_a$.
 >
 > Consequently $a \mapsto \ell_a$ is a one-to-one map of $\ell^{p'}$ onto $(\ell^p)'$ with $\|\ell_a\| = \|a\|_{p'}$; it is linear if $\mathbb{F} = \mathbb{R}$ and conjugate-linear if $\mathbb{F} = \mathbb{C}$. In this sense $(\ell^p)' = \ell^{p'}$.
 
@@ -375,8 +377,7 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 *Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]], [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]], [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]]
 
 ![[m556-36-3.svg]]
-
-Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] in $\mathbb{R}^2$ for $p = 3$, $p' = \tfrac32$. For $a$ on the unit sphere of $\ell^3$, the maximizing $b_j = |a_j|^{p-2} a_j$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-7|§36.7]]) lies on the unit sphere of $\ell^{3/2}$ (dashed), and the line $\sum_j x_j b_j = 1$ touches the $\ell^3$ ball exactly at $a$: by Hölder every $x$ in the ball has $\sum_j x_j b_j \le 1$, with equality at $a$. The maximizer is the normal of the supporting line.
+*Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] in $\mathbb{R}^2$ for $p = 3$, $p' = \tfrac32$. For $a$ on the unit sphere of $\ell^3$, the maximizing $b_j = |a_j|^{p-2} a_j$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-7|§36.7]]) lies on the unit sphere of $\ell^{3/2}$ (dashed), and the line $\sum_j x_j b_j = 1$ touches the $\ell^3$ ball exactly at $a$: by Hölder every $x$ in the ball has $\sum_j x_j b_j \le 1$, with equality at $a$. The maximizer is the normal of the supporting line.*
 
 ![[m556-36-a3.gif|420]]
 
@@ -398,10 +399,11 @@ Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] in $\mathbb{R}^2$ f
 > (Stated in lecture without proof.) We show that $a \mapsto \ell_a$, $\ell^1 \to (\ell^\infty)'$, is not onto. Step 1 of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] works for $p = \infty$, $p' = 1$: each $a \in \ell^1$ gives $\ell_a \in (\ell^\infty)'$. Let $c \subset \ell^\infty$ be the linear subspace of convergent sequences and $\lambda(x) = \lim_{j \to \infty} x_j$ on $c$. Then $\lambda$ is linear and $|\lambda(x)| \le \sup_j |x_j| = \|x\|_\infty$, so $\|\lambda\|_c \le 1$. By Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]], $\lambda$ extends to some $L \in (\ell^\infty)'$. If $L = \ell_a$ with $a \in \ell^1$, then $\overline{a_j} = L(e_j) = \lambda(e_j) = 0$ for every $j$ (since $e_j \in c$ tends to $0$), so $a = 0$ and $L = 0$; but $L(1, 1, 1, \ldots) = \lambda(1, 1, 1, \ldots) = 1$. So $L$ is not of the form $\ell_a$.
 
 ^pf-ex-36-2
-![[m556-36-5.svg]]
-*Why Step 3 of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] needs $p < \infty$. Left: for $x \in \ell^p$ the truncation $x^{(n)}$ (blue, here $n = 5$) differs from $x$ by a tail whose $p$-th power sum tends to $0$, so finite sequences are dense and a bounded functional is determined by its values $\ell(e_j)$. Right: in $\ell^\infty$ the tail of $(1, 1, 1, \ldots)$ always has supremum $1$; the finite sequences are not dense, and the functional of Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]] vanishes on every $e_j$ without being $0$.*
 
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
+
+![[m556-36-5.svg]]
+*Why Step 3 of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] needs $p < \infty$. Left: for $x \in \ell^p$ the truncation $x^{(n)}$ (blue, here $n = 5$) differs from $x$ by a tail whose $p$-th power sum tends to $0$, so finite sequences are dense and a bounded functional is determined by its values $\ell(e_j)$. Right: in $\ell^\infty$ the tail of $(1, 1, 1, \ldots)$ always has supremum $1$; the finite sequences are not dense, and the functional of Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]] vanishes on every $e_j$ without being $0$.*
 
 ## Distance to a Subspace
 
@@ -472,7 +474,7 @@ A heuristic, pretending there is an inner product: the distance from $z$ to $Y$ 
 
 ^pf-36-8
 
-*Uses:* [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
+*Uses:* [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
 > [!remark] Remark: How to Find the Proof
 > How one would think of the subspace $Y_1$: first, believe the statement, because it is true in a Hilbert space (the picture above). Then what is left is to find an $\ell$ with $\|\ell\| \le 1$, $\ell = 0$ on $Y$ (in a sense perpendicular to $Y$) and $\ell(z_0) = m$. On the span of $z_0$ and $Y$ these requirements leave no choice (up to replacing $m$ by $e^{i\theta} m$), so define $\ell$ there, check its norm, and let Hahn–Banach extend it. Extensions are usually not unique; on the smaller space there is no choice. The proof of Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] is the same argument with $Y = \{0\}$.
@@ -533,8 +535,12 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]] read
 
 ^pf-36-10
 
+*Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]]
+
 > [!theorem] Theorem §36.11: The Dual of a Quotient
 > Let $X$ be a normed linear space and $Y$ a closed linear subspace of $X$, so that $X/Y$ is a normed linear space with the quotient norm (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]). Then $(X/Y)'$ is isometrically isomorphic to $Y^\perp$. Here both sides carry a norm — $(X/Y)'$ the dual norm of the quotient norm, $Y^\perp$ the norm of $X'$ — and the isomorphism preserves it.
+>
+> *Source: HW7, Problem 1*
 
 ^thm-36-11
 

@@ -176,6 +176,7 @@ tags: [group-theory, math493]
 
 ^pf-2-6
 
+*Uses:* [[§2 First Consequences of the Axioms#^prop-2-1|§2.1]], [[§2 First Consequences of the Axioms#^prop-2-3|§2.3]]
 > [!remark] Remark: Why One-Sided Suffices Here but Not in General
 > In a group, checking $ab = e$ alone certifies $b = a^{-1}$; the other equation $ba = e$ comes free. This is special to groups (it uses that $a$ already *has* a two-sided inverse). In monoids — e.g. functions $X \to X$ under composition for infinite $X$ — a one-sided inverse need not be two-sided (Example [[§2 First Consequences of the Axioms#^ex-2-2|§2.2]]).
 
@@ -223,6 +224,7 @@ tags: [group-theory, math493]
 
 ^pf-2-8
 
+*Uses:* [[§2 First Consequences of the Axioms#^prop-2-7|§2.7]]
 The Latin square property is visible in the $S_3$ table ([[§10 Cycle Notation and the Group S₃|§10]]). Its converse fails:
 
 > [!example] Example §2.3: A Latin Square That Is Not a Group Table

@@ -182,6 +182,7 @@ tags: [group-theory, math493]
 
 ^pf-16-6
 
+*Uses:* [[§16 Isomorphisms#^prop-16-1|§16.1]], [[§15 Homomorphisms#^prop-15-4|§15.4]]
 Both parts of the proposition give non-isomorphism tests.
 
 > [!example] Example §16.2: $\mathbb{Z}/6\mathbb{Z} \not\cong S_3$ via Centers
@@ -275,6 +276,7 @@ Both parts of the proposition give non-isomorphism tests.
 
 ^pf-16-8
 
+*Uses:* [[§14 Multiplication Tables#^ex-14-4|Ex. §14.4]], [[§16 Isomorphisms#^prop-16-3|§16.3]], [[§16 Isomorphisms#^prop-16-2|§16.2]], [[§16 Isomorphisms#^prop-16-7|§16.7]]
 > [!remark] Remark: Reading Cyclicity off a Table
 > Both questions reduce to: does the unit group have a generator? In the $U_7$ table ([[§14 Multiplication Tables#^ex-14-3|WS 2.2]]), the row of $3$ read as successive powers cycles through all six elements; in the $U_8$ table, every row returns to $1$ after two steps, so no element generates. A group of order $4$ in which every element squares to the identity cannot be cyclic (Lemma [[§16 Isomorphisms#^lem-16-9|§16.9]]); a group of order $n$ with an element whose powers exhaust it is $\cong \mathbb{Z}/n\mathbb{Z}$ by the argument of (2), which is made general in the [[§17 Cyclic Groups#^thm-17-1|Classification of Cyclic Groups]] ([[§17 Cyclic Groups|§17]]).
 

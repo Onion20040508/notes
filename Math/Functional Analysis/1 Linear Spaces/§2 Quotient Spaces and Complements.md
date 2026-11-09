@@ -273,7 +273,7 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 
 ^pf-2-6
 
-*Uses:* [[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§1 Linear Spaces#^def-1-4|Def. §1.4]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
+*Uses:* [[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§1 Linear Spaces#^def-1-4|Def. §1.4]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
 
 > [!remark]- Connections
 > - In finite dimensions it gives the dimension count of [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105]].
@@ -291,7 +291,7 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 
 ^pf-2-7
 
-*Uses:* [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]]
+*Uses:* [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]]
 
 > [!remark] Remark: The Isomorphism is Not Canonical
 > $M$ depends on the choice of complement $W$. The quotient $X/Y$ itself is canonical — it is built from $X$ and $Y$ alone — but identifying it with a subspace of $X$ requires choosing $W$, and different choices give different embeddings. This is the precise content of “$X/Y$ is like a complement of $Y$”: it is isomorphic to every complement, and equal to none.
@@ -299,7 +299,7 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 ^rem-2-4
 
 ![[m556-1-3.svg]]
-*Quotient versus complement in $\mathbb{R}^2$. The elements of $X/Y$ are the red lines parallel to $Y$ (with $Y$ itself the zero class $[0]$). A complement $W$ (blue) is a line through $0$ that meets each class exactly once, at $w$ — this is the isomorphism $w \mapsto [w]$ of Corollary §2.7. A second complement $W'$ (green) meets the same classes at different points: $w$ and $w'$ represent the same class $[x]$, so each complement is a model of $X/Y$, and neither is $X/Y$ itself.*
+*Quotient versus complement in $\mathbb{R}^2$. The elements of $X/Y$ are the red lines parallel to $Y$ (with $Y$ itself the zero class $[0]$). A complement $W$ (blue) is a line through $0$ that meets each class exactly once, at $w$ — this is the isomorphism $w \mapsto [w]$ of Corollary [[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]]. A second complement $W'$ (green) meets the same classes at different points: $w$ and $w'$ represent the same class $[x]$, so each complement is a model of $X/Y$, and neither is $X/Y$ itself.*
 
 > [!theorem] Corollary §2.8: Orthogonal Complement (inner products; later)
 > Let $X$ carry an inner product $\langle \cdot, \cdot \rangle$ and let $Y^\perp = \{ z \in X : \langle z, y \rangle = 0 \ \forall y \in Y \}$. If $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$, so $X/Y \cong Y^\perp$ via $z \mapsto [z]$ and $X \cong X/Y \oplus Y$.

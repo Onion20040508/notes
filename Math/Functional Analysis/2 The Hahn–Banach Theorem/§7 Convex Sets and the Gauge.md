@@ -110,7 +110,7 @@ The converse direction — starting from a convex set and producing a $p$ — is
 ## The Gauge of a Convex Set
 
 > [!definition] Definition §7.2: Gauge
-> Let $K$ be a convex set in a linear space $X$ with $0$ an interior point of $K$. The **gauge** (or Minkowski functional) associated with $K$ is
+> Let $K$ be a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|convex set]] in a linear space $X$ with $0$ an [[§7 Convex Sets and the Gauge#^def-7-1|interior point]] of $K$. The **gauge** (or Minkowski functional) associated with $K$ is
 >
 > $$
 > p_K(x) = \inf\Bigl\{ a > 0 \;:\; \frac{x}{a} \in K \Bigr\}, \qquad x \in X.
@@ -174,7 +174,7 @@ The material of this subsection was not covered in lecture; it makes precise the
 
 ^pf-7-4
 
-*Uses:* [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]], [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§7 Convex Sets and the Gauge#^prop-7-3|§7.3]]
+*Uses:* [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§7 Convex Sets and the Gauge#^prop-7-3|§7.3]]
 
 Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (which follows from $0$ being interior) for the second term.
 

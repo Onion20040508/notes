@@ -29,7 +29,7 @@ In [[§55 The Sylow Theorems|§55]], a group of order $pq$ with $q \not\equiv 1 
 >
 > **Sylow counts.** As in (1), $n_q \mid p$ and $n_q \equiv 1 \pmod q$ force $n_q = 1$, so $Q$ is normal in $G$. On the other hand, $n_p \mid q$ and $n_p \equiv 1 \pmod p$, and now both divisors $1$ and $q$ of $q$ are congruent to $1$ modulo $p$, so $n_p \in \{1, q\}$ and $P$ need not be normal.
 >
-> **$Q \cap P = \{e\}$ and $QP = G$.** As in (1), by Lagrange's theorem $|Q \cap P|$ divides both $q$ and $p$, so $Q \cap P = \{e\}$; and by Problem 8.1 (The Product Formula, Proposition [[§30 Orbit–Stabilizer#^prop-30-6|§30.6]]), $|QP| = \frac{|Q|\cdot|P|}{|Q \cap P|} = pq = |G|$, so $QP = G$.
+> **$Q \cap P = \{e\}$ and $QP = G$.** As in (1), by [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange's theorem]] $|Q \cap P|$ divides both $q$ and $p$, so $Q \cap P = \{e\}$; and by Problem 8.1 (The Product Formula, Proposition [[§30 Orbit–Stabilizer#^prop-30-6|§30.6]]), $|QP| = \frac{|Q|\cdot|P|}{|Q \cap P|} = pq = |G|$, so $QP = G$.
 >
 > **The map $\varphi \colon P \to \operatorname{Aut}(Q)$.** For $x \in P$, define $\varphi(x) \colon Q \to Q$ by $\varphi(x)(y) = xyx^{-1}$, which lies in $Q$ since $Q$ is normal. Each $\varphi(x)$ is a homomorphism, since $x y_1y_2 x^{-1} = (xy_1x^{-1})(xy_2x^{-1})$, and it is bijective with inverse $\varphi(x^{-1})$; so $\varphi(x) \in \operatorname{Aut}(Q)$. Moreover, for $x_1, x_2 \in P$ and $y \in Q$,
 >
@@ -37,7 +37,7 @@ In [[§55 The Sylow Theorems|§55]], a group of order $pq$ with $q \not\equiv 1 
 > \varphi(x_1x_2)(y) = x_1x_2\,y\,x_2^{-1}x_1^{-1} = \varphi(x_1)\big(\varphi(x_2)(y)\big),
 > $$
 >
-> so $\varphi \colon P \to \operatorname{Aut}(Q)$ is a group homomorphism. Let $Q \rtimes_\varphi P$ be the semidirect product, with multiplication $(y_1, x_1)\cdot(y_2, x_2) = \big(y_1\,\varphi(x_1)(y_2),\ x_1x_2\big)$.
+> so $\varphi \colon P \to \operatorname{Aut}(Q)$ is a [[§15 Homomorphisms#^def-15-1|group homomorphism]]. Let $Q \rtimes_\varphi P$ be the semidirect product, with multiplication $(y_1, x_1)\cdot(y_2, x_2) = \big(y_1\,\varphi(x_1)(y_2),\ x_1x_2\big)$.
 >
 > **The isomorphism.** Define
 >
@@ -62,7 +62,7 @@ In [[§55 The Sylow Theorems|§55]], a group of order $pq$ with $q \not\equiv 1 
 
 ^pf-60-1
 
-*Uses:* [[§55 The Sylow Theorems#^prop-55-11|§55.11]], [[§30 Orbit–Stabilizer#^prop-30-6|§30.6]], [[§58 Semidirect Products#^prop-58-3|§58.3]], [[§58 Semidirect Products#^thm-58-6|§58.6]]
+*Uses:* [[§55 The Sylow Theorems#^prop-55-11|§55.11]], [[§30 Orbit–Stabilizer#^prop-30-6|§30.6]], [[§58 Semidirect Products#^prop-58-3|§58.3]], [[§58 Semidirect Products#^thm-58-6|§58.6]], [[§15 Homomorphisms#^def-15-1|Def. §15.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]]
 
 By Proposition [[§60 Groups of Order pq as Semidirect Products#^prop-60-1|§60.1]], the group $G$ is known once the homomorphism $\varphi \colon P \to \operatorname{Aut}(Q)$ is known. Here $P \cong \mathbb{Z}/p\mathbb{Z}$ and $Q \cong \mathbb{Z}/q\mathbb{Z}$, since groups of prime order are cyclic (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]]).
 

@@ -76,10 +76,16 @@ tags: [functional-analysis, math556, companion]
 
 *Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-2|Def. §44.2]]
 
+> [!remark]- Connections
+> - Finite-dimensional version: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]]).
+
 > [!remark] Remark
 > The Riesz map needs no basis, only the inner product; in this sense a Hilbert space is canonically identified with its dual. Contrast [[§21 Linear Algebra Toolkit#^prop-21-2|MATH 591]]: a finite-dimensional vector space is isomorphic to its dual, but only after choosing a basis — the inner product is exactly the extra structure that removes the choice. The price is that $R$ is conjugate-linear, so over $\mathbb{C}$ the identification is with the complex conjugate space $\overline{H}$; in finite dimensions this is the conjugate transpose (Example [[§44 Bras, Kets, and the Riesz Map#^ex-44-1|§44.1]]). For an arbitrary Banach space there is no inner product, and the dual space is a genuinely new object; this is where the course is heading.
 
 ^rem-44-2
+
+> [!remark]- Connections
+> - The basis-dependent isomorphism $V \cong V^*$: [[§21 Linear Algebra Toolkit#^prop-21-2|591 §21.2]] (dual basis), [[§12 Duality#^ladr-3-110|LADR 3.110]]; isomorphisms from non-degenerate pairings: [[§21 Linear Algebra Toolkit#^thm-21-5|591 §21.5]].
 
 > [!example] Example §44.1: The Riesz Map on $\mathbb{C}^n$ is the Conjugate Transpose
 > Let $H = \mathbb{C}^n$ with $(x, a) = \sum_{j=1}^n x_j\, \bar{a}_j$, and write vectors as columns. The functional corresponding to a column vector $a$ is the conjugate transpose $a^\dagger = \bar{a}^{T}$, a row vector acting by matrix multiplication:
@@ -91,12 +97,6 @@ tags: [functional-analysis, math556, companion]
 > The conjugation is what makes $R$ conjugate-linear (Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]](2)): $(ca)^\dagger = \bar{c}\, a^\dagger$, so $R(ca) = \bar{c}\, R(a)$.
 
 ^ex-44-1
-
-> [!remark]- Connections
-> - Finite-dimensional version: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]]).
-
-> [!remark]- Connections
-> - The basis-dependent isomorphism $V \cong V^*$: [[§21 Linear Algebra Toolkit#^prop-21-2|591 §21.2]] (dual basis), [[§12 Duality#^ladr-3-110|LADR 3.110]]; isomorphisms from non-degenerate pairings: [[§21 Linear Algebra Toolkit#^thm-21-5|591 §21.5]].
 
 ## Dirac Notation
 

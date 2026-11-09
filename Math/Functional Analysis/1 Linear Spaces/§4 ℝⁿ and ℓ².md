@@ -33,6 +33,6 @@ Chapter 1 uses $\mathbb{R}^n$, mostly the plane, as the picture for each algebra
 
 $\ell^2$ appears once, before it is defined: the finitely supported sequences have orthogonal complement $\{0\}$, so the orthogonal form of $X \cong X/Y \oplus Y$ ([[§2 Quotient Spaces and Complements#^cor-2-8|Corollary]]) needs a closed subspace of a complete space, which is what [[§25 Projection and Orthogonal Decomposition#^thm-25-4|orthogonal decomposition]] will assume.
 
-![[§2 Quotient Spaces and Complements#^rem-2-5]]
+![[§2 Quotient Spaces and Complements#^ex-2-3]]
 
 *Chain:* [[§15 ℝⁿ, C［a,b］ and ℓᵖ|Chapter 3]] →

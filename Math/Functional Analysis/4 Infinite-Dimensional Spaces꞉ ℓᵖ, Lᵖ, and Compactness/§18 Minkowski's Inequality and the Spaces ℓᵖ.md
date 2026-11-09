@@ -148,7 +148,7 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 *Uses:* [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|Def. §18.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]]
 
 > [!example] Example §18.2: $\ell^p$ is Infinite-Dimensional
-> Let $1 \le p \le \infty$ and let $e_j = (0, \ldots, 0, 1, 0, \ldots)$, with the $1$ in the $j$-th place; so $e_1 = (1,0,0,\ldots)$, $e_2 = (0,1,0,\ldots)$, \dots. We show that $e_1, e_2, \ldots$ lie in $\ell^p$ and are linearly independent, so that $\ell^p$ is infinite-dimensional.
+> Let $1 \le p \le \infty$ and let $e_j = (0, \ldots, 0, 1, 0, \ldots)$, with the $1$ in the $j$-th place; so $e_1 = (1,0,0,\ldots)$, $e_2 = (0,1,0,\ldots)$, …. We show that $e_1, e_2, \ldots$ lie in $\ell^p$ and are linearly independent, so that $\ell^p$ is infinite-dimensional.
 >
 > *Membership.* $e_j$ has a single nonzero entry, equal to $1$, so $\|e_j\|_p = 1$ for $p < \infty$ and $\|e_j\|_\infty = 1$; in particular $e_j \in \ell^p$.
 >
@@ -283,6 +283,9 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 
 ^rem-18-4
 
+![[m556-13-2.svg]]
+*The order of limits in Step 2. Each row is one term $a^{(n)}$ of the Cauchy sequence, each column one coordinate $i$. (1) Compare rows $n$ and $m$ on the first $k$ coordinates only (red box), a finite sum $< \varepsilon^p$; (2) let $m \to \infty$ column by column inside the box, legitimate because there are only $k$ columns; (3) only then let $k \to \infty$, which is harmless because the bound $\varepsilon^p$ does not depend on $k$. Doing (3) before (2) would mean exchanging $m \to \infty$ with an infinite sum.*
+
 > [!remark] Remark: The Coordinate Formulation
 > Step 1 can be shortened by working with one coordinate at a time. Fix a coordinate $i$. A single term of a series of non-negative numbers is at most the sum, so
 >
@@ -313,9 +316,6 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 > for every $n$. Consecutive terms stay a fixed positive distance apart, so the Cauchy condition fails (take $\varepsilon$ below that distance and $m = n + 1$).
 
 ^ex-18-3
-
-![[m556-13-2.svg]]
-*The order of limits in Step 2. Each row is one term $a^{(n)}$ of the Cauchy sequence, each column one coordinate $i$. (1) Compare rows $n$ and $m$ on the first $k$ coordinates only (red box), a finite sum $< \varepsilon^p$; (2) let $m \to \infty$ column by column inside the box, legitimate because there are only $k$ columns; (3) only then let $k \to \infty$, which is harmless because the bound $\varepsilon^p$ does not depend on $k$. Doing (3) before (2) would mean exchanging $m \to \infty$ with an infinite sum.*
 
 > [!remark] Remark: Comparison with Lax
 > Three differences of route in [[§17 Hölder's Inequality for Sequences|§17]]–[[§18 Minkowski's Inequality and the Spaces ℓᵖ|§18]]. Lax states Hölder's inequality without proof, referring to Courant; here it is proved from Young's inequality (Lemma [[§16 Means and Young's Inequality#^lem-16-3|§16.3]]). Lax obtains Minkowski's inequality from the *duality formula* $\|x\|_p = \max_{\|u\|_q = 1} |(x, u)|$ with $(x,u) = \sum_j a_j c_j$ (his Theorem 5): a maximum of sums is at most a sum of maxima, so subadditivity is immediate once the formula is known, and the formula itself rests on the equality case of Hölder. The route in lecture (Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]]) avoids the equality case at the price of the truncation argument. The duality formula is the first appearance of the dual-space theme that returns in Lax's Chapter 8. Finally, Lax asserts the completeness of $\ell^p$ and $\ell^\infty$ without proof (examples (a)–(b)); Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]] proves it.

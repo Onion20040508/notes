@@ -53,6 +53,7 @@ tags: [group-theory, math493]
 
 ^pf-46-1
 
+*Uses:* [[§15 Homomorphisms#^prop-15-1|§15.1]]
 > [!remark] Remark: Where Commutativity of $A$ Is Needed
 > The middle step swaps $\chi(g)$ past $\chi(h^{-1})$, which requires $A$ abelian. For a homomorphism into a non-abelian target the conclusion fails (Example [[§46 Characters#^ex-46-2|§46.2]]). What survives in general is only that a homomorphism carries conjugates to conjugates (Lemma [[§46 Characters#^lem-46-2|§46.2]]).
 

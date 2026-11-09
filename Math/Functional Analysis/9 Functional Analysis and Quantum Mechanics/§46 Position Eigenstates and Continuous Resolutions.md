@@ -50,7 +50,7 @@ Orthonormal vectors are all at distance $\sqrt{2}$ from one another, so balls of
 > - [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Separability]] of $L^p(E)$, proved in Chapter 5: [[§29 Sequence and Function Spaces#^prop-29-5|§29.5]]; its home in measure theory: [[§35 Lᵖ as a Banach Space#^cor-35-13|551 §35.13]].
 
 > [!remark] Remark: There is No Dimension Mismatch
-> The *Hilbert dimension* of $H$ is the cardinality of an orthonormal basis; in $L^2(\mathbb{R}^n)$ it is countable, and by [[§46 Position Eigenstates and Continuous Resolutions#^prop-46-1|the theorem]] every orthonormal set, let alone basis, in $L^2(\mathbb{R}^n)$ is countable. So the uncountable family $\{|x\rangle\}$ cannot be an orthonormal set of $L^2$ — and indeed its elements are not in $L^2$ at all, as the next two propositions show. The correct comparison is not “countable basis versus uncountable basis” but “orthonormal basis versus a different kind of object.”
+> The *Hilbert dimension* of $H$ is the cardinality of an orthonormal basis; in $L^2(\mathbb{R}^n)$ it is countable, and by [[§46 Position Eigenstates and Continuous Resolutions#^thm-46-2|the theorem]] every orthonormal set, let alone basis, in $L^2(\mathbb{R}^n)$ is countable. So the uncountable family $\{|x\rangle\}$ cannot be an orthonormal set of $L^2$ — and indeed its elements are not in $L^2$ at all, as the next two propositions show. The correct comparison is not “countable basis versus uncountable basis” but “orthonormal basis versus a different kind of object.”
 
 ^rem-46-1
 
@@ -116,7 +116,7 @@ The object that does exist is the family of projections “$\int_B |x\rangle\lan
 ^prop-46-5
 
 > [!proof]+ Proof
-> Let $Y_B = \{ \psi : \psi = 0 \text{ a.e. outside } B \}$, a linear subspace. It is closed: an $L^2$-convergent sequence has an a.e. convergent subsequence (MATH 551 notes, [[§35 Lᵖ as a Banach Space#^cor-35-10|551 Cor. §35.10]]), so a limit of functions vanishing a.e. outside $B$ vanishes a.e. outside $B$. Its orthogonal complement contains every $\phi$ vanishing a.e. on $B$, since then $(\psi, \phi) = \int \psi\bar{\phi} = 0$ for $\psi \in Y_B$. Now $\psi = \chi_B\psi + \chi_{B^c}\psi$ with $\chi_B\psi \in Y_B$ and $\chi_{B^c}\psi \in Y_B^\perp$, so by uniqueness in Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], $P_{Y_B}\psi = \chi_B\psi$, proving (a). (b) is clear. For (c), $\sum_{k \le N} E(B_k)\psi = \chi_{B_1 \cup \cdots \cup B_N}\psi$, and
+> Let $Y_B = \{ \psi : \psi = 0 \text{ a.e. outside } B \}$, a linear subspace. It is closed: an $L^2$-convergent sequence has an a.e. convergent subsequence (MATH 551 notes, Riesz–Fischer: [[§35 Lᵖ as a Banach Space#^cor-35-10|551 Cor. §35.10]]), so a limit of functions vanishing a.e. outside $B$ vanishes a.e. outside $B$. Its orthogonal complement contains every $\phi$ vanishing a.e. on $B$, since then $(\psi, \phi) = \int \psi\bar{\phi} = 0$ for $\psi \in Y_B$. Now $\psi = \chi_B\psi + \chi_{B^c}\psi$ with $\chi_B\psi \in Y_B$ and $\chi_{B^c}\psi \in Y_B^\perp$, so by uniqueness in Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], $P_{Y_B}\psi = \chi_B\psi$, proving (a). (b) is clear. For (c), $\sum_{k \le N} E(B_k)\psi = \chi_{B_1 \cup \cdots \cup B_N}\psi$, and
 >
 > $$
 > \Bigl\| E(B)\psi - \sum_{k \le N} E(B_k)\psi \Bigr\|^2 = \int_{\bigcup_{k > N} B_k} |\psi|^2 \to 0

@@ -66,6 +66,7 @@ Recall that for $N \trianglelefteq G$ we have $gN = Ng$ for every $g$ ([[§38 No
 
 ^pf-40-2
 
+*Uses:* [[§28 Left and Right Cosets#^prop-28-3|§28.3]]
 > [!theorem] Corollary §40.3: Kernels and Normal Subgroups Are the Same Thing
 > A subset $N \subseteq G$ is a normal subgroup of $G$ if and only if $N = \operatorname{Ker}\alpha$ for some homomorphism $\alpha$ out of $G$.
 
@@ -171,6 +172,8 @@ This is why normality, a condition that looks technical, is the natural one.
 ^pf-40-5
 
 *Uses:* [[§40 Quotient Groups#^prop-40-2|§40.2]], [[§40 Quotient Groups#^def-40-2|Def. §40.2]], [[§4 Subgroups#^def-4-1|Def. §4.1]], [[§16 Isomorphisms#^def-16-1|Def. §16.1]]
+
+Life is especially nice when $S$ is a subgroup, but a set of representatives forming a subgroup need not exist.
 
 > [!example] Example §40.4: $S_3/A_3$ Is Realized by the Subgroup $\langle (2\,3) \rangle$
 > In $S_3/A_3$ the representatives $S = \{e, (2\,3)\}$ of Example [[§40 Quotient Groups#^ex-40-3|§40.3]] form a subgroup, namely $\langle (2\,3) \rangle$, since $(2\,3)^2 = e$. By Representatives Forming a Subgroup (Proposition [[§40 Quotient Groups#^prop-40-5|§40.5]]), $S_3/A_3 \cong \langle (2\,3) \rangle$.

@@ -51,7 +51,7 @@ are two fields of vectors along $S$, tangent to $S$: $\vec r_s$ is the velocity 
 > [!remark]- Connections
 > - Calculus III calls such a surface smooth: [[§133 Parametric Surfaces and Their Areas#^def-133-4|Calc Def. §133.4]]; MATH 452: regular points, [[§31 Surface Integrals#^def-31-3|452 Def. §31.3]].
 
-*(Recalled from Calculus III: Stewart, Section 16.6, a smooth surface; MATH 452, §31.)* Regular means that the Jacobian $d\vec r$, the $3 \times 2$ matrix with columns $\vec r_s, \vec r_t$, has rank $2$: on the interior of $D$, $\vec r$ is an immersion (Definition [[§36 Submersions#^def-36-2|§36.2]]). “In 95\% of the examples in Calc III,” a single injective regular parametrization covers $S$; when $\vec r$ restricted to the interior of $D$ is moreover a homeomorphism onto its image, it is an embedding (Definition [[§44 Embeddings#^def-44-1|§44.1]]), its image is a regular submanifold of $\mathbb{R}^3$ (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]), and the inverse of $\vec r$ is a chart of that submanifold.
+*(Recalled from Calculus III: Stewart, Section 16.6, a smooth surface; MATH 452, §31.)* Regular means that the Jacobian $d\vec r$, the $3 \times 2$ matrix with columns $\vec r_s, \vec r_t$, has rank $2$: on the interior of $D$, $\vec r$ is an immersion (Definition [[§36 Submersions#^def-36-2|§36.2]]). In most examples of Calculus III a single injective regular parametrization covers $S$; when $\vec r$ restricted to the interior of $D$ is moreover a homeomorphism onto its image, it is an embedding (Definition [[§44 Embeddings#^def-44-1|§44.1]]), its image is a regular submanifold of $\mathbb{R}^3$ (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]), and the inverse of $\vec r$ is a chart of that submanifold.
 
 > [!definition] Definition §73.3: Orientation of a Surface by a Unit Normal
 > Let $S \subseteq \mathbb{R}^3$ be a $2$-dimensional regular submanifold (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]). A **unit normal field** on $S$ is a continuous map $\mathbf{n} : S \to \mathbb{R}^3$ such that for every $q \in S$, $\mathbf{n}(q)$ is a unit vector perpendicular to the tangent plane $T_qS \subseteq \mathbb{R}^3$. A choice of unit normal field is an **orientation** of $S$, and $S$ with this choice is an **oriented surface**.
@@ -61,7 +61,7 @@ are two fields of vectors along $S$, tangent to $S$: $\vec r_s$ is the velocity 
 > [!remark]- Connections
 > - Calculus III: [[§135 Oriented Surfaces and Flux#^def-135-1|Calc Def. §135.1]], with an animation of why the Möbius strip has no orientation.
 
-*(Recalled from Calculus III: Stewart, Section 16.7; MATH 452, §32.)* At each point there are two unit normals, $\mathbf{n}(q)$ and $-\mathbf{n}(q)$; the orientation is a continuous choice of one of them. The continuity is part of the definition (a student's question in Lecture 28): “it's supposed to vary” continuously. If $\mathbf{n}$ is an orientation, so is $-\mathbf{n}$.
+*(Recalled from Calculus III: Stewart, Section 16.7; MATH 452, §32.)* At each point there are two unit normals, $\mathbf{n}(q)$ and $-\mathbf{n}(q)$; the orientation is a continuous choice of one of them. The continuity is part of the definition. If $\mathbf{n}$ is an orientation, so is $-\mathbf{n}$.
 
 > [!definition] Definition §73.4: Positive Parametrization
 > Let $S$ be oriented by $\mathbf{n}$ (Definition [[§73 Stokes' Theorem in Calculus III#^def-73-3|§73.3]]). A regular parametrization $\vec r : D \to S$ (Definition [[§73 Stokes' Theorem in Calculus III#^def-73-2|§73.2]]) is **positive** if the normal $\vec r_s \times \vec r_t$ points in the direction of $\mathbf{n}$:
@@ -107,7 +107,7 @@ are two fields of vectors along $S$, tangent to $S$: $\vec r_s$ is the velocity 
 > [!remark]- Connections
 > - Calculus III: [[§136 Stokes' Theorem#^def-136-1|Calc Def. §136.1]] (the same walker); MATH 452: [[§34 Stokes' Theorem in ℝ³#^rem-34-1|452 Remark: Orientation Convention]].
 
-*(Lecture 28: the right-hand rule, or “Amp\`ere's little guy”; Stewart, Section 16.8; MATH 452, Theorem 34.1.)* Surfaces with boundary are taken here in the sense of Calculus III; manifolds with boundary come later in the chapter. The walker can be traded for a formula of the kind that will generalize: put the outward direction first.
+*(Lecture 28: the right-hand rule, or “Ampère's little guy”; Stewart, Section 16.8; MATH 452, Theorem 34.1.)* Surfaces with boundary are taken here in the sense of Calculus III; manifolds with boundary come later in the chapter. The walker can be traded for a formula of the kind that will generalize: put the outward direction first.
 
 > [!theorem] Lemma §73.1: The Induced Orientation Puts the Outward Direction First
 > In the setting of Definition [[§73 Stokes' Theorem in Calculus III#^def-73-6|§73.6]], let $q \in \partial S$ be a point where $\partial S$ is smooth, let $T$ be the unit tangent vector of $\partial S$ at $q$ in the direction of travel, and let $\nu$ be the unit vector tangent to $S$ at $q$, perpendicular to $T$ and pointing out of $S$. Then $\partial S$ is positively oriented at $q$ if and only if
@@ -162,7 +162,7 @@ All of them have to be understood and generalized to manifolds.
 
 ![[m591-73-1.svg]]
 
-*(Figure after the board, redrawn from a computed surface.)* The cap $x^3 = 0.4\,\big(1 - (x^1)^2 - (x^2)^2\big)$ over the unit disk, oriented by the upward unit normal $\mathbf{n}$ (orange, drawn at a few points). Its boundary $\partial S$ is the unit circle in the $(x^1, x^2)$-plane, with the induced orientation (red): counterclockwise seen from above, dashed where the cap hides it. “Amp\`ere's little guy” stands on $\partial S$ with $\mathbf{n}$ from his feet to his head; at the rim the normal leans outward, so he leans too. Walking in the direction of $\partial S$ he has the surface on his left (Definition [[§73 Stokes' Theorem in Calculus III#^def-73-6|§73.6]]); at his position the outward direction $\nu$ points towards the viewer and $T$ to the right, and $\nu \times T = \mathbf{n}$ (Lemma [[§73 Stokes' Theorem in Calculus III#^lem-73-1|§73.1]]).
+*(Figure after the board, redrawn from a computed surface.)* The cap $x^3 = 0.4\,\big(1 - (x^1)^2 - (x^2)^2\big)$ over the unit disk, oriented by the upward unit normal $\mathbf{n}$ (orange, drawn at a few points). Its boundary $\partial S$ is the unit circle in the $(x^1, x^2)$-plane, with the induced orientation (red): counterclockwise seen from above, dashed where the cap hides it. “Ampère's little guy” stands on $\partial S$ with $\mathbf{n}$ from his feet to his head; at the rim the normal leans outward, so he leans too. Walking in the direction of $\partial S$ he has the surface on his left (Definition [[§73 Stokes' Theorem in Calculus III#^def-73-6|§73.6]]); at his position the outward direction $\nu$ points towards the viewer and $T$ to the right, and $\nu \times T = \mathbf{n}$ (Lemma [[§73 Stokes' Theorem in Calculus III#^lem-73-1|§73.1]]).
 
 ![[m591-73-a1.gif|520]]
 
