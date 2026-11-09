@@ -190,25 +190,84 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 
 *Uses:* [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]
 
-> [!remark] Remark
-> $C^m(\overline{\Omega})$ is complete in this norm (left to us in lecture); this is not needed for the example. For $m = 1$ and $\Omega = (a,b)$ it is Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^pf-13-4|§13.4]].
+The completeness of $C^m(\overline{\Omega})$ in this norm is not needed for Example [[§30 Boundedness and Continuity#^ex-30-1|§30.1]], but it holds:
 
-^rem-30-2
-
-> [!theorem] Proposition §30.4: Differentiation is Unbounded in the Maximum Norm
-> Give $C^\infty(\overline{\Omega})$ the norm $\|f\| = \max_{x \in \overline{\Omega}} |f(x)|$ (a norm under which $C^\infty(\overline{\Omega})$ is not complete). Then $Tf = \partial_{x_1} f$ is a linear map $C^\infty(\overline{\Omega}) \to C^\infty(\overline{\Omega})$ that is *not* bounded: there is no $M$ with $\max_{\overline{\Omega}} |\partial_{x_1} f| \le M \max_{\overline{\Omega}} |f|$ for all $f$.
+> [!theorem] Proposition §30.4: $C^m(\overline{\Omega})$ is a Banach Space
+> Let $\Omega \subset \mathbb{R}^n$ be bounded and open and $m \ge 0$. Then $C^m(\overline{\Omega})$ with the norm $\|f\|_{C^m(\overline{\Omega})} = \sum_{|\alpha| \le m} \|\partial^\alpha f\|_{L^\infty(\Omega)}$ of Example [[§30 Boundedness and Continuity#^ex-30-1|§30.1]] is complete. For $m = 1$ and $\Omega = (a,b)$ this is Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^pf-13-4|§13.4]].
 
 ^prop-30-4
 
 > [!proof]+ Proof
-> Homework; to be added after submission.
+> *(Not from lecture; filled in. Completeness was stated in lecture without proof.)* Identify each $\partial^\alpha f$ with its continuous extension to $\overline{\Omega}$, which is unique because $\Omega$ is dense in $\overline{\Omega}$, and write $\|g\|_\infty = \max_{\overline{\Omega}} |g|$.
+>
+> **Step 1: limits of the derivatives.** Let $\{f_k\}$ be Cauchy in $C^m(\overline{\Omega})$. For each $|\alpha| \le m$, $\|\partial^\alpha f_k - \partial^\alpha f_j\|_\infty \le \|f_k - f_j\|_{C^m(\overline{\Omega})}$, so $\{\partial^\alpha f_k\}_k$ is Cauchy in $(C(\overline{\Omega}), \|\cdot\|_\infty)$. This space is complete: $\overline{\Omega}$ is compact (closed and bounded), and the proof of Theorem [[§12 Completeness#^thm-12-1|§12.1]] carries over with $[a,b]$ replaced by $\overline{\Omega}$. So $\partial^\alpha f_k \to g_\alpha$ uniformly on $\overline{\Omega}$, for some $g_\alpha \in C(\overline{\Omega})$.
+>
+> **Step 2: one derivative.** *Claim:* if $h_k$ are functions on $\Omega$ whose partial derivatives $\partial_{x_i} h_k$ exist and are continuous on $\Omega$, and $h_k \to h$, $\partial_{x_i} h_k \to g$ uniformly on $\Omega$ with $g$ continuous, then $\partial_{x_i} h$ exists on $\Omega$ and equals $g$. Fix $x \in \Omega$ and $r > 0$ with $B_r(x) \subset \Omega$ ($\Omega$ is open). For $|t| < r$ the segment from $x$ to $x + t e_i$ lies in $B_r(x)$, and the fundamental theorem of calculus for $s \mapsto h_k(x + s e_i)$ gives
+>
+> $$
+> h_k(x + t e_i) - h_k(x) = \int_0^t \partial_{x_i} h_k(x + s e_i)\, ds .
+> $$
+>
+> As $k \to \infty$ the left side tends to $h(x + t e_i) - h(x)$, and the right side to $\int_0^t g(x + s e_i)\, ds$, since the difference is at most $|t| \sup_\Omega |\partial_{x_i} h_k - g| \to 0$. So $h(x + t e_i) - h(x) = \int_0^t g(x + s e_i)\, ds$ for $|t| < r$, and since $s \mapsto g(x + s e_i)$ is continuous, the fundamental theorem of calculus gives $\partial_{x_i} h(x) = g(x)$.
+>
+> **Step 3: all derivatives up to order $m$.** Put $g = g_0$. We show by induction on $|\alpha| \le m$ that $\partial^\alpha g$ exists on $\Omega$ and equals $g_\alpha$; the case $\alpha = 0$ is the definition. If $1 \le |\alpha| \le m$, let $i$ be the smallest index with $\alpha_i \ge 1$ and $\beta = \alpha - e_i$. Then $\partial^\alpha = \partial_{x_i} \partial^\beta$, because $\partial_{x_i}^{\alpha_i}$ is the leftmost factor of $\partial^\alpha$, and $\partial^\beta g = g_\beta$ by the induction hypothesis. Apply Step 2 to $h_k = \partial^\beta f_k$: these converge uniformly to $g_\beta$, and $\partial_{x_i} h_k = \partial^\alpha f_k$ is continuous and converges uniformly to $g_\alpha$. So $\partial_{x_i} g_\beta = g_\alpha$, i.e. $\partial^\alpha g = g_\alpha$. Hence the derivatives of $g$ up to order $m$ exist, are continuous, and extend continuously to $\overline{\Omega}$ (as the $g_\alpha$): $g \in C^m(\overline{\Omega})$.
+>
+> **Step 4: convergence.** $\|f_k - g\|_{C^m(\overline{\Omega})} = \sum_{|\alpha| \le m} \|\partial^\alpha f_k - g_\alpha\|_\infty \to 0$, a finite sum of terms tending to $0$ by Step 1. So $f_k \to g$ in $C^m(\overline{\Omega})$.
 
 ^pf-30-4
+
+*Uses:* [[§30 Boundedness and Continuity#^ex-30-1|Ex. §30.1]], [[§12 Completeness#^thm-12-1|Thm. §12.1]]
+
+> [!theorem] Proposition §30.5: Differentiation is Unbounded in the Maximum Norm
+> Give $C^\infty(\overline{\Omega})$ the norm $\|f\| = \max_{x \in \overline{\Omega}} |f(x)|$ (a norm under which $C^\infty(\overline{\Omega})$ is not complete). Then $Tf = \partial_{x_1} f$ is a linear map $C^\infty(\overline{\Omega}) \to C^\infty(\overline{\Omega})$ that is *not* bounded: there is no $M$ with $\max_{\overline{\Omega}} |\partial_{x_1} f| \le M \max_{\overline{\Omega}} |f|$ for all $f$.
+
+^prop-30-5
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* We show that no constant $M$ works, by exhibiting functions of norm at most $1$ whose derivatives have arbitrarily large norm. Fix a point $c = (c_1, \ldots, c_n) \in \Omega$ and for $k \in \mathbb{N}$ put
+>
+> $$
+> f_k(x) = \sin\bigl( k (x_1 - c_1) \bigr), \qquad x \in \overline{\Omega} .
+> $$
+>
+> **Step 1: $f_k \in C^\infty(\overline{\Omega})$.** $f_k$ is the restriction of a function with continuous partial derivatives of all orders on $\mathbb{R}^n$, so each $\partial^\alpha f_k$ exists and is continuous on $\Omega$ and extends continuously to $\overline{\Omega}$.
+>
+> **Step 2: the two norms.** Since $|\sin| \le 1$, $\|f_k\| = \max_{\overline{\Omega}} |f_k| \le 1$. The derivative is $\partial_{x_1} f_k(x) = k \cos\bigl( k (x_1 - c_1) \bigr)$, and at $x = c$ it equals $k \cos 0 = k$. So
+>
+> $$
+> \|T f_k\| = \max_{x \in \overline{\Omega}} |\partial_{x_1} f_k(x)| \ge |\partial_{x_1} f_k(c)| = k .
+> $$
+>
+> **Step 3: conclusion.** If there were $M$ with $\|Tf\| \le M \|f\|$ for all $f \in C^\infty(\overline{\Omega})$, then $k \le \|T f_k\| \le M \|f_k\| \le M$ for every $k \in \mathbb{N}$, which is impossible. So $T$ is not bounded (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]).
+
+^pf-30-5
+
+*Uses:* [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]
+
+The same happens in one variable with only one derivative available, which is the form set as homework:
+
+> [!theorem] Proposition §30.6: $\frac{d}{dt}$ is Unbounded from $C^1[0,1]$ to $C[0,1]$ in the Maximum Norm
+> Let $\|f\|_\infty = \max_{t \in [0,1]} |f(t)|$ for $f \in C[0,1]$. The linear map $M = \frac{d}{dt}$ is not bounded from $(C^1[0,1], \|\cdot\|_\infty)$ to $(C[0,1], \|\cdot\|_\infty)$.
+
+^prop-30-6
+
+> [!proof]+ Proof
+> *(HW9, Problem 1. Not from lecture; filled in.)* Let $f_k(t) = t^k$ for $k \in \mathbb{N}$. Then $f_k \in C^1[0,1]$ and $M f_k(t) = k\, t^{k-1}$. On $[0,1]$ both $t^k$ and $k\, t^{k-1}$ are non-negative and non-decreasing, so their maxima are attained at $t = 1$:
+>
+> $$
+> \|f_k\|_\infty = 1, \qquad \|M f_k\|_\infty = k .
+> $$
+>
+> If there were a constant $C$ with $\|Mf\|_\infty \le C \|f\|_\infty$ for all $f \in C^1[0,1]$, then $k = \|M f_k\|_\infty \le C \|f_k\|_\infty = C$ for every $k$, which is impossible. So $M$ is not bounded (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]).
+
+^pf-30-6
+
+*Uses:* [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]
 
 > [!remark] Remark
 > The two examples have the same formula and opposite answers. In the first, the norm of the target counts one derivative fewer than the norm of the domain, so the derivative taken by $T$ is already paid for; in the second, both norms see only the values of $f$, and derivatives cannot be controlled by the values of a function.
 
-^rem-30-3
+^rem-30-2
 
 > [!example] Example §30.2: The Fourier Transform from $L^1$ to $L^\infty$
 > For $f \in L^1(\mathbb{R}^n)$ define
@@ -243,10 +302,10 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 > [!remark]- Connections
 > - Computational version: the Fourier transform in Powers' normalization, [[§19★ Complex Methods#^def-19-2|341 Def. §19.2]], computed for Gaussians and used to solve the heat equation on the line, [[§19★ Complex Methods#^ex-19-4|341 Ex. §19.4]].
 
-> [!theorem] Proposition §30.5: Linear Maps on Finite-Dimensional Spaces are Bounded
+> [!theorem] Proposition §30.7: Linear Maps on Finite-Dimensional Spaces are Bounded
 > Let $X$ and $Y$ be normed linear spaces with $\dim X < \infty$. Every linear map $T : X \to Y$ is bounded.
 
-^prop-30-5
+^prop-30-7
 
 > [!proof]+ Proof
 > (Left to the class in lecture.) Let $e_1, \ldots, e_n$ be a basis of $X$ and $\|x\|_1 = \sum_i |a_i|$ for $x = \sum_i a_i e_i$ (Step 2 of the proof of Theorem [[§14 New Normed Spaces from Old#^pf-14-4|§14.4]]). By linearity and the triangle inequality,
@@ -257,7 +316,7 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 >
 > By Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]], $\|x\|_1 \le C\|x\|_X$ for some $C$, so $\|Tx\|_Y \le C \max_i \|Te_i\|_Y\, \|x\|_X$.
 
-^pf-30-5
+^pf-30-7
 
 *Uses:* [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]
 
@@ -275,14 +334,14 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 > - Finite-dimensional home (all linear maps, same operations): [[§7 Vector Space of Linear Maps#^ladr-3-5|LADR 3.5]].
 > - The dual space $X^* = \mathcal{L}(X, \mathbb{F})$ of the companion chapter: [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]].
 
-> [!theorem] Theorem §30.6: $\mathcal{L}(X, Y)$ is a Normed Linear Space
+> [!theorem] Theorem §30.8: $\mathcal{L}(X, Y)$ is a Normed Linear Space
 > Let $X$ and $Y$ be normed linear spaces.
 > - (1) $(\mathcal{L}(X, Y), \|\cdot\|)$ is a normed linear space.
 > - (2) If $Y$ is complete, then $\mathcal{L}(X, Y)$ is a Banach space.
 >
 > *Lax: §15.1, Thms 2–3*
 
-^thm-30-6
+^thm-30-8
 
 > [!proof]+ Proof of (1)
 > We may assume $X \neq \{0\}$; otherwise $\mathcal{L}(X, Y) = \{0\}$.
@@ -304,7 +363,7 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 >
 > The first inequality is the triangle inequality in $Y$ at each $x$. The second holds because for every unit $x$, $\|T_1 x\|_Y + \|T_2 x\|_Y \le \|T_1\| + \|T_2\|$, so the right-hand side is an upper bound for the set whose supremum is taken: summing and then taking the supremum gives at most the sum of the separate suprema.
 
-^pf-30-6
+^pf-30-8
 
 *Uses:* [[§12 Completeness#^pf-12-1|§12.1 (Part 1 of the proof)]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§30 Boundedness and Continuity#^def-30-1|Def. §30.1]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]], [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]], [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
 
@@ -341,9 +400,9 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 >
 > **Step 4: conclusion.** By Step 2, $T_k - T$ is linear, and by Step 3 it is bounded with $\|T_k - T\| \le \varepsilon$ for $k \ge N$. Since $\mathcal{L}(X, Y)$ is a linear space (part (1)) and $T_k, T_k - T \in \mathcal{L}(X, Y)$, also $T = T_k - (T_k - T) \in \mathcal{L}(X, Y)$. Finally $\|T_k - T\| \le \varepsilon$ for all $k \ge N$ says $T_k \to T$ in $\mathcal{L}(X, Y)$. So every Cauchy sequence converges, and $\mathcal{L}(X, Y)$ is a Banach space.
 
-^pf-30-6-2
+^pf-30-8-2
 
-*Uses:* [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-6|§30.6 (1)]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]], [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-2|Def. §12.2]]
+*Uses:* [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-8|§30.8 (1)]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]], [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-2|Def. §12.2]]
 
 > [!remark]- Connections
 > - Finite-dimensional home of the norm properties: [[§28 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].
@@ -354,9 +413,9 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 > [!remark] Remark: Why $\varepsilon$ Does Not Depend on $x$
 > The $\varepsilon$ in Step 3 does not vary with $x$: $N$ is chosen from $\|T_n - T_k\| < \varepsilon$ alone, and $\|T_n - T_k\|$ is the supremum of $\|T_n x - T_k x\|_Y/\|x\|_X$ over all $x$, so the single inequality $\|T_n x - T_k x\|_Y \le \varepsilon\|x\|_X$ holds for every $x$ at once. That is what makes $\|T_k - T\| \le \varepsilon$ legitimate at the end. If $N$ depended on $x$, the conclusion would only be pointwise convergence. The argument parallels the proof that a uniformly Cauchy sequence of functions converges uniformly ([[§24 Uniform Convergence#^def-24-2|MATH 451]]): first a pointwise limit, then the uniform bound passes to the limit. The same pattern was used in Part 3 of the proof of Theorem [[§12 Completeness#^pf-12-1|§12.1]].
 
-^rem-30-4
+^rem-30-3
 
 > [!remark] Remark: Comparison with Lax
 > Lax states Theorem 1 of §15.1 for Banach spaces $X, U$, but the proof uses no completeness. In the ($\Rightarrow$) direction Lax normalizes differently: he rescales $x_n$ to have $|x_n| = 1/\sqrt{n}$, so that $x_n \to 0$ while $|Mx_n| > \sqrt{n} \to \infty$; the proof here divides by $n\|x_n\|_X$, so that $\|y_n\|_X = 1/n \to 0$ while $\|Ty_n\|_Y > 1$ merely stays away from $0$. Either contradicts continuity at $0$. Lax proves homogeneity and positivity of the operator norm as “obvious” and leaves subadditivity as his Exercise 1; here it is the argument given in lecture.
 
-^rem-30-5
+^rem-30-4

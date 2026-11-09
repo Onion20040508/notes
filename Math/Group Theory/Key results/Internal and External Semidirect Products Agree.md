@@ -18,6 +18,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§58 Semidirect Products#^cor-58-10|Corollary §58.10: Semidirect Products of Solvable Groups Are Solvable]]
+- [[§58 Semidirect Products#^prop-58-11|Proposition §58.11: Groups of Order pq Are Semidirect Products]]
 
 ## Connections
 - TODO

@@ -25,6 +25,8 @@ tags: [functional-analysis, hub]
 - [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|Proposition §19.5: Continuous Functions are Not Dense in L^∞]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|Proposition §19.8: Lᵖ[a,b] as a Completion]]
 - [[§20 Compactness and the Unit Ball#^prop-20-4|Proposition §20.4: The Constant theta = 1 Cannot Be Attained]]
+- [[§30 Boundedness and Continuity#^prop-30-4|Proposition §30.4: C^m(overlineOmega) is a Banach Space]]
+- [[§41 The Open Mapping Theorem and Its Consequences#^ex-41-2|Example §41.2: C[0,1] is Not Complete in the L¹ Norm]]
 
 ## Connections
 - **How.** The proof finds a candidate, then closes ([[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]]). A sup-norm Cauchy sequence is pointwise Cauchy, so it has a pointwise limit f, by completeness of the scalars ([[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]]). Keeping N independent of t upgrades this to uniform convergence, and a 3ε argument makes f continuous. These two steps re-prove [[§24 Uniform Convergence#^thm-24-1|451 §24.1]] and [[§24 Uniform Convergence#^thm-24-2|451 §24.2]]. Unlike for ℓᵖ, showing that the candidate lies in the space is a genuine theorem ([[§12 Completeness#^rem-12-1|Remark §12]]).

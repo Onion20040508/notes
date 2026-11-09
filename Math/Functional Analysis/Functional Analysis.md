@@ -110,7 +110,7 @@ graph TD
 - [[Existence of Orthonormal Bases]] (§28.1)
 - [[Separable Hilbert Spaces Have Countable Orthonormal Bases]] (§28.3)
 - [[Bounded Linear Maps Are Continuous]] (§30.2)
-- [[Bounded Linear Maps into a Banach Space Form a Banach Space]] (§30.6)
+- [[Bounded Linear Maps into a Banach Space Form a Banach Space]] (§30.8)
 - [[Bounded Sesquilinear Forms Are Bounded Operators]] (§32.1)
 - [[Lax–Milgram Theorem]] (§32.2)
 - [[Poincaré Inequality]] (§33.8)

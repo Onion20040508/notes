@@ -19,8 +19,8 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§61 Invariant Inner Products and Maschke over ℝ#^cor-61-6|Corollary §61.6: Maschke's Theorem over ℝ]]
-- [[§62 Simple Representations#^prop-62-1|Proposition §62.1: Simple Equals Irreducible]]
-- [[§62 Simple Representations#^cor-62-3|Corollary §62.3: Every Representation Is a Direct Sum of Simples, over Any Field with ∣G∣ ≠ 0]]
+- [[§63 Simple Representations#^prop-63-1|Proposition §63.1: Simple Equals Irreducible]]
+- [[§63 Simple Representations#^cor-63-3|Corollary §63.3: Every Representation Is a Direct Sum of Simples, over Any Field with ∣G∣ ≠ 0]]
 
 ## Connections
 - TODO

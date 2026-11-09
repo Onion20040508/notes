@@ -26,7 +26,7 @@ Three substantial applications of the homomorphism language, mostly from Problem
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§20 Polynomial Rings, Permutation Matrices, and Representations#^thm-20-2|Theorem §20.2: Linear Extension]]: 42 later results
-- [[§20 Polynomial Rings, Permutation Matrices, and Representations#^cor-20-3|Corollary §20.3: Permutations of the Basis Give Invertible Linear Maps]]: 41 later results
-- [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|Proposition §20.1: Compatibility of the Action with Composition]]: 38 later results
-- [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|Proposition §20.5: σ ↦ M(σ) Is an Injective Homomorphism Sₙ → GLₙ(k)]]: 34 later results
+- [[§20 Polynomial Rings, Permutation Matrices, and Representations#^thm-20-2|Theorem §20.2: Linear Extension]]: 45 later results
+- [[§20 Polynomial Rings, Permutation Matrices, and Representations#^cor-20-3|Corollary §20.3: Permutations of the Basis Give Invertible Linear Maps]]: 44 later results
+- [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-1|Proposition §20.1: Compatibility of the Action with Composition]]: 41 later results
+- [[§20 Polynomial Rings, Permutation Matrices, and Representations#^prop-20-5|Proposition §20.5: σ ↦ M(σ) Is an Injective Homomorphism Sₙ → GLₙ(k)]]: 37 later results

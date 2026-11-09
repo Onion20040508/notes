@@ -201,7 +201,7 @@ A closed map need not be continuous. This is why one cares about such a weak not
 > (Mx)(t) = \frac{d}{dt}\, x(t) = x'(t), \qquad D(M) = C^1[0,1] .
 > $$
 >
-> Then $M : D(M) \to Y$ is a closed map. It is linear, and it is not bounded (homework; compare Proposition [[§30 Boundedness and Continuity#^prop-30-4|§30.4]]).
+> Then $M : D(M) \to Y$ is a closed map. It is linear, and it is not bounded (Proposition [[§30 Boundedness and Continuity#^prop-30-6|§30.6]]; compare Proposition [[§30 Boundedness and Continuity#^prop-30-5|§30.5]]).
 
 ^ex-39-3
 

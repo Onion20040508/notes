@@ -4,11 +4,11 @@ subject: "[[Group Theory]]"
 problem_set: 9
 tags: [group-theory, math493]
 ---
-← [[493 Problem Set 7]] · ↑ [[Group Theory]]
+← [[493 Problem Set 8]] · ↑ [[Group Theory]]
 
 # Problem Set 9
 
-*Due Thursday, November 12; submitted. Each problem is treated in the main text, at the location indicated. (Problem Set 8 is not yet in the notes apart from Problem 8.1, in [[§30 Orbit–Stabilizer#^prop-30-6|§30.6]].)*
+*Due Thursday, November 12; submitted. Each problem is treated in the main text, at the location indicated.*
 
 > [!question] Problem 9.1: Extensions of Solvable Groups
 > Let $G$ be a group with a normal subgroup $N$. Suppose that $N$ and $G/N$ are solvable; recall that this means that there are chains $\{1\} = N_0 \trianglelefteq N_1 \trianglelefteq N_2 \trianglelefteq \cdots \trianglelefteq N_a = N$ and $\{1\} = H_0 \trianglelefteq H_1 \trianglelefteq H_2 \trianglelefteq \cdots \trianglelefteq H_b = G/N$ such that all of the quotients $N_i/N_{i-1}$ and $H_j/H_{j-1}$ are abelian.

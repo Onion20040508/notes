@@ -22,6 +22,7 @@ tags: [group-theory, hub]
 ## Used in (Group Theory)
 - [[§43 Simple Groups#^cor-43-11|Corollary §43.11: Which Aₙ Are Simple]]
 - [[§49 The Derived Series#^cor-49-2|Corollary §49.2: Aₙ and Sₙ Are Not Solvable for n ≥ 5]]
+- [[§56 Simple Groups of Small Order#^thm-56-20|Theorem §56.20: Simple Groups of Order 60]]
 - [[§56 Simple Groups of Small Order#^cor-56-21|Corollary §56.21: The Simple Groups of Order at Most 100]]
 
 ## Connections

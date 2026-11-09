@@ -34,11 +34,11 @@ tags: [functional-analysis, math556]
 ^cor-31-1
 
 > [!proof]+ Proof
-> $\mathbb{F}$ is complete, so Theorem [[§30 Boundedness and Continuity#^thm-30-6|§30.6]](2) applies with $Y = \mathbb{F}$.
+> $\mathbb{F}$ is complete, so Theorem [[§30 Boundedness and Continuity#^thm-30-8|§30.8]](2) applies with $Y = \mathbb{F}$.
 
 ^pf-31-1
 
-*Uses:* [[§30 Boundedness and Continuity#^thm-30-6|§30.6]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]]
+*Uses:* [[§30 Boundedness and Continuity#^thm-30-8|§30.8]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]]
 
 > [!remark] Note: The Pairing $\langle x, \ell \rangle$
 > For $\ell \in X'$ and $x \in X$ one often writes $\ell(x) = \langle x, \ell \rangle$. This is only notation, borrowed from inner product spaces: $\langle x, \ell \rangle$ pairs an element of $X$ with an element of $X'$, and is linear in $x$. In general $X'$ is a different space from $X$; on a Hilbert space the two can be identified, by the next theorem.
@@ -147,18 +147,92 @@ tags: [functional-analysis, math556]
 
 ^rem-31-4
 
+## An Integral Functional on $C[0,1]$
+
+A first dual norm computed by hand. The space is $C[0,1]$ with the maximum norm $\|x\| = \max_{t \in [0,1]} |x(t)|$ (a Banach space, Theorem [[§12 Completeness#^thm-12-1|§12.1]]), with real or complex values.
+
+> [!theorem] Proposition §31.5: The Norm of $x \mapsto \int_0^1 f_0\, x\, dt$ on $C[0,1]$
+> Let $f_0 \in C[0,1]$ be given and define
+>
+> $$
+> \ell(x) = \int_0^1 f_0(t)\, x(t)\, dt \qquad \text{for } x \in C[0,1] .
+> $$
+>
+> Then $\ell$ is a bounded linear functional on $C[0,1]$, and
+>
+> $$
+> \|\ell\| = \int_0^1 |f_0(t)|\, dt .
+> $$
+
+^prop-31-5
+
+> [!proof]+ Proof
+> *(HW8, Problem 1. Not from lecture; filled in.)* Write $A = \int_0^1 |f_0(t)|\, dt$. Linearity of $\ell$ is linearity of the integral. We show $\|\ell\| \le A$ and $\|\ell\| \ge A - \varepsilon$ for every $\varepsilon > 0$, where $\|\ell\| = \sup_{x \neq 0} |\ell(x)| / \|x\|$ (Definition [[§31 Dual Spaces#^def-31-1|§31.1]]).
+>
+> **Step 1: $\|\ell\| \le A$.** For $x \in C[0,1]$, $|x(t)| \le \|x\|$ for all $t$, so
+>
+> $$
+> |\ell(x)| \le \int_0^1 |f_0(t)|\, |x(t)|\, dt \le \|x\| \int_0^1 |f_0(t)|\, dt = A\, \|x\| .
+> $$
+>
+> So $\ell$ is bounded and $\|\ell\| \le A$.
+>
+> **Step 2: test functions.** Equality in Step 1 would need $x(t) = \overline{f_0(t)} / |f_0(t)|$, which is not defined where $f_0 = 0$ and need not extend continuously there. Instead, for $\varepsilon > 0$ put
+>
+> $$
+> x_\varepsilon(t) = \frac{\overline{f_0(t)}}{|f_0(t)| + \varepsilon} .
+> $$
+>
+> The denominator is continuous and at least $\varepsilon > 0$, so $x_\varepsilon \in C[0,1]$, and $|x_\varepsilon(t)| = \frac{|f_0(t)|}{|f_0(t)| + \varepsilon} < 1$, so $\|x_\varepsilon\| \le 1$.
+>
+> **Step 3: $\|\ell\| \ge A - \varepsilon$.** Since $f_0 \overline{f_0} = |f_0|^2$,
+>
+> $$
+> \ell(x_\varepsilon) = \int_0^1 \frac{|f_0(t)|^2}{|f_0(t)| + \varepsilon}\, dt .
+> $$
+>
+> For a number $s \ge 0$, $\frac{s^2}{s + \varepsilon} = s - \frac{\varepsilon s}{s + \varepsilon} \ge s - \varepsilon$, because $\frac{s}{s + \varepsilon} \le 1$. With $s = |f_0(t)|$ and integrating over $[0,1]$,
+>
+> $$
+> \ell(x_\varepsilon) \ge \int_0^1 \bigl( |f_0(t)| - \varepsilon \bigr)\, dt = A - \varepsilon .
+> $$
+>
+> By the definition of the norm and $\|x_\varepsilon\| \le 1$, $|\ell(x_\varepsilon)| \le \|\ell\|\, \|x_\varepsilon\| \le \|\ell\|$. So $\|\ell\| \ge A - \varepsilon$ for every $\varepsilon > 0$, hence $\|\ell\| \ge A$. With Step 1, $\|\ell\| = A$.
+
+^pf-31-5
+
+*Uses:* [[§31 Dual Spaces#^def-31-1|Def. §31.1]]
+
+> [!example] Example §31.2: The Norm of the Integral Functional Need Not be Attained
+> *(Not from lecture.)* Let $f_0(t) = t - \frac12$ in Proposition [[§31 Dual Spaces#^prop-31-5|§31.5]], so $\|\ell\| = \int_0^1 |t - \frac12|\, dt = \frac14$. There is no $x \in C[0,1]$ with $\|x\| \le 1$ and $|\ell(x)| = \|\ell\|$: the supremum defining $\|\ell\|$ is not a maximum.
+
+^ex-31-2
+
+> [!proof]+ Proof
+> Suppose $x \in C[0,1]$, $\|x\| \le 1$ and $|\ell(x)| = \frac14$. Multiplying $x$ by a scalar of absolute value $1$ (which changes neither $\|x\|$ nor $|\ell(x)|$) we may assume $\ell(x) = \frac14$. Then
+>
+> $$
+> \int_0^1 \Bigl( |f_0(t)| - \operatorname{Re}\bigl( f_0(t)\, x(t) \bigr) \Bigr) dt = \tfrac14 - \operatorname{Re} \ell(x) = 0 .
+> $$
+>
+> The integrand is continuous, and it is non-negative because $\operatorname{Re}(f_0 x) \le |f_0|\, |x| \le |f_0|$. By Lemma [[§19 The Function Spaces Lᵖ(Ω)#^lem-19-6|§19.6]] it vanishes identically: $\operatorname{Re}\bigl( f_0(t) x(t) \bigr) = |f_0(t)|$ for all $t$. Since $f_0$ is real, this reads $(t - \frac12) \operatorname{Re} x(t) = |t - \frac12|$, so $\operatorname{Re} x(t) = -1$ for $t < \frac12$ and $\operatorname{Re} x(t) = 1$ for $t > \frac12$. Then $\operatorname{Re} x$ has left limit $-1$ and right limit $1$ at $t = \frac12$, which contradicts the continuity of $x$.
+
+^pf-ex-31-2
+
+*Uses:* [[§19 The Function Spaces Lᵖ(Ω)#^lem-19-6|Lem. §19.6]]
+
 ## Null Spaces of Linear Functionals
 
 Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-3|§26.3]] and [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|§26.4]] described the null space of a bounded functional on a Hilbert space. Both facts hold in any normed space, and the first has a converse.
 
-> [!theorem] Proposition §31.5: The Null Space Has Codimension One
+> [!theorem] Proposition §31.6: The Null Space Has Codimension One
 > Let $X$ be a [[§1 Linear Spaces#^def-1-1|linear space]] over $\mathbb{F}$ and $\ell : X \to \mathbb{F}$ a nonzero [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]], $N_\ell = \{x \in X : \ell(x) = 0\}$. Then $\dim X/N_\ell = 1$ ([[§2 Quotient Spaces and Complements#^def-2-3|quotient space]]). More precisely, for any $x_0$ with $\ell(x_0) \neq 0$, $X = N_\ell \oplus \operatorname{span}\{x_0\}$ ([[§1 Linear Spaces#^prop-1-3|internal direct sum]], [[§1 Linear Spaces#^def-1-5|linear span]]), with $x = \bigl( x - \frac{\ell(x)}{\ell(x_0)}\, x_0 \bigr) + \frac{\ell(x)}{\ell(x_0)}\, x_0$.
 >
 > *Source: HW5, Problem 4*
 >
 > *Lax: §6.3, Lemma 5(i)*
 
-^prop-31-5
+^prop-31-6
 
 > [!proof]+ Proof
 > (HW5, Problem 4.) Write $N = N_\ell$.
@@ -169,7 +243,7 @@ Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^l
 >
 > **Step 3: conclusion.** By Step 2, $X/N = \operatorname{span}\{[x_0]\}$, and by Step 1, $[x_0] \neq [0]$, so $\{[x_0]\}$ is a basis of $X/N$ and $\dim X/N = 1$. Equivalently, $X = N \oplus \operatorname{span}\{x_0\}$: by Step 2 every $x$ is $x = y + k x_0$ with $y \in N$; and $N \cap \operatorname{span}\{x_0\} = \{0\}$, since $\ell(c x_0) = c\,\ell(x_0) = 0$ forces $c = 0$.
 
-^pf-31-5
+^pf-31-6
 
 *Uses:* [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|Def. §3.5]], [[§2 Quotient Spaces and Complements#^def-2-1|Def. §2.1]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§1 Linear Spaces#^prop-1-3|§1.3]], [[§5 Bases#^ladr-2-26|LADR 2.26]], [[§6 Dimension#^ladr-2-35|LADR 2.35]]
 
@@ -178,14 +252,14 @@ Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^l
 > - Linear algebra: null space [[§8 Null Spaces and Ranges#^ladr-3-11|LADR 3.11]]; $X/N_\ell \cong \operatorname{range} \ell = \mathbb{F}$ is [[§11 Products and Quotients of Vector Spaces#^ladr-3-107|LADR 3.107]](d) ([[First isomorphism theorem]]); in finite dimensions, $\dim N_\ell = \dim X - 1$ by [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105]].
 > - The complement $\operatorname{span}\{x_0\}$ as a model of $X/N_\ell$: [[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]].
 
-> [!theorem] Proposition §31.6: Bounded if and only if the Null Space is Closed
-> Let $X$ be a [[§11 Normed Linear Spaces#^def-11-1|normed linear space]] over $\mathbb{F}$ and $\ell : X \to \mathbb{F}$ a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]]. Then $\ell \in X'$ ([[§31 Dual Spaces#^def-31-1|Def. §31.1]]) if and only if $N_\ell$ ([[§31 Dual Spaces#^prop-31-5|§31.5]]) is [[§11 Normed Linear Spaces#^def-11-6|closed]].
+> [!theorem] Proposition §31.7: Bounded if and only if the Null Space is Closed
+> Let $X$ be a [[§11 Normed Linear Spaces#^def-11-1|normed linear space]] over $\mathbb{F}$ and $\ell : X \to \mathbb{F}$ a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]]. Then $\ell \in X'$ ([[§31 Dual Spaces#^def-31-1|Def. §31.1]]) if and only if $N_\ell$ ([[§31 Dual Spaces#^prop-31-6|§31.6]]) is [[§11 Normed Linear Spaces#^def-11-6|closed]].
 >
 > *Source: HW5, Problem 5*
 >
 > *Lax: §6.3, Lemma 5(iii)*
 
-^prop-31-6
+^prop-31-7
 
 > [!proof]+ Proof
 > (HW5, Problem 5.) **($\Rightarrow$)** Let $\ell \in X'$, and let $x_n \in N_\ell$ with $x_n \to x$ in $X$. Since $\ell$ is bounded, it is continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), so $\ell(x) = \lim_n \ell(x_n) = 0$, i.e. $x \in N_\ell$.
@@ -198,7 +272,7 @@ Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^l
 >
 > Then $\ell(y_n) = 1 - 1 = 0$, so $y_n \in N_\ell$, and $\|y_n - x_0\| = \|x_n\|/|\ell(x_n)| < 1/n \to 0$. So $y_n \to x_0$ with every $y_n \in N_\ell$; since $N_\ell$ is closed, $x_0 \in N_\ell$, contradicting $\ell(x_0) = 1$. Hence $\ell$ is bounded.
 
-^pf-31-6
+^pf-31-7
 
 *Uses:* [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]], [[§11 Normed Linear Spaces#^def-11-4|Def. §11.4]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
 
@@ -212,6 +286,6 @@ Lemmas [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^l
 The picture behind ($\Leftarrow$): if $\ell$ were unbounded, points $y_n$ of the null space would approach a point $x_0$ off it, so the null space could not be closed. (The picture is schematic: in finite dimensions every functional is bounded, and an unbounded $\ell$ has a *dense* null space.)
 
 > [!remark] Remark
-> Proposition [[§31 Dual Spaces#^prop-31-5|§31.5]] is pure algebra; Proposition [[§31 Dual Spaces#^prop-31-6|§31.6]] is where the norm enters. Together they say that the null space of a nonzero functional is a “hyperplane through $0$” ([[§5 Statement and Motivation#^def-5-3|Def. §5.3]]) that is either closed (bounded $\ell$) or not (unbounded $\ell$). Both proofs use the same move: subtract from $x$ the multiple of $x_0$ that lands it in the null space.
+> Proposition [[§31 Dual Spaces#^prop-31-6|§31.6]] is pure algebra; Proposition [[§31 Dual Spaces#^prop-31-7|§31.7]] is where the norm enters. Together they say that the null space of a nonzero functional is a “hyperplane through $0$” ([[§5 Statement and Motivation#^def-5-3|Def. §5.3]]) that is either closed (bounded $\ell$) or not (unbounded $\ell$). Both proofs use the same move: subtract from $x$ the multiple of $x_0$ that lands it in the null space.
 
 ^rem-31-5

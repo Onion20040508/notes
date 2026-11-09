@@ -1,0 +1,17 @@
+% Figure from MATH 493 notes, section 66. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth]
+\draw[->, black!55, thin] (-2.5,0) -- (2.7,0) node[right, font=\scriptsize] {$\operatorname{Re}$};
+\draw[->, black!55, thin] (0,-2.4) -- (0,2.5) node[above, font=\scriptsize] {$\operatorname{Im}$};
+\draw[black!40] (0,0) circle (1.8);
+\foreach \k in {0,...,5} { \fill[black!55] ({60*\k}:1.8) circle (1.2pt); }
+\node[font=\scriptsize, black!55, anchor=north west] at (1.8,0) {$1$};
+\draw[->, very thick, blue!70!black] (0,0) -- (60:1.8) node[above right=-1pt, font=\scriptsize] {$\lambda_1 = e^{2\pi i/6}$};
+\draw[->, very thick, blue!70!black] (0,0) -- (120:1.8) node[above left=-1pt, font=\scriptsize] {$\lambda_2 = e^{2\pi i \cdot 2/6}$};
+\draw[->, very thick, red!70!black] (0,0) -- (-60:1.8) node[below right=-1pt, font=\scriptsize] {$\lambda_1^{-1} = \overline{\lambda_1}$};
+\draw[->, very thick, red!70!black] (0,0) -- (-120:1.8) node[below left=-1pt, font=\scriptsize] {$\lambda_2^{-1} = \overline{\lambda_2}$};
+\draw[<->, orange!85!black, thin, dashed] (60:1.55) -- (-60:1.55);
+\draw[<->, orange!85!black, thin, dashed] (120:1.55) -- (-120:1.55);
+\node[font=\scriptsize, align=left, anchor=west] at (3.6,0.9) {$A = \operatorname{diag}(\lambda_1, \lambda_2)$, \ $A^6 = I$};
+\node[font=\scriptsize, align=left, anchor=west, blue!70!black] at (3.6,0.2) {$\operatorname{Tr}A = \lambda_1 + \lambda_2 = i\sqrt{3}$};
+\node[font=\scriptsize, align=left, anchor=west, red!70!black] at (3.6,-0.5) {$\operatorname{Tr}A^{-1} = \overline{\lambda_1} + \overline{\lambda_2} = -i\sqrt{3}$};
+\end{tikzpicture}

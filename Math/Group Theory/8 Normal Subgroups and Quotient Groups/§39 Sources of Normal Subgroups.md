@@ -14,7 +14,7 @@ tags: [group-theory, math493]
 > [!theorem] Proposition §39.1: Subgroups of Index $2$ Are Normal
 > If $H$ is a subgroup of $G$ with $[G : H] = 2$, then $H$ is normal in $G$.
 >
-> *Source: lecture*
+> *Source: lecture; second proof PS 8.2*
 
 ^prop-39-1
 
@@ -24,6 +24,27 @@ tags: [group-theory, math493]
 > There are exactly two left cosets. One of them is $H = eH$, and since the left cosets partition $G$, the other is the complement $G \setminus H$. Likewise there are exactly two right cosets (the number of right cosets equals the number of left cosets, [[§28 Left and Right Cosets#^prop-28-4|§28.4]]), namely $H$ and $G \setminus H$. So the set of left cosets equals the set of right cosets, and $H$ is normal by characterization (4) ([[§38 Normal Subgroups#^prop-38-2|§38.2]]).
 
 ^pf-39-1
+
+> [!proof]+ Second proof (conjugating by an element outside $H$)
+> *Idea:* If a conjugate $g_0h_1g_0^{-1}$ of an element of $H$ fell outside $H$, it would lie in the other coset $g_0H$, and cancelling $g_0$ would put $g_0$ in $H$.
+>
+> *(Problem Set 8, Problem 8.2, as submitted.)* Since $[G : H] = 2$, $H$ has exactly two left cosets in $G$. One of them is $eH = H$; let the other be $g_0H$, where $g_0 \notin H$. Then $G = H \sqcup g_0H$, so every $g \in G$ either lies in $H$ or equals $g_0h$ for some $h \in H$.
+>
+> We show $gHg^{-1} \subseteq H$ for every $g \in G$.
+>
+> **Case $g \in H$.** Then $gHg^{-1} \subseteq H$, since $H$ is a subgroup.
+>
+> **Case $g \notin H$.** Then $g = g_0h$ for some $h \in H$, and since $hH = H$ and $Hh^{-1} = H$,
+>
+> $$
+> gHg^{-1} = g_0\,hHh^{-1}\,g_0^{-1} = g_0Hg_0^{-1}.
+> $$
+>
+> Suppose $g_0h_1g_0^{-1} \notin H$ for some $h_1 \in H$. Then $g_0h_1g_0^{-1} \in g_0H$, say $g_0h_1g_0^{-1} = g_0h'$ with $h' \in H$. Cancelling $g_0$ gives $h_1g_0^{-1} = h'$, so $g_0^{-1} = h_1^{-1}h' \in H$, and hence $g_0 \in H$, contradicting $g_0 \notin H$. Therefore $g_0Hg_0^{-1} \subseteq H$, that is, $gHg^{-1} \subseteq H$.
+>
+> So $gHg^{-1} \subseteq H$ for all $g \in G$. Applying this to $g^{-1}$ gives $g^{-1}Hg \subseteq H$, hence $H \subseteq gHg^{-1}$, and so $gHg^{-1} = H$ for all $g \in G$. Thus $H$ is normal in $G$.
+
+^pf-39-1-2
 
 *Uses:* [[§29 The Index and Lagrange's Theorem#^def-29-1|Def. §29.1]], [[§28 Left and Right Cosets#^prop-28-3|§28.3]], [[§28 Left and Right Cosets#^prop-28-4|§28.4]], [[§38 Normal Subgroups#^prop-38-2|§38.2]]
 

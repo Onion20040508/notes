@@ -12,7 +12,7 @@ tags: [chapter, group-theory]
 The central chapter of the first half of the course. A group [[§25 Actions#^def-25-1|acting]] on a set is the same thing as a [[§25 Actions#^thm-25-3|homomorphism to a symmetric group]]; from this come [[§26 Stabilizers and Fixed Points#^def-26-1|stabilizers]], [[§27 Orbits#^def-27-1|orbits]], [[§25 Actions#^def-25-5|faithful actions]], and [[§25 Actions#^thm-25-5|Cayley's theorem]]. [[§28 Left and Right Cosets#^prop-28-2|Cosets are the orbits]] of a subgroup acting by multiplication, which yields [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange's theorem]]. [[§30 Orbit–Stabilizer#^thm-30-3|Orbit–stabilizer]] then ties the two threads together, with [[§30 Orbit–Stabilizer#^thm-30-7|Burnside's lemma]], the [[§30 Orbit–Stabilizer#^def-30-1|point stabilizer]] in $S_n$, and the [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-3|rotations of the cube]] as applications.
 
 **Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (22), [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (3), [[· 3 Permutations|3 Permutations]] (2), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (16), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (10), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (1), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (5)
-**Used by:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (1), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (1), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (11), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (44), [[· 9 Commutators, Solvable Groups and the Sylow Theorems|9 Commutators, Solvable Groups and the Sylow Theorems]] (44), [[· 10 Semidirect Products|10 Semidirect Products]] (2), [[· 11 Representations|11 Representations]] (2)
+**Used by:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (1), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (1), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (11), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (44), [[· 9 Commutators, Solvable Groups and the Sylow Theorems|9 Commutators, Solvable Groups and the Sylow Theorems]] (45), [[· 10 Semidirect Products|10 Semidirect Products]] (3), [[· 11 Representations|11 Representations]] (2)
 **Builds on (other subjects):** [[Linear Algebra]] (7), [[Topology]] (1)
 
 ## Sections
@@ -37,7 +37,7 @@ The central chapter of the first half of the course. A group [[§25 Actions#^def
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§24 Equivalence Relations and Partitions#^prop-24-1|Proposition §24.1: Equivalence Classes Partition a Set]]: 115 later results
-- [[Cosets Partition a Group|Proposition §28.3: Cosets Are the Equivalence Classes]]: 113 later results
-- [[§29 The Index and Lagrange's Theorem#^prop-29-1|Proposition §29.1: All Cosets Have the Same Size]]: 77 later results
-- [[Lagrange's Theorem|Theorem §29.2: Lagrange]]: 76 later results
+- [[§24 Equivalence Relations and Partitions#^prop-24-1|Proposition §24.1: Equivalence Classes Partition a Set]]: 117 later results
+- [[Cosets Partition a Group|Proposition §28.3: Cosets Are the Equivalence Classes]]: 115 later results
+- [[§29 The Index and Lagrange's Theorem#^prop-29-1|Proposition §29.1: All Cosets Have the Same Size]]: 79 later results
+- [[Lagrange's Theorem|Theorem §29.2: Lagrange]]: 78 later results

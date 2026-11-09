@@ -262,13 +262,13 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 ## Technique 18: Subtract a Multiple of $x_0$ to Land in the Null Space
 
 > [!remark] Remark: Strategy
-> For a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]] $\ell$ and a fixed $x_0$ with $\ell(x_0) \neq 0$, the vector $x - \frac{\ell(x)}{\ell(x_0)} x_0$ lies in the [[§31 Dual Spaces#^prop-31-5|null space]] of $\ell$ for every $x$. This one formula splits $X$ as null space plus a line, and, applied to a sequence, produces points of the null space near a given point off it.
+> For a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]] $\ell$ and a fixed $x_0$ with $\ell(x_0) \neq 0$, the vector $x - \frac{\ell(x)}{\ell(x_0)} x_0$ lies in the [[§31 Dual Spaces#^prop-31-6|null space]] of $\ell$ for every $x$. This one formula splits $X$ as null space plus a line, and, applied to a sequence, produces points of the null space near a given point off it.
 
 ^rem-t18
 
 > [!example] Example T18: Applications (HW5)
-> - Codimension one (P4, Proposition [[§31 Dual Spaces#^prop-31-5|§31.5]]).
-> - Closed null space implies bounded (P5, Proposition [[§31 Dual Spaces#^prop-31-6|§31.6]]): $y_n = x_0 - x_n/\ell(x_n)$.
+> - Codimension one (P4, Proposition [[§31 Dual Spaces#^prop-31-6|§31.6]]).
+> - Closed null space implies bounded (P5, Proposition [[§31 Dual Spaces#^prop-31-7|§31.7]]): $y_n = x_0 - x_n/\ell(x_n)$.
 > - The [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]], part (2) (Lemma [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|§26.4]](c)).
 
 ^ex-t18

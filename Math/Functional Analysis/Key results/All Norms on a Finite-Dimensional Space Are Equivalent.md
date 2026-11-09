@@ -20,7 +20,7 @@ tags: [functional-analysis, hub]
 - [[§14 New Normed Spaces from Old#^cor-14-5|Corollary §14.5: Finite-Dimensional Normed Spaces are Complete]]
 - [[§20 Compactness and the Unit Ball#^ex-20-1|Example §20.1: The Closed Unit Ball in 𝔽ⁿ]]
 - [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|Proposition §26.1: Linear Functionals on Finite-Dimensional Spaces are Bounded]]
-- [[§30 Boundedness and Continuity#^prop-30-5|Proposition §30.5: Linear Maps on Finite-Dimensional Spaces are Bounded]]
+- [[§30 Boundedness and Continuity#^prop-30-7|Proposition §30.7: Linear Maps on Finite-Dimensional Spaces are Bounded]]
 
 ## Connections
 - **How.** Compare an arbitrary norm with the coordinate norm ‖x‖₁ = Σ|aᵢ|. The bound ‖x‖′ ≤ C‖x‖₁ is pure algebra (the triangle inequality on a basis). The reverse bound comes from minimizing ‖·‖′ on the ‖·‖₁-unit sphere: the sphere is sequentially compact by the [[Bolzano–Weierstrass Theorem]] applied coordinate by coordinate, ‖·‖′ is continuous there by the reverse triangle inequality, and the minimum is positive. This is [[Functional Analysis Problem-Solving Techniques#^rem-t7|Technique 7]].

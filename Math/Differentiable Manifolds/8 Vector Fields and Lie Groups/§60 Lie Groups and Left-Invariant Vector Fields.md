@@ -214,6 +214,10 @@ For a matrix group both are first-order expansions: $(I + tA)(I + tB) = I + t(A 
 
 Left invariance in one line: pushing vectors of the field forward by left translations always gives the corresponding vectors of the field. The value at one point determines the field everywhere: taking $h = e$, $\mathbf{X}_g = (L_g)_{\ast e}\, \mathbf{X}_e$. This is the [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|left translation]] of tangent spaces from the discussion of moving the base point ([[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|Lemma §48.3]]), applied to a whole field.
 
+![[m591-49-a4.gif|640]]
+
+*(Not from lecture; animation added, vault only.)* Invariant fields on the group $G$ of matrices $\begin{pmatrix} a & b \\ 0 & 1 \end{pmatrix}$, $a > 0$ (chosen for the picture), drawn in the coordinates $(b, a)$, with $e = (a, b) = (1, 0)$ and $A = u\,\partial_a + v\,\partial_b \in T_eG$. Multiplying matrices, $(a, b)(a', b') = (aa',\ ab' + b)$. Left: for $g = (a, b)$, $L_g(a', b') = (aa', ab' + b)$ scales by $a$ and shifts, so the disc about $e$ is carried to a disc about $g$ and $d(L_g)_e(A) = aA$: the left-invariant field with value $A$ at $e$ is $\mathbf{X}^A_g = a\,(u\,\partial_a + v\,\partial_b)$, which is $gA$ of Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]] for these matrices. Right: the right translation $R_g(a', b') = (a'a,\ a'b + b')$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-7|§60.7]]) shears the disc, and the right-invariant extension of the same $A$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-9|§60.9]]) is $\mathbf{Y}^A_g = d(R_g)_e(A) = ua\,\partial_a + (ub + v)\,\partial_b$, a different field. In both panels the value at $e$ determines the whole field (grey).
+
 > [!example] Example §60.1: Left-Invariant Fields on $\mathrm{GL}(n,\mathbb{R})$
 > On $G = \mathrm{GL}(n,\mathbb{R})$, open in $\operatorname{Mat}(n,\mathbb{R})$, so that $T_gG = \operatorname{Mat}(n,\mathbb{R})$, the [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-3|left-invariant vector fields]] are exactly
 >

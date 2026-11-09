@@ -56,7 +56,7 @@ tags: [functional-analysis, math556, companion]
 *Uses:* [[§44 Bras, Kets, and the Riesz Map#^def-44-2|Def. §44.2]], [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
 
 > [!remark]- Connections
-> - The same statement for all bounded linear maps: [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-6|§30.6]].
+> - The same statement for all bounded linear maps: [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-8|§30.8]].
 > - The operator norm in finite dimensions: [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]], [[§28 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].
 
 ## The Riesz Map

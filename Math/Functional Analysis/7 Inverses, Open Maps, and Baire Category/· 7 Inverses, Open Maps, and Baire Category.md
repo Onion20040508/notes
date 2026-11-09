@@ -9,7 +9,7 @@ tags: [chapter, functional-analysis]
 
 The previous chapter studied bounded linear functionals in depth. This chapter returns to bounded linear maps $M : X \to Y$ between two spaces and asks when the equation $Mx = y$ can be solved, uniquely and stably. The central result is Banach's theorem that a bounded linear bijection between Banach spaces has a bounded inverse. Its proof rests on the Baire category theorem, which says that a complete metric space cannot be a countable union of “thin” sets. The same circle of ideas gives the closed graph theorem and the uniform boundedness principle, and with them a criterion for when approximate solutions converge (the Lax equivalence theorem, [[§42 Uniform Boundedness and Approximation|§42]]).
 
-**Builds on:** [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (7), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (1), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (1)
+**Builds on:** [[· 3 Normed Linear Spaces|3 Normed Linear Spaces]] (9), [[· 4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness|4 Infinite-Dimensional Spaces꞉ ℓᵖ, Lᵖ, and Compactness]] (1), [[· 5 Inner Product Spaces|5 Inner Product Spaces]] (1), [[· 6 Bounded Linear Maps|6 Bounded Linear Maps]] (2)
 **Used by:** [[· 8 Weak Convergence|8 Weak Convergence]] (4)
 **Builds on (other subjects):** —
 
@@ -30,7 +30,7 @@ The previous chapter studied bounded linear functionals in depth. This chapter r
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§40 The Baire Category Theorem#^lem-40-1|Lemma §40.1: Nowhere Dense via Balls]]: 18 later results
-- [[§40 The Baire Category Theorem#^lem-40-2|Lemma §40.2: Smaller Balls Also Work]]: 17 later results
-- [[Baire Category Theorem|Theorem §40.4: Baire Category Theorem]]: 16 later results
-- [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|Theorem §41.1: The Image of the Unit Ball Contains a Ball About 0]]: 15 later results
+- [[§40 The Baire Category Theorem#^lem-40-1|Lemma §40.1: Nowhere Dense via Balls]]: 19 later results
+- [[§40 The Baire Category Theorem#^lem-40-2|Lemma §40.2: Smaller Balls Also Work]]: 18 later results
+- [[Baire Category Theorem|Theorem §40.4: Baire Category Theorem]]: 17 later results
+- [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|Theorem §41.1: The Image of the Unit Ball Contains a Ball About 0]]: 16 later results

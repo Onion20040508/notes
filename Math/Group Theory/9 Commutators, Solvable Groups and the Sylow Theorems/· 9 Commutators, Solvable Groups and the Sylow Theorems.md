@@ -15,8 +15,8 @@ tags: [chapter, group-theory]
 
 The last part of the chapter turns to the Sylow theorems. [[§29 The Index and Lagrange's Theorem#^thm-29-2|Lagrange's theorem]] says that the [[§4 Subgroups#^def-4-6|order]] of a [[§4 Subgroups#^def-4-1|subgroup]] divides $|G|$, and [[§29 The Index and Lagrange's Theorem#^ex-29-3|its converse fails]]; Cauchy's theorem ([[§29 The Index and Lagrange's Theorem#^thm-29-6|Theorem §29.6]]) recovers it for primes. The Sylow theorems treat the largest power of a prime $p$ dividing $|G|$: [[§55 The Sylow Theorems#^thm-55-4|subgroups of that order exist]], and [[§55 The Sylow Theorems#^thm-55-6|any two are conjugate]]. The course's route to them is to embed a finite group into a large matrix group over $\mathbb{F}_p$, where such a subgroup can be written down explicitly ([[§54 p-Groups and Sylow Subgroups#^prop-54-5|the unitriangular matrices]]), and pull it back with a fixed-point argument ([[§55 The Sylow Theorems#^lem-55-1|Lemma §55.1]]).
 
-**Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (25), [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (6), [[· 3 Permutations|3 Permutations]] (2), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (21), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (20), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (44), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (16), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (73), [[· 10 Semidirect Products|10 Semidirect Products]] (3)
-**Used by:** [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (1), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (4), [[· 10 Semidirect Products|10 Semidirect Products]] (11), [[· 11 Representations|11 Representations]] (1)
+**Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (25), [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (6), [[· 3 Permutations|3 Permutations]] (2), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (21), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (20), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (45), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (16), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (74), [[· 10 Semidirect Products|10 Semidirect Products]] (3)
+**Used by:** [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (1), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (4), [[· 10 Semidirect Products|10 Semidirect Products]] (14), [[· 11 Representations|11 Representations]] (1)
 **Builds on (other subjects):** [[Linear Algebra]] (2)
 
 ## Sections
@@ -45,7 +45,7 @@ The last part of the chapter turns to the Sylow theorems. [[§29 The Index and L
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§46 Characters#^thm-46-3|Theorem §46.3: A Common Eigenvector Yields a Character]]: 22 later results
-- [[§55 The Sylow Theorems#^prop-55-3|Proposition §55.3: Sylow Subgroups of a Subgroup]]: 17 later results
-- [[Second Sylow Theorem|Theorem §55.6: The Second Sylow Theorem]]: 15 later results
-- [[§54 p-Groups and Sylow Subgroups#^lem-54-2|Lemma §54.2: Invertible Matrices Have Independent Columns]]: 14 later results
+- [[§46 Characters#^thm-46-3|Theorem §46.3: A Common Eigenvector Yields a Character]]: 23 later results
+- [[§55 The Sylow Theorems#^prop-55-3|Proposition §55.3: Sylow Subgroups of a Subgroup]]: 19 later results
+- [[Second Sylow Theorem|Theorem §55.6: The Second Sylow Theorem]]: 17 later results
+- [[§54 p-Groups and Sylow Subgroups#^lem-54-2|Lemma §54.2: Invertible Matrices Have Independent Columns]]: 16 later results

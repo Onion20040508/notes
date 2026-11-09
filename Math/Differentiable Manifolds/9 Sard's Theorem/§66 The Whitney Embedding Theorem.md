@@ -157,6 +157,10 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 
 *Uses:* [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-5|§42.5]], [[§66 The Whitney Embedding Theorem#^lem-66-4|§66.4]], [[§63 Sard's Theorem#^cor-63-4|§63.4]], [[§66 The Whitney Embedding Theorem#^lem-66-2|§66.2]], [[§62 Sets of Measure Zero#^prop-62-4|§62.4]], [[§62 Sets of Measure Zero#^lem-62-1|§62.1]]
 
+![[m591-61-a1.gif|640]]
+
+*(Not from lecture; animation added, vault only.)* Lemmas [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]]–[[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]] for a curve in $\mathbb{R}^3$, so $m = 1$, $N = 3$ (chosen for the picture): the helix arc $M = \{(\cos t, \sin t, t + 2.8) : |t| < 2.4\}$ is projected onto $\mathbb{R}^2 = \{y^3 = 0\}$ along $\ell = \operatorname{span}(0, s, 1)$, for $s$ from $0.4$ to $1.6$ and back. Right: the lines $[v^1 : v^2 : 1]$ in the chart $\varphi_3$ of $\mathbb{RP}^2$, with the secant directions $\sigma(p, q)$ (blue), the tangent directions $G(UM)$ (red) and $\ell$ (orange). For $s < 1$, $\ell$ is a secant direction: the secant through the two marked points of $M$ is parallel to $\ell$, their shadows coincide, and $\pi_\ell$ is an immersion that is not injective. At $s = 1$, $\ell$ is the tangent line of $M$ at $(1, 0, 2.8)$: the shadow has a cusp and $\pi_\ell$ is not an immersion (Lemma [[§66 The Whitney Embedding Theorem#^lem-66-4|§66.4]]). For $s > 1$, $\ell$ avoids both sets and $\pi_\ell$ is an injective immersion. The tangent directions form a curve, of dimension $2m - 1 = 1 < 2$ and so of measure zero (Lemma [[§66 The Whitney Embedding Theorem#^lem-66-5|§66.5]] applies, $N = 3 > 2m$), while the secant directions fill an open set ($2m = 2 = N - 1$): Lemma [[§66 The Whitney Embedding Theorem#^lem-66-3|§66.3]] needs $N > 2m + 1$ and does not apply here.
+
 > [!theorem] Theorem §66.6: The Whitney Theorems for Compact Manifolds
 > Let $M$ be a compact smooth manifold of dimension $m$. Then there is an embedding $M \to \mathbb{R}^{2m+1}$ and an immersion $M \to \mathbb{R}^{2m}$.
 >

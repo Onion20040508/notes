@@ -227,6 +227,28 @@ In other words, if both norms are complete and one of them is stronger than the 
 
 ^ex-41-1
 
+> [!example] Example §41.2: $C[0,1]$ is Not Complete in the $L^1$ Norm
+> $(C[0,1], \|\cdot\|_1)$, where $\|f\|_1 = \int_0^1 |f(x)|\, dx$, is not a Banach space.
+
+^ex-41-2
+
+> [!proof]+ Proof
+> *(HW9, Problem 2. Not from lecture; filled in.)* Let $\|f\|_\infty = \max_{t \in [0,1]} |f(t)|$. We compare the two norms on $X = C[0,1]$ and apply the equivalent norm theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]).
+>
+> **Step 1: the norms are comparable.** For $f \in C[0,1]$, $|f(x)| \le \|f\|_\infty$ for all $x$, so
+>
+> $$
+> \|f\|_1 = \int_0^1 |f(x)|\, dx \le \|f\|_\infty .
+> $$
+>
+> **Step 2: they are not equivalent.** Let $f_n(t) = t^n$. Then $\|f_n\|_\infty = 1$ and $\|f_n\|_1 = \int_0^1 t^n\, dt = \frac{1}{n+1}$. If there were $C$ with $\|f\|_\infty \le C \|f\|_1$ for all $f$, then $1 \le \frac{C}{n+1}$ for every $n$, which is impossible. So the two norms are not equivalent (Definition [[§14 New Normed Spaces from Old#^def-14-1|§14.1]]).
+>
+> **Step 3: conclusion.** $(C[0,1], \|\cdot\|_\infty)$ is a Banach space (Theorem [[§12 Completeness#^thm-12-1|§12.1]]). If $(C[0,1], \|\cdot\|_1)$ were also a Banach space, then by Step 1 the hypotheses of Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]] would hold with $c = 1$, and the two norms would be equivalent, contradicting Step 2. So $(C[0,1], \|\cdot\|_1)$ is not complete. (Its completion is $L^1[0,1]$, Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]].)
+
+^pf-ex-41-2
+
+*Uses:* [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]], [[§14 New Normed Spaces from Old#^def-14-1|Def. §14.1]], [[§12 Completeness#^thm-12-1|§12.1]], [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]]
+
 ## The Closed Graph Theorem
 
 > [!theorem] Theorem §41.4: Closed Graph Theorem
@@ -279,8 +301,85 @@ The domain is the domain of definition. Recall the example of Lecture 15 (Exampl
 
 *Uses:* [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]
 
+The closed graph theorem and the open mapping principle together decide when a range is closed.
+
+> [!theorem] Proposition §41.5: Closed Range Criterion
+> Let $X, Y$ be Banach spaces and $M : X \to Y$ a closed linear map (defined on all of $X$). For $x \in X$ let
+>
+> $$
+> d\bigl( x, N(M) \bigr) = \inf_{w \in N(M)} \|x - w\|
+> $$
+>
+> be the distance from $x$ to the null space $N(M)$. Then the range $R(M)$ is closed in $Y$ if and only if there is a constant $a > 0$ such that
+>
+> $$
+> d\bigl( x, N(M) \bigr) \le a\, \|Mx\| \qquad \text{for all } x \in X .
+> $$
+
+^prop-41-5
+
+> [!proof]+ Proof
+> *(HW9, Problem 3. Not from lecture; filled in.)* Write $N = N(M)$ and $R = R(M)$ (Definition [[§39 Solving Mx = y#^def-39-1|§39.1]]). By the closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]), $M \in \mathcal{L}(X, Y)$.
+>
+> **($\Rightarrow$)** Assume $R$ is closed in $Y$. We must produce $a$.
+>
+> *Step 1: $R$ is a Banach space.* $R$ is a linear subspace of $Y$. A Cauchy sequence in $R$ converges in $Y$, because $Y$ is complete, and its limit lies in $R$, because $R$ is closed. So $R$ is complete in the norm of $Y$.
+>
+> *Step 2: a ball in the image.* $M : X \to R$ is a bounded linear map between Banach spaces and it is onto $R$. By Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]], applied with $R$ in place of $Y$, there is $\delta > 0$ such that every $y \in R$ with $\|y\| < \delta$ is $y = Mz$ for some $z \in X$ with $\|z\| < 1$.
+>
+> *Step 3: the estimate.* Let $x \in X$. If $Mx = 0$, then $x \in N$ and $d(x, N) = 0$. If $Mx \neq 0$, put $y = \frac{\delta}{2} \frac{Mx}{\|Mx\|}$. Then $y \in R$ and $\|y\| = \frac{\delta}{2} < \delta$, so by Step 2 there is $z$ with $Mz = y$ and $\|z\| < 1$. Put $w = x - \frac{2\|Mx\|}{\delta}\, z$. By linearity,
+>
+> $$
+> Mw = Mx - \frac{2\|Mx\|}{\delta}\, Mz = Mx - \frac{2\|Mx\|}{\delta} \cdot \frac{\delta}{2} \frac{Mx}{\|Mx\|} = 0 ,
+> $$
+>
+> so $w \in N$, and
+>
+> $$
+> d(x, N) \le \|x - w\| = \frac{2\|Mx\|}{\delta}\, \|z\| \le \frac{2}{\delta}\, \|Mx\| .
+> $$
+>
+> So the inequality holds with $a = 2/\delta$.
+>
+> **($\Leftarrow$)** Assume $d(x, N) \le a \|Mx\|$ for all $x \in X$. Let $y \in Y$ be the limit of a sequence $Mx_n$ of points of $R$; we must show $y \in R$. The $x_n$ themselves need not converge, since they are determined only up to elements of $N$; we correct them by elements of $N$.
+>
+> *Step 1: a fast subsequence.* $\{Mx_n\}$ converges, so it is Cauchy, and there are $n_1 < n_2 < \cdots$ with $\|Mx_{n_{k+1}} - Mx_{n_k}\| < 2^{-k}$ for all $k \ge 1$.
+>
+> *Step 2: corrections.* By the assumption applied to $x_{n_{k+1}} - x_{n_k}$,
+>
+> $$
+> d\bigl( x_{n_{k+1}} - x_{n_k}, N \bigr) \le a\, \|Mx_{n_{k+1}} - Mx_{n_k}\| < a\, 2^{-k} .
+> $$
+>
+> The distance is an infimum, so there is $w_k \in N$ with $\|x_{n_{k+1}} - x_{n_k} - w_k\| < a\, 2^{-k}$. Define
+>
+> $$
+> z_1 = x_{n_1}, \qquad z_{k+1} = x_{n_{k+1}} - (w_1 + \cdots + w_k) .
+> $$
+>
+> Then $z_{k+1} - z_k = x_{n_{k+1}} - x_{n_k} - w_k$, so $\|z_{k+1} - z_k\| < a\, 2^{-k}$, and $Mz_k = Mx_{n_k}$ because $M$ vanishes on $N$.
+>
+> *Step 3: convergence.* For $l > k$, by the triangle inequality,
+>
+> $$
+> \|z_l - z_k\| \le \sum_{j=k}^{l-1} \|z_{j+1} - z_j\| < \sum_{j=k}^{\infty} a\, 2^{-j} = a\, 2^{1-k} ,
+> $$
+>
+> so $\{z_k\}$ is Cauchy in $X$. Since $X$ is complete, $z_k \to z$ for some $z \in X$. Also $Mz_k = Mx_{n_k} \to y$, as a subsequence of $Mx_n \to y$.
+>
+> *Step 4: $y \in R$.* $z_k \to z$ and $Mz_k \to y$, and $M$ is closed (Definition [[§39 Solving Mx = y#^def-39-3|§39.3]]), so $y = Mz \in R$. Hence $R$ contains the limit of every convergent sequence of its points: $R$ is closed.
+
+^pf-41-5
+
+*Uses:* [[§39 Solving Mx = y#^def-39-1|Def. §39.1]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]], [[§39 Solving Mx = y#^def-39-3|Def. §39.3]]
+
+> [!remark] Remark: What Each Direction of the Closed Range Criterion Uses
+> *(Not from lecture.)* The direction ($\Leftarrow$) uses only that $M$ is closed and $X$ is complete: $Y$ may be any normed linear space, and the same argument works for a closed map with domain $D(M) \subset X$, since then $z_k \in D(M)$ and closedness gives $z \in D(M)$. The direction ($\Rightarrow$) uses the completeness of both spaces, through the open mapping principle. In terms of the induced map of Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]], the inequality says $\|[x]\| \le a\, \|M_0 [x]\|$: the inverse of $M_0 : X/N \to R(M)$ is bounded.
+
+^rem-41-2
+
 > [!remark] Remark: How the Theorems Fit Together
 > The chain of this section is: the Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-4|§40.4]]) $\Rightarrow$ the image of the unit ball contains a ball (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]]) $\Rightarrow$ the open mapping theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]]) $\Rightarrow$ Banach's inverse mapping theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]) $\Rightarrow$ the equivalent norm theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]) $\Rightarrow$ the closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]).
 > The closed graph theorem is used in the converse direction of the usual check: to show a linear map defined everywhere is bounded, it suffices to show that $x_n \to x$ and $Mx_n \to y$ imply $y = Mx$, which is often easier than estimating $\|Mx\|$ directly, because the convergence $Mx_n \to y$ comes for free. Completeness of both spaces is essential in every link.
 
-^rem-41-2
+^rem-41-3

@@ -11,6 +11,8 @@ tags: [group-theory, hub]
 - [[§56 Simple Groups of Small Order#^thm-56-20|Theorem §56.20: Simple Groups of Order 60]], in [[§56 Simple Groups of Small Order]]
 
 ## Its proof uses
+- [[§43 Simple Groups#^thm-43-9|Theorem §43.9: Aₙ Is Simple for n ≥ 5]]
+- [[§56 Simple Groups of Small Order#^lem-56-18|Lemma §56.18: The Subgroup of Index 2 in S_m]]
 - [[§56 Simple Groups of Small Order#^prop-56-19|Proposition §56.19: Subgroups of Index n in Aₙ]]
 
 ## Used in (Group Theory)

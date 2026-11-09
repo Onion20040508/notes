@@ -495,7 +495,7 @@ The count shows more. First, the general tool:
 
 ## Simple Groups of Order $60$
 
-*Source: Problem Set 7, Problem 7.1 (submitted Thu Oct 29).*
+*Source: Problem Set 7, Problem 7.1 (submitted Thu Oct 29); Problem Set 8, Problem 8.4 (submitted Thu Nov 5).*
 
 > [!theorem] Proposition §56.17: Proper Subgroups of $A_n$ Have Index at Least $n$
 > Let $n \geq 5$ and let $H$ be a subgroup of $A_n$ other than $A_n$ itself. Then $[A_n : H] \geq n$.
@@ -634,7 +634,7 @@ The count shows more. First, the general tool:
 > [!theorem] Theorem §56.20: Simple Groups of Order $60$
 > Every simple group of order $60$ is isomorphic to $A_5$.
 >
-> *Source: PS 7.1(3)*
+> *Source: PS 7.1(3); second proof PS 8.4*
 
 ^thm-56-20
 
@@ -675,6 +675,63 @@ The count shows more. First, the general tool:
 ^pf-56-20
 
 *Uses:* [[§56 Simple Groups of Small Order#^prop-56-19|§56.19]]
+
+> [!proof]+ Second proof ($G$ acting on the cosets $A_6/G$)
+> *Idea:* Embed $G$ in $A_6$ as before. Then $G$ acts on the six cosets of $A_6/G$ and fixes the coset $G$, so it embeds in the stabilizer of a point, a copy of $S_5$, as a subgroup of order $60 = 5!/2$.
+>
+> *(Problem Set 8, Problem 8.4, as submitted. Parts (1) and (2), that $n_5 = 6$ and that conjugation on the set $X_5$ of $5$-Sylows gives an injective homomorphism $\varphi \colon G \to S_6$ with image in $A_6$, repeat the paragraphs “The number of $5$-Sylows” to “$\varphi(G)$ lies in $A_6$” of the first proof in nearly the same words, and are not copied again. Parts (3) to (5) follow.)*
+>
+> **(3)** By (2), $\varphi$ is an isomorphism from $G$ onto $\varphi(G) \leq A_6$; we identify $G$ with $\varphi(G)$, so $G$ is a subgroup of $A_6$, and $Y = A_6/G$ is the set of left cosets of $G$ in $A_6$.
+>
+> **$|Y| = 6$.** By Lagrange's theorem,
+>
+> $$
+> |Y| = [A_6 : G] = \frac{|A_6|}{|G|} = \frac{6!/2}{60} = \frac{360}{60} = 6.
+> $$
+>
+> **The map $G \to S_6$.** Let $G$ act on $Y$ by left multiplication, $g \cdot (xG) = (gx)G$ for $g \in G$ and $xG \in Y$.
+> - *Well defined:* $gx \in A_6$ since $g, x \in A_6$; and if $xG = yG$, then $x^{-1}y \in G$, so $(gx)^{-1}(gy) = x^{-1}y \in G$ and $(gx)G = (gy)G$.
+> - *Identity:* $e \cdot (xG) = xG$.
+> - *Compatibility:* $(g_1g_2) \cdot (xG) = (g_1g_2x)G = g_1 \cdot \big((g_2x)G\big) = g_1 \cdot \big(g_2 \cdot (xG)\big)$.
+>
+> So this is a group action, and as in Problem 3.1,
+>
+> $$
+> \psi \colon G \to S_Y, \qquad \psi(g)(xG) = (gx)G,
+> $$
+>
+> is a group homomorphism. Since $|Y| = 6$, labeling the six cosets by $1, \dots, 6$ identifies $S_Y$ with $S_6$, and we obtain a map $\psi \colon G \to S_6$.
+>
+> **(4)** Let $g \in G$. Since $g$ lies in the subgroup $G$, $gG = G$, so
+>
+> $$
+> \psi(g)(eG) = gG = G.
+> $$
+>
+> Thus every $\psi(g)$ fixes the coset $G \in Y$. Hence $\psi(G) \subseteq \operatorname{Stab}(G) = \{\sigma \in S_Y : \sigma(G) = G\}$, and since $\psi(G)$ is a subgroup of $S_Y$, $\psi(G) \leq \operatorname{Stab}(G)$.
+>
+> As in the proof of Problem 7.1(2) (Proposition [[§56 Simple Groups of Small Order#^prop-56-19|§56.19]]), with $Y' = Y \setminus \{G\}$, which has $5$ elements, restriction $\sigma \mapsto \sigma|_{Y'}$ is a group isomorphism $\operatorname{Stab}(G) \to S_{Y'}$, and labeling the five cosets in $Y'$ by $1, \dots, 5$ identifies $S_{Y'}$ with $S_5$. Composing gives an isomorphism
+>
+> $$
+> \Theta \colon \operatorname{Stab}(G) \to S_5.
+> $$
+>
+> Hence the image $\psi(G)$ lies in $\operatorname{Stab}(G)$, a copy of $S_5$ inside $S_Y \cong S_6$, and $\Theta \circ \psi \colon G \to S_5$ is a homomorphism.
+>
+> **(5) $\psi$ is injective.** Since $\ker\psi$ is a normal subgroup of $G$ and $G$ is simple, either $\ker\psi = \{e\}$ or $\ker\psi = G$. Suppose $\ker\psi = G$. Then for all $g \in G$ and $x \in A_6$, $gxG = \psi(g)(xG) = xG$, so $x^{-1}gx \in G$. Hence $x^{-1}Gx \subseteq G$ for every $x \in A_6$; applying this to $x^{-1}$ gives $xGx^{-1} \subseteq G$, so $G \subseteq x^{-1}Gx$, and therefore $x^{-1}Gx = G$ for all $x \in A_6$. Thus $G$ is a normal subgroup of $A_6$ with $1 < |G| = 60 < 360 = |A_6|$, contradicting the simplicity of $A_6$ (Theorem [[§43 Simple Groups#^thm-43-9|§43.9]]). Hence $\ker\psi = \{e\}$, and $\psi$ is injective.
+>
+> **Conclusion.** Since $\psi$ is injective and $\Theta$ is an isomorphism, $\Theta \circ \psi \colon G \to S_5$ is injective, so $G$ is isomorphic to $\Theta(\psi(G))$, a subgroup of $S_5$ of order $|G| = 60 = \frac{5!}{2}$. By the lemma in the proof of Problem 7.1(2) (Lemma [[§56 Simple Groups of Small Order#^lem-56-18|§56.18]]), applied with $m = 5 \geq 3$, $\Theta(\psi(G)) = A_5$. Therefore $G \cong A_5$.
+
+^pf-56-20-2
+
+*Uses:* [[§56 Simple Groups of Small Order#^prop-56-19|§56.19]], [[§43 Simple Groups#^thm-43-9|§43.9]], [[§56 Simple Groups of Small Order#^lem-56-18|§56.18]]
+
+> [!remark] Remark: Two Maps from $G$ to $S_6$
+> The two proofs of Theorem [[§56 Simple Groups of Small Order#^thm-56-20|§56.20]] use the same two actions. The first proof packages the second action into Proposition [[§56 Simple Groups of Small Order#^prop-56-19|§56.19]] with $n = 6$; the second proof (Problem Set 8, a repair of Problem 7.1, whose statement was harder than intended) carries it out for $G$ directly. The first map $G \to S_6$, from conjugation on the six $5$-Sylows, does not land in the obvious copy of $A_5$ inside $A_6$, the stabilizer of a point: no $5$-Sylow is fixed by all of $G$, since a fixed one would be normal. Only the second map, from the action on $Y = A_6/G$, fixes a point, the coset $G$. *(Not from class.)* So $A_6$ contains copies of $A_5$ of two kinds, those fixing one of the six points and those moving all six, such as $\varphi(G)$; the action of $A_6$ on the cosets of a copy of the second kind is what turns it into one of the first kind.
+>
+> *Source: PS 8.4, closing comment*
+
+^rem-56-7
 
 > [!theorem] Corollary §56.21: The Simple Groups of Order at Most $100$
 > A simple group of order at most $100$ is isomorphic to $\mathbb{Z}/p\mathbb{Z}$ for a prime $p$, or to $A_5$.
@@ -719,7 +776,7 @@ Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6
 >
 > *Source: lecture 10/23*
 
-^rem-56-7
+^rem-56-8
 
 > [!remark] Remark: Where the Groups of Lie Type Come From
 > *(Overview only.)* A **Lie group** is a group that is also a manifold, with the group operations smooth. There is a much easier classification, due to Killing and Cartan (late 19th century), of the compact Lie groups. Roughly, they fall into three infinite families,
@@ -734,4 +791,4 @@ Since $A_5$ is simple of order $60$ (Proposition [[§43 Simple Groups#^prop-43-6
 >
 > *Source: lecture 10/23*
 
-^rem-56-8
+^rem-56-9

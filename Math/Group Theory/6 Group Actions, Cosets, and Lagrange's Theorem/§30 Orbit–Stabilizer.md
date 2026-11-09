@@ -244,21 +244,32 @@ For subgroups $A, B \leq G$ the product set $AB = \{ab : a \in A,\ b \in B\}$ is
 >
 > Hence $\Phi$ is a bijection, and $c$ can be written as $ab$ with $a \in A$, $b \in B$ in exactly $|R_c| = |A \cap B|$ ways.
 >
-> (2)
-> *(Part (2) of the submitted text was not available for these notes; filled in.)* Every pair $(a, b) \in A \times B$ lies in exactly one of the sets $R_c$, $c \in AB$, namely in $R_{ab}$. So the $R_c$ partition $A \times B$, and by (1)
+> (2) Consider the multiplication map
 >
 > $$
-> |A| \cdot |B| = |A \times B| = \sum_{c \in AB} |R_c| = |AB| \cdot |A \cap B|.
+> \mu \colon A \times B \to AB, \qquad \mu(a, b) = ab,
 > $$
 >
-> Dividing by $|A \cap B| \geq 1$ gives (2). Normality was never used.
+> which is surjective by the definition of $AB$. Its fibers $\mu^{-1}(c) = R_c$, for $c \in AB$, are pairwise disjoint and their union is $A \times B$. Since $G$ is finite, by (1),
+>
+> $$
+> |A| \cdot |B| = |A \times B| = \sum_{c \in AB} |R_c| = \sum_{c \in AB} |A \cap B| = |AB| \cdot |A \cap B|.
+> $$
+>
+> Therefore
+>
+> $$
+> |AB| = \frac{|A| \cdot |B|}{|A \cap B|}.
+> $$
+>
+> *(Not submitted.)* Normality was never used.
 
 ^pf-30-6
 
 > [!proof]+ Second proof (orbit–stabilizer)
 > *Idea:* $AB$ is the orbit of $e$ under $A \times B$ acting on $G$ by $(a, b) \star x = axb^{-1}$, and the stabilizer of $e$ is a copy of $A \cap B$.
 >
-> *(In office hours, Wed Nov 4, Speyer treated the problem as an orbit–stabilizer count; which action he used is not recorded here. The details below are filled in with the two-sided action.)* The direct product $A \times B$ (Direct Products, Definition [[§3 Basic Examples of Groups#^def-3-2|§3.2]]) acts on $G$ by $(a, b) \star x = axb^{-1}$: $(e, e) \star x = x$, and
+> *(In office hours, Wed Nov 4, the problem was treated as an orbit–stabilizer count; which action was used is not recorded here. The two-sided action below is the one in the remark that closes the submitted solution of Problem 8.1, which obtains (2) from it; the derivation of (1) is filled in.)* The direct product $A \times B$ (Direct Products, Definition [[§3 Basic Examples of Groups#^def-3-2|§3.2]]) acts on $G$ by $(a, b) \star x = axb^{-1}$: $(e, e) \star x = x$, and
 >
 > $$
 > (a, b) \star \bigl((a', b') \star x\bigr) = a(a'xb'^{-1})b^{-1} = (aa')\,x\,(bb')^{-1} = (aa', bb') \star x.

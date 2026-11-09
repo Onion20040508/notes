@@ -164,8 +164,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §6.3, Thm 4; cf. §8.3, Thm 9 | Corollary [[§31 Dual Spaces#^cor-31-3\|§31.3]] | The Riesz Map: $H' \cong H$ |
 | §6.3, Thm 4 with §6.1, Examples 2–3 | Example [[§31 Dual Spaces#^ex-31-1\|§31.1]] | $(L^2)' = L^2$ and $(\ell^2)' = \ell^2$ |
 | §6.3, Lemma 5(i) | Lemma [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4\|§26.4]] | The Kernel Has Codimension One |
-| §6.3, Lemma 5(i) | Proposition [[§31 Dual Spaces#^prop-31-5\|§31.5]] | The Null Space Has Codimension One |
-| §6.3, Lemma 5(iii) | Proposition [[§31 Dual Spaces#^prop-31-6\|§31.6]] | Bounded if and only if the Null Space is Closed |
+| §6.3, Lemma 5(i) | Proposition [[§31 Dual Spaces#^prop-31-6\|§31.6]] | The Null Space Has Codimension One |
+| §6.3, Lemma 5(iii) | Proposition [[§31 Dual Spaces#^prop-31-7\|§31.7]] | Bounded if and only if the Null Space is Closed |
 | §6.3, conditions (i)–(ii) of Thm 6 | Definition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1\|§32.1]] | Sesquilinear Form; Bounded Form |
 | §6.3, Thm 6 | Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2\|§32.2]] | Lax–Milgram |
 | §6.4, closed linear span | Definition [[§11 Normed Linear Spaces#^def-11-9\|§11.9]] | Closed Linear Span |
@@ -199,7 +199,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6 and 15, but n
 | §15.1, (3) and ($3'$) | Proposition [[§30 Boundedness and Continuity#^prop-30-1\|§30.1]] | The Operator Norm |
 | §15.1, definition of $\mathcal{L}(X, U)$ | Definition [[§30 Boundedness and Continuity#^def-30-4\|§30.4]] | The Space $\mathcal{L}(X, Y)$ |
 | §15.1, Thm 1 | Proposition [[§30 Boundedness and Continuity#^prop-30-2\|§30.2]] | Continuous if and only if Bounded |
-| §15.1, Thms 2–3 | Theorem [[§30 Boundedness and Continuity#^thm-30-6\|§30.6]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |
+| §15.1, Thms 2–3 | Theorem [[§30 Boundedness and Continuity#^thm-30-8\|§30.8]] | $\mathcal{L}(X, Y)$ is a Normed Linear Space |
 | §15.2, Thm 6 (the direction $\Leftarrow$); §15.3, Thm 7 and Cor 7$'$ (the direction $\Rightarrow$) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6\|§42.6]] | Banach–Steinhaus |
 | §15.2, Thm 6 | Proposition [[§42 Uniform Boundedness and Approximation#^prop-42-7\|§42.7]] | Banach–Steinhaus Without a Given Limit |
 | §15.5, proof of Thm 9 (“Baire category principle”), p. 169 | Theorem [[§40 The Baire Category Theorem#^thm-40-4\|§40.4]] | Baire Category Theorem |

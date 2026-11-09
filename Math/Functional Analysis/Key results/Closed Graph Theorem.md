@@ -14,6 +14,7 @@ tags: [functional-analysis, hub]
 - [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|Theorem §41.3: Equivalent Norm Theorem]]
 
 ## Used in (Functional Analysis)
+- [[§41 The Open Mapping Theorem and Its Consequences#^prop-41-5|Proposition §41.5: Closed Range Criterion]]
 - [[§42 Uniform Boundedness and Approximation#^thm-42-4|Theorem §42.4: Equivalent Norm Theorem, Second Version]]
 
 ## Connections

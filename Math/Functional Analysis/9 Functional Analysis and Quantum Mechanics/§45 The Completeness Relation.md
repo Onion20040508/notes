@@ -27,7 +27,7 @@ The physicists' identity $\sum_n |e_n\rangle\langle e_n| = \mathbf{1}$ is Theore
 ^def-45-2
 
 > [!remark]- Connections
-> - The general operator norm: [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]; as a norm on $\mathcal{L}(X, Y)$: [[§30 Boundedness and Continuity#^thm-30-6|§30.6]].
+> - The general operator norm: [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]; as a norm on $\mathcal{L}(X, Y)$: [[§30 Boundedness and Continuity#^thm-30-8|§30.8]].
 > - Finite dimensions: [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
 
 > [!definition] Definition §45.3: Strong Convergence

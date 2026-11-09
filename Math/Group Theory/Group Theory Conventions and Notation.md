@@ -41,9 +41,9 @@ tags: [group-theory, math493]
 | $kX$ | Permutation representation on formal combinations of the $e_x$, $x \in X$. | [[§59 Representations and Subrepresentations#^def-59-2\|Def. §59.2]] |
 | $U \oplus V$ | Internal direct sum of subspaces: $U \cap V = \{0\}$, $U + V = W$. | [[§60 Direct Sums and Maschke's Theorem#^def-60-1\|Def. §60.1]] |
 | $U^\perp$, $P_U$ | Orthogonal complement of $U$; orthogonal projection onto $U$. | [[§61 Invariant Inner Products and Maschke over ℝ#^def-61-2\|Def. §61.2]], [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-1\|§61.1]] |
-| $V_1 \oplus \cdots \oplus V_r$ | Direct sum of several subspaces: every $v$ is uniquely $v_1 + \cdots + v_r$, $v_i \in V_i$. | [[§62 Simple Representations#^def-62-3\|Def. §62.3]] |
-| $M^\dagger = \bar M^T$ | Conjugate transpose ([[§61 Invariant Inner Products and Maschke over ℝ#^def-61-8\|Def. §61.8]]); $M$ is Hermitian if $M = M^\dagger$, unitary if $M^\dagger M = I$. | [[§61 Invariant Inner Products and Maschke over ℝ#^rem-61-4\|§61]] |
-| $V^G$ | Invariant vectors of a representation: $gv = v$ for all $g$. | [[§63 Invariant Vectors#^def-63-2\|Def. §63.2]] |
-| $\chi_V$ | Character of a representation, $\chi_V(g) = \operatorname{Tr}\rho_V(g)$; not a character in the sense of §46 unless $\dim V = 1$. | [[§64 Characters of Representations#^def-64-1\|Def. §64.1]] |
-| $\operatorname{Tr}$ | Trace of a matrix or of a linear map. | [[§63 Invariant Vectors#^def-63-1\|Def. §63.1]] |
+| $V_1 \oplus \cdots \oplus V_r$ | Direct sum of several subspaces: every $v$ is uniquely $v_1 + \cdots + v_r$, $v_i \in V_i$. | [[§63 Simple Representations#^def-63-3\|Def. §63.3]] |
+| $M^\dagger = \bar M^T$ | Conjugate transpose ([[§62 Sesquilinear and Hermitian Forms#^def-62-4\|Def. §62.4]]); $M$ is Hermitian if $M = M^\dagger$, unitary if $M^\dagger M = I$. | [[§62 Sesquilinear and Hermitian Forms#^rem-62-1\|§62]] |
+| $V^G$ | Invariant vectors of a representation: $gv = v$ for all $g$. | [[§64 Invariant Vectors#^def-64-3\|Def. §64.3]] |
+| $\chi_V$ | Character of a representation, $\chi_V(g) = \operatorname{Tr}\rho_V(g)$; not a character in the sense of §46 unless $\dim V = 1$. | [[§65 Characters of Representations#^def-65-1\|Def. §65.1]] |
+| $\operatorname{Tr}$ | Trace of a matrix or of a linear map. | [[§64 Invariant Vectors#^def-64-2\|Def. §64.2]] |
 | *WS $k.m$*, *PS $k.m$* | Provenance tags: Worksheet $k$ / Problem Set $k$, Problem $m$. | [[493 Problem Set 1\|PS 1]], [[493 Problem Set 2\|PS 2]], [[493 Problem Set 3\|PS 3]] |

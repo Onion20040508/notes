@@ -300,7 +300,7 @@ tags: [group-theory, math493]
 > [!theorem] Proposition §55.11: Groups of Order $pq$
 > Let $p < q$ be primes with $q \not\equiv 1 \pmod p$, and let $|G| = pq$. Then $G \cong \mathbb{Z}/pq\mathbb{Z}$.
 >
-> *Source: lecture 10/16, stated after the case $|G| = 15$); proof filled in*
+> *Source: lecture 10/16, stated after the case $|G| = 15$ (proof filled in); second proof PS 8.3(1)*
 
 ^prop-55-11
 
@@ -321,8 +321,49 @@ tags: [group-theory, math493]
 
 *Uses:* [[§55 The Sylow Theorems#^cor-55-10|§55.10]], [[§55 The Sylow Theorems#^thm-55-9|§55.9]], [[§55 The Sylow Theorems#^cor-55-7|§55.7]], [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|§29.2]], [[§54 p-Groups and Sylow Subgroups#^lem-54-6|§54.6]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|§9.3]]
 
+> [!proof]+ Second proof (the product formula)
+> *Idea:* Both Sylow subgroups are normal with trivial intersection, so their elements commute; the product formula gives $PQ = G$, and $(y, x) \mapsto yx$ is an isomorphism $Q \times P \to G$.
+>
+> *(Problem Set 8, Problem 8.3(1), as submitted. There $P$ is a $p$-Sylow subgroup and $Q$ a $q$-Sylow subgroup of $G$, and the claim is that $P$ and $Q$ are normal and $G \cong Q \times P$.)*
+>
+> **Conjugates of Sylows.** A conjugate of an $r$-Sylow subgroup is an $r$-Sylow subgroup. Hence if $n_r = 1$, then $gRg^{-1} = R$ for the unique $r$-Sylow $R$ and every $g \in G$, so $R$ is normal.
+>
+> **$n_q = 1$.** Since $|G| = pq$ with $q \nmid p$, by the Sylow theorems $n_q \mid p$ and $n_q \equiv 1 \pmod q$. The divisors of $p$ are $1$ and $p$, and $p \not\equiv 1 \pmod q$ since $1 < p < q$. Hence $n_q = 1$, and $Q$ is normal in $G$.
+>
+> **$n_p = 1$.** Likewise $n_p \mid q$ and $n_p \equiv 1 \pmod p$. The divisors of $q$ are $1$ and $q$, and $q \not\equiv 1 \pmod p$ by hypothesis. Hence $n_p = 1$, and $P$ is normal in $G$.
+>
+> **$P \cap Q = \{e\}$.** $P \cap Q$ is a subgroup of both $P$ and $Q$, so by Lagrange's theorem $|P \cap Q|$ divides both $p$ and $q$. As $p$ and $q$ are distinct primes, $|P \cap Q| = 1$.
+>
+> **$PQ = G$.** By Problem 8.1 (The Product Formula, Proposition [[§30 Orbit–Stabilizer#^prop-30-6|§30.6]]), $|PQ| = \frac{|P|\cdot|Q|}{|P \cap Q|} = pq = |G|$. Since $PQ \subseteq G$ and $G$ is finite, $PQ = G$.
+>
+> **Elements of $P$ and $Q$ commute.** Let $x \in P$ and $y \in Q$. Since $P$ is normal, $yx^{-1}y^{-1} \in P$, so $xyx^{-1}y^{-1} = x\,(yx^{-1}y^{-1}) \in P$. Since $Q$ is normal, $xyx^{-1} \in Q$, so $xyx^{-1}y^{-1} = (xyx^{-1})\,y^{-1} \in Q$. Hence $xyx^{-1}y^{-1} \in P \cap Q = \{e\}$, that is, $xy = yx$.
+>
+> **The isomorphism.** Define
+>
+> $$
+> \phi \colon Q \times P \to G, \qquad \phi(y, x) = yx.
+> $$
+>
+> *Homomorphism.* For $(y_1, x_1), (y_2, x_2) \in Q \times P$, using $x_1y_2 = y_2x_1$,
+>
+> $$
+> \phi\big((y_1, x_1)(y_2, x_2)\big) = \phi(y_1y_2, x_1x_2) = y_1y_2x_1x_2 = y_1x_1y_2x_2 = \phi(y_1, x_1)\,\phi(y_2, x_2).
+> $$
+>
+> *Injective.* If $\phi(y, x) = yx = e$, then $y = x^{-1} \in P$ and $y \in Q$, so $y \in P \cap Q = \{e\}$; thus $y = e$ and $x = y^{-1} = e$. So $\ker \phi$ is trivial.
+>
+> *Surjective.* Let $g \in G = PQ$, say $g = xy$ with $x \in P$, $y \in Q$. Since $x$ and $y$ commute, $g = yx = \phi(y, x)$.
+>
+> Hence $\phi$ is an isomorphism, and $G \cong Q \times P$.
+>
+> *(Not submitted; the last step of the first proof.)* $P$ and $Q$ have prime orders, so $P \cong \mathbb{Z}/p\mathbb{Z}$ and $Q \cong \mathbb{Z}/q\mathbb{Z}$ (Theorem [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]]), and $G \cong \mathbb{Z}/q\mathbb{Z} \times \mathbb{Z}/p\mathbb{Z} \cong \mathbb{Z}/pq\mathbb{Z}$ by the Chinese Remainder Theorem (Theorem [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|§9.3]]).
+
+^pf-55-11-2
+
+*Uses:* [[§30 Orbit–Stabilizer#^prop-30-6|§30.6]], [[§29 The Index and Lagrange's Theorem#^thm-29-7|§29.7]], [[§9 Euclid's Lemma, Unique Factorization, and the Chinese Remainder Theorem#^thm-9-3|§9.3]]
+
 > [!example] Example §55.4: When q ≡ 1 mod p: $S_3$
-> The hypothesis $q \not\equiv 1 \pmod p$ of Proposition [[§55 The Sylow Theorems#^prop-55-11|§55.11]] cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic, as it is not even abelian: $(1\,2)(2\,3) = (1\,2\,3) \neq (1\,3\,2) = (2\,3)(1\,2)$. There $n_3 = 1$ but $n_2 = 3$ (Example [[§54 p-Groups and Sylow Subgroups#^ex-54-1|§54.1]]), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step. What remains is a [[§58 Semidirect Products#^def-58-2|semidirect product]]: $S_3 \cong \mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ (Example [[§58 Semidirect Products#^ex-58-4|§58.4]]).
+> The hypothesis $q \not\equiv 1 \pmod p$ of Proposition [[§55 The Sylow Theorems#^prop-55-11|§55.11]] cannot be dropped: $|S_3| = 6 = 2 \cdot 3$ with $3 \equiv 1 \pmod 2$, and $S_3$ is not cyclic, as it is not even abelian: $(1\,2)(2\,3) = (1\,2\,3) \neq (1\,3\,2) = (2\,3)(1\,2)$. There $n_3 = 1$ but $n_2 = 3$ (Example [[§54 p-Groups and Sylow Subgroups#^ex-54-1|§54.1]]), so the Sylow $2$-subgroups are not normal and the splitting argument stops at the second step. What remains is a semidirect product: $S_3 \cong \mathbb{Z}/3\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ (Example [[§58 Semidirect Products#^ex-58-4|§58.4]]). For every group of order $pq$ this is Proposition [[§58 Semidirect Products#^prop-58-11|§58.11]] (PS 8.3), in [[§58 Semidirect Products|§58]].
 >
 > *Source: not from lecture*
 

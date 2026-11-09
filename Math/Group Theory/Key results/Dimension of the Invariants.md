@@ -2,21 +2,21 @@
 subject: math
 type: theorem
 source: "[[Group Theory]]"
-aliases: ["MATH 493 63.7", "counting invariant vectors with the character", "dimension of V^G", "average of the character"]
+aliases: ["MATH 493 64.10", "counting invariant vectors with the character", "dimension of V^G", "average of the character"]
 tags: [group-theory, hub]
 ---
-![[§63 Invariant Vectors#^thm-63-7]]
+![[§64 Invariant Vectors#^thm-64-10]]
 
 ## Treated in
-- [[§63 Invariant Vectors#^thm-63-7|Theorem §63.7: Dimension of the Invariants]], in [[§63 Invariant Vectors]]
+- [[§64 Invariant Vectors#^thm-64-10|Theorem §64.10: Dimension of the Invariants]], in [[§64 Invariant Vectors]]
 
 ## Its proof uses
-- [[§63 Invariant Vectors#^prop-63-1|Proposition §63.1: The Trace of an Idempotent]]
-- [[§63 Invariant Vectors#^prop-63-3|Proposition §63.3: The Image of the Average Is the Invariants]]
-- [[§63 Invariant Vectors#^prop-63-4|Proposition §63.4: The Average Is Idempotent]]
+- [[§64 Invariant Vectors#^prop-64-4|Proposition §64.4: The Trace of an Idempotent]]
+- [[§64 Invariant Vectors#^prop-64-6|Proposition §64.6: The Image of the Average Is the Invariants]]
+- [[§64 Invariant Vectors#^prop-64-7|Proposition §64.7: The Average Is Idempotent]]
 
 ## Used in (Group Theory)
-- [[§63 Invariant Vectors#^cor-63-8|Corollary §63.8: Burnside's Lemma from the Trace Formula]]
+- [[§64 Invariant Vectors#^cor-64-11|Corollary §64.11: Burnside's Lemma from the Trace Formula]]
 
 ## Connections
 - TODO

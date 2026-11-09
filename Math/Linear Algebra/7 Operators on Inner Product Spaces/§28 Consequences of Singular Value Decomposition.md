@@ -53,7 +53,7 @@ tags: [linear-algebra]
 > $\|S-T\|$ is a distance on $\Lin(V,W)$; e.g. invertible operators come arbitrarily close to any $T$.
 
 > [!remark]- Connections
-> - Same properties for bounded maps between normed spaces, which make ℒ(X, Y) a normed space: [[§30 Boundedness and Continuity#^thm-30-6|556 Thm. §30.6]].
+> - Same properties for bounded maps between normed spaces, which make ℒ(X, Y) a normed space: [[§30 Boundedness and Continuity#^thm-30-8|556 Thm. §30.8]].
 
 > [!theorem] Theorem 7.88: Alternative formulas for ‖T‖
 > For $T\in\Lin(V,W)$:
