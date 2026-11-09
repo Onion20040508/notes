@@ -5,7 +5,7 @@ chapter: 10
 section: 72
 tags: [differentiable-manifolds, math591]
 ---
-← [[§71 The Exponential Map]] · ↑ [[· 10 Integral Curves and Flows]]
+← [[§71 The Exponential Map]] · ↑ [[· 10 Integral Curves and Flows]] · [[§73 Stokes' Theorem in Calculus III]] →
 
 *Stage: dynamics — Differentiating along a flow: on functions the Lie derivative is the field itself, on vector fields it is the bracket; commuting fields are those invariant under each other's flows.*
 
@@ -180,7 +180,7 @@ That the limit exists is not obvious; it is the content of the next lemma.
 
 ^ex-72-1
 
-The Lie derivative of a vector field turns out to be a known operation, the bracket. The proof uses a normal form for a vector field near a point where it does not vanish; its proof, by the flow, is postponed.
+The Lie derivative of a vector field turns out to be a known operation, the bracket. The proof uses a normal form for a vector field near a point where it does not vanish; its proof, by the flow, was postponed to Lecture 28 and is given after the lemma.
 
 > [!theorem] Lemma §72.5: Canonical Form Near a Regular Point
 > Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$ with $\mathbf{X}_p \neq 0$. There is a coordinate chart $(U, \varphi = (x^1, \ldots, x^m))$ with $p \in U$ such that
@@ -193,10 +193,60 @@ The Lie derivative of a vector field turns out to be a known operation, the brac
 
 ^lem-72-5
 
-> [!proof]+ Proof (to be filled)
-> Postponed in Lecture 27.
+> [!proof]+ Proof
+> *(Lecture 28, the last proof on vector fields in the course. Here $\varphi$ is the flow of $\mathbf{X}$, so the charts are called $\psi$ and $y$ along the way. Details marked are filled in.)* Start with any coordinates $\psi = (u^1, \ldots, u^m)$ at $p$, centred: $\psi(p) = 0$.
+>
+> *Step 1: a linear change of coordinates.* Find an invertible linear map $L : \mathbb{R}^m \to \mathbb{R}^m$ such that, for the new coordinates $(y^1, \ldots, y^m) = L(u^1, \ldots, u^m)$, i.e. $y^i = \sum_j a_{ij} u^j$,
+>
+> $$
+> \mathbf{X}_p = \frac{\partial}{\partial y^1}\Big|_p \qquad (\text{at } p \text{ only}).
+> $$
+>
+> This is possible because $\mathbf{X}_p \neq 0$: in the $u$-coordinates $\mathbf{X}_p$ is a nonzero vector of $\mathbb{R}^m$, and $L$ only has to send it to $e_1$; $L$ need not be a rotation, and may have to rescale.
+>
+> ![[m591-72-7.svg]]
+>
+> Let $V \subseteq M$ be the domain of $(y^1, \ldots, y^m)$, and introduce the hypersurface
+>
+> $$
+> S = \{ y^1 = 0 \} \subseteq V , \qquad \dim S = m - 1 ,
+> $$
+>
+> with coordinates $(y^2, \ldots, y^m)$. On $V$, $\mathbf{X}|_V = \sum_i f^i\, \partial/\partial y^i$ with $f^1(p) = 1$ and $f^i(p) = 0$ for $i = 2, \ldots, m$. Shrinking $V$, we may assume $f^1 \neq 0$ on $S$: then $\mathbf{X}$ is transverse to $S$ at every point of $S$. (The assumption is geometric, a field crossing $S$ everywhere; the argument below only uses $f^1(p) \neq 0$.)
+>
+> *Step 2: flow out $S$.* Flow out $S$ by the flow of $\mathbf{X}$: the integral curves through all the points of $S$ fill a neighbourhood of $p$. By a flow box at $p$ (Lemma [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]]), shrinking $S$ around $p$ (a step added in class after a student's question), there is $\varepsilon > 0$ such that
+>
+> $$
+> \theta : (-\varepsilon, \varepsilon) \times S \longrightarrow M, \qquad (t, q) \longmapsto \varphi_t(q)
+> $$
+>
+> is defined; it is smooth, as the restriction of the flow (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)).
+>
+> *Claim: $d\theta_{(0,p)} = \mathrm{Id}$,* in the coordinates $(t, y^2, \ldots, y^m)$ on $(-\varepsilon, \varepsilon) \times S$ and $(y^1, \ldots, y^m)$ on $V$. Since $\theta(0, q) = q$, the curves $t \mapsto \theta(0, y^2, \ldots, y^i + t, \ldots, y^m)$, $i = 2, \ldots, m$, are the coordinate curves of $S$, so in the $S$ directions $d\theta_{(0,p)}$ is the identity block. And $t \mapsto \theta(t, 0, \ldots, 0) = \varphi_t(p)$ is the integral curve through $p$, whose velocity at $t = 0$ is $\mathbf{X}_p = \partial/\partial y^1|_p$, by the choice of the $y$-coordinates. So $d\theta_{(0,p)}$ sends each coordinate vector to the coordinate vector of the same index. The dimensions match, $1 + (m - 1) = m$, so by the inverse function theorem (Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] in charts, as in the proof of Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], at the single point $(0, p)$), $\theta$ is a local diffeomorphism near $(0, p)$: there are a neighbourhood $U$ of $p$ and an inverse
+>
+> $$
+> \theta^{-1} : U \longrightarrow (-\varepsilon, \varepsilon) \times S
+> $$
+>
+> (onto an open neighbourhood of $(0, p)$, shrinking $\varepsilon$ and $S$ again).
+>
+> *Step 3: the coordinates.* Define
+>
+> $$
+> (x^1, \ldots, x^m) = (t, y^2, \ldots, y^m) \circ \theta^{-1} \qquad \text{on } U .
+> $$
+>
+> *(Filled in.)* This is a chart: a composite of the diffeomorphism $\theta^{-1}$ onto an open set and the coordinates $(t, y^2, \ldots, y^m)$, so a diffeomorphism of $U$ onto an open subset of $\mathbb{R}^m$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]). Geometrically: given $q \in U$, there is $(t, r) \in (-\varepsilon, \varepsilon) \times S$ with $q = \theta(t, r)$: the integral curve starting at $r \in S$ passes through $q$ at time $t$. So $x^1(q) = t$ is the time it takes to flow from $S$ to $q$, and $(x^2, \ldots, x^m)(q)$ are the $y$-coordinates of the point $r$ where the curve through $q$, traced back, meets $S$.
+>
+> *In these coordinates, $\mathbf{X} = \partial/\partial x^1$.* $\partial/\partial x^1|_q$ is the velocity of the curve that fixes all other coordinates and translates $x^1$ (Proposition [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]]). That curve is $s \mapsto \theta(t + s, r) = \varphi_{t+s}(r)$, which equals $\varphi_s(q)$ by the group law (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]]): the integral curve of $\mathbf{X}$ through $q$. Its velocity at $s = 0$ is $\mathbf{X}_q$. So the $x^1$-coordinate curves are exactly the integral curves of $\mathbf{X}$.
 
 ^pf-72-5
+
+*Uses:* [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]], [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]]
+
+![[m591-72-8.svg]]
+
+*(Figure after the board, redrawn from a computed field.)* The *flowout* of the transverse slice $S$, for the field $\mathbf{X} = \big(1 - 0.15 (y^2)^2\big)\, \partial/\partial y^1 + (0.5\, y^1 + 0.2\, y^2)\, \partial/\partial y^2$ on the plane, with $\mathbf{X}_p = \partial/\partial y^1|_p$ at $p = 0$. Left: the domain $(-\varepsilon, \varepsilon) \times S$ of $\theta$, with the lines $\{t\} \times S$ (grey) and $(-\varepsilon, \varepsilon) \times \{r\}$ (blue). Right: their images in $V$, the slices $\varphi_t(S)$ (grey, $t = \pm 0.5, \pm 1$) and the integral curves of $\mathbf{X}$ through points of $S$ (blue); the shaded region is $U = \theta\big((-\varepsilon, \varepsilon) \times S\big)$. Each point $q$ near $p$ is reached by exactly one integral curve from $S$, after a time $t$: here $q = \theta(t, r)$ with $t = 0.8$ (red). The chart $\theta^{-1}$ gives $q$ the coordinates $x^1(q) = t$, the time from $S$ to $q$, and $(x^2, \ldots, x^m)(q) = (y^2, \ldots, y^m)(r)$, the coordinates of the starting point. The construction reappears in classical mechanics, where $t$ is physical time. Lee proves the theorem with his flowout theorem (Theorem 9.20); the inverse function theorem above does the same job locally.
 
 ![[m591-72-3.svg]]
 *[[§72 Lie Derivatives#^lem-72-5|Lemma §72.5]] in a picture. Left: integral curves of $\mathbf{X}$ in $M$ near $p$ (continuing outside $U$), and the chart domain $U$. Right: in the chart $\varphi$, the same curves are the parallel lines on which $x^2, \ldots, x^m$ are constant, run at unit speed in $x^1$.*
@@ -543,5 +593,3 @@ The statement is local, so on a manifold it holds in any chart at $p$, with the 
 ^pf-ex-72-2
 
 *Uses:* [[§72 Lie Derivatives#^prop-72-12|§72.12]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]]
-
-\appendix

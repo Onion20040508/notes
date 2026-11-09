@@ -1,0 +1,14 @@
+\begin{tikzpicture}[scale=0.95]
+\draw[->, gray!60] (-0.3,0) -- (2.2,0) node[right, font=\scriptsize, text=black] {$u^1$};
+\draw[->, gray!60] (0,-0.3) -- (0,1.8) node[above, font=\scriptsize, text=black] {$u^2$};
+\draw[->, very thick, orange!85!black] (0,0) -- (1.4,1.1) node[above right, font=\scriptsize] {$\mathbf{X}_p$};
+\fill (0,0) circle (1.2pt) node[below left, font=\scriptsize] {$p$};
+\draw[->, thick] (2.6,0.8) -- node[above, font=\scriptsize] {$L$} (3.6,0.8);
+\begin{scope}[xshift=4.3cm]
+\draw[->, gray!60] (-0.3,0) -- (2.2,0) node[right, font=\scriptsize, text=black] {$y^1$};
+\draw[->, gray!60] (0,-0.3) -- (0,1.8) node[above, font=\scriptsize, text=black] {$y^2$};
+\draw[->, very thick, orange!85!black] (0,0) -- (1.0,0) node[below=2pt, font=\scriptsize] {$\mathbf{X}_p = e_1$};
+\fill (0,0) circle (1.2pt) node[below left, font=\scriptsize] {$p$};
+\node[font=\scriptsize, orange!70!black] at (1.2,1.2) {in the new coordinates};
+\end{scope}
+\end{tikzpicture}

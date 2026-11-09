@@ -1,0 +1,18 @@
+\begin{tikzpicture}[>=Stealth, scale=0.95]
+\fill[blue!12] plot coordinates {(0.000,0.000) (2.731,-0.342) (4.352,0.474) (1.621,0.815)} -- cycle;
+\draw[thick, blue!70!black] plot coordinates {(0.000,0.000) (2.731,-0.342) (4.352,0.474) (1.621,0.815)} -- cycle;
+\fill[orange!12, opacity=0.6] plot coordinates {(1.040,1.757) (3.771,1.415) (5.392,2.230) (2.661,2.572)} -- cycle;
+\draw[orange!70!black, thin] (0.000,0.000) -- (1.040,1.757);
+\draw[orange!70!black, thin] (2.731,-0.342) -- (3.771,1.415);
+\draw[orange!70!black, thin] (4.352,0.474) -- (5.392,2.230);
+\draw[orange!70!black, thin, dashed] (1.621,0.815) -- (2.661,2.572);
+\draw[orange!70!black, thin] plot coordinates {(1.040,1.757) (3.771,1.415) (5.392,2.230) (2.661,2.572)} -- cycle;
+\draw[->, very thick, orange!85!black] (0.000,0.000) -- (1.040,1.757) node[left, font=\scriptsize] {$\vec G$};
+\draw[->, very thick, blue!70!black] (0.000,0.000) -- (2.731,-0.342) node[below, font=\scriptsize] {$\vec r_s\, \Delta s$};
+\draw[->, very thick, blue!70!black] (0.000,0.000) -- (1.621,0.815) node[left, font=\scriptsize] {$\vec r_t\, \Delta t$};
+\draw[densely dashed, red!70!black, thick] (3.216,1.994) -- (3.267,0.358);
+\fill[red!70!black] (3.267,0.358) circle (1.1pt);
+\node[red!70!black, font=\scriptsize, anchor=west] at (3.322,1.176) {height $\vec G \cdot \mathbf{n}$};
+\draw[->, thick, red!70!black] (2.731,-0.342) -- (2.703,0.532) node[right, font=\scriptsize] {$\mathbf{n}$};
+\node[blue!70!black, font=\scriptsize, align=center] at (1.713,0.244) {area\\ $|\vec r_s \times \vec r_t|\, \Delta s\, \Delta t$};
+\end{tikzpicture}
