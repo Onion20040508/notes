@@ -5,7 +5,7 @@ chapter: 11
 section: 62
 tags: [group-theory, math493]
 ---
-← [[§61 Invariant Inner Products and Maschke over ℝ]] · ↑ [[· 11 Representations]] · [[§63 Invariant Vectors and Characters]] →
+← [[§61 Invariant Inner Products and Maschke over ℝ]] · ↑ [[· 11 Representations]] · [[§63 Invariant Vectors]] →
 
 *Source: Lecture (Fri Nov 6).*
 
@@ -141,7 +141,7 @@ For $r = 2$ this is Definition [[§60 Direct Sums and Maschke's Theorem#^def-60-
 
 > [!remark] Remark: A Payoff in Group Theory
 > Representation theory also proves theorems about groups. A first example: every finite group of order $p^a q^b$, with $p$ and $q$ prime, is solvable (Definition [[§48 Solvable Groups#^def-48-1|§48.1]]). Compare the groups of order $pq$ ([[§55 The Sylow Theorems|§55]]), which a problem set classifies as semidirect products of one cyclic group by another.
-> *(Not from class.)* The result is Burnside's $p^aq^b$ theorem, not to be confused with Burnside's Lemma (Theorem [[§30 Orbit–Stabilizer#^thm-30-7|§30.7]]). Its proof uses characters of representations ([[§63 Invariant Vectors and Characters|§63]]) to find a proper nontrivial normal subgroup $N$, and finishes with Extensions of Solvable Groups Are Solvable (Theorem [[§48 Solvable Groups#^thm-48-7|§48.7]], PS 9.1): $N$ and $G/N$ have orders of the same form, so they are solvable by induction on $|G|$.
+> *(Not from class.)* The result is Burnside's $p^aq^b$ theorem, not to be confused with Burnside's Lemma (Theorem [[§30 Orbit–Stabilizer#^thm-30-7|§30.7]]). Its proof uses characters of representations ([[§63 Invariant Vectors|§63]]) to find a proper nontrivial normal subgroup $N$, and finishes with Extensions of Solvable Groups Are Solvable (Theorem [[§48 Solvable Groups#^thm-48-7|§48.7]], PS 9.1): $N$ and $G/N$ have orders of the same form, so they are solvable by induction on $|G|$.
 >
 > *Source: lecture 11/6*
 

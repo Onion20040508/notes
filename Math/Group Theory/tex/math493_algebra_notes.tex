@@ -287,7 +287,7 @@ These notes follow the course, and the course studies groups through two familie
 \end{tikzpicture}
 \end{center}
 
-The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~9 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them; composition series make the atom analogy precise, since by the Jordan--H\"older theorem the simple pieces do not depend on the choice of series (\ref{sec:composition-series}). The same chapter then begins the Sylow theorems, a partial converse to Lagrange's theorem that supplies subgroups of the largest prime-power orders, and uses them to show that the only simple groups of order at most $100$ are the $\mathbb{Z}/p\mathbb{Z}$ and those of order $60$ (\ref{sec:small-simple-groups}). Chapter~10 turns to how a normal subgroup $N$ and a complement $S$ fit together: as a direct product when $S$ is also normal (\ref{sec:internal-direct-products}), and in general as a semidirect product $N \rtimes_\varphi S$, determined by the action $\varphi$ of $S$ on $N$ by conjugation (\ref{sec:semidirect-products}). Part~II then turns from actions on sets to actions on vector spaces: a representation is a homomorphism $G \to GL(V)$ (\ref{sec:representations}), and the permutation matrices of the symmetries thread are the first example. A subrepresentation puts all the matrices $\rho(g)$ in block triangular form, a complementary one in block diagonal form, and Maschke's theorem supplies the complement for finite groups when $|G| \neq 0$ in $k$ (\ref{sec:maschke}; over $\mathbb{R}$ by averaging an inner product, \ref{sec:invariant-inner-products}). Under the same hypotheses every finite-dimensional representation is a direct sum of simple ones (\ref{sec:simple-representations}), and representation theory becomes the study of the simple representations.
+The labels on the arrows are the bridges. The classification of subgroups of $\mathbb{Z}$ (\ref{sec:zoo}) is what makes $\mathbb{Z}/n\mathbb{Z}$ the model finite group, and the Classification of Cyclic Groups (\ref{sec:cyclic}) shows every cyclic group is one of these. On the symmetries side, $\sigma \mapsto M(\sigma)$ (\ref{sec:actions}) turns permutations into matrices, and the determinant then gives the sign (\ref{sec:sign}). The central bridge is Actions Are Homomorphisms to $S_X$ (\ref{sec:action-def}): every construction below it --- cosets and Lagrange (\ref{sec:lagrange}), orbit--stabilizer (\ref{sec:orbit-stabilizer}), conjugacy classes and the class equation (\ref{sec:conjugation-action}) --- is an action in disguise. Normal subgroups are where the two lower branches meet: they are the unions of conjugacy classes (\ref{sec:normal-sources}) and exactly the subgroups for which coset multiplication is well defined (\ref{sec:multiplying-cosets}), which is what makes $G/N$ a group (\ref{sec:quotient}). Finally, characters are constant on conjugacy classes and kill commutators, so they factor through the abelianization $G/[G,G]$ (\ref{sec:commutators}); the sign, met on the symmetries thread, is the first nontrivial example. Chapter~9 then turns from the atoms to how they are assembled: solvable groups are those built from abelian pieces (the quotients $G_j/G_{j-1}$ of a chain), and the derived series $D_k(G)$ tests for them; composition series make the atom analogy precise, since by the Jordan--H\"older theorem the simple pieces do not depend on the choice of series (\ref{sec:composition-series}). The same chapter then begins the Sylow theorems, a partial converse to Lagrange's theorem that supplies subgroups of the largest prime-power orders, and uses them to show that the only simple groups of order at most $100$ are the $\mathbb{Z}/p\mathbb{Z}$ and those of order $60$ (\ref{sec:small-simple-groups}). Chapter~10 turns to how a normal subgroup $N$ and a complement $S$ fit together: as a direct product when $S$ is also normal (\ref{sec:internal-direct-products}), and in general as a semidirect product $N \rtimes_\varphi S$, determined by the action $\varphi$ of $S$ on $N$ by conjugation (\ref{sec:semidirect-products}). Part~II then turns from actions on sets to actions on vector spaces: a representation is a homomorphism $G \to GL(V)$ (\ref{sec:representations}), and the permutation matrices of the symmetries thread are the first example. A subrepresentation puts all the matrices $\rho(g)$ in block triangular form, a complementary one in block diagonal form, and Maschke's theorem supplies the complement for finite groups when $|G| \neq 0$ in $k$ (\ref{sec:maschke}; over $\mathbb{R}$ by averaging an inner product, \ref{sec:invariant-inner-products}). Under the same hypotheses every finite-dimensional representation is a direct sum of simple ones (\ref{sec:simple-representations}), and representation theory becomes the study of the simple representations. Characters (\ref{sec:characters-of-representations}), $\chi_V(g) = \operatorname{Tr}\rho_V(g)$, are the main tool for finding the simple representations. A first use: the vectors fixed by all of $G$ split off by averaging, and their number is the average of the character (\ref{sec:invariants}).
 
 \chapter*{Conventions and Notation}
 \addcontentsline{toc}{chapter}{Conventions and Notation}
@@ -326,7 +326,10 @@ $U \oplus V$ & Internal direct sum of subspaces: $U \cap V = \{0\}$, $U + V = W$
 $U^\perp$, \ $P_U$ & Orthogonal complement of $U$; orthogonal projection onto $U$ (\ref{sec:invariant-inner-products}). \\
 $V_1 \oplus \cdots \oplus V_r$ & Direct sum of several subspaces: every $v$ is uniquely $v_1 + \cdots + v_r$, $v_i \in V_i$ (\ref{sec:simple-representations}). \\
 $M^\dagger = \bar M^T$ & Conjugate transpose (Definition~\ref{def:conjugate-transpose}); $M$ is Hermitian if $M = M^\dagger$, unitary if $M^\dagger M = I$ (\ref{sec:invariant-inner-products}). \\
+$V^G$, \ $\chi_V$ & Invariant vectors of a representation; its character $\chi_V(g) = \operatorname{Tr}\rho_V(g)$, not a character in the sense of \ref{sec:characters} unless $\dim V = 1$ (\ref{sec:invariants}, \ref{sec:characters-of-representations}). \\
+$\operatorname{Tr}$ & Trace of a matrix or of a linear map (\ref{sec:invariants}). \\
 $N \rtimes_\varphi S$, \ $S \ltimes_\varphi N$ & Semidirect product, $N$ normal, $S$ acting on $N$ via $\varphi: S \to \operatorname{Aut}(N)$ (\ref{sec:semidirect-products}). \\
+$\sigma_{(g, \lambda)}$, \ $\operatorname{Aff}(V)$ & The affine map $x \mapsto gx + \lambda$; the group of all affine maps of $V$, $\cong V \rtimes GL(V)$ (\ref{sub:affine-maps}). \\
 $HN$ & Product set $\{hn : h \in H,\ n \in N\}$ (\ref{sec:second-iso}). \\
 $X \sqcup Y$ & Disjoint union: $X \cup Y$ with $X \cap Y = \varnothing$ (\ref{sec:representatives}). \\
 $\hookrightarrow$, \ $\twoheadrightarrow$ & An injective map; a surjective map. \\
@@ -6084,6 +6087,61 @@ Take $N = G$. Then $Q = G/G$ is the trivial group, so every $\pi(G_j)$ is trivia
 \srcline{lecture 10/9}
 \end{exbox}
 
+\begin{thmbox}[{Extensions of Solvable Groups Are Solvable}]\label{thm:extension-solvable}
+Let $N \trianglelefteq G$, and suppose that $N$ and $G/N$ are solvable, with chains
+\[ \{e\} = N_0 \trianglelefteq N_1 \trianglelefteq \cdots \trianglelefteq N_a = N, \qquad \{e\} = H_0 \trianglelefteq H_1 \trianglelefteq \cdots \trianglelefteq H_b = G/N \]
+whose quotients $N_i/N_{i-1}$ and $H_j/H_{j-1}$ are abelian. Let $\pi: G \to G/N$ be the projection and $K_j = \pi^{-1}(H_j)$. Then
+\[ \{e\} = N_0 \trianglelefteq \cdots \trianglelefteq N_a = N = K_0 \trianglelefteq K_1 \trianglelefteq \cdots \trianglelefteq K_b = G \]
+is a chain with abelian quotients, and $K_j/K_{j-1} \cong H_j/H_{j-1}$. In particular $G$ is solvable.
+\srcline{PS 9.1}
+\end{thmbox}
+
+\begin{proof}
+\textit{Idea:} Pull the chain of $G/N$ back to $G$. It starts at $N$, where the chain of $N$ can be attached, and by the Third Isomorphism Theorem pulling back does not change the quotients.\par
+\textit{(Problem Set 9, Problem 9.1, as submitted; $\{1\}$ is written $\{e\}$.)} For $j = 0, \ldots, b$ let $K_j = \pi^{-1}(H_j)$. By the proposition on preimages of subgroups of $G/N$ (Proposition~\ref{prop:preimages-subgroups-quotient}), each $K_j$ is a subgroup of $G$ containing $N$. Since $\pi(g) = gN = N$ if and only if $g \in N$, we have $K_0 = \pi^{-1}(\{e\}) = N$, and $K_b = \pi^{-1}(G/N) = G$. Since $H_{j-1} \subseteq H_j$, also $K_{j-1} \subseteq K_j$.
+
+\textbf{$K_{j-1} \trianglelefteq K_j$.} Fix $j \in \{1, \ldots, b\}$. Since $N \trianglelefteq G$ and $N \subseteq K_j$, $N \trianglelefteq K_j$. Since $\pi$ is surjective,
+\[ K_j/N = \{kN : k \in K_j\} = \pi(K_j) = H_j, \]
+so the restriction $\pi|_{K_j}: K_j \to H_j$ is the quotient map $K_j \to K_j/N$. Since $H_{j-1} \trianglelefteq H_j$, the correspondence theorem for $N \trianglelefteq K_j$ (Theorem~\ref{thm:correspondence}) shows that
+\[ (\pi|_{K_j})^{-1}(H_{j-1}) = \pi^{-1}(H_{j-1}) \cap K_j = K_{j-1} \]
+is normal in $K_j$.
+
+\textbf{The quotients $K_j/K_{j-1}$ are abelian.} As above, $K_{j-1}/N = \pi(K_{j-1}) = H_{j-1}$. By the third isomorphism theorem (Theorem~\ref{thm:third-isomorphism-theorem}, in the group $K_j$),
+\[ K_j/K_{j-1} \cong (K_j/N)\big/(K_{j-1}/N) = H_j/H_{j-1}, \]
+which is abelian.
+
+\textbf{The chain for $G$.} Concatenating the chain of $N$ with the chain $\{K_j\}$ at $N_a = N = K_0$ gives
+\[ \{e\} = N_0 \trianglelefteq N_1 \trianglelefteq \cdots \trianglelefteq N_a = N = K_0 \trianglelefteq K_1 \trianglelefteq \cdots \trianglelefteq K_b = G. \]
+Its successive quotients are the $N_i/N_{i-1}$, abelian by hypothesis, and the $K_j/K_{j-1} \cong H_j/H_{j-1}$, abelian by the above. Setting $G_k = N_k$ for $0 \leq k \leq a$ and $G_{a+j} = K_j$ for $0 \leq j \leq b$, we obtain a chain $\{e\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_{a+b} = G$ with abelian quotients, so $G$ is solvable.
+\end{proof}
+
+\begin{corbox}[{Solvability Is Decided by $N$ and $G/N$}]\label{cor:solvable-iff-normal-quotient}
+Let $N \trianglelefteq G$. Then $G$ is solvable if and only if $N$ and $G/N$ are solvable.
+\srcline{not from class; PS 9.1 with WS 9.2--9.3}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from class; filled in.)} If $G$ is solvable, then $N$ is solvable as a subgroup of $G$ (Subgroups of Solvable Groups Are Solvable, Proposition~\ref{prop:subgroups-solvable}), and $G/N$ is solvable as the image of $G$ under the surjective projection $G \to G/N$ (Quotients of Solvable Groups Are Solvable, Proposition~\ref{prop:quotients-solvable}). Conversely, if $N$ and $G/N$ are solvable, then $G$ is solvable by Theorem~\ref{thm:extension-solvable}.
+\end{proof}
+
+\begin{exbox}[{$S_4$ from $K$ and $S_3$}]\label{ex:s4-solvable-extension}
+\textit{(Not from class.)} Theorem~\ref{thm:extension-solvable} rebuilds the chain of $S_4$ from two smaller pieces. The Pair-Partition Homomorphism $\alpha: S_4 \to S_3$ (Proposition~\ref{prop:pair-partition-homomorphism-s4-to-s3}) is surjective with kernel $K = \{e, (1\,2)(3\,4), (1\,3)(2\,4), (1\,4)(2\,3)\}$, so $S_4/K \cong S_3$ by the First Isomorphism Theorem (Theorem~\ref{thm:first-isomorphism-theorem}). $K$ is abelian, hence solvable via $\{e\} \trianglelefteq K$ (Proposition~\ref{prop:abelian-groups-solvable}), and $S_3$ is solvable via $\{e\} \trianglelefteq A_3 \trianglelefteq S_3$ (Proposition~\ref{prop:s3-s4-solvable}). So $S_4$ is solvable. The chain the theorem produces consists of $\{e\} \trianglelefteq K$ followed by the preimages of $\{e\}$, $A_3$ and $S_3$ under $\alpha$. These are $K$, a subgroup $\alpha^{-1}(A_3)$ of index $[S_3 : A_3] = 2$ in $S_4$ (Indices Along the Correspondence, Corollary~\ref{cor:correspondence-preserves-indices}), and $S_4$. A subgroup of index $2$ in $S_4$ is $A_4$ (The Subgroup of Index $2$ in $S_m$, Lemma~\ref{lem:index-two-sm}), so the chain is
+\[ \{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4, \]
+the chain of Proposition~\ref{prop:s3-s4-solvable}, with quotients $K$, $A_4/K \cong A_3 \cong \mathbb{Z}/3\mathbb{Z}$ and $S_4/A_4 \cong S_3/A_3 \cong \mathbb{Z}/2\mathbb{Z}$.
+\end{exbox}
+
+\begin{corbox}[{$p$-Groups Are Solvable}]\label{cor:p-groups-solvable}
+Let $p$ be prime and $|G| = p^k$ with $k \geq 0$. Then $G$ is solvable.
+\srcline{not from class}
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} The center is a nontrivial abelian normal subgroup, and $G/Z(G)$ is a smaller $p$-group.\par
+\textit{(Not from class; filled in.)} Induction on $k$. If $k = 0$, then $G = \{e\}$ is abelian, hence solvable (Proposition~\ref{prop:abelian-groups-solvable}). Let $k \geq 1$, and assume that every group of order $p^j$ with $j < k$ is solvable. The center $Z(G)$ (Definition~\ref{def:center-z-g}) is a subgroup (Proposition~\ref{prop:center-subgroup}). It is normal, since $gzg^{-1} = zgg^{-1} = z$ for $z \in Z(G)$ and $g \in G$, and it is abelian, since its elements commute with every element of $G$. By Groups of Prime-Power Order Have Nontrivial Center (Theorem~\ref{thm:groups-prime-power-order-have-nontrivial-center}), $Z(G) \neq \{e\}$. By Lagrange's theorem (Theorem~\ref{thm:lagrange}), $|Z(G)|$ divides $p^k$, so $|Z(G)| = p^i$ with $1 \leq i \leq k$, and
+\[ |G/Z(G)| = \frac{|G|}{|Z(G)|} = p^{k-i}, \qquad k - i < k. \]
+So $G/Z(G)$ is solvable by the induction hypothesis, and $Z(G)$ is solvable since it is abelian (Proposition~\ref{prop:abelian-groups-solvable}). By Theorem~\ref{thm:extension-solvable}, $G$ is solvable.
+\end{proof}
+
 \section{The Derived Series}\label{sec:derived-series}
 
 \textit{Reference: not covered in the Pinter chapters used so far.}
@@ -8638,6 +8696,257 @@ Conventions differ on the order: $N \rtimes S$ and $S \ltimes N$ mean the same g
 \end{rembox}
 
 
+\subsection{Groups of Affine Maps}\label{sub:affine-maps}
+
+\textit{Source: Problem Set 9, Problem 9.5 (submitted). The examples after the proposition are not from class.}
+
+Semidirect products appear concretely as groups of affine maps $x \mapsto gx + \lambda$ of a vector space: the translations form the normal subgroup, and the linear parts act on them.
+
+\begin{propbox}[{Groups of Affine Maps Are Semidirect Products}]\label{prop:affine-semidirect}
+Let $V$ be a vector space over a field $k$, let $G$ be a subgroup of $GL(V)$, and let $L \subseteq V$ be a subgroup of the additive group of $V$ with $gL = L$ for each $g \in G$. For $g \in G$ and $\lambda \in L$ let $\sigma_{(g, \lambda)}: V \to V$, $\sigma_{(g, \lambda)}(x) = gx + \lambda$, and let $\Gamma = \{\sigma_{(g, \lambda)} : g \in G,\ \lambda \in L\}$.
+\begin{enumerate}
+    \item $\Gamma$ is a group under composition, and
+    \[ \sigma_{(g_1, \lambda_1)} \circ \sigma_{(g_2, \lambda_2)} = \sigma_{(g_1 g_2,\ g_1\lambda_2 + \lambda_1)}. \]
+    \item $\varphi(g)(\lambda) = g\lambda$ defines a homomorphism $\varphi: G \to \operatorname{Aut}(L)$, and $\Psi(\lambda, g) = \sigma_{(g, \lambda)}$ is an isomorphism $L \rtimes_\varphi G \to \Gamma$ (Definition~\ref{def:external-semidirect-product}). So $\Gamma \cong L \rtimes G$, where $G$ acts on $L$ through its action on $V$.
+\end{enumerate}
+\srcline{PS 9.5}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} Composing two affine maps multiplies the linear parts and adds the first linear part applied to the second translation, which is exactly the multiplication rule of $L \rtimes G$.\par
+\textit{(Problem Set 9, Problem 9.5, as submitted.)} We use throughout that $gL = L$ for every $g \in G$.
+
+\textbf{(1)} \emph{Closure.} Let $g_1, g_2 \in G$ and $\lambda_1, \lambda_2 \in L$. For $x \in V$, by linearity of $g_1$,
+\[ \sigma_{(g_1, \lambda_1)} \circ \sigma_{(g_2, \lambda_2)}(x) = g_1(g_2 x + \lambda_2) + \lambda_1 = g_1 g_2\, x + (g_1\lambda_2 + \lambda_1). \]
+Here $g_1 g_2 \in G$ since $G$ is a group, $g_1 \lambda_2 \in g_1 L = L$, and $g_1\lambda_2 + \lambda_1 \in L$ since $L$ is closed under addition. Hence
+\[ \sigma_{(g_1, \lambda_1)} \circ \sigma_{(g_2, \lambda_2)} = \sigma_{(g_1 g_2,\ g_1\lambda_2 + \lambda_1)} \in \Gamma. \tag{$\dagger$} \]
+\emph{Identity.} Since $I \in G$ and $0 \in L$, $\sigma_{(I, 0)} \in \Gamma$, and $\sigma_{(I, 0)}(x) = x$ for all $x \in V$, so $\sigma_{(I, 0)} = \mathrm{id}_V$.
+
+\emph{Inverses.} Let $g \in G$ and $\lambda \in L$. Then $g^{-1} \in G$, $g^{-1}\lambda \in g^{-1}L = L$, and $-g^{-1}\lambda \in L$ since $L$ is a subgroup; so $\sigma_{(g^{-1}, -g^{-1}\lambda)} \in \Gamma$. By $(\dagger)$,
+\begin{align*}
+\sigma_{(g^{-1}, -g^{-1}\lambda)} \circ \sigma_{(g, \lambda)} &= \sigma_{(g^{-1}g,\ g^{-1}\lambda - g^{-1}\lambda)} = \sigma_{(I, 0)}, \\
+\sigma_{(g, \lambda)} \circ \sigma_{(g^{-1}, -g^{-1}\lambda)} &= \sigma_{(gg^{-1},\ -gg^{-1}\lambda + \lambda)} = \sigma_{(I, 0)}.
+\end{align*}
+Hence $\sigma_{(g^{-1}, -g^{-1}\lambda)}$ is an inverse of $\sigma_{(g, \lambda)}$ in $\Gamma$.
+
+\emph{Associativity.} Composition of functions is associative.
+
+Hence $\Gamma$ is a group under composition.
+
+\textbf{(2)} \emph{The action.} Define $\varphi: G \to \operatorname{Aut}(L)$ by
+\[ \varphi(g)(\lambda) = g\lambda \qquad (g \in G,\ \lambda \in L). \]
+For $g \in G$: since $gL = L$, $\varphi(g)$ maps $L$ onto $L$; it is injective since $g$ is invertible; and $g(\lambda + \mu) = g\lambda + g\mu$ by linearity of $g$. Hence $\varphi(g)$ is an automorphism of the additive group $L$. For $g_1, g_2 \in G$ and $\lambda \in L$,
+\[ \varphi(g_1 g_2)(\lambda) = g_1(g_2\lambda) = \varphi(g_1)\big(\varphi(g_2)(\lambda)\big), \]
+so $\varphi$ is a group homomorphism. Thus $G$ acts on $L$ by $g \cdot \lambda = g\lambda$, and the external semidirect product $L \rtimes_\varphi G$ is the set of pairs $(\lambda, g)$ with $\lambda \in L$, $g \in G$, and multiplication
+\[ (\lambda_1, g_1)(\lambda_2, g_2) = \big(\lambda_1 + \varphi(g_1)(\lambda_2),\ g_1 g_2\big) = \big(\lambda_1 + g_1\lambda_2,\ g_1 g_2\big). \]
+\emph{The isomorphism.} Define
+\[ \Psi: L \rtimes_\varphi G \to \Gamma, \qquad \Psi(\lambda, g) = \sigma_{(g, \lambda)}. \]
+By $(\dagger)$,
+\[ \Psi(\lambda_1, g_1) \circ \Psi(\lambda_2, g_2) = \sigma_{(g_1, \lambda_1)} \circ \sigma_{(g_2, \lambda_2)} = \sigma_{(g_1 g_2,\ \lambda_1 + g_1\lambda_2)} = \Psi\big((\lambda_1, g_1)(\lambda_2, g_2)\big), \]
+so $\Psi$ is a homomorphism. It is surjective by the definition of $\Gamma$. For injectivity, suppose $\sigma_{(g, \lambda)} = \sigma_{(g', \lambda')}$. Evaluating at $x = 0$ gives $\lambda = \lambda'$, and then $gx = g'x$ for all $x \in V$, so $g = g'$. Hence $\Psi$ is an isomorphism, and
+\[ \Gamma \cong L \rtimes_\varphi G, \]
+where $G$ acts on $L$ through its action on $V$: $g \cdot \lambda = g\lambda$.
+\end{proof}
+
+The injectivity step shows that an element of $\Gamma$ determines its pair: $\lambda = \sigma_{(g, \lambda)}(0)$, and then $g$. So $g$ is well defined as the \emph{linear part} of $\sigma_{(g, \lambda)}$, and $\lambda$ as its \emph{translation part}.
+
+\begin{propbox}[{Translations Form the Normal Subgroup}]\label{prop:affine-translations-normal}
+In the setting of Proposition~\ref{prop:affine-semidirect}, let $T = \{\sigma_{(I, \lambda)} : \lambda \in L\}$, the translations by elements of $L$, and $G_0 = \{\sigma_{(g, 0)} : g \in G\}$, the elements of $\Gamma$ fixing $0$.
+\begin{enumerate}
+    \item The linear part $\ell: \Gamma \to G$, $\ell(\sigma_{(g, \lambda)}) = g$, is a surjective homomorphism with kernel $T$. So $T \trianglelefteq \Gamma$ and $\Gamma/T \cong G$.
+    \item Conjugating a translation by $\sigma_{(g, \lambda)}$ applies the linear part to the translation vector:
+    \[ \sigma_{(g, \lambda)} \circ \sigma_{(I, \mu)} \circ \sigma_{(g, \lambda)}^{-1} = \sigma_{(I, g\mu)}. \]
+    \item $\Gamma$ is the internal semidirect product of $T$ and $G_0$ (Definition~\ref{def:internal-semidirect-product}).
+\end{enumerate}
+\srcline{not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} Everything follows from the composition rule $(\dagger)$ in the proof of Proposition~\ref{prop:affine-semidirect}.\par
+\textit{(Not from class; filled in.)} \textbf{(1)} $\ell$ is well defined by the remark before the proposition. By the composition rule of Proposition~\ref{prop:affine-semidirect}(1), $\ell(\sigma_{(g_1, \lambda_1)} \circ \sigma_{(g_2, \lambda_2)}) = g_1g_2 = \ell(\sigma_{(g_1, \lambda_1)})\,\ell(\sigma_{(g_2, \lambda_2)})$, so $\ell$ is a homomorphism. It is surjective, since $\ell(\sigma_{(g, 0)}) = g$. Its kernel consists of the $\sigma_{(g, \lambda)}$ with $g = I$, which is $T$. So $T \trianglelefteq \Gamma$, as a kernel, and $\Gamma/T \cong G$ by the First Isomorphism Theorem (Theorem~\ref{thm:first-isomorphism-theorem}).
+
+\textbf{(2)} By the proof of Proposition~\ref{prop:affine-semidirect}(1), $\sigma_{(g, \lambda)}^{-1} = \sigma_{(g^{-1}, -g^{-1}\lambda)}$. Applying the composition rule twice,
+\[ \sigma_{(I, \mu)} \circ \sigma_{(g^{-1}, -g^{-1}\lambda)} = \sigma_{(g^{-1},\ -g^{-1}\lambda + \mu)}, \qquad \sigma_{(g, \lambda)} \circ \sigma_{(g^{-1},\ -g^{-1}\lambda + \mu)} = \sigma_{(gg^{-1},\ g(-g^{-1}\lambda + \mu) + \lambda)} = \sigma_{(I, g\mu)}. \]
+\textbf{(3)} $T$ is normal by (1). $G_0$ is a subgroup: $\sigma_{(I, 0)} \in G_0$, $\sigma_{(g_1, 0)} \circ \sigma_{(g_2, 0)} = \sigma_{(g_1g_2, 0)}$ by the composition rule, and $\sigma_{(g, 0)}^{-1} = \sigma_{(g^{-1}, 0)}$ by the formula for inverses in (2). If $\sigma_{(I, \lambda)} = \sigma_{(g, 0)}$, then $\lambda = 0$ and $g = I$ by the remark before the proposition, so $T \cap G_0 = \{\mathrm{id}_V\}$. Finally, by the composition rule, every element of $\Gamma$ is a product
+\[ \sigma_{(g, \lambda)} = \sigma_{(I, \lambda)} \circ \sigma_{(g, 0)} \in TG_0. \qedhere \]
+\end{proof}
+
+By (2), the conjugation action of $G_0$ on $T$ (Proposition~\ref{prop:semidirect-action}) is $\sigma_{(I, \mu)} \mapsto \sigma_{(I, g\mu)}$, which is the action $\varphi$ of Proposition~\ref{prop:affine-semidirect} under $\lambda \mapsto \sigma_{(I, \lambda)}$. So the internal description (3) and the external one agree, as Internal and External Semidirect Products Agree (Theorem~\ref{thm:internal-external-semidirect}) predicts.
+
+\begin{exbox}[{The Affine Group}]\label{ex:affine-group}
+\textit{(Not from class.)} Take $L = V$ and $G = GL(V)$; every invertible linear map maps $V$ onto $V$. Then $\Gamma$ is the group $\operatorname{Aff}(V)$ of all maps $x \mapsto gx + \lambda$ with $g \in GL(V)$ and $\lambda \in V$, and Proposition~\ref{prop:affine-semidirect} gives
+\[ \operatorname{Aff}(V) \cong V \rtimes GL(V). \]
+For $V = k$ these are the maps $x \mapsto ax + b$ with $a \in k^\times$ and $b \in k$, so $\operatorname{Aff}(k) \cong k \rtimes k^\times$, with $k^\times$ acting on the additive group $k$ by multiplication. For $k = \mathbb{F}_p$ this group has $p(p-1)$ elements. For $p = 3$ it has $6$ elements and permutes the three elements of $\mathbb{F}_3$. Only the identity map fixes all three: $ax + b = x$ at $x = 0$ gives $b = 0$, and then at $x = 1$ gives $a = 1$. So the permutation homomorphism $\operatorname{Aff}(\mathbb{F}_3) \to S_{\mathbb{F}_3} \cong S_3$ is injective between groups of order $6$, hence an isomorphism:
+\[ S_3 \cong \mathbb{F}_3 \rtimes \mathbb{F}_3^\times = \mathbb{Z}/3\mathbb{Z} \rtimes \{\pm 1\}, \]
+with $-1$ acting by $x \mapsto -x$, as in Example~\ref{ex:s3-external-semidirect}.
+\end{exbox}
+
+\begin{exbox}[{The Symmetries of $\mathbb{Z}$ in $\mathbb{R}$}]\label{ex:affine-infinite-dihedral}
+\textit{(Not from class.)} Take $V = \mathbb{R}$, $G = \{\pm 1\} \subseteq GL_1(\mathbb{R})$ and $L = \mathbb{Z}$, so that $\pm\mathbb{Z} = \mathbb{Z}$. Then $\Gamma$ consists of the translations $x \mapsto x + n$ and the maps $x \mapsto -x + n$, $n \in \mathbb{Z}$. The map $x \mapsto -x + n$ is the reflection of $\mathbb{R}$ in the point $n/2$, since it fixes $n/2$ and sends $n/2 + t$ to $n/2 - t$. By Proposition~\ref{prop:affine-semidirect}, $\Gamma \cong \mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$, with the generator of $\mathbb{Z}/2\mathbb{Z}$ acting by $n \mapsto -n$. This group is not abelian. By Proposition~\ref{prop:affine-translations-normal}(2), conjugating the translation $t(x) = x + 1$ by the reflection $s(x) = -x$ gives $sts^{-1} = t^{-1}$, the translation by $-1$. These are the symmetries of the integer points of the line, the infinite analogue of the symmetries of a regular polygon.
+\end{exbox}
+
+\begin{exbox}[{A Wallpaper Group with Rotations by $120^\circ$}]\label{ex:affine-wallpaper-p3}
+\textit{(Not from class; the problem set illustrates the case with a tiling by lizards.)} Let $V = \mathbb{R}^2$, let $r$ be the rotation by $120^\circ$ about $0$, $G = \{I, r, r^2\} \cong \mathbb{Z}/3\mathbb{Z}$, and let
+\[ L = \mathbb{Z}\omega_1 + \mathbb{Z}\omega_2, \qquad \omega_1 = (1, 0), \quad \omega_2 = \big(\tfrac12, \tfrac{\sqrt3}{2}\big), \]
+the triangular lattice. Then $r\omega_1 = (-\frac12, \frac{\sqrt3}{2}) = \omega_2 - \omega_1$ and $r\omega_2 = (-1, 0) = -\omega_1$, so $rL \subseteq L$. Hence also $r^2L \subseteq rL \subseteq L$, and $L = r^3L = r(r^2L) \subseteq rL$; so $gL = L$ for every $g \in G$. By Proposition~\ref{prop:affine-semidirect}, $\Gamma \cong L \rtimes G \cong \mathbb{Z}^2 \rtimes \mathbb{Z}/3\mathbb{Z}$. It is the symmetry group of a pattern that has rotations by $120^\circ$ but no reflections, such as the figure below. In the classification of the seventeen wallpaper groups it is called $p3$.
+
+$\Gamma$ contains rotations about other points than $0$. Let $\lambda \in L$. Since $r$ has no nonzero fixed vector, $I - r$ is invertible, and with $c = (I - r)^{-1}\lambda$,
+\[ \sigma_{(r, \lambda)}(x) - c = rx + (I - r)c - c = r(x - c). \]
+So $\sigma_{(r, \lambda)}$ is the rotation by $120^\circ$ about $c$. These centres are the $x = a\omega_1 + b\omega_2$ ($a, b \in \mathbb{R}$) with $(I - r)x \in L$. Since $(I - r)\omega_1 = 2\omega_1 - \omega_2$ and $(I - r)\omega_2 = \omega_1 + \omega_2$,
+\[ (I - r)x = (2a + b)\,\omega_1 + (b - a)\,\omega_2, \]
+which lies in $L$ if and only if $2a + b$ and $b - a$ are integers. Then $3a = (2a + b) - (b - a) \in \mathbb{Z}$ and $b \in a + \mathbb{Z}$. So the centres of rotation are the points of
+\[ L, \qquad c_1 + L, \qquad 2c_1 + L, \qquad c_1 = \tfrac13(\omega_1 + \omega_2): \]
+the lattice points and the centres of the two kinds of triangles of the lattice, those pointing up and those pointing down.
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\begin{scope}
+\clip (-0.542,-0.542) rectangle (4.728,3.022);
+\draw[black!25, thin] (-0.775,1.342) -- (0.775,1.342);
+\draw[black!25, thin] (-0.775,1.342) -- (0.000,2.685);
+\draw[black!25, thin] (-0.775,1.342) -- (-1.550,2.685);
+\draw[black!25, thin] (0.000,2.685) -- (1.550,2.685);
+\draw[black!25, thin] (0.000,2.685) -- (0.775,4.027);
+\draw[black!25, thin] (0.000,2.685) -- (-0.775,4.027);
+\draw[black!25, thin] (0.000,0.000) -- (1.550,0.000);
+\draw[black!25, thin] (0.000,0.000) -- (0.775,1.342);
+\draw[black!25, thin] (0.000,0.000) -- (-0.775,1.342);
+\draw[black!25, thin] (0.775,1.342) -- (2.325,1.342);
+\draw[black!25, thin] (0.775,1.342) -- (1.550,2.685);
+\draw[black!25, thin] (0.775,1.342) -- (0.000,2.685);
+\draw[black!25, thin] (1.550,2.685) -- (3.100,2.685);
+\draw[black!25, thin] (1.550,2.685) -- (2.325,4.027);
+\draw[black!25, thin] (1.550,2.685) -- (0.775,4.027);
+\draw[black!25, thin] (1.550,0.000) -- (3.100,0.000);
+\draw[black!25, thin] (1.550,0.000) -- (2.325,1.342);
+\draw[black!25, thin] (1.550,0.000) -- (0.775,1.342);
+\draw[black!25, thin] (2.325,1.342) -- (3.875,1.342);
+\draw[black!25, thin] (2.325,1.342) -- (3.100,2.685);
+\draw[black!25, thin] (2.325,1.342) -- (1.550,2.685);
+\draw[black!25, thin] (3.100,2.685) -- (4.650,2.685);
+\draw[black!25, thin] (3.100,2.685) -- (3.875,4.027);
+\draw[black!25, thin] (3.100,2.685) -- (2.325,4.027);
+\draw[black!25, thin] (3.100,0.000) -- (4.650,0.000);
+\draw[black!25, thin] (3.100,0.000) -- (3.875,1.342);
+\draw[black!25, thin] (3.100,0.000) -- (2.325,1.342);
+\draw[black!25, thin] (3.875,1.342) -- (5.425,1.342);
+\draw[black!25, thin] (3.875,1.342) -- (4.650,2.685);
+\draw[black!25, thin] (3.875,1.342) -- (3.100,2.685);
+\draw[black!25, thin] (4.650,2.685) -- (6.200,2.685);
+\draw[black!25, thin] (4.650,2.685) -- (5.425,4.027);
+\draw[black!25, thin] (4.650,2.685) -- (3.875,4.027);
+\draw[black!25, thin] (4.650,0.000) -- (6.200,0.000);
+\draw[black!25, thin] (4.650,0.000) -- (5.425,1.342);
+\draw[black!25, thin] (4.650,0.000) -- (3.875,1.342);
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (-0.620,1.389) -- (-0.310,1.389) -- (-0.248,1.497) -- (-0.403,1.497) -- (-0.356,1.637) -- (-0.511,1.528) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (-0.893,1.453) -- (-1.048,1.722) -- (-1.173,1.721) -- (-1.095,1.587) -- (-1.239,1.558) -- (-1.068,1.478) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (-0.812,1.185) -- (-0.967,0.916) -- (-0.904,0.808) -- (-0.827,0.943) -- (-0.729,0.833) -- (-0.746,1.021) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (0.155,2.731) -- (0.465,2.731) -- (0.527,2.840) -- (0.372,2.840) -- (0.419,2.979) -- (0.264,2.871) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (-0.118,2.796) -- (-0.273,3.064) -- (-0.398,3.064) -- (-0.320,2.929) -- (-0.464,2.900) -- (-0.293,2.820) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (-0.037,2.527) -- (-0.192,2.259) -- (-0.129,2.151) -- (-0.052,2.285) -- (0.046,2.175) -- (0.029,2.363) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (0.155,0.046) -- (0.465,0.046) -- (0.527,0.155) -- (0.372,0.155) -- (0.419,0.295) -- (0.264,0.186) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (-0.118,0.111) -- (-0.273,0.379) -- (-0.398,0.379) -- (-0.320,0.245) -- (-0.464,0.215) -- (-0.293,0.135) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (-0.037,-0.157) -- (-0.192,-0.426) -- (-0.129,-0.534) -- (-0.052,-0.400) -- (0.046,-0.510) -- (0.029,-0.321) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (0.930,1.389) -- (1.240,1.389) -- (1.302,1.497) -- (1.147,1.497) -- (1.194,1.637) -- (1.039,1.528) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (0.657,1.453) -- (0.502,1.722) -- (0.377,1.721) -- (0.455,1.587) -- (0.311,1.558) -- (0.482,1.478) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (0.738,1.185) -- (0.583,0.916) -- (0.646,0.808) -- (0.723,0.943) -- (0.821,0.833) -- (0.804,1.021) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (1.705,2.731) -- (2.015,2.731) -- (2.077,2.840) -- (1.922,2.840) -- (1.969,2.979) -- (1.813,2.871) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (1.432,2.796) -- (1.277,3.064) -- (1.152,3.064) -- (1.230,2.929) -- (1.086,2.900) -- (1.257,2.820) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (1.513,2.527) -- (1.358,2.259) -- (1.421,2.151) -- (1.498,2.285) -- (1.596,2.175) -- (1.579,2.363) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (1.705,0.046) -- (2.015,0.046) -- (2.077,0.155) -- (1.922,0.155) -- (1.969,0.295) -- (1.813,0.186) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (1.432,0.111) -- (1.277,0.379) -- (1.152,0.379) -- (1.230,0.245) -- (1.086,0.215) -- (1.257,0.135) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (1.513,-0.157) -- (1.358,-0.426) -- (1.421,-0.534) -- (1.498,-0.400) -- (1.596,-0.510) -- (1.579,-0.321) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (2.480,1.389) -- (2.790,1.389) -- (2.852,1.497) -- (2.697,1.497) -- (2.744,1.637) -- (2.588,1.528) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (2.207,1.453) -- (2.052,1.722) -- (1.927,1.721) -- (2.005,1.587) -- (1.861,1.558) -- (2.032,1.478) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (2.288,1.185) -- (2.133,0.916) -- (2.196,0.808) -- (2.273,0.943) -- (2.371,0.833) -- (2.354,1.021) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (3.255,2.731) -- (3.565,2.731) -- (3.627,2.840) -- (3.472,2.840) -- (3.518,2.979) -- (3.364,2.871) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (2.982,2.796) -- (2.827,3.064) -- (2.702,3.064) -- (2.780,2.929) -- (2.636,2.900) -- (2.807,2.820) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (3.063,2.527) -- (2.908,2.259) -- (2.971,2.151) -- (3.048,2.285) -- (3.146,2.175) -- (3.129,2.363) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (3.255,0.046) -- (3.565,0.046) -- (3.627,0.155) -- (3.472,0.155) -- (3.518,0.295) -- (3.364,0.186) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (2.982,0.111) -- (2.827,0.379) -- (2.702,0.379) -- (2.780,0.245) -- (2.636,0.215) -- (2.807,0.135) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (3.063,-0.157) -- (2.908,-0.426) -- (2.971,-0.534) -- (3.048,-0.400) -- (3.146,-0.510) -- (3.129,-0.321) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (4.030,1.389) -- (4.340,1.389) -- (4.402,1.497) -- (4.247,1.497) -- (4.293,1.637) -- (4.138,1.528) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (3.757,1.453) -- (3.602,1.722) -- (3.477,1.721) -- (3.555,1.587) -- (3.411,1.558) -- (3.582,1.478) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (3.838,1.185) -- (3.683,0.916) -- (3.746,0.808) -- (3.823,0.943) -- (3.921,0.833) -- (3.904,1.021) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (4.805,2.731) -- (5.115,2.731) -- (5.177,2.840) -- (5.022,2.840) -- (5.069,2.979) -- (4.913,2.871) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (4.532,2.796) -- (4.377,3.064) -- (4.252,3.064) -- (4.330,2.929) -- (4.186,2.900) -- (4.357,2.820) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (4.613,2.527) -- (4.458,2.259) -- (4.521,2.151) -- (4.598,2.285) -- (4.696,2.175) -- (4.679,2.363) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (4.805,0.046) -- (5.115,0.046) -- (5.177,0.155) -- (5.022,0.155) -- (5.069,0.295) -- (4.913,0.186) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (4.532,0.111) -- (4.377,0.379) -- (4.252,0.379) -- (4.330,0.245) -- (4.186,0.215) -- (4.357,0.135) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (4.613,-0.157) -- (4.458,-0.426) -- (4.521,-0.534) -- (4.598,-0.400) -- (4.696,-0.510) -- (4.679,-0.321) -- cycle;
+\filldraw[fill=blue!70!black!22, draw=blue!70!black, line width=0.5pt] (5.307,1.453) -- (5.152,1.722) -- (5.027,1.721) -- (5.105,1.587) -- (4.961,1.558) -- (5.132,1.478) -- cycle;
+\fill[orange!85!black] (-0.775,2.312) -- (-0.840,2.200) -- (-0.710,2.200) -- cycle;
+\fill[red!70!black] (-0.775,3.207) -- (-0.840,3.095) -- (-0.710,3.095) -- cycle;
+\fill[orange!85!black] (0.000,3.655) -- (-0.065,3.542) -- (0.065,3.542) -- cycle;
+\fill[orange!85!black] (-0.775,-0.372) -- (-0.840,-0.485) -- (-0.710,-0.485) -- cycle;
+\fill[red!70!black] (-0.775,0.522) -- (-0.840,0.410) -- (-0.710,0.410) -- cycle;
+\fill[orange!85!black] (0.000,0.970) -- (-0.065,0.857) -- (0.065,0.857) -- cycle;
+\fill (-0.775,1.342) circle (1.5pt);
+\fill[red!70!black] (0.000,1.865) -- (-0.065,1.752) -- (0.065,1.752) -- cycle;
+\fill[orange!85!black] (0.775,2.312) -- (0.710,2.200) -- (0.840,2.200) -- cycle;
+\fill (0.000,2.685) circle (1.5pt);
+\fill[red!70!black] (0.775,3.207) -- (0.710,3.095) -- (0.840,3.095) -- cycle;
+\fill[orange!85!black] (1.550,3.655) -- (1.485,3.542) -- (1.615,3.542) -- cycle;
+\fill[red!70!black] (0.000,-0.820) -- (-0.065,-0.932) -- (0.065,-0.932) -- cycle;
+\fill[orange!85!black] (0.775,-0.372) -- (0.710,-0.485) -- (0.840,-0.485) -- cycle;
+\fill (0.000,0.000) circle (1.5pt);
+\fill[red!70!black] (0.775,0.522) -- (0.710,0.410) -- (0.840,0.410) -- cycle;
+\fill[orange!85!black] (1.550,0.970) -- (1.485,0.857) -- (1.615,0.857) -- cycle;
+\fill (0.775,1.342) circle (1.5pt);
+\fill[red!70!black] (1.550,1.865) -- (1.485,1.752) -- (1.615,1.752) -- cycle;
+\fill[orange!85!black] (2.325,2.312) -- (2.260,2.200) -- (2.390,2.200) -- cycle;
+\fill (1.550,2.685) circle (1.5pt);
+\fill[red!70!black] (2.325,3.207) -- (2.260,3.095) -- (2.390,3.095) -- cycle;
+\fill[orange!85!black] (3.100,3.655) -- (3.035,3.542) -- (3.165,3.542) -- cycle;
+\fill[red!70!black] (1.550,-0.820) -- (1.485,-0.932) -- (1.615,-0.932) -- cycle;
+\fill[orange!85!black] (2.325,-0.372) -- (2.260,-0.485) -- (2.390,-0.485) -- cycle;
+\fill (1.550,0.000) circle (1.5pt);
+\fill[red!70!black] (2.325,0.522) -- (2.260,0.410) -- (2.390,0.410) -- cycle;
+\fill[orange!85!black] (3.100,0.970) -- (3.035,0.857) -- (3.165,0.857) -- cycle;
+\fill (2.325,1.342) circle (1.5pt);
+\fill[red!70!black] (3.100,1.865) -- (3.035,1.752) -- (3.165,1.752) -- cycle;
+\fill[orange!85!black] (3.875,2.312) -- (3.810,2.200) -- (3.940,2.200) -- cycle;
+\fill (3.100,2.685) circle (1.5pt);
+\fill[red!70!black] (3.875,3.207) -- (3.810,3.095) -- (3.940,3.095) -- cycle;
+\fill[orange!85!black] (4.650,3.655) -- (4.585,3.542) -- (4.715,3.542) -- cycle;
+\fill[red!70!black] (3.100,-0.820) -- (3.035,-0.932) -- (3.165,-0.932) -- cycle;
+\fill[orange!85!black] (3.875,-0.372) -- (3.810,-0.485) -- (3.940,-0.485) -- cycle;
+\fill (3.100,0.000) circle (1.5pt);
+\fill[red!70!black] (3.875,0.522) -- (3.810,0.410) -- (3.940,0.410) -- cycle;
+\fill[orange!85!black] (4.650,0.970) -- (4.585,0.857) -- (4.715,0.857) -- cycle;
+\fill (3.875,1.342) circle (1.5pt);
+\fill[red!70!black] (4.650,1.865) -- (4.585,1.752) -- (4.715,1.752) -- cycle;
+\fill (4.650,2.685) circle (1.5pt);
+\fill[red!70!black] (4.650,-0.820) -- (4.585,-0.932) -- (4.715,-0.932) -- cycle;
+\fill (4.650,0.000) circle (1.5pt);
+\end{scope}
+\draw[black!55, thin] (-0.542,-0.542) rectangle (4.728,3.022);
+\draw[->, blue!70!black, very thick] (2.325,1.342) -- (3.875,1.342) node[below right=-1pt, font=\scriptsize] {$\omega_1$};
+\draw[->, blue!70!black, very thick] (2.325,1.342) -- (3.100,2.685) node[above=0pt, font=\scriptsize] {$\omega_2$};
+\draw[red!70!black, thick] (2.325,1.342) circle (3.2pt);
+\node[font=\scriptsize, below left=1pt] at (2.325,1.342) {$0$};
+\node[font=\scriptsize, align=left, anchor=north west] at (4.978,3.022) {$\bullet$ \ points of $L$\\\textcolor{red!70!black}{$\blacktriangle$} \ $c + L$, \ $c = \tfrac13(\omega_1 + \omega_2)$\\\textcolor{orange!85!black}{$\blacktriangle$} \ $2c + L$\\[3pt]each is the centre\\of a rotation by $120^\circ$\\in $\Gamma$: \ $\sigma_{(r,\lambda)}$\\turns about $(I - r)^{-1}\lambda$\\[3pt]\textcolor{blue!70!black}{$\omega_1, \omega_2$}: a basis of $L$;\\the motifs are the\\$\gamma(F)$, $\gamma \in \Gamma$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} The wallpaper group $\Gamma = L \rtimes \mathbb{Z}/3\mathbb{Z}$ of Example~\ref{ex:affine-wallpaper-p3}. The blue motifs are the images $\gamma(F)$ of one motif $F$ under all $\gamma \in \Gamma$: at each lattice point (black) three copies, turned by $0^\circ$, $120^\circ$ and $240^\circ$. The arrows $\omega_1$, $\omega_2$ from the chosen origin $0$ (circled) span the translations $T \cong L$. Every element $\sigma_{(r, \lambda)}$ of $\Gamma$ is a rotation by $120^\circ$, about the point $(I - r)^{-1}\lambda$. These centres come in the three classes $L$ (black), $c_1 + L$ (red) and $2c_1 + L$ (orange), and the pattern looks the same when turned by $120^\circ$ about any of them. There is no mirror symmetry, because the motif is not symmetric.
+%% <<< END ADDED
+
+\begin{corbox}[{Semidirect Products of Solvable Groups Are Solvable}]\label{cor:semidirect-solvable}
+Let $\varphi: S \to \operatorname{Aut}(N)$ be a homomorphism. Then $N \rtimes_\varphi S$ is solvable if and only if $N$ and $S$ are solvable.
+\srcline{not from class}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from class; filled in.)} By Internal and External Semidirect Products Agree (Theorem~\ref{thm:internal-external-semidirect}(2)), $N \rtimes_\varphi S$ is the internal semidirect product of its subgroups $\tilde N \cong N$ and $\tilde S \cong S$, with $\tilde N$ normal. By The Quotient by $N$ (Proposition~\ref{prop:semidirect-quotient}), $(N \rtimes_\varphi S)/\tilde N \cong \tilde S \cong S$. Being solvable is preserved by isomorphisms, since an isomorphism carries a chain with abelian quotients to one. So by Corollary~\ref{cor:solvable-iff-normal-quotient}, $N \rtimes_\varphi S$ is solvable if and only if $\tilde N \cong N$ and $S$ are solvable.
+\end{proof}
+
+All the groups of affine maps above are solvable, since in each of them $L$ and $G$ are abelian: $\operatorname{Aff}(k) \cong k \rtimes k^\times$, $\mathbb{Z} \rtimes \mathbb{Z}/2\mathbb{Z}$ and $\mathbb{Z}^2 \rtimes \mathbb{Z}/3\mathbb{Z}$.
+\begin{exbox}[{Groups of Order $pq$ Are Solvable}]\label{ex:order-pq-solvable}
+\textit{(Not from class.)} Let $p < q$ be primes and $|G| = pq$. The number $n_q$ of Sylow $q$-subgroups divides $p$ and is $\equiv 1 \pmod q$ (The Number of Sylow Subgroups Divides $|G|$, Corollary~\ref{cor:sylow-number-divides}). Since $p < q$, the only divisor of $p$ that is $\equiv 1 \pmod q$ is $1$, so $n_q = 1$. The Sylow $q$-subgroup $Q$, which exists by the First Sylow Theorem (Theorem~\ref{thm:sylow-first}), is therefore normal (A Normal Sylow Subgroup Is the Only One, Corollary~\ref{cor:sylow-normal-unique}(2)). $Q$ has prime order $q$ and $G/Q$ has prime order $p$. A group of prime order is cyclic, generated by any non-identity element by Lagrange's theorem, hence abelian and solvable. By Corollary~\ref{cor:solvable-iff-normal-quotient}, $G$ is solvable. This covers the case $q \equiv 1 \pmod p$ as well, where $G$ need not be cyclic (Example~\ref{ex:order-pq-hypothesis-s3}).
+\end{exbox}
+
 % ============================================================================
 % PART II: REPRESENTATION THEORY (Lecture and Worksheet 13, Mon Nov 2)
 % ============================================================================
@@ -8882,8 +9191,15 @@ Let $\varphi: U \to V$ be a homomorphism of $G$-representations. Then
 \srcline{WS 13.6}
 \end{propbox}
 
-\begin{proof}[Proof (to be filled)]
-WS 13.6 was not reached in class on 11/2.
+\begin{proof}
+\textit{Idea:} $\varphi$ commutes with the action, so the action carries the kernel and the image into themselves.\par
+\textbf{(1)} \textit{(The argument of Problem Set 9, Problem 9.3(3), as submitted, with $\varphi$ in place of $\pi$.)} Since $\varphi$ is linear, $\operatorname{Ker}\varphi$ is a subspace of $U$. Let $u \in \operatorname{Ker}\varphi$ and $g \in G$. Then, since $g$ acts linearly,
+\[ \varphi(gu) = g\varphi(u) = g0 = 0, \]
+so $gu \in \operatorname{Ker}\varphi$. Hence $\operatorname{Ker}\varphi$ is $G$-stable, i.e.\ a subrepresentation of $U$.
+
+\textbf{(2)} \textit{(Not from class; filled in.)} Since $\varphi$ is linear, $\operatorname{Im}\varphi$ is a subspace of $V$. Let $v \in \operatorname{Im}\varphi$, say $v = \varphi(u)$ with $u \in U$, and let $g \in G$. Then
+\[ gv = g\varphi(u) = \varphi(gu) \in \operatorname{Im}\varphi. \]
+Hence $\operatorname{Im}\varphi$ is $G$-stable, i.e.\ a subrepresentation of $V$.
 \end{proof}
 
 
@@ -9028,18 +9344,239 @@ The board labels the lower right block $\rho_{W/U}$ (Proposition~\ref{prop:lower
 \srcline{board 11/4}
 \end{rembox}
 
+\subsection{Idempotents}\label{sub:idempotents}
+
+\textit{Source: Problem Set 9, Problems 9.2 and 9.3(1) (submitted); Worksheet 15 (Mon Nov 9).}
+
+Maschke's theorem is proved by building a projection onto $U$ that commutes with $G$. The linear algebra behind it is the theory of idempotents, which Problem Set 9 and Worksheet 15 both start from.
+
+\begin{defbox}[{Idempotent}]\label{def:idempotent}
+Let $V$ be a vector space. A linear map $\pi: V \to V$ is \textbf{idempotent} if $\pi^2 = \pi$, i.e.\ $\pi(\pi(v)) = \pi(v)$ for all $v \in V$.
+\srcline{PS 9.2; WS 15}
+\end{defbox}
+
+\begin{lembox}[{An Idempotent Fixes Its Image}]\label{lem:idempotent-fixes-image}
+If $\pi: V \to V$ is idempotent, then $\pi(w) = w$ for every $w \in \operatorname{Im}\pi$.
+\srcline{PS 9.2}
+\end{lembox}
+
+\begin{proof}
+\textit{(Problem Set 9, Problem 9.2, first step, as submitted.)} Let $w \in \operatorname{Im}(\pi)$, say $w = \pi(v)$ for some $v \in V$. Then
+\[ \pi(w) = \pi^2(v) = \pi(v) = w. \qedhere \]
+\end{proof}
+
+\begin{propbox}[{An Idempotent Splits the Space}]\label{prop:idempotent-kernel-image}
+If $\pi: V \to V$ is idempotent, then $V$ is the direct sum of $\operatorname{Ker}(\pi)$ and $\operatorname{Im}(\pi)$ (Definition~\ref{def:internal-direct-sum-subspaces}):
+\[ V = \operatorname{Ker}(\pi) \oplus \operatorname{Im}(\pi), \qquad v = \big(v - \pi(v)\big) + \pi(v). \]
+\srcline{PS 9.2; WS 15.1}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} $v - \pi(v)$ is killed by $\pi$, and a vector in both pieces satisfies $v = \pi(v) = 0$.\par
+\textit{(Problem Set 9, Problem 9.2, as submitted; its first step is Lemma~\ref{lem:idempotent-fixes-image}.)} Since $\pi$ is linear, $\operatorname{Ker}(\pi)$ and $\operatorname{Im}(\pi)$ are subspaces of $V$. Throughout, $v$ denotes an arbitrary element of $V$, $u$ an element of $\operatorname{Ker}(\pi)$, and $w$ an element of $\operatorname{Im}(\pi)$.
+
+\textbf{$V = \operatorname{Ker}(\pi) + \operatorname{Im}(\pi)$.} Let $v \in V$, and set $u = v - \pi(v)$ and $w = \pi(v)$. Then $w \in \operatorname{Im}(\pi)$, and
+\[ \pi(u) = \pi(v) - \pi^2(v) = \pi(v) - \pi(v) = 0, \]
+so $u \in \operatorname{Ker}(\pi)$. Hence $v = u + w$ with $u \in \operatorname{Ker}(\pi)$ and $w \in \operatorname{Im}(\pi)$.
+
+\textbf{$\operatorname{Ker}(\pi) \cap \operatorname{Im}(\pi) = \{0\}$.} Let $v \in \operatorname{Ker}(\pi) \cap \operatorname{Im}(\pi)$. Since $v \in \operatorname{Im}(\pi)$, $\pi(v) = v$ by Lemma~\ref{lem:idempotent-fixes-image}; since $v \in \operatorname{Ker}(\pi)$, $\pi(v) = 0$. Hence $v = 0$.
+
+Since $V = \operatorname{Ker}(\pi) + \operatorname{Im}(\pi)$ and $\operatorname{Ker}(\pi) \cap \operatorname{Im}(\pi) = \{0\}$, by the criterion for a direct sum of two subspaces (Axler 1.46), $V = \operatorname{Ker}(\pi) \oplus \operatorname{Im}(\pi)$.
+\end{proof}
+
+\begin{lembox}[{The Complementary Idempotent}]\label{lem:complementary-idempotent}
+If $\pi: V \to V$ is idempotent, then so is $\mathrm{id}_V - \pi$, and
+\[ \operatorname{Im}(\mathrm{id}_V - \pi) = \operatorname{Ker}(\pi), \qquad \operatorname{Ker}(\mathrm{id}_V - \pi) = \operatorname{Im}(\pi). \]
+So the decomposition of Proposition~\ref{prop:idempotent-kernel-image} is $v = (\mathrm{id}_V - \pi)(v) + \pi(v)$, with the roles of the two idempotents exchanged when $\pi$ is replaced by $\mathrm{id}_V - \pi$.
+\srcline{not from class}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from class; filled in.)} \emph{Idempotent:} $(\mathrm{id}_V - \pi)^2 = \mathrm{id}_V - 2\pi + \pi^2 = \mathrm{id}_V - 2\pi + \pi = \mathrm{id}_V - \pi$.
+
+\emph{Image.} For $v \in V$, $\pi\big((\mathrm{id}_V - \pi)(v)\big) = \pi(v) - \pi^2(v) = 0$, so $\operatorname{Im}(\mathrm{id}_V - \pi) \subseteq \operatorname{Ker}(\pi)$. Conversely, if $v \in \operatorname{Ker}(\pi)$, then $v = v - \pi(v) = (\mathrm{id}_V - \pi)(v) \in \operatorname{Im}(\mathrm{id}_V - \pi)$.
+
+\emph{Kernel.} $(\mathrm{id}_V - \pi)(v) = 0$ means $v = \pi(v)$. If $v = \pi(v)$, then $v \in \operatorname{Im}(\pi)$. Conversely, if $v \in \operatorname{Im}(\pi)$, then $\pi(v) = v$ by Lemma~\ref{lem:idempotent-fixes-image}.
+\end{proof}
+
+\begin{exbox}[{An Idempotent That Is Not an Orthogonal Projection}]\label{ex:oblique-idempotent}
+\textit{(Not from class.)} On $\mathbb{R}^2$ let $\pi(x, y) = (x - y, 0)$. Then $\pi(\pi(x, y)) = \pi(x - y, 0) = (x - y, 0)$, so $\pi$ is idempotent, with image the $x$-axis and kernel the line $y = x$. Proposition~\ref{prop:idempotent-kernel-image} splits $(x, y) = (y, y) + (x - y, 0)$. The kernel is not perpendicular to the image, so $\pi$ is not the orthogonal projection onto the $x$-axis for the dot product (\ref{sec:invariant-inner-products}). An idempotent is a projection onto its image \emph{along} its kernel, and the kernel can be any complement of the image.
+\end{exbox}
+
+\begin{lembox}[{Every Subspace Is the Image of an Idempotent}]\label{lem:subspace-image-idempotent}
+Let $W$ be a finite-dimensional vector space and $U \subseteq W$ a subspace. Then there is an idempotent $P: W \to W$ with $\operatorname{Im}(P) = U$.
+\srcline{PS 9.3(1)}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} Extend a basis of $U$ to a basis of $W$; keep the vectors of $U$ and send the others to $0$.\par
+\textit{(Problem Set 9, Problem 9.3(1), as submitted.)} Let $e_1, \ldots, e_m$ be a basis of $U$. Since every linearly independent list in $W$ extends to a basis of $W$ (Axler 2.32), we may extend it to a basis $e_1, \ldots, e_n$ of $W$. Since a linear map is determined by its values on a basis (Axler 3.4), there is a unique linear map $P: W \to W$ with
+\[ P(e_i) = e_i \quad (1 \leq i \leq m), \qquad P(e_i) = 0 \quad (m < i \leq n). \]
+\emph{$\operatorname{Im}(P) = U$.} Each $P(e_i)$ is either $e_i$ with $i \leq m$ or $0$, so it lies in $U$; since the $e_i$ span $W$ and $U$ is a subspace, $P(w) \in U$ for all $w \in W$, i.e.\ $\operatorname{Im}(P) \subseteq U$. Conversely, $P$ fixes $e_1, \ldots, e_m$, so by linearity $P(u) = u$ for all $u \in U$; hence $U \subseteq \operatorname{Im}(P)$.
+
+\emph{$P$ is idempotent.} For $i \leq m$, $P^2(e_i) = P(e_i) = e_i$, and for $i > m$, $P^2(e_i) = P(0) = 0 = P(e_i)$. Thus the linear maps $P^2$ and $P$ agree on a basis of $W$, so $P^2 = P$.
+
+If $W$ is infinite-dimensional, the same construction applies: by Zorn's lemma, every basis of $U$ extends to a basis of $W$, and a linear map is still determined by its values on a basis.
+\end{proof}
+
+Such a $P$ depends on the choice of the extra basis vectors $e_{m+1}, \ldots, e_n$, which span its kernel. When $W$ is a representation and $U$ a subrepresentation, $\operatorname{Ker}(P)$ is in general not a subrepresentation: in Example~\ref{ex:maschke-fails-z} below no complement of $U$ is. Averaging over $G$ repairs this.
+
+\begin{rembox}[{Which Statements Need a Basis}]\label{rem:idempotents-need-basis}
+An Idempotent Splits the Space (Proposition~\ref{prop:idempotent-kernel-image}, WS 15.1) needs no finite-dimensionality: its proof never chooses a basis. The converse construction, every subspace is the image of an idempotent (Lemma~\ref{lem:subspace-image-idempotent}), chooses a basis of $W$ extending one of $U$. In infinite dimensions this probably needs a weak form of the axiom of choice, such as every vector space having a basis; the submitted proof uses Zorn's lemma. In finite dimensions this is no issue.
+\srcline{lecture 11/9, while clarifying the problem set}
+\end{rembox}
+
+\begin{lembox}[{Averaging a Linear Map over $G$}]\label{lem:averaging-linear-map}
+Let $G$ be a finite group and $k$ a field in which $|G| \neq 0$. Let $W$ and $W'$ be representations of $G$ over $k$ and $P: W \to W'$ a linear map. Then
+\[ \pi(w) = \frac{1}{|G|}\sum_{h \in G} h^{-1}P(hw) \]
+is a homomorphism of representations $W \to W'$ (Definition~\ref{def:homomorphism-representations}). If $P$ is already a homomorphism of representations, then $\pi = P$.
+\srcline{PS 9.3(2)--(3)}
+\end{lembox}
+
+\begin{proof}
+\textit{Idea:} Moving $g$ inside the sum re-indexes it by $h \mapsto hg$.\par
+\textit{(Problem Set 9, Problem 9.3(2) and (3), as submitted. The computation uses neither that $P$ is idempotent nor that $W' = W$.)} \emph{$\pi$ is linear.} For each $h \in G$, the map $w \mapsto h^{-1}P(hw)$ is the composition of the linear maps $w \mapsto hw$, $P$, and $v \mapsto h^{-1}v$, hence linear. Since $|G| \neq 0$ in $k$, the scalar $\frac{1}{|G|}$ exists, and $\pi$ is a scalar multiple of a finite sum of linear maps, hence linear.
+
+\emph{$\pi$ is a homomorphism of representations.} Let $g \in G$ and $w \in W$. Since $g$ acts linearly on $W'$, it commutes with finite sums and with the scalar $\frac{1}{|G|}$, so, writing the summation index as $h'$,
+\[ g\pi(w) = \frac{1}{|G|} \sum_{h' \in G} g\big(h'^{-1} P(h'w)\big) = \frac{1}{|G|} \sum_{h' \in G} (g h'^{-1}) P(h'w), \]
+using the compatibility axiom of the action. Right multiplication $h \mapsto hg$ is a bijection $G \to G$, with inverse $h' \mapsto h'g^{-1}$, so we may substitute $h' = hg$ and sum over $h \in G$. Since $g(hg)^{-1} = gg^{-1}h^{-1} = h^{-1}$ and $(hg)w = h(gw)$,
+\[ g\pi(w) = \frac{1}{|G|} \sum_{h \in G} \big(g(hg)^{-1}\big) P\big((hg)w\big) = \frac{1}{|G|} \sum_{h \in G} h^{-1} P\big(h(gw)\big) = \pi(gw). \]
+Since $g \in G$ and $w \in W$ were arbitrary, $\pi(gw) = g\pi(w)$ for all $g \in G$ and $w \in W$.
+
+\emph{If $P$ is a homomorphism.} \textit{(Not from class; filled in.)} Then $h^{-1}P(hw) = h^{-1}hP(w) = P(w)$ for every $h$, so $\pi(w) = \frac{1}{|G|}\big(|G| \cdot 1_k\big)P(w) = P(w)$.
+\end{proof}
+
+\subsection{Maschke's Theorem}\label{sub:maschke-theorem}
+
 \begin{thmbox}[{Maschke's Theorem}]\label{thm:maschke}
 Let $G$ be a finite group and $k$ a field in which $|G| \neq 0$. Let $W$ be a finite-dimensional representation of $G$ over $k$ and $U \subseteq W$ a subrepresentation. Then there is a subrepresentation $V \subseteq W$ with $W = U \oplus V$.
-\srcline{WS 14; lecture 11/4}
+\srcline{WS 14; lecture 11/4; proof PS 9.3}
 \end{thmbox}
 
-\begin{proof}[Proof (to be filled)]
-The general case is on the problem set; it is added here after the problem set is submitted. The case $k = \mathbb{R}$ is Corollary~\ref{cor:maschke-real}, in \ref{sec:invariant-inner-products}.
+\begin{proof}
+\textit{Idea:} Start from any idempotent $P$ with image $U$ and average it over $G$. The average $\pi$ is still an idempotent with image $U$, and it commutes with $G$, so its kernel is a complementary subrepresentation.\par
+\textit{(Problem Set 9, Problem 9.3, as submitted.)} \textbf{Step 1: an idempotent with image $U$.} By Lemma~\ref{lem:subspace-image-idempotent} (PS 9.3(1)) there is an idempotent linear map $P: W \to W$ with image $U$. It is not required to be a homomorphism of representations. Define
+\[ \pi(w) = \frac{1}{|G|}\sum_{h \in G} h^{-1}P(hw). \]
+By Lemma~\ref{lem:averaging-linear-map}, $\pi$ is linear.
+
+\textbf{Step 2: $\pi$ is an idempotent with image $U$} (PS 9.3(2)). \emph{$\pi(u) = u$ for $u \in U$.} Let $u \in U$ and $h \in G$. Since $U$ is a subrepresentation, $hu \in U = \operatorname{Im}(P)$. Since $P$ is idempotent, it is the identity on $\operatorname{Im}(P)$ (Lemma~\ref{lem:idempotent-fixes-image}); hence $P(hu) = hu$. By the axioms of a group action, $h^{-1}(hu) = (h^{-1}h)u = eu = u$. Hence
+\[ \pi(u) = \frac{1}{|G|} \sum_{h \in G} h^{-1}P(hu) = \frac{1}{|G|} \sum_{h \in G} u = \frac{1}{|G|}\big(|G| \cdot 1_k\big)\, u = u, \]
+where the last step uses $|G| \cdot 1_k \neq 0$.
+
+\emph{$\operatorname{Im}(\pi) = U$.} Let $w \in W$ and $h \in G$. Then $P(hw) \in \operatorname{Im}(P) = U$, and since $U$ is a subrepresentation, $h^{-1}P(hw) \in U$. Since $U$ is a subspace, the scalar multiple $\pi(w)$ of the sum of these elements lies in $U$; hence $\operatorname{Im}(\pi) \subseteq U$. Conversely, every $u \in U$ satisfies $u = \pi(u) \in \operatorname{Im}(\pi)$, so $U \subseteq \operatorname{Im}(\pi)$.
+
+\emph{$\pi$ is idempotent.} For $w \in W$, $\pi(w) \in \operatorname{Im}(\pi) = U$, so $\pi^2(w) = \pi(\pi(w)) = \pi(w)$ since $\pi$ fixes every element of $U$. Hence $\pi^2 = \pi$.
+
+\textbf{Step 3: the complement} (PS 9.3(3)). By Lemma~\ref{lem:averaging-linear-map} with $W' = W$, $\pi(gw) = g\pi(w)$ for all $g \in G$ and $w \in W$: $\pi$ is a homomorphism of representations. So $\operatorname{Ker}(\pi)$ is a subrepresentation of $W$ (Kernels and Images Are Subrepresentations, Proposition~\ref{prop:kernels-images-subrepresentations}(1), whose proof is the submitted argument).
+
+Finally, by Step 2 and Proposition~\ref{prop:idempotent-kernel-image} (PS 9.2), $W = \operatorname{Ker}(\pi) \oplus \operatorname{Im}(\pi) = \operatorname{Ker}(\pi) \oplus U$, so $V = \operatorname{Ker}(\pi)$ is a subrepresentation of $W$ with $W = U \oplus V$.
 \end{proof}
+
+For $k = \mathbb{R}$ there is a second, geometric proof, by averaging an inner product instead of an idempotent: Corollary~\ref{cor:maschke-real}, in \ref{sec:invariant-inner-products}.
 
 ``$|G| \neq 0$ in $k$'' means that $1 + 1 + \cdots + 1$ ($|G|$ terms) is not $0$ in $k$, that is, the characteristic of $k$ does not divide $|G|$; it holds for every finite group when $k = \mathbb{Q}$, $\mathbb{R}$ or $\mathbb{C}$. \textit{(Not from class.)} By Proposition~\ref{prop:direct-sum-block-diagonal}, the theorem says that every subrepresentation can be split off, so that all the matrices $\rho_W(g)$ become block diagonal at once. For $S_3$ acting on $k\{1,2,3\}$ the condition means $6 \neq 0$ in $k$; compare Proposition~\ref{prop:k123-direct-sum}, where the decomposition $U_1 \oplus U_2$ fails when $3 = 0$, and the remark \emph{Why This Is ``Tricky''} in \ref{sec:representations}.
 
 \textbf{Transcription note (board 11/4).} The board states the theorem with ``let $V$ be a finite dim rep of $G$ over $k$, let $U \subseteq V$ be a subrep''; the representation is $W$, as in the conclusion ``$\exists$ subrep $V \subseteq W$ s.t.\ $W = U \oplus V$'' and on the worksheet.
+
+\subsection{When Maschke's Theorem Fails}\label{sub:maschke-fails}
+
+\textit{Source: Problem Set 9, Problem 9.4 (submitted).}
+
+Neither hypothesis of Maschke's theorem can be dropped: one shear matrix gives a counterexample both for an infinite group and for a finite group whose order is $0$ in $k$.
+
+\begin{exbox}[{Maschke Fails for the Infinite Group $\mathbb{Z}$}]\label{ex:maschke-fails-z}
+Let $G = \mathbb{Z}$ and define $\rho: \mathbb{Z} \to GL_2(\mathbb{R})$ by $\rho(x) = \left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)$. This is a homomorphism, since $\left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)\left(\begin{smallmatrix} 1 & y \\ 0 & 1 \end{smallmatrix}\right) = \left(\begin{smallmatrix} 1 & x + y \\ 0 & 1 \end{smallmatrix}\right)$. With $e_1 = (1, 0)$, the line $\mathbb{R}e_1$ is a subrepresentation of $\mathbb{R}^2$, but there is no subrepresentation $V$ with $\mathbb{R}^2 = \mathbb{R}e_1 \oplus V$.
+\srcline{PS 9.4(1)}
+\end{exbox}
+
+\begin{proof}
+\textit{Idea:} A complement is a line $\mathbb{R}(a, 1)$, and $\rho(1)$ slides $(a, 1)$ to $(a + 1, 1)$, off that line.\par
+\textit{(Problem Set 9, Problem 9.4(1), as submitted.)} \emph{$\mathbb{R}e_1$ is a subrepresentation.} $\mathbb{R}e_1$ is a subspace of $\mathbb{R}^2$, and for $x \in \mathbb{Z}$ and $a \in \mathbb{R}$,
+\[ \rho(x)\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} 1 & x \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} a \\ 0 \end{pmatrix} \in \mathbb{R}e_1. \]
+\emph{No complementary subrepresentation.} Suppose $V \subseteq \mathbb{R}^2$ is a subspace with $\mathbb{R}^2 = \mathbb{R}e_1 \oplus V$. Then $\dim V = 2 - 1 = 1$, so $V = \mathbb{R}v$ for some $v = (b, c) \neq 0$. Since $\mathbb{R}e_1 \cap V = \{0\}$, $v \notin \mathbb{R}e_1$, so $c \neq 0$, and replacing $v$ by $c^{-1}v$ we may take $v = (a, 1)$ with $a = b/c$. Every element of $V$ has the form $\lambda v = (\lambda a, \lambda)$, so the only element of $V$ with second coordinate $1$ is $v$. Now
+\[ \rho(1)\, v = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a \\ 1 \end{pmatrix} = \begin{pmatrix} a + 1 \\ 1 \end{pmatrix} \neq v, \]
+so $\rho(1)v \notin V$. Hence $V$ is not a subrepresentation, and no subrepresentation $V$ satisfies $\mathbb{R}^2 = \mathbb{R}e_1 \oplus V$.
+\end{proof}
+
+\begin{exbox}[{Maschke Fails When $|G| = 0$ in $k$}]\label{ex:maschke-fails-char-p}
+Let $p$ be prime, $G = \mathbb{Z}/p\mathbb{Z}$ and $\mathbb{F} = \mathbb{Z}/p\mathbb{Z}$, and define $\rho: G \to GL_2(\mathbb{F})$ by the same matrices $\rho(x) = \left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)$, now with $x \in \mathbb{F}$; the product rule above shows again that $\rho$ is a homomorphism. Then $\mathbb{F}e_1$ is a subrepresentation of $\mathbb{F}^2$, but there is no subrepresentation $V$ with $\mathbb{F}^2 = \mathbb{F}e_1 \oplus V$. Here $G$ is finite, but $|G| = p = 0$ in $\mathbb{F}$.
+\srcline{PS 9.4(2)}
+\end{exbox}
+
+\begin{proof}
+\textit{(Problem Set 9, Problem 9.4(2), as submitted.)} \emph{$\mathbb{F}e_1$ is a subrepresentation.} $\mathbb{F}e_1$ is a subspace of $\mathbb{F}^2$, and for $x \in \mathbb{Z}/p\mathbb{Z}$ and $a \in \mathbb{F}$,
+\[ \rho(x)\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} 1 & x \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a \\ 0 \end{pmatrix} = \begin{pmatrix} a \\ 0 \end{pmatrix} \in \mathbb{F}e_1. \]
+\emph{No complementary subrepresentation.} Suppose $V \subseteq \mathbb{F}^2$ is a subspace with $\mathbb{F}^2 = \mathbb{F}e_1 \oplus V$. Then $\dim V = 1$, so $V = \mathbb{F}v$ for some $v = (b, c) \neq 0$. Since $\mathbb{F}e_1 \cap V = \{0\}$, $c \neq 0$; since $\mathbb{F}$ is a field, $c$ is invertible, and replacing $v$ by $c^{-1}v$ we may take $v = (a, 1)$. As before, the only element of $V$ with second coordinate $1$ is $v$. Since $1 \neq 0$ in $\mathbb{Z}/p\mathbb{Z}$,
+\[ \rho(1)\, v = \begin{pmatrix} 1 & 1 \\ 0 & 1 \end{pmatrix}\begin{pmatrix} a \\ 1 \end{pmatrix} = \begin{pmatrix} a + 1 \\ 1 \end{pmatrix} \neq v, \]
+so $\rho(1)v \notin V$. Hence no subrepresentation $V$ satisfies $\mathbb{F}^2 = \mathbb{F}e_1 \oplus V$.
+\end{proof}
+
+\begin{proof}[Second proof of both examples (block diagonal form)]
+\textit{(Not from class.)} Let $k$ be $\mathbb{R}$ or $\mathbb{F}$, and suppose $k^2 = ke_1 \oplus V$ with $V$ a subrepresentation, say $V = kv$. By Bases of a Direct Sum (Proposition~\ref{prop:bases-direct-sum}), $(e_1, v)$ is a basis of $k^2$, and by Direct Sums Give Block Diagonal Matrices (Proposition~\ref{prop:direct-sum-block-diagonal}) the matrix of $\rho(1)$ in this basis is diagonal: $\rho(1)e_1 = e_1$ and $\rho(1)v = cv$ for some $c \in k$. The trace does not depend on the basis (the remark \emph{Checking Answers in Different Bases} in \ref{sec:representations}), and in the standard basis $\operatorname{Tr}\rho(1) = 1 + 1$. So $1 + c = 1 + 1$, and $c = 1$. Then $\rho(1)$ fixes both basis vectors, so $\rho(1) = I$. But $\rho(1) = \left(\begin{smallmatrix} 1 & 1 \\ 0 & 1 \end{smallmatrix}\right) \neq I$, since $1 \neq 0$ in $k$. In other words, a complement would make the shear $\rho(1)$ diagonalizable, and a diagonalizable matrix whose eigenvalues are all $1$ is $I$.
+\end{proof}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\begin{scope}
+\draw[->, black!55, thin] (-1.9,0) -- (2.2,0) node[right, font=\scriptsize] {$x$};
+\draw[->, black!55, thin] (0,-1.3) -- (0,1.75) node[above, font=\scriptsize] {$y$};
+\draw[black!40, densely dotted] (-1.9,1) -- (2.15,1) node[right, font=\scriptsize, black!60] {$y = 1$};
+\draw[red!70!black, line width=1.6pt] (-1.8,0) -- (2.0,0);
+\node[red!70!black, font=\scriptsize, anchor=north] at (1.5,-0.05) {$\mathbb{R} e_1$};
+\draw[black!55, thick, dashed] (0.884,-0.884) -- (-1.131,1.131);
+\draw[black!75, thick] (-0.000,-1.250) -- (0.000,1.600);
+\draw[blue!70!black, thick] (-0.884,-0.884) -- (1.131,1.131);
+\draw[->, orange!85!black, thick, shorten <=3pt, shorten >=3pt] (-1.0,1) to[bend left=35] (0.0,1);
+\draw[->, orange!85!black, thick, shorten <=3pt, shorten >=3pt] (0.0,1) to[bend left=35] (1.0,1);
+\fill[black!55] (-1.0,1) circle (1.6pt);
+\fill[black!75] (0.0,1) circle (1.6pt);
+\fill[blue!70!black] (1.0,1) circle (1.6pt);
+\node[font=\scriptsize, black!55, anchor=north east] at (-1.02,0.98) {$v$};
+\node[font=\scriptsize, black!75, anchor=north west] at (0.03,0.97) {$\rho(1)v$};
+\node[font=\scriptsize, blue!70!black, anchor=north west] at (1.05,0.97) {$\rho(1)^2 v$};
+\node[font=\scriptsize, orange!85!black] at (-0.5,1.5) {$+e_1$};
+\node[font=\scriptsize, align=center] at (0.1,-1.75) {over $\mathbb{R}$: $\rho(1)(x, y) = (x + y, y)$ slides\\the line $y = 1$ by $e_1$, so each line\\$\mathbb{R}v \neq \mathbb{R}e_1$ is moved};
+\end{scope}
+\begin{scope}[xshift=4.6cm, yshift=-0.9cm]
+\draw[black!22] (0.00,0.00) circle (5pt);
+\draw[black!22] (0.00,0.90) circle (5pt);
+\draw[black!22] (0.00,1.80) circle (5pt);
+\draw[black!22] (0.90,0.00) circle (5pt);
+\draw[black!22] (0.90,0.90) circle (5pt);
+\draw[black!22] (0.90,1.80) circle (5pt);
+\draw[black!22] (1.80,0.00) circle (5pt);
+\draw[black!22] (1.80,0.90) circle (5pt);
+\draw[black!22] (1.80,1.80) circle (5pt);
+\fill[blue!70!black] (0.00,0.90) circle (3.2pt);
+\fill[blue!70!black] (0.00,1.80) circle (3.2pt);
+\fill[orange!85!black] (0.90,0.90) circle (3.2pt);
+\fill[orange!85!black] (1.80,1.80) circle (3.2pt);
+\fill[green!50!black] (1.80,0.90) circle (3.2pt);
+\fill[green!50!black] (0.90,1.80) circle (3.2pt);
+\fill[red!70!black] (0.90,0) circle (3.2pt);
+\fill[red!70!black] (1.80,0) circle (3.2pt);
+\fill (0,0) circle (3.2pt);
+\node[font=\scriptsize] at (0.00,-0.42) {$0$};
+\node[font=\scriptsize] at (-0.42,0.00) {$0$};
+\node[font=\scriptsize] at (0.90,-0.42) {$1$};
+\node[font=\scriptsize] at (-0.42,0.90) {$1$};
+\node[font=\scriptsize] at (1.80,-0.42) {$2$};
+\node[font=\scriptsize] at (-0.42,1.80) {$2$};
+\draw[->, orange!85!black, thick, shorten <=5pt, shorten >=5pt] (0,0.90) -- (0.90,0.90);
+\draw[->, orange!85!black, thick, shorten <=5pt, shorten >=5pt] (0.90,0.90) -- (1.80,0.90);
+\draw[->, orange!85!black, thick, shorten <=5pt, shorten >=5pt] (1.80,0.90) .. controls (2.35,1.65) and (-0.55,1.65) .. (0,0.90);
+\node[font=\scriptsize] at (1.95,-1.25) {over $\mathbb{F} = \mathbb{F}_3$: row $y = 1$ slides by $e_1$ (mod $3$)};
+\end{scope}
+\node[font=\scriptsize, align=left, anchor=west] at (6.95,0.45) {\textcolor{red!70!black}{$\bullet$} \ $\mathbb{F} e_1$ (fixed)\\\textcolor{blue!70!black}{$\bullet$} \ $L_0 = \mathbb{F}(0,1)$\\\textcolor{orange!85!black}{$\bullet$} \ $L_1 = \mathbb{F}(1,1)$\\\textcolor{green!50!black}{$\bullet$} \ $L_2 = \mathbb{F}(2,1)$\\\rule{0pt}{10pt}$\rho(1): L_0 \to L_1 \to L_2 \to L_0$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} The shear $\rho(1)$ of Examples~\ref{ex:maschke-fails-z} and~\ref{ex:maschke-fails-char-p}. A line through $0$ other than the $x$-axis meets the line $y = 1$ in one point $v = (a, 1)$, and $\rho(1)$ slides that point to $(a + 1, 1)$, which lies on a different line (left: $v = (-1, 1)$, $\rho(1)v = (0, 1)$, $\rho(1)^2v = (1, 1)$). So the red $x$-axis $\mathbb{R}e_1$ is the only line that $\rho(1)$ maps to itself, and no line can serve as a complement. Over $\mathbb{F}_3$ (right) the plane has nine points and four lines through $0$. The red points form $\mathbb{F}e_1$, and the row $y = 1$ contains one point of each other line. $\rho(1)$ slides that row by $e_1$, cyclically mod $3$, so it permutes the lines $L_0 \to L_1 \to L_2 \to L_0$ and fixes none of them.
+%% <<< END ADDED
+
+\begin{rembox}[{Where Each Hypothesis Is Used}]\label{rem:maschke-hypotheses-used}
+\textit{(Not from class.)} In the proof of Maschke's theorem, $G$ finite makes $\sum_{h \in G}$ a finite sum, and $|G| \neq 0$ in $k$ allows the division by $|G|$ that gives $\pi(u) = u$ in Step 2. For $G = \mathbb{Z}$ there is no finite average to take. For $G = \mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$ the sum $\sum_h h^{-1}P(hu) = p \cdot u$ is $0$ for every $u \in U$. In both cases the examples show that no other construction can help either.
+\end{rembox}
 
 % ============================================================================
 % SECTION: INVARIANT INNER PRODUCTS AND MASCHKE OVER R (Worksheet 14; lectures Wed Nov 4, Fri Nov 6)
@@ -9258,7 +9795,7 @@ $(1\,2)$ swaps the first two coordinates, so it negates $b_1$ and fixes $b_2$: i
 
 \begin{rembox}[{Beyond $\mathbb{R}$ and Beyond Finite Groups}]\label{rem:beyond-r-finite-groups}
 \begin{itemize}[nosep]
-    \item \emph{Other fields.} Maschke's theorem in full (Theorem~\ref{thm:maschke}) needs only $|G| \neq 0$ in $k$; for $S_3$, of order $6$, this excludes the fields of characteristic $2$ and $3$. Its proof, and counterexamples when $|G| = 0$ in $k$, are on the upcoming problem set.
+    \item \emph{Other fields.} Maschke's theorem in full (Theorem~\ref{thm:maschke}) needs only $|G| \neq 0$ in $k$; for $S_3$, of order $6$, this excludes the fields of characteristic $2$ and $3$. Its proof (Problem Set 9) averages an idempotent instead of an inner product, and Examples~\ref{ex:maschke-fails-z} and~\ref{ex:maschke-fails-char-p} show what goes wrong for an infinite group or when $|G| = 0$ in $k$ (both in \ref{sec:maschke}).
     \item \emph{Compact Lie groups.} Beyond this course, which has no manifold prerequisite: for a compact Lie group the same proof works, with the sum over $G$ replaced by an integral over $G$ against an invariant measure.
 \end{itemize}
 \srcline{lecture 11/6}
@@ -9478,7 +10015,7 @@ Many books call this notion \emph{indecomposable} and use ``irreducible'' as a s
 \end{defbox}
 
 \begin{propbox}[{Simple Equals Irreducible}]\label{prop:simple-iff-irreducible}
-Let $G$ be finite and $V$ a finite-dimensional real representation of $G$ (more generally, a representation over a field in which $|G| \neq 0$, once Maschke's theorem, Theorem~\ref{thm:maschke}, is proved in general). Then $V$ is simple if and only if $V$ is irreducible.
+Let $G$ be finite and $V$ a finite-dimensional real representation of $G$ (more generally, a finite-dimensional representation over a field in which $|G| \neq 0$, by Maschke's theorem, Theorem~\ref{thm:maschke}). Then $V$ is simple if and only if $V$ is irreducible.
 \srcline{board 11/6}
 \end{propbox}
 
@@ -9490,7 +10027,7 @@ Both notions require $V \neq \{0\}$ (Definitions~\ref{def:simple-representation}
 
 \emph{Irreducible $\Rightarrow$ simple.} Suppose $V$ is not simple. Since $V \neq \{0\}$, it has a subrepresentation $U$ with $\{0\} \subsetneq U \subsetneq V$. By Maschke's theorem over $\mathbb{R}$ (Corollary~\ref{cor:maschke-real}) there is a subrepresentation $U'$ with $V = U \oplus U'$, and $U' \neq \{0\}$, since otherwise $V = U + U' = U$. So $V$ is the direct sum of two nonzero subrepresentations, and $V$ is not irreducible.
 
-Only the second direction uses Maschke's theorem.
+Only the second direction uses Maschke's theorem. Over a field in which $|G| \neq 0$, Maschke's theorem (Theorem~\ref{thm:maschke}) replaces Corollary~\ref{cor:maschke-real} there, and the argument is otherwise unchanged.
 \end{proof}
 
 \begin{defbox}[{Direct Sum of Several Subspaces}]\label{def:direct-sum-several}
@@ -9550,6 +10087,15 @@ with every $V_i$ a simple subrepresentation of $U$ or of $U'$, hence a $G$-stabl
 \end{center}
 \textit{(Not from lecture; figure added.)} The proof of Corollary~\ref{cor:direct-sum-of-simples} as a tree, for a representation of dimension $5$. A piece that is not simple is split by Maschke's theorem into two subrepresentations of smaller dimension; the leaves are simple. In a basis made of bases of the leaves, every $\rho(g)$ is block diagonal, with one block per simple summand (Proposition~\ref{prop:direct-sum-block-diagonal}, applied at each split).
 
+\begin{corbox}[{Every Representation Is a Direct Sum of Simples, over Any Field with $|G| \neq 0$}]\label{cor:direct-sum-of-simples-general}
+Let $G$ be finite, $k$ a field in which $|G| \neq 0$, and $V$ a finite-dimensional representation of $G$ over $k$. Then $V = V_1 \oplus \cdots \oplus V_r$ (Definition~\ref{def:direct-sum-several}) for simple subrepresentations $V_1, \ldots, V_r$ of $V$, with $r = 0$ when $V = \{0\}$.
+\srcline{not from class; available since PS 9.3 proves Maschke's theorem}
+\end{corbox}
+
+\begin{proof}
+\textit{(Not from class.)} The proof of Corollary~\ref{cor:direct-sum-of-simples} applies word for word after one renaming: ``real representation'' becomes ``representation over $k$'', and Maschke's theorem over $\mathbb{R}$ (Corollary~\ref{cor:maschke-real}) becomes Maschke's theorem (Theorem~\ref{thm:maschke}), proved in \ref{sec:maschke} for every field in which $|G| \neq 0$. That citation is the only place where the field enters. Every other step uses only dimensions and direct sums, which work over any field.
+\end{proof}
+
 \begin{exbox}[{$S_3$ on $\mathbb{R}^3$ as a Sum of Simples}]\label{ex:s3-r3-simples}
 $\mathbb{R}^3 = U \oplus V$, with $U = \mathbb{R}(1,1,1)$ and $V$ the sum-zero plane (Example~\ref{ex:s3-r3-three-bases}), is a decomposition into simple representations, as in Corollary~\ref{cor:direct-sum-of-simples}.
 \begin{enumerate}
@@ -9588,9 +10134,378 @@ An analogy: group theory is like chemistry, where one must learn the atoms (the 
 
 \begin{rembox}[{A Payoff in Group Theory}]\label{rem:payoff-burnside}
 Representation theory also proves theorems about groups. A first example: every finite group of order $p^a q^b$, with $p$ and $q$ prime, is solvable (Definition~\ref{def:solvable-group}). Compare the groups of order $pq$ (\ref{sub:order-pq}), which a problem set classifies as semidirect products of one cyclic group by another.
-\textit{(Not from class.)} The result is Burnside's $p^aq^b$ theorem, not to be confused with Burnside's Lemma (Theorem~\ref{thm:burnsides-lemma}).
+\textit{(Not from class.)} The result is Burnside's $p^aq^b$ theorem, not to be confused with Burnside's Lemma (Theorem~\ref{thm:burnsides-lemma}). Its proof uses characters of representations (\ref{sec:invariants}) to find a proper nontrivial normal subgroup $N$, and finishes with Extensions of Solvable Groups Are Solvable (Theorem~\ref{thm:extension-solvable}, PS 9.1): $N$ and $G/N$ have orders of the same form, so they are solvable by induction on $|G|$.
 \srcline{lecture 11/6}
 \end{rembox}
+
+% ============================================================================
+% SECTION: INVARIANT VECTORS (Worksheet 15; lecture Mon Nov 9)
+% ============================================================================
+\section{Invariant Vectors}\label{sec:invariants}
+
+\textit{Source: Lecture and Worksheet 15 (Mon Nov 9). Reference: Axler, \emph{Linear Algebra Done Right} (projections, trace).}
+
+By \ref{sec:simple-representations}, representations of a finite group over $\mathbb{R}$ break into simple pieces (Corollary~\ref{cor:direct-sum-of-simples}; over any field in which $|G| \neq 0$, Corollary~\ref{cor:direct-sum-of-simples-general}), and the remaining question is what the simple representations are. The main tool is the character, the function $g \mapsto \operatorname{Tr} \rho_V(g)$ (\ref{sec:characters-of-representations}). This section starts with a first use of it: the dimension of the space of invariant vectors is the average of the traces.
+
+A representation always contains the vectors that no element of $G$ moves. For a finite group, averaging over $G$ is an idempotent onto these vectors. So they split off as a direct summand, and their number, the dimension of that summand, is the average of the traces of the matrices $\rho_V(g)$. Worksheet 15 opens with the linear algebra: idempotents (Definition~\ref{def:idempotent}) and WS 15.1, that an idempotent splits $V$ as kernel $\oplus$ image (Proposition~\ref{prop:idempotent-kernel-image}). Both are in \ref{sec:maschke}, with the proof from Problem Set 9 and the lecture's remark on what needs a basis. This section starts with the trace of an idempotent.
+
+\begin{defbox}[{Trace of a Linear Map}]\label{def:trace-linear-map}
+Let $V$ be a finite-dimensional vector space over $k$ and $T: V \to V$ linear. The \textbf{trace} $\operatorname{Tr}(T) \in k$ is the sum of the diagonal entries of the matrix of $T$ in a basis of $V$.
+\srcline{not from class; used in WS 15}
+\end{defbox}
+
+The trace does not depend on the basis. The matrices $M$, $M'$ of $T$ in two bases are conjugate, $M' = SMS^{-1}$, and $\operatorname{Tr}(SMS^{-1}) = \operatorname{Tr}(MS^{-1}S) = \operatorname{Tr}(M)$, because $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ for square matrices. Compare the remark \emph{Checking Answers in Different Bases} in \ref{sec:representations}. The trace is linear: $\operatorname{Tr}(aT + bT') = a\operatorname{Tr}(T) + b\operatorname{Tr}(T')$, since matrices of linear maps in a fixed basis add and scale entrywise.
+
+\begin{propbox}[{The Trace of an Idempotent}]\label{prop:trace-idempotent}
+Let $V$ be a finite-dimensional vector space over $k$ and $\pi: V \to V$ idempotent (Definition~\ref{def:idempotent}). Then
+\[ \operatorname{Tr}(\pi) = (\dim \operatorname{Im}\pi) \cdot 1_k. \]
+In particular, if $\mathbb{Q} \subseteq k$, then $\operatorname{Tr}(\pi) = \dim \operatorname{Im}\pi$.
+\srcline{WS 15.2; worksheet session 11/9}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} In a basis adapted to $V = \operatorname{Ker}\pi \oplus \operatorname{Im}\pi$, the matrix of $\pi$ is diagonal with entries $1, \ldots, 1, 0, \ldots, 0$.\par
+\textit{(Worksheet session 11/9; uses WS 15.1.)} Every $y \in \operatorname{Im}(\pi)$ is $y = \pi(u)$, so $\pi(y) = \pi^2(u) = \pi(u) = y$: $\pi$ is the identity on its image (Lemma~\ref{lem:idempotent-fixes-image}). Choose a basis $y_1, \ldots, y_r$ of $\operatorname{Im}(\pi)$ and $x_1, \ldots, x_s$ of $\operatorname{Ker}(\pi)$. By WS 15.1 (An Idempotent Splits the Space, Proposition~\ref{prop:idempotent-kernel-image}) and Bases of a Direct Sum (WS 14.1, Proposition~\ref{prop:bases-direct-sum}), together they form a basis of $V$. Since $\pi(y_i) = y_i$ and $\pi(x_j) = 0$, in this basis the matrix of $\pi$ is $\operatorname{diag}(1, \ldots, 1, 0, \ldots, 0)$ with $r$ ones, so
+\[ \operatorname{Tr}(\pi) = \underbrace{1_k + \cdots + 1_k}_{r} = r \cdot 1_k, \qquad r = \dim \operatorname{Im}(\pi). \]
+The trace does not depend on the basis (the paragraph after Definition~\ref{def:trace-linear-map}). \textit{(Not from class.)} If $\mathbb{Q} \subseteq k$, the element $r \cdot 1_k$ is the rational number $r$.
+\end{proof}
+
+\begin{exbox}[{The Trace Sees the Dimension Only Modulo $p$}]\label{ex:trace-idempotent-char-p}
+\textit{(Not from class.)} Over $\mathbb{F}_2$, the identity map of $\mathbb{F}_2^2$ is idempotent with image of dimension $2$, but its trace is $1 + 1 = 0$. In general, over a field in which $p = 0$, Proposition~\ref{prop:trace-idempotent} determines $\dim \operatorname{Im}\pi$ only modulo $p$. This is why Worksheet 15 assumes $\mathbb{Q} \subseteq k$: then $r \cdot 1_k = r$, and the trace recovers the dimension (the remark \emph{Why the Field Should Contain $\mathbb{Q}$} below).
+\end{exbox}
+
+\begin{defbox}[{Invariant Vectors}]\label{def:invariant-vectors}
+Let $G$ be a group and $V$ a representation of $G$. The \textbf{invariant vectors} of $V$ are
+\[ V^G = \{v \in V : g(v) = v \text{ for all } g \in G\}. \]
+\srcline{WS 15; lecture 11/9}
+\end{defbox}
+
+\begin{lembox}[{$V^G$ Is a Subrepresentation}]\label{lem:invariants-subrepresentation}
+$V^G$ is a subrepresentation of $V$, and every $g \in G$ acts on it as the identity.
+\srcline{lecture 11/9 (stated); proof not from class}
+\end{lembox}
+
+\begin{proof}
+\textit{(Not from class; filled in.)} $0 \in V^G$, since $g0 = 0$ by linearity. If $v, w \in V^G$ and $a, b \in k$, then $g(av + bw) = a\,gv + b\,gw = av + bw$ for every $g$, so $V^G$ is a subspace. If $v \in V^G$, then $gv = v \in V^G$, so $V^G$ is $G$-stable, and $g$ acts on it as the identity.
+\end{proof}
+
+\begin{defbox}[{The Averaging Operator}]\label{def:averaging-map}
+Let $G$ be a finite group, $k$ a field in which $|G| \neq 0$, and $V$ a representation of $G$ over $k$. The \textbf{averaging operator} is
+\[ \pi: V \to V, \qquad \pi(v) = \frac{1}{|G|}\sum_{g \in G} g(v). \]
+\srcline{WS 15; lecture 11/9}
+\end{defbox}
+
+$\pi$ is linear, being an average of linear maps. Worksheet 15 and the lecture assume from here on that $G$ is finite and that the field contains $\mathbb{Q}$, which forces $|G| \neq 0$. The remark \emph{Only $|G|$ Was Inverted} below explains which steps need which hypothesis.
+
+\begin{propbox}[{The Image of the Average Is the Invariants}]\label{prop:averaging-image}
+In the setting of Definition~\ref{def:averaging-map}:
+\begin{enumerate}
+    \item $\pi(v) = v$ for every $v \in V^G$;
+    \item $\operatorname{Im}(\pi) = V^G$.
+\end{enumerate}
+\srcline{WS 15.3; board 11/9}
+\end{propbox}
+
+\begin{proof}
+\textit{Idea:} Applying $h$ to the average re-indexes the sum; on an invariant vector every term of the sum is $v$.\par
+\textit{(Board 11/9.)} \emph{$\operatorname{Im}(\pi) \subseteq V^G$.} Let $v = \pi(u) = \frac{1}{|G|}\sum_g g(u)$, and let $h \in G$. By linearity and the action axiom,
+\[ h(v) = \frac{1}{|G|} \sum_{g \in G} (hg)(u) = \frac{1}{|G|} \sum_{k \in G} k(u) = \pi(u) = v, \]
+because as $g$ runs over $G$, so does $k = hg$: left multiplication by $h$ is a bijection of $G$, with inverse $k \mapsto h^{-1}k$. This is the averaging trick again, as in WS 14.8 ($G$ Preserves the Averaged Inner Product, Proposition~\ref{prop:averaged-inner-product-preserved}).
+
+\emph{$V^G \subseteq \operatorname{Im}(\pi)$, and (1).} If $v \in V^G$, then every $g(v) = v$, so
+\[ \pi(v) = \frac{1}{|G|}(v + \cdots + v) = \frac{1}{|G|}\,\big(|G| \cdot 1_k\big)\,v = v; \]
+hence $v = \pi(v) \in \operatorname{Im}(\pi)$.
+\end{proof}
+
+\begin{propbox}[{The Average Is Idempotent}]\label{prop:averaging-idempotent}
+In the setting of Definition~\ref{def:averaging-map}, $\pi^2 = \pi$.
+\srcline{WS 15.4; board 11/9}
+\end{propbox}
+
+\begin{proof}
+\textit{(Board 11/9.)} Let $v \in V$. Then $\pi(v) \in \operatorname{Im}(\pi) = V^G$ by WS 15.3 (Proposition~\ref{prop:averaging-image}(2)), and the second half of that proof shows $\pi(w) = w$ for every $w \in V^G$ (part (1)). So $\pi(\pi(v)) = \pi(v)$.
+\end{proof}
+
+\begin{proof}[Second proof (double sum)]
+\textit{(The lecture mentioned this route as the more computational alternative; written out here.)} Expanding both averages and using $h(g(v)) = (hg)(v)$,
+\[ \pi(\pi(v)) = \frac{1}{|G|}\sum_{h \in G} h\Big(\frac{1}{|G|}\sum_{g \in G} g(v)\Big) = \frac{1}{|G|^2}\sum_{h \in G}\,\sum_{g \in G} (hg)(v). \]
+For fixed $h$, as $g$ runs over $G$ so does $k = hg$, so the inner sum is $\sum_{k \in G} k(v)$ for every $h$. Hence
+\[ \pi(\pi(v)) = \frac{1}{|G|^2}\,\big(|G| \cdot 1_k\big) \sum_{k \in G} k(v) = \frac{1}{|G|}\sum_{k \in G} k(v) = \pi(v). \qedhere \]
+\end{proof}
+
+\begin{corbox}[{Invariants Split Off}]\label{cor:invariants-split-off}
+In the setting of Definition~\ref{def:averaging-map},
+\[ V = V^G \oplus \operatorname{Ker}(\pi). \]
+Moreover $\pi$ is a homomorphism of representations, so $\operatorname{Ker}(\pi)$ is a subrepresentation, and this is a decomposition of $V$ into two subrepresentations.
+\srcline{WS 15.5; board 11/9; the second sentence not from class}
+\end{corbox}
+
+\begin{proof}
+\textit{(Board 11/9.)} $\pi$ is idempotent (WS 15.4, Proposition~\ref{prop:averaging-idempotent}), so $V = \operatorname{Ker}(\pi) \oplus \operatorname{Im}(\pi)$ (WS 15.1, Proposition~\ref{prop:idempotent-kernel-image}), and $\operatorname{Im}(\pi) = V^G$ (WS 15.3, Proposition~\ref{prop:averaging-image}(2)).
+
+\emph{$\pi$ is a homomorphism of representations.} \textit{(Not from class; filled in.)} Let $g \in G$ and $v \in V$. Right multiplication $h \mapsto hg$ is a bijection $G \to G$, so
+\[ \pi(gv) = \frac{1}{|G|}\sum_{h \in G} (hg)(v) = \frac{1}{|G|}\sum_{k \in G} k(v) = \pi(v). \]
+On the other hand $g\pi(v) = \pi(v)$, since $\pi(v) \in V^G$. So $\pi(gv) = g\pi(v)$. Hence $\operatorname{Ker}(\pi)$ is a subrepresentation (Kernels and Images Are Subrepresentations, Proposition~\ref{prop:kernels-images-subrepresentations}(1)), and so is $V^G$ (Lemma~\ref{lem:invariants-subrepresentation}).
+\end{proof}
+
+\begin{rembox}[{Only $|G|$ Was Inverted}]\label{rem:averaging-is-maschke}
+So far the only integer divided by is $|G|$, so WS 15.3--15.5 hold whenever $|G| \neq 0$ in the field, exactly Maschke's hypothesis. Since $\operatorname{Ker}(\pi)$ is also a subrepresentation (Corollary~\ref{cor:invariants-split-off}), this is Maschke's theorem for the particular subrepresentation $V^G$, with an explicit complement and no choice of an auxiliary idempotent. The problem set shows how to use the same idea to split off any subrepresentation: the proof of Maschke's theorem (Theorem~\ref{thm:maschke}) averages an arbitrary idempotent onto $U$, and Proposition~\ref{prop:hom-invariants} below shows that this is the averaging operator of another representation.
+\srcline{lecture 11/9; the subrepresentation $\operatorname{Ker}\pi$ and the last sentence not from class}
+\end{rembox}
+
+\begin{propbox}[{Homomorphisms Are the Invariant Vectors of $\operatorname{Hom}(W, W')$}]\label{prop:hom-invariants}
+Let $W$ and $W'$ be representations of $G$ over $k$, and let $\operatorname{Hom}(W, W')$ be the vector space of linear maps $W \to W'$.
+\begin{enumerate}
+    \item $(g \cdot A)(w) = g\,A(g^{-1}w)$ defines a representation of $G$ on $\operatorname{Hom}(W, W')$.
+    \item $\operatorname{Hom}(W, W')^G$ is the set of homomorphisms of representations $W \to W'$.
+    \item If $G$ is finite and $|G| \neq 0$ in $k$, the averaging operator of $\operatorname{Hom}(W, W')$ sends $P$ to the map $\pi$ of Averaging a Linear Map over $G$ (Lemma~\ref{lem:averaging-linear-map}).
+\end{enumerate}
+\srcline{not from class}
+\end{propbox}
+
+\begin{proof}
+\textit{(Not from class; filled in.)} \textbf{(1)} $g \cdot A$ is linear, as the composition of the linear maps $w \mapsto g^{-1}w$, $A$, and $w' \mapsto gw'$. \emph{Linearity in $A$:} $(g \cdot (aA + bB))(w) = g\big(aA(g^{-1}w) + bB(g^{-1}w)\big) = a\,(g \cdot A)(w) + b\,(g \cdot B)(w)$, since $g$ acts linearly on $W'$. \emph{Action axioms:} $(e \cdot A)(w) = A(w)$, and
+\[ \big(g_1 \cdot (g_2 \cdot A)\big)(w) = g_1\, (g_2 \cdot A)(g_1^{-1}w) = g_1g_2\, A(g_2^{-1}g_1^{-1}w) = (g_1g_2)\, A\big((g_1g_2)^{-1}w\big) = \big((g_1g_2) \cdot A\big)(w). \]
+\textbf{(2)} $g \cdot A = A$ for all $g$ means $g\,A(g^{-1}w) = A(w)$ for all $g \in G$ and $w \in W$. Since $w \mapsto g^{-1}w$ is a bijection of $W$, we may write $w = gu$ with $u \in W$ arbitrary, and the condition becomes $g\,A(u) = A(gu)$ for all $g$ and $u$. This is the definition of a homomorphism of representations (Definition~\ref{def:homomorphism-representations}).
+
+\textbf{(3)} By Definition~\ref{def:averaging-map} for the representation $\operatorname{Hom}(W, W')$, the average of $P$ is the map
+\[ w \mapsto \frac{1}{|G|}\sum_{g \in G} (g \cdot P)(w) = \frac{1}{|G|}\sum_{g \in G} g\,P(g^{-1}w) = \frac{1}{|G|}\sum_{h \in G} h^{-1}P(hw), \]
+substituting $h = g^{-1}$; inversion is a bijection of $G$. This is $\pi(w)$.
+\end{proof}
+
+So Lemma~\ref{lem:averaging-linear-map} is Proposition~\ref{prop:averaging-image} for the representation $\operatorname{Hom}(W, W')$. Averaging lands in the invariant vectors, which are the homomorphisms, and it fixes the vectors that are already invariant. In the proof of Maschke's theorem, $\pi$ is the average of the idempotent $P$ in this sense.
+
+\begin{thmbox}[{Dimension of the Invariants}]\label{thm:dim-invariants-character}
+Let $G$ be a finite group, $k$ a field containing $\mathbb{Q}$, and $V$ a finite-dimensional representation of $G$ over $k$. Then
+\[ \dim V^G = \frac{1}{|G|}\sum_{g \in G} \operatorname{Tr}\rho_V(g). \]
+\srcline{WS 15.6; board 11/9}
+\end{thmbox}
+
+\begin{proof}
+\textit{Idea:} $\dim V^G$ is the trace of the averaging operator, and the trace is linear.\par
+\textit{(Board 11/9.)} Since $\mathbb{Q} \subseteq k$, $|G| \cdot 1_k$ is the nonzero rational number $|G|$, so $\pi$ is defined. Since $\pi$ is idempotent with image $V^G$ (WS 15.3--15.4, Propositions~\ref{prop:averaging-image} and~\ref{prop:averaging-idempotent}), WS 15.2 (Proposition~\ref{prop:trace-idempotent}, with $\mathbb{Q} \subseteq k$) gives $\dim V^G = \dim \operatorname{Im}(\pi) = \operatorname{Tr}(\pi)$. The trace is linear (adding matrices adds traces, scaling scales them), so
+\[ \operatorname{Tr}(\pi) = \operatorname{Tr}\Big( \frac{1}{|G|} \sum_{g \in G} \rho_V(g) \Big) = \frac{1}{|G|} \sum_{g \in G} \operatorname{Tr} \rho_V(g). \qedhere \]
+\end{proof}
+
+\begin{rembox}[{Why the Field Should Contain $\mathbb{Q}$}]\label{rem:field-contains-q}
+If the field has characteristic $p$ with $p \nmid |G|$, every step above still works, but the conclusion is weaker than it looks. $\dim V^G$ is an integer, and the formula only says that its image in the field equals the average of the traces computed in the field, so it determines $\dim V^G$ modulo $p$ (Example~\ref{ex:trace-idempotent-char-p}). For a group of order $60$ over a field in which $7 = 0$, dividing by $60$ is fine, but one learns $\dim V^G$ only mod $7$. When the field contains $\mathbb{Q}$, distinct integers stay distinct, and the formula computes $\dim V^G$ exactly.
+\srcline{lecture 11/9}
+\end{rembox}
+
+The lecture remarked that the formula resembles Burnside's Lemma (Theorem~\ref{thm:burnsides-lemma}, PS 3.3) and left the connection to think about. It is an instance:
+
+\begin{corbox}[{Burnside's Lemma from the Trace Formula}]\label{cor:burnside-from-characters}
+Let a finite group $G$ act on a finite set $X$, let $\mathbb{Q} \subseteq k$, and let $kX$ be the permutation representation (Definition~\ref{def:permutation-representation-g-set}).
+\begin{enumerate}
+    \item $\operatorname{Tr}\rho_{kX}(g) = |\operatorname{Fix}(g)|$, the number of $x \in X$ with $gx = x$.
+    \item The orbit sums $s_O = \sum_{x \in O} e_x$, one for each orbit $O$, form a basis of $(kX)^G$. So $\dim (kX)^G = |G \backslash X|$, the number of orbits.
+    \item Hence $|G \backslash X| = \frac{1}{|G|}\sum_{g \in G} |\operatorname{Fix}(g)|$, which is Burnside's Lemma (Theorem~\ref{thm:burnsides-lemma}).
+\end{enumerate}
+\srcline{the connection raised in lecture 11/9; the proof not from class}
+\end{corbox}
+
+\begin{proof}
+\textit{Idea:} Counting orbits is counting invariant vectors of a permutation representation.\par
+\textit{(Not from class; filled in.)} \textbf{(1)} In the basis $(e_x)_{x \in X}$, $g e_x = e_{gx}$, so the matrix of $\rho(g)$ has the entry $1$ in position $(gx, x)$ and $0$ elsewhere in column $x$. Its diagonal entry in position $(x, x)$ is $1$ if $gx = x$ and $0$ otherwise, so $\operatorname{Tr}\rho_{kX}(g) = |\operatorname{Fix}(g)| \cdot 1_k = |\operatorname{Fix}(g)|$.
+
+\textbf{(2)} Let $v = \sum_{x} a_x e_x$. Then, substituting $y = gx$,
+\[ gv = \sum_{x \in X} a_x e_{gx} = \sum_{y \in X} a_{g^{-1}y}\, e_y. \]
+So $gv = v$ for all $g$ if and only if $a_{g^{-1}y} = a_y$ for all $g \in G$ and $y \in X$, that is, if and only if $x \mapsto a_x$ is constant on each orbit, since $x$ and $y$ lie in the same orbit exactly when $x = g^{-1}y$ for some $g$. Such a $v$ is $\sum_O a_O\, s_O$, with $a_O$ the common value on $O$. So the orbit sums span $(kX)^G$. Each $s_O$ is invariant, by the criterion just proved. They are linearly independent, because distinct orbits are disjoint, so distinct $s_O$ involve disjoint sets of basis vectors $e_x$, and each $s_O \neq 0$ since orbits are nonempty.
+
+\textbf{(3)} By Theorem~\ref{thm:dim-invariants-character} with $V = kX$, using (1) and (2),
+\[ |G \backslash X| = \dim (kX)^G = \frac{1}{|G|}\sum_{g \in G} \operatorname{Tr}\rho_{kX}(g) = \frac{1}{|G|}\sum_{g \in G} |\operatorname{Fix}(g)|. \]
+Both sides are rational numbers, and $\mathbb{Q} \subseteq k$, so this is the equality of Burnside's Lemma.
+\end{proof}
+
+Worksheet 15's formula therefore generalizes Burnside's Lemma from permutation representations to all finite-dimensional representations, with the number of fixed points replaced by the trace.
+
+\subsection{Examples}\label{sub:invariants-examples}
+
+\begin{exbox}[{The Trivial and the Sign Representation}]\label{ex:invariants-trivial-sign}
+\textit{(Not from class.)} Let $\mathbb{Q} \subseteq k$.
+\begin{enumerate}
+    \item If $G$ acts trivially on $V$ (Example~\ref{ex:trivial-representation}), then $V^G = V$ and $\operatorname{Tr}\rho_V(g) = \operatorname{Tr}(\mathrm{id}_V) = \dim V$ for every $g$, so Theorem~\ref{thm:dim-invariants-character} reads $\dim V = \frac{1}{|G|} \cdot |G| \dim V$.
+    \item Let $n \geq 2$ and let $S_n$ act on $k$ by $\sigma \cdot c = \sgn(\sigma)\,c$, the sign representation (Example~\ref{ex:one-dimensional-representations}). An invariant $c$ satisfies $-c = (1\,2) \cdot c = c$, so $2c = 0$ and $c = 0$: $k^{S_n} = \{0\}$. On the other side $\operatorname{Tr}\rho(\sigma) = \sgn(\sigma)$, and $\sum_{\sigma \in S_n} \sgn(\sigma) = 0$, since the even permutations $A_n$ and the odd permutations, the other coset of $A_n$, have $n!/2$ elements each. So both sides of the theorem are $0$.
+\end{enumerate}
+\end{exbox}
+
+\begin{exbox}[{$S_3$ on $k^3$ and on the Plane $x + y + z = 0$}]\label{ex:invariants-s3}
+\textit{(Not from class.)} Let $\mathbb{Q} \subseteq k$, let $S_3$ permute the coordinates of $k^3 = k\{1,2,3\}$, and let $U_1 = k(1,1,1)$ and $U_2 = \{x + y + z = 0\}$ be the subrepresentations of Example~\ref{ex:subrepresentations-k123}.
+\begin{enumerate}
+    \item \emph{Invariant vectors.} If $(x, y, z)$ is invariant, then $(1\,2)$ gives $x = y$ and $(2\,3)$ gives $y = z$; conversely the constant vectors are fixed by every permutation. So $(k^3)^{S_3} = U_1$.
+    \item \emph{The averaging operator.} As $\sigma$ runs over $S_3$, $\sigma(i)$ takes each value $j$ exactly twice: the $\sigma$ with $\sigma(i) = j$ form a coset of the stabilizer of $i$, which has $2$ elements. So
+    \[ \pi(e_i) = \frac16 \sum_{\sigma \in S_3} e_{\sigma(i)} = \frac{2}{6}(e_1 + e_2 + e_3), \qquad \pi(x, y, z) = \frac{x + y + z}{3}\,(1, 1, 1). \]
+    Its matrix is $\frac13$ times the all-ones matrix, $\operatorname{Ker}\pi = U_2$, and Corollary~\ref{cor:invariants-split-off} is the decomposition $k^3 = U_1 \oplus U_2$ of When $k\{1,2,3\} = U_1 \oplus U_2$ (Proposition~\ref{prop:k123-direct-sum}).
+    \item \emph{The count.} $\rho(\sigma)$ is a permutation matrix, so its trace is the number of fixed points of $\sigma$ (Corollary~\ref{cor:burnside-from-characters}(1)): $3$ for $e$, $1$ for each of the three transpositions, $0$ for each of the two $3$-cycles. So
+    \[ \frac16\big(3 + 3 \cdot 1 + 2 \cdot 0\big) = 1 = \dim U_1. \]
+    \item \emph{The plane.} In a basis $(1,1,1), b_1, b_2$ with $b_1, b_2$ a basis of $U_2$, every $\rho(\sigma)$ is block diagonal (Proposition~\ref{prop:direct-sum-block-diagonal}) with blocks $[\,1\,]$ and $\rho_{U_2}(\sigma)$. So $\operatorname{Tr}\rho_{U_2}(\sigma) = \operatorname{Tr}\rho(\sigma) - 1$, which is $2$, $0$ (transpositions) and $-1$ ($3$-cycles). Then
+    \[ \frac16\big(2 + 3 \cdot 0 + 2 \cdot (-1)\big) = 0 = \dim U_2^{S_3}, \]
+    as it must be: $U_2^{S_3} = U_2 \cap U_1 = \{0\}$, since $3 \neq 0$ in $k$.
+\end{enumerate}
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\fill[blue!70!black!7] (0.051,-0.679) -- (0.272,-0.990) -- (0.502,-1.283) -- (0.738,-1.554) -- (0.978,-1.802) -- (1.219,-2.024) -- (1.459,-2.216) -- (1.695,-2.377) -- (1.924,-2.505) -- (2.143,-2.599) -- (2.352,-2.657) -- (2.546,-2.680) -- (2.724,-2.666) -- (2.885,-2.616) -- (3.025,-2.531) -- (3.145,-2.411) -- (3.242,-2.257) -- (3.315,-2.072) -- (3.364,-1.858) -- (3.388,-1.616) -- (3.387,-1.350) -- (3.360,-1.061) -- (3.309,-0.755) -- (3.233,-0.433) -- (3.134,-0.100) -- (3.012,0.242) -- (2.869,0.587) -- (2.707,0.933) -- (2.527,1.276) -- (2.331,1.611) -- (2.122,1.936) -- (1.901,2.247) -- (1.671,2.540) -- (1.435,2.811) -- (1.195,3.059) -- (0.954,3.281) -- (0.714,3.473) -- (0.478,3.634) -- (0.249,3.762) -- (0.030,3.856) -- (-0.179,3.914) -- (-0.373,3.937) -- (-0.551,3.923) -- (-0.712,3.873) -- (-0.852,3.788) -- (-0.972,3.668) -- (-1.069,3.514) -- (-1.142,3.329) -- (-1.191,3.115) -- (-1.215,2.873) -- (-1.214,2.607) -- (-1.187,2.319) -- (-1.136,2.012) -- (-1.060,1.690) -- (-0.961,1.357) -- (-0.839,1.016) -- (-0.696,0.670) -- (-0.534,0.324) -- (-0.354,-0.019) -- (-0.158,-0.354) -- cycle;
+\draw[blue!70!black!40, thin] (0.051,-0.679) -- (0.272,-0.990) -- (0.502,-1.283) -- (0.738,-1.554) -- (0.978,-1.802) -- (1.219,-2.024) -- (1.459,-2.216) -- (1.695,-2.377) -- (1.924,-2.505) -- (2.143,-2.599) -- (2.352,-2.657) -- (2.546,-2.680) -- (2.724,-2.666) -- (2.885,-2.616) -- (3.025,-2.531) -- (3.145,-2.411) -- (3.242,-2.257) -- (3.315,-2.072) -- (3.364,-1.858) -- (3.388,-1.616) -- (3.387,-1.350) -- (3.360,-1.061) -- (3.309,-0.755) -- (3.233,-0.433) -- (3.134,-0.100) -- (3.012,0.242) -- (2.869,0.587) -- (2.707,0.933) -- (2.527,1.276) -- (2.331,1.611) -- (2.122,1.936) -- (1.901,2.247) -- (1.671,2.540) -- (1.435,2.811) -- (1.195,3.059) -- (0.954,3.281) -- (0.714,3.473) -- (0.478,3.634) -- (0.249,3.762) -- (0.030,3.856) -- (-0.179,3.914) -- (-0.373,3.937) -- (-0.551,3.923) -- (-0.712,3.873) -- (-0.852,3.788) -- (-0.972,3.668) -- (-1.069,3.514) -- (-1.142,3.329) -- (-1.191,3.115) -- (-1.215,2.873) -- (-1.214,2.607) -- (-1.187,2.319) -- (-1.136,2.012) -- (-1.060,1.690) -- (-0.961,1.357) -- (-0.839,1.016) -- (-0.696,0.670) -- (-0.534,0.324) -- (-0.354,-0.019) -- (-0.158,-0.354) -- cycle;
+\fill[blue!70!black!16] (-0.013,3.332) -- (-0.802,2.336) -- (0.307,-0.543) -- (2.059,-2.050) -- (2.966,-0.904) -- (2.002,1.599) -- cycle;
+\draw[blue!70!black, thin] (-0.013,3.332) -- (-0.802,2.336) -- (0.307,-0.543) -- (2.059,-2.050) -- (2.966,-0.904) -- (2.002,1.599) -- cycle;
+\draw[->, black!55, thin] (0,0) -- (1.831,-1.221) node[font=\scriptsize, below] {$x$};
+\draw[->, black!55, thin] (0,0) -- (2.804,0.566) node[font=\scriptsize, right] {$y$};
+\draw[->, black!55, thin] (0,0) -- (0.000,2.698) node[font=\scriptsize, above] {$z$};
+\draw[black!55, densely dotted] (1.087,0.629) -- (2.059,-2.050);
+\draw[black!55, densely dotted] (1.087,0.629) -- (0.307,-0.543);
+\draw[black!55, densely dotted] (1.087,0.629) -- (2.966,-0.904);
+\draw[black!55, densely dotted] (1.087,0.629) -- (-0.802,2.336);
+\draw[black!55, densely dotted] (1.087,0.629) -- (2.002,1.599);
+\draw[black!55, densely dotted] (1.087,0.629) -- (-0.013,3.332);
+\draw[red!70!black, thick] (-1.222,-0.707) -- (2.716,1.571) node[right, font=\scriptsize] {$U_1 = \mathbb{R}(1,1,1)$};
+\fill[blue!70!black] (2.059,-2.050) circle (1.6pt);
+\fill[blue!70!black] (0.307,-0.543) circle (1.6pt);
+\fill[blue!70!black] (2.966,-0.904) circle (1.6pt);
+\fill[blue!70!black] (-0.802,2.336) circle (1.6pt);
+\fill[blue!70!black] (2.002,1.599) circle (1.6pt);
+\fill[blue!70!black] (-0.013,3.332) circle (1.6pt);
+\draw[->, orange!85!black, thick] (2.059,-2.050) -- (1.110,0.563);
+\fill[red!70!black] (1.087,0.629) circle (2.1pt);
+\fill (0,0) circle (1.2pt) node[below left=-1pt, font=\scriptsize] {$0$};
+\node[font=\scriptsize, anchor=north] at (2.059,-2.050) {$v$};
+\node[font=\scriptsize, red!70!black, anchor=north west] at (1.137,0.609) {$\pi(v)$};
+\node[font=\scriptsize, blue!70!black, anchor=west] at (0.367,-0.543) {$(2\,3)v$};
+\node[font=\scriptsize, blue!70!black, anchor=south] at (-0.373,3.967) {plane $x + y + z = 1.2$};
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} The averaging operator of Example~\ref{ex:invariants-s3} over $k = \mathbb{R}$, for $v = (1.5, 0.35, -0.65)$. Permuting the coordinates of $v$ gives six points (blue), its orbit. All of them have coordinate sum $1.2$, so they lie in the plane $x + y + z = 1.2$, where they form a hexagon. $\pi(v)$, the average of the six, is the centre of mass of the hexagon (red, $(0.4, 0.4, 0.4)$), and it lies on the line $U_1 = \mathbb{R}(1,1,1)$ of invariant vectors. The orange arrow $\pi(v) - v$ is parallel to the plane $x + y + z = 0$, so $v - \pi(v) \in U_2 = \operatorname{Ker}\pi$: this is the decomposition $v = \pi(v) + (v - \pi(v))$ of $\mathbb{R}^3 = U_1 \oplus U_2$.
+%% <<< END ADDED
+
+% ============================================================================
+% SECTION: CHARACTERS OF REPRESENTATIONS (lecture Mon Nov 9)
+% ============================================================================
+\section{Characters of Representations}\label{sec:characters-of-representations}
+
+\textit{Source: Lecture (Mon Nov 9).}
+
+\begin{defbox}[{The Character of a Representation}]\label{def:character-representation}
+Let $V$ be a finite-dimensional representation of $G$ over $k$. The \textbf{character} of $V$ is the function
+\[ \chi_V: G \to k, \qquad \chi_V(g) = \operatorname{Tr}\rho_V(g) \]
+(Definition~\ref{def:trace-linear-map}).
+\srcline{WS 15; lecture 11/9}
+\end{defbox}
+
+In this language, WS 15.6 (Theorem~\ref{thm:dim-invariants-character}) reads
+\[ \dim V^G = \frac{1}{|G|}\sum_{g \in G} \chi_V(g). \]
+Many things in representation theory can be computed from characters, starting with this one.
+
+\begin{rembox}[{Two Meanings of ``Character''}]\label{rem:two-meanings-character}
+In \ref{sec:characters} a character was a homomorphism from $G$ to an abelian group, most often $k^\times$ (Definition~\ref{def:character}). That is the special case of a one-dimensional representation (One-Dimensional Representations and Characters, Example~\ref{ex:one-dimensional-representations}): for $V = k$, $\rho_V(g)$ is the $1 \times 1$ matrix $[\chi(g)]$, whose trace is $\chi(g)$, so $\chi_V = \chi$. In general $\chi_V$ is not a homomorphism (Example~\ref{ex:character-not-homomorphism}).
+\srcline{lecture 11/9}
+\end{rembox}
+
+\begin{propbox}[{Characters Are Class Functions}]\label{prop:character-class-function}
+Let $V$ be a finite-dimensional representation of $G$. Then
+\begin{enumerate}
+    \item $\chi_V(e) = (\dim V) \cdot 1_k$;
+    \item $\chi_V(hgh^{-1}) = \chi_V(g)$ for all $g, h \in G$: the character is constant on each conjugacy class.
+\end{enumerate}
+\srcline{lecture 11/9; part (1) not from class}
+\end{propbox}
+
+\begin{proof}
+\textbf{(1)} \textit{(Not from class; filled in.)} $e$ acts as the identity (action axiom), whose matrix in any basis is the identity matrix, of trace $(\dim V) \cdot 1_k$.
+
+\textbf{(2)} \textit{(Board 11/9.)} Since $\rho_V$ is a homomorphism (Representations Are Homomorphisms to $GL(V)$, Proposition~\ref{prop:representations-homomorphisms-glv}),
+\[ \rho_V(hgh^{-1}) = \rho_V(h)\,\rho_V(g)\,\rho_V(h)^{-1}, \]
+and $\operatorname{Tr}(SAS^{-1}) = \operatorname{Tr}(A)$ for invertible $S$, equivalently $\operatorname{Tr}(AB) = \operatorname{Tr}(BA)$ (the paragraph after Definition~\ref{def:trace-linear-map}). Hence $\chi_V(hgh^{-1}) = \operatorname{Tr}\rho_V(g) = \chi_V(g)$.
+\end{proof}
+
+So a character is determined by one value per conjugacy class, which is much less data than one value per element: groups usually have many fewer conjugacy classes than elements. This is the analogue of Characters Are Constant on Conjugacy Classes (Proposition~\ref{prop:characters-constant-conjugacy-classes}) for the new meaning of the word, with a different reason: the trace is invariant under conjugation, while a homomorphism to an abelian group is constant on conjugacy classes because the target is commutative.
+
+\begin{propbox}[{Characters Add over Direct Sums}]\label{prop:characters-add}
+Let $W = U \oplus V$ (Definition~\ref{def:internal-direct-sum-subspaces}) be finite-dimensional, let $A: U \to U$ and $B: V \to V$ be linear, and let $A \oplus B: W \to W$, $u + v \mapsto Au + Bv$. Then
+\[ \operatorname{Tr}(A \oplus B) = \operatorname{Tr}(A) + \operatorname{Tr}(B). \]
+Consequently, if $W = U \oplus V$ is a representation of $G$ and $U$, $V$ are subrepresentations, then $\chi_W = \chi_U + \chi_V$.
+\srcline{lecture 11/9}
+\end{propbox}
+
+\begin{proof}
+\textit{(Board 11/9; the statement was proposed in class and then proved.)} By Bases of a Direct Sum (Proposition~\ref{prop:bases-direct-sum}), a basis $u_1, \ldots, u_m$ of $U$ and a basis $v_1, \ldots, v_n$ of $V$ together form a basis of $W$. In it the matrix of $A \oplus B$ is block diagonal, $\left(\begin{smallmatrix} A & 0 \\ 0 & B \end{smallmatrix}\right)$: $A$ uses nothing from $V$, and $B$ nothing from $U$. Its diagonal is that of $A$ followed by that of $B$, so the traces add. For representations, $\rho_W(g) = \rho_U(g) \oplus \rho_V(g)$, since $g(u + v) = gu + gv$ with $gu \in U$ and $gv \in V$ (WS 14.2, Proposition~\ref{prop:direct-sum-block-diagonal}). Taking traces gives $\chi_W(g) = \chi_U(g) + \chi_V(g)$.
+\end{proof}
+
+\begin{defbox}[{Character Table}]\label{def:character-table}
+The \textbf{character table} of $G$ lists characters of representations: its columns are indexed by the conjugacy classes of $G$ (one representative each), its rows by representations, and the entry is the value of $\chi_V$ on the class.
+\srcline{lecture 11/9}
+\end{defbox}
+
+\begin{exbox}[{Characters of $S_3$ over $\mathbb{R}$}]\label{ex:characters-s3}
+The conjugacy classes of $S_3$ are the cycle types (Conjugacy Classes in $S_n$ Are Cycle Types, Theorem~\ref{thm:conjugacy-classes-sn-cycle-types}), with representatives $e$, $(1\,2)$, $(1\,2\,3)$ and sizes $1$, $3$, $2$.
+\begin{center}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabular}{l|ccc}
+ & $e$ & $(1\,2)$ & $(1\,2\,3)$ \\ \hline
+trivial, $\mathbb{R}(1,1,1)$ & $1$ & $1$ & $1$ \\
+sign & $1$ & $-1$ & $1$ \\
+$U = (1,1,1)^\perp$ & $2$ & $0$ & $-1$ \\ \hline
+permutation, $\mathbb{R}^3 = \mathbb{R}(1,1,1) \oplus U$ & $3$ & $1$ & $0$
+\end{tabular}
+\end{center}
+\begin{itemize}[nosep]
+    \item \emph{Trivial:} every $\rho(g)$ is the $1 \times 1$ matrix $[1]$.
+    \item \emph{Permutation representation:} the trace of a permutation matrix counts the basis vectors $e_i$ sent to themselves, i.e.\ the fixed points: $3$ for $e$, $1$ for $(1\,2)$, whose matrix $\left(\begin{smallmatrix} 0&1&0\\1&0&0\\0&0&1 \end{smallmatrix}\right)$ has one $1$ on the diagonal, and $0$ for $(1\,2\,3)$. It is not simple.
+    \item \emph{$U$:} by additivity (Proposition~\ref{prop:characters-add}), $\chi_U = \chi_{\mathbb{R}^3} - \chi_{\mathrm{triv}} = (2, 0, -1)$, matching the traces of the matrices $\rho_{U_2}(g)$ in Example~\ref{ex:subrepresentations-k123}.
+    \item \emph{Sign:} $\rho(g) = [\sgn g]$, so the values are those of $\sgn$: $1$, $-1$, and $1$ for the even permutation $(1\,2\,3)$.
+\end{itemize}
+\textit{(Not from class.)} Checking WS 15.6 against the table, with class sizes $1, 3, 2$: $\frac{1}{6}(3 + 3 \cdot 1 + 2 \cdot 0) = 1 = \dim (\mathbb{R}^3)^{S_3}$, the line $\mathbb{R}(1,1,1)$; $\frac{1}{6}(2 + 0 - 2) = 0$ for $U$; and $\frac16(1 - 3 + 2) = 0$ for the sign representation, as in Examples~\ref{ex:invariants-trivial-sign} and~\ref{ex:invariants-s3}.
+\srcline{lecture 11/9; the check not from class}
+\end{exbox}
+
+%% >>> ADDED: figure (not from lecture)
+\begin{center}
+\begin{tikzpicture}[>=Stealth]
+\begin{scope}[xshift=0.0cm]
+\fill[blue!70!black!10] (0.000,1.250) -- (-1.083,-0.625) -- (1.083,-0.625) -- cycle;
+\draw[blue!70!black, thick] (0.000,1.250) -- (-1.083,-0.625) -- (1.083,-0.625) -- cycle;
+\draw[red!70!black, dashed] (-1.256,0.725) -- (1.516,-0.875);
+\node[red!70!black, font=\scriptsize, anchor=west] at (1.536,-0.875) {mirror of $(1\,2)$};
+\draw[->, orange!85!black, thick] (100:0.45) arc (100:220:0.45);
+\node[orange!85!black, font=\scriptsize] at (160:0.78) {$120^\circ$};
+\node[font=\scriptsize] at (0,-1.35) {$S_3$ permutes $e_1, e_2, e_3$};
+\fill (0.000,1.250) circle (1.8pt);
+\node[font=\scriptsize, anchor=south] at (0.000,1.250) {$e_1$};
+\fill (-1.083,-0.625) circle (1.8pt);
+\node[font=\scriptsize, anchor=north east] at (-1.083,-0.625) {$e_2$};
+\fill (1.083,-0.625) circle (1.8pt);
+\node[font=\scriptsize, anchor=north west] at (1.083,-0.625) {$e_3$};
+\draw[red!70!black, thick] (1.083,-0.625) circle (4pt);
+\node[font=\scriptsize, align=left, anchor=north west] at (-1.6,-1.6) {trace of a permutation matrix\\$=$ number of fixed points:\\$e$: $3$, \ $(1\,2)$: $1$ (only $e_3$, circled),\\$(1\,2\,3)$: $0$};
+\end{scope}
+\begin{scope}[xshift=5.0cm]
+\fill[blue!70!black!10] (0.000,1.250) -- (-1.083,-0.625) -- (1.083,-0.625) -- cycle;
+\draw[blue!70!black, thick] (0.000,1.250) -- (-1.083,-0.625) -- (1.083,-0.625) -- cycle;
+\draw[red!70!black, dashed] (-1.256,0.725) -- (1.516,-0.875);
+\node[red!70!black, font=\scriptsize, anchor=west] at (1.536,-0.875) {mirror of $(1\,2)$};
+\draw[->, orange!85!black, thick] (100:0.45) arc (100:220:0.45);
+\node[orange!85!black, font=\scriptsize] at (160:0.78) {$120^\circ$};
+\node[font=\scriptsize] at (0,-1.35) {$S_3$ on the plane $U = (1,1,1)^\perp$};
+\fill[blue!70!black] (0.000,1.250) circle (1.4pt);
+\node[font=\scriptsize, blue!70!black, anchor=south] at (0.000,1.250) {$\bar e_1$};
+\fill[blue!70!black] (-1.083,-0.625) circle (1.4pt);
+\node[font=\scriptsize, blue!70!black, anchor=north east] at (-1.083,-0.625) {$\bar e_2$};
+\fill[blue!70!black] (1.083,-0.625) circle (1.4pt);
+\node[font=\scriptsize, blue!70!black, anchor=north west] at (1.083,-0.625) {$\bar e_3$};
+\draw[->, very thick, red!70!black] (0,0) -- (0.823,-0.475) node[pos=0.55, below left=-1pt, font=\scriptsize] {$+1$};
+\draw[->, very thick] (0,0) -- (0.400,0.693) node[right, font=\scriptsize] {$x$};
+\draw[->, very thick, black!55] (0,0) -- (-0.400,-0.693) node[below=1pt, font=\scriptsize] {$(1\,2)x = -x$};
+\node[font=\scriptsize, align=left, anchor=north west] at (-1.6,-1.6) {$e$: $2$, \ $(1\,2)$: eigenvalues $+1, -1$, trace $0$,\\$(1\,2\,3)$: rotation by $120^\circ$,\\trace $2\cos 120^\circ = -1$};
+\end{scope}
+\end{tikzpicture}
+\end{center}
+\textit{(Not from lecture; figure added.)} Where the rows of the table come from. Left: $S_3$ permutes the basis vectors $e_1, e_2, e_3$, drawn as the corners of a triangle. The trace of a permutation matrix is the number of fixed corners: $3$ for $e$, $1$ for $(1\,2)$, which reflects in the dashed mirror and fixes only $e_3$ (circled), and $0$ for $(1\,2\,3)$, which turns the triangle by $120^\circ$. Right: on the plane $U = (1,1,1)^\perp$, with $\bar e_i$ the projections of the $e_i$, $(1\,2)$ is the reflection in the dashed line. It fixes the red vector on the mirror (eigenvalue $+1$) and reverses the perpendicular vector $x$ (eigenvalue $-1$), so its trace is $1 + (-1) = 0$. The $3$-cycle is the rotation by $120^\circ$, with matrix $\left(\begin{smallmatrix} \cos 120^\circ & -\sin 120^\circ \\ \sin 120^\circ & \cos 120^\circ \end{smallmatrix}\right)$ in an orthonormal basis and trace $2\cos 120^\circ = -1$.
+%% <<< END ADDED
+
+\begin{exbox}[{The Character of $k\{1,2,3\}$ Is Not a Homomorphism}]\label{ex:character-not-homomorphism}
+\textit{(Not from class.)} The character of the permutation representation $k\{1,2,3\} = k^3$ of $S_3$ takes the values $3$, $1$, $0$ on the three conjugacy classes (Example~\ref{ex:characters-s3}). The value $0$ at $(1\,2\,3)$ does not lie in $k^\times$, so $\chi$ is not a homomorphism $S_3 \to k^\times$. And $\chi(e) = 3 \neq 1$ whenever $2 \neq 0$ in $k$, while a homomorphism sends $e$ to $1$.
+\end{exbox}
 
 
 \appendix
@@ -9615,7 +10530,7 @@ Representation theory also proves theorems about groups. A first example: every 
     \item \textbf{To find the subgroups of a quotient $G/N$.} They correspond to the subgroups of $G$ containing $N$, via $A \mapsto A/N$, with normal matching normal (Correspondence Theorem, \ref{thm:correspondence}).
     \item \textbf{To decide whether $g, hgh^{-1} \in N$ are conjugate \emph{in} $N \trianglelefteq G$.} Check whether $h \in C_G(g)N$ (PS 5.2, Proposition~\ref{prop:conjugacy-normal-subgroup}). For $N = A_n$: a class of $S_n$ splits in $A_n$ iff its centralizer is contained in $A_n$.
     \item \textbf{To show $H/N$ is abelian.} Show that every commutator $ghg^{-1}h^{-1}$ of $H$ lies in $N$ (Abelian Quotients and Commutators, \ref{sec:commutators}).
-    \item \textbf{To show $G$ is solvable.} Exhibit a chain $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ with abelian quotients (e.g.\ $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$), or compute the derived series down to $\{e\}$ (\ref{sec:solvable}, \ref{sec:derived-series}). To show $G$ is \emph{not} solvable, find a non-abelian simple subgroup or quotient, e.g.\ $A_5$.
+    \item \textbf{To show $G$ is solvable.} Exhibit a chain $\{e\} = G_0 \trianglelefteq \cdots \trianglelefteq G_N = G$ with abelian quotients (e.g.\ $\{e\} \trianglelefteq K \trianglelefteq A_4 \trianglelefteq S_4$), or compute the derived series down to $\{e\}$ (\ref{sec:solvable}, \ref{sec:derived-series}), or find $N \trianglelefteq G$ with $N$ and $G/N$ solvable (Theorem~\ref{thm:extension-solvable}, PS 9.1); semidirect products of solvable groups and $p$-groups are solvable. To show $G$ is \emph{not} solvable, find a non-abelian simple subgroup or quotient, e.g.\ $A_5$.
     \item \textbf{To put a $p$-subgroup inside a Sylow subgroup.} Let it act on $\Gamma/\Pi$, whose size is prime to $p$; a fixed coset $\gamma\Pi$ gives $P \subseteq \gamma\Pi\gamma^{-1}$ (WS 10.1, \ref{sec:sylow-theorems}).
     \item \textbf{To show no group of order $n$ is simple.} If $n = p^k$ ($k \geq 2$), use the center (Proposition~\ref{prop:primes-prime-powers-simple}). Otherwise list the candidates for $n_p$, the divisors of $m$ that are $\equiv 1 \pmod p$: if $n_p = 1$ is forced, the Sylow $p$-subgroup is normal (Corollary~\ref{cor:unique-sylow-not-simple}); if $n_p > 1$, conjugation gives $G \to S_{n_p}$, which must be injective with image in $A_{n_p}$, so check whether $|G|$ divides $n_p!/2$ (Corollary~\ref{cor:simple-land-an}).
     \item \textbf{To decompose $G$ as a product.} Find $N \trianglelefteq G$ and $S \leq G$ with $N \cap S = \{e\}$ and $NS = G$ (for finite $G$, $|N|\,|S| = |G|$ suffices given the trivial intersection, Lemma~\ref{lem:order-product-subgroups}). Then $G \cong N \rtimes_\varphi S$ with $\varphi(s)(n) = sns^{-1}$ (Theorem~\ref{thm:internal-external-semidirect}); if $S$ is normal too, $G \cong N \times S$ (Theorem~\ref{thm:internal-direct-product}).
@@ -9623,6 +10538,8 @@ Representation theory also proves theorems about groups. A first example: every 
     \item \textbf{To find the composition factors of a finite group.} Build any composition series, e.g.\ by stitching a series of a normal subgroup $N$ to the preimage of a series of $G/N$ (Lemma~\ref{lem:finite-composition-series}); by Jordan--H\"older (Theorem~\ref{thm:jordan-holder}) the factors do not depend on the choice. $G$ is solvable iff every factor is some $\mathbb{Z}/p\mathbb{Z}$.
     \item \textbf{To decide whether $W = U_1 \oplus U_2$ (finite dimensions).} Put a basis of $U_1$ and a basis of $U_2$ side by side as columns; $W$ is the direct sum iff this matrix is square and invertible, e.g.\ iff its determinant is nonzero \emph{in $k$} (Proposition~\ref{prop:k123-direct-sum}). To compare matrices of one representation computed in different bases, compare traces and determinants (the remark \emph{Checking Answers in Different Bases} in \ref{sec:representations}).
     \item \textbf{To split off a subrepresentation $U$ (finite $G$, real $W$).} Average any inner product over $G$, $\langle v, w \rangle = \sum_g (gv, gw)$; then $U^\perp$ is a complementary subrepresentation (Corollary~\ref{cor:maschke-real}), and in a basis adapted to $W = U \oplus U^\perp$ all $\rho(g)$ are block diagonal (Proposition~\ref{prop:direct-sum-block-diagonal}). In general this is Maschke's theorem, valid when $|G| \neq 0$ in $k$ (Theorem~\ref{thm:maschke}).
+    \item \textbf{To split off a subrepresentation $U$ (finite $G$, $|G| \neq 0$ in $k$).} Take any idempotent $P$ with image $U$ (extend a basis of $U$) and average it, $\pi(w) = \frac{1}{|G|}\sum_h h^{-1}P(hw)$; then $\operatorname{Ker}\pi$ is a complementary subrepresentation (the proof of Theorem~\ref{thm:maschke}). For $U = V^G$ the averaging map $\frac{1}{|G|}\sum_g g$ does it directly (\ref{sec:invariants}).
+    \item \textbf{To compute $\dim V^G$ or a character ($G$ finite, $\mathbb{Q} \subseteq k$).} $\dim V^G = \frac{1}{|G|}\sum_g \chi_V(g)$ (Theorem~\ref{thm:dim-invariants-character}). Characters are constant on conjugacy classes and add over direct sums, so a character table needs one column per conjugacy class; for a permutation representation, $\chi(g)$ is the number of fixed points of $g$, and the formula counts orbits (Burnside's Lemma) (\ref{sec:invariants}, \ref{sec:characters-of-representations}).
     \item \textbf{To show a representation is simple.} Rule out subrepresentations other than $\{0\}$ and $V$; in dimension $2$ these are invariant lines, i.e.\ common eigenvectors of all $\rho(g)$ (a rotation by $120^\circ$ has no real eigenvector; Example~\ref{ex:s3-r3-simples}). Under Maschke's hypotheses, simple is the same as irreducible (not a direct sum of two nonzero subrepresentations; Proposition~\ref{prop:simple-iff-irreducible}), and every representation is a direct sum of simple ones (Corollary~\ref{cor:direct-sum-of-simples}).
     \item \textbf{To show a homomorphism out of a simple group is injective.} Show it is not trivial (WS 7.1, \ref{sec:simple}).
     \item \textbf{To show a nontrivial $N \trianglelefteq A_n$ ($n \geq 5$) is all of $A_n$.} Use a commutator $g(i\,j\,k)g^{-1}(i\,j\,k)^{-1}$ to get a $3$-cycle into $N$; conjugation then brings all $3$-cycles, which generate $A_n$ (\ref{sec:simple}).
@@ -9719,6 +10636,8 @@ Mon Nov 2 \newline lecture; Worksheet 13 & Part~II begins: representations; acti
 Wed Nov 4 \newline lecture; Worksheet 14 & $S_3$ on $\mathbb{R}^3$ in three bases; block diagonal and block triangular matrices; Maschke's theorem (statement); $W = U \oplus U^\perp$; orthogonal complements of subrepresentations & \ref{sec:maschke} (14.1--14.3), \ref{sec:invariant-inner-products} (14.4--14.6; 14.7--14.8 presented Fri Nov 6) \\
 Fri Nov 6 \newline lecture & WS 14.7--14.8 (the averaged inner product); finite groups act by orthogonal matrices; sesquilinear and Hermitian forms (with the MATH 420 slides \emph{Complex inner products}: conjugate transpose, forms on $\mathbb{C}^n$ as matrices, Gram--Schmidt); simple and irreducible representations; every representation is a direct sum of simples & \ref{sec:invariant-inner-products}, \ref{sec:simple-representations} \\
 Wed Nov 4 \newline office hours & $GL_n(\mathbb{F}_p)$ acting on complete flags $G/B$; orbits of the unitriangular group of sizes $p^{\ell(w)}$ for $n = 2, 3$ & \ref{sub:flags-sylow-gln} \\
+Mon Nov 9 \newline lecture; Worksheet 15 & Idempotents and their trace; invariant vectors and the averaging operator; $V = V^G \oplus \operatorname{Ker}\pi$; $\dim V^G$ as the average trace; characters, constant on conjugacy classes and additive over direct sums; the start of the character table of $S_3$ & \ref{sec:maschke}, \ref{sec:invariants}, \ref{sec:characters-of-representations} \\
+Thu Nov 12 \newline Problem Set 9 (submitted) & Extensions of solvable groups; idempotents split $V = \operatorname{Ker} \oplus \operatorname{Im}$; the proof of Maschke's theorem; counterexamples for $\mathbb{Z}$ and for $\mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$; affine maps as semidirect products & \ref{sec:solvable} (9.1), \ref{sec:maschke} (9.2--9.4), \ref{sec:semidirect-products} (9.5) \\
 Tue Oct 13 \newline Problem Set 6 (submitted) & Normality is not transitive; simple abelian groups; groups of order $p^2$; the order of $GL_n(\mathbb{F}_p)$ & \ref{sec:normal-sources} (6.1), \ref{sec:simple} (6.2), \ref{sec:p-groups} (6.3, 6.4) \\
 \end{longtable}}
 
@@ -10045,6 +10964,62 @@ Let $G$ be a finite group and let $N_1$ and $N_2$ be distinct normal subgroups (
 Remark: We can further show, in this situation, that $G/(N_1 \cap N_2) \cong N_1/(N_1 \cap N_2) \times N_2/(N_1 \cap N_2)$.
 \end{hwbox}
 \textit{Treated in \ref{sec:composition-series} (Lemma~\ref{lem:two-simple-quotients}).}
+
+\section*{Problem Set 9}
+\phantomsection
+\addcontentsline{toc}{section}{Problem Set 9}
+
+\textit{Due Thursday, November 12; submitted. Each problem is treated in the main text, at the location indicated.}
+
+\begin{hwbox}[{Extensions of Solvable Groups}]{9.1}\label{hw:9.1}
+Let $G$ be a group with a normal subgroup $N$. Suppose that $N$ and $G/N$ are solvable; recall that this means that there are chains $\{1\} = N_0 \trianglelefteq N_1 \trianglelefteq N_2 \trianglelefteq \cdots \trianglelefteq N_a = N$ and $\{1\} = H_0 \trianglelefteq H_1 \trianglelefteq H_2 \trianglelefteq \cdots \trianglelefteq H_b = G/N$ such that all of the quotients $N_i/N_{i-1}$ and $H_j/H_{j-1}$ are abelian.
+
+Show that $G$ is solvable, so you will need to invent a chain of subgroups $\{1\} = G_0 \trianglelefteq G_1 \trianglelefteq \cdots \trianglelefteq G_c = G$ with $G_k/G_{k-1}$ abelian.
+\end{hwbox}
+\textit{Treated in \ref{sec:solvable} (Theorem~\ref{thm:extension-solvable}).}
+
+\begin{hwbox}[{Idempotents}]{9.2}\label{hw:9.2}
+Let $V$ be a vector space. A linear map $\pi: V \to V$ is called \textbf{idempotent} if $\pi^2 = \pi$. Show that, if $\pi$ is idempotent, then $V$ is the direct sum of $\operatorname{Ker}(\pi)$ and $\operatorname{Im}(\pi)$.
+\end{hwbox}
+\textit{Treated in \ref{sec:maschke} (Lemma~\ref{lem:idempotent-fixes-image}, Proposition~\ref{prop:idempotent-kernel-image}).}
+
+\begin{hwbox}[{Maschke's Theorem}]{9.3}\label{hw:9.3}
+In this problem, we prove Maschke's theorem. Let $G$ be a finite group and let $k$ be a field where $|G| \neq 0$. Let $W$ be a representation of $G$ and let $U$ be a subrepresentation. We must construct a second subrepresentation $V$ such that $W$ is the direct sum of $U$ and $V$.
+
+Let $P: W \to U$ be an idempotent with image $U$. We are not requiring that $P$ is a homomorphism of representations, just an idempotent linear map with image $U$.
+\begin{enumerate}
+\item Explain why such a $P$ exists. Hint: Just write down bases.
+\end{enumerate}
+Define
+\[ \pi(w) = \frac{1}{|G|}\sum_{h \in G} h^{-1}P(hw). \]
+\begin{enumerate}[resume]
+\item Show that $\pi(u) = u$ for $u \in U$ and that $\operatorname{Im}(\pi) = U$. Show that $\pi$ is idempotent.
+\end{enumerate}
+Thus, by Problem 9.2, $W$ is the direct sum of $\operatorname{Ker}(\pi)$ and $\operatorname{Im}(\pi)$.
+\begin{enumerate}[resume]
+\item Show that $\pi$ is a homomorphism of representations, meaning that $\pi(gw) = g\pi(w)$ for all $g \in G$ and $w \in W$. Deduce that $\operatorname{Ker}(\pi)$ is a subrepresentation of $W$.
+\end{enumerate}
+\end{hwbox}
+\textit{Treated in \ref{sec:maschke} (Lemmas~\ref{lem:subspace-image-idempotent} and~\ref{lem:averaging-linear-map}, the proof of Theorem~\ref{thm:maschke}) and \ref{sec:representations} (Proposition~\ref{prop:kernels-images-subrepresentations}).}
+
+\begin{hwbox}[{When Maschke's Theorem Fails}]{9.4}\label{hw:9.4}
+In this problem, we will see that Maschke's theorem becomes false when the hypotheses that $|G|$ is finite, or that $|G| \neq 0$ in $k$, are wrong.
+\begin{enumerate}
+\item Let $G = \mathbb{Z}$ and define $\rho: G \to GL_2(\mathbb{R})$ by $\rho(x) = \left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)$. Show that $\mathbb{R}\left(\begin{smallmatrix} 1 \\ 0 \end{smallmatrix}\right)$ is a subrepresentation of $\mathbb{R}^2$, but there is not a second subrepresentation $V$ with $\mathbb{R}^2 = \mathbb{R}\left(\begin{smallmatrix} 1 \\ 0 \end{smallmatrix}\right) \oplus V$.
+\item Let $p$ be prime, let $G = \mathbb{Z}/p\mathbb{Z}$ and let $\mathbb{F} = \mathbb{Z}/p\mathbb{Z}$. Define $\rho: G \to GL_2(\mathbb{F})$ by $\rho(x) = \left(\begin{smallmatrix} 1 & x \\ 0 & 1 \end{smallmatrix}\right)$. Show that $\mathbb{F}\left(\begin{smallmatrix} 1 \\ 0 \end{smallmatrix}\right)$ is a subrepresentation of $\mathbb{F}^2$, but there is not a second subrepresentation $V$ with $\mathbb{F}^2 = \mathbb{F}\left(\begin{smallmatrix} 1 \\ 0 \end{smallmatrix}\right) \oplus V$.
+\end{enumerate}
+\end{hwbox}
+\textit{Treated in \ref{sec:maschke} (Examples~\ref{ex:maschke-fails-z} and~\ref{ex:maschke-fails-char-p}).}
+
+\begin{hwbox}[{Affine Maps and Semidirect Products}]{9.5}\label{hw:9.5}
+In this problem, we will see a situation where we can understand semidirect products concretely in terms of matrices. Let $V$ be a vector space over a field $k$. Let $G$ be a subgroup of $GL(V)$ and let $L \subseteq V$ be a subgroup of the additive group of $V$ with the property that $gL = L$ for each $g \in G$. Define $\Gamma$ to be the set of affine linear transformations of the form $x \mapsto gx + \lambda$, for $g \in G$ and $\lambda \in L$.
+\begin{enumerate}
+\item Check that $\Gamma$ is a group (under composition).
+\item Check that $\Gamma \cong L \rtimes G$ for a certain action of $G$ on $L$ and describe that action.
+\end{enumerate}
+The problem set illustrates this on its second page with a tiling of the plane by lizards. $V$ is that copy of $\mathbb{R}^2$, with the origin at a marked point in the centre of the image. $G$ is a copy of $\mathbb{Z}/3\mathbb{Z}$, acting by rotations by $120^\circ$ around that point, and $L$ consists of the translations which slide the lizards to themselves. Then $\Gamma$ is the full group of symmetries of the tiling, decomposed as $L \rtimes G$. (The problem set says ``direct product'' here; $L \rtimes G$ is a semidirect product.) This is one of seventeen ``wallpaper'' groups which mathematicians have classified.
+\end{hwbox}
+\textit{Treated in \ref{sec:semidirect-products} (Proposition~\ref{prop:affine-semidirect}; the lizard tiling's group in the form of Example~\ref{ex:affine-wallpaper-p3}).}
 
 \chapter{Index of Definitions and Results}\label{ch:index}
 

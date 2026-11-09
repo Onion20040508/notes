@@ -17,7 +17,7 @@ tags: [group-theory, hub]
 - [[§58 Semidirect Products#^thm-58-5|Theorem §58.5: N ⋊_φ S Is a Group]]
 
 ## Used in (Group Theory)
-- (not cited later in the course)
+- [[§58 Semidirect Products#^cor-58-10|Corollary §58.10: Semidirect Products of Solvable Groups Are Solvable]]
 
 ## Connections
 - TODO

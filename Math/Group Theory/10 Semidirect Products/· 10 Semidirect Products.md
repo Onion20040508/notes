@@ -11,7 +11,7 @@ tags: [chapter, group-theory]
 
 The strategy of [[§43 Simple Groups|§43]] is to understand a group $G$ through a normal subgroup $N$ and the quotient $G/N$, and then to understand how the two pieces are put together. This chapter treats the simplest ways of putting pieces together. In a direct product the pieces do not interact. In a semidirect product one piece acts on the other by automorphisms, and the action is extra data: the same two pieces can be assembled in different ways.
 
-**Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (3), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (3), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (2), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (2), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (7), [[· 9 Commutators, Solvable Groups and the Sylow Theorems|9 Commutators, Solvable Groups and the Sylow Theorems]] (5)
+**Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (3), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (3), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (2), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (2), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (8), [[· 9 Commutators, Solvable Groups and the Sylow Theorems|9 Commutators, Solvable Groups and the Sylow Theorems]] (11)
 **Used by:** [[· 9 Commutators, Solvable Groups and the Sylow Theorems|9 Commutators, Solvable Groups and the Sylow Theorems]] (3)
 **Builds on (other subjects):** —
 
@@ -25,7 +25,7 @@ The strategy of [[§43 Simple Groups|§43]] is to understand a group $G$ through
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§58 Semidirect Products#^prop-58-3|Proposition §58.3: S Acts on N by Automorphisms]]: 2 later results
-- [[Internal Direct Product Theorem|Theorem §57.1: Internal Direct Products Are Direct Products]]: 1 later result
-- [[§58 Semidirect Products#^prop-58-2|Proposition §58.2: Unique Factorization g = ns]]: 1 later result
-- [[§58 Semidirect Products#^prop-58-4|Proposition §58.4: Multiplication in the Form ns]]: 1 later result
+- [[§58 Semidirect Products#^prop-58-3|Proposition §58.3: S Acts on N by Automorphisms]]: 3 later results
+- [[§58 Semidirect Products#^prop-58-2|Proposition §58.2: Unique Factorization g = ns]]: 2 later results
+- [[§58 Semidirect Products#^prop-58-4|Proposition §58.4: Multiplication in the Form ns]]: 2 later results
+- [[§58 Semidirect Products#^thm-58-5|Theorem §58.5: N ⋊_φ S Is a Group]]: 2 later results

@@ -15,7 +15,9 @@ The second step ([[§60 Direct Sums and Maschke's Theorem|§60]]) asks when a re
 
 The third step ([[§62 Simple Representations|§62]]) names the pieces. A representation is simple if its only subrepresentations are $\{0\}$ and itself, irreducible if it is not a direct sum of two nonzero subrepresentations; under Maschke's hypotheses the two agree, and every finite-dimensional representation is a direct sum of simple ones. Unlike groups, whose simple pieces can be bonded together in many ways, representations simply add up, so the theory reduces to knowing the simple representations.
 
-**Builds on:** [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (1), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (3), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (1), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (1), [[· 9 Commutators, Solvable Groups and the Sylow Theorems|9 Commutators, Solvable Groups and the Sylow Theorems]] (1)
+The fourth step ([[§63 Invariant Vectors|§63]] and [[§64 Characters of Representations|§64]]) starts on the remaining question, what the simple representations are, with the main tool: the character $\chi_V(g) = \operatorname{Tr}\rho_V(g)$. A first use counts the vectors that $G$ fixes. Averaging over a finite group is an idempotent onto them, so they split off as a direct summand, and their number is the average of the character, exactly when the field contains $\mathbb{Q}$. For a permutation representation this count is Burnside's Lemma, and the same averaging, applied to an arbitrary idempotent onto a subrepresentation, is the proof of Maschke's theorem ([[§60 Direct Sums and Maschke's Theorem|§60]]). Characters are constant on conjugacy classes and add over direct sums, so they are recorded in a character table with one column per conjugacy class; despite the name, a character is a homomorphism only in dimension $1$, where it is a character in the sense of Chapter 9.
+
+**Builds on:** [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (1), [[· 5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups|5 Homomorphisms at Work꞉ Matrices, Signs, and Unit Groups]] (3), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (2), [[· 7 Conjugacy and the Center|7 Conjugacy and the Center]] (1), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (1), [[· 9 Commutators, Solvable Groups and the Sylow Theorems|9 Commutators, Solvable Groups and the Sylow Theorems]] (1)
 **Used by:** —
 **Builds on (other subjects):** [[Linear Algebra]] (5)
 
@@ -24,13 +26,16 @@ The third step ([[§62 Simple Representations|§62]]) names the pieces. A repres
 - [[§60 Direct Sums and Maschke's Theorem]]
 - [[§61 Invariant Inner Products and Maschke over ℝ]]
 - [[§62 Simple Representations]]
+- [[§63 Invariant Vectors]]
+- [[§64 Characters of Representations]]
 
 ## Central results
-- [[Maschke's Theorem]] (§60.5)
+- [[Maschke's Theorem]] (§60.10)
+- [[Dimension of the Invariants]] (§63.7)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-1|Proposition §61.1: Direct Sum of a Subspace and Its Orthogonal Complement]]: 7 later results
-- [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-2|Proposition §61.2: Orthogonal Complements of Subrepresentations]]: 5 later results
-- [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-4|Proposition §61.4: Averaging Gives an Inner Product]]: 5 later results
-- [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|Proposition §61.5: G Preserves the Averaged Inner Product]]: 5 later results
+- [[§60 Direct Sums and Maschke's Theorem#^lem-60-5|Lemma §60.5: An Idempotent Fixes Its Image]]: 11 later results
+- [[§60 Direct Sums and Maschke's Theorem#^prop-60-6|Proposition §60.6: An Idempotent Splits the Space]]: 10 later results
+- [[§61 Invariant Inner Products and Maschke over ℝ#^prop-61-5|Proposition §61.5: G Preserves the Averaged Inner Product]]: 10 later results
+- [[§60 Direct Sums and Maschke's Theorem#^prop-60-1|Proposition §60.1: Bases of a Direct Sum]]: 9 later results

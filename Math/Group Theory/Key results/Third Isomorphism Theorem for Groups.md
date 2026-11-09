@@ -25,6 +25,7 @@ tags: [group-theory, hub]
 
 ## Used in (Group Theory)
 - [[§48 Solvable Groups#^prop-48-6|Proposition §48.6: The Quotients of the Image Chain in G/N]]
+- [[§48 Solvable Groups#^thm-48-7|Theorem §48.7: Extensions of Solvable Groups Are Solvable]]
 - [[§50 Composition Series#^lem-50-3|Lemma §50.3: Finite Groups Have Composition Series]]
 
 ## Connections

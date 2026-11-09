@@ -167,6 +167,9 @@ Maschke's theorem is proved by building a projection onto $U$ that commutes with
 
 ^def-60-2
 
+> [!remark]- Connections
+> - Linear Algebra: the orthogonal projection $P_U$ ([[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]]) is an idempotent whose kernel is $U^\perp$, [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-57|LADR 6.57]]; Example [[§60 Direct Sums and Maschke's Theorem#^ex-60-2|§60.2]] is one whose kernel is not perpendicular to its image.
+
 > [!theorem] Lemma §60.5: An Idempotent Fixes Its Image
 > If $\pi: V \to V$ is idempotent, then $\pi(w) = w$ for every $w \in \operatorname{Im}\pi$.
 >
@@ -214,6 +217,9 @@ Maschke's theorem is proved by building a projection onto $U$ that commutes with
 ^pf-60-6
 
 *Uses:* [[§60 Direct Sums and Maschke's Theorem#^lem-60-5|§60.5]]
+
+> [!remark]- Connections
+> - The criterion used at the end: [[§3 Subspaces#^ladr-1-46|LADR 1.46]].
 
 > [!theorem] Lemma §60.7: The Complementary Idempotent
 > If $\pi: V \to V$ is idempotent, then so is $\mathrm{id}_V - \pi$, and
@@ -268,7 +274,17 @@ Maschke's theorem is proved by building a projection onto $U$ that commutes with
 
 ^pf-60-8
 
+> [!remark]- Connections
+> - The two facts quoted in the proof: [[§5 Bases#^ladr-2-32|LADR 2.32]] (extending to a basis) and [[§7 Vector Space of Linear Maps#^ladr-3-4|LADR 3.4]] (a linear map is determined by a basis).
+
 Such a $P$ depends on the choice of the extra basis vectors $e_{m+1}, \ldots, e_n$, which span its kernel. When $W$ is a representation and $U$ a subrepresentation, $\operatorname{Ker}(P)$ is in general not a subrepresentation: in Example [[§60 Direct Sums and Maschke's Theorem#^ex-60-3|§60.3]] below no complement of $U$ is. Averaging over $G$ repairs this.
+
+> [!remark] Remark: Which Statements Need a Basis
+> An Idempotent Splits the Space (Proposition [[§60 Direct Sums and Maschke's Theorem#^prop-60-6|§60.6]], WS 15.1) needs no finite-dimensionality: its proof never chooses a basis. The converse construction, every subspace is the image of an idempotent (Lemma [[§60 Direct Sums and Maschke's Theorem#^lem-60-8|§60.8]]), chooses a basis of $W$ extending one of $U$. In infinite dimensions this probably needs a weak form of the axiom of choice, such as every vector space having a basis; the submitted proof uses Zorn's lemma. In finite dimensions this is no issue.
+>
+> *Source: lecture 11/9, while clarifying the problem set*
+
+^rem-60-2
 
 > [!theorem] Lemma §60.9: Averaging a Linear Map over $G$
 > Let $G$ be a finite group and $k$ a field in which $|G| \neq 0$. Let $W$ and $W'$ be representations of $G$ over $k$ and $P: W \to W'$ a linear map. Then
@@ -422,4 +438,4 @@ Neither hypothesis of Maschke's theorem can be dropped: one shear matrix gives a
 > [!remark] Remark: Where Each Hypothesis Is Used
 > *(Not from class.)* In the proof of Maschke's theorem, $G$ finite makes $\sum_{h \in G}$ a finite sum, and $|G| \neq 0$ in $k$ allows the division by $|G|$ that gives $\pi(u) = u$ in Step 2. For $G = \mathbb{Z}$ there is no finite average to take. For $G = \mathbb{Z}/p\mathbb{Z}$ over $\mathbb{F}_p$ the sum $\sum_h h^{-1}P(hu) = p \cdot u$ is $0$ for every $u \in U$. In both cases the examples show that no other construction can help either.
 
-^rem-60-2
+^rem-60-3

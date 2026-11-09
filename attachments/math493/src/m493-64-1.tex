@@ -1,0 +1,39 @@
+% Figure from MATH 493 notes, section 64. Compile with the notes preamble.
+\begin{tikzpicture}[>=Stealth]
+\begin{scope}[xshift=0.0cm]
+\fill[blue!70!black!10] (0.000,1.250) -- (-1.083,-0.625) -- (1.083,-0.625) -- cycle;
+\draw[blue!70!black, thick] (0.000,1.250) -- (-1.083,-0.625) -- (1.083,-0.625) -- cycle;
+\draw[red!70!black, dashed] (-1.256,0.725) -- (1.516,-0.875);
+\node[red!70!black, font=\scriptsize, anchor=west] at (1.536,-0.875) {mirror of $(1\,2)$};
+\draw[->, orange!85!black, thick] (100:0.45) arc (100:220:0.45);
+\node[orange!85!black, font=\scriptsize] at (160:0.78) {$120^\circ$};
+\node[font=\scriptsize] at (0,-1.35) {$S_3$ permutes $e_1, e_2, e_3$};
+\fill (0.000,1.250) circle (1.8pt);
+\node[font=\scriptsize, anchor=south] at (0.000,1.250) {$e_1$};
+\fill (-1.083,-0.625) circle (1.8pt);
+\node[font=\scriptsize, anchor=north east] at (-1.083,-0.625) {$e_2$};
+\fill (1.083,-0.625) circle (1.8pt);
+\node[font=\scriptsize, anchor=north west] at (1.083,-0.625) {$e_3$};
+\draw[red!70!black, thick] (1.083,-0.625) circle (4pt);
+\node[font=\scriptsize, align=left, anchor=north west] at (-1.6,-1.6) {trace of a permutation matrix\\$=$ number of fixed points:\\$e$: $3$, \ $(1\,2)$: $1$ (only $e_3$, circled),\\$(1\,2\,3)$: $0$};
+\end{scope}
+\begin{scope}[xshift=5.0cm]
+\fill[blue!70!black!10] (0.000,1.250) -- (-1.083,-0.625) -- (1.083,-0.625) -- cycle;
+\draw[blue!70!black, thick] (0.000,1.250) -- (-1.083,-0.625) -- (1.083,-0.625) -- cycle;
+\draw[red!70!black, dashed] (-1.256,0.725) -- (1.516,-0.875);
+\node[red!70!black, font=\scriptsize, anchor=west] at (1.536,-0.875) {mirror of $(1\,2)$};
+\draw[->, orange!85!black, thick] (100:0.45) arc (100:220:0.45);
+\node[orange!85!black, font=\scriptsize] at (160:0.78) {$120^\circ$};
+\node[font=\scriptsize] at (0,-1.35) {$S_3$ on the plane $U = (1,1,1)^\perp$};
+\fill[blue!70!black] (0.000,1.250) circle (1.4pt);
+\node[font=\scriptsize, blue!70!black, anchor=south] at (0.000,1.250) {$\bar e_1$};
+\fill[blue!70!black] (-1.083,-0.625) circle (1.4pt);
+\node[font=\scriptsize, blue!70!black, anchor=north east] at (-1.083,-0.625) {$\bar e_2$};
+\fill[blue!70!black] (1.083,-0.625) circle (1.4pt);
+\node[font=\scriptsize, blue!70!black, anchor=north west] at (1.083,-0.625) {$\bar e_3$};
+\draw[->, very thick, red!70!black] (0,0) -- (0.823,-0.475) node[pos=0.55, below left=-1pt, font=\scriptsize] {$+1$};
+\draw[->, very thick] (0,0) -- (0.400,0.693) node[right, font=\scriptsize] {$x$};
+\draw[->, very thick, black!55] (0,0) -- (-0.400,-0.693) node[below=1pt, font=\scriptsize] {$(1\,2)x = -x$};
+\node[font=\scriptsize, align=left, anchor=north west] at (-1.6,-1.6) {$e$: $2$, \ $(1\,2)$: eigenvalues $+1, -1$, trace $0$,\\$(1\,2\,3)$: rotation by $120^\circ$,\\trace $2\cos 120^\circ = -1$};
+\end{scope}
+\end{tikzpicture}

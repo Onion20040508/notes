@@ -261,6 +261,9 @@ tags: [group-theory, math493]
 
 *Uses:* [[§42 The Correspondence and Third Isomorphism Theorems#^prop-42-2|§42.2]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-3|§42.3]], [[§42 The Correspondence and Third Isomorphism Theorems#^thm-42-6|§42.6]]
 
+> [!remark]- Connections
+> - A second route, through composition series: $G$ is solvable exactly when its composition factors have prime order ([[§52 The Jordan–Hölder Theorem#^prop-52-2|Prop. §52.2]]), and a composition series of $N$ followed by the preimage of one of $G/N$ is a composition series of $G$.
+
 > [!theorem] Corollary §48.8: Solvability Is Decided by $N$ and $G/N$
 > Let $N \trianglelefteq G$. Then $G$ is solvable if and only if $N$ and $G/N$ are solvable.
 >

@@ -12,7 +12,7 @@ tags: [chapter, group-theory]
 Conjugation is the action of a group on itself that detects non-commutativity. This chapter computes [[§33 Conjugacy Classes#^def-33-1|conjugacy classes]] — in $S_n$ they are [[§33 Conjugacy Classes#^thm-33-3|exactly the cycle types]] — counts them with [[§30 Orbit–Stabilizer#^thm-30-3|orbit–stabilizer]] to obtain the [[§34 Conjugation as an Action and the Class Equation#^thm-34-4|class equation]], and studies the [[§35 The Center#^def-35-2|center]], including the fact that [[§35 The Center#^thm-35-3|groups of prime-power order have nontrivial center]].
 
 **Builds on:** [[· 1 Groups and Subgroups|1 Groups and Subgroups]] (5), [[· 2 Arithmetic Modulo n|2 Arithmetic Modulo n]] (2), [[· 3 Permutations|3 Permutations]] (3), [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (5), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (11)
-**Used by:** [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (2), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (1), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (10), [[· 9 Commutators, Solvable Groups and the Sylow Theorems|9 Commutators, Solvable Groups and the Sylow Theorems]] (13)
+**Used by:** [[· 4 Homomorphisms and Isomorphisms|4 Homomorphisms and Isomorphisms]] (2), [[· 6 Group Actions, Cosets, and Lagrange's Theorem|6 Group Actions, Cosets, and Lagrange's Theorem]] (1), [[· 8 Normal Subgroups and Quotient Groups|8 Normal Subgroups and Quotient Groups]] (10), [[· 9 Commutators, Solvable Groups and the Sylow Theorems|9 Commutators, Solvable Groups and the Sylow Theorems]] (16), [[· 11 Representations|11 Representations]] (1)
 **Builds on (other subjects):** [[Linear Algebra]] (5)
 
 ## Sections
@@ -28,7 +28,7 @@ Conjugation is the action of a group on itself that detects non-commutativity. T
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|Proposition §34.1: The Conjugation Action]]: 29 later results
-- [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Corollary §34.2: Class Sizes Divide the Group Order]]: 18 later results
-- [[§35 The Center#^prop-35-1|Proposition §35.1: Central iff Singleton Conjugacy Class]]: 13 later results
-- [[p-Groups Have Nontrivial Center|Theorem §35.3: Groups of Prime-Power Order Have Nontrivial Center]]: 11 later results
+- [[§34 Conjugation as an Action and the Class Equation#^prop-34-1|Proposition §34.1: The Conjugation Action]]: 30 later results
+- [[§34 Conjugation as an Action and the Class Equation#^cor-34-2|Corollary §34.2: Class Sizes Divide the Group Order]]: 19 later results
+- [[§35 The Center#^prop-35-1|Proposition §35.1: Central iff Singleton Conjugacy Class]]: 14 later results
+- [[p-Groups Have Nontrivial Center|Theorem §35.3: Groups of Prime-Power Order Have Nontrivial Center]]: 12 later results

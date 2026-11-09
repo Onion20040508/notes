@@ -470,6 +470,9 @@ By (2), the conjugation action of $G_0$ on $T$ (Proposition [[§58 Semidirect Pr
 
 ^ex-58-7
 
+> [!remark]- Connections
+> - The problem set's own picture is a tiling by lizards with the same group; the figure below uses an abstract motif.
+
 ![[m493-58-1.svg]]
 
 *(Not from lecture; figure added.)* The wallpaper group $\Gamma = L \rtimes \mathbb{Z}/3\mathbb{Z}$ of Example [[§58 Semidirect Products#^ex-58-7|§58.7]]. The blue motifs are the images $\gamma(F)$ of one motif $F$ under all $\gamma \in \Gamma$: at each lattice point (black) three copies, turned by $0^\circ$, $120^\circ$ and $240^\circ$. The arrows $\omega_1$, $\omega_2$ from the chosen origin $0$ (circled) span the translations $T \cong L$. Every element $\sigma_{(r, \lambda)}$ of $\Gamma$ is a rotation by $120^\circ$, about the point $(I - r)^{-1}\lambda$. These centres come in the three classes $L$ (black), $c_1 + L$ (red) and $2c_1 + L$ (orange), and the pattern looks the same when turned by $120^\circ$ about any of them. There is no mirror symmetry, because the motif is not symmetric.

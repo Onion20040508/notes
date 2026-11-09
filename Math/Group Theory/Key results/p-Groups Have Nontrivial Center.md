@@ -18,6 +18,7 @@ tags: [group-theory, hub]
 - [[§35 The Center#^prop-35-1|Proposition §35.1: Central iff Singleton Conjugacy Class]]
 
 ## Used in (Group Theory)
+- [[§48 Solvable Groups#^cor-48-9|Corollary §48.9: p-Groups Are Solvable]]
 - [[§54 p-Groups and Sylow Subgroups#^thm-54-7|Theorem §54.7: Groups of Order p²]]
 - [[§56 Simple Groups of Small Order#^prop-56-1|Proposition §56.1: Primes and Prime Powers]]
 
