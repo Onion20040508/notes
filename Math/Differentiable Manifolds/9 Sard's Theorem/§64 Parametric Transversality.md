@@ -104,7 +104,31 @@ The corollary passes from transversality of the family to transversality of the 
 
 *Uses:* [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]], [[§64 Parametric Transversality#^cor-64-2|§64.2]], [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]]
 
-If $\dim Y + \dim Z < d$, a transverse intersection must be empty, since $T_qY + T_qZ$ has dimension at most $\dim Y + \dim Z$. So two curves in $\mathbb{R}^3$ ($1 + 1 < 3$): translating one by a generic vector makes it disjoint from the other. For two curves in the plane that are tangent, a generic translate either separates them or makes them cross transversally. This is the idea of *general position*: a configuration is not in general position if moving one of the objects a little changes the geometry radically. Objects in general position are transverse, which may mean that they do not intersect; an empty intersection is still a meaningful, and often powerful, statement.
+> [!theorem] Corollary §64.3: Transverse Submanifolds of Small Total Dimension Are Disjoint
+> Let $Y, Z \subseteq \mathbb{R}^d$ be regular submanifolds with $\dim Y + \dim Z < d$.
+>
+> 1. If $Y \pitchfork Z$, then $Y \cap Z = \varnothing$: a transverse intersection must be empty.
+> 2. For almost every $a \in \mathbb{R}^d$, the translate $a + Y$ is disjoint from $Z$.
+
+^cor-64-3
+
+> [!proof]+ Proof
+> *(The reason is the one given with the statement in the notes, “since $T_qY + T_qZ$ has dimension at most $\dim Y + \dim Z$”; details filled in.)*
+>
+> *(1)* We show that $Y \cap Z$ has no point. Suppose $q \in Y \cap Z$. Since $Y \pitchfork Z$, $T_qY + T_qZ = T_q\mathbb{R}^d$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-3|§39.3]]), a vector space of dimension $d$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]). On the other hand $T_qY$ has a basis of $\dim Y$ vectors and $T_qZ$ a basis of $\dim Z$ vectors (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]), and the two bases together span $T_qY + T_qZ$; so $T_qY + T_qZ$ has dimension at most $\dim Y + \dim Z < d$. This is a contradiction, so $Y \cap Z = \varnothing$.
+>
+> *(2)* By Example [[§64 Parametric Transversality#^ex-64-1|§64.1]], $(a + Y) \pitchfork Z$ for almost every $a \in \mathbb{R}^d$. For each $a$, $a + Y$ is a regular submanifold of $\mathbb{R}^d$ diffeomorphic to $Y$ by $p \mapsto a + p$ (as in the proof of Example [[§64 Parametric Transversality#^ex-64-1|§64.1]]), so $\dim(a + Y) + \dim Z = \dim Y + \dim Z < d$. By (1), applied to $a + Y$ and $Z$, $(a + Y) \cap Z = \varnothing$ for every $a$ with $(a + Y) \pitchfork Z$, that is, for almost every $a$.
+
+^pf-64-3
+
+*Uses:* [[§39 Transversality and Lagrange Multipliers#^def-39-3|Def. §39.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§64 Parametric Transversality#^ex-64-1|Ex. §64.1]]
+
+> [!example] Example §64.2: Two Curves in Space
+> Two curves in $\mathbb{R}^3$ ($1 + 1 < 3$): translating one by a generic vector makes it disjoint from the other (Corollary [[§64 Parametric Transversality#^cor-64-3|§64.3]](2)).
+
+^ex-64-2
+
+For two curves in the plane that are tangent, a generic translate either separates them or makes them cross transversally. This is the idea of *general position*: a configuration is not in general position if moving one of the objects a little changes the geometry radically. Objects in general position are transverse, which may mean that they do not intersect; an empty intersection is still a meaningful, and often powerful, statement.
 
 ![[m591-60-2.svg]]
 
@@ -122,7 +146,7 @@ A further application, Assignment 6, Problem 5 ([[§64 Parametric Transversality
 
 *Assignment 6, Problem 5: the homework announced in Lecture 20. Not from lecture; the submitted solution, with the bundle facts it uses filled in ([[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]]) and its main implication completed to an equivalence.*
 
-*Setting.* Throughout this subsection $M \subseteq \mathbb{R}^N$ is a regular submanifold of dimension $m < N$, with the geometric tangent spaces $T^{\mathrm{geo}}_pM$, written $T_pM$ (the Setting of [[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]] with $n = N$); $T^{\mathrm{geo}}M$ is its tangent bundle with zero section $\mathcal{Z}$ and $\pi_p : \mathbb{R}^N \to T_pM$ the orthogonal projection (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-5|§42.5]], Lemma [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]]). Points of the parameter space $\mathbb{R}^N$ are written $\mathbf{a}, \mathbf{b}$. From Proposition [[§64 Parametric Transversality#^prop-64-6|§64.6]] on, $S$ denotes $F^{-1}(\mathcal{Z})$, as in the assignment: it plays the role of the $W$ of Theorem [[§64 Parametric Transversality#^thm-64-1|§64.1]], not of the parameter space $S$ there, which here is $\mathbb{R}^N$. (If $m = N$, $M$ is open in $\mathbb{R}^N$ and the functions below have no critical points unless $\mathbf{a} = 0$.)
+*Setting.* Throughout this subsection $M \subseteq \mathbb{R}^N$ is a regular submanifold of dimension $m < N$, with the geometric tangent spaces $T^{\mathrm{geo}}_pM$, written $T_pM$ (the Setting of [[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]] with $n = N$); $T^{\mathrm{geo}}M$ is its tangent bundle with zero section $\mathcal{Z}$ and $\pi_p : \mathbb{R}^N \to T_pM$ the orthogonal projection (Definitions [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-5|§42.5]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-6|§42.6]] and [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-8|§42.8]], Lemma [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]]). Points of the parameter space $\mathbb{R}^N$ are written $\mathbf{a}, \mathbf{b}$. From Proposition [[§64 Parametric Transversality#^prop-64-6|§64.6]] on, $S$ denotes $F^{-1}(\mathcal{Z})$, as in the assignment: it plays the role of the $W$ of Theorem [[§64 Parametric Transversality#^thm-64-1|§64.1]], not of the parameter space $S$ there, which here is $\mathbb{R}^N$. (If $m = N$, $M$ is open in $\mathbb{R}^N$ and the functions below have no critical points unless $\mathbf{a} = 0$.)
 
 > [!theorem] Lemma §64.4: The Zero Section and the Splitting Along It
 > 1. The zero section $\zeta : M \to T^{\mathrm{geo}}M$, $\zeta(p) = (p, 0)$, is smooth, and $\mathcal{Z} = \zeta(M)$ is a closed regular submanifold of $T^{\mathrm{geo}}M$ of dimension $m$.
@@ -137,7 +161,7 @@ A further application, Assignment 6, Problem 5 ([[§64 Parametric Transversality
 > [!proof]+ Proof
 > *(1)* *(Filled in.)* The projection $\pi(q, v) = q$ is the restriction to $T^{\mathrm{geo}}M$ of a linear map, smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1); $\zeta$ is smooth into $\mathbb{R}^{2N}$ and lands in the regular submanifold $T^{\mathrm{geo}}M$ (Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]]), so it is smooth into it (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2)). As $\pi \circ \zeta = \mathrm{id}_M$, Proposition [[§44 Embeddings#^prop-44-11|§44.11]] makes $\zeta$ an embedding with closed image, a closed regular submanifold of dimension $m$.
 >
-> *(2)* *(Assignment 6, Problem 5(a); the submitted solution.)* If $\gamma$ is a curve in $M$ with $\gamma(0) = p$ and $\gamma'(0) = u$, then $t \mapsto (\gamma(t), 0)$ is a curve in $\mathcal{Z}$ with velocity $(u, 0)$ at $t = 0$; so $\{(u, 0) : u \in T_pM\} \subseteq T_{(p,0)}\mathcal{Z}$, with equality since both have dimension $m$ (by (1) and Theorem [[§25 The Geometric Tangent Space#^cor-25-7|§25.7]]). For $w \in T_pM$, $t \mapsto (p, tw)$ is a curve in $T^{\mathrm{geo}}M$ with velocity $(0, w)$ at $t = 0$, so $V \subseteq T_{(p,0)}T^{\mathrm{geo}}M$. Both $T_{(p,0)}\mathcal{Z}$ and $V$ are $m$-dimensional, and $T_{(p,0)}\mathcal{Z} \cap V = \{0\}$, since $(u, 0) = (0, w)$ forces $u = w = 0$. Hence $T_{(p,0)}\mathcal{Z} + V$ is a $2m$-dimensional subspace of the $2m$-dimensional space $T_{(p,0)}T^{\mathrm{geo}}M$ (Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]]), so they are equal.
+> *(2)* *(Assignment 6, Problem 5(a); the submitted solution.)* If $\gamma$ is a curve in $M$ with $\gamma(0) = p$ and $\gamma'(0) = u$, then $t \mapsto (\gamma(t), 0)$ is a curve in $\mathcal{Z}$ with velocity $(u, 0)$ at $t = 0$; so $\{(u, 0) : u \in T_pM\} \subseteq T_{(p,0)}\mathcal{Z}$, with equality since both have dimension $m$ (by (1) and Corollary [[§25 The Geometric Tangent Space#^cor-25-7|§25.7]]). For $w \in T_pM$, $t \mapsto (p, tw)$ is a curve in $T^{\mathrm{geo}}M$ with velocity $(0, w)$ at $t = 0$, so $V \subseteq T_{(p,0)}T^{\mathrm{geo}}M$. Both $T_{(p,0)}\mathcal{Z}$ and $V$ are $m$-dimensional, and $T_{(p,0)}\mathcal{Z} \cap V = \{0\}$, since $(u, 0) = (0, w)$ forces $u = w = 0$. Hence $T_{(p,0)}\mathcal{Z} + V$ is a $2m$-dimensional subspace of the $2m$-dimensional space $T_{(p,0)}T^{\mathrm{geo}}M$ (Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-4|§42.4]]), so they are equal.
 
 ^pf-64-4
 
@@ -244,11 +268,11 @@ So $\pi_p(\mathbf{a})$ is the gradient of $f_{\mathbf{a}}$ at $p$, and the famil
 > A_p(\partial_k(p)) = \sum_{i,j} g^{ij}(p)\, \frac{\partial^2 f_{\mathbf{a}}}{\partial x^k \partial x^j}(p)\, \partial_i(p).
 > $$
 >
-> Thus the matrix of $A_p$ in the basis $(\partial_i(p))$ is $g(p)^{-1}H_p$. As $g(p)$ is invertible, $A_p$ is invertible if and only if $\det H_p \neq 0$, that is (Definition [[§54 Critical Points and the Hessian#^def-54-3|§54.3]] and the remark after it), if and only if $p$ is nondegenerate.
+> Thus the matrix of $A_p$ in the basis $(\partial_i(p))$ is $g(p)^{-1}H_p$. As $g(p)$ is invertible, $A_p$ is invertible if and only if $\det H_p \neq 0$, that is (Proposition [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]](2)), if and only if $p$ is nondegenerate.
 
 ^pf-64-7
 
-*Uses:* [[§64 Parametric Transversality#^lem-64-4|§64.4]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]], [[§64 Parametric Transversality#^lem-64-5|§64.5]], [[§54 Critical Points and the Hessian#^def-54-3|Def. §54.3]]
+*Uses:* [[§64 Parametric Transversality#^lem-64-4|§64.4]], [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]], [[§64 Parametric Transversality#^lem-64-5|§64.5]], [[§54 Critical Points and the Hessian#^def-54-3|Def. §54.3]], [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]]
 
 > [!theorem] Theorem §64.8: Height Functions and Regular Values
 > Let $\pi : S \to \mathbb{R}^N$, $\pi(\mathbf{a}, p) = \mathbf{a}$, be the projection of the manifold $S$ of Proposition [[§64 Parametric Transversality#^prop-64-6|§64.6]] onto the parameter (not to be confused with the orthogonal projections $\pi_p$). Then $\pi^{-1}(\mathbf{a}) = \{\mathbf{a}\} \times \operatorname{Crit}(f_{\mathbf{a}})$, and

@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 48.4", "SU(2) → SO(3) double cover", "spin double cover"]
+aliases: ["MATH 591 48.5", "SU(2) → SO(3) double cover", "spin double cover"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5]]
@@ -26,6 +26,7 @@ tags: [differentiable-manifolds, hub]
 - [[§37 Regular Submanifolds#^lem-37-5|Lemma §37.5: Smooth Maps and Regular Submanifolds]]
 - [[§47 The Unit Quaternions and SU(2)#^prop-47-5|Proposition §47.5: S³ Is SU(2)]]
 - [[§47 The Unit Quaternions and SU(2)#^prop-47-6|Proposition §47.6: The Tangent Space of SU(2) at the Identity]]
+- [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-1|Lemma §48.1: SO(3) Is a Regular Submanifold]]
 - [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|Proposition §48.2: Conjugation by Unit Quaternions Is Rotation]]
 - [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|Lemma §48.3: Every Rotation Has an Axis]]
 - [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-4|Lemma §48.4: Translating the Differential]]
@@ -38,6 +39,7 @@ tags: [differentiable-manifolds, hub]
 - [[§10 Continuous Functions#^def-10-2|590 §10.2: Homeomorphism]]
 
 ## Used in (Differentiable Manifolds)
+- [[§48 SU(2) → SO(3)꞉ The Double Cover#^cor-48-6|Corollary §48.6: ℝP³ → SO(3) Is a Diffeomorphism]]
 - [[§48 SU(2) → SO(3)꞉ The Double Cover#^cor-48-7|Corollary §48.7: SU(2) → SO(3) Is a Fibration with Two-Point Fibre]]
 
 ## Connections

@@ -9,25 +9,15 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: maps — The maps with injective differentials: locally inclusions, globally more subtle.*
 
-*References: Lee Ch. 4. Lecture 13.*
-
-The third special type of map, dual to the submersions of [[§36 Submersions|§36]]: the differential is injective instead of surjective, and the local model is an inclusion instead of a projection.
+*References: Lee Ch. 4. Lecture 13.* The third special type of map, dual to the submersions of [[§36 Submersions|§36]]: the differential is injective instead of surjective, and the local model is an inclusion instead of a projection.
 
 ## Immersions
 
-*Lecture 13. The next class of special maps: Lecture 10 listed immersions among the special types of map, and the definition has been on record since ([[§36 Submersions#^def-36-2|Definition §36.2]]); Lecture 13 is where they were first treated seriously, after the tangent bundle ([[§51 The Tangent Bundle|§51]]).*
+*Lecture 13. The next class of special maps: Lecture 10 listed immersions among the special types of map, and the definition has been on record since (Definition [[§36 Submersions#^def-36-2|§36.2]]); Lecture 13 is where they were first treated seriously, after the tangent bundle ([[§51 The Tangent Bundle|§51]]).*
 
-> [!definition] Definition §43.1: Immersions
-> Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$. $F$ is an **immersion at $p$** if $F_{\ast p} : T_pM \to T_{F(p)}N$ is injective — which forces $m \le n$, since an injective linear map cannot lower dimension — and an **immersion** if it is an immersion at every point.
->
-> *Lee: Ch. 4, Immersions*
+![[§36 Submersions#^def-36-2]]
 
-^xdef-43-1
-
-> [!remark]- Connections
-> - The earlier definition, stated with submersions: [[§36 Submersions#^def-36-2|Def. §36.2]]; the dimension constraint there: [[§36 Submersions#^prop-36-1|§36.1]].
-> - An injective linear map cannot lower dimension: [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]].
-> - The first examples are the regular parametrized surfaces of 452, whose $3 \times 2$ Jacobian has rank 2: [[§31 Surface Integrals#^def-31-3|452 Def. §31.3]].
+With $\dim M = m$ and $\dim N = n$: that $F_{\ast p} : T_pM \to T_{F(p)}N$ is injective forces $m \le n$, since an injective linear map cannot lower dimension (Proposition [[§36 Submersions#^prop-36-1|§36.1]](1)). (Lee, Ch. 4, *Immersions*.)
 
 > [!theorem] Theorem §43.1: Local Normal Form for Immersions
 > Let $F : M \to N$ be an immersion at $p$, with $\dim M = m \le n = \dim N$. Then there are charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$ in which the coordinate representation $\tilde F = \psi \circ F \circ \varphi^{-1}$ is the standard inclusion:

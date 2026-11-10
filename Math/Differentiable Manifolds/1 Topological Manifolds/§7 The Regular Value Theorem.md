@@ -139,13 +139,18 @@ tags: [differentiable-manifolds, math591]
 ![[m591-4-1.svg]]
 *Two equations in $\mathbb{R}^3$: a sphere and a plane meeting transversally (left, rank $2$, a curve) and tangentially (right, rank $1$, a single point).*
 
-The figure is the case $N = 3$, $m = 2$: two equations in $\mathbb{R}^3$, each level set a surface, the common level set their intersection. On the left the sphere $x^2+y^2+z^2 = 1$ meets the plane $z = c$ with $|c| < 1$ transversally, the two gradients at a point of intersection are independent, the Jacobian has rank $2$, and the intersection is a curve of dimension $3 - 2 = 1$. On the right, $F = (x^2+y^2+z^2-1,\, z-1)$: both components have nonvanishing gradient, but at the tangency $(0,0,1)$ they are parallel, so
+The figure is the case $N = 3$, $m = 2$: two equations in $\mathbb{R}^3$, each level set a surface, the common level set their intersection. On the left the sphere $x^2+y^2+z^2 = 1$ meets the plane $z = c$ with $|c| < 1$ transversally, the two gradients at a point of intersection are independent, the Jacobian has rank $2$, and the intersection is a curve of dimension $3 - 2 = 1$. The right-hand picture, the sphere and its tangent plane $z = 1$, is Example [[§7 The Regular Value Theorem#^ex-7-3|§7.3]].
 
-$$
-DF_{(0,0,1)} = \begin{pmatrix} 0 & 0 & 2 \\ 0 & 0 & 1 \end{pmatrix}
-$$
+> [!example] Example §7.3: Non-Example: A Sphere and a Tangent Plane
+> Let $F : \mathbb{R}^3 \to \mathbb{R}^2$, $F = (x^2+y^2+z^2-1,\, z-1)$ (the figure above, on the right): both components have nonvanishing gradient, but at the tangency $(0,0,1)$ they are parallel, so
+>
+> $$
+> DF_{(0,0,1)} = \begin{pmatrix} 0 & 0 & 2 \\ 0 & 0 & 1 \end{pmatrix}
+> $$
+>
+> has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the predicted curve. So $(0,0,1)$ is a critical point and $\vec 0$ a critical value of $F$ (Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]]). This is what the scalar case $m = 1$ cannot show: there the hypothesis reads “$\nabla F \neq 0$” and looks like a condition on one function, whereas it is really a condition on the gradients *jointly*.
 
-has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the predicted curve. This is what the scalar case $m = 1$ cannot show: there the hypothesis reads “$\nabla F \neq 0$” and looks like a condition on one function, whereas it is really a condition on the gradients *jointly*.
+^ex-7-3
 
 ## The Implicit Function Theorem
 
@@ -214,6 +219,52 @@ has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the
 
 *Uses:* [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]
 
+> [!theorem] Corollary §7.4: Derivative of the Implicit Function
+> In the situation of Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], let $F : V_0 \to W_0$ be the smooth function whose graph is $\Phi^{-1}(c) \cap (V_0 \times W_0)$. Write $\partial\Phi/\partial x$ for the $k \times n$ block of $D\Phi$ in the free variables and $\partial\Phi/\partial y$ for the $k \times k$ block of the theorem, and $DF(x)$ for the $k \times n$ Jacobian of $F$ at $x$. Then:
+>
+> 1. for every $x \in V_0$,
+>
+> $$
+> \frac{\partial \Phi}{\partial x}\big(x, F(x)\big) + \frac{\partial \Phi}{\partial y}\big(x, F(x)\big)\, DF(x) = 0;
+> $$
+>
+> 2. at every $x \in V_0$ at which the block $\dfrac{\partial \Phi}{\partial y}\big(x, F(x)\big)$ is nonsingular — in particular at $x = a$, where $F(a) = b$ —
+>
+> $$
+> DF(x) = -\Big(\frac{\partial \Phi}{\partial y}\big(x, F(x)\big)\Big)^{-1} \frac{\partial \Phi}{\partial x}\big(x, F(x)\big).
+> $$
+
+^cor-7-4
+
+> [!proof]+ Proof
+> *(The notes derived the formula in one line, by differentiating $\Phi(x, F(x)) = c$ with the chain rule; the hypothesis in (2) and the details are filled in.)*
+>
+> (1) Fix $x \in V_0$ and $j \in \{1, \ldots, n\}$; we show that column $j$ of the $k \times n$ matrix on the left is zero. As $V_0$ is open, there is $\varepsilon > 0$ with $x + te_j \in V_0$ for $|t| < \varepsilon$. Put
+>
+> $$
+> \gamma(t) = \big(x + te_j,\ F(x + te_j)\big), \qquad |t| < \varepsilon .
+> $$
+>
+> The point $\gamma(t)$ lies in $V_0 \times W_0$ and has the form $(x', F(x'))$, so $\Phi(\gamma(t)) = c$ by the equivalence of Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]: the function $t \mapsto \Phi(\gamma(t))$ is constant and its derivative is $0$. The curve $\gamma$ is differentiable with $\gamma(0) = (x, F(x))$ and
+>
+> $$
+> \gamma'(0) = \big(e_j,\ DF(x)\, e_j\big),
+> $$
+>
+> the second entry by Lemma [[§7 The Regular Value Theorem#^lem-7-1|§7.1]] applied to $F$. By the chain rule for a curve (MATH 452; recalled in Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]),
+>
+> $$
+> 0 = \frac{d}{dt}\Big|_{t=0} \Phi(\gamma(t)) = D\Phi_{(x, F(x))}\, \gamma'(0) = \frac{\partial \Phi}{\partial x}\big(x, F(x)\big)\, e_j + \frac{\partial \Phi}{\partial y}\big(x, F(x)\big)\, DF(x)\, e_j ,
+> $$
+>
+> where the last equality splits the matrix $D\Phi_{(x,F(x))}$ into its first $n$ columns, the block $\partial\Phi/\partial x$, and its last $k$ columns, the block $\partial\Phi/\partial y$. The right-hand side is column $j$ of the matrix in (1).
+>
+> (2) If $\dfrac{\partial \Phi}{\partial y}\big(x, F(x)\big)$ is nonsingular, move the first term of (1) to the other side and multiply on the left by the inverse of this block. For $x = a$: the point $(a, b)$ lies in $V_0 \times W_0$ and $\Phi(a, b) = c$, so $b = F(a)$ by the equivalence of Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], and the block at $(a, F(a)) = (a, b)$ is nonsingular by the hypothesis of that theorem.
+
+^pf-7-4
+
+*Uses:* [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], [[§7 The Regular Value Theorem#^lem-7-1|§7.1]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]]
+
 ![[m591-7-5.svg]]
 
 *(Not from lecture; added on request.)* The theorem for $n = k = 1$, with $\Phi(x, y) = x^2 + y^2$ and $c = 1$, so that $\Phi^{-1}(1)$ is the unit circle and $\partial\Phi/\partial y = 2y$. *Left:* at a point $(a, b)$ with $b > 0$ the $1 \times 1$ matrix $(2b)$ is nonsingular, and the theorem gives a box $V_0 \times W_0$ in which the circle is exactly the graph of $F(x) = \sqrt{1 - x^2}$: each vertical line $\{x\} \times W_0$, $x \in V_0$, meets the circle in exactly one point. The box must be small: $W_0$ has to exclude the lower half of the circle, where the same $x$ has the second solution $-\sqrt{1 - x^2}$. *Right:* at $(1, 0)$, $\partial\Phi/\partial y = 0$ and the conclusion fails for every box around $(1, 0)$: vertical lines just left of $x = 1$ meet the circle twice, and those to the right not at all, so the circle is not a graph over $x$ there. But $\partial\Phi/\partial x(1, 0) = 2 \neq 0$, so by the theorem with the roles of $x$ and $y$ exchanged (Lemma [[§7 The Regular Value Theorem#^lem-7-3|§7.3]]) it is a graph over $y$: $x = \sqrt{1 - y^2}$, each horizontal line meeting it once.
@@ -228,11 +279,9 @@ $$
 
 nonsingular where $y \neq 0$; there the circle is the graph of $F(x) = \big(\sqrt{1 - h^2 - x^2},\ h\big)$ over an interval $V_0$, and each slice $\{x\} \times W_0$ (a square in the $yz$-direction) meets it in exactly one point. The two-dimensional figure above is the case $n = k = 1$.
 
-The three pictures, written out. In each example the steps are the same: the full Jacobian $D\Phi$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]), its square block in the variables to be solved for, the set where that block is invertible, explicit $V_0$, $W_0$ and $F$ with a check of “$\Phi = c \iff y = F(x)$” on $V_0 \times W_0$, and the derivative of $F$. For the last step, differentiating $\Phi(x, F(x)) = c$ by the chain rule gives
+The three pictures, written out. In each example the steps are the same: the full Jacobian $D\Phi$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]), its square block in the variables to be solved for, the set where that block is invertible, explicit $V_0$, $W_0$ and $F$ with a check of “$\Phi = c \iff y = F(x)$” on $V_0 \times W_0$, and the derivative of $F$. For the last step, Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]] gives
 
 $$
-\frac{\partial \Phi}{\partial x}\big(x, F(x)\big) + \frac{\partial \Phi}{\partial y}\big(x, F(x)\big)\, DF(x) = 0,
-\qquad\text{so}\qquad
 DF(x) = -\Big(\frac{\partial \Phi}{\partial y}\big(x, F(x)\big)\Big)^{-1} \frac{\partial \Phi}{\partial x}\big(x, F(x)\big),
 $$
 
@@ -245,7 +294,7 @@ where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free
 > 2. *Full Jacobian* ($1 \times 2$): $D\Phi_{(x,y)} = \begin{pmatrix} 2x & 2y \end{pmatrix}$, so $\dfrac{\partial\Phi}{\partial x} = 2x$ and the block to invert is $\dfrac{\partial\Phi}{\partial y} = (2y)$.
 > 3. *Where the theorem applies.* $(2y)$ is invertible iff $y \neq 0$: at every point of the circle except $(\pm 1, 0)$.
 > 4. *$V_0$, $W_0$, $F$* at a point $(a, b)$ with $b > 0$: $V_0 = (-1, 1)$, $W_0 = (0, 2)$, $F(x) = \sqrt{1 - x^2}$. *Check:* for $x \in V_0$, $1 - x^2 > 0$, so $F$ is smooth with values in $(0, 1] \subseteq W_0$; and for $(x, y) \in V_0 \times W_0$, $x^2 + y^2 = 1 \iff y^2 = 1 - x^2 \iff y = \sqrt{1 - x^2}$, the last step because $y > 0$ on $W_0$. (At $b < 0$: $W_0 = (-2, 0)$ and $F(x) = -\sqrt{1 - x^2}$.)
-> 5. *Derivative.* Directly, $F'(x) = \dfrac{-x}{\sqrt{1 - x^2}}$. From the formula, $-(2y)^{-1}(2x) = -x/y = -x/\sqrt{1 - x^2}$ at $y = F(x)$: the same.
+> 5. *Derivative.* Directly, $F'(x) = \dfrac{-x}{\sqrt{1 - x^2}}$. From Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], $-(2y)^{-1}(2x) = -x/y = -x/\sqrt{1 - x^2}$ at $y = F(x)$: the same.
 > 6. *At $(1, 0)$* the block $(2y) = (0)$ is singular, but $\partial\Phi/\partial x = (2x) = (2)$ is not: the theorem applies with the roles of $x$ and $y$ exchanged, and near $(1, 0)$ the circle is $x = G(y) = \sqrt{1 - y^2}$, $y \in (-1, 1)$, $x \in (0, 2)$.
 
 ^ex-7-4
@@ -257,7 +306,7 @@ where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free
 > 2. *Full Jacobian* ($1 \times 3$): $D\Phi_{(x,y,z)} = \begin{pmatrix} 2x & 2y & 2z \end{pmatrix}$, so $\dfrac{\partial\Phi}{\partial(x, y)} = \begin{pmatrix} 2x & 2y \end{pmatrix}$ and the block to invert is $\dfrac{\partial\Phi}{\partial z} = (2z)$.
 > 3. *Where the theorem applies.* $(2z)$ is invertible iff $z \neq 0$: off the equator.
 > 4. *$V_0$, $W_0$, $F$* at a point with $z > 0$: $V_0 = \{(x, y) : x^2 + y^2 < 1\}$, the open unit disk, $W_0 = (0, 2)$, $F(x, y) = \sqrt{1 - x^2 - y^2}$. *Check:* on $V_0$, $1 - x^2 - y^2 > 0$, so $F$ is smooth with values in $(0, 1] \subseteq W_0$; and on $V_0 \times W_0$, $x^2 + y^2 + z^2 = 1 \iff z = \sqrt{1 - x^2 - y^2}$, since $z > 0$.
-> 5. *Derivative* ($1 \times 2$). Directly, $DF_{(x,y)} = \begin{pmatrix} \dfrac{-x}{F} & \dfrac{-y}{F} \end{pmatrix}$. From the formula, $-(2z)^{-1}\begin{pmatrix} 2x & 2y \end{pmatrix} = \begin{pmatrix} -x/z & -y/z \end{pmatrix}$ at $z = F(x, y)$: the same.
+> 5. *Derivative* ($1 \times 2$). Directly, $DF_{(x,y)} = \begin{pmatrix} \dfrac{-x}{F} & \dfrac{-y}{F} \end{pmatrix}$. From Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], $-(2z)^{-1}\begin{pmatrix} 2x & 2y \end{pmatrix} = \begin{pmatrix} -x/z & -y/z \end{pmatrix}$ at $z = F(x, y)$: the same.
 > 6. *On the equator* ($z = 0$, say at $(1, 0, 0)$) the block $(2z)$ is singular, but $\partial\Phi/\partial x = (2)$ is not, and there the sphere is a graph $x = \sqrt{1 - y^2 - z^2}$ over the disk in the $(y, z)$-plane.
 
 ^ex-7-5
@@ -284,7 +333,7 @@ where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free
 > $$
 >
 > *Check:* on $V_0$, $r^2 - x^2 > 0$, so $F$ is smooth, with $F(x) \in (0, r] \times \{h\} \subseteq W_0$. For $(x, y, z) \in V_0 \times W_0$: $\Phi(x, y, z) = (1, h)$ iff $z = h$ and $x^2 + y^2 = 1 - h^2 = r^2$, iff $z = h$ and $y = \sqrt{r^2 - x^2}$ (as $y > 0$), iff $(y, z) = F(x)$.
-> 5. *Derivative* ($2 \times 1$). Directly, $DF(x) = \begin{pmatrix} -x/\sqrt{r^2 - x^2} \\ 0 \end{pmatrix}$. From the formula, with
+> 5. *Derivative* ($2 \times 1$). Directly, $DF(x) = \begin{pmatrix} -x/\sqrt{r^2 - x^2} \\ 0 \end{pmatrix}$. From Corollary [[§7 The Regular Value Theorem#^cor-7-4|§7.4]], with
 >
 > $$
 > \begin{pmatrix} 2y & 2z \\ 0 & 1 \end{pmatrix}^{-1} = \frac{1}{2y}\begin{pmatrix} 1 & -2z \\ 0 & 2y \end{pmatrix},
@@ -334,7 +383,7 @@ For $\mathrm{SL}(n,\mathbb{R})$ in [[§12 The Classical Groups Are Topological M
 >
 > *Locally Euclidean.* Fix $p \in X$.
 >
-> *Step 1 (relabelling the coordinates).* $F'(p)$ is a $k \times (n+k)$ matrix of rank $k$, so $k$ of its $n+k$ columns are linearly independent. Let $\rho : \mathbb{R}^{n+k} \to \mathbb{R}^{n+k}$ be the coordinate permutation carrying those $k$ positions to the last $k$, and put $\widetilde F = F \circ \rho^{-1}$. Then $\widetilde F$ is smooth, $\widetilde F^{-1}(\vec 0) = \rho(X)$, and $\widetilde F'(\rho(p)) = F'(p)\,\rho^{-1}$ is $F'(p)$ with its columns permuted, so its last $k$ columns are independent. As $\rho$ restricts to a homeomorphism $X \to \rho(X)$, and local Euclideanness is a topological property, we may replace $(X, F, p)$ by $(\rho(X), \widetilde F, \rho(p))$: WLOG, writing the coordinates as $(x,y) \in \mathbb{R}^n \times \mathbb{R}^k$, the $k \times k$ matrix $\big(\partial F^i/\partial y^j (p)\big)$ — the last $k$ columns of $F'(p)$ — is nonsingular.
+> *Step 1 (relabelling the coordinates; this is Lemma [[§7 The Regular Value Theorem#^lem-7-3|§7.3]] with $\Phi = F$).* $F'(p)$ is a $k \times (n+k)$ matrix of rank $k$, so $k$ of its $n+k$ columns are linearly independent. Let $\rho : \mathbb{R}^{n+k} \to \mathbb{R}^{n+k}$ be the coordinate permutation carrying those $k$ positions to the last $k$, and put $\widetilde F = F \circ \rho^{-1}$. Then $\widetilde F$ is smooth, $\widetilde F^{-1}(\vec 0) = \rho(X)$, and $\widetilde F'(\rho(p)) = F'(p)\,\rho^{-1}$ is $F'(p)$ with its columns permuted, so its last $k$ columns are independent. As $\rho$ restricts to a homeomorphism $X \to \rho(X)$, and local Euclideanness is a topological property, we may replace $(X, F, p)$ by $(\rho(X), \widetilde F, \rho(p))$: WLOG, writing the coordinates as $(x,y) \in \mathbb{R}^n \times \mathbb{R}^k$, the $k \times k$ matrix $\big(\partial F^i/\partial y^j (p)\big)$ — the last $k$ columns of $F'(p)$ — is nonsingular.
 > Written out,
 >
 > $$
@@ -369,7 +418,7 @@ For $\mathrm{SL}(n,\mathbb{R})$ in [[§12 The Classical Groups Are Topological M
 
 ^pf-7-6
 
-*Uses:* [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
+*Uses:* [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[§7 The Regular Value Theorem#^lem-7-3|§7.3]]
 
 > [!remark]- Connections
 > - The smooth structure on $X$: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; for level sets of maps between manifolds: [[§30 The Differential in Coordinates#^cor-30-10|§30.10]] and [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]].

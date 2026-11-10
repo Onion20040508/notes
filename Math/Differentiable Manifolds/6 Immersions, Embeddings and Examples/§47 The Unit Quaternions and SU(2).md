@@ -22,14 +22,28 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 > i^2 = j^2 = k^2 = -1, \qquad ij = -ji = k, \quad jk = -kj = i, \quad ki = -ik = j .
 > $$
 >
-> The **conjugate** of $q$ is $\bar q = x_0 - x_1 i - x_2 j - x_3 k$, its **norm** is the Euclidean norm $|q|$ of $(x_0, \ldots, x_3)$, and $q$ is **pure imaginary** if $x_0 = 0$; the pure imaginary quaternions form $\mathbb{H}_0 \cong \mathbb{R}^3$. We identify $\mathbb{C}$ with $\{x_2 = x_3 = 0\}$.
+> We identify $\mathbb{C}$ with $\{x_2 = x_3 = 0\}$.
 >
 > *Lee: Problem 7-22*
 
 ^def-47-1
 
+> [!definition] Definition §47.2: Conjugate and Norm of a Quaternion
+> Let $q = x_0 + x_1 i + x_2 j + x_3 k \in \mathbb{H}$ (Definition [[§47 The Unit Quaternions and SU(2)#^def-47-1|§47.1]]). The **conjugate** of $q$ is $\bar q = x_0 - x_1 i - x_2 j - x_3 k$, and its **norm** is the Euclidean norm $|q|$ of $(x_0, \ldots, x_3)$.
+>
+> *Lee: Problem 7-22*
+
+^def-47-2
+
+> [!definition] Definition §47.3: Pure Imaginary Quaternions
+> A quaternion $q = x_0 + x_1 i + x_2 j + x_3 k \in \mathbb{H}$ (Definition [[§47 The Unit Quaternions and SU(2)#^def-47-1|§47.1]]) is **pure imaginary** if $x_0 = 0$; the pure imaginary quaternions form $\mathbb{H}_0 \cong \mathbb{R}^3$.
+>
+> *Lee: Problem 7-22*
+
+^def-47-3
+
 > [!theorem] Proposition §47.1: Norm and Conjugation
-> For $p, q \in \mathbb{H}$ ([[§47 The Unit Quaternions and SU(2)#^def-47-1|Def. §47.1]]): $\overline{pq} = \bar q\, \bar p$, $\ q \bar q = \bar q q = |q|^2$, and $|pq| = |p|\,|q|$. Hence every $q \neq 0$ has inverse $q^{-1} = \bar q / |q|^2$, and $S^3 = \{|q| = 1\}$ is a group ([[§1 The Definition of a Group#^def-1-1|493 Def. §1.1]]), with $q^{-1} = \bar q$.
+> For $p, q \in \mathbb{H}$, with the conjugate and the norm of Definition [[§47 The Unit Quaternions and SU(2)#^def-47-2|§47.2]] ([[§47 The Unit Quaternions and SU(2)#^def-47-1|Def. §47.1]]): $\overline{pq} = \bar q\, \bar p$, $\ q \bar q = \bar q q = |q|^2$, and $|pq| = |p|\,|q|$. Hence every $q \neq 0$ has inverse $q^{-1} = \bar q / |q|^2$, and $S^3 = \{|q| = 1\}$ is a group ([[§1 The Definition of a Group#^def-1-1|493 Def. §1.1]]), with $q^{-1} = \bar q$.
 
 ^prop-47-1
 
@@ -174,7 +188,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 > [!proof]+ Proof
 > *(The submitted solution proved the submanifold claim with hyperspherical charts; the regular value theorem is shorter. Filled in; the submitted proof follows.)* Three claims: $S^3$ is a regular submanifold of dimension $3$; multiplication and inversion are smooth; and $S^3$ is connected, via the polar form.
 >
-> *Submanifold.* Let $f : \mathbb{R}^4 \to \mathbb{R}$, $f(x) = |x|^2 = x_0^2 + x_1^2 + x_2^2 + x_3^2$, so $S^3 = f^{-1}(1)$. Its Jacobian is the row $f'(x) = 2x^{\mathsf T} = (2x_0, 2x_1, 2x_2, 2x_3)$, which is nonzero for $x \in S^3$ because $x \neq 0$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] this row is the matrix of $f_{\ast x}$, so $f_{\ast x} : T_x\mathbb{R}^4 \to T_{1}\mathbb{R}$ has rank $1$ and is onto the $1$-dimensional target: $1$ is a regular value of $f$ (Definition [[§36 Submersions#^def-36-4|§36.4]]). By Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], $S^3$ is a regular submanifold of $\mathbb{R}^4$ of codimension $1$, so of dimension $3$.
+> *Submanifold.* Let $f : \mathbb{R}^4 \to \mathbb{R}$, $f(x) = |x|^2 = x_0^2 + x_1^2 + x_2^2 + x_3^2$, so $S^3 = f^{-1}(1)$. Its Jacobian is the row $f'(x) = 2x^{\mathsf T} = (2x_0, 2x_1, 2x_2, 2x_3)$, which is nonzero for $x \in S^3$ because $x \neq 0$. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]] this row is the matrix of $f_{\ast x}$, so $f_{\ast x} : T_x\mathbb{R}^4 \to T_{1}\mathbb{R}$ has rank $1$ and is onto the $1$-dimensional target: $1$ is a regular value of $f$ (Definition [[§30 The Differential in Coordinates#^def-30-4|§30.4]]). By Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], $S^3$ is a regular submanifold of $\mathbb{R}^4$ of codimension $1$, so of dimension $3$.
 >
 > *Multiplication.* By bilinearity, for $p = \sum_a y_a e_a$ and $q = \sum_b x_b e_b$ (with $e_0 = 1$, $e_1 = i$, $e_2 = j$, $e_3 = k$) we have $pq = \sum_{a,b} y_a x_b\, e_a e_b$, and each $e_a e_b$ is $\pm$ one of the $e_c$ (Definition [[§47 The Unit Quaternions and SU(2)#^def-47-1|§47.1]]). So each coordinate of $pq$ is a polynomial in $y_0, \ldots, y_3, x_0, \ldots, x_3$, and $m(p, q) = pq$ is smooth $\mathbb{R}^4 \times \mathbb{R}^4 \to \mathbb{R}^4$. On $S^3 \times S^3$ the multiplication is $m \circ (\iota \circ \mathrm{pr}_1, \iota \circ \mathrm{pr}_2)$, where $\iota : S^3 \to \mathbb{R}^4$ is the inclusion, smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), and the projections are smooth (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]); a map into $\mathbb{R}^8$ whose components are smooth is smooth, so the multiplication is smooth into $\mathbb{R}^4$. It lands in $S^3$ by Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-1|§47.1]] ($|pq| = |p|\,|q| = 1$), so it is smooth into $S^3$ by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2).
 >
@@ -196,7 +210,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ^pf-47-4
 
-*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-1|Def. §47.1]], [[§47 The Unit Quaternions and SU(2)#^prop-47-1|§47.1]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]
+*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-1|Def. §47.1]], [[§47 The Unit Quaternions and SU(2)#^prop-47-1|§47.1]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§16 Connected Subspaces of ℝ#^thm-16-4|590 §16.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]]
 
 > [!proof]+ Second proof of the submanifold claim: hyperspherical charts (the submitted solution)
 >

@@ -41,7 +41,46 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 ^pf-16-2
 
-**Not proved here.** Stated in lecture without proof. The usual argument reduces a matrix of positive determinant to the identity by a path, using Gaussian elimination or the polar decomposition together with connectedness of $\mathrm{SO}(n)$. Only [[§16 The Classical Groups#^prop-16-1|Proposition §16.1]] is needed below.
+The usual argument reduces a matrix of positive determinant to the identity by a path, using Gaussian elimination or the polar decomposition together with connectedness of $\mathrm{SO}(n)$. Only [[§16 The Classical Groups#^prop-16-1|Proposition §16.1]] is needed below.
+
+> [!theorem] Proposition §16.3: $\mathrm{O}(n)$ Is Disconnected
+> For $n \ge 1$,
+>
+> $$
+> \mathrm{O}(n) = \mathrm{SO}(n) \sqcup \{\, g \in \mathrm{O}(n) \mid \det g = -1 \,\}
+> $$
+>
+> is a disjoint union of two nonempty subsets, each open and closed in $\mathrm{O}(n)$; hence $\mathrm{O}(n)$ is disconnected.
+
+^prop-16-3
+
+> [!proof]+ Proof
+> The determinant is continuous with only the values $\pm 1$ on $\mathrm{O}(n)$, so it splits $\mathrm{O}(n)$ into two disjoint open and closed pieces, by the argument that disconnects $\mathrm{GL}(n,\mathbb{R})$ (Proposition [[§16 The Classical Groups#^prop-16-1|§16.1]]). *(Not from lecture; filled in.)* In detail: by Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]], $\det g = \pm 1$ for every $g \in \mathrm{O}(n)$, so
+>
+> $$
+> \mathrm{SO}(n) = \{\, g \in \mathrm{O}(n) \mid \det g = 1 \,\} = \mathrm{O}(n) \cap \det{}^{-1}(0,\infty), \qquad \{\, g \in \mathrm{O}(n) \mid \det g = -1 \,\} = \mathrm{O}(n) \cap \det{}^{-1}(-\infty,0),
+> $$
+>
+> the first equality being Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|§11.8]]. Both sets are open in $\mathrm{O}(n)$: $\det$ is continuous on $\operatorname{Mat}(n,\mathbb{R})$ (Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]]), so $\det^{-1}(0,\infty)$ and $\det^{-1}(-\infty,0)$ are open in $\operatorname{Mat}(n,\mathbb{R})$, and their intersections with $\mathrm{O}(n)$ are open in the subspace topology. The two sets are disjoint, and their union is $\mathrm{O}(n)$ because $\det = \pm 1$ there; so each is the complement in $\mathrm{O}(n)$ of the other, hence also closed. Both are nonempty: $I \in \mathrm{SO}(n)$, and $D = \mathrm{diag}(1, \ldots, 1, -1)$ is invertible with $D^T D = I$, so $D \in \mathrm{O}(n)$ by Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]], and $\det D = -1$.
+
+^pf-16-3
+
+*Uses:* [[§16 The Classical Groups#^prop-16-1|§16.1]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]]
+
+That each piece is connected, so that $\mathrm{O}(n)$ has exactly two components, is Lee's Proposition 21.34.
+
+> [!example] Example §16.1: $\mathrm{O}(2)$ as Two Circles
+> $\mathrm{O}(2)$ drawn as two circles (the figure below): the two pieces of Proposition [[§16 The Classical Groups#^prop-16-3|§16.3]] for $n = 2$. The rotations $R_\theta$ form $\mathrm{SO}(2)$, the matrices of determinant $1$, a circle through $I$. The matrices of determinant $-1$ are the reflections $R_\theta S$ with $S = \mathrm{diag}(1, -1)$ — if $\det A = -1$ then $AS \in \mathrm{SO}(2)$ — a second circle. *(Computed; not from lecture.)* Explicitly,
+>
+> $$
+> R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix},
+> \qquad
+> S = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
+> \qquad
+> R_\theta S = \begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix}.
+> $$
+
+^ex-16-1
 
 ![[m591-5-1.svg]]
 *$\mathrm{O}(2)$ as two circles: the rotations $\mathrm{SO}(2)$ over $\det = +1$ and the reflections $R_\theta S$ over $\det = -1$.*
@@ -49,17 +88,6 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 ![[m591-5-a1.gif|460]]
 
 *(Not from lecture; animation added, vault only.)* Three paths in $\mathrm{GL}(2, \mathbb{R})$, each shown by the image of the unit square and the graph of $\det$. The straight segment from $I$ to $\mathrm{diag}(1, -1)$ passes $\det = 0$ at $t = \tfrac12$ (the square collapses), so it leaves the group. Within $\det > 0$, $(1-t)A + tI$ joins a rotation $A \neq -I$ to $I$. Within $\det < 0$, the reflections $R_\theta S$ form a loop. No path joins the two components.
-
-$\mathrm{O}(2)$ drawn as two circles. The rotations $R_\theta$ form $\mathrm{SO}(2)$, the matrices of determinant $1$, a circle through $I$. The matrices of determinant $-1$ are the reflections $R_\theta S$ with $S = \mathrm{diag}(1, -1)$ — if $\det A = -1$ then $AS \in \mathrm{SO}(2)$ — a second circle. *(Computed; not from lecture.)* Explicitly,
-
-$$
-R_\theta = \begin{pmatrix} \cos\theta & -\sin\theta \\ \sin\theta & \cos\theta \end{pmatrix},
-\qquad
-S = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix},
-\qquad
-R_\theta S = \begin{pmatrix} \cos\theta & \sin\theta \\ \sin\theta & -\cos\theta \end{pmatrix}.
-$$
-The determinant is continuous with only the values $\pm 1$ on $\mathrm{O}(n)$, so it splits $\mathrm{O}(n)$ into two disjoint open and closed pieces, by the argument that disconnects $\mathrm{GL}(n,\mathbb{R})$ ([[§16 The Classical Groups#^prop-16-1|Proposition §16.1]]). That each piece is connected, so that $\mathrm{O}(n)$ has exactly two components, is Lee's Proposition 21.34.
 
 > [!example] Example §16.2: Why $\mathrm{SO}(n)$ Is a Proper Subgroup of $\mathrm{O}(n)$
 > Intersecting with $\mathrm{SL}$ is not redundant: $\mathrm{O}(n)$ does not sit inside $\mathrm{SL}(n)$, since $\det = \pm 1$ and both signs occur. The reflection

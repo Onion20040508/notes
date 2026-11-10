@@ -70,6 +70,10 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 
 ^def-37-3
 
+![[m591-15-1.svg]]
+
+An adapted chart ($m = 2$, $k = 1$). The chart $\varphi$ straightens $U \cap S$ onto the part of the $x_a$-axis inside $\varphi(U)$ — exactly the set $\varphi(U) \cap \{x_b = 0\}$, running from rim to rim — and the induced chart $\varphi_S$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]], below) keeps only the coordinate $x_a$, landing on an open interval of $\mathbb{R}^{m-k}$.
+
 > [!remark]- Connections
 > - In Euclidean space an adapted chart comes from a graph chart ([[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]) by straightening the graph: [[§37 Regular Submanifolds#^prop-37-12|§37.12]] and its figure.
 
@@ -163,9 +167,6 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 ^pf-37-4
 
 *Uses:* [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§17 Differentiable Structures#^prop-17-8|§17.8]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]]
-
-![[m591-15-1.svg]]
-*An adapted chart ($m = 2$, $k = 1$). The chart $\varphi$ straightens $U \cap S$ onto the part of the $x_a$-axis inside $\varphi(U)$ — exactly the set $\varphi(U) \cap \{x_b = 0\}$, running from rim to rim — and the induced chart $\varphi_S$ keeps only the coordinate $x_a$, landing on an open interval of $\mathbb{R}^{m-k}$.*
 
 > [!remark]- Connections
 > - The subspace topology: [[§5 Subspace Topology#^def-5-1|590 Def. §5.1]].
@@ -343,7 +344,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 >
 > *(2)* Let $q \in U$. The image of $(x_b)_{\ast q}$ is a subspace containing, by the second case of (1), every vector $\partial/\partial r^j|_{x_b(q)}$ of the coordinate basis of $T_{x_b(q)}\mathbb{R}^k$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), hence their span, which is everything. So $(x_b)_{\ast q}$ is onto, and $x_b$ is a submersion at $q$ (Definition [[§36 Submersions#^def-36-1|§36.1]]).
 >
-> *(3)* By Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], $U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\} = x_b^{-1}(\vec 0)$. Every point of $x_b^{-1}(\vec 0)$ is a point of $U$, at which $x_b$ is a submersion by (2); so $\vec 0$ is a regular value of $x_b$ (Definition [[§36 Submersions#^def-36-4|§36.4]]).
+> *(3)* By Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], $U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\} = x_b^{-1}(\vec 0)$. Every point of $x_b^{-1}(\vec 0)$ is a point of $U$, at which $x_b$ is a submersion by (2); so $\vec 0$ is a regular value of $x_b$ (Definition [[§30 The Differential in Coordinates#^def-30-4|§30.4]]; a regular point is a point where the map is a submersion, Definitions [[§30 The Differential in Coordinates#^def-30-3|§30.3]] and [[§36 Submersions#^def-36-1|§36.1]]).
 >
 > *(4)* Let $q \in U \cap S$; then $(U, \varphi)$ is an adapted chart at $q$. By the first case of (1), $(x_b)_{\ast q}$ kills $\partial/\partial x^1|_q, \ldots, \partial/\partial x^{m-k}|_q$, hence, being linear, their span; by Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] that span is $\iota_{\ast q}(T_qS)$, so $\iota_{\ast q}(T_qS) \subseteq \ker (x_b)_{\ast q}$. The span has dimension $m - k$, its spanning vectors being part of a basis of $T_qM$. On the other side, by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) with $\dim T_qM = m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]) and $\operatorname{rank}(x_b)_{\ast q} = k$ by (2),
 >
@@ -357,7 +358,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 ^pf-37-10
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]]
 
 > [!definition] Definition §37.4: Conormal Space
 > Let $S \subseteq M$ be a regular submanifold and $p \in S$. The **conormal space** of $S$ at $p$ is
@@ -488,7 +489,35 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 ![[m591-35-3.svg]]
 *Straightening a graph. The map $\Phi(x, y) = (x, y - h(x))$ keeps $x$ and measures the height above the graph; it carries the graph $X$ to the slice $z = 0$, and the parallel graphs $y = h(x) + c$ to the slices $z = c$. This is the passage from the graph charts of [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2]], which flatten $X$ alone, to an adapted chart, which straightens a whole neighbourhood of $X$ in the ambient space. On the left is the whole of $X$: only near $p$ is it the graph $y = h(x)$, over the $x$-range of the domain $U$ of $\Phi$; at its leftmost point it has a vertical tangent and is not a graph over $x$, so points there need another chart.*
 
-For the unit sphere $S^2 \subseteq \mathbb{R}^3$ near the north pole, the graph is $z = \sqrt{1 - x^2 - y^2}$, and $(x, y, z) \mapsto (x, y, z - \sqrt{1 - x^2 - y^2})$ is an adapted chart; so is $(x, y, z) \mapsto (x, y, x^2 + y^2 + z^2 - 1)$ near any point with $z \neq 0$, whose last coordinate is the defining function of the external description.
+> [!example] Example §37.1: Adapted Charts of the Sphere
+> For the unit sphere $S^2 \subseteq \mathbb{R}^3$, the two halves of the proof of Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]] give two kinds of chart of $\mathbb{R}^3$ adapted to $S^2$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], with $k = 1$):
+>
+> 1. near the north pole, the graph is $z = \sqrt{1 - x^2 - y^2}$, and $(x, y, z) \mapsto (x, y, z - \sqrt{1 - x^2 - y^2})$ is an adapted chart, on the domain $U_1 = \{(x, y, z) : x^2 + y^2 < 1,\ z > 0\}$;
+> 2. so is $(x, y, z) \mapsto (x, y, x^2 + y^2 + z^2 - 1)$ near any point with $z \neq 0$ — on the domain $U_2 = \{(x, y, z) : z > 0\}$, or on $\{(x, y, z) : z < 0\}$ — whose last coordinate is the defining function of the external description.
+
+^ex-37-1
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* In each case we show that the map is a smooth chart of $\mathbb{R}^3$ on the stated domain whose last component vanishes exactly on the part of $S^2$ in the domain (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]).
+>
+> *(1)* This is the step “graph $\Rightarrow$ slice” of the proof of Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]], with $n = 2$, $k = 1$, $V = \{(x, y) : x^2 + y^2 < 1\}$, $V' = (0, \infty)$ and $h(x, y) = \sqrt{1 - x^2 - y^2}$, which is smooth on $V$ because $1 - x^2 - y^2 > 0$ there. Its hypothesis holds: for $(x, y, z) \in V \times V'$, $x^2 + y^2 + z^2 = 1$ iff $z^2 = 1 - x^2 - y^2$ iff $z = h(x, y)$, because $z > 0$; so $S^2 \cap (V \times V') = \{(x, y, h(x, y)) : (x, y) \in V\}$. That step shows that $\Phi_1(x, y, z) = (x, y, z - h(x, y))$ is a smooth chart of $\mathbb{R}^3$ on $U_1 = V \times V'$ whose last component vanishes exactly on $S^2 \cap U_1$. So $(U_1, \Phi_1)$ is adapted to $S^2$; its domain contains the north pole $(0, 0, 1)$.
+>
+> *(2)* On $U_2 = \{z > 0\}$, open in $\mathbb{R}^3$, put $\Phi_2(x, y, z) = (x, y, x^2 + y^2 + z^2 - 1)$, a smooth map.
+> - $\Phi_2$ is injective on $U_2$: $\Phi_2(x, y, z) = \Phi_2(x', y', z')$ gives $x = x'$, $y = y'$ and then $z^2 = z'^2$, so $z = z'$, both being positive.
+> - Its image is $O = \{(x, y, w) : w > x^2 + y^2 - 1\}$, which is open, as the preimage of $(0, \infty)$ under the continuous function $(x, y, w) \mapsto w - x^2 - y^2 + 1$. Indeed, for $z > 0$ the last component $w = x^2 + y^2 + z^2 - 1$ is greater than $x^2 + y^2 - 1$; conversely, for $(x, y, w) \in O$ the number $z = \sqrt{w + 1 - x^2 - y^2}$ is positive and $\Phi_2(x, y, z) = (x, y, w)$.
+> - Its inverse is $(x, y, w) \mapsto \big(x, y, \sqrt{w + 1 - x^2 - y^2}\big)$ on $O$, which is smooth because $w + 1 - x^2 - y^2 > 0$ on $O$.
+>
+> So $\Phi_2$ is a diffeomorphism of $U_2$ onto the open set $O$ (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]), hence a smooth chart of $\mathbb{R}^3$, by the argument in the proof of Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]]: it is a homeomorphism onto an open set whose transition maps with the identity chart are $\Phi_2$ and $\Phi_2^{-1}$ (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]). Its last component vanishes at $(x, y, z) \in U_2$ iff $x^2 + y^2 + z^2 = 1$, iff $(x, y, z) \in S^2$. So $(U_2, \Phi_2)$ is adapted to $S^2$, at every point of $S^2$ with $z > 0$. On $\{z < 0\}$ the same three items hold with “positive” replaced by “negative” and the square root $\sqrt{w + 1 - x^2 - y^2}$ replaced by $-\sqrt{w + 1 - x^2 - y^2}$ (the image is the same set $O$), which gives an adapted chart at every point of $S^2$ with $z < 0$. The Jacobian is
+>
+> $$
+> \Phi_2'(x, y, z) = \begin{pmatrix} 1 & 0 & 0 \\ 0 & 1 & 0 \\ 2x & 2y & 2z \end{pmatrix}, \qquad \det \Phi_2'(x, y, z) = 2z ,
+> $$
+>
+> which is not invertible where $z = 0$: no restriction of $\Phi_2$ is a chart at a point of the equator, a chart having an invertible Jacobian (proof of Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]], slice $\Rightarrow$ external).
+
+^pf-ex-37-1
+
+*Uses:* [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^prop-37-12|§37.12]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]]
 
 > [!theorem] Lemma §37.13: An Adapted Chart of a Submanifold of $\mathbb{R}^n$
 > *(Letters as in [[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]], where this lemma is used: here $M$ is the submanifold and $\mathbb{R}^n$ the ambient space, while above $M$ was the ambient manifold.)* Let $M \subseteq \mathbb{R}^n$ be a regular submanifold of dimension $m$, that is, of codimension $n - m$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), and let $(U, \varphi = (x^1, \ldots, x^n))$ be a smooth chart of $\mathbb{R}^n$ adapted to $M$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), so that

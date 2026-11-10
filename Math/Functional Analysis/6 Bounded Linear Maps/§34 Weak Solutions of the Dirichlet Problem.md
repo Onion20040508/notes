@@ -130,6 +130,8 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 
 > [!theorem] Theorem §34.3: Existence and Uniqueness of Weak Solutions
 > Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $f \in L^2(\Omega)$. Then $(D)$ has a unique weak solution $u \in H^1_0(\Omega)$.
+>
+> *Lax: §7.2 (existence, there by the Riesz representation theorem)*
 
 ^thm-34-3
 

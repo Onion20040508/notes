@@ -232,6 +232,11 @@ $$
 
 ^ex-22-2
 
+> [!definition] Definition §22.6: Regular Value of a Map Between Vector Spaces
+> *(Not from lecture; filled in.)* Suppose $\dim X \ge \dim Y$ and $F : X \to Y$ is smooth (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-3|§22.3]]). A point $c \in Y$ is a **regular value** of $F$ if, for a choice of linear coordinates $L$ on $X$ and $K$ on $Y$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|§22.1]]), the point $K(c)$ is a regular value (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]) of the coordinate representation $\widetilde F = K \circ F \circ L^{-1} : \mathbb{R}^m \to \mathbb{R}^n$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-2|§22.2]]). By Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]], this holds for one choice of linear coordinates if and only if it holds for every choice.
+
+^def-22-6
+
 > [!theorem] Corollary §22.4: Regular Values Without Coordinates
 > Suppose $\dim X \ge \dim Y$ and $F : X \to Y$ is smooth, and let $\widetilde F = K \circ F \circ L^{-1}$ and $\tilde p = L(p)$ be taken in linear coordinates $L$, $K$, as in [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]]. Then for $p \in X$,
 >
@@ -239,7 +244,7 @@ $$
 > \widetilde F'(\tilde p) \text{ has maximal rank } (= \dim Y) \iff dF_p : X \to Y \text{ is surjective},
 > $$
 >
-> and this holds for one choice of coordinates iff for all. Hence $c \in Y$ is a regular value of $F$ iff $dF_p$ is surjective for every $p \in F^{-1}(c)$, a statement that involves no bases.
+> and this holds for one choice of coordinates iff for all. Hence $c \in Y$ is a regular value of $F$ (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-6|§22.6]]), in one choice of linear coordinates or in any, iff $dF_p$ is surjective for every $p \in F^{-1}(c)$, a statement that involves no bases.
 
 ^cor-22-4
 
@@ -252,11 +257,11 @@ $$
 >
 > *Independence of coordinates.* The top arrow is independent of coordinates by Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], so surjectivity of $\widetilde F'(\tilde p)$ is too: if it holds for one choice $L, K$, then $dF_p$ is surjective, and by the previous paragraph applied to any other choice $L', K'$, the Jacobian of $K' F L'^{-1}$ at $L'(p)$ is surjective as well.
 >
-> *Regular values.* Read in linear coordinates, $c$ is a regular value of $F$ when $K(c)$ is a regular value of $\widetilde F$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]): $\widetilde F'(\tilde q)$ is surjective at every $\tilde q \in \widetilde F^{-1}(K(c))$ (Definition [[§7 The Regular Value Theorem#^def-7-3|§7.3]]). These points are exactly the $\tilde q = L(q)$ with $q \in F^{-1}(c)$, since $\widetilde F(L(q)) = K(F(q))$ equals $K(c)$ iff $F(q) = c$ ($K$ is injective) and $L$ is a bijection. By the equivalence above at each such $q$, $c$ is a regular value iff $dF_q$ is surjective for every $q \in F^{-1}(c)$, a statement that involves no bases.
+> *Regular values.* Fix linear coordinates $L$, $K$. By Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-6|§22.6]], read in these linear coordinates, $c$ is a regular value of $F$ when $K(c)$ is a regular value of $\widetilde F$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]): $\widetilde F'(\tilde q)$ is surjective at every $\tilde q \in \widetilde F^{-1}(K(c))$ (Definition [[§7 The Regular Value Theorem#^def-7-3|§7.3]]). These points are exactly the $\tilde q = L(q)$ with $q \in F^{-1}(c)$, since $\widetilde F(L(q)) = K(F(q))$ equals $K(c)$ iff $F(q) = c$ ($K$ is injective) and $L$ is a bijection. By the equivalence above at each such $q$, $c$ is a regular value in the coordinates $L$, $K$ iff $dF_q$ is surjective for every $q \in F^{-1}(c)$, a statement that involves no bases. In particular the condition of Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-6|§22.6]] holds for one choice of linear coordinates iff it holds for every choice.
 
 ^pf-22-4
 
-*Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]]
+*Uses:* [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|Def. §22.5]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-6|Def. §22.6]]
 
 > [!remark]- Connections
 > - The manifold versions of this definition of regular value: [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§36 Submersions#^def-36-4|Def. §36.4]].

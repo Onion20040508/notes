@@ -172,18 +172,11 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 ## Proper Maps
 
-*Lecture 14. When is an injective immersion an embedding? The homeomorphism condition is point-set topology, and a convenient sufficient condition is properness — the same hypothesis as in Ehresmann's theorem ([[§40 Fibrations#^thm-40-3|Theorem §40.3]]).*
+*Lecture 14. When is an injective immersion an embedding? The homeomorphism condition is point-set topology, and a convenient sufficient condition is properness — the same hypothesis as in Ehresmann's theorem (Theorem [[§40 Fibrations#^thm-40-3|§40.3]]).*
 
-> [!definition] Definition §44.2: Proper Map
-> A continuous map $F : X \to Y$ is **proper** if $F^{-1}(K)$ is compact ([[§18 Compact Spaces#^def-18-2|590 Def. §18.2]]) for every compact $K \subseteq Y$.
->
-> *Lee: App. A, Proper Maps*
+![[§13 Group Actions and Orbit Spaces#^def-13-6]]
 
-^xdef-44-2
-
-> [!remark]- Connections
-> - The same definition, given earlier for proper actions: [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]].
-> - The properness hypothesis of [[§40 Fibrations#^thm-40-3|Ehresmann's theorem, §40.3]].
+In symbols: a continuous map $F : X \to Y$ is proper if $F^{-1}(K)$ is compact for every compact $K \subseteq Y$. (Lee, App. A, *Proper Maps*.)
 
 > [!theorem] Proposition §44.4: Proper Maps into Manifolds Are Closed
 > Let $F : M \to N$ be a continuous proper map ([[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]]), $N$ a topological manifold ([[§2 Topological Manifolds#^def-2-2|Def. §2.2]]). Then $F$ is closed ([[§13 Quotient Topology#^def-13-4|590 Def. §13.4]]): $F(C)$ is closed in $N$ for every closed $C \subseteq M$.
@@ -247,12 +240,31 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 *Why does density of the irrational line rule out an embedding? Because the image of an embedding is always closed* locally, *and a dense set that is locally closed is open. Prompted by Assignment 4, Problem 5.*
 
 > [!definition] Definition §44.2: Locally Closed Subset
-> A subset $S$ of a topological space $N$ is **locally closed** if every point of $S$ has an open neighbourhood $V$ in $N$ such that $S \cap V$ is closed in $V$ ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]). Equivalently, $S$ is closed in some open subset of $N$ containing it, namely the union $U$ of these $V$'s.
+> A subset $S$ of a topological space $N$ is **locally closed** if every point of $S$ has an open neighbourhood $V$ in $N$ such that $S \cap V$ is closed in $V$ ([[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]). Equivalently, $S$ is closed in some open subset of $N$ containing it, namely the union $U$ of these $V$'s (Lemma [[§44 Embeddings#^lem-44-7|§44.7]]).
 
 ^def-44-2
 
 > [!remark]- Connections
 > - Closed sets and closed sets of a subspace in 590: [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]], [[§7 Closed Sets and Limit Points#^thm-7-2|590 §7.2]]; the subspace topology: [[§5 Subspace Topology#^def-5-1|590 Def. §5.1]].
+
+> [!theorem] Lemma §44.7: The Two Forms of Local Closedness
+> Let $S$ be a subset of a topological space $N$. The following are equivalent:
+>
+> 1. every point of $S$ has an open neighbourhood $V$ in $N$ such that $S \cap V$ is closed in $V$, that is, $S$ is locally closed (Definition [[§44 Embeddings#^def-44-2|§44.2]]);
+> 2. $S$ is closed in some open subset $U$ of $N$ containing $S$.
+>
+> In (1) $\Rightarrow$ (2), $U$ can be taken to be the union of the neighbourhoods $V$ of (1), one for each point of $S$.
+
+^lem-44-7
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* *(1) $\Rightarrow$ (2).* For each point of $S$ choose a neighbourhood $V$ as in (1). If $U$ is the union of these $V$ — one for each point of $S$ — then $U$ is open and contains $S$. A point of $U \setminus S$ lies in some $V \setminus S$, which is open: it is open in $V$, as the complement of the closed set $S \cap V$, hence open in $N$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]); and $V \setminus S \subseteq U \setminus S$. So $U \setminus S$ is open, and $S = U \setminus (U \setminus S)$ is closed in $U$.
+>
+> *(2) $\Rightarrow$ (1).* Conversely, if $S$ is closed in an open $U \supseteq S$, then every point of $S$ has the open neighbourhood $V = U$, with $S \cap V = S$ closed in $V$.
+
+^pf-44-7
+
+*Uses:* [[§3 Subspaces and Products#^lem-3-2|§3.2]]
 
 > [!theorem] Proposition §44.8: Images of Embeddings Are Locally Closed
 > Every regular submanifold ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]) of $N$ — in particular the image of an embedding ([[§44 Embeddings#^thm-44-1|Theorem §44.1]]) — is locally closed ([[§44 Embeddings#^def-44-2|Def. §44.2]]) in $N$.
@@ -264,11 +276,11 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 >
 > *Locally closed.* At each point of the submanifold $S$ there is an adapted chart $(V, \psi = (y^1, \ldots, y^n))$ (Definitions [[§37 Regular Submanifolds#^def-37-2|§37.2]] and [[§37 Regular Submanifolds#^def-37-3|§37.3]]), in which $S \cap V = \{x \in V : y^{m+1}(x) = \cdots = y^n(x) = 0\}$, a closed subset of $V$ as the zero set of continuous functions: it is the preimage of the closed set $\{\vec 0\} \subseteq \mathbb{R}^{k}$ under the continuous map $(y^{m+1}, \ldots, y^n) : V \to \mathbb{R}^k$. This is the condition of Definition [[§44 Embeddings#^def-44-2|§44.2]], with this $V$.
 >
-> *The equivalence in the definition.* If $U$ is the union of these $V$ — one for each point of $S$ — then $U$ is open and contains $S$. A point of $U \setminus S$ lies in some $V \setminus S$, which is open: it is open in $V$, as the complement of the closed set $S \cap V$, hence open in $N$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]); and $V \setminus S \subseteq U \setminus S$. So $U \setminus S$ is open, and $S = U \setminus (U \setminus S)$ is closed in $U$. Conversely, if $S$ is closed in an open $U \supseteq S$, then every point of $S$ has the open neighbourhood $V = U$, with $S \cap V = S$ closed in $V$.
+> *The equivalent form.* The second form in Definition [[§44 Embeddings#^def-44-2|§44.2]] — $S$ is closed in an open $U \supseteq S$, the union of these $V$, one for each point of $S$ — then holds by Lemma [[§44 Embeddings#^lem-44-7|§44.7]].
 
 ^pf-44-8
 
-*Uses:* [[§44 Embeddings#^def-44-2|Def. §44.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]]
+*Uses:* [[§44 Embeddings#^def-44-2|Def. §44.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§10 Continuous Functions#^thm-10-1|590 §10.1]], [[§7 Closed Sets and Limit Points#^def-7-1|590 Def. §7.1]], [[§44 Embeddings#^lem-44-7|§44.7]]
 
 > [!theorem] Corollary §44.9: Dense Regular Submanifolds Are Open
 > A dense ([[§22 Countability Axioms#^def-22-4|590 Def. §22.4]]) regular submanifold ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]) $S$ of $N$ is an open subset of $N$, and has codimension $0$. In particular, the image of an embedding ([[§44 Embeddings#^def-44-1|Def. §44.1]]) $F : M \to N$ with $\dim M < \dim N$ is never dense.
@@ -276,7 +288,7 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 ^cor-44-9
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* *$S$ is open.* By Proposition [[§44 Embeddings#^prop-44-8|§44.8]], $S$ is locally closed, so by the equivalence in Definition [[§44 Embeddings#^def-44-2|§44.2]] (shown in the proof of Proposition [[§44 Embeddings#^prop-44-8|§44.8]]) $S$ is closed in an open $U \supseteq S$. $S$ is dense in $N$, hence in $U$: a point $u \in U$ lies in the closure of $S$ in $U$ when every open set of $U$ containing $u$ meets $S$, and such a set is open in $N$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]), so it meets $S$ by density. A closed dense subset of $U$ is all of $U$, since it equals its closure in $U$, which is $U$; so $S = U$ is open.
+> *(Not from lecture; filled in.)* *$S$ is open.* By Proposition [[§44 Embeddings#^prop-44-8|§44.8]], $S$ is locally closed, so by Lemma [[§44 Embeddings#^lem-44-7|§44.7]] $S$ is closed in an open $U \supseteq S$. $S$ is dense in $N$, hence in $U$: a point $u \in U$ lies in the closure of $S$ in $U$ when every open set of $U$ containing $u$ meets $S$, and such a set is open in $N$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]), so it meets $S$ by density. A closed dense subset of $U$ is all of $U$, since it equals its closure in $U$, which is $U$; so $S = U$ is open.
 >
 > *Codimension $0$.* If $S = \emptyset$, density forces $N = \overline{S} = \emptyset$, and there is nothing to prove; so let $x \in S$. If $S$ had codimension $k \ge 1$, take an adapted chart $(V, \psi)$ at $x$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]): then $\psi(S \cap V)$ would be a nonempty subset of $\mathbb{R}^{n-k} \times \{0\}$, open in $\mathbb{R}^n$ because $S \cap V$ is open in $V$ — impossible, since no nonempty open subset of $\mathbb{R}^n$ lies in a hyperplane. In detail: $S \cap V$ is open in $V$ because $S$ is open in $N$; $\psi$ is a homeomorphism of $V$ onto the open set $\psi(V)$, so $\psi(S \cap V)$ is open in $\psi(V)$ (Proposition [[§1 Point-Set Topology Review#^prop-1-5|§1.5]](3)), hence in $\mathbb{R}^n$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]). It contains $\psi(x) = (a, \vec 0)$, hence an open ball of some radius $\varepsilon > 0$ around it, which contains the point obtained from $(a, \vec 0)$ by changing its last coordinate from $0$ to $\varepsilon/2$; since $k \ge 1$, that coordinate is one of the last $k$, so this point is not in $\mathbb{R}^{n-k} \times \{0\}$, a contradiction. So $k = 0$.
 >
@@ -284,12 +296,12 @@ The standard non-example is the *irrational line on the torus*: for $\alpha$ irr
 
 ^pf-44-9
 
-*Uses:* [[§44 Embeddings#^prop-44-8|§44.8]], [[§44 Embeddings#^def-44-2|Def. §44.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], [[§8 Interior and Closure#^thm-8-2|590 §8.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]]
+*Uses:* [[§44 Embeddings#^prop-44-8|§44.8]], [[§44 Embeddings#^def-44-2|Def. §44.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]], [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], [[§8 Interior and Closure#^thm-8-2|590 §8.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§44 Embeddings#^lem-44-7|§44.7]]
 
 > [!remark]- Connections
 > - Dense subsets in 590: [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], with the [[Closure Characterization|590 closure characterization]].
 
-This is the precise form of the statement that no shrinking of $V$ isolates the piece $F(U)$ of the irrational line: at every point of [[§44 Embeddings#^prop-44-13|the irrational line]], local closedness fails.
+This is the precise form of the statement that no shrinking of $V$ isolates the piece $F(U)$ of the irrational line: at every point of [[§44 Embeddings#^prop-44-13|the irrational line]], local closedness fails (Corollary [[§44 Embeddings#^cor-44-14|§44.14]], after Proposition [[§44 Embeddings#^prop-44-13|§44.13]]).
 
 > [!theorem] Proposition §44.10: Closed Embeddings Are the Proper Ones
 > An embedding ([[§44 Embeddings#^def-44-1|Def. §44.1]]) $F : M \to N$ is proper ([[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]]) if and only if its image $F(M)$ is closed in $N$. In particular, an injective proper immersion ([[§36 Submersions#^def-36-2|Def. §36.2]]) is exactly an embedding with closed image.
@@ -340,10 +352,10 @@ This is the precise form of the statement that no shrinking of $V$ isolates the 
 
 *Uses:* [[§40 Fibrations#^prop-40-5|§40.5]], [[§36 Submersions#^def-36-2|Def. §36.2]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§44 Embeddings#^prop-44-10|§44.10]], [[§40 Fibrations#^def-40-3|Def. §40.3]]
 
-> [!remark] Remark: Sections of the Tangent and Cotangent Bundles
+> [!example] Example §44.3: Sections of the Tangent and Cotangent Bundles
 > The main examples come later: the zero sections of $TM$ and $T^{\ast}M$ (Definitions [[§51 The Tangent Bundle#^def-51-3|§51.3]] and [[§52 The Cotangent Bundle#^def-52-3|§52.3]], later, in [[§51 The Tangent Bundle|§51]] and [[§52 The Cotangent Bundle|§52]]), and the section $p \mapsto (p, df_p)$ of $T^{\ast}M$ given by a smooth function $f$, smooth by Proposition [[§53 One-Forms#^prop-53-3|§53.3]] (later, in [[§53 One-Forms|§53]]). Each is such an $s$, so by Proposition [[§44 Embeddings#^prop-44-11|§44.11]] its image — the zero section, resp. the image $\{(p, df_p)\}$ of the one-form $df$ — is a closed regular submanifold of dimension $\dim M$.
 
-^xrem-44-2
+^ex-44-3
 
 | Map | Image | Example separating it from the row above |
 |---|---|---|
@@ -351,7 +363,7 @@ This is the precise form of the statement that no shrinking of $V$ isolates the 
 | embedding | locally closed regular submanifold | an open interval embedded in $\mathbb{R}^2$ |
 | injective immersion | possibly not locally closed, even dense | [[§44 Embeddings#^prop-44-13\|the irrational line]] |
 
-Closedness of the image alone is not enough: the image of the [[§44 Embeddings#^ex-44-4|figure-eight]] (Lee's Example 4.19) is compact, hence closed, but the figure-eight is not an embedding. Local closedness is necessary for an embedding, not sufficient.
+Closedness of the image alone is not enough: the image of the figure-eight (Lee's Example 4.19) is compact, hence closed, but the figure-eight is not an embedding. Local closedness is necessary for an embedding, not sufficient.
 
 ![[m591-34-4.svg]]
 *Local closedness ([[§44 Embeddings#^def-44-2|Definition §44.2]]) at a point $p$ of a subset $S$ (blue): is $S \cap V$ (red) closed in a small open disc $V$ (green) around $p$? (a) An open arc in $\mathbb{R}^2$, the embedded open interval of the table's middle row. Its endpoints (hollow) are missing, so $S$ is not closed in $\mathbb{R}^2$; but near each of its points $S \cap V$ is an arc running from boundary to boundary of $V$, closed in $V$, so $S$ is locally closed, as every submanifold is ([[§44 Embeddings#^prop-44-8|Proposition §44.8]]). (b) The image of the [[§44 Embeddings#^ex-44-4|figure-eight]] (Lee's Example 4.19). It is compact, hence closed, and at the crossing point $p$ the set $S \cap V$ is an X, closed in $V$: locally closed. But an X is not a piece of a curve, so $S$ is not a submanifold; local closedness is necessary, not sufficient. (c) The [[§44 Embeddings#^prop-44-13|irrational line]] in the square with opposite sides identified, with slope $(\sqrt5 - 1)/2$: seven turns in blue, of which two strands cross $V$ (thick red); the thin red strands are where the turns up to $t = 90$ cross $V$, and further turns keep adding strands between them. So $S \cap V$ is dense in $V$ without being all of $V$, hence not closed in $V$, for every disc around every point: $S$ is not locally closed, and by Proposition [[§44 Embeddings#^prop-44-8|§44.8]] not a submanifold, which is [[§44 Embeddings#^cor-44-9|Corollary §44.9]] seen locally. (Drawn for these notes in the vault; not in the course tex.)*
@@ -403,6 +415,36 @@ Closedness of the image alone is not enough: the image of the [[§44 Embeddings#
 ^pf-44-13
 
 *Uses:* [[§36 Submersions#^def-36-2|Def. §36.2]], [[§44 Embeddings#^def-44-1|Def. §44.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§44 Embeddings#^lem-44-12|§44.12]], [[§44 Embeddings#^cor-44-9|§44.9]], [[§22 Countability Axioms#^def-22-4|590 Def. §22.4]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]
+
+> [!theorem] Corollary §44.14: The Irrational Line Is Not Locally Closed
+> Let $\gamma$ be the curve of Proposition [[§44 Embeddings#^prop-44-13|§44.13]] and $S = \gamma(\mathbb{R}) \subseteq T^2$ its image. For every $x \in S$ and every open set $V \subseteq T^2$ containing $x$, the set $S \cap V$ is not closed in $V$. So the condition of Definition [[§44 Embeddings#^def-44-2|§44.2]] fails at every point of $S$; in particular, $S$ is not locally closed in $T^2$.
+
+^cor-44-14
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* Let $x \in S$ and let $V \subseteq T^2$ be open with $x \in V$. We show: $S \cap V$ is dense in $V$; $V$ is not contained in $S$; and hence $S \cap V$ is not closed in $V$.
+>
+> *$S \cap V$ is dense in $V$.* Let $O$ be a nonempty open subset of $V$. Then $O$ is open in $T^2$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]), so it meets $S$, because $S$ is dense in $T^2$ (Proposition [[§44 Embeddings#^prop-44-13|§44.13]]); and a point of $O \cap S$ lies in $S \cap V$, as $O \subseteq V$. So every nonempty open subset of $V$ meets $S \cap V$. A point $v \in V$ lies in the closure of $S \cap V$ in $V$ when every open set of $V$ containing $v$ meets $S \cap V$; so that closure is all of $V$.
+>
+> *$V$ is not contained in $S$.* Write $x = (e^{2\pi i a}, e^{2\pi i b})$ with $a, b \in \mathbb{R}$, and let
+>
+> $$
+> c : \mathbb{R} \to T^2, \qquad c(s) = \big(e^{2\pi i a}, e^{2\pi i s}\big) ,
+> $$
+>
+> a parametrization of the circle $\{e^{2\pi i a}\} \times S^1$. It is continuous into $\mathbb{C}^2$ with values in $T^2$, hence continuous into $T^2$, which carries the subspace topology (Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]](2)). Since $c(b) = x \in V$, the set $c^{-1}(V)$ is open in $\mathbb{R}$ and contains $b$, so it contains an interval $J = (b - \varepsilon, b + \varepsilon)$ with $0 < \varepsilon < \tfrac12$. On $J$ the map $c$ is injective: if $c(s) = c(s')$, then $e^{2\pi i (s - s')} = 1$, so $s - s' \in \mathbb{Z}$, and $|s - s'| < 2\varepsilon < 1$ gives $s = s'$. So $c(J)$ is a subset of $V$ in bijection with the interval $J$, hence uncountable. On the other hand, $c(J)$ lies in the circle $\{e^{2\pi i a}\} \times S^1$, and $S$ meets that circle in a countable set: $\gamma(t) = (e^{2\pi i t}, e^{2\pi i \alpha t})$ has first coordinate $e^{2\pi i a}$ exactly when $e^{2\pi i (t - a)} = 1$, that is, when $t - a \in \mathbb{Z}$; so
+>
+> $$
+> S \cap \big(\{e^{2\pi i a}\} \times S^1\big) = \{\gamma(a + k) : k \in \mathbb{Z}\} .
+> $$
+>
+> An uncountable set is not contained in a countable one, so some point of $c(J) \subseteq V$ is not in $S$.
+>
+> *Conclusion.* If $S \cap V$ were closed in $V$, it would equal its closure in $V$, which is $V$ by the first step; then $V \subseteq S$, contradicting the second step. So $S \cap V$ is not closed in $V$. As $x \in S$ and $V$ were arbitrary, no point of $S$ has an open neighbourhood $V$ in $T^2$ with $S \cap V$ closed in $V$; since $S \neq \emptyset$, $S$ is not locally closed (Definition [[§44 Embeddings#^def-44-2|§44.2]]).
+
+^pf-44-14
+
+*Uses:* [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§44 Embeddings#^prop-44-13|§44.13]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§44 Embeddings#^def-44-2|Def. §44.2]]
 
 > [!remark]- Connections
 > - The torus as a quotient of the square in 590: [[§13 Quotient Topology#^ex-13-3|590 Ex. §13.3]]; the covering $\mathbb{R}^2 \to T^2$, through which $F$ factors: [[§31 Covering Spaces#^ex-31-3|590 Ex. §31.3]]; all the torus's uses: [[Torus|590 Torus]].

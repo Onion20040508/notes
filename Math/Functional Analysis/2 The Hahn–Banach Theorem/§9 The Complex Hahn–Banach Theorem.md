@@ -37,7 +37,7 @@ For a complex linear space the inequality $\ell(y) \le p(y)$ makes no sense, sin
 > - (1) $p(ax) = |a|\, p(x)$ for all $a \in \mathbb{C}$, $x \in X$;
 > - (2) $p(x + y) \le p(x) + p(y)$ for all $x, y \in X$.
 >
-> Let $Y$ be a [[§1 Linear Spaces#^def-1-2|linear subspace]] of $X$ and $\ell : Y \to \mathbb{C}$ a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]] satisfying $|\ell(y)| \le p(y)$ for all $y \in Y$. Then $\ell$ can be extended to a linear functional on $X$ satisfying $|\ell(x)| \le p(x)$ for all $x \in X$.
+> Let $Y$ be a [[§1 Linear Spaces#^def-1-2|linear subspace]] of $X$ and $\ell : Y \to \mathbb{C}$ a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|linear functional]] satisfying $|\ell(y)| \le p(y)$ for all $y \in Y$. Then $\ell$ can be extended to a linear functional $L$ on $X$ satisfying $|L(x)| \le p(x)$ for all $x \in X$.
 >
 > *Lax: §3.3, Thm 8*
 

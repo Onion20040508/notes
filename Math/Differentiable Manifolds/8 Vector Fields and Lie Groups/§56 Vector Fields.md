@@ -194,23 +194,76 @@ By (4), $\mathfrak{X}(M)$ is moreover a module over the ring $C^\infty(M)$ — t
 
 ^def-56-4
 
-*(Not from lecture: the lecture uses the word, for an $\mathbb{R}$-linear operator, without defining it.)* $C^\infty(M)$ is a real vector space under pointwise addition and scalar multiplication, and an operator $P$ is *$\mathbb{R}$-linear*, or a *linear operator*, if it is a [[§7 Vector Space of Linear Maps#^ladr-3-1|linear map]] of this space: $P(af + bg) = a\,Pf + b\,Pg$ for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$. Operators can be added, $(P + Q)f = Pf + Qf$, and composed, $(P \circ Q)f = P(Qf)$, and sums and composites of linear operators are linear. Examples: $f \mapsto D_\mathbf{X}f$ for a vector field $\mathbf{X}$ ([[§56 Vector Fields#^lem-56-4|Lemma §56.4]] below), and multiplication by a fixed function, $f \mapsto gf$ ([[§57 Differential Operators#^def-57-1|Definition §57.1]] below). A [[§56 Vector Fields#^def-56-7|derivation]], a [[§56 Vector Fields#^def-56-9|local operator]] and a [[§57 Differential Operators#^def-57-2|differential operator]], defined below, are operators with extra properties; the [[§58 Lie Bracket and Lie Algebra#^def-58-1|Lie bracket]] of [[§58 Lie Bracket and Lie Algebra|§58]] is the commutator of two operators.
+*(Not from lecture: the lecture uses the word, for an $\mathbb{R}$-linear operator, without defining it.)*
+
+> [!definition] Definition §56.5: Linear Operator
+> $C^\infty(M)$ is a real vector space under pointwise addition and scalar multiplication. An operator $P$ on $C^\infty(M)$ (Definition [[§56 Vector Fields#^def-56-4|§56.4]]) is **$\mathbb{R}$-linear**, or a **linear operator**, if it is a linear map of this space: $P(af + bg) = a\,Pf + b\,Pg$ for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$.
+
+^def-56-5
+
+> [!definition] Definition §56.6: Sum and Composite of Operators
+> Operators $P$ and $Q$ on $C^\infty(M)$ (Definition [[§56 Vector Fields#^def-56-4|§56.4]]) can be added and composed: their **sum** $P + Q$ and their **composite** $P \circ Q$ are the operators given by
+>
+> $$
+> (P + Q)f = Pf + Qf, \qquad (P \circ Q)f = P(Qf), \qquad f \in C^\infty(M).
+> $$
+>
+> Both are again operators on $C^\infty(M)$: $Pf + Qf$ is a sum of two smooth functions, and $P$ is applied to the smooth function $Qf$.
+
+^def-56-6
+
+> [!theorem] Lemma §56.3: Sums and Composites of Linear Operators
+> Sums and composites (Definition [[§56 Vector Fields#^def-56-6|§56.6]]) of linear operators (Definition [[§56 Vector Fields#^def-56-5|§56.5]]) are linear.
+
+^lem-56-3
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* Let $P$ and $Q$ be linear operators on $C^\infty(M)$, $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$. By the definition of the sum, and then the linearity of $P$ and of $Q$,
+>
+> $$
+> (P + Q)(af + bg) = P(af + bg) + Q(af + bg) = a\,Pf + b\,Pg + a\,Qf + b\,Qg = a\,(P + Q)f + b\,(P + Q)g .
+> $$
+>
+> By the definition of the composite, the linearity of $Q$, and then the linearity of $P$,
+>
+> $$
+> (P \circ Q)(af + bg) = P\big(Q(af + bg)\big) = P\big(a\,Qf + b\,Qg\big) = a\,P(Qf) + b\,P(Qg) = a\,(P \circ Q)f + b\,(P \circ Q)g .
+> $$
+>
+> So $P + Q$ and $P \circ Q$ satisfy Definition [[§56 Vector Fields#^def-56-5|§56.5]].
+
+^pf-56-3
+
+*Uses:* [[§56 Vector Fields#^def-56-5|Def. §56.5]]
+
+Examples of linear operators: $f \mapsto D_\mathbf{X}f$ for a vector field $\mathbf{X}$ (Definition [[§56 Vector Fields#^def-56-8|§56.8]] and [[§56 Vector Fields#^lem-56-4|Lemma §56.4]] below), and multiplication by a fixed function, $f \mapsto gf$ ([[§57 Differential Operators#^def-57-1|Definition §57.1]] below). A [[§56 Vector Fields#^def-56-7|derivation]], a [[§56 Vector Fields#^def-56-9|local operator]] and a [[§57 Differential Operators#^def-57-2|differential operator]], defined below, are operators with extra properties; the [[§58 Lie Bracket and Lie Algebra#^def-58-1|Lie bracket]] of [[§58 Lie Bracket and Lie Algebra|§58]] is the commutator of two operators.
 
 > [!definition] Definition §56.7: Derivation of $C^\infty(M)$
-> A **derivation** of $C^\infty(M)$ is an $\mathbb{R}$-linear [[§56 Vector Fields#^def-56-4|operator]] $D : C^\infty(M) \to C^\infty(M)$ ([[§56 Vector Fields#^def-56-4|Definition §56.4]]) satisfying the product rule
+> A **derivation** of $C^\infty(M)$ is an $\mathbb{R}$-linear operator $D : C^\infty(M) \to C^\infty(M)$ (Definition [[§56 Vector Fields#^def-56-5|§56.5]]) satisfying the product rule
 >
 > $$
 > D(fg) = f\, Dg + g\, Df \qquad \text{for all } f, g \in C^\infty(M).
 > $$
 >
-> Compare a derivation *at a point* ([[§28 Derivations and the Abstract Tangent Space#^def-28-1|Definition §28.1]]), which takes values in $\mathbb{R}$ and acts on [[§27 Germs#^def-27-2|germs]].
+> Compare a derivation *at a point* (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]), which takes values in $\mathbb{R}$ and acts on germs.
 >
 > *Lee: Ch. 8, Vector Fields as Derivations*
 
 ^def-56-7
 
+> [!definition] Definition §56.8: The Operator of a Vector Field
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ and $f \in C^\infty(M)$. Then $D_\mathbf{X}f : M \to \mathbb{R}$ is the function
+>
+> $$
+> (D_\mathbf{X}f)(p) = \mathbf{X}_p[f], \qquad p \in M,
+> $$
+>
+> the value of the tangent vector $\mathbf{X}_p$, a derivation at $p$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]), on the germ $[f]$ of $f$ at $p$. The function $D_\mathbf{X}f$ is smooth (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]] below), so $D_\mathbf{X} : f \mapsto D_\mathbf{X}f$ is an operator on $C^\infty(M)$ (Definition [[§56 Vector Fields#^def-56-4|§56.4]]), the **operator of the vector field $\mathbf{X}$**.
+
+^def-56-8
+
 > [!theorem] Lemma §56.4: A Vector Field Is a Derivation
-> For $\mathbf{X} \in \mathfrak{X}(M)$ ([[§56 Vector Fields#^def-56-2|Def. §56.2]]) and $f \in C^\infty(M)$, the function $D_\mathbf{X}f : p \mapsto \mathbf{X}_p[f]$ is smooth, and $D_\mathbf{X} : C^\infty(M) \to C^\infty(M)$ is a [[§56 Vector Fields#^def-56-7|derivation]]. In a chart, $D_\mathbf{X}f = \sum_j \mathbf{X}^j\, \partial f/\partial x^j$. (Lee writes $\mathbf{X}f$ for $D_\mathbf{X}f$.)
+> For $\mathbf{X} \in \mathfrak{X}(M)$ ([[§56 Vector Fields#^def-56-2|Def. §56.2]]) and $f \in C^\infty(M)$, the function $D_\mathbf{X}f : p \mapsto \mathbf{X}_p[f]$ (Definition [[§56 Vector Fields#^def-56-8|§56.8]]) is smooth, and $D_\mathbf{X} : C^\infty(M) \to C^\infty(M)$ is a [[§56 Vector Fields#^def-56-7|derivation]]. In a chart, $D_\mathbf{X}f = \sum_j \mathbf{X}^j\, \partial f/\partial x^j$. (Lee writes $\mathbf{X}f$ for $D_\mathbf{X}f$.)
 
 ^lem-56-4
 
@@ -305,19 +358,29 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 
 **Transcription note.** Page 41 of the handwritten notes defines $\operatorname{supp}(\chi) = \{q \in M : \chi(q) \neq 0\}$; the support is the *closure* of that set, as stated in lecture. Without the closure, the support of a bump function would in general not be compact: the set $\{q : \chi(q) \neq 0\}$ is open.
 
-> [!theorem] Proposition §56.7: Bump Functions Exist
-> For every open $U \subseteq M$ and every $p \in U$ there is a [[§56 Vector Fields#^def-56-12|bump function]] $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq U$.
->
-> *Lee: Proposition 2.25*
+The construction below gives slightly more than the existence of bump functions (Corollary [[§56 Vector Fields#^cor-56-7|§56.7]]): a bump function equal to $1$ on a whole closed coordinate ball (Lemma [[§56 Vector Fields#^lem-56-6|§56.6]]), which is needed in the proof of Lemma [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]]. It starts from one function of a real variable (Lemma [[§56 Vector Fields#^lem-56-5|§56.5]]).
 
-^cor-56-7
+> [!theorem] Lemma §56.5: A Smooth Function Vanishing on a Half-Line
+> The function $h : \mathbb{R} \to \mathbb{R}$ with $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$ is smooth. All its derivatives vanish at $0$, and $h > 0$ exactly on $(0, \infty)$.
+
+^lem-56-5
 
 > [!proof]+ Proof
-> *(Stated in Lecture 15, and again in Lecture 16, among technical results not needed in the homework. Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function is constructed in Euclidean space first, and then pulled back with the chart. Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* We prove slightly more, needed in the proof of Lemma [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]]: *if $(V, \varphi)$ is a chart at $p$ with $V \subseteq U$, and $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$, there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.* Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball.
+> *(Not from lecture; filled in, following Lee, Lemmas 2.20–2.22, as is Lemma [[§56 Vector Fields#^lem-56-6|§56.6]].)* By induction, for $t > 0$, $h^{(k)}(t) = P_k(1/t)\, e^{-1/t}$ with $P_k$ a polynomial, since $\frac{d}{dt}\big(P(1/t) e^{-1/t}\big) = \big(-P'(1/t)/t^2 + P(1/t)/t^2\big) e^{-1/t}$. As $s^j e^{-s} \to 0$ for $s = 1/t \to \infty$, every $h^{(k)}(t) \to 0$ as $t \to 0^+$, and the right difference quotient $\big(h^{(k)}(t) - 0\big)/t = (1/t)\, P_k(1/t)\, e^{-1/t} \to 0$ as well. So by induction every $h^{(k)}$ exists at $0$ and equals $0$, and $h$ is smooth on $\mathbb{R}$, with $h > 0$ exactly on $(0, \infty)$.
+
+^pf-56-5
+
+*Uses:* [[§56 Vector Fields#^lem-56-6|§56.6]]
+
+> [!theorem] Lemma §56.6: Bump Function Equal to 1 on a Closed Coordinate Ball
+> Let $p \in M$, let $(V, \varphi)$ be a chart at $p$, and let $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$. Then there is a bump function $\chi$ at $p$ (Definition [[§56 Vector Fields#^def-56-12|§56.12]]) with $\operatorname{supp}\chi \subseteq V$ and $\chi \equiv 1$ on the closed coordinate ball $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$.
+
+^lem-56-6
+
+> [!proof]+ Proof
+> *(Lecture 21 gave the recipe while proving the Whitney embedding theorem: the function is constructed in Euclidean space first, and then pulled back with the chart. Filled in along that recipe, following Lee, Lemmas 2.20–2.22.)* Let $h$ be the function of Lemma [[§56 Vector Fields#^lem-56-5|§56.5]], and $m = \dim M$.
 >
-> *1. A smooth function vanishing to infinite order.* Let $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$. By induction, for $t > 0$, $h^{(k)}(t) = P_k(1/t)\, e^{-1/t}$ with $P_k$ a polynomial, since $\frac{d}{dt}\big(P(1/t) e^{-1/t}\big) = \big(-P'(1/t)/t^2 + P(1/t)/t^2\big) e^{-1/t}$. As $s^j e^{-s} \to 0$ for $s = 1/t \to \infty$, every $h^{(k)}(t) \to 0$ as $t \to 0^+$, and the right difference quotient $\big(h^{(k)}(t) - 0\big)/t = (1/t)\, P_k(1/t)\, e^{-1/t} \to 0$ as well. So by induction every $h^{(k)}$ exists at $0$ and equals $0$, and $h$ is smooth on $\mathbb{R}$, with $h > 0$ exactly on $(0, \infty)$.
->
-> *2. A plateau on $\mathbb{R}^m$.* Put
+> *1. A plateau on $\mathbb{R}^m$.* Put
 >
 > $$
 > H(x) = \frac{h\big(r'^2 - |x|^2\big)}{h\big(r'^2 - |x|^2\big) + h\big(|x|^2 - r^2\big)}, \qquad x \in \mathbb{R}^m .
@@ -325,15 +388,29 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 >
 > The denominator never vanishes: if $|x| < r'$ the first term is positive, and if $|x| \ge r' > r$ the second is. So $H$ is smooth, $0 \le H \le 1$, $H(x) = 1$ when $|x| \le r$ (the second term vanishes), and $H(x) = 0$ when $|x| \ge r'$.
 >
-> *3. Pull back by the chart.* Define $\chi = H\big(\varphi - \varphi(p)\big)$ on $V$ and $\chi = 0$ on $M \setminus V$. The set $K = \varphi^{-1}\big(\overline{B}(\varphi(p), r')\big)$ is compact, as the image of a compact set under the continuous map $\varphi^{-1}$, hence closed in the Hausdorff space $M$, and $K \subseteq V$. $\chi$ is smooth on the open set $V$ and zero on the open set $M \setminus K$; these two open sets cover $M$, so $\chi$ is smooth. Its support lies in $K$, so it is compact and inside $V \subseteq U$; and $\chi \equiv 1$ on $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$, which contains the open neighbourhood $\varphi^{-1}\big(B(\varphi(p), r)\big)$ of $p$. So $\chi$ is a bump function at $p$ (Definition [[§56 Vector Fields#^def-56-12|§56.12]]).
+> *2. Pull back by the chart.* Define $\chi = H\big(\varphi - \varphi(p)\big)$ on $V$ and $\chi = 0$ on $M \setminus V$. The set $K = \varphi^{-1}\big(\overline{B}(\varphi(p), r')\big)$ is compact, as the image of a compact set under the continuous map $\varphi^{-1}$, hence closed in the Hausdorff space $M$, and $K \subseteq V$. $\chi$ is smooth on the open set $V$ and zero on the open set $M \setminus K$; these two open sets cover $M$, so $\chi$ is smooth. Its support lies in $K$, so it is compact and inside $V$; and $\chi \equiv 1$ on $\varphi^{-1}\big(\overline{B}(\varphi(p), r)\big)$, which contains the open neighbourhood $\varphi^{-1}\big(B(\varphi(p), r)\big)$ of $p$. So $\chi$ is a bump function at $p$ (Definition [[§56 Vector Fields#^def-56-12|§56.12]]).
 
-^pf-56-7
+^pf-56-6
 
-*Uses:* [[§56 Vector Fields#^def-56-12|Def. §56.12]]
+*Uses:* [[§56 Vector Fields#^lem-56-5|§56.5]], [[§56 Vector Fields#^def-56-12|Def. §56.12]]
 
 ![[m591-53-1.svg]]
 
-*(Not from lecture; figure added.)* The two steps of the construction for $m = 1$. Left: $h(t) = e^{-1/t}$ for $t > 0$ and $h = 0$ for $t \le 0$ is smooth, with all derivatives $0$ at $t = 0$, so it switches on without a corner (Step 1). Right: the plateau $H(x) = h(r'^2 - x^2) / \big(h(r'^2 - x^2) + h(x^2 - r^2)\big)$ is $1$ on $|x| \le r$, $0$ for $|x| \ge r'$, and smooth in between (Step 2); pulling it back by a chart gives the bump function (Step 3).
+*(Not from lecture; figure added.)* The steps of the construction for $m = 1$. Left: $h(t) = e^{-1/t}$ for $t > 0$ and $h = 0$ for $t \le 0$ is smooth, with all derivatives $0$ at $t = 0$, so it switches on without a corner (Lemma [[§56 Vector Fields#^lem-56-5|§56.5]]). Right: the plateau $H(x) = h(r'^2 - x^2) / \big(h(r'^2 - x^2) + h(x^2 - r^2)\big)$ is $1$ on $|x| \le r$, $0$ for $|x| \ge r'$, and smooth in between (step 1 of the proof of Lemma [[§56 Vector Fields#^lem-56-6|§56.6]]); pulling it back by a chart gives the bump function (step 2).
+
+> [!theorem] Corollary §56.7: Bump Functions Exist
+> For every open $U \subseteq M$ and every $p \in U$ there is a bump function $\chi$ at $p$ with $\operatorname{supp}\chi \subseteq U$.
+>
+> *Lee: Proposition 2.25*
+
+^cor-56-7
+
+> [!proof]+ Proof
+> *(Stated in Lecture 15, and again in Lecture 16, among technical results not needed in the homework; the proof is filled in.)* By Lemma [[§56 Vector Fields#^lem-56-6|§56.6]] it suffices to find a chart $(V, \varphi)$ at $p$ with $V \subseteq U$ and radii $0 < r < r'$ with $\overline{B}(\varphi(p), r') \subseteq \varphi(V)$: the bump function $\chi$ at $p$ given by the lemma then has $\operatorname{supp}\chi \subseteq V \subseteq U$. Such a chart exists: restrict any chart at $p$ to its intersection with $U$, and choose a small ball. In detail, let $(W, \psi)$ be a chart at $p$. Then $V = W \cap U$ is open and contains $p$, and $(V, \varphi)$ with $\varphi = \psi|_V$ is a chart at $p$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)). The set $\varphi(V)$ is open in $\mathbb{R}^m$ and contains $\varphi(p)$, so it contains an open ball $B(\varphi(p), \varepsilon)$ with $\varepsilon > 0$; with $r' = \varepsilon/2$ and $r = \varepsilon/4$, $\overline{B}(\varphi(p), r') \subseteq B(\varphi(p), \varepsilon) \subseteq \varphi(V)$.
+
+^pf-56-7
+
+*Uses:* [[§56 Vector Fields#^def-56-12|Def. §56.12]], [[§56 Vector Fields#^lem-56-6|§56.6]], [[§17 Differentiable Structures#^lem-17-7|§17.7]]
 
 > [!remark]- Connections
 > - The flat function $e^{-1/x^2}$, smooth but not its Taylor series: [[§31 Taylor's Theorem#^ex-31-3|451 Ex. §31.3]].
@@ -341,7 +418,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 
 *Terminology (Lecture 16).* A function $\chi$ with $\operatorname{supp}\chi \subseteq U$ is said to be *subordinate to $U$*; the condition shows up several times.
 
-*Lecture 16: the corollary of Proposition [[§56 Vector Fields#^cor-56-7|§56.7]] (bump functions exist) that the proof of [[§56 Vector Fields#^prop-56-10|Proposition §56.10]] uses.*
+*Lecture 16: the consequence of Corollary [[§56 Vector Fields#^cor-56-7|§56.7]] (bump functions exist) that the proof of [[§56 Vector Fields#^prop-56-10|Proposition §56.10]] uses.*
 
 > [!theorem] Corollary §56.8: Every Germ Has a Global Representative
 > Let $p \in M$ and $\gamma \in C^\infty_p(M)$, represented by $f \in C^\infty(U)$ with $U \ni p$ open. If $\chi$ is a [[§56 Vector Fields#^def-56-12|bump function]] at $p$ subordinate to $U$, then
@@ -373,7 +450,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 >
 > $V \cap U$ is open, contains $p$, and lies in the intersection $M \cap U$ of the two domains, so $(\tilde f, M) \sim (f, U)$ (Definition [[§27 Germs#^def-27-1|§27.1]]), that is, $[\tilde f] = [f] = \gamma$.
 >
-> *In particular.* Every germ $\gamma$ at $p$ has some representative $f \in C^\infty(U)$ with $U \ni p$ open (Definition [[§27 Germs#^def-27-2|§27.2]]), and a bump function at $p$ subordinate to $U$ exists by Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]; so the construction applies to every germ.
+> *In particular.* Every germ $\gamma$ at $p$ has some representative $f \in C^\infty(U)$ with $U \ni p$ open (Definition [[§27 Germs#^def-27-2|§27.2]]), and a bump function at $p$ subordinate to $U$ exists by Corollary [[§56 Vector Fields#^cor-56-7|§56.7]]; so the construction applies to every germ.
 
 ^pf-56-8
 
@@ -392,7 +469,7 @@ Although a local operator $D$ is a priori defined on functions on all of $M$, it
 >
 > *Reduction to the kernel.* Put $h = f - g \in C^\infty(M)$; then $h|_U = 0$. By linearity of $D$, $Df - Dg = D(f - g) = Dh$. So it suffices to show: if $h|_U = 0$ then $(Dh)|_U = 0$ — as one shows that a linear map is injective by showing that its kernel is zero.
 >
-> *The kernel.* Let $h|_U = 0$ and fix $p \in U$. By Proposition [[§56 Vector Fields#^cor-56-7|§56.7]] there is a bump function $\chi$ at $p$ subordinate to $U$: $\chi \in C^\infty(M)$, $\operatorname{supp}\chi \subseteq U$, and $\chi \equiv 1$ near $p$, in particular $\chi(p) = 1$ (Definition [[§56 Vector Fields#^def-56-12|§56.12]]). The product $\chi h$ is the zero function on $M$. Indeed, for $q \in U$, $h(q) = 0$; and for $q \notin U$, $q \notin \operatorname{supp}\chi$, so $\chi(q) = 0$ (every point where $\chi \ne 0$ lies in the support, Definition [[§56 Vector Fields#^def-56-10|§56.10]]). A linear map sends $0$ to $0$, so $D(\chi h) = D(0) = 0$; and by the product rule (Definition [[§56 Vector Fields#^def-56-7|§56.7]]),
+> *The kernel.* Let $h|_U = 0$ and fix $p \in U$. By Corollary [[§56 Vector Fields#^cor-56-7|§56.7]] there is a bump function $\chi$ at $p$ subordinate to $U$: $\chi \in C^\infty(M)$, $\operatorname{supp}\chi \subseteq U$, and $\chi \equiv 1$ near $p$, in particular $\chi(p) = 1$ (Definition [[§56 Vector Fields#^def-56-12|§56.12]]). The product $\chi h$ is the zero function on $M$. Indeed, for $q \in U$, $h(q) = 0$; and for $q \notin U$, $q \notin \operatorname{supp}\chi$, so $\chi(q) = 0$ (every point where $\chi \ne 0$ lies in the support, Definition [[§56 Vector Fields#^def-56-10|§56.10]]). A linear map sends $0$ to $0$, so $D(\chi h) = D(0) = 0$; and by the product rule (Definition [[§56 Vector Fields#^def-56-7|§56.7]]),
 >
 > $$
 > 0 = D(\chi h) = \chi\, Dh + h\, D\chi ,
@@ -435,7 +512,7 @@ Derivations are local, thanks to the product rule and the existence of bump func
 > \mathbf{X}_p(\gamma) = (Df)(p), \qquad f \in C^\infty(M) \text{ a global representative of } \gamma,
 > $$
 >
-> which exists by Corollary [[§56 Vector Fields#^cor-56-8|§56.8]] (with a bump function supplied by Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]).
+> which exists by Corollary [[§56 Vector Fields#^cor-56-8|§56.8]] (with a bump function supplied by Corollary [[§56 Vector Fields#^cor-56-7|§56.7]]).
 >
 > *2. It is well defined.* Let $f, f' \in C^\infty(M)$ both represent $\gamma$. Then $(f, M) \sim (f', M)$, so there is an open $W \ni p$ with $f|_W = f'|_W$ (Definition [[§27 Germs#^def-27-1|§27.1]]). By Lemma [[§56 Vector Fields#^lem-56-9|§56.9]], applied with the open set $W$, $(Df)|_W = (Df')|_W$; since $p \in W$, $(Df)(p) = (Df')(p)$. So $\mathbf{X}_p(\gamma)$ does not depend on the choice of $f$.
 >
@@ -453,7 +530,7 @@ Derivations are local, thanks to the product rule and the existence of bump func
 >
 > So $\mathbf{X}_p$ is a derivation at $p$, i.e. $\mathbf{X}_p \in T_pM$ (Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]] and [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]). Thus $\mathbf{X} : p \mapsto \mathbf{X}_p$ is a section of $TM$, so far not known to be smooth.
 >
-> *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), and $\mathbf{X}_p(x^j) = D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$. *(Completion.)* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to find an open $V \ni p$ on which $\mathbf{X}$ is smooth. Take one bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]), equal to $1$ on an open $V \ni p$. Then $V \subseteq U$, since $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$, extended by $0$ outside $U$: the single extension of Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], smooth on $M$. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$ (because $\chi = 1$ there), so $\tilde x^j$ is a global representative of the germ of $x^j$ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and by step 1
+> *4. $\mathbf{X}$ is smooth.* In a chart $(U, (x^1, \ldots, x^m))$ at $p$, $\mathbf{X}_q = \sum_j \mathbf{X}_q(x^j)\, \partial/\partial x^j|_q$ for $q \in U$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), and $\mathbf{X}_p(x^j) = D(\tilde x^j)(p)$, where $\tilde x^j$ is a smooth extension of $x^j$. *(Completion.)* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to find an open $V \ni p$ on which $\mathbf{X}$ is smooth. Take one bump function $\chi$ at $p$ subordinate to $U$ (Corollary [[§56 Vector Fields#^cor-56-7|§56.7]]), equal to $1$ on an open $V \ni p$. Then $V \subseteq U$, since $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$, extended by $0$ outside $U$: the single extension of Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], smooth on $M$. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$ (because $\chi = 1$ there), so $\tilde x^j$ is a global representative of the germ of $x^j$ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and by step 1
 >
 > $$
 > \mathbf{X}_q(x^j) = D(\tilde x^j)(q) \qquad \text{for all } q \in V .
@@ -461,7 +538,7 @@ Derivations are local, thanks to the product rule and the existence of bump func
 >
 > The right side is the function $D(\tilde x^j) \in C^\infty(M)$ evaluated at $q$; its restriction to $V$ is smooth. Now $(V, (x^1|_V, \ldots, x^m|_V))$ is a smooth chart (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)), and in it the coefficients of $\mathbf{X}$ are $\mathbf{X}^j(q) = \mathbf{X}_q(x^j)$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]), which we have just shown to be smooth on $V$. By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], $\mathbf{X}$ is smooth on $V$. As $p$ was arbitrary, $\mathbf{X}$ is smooth, and $\mathbf{X} \in \mathfrak{X}(M)$.
 >
-> *5. $D = D_\mathbf{X}$.* Let $f \in C^\infty(M)$ and $p \in M$. The function $f$ is a global representative of its own germ $[f]$ at $p$, so step 1 with $\gamma = [f]$ and the definition of $D_\mathbf{X}$ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]) give
+> *5. $D = D_\mathbf{X}$.* Let $f \in C^\infty(M)$ and $p \in M$. The function $f$ is a global representative of its own germ $[f]$ at $p$, so step 1 with $\gamma = [f]$ and the definition of $D_\mathbf{X}$ (Definition [[§56 Vector Fields#^def-56-8|§56.8]]) give
 >
 > $$
 > (D_\mathbf{X} f)(p) = \mathbf{X}_p[f] = (Df)(p) .
@@ -479,7 +556,7 @@ Derivations are local, thanks to the product rule and the existence of bump func
 
 ^pf-56-10
 
-*Uses:* [[§56 Vector Fields#^cor-56-8|§56.8]], [[§56 Vector Fields#^cor-56-7|§56.7]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§56 Vector Fields#^lem-56-9|§56.9]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-4|§56.4]]
+*Uses:* [[§56 Vector Fields#^cor-56-8|§56.8]], [[§56 Vector Fields#^cor-56-7|§56.7]], [[§27 Germs#^def-27-1|Def. §27.1]], [[§56 Vector Fields#^lem-56-9|§56.9]], [[§27 Germs#^prop-27-2|§27.2]], [[§27 Germs#^def-27-3|Def. §27.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§56 Vector Fields#^def-56-8|Def. §56.8]]
 
 So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto the derivations of $C^\infty(M)$. *Notation (Lecture 16).* From now on $D_\mathbf{X}$ is written $\mathbf{X}$: writing $\mathbf{X}(f)$ signals that $\mathbf{X}$ is being thought of as an operator.
 
@@ -497,7 +574,7 @@ So $\mathbf{X} \mapsto D_\mathbf{X}$ is a bijection from $\mathfrak{X}(M)$ onto 
 >
 > *$\mathbf{X}$ smooth $\Rightarrow$ every $\mathbf{X}f$ smooth.* If $\mathbf{X}$ is smooth, then $\mathbf{X} \in \mathfrak{X}(M)$ and $\mathbf{X}f$ is the function $D_\mathbf{X}f$, which is smooth by Lemma [[§56 Vector Fields#^lem-56-4|§56.4]].
 >
-> *Every $\mathbf{X}f$ smooth $\Rightarrow$ $\mathbf{X}$ smooth.* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to show that every $p \in M$ has an open neighbourhood $V$ on which $\mathbf{X}$ is smooth. Let $p \in M$ and $(U, (x^1, \ldots, x^m))$ a chart at $p$. Take a bump function $\chi$ at $p$ subordinate to $U$ (Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$ (extended by $0$ outside $U$) be the global function of Corollary [[§56 Vector Fields#^cor-56-8|§56.8]]. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$, so they have the same germ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and the derivation $\mathbf{X}_q$, which acts on germs, gives them the same value. In the smooth chart $(V, (x^j|_V))$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)) the coefficients of $\mathbf{X}$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]) are therefore
+> *Every $\mathbf{X}f$ smooth $\Rightarrow$ $\mathbf{X}$ smooth.* Smoothness of a map is a condition at each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so it suffices to show that every $p \in M$ has an open neighbourhood $V$ on which $\mathbf{X}$ is smooth. Let $p \in M$ and $(U, (x^1, \ldots, x^m))$ a chart at $p$. Take a bump function $\chi$ at $p$ subordinate to $U$ (Corollary [[§56 Vector Fields#^cor-56-7|§56.7]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \{\chi \ne 0\} \subseteq \operatorname{supp}\chi \subseteq U$. Let $\tilde x^j = \chi x^j$ (extended by $0$ outside $U$) be the global function of Corollary [[§56 Vector Fields#^cor-56-8|§56.8]]. For $q \in V$, $\tilde x^j$ and $x^j$ agree on the open set $V \ni q$, so they have the same germ at $q$ (Definition [[§27 Germs#^def-27-1|§27.1]]), and the derivation $\mathbf{X}_q$, which acts on germs, gives them the same value. In the smooth chart $(V, (x^j|_V))$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)) the coefficients of $\mathbf{X}$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]) are therefore
 >
 > $$
 > \mathbf{X}^j(q) = \mathbf{X}_q[x^j] = \mathbf{X}_q[\tilde x^j] = (\mathbf{X}\tilde x^j)(q), \qquad q \in V,

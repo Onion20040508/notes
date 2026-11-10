@@ -21,6 +21,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-2|Example §60.2: The Additive Group of a Vector Space]]
+- [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-4|Example §60.4: O(2): Zero Bracket but Not Abelian]]
 - [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|Theorem §60.19: The Right Bracket Is the Negative of the Left Bracket]]
 
 ## Connections

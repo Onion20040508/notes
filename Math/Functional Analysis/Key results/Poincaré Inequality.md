@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 33.11", "Poincaré inequality (H¹₀)"]
+aliases: ["MATH 556 33.11", "Poincaré inequality (H¹₀)", "Lax §7.2, Lemma 1"]
 tags: [functional-analysis, hub]
 ---
 ![[§33 Sobolev Spaces and Weak Derivatives#^thm-33-11]]

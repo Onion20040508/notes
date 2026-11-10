@@ -325,18 +325,18 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 > T^{\mathrm{geo}}_g G \;=\; g \cdot T^{\mathrm{geo}}_I G \;=\; T^{\mathrm{geo}}_I G \cdot g .
 > $$
 >
+> | Group $G$ | Presentation | $\dim G$ | $T^{\mathrm{geo}}_I G$ |
+> |---|---|:---:|---|
+> | $\mathrm{GL}(n,\mathbb{R})$ | open in $\operatorname{Mat}(n,\mathbb{R})$ | $n^2$ | $\operatorname{Mat}(n,\mathbb{R})$ |
+> | $\mathrm{GL}(n,\mathbb{C})$ | open in $\operatorname{Mat}(n,\mathbb{C})$ | $2n^2$ | $\operatorname{Mat}(n,\mathbb{C})$ |
+> | $\mathrm{SL}(n,\mathbb{R})$ | $\det^{-1}(1)$ | $n^2 - 1$ | $\mathfrak{sl}(n) = \{A \mid \operatorname{tr} A = 0\}$ |
+> | $\mathrm{O}(n)$ | $F^{-1}(I)$, $F(g) = gg^{\mathsf T} \in \operatorname{Sym}(n,\mathbb{R})$ | $\tfrac{n(n-1)}{2}$ | $\mathfrak{so}(n) = \operatorname{Skew}(n,\mathbb{R})$ |
+> | $\mathrm{SO}(n)$ | open in $\mathrm{O}(n)$ | $\tfrac{n(n-1)}{2}$ | $\mathfrak{so}(n)$ |
+> | $\mathrm{U}(n)$ | $F^{-1}(I)$, $F(g) = gg^* \in \operatorname{Herm}(n)$ | $n^2$ | $\mathfrak{u}(n) = \{X \mid X^* = -X\}$ |
+>
 > *Lee: Examples 7.27–7.30*
 
 ^thm-25-5
-
-| Group $G$ | Presentation | $\dim G$ | $T^{\mathrm{geo}}_I G$ |
-|---|---|:---:|---|
-| $\mathrm{GL}(n,\mathbb{R})$ | open in $\operatorname{Mat}(n,\mathbb{R})$ | $n^2$ | $\operatorname{Mat}(n,\mathbb{R})$ |
-| $\mathrm{GL}(n,\mathbb{C})$ | open in $\operatorname{Mat}(n,\mathbb{C})$ | $2n^2$ | $\operatorname{Mat}(n,\mathbb{C})$ |
-| $\mathrm{SL}(n,\mathbb{R})$ | $\det^{-1}(1)$ | $n^2 - 1$ | $\mathfrak{sl}(n) = \{A \mid \operatorname{tr} A = 0\}$ |
-| $\mathrm{O}(n)$ | $F^{-1}(I)$, $F(g) = gg^{\mathsf T} \in \operatorname{Sym}(n,\mathbb{R})$ | $\tfrac{n(n-1)}{2}$ | $\mathfrak{so}(n) = \operatorname{Skew}(n,\mathbb{R})$ |
-| $\mathrm{SO}(n)$ | open in $\mathrm{O}(n)$ | $\tfrac{n(n-1)}{2}$ | $\mathfrak{so}(n)$ |
-| $\mathrm{U}(n)$ | $F^{-1}(I)$, $F(g) = gg^* \in \operatorname{Herm}(n)$ | $n^2$ | $\mathfrak{u}(n) = \{X \mid X^* = -X\}$ |
 
 > [!proof]+ Proof
 > For each group we need its smooth structure and dimension (the table), its geometric tangent space at $I$, and, for the last four, the two translate formulas. Throughout, Definition [[§25 The Geometric Tangent Space#^def-25-1|§25.1]] and Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] are used in their vector-space form, with the differential in place of the Jacobian, as in Example [[§25 The Geometric Tangent Space#^ex-25-2|§25.2]] and the remark after it.
@@ -497,7 +497,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 ## The Dimension of the Geometric Tangent Space
 
-> [!theorem] Theorem §25.7: Dimension of the Geometric Tangent Space
+> [!theorem] Corollary §25.7: Dimension of the Geometric Tangent Space
 > Let $M = F^{-1}(c) \subseteq \mathbb{R}^{n+k}$ be as in Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], a manifold of dimension $n$. Then for every $p \in M$,
 >
 > $$
@@ -509,7 +509,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 ^cor-25-7
 
 > [!proof]+ Proof
-> *(The last sentence of Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], recorded as a theorem in its own right.)* By Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], $T^{\mathrm{geo}}_pM = \ker F'(p)$. Since $c$ is a regular value, the $k \times (n+k)$ matrix $F'(p)$ has rank $k$, so by rank–nullity ([[Fundamental theorem of linear maps|LADR 3.21]]) $\dim \ker F'(p) = (n + k) - k = n$.
+> *(The last sentence of Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], recorded as a corollary in its own right.)* The setting is that of Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], and its last sentence, proved in Steps 3–5 of its proof for an arbitrary $p \in M$, says that $T^{\mathrm{geo}}_pM$ is a linear subspace of $\mathbb{R}^{n+k}$ of dimension $n = \dim M$.
 
 ^pf-25-7
 

@@ -19,6 +19,7 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§7 The Regular Value Theorem#^lem-7-3|Lemma §7.3: A Regular Point Admits Coordinates to Solve For]]
+- [[§7 The Regular Value Theorem#^cor-7-4|Corollary §7.4: Derivative of the Implicit Function]]
 - [[§7 The Regular Value Theorem#^cor-7-5|Corollary §7.5: Implicit Function Theorem — Scalar Case]]
 - [[§7 The Regular Value Theorem#^thm-7-6|Theorem §7.6: Regular Value Theorem]]
 - [[§7 The Regular Value Theorem#^cor-7-7|Corollary §7.7: Open Domains and Arbitrary Values]]

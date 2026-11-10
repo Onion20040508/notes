@@ -207,7 +207,7 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 >
 > *Chains have upper bounds.* Given a chain $\{(Z_i, \ell_i)\}_{i \in I}$, let $Z^{\ast} = \bigcup_i Z_i$ and define $\ell^{\ast}(z) = \ell_i(z)$ for any $i$ with $z \in Z_i$. Since the chain is nested, any two elements of $Z^{\ast}$ lie in a common $Z_i$, so $Z^{\ast}$ is a subspace and $\ell^{\ast}$ is well defined and linear; $\ell^{\ast} \le p$ on $Z^{\ast}$ because it holds on each $Z_i$. Thus $(Z^{\ast}, \ell^{\ast}) \in P$ is an upper bound.
 >
-> *Conclusion.* By Zorn's lemma $P$ has a maximal element $(Z_m, \ell_m)$. If $Z_m \neq X$, Lemma [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1|§6.1]] (with $Z_m$ in place of $Y$) extends $\ell_m$ to a strictly larger subspace keeping $\ell \le p$, contradicting maximality. Hence $Z_m = X$, and $L := \ell_m$ is the required extension.
+> *Conclusion.* By Zorn's lemma $P$ has a maximal element $(Z_m, \ell_m)$. If $Z_m \neq X$, Lemma [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1|§6.1]] (with $Z_m$ in place of $Y$) extends $\ell_m$ to a functional on a strictly larger subspace that is still dominated by $p$ there, contradicting maximality. Hence $Z_m = X$, and $L := \ell_m$ is the required extension.
 
 ^pf-5-3
 

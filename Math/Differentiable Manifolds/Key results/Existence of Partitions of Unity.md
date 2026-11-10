@@ -11,12 +11,14 @@ tags: [differentiable-manifolds, hub]
 - [[§65 Partitions of Unity#^thm-65-7|Theorem §65.7: Existence of Partitions of Unity]], in [[§65 Partitions of Unity]]
 
 ## Its proof uses
-- [[§56 Vector Fields#^cor-56-7|Proposition §56.7: Bump Functions Exist]]
+- [[§56 Vector Fields#^lem-56-5|Lemma §56.5: A Smooth Function Vanishing on a Half-Line]]
+- [[§56 Vector Fields#^cor-56-7|Corollary §56.7: Bump Functions Exist]]
 - [[§65 Partitions of Unity#^lem-65-1|Lemma §65.1: Closures and Unions in a Locally Finite Family]]
 - [[§65 Partitions of Unity#^def-65-2|Definition §65.2: Partition of Unity]]
 - [[§65 Partitions of Unity#^lem-65-2|Lemma §65.2: Locally Finite Sums of Smooth Functions Are Smooth]]
-- [[§65 Partitions of Unity#^def-65-6|Definition §65.6: Regular Coordinate Ball]]
+- [[§65 Partitions of Unity#^def-65-3|Definition §65.3: Partition of Unity Subordinate to a Cover]]
 - [[§65 Partitions of Unity#^thm-65-5|Theorem §65.5: Manifolds Are Paracompact]]
+- [[§65 Partitions of Unity#^def-65-6|Definition §65.6: Regular Coordinate Ball]]
 - [[§65 Partitions of Unity#^lem-65-6|Lemma §65.6: Regular Coordinate Balls Form a Basis]]
 
 ## Used in (Differentiable Manifolds)

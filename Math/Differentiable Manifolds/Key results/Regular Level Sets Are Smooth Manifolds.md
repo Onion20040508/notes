@@ -17,8 +17,8 @@ tags: [differentiable-manifolds, hub]
 - [[§7 The Regular Value Theorem#^cor-7-7|Corollary §7.7: Open Domains and Arbitrary Values]]
 - [[§17 Differentiable Structures#^def-17-3|Definition §17.3: Diffeomorphism of Open Subsets of Euclidean Space]]
 - [[§17 Differentiable Structures#^def-17-4|Definition §17.4: Smoothly Compatible Charts]]
-- [[§17 Differentiable Structures#^def-17-8|Definition §17.8: Atlas]]
 - [[§17 Differentiable Structures#^thm-17-6|Theorem §17.6: Every Atlas Lies in a Unique Maximal Atlas]]
+- [[§17 Differentiable Structures#^def-17-8|Definition §17.8: Atlas]]
 - [[§17 Differentiable Structures#^def-17-11|Definition §17.11: Smooth Manifold Structure]]
 - [[§20 Manifolds in Euclidean Space#^ex-20-1|Example §20.1: A Surface in ℝ³]]
 - [[§20 Manifolds in Euclidean Space#^def-20-3|Definition §20.3: Parametrization]]
@@ -39,6 +39,7 @@ tags: [differentiable-manifolds, hub]
 - [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4: The Old and New Versions Agree]]
 - [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|Example §46.1: Spheres Cover Projective Spaces]]
 - [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|Example §46.3: The Hopf Fibration S²ⁿ⁺¹ → ℂPⁿ]]
+- [[§48 SU(2) → SO(3)꞉ The Double Cover#^cor-48-6|Corollary §48.6: ℝP³ → SO(3) Is a Diffeomorphism]]
 
 ## Connections
 - **Used for.** Smooth structures on O(n) and U(n) ([[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|Ex. §23.3]]), on SL(n,ℝ) and on the spheres, hence the smooth half of [[Classical Groups Are Manifolds]] ([[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]). Maps into and out of a level set are smooth when the ambient formulas are ([[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]]), which shows that the three circle atlases define one structure ([[§24 The Circle#^prop-24-1|§24.1]]).

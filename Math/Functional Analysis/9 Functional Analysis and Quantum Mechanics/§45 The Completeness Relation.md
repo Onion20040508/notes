@@ -16,7 +16,6 @@ The physicists' identity $\sum_n |e_n\rangle\langle e_n| = \mathbf{1}$ is Theore
 Recall (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]) that a linear map $T : X \to Y$ between normed linear spaces is bounded if there is $M \ge 0$ with $\|Tx\|_Y \le M\,\|x\|_X$ for all $x \in X$, and that its norm is $\|T\| = \sup_{x \neq 0} \|Tx\|_Y / \|x\|_X$ (Definition [[§30 Boundedness and Continuity#^def-30-3|§30.3]]). In this chapter $X = Y = H$ is a Hilbert space: a bounded linear map $T : H \to H$ is called a *bounded operator* on $H$, and $\|T\|$ its *operator norm*. The identity operator is written $\mathbf{1}$. As for functionals ([[§44 Bras, Kets, and the Riesz Map|§44]]), a constant $c \ge 0$ is called *admissible* for $T$ if $\|Tx\| \le c\,\|x\|$ for all $x \in H$; by Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], parts (b) and (c), $\|T\|$ is admissible, that is, $\|Tx\| \le \|T\|\,\|x\|$ for all $x \in H$, and it is the smallest admissible constant.
 
 > [!remark]- Connections
-> - The general definition, for maps $X \to Y$: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]].
 > - The general operator norm: [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]; as a norm on $\mathcal{L}(X, Y)$: [[§30 Boundedness and Continuity#^thm-30-8|§30.8]].
 > - Finite dimensions: [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
 

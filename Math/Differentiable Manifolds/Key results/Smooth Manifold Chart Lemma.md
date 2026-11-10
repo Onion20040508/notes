@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 51.1", "building a manifold from charts", "chart lemma", "Lee Lemma 1.35"]
+aliases: ["MATH 591 51.2", "building a manifold from charts", "chart lemma", "Lee Lemma 1.35"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§51 The Tangent Bundle#^lem-51-2]]
@@ -19,8 +19,8 @@ tags: [differentiable-manifolds, hub]
 - [[§3 Subspaces and Products#^lem-3-2|Lemma §3.2: Open in Open is Open]]
 - [[§17 Differentiable Structures#^def-17-3|Definition §17.3: Diffeomorphism of Open Subsets of Euclidean Space]]
 - [[§17 Differentiable Structures#^def-17-4|Definition §17.4: Smoothly Compatible Charts]]
-- [[§17 Differentiable Structures#^def-17-8|Definition §17.8: Atlas]]
 - [[§17 Differentiable Structures#^thm-17-6|Theorem §17.6: Every Atlas Lies in a Unique Maximal Atlas]]
+- [[§17 Differentiable Structures#^def-17-8|Definition §17.8: Atlas]]
 
 ## Used in (Differentiable Manifolds)
 - [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4: The Topology and Smooth Structure of TM]]

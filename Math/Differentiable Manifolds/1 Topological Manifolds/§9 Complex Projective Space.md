@@ -32,7 +32,7 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 > \mathbb{CP}^n \;:=\; S^{2n+1}/{\sim}
 > $$
 >
-> is the **complex projective space** of complex dimension $n$. Explicitly: a point of $\mathbb{CP}^n$ is a class $[z] = \{\, \xi z \mid \xi \in S^1 \,\}$, a circle inside $S^{2n+1}$; $\pi(z) = [z]$; and $W \subseteq \mathbb{CP}^n$ is open iff the union of the circles belonging to $W$ is open in $S^{2n+1}$. The class $[z]$ is the same as the complex line $\mathbb{C} z \subseteq \mathbb{C}^{n+1}$ through $z$ (a line meets the unit sphere in exactly the circle $\{\xi z\}$), so $\mathbb{CP}^n$ is the space of complex lines through the origin in $\mathbb{C}^{n+1}$; the identification is $[z] \mapsto \mathbb{C} z$, with inverse $\ell \mapsto \ell \cap S^{2n+1}$.
+> is the **complex projective space** of complex dimension $n$. Explicitly: a point of $\mathbb{CP}^n$ is a class $[z] = \{\, \xi z \mid \xi \in S^1 \,\}$, a circle inside $S^{2n+1}$; $\pi(z) = [z]$; and $W \subseteq \mathbb{CP}^n$ is open iff the union of the circles belonging to $W$ is open in $S^{2n+1}$.
 >
 > *Lee: Problem 1-9*
 
@@ -41,6 +41,11 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 > [!remark]- Connections
 > - As an orbit space of $\mathrm{U}(1) = S^1$: [[§13 Group Actions and Orbit Spaces#^ex-13-5|Ex. §13.5]] (cf. group actions and orbits, [[§25 Actions#^def-25-1|493 Def. §25.1]], [[§27 Orbits#^def-27-1|493 Def. §27.1]]); charts and smooth structure in [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]]; the projection is a submersion, [[§46 Projective Spaces and the Hopf Fibration#^ex-46-2|Ex. §46.2]].
 > - Real analogue in MATH 590: [[§38 Fundamental Group of Some Surfaces#^def-38-2|590 Def. §38.2 (Projective n-Space)]], [[Projective plane]].
+
+> [!remark] Remark: $\mathbb{CP}^n$ as the Space of Lines
+> The class $[z]$ is the same as the complex line $\mathbb{C} z \subseteq \mathbb{C}^{n+1}$ through $z$ (a line meets the unit sphere in exactly the circle $\{\xi z\}$, Lemma [[§9 Complex Projective Space#^lem-9-4|§9.4]]), so $\mathbb{CP}^n$ is the space of complex lines through the origin in $\mathbb{C}^{n+1}$; the identification is $[z] \mapsto \mathbb{C} z$, with inverse $\ell \mapsto \ell \cap S^{2n+1}$. Proposition [[§9 Complex Projective Space#^prop-9-3|§9.3]] states this with the topologies.
+
+^rem-9-1
 
 > [!theorem] Proposition §9.1: $\mathbb{CP}^n$ is Hausdorff and Second Countable
 > The quotient topology on $\mathbb{CP}^n$ is $T_2$ and second countable.
@@ -85,9 +90,7 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 > [!remark]- Connections
 > - The general form for compact groups acting on compact Hausdorff spaces: [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], of which this is a special case (Example [[§13 Group Actions and Orbit Spaces#^ex-13-10|§13.10]]).
 
-**Transcription note.** Page 7 of the handwritten notes writes the map in this argument as $S^1 \times S^{2n+1} \to S^{2n+2} \times S^{2n+2}$; the target is $S^{2n+1} \times S^{2n+1}$, where the graph of the relation lives.
-
-**Transcription note.** On the board (and in the handwritten notes) the target of $\Phi$ was written with superscripts $2n+2$; the target must be $S^{2n+1} \times S^{2n+1}$ — pairs of points of the sphere being quotiented — as recorded here.
+**Transcription note.** On the board (and on page 7 of the handwritten notes) the target of $\Phi$ was written with superscripts $2n+2$, as $S^1 \times S^{2n+1} \to S^{2n+2} \times S^{2n+2}$; the target must be $S^{2n+1} \times S^{2n+1}$ — pairs of points of the sphere being quotiented, where the graph of the relation lives — as recorded here.
 
 > [!proof]+ A direct proof that $\mathbb{CP}^n$ is Hausdorff (Assignment 2)
 > This bypasses the Hausdorff criterion and exhibits the separating sets. Let $u \neq v$ in $S^{2n+1}/S^1$, with representatives $\vec u, \vec v \in S^{2n+1}$. Their orbits $S^1 \vec u$ and $S^1 \vec v$ are disjoint (distinct orbits), and compact, being images of the compact $S^1$ under $\mu \mapsto \mu\vec u$, $\mu \mapsto \mu \vec v$.
@@ -124,6 +127,8 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 ^pf-9-2
 
 *Uses:* [[§9 Complex Projective Space#^def-9-1|Def. §9.1]], [[§4 Quotient Spaces and Open Maps#^prop-4-1|§4.1]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Heine–Borel Theorem]], [[Continuous Image of a Compact Space is Compact]]
+
+*Reading order.* Proposition [[§9 Complex Projective Space#^prop-9-3|§9.3]], Lemma [[§9 Complex Projective Space#^lem-9-4|§9.4]] and Example [[§9 Complex Projective Space#^ex-9-1|§9.1]] use group actions and orbit spaces (Definitions [[§13 Group Actions and Orbit Spaces#^def-13-1|§13.1]], [[§13 Group Actions and Orbit Spaces#^def-13-2|§13.2]] and [[§13 Group Actions and Orbit Spaces#^def-13-5|§13.5]]) and Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]], all in Chapter 2; they are to be read after Section [[§13 Group Actions and Orbit Spaces|§13]].
 
 > [!theorem] Proposition §9.3: $\mathbb{CP}^n$ as the Space of Complex Lines
 > Let the multiplicative group $\mathbb{C}^\times = \mathbb{C} \setminus \{0\}$ act on $\mathbb{C}^{n+1} \setminus \{0\}$ by scalar multiplication, $\lambda \cdot \vec z = \lambda \vec z$. Then:

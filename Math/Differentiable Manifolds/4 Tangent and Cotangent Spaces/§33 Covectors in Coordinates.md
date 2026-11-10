@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, math591]
 
 *Lecture 10, continued. The cotangent space and the differential of a function were defined in [[§32 The Cotangent Space|§32]] without coordinates; a chart now gives $T_p^{\ast}M$ a basis, and every covector components.*
 
-> [!theorem] Lemma §33.1: The Differential in Coordinates
+> [!theorem] Lemma §33.1: The Differential of a Function in Coordinates
 > Let $(x^1, \ldots, x^m)$ be coordinates near $p$, and write $dx^i|_p$ for the differential at $p$ of the coordinate function $x^i$. Then $\{dx^1|_p, \ldots, dx^m|_p\}$ is the dual basis of $\{\partial/\partial x^1|_p, \ldots, \partial/\partial x^m|_p\}$, so $\dim T_p^*M = m$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]]), and for every smooth $f$ defined near $p$,
 >
 > $$
@@ -25,7 +25,7 @@ tags: [differentiable-manifolds, math591]
 > [!proof]+ Proof
 > *(Lecture 10: it suffices to check the identity on basis vectors. In lecture the left side came from the matrix of $f_{\ast p}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), a $1 \times m$ row — gradients go across — whose $j$-th entry is $\partial f/\partial x^j(p)$. Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] gives the same value directly.)*
 >
-> *Step 1: the $dx^i|_p$ are the dual basis.* Let $\varphi = (x^1, \ldots, x^m)$ be the chart, so that $x^i \circ \varphi^{-1} = r^i$, the $i$-th standard coordinate of $\mathbb{R}^m$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]). For each $i$ and $j$, Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] with $f = x^i$ and $D = \partial/\partial x^j|_p$, followed by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]], gives
+> *Step 1: the $dx^i|_p$ are the dual basis.* Let $\varphi = (x^1, \ldots, x^m)$ be the chart, so that $x^i \circ \varphi^{-1} = r^i$, the $i$-th standard coordinate of $\mathbb{R}^m$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]). For each $i$ and $j$, Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] with $f = x^i$ and $D = \partial/\partial x^j|_p$, followed by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]], gives
 >
 > $$
 > dx^i|_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) = \frac{\partial}{\partial x^j}\Big|_p\big[x^i\big] = \frac{\partial (x^i \circ \varphi^{-1})}{\partial r^j}\big(\varphi(p)\big) = \frac{\partial r^i}{\partial r^j}\big(\varphi(p)\big) = \delta^i_j .
@@ -49,7 +49,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-33-1
 
-*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§12 Duality#^ladr-3-112|LADR 3.112]], [[Linear map lemma|LADR 3.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]
+*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§12 Duality#^ladr-3-112|LADR 3.112]], [[Linear map lemma|LADR 3.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]
 
 > [!remark]- Connections
 > - The dual basis and its coefficients: [[§12 Duality#^ladr-3-112|LADR 3.112]], [[§12 Duality#^ladr-3-114|LADR 3.114]], [[§12 Duality#^ladr-3-116|LADR 3.116]].
@@ -121,12 +121,12 @@ tags: [differentiable-manifolds, math591]
 
 ^rem-33-2
 
-*Not from lecture: the gradient of calculus, used informally since [[§7 The Regular Value Theorem|§7]], and the dot-product identification of vectors with covectors on open subsets of $\mathbb{R}^n$, which turns the gradient into the differential.*
-
 > [!remark]- Connections
 > - The Calc 3 formula and the gradient it replaces: [[§39 Closed and Exact Forms#^prop-39-1|452 §39.1]], [[§10 The Differential#^def-10-1|452 Def. §10.1]].
 > - Converting a covector into a vector with an inner product: [[Riesz representation theorem|LADR 6.42]].
 > - The same point for normal vectors: [[§37 Regular Submanifolds#^rem-37-1|No Normal Vectors Without a Metric]].
+
+*Not from lecture: the gradient of calculus, used informally since [[§7 The Regular Value Theorem|§7]], and the dot-product identification of vectors with covectors on open subsets of $\mathbb{R}^n$, which turns the gradient into the differential.*
 
 > [!definition] Definition §33.2: Gradient
 > Let $U \subseteq \mathbb{R}^n$ be open, $p \in U$, and $h$ a smooth function defined near $p$. The **gradient** of $h$ at $p$ is the vector of its ordinary partial derivatives,

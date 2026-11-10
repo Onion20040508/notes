@@ -30,7 +30,7 @@ The exception is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorph
 > dF_p = F_{\ast p} : T_pM \to T_{F(p)}N ,
 > $$
 >
-> as in Lee. It agrees with the [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|differential of a map between vector spaces]] (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|§22.5]]) under the identification $v \leftrightarrow D_v|_a$ of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]] (the remark in [[§30 The Differential in Coordinates|§30]]), so the two uses of $dF_p$ do not clash. Earlier sections keep $F_{\ast p}$.
+> as in Lee. It agrees with the [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|differential of a map between vector spaces]] (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-5|§22.5]]) under the identification $v \leftrightarrow D_v|_a$ of Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]] (the remark in [[§30 The Differential in Coordinates|§30]]), so the two uses of $dF_p$ do not clash. Earlier sections keep $F_{\ast p}$. Both notations are used below, with the same meaning: $\iota_{\ast p} = d\iota_p$, $(L_g)_{\ast h} = d(L_g)_h$ and $F_{\ast p} = dF_p$.
 
 ^rem-59-2
 
@@ -146,7 +146,7 @@ Only the horizontal component matters, and it must be the same along each vertic
 *The pullback $F^{\ast}$ intertwines the two fields as operators: the square commutes exactly when $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related.*
 
 > [!proof]+ Proof
-> *(Lecture 17, a sketch of the proof; the step for the converse is filled in.)* The two forms of the condition are the same, since $(\mathbf{X} \circ F^{\ast})(g) = \mathbf{X}(g \circ F)$ and $(F^{\ast} \circ \mathbf{Y})(g) = (\mathbf{Y}g) \circ F$; and both sides are functions on $M$, so the condition says that they agree at every $p \in M$, for every $g$. Let $g \in C^\infty(N)$ and $p \in M$. The value at $p$ of a field applied to a function is the tangent vector at $p$ applied to its germ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]). With this, and the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) for $D = \mathbf{X}_p$ — germs pull back, so derivations push forward —
+> *(Lecture 17, a sketch of the proof; the step for the converse is filled in.)* The two forms of the condition are the same, since $(\mathbf{X} \circ F^{\ast})(g) = \mathbf{X}(g \circ F)$ and $(F^{\ast} \circ \mathbf{Y})(g) = (\mathbf{Y}g) \circ F$; and both sides are functions on $M$, so the condition says that they agree at every $p \in M$, for every $g$. Let $g \in C^\infty(N)$ and $p \in M$. The value at $p$ of a field applied to a function is the tangent vector at $p$ applied to its germ (Definition [[§56 Vector Fields#^def-56-8|§56.8]]). With this, and the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) for $D = \mathbf{X}_p$ — germs pull back, so derivations push forward —
 >
 > $$
 > \mathbf{X}(g \circ F)(p) = \mathbf{X}_p[g \circ F] = dF_p(\mathbf{X}_p)[g],
@@ -166,7 +166,7 @@ Only the horizontal component matters, and it must be the same along each vertic
 
 ^pf-59-1
 
-*Uses:* [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§56 Vector Fields#^cor-56-8|§56.8]], [[§56 Vector Fields#^lem-56-4|§56.4]]
+*Uses:* [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§56 Vector Fields#^cor-56-8|§56.8]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§56 Vector Fields#^def-56-8|Def. §56.8]]
 
 > [!theorem] Proposition §59.2: Pushforward by a Diffeomorphism
 > Let $F : M \to N$ be a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]] and $\mathbf{X} \in \mathfrak{X}(M)$. Then the [[§59 Related Vector Fields#^def-59-1|pushforward]] $F_{\ast}\mathbf{X}$ is smooth, it is the unique vector field on $N$ that is [[§59 Related Vector Fields#^def-59-2|F-related]] to $\mathbf{X}$, and for every $g \in C^\infty(N)$
@@ -269,14 +269,14 @@ The reason for the characterization through operators is the following propositi
 > [!remark] Remark: Conversion Diagram for Vector Fields
 > 1. *Section to operator.* $(\mathbf{X}f)(p) = \mathbf{X}_p[f]$, a derivation of $C^\infty(M)$: $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]); $\mathbf{X}f$ is smooth for every smooth $f$ exactly when $\mathbf{X}$ is smooth (Lemma [[§56 Vector Fields#^lem-56-11|§56.11]]).
 > 2. *Operator to section.* Every derivation of $C^\infty(M)$ is a vector field: $\mathbf{X}_p[f] = (\mathbf{X}\tilde f)(p)$ for a global $\tilde f$ with the same germ at $p$, which exists by bump functions and does not depend on the choice (Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], Lemma [[§56 Vector Fields#^lem-56-9|§56.9]], Proposition [[§56 Vector Fields#^prop-56-10|§56.10]]).
-> 3. *Section to components.* On $U$, $X^j = \mathbf{X}(x^j)$, that is, $X^j(p) = \mathbf{X}_p[x^j] = dx^j|_p(\mathbf{X}_p)$.
-> 4. *Components to section.* $\mathbf{X}_p = \sum_j X^j(p)\, \partial/\partial x^j|_p$, smooth if and only if all $X^j$ are (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]); then $\mathbf{X}f = \sum_j X^j\, \partial f/\partial x^j$.
+> 3. *Section to components.* On $U$, $\mathbf{X}^j = \mathbf{X}(x^j)$, that is, $\mathbf{X}^j(p) = \mathbf{X}_p[x^j] = dx^j|_p(\mathbf{X}_p)$.
+> 4. *Components to section.* $\mathbf{X}_p = \sum_j \mathbf{X}^j(p)\, \partial/\partial x^j|_p$, smooth if and only if all $\mathbf{X}^j$ are (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]); then $\mathbf{X}f = \sum_j \mathbf{X}^j\, \partial f/\partial x^j$.
 >
 > *The same three faces for:*
-> - *the bracket.* Globally $[\mathbf{X}, \mathbf{Y}]f = \mathbf{X}(\mathbf{Y}f) - \mathbf{Y}(\mathbf{X}f)$ (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-1|§58.1]]). Pointwise $[\mathbf{X}, \mathbf{Y}]_p[f] = \mathbf{X}_p[\mathbf{Y}f] - \mathbf{Y}_p[\mathbf{X}f]$, which needs the global function $\mathbf{Y}f$, not only the vector $\mathbf{Y}_p$. In components $[\mathbf{X}, \mathbf{Y}]^j = \mathbf{X}(Y^j) - \mathbf{Y}(X^j) = \sum_i \big(X^i\, \partial Y^j/\partial x^i - Y^i\, \partial X^j/\partial x^i\big)$ (Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]]).
-> - *$F$-related fields.* Pointwise $F_{\ast p}\mathbf{X}_p = \mathbf{Y}_{F(p)}$ (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]). Globally $\mathbf{X}(g \circ F) = (\mathbf{Y}g) \circ F$ for all $g$ (Proposition [[§59 Related Vector Fields#^prop-59-1|§59.1]]). In components $Y^i(F(p)) = \sum_j \frac{\partial F^i}{\partial x^j}(p)\, X^j(p)$. For a diffeomorphism, $\mathbf{Y} = F_\ast\mathbf{X}$ with $(F_\ast\mathbf{X})_q = F_{\ast}\mathbf{X}_{F^{-1}(q)}$ (Definition [[§59 Related Vector Fields#^def-59-1|§59.1]]).
+> - *the bracket.* Globally $[\mathbf{X}, \mathbf{Y}]f = \mathbf{X}(\mathbf{Y}f) - \mathbf{Y}(\mathbf{X}f)$ (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-1|§58.1]]). Pointwise $[\mathbf{X}, \mathbf{Y}]_p[f] = \mathbf{X}_p[\mathbf{Y}f] - \mathbf{Y}_p[\mathbf{X}f]$, which needs the global function $\mathbf{Y}f$, not only the vector $\mathbf{Y}_p$. In components $[\mathbf{X}, \mathbf{Y}]^j = \mathbf{X}(\mathbf{Y}^j) - \mathbf{Y}(\mathbf{X}^j) = \sum_i \big(\mathbf{X}^i\, \partial \mathbf{Y}^j/\partial x^i - \mathbf{Y}^i\, \partial \mathbf{X}^j/\partial x^i\big)$ (Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]]).
+> - *$F$-related fields.* Pointwise $F_{\ast p}\mathbf{X}_p = \mathbf{Y}_{F(p)}$ (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]). Globally $\mathbf{X}(g \circ F) = (\mathbf{Y}g) \circ F$ for all $g$ (Proposition [[§59 Related Vector Fields#^prop-59-1|§59.1]]). In components $\mathbf{Y}^i(F(p)) = \sum_j \frac{\partial F^i}{\partial x^j}(p)\, \mathbf{X}^j(p)$. For a diffeomorphism, $\mathbf{Y} = F_\ast\mathbf{X}$ with $(F_\ast\mathbf{X})_q = dF_{F^{-1}(q)}\big(\mathbf{X}_{F^{-1}(q)}\big)$ (Definition [[§59 Related Vector Fields#^def-59-1|§59.1]]).
 > - *one-forms.* Pointwise $\theta_p \in T_p^{\ast}M$; globally the function $p \mapsto \theta_p(\mathbf{X}_p)$ for each vector field $\mathbf{X}$; in components $\theta_j = \theta(\partial/\partial x^j)$ and $\theta = \sum_j \theta_j\, dx^j$ (Proposition [[§53 One-Forms#^prop-53-1|§53.1]]). For $\theta = df$, $df(\mathbf{X}) = \mathbf{X}f$.
-> - *the tangent bundle.* The section $\mathbf{X}$ in the standard chart of $TM$ ([[§51 The Tangent Bundle|§51]]) is $p \mapsto (x^1, \ldots, x^m, X^1, \ldots, X^m)$, with transition $(r, v) \mapsto (\tau(r), \tau'(r)v)$, $\tau$ the transition function of the base.
+> - *the tangent bundle.* The section $\mathbf{X}$ in the standard chart of $TM$ ([[§51 The Tangent Bundle|§51]]) is $p \mapsto (x^1, \ldots, x^m, \mathbf{X}^1, \ldots, \mathbf{X}^m)$, with transition $(r, v) \mapsto (\tau(r), \tau'(r)v)$, $\tau$ the transition function of the base.
 
 ^rem-59-3
 
@@ -354,10 +354,10 @@ The reason for the characterization through operators is the following propositi
 **Transcription note (Lecture 21).** Page 55 of the handwritten notes records the $\partial_y$ component of $[f\partial_x, v\partial_y]$ as $\partial v/\partial x|_{y = 0}$; it is $f\, \partial v/\partial x|_{y = 0}$, which vanishes for the same reason.
 
 > [!theorem] Lemma §59.7: Vector Fields on a Submanifold Extend Locally
-> Let $S \subseteq M$ be a regular submanifold of dimension $k$, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(S)$. Let $(U, (x, y))$ be an adapted chart with $S \cap U = \{y = 0\}$ and image a product $V \times W$, $\vec 0 \in W$ (Lemma [[§37 Regular Submanifolds#^lem-37-6|§37.6]], where the codimension is $m - k$), and $\pi : U \to U \cap S$ the retraction of Lemma [[§37 Regular Submanifolds#^lem-37-7|§37.7]]. Write $\mathbf{X} = \sum_{i=1}^k X^i\, \partial/\partial x^i|^S$ on $U \cap S$, in the induced chart $x|_{U \cap S}$ of $S$. Then
+> Let $S \subseteq M$ be a regular submanifold of dimension $k$, $\iota : S \hookrightarrow M$ the inclusion, and $\mathbf{X} \in \mathfrak{X}(S)$. Let $(U, (x, y))$ be an adapted chart with $S \cap U = \{y = 0\}$ and image a product $V \times W$, $\vec 0 \in W$ (Lemma [[§37 Regular Submanifolds#^lem-37-6|§37.6]], where the codimension is $m - k$), and $\pi : U \to U \cap S$ the retraction of Lemma [[§37 Regular Submanifolds#^lem-37-7|§37.7]]. Write $\mathbf{X} = \sum_{i=1}^k \mathbf{X}^i\, \partial/\partial x^i|^S$ on $U \cap S$, in the induced chart $x|_{U \cap S}$ of $S$. Then
 >
 > $$
-> \mathbf{Y} = \sum_{i=1}^k (X^i \circ \pi)\, \frac{\partial}{\partial x^i} \in \mathfrak{X}(U)
+> \mathbf{Y} = \sum_{i=1}^k (\mathbf{X}^i \circ \pi)\, \frac{\partial}{\partial x^i} \in \mathfrak{X}(U)
 > $$
 >
 > satisfies $\mathbf{Y}_p = \iota_{\ast p}(\mathbf{X}_p)$ for every $p \in U \cap S$. In particular $\mathbf{Y}$ is tangent to $S$ (Definition [[§59 Related Vector Fields#^def-59-3|§59.3]]).
@@ -365,12 +365,12 @@ The reason for the characterization through operators is the following propositi
 ^lem-59-7
 
 > [!proof]+ Proof
-> *(Assignment 7, Problem 1: the submitted solution, the step “the local extension”.)* *$\mathbf{Y}$ is smooth.* Since $\mathbf{X}$ is a smooth vector field on $S$, its coefficients $X^i$ in the chart $x|_{U \cap S}$ of $S$ are smooth functions on $U \cap S$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], on the manifold $S$). By Lemma [[§37 Regular Submanifolds#^lem-37-8|§37.8]], each $X^i \circ \pi$ is smooth on $U$; the coefficients of $\partial/\partial y^a$ are $0$, also smooth. By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], $\mathbf{Y} \in \mathfrak{X}(U)$.
+> *(Assignment 7, Problem 1: the submitted solution, the step “the local extension”.)* *$\mathbf{Y}$ is smooth.* Since $\mathbf{X}$ is a smooth vector field on $S$, its coefficients $\mathbf{X}^i$ in the chart $x|_{U \cap S}$ of $S$ are smooth functions on $U \cap S$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], on the manifold $S$). By Lemma [[§37 Regular Submanifolds#^lem-37-8|§37.8]], each $\mathbf{X}^i \circ \pi$ is smooth on $U$; the coefficients of $\partial/\partial y^a$ are $0$, also smooth. By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], $\mathbf{Y} \in \mathfrak{X}(U)$.
 >
-> *$\mathbf{Y}$ extends $\mathbf{X}$.* Let $p \in U \cap S$. Since $\pi(p) = p$, the coefficients of $\mathbf{Y}_p$ are $X^i(p)$ for $i \le k$ and $0$ for the $\partial/\partial y^a$. By linearity of $\iota_{\ast p}$ and Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] (with $x^1, \ldots, x^k$ the coordinates of $S$), $\iota_{\ast p}(\partial/\partial x^i|^S_p) = \partial/\partial x^i|_p$, so
+> *$\mathbf{Y}$ extends $\mathbf{X}$.* Let $p \in U \cap S$. Since $\pi(p) = p$, the coefficients of $\mathbf{Y}_p$ are $\mathbf{X}^i(p)$ for $i \le k$ and $0$ for the $\partial/\partial y^a$. By linearity of $\iota_{\ast p}$ and Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]] (with $x^1, \ldots, x^k$ the coordinates of $S$), $\iota_{\ast p}(\partial/\partial x^i|^S_p) = \partial/\partial x^i|_p$, so
 >
 > $$
-> \iota_{\ast p}(\mathbf{X}_p) = \sum_{i=1}^k X^i(p)\, \iota_{\ast p}\Big(\frac{\partial}{\partial x^i}\Big|^S_p\Big) = \sum_{i=1}^k X^i(p)\, \frac{\partial}{\partial x^i}\Big|_p = \mathbf{Y}_p .
+> \iota_{\ast p}(\mathbf{X}_p) = \sum_{i=1}^k \mathbf{X}^i(p)\, \iota_{\ast p}\Big(\frac{\partial}{\partial x^i}\Big|^S_p\Big) = \sum_{i=1}^k \mathbf{X}^i(p)\, \frac{\partial}{\partial x^i}\Big|_p = \mathbf{Y}_p .
 > $$
 >
 > *Tangency* *(filled in)*: $\mathbf{Y}_p = \iota_{\ast p}(\mathbf{X}_p) \in \iota_{\ast p}(T_pS)$ for $p \in U \cap S$; equivalently, $\mathbf{Y}$ has no $\partial/\partial y$ component at all (Lemma [[§59 Related Vector Fields#^lem-59-5|§59.5]]).

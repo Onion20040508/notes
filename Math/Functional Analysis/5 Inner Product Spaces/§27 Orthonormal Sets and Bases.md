@@ -32,7 +32,7 @@ tags: [functional-analysis, math556]
 
 ^def-27-2
 
-> [!remark] Remark
+> [!remark] Remark: Complete Sets and Complete Spaces
 > Completeness of an orthogonal set is unrelated to completeness of a space. It means the set cannot be enlarged: if some nonzero $x$ were orthogonal to every $e_\alpha$, it could be added to the set, which therefore could not be a basis. In $\mathbb{R}^n$, a complete orthonormal set $\{e_1, \ldots, e_n\}$ is a basis, and every $x$ is $x = \sum_{j=1}^n (x, e_j)\, e_j$. The question is whether the same is true in a Hilbert space.
 
 ^rem-27-1

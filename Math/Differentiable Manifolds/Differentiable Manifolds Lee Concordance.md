@@ -19,7 +19,7 @@ These notes follow the course, and Lee's *Introduction to Smooth Manifolds* (2nd
 | $D_\gamma$, the velocity | $\gamma'(0)$ | The notes keep $\gamma'(0)$ for the ordinary derivative of a curve in $\mathbb{R}^N$, a geometric vector (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2\|§31.2]]). |
 | $D_v$, $D_v\vert_a$ | $D_v\vert_a$ | The directional derivative (Definition [[§25 The Geometric Tangent Space#^def-25-4\|§25.4]]). |
 | $[f] \in C_p^\infty(M)$, germs | — | Lee works with global functions $C^\infty(M)$ (Definition [[§27 Germs#^def-27-2\|§27.2]]). |
-| $f_\varphi = f \circ \varphi^{-1}$, $\tilde F = \psi \circ F \circ \varphi^{-1}$ | $\hat f$, $\widehat F$ | Coordinate representations (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2\|§29.2]]). |
+| $f_\varphi = f \circ \varphi^{-1}$, $\tilde F = \psi \circ F \circ \varphi^{-1}$ | $\hat f$, $\widehat F$ | Coordinate representations (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2\|§19.2]]). |
 | $\sum_i a^i\, \partial/\partial x^i\vert_p$ | $a^i\, \partial/\partial x^i\vert_p$ | Lee uses the Einstein summation convention; the notes always write the sum. |
 | $T_p^*M$, $df_p$, $dx^i\vert_p$ | the same | Definition [[§32 The Cotangent Space#^def-32-4\|§32.4]], Lemma [[§33 Covectors in Coordinates#^lem-33-1\|§33.1]]. |
 | $I_p$, $I_p^2$, $I_p/I_p^2$, of germs | $I_p$, $I_p^2$ of global functions (Problem 11-4) | Theorem [[§34 The Cotangent Space from Germs#^thm-34-4\|§34.4]]; Lee's version needs bump functions. |
@@ -136,7 +136,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Lemma 2.21 | [[§65 Partitions of Unity#^lem-65-3\|Lem. §65.3]] |
 | Lemma 2.22 | [[§65 Partitions of Unity#^lem-65-3\|Lem. §65.3]] |
 | Theorem 2.23 | [[§65 Partitions of Unity#^thm-65-7\|Thm. §65.7]] |
-| Proposition 2.25 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]], [[§56 Vector Fields#^cor-56-7\|Prop. §56.7]], [[§65 Partitions of Unity#^prop-65-8\|Prop. §65.8]] |
+| Proposition 2.25 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]], [[§56 Vector Fields#^cor-56-7\|Cor. §56.7]], [[§65 Partitions of Unity#^prop-65-8\|Prop. §65.8]] |
 | Lemma 2.26 | [[§56 Vector Fields#^cor-56-8\|Cor. §56.8]] |
 | Proposition 2.28 | [[§65 Partitions of Unity#^prop-65-13\|Prop. §65.13]], [[§65 Partitions of Unity#^lem-65-12\|Lem. §65.12]] |
 | Lemma 3.1 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-2\|Lem. §28.2]] |
@@ -146,7 +146,7 @@ Every numbered result of Lee's cited in these notes, in Lee's order, with the bo
 | Proposition 3.6 | [[§28 Derivations and the Abstract Tangent Space#^thm-28-6\|Thm. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7\|Cor. §28.7]] |
 | Proposition 3.8 | [[§28 Derivations and the Abstract Tangent Space#^prop-28-3\|Prop. §28.3]] |
 | Proposition 3.9 | [[§28 Derivations and the Abstract Tangent Space#^lem-28-8\|Lem. §28.8]] |
-| Proposition 3.10 | [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10\|Cor. §29.10]] |
+| Proposition 3.10 | [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10\|Thm. §29.10]] |
 | Proposition 3.13 | [[§30 The Differential in Coordinates#^prop-30-5\|Prop. §30.5]], [[§30 The Differential in Coordinates#^cor-30-6\|Cor. §30.6]] |
 | Proposition 3.14 | [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7\|Thm. §31.7]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-8\|Cor. §31.8]], [[§36 Submersions#^ex-36-2\|Ex. §36.2]] |
 | Proposition 3.15 | [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|Thm. §29.8]] |

@@ -90,11 +90,18 @@ tags: [differentiable-manifolds, math591]
 > 2. the family of supports $\{\operatorname{supp}\chi_\alpha\}_{\alpha \in A}$ is locally finite (Definition [[§65 Partitions of Unity#^def-65-1|§65.1]]): every $p \in M$ has a neighbourhood $U$ for which $\{ \alpha \in A : U \cap \operatorname{supp}\chi_\alpha \neq \varnothing \}$ is finite;
 > 3. $\sum_{\alpha \in A} \chi_\alpha(p) = 1$ for every $p \in M$.
 >
-> By (2) the sum in (3) has only finitely many nonzero terms at each point. The partition is **subordinate** to an open cover $\{U_\alpha\}_{\alpha \in A}$ if $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$ for every $\alpha$.
+> By (2) the sum in (3) has only finitely many nonzero terms at each point.
 >
 > *Lee: Ch. 2, Partitions of Unity*
 
 ^def-65-2
+
+> [!definition] Definition §65.3: Partition of Unity Subordinate to a Cover
+> A partition of unity $\{\chi_\alpha\}_{\alpha \in A}$ on $M$ (Definition [[§65 Partitions of Unity#^def-65-2|§65.2]]) is **subordinate** to an open cover $\{U_\alpha\}_{\alpha \in A}$ of $M$ if $\operatorname{supp}\chi_\alpha \subseteq U_\alpha$ for every $\alpha$.
+>
+> *Lee: Ch. 2, Partitions of Unity*
+
+^def-65-3
 
 The name: the number one is written as a sum of smooth functions. Partitions of unity allow one to localize; the bump functions so far, and the cutoff functions in the proof of the Whitney embedding theorem ([[§66 The Whitney Embedding Theorem|§66]]), are made of the same material.
 
@@ -102,7 +109,7 @@ The name: the number one is written as a sum of smooth functions. Partitions of 
 
 The simplest example, on $M = \mathbb{R}$: a function $\chi_1$ that is $1$ far to the left and $0$ far to the right, and $\chi_2 = 1 - \chi_1$.
 
-The main result of this section is that every open cover has a subordinate partition of unity (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] below). Its proof has two steps of different kinds: an analysis step in $\mathbb{R}^m$ (the function $h$ of step 1 of the proof of Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]; the lecture's first version used the plateau functions of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]]), and genuine point-set topology on $M$ (paracompactness, Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]]). The ingredients come first.
+The main result of this section is that every open cover has a subordinate partition of unity (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] below). Its proof has two steps of different kinds: an analysis step in $\mathbb{R}^m$ (the function $h$ of Lemma [[§56 Vector Fields#^lem-56-5|§56.5]]; the lecture's first version used the plateau functions of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]]), and genuine point-set topology on $M$ (paracompactness, Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]]). The ingredients come first.
 
 > [!theorem] Lemma §65.3: Plateau Functions
 > For all $\varepsilon > \delta > 0$ there is $\rho \in C^\infty(\mathbb{R})$ with $0 \le \rho \le 1$, $\rho \equiv 1$ on $[-\delta, \delta]$ and $\operatorname{supp}\rho \subseteq (-\varepsilon, \varepsilon)$. Then $f(x) = \rho(|x|)$ is smooth on $\mathbb{R}^m$, $f \equiv 1$ on the closed ball $\overline{B}_\delta$, and $\operatorname{supp} f \subseteq B_\varepsilon = \{ x \in \mathbb{R}^m : |x| < \varepsilon \}$.
@@ -112,13 +119,15 @@ The main result of this section is that every open cover has a subordinate parti
 ^lem-65-3
 
 > [!proof]+ Proof
-> *(Not proved in Lecture 22, which described the method: start from the function equal to $e^{-1/x}$ for $x$ positive and zero for $x$ negative, then reflect, divide and add. This is step 2 of the proof of Proposition [[§56 Vector Fields#^cor-56-7|§56.7]].)* With $h$ as there and $\delta < r' < \varepsilon$, take $\rho(t) = h(r'^2 - t^2)\big/\big(h(r'^2 - t^2) + h(t^2 - \delta^2)\big)$: smooth, between $0$ and $1$, equal to $1$ for $|t| \le \delta$ and $0$ for $|t| \ge r'$, so $\operatorname{supp}\rho \subseteq [-r', r'] \subseteq (-\varepsilon, \varepsilon)$. Then $f(x) = \rho(|x|)$ is the function $H$ of that proof (with $r = \delta$), smooth on $\mathbb{R}^m$ — $|x|$ is not smooth at the origin, but $\rho$ is constant equal to one near $0$, so $f$ is constant near $x = 0$ — with $f \equiv 1$ on $\overline{B}_\delta$ and $\operatorname{supp} f = \overline{B}_{r'} \subseteq B_\varepsilon$.
+> *(Not proved in Lecture 22, which described the method: start from the function equal to $e^{-1/x}$ for $x$ positive and zero for $x$ negative, then reflect, divide and add. This is step 1 of the proof of Lemma [[§56 Vector Fields#^lem-56-6|§56.6]].)* With $h$ as in Lemma [[§56 Vector Fields#^lem-56-5|§56.5]] and $\delta < r' < \varepsilon$, take $\rho(t) = h(r'^2 - t^2)\big/\big(h(r'^2 - t^2) + h(t^2 - \delta^2)\big)$: smooth, between $0$ and $1$, equal to $1$ for $|t| \le \delta$ and $0$ for $|t| \ge r'$, so $\operatorname{supp}\rho \subseteq [-r', r'] \subseteq (-\varepsilon, \varepsilon)$. Then $f(x) = \rho(|x|)$ is the function $H$ of that proof (with $r = \delta$), smooth on $\mathbb{R}^m$ — $|x|$ is not smooth at the origin, but $\rho$ is constant equal to one near $0$, so $f$ is constant near $x = 0$ — with $f \equiv 1$ on $\overline{B}_\delta$ and $\operatorname{supp} f = \overline{B}_{r'} \subseteq B_\varepsilon$.
 
 ^pf-65-3
 
-*Uses:* [[§56 Vector Fields#^cor-56-7|§56.7]]
+*Uses:* [[§56 Vector Fields#^cor-56-7|§56.7]], [[§56 Vector Fields#^lem-56-6|§56.6]], [[§56 Vector Fields#^lem-56-5|§56.5]]
 
 ![[m591-66-3.svg]]
+
+*(Not from lecture; figure added.)* The plateau function $\rho$ of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]]: $\rho \equiv 1$ on $[-\delta, \delta]$ (between the dashed lines) and $\rho = 0$ outside $(-\varepsilon, \varepsilon)$. In one variable $f(x) = \rho(|x|)$ has the same graph, $\rho$ being even; in $\mathbb{R}^m$, $f \equiv 1$ on the ball $\overline{B}_\delta$ and $f = 0$ outside $B_\varepsilon$.
 
 *The topology.* The second step needs some point-set topology, which pays for the use of partitions of unity before their construction.
 
@@ -192,7 +201,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 *(Not from lecture; figure added.)* The proof of Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]] for $j = 2$. The compact ring $A_2 = K_3 \setminus \operatorname{Int}K_2$ (teal) is covered by finitely many basis sets $B_x$ (blue), each inside some $U_\alpha$ and inside the open ring $W_2 = \operatorname{Int}K_4 \setminus K_1$ (between the dashed circles). Rings $W_j$ and $W_k$ with $|j - k| \ge 3$ are disjoint, so a point of $A_j$ has the neighbourhood $W_j$, which meets only the sets chosen for $j - 2, \ldots, j + 2$: the refinement is locally finite.
 
 > [!remark] Remark: Is Local Compactness Needed?
-> The board stated the theorem as “if $X$ is $T_2$ and second countable, then it is paracompact”, leaving open whether local compactness is needed. The email of Oct 26 settled it: local compactness is needed; Hausdorff, second countable and locally compact imply paracompact, and Lee proves directly what is needed for manifolds in Theorem 1.15 (p. 9). So the theorem is stated with local compactness, as above. *(Filled in.)* Some hypothesis beyond Hausdorff and second countable is needed: the $K$-topology on $\mathbb{R}$ is Hausdorff and second countable but not paracompact (Example [[§65 Partitions of Unity#^ex-65-6|§65.6]] below). Local compactness, as above, suffices; so does regularity. For manifolds nothing changes: they are locally compact. Second countability is essential here; it was used once before, for countable subcovers in measure zero (Lemma [[§62 Sets of Measure Zero#^lem-62-3|§62.3]]).
+> *(Transcription note, Lecture 22.)* Page 58 of the handwritten notes states the theorem as “if $X$ is $T_2$ and 2nd countable, then it is paracompact (need locally compact?)”, leaving open whether local compactness is needed. Local compactness is needed: as stated the theorem is false in general, and local compactness, which manifolds have, is the missing hypothesis; Hausdorff, second countable and locally compact imply paracompact, and Lee proves directly what is needed for manifolds in Theorem 1.15 (p. 9). So the theorem is stated with local compactness, as above. *(Filled in.)* Some hypothesis beyond Hausdorff and second countable is needed: the $K$-topology on $\mathbb{R}$ is Hausdorff and second countable but not paracompact (Example [[§65 Partitions of Unity#^ex-65-6|§65.6]] below). Local compactness, as above, suffices; so does regularity. For manifolds nothing changes: they are locally compact. Second countability is essential here; it was used once before, for countable subcovers in measure zero (Lemma [[§62 Sets of Measure Zero#^lem-62-3|§62.3]]).
 
 ^rem-65-1
 
@@ -250,7 +259,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 >
 > (Definition [[§65 Partitions of Unity#^def-65-6|§65.6]]). By Lemma [[§65 Partitions of Unity#^lem-65-1|§65.1]](1), the closures $\{\overline{B_i}\}$ also form a locally finite family.
 >
-> *Step 2: a function positive exactly on $B_i$.* With $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$ (step 1 of the proof of Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]), define
+> *Step 2: a function positive exactly on $B_i$.* With $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$ (Lemma [[§56 Vector Fields#^lem-56-5|§56.5]]), define
 >
 > $$
 > f_i = h\big(\delta_i^2 - |\varphi_i|^2\big) \ \text{ on } U_i, \qquad f_i = 0 \ \text{ on } M \setminus \overline{B_i} .
@@ -272,14 +281,14 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 > \operatorname{supp}\chi_\alpha \subseteq \overline{\bigcup_{\alpha(i) = \alpha} B_i} = \bigcup_{\alpha(i) = \alpha} \overline{B_i} \subseteq \bigcup_{\alpha(i) = \alpha} U_i \subseteq U_\alpha .
 > $$
 >
-> *Locally finite.* If an open set $W$ meets only finitely many $\overline{B_i}$, it meets $\operatorname{supp}\chi_\alpha$ only for the finitely many $\alpha = \alpha(i)$ of those $i$. So $\{\chi_\alpha\}_{\alpha \in A}$ is a partition of unity subordinate to $\{U_\alpha\}$ (Definition [[§65 Partitions of Unity#^def-65-2|§65.2]]).
+> *Locally finite.* If an open set $W$ meets only finitely many $\overline{B_i}$, it meets $\operatorname{supp}\chi_\alpha$ only for the finitely many $\alpha = \alpha(i)$ of those $i$. So $\{\chi_\alpha\}_{\alpha \in A}$ is a partition of unity subordinate to $\{U_\alpha\}$ (Definitions [[§65 Partitions of Unity#^def-65-2|§65.2]] and [[§65 Partitions of Unity#^def-65-3|§65.3]]).
 
 ^pf-65-7
 
-*Uses:* [[§65 Partitions of Unity#^lem-65-6|§65.6]], [[§65 Partitions of Unity#^thm-65-5|§65.5]], [[§65 Partitions of Unity#^def-65-6|Def. §65.6]], [[§65 Partitions of Unity#^lem-65-1|§65.1]], [[§56 Vector Fields#^cor-56-7|§56.7]], [[§65 Partitions of Unity#^lem-65-2|§65.2]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]]
+*Uses:* [[§65 Partitions of Unity#^lem-65-6|§65.6]], [[§65 Partitions of Unity#^thm-65-5|§65.5]], [[§65 Partitions of Unity#^def-65-6|Def. §65.6]], [[§65 Partitions of Unity#^lem-65-1|§65.1]], [[§56 Vector Fields#^cor-56-7|§56.7]], [[§65 Partitions of Unity#^lem-65-2|§65.2]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]], [[§56 Vector Fields#^lem-56-5|§56.5]], [[§65 Partitions of Unity#^def-65-3|Def. §65.3]]
 
 > [!remark] Remark: Lecture 22's First Version of the Construction
-> Lecture 22 built the functions differently: pull back the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]] (with $\delta_i < \varepsilon_i$) by $\varphi_i$ and extend by zero, as in step 3 of the proof of Proposition [[§56 Vector Fields#^cor-56-7|§56.7]], which gives smooth $f_i$ with
+> Lecture 22 built the functions differently: pull back the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]] (with $\delta_i < \varepsilon_i$) by $\varphi_i$ and extend by zero, as in step 2 of the proof of Lemma [[§56 Vector Fields#^lem-56-6|§56.6]], which gives smooth $f_i$ with
 >
 > $$
 > f_i|_{B_i} \equiv 1, \qquad \operatorname{supp} f_i \subseteq U_i \subseteq U_{\alpha(i)} ,
@@ -288,8 +297,6 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 > so that $\sum_j f_j \ge 1$ everywhere; then $g_i = f_i / \sum_j f_j$ and $\chi_\alpha = \sum_{\alpha(i) = \alpha} g_i$, as in Steps 3 and 4. One point needs care in that version: local finiteness of $\{B_i\}$ does not by itself make $\{\operatorname{supp} f_i\}$ locally finite, since $\operatorname{supp} f_i$ then sits in the larger ball $\varphi_i^{-1}(B_{\varepsilon_i}(0))$, not in $\overline{B_i}$. Lee's choice in Step 2, $f_i$ positive exactly on $B_i$ and supported in $\overline{B_i}$, avoids this; $f_i$ is then no longer $\equiv 1$ on $B_i$, only positive there, which is all the division needs.
 
 ^rem-65-2
-
-**Transcription note (Lecture 22).** Page 58 of the handwritten notes states the theorem “if $X$ is $T_2$ and 2nd countable, then it is paracompact (need locally compact?)”; as stated it is false in general, and local compactness, which manifolds have, is the missing hypothesis (the remark *Is Local Compactness Needed?* after Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]]).
 
 > [!theorem] Proposition §65.8: Bump Functions for Closed Sets
 > Let $A \subseteq M$ be closed and $U \subseteq M$ open with $A \subseteq U$. Then there is a smooth $\psi : M \to [0, 1]$ with $\psi \equiv 1$ on $A$ and $\operatorname{supp}\psi \subseteq U$.
@@ -310,7 +317,7 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 *(Assignment 7, Problem 1, and what its proof gives.)* The standard use of a partition of unity: build an object locally, in charts, and glue the local pieces. Here the local pieces come from adapted charts (Lemmas [[§37 Regular Submanifolds#^lem-37-8|§37.8]] and [[§59 Related Vector Fields#^lem-59-7|§59.7]]), and the gluing is the next lemma.
 
 > [!theorem] Lemma §65.9: Gluing Vector Fields with a Partition of Unity
-> Let $\{U_\alpha\}_{\alpha \in A}$ be an open cover of $M$, $\mathbf{Y}_\alpha \in \mathfrak{X}(U_\alpha)$ for each $\alpha \in A$, and $\{\chi_\alpha\}_{\alpha \in A}$ a partition of unity subordinate to the cover (Definition [[§65 Partitions of Unity#^def-65-2|§65.2]]). Then:
+> Let $\{U_\alpha\}_{\alpha \in A}$ be an open cover of $M$, $\mathbf{Y}_\alpha \in \mathfrak{X}(U_\alpha)$ for each $\alpha \in A$, and $\{\chi_\alpha\}_{\alpha \in A}$ a partition of unity subordinate to the cover (Definitions [[§65 Partitions of Unity#^def-65-2|§65.2]] and [[§65 Partitions of Unity#^def-65-3|§65.3]]). Then:
 >
 > 1. each field $\chi_\alpha \mathbf{Y}_\alpha$, extended by $0$ outside $U_\alpha$, is a smooth vector field on $M$;
 > 2. $\widetilde{\mathbf{X}} = \sum_{\alpha \in A} \chi_\alpha \mathbf{Y}_\alpha$ is a well-defined smooth vector field on $M$;
@@ -429,7 +436,7 @@ The proof starts from a countable cover by open sets with compact closures, whic
 ^prop-65-13
 
 > [!proof]+ Proof
-> *(Lecture 23. The proposition was announced in Lecture 22, where the sketch of the noncompact Whitney theorem used it before it was proved.)* Let $\{V_i\}_{i \ge 1}$ be as in Lemma [[§65 Partitions of Unity#^lem-65-12|§65.12]], and let $\{\chi_i\}_{i \ge 1}$ be a partition of unity subordinate to it (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]]). Reviewing what this means (Definition [[§65 Partitions of Unity#^def-65-2|§65.2]]):
+> *(Lecture 23. The proposition was announced in Lecture 22, where the sketch of the noncompact Whitney theorem used it before it was proved.)* Let $\{V_i\}_{i \ge 1}$ be as in Lemma [[§65 Partitions of Unity#^lem-65-12|§65.12]], and let $\{\chi_i\}_{i \ge 1}$ be a partition of unity subordinate to it (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]]). Reviewing what this means (Definitions [[§65 Partitions of Unity#^def-65-2|§65.2]] and [[§65 Partitions of Unity#^def-65-3|§65.3]]):
 >
 > 1. $0 \le \chi_i \le 1$ for all $i$;
 > 2. $\{\operatorname{supp}\chi_i\}$ is locally finite;
@@ -462,7 +469,7 @@ The proof starts from a countable cover by open sets with compact closures, whic
 
 ^pf-65-13
 
-*Uses:* [[§65 Partitions of Unity#^lem-65-12|§65.12]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]], [[§65 Partitions of Unity#^lem-65-2|§65.2]]
+*Uses:* [[§65 Partitions of Unity#^lem-65-12|§65.12]], [[§65 Partitions of Unity#^thm-65-7|§65.7]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]], [[§65 Partitions of Unity#^lem-65-2|§65.2]], [[§65 Partitions of Unity#^def-65-3|Def. §65.3]]
 
 > [!remark] Remark: Why the Closures
 > Should the contrapositive use the union of the *closures*? The proof shows the inclusion in $\bigcup_{i \le N} V_i$, which is contained in the union of the closures, so it makes no difference. The open sets give the stronger statement; the closures are where compactness lives, since the $V_i$ were chosen so that the $\overline{V_i}$ are compact, and $\bigcup_{i \le N} V_i$ alone need not be compact. Lee runs the contrapositive from $p \notin \bigcup_{j \le N} \overline{V_j}$ instead (Proposition 2.28); either way the sublevel set lands inside the compact set $\bigcup_{j \le N} \overline{V_j}$.

@@ -170,7 +170,7 @@ The material of this subsection was not covered in lecture; it makes precise the
 > \frac{x}{a'} = \lambda \cdot \frac{x}{a} + (1 - \lambda) \cdot 0,
 > $$
 >
-> a convex combination of $x/a \in K$ and $0 \in K$. By convexity of $K$, $x/a' \in K$, i.e. $a' \in A(x)$. Thus $A(x)$ contains every number larger than any of its elements; together with $\inf A(x) = p_K(x)$ this gives the stated form, the endpoint being included exactly when $x / p_K(x) \in K$.
+> a convex combination of $x/a \in K$ and $0 \in K$. By convexity of $K$, $x/a' \in K$, i.e. $a' \in A(x)$. Thus $A(x)$ contains every number larger than any of its elements; together with $\inf A(x) = p_K(x)$ this gives the stated form. The endpoint $p_K(x)$ is included exactly when $p_K(x) > 0$ and $x / p_K(x) \in K$; if $p_K(x) = 0$ it is not included, since the elements of $A(x)$ are positive, and $A(x) = (0, \infty)$.
 
 ^pf-7-4
 

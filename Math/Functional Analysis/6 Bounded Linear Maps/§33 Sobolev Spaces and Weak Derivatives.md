@@ -392,6 +392,8 @@ tags: [functional-analysis, math556]
 > 4. the norm of the element in $H^1_0(\Omega)$ is $\bigl( \|f\|_{L^2}^2 + \sum_{j=1}^n \|\partial_{x_j} f\|_{L^2}^2 \bigr)^{1/2}$.
 >
 > Accordingly an element of $H^1_0(\Omega)$ is identified with its function $f$: $H^1_0(\Omega)$ is a linear subspace of $L^2(\Omega)$ whose elements have weak first derivatives in $L^2(\Omega)$, and $\nabla f = (\partial_{x_1} f, \ldots, \partial_{x_n} f)$ denotes the weak gradient.
+>
+> *Lax: §7.2, Lemma 2 and the paragraph after its proof*
 
 ^prop-33-10
 
@@ -433,6 +435,8 @@ tags: [functional-analysis, math556]
 > $$
 >
 > One can take $C = 2L$ for any $L$ with $\Omega \subset (-L, L)^n$.
+>
+> *Lax: §7.2, Lemma 1 (Zaremba's inequality, with the width of the domain as the constant)*
 
 ^thm-33-11
 

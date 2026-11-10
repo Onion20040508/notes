@@ -73,6 +73,11 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 
 ^rem-27-1
 
+> [!definition] Definition §27.3: Evaluation of a Germ
+> The **value** of a germ $[f] \in C_p^\infty(M)$ at $p$ is $[f](p) := f(p)$, for any representative $(f,U)$ of the germ; it is independent of the representative by Proposition [[§27 Germs#^prop-27-2|§27.2]] below. The map $C_p^\infty(M) \to \mathbb{R}$, $[f] \mapsto [f](p)$, is **evaluation** at $p$.
+
+^def-27-3
+
 > [!theorem] Proposition §27.2: $C_p^\infty(M)$ Is an $\mathbb{R}$-Algebra
 > For germs $[f], [g] \in C_p^\infty(M)$ with representatives $(f,U)$ and $(g,V)$, and $\lambda \in \mathbb{R}$, the operations
 >
@@ -80,7 +85,7 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 > [f] + [g] = [f|_W + g|_W], \qquad [f]\,[g] = [f|_W \cdot g|_W], \qquad \lambda[f] = [\lambda f],
 > $$
 >
-> where $W$ is any open set with $p \in W \subseteq U \cap V$, are well defined and make $C_p^\infty(M)$ a commutative ring with unit $[1]$ and an $\mathbb{R}$-vector space — that is, a commutative $\mathbb{R}$-algebra. Moreover the evaluation map
+> where $W$ is any open set with $p \in W \subseteq U \cap V$, are well defined and make $C_p^\infty(M)$ a commutative ring with unit $[1]$ and an $\mathbb{R}$-vector space — that is, a commutative $\mathbb{R}$-algebra. Moreover the evaluation map of Definition [[§27 Germs#^def-27-3|§27.3]],
 >
 > $$
 > [f] \longmapsto [f](p) := f(p)
@@ -128,11 +133,6 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 ^pf-27-2
 
 *Uses:* [[§27 Germs#^def-27-1|Def. §27.1]], [[§27 Germs#^def-27-2|Def. §27.2]], [[§27 Germs#^prop-27-1|§27.1]]
-
-> [!definition] Definition §27.3: Evaluation of a Germ
-> The **value** of a germ $[f] \in C_p^\infty(M)$ at $p$ is $[f](p) := f(p)$, independent of the representative by Proposition [[§27 Germs#^prop-27-2|§27.2]]. The map $C_p^\infty(M) \to \mathbb{R}$, $[f] \mapsto [f](p)$, is **evaluation** at $p$.
-
-^def-27-3
 
 > [!remark] Remark: How to Think About a Germ
 > A germ is best thought of through a representative — a smooth function defined in a neighbourhood of $p$ — remembering that, being a germ, its domain may be shrunk arbitrarily, as long as it is shrunk to a neighbourhood of $p$. In practice one works with representatives and checks at the end that the answer is unchanged by shrinking. The formal content of the definition is exactly that shrinking is free.
@@ -227,6 +227,6 @@ Point (1) of [[§25 The Geometric Tangent Space#^prop-25-8|Proposition §25.8]],
 ^def-27-4
 
 > [!remark] Remark
-> The moral is that a germ carries strictly more information than its Taylor series. This is the same phenomenon as the rigidity of $C^\omega$ noted after Definition [[§17 Differentiable Structures#^def-17-5|§17.5]]: a real-analytic germ *is* its Taylor series, which is why there are no analytic bump functions, whereas a $C^\infty$ germ has room to spare.
+> The moral is that a germ carries strictly more information than its Taylor series. This is the same phenomenon as the rigidity of $C^\omega$ noted after Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]: a real-analytic germ *is* its Taylor series, which is why there are no analytic bump functions, whereas a $C^\infty$ germ has room to spare.
 
 ^rem-27-3

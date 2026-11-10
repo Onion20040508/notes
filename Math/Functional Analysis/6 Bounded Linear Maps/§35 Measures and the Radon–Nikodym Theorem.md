@@ -97,6 +97,8 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 > $$
 > \nu(E) = \int_E g(x)\, d\mu(x) \qquad \text{for all } E \in \mathcal{A} .
 > $$
+>
+> *Lax: §7.1*
 
 ^thm-35-1
 

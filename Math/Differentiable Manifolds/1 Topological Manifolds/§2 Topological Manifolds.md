@@ -20,7 +20,7 @@ tags: [differentiable-manifolds, math591]
 > \varphi : U \longrightarrow \mathbb{R}^n
 > $$
 >
-> which is a **homeomorphism**: $\varphi$ is continuous, bijective, and $\varphi^{-1} : \mathbb{R}^n \to U$ is also continuous.
+> which is a homeomorphism (590 §9): $\varphi$ is continuous, bijective, and $\varphi^{-1} : \mathbb{R}^n \to U$ is also continuous.
 
 ^def-2-1
 
@@ -335,7 +335,10 @@ The failure of second countability in Example [[§2 Topological Manifolds#^ex-2-
 
 *Uses:* [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^def-1-9|Def. §1.9]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]]
 
-**Rigor flag.** “Second countable $\Rightarrow$ countably many components” is *false* without local connectedness: the Cantor set is a compact metric (hence second countable) space with uncountably many components (each a point). The proposition uses locally Euclidean only through “components are open,” i.e. local connectedness.
+> [!example] Example §2.6: Non-Example: The Cantor Set
+> “Second countable $\Rightarrow$ countably many components” is *false* without local connectedness: the Cantor set is a compact metric (hence second countable) space with uncountably many components (each a point). Proposition [[§2 Topological Manifolds#^prop-2-6|§2.6]] uses locally Euclidean only through “components are open,” i.e. local connectedness.
+
+^ex-2-6
 
 The sphere $S^2$ with its hemisphere charts, and the spheres $S^n$ as topological manifolds, are collected in [[§8 Spheres|§8]].
 
@@ -493,6 +496,8 @@ Let $\varphi : U \to A$ and $\psi : V \to B$ be two charts at $p$, with $A, B \s
 > Why is this the right move? Differentiability is not a topological notion: it makes no sense to ask whether a map $X \to \mathbb{R}$ on an abstract topological space is differentiable, because $X$ has no linear structure. What *does* make sense is to pull $f$ back to Euclidean space via a chart, $f \circ \varphi^{-1} : A \to \mathbb{R}$, and ask whether *that* is differentiable. For this to be independent of the chart chosen, one needs $f \circ \psi^{-1} = (f \circ \varphi^{-1}) \circ (\varphi \circ \psi^{-1})$ to be differentiable whenever $f \circ \varphi^{-1}$ is—which is exactly the requirement that transition functions be differentiable.
 
 ^rem-2-9
+
+## Local Compactness
 
 > [!remark]- Connections
 > - Carried out in [[§17 Differentiable Structures#^def-17-2|Def. §17.2]] (smooth in the sense of a chart), [[§17 Differentiable Structures#^rem-17-3|the problem this creates]] and [[§17 Differentiable Structures#^thm-17-2|§17.2]].

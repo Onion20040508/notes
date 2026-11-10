@@ -255,7 +255,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 > [!remark]- Connections
 > - Finite-dimensional analogue: vector spaces of the same dimension are isomorphic, [[Dimension shows whether vector spaces are isomorphic|LADR 3.70]], via coordinates [[§10 Invertibility and Isomorphisms#^ladr-3-73|LADR 3.73]].
 
-> [!remark] Remark
+> [!remark] Remark: The Isomorphism Takes Coordinates
 > The isomorphism is “take coordinates”: $x \mapsto ((x, e_j))_j$. Every result about a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] Hilbert space can therefore be checked on $\ell^2$, and the statement of Corollary [[§27 Orthonormal Sets and Bases#^cor-27-12|§27.12]] that $L^2[0, 2\pi]$ with the [[§27 Orthonormal Sets and Bases#^thm-27-11|Fourier basis]] is “the same” as $\ell^2(\mathbb{Z})$ is the special case $e_n = e^{inx}/\sqrt{2\pi}$. The isomorphism depends on the choice of basis, as in finite dimensions.
 
 ^rem-28-4

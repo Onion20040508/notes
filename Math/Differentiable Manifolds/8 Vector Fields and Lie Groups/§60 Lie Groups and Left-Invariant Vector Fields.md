@@ -491,7 +491,7 @@ As with vector fields on a vector space (Proposition [[§30 The Differential in 
 
 ^def-60-6
 
-By construction $\mathrm{ev}$ is then an isomorphism of [[§58 Lie Bracket and Lie Algebra#^def-58-2|Lie algebras]]: $T_eG$ inherits the bracket that makes it one. The question is what this bracket is.
+By construction $\mathrm{ev}$ is then an isomorphism of [[§58 Lie Bracket and Lie Algebra#^def-58-2|Lie algebras]] (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-4|§58.4]]): $T_eG$ inherits the bracket that makes it one. The question is what this bracket is.
 
 > [!theorem] Theorem §60.10: The Lie Algebra of $\mathrm{GL}(d,\mathbb{R})$
 > Let $G = \mathrm{GL}(d, \mathbb{R})$, the $d \times d$ invertible matrices, an open subset of $\operatorname{Mat}(d, \mathbb{R}) \cong \mathbb{R}^{d^2}$, so that $T_IG = \operatorname{Mat}(d,\mathbb{R})$. The Lie bracket on $T_IG$ ([[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Definition §60.6]]) is the matrix commutator
@@ -503,7 +503,7 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§58 Lie Bracket and L
 ^thm-60-10
 
 > [!proof]+ Proof
-> *(Lecture 19: here diagram chasing no longer suffices, and something has to be computed. The lecture's computation, with the index bookkeeping written out. Lecture 19 proved this together with Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]], which reduces every linear group in $\mathrm{GL}(d, \mathbb{R})$ to this case.)*
+> *(Lecture 19: here diagram chasing no longer suffices, and something has to be computed. The lecture's computation, with the index bookkeeping written out. Lecture 19 proved this together with Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]], which reduces every linear group in $\mathrm{GL}(d, \mathbb{R})$ to this case; the linear groups in $\mathrm{GL}(d, \mathbb{C})$ are reduced to it through Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-4|§61.4]].)*
 >
 > *Coordinates.* Write $A = (a^i_j)$, with $i$ the row index and $j$ the column index, and call a general group element $X = (x^i_j) \in \mathrm{GL}(d, \mathbb{R})$ rather than $g$, to think of it as a variable. Written out,
 >
@@ -552,7 +552,7 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§58 Lie Bracket and L
 
 ^pf-60-10
 
-*Uses:* [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Def. §60.6]]
+*Uses:* [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Def. §60.6]], [[§61 Lie Group Morphisms and Linear Groups#^prop-61-4|§61.4]]
 
 Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset of $\operatorname{Mat}(d,\mathbb{R})$ is linear in $X$, and the bracket of the linear fields $X \mapsto XA$ and $X \mapsto XB$ is the linear field $X \mapsto X(AB - BA)$.
 
@@ -889,7 +889,34 @@ So the right-invariant vector fields are exactly the $\mathbf{Y}^A$, $A \in T_eG
 
 *Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]]
 
-This agrees with Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-2|§60.2]], where the bracket of the additive group of a vector space was computed to vanish, and it applies as well to the torus $S^1 \times \cdots \times S^1$, a product of the abelian Lie group $S^1 = \mathrm{U}(1)$. *(Not from the assignment.)* The converse needs connectedness: $\mathrm{O}(2)$ is not abelian, but its tangent space at $I$ is that of $\mathrm{SO}(2) \cong S^1$, one-dimensional, so its bracket vanishes by antisymmetry. For connected groups the converse holds, a fact that needs the exponential map (Lee, Ch. 20).
+This agrees with Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-2|§60.2]], where the bracket of the additive group of a vector space was computed to vanish.
+
+> [!example] Example §60.3: The Torus
+> Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-20|§60.20]] applies as well to the torus $S^1 \times \cdots \times S^1$, a product of the abelian Lie group $S^1 = \mathrm{U}(1)$: its Lie bracket is identically zero.
+
+^ex-60-3
+
+> [!example] Example §60.4: $\mathrm{O}(2)$: Zero Bracket but Not Abelian
+> *(Not from the assignment.)* The converse of Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-20|§60.20]] needs connectedness: $\mathrm{O}(2)$ is not abelian, but its tangent space at $I$ is that of $\mathrm{SO}(2) \cong S^1$, one-dimensional, so its bracket vanishes by antisymmetry.
+
+^ex-60-4
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* *Not abelian.* The rotation by a quarter turn and a reflection lie in $\mathrm{O}(2)$ and do not commute:
+>
+> $$
+> \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix},
+> \qquad
+> \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix} \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix} = \begin{pmatrix} 0 & -1 \\ -1 & 0 \end{pmatrix} .
+> $$
+>
+> *Zero bracket.* $T_I\mathrm{O}(2) = \operatorname{Skew}(2, \mathbb{R})$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]), the multiples of one matrix, so it is one-dimensional. Let $A, B \in T_I\mathrm{O}(2)$. If $A = 0$, then $[A, B] = 0$ because the bracket is bilinear. Otherwise $B = cA$ for some $c \in \mathbb{R}$, and $[A, B] = c\,[A, A] = 0$: by antisymmetry $[A, A] = -[A, A]$, so $[A, A] = 0$. The bracket on $T_I\mathrm{O}(2)$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]) is bilinear and antisymmetric because the bracket of vector fields is (Corollary [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]]) and $A \mapsto \mathbf{X}^A$ is linear (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]).
+
+^pf-ex-60-4
+
+*Uses:* [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Def. §60.6]], [[§58 Lie Bracket and Lie Algebra#^cor-58-5|§58.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]
+
+For connected groups the converse holds, a fact that needs the exponential map (Lee, Ch. 20).
 
 > [!example] Example §60.5: Right-Invariant Fields on $\mathrm{GL}({n,\mathbb{R}})$
 > On $G = \mathrm{GL}(n,\mathbb{R})$, with $T_gG = \operatorname{Mat}(n,\mathbb{R})$ as in Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]], the right-invariant extension of $A \in \operatorname{Mat}(n,\mathbb{R}) = T_IG$ is

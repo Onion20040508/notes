@@ -15,7 +15,7 @@ tags: [differentiable-manifolds, math591]
 
 1. the *conormal space* $N_pS \subseteq T_p^{\ast}M$, the covectors that vanish on $\iota_{\ast p}(T_pS)$ (Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]], [[§37 Regular Submanifolds|§37]], Lecture 12) — intrinsic, defined without any metric;
 2. the *normal space* $T_pM/\iota_{\ast p}(T_pS)$, a quotient (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-2|§39.2]], [[§39 Transversality and Lagrange Multipliers|§39]]) — also intrinsic; $N_pS$ consists of the covectors that vanish on $\iota_{\ast p}(T_pS)$, which are the same as the linear forms on this quotient;
-3. for a submanifold of Euclidean space — in this section, following the assignment, the submanifold is called $M$ and the ambient space is $\mathbb{R}^n$ — the *Euclidean normal space* $(T^{\mathrm{geo}}_pM)^\perp \subseteq \mathbb{R}^n$ of vectors perpendicular to $M$ (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-2|§42.2]]), studied here; it needs the dot product.
+3. for a submanifold of Euclidean space — in this section, following the assignment, the submanifold is called $M$ and the ambient space is $\mathbb{R}^n$ — the *Euclidean normal space* $(T^{\mathrm{geo}}_pM)^\perp \subseteq \mathbb{R}^n$ of vectors perpendicular to $M$ (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-1|§42.1]]), studied here; it needs the dot product.
 
 With the dot product the three agree: $(T^{\mathrm{geo}}_pM)^\perp$ is a complement of $T^{\mathrm{geo}}_pM$ in $\mathbb{R}^n$, so it maps isomorphically onto the quotient $\mathbb{R}^n/T^{\mathrm{geo}}_pM$, which is the normal space $T_p\mathbb{R}^n/\iota_{\ast p}(T_pM)$ under $w \mapsto D_w|_p$; and $v \mapsto \xi_v$ maps it isomorphically onto the conormal space $N_pM$ (Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-3|§42.3]]).
 
@@ -40,14 +40,19 @@ the $(n-m) \times n$ Jacobian of $G$ in the standard coordinates of $\mathbb{R}^
 3. the vectors $X_j(q) = \dfrac{\partial \varphi^{-1}}{\partial r^j}\big(\varphi(q)\big)$, $j = 1, \ldots, m$, form a basis of $T^{\mathrm{geo}}_qM$, for every $q \in U \cap M$;
 4. the gradients $\nabla G^1(q), \ldots, \nabla G^{n-m}(q)$ form a basis of the orthogonal complement $(T^{\mathrm{geo}}_qM)^\perp$, for every $q \in U \cap M$.
 
-> [!definition] Definition §42.2: Normal Bundle
+> [!definition] Definition §42.1: Euclidean Normal Space
 > Let $M \subseteq \mathbb{R}^n$ be a regular submanifold of dimension $m < n$. For $p \in M$ write
 >
 > $$
 > (T^{\mathrm{geo}}_pM)^\perp = \{\, v \in \mathbb{R}^n : v \cdot w = 0 \text{ for all } w \in T^{\mathrm{geo}}_pM \,\}
 > $$
 >
-> for the orthogonal complement of the geometric tangent space with respect to the dot product, the **Euclidean normal space** of $M$ at $p$. The **normal bundle** of $M$ is
+> for the orthogonal complement of the geometric tangent space with respect to the dot product, the **Euclidean normal space** of $M$ at $p$.
+
+^def-42-1
+
+> [!definition] Definition §42.2: Normal Bundle
+> Let $M \subseteq \mathbb{R}^n$ be a regular submanifold of dimension $m < n$, with its Euclidean normal spaces $(T^{\mathrm{geo}}_pM)^\perp$, $p \in M$ (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-1|§42.1]]). The **normal bundle** of $M$ is
 >
 > $$
 > \mathcal{N} = \{\, (p, v) \in \mathbb{R}^n \times \mathbb{R}^n : p \in M \text{ and } v \in (T^{\mathrm{geo}}_pM)^\perp \,\} \subseteq \mathbb{R}^{2n},
@@ -178,7 +183,7 @@ the $(n-m) \times n$ Jacobian of $G$ in the standard coordinates of $\mathbb{R}^
 > [!theorem] Proposition §42.2: The Normal Bundle Is a Fibration
 > Let $(U, \varphi = (x^1, \ldots, x^n))$ be a chart of $\mathbb{R}^n$ adapted to $M$, with $G = (x^{m+1}, \ldots, x^n)$ and $J(q) = G'(q)$ as in the Setting, and let $\mathcal{N}$ carry the smooth structure of Proposition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^prop-42-1|§42.1]].
 >
-> 1. For $q \in U \cap M$ the gradients $\nabla G^1(q), \ldots, \nabla G^{n-m}(q)$, the rows of $J(q)$, form a basis of $(T^{\mathrm{geo}}_qM)^\perp$; and for every $q \in U$ the $(n-m) \times (n-m)$ matrix $J(q) J(q)^{\mathsf T}$ is invertible.
+> 1. For every $q \in U$ the $(n-m) \times (n-m)$ matrix $J(q) J(q)^{\mathsf T}$ is invertible. (Recall Lemma [[§37 Regular Submanifolds#^lem-37-13|§37.13]](4): for $q \in U \cap M$ the gradients $\nabla G^1(q), \ldots, \nabla G^{n-m}(q)$, the rows of $J(q)$, form a basis of $(T^{\mathrm{geo}}_qM)^\perp$.)
 > 2. The map
 >
 > $$
@@ -515,11 +520,22 @@ $$
 > T^{\mathrm{geo}}M = \{\, (p, v) \in \mathbb{R}^n \times \mathbb{R}^n : p \in M \text{ and } v \in T^{\mathrm{geo}}_pM \,\} \subseteq \mathbb{R}^{2n},
 > $$
 >
-> with the projection $\pi(p, v) = p$ and the **zero section** $\mathcal{Z} = \{(p, 0) : p \in M\}$. Its fibre over $p$ is $\{p\} \times T^{\mathrm{geo}}_pM$.
+> with the projection $\pi(p, v) = p$. Its fibre over $p$ is $\{p\} \times T^{\mathrm{geo}}_pM$.
 >
 > *Lee: Problem 5-6 (as $TM \subseteq T\mathbb{R}^n$)*
 
 ^def-42-5
+
+> [!definition] Definition §42.6: Zero Section of the Geometric Tangent Bundle
+> The **zero section** of the geometric tangent bundle $T^{\mathrm{geo}}M$ (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-5|§42.5]]) is its subset
+>
+> $$
+> \mathcal{Z} = \{(p, 0) : p \in M\} ,
+> $$
+>
+> the zero vector lying in every $T^{\mathrm{geo}}_pM$, a linear subspace of $\mathbb{R}^n$ (Setting, item (2)).
+
+^def-42-6
 
 Through $T^{\mathrm{geo}}_pM = \iota_{\ast p}(T_pM)$ (the remark *The Tangent Spaces Match* in [[§37 Regular Submanifolds|§37]]) this is the tangent bundle $TM$ of the abstract theory (Definition [[§51 The Tangent Bundle#^def-51-1|§51.1]], met later), sitting inside $T\mathbb{R}^n = \mathbb{R}^n \times \mathbb{R}^n$. Fibre by fibre it is the orthogonal partner of the normal bundle: $T^{\mathrm{geo}}_pM \oplus (T^{\mathrm{geo}}_pM)^\perp = \mathbb{R}^n$.
 
@@ -598,8 +614,13 @@ Through $T^{\mathrm{geo}}_pM = \iota_{\ast p}(T_pM)$ (the remark *The Tangent Sp
 
 For $M = S^1 \subseteq \mathbb{R}^2$, $UM$ is two circles, $\{(p, \pm Rp)\}$ with $R$ the rotation by $\pi/2$: dimension $1 = 2 \cdot 1 - 1$. In general $UM \to M$ has fibre the unit sphere $S^{m-1}$ of $T^{\mathrm{geo}}_pM$.
 
+> [!definition] Definition §42.8: Orthogonal Projection onto $T^{\mathrm{geo}}_qM$
+> For $q \in M$, the **orthogonal projection** onto the tangent space at $q$ is the map $\pi_q : \mathbb{R}^n \to T^{\mathrm{geo}}_qM$ that sends $\mathbf{a} \in \mathbb{R}^n$ to the vector $\pi_q(\mathbf{a}) \in T^{\mathrm{geo}}_qM$ with $\mathbf{a} - \pi_q(\mathbf{a}) \in (T^{\mathrm{geo}}_qM)^\perp$ (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-1|§42.1]]). There is exactly one such vector for each $\mathbf{a}$: this is the first statement of Lemma [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^lem-42-6|§42.6]], which follows.
+
+^def-42-8
+
 > [!theorem] Lemma §42.6: Orthogonal Projection onto a Tangent Space
-> For $q \in M$ let $\pi_q : \mathbb{R}^n \to T^{\mathrm{geo}}_qM$ be the orthogonal projection: $\mathbf{a} - \pi_q(\mathbf{a}) \in (T^{\mathrm{geo}}_qM)^\perp$.
+> Let $q \in M$. For every $\mathbf{a} \in \mathbb{R}^n$ there is exactly one vector $P \in T^{\mathrm{geo}}_qM$ with $\mathbf{a} - P \in (T^{\mathrm{geo}}_qM)^\perp$; so the orthogonal projection $\pi_q : \mathbb{R}^n \to T^{\mathrm{geo}}_qM$ (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-8|§42.8]]) is well defined: $\mathbf{a} - \pi_q(\mathbf{a}) \in (T^{\mathrm{geo}}_qM)^\perp$.
 >
 > 1. $\pi_q$ is linear, $\pi_q(w) = w$ for $w \in T^{\mathrm{geo}}_qM$, and $\pi_q(\mathbf{a}) = 0$ if and only if $\mathbf{a} \perp T^{\mathrm{geo}}_qM$; also $w \cdot \mathbf{a} = w \cdot \pi_q(\mathbf{a})$ for $w \in T^{\mathrm{geo}}_qM$.
 > 2. In an adapted chart as in the Setting, with the basis $X_1(q), \ldots, X_m(q)$ of $T^{\mathrm{geo}}_qM$ (item (3) of the Setting), the *Gram matrix* $g(q) = \big(g_{ij}(q)\big)$, $g_{ij}(q) = X_i(q) \cdot X_j(q)$, is invertible, with inverse $\big(g^{ij}(q)\big)$, and

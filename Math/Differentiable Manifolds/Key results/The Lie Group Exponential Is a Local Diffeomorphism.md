@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 71.10", "exponential map of a Lie group", "exp is a local diffeomorphism", "Lee Proposition 20.8"]
+aliases: ["MATH 591 71.12", "exponential map of a Lie group", "exp is a local diffeomorphism", "Lee Proposition 20.8"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§71 The Exponential Map#^prop-71-12]]

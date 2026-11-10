@@ -161,7 +161,19 @@ tags: [differentiable-manifolds, math591]
 
 ^def-39-2
 
-*(Not from lecture.)* If $S$ has codimension $k$, the normal space has dimension $k$: $\dim T_pM = m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]), $\dim \iota_{\ast p}(T_pS) = \dim T_pS = m - k$ because $\iota_{\ast p}$ is injective (Propositions [[§37 Regular Submanifolds#^prop-37-9|§37.9]] and [[§37 Regular Submanifolds#^prop-37-3|§37.3]]), and $\dim T_pM/\iota_{\ast p}(T_pS) = m - (m - k) = k$ by Proposition [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]](3). It needs no metric, unlike the normal vectors of the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]; its dimension is that of the conormal space $N_pS$ (Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]]).
+> [!theorem] Lemma §39.2: Dimension of the Normal Space
+> *(Not from lecture.)* Let $M$ be a smooth manifold of dimension $m$, $S \subseteq M$ a regular submanifold of codimension $k$ with inclusion $\iota$, and $p \in S$. Then the normal space $T_pM/\iota_{\ast p}(T_pS)$ of $S$ at $p$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-2|§39.2]]) has dimension $k$.
+
+^lem-39-2
+
+> [!proof]+ Proof
+> We compute the dimension of the quotient from those of $T_pM$ and of the subspace $\iota_{\ast p}(T_pS)$: $\dim T_pM = m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]), $\dim \iota_{\ast p}(T_pS) = \dim T_pS = m - k$ because $\iota_{\ast p}$ is injective (Propositions [[§37 Regular Submanifolds#^prop-37-9|§37.9]] and [[§37 Regular Submanifolds#^prop-37-3|§37.3]]), and $\dim T_pM/\iota_{\ast p}(T_pS) = m - (m - k) = k$ by Proposition [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]](3).
+
+^pf-39-2
+
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]]
+
+The normal space needs no metric, unlike the normal vectors of the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]; its dimension is that of the conormal space $N_pS$ (Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]]).
 
 > [!theorem] Proposition §39.3: Normal Spaces Under a Transverse Map
 > Let $F : M \to N$ be smooth, $S \subseteq N$ a regular submanifold of codimension $k$ with inclusion $\iota$, $p \in F^{-1}(S)$ and $q = F(p)$. Put
@@ -179,7 +191,7 @@ tags: [differentiable-manifolds, math591]
 > 2. $\bar F_{\ast p}$ is injective.
 > 3. $\bar F_{\ast p}$ is surjective if and only if $F$ is transverse to $S$ at $p$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]).
 >
-> So if $F \pitchfork S$, then $K_p = j_{\ast p}(T_pF^{-1}(S))$, with $j$ the inclusion of $F^{-1}(S)$ (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]) and $\bar F_{\ast p}$ is an isomorphism $T_pM/T_pF^{-1}(S) \cong T_qN/T_qS$ of the normal spaces (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-2|§39.2]]): both have dimension $k$, which is the reason the codimension is preserved.
+> So if $F \pitchfork S$, then $K_p = j_{\ast p}(T_pF^{-1}(S))$, with $j$ the inclusion of $F^{-1}(S)$ (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]) and $\bar F_{\ast p}$ is an isomorphism $T_pM/T_pF^{-1}(S) \cong T_qN/T_qS$ of the normal spaces (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-2|§39.2]]): both have dimension $k$ (Lemma [[§39 Transversality and Lagrange Multipliers#^lem-39-2|§39.2]]), which is the reason the codimension is preserved.
 
 ^prop-39-3
 
@@ -218,63 +230,63 @@ tags: [differentiable-manifolds, math591]
 
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-6|Def. §21.6]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]], [[§39 Transversality and Lagrange Multipliers#^def-39-1|Def. §39.1]], [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]]
 
+*Review session, Oct 16 (and Uribe's email before it). The homework defined a map transverse to a submanifold (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]). Two submanifolds can also be transverse to each other; historically this was the original definition, later generalized to maps. The Euclidean version is Definition [[§26 Transversality#^def-26-3|§26.3]].* *(Placed here because Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]](2) uses them; the theorem of the review session on the intersection is Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-9|§39.9]] in [[§39 Transversality and Lagrange Multipliers|§39]].)*
+
+> [!definition] Definition §39.3: Transverse Submanifolds
+> Let $S_1, S_2 \subseteq N$ be regular submanifolds. $S_1$ **intersects $S_2$ transversally**, written $S_1 \pitchfork S_2$, if
+>
+> $$
+> T_qS_1 + T_qS_2 = T_qN \qquad \text{for every } q \in S_1 \cap S_2 ,
+> $$
+>
+> with $T_qS_i \subseteq T_qN$ through the inclusions (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]). The condition holds vacuously if $S_1 \cap S_2 = \varnothing$. The notation $S_1 \pitchfork S_2$ is a statement about the pair, not a set: unlike $S_1 \cap S_2$, it is not the result of an operation.
+>
+> *Lee: Ch. 6, Transversality*
+
+^def-39-3
+
+> [!theorem] Proposition §39.4: Transverse Submanifolds and Transverse Maps
+> $S_1 \pitchfork S_2$ if and only if the inclusion $\iota_1 : S_1 \hookrightarrow N$ is transverse to $S_2$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]).
+
+^prop-39-4
+
+> [!proof]+ Proof
+> *(Stated in the review session as immediate from the definitions; written out.)* $\iota_1^{-1}(S_2) = S_1 \cap S_2$, and for $q$ in it, $(\iota_1)_{\ast q}(T_qS_1)$ is $T_qS_1$ regarded as a subspace of $T_qN$. So the condition of Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]] for $F = \iota_1$ at $q$ is $T_qS_1 + T_qS_2 = T_qN$.
+
+^pf-39-4
+
+*Uses:* [[§39 Transversality and Lagrange Multipliers#^def-39-1|Def. §39.1]]
+
 > [!theorem] Corollary §39.5: Special Cases of Transversality
 > Let $F : M \to N$ be smooth, $\dim M = m$, $\dim N = n$.
 >
 > 1. *A point.* For $c \in N$, $\{c\}$ is a regular submanifold of $N$ of codimension $n$, and $F \pitchfork \{c\}$ if and only if $c$ is a regular value of $F$. In that case Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] returns the regular value theorem, Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]: $F^{-1}(c)$ is a regular submanifold of $M$ of codimension $n$, and $j_{\ast p}(T_pF^{-1}(c)) = \ker F_{\ast p}$ for $p \in F^{-1}(c)$.
-> 2. *Two submanifolds.* Let $S, S' \subseteq N$ be regular submanifolds of codimensions $k$ and $k'$, with inclusions $\iota$ and $\iota'$, that *intersect transversally*:
->
-> $$
-> \iota'_{\ast p}\big(T_pS'\big) + \iota_{\ast p}\big(T_pS\big) = T_pN \qquad \text{for every } p \in S' \cap S ,
-> $$
->
-> that is, $\iota' \pitchfork S$ (a condition symmetric in $S$ and $S'$). Then $S' \cap S$ is a regular submanifold of $S'$ of codimension $k$, and a regular submanifold of $N$ of codimension $k + k'$; and, with all tangent spaces regarded as subspaces of $T_pN$, $T_p(S' \cap S) = T_pS' \cap T_pS$.
+> 2. *Two submanifolds.* Let $S, S' \subseteq N$ be regular submanifolds of codimensions $k$ and $k'$, with inclusions $\iota$ and $\iota'$, that intersect transversally, $S' \pitchfork S$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-3|§39.3]]) — that is, $\iota' \pitchfork S$ (Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]]; a condition symmetric in $S$ and $S'$). Then $S' \cap S$ is a regular submanifold of $S'$ of codimension $k$. (It is also a regular submanifold of $N$ of codimension $k + k'$, and, with all tangent spaces regarded as subspaces of $T_pN$, $T_p(S' \cap S) = T_pS' \cap T_pS$: this is Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-9|§39.9]].)
 > 3. *Submersions.* If $F$ is a submersion, then $F \pitchfork S$ for every regular submanifold $S \subseteq N$, and $F^{-1}(S)$ is a regular submanifold of $M$ of the same codimension as $S$.
->
-> *Lee: Theorem 6.30(b), for (2)*
 
 ^cor-39-5
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)*
 >
-> *(1)* $\{c\}$ is a regular submanifold of $N$ of codimension $n$: it is the fibre $\mathrm{id}_N^{-1}(c)$ of the identity, a submersion since $(\mathrm{id}_N)_{\ast} = \mathrm{id}$ (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), so Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]] applies. Its tangent space is $0$ (dimension $n - n = 0$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]] and Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]), so transversality at $p \in F^{-1}(c)$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]) reads $F_{\ast p}(T_pM) + 0 = T_cN$: $F_{\ast p}$ is onto. Thus $F \pitchfork \{c\}$ iff $F$ is a submersion at every point of $F^{-1}(c)$, iff $c$ is a regular value (Definition [[§36 Submersions#^def-36-4|§36.4]], the empty case included). Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], with $S = \{c\}$ and $k = n$, then gives that $F^{-1}(c)$ is a regular submanifold of codimension $n$, and $j_{\ast p}(T_pF^{-1}(c)) = (F_{\ast p})^{-1}(0) = \ker F_{\ast p}$.
+> *(1)* $\{c\}$ is a regular submanifold of $N$ of codimension $n$: it is the fibre $\mathrm{id}_N^{-1}(c)$ of the identity, a submersion since $(\mathrm{id}_N)_{\ast} = \mathrm{id}$ (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), so Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]] applies. Its tangent space is $0$ (dimension $n - n = 0$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]] and Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]), so transversality at $p \in F^{-1}(c)$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]) reads $F_{\ast p}(T_pM) + 0 = T_cN$: $F_{\ast p}$ is onto. Thus $F \pitchfork \{c\}$ iff $F$ is a submersion at every point of $F^{-1}(c)$, iff $c$ is a regular value (Definitions [[§30 The Differential in Coordinates#^def-30-3|§30.3]] and [[§30 The Differential in Coordinates#^def-30-4|§30.4]]; the empty case is Definition [[§36 Submersions#^def-36-4|§36.4]](2)). Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], with $S = \{c\}$ and $k = n$, then gives that $F^{-1}(c)$ is a regular submanifold of codimension $n$, and $j_{\ast p}(T_pF^{-1}(c)) = (F_{\ast p})^{-1}(0) = \ker F_{\ast p}$.
 >
-> *(2), in $S'$.* The inclusion $\iota' : S' \to N$ is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1)), $(\iota')^{-1}(S) = S' \cap S$, and $\iota'_{\ast p}(T_pS')$ is the image of the differential of $\iota'$ at $p$; so $\iota' \pitchfork S$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]) is the displayed condition, which is symmetric in $S$ and $S'$ because a sum of subspaces is. Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], applied to $\iota'$ in place of $F$, makes $S' \cap S$ a regular submanifold of $S'$ of codimension $k = \operatorname{codim} S$, so of dimension $(n - k') - k = n - (k' + k)$, $S'$ having dimension $n - k'$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]); and, with $j : S' \cap S \to S'$ the inclusion, $j_{\ast p}(T_p(S' \cap S)) = (\iota'_{\ast p})^{-1}\big(\iota_{\ast p}(T_pS)\big)$: the vectors of $T_pS'$ whose image in $T_pN$ lies in $\iota_{\ast p}(T_pS)$. Applying $\iota'_{\ast p}$, and using that $\iota' \circ j$ is the inclusion of $S' \cap S$ into $N$ (Chain Rule), the tangent space of $S' \cap S$ inside $T_pN$ is
->
-> $$
-> \iota'_{\ast p}\Big((\iota'_{\ast p})^{-1}\big(\iota_{\ast p}(T_pS)\big)\Big) = \iota'_{\ast p}\big(T_pS'\big) \cap \iota_{\ast p}\big(T_pS\big) ,
-> $$
->
-> since for a linear map $A$ and a subspace $E$ of its target, $A\big(A^{-1}(E)\big) = \operatorname{im} A \cap E$: an element $Av$ with $Av \in E$ lies in both; conversely $w = Av \in E$ gives $v \in A^{-1}(E)$. With all tangent spaces regarded as subspaces of $T_pN$: $T_p(S' \cap S) = T_pS' \cap T_pS$.
->
-> *(2), in $N$.* Fix $p \in S' \cap S$ (if $S' \cap S = \emptyset$ there is nothing to check). Take charts $(U, \varphi)$ adapted to $S$ and $(U', \varphi')$ adapted to $S'$ at $p$, with local defining maps $x_b : U \to \mathbb{R}^k$ and $x'_b : U' \to \mathbb{R}^{k'}$ (Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]]), and on the open set $V = U \cap U' \ni p$ put
+> *(2)* The inclusion $\iota' : S' \to N$ is smooth (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1)), $(\iota')^{-1}(S) = S' \cap S$, and $\iota'_{\ast p}(T_pS')$ is the image of the differential of $\iota'$ at $p$; so $\iota' \pitchfork S$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]) is the condition
 >
 > $$
-> H = (x_b, x'_b) : V \longrightarrow \mathbb{R}^{k + k'} ,
+> \iota'_{\ast p}\big(T_pS'\big) + \iota_{\ast p}\big(T_pS\big) = T_pN \qquad \text{for every } p \in S' \cap S ,
 > $$
 >
-> smooth because its components are. Its first $k$ components are those of $x_b$ and its last $k'$ those of $x'_b$.
-> - *$H^{-1}(\vec 0) = V \cap S \cap S'$*: $H(q) = \vec 0$ iff $x_b(q) = \vec 0$ and $x'_b(q) = \vec 0$, iff $q \in U \cap S$ and $q \in U' \cap S'$ (Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]](3)).
-> - *$\ker H_{\ast p} = \iota_{\ast p}(T_pS) \cap \iota'_{\ast p}(T_pS')$*: by Proposition [[§36 Submersions#^prop-36-4|§36.4]](1), $H_{\ast p}v = \sum_j dH^j|_p(v)\, \partial/\partial r^j|_{\vec 0}$, which is $0$ iff every coefficient $dH^j|_p(v)$ is $0$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]); by the same formula for $x_b$ and $x'_b$, $(x_b)_{\ast p}v = 0$ iff $dH^j|_p(v) = 0$ for $j \le k$, and $(x'_b)_{\ast p}v = 0$ iff $dH^j|_p(v) = 0$ for $j > k$. So $\ker H_{\ast p} = \ker (x_b)_{\ast p} \cap \ker (x'_b)_{\ast p}$, which is $\iota_{\ast p}(T_pS) \cap \iota'_{\ast p}(T_pS')$ by Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]](4).
-> - *$H$ is a submersion at $p$*: by the dimension formula for a sum of two subspaces, with $\dim \iota_{\ast p}(T_pS) = n - k$ and $\dim \iota'_{\ast p}(T_pS') = n - k'$ ($\iota_{\ast p}$, $\iota'_{\ast p}$ injective, Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]) and their sum $T_pN$ by transversality,
->
-> $$
-> \dim \ker H_{\ast p} = (n - k) + (n - k') - n = n - k - k' ,
-> $$
->
-> so by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) $\operatorname{rank} H_{\ast p} = n - (n - k - k') = k + k'$, and $H_{\ast p}$ is onto the $(k + k')$-dimensional $T_{\vec 0}\mathbb{R}^{k+k'}$.
->
-> By Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]](2), applied to $H : V \to \mathbb{R}^{k+k'}$ at $p$ with $c = \vec 0$, there is a chart $(W, \hat\theta)$ of $N$ at $p$, $W \subseteq V$, whose last $k + k'$ components vanish exactly on $W \cap H^{-1}(\vec 0) = W \cap S \cap S'$; it is adapted to $S' \cap S$, of codimension $k + k'$. As $p$ was arbitrary, $S' \cap S$ is a regular submanifold of $N$ of codimension $k + k'$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), of dimension $n - k - k'$, in agreement with the first part. And Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]](3), with $W' = V$, gives again that its tangent space at $p$ is $\ker H_{\ast p} = \iota_{\ast p}(T_pS) \cap \iota'_{\ast p}(T_pS')$.
+> which is $S' \pitchfork S$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-3|§39.3]]; Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]] with $S_1 = S'$ and $S_2 = S$), and which is symmetric in $S$ and $S'$ because a sum of subspaces is. Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], applied to $\iota'$ in place of $F$, makes $S' \cap S$ a regular submanifold of $S'$ of codimension $k = \operatorname{codim} S$, so of dimension $(n - k') - k = n - (k' + k)$, $S'$ having dimension $n - k'$ (Proposition [[§37 Regular Submanifolds#^prop-37-3|§37.3]]). Its tangent space, and $S' \cap S$ as a submanifold of $N$, are treated in the second proof of Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-9|§39.9]].
 >
 > *(3)* If $F$ is a submersion, then $F_{\ast p}(T_pM) = T_{F(p)}N$ already, so the sum in Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]] is all of $T_{F(p)}N$ at every $p \in F^{-1}(S)$: $F \pitchfork S$. Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] then makes $F^{-1}(S)$ a regular submanifold of $M$ of the same codimension as $S$.
 
 ^pf-39-5
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§39 Transversality and Lagrange Multipliers#^def-39-1|Def. §39.1]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-10|§37.10]], [[§36 Submersions#^prop-36-4|§36.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§39 Transversality and Lagrange Multipliers#^def-39-1|Def. §39.1]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-10|§37.10]], [[§36 Submersions#^prop-36-4|§36.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§39 Transversality and Lagrange Multipliers#^def-39-3|Def. §39.3]], [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]], [[§39 Transversality and Lagrange Multipliers#^thm-39-9|§39.9]]
 
 > [!remark] Remark: Special Cases and the Euclidean Versions
-> *(Not from lecture.)* Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]](1) is the manifold version of Corollary [[§26 Transversality#^cor-26-4|§26.4]], and (2) that of Proposition [[§26 Transversality#^prop-26-5|§26.5]]: the codimensions add, as for level sets. For $S = \{c\}$ a point, (3) is Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]: a submersion is transverse to every point, and its fibres are regular submanifolds of codimension $n$.
+> *(Not from lecture.)* Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]](1) is the manifold version of Corollary [[§26 Transversality#^cor-26-4|§26.4]], and (2), together with Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-9|§39.9]], that of Proposition [[§26 Transversality#^prop-26-5|§26.5]]: the codimensions add, as for level sets. For $S = \{c\}$ a point, (3) is Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]: a submersion is transverse to every point, and its fibres are regular submanifolds of codimension $n$.
 
 ^rem-39-1
 
@@ -325,7 +337,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]], [[§34 The Cotangent Space from Germs#^prop-34-7|§34.7]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§36 Submersions#^prop-36-2|§36.2]]
 
 > [!theorem] Proposition §39.7: The Conormal Space of a Regular Level Set
-> Let $G = (G^1, \ldots, G^k) : M \to \mathbb{R}^k$ be smooth, with $0$ a regular value of $G$ (Definition [[§36 Submersions#^def-36-4|§36.4]]), and let $S = G^{-1}(0)$. Then for every $p \in S$ the covectors $dG^1|_p, \ldots, dG^k|_p$ form a basis of the conormal space $N_pS$.
+> Let $G = (G^1, \ldots, G^k) : M \to \mathbb{R}^k$ be smooth, with $0$ a regular value of $G$ (Definition [[§30 The Differential in Coordinates#^def-30-4|§30.4]]), and let $S = G^{-1}(0)$. Then for every $p \in S$ the covectors $dG^1|_p, \ldots, dG^k|_p$ form a basis of the conormal space $N_pS$.
 
 ^prop-39-7
 
@@ -342,13 +354,13 @@ tags: [differentiable-manifolds, math591]
 >
 > so $dG^j|_p \in \ker \iota_p^{\ast} = N_pS$ by Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]](1).
 >
-> *Linear independence.* Since $0$ is a regular value and $p \in G^{-1}(0)$, $G$ is a submersion at $p$ (Definition [[§36 Submersions#^def-36-4|§36.4]](2)). By Proposition [[§36 Submersions#^prop-36-4|§36.4]](2), direction ($\Rightarrow$), the covectors $dG^1|_p, \ldots, dG^k|_p$ are therefore linearly independent. Its proof is the submitted solution's argument: by its formula (1), $G_{\ast p}v = \sum_j dG^j|_p(v)\, \partial/\partial r^j|_0$, a relation $\sum_j c_j\, dG^j|_p = 0$ says $c \cdot G_{\ast p}(v) = 0$ for every $v$, and since $G_{\ast p}$ is onto we may take $G_{\ast p}(v) = c$, which gives $|c|^2 = 0$. Its second proof is the Jacobian form: the relation says $J^{\mathsf T} c = 0$ for the $k \times m$ matrix $J = [\partial G^j/\partial x^i(p)]$ of $G_{\ast p}$ in any chart, and $J^{\mathsf T}$ has rank $k$.
+> *Linear independence.* Since $0$ is a regular value and $p \in G^{-1}(0)$, $G$ is a submersion at $p$ (Definitions [[§30 The Differential in Coordinates#^def-30-4|§30.4]] and [[§30 The Differential in Coordinates#^def-30-3|§30.3]]: $p$ is a regular point, so $G_{\ast p}$ is onto). By Proposition [[§36 Submersions#^prop-36-4|§36.4]](2), direction ($\Rightarrow$), the covectors $dG^1|_p, \ldots, dG^k|_p$ are therefore linearly independent. Its proof is the submitted solution's argument: by its formula (1), $G_{\ast p}v = \sum_j dG^j|_p(v)\, \partial/\partial r^j|_0$, a relation $\sum_j c_j\, dG^j|_p = 0$ says $c \cdot G_{\ast p}(v) = 0$ for every $v$, and since $G_{\ast p}$ is onto we may take $G_{\ast p}(v) = c$, which gives $|c|^2 = 0$. Its second proof is the Jacobian form: the relation says $J^{\mathsf T} c = 0$ for the $k \times m$ matrix $J = [\partial G^j/\partial x^i(p)]$ of $G_{\ast p}$ in any chart, and $J^{\mathsf T}$ has rank $k$.
 >
 > *Conclusion.* $dG^1|_p, \ldots, dG^k|_p$ are $k$ linearly independent elements of $N_pS$, which has dimension $k$, so they form a basis of $N_pS$. As $p \in S$ was arbitrary, this holds at every point of $S$.
 
 ^pf-39-7
 
-*Uses:* [[§37 Regular Submanifolds#^prop-37-11|§37.11]], [[§36 Submersions#^prop-36-4|§36.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]], [[§36 Submersions#^def-36-4|Def. §36.4]]
+*Uses:* [[§37 Regular Submanifolds#^prop-37-11|§37.11]], [[§36 Submersions#^prop-36-4|§36.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]], [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]]
 
 The assignment adds that a regular submanifold is *locally* always a regular level set: this is Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]]. Given an adapted chart $(U, \varphi = (x_a, x_b))$, put $G = x_b : U \to \mathbb{R}^k$. By that proposition, $U \cap S = G^{-1}(0)$ and $0$ is a regular value of $G$ (part (3)), $G$ being a submersion at every point of $U$ (part (2)). So Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]] and the theorem below apply to $U \cap S \subseteq U$. For this $G$ the basis $dG^j|_p = dx^{m-k+j}|_p$ is the basis of Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]](2).
 
@@ -417,32 +429,7 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 
 ## Transverse Submanifolds
 
-*Review session, Oct 16 (and Uribe's email before it). The homework defined a map transverse to a submanifold (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]). Two submanifolds can also be transverse to each other; historically this was the original definition, later generalized to maps. The Euclidean version is Definition [[§26 Transversality#^def-26-3|§26.3]].*
-
-> [!definition] Definition §39.3: Transverse Submanifolds
-> Let $S_1, S_2 \subseteq N$ be regular submanifolds. $S_1$ **intersects $S_2$ transversally**, written $S_1 \pitchfork S_2$, if
->
-> $$
-> T_qS_1 + T_qS_2 = T_qN \qquad \text{for every } q \in S_1 \cap S_2 ,
-> $$
->
-> with $T_qS_i \subseteq T_qN$ through the inclusions (Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]). The condition holds vacuously if $S_1 \cap S_2 = \varnothing$. The notation $S_1 \pitchfork S_2$ is a statement about the pair, not a set: unlike $S_1 \cap S_2$, it is not the result of an operation.
->
-> *Lee: Ch. 6, Transversality*
-
-^def-39-3
-
-> [!theorem] Proposition §39.4: Transverse Submanifolds and Transverse Maps
-> $S_1 \pitchfork S_2$ if and only if the inclusion $\iota_1 : S_1 \hookrightarrow N$ is transverse to $S_2$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]).
-
-^prop-39-4
-
-> [!proof]+ Proof
-> *(Stated in the review session as immediate from the definitions; written out.)* $\iota_1^{-1}(S_2) = S_1 \cap S_2$, and for $q$ in it, $(\iota_1)_{\ast q}(T_qS_1)$ is $T_qS_1$ regarded as a subspace of $T_qN$. So the condition of Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]] for $F = \iota_1$ at $q$ is $T_qS_1 + T_qS_2 = T_qN$.
-
-^pf-39-4
-
-*Uses:* [[§39 Transversality and Lagrange Multipliers#^def-39-1|Def. §39.1]]
+*Review session, Oct 16. The definition of transverse submanifolds and its reformulation through the inclusion map, from the same session, stand before Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]], whose second case uses them (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-3|§39.3]], Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]]); what remains here is the theorem on the intersection.*
 
 > [!theorem] Theorem §39.9: Transverse Intersections in a Manifold
 > If $S_1 \pitchfork S_2$ in $N$, then $S_1 \cap S_2$ is a regular submanifold of $N$, with
@@ -479,6 +466,40 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 ^pf-39-9
 
 *Uses:* [[§26 Transversality#^prop-26-5|§26.5]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]
+
+> [!proof]+ Second proof (through the inclusion of one submanifold and adapted charts)
+> *(Not from lecture; filled in. The letters are those of Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]](2): $S' = S_1$ and $S = S_2$, with inclusions $\iota'$ and $\iota$ and codimensions $k' = k_1$ and $k = k_2$; $n = \dim N$; and the point of $S' \cap S$ is called $p$.)*
+>
+> *The tangent space, through $S'$.* By Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]](2), $S' \cap S = (\iota')^{-1}(S)$ is a regular submanifold of $S'$ of codimension $k$, by Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] applied to $\iota'$ in place of $F$. Part (2) of that theorem gives, with $j : S' \cap S \to S'$ the inclusion, $j_{\ast p}(T_p(S' \cap S)) = (\iota'_{\ast p})^{-1}\big(\iota_{\ast p}(T_pS)\big)$: the vectors of $T_pS'$ whose image in $T_pN$ lies in $\iota_{\ast p}(T_pS)$. Applying $\iota'_{\ast p}$, and using that $\iota' \circ j$ is the inclusion of $S' \cap S$ into $N$ (Chain Rule), the tangent space of $S' \cap S$ inside $T_pN$ is
+>
+> $$
+> \iota'_{\ast p}\Big((\iota'_{\ast p})^{-1}\big(\iota_{\ast p}(T_pS)\big)\Big) = \iota'_{\ast p}\big(T_pS'\big) \cap \iota_{\ast p}\big(T_pS\big) ,
+> $$
+>
+> since for a linear map $A$ and a subspace $E$ of its target, $A\big(A^{-1}(E)\big) = \operatorname{im} A \cap E$: an element $Av$ with $Av \in E$ lies in both; conversely $w = Av \in E$ gives $v \in A^{-1}(E)$. With all tangent spaces regarded as subspaces of $T_pN$: $T_p(S' \cap S) = T_pS' \cap T_pS$.
+>
+> *In $N$.* Fix $p \in S' \cap S$ (if $S' \cap S = \emptyset$ there is nothing to check). Take charts $(U, \varphi)$ adapted to $S$ and $(U', \varphi')$ adapted to $S'$ at $p$, with local defining maps $x_b : U \to \mathbb{R}^k$ and $x'_b : U' \to \mathbb{R}^{k'}$ (Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]]), and on the open set $V = U \cap U' \ni p$ put
+>
+> $$
+> H = (x_b, x'_b) : V \longrightarrow \mathbb{R}^{k + k'} ,
+> $$
+>
+> smooth because its components are. Its first $k$ components are those of $x_b$ and its last $k'$ those of $x'_b$.
+> - *$H^{-1}(\vec 0) = V \cap S \cap S'$*: $H(q) = \vec 0$ iff $x_b(q) = \vec 0$ and $x'_b(q) = \vec 0$, iff $q \in U \cap S$ and $q \in U' \cap S'$ (Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]](3)).
+> - *$\ker H_{\ast p} = \iota_{\ast p}(T_pS) \cap \iota'_{\ast p}(T_pS')$*: by Proposition [[§36 Submersions#^prop-36-4|§36.4]](1), $H_{\ast p}v = \sum_j dH^j|_p(v)\, \partial/\partial r^j|_{\vec 0}$, which is $0$ iff every coefficient $dH^j|_p(v)$ is $0$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]); by the same formula for $x_b$ and $x'_b$, $(x_b)_{\ast p}v = 0$ iff $dH^j|_p(v) = 0$ for $j \le k$, and $(x'_b)_{\ast p}v = 0$ iff $dH^j|_p(v) = 0$ for $j > k$. So $\ker H_{\ast p} = \ker (x_b)_{\ast p} \cap \ker (x'_b)_{\ast p}$, which is $\iota_{\ast p}(T_pS) \cap \iota'_{\ast p}(T_pS')$ by Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]](4).
+> - *$H$ is a submersion at $p$*: by the dimension formula for a sum of two subspaces, with $\dim \iota_{\ast p}(T_pS) = n - k$ and $\dim \iota'_{\ast p}(T_pS') = n - k'$ ($\iota_{\ast p}$, $\iota'_{\ast p}$ injective, Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]) and their sum $T_pN$ by transversality,
+>
+> $$
+> \dim \ker H_{\ast p} = (n - k) + (n - k') - n = n - k - k' ,
+> $$
+>
+> so by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) $\operatorname{rank} H_{\ast p} = n - (n - k - k') = k + k'$, and $H_{\ast p}$ is onto the $(k + k')$-dimensional $T_{\vec 0}\mathbb{R}^{k+k'}$.
+>
+> By Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]](2), applied to $H : V \to \mathbb{R}^{k+k'}$ at $p$ with $c = \vec 0$, there is a chart $(W, \hat\theta)$ of $N$ at $p$, $W \subseteq V$, whose last $k + k'$ components vanish exactly on $W \cap H^{-1}(\vec 0) = W \cap S \cap S'$; it is adapted to $S' \cap S$, of codimension $k + k'$. As $p$ was arbitrary, $S' \cap S$ is a regular submanifold of $N$ of codimension $k + k'$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]), of dimension $n - k - k'$, in agreement with Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]](2), where it is a submanifold of codimension $k$ of the $(n - k')$-dimensional $S'$. And Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]](3), with $W' = V$, gives again that its tangent space at $p$ is $\ker H_{\ast p} = \iota_{\ast p}(T_pS) \cap \iota'_{\ast p}(T_pS')$.
+
+^pf-39-9-2
+
+*Uses:* [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]], [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], [[§37 Regular Submanifolds#^prop-37-10|§37.10]], [[§36 Submersions#^prop-36-4|§36.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
 
 *The picture.* In $\mathbb{R}^3$, if $S_1$ is a surface and $S_2$ a curve, at a point of intersection the tangent plane and the tangent line must add up to all of $\mathbb{R}^3$, so the curve has to pierce the surface. If both are surfaces, two planes add up to $\mathbb{R}^3$ exactly when they are different, and then they meet in a line: the surfaces cut through each other along a curve. The picture is local: it is the vector-space picture of the tangent spaces at a point of intersection.
 

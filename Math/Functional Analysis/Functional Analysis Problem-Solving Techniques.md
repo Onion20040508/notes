@@ -103,6 +103,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > - **Completeness of $\ell^p$**, Step 2 (Theorem [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]): the order truncate $\to$ $m \to \infty$ $\to$ $k \to \infty$.
 > - **Hölder for finite sums** is the special case of Theorem [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]] with zero tails; conversely no truncation is needed there because every quantity is a sum of non-negative terms and inequalities in $[0,\infty]$ suffice.
 > - **The dual of $\ell^p$**, Step 2 (Lecture 13, Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]): test $\ell$ on the truncated Hölder-extremal vector $x_j = |a_j|^{p'-2} a_j$, $j \le n$, divide the finite sum $S_n$ out, and let $n \to \infty$.
+> - **The dual of $c_0$**, Step 2 (Proposition [[§36 Duality in Normed Spaces#^prop-36-8|§36.8]]): the same test on a finite sequence, which lies in $c_0$ with norm at most $1$, bounds every partial sum of $\sum_j |a_j|$ by $\|\ell\|$.
 
 ^ex-t6
 
@@ -267,10 +268,11 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t18
 
-> [!example] Example T18: Applications (HW5)
+> [!example] Example T18: Applications (HW5, HW6)
 > - Codimension one (P4, Proposition [[§31 Dual Spaces#^prop-31-6|§31.6]]).
 > - Closed null space implies bounded (P5, Proposition [[§31 Dual Spaces#^prop-31-7|§31.7]]): $y_n = x_0 - x_n/\ell(x_n)$.
 > - The [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]], part (2) (Lemma [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|§26.4]](c)).
+> - The contrast for maps into a normed space (HW6 P1, Example [[§31 Dual Spaces#^ex-31-3|§31.3]]): a closed null space no longer makes a linear map bounded, because the quotient by the null space is no longer one-dimensional; it does when the range is finite-dimensional (Proposition [[§31 Dual Spaces#^prop-31-8|§31.8]]).
 
 ^ex-t18
 
@@ -285,6 +287,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > - Poincaré on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-12|§33.12]]), from [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-11|Poincaré]] on $C_c^\infty$.
 > - Limits in $W^{1,p}$ satisfy integration by parts (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]).
 > - A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], Step 3); the same fails in $\ell^\infty$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
+> - The finite sequences are dense in $c_0$, so a bounded functional on $c_0$ is determined by its values on them (Proposition [[§36 Duality in Normed Spaces#^prop-36-8|§36.8]]); in the space of convergent sequences they are not dense, and the functional $\lim$ is the extra coordinate (HW6 P2, Proposition [[§36 Duality in Normed Spaces#^prop-36-9|§36.9]]).
 > - Banach–Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]]): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
 > - $\sin(mx) \rightharpoonup 0$ in $L^p$, $1 < p < \infty$ (Lecture 18, Example [[§43 Weak and Weak-Star Convergence#^ex-43-3|§43.3]]): test only against continuous $g$, dense in $L^{p'}$, plus a uniform bound.
 > - The criteria for weak and weak-$\ast$ convergence (Lecture 18, Theorems [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]] and [[§43 Weak and Weak-Star Convergence#^thm-43-9|§43.9]]): convergence on a dense subset of $X'$, respectively of $X$, plus a uniform bound on the norms, gives convergence on the whole space; both are Banach–Steinhaus, applied on $X'$, respectively on $X$.

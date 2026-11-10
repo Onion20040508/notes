@@ -19,7 +19,7 @@ These notes follow the course, and the course builds manifolds in two ways that 
 ![[m591-0-1.svg]]
 *The roadmap: the equations thread (teal), the quotients thread (violet), the linear stage (orange), and the bundles (blue); arrow labels are the bridges.*
 
-The labels on the arrows are the bridges. The regular value theorem ([[§7 The Regular Value Theorem|§7]]) turns equations into manifolds, and graph charts ([[Regular Level Sets Are Smooth Manifolds|§20.2]]) make them smooth. The differential between vector spaces ([[§21 Linear Algebra Toolkit|§21]]) gives $T^{\mathrm{geo}}_pM = \ker F'(p)$ ([[Geometric Tangent Space Is the Kernel of the Jacobian|§25.3]]). For the quotient-built manifolds, atlases are written down by hand ([[§17 Differentiable Structures|§17]]), and only the abstract tangent space reaches them. The two tangent spaces are identified by $v \mapsto D_v$ ([[Ambient and Abstract Tangent Spaces Agree|§29.6]]); the abstract differential agrees with the Jacobian ([[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), and on any manifold the matrix of $F_{\ast p}$ in coordinates *is* the Jacobian of the coordinate representation ([[Matrix of the Differential|§30.2]]), because partial derivatives upstairs are defined downstairs ([[§30 The Differential in Coordinates#^prop-30-1|§30.1]]); and every abstract tangent vector is a velocity after all ([[Every Tangent Vector Is a Velocity|§31.2]]). At the bottom, the submersion normal form ([[Submersion Normal Form|§36.6]]) proves the regular value theorem for manifolds ([[Regular Value Theorem for Manifolds|§38.2]]), where the equations thread ends; fibrations and the tangent and cotangent spaces follow as bundles ([[§40 Fibrations|§40]], [[§51 The Tangent Bundle|§51]], [[§52 The Cotangent Bundle|§52]]); and immersions, whose normal form is the twin of the submersion normal form, have images that are locally submanifolds ([[§43 Immersions|§43]]), and globally so when they are embeddings ([[§44 Embeddings|§44]]). Each section opens with a line placing it on this map.
+The labels on the arrows are the bridges. The regular value theorem ([[§7 The Regular Value Theorem|§7]]) turns equations into manifolds, and graph charts ([[Regular Level Sets Are Smooth Manifolds|§20.2]]) make them smooth. The differential between vector spaces ([[§21 Linear Algebra Toolkit|§21]]) gives $T^{\mathrm{geo}}_pM = \ker F'(p)$ ([[Geometric Tangent Space Is the Kernel of the Jacobian|§25.3]]). For the quotient-built manifolds, atlases are written down by hand ([[§17 Differentiable Structures|§17]]), and only the abstract tangent space reaches them. The two tangent spaces are identified by $v \mapsto D_v$ ([[Ambient and Abstract Tangent Spaces Agree|§29.8]]); the abstract differential agrees with the Jacobian ([[§30 The Differential in Coordinates#^prop-30-5|§30.5]]), and on any manifold the matrix of $F_{\ast p}$ in coordinates *is* the Jacobian of the coordinate representation ([[Matrix of the Differential|§30.2]]), because partial derivatives upstairs are defined downstairs ([[§30 The Differential in Coordinates#^prop-30-1|§30.1]]); and every abstract tangent vector is a velocity after all ([[Every Tangent Vector Is a Velocity|§31.4]]). At the bottom, the submersion normal form ([[Submersion Normal Form|§36.6]]) proves the regular value theorem for manifolds ([[Regular Value Theorem for Manifolds|§38.2]]), where the equations thread ends; fibrations and the tangent and cotangent spaces follow as bundles ([[§40 Fibrations|§40]], [[§51 The Tangent Bundle|§51]], [[§52 The Cotangent Bundle|§52]]); and immersions, whose normal form is the twin of the submersion normal form, have images that are locally submanifolds ([[§43 Immersions|§43]]), and globally so when they are embeddings ([[§44 Embeddings|§44]]). Each section opens with a line placing it on this map.
 
 ## How the chapters build on each other
 Solid arrows: a chapter's proofs rely on the earlier chapter (arrows implied by others are omitted; exact counts are in each chapter note). Dashed arrows labelled "on credit": results used before they are proved (forward references in the notes). Dashed arrows from other subjects: citations of their results, labelled with the number (only arrows with 2 or more citations are drawn).
@@ -61,13 +61,13 @@ graph TD
   C5 -.->|on credit| C1
   C5 -.->|on credit| C3
   C6 -.->|on credit| C5
-  C9 -.->|on credit| C8
+  C7 -.->|on credit| C6
   X4 -.->|9| C2
   X4 -.->|7| C6
   X3 -.->|8| C1
-  X3 -.->|18| C2
+  X3 -.->|16| C2
   X3 -.->|10| C3
-  X3 -.->|16| C4
+  X3 -.->|15| C4
   X3 -.->|2| C5
   X3 -.->|10| C6
   X3 -.->|2| C8
@@ -79,11 +79,11 @@ graph TD
   X2 -.->|2| C8
   X5 -.->|2| C4
   X1 -.->|69| C1
-  X1 -.->|16| C2
+  X1 -.->|15| C2
   X1 -.->|17| C3
   X1 -.->|4| C4
   X1 -.->|12| C5
-  X1 -.->|29| C6
+  X1 -.->|28| C6
   X1 -.->|2| C8
 ```
 
@@ -109,7 +109,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56
 - [[Hausdorff Criterion for Open Quotients]] (§6.1)
 - [[Second Countability of Open Quotients]] (§6.3)
 - [[Implicit Function Theorem (vector-valued)]] (§7.2)
-- [[Regular Value Theorem (Euclidean)]] (§7.5)
+- [[Regular Value Theorem (Euclidean)]] (§7.6)
 - [[ℂPⁿ Is Hausdorff and Second Countable]] (§9.1)
 - [[Jacobi's Formula]] (§12.1)
 - [[Classical Groups Are Manifolds]] (§12.6)
@@ -122,9 +122,9 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56
 - [[Geometric Tangent Space Is the Kernel of the Jacobian]] (§25.3)
 - [[Transverse Preimage Theorem]] (§26.1)
 - [[Chain Rule for Differentials]] (§28.6)
-- [[Hadamard's Lemma]] (§29.4)
-- [[Basis Theorem for Tangent Spaces]] (§29.7)
-- [[Ambient and Abstract Tangent Spaces Agree]] (§29.8)
+- [[Hadamard's Lemma]] (§29.5)
+- [[Basis Theorem for Tangent Spaces]] (§29.8)
+- [[Ambient and Abstract Tangent Spaces Agree]] (§29.9)
 - [[Matrix of the Differential]] (§30.2)
 - [[Every Tangent Vector Is a Velocity]] (§31.4)
 - [[Cotangent Space from Germs]] (§34.4)
@@ -135,9 +135,9 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56
 - [[Immersion Normal Form]] (§43.1)
 - [[Images of Embeddings Are Submanifolds]] (§44.1)
 - [[Injective Proper Immersions Are Embeddings]] (§44.5)
-- [[SU(2) Is a Double Cover of SO(3)]] (§48.4)
-- [[Smooth Manifold Chart Lemma]] (§51.1)
-- [[Tangent Bundle Is a Smooth Manifold]] (§51.2)
+- [[SU(2) Is a Double Cover of SO(3)]] (§48.5)
+- [[Smooth Manifold Chart Lemma]] (§51.2)
+- [[Tangent Bundle Is a Smooth Manifold]] (§51.3)
 - [[The Lie Algebra Is the Tangent Space at the Identity]] (§60.9)
 - [[Sard's Theorem]] (§63.3)
 - [[Parametric Transversality Theorem]] (§64.1)
@@ -155,7 +155,7 @@ Smooth manifolds ✓; tangent and cotangent bundles ✓; vector fields ✓ (§56
 - [[Naturality of Integral Curves]] (§70.10)
 - [[Left-Invariant Vector Fields Are Complete]] (§70.11)
 - [[One-Parameter Subgroups Are Integral Curves Through the Identity]] (§71.1)
-- [[The Lie Group Exponential Is a Local Diffeomorphism]] (§71.10)
+- [[The Lie Group Exponential Is a Local Diffeomorphism]] (§71.12)
 - [[The Lie Derivative Is the Bracket]] (§72.6)
 - [[Commuting Vector Fields Have Commuting Flows]] (§72.9)
 
@@ -174,8 +174,8 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Compact Subspace of a Hausdorff Space is Closed]] (5)
 - [[§15 Connected Spaces#^def-15-2|Definition §15.2: Connected Space]] (5)
 - [[§11 Product Topology on Arbitrary Products#^thm-11-1|Theorem §11.1: Continuity into Product Spaces]] (5)
-- [[§18 Compact Spaces#^def-18-2|Definition §18.2: Compact]] (5)
 - [[§10 Continuous Functions#^def-10-1|Definition §10.1: Continuous Function]] (4)
+- [[Bijection from Compact to Hausdorff is a Homeomorphism]] (4)
 
 **[[Multivariable Analysis]]**
 - [[Multivariable Chain Rule]] (25)
@@ -188,10 +188,10 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[§3 Continuity and Limits of Functions#^thm-3-3|Theorem §3.3: Quotient of Continuous Functions]] (1)
 
 **[[Linear Algebra]]**
-- [[§37 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (7)
 - [[Fundamental theorem of linear maps]] (7)
-- [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (6)
-- [[Invertible ⟺ nonzero determinant]] (5)
+- [[§37 Determinants#^ladr-9-49|Theorem 9.49: Determinant is multiplicative]] (6)
+- [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)]] (5)
+- [[Invertible ⟺ nonzero determinant]] (4)
 - [[§9 Matrices#^ladr-3-57|Theorem 3.57: Column rank equals row rank]] (3)
 - [[§37 Determinants#^ladr-9-56|Theorem 9.56: Determinant of transpose, dual, or adjoint]] (3)
 - [[Linear map lemma]] (3)

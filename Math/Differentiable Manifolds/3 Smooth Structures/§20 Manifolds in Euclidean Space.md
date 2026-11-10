@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, math591]
 
 ## Two Descriptions of a Manifold in Euclidean Space
 
-> [!remark] Remark: The Closing Remark
+> [!remark] Remark: Two Ways to Look at a Manifold in Euclidean Space
 > There are two ways to look at a manifold sitting in a big ambient space: either it is defined by the simultaneous zeros of some functions, or it is parametrized. The [[§7 The Regular Value Theorem#^thm-7-2|implicit function theorem]] says that it does not matter — they are the same thing.
 >
 > So one may think of a manifold *internally*, through parametrizations, or *externally*, through the equations that cut it out of the ambient space. The circle shows both: it is cut out by the equation $x^2 + y^2 = 1$, and it is parametrized by the angle $\theta$. The rest of this subsection makes this precise; none of it was proved in lecture.
@@ -86,8 +86,15 @@ tags: [differentiable-manifolds, math591]
 
 The circle in its three descriptions is collected in [[§24 The Circle|§24]].
 
+> [!definition] Definition §20.3: Parametrization
+> Let $(U, \varphi)$ be a chart of a manifold $M$. The inverse $\varphi^{-1} : \varphi(U) \to U$ is the **parametrization** of $U$ determined by the chart. When $M \subseteq \mathbb{R}^N$, it is also regarded as a map $\varphi(U) \to \mathbb{R}^N$.
+>
+> *Lee: Ch. 1, Coordinate Charts (“local parametrization”)*
+
+^def-20-3
+
 > [!remark] Remark: A Parametrization Is an Inverse Chart
-> A parametrization is just another name for the inverse of a chart: if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[· 1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§12 The Classical Groups Are Topological Manifolds|§12, The Classical Groups Are Topological Manifolds]]. Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]] says the two carry the same information locally, which is why one may pass freely between solving the equations and drawing the parametrization.
+> A parametrization (Definition [[§20 Manifolds in Euclidean Space#^def-20-3|§20.3]]) is just another name for the inverse of a chart: if $(U, \varphi)$ is a chart then $\varphi^{-1} : \varphi(U) \to U$ is a parametrization, and conversely. The internal description is therefore the chart picture of [[· 1 Topological Manifolds|Chapter 1]] with the extra demand that the map be smooth with injective differential; the external one is the level-set picture of [[§12 The Classical Groups Are Topological Manifolds|§12, The Classical Groups Are Topological Manifolds]]. Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]] says the two carry the same information locally, which is why one may pass freely between solving the equations and drawing the parametrization.
 
 ^rem-20-2
 
@@ -110,14 +117,7 @@ $$
 \end{aligned}
 $$
 
-The inverse $\varphi_J^{-1}$ is a parametrization of that piece of $M$, in the following sense.
-
-> [!definition] Definition §20.3: Parametrization
-> Let $(U, \varphi)$ be a chart of a manifold $M$. The inverse $\varphi^{-1} : \varphi(U) \to U$ is the **parametrization** of $U$ determined by the chart. When $M \subseteq \mathbb{R}^N$, it is also regarded as a map $\varphi(U) \to \mathbb{R}^N$.
->
-> *Lee: Ch. 1, Coordinate Charts (“local parametrization”)*
-
-^def-20-3
+The inverse $\varphi_J^{-1}$ is the parametrization of that piece of $M$ determined by the chart $(U_J, \varphi_J)$ (Definition [[§20 Manifolds in Euclidean Space#^def-20-3|§20.3]]).
 
 > [!theorem] Proposition §20.2: Regular Level Sets Are Smooth Manifolds
 > Let $W \subseteq \mathbb{R}^{n+k}$ be open, $F : W \to \mathbb{R}^k$ smooth, and $c \in \mathbb{R}^k$ a regular value. Then the charts $\{(U_J, \varphi_J)\}$ above form a $C^\infty$ atlas on $M = F^{-1}(c)$, and $M$ is a smooth manifold of dimension $n$.

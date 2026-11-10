@@ -114,29 +114,29 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 *(Not from lecture; animation added, vault only.)* The bracket as the failure of flows to commute, an illustration that uses the flows of Ch. 10. Take [[§58 Lie Bracket and Lie Algebra#^ex-58-1|Example §58.1]] with $a = 1$, $b = \sin x$: $\mathbf{X} = \partial_x$, $\mathbf{Y} = \sin x\,\partial_y$ (gray), so $[\mathbf{X}, \mathbf{Y}] = \cos x\,\partial_y$. From $p = (0.4, 0)$: flow $t$ along $\mathbf{X}$, $t$ along $\mathbf{Y}$, back $t$ along $\mathbf{X}$, back $t$ along $\mathbf{Y}$. The loop misses $p$ by $t(\sin(0.4 + t) - \sin 0.4)$ (red), and gap$/t^2$ tends to $\cos 0.4$, the bracket at $p$, as $t$ shrinks from $1.2$ to $0.15$ (a standard fact about brackets, not in the notes).
 
 > [!theorem] Proposition §58.2: The Bracket in Coordinates
-> In a chart with $\mathbf{X} = \sum_i X^i\, \partial_i$ and $\mathbf{Y} = \sum_i Y^i\, \partial_i$, where $\partial_i = \partial/\partial x^i$,
+> In a chart with $\mathbf{X} = \sum_i \mathbf{X}^i\, \partial_i$ and $\mathbf{Y} = \sum_i \mathbf{Y}^i\, \partial_i$, where $\partial_i = \partial/\partial x^i$,
 >
 > $$
-> [\mathbf{X}, \mathbf{Y}] = \sum_j \big( \mathbf{X}(Y^j) - \mathbf{Y}(X^j) \big)\, \partial_j = \sum_j \sum_i \Big( X^i\, \frac{\partial Y^j}{\partial x^i} - Y^i\, \frac{\partial X^j}{\partial x^i} \Big)\, \partial_j .
+> [\mathbf{X}, \mathbf{Y}] = \sum_j \big( \mathbf{X}(\mathbf{Y}^j) - \mathbf{Y}(\mathbf{X}^j) \big)\, \partial_j = \sum_j \sum_i \Big( \mathbf{X}^i\, \frac{\partial \mathbf{Y}^j}{\partial x^i} - \mathbf{Y}^i\, \frac{\partial \mathbf{X}^j}{\partial x^i} \Big)\, \partial_j .
 > $$
-> *(Computed; not from lecture.)* In matrix form, with the columns of components and the Jacobian matrices $\big[\partial Y^j/\partial x^i\big]$ and $\big[\partial X^j/\partial x^i\big]$ of the coefficient functions (row $j$, column $i$), the components $[\mathbf{X}, \mathbf{Y}]^j$ of the bracket are
+> *(Computed; not from lecture.)* In matrix form, with the columns of components and the Jacobian matrices $\big[\partial \mathbf{Y}^j/\partial x^i\big]$ and $\big[\partial \mathbf{X}^j/\partial x^i\big]$ of the coefficient functions (row $j$, column $i$), the components $[\mathbf{X}, \mathbf{Y}]^j$ of the bracket are
 >
 > $$
 > \begin{pmatrix} [\mathbf{X}, \mathbf{Y}]^1 \\ \vdots \\ [\mathbf{X}, \mathbf{Y}]^m \end{pmatrix}
 > =
 > \begin{pmatrix}
-> \dfrac{\partial Y^1}{\partial x^1} & \cdots & \dfrac{\partial Y^1}{\partial x^m} \\
+> \dfrac{\partial \mathbf{Y}^1}{\partial x^1} & \cdots & \dfrac{\partial \mathbf{Y}^1}{\partial x^m} \\
 > \vdots & \ddots & \vdots \\
-> \dfrac{\partial Y^m}{\partial x^1} & \cdots & \dfrac{\partial Y^m}{\partial x^m}
+> \dfrac{\partial \mathbf{Y}^m}{\partial x^1} & \cdots & \dfrac{\partial \mathbf{Y}^m}{\partial x^m}
 > \end{pmatrix}
-> \begin{pmatrix} X^1 \\ \vdots \\ X^m \end{pmatrix}
+> \begin{pmatrix} \mathbf{X}^1 \\ \vdots \\ \mathbf{X}^m \end{pmatrix}
 > -
 > \begin{pmatrix}
-> \dfrac{\partial X^1}{\partial x^1} & \cdots & \dfrac{\partial X^1}{\partial x^m} \\
+> \dfrac{\partial \mathbf{X}^1}{\partial x^1} & \cdots & \dfrac{\partial \mathbf{X}^1}{\partial x^m} \\
 > \vdots & \ddots & \vdots \\
-> \dfrac{\partial X^m}{\partial x^1} & \cdots & \dfrac{\partial X^m}{\partial x^m}
+> \dfrac{\partial \mathbf{X}^m}{\partial x^1} & \cdots & \dfrac{\partial \mathbf{X}^m}{\partial x^m}
 > \end{pmatrix}
-> \begin{pmatrix} Y^1 \\ \vdots \\ Y^m \end{pmatrix} .
+> \begin{pmatrix} \mathbf{Y}^1 \\ \vdots \\ \mathbf{Y}^m \end{pmatrix} .
 > $$
 >
 > *Lee: Proposition 8.26*
@@ -144,32 +144,32 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 ^prop-58-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in — Example [[§58 Lie Bracket and Lie Algebra#^ex-58-1|§58.1]] is the case $\mathbf{X} = a\,\partial_x$, $\mathbf{Y} = b\,\partial_y$.)* Let $U$ be the chart domain. The $X^i, Y^i \in C^\infty(U)$ are the coefficient functions of Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], $X^i(q) = \mathbf{X}_q[x^i]$ and $Y^i(q) = \mathbf{Y}_q[x^i]$; and for $h \in C^\infty(U)$, $\mathbf{X}(h)$ denotes the function $q \mapsto \mathbf{X}_q[h]$ on $U$. The $j$-th coefficient of a vector field is its value on the coordinate function $x^j$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]); applied to the vector field $[\mathbf{X}, \mathbf{Y}]$ (Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]), this gives $[\mathbf{X}, \mathbf{Y}]_q = \sum_j [\mathbf{X}, \mathbf{Y}]^j(q)\, \partial_j|_q$ at each $q \in U$, with $[\mathbf{X}, \mathbf{Y}]^j(q) = [\mathbf{X}, \mathbf{Y}]_q[x^j]$. So what has to be shown is
+> *(Not from lecture; filled in — Example [[§58 Lie Bracket and Lie Algebra#^ex-58-1|§58.1]] is the case $\mathbf{X} = a\,\partial_x$, $\mathbf{Y} = b\,\partial_y$.)* Let $U$ be the chart domain. The $\mathbf{X}^i, \mathbf{Y}^i \in C^\infty(U)$ are the coefficient functions of Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], $\mathbf{X}^i(q) = \mathbf{X}_q[x^i]$ and $\mathbf{Y}^i(q) = \mathbf{Y}_q[x^i]$; and for $h \in C^\infty(U)$, $\mathbf{X}(h)$ denotes the function $q \mapsto \mathbf{X}_q[h]$ on $U$. The $j$-th coefficient of a vector field is its value on the coordinate function $x^j$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]); applied to the vector field $[\mathbf{X}, \mathbf{Y}]$ (Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]), this gives $[\mathbf{X}, \mathbf{Y}]_q = \sum_j [\mathbf{X}, \mathbf{Y}]^j(q)\, \partial_j|_q$ at each $q \in U$, with $[\mathbf{X}, \mathbf{Y}]^j(q) = [\mathbf{X}, \mathbf{Y}]_q[x^j]$. So what has to be shown is
 >
 > $$
-> [\mathbf{X}, \mathbf{Y}]_p[x^j] = \mathbf{X}_p[Y^j] - \mathbf{Y}_p[X^j] \qquad \text{for every } p \in U \text{ and every } j,
+> [\mathbf{X}, \mathbf{Y}]_p[x^j] = \mathbf{X}_p[\mathbf{Y}^j] - \mathbf{Y}_p[\mathbf{X}^j] \qquad \text{for every } p \in U \text{ and every } j,
 > $$
 >
-> followed by the expansion of the right side. Informally this is $[\mathbf{X}, \mathbf{Y}](x^j) = \mathbf{X}(\mathbf{Y}x^j) - \mathbf{Y}(\mathbf{X}x^j) = \mathbf{X}(Y^j) - \mathbf{Y}(X^j)$; the one point to take care of is that the bracket acts on $C^\infty(M)$, while $x^j$ is defined only on $U$.
+> followed by the expansion of the right side. Informally this is $[\mathbf{X}, \mathbf{Y}](x^j) = \mathbf{X}(\mathbf{Y}x^j) - \mathbf{Y}(\mathbf{X}x^j) = \mathbf{X}(\mathbf{Y}^j) - \mathbf{Y}(\mathbf{X}^j)$; the one point to take care of is that the bracket acts on $C^\infty(M)$, while $x^j$ is defined only on $U$.
 >
-> *A global stand-in for $x^j$.* Fix $p \in U$. Let $\chi$ be a bump function at $p$ with $\operatorname{supp}\chi \subseteq U$ (Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \operatorname{supp}\chi \subseteq U$. By Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], $\tilde x^j = \chi x^j$, extended by $0$ outside $U$, lies in $C^\infty(M)$, and it equals $x^j$ on $V$. So at every $q \in V$ the germs of $\tilde x^j$ and $x^j$ coincide, and
->
-> $$
-> (\mathbf{Y}\tilde x^j)(q) = \mathbf{Y}_q[\tilde x^j] = \mathbf{Y}_q[x^j] = Y^j(q), \qquad (\mathbf{X}\tilde x^j)(q) = \mathbf{X}_q[\tilde x^j] = \mathbf{X}_q[x^j] = X^j(q) \qquad (q \in V).
-> $$
->
-> *The coefficient at $p$.* By the last display, $\mathbf{Y}\tilde x^j$ and $Y^j$ agree on the open neighbourhood $V$ of $p$, so they have the same germ at $p$, and $\mathbf{X}_p$, which acts on germs, gives them the same value; likewise for $\mathbf{X}\tilde x^j$, $X^j$ and $\mathbf{Y}_p$. Hence, using first $[\tilde x^j] = [x^j]$ at $p$ and then Definition [[§58 Lie Bracket and Lie Algebra#^def-58-1|§58.1]] evaluated at $p$,
+> *A global stand-in for $x^j$.* Fix $p \in U$. Let $\chi$ be a bump function at $p$ with $\operatorname{supp}\chi \subseteq U$ (Corollary [[§56 Vector Fields#^cor-56-7|§56.7]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \operatorname{supp}\chi \subseteq U$. By Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], $\tilde x^j = \chi x^j$, extended by $0$ outside $U$, lies in $C^\infty(M)$, and it equals $x^j$ on $V$. So at every $q \in V$ the germs of $\tilde x^j$ and $x^j$ coincide, and
 >
 > $$
-> [\mathbf{X}, \mathbf{Y}]_p[x^j] = [\mathbf{X}, \mathbf{Y}]_p[\tilde x^j] = \mathbf{X}_p[\mathbf{Y}\tilde x^j] - \mathbf{Y}_p[\mathbf{X}\tilde x^j] = \mathbf{X}_p[Y^j] - \mathbf{Y}_p[X^j] .
+> (\mathbf{Y}\tilde x^j)(q) = \mathbf{Y}_q[\tilde x^j] = \mathbf{Y}_q[x^j] = \mathbf{Y}^j(q), \qquad (\mathbf{X}\tilde x^j)(q) = \mathbf{X}_q[\tilde x^j] = \mathbf{X}_q[x^j] = \mathbf{X}^j(q) \qquad (q \in V).
 > $$
 >
-> As $p \in U$ was arbitrary, this is the first formula: $[\mathbf{X}, \mathbf{Y}]^j = \mathbf{X}(Y^j) - \mathbf{Y}(X^j)$ on $U$.
->
-> *The second form.* By the universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], $\mathbf{X}_p = \sum_i \mathbf{X}_p[x^i]\, \partial_i|_p = \sum_i X^i(p)\, \partial_i|_p$. Applied to the germ of $Y^j$, with Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]], this expands $\mathbf{X}(Y^j) = \sum_i X^i\, \partial Y^j/\partial x^i$; with the letters $\mathbf{X}$ and $\mathbf{Y}$ exchanged, $\mathbf{Y}(X^j) = \sum_i Y^i\, \partial X^j/\partial x^i$. Substituting,
+> *The coefficient at $p$.* By the last display, $\mathbf{Y}\tilde x^j$ and $\mathbf{Y}^j$ agree on the open neighbourhood $V$ of $p$, so they have the same germ at $p$, and $\mathbf{X}_p$, which acts on germs, gives them the same value; likewise for $\mathbf{X}\tilde x^j$, $\mathbf{X}^j$ and $\mathbf{Y}_p$. Hence, using first $[\tilde x^j] = [x^j]$ at $p$ and then Definition [[§58 Lie Bracket and Lie Algebra#^def-58-1|§58.1]] evaluated at $p$,
 >
 > $$
-> [\mathbf{X}, \mathbf{Y}] = \sum_j \big( \mathbf{X}(Y^j) - \mathbf{Y}(X^j) \big)\, \partial_j = \sum_j \sum_i \Big( X^i\, \frac{\partial Y^j}{\partial x^i} - Y^i\, \frac{\partial X^j}{\partial x^i} \Big)\, \partial_j \qquad \text{on } U.
+> [\mathbf{X}, \mathbf{Y}]_p[x^j] = [\mathbf{X}, \mathbf{Y}]_p[\tilde x^j] = \mathbf{X}_p[\mathbf{Y}\tilde x^j] - \mathbf{Y}_p[\mathbf{X}\tilde x^j] = \mathbf{X}_p[\mathbf{Y}^j] - \mathbf{Y}_p[\mathbf{X}^j] .
+> $$
+>
+> As $p \in U$ was arbitrary, this is the first formula: $[\mathbf{X}, \mathbf{Y}]^j = \mathbf{X}(\mathbf{Y}^j) - \mathbf{Y}(\mathbf{X}^j)$ on $U$.
+>
+> *The second form.* By the universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], $\mathbf{X}_p = \sum_i \mathbf{X}_p[x^i]\, \partial_i|_p = \sum_i \mathbf{X}^i(p)\, \partial_i|_p$. Applied to the germ of $\mathbf{Y}^j$, with Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]], this expands $\mathbf{X}(\mathbf{Y}^j) = \sum_i \mathbf{X}^i\, \partial \mathbf{Y}^j/\partial x^i$; with the letters $\mathbf{X}$ and $\mathbf{Y}$ exchanged, $\mathbf{Y}(\mathbf{X}^j) = \sum_i \mathbf{Y}^i\, \partial \mathbf{X}^j/\partial x^i$. Substituting,
+>
+> $$
+> [\mathbf{X}, \mathbf{Y}] = \sum_j \big( \mathbf{X}(\mathbf{Y}^j) - \mathbf{Y}(\mathbf{X}^j) \big)\, \partial_j = \sum_j \sum_i \Big( \mathbf{X}^i\, \frac{\partial \mathbf{Y}^j}{\partial x^i} - \mathbf{Y}^i\, \frac{\partial \mathbf{X}^j}{\partial x^i} \Big)\, \partial_j \qquad \text{on } U.
 > $$
 
 ^pf-58-2
@@ -192,13 +192,13 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 ^prop-58-3
 
 > [!proof]+ Proof
-> *(Not from lecture; suggested by Assignment 5, Problem 3.)* Choose a chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$. On $U$, $\mathbf{W} = \sum_j W^j\, \partial/\partial x^j$ with smooth $W^j$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]), and $\mathbf{W}f = \sum_j W^j\, \partial f/\partial x^j$ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]). The tangent vector $v$ is a derivation at $p$, acting on germs (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]), so by its linearity and Leibniz rule
+> *(Not from lecture; suggested by Assignment 5, Problem 3.)* Choose a chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$. On $U$, $\mathbf{W} = \sum_j \mathbf{W}^j\, \partial/\partial x^j$ with smooth $\mathbf{W}^j$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]), and $\mathbf{W}f = \sum_j \mathbf{W}^j\, \partial f/\partial x^j$ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]). The tangent vector $v$ is a derivation at $p$, acting on germs (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]), so by its linearity and Leibniz rule
 >
 > $$
-> v\big[\mathbf{W} f\big] = \sum_{j=1}^m \Big( v\big[W^j\big]\, \frac{\partial f}{\partial x^j}(p) + W^j(p)\, v\Big[\frac{\partial f}{\partial x^j}\Big] \Big) .
+> v\big[\mathbf{W} f\big] = \sum_{j=1}^m \Big( v\big[\mathbf{W}^j\big]\, \frac{\partial f}{\partial x^j}(p) + \mathbf{W}^j(p)\, v\Big[\frac{\partial f}{\partial x^j}\Big] \Big) .
 > $$
 >
-> At a critical point $\partial f/\partial x^j(p) = df_p(\partial/\partial x^j|_p) = 0$ (Proposition [[§36 Submersions#^prop-36-2|§36.2]]), so the first terms vanish. In the second, $W^j(p) = w^j$, the components of $w = \mathbf{W}_p$. By Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] and Proposition [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]](1), in its form $(\mathrm{Hess}_p f)^\sharp(\partial/\partial x^j|_p) = d(\partial f/\partial x^j)_p$, which does not use the symmetry of the Hessian,
+> At a critical point $\partial f/\partial x^j(p) = df_p(\partial/\partial x^j|_p) = 0$ (Proposition [[§36 Submersions#^prop-36-2|§36.2]]), so the first terms vanish. In the second, $\mathbf{W}^j(p) = w^j$, the components of $w = \mathbf{W}_p$. By Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] and Proposition [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]](1), in its form $(\mathrm{Hess}_p f)^\sharp(\partial/\partial x^j|_p) = d(\partial f/\partial x^j)_p$, which does not use the symmetry of the Hessian,
 >
 > $$
 > v\Big[\frac{\partial f}{\partial x^j}\Big] = d\Big(\frac{\partial f}{\partial x^j}\Big)_p(v) = (\mathrm{Hess}_p f)^\sharp\Big(\frac{\partial}{\partial x^j}\Big|_p\Big)(v) = \mathrm{Hess}_p f\Big(v, \frac{\partial}{\partial x^j}\Big|_p\Big) ;
@@ -234,6 +234,18 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > - In quantum mechanics the commutator of operators has the same algebra, Jacobi identity included: [[§B2.4 Commutators and the Generalized Uncertainty Principle#^thm-b2-4-1|QM Theorem §B2.4.1]].
 
 The three terms come from one by permuting $X, Y, Z$ cyclically: $Y$ moves to the left position, $Z$ one place to the left, and $X$ to the last position.
+
+> [!definition] Definition §58.3: Lie Algebra Morphism
+> Let $\mathfrak{h}$ and $\mathfrak{g}$ be Lie algebras (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]]). A **Lie algebra morphism** is a linear map $\phi : \mathfrak{h} \to \mathfrak{g}$ that preserves brackets: $\phi([A, B]) = [\phi(A), \phi(B)]$ for all $A, B \in \mathfrak{h}$.
+>
+> *Lee: Ch. 8, Induced Lie Algebra Homomorphisms*
+
+^def-58-3
+
+> [!definition] Definition §58.4: Lie Algebra Isomorphism
+> *(Not from lecture; filled in.)* A **Lie algebra isomorphism**, or **isomorphism of Lie algebras**, is a Lie algebra morphism $\phi : \mathfrak{h} \to \mathfrak{g}$ (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-3|§58.3]]) that is bijective.
+
+^def-58-4
 
 > [!theorem] Proposition §58.4: Commutators of an Associative Product
 > Let $A$ be a real vector space with a bilinear *associative* product $(X, Y) \mapsto X \ast Y$. Then the commutator $[X, Y] = X \ast Y - Y \ast X$ is bilinear, skew-symmetric, and satisfies the [[§58 Lie Bracket and Lie Algebra#^def-58-2|Jacobi identity]]; so $(A, [\cdot,\cdot])$ is a [[§58 Lie Bracket and Lie Algebra#^def-58-2|Lie algebra]].
@@ -288,7 +300,7 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: $Y$ moves to th
 ^cor-58-5
 
 > [!proof]+ Proof
-> *(Lecture 16: the bracket of fields comes from a product, composition, which is associative. Filled in.)* By Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]], what has to be shown is that $\mathfrak{X}(M)$ is a real vector space, that the bracket maps $\mathfrak{X}(M) \times \mathfrak{X}(M)$ into $\mathfrak{X}(M)$, and that it is bilinear, skew-symmetric and satisfies the Jacobi identity. In this proof write $D_\mathbf{X}$ for $\mathbf{X}$ regarded as an operator (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]), to keep the field and its operator apart.
+> *(Lecture 16: the bracket of fields comes from a product, composition, which is associative. Filled in.)* By Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]], what has to be shown is that $\mathfrak{X}(M)$ is a real vector space, that the bracket maps $\mathfrak{X}(M) \times \mathfrak{X}(M)$ into $\mathfrak{X}(M)$, and that it is bilinear, skew-symmetric and satisfies the Jacobi identity. In this proof write $D_\mathbf{X}$ for $\mathbf{X}$ regarded as an operator (Definition [[§56 Vector Fields#^def-56-8|§56.8]]), to keep the field and its operator apart.
 >
 > *The space and the bracket.* $\mathfrak{X}(M)$ is a real vector space by Proposition [[§56 Vector Fields#^prop-56-2|§56.2]]. By Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], $\mathfrak{X}(M)$, identified with the derivations, is closed under the commutator: for $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ the commutator of $D_\mathbf{X}$ and $D_\mathbf{Y}$ is the operator of the vector field $[\mathbf{X}, \mathbf{Y}]$,
 >
@@ -296,7 +308,7 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: $Y$ moves to th
 > D_{[\mathbf{X}, \mathbf{Y}]} = D_\mathbf{X} \circ D_\mathbf{Y} - D_\mathbf{Y} \circ D_\mathbf{X} .
 > $$
 >
-> *The operators form an associative algebra.* Let $A$ be the set of $\mathbb{R}$-linear operators on $C^\infty(M)$ (Definition [[§56 Vector Fields#^def-56-4|§56.4]]), a real vector space under $(aP + bQ)f = a\,Pf + b\,Qf$, with the product $P \ast Q = P \circ Q$, again a linear operator. Composition of maps is associative. It is bilinear: $\big((aP + bP') \circ Q\big)f = a\,P(Qf) + b\,P'(Qf)$ by the definition of the operations, and $\big(P \circ (aQ + bQ')\big)f = P(a\,Qf + b\,Q'f) = a\,P(Qf) + b\,P(Q'f)$ because $P$ is linear. So the linear operators on $C^\infty(M)$ form an associative algebra under composition, and by Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-4|§58.4]] their commutator $[P, Q] = P \circ Q - Q \circ P$ is bilinear, skew-symmetric and satisfies the Jacobi identity. The display above reads $D_{[\mathbf{X}, \mathbf{Y}]} = [D_\mathbf{X}, D_\mathbf{Y}]$.
+> *The operators form an associative algebra.* Let $A$ be the set of $\mathbb{R}$-linear operators on $C^\infty(M)$ (Definition [[§56 Vector Fields#^def-56-5|§56.5]]), a real vector space under $(aP + bQ)f = a\,Pf + b\,Qf$, with the product $P \ast Q = P \circ Q$, again a linear operator (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]). Composition of maps is associative. It is bilinear: $\big((aP + bP') \circ Q\big)f = a\,P(Qf) + b\,P'(Qf)$ by the definition of the operations, and $\big(P \circ (aQ + bQ')\big)f = P(a\,Qf + b\,Q'f) = a\,P(Qf) + b\,P(Q'f)$ because $P$ is linear. So the linear operators on $C^\infty(M)$ form an associative algebra under composition, and by Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-4|§58.4]] their commutator $[P, Q] = P \circ Q - Q \circ P$ is bilinear, skew-symmetric and satisfies the Jacobi identity. The display above reads $D_{[\mathbf{X}, \mathbf{Y}]} = [D_\mathbf{X}, D_\mathbf{Y}]$.
 >
 > *From operators to fields.* The map $\mathbf{X} \mapsto D_\mathbf{X}$ is linear: for $f \in C^\infty(M)$ and $p \in M$, by Definition [[§56 Vector Fields#^def-56-2|§56.2]] and the pointwise operations of $T_pM$ (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]),
 >
@@ -317,7 +329,7 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: $Y$ moves to th
 
 ^pf-58-5
 
-*Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^def-58-2|Def. §58.2]], [[§58 Lie Bracket and Lie Algebra#^prop-58-4|§58.4]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§56 Vector Fields#^prop-56-10|§56.10]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§56 Vector Fields#^def-56-4|Def. §56.4]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
+*Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^def-58-2|Def. §58.2]], [[§58 Lie Bracket and Lie Algebra#^prop-58-4|§58.4]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§56 Vector Fields#^prop-56-10|§56.10]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§56 Vector Fields#^def-56-4|Def. §56.4]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§56 Vector Fields#^def-56-8|Def. §56.8]], [[§56 Vector Fields#^def-56-5|Def. §56.5]], [[§56 Vector Fields#^lem-56-3|§56.3]]
 
 Checking the Jacobi identity for vector fields directly by hand is a big computation. The Lie algebra $\mathfrak{X}(M)$ is infinite-dimensional (for $\dim M \ge 1$). The finite-dimensional Lie algebras of [[§60 Lie Groups and Left-Invariant Vector Fields|§60]] sit inside it.
 
@@ -363,11 +375,12 @@ The bracket of two vector fields is one instance of a general fact about the rin
 So two differential operators commute “up to lower order”. For $k = l = 1$, applied to $D_\mathbf{X}$ and $D_\mathbf{Y}$, the second-order parts of $\mathbf{X} \circ \mathbf{Y}$ and $\mathbf{Y} \circ \mathbf{X}$ cancel, as in [[§58 Lie Bracket and Lie Algebra#^ex-58-1|Example §58.1]]; what is left lies in $\mathrm{Diff}_1(M)$ and kills constants, and is the vector field $[\mathbf{X}, \mathbf{Y}]$ ([[§57 Differential Operators#^prop-57-4|Proposition §57.4]] (2)).
 
 > [!example] Example §58.3: The Cross Product
-> $\mathbb{R}^3$ with the [[§96 The Cross Product#^def-96-1|cross product]] is a [[§58 Lie Bracket and Lie Algebra#^def-58-2|Lie algebra]], and the [[§25 The Geometric Tangent Space#^def-25-3|hat map]] of [[§25 The Geometric Tangent Space#^def-25-3|Definition §25.3]] is an isomorphism of Lie algebras onto $\operatorname{Skew}(3, \mathbb{R}) = \mathfrak{so}(3)$ with the [[§58 Lie Bracket and Lie Algebra#^ex-58-2|matrix commutator]]:
+> $\mathbb{R}^3$ with the cross product is a Lie algebra, and the hat map of Definition [[§25 The Geometric Tangent Space#^def-25-3|§25.3]] is an isomorphism of Lie algebras (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-4|§58.4]]) onto $\operatorname{Skew}(3, \mathbb{R}) = \mathfrak{so}(3)$ with the matrix commutator:
 >
 > $$
 > [\hat a, \hat b] = \hat a \hat b - \hat b \hat a = \widehat{a \times b} .
 > $$
+>
 > Here, written out (Definition [[§25 The Geometric Tangent Space#^def-25-3|§25.3]]), for $a = (a_1, a_2, a_3)$,
 >
 > $$
@@ -408,11 +421,11 @@ So two differential operators commute “up to lower order”. For $k = l = 1$, 
 > \widehat{a \times (b \times c)} + \widehat{b \times (c \times a)} + \widehat{c \times (a \times b)} = [\hat a, [\hat b, \hat c]{]} + [\hat b, [\hat c, \hat a]{]} + [\hat c, [\hat a, \hat b]{]} = 0 .
 > $$
 >
-> Since the hat map is linear and injective, each equality between hats is the corresponding equality in $\mathbb{R}^3$. So $(\mathbb{R}^3, \times)$ is a Lie algebra, and the hat map, a linear bijection with $\widehat{a \times b} = [\hat a, \hat b]$, is an isomorphism of Lie algebras onto $\operatorname{Skew}(3,\mathbb{R})$.
+> Since the hat map is linear and injective, each equality between hats is the corresponding equality in $\mathbb{R}^3$. So $(\mathbb{R}^3, \times)$ is a Lie algebra, and the hat map, a linear bijection with $\widehat{a \times b} = [\hat a, \hat b]$, is an isomorphism of Lie algebras onto $\operatorname{Skew}(3,\mathbb{R})$ (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-4|§58.4]]).
 
 ^pf-ex-58-3
 
-*Uses:* [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§96 The Cross Product#^thm-96-8|Calc §96.8]], [[§58 Lie Bracket and Lie Algebra#^ex-58-2|Ex. §58.2]], [[§58 Lie Bracket and Lie Algebra#^def-58-2|Def. §58.2]]
+*Uses:* [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§96 The Cross Product#^thm-96-8|Calc §96.8]], [[§58 Lie Bracket and Lie Algebra#^ex-58-2|Ex. §58.2]], [[§58 Lie Bracket and Lie Algebra#^def-58-2|Def. §58.2]], [[§58 Lie Bracket and Lie Algebra#^def-58-4|Def. §58.4]]
 
 > [!remark]- Connections
 > - The cross product and its algebraic properties, proved by components: [[§96 The Cross Product#^def-96-1|Calc Def. §96.1]], [[§96 The Cross Product#^thm-96-8|Calc §96.8]].

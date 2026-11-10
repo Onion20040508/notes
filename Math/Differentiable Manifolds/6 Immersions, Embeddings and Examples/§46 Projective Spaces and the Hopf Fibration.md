@@ -104,7 +104,7 @@ Stated in lecture as an example (the projection from the sphere to complex proje
 >
 > *The cover.* The sets $U_j$ cover $\mathbb{CP}^n$: every $z \in S^{2n+1}$ is nonzero, so some $z_j \neq 0$ and $[z] \in U_j$. Each $U_j$ is open (Proposition [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]]). Whether $z_j \neq 0$ does not depend on the representative, since $(\xi z)_j = \xi z_j$ with $\xi \neq 0$; hence $\pi^{-1}(U_j) = S^{2n+1} \cap \{z_j \ne 0\}$, the intersection of $S^{2n+1}$ with an open subset of $\mathbb{C}^{n+1}$, which is open.
 >
-> *$\phi_j$ is smooth.* A map into the product manifold $U_j \times S^1$ is smooth when its two components are, because in a product chart (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]]) its coordinate representation is the pair of the coordinate representations of the components. The first component of $\phi_j$ is $z \mapsto [z]$. In the chart $\varphi_j$ of Definition [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|§18.2]] it reads
+> *$\phi_j$ is smooth.* A map into the product manifold $U_j \times S^1$ is smooth when its two components are, because in a product chart (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-7|§19.7]]) its coordinate representation is the pair of the coordinate representations of the components. The first component of $\phi_j$ is $z \mapsto [z]$. In the chart $\varphi_j$ of Definition [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|§18.2]] it reads
 >
 > $$
 > \varphi_j \circ \pi(z) = \varphi_j([z]) = (z_k/z_j)_{k \ne j},
@@ -134,7 +134,7 @@ Stated in lecture as an example (the projection from the sphere to complex proje
 
 ^pf-ex-46-3
 
-*Uses:* [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]
+*Uses:* [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§18 Projective Spaces as Smooth Manifolds#^def-18-2|Def. §18.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§20 Manifolds in Euclidean Space#^lem-20-3|§20.3]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§18 Projective Spaces as Smooth Manifolds#^prop-18-1|§18.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], [[§19 Smooth Functions and Smooth Maps#^def-19-7|Def. §19.7]]
 
 ![[m591-16-7.svg]]
 *The fibres of the Hopf fibration for $n = 1$, $S^3 \to \mathbb{CP}^1$, made visible in $\mathbb{R}^3$ by stereographic projection of $S^3$ from the point $(0, 1)$. Blue: the fibre through $(1, 0)$, which projects to the unit circle, and the fibre through $(0, 1)$ itself, which projects to the vertical axis closed up at infinity. Red: two more fibres, through points with $|z_1| = |z_2|$. Each fibre is a circle $\{\lambda z : |\lambda| = 1\}$, no two meet, and any two are linked: over each $U_j$ the circles sit side by side as in $U_j \times S^1$, but globally they are woven together.*
@@ -150,18 +150,21 @@ With [[§40 Fibrations#^prop-40-1|Proposition §40.1]](2), this also proves [[§
 
 > [!example] Example §46.4: The Hopf Fibration Has No Section
 > The Hopf fibration $\pi : S^{2n+1} \to \mathbb{CP}^n$ of Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-3|§46.3]], the fibration of the homework, has no continuous section, for $n \ge 1$: there is no continuous $s : \mathbb{CP}^n \to S^{2n+1}$ with $\pi \circ s = \mathrm{id}_{\mathbb{CP}^n}$. (For $n = 0$ the base is a single point.)
->
-> *Justification.* This is stated, not proved, in the course; a proof uses the fundamental group. *(Sketch filled in; it uses homotopy groups, which these notes do not develop.)* Write $\pi_k(X)$ for the $k$-th homotopy group (the subscript distinguishes it from the projection $\pi$); $\pi_k$ turns continuous maps into homomorphisms and respects composition and identities. Suppose $s$ is a continuous section. Applying $\pi_2$ to $\pi \circ s = \mathrm{id}_{\mathbb{CP}^n}$ shows that the identity of $\pi_2(\mathbb{CP}^n)$ factors through $\pi_2(S^{2n+1})$. For $n \ge 1$, $2n + 1 \ge 3$, and $\pi_j(S^k) = 0$ for $j < k$, so $\pi_1(S^{2n+1}) = \pi_2(S^{2n+1}) = 0$; hence the identity of $\pi_2(\mathbb{CP}^n)$ is zero, that is, $\pi_2(\mathbb{CP}^n) = 0$. But the long exact homotopy sequence of the fibration $S^1 \to S^{2n+1} \to \mathbb{CP}^n$ contains
+
+^ex-46-4
+
+> [!proof]+ Proof (sketch)
+> This is stated, not proved, in the course; a proof uses the fundamental group. *(Sketch filled in; it uses homotopy groups, which these notes do not develop.)* Write $\pi_k(X)$ for the $k$-th homotopy group (the subscript distinguishes it from the projection $\pi$); $\pi_k$ turns continuous maps into homomorphisms and respects composition and identities. Suppose $s$ is a continuous section. Applying $\pi_2$ to $\pi \circ s = \mathrm{id}_{\mathbb{CP}^n}$ shows that the identity of $\pi_2(\mathbb{CP}^n)$ factors through $\pi_2(S^{2n+1})$. For $n \ge 1$, $2n + 1 \ge 3$, and $\pi_j(S^k) = 0$ for $j < k$, so $\pi_1(S^{2n+1}) = \pi_2(S^{2n+1}) = 0$; hence the identity of $\pi_2(\mathbb{CP}^n)$ is zero, that is, $\pi_2(\mathbb{CP}^n) = 0$. But the long exact homotopy sequence of the fibration $S^1 \to S^{2n+1} \to \mathbb{CP}^n$ contains
 >
 > $$
 > 0 = \pi_2(S^{2n+1}) \longrightarrow \pi_2(\mathbb{CP}^n) \longrightarrow \pi_1(S^1) \longrightarrow \pi_1(S^{2n+1}) = 0 ,
 > $$
 >
 > so $\pi_2(\mathbb{CP}^n) \cong \pi_1(S^1) \cong \mathbb{Z} \neq 0$ — this is where the fundamental group of the fibre enters. The contradiction shows that no continuous section exists.
->
-> A vector bundle, by contrast, always has sections — the zero section at least — and in fact an infinite-dimensional space of them.
 
-^ex-46-4
+^pf-ex-46-4
+
+A vector bundle, by contrast, always has sections — the zero section at least — and in fact an infinite-dimensional space of them.
 
 For the Hopf fibration the converse of [[§40 Fibrations#^prop-40-4|Proposition §40.4]] holds: the circle acting on the fibres turns any local section into a local trivialization.
 

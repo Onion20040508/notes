@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 35.1", "Radon-Nikodym"]
+aliases: ["MATH 556 35.1", "Radon-Nikodym", "Lax §7.1"]
 tags: [functional-analysis, hub]
 ---
 ![[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1]]

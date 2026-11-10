@@ -25,7 +25,7 @@ The route of each proof in the notes is folded under **Hints**. Results that are
 3. **Homework technique**: filled in by the notes, but its proof uses a strategy the homework drills often (S1, S2, S4, S5, S6, S7, S8, S9, S10, S13, S14, S15).
 4. **Notes only**: optional before the midterm.
 
-Entries: 63 homework, 209 class, 12 homework technique, 18 notes only (Lie-group entries excluded).
+Entries: 63 homework, 205 class, 13 homework technique, 21 notes only (Lie-group entries excluded).
 
 # T1. Topological manifolds, quotients, group actions
 
@@ -1259,7 +1259,9 @@ $F(g) = gg^{\mathsf T} : \mathrm{Mat}(n,\mathbb{R}) \to \mathrm{Sym}(n,\mathbb{R
 > - Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]] then Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]] (transported by $L$).
 > - The kernel is the geometric tangent space at $g$: Example [[§25 The Geometric Tangent Space#^ex-25-2|§25.2]].
 
-#### $\mathrm{SO}(n)$ is a smooth manifold; $\mathrm{O}(n)$ is compact · P2
+### Priority 4 · notes only (optional before the midterm)
+
+#### $\mathrm{SO}(n)$ is a smooth manifold; $\mathrm{O}(n)$ is compact · P4
 
 $\mathrm{SO}(n)$ is open and closed in $\mathrm{O}(n)$, hence a smooth manifold of dimension $\frac{n(n-1)}{2}$; $\mathrm{O}(n)$ is compact, see Corollary [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3|§23.3]]. *Source: notes (filled in).*
 
@@ -1593,25 +1595,6 @@ Product charts $(U_1 \times U_2, \varphi_1 \times \varphi_2)$ form a smooth atla
 > - Transition $= (\varphi_1' \circ \varphi_1^{-1}) \times (\varphi_2' \circ \varphi_2^{-1})$.
 > - $(r,s) \mapsto r$; $r \mapsto (r, \varphi_2(p_2))$.
 
-#### The three circle atlases define one smooth structure · P2
-
-The four-chart (projection) atlas, the angle atlas and the stereographic atlas on $S^1$ are pairwise compatible and generate the structure of $S^1 = F^{-1}(1)$, $F = x^2 + y^2$, see Proposition [[§24 The Circle#^prop-24-1|§24.1]]. *Source: notes.*
-
-^nd-prop-24-1
-
-- [ ] Q1 **[state]** State the proposition.
-- [ ] Q2 Why are the graph charts of Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]] for $S^1$ exactly the four projection charts?
-- [ ] Q3 For each angle or stereographic chart $\chi$, show (a) $\chi^{-1}$ is smooth into $\mathbb{R}^2$ and (b) $\chi$ extends to a smooth $\hat\chi$ on an open set of $\mathbb{R}^2$. Give $\hat\chi$ for $\sigma_N$.
-- [ ] Q4 Why do (a) and (b) give compatibility with every graph chart (transition $= \hat\chi \circ \varphi^{-1}$ or $\varphi \circ \chi^{-1} = \pi \circ \chi^{-1}$)?
-- [ ] Q5 How does uniqueness of the maximal atlas finish?
-- [ ] Q6 **[why]** Why does the angle chart need a branch of the argument on the plane minus a ray, and why cannot one angle chart cover $S^1$?
-
-> [!tip]- Hints: route of the proof in the notes
-> - Strategy: S1; compare everything with one reference atlas.
-> - $\sigma_N = x/(1-y)$ on $\{y < 1\}$; $\sigma_N^{-1}(u) = (2u, u^2 - 1)/(u^2 + 1)$.
-> - Transitions: $\pi_I \circ \chi^{-1}$ (linear after smooth) and $\hat\chi \circ \varphi^{-1}$.
-> - Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]: each atlas lies in $\overline{\mathcal{A}}$.
-
 ### Priority 3 · filled in, using a technique the homework drills
 
 #### Restricting and recomposing smooth charts; open subsets are smooth manifolds · P3
@@ -1646,6 +1629,25 @@ If $F : M \to N$ is smooth, then $\psi' \circ F \circ \varphi'^{-1}$ is smooth f
 > [!tip]- Hints: route of the proof in the notes
 > - Strategy: S1.
 > - $\psi' \circ F \circ \varphi'^{-1} = (\psi' \circ \psi^{-1}) \circ (\psi \circ F \circ \varphi^{-1}) \circ (\varphi \circ \varphi'^{-1})$ on $\varphi'(U \cap U')$.
+
+#### The three circle atlases define one smooth structure · P3
+
+The four-chart (projection) atlas, the angle atlas and the stereographic atlas on $S^1$ are pairwise compatible and generate the structure of $S^1 = F^{-1}(1)$, $F = x^2 + y^2$, see Proposition [[§24 The Circle#^prop-24-1|§24.1]]. *Source: notes.*
+
+^nd-prop-24-1
+
+- [ ] Q1 **[state]** State the proposition.
+- [ ] Q2 Why are the graph charts of Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]] for $S^1$ exactly the four projection charts?
+- [ ] Q3 For each angle or stereographic chart $\chi$, show (a) $\chi^{-1}$ is smooth into $\mathbb{R}^2$ and (b) $\chi$ extends to a smooth $\hat\chi$ on an open set of $\mathbb{R}^2$. Give $\hat\chi$ for $\sigma_N$.
+- [ ] Q4 Why do (a) and (b) give compatibility with every graph chart (transition $= \hat\chi \circ \varphi^{-1}$ or $\varphi \circ \chi^{-1} = \pi \circ \chi^{-1}$)?
+- [ ] Q5 How does uniqueness of the maximal atlas finish?
+- [ ] Q6 **[why]** Why does the angle chart need a branch of the argument on the plane minus a ray, and why cannot one angle chart cover $S^1$?
+
+> [!tip]- Hints: route of the proof in the notes
+> - Strategy: S1; compare everything with one reference atlas.
+> - $\sigma_N = x/(1-y)$ on $\{y < 1\}$; $\sigma_N^{-1}(u) = (2u, u^2 - 1)/(u^2 + 1)$.
+> - Transitions: $\pi_I \circ \chi^{-1}$ (linear after smooth) and $\hat\chi \circ \varphi^{-1}$.
+> - Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]: each atlas lies in $\overline{\mathcal{A}}$.
 
 ### Priority 4 · notes only (optional before the midterm)
 
@@ -1967,7 +1969,7 @@ For $M = \{(x, G(x)) : x \in A\}$, $A \subseteq \mathbb{R}^n$ open, $G$ smooth, 
 
 #### The geometric tangent space is the kernel of the Jacobian · P2
 
-For a regular level set $M = F^{-1}(c) \subseteq \mathbb{R}^{n+k}$ and $p \in M$, $T^{\mathrm{geo}}_pM = \ker F'(p)$, of dimension $n$, see Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] (and Theorem [[§25 The Geometric Tangent Space#^cor-25-7|§25.7]], Corollary [[§25 The Geometric Tangent Space#^cor-25-4|§25.4]]: also $= \operatorname{im} D\alpha_a$ for the graph parametrization). *Source: Lecture 7 (the inclusion), Lecture 8 (sketch: "we must have equality").*
+For a regular level set $M = F^{-1}(c) \subseteq \mathbb{R}^{n+k}$ and $p \in M$, $T^{\mathrm{geo}}_pM = \ker F'(p)$, of dimension $n$, see Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] (and Corollary [[§25 The Geometric Tangent Space#^cor-25-7|§25.7]], Corollary [[§25 The Geometric Tangent Space#^cor-25-4|§25.4]]: also $= \operatorname{im} D\alpha_a$ for the graph parametrization). *Source: Lecture 7 (the inclusion), Lecture 8 (sketch: "we must have equality").*
 
 ^nd-thm-25-3
 
@@ -2031,7 +2033,7 @@ $D \mapsto (f \mapsto D[f])$ is a linear isomorphism from derivations of germs a
 - [ ] Q1 **[state]** State the proposition: both notions of tangent vector.
 - [ ] Q2 Why is $v_D$ a derivation of $C^\infty(M)$, and why is $D \mapsto v_D$ linear?
 - [ ] Q3 Where do bump functions enter (injectivity: every germ has a global representative)?
-- [ ] Q4 **[why]** Which result of the course is assumed and not proved here (Proposition [[§56 Vector Fields#^cor-56-7|§56.7]])? Why does the course prefer germs?
+- [ ] Q4 **[why]** Which result of the course is assumed and not proved here (Corollary [[§56 Vector Fields#^cor-56-7|§56.7]])? Why does the course prefer germs?
 
 > [!tip]- Hints: route of the proof in the notes
 > - $f \mapsto [f]$ is an algebra map compatible with evaluation.
@@ -2436,7 +2438,7 @@ $\xi_i = \xi(\partial/\partial x^i|_p)$, so $\xi = \sum_i \xi_i\,dx^i|_p$, see D
 
 #### Pullback of covectors · P2
 
-$F^\ast_p : T^\ast_{F(p)}N \to T^\ast_pM$, $(F^\ast_p\alpha)(v) = \alpha(F_{\ast p}v)$, the dual map of $F_{\ast p}$, see Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]]. *Source: Lecture 15.*
+$F^\ast_p : T^\ast_{F(p)}N \to T^\ast_pM$, $(F^\ast_p\xi)(v) = \xi(F_{\ast p}v)$, the dual map of $F_{\ast p}$, see Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]]. *Source: Lecture 15.*
 
 ^nd-def-34-3
 
@@ -2718,21 +2720,6 @@ If $M$ is compact and nonempty, $N$ connected and $F : M \to N$ a submersion, th
 
 ### Priority 2 · stated or done in class
 
-#### Inverse function theorem (quoted) · P2
-
-If $\Phi : W \subseteq \mathbb{R}^n \to \mathbb{R}^n$ is smooth and $\Phi'(a)$ is invertible, then $\Phi$ maps an open $U_0 \ni a$ bijectively onto an open $V_0 \ni \Phi(a)$ with smooth inverse, see Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]. *Source: analysis; not proved in the course (proof "to be filled"): quote it.*
-
-^nd-thm-35-1
-
-- [ ] Q1 **[state]** State the theorem precisely: hypotheses, and what "local" means in the conclusion.
-- [ ] Q2 **[why]** Why is the conclusion only local? Give a smooth $\Phi : \mathbb{R}^2 \to \mathbb{R}^2$ with $\Phi'$ invertible everywhere that is not injective ($e^x(\cos y, \sin y)$).
-- [ ] Q3 **[why]** Why is invertibility of $\Phi'(a)$ needed? Consider $x \mapsto x^3$ at $0$: it is a smooth bijection; why is it not a diffeomorphism?
-- [ ] Q4 How is it used: in the regular value theorem (via the implicit function theorem, Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]), in Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], and in the submersion normal form (step 8)?
-
-> [!tip]- Hints: what to know
-> - Quote, do not prove (Lee, Theorem C.34).
-> - The implicit function theorem follows by applying it to $(x,y) \mapsto (x, \Phi(x,y))$.
-
 #### Local diffeomorphisms are detected by the differential · P2
 
 A smooth $F : M \to N$ is a local diffeomorphism iff $F_{\ast p}$ is bijective for every $p$, see Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]]. *Source: Lecture 10 (the forward direction from a student; for the converse "the inverse function theorem is really what's paying the bills").*
@@ -2750,22 +2737,6 @@ A smooth $F : M \to N$ is a local diffeomorphism iff $F_{\ast p}$ is bijective f
 > - Strategy: S1 (charts), then the inverse function theorem.
 > - (⇒) $G_\ast \circ F_\ast = \mathrm{id}$ and $F_\ast \circ G_\ast = \mathrm{id}$; $T_pU = T_pM$ (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]]).
 > - (⇐) Matrix of $F_{\ast p}$ is $\tilde F'(\varphi(p))$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]); local inverse $\varphi^{-1} \circ (\tilde F|_{\tilde A})^{-1} \circ \psi|_{V'}$.
-
-#### Diffeomorphisms are the bijective local diffeomorphisms · P2
-
-$F$ is a diffeomorphism iff it is a bijective local diffeomorphism; so a smooth bijection with every $F_{\ast p}$ bijective is a diffeomorphism, see Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]]. *Source: notes.*
-
-^nd-cor-35-3
-
-- [ ] Q1 **[state]** State the corollary.
-- [ ] Q2 (⇐): given $q \in N$, why does $F^{-1}$ agree near $q$ with a local inverse $G$? Which hypothesis is used?
-- [ ] Q3 Why do "continuous" and "smooth" for $F^{-1}$ follow from agreeing locally with smooth maps?
-- [ ] Q4 Deduce the last sentence from Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]].
-- [ ] Q5 **[why]** Why is "smooth bijection" not enough? (The cube map $\mathbb{R} \to \mathbb{R}$, $x \mapsto x^3$.)
-
-> [!tip]- Hints: route of the proof in the notes
-> - Strategy: S11 (local, then global).
-> - $F(G(y)) = y = F(F^{-1}(y))$ and injectivity give $G = F^{-1}$ on $V$.
 
 #### The circle covered by a line · P2
 
@@ -2835,6 +2806,37 @@ A submersion maps open sets to open sets, see Corollary [[§36 Submersions#^cor-
 > - Projections are open (Lemma [[§4 Quotient Spaces and Open Maps#^lem-4-3|§4.3]]); $\psi^{-1}$ maps open subsets of $\psi(V)$ to open subsets of $V$.
 
 ### Priority 4 · notes only (optional before the midterm)
+
+#### Inverse function theorem (quoted) · P4
+
+If $\Phi : W \subseteq \mathbb{R}^n \to \mathbb{R}^n$ is smooth and $\Phi'(a)$ is invertible, then $\Phi$ maps an open $U_0 \ni a$ bijectively onto an open $V_0 \ni \Phi(a)$ with smooth inverse, see Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]]. *Source: analysis; not proved in the course (proof "to be filled"): quote it.*
+
+^nd-thm-35-1
+
+- [ ] Q1 **[state]** State the theorem precisely: hypotheses, and what "local" means in the conclusion.
+- [ ] Q2 **[why]** Why is the conclusion only local? Give a smooth $\Phi : \mathbb{R}^2 \to \mathbb{R}^2$ with $\Phi'$ invertible everywhere that is not injective ($e^x(\cos y, \sin y)$).
+- [ ] Q3 **[why]** Why is invertibility of $\Phi'(a)$ needed? Consider $x \mapsto x^3$ at $0$: it is a smooth bijection; why is it not a diffeomorphism?
+- [ ] Q4 How is it used: in the regular value theorem (via the implicit function theorem, Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]), in Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], and in the submersion normal form (step 8)?
+
+> [!tip]- Hints: what to know
+> - Quote, do not prove (Lee, Theorem C.34).
+> - The implicit function theorem follows by applying it to $(x,y) \mapsto (x, \Phi(x,y))$.
+
+#### Diffeomorphisms are the bijective local diffeomorphisms · P4
+
+$F$ is a diffeomorphism iff it is a bijective local diffeomorphism; so a smooth bijection with every $F_{\ast p}$ bijective is a diffeomorphism, see Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]]. *Source: notes.*
+
+^nd-cor-35-3
+
+- [ ] Q1 **[state]** State the corollary.
+- [ ] Q2 (⇐): given $q \in N$, why does $F^{-1}$ agree near $q$ with a local inverse $G$? Which hypothesis is used?
+- [ ] Q3 Why do "continuous" and "smooth" for $F^{-1}$ follow from agreeing locally with smooth maps?
+- [ ] Q4 Deduce the last sentence from Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]].
+- [ ] Q5 **[why]** Why is "smooth bijection" not enough? (The cube map $\mathbb{R} \to \mathbb{R}$, $x \mapsto x^3$.)
+
+> [!tip]- Hints: route of the proof in the notes
+> - Strategy: S11 (local, then global).
+> - $F(G(y)) = y = F(F^{-1}(y))$ and injectivity give $G = F^{-1}$ on $V$.
 
 #### Being a submersion is an open condition · P4
 
@@ -3198,6 +3200,26 @@ $\iota_{\ast p}:T_pS\to T_pM$ is injective; in an adapted chart, $\iota_{\ast p}
 > - Injective: independent columns, or the $\partial/\partial x^i|_p$ are part of a basis.
 > - Curves: Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]] with $F=\iota$.
 
+#### Regular submanifolds of Euclidean space: the slice description · P2
+
+For $X\subseteq\mathbb{R}^{n+k}$ and $p\in X$: $X$ is described externally (equivalently internally, or as a graph) near $p$ if and only if there is a chart of $\mathbb{R}^{n+k}$ at $p$ adapted to $X$; so the regular submanifolds of $\mathbb{R}^{n+k}$ are exactly the manifolds of the geometric stage, see Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]]. *Source: filled in.*
+
+^nd-prop-37-9
+
+- [ ] Q1 **[state]** State the equivalence and the "in particular".
+- [ ] Q2 Which two implications suffice, given that the external, internal and graph descriptions are already equivalent?
+- [ ] Q3 Graph ⇒ slice: write $\Phi(x,y)=(x,y-h(x))$. Why is it a diffeomorphism of $V\times V'$ onto an open set, and why is it adapted to $X$?
+- [ ] Q4 Slice ⇒ external: why does $F=x_b$ have rank $k$ at every point of $U$?
+- [ ] Q5 Write two adapted charts of $S^2$ near the north pole.
+- [ ] Q6 **[why]** In "slice ⇒ external", the chart must be a *diffeomorphism* onto its image. Show what goes wrong with the homeomorphism $(x,y)\mapsto(x,y^3)$ of $\mathbb{R}^2$ and $X$ the $x$-axis.
+
+> [!tip]- Hints: route of the proof in the notes
+> - Strategy: S1, S14 (differentiate $\varphi^{-1}\circ\varphi=\mathrm{id}$).
+> - Graph ⇒ slice: inverse $(x,z)\mapsto(x,z+h(x))$; the image is the preimage of $V\times V'$ under that continuous map; $y-h(x)=0$ iff the point is on the graph.
+> - Slice ⇒ external: $\varphi'(q)$ is invertible (chain rule on $\varphi^{-1}\circ\varphi$), so its last $k$ rows, the rows of $F'(q)$, are independent.
+> - Examples: $(x,y,z)\mapsto(x,y,z-\sqrt{1-x^2-y^2})$ and $(x,y,z)\mapsto(x,y,x^2+y^2+z^2-1)$.
+> - For Q6: $F=y^3$ has $F'=0$ on the axis, so $0$ is not a regular value.
+
 #### Level sets near a regular point · P2
 
 If $G:V\to N$ is a submersion at the single point $p$, $c=G(p)$, there are charts $\theta=(z^i)$ at $p$ and $\chi$ at $c$ with $\chi(G(p'))=(z^1(p'),\dots,z^n(p'))$, so that $W\cap G^{-1}(c)=\{z^1=c_1,\dots,z^n=c_n\}$; $\hat\theta=(z^{n+1},\dots,z^m,z^1-c_1,\dots,z^n-c_n)$ is adapted to $G^{-1}(c)$; and $\iota_{\ast p}(T_pS)=\ker G_{\ast p}$ for a submanifold $S$ that agrees with $G^{-1}(c)$ near $p$, see Lemma [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]]. *Source: Lecture 12's argument for the regular value theorem, isolated in the notes.*
@@ -3288,7 +3310,7 @@ A smooth function on a regular submanifold $S\subseteq M$ extends, near each poi
 > [!tip]- Hints: route (not in the notes; a sketch)
 > - Strategy: S1, S11 (local, then global).
 > - $\tilde f$ is constant in the $x_b$ directions; on $S$, $x_a=\varphi_S$, so $\tilde f=f$.
-> - Gluing local extensions needs partitions of unity (Lee, Ch. 2); the notes only have bump functions (Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]).
+> - Gluing local extensions needs partitions of unity (Lee, Ch. 2); the notes only have bump functions (Corollary [[§56 Vector Fields#^cor-56-7|§56.7]]).
 
 ### Priority 3 · filled in, using a technique the homework drills
 
@@ -3329,26 +3351,6 @@ In an adapted chart at $p$, $\xi=\sum_i\xi_i\,dx^i|_p$ lies in $N_pS$ if and onl
 > - $\xi\in N_pS$ iff $\xi=\sum_{j>m-k}\xi_j\,dx^j|_p$.
 > - No metric, no orthogonality: with an inner product $T_p^\ast M\cong T_pM$ and $N_pS$ becomes the normal space (remark *No Normal Vectors Without a Metric*).
 > - Used in Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]] ([[Differentiable Manifolds HW Drill#^hw5-4|HW5.4]]).
-
-#### Regular submanifolds of Euclidean space: the slice description · P3
-
-For $X\subseteq\mathbb{R}^{n+k}$ and $p\in X$: $X$ is described externally (equivalently internally, or as a graph) near $p$ if and only if there is a chart of $\mathbb{R}^{n+k}$ at $p$ adapted to $X$; so the regular submanifolds of $\mathbb{R}^{n+k}$ are exactly the manifolds of the geometric stage, see Proposition [[§37 Regular Submanifolds#^prop-37-12|§37.12]]. *Source: filled in.*
-
-^nd-prop-37-9
-
-- [ ] Q1 **[state]** State the equivalence and the "in particular".
-- [ ] Q2 Which two implications suffice, given that the external, internal and graph descriptions are already equivalent?
-- [ ] Q3 Graph ⇒ slice: write $\Phi(x,y)=(x,y-h(x))$. Why is it a diffeomorphism of $V\times V'$ onto an open set, and why is it adapted to $X$?
-- [ ] Q4 Slice ⇒ external: why does $F=x_b$ have rank $k$ at every point of $U$?
-- [ ] Q5 Write two adapted charts of $S^2$ near the north pole.
-- [ ] Q6 **[why]** In "slice ⇒ external", the chart must be a *diffeomorphism* onto its image. Show what goes wrong with the homeomorphism $(x,y)\mapsto(x,y^3)$ of $\mathbb{R}^2$ and $X$ the $x$-axis.
-
-> [!tip]- Hints: route of the proof in the notes
-> - Strategy: S1, S14 (differentiate $\varphi^{-1}\circ\varphi=\mathrm{id}$).
-> - Graph ⇒ slice: inverse $(x,z)\mapsto(x,z+h(x))$; the image is the preimage of $V\times V'$ under that continuous map; $y-h(x)=0$ iff the point is on the graph.
-> - Slice ⇒ external: $\varphi'(q)$ is invertible (chain rule on $\varphi^{-1}\circ\varphi$), so its last $k$ rows, the rows of $F'(q)$, are independent.
-> - Examples: $(x,y,z)\mapsto(x,y,z-\sqrt{1-x^2-y^2})$ and $(x,y,z)\mapsto(x,y,x^2+y^2+z^2-1)$.
-> - For Q6: $F=y^3$ has $F'=0$ on the axis, so $0$ is not a regular value.
 
 #### Normal spaces under a transverse map · P3
 
@@ -4561,7 +4563,9 @@ For $F:M\to N$ smooth and $f\in C^\infty(N)$, $F^\ast(df)=d(F^\ast f)$, where $(
 > - Proposition [[§34 The Cotangent Space from Germs#^prop-34-7|§34.7]]: $df_{F(p)}(F_{\ast p}v)=(F_{\ast p}v)[f]=v[f\circ F]$.
 > - Q5: $F$ not injective — several candidates; not surjective — no candidate (remark *Vector Fields Do Not Push Forward*, §56).
 
-#### Pullbacks in coordinates · P2
+### Priority 3 · filled in, using a technique the homework drills
+
+#### Pullbacks in coordinates · P3
 
 In charts $(x^i)$ on $M$ and $(y^j)$ on $N$ with $F^j=y^j\circ F$: $F^\ast(\sum_j\theta_j\,dy^j)=\sum_i(\sum_j(\theta_j\circ F)\,\partial F^j/\partial x^i)\,dx^i$; in particular $F^\ast\theta$ is smooth, see Proposition [[§53 One-Forms#^prop-53-6|§53.6]]. *Source: filled in.*
 
@@ -4580,8 +4584,6 @@ In charts $(x^i)$ on $M$ and $(y^j)$ on $N$ with $F^j=y^j\circ F$: $F^\ast(\sum_
 > - $\theta_j\circ F$ and $\partial F^j/\partial x^i$ are smooth (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]]); Proposition [[§53 One-Forms#^prop-53-1|§53.1]](3).
 > - Shrink $U$ to $U\cap F^{-1}(V)$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]]).
 > - Q6: $dt$.
-
-### Priority 3 · filled in, using a technique the homework drills
 
 #### The Hessian at a critical point is well defined · P3
 
@@ -4672,7 +4674,7 @@ A compactly supported smooth $\chi$ with $\chi \equiv 1$ near $p$, see Definitio
 - [ ] Q4 **[example]** Build a bump function on $\mathbb{R}$ from $h(s) = e^{-1/s}$ ($s > 0$), $h = 0$ ($s \le 0$).
 
 > [!tip]- Hints: where it lives, examples
-> - Definition [[§56 Vector Fields#^def-56-10|§56.10]], Definition [[§56 Vector Fields#^def-56-11|§56.11]], Definition [[§56 Vector Fields#^def-56-12|§56.12]]; existence: Proposition [[§56 Vector Fields#^cor-56-7|§56.7]] (quoted; Uribe: lower priority).
+> - Definition [[§56 Vector Fields#^def-56-10|§56.10]], Definition [[§56 Vector Fields#^def-56-11|§56.11]], Definition [[§56 Vector Fields#^def-56-12|§56.12]]; existence: Corollary [[§56 Vector Fields#^cor-56-7|§56.7]] (quoted; Uribe: lower priority).
 > - Q2: smoothness of the extension at points of $\partial U$ needs $\chi = 0$ on a neighbourhood of them. Q3: Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], Lemma [[§56 Vector Fields#^lem-56-9|§56.9]], Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-3|§28.3]].
 > - Q4: $\chi(x) = \dfrac{h(2 - |x|)}{h(2 - |x|) + h(|x| - 1)}$, equal to $1$ on $[-1, 1]$ (not in the notes; check it).
 
@@ -4783,7 +4785,7 @@ For $\mathbf X\in\mathfrak X(M)$, $D_{\mathbf X}f:p\mapsto\mathbf X_p[f]$ is smo
 
 #### Every germ has a global representative · P2
 
-If $f\in C^\infty(U)$ represents a germ at $p$ and $\chi$ is a bump function at $p$ subordinate to $U$, then $\tilde f=\chi f$ on $U$, $0$ outside $U$, is smooth on $M$ and has the same germ at $p$; bump functions exist (Proposition [[§56 Vector Fields#^cor-56-7|§56.7]], quoted), see Corollary [[§56 Vector Fields#^cor-56-8|§56.8]]. *Source: Lecture 16; the existence of bump functions is stated in Lectures 15–16, proof deferred ("technical things that you will not be using in homework").*
+If $f\in C^\infty(U)$ represents a germ at $p$ and $\chi$ is a bump function at $p$ subordinate to $U$, then $\tilde f=\chi f$ on $U$, $0$ outside $U$, is smooth on $M$ and has the same germ at $p$; bump functions exist (Corollary [[§56 Vector Fields#^cor-56-7|§56.7]], quoted), see Corollary [[§56 Vector Fields#^cor-56-8|§56.8]]. *Source: Lecture 16; the existence of bump functions is stated in Lectures 15–16, proof deferred ("technical things that you will not be using in homework").*
 
 ^nd-cor-53-5
 
@@ -4814,7 +4816,7 @@ Every derivation $D$ of $C^\infty(M)$ is local: if $f|_U=g|_U$ for an open $U$, 
 > - Strategy: S11; "like showing injectivity by showing the kernel is zero".
 > - $\chi h=0$: on $U$, $h=0$; off $U$, $\chi=0$.
 > - $0=\chi(p)(Dh)(p)+h(p)(D\chi)(p)=(Dh)(p)$.
-> - Ingredients: the product rule and bump functions (Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]).
+> - Ingredients: the product rule and bump functions (Corollary [[§56 Vector Fields#^cor-56-7|§56.7]]).
 
 #### Derivations are vector fields · P2
 

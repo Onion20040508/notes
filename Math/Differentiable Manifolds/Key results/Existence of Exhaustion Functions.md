@@ -13,6 +13,7 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§65 Partitions of Unity#^def-65-2|Definition §65.2: Partition of Unity]]
 - [[§65 Partitions of Unity#^lem-65-2|Lemma §65.2: Locally Finite Sums of Smooth Functions Are Smooth]]
+- [[§65 Partitions of Unity#^def-65-3|Definition §65.3: Partition of Unity Subordinate to a Cover]]
 - [[§65 Partitions of Unity#^thm-65-7|Theorem §65.7: Existence of Partitions of Unity]]
 - [[§65 Partitions of Unity#^lem-65-12|Lemma §65.12: Countable Precompact Covers]]
 

@@ -99,6 +99,8 @@ A curve $S$ in the plane, covered by rectangles. Refining the cover shrinks the 
 
 *Uses:* [[§62 Sets of Measure Zero#^lem-62-1|§62.1]]
 
+**Transcription note (Lecture 19).** Page 50 of the handwritten notes states the image lemma for “$F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open”. As written, with $m$ unrestricted, it is false for $m > n$: the projection $\mathbb{R}^2 \to \mathbb{R}$, $(x, y) \mapsto x$, maps the $x$-axis, of measure zero in $\mathbb{R}^2$, onto $\mathbb{R}$. Lemma [[§62 Sets of Measure Zero#^lem-62-2|§62.2]] takes $m = n$, as Lee does and as the application to transition maps needs. (For $m < n$ the conclusion holds for every $S$, by Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]] in [[§63 Sard's Theorem|§63]].)
+
 > [!example] Example §62.1: The Cantor Function
 > In Lemma [[§62 Sets of Measure Zero#^lem-62-2|§62.2]], $F(S)$ may not have measure zero if $F$ is only continuous; the Cantor function is the standard counterexample. *(Filled in.)* The Cantor function $c : [0,1] \to [0,1]$ is continuous, nondecreasing, and maps the Cantor set $C$, which has measure zero, onto all of $[0,1]$, which does not.
 >

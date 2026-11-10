@@ -114,8 +114,6 @@ The Euclidean theorem (Theorem [[§68 Local Existence and Uniqueness#^thm-68-1|�
 
 ^thm-68-2
 
-On the board, (3) was stated for $c : (-\delta, \delta) \to M$, with the conclusion on $(-\varepsilon, \varepsilon) \cap (-\delta, \delta)$; the domains need not be symmetric, which gives the form of (3) above. By (3), there is only one map $\varphi$ with these properties.
-
 > [!proof]+ Proof
 > *(Lecture 24: use a chart at $p$ to push the field down to an open set in Euclidean space, apply the theorem there, and push the result back up. The chart is called $\psi$, since $\varphi$ is the flow; this clash of letters is why Lee writes $\theta$ for the flow. The details are filled in.)* When $M$ is an open set in $\mathbb{R}^m$ this is Theorem [[§68 Local Existence and Uniqueness#^thm-68-1|§68.1]]. In general, take a chart $\psi : W \to \psi(W) \subseteq \mathbb{R}^m$ at $p$. It is a diffeomorphism of the open submanifold $W$ onto the open set $\psi(W)$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]), so the field $\mathbf{X}|_W$ has a pushforward $\mathbf{Y} = \psi_\ast\mathbf{X} \in \mathfrak{X}(\psi(W))$ (Definition [[§59 Related Vector Fields#^def-59-1|§59.1]], Proposition [[§59 Related Vector Fields#^prop-59-2|§59.2]]).
 >
@@ -135,6 +133,8 @@ On the board, (3) was stated for $c : (-\delta, \delta) \to M$, with the conclus
 
 *Uses:* [[§68 Local Existence and Uniqueness#^thm-68-1|§68.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§59 Related Vector Fields#^def-59-1|Def. §59.1]], [[§59 Related Vector Fields#^prop-59-2|§59.2]], [[§67 Integral Curves#^lem-67-5|§67.5]]
 
+On the board, (3) was stated for $c : (-\delta, \delta) \to M$, with the conclusion on $(-\varepsilon, \varepsilon) \cap (-\delta, \delta)$; the domains need not be symmetric, which gives the form of (3) above. By (3), there is only one map $\varphi$ with these properties.
+
 ![[m591-67-7.svg]]
 
 *(Figure after the board.)* Upstairs, the field $\mathbf{X}$ on the chart domain $W$ and a curve $c$; downstairs, the pushed-forward field $\psi_\ast\mathbf{X}$ on $\psi(W)$ and the curve $\psi \circ c$.
@@ -151,8 +151,6 @@ The core technical result of this section is uniqueness on the common domain.
 > *Lee: Theorem 9.12 (proof)*
 
 ^prop-68-3
-
-In words: two integral curves that agree at some time $t_0$ agree wherever both are defined.
 
 > [!proof]+ Proof
 > *(Lecture 24. Details from the discussion in class are added where noted.)* *Reduction to $t_0 = 0$.* By the translation lemma (Lemma [[§67 Integral Curves#^lem-67-4|§67.4]](1)), $t \mapsto c_i(t + t_0)$ are integral curves on $I_i - t_0$ that agree at $0$, and the conclusion for them is the conclusion for the $c_i$. So assume $t_0 = 0$, and let $q = c_1(0) = c_2(0)$.
@@ -182,6 +180,8 @@ In words: two integral curves that agree at some time $t_0$ agree wherever both 
 ^pf-68-3
 
 *Uses:* [[§67 Integral Curves#^lem-67-4|§67.4]], [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]]
+
+In words: two integral curves that agree at some time $t_0$ agree wherever both are defined.
 
 ![[m591-67-9.svg]]
 

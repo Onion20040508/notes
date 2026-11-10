@@ -74,15 +74,34 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > V \text{ open} \iff f^{-1}(V) \text{ open in } Y \iff p^{-1}\big(f^{-1}(V)\big) \text{ open in } X \iff g^{-1}(V) \text{ open in } X,
 > $$
 >
-> the first equivalence because $f$ is a quotient map and the second because $p$ is. So $g$ is a quotient map. (In particular: *a composite of quotient maps is a quotient map*.)
+> the first equivalence because $f$ is a quotient map and the second because $p$ is. So $g$ is a quotient map. (Stated on its own, this direction is Lemma [[§5 Quotient Maps#^lem-5-2|§5.2]](1): *a composite of quotient maps is a quotient map*.)
 
 ^pf-5-1
+
+*Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^def-5-2|Def. §5.2]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]], [[§5 Quotient Maps#^lem-5-2|§5.2]]
 
 *Uses:* [[§5 Quotient Maps#^def-5-1|Def. §5.1]], [[§5 Quotient Maps#^def-5-2|Def. §5.2]], [[§10 Continuous Functions#^thm-10-4|590 §10.4]]
 
 > [!remark]- Connections
 > - Home in MATH 590: [[Universal Property of Quotient Maps|590 §13.3 (Universal Property of Quotient Maps)]]; composites of quotient maps are [[§13 Quotient Topology#^ex-13-4|590 Ex. §13.4]].
 > - Linear counterpart: [[§21 Linear Algebra Toolkit#^prop-21-6|Quotient Spaces and Their Universal Property, §21.6]].
+
+> [!theorem] Lemma §5.2: Composites of Quotient Maps and Bijective Quotient Maps
+> 1. If $p : X \to Y$ and $f : Y \to Z$ are quotient maps (Definition [[§5 Quotient Maps#^def-5-1|§5.1]]), then the composite $f \circ p : X \to Z$ is a quotient map.
+> 2. A bijective quotient map $F : X \to Y$ is a homeomorphism.
+
+^lem-5-2
+
+> [!proof]+ Proof
+> *(Part (1) is the remark made in the proof of Theorem [[§5 Quotient Maps#^thm-5-1|§5.1]]; part (2) was used in these notes without proof. Not from lecture; filled in.)*
+>
+> (1) Put $g = f \circ p$. It is constant on the fibres of $p$ (Definition [[§5 Quotient Maps#^def-5-2|§5.2]]): if $p(x) = p(x')$ then $g(x) = f(p(x)) = f(p(x')) = g(x')$. So Theorem [[§5 Quotient Maps#^thm-5-1|§5.1]] applies to $p$ and $g$, and the unique map $Y \to Z$ whose composite with $p$ is $g$ is $f$ itself. Since $f$ is a quotient map, the direction “$\Rightarrow$” of Theorem [[§5 Quotient Maps#^thm-5-1|§5.1]](2) says that $g = f \circ p$ is a quotient map.
+>
+> (2) We show that $F$ is continuous and that $F^{-1} : Y \to X$ is continuous. *$F$ is continuous:* if $U \subseteq Y$ is open, then $F^{-1}(U)$ is open in $X$, by the direction “$\Rightarrow$” of the equivalence in Definition [[§5 Quotient Maps#^def-5-1|§5.1]]. *$F^{-1}$ is continuous:* let $O \subseteq X$ be open; the preimage of $O$ under $F^{-1}$ is $F(O)$, so it is to be shown that $F(O)$ is open in $Y$. Since $F$ is injective, $F^{-1}(F(O)) = O$, which is open in $X$; by the direction “$\Leftarrow$” of the equivalence in Definition [[§5 Quotient Maps#^def-5-1|§5.1]], $F(O)$ is open in $Y$. So $F$ is a continuous bijection with continuous inverse, a homeomorphism.
+
+^pf-5-2
+
+*Uses:* [[§5 Quotient Maps#^thm-5-1|§5.1]], [[§5 Quotient Maps#^def-5-2|Def. §5.2]], [[§5 Quotient Maps#^def-5-1|Def. §5.1]]
 
 > [!theorem] Corollary §5.3: The Form Used in Practice
 > Let $\sim$ be an equivalence relation on $X$ with projection $\pi : X \to X/{\sim}$.
@@ -128,7 +147,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > - $\overline{F} : X/{\sim} \to Y$ recognizing a quotient map ([[§5 Quotient Maps#^prop-5-5|Proposition §5.5]]);
 > - continuity of the charts on $\mathbb{CP}^n$ and $\mathbb{RP}^n$ ([[§18 Projective Spaces as Smooth Manifolds|§18, Projective Spaces as Smooth Manifolds]]), applied locally via [[§5 Quotient Maps#^lem-5-9|Lemma §5.9]].
 >
-> Part (2) of [[§5 Quotient Maps#^thm-5-1|Theorem §5.1]] is what makes the recipe self-improving: if the map upstairs is itself a quotient map, the induced map downstairs is not merely continuous but a homeomorphism when injective, since a bijective quotient map is a homeomorphism.
+> Part (2) of [[§5 Quotient Maps#^thm-5-1|Theorem §5.1]] is what makes the recipe self-improving: if the map upstairs is itself a quotient map, the induced map downstairs is not merely continuous but a homeomorphism when injective, since a bijective quotient map is a homeomorphism (Lemma [[§5 Quotient Maps#^lem-5-2|§5.2]](2)).
 
 ^rem-5-1
 
@@ -236,7 +255,7 @@ So far “quotient” has named a topology on a set of equivalence classes. The 
 > - Applied to $G \to G/H$: [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-2|§15.2]].
 
 > [!example] Example §5.3: Projections Are Quotient Maps
-> If $X_1, \ldots, X_n$ are nonempty topological spaces, every projection $\pi_i : X_1 \times \cdots \times X_n \to X_i$ is a quotient map: it is surjective (choose any point in each other factor), continuous, and open (as in the proof of [[§4 Quotient Spaces and Open Maps#^lem-4-3|Lemma §4.3]]: the image under $\pi_i$ of a box $U_1 \times \cdots \times U_n$ of open sets is $U_i$ or empty, every open set of the product is a union of boxes, and images commute with unions), so [[§5 Quotient Maps#^prop-5-7|Proposition §5.7]] applies. Nonemptiness is needed: if some $X_k = \emptyset$ the product is empty and $\pi_i$ is not surjective onto a nonempty $X_i$.
+> If $X_1, \ldots, X_n$ are nonempty topological spaces and $X_1 \times \cdots \times X_n$ carries the product topology (Definition [[§3 Subspaces and Products#^def-3-5|§3.5]]), every projection $\pi_i : X_1 \times \cdots \times X_n \to X_i$ is a quotient map: it is surjective (choose any point in each other factor), continuous, and open (as in the proof of [[§4 Quotient Spaces and Open Maps#^lem-4-3|Lemma §4.3]]: the image under $\pi_i$ of a box $U_1 \times \cdots \times U_n$ of open sets is $U_i$ or empty, every open set of the product is a union of boxes, and images commute with unions), so [[§5 Quotient Maps#^prop-5-7|Proposition §5.7]] applies. Nonemptiness is needed: if some $X_k = \emptyset$ the product is empty and $\pi_i$ is not surjective onto a nonempty $X_i$.
 
 ^ex-5-3
 

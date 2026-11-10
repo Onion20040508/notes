@@ -54,7 +54,7 @@ $$
 
 ![[§34 The Cotangent Space from Germs#^thm-34-4]]
 
-**Step 5: covectors pull back.** For $F : M \to N$, the dual map of $F_{\ast p}$ is the *pullback of covectors* $F_p^{\ast} : T^{\ast}_{F(p)}N \to T_p^{\ast}M$, $(F_p^{\ast}\alpha)(v) = \alpha(F_{\ast p}v)$ ([[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]). It commutes with differentials: $F_p^{\ast}(df_{F(p)}) = d(f \circ F)_p$ ([[§34 The Cotangent Space from Germs#^prop-34-7|Proposition §34.7]]), which is the chain rule in covector form. The same symbol $F_p^{\ast}$ already denoted the pullback of germs (Step 5 of [[§49 Recap꞉ Germs, Derivations and Tangent Vectors|§49]]); the two are compatible, as [[§34 The Cotangent Space from Germs#^rem-34-3|Remark: One Symbol for Two Pullbacks]] explains. In charts $(x^1, \ldots, x^m)$ near $p$ and $(y^1, \ldots, y^n)$ near $F(p)$, the matrix of $F_p^{\ast}$ in the dual bases $dy^j|_{F(p)}$ and $dx^i|_p$ is the transpose of the Jacobian of Step 5 of [[§49 Recap꞉ Germs, Derivations and Tangent Vectors|§49]] (Proposition [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]](2)):
+**Step 5: covectors pull back.** For $F : M \to N$, the dual map of $F_{\ast p}$ is the *pullback of covectors* $F_p^{\ast} : T^{\ast}_{F(p)}N \to T_p^{\ast}M$, $(F_p^{\ast}\xi)(v) = \xi(F_{\ast p}v)$ ([[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]). It commutes with differentials: $F_p^{\ast}(df_{F(p)}) = d(f \circ F)_p$ ([[§34 The Cotangent Space from Germs#^prop-34-7|Proposition §34.7]]), which is the chain rule in covector form. The same symbol $F_p^{\ast}$ already denoted the pullback of germs (Step 5 of [[§49 Recap꞉ Germs, Derivations and Tangent Vectors|§49]]); the two are compatible, as [[§34 The Cotangent Space from Germs#^rem-34-3|Remark: One Symbol for Two Pullbacks]] explains. In charts $(x^1, \ldots, x^m)$ near $p$ and $(y^1, \ldots, y^n)$ near $F(p)$, the matrix of $F_p^{\ast}$ in the dual bases $dy^j|_{F(p)}$ and $dx^i|_p$ is the transpose of the Jacobian of Step 5 of [[§49 Recap꞉ Germs, Derivations and Tangent Vectors|§49]] (Proposition [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]](2)):
 
 $$
 \begin{pmatrix}
@@ -89,7 +89,7 @@ How they fit: on open subsets of $\mathbb{R}^n$ the second is the first ([[§30 
 | tangent vector $v \in T_pM$ | forward | $F_{\ast p}v \in T_{F(p)}N$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-6\|Definition §28.6]]) |
 | function $f$ on $N$ | backward | $F^{\ast}f = f \circ F$ on $M$ |
 | germ $[g]$ at $F(p)$ | backward | $F_p^{\ast}[g] = [g \circ F]$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-5\|Definition §28.5]]) |
-| covector $\alpha \in T^{\ast}_{F(p)}N$ | backward | $(F_p^{\ast}\alpha)(v) = \alpha(F_{\ast p}v)$ ([[§34 The Cotangent Space from Germs#^def-34-3\|Definition §34.3]]) |
+| covector $\xi \in T^{\ast}_{F(p)}N$ | backward | $(F_p^{\ast}\xi)(v) = \xi(F_{\ast p}v)$ ([[§34 The Cotangent Space from Germs#^def-34-3\|Definition §34.3]]) |
 
 Things that *are* somewhere move forward with the points; things that *eat* move backward, because to evaluate one on $M$ you push its input forward and evaluate on $N$.
 

@@ -1186,7 +1186,7 @@ If $Y = X$ there is nothing to do, so assume $Y \subsetneq X$. Let $P$ be the se
 
 \emph{Chains have upper bounds.} Given a chain $\{(Z_i, \ell_i)\}_{i \in I}$, let $Z^* = \bigcup_i Z_i$ and define $\ell^*(z) = \ell_i(z)$ for any $i$ with $z \in Z_i$. Since the chain is nested, any two elements of $Z^*$ lie in a common $Z_i$, so $Z^*$ is a subspace and $\ell^*$ is well defined and linear; $\ell^* \le p$ on $Z^*$ because it holds on each $Z_i$. Thus $(Z^*, \ell^*) \in P$ is an upper bound.
 
-\emph{Conclusion.} By Zorn's lemma $P$ has a maximal element $(Z_m, \ell_m)$. If $Z_m \neq X$, Lemma~\ref{lem:one-step} (with $Z_m$ in place of $Y$) extends $\ell_m$ to a strictly larger subspace keeping $\ell \le p$, contradicting maximality. Hence $Z_m = X$, and $L := \ell_m$ is the required extension.
+\emph{Conclusion.} By Zorn's lemma $P$ has a maximal element $(Z_m, \ell_m)$. If $Z_m \neq X$, Lemma~\ref{lem:one-step} (with $Z_m$ in place of $Y$) extends $\ell_m$ to a functional on a strictly larger subspace that is still dominated by $p$ there, contradicting maximality. Hence $Z_m = X$, and $L := \ell_m$ is the required extension.
 \end{proof}
 
 \begin{rembox}\label{rem:hb-proof}
@@ -1336,7 +1336,7 @@ Write $\lambda = a/a' \in (0,1)$. Then
 \[
 \frac{x}{a'} = \lambda \cdot \frac{x}{a} + (1 - \lambda) \cdot 0,
 \]
-a convex combination of $x/a \in K$ and $0 \in K$. By convexity of $K$, $x/a' \in K$, i.e.\ $a' \in A(x)$. Thus $A(x)$ contains every number larger than any of its elements; together with $\inf A(x) = p_K(x)$ this gives the stated form, the endpoint being included exactly when $x / p_K(x) \in K$.
+a convex combination of $x/a \in K$ and $0 \in K$. By convexity of $K$, $x/a' \in K$, i.e.\ $a' \in A(x)$. Thus $A(x)$ contains every number larger than any of its elements; together with $\inf A(x) = p_K(x)$ this gives the stated form. The endpoint $p_K(x)$ is included exactly when $p_K(x) > 0$ and $x / p_K(x) \in K$; if $p_K(x) = 0$ it is not included, since the elements of $A(x)$ are positive, and $A(x) = (0, \infty)$.
 \end{proof}
 
 Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (which follows from $0$ being interior) for the second term.
@@ -1658,11 +1658,11 @@ In words: $y_0$ lies \emph{on} the hyperplane $\{\ell = c_0\}$, and all of $K$ l
 Left: the point $y_0$ lies on the hyperplane $\{\ell = c_0\}$ (red), and $K$, drawn dashed since every point of $K$ is interior, lies strictly in the half-space $\{\ell < c_0\}$. Right: $y_0$ may sit on the edge of $K$ (it is still not in $K$); the hyperplane is then a supporting hyperplane, touching the boundary of $K$ at $y_0$ without meeting $K$.
 
 \begin{rembox}\label{rem:separation}
-Everything in the proof was already in place; the theorem is an assembly. The gauge converts the geometric hypothesis (convex, all points interior, $y_0$ outside) into an inequality $p_K(y_0) \ge 1 = \ell(y_0)$ on a one-dimensional subspace; Hahn--Banach extends $\ell$ without breaking $\ell \le p_K$; and the description $K = \{p_K < 1\}$ converts the inequality back into geometry. The hyperplane is $\{\ell = 1\}$ in the normalized case; there is nothing canonical about it, since the extension is not unique. This is the sense in which a convex set can be described by hyperplanes: it lies on one side of a supporting hyperplane at every point outside it.
+Everything in the proof was already in place; the theorem is an assembly. The gauge converts the geometric hypothesis (convex, all points interior, $y_0$ outside) into an inequality $p_K(y_0) \ge 1 = \ell(y_0)$ on a one-dimensional subspace; Hahn--Banach extends $\ell$ without breaking $\ell \le p_K$; and the description $K = \{p_K < 1\}$ converts the inequality back into geometry. The hyperplane is $\{\ell = 1\}$ in the normalized case; there is nothing canonical about it, since the extension is not unique. This is the sense in which a convex set can be described by hyperplanes: through every point outside it there is a hyperplane with the whole set strictly on one side.
 \end{rembox}
 
 \begin{rembox}[Comparison with Lax]\label{rem:comparison-lax-3}
-The statement is Lax's Theorem~5, including the hypothesis that $K$ is nonempty, which the proof needs in Step~1 (to translate a point of $K$ to the origin) and which was missing from an earlier version of these notes. Lax continues with two strengthenings not covered in lecture: Corollary~5$'$, for a convex set with only \emph{one} interior point (with the weaker conclusion $\ell(x) \le \ell(y)$), and Theorem~6, separating two disjoint convex sets, one of which has an interior point.
+The statement is Lax's Theorem~5, including the hypothesis that $K$ is nonempty, which the proof needs in Step~4 (to translate a point of $K$ to the origin). Lax continues with two strengthenings not covered in lecture: Corollary~5$'$, for a convex set with only \emph{one} interior point (with the weaker conclusion $\ell(x) \le \ell(y)$), and Theorem~6, separating two disjoint convex sets, one of which has an interior point.
 \end{rembox}
 
 % ============================================================================
@@ -1699,7 +1699,7 @@ Let $X$ be a linear space over $\mathbb{C}$ and $p : X \to \mathbb{R}$ a real-va
     \item $p(ax) = |a|\, p(x)$ for all $a \in \mathbb{C}$, $x \in X$;
     \item $p(x + y) \le p(x) + p(y)$ for all $x, y \in X$.
 \end{enumerate}
-Let $Y$ be a linear subspace of $X$ and $\ell : Y \to \mathbb{C}$ a linear functional satisfying $|\ell(y)| \le p(y)$ for all $y \in Y$. Then $\ell$ can be extended to a linear functional on $X$ satisfying $|\ell(x)| \le p(x)$ for all $x \in X$.
+Let $Y$ be a linear subspace of $X$ and $\ell : Y \to \mathbb{C}$ a linear functional satisfying $|\ell(y)| \le p(y)$ for all $y \in Y$. Then $\ell$ can be extended to a linear functional $L$ on $X$ satisfying $|L(x)| \le p(x)$ for all $x \in X$.
 \laxref{\S3.3, Thm~8}
 \end{thmbox}
 
@@ -1793,8 +1793,8 @@ Step 5 is the only place the complex structure does real work. For an arbitrary 
 
 
 % Lecture 2 was cut short by a tornado warning during a second gauge example
-% (a non-standard convex set K with vertices at (+-2,0), (0,+-2) drawn on the board).
-% That example was not completed and is omitted here; to be picked up next lecture.
+% (a convex set K drawn on the board; recorded then with vertices at (+-2,0), (0,+-2)).
+% The example was completed in Lecture 3: Example ex:gauge-square (the square with vertices (+-2,+-2)).
 
 
 % ============================================================================
@@ -3535,7 +3535,7 @@ Take the step function $f = \chi_{[1/2, 1]}$, i.e.\ $f(x) = 0$ for $x < 1/2$ and
 Alternatively: $C[0,1]$ with the supremum norm is complete (Theorem~\ref{thm:Cab-banach}), hence a closed subspace of $L^\infty[0,1]$ (Lemma~\ref{lem:complete-closed}), and a closed proper subspace is not dense; $f$ above shows the inclusion is proper.
 \end{proof}
 
-\begin{rembox}\label{rem:completion-L1-sec}
+\begin{rembox}[{{$L^\infty$ is Different}}]\label{rem:completion-L1-sec}
 The failure at $p = \infty$ is the first sign that $L^\infty$ behaves differently from the other $L^p$: uniform approximation cannot smooth out a jump. The pattern ``true for $1 \le p < \infty$, false for $p = \infty$'' will recur, e.g.\ in identifying dual spaces.
 \end{rembox}
 
@@ -3914,7 +3914,7 @@ the space & Definition~\ref{def:lp} & Definition~\ref{def:Lp} \\
 Banach & Theorem~\ref{thm:lp-complete} & Theorem~\ref{thm:Lp-complete}
 \end{tabular}
 \end{center}
-What has no sequence counterpart is density (Theorem~\ref{thm:density}), and with it the first case of the pattern ``true for $p < \infty$, false for $p = \infty$'' (a remark in \S\ref{sec:completion-L1-sec}).
+What has no sequence counterpart is density (Theorem~\ref{thm:density}), and with it the first case of the pattern ``true for $p < \infty$, false for $p = \infty$'' (the remark \emph{$L^\infty$ is Different} in \S\ref{sec:completion-L1-sec}).
 
 \noindent\textit{Chain:} $\leftarrow$ Chapter~3 (\ref{sec:rev-ch3}) $\cdot$ Chapter~5 (\ref{sec:rev-ch5}) $\rightarrow$
 
@@ -4468,7 +4468,7 @@ Here $H$ is complete and $K$ is nonempty and closed; what is missing is convexit
 \end{exbox}
 
 \begin{rembox}[Comparison with Lax]\label{rem:comparison-lax-5}
-The statement and proof are Lax's Theorem~6.2, which assumes $K$ nonempty; the hypothesis is needed (for $K = \varnothing$ the infimum is $+\infty$) and was missing from an earlier version of these notes. Lax also proves the same result in any \emph{uniformly convex} Banach space (\S5.2, Theorem~8), where the parallelogram law is replaced by a quantitative form of the strict convexity of the unit ball; Hilbert spaces are the model case. Not covered in lecture.
+The statement and proof are Lax's Theorem~6.2, which assumes $K$ nonempty; the hypothesis is needed (for $K = \varnothing$ the infimum is $+\infty$). Lax also proves the same result in any \emph{uniformly convex} Banach space (\S5.2, Theorem~8), where the parallelogram law is replaced by a quantitative form of the strict convexity of the unit ball; Hilbert spaces are the model case. Not covered in lecture.
 \end{rembox}
 
 \subsection{Orthogonal Complements}
@@ -5008,7 +5008,7 @@ An orthogonal set $\{e_\alpha\}_{\alpha \in \Lambda}$ in $X$ is \textbf{complete
 \]
 \end{defbox}
 
-\begin{rembox}\label{rem:onb}
+\begin{rembox}[Complete Sets and Complete Spaces]\label{rem:onb}
 Completeness of an orthogonal set is unrelated to completeness of a space. It means the set cannot be enlarged: if some nonzero $x$ were orthogonal to every $e_\alpha$, it could be added to the set, which therefore could not be a basis. In $\mathbb{R}^n$, a complete orthonormal set $\{e_1, \ldots, e_n\}$ is a basis, and every $x$ is $x = \sum_{j=1}^n (x, e_j)\, e_j$. The question is whether the same is true in a Hilbert space.
 \end{rembox}
 
@@ -5479,7 +5479,7 @@ So $T$ is linear, one-to-one, onto, and preserves the inner product: $H$ is isom
 \end{proof}
 
 %% >>> ADDED: remark (Claude commentary)
-\begin{rembox}\label{rem:onb-11}
+\begin{rembox}[The Isomorphism Takes Coordinates]\label{rem:onb-11}
 The isomorphism is ``take coordinates'': $x \mapsto ((x, e_j))_j$. Every result about a separable Hilbert space can therefore be checked on $\ell^2$, and the statement of Corollary~\ref{cor:fourier-series-L2} that $L^2[0, 2\pi]$ with the Fourier basis is ``the same'' as $\ell^2(\mathbb{Z})$ is the special case $e_n = e^{inx}/\sqrt{2\pi}$. The isomorphism depends on the choice of basis, as in finite dimensions.
 \end{rembox}
 %% <<< END ADDED
@@ -5499,7 +5499,7 @@ The theorem was stated in lecture for the real case: $H$ is isomorphic either to
 
 \subsection{$\mathbb{R}^n$ and $\mathbb{C}^n$}
 
-The dot product is the model inner product, with the conjugate on the second slot over $\mathbb{C}$ (Example~\ref{ex:euclidean-spaces}). Being finite-dimensional, $\mathbb{R}^n$ and $\mathbb{C}^n$ are Hilbert spaces (Example~\ref{ex:hilbert-spaces}), and for $n \ge 2$ the norm $\|\cdot\|_p$ comes from an inner product only for $p = 2$ (Corollary~\ref{cor:only-p2}). In $\mathbb{R}^n$ a complete orthonormal set is a basis (a remark in \S\ref{sec:onb}); \S\ref{sec:onb} asks what replaces this in a Hilbert space.
+The dot product is the model inner product, with the conjugate on the second slot over $\mathbb{C}$ (Example~\ref{ex:euclidean-spaces}). Being finite-dimensional, $\mathbb{R}^n$ and $\mathbb{C}^n$ are Hilbert spaces (Example~\ref{ex:hilbert-spaces}), and for $n \ge 2$ the norm $\|\cdot\|_p$ comes from an inner product only for $p = 2$ (Corollary~\ref{cor:only-p2}). In $\mathbb{R}^n$ a complete orthonormal set is a basis (the remark \emph{Complete Sets and Complete Spaces} in \S\ref{sec:onb}); \S\ref{sec:onb} asks what replaces this in a Hilbert space.
 
 \noindent\textit{Chain:} $\leftarrow$ Chapter~4 (\S\ref{sec:rev-ch4}) $\cdot$ Chapter~6 (\S\ref{sec:rev-ch6}) $\rightarrow$
 
@@ -5744,7 +5744,7 @@ In $L^2[-1,1]$ the even and the odd functions are closed subspaces, each the ort
 
 \subsection{The Fourier Basis}
 
-The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of $L^2[0,2\pi]$ (Theorem~\ref{thm:fourier}). Read through Theorem~\ref{thm:onbasis-equiv}, this is the $L^2$ theory of Fourier series (Corollary~\ref{cor:fourier-series-L2}), and taking coefficients identifies $L^2[0,2\pi]$ with $\ell^2(\mathbb{Z})$ (a remark in \S\ref{sec:onb-existence}).
+The functions $e^{inx}/\sqrt{2\pi}$, $n \in \mathbb{Z}$, form an orthonormal basis of $L^2[0,2\pi]$ (Theorem~\ref{thm:fourier}). Read through Theorem~\ref{thm:onbasis-equiv}, this is the $L^2$ theory of Fourier series (Corollary~\ref{cor:fourier-series-L2}), and taking coefficients identifies $L^2[0,2\pi]$ with $\ell^2(\mathbb{Z})$ (the remark \emph{The Isomorphism Takes Coordinates} in \S\ref{sec:onb-existence}).
 
 \noindent\textit{Chain:} Chapter~6, the Fourier transform (Example~\ref{ex:fourier-L1}, \S\ref{sec:rev-ch6}) $\cdot$ Chapter~\ref{ch:qm}, a particle on a ring (Example~\ref{ex:particle-ring}) $\rightarrow$
 
@@ -6798,6 +6798,7 @@ Let $\Omega \subset \mathbb{R}^n$ be bounded and open, and let an element of $H^
     \item the norm of the element in $H^1_0(\Omega)$ is $\bigl( \|f\|_{L^2}^2 + \sum_{j=1}^n \|\partial_{x_j} f\|_{L^2}^2 \bigr)^{1/2}$.
 \end{enumerate}
 Accordingly an element of $H^1_0(\Omega)$ is identified with its function $f$: $H^1_0(\Omega)$ is a linear subspace of $L^2(\Omega)$ whose elements have weak first derivatives in $L^2(\Omega)$, and $\nabla f = (\partial_{x_1} f, \ldots, \partial_{x_n} f)$ denotes the weak gradient.
+\laxref{\S7.2, Lemma~2 and the paragraph after its proof}
 \end{propbox}
 
 \begin{proof}
@@ -6829,6 +6830,7 @@ Let $\Omega \subset \mathbb{R}^n$ be bounded and open. There is a constant $C > 
 \int_\Omega |f(x)|^2\, dx \le C^2 \int_\Omega |\nabla f(x)|^2\, dx \qquad \text{for all } f \in C_c^\infty(\Omega).
 \]
 One can take $C = 2L$ for any $L$ with $\Omega \subset (-L, L)^n$.
+\laxref{\S7.2, Lemma~1 (Zaremba's inequality, with the width of the domain as the constant)}
 \end{thmbox}
 
 \begin{proof}
@@ -7110,6 +7112,7 @@ So $L_1$ and $L_2$ are continuous on $H^1_0(\Omega)$ (Proposition~\ref{prop:boun
 
 \begin{thmbox}[Existence and Uniqueness of Weak Solutions]\boxlabel{thm:dirichlet-weak}
 Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $f \in L^2(\Omega)$. Then $(D)$ has a unique weak solution $u \in H^1_0(\Omega)$.
+\laxref{\S7.2 (existence, there by the Riesz representation theorem)}
 \end{thmbox}
 
 \begin{proof}
@@ -7300,6 +7303,7 @@ Let $(X, \mathcal{A})$ be a measurable space and $\mu, \nu$ finite measures on i
 \[
 \nu(E) = \int_E g(x)\, d\mu(x) \qquad \text{for all } E \in \mathcal{A} .
 \]
+\laxref{\S7.1}
 \end{thmbox}
 
 \begin{proof}
@@ -10796,6 +10800,7 @@ When two limits are present (an index $m \to \infty$ inside a sum over $i$, and 
 \item \textbf{Completeness of $\ell^p$}, Step 2 (Theorem~\ref{thm:lp-complete}): the order truncate $\to$ $m \to \infty$ $\to$ $k \to \infty$.
 \item \textbf{H\"older for finite sums} is the special case of Theorem~\ref{thm:holder-seq} with zero tails; conversely no truncation is needed there because every quantity is a sum of non-negative terms and inequalities in $[0,\infty]$ suffice.
 \item \textbf{The dual of $\ell^p$}, Step 2 (Lecture 13, Theorem~\ref{thm:lp-seq-dual}): test $\ell$ on the truncated H\"older-extremal vector $x_j = |a_j|^{p'-2} a_j$, $j \le n$, divide the finite sum $S_n$ out, and let $n \to \infty$.
+\item \textbf{The dual of $c_0$}, Step 2 (Proposition~\ref{prop:c0-dual}): the same test on a finite sequence, which lies in $c_0$ with norm at most $1$, bounds every partial sum of $\sum_j |a_j|$ by $\|\ell\|$.
 \end{itemize}
 \end{exbox}
 
@@ -10976,11 +10981,12 @@ A quadratic functional $\frac12\|v\|^2 - \ell(v)$ on a Hilbert space becomes, af
 For a linear functional $\ell$ and a fixed $x_0$ with $\ell(x_0) \neq 0$, the vector $x - \frac{\ell(x)}{\ell(x_0)} x_0$ lies in the null space of $\ell$ for every $x$. This one formula splits $X$ as null space plus a line, and, applied to a sequence, produces points of the null space near a given point off it.
 \end{rembox}
 
-\begin{exbox}[Applications (HW5)]\boxlabel{ex:tech18}
+\begin{exbox}[{{Applications (HW5, HW6)}}]\boxlabel{ex:tech18}
 \begin{itemize}
 \item Codimension one (P4, Proposition~\ref{prop:ker-codim1-general}).
 \item Closed null space implies bounded (P5, Proposition~\ref{prop:bounded-iff-closed}): $y_n = x_0 - x_n/\ell(x_n)$.
 \item The Riesz representation theorem, part (2) (Lemma~\ref{lem:ker-codim1}(c)).
+\item The contrast for maps into a normed space (HW6 P1, Example~\ref{ex:closed-null-space-unbounded}): a closed null space no longer makes a linear map bounded, because the quotient by the null space is no longer one-dimensional; it does when the range is finite-dimensional (Proposition~\ref{prop:closed-null-findim-range-bounded}).
 \end{itemize}
 \end{exbox}
 
@@ -10997,6 +11003,7 @@ To prove an inequality or identity between continuous quantities on a space, pro
 \item Poincar\'e on $H^1_0$ (Corollary~\ref{cor:poincare-H10}), from Poincar\'e on $C_c^\infty$.
 \item Limits in $W^{1,p}$ satisfy integration by parts (Proposition~\ref{prop:limit-ibp}).
 \item A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem~\ref{thm:lp-seq-dual}, Step 3); the same fails in $\ell^\infty$ (Example~\ref{ex:linfty-dual}).
+\item The finite sequences are dense in $c_0$, so a bounded functional on $c_0$ is determined by its values on them (Proposition~\ref{prop:c0-dual}); in the space of convergent sequences they are not dense, and the functional $\lim$ is the extra coordinate (HW6 P2, Proposition~\ref{prop:c-dual}).
 \item Banach--Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem~\ref{thm:banach-steinhaus}): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
 \item $\sin(mx) \rightharpoonup 0$ in $L^p$, $1 < p < \infty$ (Lecture 18, Example~\ref{ex:sin-weak-Lp}): test only against continuous $g$, dense in $L^{p'}$, plus a uniform bound.
 \item The criteria for weak and weak-$*$ convergence (Lecture 18, Theorems~\ref{thm:weak-criterion} and~\ref{thm:weak-star-criterion}): convergence on a dense subset of $X'$, respectively of $X$, plus a uniform bound on the norms, gives convergence on the whole space; both are Banach--Steinhaus, applied on $X'$, respectively on $X$.
@@ -11241,7 +11248,9 @@ Continuous $\Rightarrow$ bounded & $y_n = x_n/(n\|x_n\|)$: $\|y_n\| = 1/n$, $\|T
 \ref{sec:bounded-maps} Bounded linear maps & \S15.1, Thms~1--3 & Lax assumes Banach spaces throughout \S15.1; not needed for Thm~1. \\
 \ref{sec:dual} Dual spaces & \S8.1, Thm~3; \S8.3, Thm~11; \S6.3, Thm~4, Lemma~5 & The dual is always a Banach space (\S8.1, Thm~3); the Riesz representation theorem with $\|\ell\| = \|a\|$, which Lax's Thm~4 of \S6.3 does not state; $(L^p)' = L^{p'}$ stated (\S8.3, Thm~11). The null space of a functional has codimension one and is closed exactly when the functional is bounded: Lemma~5 of \S6.3 (HW5). The integral functional on $C[0,1]$ (HW8) is not in Lax. These Ch.~8 numbers are the ones on the reference lines of the boxes. \\
 \ref{sec:lax-milgram} Lax--Milgram & \S6.3, Thm~6 & Proved through the operator $A$ of Theorem~\ref{thm:form-operator}: one-to-one with a lower bound, closed range, dense range. \\
-\ref{sec:sobolev} Sobolev spaces & \S5.1, example (g) & Weak derivatives, $H^1_0$ and the Poincar\'e inequality are not in Lax's Chapters 1--15 as treated here. \\
+\ref{sec:sobolev} Sobolev spaces & \S5.1, example (g); \S7.2, Lemmas~1--2 & Lax's Lemma~1 of \S7.2 (Zaremba's inequality) is the Poincar\'e inequality, with the width of the domain as the constant. His Lemma~2 gives the first derivatives of the elements of the completion and, in the paragraph after it, that the completion embeds in $L^2$ (Proposition~\ref{prop:H10-elements-are-functions}). Weak derivatives as a notion of their own and $W^{k,p}$ are not in Lax's Chapters 1--15. \\
+\ref{sec:dirichlet} Weak solutions of the Dirichlet problem & \S7.2 & Lax obtains the solution from the Riesz representation theorem (\S6.3, Thm~4) applied to $u \mapsto (u, f)_0$ on the completion in the gradient norm; here it comes from Lax--Milgram, which also covers the general elliptic equation (Theorem~\ref{thm:elliptic}, not in \S7.2). Lax goes on to the boundary behaviour of the solution (Lemmas~3--5), not covered. \\
+\ref{sec:radon-nikodym} Measures and the Radon--Nikodym theorem & \S7.1 & von Neumann's proof through the Riesz representation theorem on $L^2(\mu + \nu)$, for finite measures; the $\sigma$-finite case is Lax's Exercise~1. \\
 \ref{sec:duality} Duality in normed spaces & Ch.~8; \S5.1, Thm~5 & Normed Hahn--Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch.~8 has not been checked against the text for this section, so no Ch.~8 numbers are cited for it. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. \\
 \ref{sec:reflexive} Separable duals, reflexive spaces & Ch.~8 & Spanning criterion, $X'$ separable $\Rightarrow$ $X$ separable, the second dual and reflexivity, closed subspaces of reflexive spaces. Ch.~8 numbering not checked for this section. $X$ reflexive $\iff$ $X'$ reflexive (Lecture 18) is not in Lax. \\
 \ref{sec:solving}--\ref{sec:open-mapping} Solving $Mx = y$; Baire category; open mapping & Ch.~15 & \S15.5 The open mapping principle: the image of the unit ball contains a ball (Thm~9), open mapping (Thm~10), Banach's inverse mapping theorem (Thm~11), closed maps and the closed graph theorem (definition before Thm~12, Thm~12), equivalent norms (Thm~13, for compatible norms), the Baire category principle (used in the proof of Thm~9, p.~169; sets of second category, Thm~16). \\

@@ -63,7 +63,7 @@ Points he stressed in lecture, and where they live:
 **Not proved in the notes, so quote them:**
 - Theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] Inverse Function Theorem;
 - Theorem [[§40 Fibrations#^thm-40-3|§40.3]] Ehresmann's Theorem;
-- Proposition [[§56 Vector Fields#^cor-56-7|§56.7]] Bump Functions Exist;
+- Corollary [[§56 Vector Fields#^cor-56-7|§56.7]] Bump Functions Exist;
 - Theorem [[§2 Topological Manifolds#^thm-2-1|§2.1]] Topological Invariance of Dimension;
 - Theorem [[§16 The Classical Groups#^thm-16-2|§16.2]] Exactly Two Components.
 
@@ -75,7 +75,7 @@ The notes show the course building each object more than once and then proving t
 | Object | Versions in the notes | The theorem that connects them |
 | --- | --- | --- |
 | Tangent space | geometric $T^{\mathrm{geo}}_pM$ (Definition [[§25 The Geometric Tangent Space#^def-25-1\|§25.1]]), derivations of germs (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2\|§28.2]]), coordinate basis (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3\|§29.3]]), velocities (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2\|§31.2]]) | Theorem [[§25 The Geometric Tangent Space#^thm-25-3\|§25.3]] The Geometric Tangent Space Is the Kernel of the Jacobian; Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|§29.8]] Basis Theorem; Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9\|§29.9]] Ambient and Abstract Agree; Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4\|§31.4]] Every Tangent Vector Is a Velocity |
-| Cotangent space | dual of $T_pM$ (Definition [[§32 The Cotangent Space#^def-32-4\|§32.4]]), dual basis $dx^i$ (Definition [[§33 Covectors in Coordinates#^def-33-1\|§33.1]]), germs $I_p/I_p^2$ (Definition [[§34 The Cotangent Space from Germs#^def-34-1\|§34.1]]) | Lemma [[§33 Covectors in Coordinates#^lem-33-1\|§33.1]] The Differential in Coordinates; Theorem [[§34 The Cotangent Space from Germs#^thm-34-4\|§34.4]] The Cotangent Space from Germs |
+| Cotangent space | dual of $T_pM$ (Definition [[§32 The Cotangent Space#^def-32-4\|§32.4]]), dual basis $dx^i$ (Definition [[§33 Covectors in Coordinates#^def-33-1\|§33.1]]), germs $I_p/I_p^2$ (Definition [[§34 The Cotangent Space from Germs#^def-34-1\|§34.1]]) | Lemma [[§33 Covectors in Coordinates#^lem-33-1\|§33.1]] The Differential of a Function in Coordinates; Theorem [[§34 The Cotangent Space from Germs#^thm-34-4\|§34.4]] The Cotangent Space from Germs |
 | Differential | Jacobian (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-5\|§22.5]]), pushforward of derivations (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6\|§28.6]]), on curves | Theorem [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3\|§22.3]] Coordinate-Free Formula for the Differential; Theorem [[§30 The Differential in Coordinates#^thm-30-2\|§30.2]] The Matrix of the Differential; Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5\|§31.5]] Velocity of a Composite |
 | Smooth structure | atlas (Definition [[§17 Differentiable Structures#^def-17-8\|§17.8]]), maximal atlas (Definition [[§17 Differentiable Structures#^def-17-10\|§17.10]]) | Theorem [[§17 Differentiable Structures#^thm-17-6\|§17.6]] Every Atlas Lies in a Unique Maximal Atlas; Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-2\|§19.2]] Smoothness of a Map Does Not Depend on the Charts |
 | Submanifold of $\mathbb{R}^N$ | external and internal descriptions (Definition [[§20 Manifolds in Euclidean Space#^def-20-1\|§20.1]], Definition [[§20 Manifolds in Euclidean Space#^def-20-2\|§20.2]]), regular level set | Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1\|§20.1]] The Two Descriptions Agree; Proposition [[§37 Regular Submanifolds#^prop-37-12\|§37.12]] Regular Submanifolds of $\mathbb{R}^{n+k}$: The Fourth Description |
@@ -179,7 +179,7 @@ The notes show the course building each object more than once and then proving t
 - [ ] Definition [[§32 The Cotangent Space#^def-32-4|§32.4]] Cotangent Space, Definition [[§32 The Cotangent Space#^def-32-5|§32.5]] The Differential of a Function, Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]] Components of a Covector, Definition [[§34 The Cotangent Space from Germs#^def-34-1|§34.1]] The Space $I_p/I_p^2$, Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]] Pullback of Covectors
 
 **Proofs**
-- [ ] ★★ Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] The Differential in Coordinates
+- [ ] ★★ Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] The Differential of a Function in Coordinates
 - [ ] ★★ Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]] The Cotangent Space from Germs
 - [ ] ★ Proposition [[§34 The Cotangent Space from Germs#^prop-34-7|§34.7]] Pullback Commutes with $d$, Proposition [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]] The Pairing Is Well Defined and Non-Degenerate
 
@@ -189,7 +189,7 @@ The notes show the course building each object more than once and then proving t
 
 ## T6. Local diffeomorphisms and submersions (§35–§36)
 **Language**
-- [ ] Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]] Local Diffeomorphism, Definition [[§36 Submersions#^def-36-1|§36.1]] Submersion, Definition [[§36 Submersions#^def-36-2|§36.2]] Immersion, Definition [[§36 Submersions#^def-36-3|§36.3]] Regular Points and Critical Points, Definition [[§36 Submersions#^def-36-4|§36.4]] Regular Values and Critical Values
+- [ ] Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]] Local Diffeomorphism, Definition [[§36 Submersions#^def-36-1|§36.1]] Submersion, Definition [[§36 Submersions#^def-36-2|§36.2]] Immersion, Definition [[§36 Submersions#^def-36-3|§36.3]] Critical Point, Definition [[§36 Submersions#^def-36-4|§36.4]] Critical Value
 
 **Proofs**
 - [ ] ★★ Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]] Local Diffeomorphisms Are Detected by the Differential, from the inverse function theorem.
@@ -247,7 +247,7 @@ The notes show the course building each object more than once and then proving t
 
 ## T9. Immersions and embeddings (§43–§44)
 **Language**
-- [ ] Definition [[§36 Submersions#^def-36-2|§36.2]] Immersions, Definition [[§44 Embeddings#^def-44-1|§44.1]] Embedding, Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]] Proper Map, Definition [[§44 Embeddings#^def-44-2|§44.2]] Locally Closed Subset, Definition [[§44 Embeddings#^def-44-3|§44.3]] Immersed Submanifold
+- [ ] Definition [[§36 Submersions#^def-36-2|§36.2]] Immersion, Definition [[§44 Embeddings#^def-44-1|§44.1]] Embedding, Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]] Proper Map, Definition [[§44 Embeddings#^def-44-2|§44.2]] Locally Closed Subset, Definition [[§44 Embeddings#^def-44-3|§44.3]] Immersed Submanifold
 
 **Proofs**
 - [ ] ★★ Theorem [[§43 Immersions#^thm-43-1|§43.1]] Local Normal Form for Immersions
@@ -291,7 +291,7 @@ In scope exactly as Uribe's email lists it. Lie groups (§60–§61) are **not**
 
 **Proofs**
 - [ ] ★★ Lemma [[§56 Vector Fields#^lem-56-4|§56.4]] A Vector Field Is a Derivation and Proposition [[§56 Vector Fields#^prop-56-10|§56.10]] Derivations Are Vector Fields: the two views agree (derivations of $C^\infty(M)$ are vector fields).
-- [ ] ★★ Lemma [[§56 Vector Fields#^lem-56-9|§56.9]] Derivations Are Local: derivations are local; uses Corollary [[§56 Vector Fields#^cor-56-8|§56.8]] Every Germ Has a Global Representative (quote Proposition [[§56 Vector Fields#^cor-56-7|§56.7]] Bump Functions Exist).
+- [ ] ★★ Lemma [[§56 Vector Fields#^lem-56-9|§56.9]] Derivations Are Local: derivations are local; uses Corollary [[§56 Vector Fields#^cor-56-8|§56.8]] Every Germ Has a Global Representative (quote Corollary [[§56 Vector Fields#^cor-56-7|§56.7]] Bump Functions Exist).
 - [ ] ★★ Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]] The Bracket of Vector Fields Is a Vector Field: the bracket is again a vector field.
 - [ ] ★★ Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]] The Bracket in Coordinates: **compute brackets in coordinates**, e.g. Example [[§58 Lie Bracket and Lie Algebra#^ex-58-1|§58.1]] A Bracket in the Plane.
 - [ ] ★★ Proposition [[§59 Related Vector Fields#^prop-59-1|§59.1]] Related Fields as Operators and Proposition [[§59 Related Vector Fields#^prop-59-3|§59.3]] Naturality of the Bracket: $F$-related fields as operators, and naturality of the bracket.
@@ -326,7 +326,7 @@ Each one is a reusable move. Before writing a proof, name the move.
 Know each one's picture and the exact property it breaks.
 - [ ] Line with two origins (locally Euclidean + second countable, not Hausdorff): Example [[§2 Topological Manifolds#^ex-2-1|§2.1]] Fails $T_2$: The Line with Two Origins, Example [[§10 The Line with Two Origins#^ex-10-1|§10.1]] The Line with Two Origins
 - [ ] $\mathbb{Q}$ (not locally Euclidean); $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$ (not second countable): Example [[§2 Topological Manifolds#^ex-2-2|§2.2]] Fails Locally Euclidean: $\mathbb{Q}$, Example [[§2 Topological Manifolds#^ex-2-3|§2.3]] Fails Second Countability: $\mathbb{R}_{\mathrm{disc}} \times \mathbb{R}$
-- [ ] A non-open relation, and a non-second-countable quotient: Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]] Non-Example, Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]] Failure of Second Countability
+- [ ] A non-open relation, and a non-second-countable quotient: Example [[§4 Quotient Spaces and Open Maps#^ex-4-2|§4.2]] Non-Example: Gluing $0 \sim 1$ in $\mathbb{R}$ Is Not an Open Relation, Example [[§4 Quotient Spaces and Open Maps#^ex-4-3|§4.3]] Failure of Second Countability
 - [ ] A non-Hausdorff orbit space (the group must be compact): Example [[§13 Group Actions and Orbit Spaces#^ex-13-8|§13.8]] Compactness Is Needed: a Non-Hausdorff Orbit Space; an isotropy group that is not closed: Example [[§14 Homogeneous Spaces#^ex-14-1|§14.1]] An Isotropy Group That Is Not Closed
 - [ ] A continuous bijection that is not a homeomorphism: Example [[§15 The Topology of G∕H and Real Grassmannians#^ex-15-2|§15.2]] A Continuous Bijection That Is Not a Homeomorphism
 - [ ] Two smooth structures on $\mathbb{R}$ (the $x^3$ chart): Example [[§19 Smooth Functions and Smooth Maps#^ex-19-1|§19.1]] Two Smooth Structures on the Real Line, Example [[§19 Smooth Functions and Smooth Maps#^ex-19-2|§19.2]] The Real Line with the Cube-Root Chart

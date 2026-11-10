@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Assignment 3, Problem 2.* Tangent vectors were introduced with two faces: velocities of curves, and derivations (the [[§28 Derivations and the Abstract Tangent Space#^rem-28-1|remark]] at the start of [[§28 Derivations and the Abstract Tangent Space|§28, Derivations and the Abstract Tangent Space]]). For regular level sets the two were identified by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], through the ambient space. This section identifies them on *every* smooth manifold, with no ambient space at all.
 
 > [!definition] Definition §31.1: Smooth Curve
-> Let $J \subseteq \mathbb{R}$ be an open interval containing $0$, with its standard smooth structure and coordinate $t$. A **smooth curve** in $M$ is a smooth map $\gamma : J \to M$.
+> Let $J \subseteq \mathbb{R}$ be an open interval, with its standard smooth structure and coordinate $t$. A **smooth curve** in $M$ is a smooth map $\gamma : J \to M$.
 >
 > *Lee: Ch. 3, Velocity Vectors of Curves*
 
@@ -67,7 +67,7 @@ The explicit formula is the definition of the pushforward: $\gamma_{\ast 0}(d/dt
 >
 > Substituting into the universal formula gives the displayed formula.
 >
-> *Dependence on the coordinate curve.* By Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]](2), $x^j = r^j \circ \varphi$, so $x^j \circ \gamma = r^j \circ (\varphi \circ \gamma)$ is the $j$-th component of the coordinate curve $\varphi \circ \gamma$, and $(x^j \circ \gamma)'(0)$ is the $j$-th component of $(\varphi \circ \gamma)'(0) \in \mathbb{R}^n$. So all the coefficients of $D_\gamma$ are read off from $(\varphi \circ \gamma)'(0)$, and two curves through $p$ with the same velocity of their coordinate curves have the same $D_\gamma$.
+> *Dependence on the coordinate curve.* By Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $x^j = r^j \circ \varphi$, so $x^j \circ \gamma = r^j \circ (\varphi \circ \gamma)$ is the $j$-th component of the coordinate curve $\varphi \circ \gamma$, and $(x^j \circ \gamma)'(0)$ is the $j$-th component of $(\varphi \circ \gamma)'(0) \in \mathbb{R}^n$. So all the coefficients of $D_\gamma$ are read off from $(\varphi \circ \gamma)'(0)$, and two curves through $p$ with the same velocity of their coordinate curves have the same $D_\gamma$.
 
 ^pf-31-1
 
@@ -156,6 +156,17 @@ The coefficients are ordinary derivatives, computed *downstairs* on the coordina
 
 *Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-1|§31.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
 
+![[m591-12-14.svg]]
+*The proof of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]] in one picture. Downstairs, in the chart, the curve is the straight line through $\varphi(p)$ in the direction of the coefficient vector $a = (D[x^1], \ldots, D[x^n])$. The chart carries it upstairs to a curve $\gamma$ in $M$, bent by whatever distortion $\varphi^{-1}$ introduces. The bending is invisible to the velocity, which depends only on $(\varphi \circ \gamma)'(0) = a$ — so the velocity is $D$.*
+
+![[m591-12-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* Four curves on $S^2$ through $p$ with the same velocity $v$, built as $\gamma_k(t) = (p + tv + t^2w_k)/|\cdot|$ with different $w_k$ (chosen for the picture). They bend apart at second order; zooming in at $p$, they become one straight segment along $v$. A tangent vector is what all of them share.
+
+![[m591-12-15.svg]]
+
+The same construction as a diagram: the curve is built downstairs as $c$ and lifted by $\varphi^{-1}$, and the triangle commutes, $\varphi \circ \gamma = c$.
+
 Assignment 3's solution first treats the basis vectors $\partial/\partial x^i|_p$, using curves with $c'(0) = e_i$, and then the general case. The general argument contains the basis case, with $a = e_i$ and $c(t) = \varphi(p) + t\,e_i$, so it is presented here alone.
 
 > [!theorem] Corollary §31.5: Velocity of a Composite — Computing Differentials by Curves
@@ -198,16 +209,6 @@ $$
 $$
 
 the Jacobian carries the velocity of the coordinate curve $\varphi \circ \gamma$ to that of $\psi \circ F \circ \gamma$.
-
-![[m591-12-14.svg]]
-*The proof of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]] in one picture. Downstairs, in the chart, the curve is the straight line through $\varphi(p)$ in the direction of the coefficient vector $a = (D[x^1], \ldots, D[x^n])$. The chart carries it upstairs to a curve $\gamma$ in $M$, bent by whatever distortion $\varphi^{-1}$ introduces. The bending is invisible to the velocity, which depends only on $(\varphi \circ \gamma)'(0) = a$ — so the velocity is $D$.*
-
-![[m591-12-a1.gif|420]]
-
-*(Not from lecture; animation added, vault only.)* Four curves on $S^2$ through $p$ with the same velocity $v$, built as $\gamma_k(t) = (p + tv + t^2w_k)/|\cdot|$ with different $w_k$ (chosen for the picture). They bend apart at second order; zooming in at $p$, they become one straight segment along $v$. A tangent vector is what all of them share.
-
-![[m591-12-15.svg]]
-*The same construction as a diagram: the curve is built downstairs as $c$ and lifted by $\varphi^{-1}$, and the triangle commutes, $\varphi \circ \gamma = c$.*
 
 > [!theorem] Corollary §31.6: Tangent Vectors as Classes of Curves
 > Let $p \in M$, let $\gamma_1, \gamma_2$ be smooth curves in $M$ with $\gamma_1(0) = \gamma_2(0) = p$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|§31.1]]), and let $(U, \varphi)$ be a chart at $p$.

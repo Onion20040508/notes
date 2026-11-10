@@ -195,15 +195,25 @@ tags: [differentiable-manifolds, math591]
 The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, and why $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$ (the groups of Definitions [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|§11.7]] and [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|§11.8]] below), are collected in [[§16 The Classical Groups|§16]]; $\mathrm{U}(1) = S^1$ is Example [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|§11.3]].
 
 > [!definition] Definition §11.6: Special Linear Group
-> $\mathrm{SL}(n,\mathbb{R}) = \det^{-1}(1) \subseteq \mathrm{GL}(n,\mathbb{R})$, the matrices of determinant $1$. It is a subgroup ($\det$ is multiplicative), hence a topological group with the subspace topology ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-1|Proposition §11.1]]), and it is closed in $\operatorname{Mat}(n,\mathbb{R})$ (preimage of the closed set $\{1\}$).
+> The **special linear group** is $\mathrm{SL}(n,\mathbb{R}) = \det^{-1}(1) \subseteq \mathrm{GL}(n,\mathbb{R})$, the matrices of determinant $1$, with the subspace topology.
 
 ^def-11-6
-
-*Uses:* [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-1|§11.1]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11.4]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[Equivalent Conditions for Continuity|590 §10.1]]
 
 > [!remark]- Connections
 > - The group in 493: [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]]; $\mathrm{SL}_n = \ker\det$, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]].
 > - $\mathrm{SL}(n,\mathbb{R})$ is a manifold: [[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|§12.4]].
+
+> [!theorem] Proposition §11.5: $\mathrm{SL}({n,\mathbb{R}})$ Is a Closed Subgroup
+> $\mathrm{SL}(n,\mathbb{R})$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|§11.6]]) is a subgroup of $\mathrm{GL}(n,\mathbb{R})$, hence a topological group with the subspace topology, and it is closed in $\operatorname{Mat}(n,\mathbb{R})$.
+
+^prop-11-5
+
+> [!proof]+ Proof
+> It is a subgroup because $\det$ is multiplicative; hence it is a topological group with the subspace topology by Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-1|§11.1]], as $\mathrm{GL}(n,\mathbb{R})$ is one by Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11.4]]; and it is closed in $\operatorname{Mat}(n,\mathbb{R})$, being the preimage of the closed set $\{1\} \subseteq \mathbb{R}$ under $\det$, which is continuous by Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]]. *(Not from lecture; filled in.)* The subgroup check written out: $\det I = 1$, so $I \in \mathrm{SL}(n,\mathbb{R})$; if $\det g = \det h = 1$, then $\det(gh) = \det(g)\det(h) = 1$; and if $\det g = 1$, then $\det(g)\det(g^{-1}) = \det(gg^{-1}) = \det I = 1$ gives $\det(g^{-1}) = 1$.
+
+^pf-11-5
+
+*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^prop-11-1|§11.1]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11.4]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]]
 
 > [!definition] Definition §11.7: Orthogonal Group
 > The **orthogonal group** is
@@ -263,7 +273,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, and 
 > - The group in 493: [[§3 Basic Examples of Groups#^def-3-9|493 Def. §3.9]]; the rotation group of the cube, a finite subgroup of SO(3), is isomorphic to S₄, [[§32 Linear Groups, the Cube, S₃ and A₄#^thm-32-5|493 Thm. §32.5]].
 > - Used in Quantum Mechanics: the rotation group $SO(3)$ and its action on kets — [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^def-c5-1-1|QM Def. §C5.1.1]].
 
-> [!definition] Definition §11.9: Complex Matrices and $\mathrm{GL}(n,\mathbb{C})$
+> [!definition] Definition §11.9: Complex Matrices as a Euclidean Space
 > Once and for all, fix the $\mathbb{R}$-linear identification $\mathbb{C} \cong \mathbb{R}^2$, $x + iy \mapsto (x, y)$, and hence $\mathbb{C}^n \cong \mathbb{R}^{2n}$: explicitly, writing $z_j = x_j + i y_j$,
 >
 > $$
@@ -276,43 +286,185 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, and 
 > \operatorname{Mat}(n,\mathbb{C}) \longrightarrow \mathbb{R}^{2n^2}, \qquad g \longmapsto \big(\operatorname{Re} g_{11}, \operatorname{Im} g_{11},\ \operatorname{Re} g_{12}, \operatorname{Im} g_{12},\ \ldots,\ \operatorname{Re} g_{nn}, \operatorname{Im} g_{nn}\big),
 > $$
 >
-> which defines the topology on $\operatorname{Mat}(n,\mathbb{C})$. Then $\det : \operatorname{Mat}(n,\mathbb{C}) \to \mathbb{C} \cong \mathbb{R}^2$ is continuous (its real and imaginary parts are polynomials in these $2n^2$ real coordinates, since $\det$ is a polynomial in the complex entries), and
->
-> $$
-> \mathrm{GL}(n,\mathbb{C}) = \det{}^{-1}(\mathbb{C} \setminus \{0\}) = \{\text{invertible complex } n \times n \text{ matrices}\}
-> $$
->
-> is open in $\operatorname{Mat}(n,\mathbb{C})$ and is a topological group by the same algebraic argument as over $\mathbb{R}$.
+> which defines the topology on $\operatorname{Mat}(n,\mathbb{C})$.
 >
 > *Lee: Examples 7.29 and 7.30*
 
 ^def-11-9
 
-*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11.4]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
-
 > [!remark]- Connections
 > - $\mathbb{C} \cong \mathbb{R}^2$ in 590: [[§10 Continuous Functions#^ex-10-5|590 Ex. §10.5]].
 
+> [!theorem] Lemma §11.7: Complex Polynomials Are Continuous
+> Let $P$ be a polynomial with complex coefficients in $m$ complex variables $w_1, \ldots, w_m$. Under the identifications $\mathbb{C}^m \cong \mathbb{R}^{2m}$ and $\mathbb{C} \cong \mathbb{R}^2$ of Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]], the real and imaginary parts of $P$ are polynomials with real coefficients in the $2m$ real coordinates $\operatorname{Re} w_k$, $\operatorname{Im} w_k$. Consequently $P : \mathbb{C}^m \to \mathbb{C}$ is continuous.
+
+^lem-11-7
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* For complex numbers $a + ib$ and $c + id$, with $a, b, c, d$ real,
+>
+> $$
+> (a + ib) + (c + id) = (a + c) + i(b + d), \qquad (a + ib)(c + id) = (ac - bd) + i(ad + bc).
+> $$
+>
+> So the real and imaginary parts of a sum, and of a product, of two complex numbers are polynomials with real coefficients in the real and imaginary parts of the two numbers. The polynomial $P$ is built from the variables $w_k$ and from complex constants by finitely many sums and products. The real and imaginary parts of a variable $w_k$ are the coordinates $\operatorname{Re} w_k$ and $\operatorname{Im} w_k$ themselves, and those of a constant are real constants; so, by induction on the number of sums and products used to build $P$ and the two formulas above, $\operatorname{Re} P$ and $\operatorname{Im} P$ are polynomials with real coefficients in the $2m$ real coordinates (a sum or product of real polynomials being a real polynomial). Real polynomials are continuous on $\mathbb{R}^{2m}$, and a map into $\mathbb{C} \cong \mathbb{R}^2 = \mathbb{R} \times \mathbb{R}$ is continuous if and only if its two components are (Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]]). Hence $P$ is continuous.
+
+^pf-11-7
+
+*Uses:* [[§3 Subspaces and Products#^thm-3-10|§3.10]]
+
+> [!definition] Definition §11.10: Complex General Linear Group
+> The **complex general linear group** is
+>
+> $$
+> \mathrm{GL}(n,\mathbb{C}) = \det{}^{-1}(\mathbb{C} \setminus \{0\}) = \{\text{invertible complex } n \times n \text{ matrices}\} \subseteq \operatorname{Mat}(n,\mathbb{C}),
+> $$
+>
+> with the subspace topology of $\operatorname{Mat}(n,\mathbb{C})$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]]).
+>
+> *Lee: Examples 7.29 and 7.30*
+
+^def-11-10
+
+> [!theorem] Proposition §11.8: $\mathrm{GL}({n,\mathbb{C}})$ Is Open and a Topological Group
+> 1. $\det : \operatorname{Mat}(n,\mathbb{C}) \to \mathbb{C} \cong \mathbb{R}^2$ is continuous.
+> 2. $\mathrm{GL}(n,\mathbb{C})$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|§11.10]]) is open in $\operatorname{Mat}(n,\mathbb{C})$.
+> 3. $\mathrm{GL}(n,\mathbb{C})$ with the subspace topology is a topological group.
+
+^prop-11-8
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* This is the algebraic argument of Propositions [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]] and [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11.4]] over $\mathbb{C}$, with real and imaginary parts taken throughout. Recall that $\operatorname{Mat}(n,\mathbb{C})$ has the topology of $\mathbb{R}^{2n^2}$ through the real coordinates $\operatorname{Re} g_{ij}$, $\operatorname{Im} g_{ij}$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11.9]]); that is, it is $\mathbb{C}^{n^2} \cong \mathbb{R}^{2n^2}$ with the entries $g_{ij}$ as the complex variables.
+>
+> (1) By the Leibniz formula $\det(g) = \sum_{\sigma \in S_n} \operatorname{sgn}(\sigma) \prod_{i=1}^n g_{i,\sigma(i)}$, which holds for complex matrices as for real ones, $\det$ is a polynomial in the $n^2$ complex entries. So its real and imaginary parts are polynomials in these $2n^2$ real coordinates, and $\det$ is continuous, by Lemma [[§11 Topological Groups and Classical Matrix Groups#^lem-11-7|§11.7]].
+>
+> (2) The set $\mathbb{C} \setminus \{0\}$ is open in $\mathbb{C} \cong \mathbb{R}^2$: around $w \neq 0$ the open disc of radius $|w|$ does not contain $0$. So $\mathrm{GL}(n,\mathbb{C}) = \det^{-1}(\mathbb{C} \setminus \{0\})$ is the preimage of an open set under a map that is continuous by (1), hence open.
+>
+> (3) *Multiplication.* Each entry $(gh)_{ik} = \sum_j g_{ij} h_{jk}$ is a polynomial in the $2n^2$ complex entries of $(g, h) \in \operatorname{Mat}(n,\mathbb{C}) \times \operatorname{Mat}(n,\mathbb{C}) \cong \mathbb{R}^{2n^2} \times \mathbb{R}^{2n^2} = \mathbb{R}^{4n^2}$. By Lemma [[§11 Topological Groups and Classical Matrix Groups#^lem-11-7|§11.7]] its real and imaginary parts are polynomials in the $4n^2$ real coordinates, hence continuous. These are the $2n^2$ real components of the multiplication map $\operatorname{Mat}(n,\mathbb{C}) \times \operatorname{Mat}(n,\mathbb{C}) \to \operatorname{Mat}(n,\mathbb{C}) \cong \mathbb{R}^{2n^2}$, which is therefore continuous (Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]], applied one factor of $\mathbb{R}^{2n^2}$ at a time). Its restriction to $\mathrm{GL}(n,\mathbb{C}) \times \mathrm{GL}(n,\mathbb{C})$ (a subspace of the product, which is the product of the subspaces) is continuous and lands in $\mathrm{GL}(n,\mathbb{C})$, a product of invertible matrices being invertible; hence it is continuous into $\mathrm{GL}(n,\mathbb{C})$ by Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]].
+>
+> *Inversion.* The cofactor formula $g^{-1} = \operatorname{adj}(g)/\det(g)$ holds for complex matrices as for real ones; each entry of $\operatorname{adj}(g)$ is a polynomial $P$ in the complex entries of $g$, and $\det(g) \neq 0$ on $\mathrm{GL}(n,\mathbb{C})$. For complex numbers $p$ and $w = u + iv \neq 0$ ($u, v$ real),
+>
+> $$
+> \frac{p}{w} = \frac{p\,\bar w}{w \bar w} = \frac{p\,(u - iv)}{u^2 + v^2}.
+> $$
+>
+> Apply this with $p = P(g)$ and $w = \det(g)$, so that $u = \operatorname{Re}\det(g)$ and $v = \operatorname{Im}\det(g)$. By Lemma [[§11 Topological Groups and Classical Matrix Groups#^lem-11-7|§11.7]], the real and imaginary parts of $P(g)$, and $u$ and $v$, are real polynomials in the $2n^2$ real coordinates of $g$; hence so are the real and imaginary parts of the numerator $P(g)(u - iv)$ and the denominator $u^2 + v^2 = |\det(g)|^2$, and the denominator does not vanish on $\mathrm{GL}(n,\mathbb{C})$. So the real and imaginary parts of each entry of $g^{-1}$ are rational functions of the real coordinates with nonvanishing denominator on $\mathrm{GL}(n,\mathbb{C})$, hence continuous there. Thus inversion is continuous as a map $\mathrm{GL}(n,\mathbb{C}) \to \operatorname{Mat}(n,\mathbb{C})$ (Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]] again), and, taking values in $\mathrm{GL}(n,\mathbb{C})$, it is continuous into $\mathrm{GL}(n,\mathbb{C})$ by Proposition [[§3 Subspaces and Products#^prop-3-3|§3.3]].
+
+^pf-11-8
+
+*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11.4]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^lem-11-7|§11.7]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]]
+
 > [!definition] Definition §11.11: Unitary Group
-> The **unitary group**, a subgroup of $\mathrm{GL}(n,\mathbb{C})$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9]]), is
+> The **unitary group** is the subset
 >
 > $$
-> \mathrm{U}(n) = \{\, g \in \mathrm{GL}(n,\mathbb{C}) \mid g^{-1} = \bar{g}^{\,T} \,\},
+> \mathrm{U}(n) = \{\, g \in \mathrm{GL}(n,\mathbb{C}) \mid g^{-1} = \bar{g}^{\,T} \,\}
 > $$
 >
-> where $\bar g$ is the entrywise complex conjugate; $\bar g^{\,T}$ is also written $g^\dagger$ or $g^*$. It is the analogue of $\mathrm{O}(n)$ with the dot product replaced by the Hermitian inner product $\langle z, w \rangle = \sum_j z_j \bar w_j$: $g \in \mathrm{U}(n)$ iff $\langle gz, gw \rangle = \langle z, w \rangle$ for all $z, w$ (same proof as [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|Proposition §11.6]], with $\langle ge_i, ge_j \rangle = e_i^T g^T \bar{g}\, e_j$ in place of $e_i^T g^T g\, e_j$: it gives $g^T \bar{g} = I$, and taking complex conjugates, $\bar{g}^{\,T} g = I$).
+> of $\mathrm{GL}(n,\mathbb{C})$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|§11.10]]), with the subspace topology, where $\bar g$ is the entrywise complex conjugate; $\bar g^{\,T}$ is also written $g^\dagger$ or $g^{\ast}$. It is a subgroup of $\mathrm{GL}(n,\mathbb{C})$ (Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-10|§11.10]]).
 >
 > *Lee: Examples 7.29 and 7.30*
 
 ^def-11-11
-
-*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]]
 
 > [!remark]- Connections
 > - Unitary matrices in linear algebra: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].
 > - $\mathrm{U}(n)$ is a manifold of dimension $n^2$: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|Ex. §23.3]].
 > - Used in Quantum Mechanics: $U(2)$ and $SU(2)$ as the groups of spin-½ rotations, $SU(2) \cong S^3$, a double cover of $SO(3)$ — [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-7|QM Theorem §C5.2.7]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|QM Theorem §C5.2.8]].
 > - Used in Quantum Field Theory: $SU(2)$, identified with the sphere $S^3$, is compact, and averaging over it makes every finite-dimensional representation of $SU(2)$ and $SO(3)$ unitary and completely reducible; for the non-compact Lorentz group no nontrivial finite-dimensional representation is unitary — [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-16|QFT Theorem §CB.7.16]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|QFT Theorem §CB.17.15]].
+
+> [!definition] Definition §11.12: Hermitian Inner Product
+> The **Hermitian inner product** on $\mathbb{C}^n$ is
+>
+> $$
+> \langle z, w \rangle = \sum_{j=1}^n z_j \bar w_j, \qquad z, w \in \mathbb{C}^n .
+> $$
+
+^def-11-12
+
+> [!theorem] Proposition §11.9: Equivalent Description of $\mathrm{U}(n)$
+> For $g \in \mathrm{GL}(n,\mathbb{C})$ the following are equivalent, where $\langle z, w \rangle$ is the Hermitian inner product of Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-12|§11.12]]:
+>
+> 1. $\langle gz, gw \rangle = \langle z, w \rangle$ for all $z, w \in \mathbb{C}^n$;
+> 2. $\bar{g}^{\,T} g = I$;
+> 3. $g \in \mathrm{U}(n)$, that is, $g^{-1} = \bar{g}^{\,T}$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-11|§11.11]]).
+>
+> So $\mathrm{U}(n)$ is the analogue of $\mathrm{O}(n)$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|§11.7]]) with the dot product replaced by the Hermitian inner product.
+
+^prop-11-9
+
+> [!proof]+ Proof
+> This is the proof of Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]], with $\langle ge_i, ge_j \rangle = e_i^T g^T \bar{g}\, e_j$ in place of $e_i^T g^T g\, e_j$: it gives $g^T \bar{g} = I$, and taking complex conjugates, $\bar{g}^{\,T} g = I$. *(Not from lecture; filled in.)* Written out: regard vectors as columns, so that $\langle z, w \rangle = z^T \bar w$. Complex conjugation respects sums and products of complex numbers, so $\overline{gw} = \bar g\, \bar w$, and
+>
+> $$
+> \langle gz, gw \rangle = (gz)^T\, \overline{gw} = z^T g^T \bar g\, \bar w \qquad \text{for all } z, w \in \mathbb{C}^n. \tag{$\ast$}
+> $$
+>
+> For the same reason the entrywise conjugate of the matrix $\bar g^{\,T} g$ is $g^T \bar g$, and $\bar I = I$; so $\bar g^{\,T} g = I$ if and only if $g^T \bar g = I$.
+>
+> (ii) $\Rightarrow$ (i): if $\bar g^{\,T} g = I$, then $g^T \bar g = I$, and $(\ast)$ reads $\langle gz, gw \rangle = z^T \bar w = \langle z, w \rangle$.
+>
+> (i) $\Rightarrow$ (ii): take $z = e_i$ and $w = e_j$ in $(\ast)$; as $e_j$ is real, $\bar e_j = e_j$, and
+>
+> $$
+> (g^T \bar g)_{ij} = e_i^T g^T \bar g\, e_j = \langle ge_i, ge_j \rangle = \langle e_i, e_j \rangle = \delta_{ij}.
+> $$
+>
+> So $g^T \bar g = I$, and therefore $\bar g^{\,T} g = I$.
+>
+> (ii) $\iff$ (iii): for square matrices a one-sided inverse is two-sided, so $\bar g^{\,T} g = I$ holds if and only if $g^{-1} = \bar g^{\,T}$, which is the condition defining $\mathrm{U}(n)$.
+
+^pf-11-9
+
+*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]]
+
+> [!theorem] Proposition §11.10: $\mathrm{O}(n)$ and $\mathrm{SO}(n)$ and $\mathrm{U}(n)$ Are Subgroups
+> 1. $\mathrm{O}(n,\mathbb{R})$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|§11.7]]) is a subgroup of $\mathrm{GL}(n,\mathbb{R})$.
+> 2. $\mathrm{SO}(n,\mathbb{R})$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|§11.8]]) is a subgroup of $\mathrm{GL}(n,\mathbb{R})$, contained in $\mathrm{O}(n,\mathbb{R})$.
+> 3. $\mathrm{U}(n)$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-11|§11.11]]) is a subgroup of $\mathrm{GL}(n,\mathbb{C})$.
+>
+> Consequently each of $\mathrm{O}(n,\mathbb{R})$, $\mathrm{SO}(n,\mathbb{R})$ and $\mathrm{U}(n)$, with the subspace topology, is a topological group.
+
+^prop-11-10
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* In each case it is shown that the subset contains $I$ and is closed under products and inverses.
+>
+> (1) By Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]], $\mathrm{O}(n,\mathbb{R}) = \{\, g \in \mathrm{GL}(n,\mathbb{R}) \mid g^T g = I \,\}$. *Identity:* $I^T I = I$. *Products:* if $g^T g = I$ and $h^T h = I$, then $gh \in \mathrm{GL}(n,\mathbb{R})$ and
+>
+> $$
+> (gh)^T (gh) = h^T g^T g\, h = h^T h = I .
+> $$
+>
+> *Inverses:* if $g \in \mathrm{O}(n,\mathbb{R})$, then $g^{-1} = g^T$ by (iii) of Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]], so
+>
+> $$
+> (g^{-1})^T g^{-1} = (g^T)^T g^T = g\, g^T = g\, g^{-1} = I ,
+> $$
+>
+> that is, $g^{-1} \in \mathrm{O}(n,\mathbb{R})$.
+>
+> (2) $\mathrm{SO}(n,\mathbb{R}) = \mathrm{O}(n,\mathbb{R}) \cap \mathrm{SL}(n,\mathbb{R})$ is the intersection of two subgroups of $\mathrm{GL}(n,\mathbb{R})$, by (1) and Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]]. It contains $I$, which lies in both; and if $g, h$ lie in both, so do $gh$ and $g^{-1}$, each of the two being closed under products and inverses. So it is a subgroup, and it is contained in $\mathrm{O}(n,\mathbb{R})$ by its definition.
+>
+> (3) By Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-9|§11.9]], $\mathrm{U}(n) = \{\, g \in \mathrm{GL}(n,\mathbb{C}) \mid \bar g^{\,T} g = I \,\}$. *Identity:* $\bar I^{\,T} I = I$. *Products:* complex conjugation respects sums and products, so $\overline{gh} = \bar g\, \bar h$; if $\bar g^{\,T} g = I$ and $\bar h^{\,T} h = I$, then $gh \in \mathrm{GL}(n,\mathbb{C})$ and
+>
+> $$
+> \overline{gh}^{\,T} (gh) = (\bar g\, \bar h)^T g\, h = \bar h^{\,T}\, \bar g^{\,T} g\, h = \bar h^{\,T} h = I .
+> $$
+>
+> *Inverses:* if $g \in \mathrm{U}(n)$, then $g^{-1} = \bar g^{\,T}$, whose entrywise conjugate is $g^T$, so
+>
+> $$
+> \overline{g^{-1}}^{\,T} g^{-1} = (g^T)^T\, \bar g^{\,T} = g\, \bar g^{\,T} = g\, g^{-1} = I ,
+> $$
+>
+> that is, $g^{-1} \in \mathrm{U}(n)$.
+>
+> *Topological groups.* $\mathrm{GL}(n,\mathbb{R})$ and $\mathrm{GL}(n,\mathbb{C})$ are topological groups (Propositions [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11.4]] and [[§11 Topological Groups and Classical Matrix Groups#^prop-11-8|§11.8]]), and a subgroup of a topological group is a topological group in the subspace topology (Proposition [[§11 Topological Groups and Classical Matrix Groups#^prop-11-1|§11.1]]).
+
+^pf-11-10
+
+*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-9|§11.9]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11.4]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-8|§11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-1|§11.1]]
 
 > [!example] Example §11.3: $\mathrm{U}(1)$ Is the Circle
 > A $1 \times 1$ complex matrix is a number $\xi \in \mathbb{C}$, all such matrices are symmetric, and the condition $\xi^{-1} = \bar\xi$ reads $\xi \bar\xi = |\xi|^2 = 1$. So

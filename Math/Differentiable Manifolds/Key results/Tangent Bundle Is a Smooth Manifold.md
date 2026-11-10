@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 51.2", "smooth atlas of TM", "Lee Proposition 3.18"]
+aliases: ["MATH 591 51.3", "smooth atlas of TM", "Lee Proposition 3.18"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§51 The Tangent Bundle#^prop-51-3]]
@@ -21,7 +21,6 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4: The Topology and Smooth Structure of TM]]
-- [[§51 The Tangent Bundle#^prop-51-1|Proposition §51.1: The Tangent Bundle Is a Manifold (Claim)]]
 - [[§52 The Cotangent Bundle#^prop-52-1|Proposition §52.1: The Transition Maps of T^(ast)M]]
 - [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]
 

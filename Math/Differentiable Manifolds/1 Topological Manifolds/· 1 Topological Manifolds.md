@@ -9,8 +9,8 @@ tags: [chapter, differentiable-manifolds]
 
 
 
-**Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (7), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (2)
-**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (68), [[· 3 Smooth Structures|3 Smooth Structures]] (73), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (41), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (37), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (32), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (14), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 9 Sard's Theorem|9 Sard's Theorem]] (4), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (2)
+**Builds on:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (6), [[· 3 Smooth Structures|3 Smooth Structures]] (3), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (2), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (2)
+**Used by:** [[· 2 Topological Groups and Homogeneous Spaces|2 Topological Groups and Homogeneous Spaces]] (72), [[· 3 Smooth Structures|3 Smooth Structures]] (74), [[· 4 Tangent and Cotangent Spaces|4 Tangent and Cotangent Spaces]] (41), [[· 5 Submersions, Submanifolds and Fibrations|5 Submersions, Submanifolds and Fibrations]] (37), [[· 6 Immersions, Embeddings and Examples|6 Immersions, Embeddings and Examples]] (35), [[· 7 Tangent and Cotangent Bundles|7 Tangent and Cotangent Bundles]] (14), [[· 8 Vector Fields and Lie Groups|8 Vector Fields and Lie Groups]] (1), [[· 9 Sard's Theorem|9 Sard's Theorem]] (4), [[· 10 Integral Curves and Flows|10 Integral Curves and Flows]] (2)
 **Builds on (other subjects):** [[Linear Algebra]] (8), [[Topology]] (69), [[Multivariable Analysis]] (6)
 
 ## Sections
@@ -31,12 +31,12 @@ tags: [chapter, differentiable-manifolds]
 - [[Hausdorff Criterion for Open Quotients]] (§6.1)
 - [[Second Countability of Open Quotients]] (§6.3)
 - [[Implicit Function Theorem (vector-valued)]] (§7.2)
-- [[Regular Value Theorem (Euclidean)]] (§7.5)
+- [[Regular Value Theorem (Euclidean)]] (§7.6)
 - [[ℂPⁿ Is Hausdorff and Second Countable]] (§9.1)
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]: 369 later results
-- [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3: Universal Property of the Subspace Topology]]: 366 later results
-- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 362 later results
-- [[§4 Quotient Spaces and Open Maps#^prop-4-1|Proposition §4.1: The Quotient Topology Is the Finest Making π Continuous]]: 362 later results
+- [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]: 388 later results
+- [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3: Universal Property of the Subspace Topology]]: 383 later results
+- [[§1 Point-Set Topology Review#^prop-1-1|Proposition §1.1: Equivalent Formulation of a Basis]]: 381 later results
+- [[§3 Subspaces and Products#^lem-3-2|Lemma §3.2: Open in Open is Open]]: 380 later results

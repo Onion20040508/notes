@@ -57,7 +57,7 @@ tags: [differentiable-manifolds, math591]
 
 ![[m591-16-a2.gif|460]]
 
-*(Not from lecture; animation added, vault only.)* The strip with its fibres (gray) and core (orange) bends round, and its ends are glued by $(0, t) \sim (1, -t)$, matching the red arrows: a half-twist. The boundary is then traced: one curve, running round twice. Last, a section $[s] \mapsto [s, f(s)]$ (green) needs $f(s + 1) = -f(s)$, so $f$ changes sign and vanishes somewhere (red); this observation is not in the notes.
+*(Not from lecture; animation added, vault only.)* The strip with its fibres (gray) and core (orange) bends round, and its ends are glued by $(0, t) \sim (1, -t)$, matching the red arrows: a half-twist. The boundary is then traced: one curve, running round twice. Last, a section $[s] \mapsto [s, f(s)]$ (green) needs $f(s + 1) = -f(s)$, so $f$ changes sign and vanishes somewhere (red): Corollary [[§41 Examples of Fibrations#^cor-41-2|§41.2]].
 
 > [!remark]- Connections
 > - $E$ is the orbit space of $\mathbb{Z}$ acting on $\mathbb{R} \times (-1,1)$: [[§13 Group Actions and Orbit Spaces#^def-13-5|Def. §13.5]]; quotient spaces in 590: [[§13 Quotient Topology#^def-13-3|590 Def. §13.3]].
@@ -122,6 +122,54 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-4|Def. §13.4]], [[§13 Group Actions and Orbit Spaces#^def-13-1|Def. §13.1]], [[§11 Topological Groups and Classical Matrix Groups#^ex-11-1|Ex. §11.1]], [[§13 Group Actions and Orbit Spaces#^def-13-2|Def. §13.2]], [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]], [[§4 Quotient Spaces and Open Maps#^def-4-2|Def. §4.2]], [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§17 Differentiable Structures#^ex-17-4|Ex. §17.4]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§40 Fibrations#^def-40-1|Def. §40.1]]
 
 The sign in (3) is the half-twist: going once around the circle, the two trivializations agree on one arc and differ by $t \mapsto -t$ on the other. Over either arc alone the band is a product; the sign is what a global product would have to remove.
+
+> [!theorem] Corollary §41.2: Every Section of the Möbius Band Meets the Core Circle
+> *(Not from lecture; filled in.)* Let $\pi : E \to \mathbb{R}/\mathbb{Z}$ be the Möbius band, with the notation of Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]], and let
+>
+> $$
+> C = \{\, [s, 0] : s \in \mathbb{R} \,\} = q\big(\mathbb{R} \times \{0\}\big) \subseteq E
+> $$
+>
+> be its *core circle*. If $\sigma : \mathbb{R}/\mathbb{Z} \to E$ is continuous with $\pi \circ \sigma = \mathrm{id}$ — in particular if $\sigma$ is a section of $\pi$ (Definition [[§40 Fibrations#^def-40-3|§40.3]]) — then $\sigma(b) \in C$ for some $b \in \mathbb{R}/\mathbb{Z}$.
+
+^cor-41-2
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* We describe $\sigma$ by a function $f : \mathbb{R} \to (-1, 1)$, show that $f(s + 1) = -f(s)$ and that $f$ is continuous, and apply the intermediate value theorem. As in the proof of Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]], $g_n(s, t) = (s + n, (-1)^n t)$, and $q(s', t') = q(s, t)$ exactly when $(s', t') = g_n(s, t)$ for some $n \in \mathbb{Z}$.
+>
+> *The function $f$.* Fix $s \in \mathbb{R}$. The fibre is $\pi^{-1}([s]) = \{\, q(s, t) : t \in (-1, 1) \,\}$: each $q(s, t)$ lies in it, since $\pi[s, t] = [s]$; and if $\pi(q(s', t')) = [s]$, then $s' = s + n$ for some $n \in \mathbb{Z}$, and $q(s', t') = q\big(g_{-n}(s', t')\big) = q\big(s, (-1)^n t'\big)$. Moreover $q(s, t) = q(s, t')$ only if $t = t'$: then $(s, t') = g_n(s, t)$, so $n = 0$. Since $\pi(\sigma([s])) = [s]$, there is therefore exactly one $f(s) \in (-1, 1)$ with
+>
+> $$
+> \sigma([s]) = q\big(s, f(s)\big) .
+> $$
+>
+> *$f(s + 1) = -f(s)$.* Since $[s + 1] = [s]$ and $q(s, t) = q\big(g_1(s, t)\big) = q(s + 1, -t)$,
+>
+> $$
+> q\big(s + 1, f(s + 1)\big) = \sigma([s + 1]) = \sigma([s]) = q\big(s, f(s)\big) = q\big(s + 1, -f(s)\big) ,
+> $$
+>
+> and the uniqueness just shown, at $s + 1$, gives $f(s + 1) = -f(s)$.
+>
+> *$f$ is continuous.* The map $\mathrm{p} : \mathbb{R} \to \mathbb{R}/\mathbb{Z}$, $\mathrm{p}(s) = [s]$, is continuous: $h \circ \mathrm{p}(s) = (\cos 2\pi s, \sin 2\pi s)$ is continuous, and $h$ is a homeomorphism, the topology of $\mathbb{R}/\mathbb{Z}$ being transported along $h$ (proof of Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]], *The base*). Let $s_0 \in \mathbb{R}$. There are $a \in \{0, \tfrac12\}$ and $n \in \mathbb{Z}$ with $s_0 - n \in I_a$ (proof of Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]](1): the sets $W_0, W_{1/2}$ cover $E$). For every $s$ in the open interval $n + I_a$, which contains $s_0$,
+>
+> $$
+> \sigma([s]) = q\big(s, f(s)\big) = q\big(g_{-n}(s, f(s))\big) = q\big(s - n, (-1)^n f(s)\big), \qquad s - n \in I_a ,
+> $$
+>
+> so $\sigma([s]) \in W_a$ and $\psi_a\big(\sigma([s])\big) = \big(s - n, (-1)^n f(s)\big)$, by the definition of $\psi_a$ as the inverse of $q|_{I_a \times (-1, 1)}$. Hence on $n + I_a$
+>
+> $$
+> f = (-1)^n\, \mathrm{pr}_2 \circ \psi_a \circ \sigma \circ \mathrm{p} ,
+> $$
+>
+> with $\mathrm{pr}_2(s, t) = t$, a composite of continuous maps ($\psi_a$ is a homeomorphism of $W_a$ onto $I_a \times (-1, 1)$, Proposition [[§41 Examples of Fibrations#^prop-41-1|§41.1]](1)). So $f$ is continuous near $s_0$, and $s_0$ was arbitrary.
+>
+> *A zero of $f$.* If $f(0) = 0$, put $s_\ast = 0$. Otherwise $f(0)$ and $f(1) = -f(0)$ have opposite signs, and by the intermediate value theorem the continuous function $f$ has a zero $s_\ast \in (0, 1)$. In both cases $\sigma([s_\ast]) = q(s_\ast, 0) = [s_\ast, 0] \in C$, so $b = [s_\ast]$ is as claimed.
+
+^pf-41-2
+
+*Uses:* [[§41 Examples of Fibrations#^prop-41-1|§41.1]]
 
 ## Further Examples
 

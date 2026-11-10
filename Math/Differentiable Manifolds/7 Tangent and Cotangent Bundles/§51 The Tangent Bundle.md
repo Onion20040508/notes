@@ -65,7 +65,21 @@ tags: [differentiable-manifolds, math591]
 
 *(Not from lecture; animation added, vault only.)* The left picture of the figure turns into the right one: each tangent line $T_pS^1$ (red) stands up over its point, and the crossing lines become the disjoint fibres of the cylinder $S^1 \times \mathbb{R}$, with the zero section (blue) round the waist. Then a vector field, $X = (0.2 + 0.7\sin 2\theta)\,\partial_\theta$ (chosen for the picture), drawn as a section (green). It crosses the waist exactly at the four zeros of $X$.
 
-*Status.* [[§51 The Tangent Bundle#^prop-51-1|Proposition §51.1]], below, was stated in Lecture 12 — its proof takes a lot of detail — and made precise in Lecture 13 ([[§51 The Tangent Bundle#Trivializations and Charts|Trivializations and Charts]]), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; together these identifications give a map $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
+> [!theorem] Proposition §51.1: The Tangent Bundle Is a Manifold (Claim)
+> $TM$ has a natural topology and smooth structure making it a smooth manifold of dimension $2m$, for which $\pi : TM \to M$ is a fibration with fibre $\mathbb{R}^m$, and the image $\zeta(M)$ of the zero section is a submanifold of $TM$.
+>
+> *Lee: Proposition 3.18*
+
+^prop-51-1
+
+> [!proof]+ Proof
+> [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4]] gives the topology, and [[§51 The Tangent Bundle#^cor-51-5|Corollary §51.5]] the smooth structure, the fibration with fibre $\mathbb{R}^m$, and the zero section as a submanifold; both are stated and proved below, in [[§51 The Tangent Bundle|§51]], and neither proof uses this proposition.
+
+^pf-51-1
+
+*Uses:* [[§51 The Tangent Bundle#^prop-51-4|§51.4]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]], [[§51 The Tangent Bundle#^cor-51-5|§51.5]]
+
+*Status.* Proposition [[§51 The Tangent Bundle#^prop-51-1|§51.1]] was stated in Lecture 12 — its proof takes a lot of detail — and made precise in Lecture 13 ([[§51 The Tangent Bundle|§51]]), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; together these identifications give a map $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
 
 ## Trivializations and Charts
 
@@ -293,7 +307,7 @@ Lemma [[§51 The Tangent Bundle#^lem-51-2|§51.2]] builds the topology and smoot
 > 2. the $\Phi$ are local trivializations, so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and each $\Phi$ restricts on the fibre $T_pM$ to a linear isomorphism $T_pM \to \{p\} \times \mathbb{R}^m$;
 > 3. the image $\zeta(M)$ of the zero section is a submanifold of $TM$ of codimension $m$.
 >
-> With Proposition [[§51 The Tangent Bundle#^prop-51-4|§51.4]], this proves Proposition [[§51 The Tangent Bundle#^prop-51-1|§51.1]] below in full.
+> With Proposition [[§51 The Tangent Bundle#^prop-51-4|§51.4]], this proves Proposition [[§51 The Tangent Bundle#^prop-51-1|§51.1]], the claim of Lecture 12, in full.
 
 ^cor-51-5
 
@@ -329,20 +343,6 @@ Lemma [[§51 The Tangent Bundle#^lem-51-2|§51.2]] builds the topology and smoot
 ^pf-51-5
 
 *Uses:* [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^prop-51-4|§51.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§51 The Tangent Bundle#^def-51-2|Def. §51.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
-
-> [!theorem] Proposition §51.1: The Tangent Bundle Is a Manifold (Claim)
-> $TM$ has a natural topology and smooth structure making it a smooth manifold of dimension $2m$, for which $\pi : TM \to M$ is a fibration with fibre $\mathbb{R}^m$, and the image $\zeta(M)$ of the zero section is a submanifold of $TM$.
->
-> *Lee: Proposition 3.18*
-
-^prop-51-1
-
-> [!proof]+ Proof
-> [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4]] gives the topology, and [[§51 The Tangent Bundle#^cor-51-5|Corollary §51.5]] the smooth structure, the fibration with fibre $\mathbb{R}^m$, and the zero section as a submanifold.
-
-^pf-51-1
-
-*Uses:* [[§51 The Tangent Bundle#^prop-51-4|§51.4]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]], [[§51 The Tangent Bundle#^cor-51-5|§51.5]]
 
 > [!remark] Remark: Vector Bundles
 > $TM$ is in fact a *vector bundle*: a fibration whose fibres are vector spaces, with trivializations that are linear isomorphisms on each fibre. The general definition is postponed, but these are its two features: the fibres are abstract vector spaces, and there are trivializations which restrict to linear isomorphisms fibrewise. Vector bundles are objects of interest in their own right; K-theory is built from them.

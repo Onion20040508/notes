@@ -16,7 +16,7 @@ Throughout, $M$ is a smooth manifold of dimension $m$ and $f : M \to \mathbb{R}$
 ## The Hessian Matrix
 
 > [!definition] Definition §54.1: Hessian Matrix
-> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$, $p \in U$, and $f_\varphi = f \circ \varphi^{-1} : \varphi(U) \to \mathbb{R}$ the coordinate representation of $f$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]](3)). The **Hessian matrix** of $f$ at $p$ in the chart is the $m \times m$ matrix $H_p = \big(H_{ij}(p)\big)$ of second partial derivatives of $f_\varphi$ at $\varphi(p)$:
+> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$, $p \in U$, and $f_\varphi = f \circ \varphi^{-1} : \varphi(U) \to \mathbb{R}$ the coordinate representation of $f$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]). The **Hessian matrix** of $f$ at $p$ in the chart is the $m \times m$ matrix $H_p = \big(H_{ij}(p)\big)$ of second partial derivatives of $f_\varphi$ at $\varphi(p)$:
 >
 > $$
 > H_{ij}(p) = \frac{\partial^2 f_\varphi}{\partial r^i\, \partial r^j}\big(\varphi(p)\big), \qquad i, j = 1, \ldots, m,
@@ -137,7 +137,7 @@ The function $f_\varphi$ is smooth on the open set $\varphi(U)$ (Proposition [[�
 >
 > *Setting up.* Restrict both charts to $U \cap V \ni p$; the restrictions are smooth charts by Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1), applied to the open subset $U \cap V$ of $U$ and of $V$. This changes neither the Hessian matrices at $p$ nor any partial derivative at $p$: these are ordinary partial derivatives at $\varphi(p)$ or $\psi(p)$ of coordinate representations, which only get restricted to an open set around that point. So assume $U = V$. Let $\tau = \psi \circ \varphi^{-1} : \varphi(U) \to \psi(U)$ be the transition map, smooth because the charts are compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]), with components $\tau^k = r^k \circ \tau$. Put $a = \varphi(p)$, so $\tau(a) = \psi(p)$.
 >
-> *Three translations between upstairs and downstairs.* (i) $f_\varphi = f_\psi \circ \tau$ on $\varphi(U)$: for $r \in \varphi(U)$, $\varphi^{-1}(r) \in U$, so $f_\psi(\tau(r)) = f\big(\psi^{-1}(\psi(\varphi^{-1}(r)))\big) = f(\varphi^{-1}(r)) = f_\varphi(r)$. (ii) $y^k \circ \varphi^{-1} = r^k \circ \psi \circ \varphi^{-1} = \tau^k$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]](2) for $\psi$), a smooth function on $\varphi(U)$; so $y^k$ is smooth on $U$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]], with the chart $\varphi$), with coordinate representation $(y^k)_\varphi = \tau^k$. Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]], applied to $y^k \in C^\infty(U)$, gives that $\partial y^k/\partial x^j$ is smooth on $U$ and, for every $q \in U$,
+> *Three translations between upstairs and downstairs.* (i) $f_\varphi = f_\psi \circ \tau$ on $\varphi(U)$: for $r \in \varphi(U)$, $\varphi^{-1}(r) \in U$, so $f_\psi(\tau(r)) = f\big(\psi^{-1}(\psi(\varphi^{-1}(r)))\big) = f(\varphi^{-1}(r)) = f_\varphi(r)$. (ii) $y^k \circ \varphi^{-1} = r^k \circ \psi \circ \varphi^{-1} = \tau^k$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] for $\psi$), a smooth function on $\varphi(U)$; so $y^k$ is smooth on $U$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]], with the chart $\varphi$), with coordinate representation $(y^k)_\varphi = \tau^k$. Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]], applied to $y^k \in C^\infty(U)$, gives that $\partial y^k/\partial x^j$ is smooth on $U$ and, for every $q \in U$,
 >
 > $$
 > \frac{\partial y^k}{\partial x^j}(q) = \frac{\partial \tau^k}{\partial r^j}\big(\varphi(q)\big), \quad\text{that is,}\quad \frac{\partial y^k}{\partial x^j} \circ \varphi^{-1} = \frac{\partial \tau^k}{\partial r^j} \ \text{ on } \varphi(U) ;
@@ -338,17 +338,22 @@ The next proposition makes the condition concrete. Since $\operatorname{Hess}_p 
 
 ^def-54-4
 
-> [!definition] Definition §54.5: Morse Index
-> Let $p \in \operatorname{Crit}(f)$. The **index** of $f$ at $p$ (the **Morse index**) is the number of negative eigenvalues, counted with multiplicity, of the Hessian matrix $H_p$ (Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]) in a smooth chart at $p$. It does not depend on the chart.
+> [!theorem] Lemma §54.5: The Negative Eigenvalues of the Hessian Matrix at a Critical Point
+> Let $p \in \operatorname{Crit}(f)$. The number of negative eigenvalues, counted with multiplicity, of the Hessian matrix $H_p$ (Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]; a real symmetric matrix, by Proposition [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]](2)) is the same in every smooth chart at $p$.
 
-^def-54-5
+^lem-54-5
 
 > [!proof]+ Proof (not given in this course)
 > *(Not from lecture; Sylvester's law is not proved here.)* At a critical point $p$, $H^{(x)}_p = J^{\mathsf T} H^{(y)}_p J$ with $J$ invertible (Proposition [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]]). By *Sylvester's law of inertia*, a real symmetric matrix $H$ and $J^{\mathsf T} H J$, $J$ invertible, have the same numbers of positive, negative and zero eigenvalues. So the number of negative eigenvalues of $H_p$ does not depend on the chart.
 
-^pf-def-54-5
+^pf-54-5
 
 *Uses:* [[§54 Critical Points and the Hessian#^prop-54-2|§54.2]]
+
+> [!definition] Definition §54.5: Morse Index
+> Let $p \in \operatorname{Crit}(f)$. The **index** of $f$ at $p$ (the **Morse index**) is the number of negative eigenvalues, counted with multiplicity, of the Hessian matrix $H_p$ (Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]) in a smooth chart at $p$. It does not depend on the chart, by Lemma [[§54 Critical Points and the Hessian#^lem-54-5|§54.5]].
+
+^def-54-5
 
 > [!example] Example §54.2: The Saddle $x^2 - y^2$
 > *(Not from lecture.)* The function $f = x^2 - y^2$ on $\mathbb{R}^2$ has the single critical point $0$, with Hessian matrix $H_0 = \mathrm{diag}(2, -2)$: it is nondegenerate (Definition [[§54 Critical Points and the Hessian#^def-54-3|§54.3]]), of index $1$ (Definition [[§54 Critical Points and the Hessian#^def-54-5|§54.5]]).

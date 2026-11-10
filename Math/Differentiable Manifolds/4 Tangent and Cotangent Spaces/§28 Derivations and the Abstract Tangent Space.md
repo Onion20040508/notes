@@ -209,7 +209,7 @@ Both parts were set as an exercise in Lecture 9; (2) is a direct consequence of 
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§27 Germs#^prop-27-2|§27.2]]
 
-Both steps borrowed from Lee are now in these notes: bump functions are Proposition [[§56 Vector Fields#^cor-56-7|§56.7]] (existence stated, proof deferred in lecture), the global representative of a germ is Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], and locality of derivations is Lemma [[§56 Vector Fields#^lem-56-9|§56.9]] (Lecture 16).
+Both steps borrowed from Lee are now in these notes: bump functions are Corollary [[§56 Vector Fields#^cor-56-7|§56.7]] (existence stated, proof deferred in lecture), the global representative of a germ is Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], and locality of derivations is Lemma [[§56 Vector Fields#^lem-56-9|§56.9]] (Lecture 16).
 
 **Comparison with Lee.** This is where the course's algebraic route and Lee's part company. Lee works with global functions and pays for locality with bump functions: Proposition 3.8 shows a derivation of $C^\infty(M)$ only sees a function near $p$, and Proposition 3.9 identifies $T_pU$ with $T_pM$. Germs build locality into the definition, so the course needs no bump functions at all — Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] is pure algebra. The proposition above is the bridge. Since the two spaces are isomorphic, every result about $T_pM$ in these notes transfers to Lee's, and conversely.
 
@@ -388,7 +388,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 > - The chain rule of calculus: [[Multivariable Chain Rule|452 §12.2 (Multivariable Chain Rule)]].
 > - Duals compose in the opposite order, $(ST)' = T'S'$: [[§12 Duality#^ladr-3-120|LADR 3.120]]; 591's version, [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]].
 
-**Lecture 10.** Stated as the Chain Rule, with the pullback identity $(G \circ F)_p^{\ast} = F_p^{\ast} \circ G_{F(p)}^{\ast}$ proved on the board and the dualization left as an exercise; the displayed computation above is that exercise. Pullbacks compose in the *opposite* order, so pushforwards, being their duals, compose in the *same* order as the maps. (The theorem appeared here, ahead of the lecture, because the two results below depend on it.)
+Pullbacks compose in the *opposite* order, so pushforwards, being their duals, compose in the *same* order as the maps.
 
 > [!theorem] Corollary §28.7: Diffeomorphisms Induce Isomorphisms
 > If $\Phi : M \to N$ is a diffeomorphism, then $\Phi_{*p} : T_pM \to T_{\Phi(p)}N$ is a linear isomorphism, with inverse $(\Phi^{-1})_{*\Phi(p)}$.

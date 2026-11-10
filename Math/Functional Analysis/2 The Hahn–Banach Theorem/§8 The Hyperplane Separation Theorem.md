@@ -79,11 +79,11 @@ In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies s
 *(Not from lecture; animation added, vault only.)* $y_0$ (black) goes once around a convex $K$ (chosen for the picture). The separating line $\{\ell = c_0\}$ (red) passes through $y_0$ and keeps $K$ in $\{\ell < c_0\}$; the shaded side is $\{\ell > c_0\}$. Here $\ell$ is taken along $y_0 - q$, $q$ the point of $K$ nearest to $y_0$ (dotted).
 
 > [!remark] Remark
-> Everything in the proof was already in place; the theorem is an assembly. The gauge converts the geometric hypothesis (convex, all points interior, $y_0$ outside) into an inequality $p_K(y_0) \ge 1 = \ell(y_0)$ on a one-dimensional subspace; Hahn–Banach extends $\ell$ without breaking $\ell \le p_K$; and the description $K = \{p_K < 1\}$ converts the inequality back into geometry. The hyperplane is $\{\ell = 1\}$ in the normalized case; there is nothing canonical about it, since the extension is not unique. This is the sense in which a convex set can be described by hyperplanes: it lies on one side of a supporting hyperplane at every point outside it.
+> Everything in the proof was already in place; the theorem is an assembly. The gauge converts the geometric hypothesis (convex, all points interior, $y_0$ outside) into an inequality $p_K(y_0) \ge 1 = \ell(y_0)$ on a one-dimensional subspace; Hahn–Banach extends $\ell$ without breaking $\ell \le p_K$; and the description $K = \{p_K < 1\}$ converts the inequality back into geometry. The hyperplane is $\{\ell = 1\}$ in the normalized case; there is nothing canonical about it, since the extension is not unique. This is the sense in which a convex set can be described by hyperplanes: through every point outside it there is a hyperplane with the whole set strictly on one side.
 
 ^rem-8-1
 
 > [!remark] Remark: Comparison with Lax
-> The statement is Lax's Theorem 5, including the hypothesis that $K$ is nonempty, which the proof needs in Step 1 (to translate a point of $K$ to the origin) and which was missing from an earlier version of these notes. Lax continues with two strengthenings not covered in lecture: Corollary 5′, for a convex set with only *one* interior point (with the weaker conclusion $\ell(x) \le \ell(y)$), and Theorem 6, separating two disjoint convex sets, one of which has an interior point.
+> The statement is Lax's Theorem 5, including the hypothesis that $K$ is nonempty, which the proof needs in Step 4 (to translate a point of $K$ to the origin). Lax continues with two strengthenings not covered in lecture: Corollary 5′, for a convex set with only *one* interior point (with the weaker conclusion $\ell(x) \le \ell(y)$), and Theorem 6, separating two disjoint convex sets, one of which has an interior point.
 
 ^rem-8-2

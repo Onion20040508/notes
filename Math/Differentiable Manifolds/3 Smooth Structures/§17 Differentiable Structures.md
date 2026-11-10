@@ -148,20 +148,29 @@ Later this matrix reappears as the change-of-basis matrix between the two coordi
 ![[m591-8-1.svg]]
 *The diagram drawn in lecture. The same function on $U \cap V$ is represented downstairs by $f$ in the $\varphi$-coordinates and by $g$ in the $\psi$-coordinates; the upper triangle says $f \circ \varphi = g \circ \psi$, and the lower triangle says $f = g \circ (\psi \circ \varphi^{-1})$. Compatibility is exactly the statement that the horizontal arrow is a diffeomorphism, which is what lets one pass between $f$ and $g$ without leaving the smooth category.*
 
-> [!definition] Definition §17.5: Regularity Classes of Manifolds
-> Nothing in [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], or in the definitions of atlases and maximal atlases that follow, is special to $C^\infty$: the regularity of a manifold is imposed *entirely* through its transition functions. Replacing “smooth” by another class of maps gives:
-> - a **$C^k$ manifold**, for a fixed $k \ge 1$: transition functions are $C^k$ with $C^k$ inverses;
-> - a **real-analytic manifold**: transition functions are real-analytic — locally given by convergent power series — with real-analytic inverses;
-> - a **complex manifold** of complex dimension $n$: charts take values in open subsets of $\mathbb{C}^n$, and transition functions are holomorphic with holomorphic inverses.
->
-> From here on, unless stated otherwise, everything in this course is $C^\infty$.
+> [!definition] Definition §17.5: $C^k$ Manifold
+> Let $k \ge 1$ be fixed. A **$C^k$ manifold** is defined as a smooth manifold is, with “smooth” replaced by “$C^k$” in [[§17 Differentiable Structures#^def-17-4|Def. §17.4]] and in the definitions of atlases and maximal atlases that follow: transition functions are $C^k$ with $C^k$ inverses.
 >
 > *Lee: Ch. 1, Smooth Structures*
 
 ^def-17-5
 
+> [!definition] Definition §17.6: Real-Analytic Manifold
+> A **real-analytic manifold** is defined as a smooth manifold is, with “smooth” replaced by “real-analytic” in Definition [[§17 Differentiable Structures#^def-17-4|§17.4]] and in the definitions of atlases and maximal atlases that follow: transition functions are real-analytic — locally given by convergent power series — with real-analytic inverses.
+>
+> *Lee: Ch. 1, Smooth Structures*
+
+^def-17-6
+
+> [!definition] Definition §17.7: Complex Manifold
+> A **complex manifold** of complex dimension $n$ is defined as a smooth manifold is, with $\mathbb{C}^n$ in place of $\mathbb{R}^n$ and “smooth” replaced by “holomorphic” in Definition [[§17 Differentiable Structures#^def-17-4|§17.4]] and in the definitions of atlases and maximal atlases that follow: charts take values in open subsets of $\mathbb{C}^n$, and transition functions are holomorphic with holomorphic inverses.
+>
+> *Lee: Ch. 1, Smooth Structures*
+
+^def-17-7
+
 > [!remark] Remark: Comparing the Classes
-> Everything is determined by what is asked of the transition functions between charts. Two cautions on how these classes compare. First, *lowering $k$ gains nothing*: by a theorem of Whitney, every $C^k$ structure with $k \ge 1$ contains a compatible $C^\infty$ structure, unique up to diffeomorphism, so $C^1$ and $C^\infty$ manifolds are the same objects up to isomorphism. What is genuinely different is $C^0$: there exist topological manifolds carrying *no* smooth structure at all. Second, regularity does matter for *theorems about maps*. Sard's theorem — that the set of critical values of $F : \mathbb{R}^N \to \mathbb{R}^m$ has measure zero — requires $F$ to be $C^k$ with $k \ge \max(1, N-m+1)$, and fails for $C^1$ maps otherwise. Real-analytic manifolds are harder to work with for a different reason: $C^\omega$ functions are rigid, so there are no bump functions and hence no partitions of unity, a tool we will rely on constantly.
+> Nothing in Definition [[§17 Differentiable Structures#^def-17-4|§17.4]], or in the definitions of atlases and maximal atlases that follow, is special to $C^\infty$: the regularity of a manifold is imposed *entirely* through its transition functions. Replacing “smooth” by another class of maps gives the $C^k$ manifolds, the real-analytic manifolds and the complex manifolds of Definitions [[§17 Differentiable Structures#^def-17-5|§17.5]], [[§17 Differentiable Structures#^def-17-6|§17.6]] and [[§17 Differentiable Structures#^def-17-7|§17.7]]. From here on, unless stated otherwise, everything in this course is $C^\infty$. Everything is determined by what is asked of the transition functions between charts. Two cautions on how these classes compare. First, *lowering $k$ gains nothing*: by a theorem of Whitney, every $C^k$ structure with $k \ge 1$ contains a compatible $C^\infty$ structure, unique up to diffeomorphism, so $C^1$ and $C^\infty$ manifolds are the same objects up to isomorphism. What is genuinely different is $C^0$: there exist topological manifolds carrying *no* smooth structure at all. Second, regularity does matter for *theorems about maps*. Sard's theorem — that the set of critical values of $F : \mathbb{R}^N \to \mathbb{R}^m$ has measure zero — requires $F$ to be $C^k$ with $k \ge \max(1, N-m+1)$, and fails for $C^1$ maps otherwise. Real-analytic manifolds are harder to work with for a different reason: $C^\omega$ functions are rigid, so there are no bump functions and hence no partitions of unity, a tool we will rely on constantly.
 
 ^rem-17-5
 

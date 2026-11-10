@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, math591]
 
 ## The Cotangent Bundle Along the Zero Section
 
-*Notation.* Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $(T^{\ast}U, \hat\varphi)$ the chart of $T^{\ast}M$ over $U$ (Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]). Its $2m$ coordinate functions (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]](2)) are, at a point $(q, \alpha) \in T^{\ast}U$,
+*Notation.* Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $(T^{\ast}U, \hat\varphi)$ the chart of $T^{\ast}M$ over $U$ (Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]). Its $2m$ coordinate functions (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]) are, at a point $(q, \alpha) \in T^{\ast}U$,
 
 $$
 \bar x^i(q, \alpha) = x^i(q), \quad\text{that is, } \bar x^i = x^i \circ \pi, \qquad\qquad \xi_j(q, \alpha) = \alpha\Big(\frac{\partial}{\partial x^j}\Big|_q\Big),

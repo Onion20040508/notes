@@ -11,7 +11,7 @@ tags: [differentiable-manifolds, math591]
 
 *Lecture 26: the exponential map of Lie groups. Last time: every left-invariant field on $G$ is complete (Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]]). The exponential map comes from the integral curve of a left-invariant field $\mathbf{X}$ starting at the identity, which is special.*
 
-*Notation.* The Lie algebra has two incarnations: the left-invariant fields with their bracket, and the tangent space at the identity (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]; the remark [[§61 Lie Group Morphisms and Linear Groups#^rem-61-1|From Now On]] ($\mathfrak{g}$ is $T_eG$) in [[§61 Lie Group Morphisms and Linear Groups|§61]]). Capital letters $A, B \in T_eG = \mathfrak{g}$ are vectors at the identity, and
+*Notation.* The Lie algebra has two incarnations: the left-invariant fields with their bracket, and the tangent space at the identity (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]; the remark [[§61 Lie Group Morphisms and Linear Groups#^rem-61-1|Recap]] ($\mathfrak{g}$ is $T_eG$) in [[§61 Lie Group Morphisms and Linear Groups|§61]]). Capital letters $A, B \in T_eG = \mathfrak{g}$ are vectors at the identity, and
 
 $$
 \mathbf{X}^A = \text{the corresponding left-invariant field, with } \mathbf{X}^A_e = A, \qquad \varphi^A = \text{the flow of } \mathbf{X}^A
@@ -54,7 +54,7 @@ So $\varphi^A_t(e)$ is the integral curve of $\mathbf{X}^A$ starting at $e$, eva
 
 This is the case $g = \varphi^e(s)$ of $\varphi^g(t) = g\,\varphi^e(t)$ in Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]], combined with the group law $\varphi^{\varphi^e(s)}(t) = \varphi^e(t + s)$. Since $s + t = t + s$, the elements $\varphi_s(e)$ and $\varphi_t(e)$ commute: a one-parameter subgroup is abelian, even in a non-abelian $G$.
 
-Conversely, every smooth group morphism $\mathbb{R} \to G$ arises this way; this was not pursued in lecture. *(Filled in, for smooth morphisms.)* If $\gamma : \mathbb{R} \to G$ is a smooth group morphism and $A = \dot\gamma(0)$, then differentiating $\gamma(t + s) = \gamma(t)\gamma(s) = L_{\gamma(t)}(\gamma(s))$ in $s$ at $s = 0$ gives $\dot\gamma(t) = d(L_{\gamma(t)})_e(A) = \mathbf{X}^A_{\gamma(t)}$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]). So $\gamma$ is the integral curve of $\mathbf{X}^A$ starting at $\gamma(0) = e$, and $\gamma(t) = \varphi^A_t(e)$. Continuous group morphisms $\mathbb{R} \to G$ are automatically smooth (Lee, Problem 20-11(a); not proved in these notes), so the same holds for them.
+Conversely, every smooth group morphism $\mathbb{R} \to G$ arises this way (Proposition [[§71 The Exponential Map#^prop-71-3|§71.3]] below); this was not pursued in lecture.
 
 The one-parameter subgroup is an orbit: the left-invariant field $\mathbf{X}^A$ is complete, so it generates an $\mathbb{R}$-action (Proposition [[§70 Complete Vector Fields#^prop-70-7|§70.7]]), and $t \mapsto \varphi^A_t(e)$ is the orbit of the identity.
 
@@ -107,6 +107,26 @@ The name is well motivated: for subgroups of the general linear group, $\exp$ is
 
 *Uses:* [[§67 Integral Curves#^lem-67-4|§67.4]], [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]
 
+> [!theorem] Proposition §71.3: Every Smooth One-Parameter Subgroup Is $t \mapsto \exp(tA)$
+> Let $G$ be a Lie group and $\gamma : \mathbb{R} \to G$ a smooth group morphism from the additive group $(\mathbb{R}, +)$, and put $A = \dot\gamma(0) \in T_eG = \mathfrak{g}$. Then $\gamma$ is the integral curve of $\mathbf{X}^A$ starting at $e$:
+>
+> $$
+> \gamma(t) = \varphi^A_t(e) = \exp(tA) \qquad \text{for all } t \in \mathbb{R} .
+> $$
+>
+> *Lee: Theorem 20.1*
+
+^prop-71-3
+
+> [!proof]+ Proof
+> *(Filled in, for smooth morphisms; the converse was not pursued in lecture.)* $\gamma(0) = e$, because $\gamma$ is a group morphism; so $\dot\gamma(0) \in T_eG$. Fix $t \in \mathbb{R}$. Differentiating $\gamma(t + s) = \gamma(t)\gamma(s) = L_{\gamma(t)}(\gamma(s))$ in $s$ at $s = 0$ gives $\dot\gamma(t) = d(L_{\gamma(t)})_e(A) = \mathbf{X}^A_{\gamma(t)}$ (Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]). In detail: on the left, the derivative of $s \mapsto \gamma(t + s)$ at $s = 0$ is $\dot\gamma(t)$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and the chain rule for real functions, as in the proof of Lemma [[§67 Integral Curves#^lem-67-4|§67.4]]); on the right, the curve $s \mapsto \gamma(s)$ passes through $e$ at $s = 0$ with velocity $A$, so by Corollary [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]] the velocity of $s \mapsto L_{\gamma(t)}(\gamma(s))$ at $s = 0$ is $d(L_{\gamma(t)})_e(A)$, which is $\mathbf{X}^A_{\gamma(t)}$ by Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]. So $\gamma$ is the integral curve of $\mathbf{X}^A$ starting at $\gamma(0) = e$, defined on $\mathbb{R}$, and $\gamma(t) = \varphi^A_t(e)$ (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]); this is $\exp(tA)$ by Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]].
+
+^pf-71-3
+
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|Def. §31.3]], [[§67 Integral Curves#^lem-67-4|§67.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Def. §60.5]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], [[§71 The Exponential Map#^prop-71-2|§71.2]]
+
+Continuous group morphisms $\mathbb{R} \to G$ are automatically smooth (Lee, Problem 20-11(a); not proved in these notes), so the same holds for them.
+
 > [!theorem] Corollary §71.4: The Exponential Law on a Line
 > For all $s, t \in \mathbb{R}$ and $A \in \mathfrak{g}$,
 >
@@ -148,7 +168,56 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 
 *(Not from lecture; figure added.)* The two matrices of Example [[§71 The Exponential Map#^ex-71-1|§71.1]] acting on the unit square: $\exp(A)\exp(B)$ (blue) and $\exp(A + B)$ (red). Both have determinant $1$, so the parallelograms have the same area, but they are different maps.
 
-*(Assignment 7, Problem 5.)* The exponential map of a subgroup is the restriction of that of the larger group, because the integral curves are; for a linear group this identifies $\exp$ with the matrix exponential series, completing the proof of Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]] below. The series facts are those of its proof: $e^{tA} = \sum_{\ell \ge 0} \frac{t^\ell}{\ell!} A^\ell$ converges and may be differentiated term by term, $\frac{d}{dt} e^{tA} = A\, e^{tA} = e^{tA} A$.
+*(Assignment 7, Problem 5.)* The exponential map of a subgroup is the restriction of that of the larger group, because the integral curves are; for a linear group this identifies $\exp$ with the matrix exponential series, completing the proof of Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]] below. The series facts are Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]]: $e^{tA} = \sum_{\ell \ge 0} \frac{t^\ell}{\ell!} A^\ell$ converges and may be differentiated term by term, $\frac{d}{dt} e^{tA} = A\, e^{tA} = e^{tA} A$.
+
+> [!theorem] Lemma §71.5: The Matrix Exponential Series
+> Let $A \in \operatorname{Mat}(n, \mathbb{R})$.
+>
+> 1. For every $t \in \mathbb{R}$ the series
+>
+> $$
+> e^{tA} = \sum_{\ell=0}^\infty \frac{t^\ell}{\ell!} A^\ell
+> $$
+>
+> converges in $\operatorname{Mat}(n, \mathbb{R})$, in any norm: each entry of $e^{tA}$ is a real power series in $t$ that converges absolutely for every $t \in \mathbb{R}$. In particular $e^{0 \cdot A} = I$.
+> 2. The curve $\mathbb{R} \to \operatorname{Mat}(n, \mathbb{R})$, $t \mapsto e^{tA}$, is smooth, the series may be differentiated term by term, and
+>
+> $$
+> \frac{d}{dt}\, e^{tA} = A\, e^{tA} = e^{tA} A .
+> $$
+>
+> *Lee: Proposition 20.2*
+
+^lem-71-5
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in. Lecture 26 left the series facts as an exercise. Three facts are quoted from analysis: the comparison test for series; that a real power series $\sum_\ell c_\ell t^\ell$ which converges for every $t \in \mathbb{R}$ is a smooth function of $t$, whose derivative is the series $\sum_{\ell \ge 1} \ell c_\ell t^{\ell - 1}$ of the derivatives of its terms, again convergent for every $t$; and that all norms on a finite-dimensional real vector space are equivalent.)*
+>
+> *A bound on the powers.* For $B \in \operatorname{Mat}(n, \mathbb{R})$ write $|B| = \max_{i,j} |B_{ij}|$, a norm on $\operatorname{Mat}(n, \mathbb{R})$. For $B, C \in \operatorname{Mat}(n, \mathbb{R})$ each entry $(BC)_{ij} = \sum_{k=1}^n B_{ik} C_{kj}$ is a sum of $n$ products, so $|BC| \le n\, |B|\, |C|$. Put $a = n|A|$. Then $|A^\ell| \le a^\ell$ for every $\ell \ge 0$, by induction: $|A^0| = |I| = 1$, and if $|A^\ell| \le a^\ell$, then $|A^{\ell + 1}| = |A^\ell A| \le n\, |A^\ell|\, |A| \le a^\ell \cdot a$.
+>
+> *(1)* Fix $i, j$. The $(i, j)$ entry of the $\ell$-th term of the series is $c_\ell t^\ell$ with $c_\ell = (A^\ell)_{ij}/\ell!$, and by the bound $|c_\ell t^\ell| \le (a|t|)^\ell/\ell!$. The series $\sum_\ell (a|t|)^\ell/\ell!$ converges, to $e^{a|t|}$; so by the comparison test $\sum_\ell c_\ell t^\ell$ converges absolutely, for every $t \in \mathbb{R}$. Hence the partial sums of the matrix series converge in every entry, which is convergence in the norm $|\cdot|$, and so in any norm on $\operatorname{Mat}(n, \mathbb{R})$, since all norms on this finite-dimensional space are equivalent. At $t = 0$ only the term $\ell = 0$ is nonzero, and it is $A^0 = I$.
+>
+> *(2)* A curve in $\operatorname{Mat}(n, \mathbb{R}) = \mathbb{R}^{n^2}$ is smooth exactly when its entries are, and its derivative is taken entry by entry. By the quoted fact on power series, each entry $t \mapsto \sum_\ell c_\ell t^\ell$ of $e^{tA}$ is smooth, with derivative
+>
+> $$
+> \sum_{\ell \ge 1} \ell\, c_\ell\, t^{\ell - 1} = \sum_{\ell \ge 1} \frac{t^{\ell - 1}}{(\ell - 1)!}\, (A^\ell)_{ij} = \sum_{m \ge 0} \frac{t^m}{m!}\, (A^{m+1})_{ij} \qquad (m = \ell - 1) :
+> $$
+>
+> differentiating $t^\ell$ brings out a factor $\ell$, which cancels against $\ell!$, and the index is shifted. So $t \mapsto e^{tA}$ is smooth and
+>
+> $$
+> \frac{d}{dt}\, e^{tA} = \sum_{m=0}^\infty \frac{t^m}{m!}\, A^{m+1} .
+> $$
+>
+> Now $A^{m+1} = A\, A^m = A^m A$. For a fixed matrix $B$, each entry of $BC$ and of $CB$ is a finite sum of entries of $C$ multiplied by entries of $B$; so if a series of matrices $\sum_m C_m$ converges in every entry, then $\sum_m B C_m = B \sum_m C_m$ and $\sum_m C_m B = \big(\sum_m C_m\big) B$, by the linearity of limits. With $B = A$ and $C_m = \frac{t^m}{m!} A^m$:
+>
+> $$
+> \sum_{m=0}^\infty \frac{t^m}{m!}\, A\, A^m = A\, e^{tA}, \qquad \sum_{m=0}^\infty \frac{t^m}{m!}\, A^m A = e^{tA} A .
+> $$
+>
+> The extra factor $A$ can be put on the left or on the right.
+
+^pf-71-5
 
 > [!theorem] Lemma §71.6: The Matrix Exponential Is Invertible
 > For $A \in \operatorname{Mat}(n, \mathbb{R})$ and $t \in \mathbb{R}$, $e^{tA}\, e^{-tA} = I$. So $e^{tA} \in \mathrm{GL}(n, \mathbb{R})$, with inverse $e^{-tA}$.
@@ -156,7 +225,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 ^lem-71-6
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in. The outline of the proof of Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]] and the submitted solution of Assignment 7, Problem 5(b), use that $e^{tA}$ is invertible without proof.)* Each entry of a product of matrix-valued curves is a sum of products of entries, so the product rule holds: $\frac{d}{dt}(B(t)C(t)) = B'(t)C(t) + B(t)C'(t)$. With $\frac{d}{dt} e^{tA} = A e^{tA} = e^{tA} A$ and, by the chain rule, $\frac{d}{dt} e^{-tA} = -A\, e^{-tA}$,
+> *(Not from lecture; filled in. The outline of the proof of Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]] and the submitted solution of Assignment 7, Problem 5(b), use that $e^{tA}$ is invertible without proof.)* Each entry of a product of matrix-valued curves is a sum of products of entries, so the product rule holds: $\frac{d}{dt}(B(t)C(t)) = B'(t)C(t) + B(t)C'(t)$. With $\frac{d}{dt} e^{tA} = A e^{tA} = e^{tA} A$ (Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]](2)) and, by the chain rule, $\frac{d}{dt} e^{-tA} = -A\, e^{-tA}$,
 >
 > $$
 > \frac{d}{dt}\big(e^{tA} e^{-tA}\big) = \big(e^{tA} A\big) e^{-tA} + e^{tA}\big(-A\, e^{-tA}\big) = 0 .
@@ -166,7 +235,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 
 ^pf-71-6
 
-*Uses:* [[§71 The Exponential Map#^thm-71-11|§71.11]]
+*Uses:* [[§71 The Exponential Map#^thm-71-11|§71.11]], [[§71 The Exponential Map#^lem-71-5|§71.5]]
 
 > [!theorem] Lemma §71.7: Integral Curves of a Left-Invariant Field on a Lie Subgroup
 > Let $H$ be a Lie group and $G \subseteq H$ a subgroup that is a Lie group with the inclusion $\iota : G \hookrightarrow H$ smooth and $d\iota_e$ injective — a Lie subgroup, as in Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]] — so that $\mathfrak{g} = T_eG$ is identified with $d\iota_e(\mathfrak{g}) \subseteq \mathfrak{h} = T_eH$. For $A \in \mathfrak{g}$ let $\mathbf{A}^G \in \mathfrak{X}(G)$ and $\mathbf{A}^H \in \mathfrak{X}(H)$ be the left-invariant fields with $\mathbf{A}^G_e = A$ and $\mathbf{A}^H_e = d\iota_e(A)$ (the fields written $\mathbf{X}^A$ in the notation of this section, one on each group). Then $\mathbf{A}^G$ is $\iota$-related to $\mathbf{A}^H$, and for every integral curve $\gamma$ of $\mathbf{A}^G$, $\iota \circ \gamma$ is an integral curve of $\mathbf{A}^H$.
@@ -250,7 +319,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 ^prop-71-10
 
 > [!proof]+ Proof
-> *(Assignment 7, Problem 5(b): the submitted solution, with the invertibility of $e^{tA}$ supplied by Lemma [[§71 The Exponential Map#^lem-71-6|§71.6]]; the solution takes $c(t) \in \mathrm{GL}(n, \mathbb{R})$ for granted.)* Let $\iota : G \hookrightarrow \mathrm{GL}(n, \mathbb{R})$ be the inclusion. Since $\mathrm{GL}(n, \mathbb{R})$ is open in $\operatorname{Mat}(n, \mathbb{R})$, $T_X \mathrm{GL}(n, \mathbb{R}) = \operatorname{Mat}(n, \mathbb{R})$ for each $X$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]); the velocity of a matrix-valued curve is its entrywise derivative, and $A \in \mathfrak{g}$ is identified with the matrix $d\iota_e(A)$. Let $\mathbf{A}^{\mathrm{GL}}$ be the left-invariant field on $\mathrm{GL}(n, \mathbb{R})$ with $\mathbf{A}^{\mathrm{GL}}_I = A$.
+> *(Assignment 7, Problem 5(b): the submitted solution, with the invertibility of $e^{tA}$ supplied by Lemma [[§71 The Exponential Map#^lem-71-6|§71.6]] and the convergence and term-by-term differentiation of the series by Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]]; the solution takes $c(t) \in \mathrm{GL}(n, \mathbb{R})$ for granted.)* Let $\iota : G \hookrightarrow \mathrm{GL}(n, \mathbb{R})$ be the inclusion. Since $\mathrm{GL}(n, \mathbb{R})$ is open in $\operatorname{Mat}(n, \mathbb{R})$, $T_X \mathrm{GL}(n, \mathbb{R}) = \operatorname{Mat}(n, \mathbb{R})$ for each $X$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]); the velocity of a matrix-valued curve is its entrywise derivative, and $A \in \mathfrak{g}$ is identified with the matrix $d\iota_e(A)$. Let $\mathbf{A}^{\mathrm{GL}}$ be the left-invariant field on $\mathrm{GL}(n, \mathbb{R})$ with $\mathbf{A}^{\mathrm{GL}}_I = A$.
 >
 > *The field $\mathbf{A}^{\mathrm{GL}}$.* For $h \in \mathrm{GL}(n, \mathbb{R})$, $L_h(X) = hX$ is the restriction of the linear map $X \mapsto hX$ of $\operatorname{Mat}(n, \mathbb{R})$. Computing its differential along the curve $t \mapsto I + tA$, which passes through $I$ with velocity $A$,
 >
@@ -276,7 +345,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 
 ^pf-71-10
 
-*Uses:* [[§71 The Exponential Map#^lem-71-6|§71.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§70 Complete Vector Fields#^thm-70-11|§70.11]], [[§71 The Exponential Map#^lem-71-7|§71.7]], [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]
+*Uses:* [[§71 The Exponential Map#^lem-71-6|§71.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§70 Complete Vector Fields#^thm-70-11|§70.11]], [[§71 The Exponential Map#^lem-71-7|§71.7]], [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]], [[§71 The Exponential Map#^lem-71-5|§71.5]]
 
 > [!theorem] Theorem §71.11: The Exponential Map of a Linear Group
 > Let $G \subseteq \mathrm{GL}(n, \mathbb{R})$ be a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]) that is a Lie subgroup (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]]), and $A \in \mathfrak{g}$, a matrix. Then
@@ -292,13 +361,13 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 ^thm-71-11
 
 > [!proof]+ Proof (outline from Lecture 26; the general case from Assignment 7, Problem 5)
-> *(The lecture gave the case $G = \mathrm{GL}(n, \mathbb{R})$ in outline; the series facts are an exercise, and the case of a general $G \subseteq \mathrm{GL}(n, \mathbb{R})$ needs an extra argument, which is part of the homework: Proposition [[§71 The Exponential Map#^prop-71-10|§71.10]], Assignment 7, Problem 5(b).)* The method is once again uniqueness. Show it first for $G = \mathrm{GL}(n, \mathbb{R})$. Define $e^A = \sum_{\ell \ge 0} A^\ell / \ell!$. Then
+> *(The lecture gave the case $G = \mathrm{GL}(n, \mathbb{R})$ in outline; the series facts are an exercise, worked out in Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]], and the case of a general $G \subseteq \mathrm{GL}(n, \mathbb{R})$ needs an extra argument, which is part of the homework: Proposition [[§71 The Exponential Map#^prop-71-10|§71.10]], Assignment 7, Problem 5(b).)* The method is once again uniqueness. Show it first for $G = \mathrm{GL}(n, \mathbb{R})$. Define $e^A = \sum_{\ell \ge 0} A^\ell / \ell!$. Then
 >
 > $$
 > \frac{d}{dt}\, e^{tA} = A\, e^{tA} = e^{tA} A ,
 > $$
 >
-> by manipulating the series: it converges strongly enough in norm to be differentiated term by term; differentiating $t^\ell$ brings out a factor $\ell$, which cancels against $\ell!$, and the resulting shift of index produces the extra factor $A$, which can be put on the left or on the right. So $\gamma(t) = e^{tA}$ is a curve in $\mathrm{GL}(n, \mathbb{R})$ (it is invertible, Lemma [[§71 The Exponential Map#^lem-71-6|§71.6]]), and
+> by manipulating the series (Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]]): it converges strongly enough in norm to be differentiated term by term; differentiating $t^\ell$ brings out a factor $\ell$, which cancels against $\ell!$, and the resulting shift of index produces the extra factor $A$, which can be put on the left or on the right. So $\gamma(t) = e^{tA}$ is a curve in $\mathrm{GL}(n, \mathbb{R})$ (it is invertible, Lemma [[§71 The Exponential Map#^lem-71-6|§71.6]]), and
 >
 > $$
 > \frac{d}{dt}\gamma(t) = e^{tA} A = d\big(L_{e^{tA}}\big)_e(A) = \mathbf{X}^A_{e^{tA}} ,
@@ -315,7 +384,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 
 ^pf-71-11
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^def-71-1|Def. §71.1]], [[§71 The Exponential Map#^prop-71-10|§71.10]], [[§71 The Exponential Map#^lem-71-6|§71.6]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^def-71-1|Def. §71.1]], [[§71 The Exponential Map#^prop-71-10|§71.10]], [[§71 The Exponential Map#^lem-71-6|§71.6]], [[§71 The Exponential Map#^lem-71-5|§71.5]]
 
 > [!example] Example §71.1: $\exp(A + B) \neq \exp(A)\exp(B)$ for Two Nilpotent Matrices
 > *(Not from lecture.)* In $\mathrm{GL}(2, \mathbb{R})$, for $A = \begin{psmallmatrix} 0 & 1 \\ 0 & 0 \end{psmallmatrix}$ and $B = \begin{psmallmatrix} 0 & 0 \\ 1 & 0 \end{psmallmatrix}$,
@@ -346,16 +415,47 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 
 ^ex-71-1
 
-> [!remark]- Connections
-> - Ordinary differential equations: $x(t) = e^{tA}x_0$ solves $x' = Ax$ — [[Matrix Exponential Solution]]. Here the same series is the integral curve of the left-invariant field $\mathbf{X}^A_g = gA$ on $\mathrm{GL}(n, \mathbb{R})$, i.e. the solution of the matrix equation $\gamma' = \gamma A$, $\gamma(0) = I$.
+> [!remark] Remark: Surjectivity and Injectivity of $\exp$
+> For many groups, but not for all groups, $\exp$ is surjective: for instance for all unitary groups, and more generally for compact connected groups, a fact that needs proof *(not proved here)*. But globally it is not one-to-one for a compact group: the exponential wraps the tangent space around the group, as $t \mapsto e^{it}$ wraps $\mathfrak{u}(1) = i\mathbb{R}$ around $\mathrm{U}(1)$ (the figure below). *(Not from lecture.)* Surjectivity can fail: $\exp$ takes values in the identity component, so it misses $\mathrm{O}(n) \setminus \mathrm{SO}(n)$; and even for the connected group $\mathrm{SL}(2, \mathbb{R})$ the matrix $\begin{psmallmatrix} -1 & 1 \\ 0 & -1 \end{psmallmatrix}$ is not an exponential (Example [[§71 The Exponential Map#^ex-71-2|§71.2]] below).
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^thm-71-11|§71.11]]
-
-For many groups, but not for all groups, $\exp$ is surjective: for instance for all unitary groups, and more generally for compact connected groups, a fact that needs proof. But globally it is not one-to-one for a compact group: the exponential wraps the tangent space around the group, as $t \mapsto e^{it}$ wraps $\mathfrak{u}(1) = i\mathbb{R}$ around $\mathrm{U}(1)$. *(Not from lecture.)* Surjectivity can fail: $\exp$ takes values in the identity component, so it misses $\mathrm{O}(n) \setminus \mathrm{SO}(n)$; and even for the connected group $\mathrm{SL}(2, \mathbb{R})$ the matrix $\begin{psmallmatrix} -1 & 1 \\ 0 & -1 \end{psmallmatrix}$ is not an exponential.
+^rem-71-2
 
 ![[m591-71-1.svg]]
 
 *(Not from lecture; figure added.)* Wrapping the tangent space around the group, for $G = \mathrm{U}(1)$: $\mathfrak{u}(1) = i\mathbb{R}$, and $\exp(ti) = e^{it}$ (Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]] with $n = 1$, complex). The segment $[0, 2\pi i]$ (blue) goes once around the circle and $[-\pi i, 0]$ (red) covers the lower half again: $\exp$ is onto but not one-to-one, while near $0$ it is one-to-one, as Proposition [[§71 The Exponential Map#^prop-71-12|§71.12]] guarantees in general.
+
+> [!example] Example §71.2: Two Groups Where $\exp$ Is Not Surjective
+> *(Not from lecture; filled in.)*
+>
+> 1. For $G = \mathrm{O}(n)$, $\exp(A) \in \mathrm{SO}(n)$ for every $A \in T_I\mathrm{O}(n)$; so no element of $\mathrm{O}(n) \setminus \mathrm{SO}(n)$, for instance $\mathrm{diag}(-1, 1, \ldots, 1)$, is an exponential.
+> 2. For $G = \mathrm{SL}(2, \mathbb{R})$, the matrix $B = \begin{psmallmatrix} -1 & 1 \\ 0 & -1 \end{psmallmatrix}$, which has $\det B = 1$, is not $\exp(A)$ for any $A \in \mathfrak{sl}(2, \mathbb{R})$. ($\mathrm{SL}(2, \mathbb{R})$ is connected, a fact not proved in these notes; so here the failure is not a matter of components.)
+>
+> *(1).* Let $A \in T_I\mathrm{O}(n)$. The curve $t \mapsto \exp(tA)$ is an integral curve in $\mathrm{O}(n)$ (Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]]), so it is continuous. Every $g \in \mathrm{O}(n)$ has $\det(g)^2 = \det(g)\det(g^{\mathsf T}) = \det I = 1$, so $\det g = \pm 1$. Hence $t \mapsto \det \exp(tA)$ is a continuous function $\mathbb{R} \to \{1, -1\}$ with the value $\det I = 1$ at $t = 0$; by the intermediate value theorem it is constant, and $\det \exp(A) = 1$: $\exp(A) \in \mathrm{SO}(n)$ (Definition [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|§11.8]]). The matrix $\mathrm{diag}(-1, 1, \ldots, 1)$ is orthogonal with determinant $-1$, so $\mathrm{O}(n) \setminus \mathrm{SO}(n)$ is not empty.
+>
+> *(2), the exponential.* $\mathrm{SL}(2, \mathbb{R})$ is a linear group that is a Lie subgroup of $\mathrm{GL}(2, \mathbb{R})$ (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]]), with $\mathfrak{sl}(2, \mathbb{R}) = \{ A \in \operatorname{Mat}(2, \mathbb{R}) : \operatorname{tr} A = 0 \}$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]]); so $\exp(A) = \sum_{\ell \ge 0} A^\ell/\ell!$ (Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]]).
+>
+> *(2), the series for a traceless matrix.* Let $A = \begin{psmallmatrix} a & b \\ c & -a \end{psmallmatrix}$ and $d = \det A = -a^2 - bc$. Then
+>
+> $$
+> A^2 = \begin{pmatrix} a^2 + bc & ab - ba \\ ca - ac & cb + a^2 \end{pmatrix} = -d\, I ,
+> $$
+>
+> so $A^{2k} = (-d)^k I$ and $A^{2k+1} = (-d)^k A$. Splitting the series, which converges absolutely in every entry (Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]]), into even and odd terms,
+>
+> $$
+> \exp(A) = \alpha\, I + \beta\, A, \qquad \alpha = \sum_{k \ge 0} \frac{(-d)^k}{(2k)!}, \quad \beta = \sum_{k \ge 0} \frac{(-d)^k}{(2k+1)!} ,
+> $$
+>
+> and $\operatorname{tr} \exp(A) = 2\alpha$, because $\operatorname{tr} I = 2$ and $\operatorname{tr} A = 0$.
+>
+> *(2), $\exp(A) \neq B$.* Suppose $\exp(A) = B$. Then $2\alpha = \operatorname{tr} B = -2$, so $\alpha = -1$. If $d = 0$, then $\alpha = 1$. If $d < 0$, put $\omega = \sqrt{-d}$; then $\alpha = \sum_k \omega^{2k}/(2k)! = \cosh\omega \ge 1$. So $d > 0$; put $\omega = \sqrt{d} > 0$. Then $\alpha = \sum_k (-1)^k \omega^{2k}/(2k)! = \cos\omega$ and $\beta = \sum_k (-1)^k \omega^{2k}/(2k+1)! = \sin\omega/\omega$. From $\cos\omega = -1$ and $\cos^2\omega + \sin^2\omega = 1$, $\sin\omega = 0$, so $\beta = 0$ and $\exp(A) = -I$. But $-I \neq B$: their upper right entries are $0$ and $1$. So $B$ is not an exponential.
+
+^ex-71-2
+
+> [!remark]- Connections
+> - Ordinary differential equations: $x(t) = e^{tA}x_0$ solves $x' = Ax$ — [[Matrix Exponential Solution]]. Here the same series is the integral curve of the left-invariant field $\mathbf{X}^A_g = gA$ on $\mathrm{GL}(n, \mathbb{R})$, i.e. the solution of the matrix equation $\gamma' = \gamma A$, $\gamma(0) = I$.
+
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^thm-71-11|§71.11]]
 
 What is always true is the following local statement.
 
@@ -423,7 +523,7 @@ What is always true is the following local statement.
 
 ![[m591-71-2.svg]]
 
-*(Not from lecture; figure added.)* $\exp$ for the group $G = \{(a, b) : a > 0\}$ of affine maps $x \mapsto ax + b$ of the example after Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]]. With $A = (u, v) \in \mathfrak{g}$ (meaning $\mathbf{X}^A_e = (u, v)$ in the coordinates $(a, b)$), the one-parameter subgroup is $\varphi^A_t(e) = \big(e^{ut}, \tfrac{v}{u}(e^{ut} - 1)\big)$, so $\exp(u, v) = \big(e^u, \tfrac{v}{u}(e^u - 1)\big)$ ($= (1, v)$ if $u = 0$). Lines $u = \text{const}$ (blue) go to the horizontal lines $a = e^u$, lines $v = \text{const}$ (red) to curves crossing the row $a = 1$ at $b = v$, and each one-parameter subgroup is a straight ray $b = \tfrac{v}{u}(a - 1)$ through $e$, run at exponential speed; near $0$ the grid is barely distorted, which is $d(\exp)_0 = \mathrm{Id}$. Here $\exp$ is even a diffeomorphism of $\mathfrak{g}$ onto $G$: given $(a, b)$, $u = \log a$ and $v = bu/(a - 1)$.
+*(Not from lecture; figure added.)* $\exp$ for the group $G = \{(a, b) : a > 0\}$ of affine maps $x \mapsto ax + b$ of Example [[§70 Complete Vector Fields#^ex-70-1|§70.1]]. With $A = (u, v) \in \mathfrak{g}$ (meaning $\mathbf{X}^A_e = (u, v)$ in the coordinates $(a, b)$), the one-parameter subgroup is $\varphi^A_t(e) = \big(e^{ut}, \tfrac{v}{u}(e^{ut} - 1)\big)$, so $\exp(u, v) = \big(e^u, \tfrac{v}{u}(e^u - 1)\big)$ ($= (1, v)$ if $u = 0$). Lines $u = \text{const}$ (blue) go to the horizontal lines $a = e^u$, lines $v = \text{const}$ (red) to curves crossing the row $a = 1$ at $b = v$, and each one-parameter subgroup is a straight ray $b = \tfrac{v}{u}(a - 1)$ through $e$, run at exponential speed; near $0$ the grid is barely distorted, which is $d(\exp)_0 = \mathrm{Id}$. Here $\exp$ is even a diffeomorphism of $\mathfrak{g}$ onto $G$: given $(a, b)$, $u = \log a$ and $v = bu/(a - 1)$.
 
 ![[m591-71-a1.gif|620]]
 

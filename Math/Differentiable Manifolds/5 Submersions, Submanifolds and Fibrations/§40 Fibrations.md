@@ -219,9 +219,28 @@ The converse question: if all the fibres of a surjective submersion are diffeomo
 
 ^ex-40-2
 
+> [!proof]+ Proof (partial)
+> *(Completion.)* $E$ is open in $\mathbb{R}^3$: its complement is the $t$-axis $\{(0,0,t)\}$, together with the line $\{(t, 0, t)\}$ and the single point $(1, 0, 0)$, a closed set. So $\pi$ is the restriction of a projection to an open set, hence a submersion (Example [[§36 Submersions#^ex-36-1|§36.1]]), and it is onto. Any two copies of the plane with two points removed are diffeomorphic by an affine map.
+>
+> *Not a fibration (sketch).* *(Not from lecture; filled in. The argument uses the fundamental group, which these notes do not develop; it is a sketch for that reason.)* Suppose $\pi$ were a fibration with fibre $F$. By Definition [[§40 Fibrations#^def-40-1|§40.1]] some open $U \ni 0$ of $\mathbb{R}$ would carry a local trivialization $\phi : \pi^{-1}(U) \to U \times F$ with $\mathrm{pr}_1 \circ \phi = \pi$. Choose $\varepsilon > 0$ with $I = (-\varepsilon, \varepsilon) \subseteq U$. Since $\mathrm{pr}_1 \circ \phi = \pi$, $\phi$ maps $\pi^{-1}(I)$ onto $I \times F$, and $F$ is diffeomorphic to the fibre $\pi^{-1}(0)$, the plane minus two points (Proposition [[§40 Fibrations#^prop-40-2|§40.2]]). So $\pi^{-1}(I)$ would be homeomorphic to $I \times \big(\mathbb{R}^2 \setminus \{\text{two points}\}\big)$. We compare fundamental groups.
+> - $I \times \big(\mathbb{R}^2 \setminus \{\text{two points}\}\big)$ deformation retracts onto a copy of $\mathbb{R}^2 \setminus \{\text{two points}\}$, the interval $I$ being contractible; its fundamental group is free of rank $2$.
+> - By the definition of $E$, a point $(x, y, t)$ with $t \in I$ fails to lie in $E$ exactly when $(x, y) = (0, 0)$, or $t \ne 0$ and $(x, y) = (t, 0)$, or $t = 0$ and $(x, y) = (1, 0)$. So
+>
+> $$
+> \pi^{-1}(I) = \big(\mathbb{R}^2 \times I\big) \setminus \big(L_0 \cup L_1 \cup \{P\}\big), \qquad L_0 = \{(0, 0, t) : t \in I\}, \quad L_1 = \{(t, 0, t) : t \in I\}, \quad P = (1, 0, 0) ,
+> $$
+>
+> where $L_0$ and $L_1$ are two segments of lines through the origin, which is their only common point, and $P$ lies on neither. The slab $\mathbb{R}^2 \times I$ is star-shaped about the origin, and $L_0 \cup L_1$ is its intersection with two lines through the origin; so moving each point along its ray from the origin deformation retracts $(\mathbb{R}^2 \times I) \setminus (L_0 \cup L_1)$ onto the sphere of radius $\varepsilon/2$ about the origin minus the four points where the two lines pierce it. A sphere minus four points is homeomorphic to a plane minus three points, whose fundamental group is free of rank $3$. Removing the further point $P$ from this $3$-dimensional manifold does not change the fundamental group: in dimension $3$, loops and homotopies between loops can be moved off a point.
+>
+> Free groups of ranks $2$ and $3$ are not isomorphic (their abelianizations are $\mathbb{Z}^2$ and $\mathbb{Z}^3$), while homeomorphic spaces have isomorphic fundamental groups. This contradiction shows that there is no local trivialization over any neighbourhood of $0$, so $\pi$ is not a fibration.
+
+^pf-ex-40-2
+
+*Uses:* [[§36 Submersions#^ex-36-1|Ex. §36.1]], [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§40 Fibrations#^prop-40-2|§40.2]]
+
 *Uses:* [[§36 Submersions#^ex-36-1|Ex. §36.1]]
 
-*Status.* From a mathematics forum (located with ChatGPT); given in lecture as a picture, without proof. *(Completion.)* $E$ is open in $\mathbb{R}^3$: its complement is the $t$-axis $\{(0,0,t)\}$, together with the line $\{(t, 0, t)\}$ and the single point $(1, 0, 0)$, a closed set. So $\pi$ is the restriction of a projection to an open set, hence a submersion ([[§36 Submersions#^ex-36-1|Example §36.1]]), and it is onto. Any two copies of the plane with two points removed are diffeomorphic by an affine map. That $\pi$ is not a fibration is stated, not proved, here. The intuition: as $t \to 0$ the missing point $(t, 0)$ collides with $(0,0)$, while over $t = 0$ the second missing point sits away at $(1, 0)$. The example is subtler than it looks: with lines in place of planes the corresponding map would be locally trivial; it is the presence of a fundamental group that spoils local triviality.
+*Status.* From a mathematics forum (located with ChatGPT); given in lecture as a picture, without proof. That $\pi$ is not a fibration was stated, not proved, there; the proof above is complete except for the facts about fundamental groups that the sketch quotes. The intuition: as $t \to 0$ the missing point $(t, 0)$ collides with $(0,0)$, while over $t = 0$ the second missing point sits away at $(1, 0)$. *(Not from lecture; filled in.)* The example is subtler than it looks: the failure is not visible in any single fibre, each of which is a plane minus two points; it lies in the way the fibres over a neighbourhood of $0$ fit together, and it takes the fundamental group of $\pi^{-1}(-\varepsilon, \varepsilon)$ to detect it, because that set is connected, like the product it is compared with. With lines in place of planes the corresponding map is not locally trivial either, and there counting connected components is enough: for $E' = \{(x, t) \in \mathbb{R}^2 : x \ne 0, \ \text{and } x \ne t \text{ if } t \ne 0, \ x \ne 1 \text{ if } t = 0\}$ and $\pi'(x, t) = t$, every fibre is a line minus two points, but $\pi'^{-1}(-\varepsilon, \varepsilon)$ is the strip $\mathbb{R} \times (-\varepsilon, \varepsilon)$ minus the two crossing lines $x = 0$ and $x = t$ and the point $(1, 0)$, which has four connected components ($x < \min(0, t)$; $x > \max(0, t)$ without the point $(1, 0)$; $0 < x < t$; $t < x < 0$), while the product of $(-\varepsilon, \varepsilon)$ with a line minus two points has three.
 
 ![[m591-16-6.svg]]
 *The fibres over a few values of $t$. The origin, grey, is missing from every fibre, and the missing points $(t, 0)$, red, lie on a line — dashed — which meets the line of origins exactly at $t = 0$: the collision. Over $t = 0$ (orange) the second missing point is $(1, 0)$, off that line. Each fibre on its own is a plane minus two points; what fails is the way they fit together near $t = 0$.*
@@ -287,7 +306,7 @@ A section in the sense of [[§40 Fibrations#^def-40-3|Definition §40.3]] is a l
 *(Not from lecture; animation added, vault only.)* [[§40 Fibrations#^prop-40-4|Proposition §40.4]] for the band of the previous animation: the slice $U \times \{f_0\}$ (red, bottom) slides as $f_0$ moves through $F$, and its preimage $s(U) = \phi^{-1}(U \times \{f_0\})$ (red, top) sweeps through $\pi^{-1}(U)$. Each one meets every fibre exactly once: a local section.
 
 > [!definition] Definition §40.5: Vertical Space
-> Let $\pi : E \to M$ be smooth and $y \in E$. The **vertical space** of $\pi$ at $y$ is
+> Let $\pi : E \to B$ be smooth and $y \in E$. The **vertical space** of $\pi$ at $y$ is
 >
 > $$
 > V_y = \ker \pi_{\ast y} \subseteq T_yE ,
@@ -298,26 +317,26 @@ A section in the sense of [[§40 Fibrations#^def-40-3|Definition §40.3]] is a l
 ^def-40-5
 
 > [!theorem] Proposition §40.5: Splitting Along a Section
-> Let $\pi : E \to M$ and $s : M \to E$ be smooth with $\pi \circ s = \mathrm{id}_M$ (for a fibration, $s$ is a section, Definition [[§40 Fibrations#^def-40-3|§40.3]]). Let $p \in M$ and $y = s(p)$.
+> Let $\pi : E \to B$ and $s : B \to E$ be smooth with $\pi \circ s = \mathrm{id}_B$ (for a fibration, $s$ is a section, Definition [[§40 Fibrations#^def-40-3|§40.3]]). Let $p \in B$ and $y = s(p)$.
 >
-> 1. $\pi_{\ast y} \circ s_{\ast p} = \mathrm{id}_{T_pM}$; so $s_{\ast p}$ is injective and $\pi_{\ast y}$ is surjective.
-> 2. $T_yE = s_{\ast p}(T_pM) \oplus V_y$, with $V_y$ the vertical space (Definition [[§40 Fibrations#^def-40-5|§40.5]]).
-> 3. The projection of $T_yE$ onto $V_y$ along $s_{\ast p}(T_pM)$ is $P = \mathrm{id} - s_{\ast p} \circ \pi_{\ast y}$.
+> 1. $\pi_{\ast y} \circ s_{\ast p} = \mathrm{id}_{T_pB}$; so $s_{\ast p}$ is injective and $\pi_{\ast y}$ is surjective.
+> 2. $T_yE = s_{\ast p}(T_pB) \oplus V_y$, with $V_y$ the vertical space (Definition [[§40 Fibrations#^def-40-5|§40.5]]).
+> 3. The projection of $T_yE$ onto $V_y$ along $s_{\ast p}(T_pB)$ is $P = \mathrm{id} - s_{\ast p} \circ \pi_{\ast y}$.
 >
-> In particular $\dim T_yE = \dim M + \dim V_y$.
+> In particular $\dim T_yE = \dim B + \dim V_y$.
 
 ^prop-40-5
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in. The identity in (1) is the heart of Assignment 5, Problem 1.)* *(1)* By the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) applied to $\pi \circ s = \mathrm{id}_M$,
+> *(Not from lecture; filled in. The identity in (1) is the heart of Assignment 5, Problem 1.)* *(1)* By the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) applied to $\pi \circ s = \mathrm{id}_B$,
 >
 > $$
-> \pi_{\ast y} \circ s_{\ast p} = (\pi \circ s)_{\ast p} = (\mathrm{id}_M)_{\ast p} = \mathrm{id}_{T_pM} .
+> \pi_{\ast y} \circ s_{\ast p} = (\pi \circ s)_{\ast p} = (\mathrm{id}_B)_{\ast p} = \mathrm{id}_{T_pB} .
 > $$
 >
-> If $s_{\ast p}v = s_{\ast p}w$, applying $\pi_{\ast y}$ gives $v = w$; and every $v \in T_pM$ is $\pi_{\ast y}(s_{\ast p}v)$.
+> If $s_{\ast p}v = s_{\ast p}w$, applying $\pi_{\ast y}$ gives $v = w$; and every $v \in T_pB$ is $\pi_{\ast y}(s_{\ast p}v)$.
 >
-> *(2) The two subspaces span.* Let $w \in T_yE$ and put $u = s_{\ast p}(\pi_{\ast y}w) \in s_{\ast p}(T_pM)$. Then $w = u + (w - u)$, and $w - u \in V_y$, since by (1)
+> *(2) The two subspaces span.* Let $w \in T_yE$ and put $u = s_{\ast p}(\pi_{\ast y}w) \in s_{\ast p}(T_pB)$. Then $w = u + (w - u)$, and $w - u \in V_y$, since by (1)
 >
 > $$
 > \pi_{\ast y}(w - u) = \pi_{\ast y}w - (\pi_{\ast y} \circ s_{\ast p})(\pi_{\ast y}w) = \pi_{\ast y}w - \pi_{\ast y}w = 0 .
@@ -325,9 +344,9 @@ A section in the sense of [[§40 Fibrations#^def-40-3|Definition §40.3]] is a l
 >
 > *They meet only in $0$.* If $w = s_{\ast p}v$ lies in $V_y$, then $v = \pi_{\ast y}(s_{\ast p}v) = \pi_{\ast y}w = 0$ by (1), so $w = 0$. So the sum is direct.
 >
-> *(3)* $P$ is linear. By the computation in (2), $P(w) = w - u \in V_y$. On $V_y$, $\pi_{\ast y} = 0$, so $P(w) = w$; on $s_{\ast p}(T_pM)$, $P(s_{\ast p}v) = s_{\ast p}v - s_{\ast p}(\pi_{\ast y}s_{\ast p}v) = s_{\ast p}v - s_{\ast p}v = 0$. So $P$ is the projection onto $V_y$ along $s_{\ast p}(T_pM)$.
+> *(3)* $P$ is linear. By the computation in (2), $P(w) = w - u \in V_y$. On $V_y$, $\pi_{\ast y} = 0$, so $P(w) = w$; on $s_{\ast p}(T_pB)$, $P(s_{\ast p}v) = s_{\ast p}v - s_{\ast p}(\pi_{\ast y}s_{\ast p}v) = s_{\ast p}v - s_{\ast p}v = 0$. So $P$ is the projection onto $V_y$ along $s_{\ast p}(T_pB)$.
 >
-> The dimension formula: $s_{\ast p}$ is injective, so $\dim s_{\ast p}(T_pM) = \dim T_pM = \dim M$, and the dimensions of the two summands of a direct sum add.
+> The dimension formula: $s_{\ast p}$ is injective, so $\dim s_{\ast p}(T_pB) = \dim T_pB = \dim B$, and the dimensions of the two summands of a direct sum add.
 
 ^pf-40-5
 
@@ -335,4 +354,4 @@ A section in the sense of [[§40 Fibrations#^def-40-3|Definition §40.3]] is a l
 
 ![[m591-16-a6.gif|420]]
 
-*(Not from lecture; animation added, vault only.)* The splitting for $E = \mathbb{R}^2 \to M = \mathbb{R}$, $\pi(x, y) = x$, and a section $s(x) = (x, \sigma(x))$ (chosen for the picture). At $y = s(p)$ a vector $w$ (black) turns once around and splits as $s_{\ast p}\pi_{\ast y}w$ (blue), along the tangent of $s(M)$, plus $Pw = w - s_{\ast p}\pi_{\ast y}w$ (green), vertical, in $V_y = \ker \pi_{\ast y}$.
+*(Not from lecture; animation added, vault only.)* The splitting for $E = \mathbb{R}^2 \to B = \mathbb{R}$, $\pi(x, y) = x$, and a section $s(x) = (x, \sigma(x))$ (chosen for the picture). At $y = s(p)$ a vector $w$ (black) turns once around and splits as $s_{\ast p}\pi_{\ast y}w$ (blue), along the tangent of $s(B)$, plus $Pw = w - s_{\ast p}\pi_{\ast y}w$ (green), vertical, in $V_y = \ker \pi_{\ast y}$.

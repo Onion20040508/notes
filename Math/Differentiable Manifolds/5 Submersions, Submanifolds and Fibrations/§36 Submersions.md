@@ -27,7 +27,9 @@ tags: [differentiable-manifolds, math591]
 ^def-36-2
 
 > [!remark]- Connections
-> - The lecture's definition of immersion, with its normal form: [[§36 Submersions#^def-36-2|Def. §36.2]], [[§43 Immersions#^thm-43-1|§43.1]].
+> - Immersions are taken up, with their normal form, in [[§43 Immersions|§43]]: [[§43 Immersions#^thm-43-1|§43.1]].
+> - An injective linear map cannot lower dimension: [[§8 Null Spaces and Ranges#^ladr-3-22|LADR 3.22]].
+> - The first examples of immersions are the regular parametrized surfaces of 452, whose $3 \times 2$ Jacobian has rank 2: [[§31 Surface Integrals#^def-31-3|452 Def. §31.3]].
 
 The submersion half is the lecture's definition. Immersions were listed as the third special type and treated in Lecture 13 ([[§43 Immersions|§43]]); the definition is recorded here in Lee's form so that the three types can be compared. In the language of Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]], $F$ is a submersion at $p$ exactly when $p$ is a regular point.
 
@@ -110,28 +112,35 @@ Lecture 11 supplied it (Theorem [[§31 Tangent Vectors as Velocities of Curves#^
 
 The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§46 Projective Spaces and the Hopf Fibration|§46]].
 
-> [!definition] Definition §36.3: Regular Points and Critical Points
-> Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$.
-> 1. $p \in M$ is a **regular point** of $F$ if $F$ is a submersion at $p$, i.e. $F_{\ast p}$ is onto — which forces $n \le m$. Otherwise $p$ is a **critical point**, also called a **singular point**.
+Regular points and regular values of a smooth map between manifolds have been defined already:
+
+![[§30 The Differential in Coordinates#^def-30-3]]
+
+![[§30 The Differential in Coordinates#^def-30-4]]
+
+In the language of this section (Definition [[§36 Submersions#^def-36-1|§36.1]]), with $\dim M = m$ and $\dim N = n$: $p \in M$ is a regular point of $F$ if $F$ is a submersion at $p$, i.e. $F_{\ast p}$ is onto — which forces $n \le m$ (Proposition [[§36 Submersions#^prop-36-1|§36.1]](1)); and $q \in N$ is a regular value of $F$ if $F$ is a submersion at every $p \in F^{-1}(q)$. The lecture's list added the names for the opposite cases, and one convention.
+
+> [!definition] Definition §36.3: Critical Point
+> Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$. A point $p \in M$ that is not a regular point of $F$ (Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]]) — $F_{\ast p}$ is not onto, that is, $F$ is not a submersion at $p$ — is a **critical point** of $F$, also called a **singular point**.
 
 ^def-36-3
 
 > [!remark]- Connections
 > - The two earlier definitions of regular point: [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]] (Euclidean, Lecture 3) and [[§30 The Differential in Coordinates#^def-30-3|Def. §30.3]] (manifolds, via rank).
 
-> [!definition] Definition §36.4: Regular Values and Critical Values
+> [!definition] Definition §36.4: Critical Value
 > Let $F : M \to N$ be smooth, with $\dim M = m$ and $\dim N = n$.
-> 2. $q \in N$ is a **regular value** of $F$ if $F$ is a submersion at every $p \in F^{-1}(q)$, and a **critical value** otherwise.
-> 3. In particular every $q \notin F(M)$ is a regular value: its preimage is empty, so the condition holds vacuously.
+> 1. $q \in N$ is a **critical value** of $F$ if it is not a regular value of $F$ (Definition [[§30 The Differential in Coordinates#^def-30-4|§30.4]]), that is, if $F^{-1}(q)$ contains a critical point (Definition [[§36 Submersions#^def-36-3|§36.3]]).
+> 2. In particular every $q \notin F(M)$ is a regular value, not a critical one: its preimage is empty, so the condition of Definition [[§30 The Differential in Coordinates#^def-30-4|§30.4]] holds vacuously.
 >
-> These are the notions of Definitions [[§30 The Differential in Coordinates#^def-30-3|§30.3]] and [[§30 The Differential in Coordinates#^def-30-4|§30.4]], now with critical points and the empty-preimage convention made explicit; for maps between open subsets of Euclidean spaces they are those of Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]].
+> Regular points and regular values are the notions of Definitions [[§30 The Differential in Coordinates#^def-30-3|§30.3]] and [[§30 The Differential in Coordinates#^def-30-4|§30.4]], now with critical points and the empty-preimage convention made explicit; for maps between open subsets of Euclidean spaces they are those of Definitions [[§7 The Regular Value Theorem#^def-7-3|§7.3]] and [[§7 The Regular Value Theorem#^def-7-4|§7.4]].
 
 ^def-36-4
 
 > [!remark]- Connections
 > - The two earlier definitions of regular value: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]] (Euclidean, Lecture 3) and [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]] (manifolds, via rank).
 
-Item (3) is a trivial way to be regular, but an important one: it matters in Sard's theorem, about the set of regular values, which is still to come. **Transcription note.** Page 29 of the handwritten notes has “if $q \in \operatorname{Im} F$, then $q$ is regular”; the audio has “if $q$ is not in the image of $F$”, as in (3). The same page writes the preimage in (2) as $F^{-1}(p)$ for $F^{-1}(q)$.
+Item (2) is a trivial way to be regular, but an important one: it matters in Sard's theorem, about the set of regular values, which is still to come. **Transcription note.** The lecture's list had three items: (1) regular and critical points, (2) regular and critical values, (3) the values outside the image; the lecture's items (2), (3) are Definition [[§30 The Differential in Coordinates#^def-30-4|§30.4]] with Definition [[§36 Submersions#^def-36-4|§36.4]](1), and Definition [[§36 Submersions#^def-36-4|§36.4]](2). Page 29 of the handwritten notes has “if $q \in \operatorname{Im} F$, then $q$ is regular”; the audio has “if $q$ is not in the image of $F$”, as in the lecture's item (3). The same page writes the preimage in the lecture's item (2) as $F^{-1}(p)$ for $F^{-1}(q)$.
 
 > [!theorem] Proposition §36.2: Critical Points of Real-Valued Functions
 > Let $f : M \to \mathbb{R}$ be smooth. Then $df_p$ is either onto or zero, so
@@ -513,10 +522,17 @@ Lemma [[§36 Submersions#^lem-36-5|§36.5]] is an intellectual step that should 
 
 *Uses:* [[§36 Submersions#^thm-36-10|§36.10]], [[§16 Connected Subspaces of ℝ#^thm-16-1|590 §16.1]], [[§15 Connected Spaces#^thm-15-6|590 §15.6]], [[Heine–Borel Theorem|590 §18.12]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]
 
+> [!proof]+ Second proof for $k = 1$
+> *(Filled in.)* For $k = 1$ the claim is that no smooth $f : M \to \mathbb{R}$ on a compact nonempty manifold is a submersion; it holds because the maximum of $f$ is a critical point. Directly: if $M$ is compact and nonempty, $f(M)$ is a compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](2)), hence closed and bounded (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1)), nonempty subset of $\mathbb{R}$, so it contains its supremum $f(p)$, $p \in M$. Then $f(q) \le f(p)$ for every $q$ in the neighbourhood $M$ of $p$, so $df_p = 0$ by Proposition [[§36 Submersions#^prop-36-3|§36.3]], and $f$ is not a submersion at $p$ (Proposition [[§36 Submersions#^prop-36-2|§36.2]]).
+
+^pf-36-11-2
+
+*Uses:* [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§36 Submersions#^prop-36-3|§36.3]], [[§36 Submersions#^prop-36-2|§36.2]]
+
 > [!remark]- Connections
 > - Compact subsets of $\mathbb{R}^k$ are bounded: [[Heine–Borel Theorem]].
 
-The submitted solution also noted the edge cases: for $k = 0$ the constant map $M \to \mathbb{R}^0$ is a submersion, since every differential maps onto the zero space; and for $M = \emptyset$ the empty map is vacuously one. In particular, a compact manifold carries no nonconstant submersion to $\mathbb{R}$ — the maximum of any smooth function $f : M \to \mathbb{R}$ is a [[§36 Submersions#^def-36-3|critical point]]. *(Filled in.)* Directly: if $M$ is compact and nonempty, $f(M)$ is a compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](2)), hence closed and bounded (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1)), nonempty subset of $\mathbb{R}$, so it contains its supremum $f(p)$, $p \in M$. Then $f(q) \le f(p)$ for every $q$ in the neighbourhood $M$ of $p$, so $df_p = 0$ by Proposition [[§36 Submersions#^prop-36-3|§36.3]], and $f$ is not a submersion at $p$ (Proposition [[§36 Submersions#^prop-36-2|§36.2]]). (Constant functions are not submersions either, their differentials being zero; so for $M$ compact and nonempty there is no submersion $M \to \mathbb{R}$ at all, as Corollary [[§36 Submersions#^cor-36-11|§36.11]] says.)
+The submitted solution also noted the edge cases: for $k = 0$ the constant map $M \to \mathbb{R}^0$ is a submersion, since every differential maps onto the zero space; and for $M = \emptyset$ the empty map is vacuously one. In particular, a compact manifold carries no nonconstant submersion to $\mathbb{R}$ — the maximum of any smooth function $f : M \to \mathbb{R}$ is a [[§36 Submersions#^def-36-3|critical point]] (the second proof above). (Constant functions are not submersions either, their differentials being zero; so for $M$ compact and nonempty there is no submersion $M \to \mathbb{R}$ at all, as Corollary [[§36 Submersions#^cor-36-11|§36.11]] says.)
 
 ![[m591-29-1.svg]]
 *A compact $M$ (a sphere) and its height function $h : M \to \mathbb{R}$. The image $h(M) = [a, b]$ is compact and nonempty but not open in $\mathbb{R}$. At the top and bottom points $p_{\max}$ and $p_{\min}$ (red) the tangent planes are horizontal, so $dh = 0$ there: they are [[§36 Submersions#^def-36-3|critical points]] ([[§36 Submersions#^prop-36-2|§36.2]]), and $h$ is not a submersion. The box is the proof of [[§36 Submersions#^thm-36-10|Theorem §36.10]] and [[§36 Submersions#^cor-36-11|Corollary §36.11]]: the image of a submersion would be open ([[§36 Submersions#^cor-36-9|§36.9]]) as well as compact, hence closed, hence all of the connected $\mathbb{R}^k$, which is not compact. (Drawn for these notes in the vault; not in the course tex.)*

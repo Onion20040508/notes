@@ -9,28 +9,50 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: abstract — Charts give derivations $\partial/\partial x^i|_p$, and they form a basis of $T_pM$: $\dim T_pM = \dim M$. The proof needs Taylor's theorem with a smooth remainder.*
 
-> [!definition] Definition §29.2: Coordinate Functions of a Chart
-> Let $M$ be a smooth $n$-manifold.
-> 1. The **standard coordinate functions** on $\mathbb{R}^n$ are the projections
+> [!definition] Definition §29.1: Standard Coordinate Functions
+> The **standard coordinate functions** on $\mathbb{R}^n$ are the projections
 >
 > $$
 > r^i : \mathbb{R}^n \to \mathbb{R}, \qquad r^i(a^1, \ldots, a^n) = a^i, \qquad i = 1, \ldots, n.
 > $$
->
-> 2. For a smooth chart $(U, \varphi)$, the **coordinate functions of the chart**, or **local coordinates** on $U$, are
+
+^def-29-1
+
+> [!definition] Definition §29.2: Coordinate Functions of a Chart
+> Let $M$ be a smooth $n$-manifold. For a smooth chart $(U, \varphi)$, the **coordinate functions of the chart**, or **local coordinates** on $U$, are
 >
 > $$
-> x^i := r^i \circ \varphi : U \to \mathbb{R}, \qquad\text{so that}\qquad \varphi = (x^1, \ldots, x^n), \quad\text{i.e. } \varphi(q) = \big(x^1(q), \ldots, x^n(q)\big).
+> x^i := r^i \circ \varphi : U \to \mathbb{R}, \qquad\text{so that}\qquad \varphi = (x^1, \ldots, x^n), \quad\text{i.e. } \varphi(q) = \big(x^1(q), \ldots, x^n(q)\big),
 > $$
 >
-> 3. For a function $f$ defined on $U$, its **coordinate representation** in the chart is $f_\varphi = f \circ \varphi^{-1} : \varphi(U) \to \mathbb{R}$, as in Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]; thus $f = f_\varphi \circ \varphi$ on $U$. In particular $(x^i)_\varphi = r^i \circ \varphi \circ \varphi^{-1} = r^i$ on $\varphi(U)$.
+> where $r^1, \ldots, r^n$ are the standard coordinate functions on $\mathbb{R}^n$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]).
 >
 > *Lee: Ch. 1, Coordinate Charts*
 
 ^def-29-2
 
+For a function $f$ defined on $U$, its **coordinate representation** in the chart is $f_\varphi = f \circ \varphi^{-1} : \varphi(U) \to \mathbb{R}$, as in Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]; thus $f = f_\varphi \circ \varphi$ on $U$.
+
+![[§19 Smooth Functions and Smooth Maps#^def-19-2]]
+
+> [!theorem] Lemma §29.1: Coordinate Functions in Their Own Chart
+> Let $(U, \varphi)$ be a smooth chart of a smooth $n$-manifold $M$, with coordinate functions $x^1, \ldots, x^n$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]). Then the coordinate representation of $x^i$ in the chart is the standard coordinate function $r^i$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]), restricted to $\varphi(U)$:
+>
+> $$
+> (x^i)_\varphi = r^i \quad\text{on } \varphi(U), \qquad i = 1, \ldots, n.
+> $$
+
+^lem-29-1
+
+> [!proof]+ Proof
+> By the definition of the coordinate representation (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]]) and $x^i = r^i \circ \varphi$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), $(x^i)_\varphi = r^i \circ \varphi \circ \varphi^{-1} = r^i$ on $\varphi(U)$, since $\varphi \circ \varphi^{-1}$ is the identity of $\varphi(U)$.
+
+^pf-29-1
+
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
+
 > [!remark] Remark
-> **A notational discipline.** The $x^i$ live *upstairs*, as functions on the manifold, and the $r^i$ *downstairs*, as functions on $\mathbb{R}^n$; conflating them is the main source of confusion in what follows. The identity $(x^i)_\varphi = r^i$ is the bridge between the two rows: it says that the coordinate functions, written in their own chart, are the standard coordinates. It also shows that each $x^i$ is a smooth function on $U$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]).
+> **A notational discipline.** The $x^i$ live *upstairs*, as functions on the manifold, and the $r^i$ *downstairs*, as functions on $\mathbb{R}^n$; conflating them is the main source of confusion in what follows. The identity $(x^i)_\varphi = r^i$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]) is the bridge between the two rows: it says that the coordinate functions, written in their own chart, are the standard coordinates. It also shows that each $x^i$ is a smooth function on $U$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]).
 
 ^rem-29-1
 
@@ -43,11 +65,11 @@ tags: [differentiable-manifolds, math591]
 ^lem-29-2
 
 > [!proof]+ Proof
-> By Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]] it suffices to find, around each point of $U$, a smooth chart in which the coordinate representation of $x^i$ is smooth; the chart $(U, \varphi)$ of $U$ serves for every point. In it, $(x^i)_\varphi = r^i \circ \varphi \circ \varphi^{-1} = r^i$ on $\varphi(U)$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]](3)), and $r^i$ is smooth, being linear. So $x^i$ is smooth on $U$.
+> By Definition [[§19 Smooth Functions and Smooth Maps#^def-19-2|§19.2]] it suffices to find, around each point of $U$, a smooth chart in which the coordinate representation of $x^i$ is smooth; the chart $(U, \varphi)$ of $U$ serves for every point. In it, $(x^i)_\varphi = r^i \circ \varphi \circ \varphi^{-1} = r^i$ on $\varphi(U)$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]), and $r^i$ is smooth, being linear. So $x^i$ is smooth on $U$.
 
 ^pf-29-2
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-2|Def. §19.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]
 
 > [!definition] Definition §29.3: Coordinate Derivations
 > Let $(U,\varphi)$ be a smooth chart with $p \in U$, with coordinate functions $x^1, \ldots, x^n$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), and let $i \in \{1,\ldots,n\}$. Define $\dfrac{\partial}{\partial x^i}\Big|_p : C_p^\infty(M) \to \mathbb{R}$ by
@@ -233,6 +255,8 @@ The path must be the segment $a + t(r - a)$, equal to $a$ at $t = 0$ and to $r$ 
 
 *Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|§29.5]]
 
+**Transcription note (Lecture 8).** Page 16 of the handwritten notes states Taylor–Hadamard for “$f : U \to \mathbb{R}^2$”; the target is $\mathbb{R}$.
+
 > [!remark]- Connections
 > - Taylor's theorem with an estimated remainder: [[Multivariable Taylor's Theorem|452 §11.2 (Multivariable Taylor's Theorem)]]; in one variable, [[§31 Taylor's Theorem#^thm-31-2|451 §31.2]].
 
@@ -335,7 +359,7 @@ The path must be the segment $a + t(r - a)$, equal to $a$ at $t = 0$ and to $r$ 
 >
 > so $D = \sum_i D[x^i]\, \partial/\partial x^i|_p$, two derivations being equal when they agree on every germ. As $D$ was arbitrary, the coordinate derivations span.
 >
-> *Step 4: independence.* First, for all $i, j$: since $(x^j)_\varphi = r^j$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]](3)) and the projection $r^j$ has $i$-th partial derivative $1$ if $i = j$ and $0$ otherwise, Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]] gives
+> *Step 4: independence.* First, for all $i, j$: since $(x^j)_\varphi = r^j$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]) and the projection $r^j$ has $i$-th partial derivative $1$ if $i = j$ and $0$ otherwise, Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]] gives
 >
 > $$
 > \frac{\partial}{\partial x^i}\Big|_p[x^j] = \frac{\partial (x^j)_\varphi}{\partial r^i}(a) = \frac{\partial r^j}{\partial r^i}(a) = \delta^j_i .
@@ -351,7 +375,7 @@ The path must be the segment $a + t(r - a)$, equal to $a$ at $t = 0$ and to $r$ 
 
 ^pf-29-8
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|§29.7]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-4|§29.4]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-7|§29.7]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§29 Coordinate Derivations and the Basis Theorem#^prop-29-4|§29.4]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-1|§29.1]]
 
 ![[m591-12-8.svg]]
 
@@ -365,9 +389,7 @@ $$
 > - The coefficients $D[x^i]$ are the values of the dual basis $dx^i|_p$: [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]; cf. [[§12 Duality#^ladr-3-114|LADR 3.114]].
 > - The components in the coordinate basis give the local trivializations and charts of the tangent bundle: [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]].
 
-**Reconciliation with the lecture.** This is the lecture's proof, in the lecture's order of ideas but with the pushforward defined before it is used rather than after. Two details of the board version. It opens with “$\forall\, [f] \in I_p$”: restricting to germs vanishing at $p$ is harmless, since $D[f] = D[f - f(p)]$ by Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1), but the argument works verbatim for every germ. And the notes had filled in a proof of this theorem before Lecture 9, via two reduction lemmas; those were the pushforward by an inclusion and by the chart in disguise, and they now appear as Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] and Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]].
-
-**Transcription note (Lecture 8).** Page 16 of the handwritten notes states Taylor–Hadamard for “$f : U \to \mathbb{R}^2$”; the target is $\mathbb{R}$.
+The board version of this proof opens with “$\forall\, [f] \in I_p$”: restricting to germs vanishing at $p$ is harmless, since $D[f] = D[f - f(p)]$ by Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1), but the argument works verbatim for every germ. The two reductions in Step 1, Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] and Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], are the pushforward by an inclusion and by the chart in disguise.
 
 > [!theorem] Theorem §29.9: Ambient and Abstract Agree
 > Let $M = F^{-1}(c) \subseteq \mathbb{R}^{n+k}$ be a regular level set and $p \in M$. Then
@@ -403,26 +425,7 @@ $$
 > - The same argument, with both dimension counts cited ([[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] for $T^{\mathrm{geo}}_pM$, the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|basis theorem]] for $T_pM$), is recorded as [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|Consequences, §29.10]].
 > - The same identification read through velocities of curves: [[§31 Tangent Vectors as Velocities of Curves#^rem-31-1|The Two Faces Reconciled]].
 
-> [!theorem] Corollary §29.9: Consequences
-> Let $M$ be a smooth $n$-manifold and $p \in M$. Then the abstract tangent space has $\dim T_pM = n$, and for a regular level set $M = F^{-1}(c)$ the map $v \mapsto D_v$ of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], from $T^{\mathrm{geo}}_pM$ to $T_pM$, is an isomorphism.
->
-> *Lee: Proposition 3.10*
-
-^xcor-29-9
-
-> [!proof]+ Proof
-> *First claim.* The first claim is Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]: in any chart at $p$ the $n$ coordinate derivations $\partial/\partial x^i|_p$ form a basis of $T_pM$, so $\dim T_pM = n$.
->
-> *Second claim.* For the second, $v \mapsto D_v$ is linear and injective (Proposition [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]]; it lands in $T_pM$ and is linear as shown in the proof of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]) between spaces of dimension $n$ — the geometric tangent space $T^{\mathrm{geo}}_pM$ by Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], the abstract tangent space $T_pM$ by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]] — hence an isomorphism: by rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), an injective linear map between spaces of equal finite dimension is also surjective.
-
-^xpf-29-9
-
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§25 The Geometric Tangent Space#^prop-25-9|§25.9]], [[§25 The Geometric Tangent Space#^prop-25-8|§25.8]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
-
-> [!remark]- Connections
-> - The same argument as the proof of [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|Ambient and Abstract Agree, §29.9]], stated just above, with both dimension counts cited.
-
-**Comparison with Lee.** Lee meets the two kinds of tangent vector in the opposite order. He defines $T_pM$ by derivations first, identifies geometric and abstract tangent vectors in $\mathbb{R}^n$ (Proposition 3.2), and only later, for embedded submanifolds, shows $T_pS = \ker d\Phi_p$ (Proposition 5.38). The course starts geometrically, with $T^{\mathrm{geo}}_pM = \ker F'(p)$ inside the ambient space (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), and reaches derivations afterwards. The consequence above is where the two orders meet.
+**Comparison with Lee.** Lee meets the two kinds of tangent vector in the opposite order. He defines $T_pM$ by derivations first, identifies geometric and abstract tangent vectors in $\mathbb{R}^n$ (Proposition 3.2), and only later, for embedded submanifolds, shows $T_pS = \ker d\Phi_p$ (Proposition 5.38). The course starts geometrically, with $T^{\mathrm{geo}}_pM = \ker F'(p)$ inside the ambient space (Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]), and reaches derivations afterwards. Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]] above is where the two orders meet.
 
 > [!remark] Remark: A Derivation Sees Only the First Derivatives
 > The basis theorem showed that, of the whole Taylor expansion of a germ, a derivation sees only the *linear* term, that is, the first partials. [[§34 The Cotangent Space from Germs|§34]] says this algebraically: $I_p$ is a maximal ideal, being the kernel of evaluation; $I_p^2$ consists exactly of the germs vanishing to *second* order (Proposition [[§34 The Cotangent Space from Germs#^prop-34-1|§34.1]]); and $I_p/I_p^2$ is canonically the *cotangent space* $T_p^{\ast}M$ of Definition [[§32 The Cotangent Space#^def-32-4|§32.4]], built with no dualizing at all (Theorem [[§34 The Cotangent Space from Germs#^thm-34-4|§34.4]]). This is the sense in which it is more natural to define the dual first: the cotangent space comes first, and the abstract tangent space is its dual. We follow Lee and do not take that route.
@@ -437,6 +440,8 @@ $$
 > $$
 >
 > the same at every point, and independent of the chart used to compute it.
+>
+> *Lee: Proposition 3.10*
 
 ^thm-29-10
 

@@ -18,8 +18,29 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ## Conjugation and Rotations
 
+> [!theorem] Lemma §48.1: $\mathrm{SO}(3)$ Is a Regular Submanifold
+> 1. $\mathrm{O}(3)$ is a regular submanifold of $\operatorname{Mat}(3, \mathbb{R})$.
+> 2. $\mathrm{SO}(3) = \{g \in \mathrm{O}(3) : \det g = 1\}$ is open in $\mathrm{O}(3)$, and it is a regular submanifold of $\operatorname{Mat}(3, \mathbb{R})$, of the same codimension as $\mathrm{O}(3)$.
+
+^lem-48-1
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in. Formerly inside the proof of Proposition [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]].)* *(1)* $\mathrm{O}(3)$ is the level set $\{g : gg^{\mathsf T} = I\}$ of the regular value $I$ of the map $g \mapsto gg^{\mathsf T}$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]]), so a regular submanifold of $\operatorname{Mat}(3, \mathbb{R})$ (Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]).
+>
+> *(2)* $\mathrm{SO}(3)$ is open in $\mathrm{O}(3)$: $\mathrm{SO}(3) = \mathrm{O}(3) \cap W$ with $W = \det^{-1}\big((0, \infty)\big)$ open in $\operatorname{Mat}(3, \mathbb{R})$, because $\det = \pm 1$ on $\mathrm{O}(3)$. (For $A \in \mathrm{O}(3)$, $\det(A)^2 = \det(A A^{\mathsf T}) = \det I = 1$; and $W$ is open because $\det$ is continuous.) Let $g \in \mathrm{SO}(3)$. By (1) and Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] there is an adapted chart $(U, \varphi)$ of $\mathrm{O}(3)$ at $g$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]): $U \cap \mathrm{O}(3) = \{q \in U : x_b(q) = \vec 0\}$. This adapted chart $(U, \varphi)$ of $\mathrm{O}(3)$, restricted to $U \cap W$, satisfies $(U \cap W) \cap \mathrm{SO}(3) = \{q \in U \cap W : x_b(q) = \vec 0\}$, so it is adapted to $\mathrm{SO}(3)$; thus $\mathrm{SO}(3)$ is a regular submanifold of $\operatorname{Mat}(3, \mathbb{R})$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]). In detail: $U \cap W$ is open and contains $g$, so the restriction is a smooth chart at $g$ (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1)); and
+>
+> $$
+> (U \cap W) \cap \mathrm{SO}(3) = (U \cap W) \cap \mathrm{O}(3) \cap W = \big(U \cap \mathrm{O}(3)\big) \cap W = \{q \in U \cap W : x_b(q) = \vec 0\} ,
+> $$
+>
+> with the same number of equations $x_b = \vec 0$ as for $\mathrm{O}(3)$, so the codimension is the same.
+
+^pf-48-1
+
+*Uses:* [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]]
+
 > [!theorem] Proposition §48.2: Conjugation by Unit Quaternions Is Rotation
-> For $q \in S^3$, the map $C_q(v) = q v \bar q$ sends $\mathbb{H}_0 \cong \mathbb{R}^3$ to itself, and:
+> For $q \in S^3$, the map $C_q(v) = q v \bar q$ sends $\mathbb{H}_0 \cong \mathbb{R}^3$, the pure imaginary quaternions (Definition [[§47 The Unit Quaternions and SU(2)#^def-47-3|§47.3]]), to itself, and:
 > 1. $C_q \in \mathrm{SO}(3)$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]]), and $C : S^3 \to \mathrm{SO}(3)$, $q \mapsto C_q$, is a smooth ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]) group homomorphism ([[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]);
 > 2. $\ker C = \{\pm 1\}$ ([[§15 Homomorphisms#^def-15-3|493 Def. §15.3]]), so $C_p = C_q$ if and only if $p = \pm q$;
 > 3. if $u \in \mathbb{H}_0$ is a unit vector and $\theta \in \mathbb{R}$, then $C_q$ for $q = \cos\frac\theta2 + \sin\frac\theta2\, u$ is the rotation by the angle $\theta$ about the axis $u$.
@@ -56,7 +77,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 >
 > *Values in $\mathrm{SO}(3)$.* For $A \in \mathrm{O}(3)$, $\det(A)^2 = \det(A^{\mathsf T} A) = 1$, so $\det \circ C : S^3 \to \{\pm 1\}$. It is continuous, and $S^3$ is connected (Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-4|§47.4]]); if it took both values, the preimages of $1$ and of $-1$ would be disjoint nonempty open sets covering $S^3$. So it is constant, equal to its value $\det C_1 = \det I = 1$ at $q = 1$ (where $C_1(v) = v$). Hence $C$ takes values in $\mathrm{SO}(3)$.
 >
-> *Smooth into $\mathrm{SO}(3)$.* $\mathrm{O}(3)$ is the level set $\{g : gg^{\mathsf T} = I\}$ of the regular value $I$ of the map $g \mapsto gg^{\mathsf T}$ (Theorem [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], Example [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|§23.1]]), so a regular submanifold of $\operatorname{Mat}(3, \mathbb{R})$ (Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]). $\mathrm{SO}(3)$ is open in $\mathrm{O}(3)$: $\mathrm{SO}(3) = \mathrm{O}(3) \cap W$ with $W = \det^{-1}\big((0, \infty)\big)$ open in $\operatorname{Mat}(3, \mathbb{R})$, because $\det = \pm 1$ on $\mathrm{O}(3)$. An adapted chart $(U, \varphi)$ of $\mathrm{O}(3)$, restricted to $U \cap W$, satisfies $(U \cap W) \cap \mathrm{SO}(3) = \{q \in U \cap W : x_b(q) = \vec 0\}$, so it is adapted to $\mathrm{SO}(3)$; thus $\mathrm{SO}(3)$ is a regular submanifold of $\operatorname{Mat}(3, \mathbb{R})$ (Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]]). Since $C$ is smooth into $\operatorname{Mat}(3, \mathbb{R})$ with values in $\mathrm{SO}(3)$, it is smooth into $\mathrm{SO}(3)$ (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2)).
+> *Smooth into $\mathrm{SO}(3)$.* $\mathrm{SO}(3)$ is a regular submanifold of $\operatorname{Mat}(3, \mathbb{R})$ (Lemma [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-1|§48.1]]). Since $C$ is smooth into $\operatorname{Mat}(3, \mathbb{R})$ with values in $\mathrm{SO}(3)$, it is smooth into $\mathrm{SO}(3)$ (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](2)).
 >
 > (2) *The kernel.* If $C_q = \mathrm{id}$, then $q v \bar q = v$ for all $v \in \mathbb{H}_0$; multiplying on the right by $q$ and using $\bar q q = 1$ gives $qv = vq$. So $q$ commutes with $i$, $j$ and $k$. Write $q = x_0 + x_1 i + x_2 j + x_3 k$. By the multiplication table,
 >
@@ -109,7 +130,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ^pf-48-2
 
-*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-1|Def. §47.1]], [[§47 The Unit Quaternions and SU(2)#^prop-47-1|§47.1]], [[§47 The Unit Quaternions and SU(2)#^prop-47-4|§47.4]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§15 Homomorphisms#^def-15-3|493 Def. §15.3]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|§48.5]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]]
+*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-1|Def. §47.1]], [[§47 The Unit Quaternions and SU(2)#^prop-47-1|§47.1]], [[§47 The Unit Quaternions and SU(2)#^prop-47-4|§47.4]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-8|Def. §11.8]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|§11.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§1 Point-Set Topology Review#^prop-1-7|§1.7]], [[Continuous Image of a Connected Space is Connected|590 §15.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§15 Homomorphisms#^def-15-3|493 Def. §15.3]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|§48.5]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-1|§48.1]]
 
 > [!remark]- Connections
 > - The half-angle in Quantum Mechanics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-2|QM Theorem §C5.2.2]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-4|QM Theorem §C5.2.4]].
@@ -239,7 +260,7 @@ This is the left translation of the [[§25 The Geometric Tangent Space#^rem-25-7
 >
 > (Definition [[§25 The Geometric Tangent Space#^def-25-3|§25.3]] with $v = e_2$, $e_3$). The hat map is a linear isomorphism $\mathbb{R}^3 \to \operatorname{Skew}(3, \mathbb{R})$, so the $\hat e_j$ are a basis of $T_I\,\mathrm{SO}(3) = \operatorname{Skew}(3, \mathbb{R})$ (Example [[§25 The Geometric Tangent Space#^ex-25-4|§25.4]]), and so are the $2\hat e_j$. Thus $G_{\ast I}$ maps the basis $\sigma_1, \sigma_2, \sigma_3$ of $T_I\,\mathrm{SU}(2)$ (Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]]) to a basis of $T_I\,\mathrm{SO}(3)$, so $G_{\ast I}$ is an isomorphism.
 >
-> *Local diffeomorphism.* $\mathrm{SU}(2)$ and $\mathrm{SO}(3)$ are groups of matrices, closed under products and inverses, and regular submanifolds of $\operatorname{Mat}(2, \mathbb{C})$ and $\operatorname{Mat}(3, \mathbb{R})$ (Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]](3), and the proof of Proposition [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]](1)). By Lemma [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-4|§48.4]], every $G_{\ast g}$ is an isomorphism, so $G$ is a local diffeomorphism (Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]]).
+> *Local diffeomorphism.* $\mathrm{SU}(2)$ and $\mathrm{SO}(3)$ are groups of matrices, closed under products and inverses, and regular submanifolds of $\operatorname{Mat}(2, \mathbb{C})$ and $\operatorname{Mat}(3, \mathbb{R})$ (Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]](3) and Lemma [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-1|§48.1]]). By Lemma [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-4|§48.4]], every $G_{\ast g}$ is an isomorphism, so $G$ is a local diffeomorphism (Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]]).
 >
 > *Surjective.* Let $A \in \mathrm{SO}(3)$. By Lemma [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|§48.3]], $A$ is the rotation by some $\theta$ about some unit $u \in \mathbb{R}^3 = \mathbb{H}_0$. Put $q = \cos\frac\theta2 + \sin\frac\theta2\, u \in S^3$. By Proposition [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]](3), $C_q$ is that rotation, so
 >
@@ -259,7 +280,7 @@ This is the left translation of the [[§25 The Geometric Tangent Space#^rem-25-7
 
 ^pf-48-5
 
-*Uses:* [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|§48.3]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-4|§48.4]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^cor-5-3|§5.3]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Universal Property of Quotient Maps|590 §13.3]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]]
+*Uses:* [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|§48.3]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-4|§48.4]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§25 The Geometric Tangent Space#^ex-25-4|Ex. §25.4]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], [[§4 Quotient Spaces and Open Maps#^def-4-1|Def. §4.1]], [[§5 Quotient Maps#^cor-5-3|§5.3]], [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Universal Property of Quotient Maps|590 §13.3]], [[Bijection from Compact to Hausdorff is a Homeomorphism|590 §18.7]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-1|§48.1]]
 
 > [!proof]+ Second proof: the conjugation map computed explicitly (the submitted solution)
 >
@@ -375,6 +396,54 @@ This is the left translation of the [[§25 The Geometric Tangent Space#^rem-25-7
 
 *Uses:* [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§47 The Unit Quaternions and SU(2)#^prop-47-6|§47.6]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]], [[§25 The Geometric Tangent Space#^def-25-3|Def. §25.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[Inverse Function Theorem (several variables)|452 §16.2]]
 
+> [!theorem] Corollary §48.6: $\mathbb{RP}^3 \to \mathrm{SO}(3)$ Is a Diffeomorphism
+> Let $\pi : S^3 \to \mathbb{RP}^3 = S^3/\{\pm 1\}$ be the projection, with $\mathbb{RP}^3$ carrying the smooth structure of Corollary [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|§18.5]], and let $\mathrm{SO}(3)$ carry its induced smooth structure as a regular submanifold of $\operatorname{Mat}(3, \mathbb{R})$ (Lemma [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-1|§48.1]]). The map
+>
+> $$
+> \bar C : \mathbb{RP}^3 \to \mathrm{SO}(3), \qquad \bar C(\pi(q)) = C_q ,
+> $$
+>
+> of the proof of Theorem [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|§48.5]], well defined because $C_{-q} = C_q$ (Proposition [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]](2)), is a diffeomorphism. So the homeomorphism $\mathrm{SO}(3) \cong \mathbb{RP}^3$ of Theorem [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|§48.5]] is a diffeomorphism.
+
+^cor-48-6
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* We show that $\bar C$ is smooth, that its differential is bijective at every point, and that $\bar C$ is bijective; Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]] then says that $\bar C$ is a diffeomorphism. By construction $\bar C \circ \pi = C$, with $C : S^3 \to \mathrm{SO}(3)$ the smooth map of Proposition [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]](1).
+>
+> *The smooth structure of $S^3$.* Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|§46.1]] uses the level-set structure of $S^3 = \{|x|^2 = 1\}$ (Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]), and Propositions [[§47 The Unit Quaternions and SU(2)#^prop-47-4|§47.4]] and [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]] use its induced structure as a regular submanifold of $\mathbb{R}^4$. They are the same smooth structure, by Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]](1) with $W = \mathbb{R}^4$, $F(x) = |x|^2$ and $c = 1$. So, by Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|§46.1]] with $n = 3$, $\pi : S^3 \to \mathbb{RP}^3$ is a local diffeomorphism for the smooth structure of $S^3$ used in this section; it is onto, every class $\{\pm x\}$ being $\pi(x)$.
+>
+> *$C$ has bijective differentials.* By Theorem [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|§48.5]], $G = C \circ F^{-1}$, so $C = G \circ F$, and by the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), for $x \in S^3$,
+>
+> $$
+> C_{\ast x} = G_{\ast F(x)} \circ F_{\ast x} .
+> $$
+>
+> $F$ is a diffeomorphism (Proposition [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]](3)), so $F_{\ast x}$ is an isomorphism (Corollary [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]]); and $G$ is a local diffeomorphism (Theorem [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|§48.5]]), so $G_{\ast F(x)}$ is bijective (Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]]). So $C_{\ast x}$ is bijective for every $x \in S^3$.
+>
+> *$\bar C$ is smooth.* Let $y \in \mathbb{RP}^3$ and choose $x \in S^3$ with $\pi(x) = y$. Since $\pi$ is a local diffeomorphism, there are open neighbourhoods $U$ of $x$ and $V$ of $y$ with $\pi(U) = V$ such that $\pi|_U^V : U \to V$ has a smooth inverse $\sigma : V \to U$ (Definition [[§35 Local Diffeomorphisms#^def-35-1|§35.1]]). For $v \in V$, $\pi(\sigma(v)) = v$, so
+>
+> $$
+> \bar C(v) = \bar C\big(\pi(\sigma(v))\big) = C(\sigma(v)) .
+> $$
+>
+> So on the open set $V \ni y$, $\bar C$ is the composite of the smooth maps $\sigma : V \to U$, the inclusion $U \hookrightarrow S^3$ of an open subset, and $C$, hence smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). Smoothness is checked near each point (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]), so $\bar C$ is smooth.
+>
+> *$\bar C$ has bijective differentials.* Let $y = \pi(x) \in \mathbb{RP}^3$. By the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) applied to $C = \bar C \circ \pi$,
+>
+> $$
+> C_{\ast x} = \bar C_{\ast y} \circ \pi_{\ast x} .
+> $$
+>
+> Here $\pi_{\ast x}$ is bijective, because $\pi$ is a local diffeomorphism (Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]]), and $C_{\ast x}$ is bijective by the second step. So $\bar C_{\ast y} = C_{\ast x} \circ (\pi_{\ast x})^{-1}$ is bijective.
+>
+> *$\bar C$ is bijective.* This is shown in the proof of Theorem [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|§48.5]]. It is surjective because $C = G \circ F$ is: $G$ is surjective (Theorem [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|§48.5]]) and $F$ is bijective. It is injective because $\bar C(\pi(p)) = \bar C(\pi(q))$ means $C_p = C_q$, so $p = \pm q$ (Proposition [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]](2)) and $\pi(p) = \pi(q)$.
+>
+> *Conclusion.* $\bar C$ is a smooth bijection whose differential is bijective at every point, so it is a diffeomorphism (Corollary [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]]).
+
+^pf-48-6
+
+*Uses:* [[§35 Local Diffeomorphisms#^cor-35-3|§35.3]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]], [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|Ex. §46.1]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§47 The Unit Quaternions and SU(2)#^prop-47-4|§47.4]], [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|§48.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§28 Derivations and the Abstract Tangent Space#^cor-28-7|§28.7]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]], [[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]
+
 > [!remark]- Connections
 > - The same theorem in physics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|QM Theorem §C5.2.8]]; $\mathrm{SU}(2) \cong S^3$ and $\mathrm{SO}(3) \cong \mathbb{RP}^3$ topologically, with $\pi_1$: [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-8|QFT Theorem §CB.10.8]].
 > - The algebraic quotient in 493: [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 §41.1]]; $\mathbb{RP}^n$ as the quotient $S^n/(x \sim -x)$ in 590: [[§38 Fundamental Group of Some Surfaces#^def-38-2|590 Def. §38.2]].
@@ -391,7 +460,7 @@ The projections $S^n \to \mathbb{RP}^n$ and $S^{2n+1} \to \mathbb{CP}^n$ through
 *(Not from lecture; animation added, vault only.)* $q = \cos t + \sin t\,u$ runs once around the great circle (left; $-q$ in red) while $C_q$ turns a flag about the axis $u$ (chosen for the picture) by $2t$. At $t = 180^\circ$, $q = -1$, yet the flag has made a full turn back to the identity; the second half of the circle repeats the rotations, $C_{-q} = C_q$.
 
 > [!remark] Remark: What the Example Shows
-> $G$ is a local diffeomorphism ([[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]]) that is not a diffeomorphism: locally $\mathrm{SU}(2)$ and $\mathrm{SO}(3)$ are indistinguishable — their tangent spaces at $I$ are isomorphic, and $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ — but globally $\mathrm{SU}(2) \cong S^3$ wraps twice around $\mathrm{SO}(3) \cong \mathbb{RP}^3$. By Corollary [[§48 SU(2) → SO(3)꞉ The Double Cover#^cor-48-7|§48.7]] below, $G$ is a fibration ([[§40 Fibrations#^def-40-1|Def. §40.1]]) whose fibre is two points: a double cover. The smooth version of the last statement — that $\bar C$ is a diffeomorphism for the smooth structure of $\mathbb{RP}^3$ — needs the quotient map $S^3 \to \mathbb{RP}^3$ to be a local diffeomorphism (Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|§46.1]]), and is not proved here.
+> $G$ is a local diffeomorphism ([[§35 Local Diffeomorphisms#^def-35-1|Def. §35.1]]) that is not a diffeomorphism: locally $\mathrm{SU}(2)$ and $\mathrm{SO}(3)$ are indistinguishable — their tangent spaces at $I$ are isomorphic, and $\mathfrak{su}(2) \cong \mathfrak{so}(3)$ — but globally $\mathrm{SU}(2) \cong S^3$ wraps twice around $\mathrm{SO}(3) \cong \mathbb{RP}^3$. By Corollary [[§48 SU(2) → SO(3)꞉ The Double Cover#^cor-48-7|§48.7]] below, $G$ is a fibration ([[§40 Fibrations#^def-40-1|Def. §40.1]]) whose fibre is two points: a double cover. The smooth version of the last statement — that $\bar C$ is a diffeomorphism for the smooth structure of $\mathbb{RP}^3$ — needs the quotient map $S^3 \to \mathbb{RP}^3$ to be a local diffeomorphism (Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|§46.1]]), and is Corollary [[§48 SU(2) → SO(3)꞉ The Double Cover#^cor-48-6|§48.6]].
 
 ^rem-48-1
 

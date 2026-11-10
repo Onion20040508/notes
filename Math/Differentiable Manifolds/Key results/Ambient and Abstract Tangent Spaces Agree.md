@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 29.8", "v ↦ D_v", "Lee Proposition 3.2", "Lee Proposition 5.37", "Lee Proposition 5.38"]
+aliases: ["MATH 591 29.9", "v ↦ D_v", "Lee Proposition 3.2", "Lee Proposition 5.37", "Lee Proposition 5.38"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9]]
@@ -24,7 +24,6 @@ tags: [differentiable-manifolds, hub]
 - [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8: Basis Theorem]]
 
 ## Used in (Differentiable Manifolds)
-- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|Corollary §29.10: Consequences]]
 - [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4: The Old and New Versions Agree]]
 
 ## Connections

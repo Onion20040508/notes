@@ -37,6 +37,7 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§39 Transversality and Lagrange Multipliers#^prop-39-3|Proposition §39.3: Normal Spaces Under a Transverse Map]]
 - [[§39 Transversality and Lagrange Multipliers#^cor-39-5|Corollary §39.5: Special Cases of Transversality]]
+- [[§39 Transversality and Lagrange Multipliers#^thm-39-9|Theorem §39.9: Transverse Intersections in a Manifold]]
 - [[§55 Morse Functions and the Zero Section#^cor-55-9|Corollary §55.9: Critical Points of a Morse Function Are Isolated]]
 - [[§64 Parametric Transversality#^thm-64-1|Theorem §64.1: Parametric Transversality]]
 - [[§64 Parametric Transversality#^prop-64-6|Proposition §64.6: The Gradient Family Is Transverse to the Zero Section]]

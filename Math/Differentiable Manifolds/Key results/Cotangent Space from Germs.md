@@ -19,7 +19,7 @@ tags: [differentiable-manifolds, hub]
 - [[§32 The Cotangent Space#^prop-32-2|Proposition §32.2: The Differential Evaluates Derivations]]
 - [[§32 The Cotangent Space#^cor-32-3|Corollary §32.3: Properties of the Differential of a Function]]
 - [[§32 The Cotangent Space#^def-32-5|Definition §32.5: The Differential of a Function]]
-- [[§33 Covectors in Coordinates#^lem-33-1|Lemma §33.1: The Differential in Coordinates]]
+- [[§33 Covectors in Coordinates#^lem-33-1|Lemma §33.1: The Differential of a Function in Coordinates]]
 - [[§34 The Cotangent Space from Germs#^prop-34-3|Proposition §34.3: The Pairing Is Well Defined and Non-Degenerate]]
 
 ## Used in (Differentiable Manifolds)

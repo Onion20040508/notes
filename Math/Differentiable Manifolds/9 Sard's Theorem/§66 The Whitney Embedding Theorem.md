@@ -23,7 +23,7 @@ The proof, for $M$ compact, has two parts with entirely different ideas: bump fu
 > [!proof]+ Proof
 > *(Lecture 21, Part I of the proof of Theorem [[§66 The Whitney Embedding Theorem#^thm-66-6|§66.6]], in the lecture's steps with details filled in.)* The tool is bump functions; the idea of a partition of unity ([[§65 Partitions of Unity|§65]]) is behind the construction.
 >
-> *The cover.* For every $x \in M$ choose a chart $(U_x, \varphi_x)$ at $x$ and an open coordinate ball $B_x \ni x$ with $\overline{B_x} \subseteq U_x$ and $\varphi_x(\overline{B_x})$ a closed ball in $\mathbb{R}^m$ — possible because $\varphi_x(U_x)$ is open, so it contains a closed Euclidean ball about $\varphi_x(x)$, whose preimage under $\varphi_x$ is $\overline{B_x}$. Let $\chi_x \in C^\infty_0(M)$ with $\operatorname{supp}\chi_x \subseteq U_x$ and $\chi_x \equiv 1$ on $\overline{B_x}$ (the proof of Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]). The *open* balls $B_x$ cover $M$; it matters that the cover is by the $B_x$, not the $U_x$, since the steps below use $\chi_i \equiv 1$ on $B_i$. $M$ is compact, so finitely many cover; relabel them $B_1, \ldots, B_n$, with charts $(U_i, \varphi_i)$ and bump functions $\chi_i$.
+> *The cover.* For every $x \in M$ choose a chart $(U_x, \varphi_x)$ at $x$ and an open coordinate ball $B_x \ni x$ with $\overline{B_x} \subseteq U_x$ and $\varphi_x(\overline{B_x})$ a closed ball in $\mathbb{R}^m$ — possible because $\varphi_x(U_x)$ is open, so it contains a closed Euclidean ball $\overline{B}(\varphi_x(x), r')$ about $\varphi_x(x)$; fix $0 < r < r'$ and let $\overline{B_x}$ be the preimage under $\varphi_x$ of the smaller closed ball $\overline{B}(\varphi_x(x), r)$. Let $\chi_x \in C^\infty_0(M)$ with $\operatorname{supp}\chi_x \subseteq U_x$ and $\chi_x \equiv 1$ on $\overline{B_x}$ (Lemma [[§56 Vector Fields#^lem-56-6|§56.6]], with these radii $r < r'$). The *open* balls $B_x$ cover $M$; it matters that the cover is by the $B_x$, not the $U_x$, since the steps below use $\chi_i \equiv 1$ on $B_i$. $M$ is compact, so finitely many cover; relabel them $B_1, \ldots, B_n$, with charts $(U_i, \varphi_i)$ and bump functions $\chi_i$.
 >
 > *The map.* Each $\chi_i\varphi_i : M \to \mathbb{R}^m$, defined as $\chi_i \varphi_i$ on $U_i$ and $0$ outside, is smooth: it is smooth on $U_i$ and zero on the open set $M \setminus \operatorname{supp}\chi_i$, and these cover $M$ ($\operatorname{supp}\chi_i$ is compact, hence closed). Define
 >
@@ -41,7 +41,7 @@ The proof, for $M$ compact, has two parts with entirely different ideas: bump fu
 
 ^pf-66-1
 
-*Uses:* [[§56 Vector Fields#^cor-56-7|§56.7]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§44 Embeddings#^cor-44-6|§44.6]]
+*Uses:* [[§56 Vector Fields#^cor-56-7|§56.7]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§44 Embeddings#^cor-44-6|§44.6]], [[§56 Vector Fields#^lem-56-6|§56.6]]
 
 ![[m591-61-1.svg]]
 
@@ -185,7 +185,7 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 
 ## The Noncompact Case: A Sketch
 
-*Lecture 22. Only a sketch of the proof, with precise references to Lee for the rest. The noncompact proof has the same two parts as the compact one — first put $M$ in some Euclidean space, then project as much as you can — and the lecture sketched only the first. The main tool is the existence of exhaustion functions (Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]]), proved in [[§65 Partitions of Unity|§65]] with partitions of unity.*
+*Lecture 22. Only a sketch of the proof, with precise references to Lee for the rest. The noncompact proof has the same two parts as the compact one — first put $M$ in some Euclidean space, then project as much as you can — and the lecture sketched only the first. The main tool is the existence of exhaustion functions.*
 
 The sketch uses an exhaustion function (Definition [[§65 Partitions of Unity#^def-65-7|§65.7]]): a smooth $f \ge 0$ on $M$ whose sublevel sets $f^{-1}\big((-\infty, c]\big)$ are all compact. Every smooth manifold has one (Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]]); both are in [[§65 Partitions of Unity|§65]], where partitions of unity give the proof.
 

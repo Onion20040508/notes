@@ -168,7 +168,7 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 > [!remark]- Connections
 > - The same example in Measure Theory, where the $L^p$ approximation chain breaks at $p = \infty$: [[§35 Lᵖ as a Banach Space#^rem-35-4|551 Remark §35]] (The Approximation Chain for $L^p$); a uniform limit of continuous functions is continuous, [[§24 Uniform Convergence#^thm-24-2|451 §24.2]].
 
-> [!remark] Remark
+> [!remark] Remark: $L^\infty$ is Different
 > The failure at $p = \infty$ is the first sign that $L^\infty$ behaves differently from the other $L^p$: uniform approximation cannot smooth out a jump. The pattern “true for $1 \le p < \infty$, false for $p = \infty$” will recur, e.g. in identifying dual spaces.
 
 ^rem-19-3

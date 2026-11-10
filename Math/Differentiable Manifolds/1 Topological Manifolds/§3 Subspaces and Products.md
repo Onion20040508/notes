@@ -327,8 +327,13 @@ This completes the pattern: each of the three constructions — subspace, produc
 > - Home in MATH 590: second countability of products is [[§22 Countability Axioms#^thm-22-3|590 §22.3]].
 > - Gives product manifolds their point-set hygiene: [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]].
 
+> [!definition] Definition §3.5: Finite Product Topology
+> Let $X_1, \ldots, X_k$ ($k \ge 1$) be topological spaces. The **product topology** on $X_1 \times \cdots \times X_k$ is the one having the boxes $U_1 \times \cdots \times U_k$, $U_i \subseteq X_i$ open, as a basis (they satisfy the axioms of Definition [[§1 Point-Set Topology Review#^def-1-2|§1.2]]: the whole product is a box, and the intersection of two boxes is the box of the intersections). For $k = 2$ this is Definition [[§3 Subspaces and Products#^def-3-3|§3.3]].
+
+^def-3-5
+
 > [!theorem] Corollary §3.13: Finite Products Inherit Both Conditions
-> Let $X_1, \ldots, X_k$ ($k \ge 1$) be topological spaces, and give $X_1 \times \cdots \times X_k$ the product topology, the one having the boxes $U_1 \times \cdots \times U_k$, $U_i \subseteq X_i$ open, as a basis (they satisfy the axioms of Definition [[§1 Point-Set Topology Review#^def-1-2|§1.2]]: the whole product is a box, and the intersection of two boxes is the box of the intersections).
+> Let $X_1, \ldots, X_k$ ($k \ge 1$) be topological spaces, and give $X_1 \times \cdots \times X_k$ the product topology (Definition [[§3 Subspaces and Products#^def-3-5|§3.5]]).
 >
 > 1. If every $X_i$ is $T_2$, then $X_1 \times \cdots \times X_k$ is $T_2$.
 > 2. If every $X_i$ is second countable, then $X_1 \times \cdots \times X_k$ is second countable.

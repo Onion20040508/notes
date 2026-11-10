@@ -64,7 +64,7 @@ tags: [differentiable-manifolds, math591]
 
 *Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-3|Def. §28.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-4|Def. §28.4]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|§29.5]], [[§27 Germs#^prop-27-2|§27.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]]
 
-> [!remark] Remark
+> [!remark] Remark: First and Second Order Vanishing
 > The proposition is the conceptual centre of Problem 3. $I_p$ consists of the germs vanishing to *first* order at $p$, and $I_p^2$ of those vanishing to *second* order — value and first derivatives zero. So the quotient $I_p/I_p^2$ remembers exactly the first derivatives of a germ that vanishes at $p$, and nothing else. It only needs first-order Hadamard: the vanishing of $f_i(a)$ is what puts the second factor in $I_p$.
 
 ^rem-34-1
@@ -216,18 +216,13 @@ This is the cotangent counterpart of the basis theorem for $T_pM$ (Theorem [[§2
 
 *Uses:* [[§21 Linear Algebra Toolkit#^thm-21-5|§21.5]], [[§34 The Cotangent Space from Germs#^prop-34-3|§34.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§32 The Cotangent Space#^cor-32-3|§32.3]], [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]
 
-![[m591-13-3.svg]]
-*The three spaces and their three bases. $\Phi$ sends the class of a germ to its differential, so the coordinate classes go to the coordinate covectors, and those are the dual basis of the coordinate derivations. The $dx^i|_p$ of Lecture 10 and the classes ${[}[x^i - x^i(p)]{]}$ of Problem 3 are the same objects, seen through $\Phi$.*
-
 > [!remark] Remark: The Most Natural Description
-> Lecture 15 came back to this theorem: from the point of view of functions, the cotangent space is the more natural of the two. The tangent space needed derivations; the cotangent space needs only functions — germs vanishing at $p$, modulo those vanishing to second order. This is one reason why the cotangent bundle will turn out to carry structure that the tangent bundle does not.
+> *Lecture 15, coming back to this theorem; and the review session of Oct 16, recalling this homework problem.* From the point of view of functions, the cotangent space is the more natural of the two. The tangent space needed derivations; the cotangent space needs only functions — germs vanishing at $p$, modulo those vanishing to second order. $I_p$, the germs vanishing at $p$, is an ideal, and $T_p^{\ast}M \cong I_p/I_p^2$ naturally, with nothing about curves and nothing about ambient spaces — a general and short description, with a one-page definition. This is one reason why the cotangent bundle will turn out to carry structure that the tangent bundle does not: the cotangent bundle carries a symplectic structure with no choices made.
 
 ^rem-34-2
 
-> [!remark] Remark: Review Session: The More Natural Space
-> *Review session, Oct 16, recalling this homework problem.* $I_p$, the germs vanishing at $p$, is an ideal, and $T_p^{\ast}M \cong I_p/I_p^2$ naturally, with nothing about curves and nothing about ambient spaces — a general and short description. This is a sense in which the cotangent space is the more natural space: it has a one-page definition, and the cotangent bundle carries a symplectic structure with no choices made.
-
-^xrem-34-3
+![[m591-13-3.svg]]
+*The three spaces and their three bases. $\Phi$ sends the class of a germ to its differential, so the coordinate classes go to the coordinate covectors, and those are the dual basis of the coordinate derivations. The $dx^i|_p$ of Lecture 10 and the classes ${[}[x^i - x^i(p)]{]}$ of Problem 3 are the same objects, seen through $\Phi$.*
 
 > [!theorem] Theorem §34.5: Dimension of the Cotangent Space
 > Let $M$ be a smooth $m$-manifold and $p \in M$. Then
@@ -261,7 +256,7 @@ Equal dimension is what makes the isomorphisms of Theorem [[§34 The Cotangent S
 > Let $F : M \to N$ be smooth and $p \in M$. The **pullback of covectors** at $p$ is the dual map ([[§21 Linear Algebra Toolkit#^def-21-3|Definition §21.3]]) of the pushforward $F_{\ast p} : T_pM \to T_{F(p)}N$:
 >
 > $$
-> F_p^* : T^*_{F(p)}N \longrightarrow T_p^*M, \qquad (F_p^*\alpha)(v) = \alpha\big(F_{*p}v\big) .
+> F_p^* : T^*_{F(p)}N \longrightarrow T_p^*M, \qquad (F_p^*\xi)(v) = \xi\big(F_{*p}v\big) \qquad (\xi \in T^{\ast}_{F(p)}N,\ v \in T_pM) .
 > $$
 >
 > *Lee: Ch. 11, Pullbacks of Covector Fields*
@@ -272,18 +267,45 @@ Equal dimension is what makes the isomorphisms of Theorem [[§34 The Cotangent S
 > - The dual map in LADR: [[§12 Duality#^ladr-3-118|LADR 3.118]]. The field version, pulling back a one-form point by point: [[§53 One-Forms#^def-53-8|Def. §53.8]].
 
 Directions: points and vectors move *forward* along $F$, from $M$ to $N$; functions and covectors move *backward*, from $N$ to $M$, because they are things that eat — to evaluate one on $M$, push the input to $N$ and evaluate there.
-*(Computed; not from lecture.)* With $m = \dim M$, $n = \dim N$ and charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$, $F^j = y^j \circ F$ and $\tilde F = \psi \circ F \circ \varphi^{-1}$ as in Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], $(F_p^{\ast}\,dy^j|_{F(p)})(\partial/\partial x^i|_p) = dy^j|_{F(p)}\big(F_{\ast p}\,\partial/\partial x^i|_p\big) = \partial F^j/\partial x^i(p)$, so $F_p^{\ast}\,dy^j|_{F(p)} = \sum_i \partial F^j/\partial x^i(p)\, dx^i|_p$ (Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]]). In the dual bases the $m \times n$ matrix of $F_p^{\ast}$ is therefore the transpose of the $n \times m$ matrix of $F_{\ast p}$:
 
-$$
-\begin{pmatrix}
-\dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^1}(p) \\[2mm]
-\vdots & & \vdots \\[1mm]
-\dfrac{\partial F^1}{\partial x^m}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
-\end{pmatrix}
-= \Big(\tilde F'\big(\varphi(p)\big)\Big)^{\mathsf T},
-$$
+> [!theorem] Proposition §34.6: Pullback of Covectors in Coordinates
+> *(Computed; not from lecture.)* Let $F : M \to N$ be smooth and $p \in M$, with $m = \dim M$, $n = \dim N$ and charts $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and $(V, \psi = (y^1, \ldots, y^n))$ at $F(p)$ with $F(U) \subseteq V$, $F^j = y^j \circ F$ and $\tilde F = \psi \circ F \circ \varphi^{-1}$ as in Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]].
+>
+> 1. For each $j = 1, \ldots, n$, the pullback (Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]]) of the coordinate covector $dy^j|_{F(p)}$ is
+>
+> $$
+> F_p^{\ast}\,dy^j|_{F(p)} = \sum_{i=1}^m \frac{\partial F^j}{\partial x^i}(p)\, dx^i\big|_p .
+> $$
+>
+> 2. In the dual bases $(dy^1|_{F(p)}, \ldots, dy^n|_{F(p)})$ of $T^{\ast}_{F(p)}N$ and $(dx^1|_p, \ldots, dx^m|_p)$ of $T_p^{\ast}M$, the $m \times n$ matrix of $F_p^{\ast}$ is the transpose of the $n \times m$ matrix of $F_{\ast p}$:
+>
+> $$
+> \begin{pmatrix}
+> \dfrac{\partial F^1}{\partial x^1}(p) & \cdots & \dfrac{\partial F^n}{\partial x^1}(p) \\[2mm]
+> \vdots & & \vdots \\[1mm]
+> \dfrac{\partial F^1}{\partial x^m}(p) & \cdots & \dfrac{\partial F^n}{\partial x^m}(p)
+> \end{pmatrix}
+> = \Big(\tilde F'\big(\varphi(p)\big)\Big)^{\mathsf T},
+> $$
+>
+> its $j$-th column holding the components of $F_p^{\ast}\,dy^j|_{F(p)}$.
 
-its $j$-th column holding the components of $F_p^{\ast}\,dy^j|_{F(p)}$.
+^prop-34-6
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* *(1)* Fix $j$. By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], applied at the point $F(p)$ of $N$ in the chart $(V, \psi)$, the covectors $dy^k|_{F(p)}$ are the dual basis of the coordinate basis of $T_{F(p)}N$: $dy^j|_{F(p)}\big(\partial/\partial y^k|_{F(p)}\big) = \delta^j_k$. For each $i$, by Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]], then the formula of Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], then the linearity of the covector $dy^j|_{F(p)}$ and this duality,
+>
+> $$
+> \big(F_p^{\ast}\,dy^j|_{F(p)}\big)\Big(\frac{\partial}{\partial x^i}\Big|_p\Big) = dy^j|_{F(p)}\Big(F_{\ast p}\,\frac{\partial}{\partial x^i}\Big|_p\Big) = dy^j|_{F(p)}\Big(\sum_{k=1}^n \frac{\partial F^k}{\partial x^i}(p)\, \frac{\partial}{\partial y^k}\Big|_{F(p)}\Big) = \sum_{k=1}^n \frac{\partial F^k}{\partial x^i}(p)\, \delta^j_k = \frac{\partial F^j}{\partial x^i}(p) .
+> $$
+>
+> So the components (Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]]) of the covector $F_p^{\ast}\,dy^j|_{F(p)} \in T_p^{\ast}M$ in the chart $(U, \varphi)$ are the numbers $\partial F^j/\partial x^i(p)$, $i = 1, \ldots, m$, and Corollary [[§33 Covectors in Coordinates#^cor-33-2|§33.2]] gives $F_p^{\ast}\,dy^j|_{F(p)} = \sum_i \partial F^j/\partial x^i(p)\, dx^i|_p$.
+>
+> *(2)* $F_p^{\ast}$ is linear (Proposition [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]](1)). By Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3), with the basis $(dy^1|_{F(p)}, \ldots, dy^n|_{F(p)})$ of $T^{\ast}_{F(p)}N$ and the basis $(dx^1|_p, \ldots, dx^m|_p)$ of $T_p^{\ast}M$ (Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]), the $j$-th column of the matrix of $F_p^{\ast}$ holds the coefficients of $F_p^{\ast}\,dy^j|_{F(p)}$ in the basis $dx^i|_p$. By (1) these are the $\partial F^j/\partial x^i(p)$, $i = 1, \ldots, m$: the entry in row $i$ and column $j$ is $\partial F^j/\partial x^i(p)$, which is the displayed $m \times n$ matrix. By Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], the matrix of $F_{\ast p}$ in the coordinate bases is $\tilde F'(\varphi(p))$, with the same number $\partial F^j/\partial x^i(p)$ in row $j$ and column $i$. So the matrix of $F_p^{\ast}$ is the transpose of the matrix of $F_{\ast p}$ — as Proposition [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]](2) says it must be, $F_p^{\ast}$ being the dual map of $F_{\ast p}$ and the two bases of covectors being dual to the coordinate bases.
+
+^pf-34-6
+
+*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§33 Covectors in Coordinates#^def-33-1|Def. §33.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§21 Linear Algebra Toolkit#^prop-21-4|§21.4]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark] Remark: One Symbol for Two Pullbacks
 > The symbol $F_p^{\ast}$ now has two meanings. On germs it is the pullback $C^\infty_{F(p)}(N) \to C^\infty_p(M)$, $[g] \mapsto [g \circ F]$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-5|Definition §28.5]]); on covectors it is the dual map $T^{\ast}_{F(p)}N \to T_p^{\ast}M$ of [[§34 The Cotangent Space from Germs#^def-34-3|Definition §34.3]]. Context decides which is meant, and the two are compatible: by the next proposition, pulling back the differential of $g$ is the same as differentiating the pulled-back germ, $F_p^{\ast}(dg_{F(p)}) = d\big(F_p^{\ast}[g]\big)_p$.

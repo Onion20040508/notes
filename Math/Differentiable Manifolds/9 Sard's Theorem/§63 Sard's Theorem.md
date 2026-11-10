@@ -9,8 +9,8 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: analysis — Almost every value of a smooth map is regular.*
 
-> [!remark] Remark: Recall: Regular and Singular Values
-> For $F : M \to N$ smooth, $q \in N$ is a regular value if $dF_p$ is onto for every $p \in F^{-1}(q)$ (Definition [[§36 Submersions#^def-36-4|§36.4]]); in particular every $q \notin F(M)$ is a regular value. A value that is not regular is a *singular value* — the term used in Lecture 19; “critical value” in Definition [[§36 Submersions#^def-36-4|§36.4]] and in Lee. Likewise $p \in M$ is a critical (singular) point if $dF_p$ is not onto (Definition [[§36 Submersions#^def-36-3|§36.3]]).
+> [!remark] Remark: Regular and Singular Values (Recall)
+> For $F : M \to N$ smooth, $q \in N$ is a regular value if $dF_p$ is onto for every $p \in F^{-1}(q)$ (Definition [[§30 The Differential in Coordinates#^def-30-4|§30.4]]); in particular every $q \notin F(M)$ is a regular value (Definition [[§36 Submersions#^def-36-4|§36.4]](2)). A value that is not regular is a *singular value* — the term used in Lecture 19; “critical value” in Definition [[§36 Submersions#^def-36-4|§36.4]] and in Lee. Likewise $p \in M$ is a critical (singular) point if $dF_p$ is not onto (Definition [[§36 Submersions#^def-36-3|§36.3]]).
 
 ^rem-63-1
 
@@ -75,19 +75,6 @@ Lemma [[§63 Sard's Theorem#^lem-63-2|§63.2]] for $m = 2$, $n = 1$, $k = 2$ ($n
 
 ^thm-63-3
 
-> [!remark]- Connections
-> - "Measure zero" is Lebesgue-null: outer measure [[§10 Lebesgue Outer Measure#^def-10-4|551 Def. §10.4]]; so the regular values of a smooth map are of full measure (almost every value is regular).
-
-So almost every value of a smooth map is regular. The theorem has many applications, starting with Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]] and parametric transversality ([[§64 Parametric Transversality|§64]]).
-
-![[m591-59-1.svg]]
-
-The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical points are $x = \pm 1$, where $f' = 0$, so the singular values are just $f(\pm 1) = \mp 2$, two points, a set of measure zero. Every other $c$ is a regular value: at each of its preimages the slope is nonzero.
-
-![[m591-59-a1.gif|460]]
-
-*(Not from lecture; animation added, vault only.)* The level $c$ sweeps from $-4$ to $4$ and back across $f(x) = x^3 - 3x$; its preimages are marked with their slopes. Every $c$ is a regular value except $\pm 2$, where a preimage has $f' = 0$ (red): the set of critical values is two points.
-
 > [!proof]+ Proof
 > *(Not given in lecture, the proof being long; filled in, following Lee's proof of Theorem 6.10.)* By Lemma [[§63 Sard's Theorem#^lem-63-1|§63.1]], it suffices to prove, for every $m \ge 0$, the Euclidean statement
 >
@@ -144,6 +131,19 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 
 *Uses:* [[§62 Sets of Measure Zero#^lem-62-1|§62.1]], [[§62 Sets of Measure Zero#^lem-62-3|§62.3]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§62 Sets of Measure Zero#^lem-62-5|§62.5]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§63 Sard's Theorem#^lem-63-1|§63.1]], [[§63 Sard's Theorem#^lem-63-2|§63.2]]
 
+> [!remark]- Connections
+> - "Measure zero" is Lebesgue-null: outer measure [[§10 Lebesgue Outer Measure#^def-10-4|551 Def. §10.4]]; so the regular values of a smooth map are of full measure (almost every value is regular).
+
+So almost every value of a smooth map is regular. The theorem has many applications, starting with Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]] and parametric transversality ([[§64 Parametric Transversality|§64]]).
+
+![[m591-59-1.svg]]
+
+The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical points are $x = \pm 1$, where $f' = 0$, so the singular values are just $f(\pm 1) = \mp 2$, two points, a set of measure zero. Every other $c$ is a regular value: at each of its preimages the slope is nonzero.
+
+![[m591-59-a1.gif|460]]
+
+*(Not from lecture; animation added, vault only.)* The level $c$ sweeps from $-4$ to $4$ and back across $f(x) = x^3 - 3x$; its preimages are marked with their slopes. Every $c$ is a regular value except $\pm 2$, where a preimage has $f' = 0$ (red): the set of critical values is two points.
+
 > [!theorem] Corollary §63.4: Maps from Lower Dimension
 > If $F : M \to N$ is smooth and $\dim M < \dim N$, then the regular values of $F$ are exactly the points of $N \setminus F(M)$, and $F(M)$ has measure zero in $N$.
 >
@@ -162,5 +162,3 @@ The simplest picture: $f(x) = x^3 - 3x$ on $M = N = \mathbb{R}$. The critical po
 > - A measure-theory relative: the graph of a measurable function has measure zero, [[§26 Applications of Tonelli's Theorem#^cor-26-4|551 §26.4]].
 
 For instance, a smooth curve $\gamma : \mathbb{R} \to \mathbb{R}^2$ never fills an open set of the plane: its image has measure zero, and so does every subset of it (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](1)), while an open set does not (Lemma [[§62 Sets of Measure Zero#^lem-62-1|§62.1]](4)) — in contrast with continuous space-filling curves.
-
-**Transcription note (Lecture 19).** Page 50 of the handwritten notes states the image lemma for “$F : U \to \mathbb{R}^n$, $U \subseteq \mathbb{R}^m$ open”. As written, with $m$ unrestricted, it is false for $m > n$: the projection $\mathbb{R}^2 \to \mathbb{R}$, $(x, y) \mapsto x$, maps the $x$-axis, of measure zero in $\mathbb{R}^2$, onto $\mathbb{R}$. Lemma [[§62 Sets of Measure Zero#^lem-62-2|§62.2]] takes $m = n$, as Lee does and as the application to transition maps needs. (For $m < n$ the conclusion holds for every $S$, by Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]].)

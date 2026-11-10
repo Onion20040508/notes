@@ -156,27 +156,7 @@ In lecture the computation was carried out for $g \in \mathrm{SL}(n,\mathbb{R})$
 
 **Transcription note.** Both the board and the audio say “$0 \in \mathbb{R}$ is a regular value of $\det$.” Read literally this is false for $n \ge 2$: the zero matrix lies in $\det^{-1}(0)$, and along the line $\gamma(t) = tA$ one has $\det(tA) = t^n \det A$, whose derivative at $t = 0$ vanishes for $n \ge 2$; so $\nabla\det(0) = 0$ and $0$ is a critical value. What the computation proves is that $1$ is a regular value of $\det$ (or $0$ of $\det - 1$, the form in which level sets are usually written as zero sets). The general statement is [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|Corollary §12.5]] below.
 
-> [!theorem] Corollary §12.5: Every Nonzero Value Is a Regular Value of $\det$
-> Every $c \ne 0$ is a regular value of $\det : \operatorname{Mat}(n,\mathbb{R}) \to \mathbb{R}$, so $\det^{-1}(c)$ is a topological manifold of dimension $n^2 - 1$. For $c = 1$ this is $\mathrm{SL}(n,\mathbb{R})$, treated in [[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|Corollary §12.4]] below.
->
-> *Lee: Ch. 7, p. 158*
-
-^cor-12-5
-
-> [!proof]+ Proof
-> *(Not from lecture: the general form of [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|Corollary §12.3]].)* Let $\det g = c \ne 0$. By [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|Proposition §12.1]] in the direction $A = g$,
->
-> $$
-> \nabla\det(g) \cdot g = \det(g)\,\operatorname{tr}(g^{-1}g) = c\,n \ne 0,
-> $$
->
-> so $\nabla\det(g) \ne 0$ and $D\det_g$ is onto $\mathbb{R}$. [[§7 The Regular Value Theorem#^thm-7-6|Theorem §7.6]] gives the manifold.
-
-^pf-12-5
-
-*Uses:* [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-6|§7.6]]
-
-The passage from “nonvanishing gradient” to “locally a graph” is the Implicit Function Theorem, proved in MATH 452 and used here as a black box. It is recorded in [[§7 The Regular Value Theorem|§7]] in the general vector-valued form (Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]), since that is what the [[§7 The Regular Value Theorem#^thm-7-6|regular value theorem]] (PSet 1, Problem 6) needs, and then specialized to the scalar case (Corollary [[§7 The Regular Value Theorem#^cor-7-5|§7.5]]).
+The passage from “nonvanishing gradient” to “locally a graph” is the Implicit Function Theorem, proved in MATH 452 and used here as a black box. It is recorded in [[§7 The Regular Value Theorem|§7]] in the general vector-valued form (Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]), since that is what the regular value theorem (PSet 1, Problem 6) needs, and then specialized to the scalar case (Corollary [[§7 The Regular Value Theorem#^cor-7-5|§7.5]]).
 
 > [!theorem] Corollary §12.4: $\mathrm{SL}(n,\mathbb{R})$ Is a Manifold of Dimension $n^2 - 1$
 > $\mathrm{SL}(n,\mathbb{R})$ is a topological manifold of dimension $n^2 - 1$.
@@ -230,6 +210,26 @@ The argument given in lecture is the same one specialized by hand; it is recorde
 > $\mathrm{SL}(n,\mathbb{R})$ is cut out of $\mathbb{R}^{n^2}$ by one equation with nonvanishing gradient, and it loses exactly one dimension: $\dim \mathrm{SL}(n,\mathbb{R}) = n^2 - 1$. This is the pattern for all the classical groups: $\mathrm{O}(n)$ is cut out by the $\tfrac{n(n+1)}{2}$ independent equations $g^T g = I$ (symmetric matrix), giving $\dim \mathrm{O}(n) = n^2 - \tfrac{n(n+1)}{2} = \tfrac{n(n-1)}{2}$; checking that these equations have independent gradients is done in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Example §23.1]].
 
 ^rem-12-3
+
+> [!theorem] Corollary §12.5: Every Nonzero Value Is a Regular Value of $\det$
+> Every $c \ne 0$ is a regular value of $\det : \operatorname{Mat}(n,\mathbb{R}) \to \mathbb{R}$, so $\det^{-1}(c)$ is a topological manifold of dimension $n^2 - 1$. For $c = 1$ this is $\mathrm{SL}(n,\mathbb{R})$, treated in [[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|Corollary §12.4]].
+>
+> *Lee: Ch. 7, p. 158*
+
+^cor-12-5
+
+> [!proof]+ Proof
+> *(Not from lecture: the general form of [[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|Corollary §12.3]].)* Let $\det g = c \ne 0$. By [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|Proposition §12.1]] in the direction $A = g$,
+>
+> $$
+> \nabla\det(g) \cdot g = \det(g)\,\operatorname{tr}(g^{-1}g) = c\,n \ne 0,
+> $$
+>
+> so $\nabla\det(g) \ne 0$ and $D\det_g$ is onto $\mathbb{R}$. [[§7 The Regular Value Theorem#^thm-7-6|Theorem §7.6]] gives the manifold.
+
+^pf-12-5
+
+*Uses:* [[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12.1]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-6|§7.6]]
 
 > [!theorem] Theorem §12.6: Classical Groups Are Manifolds
 > Each of $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{R})$, $\mathrm{O}(n,\mathbb{R})$, $\mathrm{SO}(n,\mathbb{R})$, $\mathrm{GL}(n,\mathbb{C})$, and $\mathrm{U}(n)$, with the topology induced from the Euclidean space of matrices, is a topological manifold. (In fact they will turn out to be smooth manifolds, indeed Lie groups.)

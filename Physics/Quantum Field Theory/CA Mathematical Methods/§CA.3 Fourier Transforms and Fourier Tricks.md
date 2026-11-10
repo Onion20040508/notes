@@ -371,7 +371,8 @@ Every mode computation of [[· C2a The Quantum Scalar Field|C2a]] is a short seq
 >
 > **What the derivation shows.**
 > - Lorentz invariance reduces a four-dimensional transform to a one-dimensional integral: $J_1$ (and then $K_1$) in Euclidean signature, a sine transform or a radial integral in Minkowski signature after a choice of frame.
-> - Used in: Lorentz invariance of $D_W$ as a distribution ([[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]]), the frame choices of [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]], and $D_E$ in position space ([[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]]).
+> - Used in: the frame choices of [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]].
+> - The same statements are at work, without a citation of this theorem, in the Lorentz invariance of $D_W$ as a distribution ([[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]]) and in $D_E$ in position space ([[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]], the check of Step 6).
 
 ^der-ca-3-9
 
@@ -488,7 +489,7 @@ The box of [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] postu
 >   - Theorem §CA.3.8 (angular integrals): the radial integral of the single-particle amplitude — [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-6|Theorem §C1a.3.6]].
 > - **Used in**, statement by statement (C5a–C5b items):
 >   - Def. §CA.3.1 (conventions): [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality|§C5b.7]] (conventions).
->   - Theorem §CA.3.1 (inversion, Plancherel): the classical Dirac charge is positive — [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]].
+>   - Theorem §CA.3.1 (inversion, Plancherel): the classical Dirac charge is positive — [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|★ Theorem §C5b.5.2]].
 >   - Theorem §CA.3.2 (transform in $\mathcal S'$): solutions as transforms, the mode expansion, the propagator limit — [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^rem-c5a-11-2|§C5a.11, Remark: In what sense a general solution is a superposition of these plane waves]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]].
 >   - Theorem §CA.3.3 (plane-wave delta): mode extraction, $\hat H$ and $\hat Q$ in modes, the mode algebra, spin at rest — [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-3|Theorem §C5b.2.3]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-2|Theorem §C5b.3.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-5|Theorem §C5b.2.5]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-4|Theorem §C5b.2.4]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-3|Theorem §C5b.4.3]], [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-6|Theorem §C5b.8.6]].
 >   - Theorem §CA.3.4 (rules): derivatives of plane waves in the mode expansion — [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]].

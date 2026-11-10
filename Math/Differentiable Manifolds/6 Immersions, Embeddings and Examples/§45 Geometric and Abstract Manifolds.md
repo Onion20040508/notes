@@ -78,7 +78,7 @@ A map into or out of a level set is smooth when it is a restriction of, or lands
 | Lemma [[§25 The Geometric Tangent Space#^lem-25-1\|§25.1]] (locality) | Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8\|§28.8]] (open subsets have the same tangent spaces) | both depend only on a neighbourhood of $p$ |
 | Lemma [[§25 The Geometric Tangent Space#^lem-25-2\|§25.2]] (tangent space of a graph) | Proposition [[§37 Regular Submanifolds#^prop-37-9\|§37.9]] (tangent space of a submanifold) | the span of the first coordinate directions of a slice |
 | Theorem [[§25 The Geometric Tangent Space#^thm-25-3\|§25.3]] ($T^{\mathrm{geo}}_pM = \ker F'(p)$) | Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|§38.2]] ($\iota_{\ast p}(T_pS) = \ker F_{\ast p}$) | Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]](2) |
-| Theorem [[§25 The Geometric Tangent Space#^cor-25-7\|§25.7]] (dimension) | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|§29.8]] (basis theorem) | both give dimension $n$ |
+Corollary [[§25 The Geometric Tangent Space#^cor-25-7\|§25.7]] (dimension) | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|§29.8]] (basis theorem) | both give dimension $n$ |
 
 ![[§25 The Geometric Tangent Space#^def-25-1]]
 
@@ -174,8 +174,12 @@ A geometric manifold sits in $\mathbb{R}^N$ by construction; an abstract one nee
 
 The image of an embedding is a submanifold (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. The internal description of Definition [[§20 Manifolds in Euclidean Space#^def-20-2|§20.2]] is exactly a local embedding: an injective immersion that is a homeomorphism onto its image. Injective immersions alone are not enough: their images are immersed submanifolds (Definition [[§44 Embeddings#^def-44-3|§44.3]], Proposition [[§44 Embeddings#^prop-44-15|§44.15]]), regular exactly when the immersion is an embedding (Proposition [[§44 Embeddings#^prop-44-17|§44.17]]); the figure-eight and the irrational line on the torus are immersed but not regular (Example [[§44 Embeddings#^ex-44-4|§44.4]]).
 
-> [!remark] Remark: Whitney's Embedding Theorem
-> *(Not from lecture; stated, not proved, in these notes.)* Every smooth $m$-manifold — Hausdorff and second countable, as in Definition [[§17 Differentiable Structures#^def-17-11|§17.11]] — admits a smooth embedding into $\mathbb{R}^{2m+1}$ (Lee, Theorem 6.15), and Whitney improved the dimension to $2m$. So no manifold is out of reach of the geometric picture: every abstract manifold is diffeomorphic to a submanifold of some Euclidean space. The abstract definition is still the right one, because the embedding is not part of the manifold: the same manifold has many embeddings, none of them preferred, and quotients such as $\mathbb{CP}^n$ come with none.
+Whether every abstract manifold has an embedding into some $\mathbb{R}^N$ is answered by the Whitney embedding theorem, proved later in the course ([[§66 The Whitney Embedding Theorem|§66]]):
+
+![[§66 The Whitney Embedding Theorem#^thm-66-11]]
+
+> [!remark] Remark: Abstract Manifolds Embed in Euclidean Space
+> *(Not from lecture at this point; the theorem is stated here ahead of its proof, which is given with Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]].)* By Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], every smooth $m$-manifold — Hausdorff and second countable, as in Definition [[§17 Differentiable Structures#^def-17-11|§17.11]] — admits a smooth embedding into $\mathbb{R}^{2m+1}$ (Lee, Theorem 6.15), and Whitney improved the dimension to $2m$. So no manifold is out of reach of the geometric picture: every abstract manifold is diffeomorphic to a submanifold of some Euclidean space. The abstract definition is still the right one, because the embedding is not part of the manifold: the same manifold has many embeddings, none of them preferred, and quotients such as $\mathbb{CP}^n$ come with none.
 
 ^rem-45-1
 

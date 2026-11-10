@@ -147,7 +147,7 @@ tags: [differentiable-manifolds, math591]
 > - The topology is the quotient topology of [[§13 Quotient Topology#^def-13-3|590 Def. §13.3 (Quotient Space)]].
 
 > [!example] Example §13.5: $\mathbb{CP}^n$ Is an Orbit Space
-> The relation of [[§9 Complex Projective Space#^def-9-1|Def. §9.1]] on $S^{2n+1}$, $z \sim w \iff w = \xi z$ for some $\xi \in S^1$, is precisely the orbit relation of the action of $\mathrm{U}(1) = S^1$ on $S^{2n+1}$ by scalar multiplication, $\xi \cdot z = \xi z$, which is continuous, being polynomial in the real coordinates. So $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ is an orbit space, and Proposition [[§9 Complex Projective Space#^prop-9-1|§9.1]] was our first Hausdorff orbit space. Which continuous actions have Hausdorff orbit spaces in general is the subject of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] below.
+> The relation of [[§9 Complex Projective Space#^def-9-1|Def. §9.1]] on $S^{2n+1}$, $z \sim w \iff w = \xi z$ for some $\xi \in S^1$, is precisely the orbit relation of the action of $\mathrm{U}(1) = S^1$ on $S^{2n+1}$ by scalar multiplication, $\xi \cdot z = \xi z$: this is an action ($1z = z$ and $\xi(\eta z) = (\xi\eta)z$), the class of $z$, $\{\, \xi z \mid \xi \in S^1 \,\}$, is the orbit of $z$, and the action is continuous, being polynomial in the real coordinates. So $\mathbb{CP}^n = S^{2n+1}/\mathrm{U}(1)$ is an orbit space, and Proposition [[§9 Complex Projective Space#^prop-9-1|§9.1]] was our first Hausdorff orbit space. Which continuous actions have Hausdorff orbit spaces in general is the subject of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]] below.
 >
 > *Lee: cf. Problem 1-9*
 
@@ -278,7 +278,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 *Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§4 Quotient Spaces and Open Maps#^def-4-5|Def. §4.5]], [[§4 Quotient Spaces and Open Maps#^prop-4-6|§4.6]], [[§13 Group Actions and Orbit Spaces#^def-13-4|Def. §13.4]], [[§13 Group Actions and Orbit Spaces#^prop-13-1|§13.1]], [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
 
 > [!remark]- Connections
-> - For $G/H$ this is the openness of the projection: [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]] and [[§15 The Topology of G∕H and Real Grassmannians#^rem-15-1|the remark after §15.2]].
+> - For $G/H$ this is the openness of the projection: [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]] and [[§15 The Topology of G∕H and Real Grassmannians#^rem-15-1|the remark Openness of π for Free]].
 
 ## Hausdorff Orbit Spaces
 
@@ -393,6 +393,9 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 
 ^def-13-6
 
+> [!remark]- Connections
+> - Recalled for maps between manifolds in [[§44 Embeddings|§44]]; the properness hypothesis of [[§40 Fibrations#^thm-40-3|Ehresmann's theorem, §40.3]].
+
 > [!definition] Definition §13.7: Proper Action
 > A continuous action of a topological group $G$ on a space $X$ is **proper** if the map $\Psi : G \times X \to X \times X$, $\Psi(g,x) = (x, g\cdot x)$, of $(\ast)$ in the proof of Corollary [[§13 Group Actions and Orbit Spaces#^pf-13-4|§13.4]] is proper ([[§13 Group Actions and Orbit Spaces#^def-13-6|Definition §13.6]]).
 >
@@ -426,7 +429,7 @@ Throughout, $G$ is a topological group acting continuously on a topological spac
 *Uses:* [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^thm-3-12|§3.12]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]]
 
 > [!example] Example §13.10: $\mathbb{CP}^n$ Is Hausdorff by the Orbit Space Corollary
-> The Hausdorff part of Proposition [[§9 Complex Projective Space#^prop-9-1|§9.1]] is a special case of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]]. The quotient $\mathbb{CP}^n = S^{2n+1}/{\sim}$ of Definition [[§9 Complex Projective Space#^def-9-1|§9.1]] is the orbit space of $\mathrm{U}(1) = S^1$ acting on $S^{2n+1}$ by $\xi \cdot z = \xi z$: this is an action ($1z = z$ and $\xi(\eta z) = (\xi\eta)z$), and the class of $z$, $\{\, \xi z \mid \xi \in S^1 \,\}$, is the orbit of $z$. The hypotheses of the corollary hold:
+> The Hausdorff part of Proposition [[§9 Complex Projective Space#^prop-9-1|§9.1]] is a special case of Corollary [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]]. By Example [[§13 Group Actions and Orbit Spaces#^ex-13-5|§13.5]], the quotient $\mathbb{CP}^n = S^{2n+1}/{\sim}$ of Definition [[§9 Complex Projective Space#^def-9-1|§9.1]] is the orbit space of $\mathrm{U}(1) = S^1$ acting on $S^{2n+1}$ by $\xi \cdot z = \xi z$. The hypotheses of the corollary hold:
 > - the action is continuous, being the restriction of $\mathbb{C} \times \mathbb{C}^{n+1} \to \mathbb{C}^{n+1}$, $(\xi, z) \mapsto \xi z$, whose real and imaginary parts are polynomial in the real coordinates;
 > - $\mathrm{U}(1) = S^1$ is compact, being closed and bounded in $\mathbb{R}^2$ (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](1));
 > - $S^{2n+1}$ is compact, being closed and bounded in $\mathbb{R}^{2n+2}$, and Hausdorff, being a metric space (Proposition [[§1 Point-Set Topology Review#^prop-1-6|§1.6]](1)).

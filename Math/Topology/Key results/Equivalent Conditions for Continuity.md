@@ -19,7 +19,6 @@ tags: [topology, hub]
 - [[§12 Metric Topology#^thm-12-9|Theorem §12.9: Continuity and Sequences]]
 
 ## Used in (Differentiable Manifolds)
-- [[§11 Topological Groups and Classical Matrix Groups#^def-11-6|Definition §11.6: Special Linear Group]]
 - [[§44 Embeddings#^thm-44-5|Theorem §44.5: Injective Proper Immersions Are Embeddings]]
 - [[§44 Embeddings#^prop-44-8|Proposition §44.8: Images of Embeddings Are Locally Closed]]
 

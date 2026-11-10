@@ -96,12 +96,23 @@ tags: [differentiable-manifolds, math591]
 
 ^thm-14-2
 
-> [!proof]+ Exercise
-> *(Claimed in Lecture 4; filled in.)* Consider the orbit map $\theta_{x_0} : G \to X$, $\theta_{x_0}(g) = g \cdot x_0$, of Definition [[§14 Homogeneous Spaces#^def-14-4|§14.4]], and identify $H_{x_0}$ as a preimage under it. Two things are to be checked: that $\theta_{x_0}$ is continuous, and that the relevant subset of $X$ is closed. The result was stated without proof in lecture; the argument is recorded here.
+> [!proof]+ Proof
+> *(Claimed in Lecture 4; the result was stated without proof in lecture. Filled in.)* That $H_{x_0}$ is a subgroup of $G$ is Proposition [[§14 Homogeneous Spaces#^prop-14-1|§14.1]]; to be shown is that it is a closed subset of $G$. Consider the orbit map $\theta_{x_0} : G \to X$, $\theta_{x_0}(g) = g \cdot x_0$, of Definition [[§14 Homogeneous Spaces#^def-14-4|§14.4]], and identify $H_{x_0}$ as a preimage under it: by Definition [[§14 Homogeneous Spaces#^def-14-3|§14.3]],
+>
+> $$
+> H_{x_0} = \{\, g \in G \mid g \cdot x_0 = x_0 \,\} = \{\, g \in G \mid \theta_{x_0}(g) = x_0 \,\} = \theta_{x_0}^{-1}(\{x_0\}).
+> $$
+>
+> Two things are to be checked: that $\theta_{x_0}$ is continuous, and that the relevant subset $\{x_0\}$ of $X$ is closed.
+>
+> 1. *$\theta_{x_0}$ is continuous.* As recorded in Definition [[§14 Homogeneous Spaces#^def-14-4|§14.4]], it is the composite $G \to G \times X \to X$, $g \mapsto (g, x_0) \mapsto g \cdot x_0$. The first map is continuous by Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]], its components being the identity of $G$ and a constant map; the second is the action, continuous by hypothesis.
+> 2. *$\{x_0\}$ is closed in $X$.* This is the hypothesis that points of $X$ are closed.
+>
+> The preimage of a closed set under a continuous map is closed, its complement being the preimage of the open complement: $G \setminus \theta_{x_0}^{-1}(\{x_0\}) = \theta_{x_0}^{-1}(X \setminus \{x_0\})$ is open in $G$. So $H_{x_0} = \theta_{x_0}^{-1}(\{x_0\})$ is closed in $G$.
 
 ^pf-14-2
 
-*Uses:* [[§14 Homogeneous Spaces#^def-14-4|Def. §14.4]]
+*Uses:* [[§14 Homogeneous Spaces#^def-14-4|Def. §14.4]], [[§14 Homogeneous Spaces#^prop-14-1|§14.1]], [[§14 Homogeneous Spaces#^def-14-3|Def. §14.3]], [[§3 Subspaces and Products#^thm-3-10|§3.10]]
 
 > [!remark]- Connections
 > - “Points are closed” is the $T_1$ axiom, [[§23 Separation Axioms#^def-23-1|590 Def. §23.1]]; Hausdorff implies it by [[§9 Hausdorff Spaces#^thm-9-1|590 §9.1]].

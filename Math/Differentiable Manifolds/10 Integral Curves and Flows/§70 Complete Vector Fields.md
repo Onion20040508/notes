@@ -30,7 +30,7 @@ In general it is hard to tell whether a given vector field is complete, so resul
 ^lem-70-1
 
 > [!proof]+ Proof
-> *(Lecture 25, with the hypothesis written $(-\varepsilon, \varepsilon) \times M \subseteq \mathcal{D}$, Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2).)* By contradiction. Suppose some $p \in M$ has $\alpha(p) \neq -\infty$ or $\beta(p) \neq +\infty$; take $\beta(p) < +\infty$; the other case is analogous. *(Filled in: for $\alpha(p) > -\infty$, apply the argument to $-\mathbf{X}$, whose integral curves are those of $\mathbf{X}$ run backwards (Lemma [[§67 Integral Curves#^lem-67-4|§67.4]](2)), whose maximal domains are the $(-\beta(p), -\alpha(p))$, and which satisfies the same hypothesis.)* Then $\beta(p)$ is a real number; choose $t_1 \in \mathbb{R}$ with
+> *(Lecture 25, with the hypothesis written $(-\varepsilon, \varepsilon) \times M \subseteq \mathcal{D}$, Definition [[§69 Maximal Integral Curves and Flows#^def-69-2|§69.2]].)* By contradiction. Suppose some $p \in M$ has $\alpha(p) \neq -\infty$ or $\beta(p) \neq +\infty$; take $\beta(p) < +\infty$; the other case is analogous. *(Filled in: for $\alpha(p) > -\infty$, apply the argument to $-\mathbf{X}$, whose integral curves are those of $\mathbf{X}$ run backwards (Lemma [[§67 Integral Curves#^lem-67-4|§67.4]](2)), whose maximal domains are the $(-\beta(p), -\alpha(p))$, and which satisfies the same hypothesis.)* Then $\beta(p)$ is a real number; choose $t_1 \in \mathbb{R}$ with
 >
 > $$
 > \beta(p) - \varepsilon < t_1 < \beta(p) .
@@ -48,7 +48,7 @@ In general it is hard to tell whether a given vector field is complete, so resul
 
 ^pf-70-1
 
-*Uses:* [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§67 Integral Curves#^lem-67-4|§67.4]], [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
+*Uses:* [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§67 Integral Curves#^lem-67-4|§67.4]], [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], [[§69 Maximal Integral Curves and Flows#^def-69-2|Def. §69.2]]
 
 ![[m591-70-4.svg]]
 
@@ -81,8 +81,6 @@ The uniform time lemma (Lemma [[§70 Complete Vector Fields#^lem-70-1|§70.1]], 
 
 ^thm-70-2
 
-So on a compact manifold there is no need to check where the flow is defined.
-
 > [!proof]+ Proof
 > *(Lecture 25.)* For every $p \in M$ there is a flow box $(-\varepsilon_p, \varepsilon_p) \times U_p$ with $p \in U_p$ (Lemma [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]]). $\{U_p\}_{p \in M}$ is an open cover of $M$, so by compactness there are $p_1, \ldots, p_k \in M$ with
 >
@@ -96,6 +94,8 @@ So on a compact manifold there is no need to check where the flow is defined.
 
 *Uses:* [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]], [[§70 Complete Vector Fields#^lem-70-1|§70.1]]
 
+So on a compact manifold there is no need to check where the flow is defined.
+
 ![[m591-70-5.svg]]
 
 *(Not from lecture; figure added.)* Each point has a flow box of its own width $\varepsilon_p$, which can shrink from point to point; compactness leaves finitely many, and the smallest width is a uniform time. More is true: compactly supported fields are complete (Corollary [[§70 Complete Vector Fields#^cor-70-6|§70.6]]; Lee, Theorem 9.16).
@@ -103,8 +103,6 @@ So on a compact manifold there is no need to check where the flow is defined.
 ![[m591-70-2.svg]]
 
 *(Not from lecture; figure added.)* The same proof in $\mathbb{R} \times M$, for $M$ a circle drawn as an interval whose ends $a$ are one point. The flow boxes have heights $\varepsilon_{p_j}$; the shortest has height $\varepsilon$, so the strip $(-\varepsilon, \varepsilon) \times M$ (dashed) lies inside the flow domain. Compactness is needed: the fields of Examples [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]] and [[§69 Maximal Integral Curves and Flows#^ex-69-2|§69.2]] live on noncompact manifolds and are not complete.
-
-*Complete fields and actions of $\mathbb{R}$.* Suppose $\mathbf{X}$ is complete. Then $\mathcal{D} = \mathbb{R} \times M$, so for every $t \in \mathbb{R}$ there is a map $\varphi_t : M \to M$, and the group law holds for all $s, t$.
 
 *(Assignment 7, Problem 4.)* The argument of Theorem [[§70 Complete Vector Fields#^thm-70-2|§70.2]] works on any compact subset, and it shows that an integral curve which stops in finite time must leave every compact set.
 
@@ -133,8 +131,6 @@ So on a compact manifold there is no need to check where the flow is defined.
 
 ^thm-70-4
 
-In words: an incomplete integral curve has to escape every compact set — to infinity, as in Example [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]], or off an edge, as in Example [[§69 Maximal Integral Curves and Flows#^ex-69-2|§69.2]].
-
 > [!proof]+ Proof
 > *(Assignment 7, Problem 4: the submitted solution. The case $\alpha(p) > -\infty$ is filled in.)* Suppose, for contradiction, that $\varphi^p\big((\alpha(p), \beta(p))\big) \subseteq K$ for some compact $K \subseteq M$, and let $\varepsilon > 0$ be as in Lemma [[§70 Complete Vector Fields#^lem-70-3|§70.3]]: $\beta(q') \ge \varepsilon$ for all $q' \in K$. Since $\beta(p) < +\infty$, we may choose $s$ with
 >
@@ -155,6 +151,8 @@ In words: an incomplete integral curve has to escape every compact set — to in
 ^pf-70-4
 
 *Uses:* [[§70 Complete Vector Fields#^lem-70-3|§70.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]], [[§67 Integral Curves#^lem-67-4|§67.4]], [[§70 Complete Vector Fields#^lem-70-1|§70.1]]
+
+In words: an incomplete integral curve has to escape every compact set — to infinity, as in Example [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]], or off an edge, as in Example [[§69 Maximal Integral Curves and Flows#^ex-69-2|§69.2]].
 
 > [!theorem] Corollary §70.5: The Tail Escapes
 > If $\beta(p) < +\infty$, then for every $t_0 \in (\alpha(p), \beta(p))$ the set $\varphi^p\big([t_0, \beta(p))\big)$ is not contained in any compact subset of $M$. Equivalently: if $\varphi^p\big([t_0, \beta(p))\big)$ lies in a compact set for some $t_0$, then $\beta(p) = +\infty$.
@@ -183,6 +181,8 @@ In words: an incomplete integral curve has to escape every compact set — to in
 ^pf-70-6
 
 *Uses:* [[§70 Complete Vector Fields#^thm-70-4|§70.4]], [[§68 Local Existence and Uniqueness#^ex-68-3|Ex. §68.3]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]], [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]], [[§70 Complete Vector Fields#^thm-70-2|§70.2]]
+
+*Complete fields and actions of $\mathbb{R}$.* Suppose $\mathbf{X}$ is complete. Then $\mathcal{D} = \mathbb{R} \times M$, so for every $t \in \mathbb{R}$ there is a map $\varphi_t : M \to M$, and the group law holds for all $s, t$.
 
 > [!theorem] Proposition §70.7: The Flow of a Complete Field
 > Let $\mathbf{X} \in \mathfrak{X}(M)$ be complete, with flow $\varphi : \mathbb{R} \times M \to M$. Then
@@ -284,8 +284,6 @@ So complete vector fields on $M$ and smooth $\mathbb{R}$-actions on $M$ are the 
 
 ^prop-70-10
 
-In words: composing integral curves of $\mathbf{X}$ with $F$ gives integral curves of $\mathbf{Y}$ exactly when the two fields are $F$-related.
-
 > [!proof]+ Proof
 > *(Lecture 25, $(\Rightarrow)$; $(\Leftarrow)$ filled in.)* Recall that $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related if and only if $dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)}$ for every $p \in M$. For a smooth curve $c$, the chain rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]) gives the velocity of $F \circ c$:
 >
@@ -300,6 +298,8 @@ In words: composing integral curves of $\mathbf{X}$ with $F$ gives integral curv
 ^pf-70-10
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§68 Local Existence and Uniqueness#^thm-68-2|§68.2]]
+
+In words: composing integral curves of $\mathbf{X}$ with $F$ gives integral curves of $\mathbf{Y}$ exactly when the two fields are $F$-related.
 
 Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] is the case of a diffeomorphism $F$ and $\mathbf{Y} = F_\ast\mathbf{X}$, the unique field $F$-related to $\mathbf{X}$ (Proposition [[§59 Related Vector Fields#^prop-59-2|§59.2]]). A very important case of $F$-related fields is that of left-invariant fields on a Lie group.
 
@@ -327,10 +327,29 @@ Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] is the case of a diffeomorphism 
 
 The theorem says more: left-translating by $g$ the integral curve through the identity gives the integral curve through $g$, as in the figure. For $G = \mathrm{GL}(n, \mathbb{R})$ and the left-invariant field with $\mathbf{X}_I = A$, the curve $\varphi^I(t)$ is the matrix exponential $e^{tA}$ (Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]]), and $\varphi^g(t) = g\, e^{tA}$.
 
-![[m591-70-3.svg]]
-
-*(Not from lecture; figure added.)* A worked example: the group $G = \{(a, b) : a > 0\}$ of affine maps $x \mapsto ax + b$, an open subset of $\mathbb{R}^2$ (drawn with $b$ horizontal and $a$ vertical), with product $(a, b)(a', b') = (aa', ab' + b)$ and identity $e = (1, 0)$. Since $L_{(a,b)}(a', b') = (aa', ab' + b)$ has differential $a \cdot \mathrm{id}$, the left-invariant field with $\mathbf{X}_e = (u, v)$ is $\mathbf{X}_{(a,b)} = a(u, v)$ (grey arrows; here $u = \tfrac12$, $v = 1$). Its integral curve through $e$ is $\varphi^e(t) = \big(e^{ut}, \tfrac{v}{u}(e^{ut} - 1)\big)$ (blue), defined for all $t$: as $t \to -\infty$ it approaches the missing line $a = 0$ without reaching it. The curve through $g$ is $g\,\varphi^e(t)$ (red), and $L_g$ carries $\varphi^e(1)$ to $g\,\varphi^e(1)$.
-
 ![[m591-70-a2.gif|480]]
 
 *(Not from lecture; animation added, vault only.)* The same example moving: the blue point runs along $\varphi^e(t)$, forwards to $t = 1.4$ and back to $t = -2.5$; each red point is $g\,\varphi^e(t)$ for one of three elements $g$, joined to the blue point by the dotted $L_g$. Each red point stays on its own line, the integral curve through $g$: left translation carries the curve through $e$ to the curve through $g$, at the same times.
+
+> [!example] Example §70.1: Left-Invariant Fields on the Affine Group of the Line
+> *(Not from lecture.)* A worked example: the group $G = \{(a, b) : a > 0\}$ of affine maps $x \mapsto ax + b$, an open subset of $\mathbb{R}^2$, with product $(a, b)(a', b') = (aa', ab' + b)$ and identity $e = (1, 0)$. Since $L_{(a,b)}(a', b') = (aa', ab' + b)$ has differential $a \cdot \mathrm{id}$, the left-invariant field with $\mathbf{X}_e = (u, v)$ is $\mathbf{X}_{(a,b)} = a(u, v)$. Its integral curve through $e$ is
+>
+> $$
+> \varphi^e(t) = \big(e^{ut}, \tfrac{v}{u}(e^{ut} - 1)\big) \quad \text{if } u \neq 0, \qquad \varphi^e(t) = (1, vt) \quad \text{if } u = 0,
+> $$
+>
+> defined for all $t$, as Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]] requires: for $u > 0$, as $t \to -\infty$ it approaches the missing line $a = 0$ without reaching it. The curve through $g$ is $g\,\varphi^e(t)$.
+>
+> *The group.* *(Filled in.)* The composite of $x \mapsto a'x + b'$ followed by $x \mapsto ax + b$ is $x \mapsto a(a'x + b') + b = aa'x + (ab' + b)$, which gives the product; $aa' > 0$, the identity map is $(1, 0)$, and the inverse of $(a, b)$ is $(1/a, -b/a)$. The product and the inverse are smooth on the open set $\{a > 0\}$ (polynomial, and rational with denominator $a \neq 0$), so $G$ is a Lie group (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]]).
+>
+> *The field.* $L_{(a,b)}$ is the restriction to $G$ of the affine map $(a', b') \mapsto (aa', ab' + b)$ of $\mathbb{R}^2$, whose Jacobian matrix is $a$ times the identity matrix. So $\mathbf{X}_{(a,b)} = d(L_{(a,b)})_e(u, v) = a(u, v)$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]).
+>
+> *The integral curve through $e$.* By Proposition [[§67 Integral Curves#^prop-67-2|§67.2]], a curve $t \mapsto (a(t), b(t))$ in $G$ is an integral curve of $\mathbf{X}$ if and only if $\dot a = ua$ and $\dot b = va$. With $a(0) = 1$ the first equation gives $a(t) = e^{ut}$ (the uniqueness argument of Example [[§67 Integral Curves#^ex-67-1|§67.1]], applied to $e^{-ut}a(t)$). Then $\dot b = v e^{ut}$ and $b(0) = 0$ give $b(t) = \int_0^t v e^{us}\, ds$, which is $\tfrac{v}{u}(e^{ut} - 1)$ if $u \neq 0$ and $vt$ if $u = 0$. Since $a(t) = e^{ut} > 0$, the curve stays in $G$ for all $t \in \mathbb{R}$.
+>
+> *The curve through $g$.* For $g = (a_0, b_0)$, the product gives $g\,\varphi^e(t) = \big(a_0 a(t),\ a_0 b(t) + b_0\big)$, which is $\varphi^g(t)$ by Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]]. Directly: its velocity is $\big(a_0 \dot a(t), a_0 \dot b(t)\big) = a_0 a(t)\,(u, v)$, the value of $\mathbf{X}$ at the point $g\,\varphi^e(t)$, whose first coordinate is $a_0 a(t)$; and at $t = 0$ it is $(a_0, b_0) = g$.
+
+^ex-70-1
+
+![[m591-70-3.svg]]
+
+*(Not from lecture; figure added.)* Example [[§70 Complete Vector Fields#^ex-70-1|§70.1]], drawn with $b$ horizontal and $a$ vertical, for $u = \tfrac12$, $v = 1$: the left-invariant field $\mathbf{X}_{(a,b)} = a(u, v)$ (grey arrows), its integral curve $\varphi^e$ through $e$ (blue) and the curve $g\,\varphi^e(t)$ through $g$ (red); $L_g$ carries $\varphi^e(1)$ to $g\,\varphi^e(1)$.

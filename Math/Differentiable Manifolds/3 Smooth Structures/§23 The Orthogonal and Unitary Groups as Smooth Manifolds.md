@@ -180,6 +180,11 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 
 *Uses:* [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§19 Smooth Functions and Smooth Maps#^prop-19-8|§19.8]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]
 
+> [!definition] Definition §23.2: Skew-Symmetric Matrices
+> Let $\operatorname{Skew}(n,\mathbb{R}) = \{\, B \in \operatorname{Mat}(n,\mathbb{R}) \mid B^{\mathsf T} = -B \,\}$, the **skew-symmetric matrices**. *(Not from lecture; filled in.)* It is a linear subspace of $\operatorname{Mat}(n,\mathbb{R})$: if $B^{\mathsf T} = -B$ and $B'^{\mathsf T} = -B'$ and $c \in \mathbb{R}$, then $(B + B')^{\mathsf T} = B^{\mathsf T} + B'^{\mathsf T} = -(B + B')$ and $(cB)^{\mathsf T} = cB^{\mathsf T} = -cB$. Its dimension, $\tfrac{n(n-1)}{2}$, is computed in the proof of Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-2|§23.2]].
+
+^def-23-2
+
 > [!theorem] Proposition §23.2: The Kernel of the Differential
 > With $F(g) = gg^{\mathsf T}$ as above, for every $g \in \mathrm{O}(n)$,
 >
@@ -187,7 +192,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 > \ker dF_g = \{\, A \in \operatorname{Mat}(n,\mathbb{R}) \mid gA^{\mathsf T} + Ag^{\mathsf T} = 0 \,\} = g \cdot \operatorname{Skew}(n,\mathbb{R}),
 > $$
 >
-> where $\operatorname{Skew}(n,\mathbb{R}) = \{B \mid B^{\mathsf T} = -B\}$. In particular $\ker dF_I = \operatorname{Skew}(n,\mathbb{R})$, and $\dim \ker dF_g = \tfrac{n(n-1)}{2}$ for every $g$.
+> where $\operatorname{Skew}(n,\mathbb{R})$ is the space of skew-symmetric matrices (Definition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-2|§23.2]]). In particular $\ker dF_I = \operatorname{Skew}(n,\mathbb{R})$, and $\dim \ker dF_g = \tfrac{n(n-1)}{2}$ for every $g$.
 
 ^prop-23-2
 
@@ -223,7 +228,7 @@ The promise of [[§12 The Classical Groups Are Topological Manifolds|§12, The C
 
 ^rem-23-2
 
-> [!theorem] Corollary §23.3: Consequences
+> [!theorem] Corollary §23.3: $\mathrm{SO}(n)$ Is a Smooth Manifold; $\mathrm{O}(n)$ Is Compact
 > $\mathrm{SO}(n)$ is a smooth manifold of dimension $\tfrac{n(n-1)}{2}$, and $\mathrm{O}(n)$ is compact.
 >
 > *Lee: Example 7.27*
@@ -404,14 +409,19 @@ The vertical arrows are the real-linear identifications of [[§11 Topological Gr
 
 ^rem-23-4
 
+> [!definition] Definition §23.4: Skew-Hermitian Matrices
+> Let $\mathfrak{u}(n) = \{X \in \operatorname{Mat}(n,\mathbb{C}) \mid X^{\ast} = -X\}$, the **skew-Hermitian matrices**. *(Not from lecture; filled in.)* It is closed under addition and under multiplication by *real* scalars, so it is a real linear subspace of $\operatorname{Mat}(n,\mathbb{C})$: if $X^{\ast} = -X$ and $Y^{\ast} = -Y$ and $c \in \mathbb{R}$, then $(X + Y)^{\ast} = X^{\ast} + Y^{\ast} = -(X + Y)$ and $(cX)^{\ast} = \bar c\, X^{\ast} = -cX$. Its real dimension, $n^2$, is computed in the proof of Proposition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^prop-23-5|§23.5]].
+
+^def-23-4
+
 > [!theorem] Proposition §23.5: The Kernel of the Differential
 > For $g \in \mathrm{U}(n)$,
 >
 > $$
-> \ker dF_g = \mathfrak{u}(n)\cdot g = g \cdot \mathfrak{u}(n), \qquad \mathfrak{u}(n) = \{X \in \operatorname{Mat}(n,\mathbb{C}) \mid X^* = -X\},
+> \ker dF_g = \mathfrak{u}(n)\cdot g = g \cdot \mathfrak{u}(n),
 > $$
 >
-> the skew-Hermitian matrices, and $\dim_{\mathbb{R}} \mathfrak{u}(n) = n^2$.
+> where $\mathfrak{u}(n)$ is the space of skew-Hermitian matrices (Definition [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^def-23-4|§23.4]]), and $\dim_{\mathbb{R}} \mathfrak{u}(n) = n^2$.
 
 ^prop-23-5
 

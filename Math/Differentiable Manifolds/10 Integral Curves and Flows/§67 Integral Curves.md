@@ -182,24 +182,24 @@ The lift exists for every smooth curve, injective or not. By Proposition [[§67 
 > [!theorem] Lemma §67.4: Translation and Rescaling
 > Let $c : I \to M$ be an integral curve of $\mathbf{X} \in \mathfrak{X}(M)$.
 >
-> 1. *(Translation lemma.)* For $t_0 \in \mathbb{R}$, the curve $\tilde c(t) = c(t + t_0)$, defined on $I - t_0 = \{ t - t_0 : t \in I \}$, is an integral curve of $\mathbf{X}$.
-> 2. *(Rescaling.)* For $\lambda \in \mathbb{R}$, the curve $\tilde c(t) = c(\lambda t)$, defined on $\{ t : \lambda t \in I \}$, is an integral curve of $\lambda\mathbf{X}$.
+> 1. *(Translation lemma.)* For $t_0 \in \mathbb{R}$, the curve $c_{t_0}(t) = c(t + t_0)$, defined on $I - t_0 = \{ t - t_0 : t \in I \}$, is an integral curve of $\mathbf{X}$.
+> 2. *(Rescaling.)* For $\lambda \in \mathbb{R}$, the curve $c_\lambda(t) = c(\lambda t)$, defined on $\{ t : \lambda t \in I \}$, is an integral curve of $\lambda\mathbf{X}$.
 >
 > *Lee: Lemmas 9.3 and 9.4*
 
 ^lem-67-4
 
 > [!proof]+ Proof
-> *(Lecture 24: immediate from the chain rule; filled in.)* Both domains are open intervals (for $\lambda = 0$ the second is all of $\mathbb{R}$ if $0 \in I$, and empty if $0 \notin I$, when there is nothing to prove). Fix $t$ in the domain and a germ $f$ at $\tilde c(t)$; by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and the chain rule for real functions of one variable:
+> *(Lecture 24: immediate from the chain rule; filled in.)* Both domains are open intervals (for $\lambda = 0$ the second is all of $\mathbb{R}$ if $0 \in I$, and empty if $0 \notin I$, when there is nothing to prove). Fix $t$ in the domain and a germ $f$ at the point of the new curve at time $t$ (at $c_{t_0}(t)$ for (1), at $c_\lambda(t)$ for (2)); by Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]] and the chain rule for real functions of one variable:
 >
 > $$
-> \dot{\tilde c}(t)[f] = \frac{d}{dt} f\big(c(t + t_0)\big) = (f \circ c)'(t + t_0) = \dot c(t + t_0)[f] = \mathbf{X}_{c(t + t_0)}[f] = \mathbf{X}_{\tilde c(t)}[f]
+> \dot c_{t_0}(t)[f] = \frac{d}{dt} f\big(c(t + t_0)\big) = (f \circ c)'(t + t_0) = \dot c(t + t_0)[f] = \mathbf{X}_{c(t + t_0)}[f] = \mathbf{X}_{c_{t_0}(t)}[f]
 > $$
 >
 > for (1), and for (2)
 >
 > $$
-> \dot{\tilde c}(t)[f] = \frac{d}{dt} f\big(c(\lambda t)\big) = \lambda\, (f \circ c)'(\lambda t) = \lambda\, \dot c(\lambda t)[f] = \lambda\, \mathbf{X}_{c(\lambda t)}[f] = (\lambda\mathbf{X})_{\tilde c(t)}[f] .
+> \dot c_\lambda(t)[f] = \frac{d}{dt} f\big(c(\lambda t)\big) = \lambda\, (f \circ c)'(\lambda t) = \lambda\, \dot c(\lambda t)[f] = \lambda\, \mathbf{X}_{c(\lambda t)}[f] = (\lambda\mathbf{X})_{c_\lambda(t)}[f] .
 > $$
 >
 > Two tangent vectors at a point that agree on every germ are equal.
@@ -212,7 +212,7 @@ Time can always be translated, and this is used often below. Rescaling a field p
 
 ![[m591-67-8.svg]]
 
-*(Not from lecture; figure added.)* Both operations keep the image of the curve and change only the clock. Translation relabels the times, so the point reached at time $t_0$ by $c$ is reached at time $0$ by $\tilde c$; the arrow (the velocity) is unchanged. Rescaling by $\lambda = -1$ reverses the arrow, which is why $\tilde c$ follows $-\mathbf{X}$. (A general $\lambda$ also changes the speed by the factor $|\lambda|$.)
+*(Not from lecture; figure added.)* Both operations keep the image of the curve and change only the clock. Translation relabels the times, so the point reached at time $t_0$ by $c$ is reached at time $0$ by $c_{t_0}$; the arrow (the velocity) is unchanged. Rescaling by $\lambda = -1$ reverses the arrow, which is why $c_\lambda$, $\lambda = -1$, follows $-\mathbf{X}$. (A general $\lambda$ also changes the speed by the factor $|\lambda|$.)
 
 > [!theorem] Lemma §67.5: Integral Curves Under a Diffeomorphism
 > Let $F : M \to N$ be a diffeomorphism, $\mathbf{X} \in \mathfrak{X}(M)$, and $F_\ast\mathbf{X} \in \mathfrak{X}(N)$ its pushforward (Definition [[§59 Related Vector Fields#^def-59-1|§59.1]], Proposition [[§59 Related Vector Fields#^prop-59-2|§59.2]]). A smooth curve $c : I \to M$ is an integral curve of $\mathbf{X}$ if and only if $F \circ c$ is an integral curve of $F_\ast\mathbf{X}$.

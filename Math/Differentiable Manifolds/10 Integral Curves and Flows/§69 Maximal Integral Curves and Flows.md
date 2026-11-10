@@ -41,6 +41,19 @@ The union is nonempty, since an integral curve starting at $p$ exists (Theorem [
 
 *Uses:* [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]
 
+> [!definition] Definition §69.2: Flow Domain and Flow
+> *(Lecture 23, inside the statement of Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2), and the recap of Lecture 25; stated here as a definition.)* Let $\mathbf{X} \in \mathfrak{X}(M)$, and for each $p \in M$ let $\varphi^p : (\alpha(p), \beta(p)) \to M$ be the maximal integral curve of $\mathbf{X}$ starting at $p$ (Definition [[§69 Maximal Integral Curves and Flows#^def-69-1|§69.1]], Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]). The **flow domain** of $\mathbf{X}$ and the **flow** of $\mathbf{X}$ are
+>
+> $$
+> \mathcal{D} = \bigcup_{p \in M} \big(\alpha(p), \beta(p)\big) \times \{p\} \ \subseteq\ \mathbb{R} \times M, \qquad \varphi : \mathcal{D} \longrightarrow M, \quad (t, p) \longmapsto \varphi^p(t).
+> $$
+>
+> So $\mathcal{D} = \{ (t, p) \in \mathbb{R} \times M : t \in (\alpha(p), \beta(p)) \}$, and, in words, $\varphi(t, p)$ is the integral curve starting at $p$, evaluated at $t$. The notation of Definition [[§68 Local Existence and Uniqueness#^def-68-1|§68.1]] is kept: $\varphi_t(p) = \varphi(t, p) = \varphi^p(t)$.
+>
+> *Lee: Theorem 9.12*
+
+^def-69-2
+
 The maximal domains of the examples: $\mathbb{R}$ for the rotation and Euler fields (Examples [[§68 Local Existence and Uniqueness#^ex-68-1|§68.1]] and [[§68 Local Existence and Uniqueness#^ex-68-5|§68.5]]); $(-\infty, 1/(x_0y_0))$ and $(-\infty, -x_0)$ for the two examples that follow.
 
 The next example is problematic: examples like it are what make the theory of flows necessarily elaborate.
@@ -109,7 +122,7 @@ A much easier example than Example [[§69 Maximal Integral Curves and Flows#^ex-
 
 ![[m591-68-2.svg]]
 
-*(Not from lecture; figure added.)* The maximal domains of Example [[§69 Maximal Integral Curves and Flows#^ex-69-2|§69.2]], assembled into the set $\mathcal{D} = \{ (t, x_0) : x_0 < 0,\ t < -x_0 \}$ of Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2), an open set. Compare the flow domain of Example [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]] above: there $\beta(p) = 1/(x_0y_0)$ blows up as $x_0 \to 0$, here $\beta(x_0) = -x_0$ shrinks to $0$ at the end of $M$. Neither field is complete (Definition [[§70 Complete Vector Fields#^def-70-1|§70.1]]).
+*(Not from lecture; figure added.)* The maximal domains of Example [[§69 Maximal Integral Curves and Flows#^ex-69-2|§69.2]], assembled into the flow domain $\mathcal{D} = \{ (t, x_0) : x_0 < 0,\ t < -x_0 \}$ (Definition [[§69 Maximal Integral Curves and Flows#^def-69-2|§69.2]]), an open set (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)). Compare the flow domain of Example [[§69 Maximal Integral Curves and Flows#^ex-69-1|§69.1]] above: there $\beta(p) = 1/(x_0y_0)$ blows up as $x_0 \to 0$, here $\beta(x_0) = -x_0$ shrinks to $0$ at the end of $M$. Neither field is complete (Definition [[§70 Complete Vector Fields#^def-70-1|§70.1]]).
 
 ![[m591-68-a2.gif|460]]
 
@@ -153,7 +166,7 @@ A much easier example than Example [[§69 Maximal Integral Curves and Flows#^ex-
 
 So a maximal integral curve is either injective or periodic and defined for all time. Lee's Problem 9-1 separates out the constant curves, which are periodic with every period.
 
-*Lecture 25. A recap of the flow domain, with the cartoon redrawn.* Given $\mathbf{X} \in \mathfrak{X}(M)$, every $p \in M$ has its maximal domain $(\alpha(p), \beta(p)) \ni 0$, which can be all of $\mathbb{R}$; when it is, things simplify. The flow domain and the flow (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]]) are
+*Lecture 25. A recap of the flow domain, with the cartoon redrawn.* Given $\mathbf{X} \in \mathfrak{X}(M)$, every $p \in M$ has its maximal domain $(\alpha(p), \beta(p)) \ni 0$, which can be all of $\mathbb{R}$; when it is, things simplify. The flow domain and the flow (Definition [[§69 Maximal Integral Curves and Flows#^def-69-2|§69.2]]) are
 
 $$
 \mathcal{D} = \{ (t, p) \in \mathbb{R} \times M : t \in (\alpha(p), \beta(p)) \}, \qquad \varphi : \mathcal{D} \to M, \quad (t, p) \longmapsto \varphi(t, p),
@@ -170,7 +183,7 @@ where, in words, $\varphi(t, p)$ is the integral curve starting at $p$, evaluate
 That $\mathcal{D}$ is open and $\varphi$ smooth (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)) was not proved in class; the proof, from Lee, is filled in after the theorem.
 
 > [!definition] Definition §69.3: Flow Box
-> Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi : \mathcal{D} \to M$, and $p \in M$. A **flow box** (or **local domain**) at $p$ is a product $(-\varepsilon, \varepsilon) \times U \subseteq \mathcal{D}$, with $\varepsilon > 0$ and $U$ an open neighbourhood of $p$, on which $\varphi$ is smooth; together with the restriction $\varphi| : (-\varepsilon, \varepsilon) \times U \to M$.
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi : \mathcal{D} \to M$ (Definition [[§69 Maximal Integral Curves and Flows#^def-69-2|§69.2]]), and $p \in M$. A **flow box** (or **local domain**) at $p$ is a product $(-\varepsilon, \varepsilon) \times U \subseteq \mathcal{D}$, with $\varepsilon > 0$ and $U$ an open neighbourhood of $p$, on which $\varphi$ is smooth; together with the restriction $\varphi| : (-\varepsilon, \varepsilon) \times U \to M$.
 >
 > *Lee: Ch. 9, Flows*
 
@@ -198,13 +211,7 @@ Both names are in use. Every point has such a box, by the next lemma.
 > Let $M$ be a smooth manifold and $\mathbf{X} \in \mathfrak{X}(M)$.
 >
 > 1. For every $p \in M$ there is a unique *maximal* integral curve of $\mathbf{X}$ starting at $p$, maximal with respect to its domain. Write it $\varphi^p$ and its domain $(\alpha(p), \beta(p))$, where $\alpha(p) \in [-\infty, 0)$ and $\beta(p) \in (0, +\infty]$, so either may be infinite.
-> 2. Let
->
-> $$
-> \mathcal{D} = \bigcup_{p \in M} \big(\alpha(p), \beta(p)\big) \times \{p\} \ \subseteq\ \mathbb{R} \times M, \qquad \varphi : \mathcal{D} \longrightarrow M, \quad (t, p) \longmapsto \varphi^p(t).
-> $$
->
-> Then $\mathcal{D}$ is open in $\mathbb{R} \times M$, and $\varphi$ is smooth.
+> 2. The flow domain $\mathcal{D} \subseteq \mathbb{R} \times M$ of $\mathbf{X}$ is open in $\mathbb{R} \times M$, and the flow $\varphi : \mathcal{D} \to M$, $(t, p) \mapsto \varphi^p(t)$, is smooth (Definition [[§69 Maximal Integral Curves and Flows#^def-69-2|§69.2]]).
 >
 > *Lee: Theorem 9.12*
 

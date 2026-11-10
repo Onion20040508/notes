@@ -29,7 +29,7 @@ tags: [topology, hub]
 - [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Corollary §15.8: Grassmannians as Homogeneous Spaces]]
 - [[§17 Differentiable Structures#^prop-17-4|Proposition §17.4: The Circle Needs More Than One Chart]]
 - [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4|Proposition §18.4: ℂP¹ Is the Riemann Sphere]]
-- [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3|Corollary §23.3: Consequences]]
+- [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-3|Corollary §23.3: SO(n) Is a Smooth Manifold; O(n) Is Compact]]
 - [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^cor-23-6|Corollary §23.6: U(n) Is Compact]]
 - [[§36 Submersions#^cor-36-11|Corollary §36.11: No Submersions from Compact Manifolds to Euclidean Space]]
 

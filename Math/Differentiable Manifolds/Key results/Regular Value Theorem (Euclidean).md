@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Differentiable Manifolds]]"
-aliases: ["MATH 591 7.5", "regular level sets are manifolds", "Lee Example 1.32", "Lee Corollary 5.14"]
+aliases: ["MATH 591 7.6", "regular level sets are manifolds", "Lee Example 1.32", "Lee Corollary 5.14"]
 tags: [differentiable-manifolds, hub]
 ---
 ![[§7 The Regular Value Theorem#^thm-7-6]]
@@ -17,6 +17,7 @@ tags: [differentiable-manifolds, hub]
 - [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10: Universal Property of the Product]]
 - [[§7 The Regular Value Theorem#^thm-7-2|Theorem §7.2: Implicit Function Theorem — Lee Theorem C.40]]
 - [[§7 The Regular Value Theorem#^def-7-3|Definition §7.3: Regular Point]]
+- [[§7 The Regular Value Theorem#^lem-7-3|Lemma §7.3: A Regular Point Admits Coordinates to Solve For]]
 - [[§7 The Regular Value Theorem#^def-7-4|Definition §7.4: Regular Value]]
 
 ## Its proof uses (other subjects)
@@ -25,8 +26,8 @@ tags: [differentiable-manifolds, hub]
 
 ## Used in (Differentiable Manifolds)
 - [[§7 The Regular Value Theorem#^cor-7-7|Corollary §7.7: Open Domains and Arbitrary Values]]
-- [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|Corollary §12.5: Every Nonzero Value Is a Regular Value of det]]
 - [[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|Corollary §12.4: SL(n,ℝ) Is a Manifold of Dimension n² − 1]]
+- [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|Corollary §12.5: Every Nonzero Value Is a Regular Value of det]]
 - [[§20 Manifolds in Euclidean Space#^thm-20-1|Theorem §20.1: The Two Descriptions Agree]]
 - [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2: Regular Level Sets Are Smooth Manifolds]]
 - [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]

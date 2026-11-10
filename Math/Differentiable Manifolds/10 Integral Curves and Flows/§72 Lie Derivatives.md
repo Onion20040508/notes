@@ -69,28 +69,9 @@ and the right-hand side now makes sense on a manifold.
 ^rem-72-2
 
 > [!remark] Remark: Where $\varphi_t$ Is Defined
-> If $\mathbf{X}$ is incomplete, $\varphi_t$ is not defined on all of $M$. By the existence of flow boxes (Lemma [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]]), every $p$ has a neighbourhood $U$ and $\varepsilon > 0$ such that $\varphi_t$ is defined on $U$ for $|t| < \varepsilon$; $\varphi_t(U)$ need not lie in $U$, and $\varphi_{-t} : \varphi_t(U) \to U$ brings it back, by the group law (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]]); moreover $\varphi_{-t}$ is defined and smooth on an open set containing $\varphi_t(U)$ (Lemma [[§72 Lie Derivatives#^cor-72-3|§72.3]] below). An open domain is needed: the definition below takes the differential of $\varphi_{-t}$, which requires the map on a neighbourhood, not only along one trajectory.
+> If $\mathbf{X}$ is incomplete, $\varphi_t$ is not defined on all of $M$. By the existence of flow boxes (Lemma [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]]), every $p$ has a neighbourhood $U$ and $\varepsilon > 0$ such that $\varphi_t$ is defined on $U$ for $|t| < \varepsilon$; $\varphi_t(U)$ need not lie in $U$, and $\varphi_{-t} : \varphi_t(U) \to U$ brings it back, by the group law (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]]); moreover $\varphi_{-t}$ is defined and smooth on an open set containing $\varphi_t(U)$ (Corollary [[§72 Lie Derivatives#^cor-72-3|§72.3]] below, from Lemma [[§72 Lie Derivatives#^lem-72-2|§72.2]]). An open domain is needed: the definition below takes the differential of $\varphi_{-t}$, which requires the map on a neighbourhood, not only along one trajectory.
 
 ^rem-72-3
-
-> [!theorem] Lemma §72.2: The Inverse Flow Map $\varphi_{-t}$ Has an Open Domain
-> Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi : \mathcal{D} \to M$ (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]]), and let $(-\varepsilon, \varepsilon) \times U$ be a flow box (Definition [[§69 Maximal Integral Curves and Flows#^def-69-3|§69.3]]). For $|t| < \varepsilon$:
->
-> 1. $M_{-t} = \{ q \in M : (-t, q) \in \mathcal{D} \}$ is open in $M$, and $\varphi_{-t} : M_{-t} \to M$ is smooth;
-> 2. $\varphi_t(U) \subseteq M_{-t}$, and $\varphi_{-t}(\varphi_t(q)) = q$ for every $q \in U$.
-
-^xlem-72-2
-
-> [!proof]+ Proof
-> *(Filled in.)* *(1)* The map $j : M \to \mathbb{R} \times M$, $j(q) = (-t, q)$, is smooth, its components being a constant and the identity (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]); in particular it is continuous. $\mathcal{D}$ is open (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)), so $M_{-t} = j^{-1}(\mathcal{D})$ is open. On $M_{-t}$, $\varphi_{-t} = \varphi \circ j$, a composite of smooth maps, $\varphi$ being smooth on $\mathcal{D}$ (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)).
->
-> *(2)* Let $q \in U$. Since $(t, q) \in (-\varepsilon, \varepsilon) \times U \subseteq \mathcal{D}$, $t \in (\alpha(q), \beta(q))$. Put $q' = \varphi_t(q)$. By Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]](1) with $s = t$, $(\alpha(q'), \beta(q')) = (\alpha(q) - t, \beta(q) - t)$, which contains $-t$ because $0 \in (\alpha(q), \beta(q))$. So $(-t, q') \in \mathcal{D}$, that is, $q' \in M_{-t}$. By Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]](2) with $s = t$ and time $-t$, allowed since $-t + t = 0 \in (\alpha(q), \beta(q))$, $\varphi_{-t}(\varphi_t(q)) = \varphi_0(q) = q$, the maximal integral curve starting at $q$ being at $q$ at time $0$.
-
-^xpf-72-2
-
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]]
-
-![[m591-72-1.svg]]
 
 > [!theorem] Lemma §72.2: $\varphi_t$ Is a Diffeomorphism from $M_t$ onto $M_{-t}$
 > Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi : \mathcal{D} \to M$ (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]]). For $t \in \mathbb{R}$ let $M_t = \{ p \in M : (t, p) \in \mathcal{D} \}$. Then $M_t$ is open, and $\varphi_t$ maps $M_t$ diffeomorphically onto $M_{-t}$, with inverse $\varphi_{-t}$.
@@ -100,15 +81,34 @@ and the right-hand side now makes sense on a manifold.
 ^lem-72-2
 
 > [!proof]+ Proof
-> *(Not from lecture; Lee's argument, used below for every time $t$, where Lemma [[§72 Lie Derivatives#^cor-72-3|§72.3]] covers small $|t|$.)* *Open and smooth.* The map $j_t : M \to \mathbb{R} \times M$, $j_t(p) = (t, p)$, is continuous, and $M_t = j_t^{-1}(\mathcal{D})$ is open because $\mathcal{D}$ is (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)); $\varphi_t = \varphi \circ j_t$ is smooth on $M_t$.
+> *(Not from lecture; Lee's argument, used below for every time $t$; Corollary [[§72 Lie Derivatives#^cor-72-3|§72.3]] is the case of a flow box, where $|t|$ is small.)* *Open and smooth.* The map $j_t : M \to \mathbb{R} \times M$, $j_t(p) = (t, p)$, is smooth, its components being a constant and the identity (Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]); in particular it is continuous, and $M_t = j_t^{-1}(\mathcal{D})$ is open because $\mathcal{D}$ is (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)); $\varphi_t = \varphi \circ j_t$ is smooth on $M_t$, a composite of smooth maps, $\varphi$ being smooth on $\mathcal{D}$ (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)).
 >
 > *$\varphi_t(M_t) \subseteq M_{-t}$.* Let $p \in M_t$, i.e. $t \in (\alpha(p), \beta(p))$, and $q = \varphi_t(p)$. By Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]](1), $(\alpha(q), \beta(q)) = (\alpha(p) - t, \beta(p) - t)$, which contains $-t$ because $0 \in (\alpha(p), \beta(p))$. So $q \in M_{-t}$.
 >
-> *Inverse.* For $p \in M_t$, Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]](2) with $s = t$ and time $-t$ (allowed, since $-t + t = 0 \in (\alpha(p), \beta(p))$) gives $\varphi_{-t}(\varphi_t(p)) = \varphi_0(p) = p$. The same argument with $-t$ in place of $t$ shows that $\varphi_{-t}$ maps $M_{-t}$ into $M_t$ and $\varphi_t(\varphi_{-t}(q)) = q$ for $q \in M_{-t}$. So $\varphi_t : M_t \to M_{-t}$ and $\varphi_{-t} : M_{-t} \to M_t$ are smooth and inverse to each other.
+> *Inverse.* For $p \in M_t$, Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]](2) with $s = t$ and time $-t$ (allowed, since $-t + t = 0 \in (\alpha(p), \beta(p))$) gives $\varphi_{-t}(\varphi_t(p)) = \varphi_0(p) = p$, the maximal integral curve starting at $p$ being at $p$ at time $0$. The same argument with $-t$ in place of $t$ shows that $\varphi_{-t}$ maps $M_{-t}$ into $M_t$ and $\varphi_t(\varphi_{-t}(q)) = q$ for $q \in M_{-t}$. So $\varphi_t : M_t \to M_{-t}$ and $\varphi_{-t} : M_{-t} \to M_t$ are smooth and inverse to each other.
 
 ^pf-72-2
 
-*Uses:* [[§72 Lie Derivatives#^cor-72-3|§72.3]], [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]]
+*Uses:* [[§72 Lie Derivatives#^cor-72-3|§72.3]], [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§69 Maximal Integral Curves and Flows#^prop-69-5|§69.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]
+
+> [!theorem] Corollary §72.3: The Inverse Flow Map $\varphi_{-t}$ Has an Open Domain
+> Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi : \mathcal{D} \to M$ (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]]), and let $(-\varepsilon, \varepsilon) \times U$ be a flow box (Definition [[§69 Maximal Integral Curves and Flows#^def-69-3|§69.3]]). For $|t| < \varepsilon$:
+>
+> 1. $M_{-t} = \{ q \in M : (-t, q) \in \mathcal{D} \}$ is open in $M$, and $\varphi_{-t} : M_{-t} \to M$ is smooth;
+> 2. $\varphi_t(U) \subseteq M_{-t}$, and $\varphi_{-t}(\varphi_t(q)) = q$ for every $q \in U$.
+
+^cor-72-3
+
+> [!proof]+ Proof
+> *(Filled in.)* *(1)* is Lemma [[§72 Lie Derivatives#^lem-72-2|§72.2]] at the time $-t$: $M_{-t}$ is open and $\varphi_{-t}$ is smooth on it.
+>
+> *(2)* Let $q \in U$. Since $(t, q) \in (-\varepsilon, \varepsilon) \times U \subseteq \mathcal{D}$, $q \in M_t$. By Lemma [[§72 Lie Derivatives#^lem-72-2|§72.2]], $\varphi_t$ maps $M_t$ into $M_{-t}$, with inverse $\varphi_{-t}$; so $\varphi_t(q) \in M_{-t}$ and $\varphi_{-t}(\varphi_t(q)) = q$.
+
+^pf-72-3
+
+*Uses:* [[§72 Lie Derivatives#^lem-72-2|§72.2]]
+
+![[m591-72-1.svg]]
 
 > [!definition] Definition §72.2: Lie Derivative of a Vector Field
 > Let $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, let $\varphi$ be the flow of $\mathbf{X}$, and $p \in M$. The **Lie derivative** of $\mathbf{Y}$ with respect to $\mathbf{X}$ at $p$ is

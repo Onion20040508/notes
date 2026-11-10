@@ -14,6 +14,7 @@ tags: [differentiable-manifolds, hub]
 - [[§67 Integral Curves#^lem-67-4|Lemma §67.4: Translation and Rescaling]]
 - [[§68 Local Existence and Uniqueness#^prop-68-3|Proposition §68.3: Uniqueness on the Common Domain]]
 - [[§69 Maximal Integral Curves and Flows#^prop-69-1|Proposition §69.1: The Maximal Integral Curve]]
+- [[§69 Maximal Integral Curves and Flows#^def-69-2|Definition §69.2: Flow Domain and Flow]]
 - [[§69 Maximal Integral Curves and Flows#^thm-69-4|Theorem §69.4: Maximal Integral Curves and the Flow]]
 
 ## Used in (Differentiable Manifolds)
