@@ -25,35 +25,31 @@ tags: [functional-analysis, math556, companion]
 > [!definition] Definition §44.1: Dual Space
 > Let $X$ be a normed linear space over $\mathbb{F}$. The **dual space** $X^{\ast}$ is the set of bounded linear functionals on $X$ (Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|§26.1]]), with pointwise addition and scalar multiplication.
 
-^def-44-1
-
+^xold-def-44-1
 > [!remark]- Connections
 > - The same space in Chapter 6: $X^* = \mathcal{L}(X, \mathbb{F})$, [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] with [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]].
 > - The algebraic dual (no boundedness) in finite dimensions: [[§12 Duality#^ladr-3-110|LADR 3.110]]; [[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]].
 
 > [!definition] Definition §44.2: Dual Norm
-> For $\ell \in X^{\ast}$ (Definition [[§44 Bras, Kets, and the Riesz Map#^def-44-1|§44.1]]), its **norm** is
+> For $\ell \in X^{\ast}$ (Definition [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|§44.1]]), its **norm** is
 >
 > $$
 > \|\ell\| = \inf\{ c \ge 0 : |\ell(x)| \le c\,\|x\| \text{ for all } x \in X \} .
 > $$
 
-^def-44-2
-
+^xold-def-44-2
 > [!remark]- Connections
 > - The same norm in Chapter 6: the operator norm for $Y = \mathbb{F}$, [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]].
 
 > [!theorem] Lemma §44.1: The Dual Norm
 > Let $X$ be a normed linear space over $\mathbb{F}$. For $\ell \in X^*$, the infimum $\|\ell\|$ is itself an admissible constant: $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$. Moreover $X^*$ is a linear space and $\|\cdot\|$ is a norm on it.
 
-^lem-44-1
-
+^xold-lem-44-1
 > [!proof]+ Proof
 > Fix $x$. For every admissible $c$, $|\ell(x)| \le c\|x\|$; taking the infimum over $c$ gives $|\ell(x)| \le \|\ell\|\,\|x\|$. If $c_1, c_2$ are admissible for $\ell_1, \ell_2$, then $|(\ell_1 + \ell_2)(x)| \le (c_1 + c_2)\|x\|$ and $|(k\ell_1)(x)| \le |k| c_1 \|x\|$; so $X^*$ is closed under the operations, and taking infima gives subadditivity and $\|k\ell\| \le |k|\,\|\ell\|$, with equality for $k \neq 0$ by applying the same to $k^{-1}(k\ell)$. If $\|\ell\| = 0$ then $|\ell(x)| \le 0$ for all $x$, so $\ell = 0$.
 
-^pf-44-1
-
-*Uses:* [[§44 Bras, Kets, and the Riesz Map#^def-44-2|Def. §44.2]], [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
+^xold-pf-44-1
+*Uses:* [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-2|Def. §44.2]], [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|Def. §44.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
 
 > [!remark]- Connections
 > - The same statement for all bounded linear maps: [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-8|§30.8]].
@@ -61,20 +57,20 @@ tags: [functional-analysis, math556, companion]
 
 ## The Riesz Map
 
-> [!theorem] Theorem §44.2: The Riesz Map
+> [!theorem] Theorem §44.1: The Riesz Map
 > Let $H$ be a Hilbert space and define $R : H \to H^{\ast}$ by $R(a) = \ell_a$, $\ell_a(x) = (x, a)$. Then:
 > 1. $R$ is a bijection;
 > 2. $R$ is *conjugate-linear*: $R(ca + b) = \bar{c}\, R(a) + R(b)$ for $a, b \in H$, $c \in \mathbb{F}$;
 > 3. $R$ is isometric: $\|R(a)\| = \|a\|$.
 
-^thm-44-2
+^thm-44-1
 
 > [!proof]+ Proof
 > $R(a) \in H^*$ is part (1) of the Riesz representation theorem (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]); every $\ell \in H^*$ equals $R(a)$ for exactly one $a$ by part (2); so $R$ is a bijection. Conjugate-linearity is conjugate-linearity of the inner product in its second argument: $(x, ca + b) = \bar{c}(x, a) + (x, b)$. For the isometry, [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]] shows $c = \|a\|$ is admissible for $\ell_a$, so $\|\ell_a\| \le \|a\|$; conversely, if $c$ is admissible then $\|a\|^2 = \ell_a(a) \le c\,\|a\|$, so $c \ge \|a\|$ when $a \neq 0$ (and the case $a = 0$ is trivial).
 
-^pf-44-2
+^pf-44-1
 
-*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]], [[§44 Bras, Kets, and the Riesz Map#^def-44-2|Def. §44.2]]
+*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|Def. §44.1]], [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-2|Def. §44.2]]
 
 > [!remark]- Connections
 > - Finite-dimensional version: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]]).
@@ -94,37 +90,37 @@ tags: [functional-analysis, math556, companion]
 > R(a)(x) = \ell_a(x) = (x, a) = \sum_{j=1}^n \bar{a}_j\, x_j = a^\dagger x .
 > $$
 >
-> The conjugation is what makes $R$ conjugate-linear (Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]](2)): $(ca)^\dagger = \bar{c}\, a^\dagger$, so $R(ca) = \bar{c}\, R(a)$.
+> The conjugation is what makes $R$ conjugate-linear (Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-1|§44.1]](2)): $(ca)^\dagger = \bar{c}\, a^\dagger$, so $R(ca) = \bar{c}\, R(a)$.
 
 ^ex-44-1
 
 ## Dirac Notation
 
-> [!definition] Definition §44.3: Kets and Bras
+> [!definition] Definition §44.1: Kets and Bras
 > Let $H$ be a Hilbert space. For $a \in H$, the **ket** $|a\rangle$ denotes $a$ itself, and the **bra** $\langle a|$ denotes the functional $R(a) = \ell_a \in H^{\ast}$, so that
 >
 > $$
 > \langle a | x \rangle := \langle a|\,(x) = (x, a) .
 > $$
 
-^def-44-3
+^def-44-1
 
-> [!definition] Definition §44.4: Outer Products
-> Let $H$ be a Hilbert space, with kets and bras as in Definition [[§44 Bras, Kets, and the Riesz Map#^def-44-3|§44.3]]. For $a, b \in H$, the **outer product** $|a\rangle\langle b|$ is the map
+> [!definition] Definition §44.2: Outer Products
+> Let $H$ be a Hilbert space, with kets and bras as in Definition [[§44 Bras, Kets, and the Riesz Map#^def-44-1|§44.1]]. For $a, b \in H$, the **outer product** $|a\rangle\langle b|$ is the map
 >
 > $$
 > |a\rangle\langle b| : H \to H, \qquad x \mapsto \langle b | x \rangle\, a = (x, b)\, a .
 > $$
 
-^def-44-4
+^def-44-2
 
 > [!remark] Remark
-> Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]] is the precise content of the physicists' rule that “every bra is the adjoint of a ket, and every linear functional is a bra”: the second half is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz's theorem]] and is false without completeness and boundedness. The rule $\langle ca| = \bar{c}\,\langle a|$ is conjugate-linearity of $R$. The outer product $|a\rangle\langle b|$ is a bounded operator of rank at most one (Proposition [[§44 Bras, Kets, and the Riesz Map#^prop-44-3|§44.3]]).
+> Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-1|§44.1]] is the precise content of the physicists' rule that “every bra is the adjoint of a ket, and every linear functional is a bra”: the second half is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz's theorem]] and is false without completeness and boundedness. The rule $\langle ca| = \bar{c}\,\langle a|$ is conjugate-linearity of $R$. The outer product $|a\rangle\langle b|$ is a bounded operator of rank at most one (Proposition [[§44 Bras, Kets, and the Riesz Map#^prop-44-2|§44.2]]).
 
 ^rem-44-3
 
-> [!theorem] Proposition §44.3: Outer Products are Bounded of Rank at Most One
-> Let $H$ be a Hilbert space and $a, b \in H$. The outer product $|a\rangle\langle b|$ (Definition [[§44 Bras, Kets, and the Riesz Map#^def-44-4|§44.4]]) is linear, has range in $\operatorname{span}\{a\}$, and satisfies
+> [!theorem] Proposition §44.2: Outer Products are Bounded of Rank at Most One
+> Let $H$ be a Hilbert space and $a, b \in H$. The outer product $|a\rangle\langle b|$ (Definition [[§44 Bras, Kets, and the Riesz Map#^def-44-2|§44.2]]) is linear, has range in $\operatorname{span}\{a\}$, and satisfies
 >
 > $$
 > \bigl\|\, |a\rangle\langle b|\,x \bigr\| \le \|a\|\,\|b\|\,\|x\| \qquad \text{for all } x \in H .
@@ -132,14 +128,14 @@ tags: [functional-analysis, math556, companion]
 >
 > So it is a bounded linear map $H \to H$ of rank at most one.
 
-^prop-44-3
+^prop-44-2
 
 > [!proof]+ Proof
 > *Linear in $x$:* the inner product is linear in its first argument, so $|a\rangle\langle b|\,(\alpha x + \beta y) = (\alpha x + \beta y, b)\, a = \alpha (x, b)\, a + \beta (y, b)\, a$. *Range:* each value $(x, b)\, a$ is a scalar multiple of $a$, so the range lies in $\operatorname{span}\{a\}$, of dimension at most one. *Bound:* by Cauchy–Schwarz (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]), $\|(x, b)\, a\| = |(x, b)|\,\|a\| \le \|x\|\,\|b\|\,\|a\|$.
 
-^pf-44-3
+^pf-44-2
 
 *Uses:* [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]
 
 > [!remark]- Connections
-> - Used in Quantum Mechanics: Dirac's axioms for kets, bras and operators, of which Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]] and Definitions [[§44 Bras, Kets, and the Riesz Map#^def-44-3|§44.3]] and [[§44 Bras, Kets, and the Riesz Map#^def-44-4|§44.4]] are the rigorous content — [[§C1.2 Kets, Bras, Operators and Matrix Representations#^pr-c1-2-1|QM Principle §C1.2.1]], [[§C1.2 Kets, Bras, Operators and Matrix Representations#^rem-c1-2-1|QM Remark: What the axioms add to level B, and what they are rigorously]].
+> - Used in Quantum Mechanics: Dirac's axioms for kets, bras and operators, of which Theorem [[§44 Bras, Kets, and the Riesz Map#^thm-44-1|§44.1]] and Definitions [[§44 Bras, Kets, and the Riesz Map#^def-44-1|§44.1]] and [[§44 Bras, Kets, and the Riesz Map#^def-44-2|§44.2]] are the rigorous content — [[§C1.2 Kets, Bras, Operators and Matrix Representations#^pr-c1-2-1|QM Principle §C1.2.1]], [[§C1.2 Kets, Bras, Operators and Matrix Representations#^rem-c1-2-1|QM Remark: What the axioms add to level B, and what they are rigorously]].

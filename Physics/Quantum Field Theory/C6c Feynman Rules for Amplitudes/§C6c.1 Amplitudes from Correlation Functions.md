@@ -18,9 +18,9 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > [!theorem] Theorem §C6c.1.1: Amplitudes Are Amputated Correlation Functions
 > At lowest order, the amplitude $i\mathcal M$ of a process with $n$ external particles is the connected $n$-point correlation function in momentum space with the $n$ external propagators removed and the overall $(2\pi)^4\delta^4$ stripped off. In a diagram, external lines carry no propagator: initial and final particles are lines ending at a vertex, with no propagator.
 >
-> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* lowest order in the couplings, with free relativistic states over $|0\rangle$ in place of the in and out states ([[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]); at that order no $\sqrt Z$ is needed; beyond it each external line carries $\sqrt Z$ and the physical mass, the LSZ formula (Lecture 16; [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|Caution: The rule is stated at lowest order]]).
+> *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* lowest order in the couplings, with free relativistic states over $|0\rangle$ in place of the in and out states ([[§C6b.2 Transition Probabilities in a Box#^mod-c6b-2-1|Model §C6b.2.1]]); at that order no $\sqrt Z$ is needed; beyond it each external line carries $\sqrt Z$ and the physical mass, the LSZ formula (named in Lecture 16, slide 4, and left to the second semester; QFT C10, planned; [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|Caution: The rule is stated at lowest order]]).
 >
-> *Source: PHY 513 Lecture 15, transcript ("The rule is actually that you don't have these. You do have an initial particle, … a final particle, but no propagator, no propagator. So the amplitude is actually the same as the corresponding … $n$-point correlation, but without the $n$ propagators"; "They're related by strip off the external lines") · the user's PHY 513 notes, Ch. 15 §15.9, Principle "Amplitudes are amputated correlators" (stated in the lecture, justified in Lecture 16: a theorem here, its derivation outlined from Yu) · Yu §10.5.3, eqs. (10.230)–(10.235) · PS §4.6 (Lecture 16)*
+> *Source: PHY 513 Lecture 15, transcript ("The rule is actually that you don't have these. You do have an initial particle, … a final particle, but no propagator, no propagator. So the amplitude is actually the same as the corresponding … $n$-point correlation, but without the $n$ propagators"; "They're related by strip off the external lines") · the user's PHY 513 notes, Ch. 15 §15.9, Principle "Amplitudes are amputated correlators" (stated in the lecture; Lecture 16 derives the tree-level rules directly and defers LSZ: a theorem here, its derivation outlined from Yu) · Yu §10.5.3, eqs. (10.230)–(10.235) · PS §4.6 (Lecture 16)*
 
 ^thm-c6c-1-1
 
@@ -52,7 +52,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 > i\mathcal M = (\sqrt Z)^{n+m}\times(\text{sum of the amputated, fully connected diagrams}) \qquad \text{(Yu eqs. (10.234)–(10.235))} .
 > $$
 >
-> **Step 4** (lowest order). $Z = 1 + O(\lambda)$ and the full propagator is $\tilde D_F$ at lowest order ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]); "in the leading-order calculation one can take $Z = 1$ and $\delta m^2 = 0$" (Yu, box after eq. (10.228)). Then
+> **Step 4** (lowest order). $Z = 1 + O(\text{coupling})$ (in $\phi^4$ theory $1 + O(\lambda^2)$: [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|Caution: The rule is stated at lowest order]], below) and the full propagator is $\tilde D_F$ at lowest order ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]]); "in the leading-order calculation one can take $Z = 1$ and $\delta m^2 = 0$" (Yu, box after eq. (10.228)). Then
 >
 > $$
 > \frac{iZ}{p^2 - m^2 + i\varepsilon} = \tilde D_F(p) + O(\lambda) , \qquad i\mathcal M = 1^{n+m}\times(\text{amputated diagrams}) = \frac{\text{fully connected diagrams of }\tilde G^{(n+m)}}{\prod_{\text{external}}\tilde D_F\cdot(2\pi)^4\delta^4(\cdots)} ,
@@ -163,6 +163,7 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 
 > [!example] Example §C6c.1.2: The φ⁴ Cross Section at Lowest Order
 > ![[ph-qft-c6b-9-1.svg]]
+> *(a) The single first-order diagram of $\phi\phi \to \phi\phi$: $i\mathcal M = -i\lambda$, $S = 1$, $|\mathcal M|^2 = \lambda^2$. (b) The centre-of-mass frame: the directions $(\theta, \varphi)$ and $(\pi - \theta, \varphi + \pi)$ of $\mathbf p_1$ are the same final state of two identical particles, the factor $\frac{1}{S_{\rm id}} = \frac12$ in $\sigma_{\rm total}$ (Step 3). Added figure.*
 >
 > For $\phi\phi \to \phi\phi$ at first order, $|\mathcal M|^2 = \lambda^2$ ([[§C6c.1 Amplitudes from Correlation Functions#^ex-c6c-1-1|Example §C6c.1.1]]), and all four masses are equal, so by [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-8|Theorem §C6b.4.8]] the scattering is isotropic in the centre-of-mass frame ("no angular dependence (feature of spin-less particles)", slide 19):
 >
@@ -257,10 +258,6 @@ Lecture 14 gave Feynman rules for correlation functions ([[§C6a.10 Feynman Rule
 
 ^cau-c6c-1-1
 
-## Diagrams of scattering amplitudes
-
-The diagrams of a scattering amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]]), the case $S = 1$ ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]) and the cubic–quartic diagrams of Problem Set 8 ([[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]], [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|Example §C6c.6.2]]) are in [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors|§C6c.5]] and [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]], with the tree-level rules for $i\mathcal M$ that the external-state contractions give (amputation and symmetry factors with the particles held fixed in §C6c.5, the rules in §C6c.6); the vertex factors of a polynomial interaction, $-ig_t\prod_km_{t,k}!$, are [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]], with the Feynman rules for any polynomial interaction.
-
 > [!caution] Caution: The rule is stated at lowest order
 > [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]] is exact at lowest order. Beyond it, loop corrections on an external line are not simply discarded: they renormalize the field, a factor $\sqrt Z$ per external line, and shift the mass to the physical mass at which the poles sit. The precise statement is the LSZ reduction formula (Yu §10.3, eqs. (10.107), (10.121); $i\mathcal M = (\sqrt Z)^{n+2}\times$ amputated diagrams for $2 \to n$, eq. (10.235)), the subject of the second semester. Lecture 16 turned this into the rule that diagrams are amputated ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|Def. §C6c.5.1]], [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-3|Theorem §C6c.6.3]]); in $\phi^4$ theory $\sqrt Z = 1 + O(\lambda^2)$, since the one-loop tadpole is momentum independent and only shifts the mass (the user's PHY 513 notes, Lecture 16 update, §16.2, "Filled in: what is still being neglected", and §16.7, Caution "What amputation hides").
 >
@@ -276,7 +273,7 @@ The diagrams of a scattering amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^
 ^rem-c6c-1-2
 
 > [!remark] Remark: Why the rule was stated early
-> Two of the four problems of Problem Set 8 came ahead of the lectures: they use Feynman rules to compute $\mathcal M$ and then $|\mathcal M|^2$, one of them with the decay formula ([[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]]), whereas Lecture 14 gave Feynman rules for correlation functions, not for amplitudes. The work for that week was symmetry factors, some Feynman rules and phase-space factors. The rule of [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]] was stated for that reason, ahead of its justification in Lecture 16.
+> Two of the four problems of Problem Set 8 came ahead of the lectures: they use Feynman rules to compute $\mathcal M$ and then $|\mathcal M|^2$, one of them with the decay formula ([[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]]), whereas Lecture 14 gave Feynman rules for correlation functions, not for amplitudes. The work for that week was symmetry factors, some Feynman rules and phase-space factors. The rule of [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]] was stated for that reason, ahead of the direct derivation of the rules in Lecture 16 (the LSZ justification is left to the second semester).
 >
 > *Source: PHY 513 Lecture 15, transcript (1:20:00) · the user's PHY 513 notes, Ch. 15 §15.9 (opening paragraph)*
 
@@ -301,13 +298,20 @@ The diagrams of a scattering amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^
 ^rem-c6c-1-5
 
 > [!remark] Remark: Yu's route
-> Yu reaches amplitudes from correlation functions through the LSZ reduction formula: the $T$-matrix element is the Fourier transform of the $(n + m)$-point function with a Klein–Gordon operator $\frac{i}{\sqrt Z}(\partial^2 + m^2)$ applied to each external point (eq. (10.107)), equivalently the residue of its poles (eq. (10.121)). He checks it on the $\phi^4$ vertex ($\phi\phi \to \phi\phi$, eqs. (10.224)–(10.229); $(\partial^2 + m^2)D_F = -i\delta^4$, eq. (10.226), removes each external propagator in position space) and states the general rule as "amputated" (切断) diagrams with a factor $\sqrt Z$ per external line (§10.5.3, eqs. (10.230)–(10.235)), for Dirac and vector fields as well (eqs. (10.236)–(10.237)). His momentum-space Feynman rules for $\mathcal M$ (§7.2–§7.3) come first in his order and are justified by this later; the course states the rule now and proves it in Lecture 16.
+> Yu reaches amplitudes from correlation functions through the LSZ reduction formula: the $T$-matrix element is the Fourier transform of the $(n + m)$-point function with a Klein–Gordon operator $\frac{i}{\sqrt Z}(\partial^2 + m^2)$ applied to each external point (eq. (10.107)), equivalently the residue of its poles (eq. (10.121)). He checks it on the $\phi^4$ vertex ($\phi\phi \to \phi\phi$, eqs. (10.224)–(10.229); $(\partial^2 + m^2)D_F = -i\delta^4$, eq. (10.226), removes each external propagator in position space) and states the general rule as "amputated" (切断) diagrams with a factor $\sqrt Z$ per external line (§10.5.3, eqs. (10.230)–(10.235)), for Dirac and vector fields as well (eqs. (10.236)–(10.237)). His momentum-space Feynman rules for $\mathcal M$ (§7.2–§7.3) come first in his order and are justified by this later; the course states the rule in Lecture 15, reaches the same tree-level rules directly in Lecture 16 ([[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-2|Theorem §C6c.6.2]]) and leaves the LSZ proof to the second semester.
 >
 > *Source: Yu §10.3, pp. 454–456, eqs. (10.107), (10.121); §10.5.2–§10.5.3, pp. 474–477, eqs. (10.224)–(10.237)*
 
 ^rem-c6c-1-6
 
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the Fourier transforms of the external points give the momentum deltas, one per connected component.
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — eight fields have $7!! = 105$ complete contractions.
+
 > [!remark]- Connections
+> - The diagrams of a scattering amplitude ([[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]]), the case $S = 1$ ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]) and the cubic–quartic diagrams of Problem Set 8 ([[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]], [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|Example §C6c.6.2]]) are in [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors|§C6c.5]] and [[§C6c.6 Feynman Rules for Amplitudes|§C6c.6]], with the tree-level rules for $i\mathcal M$ that the external-state contractions give (amputation and symmetry factors with the particles held fixed in §C6c.5, the rules in §C6c.6); the vertex factors of a polynomial interaction, $-ig_t\prod_km_{t,k}!$, are [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]], with the Feynman rules for any polynomial interaction.
 > - The external propagators that are stripped are the poles of the correlation functions at the particle masses; the same poles appear in the spectral picture of the two-point function, with residue $Z$ — QFT C10 (planned), [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]].
 > - In position space, stripping a propagator is applying $(\partial^2 + m^2)$, since $D_F$ is a Green's function of the Klein–Gordon operator — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription|§C2b.6]].
 > - "Fully connected" is stronger than the "attached" of the bubble cancellation; disconnected pieces of the correlator are the $\mathbb 1$ and products of smaller processes — [[§C6a.11 The iε Limit and Vacuum Bubbles#^cau-c6a-11-1|§C6a.11, Caution: Connected means attached to an external point]].

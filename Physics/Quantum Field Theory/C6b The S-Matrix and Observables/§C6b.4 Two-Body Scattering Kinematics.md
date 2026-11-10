@@ -89,7 +89,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 > \delta(E_1 + E_2 - E_{\rm cm}) = \frac{\delta(p_1 - p_1^\ast)}{|\partial_{p_1}(E_1 + E_2)|_{p_1^\ast}} = \frac{E_1E_2}{p_1(E_1 + E_2)}\bigg|_{p_1^\ast}\,\delta(p_1 - p_1^\ast) .
 > $$
 >
-> (The plus sign, where [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1|Theorem §C6b.9.1]] had a minus, is because $\mathbf p_2 = -\mathbf p_1$: $E_2$ also grows with $p_1$. The sign is still a minus as long as $p_2$ is treated as independent; it becomes a plus once $p_2$ is eliminated in favour of $p_1$.)
+> (The plus sign, where the longitudinal Jacobian of [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-1|Theorem §C6b.9.1]] has a minus, is because $\mathbf p_2 = -\mathbf p_1$: $E_2$ also grows with $p_1$. The sign is still a minus as long as $p_2$ is treated as independent; it becomes a plus once $p_2$ is eliminated in favour of $p_1$.)
 >
 > **Step 4** (collect). Insert Step 3 into Step 2 and do the $p_1$ integral; with $(2\pi)^2\cdot4 = 16\pi^2$ and $E_1 + E_2 = E_{\rm cm}$ at the zero,
 >
@@ -122,7 +122,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 >
 > the heavier particle takes the larger share of the energy, $E_1 - E_2 = (m_1^2 - m_2^2)/E_{\rm cm}$.
 > 2. (initial state) The same with $A$, $B$ in place of 1, 2: $E_A = \frac{E_{\rm cm}^2 + m_A^2 - m_B^2}{2E_{\rm cm}}$, $E_B = \frac{E_{\rm cm}^2 + m_B^2 - m_A^2}{2E_{\rm cm}}$, $|\mathbf p_A| = |\mathbf p_B| = \frac{\lambda^{1/2}(E_{\rm cm}^2, m_A^2, m_B^2)}{2E_{\rm cm}}$.
-> 3. $|\mathbf p_1|$ is real exactly for $E_{\rm cm} \ge m_1 + m_2$: the threshold of [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]].
+> 3. The formulas of part 1 solve $E_1 + E_2 = E_{\rm cm}$ with $E_1, E_2 > 0$ and $|\mathbf p_1| \ge 0$ exactly for $E_{\rm cm} \ge m_1 + m_2$, the threshold of [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]]. For $E_{\rm cm} \le |m_1 - m_2|$ the square root is real as well (both brackets are negative), but one of the energies of part 1 is negative: a root of the squared equation only.
 >
 > *Model:* any (kinematics); *applies:* as in [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]; part 2 in the centre-of-mass frame of the initial pair.
 >
@@ -169,8 +169,10 @@ Two particles in, two out: the simplest final state, and the one the course work
 >
 > **Step 7** (initial state; part 2). In the centre-of-mass frame $\mathbf p_B = -\mathbf p_A$ and $E_A + E_B = E_{\rm cm}$: the same two equations with $(m_A, m_B)$ for $(m_1, m_2)$, so Steps 1–6 give part 2 (Yu (6.354)–(6.355)).
 >
+> **Step 8** (when the root is a solution; part 3). Step 1 squared $E_2 = E_{\rm cm} - E_1$, so its result solves the original equation only if $E_2 = E_{\rm cm} - E_1 \ge 0$, and by symmetry $E_1 \ge 0$, together with $p_1^2 \ge 0$. By Step 3, $p_1^2 \ge 0$ if and only if the two brackets have the same sign: $E_{\rm cm} \ge m_1 + m_2$ (both $\ge 0$) or $E_{\rm cm} \le |m_1 - m_2|$ (both $\le 0$). In the second case, with $m_1 \ge m_2$, part 1 gives $2E_{\rm cm}E_2 = E_{\rm cm}^2 - (m_1^2 - m_2^2) \le (m_1 - m_2)^2 - (m_1 - m_2)(m_1 + m_2) = -2m_2(m_1 - m_2) \le 0$: no solution with positive energies (for example $m_1 = 3$, $m_2 = 1$, $E_{\rm cm} = 1$: $|\mathbf p_1| = \sqrt{45}/2$ but $E_2 = -\frac72$). In the first case $E_{\rm cm}^2 \ge (m_1 + m_2)^2 > |m_1^2 - m_2^2|$, so both energies of part 1 are positive.
+>
 > **What the derivation shows.**
-> - $|\mathbf p_1|$ is real exactly above threshold, $E_{\rm cm} \ge m_1 + m_2$ (part 3; [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]]); the heavier particle takes the larger share of the energy (Yu after eq. (6.349); part 1).
+> - $|\mathbf p_1|$ and both energies are physical exactly above threshold, $E_{\rm cm} \ge m_1 + m_2$ (part 3; [[§C6b.3 The Cross Section#^thm-c6b-3-12|Theorem §C6b.3.12]]): Step 1 squares $E_2 = E_{\rm cm} - E_1$, which keeps roots with $E_{\rm cm} - E_1 < 0$; for $E_{\rm cm} \le |m_1 - m_2|$ the lighter particle would have the energy $(E_{\rm cm}^2 - |m_1^2 - m_2^2|)/2E_{\rm cm} \le 0$, and between $|m_1 - m_2|$ and $m_1 + m_2$ the radicand is negative. The monotonicity argument of [[§C6b.4 Two-Body Scattering Kinematics#^der-c6b-4-1|Derivation §C6b.4.1]] ("What the derivation shows") gives the same threshold without squaring. The heavier particle takes the larger share of the energy (Yu after eq. (6.349); part 1).
 
 ^der-c6b-4-2
 
@@ -220,12 +222,14 @@ Two particles in, two out: the simplest final state, and the one the course work
 ## 2 → 2 scattering in the centre-of-mass frame
 
 > [!theorem] Theorem §C6b.4.4: The 2 → 2 Differential Cross Section in the Centre-of-Mass Frame
+> For $A + B \to 1 + 2$ in the centre-of-mass frame, with $\Omega$ the direction of $\mathbf p_1$:
+> 1. with $|\mathbf p_1|$ of [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]],
 >
 > $$
-> \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{1}{2E_A\,2E_B\,|\mathbf v_A - \mathbf v_B|}\cdot\frac{|\mathbf p_1|}{16\pi^2E_{\rm cm}}\cdot|\mathcal M|^2 ,
+> \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{1}{2E_A\,2E_B\,|\mathbf v_A - \mathbf v_B|}\cdot\frac{|\mathbf p_1|}{16\pi^2E_{\rm cm}}\cdot|\mathcal M|^2 ;
 > $$
 >
-> with $\Omega$ the direction of $\mathbf p_1$ and $|\mathbf p_1|$ of [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]]. With the $\lambda$ form of $|\mathbf p_1|$,
+> 2. with the $\lambda$ form of $|\mathbf p_1|$,
 >
 > $$
 > \Bigl(\frac{d\sigma}{d\Omega}\Bigr)_{\rm cm} = \frac{1}{128\pi^2E_AE_B|\mathbf v_A - \mathbf v_B|}\,\lambda^{1/2}\Bigl(1, \frac{m_1^2}{E_{\rm cm}^2}, \frac{m_2^2}{E_{\rm cm}^2}\Bigr)\,|\mathcal M|^2 .
@@ -246,9 +250,9 @@ Two particles in, two out: the simplest final state, and the one the course work
 >
 > with $\mathcal M$ evaluated at $\mathbf p_2 = -\mathbf p_1$ and the $|\mathbf p_1|$ of the energy constraint; it depends on $\Omega$.
 >
-> **Step 2** (read off). The initial-state factor does not depend on $\Omega$; what multiplies $g(\Omega)\,d\Omega$ under the integral is $(d\sigma/d\Omega)_{\rm cm}$, the statement.
+> **Step 2** (read off). The initial-state factor does not depend on $\Omega$; what multiplies $g(\Omega)\,d\Omega$ under the integral is $(d\sigma/d\Omega)_{\rm cm}$, part 1.
 >
-> **Step 3** (the $\lambda$ form). Insert $|\mathbf p_1| = \frac{E_{\rm cm}}{2}\lambda^{1/2}(1, m_1^2/E_{\rm cm}^2, m_2^2/E_{\rm cm}^2)$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]], 1): $\frac{1}{4E_AE_B|\mathbf v_A - \mathbf v_B|}\cdot\frac{E_{\rm cm}\lambda^{1/2}}{2\cdot16\pi^2E_{\rm cm}} = \frac{\lambda^{1/2}}{128\pi^2E_AE_B|\mathbf v_A - \mathbf v_B|}$ (Yu (6.353)).
+> **Step 3** (the $\lambda$ form; part 2). Insert $|\mathbf p_1| = \frac{E_{\rm cm}}{2}\lambda^{1/2}(1, m_1^2/E_{\rm cm}^2, m_2^2/E_{\rm cm}^2)$ ([[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]], 1): $\frac{1}{4E_AE_B|\mathbf v_A - \mathbf v_B|}\cdot\frac{E_{\rm cm}\lambda^{1/2}}{2\cdot16\pi^2E_{\rm cm}} = \frac{\lambda^{1/2}}{128\pi^2E_AE_B|\mathbf v_A - \mathbf v_B|}$ (Yu (6.353)).
 >
 > **What the derivation shows.**
 > - The initial-state factor has not been simplified; it may allow simplifications of its own. For unequal masses the kinematics of the particular situation must be worked out (or looked up) → the $\lambda$ form (part 2), ★ [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|Theorem §C6b.4.3]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-7|Theorem §C6b.4.7]].
@@ -449,7 +453,7 @@ Two particles in, two out: the simplest final state, and the one the course work
 > the masses drop out of Steps 1–4, which hold with $|\mathbf p_1| = |\mathbf p_A| = E_{\rm cm}/2$ whatever the masses were.
 >
 > **What the derivation shows.**
-> - The $|\mathbf p_1|$ of the final phase space cancels the one of the initial velocity, so the initial-state and final-state factors combine (now in the statement).
+> - The $|\mathbf p_1|$ of the final phase space cancels the one of the initial velocity, so the initial-state and final-state factors combine.
 
 ^der-c6b-4-8
 
@@ -463,6 +467,11 @@ Two particles in, two out: the simplest final state, and the one the course work
 > *Source: PHY 513 Lecture 15, transcript · the user's PHY 513 notes, Ch. 15 §15.7 (paragraph "Why $1/E_{\rm cm}^2$") · PHY 513 Lecture 16, slide 19 ("No angular dependence (feature of spin-less particles). Simple energy dependence (follows by dimensional analysis). Special to $\phi^4$-theory at leading order"; $\sigma_{\rm tot} = \lambda^2/(32\pi E_{\rm cm}^2)$, "note: identical particles")*
 
 ^rem-c6b-4-2
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2 — δ of a function with a simple zero, $\delta(f(p_1)) = \delta(p_1 - p_1^\ast)/|f'(p_1^\ast)|$: the energy delta function of $d\Pi_2$ becomes the Jacobian $\frac{E_1E_2}{p_1(E_1 + E_2)}$, which gives $\frac{|\mathbf p_1|}{16\pi^2E_{\rm cm}}$ (Derivation §C6b.4.1, Step 3).
 
 > [!remark]- Connections
 > - $E_{\rm cm}^2 = s$, the first Mandelstam variable; the scattering angle $\theta$ of $d\Omega$ fixes $t$ — [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-2|Def. §C1a.5.2]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-1|Theorem §C1a.5.1]].

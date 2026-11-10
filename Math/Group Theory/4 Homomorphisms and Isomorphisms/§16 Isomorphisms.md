@@ -39,7 +39,7 @@ tags: [group-theory, math493]
 > [!example] Example §16.1: A Continuous Bijection with Discontinuous Inverse
 > Let $f \colon [0, 2\pi) \to S^1 = \{z \in \mathbb{C} : |z| = 1\}$, $f(t) = e^{it}$. It is continuous, and it is a bijection: every point of $S^1$ is $e^{it}$ for exactly one $t \in [0, 2\pi)$. Its inverse $g = f^{-1}$ is discontinuous at $1$: $g(1) = 0$, but the points $z_m = e^{i(2\pi - 1/m)}$ ($m \geq 1$) converge to $e^{2\pi i} = 1$, while $g(z_m) = 2\pi - 1/m \to 2\pi \neq 0$.
 >
-> *Source: [[§10 Continuous Functions#^def-10-2|590 notes]]*
+> *Source: [[§26 Algebra Prerequisites꞉ Groups#^rem-26-5|590 notes]]*
 
 ^ex-16-1
 

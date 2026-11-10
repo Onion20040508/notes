@@ -27,7 +27,7 @@ Throughout, $(V, q)$ is a nondegenerate real quadratic space of dimension $n$ ([
 > [!theorem] Theorem §CB.14.2: Non-Null Vectors Are Invertible
 > If $v \in V$ and $q(v) \ne 0$, then $v \in \mathrm{Cl}^\times$ and $v^{-1} = v/q(v)$.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^thm-cb-14-2
 
@@ -35,6 +35,8 @@ Throughout, $(V, q)$ is a nondegenerate real quadratic space of dimension $n$ ([
 > $v\cdot\frac{v}{q(v)} = \frac{vv}{q(v)} = \frac{q(v)}{q(v)} = 1$ by the Clifford relation ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-6|Def. §CB.11.6]]), and likewise $\frac{v}{q(v)}\cdot v = 1$.
 
 ^pf-cb-14-2
+
+*Uses:* [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-6|Def. §CB.11.6]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-1|Def. §CB.14.1]]
 
 > [!definition] Definition §CB.14.3: Twisted Adjoint Action
 > The **twisted adjoint action** of $x \in \mathrm{Cl}^\times$ on $\mathrm{Cl}$ is $\tilde\rho(x)(y) = \alpha(x)\,y\,x^{-1}$, with $\alpha$ the grade automorphism ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-1|Theorem §CB.12.1]]); $\tilde\rho(xy) = \tilde\rho(x)\tilde\rho(y)$. On even $x$ it is ordinary conjugation, $\tilde\rho(x)(y) = xyx^{-1}$.
@@ -65,7 +67,9 @@ Throughout, $(V, q)$ is a nondegenerate real quadratic space of dimension $n$ ([
 
 ^pf-cb-14-4
 
-Cartan–Dieudonné: reflections generate the orthogonal group (first stated with the double cover below; moved here in the CB ordering pass because the proof of Theorem §CB.14.10 uses it, and its own proof uses only the reflections of Theorem §CB.14.4):
+*Uses:* [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-8|Theorem §CB.11.8]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-2|Theorem §CB.14.2]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-3|Def. §CB.14.3]]
+
+Cartan–Dieudonné: reflections generate the orthogonal group (it stands before the double cover because the proof of Theorem §CB.14.10 uses it; its own proof uses only the reflections of Theorem §CB.14.4):
 
 > [!theorem] Theorem §CB.14.5: Cartan–Dieudonné
 > Every element of $O(V)$ is a product of at most $n = \dim V$ reflections $r_u$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-4|Theorem §CB.14.4]]) with $q(u) \ne 0$; the elements of $SO(V)$ are the products of an even number of them.
@@ -136,7 +140,7 @@ Cartan–Dieudonné: reflections generate the orthogonal group (first stated wit
 > [!theorem] Lemma §CB.14.9: The Norm of a Product of Unit Vectors
 > For vectors $u_1, \dots, u_k$ with $q(u_i) = \pm1$ and $x = u_1\cdots u_k$, the spinor norm ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-8|Def. §CB.14.8]]) is $N(x) = x\,t(x) = q(u_1)\cdots q(u_k) \in \{\pm1\}$.
 >
-> *Source: written here (the direct computation, extracted from Step 1 of the proof of Theorem §CB.14.11 in the CB ordering pass, 2026-10-08, because the proof of Theorem §CB.14.10 uses it)*
+> *Source: written here (the direct computation; a lemma of its own because the proofs of Theorems §CB.14.10, §CB.14.11 and §CB.14.21 all use it)*
 
 ^lem-cb-14-9
 
@@ -201,7 +205,7 @@ Cartan–Dieudonné: reflections generate the orthogonal group (first stated wit
 > [!theorem] Theorem §CB.14.11: The Spinor Norm on Pin
 > For $x = u_1\cdots u_k \in \mathrm{Pin}(V)$, $N(x) = q(u_1)\cdots q(u_k) \in \{\pm1\}$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-8|Def. §CB.14.8]]); $N$ is a continuous homomorphism $\mathrm{Pin}(V) \to \{\pm1\}$, and $N = 1$ on $\mathrm{Spin}(V)_0$.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^thm-cb-14-11
 
@@ -213,6 +217,8 @@ Cartan–Dieudonné: reflections generate the orthogonal group (first stated wit
 > **3. Continuity and the identity component.** $N$ is the restriction of the continuous map $x \mapsto x\,t(x)$ on $\mathrm{Cl}$. A continuous map from the path-connected $\mathrm{Spin}(V)_0$ ([[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-9|Def. §CB.3.9]]) into $\{\pm1\}$ is constant, and $N(1) = 1$.
 
 ^pf-cb-14-11
+
+*Uses:* [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^lem-cb-14-9|Lemma §CB.14.9]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-8|Def. §CB.14.8]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^def-cb-3-9|Def. §CB.3.9]]
 
 ## The double cover
 
@@ -467,7 +473,7 @@ Their exponentials, the spinor Lorentz matrices:
 >
 > the matrix exponential ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-4|Def. §CB.1.4]]) of the representation of the Lorentz algebra of [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-18|Theorem §CB.14.18]].
 >
-> *Source: PS §3.2, eq. (3.30) · PHY 513 Lecture 7, Part B ("Finite Lorentz Transformations in Dirac Representation") · the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation $\Lambda_{1/2}$", eq. (Lhalf)) · Yu §5.1, eqs. (5.14), (5.16) · the definition for $n\times n$ matrices written here (the abstract half of the course's Dirac representation) · for $n = 4$ these are the matrices of the course's Dirac representation ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]); through the Clifford algebra they are the action of the spin group, $\gamma(x_\omega) = \Lambda_{1/2}(\omega)$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-3|Theorem §CB.18.3]]) (moved here from the statement, CB ordering pass)*
+> *Source: PS §3.2, eq. (3.30) · PHY 513 Lecture 7, Part B ("Finite Lorentz Transformations in Dirac Representation") · the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation $\Lambda_{1/2}$", eq. (Lhalf)) · Yu §5.1, eqs. (5.14), (5.16) · the definition for $n\times n$ matrices written here (the abstract half of the course's Dirac representation) · for $n = 4$ these are the matrices of the course's Dirac representation ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]); through the Clifford algebra they are the action of the spin group, $\gamma(x_\omega) = \Lambda_{1/2}(\omega)$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-3|Theorem §CB.18.3]])*
 
 ^def-cb-14-19
 
@@ -476,7 +482,7 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 > [!theorem] Theorem §CB.14.20: The Even Subalgebra Is Generated by 𝔰𝔭𝔦𝔫(V)
 > Every element of $\mathrm{Cl}^0$ is a linear combination of $1$ and products of elements of $\mathfrak{spin}(V)$. Hence a subspace of a Clifford module is invariant under $\mathrm{Cl}^0$ iff it is invariant under $\mathfrak{spin}(V)$, iff (Theorem §CB.3.8, 2, as $\mathrm{Spin}(V)_0$ is connected) it is invariant under $\mathrm{Spin}(V)_0$.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^thm-cb-14-20
 
@@ -489,6 +495,8 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 
 ^pf-cb-14-20
 
+*Uses:* [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-6|Theorem §CB.12.6]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-3|Theorem §CB.12.3]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-13|Def. §CB.14.13]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-14|Theorem §CB.14.14]], [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-8|Theorem §CB.3.8]]
+
 ## Invariant Hermitian forms
 
 > [!theorem] Theorem §CB.14.21: Spin Preserves a Form for Which the Clifford Generators Are Self-Adjoint
@@ -500,23 +508,24 @@ The exponent $\omega_{\mu\nu}S^{\mu\nu}$ is linear in the six parameters; $\Lamb
 >
 > ($N$ of [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-8|Def. §CB.14.8]]); in particular $\gamma(\mathrm{Spin}(V)_0) \subset U(W, h)$ ([[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-9-7|Def. §CB.9.7]]).
 >
-> *Source (planned): written here · the Dirac case: [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]]*
+> *Source: written here · the Dirac case: [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]]*
 
 ^thm-cb-14-21
 
 > [!proof]- Proof
-> For $x = u_1\cdots u_k$, $\gamma(x)^{\dagger_h} = \gamma(u_k)^{\dagger_h}\cdots\gamma(u_1)^{\dagger_h} = \gamma(u_k)\cdots\gamma(u_1) = \gamma(t(x))$ by Theorem §CB.9.6, 2 and self-adjointness. Hence $h(\gamma(x)\chi, \gamma(x)\psi) = h(\chi, \gamma(t(x))\gamma(x)\psi) = h(\chi, \gamma(t(x)x)\psi)$. Now $t(x)x = u_k\cdots u_1u_1\cdots u_k = q(u_1)\cdots q(u_k) = N(x)$ by the computation of Theorem §CB.14.11, step 1 (read from the inside out). So the right side is $N(x)h(\chi, \psi)$, and $N = 1$ on $\mathrm{Spin}(V)_0$ (Theorem §CB.14.11).
+> For $x = u_1\cdots u_k$, $\gamma(x)^{\dagger_h} = \gamma(u_k)^{\dagger_h}\cdots\gamma(u_1)^{\dagger_h} = \gamma(u_k)\cdots\gamma(u_1) = \gamma(t(x))$ by Theorem §CB.9.6, 2 and self-adjointness. Hence $h(\gamma(x)\chi, \gamma(x)\psi) = h(\chi, \gamma(t(x))\gamma(x)\psi) = h(\chi, \gamma(t(x)x)\psi)$. Now $t(x)x = u_k\cdots u_1u_1\cdots u_k = q(u_1)\cdots q(u_k) = N(x)$ by the computation of [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^lem-cb-14-9|Lemma §CB.14.9]] (the same collapse, from the inside out). So the right side is $N(x)h(\chi, \psi)$, and $N = 1$ on $\mathrm{Spin}(V)_0$ (Theorem §CB.14.11).
 
 ^pf-cb-14-21
+
+*Uses:* [[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups#^thm-cb-9-6|Theorem §CB.9.6]], [[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-9-5|Def. §CB.9.5]], [[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups#^def-cb-9-7|Def. §CB.9.7]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^lem-cb-14-9|Lemma §CB.14.9]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-11|Theorem §CB.14.11]]
 
 In a Hermitian basis the generators themselves have a simple adjoint, which makes rotations unitary and boosts not (first written for the course's matrices in [[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]]):
 
 > [!theorem] Theorem §CB.14.22: Adjoints of the Generators
 > 1. For the spinor generators ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]]) of Hermitian Dirac matrices, i.e. in a Hermitian basis ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]]; for the chiral basis, [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-11-13|Example §CB.11.13]]), $S^{\mu\nu\dagger} = \gamma^0S^{\mu\nu}\gamma^0$. In particular $S^{ij}$ commutes with $\gamma^0$ and is Hermitian; $S^{0i}$ anticommutes with $\gamma^0$ and is anti-Hermitian.
-> 2. $\Lambda_{1/2}$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-19|Def. §CB.14.19]]) is unitary for rotations and Hermitian positive (not unitary) for pure boosts, the spin-½ case of [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-22|Theorem §CB.7.22]], for the Lorentz group [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]].
+> 2. $\Lambda_{1/2}$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-19|Def. §CB.14.19]]) is unitary for rotations ($\Lambda_{1/2} = e^{-i\boldsymbol\theta\cdot\mathbf J}$) and Hermitian with the positive eigenvalues $e^{\pm|\boldsymbol\eta|/2}$, hence not unitary, for pure boosts $\Lambda_{1/2} = e^{-i\boldsymbol\eta\cdot\mathbf K}$ with $\boldsymbol\eta \ne 0$; here $J_i = \frac12\varepsilon_{ijk}S^{jk}$, $K_i = S^{0i}$ ([[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-4|Def. §CB.5.4]]). This is the spin-½ case of [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-22|Theorem §CB.7.22]] (used next, for every finite-dimensional representation of the Lorentz group: Theorem §CB.17.15).
 >
 > *Source: the user's PHY 513 notes, Ch. 8 §8.1 (Derivation "Hermiticity of the Dirac matrices", "Consequence for the generators"; Derivation "What replaces unitarity", Step 1; Caution "Spinor boosts are not unitary") · PHY 513 Lecture 8, Part B (slides "The Hermitean Conjugate Spinor", "The Dirac Conjugate Spinor") · PS §3.2, p. 41 ("The boost generators $S^{0i}$ are not Hermitian") and p. 43*
-
 
 ^thm-cb-14-22
 
@@ -527,22 +536,35 @@ In a Hermitian basis the generators themselves have a simple adjoint, which make
 >
 > **3. The two cases.** $S^{ij} = \frac i2\gamma^i\gamma^j$ ($i \ne j$): moving $\gamma^0$ through two $\gamma$'s gives $(-1)^2$, so $\gamma^0S^{ij} = S^{ij}\gamma^0$ and $S^{ij\dagger} = S^{ij}(\gamma^0)^2 = S^{ij}$. $S^{0i} = \frac i2\gamma^0\gamma^i$: $\gamma^0$ anticommutes with $\gamma^i$ and commutes with itself, so $\gamma^0S^{0i} = -S^{0i}\gamma^0$ and $S^{0i\dagger} = -S^{0i}$.
 >
-> **4. Part 2.** For a rotation $\Lambda_{1/2} = e^{-i\boldsymbol\theta\cdot\mathbf J}$ with $\mathbf J$ Hermitian: $(e^{-iX})^\dagger = e^{iX} = (e^{-iX})^{-1}$, unitary. For a pure boost $\Lambda_{1/2} = e^{-i\boldsymbol\eta\cdot\mathbf K}$ and $-i\mathbf K$ is Hermitian ($\mathbf K$ anti-Hermitian), so $\Lambda_{1/2}$ is the exponential of a Hermitian matrix: Hermitian with positive eigenvalues, unitary only for $\boldsymbol\eta = 0$ ([[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]]).
+> **4. Part 2.** With $J_i = \frac12\varepsilon_{ijk}S^{jk}$, $K_i = S^{0i}$ ([[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-4|Def. §CB.5.4]]) and $\theta_i = \frac12\varepsilon_{ijk}\omega_{jk}$, $\eta_i = \omega_{0i}$, the exponent of [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-19|Def. §CB.14.19]] is $-\frac i2\omega_{\mu\nu}S^{\mu\nu} = -i\omega_{0i}S^{0i} - \frac i2\omega_{ij}S^{ij} = -i\boldsymbol\eta\cdot\mathbf K - i\boldsymbol\theta\cdot\mathbf J$. By step 3, $\mathbf J$ is Hermitian and $\mathbf K$ anti-Hermitian. For a rotation ($\boldsymbol\eta = 0$), $\Lambda_{1/2} = e^{-iX}$ with $X = \boldsymbol\theta\cdot\mathbf J$ Hermitian: $(e^{-iX})^\dagger = e^{iX} = (e^{-iX})^{-1}$, unitary. For a pure boost ($\boldsymbol\theta = 0$), $\Lambda_{1/2} = e^H$ with
+>
+> $$
+> H = -i\boldsymbol\eta\cdot\mathbf K = -i\eta_i\cdot\tfrac i2\gamma^0\gamma^i = \tfrac12\eta_i\gamma^0\gamma^i, \qquad H^\dagger = H, \qquad H^2 = \tfrac14\eta_i\eta_j\,\gamma^0\gamma^i\gamma^0\gamma^j = -\tfrac14\eta_i\eta_j\,\gamma^i\gamma^j = -\tfrac14\eta_i\eta_j\,g^{ij}\,\mathbb 1 = \tfrac14|\boldsymbol\eta|^2\,\mathbb 1 ,
+> $$
+>
+> using $\gamma^0\gamma^i\gamma^0 = -\gamma^i$, the symmetry of $\eta_i\eta_j$ (only $\frac12\{\gamma^i, \gamma^j\} = g^{ij}\mathbb 1$ survives, [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]], 3) and $g^{ij} = -\delta^{ij}$. So $H$ is Hermitian with eigenvalues $\pm\frac12|\boldsymbol\eta|$, and summing the exponential series with $H^2 = \frac14|\boldsymbol\eta|^2\mathbb 1$,
+>
+> $$
+> \Lambda_{1/2} = e^H = \cosh\tfrac{|\boldsymbol\eta|}2\,\mathbb 1 + \frac{2}{|\boldsymbol\eta|}\sinh\tfrac{|\boldsymbol\eta|}2\;H ,
+> $$
+>
+> a Hermitian matrix with eigenvalues $e^{\pm|\boldsymbol\eta|/2} > 0$. It is unitary iff $\Lambda_{1/2}^\dagger\Lambda_{1/2} = e^{2H} = \mathbb 1$, iff $e^{\pm|\boldsymbol\eta|} = 1$, iff $\boldsymbol\eta = 0$.
 >
 > **What the derivation shows**
-> - Step 3 in the chiral basis (moved here from Step 3, CB ordering pass): In the chiral basis this is visible in Theorem §C5a.3.2: $\frac12\Sigma^k$ Hermitian, $-\frac i2\operatorname{diag}(\sigma^i, -\sigma^i)$ anti-Hermitian..
+> - In the chiral basis step 3 is visible in [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]]: $\frac12\Sigma^k$ is Hermitian, $-\frac i2\operatorname{diag}(\sigma^i, -\sigma^i)$ anti-Hermitian.
+> - Used next: that no finite-dimensional representation of the Lorentz group with a nonzero boost generator is unitary is [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]]; step 4 is its spin-½ instance, computed directly.
 > - $\gamma^0$ turns the adjoint into the inverse: $\Lambda_{1/2}^\dagger = \gamma^0\Lambda_{1/2}^{-1}\gamma^0$, so the form $\chi^\dagger\gamma^0\psi$ is invariant where $\chi^\dagger\psi$ is not ([[§CB.9 Hermitian Forms, Signature and Pseudo-Unitary Groups|§CB.9]]; for the course's matrices, [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]]). The physical reading is [[§C5a.3 The Lorentz Action on Spinor Space#^rem-c5a-3-2|§C5a.3, Remark: Spinor boosts are not unitary]].
 
 ^der-cb-14-22
 
-*Uses:* [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]], [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-11-13|Example §CB.11.13]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-15|Theorem §CB.17.15]]
+*Uses:* [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]], [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-11-13|Example §CB.11.13]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]], [[§CB.5 The Lorentz Algebra꞉ Generators and Commutation Relations#^def-cb-5-4|Def. §CB.5.4]], [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-19|Def. §CB.14.19]]
 
 ## Spinor representations and the TA's theorem
 
 > [!definition] Definition §CB.14.23: Spinorial and Tensorial Representations
 > Let $\mathrm{Spin}(V)_0$ contain $-1$ (Theorem §CB.14.15). A representation $D$ of $\mathrm{Spin}(V)_0$ is **tensorial** if $D(-1) = \mathbb 1$ (equivalently, [[§CB.10 SU(2) and SO(3)꞉ Spin j, Symmetric Powers and Clebsch–Gordan#^thm-cb-10-15|Theorem §CB.10.15]], it comes from a representation of $SO(V)_0$) and **spinorial** if $D(-1) = -\mathbb 1$.
 >
-> *Source (planned): written here · for the Lorentz group these are the course's tensor and spinor representations ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-26|Def. §CB.14.26]]), detected by the rotation through $2\pi$ (moved here from the statement, CB ordering pass)*
+> *Source: written here · for the Lorentz group these are the course's tensor and spinor representations ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-26|Def. §CB.14.26]]), detected by the rotation through $2\pi$*
 
 ^def-cb-14-23
 
@@ -556,7 +578,7 @@ In a Hermitian basis the generators themselves have a simple adjoint, which make
 > [!theorem] Theorem §CB.14.25: Every Representation Splits into a Tensorial and a Spinorial Part
 > Every finite-dimensional representation $W$ of $\mathrm{Spin}(V)_0$ is $W = W_+\oplus W_-$ with $W_\pm = \{w : D(-1)w = \pm w\}$ invariant, $W_+$ tensorial and $W_-$ spinorial ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-23|Def. §CB.14.23]]); an irreducible representation is one or the other.
 >
-> *Source (planned): written here · the Lorentz case: [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-11|Theorem §CB.17.11]]*
+> *Source: written here · the Lorentz case: [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-11|Theorem §CB.17.11]]*
 
 ^thm-cb-14-25
 
@@ -569,6 +591,8 @@ In a Hermitian basis the generators themselves have a simple adjoint, which make
 
 ^pf-cb-14-25
 
+*Uses:* [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-23|Def. §CB.14.23]]
+
 The course's definition for the Lorentz algebra, by the sign of the rotation through $2\pi$ (Definition §CB.14.23 above identifies it with the tensorial/spinorial dichotomy, $e^{-2\pi iJ_3}$ being the image of $-1$):
 
 > [!definition] Definition §CB.14.26: Spinor and Tensor Representations
@@ -578,9 +602,16 @@ The course's definition for the Lorentz algebra, by the sign of the rotation thr
 
 ^def-cb-14-26
 
+> [!caution] Caution: The spinor representation and a spinor representation
+> Two meanings are in use. *The* spinor representation ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-24|Def. §CB.14.24]]) is one specific representation of $\mathrm{Spin}(V)$: an irreducible complex Clifford module restricted to the group; for $\mathbb R^{1,3}$ it is the Dirac representation. *A* spinor representation in the course's sense ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-26|Def. §CB.14.26]]) is any representation on which the rotation by $2\pi$ acts as $-\mathbb 1$, that is, any spinorial representation of [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-23|Def. §CB.14.23]]; there are infinitely many inequivalent ones (for the Lorentz group, every $(j_+, j_-)$ of §CB.17 with $j_+ + j_-$ half-integer). The first is one of the second, because $\gamma(-1) = -\mathbb 1$ in every Clifford module. The TA's theorem (Theorem §CB.18.17) is about the first meaning: the Clifford modules restricted to the spin group are exactly sums of copies of *the* spinor representation, and every spinorial representation lies in the spinor representation tensored with a tensorial one.
+>
+> *Source: written here, from the two definitions*
+
+^cau-cb-14-1
+
 That every finite-dimensional representation of the Lorentz algebra splits into a tensor and a spinor part, read on the labels $(j_+, j_-)$, is [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-11|Theorem §CB.17.11]] in [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]].
 
-The TA's theorem in general — Clifford modules restricted to $\mathrm{Spin}(V)_0$ are exactly the spinor representations, and every spinorial representation lies in spinor ⊗ tensor (PHY 513 TA, oral remark, Oct 2026) — is [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-17|Theorem §CB.18.17]], stated and proved at the end of [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]] (moved there in the CB ordering pass), after the cases $n = 3$ ([[§CB.15 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-15-6|Theorem §CB.15.6]]) and $\mathbb R^{1,3}$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-15|Theorems §CB.18.15]]–[[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-16|§CB.18.16]]) that its proof uses.
+The TA's theorem in general — Clifford modules restricted to $\mathrm{Spin}(V)_0$ are exactly the spinor representations, and every spinorial representation lies in spinor ⊗ tensor (PHY 513 TA, oral remark, Oct 2026) — is [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-17|Theorem §CB.18.17]], stated and proved at the end of [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵|§CB.18]], after the cases $n = 3$ ([[§CB.15 Three Dimensions꞉ Cl(3), Spin(3) = SU(2) and Spin One-Half#^thm-cb-15-6|Theorem §CB.15.6]]) and $\mathbb R^{1,3}$ ([[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-15|Theorems §CB.18.15]]–[[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-16|§CB.18.16]]) that its proof uses.
 
 > [!theorem] Theorem §CB.14.27: Clifford Multiplication Is Spin-Equivariant
 > For a Clifford module $\gamma$ on $W$, $x \in \mathrm{Spin}(V)$ and $v \in V$:
@@ -591,7 +622,7 @@ The TA's theorem in general — Clifford modules restricted to $\mathrm{Spin}(V)
 >
 > So the map $V\otimes W \to W$, $v\otimes w \mapsto \gamma(v)w$, is an intertwiner ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|Def. §CB.7.2]]) from $\rho\otimes\gamma|_{\mathrm{Spin}}$ to $\gamma|_{\mathrm{Spin}}$; equivalently $\gamma \in V'\otimes\operatorname{End}(W)$ is an invariant tensor ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-10|Def. §CB.8.10]]). For $n$ even it maps $V\otimes S^\pm$ to $S^\mp$.
 >
-> *Source (planned): written here · the Dirac case: [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-8|Theorem §CB.18.8]]*
+> *Source: written here · the Dirac case: [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-8|Theorem §CB.18.8]]*
 
 ^thm-cb-14-27
 
@@ -599,6 +630,8 @@ The TA's theorem in general — Clifford modules restricted to $\mathrm{Spin}(V)
 > $\gamma$ is an algebra homomorphism, so $\gamma(x)\gamma(v)\gamma(x)^{-1} = \gamma(xvx^{-1})$, and $xvx^{-1} = \rho(x)v$ for even $x$ (Theorem §CB.14.10, 2). For $v\otimes w$: $\gamma(x)\bigl(\gamma(v)w\bigr) = \gamma(\rho(x)v)\gamma(x)w$, which is the intertwining property. For $n$ even, $\gamma(v)$ maps $S^\pm$ to $S^\mp$ because $\omega_{\mathbb C}$ anticommutes with $v$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-13|Theorem §CB.12.13]], 3).
 
 ^pf-cb-14-27
+
+*Uses:* [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-10|Theorem §CB.14.10]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-13|Theorem §CB.12.13]], [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-20|Theorem §CB.13.20]], [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-2|Def. §CB.7.2]]
 
 > [!remark]- Connections
 > - The reflections of Theorem §CB.14.4 are the Clifford form of the parity and time-reversal matrices: a single vector $e_0$ or $e_i$ acts as a reflection, which is why discrete Lorentz transformations act on spinors by single $\gamma$ matrices ([[§C9.1 Discrete Lorentz Transformations#^def-c9-1-2|Def. §C9.1.2]]; [[§C9.3 Parity on States, Spinors and the Dirac Field|§C9.3]]).

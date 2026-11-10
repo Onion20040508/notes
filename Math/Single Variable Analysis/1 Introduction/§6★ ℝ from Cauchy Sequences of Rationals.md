@@ -548,8 +548,8 @@ From here on, ℝ is the course's ℝ: an ordered field containing $\mathbb{Q}$ 
 > |---|---|
 > | [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-9\|Cor. §6★.9]] (a class is the limit of its representative) | [[§12 Completeness#^prop-12-3\|556 Prop. §12.3]](c) ($M$ dense in $\overline{M}$) |
 > | [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-10\|Thm. §6★.10]] (Cauchy complete) | [[§12 Completeness#^prop-12-3\|556 Prop. §12.3]](d) ($\overline{M}$ complete) |
-> | [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12\|Thm. §6★.12]] ($\Phi = \lim$ onto ℝ) | [[§13 The Completion of a Normed Space#^prop-13-2\|556 Prop. §13.2]] (identifying a completion: $\Phi = \lim J x_n$) |
-> | [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14\|Cor. §6★.14]] (uniqueness) | [[§13 The Completion of a Normed Space#^cor-13-3\|556 Cor. §13.3]] (uniqueness of the completion) |
+> | [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12\|Thm. §6★.12]] ($\Phi = \lim$ onto ℝ) | [[§13 The Completion of a Normed Space#^prop-13-3\|556 Prop. §13.3]] (identifying a completion: $\Phi = \lim J x_n$) |
+> | [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14\|Cor. §6★.14]] (uniqueness) | [[§13 The Completion of a Normed Space#^cor-13-4\|556 Cor. §13.4]] (uniqueness of the completion) |
 >
 > So ℝ *is* the completion of $\mathbb{Q}$, in the sense of [[Completion of a Normed Space|556 §11]]: $\mathbb{Q}$ sits densely in ℝ ([[§4 The Completeness Axiom#^thm-4-7|Theorem §4.7]]), and ℝ is complete ([[§10a Cauchy Sequences#^thm-10a-3|Theorem §10a.3]]). Functional analysis then runs the same machine on function spaces: $L^p[a, b]$ is the completion of $C[a, b]$ under $\|\cdot\|_p$ ([[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|556 Proposition §19.8]]).
 

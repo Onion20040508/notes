@@ -42,6 +42,8 @@ $$
 
 ^der-c6a-3-1
 
+*Uses:* [[§C6a.2 The Interaction Picture#^def-c6a-2-2|Def. §C6a.2.2]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]]
+
 > [!theorem] Theorem §C6a.3.2: The Equation of Motion of the Time-Evolution Operator
 > $U(t)$ is the solution of the first-order linear initial-value problem
 >
@@ -187,7 +189,7 @@ $$
 > \frac{(-i)^n}{n!}\hat A(t)^n = \frac{(-i)^n}{n!}\int_0^tdt_1\,\hat H_I(t_1)\int_0^tdt_2\,\hat H_I(t_2)\cdots\int_0^tdt_n\,\hat H_I(t_n) .
 > $$
 >
-> **Step 2** (part 1: the product rule without reordering). $\partial_t\hat A(t) = \hat H_I(t)$ (fundamental theorem of calculus, [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]). The product rule differentiates one factor at a time and leaves it in its place:
+> **Step 2** (part 1: the product rule without reordering). $\partial_t\hat A(t) = \hat H_I(t)$ (fundamental theorem of calculus, [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]). The product rule differentiates one factor at a time and leaves it in its place:
 >
 > $$
 > \begin{aligned}
@@ -211,7 +213,7 @@ $$
 > i\partial_t\sum_{n=0}^\infty\frac{(-i)^n}{n!}\hat A^n = \sum_{n=1}^\infty i\,\frac{(-i)^n}{n!}\,n\,\hat H_I(t)\hat A^{n-1} = \hat H_I(t)\sum_{n=1}^\infty\frac{(-i)^{n-1}}{(n-1)!}\hat A^{n-1} = \hat H_I(t)\,e^{-i\hat A(t)},
 > $$
 >
-> using $i(-i)^n = (-i)^{n-1}$ (since $i\cdot(-i) = 1$) and $n/n! = 1/(n-1)!$; the $n = 0$ term is constant. (Differentiating the series term by term is legitimate: on the regularized theory $\|\hat H_I(t')\| \le h$, the differentiated series is dominated by $\sum h(ht)^{n-1}/(n-1)!$ and converges uniformly, [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]].) At $t = 0$, $\hat A = 0$ and $e^0 = \mathbf 1$. By uniqueness (Step 4 of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^der-c6a-3-6|Derivation §C6a.3.6]]) this is $U(t)$.
+> using $i(-i)^n = (-i)^{n-1}$ (since $i\cdot(-i) = 1$) and $n/n! = 1/(n-1)!$; the $n = 0$ term is constant. (Differentiating the series term by term is legitimate: on the regularized theory $\|\hat H_I(t')\| \le h$, the differentiated series is dominated by $\sum h(ht)^{n-1}/(n-1)!$ and converges uniformly, [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]].) At $t = 0$, $\hat A = 0$ and $e^0 = \mathbf 1$. By uniqueness (Step 4 of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^der-c6a-3-6|Derivation §C6a.3.6]] below; that step rests only on [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-1|Theorem §C6a.3.1]] and [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-2|Theorem §C6a.3.2]], so nothing of the present theorem is used in it) this is $U(t)$.
 >
 > **Step 4** (part 3). Without commutativity the $n$ terms of part 1 differ, and only the first, $\hat H_I(t)\hat A^{n-1}$, has $\hat H_I(t)$ on the left, where the equation $i\partial_tU = \hat H_I(t)U$ requires it to act. At second order: the term of $e^{-i\hat A}$ is $\frac{(-i)^2}{2}\hat A^2$, and the equation requires $i\partial_t$ of it to be $\hat H_I(t)$ times the first-order term $-i\hat A$:
 >
@@ -227,7 +229,7 @@ $$
 
 ^der-c6a-3-4
 
-*Uses:* [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-2|Theorem §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-3|Theorem §C6a.3.3]]
+*Uses:* [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-2|Theorem §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-3|Theorem §C6a.3.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^der-c6a-3-6|Derivation §C6a.3.6]] (Step 4, uniqueness)
 
 > [!caution] Caution: A factor on slide 12
 > Slide 12's commuting case reads $\to H_I(t)\sum_{n=1}^\infty\frac{1}{(n-1)!}\bigl(\int_0^tdt'H_I(t')\bigr)^{n-1} = H_I(t)U(t)$. The factor $(-i)^{n-1}$ is missing from the sum: $i\partial_t$ of $\frac{(-i)^n}{n!}(\int H_I)^n$ is $\frac{(-i)^{n-1}}{(n-1)!}H_I(t)(\int H_I)^{n-1}$ ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^der-c6a-3-4|Derivation §C6a.3.4]], Step 3). Without it the sum would be $H_I(t)e^{+\int H_I}$, not $H_I(t)U(t)$.
@@ -355,7 +357,7 @@ $$
 > W_n(t) = (-i)\int_0^tdt_1\,\hat H_I(t_1)\underbrace{\Bigl[(-i)^{n-1}\int_0^{t_1}dt_2\int_0^{t_2}dt_3\cdots\int_0^{t_{n-1}}dt_n\,\hat H_I(t_2)\cdots\hat H_I(t_n)\Bigr]}_{W_{n-1}(t_1)} = -i\int_0^tdt_1\,\hat H_I(t_1)\,W_{n-1}(t_1) ,
 > $$
 >
-> the bracket being $W_{n-1}$ with its variables renamed $t_1, \dots, t_{n-1} \to t_2, \dots, t_n$ and upper limit $t_1$, again time ordered among themselves. By the fundamental theorem of calculus ([[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]; the integrand is continuous), differentiation acts only on the upper limit:
+> the bracket being $W_{n-1}$ with its variables renamed $t_1, \dots, t_{n-1} \to t_2, \dots, t_n$ and upper limit $t_1$, again time ordered among themselves. By the fundamental theorem of calculus ([[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]]; the integrand is continuous), differentiation acts only on the upper limit:
 >
 > $$
 > i\,\partial_tW_n(t) = i\cdot(-i)\,\hat H_I(t)\,W_{n-1}(t) = \hat H_I(t)\,W_{n-1}(t) , \qquad n \ge 1 ,
@@ -409,7 +411,7 @@ $$
 
 ^der-c6a-3-6
 
-*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-5|Theorem §C6a.3.5]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-2|Theorem §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-1|Theorem §C6a.3.1]]
+*Uses:* [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-5|Theorem §C6a.3.5]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]], [[§34 Fundamental Theorem of Calculus#^thm-34-4|451 Thm. §34.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-2|Theorem §C6a.3.2]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-1|Theorem §C6a.3.1]]
 
 > [!remark] Remark: How to read the time-ordered exponential
 > $T\{e^{\cdots}\}$ is not an exponential; it is the series of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^def-c6a-3-1|Def. §C6a.3.1]] with an instruction to be carried out at the very end. That has a useful consequence the lecture used at once: inside $T\{\cdots\}$ operators may be treated as if they commuted, exponents may be added, and the ordering is restored afterwards (the user's notes). The composition law ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-7|Theorem §C6a.3.7]], 2) and the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]) are this rule at work. PS: "the time-ordered exponential is just a compact way of writing and remembering the correct expression."
@@ -621,9 +623,11 @@ $$
 ^rem-c6a-3-4
 
 > [!abstract]- Mathematical background
-> Proved in CB; each line says what the physics above relies on.
+> Proved in CA and CB; each line says what the physics above relies on.
 >
 > - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]] — the derivations differentiate and multiply exponentials of $\hat H_0$ and $\hat H$, always without reordering them; parts 3–5 are used: exponents add only for commuting matrices, the adjoint of an exponential, and its derivative on either side.
+> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]] — the integral of the ordered product over the cube is $n!$ times the integral over the ordered region, whose volume is $t^n/n!$: the $\frac{1}{n!}$ of Dyson's formula (Theorem §C6a.3.5) and the bound $h^nt^n/n!$ that makes the series converge (Derivation §C6a.3.6, Step 2).
+> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]] — a series whose differentiated terms converge uniformly may be differentiated term by term: used for the naive exponential (Derivation §C6a.3.4, Step 3) and for the Dyson series (Derivation §C6a.3.6, Step 3).
 
 > [!remark]- Connections
 > - Quantum mechanics has the same Dyson series for any time-dependent Hamiltonian, with a convergence proof for bounded ones, and the same series for a perturbation $V_I(t)$ in its interaction picture; the field theory adds a local, explicitly known generator — [[§C3.1 The Time-Evolution Operator and the Schrödinger Equation#^thm-c3-1-4|QM Theorem §C3.1.4]], [[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits#^thm-c9-4-3|QM Theorem §C9.4.3]], [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]].

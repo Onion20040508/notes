@@ -307,17 +307,17 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 *Uses:* [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]], [[§23 Cauchy–Schwarz and the Induced Norm#^pf-23-1|§23.1 (5.1)]], [[§25 Projection and Orthogonal Decomposition#^prop-25-3|§25.3]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§25 Projection and Orthogonal Decomposition#^def-25-3|Def. §25.3]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]]
 
 > [!remark]- Connections
-> - Announced in Chapter 1 as the missing hypothesis of [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (orthogonal complement as a model of the quotient).
+> - Announced in Chapter 1 as the missing hypothesis of [[§2 Quotient Spaces and Complements#^cor-2-9|§2.9]] (orthogonal complement as a model of the quotient).
 > - The finite-dimensional home: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]] ($V = U \oplus U^\perp$), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] ($(U^\perp)^\perp = U$), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]] (orthogonal projection).
 > - Used for the Riesz representation theorem: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|§26.4]].
 > - Computational version: [[§52 Orthogonal Projections#^thm-52-1|235 Thm. §52.1]] (the ℝⁿ case, with the projection computed from an orthogonal basis) and, for (2), [[§50 Orthogonal Complements and Angles#^cor-50-4|235 Cor. §50.4]].
 
 > [!remark] Remark: The Promise of Lecture 1 is Kept
-> Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] (HW1; the statement was suggested in Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] suggested; the remark following Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] identified exactly this theorem as the missing piece. The hypotheses are sharp: for the subspace $c_{00} \subset \ell^2$, which is not closed, both (1) and (2) fail (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-4|§25.4]]). For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]]).
+> Corollary [[§2 Quotient Spaces and Complements#^cor-2-9|§2.9]] (HW1; the statement was suggested in Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] suggested; the remark following Corollary [[§2 Quotient Spaces and Complements#^cor-2-9|§2.9]] identified exactly this theorem as the missing piece. The hypotheses are sharp: for the subspace $c_{00} \subset \ell^2$, which is not closed, both (1) and (2) fail (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-5|§25.5]]). For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]]).
 
 ^rem-25-5
 
-> [!example] Example §25.4: The Non-Closed Subspace $c_{00}$ of $\ell^2$
+> [!example] Example §25.5: The Non-Closed Subspace $c_{00}$ of $\ell^2$
 > Let $c_{00} \subset \ell^2$ be the subspace of finitely supported sequences, and $a = (1, \tfrac12, \tfrac13, \ldots) \in \ell^2$. Then $a \notin c_{00}$, but $a$ is the $\ell^2$-limit of its truncations $(1, \ldots, \tfrac1n, 0, \ldots) \in c_{00}$ (the tail $\sum_{i > n} i^{-2}$ tends to $0$), so $c_{00}$ is not closed. We show that both conclusions of Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]] fail for $Y = c_{00}$.
 >
 > *$c_{00}^\perp = \{0\}$.* Each $e_j$ lies in $c_{00}$. If $v \in c_{00}^\perp$, then $0 = (v, e_j) = v_j \cdot \overline{1} = v_j$ for every $j$, so $v = 0$.
@@ -326,7 +326,7 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 >
 > *(2) fails.* $(c_{00}^\perp)^\perp = \{0\}^\perp = \ell^2$, since every vector is orthogonal to $0$; and $\ell^2 \neq c_{00}$.
 
-^ex-25-4
+^ex-25-5
 
 > [!remark] Remark
 > The proof of (1) is the first-variation argument of calculus, in the form “at a minimum the derivative vanishes”: $y_0$ minimizes $y \mapsto \|x_0 - y\|^2$ over $Y$, so moving $y_0$ along any direction $y \in Y$ cannot decrease the value, and [[§25 Projection and Orthogonal Decomposition#^pf-25-4|(5.3)]] is the statement that the linear term in $t$ of the expansion must vanish. The rotation $t = s e^{i\theta}$ is [[Functional Analysis Problem-Solving Techniques#^rem-t8|Technique 8]] again. Riesz's lemma (Lemma [[§20 Compactness and the Unit Ball#^lem-20-2|§20.2]]) was the substitute for this argument in a bare normed space; here the constant $\tfrac12$ improves to an exact orthogonal vector, as the remark *On the Constant* after Proposition [[§20 Compactness and the Unit Ball#^prop-20-4|§20.4]] anticipated; Proposition [[§25 Projection and Orthogonal Decomposition#^prop-25-5|§25.5]] below records this.

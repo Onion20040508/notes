@@ -42,7 +42,7 @@ The theorem is a *construction* device. The simplest use:
 >
 > This is a linear functional on the one-dimensional subspace $Y$. Given any positive homogeneous subadditive $p$ on $X$ with $\ell(y) \le p(y)$ on $Y$, [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] extends $\ell$ to a linear functional $L : X \to \mathbb{R}$ with $L \le p$ on all of $X$. (One can prescribe any value at $y_0$, not only $1$; the normalization is a convenience.)
 >
-> Thus, whenever a dominating $p$ is available, there is at least one linear functional on $X$ taking a prescribed nonzero value at $y_0$. (In a normed space $p$ can always be taken to be a multiple of the norm; this is Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]. In a bare linear space such a functional also exists, without any $p$: choose a complement $W$ of $Y$ by Proposition [[§2 Quotient Spaces and Complements#^prop-2-3|§2.3]] and set $L(a y_0 + w) = a$ for $a \in \mathbb{R}$, $w \in W$.) The extension is not unique.
+> Thus, whenever a dominating $p$ is available, there is at least one linear functional on $X$ taking a prescribed nonzero value at $y_0$. (In a normed space $p$ can always be taken to be a multiple of the norm; this is Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]. In a bare linear space such a functional also exists, without any $p$: choose a complement $W$ of $Y$ by Proposition [[§2 Quotient Spaces and Complements#^prop-2-4|§2.4]] and set $L(a y_0 + w) = a$ for $a \in \mathbb{R}$, $w \in W$.) The extension is not unique.
 
 ^ex-6-1
 
@@ -176,7 +176,7 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 *(Not from lecture; animation added, vault only.)* The one-step extension seen in the plane, for $p$ the Euclidean norm, $Y$ the $x_1$-axis and $\ell = \frac12 x_1$ on $Y$ (chosen for the picture). The extensions are $L_c = \frac12 x_1 + c\,x_2$, $c = L_c(e_2)$, and the level line $\{L_c = 1\}$ always passes through $(2, 0)$, where $\ell = 1$. As $c$ moves, the line pivots: $L_c \le p$ exactly while it stays outside the open disk $\{p < 1\}$ (green), that is for $|c| \le \sqrt3/2$, the interval between the red and blue bounds of the figure.
 
 > [!remark]- Connections
-> - The same one-step pattern for complements: [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t3|Technique 3]].
+> - The same one-step pattern for complements: [[§2 Quotient Spaces and Complements#^lem-2-3|§2.3]]; as a technique: [[Functional Analysis Problem-Solving Techniques#^rem-t3|Technique 3]].
 
 > [!remark] Remark: On the Choice of $L(x_0)$
 > Taking a supremum does not interfere with linearity. The supremum is not used to define a function; it produces a single real number $c$, which is then assigned as the value $L(x_0)$. Linearity is imposed afterwards by the formula $L(a x_0 + y) = a c + \ell(y)$. Any number in the interval (3) would do; the supremum is merely a convenient way of exhibiting one.
@@ -195,7 +195,7 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 ^thm-6-2
 
 > [!remark]- Connections
-> - Also used for complements, [[§2 Quotient Spaces and Complements#^prop-2-3|§2.3]], and for orthonormal bases, [[§28 Existence of Orthonormal Bases and Separability#^thm-28-1|§28.1]]; the pattern: [[Functional Analysis Problem-Solving Techniques#^rem-t3|Technique 3]].
+> - Also used for complements, [[§2 Quotient Spaces and Complements#^prop-2-4|§2.4]], and for orthonormal bases, [[§28 Existence of Orthonormal Bases and Separability#^thm-28-1|§28.1]]; the pattern: [[Functional Analysis Problem-Solving Techniques#^rem-t3|Technique 3]].
 
 Zorn's lemma is equivalent to the axiom of choice and is taken as an axiom; no proof is given. The partial-order argument was not carried out in lecture; it is written out here.
 

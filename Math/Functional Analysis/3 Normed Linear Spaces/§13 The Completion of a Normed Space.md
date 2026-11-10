@@ -173,7 +173,7 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 
 The construction by equivalence classes is abstract, but in practice the completion of a concrete space can almost always be written down as a concrete space. The following proposition is the tool: if the space is already sitting densely inside something complete, that something *is* the completion.
 
-> [!theorem] Proposition §13.2: Identifying a Completion
+> [!theorem] Proposition §13.3: Identifying a Completion
 > Let $(X, \|\cdot\|_X)$ be a normed linear space, $(Z, \|\cdot\|_Z)$ a Banach space, and $J : X \to Z$ a linear map with $\|Jx\|_Z = \|x\|_X$ for all $x \in X$, such that $J(X)$ is dense in $Z$. Then
 >
 > $$
@@ -182,7 +182,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > is an isometric isomorphism of $\overline{X}$ onto $Z$ (a linear bijection with $\|\Phi(\xi)\|_Z = \|\xi\|$ for all $\xi \in \overline{X}$), and it sends the class of the constant sequence $(x, x, \ldots)$ to $Jx$. In particular, if $X \subset Z$ is a dense linear subspace carrying the restricted norm ($J$ the inclusion), then $\overline{X}$ is isometrically isomorphic to $Z$ by an isomorphism that is the identity on $X$.
 
-^prop-13-2
+^prop-13-3
 
 > [!proof]+ Proof
 > (Not covered in lecture.) *The limit exists.* If $\{x_n\}$ is Cauchy in $X$, then $\|Jx_n - Jx_m\|_Z = \|J(x_n - x_m)\|_Z = \|x_n - x_m\|_X$, so $\{Jx_n\}$ is Cauchy in $Z$, and it converges because $Z$ is complete.
@@ -203,32 +203,32 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > Finally $\Phi([(x, x, \ldots)]) = \lim_n Jx = Jx$.
 
-^pf-13-2
+^pf-13-3
 
 *Uses:* [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]]
 
 > [!remark]- Connections
-> - Used for concrete completions: [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]] ($C^1$), [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]] ($L^p$).
+> - Used for concrete completions: [[§13 The Completion of a Normed Space#^prop-13-5|§13.5]] ($C^1$), [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]] ($L^p$).
 
 > [!remark] Remark
 > The embedding form is needed in practice: an element of $L^p[a,b]$ is a class of functions equal almost everywhere, so $C[a,b]$ is not literally a subset of $L^p[a,b]$; it sits inside via $f \mapsto [f]$. The proposition is the precise meaning of “$Z$ *is* the completion of $X$”: the abstract $\overline{X}$ and the concrete $Z$ are the same Banach space, with $X$ corresponding to $J(X)$.
 
 ^rem-13-4
 
-> [!theorem] Corollary §13.3: Uniqueness of the Completion
+> [!theorem] Corollary §13.4: Uniqueness of the Completion
 > Let $X$ be a normed linear space. If $Z_1$ and $Z_2$ are Banach spaces each containing $X$ as a dense subspace with the same norm, then $Z_1$ and $Z_2$ are isometrically isomorphic by a map fixing $X$. In this sense the completion of $X$ is unique.
 
-^cor-13-3
+^cor-13-4
 
 > [!proof]+ Proof
-> (Stated in lecture without proof; the proof is not from lecture.) Both are isometrically isomorphic to $\overline{X}$ by Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]]; compose one isomorphism with the inverse of the other (Lemma [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]).
+> (Stated in lecture without proof; the proof is not from lecture.) Both are isometrically isomorphic to $\overline{X}$ by Proposition [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]]; compose one isomorphism with the inverse of the other (Lemma [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]).
 
-^pf-13-3
+^pf-13-4
 
-*Uses:* [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
+*Uses:* [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
 
 > [!remark] Remark: How Do We Know We Have Not Added Too Much?
-> Corollary [[§13 The Completion of a Normed Space#^cor-13-3|§13.3]] answers this: there is no freedom. The construction adds only limits of Cauchy sequences in $X$ and identifies two sequences whenever they head for the same place, so nothing extra can appear.
+> Corollary [[§13 The Completion of a Normed Space#^cor-13-4|§13.4]] answers this: there is no freedom. The construction adds only limits of Cauchy sequences in $X$ and identifies two sequences whenever they head for the same place, so nothing extra can appear.
 >
 > A larger complete space containing $X$ need not be the completion (Examples [[§13 The Completion of a Normed Space#^ex-13-1|§13.1]] and [[§13 The Completion of a Normed Space#^ex-13-2|§13.2]] below). The condition that fails is density.
 >
@@ -251,7 +251,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 > [!example] Example §13.2: $\mathbb{R}^2$ is Not the Completion of $\mathbb{R}$
 > $\mathbb{R}$, embedded in $\mathbb{R}^2$ as the axis $\{(x, 0)\}$, lies in the complete space $\mathbb{R}^2$, and $\mathbb{R}^2$ is not its completion.
 >
-> *(Justification filled in.)* $\mathbb{R}^2$ with the Euclidean norm is complete by the coordinatewise argument of Example [[§13 The Completion of a Normed Space#^ex-13-1|§13.1]](1), and $x \mapsto (x, 0)$ preserves distances. But $\mathbb{R}$ is not dense in $\mathbb{R}^2$: $\|(x, 0) - (0, 1)\| = \sqrt{x^2 + 1} \ge 1$ for every $x$, so $(0, 1)$ is not a limit of points of the axis. The completion of $\mathbb{R}$ is $\mathbb{R}$ itself: $\mathbb{R}$ is complete and dense in itself, so Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]] applies with $Z = \mathbb{R}$ and $J$ the identity.
+> *(Justification filled in.)* $\mathbb{R}^2$ with the Euclidean norm is complete by the coordinatewise argument of Example [[§13 The Completion of a Normed Space#^ex-13-1|§13.1]](1), and $x \mapsto (x, 0)$ preserves distances. But $\mathbb{R}$ is not dense in $\mathbb{R}^2$: $\|(x, 0) - (0, 1)\| = \sqrt{x^2 + 1} \ge 1$ for every $x$, so $(0, 1)$ is not a limit of points of the axis. The completion of $\mathbb{R}$ is $\mathbb{R}$ itself: $\mathbb{R}$ is complete and dense in itself, so Proposition [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]] applies with $Z = \mathbb{R}$ and $J$ the identity.
 
 ^ex-13-2
 
@@ -265,7 +265,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > *(Justification filled in.)*
 >
-> 1. *$\bigl(C[a,b], \|\cdot\|_\infty\bigr)$ is its own completion.* It is a Banach space and is dense in itself, so Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]] with $Z = C[a,b]$ and $J$ the identity identifies its completion with $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$.
+> 1. *$\bigl(C[a,b], \|\cdot\|_\infty\bigr)$ is its own completion.* It is a Banach space and is dense in itself, so Proposition [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]] with $Z = C[a,b]$ and $J$ the identity identifies its completion with $\bigl(C[a,b], \|\cdot\|_\infty\bigr)$.
 > 2. *The inclusion into $L^1[a,b]$ does not preserve the norm.* For $n \ge 1$ let $f_n(t) = \max\{0,\, 1 - n(t - a)/(b - a)\}$, a continuous tent with $f_n(a) = 1$, supported in $[a, a + (b-a)/n]$. Then $\|f_n\|_\infty = 1$ while $\|f_n\|_{L^1} = \int_a^b f_n = (b - a)/(2n) \to 0$. If $L^1[a,b]$ were the completion, the identification would restrict on $C[a,b]$ to $f \mapsto [f]$ and be isometric, i.e. $\|f\|_{L^1} = \|f\|_\infty$ for every $f \in C[a,b]$; the tents $f_n$ contradict this.
 
 ^ex-13-3
@@ -289,12 +289,12 @@ The construction by equivalence classes is abstract, but in practice the complet
 
 ^ex-13-4
 
-> [!theorem] Proposition §13.4: $(C^2[a,b], \|\cdot\|_X)$ is Not Complete
+> [!theorem] Proposition §13.5: $(C^2[a,b], \|\cdot\|_X)$ is Not Complete
 > With $\|f\|_X = \max |f| + \max |f'|$, the space $X = C^2[a,b]$ is not complete, and its completion is $C^1[a,b]$ with the same norm.
 >
 > *Source: HW3, Problem 2*
 
-^prop-13-4
+^prop-13-5
 
 > [!proof]+ Proof
 > (HW3, Problem 2.) Throughout, $C^k([a,b])$ ($k = 1, 2$) denotes the functions $f : [a,b] \to \mathbb{F}$ that are $k$ times differentiable on $[a,b]$ (one-sided at the endpoints) with $f^{(k)}$ continuous, and $\|g\|_\infty = \max_{[a,b]} |g|$ for $g \in C([a,b])$; $(C([a,b]), \|\cdot\|_\infty)$ is a Banach space (Theorem [[§12 Completeness#^thm-12-1|§12.1]]). Write $\|f\| = \|f\|_X = \|f\|_\infty + \|f'\|_\infty$. For complex-valued functions, differentiation and integration act on real and imaginary parts, so the fundamental theorem of calculus holds, and $\bigl|\int_\alpha^\beta h\bigr| \leq \int_\alpha^\beta |h|$ for continuous $h$. We show that $(X, \|\cdot\|)$ is a normed linear space, that it is *not* complete, and that its completion is $C^1([a,b])$ with the same norm.
@@ -363,10 +363,10 @@ The construction by equivalence classes is abstract, but in practice the complet
 >
 > *$X$ is not complete.* By Part 3 there are $q_n \in X$ with $\|q_n - \varphi\| \to 0$. The sequence $\{q_n\}$ is Cauchy in $X$, since $\|q_n - q_m\| \leq \|q_n - \varphi\| + \|\varphi - q_m\|$. If it converged in $X$ to some $h \in X$, then, as $X$ carries the norm of $Z$, it would converge in $Z$ to both $h$ and $\varphi$. Limits in a metric space are unique, so $\varphi = h \in X$, contradicting Part 4. Hence $(X, \|\cdot\|)$ is not complete.
 >
-> *The completion.* The inclusion $J : X \to Z$ is linear and norm-preserving, $J(X) = X$ is dense in $Z$ by Part 3, and $Z$ is a Banach space by Part 2. By Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], the completion of $(X, \|\cdot\|)$ is
+> *The completion.* The inclusion $J : X \to Z$ is linear and norm-preserving, $J(X) = X$ is dense in $Z$ by Part 3, and $Z$ is a Banach space by Part 2. By Proposition [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]], the completion of $(X, \|\cdot\|)$ is
 >
 > $$\Bigl( C^1([a,b]),\ \|f\| = \max_{t \in [a,b]} |f(t)| + \max_{t \in [a,b]} |f'(t)| \Bigr).$$
 
-^pf-13-4
+^pf-13-5
 
-*Uses:* [[§12 Completeness#^thm-12-1|§12.1]], [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[Fundamental Theorem of Calculus|451 Fundamental Theorem of Calculus]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27 (Weierstrass approximation)]]
+*Uses:* [[§12 Completeness#^thm-12-1|§12.1]], [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[Fundamental Theorem of Calculus|451 Fundamental Theorem of Calculus]], [[§33 Properties of the Riemann Integral#^thm-33-4|451 §33.4]], [[§27 Weierstrass's Approximation Theorem (Not Covered)|451 §27 (Weierstrass approximation)]]

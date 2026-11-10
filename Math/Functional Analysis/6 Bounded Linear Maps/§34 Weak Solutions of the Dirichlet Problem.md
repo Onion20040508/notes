@@ -79,11 +79,11 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 > - The identity in the proof with the boundary term kept is [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-2|Green's first identity, 452 §28.2]].
 
 > [!remark] Remark
-> Two points. Only $v$ has to vanish on the boundary; $\nabla u$ need not, and indeed for $u$ in the [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|larger class below]], $\nabla u$ is only in $L^2$ and has no boundary values at all. And $u$ need not be $C_c^2$: $C^2$ up to the boundary is enough to integrate by parts.
+> Two points. Only $v$ has to vanish on the boundary; $\nabla u$ need not, and indeed for $u$ in the [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|larger class below]], $\nabla u$ is only in $L^2$ and has no boundary values at all. And $u$ need not be $C_c^2$: $C^2$ up to the boundary is enough to integrate by parts.
 
 ^rem-34-3
 
-> [!definition] Definition §34.2: Weak Solution
+> [!definition] Definition §34.3: Weak Solution
 > Let $f \in L^2(\Omega)$ ([[§22 Definition and Examples#^ex-22-3|Ex. §22.3]]). A function $u \in H^1_0(\Omega)$ ([[§33 Sobolev Spaces and Weak Derivatives#^def-33-9|Def. §33.9]]) is a **weak solution** of $(D)$ if
 >
 > $$
@@ -92,7 +92,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 >
 > where $\nabla u$, $\nabla v$ are [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|weak gradients]].
 
-^def-34-2
+^def-34-3
 
 > [!remark] Remark: Why This is the Right Definition
 > The boundary condition $u = 0$ is [[§33 Sobolev Spaces and Weak Derivatives#^rem-33-8|built into the space]] $H^1_0(\Omega)$, and the equation is the identity of Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-1|§34.1]], which makes sense as soon as $u, v \in H^1_0$ and $f \in L^2$, because only first derivatives in $L^2$ appear. A strong (classical) solution is a weak solution; a weak solution need not be strong, and showing that it is (for smooth $f$) is the regularity theory of PDE. The only difference between the two notions is the class of functions in which a solution is sought.
@@ -108,7 +108,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 > \int_\Omega \nabla u \cdot \nabla v\, dx = \int_\Omega f\, v\, dx
 > $$
 >
-> holds for all $v \in C_c^\infty(\Omega)$ (for instance, for all $v \in C_c^2(\Omega)$, as in Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-1|§34.1]]), then it holds for all $v \in H^1_0(\Omega)$, i.e. $u$ is a weak solution of $(D)$ (Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|§34.2]]).
+> holds for all $v \in C_c^\infty(\Omega)$ (for instance, for all $v \in C_c^2(\Omega)$, as in Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-1|§34.1]]), then it holds for all $v \in H^1_0(\Omega)$, i.e. $u$ is a weak solution of $(D)$ (Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|§34.3]]).
 
 ^lem-34-2
 
@@ -137,7 +137,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 > (u, v)_{H^1_0} = \int_\Omega u(x)\, v(x)\, dx + \int_\Omega \nabla u(x) \cdot \nabla v(x)\, dx,
 > $$
 >
-> is a [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-7|§33.7]]). Write $\|u\|_{H^1_0}^2 = \|u\|_{L^2}^2 + \|\nabla u\|_{L^2}^2$.
+> is a [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-9|§33.9]]). Write $\|u\|_{H^1_0}^2 = \|u\|_{L^2}^2 + \|\nabla u\|_{L^2}^2$.
 >
 > **Step 2: the form is bilinear and bounded.** Let $B(u, v) = \int_\Omega \nabla u(x) \cdot \nabla v(x)\, dx$. It is bilinear, and
 >
@@ -153,7 +153,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 > \int_\Omega |\nabla u|^2\, dx \ge \alpha \Bigl( \int_\Omega |u|^2\, dx + \int_\Omega |\nabla u|^2\, dx \Bigr) .
 > $$
 >
-> By the Poincaré inequality on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|§33.9]]), $\int_\Omega |u|^2 \le C_0 \int_\Omega |\nabla u|^2$ for all $u \in H^1_0(\Omega)$, with $C_0 = C^2$. Hence
+> By the Poincaré inequality on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-12|§33.12]]), $\int_\Omega |u|^2 \le C_0 \int_\Omega |\nabla u|^2$ for all $u \in H^1_0(\Omega)$, with $C_0 = C^2$. Hence
 >
 > $$
 > \|u\|_{H^1_0}^2 \le C_0 \int_\Omega |\nabla u|^2\, dx + \int_\Omega |\nabla u|^2\, dx = (C_0 + 1)\, B(u, u),
@@ -173,7 +173,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 
 ^pf-34-3
 
-*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|Def. §34.2]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-7|§33.7]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|§33.9]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]]
+*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|Def. §34.3]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-9|§33.9]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-12|§33.12]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]]
 
 > [!remark]- Connections
 > - Used in Electromagnetism for the existence of the Dirichlet Green function of a bounded region: [[§C7.3 Green Functions for Poisson’s Equation#^rem-c7-3-1|EM ★ Remark: Existence of the Dirichlet Green function]]; the symmetric form $B$ is the Dirichlet energy of [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-3|Dirichlet's principle, EM Theorem §C6.4.3]].
@@ -193,7 +193,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 
 The same method works for a whole class of equations, the *elliptic* ones, in which the Laplacian $\Delta u = \operatorname{div}(\nabla u)$ is replaced by $\operatorname{div}(A(x)\nabla u)$ for a matrix of coefficients $A(x)$. For the Laplacian $A$ is the identity; in general $A$ is required to be positive definite, with a positive lower bound. The set-up runs parallel to the [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|Dirichlet problem]] above.
 
-> [!definition] Definition §34.3: Uniformly Elliptic Coefficient Matrix
+> [!definition] Definition §34.4: Uniformly Elliptic Coefficient Matrix
 > Let $\Omega \subset \mathbb{R}^n$ be a bounded domain. An $n \times n$ real matrix $A(x) = (a_{ij}(x))$ of bounded measurable functions on $\Omega$ is **uniformly elliptic** (**uniformly positive definite**) if there are constants $\alpha, \Lambda > 0$ with
 >
 > $$
@@ -202,10 +202,10 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 >
 > $\alpha$ is the **ellipticity constant**.
 
-^def-34-3
+^def-34-4
 
-> [!definition] Definition §34.4: The Elliptic Dirichlet Problem
-> Let $\Omega \subset \mathbb{R}^n$ be a bounded domain, $A$ a [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|uniformly elliptic]] matrix on $\Omega$ ([[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|Definition §34.3]]) and $f$ a function on $\Omega$. The **Dirichlet problem** for the elliptic operator $u \mapsto -\operatorname{div}(A\nabla u)$ is
+> [!definition] Definition §34.5: The Elliptic Dirichlet Problem
+> Let $\Omega \subset \mathbb{R}^n$ be a bounded domain, $A$ a [[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|uniformly elliptic]] matrix on $\Omega$ ([[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|Definition §34.4]]) and $f$ a function on $\Omega$. The **Dirichlet problem** for the elliptic operator $u \mapsto -\operatorname{div}(A\nabla u)$ is
 >
 > $$
 > (E) \qquad \begin{cases} -\operatorname{div}\bigl(A(x)\nabla u(x)\bigr) = f(x), & x \in \Omega, \\ \phantom{-\operatorname{div}\bigl(A(x)\nabla} u(x) = 0, & x \in \partial\Omega, \end{cases} \qquad \operatorname{div}(A\nabla u) = \sum_{i=1}^n \partial_{x_i}\Bigl( \sum_{j=1}^n a_{ij}(x)\, \partial_{x_j} u \Bigr).
@@ -213,7 +213,7 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 >
 > For $A = I$ it is the problem $(D)$ of [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|Definition §34.1]]. When the $a_{ij}$ are in $C^1(\overline{\Omega})$, a **classical solution** is a $u \in C^2(\overline{\Omega})$ satisfying both equations pointwise.
 
-^def-34-4
+^def-34-5
 
 > [!remark] Remark: Where the Elliptic Equation Comes From
 > *(Not from lecture.)* Heat flows from hot to cold. In a homogeneous, isotropic material the heat flux is $\vec q = -\mu\nabla u$ (Fourier's law), and at equilibrium the heat produced in any region flows out through its boundary, $\operatorname{div}\vec q = f$; this is $-\mu\Delta u = f$, the equation of the remark [[§34 Weak Solutions of the Dirichlet Problem#^rem-34-1|Where the Equation Comes From]] above. In an inhomogeneous or anisotropic material — a composite, a crystal, layered rock — the conductivity depends on the position and on the direction, and Fourier's law becomes $\vec q = -A(x)\nabla u$ with a *conductivity matrix* $A(x)$. Equilibrium is again $\operatorname{div}\vec q = f$, which is $(E)$. Uniform ellipticity says that heat never flows uphill: $\vec q \cdot \nabla u = -(A\nabla u)\cdot\nabla u \le -\alpha |\nabla u|^2$, so the flux always has a component towards lower temperature, and the bound $\Lambda$ says the conductivity is finite.
@@ -238,21 +238,21 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 
 ^pf-34-4
 
-*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|Def. §34.4]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]]
+*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|Def. §34.5]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]]
 
-> [!definition] Definition §34.5: Weak Solution of $(E)$
+> [!definition] Definition §34.7: Weak Solution of $(E)$
 > Let $f \in L^2(\Omega)$. A function $u \in H^1_0(\Omega)$ is a **weak solution** of $(E)$ if
 >
 > $$
 > \int_\Omega \bigl(A(x)\nabla u(x)\bigr) \cdot \nabla v(x)\, dx = \int_\Omega f(x)\, v(x)\, dx \qquad \text{for all } v \in H^1_0(\Omega),
 > $$
 >
-> where $\nabla u$, $\nabla v$ are [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|weak gradients]]. For $A = I$ this is [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|Definition §34.2]].
+> where $\nabla u$, $\nabla v$ are [[§33 Sobolev Spaces and Weak Derivatives#^def-33-6|weak gradients]]. For $A = I$ this is [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|Definition §34.3]].
 
-^def-34-5
+^def-34-7
 
 > [!theorem] Theorem §34.5: General Elliptic Equations
-> Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $A$ [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|uniformly elliptic]] on $\Omega$ ([[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|Definition §34.3]]). For every $f \in L^2(\Omega)$ the problem $(E)$ has a unique [[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|weak solution]] $u \in H^1_0(\Omega)$ ([[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|Definition §34.5]]). For $A = I$ this is Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-3|§34.3]].
+> Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $A$ [[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|uniformly elliptic]] on $\Omega$ ([[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|Definition §34.4]]). For every $f \in L^2(\Omega)$ the problem $(E)$ has a unique [[§34 Weak Solutions of the Dirichlet Problem#^def-34-7|weak solution]] $u \in H^1_0(\Omega)$ ([[§34 Weak Solutions of the Dirichlet Problem#^def-34-7|Definition §34.7]]). For $A = I$ this is Theorem [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-3|§34.3]].
 
 ^thm-34-5
 
@@ -261,4 +261,4 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 
 ^pf-34-5
 
-*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|Def. §34.3]], [[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|Def. §34.5]], [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-4|§34.4]], [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-3|§34.3]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-7|§33.7]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|§33.9]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]]
+*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|Def. §34.4]], [[§34 Weak Solutions of the Dirichlet Problem#^def-34-7|Def. §34.7]], [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-4|§34.4]], [[§34 Weak Solutions of the Dirichlet Problem#^thm-34-3|§34.3]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-9|§33.9]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-12|§33.12]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]]

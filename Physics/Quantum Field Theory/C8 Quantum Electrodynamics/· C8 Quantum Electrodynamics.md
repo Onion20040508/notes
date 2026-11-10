@@ -22,7 +22,7 @@ C8 follows the lecture and the user's notes (Parts A, B, C). Yu builds QED the s
 | §C8.2 | slide 7 | §8.1, (8.2)–(8.9) | global and local U(1), $A_\mu \to A_\mu - \frac1e\partial_\mu\theta$, covariance of $D_\mu\psi$ | §4.1, (4.6) |
 | §C8.3 | slides 8–9, 12–13 | §4.4, (4.184)–(4.193), (4.228)–(4.232), (4.246)–(4.248); §6.4.4, (6.248)–(6.253) | massless polarization basis and weighted completeness; Feynman-gauge expansion; $[b, b^\dagger] \propto -g$; negative-norm temporal state; photon Feynman propagator | §4.8, (4.130)–(4.132), p. 124 |
 | §C8.4 | slides 14–15, 19 | §8.1, rules 1–9; §8.4.3, (8.244) | QED Feynman rules, vertex $-iQ_fe\gamma^\mu$ | §4.8, p. 123, (4.133) |
-| §C8.5 | slides 24–29 | §8.4.3, (8.238)–(8.278), (8.286)–(8.287) | Coulomb potential (his Fourier transform (8.259)–(8.263) is not reproduced: the lecture takes the Yukawa result at $m_\phi = 0$); the absolute sign from contractions; particle–antiparticle | §4.8, pp. 125–126, (4.133)–(4.136) |
+| §C8.5 | slides 24–29 | §8.4.3, (8.238)–(8.278), (8.286)–(8.287) | Coulomb potential (as the Yukawa result at $m_\phi = 0$); the absolute sign from contractions; particle–antiparticle | §4.8, pp. 125–126, (4.133)–(4.136) |
 
 ## Sections
 - [[§C8.1 The QED Lagrangian and the Covariant Derivative]] — 513 notes Lecture 18 update §18.1–§18.2; PHY 513 Lecture 18, slides 5–6; PS §4.1, §4.8; Yu §8.1

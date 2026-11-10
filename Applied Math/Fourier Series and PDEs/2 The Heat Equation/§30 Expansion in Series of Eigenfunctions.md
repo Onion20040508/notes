@@ -127,7 +127,7 @@ $$
 *Powers omits the proof. For $s = p = 1$, $q = 0$ the theorem contains the convergence of Fourier sine and cosine series, [[§12 Convergence of Fourier Series#^thm-12-1|Theorem §12.1]], proved in [[§16★ Proof of Convergence#^thm-16-4|Theorem §16.4]] and [[§16★ Proof of Convergence#^cor-16-5|Corollary §16.5]]; the general case is not proved in the vault.*
 
 > [!remark]- Connections
-> - The mean-square counterpart: the normalized eigenfunctions (remark below) form an orthonormal basis of the weighted $L^2$ space in the sense of [[§27 Orthonormal Sets and Bases#^def-27-4|556 Def. §27.4]], characterized by Parseval's equality in [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]]; the case $\phi'' + \lambda^2\phi = 0$ with periodic conditions is the Fourier basis, [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]].
+> - The mean-square counterpart: the normalized eigenfunctions (remark below) form an orthonormal basis of the weighted $L^2$ space in the sense of [[§27 Orthonormal Sets and Bases#^def-27-5|556 Def. §27.5]], characterized by Parseval's equality in [[§27 Orthonormal Sets and Bases#^thm-27-8|556 Thm. §27.8]]; the case $\phi'' + \lambda^2\phi = 0$ with periodic conditions is the Fourier basis, [[§27 Orthonormal Sets and Bases#^thm-27-11|556 Thm. §27.11]].
 > - The uniform-convergence clause has the form of the Weierstrass M-test, [[§25 More on Uniform Convergence#^thm-25-3|451 Thm. §25.3]], for the series of normalized eigenfunctions, which are uniformly bounded for a regular problem.
 > - Used in Electromagnetism: expanding boundary potentials in separated eigenfunctions — [[§C6.2 Separation in Cartesian and Spherical Coordinates#^thm-c6-2-1|EM Theorem §C6.2.1]].
 

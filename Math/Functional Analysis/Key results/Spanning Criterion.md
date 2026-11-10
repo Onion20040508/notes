@@ -15,7 +15,7 @@ tags: [functional-analysis, hub]
 - [[§11 Normed Linear Spaces#^def-11-7|Definition §11.7: Closure]]
 - [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|Proposition §26.2: Bounded Means Continuous]]
 - [[§36 Duality in Normed Spaces#^def-36-1|Definition §36.1: Annihilator]]
-- [[§36 Duality in Normed Spaces#^thm-36-8|Theorem §36.8: Distance to a Subspace]]
+- [[§36 Duality in Normed Spaces#^thm-36-10|Theorem §36.10: Distance to a Subspace]]
 
 ## Used in (Functional Analysis)
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-2|Corollary §37.2: Two Forms of the Spanning Criterion]]

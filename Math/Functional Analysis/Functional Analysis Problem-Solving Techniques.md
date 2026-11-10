@@ -32,8 +32,8 @@ Any operation on $X/Y$ defined through representatives must be shown independent
 ^rem-t2
 
 > [!example] Example T2: Applications (HW1)
-> - **Unique decomposition** for a complement $W$ of $Y$ (Lemma [[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]]).
-> - **Injectivity of $M : X \to X/Y \oplus Y$** and of $W \to X/Y$, $w \mapsto [w]$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]], Corollary [[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]]).
+> - **Unique decomposition** for a complement $W$ of $Y$ (Lemma [[§2 Quotient Spaces and Complements#^lem-2-6|§2.6]]).
+> - **Injectivity of $M : X \to X/Y \oplus Y$** and of $W \to X/Y$, $w \mapsto [w]$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-7|§2.7]], Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]]).
 
 ^ex-t2
 
@@ -52,7 +52,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 > [!example] Example T3: Applications
 > - **Hahn–Banach** (lecture): objects are pairs $(Z, \ell_Z)$ with $\ell_Z \le p$; one-step lemma is Lemma [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1|§6.1]].
-> - **Existence of a complement** (HW1): objects are subspaces $W$ with $W \cap Y = \{0\}$; one-step lemma is Lemma [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]].
+> - **Existence of a complement** (HW1): objects are subspaces $W$ with $W \cap Y = \{0\}$; one-step lemma is Lemma [[§2 Quotient Spaces and Complements#^lem-2-3|§2.3]].
 > - **Existence of an orthonormal basis** (Lecture 9, Theorem [[§28 Existence of Orthonormal Bases and Separability#^thm-28-1|§28.1]]): objects are orthonormal sets; the one-step move adds $x/\|x\|$ for a nonzero $x$ orthogonal to all of them.
 
 ^ex-t3
@@ -65,7 +65,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 ^rem-t4
 
 > [!example] Example T4: Application (HW1)
-> Linearity of $M(x) = ([w], y)$ in Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]. The same device proves linearity of any projection onto a summand of a direct sum.
+> Linearity of $M(x) = ([w], y)$ in Theorem [[§2 Quotient Spaces and Complements#^thm-2-7|§2.7]]. The same device proves linearity of any projection onto a summand of a direct sum.
 
 ^ex-t4
 
@@ -140,13 +140,13 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > - (ii) show $J(X)$ is dense in $Z$;
 > - (iii) show $J(X) \ne Z$ by exhibiting $z \in Z \setminus J(X)$.
 >
-> Then $\overline{X} = Z$ (Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]]), and $X$ is not complete, because a sequence in $X$ whose image converges to $z$ is Cauchy with no limit in $X$. When a proof without the ambient $Z$ is wanted, write the Cauchy sequence down explicitly and show that any limit in $X$ would have to violate the defining property of $X$ (continuity, differentiability, …). Before starting, check the norm, not only the set: the same set may be complete under one norm and not under another.
+> Then $\overline{X} = Z$ (Proposition [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]]), and $X$ is not complete, because a sequence in $X$ whose image converges to $z$ is Cauchy with no limit in $X$. When a proof without the ambient $Z$ is wanted, write the Cauchy sequence down explicitly and show that any limit in $X$ would have to violate the defining property of $X$ (continuity, differentiability, …). Before starting, check the norm, not only the set: the same set may be complete under one norm and not under another.
 
 ^rem-t9
 
 > [!example] Example T9: Applications (HW3)
 > - **$C[a,b]$ in the $L^p$ norm** (P1, Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]]): $Z = L^p[a,b]$; witness the step function, approached by ramps.
-> - **$C^2[a,b]$ in the norm $\max|f| + \max|f'|$** (P2, Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]): $Z = C^1[a,b]$; density by approximating $f'$ uniformly and integrating; witness $|x - c|^{3/2}$.
+> - **$C^2[a,b]$ in the norm $\max|f| + \max|f'|$** (P2, Proposition [[§13 The Completion of a Normed Space#^prop-13-5|§13.5]]): $Z = C^1[a,b]$; density by approximating $f'$ uniformly and integrating; witness $|x - c|^{3/2}$.
 > - **Contrast**: $C[a,b]$ in the sup norm is already complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]), and so is $C^2[a,b]$ in the full $C^2$ norm.
 
 ^ex-t9
@@ -281,10 +281,10 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 ^rem-t19
 
 > [!example] Example T19: Applications (Lectures 11–18)
-> - Poincaré on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|§33.9]]), from [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-8|Poincaré]] on $C_c^\infty$.
+> - Poincaré on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-12|§33.12]]), from [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-11|Poincaré]] on $C_c^\infty$.
 > - Limits in $W^{1,p}$ satisfy integration by parts (Proposition [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-3|§33.3]]).
 > - A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], Step 3); the same fails in $\ell^\infty$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
-> - Banach–Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
+> - Banach–Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]]): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
 > - $\sin(mx) \rightharpoonup 0$ in $L^p$, $1 < p < \infty$ (Lecture 18, Example [[§43 Weak and Weak-Star Convergence#^ex-43-3|§43.3]]): test only against continuous $g$, dense in $L^{p'}$, plus a uniform bound.
 
 ^ex-t19
@@ -292,7 +292,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 ## Technique 20: Weak Formulation, Then Lax–Milgram
 
 > [!remark] Remark: Strategy
-> To solve a linear boundary value problem: multiply the equation by a [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|test function]] vanishing on the boundary, [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|integrate by parts]] to move one derivative onto the test function, and read off a [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|bilinear form]] $B(u, v)$ and a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|functional]] $\ell(v)$. Choose the [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] in which both make sense and the boundary condition is built in. Check that $B$ is [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|bounded]] and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|coercive]] (coercivity usually needs an inequality such as [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-9|Poincaré]]) and that $\ell$ is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|bounded]]; [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Lax–Milgram]] then gives a unique [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|weak solution]].
+> To solve a linear boundary value problem: multiply the equation by a [[§33 Sobolev Spaces and Weak Derivatives#^def-33-5|test function]] vanishing on the boundary, [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|integrate by parts]] to move one derivative onto the test function, and read off a [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|bilinear form]] $B(u, v)$ and a [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5|functional]] $\ell(v)$. Choose the [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert space]] in which both make sense and the boundary condition is built in. Check that $B$ is [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|bounded]] and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|coercive]] (coercivity usually needs an inequality such as [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-12|Poincaré]]) and that $\ell$ is [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|bounded]]; [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Lax–Milgram]] then gives a unique [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|weak solution]].
 
 ^rem-t20
 
@@ -323,7 +323,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 > [!example] Example T22: Applications (Lectures 13–14)
 > - $\|y\| = \max_{\|\ell\| \le 1} |\ell(y)|$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]): $\ell_0(c\, y_0) = c\, \|y_0\|$ on $\operatorname{span}\{y_0\}$.
-> - The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]): $\ell(c\, z_0 + y) = c\, m$ on $\operatorname{span}\{z_0, Y\}$.
+> - The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-10|§36.10]]): $\ell(c\, z_0 + y) = c\, m$ on $\operatorname{span}\{z_0, Y\}$.
 > - $(\ell^\infty)' \neq \ell^1$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]): $\lambda(x) = \lim x_j$ on the convergent sequences.
 > - Distance from a functional to $Y^\perp$ (Lecture 14, Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]]): extend $\ell|_Y$ with the same norm.
 > - Closed subspaces of reflexive spaces (Lecture 14, Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|§37.8]], Step 2): extending makes the restriction map $X' \to Y'$ onto.
@@ -389,8 +389,8 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > [!example] Example T27: Applications (Lectures 16–17)
 > - The closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]).
 > - $C^1[a,b]$ is not complete in the maximum norm (Example [[§41 The Open Mapping Theorem and Its Consequences#^ex-41-1|§41.1]]).
-> - The uniform boundedness principle (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]): the norm $\|x\| + \sup_\alpha \|A_\alpha x\|$.
-> - The second equivalent norm theorem (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-4|§42.4]]): the identity map is closed.
+> - The uniform boundedness principle (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]): the norm $\|x\| + \sup_\alpha \|A_\alpha x\|$.
+> - The second equivalent norm theorem (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]): the identity map is closed.
 
 ^ex-t27
 
@@ -408,7 +408,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 ^rem-t28
 
 > [!example] Example T28: Application (Lecture 17)
-> The Lax equivalence theorem (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-8|§42.8]]).
+> The Lax equivalence theorem (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-9|§42.9]]).
 
 ^ex-t28
 

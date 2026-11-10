@@ -23,7 +23,7 @@ tags: [measure-theory, hub]
 
 ## Used in (Functional Analysis)
 - [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|Lemma §33.2: Integration by Parts against a Test Function]]
-- [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-8|Theorem §33.8: Poincaré Inequality]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-11|Theorem §33.11: Poincaré Inequality]]
 
 ## Connections
 - **Proof idea.** Apply [[Tonelli's Theorem]] to |f| to get a.e. integrable slices. Then apply it to f⁺ and f⁻ separately and subtract, which is legitimate because both iterated integrals are finite ([[§16 Limits and Positive Parts of Measurable Functions#^prop-16-5|§16.5]], [[§22 The General Lebesgue Integral#^thm-22-2|linearity]]).

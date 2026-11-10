@@ -18,7 +18,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 ## First order: enumerate, then filter
 
 > [!theorem] Theorem §C6c.4.1: The First-Order Matrix Elements of a Monomial
-> Let $\mathcal L_{\rm int} = -g\,M$, $M = \prod_k\phi_k^{m_k}$ a monomial in real fields without derivatives ([[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]]). Let $|i\rangle$ and $\langle f|$ hold $n_k$ particles of kind $k$ in total, with no outgoing momentum equal to an incoming one. Then
+> Let $\mathcal L_{\rm int} = -g\,M$, $M = \prod_k\phi_k^{m_k}$ a monomial in real fields without derivatives ([[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]]). Let $|i\rangle$ and $\langle f|$ hold $n_k$ particles of kind $k$ in total. The formula below is the sum of the terms in which every particle is attached to the vertex (no $\delta$-line, [[§C6c.3 Wick's Theorem between Particle States#^def-c6c-3-1|Def. §C6c.3.1]]); these are all the terms if no outgoing momentum equals an incoming one (where they coincide, as on the support of the $1 \to 1$ element, the terms with $\delta$-lines are added: [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-2|Example §C6c.4.2]], Step 2). Then
 >
 > $$
 > \langle f|i\hat T^{(1)}|i\rangle = -ig\int d^4x\,\langle f|M\bigl(\hat\phi_I(x)\bigr)|i\rangle = -ig\prod_k\frac{m_k!}{2^{\ell_k}\,\ell_k!}\,D_F^{(m_k)}(0)^{\ell_k}\;(2\pi)^4\delta^4\Bigl(\sum_ik_i - \sum_jp_j\Bigr), \qquad \ell_k = \frac{m_k - n_k}{2} ,
@@ -110,13 +110,13 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > | theory | dynamically allowed at first order | kinematically allowed |
 > |---|---|---|
 > | $\phi^4$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1\|Example §C6c.4.1]]) | $2 \to 2$, $1 \leftrightarrow 3$, $0 \leftrightarrow 4$; with a loop $1 \to 1$, $0 \leftrightarrow 2$; the bubble | $2 \to 2$; $1 \to 1$ forward only |
-> | $\Phi\phi^2$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-4\|Example §C6c.4.4]]) | $\Phi \leftrightarrow \phi\phi$, $\phi \leftrightarrow \Phi\phi$, $0 \leftrightarrow \Phi\phi\phi$; with a loop $0 \leftrightarrow \Phi$ | $\Phi \to \phi\phi$ iff $M > 2m$; $\phi\phi \to \Phi$ at $(p_1 + p_2)^2 = M^2$ |
+> | $\Phi\phi^2$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-4\|Example §C6c.4.4]]) | $\Phi \leftrightarrow \phi\phi$, $\phi \leftrightarrow \Phi\phi$, $0 \leftrightarrow \Phi\phi\phi$; with a loop $0 \leftrightarrow \Phi$ | $\Phi \to \phi\phi$ iff $M > 2m$; $\phi\phi \to \Phi$ iff $M > 2m$, at $(p_1 + p_2)^2 = M^2$ |
 > | $\phi^3$ ([[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-5\|Example §C6c.4.5]]) | $1 \leftrightarrow 2$, $0 \leftrightarrow 3$; with a loop $0 \leftrightarrow 1$ | none |
 > | Yukawa ([[§C6d.4 First Order#^ex-c6d-4-1\|§C6d.4, Example §C6d.4.1]]) | ten processes (Yu Fig. 7.1–7.2) | $\phi \to \psi\bar\psi$ and $\psi\bar\psi \to \phi$, iff $m_\phi > 2m_\psi$ |
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* first order, any polynomial interaction without derivatives, free relativistic states over $|0\rangle$ in place of the in and out states (lowest order, as [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]]); part 2 holds at every order.
 >
-> *Source: Yu §7.1.1, p. 272 ("the 10 Feynman diagrams correspond to 10 dynamically allowed processes; most of them are kinematically forbidden … when $m_\phi > 2m_\psi$, two processes are exceptions") · PHY 513, Problem Set 8, Problem 4 ("provided that $M > 2m$") · from the "What the derivation shows" of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]] (promoted 2026-11-05)*
+> *Source: Yu §7.1.1, p. 272 ("the 10 Feynman diagrams correspond to 10 dynamically allowed processes; most of them are kinematically forbidden … when $m_\phi > 2m_\psi$, two processes are exceptions") · PHY 513, Problem Set 8, Problem 4 ("provided that $M > 2m$") · from the "What the derivation shows" of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-1|Derivation §C6c.4.1]]*
 
 ^thm-c6c-4-3
 
@@ -163,9 +163,9 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > (PS (4.95)).
 >
-> **Step 3** (between the states). By [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], all four particles must be paired, and outgoing–incoming pairs vanish ($\mathbf p_1, \mathbf p_2 \notin \{\mathbf p_A, \mathbf p_B\}$):
+> **Step 3** (between the states). By [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]], all four particles must be paired, and outgoing–incoming pairs vanish ($\mathbf p_1, \mathbf p_2 \notin \{\mathbf p_A, \mathbf p_B\}$). The three kinds of term are the classes of [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]] and [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]]: the bubble with $\delta$-lines (Theorem §C6c.4.6, parts 1–2), the forward pieces (Theorem §C6c.4.6, part 2), the vertex (Theorem §C6c.5.3, part 2):
 > - the last three terms: $3D_F(0)^2\langle\mathbf p_1\mathbf p_2|\mathbf p_A\mathbf p_B\rangle = 0$ (a bubble times the "1", PS (4.96));
-> - $D_F(0)\langle\mathbf p_1\mathbf p_2|{:}\hat\phi_a\hat\phi_b{:}|\mathbf p_A\mathbf p_B\rangle$: two fields take two particles, the other two would pair with each other: $0$ (PS's four diagrams on p. 111, particles passing by) — the classes of [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]] and [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]]: the bubble with $\delta$-lines (Theorem §C6c.4.6, parts 1–2), the forward pieces (part 2), the vertex (Theorem §C6c.5.3, part 2);
+> - $D_F(0)\langle\mathbf p_1\mathbf p_2|{:}\hat\phi_a\hat\phi_b{:}|\mathbf p_A\mathbf p_B\rangle$: two fields take two particles, the other two would pair with each other: $0$ (PS's four diagrams on p. 111, particles passing by);
 > - ${:}\hat\phi_1\hat\phi_2\hat\phi_3\hat\phi_4{:}$: every field takes one particle. With $\sigma \in S_4$ giving the fields of $\mathbf p_1, \mathbf p_2, \mathbf p_A, \mathbf p_B$,
 >
 > $$
@@ -228,7 +228,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]] (part 3: [[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]]); *applies:* every order, any vertex whose legs go to particles or to lines that no symmetry of the diagram exchanges (every vertex of a tree: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]]).
 >
-> *Source: Yu §7.3, p. 292 after eq. (7.120) ("the four identical fields contracted with the initial and final particles give $4!$ equivalent contractions and a combinatorial factor $4!$, which cancels the $1/4!$ in $\mathcal L_1$; the $1/4!$ is introduced in $\mathcal L_1$ so that the vertex rule (7.120) has no extra combinatorial factor"; on the diagram the four external lines connect in $4\cdot3\cdot2\cdot1 = 4!$ ways), p. 296 ("strip the four fields $\phi$ from $\mathcal L_1 = -\lambda\phi^4/4!$, multiply by $i$ and by the $4!$ permutations of the four $\phi$") · PS §4.4, p. 93 ("This was the reason for the factor of 4! in the $\phi^4$ coupling"); §4.6, eq. (4.98) · from the statement of [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]] (promoted 2026-11-05)*
+> *Source: Yu §7.3, p. 292 after eq. (7.120) ("the four identical fields contracted with the initial and final particles give $4!$ equivalent contractions and a combinatorial factor $4!$, which cancels the $1/4!$ in $\mathcal L_1$; the $1/4!$ is introduced in $\mathcal L_1$ so that the vertex rule (7.120) has no extra combinatorial factor"; on the diagram the four external lines connect in $4\cdot3\cdot2\cdot1 = 4!$ ways), p. 296 ("strip the four fields $\phi$ from $\mathcal L_1 = -\lambda\phi^4/4!$, multiply by $i$ and by the $4!$ permutations of the four $\phi$") · PS §4.4, p. 93 ("This was the reason for the factor of 4! in the $\phi^4$ coupling"); §4.6, eq. (4.98) · from the statement of [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-1|Example §C6c.4.1]]*
 
 ^thm-c6c-4-4
 
@@ -314,7 +314,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] with $\phi^4$ ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]); *applies:* every order, free relativistic states over $|0\rangle$ as in [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]; it counts every diagram of $\langle f|\hat S|i\rangle$, before [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6|Theorem §C6c.4.6]] and [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3|Theorem §C6c.5.3]] select those of $i\mathcal M$.
 >
-> *Source: Yu §7.3, p. 293 (boxed: "the factor obtained by analysing the symmetry of the Feynman diagram always agrees with the factor left over in the $T$-matrix calculation"), p. 294 ("if one first draws the Feynman diagram and then writes the $T$-matrix element with the position-space Feynman rules, one must finally divide by the symmetry factor of the Feynman diagram") · PHY 513 Lecture 16, slide 22 ("Symmetry factor: divide by $S$") · proof: the former Step 4 of [[§C6c.6 Feynman Rules for Amplitudes#^der-c6c-6-3|Derivation §C6c.6.3]], moved here 2026-11-05*
+> *Source: Yu §7.3, p. 293 (boxed: "the factor obtained by analysing the symmetry of the Feynman diagram always agrees with the factor left over in the $T$-matrix calculation"), p. 294 ("if one first draws the Feynman diagram and then writes the $T$-matrix element with the position-space Feynman rules, one must finally divide by the symmetry factor of the Feynman diagram") · PHY 513 Lecture 16, slide 22 ("Symmetry factor: divide by $S$") · proof written here (it is what Step 4 of [[§C6c.6 Feynman Rules for Amplitudes#^der-c6c-6-3|Derivation §C6c.6.3]] cites)*
 
 ^thm-c6c-4-5
 
@@ -374,7 +374,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > [!theorem] Theorem §C6c.4.6: δ-Lines, Forward Pieces and Vacuum Bubbles Are Not Scattering
 > In the expansion of [[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3|Theorem §C6c.3.3]], with each term split into its connected pieces,
 > 1. **vacuum bubbles** (pieces without particles) factor out as $\langle0|U(T, -T)|0\rangle$ and are omitted;
-> 2. **several pieces with particles**: each conserves momentum separately; if every piece is $1 \to 1$ (a $\delta$ line, or a line with insertions passing through), the final momenta equal the initial ones and the term belongs to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$; otherwise it is a product of smaller processes; neither has the form $\delta^4(\sum k - \sum p)\times$(smooth) of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]];
+> 2. **several pieces with particles**: each conserves momentum separately; if every piece is $1 \to 1$ (a $\delta$-line, or a line with insertions passing through), the final momenta equal the initial ones and the term belongs to the $\mathbb 1$ of $\hat S = \mathbb 1 + i\hat T$; otherwise it is a product of smaller processes; neither has the form $\delta^4(\sum k - \sum p)\times$(smooth) of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]].
 >
 > Either reason suffices to omit a term; one term can be excluded by both (the figure-eight bubble beside two $\delta$-lines is a bubble and part of the $\mathbb 1$, slide 14).
 >
@@ -382,9 +382,9 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 >
 > | term | pieces | value | class |
 > |---|---|---|---|
-> | $\lambda^0$ | two $\delta$ lines | $2E_A2E_B(2\pi)^6[\delta^3(\mathbf p_A - \mathbf p_1)\delta^3(\mathbf p_B - \mathbf p_2) + (1 \leftrightarrow 2)]$ | 2: the $\mathbb 1$ |
-> | $\lambda$, $3$ full contractions | figure-eight $\times$ two $\delta$ lines | $-\frac{i\lambda}{8}D_F(0)^2\int d^4z\times(\lambda^0\text{ term})$ | 1 and 2 |
-> | $\lambda$, $6$ single contractions | loop on a passing line $\times$ a $\delta$ line, four diagrams | each $-\frac{i\lambda}{2}D_F(0)\,(2\pi)^4\delta^4(p_A - p_1)\cdot2E_B(2\pi)^3\delta^3(\mathbf p_B - \mathbf p_2)$ and permutations | 2: forward, the $\mathbb 1$ |
+> | $\lambda^0$ | two $\delta$-lines | $2E_A2E_B(2\pi)^6[\delta^3(\mathbf p_A - \mathbf p_1)\delta^3(\mathbf p_B - \mathbf p_2) + (1 \leftrightarrow 2)]$ | 2: the $\mathbb 1$ |
+> | $\lambda$, $3$ full contractions | figure-eight $\times$ two $\delta$-lines | $-\frac{i\lambda}{8}D_F(0)^2\int d^4z\times(\lambda^0\text{ term})$ | 1 and 2 |
+> | $\lambda$, $6$ single contractions | loop on a passing line $\times$ a $\delta$-line, four diagrams | each $-\frac{i\lambda}{2}D_F(0)\,(2\pi)^4\delta^4(p_A - p_1)\cdot2E_B(2\pi)^3\delta^3(\mathbf p_B - \mathbf p_2)$ and permutations | 2: forward, the $\mathbb 1$ |
 > | $\lambda$, no contraction | one vertex | $-i\lambda\,(2\pi)^4\delta^4(p_A + p_B - p_1 - p_2)$ | scattering: $i\mathcal M = -i\lambda$ ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3\|Theorem §C6c.5.3]], 2) |
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]; *applies:* any polynomial interaction, every order, with the prescription of [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]] (and its scope).
@@ -437,7 +437,7 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > | in → out | loops | $i\mathcal M$ | kinematics ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2\|Theorem §C6c.4.2]]) |
 > |---|---|---|---|
 > | $\Phi \to \phi\phi$ | $0$ | $-2i\mu$ | allowed iff $M > 2m$ (part 2) |
-> | $\phi\phi \to \Phi$ | $0$ | $-2i\mu$ | allowed for $(p_1 + p_2)^2 = M^2$ (part 3) |
+> | $\phi\phi \to \Phi$ | $0$ | $-2i\mu$ | allowed iff $M > 2m$, at $(p_1 + p_2)^2 = M^2$ (part 3) |
 > | $\phi \to \Phi\phi$, $\Phi\phi \to \phi$ | $0$ | $-2i\mu$ | forbidden, $m < M + m$ (parts 2, 3) |
 > | $0 \to \Phi\phi\phi$, $\Phi\phi\phi \to 0$ | $0$ | $-2i\mu$ | forbidden (part 1) |
 > | $0 \to \Phi$, $\Phi \to 0$ | $1$ ($\phi$ loop) | $-i\mu D_F^{(m)}(0)$ | forbidden (part 1) |

@@ -47,7 +47,7 @@ Can one relativistic particle propagate without leaving its light cone? The caus
 Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Structure and Proper Time#^rem-b1-3-2|REL Remark: Causality as a statement about cones]]); here it becomes one of the three principles of quantum field theory ([[§C1b.3 Mass Dimension, Locality and Power Counting#^rem-c1b-3-1|Remark: The three principles of quantum field theory]]). For a classical field with a source it is a theorem about the retarded Green's function, whose support is the closed forward cone ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]]).
 
 > [!remark] Remark: Causality and time-reversal symmetry
-> Many equations of motion are symmetric under $t \to -t$: whoever can predict the future can postdict the past. That is a statement about the equations relating the two cones. Causality is the prior statement that the two cones are different, and that the region outside both is unaffected; the relation between the cones is a separate matter, treated with the discrete symmetries (QFT C9, planned).
+> Many equations of motion are symmetric under $t \to -t$: whoever can predict the future can postdict the past. That is a statement about the equations relating the two cones. Causality is the prior statement that the two cones are different, and that the region outside both is unaffected; the relation between the cones is a separate matter, treated with the discrete symmetries ([[§C9.9 Time Reversal on States, Spinors and the Dirac Field|§C9.9]], [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance|§C9.13]]).
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.1 (Discussion)*
 
@@ -95,13 +95,13 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 ^def-c1a-3-1
 
 > [!theorem] Theorem §C1a.3.3: The Amplitude Is the Fourier Transform of the Phase
-> For each real $t$, $U(t, \cdot)$ is the tempered distribution on $\mathbb R^3$
+> For each real $t$, $U(t, \cdot)$ is the tempered distribution ([[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]) on $\mathbb R^3$
 >
 > $$
 > U(t, \mathbf x) = \int\frac{d^3p}{(2\pi)^3}\,e^{-iE(\mathbf p)t + i\mathbf p\cdot\mathbf x},
 > $$
 >
-> the inverse Fourier transform of the bounded function $e^{-iE(\mathbf p)t}$, acting on test functions $f$ by $U(t, \cdot)[f] = \int\frac{d^3p}{(2\pi)^3}e^{-iE(\mathbf p)t}\tilde f(-\mathbf p)$, $\tilde f(\mathbf k) = \int d^3x\,f(\mathbf x)e^{-i\mathbf k\cdot\mathbf x}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]). As $t \to 0$, $U(t, \cdot) \to \delta^3$ in $\mathcal S'(\mathbb R^3)$.
+> the inverse Fourier transform of the bounded function $e^{-iE(\mathbf p)t}$, acting on test functions $f$ by $U(t, \cdot)[f] = \int\frac{d^3p}{(2\pi)^3}e^{-iE(\mathbf p)t}\tilde f(-\mathbf p)$, $\tilde f(\mathbf k) = \int d^3x\,f(\mathbf x)e^{-i\mathbf k\cdot\mathbf x}$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]]). As $t \to 0$, $U(t, \cdot) \to \delta^3$ in $\mathcal S'(\mathbb R^3)$ (a distributional limit, [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]]).
 >
 > *Model:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]]; *applies:* any real $E(\mathbf p)$, every real $t$, exact (an identity in $\mathcal S'(\mathbb R^3)$).
 >
@@ -118,7 +118,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 >
 > In bra-ket form this is the insertion of $\int\frac{d^3p}{(2\pi)^3}|\mathbf p\rangle\langle\mathbf p| = 1$ between $e^{-i\hat Ht}$ and $|\psi\rangle$, with $\langle\mathbf x|\mathbf p\rangle = e^{i\mathbf p\cdot\mathbf x}$.
 >
-> **Step 2** (convolution). $e^{-iE(\mathbf p)t}$ is smooth and bounded, so its inverse transform $U(t, \cdot)$ exists in $\mathcal S'(\mathbb R^3)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]]), and a product of transforms is the transform of the convolution ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3, in $\mathcal S'$ with one factor in $\mathcal S$; the same rule in three dimensions). So Step 1 is $\int d^3y\,U(t, \mathbf x - \mathbf y)\psi(\mathbf y)$: $U(t, \cdot)$ is the kernel of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]. Taking $\psi \to \delta^3$ formally gives $\langle\mathbf x|e^{-iHt}|\mathbf 0\rangle$, the definition; the action on a test function $f$ is the transform moved onto $f$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]): $\int d^3x\,f(\mathbf x)e^{i\mathbf p\cdot\mathbf x} = \tilde f(-\mathbf p)$.
+> **Step 2** (convolution). $e^{-iE(\mathbf p)t}$ is smooth and bounded, so its inverse transform $U(t, \cdot)$ exists in $\mathcal S'(\mathbb R^3)$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]]), and a product of transforms is the transform of the convolution ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3, in $\mathcal S'$ with one factor in $\mathcal S$; the same rule in three dimensions). So Step 1 is $\int d^3y\,U(t, \mathbf x - \mathbf y)\psi(\mathbf y)$: $U(t, \cdot)$ is the kernel of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^def-c1a-3-1|Def. §C1a.3.1]]. Taking $\psi \to \delta^3$ formally gives $\langle\mathbf x|e^{-iHt}|\mathbf 0\rangle$, the definition; the action on a test function $f$ is the transform moved onto $f$ ([[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]]): $\int d^3x\,f(\mathbf x)e^{i\mathbf p\cdot\mathbf x} = \tilde f(-\mathbf p)$.
 >
 > **Step 3** ($t \to 0$). $|e^{-iE(\mathbf p)t}\tilde f(-\mathbf p)| \le |\tilde f(-\mathbf p)|$, integrable, and the integrand tends to $\tilde f(-\mathbf p)$; by dominated convergence ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]) $U(t, \cdot)[f] \to \int\frac{d^3p}{(2\pi)^3}\tilde f(-\mathbf p) = f(\mathbf 0)$ by Fourier inversion, which is $\delta^3[f]$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]).
 >
@@ -129,7 +129,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 
 ^der-c1a-3-3
 
-*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
+*Uses:* [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]]
 
 > [!theorem] Theorem §C1a.3.4: The Nonrelativistic Amplitude Is Nonzero Everywhere
 > For $E = \mathbf p^2/2m$ and $t \neq 0$,
@@ -168,7 +168,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 > U(z, \mathbf x) \equiv \int\frac{d^3p}{(2\pi)^3}\,e^{-iE_{\mathbf p}z + i\mathbf p\cdot\mathbf x}
 > $$
 >
-> converges absolutely and is analytic for $\operatorname{Im}z < 0$, and $U(t, \cdot) = \lim_{\varepsilon\to0^+}U(t - i\varepsilon, \cdot)$ in $\mathcal S'(\mathbb R^3)$ and, read as a distribution in $(t, \mathbf x)$, in $\mathcal S'(\mathbb R^4)$.
+> converges absolutely and is analytic for $\operatorname{Im}z < 0$, and $U(t, \cdot) = \lim_{\varepsilon\to0^+}U(t - i\varepsilon, \cdot)$ in $\mathcal S'(\mathbb R^3)$ (distributional limit, [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]]) and, read as a distribution in $(t, \mathbf x)$, in $\mathcal S'(\mathbb R^4)$.
 >
 > *Model:* [[§C1a.3 Causal Structure and the Causality of a Single Particle#^mod-c1a-3-2|Model §C1a.3.2]], with $E = E_{\mathbf p}$, $m > 0$; *applies:* exact.
 >
@@ -194,7 +194,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 
 ^der-c1a-3-5
 
-*Uses:* [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]]
+*Uses:* [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]], [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-3|Theorem §C1a.3.3]]
 
 > [!theorem] Theorem §C1a.3.6: The Relativistic Amplitude as a Radial Integral
 > For $\operatorname{Im}z < 0$ and $r > 0$,
@@ -212,7 +212,7 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 ^thm-c1a-3-6
 
 > [!derivation]- Derivation
-> **Step 1** (spherical coordinates). The integrand of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]], 1 depends on the direction of $\mathbf p$ only through $\mathbf p\cdot\mathbf x = pr\cos\theta$, $\theta$ the angle between $\mathbf p$ and $\mathbf x$. Choose the polar axis along $\mathbf x$ (a rotation of the integration variable, Jacobian $1$: [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]); $d^3p = p^2\,dp\,\sin\theta\,d\theta\,d\varphi$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]). All integrals converge absolutely for $\operatorname{Im}z < 0$ (Step 1 of Derivation §C1a.3.5), so they may be done in any order.
+> **Step 1** (spherical coordinates). The integrand of [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]] depends on the direction of $\mathbf p$ only through $\mathbf p\cdot\mathbf x = pr\cos\theta$, $\theta$ the angle between $\mathbf p$ and $\mathbf x$. Choose the polar axis along $\mathbf x$ (a rotation of the integration variable, Jacobian $1$: [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]); $d^3p = p^2\,dp\,\sin\theta\,d\theta\,d\varphi$ ([[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]]). All integrals converge absolutely for $\operatorname{Im}z < 0$ (Step 1 of Derivation §C1a.3.5), so they may be done in any order.
 >
 > **Step 2** (the angles). The $\varphi$ integral gives $2\pi$. With $u = \cos\theta$, $du = -\sin\theta\,d\theta$, $\theta: 0 \to \pi$ becomes $u: 1 \to -1$, and the sign of $du$ restores the order: $\int_0^\pi\sin\theta\,e^{ipr\cos\theta}d\theta = \int_{-1}^1e^{ipru}du = \frac{e^{ipr} - e^{-ipr}}{ipr} = \frac{2\sin pr}{pr}$. So
 >
@@ -305,7 +305,23 @@ Relativity B states the same as an axiom inside a remark ([[§B1.3 Causal Struct
 ^rem-c1a-3-5
 
 > [!abstract]- Mathematical background
-> Proved in CB; each line says what the physics above relies on.
+> Proved in CA and CB; each line says what the physics above relies on.
+>
+> The amplitude $U$ is a generalized function; the senses in which it exists, acts and converges:
+> - [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]] — tempered distribution: what $U(t, \cdot)$ is for every real $t$ and every real $E(\mathbf p)$.
+> - [[§CA.2 Generalized Functions#^def-ca-2-7|Def. §CA.2.7]] — the Fourier transform of a tempered distribution is moved onto the test function: the formula for $U(t, \cdot)[f]$.
+> - [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]] — distributional limits: the sense of $U \to \delta^3$ as $t \to 0$ and of the boundary value $t - i\varepsilon \to t$; derivatives pass through such limits, which carries $U = 2i\partial_tD_W$ to real time.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]] — the Fourier convention and inversion on $\mathcal S$: the wave-packet expansion and $\int\frac{d^3p}{(2\pi)^3}\tilde f(-\mathbf p) = f(\mathbf 0)$.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]] — the Fourier transform is defined on all of $\mathcal S'$: the bounded function $e^{-iE(\mathbf p)t}$ has an inverse transform.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — plane waves integrate to a delta function: the limit $t \to 0$.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]] — a product of transforms is the transform of a convolution: $U(t, \cdot)$ is the kernel of $e^{-i\hat Ht}$.
+> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — dominated convergence and differentiation under the integral: the limits $t \to 0$ and $\varepsilon \to 0^+$, and the derivatives of $U(z, \mathbf x)$ in $z$.
+> - [[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|Theorem §CA.6.1]] — analytic function; boundary values of analytic functions are distributions: $U(z, \cdot)$ for $\operatorname{Im}z < 0$ and its limit on the real axis.
+>
+> The integrals:
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-8|Theorem §CA.3.8]] — rotating and reflecting the integration variable, and the angular integrals: the reduction to the radial integral.
+> - [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-1|Theorem §CA.5.1]] — Gaussian integrals with complex variance: the nonrelativistic amplitude.
+> - [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-2|Theorem §CA.5.2]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|Example §CA.5.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-5-2|§CA.5, Remark: When the saddle sits on a branch cut]] — steepest descent and Laplace's method, the same phase worked for the Wightman function, and why the saddle on the cut is legitimate: the exponent $e^{-m\rho}$ and its prefactor.
 >
 > The remark "Why the future cannot be boosted into the past" uses that $SO^+(1,3)$ is connected: it is the identity component of $O(1,3)$, every element joined to $\mathbb 1$ by a path of boosts times rotations:
 > - [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|Theorem §CB.3.13]] with [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^der-cb-3-13|its derivation]] — every $\Lambda \in SO^+(1,3)$ is a boost times a rotation, and $SO^+(1,3)$ is path-connected (the four components of the group in physics form: [[§C1a.4 The Lorentz Group|§C1a.4]]); physics form: [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]].

@@ -21,7 +21,7 @@ Every linear map out of a finite-dimensional space is bounded, so on $\mathbb{R}
 
 ## Cᵐ and C∞
 
-Differentiation is the test case for boundedness. With the $C^m$ norm on the domain and the $C^{m-1}$ norm on the target it is bounded, with norm at most $1$; Proposition [[§30 Boundedness and Continuity#^prop-30-4|§30.4]] (completeness of $C^m(\overline{\Omega})$) generalizes the completeness of $C^1$ in Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]. The proposition below states the case of $C^\infty(\overline{\Omega})$ with the maximum norm on both sides, and Proposition [[§30 Boundedness and Continuity#^prop-30-6|§30.6]] the case of $\frac{d}{dt}$ on $C^1[0,1]$ (HW9, Problem 1).
+Differentiation is the test case for boundedness. With the $C^m$ norm on the domain and the $C^{m-1}$ norm on the target it is bounded, with norm at most $1$; Proposition [[§30 Boundedness and Continuity#^prop-30-4|§30.4]] (completeness of $C^m(\overline{\Omega})$) generalizes the completeness of $C^1$ in Proposition [[§13 The Completion of a Normed Space#^prop-13-5|§13.5]]. The proposition below states the case of $C^\infty(\overline{\Omega})$ with the maximum norm on both sides, and Proposition [[§30 Boundedness and Continuity#^prop-30-6|§30.6]] the case of $\frac{d}{dt}$ on $C^1[0,1]$ (HW9, Problem 1).
 
 ![[§30 Boundedness and Continuity#^ex-30-1]]
 

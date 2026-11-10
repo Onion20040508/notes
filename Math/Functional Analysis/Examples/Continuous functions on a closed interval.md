@@ -13,7 +13,7 @@ The space $C[a,b]$ of continuous functions $f : [a,b] \to \mathbb{F}$, the first
 - $C[a,b]$ sits inside $L^p[a,b]$ via $f \mapsto [f]$ ([[§13 The Completion of a Normed Space#^rem-13-4|§13]])
 - The norm decides, not the set: $L^1[a,b]$ is not the completion of $(C[a,b], \|\cdot\|_\infty)$ ([[§13 The Completion of a Normed Space#^rem-13-6|§13]])
 - $C^2[a,b]$ with a $C^1$ norm ([[§13 The Completion of a Normed Space#^ex-13-4|§13]])
-- $(C^2[a,b], \|\cdot\|_X)$ is not complete, and its completion is $C^1[a,b]$ ([[§13 The Completion of a Normed Space#^prop-13-4|§13]])
+- $(C^2[a,b], \|\cdot\|_X)$ is not complete, and its completion is $C^1[a,b]$ ([[§13 The Completion of a Normed Space#^prop-13-5|§13]])
 - $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ on $C[a,b]$ are not equivalent ([[§14 New Normed Spaces from Old#^ex-14-1|Ex. §14.1]])
 - Continuous functions are not dense in $L^\infty$ ([[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|§19]])
 - A continuous $h \ge 0$ with vanishing integral is identically $0$ ([[§19 The Function Spaces Lᵖ(Ω)#^lem-19-6|§19]])
@@ -23,6 +23,12 @@ The space $C[a,b]$ of continuous functions $f : [a,b] \to \mathbb{F}$, the first
 - In $\{f \in C[0,1] : f(0) = 0\}$ the constant $\theta = 1$ in Riesz's lemma cannot be attained ([[§20 Compactness and the Unit Ball#^prop-20-4|§20]])
 - A sharp integral inequality on $C^2[a,b]$, from the $L^2$ inner product on $C[a,b]$ ([[§25 Projection and Orthogonal Decomposition#^prop-25-10|§25]])
 - Differentiation is bounded from $C^m$ to $C^{m-1}$ ([[§30 Boundedness and Continuity#^ex-30-1|§30]])
+- $\frac{d}{dt}$ is unbounded from $C^1[0,1]$ to $C[0,1]$ in the maximum norm ([[§30 Boundedness and Continuity#^prop-30-6|§30]])
+- The functional $x \mapsto \int_0^1 f_0\,x\,dt$ on $C[0,1]$ has norm $\int_0^1 |f_0|$ ([[§31 Dual Spaces#^prop-31-5|§31]])
+- $C[0,1]$ is not reflexive: its dual is not separable ([[§37 Separable Duals and Reflexive Spaces#^ex-37-5|§37]])
+- Differentiation $C^1[0,1] \to C[0,1]$ is a closed map that is not bounded ([[§39 Solving Mx = y#^ex-39-3|§39]])
+- $C^1[a,b]$ is not complete in the maximum norm, by the equivalent norm theorem ([[§41 The Open Mapping Theorem and Its Consequences#^ex-41-1|§41]])
+- $C[0,1]$ is not complete in the $L^1$ norm, by the equivalent norm theorem ([[§41 The Open Mapping Theorem and Its Consequences#^ex-41-2|§41]])
 
 ## $C[a,b]$ with the supremum norm is a Banach space
 ![[§12 Completeness#^thm-12-1]]
@@ -40,7 +46,7 @@ The space $C[a,b]$ of continuous functions $f : [a,b] \to \mathbb{F}$, the first
 ![[§13 The Completion of a Normed Space#^ex-13-4]]
 
 ## $(C^2[a,b], \|\cdot\|_X)$ is not complete, and its completion is $C^1[a,b]$
-![[§13 The Completion of a Normed Space#^prop-13-4]]
+![[§13 The Completion of a Normed Space#^prop-13-5]]
 
 ## $\|\cdot\|_\infty$ and $\|\cdot\|_{L^1}$ on $C[a,b]$ are not equivalent
 ![[§14 New Normed Spaces from Old#^ex-14-1]]
@@ -68,3 +74,21 @@ The space $C[a,b]$ of continuous functions $f : [a,b] \to \mathbb{F}$, the first
 
 ## Differentiation is bounded from $C^m$ to $C^{m-1}$
 ![[§30 Boundedness and Continuity#^ex-30-1]]
+
+## $\frac{d}{dt}$ is unbounded from $C^1[0,1]$ to $C[0,1]$ in the maximum norm
+![[§30 Boundedness and Continuity#^prop-30-6]]
+
+## The functional $x \mapsto \int_0^1 f_0\,x\,dt$ on $C[0,1]$ has norm $\int_0^1 |f_0|$
+![[§31 Dual Spaces#^prop-31-5]]
+
+## $C[0,1]$ is not reflexive: its dual is not separable
+![[§37 Separable Duals and Reflexive Spaces#^ex-37-5]]
+
+## Differentiation $C^1[0,1] \to C[0,1]$ is a closed map that is not bounded
+![[§39 Solving Mx = y#^ex-39-3]]
+
+## $C^1[a,b]$ is not complete in the maximum norm, by the equivalent norm theorem
+![[§41 The Open Mapping Theorem and Its Consequences#^ex-41-1]]
+
+## $C[0,1]$ is not complete in the $L^1$ norm, by the equivalent norm theorem
+![[§41 The Open Mapping Theorem and Its Consequences#^ex-41-2]]

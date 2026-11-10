@@ -128,7 +128,7 @@ Which basis of two-spinors makes the spinors simplest, and what happens at $m = 
 > u_\pm(p) = \begin{pmatrix}\sqrt{E_{\mathbf p} \mp |\mathbf p|}\;\xi_\pm\\ \sqrt{E_{\mathbf p} \pm |\mathbf p|}\;\xi_\pm\end{pmatrix}, \qquad h\,u_\pm = \pm\tfrac12\,u_\pm .
 > $$
 >
-> With Yu's abbreviation $\omega_\lambda \equiv \sqrt{E_{\mathbf p} + \lambda|\mathbf p|}$, $u_\lambda(p) = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$ for $\lambda = \pm$, with $\omega_\lambda\omega_{-\lambda} = m$ (names in other sources: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^cau-c5a-11-2|§C5a.11, Caution: Names for the plane-wave spinors]]). All normalizations and the spin sum of this section hold for them.
+> With Yu's abbreviation $\omega_\lambda \equiv \sqrt{E_{\mathbf p} + \lambda|\mathbf p|}$, $u_\lambda(p) = (\omega_{-\lambda}\xi_\lambda, \omega_\lambda\xi_\lambda)$ for $\lambda = \pm$, with $\omega_\lambda\omega_{-\lambda} = m$ (names in other sources: [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^cau-c5a-11-2|§C5a.11, Caution: Names for the plane-wave spinors]]). All normalizations and the spin sum of [[§C5a.12 Normalization and Spin Sums|§C5a.12]] hold for them ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-2|Theorem §C5a.12.2]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-7|Theorem §C5a.12.7]]).
 >
 > *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]]; *applies:* as in the opening, helicity basis, $\mathbf p \ne 0$.
 >
@@ -198,7 +198,7 @@ Which basis of two-spinors makes the spinors simplest, and what happens at $m = 
 > [!theorem] Theorem §C5a.13.4: The Massless and High-Energy Limit: Helicity Becomes Chirality
 > 1. For $m = 0$: $u_+(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}0\\ \xi_+\end{pmatrix}$, $u_-(p) = \sqrt{2E_{\mathbf p}}\begin{pmatrix}\xi_-\\ 0\end{pmatrix}$, and $\gamma^5u_\pm = \pm u_\pm$ ($\gamma^5 = \operatorname{diag}(-\mathbb 1, \mathbb 1)$ in the chiral basis, [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]], 1): positive helicity lives entirely in the right-handed Weyl half $\psi_R$, negative helicity in $\psi_L$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]]); helicity $\pm\frac12$ equals chirality $\pm1$ (divided by 2).
 > 2. For $m > 0$, $E_{\mathbf p} \gg m$: the dominant half has amplitude $\sqrt{E + |\mathbf p|} = \sqrt{2E}\,(1 + O(m^2/E^2))$ and the other half $\sqrt{E - |\mathbf p|} = m/\sqrt{E + |\mathbf p|} \approx m/\sqrt{2E}$, so $u_\pm \to \sqrt{2E}\,(0, \xi_+)$, $\sqrt{2E}\,(\xi_-, 0)$ with corrections of relative size $m/2E$.
-> 3. The $v$'s of [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-3|Theorem §C5a.13.3]] at $m = 0$: $v(p, +) = \sqrt{2E}(\xi_-, 0)$, $v(p, -) = \sqrt{2E}(0, \xi_+)$: the column of helicity $-\lambda/2$ sits in the Weyl half of that helicity.
+> 3. The $v$'s of [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-3|Theorem §C5a.13.3]] at $m = 0$: $v_+(p) = \sqrt{2E}(\xi_-, 0)$, $v_-(p) = \sqrt{2E}(0, \xi_+)$: the column of helicity $-\lambda/2$ sits in the Weyl half of that helicity.
 >
 > *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], and for $m = 0$ the Weyl fields ([[§C5a.8 The Weyl Form and the Weyl Equations#^mod-c5a-8-3|Model §C5a.8.3]]); *applies:* helicity basis; parts 1 and 3 exact at $m = 0$, part 2 for $m > 0$, $E_{\mathbf p} \gg m$, up to relative corrections $m/2E_{\mathbf p}$.
 >
@@ -213,7 +213,7 @@ Which basis of two-spinors makes the spinors simplest, and what happens at $m = 
 >
 > **Step 3** (high energy). $E - |\mathbf p| = \frac{(E - |\mathbf p|)(E + |\mathbf p|)}{E + |\mathbf p|} = \frac{m^2}{E + |\mathbf p|}$, multiplying and dividing by $E + |\mathbf p| > 0$, so $\sqrt{E - |\mathbf p|} = m/\sqrt{E + |\mathbf p|}$. And $|\mathbf p| = \sqrt{E^2 - m^2} = E(1 - m^2/2E^2 + O(m^4/E^4))$, so $E + |\mathbf p| = 2E(1 - m^2/4E^2 + \dots)$ and $\sqrt{E + |\mathbf p|} = \sqrt{2E}(1 + O(m^2/E^2))$. The ratio of the small to the large half is $m/(E + |\mathbf p|) \approx m/2E$. Part 2.
 >
-> **Step 4** ($v$). At $m = 0$, $\omega_+ = \sqrt{2E}$, $\omega_- = 0$; [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-3|Theorem §C5a.13.3]] gives $v(p, +) = (\omega_+\xi_-, -\omega_-\xi_-) = \sqrt{2E}(\xi_-, 0)$ and $v(p, -) = (-\omega_-\xi_+, \omega_+\xi_+) = \sqrt{2E}(0, \xi_+)$. Part 3.
+> **Step 4** ($v$). At $m = 0$, $\omega_+ = \sqrt{2E}$, $\omega_- = 0$; [[§C5a.13 Helicity Spinors and the Massless Limit#^thm-c5a-13-3|Theorem §C5a.13.3]] gives $v_+(p) = (\omega_+\xi_-, -\omega_-\xi_-) = \sqrt{2E}(\xi_-, 0)$ and $v_-(p) = (-\omega_-\xi_+, \omega_+\xi_+) = \sqrt{2E}(0, \xi_+)$. Part 3.
 >
 > **What the derivation shows**
 > - At $m = 0$ each helicity spinor occupies a single Weyl block: the solutions of the Weyl equations have fixed helicity ([[§C5a.8 The Weyl Form and the Weyl Equations#^thm-c5a-8-4|Theorem §C5a.8.4]]), and the Lorentz invariance of chirality ($\gamma^5$ commutes with $\Lambda_{1/2}$) is the Lorentz invariance of massless helicity ([[§C3.7★ Massless Particles and Helicity#^thm-c3-7-5|Theorem §C3.7.5]]).

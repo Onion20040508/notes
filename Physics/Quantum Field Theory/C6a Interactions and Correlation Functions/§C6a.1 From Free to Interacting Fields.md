@@ -58,14 +58,14 @@ And the computation that connects them, valid because $\hat H$ there is the *fre
 > - *The $4!$.* A convention. Its use appears with Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]; [[§C6a.8 Position-Space Feynman Rules#^rem-c6a-8-1|§C6a.8, Remark: Where the 4! goes]]): the $4!$ cancels the $4!$ ways of attaching four identical fields to one vertex. Here it only leaves a $3!$ in the field equation ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-3|Theorem §C6a.1.3]]), as the $3!$ of a cubic coupling leaves $\frac{\lambda}{2}$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-2|Example §C1b.2.2]]).
 > - *Why quartic.* A $\phi^3$ interaction would be simpler, but the energy would not be bounded below unless an even higher power were added (PS p. 77); $\phi^n$ with $n > 4$ has a coupling of negative mass dimension ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-2|Theorem §C6a.1.2]]).
 > - *Where it occurs.* Pedagogically it is the simplest interacting theory; in nature, the self-interaction of the Higgs field is of this form, and the same Lagrangian describes critical phenomena in statistical mechanics (PS p. 77).
-> - *What makes it hard.* $\mathcal L$ is no longer quadratic, so the field is no longer a collection of independent oscillators: the quartic term couples every Fourier mode to every other ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-3|Theorem §C6a.1.3]], ⚑ in Step 4). The strategy is perturbation theory: if $\lambda$ is small, $\lambda = 0$ should be a good first approximation. It succeeds at some level; how far it carries is a question the course comes back to.
+> - *What makes it hard.* $\mathcal L$ is no longer quadratic, so the field is no longer a collection of independent oscillators: the quartic term couples every Fourier mode to every other ([[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-3|Theorem §C6a.1.3]], ⚑ after Step 6). The strategy is perturbation theory: if $\lambda$ is small, $\lambda = 0$ should be a good first approximation. It succeeds at some level; how far it carries is a question the course comes back to.
 >
 > *Source: the user's PHY 513 notes, Ch. 13 §13.1 (Definition "$\phi^4$ theory", paragraph "The strategy") · PHY 513 Lecture 13, slide 5, and transcript · PS §4.1, p. 77*
 
 ^rem-c6a-1-1
 
 > [!theorem] Theorem §C6a.1.2: The Coupling of $\phi^4$ Theory Is Dimensionless
-> In four spacetime dimensions $[\phi] = 1$ and $[\lambda] = 0$: the $\phi^4$ interaction is marginal ([[§C1b.3 Mass Dimension, Locality and Power Counting#^def-c1b-3-1|Def. §C1b.3.1]]). Among the interactions $\phi^n$ of one real scalar field, only $n = 3$ (coupling of dimension $1$) and $n = 4$ (dimension $0$) have couplings of non-negative mass dimension, and with the symmetry $\phi \to -\phi$ only $\phi^4$ remains.
+> In four spacetime dimensions $[\phi] = 1$ and $[\lambda] = 0$: the $\phi^4$ interaction is marginal ([[§C1b.3 Mass Dimension, Locality and Power Counting#^def-c1b-3-1|Def. §C1b.3.1]]). Among the interactions $\phi^n$, $n \ge 3$, of one real scalar field, only $n = 3$ (coupling of dimension $1$) and $n = 4$ (dimension $0$) have couplings of non-negative mass dimension, and with the symmetry $\phi \to -\phi$ only $\phi^4$ remains.
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* the classical Lagrangian in four spacetime dimensions, any interaction $\phi^n$; no states, no vacuum, no order in $\lambda$.
 >
@@ -486,6 +486,15 @@ And the computation that connects them, valid because $\hat H$ there is the *fre
 > *Source: written here, from [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]] and [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]] · PS §4.2, p. 87 ("So far this expression is exact") · PHY 513 Lecture 13, transcript*
 
 ^rem-c6a-1-4
+
+> [!abstract]- Mathematical background
+> Proved in CA and CB; each line says what the physics above relies on.
+>
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]] — the Fourier convention $\phi(x) = \int\frac{d^4q}{(2\pi)^4}\tilde\phi(q)e^{-iq\cdot x}$ in which the field equation is written in momentum space (Theorem §C6a.1.3).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] — parts 1 and 2, the plane-wave delta functions and $\partial^2 \leftrightarrow -p^2$: they turn the left side of the field equation into $(m^2 - p^2)\tilde\phi(p)$ and give the $\delta^3(\mathbf p + \mathbf q_1 + \mathbf q_2 + \mathbf q_3)$ in the derivation of Theorem §C6a.1.7.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] — the $x$ integral may be exchanged with the momentum integrals, for a field whose transform is a test function (Derivation §C6a.1.3, Step 6).
+> - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]] — part 3, $e^{X + Y} = e^Xe^Y$ for commuting $X$, $Y$: the exponents split in $e^{i\hat H_0t}\hat a_{\mathbf p}e^{-i\hat H_0t} = \hat a_{\mathbf p}e^{-iE_{\mathbf p}t}$ (Theorem §C6a.1.7, part 1).
+> - [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]], [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]] — the field is an operator-valued distribution, and a product of distributions at one point has in general no value: the sense in which $\hat\phi_S(\mathbf x)^4$ needs a regularization (★ Remark: In what sense φ̂⁴(x) is defined).
 
 > [!remark]- Connections
 > - The quartic interaction is the term that power counting allows and the symmetry $\phi \to -\phi$ selects; the same counting that made the free Lagrangian unique makes $\phi^4$ the unique interaction of one real scalar — [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-6|Theorem §C1b.3.6]], [[§C6a.1 From Free to Interacting Fields#^thm-c6a-1-2|Theorem §C6a.1.2]].

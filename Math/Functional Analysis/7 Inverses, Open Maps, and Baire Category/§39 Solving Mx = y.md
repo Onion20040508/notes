@@ -12,7 +12,7 @@ tags: [functional-analysis, math556]
 > [!remark] Remark: Midterm Remarks
 > Two problems from the midterm.
 >
-> 1. *The completion of $C^1[a,b]$ under $\|f\| = \max_{[a,b]} |f|$ is $C[a,b]$.* All that was needed: $C^1[a,b]$ is dense in $(C[a,b], \|\cdot\|_\infty)$, because already the polynomials are dense in this norm (Weierstrass), and $C[a,b]$ is complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]); so $C[a,b]$ is the completion (Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]]). The abstract completion by equivalence classes of Cauchy sequences is not needed in practice; one identifies a complete space in which the given space is dense.
+> 1. *The completion of $C^1[a,b]$ under $\|f\| = \max_{[a,b]} |f|$ is $C[a,b]$.* All that was needed: $C^1[a,b]$ is dense in $(C[a,b], \|\cdot\|_\infty)$, because already the polynomials are dense in this norm (Weierstrass), and $C[a,b]$ is complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]); so $C[a,b]$ is the completion (Proposition [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]]). The abstract completion by equivalence classes of Cauchy sequences is not needed in practice; one identifies a complete space in which the given space is dense.
 > 2. *If $\{e_\alpha\}_{\alpha \in \Lambda}$ are nonzero vectors of a Hilbert space with $(x, y) = \sum_{\alpha \in \Lambda} (x, e_\alpha)\, \overline{(y, e_\alpha)}$ for all $x, y$, then $\{e_\alpha\}$ is a complete orthonormal set.* Orthonormality is not assumed and has to be proved along with completeness. The vectors are assumed nonzero, since a zero vector cannot belong to an orthonormal set.
 
 ^rem-39-1
@@ -132,19 +132,19 @@ $$
 
 ^pf-39-3
 
-> [!definition] Definition §39.2: Open Map
+> [!definition] Definition §39.3: Open Map
 > Let $X, Y$ be normed linear spaces (or metric spaces). A map $M : X \to Y$ is **open** if for every open $O \subset X$ the image $M(O)$ is open in $Y$.
 >
 > *Lax: §15.5, Thm 10 (the open mapping principle)*
 
-^def-39-2
+^def-39-3
 
 So a bounded linear bijection $M$ has a bounded inverse exactly when $M$ is an open map, and Banach's theorem is a consequence of the open mapping theorem: *if $X, Y$ are Banach spaces and $M : X \to Y$ is a bounded linear map that is one-to-one and onto, then $M$ is open*. This is what will be proved.
 (The standard open mapping theorem assumes only that $M$ is onto; one-to-one is needed only to speak of $M^{-1}$.)
 
 ## Closed Maps
 
-> [!definition] Definition §39.3: Closed Map
+> [!definition] Definition §39.5: Closed Map
 > Let $X, Y$ be normed linear spaces and let $D(M) \subset X$ be the domain of a linear map $M$ (a linear subspace on which $M$ is defined, possibly not all of $X$). $M : D(M) \to Y$ is a **closed map** if its **graph**
 >
 > $$
@@ -155,7 +155,7 @@ So a bounded linear bijection $M$ has a bounded inverse exactly when $M$ is an o
 >
 > *Lax: §15.5, definition before Thm 12*
 
-^def-39-3
+^def-39-5
 
 (Here $X \times Y$ carries one of the equivalent norms of Proposition [[§14 New Normed Spaces from Old#^prop-14-8|§14.8]], say $\|(x, y)\| = \|x\|_X + \|y\|_Y$, so that $(x_n, y_n) \to (x_0, y_0)$ if and only if $x_n \to x_0$ and $y_n \to y_0$. A set is closed if it contains the limits of its convergent sequences (Definition [[§11 Normed Linear Spaces#^def-11-6|§11.6]]); for the graph, the limit $(x_0, y_0)$ of $(x_n, Mx_n)$ lies in $G(M)$ exactly when $x_0 \in D(M)$ and $y_0 = Mx_0$. In words: if a sequence in the graph has a limit, the limit is in the graph.)
 
@@ -179,7 +179,7 @@ Closedness of a graph, in a picture. Left: the points $(x_n, Mx_n)$ of the graph
 ^rem-39-3
 
 > [!example] Example §39.2: The Projection onto the First Coordinate
-> *(Not from lecture.)* The projection $P : \mathbb{R}^2 \to \mathbb{R}$, $P(x, y) = x$, is closed in the graph sense (Definition [[§39 Solving Mx = y#^def-39-3|§39.3]]), but it maps the closed set $H = \{ (x, y) : xy = 1 \}$ onto $\mathbb{R} \setminus \{0\}$, which is not closed.
+> *(Not from lecture.)* The projection $P : \mathbb{R}^2 \to \mathbb{R}$, $P(x, y) = x$, is closed in the graph sense (Definition [[§39 Solving Mx = y#^def-39-5|§39.5]]), but it maps the closed set $H = \{ (x, y) : xy = 1 \}$ onto $\mathbb{R} \setminus \{0\}$, which is not closed.
 >
 > *Closed graph.* $P$ is linear and $|P(x, y)| = |x| \le \|(x, y)\|$ for the Euclidean norm, so $P$ is bounded, hence continuous, hence closed by Example [[§39 Solving Mx = y#^ex-39-1|§39.1]].
 >
@@ -247,12 +247,12 @@ A closed map need not be continuous. This is why one cares about such a weak not
 
 > [!remark] Remark: Which $C^1$; the Graph Norm
 > Here $C^1$ is classical $C^1$. The domain is $C^1$ even though there are differentiable functions that are not $C^1$: the domain may be chosen smaller than the largest possible one, but not larger; here only $C^1$ matters.
-> The proof is the argument that $C^1[a,b]$ is complete in the norm $\max|f| + \max|f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]). That is no coincidence: a linear map is closed exactly when its domain is complete in the *graph norm* $\|x\| + \|Mx\|$, provided $X$ and $Y$ are complete (Proposition [[§39 Solving Mx = y#^prop-39-4|§39.4]]), and for $M = \frac{d}{dt}$ the graph norm is $\max|x| + \max|x'|$. Note that $D(M) = C^1[0,1]$ is not closed in $C[0,1]$ (it is dense), which is how a closed map can fail to be continuous.
+> The proof is the argument that $C^1[a,b]$ is complete in the norm $\max|f| + \max|f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-5|§13.5]]). That is no coincidence: a linear map is closed exactly when its domain is complete in the *graph norm* $\|x\| + \|Mx\|$, provided $X$ and $Y$ are complete (Proposition [[§39 Solving Mx = y#^prop-39-4|§39.4]]), and for $M = \frac{d}{dt}$ the graph norm is $\max|x| + \max|x'|$. Note that $D(M) = C^1[0,1]$ is not closed in $C[0,1]$ (it is dense), which is how a closed map can fail to be continuous.
 
 ^rem-39-4
 
 > [!theorem] Proposition §39.4: Closed if and only if the Domain is Complete in the Graph Norm
-> Let $X, Y$ be Banach spaces, $D(M) \subset X$ a linear subspace and $M : D(M) \to Y$ linear. On $D(M)$ let $\|x\|_G = \|x\|_X + \|Mx\|_Y$, the **graph norm**. Then $M$ is a closed map (Definition [[§39 Solving Mx = y#^def-39-3|§39.3]]) if and only if $(D(M), \|\cdot\|_G)$ is complete.
+> Let $X, Y$ be Banach spaces, $D(M) \subset X$ a linear subspace and $M : D(M) \to Y$ linear. On $D(M)$ let $\|x\|_G = \|x\|_X + \|Mx\|_Y$, the **graph norm**. Then $M$ is a closed map (Definition [[§39 Solving Mx = y#^def-39-5|§39.5]]) if and only if $(D(M), \|\cdot\|_G)$ is complete.
 
 ^prop-39-4
 

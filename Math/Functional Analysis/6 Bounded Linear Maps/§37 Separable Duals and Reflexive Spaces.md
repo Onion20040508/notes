@@ -29,7 +29,7 @@ tags: [functional-analysis, math556]
 >
 > for every finite linear combination $\sum_j a_j y_{i_j}$, and these make up $\operatorname{span}\{y_i\}$ (Proposition [[§1 Linear Spaces#^prop-1-5|§1.5]]). So $\ell(y) = 0$ for every $y \in \operatorname{span}\{y_i\}$. Now $z$ is in the closure, so there is a sequence $z_k \in \operatorname{span}\{y_i\}$ with $z_k \to z$ (Definition [[§11 Normed Linear Spaces#^def-11-7|§11.7]]). Since $\ell$ is bounded, hence continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), $\ell(z_k) \to \ell(z)$; and $\ell(z_k) = 0$ for every $k$. Hence $\ell(z) = 0$.
 >
-> **($\Leftarrow$)** Assume that every $\ell \in X'$ with $\ell(y_i) = 0$ for all $i$ has $\ell(z) = 0$. Let $Y = \operatorname{span}\{y_i\}_{i \in \Lambda}$. A functional vanishes on all of $Y$ exactly when it vanishes on every $y_i$: one direction is the computation above, the other holds because each $y_i \in Y$. So the assumption says $\ell(z) = 0$ for every $\ell \in Y^\perp$, and by the distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]])
+> **($\Leftarrow$)** Assume that every $\ell \in X'$ with $\ell(y_i) = 0$ for all $i$ has $\ell(z) = 0$. Let $Y = \operatorname{span}\{y_i\}_{i \in \Lambda}$. A functional vanishes on all of $Y$ exactly when it vanishes on every $y_i$: one direction is the computation above, the other holds because each $y_i \in Y$. So the assumption says $\ell(z) = 0$ for every $\ell \in Y^\perp$, and by the distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-10|§36.10]])
 >
 > $$
 > \inf_{y \in Y} \|z - y\| = \max_{\substack{\ell \in X',\ \|\ell\| \le 1 \\ \ell(y) = 0\ \forall y \in Y}} |\ell(z)| = 0 .
@@ -39,7 +39,7 @@ tags: [functional-analysis, math556]
 
 ^pf-37-1
 
-*Uses:* [[§1 Linear Spaces#^prop-1-5|§1.5]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]], [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]]
+*Uses:* [[§1 Linear Spaces#^prop-1-5|§1.5]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^thm-36-10|§36.10]], [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]]
 
 > [!theorem] Corollary §37.2: Two Forms of the Spanning Criterion
 > Let $X$ be a normed linear space.
@@ -402,7 +402,7 @@ The proof in one diagram: $\eta_0 \in Y''$ is pulled back along the restriction 
 
 ## Distance in the Dual
 
-The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]) computes the distance from a vector to a subspace $Y$ by functionals in $Y^\perp$. The dual statement computes the distance from a functional to $Y^\perp$ by vectors in $Y$.
+The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-10|§36.10]]) computes the distance from a vector to a subspace $Y$ by functionals in $Y^\perp$. The dual statement computes the distance from a functional to $Y^\perp$ by vectors in $Y$.
 
 > [!theorem] Proposition §37.10: Distance from a Functional to $Y^\perp$
 > Let $X$ be a normed linear space and $Y$ a linear subspace. Then for every $\ell \in X'$,
@@ -459,10 +459,10 @@ The distance from $\ell$ to $Y^\perp$, drawn in $X'$: the smallest ball about $\
 ^cor-37-11
 
 > [!proof]+ Proof
-> *(Not from lecture.)* $Y^\perp$ is a closed subspace of $X'$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-10|§36.10]]), so $X'/Y^\perp$ carries the quotient norm $\|[\ell]\| = \inf_{m \in Y^\perp} \|\ell - m\|$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]). Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]] says $\|[\ell]\| = \|\ell|_Y\|_Y$. Two functionals have the same restriction to $Y$ exactly when they differ by an element of $Y^\perp$: $\ell|_Y = \ell'|_Y$ if and only if $(\ell - \ell')(y) = 0$ for all $y \in Y$, i.e. $[\ell] = [\ell']$. The direction “$\Leftarrow$” makes $\Phi([\ell]) = \ell|_Y$ well defined, and “$\Rightarrow$” makes it one-to-one. $\Phi$ is linear, since $(c\ell + c'\ell')|_Y = c\, \ell|_Y + c'\, \ell'|_Y$, and norm-preserving by the formula above. It is onto by Hahn–Banach (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]): every $\ell_0 \in Y'$ extends to some $\ell \in X'$, and then $\Phi([\ell]) = \ell_0$.
+> *(Not from lecture.)* $Y^\perp$ is a closed subspace of $X'$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-12|§36.12]]), so $X'/Y^\perp$ carries the quotient norm $\|[\ell]\| = \inf_{m \in Y^\perp} \|\ell - m\|$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]). Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]] says $\|[\ell]\| = \|\ell|_Y\|_Y$. Two functionals have the same restriction to $Y$ exactly when they differ by an element of $Y^\perp$: $\ell|_Y = \ell'|_Y$ if and only if $(\ell - \ell')(y) = 0$ for all $y \in Y$, i.e. $[\ell] = [\ell']$. The direction “$\Leftarrow$” makes $\Phi([\ell]) = \ell|_Y$ well defined, and “$\Rightarrow$” makes it one-to-one. $\Phi$ is linear, since $(c\ell + c'\ell')|_Y = c\, \ell|_Y + c'\, \ell'|_Y$, and norm-preserving by the formula above. It is onto by Hahn–Banach (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]): every $\ell_0 \in Y'$ extends to some $\ell \in X'$, and then $\Phi([\ell]) = \ell_0$.
 
 ^pf-37-11
 
-*Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]], [[§36 Duality in Normed Spaces#^prop-36-10|§36.10]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
+*Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]], [[§36 Duality in Normed Spaces#^prop-36-12|§36.12]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]], [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
-The dual of a subspace is a quotient of the dual, just as the dual of a quotient is a subspace of the dual (Theorem [[§36 Duality in Normed Spaces#^thm-36-11|§36.11]]).
+The dual of a subspace is a quotient of the dual, just as the dual of a quotient is a subspace of the dual (Theorem [[§36 Duality in Normed Spaces#^thm-36-13|§36.13]]).

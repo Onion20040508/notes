@@ -139,7 +139,7 @@ The successive approximation of Steps 5–6: $Mx_0$ approximates $y_0$ to within
 *(Not from lecture; animation added, vault only.)* Steps 5–6 for an onto $M$ of the plane (chosen for the picture), with corrections $x_j$ that are only approximately right at each step (error $\sim 3^{-j}$). Right: $Mx_0 + \cdots + Mx_j$ approaches $y_0$, the residual shrinking by about $1/3$ each time (dashed circles of radius $\sim 3^{-(j+1)}$). Left: the corrections, a third of the size each time, so their sum converges.
 
 > [!theorem] Theorem §41.2: Open Mapping Theorem
-> Let $X, Y$ be Banach spaces and $M : X \to Y$ a bounded linear map that is onto (surjective, $R(M) = Y$). Then $M$ is an [[§39 Solving Mx = y#^def-39-2|open map]]: for every open $O \subset X$, $M(O)$ is open in $Y$.
+> Let $X, Y$ be Banach spaces and $M : X \to Y$ a bounded linear map that is onto (surjective, $R(M) = Y$). Then $M$ is an [[§39 Solving Mx = y#^def-39-3|open map]]: for every open $O \subset X$, $M(O)$ is open in $Y$.
 >
 > *Lax: §15.5, Thm 10*
 
@@ -219,7 +219,7 @@ In other words, if both norms are complete and one of them is stronger than the 
 *Uses:* [[§30 Boundedness and Continuity#^prop-30-2|§30.2]], [[§39 Solving Mx = y#^thm-39-2|§39.2]]
 
 > [!example] Example §41.1: $C^1[a,b]$ is Not Complete in the Maximum Norm
-> $C^1[a,b]$ is complete in the norm $\|f\|_{C^1} = \max |f| + \max |f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-4|§13.4]]), and $\max |f| \le \|f\|_{C^1}$. If $C^1[a,b]$ were also complete in $\max|f|$, Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]] would make the two norms equivalent.
+> $C^1[a,b]$ is complete in the norm $\|f\|_{C^1} = \max |f| + \max |f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-5|§13.5]]), and $\max |f| \le \|f\|_{C^1}$. If $C^1[a,b]$ were also complete in $\max|f|$, Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]] would make the two norms equivalent.
 > They are not: $f_n(t) = \sin\bigl( n(t - a) \bigr)$ has $\max |f_n| \le 1$ but $\|f_n\|_{C^1} \ge |f_n'(a)| = n$. So $(C^1[a,b], \max|\cdot|)$ is not complete; its completion is $C[a,b]$ (Midterm Problem 1, [[§39 Solving Mx = y|§39]]).
 
 ^ex-41-1
@@ -251,7 +251,7 @@ In other words, if both norms are complete and one of them is stronger than the 
 ## The Closed Graph Theorem
 
 > [!theorem] Theorem §41.4: Closed Graph Theorem
-> Let $X, Y$ be Banach spaces and $D(M) \subset X$. Assume $M : D(M) \to Y$ is a [[§39 Solving Mx = y#^def-39-3|closed (linear) map]]. If $D(M) = X$, then $M \in \mathcal{L}(X, Y)$.
+> Let $X, Y$ be Banach spaces and $D(M) \subset X$. Assume $M : D(M) \to Y$ is a [[§39 Solving Mx = y#^def-39-5|closed (linear) map]]. If $D(M) = X$, then $M \in \mathcal{L}(X, Y)$.
 >
 > *Lax: §15.5, Thm 12*
 
@@ -366,11 +366,11 @@ The closed graph theorem and the open mapping principle together decide when a r
 >
 > so $\{z_k\}$ is Cauchy in $X$. Since $X$ is complete, $z_k \to z$ for some $z \in X$. Also $Mz_k = Mx_{n_k} \to y$, as a subsequence of $Mx_n \to y$.
 >
-> *Step 4: $y \in R$.* $z_k \to z$ and $Mz_k \to y$, and $M$ is closed (Definition [[§39 Solving Mx = y#^def-39-3|§39.3]]), so $y = Mz \in R$. Hence $R$ contains the limit of every convergent sequence of its points: $R$ is closed.
+> *Step 4: $y \in R$.* $z_k \to z$ and $Mz_k \to y$, and $M$ is closed (Definition [[§39 Solving Mx = y#^def-39-5|§39.5]]), so $y = Mz \in R$. Hence $R$ contains the limit of every convergent sequence of its points: $R$ is closed.
 
 ^pf-41-5
 
-*Uses:* [[§39 Solving Mx = y#^def-39-1|Def. §39.1]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]], [[§39 Solving Mx = y#^def-39-3|Def. §39.3]]
+*Uses:* [[§39 Solving Mx = y#^def-39-1|Def. §39.1]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]], [[§39 Solving Mx = y#^def-39-5|Def. §39.5]]
 
 > [!remark] Remark: What Each Direction of the Closed Range Criterion Uses
 > *(Not from lecture.)* The direction ($\Leftarrow$) uses only that $M$ is closed and $X$ is complete: $Y$ may be any normed linear space, and the same argument works for a closed map with domain $D(M) \subset X$, since then $z_k \in D(M)$ and closedness gives $z \in D(M)$. The direction ($\Rightarrow$) uses the completeness of both spaces, through the open mapping principle. In terms of the induced map of Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]], the inequality says $\|[x]\| \le a\, \|M_0 [x]\|$: the inverse of $M_0 : X/N \to R(M)$ is bounded.

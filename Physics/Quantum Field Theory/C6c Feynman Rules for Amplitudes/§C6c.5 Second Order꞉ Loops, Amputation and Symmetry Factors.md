@@ -30,19 +30,19 @@ At second order two vertices appear, and with them loops, corrections on externa
 > |---|---|---|---|---|---|
 > | $0$ | any | $10\cdot10 = 100$ | $0$–$8$ | two first-order pieces | not one process: each piece its own delta ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-3\|Theorem §C6c.3.3]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-6\|Theorem §C6c.4.6]]) |
 > | $1$ | $(0, 0)$ | $16$ | $6$ | ★ tree, one internal line, $S = 1$ | ★ $3 \to 3$ and $4 \to 2$ allowed, $2 \to 4$ above $\sqrt s = 4m$; $1 \leftrightarrow 5$, $0 \leftrightarrow 6$ forbidden |
-> | $1$ | $(1, 0)$, $(0, 1)$ | $96$ | $4$ | loop on an external leg, $S = 2$ | not amputated ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3\|Theorem §C6c.5.3]], 1) |
-> | $1$ | $(1, 1)$ | $144$ | $2$ | chain of two tadpoles, $S = 4$ | ★ $1 \to 1$ forward, not amputated; $0 \leftrightarrow 2$ forbidden |
+> | $1$ | $(1, 0)$, $(0, 1)$ | $96$ | $4$ | loop on an external leg, $S = 2$ | not an amputated diagram: removed ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-3\|Theorem §C6c.5.3]], 1) |
+> | $1$ | $(1, 1)$ | $144$ | $2$ | chain of two tadpoles, $S = 4$ | ★ $1 \to 1$ forward, not an amputated diagram: removed; $0 \leftrightarrow 2$ forbidden |
 > | $2$ | $(0, 0)$ | $72$ | $4$ | one loop between the vertices, $S = 2$ | $2 \to 2$ in the $s$, $t$, $u$ channels ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^ex-c6c-5-1\|Example §C6c.5.1]]); $1 \leftrightarrow 3$, $0 \leftrightarrow 4$ forbidden |
 > | $2$ | $(1, 0)$, $(0, 1)$ | $144$ | $2$ | snowman, $S = 4$ | ★ $1 \to 1$ forward; $0 \leftrightarrow 2$ forbidden |
 > | $2$ | $(1, 1)$ | $72$ | $0$ | vacuum bubble, $S = 16$ ([[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-3\|Example §C6a.9.3]]) | a phase |
 > | $3$ | $(0, 0)$ | $96$ | $2$ | sunset, $S = 6$ | ★ $1 \to 1$ forward; $0 \leftrightarrow 2$ forbidden |
 > | $4$ | $(0, 0)$ | $24$ | $0$ | melon, $S = 48$ ([[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-2\|Example §C6a.9.2]]) | a phase |
 >
-> The $4$-particle and vacuum rows are taught (Lecture 16, slide 25; Lecture 14); the rows marked ★ are Yu's matrix elements beyond the course ($2$-particle rows: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^ex-c6c-5-2\|★ Example §C6c.5.2]]; as correlation functions the chain, snowman and sunset are taught, [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-4\|Example §C6a.9.4]]). At second order the only new scattering of two equal-mass particles is the one-loop $2 \to 2$.
+> The $4$-particle and vacuum rows are taught (Lecture 16, slide 25; Lecture 14); the rows marked ★ are Yu's matrix elements beyond the course ($2$-particle rows: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^ex-c6c-5-2\|★ Example §C6c.5.2]]; as correlation functions the chain, snowman and sunset are taught, [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-4\|Example §C6a.9.4]]). At second order the only new contribution to $2 \to 2$ is the one-loop amplitude; two particles can also go to four through the tree (★, above $\sqrt s = 4m$).
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] with $\phi^4$; *applies:* second order of the Dyson series between free relativistic states over $|0\rangle$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]]); exact as a statement about the Wick terms, the fates with the kinematic filter of [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-2|Theorem §C6c.4.2]] (equal masses $m > 0$).
 >
-> *Source: Yu §7.3, eq. (7.126) and pp. 294–296 (the self-energy terms (7.127)–(7.132) with their combinatorial factors $4\cdot4\cdot3\cdot3$, $4\cdot4\cdot6$, $6\cdot6\cdot2$); §7.1.2, pp. 273–274 (Yukawa theory: the $14$ terms (7.60)–(7.73) sorted in the same way) · PS §4.6, eqs. (4.101)–(4.102), p. 112 · PHY 513 Lecture 16, slide 25 · the term count: the ⚑ by-product of [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]] · table written here (2026-11-05)*
+> *Source: Yu §7.3, eq. (7.126) and pp. 294–296 (the self-energy terms (7.127)–(7.132) with their combinatorial factors $4\cdot4\cdot3\cdot3$, $4\cdot4\cdot6$, $6\cdot6\cdot2$); §7.1.2, pp. 273–274 (Yukawa theory: the $14$ terms (7.60)–(7.73) sorted in the same way) · PS §4.6, eqs. (4.101)–(4.102), p. 112 · PHY 513 Lecture 16, slide 25 · the term count: the ⚑ by-product of [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]] · table written here*
 
 ^thm-c6c-5-1
 
@@ -88,7 +88,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 >
 > *Model:* [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]] with $\phi^4$, any polynomial interaction with $n!$ replaced by $\prod_tn_t!$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]); *applies:* every order of the Dyson series between free relativistic states (or between external points).
 >
-> *Source: Yu §7.1.2, p. 275 (boxed: "the $1/n!$ in $iT^{(n)}$ of eq. (7.4) is cancelled exactly by the $n!$ caused by the exchange symmetry of the spacetime coordinates"; footnote: "this rule does not apply to the bubble diagrams below that have nontrivial symmetry factors"); §7.3, eqs. (7.128), (7.130), (7.131) (the $x \leftrightarrow y$ pairs) · the ⚑ of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]] (promoted here 2026-11-05)*
+> *Source: Yu §7.1.2, p. 275 (boxed: "the $1/n!$ in $iT^{(n)}$ of eq. (7.4) is cancelled exactly by the $n!$ caused by the exchange symmetry of the spacetime coordinates"; footnote: "this rule does not apply to the bubble diagrams below that have nontrivial symmetry factors"); §7.3, eqs. (7.128), (7.130), (7.131) (the $x \leftrightarrow y$ pairs) · the ⚑ of [[§C6a.8 Position-Space Feynman Rules#^der-c6a-8-1|Derivation §C6a.8.1]]*
 
 ^thm-c6c-5-2
 
@@ -119,7 +119,7 @@ At second order two vertices appear, and with them loops, corrections on externa
 > [!definition] Definition §C6c.5.1: Amputation of an External Leg
 > In a diagram with external particles, start at the tip of an external leg (the end at the particle) and go into the diagram to the **last point at which the diagram can be cut by removing one propagator** such that the cut separates the leg, with everything that hangs on it, from the rest. **Amputating** the leg removes everything between the tip and that cut: the particle is then joined, by a line without propagator, directly to the vertex beyond the cut. A diagram is **amputated** if no leg has anything to remove, i.e. no propagator separates a part holding a single particle from the rest.
 >
-> What is removed is "interaction corrects external state. Not an interaction between different states" (slide 26). A tree whose vertices all have $r_v \ge 3$ legs is amputated: removing an internal line leaves on each side a vertex with at least two further branches, each ending at a particle, so no line separates a single particle.
+> What is removed is "interaction corrects external state. Not an interaction between different states" (slide 26). A tree whose vertices all have $r_v \ge 3$ legs is amputated ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]]).
 >
 > *Model:* any (combinatorics); *applies:* diagrams of $S$-matrix elements and of correlation functions alike (for a correlation function the removed part includes the external propagator: [[§C6c.1 Amplitudes from Correlation Functions#^thm-c6c-1-1|Theorem §C6c.1.1]]); the removed corrections are not zero: beyond lowest order they return as $\sqrt Z$ per external line and the physical mass ([[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]; second semester).
 >
@@ -258,11 +258,11 @@ At second order two vertices appear, and with them loops, corrections on externa
 > 1. fixes each particle, each leg joined to a particle, and the vertex of that leg;
 > 2. if it is not the identity, does at least one of: exchange the two ends of a self-loop (a line from a vertex to itself); permute lines that join the same two vertices; move a vertex that carries no particle.
 >
-> So $S(D) = |\Gamma_D|\prod_v2^{\ell(v)}\ell(v)!\prod_{\{u,w\}}m(u,w)!$ ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]) with $\Gamma_D$ acting only on vertices without particles: "$\mathcal M$ has less symmetry than the Green's function ⇒ $S$ simpler". A diagram in which every vertex carries a particle and no two vertices are joined by two lines or by a self-loop has $S = 1$; trees: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]].
+> So $S(D) = |\Gamma_D|\prod_v2^{\ell(v)}\ell(v)!\prod_{\{u,w\}}m(u,w)!$ ([[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]) with $\Gamma_D$ acting only on vertices without particles: "$\mathcal M$ has less symmetry than the Green's function ⇒ $S$ simpler". A diagram in which every vertex carries a particle, no vertex has a self-loop and no two vertices are joined by more than one line has $S = 1$; trees: [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-6|Theorem §C6c.5.6]].
 >
 > *Model:* any (combinatorics); *applies:* diagrams of $S$-matrix elements and of amplitudes ([[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]]), any vertex types ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]).
 >
-> *Source: PHY 513 Lecture 16, slide 22 ("$\mathcal M$ has less symmetry than Green's function ⇒ $S$ simpler") · Yu §7.3, p. 294 ("for tree diagrams contributing to scattering or decay the symmetry factor is 1; loop diagrams may have nontrivial symmetry factors") · from the last sentence of the former Step 4 of [[§C6c.6 Feynman Rules for Amplitudes#^der-c6c-6-3|Derivation §C6c.6.3]] (now [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-5|Derivation §C6c.4.5]], Step 2), promoted 2026-11-05*
+> *Source: PHY 513 Lecture 16, slide 22 ("$\mathcal M$ has less symmetry than Green's function ⇒ $S$ simpler") · Yu §7.3, p. 294 ("for tree diagrams contributing to scattering or decay the symmetry factor is 1; loop diagrams may have nontrivial symmetry factors") · from the last sentence of Step 2 of [[§C6c.4 First Order꞉ Enumerate, then Filter#^der-c6c-4-5|Derivation §C6c.4.5]]*
 
 ^thm-c6c-5-4
 
@@ -309,25 +309,27 @@ At second order two vertices appear, and with them loops, corrections on externa
 *Procedure:* [[P5 Symmetry Factor of a Diagram#^p5-5|P5, step 5]]
 
 > [!theorem] Theorem §C6c.5.6: Tree Diagrams of a Process Have S = 1
-> Every fully connected tree diagram of a process — the particles labelled and never relabelled, every vertex of valence $r_v \ge 3$ — has symmetry factor $S = 1$: each tree contributes with its full vertex factors ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-4|Theorem §C6c.4.4]]) and no $\frac1S$, and it arises from exactly $|G|$ contractions ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]]). For one internal line this is [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]].
+> Every fully connected tree diagram of a process — the particles labelled and never relabelled, every vertex of valence $r_v \ge 3$ — has symmetry factor $S = 1$: each tree contributes with its full vertex factors ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-4|Theorem §C6c.4.4]]) and no $\frac1S$, and it arises from exactly $|G|$ contractions ([[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-5|Theorem §C6c.4.5]]). For one internal line this is [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]. Such a tree is also amputated ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|Def. §C6c.5.1]]): no internal line separates a single particle from the rest.
 >
 > *Model:* any (combinatorics); *applies:* any polynomial interaction ([[§C6a.12 Feynman Rules for Polynomial Interactions#^def-c6a-12-1|Def. §C6a.12.1]]), any order, tree diagrams of $S$-matrix elements and amplitudes ([[§C6c.6 Feynman Rules for Amplitudes#^def-c6c-6-1|Def. §C6c.6.1]]).
 >
-> *Source: Yu §7.3, p. 294 ("for tree diagrams contributing to scattering or decay processes the symmetry factor is 1") · PHY 513 Lecture 14, slide 17 ("Reordering of legs = topologically distinct diagram ⇒ S = 1") · PHY 513, Problem Set 8, Problem 2(c) · proof: the former Step 4 of [[§C6c.6 Feynman Rules for Amplitudes#^der-c6c-6-2|Derivation §C6c.6.2]] (the clause "with symmetry factor $S = 1$ for every tree diagram" of [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-2|Theorem §C6c.6.2]]), moved here 2026-11-05*
+> *Source: Yu §7.3, p. 294 ("for tree diagrams contributing to scattering or decay processes the symmetry factor is 1") · PHY 513 Lecture 14, slide 17 ("Reordering of legs = topologically distinct diagram ⇒ S = 1") · PHY 513, Problem Set 8, Problem 2(c) · proof written here (it proves the clause "with symmetry factor $S = 1$ for every tree diagram" of [[§C6c.6 Feynman Rules for Amplitudes#^thm-c6c-6-2|Theorem §C6c.6.2]])*
 
 ^thm-c6c-5-6
 
 > [!derivation]- Derivation
 > **Step 1** ($S = 1$ for a tree). Let $D$ be a fully connected diagram without loops (a tree) and $g \in \operatorname{Stab}(P)$. Every leaf of the tree is an external particle (a vertex with a single line would have valence one). Removing an internal line $e$ splits the particles into two nonempty sets $E_1(e) \sqcup E_2(e)$, and different lines give different splits (two lines of a tree are separated by a vertex with a third branch, which holds a particle). $g$ fixes every particle ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 3), so it maps each line to the line with the same split, i.e. to itself, with its ends on their own sides: every line and every vertex is fixed. A tree has no two lines between the same vertices, so the legs of a fixed vertex are fixed too: $g = e$, $S = |\operatorname{Stab}(P)| = 1$ (for one internal line this is [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]).
 >
-> **Step 2** (the count). By orbit–stabilizer ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 2), $|G\cdot P| = |G|/S = |G|$: the prefactor $\frac{1}{|G|}\prod_t(-ig_t)^{n_t}$ of the Dyson series times $|G|$ leaves $\prod_t(-ig_t\prod_km_{t,k}!)^{n_t}$ divided by nothing. Checks: [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]] (orbits of $72 = 2!\,(3!)^2$), [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|Example §C6c.6.2]] (orbits of $144 = 3!\,4!$).
+> **Step 2** (the count). By orbit–stabilizer ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], 2), $|G\cdot P| = |G|/S = |G|$: the prefactor $\prod_t\frac{(-ig_t)^{n_t}}{n_t!}$ of the Dyson series times $|G| = \prod_tn_t!\,\bigl(\prod_km_{t,k}!\bigr)^{n_t}$ leaves $\prod_t(-ig_t\prod_km_{t,k}!)^{n_t}$, divided by nothing. Checks: [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-1|Example §C6c.6.1]] (orbits of $72 = 2!\,(3!)^2$), [[§C6c.6 Feynman Rules for Amplitudes#^ex-c6c-6-2|Example §C6c.6.2]] (orbits of $144 = 3!\,4!$).
+>
+> **Step 3** (amputated). Removing an internal line leaves on each side a vertex with at least two further branches ($r_v \ge 3$), each ending at a particle, so each side holds at least two particles: no line separates a single particle, and the tree is amputated ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|Def. §C6c.5.1]]).
 >
 > **What the derivation shows.**
 > - Without loops every line is pinned by the particles on its two sides; symmetries need loops ([[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-4|Theorem §C6c.5.4]]).
 
 ^der-c6c-5-6
 
-*Uses:* [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]]
+*Uses:* [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-5|Theorem §C6c.5.5]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^def-c6c-5-1|Def. §C6c.5.1]]
 
 *Procedure:* [[P6 Tree Amplitude from a Lagrangian#^p6-4|P6, step 4]]
 

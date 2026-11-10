@@ -189,7 +189,7 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 
 > [!remark]- Connections
 > - The model: $\mathbb{R}$ as classes of Cauchy sequences of rationals, [[§10a Cauchy Sequences#^rem-10a-4|451 Remark (Cauchy sequences and the construction of the reals)]], carried out with rational tolerances in [[§6★ ℝ from Cauchy Sequences of Rationals|451 §6★]] (why rational: [[§6★ ℝ from Cauchy Sequences of Rationals#^rem-6s-2|451 §6★, order of logic]]).
-> - For normed spaces: [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]; concrete completions: [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]].
+> - For normed spaces: [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]; concrete completions: [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]], [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]].
 
 > [!remark] Remark: Why Classes, and Why the Objects Look Different
 > Two points were raised in lecture. First, why equivalence classes: a point $x \in M$ is the limit of many Cauchy sequences (on the real line, $(x, x, \ldots)$ and $(x + 1/n)$ both converge to $x$), and different sequences with the same destination must not be counted as different elements of $\overline{M}$. Second, the elements of $\overline{M}$ are sets of sequences, not points of $M$, so how is $M$ a subset? By the identification $x \leftrightarrow [(x, x, \ldots)]$, which is one-to-one; $M$ is not literally contained in $\overline{M}$ but is embedded in it. This is the same kind of identification as $\mathbb{R} \subset \mathbb{R} \oplus \mathbb{R}^2 = \mathbb{R}^3$ ([[§1 Linear Spaces#^ex-1-4|Ex. §1.4]]).
@@ -242,7 +242,7 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 
 > [!remark]- Connections
 > - The same construction one level down: ℝ as Cauchy classes of ℚ ([[§10a Cauchy Sequences#^rem-10a-4|451 Remark (construction of the reals)]]); (c) and (d) for $M = \mathbb{Q}$ are [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-9|451 §6★.9]] and [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-10|451 §6★.10]].
-> - The normed version, where the linear structure and the norm are added: Theorem [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]; uniqueness: Corollary [[§13 The Completion of a Normed Space#^cor-13-3|§13.3]].
+> - The normed version, where the linear structure and the norm are added: Theorem [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]; uniqueness: Corollary [[§13 The Completion of a Normed Space#^cor-13-4|§13.4]].
 
 > [!example] Example §12.1: Completions of Subsets of $\mathbb{R}^n$
 > For subsets of $\mathbb{R}^n$ with the usual metric, completion is closure:

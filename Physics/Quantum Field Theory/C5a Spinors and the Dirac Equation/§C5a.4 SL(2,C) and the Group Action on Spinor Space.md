@@ -64,7 +64,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 > **What the derivation shows**
 > - Both Weyl representations take values in the same group $SL(2, \mathbb C)$. They differ by the automorphism $\lambda \mapsto (\lambda^\dagger)^{-1}$ of that group, which is the identity on $SU(2)$ (rotations) and inverts the Hermitian part (boosts).
 > - Unit determinant is what will make $\varepsilon$ an invariant (Theorem §C5a.5.4); unitarity fails exactly for boosts.
-> - Used next: the covering map ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]]; proved in Theorems §CB.16.4–§CB.16.9) and the Dirac matrices $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-3|Theorem §C5a.3.3]]).
+> - Used next: the covering map ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-2|Theorem §C5a.4.2]]; proved in Theorems §CB.16.4–§CB.16.9) and the Dirac matrices $\Lambda_{1/2} = \operatorname{diag}(\Lambda_L, \Lambda_R)$ ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]]).
 
 ^der-c5a-4-1
 
@@ -120,7 +120,7 @@ The user's notes call these matrices $U_L$, $U_R$; the letter $\Lambda$ is used 
 >
 > **What the derivation shows**
 > - The same six numbers $\omega_{\mu\nu}$ produce $\Lambda_L(\omega)$ and $e^\omega$, and the covering map sends one to the other. The half-angles of $\Lambda_L$ become full angles because $\lambda$ acts on $X$ twice, once from each side.
-> - Part 2 says that $\bar\sigma^\mu$ is an invariant tensor with one vector slot and two spinor slots, as $\gamma^\mu$ will be ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], 3); it is why $\psi_L^\dagger\bar\sigma^\mu\psi_L$ is a four-vector (QFT §C5a.8, the Weyl Lagrangian).
+> - Part 2 says that $\bar\sigma^\mu$ is an invariant tensor with one vector slot and two spinor slots, as $\gamma^\mu$ will be ([[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], 3); it is why $\psi_L^\dagger\bar\sigma^\mu\psi_L$ is a four-vector ([[§C5a.8 The Weyl Form and the Weyl Equations#^mod-c5a-8-3|Model §C5a.8.3]], the Weyl Lagrangian).
 > - $\Lambda_R(\omega) = (\Lambda_L(\omega)^\dagger)^{-1}$ is *not* $\Lambda_L$ of another $\omega$ with the same $\sigma$: it covers $e^\omega$ through $\bar\sigma$. Using $\sigma$ for $\Lambda_R$ would give the parity image of $e^\omega$.
 > - Used next: $\pi$ is onto (Theorem §CB.16.9), and every $(j_+, j_-)$ integrates (Theorem §CB.17.10; the reading for field labels: [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]], 3).
 
@@ -472,7 +472,7 @@ $$
 > | $\gamma^\mu$ | $U\gamma^\mu U^{-1}$ | unchanged (Theorem §CB.18.8) | unchanged |
 > | $\partial_\mu$ | unchanged | $\Lambda_\mu{}^\nu\partial_\nu$ (chain rule) | as for the classical field |
 > | acts on | spinor index only | spinor index and argument | operator nature (sandwich) and, through the law, spinor index and argument |
-> | predictions | unchanged (Remark: What depends on the basis, [[§C5a.7 The Dirac Equation and Its Lagrangian\|§C5a.7]]) | those of the moved system | those of the moved system |
+> | predictions | unchanged ([[§C5a.7 The Dirac Equation and Its Lagrangian#^rem-c5a-7-6\|§C5a.7, Remark: What depends on the basis and what does not]]) | those of the moved system | those of the moved system |
 >
 > In the third column the sandwich $U(\Lambda)^{-1}\cdots U(\Lambda)$ acts on the Hilbert-space side of $\hat\psi$, while the single matrix $\Lambda_{1/2}$ acts on its spinor index (Yu (5.61); Peskin–Schroeder's equivalent form $U\hat\psi U^{-1} = \Lambda_{1/2}^{-1}\hat\psi(\Lambda x)$: [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^rem-c5b-4-1|§C5b.4, Remark: Lorentz covariance of the quantized field]]; the two kinds of representation: [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^rem-c3-4-2|§C3.4, Remark: Two kinds of representation]]). The letter $U$ is overloaded: the change-of-basis matrix $U$ is a constant $4\times4$ matrix, $U(\Lambda)$ an infinite-dimensional unitary operator. The operations are compatible: in a new basis the Lorentz law reads $\psi'(x) \mapsto \Lambda'_{1/2}\psi'(\Lambda^{-1}x)$ with $\Lambda'_{1/2} = U\Lambda_{1/2}U^{-1}$ ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], 2), since $U\Lambda_{1/2}\psi = (U\Lambda_{1/2}U^{-1})(U\psi)$.
 >

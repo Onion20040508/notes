@@ -93,7 +93,7 @@ What do Hamiltonian field theory and Noether's theorem give for the Dirac field?
 
 *Procedure:* [[P1 Canonical Quantization#^p1-2|P1, step 2]]
 
-This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]) as a density sandwiched between fields: there it is a postulated one-particle Hamiltonian acting on a wave function, here a derived density of a classical field whose integral becomes, after quantization, the Hamiltonian of the many-particle theory (rule 2: the layer changes from principle to theorem; the meaning of $\psi$ changes from amplitude to field).
+This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ ([[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]]) as a density sandwiched between fields: there it is a postulated one-particle Hamiltonian acting on a wave function, here a derived density of a classical field whose integral becomes, after quantization, the Hamiltonian of the many-particle theory (the layer changes from principle to theorem; the meaning of $\psi$ changes from amplitude to field).
 
 ## Currents
 
@@ -359,7 +359,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 > - ⚑ By-product: classically $H$ is unbounded below (negative-frequency modes, [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-2|Theorem §C5a.9.2]]); in mode form after quantization it is positive only with anticommutators ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]]).
 > - The canonical momentum $\pi_\psi = i\psi^\dagger$ ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-1|Theorem §C5a.9.1]]) is a field, conjugate to $\psi$ in the brackets; $\mathbf P$ is a number (an operator after quantization) generating translations. Problem Set 5's note makes the same distinction.
 > - Assumptions: the field equation (for $T^{00} = i\psi^\dagger\partial_t\psi$ and for conservation only; the expressions for $H$ and $\mathbf P$ hold for any configuration) and fall-off at spatial infinity (reality, conservation).
-> - Used next: $\hat{\mathbf P}$ generates spatial translations ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-7|Theorem §C5a.9.7]]); the quantized field's $\hat H$ and $\hat{\mathbf P}$ in modes ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]]).
+> - Used next: $\mathbf P$ generates spatial translations ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-7|Theorem §C5a.9.7]]); the quantized field's $\hat H$ and $\hat{\mathbf P}$ in modes ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-7|Theorem §C5b.3.7]]).
 
 ^der-c5a-9-6
 
@@ -460,9 +460,9 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 ^thm-c5a-9-8
 
 > [!derivation]- Derivation
-> **1. The generator in the convention of Theorem §C1b.8.1.** There $D = 1 + \frac12\omega_{\mu\nu}S^{\mu\nu}_{(C1.8)}$, with $S^{\mu\nu}_{(C1.8)}$ the real-convention generators of [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]; for the Dirac field $D = \Lambda_{1/2} = 1 - \frac i2\omega_{\mu\nu}S^{\mu\nu} + O(\omega^2)$. The $\omega_{\mu\nu}$ are arbitrary antisymmetric and both generators antisymmetric, so $S^{\mu\nu}_{(C1.8)} = -iS^{\mu\nu}$ ([[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]).
+> **1. The generator in the convention of Theorem §C1b.8.1.** There $D = 1 + \frac12\omega_{\mu\nu}S^{\mu\nu}_{\rm real}$, with $S^{\mu\nu}_{\rm real}$ the real-convention generators of [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]; for the Dirac field $D = \Lambda_{1/2} = 1 - \frac i2\omega_{\mu\nu}S^{\mu\nu} + O(\omega^2)$. The $\omega_{\mu\nu}$ are arbitrary antisymmetric and both generators antisymmetric, so $S^{\mu\nu}_{\rm real} = -iS^{\mu\nu}$ ([[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]]).
 >
-> **2. The spin current.** $\mathcal S^{\lambda\mu\nu} = \sum_a\frac{\partial\mathcal L}{\partial(\partial_\lambda\phi_a)}(S^{\mu\nu}_{(C1.8)}\phi)_a$, summed over $\psi$ and $\bar\psi$. The $\bar\psi$ term is zero ($\partial\mathcal L/\partial(\partial_\lambda\bar\psi) = 0$). The $\psi$ term: $i\bar\psi\gamma^\lambda\cdot(-iS^{\mu\nu}\psi) = \bar\psi\gamma^\lambda S^{\mu\nu}\psi$, and $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]).
+> **2. The spin current.** $\mathcal S^{\lambda\mu\nu} = \sum_a\frac{\partial\mathcal L}{\partial(\partial_\lambda\phi_a)}(S^{\mu\nu}_{\rm real}\phi)_a$, summed over $\psi$ and $\bar\psi$. The $\bar\psi$ term is zero ($\partial\mathcal L/\partial(\partial_\lambda\bar\psi) = 0$). The $\psi$ term: $i\bar\psi\gamma^\lambda\cdot(-iS^{\mu\nu}\psi) = \bar\psi\gamma^\lambda S^{\mu\nu}\psi$, and $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]).
 >
 > **3. The spin charges.** $S^{\mu\nu}_{\rm charge} = \int d^3x\,\mathcal S^{0\mu\nu} = \int d^3x\,\bar\psi\gamma^0S^{\mu\nu}\psi = \int d^3x\,\psi^\dagger S^{\mu\nu}\psi$.
 >
@@ -481,7 +481,7 @@ This is Quantum Mechanics' $H = c\boldsymbol\alpha\cdot\mathbf p + \beta mc^2$ (
 
 *Uses:* [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]], [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]], [[§C3.3 How Fields Transform under the Lorentz Group#^cau-c3-3-2|§C3.3, Caution: Two meanings of S^μν]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-2|Theorem §C5a.3.2]], [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]]
 
-This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma$, conserved while $\mathbf L$ and $\mathbf S$ are not ([[§C13.2★ The Dirac Equation#^thm-c13-2-4|QM Theorem §C13.2.4]]), now as Noether charges of a field: there it follows from commutators with $H$, here from rotation invariance of the action (rule 2).
+This is Quantum Mechanics' $\mathbf J = \mathbf L + \frac\hbar2\boldsymbol\Sigma$, conserved while $\mathbf L$ and $\mathbf S$ are not ([[§C13.2★ The Dirac Equation#^thm-c13-2-4|QM Theorem §C13.2.4]]), now as Noether charges of a field: there it follows from commutators with $H$, here from rotation invariance of the action.
 
 > [!theorem] Theorem §C5a.9.9: The Symmetric Energy–Momentum Tensor of the Dirac Field
 > The Belinfante tensor ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]]) of the Dirac field is, on solutions,

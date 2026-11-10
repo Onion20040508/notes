@@ -459,9 +459,12 @@ $$
 ^rem-c6a-2-2
 
 > [!abstract]- Mathematical background
-> Proved in CB; each line says what the physics above relies on.
+> Proved in CA and CB; each line says what the physics above relies on.
 >
 > - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8|Theorem §CB.1.8]] — the one mathematical fact needed to see what $U(t)$ is not (part 2, the second-order Baker–Campbell–Hausdorff term; Theorem §C6a.2.5).
+> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — part 2, differentiation under the integral: $\hat\pi_I = \partial_t\hat\phi_I$ is obtained by differentiating the smeared mode expansion term by term (Derivation §C6a.2.2, Step 2).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] — part 1, the plane-wave delta function: the space integral of $\hat H_I(t)$ gives $(2\pi)^3\delta^3\bigl(\sum_k\epsilon_k\mathbf p_k\bigr)$, momentum conservation at the vertex (Example §C6a.2.1).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] — the $\mathbf x$ integral may be exchanged with the four momentum integrals, between wave packets (Example §C6a.2.1, Step 2).
 
 > [!remark]- Connections
 > - The interaction-picture field is the free Heisenberg field reused: every formula of C2b for $\hat\phi$ holds for $\hat\phi_I$, which is what makes perturbation theory computable — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C6a.2 The Interaction Picture#^thm-c6a-2-3|Theorem §C6a.2.3]].

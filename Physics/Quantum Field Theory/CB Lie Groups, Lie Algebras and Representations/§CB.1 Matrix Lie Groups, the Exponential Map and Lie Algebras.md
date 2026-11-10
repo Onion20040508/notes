@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors]] · ↑ [[· CB Lie Groups, Lie Algebras and Representations]] · [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover]] →
 
-*Sources (proofs written from these, each checked against the text): B. C. Hall, An Elementary Introduction to Groups and Representations, Chs. 2–5 (https://arxiv.org/abs/math-ph/0005032) · E. Meinrenken, Lie Groups and Lie Algebras, lecture notes, Toronto, Winter 2026, §§2.2, 2.5–2.6, 4 (https://www.math.toronto.edu/mein/teaching/LectureNotes/lie.pdf) · J. M. Lee, Introduction to Smooth Manifolds, 2nd ed., Props. 7.11, 8.41, 8.48, Thms. 8.46, 21.31 · Zuoqin Wang, Lie Groups (USTC), Lecture 12 · P. Etingof, Lie Groups and Lie Algebras (MIT 18.755), Prop. 3.15 · Differentiable Manifolds (591) §§11, 16, 25, 33, 35, 49–50 · the user's PHY 513 notes, Ch. 7 §7.2 (with the course's definitions of PHY 513 Lecture 7, Part A), Ch. 1 §1.3 (the matrix groups, first written in [[§C1a.4 The Lorentz Group|§C1a.4]] and moved here in option-1 batch B3) · Yu §1.3, eqs. (1.50)–(1.57) · B. C. Hall, Quantum Theory for Mathematicians, Ch. 16 · H. Georgi, Lie Algebras in Particle Physics (2nd ed.), §§2.1–2.2 · Yu Zhao-Huan, 量子场论讲义, §3.2 · Peskin & Schroeder, §3.1 · P. Woit, Quantum Theory, Groups and Representations, Ch. 5 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf).*
+*Sources (proofs written from these, each checked against the text): B. C. Hall, An Elementary Introduction to Groups and Representations, Chs. 2–5 (https://arxiv.org/abs/math-ph/0005032) · E. Meinrenken, Lie Groups and Lie Algebras, lecture notes, Toronto, Winter 2026, §§2.2, 2.5–2.6, 4 (https://www.math.toronto.edu/mein/teaching/LectureNotes/lie.pdf) · J. M. Lee, Introduction to Smooth Manifolds, 2nd ed., Props. 7.11, 8.41, 8.48, Thms. 8.46, 21.31 · Zuoqin Wang, Lie Groups (USTC), Lecture 12 · P. Etingof, Lie Groups and Lie Algebras (MIT 18.755), Prop. 3.15 · Differentiable Manifolds (591) §§11, 16, 25, 35, 37, 58, 60 · the user's PHY 513 notes, Ch. 7 §7.2 (with the course's definitions of PHY 513 Lecture 7, Part A), Ch. 1 §1.3 (the matrix groups; the course's use of them is in [[§C1a.4 The Lorentz Group|§C1a.4]]) · Yu §1.3, eqs. (1.50)–(1.57) · B. C. Hall, Quantum Theory for Mathematicians, Ch. 16 · H. Georgi, Lie Algebras in Particle Physics (2nd ed.), §§2.1–2.2 · Yu Zhao-Huan, 量子场论讲义, §3.2 · Peskin & Schroeder, §3.1 · P. Woit, Quantum Theory, Groups and Representations, Ch. 5 (https://www.math.columbia.edu/~woit/QM/qmbook.pdf).*
 
 How do a matrix group and its Lie algebra determine each other, and which statements about representations may be checked on generators alone? The course's definitions of a matrix Lie group and of its Lie algebra are stated here ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-3|Def. §CB.1.3]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]]); the Math vault has Lie groups, Lie algebras and the tangent spaces of the classical groups ([[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|591 Def. §60.1]], [[§58 Lie Bracket and Lie Algebra#^def-58-2|591 Def. §58.2]], [[§25 The Geometric Tangent Space#^thm-25-5|591 Thm. §25.5]]). This section, [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover|§CB.2]] and [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings|§CB.3]] supply what lies between them and what the physics chapters use without proof. Here: the matrix exponential, one-parameter subgroups, why the Lie algebra is a *real* Lie algebra, the closed-subgroup theorem, the Lie algebra as the tangent space at the identity, and the Lie algebras of the classical groups; in [[§CB.2 SU(2) and SO(3) as Matrix Lie Groups꞉ Structure and the Double Cover|§CB.2]]: the first example, the rotation group $SO(3)$ and $SU(2)$ — rotations as exponentials, $SU(2)$ as the 3-sphere covering $SO(3)$ twice, and their common Lie algebra; in [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings|§CB.3]]: homomorphisms and their differentials, the identity component, the adjoint representation, and the covering and integration theorems behind SU(2) → SO(3) and SL(2,ℂ) → SO⁺(1,3). Statements are numbered in reading order with one counter per section (Definition §CB.1.4, Theorem §CB.1.5, …); boxes shown as embeds keep their home numbers.
 
@@ -25,7 +25,7 @@ A (real) Lie algebra, defined in 591; the commutator of any associative product 
 
 ![[§58 Lie Bracket and Lie Algebra#^prop-58-4]]
 
-The matrix groups of the course (first written in [[§C1a.4 The Lorentz Group|§C1a.4]], moved here in option-1 batch B3; their action on spacetime stays there):
+The matrix groups of the course (their action on spacetime is in [[§C1a.4 The Lorentz Group|§C1a.4]]):
 
 > [!definition] Definition §CB.1.1: Matrix Groups
 > A set of invertible matrices closed under products and inverses is a group under matrix multiplication ([[§1 The Definition of a Group#^def-1-1|493 Def. §1.1]]; associativity is automatic), and a subset of one that is itself such a group is a subgroup ([[§4 Subgroups#^def-4-1|493 Def. §4.1]]). The ones used in field theory:
@@ -54,7 +54,7 @@ $SL(2, \mathbb C)$ is a group because $\det(\lambda_1\lambda_2) = \det\lambda_1\
 The course's notion of a matrix Lie group (PHY 513 Lecture 7, Part A):
 
 > [!definition] Definition §CB.1.3: Matrix Lie Group
-> A **matrix Lie group** is a closed subgroup $G$ of $GL(n, \mathbb C)$; it is a smooth manifold, and $SO(3)$, $SU(2)$, $SO^+(1,3)$ are examples.
+> A **matrix Lie group** is a closed subgroup $G$ of $GL(n, \mathbb C)$; it is a smooth manifold ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-15|Theorem §CB.1.15]], proved below), and $SO(3)$, $SU(2)$, $SO^+(1,3)$ are examples.
 >
 > *Source: the user's PHY 513 notes, Ch. 7 §7.2 (Definition "Group, algebra, representation") · Yu §3.2, eqs. (3.35)–(3.36) · PS §3.1, p. 38, eqs. (3.12)–(3.13) · Hall, Defs. 16.1, 16.10, 16.19, Prop. 16.20 · Georgi §§2.1–2.2, eqs. (2.4)–(2.5), (2.18)*
 
@@ -327,6 +327,8 @@ The course defines the Lie algebra of a matrix Lie group through its one-paramet
 > \mathfrak g = \{X \in M_n(\mathbb C) : e^{sX} \in G \text{ for all } s \in \mathbb R\} = T_{\mathbb 1}G, \qquad [X, Y] = XY - YX \in \mathfrak g .
 > $$
 >
+> The definition is the set on the left. That this set is a real subspace closed under the commutator is [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|Theorem §CB.1.12]], and that it equals the tangent space $T_{\mathbb 1}G$ is [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-16|Theorem §CB.1.16]] (both proved below).
+>
 > *Source: the user's PHY 513 notes, Ch. 7 §7.2 (Definition "Group, algebra, representation") · Yu §3.2, eqs. (3.35)–(3.36) · PS §3.1, p. 38, eqs. (3.12)–(3.13) · Hall, Defs. 16.1, 16.10, 16.19, Prop. 16.20 · Georgi §§2.1–2.2, eqs. (2.4)–(2.5), (2.18)*
 
 ^def-cb-1-11
@@ -411,7 +413,7 @@ The closed-subgroup theorem and the tangent-space theorem both rest on one limit
 ^thm-cb-1-15
 
 > [!proof]- Proof
-> *Source: E. Meinrenken, Lie Groups and Lie Algebras, lecture notes (Toronto, Winter 2026), §2.6, Thm. 2.16 and its proof (https://www.math.toronto.edu/mein/teaching/LectureNotes/lie.pdf), written there for $GL(n, \mathbb R)$ and carried over verbatim to $GL(n, \mathbb C)$ regarded as an open subset of $M_n(\mathbb C) \cong \mathbb R^{2n^2}$; the same argument is B. C. Hall, An Elementary Introduction to Groups and Representations, Thm. 3.23 (https://arxiv.org/abs/math-ph/0005032). Decision SPEC-CB 7 allowed a clean source proof here; this is it. The Lie group structure (Step 5) is J. M. Lee, Introduction to Smooth Manifolds, 2nd ed., Prop. 7.11.*
+> *Source: E. Meinrenken, Lie Groups and Lie Algebras, lecture notes (Toronto, Winter 2026), §2.6, Thm. 2.16 and its proof (https://www.math.toronto.edu/mein/teaching/LectureNotes/lie.pdf), written there for $GL(n, \mathbb R)$ and carried over verbatim to $GL(n, \mathbb C)$ regarded as an open subset of $M_n(\mathbb C) \cong \mathbb R^{2n^2}$; the same argument is B. C. Hall, An Elementary Introduction to Groups and Representations, Thm. 3.23 (https://arxiv.org/abs/math-ph/0005032). The Lie group structure (Step 5) is J. M. Lee, Introduction to Smooth Manifolds, 2nd ed., Prop. 7.11.*
 >
 > **Step 1** (a complement and a map). $\mathfrak g$ is a real subspace of $M_n(\mathbb C)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|Theorem §CB.1.12]]). Regard $M_n(\mathbb C)$ as the real Euclidean space $\mathbb R^{2n^2}$ (real and imaginary parts of the entries), with norm $|\cdot|$, and let $\mathfrak d = \mathfrak g^\perp$ be the orthogonal complement, so $M_n(\mathbb C) = \mathfrak g \oplus \mathfrak d$. Define
 >
@@ -446,7 +448,7 @@ The closed-subgroup theorem and the tangent-space theorem both rest on one limit
 > 2. For the classical groups of [[§25 The Geometric Tangent Space#^thm-25-5|591 Thm. §25.5]], $\mathfrak g$ equals 591's geometric tangent space $T^{\mathrm{geo}}_IG$.
 > 3. Under the identification of a left-invariant vector field with its value at $\mathbb 1$, the Lie algebra of left-invariant vector fields of [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|591 Def. §60.4]] is $\mathfrak g$, and the bracket of vector fields becomes the commutator $XY - YX$.
 >
-> *Source: Hall, An Elementary Introduction to Groups and Representations, Ch. 3 §7, Lemma 3.24 (parts 1–2) · Lee, Introduction to Smooth Manifolds, Props. 8.41, 8.48, Thm. 8.46 (part 3) · 591 §25, §49*
+> *Source: Hall, An Elementary Introduction to Groups and Representations, Ch. 3 §7, Lemma 3.24 (parts 1–2) · Lee, Introduction to Smooth Manifolds, Props. 8.41, 8.48, Thm. 8.46 (part 3) · 591 §25, §60*
 
 ^thm-cb-1-16
 
@@ -472,7 +474,7 @@ The closed-subgroup theorem and the tangent-space theorem both rest on one limit
 > **Step 6** (part 3 for $G$; Lee, Thm. 8.46). By [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-15|Theorem §CB.1.15]], $G$ is an embedded submanifold and a Lie group, and its tangent space at $\mathbb 1$ is $\mathfrak g$ (Step 3 of that proof: near $\mathbb 1$, $G$ is the image of $\mathfrak g$ under a diffeomorphism with derivative the identity at $0$). The inclusion $G \to GL(n, \mathbb C)$ is a Lie group homomorphism, and Lee's Thm. 8.46 identifies the left-invariant fields of $G$ with those left-invariant fields of $GL(n, \mathbb C)$ whose value at $\mathbb 1$ lies in $T_{\mathbb 1}G = \mathfrak g$, preserving brackets. With Step 5, identifying a left-invariant field on $G$ with its value at $\mathbb 1$ turns the bracket of vector fields into $XY - YX$.
 >
 > **What the proof shows.**
-> - Three definitions agree: one-parameter subgroups (the course's), velocities of curves (591 §25), left-invariant vector fields (591 §50). The physics chapters may use whichever is convenient.
+> - Three definitions agree: one-parameter subgroups (the course's), velocities of curves (591 §25), left-invariant vector fields (591 §60). The physics chapters may use whichever is convenient.
 > - The sign: left-invariant fields give $+[A, B]$; right-invariant fields would give $-[A, B]$ (Meinrenken, Remark 4.9), one more place where a sign convention hides.
 
 ^pf-cb-1-16
@@ -480,7 +482,7 @@ The closed-subgroup theorem and the tangent-space theorem both rest on one limit
 *Uses:* [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^lem-cb-1-14|Lemma §CB.1.14]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-3|Def. §CB.1.3]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-11|Def. §CB.1.11]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-7|Theorem §CB.1.7]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-8|Theorem §CB.1.8]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|Theorem §CB.1.12]], [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-15|Theorem §CB.1.15]], [[§25 The Geometric Tangent Space#^def-25-1|591 Def. §25.1]], [[§25 The Geometric Tangent Space#^thm-25-5|591 Thm. §25.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|591 Ex. §60.1]], [[§58 Lie Bracket and Lie Algebra#^prop-58-2|591 Prop. §58.2]]
 
 > [!theorem] Theorem §CB.1.17: The Lie Algebras of the Classical Groups
-> With $\eta = \operatorname{diag}(1, -1, -1, -1)$:
+> With the Minkowski metric $g = \operatorname{diag}(1, -1, -1, -1)$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-11|Def. §CB.0.11]]):
 >
 > | group | Lie algebra | real dimension |
 > |---|---|---|
@@ -489,7 +491,7 @@ The closed-subgroup theorem and the tangent-space theorem both rest on one limit
 > | $U(n)$ | $\mathfrak u(n) = \{X : X^\dagger = -X\}$ | $n^2$ |
 > | $SU(n)$ | $\mathfrak{su}(n) = \{X : X^\dagger = -X,\ \operatorname{tr}X = 0\}$ | $n^2 - 1$ |
 > | $O(n)$, $SO(n)$ | $\mathfrak{so}(n) = \{X \in M_n(\mathbb R) : X^{\mathsf T} = -X\}$ | $n(n-1)/2$ |
-> | $O(1,3)$, $SO^+(1,3)$ | $\mathfrak{so}(1,3) = \{X \in M_4(\mathbb R) : X^{\mathsf T}\eta + \eta X = 0\}$ | $6$ |
+> | $O(1,3)$, $SO^+(1,3)$ | $\mathfrak{so}(1,3) = \{X \in M_4(\mathbb R) : X^{\mathsf T}g + gX = 0\}$ | $6$ |
 >
 > In particular $SL(2, \mathbb C)$, a group of complex matrices, has a Lie algebra of real dimension $6$; it is a real Lie algebra that happens to be closed under multiplication by $i$.
 >
@@ -498,7 +500,7 @@ The closed-subgroup theorem and the tangent-space theorem both rest on one limit
 ^thm-cb-1-17
 
 > [!proof]- Proof
-> *Source: B. C. Hall, An Elementary Introduction to Groups and Representations, Ch. 3, §§5.2 (GL), 5.3 (SL), 5.4 (U, SU), 5.5 (O, SO), 5.6 (the generalized orthogonal groups O(n;k), here with $\eta$) (https://arxiv.org/abs/math-ph/0005032). Hall's route for each group: write the defining condition for $e^{sX}$; a condition on $X$ that makes it hold for all $s$ is sufficient; differentiating at $s = 0$ shows it is necessary. Hall settles the trace condition with "$s\operatorname{tr}X \in 2\pi i\mathbb Z$ for all $s$"; Step 2 differentiates instead.*
+> *Source: B. C. Hall, An Elementary Introduction to Groups and Representations, Ch. 3, §§5.2 (GL), 5.3 (SL), 5.4 (U, SU), 5.5 (O, SO), 5.6 (the generalized orthogonal groups O(n;k), here with the metric $g$) (https://arxiv.org/abs/math-ph/0005032). Hall's route for each group: write the defining condition for $e^{sX}$; a condition on $X$ that makes it hold for all $s$ is sufficient; differentiating at $s = 0$ shows it is necessary. Hall settles the trace condition with "$s\operatorname{tr}X \in 2\pi i\mathbb Z$ for all $s$"; Step 2 differentiates instead.*
 >
 > **Step 1** ($GL(n, \mathbb C)$). Every $e^{sX}$ is invertible ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-5|Theorem §CB.1.5]], 2), so $\mathfrak{gl}(n, \mathbb C) = M_n(\mathbb C)$, of real dimension $2n^2$.
 >
@@ -510,7 +512,7 @@ The closed-subgroup theorem and the tangent-space theorem both rest on one limit
 >
 > **Step 5** ($O(n)$, $SO(n)$). If $e^{sX}$ is real for all $s$, then $X = \frac{d}{ds}e^{sX}|_0$ is real. For real $X$, $e^{sX}$ is orthogonal iff $e^{sX^{\mathsf T}} = e^{-sX}$; as in Step 3 this holds for all $s$ iff $X^{\mathsf T} = -X$. Such $X$ has zero diagonal, so $\operatorname{tr}X = 0$ and $\det e^{sX} = 1$: the same $X$ work for $SO(n)$. Dimension: the strictly upper entries, $n(n-1)/2$.
 >
-> **Step 6** ($O(1,3)$, $SO^+(1,3)$). $\Lambda \in O(1,3)$ iff $\Lambda^{\mathsf T}\eta\Lambda = \eta$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]). As in Step 5, $X$ is real. If $X^{\mathsf T}\eta + \eta X = 0$, then $X^{\mathsf T} = -\eta X\eta^{-1}$ ($\eta^2 = \mathbb 1$), so $(e^{sX})^{\mathsf T} = e^{sX^{\mathsf T}} = \eta e^{-sX}\eta^{-1}$ (Theorem §CB.1.5, 4), and $(e^{sX})^{\mathsf T}\eta e^{sX} = \eta e^{-sX}\eta^{-1}\eta e^{sX} = \eta$. Conversely, differentiating $(e^{sX})^{\mathsf T}\eta e^{sX} = \eta$ at $s = 0$ (product rule) gives $X^{\mathsf T}\eta + \eta X = 0$. For $SO^+(1,3)$: the condition says $\eta X$ is antisymmetric, so $(\eta X)_{\mu\mu} = \eta_{\mu\mu}X_{\mu\mu} = 0$, $\operatorname{tr}X = 0$ and $\det e^{sX} = 1$; and $s \mapsto (e^{sX})^0{}_0$ is continuous, equals $1$ at $s = 0$, and never lies in $(-1, 1)$ (every Lorentz matrix has $|\Lambda^0{}_0| \ge 1$, [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-13|Theorem §CB.0.13]], 4), so by the intermediate value theorem it stays $\ge 1$: $e^{sX}$ is orthochronous. So $O(1,3)$ and $SO^+(1,3)$ have the same algebra. Dimension: $X \mapsto \eta X$ is a bijection onto the real antisymmetric $4\times4$ matrices, $6$ parameters.
+> **Step 6** ($O(1,3)$, $SO^+(1,3)$). $\Lambda \in O(1,3)$ iff $\Lambda^{\mathsf T}g\Lambda = g$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]]). As in Step 5, $X$ is real. If $X^{\mathsf T}g + gX = 0$, then $X^{\mathsf T} = -gXg^{-1}$ ($g^2 = \mathbb 1$), so $(e^{sX})^{\mathsf T} = e^{sX^{\mathsf T}} = g\,e^{-sX}g^{-1}$ (Theorem §CB.1.5, 4), and $(e^{sX})^{\mathsf T}g\,e^{sX} = g\,e^{-sX}g^{-1}g\,e^{sX} = g$. Conversely, differentiating $(e^{sX})^{\mathsf T}g\,e^{sX} = g$ at $s = 0$ (product rule) gives $X^{\mathsf T}g + gX = 0$. For $SO^+(1,3)$: the condition says $gX$ is antisymmetric, so $(gX)_{\mu\mu} = g_{\mu\mu}X_{\mu\mu} = 0$, $\operatorname{tr}X = 0$ and $\det e^{sX} = 1$; and $s \mapsto (e^{sX})^0{}_0$ is continuous, equals $1$ at $s = 0$, and never lies in $(-1, 1)$ (every Lorentz matrix has $|\Lambda^0{}_0| \ge 1$, [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-13|Theorem §CB.0.13]], 4), so by the intermediate value theorem it stays $\ge 1$: $e^{sX}$ is orthochronous. So $O(1,3)$ and $SO^+(1,3)$ have the same algebra. Dimension: $X \mapsto gX$ is a bijection onto the real antisymmetric $4\times4$ matrices, $6$ parameters.
 >
 > **Step 7** ($SL(2, \mathbb C)$ as a real algebra). By Step 2, $\mathfrak{sl}(2, \mathbb C)$ is the traceless complex $2\times2$ matrices, real dimension $2\cdot4 - 2 = 6$, and $iX$ is traceless whenever $X$ is: closed under $i$, unlike $\mathfrak{su}(2)$ ([[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^thm-cb-1-12|Theorem §CB.1.12]], Step 3 of the proof).
 >

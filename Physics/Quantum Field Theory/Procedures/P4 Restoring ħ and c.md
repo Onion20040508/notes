@@ -35,7 +35,10 @@ Turns a natural-units formula ($\hbar = c = 1$) into one valid in any units, by 
 | Decay length of the Wightman function | length | [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3\|Theorem §C2b.3.3]] (by-product of Step 5) | $\hbar/mc$ ([[§B4.1 The Klein–Gordon Equation#^def-b4-1-2\|REL Def. §B4.1.2]]) |
 | Sakurai's natural-units relativistic quantum mechanics | energies; inverse lengths; coupling | [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^cau-c13-1-1\|QM Caution: Units, metric and symbols in Chapter C13★]] | $m \to mc^2$, $m \to mc/\hbar$, $e^2 \to e^2/\hbar c$ |
 | Charges in Heaviside–Lorentz units | pure number $\alpha$ | [[§C1a.7 Relativistic Electrodynamics in Index Form#^def-c1a-7-1\|Def. §C1a.7.1]] | $\alpha = e^2/4\pi\hbar c$ |
-| Dirac and vector fields, loop integrals | | vector propagators: [[§C4.11 Vector-Field Propagators\|§C4.11]]; QFT C5a–C5b; C7 (planned) | |
+| Width and lifetime of an unstable particle | energy; time | [[§C6b.5 Decay Widths#^rem-c6b-5-1\|§C6b.5, Remark: Why a rate is quoted as an energy]] | $\hbar\Gamma$; $\tau = \hbar/(\hbar\Gamma)$, $\hbar/(1\ \text{GeV}) = 6.582\times10^{-25}$ s |
+| Range of the Yukawa potential | length | [[§C6d.7 The Yukawa Potential#^thm-c6d-7-3\|Theorem §C6d.7.3]] | $1/m_\phi \to \hbar/m_\phi c$ |
+| Dirac and vector fields | as for the scalar field | Proca mass, $m \to mc/\hbar$ with the dictionary of [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-5\|Theorem §C1a.7.5]] ([[§C4.2★ The Proca Field\|§C4.2★]], Conventions); single-particle Dirac Hamiltonian with $\hbar$ and $c$: [[§C13.2★ The Dirac Equation#^pr-c13-2-1\|QM Principle §C13.2.1]]; vector propagators: [[§C4.11 Vector-Field Propagators\|§C4.11]]; Dirac field: [[· C5a Spinors and the Dirac Equation\|C5a]], [[· C5b The Quantum Spinor Field\|C5b]] | — |
+| Loop integrals | | second semester (planned) | |
 
 ## Pitfalls
 

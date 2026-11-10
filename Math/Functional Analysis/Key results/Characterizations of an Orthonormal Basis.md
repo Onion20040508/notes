@@ -12,7 +12,7 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses
 - [[§27 Orthonormal Sets and Bases#^def-27-2|Definition §27.2: Complete Orthogonal Set]]
-- [[§27 Orthonormal Sets and Bases#^def-27-4|Definition §27.4: Orthonormal Basis]]
+- [[§27 Orthonormal Sets and Bases#^def-27-5|Definition §27.5: Orthonormal Basis]]
 - [[§27 Orthonormal Sets and Bases#^prop-27-6|Proposition §27.6: The Orthonormal Expansion Converges]]
 - [[§27 Orthonormal Sets and Bases#^lem-27-7|Lemma §27.7: Coefficients and Norm of the Expansion]]
 

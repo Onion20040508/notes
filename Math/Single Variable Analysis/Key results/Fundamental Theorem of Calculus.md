@@ -43,7 +43,7 @@ tags: [real-analysis, hub]
 - [[§30 Boundedness and Continuity#^prop-30-4|Proposition §30.4: C^m(overlineOmega) is a Banach Space]]
 - [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|Lemma §33.2: Integration by Parts against a Test Function]]
 - [[§33 Sobolev Spaces and Weak Derivatives#^ex-33-3|Example §33.3: sgn x has No Weak Derivative]]
-- [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-8|Theorem §33.8: Poincaré Inequality]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^thm-33-11|Theorem §33.11: Poincaré Inequality]]
 
 ## Connections
 - Generalized by Stokes's theorem $\int_M d\omega=\int_{\partial M}\omega$ (Lee, *Smooth Manifolds*, Ch. 16; his Example 16.12 recovers FTC as the case $M=[a,b]$).

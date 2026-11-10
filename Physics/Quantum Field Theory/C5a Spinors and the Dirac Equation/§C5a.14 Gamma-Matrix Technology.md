@@ -19,7 +19,7 @@ How are long products of $\gamma$ matrices shortened, traced and reduced, as eve
 
 ## Products and slashes
 
-The antisymmetrized products of $\gamma$ matrices used below are defined in §C5a.1 ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8|Def. §CB.12.8]]).
+The antisymmetrized products $\gamma^{[\mu_1\cdots\mu_k]}$ of $\gamma$ matrices used below (weight $1/k!$) are defined in [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8|Def. §CB.12.8]] (recalled in [[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-4|Theorem §C5a.1.4]]).
 
 The antisymmetrized product vanishes when two indices coincide (the terms cancel in pairs), and equals the plain product when all indices are distinct (each term, reordered by anticommuting distinct $\gamma$'s, carries the sign of its permutation twice). So $\gamma^{[\mu_1\cdots\mu_n]} = 0$ for $n \ge 5$: only four distinct $\gamma$'s exist.
 
@@ -125,7 +125,7 @@ The antisymmetrized product vanishes when two indices coincide (the terms cancel
 >
 > using $\gamma_\mu\gamma^\mu = 4$ from (a); then $2\slashed{q}\slashed{p} = 2(2p\cdot q - \slashed{p}\slashed{q})$ gives $4p\cdot q - 2\slashed{p}\slashed{q} - 2\slashed{p}\slashed{q} + 4\slashed{p}\slashed{q} = 4p\cdot q$.
 >
-> **(d) From (c).** $\gamma_\mu\slashed{k}\slashed{p}\slashed{q}\gamma^\mu = \gamma_\mu\slashed{k}\slashed{p}\,q_\sigma(2\delta^{\sigma\mu} - \gamma^\mu\gamma^\sigma) = 2\gamma_\mu\slashed{k}\slashed{p}\,q^\mu - (\gamma_\mu\slashed{k}\slashed{p}\gamma^\mu)\slashed{q}$. The second term is $4(k\cdot p)\slashed{q}$ by (c). In the first, $\slashed{k}\slashed{p} = k_\nu p_\rho(2g^{\nu\rho} - \gamma^\rho\gamma^\nu)$, so $2\gamma_\mu\slashed{k}\slashed{p}\,q^\mu = 4(k\cdot p)\slashed{q} - 2\slashed{q}\slashed{p}\slashed{k}$. Total: $4(k\cdot p)\slashed{q} - 2\slashed{q}\slashed{p}\slashed{k} - 4(k\cdot p)\slashed{q} = -2\slashed{q}\slashed{p}\slashed{k}$.
+> **(d) From (c).** $\gamma_\mu\slashed{k}\slashed{p}\slashed{q}\gamma^\mu = \gamma_\mu\slashed{k}\slashed{p}\,q^\sigma(2\delta_\sigma{}^\mu - \gamma^\mu\gamma_\sigma) = 2\gamma_\mu\slashed{k}\slashed{p}\,q^\mu - (\gamma_\mu\slashed{k}\slashed{p}\gamma^\mu)\slashed{q}$. The second term is $4(k\cdot p)\slashed{q}$ by (c). In the first, $\slashed{k}\slashed{p} = k_\nu p_\rho(2g^{\nu\rho} - \gamma^\rho\gamma^\nu)$, so $2\gamma_\mu\slashed{k}\slashed{p}\,q^\mu = 4(k\cdot p)\slashed{q} - 2\slashed{q}\slashed{p}\slashed{k}$. Total: $4(k\cdot p)\slashed{q} - 2\slashed{q}\slashed{p}\slashed{k} - 4(k\cdot p)\slashed{q} = -2\slashed{q}\slashed{p}\slashed{k}$.
 >
 > **What the derivation shows**
 > - The component route of (a)–(b) needs only $(\gamma^0)^2 = 1$, $(\gamma^i)^2 = -1$ and anticommutation; the covariant route needs only the anticommutator and handles longer strings with the same pattern (the user's notes' comparison).

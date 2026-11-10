@@ -1293,7 +1293,7 @@ an intersection of two open sets.
 \end{proof}
 
 \begin{rembox}[Why the Universal Property Matters]\label{rem:why-universal-property-matters}
-To check that $F$ is continuous, it suffices to check it component by component. The same pattern reappears for \emph{differentiability}: a map into a product of manifolds is smooth iff its components are. In Lee's language this is the \emph{characteristic property} of the product topology (Lee Prop.\ A.16), and it characterizes the product topology uniquely (Corollary~\ref{cor:univ-product-characterizes} below). Together with the previous proposition this gives two independent abstract descriptions of the same topology---``coarsest making projections continuous'' and ``the one that lets you check maps componentwise.''
+To check that $F$ is continuous, it suffices to check it component by component. The same pattern reappears for \emph{differentiability}: a map into a product of manifolds is smooth iff its components are. In Lee's language this is the \emph{characteristic property} of the product topology (Lee Prop.\ A.23(a)), and it characterizes the product topology uniquely (Corollary~\ref{cor:univ-product-characterizes} below). Together with the previous proposition this gives two independent abstract descriptions of the same topology---``coarsest making projections continuous'' and ``the one that lets you check maps componentwise.''
 
 Compare Proposition~\ref{prop:univ-subspace}: the subspace topology is the coarsest making the inclusion continuous, and continuity of a map \emph{into} $S$ is checked by composing with $\iota$. The quotient topology will complete the pattern in the opposite direction (Corollary~\ref{prop:univ-quotient}): it is the \emph{finest} making $\pi$ continuous, and continuity of a map \emph{out of} $X/{\sim}$ is checked by precomposing with $\pi$.
 \end{rembox}
@@ -15767,7 +15767,7 @@ The mixed-partials condition is necessary but not sufficient, and this is the be
 \[
 \omega = \frac{x\, dy - y\, dx}{x^2 + y^2} \quad \text{on } \mathbb{R}^2 \setminus \{0\} .
 \]
-It satisfies the condition but is not $df$; Example~\ref{ex:angle-form} below writes the argument out: both mixed partials equal $(y^2 - x^2)/(x^2 + y^2)^2$, while $\omega$ takes the value $1$ on the velocity of the unit circle (\ref{sec:velocities}) at every time, which a $df$ cannot do along a closed curve. The hole at the origin is what makes this possible: on all of $\mathbb{R}^2$ --- indeed on any star-shaped domain --- the condition is sufficient (Lee, Corollary~11.50).
+It satisfies the condition but is not $df$; Example~\ref{ex:angle-form} below writes the argument out: both mixed partials equal $(y^2 - x^2)/(x^2 + y^2)^2$, while $\omega$ takes the value $1$ on the velocity of the unit circle (\ref{sec:velocities}) at every time, which a $df$ cannot do along a closed curve. The hole at the origin is what makes this possible: on all of $\mathbb{R}^2$ --- indeed on any star-shaped domain --- the condition is sufficient (Lee, Theorem~11.49).
 \end{rembox}
 
 \begin{exbox}[The Angle Form on the Punctured Plane]\exlabel{ex:angle-form}
@@ -15807,7 +15807,7 @@ It satisfies the condition but is not $df$; Example~\ref{ex:angle-form} below wr
     x\,dy - y\,dx = r\cos\vartheta\,(\sin\vartheta\, dr + r\cos\vartheta\, d\vartheta) - r\sin\vartheta\,(\cos\vartheta\, dr - r\sin\vartheta\, d\vartheta) = r^2\, d\vartheta ,
     \]
     so $\omega = r^2\, d\vartheta / r^2 = d\vartheta$ on $U$: on the slit plane $\omega$ \emph{is} exact, with $f = \vartheta$. The obstruction is global: going once around the hole, $\vartheta$ increases by $2\pi$ (step 6), so it cannot be continued continuously across the slit, where it jumps from near $\pi$ (just above) to near $-\pi$ (just below). Any $f$ with $df = \omega$ on all of $M$ would be such a continuation (two functions with the same differential on a connected open set differ by a constant: Proposition~\ref{prop:zero-differential}, applied to their difference).
-    \item \emph{Why the hole matters.} On $\mathbb{R}^2$ itself, or on any star-shaped open set (a disk, the slit plane $U$), a closed form is exact (Poincaré lemma; Lee, Corollary~11.50, not proved in these notes). $M$ is not star-shaped, and step 6 shows the lemma cannot extend to it: whether closed forms are exact depends on the topology of the domain, which is what de Rham cohomology measures.
+    \item \emph{Why the hole matters.} On $\mathbb{R}^2$ itself, or on any star-shaped open set (a disk, the slit plane $U$), a closed form is exact (Poincaré lemma; Lee, Theorem~11.49, not proved in these notes). $M$ is not star-shaped, and step 6 shows the lemma cannot extend to it: whether closed forms are exact depends on the topology of the domain, which is what de Rham cohomology measures.
 \end{enumerate}
 \end{exbox}
 
@@ -31646,7 +31646,7 @@ Writing out what $L$ is, the group multiplication appears explicitly for the fir
 
 This is the case $g = \varphi^e(s)$ of $\varphi^g(t) = g\,\varphi^e(t)$ in Theorem~\ref{thm:left-invariant-complete}, combined with the group law $\varphi^{\varphi^e(s)}(t) = \varphi^e(t + s)$. Since $s + t = t + s$, the elements $\varphi_s(e)$ and $\varphi_t(e)$ commute: a one-parameter subgroup is abelian, even in a non-abelian $G$.
 
-Conversely, every smooth group morphism $\mathbb{R} \to G$ arises this way; this was not pursued in lecture. \textit{(Filled in, for smooth morphisms.)} If $\gamma : \mathbb{R} \to G$ is a smooth group morphism and $A = \dot\gamma(0)$, then differentiating $\gamma(t + s) = \gamma(t)\gamma(s) = L_{\gamma(t)}(\gamma(s))$ in $s$ at $s = 0$ gives $\dot\gamma(t) = d(L_{\gamma(t)})_e(A) = \mathbf{X}^A_{\gamma(t)}$ (Corollary~\ref{cor:velocity-composite}). So $\gamma$ is the integral curve of $\mathbf{X}^A$ starting at $\gamma(0) = e$, and $\gamma(t) = \varphi^A_t(e)$. Lee, Theorem~20.1, also covers continuous morphisms.
+Conversely, every smooth group morphism $\mathbb{R} \to G$ arises this way; this was not pursued in lecture. \textit{(Filled in, for smooth morphisms.)} If $\gamma : \mathbb{R} \to G$ is a smooth group morphism and $A = \dot\gamma(0)$, then differentiating $\gamma(t + s) = \gamma(t)\gamma(s) = L_{\gamma(t)}(\gamma(s))$ in $s$ at $s = 0$ gives $\dot\gamma(t) = d(L_{\gamma(t)})_e(A) = \mathbf{X}^A_{\gamma(t)}$ (Corollary~\ref{cor:velocity-composite}). So $\gamma$ is the integral curve of $\mathbf{X}^A$ starting at $\gamma(0) = e$, and $\gamma(t) = \varphi^A_t(e)$. Continuous group morphisms $\mathbb{R} \to G$ are automatically smooth (Lee, Problem~20-11(a); not proved in these notes), so the same holds for them.
 
 The one-parameter subgroup is an orbit: the left-invariant field $\mathbf{X}^A$ is complete, so it generates an $\mathbb{R}$-action (Proposition~\ref{prop:complete-flow}), and $t \mapsto \varphi^A_t(e)$ is the orbit of the identity.
 
@@ -33350,7 +33350,7 @@ Linear algebra & The toolkit of \ref{sec:vector-spaces}, including the pairing t
 \ref{sec:recap-tangent}--\ref{sec:recap-objects}\ Recaps: tangent vectors, covectors & Chapters 3 and 11 (overview) \\
 \ref{sec:tangent-bundle}\ The tangent bundle & Chapter 3, \emph{The Tangent Bundle} (Lemma 1.35, Proposition 3.18) \\
 \ref{sec:cotangent-bundle}\ The cotangent bundle & Chapter 11, \emph{The Cotangent Bundle} (Proposition 11.9); Lemma 1.35 \\
-\ref{sec:d-operator}\ One-forms, the operator $d$, pullbacks & Chapter 11, \emph{Covector Fields} (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) \\
+\ref{sec:d-operator}\ One-forms, the operator $d$, pullbacks & Chapter 11, \emph{Covector Fields} (Propositions 11.11 and 11.25, Example 11.36, Theorem 11.49) \\
 \ref{sec:fields}\ Vector fields & Chapter 8 (Propositions 8.1, 8.14 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) \\
 \ref{sec:lie-bracket}\ Lie bracket and Lie algebra; related fields & Chapter 8, \emph{Lie Brackets} and \emph{Lie Algebras} (Lemma 8.25, Propositions 8.26 and 8.28); \emph{Vector Fields and Smooth Maps} (Propositions 8.16 and 8.19, Corollary 8.21); Proposition 8.30, Corollary 8.31 \\
 \ref{sec:lie-groups}\ Lie groups and left-invariant vector fields & Chapter 7 (Examples 7.3, 7.27--7.30); Problem 7-2; Chapter 8, \emph{Lie Algebras} (Proposition 8.33, Theorem 8.37) \\

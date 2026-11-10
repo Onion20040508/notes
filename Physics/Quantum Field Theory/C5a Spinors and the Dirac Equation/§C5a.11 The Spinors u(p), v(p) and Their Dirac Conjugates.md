@@ -103,6 +103,8 @@ Which spinors does the boost of the rest-frame solutions give, and what are thei
 >
 > *Source: Yu §5.4.2, eqs. (5.147)–(5.157) · the user's pre-course notes, §5.4 · the user's PHY 513 notes, Ch. 9, "Correspondence with Yu"*
 
+^der-c5a-11-1c
+
 *Uses:* [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-2|Def. §C5a.10.2]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-7|Theorem §C5a.10.7]]
 
 > [!theorem] Theorem §C5a.11.2: The Dirac Conjugate of u(p)
@@ -396,6 +398,8 @@ Which spinors does the boost of the rest-frame solutions give, and what are thei
 > $$
 >
 > the formula of the statement: the minus sign of $\bar v_0^s$ rides along, as it did for the column.
+
+^der-c5a-11-4c
 
 *Uses:* [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^thm-c5a-11-3|Theorem §C5a.11.3]], [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates#^der-c5a-11-2c|Derivation §C5a.11.2, third route]]
 

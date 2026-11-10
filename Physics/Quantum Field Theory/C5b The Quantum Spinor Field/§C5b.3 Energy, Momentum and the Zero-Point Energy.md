@@ -71,7 +71,7 @@ The derivation below uses the Clifford relation of the Dirac matrices, $(\gamma^
 > \hat H = \sum_{s}\int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\Bigl(\hat a^{s\dagger}_{\mathbf p}\hat a^s_{\mathbf p} - \hat b^s_{\mathbf p}\hat b^{s\dagger}_{\mathbf p}\Bigr) ,
 > $$
 >
-> independent of time. The terms that change the number of quanta ($\hat a^\dagger \hat b^\dagger$, $ba$) vanish identically.
+> independent of time. The terms that change the number of quanta ($\hat a^\dagger \hat b^\dagger$, $\hat b\hat a$) vanish identically.
 >
 > *Scalar analogue:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]]; complex field [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]].
 >
@@ -82,7 +82,7 @@ The derivation below uses the Clifford relation of the Dirac matrices, $(\gamma^
 ^thm-c5b-3-2
 
 > [!derivation]- Derivation
-> **1. $H_{\text{s.p.}}$ on the modes.** By Steps 3 and 5 of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-1|Derivation §C5b.2.1]], $H_{\text{s.p.}}\bigl(u^r(q)e^{-iq\cdot x}\bigr) = E_{\mathbf q}u^r(q)e^{-iq\cdot x}$ and $H_{\text{s.p.}}\bigl(v^r(q)e^{iq\cdot x}\bigr) = -E_{\mathbf q}v^r(q)e^{iq\cdot x}$ (the spatial momentum of $e^{iq\cdot x}$ is $-\mathbf q$, and $H_{\text{s.p.}}(-\mathbf q)v^r(q) = -E_{\mathbf q}v^r(q)$). So
+> **1. $H_{\text{s.p.}}$ on the modes.** By [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]] (also Steps 3 and 5 of [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^der-c5b-2-1|Derivation §C5b.2.1]]), $H_{\text{s.p.}}\bigl(u^r(q)e^{-iq\cdot x}\bigr) = E_{\mathbf q}u^r(q)e^{-iq\cdot x}$ and $H_{\text{s.p.}}\bigl(v^r(q)e^{iq\cdot x}\bigr) = -E_{\mathbf q}v^r(q)e^{iq\cdot x}$ (the spatial momentum of $e^{iq\cdot x}$ is $-\mathbf q$, and $H_{\text{s.p.}}(-\mathbf q)v^r(q) = -E_{\mathbf q}v^r(q)$). So
 >
 > $$
 > H_{\text{s.p.}}\hat\psi = \int\frac{d^3q}{(2\pi)^3}\frac{E_{\mathbf q}}{\sqrt{2E_{\mathbf q}}}\sum_r\Bigl(\hat a^r_{\mathbf q}u^r(q)e^{-iq\cdot x} - \hat b^{r\dagger}_{\mathbf q}v^r(q)e^{iq\cdot x}\Bigr) .
@@ -114,7 +114,7 @@ The derivation below uses the Clifford relation of the Dirac matrices, $(\gamma^
 
 ^der-c5b-3-2
 
-*Uses:* [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|Theorem §C5a.12.3]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|Theorem §C5a.12.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
+*Uses:* [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-1|Theorem §C5b.3.1]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-2|Theorem §C5b.2.2]], [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]], [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-1|Theorem §C5b.2.1]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|Theorem §C5a.12.3]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|Theorem §C5a.12.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]]
 
 *Procedure:* [[P1 Canonical Quantization#^p1-7|P1, step 7]]
 
@@ -274,6 +274,19 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 
 ^rem-c5b-3-1
 
+> [!caution] Caution: The sign of the constant in the commutator case
+> The sentence on the commutator case in [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^rem-c5b-3-1|Remark: Two minus signs make a plus]] follows the user's PHY 513 notes (Lecture 10 update, Ch. 10 §10.5, after eq. (diracH)), which write the reordering constant as $-(2\pi)^3\delta^3(\mathbf 0)$. With the commutator that commutator quantization gives for the antiparticle modes, $[\hat b, \hat b^\dagger] = -(2\pi)^3\delta^3$ ([[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-5|Theorem §C5b.2.5]]), $\hat b\hat b^\dagger = \hat b^\dagger\hat b + [\hat b, \hat b^\dagger] = \hat b^\dagger\hat b - (2\pi)^3\delta^3(\mathbf 0)$, so
+>
+> $$
+> -\hat b\hat b^\dagger = -\hat b^\dagger\hat b + (2\pi)^3\delta^3(\mathbf 0) ,
+> $$
+>
+> the sign of Yu, eq. (5.237): $\hat H = \sum_s\int\frac{d^3p}{(2\pi)^3}E_{\mathbf p}\bigl(\hat a^\dagger\hat a - \hat b^\dagger\hat b\bigr) + (2\pi)^3\delta^3(\mathbf 0)\int\frac{d^3p}{(2\pi)^3}2E_{\mathbf p}$ (Yu's result in the notation of these notes; spin and momentum labels suppressed). The constant $-(2\pi)^3\delta^3(\mathbf 0)$ would belong to $[\hat b, \hat b^\dagger] = +(2\pi)^3\delta^3$, which the equal-time commutators do not give for the antiparticle modes. The conclusion of the remark does not depend on the constant: the operator term is $-E_{\mathbf p}\hat b^\dagger\hat b$ in the commutator case, and the antiparticle energies stay negative ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]).
+>
+> *Source: Yu §5.5.1, eqs. (5.236)–(5.237) · [[§C5b.2 Mode Expansion and the Anticommutator Algebra#^thm-c5b-2-5|Theorem §C5b.2.5]]*
+
+^cau-c5b-3-2
+
 ## The zero-point energy
 
 > [!theorem] Theorem §C5b.3.6: The Fermionic Zero-Point Energy Is Negative
@@ -325,7 +338,7 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 > [!remark] Remark: Empty and filled are labels
 > Take one pair $\hat b$, $\hat b^\dagger$ with $\{\hat b, \hat b^\dagger\} = 1$, $\hat b^2 = 0$. If $\hat b|0\rangle = 0$, then $|1\rangle = \hat b^\dagger|0\rangle$, $\hat b|1\rangle = |0\rangle$, $\hat b^\dagger|1\rangle = 0$: a two-state space ([[§C12.2★ Second Quantization#^thm-c12-2-1|QM Theorem §C12.2.1]], 3). One could equally call $|1\rangle$ empty and $\hat{\tilde b} = \hat b^\dagger$ its annihilator: $\{\hat{\tilde b}, \hat{\tilde b}^\dagger\} = 1$ again, because the anticommutator is symmetric. The two descriptions are the same until an observable, here the energy, says which state is lower; the lower one is called empty, and the dagger goes on the operator that creates positive energy. With commutators the relabelling changes the sign of the algebra ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]], 2), which is why the trick is available only for fermions; and $(\hat{\tilde b}^\dagger)^2 = 0$ means a mode cannot be filled twice.
 >
-> *Source: PS §3.5, pp. 57 (the single pair $\hat b$, $\hat b^\dagger$; eq. (3.98))*
+> *Source: PS §3.5, p. 57 (the single pair $\hat b$, $\hat b^\dagger$; eq. (3.98))*
 
 ^rem-c5b-3-4
 
@@ -407,10 +420,17 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 *Procedure:* [[P1 Canonical Quantization#^p1-8|P1, step 8]]
 
 > [!abstract]- Mathematical background
-> Proved in CB; each line says what the physics above relies on.
+> Proved in CB and CA; each line says what the physics above relies on.
 >
-> The derivation below uses the Clifford relation of the Dirac matrices, $(\gamma^0)^2 = 1$:
+> Derivation §C5b.3.1 uses the Clifford relation of the Dirac matrices, $(\gamma^0)^2 = 1$:
 > - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]] — Dirac matrices and the Clifford relation ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
+>
+> The mode forms of $\hat H$ come from Fourier integrals of generalized functions:
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] — derivative ↔ multiplication: on $e^{i\mathbf k\cdot\mathbf x}$, $-i\partial_j$ becomes $k^j$, so $H_{\text{s.p.}}$ acts on a plane wave as the matrix $H_{\text{s.p.}}(\mathbf k)$ (Derivation §C5b.3.1, Step 5).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] — the split exponentials and the exchange of the $\mathbf x$- and momentum integrals, valid for wave packets (Derivation §C5b.3.2, Step 3).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the $d^3x$ integral of two plane waves is $(2\pi)^3\delta^3(\mathbf p \mp \mathbf q)$ in $\mathcal S'$ (Derivation §C5b.3.2, both routes).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], part 1 — a smooth prefactor is evaluated on the support of δ: $E_{\mathbf q} = E_{\mathbf p}$ and the phases after the delta integrations (Derivation §C5b.3.2, both routes).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], part 1 — relabelling $\mathbf p \to -\mathbf p$ with Jacobian $1$ in the $\hat b$ term (second route of Theorem §C5b.3.2, Step 6).
 
 > [!remark]- Connections
 > - The free Dirac Hamiltonian is the second-quantized form of the single-particle Hamiltonian, $\hat H = \int\hat\psi^\dagger H_{\text{s.p.}}\hat\psi$, exactly the one-body operator of nonrelativistic second quantization; what is new is that half of the modes of $H_{\text{s.p.}}$ are written with creation operators in front — [[§C12.2★ Second Quantization#^thm-c12-2-4|QM Theorem §C12.2.4]], [[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-3|§C5b.5, Remark: The Dirac sea, read in the field]].

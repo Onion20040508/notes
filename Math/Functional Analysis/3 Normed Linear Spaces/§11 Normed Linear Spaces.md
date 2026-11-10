@@ -355,15 +355,15 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 > [!remark]- Connections
 > - Interior points in $\mathbb{R}^n$: [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]].
 
-> [!theorem] Proposition §11.8: Metric Interior Points are Interior Points
+> [!theorem] Proposition §11.9: Metric Interior Points are Interior Points
 > Let $K$ be a subset of a normed linear space $X$. Every metric interior point of $K$ is an interior point of $K$ in the sense of Definition [[§7 Convex Sets and the Gauge#^def-7-1|§7.1]].
 
-^prop-11-8
+^prop-11-9
 
 > [!proof]+ Proof
 > Let $B_r(x_0) \subset K$ and $y \in X$. If $y = 0$, then $x_0 + ty = x_0 \in K$ for all $t$. If $y \neq 0$, put $\varepsilon(y) = r/\|y\|$; for $|t| < \varepsilon(y)$, $\|(x_0 + ty) - x_0\| = |t|\,\|y\| < r$, so $x_0 + ty \in B_r(x_0) \subset K$. (Not covered in lecture.)
 
-^pf-11-8
+^pf-11-9
 
 *Uses:* [[§11 Normed Linear Spaces#^def-11-11|Def. §11.11]], [[§11 Normed Linear Spaces#^def-11-10|Def. §11.10]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
 

@@ -66,10 +66,10 @@ The converse direction — starting from a convex set and producing a $p$ — is
 
 > [!remark]- Connections
 > - The topological interior: [[§8 Interior and Closure#^def-8-1|590 Def. §8.1]]; in $\mathbb{R}^n$, [[§2 Open and Closed Sets#^def-2-3|452 Def. §2.3]].
-> - Metric interior points are interior points in this sense, not conversely: [[§11 Normed Linear Spaces#^prop-11-8|§11.8]], [[§11 Normed Linear Spaces#^ex-11-4|Ex. §11.4]].
+> - Metric interior points are interior points in this sense, not conversely: [[§11 Normed Linear Spaces#^prop-11-9|§11.9]], [[§11 Normed Linear Spaces#^ex-11-4|Ex. §11.4]].
 
 > [!remark] Remark: Comparison with the Classical Notion
-> In a metric space, $x_0$ is an interior point of $K$ if some ball around $x_0$ lies in $K$. Here there is no ball. The definition says instead: in every direction $y$, one can move a little way from $x_0$ (in both senses, $t > 0$ and $t < 0$) and stay inside $K$. The allowed distance $\varepsilon(y)$ depends on the direction and is not uniform: $K$ may be very thin in one direction and long in another, and there need be no single $\varepsilon$ that works for all $y$. Whenever both notions make sense, an interior point in the classical sense is one in this sense, but not conversely (Proposition [[§11 Normed Linear Spaces#^prop-11-8|§11.8]] and the example after it, [[§11 Normed Linear Spaces#^ex-11-4|Ex. §11.4]]); this is the only notion available in a bare linear space.
+> In a metric space, $x_0$ is an interior point of $K$ if some ball around $x_0$ lies in $K$. Here there is no ball. The definition says instead: in every direction $y$, one can move a little way from $x_0$ (in both senses, $t > 0$ and $t < 0$) and stay inside $K$. The allowed distance $\varepsilon(y)$ depends on the direction and is not uniform: $K$ may be very thin in one direction and long in another, and there need be no single $\varepsilon$ that works for all $y$. Whenever both notions make sense, an interior point in the classical sense is one in this sense, but not conversely (Proposition [[§11 Normed Linear Spaces#^prop-11-9|§11.9]] and the example after it, [[§11 Normed Linear Spaces#^ex-11-4|Ex. §11.4]]); this is the only notion available in a bare linear space.
 >
 > ![[m556-5-1.svg]]
 > *Segments $x_0 + ty$, $|t| < \varepsilon(y)$, inside an elongated $K$ in three directions $y$: the allowed length depends on the direction.*

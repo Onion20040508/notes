@@ -168,7 +168,7 @@ tags: [functional-analysis, math556]
 > (f, g) = \int_{\mathbb{R}^n} f(x)\,\overline{g(x)}\,dx .
 > $$
 >
-> This is the inner product of $L^2(\mathbb{R}^n)$ restricted to $X$, so $(X, (\cdot,\cdot))$ is an inner product space. It is not complete: $C_c(\mathbb{R}^n)$ is dense in $L^2(\mathbb{R}^n)$ (Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-4|§19.4]]), so any $F \in L^2 \setminus C_c$ is the $L^2$-limit of a sequence in $X$, which is then Cauchy in $X$ with no limit in $X$. By Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], $\overline{X} = L^2(\mathbb{R}^n)$. (The same argument, with the same conclusion, applies to $C_c^\infty$.)
+> This is the inner product of $L^2(\mathbb{R}^n)$ restricted to $X$, so $(X, (\cdot,\cdot))$ is an inner product space. It is not complete: $C_c(\mathbb{R}^n)$ is dense in $L^2(\mathbb{R}^n)$ (Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-4|§19.4]]), so any $F \in L^2 \setminus C_c$ is the $L^2$-limit of a sequence in $X$, which is then Cauchy in $X$ with no limit in $X$. By Proposition [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]], $\overline{X} = L^2(\mathbb{R}^n)$. (The same argument, with the same conclusion, applies to $C_c^\infty$.)
 >
 > *Lax: §6.1, Example 1*
 

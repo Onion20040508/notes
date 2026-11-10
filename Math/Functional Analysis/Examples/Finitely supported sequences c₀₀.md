@@ -11,8 +11,10 @@ The finitely supported sequences $c_{00} = \{ a \in \ell : a_i = 0 \text{ for al
 - In $\ell^2$ the finitely supported sequences $Y$ have $Y^\perp = \{0\}$, so $Y^\perp$ is not a complement ([[§2 Quotient Spaces and Complements#^ex-2-3|Ex. §2.3]])
 - $c_{00}$ is not closed in $\ell^p$: finite-dimensional subspaces are closed, infinite-dimensional ones need not be ([[§14 New Normed Spaces from Old#^ex-14-3|Ex. §14.3]])
 - Minkowski's inequality for finitely supported sequences ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^lem-18-2|§18]])
-- $c_{00} \subset \ell^2$: both parts of the orthogonal decomposition fail without closedness ([[§25 Projection and Orthogonal Decomposition#^ex-25-4|Ex. §25.4]])
+- $c_{00} \subset \ell^2$: both parts of the orthogonal decomposition fail without closedness ([[§25 Projection and Orthogonal Decomposition#^ex-25-5|Ex. §25.5]])
 - Finitely supported sequences with rational entries are dense: $\ell^p$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] ([[§29 Sequence and Function Spaces#^prop-29-1|§29]])
+- On $c_{00}$ the functionals $A_n x = n\,x_n$ are pointwise but not uniformly bounded: the uniform boundedness principle needs completeness ([[§42 Uniform Boundedness and Approximation#^ex-42-2|§42]])
+- An unbounded weak-$\ast$ null sequence on $c_{00}$ ([[§43 Weak and Weak-Star Convergence#^ex-43-7|§43]])
 
 ## In $\ell^2$ the finitely supported sequences $Y$ have $Y^\perp = \{0\}$, so $Y^\perp$ is not a complement
 ![[§2 Quotient Spaces and Complements#^ex-2-3]]
@@ -24,7 +26,13 @@ The finitely supported sequences $c_{00} = \{ a \in \ell : a_i = 0 \text{ for al
 ![[§18 Minkowski's Inequality and the Spaces ℓᵖ#^lem-18-2]]
 
 ## $c_{00} \subset \ell^2$: both parts of the orthogonal decomposition fail without closedness
-![[§25 Projection and Orthogonal Decomposition#^ex-25-4]]
+![[§25 Projection and Orthogonal Decomposition#^ex-25-5]]
 
 ## Finitely supported sequences with rational entries are dense: $\ell^p$ is separable
 ![[§29 Sequence and Function Spaces#^prop-29-1]]
+
+## On $c_{00}$ the functionals $A_n x = n\,x_n$ are pointwise but not uniformly bounded: the uniform boundedness principle needs completeness
+![[§42 Uniform Boundedness and Approximation#^ex-42-2]]
+
+## An unbounded weak-$\ast$ null sequence on $c_{00}$
+![[§43 Weak and Weak-Star Convergence#^ex-43-7]]

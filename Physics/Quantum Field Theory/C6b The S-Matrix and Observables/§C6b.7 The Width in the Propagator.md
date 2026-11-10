@@ -109,7 +109,7 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > \Gamma_{\rm NR} = \frac{m}{E_{\mathbf p}}\,\Gamma = \frac{\Gamma}{\gamma} .
 > $$
 >
-> $\Gamma$ in $p^2 - m^2 + im\Gamma$ is a Lorentz-invariant notion, the decay rate in the rest frame; a particle moving with energy $E_{\mathbf p}$ decays at the slower rate $\Gamma_{\rm NR}$ and lives $\gamma$ times longer.
+> $\Gamma$ in $p^2 - m^2 + im\Gamma$ is a Lorentz-invariant notion, the decay rate in the rest frame; a particle moving with energy $E_{\mathbf p}$ decays at the slower rate $\Gamma_{\rm NR}$ and lives $\gamma$ times longer. The box route gives the same rate $\Gamma/\gamma$ from the factor $\frac{1}{2E_A}$ of the decay formula ([[§C6b.5 Decay Widths#^thm-c6b-5-9|Theorem §C6b.5.9]]): one result, two derivations.
 >
 > *Model:* [[§C6b.7 The Width in the Propagator#^mod-c6b-7-1|Model §C6b.7.1]]; *applies:* as there; first order in $\Gamma$, $t > 0$.
 >
@@ -199,7 +199,7 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > \frac{1}{4m^2}\,\frac{1}{(\sqrt s - m)^2 + \Gamma^2/4} = \frac12\cdot\frac{1}{4m^2}\,\frac{4}{\Gamma^2} \;\Leftrightarrow\; (\sqrt s - m)^2 + \frac{\Gamma^2}{4} = \frac{\Gamma^2}{2} \;\Leftrightarrow\; \sqrt s = m \pm \frac\Gamma2 ,
 > $$
 >
-> a full width $(m + \frac\Gamma2) - (m - \frac\Gamma2) = \Gamma$. "That's why it's called the width" (Yu after eq. (10.274)). For the exact form the full width is $\Gamma$ only to leading order: $1.00008\,\Gamma$ at $\Gamma/m = 1/40$, $1.0013\,\Gamma$ at $\Gamma/m = 1/10$ (`qft-C/tools/l15/checks.py`).
+> a full width $(m + \frac\Gamma2) - (m - \frac\Gamma2) = \Gamma$, which is why $\Gamma$ is called the width (Yu after eq. (10.274): "这是它被称为“宽度”的原因"). For the exact form the full width is $\Gamma$ only to leading order: $1.00008\,\Gamma$ at $\Gamma/m = 1/40$, $1.0013\,\Gamma$ at $\Gamma/m = 1/10$ (`qft-C/tools/l15/checks.py`).
 >
 > **Step 4** (normalization and limit). With $x = \sqrt s - m$, $c = \Gamma/2$ and the range of $\sqrt s$ extended to $\pm\infty$ (harmless for $\Gamma \ll m$),
 >
@@ -239,6 +239,13 @@ Quantum mechanics derives this behaviour, with the complex energy shift $\Delta_
 > *Source: Yu §10.6, pp. 481–483, eqs. (10.259)–(10.275)*
 
 ^rem-c6b-7-2
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]] — Jordan's lemma: for $t > 0$ the factor $e^{-ip^0t}$ decays in the lower half plane, so the $p^0$ integral of the propagator may be closed there (Derivation §C6b.7.3, Step 2).
+> - [[§CA.4 Contour Integration#^thm-ca-4-5|Theorem §CA.4.5]] — the residue theorem with $-2\pi i$ for the clockwise contour: the pole at $E_{\mathbf p} - i\frac{m}{E_{\mathbf p}}\frac\Gamma2$ gives $e^{-iE_{\mathbf p}t}e^{-\frac{m}{E_{\mathbf p}}\frac\Gamma2t}$ (Derivation §C6b.7.3, Step 2).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 3 — nascent delta functions: the normalized Breit–Wigner shape is a Lorentzian of width $\Gamma/2$ and tends to $\delta(\sqrt s - m)$ as $\Gamma \to 0$ (Derivation §C6b.7.4, Step 4).
 
 > [!remark]- Connections
 > - A complex energy shift from coupling to a continuum, $\Gamma = -2\operatorname{Im}\Delta$, is the non-relativistic origin of $+im\Gamma$; its golden-rule rate is the non-relativistic decay formula — [[§C9.6 The Interaction Picture and the Atom–Field Interaction#^thm-c9-6-11|QM Theorem §C9.6.11]], [[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]].

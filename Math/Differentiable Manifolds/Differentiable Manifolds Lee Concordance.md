@@ -76,7 +76,7 @@ Each row is expanded in a **Comparison with Lee** paragraph at the place indicat
 | [[§49 Recap꞉ Germs, Derivations and Tangent Vectors\|§49]]–[[§50 Recap꞉ Covectors and the Four Differentials\|§50]] Recaps: tangent vectors, covectors | Chapters 3 and 11 (overview) |
 | [[§51 The Tangent Bundle\|§51]] The tangent bundle | Chapter 3, *The Tangent Bundle* (Lemma 1.35, Proposition 3.18) |
 | [[§52 The Cotangent Bundle\|§52]] The cotangent bundle | Chapter 11, *The Cotangent Bundle* (Proposition 11.9); Lemma 1.35 |
-| [[§53 One-Forms\|§53]] One-forms, the operator $d$, pullbacks | Chapter 11, *Covector Fields* (Propositions 11.11 and 11.25, Example 11.36, Corollary 11.50) |
+| [[§53 One-Forms\|§53]] One-forms, the operator $d$, pullbacks | Chapter 11, *Covector Fields* (Propositions 11.11 and 11.25, Example 11.36, Theorem 11.49) |
 | [[§56 Vector Fields\|§56]] Vector fields | Chapter 8 (Propositions 8.1, 8.14 and 8.15); Proposition 2.25 and Lemma 2.26 (bump functions, extension) |
 | [[§58 Lie Bracket and Lie Algebra\|§58]] Lie bracket and Lie algebra; related fields | Chapter 8, *Lie Brackets* and *Lie Algebras* (Lemma 8.25, Propositions 8.26 and 8.28); *Vector Fields and Smooth Maps* (Propositions 8.16 and 8.19, Corollary 8.21); Proposition 8.30, Corollary 8.31 |
 | [[§60 Lie Groups and Left-Invariant Vector Fields\|§60]] Lie groups and left-invariant vector fields | Chapter 7 (Examples 7.3, 7.27–7.30); Chapter 8, *Lie Algebras* (Proposition 8.33, Theorem 8.37) |

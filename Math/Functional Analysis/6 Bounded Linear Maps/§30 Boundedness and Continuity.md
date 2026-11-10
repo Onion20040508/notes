@@ -38,7 +38,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 ^def-30-2
 
 > [!remark]- Connections
-> - The case $Y = \mathbb{F}$: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]; the case $X = Y = H$ in the companion chapter: [[§45 The Completeness Relation#^def-45-1|Def. §45.1]].
+> - The case $Y = \mathbb{F}$: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]; the case $X = Y = H$ in the companion chapter: [[§45 The Completeness Relation#^xold-def-45-1|Def. §45.1]].
 
 > [!definition] Definition §30.3: Operator Norm
 > For a bounded $T : X \to Y$ (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]), and $X \neq \{0\}$, its **norm** is
@@ -55,7 +55,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 > [!remark]- Connections
 > - Finite-dimensional home (where the sup is a max): [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
-> - The case $Y = \mathbb{F}$ is the dual norm, [[§44 Bras, Kets, and the Riesz Map#^def-44-2|Def. §44.2]]; the case $X = Y = H$ in the companion chapter: [[§45 The Completeness Relation#^def-45-2|Def. §45.2]].
+> - The case $Y = \mathbb{F}$ is the dual norm, [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-2|Def. §44.2]]; the case $X = Y = H$ in the companion chapter: [[§45 The Completeness Relation#^xold-def-45-2|Def. §45.2]].
 
 > [!theorem] Proposition §30.1: The Operator Norm
 > Let $T : X \to Y$ be a bounded linear map, $X \neq \{0\}$. Then
@@ -87,7 +87,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 > [!remark]- Connections
 > - Finite-dimensional home: [[§28 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
-> - The same statements for the dual norm in the companion chapter: [[§44 Bras, Kets, and the Riesz Map#^lem-44-1|§44.1]].
+> - The same statements for the dual norm in the companion chapter: [[§44 Bras, Kets, and the Riesz Map#^xold-lem-44-1|§44.1]].
 
 > [!theorem] Proposition §30.2: Continuous if and only if Bounded
 > A linear map $T : X \to Y$ between normed linear spaces is continuous if and only if it is bounded.
@@ -154,7 +154,7 @@ The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to
 *Uses:* [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
 
 > [!remark] Remark
-> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§44 Bras, Kets, and the Riesz Map#^def-44-2|§44.2]]. The companion chapter's bounded operators on $H$ (Definition [[§45 The Completeness Relation#^def-45-1|§45.1]]) are the case $X = Y = H$. A bounded linear map is even Lipschitz continuous, uniformly on all of $X$ (Corollary [[§30 Boundedness and Continuity#^cor-30-3|§30.3]]).
+> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-2|§44.2]]. The companion chapter's bounded operators on $H$ (Definition [[§45 The Completeness Relation#^xold-def-45-1|§45.1]]) are the case $X = Y = H$. A bounded linear map is even Lipschitz continuous, uniformly on all of $X$ (Corollary [[§30 Boundedness and Continuity#^cor-30-3|§30.3]]).
 
 ^rem-30-1
 
@@ -193,7 +193,7 @@ Linear maps are the main object of study because nonlinear ones are much harder 
 The completeness of $C^m(\overline{\Omega})$ in this norm is not needed for Example [[§30 Boundedness and Continuity#^ex-30-1|§30.1]], but it holds:
 
 > [!theorem] Proposition §30.4: $C^m(\overline{\Omega})$ is a Banach Space
-> Let $\Omega \subset \mathbb{R}^n$ be bounded and open and $m \ge 0$. Then $C^m(\overline{\Omega})$ with the norm $\|f\|_{C^m(\overline{\Omega})} = \sum_{|\alpha| \le m} \|\partial^\alpha f\|_{L^\infty(\Omega)}$ of Example [[§30 Boundedness and Continuity#^ex-30-1|§30.1]] is complete. For $m = 1$ and $\Omega = (a,b)$ this is Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^pf-13-4|§13.4]].
+> Let $\Omega \subset \mathbb{R}^n$ be bounded and open and $m \ge 0$. Then $C^m(\overline{\Omega})$ with the norm $\|f\|_{C^m(\overline{\Omega})} = \sum_{|\alpha| \le m} \|\partial^\alpha f\|_{L^\infty(\Omega)}$ of Example [[§30 Boundedness and Continuity#^ex-30-1|§30.1]] is complete. For $m = 1$ and $\Omega = (a,b)$ this is Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^pf-13-5|§13.5]].
 
 ^prop-30-4
 
@@ -334,7 +334,7 @@ The same happens in one variable with only one derivative available, which is th
 
 > [!remark]- Connections
 > - Finite-dimensional home (all linear maps, same operations): [[§7 Vector Space of Linear Maps#^ladr-3-5|LADR 3.5]].
-> - The dual space $X^* = \mathcal{L}(X, \mathbb{F})$ of the companion chapter: [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]].
+> - The dual space $X^* = \mathcal{L}(X, \mathbb{F})$ of the companion chapter: [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|Def. §44.1]].
 
 > [!theorem] Theorem §30.8: $\mathcal{L}(X, Y)$ is a Normed Linear Space
 > Let $X$ and $Y$ be normed linear spaces.
@@ -408,7 +408,7 @@ The same happens in one variable with only one derivative available, which is th
 
 > [!remark]- Connections
 > - Finite-dimensional home of the norm properties: [[§28 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].
-> - Banach spaces: [[§12 Completeness#^def-12-2|Def. §12.2]]; the special case $Y = \mathbb{F}$ in the companion chapter: [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]].
+> - Banach spaces: [[§12 Completeness#^def-12-2|Def. §12.2]]; the special case $Y = \mathbb{F}$ in the companion chapter: [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|Def. §44.1]].
 > - Part (2) with $Y = \mathbb{F}$: the dual is always a Banach space, [[§31 Dual Spaces#^cor-31-1|§31.1]].
 > - Used in ODEs: since $\|\mathbf{A}^k\| \le \|\mathbf{A}\|^k$, the series $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ converges absolutely in the Banach space of $n \times n$ matrices; the matrix exponential is [[§39★ Fundamental Matrices#^thm-39-3|331 Thm. §39.3]].
 

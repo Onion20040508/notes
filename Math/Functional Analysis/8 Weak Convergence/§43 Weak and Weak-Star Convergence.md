@@ -140,12 +140,12 @@ Why $\sin(mx) \rightharpoonup 0$: the product $g(x) \sin(mx)$ for the test funct
 ^thm-43-3
 
 > [!proof]+ Proof
-> This is Banach–Steinhaus (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]). Think of $x_n$ not as an element of $X$ but as an element of the dual of $X'$: $x_n \in (X')' = \mathcal{L}(X', \mathbb{F})$, via $x_n(\ell) = \langle x_n, \ell \rangle = \ell(x_n)$. So $\{x_n\}$ is a sequence of bounded linear maps from $X'$ to $\mathbb{F}$, and
+> This is Banach–Steinhaus (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]]). Think of $x_n$ not as an element of $X$ but as an element of the dual of $X'$: $x_n \in (X')' = \mathcal{L}(X', \mathbb{F})$, via $x_n(\ell) = \langle x_n, \ell \rangle = \ell(x_n)$. So $\{x_n\}$ is a sequence of bounded linear maps from $X'$ to $\mathbb{F}$, and
 > $X'$ is a Banach space even if $X$ is not (Corollary [[§31 Dual Spaces#^cor-31-1|§31.1]]), while $\mathbb{F}$ is a normed space. The norm of $x_n$ as an element of $(X')'$ is $\|x_n\|$ (Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]), and $x_0$ is the candidate limit map $A \in \mathcal{L}(X', \mathbb{F})$. Weak convergence says: for all $\ell \in X'$, $\ell(x_n) = \langle x_n, \ell \rangle \to \langle x_0, \ell \rangle$, i.e. the maps $x_n$ converge pointwise on $X'$ to $x_0$. Banach–Steinhaus says this happens if and only if (1) $\sup_n \|x_n\| < \infty$ and (2) the convergence holds for all $\ell$ in a dense subset $D \subset X'$.
 
 ^pf-43-3
 
-*Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]], [[§31 Dual Spaces#^cor-31-1|§31.1]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]
+*Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]], [[§31 Dual Spaces#^cor-31-1|§31.1]], [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]]
 
 > [!theorem] Theorem §43.4: The Norm of a Weak Limit
 > Let $X$ be a normed linear space, $\{x_n\}_{n=1}^\infty \subset X$, $x_0 \in X$, and $x_n \rightharpoonup x_0$ in $X$. Then $\{x_n\}$ is a bounded sequence, and
@@ -211,7 +211,7 @@ Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, 
 >
 > *$K_\varepsilon$ is convex.* If $x_1, x_2 \in K_\varepsilon$ with $\|x_i - y_i\| < \varepsilon$, $y_i \in K$, and $0 \le t \le 1$, then $y = t y_1 + (1-t) y_2 \in K$ and $\|t x_1 + (1-t) x_2 - y\| \le t\|x_1 - y_1\| + (1-t)\|x_2 - y_2\| < \varepsilon$.
 >
-> *Every point of $K_\varepsilon$ is interior.* If $\|x - y\| < \varepsilon$ with $y \in K$, put $\rho = \varepsilon - \|x - y\| > 0$; then $B(x, \rho) \subset K_\varepsilon$ by the triangle inequality, so $x$ is a metric interior point, hence an interior point (Proposition [[§11 Normed Linear Spaces#^prop-11-8|§11.8]]).
+> *Every point of $K_\varepsilon$ is interior.* If $\|x - y\| < \varepsilon$ with $y \in K$, put $\rho = \varepsilon - \|x - y\| > 0$; then $B(x, \rho) \subset K_\varepsilon$ by the triangle inequality, so $x$ is a metric interior point, hence an interior point (Proposition [[§11 Normed Linear Spaces#^prop-11-9|§11.9]]).
 >
 > *$x_0 \notin K_\varepsilon$,* since every point of $K_\varepsilon$ is within $\varepsilon < d$ of $K$.
 >
@@ -223,7 +223,7 @@ Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, 
 
 ^pf-43-5
 
-*Uses:* [[§11 Normed Linear Spaces#^prop-11-8|§11.8]], [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]
+*Uses:* [[§11 Normed Linear Spaces#^prop-11-9|§11.9]], [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]
 
 > [!theorem] Corollary §43.6: Hyperplane Separation over $\mathbb{C}$
 > *(Not from lecture.)* Let $X$ be a normed linear space over $\mathbb{C}$, $K$ a closed convex set in $X$, and $x_0 \notin K$. Then there exist $a \in \mathbb{R}$ and $\ell \in X'$ such that
@@ -290,7 +290,7 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 ## $\sin(mx)$ in $L^p$
 
 > [!example] Example §43.3: $\sin(mx) \rightharpoonup 0$ in $L^p[0, 2\pi]$ for $1 < p < \infty$
-> We know $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]]). Since $|\sin(mx)| \le 1$, also $\sin(mx) \in L^p([0, 2\pi])$ for $1 \le p < \infty$. *Question:* does $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$ for all $1 < p < \infty$? Yes. (The case $p = 1$ is subtler and is excluded here; see [[§43 Weak and Weak-Star Convergence#^rem-43-1|the remark Two Questions for Homework]].)
+> We know $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]]). Since $|\sin(mx)| \le 1$, also $\sin(mx) \in L^p([0, 2\pi])$ for $1 \le p < \infty$. *Question:* does $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$ for all $1 < p < \infty$? Yes. (The case $p = 1$ is subtler and is excluded here; see [[§43 Weak and Weak-Star Convergence#^xold-rem-43-1|the remark Two Questions for Homework]].)
 >
 > Recall $(L^p)' = L^{p'}$ with $\frac1p + \frac1{p'} = 1$, so $1 < p' < \infty$ (Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]). We check the two conditions of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]].
 >
@@ -307,8 +307,7 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 >
 > Weak limits are useful but limited. A bounded sequence in infinite dimensions need not have a convergent subsequence; under certain circumstances it will have a weakly convergent one, but weak convergence does not commute with nonlinear operations.
 
-^rem-43-1
-
+^xold-rem-43-1
 ## Weak-$\ast$ Convergence
 
 Does every bounded sequence have a weakly convergent subsequence? This is a difficult question; to answer it, the weak limit must be weakened even further.
@@ -351,7 +350,7 @@ On $X'$ two notions are available: weak convergence ($X'$ is a normed space, tes
 
 *Uses:* [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]], [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Def. §37.1]]
 
-> [!example] Example §43.4: Weak-$\ast$ but Not Weak
+> [!example] Example §43.6: Weak-$\ast$ but Not Weak
 > $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ does not imply $\ell_n \rightharpoonup \ell_0$. Let $\ell^\infty_0 = c_0 = \{ (a_1, a_2, \ldots) : \lim_n a_n = 0 \}$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]). Then $(c_0)' = \ell^1$ (homework) and $(\ell^1)' = \ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]). Consider $e_n = (0, \ldots, 0, 1, 0, \ldots) \in \ell^1$.
 > - $e_n \overset{\ast}{\rightharpoonup} 0$ in $\ell^1 = (c_0)'$: for every $a = (a_1, a_2, \ldots) \in c_0$, $\langle a, e_n \rangle = a_n \to 0$.
 > - $e_n \not\rightharpoonup 0$ in $\ell^1$: for $a = (a_1, a_2, \ldots) \in \ell^\infty = (\ell^1)'$, $\langle e_n, a \rangle = a_n$, which need not converge, since $a$ is only bounded.
@@ -360,7 +359,7 @@ On $X'$ two notions are available: weak convergence ($X'$ is a normed space, tes
 >
 > *(Not from lecture.)* Lax's example (§10.3, Example 5) is of the same kind: the averages $m_n(h) = \frac{n}{2} \int_{-1/n}^{1/n} h(t)\, dt$ are functionals on $C[-1, 1]$ that converge weak-$\ast$ to the point evaluation $h \mapsto h(0)$, but not weakly, since against a bounded function with a jump at $0$ the averages do not converge to its value at $0$.
 
-^ex-43-4
+^ex-43-6
 
 ![[m556-43-5.svg]]
 
@@ -377,18 +376,18 @@ As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of t
 ^thm-43-9
 
 > [!proof]+ Proof
-> Banach–Steinhaus (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]) for the bounded linear maps $\ell_n, \ell_0 : X \to \mathbb{F}$: pointwise convergence on $X$ holds if and only if the $\ell_n$ are uniformly bounded and converge on a dense subset.
+> Banach–Steinhaus (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]]) for the bounded linear maps $\ell_n, \ell_0 : X \to \mathbb{F}$: pointwise convergence on $X$ holds if and only if the $\ell_n$ are uniformly bounded and converge on a dense subset.
 
 ^pf-43-9
 
-*Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]
+*Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]]
 
 > [!remark] Remark: The Weak-$\ast$ Criteria Need $X$ Complete
-> In the lecture the theorem above, and the next one, were stated for a normed linear space $X$; Lax (§10.3) assumes $X$ Banach from the start. Banach–Steinhaus, however, needs the domain of the maps to be complete, and here the domain is $X$ (in Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]] the domain was $X'$, which is always complete). The direction ($\Leftarrow$) holds for any normed $X$ (the $\varepsilon/2$ argument does not use completeness), but ($\Rightarrow$), weak-$\ast$ convergent implies bounded, can fail (Example [[§43 Weak and Weak-Star Convergence#^ex-43-5|§43.5]]). So in both theorems $X$ is assumed to be a Banach space; the bound $\|\ell_0\| \le \liminf \|\ell_n\|$ holds for any normed $X$.
+> In the lecture the theorem above, and the next one, were stated for a normed linear space $X$; Lax (§10.3) assumes $X$ Banach from the start. Banach–Steinhaus, however, needs the domain of the maps to be complete, and here the domain is $X$ (in Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]] the domain was $X'$, which is always complete). The direction ($\Leftarrow$) holds for any normed $X$ (the $\varepsilon/2$ argument does not use completeness), but ($\Rightarrow$), weak-$\ast$ convergent implies bounded, can fail (Example [[§43 Weak and Weak-Star Convergence#^ex-43-7|§43.7]]). So in both theorems $X$ is assumed to be a Banach space; the bound $\|\ell_0\| \le \liminf \|\ell_n\|$ holds for any normed $X$.
 
-^rem-43-2
+^rem-43-1
 
-> [!example] Example §43.5: An Unbounded Weak-$\ast$ Null Sequence on $c_{00}$
+> [!example] Example §43.7: An Unbounded Weak-$\ast$ Null Sequence on $c_{00}$
 > *(Not from lecture.)* Let $X = c_{00}$, the finitely supported sequences with the maximum norm (not complete, Example [[§42 Uniform Boundedness and Approximation#^ex-42-2|§42.2]]), and $\ell_n(x) = n\, x_n$. These are the functionals $A_n$ of Example [[§42 Uniform Boundedness and Approximation#^ex-42-2|§42.2]], so $\ell_n \in X'$ with $\|\ell_n\| = n$.
 >
 > 1. *$\ell_n \overset{\ast}{\rightharpoonup} 0$.* For each $x \in c_{00}$, $\ell_n(x) = 0$ once $n$ exceeds the support of $x$, so $\ell_n(x) \to 0$.
@@ -396,7 +395,7 @@ As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of t
 >
 > So for the normed space $c_{00}$ the direction ($\Rightarrow$) of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-9|§43.9]] fails, and so does the boundedness in Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-10|§43.10]].
 
-^ex-43-5
+^ex-43-7
 
 > [!theorem] Theorem §43.10: The Norm of a Weak-$\ast$ Limit
 > Let $X$ be a Banach space, $\{\ell_n\}_{n=1}^\infty \subset X'$, $\ell_0 \in X'$, and assume $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ in $X'$. Then $\sup_n \|\ell_n\| < \infty$, and
@@ -410,7 +409,7 @@ As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of t
 ^thm-43-10
 
 > [!proof]+ Proof
-> *Bounded:* to converge in the weak-$\ast$ sense, the sequence is pointwise bounded on $X$; this is the uniform boundedness principle (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]).
+> *Bounded:* to converge in the weak-$\ast$ sense, the sequence is pointwise bounded on $X$; this is the uniform boundedness principle (Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]).
 >
 > *The norm bound.* The proof is almost the same as the previous one, but now the norm of $\ell_0$ is computed by its definition, without Hahn–Banach:
 >
@@ -422,6 +421,6 @@ As for weak convergence, Banach–Steinhaus gives a criterion, and the norm of t
 
 ^pf-43-10
 
-*Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]
+*Uses:* [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]
 
 The remaining question is under what conditions a bounded sequence has a weak-$\ast$ convergent subsequence.

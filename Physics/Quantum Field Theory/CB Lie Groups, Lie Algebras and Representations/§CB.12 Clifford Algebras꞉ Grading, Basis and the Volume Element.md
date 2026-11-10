@@ -41,7 +41,7 @@ What structure does a Clifford algebra carry beyond its defining relation? Start
 > [!definition] Definition §CB.12.2: Even and Odd Parts
 > The **even part** $\mathrm{Cl}^0(V, q)$ and the **odd part** $\mathrm{Cl}^1(V, q)$ are the $+1$ and $-1$ eigenspaces of $\alpha$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-1|Theorem §CB.12.1]]): the spans of products of an even, resp. odd, number of vectors.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^def-cb-12-2
 
@@ -98,7 +98,7 @@ What structure does a Clifford algebra carry beyond its defining relation? Start
 > [!definition] Definition §CB.12.5: Clifford Conjugation
 > The **Clifford conjugation** is $x \mapsto \bar x = \alpha(t(x))$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-1|Theorem §CB.12.1]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-4|Theorem §CB.12.4]]); $\overline{v_1\cdots v_k} = (-1)^kv_k\cdots v_1$.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^def-cb-12-5
 
@@ -162,7 +162,7 @@ That $V$ sits inside its Clifford algebra, first stated with the anticommutator 
 > [!theorem] Theorem §CB.12.7: V Embeds in Its Clifford Algebra
 > The map $V \to \mathrm{Cl}(V, q)$ is injective ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-6|Def. §CB.11.6]]).
 >
-> *Source: Meinrenken, Clifford Algebras and Lie Groups, Prop. 2.2 (injectivity) · first stated in [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-8|Theorem §CB.11.8]]; moved here in the CB ordering pass (2026-10-08), after the basis theorem its proof uses*
+> *Source: Meinrenken, Clifford Algebras and Lie Groups, Prop. 2.2 (injectivity) · announced at [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-8|Theorem §CB.11.8]]; it stands here, after the basis theorem its proof uses*
 
 ^thm-cb-12-7
 
@@ -181,20 +181,20 @@ That $V$ sits inside its Clifford algebra, first stated with the anticommutator 
 The sixteen products of the Dirac matrices, the $n = 4$ case of Theorem §CB.12.6 in matrices, with the course's notation for antisymmetrized products (first written in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]):
 
 > [!definition] Definition §CB.12.8: Antisymmetrized Products of γ Matrices
-> For indices $\mu_1, \dots, \mu_n$,
+> For indices $\mu_1, \dots, \mu_k$,
 >
 > $$
-> \gamma^{[\mu_1}\gamma^{\mu_2}\cdots\gamma^{\mu_n]} \equiv \gamma^{[\mu_1\cdots\mu_n]} \equiv \frac1{n!}\sum_{\pi\in S_n}\operatorname{sgn}(\pi)\,\gamma^{\mu_{\pi(1)}}\cdots\gamma^{\mu_{\pi(n)}} ,
+> \gamma^{[\mu_1}\gamma^{\mu_2}\cdots\gamma^{\mu_k]} \equiv \gamma^{[\mu_1\cdots\mu_k]} \equiv \frac1{k!}\sum_{\pi\in S_k}\operatorname{sgn}(\pi)\,\gamma^{\mu_{\pi(1)}}\cdots\gamma^{\mu_{\pi(k)}} ,
 > $$
 >
-> of the Dirac matrices ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]): the totally antisymmetric part, with weight $1/n!$. Thus $\gamma^{[\mu\nu]} = \frac12[\gamma^\mu, \gamma^\nu]$; for distinct indices it is the ordered product of Theorem §CB.12.9 up to sign.
+> of the Dirac matrices ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]): the totally antisymmetric part, with weight $1/k!$. Thus $\gamma^{[\mu\nu]} = \frac12[\gamma^\mu, \gamma^\nu]$. For pairwise distinct indices the $\gamma$'s anticommute ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]], 1), so reordering the factors by $\pi$ costs the sign $\operatorname{sgn}(\pi)$, all $k!$ terms are equal, and $\gamma^{[\mu_1\cdots\mu_k]} = \gamma^{\mu_1}\cdots\gamma^{\mu_k}$; if two indices coincide it is $0$.
 >
-> *Source: PHY 513, Problem Set 5, Problem 5(c) statement (notation) · PS §3.4, p. 49 · the user's PHY 513 notes, Ch. 9 §9.6 (Principle "Properties of $\gamma^5$") · notation (moved here from the statement, CB ordering pass): $\gamma^{[\mu\nu]}$ is $-2iS^{\mu\nu}$ with the spinor generators of §C5a.3 ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]]) and $-i\sigma^{\mu\nu}$ with $\sigma^{\mu\nu}$ of [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]*
+> *Source: PHY 513, Problem Set 5, Problem 5(c) statement (notation) · PS §3.4, p. 49 · the user's PHY 513 notes, Ch. 9 §9.6 (Principle "Properties of $\gamma^5$") · notation: $\gamma^{[\mu\nu]}$ is $-2iS^{\mu\nu}$ with the spinor generators of §C5a.3 ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]]) and $-i\sigma^{\mu\nu}$ with $\sigma^{\mu\nu}$ of [[§C5a.6 The Dirac Conjugate and the Bilinears#^def-c5a-6-2|Def. §C5a.6.2]]*
 
 ^def-cb-12-8
 
 > [!theorem] Theorem §CB.12.9: The Sixteen Products Are a Basis
-> For $A = \{\mu_1 < \dots < \mu_k\} \subseteq \{0, 1, 2, 3\}$ let $\Gamma_A = \gamma^{\mu_1}\cdots\gamma^{\mu_k}$ ($\Gamma_\varnothing = \mathbb 1$). For Dirac matrices ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]) of any size $n$:
+> For $A = \{\mu_1 < \dots < \mu_k\} \subseteq \{0, 1, 2, 3\}$ let $\Gamma_A = \gamma^{\mu_1}\cdots\gamma^{\mu_k}$ ($\Gamma_\varnothing = \mathbb 1$; this is $\gamma^{[\mu_1\cdots\mu_k]}$ of [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-8|Def. §CB.12.8]], the indices being distinct). For Dirac matrices ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]) of any size $n$:
 > 1. $\Gamma_A\Gamma_B = \pm\Gamma_{A\triangle B}$ (symmetric difference), with a sign fixed by the algebra alone; in particular $\Gamma_A^2 = \pm\mathbb 1$;
 > 2. $\operatorname{tr}\Gamma_A = 0$ for $A \ne \varnothing$;
 > 3. the sixteen $\Gamma_A$ are linearly independent, so $n \ge 4$;
@@ -406,7 +406,7 @@ $\gamma^5$, the volume element of the Dirac matrices as the course defines it (P
 
 *Uses:* [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-12|Theorem §CB.11.12]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-11-13|Example §CB.11.13]], [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-9|Theorem §CB.12.9]]
 
-In the course's chiral basis $\gamma^5$ is diagonal (first written in [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]; restated here in the CB ordering pass, 2026-10-08, because §CB.18 reads the half-spin spaces off it):
+In the course's chiral basis $\gamma^5$ is diagonal (first written in [[§C5a.5 Chirality and Weyl Spinors|§C5a.5]]; restated here because §CB.18 reads the half-spin spaces off it):
 
 > [!example] Example §CB.12.16: γ⁵ in the Chiral Basis
 > For the chiral Dirac matrices of [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^ex-cb-11-13|Example §CB.11.13]], $\gamma^5$ ([[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^def-cb-12-14|Def. §CB.12.14]]) is, in $2\times2$ blocks,
@@ -440,7 +440,7 @@ Its totally antisymmetric form in the course's convention $\varepsilon^{0123} = 
 > **3. They anticommute.** $\gamma^5\gamma^0 = -\gamma^0\gamma^5$ (Theorem §CB.12.15). With step 2, $\gamma^0\gamma^5 = -\gamma^0\gamma^5$, so $\gamma^0\gamma^5 = 0$. But $\gamma^0$ and $\gamma^5$ are invertible ($(\gamma^0)^2 = (\gamma^5)^2 = \mathbb 1$), so their product is invertible and not $0$: contradiction.
 >
 > **What the derivation shows**
-> - Choosing a basis means choosing which structure to make visible: the chiral basis diagonalizes $\gamma^5$, the Dirac basis $\gamma^0$ (Remark: Why each basis is used, below).
+> - Choosing a basis means choosing which structure to make visible: the chiral basis diagonalizes $\gamma^5$, the Dirac basis $\gamma^0$ ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-5|§C5a.5, Remark: Why each basis is used]]).
 
 ^der-cb-12-17
 
@@ -539,7 +539,7 @@ The two-component square roots in $1 + 1$ and $2 + 1$ dimensions, Clifford modul
 > (p_\mu\gamma^\mu)^2 = (p^0)^2(\sigma^1)^2 + (p^1)^2(i\sigma^2)^2 - p^0p^1\,i\bigl(\sigma^1\sigma^2 + \sigma^2\sigma^1\bigr) = \bigl((p^0)^2 - (p^1)^2\bigr)\mathbb 1_2 = p^2\,\mathbb 1_2 .
 > $$
 >
-> In $2 + 1$ dimensions, $g = \operatorname{diag}(1, -1, -1)$, add $\gamma^2 = i\sigma^3$: $(i\sigma^3)^2 = -\mathbb 1_2$, $\{\sigma^1, i\sigma^3\} = i\{\sigma^1, \sigma^3\} = 0$, $\{i\sigma^2, i\sigma^3\} = -\{\sigma^2, \sigma^3\} = 0$. In the vector form of the second route (Derivation §CB.13.9, second route) these are $\mathbf a^0 = (1, 0, 0)$, $\mathbf a^1 = (0, i, 0)$, $\mathbf a^2 = (0, 0, i)$, with $\mathbf a^\mu\cdot\mathbf a^\mu = 1, -1, -1$ and mutually orthogonal. A fourth vector orthogonal to all three would be $0$, so the third space direction of $3 + 1$ dimensions forces $4\times4$.
+> In $2 + 1$ dimensions, $g = \operatorname{diag}(1, -1, -1)$, add $\gamma^2 = i\sigma^3$: $(i\sigma^3)^2 = -\mathbb 1_2$, $\{\sigma^1, i\sigma^3\} = i\{\sigma^1, \sigma^3\} = 0$, $\{i\sigma^2, i\sigma^3\} = -\{\sigma^2, \sigma^3\} = 0$. *Vector form.* Each of the three matrices is $\mathbf a^\mu\cdot\boldsymbol\sigma = \sum_ia^\mu_i\sigma^i$ with $\mathbf a^0 = (1, 0, 0)$, $\mathbf a^1 = (0, i, 0)$, $\mathbf a^2 = (0, 0, i)$ in $\mathbb C^3$. By the Pauli product rule, $\{\mathbf a\cdot\boldsymbol\sigma, \mathbf b\cdot\boldsymbol\sigma\} = \sum_{i,j}a_ib_j\{\sigma^i, \sigma^j\} = 2(\mathbf a\cdot\mathbf b)\mathbb 1_2$ with $\mathbf a\cdot\mathbf b = \sum_ia_ib_i$ (no complex conjugation), so the Clifford relation reads $\mathbf a^\mu\cdot\mathbf a^\nu = g^{\mu\nu}$: here $\mathbf a^\mu\cdot\mathbf a^\mu = 1, -1, -1$ and the three vectors are mutually orthogonal. No fourth $2\times2$ matrix can be added to these three: write $\gamma^3 = c\,\mathbb 1_2 + \mathbf b\cdot\boldsymbol\sigma$ ($\mathbb 1_2, \sigma^i$ are a basis of the $2\times2$ matrices, Theorem §CB.0.21, 4); then $\{\gamma^3, \mathbf a^\mu\cdot\boldsymbol\sigma\} = 2c\,\mathbf a^\mu\cdot\boldsymbol\sigma + 2(\mathbf b\cdot\mathbf a^\mu)\mathbb 1_2 = 0$ for $\mu = 0, 1, 2$ forces $c = 0$ and $b_1 = ib_2 = ib_3 = 0$, so $\gamma^3 = 0$, against $(\gamma^3)^2 = -\mathbb 1_2$. Used next: with this vector form, [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-9|Theorem §CB.13.9]] (second route of its derivation) shows that no four $2\times2$ matrices at all satisfy the relation, so the third space direction of $3 + 1$ dimensions forces $4\times4$.
 >
 > *Source: PS §3.2, pp. 40–41 (three-dimensional Euclidean space, $\gamma^j = i\sigma^j$, $\{\gamma^i, \gamma^j\} = -2\delta^{ij}$) · the user's pre-course notes, §5.1 ("one can set $\gamma^i = i\sigma^i$, but no fourth $2\times2$ matrix anticommutes with all three") · the $1+1$ and $2+1$ matrices written here*
 
@@ -552,7 +552,7 @@ The two-component square roots in $1 + 1$ and $2 + 1$ dimensions, Clifford modul
 > |---|---|---|---|---|---|---|---|---|
 > | $\mathrm{Cl}(r, s)$ | $M(\mathbb R)$ | $M(\mathbb R)\oplus M(\mathbb R)$ | $M(\mathbb R)$ | $M(\mathbb C)$ | $M(\mathbb H)$ | $M(\mathbb H)\oplus M(\mathbb H)$ | $M(\mathbb H)$ | $M(\mathbb C)$ |
 >
-> (matrix sizes fixed by $\dim = 2^{r+s}$). So $\mathrm{Cl}(1,3) \cong M_2(\mathbb H)$ and $\mathrm{Cl}(3,1) \cong M_4(\mathbb R)$: with $\{\gamma^\mu, \gamma^\nu\} = +2g^{\mu\nu}$ and $g = (+,-,-,-)$ there are no real $4\times4$ Dirac matrices, and Majorana matrices are purely imaginary. Stated only (SPEC-CB decision 6), as a pointer for the Majorana field (QFT C9, planned); proof not given here. Source: Figueroa-O'Farrill, Spin Geometry, Thm. 2.7 and the Clifford chessboard of §2.3 (proved there from the periodicities of Thm. 2.3; his $C\ell(s,t)$ is this table's $\mathrm{Cl}(t,s)$, so his $s - t$ is $-(r - s)$ here; the table above is his, translated and checked entry by entry, e.g. his $C\ell(3,1) \cong \mathbb H(2)$ is $\mathrm{Cl}(1,3) \cong M_2(\mathbb H)$).
+> (matrix sizes fixed by $\dim = 2^{r+s}$). So $\mathrm{Cl}(1,3) \cong M_2(\mathbb H)$ and $\mathrm{Cl}(3,1) \cong M_4(\mathbb R)$: with $\{\gamma^\mu, \gamma^\nu\} = +2g^{\mu\nu}$ and $g = (+,-,-,-)$ there are no real $4\times4$ Dirac matrices, and Majorana matrices are purely imaginary. Stated only, as a pointer for the Majorana basis ([[§C5a.5 Chirality and Weyl Spinors#^rem-c5a-5-6|§C5a.5, ★ Remark: The Majorana basis]]; its real structure: [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-21|Theorem §CB.18.21]]) and the Majorana field (chapter C9; a section on the field itself is planned); proof not given here. Source: Figueroa-O'Farrill, Spin Geometry, Thm. 2.7 and the Clifford chessboard of §2.3 (proved there from the periodicities of Thm. 2.3; his $C\ell(s,t)$ is this table's $\mathrm{Cl}(t,s)$, so his $s - t$ is $-(r - s)$ here; the table above is his, translated and checked entry by entry, e.g. his $C\ell(3,1) \cong \mathbb H(2)$ is $\mathrm{Cl}(1,3) \cong M_2(\mathbb H)$).
 
 ^rem-cb-12-1
 

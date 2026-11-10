@@ -103,7 +103,7 @@ Both matrices satisfy Definition §C1a.4.1 by the computation of [[§B1.2 Lorent
 >
 > **3. Change of variables.** For an integrable $f$, $\int d^4x'\,f(x') = \int d^4x\,|\det\Lambda|\,f(\Lambda x) = \int d^4x\,f(\Lambda x)$ ([[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], extended from bounded regions to $\mathbb R^4$ for absolutely integrable $f$). The same with $p$ in place of $x$.
 >
-> **4. Scalars.** If $f$ is a scalar field, the transformed field is $f'(x') = f(x)$ at $x' = \Lambda x$ ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]), so $\int d^4x'\,f'(x') = \int d^4x\,f'(\Lambda x) = \int d^4x\,f(x)$ by step 3; the name of the integration variable is immaterial, so $\int d^4x\,f' = \int d^4x\,f$. For distributions the substitution is the definition of the transformed distribution, $(T\circ\Lambda^{-1})[f] = T[f\circ\Lambda]$ with the factor $|\det\Lambda| = 1$ ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]), and "$T$ is invariant" means $T\circ\Lambda^{-1} = T$; for $\theta(p^0)\delta(p^2 - m^2)$ this holds for orthochronous $\Lambda$ ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1; [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]]).
+> **4. Scalars.** If $f$ is a scalar field, the transformed field is $f'(x') = f(x)$ at $x' = \Lambda x$ ([[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]]), so $\int d^4x'\,f'(x') = \int d^4x\,f'(\Lambda x) = \int d^4x\,f(x)$ by step 3; the name of the integration variable is immaterial, so $\int d^4x\,f' = \int d^4x\,f$. For distributions the substitution is the definition of the transformed distribution, $(T\circ\Lambda^{-1})[f] = T[f\circ\Lambda]$ with the factor $|\det\Lambda| = 1$ ([[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]), and "$T$ is invariant" means $T\circ\Lambda^{-1} = T$ ([[§CA.2 Generalized Functions#^def-ca-2-9|Def. §CA.2.9]]); for $\theta(p^0)\delta(p^2 - m^2)$ this holds for orthochronous $\Lambda$ ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1; that $\theta(p^0)$ is invariant on the shell, parity included, is shown below: [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]], 3, whose derivation does not use this theorem).
 >
 > **What the derivation shows**
 > - Only $|\det\Lambda| = 1$ is used: the volume elements are invariant under all of $O(1,3)$, parity and time reversal included; an orientation (a sign of $\det\Lambda$) matters only for objects carrying an $\varepsilon$ ([[§C1a.5 Vectors, Tensors and Index Notation#^cau-c1a-5-5|§C1a.5, Caution: The sign of ε⁰¹²³]]).
@@ -111,7 +111,7 @@ Both matrices satisfy Definition §C1a.4.1 by the computation of [[§B1.2 Lorent
 
 ^der-c1a-4-1
 
-*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§37 Determinants#^ladr-9-49|LADR Thm. 9.49]], [[§37 Determinants#^ladr-9-56|LADR Thm. 9.56]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]]
+*Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]], [[§37 Determinants#^ladr-9-49|LADR Thm. 9.49]], [[§37 Determinants#^ladr-9-56|LADR Thm. 9.56]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-2|Def. §C1b.1.2]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^def-ca-2-9|Def. §CA.2.9]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]]; for the example $\theta(p^0)\delta(p^2 - m^2)$ only, [[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]], 3 (shown below)
 
 ## Components, cosets and the identity component
 
@@ -192,7 +192,7 @@ The four components are a property of the group, a six-dimensional manifold. The
 *Uses:* [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-2|REL Theorem §B1.2.2]], [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], [[§25 Actions#^def-25-1|493 Def. §25.1]], [[§27 Orbits#^def-27-1|493 Def. §27.1]], [[§27 Orbits#^prop-27-1|493 Prop. §27.1]]
 
 > [!theorem] Theorem §C1a.4.4: Parity and Time Reversal Permute the Orbits
-> 1. $\mathcal P$ maps every orbit of Theorem §C1a.4.3 to itself (reversing its orientation along the sheet).
+> 1. $\mathcal P$ maps every orbit of [[§C1a.4 The Lorentz Group#^thm-c1a-4-3|Theorem §C1a.4.3]] to itself (reversing its orientation along the sheet).
 > 2. $\mathcal T$ and $\mathcal P\mathcal T = -\mathbb 1$ exchange $H^+_m \leftrightarrow H^-_m$ and $C^+ \leftrightarrow C^-$, and map each $S_a$ to itself.
 > 3. Consequently, on timelike and null vectors $\operatorname{sgn}x^0$ is invariant under the orthochronous transformations $SO^+(1,3)\cup \mathcal P\cdot SO^+(1,3)$; on the mass shell $p^2 = m^2$, $\theta(p^0)$ is invariant. On spacelike vectors it is not invariant even under $SO^+(1,3)$: for every $x$ with $x^2 < 0$ there is $\Lambda \in SO^+(1,3)$ with $\Lambda x = -x$.
 >
@@ -207,7 +207,7 @@ The four components are a property of the group, a six-dimensional manifold. The
 >
 > **3. Every element.** By [[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]], every $\Lambda \in O(1,3)$ is $CK$ with $K \in SO^+(1,3)$ and $C \in \{\mathbb 1, \mathcal P, \mathcal T, \mathcal P\mathcal T\}$; $K$ keeps each orbit, so $\Lambda$ permutes the orbits as $C$ does. For $C \in \{\mathbb 1, \mathcal P\}$ (orthochronous) no sheet or cone is exchanged: $\operatorname{sgn}x^0$ is invariant on timelike and null vectors.
 >
-> **4. The mass shell.** For $m > 0$, $p^2 = m^2$ forces $p^0 \ne 0$, and $\{p^2 = m^2,\ p^0 > 0\} = H^+_m$ is invariant under orthochronous $\Lambda$ by step 3. So $\theta(\Lambda p) = \theta(p)$ there: positive energy is a Lorentz-invariant statement. ⚑ By-product: the invariance holds on the shell only; for $p^2 < 0$ the sign of $p^0$ is frame dependent (step 5) → [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], 1.
+> **4. The mass shell.** For $m > 0$, $p^2 = m^2$ forces $p^0 \ne 0$, and $\{p^2 = m^2,\ p^0 > 0\} = H^+_m$ is invariant under orthochronous $\Lambda$ by step 3. So $\theta((\Lambda p)^0) = \theta(p^0)$ there: positive energy is a Lorentz-invariant statement. ⚑ By-product: the invariance holds on the shell only; for $p^2 < 0$ the sign of $p^0$ is frame dependent (step 5) → [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], 1.
 >
 > **5. Spacelike reversal.** Let $x^2 = -a^2 < 0$. Step 5 of the derivation of Theorem §C1a.4.3 gives $\Lambda_1 = B_z(-\eta)R \in SO^+(1,3)$ with $\Lambda_1x = ae_3$. The rotation $R_x(\pi)$ by $\pi$ about the $x$ axis sends $e_3 \mapsto -e_3$. Then $\Lambda = \Lambda_1^{-1}R_x(\pi)\Lambda_1 \in SO^+(1,3)$ and $\Lambda x = \Lambda_1^{-1}R_x(\pi)(ae_3) = \Lambda_1^{-1}(-ae_3) = -\Lambda_1^{-1}(ae_3) = -x$. In particular the sign of $x^0$ flips whenever $x^0 \ne 0$.
 >
@@ -224,7 +224,7 @@ The four components are a property of the group, a six-dimensional manifold. The
 *Orbits of the identity component in the $(x, t)$ plane, one spatial direction shown. The future (blue) and past (grey) sheets of $t^2 - x^2 = m^2$ are separate orbits; $\mathcal P$ maps each to itself, $\mathcal T$ and $\mathcal P\mathcal T$ exchange them (the figure labels them $P$, $T$, i.e. $\mathcal P$, $\mathcal T$). The spacelike hyperbola (orange, dashed) has two branches only in $1+1$ dimensions; in $3+1$ the spacelike hyperboloid is one connected orbit (Caution below). Adapted from the user's PHY 513 notes, Ch. 1 §1.3.*
 
 > [!caution] Caution: The orbit picture depends on the dimension
-> The four components of the group are the same in every dimension. The orbits are not. In $1+1$ dimensions the spacelike hyperbola $x^2 - t^2 = a^2$ has two branches, $x > 0$ and $x < 0$, which are separate $SO^+(1,1)$ orbits exchanged by $\mathcal P$; there is no rotation to carry one into the other, and $-x$ is not in the orbit of $x$. In $3+1$ dimensions (indeed for two or more space dimensions) $S_a$ is one connected orbit, because a rotation carries $(0, \mathbf x)$ to $(0, -\mathbf x)$ (Theorem §C1a.4.4, 3). So the criterion for "the sign of $x^0$ is invariant" is connectedness of the *orbit*, not of the region, and the figure, drawn in $1+1$, misleads on exactly this point. (Each branch still contains both signs of $x^0$, so the sign is undefined for spacelike vectors in every dimension.)
+> The four components of the group are the same in every dimension. The orbits are not. In $1+1$ dimensions the spacelike hyperbola $x^2 - t^2 = a^2$ has two branches, $x > 0$ and $x < 0$, which are separate $SO^+(1,1)$ orbits exchanged by $\mathcal P$; there is no rotation to carry one into the other, and $-x$ is not in the orbit of $x$. In $3+1$ dimensions (indeed for two or more space dimensions) $S_a$ is one connected orbit, because a rotation carries $(0, \mathbf x)$ to $(0, -\mathbf x)$ ([[§C1a.4 The Lorentz Group#^thm-c1a-4-4|Theorem §C1a.4.4]], 3). So the criterion for "the sign of $x^0$ is invariant" is connectedness of the *orbit*, not of the region, and the figure, drawn in $1+1$, misleads on exactly this point. (Each branch still contains both signs of $x^0$, so the sign is undefined for spacelike vectors in every dimension.)
 >
 > *Source: the user's PHY 513 notes, Ch. 1 §1.3 (Caution "Where the two pictures fail to match")*
 
@@ -241,7 +241,11 @@ The four components are a property of the group, a six-dimensional manifold. The
 ^rem-c1a-4-2
 
 > [!abstract]- Mathematical background
-> Proved in CB; each line says what the physics above relies on.
+> Proved in CA and CB; each line says what the physics above relies on.
+>
+> The invariant volume elements are used under integrals of functions and of distributions (Theorem §C1a.4.1); for distributions the substitution $p \to \Lambda p$ is a definition:
+> - [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^def-ca-2-9|Def. §CA.2.9]] — linear change of variables in a distribution, with the factor $|\det\Lambda|^{-1} = 1$, and what "invariant distribution" means.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]] — $\theta(\pm p^0)\delta(p^2 - m^2)$ and $\theta(\pm x^0)\delta(x^2)$ are tempered distributions and Lorentz invariant: the orbit measures on $H^\pm_m$ and $C^\pm$.
 >
 > The groups named throughout, $O(1,3)$, $SO(1,3)$ and $SO^+(1,3)$, as groups of matrices; that $O(1,3)$ is a group, with $\det\Lambda = \pm1$ and $|\Lambda^0{}_0| \ge 1$, is [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-3|REL Theorem §B1.2.3]] and [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]]:
 > - [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras#^def-cb-1-1|Def. §CB.1.1]] — matrix groups, and the chain $SO(2) < SO(3) < SO^+(1,3) < SO(1,3) < O(1,3)$ (Def. §C1a.4.1).

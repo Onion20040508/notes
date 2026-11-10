@@ -105,7 +105,7 @@ What do a basis and a change of basis do to the vectors, linear maps, dual vecto
 > **3. Matrices.** Apply $M$ to a new basis vector and express everything in the new basis:
 >
 > $$
-> Me'_b \overset{(1)}{=} \sum_c(U^{-1})_{cb}\,Me_c \overset{\text{Def. 9.3}}{=} \sum_c(U^{-1})_{cb}\sum_dM_{dc}\,e_d \overset{\text{Def. 9.4}}{=} \sum_c(U^{-1})_{cb}\sum_dM_{dc}\sum_aU_{ad}\,e'_a = \sum_a\Bigl(\sum_{d,c}U_{ad}M_{dc}(U^{-1})_{cb}\Bigr)e'_a .
+> Me'_b \overset{(1)}{=} \sum_c(U^{-1})_{cb}\,Me_c \overset{\text{Def. §CB.0.2}}{=} \sum_c(U^{-1})_{cb}\sum_dM_{dc}\,e_d \overset{\text{Def. §CB.0.4}}{=} \sum_c(U^{-1})_{cb}\sum_dM_{dc}\sum_aU_{ad}\,e'_a = \sum_a\Bigl(\sum_{d,c}U_{ad}M_{dc}(U^{-1})_{cb}\Bigr)e'_a .
 > $$
 >
 > By Def. §CB.0.2 in the new basis the bracket is $M'_{ab}$, and it is the $(a, b)$ entry of the triple product $UMU^{-1}$ (Theorem §CB.0.3, product rule twice).
@@ -242,7 +242,7 @@ The real case with a metric. The basic facts below were first stated for spaceti
 >
 > **What the proof shows**
 > - Only nondegeneracy is used, not positivity: the identification works for any signature, which is why "metric" rather than "inner product".
-> - In differential geometry this is the musical isomorphism of a pseudo-Riemannian metric on one tangent space ([[§32 The Cotangent Space#^def-32-4|591 Def. §32.4]]).
+> - In differential geometry this is the isomorphism $B^\flat : V \to W^{\ast}$ of a nondegenerate pairing ([[§21 Linear Algebra Toolkit#^thm-21-5|591 Thm. §21.5]]), applied to one tangent space of a pseudo-Riemannian manifold with $B$ the metric (the musical isomorphism).
 > - Equivalence: this is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-2|Theorem §C1a.5.2]] word for word; the physics section keeps the spacetime reading (four-vectors, covectors as gradients).
 
 ^pf-cb-0-12

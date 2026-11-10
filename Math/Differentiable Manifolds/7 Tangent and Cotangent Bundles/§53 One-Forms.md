@@ -201,7 +201,7 @@ This is familiar from multivariable calculus: not every vector field is a gradie
 > \omega = \frac{x\, dy - y\, dx}{x^2 + y^2} \quad \text{on } \mathbb{R}^2 \setminus \{0\} .
 > $$
 >
-> It satisfies the condition but is not $df$; Example [[§53 One-Forms#^ex-53-2|§53.2]] below writes the argument out: both mixed partials equal $(y^2 - x^2)/(x^2 + y^2)^2$, while $\omega$ takes the value $1$ on the velocity of the unit circle ([[§31 Tangent Vectors as Velocities of Curves|§31]]) at every time, which a $df$ cannot do along a closed curve. The hole at the origin is what makes this possible: on all of $\mathbb{R}^2$ — indeed on any star-shaped domain — the condition is sufficient (Lee, Corollary 11.50).
+> It satisfies the condition but is not $df$; Example [[§53 One-Forms#^ex-53-2|§53.2]] below writes the argument out: both mixed partials equal $(y^2 - x^2)/(x^2 + y^2)^2$, while $\omega$ takes the value $1$ on the velocity of the unit circle ([[§31 Tangent Vectors as Velocities of Curves|§31]]) at every time, which a $df$ cannot do along a closed curve. The hole at the origin is what makes this possible: on all of $\mathbb{R}^2$ — indeed on any star-shaped domain — the condition is sufficient (Lee, Theorem 11.49).
 
 ^rem-53-1
 
@@ -255,7 +255,7 @@ This is familiar from multivariable calculus: not every vector field is a gradie
 > $$
 >
 > so $\omega = r^2\, d\vartheta / r^2 = d\vartheta$ on $U$: on the slit plane $\omega$ *is* exact, with $f = \vartheta$. The obstruction is global: going once around the hole, $\vartheta$ increases by $2\pi$ (step 6), so it cannot be continued continuously across the slit, where it jumps from near $\pi$ (just above) to near $-\pi$ (just below). Any $f$ with $df = \omega$ on all of $M$ would be such a continuation (two functions with the same differential on a connected open set differ by a constant: Proposition [[§30 The Differential in Coordinates#^prop-30-11|§30.11]], applied to their difference).
-> 8. *Why the hole matters.* On $\mathbb{R}^2$ itself, or on any star-shaped open set (a disk, the slit plane $U$), a closed form is exact (Poincaré lemma; Lee, Corollary 11.50, not proved in these notes). $M$ is not star-shaped, and step 6 shows the lemma cannot extend to it: whether closed forms are exact depends on the topology of the domain, which is what de Rham cohomology measures.
+> 8. *Why the hole matters.* On $\mathbb{R}^2$ itself, or on any star-shaped open set (a disk, the slit plane $U$), a closed form is exact (Poincaré lemma; Lee, Theorem 11.49, not proved in these notes). $M$ is not star-shaped, and step 6 shows the lemma cannot extend to it: whether closed forms are exact depends on the topology of the domain, which is what de Rham cohomology measures.
 
 ^ex-53-2
 

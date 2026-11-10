@@ -294,7 +294,7 @@ Powers also notes that any constant multiple of an eigenfunction is an eigenfunc
 ^rem-29-4
 
 > [!remark]- Connections
-> - Finite-dimensional analogue: a real symmetric $n \times n$ matrix has $n$ real eigenvalues and an orthonormal basis of eigenvectors, [[§58★ Diagonalization of Symmetric Matrices#^thm-58-3|235 Thm. §58.3]]; for self-adjoint operators this is the real spectral theorem, [[§24 Spectral Theorem#^ladr-7-29|LADR 7.29]]. Theorems §29.2 and §23.5 with the expansion theorem of [[§30 Expansion in Series of Eigenfunctions#^thm-30-2|§30]] are the infinite-dimensional version, in which "basis" means orthonormal basis in the sense of [[§27 Orthonormal Sets and Bases#^def-27-4|556 Def. §27.4]] and there are infinitely many eigenvalues, increasing to $\infty$.
+> - Finite-dimensional analogue: a real symmetric $n \times n$ matrix has $n$ real eigenvalues and an orthonormal basis of eigenvectors, [[§58★ Diagonalization of Symmetric Matrices#^thm-58-3|235 Thm. §58.3]]; for self-adjoint operators this is the real spectral theorem, [[§24 Spectral Theorem#^ladr-7-29|LADR 7.29]]. Theorems §29.2 and §23.5 with the expansion theorem of [[§30 Expansion in Series of Eigenfunctions#^thm-30-2|§30]] are the infinite-dimensional version, in which "basis" means orthonormal basis in the sense of [[§27 Orthonormal Sets and Bases#^def-27-5|556 Def. §27.5]] and there are infinitely many eigenvalues, increasing to $\infty$.
 
 ## Examples
 

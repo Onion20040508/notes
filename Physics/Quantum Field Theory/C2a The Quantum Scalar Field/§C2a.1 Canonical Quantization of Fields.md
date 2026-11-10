@@ -178,7 +178,7 @@ The classical model is [[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Mode
 > | --- | --- | --- |
 > | Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations\|§C1b.2]]) | $\phi(x)$, $x = (t, \mathbf x)$ | integrated over in $S = \int d^4x\,\mathcal L$ |
 > | Hamiltonian, classical ([[§C1b.4 Hamiltonian Field Theory\|§C1b.4]]) | $\phi(\mathbf x)$, $\pi(\mathbf x)$ on a slice | parameter along the trajectory |
-> | Schrödinger picture (§C2a.1–§C2a.6) | $\hat\phi(\mathbf x)$, $\hat\pi(\mathbf x)$ | carried by the states |
+> | Schrödinger picture (§C2a.1–§C2a.5; where a time $t \ne 0$ appears there, and in §C2a.6, the field is the Heisenberg field of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4\|Theorem §C2b.1.4]]) | $\hat\phi(\mathbf x)$, $\hat\pi(\mathbf x)$ | carried by the states |
 > | Heisenberg picture (§C2b.1–§C2b.4) | $\hat\phi(t, \mathbf x)$ | carried by the operators; Klein–Gordon holds |
 >
 > The label $\mathbf x$ is not an operator: field theory has a field operator at each position, and no position operator.
@@ -186,6 +186,20 @@ The classical model is [[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Mode
 > *Source: the user's PHY 513 notes, Ch. 4 §4.2 (Caution "The lecture's construction") · PS §2.3, p. 20*
 
 ^rem-c2a-1-3
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]] — the Schwartz test functions $f, g \in \mathcal S(\mathbb R^3)$ that smear the field and its momentum (Def. §C2a.1.1).
+> - [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]] — a generalized function is a linear map from test functions to numbers; a field is the same with operators as values.
+> - [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] — operator-valued distributions: what $\hat\phi$ and $\hat\pi$ are; $\hat\phi(\mathbf x)$ is the kernel of the notation, not an operator (Def. §C2a.1.1).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]] — the kernel theorem: the smeared commutators have exactly one kernel in $\mathcal S'(\mathbb R^6)$, so the equal-time relations are one well-defined distribution in both points (Theorem §C2a.1.3).
+> - [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]] — the linear change of variables $\mathbf u = \mathbf x - \mathbf y$, $\mathbf v = \mathbf y$ of a distribution, by which $\delta^3(\mathbf x - \mathbf y)$ pairs $f\otimes g$ into $\int f\,g$ (Derivation §C2a.1.3, step 2).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 3 — nascent deltas converge to δ: the shrinking cells give the same pairing in the limit.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 3 — δ at its singular point has no value: the relations cannot hold as equations between operators labelled by points.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — $\int d^3x\,e^{i\mathbf k\cdot\mathbf x} = (2\pi)^3\delta^3(\mathbf k)$ as an identity of tempered distributions (the Fourier convention of the Conventions line; the decoupling of the modes).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] — the other rules of the Fourier transform in this convention.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — for the decoupling computation that follows (§C2a.2): Fubini for wave packets, uniqueness of the transform in $\mathcal S'$, and differentiation under the integral.
 
 > [!remark]- Connections
 > - The oscillator algebra that each mode will carry, and the fact that its spectrum follows from $[\hat a, \hat a^\dagger] = 1$ alone, is Quantum Mechanics' — [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-1|QM Theorem §C3.4.1]], [[§B4.1 Ladder Operators and the Spectrum#^thm-b4-1-4|QM Theorem §B4.1.4]].
@@ -200,4 +214,4 @@ The classical model is [[§B4.1 The Klein–Gordon Equation#^mod-b4-1-3|REL Mode
 > - A linear change of variables turns $\delta^3(\mathbf x - \mathbf y)$ on $\mathbb R^6$ into $\delta^3$ of the difference with the other variable free, which is why it pairs $f\otimes g$ into $\int f\,g$ ([[§C2a.1 Canonical Quantization of Fields#^der-c2a-1-3|Derivation §C2a.1.3]], step 2) — [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]; nascent deltas make the same pairing the limit of the shrinking cells — [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]].
 > - The relation has no value at coinciding points for the same reason the zero-point energy contains $\delta^3(\mathbf 0)$: δ evaluated at its singular point — [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]].
 > - The plane-wave delta of the decoupling computation is an identity in $\mathcal S'$, and the computation itself is Fubini's theorem for wave packets — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]]; uniqueness of the transform, used to read off one equation per mode, holds in $\mathcal S'$ — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]]; differentiating under the integral needs a dominating function — [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]].
-> - Principle §C2a.1.1 is preserved by orthogonal rotations among $N$ fields, so diagonalizing a mass matrix gives $N$ independent free fields, each quantized as in Theorem §C2a.1.3 ([[§R1.2 Diagonalization into N Free Klein–Gordon Fields#^thm-r1-2-3|Thesis Thm. §R1.2.3]], [[§R1.2 Diagonalization into N Free Klein–Gordon Fields#^thm-r1-2-4|Thesis Thm. §R1.2.4]]).
+> - [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]] is preserved by orthogonal rotations among $N$ fields, so diagonalizing a mass matrix gives $N$ independent free fields, each quantized as [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] ([[§R1.2 Diagonalization into N Free Klein–Gordon Fields#^thm-r1-2-3|Thesis Thm. §R1.2.3]], [[§R1.2 Diagonalization into N Free Klein–Gordon Fields#^thm-r1-2-4|Thesis Thm. §R1.2.4]]).

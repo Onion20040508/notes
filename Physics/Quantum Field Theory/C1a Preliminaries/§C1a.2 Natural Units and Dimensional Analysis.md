@@ -36,7 +36,6 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 
 ^def-c1a-2-1
 
-
 > [!definition] Definition §C1a.2.2: Mass Dimension
 > In natural units ([[§C1a.2 Natural Units and Dimensional Analysis#^def-c1a-2-1|Def. §C1a.2.1]]) every quantity $Q$ has a single **mass dimension** $d$, written $[Q] = d$: $Q$ is a pure number times $(\text{mass})^d$. Masses, energies and momenta have $d = 1$, lengths and times $d = -1$, velocities, actions and angular momenta $d = 0$.
 >
@@ -90,7 +89,7 @@ What is lost when $\hbar = c = 1$, and how are $\hbar$ and $c$ put back? Relativ
 >
 > **What the derivation shows.**
 > - Forgetting $\hbar$ and $c$ loses exactly two integers, and the type of the quantity returns three equations for them: two fix the integers, the third ($M$) is the mass dimension.
-> - The rule applies to a monomial in masses; a formula with several kinds of symbols or several terms is restored by the same matching, term by term ([[P4 Restoring ħ and c#^p4-4|P4, step 4]]).
+> - The rule applies to a monomial in masses; a formula with several kinds of symbols or several terms is restored by the same matching, term by term ([[P4 Restoring ħ and c#^p4-4|P4, step 4]]; sums: [[P4 Restoring ħ and c#^p4-5|P4, step 5]]).
 > - Used next: the table below, [[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-1|Theorem §C1b.3.1]] ($[S] = 0$), and every example of [[P4 Restoring ħ and c]].
 
 ^der-c1a-2-1

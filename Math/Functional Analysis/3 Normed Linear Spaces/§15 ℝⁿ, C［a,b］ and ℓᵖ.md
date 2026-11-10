@@ -35,7 +35,7 @@ $C[a,b]$ with the maximum norm is the first infinite-dimensional Banach space. T
 
 ![[§13 The Completion of a Normed Space#^ex-13-4]]
 
-![[§13 The Completion of a Normed Space#^prop-13-4]]
+![[§13 The Completion of a Normed Space#^prop-13-5]]
 
 ![[§14 New Normed Spaces from Old#^cor-14-3]]
 

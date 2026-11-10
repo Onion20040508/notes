@@ -59,7 +59,7 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique 
 ^rem-26-1
 
 > [!remark]- Connections
-> - The general notion for maps between normed spaces: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]; the dual space of bounded functionals: [[§44 Bras, Kets, and the Riesz Map#^def-44-1|Def. §44.1]].
+> - The general notion for maps between normed spaces: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]; the dual space of bounded functionals: [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|Def. §44.1]].
 
 > [!theorem] Proposition §26.2: Bounded Means Continuous
 > For a linear functional $\ell$ on a normed linear space $X$, the following are equivalent:
@@ -190,7 +190,7 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 
 > [!remark]- Connections
 > - The finite-dimensional home: [[Riesz representation theorem|LADR 6.42]], revisited through orthogonal projection in [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]].
-> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§44 Bras, Kets, and the Riesz Map#^thm-44-2|§44.2]].
+> - The map $a \mapsto \ell_a$ as an isometry onto the dual, and its bra–ket reading: [[§44 Bras, Kets, and the Riesz Map#^thm-44-1|§44.1]].
 
 ![[m556-19-1.svg]]
 *The kernel $N$, the line $N^\perp$ spanned by $x_0$ (red), and the decomposition $x = kx_0 + y$ that locates $x$ on the level set $\{\ell = \ell(x)\}$ (dashed): $\ell(x)$ sees only the $N^\perp$-component $kx_0$. The representing vector $a$ (blue) is the multiple of $x_0$ normal to $N$.*
@@ -202,11 +202,11 @@ This is the only place in the proof where boundedness is used; by Proposition [[
 The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal vector to $N$, a multiple of $x_0$. The level sets $\{\ell = c\}$ are the translates of $N$, and $\ell(x)$ records only which translate $x$ lies on, i.e. the $N^\perp$-component $kx_0$ of $x$.
 
 > [!remark] Remark: Reading the Statement
-> Part (1) is the easy direction and holds in any inner product space. Part (2) is the content: on a Hilbert space there are *no other* bounded linear functionals than the ones given by inner products, exactly as on $\mathbb{R}^n$ (Example [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-2|§26.2]] spells this out for $L^2$). The vector is on the *second* slot because the functional must be linear in $x$, and the inner product is linear in its first argument; with the physicists' convention it would be $(a, x)$.
+> Part (1) is the easy direction and holds in any inner product space. Part (2) is the content: on a Hilbert space there are *no other* bounded linear functionals than the ones given by inner products, exactly as on $\mathbb{R}^n$ (Example [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-3|§26.3]] spells this out for $L^2$). The vector is on the *second* slot because the functional must be linear in $x$, and the inner product is linear in its first argument; with the physicists' convention it would be $(a, x)$.
 
 ^rem-26-3
 
-> [!example] Example §26.2: Bounded Linear Functionals on $L^2$
+> [!example] Example §26.3: Bounded Linear Functionals on $L^2$
 > Let $\Omega \subset \mathbb{R}^n$ be a domain. Every bounded linear functional $\ell$ on $L^2(\Omega)$ is of the form
 >
 > $$
@@ -215,7 +215,7 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 >
 > for a unique $g \in L^2(\Omega)$; conversely every such formula defines a bounded linear functional. Indeed $L^2(\Omega)$ with $(f, g) = \int_\Omega f \bar g$ (Example [[§22 Definition and Examples#^ex-22-3|§22.3]]) is a Hilbert space (Example [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-1|§23.1]]), so Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]](2) gives a unique $g$ with $\ell(f) = (f, g) = \int_\Omega f \bar g$ for all $f$, and Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]](1) gives the converse.
 
-^ex-26-2
+^ex-26-3
 
 > [!remark] Remark
 > On method: when proving a big theorem, the simple examples from linear algebra very often give the answer, so start with simple examples and go from there. Here the finite-dimensional picture dictated both the object to study ($\ker \ell$) and the candidate ($a$ normal to it); the analysis consisted of making the orthogonal decomposition available, which is where completeness of $H$ and boundedness of $\ell$ enter.
@@ -275,7 +275,7 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 *Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-6|§26.6]]
 
 > [!remark] Remark
-> The proof of Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-6|§26.6]] is “complete the square”: adding and subtracting $\frac12\|u^{\ast}\|^2$ turns the minimization of $f$ into the minimization of a distance, which is the projection theorem. For $K = H$ the minimizer is $u^{\ast}$ itself (Corollary [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^cor-26-7|§26.7]]), so minimizing $\frac12\|v\|^2 - \ell(v)$ over $H$ produces the Riesz representer of $\ell$ — the variational form of the Riesz representation theorem, and the prototype of Dirichlet's principle. For a proper $K$ the minimizer is the projection of $u^{\ast}$ onto $K$, the starting point of variational inequalities (obstacle problems).
+> The proof of Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-6|§26.6]] is “complete the square”: adding and subtracting $\frac12\|u^{\ast}\|^2$ turns the minimization of $f$ into the minimization of a distance, which is the [[§25 Projection and Orthogonal Decomposition#^thm-25-2|projection theorem]]. For $K = H$ the minimizer is $u^{\ast}$ itself (Corollary [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^cor-26-7|§26.7]]), so minimizing $\frac12\|v\|^2 - \ell(v)$ over $H$ produces the Riesz representer of $\ell$ — the variational form of the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]], and the prototype of Dirichlet's principle. For a proper $K$ the minimizer is the projection of $u^{\ast}$ onto $K$, the starting point of variational inequalities (obstacle problems).
 
 ^rem-26-6
 
@@ -285,5 +285,3 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 
 ![[m556-19-2.svg]]
 *Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-6|§26.6]] in one picture: the closed convex set $K$ (blue), the Riesz representer $u^\ast$ of $\ell$ (grey arrow from $0$), and the level sets of $f(v) = \tfrac12\|u^\ast - v\|^2 - \tfrac12\|u^\ast\|^2$, which are circles centred at $u^\ast$ (dashed). The small circles miss $K$ and the large one cuts it; the red circle $\{f = f(u_0)\}$ is the first to touch $K$, at the minimizer $u_0$ — the point of $K$ closest to $u^\ast$ ([[§25 Projection and Orthogonal Decomposition#^thm-25-2|projection theorem]]) — and the red segment from $u^\ast$ to $u_0$ is perpendicular to the supporting line of $K$ at $u_0$ (grey). For $K = H$ the minimizer would be $u^\ast$ itself ([[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^rem-26-6|remark]]). (Drawn for these notes in the vault; not in the course tex.)*
-
-> The proof is “complete the square”: adding and subtracting $\frac12\|u^*\|^2$ turns the minimization of $f$ into the minimization of a distance, which is the [[§25 Projection and Orthogonal Decomposition#^thm-25-2|projection theorem]]. For $K = H$ the minimizer is $u^*$ itself, so minimizing $\frac12\|v\|^2 - \ell(v)$ over $H$ produces the Riesz representer of $\ell$ — the variational form of the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]], and the prototype of Dirichlet's principle. For a proper $K$ the minimizer is the projection of $u^*$ onto $K$, the starting point of variational inequalities (obstacle problems).

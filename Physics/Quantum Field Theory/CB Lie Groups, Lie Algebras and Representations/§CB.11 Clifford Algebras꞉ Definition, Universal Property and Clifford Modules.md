@@ -22,35 +22,35 @@ Quadratic forms and their bilinear forms, defined in LADR:
 > [!definition] Definition §CB.11.1: Quadratic Space
 > A **quadratic space** $(V, q)$ over $\mathbb K = \mathbb R$ or $\mathbb C$ is a finite-dimensional $\mathbb K$-vector space $V$ with a quadratic form $q$ ([[§35 Bilinear Forms and Quadratic Forms#^ladr-9-18|LADR Def. 9.18]]), $q(v) = B(v, v)$ for the symmetric bilinear form $B(v, w) = \frac12\bigl(q(v + w) - q(v) - q(w)\bigr)$. It is **nondegenerate** if $B(v, \cdot) = 0$ implies $v = 0$. A basis $e_1, \dots, e_n$ is **orthogonal** if $B(e_i, e_j) = 0$ for $i \ne j$, **orthonormal** if moreover $q(e_i) = \pm1$ (over $\mathbb C$: $q(e_i) = 1$). $\mathbb R^{r,s}$ denotes $\mathbb R^{r+s}$ with $q(x) = x_1^2 + \cdots + x_r^2 - x_{r+1}^2 - \cdots - x_{r+s}^2$; Minkowski space is $\mathbb R^{1,3}$ with $q(x) = g(x, x)$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-11|Def. §CB.0.11]]).
 >
-> *Source (planned): LADR §35 (orthogonal bases: Thm. 9.12) · written here*
+> *Source: LADR §35 (orthogonal bases: Thm. 9.12) · written here*
 
 ^def-cb-11-1
 
 > [!definition] Definition §CB.11.2: Tensor Algebra
 > The **tensor algebra** of a $\mathbb K$-vector space $V$ is $T(V) = \bigoplus_{k\ge0}V^{\otimes k}$ ($V^{\otimes0} = \mathbb K$, $V^{\otimes k}$ of [[§38 Tensor Products#^ladr-9-88|LADR Def. 9.88]]), an associative algebra ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-7|Def. §CB.7.7]]) with the product $(v_1\otimes\cdots\otimes v_k)(w_1\otimes\cdots\otimes w_l) = v_1\otimes\cdots\otimes v_k\otimes w_1\otimes\cdots\otimes w_l$ extended bilinearly, and unit $1 \in \mathbb K$.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^def-cb-11-2
 
 > [!definition] Definition §CB.11.3: Two-Sided Ideal
 > A **two-sided ideal** of an associative algebra $A$ is a subspace $I$ with $aI \subset I$ and $Ia \subset I$ for all $a \in A$. The ideal **generated** by a subset $S$ is the smallest one containing $S$: the span of all $asb$ with $a, b \in A$, $s \in S$.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^def-cb-11-3
 
 > [!definition] Definition §CB.11.4: Quotient Algebra
 > For a two-sided ideal $I$ of $A$ ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-3|Def. §CB.11.3]]), the **quotient algebra** $A/I$ is the quotient space ([[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR Def. 3.99]]) with the product $(a + I)(b + I) = ab + I$.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^def-cb-11-4
 
 > [!theorem] Theorem §CB.11.5: The Quotient Is an Algebra
 > The product of [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-4|Def. §CB.11.4]] is well defined, $A/I$ is an associative algebra with unit $1 + I$, and $a \mapsto a + I$ is a surjective algebra homomorphism ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-8|Def. §CB.7.8]]) with kernel $I$. An algebra homomorphism $f : A \to B$ with $f(I) = 0$ factors uniquely through $A/I$.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^thm-cb-11-5
 
@@ -77,7 +77,7 @@ Quadratic forms and their bilinear forms, defined in LADR:
 > [!caution] Caution: Two sign conventions for the Clifford relation
 > These notes use the physics convention $vv = +q(v)$, which with $q = g$ gives $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]; Woit, §29.2, eq. (29.2), and Meinrenken, Def. 2.1, use the same sign). Much of the mathematical literature (e.g. Figueroa-O'Farrill, Spin Geometry, eq. (2); Lawson–Michelsohn) writes $vv = -q(v)$; its $\mathrm{Cl}(V, q)$ is this section's $\mathrm{Cl}(V, -q)$, and labels such as $\mathrm{Cl}_{r,s}$ or $\mathrm{Cl}(r, s)$ then refer to different algebras. Over $\mathbb C$ the two conventions give isomorphic algebras ($v \mapsto iv$). Here $\mathrm{Cl}(r, s)$ always has $r$ generators squaring to $+1$ and $s$ to $-1$: in $\mathrm{Cl}(1,3)$, $(\gamma^0)^2 = +1$, $(\gamma^i)^2 = -1$.
 >
-> *Source: SPEC-CB decision 6 · Woit, §29.2 (which notes the other convention) · Meinrenken, Clifford Algebras and Lie Groups, Def. 2.1 · Figueroa-O'Farrill, Spin Geometry, eq. (2) and §1.3.2 (his $C\ell(s,t)$, $s$ generators squaring to $-1$, is this section's $\mathrm{Cl}(t,s)$)*
+> *Source: Woit, §29.2 (which notes the other convention) · Meinrenken, Clifford Algebras and Lie Groups, Def. 2.1 · Figueroa-O'Farrill, Spin Geometry, eq. (2) and §1.3.2 (his $C\ell(s,t)$, $s$ generators squaring to $-1$, is this section's $\mathrm{Cl}(t,s)$)*
 
 ^cau-cb-11-1
 
@@ -131,7 +131,7 @@ Quadratic forms and their bilinear forms, defined in LADR:
 > [!theorem] Theorem §CB.11.8: The Anticommutator
 > In $\mathrm{Cl}(V, q)$, $vw + wv = 2B(v, w)$ for all $v, w \in V$; in an orthogonal basis $e_ie_j = -e_je_i$ ($i \ne j$) and $e_i^2 = q(e_i)$.
 >
-> *Source: Woit, §29.2, eq. (29.2) · the injectivity of $V \to \mathrm{Cl}(V, q)$, first stated here, is [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-7|Theorem §CB.12.7]] (moved in the CB ordering pass: its proof uses the basis of Theorem §CB.12.6)*
+> *Source: Woit, §29.2, eq. (29.2) · the injectivity of $V \to \mathrm{Cl}(V, q)$ is proved later, as [[§CB.12 Clifford Algebras꞉ Grading, Basis and the Volume Element#^thm-cb-12-7|Theorem §CB.12.7]] (its proof uses the basis of Theorem §CB.12.6)*
 
 ^thm-cb-11-8
 
@@ -158,7 +158,7 @@ Quadratic forms and their bilinear forms, defined in LADR:
 > [!definition] Definition §CB.11.9: Clifford Module
 > A **Clifford module** of $(V, q)$ is a representation of the algebra $\mathrm{Cl}(V, q)$ on a complex vector space $W$ ([[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^def-cb-7-9|Def. §CB.7.9]]): an algebra homomorphism $\gamma : \mathrm{Cl}(V, q) \to \operatorname{End}_{\mathbb C}(W)$. Invariant subspaces, irreducibility, intertwiners and equivalence are those of Def. §CB.7.9.
 >
-> *Source (planned): written here*
+> *Source: written here*
 
 ^def-cb-11-9
 
@@ -200,7 +200,7 @@ Quadratic forms and their bilinear forms, defined in LADR:
 
 ## The Dirac matrices: the course's Clifford module
 
-The course's Clifford module (PHY 513 Lecture 7, Part B): four matrices, or four linear maps on spinor space, with $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$, the relation of Theorem §CB.11.10, 2 for $V = \mathbb R^{1,3}$ (which of $e_\mu \mapsto \gamma_\mu$, $e_\mu \mapsto \gamma^\mu$ is used matters only for signs: [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^cau-cb-18-1|§CB.18, Caution: Two Dirac modules, and the sign of γ⁵]]). The statements were first written in the physics chapter ([[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]) and keep its notation: $V$ is spinor space, a four-dimensional complex vector space, and the matrices are $n\times n$ until §CB.13 shows $n = 4$.
+The course's Clifford module (PHY 513 Lecture 7, Part B): four matrices, or four linear maps on spinor space, with $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$, the relation of [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-10|Theorem §CB.11.10]] (its matrix form) for the quadratic space $\mathbb R^{1,3}$ (which of $e_\mu \mapsto \gamma_\mu$, $e_\mu \mapsto \gamma^\mu$ is used matters only for signs: [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^cau-cb-18-1|§CB.18, Caution: Two Dirac modules, and the sign of γ⁵]]). The statements were first written in the physics chapter ([[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]) and keep its notation: from here to the end of this section $V$ is spinor space, the complex vector space on which the module acts (written $W$ in Def. §CB.11.9 and Theorem §CB.11.10, and $S$ from §CB.14 on), not the quadratic space of Def. §CB.11.1. Def. §CB.11.11 allows any matrix size $n$; that $n$ is even and at least $4$, and that the irreducible size is $n = 4$, is shown in §CB.13 ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-9|Theorem §CB.13.9]], [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-8|Theorem §CB.13.8]]).
 
 > [!definition] Definition §CB.11.11: The Dirac Matrices
 > **Dirac matrices** ($\gamma$ matrices) are four $n\times n$ complex matrices $\gamma^0, \gamma^1, \gamma^2, \gamma^3$ satisfying the **Clifford** (Dirac) **algebra**
@@ -249,7 +249,7 @@ The course's Clifford module (PHY 513 Lecture 7, Part B): four matrices, or four
 
 *Uses:* [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]
 
-The course's Dirac matrices in its chosen basis, first written in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]–[[§C5a.2 The Dirac Form|§C5a.2]] and restated here as an example of Definition §CB.11.11 (CB ordering pass, 2026-10-08); the later sections of CB use it as their concrete model:
+The course's Dirac matrices in its chosen basis, first written in [[§C5a.1 Spinor Space and the Clifford Action|§C5a.1]]–[[§C5a.2 The Dirac Form|§C5a.2]] and restated here as an example of Definition §CB.11.11; the later sections of CB use it as their concrete model:
 
 > [!example] Example §CB.11.13: The Chiral Dirac Matrices
 > In $2\times2$ blocks, with $\sigma^\mu$, $\bar\sigma^\mu$ of [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-20|Def. §CB.0.20]],
@@ -269,7 +269,7 @@ The course's Dirac matrices in its chosen basis, first written in [[§C5a.1 Spin
 ## The Clifford action on spinor space
 
 > [!definition] Definition §CB.11.14: The Dirac Maps
-> The **Dirac maps** on spinor space $V$ (a four-dimensional complex vector space, [[§2 Definition of Vector Space#^ladr-1-20|LADR Def. 1.20]]) are four linear maps $\Gamma^0, \Gamma^1, \Gamma^2, \Gamma^3 \in \operatorname{End}(V)$ with
+> The **Dirac maps** on spinor space $V$ (a four-dimensional complex vector space, [[§2 Definition of Vector Space#^ladr-1-20|LADR Def. 1.20]]; here $V$ is the space the module acts on, not the quadratic space of [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-1|Def. §CB.11.1]]) are four linear maps $\Gamma^0, \Gamma^1, \Gamma^2, \Gamma^3 \in \operatorname{End}(V)$ with
 >
 > $$
 > \Gamma^\mu\Gamma^\nu + \Gamma^\nu\Gamma^\mu = 2g^{\mu\nu}\,\mathrm{id}_V ,
@@ -337,10 +337,10 @@ The first structural consequence of the relation, in any unital algebra:
 
 *Uses:* [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-15|Theorem §CB.11.15]]
 
-In the course's words, the Clifford relation of Minkowski space generates the algebra of square roots of $p^2$: the case $V = \mathbb R^{1,3}$ of Def. §CB.11.6 and Theorem §CB.11.7. The remark below was written in the physics chapter before this section existed; the construction as a quotient of the tensor algebra, which it calls missing from the vault, is Def. §CB.11.6.
+In the course's words, the Clifford relation of Minkowski space generates the algebra of square roots of $p^2$: the case $V = \mathbb R^{1,3}$ of Def. §CB.11.6 and Theorem §CB.11.7.
 
 > [!remark] ★ Remark: The Clifford algebra is the algebra of square roots of p²
-> **The algebra.** On Minkowski space $M$ ([[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]]) the metric $g$ is a symmetric bilinear form with quadratic form $q(v) = g(v, v)$ ([[§35 Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR Def. 9.9]], [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-18|LADR Def. 9.18]]). The **Clifford algebra** $\mathrm{Cl}(1,3)$ is the associative algebra with unit generated by the vectors $v \in M$, added as in $M$, subject to the single relation
+> **The algebra.** On Minkowski space $M$ ([[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^def-cb-0-11|Def. §CB.0.11]]; the course's [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]]) the metric $g$ is a symmetric bilinear form with quadratic form $q(v) = g(v, v)$ ([[§35 Bilinear Forms and Quadratic Forms#^ladr-9-9|LADR Def. 9.9]], [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-18|LADR Def. 9.18]]). The **Clifford algebra** $\mathrm{Cl}(1,3)$ is the associative algebra with unit generated by the vectors $v \in M$, added as in $M$, subject to the single relation
 >
 > $$
 > v\,v = g(v, v)\,1 \qquad (v \in M) :
@@ -348,9 +348,9 @@ In the course's words, the Clifford relation of Minkowski space generates the al
 >
 > every vector is a square root of its own length squared. Replacing $v$ by $v + w$ gives $vw + wv = 2g(v, w)\,1$; on a basis $e_\mu$ of $M$, with $\gamma_\mu$ the image of $e_\mu$ and $\gamma^\mu = g^{\mu\nu}\gamma_\nu$, this is $\{\gamma^\mu, \gamma^\nu\} = 2g^{\mu\nu}$ ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]]). Dirac's requirement, a first-order factor of the Klein–Gordon operator, is exactly this relation ([[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]]): $\mathrm{Cl}(1,3)$ is the algebra of square roots of $p^2$ with no further relations.
 >
-> **Universal property.** If $A$ is an associative algebra with unit and $f : M \to A$ is linear with $f(v)^2 = g(v, v)\,1$ for all $v$, then $f$ extends uniquely to an algebra homomorphism $\mathrm{Cl}(1,3) \to A$. A choice of Dirac matrices is such an $f$, $f(p) = \slashed{p} = p_\mu\gamma^\mu$, into $A = M_4(\mathbb C)$; the Dirac maps are one into $\operatorname{End}(V)$ ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-14|Def. §CB.11.14]]). Compare the tensor product, which turns bilinear maps into linear ones ([[§38 Tensor Products#^ladr-9-79|LADR Thm. 9.79]]); the construction of $\mathrm{Cl}(1,3)$ as a quotient of the tensor algebra is not in the vault. After complexification $\mathrm{Cl}(1,3)\otimes\mathbb C \cong M_4(\mathbb C)$ ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^rem-cb-13-1|§CB.13, ★ Remark: The complexified Clifford algebra is the full matrix algebra]]).
+> **Universal property.** If $A$ is an associative algebra with unit and $f : M \to A$ is linear with $f(v)^2 = g(v, v)\,1$ for all $v$, then $f$ extends uniquely to an algebra homomorphism $\mathrm{Cl}(1,3) \to A$. A choice of Dirac matrices is such an $f$, $f(p) = \slashed{p} = p_\mu\gamma^\mu$, into $A = M_4(\mathbb C)$; the Dirac maps are one into $\operatorname{End}(V)$ ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-14|Def. §CB.11.14]]). Compare the tensor product, which turns bilinear maps into linear ones ([[§38 Tensor Products#^ladr-9-79|LADR Thm. 9.79]]); the construction of $\mathrm{Cl}(1,3)$ as a quotient of the tensor algebra is [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-6|Def. §CB.11.6]], and the universal property for a general quadratic space is [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-7|Theorem §CB.11.7]]. After complexification $\mathrm{Cl}(1,3)\otimes\mathbb C \cong M_4(\mathbb C)$ ([[§CB.13 Complex Clifford Algebras and Clifford Modules#^rem-cb-13-1|§CB.13, ★ Remark: The complexified Clifford algebra is the full matrix algebra]]).
 >
-> *Source: written here, on the concrete content of Theorem §C5a.0.1; no course source states the Clifford algebra of a quadratic form or its universal property, and the vault has no Math home for Clifford algebras · the relation: PS §3.2, eq. (3.22) and p. 43; the user's PHY 513 notes, Ch. 8 §8.1 · the rows: the homes linked in the table*
+> *Source: written here, on the concrete content of Theorem §C5a.0.1; no course source states the Clifford algebra of a quadratic form or its universal property · the relation: PS §3.2, eq. (3.22) and p. 43; the user's PHY 513 notes, Ch. 8 §8.1*
 
 ^rem-cb-11-1
 

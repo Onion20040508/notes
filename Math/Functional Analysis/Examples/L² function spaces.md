@@ -14,7 +14,7 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 - Among the $L^p(\Omega)$, only $L^2$ has a norm coming from an inner product ([[§24 The Parallelogram Law and Jordan–von Neumann#^cor-24-3|§24]])
 - Sobolev spaces: completing $C_c^\infty(\Omega)$ in $L^2$ norms of derivatives ([[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3|§23]])
 - Even and odd functions: $L^2[-1,1] = E \oplus O$ ([[§25 Projection and Orthogonal Decomposition#^prop-25-9|§25]])
-- On $L^2$ every bounded linear functional is $f \mapsto \int f\,\bar{g}$ ([[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-2|Ex. §26.2]])
+- On $L^2$ every bounded linear functional is $f \mapsto \int f\,\bar{g}$ ([[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-3|Ex. §26.3]])
 - The Fourier basis of $L^2[0,2\pi]$ ([[§27 Orthonormal Sets and Bases#^thm-27-11|§27]])
 - Fourier series converge in $L^2$, with Parseval's equality ([[§27 Orthonormal Sets and Bases#^cor-27-12|Cor. §27.12]])
 - $L^p(E)$, in particular $L^2(E)$, is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] ([[§29 Sequence and Function Spaces#^prop-29-5|§29]])
@@ -26,6 +26,8 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 - Point evaluation is not bounded in the $L^2$ norm ([[§46 Position Eigenstates and Continuous Resolutions#^prop-46-4|§46.4]])
 - The spectral projections of position on $L^2(\mathbb{R}^n)$ ([[§46 Position Eigenstates and Continuous Resolutions#^prop-46-5|§46.5]])
 - The bound states of hydrogen are not complete in $L^2(\mathbb{R}^3)$ ([[§47 Bound States Need Not Be Complete꞉ Hydrogen#^cor-47-2|§47.2]])
+- The Radon–Nikodym theorem, from the Riesz representation theorem in $L^2(\mu + \nu)$ ([[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1|§35]])
+- $\sin(mx) \rightharpoonup 0$ in $L^2[0, 2\pi]$ ([[§43 Weak and Weak-Star Convergence#^ex-43-2|§43]])
 
 ## The $L^2$ inner product, convergent by Hölder's inequality
 ![[§22 Definition and Examples#^ex-22-3]]
@@ -46,7 +48,7 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 ![[§25 Projection and Orthogonal Decomposition#^prop-25-9]]
 
 ## On $L^2$ every bounded linear functional is $f \mapsto \int f\,\bar{g}$
-![[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-2]]
+![[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-3]]
 
 ## The Fourier basis of $L^2[0,2\pi]$
 ![[§27 Orthonormal Sets and Bases#^thm-27-11]]
@@ -80,3 +82,9 @@ The spaces $L^2(\Omega)$ with $(f, g) = \int_\Omega f\,\overline{g}\,dx$, the di
 
 ## The bound states of hydrogen are not complete in $L^2(\mathbb{R}^3)$
 ![[§47 Bound States Need Not Be Complete꞉ Hydrogen#^cor-47-2]]
+
+## The Radon–Nikodym theorem, from the Riesz representation theorem in $L^2(\mu + \nu)$
+![[§35 Measures and the Radon–Nikodym Theorem#^thm-35-1]]
+
+## $\sin(mx) \rightharpoonup 0$ in $L^2[0, 2\pi]$
+![[§43 Weak and Weak-Star Convergence#^ex-43-2]]

@@ -35,7 +35,7 @@ $\ell^2$ is the one $\ell^p$ whose norm comes from an inner product (and [[§24 
 
 ![[§22 Definition and Examples#^ex-22-2]]
 
-![[§25 Projection and Orthogonal Decomposition#^ex-25-4]]
+![[§25 Projection and Orthogonal Decomposition#^ex-25-5]]
 
 ![[§27 Orthonormal Sets and Bases#^ex-27-1]]
 

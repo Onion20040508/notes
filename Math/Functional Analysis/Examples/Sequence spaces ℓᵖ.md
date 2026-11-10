@@ -28,6 +28,9 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 - The shift $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ on $\ell^2$: an isometry that is not an isomorphism ([[§28 Existence of Orthonormal Bases and Separability#^ex-28-1|§28]])
 - Classification of separable Hilbert spaces ([[§28 Existence of Orthonormal Bases and Separability#^thm-28-5|§28]])
 - $(\ell^2)' = \ell^2$ by the Riesz representation theorem ([[§31 Dual Spaces#^ex-31-1|§31]])
+- The dual of $\ell^p$ is $\ell^{p'}$ for $1 \le p < \infty$ ([[§36 Duality in Normed Spaces#^thm-36-4|§36]])
+- $(\ell^\infty)'$ is larger than $\ell^1$ ([[§36 Duality in Normed Spaces#^ex-36-2|§36]])
+- $\ell^p$ is reflexive for $1 < p < \infty$ ([[§37 Separable Duals and Reflexive Spaces#^ex-37-4|§37]])
 
 ## The completion is complete by the plan of the $\ell^p$ proof, with a diagonal candidate
 ![[§13 The Completion of a Normed Space#^rem-13-2]]
@@ -90,3 +93,12 @@ For $1 \le p \le \infty$, $\ell^p$ is the space of sequences $a = (a_1, a_2, \ld
 
 ## $(\ell^2)' = \ell^2$ by the Riesz representation theorem
 ![[§31 Dual Spaces#^ex-31-1]]
+
+## The dual of $\ell^p$ is $\ell^{p'}$ for $1 \le p < \infty$
+![[§36 Duality in Normed Spaces#^thm-36-4]]
+
+## $(\ell^\infty)'$ is larger than $\ell^1$
+![[§36 Duality in Normed Spaces#^ex-36-2]]
+
+## $\ell^p$ is reflexive for $1 < p < \infty$
+![[§37 Separable Duals and Reflexive Spaces#^ex-37-4]]

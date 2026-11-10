@@ -93,7 +93,7 @@ tags: [linear-algebra]
 ^ladr-6-27
 
 > [!remark]- Connections
-> - In a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]]) an orthonormal basis is defined by the series expansion of every vector ([[§27 Orthonormal Sets and Bases#^def-27-4|556 Def. §27.4]]); in infinite dimensions it is never a basis in the sense of this definition, since some vectors need infinitely many terms.
+> - In a Hilbert space ([[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|556 Def. §23.1]]) an orthonormal basis is defined by the series expansion of every vector ([[§27 Orthonormal Sets and Bases#^def-27-5|556 Def. §27.5]]); in infinite dimensions it is never a basis in the sense of this definition, since some vectors need infinitely many terms.
 > - Computational version: [[§51 Orthogonal Sets#^def-51-4|235 Def. §51.4]] (orthonormal basis of a subspace of $\mathbb R^n$).
 
 > [!theorem] Theorem 6.28: Orthonormal lists of the right length are orthonormal bases

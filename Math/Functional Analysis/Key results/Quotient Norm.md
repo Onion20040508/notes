@@ -12,7 +12,7 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses
 - [[§1 Linear Spaces#^def-1-2|Definition §1.2: Linear Subspace]]
-- [[§2 Quotient Spaces and Complements#^prop-2-1|Proposition §2.1: X/Y is a Linear Space]]
+- [[§2 Quotient Spaces and Complements#^prop-2-2|Proposition §2.2: X/Y is a Linear Space]]
 - [[§2 Quotient Spaces and Complements#^def-2-2|Definition §2.2: Equivalence Class]]
 - [[§2 Quotient Spaces and Complements#^def-2-3|Definition §2.3: Quotient Space]]
 - [[§11 Normed Linear Spaces#^def-11-1|Definition §11.1: Norm; Normed Linear Space]]
@@ -23,12 +23,12 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§14 New Normed Spaces from Old#^prop-14-10|Proposition §14.10: The Quotient Seminorm; Closedness is Necessary]]
-- [[§36 Duality in Normed Spaces#^thm-36-11|Theorem §36.11: The Dual of a Quotient]]
+- [[§36 Duality in Normed Spaces#^thm-36-13|Theorem §36.13: The Dual of a Quotient]]
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-11|Corollary §37.11: The Dual of a Subspace: Y' ≅ X'/Y^perp]]
 - [[§39 Solving Mx = y#^thm-39-1|Theorem §39.1: Null Space and the Induced Map]]
 
 ## Connections
 - **How.** ‖[x]‖ is the infimum of the norms in the coset, i.e. the distance from 0 to the translate x + Y. Homogeneity follows by substituting y = ay′. Subadditivity uses ε-near minimizers in [x] and [y] ([[Characterization of the Supremum]]). Positivity is where closedness enters: if ‖[x]‖ = 0, then elements of Y converge to −x.
 - **Why closed.** For any subspace the formula is a seminorm, and it is a norm iff Y is closed ([[§14 New Normed Spaces from Old#^prop-14-10|§14.10]]). For example, c₀₀ is not closed in ℓᵖ (1 ≤ p < ∞), because truncations converge ([[§14 New Normed Spaces from Old#^ex-14-3|Ex. §14.3]]). This is the same closedness that makes dist(x₀, Y) > 0 in [[Riesz's Lemma]]; that distance is exactly ‖[x₀]‖.
-- **Same idea elsewhere.** The underlying linear space is the algebraic quotient ([[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]]; [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103]]). In 551, total variation ([[§28 Differentiation Theory#^def-28-2|551 Def. §28.2]]) is only a seminorm on BV ([[§28 Differentiation Theory#^def-28-3|551 Def. §28.3]]) and becomes a norm on BV modulo constants ([[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-3|551 Ex. §34.3]]).
-- **With an inner product.** The infimum is attained at the foot of the perpendicular ([[Closest Point in a Closed Convex Set]]), and X/Y ≅ Y⊥ ([[Orthogonal Decomposition Theorem]], [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]]). In a general normed space there is no perpendicular, and the infimum need not be attained.
+- **Same idea elsewhere.** The underlying linear space is the algebraic quotient ([[§2 Quotient Spaces and Complements#^prop-2-2|§2.2]]; [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103]]). In 551, total variation ([[§28 Differentiation Theory#^def-28-2|551 Def. §28.2]]) is only a seminorm on BV ([[§28 Differentiation Theory#^def-28-3|551 Def. §28.3]]) and becomes a norm on BV modulo constants ([[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-3|551 Ex. §34.3]]).
+- **With an inner product.** The infimum is attained at the foot of the perpendicular ([[Closest Point in a Closed Convex Set]]), and X/Y ≅ Y⊥ ([[Orthogonal Decomposition Theorem]], [[§2 Quotient Spaces and Complements#^cor-2-9|§2.9]]). In a general normed space there is no perpendicular, and the infimum need not be attained.

@@ -313,18 +313,18 @@ The second way to go to infinite dimensions is to index by a continuum: a functi
 >
 > **Part 3: the completion is $L^p([a,b])$.** Here $\overline{Y}$ denotes the completion of a normed linear space $Y$ [[§13 The Completion of a Normed Space#^thm-13-1|constructed in class]], the space of equivalence classes of Cauchy sequences with $\|[\{y_n\}]\| = \lim_{n} \|y_n\|$, which is a Banach space (Homework 2, Problem 3).
 >
-> By Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], it suffices to embed $X$ isometrically and densely in a Banach space.
+> By Proposition [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]], it suffices to embed $X$ isometrically and densely in a Banach space.
 >
 > Now let $Z = L^p([a,b])$, the Lebesgue measurable functions $F$ on $[a,b]$ with $\int_{[a,b]} |F|^p \, dm < \infty$, modulo equality almost everywhere, normed by $\|F\|_{L^p} = \bigl( \int_{[a,b]} |F|^p\, dm \bigr)^{1/p}$; and let $J : X \to L^p([a,b])$ send $f$ to its class. We use three facts from real analysis, cited from real analysis:
 > - (R1) For continuous $f$ on $[a,b]$, the Riemann and Lebesgue integrals of $|f|^p$ [[Riemann Integrable Implies Lebesgue Integrable|coincide]]; hence $\|Jf\|_{L^p} = \|f\|_p$. Clearly $J$ is linear.
 > - (R2) ([[Riesz–Fischer Theorem|Riesz–Fischer]]) $L^p([a,b])$ is complete for $1 \leq p < \infty$ (Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]]).
 > - (R3) $C([a,b])$ is dense in $L^p([a,b])$ for $1 \leq p < \infty$ (Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-4|§19.4]]).
 >
-> By (R1)–(R3), $J$ is a norm-preserving linear map of $X$ onto a dense subspace of the Banach space $L^p([a,b])$. By Proposition [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], the completion of $(C([a,b]), \|\cdot\|_p)$ is $L^p([a,b])$.
+> By (R1)–(R3), $J$ is a norm-preserving linear map of $X$ onto a dense subspace of the Banach space $L^p([a,b])$. By Proposition [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]], the completion of $(C([a,b]), \|\cdot\|_p)$ is $L^p([a,b])$.
 
 ^pf-19-8
 
-*Uses:* [[§12 Completeness#^thm-12-1|§12.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§19 The Function Spaces Lᵖ(Ω)#^lem-19-6|§19.6]], [[§19 The Function Spaces Lᵖ(Ω)#^lem-19-7|§19.7]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§13 The Completion of a Normed Space#^prop-13-2|§13.2]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-4|§19.4]], [[Riemann Integrable Implies Lebesgue Integrable|551 §23.5]], [[Riesz–Fischer Theorem|551 §35.11]], [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]]
+*Uses:* [[§12 Completeness#^thm-12-1|§12.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§19 The Function Spaces Lᵖ(Ω)#^lem-19-6|§19.6]], [[§19 The Function Spaces Lᵖ(Ω)#^lem-19-7|§19.7]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-3|§19.3]], [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-4|§19.4]], [[Riemann Integrable Implies Lebesgue Integrable|551 §23.5]], [[Riesz–Fischer Theorem|551 §35.11]], [[§35 Lᵖ as a Banach Space#^thm-35-12|551 §35.12]]
 
 ![[m556-14-2.svg]]
 *The ramps of Step 2 for $n = 2, 4, 8$ on $[a,b]$, with $c$ the midpoint. They differ from one another only near $c$, so they are Cauchy in $L^p$; an $L^p$ limit would have to be $0$ on $[a,c]$ and $1$ on $(c,b]$ — the step function, which is not continuous.*

@@ -409,14 +409,14 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 
 The next theorem extends Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]], which is the case $Y = \{0\}$, from the norm of a vector to its distance from a subspace.
 
-> [!theorem] Theorem §36.8: Distance to a Subspace
+> [!theorem] Theorem §36.10: Distance to a Subspace
 > Let $X$ be a normed linear space over $\mathbb{F}$, $Y$ a linear subspace of $X$, and $z \in X$. Then
 >
 > $$
 > \inf_{y \in Y} \|z - y\| = \max \bigl\{ |\ell(z)| : \ell \in X',\ \|\ell\| \le 1,\ \ell(y) = 0 \text{ for all } y \in Y \bigr\} .
 > $$
 
-^thm-36-8
+^thm-36-10
 
 ![[m556-36-1.svg]]
 
@@ -472,27 +472,27 @@ A heuristic, pretending there is an inner product: the distance from $z$ to $Y$ 
 >
 > **Step 3: conclusion.** By Step 2 the supremum in Step 1 is at least $|L(z_0)| = m$; with Step 1 it equals $m$ and is attained at $L$. So it is a maximum, equal to $\inf_{y \in Y} \|z_0 - y\|$.
 
-^pf-36-8
+^pf-36-10
 
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]
 
 > [!remark] Remark: How to Find the Proof
 > How one would think of the subspace $Y_1$: first, believe the statement, because it is true in a Hilbert space (the picture above). Then what is left is to find an $\ell$ with $\|\ell\| \le 1$, $\ell = 0$ on $Y$ (in a sense perpendicular to $Y$) and $\ell(z_0) = m$. On the span of $z_0$ and $Y$ these requirements leave no choice (up to replacing $m$ by $e^{i\theta} m$), so define $\ell$ there, check its norm, and let Hahn–Banach extend it. Extensions are usually not unique; on the smaller space there is no choice. The proof of Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]] is the same argument with $Y = \{0\}$.
-> Closedness of $Y$ is not needed: if $z_0$ lies in the closure of $Y$ but not in $Y$, then $m = 0$ and the construction gives $L = 0$. If $Y$ is closed and $z_0 \notin Y$, the functional is not zero (Corollary [[§36 Duality in Normed Spaces#^cor-36-9|§36.9]]).
+> Closedness of $Y$ is not needed: if $z_0$ lies in the closure of $Y$ but not in $Y$, then $m = 0$ and the construction gives $L = 0$. If $Y$ is closed and $z_0 \notin Y$, the functional is not zero (Corollary [[§36 Duality in Normed Spaces#^cor-36-11|§36.11]]).
 
 ^rem-36-6
 
-> [!theorem] Corollary §36.9: A Point Outside a Closed Subspace is Separated by a Functional
+> [!theorem] Corollary §36.11: A Point Outside a Closed Subspace is Separated by a Functional
 > Let $X$ be a normed linear space, $Y$ a closed linear subspace and $z_0 \in X \setminus Y$. Then there is $L \in X'$ with $\|L\| \le 1$, $L(y) = 0$ for all $y \in Y$, and $L(z_0) = \inf_{y \in Y} \|z_0 - y\| > 0$.
 
-^cor-36-9
+^cor-36-11
 
 > [!proof]+ Proof
-> *(Not from lecture.)* $X \setminus Y$ is open and contains $z_0$, so some ball $B(z_0, r)$, $r > 0$, misses $Y$: $\|z_0 - y\| \ge r$ for every $y \in Y$. Hence $m = \inf_{y \in Y} \|z_0 - y\| \ge r > 0$. Step 2 of the proof of Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]] gives $L \in X'$ with $\|L\| \le 1$, $L = 0$ on $Y$ and $L(z_0) = m$.
+> *(Not from lecture.)* $X \setminus Y$ is open and contains $z_0$, so some ball $B(z_0, r)$, $r > 0$, misses $Y$: $\|z_0 - y\| \ge r$ for every $y \in Y$. Hence $m = \inf_{y \in Y} \|z_0 - y\| \ge r > 0$. Step 2 of the proof of Theorem [[§36 Duality in Normed Spaces#^thm-36-10|§36.10]] gives $L \in X'$ with $\|L\| \le 1$, $L = 0$ on $Y$ and $L(z_0) = m$.
 
-^pf-36-9
+^pf-36-11
 
-*Uses:* [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]]
+*Uses:* [[§36 Duality in Normed Spaces#^thm-36-10|§36.10]]
 
 ## The Annihilator
 
@@ -509,17 +509,17 @@ By now the duality is visible, and it is natural to define a “perpendicular”
 
 ^def-36-1
 
-In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]] reads $\inf_{y \in Y} \|z - y\| = \max_{\ell \in Y^\perp,\ \|\ell\| \le 1} |\ell(z)|$.
+In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-10|§36.10]] reads $\inf_{y \in Y} \|z - y\| = \max_{\ell \in Y^\perp,\ \|\ell\| \le 1} |\ell(z)|$.
 
 > [!remark] Remark: Two Meanings of $Y^\perp$
 > The annihilator is a subset of $X'$, while the orthogonal complement of a subspace of a Hilbert space (Definition [[§25 Projection and Orthogonal Decomposition#^def-25-1|§25.1]]) is a subset of $H$. The shared notation is consistent: under the Riesz map $a \mapsto \ell_a$, $\ell_a(y) = (y, a) = 0$ for all $y \in Y$ exactly when $a$ is orthogonal to $Y$, so the Riesz map carries the orthogonal complement of $Y$ onto its annihilator.
 
 ^rem-36-7
 
-> [!theorem] Proposition §36.10: The Annihilator is a Closed Subspace
+> [!theorem] Proposition §36.12: The Annihilator is a Closed Subspace
 > Let $X$ be a normed linear space and $Y$ a linear subspace of $X$. Then $Y^\perp$ is a closed linear subspace of $X'$.
 
-^prop-36-10
+^prop-36-12
 
 > [!proof]+ Proof
 > *Linear subspace.* The zero functional vanishes on $Y$. If $\ell_1, \ell_2$ vanish on $Y$ and $c_1, c_2 \in \mathbb{F}$, then $(c_1 \ell_1 + c_2 \ell_2)(y) = c_1 \ell_1(y) + c_2 \ell_2(y) = 0$ for $y \in Y$.
@@ -533,16 +533,16 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]] read
 >
 > so $\ell(y) = 0$, and $\ell \in Y^\perp$.
 
-^pf-36-10
+^pf-36-12
 
 *Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]]
 
-> [!theorem] Theorem §36.11: The Dual of a Quotient
+> [!theorem] Theorem §36.13: The Dual of a Quotient
 > Let $X$ be a normed linear space and $Y$ a closed linear subspace of $X$, so that $X/Y$ is a normed linear space with the quotient norm (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]). Then $(X/Y)'$ is isometrically isomorphic to $Y^\perp$. Here both sides carry a norm — $(X/Y)'$ the dual norm of the quotient norm, $Y^\perp$ the norm of $X'$ — and the isomorphism preserves it.
 >
 > *Source: HW7, Problem 1*
 
-^thm-36-11
+^thm-36-13
 
 > [!proof]+ Proof
 > (HW7, Problem 1.) Throughout, $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$ is the scalar field, $[x] = x + Y$ denotes the class of $x \in X$, and
@@ -611,25 +611,25 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-8|§36.8]] read
 >
 > **Conclusion.** $T : (X/Y)' \to Y^\perp$ is linear (Step 1), norm-preserving and one-to-one (Step 2), and onto (Step 3). So $T$ is an isometric isomorphism of $(X/Y)'$ onto $Y^\perp$.
 
-^pf-36-11
+^pf-36-13
 
 *Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]], [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]
 
 > [!remark] Remark: No Hahn–Banach Needed Here
-> *(Not from lecture.)* Every step of the proof is a direct computation with the quotient norm: Step 3 builds the functional on $X/Y$ from $\ell$ itself, so nothing has to be extended. The companion statement for a subspace, $Y' \cong X'/Y^\perp$ (Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-11|§37.11]]), is different: there a functional on $Y$ must be extended to $X$, and onto-ness needs Hahn–Banach (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]). Closedness of $Y$ is used only to make the quotient norm a norm; for a non-closed $Y$, the theorem applies to $\overline{Y}$ (Lemma [[§36 Duality in Normed Spaces#^lem-36-12|§36.12]]).
+> *(Not from lecture.)* Every step of the proof is a direct computation with the quotient norm: Step 3 builds the functional on $X/Y$ from $\ell$ itself, so nothing has to be extended. The companion statement for a subspace, $Y' \cong X'/Y^\perp$ (Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-11|§37.11]]), is different: there a functional on $Y$ must be extended to $X$, and onto-ness needs Hahn–Banach (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]). Closedness of $Y$ is used only to make the quotient norm a norm; for a non-closed $Y$, the theorem applies to $\overline{Y}$ (Lemma [[§36 Duality in Normed Spaces#^lem-36-14|§36.14]]).
 
 ^rem-36-8
 
-> [!theorem] Lemma §36.12: The Annihilator of the Closure
+> [!theorem] Lemma §36.14: The Annihilator of the Closure
 > Let $X$ be a normed linear space and $Y$ a linear subspace. Then $\overline{Y}$ is a closed linear subspace, $Y^\perp = (\overline{Y})^\perp$, and consequently $(X/\overline{Y})'$ is isometrically isomorphic to $Y^\perp$.
 
-^lem-36-12
+^lem-36-14
 
 > [!proof]+ Proof
-> *(Not from lecture.)* $\overline{Y}$ is closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]]), and a linear subspace: if $y_n \to z$, $y_n' \to z'$ with $y_n, y_n' \in Y$, then $c y_n + c' y_n' \in Y$ converges to $c z + c' z'$. If $\ell$ vanishes on $\overline{Y}$, it vanishes on $Y \subset \overline{Y}$: $(\overline{Y})^\perp \subset Y^\perp$. Conversely, let $\ell \in Y^\perp$ and $z \in \overline{Y}$, $z = \lim y_n$ with $y_n \in Y$; $\ell$ is continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), so $\ell(z) = \lim_n \ell(y_n) = 0$. Hence $Y^\perp \subset (\overline{Y})^\perp$. Finally Theorem [[§36 Duality in Normed Spaces#^thm-36-11|§36.11]], applied to the closed subspace $\overline{Y}$, gives $(X/\overline{Y})' \cong (\overline{Y})^\perp = Y^\perp$.
+> *(Not from lecture.)* $\overline{Y}$ is closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]]), and a linear subspace: if $y_n \to z$, $y_n' \to z'$ with $y_n, y_n' \in Y$, then $c y_n + c' y_n' \in Y$ converges to $c z + c' z'$. If $\ell$ vanishes on $\overline{Y}$, it vanishes on $Y \subset \overline{Y}$: $(\overline{Y})^\perp \subset Y^\perp$. Conversely, let $\ell \in Y^\perp$ and $z \in \overline{Y}$, $z = \lim y_n$ with $y_n \in Y$; $\ell$ is continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), so $\ell(z) = \lim_n \ell(y_n) = 0$. Hence $Y^\perp \subset (\overline{Y})^\perp$. Finally Theorem [[§36 Duality in Normed Spaces#^thm-36-13|§36.13]], applied to the closed subspace $\overline{Y}$, gives $(X/\overline{Y})' \cong (\overline{Y})^\perp = Y^\perp$.
 
-^pf-36-12
+^pf-36-14
 
-*Uses:* [[§11 Normed Linear Spaces#^prop-11-7|§11.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^thm-36-11|§36.11]]
+*Uses:* [[§11 Normed Linear Spaces#^prop-11-7|§11.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^thm-36-13|§36.13]]
 
-Motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]), and in any linear space $X \cong X/Y \oplus Y$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]); so $X/Y$ and $Y^\perp$ look like each other's dual.
+Motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]), and in any linear space $X \cong X/Y \oplus Y$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-7|§2.7]]); so $X/Y$ and $Y^\perp$ look like each other's dual.

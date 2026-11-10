@@ -96,7 +96,7 @@ tags: [functional-analysis, math556]
 
 Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\operatorname{span}\{e_1, \ldots, e_k\}$, and $y$ is the perpendicular remainder. Pythagoras ([[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]]) applied to $k + 1$ orthogonal pieces gives the identity; dropping $\|y\|^2$ gives the inequality.
 
-> [!definition] Definition §27.3: Sums of Non-Negative Families
+> [!definition] Definition §27.4: Sums of Non-Negative Families
 > Let $(t_\alpha)_{\alpha \in \Lambda}$ be real numbers with $t_\alpha \ge 0$ whose **support** $S = \{ \alpha \in \Lambda : t_\alpha \neq 0 \}$ is countable. Define
 >
 > $$
@@ -105,10 +105,10 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 >
 > where $\alpha_1, \alpha_2, \ldots$ is an enumeration of $S$ (a finite sum if $S$ is finite, and $0$ if $S = \varnothing$).
 
-^def-27-3
+^def-27-4
 
 > [!theorem] Lemma §27.3: The Sum Does Not Depend on the Enumeration
-> In Definition [[§27 Orthonormal Sets and Bases#^def-27-3|§27.3]],
+> In Definition [[§27 Orthonormal Sets and Bases#^def-27-4|§27.4]],
 >
 > $$
 > \sum_{\alpha \in \Lambda} t_\alpha = \sup \Bigl\{ \sum_{\alpha \in F} t_\alpha : F \subset \Lambda \text{ finite} \Bigr\} ;
@@ -123,7 +123,7 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 
 ^pf-27-3
 
-*Uses:* [[§27 Orthonormal Sets and Bases#^def-27-3|Def. §27.3]]
+*Uses:* [[§27 Orthonormal Sets and Bases#^def-27-4|Def. §27.4]]
 
 > [!theorem] Proposition §27.4: Only Countably Many Coefficients are Nonzero
 > Let $\{e_\alpha\}_{\alpha \in \Lambda}$ be orthonormal in an inner product space $X$, and $x \in X$. Then the set
@@ -168,7 +168,7 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 > \sum_{\alpha \in \Lambda} |(x, e_\alpha)|^2 \le \|x\|^2 .
 > $$
 >
-> The left side is defined by Definition [[§27 Orthonormal Sets and Bases#^def-27-3|§27.3]], whose hypothesis holds by Proposition [[§27 Orthonormal Sets and Bases#^prop-27-4|§27.4]].
+> The left side is defined by Definition [[§27 Orthonormal Sets and Bases#^def-27-4|§27.4]], whose hypothesis holds by Proposition [[§27 Orthonormal Sets and Bases#^prop-27-4|§27.4]].
 
 ^thm-27-5
 
@@ -177,7 +177,7 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 
 ^pf-27-5
 
-*Uses:* [[§27 Orthonormal Sets and Bases#^prop-27-4|§27.4]], [[§27 Orthonormal Sets and Bases#^def-27-3|Def. §27.3]], [[§27 Orthonormal Sets and Bases#^lem-27-2|§27.2]], [[§27 Orthonormal Sets and Bases#^lem-27-3|§27.3]]
+*Uses:* [[§27 Orthonormal Sets and Bases#^prop-27-4|§27.4]], [[§27 Orthonormal Sets and Bases#^def-27-4|Def. §27.4]], [[§27 Orthonormal Sets and Bases#^lem-27-2|§27.2]], [[§27 Orthonormal Sets and Bases#^lem-27-3|§27.3]]
 
 > [!remark]- Connections
 > - Finite-dimensional home: [[§21 Orthonormal Bases#^ladr-6-26|LADR 6.26]].
@@ -237,11 +237,11 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 >
 > (a) Fix $\beta \in \Lambda$. By orthonormality, $(s_n, e_\beta) = \sum_{j \le n} (x, e_j)(e_j, e_\beta)$ equals $(x, e_\beta)$ if $\beta \in \{\alpha_1, \ldots, \alpha_n\}$ and $0$ otherwise. If $\beta \in S_x$, then $\beta = \alpha_j$ for some $j$, and $(s_n, e_\beta) = (x, e_\beta)$ for all $n \ge j$. If $\beta \notin S_x$, then $(s_n, e_\beta) = 0 = (x, e_\beta)$ for all $n$. In both cases $(s_n, e_\beta) \to (x, e_\beta)$, while $(s_n, e_\beta) \to (s, e_\beta)$ by continuity of the inner product (Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]). So $(s, e_\beta) = (x, e_\beta)$.
 >
-> (b) By Lemma [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]](b), $\|s_n\|^2 = \sum_{j \le n} |(x, e_j)|^2$. Let $n \to \infty$: the left side tends to $\|s\|^2$ by [[§11 Normed Linear Spaces#^prop-11-4|continuity of the norm]], and the right side to $\sum_\alpha |(x, e_\alpha)|^2$ by Definition [[§27 Orthonormal Sets and Bases#^def-27-3|§27.3]].
+> (b) By Lemma [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]](b), $\|s_n\|^2 = \sum_{j \le n} |(x, e_j)|^2$. Let $n \to \infty$: the left side tends to $\|s\|^2$ by [[§11 Normed Linear Spaces#^prop-11-4|continuity of the norm]], and the right side to $\sum_\alpha |(x, e_\alpha)|^2$ by Definition [[§27 Orthonormal Sets and Bases#^def-27-4|§27.4]].
 
 ^pf-27-7
 
-*Uses:* [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]], [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§27 Orthonormal Sets and Bases#^def-27-3|Def. §27.3]]
+*Uses:* [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]], [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§27 Orthonormal Sets and Bases#^def-27-4|Def. §27.4]]
 
 > [!remark]- Connections
 > - Computational version: [[§30 Expansion in Series of Eigenfunctions#^prop-30-1|341 Prop. §30.1]] (the coefficients of an eigenfunction expansion, found by taking the weighted inner product with $\phi_m$ term by term).
@@ -253,7 +253,7 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 
 ## Orthonormal Bases
 
-> [!definition] Definition §27.4: Orthonormal Basis
+> [!definition] Definition §27.5: Orthonormal Basis
 > An orthonormal set $\{e_\alpha\}_{\alpha \in \Lambda}$ in a Hilbert space $H$ is an **orthonormal basis** of $H$ if
 >
 > $$
@@ -264,7 +264,7 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 >
 > *Lax: §6.4, definition of orthonormal base (via closed linear span; see Proposition [[§27 Orthonormal Sets and Bases#^prop-27-9|§27.9]])*
 
-^def-27-4
+^def-27-5
 
 > [!remark]- Connections
 > - Finite-dimensional home: [[§21 Orthonormal Bases#^ladr-6-27|LADR 6.27]], where an orthonormal basis is an orthonormal list that is also a basis; here the expansion is a series, not a finite linear combination.
@@ -292,7 +292,7 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 
 ^pf-27-8
 
-*Uses:* [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]], [[§27 Orthonormal Sets and Bases#^lem-27-7|§27.7]], [[§27 Orthonormal Sets and Bases#^def-27-2|Def. §27.2]], [[§27 Orthonormal Sets and Bases#^def-27-4|Def. §27.4]]
+*Uses:* [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]], [[§27 Orthonormal Sets and Bases#^lem-27-7|§27.7]], [[§27 Orthonormal Sets and Bases#^def-27-2|Def. §27.2]], [[§27 Orthonormal Sets and Bases#^def-27-5|Def. §27.5]]
 
 > [!remark]- Connections
 > - Finite-dimensional home (expansion and Parseval in an orthonormal basis): [[§21 Orthonormal Bases#^ladr-6-30|LADR 6.30]].
@@ -307,7 +307,7 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 ^rem-27-6
 
 > [!theorem] Proposition §27.9: Lax's Definition of Orthonormal Base Agrees
-> An orthonormal set $E = \{e_\alpha\}_{\alpha \in \Lambda}$ in a Hilbert space $H$ is complete if and only if its closed linear span is $H$. Consequently the following are equivalent: $E$ is an orthonormal basis in the sense of Definition [[§27 Orthonormal Sets and Bases#^def-27-4|§27.4]]; $\overline{\operatorname{span}}\, E = H$ (Lax's definition).
+> An orthonormal set $E = \{e_\alpha\}_{\alpha \in \Lambda}$ in a Hilbert space $H$ is complete if and only if its closed linear span is $H$. Consequently the following are equivalent: $E$ is an orthonormal basis in the sense of Definition [[§27 Orthonormal Sets and Bases#^def-27-5|§27.5]]; $\overline{\operatorname{span}}\, E = H$ (Lax's definition).
 >
 > *Lax: §6.4, definition of orthonormal base and Thm 7*
 
@@ -413,11 +413,11 @@ Read through Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]], Theor
 ^cor-27-12
 
 > [!proof]+ Proof
-> By Theorem [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]], $\{e_n\}_{n \in \mathbb{Z}}$ is an orthonormal basis, so Definition [[§27 Orthonormal Sets and Bases#^def-27-4|§27.4]] gives $f = \sum_n (f, e_n)\, e_n$, the sum converging in $L^2[0,2\pi]$ in the sense of Proposition [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]]. The coefficient is $c_n = (f, e_n) = \int_0^{2\pi} f(x)\, \overline{e^{inx}/\sqrt{2\pi}}\, dx = \frac{1}{\sqrt{2\pi}} \int_0^{2\pi} f(x)\, e^{-inx}\, dx$, since $\overline{e^{inx}} = e^{-inx}$. Parseval's equality is Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]](3), with $\|f\|^2 = \int_0^{2\pi} |f|^2$.
+> By Theorem [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]], $\{e_n\}_{n \in \mathbb{Z}}$ is an orthonormal basis, so Definition [[§27 Orthonormal Sets and Bases#^def-27-5|§27.5]] gives $f = \sum_n (f, e_n)\, e_n$, the sum converging in $L^2[0,2\pi]$ in the sense of Proposition [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]]. The coefficient is $c_n = (f, e_n) = \int_0^{2\pi} f(x)\, \overline{e^{inx}/\sqrt{2\pi}}\, dx = \frac{1}{\sqrt{2\pi}} \int_0^{2\pi} f(x)\, e^{-inx}\, dx$, since $\overline{e^{inx}} = e^{-inx}$. Parseval's equality is Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]](3), with $\|f\|^2 = \int_0^{2\pi} |f|^2$.
 
 ^pf-27-12
 
-*Uses:* [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]], [[§27 Orthonormal Sets and Bases#^def-27-4|Def. §27.4]], [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
+*Uses:* [[§27 Orthonormal Sets and Bases#^thm-27-11|§27.11]], [[§27 Orthonormal Sets and Bases#^def-27-5|Def. §27.5]], [[§27 Orthonormal Sets and Bases#^prop-27-6|§27.6]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
 
 ![[m556-20-a1.gif|480]]
 

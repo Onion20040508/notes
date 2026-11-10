@@ -18,6 +18,8 @@ The sequences $e_j = (0, \ldots, 0, 1, 0, \ldots)$, with the $1$ in the $j$-th p
 - The shifted sequence $f_n = e_{n+1}$ is orthonormal but not complete ([[§27 Orthonormal Sets and Bases#^rem-27-8|§27]])
 - The standard basis of $\ell^2$ is an orthonormal basis ([[§27 Orthonormal Sets and Bases#^ex-27-1|§27]])
 - $e_1$ is not in the range of the shift $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ on $\ell^2$ ([[§28 Existence of Orthonormal Bases and Separability#^ex-28-1|§28]])
+- $e_n \rightharpoonup 0$ in $\ell^2$ although $\|e_n\| = 1$: weak but not strong convergence ([[§43 Weak and Weak-Star Convergence#^ex-43-1|§43]])
+- In $\ell^1 = (c_0)'$ the $e_n$ converge weak-$\ast$ but not weakly ([[§43 Weak and Weak-Star Convergence#^ex-43-6|§43]])
 
 ## In $\ell^2$, $(z, e_i) = z_i$, so the finitely supported sequences have orthogonal complement $\{0\}$
 ![[§2 Quotient Spaces and Complements#^ex-2-3]]
@@ -48,3 +50,9 @@ The sequences $e_j = (0, \ldots, 0, 1, 0, \ldots)$, with the $1$ in the $j$-th p
 
 ## $e_1$ is not in the range of the shift $S(a_1, a_2, \ldots) = (0, a_1, a_2, \ldots)$ on $\ell^2$
 ![[§28 Existence of Orthonormal Bases and Separability#^ex-28-1]]
+
+## $e_n \rightharpoonup 0$ in $\ell^2$ although $\|e_n\| = 1$: weak but not strong convergence
+![[§43 Weak and Weak-Star Convergence#^ex-43-1]]
+
+## In $\ell^1 = (c_0)'$ the $e_n$ converge weak-$\ast$ but not weakly
+![[§43 Weak and Weak-Star Convergence#^ex-43-6]]

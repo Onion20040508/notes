@@ -163,7 +163,7 @@ tags: [quantum-field-theory, level-c]
 >
 > **What the derivation shows.**
 > - The flux of one plane-wave particle in the box is $|\mathbf v_B|/\tilde V$: its density is uniform, $1/\tilde V$. The careful route makes the same average explicit as an integral over the impact parameter at unit density ([[§C6b.8 Wave Packets and the Cross Section#^thm-c6b-8-4|Theorem §C6b.8.4]]) → [[§C6b.3 The Cross Section#^thm-c6b-3-3|Theorem §C6b.3.3]].
-> - The result is finite and independent of the regularization: the box was only bookkeeping (now in the statement).
+> - The result is finite and independent of the regularization: the box was only bookkeeping.
 > - Only $E_B|\mathbf v_B| = |\mathbf p_B|$ and $E_A = m_A$ refer to the rest frame of $A$; the next two theorems remove that restriction.
 
 ^der-c6b-3-4
@@ -195,6 +195,8 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 > $$
 > v_{\rm Møl} \equiv \frac{1}{E_AE_B}\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} .
 > $$
+>
+> *Model:* any (kinematics); *applies:* any on-shell momenta $p_A$, $p_B$, in any inertial frame.
 >
 > *Source: Yu §6.5.2, eq. (6.315) (page image checked)*
 
@@ -257,6 +259,8 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 > 1. For collinear motion, $\mathbf v_A\times\mathbf v_B = \mathbf 0$ (one particle at rest, or the two moving along one line in the same or opposite directions, as in a collider), $v_{\rm Møl} = |\mathbf v_A - \mathbf v_B|$ exactly, and the flux factor is $E_AE_B|\mathbf v_A - \mathbf v_B|$.
 > 2. For $|\mathbf v_A|, |\mathbf v_B| \ll 1$, $v_{\rm Møl} \simeq |\mathbf v_A - \mathbf v_B|$, the Newtonian relative velocity.
 >
+> *Model:* any (kinematics); *applies:* any on-shell momenta $p_A$, $p_B$, independent of the dynamics.
+>
 > *Source: Yu §6.5.2, eqs. (6.322)–(6.331) and the paragraphs after (6.329) (page images checked) · the user's PHY 513 notes, Ch. 15 §15.6, eq. (moller)*
 
 ^thm-c6b-3-6
@@ -316,7 +320,7 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 > E_AE_B\,|\mathbf v_A - \mathbf v_B| = \sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} ,
 > $$
 >
-> which is manifestly invariant. In general $\frac{1}{E_AE_B}\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = \sqrt{|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2}$, Yu's Møller velocity $v_{\rm Møl}$: this is [[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]] of the main line, and the statement here is that theorem multiplied by $E_AE_B$.
+> which is manifestly invariant. In general $\frac{1}{E_AE_B}\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = \sqrt{|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2}$, Yu's Møller velocity $v_{\rm Møl}$ ([[§C6b.3 The Cross Section#^def-c6b-3-3|Def. §C6b.3.3]]). The statement is [[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]], 1, multiplied by $E_AE_B$, and the invariant flux factor of [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]], 1, written for collinear beams: the same result in the form the course uses (the user's notes, eq. (moller)); with the Källén function it reads $\frac12\lambda^{1/2}(s, m_A^2, m_B^2)$ (★ [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|Theorem §C6b.4.3]]).
 >
 > *Model:* any (kinematics); *applies:* collinear beams for the first equality; any momenta for the second.
 >
@@ -325,31 +329,33 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 ^thm-c6b-3-7
 
 > [!derivation]- Derivation
-> **Steps 1–4** (moved). The algebra, Yu (6.322)–(6.329), is [[§C6b.3 The Cross Section#^der-c6b-3-6|Derivation §C6b.3.6]], Steps 1–5, in the main line: $p_A\cdot p_B = E_AE_B(1 - \mathbf v_A\cdot\mathbf v_B)$, $(1 - \mathbf v_A\cdot\mathbf v_B)^2 = |\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2 + (1 - |\mathbf v_A|^2)(1 - |\mathbf v_B|^2)$, and $E^2(1 - |\mathbf v|^2) = m^2$, which give
+> **Step 1** (the general identity). By [[§C6b.3 The Cross Section#^der-c6b-3-6|Derivation §C6b.3.6]], Steps 1–4 (Yu (6.322)–(6.328)): $p_A\cdot p_B = E_AE_B(1 - \mathbf v_A\cdot\mathbf v_B)$, $(1 - \mathbf v_A\cdot\mathbf v_B)^2 = |\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2 + (1 - |\mathbf v_A|^2)(1 - |\mathbf v_B|^2)$, and $E^2(1 - |\mathbf v|^2) = m^2$, which give
 >
 > $$
 > (p_A\cdot p_B)^2 - m_A^2m_B^2 = E_A^2E_B^2\bigl(|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2\bigr) .
 > $$
 >
-> For collinear beams $\mathbf v_A\times\mathbf v_B = 0$; take the square root ($E_AE_B > 0$):
+> Divided by $E_A^2E_B^2$, its square root is the second equality of the statement ([[§C6b.3 The Cross Section#^der-c6b-3-6|Derivation §C6b.3.6]], Step 5).
+>
+> **Step 2** (collinear beams). For collinear beams $\mathbf v_A\times\mathbf v_B = \mathbf 0$; take the square root of Step 1 ($E_AE_B > 0$):
 >
 > $$
 > \sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = E_AE_B\,|\mathbf v_A - \mathbf v_B| .
 > $$
 >
-> **Step 5** (check in the rest frame of $A$). $p_A = (m_A, \mathbf 0)$, $E_B^2 - m_B^2 = |\mathbf p_B|^2$:
+> **Step 3** (check in the rest frame of $A$). $p_A = (m_A, \mathbf 0)$, $E_B^2 - m_B^2 = |\mathbf p_B|^2$:
 >
 > $$
 > \sqrt{(m_AE_B)^2 - m_A^2m_B^2} = m_A\sqrt{E_B^2 - m_B^2} = m_A|\mathbf p_B| , \qquad E_AE_B|\mathbf v_A - \mathbf v_B| = m_AE_B\,\frac{|\mathbf p_B|}{E_B} = m_A|\mathbf p_B| .
 > $$
 >
 > **What the derivation shows.**
-> - For collinear beams the flux factor is a function of the invariant $p_A\cdot p_B$ alone, the algebraic reason behind [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]], 1. (For collinear beams $F_{12}^2 = \frac12F_{\rho\sigma}F^{\rho\sigma} = (p_A\cdot p_B)^2 - m_A^2m_B^2$, by the contraction identity $\varepsilon_{\rho\sigma\mu\nu}\varepsilon^{\rho\sigma\alpha\beta} = -2(\delta^\alpha_\mu\delta^\beta_\nu - \delta^\alpha_\nu\delta^\beta_\mu)$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-4|Theorem §C1a.5.4]]) and because the other components of $F$ vanish.)
+> - For collinear beams the flux factor is a function of the invariant $p_A\cdot p_B$ alone, the algebraic reason behind the course's statement that the flux factor is invariant under boosts along the beam ([[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]], 1). The same invariant written with the antisymmetric tensor of the course's route is in [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-6|Derivation §C6b.9.6]], "What the derivation shows".
 > - Checked numerically in `qft-C/tools/l15/checks.py`.
 
 ^der-c6b-3-7
 
-*Uses:* [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-6|Theorem §C6b.9.6]], [[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]]
+*Uses:* [[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]], [[§C6b.3 The Cross Section#^def-c6b-3-3|Def. §C6b.3.3]]
 
 > [!caution] Caution: The velocity difference is not a relative velocity
 > $|\mathbf v_A - \mathbf v_B|$ is the difference of two velocities measured in the same frame, not the speed of one particle in the rest frame of the other. It is not bounded by 1: for a head-on collision of ultrarelativistic particles in the centre-of-mass frame it approaches 2. Nothing is wrong: it is the rate at which the two flux tubes sweep through each other. Names: PS call it "the relative velocity of the beams as viewed from the laboratory frame" (p. 106); Yu defines $v_{\rm rel} \equiv |\mathbf v_{\mathcal A} - \mathbf v_{\mathcal B}|$, "相对速度" (eq. (6.314)), and notes that for head-on ultrarelativistic beams $v_{\rm rel} = 2$, "no longer a relative velocity in the traditional sense" (p. 246); the true relative speed is the Møller-type invariant $\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2}/(p_A\cdot p_B)$.
@@ -471,7 +477,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 > \overline{|\mathcal M|^2} \equiv \frac{1}{(2s_A + 1)(2s_B + 1)}\sum_{m_A, m_B}\;\sum_{m_1, \dots, m_n}|\mathcal M|^2 , \qquad d\sigma = \frac{1}{4E_AE_Bv_{\rm Møl}}\,\overline{|\mathcal M|^2}\,d\Pi_n .
 > $$
 >
-> A massless particle of spin $s \ge \frac12$ has two helicity states, not $2s + 1$ ([[§C3.7★ Massless Particles and Helicity#^rem-c3-7-2|§C3.7, Remark: Parity pairs λ with −λ: photon, graviton, neutrino]]): its average is $\frac12\sum_{\lambda = \pm s}$.
+> A massless particle of spin $s \ge \frac12$ in a theory with parity symmetry (photon, graviton) has two helicity states, $\lambda = \pm s$, not $2s + 1$ ([[§C3.7★ Massless Particles and Helicity#^rem-c3-7-2|§C3.7, Remark: Parity pairs λ with −λ: photon, graviton, neutrino]]): its average is $\frac12\sum_{\lambda = \pm s}$. A massless particle with a single helicity (the neutrino of the massless idealization, same remark) has one state and is not averaged.
 >
 > *Model:* as in [[§C6b.3 The Cross Section#^thm-c6b-3-9|Theorem §C6b.3.9]]; *applies:* as there, unpolarized beams and undetected final spins.
 >
@@ -497,6 +503,10 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 > **Step 2** (part 2). $\sum_{m_i}\langle m_i|X|m_i\rangle$ is the trace of $X$ in the basis $\{|m_i\rangle\}$.
 >
 > **Step 3** (part 3). Another orthonormal basis is $|m'\rangle = V|m\rangle$ with $V$ unitary: $\sum_{m'}|m'\rangle\langle m'| = V\mathbf 1V^\dagger = \mathbf 1$ and $\sum_{m'}\langle m'|X|m'\rangle = \operatorname{Tr}(V^\dagger XV) = \operatorname{Tr}X$ (cyclicity). With $\mathcal M$ the coefficient of the same $(2\pi)^4\delta^4$ for every choice of spins ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]), $\sum|\mathcal M|^2$ over final spins is part 1 and the initial average part 2, applied particle by particle.
+>
+> **What the derivation shows.**
+> - Only the completeness of an orthonormal basis and the cyclicity of the trace are used: the unpolarized $\overline{|\mathcal M|^2}$ needs no choice of spin axis, and each particle may have its own.
+> - Used next where the axis is chosen for convenience: the spins quantized along the normal to the scattering plane in [[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-5|Theorem §C9.13.5]], and the counting $2s + 1$ of detailed balance ([[§C9.13 Time Reversal of the S-Matrix and Detailed Balance#^thm-c9-13-6|Theorem §C9.13.6]]).
 
 ^der-c6b-3-10
 
@@ -576,7 +586,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 ^thm-c6b-3-12
 
 > [!derivation]- Derivation
-> **Step 1** (the centre-of-mass frame exists). $P = p_A + p_B$ has $P^0 = E_A + E_B > 0$ and $P^2 = (E_A + E_B)^2 - |\mathbf p_A + \mathbf p_B|^2 \ge (E_A + E_B)^2 - (|\mathbf p_A| + |\mathbf p_B|)^2 \ge 0$, using $E \ge |\mathbf p|$; for massive particles $E > |\mathbf p|$ and $P^2 > 0$. The boost with velocity $\mathbf P/P^0$ ($|\mathbf P|/P^0 < 1$) takes $P$ to $(\sqrt{P^2}, \mathbf 0)$ ([[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]] along $\mathbf P$).
+> **Step 1** (the centre-of-mass frame exists). $P = p_A + p_B$ has $P^0 = E_A + E_B > 0$ and $P^2 = (E_A + E_B)^2 - |\mathbf p_A + \mathbf p_B|^2 \ge (E_A + E_B)^2 - (|\mathbf p_A| + |\mathbf p_B|)^2 \ge 0$, using $E \ge |\mathbf p|$; for massive particles $E > |\mathbf p|$ and $P^2 > 0$. The boost with velocity $-\mathbf P/P^0$ ([[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], along $\mathbf P$, read actively; $|\mathbf P|/P^0 < 1$) takes $P$ to $(\sqrt{P^2}, \mathbf 0)$.
 >
 > **Step 2** (energies in that frame). The delta function of $d\Pi_n$ requires $\sum_j\mathbf p_j = \mathbf 0$ and $\sum_jE_j = E_{\rm cm}$. Each energy satisfies
 >
@@ -602,7 +612,7 @@ With it, [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-3|Theorem §C6b.9.3]]
 
 ^der-c6b-3-12
 
-*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]], [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-3|Def. §C1a.4.3]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]
+*Uses:* [[§C6b.3 The Cross Section#^def-c6b-3-6|Def. §C6b.3.6]], [[§C6b.3 The Cross Section#^def-c6b-3-4|Def. §C6b.3.4]], [[§C1a.4 The Lorentz Group#^def-c1a-4-2|Def. §C1a.4.2]], [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-1|Theorem §C6b.4.1]]
 
 ## The annotated formula
 
@@ -628,10 +638,17 @@ Two more factors do not appear in $d\sigma$. $\frac{1}{S_{\rm id}}$ enters only 
 
 ^rem-c6b-3-1
 
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1 — δ under a linear change of variables, $\delta^4(\Lambda q) = |\det\Lambda|^{-1}\delta^4(q) = \delta^4(q)$: the momentum-conserving delta function is Lorentz invariant, so the cross section (Derivation §C6b.3.5, Step 3) and the phase space $d\Pi_n$ (Derivation §C6b.3.8, Step 2) are.
+>
+> From the Math vault: [[§45 The Completeness Relation#^prop-45-1|556 Prop. §45.1]] — completeness of an orthonormal basis, which turns the sum over final spins into $\langle\psi|\mathbf 1_{\rm spin}|\psi\rangle$ (Theorem §C6b.3.10, 1).
+
 > [!remark]- Connections
 > - The operational cross section and its classical meaning as an area in the plane of impact parameters — [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-1|Def. §C6b.8.1]], [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-2|Def. §C6b.8.2]], [[§B4.2 Scattering Cross-Sections and Rutherford Scattering#^def-b4-2-1|CM Def. §B4.2.1]].
 > - Quantum mechanics divides a transition rate by a probability current in the same way — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^def-c10-1-1|QM Def. §C10.1.1]].
-> - The flux factor as a component of an antisymmetric tensor (the course's route to frame independence), two-body phase space and $2 \to 2$ in the centre-of-mass frame — [[§C6b.9 Evaluating the Cross Section|§C6b.9]] (the tensor and the area), [[§C6b.4 Two-Body Scattering Kinematics|§C6b.4]] (two-body phase space and $2 \to 2$)
+> - The flux factor as a component of an antisymmetric tensor and the cross section as an area (the course's route to frame independence) — [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-6|Theorem §C6b.9.6]], [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-7|Theorem §C6b.9.7]].
 > - The same chain with one initial particle and no flux gives the decay rate, $\frac{1}{2E_A}$ in place of $\frac{1}{2E_A2E_B|\mathbf v_A - \mathbf v_B|}$ — [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]].
 > - The invariant measure of the phase space is the one that makes $\langle\mathbf p|\mathbf q\rangle$ invariant and that appears in every mode expansion — [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]].
 > - A density is the time component of a current, $n = n_0\gamma$, like the charge density $\rho = j^0$; this is why $n/E$ is invariant and the event rate per unit volume $\mathcal R$ is a Lorentz scalar — ★ [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]], 4.

@@ -20,13 +20,15 @@ Which first-order field equation can a Dirac spinor obey, why does it look the s
 ## The Dirac equation
 
 > [!definition] Definition §C5a.7.1: The Dirac Equation
-> A **Dirac field** $\psi(x)$ is a four-component field transforming as $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$, with $\Lambda_{1/2}$ the Dirac representation ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]; spinor fields, [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]; Lorentz transformations read actively, [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). The **Dirac equation** is
+> A Dirac field $\psi(x)$ (defined in [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) is a four-component field transforming as $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$, with $\Lambda_{1/2}$ the Dirac representation (same definition; spinor fields, [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]; Lorentz transformations read actively, [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). The **Dirac equation** is
 >
 > $$
 > \bigl(i\gamma^\mu\partial_\mu - m\bigr)\psi(x) = 0, \qquad\text{in components}\qquad \bigl[i(\gamma^\mu)_{ab}\,\partial_\mu - m\,\delta_{ab}\bigr]\psi_b(x) = 0, \quad a = 1, \dots, 4 ,
 > $$
 >
-> with $\gamma^\mu$ the Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]; the course uses the chiral basis, [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]) and $m$ a real constant times the $4\times4$ identity: four coupled, first-order, linear partial differential equations. The matrix of differential operators $i\gamma^\mu\partial_\mu - m$ is the **Dirac operator**.
+> with $\gamma^\mu$ the Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]; the course uses the chiral basis, [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-4|Def. §C5a.1.4]]) and $m$ a real constant times the $4\times4$ identity: four coupled, first-order, linear partial differential equations.
+>
+> The matrix of differential operators $i\gamma^\mu\partial_\mu - m$ is the **Dirac operator**.
 >
 > *Model:* [[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]] (its field equation, Theorem §C5a.7.6); *applies:* classical free field, exact; the free quantum field obeys the same equation ([[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-2|Theorem §C5b.6.2]]).
 >
@@ -202,7 +204,7 @@ The slides phrase the transformation passively ("the physical point that the fie
 ## The Dirac Lagrangian
 
 > [!model] Model §C5a.7.3: The Free Dirac Field
-> A Dirac field $\psi$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^def-c5a-7-1|Def. §C5a.7.1]]) with the Lagrangian density ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-1|Def. §C1b.2.1]])
+> A Dirac field $\psi$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) with the Lagrangian density ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-1|Def. §C1b.2.1]])
 >
 > $$
 > \mathcal L = \bar\psi\bigl(i\gamma^\mu\partial_\mu - m\bigr)\psi = i\bar\psi\slashed{\partial}\psi - m\bar\psi\psi ,
@@ -278,7 +280,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 >
 > **What the derivation shows**
 > - The field equation is basis independent for every invertible $U$ (Theorem §C5a.7.2), the Lagrangian only for unitary $U$. A factor $c$ rescales the action, which changes the normalization of the field (the canonical anticommutators of [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]] would acquire $1/c$), not the dynamics.
-> - The Lorentz scalar property of $\mathcal L$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-4|Theorem §C5a.7.4]]) is a different statement: there the basis is fixed and the field is moved (Caution: Three different transformations).
+> - The Lorentz scalar property of $\mathcal L$ ([[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-4|Theorem §C5a.7.4]]) is a different statement: there the basis is fixed and the field is moved ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^cau-c5a-4-1|§C5a.4, Caution: Three different transformations]]).
 
 ^der-c5a-7-5
 
@@ -437,7 +439,7 @@ It is the spinor entry of the list that began with the scalar fields [[§C1b.2 T
 
 *Uses:* [[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]], [[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-1|Theorem §C5a.5.1]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^thm-c5a-10-1|Theorem §C5a.10.1]]
 
-Quantum Mechanics runs the same computation backwards: there, requiring each component to obey Klein–Gordon is what forces $\{\gamma^\mu, \gamma^\nu\} = 2\eta^{\mu\nu}$ ([[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]], part 1). Here the Clifford algebra is the input, found from the Lorentz group ([[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]]), and Klein–Gordon is the consequence (rule 2: same identity, opposite logical direction).
+Quantum Mechanics runs the same computation backwards: there, requiring each component to obey Klein–Gordon is what forces $\{\gamma^\mu, \gamma^\nu\} = 2\eta^{\mu\nu}$ ([[§C13.2★ The Dirac Equation#^thm-c13-2-2|QM Theorem §C13.2.2]], part 1). Here the Clifford algebra is the input, found from the Lorentz group ([[§C5a.3 The Lorentz Action on Spinor Space|§C5a.3]]), and Klein–Gordon is the consequence: the same identity, in the opposite logical direction. Within this chapter the forcing direction is [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]].
 
 > [!remark] Remark: Eight candidates, four solutions
 > Klein–Gordon does not mix components, so for a fixed $\mathbf p$ it allows eight candidates: four independent columns, times $e^{-ip\cdot x}$ or $e^{+ip\cdot x}$ with $p^0 = +E_{\mathbf p}$. The Dirac equation turns them into the algebraic conditions $(\slashed{p} - m)u = 0$ and $(\slashed{p} + m)v = 0$. On the shell $(\slashed{p} + m)(\slashed{p} - m) = p^2 - m^2 = 0$, so neither matrix is invertible, and their ranks add to four; each has a two-dimensional kernel. The count therefore halves evenly:

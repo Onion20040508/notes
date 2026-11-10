@@ -32,7 +32,7 @@ How does the Lorentz group act on spinor space? Nothing in layers 1–3 ([[§C5a
 > \Lambda_{1/2}(\omega) = \exp\Bigl(-\frac i2\,\omega_{\mu\nu}S^{\mu\nu}\Bigr), \qquad \psi \to \Lambda_{1/2}\,\psi ,
 > $$
 >
-> ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-19|Def. §CB.14.19]] with $n = 4$), and a **Dirac spinor** is a column $\psi \in \mathbb C^4$ transforming so. A **Dirac field** transforms as $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$ ([[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]).
+> ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-19|Def. §CB.14.19]] with $n = 4$), and a Dirac spinor ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-1|Def. §C5a.1.1]]; in a basis, a column $\psi \in \mathbb C^4$) transforms so. A **Dirac field** is a four-component field that transforms as $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$ ([[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]).
 >
 > *Source: PS §3.2, eqs. (3.23), (3.30) · PHY 513 Lecture 7, Part B ("Finite Lorentz Transformations in Dirac Representation"), Part C ("Dirac 4-Spinor") · PHY 513 Lecture 8, Cheat Sheet II · the user's PHY 513 notes, Ch. 8 §8.1 (Definition "The spinor Lorentz transformation $\Lambda_{1/2}$", eq. (Lhalf)) · Yu §5.1, eq. (5.14)*
 
@@ -182,7 +182,7 @@ As a function of the group element $\Lambda = e^\omega$ rather than of $\omega$,
 > - $[\gamma^\mu, S^{\rho\sigma}] = (\mathcal J^{\rho\sigma})^\mu{}_\nu\gamma^\nu$ and its finite form $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$, for the covariance of the Dirac equation: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-1|Theorem §C5a.7.1]].
 > - $S^{\mu\nu\dagger} = \gamma^0S^{\mu\nu}\gamma^0$, for the transformation of $\bar\psi$: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]].
 >
-> *Source: summary written here (the option-1 demo, 2026-10-08)*
+> *Source: summary written here*
 
 ^rem-c5a-3-3
 

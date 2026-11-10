@@ -65,7 +65,7 @@ tags: [functional-analysis, math556]
 
 ^ex-2-1
 
-> [!theorem] Proposition §2.1: $X/Y$ is a Linear Space
+> [!theorem] Proposition §2.2: $X/Y$ is a Linear Space
 > The operations
 >
 > $$
@@ -78,7 +78,7 @@ tags: [functional-analysis, math556]
 >
 > *Lax: Ch. 1, quotient space*
 
-^prop-2-1
+^prop-2-2
 
 > [!proof]+ Proof
 > (HW1, Problem 1.) **Well-definedness.** Suppose $[x_1] = [x_1']$ and $[x_2] = [x_2']$, i.e. $x_1 - x_1' \in Y$ and $x_2 - x_2' \in Y$. Then
@@ -109,7 +109,7 @@ tags: [functional-analysis, math556]
 >
 > Hence $X/Y$ is a linear space over $\mathbb{F}$ with zero element $[0] = Y$.
 
-^pf-2-1
+^pf-2-2
 
 *Uses:* [[§2 Quotient Spaces and Complements#^def-2-1|Def. §2.1]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]]
 
@@ -141,12 +141,12 @@ Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material i
 
 ^def-2-4
 
-> [!theorem] Lemma §2.2: One-Step Enlargement
+> [!theorem] Lemma §2.3: One-Step Enlargement
 > Let $W \subset X$ be a linear subspace with $W \cap Y = \{0\}$, and let $x_0 \in X$ with $x_0 \notin W + Y$. Then $W' = W + \operatorname{span}\{x_0\}$ is a linear subspace with $W' \cap Y = \{0\}$ and $W \subsetneq W'$.
 >
 > *Source: HW1*
 
-^lem-2-2
+^lem-2-3
 
 > [!proof]+ Proof
 > $W'$ is a subspace as a sum of subspaces (Proposition [[§1 Linear Spaces#^prop-1-2|§1.2]]).
@@ -161,43 +161,43 @@ Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material i
 >
 > contradicting $x_0 \notin W + Y$. Hence $a = 0$, so $w' = w \in W \cap Y = \{0\}$. Thus $W' \cap Y = \{0\}$.
 
-^pf-2-2
+^pf-2-3
 
 *Uses:* [[§1 Linear Spaces#^prop-1-2|§1.2]], [[§1 Linear Spaces#^prop-1-5|§1.5]]
 
-> [!theorem] Proposition §2.3: Every Subspace Has a Complement
+> [!theorem] Proposition §2.4: Every Subspace Has a Complement
 > For every linear subspace $Y \subset X$ there exists a complement $W$ of $Y$.
->
-> *Source: HW1*
-
-^prop-2-3
-
-> [!proof]+ Proof
-> Let $P = \{ W \subset X \text{ a linear subspace} : W \cap Y = \{0\} \}$, partially ordered by inclusion; $\{0\} \in P$. Chains in $P$ have upper bounds. The empty chain has the upper bound $\{0\}$. For a nonempty chain $\{W_i\}_{i \in I}$ in $P$ put $U = \bigcup_i W_i$. If $u_1, u_2 \in U$ and $k \in \mathbb{F}$, then, the chain being totally ordered by inclusion, $u_1$ and $u_2$ lie in a common $W_i$, so $u_1 + u_2 \in W_i \subset U$ and $k u_1 \in W_i \subset U$; thus $U$ is a linear subspace. It meets $Y$ only in $0$ since each $W_i$ does. So $U \in P$ is an upper bound. By Zorn's lemma (Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]]) $P$ has a maximal element $W$. If $W + Y \neq X$, pick $x_0 \in X \setminus (W + Y)$; Lemma [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]] gives a strictly larger element of $P$, contradicting maximality. Hence $W + Y = X$, and $W$ is a complement.
-
-^pf-2-3
-
-*Uses:* [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]], [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]]
-
-> [!remark]- Connections
-> - The finite-dimensional version, by extending a basis: [[§5 Bases#^ladr-2-33|LADR 2.33]].
-
-> [!remark] Remark
-> When $\dim X < \infty$ Zorn's lemma is unnecessary: starting from $W = \{0\}$ and applying Lemma [[§2 Quotient Spaces and Complements#^lem-2-2|§2.2]] repeatedly, $\dim W$ increases by one each time and the process stops after at most $\dim X - \dim Y$ steps.
-
-^rem-2-3
-
-> [!theorem] Proposition §2.4: When the Complement is Unique
-> A linear subspace $Y$ of $X$ has exactly one complement if and only if $Y = \{0\}$ or $Y = X$.
 >
 > *Source: HW1*
 
 ^prop-2-4
 
 > [!proof]+ Proof
+> Let $P = \{ W \subset X \text{ a linear subspace} : W \cap Y = \{0\} \}$, partially ordered by inclusion; $\{0\} \in P$. Chains in $P$ have upper bounds. The empty chain has the upper bound $\{0\}$. For a nonempty chain $\{W_i\}_{i \in I}$ in $P$ put $U = \bigcup_i W_i$. If $u_1, u_2 \in U$ and $k \in \mathbb{F}$, then, the chain being totally ordered by inclusion, $u_1$ and $u_2$ lie in a common $W_i$, so $u_1 + u_2 \in W_i \subset U$ and $k u_1 \in W_i \subset U$; thus $U$ is a linear subspace. It meets $Y$ only in $0$ since each $W_i$ does. So $U \in P$ is an upper bound. By Zorn's lemma (Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]]) $P$ has a maximal element $W$. If $W + Y \neq X$, pick $x_0 \in X \setminus (W + Y)$; Lemma [[§2 Quotient Spaces and Complements#^lem-2-3|§2.3]] gives a strictly larger element of $P$, contradicting maximality. Hence $W + Y = X$, and $W$ is a complement.
+
+^pf-2-4
+
+*Uses:* [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]], [[§2 Quotient Spaces and Complements#^lem-2-3|§2.3]]
+
+> [!remark]- Connections
+> - The finite-dimensional version, by extending a basis: [[§5 Bases#^ladr-2-33|LADR 2.33]].
+
+> [!remark] Remark
+> When $\dim X < \infty$ Zorn's lemma is unnecessary: starting from $W = \{0\}$ and applying Lemma [[§2 Quotient Spaces and Complements#^lem-2-3|§2.3]] repeatedly, $\dim W$ increases by one each time and the process stops after at most $\dim X - \dim Y$ steps.
+
+^rem-2-3
+
+> [!theorem] Proposition §2.5: When the Complement is Unique
+> A linear subspace $Y$ of $X$ has exactly one complement if and only if $Y = \{0\}$ or $Y = X$.
+>
+> *Source: HW1*
+
+^prop-2-5
+
+> [!proof]+ Proof
 > If $Y = \{0\}$, a complement $W$ satisfies $W = W + \{0\} = X$; if $Y = X$, it satisfies $W = W \cap X = \{0\}$. In both cases the complement is unique.
 >
-> Suppose $\{0\} \neq Y \neq X$, and let $W$ be a complement (Proposition [[§2 Quotient Spaces and Complements#^prop-2-3|§2.3]]). Then $W \neq \{0\}$, since $W + Y = X \neq Y$. Choose $0 \neq y_0 \in Y$ and $0 \neq w_0 \in W$. Applying Proposition [[§2 Quotient Spaces and Complements#^prop-2-3|§2.3]] inside the linear space $W$, the subspace $\operatorname{span}\{w_0\}$ has a complement $W_1$ in $W$: $\operatorname{span}\{w_0\} \cap W_1 = \{0\}$ and $\operatorname{span}\{w_0\} + W_1 = W$. Put
+> Suppose $\{0\} \neq Y \neq X$, and let $W$ be a complement (Proposition [[§2 Quotient Spaces and Complements#^prop-2-4|§2.4]]). Then $W \neq \{0\}$, since $W + Y = X \neq Y$. Choose $0 \neq y_0 \in Y$ and $0 \neq w_0 \in W$. Applying Proposition [[§2 Quotient Spaces and Complements#^prop-2-4|§2.4]] inside the linear space $W$, the subspace $\operatorname{span}\{w_0\}$ has a complement $W_1$ in $W$: $\operatorname{span}\{w_0\} \cap W_1 = \{0\}$ and $\operatorname{span}\{w_0\} + W_1 = W$. Put
 >
 > $$
 > W' = \operatorname{span}\{w_0 + y_0\} + W_1 .
@@ -211,9 +211,9 @@ Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material i
 >
 > So $W'$ is a second complement of $Y$. (Not covered in lecture.)
 
-^pf-2-4
+^pf-2-5
 
-*Uses:* [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§2 Quotient Spaces and Complements#^prop-2-3|§2.3]], [[§1 Linear Spaces#^prop-1-2|§1.2]], [[§1 Linear Spaces#^prop-1-5|§1.5]]
+*Uses:* [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§2 Quotient Spaces and Complements#^prop-2-4|§2.4]], [[§1 Linear Spaces#^prop-1-2|§1.2]], [[§1 Linear Spaces#^prop-1-5|§1.5]]
 
 > [!example] Example §2.2: Complements of a Line in the Plane
 > In $\mathbb{R}^2$ with $Y$ the $x$-axis, every line through the origin other than $Y$ is a complement of $Y$. Indeed, let $W = \operatorname{span}\{w\}$ with $w = (w_1, w_2)$, $w_2 \neq 0$. A multiple $a w$ lies on the $x$-axis only if $a w_2 = 0$, i.e. $a = 0$, so $W \cap Y = \{0\}$; and every $(x_1, x_2) = \tfrac{x_2}{w_2}\, w + \bigl(x_1 - \tfrac{x_2}{w_2} w_1,\, 0\bigr)$ lies in $W + Y$.
@@ -225,23 +225,23 @@ Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material i
 > [!remark]- Connections
 > - The same example in linear algebra, in the remark “Not unique” after [[§5 Bases#^ladr-2-33|LADR 2.33]].
 
-> [!theorem] Lemma §2.5: Unique Decomposition
+> [!theorem] Lemma §2.6: Unique Decomposition
 > Let $W$ be a complement of $Y$. Then every $x \in X$ can be written as $x = w + y$ with $w \in W$, $y \in Y$, and this representation is unique.
 >
 > *Source: HW1*
 
-^lem-2-5
+^lem-2-6
 
 > [!proof]+ Proof
 > Existence is $X = W + Y$. If $w_1 + y_1 = w_2 + y_2$, then $w_1 - w_2 = y_2 - y_1$ lies in both $W$ and $Y$, hence in $W \cap Y = \{0\}$; so $w_1 = w_2$ and $y_1 = y_2$.
 
-^pf-2-5
+^pf-2-6
 
 *Uses:* [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]]
 
 This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Spaces#^prop-1-3|§1.3]], applied to $W$ and $Y$.
 
-> [!theorem] Theorem §2.6: $X \cong X/Y \oplus Y$
+> [!theorem] Theorem §2.7: $X \cong X/Y \oplus Y$
 > Let $W$ be a complement of $Y$. The map
 >
 > $$
@@ -252,10 +252,10 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 >
 > *Source: HW1*
 
-^thm-2-6
+^thm-2-7
 
 > [!proof]+ Proof
-> $M$ is well defined by Lemma [[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]].
+> $M$ is well defined by Lemma [[§2 Quotient Spaces and Complements#^lem-2-6|§2.6]].
 >
 > *Linearity.* If $x_i = w_i + y_i$ and $a, b \in \mathbb{F}$, then $a x_1 + b x_2 = (a w_1 + b w_2) + (a y_1 + b y_2)$ with the two summands in $W$ and $Y$ respectively; by uniqueness this *is* the decomposition of $a x_1 + b x_2$, so
 >
@@ -263,7 +263,7 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 > M(a x_1 + b x_2) = \bigl([a w_1 + b w_2],\, a y_1 + b y_2\bigr) = a([w_1], y_1) + b([w_2], y_2) = a M(x_1) + b M(x_2),
 > $$
 >
-> using the operations on $X/Y$ (Proposition [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]]) and the componentwise operations on the direct sum.
+> using the operations on $X/Y$ (Proposition [[§2 Quotient Spaces and Complements#^prop-2-2|§2.2]]) and the componentwise operations on the direct sum.
 >
 > *Surjectivity.* Given $([x], y)$, decompose $x = w + y'$. Then $x - w = y' \in Y$, so $[x] = [w]$, and $M(w + y) = ([w], y) = ([x], y)$.
 >
@@ -271,29 +271,29 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 >
 > $M$ is a linear bijection, hence an isomorphism, and $M^{-1}$ is an isomorphism by Lemma [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]. The formula for $M^{-1}$ is read off from the surjectivity computation.
 
-^pf-2-6
+^pf-2-7
 
-*Uses:* [[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§1 Linear Spaces#^def-1-4|Def. §1.4]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
+*Uses:* [[§2 Quotient Spaces and Complements#^lem-2-6|§2.6]], [[§2 Quotient Spaces and Complements#^prop-2-2|§2.2]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§1 Linear Spaces#^def-1-4|Def. §1.4]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
 
 > [!remark]- Connections
 > - In finite dimensions it gives the dimension count of [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105]].
 > - The orthogonal version for [[§23 Cauchy–Schwarz and the Induced Norm#^def-23-1|Hilbert spaces]]: [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]].
 
-> [!theorem] Corollary §2.7: A Complement is a Model of the Quotient
+> [!theorem] Corollary §2.8: A Complement is a Model of the Quotient
 > If $W$ is a complement of $Y$, then the map $W \to X/Y$, $w \mapsto [w]$ (the restriction to $W$ of the quotient map $x \mapsto [x]$), is an isomorphism. In particular all complements of $Y$ are isomorphic to one another.
 >
 > *Source: HW1*
 
-^cor-2-7
+^cor-2-8
 
 > [!proof]+ Proof
-> The map is linear: $[a w_1 + b w_2] = a[w_1] + b[w_2]$ by the definition of the operations on $X/Y$ (Proposition [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]]). Injectivity and surjectivity are exactly the two computations in the proof of Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]: $[w_1] = [w_2]$ forces $w_1 - w_2 \in W \cap Y = \{0\}$, and every class $[x]$ equals $[w]$ for the $W$-component $w$ of $x$.
+> The map is linear: $[a w_1 + b w_2] = a[w_1] + b[w_2]$ by the definition of the operations on $X/Y$ (Proposition [[§2 Quotient Spaces and Complements#^prop-2-2|§2.2]]). Injectivity and surjectivity are exactly the two computations in the proof of Theorem [[§2 Quotient Spaces and Complements#^thm-2-7|§2.7]]: $[w_1] = [w_2]$ forces $w_1 - w_2 \in W \cap Y = \{0\}$, and every class $[x]$ equals $[w]$ for the $W$-component $w$ of $x$.
 >
 > For the last claim, let $W_1, W_2$ be complements of $Y$, with isomorphisms $q_i : W_i \to X/Y$, $q_i(w) = [w]$. Then $q_2^{-1} \circ q_1 : W_1 \to W_2$ is a bijection, and it is linear as a composition of linear maps ($q_2^{-1}$ is linear by Lemma [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]); so it is an isomorphism.
 
-^pf-2-7
+^pf-2-8
 
-*Uses:* [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]], [[§2 Quotient Spaces and Complements#^prop-2-1|§2.1]], [[§2 Quotient Spaces and Complements#^lem-2-5|§2.5]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
+*Uses:* [[§2 Quotient Spaces and Complements#^thm-2-7|§2.7]], [[§2 Quotient Spaces and Complements#^prop-2-2|§2.2]], [[§2 Quotient Spaces and Complements#^lem-2-6|§2.6]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
 
 > [!remark] Remark: The Isomorphism is Not Canonical
 > $M$ depends on the choice of complement $W$. The quotient $X/Y$ itself is canonical — it is built from $X$ and $Y$ alone — but identifying it with a subspace of $X$ requires choosing $W$, and different choices give different embeddings. This is the precise content of “$X/Y$ is like a complement of $Y$”: it is isomorphic to every complement, and equal to none.
@@ -301,29 +301,29 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 ^rem-2-4
 
 ![[m556-1-3.svg]]
-*Quotient versus complement in $\mathbb{R}^2$. The elements of $X/Y$ are the red lines parallel to $Y$ (with $Y$ itself the zero class $[0]$). A complement $W$ (blue) is a line through $0$ that meets each class exactly once, at $w$ — this is the isomorphism $w \mapsto [w]$ of Corollary [[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]]. A second complement $W'$ (green) meets the same classes at different points: $w$ and $w'$ represent the same class $[x]$, so each complement is a model of $X/Y$, and neither is $X/Y$ itself.*
+*Quotient versus complement in $\mathbb{R}^2$. The elements of $X/Y$ are the red lines parallel to $Y$ (with $Y$ itself the zero class $[0]$). A complement $W$ (blue) is a line through $0$ that meets each class exactly once, at $w$ — this is the isomorphism $w \mapsto [w]$ of Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]]. A second complement $W'$ (green) meets the same classes at different points: $w$ and $w'$ represent the same class $[x]$, so each complement is a model of $X/Y$, and neither is $X/Y$ itself.*
 
-> [!theorem] Corollary §2.8: Orthogonal Complement (inner products; later)
+> [!theorem] Corollary §2.9: Orthogonal Complement (inner products; later)
 > Let $X$ carry an inner product $\langle \cdot, \cdot \rangle$ and let $Y^\perp = \{ z \in X : \langle z, y \rangle = 0 \ \forall y \in Y \}$. If $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$, so $X/Y \cong Y^\perp$ via $z \mapsto [z]$ and $X \cong X/Y \oplus Y$.
 >
 > *Source: HW1*
 
-^cor-2-8
+^cor-2-9
 
 > [!proof]+ Proof
-> $Y^\perp$ is a linear subspace: if $z_1, z_2 \in Y^\perp$ and $k \in \mathbb{F}$, then $\langle z_1 + z_2, y \rangle = \langle z_1, y \rangle + \langle z_2, y \rangle = 0$ and $\langle k z_1, y \rangle = k \langle z_1, y \rangle = 0$ for all $y \in Y$, by linearity of the inner product in its first argument. If $z \in Y \cap Y^\perp$ then $\langle z, z \rangle = 0$, so $z = 0$ by positive-definiteness of the inner product (to be introduced later). With $X = Y + Y^\perp$ assumed, $Y^\perp$ is a complement; apply Corollary [[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]] and Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]].
+> $Y^\perp$ is a linear subspace: if $z_1, z_2 \in Y^\perp$ and $k \in \mathbb{F}$, then $\langle z_1 + z_2, y \rangle = \langle z_1, y \rangle + \langle z_2, y \rangle = 0$ and $\langle k z_1, y \rangle = k \langle z_1, y \rangle = 0$ for all $y \in Y$, by linearity of the inner product in its first argument. If $z \in Y \cap Y^\perp$ then $\langle z, z \rangle = 0$, so $z = 0$ by positive-definiteness of the inner product (to be introduced later). With $X = Y + Y^\perp$ assumed, $Y^\perp$ is a complement; apply Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] and Theorem [[§2 Quotient Spaces and Complements#^thm-2-7|§2.7]].
 
-^pf-2-8
+^pf-2-9
 
-*Uses:* [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§2 Quotient Spaces and Complements#^cor-2-7|§2.7]], [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]
+*Uses:* [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]], [[§2 Quotient Spaces and Complements#^thm-2-7|§2.7]]
 
 > [!remark] Remark
-> The hypothesis $X = Y + Y^\perp$ holds automatically in finite dimensions, and in infinite dimensions it holds when $X$ is complete and $Y$ is closed (the orthogonal decomposition theorem, Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]). It can fail for a general subspace (Example [[§2 Quotient Spaces and Complements#^ex-2-3|§2.3]] below), and then $Y^\perp$ is *not* a complement — although by Proposition [[§2 Quotient Spaces and Complements#^prop-2-3|§2.3]] some other complement always exists. This is why the orthogonal version is only “roughly” true, while the algebraic version (Theorem [[§2 Quotient Spaces and Complements#^thm-2-6|§2.6]]) is unconditional.
+> The hypothesis $X = Y + Y^\perp$ holds automatically in finite dimensions, and in infinite dimensions it holds when $X$ is complete and $Y$ is closed (the orthogonal decomposition theorem, Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]). It can fail for a general subspace (Example [[§2 Quotient Spaces and Complements#^ex-2-3|§2.3]] below), and then $Y^\perp$ is *not* a complement — although by Proposition [[§2 Quotient Spaces and Complements#^prop-2-4|§2.4]] some other complement always exists. This is why the orthogonal version is only “roughly” true, while the algebraic version (Theorem [[§2 Quotient Spaces and Complements#^thm-2-7|§2.7]]) is unconditional.
 
 ^rem-2-5
 
 > [!example] Example §2.3: A Subspace of $\ell^2$ with Trivial Orthogonal Complement
-> This example uses $\ell^2$ with the inner product of [[· 5 Inner Product Spaces|Chapter 5]], $(a, b) = \sum_i a_i \overline{b_i}$ (Example [[§22 Definition and Examples#^ex-22-2|§22.2]]), ahead of its definition. In $\ell^2$, the finitely supported sequences form a subspace $Y$ with $Y^\perp = \{0\}$, so $Y + Y^\perp = Y \neq \ell^2$, and $Y^\perp$ is *not* a complement of $Y$: the hypothesis $X = Y + Y^\perp$ of Corollary [[§2 Quotient Spaces and Complements#^cor-2-8|§2.8]] fails.
+> This example uses $\ell^2$ with the inner product of [[· 5 Inner Product Spaces|Chapter 5]], $(a, b) = \sum_i a_i \overline{b_i}$ (Example [[§22 Definition and Examples#^ex-22-2|§22.2]]), ahead of its definition. In $\ell^2$, the finitely supported sequences form a subspace $Y$ with $Y^\perp = \{0\}$, so $Y + Y^\perp = Y \neq \ell^2$, and $Y^\perp$ is *not* a complement of $Y$: the hypothesis $X = Y + Y^\perp$ of Corollary [[§2 Quotient Spaces and Complements#^cor-2-9|§2.9]] fails.
 >
 > *(Justification partly filled in.)*
 >

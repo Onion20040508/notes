@@ -151,7 +151,7 @@ tags: [linear-algebra]
 > [!remark]- Connections
 > - Operations: [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|Addition and scalar multiplication on V∕U]]. A vector space: [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|Quotient space is a vector space]]. Dimension: [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|Dimension of quotient space]].
 > - Group version: the quotient group G/N, [[§40 Quotient Groups#^def-40-1|493 Def. §40.1]] (hub [[Quotient Groups]]), with U in the role of the normal subgroup N ([[§38 Normal Subgroups#^def-38-1|493 Def. §38.1]]); quotient rings by an ideal are the same construction.
-> - Same construction in 556: [[§2 Quotient Spaces and Complements#^def-2-3|556 Def. §2.3]] and [[§2 Quotient Spaces and Complements#^prop-2-1|556 Prop. §2.1]]; a norm passes to the quotient only when the subspace is closed, [[§14 New Normed Spaces from Old#^thm-14-9|556 Thm. §14.9]].
+> - Same construction in 556: [[§2 Quotient Spaces and Complements#^def-2-3|556 Def. §2.3]] and [[§2 Quotient Spaces and Complements#^prop-2-2|556 Prop. §2.2]]; a norm passes to the quotient only when the subspace is closed, [[§14 New Normed Spaces from Old#^thm-14-9|556 Thm. §14.9]].
 > - Same construction in 591, with its universal property: [[§21 Linear Algebra Toolkit#^def-21-6|591 Def. §21.6]], [[§21 Linear Algebra Toolkit#^prop-21-6|591 Prop. §21.6]]; it builds the cotangent space from germs in [[§34 The Cotangent Space from Germs#^def-34-1|591 Def. §34.1]].
 
 > [!example] Example 3.100: Quotient spaces (p. 100)
@@ -253,7 +253,7 @@ tags: [linear-algebra]
 > - Compare with a complement $W$ ([[§5 Bases#^ladr-2-33|Every subspace of V is part of a direct sum equal to V]]): $V/U\cong W$, but the quotient needs no choice.
 > - Dual counterpart: $\dim U^0=\dim V-\dim U$ ([[§12 Duality#^ladr-3-125|Dimension of the annihilator]]).
 > - Counting analogue: for V over a finite field, |V/U| = |V|/|U| is Lagrange's theorem for (V, +), [[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]], and taking logarithms gives this formula.
-> - Without counting dimensions: [[§2 Quotient Spaces and Complements#^thm-2-6|556 Thm. §2.6]] gives X ≅ X∕Y ⊕ Y for every linear space, via a complement.
+> - Without counting dimensions: [[§2 Quotient Spaces and Complements#^thm-2-7|556 Thm. §2.7]] gives X ≅ X∕Y ⊕ Y for every linear space, via a complement.
 
 > [!remark] Notation 3.106: $\tilde T$ (p. 102)
 > For $T\in\Lin(V,W)$, $\tilde T:V/(\nullsp T)\to W$ is the map defined by $\tilde T(v+\nullsp T)=Tv$.

@@ -110,7 +110,7 @@ The interaction picture of Lecture 13 gives a second expression for the same mat
 >
 > **What the derivation shows.**
 > - Between free states, the $S$-matrix of the course and Yu's $U(+\infty, -\infty)$ agree up to a phase.
-> - What the phase hides, the difference between free and interacting asymptotic states, is the subject of LSZ (Lecture 16; QFT C10, planned).
+> - What the phase hides, the difference between free and interacting asymptotic states, is the subject of LSZ (second semester; QFT C10, planned); Lecture 16 replaces it by the prescription [[§C6b.1 The S-Matrix and the Invariant Amplitude#^pr-c6b-1-3|Principle §C6b.1.3]].
 
 ^der-c6b-1-1
 
@@ -214,7 +214,7 @@ Lecture 16 turns the heuristic by-product of Theorem §C6b.1.1 into the course's
 ^def-c6b-1-2
 
 
-Why the $i$ in $\hat S = \mathbb 1 + i\hat T$: in the interaction picture ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]; Yu (6.126), (6.272)) every term of the Dyson series after the first starts with a factor $-i$,
+Why the $i$ in $\hat S = \mathbb 1 + i\hat T$: in the interaction picture ([[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-6|Theorem §C6a.3.6]]; Yu (6.126), (6.272)) the first-order term of the Dyson series carries a factor $-i$ (the $n$-th term $(-i)^n$),
 $$
 \hat S = \sum_{n\ge0}\frac{(-i)^n}{n!}\int dt_1\cdots dt_n\,T\{\hat H_I(t_1)\cdots\hat H_I(t_n)\} = \mathbb 1 - i\int dt\,\hat H_I(t) + O(\hat H_I^2) \quad\Rightarrow\quad i\hat T = -i\int dt\,\hat H_I(t) + O(\hat H_I^2) ,
 $$
@@ -262,7 +262,7 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 > (p_i - p_f)^\mu\,\langle f|i\hat T|i\rangle = (p_i - p_f)^\mu\langle f|\hat S|i\rangle - (p_i - p_f)^\mu\langle f|i\rangle = 0 .
 > $$
 >
-> **Step 3** (support). Change variables from the momenta to $\Delta = p_i - p_f$ and the remaining independent momenta, a linear change of variables with constant Jacobian ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1). Write $A(\Delta) \equiv \langle f|i\hat T|i\rangle$, a distribution in $\Delta$ with the remaining momenta as parameters. Step 2 reads $\Delta^\mu A = 0$ for $\mu = 0, \dots, 3$. Let $\varphi$ be a test function with $0 \notin \operatorname{supp}\varphi$. On $\operatorname{supp}\varphi$ some $\Delta^\mu \ne 0$, so $\varphi = \sum_\mu\Delta^\mu\psi_\mu$ with smooth $\psi_\mu = \varphi\,\Delta^\mu/|\Delta|_E^2$ ($|\Delta|_E^2 = \sum_\nu(\Delta^\nu)^2$, Euclidean), and
+> **Step 3** (support). Change variables from the momenta to $\Delta = p_i - p_f$ and the remaining independent momenta, a linear change of variables with constant Jacobian ([[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1). Write $A(\Delta) \equiv \langle f|i\hat T|i\rangle$, a distribution in $\Delta$ with the remaining momenta as parameters. Step 2 reads $\Delta^\mu A = 0$ for $\mu = 0, \dots, 3$. Let $\varphi$ be a test function with $0 \notin \operatorname{supp}\varphi$. On $\operatorname{supp}\varphi$ some $\Delta^\mu \ne 0$, so $\varphi = \sum_\mu\Delta^\mu\psi_\mu$ with smooth $\psi_\mu = \varphi\,\Delta^\mu/|\Delta|_E^2$ ($|\Delta|_E^2 = \sum_\nu(\Delta^\nu)^2$, Euclidean), and, with the product of a distribution and a smooth function ([[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]),
 >
 > $$
 > A[\varphi] = \sum_\mu A[\Delta^\mu\psi_\mu] = \sum_\mu(\Delta^\mu A)[\psi_\mu] = 0 :
@@ -270,7 +270,7 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 >
 > $\operatorname{supp}A \subseteq \{\Delta = 0\}$.
 >
-> **Step 4** (only δ itself survives). By [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], $A = \sum_{|\alpha|\le N}c_\alpha\,\partial^\alpha\delta^4(\Delta)$, with multi-indices $\alpha = (\alpha_0, \dots, \alpha_3)$ and $\partial^\alpha = \partial_{\Delta^0}^{\alpha_0}\cdots\partial_{\Delta^3}^{\alpha_3}$. Multiplication by $\Delta^\mu$ on each term, from the definition of the derivative of a distribution ([[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]) and the Leibniz rule at $\Delta = 0$:
+> **Step 4** (only δ itself survives). By [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], $A = \sum_{|\alpha|\le N}c_\alpha\,\partial^\alpha\delta^4(\Delta)$, with multi-indices $\alpha = (\alpha_0, \dots, \alpha_3)$ and $\partial^\alpha = \partial_{\Delta^0}^{\alpha_0}\cdots\partial_{\Delta^3}^{\alpha_3}$. Multiplication by $\Delta^\mu$ on each term, from the definitions of the derivative of a distribution and of its product with a smooth function ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]; for the gradient of δ, [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]) and the Leibniz rule at $\Delta = 0$:
 >
 > $$
 > \bigl(\Delta^\mu\,\partial^\alpha\delta^4\bigr)[\varphi] = (-1)^{|\alpha|}\,\partial^\alpha(\Delta^\mu\varphi)\big|_{\Delta=0} = (-1)^{|\alpha|}\,\alpha_\mu\,\partial^{\alpha - e_\mu}\varphi\big|_{\Delta=0} = -\alpha_\mu\,\bigl(\partial^{\alpha - e_\mu}\delta^4\bigr)[\varphi] ,
@@ -296,7 +296,7 @@ so $\hat T = -\int dt\,\hat H_I(t) + O(\hat H_I^2)$ starts with no $i$: the $i$ 
 
 ^der-c6b-1-4
 
-*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
+*Uses:* [[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]], [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]]
 
 > [!definition] Definition §C6b.1.3: The Invariant Amplitude
 > Since $\hat T$ conserves energy-momentum ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^thm-c6b-1-4|Theorem §C6b.1.4]]), the delta function is removed:
@@ -538,6 +538,16 @@ The $i$ is kept with $\mathcal M$ so that a vertex $-i\lambda$ gives $i\mathcal 
 > *Source: Yu §6.2, pp. 216–217, eqs. (6.122)–(6.127); §6.5, p. 238, eqs. (6.272)–(6.275)*
 
 ^rem-c6b-1-5
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]] — a distribution supported at one point is a finite sum of derivatives of δ there; with $(p_i - p_f)^\mu\langle f|i\hat T|i\rangle = 0$ only $\delta^4(p_i - p_f)$ itself survives (Derivation §C6b.1.4, Steps 3–4).
+> - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]] — derivatives and smooth factors are moved onto the test function: the rule $\Delta^\mu\,\partial^\alpha\delta^4 = -\alpha_\mu\,\partial^{\alpha - e_\mu}\delta^4$ that removes every derivative of δ (Derivation §C6b.1.4, Steps 3–4).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 1 — δ under a linear change of variables: the constant Jacobian of the change to $\Delta = p_i - p_f$ (Derivation §C6b.1.4, Step 3) and $\delta^4(\Lambda\Delta) = \delta^4(\Delta)$ for $|\det\Lambda| = 1$ (Derivation §C6b.1.6, Step 3).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the plane waves of the external particles integrate to $(2\pi)^4\delta^4$, the factor split off in Def. §C6b.1.3.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-10|Theorem §CA.3.10]] — in a box in space and time $(2\pi)^4\delta^4(0)$ is the spacetime volume $\tilde V\tilde T$, the value used when the delta function is squared.
+> - [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]] — the Schwartz space $\mathcal S$ of test functions, the reason the operators are written $\hat S$, $\hat T$ and not with calligraphic letters (Caution: Names for the S-matrix, the T-matrix and the amplitude).
 
 > [!remark]- Connections
 > - In quantum mechanics the same $S$, $T$ split runs with only energy conserved, and the golden rule is its first order — [[§C10.1 The Lippmann–Schwinger Equation and the Born Approximation#^thm-c10-1-2|QM Theorem §C10.1.2]], [[§C9.5 Fermi's Golden Rule#^thm-c9-5-1|QM Theorem §C9.5.1]].
