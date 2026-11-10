@@ -22,15 +22,6 @@ This is the first application of [[§5 Statement and Motivation#^thm-5-3|Hahn–
 
 ^thm-8-1
 
-In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies strictly on one side of it. Here $\ell \neq 0$, since $K$ is nonempty and $\ell(x) < c_0 = \ell(y_0)$ for $x \in K$; so $\{\ell = c_0\}$ is a hyperplane in the sense of Definition [[§5 Statement and Motivation#^def-5-3|§5.3]]. The point $y_0$ may be a boundary point of $K$ (it is excluded from $K$ only because $K$ has no boundary points), and the statement still holds; the hyperplane is then a supporting hyperplane at $y_0$.
-
-![[m556-6-1.svg]]
-*Left: the point $y_0$ lies on the hyperplane $\{\ell = c_0\}$ (red), and $K$ — dashed, since every point of $K$ is interior — lies strictly in the half-space $\{\ell < c_0\}$. Right: $y_0$ may sit on the edge of $K$ (it is still not in $K$); the hyperplane is then a supporting hyperplane, touching $K$'s boundary at $y_0$ without meeting $K$.*
-
-![[m556-6-a1.gif|420]]
-
-*(Not from lecture; animation added, vault only.)* $y_0$ (black) goes once around a convex $K$ (chosen for the picture). The separating line $\{\ell = c_0\}$ (red) passes through $y_0$ and keeps $K$ in $\{\ell < c_0\}$; the shaded side is $\{\ell > c_0\}$. Here $\ell$ is taken along $y_0 - q$, $q$ the point of $K$ nearest to $y_0$ (dotted).
-
 > [!proof]+ Proof
 > **Step 1: Reduction to $0 \in K$.** Assume first that $0 \in K$; the general case is Step 4.
 >
@@ -77,6 +68,15 @@ In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies s
 ^pf-8-1
 
 *Uses:* [[§5 Statement and Motivation#^thm-5-3|§5.3]], [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§7 Convex Sets and the Gauge#^prop-7-5|§7.5]], [[§7 Convex Sets and the Gauge#^prop-7-6|§7.6]], [[§7 Convex Sets and the Gauge#^cor-7-8|§7.8]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]]
+
+In words: $y_0$ lies *on* the hyperplane $\{\ell = c_0\}$, and all of $K$ lies strictly on one side of it. Here $\ell \neq 0$, since $K$ is nonempty and $\ell(x) < c_0 = \ell(y_0)$ for $x \in K$; so $\{\ell = c_0\}$ is a hyperplane in the sense of Definition [[§5 Statement and Motivation#^def-5-3|§5.3]]. The point $y_0$ may be a boundary point of $K$ (it is excluded from $K$ only because $K$ has no boundary points), and the statement still holds; the hyperplane is then a supporting hyperplane at $y_0$.
+
+![[m556-6-1.svg]]
+*Left: the point $y_0$ lies on the hyperplane $\{\ell = c_0\}$ (red), and $K$, drawn dashed since every point of $K$ is interior, lies strictly in the half-space $\{\ell < c_0\}$. Right: $y_0$ may sit on the edge of $K$ (it is still not in $K$); the hyperplane is then a supporting hyperplane, touching the boundary of $K$ at $y_0$ without meeting $K$.*
+
+![[m556-6-a1.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* $y_0$ (black) goes once around a convex $K$ (chosen for the picture). The separating line $\{\ell = c_0\}$ (red) passes through $y_0$ and keeps $K$ in $\{\ell < c_0\}$; the shaded side is $\{\ell > c_0\}$. Here $\ell$ is taken along $y_0 - q$, $q$ the point of $K$ nearest to $y_0$ (dotted).
 
 > [!remark] Remark
 > Everything in the proof was already in place; the theorem is an assembly. The gauge converts the geometric hypothesis (convex, all points interior, $y_0$ outside) into an inequality $p_K(y_0) \ge 1 = \ell(y_0)$ on a one-dimensional subspace; Hahn–Banach extends $\ell$ without breaking $\ell \le p_K$; and the description $K = \{p_K < 1\}$ converts the inequality back into geometry. The hyperplane is $\{\ell = 1\}$ in the normalized case; there is nothing canonical about it, since the extension is not unique. This is the sense in which a convex set can be described by hyperplanes: it lies on one side of a supporting hyperplane at every point outside it.

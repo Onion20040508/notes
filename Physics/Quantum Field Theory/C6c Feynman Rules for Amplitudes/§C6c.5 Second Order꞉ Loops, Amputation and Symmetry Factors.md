@@ -337,6 +337,9 @@ At second order two vertices appear, and with them loops, corrections on externa
 > Proved in CA; each line says what the physics above relies on.
 >
 > - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]] — the relabelling group and orbit–stabilizer behind $\frac1S$ and behind $S = 1$ for trees.
+> - [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]] — labelled diagrams with vertices of any type, the setting of the symmetry-factor statements.
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — the number of pairings of the legs left at a vertex, in the count of the $764$ Wick terms.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the position integral of a self-energy term gives $(2\pi)^4\delta^4(k - k')$.
 
 > [!remark]- Connections
 > - The second-order bubbles and self-energies are the correlator diagrams of Lecture 14 with particles in place of external points — [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-2|Example §C6a.9.2]], [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-3|Example §C6a.9.3]], [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-4|Example §C6a.9.4]].

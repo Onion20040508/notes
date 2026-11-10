@@ -17,7 +17,7 @@ tags: [functional-analysis, hub]
 - [[§30 Boundedness and Continuity#^def-30-2|Definition §30.2: Bounded Linear Map]]
 - [[§30 Boundedness and Continuity#^def-30-3|Definition §30.3: Operator Norm]]
 - [[§31 Dual Spaces#^thm-31-2|Theorem §31.2: Riesz Representation Theorem, with Norms]]
-- [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Definition §32.1: Sesquilinear Form; Bounded Form]]
+- [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Definition §32.1: Sesquilinear Form]]
 
 ## Used in (Functional Analysis)
 - [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|Theorem §32.2: Lax–Milgram]]

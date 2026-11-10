@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 2.3"]
+aliases: ["MATH 556 2.4"]
 tags: [functional-analysis, hub]
 ---
 ![[§2 Quotient Spaces and Complements#^prop-2-4]]

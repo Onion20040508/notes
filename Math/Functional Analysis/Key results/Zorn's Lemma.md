@@ -11,7 +11,7 @@ tags: [functional-analysis, hub]
 - [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|Theorem §6.2: Zorn's Lemma]], in [[§6 Proof of the Hahn–Banach Theorem]]
 
 ## Its proof uses
-- (no proof in the notes)
+- (only definitions)
 
 ## Used in (Functional Analysis)
 - [[§28 Existence of Orthonormal Bases and Separability#^thm-28-1|Theorem §28.1: Existence of Orthonormal Bases]]

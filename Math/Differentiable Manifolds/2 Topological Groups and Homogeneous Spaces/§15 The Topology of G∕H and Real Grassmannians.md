@@ -58,11 +58,11 @@ Definitions [[§14 Homogeneous Spaces#^def-14-5|§14.5]], [[§14 Homogeneous Spa
 ^cor-15-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* $\pi$ is a continuous open surjection by Proposition [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]], hence a quotient map by Proposition [[§5 Quotient Maps#^prop-5-6|§5.6]]. (It is also one directly from Definition [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|§15.1]], which is the defining property.) The second statement is the universal property, Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]].
+> *(Not from lecture; filled in.)* $\pi$ is a continuous open surjection by Proposition [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]], hence a quotient map by Proposition [[§5 Quotient Maps#^prop-5-7|§5.7]]. (It is also one directly from Definition [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|§15.1]], which is the defining property.) The second statement is the universal property, Corollary [[§5 Quotient Maps#^cor-5-3|§5.3]].
 
 ^pf-15-2
 
-*Uses:* [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]], [[§5 Quotient Maps#^prop-5-6|§5.6]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|Def. §15.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]]
+*Uses:* [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-1|§15.1]], [[§5 Quotient Maps#^prop-5-7|§5.7]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|Def. §15.1]], [[§5 Quotient Maps#^cor-5-3|§5.3]]
 
 > [!remark]- Connections
 > - In 590: open surjections are quotient maps, [[§13 Quotient Topology#^prop-13-2|590 §13.2]]; the universal property, [[Universal Property of Quotient Maps]].
@@ -90,7 +90,7 @@ Upstairs is the group, downstairs its coset space, and the triangle commutes: $\
 
 > [!proof]+ Proof
 > *(Stated in Lecture 4, with a hypothesis missing — the board said “$G$ compact $\Rightarrow$ $G/H \cong X$”, and $X$ must also be Hausdorff; filled in.)*
-> (1) Bijectivity is Lemma [[§14 Homogeneous Spaces#^lem-14-5|§14.5]]. The composite $\Phi \circ \pi : G \to X$ is the orbit map $g \mapsto g \cdot x_0$, which is continuous: it is $G \to G \times X \to X$, $g \mapsto (g, x_0) \mapsto g \cdot x_0$, a composite of a map continuous by Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]] with the action. By the universal property of the quotient (Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]]), $\Phi$ is continuous.
+> (1) Bijectivity is Lemma [[§14 Homogeneous Spaces#^lem-14-5|§14.5]]. The composite $\Phi \circ \pi : G \to X$ is the orbit map $g \mapsto g \cdot x_0$, which is continuous: it is $G \to G \times X \to X$, $g \mapsto (g, x_0) \mapsto g \cdot x_0$, a composite of a map continuous by Theorem [[§3 Subspaces and Products#^thm-3-10|§3.10]] with the action. By the universal property of the quotient (Corollary [[§5 Quotient Maps#^cor-5-3|§5.3]]), $\Phi$ is continuous.
 >
 > (2) By (1), $\Phi$ is a continuous bijection from the compact space $G/H$ onto the Hausdorff space $X$, hence a homeomorphism (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](6)). Spelled out: if $C \subseteq G/H$ is closed, then $C$ is compact by Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5), so $\Phi(C)$ is compact by (2) of that proposition, hence closed in $X$ by (4); so $\Phi$ is a closed map, and the inverse of a closed continuous bijection is continuous, since $(\Phi^{-1})^{-1}(C) = \Phi(C)$ for every $C$.
 >
@@ -98,7 +98,7 @@ Upstairs is the group, downstairs its coset space, and the triangle commutes: $\
 
 ^pf-15-3
 
-*Uses:* [[§14 Homogeneous Spaces#^lem-14-5|§14.5]], [[§14 Homogeneous Spaces#^def-14-4|Def. §14.4]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§5 Quotient Maps#^cor-5-2|§5.2]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-2|§15.2]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Bijection from Compact to Hausdorff is a Homeomorphism]], [[Continuous Image of a Compact Space is Compact]]
+*Uses:* [[§14 Homogeneous Spaces#^lem-14-5|§14.5]], [[§14 Homogeneous Spaces#^def-14-4|Def. §14.4]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§5 Quotient Maps#^cor-5-3|§5.3]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-2|§15.2]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[Bijection from Compact to Hausdorff is a Homeomorphism]], [[Continuous Image of a Compact Space is Compact]]
 
 > [!remark]- Connections
 > - The same pattern in 590 — a map constant on fibres induces a continuous bijection from the quotient: [[§13 Quotient Topology#^cor-13-4|590 §13.4 (Induced Bijection from Quotient)]].
@@ -171,11 +171,11 @@ The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topolo
 ^prop-15-4
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Let $x_1 = a \cdot x_0$. Then $H_{x_1} = aH_{x_0}a^{-1}$, since $g\,a\cdot x_0 = a\cdot x_0 \iff a^{-1}ga \in H_{x_0}$. Right translation $g \mapsto ga^{-1}$ is a homeomorphism of $G$ carrying each coset $gH_{x_0}$ onto $ga^{-1}(aH_{x_0}a^{-1}) = ga^{-1}H_{x_1}$. So, by the universal property (Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]]), it induces a continuous map $\bar R : G/H_{x_0} \to G/H_{x_1}$, $gH_{x_0} \mapsto ga^{-1}H_{x_1}$, whose inverse is induced in the same way by $g \mapsto ga$. Hence $\bar R$ is a homeomorphism. It intertwines the two bijections, since $\Phi_1(\bar R(gH_{x_0})) = ga^{-1}\cdot x_1 = g \cdot x_0 = \Phi_0(gH_{x_0})$. So $\Phi_1 = \Phi_0 \circ \bar R^{-1}$, and the two transported topologies coincide.
+> *(Not from lecture; filled in.)* Let $x_1 = a \cdot x_0$. Then $H_{x_1} = aH_{x_0}a^{-1}$, since $g\,a\cdot x_0 = a\cdot x_0 \iff a^{-1}ga \in H_{x_0}$. Right translation $g \mapsto ga^{-1}$ is a homeomorphism of $G$ carrying each coset $gH_{x_0}$ onto $ga^{-1}(aH_{x_0}a^{-1}) = ga^{-1}H_{x_1}$. So, by the universal property (Corollary [[§5 Quotient Maps#^cor-5-3|§5.3]]), it induces a continuous map $\bar R : G/H_{x_0} \to G/H_{x_1}$, $gH_{x_0} \mapsto ga^{-1}H_{x_1}$, whose inverse is induced in the same way by $g \mapsto ga$. Hence $\bar R$ is a homeomorphism. It intertwines the two bijections, since $\Phi_1(\bar R(gH_{x_0})) = ga^{-1}\cdot x_1 = g \cdot x_0 = \Phi_0(gH_{x_0})$. So $\Phi_1 = \Phi_0 \circ \bar R^{-1}$, and the two transported topologies coincide.
 
 ^pf-15-4
 
-*Uses:* [[§14 Homogeneous Spaces#^def-14-3|Def. §14.3]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|Def. §15.1]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-2|Def. §15.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|Def. §11.1]], [[§5 Quotient Maps#^cor-5-2|§5.2]]
+*Uses:* [[§14 Homogeneous Spaces#^def-14-3|Def. §14.3]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-1|Def. §15.1]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-2|Def. §15.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|Def. §11.1]], [[§5 Quotient Maps#^cor-5-3|§5.3]]
 
 > [!remark]- Connections
 > - $H_{a \cdot x_0} = aH_{x_0}a^{-1}$ is [[§26 Stabilizers and Fixed Points#^prop-26-2|493 §26.2 (Stabilizers of Points in the Same Orbit Are Conjugate)]].
@@ -199,7 +199,7 @@ The circle through the course: the circle group $\mathrm{U}(1)$ in [[§11 Topolo
 
 *Uses:* [[§14 Homogeneous Spaces#^prop-14-4|§14.4]], [[§15 The Topology of G∕H and Real Grassmannians#^rem-15-1|Remark after §15.2]], [[§13 Group Actions and Orbit Spaces#^cor-13-4|§13.4]], [[§13 Group Actions and Orbit Spaces#^lem-13-3|§13.3]], [[§6 Open Quotients#^thm-6-3|§6.3]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]]
 
-The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
+The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
 
 ## Real Grassmannians
 
@@ -296,7 +296,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 ^pf-15-7
 
-*Uses:* [[§14 Homogeneous Spaces#^def-14-3|Def. §14.3]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|§15.6]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]]
+*Uses:* [[§14 Homogeneous Spaces#^def-14-3|Def. §14.3]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|§15.6]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]]
 
 > [!remark]- Connections
 > - The case $k = 1$ (up to reordering) is $\operatorname{Stab}(e_1) \cong \mathrm{O}_2$ in [[§32 Linear Groups, the Cube, S₃ and A₄#^prop-32-2|493 §32.2]](2).
@@ -321,7 +321,7 @@ The classical groups through the course: defined in [[§11 Topological Groups an
 
 ^pf-15-8
 
-*Uses:* [[§14 Homogeneous Spaces#^lem-14-5|§14.5]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|§15.6]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-7|§15.7]], [[§14 Homogeneous Spaces#^lem-14-3|§14.3]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-2|Def. §15.2]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5|§15.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[Heine–Borel Theorem]]
+*Uses:* [[§14 Homogeneous Spaces#^lem-14-5|§14.5]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-6|§15.6]], [[§15 The Topology of G∕H and Real Grassmannians#^prop-15-7|§15.7]], [[§14 Homogeneous Spaces#^lem-14-3|§14.3]], [[§15 The Topology of G∕H and Real Grassmannians#^def-15-2|Def. §15.2]], [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5|§15.5]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-2|Def. §11.2]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[Heine–Borel Theorem]]
 
 > [!remark]- Connections
 > - For $k = 1$ the transported topology agrees with the quotient topology of $\mathbb{RP}^{n-1}$: [[§18 Projective Spaces as Smooth Manifolds#^prop-18-6|§18.6]]; $\mathrm{O}(n)$ becomes a smooth manifold in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]].

@@ -35,10 +35,10 @@ tags: [real-analysis, hub]
 - [[§26 Applications of Tonelli's Theorem#^thm-26-7|Theorem §26.7: Layer Cake Formula (Cavalieri's Principle)]]
 
 ## Used in (Differentiable Manifolds)
-- [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|Lemma §29.4: Hadamard's Lemma]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|Lemma §29.5: Hadamard's Lemma]]
 
 ## Used in (Functional Analysis)
-- [[§13 The Completion of a Normed Space#^prop-13-4|Proposition §13.4: (C²[a,b], ∣·∣_X) is Not Complete]]
+- [[§13 The Completion of a Normed Space#^prop-13-5|Proposition §13.5: (C²[a,b], ∣·∣_X) is Not Complete]]
 - [[§25 Projection and Orthogonal Decomposition#^prop-25-10|Proposition §25.10: A Sharp Integral Inequality]]
 - [[§30 Boundedness and Continuity#^prop-30-4|Proposition §30.4: C^m(overlineOmega) is a Banach Space]]
 - [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|Lemma §33.2: Integration by Parts against a Test Function]]

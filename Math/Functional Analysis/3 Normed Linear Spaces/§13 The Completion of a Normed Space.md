@@ -13,6 +13,11 @@ tags: [functional-analysis, math556]
 
 For a normed linear space $X$, the completion $\overline{X}$ as a metric space should again be a normed linear space, with $X$ sitting inside it as a subspace and with the original norm. The natural candidate for the norm of a class is the limit of the norms of a representative.
 
+> [!remark] Note: Notation for the Proof
+> In the proof of Theorem [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]] below, the norm of $X$ is written $\|\cdot\|$ and the candidate norm on $\overline{X}$ is written $\|\cdot\|_{\overline{X}}$. A sequence in $\overline{X}$ is a sequence of classes; its $m$-th term is written $[\{x^{(m)}_n\}_n]$, where $\{x^{(m)}_n\}_n$ is a Cauchy sequence in $X$ (superscript: which class; subscript: which term of the representative).
+
+^rem-13-1
+
 > [!theorem] Theorem §13.1: The Completion of a Normed Space is a Banach Space
 > Let $(X, \|\cdot\|)$ be a normed linear space and $\overline{X}$ its completion. For a Cauchy sequence $\{x_n\}$ in $X$, write $[\{x_n\}] \in \overline{X}$ for its class, and define
 >
@@ -20,17 +25,18 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 > \bigl\| [\{x_n\}] \bigr\| := \lim_{n \to \infty} \|x_n\|.
 > $$
 >
-> Then $\overline{X}$ is a linear space, this is a well-defined norm on it, $\|[(x, x, \ldots)]\| = \|x\|$ for $x \in X$, and $(\overline{X}, \|\cdot\|)$ is complete.
+> Then:
+>
+> - (a) $\overline{X}$ is a linear space under the termwise operations $[\{x_n\}] + [\{y_n\}] = [\{x_n + y_n\}]$ and $a[\{x_n\}] = [\{a x_n\}]$ for $a \in \mathbb{F}$;
+> - (b) the limit exists and depends only on the class, and $\|\cdot\|$ is a norm on $\overline{X}$;
+> - (c) $\|[(x, x, \ldots)]\| = \|x\|$ for $x \in X$;
+> - (d) $(\overline{X}, \|\cdot\|)$ is complete, so it is a Banach space;
+> - (e) $X$, identified with the classes of the constant sequences, is dense in $\overline{X}$.
 >
 > *Source: HW2, Problem 3*
 > *Lax: §5.1, Thm 3*
 
 ^thm-13-1
-
-> [!remark] Note: Notation for the Proof
-> The norm of $X$ is written $\|\cdot\|$ and the candidate norm on $\overline{X}$ is written $\|\cdot\|_{\overline{X}}$. A sequence in $\overline{X}$ is a sequence of classes; its $m$-th term is written $[\{x^{(m)}_n\}_n]$, where $\{x^{(m)}_n\}_n$ is a Cauchy sequence in $X$ (superscript: which class; subscript: which term of the representative).
-
-^rem-13-1
 
 > [!proof]+ Proof
 > (HW2, Problem 3.) Throughout, $\{x_n\}$ denotes a Cauchy sequence in $(X, \|\cdot\|)$ and $[\{x_n\}]$ its class in $\overline{X}$; two Cauchy sequences are equivalent iff $\lim_n \|x_n - y_n\| = 0$.
@@ -150,10 +156,20 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 > Letting $n \to \infty$, Ⓑ $\le 2/j$.
 >
 > *Conclusion.* By (3.3), for every $m \ge M_j$, $\|[\{x^{(m)}_n\}] - [\{y_n\}]\|_{\overline{X}} < 1/j + 2/j = 3/j < \varepsilon$. So the Cauchy sequence converges in $\overline{X}$ to $[\{y_n\}]$, and $(\overline{X}, \|\cdot\|_{\overline{X}})$ is complete; with Steps 5 and 6 it is a Banach space.
+>
+> **Step 10: $X$ is dense in $\overline{X}$.** *(Not part of the homework.)* By Step 4, $[\{x_n\}] - [\{y_n\}] = [\{x_n - y_n\}]$, so
+>
+> $$
+> \bigl\| [\{x_n\}] - [\{y_n\}] \bigr\|_{\overline{X}} = \lim_{n \to \infty} \|x_n - y_n\| = \bar d\bigl([\{x_n\}], [\{y_n\}]\bigr),
+> $$
+>
+> where $\bar d$ is the metric of Proposition [[§12 Completeness#^prop-12-3|§12.3]] for the metric $d(x, y) = \|x - y\|$ of $X$ (Proposition [[§11 Normed Linear Spaces#^prop-11-2|§11.2]]). So the metric of the norm $\|\cdot\|_{\overline{X}}$ is $\bar d$, and Proposition [[§12 Completeness#^prop-12-3|§12.3]](c) says: if $\xi = [\{x_n\}] \in \overline{X}$, then $\|x_k - \xi\|_{\overline{X}} \to 0$ as $k \to \infty$, where $x_k$ stands for the class of the constant sequence $(x_k, x_k, \ldots)$. Every element of $\overline{X}$ is therefore a limit of elements of $X$, i.e. $X$ is dense in $\overline{X}$ (Definition [[§11 Normed Linear Spaces#^def-11-8|§11.8]]).
+>
+> The steps prove the parts of the statement as follows: (a) is Steps 4 and 5; (b) is Steps 1, 3 and 6; (c) is the last line of Step 6; (d) is Steps 7 to 9; (e) is Step 10.
 
 ^pf-13-1
 
-*Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]] (completeness of $\mathbb{R}$)
+*Uses:* [[§11 Normed Linear Spaces#^lem-11-3|§11.3]], [[§12 Completeness#^prop-12-3|§12.3]], [[§11 Normed Linear Spaces#^prop-11-2|§11.2]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-5|Def. §11.5]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]], [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3]] (completeness of $\mathbb{R}$)
 
 > [!remark]- Connections
 > - The same construction for $\mathbb{Q} \subset \mathbb{R}$: [[§10a Cauchy Sequences#^rem-10a-4|451 Remark (construction of the reals)]]; there $\Phi = \lim$ is [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-12|451 Theorem §6★.12]], and uniqueness is [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-14|451 §6★.14]].
@@ -171,6 +187,47 @@ For a normed linear space $X$, the completion $\overline{X}$ as a metric space s
 
 ## Identifying a Completion
 
+A completion is compared with a concrete space by a map that preserves distances.
+
+> [!definition] Definition §13.1: Isometry
+> Let $(M, d)$ and $(M', d')$ be metric spaces. A map $T : M \to M'$ is an **isometry** if it preserves distances:
+>
+> $$
+> d'(Tx, Ty) = d(x, y) \qquad \text{for all } x, y \in M.
+> $$
+>
+> For normed linear spaces $(X, \|\cdot\|_X)$ and $(Z, \|\cdot\|_Z)$, with the metrics of their norms (Proposition [[§11 Normed Linear Spaces#^prop-11-2|§11.2]]), a map $T : X \to Z$ is thus an isometry if $\|Tx - Ty\|_Z = \|x - y\|_X$ for all $x, y \in X$.
+
+^def-13-1
+
+> [!definition] Definition §13.2: Isometric Isomorphism
+> Let $X$ and $Z$ be normed linear spaces over the same field. An **isometric isomorphism** of $X$ onto $Z$ is a map $T : X \to Z$ that is an isomorphism of linear spaces (Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|§3.2]]: linear, one-to-one and onto) and an isometry (Definition [[§13 The Completion of a Normed Space#^def-13-1|§13.1]]). If such a map exists, $X$ and $Z$ are **isometrically isomorphic**.
+
+^def-13-2
+
+> [!theorem] Lemma §13.2: Linear Isometries
+> Let $X$, $Z$, $W$ be normed linear spaces over the same field.
+>
+> 1. A linear map $T : X \to Z$ is an isometry if and only if $\|Tx\|_Z = \|x\|_X$ for all $x \in X$.
+> 2. An isometry $T : X \to Z$ is one-to-one.
+> 3. If $T : X \to Z$ is an isometric isomorphism, then so is $T^{-1} : Z \to X$.
+> 4. If $T : X \to Z$ and $U : Z \to W$ are isometric isomorphisms, then so is $U \circ T : X \to W$.
+
+^lem-13-2
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* (1) Let $T$ be linear, so that $T0 = 0$ and $Tx - Ty = T(x - y)$. If $T$ is an isometry, then $\|Tx\|_Z = \|Tx - T0\|_Z = \|x - 0\|_X = \|x\|_X$. Conversely, if $\|Tu\|_Z = \|u\|_X$ for all $u \in X$, then $\|Tx - Ty\|_Z = \|T(x - y)\|_Z = \|x - y\|_X$.
+>
+> (2) If $Tx = Ty$, then $\|x - y\|_X = \|Tx - Ty\|_Z = 0$, so $x = y$ by positivity of the norm.
+>
+> (3) $T^{-1}$ is an isomorphism by Lemma [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]. For $z \in Z$, apply (1) for $T$ to the vector $T^{-1}z$: $\|z\|_Z = \|T(T^{-1}z)\|_Z = \|T^{-1}z\|_X$. By (1) for the linear map $T^{-1}$, it is an isometry.
+>
+> (4) $U \circ T$ is linear, since $(U \circ T)(ax + by) = U(a\,Tx + b\,Ty) = a\,U(Tx) + b\,U(Ty)$ for $x, y \in X$ and scalars $a, b$, and it is one-to-one and onto as a composition of two maps that are; so it is an isomorphism (Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|§3.2]]). By (1) for $U$ and then for $T$, $\|U(Tx)\|_W = \|Tx\|_Z = \|x\|_X$, so by (1) $U \circ T$ is an isometry.
+
+^pf-13-2
+
+*Uses:* [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]]
+
 The construction by equivalence classes is abstract, but in practice the completion of a concrete space can almost always be written down as a concrete space. The following proposition is the tool: if the space is already sitting densely inside something complete, that something *is* the completion.
 
 > [!theorem] Proposition §13.3: Identifying a Completion
@@ -180,7 +237,7 @@ The construction by equivalence classes is abstract, but in practice the complet
 > \Phi : \overline{X} \to Z, \qquad \Phi\bigl([\{x_n\}]\bigr) = \lim_{n \to \infty} J x_n,
 > $$
 >
-> is an isometric isomorphism of $\overline{X}$ onto $Z$ (a linear bijection with $\|\Phi(\xi)\|_Z = \|\xi\|$ for all $\xi \in \overline{X}$), and it sends the class of the constant sequence $(x, x, \ldots)$ to $Jx$. In particular, if $X \subset Z$ is a dense linear subspace carrying the restricted norm ($J$ the inclusion), then $\overline{X}$ is isometrically isomorphic to $Z$ by an isomorphism that is the identity on $X$.
+> is an isometric isomorphism of $\overline{X}$ onto $Z$ (Definition [[§13 The Completion of a Normed Space#^def-13-2|§13.2]]), and it sends the class of the constant sequence $(x, x, \ldots)$ to $Jx$. In particular, if $X \subset Z$ is a dense linear subspace carrying the restricted norm ($J$ the inclusion), then $\overline{X}$ is isometrically isomorphic to $Z$ by an isomorphism that is the identity on $X$.
 
 ^prop-13-3
 
@@ -197,15 +254,15 @@ The construction by equivalence classes is abstract, but in practice the complet
 > \|\Phi([\{x_n\}])\|_Z = \lim_n \|Jx_n\|_Z = \lim_n \|x_n\|_X = \|[\{x_n\}]\|,
 > $$
 >
-> the last equality being the definition of the norm on $\overline{X}$. An isometry is injective: $\Phi(\xi) = 0$ forces $\|\xi\| = 0$, hence $\xi = 0$.
+> the last equality being the definition of the norm on $\overline{X}$. So $\Phi$ preserves the norm; being linear, it is an isometry and therefore one-to-one (Lemma [[§13 The Completion of a Normed Space#^lem-13-2|§13.2]](1),(2)).
 >
 > *Surjective.* Let $z \in Z$. By density there are $x_n \in X$ with $Jx_n \to z$. A convergent sequence is Cauchy (Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]]), and $\|x_n - x_m\|_X = \|Jx_n - Jx_m\|_Z$, so $\{x_n\}$ is Cauchy in $X$ and $\Phi([\{x_n\}]) = z$.
 >
-> Finally $\Phi([(x, x, \ldots)]) = \lim_n Jx = Jx$.
+> Finally $\Phi([(x, x, \ldots)]) = \lim_n Jx = Jx$. Altogether $\Phi$ is linear, one-to-one and onto, i.e. an isomorphism (Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|§3.2]]), and an isometry: an isometric isomorphism of $\overline{X}$ onto $Z$ (Definition [[§13 The Completion of a Normed Space#^def-13-2|§13.2]]).
 
 ^pf-13-3
 
-*Uses:* [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]]
+*Uses:* [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], [[§12 Completeness#^def-12-3|Def. §12.3]], [[§12 Completeness#^def-12-4|Def. §12.4]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]], [[§13 The Completion of a Normed Space#^lem-13-2|§13.2]], [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§11 Normed Linear Spaces#^def-11-8|Def. §11.8]], [[§12 Completeness#^def-12-2|Def. §12.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]], [[§13 The Completion of a Normed Space#^def-13-2|Def. §13.2]]
 
 > [!remark]- Connections
 > - Used for concrete completions: [[§13 The Completion of a Normed Space#^prop-13-5|§13.5]] ($C^1$), [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]] ($L^p$).
@@ -221,11 +278,11 @@ The construction by equivalence classes is abstract, but in practice the complet
 ^cor-13-4
 
 > [!proof]+ Proof
-> (Stated in lecture without proof; the proof is not from lecture.) Both are isometrically isomorphic to $\overline{X}$ by Proposition [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]]; compose one isomorphism with the inverse of the other (Lemma [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]).
+> (Stated in lecture without proof; the proof is not from lecture.) By Proposition [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]], applied to the inclusions of $X$ in $Z_1$ and in $Z_2$ (which are linear, preserve the norm and have dense image by hypothesis), there are isometric isomorphisms $\Phi_1 : \overline{X} \to Z_1$ and $\Phi_2 : \overline{X} \to Z_2$ with $\Phi_1([(x, x, \ldots)]) = x$ and $\Phi_2([(x, x, \ldots)]) = x$ for every $x \in X$. By Lemma [[§13 The Completion of a Normed Space#^lem-13-2|§13.2]](3),(4), $\Phi_2 \circ \Phi_1^{-1} : Z_1 \to Z_2$ is an isometric isomorphism. It fixes $X$: for $x \in X$, $\Phi_1^{-1}(x) = [(x, x, \ldots)]$, so $\Phi_2\bigl(\Phi_1^{-1}(x)\bigr) = x$.
 
 ^pf-13-4
 
-*Uses:* [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
+*Uses:* [[§13 The Completion of a Normed Space#^prop-13-3|§13.3]], [[§13 The Completion of a Normed Space#^lem-13-2|§13.2]]
 
 > [!remark] Remark: How Do We Know We Have Not Added Too Much?
 > Corollary [[§13 The Completion of a Normed Space#^cor-13-4|§13.4]] answers this: there is no freedom. The construction adds only limits of Cauchy sequences in $X$ and identifies two sequences whenever they head for the same place, so nothing extra can appear.
@@ -237,9 +294,9 @@ The construction by equivalence classes is abstract, but in practice the complet
 ^rem-13-5
 
 > [!example] Example §13.1: $\mathbb{C}$ is Not the Completion of $\mathbb{Q}$
-> With the usual absolute value, the completion of $\mathbb{Q}$ is $\mathbb{R}$, and $\mathbb{R} \subset \mathbb{C}$ with $\mathbb{C}$ complete — but $\mathbb{C}$ is not the completion of $\mathbb{Q}$, because a Cauchy sequence of rationals cannot converge to a non-real number.
+> With the usual absolute value, the completion of $\mathbb{Q}$ is $\mathbb{R}$ (Proposition [[§12 Completeness#^prop-12-4|§12.4]] with $Z = \mathbb{R}$ and $J$ the inclusion: $\mathbb{R}$ is complete, and the closure of $\mathbb{Q}$ in $\mathbb{R}$ is $\mathbb{R}$, because every real number $x$ is the limit of its decimal truncations $\lfloor 10^n x \rfloor / 10^n$, as for $\sqrt{2}$ in Example [[§11 Normed Linear Spaces#^ex-11-3|§11.3]]), and $\mathbb{R} \subset \mathbb{C}$ with $\mathbb{C}$ complete — but $\mathbb{C}$ is not the completion of $\mathbb{Q}$, because a Cauchy sequence of rationals cannot converge to a non-real number.
 >
-> *(Justification filled in.)* *What is to be shown.* $\mathbb{Q}$ is dense in its completion (Proposition [[§12 Completeness#^prop-12-3|§12.3]](c)), and an isometric bijection fixing $\mathbb{Q}$ would carry this density over. So it suffices to show that $\mathbb{Q}$ is not dense in $\mathbb{C}$, although $\mathbb{C}$ is complete.
+> *(Justification filled in.)* *What is to be shown.* $\mathbb{Q}$ is dense in its completion (Proposition [[§12 Completeness#^prop-12-3|§12.3]](c)), and a bijective isometry (Definition [[§13 The Completion of a Normed Space#^def-13-1|§13.1]]) fixing $\mathbb{Q}$ would carry this density over. So it suffices to show that $\mathbb{Q}$ is not dense in $\mathbb{C}$, although $\mathbb{C}$ is complete.
 >
 > 1. *$\mathbb{C}$ is complete.* As a metric space $\mathbb{C}$ is $\mathbb{R}^2$ with the Euclidean distance. If $z_n = x_n + i y_n$ is Cauchy, then $|x_n - x_m| \le |z_n - z_m|$ and $|y_n - y_m| \le |z_n - z_m|$, so $\{x_n\}$ and $\{y_n\}$ are Cauchy in $\mathbb{R}$ and converge to some $x, y$; then $|z_n - (x + iy)| \le |x_n - x| + |y_n - y| \to 0$.
 > 2. *Limits of rationals are real.* If $q_n \in \mathbb{Q}$ and $q_n \to z$ in $\mathbb{C}$, then $|\operatorname{Im} z| = |\operatorname{Im}(z - q_n)| \le |z - q_n| \to 0$, so $z \in \mathbb{R}$. For instance $|q - i| = \sqrt{q^2 + 1} \ge 1$ for every $q \in \mathbb{Q}$, so $i$ is not a limit of rationals.

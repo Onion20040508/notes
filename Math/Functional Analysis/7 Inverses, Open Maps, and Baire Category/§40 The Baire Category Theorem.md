@@ -11,16 +11,22 @@ tags: [functional-analysis, math556]
 
 In this section $(X, d)$ is a metric space, $B(x_0, r) = \{ x \in X : d(x, x_0) < r \}$ is the open ball (written $B_r(x_0)$ in Definition [[§11 Normed Linear Spaces#^def-11-10|§11.10]]), and $\overline{B(x_0, r)}$ is its closure. A point $x_0$ is an **interior point** of a set $S$ if $B(x_0, r) \subset S$ for some $r > 0$ (Definition [[§11 Normed Linear Spaces#^def-11-11|§11.11]]).
 
-> [!definition] Definition §40.1: Nowhere Dense; First and Second Category
-> Let $(X, d)$ be a metric space.
->
-> 1. $E \subset X$ is **nowhere dense** if $\overline{E}$, the closure of $E$, has no interior points.
-> 2. $S \subset X$ is **of the first category** if $S$ is a countable union of nowhere dense subsets of $X$: $S = \bigcup_{n=1}^\infty E_n$ with each $E_n$ nowhere dense.
-> 3. A set $S$ that is not of the first category is **of the second category**.
+> [!definition] Definition §40.1: Nowhere Dense Set
+> Let $(X, d)$ be a metric space. A subset $E \subset X$ is **nowhere dense** if $\overline{E}$, the closure of $E$, has no interior points.
+
+^def-40-1
+
+> [!definition] Definition §40.2: Set of the First Category
+> Let $(X, d)$ be a metric space. A subset $S \subset X$ is **of the first category** if $S$ is a countable union of nowhere dense subsets of $X$ (Definition [[§40 The Baire Category Theorem#^def-40-1|§40.1]]): $S = \bigcup_{n=1}^\infty E_n$ with each $E_n$ nowhere dense.
+
+^def-40-2
+
+> [!definition] Definition §40.3: Set of the Second Category
+> Let $(X, d)$ be a metric space. A subset $S \subset X$ is **of the second category** if it is not of the first category (Definition [[§40 The Baire Category Theorem#^def-40-2|§40.2]]).
 >
 > *Lax: §15.5, end (sets of second category, Thm 16)*
 
-^def-40-1
+^def-40-3
 
 > [!example] Example §40.1: Nowhere Dense Sets; Sets of the First Category
 > In $X = \mathbb{R}^n$: a finite set $E$ is nowhere dense; so is the set of integer points $\mathbb{Z}^n$. The set of rational points $\mathbb{Q}^n$ is of the first category.
@@ -38,10 +44,6 @@ The Baire category theorem says that a complete metric space must be of the seco
 > $$
 
 ^lem-40-1
-
-![[m556-40-1.svg]]
-
-Inside any ball there is a smaller closed ball that misses $\overline{E}$ entirely. (The dots stand for $\overline{E}$; a nowhere dense set can be much larger than a discrete set, e.g. a Cantor set.)
 
 > [!proof]+ Proof
 > **($\Rightarrow$)** Assume $E$ is nowhere dense, and let $B(x_0, r)$ be an open ball. Then $\overline{E} \neq X$ (otherwise every point of $X$, e.g. $x_0$, would be an interior point of $\overline{E}$), so $\overline{E}^{\,c}$ is open and nonempty. Also $B(x_0, r) \cap \overline{E}^{\,c}$ is open and nonempty; otherwise $B(x_0, r) \subset \overline{E}$, and $x_0$ would be an interior point of $\overline{E}$. So there is an open ball with
@@ -61,6 +63,10 @@ Inside any ball there is a smaller closed ball that misses $\overline{E}$ entire
 > **($\Leftarrow$)** We want to show $E$ is nowhere dense. If not, $\overline{E}$ has an interior point; name it $x_0$. Then there is an open ball $B(x_0, r) \subset \overline{E}$, and every ball $B(x_1, r_1) \subset B(x_0, r)$ satisfies $B(x_1, r_1) \subset \overline{E}$; in particular $x_1 \in \overline{B(x_1, r_1)} \cap \overline{E}$, which is then nonempty. This contradicts the assumption.
 
 ^pf-40-1
+
+![[m556-40-1.svg]]
+
+Inside any ball there is a smaller closed ball that misses $\overline{E}$ entirely. (The dots stand for $\overline{E}$; a nowhere dense set can be much larger than a discrete set, e.g. a Cantor set.)
 
 Two facts are used in the proof below.
 
@@ -82,7 +88,7 @@ Two facts are used in the proof below.
 ^lem-40-3
 
 > [!proof]+ Proof
-> *(Not from lecture.)* $\overline{E}$ is closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](a); its proof uses only the triangle inequality, so it holds in a metric space), so the closure of $\overline{E}$ is $\overline{E}$ itself: $E$ and $\overline{E}$ have the same closure. By Definition [[§40 The Baire Category Theorem#^def-40-1|§40.1]](1), both statements say that this common closure has no interior points.
+> *(Not from lecture.)* $\overline{E}$ is closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](a); its proof uses only the triangle inequality, so it holds in a metric space), so the closure of $\overline{E}$ is $\overline{E}$ itself: $E$ and $\overline{E}$ have the same closure. By Definition [[§40 The Baire Category Theorem#^def-40-1|§40.1]], both statements say that this common closure has no interior points.
 
 ^pf-40-3
 
@@ -91,7 +97,7 @@ Two facts are used in the proof below.
 This is why it makes no difference whether one writes $E_n$ or $\overline{E}_n$ in the proof below.
 
 > [!theorem] Theorem §40.4: Baire Category Theorem
-> Let $X$ be a (nonempty) complete metric space. Then $X$ is of the second category: $X$ is not a countable union of nowhere dense sets.
+> Let $X$ be a (nonempty) complete metric space. Then $X$ is of the second category (Definition [[§40 The Baire Category Theorem#^def-40-3|§40.3]]): $X$ is not a countable union of nowhere dense sets.
 >
 > *Lax: §15.5, proof of Thm 9 (“Baire category principle”), p. 169*
 

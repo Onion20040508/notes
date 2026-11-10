@@ -11,6 +11,8 @@ tags: [functional-analysis, math556]
 
 ## Minkowski's Inequality
 
+The proof of Minkowski's inequality, stated next, runs for $1 < p < \infty$ in two stages: a computation, valid as an inequality in $[0,\infty]$, followed by a cancellation that needs $\|a+b\|_p < \infty$; when that is not yet known, the computation is applied to truncations. The order of the proof follows the lecture.
+
 > [!theorem] Theorem §18.1: Minkowski's Inequality for Sequences
 > Let $1 \le p \le \infty$ and $a = (a_i), b = (b_i) \in \ell$. Then
 >
@@ -23,8 +25,6 @@ tags: [functional-analysis, math556]
 > *Lax: §5.1, Thms 4–5*
 
 ^thm-18-1
-
-The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an inequality in $[0,\infty]$, followed by a cancellation that needs $\|a+b\|_p < \infty$; when that is not yet known, the computation is applied to truncations. The order below follows the lecture.
 
 > [!proof]+ Proof of Theorem §18.1
 > **Case $p = 1$.** $\sum_i |a_i + b_i| \le \sum_i (|a_i| + |b_i|) = \|a\|_1 + \|b\|_1$, by the termwise triangle inequality and addition of series of non-negative terms.
@@ -199,14 +199,7 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 
 ## Completeness of ℓᵖ
 
-> [!theorem] Theorem §18.5: $\ell^p$ is a Banach Space
-> For $1 \le p \le \infty$, $(\ell^p, \|\cdot\|_p)$ is complete.
->
-> *Lax: §5.1, examples (a)–(b)*
-
-^thm-18-5
-
-> [!remark] Note: Notation for the Proof
+> [!remark] Note: Notation for Sequences in $\ell^p$
 > A sequence in $\ell^p$ is a sequence of sequences. Write the $n$-th term as
 >
 > $$
@@ -216,6 +209,13 @@ The proof for $1 < p < \infty$ runs in two stages: a computation, valid as an in
 > so the superscript indexes the term of the sequence in $\ell^p$ and the subscript the coordinate. Truncations are also used: $a^{(n,k)} = (a^{(n)}_1, \ldots, a^{(n)}_k) \in \mathbb{F}^k$.
 
 ^rem-18-3
+
+> [!theorem] Theorem §18.5: $\ell^p$ is a Banach Space
+> For $1 \le p \le \infty$, $(\ell^p, \|\cdot\|_p)$ is complete.
+>
+> *Lax: §5.1, examples (a)–(b)*
+
+^thm-18-5
 
 > [!proof]+ Proof
 > The proof follows the plan for every completeness argument: *first find the candidate for the limit, then prove convergence to it*. Take $p < \infty$ first.

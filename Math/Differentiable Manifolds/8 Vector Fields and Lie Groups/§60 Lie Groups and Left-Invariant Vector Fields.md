@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Lecture 16. References: Lee Ch. 7 and Ch. 8. Lie algebras and Lie groups are related, and in one direction the relationship is very nice: every Lie group has a Lie algebra associated to it.*
 
 > [!definition] Definition §60.1: Lie Group
-> A **Lie group** is a [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|topological group]] $G$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-1|Definition §11.1]]) together with a [[§17 Differentiable Structures#^def-17-9|smooth structure]], such that multiplication $G \times G \to G$, $(g, h) \mapsto gh$, and inversion $G \to G$, $g \mapsto g^{-1}$, are [[§19 Smooth Functions and Smooth Maps#^def-19-3|smooth maps]].
+> A **Lie group** is a [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|topological group]] $G$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-1|Definition §11.1]]) together with a [[§17 Differentiable Structures#^def-17-11|smooth structure]], such that multiplication $G \times G \to G$, $(g, h) \mapsto gh$, and inversion $G \to G$, $g \mapsto g^{-1}$, are [[§19 Smooth Functions and Smooth Maps#^def-19-3|smooth maps]].
 >
 > *Lee: Ch. 7, Basic Definitions*
 
@@ -47,7 +47,7 @@ For a topological group the two maps had to be continuous; now they are required
 
 *Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]], [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-11|§19.11]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§27 Cramer’s Rule, Volume, and Linear Transformations#^thm-27-2|235 Thm. §27.2]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-1|Def. §11.1]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]]
 
-The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
+The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
 
 The unit quaternions $S^3$ are a Lie group as well ([[§47 The Unit Quaternions and SU(2)#^prop-47-4|Proposition §47.4]]), isomorphic to $\mathrm{SU}(2)$ ([[§47 The Unit Quaternions and SU(2)#^prop-47-5|Proposition §47.5]]).
 
@@ -65,7 +65,7 @@ The unit quaternions $S^3$ are a Lie group as well ([[§47 The Unit Quaternions 
 ^prop-60-2
 
 > [!proof]+ Proof
-> *(Assignment 6, Problem 1(a); the submitted solution.)* Let $\pi_1, \pi_2 : G \times G \to G$ be the projections and $\iota_1, \iota_2 : G \to G \times G$ the slice inclusions through $(e, e)$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]),
+> *(Assignment 6, Problem 1(a); the submitted solution.)* Let $\pi_1, \pi_2 : G \times G \to G$ be the projections and $\iota_1, \iota_2 : G \to G \times G$ the slice inclusions through $(e, e)$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-9|§19.9]]),
 >
 > $$
 > \iota_1(g) = (g, e), \qquad \iota_2(g) = (e, g) .
@@ -111,7 +111,7 @@ The unit quaternions $S^3$ are a Lie group as well ([[§47 The Unit Quaternions 
 
 ^pf-60-2
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-9|Def. §19.9]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
 
 > [!theorem] Proposition §60.3: The Differential of Inversion at the Identity
 > Let $G$ be a Lie group with identity $e$ and inversion $j : G \to G$, $j(g) = g^{-1}$. Then
@@ -184,7 +184,7 @@ For a matrix group both are first-order expansions: $(I + tA)(I + tB) = I + t(A 
 > [!proof]+ Proof
 > *(Filled in, as for topological groups in Lemma [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]].)* By Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]], it has to be shown that $L_g$ is a smooth bijection with smooth inverse, and that the inverse is $L_{g^{-1}}$.
 >
-> *Smooth.* $L_g$ is smooth as the composite of $h \mapsto (g, h)$ with multiplication: $L_g(h) = gh = \mu\big(\iota^{g}(h)\big)$, where $\iota^{g} : G \to G \times G$, $h \mapsto (g, h)$, is the slice inclusion of Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]] (with $M_1 = M_2 = G$ and $p_1 = g$), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], and $\mu : G \times G \to G$ is multiplication, smooth by Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]]. So $L_g = \mu \circ \iota^{g}$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). The same holds for every element of $G$, in particular for $g^{-1}$: $L_{g^{-1}}$ is smooth.
+> *Smooth.* $L_g$ is smooth as the composite of $h \mapsto (g, h)$ with multiplication: $L_g(h) = gh = \mu\big(\iota^{g}(h)\big)$, where $\iota^{g} : G \to G \times G$, $h \mapsto (g, h)$, is the slice inclusion of Definition [[§19 Smooth Functions and Smooth Maps#^def-19-9|§19.9]] (with $M_1 = M_2 = G$ and $p_1 = g$), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], and $\mu : G \times G \to G$ is multiplication, smooth by Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]]. So $L_g = \mu \circ \iota^{g}$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). The same holds for every element of $G$, in particular for $g^{-1}$: $L_{g^{-1}}$ is smooth.
 >
 > *Inverse.* For $h \in G$, by associativity of the group product,
 >
@@ -196,7 +196,7 @@ For a matrix group both are first-order expansions: $(I + tA)(I + tB) = I + t(A 
 
 ^pf-60-4
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|Def. §60.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|Def. §60.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§13 Group Actions and Orbit Spaces#^lem-13-2|§13.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-9|Def. §19.9]]
 
 > [!definition] Definition §60.3: Left-Invariant Vector Field
 > A [[§56 Vector Fields#^def-56-1|vector field]] $\mathbf{X} \in \mathfrak{X}(G)$ is **left-invariant** if for all $g, h \in G$
@@ -212,7 +212,7 @@ For a matrix group both are first-order expansions: $(I + tA)(I + tB) = I + t(A 
 ![[m591-49-1.svg]]
 *Left invariance as a diagram: the differential $(L_g)_{\ast h}$ of [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|left translation]] carries the value $\mathbf{X}_h$ of the field at $h$ to its value $\mathbf{X}_{gh}$ at $gh$.*
 
-Left invariance in one line: pushing vectors of the field forward by left translations always gives the corresponding vectors of the field. The value at one point determines the field everywhere: taking $h = e$, $\mathbf{X}_g = (L_g)_{\ast e}\, \mathbf{X}_e$. This is the [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|left translation]] of tangent spaces from the discussion of moving the base point ([[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|Lemma §48.3]]), applied to a whole field.
+Left invariance in one line: pushing vectors of the field forward by left translations always gives the corresponding vectors of the field. The value at one point determines the field everywhere: taking $h = e$, $\mathbf{X}_g = (L_g)_{\ast e}\, \mathbf{X}_e$. This is the [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-2|left translation]] of tangent spaces from the discussion of moving the base point ([[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-4|Lemma §48.4]]), applied to a whole field.
 
 ![[m591-49-a4.gif|640]]
 
@@ -380,7 +380,7 @@ As with vector fields on a vector space (Proposition [[§30 The Differential in 
 > [!proof]+ Proof
 > *(Lecture 18, completing the proof of Lecture 17.)* Lecture 17 stopped here: what was missing is that $\mathbf{X}^v$ is $C^\infty$, an important technical point for which the tools were not yet available. Lecture 18 finished it with the partial derivative construction (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|§31.4]]). So far $\mathbf{X}^v$ is a left-invariant *rough* field (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](1) and (2)), Lee's term for a section not yet known to be smooth; the piece of the construction not yet justified is its smoothness.
 >
-> *The claim.* It suffices to show that for every $f \in C^\infty(G)$ the function $\mathbf{X}^v f : g \mapsto \mathbf{X}^v_g[f]$ is smooth. This function is well defined whether or not $\mathbf{X}^v$ is smooth, because there is a vector at every point, and it can act on any function. The lecture's proof of the claim: in local coordinates $(x^1, \ldots, x^m)$, $m = \dim G$, there is still a pointwise expansion $\mathbf{X}^v = \sum_j a^j\, \partial/\partial x^j$, and $\mathbf{X}^v$ is smooth exactly when the $a^j$ are (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]); and $a^j$ is precisely the action of $\mathbf{X}^v$ on the coordinate $x^j$. This is Lemma [[§56 Vector Fields#^lem-56-8|§56.8]], whose proof also handles the point that $x^j$ is defined only on the chart, by extending it with a bump function.
+> *The claim.* It suffices to show that for every $f \in C^\infty(G)$ the function $\mathbf{X}^v f : g \mapsto \mathbf{X}^v_g[f]$ is smooth. This function is well defined whether or not $\mathbf{X}^v$ is smooth, because there is a vector at every point, and it can act on any function. The lecture's proof of the claim: in local coordinates $(x^1, \ldots, x^m)$, $m = \dim G$, there is still a pointwise expansion $\mathbf{X}^v = \sum_j a^j\, \partial/\partial x^j$, and $\mathbf{X}^v$ is smooth exactly when the $a^j$ are (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]); and $a^j$ is precisely the action of $\mathbf{X}^v$ on the coordinate $x^j$. This is Lemma [[§56 Vector Fields#^lem-56-11|§56.11]], whose proof also handles the point that $x^j$ is defined only on the chart, by extending it with a bump function.
 >
 > *The construction.* Let $f \in C^\infty(G)$ and $g \in G$. By the definition of $\mathbf{X}^v$ and of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]),
 >
@@ -404,7 +404,7 @@ As with vector fields on a vector space (Proposition [[§30 The Differential in 
 
 ^pf-60-8
 
-*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|Def. §31.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-8|§56.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-10|§31.10]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|Def. §60.4]]
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^def-31-4|Def. §31.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-11|§56.11]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§31 Tangent Vectors as Velocities of Curves#^prop-31-10|§31.10]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-4|Def. §60.4]]
 
 > [!theorem] Theorem §60.9: The Lie Algebra Is the Tangent Space at the Identity
 > Let $G$ be a [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Lie group]] with identity $e$. The evaluation map
@@ -503,7 +503,7 @@ By construction $\mathrm{ev}$ is then an isomorphism of [[§58 Lie Bracket and L
 ^thm-60-10
 
 > [!proof]+ Proof
-> *(Lecture 19: here diagram chasing no longer suffices, and something has to be computed. The lecture's computation, with the index bookkeeping written out. Lecture 19 proved this together with Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]], which reduces every linear group in $\mathrm{GL}(d, \mathbb{R})$ to this case.)*
+> *(Lecture 19: here diagram chasing no longer suffices, and something has to be computed. The lecture's computation, with the index bookkeeping written out. Lecture 19 proved this together with Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]], which reduces every linear group in $\mathrm{GL}(d, \mathbb{R})$ to this case.)*
 >
 > *Coordinates.* Write $A = (a^i_j)$, with $i$ the row index and $j$ the column index, and call a general group element $X = (x^i_j) \in \mathrm{GL}(d, \mathbb{R})$ rather than $g$, to think of it as a variable. Written out,
 >
@@ -590,13 +590,13 @@ Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset 
 > [!proof]+ Proof
 > *(1)* *(The submitted solution.)* For $k \in G$, $(R_g \circ R_h)(k) = R_g(kh) = khg = R_{hg}(k)$, so $R_g \circ R_h = R_{hg}$. Also $R_e(k) = ke = k$, so $R_e = \mathrm{id}_G$.
 >
-> *(Filled in.)* *(2)* As in Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-4|§60.4]]: $R_g = \mu \circ \iota^{g}$, where $\iota^{g} : G \to G \times G$, $k \mapsto (k, g)$, is the slice inclusion (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]], with $p_2 = g$), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], and $\mu$ is the multiplication, smooth by Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]]; so $R_g$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), and so is $R_{g^{-1}}$. By (1), $R_g \circ R_{g^{-1}} = R_{g^{-1}g} = R_e = \mathrm{id}_G$ and $R_{g^{-1}} \circ R_g = R_{gg^{-1}} = \mathrm{id}_G$. So $R_g$ is a smooth bijection with smooth inverse $R_{g^{-1}}$, a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]).
+> *(Filled in.)* *(2)* As in Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-4|§60.4]]: $R_g = \mu \circ \iota^{g}$, where $\iota^{g} : G \to G \times G$, $k \mapsto (k, g)$, is the slice inclusion (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-9|§19.9]], with $p_2 = g$), smooth by Proposition [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], and $\mu$ is the multiplication, smooth by Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|§60.1]]; so $R_g$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), and so is $R_{g^{-1}}$. By (1), $R_g \circ R_{g^{-1}} = R_{g^{-1}g} = R_e = \mathrm{id}_G$ and $R_{g^{-1}} \circ R_g = R_{gg^{-1}} = \mathrm{id}_G$. So $R_g$ is a smooth bijection with smooth inverse $R_{g^{-1}}$, a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]).
 >
 > *(3)* For $k \in G$, by associativity, $L_g(R_h(k)) = g(kh) = (gk)h = R_h(L_g(k))$.
 
 ^pf-60-11
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-4|§60.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-4|§60.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-9|Def. §19.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-12|§19.12]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]]
 
 > [!theorem] Proposition §60.12: The Differential of Multiplication
 > Let $G$ be a Lie group with multiplication $\mu$, and $g, h \in G$. Under the identification $T_{(g,h)}(G \times G) = T_gG \oplus T_hG$ of Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]],
@@ -610,7 +610,7 @@ Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset 
 ^prop-60-12
 
 > [!proof]+ Proof
-> *(Not from the assignment; the proof of Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2|§60.2]] at the point $(g, h)$.)* Let $\iota_1(x) = (x, h)$ and $\iota_2(y) = (g, y)$ be the slice inclusions through $(g, h)$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), so that $(v, w)$ stands for $\Theta(v, w) = d(\iota_1)_g(v) + d(\iota_2)_h(w)$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]]). For $x, y \in G$,
+> *(Not from the assignment; the proof of Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2|§60.2]] at the point $(g, h)$.)* Let $\iota_1(x) = (x, h)$ and $\iota_2(y) = (g, y)$ be the slice inclusions through $(g, h)$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-9|§19.9]]), so that $(v, w)$ stands for $\Theta(v, w) = d(\iota_1)_g(v) + d(\iota_2)_h(w)$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]]). For $x, y \in G$,
 >
 > $$
 > (\mu \circ \iota_1)(x) = xh = R_h(x), \qquad (\mu \circ \iota_2)(y) = gy = L_g(y),
@@ -624,7 +624,7 @@ Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset 
 
 ^pf-60-12
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2|§60.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-2|§60.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-9|Def. §19.9]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
 
 > [!theorem] Lemma §60.13: Inversion Exchanges Left and Right Translations
 > Let $G$ be a Lie group with inversion $j$, and $g \in G$.
@@ -671,7 +671,7 @@ Coordinate-free, the computation says: a field $X \mapsto XC$ on an open subset 
 
 *Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-13|§60.13]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-3|§60.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-4|§60.4]]
 
-For a matrix group, where $d(L_g)$ and $d(R_g)$ are multiplication by $g$ on the left and on the right (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]] and Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-3|§60.3]] below), this reads $d\mu_{(g,h)}(v, w) = vh + gw$ and $dj_g(v) = -g^{-1}vg^{-1}$: the product rule and the derivative of the inverse matrix.
+For a matrix group, where $d(L_g)$ and $d(R_g)$ are multiplication by $g$ on the left and on the right (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]] and Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-5|§60.5]] below), this reads $d\mu_{(g,h)}(v, w) = vh + gw$ and $dj_g(v) = -g^{-1}vg^{-1}$: the product rule and the derivative of the inverse matrix.
 
 > [!definition] Definition §60.8: Right-Invariant Vector Field
 > A vector field $\mathbf{Y}$ on a Lie group $G$ is **right-invariant** if it is $R_g$-related to itself for every $g \in G$ (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]): for all $g, h \in G$,
@@ -891,7 +891,7 @@ So the right-invariant vector fields are exactly the $\mathbf{Y}^A$, $A \in T_eG
 
 This agrees with Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-2|§60.2]], where the bracket of the additive group of a vector space was computed to vanish, and it applies as well to the torus $S^1 \times \cdots \times S^1$, a product of the abelian Lie group $S^1 = \mathrm{U}(1)$. *(Not from the assignment.)* The converse needs connectedness: $\mathrm{O}(2)$ is not abelian, but its tangent space at $I$ is that of $\mathrm{SO}(2) \cong S^1$, one-dimensional, so its bracket vanishes by antisymmetry. For connected groups the converse holds, a fact that needs the exponential map (Lee, Ch. 20).
 
-> [!example] Example §60.3: Right-Invariant Fields on $\mathrm{GL}({n,\mathbb{R}})$
+> [!example] Example §60.5: Right-Invariant Fields on $\mathrm{GL}({n,\mathbb{R}})$
 > On $G = \mathrm{GL}(n,\mathbb{R})$, with $T_gG = \operatorname{Mat}(n,\mathbb{R})$ as in Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]], the right-invariant extension of $A \in \operatorname{Mat}(n,\mathbb{R}) = T_IG$ is
 >
 > $$
@@ -900,11 +900,11 @@ This agrees with Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-
 >
 > and the left- and right-invariant extensions are related by the adjoint action (Proposition [[§25 The Geometric Tangent Space#^prop-25-6|§25.6]]): $\mathbf{X}^A_g = gA = (gAg^{-1})\,g = \mathbf{Y}^{gAg^{-1}}_g$. The right bracket is $[A, B]^R = BA - AB$.
 
-^ex-60-3
+^ex-60-5
 
 > [!proof]+ Proof
-> *(Not from the assignment.)* $R_g$ is the restriction to $G$ of the linear map $h \mapsto hg$ of $\operatorname{Mat}(n,\mathbb{R})$, so, exactly as for $L_g$ in the proof of Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]], $d(R_g)_h(v) = vg$; at $h = I$, $\mathbf{Y}^A_g = d(R_g)_I(A) = Ag$. Then $\mathbf{X}^A_g = gA = gAg^{-1}g = \mathbf{Y}^{gAg^{-1}}_g$. Finally $[A, B]^R = -[A, B] = -(AB - BA) = BA - AB$ by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]] and Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]. As a check without the theorem: the fields $X \mapsto AX$ are the column-vector linear fields of Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-6|§61.6]], applied to each column of $X$, and their brackets carry the same sign $BA - AB$.
+> *(Not from the assignment.)* $R_g$ is the restriction to $G$ of the linear map $h \mapsto hg$ of $\operatorname{Mat}(n,\mathbb{R})$, so, exactly as for $L_g$ in the proof of Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]], $d(R_g)_h(v) = vg$; at $h = I$, $\mathbf{Y}^A_g = d(R_g)_I(A) = Ag$. Then $\mathbf{X}^A_g = gA = gAg^{-1}g = \mathbf{Y}^{gAg^{-1}}_g$. Finally $[A, B]^R = -[A, B] = -(AB - BA) = BA - AB$ by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]] and Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]. As a check without the theorem: the fields $X \mapsto AX$ are the column-vector linear fields of Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-8|§61.8]], applied to each column of $X$, and their brackets carry the same sign $BA - AB$.
 
-^pf-ex-60-3
+^pf-ex-60-5
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]], [[§61 Lie Group Morphisms and Linear Groups#^prop-61-6|§61.6]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]], [[§61 Lie Group Morphisms and Linear Groups#^prop-61-8|§61.8]]

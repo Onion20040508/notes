@@ -158,7 +158,7 @@ $$
 > For $t_1 \ne t_2$ the set $\{|\mathbf x - \mathbf y| < |t_1 - t_2|\}$, where $\xi^2 > 0$, has positive volume in $(\mathbf x, \mathbf y)$.
 >
 > **What the derivation shows.**
-> - Equal-time Hamiltonians commute; at different times the free fields of the two vertices fail to commute inside the light cone, and nothing makes the operator integral vanish. In the one-oscillator model of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-2|Example §C6a.4.2]] (pointer) the naive exponential misses $U(0.7)$ by $0.92$ in the largest matrix element (the user's notes; rerun), while the time-ordered product reproduces it.
+> - Equal-time Hamiltonians commute; at different times the free fields of the two vertices fail to commute inside the light cone, and nothing makes the operator integral vanish. In the one-oscillator model of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^ex-c6a-4-2|Example §C6a.4.2]] (pointer) the naive exponential misses $U(0.7)$ by $0.91$ in the largest matrix element (the user's notes; rerun), while the time-ordered product reproduces it.
 > - Used next: part 3 of [[§C6a.3 The Time-Evolution Operator and Time Ordering#^thm-c6a-3-4|Theorem §C6a.3.4]], the naive exponential.
 
 ^der-c6a-3-3

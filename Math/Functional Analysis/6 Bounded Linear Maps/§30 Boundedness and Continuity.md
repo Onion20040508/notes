@@ -12,7 +12,7 @@ tags: [functional-analysis, math556]
 Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces over the same field $\mathbb{F}$; neither needs to be complete (completeness plays no role for continuity, since only sequences that already converge are involved).
 
 > [!definition] Definition §30.1: Continuous Linear Map
-> A map $T : X \to Y$ is **linear** if $T(a_1 x_1 + a_2 x_2) = a_1 T x_1 + a_2 T x_2$ for all $x_1, x_2 \in X$ and $a_1, a_2 \in \mathbb{F}$. It is **continuous** if for every sequence $\{x_j\}_{j \in \mathbb{N}}$ in $X$,
+> Recall (Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|§3.1]]) that a map $T : X \to Y$ is a linear map if $T(a_1 x_1 + a_2 x_2) = a_1 T x_1 + a_2 T x_2$ for all $x_1, x_2 \in X$ and $a_1, a_2 \in \mathbb{F}$. A linear map $T : X \to Y$ is **continuous** if for every sequence $\{x_j\}_{j \in \mathbb{N}}$ in $X$,
 >
 > $$
 > x_j \to x^{(0)} \text{ in } (X, \|\cdot\|_X) \implies T x_j \to T x^{(0)} \text{ in } (Y, \|\cdot\|_Y).
@@ -38,7 +38,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 ^def-30-2
 
 > [!remark]- Connections
-> - The case $Y = \mathbb{F}$: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]; the case $X = Y = H$ in the companion chapter: [[§45 The Completeness Relation#^xold-def-45-1|Def. §45.1]].
+> - The case $Y = \mathbb{F}$: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]]; the case $X = Y = H$, the bounded operators on a Hilbert space $H$ of the companion chapter: [[§45 The Completeness Relation|§45]].
 
 > [!definition] Definition §30.3: Operator Norm
 > For a bounded $T : X \to Y$ (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]), and $X \neq \{0\}$, its **norm** is
@@ -55,7 +55,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 > [!remark]- Connections
 > - Finite-dimensional home (where the sup is a max): [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
-> - The case $Y = \mathbb{F}$ is the dual norm, [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-2|Def. §44.2]]; the case $X = Y = H$ in the companion chapter: [[§45 The Completeness Relation#^xold-def-45-2|Def. §45.2]].
+> - The case $Y = \mathbb{F}$ is the dual norm, [[§31 Dual Spaces#^def-31-1|Def. §31.1]]; the case $X = Y = H$, the operator norm of a bounded operator on $H$ in the companion chapter: [[§45 The Completeness Relation|§45]].
 
 > [!theorem] Proposition §30.1: The Operator Norm
 > Let $T : X \to Y$ be a bounded linear map, $X \neq \{0\}$. Then
@@ -87,7 +87,7 @@ Throughout, $(X, \|\cdot\|_X)$ and $(Y, \|\cdot\|_Y)$ are normed linear spaces o
 
 > [!remark]- Connections
 > - Finite-dimensional home: [[§28 Consequences of Singular Value Decomposition#^ladr-7-88|LADR 7.88]].
-> - The same statements for the dual norm in the companion chapter: [[§44 Bras, Kets, and the Riesz Map#^xold-lem-44-1|§44.1]].
+> - Parts (b) and (c) applied to the dual norm in the companion chapter (the norm is the smallest admissible constant): [[§44 Bras, Kets, and the Riesz Map|§44]].
 
 > [!theorem] Proposition §30.2: Continuous if and only if Bounded
 > A linear map $T : X \to Y$ between normed linear spaces is continuous if and only if it is bounded.
@@ -154,7 +154,7 @@ The proof of ($\Rightarrow$): an unbounded $T$ sends the sequence $y_n \to 0$ to
 *Uses:* [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
 
 > [!remark] Remark
-> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-2|§44.2]]. The companion chapter's bounded operators on $H$ (Definition [[§45 The Completeness Relation#^xold-def-45-1|§45.1]]) are the case $X = Y = H$. A bounded linear map is even Lipschitz continuous, uniformly on all of $X$ (Corollary [[§30 Boundedness and Continuity#^cor-30-3|§30.3]]).
+> For $Y = \mathbb{F}$ this is Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]] on linear functionals, and $\|T\|$ is then the dual norm of Definition [[§31 Dual Spaces#^def-31-1|§31.1]]. The bounded operators on a Hilbert space $H$ of the companion chapter ([[§45 The Completeness Relation|§45]]) are the case $X = Y = H$. A bounded linear map is even Lipschitz continuous, uniformly on all of $X$ (Corollary [[§30 Boundedness and Continuity#^cor-30-3|§30.3]]).
 
 ^rem-30-1
 
@@ -210,9 +210,9 @@ The completeness of $C^m(\overline{\Omega})$ in this norm is not needed for Exam
 >
 > As $k \to \infty$ the left side tends to $h(x + t e_i) - h(x)$, and the right side to $\int_0^t g(x + s e_i)\, ds$, since the difference is at most $|t| \sup_\Omega |\partial_{x_i} h_k - g| \to 0$. So $h(x + t e_i) - h(x) = \int_0^t g(x + s e_i)\, ds$ for $|t| < r$, and since $s \mapsto g(x + s e_i)$ is continuous, the fundamental theorem of calculus in its second form ([[§34 Fundamental Theorem of Calculus#^thm-34-4|451 §34.4]]) gives $\partial_{x_i} h(x) = g(x)$.
 >
-> **Step 3: all derivatives up to order $m$.** Put $g = g_0$. We show by induction on $|\alpha| \le m$ that $\partial^\alpha g$ exists on $\Omega$ and equals $g_\alpha$; the case $\alpha = 0$ is the definition. If $1 \le |\alpha| \le m$, let $i$ be the smallest index with $\alpha_i \ge 1$ and $\beta = \alpha - e_i$. Then $\partial^\alpha = \partial_{x_i} \partial^\beta$, because $\partial_{x_i}^{\alpha_i}$ is the leftmost factor of $\partial^\alpha$, and $\partial^\beta g = g_\beta$ by the induction hypothesis. Apply Step 2 to $h_k = \partial^\beta f_k$: these converge uniformly to $g_\beta$, and $\partial_{x_i} h_k = \partial^\alpha f_k$ is continuous and converges uniformly to $g_\alpha$. So $\partial_{x_i} g_\beta = g_\alpha$, i.e. $\partial^\alpha g = g_\alpha$. Hence the derivatives of $g$ up to order $m$ exist, are continuous, and extend continuously to $\overline{\Omega}$ (as the $g_\alpha$): $g \in C^m(\overline{\Omega})$.
+> **Step 3: all derivatives up to order $m$.** Put $f = g_0$, the uniform limit of the $f_k$. We show by induction on $|\alpha| \le m$ that $\partial^\alpha f$ exists on $\Omega$ and equals $g_\alpha$; the case $\alpha = 0$ is the definition. If $1 \le |\alpha| \le m$, let $i$ be the smallest index with $\alpha_i \ge 1$ and $\beta = \alpha - e_i$. Then $\partial^\alpha = \partial_{x_i} \partial^\beta$, because $\partial_{x_i}^{\alpha_i}$ is the leftmost factor of $\partial^\alpha$, and $\partial^\beta f = g_\beta$ by the induction hypothesis. Apply Step 2 to $h_k = \partial^\beta f_k$: these converge uniformly to $g_\beta$, and $\partial_{x_i} h_k = \partial^\alpha f_k$ is continuous and converges uniformly to $g_\alpha$. So $\partial_{x_i} g_\beta = g_\alpha$, i.e. $\partial^\alpha f = g_\alpha$. Hence the derivatives of $f$ up to order $m$ exist, are continuous, and extend continuously to $\overline{\Omega}$ (as the $g_\alpha$): $f \in C^m(\overline{\Omega})$.
 >
-> **Step 4: convergence.** $\|f_k - g\|_{C^m(\overline{\Omega})} = \sum_{|\alpha| \le m} \|\partial^\alpha f_k - g_\alpha\|_\infty \to 0$, a finite sum of terms tending to $0$ by Step 1. So $f_k \to g$ in $C^m(\overline{\Omega})$.
+> **Step 4: convergence.** $\|f_k - f\|_{C^m(\overline{\Omega})} = \sum_{|\alpha| \le m} \|\partial^\alpha f_k - g_\alpha\|_\infty \to 0$, a finite sum of terms tending to $0$ by Step 1. So $f_k \to f$ in $C^m(\overline{\Omega})$.
 
 ^pf-30-4
 
@@ -247,20 +247,20 @@ The completeness of $C^m(\overline{\Omega})$ in this norm is not needed for Exam
 The same happens in one variable with only one derivative available, which is the form set as homework:
 
 > [!theorem] Proposition §30.6: $\frac{d}{dt}$ is Unbounded from $C^1[0,1]$ to $C[0,1]$ in the Maximum Norm
-> Let $\|f\|_\infty = \max_{t \in [0,1]} |f(t)|$ for $f \in C[0,1]$. The linear map $M = \frac{d}{dt}$ is not bounded from $(C^1[0,1], \|\cdot\|_\infty)$ to $(C[0,1], \|\cdot\|_\infty)$.
+> Let $\|f\|_\infty = \max_{t \in [0,1]} |f(t)|$ for $f \in C[0,1]$. The linear map $T = \frac{d}{dt}$ is not bounded from $(C^1[0,1], \|\cdot\|_\infty)$ to $(C[0,1], \|\cdot\|_\infty)$.
 >
 > *Source: HW9, Problem 1*
 
 ^prop-30-6
 
 > [!proof]+ Proof
-> *(HW9, Problem 1. Not from lecture; filled in.)* Let $f_k(t) = t^k$ for $k \in \mathbb{N}$. Then $f_k \in C^1[0,1]$ and $M f_k(t) = k\, t^{k-1}$. On $[0,1]$ both $t^k$ and $k\, t^{k-1}$ are non-negative and non-decreasing, so their maxima are attained at $t = 1$:
+> *(HW9, Problem 1. Not from lecture; filled in.)* Let $f_k(t) = t^k$ for $k \in \mathbb{N}$. Then $f_k \in C^1[0,1]$ and $T f_k(t) = k\, t^{k-1}$. On $[0,1]$ both $t^k$ and $k\, t^{k-1}$ are non-negative and non-decreasing, so their maxima are attained at $t = 1$:
 >
 > $$
-> \|f_k\|_\infty = 1, \qquad \|M f_k\|_\infty = k .
+> \|f_k\|_\infty = 1, \qquad \|T f_k\|_\infty = k .
 > $$
 >
-> If there were a constant $C$ with $\|Mf\|_\infty \le C \|f\|_\infty$ for all $f \in C^1[0,1]$, then $k = \|M f_k\|_\infty \le C \|f_k\|_\infty = C$ for every $k$, which is impossible. So $M$ is not bounded (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]).
+> If there were a constant $M$ with $\|Tf\|_\infty \le M \|f\|_\infty$ for all $f \in C^1[0,1]$, then $k = \|T f_k\|_\infty \le M \|f_k\|_\infty = M$ for every $k$, which is impossible. So $T$ is not bounded (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]).
 
 ^pf-30-6
 
@@ -334,7 +334,7 @@ The same happens in one variable with only one derivative available, which is th
 
 > [!remark]- Connections
 > - Finite-dimensional home (all linear maps, same operations): [[§7 Vector Space of Linear Maps#^ladr-3-5|LADR 3.5]].
-> - The dual space $X^* = \mathcal{L}(X, \mathbb{F})$ of the companion chapter: [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|Def. §44.1]].
+> - The dual space $X' = \mathcal{L}(X, \mathbb{F})$: [[§31 Dual Spaces#^def-31-1|Def. §31.1]], recalled in the companion chapter, [[§44 Bras, Kets, and the Riesz Map|§44]].
 
 > [!theorem] Theorem §30.8: $\mathcal{L}(X, Y)$ is a Normed Linear Space
 > Let $X$ and $Y$ be normed linear spaces.
@@ -408,7 +408,7 @@ The same happens in one variable with only one derivative available, which is th
 
 > [!remark]- Connections
 > - Finite-dimensional home of the norm properties: [[§28 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].
-> - Banach spaces: [[§12 Completeness#^def-12-2|Def. §12.2]]; the special case $Y = \mathbb{F}$ in the companion chapter: [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|Def. §44.1]].
+> - Banach spaces: [[§12 Completeness#^def-12-2|Def. §12.2]]; the special case $Y = \mathbb{F}$, the dual space: [[§31 Dual Spaces#^def-31-1|Def. §31.1]], recalled in the companion chapter, [[§44 Bras, Kets, and the Riesz Map|§44]].
 > - Part (2) with $Y = \mathbb{F}$: the dual is always a Banach space, [[§31 Dual Spaces#^cor-31-1|§31.1]].
 > - Used in ODEs: since $\|\mathbf{A}^k\| \le \|\mathbf{A}\|^k$, the series $e^{\mathbf{A}t} = \sum_k \mathbf{A}^kt^k/k!$ converges absolutely in the Banach space of $n \times n$ matrices; the matrix exponential is [[§39★ Fundamental Matrices#^thm-39-3|331 Thm. §39.3]].
 

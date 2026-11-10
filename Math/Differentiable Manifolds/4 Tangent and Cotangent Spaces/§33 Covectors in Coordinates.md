@@ -25,13 +25,13 @@ tags: [differentiable-manifolds, math591]
 > [!proof]+ Proof
 > *(Lecture 10: it suffices to check the identity on basis vectors. In lecture the left side came from the matrix of $f_{\ast p}$ (Theorem [[§30 The Differential in Coordinates#^thm-30-2|§30.2]]), a $1 \times m$ row — gradients go across — whose $j$-th entry is $\partial f/\partial x^j(p)$. Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] gives the same value directly.)*
 >
-> *Step 1: the $dx^i|_p$ are the dual basis.* Let $\varphi = (x^1, \ldots, x^m)$ be the chart, so that $x^i \circ \varphi^{-1} = r^i$, the $i$-th standard coordinate of $\mathbb{R}^m$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]). For each $i$ and $j$, Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] with $f = x^i$ and $D = \partial/\partial x^j|_p$, followed by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], gives
+> *Step 1: the $dx^i|_p$ are the dual basis.* Let $\varphi = (x^1, \ldots, x^m)$ be the chart, so that $x^i \circ \varphi^{-1} = r^i$, the $i$-th standard coordinate of $\mathbb{R}^m$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]). For each $i$ and $j$, Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] with $f = x^i$ and $D = \partial/\partial x^j|_p$, followed by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]], gives
 >
 > $$
 > dx^i|_p\Big(\frac{\partial}{\partial x^j}\Big|_p\Big) = \frac{\partial}{\partial x^j}\Big|_p\big[x^i\big] = \frac{\partial (x^i \circ \varphi^{-1})}{\partial r^j}\big(\varphi(p)\big) = \frac{\partial r^i}{\partial r^j}\big(\varphi(p)\big) = \delta^i_j .
 > $$
 >
-> This is the defining property of the dual basis (Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]]) of the basis $\{\partial/\partial x^j|_p\}$ of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). By Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]] the $dx^i|_p$ form a basis of $T_p^{\ast}M$, and $\dim T_p^{\ast}M = m$.
+> This is the defining property of the dual basis (Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]]) of the basis $\{\partial/\partial x^j|_p\}$ of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]). By Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]] the $dx^i|_p$ form a basis of $T_p^{\ast}M$, and $\dim T_p^{\ast}M = m$.
 >
 > *Step 2: the formula.* Both sides are linear functionals on $T_pM$, so by Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](2) it suffices that they agree on each basis vector $\partial/\partial x^j|_p$. The left side gives, by Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]],
 >
@@ -49,7 +49,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-33-1
 
-*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§12 Duality#^ladr-3-112|LADR 3.112]], [[Linear map lemma|LADR 3.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]
+*Uses:* [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§12 Duality#^ladr-3-112|LADR 3.112]], [[Linear map lemma|LADR 3.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]
 
 > [!remark]- Connections
 > - The dual basis and its coefficients: [[§12 Duality#^ladr-3-112|LADR 3.112]], [[§12 Duality#^ladr-3-114|LADR 3.114]], [[§12 Duality#^ladr-3-116|LADR 3.116]].
@@ -61,7 +61,7 @@ tags: [differentiable-manifolds, math591]
 > \xi_i = \xi\Big(\frac{\partial}{\partial x^i}\Big|_p\Big), \qquad i = 1, \ldots, m,
 > $$
 >
-> the values of $\xi$ on the coordinate basis of $T_pM$. They are the covector counterpart of the components $v^i = v[x^i]$ of a tangent vector $v \in T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). The letters $\xi$ and $\xi_i$ are used for a covector and its components from here on, as in the coordinates $(x^1, \ldots, x^m, \xi_1, \ldots, \xi_m)$ of $T^{\ast}M$ ([[§52 The Cotangent Bundle|§52]]).
+> the values of $\xi$ on the coordinate basis of $T_pM$. They are the covector counterpart of the components $v^i = v[x^i]$ of a tangent vector $v \in T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]). The letters $\xi$ and $\xi_i$ are used for a covector and its components from here on, as in the coordinates $(x^1, \ldots, x^m, \xi_1, \ldots, \xi_m)$ of $T^{\ast}M$ ([[§52 The Cotangent Bundle|§52]]).
 
 ^def-33-1
 
@@ -81,7 +81,7 @@ tags: [differentiable-manifolds, math591]
 > [!proof]+ Proof
 > *(Lecture 15 recalled the basis $dx^j|_p$ and read off the components by evaluation.)* Two things are claimed: the expansion, and the uniqueness of its coefficients.
 >
-> *The expansion.* By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], $(dx^1|_p, \ldots, dx^m|_p)$ is the dual basis (Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]]) of the basis $(\partial/\partial x^1|_p, \ldots, \partial/\partial x^m|_p)$ of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). So the second formula of Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]] applies, with $V = T_pM$, $e_j = \partial/\partial x^j|_p$, $\varepsilon^j = dx^j|_p$ and $\lambda = \xi$; with Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]] it reads
+> *The expansion.* By Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], $(dx^1|_p, \ldots, dx^m|_p)$ is the dual basis (Definition [[§21 Linear Algebra Toolkit#^def-21-2|§21.2]]) of the basis $(\partial/\partial x^1|_p, \ldots, \partial/\partial x^m|_p)$ of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]). So the second formula of Proposition [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]] applies, with $V = T_pM$, $e_j = \partial/\partial x^j|_p$, $\varepsilon^j = dx^j|_p$ and $\lambda = \xi$; with Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]] it reads
 >
 > $$
 > \xi = \sum_{j=1}^m \xi\Big(\frac{\partial}{\partial x^j}\Big|_p\Big)\, dx^j\big|_p = \sum_{j=1}^m \xi_j\, dx^j\big|_p .
@@ -97,7 +97,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-33-2
 
-*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§33 Covectors in Coordinates#^def-33-1|Def. §33.1]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]]
+*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§21 Linear Algebra Toolkit#^def-21-2|Def. §21.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§21 Linear Algebra Toolkit#^prop-21-2|§21.2]], [[§33 Covectors in Coordinates#^def-33-1|Def. §33.1]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]]
 
 > [!remark]- Connections
 > - The same expansion in LADR: [[§12 Duality#^ladr-3-112|LADR 3.112]] (dual basis). The components are what the local trivializations and charts of the cotangent bundle record, [[§52 The Cotangent Bundle#^def-52-4|Def. §52.4]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]].
@@ -117,7 +117,7 @@ tags: [differentiable-manifolds, math591]
 *The differential as a covector, for $f(x,y) = y + 0.3x^2$ near $p = (0.8, 0)$. Left: level curves of $f$ at equal spacing $\Delta$, and a tangent vector $v$ at $p$. Right: in $T_pM$, the level lines of the linear functional $df_p$ at the same spacing — the linearization of the curves on the left, straight and parallel. The value $df_p(v)$ counts, in units of $\Delta$, how many lines $v$ crosses: here exactly $2\Delta$, since $v$ ends on the line $df_p = 2\Delta$. On the left, $v$ crosses* approximately *two level curves; the curvature is what the linearization discards.*
 
 > [!remark] Remark: Differential — Not Gradient
-> The formula $df = \sum \partial f/\partial x^i\,dx^i$ of multivariable calculus is now a statement about covectors: the $dx^i|_p$ are not infinitesimals but the dual basis of the coordinate derivations, the coefficients are numbers, and the dual basis extracts the components of a vector in the original basis. What does *not* survive on a manifold is the gradient. A function on $M$ has no gradient *vector* — converting $df_p$ into a vector requires an inner product on $T_pM$, i.e. a Riemannian metric — but it always has its differential $df_p \in T_p^{\ast}M$, and that is where differentials of scalar functions live. Differential forms, later in the term, will be built from covectors, and will pull back as naturally as germs do. Tangent vectors, written $D$ while thought of as derivations, will soon be written $v$. On $\mathbb{R}^n$ there is such an inner product, the dot product: Definition [[§33 Covectors in Coordinates#^def-33-2|§33.2]] and Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]] below make the conversion between the gradient and the differential precise. They are used later, for Lagrange multipliers (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-6|§39.6]]) and for the normal bundle ([[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]]).
+> The formula $df = \sum \partial f/\partial x^i\,dx^i$ of multivariable calculus is now a statement about covectors: the $dx^i|_p$ are not infinitesimals but the dual basis of the coordinate derivations, the coefficients are numbers, and the dual basis extracts the components of a vector in the original basis. What does *not* survive on a manifold is the gradient. A function on $M$ has no gradient *vector* — converting $df_p$ into a vector requires an inner product on $T_pM$, i.e. a Riemannian metric — but it always has its differential $df_p \in T_p^{\ast}M$, and that is where differentials of scalar functions live. Differential forms, later in the term, will be built from covectors, and will pull back as naturally as germs do. Tangent vectors, written $D$ while thought of as derivations, will soon be written $v$. On $\mathbb{R}^n$ there is such an inner product, the dot product: Definition [[§33 Covectors in Coordinates#^def-33-2|§33.2]] and Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]] below make the conversion between the gradient and the differential precise. They are used later, for Lagrange multipliers (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-8|§39.8]]) and for the normal bundle ([[§42 The Normal Bundle of a Submanifold of Euclidean Space|§42]]).
 
 ^rem-33-2
 
@@ -135,7 +135,7 @@ tags: [differentiable-manifolds, math591]
 > \nabla h(p) = \Big( \frac{\partial h}{\partial r^1}(p), \ldots, \frac{\partial h}{\partial r^n}(p) \Big) \in \mathbb{R}^n ,
 > $$
 >
-> the single row of the Jacobian of $h$ at $p$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]), read as a vector of $\mathbb{R}^n$. Each $\partial h/\partial r^i(p)$ is also the coordinate derivation $\partial/\partial r^i|_p[h]$ of the identity chart (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), in which $h$ is its own coordinate representation.
+> the single row of the Jacobian of $h$ at $p$ (Definition [[§7 The Regular Value Theorem#^def-7-1|§7.1]]), read as a vector of $\mathbb{R}^n$. Each $\partial h/\partial r^i(p)$ is also the coordinate derivation $\partial/\partial r^i|_p[h]$ of the identity chart (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]]), in which $h$ is its own coordinate representation.
 
 ^def-33-2
 

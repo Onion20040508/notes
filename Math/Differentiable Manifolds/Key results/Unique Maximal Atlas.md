@@ -15,9 +15,9 @@ tags: [differentiable-manifolds, hub]
 - [[§17 Differentiable Structures#^def-17-3|Definition §17.3: Diffeomorphism of Open Subsets of Euclidean Space]]
 - [[§17 Differentiable Structures#^prop-17-3|Proposition §17.3: Compatibility Is Not an Equivalence Relation]]
 - [[§17 Differentiable Structures#^def-17-4|Definition §17.4: Smoothly Compatible Charts]]
-- [[§17 Differentiable Structures#^def-17-6|Definition §17.6: Atlas]]
-- [[§17 Differentiable Structures#^def-17-7|Definition §17.7: Compatible Atlases]]
-- [[§17 Differentiable Structures#^def-17-8|Definition §17.8: Maximal Atlas]]
+- [[§17 Differentiable Structures#^def-17-8|Definition §17.8: Atlas]]
+- [[§17 Differentiable Structures#^def-17-9|Definition §17.9: Compatible Atlases]]
+- [[§17 Differentiable Structures#^def-17-10|Definition §17.10: Maximal Atlas]]
 
 ## Its proof uses (other subjects)
 - [[Multivariable Chain Rule]] (Multivariable Analysis)
@@ -40,12 +40,12 @@ tags: [differentiable-manifolds, hub]
 - [[§37 Regular Submanifolds#^prop-37-12|Proposition §37.12: Regular Submanifolds of ℝⁿ⁺ᵏ: The Fourth Description]]
 - [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4: The Old and New Versions Agree]]
 - [[§41 Examples of Fibrations#^prop-41-1|Proposition §41.1: The Möbius Band Is a Fibration]]
-- [[§51 The Tangent Bundle#^lem-51-1|Lemma §51.1: Building a Manifold from Charts]]
-- [[§51 The Tangent Bundle#^cor-51-4|Corollary §51.4: The Tangent Bundle Is a Fibration]]
+- [[§51 The Tangent Bundle#^lem-51-2|Lemma §51.2: Building a Manifold from Charts]]
+- [[§51 The Tangent Bundle#^cor-51-5|Corollary §51.5: The Tangent Bundle Is a Fibration]]
 - [[§54 Critical Points and the Hessian#^ex-54-1|Example §54.1: The Hessian Matrix Depends on the Chart]]
 
 ## Connections
-- **Used for.** Writing down any atlas specifies a smooth structure ([[§17 Differentiable Structures#^def-17-9|Def. §17.9]]): the standard atlas of ℂPⁿ ([[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]]), graph charts on level sets ([[Regular Level Sets Are Smooth Manifolds]]), linear charts on a vector space ([[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]). Two atlases give the same structure exactly when they are compatible, which is how the three circle atlases are compared ([[§24 The Circle#^prop-24-1|§24.1]]).
+- **Used for.** Writing down any atlas specifies a smooth structure ([[§17 Differentiable Structures#^def-17-11|Def. §17.11]]): the standard atlas of ℂPⁿ ([[§18 Projective Spaces as Smooth Manifolds#^thm-18-2|§18.2]]), graph charts on level sets ([[Regular Level Sets Are Smooth Manifolds]]), linear charts on a vector space ([[§22 The Differential of a Map Between Vector Spaces#^prop-22-2|§22.2]]). Two atlases give the same structure exactly when they are compatible, which is how the three circle atlases are compared ([[§24 The Circle#^prop-24-1|§24.1]]).
 - **Why the proof needs the atlas.** Compatibility of charts is not transitive ([[§17 Differentiable Structures#^prop-17-3|§17.3]]), so the charts compatible with one given chart need not form an atlas. The proof passes through a chart of the given atlas at each point of an overlap ([[§17 Differentiable Structures#^pf-17-6|proof of §17.6]], [[§17 Differentiable Structures#^rem-17-7|§17, Remark]]).
 - **Different structures.** ℝ with the identity chart and ℝ with the chart ∛x have different maximal atlases, yet they are diffeomorphic ([[§19 Smooth Functions and Smooth Maps#^ex-19-1|Ex. §19.1]], [[§19 Smooth Functions and Smooth Maps#^cor-19-9|§19.9]]). Structures that are not even diffeomorphic exist, on S⁷ and on ℝ⁴ ([[§19 Smooth Functions and Smooth Maps#^rem-19-8|Distinct Structures versus Non-Diffeomorphic Manifolds]]).
 - **Coming later in the course.** Integration of differential forms and Stokes' theorem (452 states it for oriented compact regions: [[Generalized Stokes' Theorem]]) need an orientation, given by an atlas whose transition maps have positive Jacobian determinant; such an atlas likewise lies in a unique maximal one.

@@ -158,16 +158,16 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 >
 > It is countable; it remains to show it is complete, hence (Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]) an orthonormal basis.
 >
-> **Step 3: completeness.** Let $x \in H$ with $(x, e_j) = 0$ for all $j$; we show $x = 0$. Since $D$ is dense in $H$, there is a sequence $y_{n_k} \in D$ with $\lim_{k \to \infty} y_{n_k} = x$. By (5.4) and Step 2, each $y_{n_k}$ lies in $\operatorname{span}\{e_1, \ldots, e_{j_k}\}$ for some $j_k$, say $y_{n_k} = \sum_{j=1}^{j_k} a_j^{(k)} e_j$. Then
+> **Step 3: completeness.** Let $x \in H$ with $(x, e_j) = 0$ for all $j$; we show $x = 0$. Since $D$ is dense in $H$, there is a sequence $z_k \in D$ with $\lim_{k \to \infty} z_k = x$. By (5.4) and Step 2, each $z_k$ lies in $\operatorname{span}\{e_1, \ldots, e_{j_k}\}$ for some $j_k$, say $z_k = \sum_{j=1}^{j_k} a_j^{(k)} e_j$. Then
 >
 > $$
-> (x, y_{n_k}) = \sum_{j=1}^{j_k} \overline{a_j^{(k)}}\, (x, e_j) = 0 \qquad \text{for all } k,
+> (x, z_k) = \sum_{j=1}^{j_k} \overline{a_j^{(k)}}\, (x, e_j) = 0 \qquad \text{for all } k,
 > $$
 >
 > and by continuity of the inner product (Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]),
 >
 > $$
-> (x, x) = \lim_{k \to \infty} (x, y_{n_k}) = 0 .
+> (x, x) = \lim_{k \to \infty} (x, z_k) = 0 .
 > $$
 >
 > Hence $x = 0$, and $\{e_j\}$ is complete.
@@ -196,7 +196,7 @@ For the converse, the countable dense set has to be turned into an orthonormal s
 ^def-28-2
 
 > [!theorem] Lemma §28.4: Inner-Product-Preserving Maps are Isometric and One-to-One
-> Let $H_1$, $H_2$ be Hilbert spaces over the same field and $T : H_1 \to H_2$ a linear map with $(Tx, Ty)_2 = (x, y)_1$ for all $x, y \in H_1$. Then $\|Tx - Ty\|_2 = \|x - y\|_1$ for all $x, y \in H_1$, i.e. $T$ is an *isometry*, and $T$ is one-to-one.
+> Let $H_1$, $H_2$ be Hilbert spaces over the same field and $T : H_1 \to H_2$ a linear map with $(Tx, Ty)_2 = (x, y)_1$ for all $x, y \in H_1$. Then $\|Tx - Ty\|_2 = \|x - y\|_1$ for all $x, y \in H_1$, i.e. $T$ is an isometry (Definition [[§13 The Completion of a Normed Space#^def-13-1|§13.1]]), and $T$ is one-to-one.
 
 ^lem-28-4
 

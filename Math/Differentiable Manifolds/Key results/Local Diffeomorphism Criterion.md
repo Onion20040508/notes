@@ -27,8 +27,8 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§35 Local Diffeomorphisms#^cor-35-3|Corollary §35.3: Diffeomorphisms Are the Bijective Local Diffeomorphisms]]
 - [[§36 Submersions#^prop-36-1|Proposition §36.1: Dimension Constraints]]
-- [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|Theorem §48.4: The Double Cover SU(2) → SO(3)]]
-- [[§71 The Exponential Map#^prop-71-10|Proposition §71.10: Smoothness and the Differential at 0]]
+- [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|Theorem §48.5: The Double Cover SU(2) → SO(3)]]
+- [[§71 The Exponential Map#^prop-71-12|Proposition §71.12: Smoothness and the Differential at 0]]
 - [[§72 Lie Derivatives#^lem-72-5|Lemma §72.5: Canonical Form Near a Regular Point]]
 
 ## Connections

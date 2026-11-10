@@ -84,7 +84,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 >
 > so $w$ is in the image and $(G\circ F)'(p)$ is surjective. As $p \in M$ was arbitrary, $0$ is a regular value (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]), and surjectivity at a point of $M$ forces $N \ge \ell$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)).
 >
-> *Conclusion.* By Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] and Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], applied to $G \circ F$ on $\mathbb{R}^N = \mathbb{R}^{(N-\ell)+\ell}$, $M$ is a smooth manifold of dimension $N - \ell$, so (Definition [[§26 Transversality#^def-26-1|§26.1]]) $\operatorname{codim} M = N - (N - \ell) = \ell = \operatorname{codim} S$. By Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] applied to $M = (G\circ F)^{-1}(0)$, then the chain rule, then the definition of the kernel, then Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] for $S$,
+> *Conclusion.* By Theorem [[§7 The Regular Value Theorem#^thm-7-6|§7.6]] and Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], applied to $G \circ F$ on $\mathbb{R}^N = \mathbb{R}^{(N-\ell)+\ell}$, $M$ is a smooth manifold of dimension $N - \ell$, so (Definition [[§26 Transversality#^def-26-1|§26.1]]) $\operatorname{codim} M = N - (N - \ell) = \ell = \operatorname{codim} S$. By Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] applied to $M = (G\circ F)^{-1}(0)$, then the chain rule, then the definition of the kernel, then Theorem [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]] for $S$,
 >
 > $$
 > T^{\mathrm{geo}}_pM = \ker (G\circ F)'(p) = \ker\big(G'(q)F'(p)\big) = \{v \mid G'(q)\big(F'(p)v\big) = 0\} = \{v \mid F'(p)v \in \ker G'(q)\} = F'(p)^{-1}(T^{\mathrm{geo}}_qS).
@@ -92,7 +92,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^pf-26-1
 
-*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-5|§7.5]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Multivariable Chain Rule|452 §12.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
+*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-6|§7.6]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[Multivariable Chain Rule|452 §12.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!remark]- Connections
 > - On manifolds, for preimages of regular submanifolds: [[§39 Transversality and Lagrange Multipliers#^thm-39-1|Thm. §39.1]] (Assignment 5, Problem 2).
@@ -166,7 +166,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 ^rem-26-3
 
 > [!theorem] Corollary §26.4: The Regular Value Theorem as a Special Case
-> Let $c \in \mathbb{R}^k$ and $S = \{c\}$. Then $F \pitchfork \{c\}$ if and only if $c$ is a regular value of $F$, and in that case [[§26 Transversality#^thm-26-1|Theorem §26.1]] returns [[§7 The Regular Value Theorem#^thm-7-5|Theorem §7.5]] together with $T^{\mathrm{geo}}_pM = \ker F'(p)$.
+> Let $c \in \mathbb{R}^k$ and $S = \{c\}$. Then $F \pitchfork \{c\}$ if and only if $c$ is a regular value of $F$, and in that case [[§26 Transversality#^thm-26-1|Theorem §26.1]] returns [[§7 The Regular Value Theorem#^thm-7-6|Theorem §7.6]] together with $T^{\mathrm{geo}}_pM = \ker F'(p)$.
 
 ^cor-26-4
 
@@ -181,7 +181,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 >
 > i.e. $F'(p)$ is surjective. Transversality then reads $\operatorname{im} F'(p) = \mathbb{R}^k$ at every $p \in F^{-1}(c)$ — the definition of a regular value (Definitions [[§7 The Regular Value Theorem#^def-7-4|§7.4]] and [[§7 The Regular Value Theorem#^def-7-3|§7.3]]).
 >
-> *The conclusions.* With $\ell = k$, Theorem [[§26 Transversality#^thm-26-1|§26.1]] gives that $M = F^{-1}(c)$ is a smooth manifold of dimension $\dim M = N - k$ — the conclusion of Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] with $N = n + k$ — and
+> *The conclusions.* With $\ell = k$, Theorem [[§26 Transversality#^thm-26-1|§26.1]] gives that $M = F^{-1}(c)$ is a smooth manifold of dimension $\dim M = N - k$ — the conclusion of Theorem [[§7 The Regular Value Theorem#^thm-7-6|§7.6]] with $N = n + k$ — and
 >
 > $$
 > T^{\mathrm{geo}}_pM = F'(p)^{-1}\big(T^{\mathrm{geo}}_c\{c\}\big) = F'(p)^{-1}(0) = \ker F'(p) .
@@ -191,7 +191,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^pf-26-4
 
-*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^thm-26-1|§26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-5|§7.5]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]]
+*Uses:* [[§26 Transversality#^def-26-2|Def. §26.2]], [[§26 Transversality#^thm-26-1|§26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-6|§7.6]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]]
 
 > [!remark]- Connections
 > - The regular value theorem for maps between manifolds: [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], compared with this version in [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]].
@@ -245,7 +245,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 >
 > and the subspace $T_1 + T_2$ of $\mathbb{R}^k$ is all of $\mathbb{R}^k$ iff its dimension is $k$, which happens iff $\dim(T_1 \cap T_2) = k - \ell_1 - \ell_2$. The two conditions coincide.
 >
-> *The transverse intersection.* A point $q$ lies in $S_1 \cap S_2$ iff $G_1(q) = 0$ and $G_2(q) = 0$, iff $(G_1,G_2)(q) = 0$; so $S_1 \cap S_2 = (G_1,G_2)^{-1}(0)$. When the conditions hold throughout $S_1 \cap S_2$ (Definition [[§26 Transversality#^def-26-3|§26.3]]), the equivalence shows that $(G_1,G_2)'(q)$ is surjective at every point of this level set, i.e. the point $0$ is a regular value of $(G_1, G_2)$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]). Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] with Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]] then makes $S_1 \cap S_2$ a smooth manifold of dimension $k - (\ell_1 + \ell_2)$, so by Definition [[§26 Transversality#^def-26-1|§26.1]]
+> *The transverse intersection.* A point $q$ lies in $S_1 \cap S_2$ iff $G_1(q) = 0$ and $G_2(q) = 0$, iff $(G_1,G_2)(q) = 0$; so $S_1 \cap S_2 = (G_1,G_2)^{-1}(0)$. When the conditions hold throughout $S_1 \cap S_2$ (Definition [[§26 Transversality#^def-26-3|§26.3]]), the equivalence shows that $(G_1,G_2)'(q)$ is surjective at every point of this level set, i.e. the point $0$ is a regular value of $(G_1, G_2)$ (Definition [[§7 The Regular Value Theorem#^def-7-4|§7.4]]). Theorem [[§7 The Regular Value Theorem#^thm-7-6|§7.6]] with Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]] then makes $S_1 \cap S_2$ a smooth manifold of dimension $k - (\ell_1 + \ell_2)$, so by Definition [[§26 Transversality#^def-26-1|§26.1]]
 >
 > $$
 > \operatorname{codim}(S_1 \cap S_2) = k - \big(k - \ell_1 - \ell_2\big) = \ell_1 + \ell_2 = \operatorname{codim} S_1 + \operatorname{codim} S_2 ,
@@ -255,7 +255,7 @@ Top, the spaces; bottom, their linearizations at $p$ and $q = F(p)$. In each, th
 
 ^pf-26-5
 
-*Uses:* [[§26 Transversality#^def-26-3|Def. §26.3]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-5|§7.5]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-43|LADR 2.43]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]
+*Uses:* [[§26 Transversality#^def-26-3|Def. §26.3]], [[§26 Transversality#^def-26-1|Def. §26.1]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-6|§7.6]], [[Fundamental theorem of linear maps|LADR 3.21]], [[§6 Dimension#^ladr-2-43|LADR 2.43]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]
 
 > [!example] Example §26.1: The Sphere and the Plane Re-read
 > The figure in [[§7 The Regular Value Theorem#^rem-7-4|§7]] was a transversality picture. Let $S_1 = S^2$ and $S_2 = \{z = c\}$ in $\mathbb{R}^3$, so $T^{\mathrm{geo}}_qS_1 = q^\perp$ and $T^{\mathrm{geo}}_qS_2 = e_3^\perp$, the horizontal plane. Two planes through the origin in $\mathbb{R}^3$ sum to $\mathbb{R}^3$ iff they are distinct, so the intersection is transverse at $q$ iff $q^\perp \neq e_3^\perp$, i.e. iff $q \neq \pm e_3$ — iff the two normals $q$ and $e_3$ are independent, which is what the figure's caption said in the language of gradients.

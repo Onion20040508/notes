@@ -8,17 +8,17 @@ tags: [chapter, quantum-field-theory]
 # C3 Poincaré Symmetry and Particle States
 ← [[· C2b Two-Point Functions, Causality and Propagators]] · ↑ [[Quantum Field Theory]] · [[· C4 The Quantum Vector Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (58), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (25), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (41), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (15), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (3), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (9), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (6), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (8), [[· CA Mathematical Methods|CA Mathematical Methods]] (11), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (89)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (10), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (14), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (72), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (54), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (7), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (1), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (6), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (2), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (8), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (47)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (58), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (25), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (41), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (15), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (5), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (3), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (9), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (6), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (12), [[· CA Mathematical Methods|CA Mathematical Methods]] (13), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (89)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (10), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (14), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (4), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (72), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (54), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (7), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (1), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (6), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (2), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (8), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (47)
 
 ## Sections
-- [[§C3.1 Index Slots, Rotations and Spin in Field Theory]] — 
-- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields]] — 
-- [[§C3.3 How Fields Transform under the Lorentz Group]] — 
-- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra]] — 
-- [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation]] — 
-- [[§C3.6★ Particle States and the Little Group]] — 
-- [[§C3.7★ Massless Particles and Helicity]] — 
+- [[§C3.1 Index Slots, Rotations and Spin in Field Theory]] — PS 3.1; Yu 3.2, 3.3.1; 513 notes Ch. 7
+- [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields]] — PS 3.1; Yu 3.2, 4.1; 513 notes Ch. 1, 7
+- [[§C3.3 How Fields Transform under the Lorentz Group]] — PS 3.1; Yu 4.1, 4.2; 513 notes Ch. 7
+- [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra]] — PS 2.3, 3.1; Yu 3.1, 3.2; 513 notes Ch. 7
+- [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation]] — PS 2.3, 3.1; Yu 3.1, 3.2; 513 notes Ch. 7
+- [[§C3.6★ Particle States and the Little Group]] — Yu 3.3, 3.3.1; 513 notes Ch. 7
+- [[§C3.7★ Massless Particles and Helicity]] — Yu 3.3.2; 513 notes Ch. 7
 
 ## Principles
 - [[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^pr-c3-4-1|§C3.4.1]] Poincaré Invariance on the Hilbert Space

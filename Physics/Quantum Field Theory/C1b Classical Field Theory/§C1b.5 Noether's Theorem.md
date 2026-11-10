@@ -90,12 +90,12 @@ The first row is the variation of the action principle ([[§C1b.2 The Action Pri
 ^rem-c1b-5-2
 
 > [!theorem] Theorem §C1b.5.1: Generators of the Standard Transformations
-> For the transformations of this course (Def. §C1b.5.2):
+> For the transformations of this course ([[§C1b.5 Noether's Theorem#^def-c1b-5-2|Def. §C1b.5.2]]):
 >
 > | transformation | parameters | generator |
 > | --- | --- | --- |
 > | shift, $\phi' = \phi + \alpha$ | $\alpha$ | $\Delta\phi = 1$ |
-> | phase, $\phi' = e^{i\alpha}\phi$, $\phi^{*\prime} = e^{-i\alpha}\phi^*$ | $\alpha$ | $\Delta\phi = i\phi$, $\Delta\phi^* = -i\phi^*$ |
+> | phase, $\phi' = e^{i\alpha}\phi$, $\phi^{\ast\prime} = e^{-i\alpha}\phi^{\ast}$ | $\alpha$ | $\Delta\phi = i\phi$, $\Delta\phi^{\ast} = -i\phi^{\ast}$ |
 > | phases with charges $q_n$, $\phi'_n = e^{iq_n\alpha}\phi_n$ | $\alpha$ | $\Delta\phi_n = iq_n\phi_n$ |
 > | rotation of two real fields by the angle $\alpha$ | $\alpha$ | $\Delta\phi_1 = -\phi_2$, $\Delta\phi_2 = \phi_1$ |
 > | two independent shifts, $\phi'_k = \phi_k + \alpha^k$ | $\alpha^1$, $\alpha^2$ | $\Delta_k\phi_l = \delta_{kl}$ |
@@ -112,7 +112,7 @@ The first row is the variation of the action principle ([[§C1b.2 The Action Pri
 ^thm-c1b-5-1
 
 > [!derivation]- Derivation
-> In each case: write $\phi'$ at the old point $x$, expand to first order in the parameter, read off the coefficient (Def. §C1b.5.2).
+> In each case: write $\phi'$ at the old point $x$, expand to first order in the parameter, read off the coefficient ([[§C1b.5 Noether's Theorem#^def-c1b-5-3|Def. §C1b.5.3]]).
 >
 > **1. Shift.** $\phi'(x) = \phi(x) + \alpha$, so $\partial\phi'/\partial\alpha = 1$ at every $\alpha$: $\Delta\phi = 1$.
 >
@@ -352,13 +352,13 @@ The algorithm is [[P3 Noether's Procedure]]: six steps, the same for every symme
 ![[ph-qft-c1-11-1.svg]]
 *Noether's procedure as a flow; each arrow is labelled with what that step needs. Everything up to the current is algebra on the Lagrangian; the equations of motion are used only to conclude that the current is conserved (orange), and boundary conditions only to conclude that the charge is.*
 
-The answers for every symmetry of the course, side by side before any is derived, for $\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2$ or the complex $\mathcal L = \partial_\mu\phi^*\partial^\mu\phi - m^2\phi^*\phi$:
+The answers for every symmetry of the course, side by side before any is derived, for $\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2$ or the complex $\mathcal L = \partial_\mu\phi^{\ast}\partial^\mu\phi - m^2\phi^{\ast}\phi$:
 
 | operation | parameter | step 1: $\Delta\phi$ | steps 2–3: $\delta\mathcal L$ and $\mathcal J$ | steps 4, 6: current, charge | derived in |
 | --- | --- | --- | --- | --- | --- |
 | shift, $m = 0$ | $\alpha$ | $1$ | $\delta\mathcal L = 0$; $\mathcal J^\mu = 0$ | $j^\mu = \partial^\mu\phi$; $Q = \int d^3x\,\dot\phi$ | [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-1\|Example §C1b.6.1]] |
 | shift, $m \ne 0$ | $\alpha$ | $1$ | $\delta\mathcal L = -\alpha m^2\phi$: not a divergence | no symmetry; the would-be $j^\mu = \partial^\mu\phi$ has $\partial_\mu j^\mu = -m^2\phi$ on shell | [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-1\|Example §C1b.6.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-5\|Theorem §C1b.5.5]] |
-| phase (complex field) | $\alpha$ | $i\phi$, $-i\phi^*$ | $\delta\mathcal L = 0$; $\mathcal J^\mu = 0$ | $j^\mu = i(\phi\,\partial^\mu\phi^* - \phi^*\partial^\mu\phi)$; number charge | [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3\|Theorem §C1b.6.3]] |
+| phase (complex field) | $\alpha$ | $i\phi$, $-i\phi^{\ast}$ | $\delta\mathcal L = 0$; $\mathcal J^\mu = 0$ | $j^\mu = i(\phi\,\partial^\mu\phi^{\ast} - \phi^{\ast}\partial^\mu\phi)$; number charge | [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3\|Theorem §C1b.6.3]] |
 | phase, with the mass splitting $-\frac{\lambda}{2}(\phi^2 + \phi^{\ast 2})$ | $\alpha$ | $i\phi$, $-i\phi^{\ast}$ | $\delta\mathcal L = -i\alpha\lambda(\phi^2 - \phi^{\ast 2})$: not a divergence | no symmetry; the would-be U(1) current has $\partial_\mu j^\mu = -i\lambda(\phi^2 - \phi^{\ast 2})$ on shell | [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-3\|Example §C1b.6.3]] |
 | translation | $a^\nu$ (four) | $\partial_\nu\phi$ | $\delta\mathcal L = a^\nu\partial_\nu\mathcal L$; $\mathcal J^\mu{}_\nu = \delta^\mu{}_\nu\mathcal L$ | $T^\mu{}_\nu = \partial^\mu\phi\,\partial_\nu\phi - \delta^\mu{}_\nu\mathcal L$; $P^\mu = (H, \mathbf P)$ | [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-5\|Theorem §C1b.7.5]] |
 | Lorentz | $\omega_{\nu\rho}$ (six) | $x^\nu\partial^\rho\phi - x^\rho\partial^\nu\phi$ | $\delta\mathcal L = \frac12\omega_{\nu\rho}\partial_\mu\mathcal J^{\mu\nu\rho}$; $\mathcal J^{\mu\nu\rho} = (x^\nu g^{\mu\rho} - x^\rho g^{\mu\nu})\mathcal L$ | $\mathcal M^{\mu\nu\rho} = x^\nu T^{\mu\rho} - x^\rho T^{\mu\nu}$; $\mathbf J$, $\mathbf K$ | [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1\|Theorem §C1b.8.1]] |
@@ -444,7 +444,7 @@ The pattern: the current is always $\partial\mathcal L/\partial(\partial_\mu\phi
 ^rem-c1b-5-6
 
 > [!remark] Remark: Several fields, several parameters
-> The sum over $i$ is the whole rule for theories with several fields: one current per parameter, summed over every field the parameter moves. The number of currents is $\dim G$, the number of parameters, not the number of fields ([[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-2|Example §C1b.6.2]]). The spacetime currents $T^{\mu\nu}$ and $\mathcal M^{\mu\nu\rho}$ are accordingly sums over all fields present, and $T^{00} = \mathcal H$ holds with the summed Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-2|§C1b.4, Remark: Several fields, and a non-canonical normalization]]; [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]]). For a complex field, $\phi$ and $\phi^*$ are two of the $\phi_i$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]).
+> The sum over $i$ is the whole rule for theories with several fields: one current per parameter, summed over every field the parameter moves. The number of currents is $\dim G$, the number of parameters, not the number of fields ([[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-2|Example §C1b.6.2]]). The spacetime currents $T^{\mu\nu}$ and $\mathcal M^{\mu\nu\rho}$ are accordingly sums over all fields present, and $T^{00} = \mathcal H$ holds with the summed Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-2|§C1b.4, Remark: Several fields, and a non-canonical normalization]]; [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]]). For a complex field, $\phi$ and $\phi^{\ast}$ are two of the $\phi_i$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]).
 
 ^rem-c1b-5-7
 
@@ -521,7 +521,7 @@ The algebra of the proof does not need the symmetry until its last line. Run wit
 >
 > **What the derivation shows**
 > - Noether's theorem and its failure are one computation; only the input $\delta\mathcal L$ differs, and the equations of motion enter only at step 5.
-> - Cross-check: a divergence computed directly from the field equations must equal $X$; a mismatch is an error in $\delta\mathcal L$ or in the current ([[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-1|Example §C1b.6.1]], massive case; [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-3|Example §C1b.6.3]]; for a Dirac field, the chiral rotation, $\delta\mathcal L = -2i\alpha m\,\bar\psi\gamma^5\psi$ by both routes of Theorem §C1b.5.2 and $\partial_\mu j^\mu_5 = -2im\,\bar\psi\gamma^5\psi$ from the Dirac equation, Problem Set 6, Problem 5: [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-9-1|Example §C5a.9.1]]).
+> - Cross-check: a divergence computed directly from the field equations must equal $X$; a mismatch is an error in $\delta\mathcal L$ or in the current ([[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-1|Example §C1b.6.1]], massive case; [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-3|Example §C1b.6.3]]; for a Dirac field, the chiral rotation, $\delta\mathcal L = -2i\alpha m\,\bar\psi\gamma^5\psi$ by both routes of [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]] and $\partial_\mu j^\mu_5 = -2im\,\bar\psi\gamma^5\psi$ from the Dirac equation, Problem Set 6, Problem 5: [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^ex-c5a-9-1|Example §C5a.9.1]]).
 > - Assumptions: $\alpha$ constant (step 1); $\mathcal L$ with first derivatives only; for step 7, the fall-off of [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-1|Theorem §C1b.6.1]] and an integrable $X$.
 > - Used next: [[§C1b.5 Noether's Theorem#^rem-c1b-5-10|Remark: The three outcomes of the test and their currents]]; [[P3 Noether's Procedure#^p3-3|P3, steps 3 and 5]].
 
@@ -541,6 +541,12 @@ The algebra of the proof does not need the symmetry until its last line. Run wit
 > All three rows are [[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]], with $X = 0$ in (i) and (ii). Forgetting $\mathcal J$ in case (ii) manufactures a false case (iii): for translations $\sum_i\pi^\mu_i\partial_\nu\phi_i = T^\mu{}_\nu + \delta^\mu{}_\nu\mathcal L$ ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-2|Def. §C1b.7.2]]) has divergence $\partial_\nu\mathcal L \ne 0$ on shell, although energy and momentum are conserved. Conversely, a divergence computed directly from the field equations is checked against $\delta\mathcal L/\alpha - \partial_\mu\mathcal J^\mu$: the two must agree.
 
 ^rem-c1b-5-10
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — differentiation under the integral: $\partial_\mu$ passes under the parameter integral $\int_0^\alpha d\beta$ that builds a finite transformation from its generator, and $d/dt$ under $\int d^3x$ for the charge.
+> - [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] — operator-valued distribution: what the fields in the currents become after quantization, where a current is a product at one point and needs normal ordering; the classical identities above are pointwise.
 
 > [!remark]- Connections
 > - The charge of each current, the freedom of improvement terms, and the procedure run on the internal symmetries (shift, U(1) phase, rotation of two real fields, a symmetry-breaking mass splitting) are [[§C1b.6 Conserved Charges and Internal Symmetries|§C1b.6]] ([[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-1|Theorem §C1b.6.1]], [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-2|Theorem §C1b.6.2]], [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]], [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-3|Example §C1b.6.3]]).

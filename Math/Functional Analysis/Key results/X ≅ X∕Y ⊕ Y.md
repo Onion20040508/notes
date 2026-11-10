@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 2.6", "quotient and complement"]
+aliases: ["MATH 556 2.7", "quotient and complement"]
 tags: [functional-analysis, hub]
 ---
 ![[§2 Quotient Spaces and Complements#^thm-2-7]]
@@ -12,8 +12,9 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses
 - [[§1 Linear Spaces#^def-1-4|Definition §1.4: Direct Sum]]
-- [[§2 Quotient Spaces and Complements#^prop-2-2|Proposition §2.2: X/Y is a Linear Space]]
+- [[§2 Quotient Spaces and Complements#^lem-2-1|Lemma §2.1: Equivalence mod Y is an Equivalence Relation]]
 - [[§2 Quotient Spaces and Complements#^def-2-2|Definition §2.2: Equivalence Class]]
+- [[§2 Quotient Spaces and Complements#^prop-2-2|Proposition §2.2: X/Y is a Linear Space]]
 - [[§2 Quotient Spaces and Complements#^def-2-3|Definition §2.3: Quotient Space]]
 - [[§2 Quotient Spaces and Complements#^def-2-4|Definition §2.4: Complement]]
 - [[§2 Quotient Spaces and Complements#^lem-2-6|Lemma §2.6: Unique Decomposition]]

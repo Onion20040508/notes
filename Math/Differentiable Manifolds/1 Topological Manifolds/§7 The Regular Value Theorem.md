@@ -119,7 +119,7 @@ tags: [differentiable-manifolds, math591]
 > - The same notion defined again later: without coordinates, [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4|§22.4]]; for smooth maps of manifolds, [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]] and [[§36 Submersions#^def-36-4|Def. §36.4]].
 
 > [!remark] Remark: The Constraint $N \ge m$
-> Regular points can exist only when $N \ge m$, and the case $N = m$ is special; both facts are made precise in [[§7 The Regular Value Theorem#^prop-7-7|Proposition §7.7]], once the regular value theorem is available. Geometrically, one cannot cut an $N$-dimensional space down by more than $N$ independent constraints and have anything left — the dimension count $N - m$ would be negative. The boundary case $N = m$ belongs to the *inverse* function theorem rather than the implicit one. The situation of interest below is $N = n^2$, $m = 1$.
+> Regular points can exist only when $N \ge m$, and the case $N = m$ is special; both facts are made precise in [[§7 The Regular Value Theorem#^prop-7-8|Proposition §7.8]], once the regular value theorem is available. Geometrically, one cannot cut an $N$-dimensional space down by more than $N$ independent constraints and have anything left — the dimension count $N - m$ would be negative. The boundary case $N = m$ belongs to the *inverse* function theorem rather than the implicit one. The situation of interest below is $N = n^2$, $m = 1$.
 
 ^rem-7-3
 
@@ -132,7 +132,7 @@ tags: [differentiable-manifolds, math591]
 > - The circle as a level set in 452: [[Unit circle and unit sphere]], [[§15 The Implicit Function Theorem#^ex-15-1|452 Ex. §15.1]].
 
 > [!remark] Remark: Why the Notion Matters
-> The definition is tailored to the Implicit Function Theorem: at a regular point of $F : \mathbb{R}^N \to \mathbb{R}^m$, the $m$ independent gradients $\nabla F_a(p)$ span an $m$-dimensional space of “constraint directions,” and one can solve the $m$ equations $F = c$ for $m$ of the coordinates as functions of the remaining $N - m$, so $F^{-1}(c)$ is locally a graph over the complementary $N - m$ directions. That is where the dimension $N - m$ comes from. For $\mathrm{O}(n)$ the constraint is $gg^{\mathsf T} = I$, which is $m = \tfrac{n(n+1)}{2}$ scalar equations (the independent entries of a symmetric matrix), and the task is precisely to show these $m$ gradients are independent at every orthogonal $g$; this is done in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Example §23.1]]. The general statement—*if $c$ is a regular value of $F$, then $F^{-1}(c)$ is a topological (indeed smooth) manifold of dimension $N - m$*—is [[§7 The Regular Value Theorem#^thm-7-5|Theorem §7.5]] (PSet 1, Problem 6); the $m = 1$ case is carried out for $\det$ in Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]].
+> The definition is tailored to the Implicit Function Theorem: at a regular point of $F : \mathbb{R}^N \to \mathbb{R}^m$, the $m$ independent gradients $\nabla F_a(p)$ span an $m$-dimensional space of “constraint directions,” and one can solve the $m$ equations $F = c$ for $m$ of the coordinates as functions of the remaining $N - m$, so $F^{-1}(c)$ is locally a graph over the complementary $N - m$ directions. That is where the dimension $N - m$ comes from. For $\mathrm{O}(n)$ the constraint is $gg^{\mathsf T} = I$, which is $m = \tfrac{n(n+1)}{2}$ scalar equations (the independent entries of a symmetric matrix), and the task is precisely to show these $m$ gradients are independent at every orthogonal $g$; this is done in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Example §23.1]]. The general statement—*if $c$ is a regular value of $F$, then $F^{-1}(c)$ is a topological (indeed smooth) manifold of dimension $N - m$*—is [[§7 The Regular Value Theorem#^thm-7-6|Theorem §7.6]] (PSet 1, Problem 6); the $m = 1$ case is carried out for $\det$ in Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|§12.4]].
 
 ^rem-7-4
 
@@ -193,7 +193,7 @@ has rank $1$, and $F^{-1}(\vec 0)$ is the single point $(0,0,1)$ rather than the
 > - Deduced from the inverse function theorem: [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] in this course (452 proves only the two-variable case, [[Inverse Function Theorem (several variables)]]).
 
 > [!remark] Remark: Which Variables Are Solved For
-> The theorem does not say the level set is a graph over some canonical set of coordinates: it says that *if* the $k$ coordinates $y$ are ones for which the square block $(\partial\Phi^i/\partial y^j)$ is invertible, *then* those $y$ can be solved for in terms of the remaining $n$. A regular point always admits such a splitting, after permuting coordinates (Lemma [[§7 The Regular Value Theorem#^lem-7-3|§7.3]]). That permutation is the “WLOG” step in the proof of Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]].
+> The theorem does not say the level set is a graph over some canonical set of coordinates: it says that *if* the $k$ coordinates $y$ are ones for which the square block $(\partial\Phi^i/\partial y^j)$ is invertible, *then* those $y$ can be solved for in terms of the remaining $n$. A regular point always admits such a splitting, after permuting coordinates (Lemma [[§7 The Regular Value Theorem#^lem-7-3|§7.3]]). That permutation is the “WLOG” step in the proof of Corollary [[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|§12.4]].
 
 ^rem-7-5
 
@@ -238,7 +238,7 @@ $$
 
 where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free variables and $\partial\Phi/\partial y$ the $k \times k$ block of the theorem; each example checks this against the derivative of its explicit $F$.
 
-> [!example] Example §7.3: The Circle: One Free Variable and One Equation
+> [!example] Example §7.4: The Circle: One Free Variable and One Equation
 > *(Not from lecture; added on request.)* $n = k = 1$: free variable $x$, solved-for variable $y$.
 >
 > 1. *The equation.* $\Phi : \mathbb{R}^2 \to \mathbb{R}$, $\Phi(x, y) = x^2 + y^2$, $c = 1$; $\Phi^{-1}(1)$ is the unit circle.
@@ -248,9 +248,9 @@ where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free
 > 5. *Derivative.* Directly, $F'(x) = \dfrac{-x}{\sqrt{1 - x^2}}$. From the formula, $-(2y)^{-1}(2x) = -x/y = -x/\sqrt{1 - x^2}$ at $y = F(x)$: the same.
 > 6. *At $(1, 0)$* the block $(2y) = (0)$ is singular, but $\partial\Phi/\partial x = (2x) = (2)$ is not: the theorem applies with the roles of $x$ and $y$ exchanged, and near $(1, 0)$ the circle is $x = G(y) = \sqrt{1 - y^2}$, $y \in (-1, 1)$, $x \in (0, 2)$.
 
-^ex-7-3
+^ex-7-4
 
-> [!example] Example §7.4: The Sphere as a Graph over a Disk: Two Free Variables and One Equation
+> [!example] Example §7.5: The Sphere as a Graph over a Disk: Two Free Variables and One Equation
 > *(Not from lecture; added on request.)* $n = 2$, $k = 1$: free variables $(x, y)$, solved-for variable $z$.
 >
 > 1. *The equation.* $\Phi : \mathbb{R}^3 \to \mathbb{R}$, $\Phi(x, y, z) = x^2 + y^2 + z^2$, $c = 1$; $\Phi^{-1}(1) = S^2$.
@@ -260,9 +260,9 @@ where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free
 > 5. *Derivative* ($1 \times 2$). Directly, $DF_{(x,y)} = \begin{pmatrix} \dfrac{-x}{F} & \dfrac{-y}{F} \end{pmatrix}$. From the formula, $-(2z)^{-1}\begin{pmatrix} 2x & 2y \end{pmatrix} = \begin{pmatrix} -x/z & -y/z \end{pmatrix}$ at $z = F(x, y)$: the same.
 > 6. *On the equator* ($z = 0$, say at $(1, 0, 0)$) the block $(2z)$ is singular, but $\partial\Phi/\partial x = (2)$ is not, and there the sphere is a graph $x = \sqrt{1 - y^2 - z^2}$ over the disk in the $(y, z)$-plane.
 
-^ex-7-4
+^ex-7-5
 
-> [!example] Example §7.5: A Circle of Latitude as a Graph over an Interval: One Free Variable and Two Equations
+> [!example] Example §7.6: A Circle of Latitude as a Graph over an Interval: One Free Variable and Two Equations
 > *(Not from lecture; added on request.)* $n = 1$, $k = 2$: free variable $x$, solved-for variables $(y, z)$. Fix $h$ with $|h| < 1$ and put $r = \sqrt{1 - h^2} > 0$.
 >
 > 1. *The equations.* $\Phi : \mathbb{R}^3 \to \mathbb{R}^2$, $\Phi(x, y, z) = (x^2 + y^2 + z^2,\ z)$, $c = (1, h)$. $\Phi^{-1}(c)$ is the circle $x^2 + y^2 = r^2$ in the plane $z = h$, the sphere cut by the plane.
@@ -295,11 +295,11 @@ where $\partial\Phi/\partial x$ is the $k \times n$ block of $D\Phi$ in the free
 > the same at $y = \sqrt{r^2 - x^2}$. The second component is $0$: along the circle $z$ stays equal to $h$.
 > 6. *Other choices of variables.* The block in $(x, z)$ is $\begin{pmatrix} 2x & 2z \\ 0 & 1 \end{pmatrix}$, with determinant $2x$: at $(\pm r, 0, h)$, where the first choice fails, the circle is a graph $(x, z) = (\pm\sqrt{r^2 - y^2},\ h)$ over $y$. The block in $(x, y)$ is $\begin{pmatrix} 2x & 2y \\ 0 & 0 \end{pmatrix}$, singular everywhere: $z$ can never be the free variable, as it is constant on the circle.
 
-^ex-7-5
+^ex-7-6
 
 For $\mathrm{SL}(n,\mathbb{R})$ in [[§12 The Classical Groups Are Topological Manifolds|§12]] only the scalar case $k = 1$ is needed. Write $N = n^2$ and points of $\mathbb{R}^N$ as $x = (x', x_N)$ with $x' \in \mathbb{R}^{N-1}$.
 
-> [!theorem] Corollary §7.4: Implicit Function Theorem — Scalar Case
+> [!theorem] Corollary §7.5: Implicit Function Theorem — Scalar Case
 > Let $F : \mathbb{R}^N \to \mathbb{R}$ be smooth, let $a = (a', a_N)$ with $F(a) = c$, and suppose $\dfrac{\partial F}{\partial x_N}(a) \neq 0$. Then there exist an open set $W' \subseteq \mathbb{R}^{N-1}$ containing $a'$, an open interval $J \subseteq \mathbb{R}$ containing $a_N$, and a smooth function $h : W' \to J$ with $h(a') = a_N$ such that for all $(x', x_N) \in W' \times J$,
 >
 > $$
@@ -308,12 +308,12 @@ For $\mathrm{SL}(n,\mathbb{R})$ in [[§12 The Classical Groups Are Topological M
 >
 > *Lee: Theorem C.40 with $k = 1$*
 
-^cor-7-4
+^cor-7-5
 
 > [!proof]+ Proof
 > [[§7 The Regular Value Theorem#^thm-7-2|Theorem §7.2]] with $n = N - 1$, $k = 1$, $\Phi = F$: the $1 \times 1$ matrix $(\partial F/\partial x_N(a))$ is nonsingular precisely when $\partial F/\partial x_N(a) \neq 0$. Let $h_0 : V_0 \to W_0$ be the function that the theorem calls $F$; then $h_0(a') = a_N$, because $(a', a_N)$ lies in the level set and in $V_0 \times W_0$. As $W_0$ is a neighborhood of $a_N$ in $\mathbb{R}$, it contains an open interval $J$ containing $a_N$. Put $W' = h_0^{-1}(J)$, which is open in $V_0$, hence in $\mathbb{R}^{N-1}$, by continuity of $h_0$, and contains $a'$; and put $h = h_0|_{W'} : W' \to J$. Since $W' \times J \subseteq V_0 \times W_0$, the equivalence of the theorem holds on $W' \times J$, with $h$ in place of $h_0$.
 
-^pf-7-4
+^pf-7-5
 
 *Uses:* [[§7 The Regular Value Theorem#^thm-7-2|§7.2]]
 
@@ -322,12 +322,12 @@ For $\mathrm{SL}(n,\mathbb{R})$ in [[§12 The Classical Groups Are Topological M
 
 ## The Regular Value Theorem
 
-> [!theorem] Theorem §7.5: Regular Value Theorem
+> [!theorem] Theorem §7.6: Regular Value Theorem
 > Let $F : \mathbb{R}^{n+k} \to \mathbb{R}^k$ be smooth and suppose $\vec 0 \in \mathbb{R}^k$ is a regular value of $F$, i.e. the Jacobian $F'(p) = DF_p$ ([[§7 The Regular Value Theorem#^def-7-1|Definition §7.1]]) has rank $k$ at every $p \in X := F^{-1}(\vec 0)$. Then $X$, with the subspace topology, is a topological manifold of dimension $n$.
 >
 > *Lee: Example 1.32 and Corollary 5.14*
 
-^thm-7-5
+^thm-7-6
 
 > [!proof]+ Proof (PSet 1, Problem 6)
 > *Hausdorff and second countable.* $X$ is a subspace of $\mathbb{R}^{n+k}$, so both properties are inherited ([[§3 Subspaces and Products#^thm-3-5|Theorem §3.5]]).
@@ -367,7 +367,7 @@ For $\mathrm{SL}(n,\mathbb{R})$ in [[§12 The Classical Groups Are Topological M
 >
 > are mutually inverse; $\varphi$ is continuous as a restriction of the projection, and $\psi$ is continuous because its two components $\mathrm{id}$ and $G$ are ([[§3 Subspaces and Products#^thm-3-10|Theorem §3.10]] and [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]]). So $\varphi$ is a homeomorphism onto the open set $V_0 \subseteq \mathbb{R}^n$, and [[§2 Topological Manifolds#^prop-2-3|Proposition §2.3]] gives local Euclideanness of dimension $n$ at $p$.
 
-^pf-7-5
+^pf-7-6
 
 *Uses:* [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]], [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], [[§3 Subspaces and Products#^thm-3-10|§3.10]], [[§3 Subspaces and Products#^prop-3-3|§3.3]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[Multivariable Chain Rule|452 §12.2 (chain rule)]], [[§9 Matrices#^ladr-3-57|LADR 3.57]]
 
@@ -375,17 +375,17 @@ For $\mathrm{SL}(n,\mathbb{R})$ in [[§12 The Classical Groups Are Topological M
 > - The smooth structure on $X$: [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]]; for level sets of maps between manifolds: [[§30 The Differential in Coordinates#^cor-30-10|§30.10]] and [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]].
 > - Recovered as a special case of transversality: [[§26 Transversality#^cor-26-4|§26.4]].
 
-> [!theorem] Corollary §7.6: Open Domains and Arbitrary Values
+> [!theorem] Corollary §7.7: Open Domains and Arbitrary Values
 > Let $W \subseteq \mathbb{R}^{n+k}$ be open, $F : W \to \mathbb{R}^k$ smooth, and $c \in \mathbb{R}^k$ a regular value of $F$ — [[§7 The Regular Value Theorem#^def-7-4|Definition §7.4]], applied to $F$ on $W$: the Jacobian $F'(p)$ has rank $k$ at every $p \in F^{-1}(c)$. Then $F^{-1}(c)$, with the subspace topology, is a topological manifold of dimension $n$.
 
-^cor-7-6
+^cor-7-7
 
 > [!proof]+ Proof
-> The proof of [[§7 The Regular Value Theorem#^thm-7-5|Theorem §7.5]] is local, and uses the domain and the value only through the implicit function theorem, which is stated for an arbitrary open set and value ([[§7 The Regular Value Theorem#^thm-7-2|Theorem §7.2]]). Repeat it with $W$ in place of $\mathbb{R}^{n+k}$ and $c$ in place of $\vec 0$: the permutation $\rho$ of Step 1 carries $W$ to the open set $\rho(W)$; Step 2 applies [[§7 The Regular Value Theorem#^thm-7-2|Theorem §7.2]] on $U = \rho(W)$ at the value $c$; Step 3 is unchanged. Hausdorffness and second countability are inherited from $\mathbb{R}^{n+k}$ as before.
+> The proof of [[§7 The Regular Value Theorem#^thm-7-6|Theorem §7.6]] is local, and uses the domain and the value only through the implicit function theorem, which is stated for an arbitrary open set and value ([[§7 The Regular Value Theorem#^thm-7-2|Theorem §7.2]]). Repeat it with $W$ in place of $\mathbb{R}^{n+k}$ and $c$ in place of $\vec 0$: the permutation $\rho$ of Step 1 carries $W$ to the open set $\rho(W)$; Step 2 applies [[§7 The Regular Value Theorem#^thm-7-2|Theorem §7.2]] on $U = \rho(W)$ at the value $c$; Step 3 is unchanged. Hausdorffness and second countability are inherited from $\mathbb{R}^{n+k}$ as before.
 
-^pf-7-6
+^pf-7-7
 
-*Uses:* [[§7 The Regular Value Theorem#^thm-7-5|§7.5]], [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]]
+*Uses:* [[§7 The Regular Value Theorem#^thm-7-6|§7.6]], [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§3 Subspaces and Products#^thm-3-5|§3.5]]
 
 This is the form needed on manifolds, where a chart has an open subset of Euclidean space as its image, not the whole space. The general version, for maps between manifolds and with the smooth structure and the tangent space included, is [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|Theorem §38.2]] (Lecture 12).
 
@@ -405,21 +405,21 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 
 ^rem-7-6
 
-> [!theorem] Proposition §7.7: Regular Points When $N \le m$
+> [!theorem] Proposition §7.8: Regular Points When $N \le m$
 > Let $W \subseteq \mathbb{R}^N$ be open and $F : W \to \mathbb{R}^m$ smooth.
 > 1. $\operatorname{rank} DF_p \le \min(m, N)$ at every $p$. So if $N < m$, every point of $W$ is critical, and $c$ is a regular value if and only if $F^{-1}(c) = \emptyset$.
 > 2. If $N = m$, then $p$ is a regular point if and only if $\det DF_p \ne 0$, and every regular level set $F^{-1}(c)$ is discrete: each of its points is isolated.
 
-^prop-7-7
+^prop-7-8
 
 > [!proof]+ Proof
-> (1) An $m \times N$ matrix has at most $\min(m,N)$ independent rows. If $N < m$, the rank is at most $N < m$, so $DF_p$ is never surjective and no point is regular; the condition defining a regular value then holds exactly when there is nothing to check. (2) A square matrix has maximal rank iff it is invertible. If $c$ is a regular value, [[§7 The Regular Value Theorem#^cor-7-6|Corollary §7.6]] applies with $n = 0$ and $k = m$, so $F^{-1}(c)$ is a manifold of dimension $0$, hence discrete by [[§2 Topological Manifolds#^prop-2-5|Proposition §2.5]].
+> (1) An $m \times N$ matrix has at most $\min(m,N)$ independent rows. If $N < m$, the rank is at most $N < m$, so $DF_p$ is never surjective and no point is regular; the condition defining a regular value then holds exactly when there is nothing to check. (2) A square matrix has maximal rank iff it is invertible. If $c$ is a regular value, [[§7 The Regular Value Theorem#^cor-7-7|Corollary §7.7]] applies with $n = 0$ and $k = m$, so $F^{-1}(c)$ is a manifold of dimension $0$, hence discrete by [[§2 Topological Manifolds#^prop-2-5|Proposition §2.5]].
 
-^pf-7-7
+^pf-7-8
 
-*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^cor-7-6|§7.6]], [[§2 Topological Manifolds#^prop-2-5|§2.5]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
+*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^cor-7-7|§7.7]], [[§2 Topological Manifolds#^prop-2-5|§2.5]], [[§9 Matrices#^ladr-3-57|LADR 3.57]], [[Injectivity is equivalent to surjectivity (if dim V = dim W ＜ ∞)|LADR 3.65]], [[Invertible ⟺ nonzero determinant|LADR 9.50]]
 
-> [!example] Example §7.6: A Level Set in $\mathbb{R}^4$
+> [!example] Example §7.7: A Level Set in $\mathbb{R}^4$
 > *(Qualifying Review, August 2013; Assignment 2, Problem 3.)* Define
 >
 > $$
@@ -432,7 +432,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 > \ker F'(x_0) = \operatorname{span}\{(1,0,0,-1),\ (0,1,1,0)\}.
 > $$
 
-^ex-7-6
+^ex-7-7
 
 > [!proof]+ Working out the example
 > *Step 1: the Jacobian.* Writing $a = 2x$, $b = 2y$, $c = 2 - 2u$, $d = 2v$,
@@ -446,7 +446,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 >
 > *Step 3: the bad point misses the level set.* $F(p_0) = (0 - 0 - 1 + 0 + 2,\ 0) = (1,0) \neq (-1,0)$, so $p_0 \notin M$ and $F'(p)$ has rank $2$ at every $p \in M$: $(-1,0)$ is a regular value.
 >
-> *Step 4: the manifold.* By [[§7 The Regular Value Theorem#^cor-7-6|Corollary §7.6]] (with $W = \mathbb{R}^4$ and $c = (-1,0)$), $M$ is a topological manifold of dimension $4 - 2 = 2$, smooth by [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2]].
+> *Step 4: the manifold.* By [[§7 The Regular Value Theorem#^cor-7-7|Corollary §7.7]] (with $W = \mathbb{R}^4$ and $c = (-1,0)$), $M$ is a topological manifold of dimension $4 - 2 = 2$, smooth by [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2]].
 >
 > *Step 5: the kernel at $x_0$.* First $F(0,1,0,0) = (-1,0)$, so $x_0 \in M$. At $x_0$,
 >
@@ -458,9 +458,9 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 >
 > which vanishes iff $u = y$ and $v = -x$. So $\ker F'(x_0) = \{(x, y, y, -x)\}$, spanned by the two displayed vectors, of dimension $2 = \dim M$ as it must be. By [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]] this kernel is the geometric tangent space $T^{\mathrm{geo}}_{x_0}M$.
 
-^pf-ex-7-6
+^pf-ex-7-7
 
-*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^cor-7-6|§7.6]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]
+*Uses:* [[§7 The Regular Value Theorem#^def-7-1|Def. §7.1]], [[§7 The Regular Value Theorem#^def-7-2|Def. §7.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^cor-7-7|§7.7]], [[§20 Manifolds in Euclidean Space#^prop-20-2|§20.2]], [[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]
 
 > [!remark]- Connections
 > - The notion of submanifold the problem asks about: [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]; regular level sets are submanifolds by [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]].
@@ -474,7 +474,7 @@ The scalar case $N = 2$, $m = 1$, where every step of the proof is visible at on
 
 ## Holomorphic Level Sets
 
-Step 2 of [[§7 The Regular Value Theorem#^ex-7-6|Example §7.6]] found something it did not look for: the rank of $F'(p)$ is either $2$ or $0$, and never $1$. That is not a coincidence of this particular $F$. With $z = x + iy$ and $w = u + iv$,
+Step 2 of [[§7 The Regular Value Theorem#^ex-7-7|Example §7.7]] found something it did not look for: the rank of $F'(p)$ is either $2$ or $0$, and never $1$. That is not a coincidence of this particular $F$. With $z = x + iy$ and $w = u + iv$,
 
 $$
 F = (\operatorname{Re} f,\ \operatorname{Im} f), \qquad f(z,w) = z^2 - w^2 + 2w,
@@ -488,7 +488,7 @@ as expanding $f$ shows; so $F$ is a complex polynomial in disguise, and its rank
 ![[m591-4-4.svg]]
 *Its derivative at a point: the complex gradient $f'(p)$ and the real Jacobian $F'(p)$.*
 
-Left, the map; right, its derivative at a point. The vertical arrows are the identifications of [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9]]. On the right, the top arrow is the complex gradient $(2z,\ 2-2w)$, a $1 \times 2$ complex matrix, and the bottom arrow is the real $2 \times 4$ Jacobian of [[§7 The Regular Value Theorem#^ex-7-6|Example §7.6]]. Everything that follows is about what the top row forces on the bottom one.
+Left, the map; right, its derivative at a point. The vertical arrows are the identifications of [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9]]. On the right, the top arrow is the complex gradient $(2z,\ 2-2w)$, a $1 \times 2$ complex matrix, and the bottom arrow is the real $2 \times 4$ Jacobian of [[§7 The Regular Value Theorem#^ex-7-7|Example §7.7]]. Everything that follows is about what the top row forces on the bottom one.
 
 > [!definition] Definition §7.5: Holomorphic Map
 > Let $W \subseteq \mathbb{C}^N$ be open. A map $F : W \to \mathbb{C}^m$ is **holomorphic** if it is $C^1$ as a map between open subsets of $\mathbb{R}^{2N}$ and $\mathbb{R}^{2m}$ and its real derivative $DF_p : \mathbb{C}^N \to \mathbb{C}^m$ is $\mathbb{C}$-linear at every $p \in W$. The $\mathbb{C}$-linear map $DF_p$ is then written $F'(p)$, the **complex Jacobian**, an $m \times N$ complex matrix of partial derivatives $\partial F_a / \partial z_b$.
@@ -505,11 +505,11 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 ^def-7-5
 
 > [!remark] Remark
-> $\mathbb{C}$-linearity of $DF_p$ is the Cauchy–Riemann condition. For $N = m = 1$, writing $F = u + iv$ in the variable $z = x + iy$, the real derivative is $DF_p = \begin{pmatrix} u_x & u_y \\ v_x & v_y \end{pmatrix}$, and by Lemma [[§7 The Regular Value Theorem#^lem-7-8|§7.8]] below it is $\mathbb{C}$-linear iff $u_x = v_y$ and $u_y = -v_x$. Lemma [[§7 The Regular Value Theorem#^lem-7-9|§7.9]] and Example [[§7 The Regular Value Theorem#^ex-7-7|§7.7]] give the basic examples on either side.
+> $\mathbb{C}$-linearity of $DF_p$ is the Cauchy–Riemann condition. For $N = m = 1$, writing $F = u + iv$ in the variable $z = x + iy$, the real derivative is $DF_p = \begin{pmatrix} u_x & u_y \\ v_x & v_y \end{pmatrix}$, and by Lemma [[§7 The Regular Value Theorem#^lem-7-9|§7.9]] below it is $\mathbb{C}$-linear iff $u_x = v_y$ and $u_y = -v_x$. Lemma [[§7 The Regular Value Theorem#^lem-7-10|§7.10]] and Example [[§7 The Regular Value Theorem#^ex-7-8|§7.8]] give the basic examples on either side.
 
 ^rem-7-8
 
-> [!theorem] Lemma §7.8: $\mathbb{C}$-Linear Maps of $\mathbb{C}$ as Real Matrices
+> [!theorem] Lemma §7.9: $\mathbb{C}$-Linear Maps of $\mathbb{C}$ as Real Matrices
 > Identify $\mathbb{C} \cong \mathbb{R}^2$ by $h = h_1 + i h_2 \mapsto (h_1, h_2)$.
 >
 > 1. For $\alpha = a + ib$, multiplication $h \mapsto \alpha h$ is, as a real $2 \times 2$ matrix, $\begin{pmatrix} a & -b \\ b & a \end{pmatrix}$.
@@ -518,7 +518,7 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 >   - (b) $T(ih) = i\,T(h)$ for all $h$, i.e. $M$ commutes with the matrix $J = \begin{pmatrix} 0 & -1 \\ 1 & 0 \end{pmatrix}$ of multiplication by $i$;
 >   - (c) $M = \begin{pmatrix} a & -b \\ b & a \end{pmatrix}$ for some real $a, b$, i.e. $T$ is multiplication by $a + ib$.
 
-^lem-7-8
+^lem-7-9
 
 > [!proof]+ Proof
 > (1) $\alpha h = (a + ib)(h_1 + i h_2) = (a h_1 - b h_2) + i(b h_1 + a h_2)$; the coefficients of $h_1, h_2$ in the two components are the rows $(a, -b)$ and $(b, a)$.
@@ -531,16 +531,16 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 >
 > which are equal iff $q = -r$ and $s = p$, i.e. $M = \begin{pmatrix} p & -r \\ r & p \end{pmatrix}$; by (1) this is multiplication by $p + ir$.
 
-^pf-7-8
+^pf-7-9
 
-> [!theorem] Lemma §7.9: Complex Polynomials Are Holomorphic
+> [!theorem] Lemma §7.10: Complex Polynomials Are Holomorphic
 > Let $W \subseteq \mathbb{C}^N$ be open.
 >
 > 1. Constant maps $W \to \mathbb{C}$ and the coordinate functions $z_j : W \to \mathbb{C}$ are holomorphic.
 > 2. Sums and products of holomorphic functions $W \to \mathbb{C}$ are holomorphic.
 > 3. Hence every polynomial in $z_1, \ldots, z_N$ with complex coefficients (and no $\bar z_j$) is holomorphic on $W$, and so is every map $W \to \mathbb{C}^m$ whose components are such polynomials.
 
-^lem-7-9
+^lem-7-10
 
 > [!proof]+ Proof
 > (1) A constant map is smooth with derivative $0$, which is $\mathbb{C}$-linear. The coordinate function $z_j$ is $\mathbb{C}$-linear, so it is smooth and its derivative at every point is $z_j$ itself.
@@ -555,55 +555,55 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 >
 > (3) A polynomial is a finite sum of products of constants and coordinate functions, so it is holomorphic by (1) and (2) and induction on the number of operations. For $F = (F_1, \ldots, F_m) : W \to \mathbb{C}^m$, $DF_p$ is $\mathbb{C}$-linear iff each component $D(F_a)_p$ is, since multiplication by $i$ on $\mathbb{C}^m$ acts componentwise.
 
-^pf-7-9
+^pf-7-10
 
-> [!example] Example §7.7: Complex Conjugation Is Not Holomorphic
-> The map $F : \mathbb{C} \to \mathbb{C}$, $F(z) = \bar z$, is smooth but not holomorphic. In real coordinates $F(x, y) = (x, -y)$ is linear, so its derivative at every point is the same linear map, with matrix $\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$. This is not of the form $\begin{pmatrix} a & -b \\ b & a \end{pmatrix}$ (that would need $a = 1$ and $a = -1$), so by Lemma [[§7 The Regular Value Theorem#^lem-7-8|§7.8]] it is not $\mathbb{C}$-linear: indeed $DF_p(i) = \bar i = -i$, while $i\, DF_p(1) = i$. So maps involving complex conjugation are in general not holomorphic.
+> [!example] Example §7.8: Complex Conjugation Is Not Holomorphic
+> The map $F : \mathbb{C} \to \mathbb{C}$, $F(z) = \bar z$, is smooth but not holomorphic. In real coordinates $F(x, y) = (x, -y)$ is linear, so its derivative at every point is the same linear map, with matrix $\begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$. This is not of the form $\begin{pmatrix} a & -b \\ b & a \end{pmatrix}$ (that would need $a = 1$ and $a = -1$), so by Lemma [[§7 The Regular Value Theorem#^lem-7-9|§7.9]] it is not $\mathbb{C}$-linear: indeed $DF_p(i) = \bar i = -i$, while $i\, DF_p(1) = i$. So maps involving complex conjugation are in general not holomorphic.
 
-^ex-7-7
+^ex-7-8
 
-> [!theorem] Lemma §7.10: Real Rank of a Complex-Linear Map
+> [!theorem] Lemma §7.11: Real Rank of a Complex-Linear Map
 > Let $A : \mathbb{C}^N \to \mathbb{C}^m$ be $\mathbb{C}$-linear of complex rank $r$. Regarded as an $\mathbb{R}$-linear map $\mathbb{R}^{2N} \to \mathbb{R}^{2m}$, it has real rank $2r$. In particular the real rank of a $\mathbb{C}$-linear map is always even.
 
-^lem-7-10
+^lem-7-11
 
 > [!proof]+ Proof
 > The image of $A$ is a complex subspace $V$ of complex dimension $r$; it suffices to show $\dim_{\mathbb{R}} V = 2r$. Let $v_1, \ldots, v_r$ be a complex basis of $V$. Then $v_1, iv_1, \ldots, v_r, iv_r$ span $V$ over $\mathbb{R}$, since $\sum_j c_j v_j = \sum_j \big(\operatorname{Re} c_j\, v_j + \operatorname{Im} c_j\,(i v_j)\big)$; and they are $\mathbb{R}$-independent, since $\sum_j (a_j v_j + b_j\, i v_j) = 0$ with $a_j, b_j$ real says $\sum_j (a_j + i b_j) v_j = 0$, forcing every $a_j + i b_j = 0$. So they form a real basis of $2r$ vectors.
 
-^pf-7-10
+^pf-7-11
 
 *Uses:* [[§8 Null Spaces and Ranges#^ladr-3-18|LADR 3.18]], [[§5 Bases#^ladr-2-26|LADR 2.26]], [[§9 Matrices#^ladr-3-58|LADR 3.58]]
 
-> [!theorem] Corollary §7.11: Holomorphic Regular Value Theorem
+> [!theorem] Corollary §7.12: Holomorphic Regular Value Theorem
 > Let $W \subseteq \mathbb{C}^{n+k}$ be open, $F : W \to \mathbb{C}^k$ holomorphic, and $c \in \mathbb{C}^k$ such that the complex Jacobian $F'(p)$ has complex rank $k$ at every $p \in F^{-1}(c)$. Then $F^{-1}(c)$ is a manifold of *real* dimension $2n$, smooth by [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2]]. Moreover, for any holomorphic $F$ the real rank of $DF_p$ is even at every point; for $k = 1$ it is $0$ or $2$. And for $p \in F^{-1}(c)$ the kernel of $F'(p)$ is a complex subspace of $\mathbb{C}^{n+k}$; by [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3]] it is the geometric tangent space $T^{\mathrm{geo}}_p F^{-1}(c)$.
 >
 > *Lee: no counterpart; from Assignment 2*
 
-^cor-7-11
+^cor-7-12
 
 > [!proof]+ Proof
-> By [[§7 The Regular Value Theorem#^lem-7-10|Lemma §7.10]], complex rank $k$ means real rank $2k$, which is the maximal rank for a real map $\mathbb{R}^{2n+2k} \to \mathbb{R}^{2k}$. So $c$ is a regular value of $F$ regarded as a real map. That real map is smooth: a holomorphic map is $C^\infty$, a standard fact of complex analysis that is not proved in these notes; for polynomial maps, the only case used here, smoothness is immediate. So [[§7 The Regular Value Theorem#^cor-7-6|Corollary §7.6]] applies, with $W$ regarded as an open subset of $\mathbb{R}^{2n+2k}$, and gives a manifold of dimension $(2n+2k) - 2k = 2n$. Evenness of the rank is the lemma again. The kernel of a $\mathbb{C}$-linear map is closed under multiplication by $i$, hence a complex subspace.
+> By [[§7 The Regular Value Theorem#^lem-7-11|Lemma §7.11]], complex rank $k$ means real rank $2k$, which is the maximal rank for a real map $\mathbb{R}^{2n+2k} \to \mathbb{R}^{2k}$. So $c$ is a regular value of $F$ regarded as a real map. That real map is smooth: a holomorphic map is $C^\infty$, a standard fact of complex analysis that is not proved in these notes; for polynomial maps, the only case used here, smoothness is immediate. So [[§7 The Regular Value Theorem#^cor-7-7|Corollary §7.7]] applies, with $W$ regarded as an open subset of $\mathbb{R}^{2n+2k}$, and gives a manifold of dimension $(2n+2k) - 2k = 2n$. Evenness of the rank is the lemma again. The kernel of a $\mathbb{C}$-linear map is closed under multiplication by $i$, hence a complex subspace.
 
-^pf-7-11
+^pf-7-12
 
-*Uses:* [[§7 The Regular Value Theorem#^lem-7-10|§7.10]], [[§7 The Regular Value Theorem#^def-7-5|Def. §7.5]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^cor-7-6|§7.6]], [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]]
+*Uses:* [[§7 The Regular Value Theorem#^lem-7-11|§7.11]], [[§7 The Regular Value Theorem#^def-7-5|Def. §7.5]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^cor-7-7|§7.7]], [[§8 Null Spaces and Ranges#^ladr-3-13|LADR 3.13]]
 
-> [!example] Example §7.8: The Level Set in $\mathbb{R}^4$ Re-read Holomorphically
-> Let $f(z,w) = z^2 - w^2 + 2w$ on $\mathbb{C}^2$, so that $F = (\operatorname{Re} f, \operatorname{Im} f)$ is the map of Example [[§7 The Regular Value Theorem#^ex-7-6|§7.6]], with $z = x + iy$, $w = u + iv$. Then $f$ is holomorphic (Lemma [[§7 The Regular Value Theorem#^lem-7-9|§7.9]]), and the rank and kernel computations of that example are instances of Lemma [[§7 The Regular Value Theorem#^lem-7-10|§7.10]] and Corollary [[§7 The Regular Value Theorem#^cor-7-11|§7.11]].
+> [!example] Example §7.9: The Level Set in $\mathbb{R}^4$ Re-read Holomorphically
+> Let $f(z,w) = z^2 - w^2 + 2w$ on $\mathbb{C}^2$, so that $F = (\operatorname{Re} f, \operatorname{Im} f)$ is the map of Example [[§7 The Regular Value Theorem#^ex-7-7|§7.7]], with $z = x + iy$, $w = u + iv$. Then $f$ is holomorphic (Lemma [[§7 The Regular Value Theorem#^lem-7-10|§7.10]]), and the rank and kernel computations of that example are instances of Lemma [[§7 The Regular Value Theorem#^lem-7-11|§7.11]] and Corollary [[§7 The Regular Value Theorem#^cor-7-12|§7.12]].
 >
-> 1. *The Jacobian.* The complex Jacobian of $f$ is the row $(\partial f/\partial z,\ \partial f/\partial w) = (2z,\ 2 - 2w)$. In the notation of Example [[§7 The Regular Value Theorem#^ex-7-6|§7.6]], $2z = a + ib$ and $2 - 2w = c - id$, and the $\mathbb{C}$-linear functional $(h, k) \mapsto (a+ib)h + (c-id)k$, with $h = h_1 + i h_2$, $k = k_1 + i k_2$, has real and imaginary parts
+> 1. *The Jacobian.* The complex Jacobian of $f$ is the row $(\partial f/\partial z,\ \partial f/\partial w) = (2z,\ 2 - 2w)$. In the notation of Example [[§7 The Regular Value Theorem#^ex-7-7|§7.7]], $2z = a + ib$ and $2 - 2w = c - id$, and the $\mathbb{C}$-linear functional $(h, k) \mapsto (a+ib)h + (c-id)k$, with $h = h_1 + i h_2$, $k = k_1 + i k_2$, has real and imaginary parts
 >
 > $$
 > \operatorname{Re}:\ (a,\ -b,\ c,\ d), \qquad \operatorname{Im}:\ (b,\ a,\ -d,\ c)
 > $$
 >
 > (expand $(a + ib)(h_1 + ih_2) + (c - id)(k_1 + ik_2)$ and collect the coefficients of $h_1, h_2, k_1, k_2$) — exactly the two rows computed in Step 1 of that example.
-> 2. *The rank.* A $1 \times 2$ complex matrix has complex rank $1$ if it is nonzero and $0$ if it is zero; by Lemma [[§7 The Regular Value Theorem#^lem-7-10|§7.10]] the real rank is $2$ or $0$. So the case analysis of Step 2 was that lemma in disguise: the real rank is $2$ precisely when the complex gradient $(2z, 2-2w)$ is nonzero, i.e. away from $(z,w) = (0,1)$, and $0$ there, never $1$.
-> 3. *The kernel is complex.* At $x_0$, i.e. $(z,w) = (i, 0)$, the complex gradient is $(2i, 2)$, and its kernel is the complex line $\{2i\,h + 2k = 0\} = \{k = -i h\}$. Writing $h = h_1 + i h_2$ and $k = k_1 + i k_2$, the condition $k = -ih = h_2 - i h_1$ reads $k_1 = h_2$, $k_2 = -h_1$ — which is $\{(x,y,y,-x)\}$ from Step 5. As Corollary [[§7 The Regular Value Theorem#^cor-7-11|§7.11]] predicts, it is a complex subspace.
+> 2. *The rank.* A $1 \times 2$ complex matrix has complex rank $1$ if it is nonzero and $0$ if it is zero; by Lemma [[§7 The Regular Value Theorem#^lem-7-11|§7.11]] the real rank is $2$ or $0$. So the case analysis of Step 2 was that lemma in disguise: the real rank is $2$ precisely when the complex gradient $(2z, 2-2w)$ is nonzero, i.e. away from $(z,w) = (0,1)$, and $0$ there, never $1$.
+> 3. *The kernel is complex.* At $x_0$, i.e. $(z,w) = (i, 0)$, the complex gradient is $(2i, 2)$, and its kernel is the complex line $\{2i\,h + 2k = 0\} = \{k = -i h\}$. Writing $h = h_1 + i h_2$ and $k = k_1 + i k_2$, the condition $k = -ih = h_2 - i h_1$ reads $k_1 = h_2$, $k_2 = -h_1$ — which is $\{(x,y,y,-x)\}$ from Step 5. As Corollary [[§7 The Regular Value Theorem#^cor-7-12|§7.12]] predicts, it is a complex subspace.
 
-^ex-7-8
+^ex-7-9
 
-> [!example] Example §7.9: The Map $g \mapsto gg^{\ast}$ Is Not Holomorphic
+> [!example] Example §7.10: The Map $g \mapsto gg^{\ast}$ Is Not Holomorphic
 > Let $F : \operatorname{Mat}(n,\mathbb{C}) \to \operatorname{Mat}(n,\mathbb{C})$, $F(g) = gg^{\ast}$, where $g^{\ast} = \bar g^{\mathsf T}$; this is the map presenting $\mathrm{U}(n)$ in Assignment 2, Problem 4. It involves $\bar g$, and it is *not* holomorphic: $DF_g$ fails to be $\mathbb{C}$-linear at every $g \neq 0$.
 >
 > 1. *The derivative.* $F$ is a polynomial in the real and imaginary parts of the entries, hence $C^1$. For real $t$, $(g + th)^{\ast} = g^{\ast} + t h^{\ast}$, so
@@ -621,20 +621,20 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 >
 > which differ by $2i\,gh^{\ast}$. For $g \neq 0$ take $h = g$: the $(l,l)$ entry of $gg^{\ast}$ is $\sum_j g_{lj}\overline{g_{lj}} = \sum_j |g_{lj}|^2$, which is positive for any row $l$ in which $g$ has a nonzero entry. So $gg^{\ast} \neq 0$ and $DF_g(ig) \neq i\,DF_g(g)$.
 
-^ex-7-9
+^ex-7-10
 
 > [!remark] Remark: The Contrast with the Unitary Group
-> The map $F(g) = gg^{\ast}$ presenting $\mathrm{U}(n)$ (Assignment 2, Problem 4) is *not* holomorphic (Example [[§7 The Regular Value Theorem#^ex-7-9|§7.9]]). So [[§7 The Regular Value Theorem#^cor-7-11|Corollary §7.11]] is unavailable, and one is forced to regard $\operatorname{Mat}(n,\mathbb{C})$ and the Hermitian matrices as *real* vector spaces — which is exactly why that problem insists on it. The outcome shows the difference: $\dim \mathrm{U}(n) = n^2$ is odd for odd $n$ (for instance $\mathrm{U}(1) = S^1$ has dimension $1$), which no holomorphic regular level set can be.
+> The map $F(g) = gg^{\ast}$ presenting $\mathrm{U}(n)$ (Assignment 2, Problem 4) is *not* holomorphic (Example [[§7 The Regular Value Theorem#^ex-7-10|§7.10]]). So [[§7 The Regular Value Theorem#^cor-7-12|Corollary §7.12]] is unavailable, and one is forced to regard $\operatorname{Mat}(n,\mathbb{C})$ and the Hermitian matrices as *real* vector spaces — which is exactly why that problem insists on it. The outcome shows the difference: $\dim \mathrm{U}(n) = n^2$ is odd for odd $n$ (for instance $\mathrm{U}(1) = S^1$ has dimension $1$), which no holomorphic regular level set can be.
 
 ^rem-7-9
 
 > [!remark]- Connections
 > - Assignment 2, Problem 4 worked out: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|Ex. §23.3]] ($\dim \mathrm{U}(n) = n^2$); $\mathrm{U}(1) = S^1$ is [[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|Ex. §11.3]].
 
-> [!example] Example §7.10: The Level Set Is a Cylinder
-> The regular value theorem says that $M$ of [[§7 The Regular Value Theorem#^ex-7-6|Example §7.6]] is a $2$-manifold, but not which one. In fact $M$ is homeomorphic to $\mathbb{C}^\times$, hence to the cylinder $S^1 \times \mathbb{R}$.
+> [!example] Example §7.11: The Level Set Is a Cylinder
+> The regular value theorem says that $M$ of [[§7 The Regular Value Theorem#^ex-7-7|Example §7.7]] is a $2$-manifold, but not which one. In fact $M$ is homeomorphic to $\mathbb{C}^\times$, hence to the cylinder $S^1 \times \mathbb{R}$.
 
-^ex-7-10
+^ex-7-11
 
 > [!proof]+ Proof
 > In complex coordinates, completing the square,
@@ -652,9 +652,9 @@ Left, the map; right, its derivative at a point. The vertical arrows are the ide
 >
 > are continuous (indeed holomorphic) and mutually inverse, because the second factor $z + w - 1 = -2/s$ is determined by the first. So $M \cong \mathbb{C}^\times$. And $\mathbb{C}^\times \cong S^1 \times \mathbb{R}$ via $s \mapsto \big(s/|s|,\ \log|s|\big)$. The base point $x_0 = (0,1,0,0)$, i.e. $(z,w) = (i,0)$, corresponds to $s = 1+i$.
 
-^pf-ex-7-10
+^pf-ex-7-11
 
-*Uses:* [[§7 The Regular Value Theorem#^ex-7-6|Ex. §7.6]], [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]], [[Polar and spherical coordinates]]
+*Uses:* [[§7 The Regular Value Theorem#^ex-7-7|Ex. §7.7]], [[§10 Continuous Functions#^def-10-2|590 Def. §10.2]], [[Polar and spherical coordinates]]
 
 > [!remark]- Connections
 > - $\mathbb{C}^\times = \mathbb{R}^2 \setminus \{0\}$ in 590: [[Punctured plane]], which deformation retracts onto $S^1$ ([[§35 Deformation Retracts and Homotopy Type#^ex-35-6|590 Ex. §35.6]]).

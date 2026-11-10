@@ -12,10 +12,9 @@ tags: [functional-analysis, math556]
 ## Positive Homogeneous Subadditive Functions
 
 > [!definition] Definition §5.1: Positive Homogeneous
-> Let $X$ be a linear space over $\mathbb{R}$. A function $p : X \to \mathbb{R}$ is
-> - (1) **positive homogeneous** if $p(ax) = a\,p(x)$ for all $a \geq 0$ and all $x \in X$;
+> Let $X$ be a linear space over $\mathbb{R}$. A function $p : X \to \mathbb{R}$ is **positive homogeneous** if $p(ax) = a\,p(x)$ for all $a \geq 0$ and all $x \in X$.
 >
-> *Lax: §3.1, conditions (1)–(2) of Thm 1*
+> *Lax: §3.1, condition (1) of Thm 1*
 
 ^def-5-1
 
@@ -29,10 +28,9 @@ tags: [functional-analysis, math556]
 ^rem-5-1
 
 > [!definition] Definition §5.2: Subadditive
-> Let $X$ be a linear space over $\mathbb{R}$. A function $p : X \to \mathbb{R}$ is
-> - (2) **subadditive** if $p(x + y) \leq p(x) + p(y)$ for all $x, y \in X$.
+> Let $X$ be a linear space over $\mathbb{R}$. A function $p : X \to \mathbb{R}$ is **subadditive** if $p(x + y) \leq p(x) + p(y)$ for all $x, y \in X$.
 >
-> *Lax: §3.1, conditions (1)–(2) of Thm 1*
+> *Lax: §3.1, condition (2) of Thm 1*
 
 ^def-5-2
 
@@ -55,12 +53,12 @@ tags: [functional-analysis, math556]
 
 *Uses:* [[§5 Statement and Motivation#^def-5-1|Def. §5.1]]
 
+Subadditivity is not needed in this proof. Note also that the argument uses $p(x) \in \mathbb{R}$: the product $0 \cdot p(x)$ is $0$ only because $p(x)$ is a finite number, which is why the gauge later must first be shown finite (Proposition [[§7 Convex Sets and the Gauge#^prop-7-3|§7.3]]).
+
 > [!remark] Remark: Comparison with Lax
 > Lax requires $p(ax) = a\,p(x)$ only for $a > 0$. The two definitions agree (Lemma [[§5 Statement and Motivation#^lem-5-2|§5.2]] below).
 
 ^rem-5-2
-
-Subadditivity is not needed. Note also that the argument uses $p(x) \in \mathbb{R}$: the product $0 \cdot p(x)$ is $0$ only because $p(x)$ is a finite number, which is why the gauge later must first be shown finite ([[§7 Convex Sets and the Gauge#^prop-7-3|§7.3]]).
 
 > [!theorem] Lemma §5.2: Positive Homogeneity: Positive Scalars Suffice
 > Let $p : X \to \mathbb{R}$ satisfy $p(ax) = a\,p(x)$ for all $a > 0$ and all $x \in X$ (Lax's condition). Then $p(0) = 0$, and $p(ax) = a\,p(x)$ holds also for $a = 0$; so $p$ is positive homogeneous in the sense of Definition [[§5 Statement and Motivation#^def-5-1|§5.1]]. Conversely, a positive homogeneous $p$ satisfies Lax's condition. Hence the two definitions agree.

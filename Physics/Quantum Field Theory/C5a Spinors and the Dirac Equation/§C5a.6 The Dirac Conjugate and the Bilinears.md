@@ -222,7 +222,7 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.14 Gamma
 ^rem-c5a-6-3
 
 > [!abstract]- Mathematical background
-> Proved in CB; each line says what the physics above relies on.
+> Proved in CB and CA; each line says what the physics above relies on.
 >
 > Why $\psi^\dagger\psi$ is not a scalar and $\bar\psi\psi$ is: the adjoints of the generators, the non-unitarity of finite-dimensional Lorentz representations, and the pseudo-unitarity of $\Lambda_{1/2}$, from which Theorem §C5a.6.1 follows:
 > - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^thm-cb-14-22|Theorem §CB.14.22]] with [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^der-cb-14-22|Derivation]] — rotation generators Hermitian, boost generators anti-Hermitian (Remark: Why ψ†ψ is not a scalar); physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]].
@@ -242,6 +242,11 @@ Reducing an arbitrary product of $\gamma$'s to these sixteen is [[§C5a.14 Gamma
 >
 > The pseudoscalar and axial vector (Theorem §C5a.6.3) use that $\gamma^5$ commutes with every $\Lambda_{1/2}$:
 > - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-4|Theorem §CB.18.4]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^pf-cb-18-4|Proof]] — $[\gamma^5, S^{\mu\nu}] = 0$ ([[§C5a.5 Chirality and Weyl Spinors#^thm-c5a-5-2|Theorem §C5a.5.2]]).
+>
+> The remark "The quantized bilinears are Hermitian" and the Connections cite:
+> - [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] — operator-valued distribution: the bilinears of the quantum field are defined after normal ordering and smearing with a test function.
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-12|Theorem §CB.17.12]] — tensor products add each copy of the Lorentz algebra separately: $(\frac12, 0)\oplus(0, \frac12)$ times its conjugate carries the labels of S, P, V, A and T.
+> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-15|Def. §CB.13.15]] — the Dirac form, whose invariance under $\Lambda_{1/2}$ is the invariance of $\bar\psi\chi$ ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]).
 
 > [!remark]- Connections
 > - $\gamma^0$ is to the Dirac spinor slot what $g_{\mu\nu}$ is to a vector slot: both are indefinite forms preserved by the group, and both are needed because the Lorentz group is noncompact — [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]], [[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]], [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]].

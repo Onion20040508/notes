@@ -53,13 +53,32 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique 
 
 *Uses:* [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]]
 
+> [!example] Example §26.2: An Unbounded Linear Functional
+> *(Not from lecture; filled in.)* Let $X$ be an infinite-dimensional normed linear space over $\mathbb{F}$. We construct a linear functional on $X$ that is not bounded.
+>
+> *A Hamel basis.* Let $P$ be the set of linearly independent subsets of $X$, ordered by inclusion. $P \neq \varnothing$ since $\varnothing \in P$, and the union of a nonempty chain in $P$ lies in $P$, because each finite subset of the union lies in a single member of the chain and is therefore independent; the empty chain has the upper bound $\varnothing$. By Zorn's lemma (Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]]) $P$ has a maximal element $B$. $B$ spans $X$: if some $x \in X$ were not a finite linear combination of elements of $B$, then $B \cup \{x\}$ would be independent, contradicting maximality. So every $x \in X$ is, uniquely, a finite combination $x = \sum_{b \in B} x_b\, b$ with $x_b \in \mathbb{F}$, all but finitely many equal to $0$. (This is the argument of Example [[§24 The Parallelogram Law and Jordan–von Neumann#^ex-24-1|§24.1]], with $X$ over $\mathbb{F}$ in place of $\mathbb{R}$ over $\mathbb{Q}$.)
+>
+> *$B$ is infinite.* Otherwise $X = \operatorname{span} B$ would be finite-dimensional. Choose distinct elements $b_1, b_2, \ldots$ of $B$. Each $b_k \neq 0$, since $0$ lies in no linearly independent set.
+>
+> *The functional.* For $x = \sum_{b \in B} x_b\, b$ put
+>
+> $$
+> \ell(x) = \sum_{k=1}^\infty k\,\|b_k\|\, x_{b_k} ,
+> $$
+>
+> a finite sum, because only finitely many coefficients $x_b$ are nonzero. Adding the expansions of $x$ and $y$ gives an expansion of $x + y$, and multiplying the expansion of $x$ by $a \in \mathbb{F}$ gives an expansion of $ax$; by uniqueness, $(x + y)_b = x_b + y_b$ and $(ax)_b = a\,x_b$ for every $b \in B$. Hence $\ell$ is linear. The expansion of $b_k$ is $b_k$ itself, so $\ell(b_k) = k\,\|b_k\|$.
+>
+> *$\ell$ is not bounded.* If there were $c > 0$ with $|\ell(x)| \le c\,\|x\|$ for all $x \in X$, then $k\,\|b_k\| = |\ell(b_k)| \le c\,\|b_k\|$, so $k \le c$ for every $k \in \mathbb{N}$, which is impossible. So $\ell$ is not bounded (Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|§26.1]]).
+
+^ex-26-2
+
 > [!remark] Remark: Why Boundedness
-> In finite dimensions every linear functional is bounded (Example [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-1|§26.1]], Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]]). In infinite dimensions this fails — the [[§11 Normed Linear Spaces#^rem-11-3|remark]] after Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]] and the [[§24 The Parallelogram Law and Jordan–von Neumann#^rem-24-1|remark]] after Theorem [[§24 The Parallelogram Law and Jordan–von Neumann#^thm-24-2|§24.2]] (with Example [[§24 The Parallelogram Law and Jordan–von Neumann#^ex-24-1|§24.1]]) both mention functionals built from a Hamel basis that are unbounded on every ball — so boundedness is a genuine hypothesis, and it is the one that makes the finite-dimensional picture survive. “Bounded” does not mean bounded as a function: a nonzero linear functional is never bounded on all of $X$, since $\ell(nx) = n\ell(x)$; it means bounded on the unit ball.
+> In finite dimensions every linear functional is bounded (Example [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-1|§26.1]], Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-1|§26.1]]). In infinite dimensions this fails: every infinite-dimensional normed linear space has linear functionals, built from a Hamel basis, that are not bounded (Example [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^ex-26-2|§26.2]]). So boundedness is a genuine hypothesis, and it is the one that makes the finite-dimensional picture survive. “Bounded” does not mean bounded as a function: a nonzero linear functional is never bounded on all of $X$, since $\ell(nx) = n\ell(x)$; it means bounded on the unit ball.
 
 ^rem-26-1
 
 > [!remark]- Connections
-> - The general notion for maps between normed spaces: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]; the dual space of bounded functionals: [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|Def. §44.1]].
+> - The general notion for maps between normed spaces: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]; the dual space of bounded functionals: [[§31 Dual Spaces#^def-31-1|Def. §31.1]].
 
 > [!theorem] Proposition §26.2: Bounded Means Continuous
 > For a linear functional $\ell$ on a normed linear space $X$, the following are equivalent:
@@ -83,8 +102,17 @@ On $\mathbb{R}^n$ every linear functional is $x \mapsto a \cdot x$ for a unique 
 
 The idea of the proof of the Riesz representation theorem (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]] below) comes from $\mathbb{R}^n$: there $\ell(x) = x \cdot a$, the set $\{\ell = 0\}$ is a hyperplane, and $a$ is a normal vector to it. So one studies the null set of $\ell$ and looks for a vector perpendicular to it. Two facts about the null set are needed first; they are separated out as lemmas.
 
+> [!definition] Definition §26.2: Kernel of a Linear Functional
+> Let $\ell$ be a linear functional on a linear space $X$ over $\mathbb{F}$. The **kernel** (or null set) of $\ell$ is
+>
+> $$
+> \ker \ell = \{ y \in X : \ell(y) = 0 \} .
+> $$
+
+^def-26-2
+
 > [!theorem] Lemma §26.3: The Kernel of a Bounded Functional is Closed
-> Let $\ell$ be a bounded linear functional on a normed linear space $X$. Then its **kernel** (or null set)
+> Let $\ell$ be a bounded linear functional on a normed linear space $X$. Then its kernel (Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-2|§26.2]])
 >
 > $$
 > N = \ker \ell = \{ y \in X : \ell(y) = 0 \}
@@ -97,10 +125,10 @@ The idea of the proof of the Riesz representation theorem (Theorem [[§26 Bounde
 > [!proof]+ Proof
 > *Subspace.* If $y_1, y_2 \in N$ and $a, b \in \mathbb{F}$, then $\ell(ay_1 + by_2) = a\ell(y_1) + b\ell(y_2) = 0$.
 >
-> *Closed.* Let $y_n \in N$ with $y_n \to y_0$. Since $\ell$ is bounded, $|\ell(x)| \le M\|x\|$ for some $M$ and all $x$, so
+> *Closed.* Let $y_n \in N$ with $y_n \to y_0$. Since $\ell$ is bounded, $|\ell(x)| \le c\,\|x\|$ for some $c > 0$ and all $x$ (Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|§26.1]]), so
 >
 > $$
-> |\ell(y_n) - \ell(y_0)| = |\ell(y_n - y_0)| \le M\|y_n - y_0\| \to 0 .
+> |\ell(y_n) - \ell(y_0)| = |\ell(y_n - y_0)| \le c\,\|y_n - y_0\| \to 0 .
 > $$
 >
 > As $\ell(y_n) = 0$ for all $n$, this gives $\ell(y_0) = 0$, i.e. $y_0 \in N$.
@@ -234,8 +262,8 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 > f(v) = \frac12 \|v\|^2 - \ell(v) \qquad (v \in K).
 > $$
 >
-> - (a) There is $u^* \in H$ with $f(v) = \frac12 \|u^* - v\|^2 - \frac12 \|u^*\|^2$ for all $v \in K$.
-> - (b) There is a unique $u_0 \in K$ with $f(u_0) = \inf_{v \in K} f(v)$: the point of $K$ closest to $u^*$ ([[§25 Projection and Orthogonal Decomposition#^thm-25-2|Theorem §25.2]]).
+> - (a) There is $u^{\ast} \in H$ with $f(v) = \frac12 \|u^{\ast} - v\|^2 - \frac12 \|u^{\ast}\|^2$ for all $v \in K$.
+> - (b) There is a unique $u_0 \in K$ with $f(u_0) = \inf_{v \in K} f(v)$: the point of $K$ closest to $u^{\ast}$ ([[§25 Projection and Orthogonal Decomposition#^thm-25-2|Theorem §25.2]]).
 >
 > *Source: HW5, Problem 3*
 
@@ -245,13 +273,13 @@ The null set $N$ is a closed hyperplane and $N^\perp$ a line; $a$ is a normal ve
 > (HW5, Problem 3.) **(a)** By the Riesz representation theorem (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]) there is $u^{\ast} \in H$ with $\ell(v) = (v, u^{\ast})$ for all $v \in H$. Since $H$ is real, $(u^{\ast}, v) = (v, u^{\ast})$, and for every $v \in K$
 >
 > $$
-> \frac12 \|u^* - v\|^2 - \frac12 \|u^*\|^2 = \frac12 \bigl( \|u^*\|^2 - 2(v, u^*) + \|v\|^2 \bigr) - \frac12 \|u^*\|^2 = \frac12 \|v\|^2 - (v, u^*) = f(v).
+> \frac12 \|u^{\ast} - v\|^2 - \frac12 \|u^{\ast}\|^2 = \frac12 \bigl( \|u^{\ast}\|^2 - 2(v, u^{\ast}) + \|v\|^2 \bigr) - \frac12 \|u^{\ast}\|^2 = \frac12 \|v\|^2 - (v, u^{\ast}) = f(v).
 > $$
 >
 > **(b)** *Existence.* Let $d = \inf_{v \in K} \|u^{\ast} - v\|$. By Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]] there is a unique $u_0 \in K$ with $\|u^{\ast} - u_0\| = d$. For every $v \in K$, $\|u^{\ast} - v\| \ge d \ge 0$, so $\|u^{\ast} - v\|^2 \ge \|u^{\ast} - u_0\|^2$, and by (a)
 >
 > $$
-> f(v) = \frac12 \|u^* - v\|^2 - \frac12 \|u^*\|^2 \ge \frac12 \|u^* - u_0\|^2 - \frac12 \|u^*\|^2 = f(u_0).
+> f(v) = \frac12 \|u^{\ast} - v\|^2 - \frac12 \|u^{\ast}\|^2 \ge \frac12 \|u^{\ast} - u_0\|^2 - \frac12 \|u^{\ast}\|^2 = f(u_0).
 > $$
 >
 > Since $u_0 \in K$, $f(u_0) = \inf_{v \in K} f(v)$.

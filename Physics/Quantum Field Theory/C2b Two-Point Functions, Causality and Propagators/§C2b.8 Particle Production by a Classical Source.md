@@ -30,7 +30,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 > \hat\phi(x) = \int\frac{d^3p}{(2\pi)^3}\frac{1}{\sqrt{2E_{\mathbf p}}}\Bigl(\hat b_{\mathbf p}\,e^{-ip\cdot x} + \hat b_{\mathbf p}^\dagger\,e^{ip\cdot x}\Bigr), \qquad \hat b_{\mathbf p} = \hat a_{\mathbf p} + \frac{i\,\tilde j(p)}{\sqrt{2E_{\mathbf p}}}\Big|_{p^0 = E_{\mathbf p}},
 > $$
 >
-> a free field whose annihilation operators are shifted by on-shell $c$-numbers; $[\hat b_{\mathbf p}, \hat b_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$.
+> a free field whose annihilation operators are shifted by on-shell $c$-numbers; $[\hat b_{\mathbf p}, \hat b_{\mathbf q}^\dagger] = (2\pi)^3\delta^3(\mathbf p - \mathbf q)$. Here $D_R$ is the retarded function ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]]), and $\hat b_{\mathbf p}$ is the late-time annihilation operator of the same particle, not the antiparticle operator of [[§C2a.5 The Complex Scalar Field and Its Charge|§C2a.5]].
 >
 > *Model:* [[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]] (= [[§C6a.0 Setups and Observables#^mod-c6a-0-1|Model §C6a.0.1]]); *applies:* source switched off at early and late times: exact, all orders in $j$; in and out vacuum $|0\rangle$ ([[§C6a.0 Setups and Observables#^thm-c6a-0-4|Theorem §C6a.0.4]], 1).
 >
@@ -39,7 +39,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 ^thm-c2b-8-1
 
 > [!derivation]- Derivation
-> **Step 1** (the retarded solution). $j$ is a $c$-number, so $\hat\phi = \hat\phi_0 + i\int D_R\,j$ solves the operator equation $(\partial^2 + m^2)\hat\phi = j$ (for a test-function source, $i\int D_R\,j = i\,D_R[j(x - \cdot)]$ is smooth and solves it exactly, [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|Theorem §CA.6.8]] with the fundamental solution $D_R$, [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]]) ([[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|Def. §C2b.5.1]], with $(\partial^2 + m^2)\hat\phi_0 = 0$ by [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]). Before the source acts, $D_R(x - y) = 0$ for every $y$ in its support (as a distribution: $\operatorname{supp}D_R \subseteq \{\xi^0 \ge 0\}$, [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]]) ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]]), so $\hat\phi = \hat\phi_0$ there.
+> **Step 1** (the retarded solution). $j$ is a $c$-number, so $\hat\phi = \hat\phi_0 + i\int D_R\,j$ solves the operator equation $(\partial^2 + m^2)\hat\phi = j$ ([[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|Def. §C2b.5.1]], with $(\partial^2 + m^2)\hat\phi_0 = 0$ by [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]; for a test-function source, $i\int D_R\,j = i\,D_R[j(x - \cdot)]$ is smooth and solves it exactly, [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|Theorem §CA.6.8]] with the fundamental solution $D_R$, [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]]). Before the source acts, $D_R(x - y) = 0$ for every $y$ in its support ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]]; as a distribution: $\operatorname{supp}D_R \subseteq \{\xi^0 \ge 0\}$, [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]]), so $\hat\phi = \hat\phi_0$ there.
 >
 > ⚑ By-product: the retarded function is not chosen for convenience; the question fixes the state before the source acts, and that is the retarded boundary condition → [[§C2b.8 Particle Production by a Classical Source#^rem-c2b-8-2|Remark: The boundary condition was physics]].
 >
@@ -51,7 +51,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 >
 > **Step 3** (late times). If $x^0$ is later than every $y^0$ in the support of $j$, then $\theta(x^0 - y^0) = 1$ wherever the integrand is nonzero, and the step function drops out.
 >
-> **Step 4** (exchange and transform). $j$ is smooth with compact support, so $\tilde j$ decreases faster than any power and the $d^4y$ and $d^3p$ integrals may be exchanged ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]). (Sense: with Step 3 the step function is $1$ on the support of $j$, so this is $D_W$ and $D_W(-\cdot)$ acting on the test function $j(x - \cdot)$, $\xi$-integral first, [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], 2; the exchange is [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] for a wave packet, and [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]] supplies the decay.) Each $d^4y$ integral is a four-dimensional transform:
+> **Step 4** (exchange and transform). $j$ is smooth with compact support, so $\tilde j$ decreases faster than any power and the $d^4y$ and $d^3p$ integrals may be exchanged ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]). (Sense: with Step 3 the step function is $1$ on the support of $j$, so this is $D_W$ and $D_W(-\cdot)$ acting on the test function $j(x - \cdot)$, $\xi$-integral first, [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], 2; the exchange is [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] for a wave packet, and [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]], proved below, supplies the decay.) Each $d^4y$ integral is a four-dimensional transform:
 >
 > $$
 > \int d^4y\,e^{-ip\cdot(x - y)}j(y) = e^{-ip\cdot x}\,\tilde j(p), \qquad \int d^4y\,e^{ip\cdot(x - y)}j(y) = e^{ip\cdot x}\int d^4y\,e^{-ip\cdot y}j(y) = e^{ip\cdot x}\,\overline{\tilde j(p)},
@@ -78,7 +78,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 
 ^der-c2b-8-1
 
-*Uses:* [[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|Def. §C2b.5.1]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]]
+*Uses:* [[§C2b.5 Green's Functions and Contours#^def-c2b-5-1|Def. §C2b.5.1]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|Theorem §CA.6.8]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]]
 
 > [!theorem] Theorem §C2b.8.2: The Final State Is a Coherent State
 > The in-vacuum is an eigenstate of every late-time annihilation operator,
@@ -109,7 +109,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 
 ^der-c2b-8-2
 
-*Uses:* [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-2|Theorem §C2a.6.2]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-6|Theorem §C2a.6.6]]
+*Uses:* [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-2|Theorem §C2a.6.2]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-6|Theorem §C2a.6.6]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-7|Theorem §C2a.6.7]], [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]]
 
 > [!theorem] Theorem §C2b.8.3: Energy and Number of Particles Produced
 > After the source has acted, the energy above the vacuum and the mean number of particles are
@@ -137,7 +137,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 >
 > **Step 2** (expand the product, all four terms). $\hat a^\dagger\hat a + \hat a^\dagger\frac{i\tilde j}{\sqrt{2E}} - \frac{i\overline{\tilde j}}{\sqrt{2E}}\hat a + \frac{|\tilde j|^2}{2E}$.
 >
-> **Step 3** (expectation value in $|0\rangle$). $\langle0|\hat a^\dagger\hat a|0\rangle = 0$ and $\langle0|\hat a|0\rangle = 0$ because $\hat a|0\rangle = 0$; $\langle0|\hat a^\dagger|0\rangle = 0$ because $\langle0|\hat a^\dagger = 0$. Only the product of the two $c$-numbers survives, with no $\delta^3(\mathbf 0)$, since no reordering was needed; the remaining integral is finite because $j$ is a test function ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]]):
+> **Step 3** (expectation value in $|0\rangle$). $\langle0|\hat a^\dagger\hat a|0\rangle = 0$ and $\langle0|\hat a|0\rangle = 0$ because $\hat a|0\rangle = 0$; $\langle0|\hat a^\dagger|0\rangle = 0$ because $\langle0|\hat a^\dagger = 0$. Only the product of the two $c$-numbers survives, with no $\delta^3(\mathbf 0)$, since no reordering was needed; the remaining integral is finite because $j$ is a test function ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]], proved below):
 >
 > $$
 > \langle0|\hat H|0\rangle - E_0 = \int\frac{d^3p}{(2\pi)^3}\,E_{\mathbf p}\,\frac{|\tilde j(p)|^2}{2E_{\mathbf p}} = \int\frac{d^3p}{(2\pi)^3}\,\frac12|\tilde j(p)|^2 .
@@ -151,7 +151,7 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 
 ^der-c2b-8-3
 
-*Uses:* [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]]
+*Uses:* [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]]
 
 > [!theorem] Theorem §C2b.8.4: The Source Is a Test Function; Why $\bar N$ Is Finite
 > Let $j \in \mathcal D(\mathbb R^4)$ ([[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]]), smooth and nonzero only in a bounded region of spacetime ([[§C2b.5 Green's Functions and Contours#^mod-c2b-5-1|Model §C2b.5.1]]; $j \in \mathcal S(\mathbb R^4)$ suffices).
@@ -230,14 +230,22 @@ A classical source $j(x)$ acts on the free quantum field for a finite time ([[§
 ![[ph-qft-c2-7-1.svg]]
 *Mean number of particles produced by the point source of Example §C2b.8.1, in units of $g^2m^2/16\pi^2$, against the switching time $T$ in units of the Compton time $1/m$. Fast switching follows $2/(mT)^2$; slow switching is exponentially suppressed, $\sqrt\pi\,e^{-(mT)^2}/(mT)^3$, because the source then has no Fourier components on the mass shell.*
 
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]] (test functions) is the class the classical source belongs to; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]] (the transform preserves $\mathcal S$) turns that into the on-shell decay of $\tilde j$ that makes $\bar N$, $\Delta E$ and the coherent out-state finite (Theorem §C2b.8.4).
+> - [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]] — δ acts on smooth functions: a source that is a delta function in space still has an on-shell transform.
+> - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]] — derivatives of $D_R[j(x - \cdot)]$ fall on the test function $j$: the retarded field is smooth.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]] — the Fourier convention of $\tilde j(p)$.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] (reality, $\tilde j(-p) = \overline{\tilde j(p)}$) pairs the creation and annihilation shifts; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]] ($\tilde\delta = 1$) shows the instantaneous point source is outside the class.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] and [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] (exchanging the $y$- and $p$-integrals) turn $D_R$ acting on $j$ into the on-shell transform $\tilde j(E_{\mathbf p}, \mathbf p)$.
+> - [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]], [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]] — $K_0$, $K_1$ and their limiting forms: the particle number $\bar N \propto e^{-z}[K_1(z) - K_0(z)]$ of Example §C2b.8.1 and its two limits.
+> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|Theorem §CA.6.8]] (convolution with a fundamental solution) is the statement that the retarded field $i\int D_R\,j$ is smooth and solves the sourced equation.
+
 > [!remark]- Connections
-> - The same results by the interaction picture and diagrams: the vacuum-persistence amplitude $\langle0|T\exp(i\int j\hat\phi_I)|0\rangle = e^{\mathcal A_2}$, $P(0) = e^{-\bar N}$, and $P(n) = \bar N^ne^{-\bar N}/n!$ with the same $\bar N$ as Theorem §C2b.8.3 (PS Problem 4.1; PHY 513, Problem Set 8, Problem 3) — [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6c.7]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-6|Theorem §C6c.7.6]].
+> - The same results by the interaction picture and diagrams: the vacuum-persistence amplitude $\langle0|T\{\exp(i\int d^4x\,j\hat\phi_I)\}|0\rangle = e^{\mathcal A_2}$, $P(0) = e^{-\bar N}$, and $P(n) = \bar N^ne^{-\bar N}/n!$ with the same $\bar N$ as Theorem §C2b.8.3 (PS Problem 4.1; PHY 513, Problem Set 8, Problem 3) — [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route|§C6c.7]], [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-6|Theorem §C6c.7.6]].
 > - The out-state is the field version of a driven oscillator: a classical force on a quantum oscillator displaces its ground state into a coherent state, mode by mode ([[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-3|QM Theorem §C3.4.3]]); here one such displacement $i\tilde j(p)/\sqrt{2E_{\mathbf p}}$ per $\mathbf p$, with the forced classical response being the retarded field ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]]).
-> - Only Fourier components at the natural frequencies are absorbed: the field-theory form of resonance, and the reason a static charge does not radiate while an accelerated one does (radiation: [[§B11.4★ Radiation from a Point Charge|EM §B11.4★]]; photons from a classical current, PS Problem 4.1, and bremsstrahlung, QFT C8, planned).
+> - Only Fourier components at the natural frequencies are absorbed: the field-theory form of resonance, and the reason a static charge does not radiate while an accelerated one does (radiation: [[§B11.4★ Radiation from a Point Charge|EM §B11.4★]]; photons from a classical current and bremsstrahlung, PS §6.1, QFT C8, planned).
 > - The sudden/adiabatic dichotomy of Example §C2b.8.1 is the time-dependent perturbation theory of [[§C9.4 Time-Dependent Perturbation Theory, Sudden and Adiabatic Limits|QM §C9.4]] applied to infinitely many oscillators; Fermi's golden rule is the small-$\bar N$, long-time limit of the same $|\tilde j(E_{\mathbf p})|^2$.
 > - The Poisson statistics of the produced particles is that of a laser or a radio transmitter, classical sources of coherent radiation ([[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-6|Theorem §C2a.6.6]]; [[§B4.3 Coherent States#^thm-b4-3-2|QM Theorem §B4.3.2]]).
 > - The Bessel function $K_1 - K_0$ of Example §C2b.8.1 comes from the same integral representation as the two-point function ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^def-ca-5-1|Def. §CA.5.1]]), because both integrate over the mass shell with hyperbolic variables.
-> - [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]] (test functions) is the class the classical source belongs to; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]] (the transform preserves $\mathcal S$) turns that into the on-shell decay of $\tilde j$ that makes $\bar N$, $\Delta E$ and the coherent out-state finite (Theorem §C2b.8.4).
-> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-8|Theorem §CA.6.8]] (convolution with a fundamental solution) is the statement that the retarded field $i\int D_R\,j$ is smooth and solves the sourced equation.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] and [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] (exchanging the $y$- and $p$-integrals) turn $D_R$ acting on $j$ into the on-shell transform $\tilde j(E_{\mathbf p}, \mathbf p)$.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] (reality, $\tilde j(-p) = \overline{\tilde j(p)}$) pairs the creation and annihilation shifts; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]] ($\tilde\delta = 1$) shows the instantaneous point source is outside the class.

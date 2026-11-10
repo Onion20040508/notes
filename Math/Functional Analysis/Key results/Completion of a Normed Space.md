@@ -13,11 +13,14 @@ tags: [functional-analysis, hub]
 ## Its proof uses
 - [[§1 Linear Spaces#^def-1-1|Definition §1.1: Linear Space]]
 - [[§11 Normed Linear Spaces#^def-11-1|Definition §11.1: Norm; Normed Linear Space]]
+- [[§11 Normed Linear Spaces#^prop-11-2|Proposition §11.2: A Normed Space is a Metric Space]]
 - [[§11 Normed Linear Spaces#^lem-11-3|Lemma §11.3: Reverse Triangle Inequality]]
 - [[§11 Normed Linear Spaces#^def-11-5|Definition §11.5: Cauchy Sequence]]
+- [[§11 Normed Linear Spaces#^def-11-8|Definition §11.8: Dense Subset]]
 - [[§12 Completeness#^def-12-1|Definition §12.1: Complete Metric Space]]
 - [[§12 Completeness#^def-12-2|Definition §12.2: Banach Space]]
 - [[§12 Completeness#^def-12-3|Definition §12.3: Equivalent Cauchy Sequences]]
+- [[§12 Completeness#^prop-12-3|Proposition §12.3: The Completion is a Complete Metric Space, and M is Dense in It]]
 - [[§12 Completeness#^def-12-4|Definition §12.4: Completion]]
 
 ## Its proof uses (other subjects)
@@ -27,6 +30,7 @@ tags: [functional-analysis, hub]
 - [[§13 The Completion of a Normed Space#^prop-13-3|Proposition §13.3: Identifying a Completion]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|Proposition §19.8: Lᵖ[a,b] as a Completion]]
 - [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-9|Proposition §33.9: H¹_0(Omega) is a Hilbert Space]]
+- [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-10|Proposition §33.10: Elements of H¹_0(Omega) are Functions]]
 
 ## Connections
 - **How.** The norm of a class is lim‖x_n‖, which exists because the reverse triangle inequality makes (‖x_n‖) Cauchy in ℝ. For completeness, take a Cauchy sequence of classes and pick the diagonal y_j = x^(M_j)_(N_j) with non-decreasing indices. The argument closes with two three-term triangle inequalities, in which an auxiliary index is sent to infinity last ([[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]]).

@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, App. A §A.5 and Ch. 6 §6.5 (the working rules, stated twice there) · PHY 513 Lecture 6 (Larsen, 21 Sep 2026), "Complex Analysis: a Survival Guide" · PHY 513, Problem Set 4, Problem 1 · Stein & Shakarchi, Complex Analysis, Ch. 1–3 (cited in the user's notes).*
 
-Every propagator, every loop integral and the Wightman function of [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]] are evaluated by moving contours in the complex plane. Lecture 6 compressed the subject into three facts: an integral needs a path; the one entry in the table, $\oint_{|z| = 1}\frac{dz}{2\pi iz} = 1$; and the integral does not change when the path is deformed without crossing a singularity. This section states them with proofs, adds what the course uses (residues, closing a real-line integral, poles on the path, branch cuts, the identity theorem), and ends with the sheet of working rules ([[§CA.4 Contour Integration#^thm-ca-4-9|Theorem §CA.4.9]]) that [[P2 Green's Functions by Contour Integration|P2]] and [[§C2b.5 Green's Functions and Contours|§C2b.5]]–[[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] cite. Line integrals in the plane and Green's theorem are [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]]; the vault has no complex-analysis subject yet, so this is the interim home.
+Every propagator, every loop integral and the Wightman function of [[§C2b.3 Explicit Forms of the Wightman Function|§C2b.3]] are evaluated by moving contours in the complex plane. Lecture 6 compressed the subject into three facts: an integral needs a path; the one entry in the table, $\oint_{|z| = 1}\frac{dz}{2\pi iz} = 1$; and the integral does not change when the path is deformed without crossing a singularity. This section states them with proofs, adds what the course uses (residues, closing a real-line integral, poles on the path, branch cuts, the identity theorem), and ends with the sheet of working rules ([[§CA.4 Contour Integration#^thm-ca-4-9|Theorem §CA.4.9]]) that [[P2 Green's Functions by Contour Integration|P2]] and [[§C2b.5 Green's Functions and Contours|§C2b.5]]–[[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] cite. Line integrals in the plane and Green's theorem are [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]]. The general theory, with complete proofs, is [[Complex Variables]] (Applied Math, MAT 342, Brown–Churchill); each box below names its statement there in a line *Math home*, and this section keeps the forms used in field theory: the propagator residues, the choice of the half-plane, the caution on Jordan's lemma, the examples and the working rules.
 
 ## Contours and analytic functions
 
@@ -24,6 +24,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 >
 > It does not depend on the parametrization, is linear in $f$, and changes sign when the orientation is reversed.
 >
+> *Math home:* [[§43 Contours#^def-43-9|342 Def. §43.9]] (contour: finitely many smooth arcs joined end to end) and [[§44 Contour Integrals#^def-44-1|342 Def. §44.1]] (the contour integral, by the same formula).
+>
 > *Source: the user's PHY 513 notes, App. A §A.5 (eq. (contourdef))*
 
 ^def-ca-4-1
@@ -35,6 +37,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 > $$
 > \oint(z - z_0)^n\,dz = 2\pi i\,\delta_{n,-1} .
 > $$
+>
+> *Math home:* part 1 is [[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|342 Thm. §47.2]] (the ML inequality).
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (Derivation "The one integral in the table") · PHY 513 Lecture 6 · PHY 513, Problem Set 4, Problem 1(a)–(d)*
 
@@ -62,12 +66,16 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 > [!definition] Definition §CA.4.2: Analytic Function
 > $f$ is **analytic** (holomorphic) at $z$ if $f'(z) = \lim_{h\to0}[f(z + h) - f(z)]/h$ exists with the same limit from every direction of $h$. With $f = u + iv$, $z = x + iy$, this implies the **Cauchy–Riemann equations** $\partial_xu = \partial_yv$, $\partial_yu = -\partial_xv$. Polynomials, $e^z$, and rational functions away from the zeros of their denominators are analytic; $\bar z$ and $|z|^2$ are not.
 >
+> *Math home:* [[§25 Analytic Functions#^def-25-1|342 Def. §25.1]] (analytic in an open set: a derivative at each of its points; analytic at a point: analytic in a neighbourhood of it, which is the sense used in this section) and [[§21 Cauchy–Riemann Equations#^thm-21-1|342 Thm. §21.1]] (the Cauchy–Riemann equations are necessary).
+>
 > *Source: the user's PHY 513 notes, App. A §A.5 (eq. (CR))*
 
 ^def-ca-4-2
 
 > [!theorem] Theorem §CA.4.2: Cauchy's Theorem; Deformation of Contours
 > If $f$ is analytic on and inside a closed contour $\Gamma$, then $\oint_\Gamma f\,dz = 0$. Hence the integral between two points does not depend on the path, as long as one path can be deformed into the other without crossing a point where $f$ is not analytic. An analytic function is infinitely differentiable and equals its Taylor series in every disc of analyticity.
+>
+> *Math home:* [[§50 Cauchy–Goursat Theorem#^thm-50-2|342 Thm. §50.2]] (Cauchy's theorem for continuous $f'$, by the same Green's-theorem argument; Goursat's proof without that assumption is 342 §51), [[§53 Multiply Connected Domains#^cor-53-2|342 Cor. §53.2]] (deformation of paths), [[§57 Some Consequences of the Extension#^thm-57-1|342 Thm. §57.1]] (derivatives of all orders) and [[§63 Proof of Taylor's Theorem#^thm-63-1|342 Thm. §63.1]] (Taylor's theorem).
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (Principle "Cauchy's theorem") · Stein & Shakarchi, Ch. 2*
 
@@ -82,7 +90,7 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 >
 > **Step 4** (deformation). Two paths from $z_1$ to $z_2$ that can be deformed into each other through a region of analyticity form, with one reversed, a closed contour with $f$ analytic inside; by Step 3 its integral is zero, so the two path integrals are equal.
 >
-> **Step 5** (Taylor series). Follows from Cauchy's integral formula (Stein & Shakarchi, Ch. 2, Theorem 4.4), not reproduced here.
+> **Step 5** (Taylor series). Follows from Cauchy's integral formula ([[§54 Cauchy Integral Formula#^thm-54-1|342 Thm. §54.1]]; Stein & Shakarchi, Ch. 2, Theorem 4.4); the proof is not reproduced here and is written out in [[§57 Some Consequences of the Extension#^thm-57-1|342 Thm. §57.1]] (derivatives of all orders) and [[§63 Proof of Taylor's Theorem#^thm-63-1|342 Thm. §63.1]] (the Taylor series converges to $f$ in every disc of analyticity).
 >
 > **What the derivation shows.**
 > - Cauchy–Riemann says that $u\,dx - v\,dy$ and $v\,dx + u\,dy$ are closed forms; Cauchy's theorem is Green's theorem for them.
@@ -90,10 +98,12 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 
 ^der-ca-4-2
 
-*Uses:* [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]]
+*Uses:* [[§27 Line Integrals and Green's Theorem#^thm-27-1|452 Thm. §27.1]], [[§54 Cauchy Integral Formula#^thm-54-1|342 Thm. §54.1]], [[§57 Some Consequences of the Extension#^thm-57-1|342 Thm. §57.1]], [[§63 Proof of Taylor's Theorem#^thm-63-1|342 Thm. §63.1]] (Step 5)
 
 > [!theorem] Theorem §CA.4.3: Identity Theorem
 > If $f$ and $g$ are analytic on a connected open set $U$ and agree on a subset of $U$ with an accumulation point in $U$, then $f = g$ on all of $U$. In particular an analytic continuation, when it exists, is unique.
+>
+> *Math home:* [[§28★ Uniquely Determined Analytic Functions#^thm-28-3|342 Thm. §28.3]] (the coincidence principle: the same statement, with "limit point" for accumulation point); its local step, that zeros of a function not identically zero are isolated, is [[§82 Zeros of Analytic Functions#^thm-82-2|342 Thm. §82.2]].
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.4 (Principle "Tools used in this section and the next") · Stein & Shakarchi, Ch. 2*
 
@@ -117,12 +127,16 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 > [!definition] Definition §CA.4.3: Isolated Singularity
 > $z_0$ is an **isolated singularity** of $f$ if $f$ is analytic ([[§CA.4 Contour Integration#^def-ca-4-2|Def. §CA.4.2]]) on a punctured disc $0 < |z - z_0| < \rho$ but not at $z_0$.
 >
+> *Math home:* [[§74 Isolated Singular Points#^def-74-1|342 Def. §74.1]].
+>
 > *Source: the user's PHY 513 notes, App. A §A.5 (Definitions "Isolated singularities and the Laurent expansion", "Definition of the residue")*
 
 ^def-ca-4-3
 
 > [!definition] Definition §CA.4.4: Laurent Expansion; Removable Singularity, Pole and Essential Singularity
-> At an isolated singularity $z_0$ ([[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]]), $f = \sum_{n=-\infty}^{\infty}a_n(z - z_0)^n$ on the punctured disc (the **Laurent expansion**), and the singularity is **removable**, a **pole of order $k$** or **essential** as the negative powers are absent, stop at $n = -k$, or do not stop.
+> At an isolated singularity $z_0$ ([[§CA.4 Contour Integration#^def-ca-4-3|Def. §CA.4.3]]), $f = \sum_{n=-\infty}^{\infty}a_n(z - z_0)^n$ on the punctured disc (the **Laurent expansion**), and the singularity is **removable**, a **pole of order $k$** or **essential** as the negative powers are absent, stop at $n = -k$, or do not stop. That the expansion exists and is unique is Laurent's theorem ([[§67 Proof of Laurent's Theorem#^thm-67-1|342 Thm. §67.1]]).
+>
+> *Math home:* [[§67 Proof of Laurent's Theorem#^thm-67-1|342 Thm. §67.1]] (Laurent's theorem), [[§78 The Three Types of Isolated Singular Points#^def-78-2|342 Def. §78.2]] (removable), [[§78 The Three Types of Isolated Singular Points#^def-78-4|342 Def. §78.4]] (pole of order $m$), [[§78 The Three Types of Isolated Singular Points#^def-78-3|342 Def. §78.3]] (essential).
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (Definitions "Isolated singularities and the Laurent expansion", "Definition of the residue")*
 
@@ -134,6 +148,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 > $$
 > \operatorname*{Res}_{z_0}f \equiv a_{-1} = \frac{1}{2\pi i}\oint_{|z - z_0| = r}f(z)\,dz \qquad (0 < r < \rho) .
 > $$
+>
+> *Math home:* [[§75 Residues#^def-75-1|342 Def. §75.1]] (the coefficient of $1/(z - z_0)$) and [[§75 Residues#^thm-75-1|342 Thm. §75.1]] (the integral form).
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (Definitions "Isolated singularities and the Laurent expansion", "Definition of the residue")*
 
@@ -150,6 +166,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 > 1. Simple pole ([[§CA.4 Contour Integration#^def-ca-4-4|Def. §CA.4.4]]; residue: [[§CA.4 Contour Integration#^def-ca-4-5|Def. §CA.4.5]]): $\operatorname{Res}_{z_0}f = \lim_{z\to z_0}(z - z_0)f(z)$; for $f = g/h$ with $g$ analytic and $h$ having a simple zero, $\operatorname{Res}_{z_0}(g/h) = g(z_0)/h'(z_0)$.
 > 2. Pole of order $k$: $\operatorname{Res}_{z_0}f = \dfrac{1}{(k - 1)!}\lim_{z\to z_0}\dfrac{d^{k-1}}{dz^{k-1}}\bigl[(z - z_0)^kf(z)\bigr]$.
 > 3. For the propagator integrand, $\operatorname*{Res}_{p^0 = \pm E}\dfrac{e^{-ip^0t}}{(p^0)^2 - E^2} = \pm\dfrac{e^{\mp iEt}}{2E}$.
+>
+> *Math home:* parts 1–2 are [[§80 Residues at Poles#^thm-80-1|342 Thm. §80.1]] (with $\phi = (z - z_0)^kf$) and, for $g/h$, [[§83 Zeros and Poles#^thm-83-2|342 Thm. §83.2]].
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (eqs. (residueformulas), (propresidues))*
 
@@ -178,6 +196,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 >
 > with $+$ for counterclockwise and $-$ for clockwise traversal. Singularities outside $\Gamma$ contribute nothing.
 >
+> *Math home:* [[§76 Cauchy's Residue Theorem#^thm-76-1|342 Thm. §76.1]] (counterclockwise simple closed contour; the clockwise sign is the orientation rule of Def. §CA.4.1).
+>
 > *Source: the user's PHY 513 notes, App. A §A.5 (Principle "The residue theorem")*
 
 ^thm-ca-4-5
@@ -204,6 +224,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 > 2. *(Jordan)* If $\max_{C_R}|g| \to 0$, at any rate, and $\lambda > 0$, then $\int_{C_R}g(z)\,e^{i\lambda z}\,dz \to 0$. For $e^{-i\lambda z}$ use the lower semicircle.
 >
 > So a real-line integral may be closed where the integrand decays: $e^{ikz}$ upward for $k > 0$, downward for $k < 0$; $e^{-ip^0t}$ upward for $t < 0$, downward for $t > 0$.
+>
+> *Math home:* part 2 is [[§88★ Jordan's Lemma#^thm-88-2|342 Thm. §88.2]], proved there with the same inequality $\sin\theta \ge 2\theta/\pi$ ([[§88★ Jordan's Lemma#^lem-88-1|342 Lemma §88.1]]); part 1 is the ML inequality ([[§47 Upper Bounds for Moduli of Contour Integrals#^thm-47-2|342 Thm. §47.2]]).
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 ("Integrals along the real line: closing the contour"), Ch. 5 §5.4*
 
@@ -267,6 +289,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 >
 > Passing above a pole is the same as moving it down by $i\varepsilon$; the principal value is the average of the two.
 >
+> *Math home:* [[§89★ An Indented Path#^thm-89-1|342 Thm. §89.1]] (the upper half circle taken clockwise around a simple pole with residue $B_0$ contributes $-B_0\pi i$ as its radius tends to zero).
+>
 > *Source: the user's PHY 513 notes, App. A §A.5 (Derivation "The half-residue lemma")*
 
 ^thm-ca-4-7
@@ -305,6 +329,8 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 
 > [!theorem] Theorem §CA.4.8: Integrals around a Branch Cut
 > A branch point (for example $\pm im$ of $\sqrt{p^2 + m^2}$) is not an isolated singularity: going once round it changes the function, so it has no Laurent series and no residue. The function is made single-valued by a **cut** from the branch point; a contour may be deformed onto the cut, and the integral becomes the integral of the discontinuity across it. An integrable branch point ($|f| = O(\delta^{-1/2})$ on a circle of radius $\delta$) contributes nothing as $\delta \to 0$.
+>
+> *Math home:* worked cases in Complex Variables: the keyhole contour of [[§91★ Integration Along a Branch Cut#^prop-91-1|342 Prop. §91.1]] and the indentation around a branch point of [[§90★ An Indentation Around a Branch Point#^ex-90-1|342 Example §90.1]]; the general statement is written here.
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 ("Not every singularity is isolated"), Ch. 5 §5.4 (keyhole contour) · PS §2.4, Fig. 2.3*
 
@@ -369,6 +395,9 @@ Every propagator, every loop integral and the Wightman function of [[§C2b.3 Exp
 > - Loop integrals (the second semester, planned: PHY 513 Lecture 17, slide 26) bring branch cuts back, and the spinor and vector propagators (spinor: [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], Step 4; vector: [[§C4.11 Vector-Field Propagators#^thm-c4-11-3|Theorem §C4.11.3]], [[§C4.11 Vector-Field Propagators#^thm-c4-11-6|Theorem §C4.11.6]]) have numerators that are analytic in $p^0$, so the same residues give them the same $i\varepsilon$ (Yu eq. (6.262)).
 > - Contour tools for random spectra: the identity theorem (Theorem §CA.4.3) lets the Stieltjes transform on countably many points determine a measure ([[§R3.4 The Semicircle Law II꞉ Stieltjes Transform and Coulomb Gas#^thm-r3-4-3a|Thesis Thm. §R3.4.3a]]), and the branch cut of Theorem §CA.4.8 selects the semicircle among the roots of the self-consistent equation ([[§R3.4 The Semicircle Law II꞉ Stieltjes Transform and Coulomb Gas#^thm-r3-4-4a|Thesis Thm. §R3.4.4a]]).
 > - **Used in** (C1a–C1b places): Def. §CA.4.2 — the single-particle amplitude as a boundary value ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-5|Theorem §C1a.3.5]]); Theorems §CA.4.2, §CA.4.6, §CA.4.8 and Caution: Jordan's lemma needs g → 0 — the single-particle amplitude at spacelike separation ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]]).
-> - **Used in** (C5a–C5b places): Theorems §CA.4.4–§CA.4.6 and Caution: Jordan's lemma needs g → 0 — the Dirac Feynman propagator, whose numerator $\slashed{p} + m$ makes the arc decay only like $1/\lvert p^0\rvert$, so that Jordan's lemma replaces the ML estimate ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], Step 4).
+> - **Used in** (C5a–C5b places): Theorems §CA.4.4–§CA.4.6 and Caution: Jordan's lemma needs g → 0 — the Dirac Feynman propagator, whose numerator $\slashed{p} + m$ makes the arc decay only like $1/\lvert p^0\rvert$, so that Jordan's lemma replaces the ML estimate ([[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], Step 4); Theorem §CA.4.2 — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-1|Theorem §C5b.8.1]].
 > - **Used in** (C6b places, Lecture 15): Theorems §CA.4.5–§CA.4.6 — the time dependence of an unstable particle's propagator, $e^{-iE_{\mathbf p}t - \Gamma_{\rm NR}t/2}$ ([[§C6b.7 The Width in the Propagator#^thm-c6b-7-3|Theorem §C6b.7.3]]).
 > - **Used in** (C6d places, Lecture 17): Theorems §CA.4.4–§CA.4.6 — the Yukawa potential from its Fourier transform, the residue at $q = im_\phi$ ([[§C6d.7 The Yukawa Potential#^thm-c6d-7-3|Theorem §C6d.7.3]]).
+> - **Used in** (C2b places): Def. §CA.4.2 — [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]]; Theorem §CA.4.2 — [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-3|Theorem §C2b.5.3]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]]; Theorem §CA.4.3 — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]]; Theorem §CA.4.4 — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-3|Theorem §C2b.5.3]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]; Theorem §CA.4.5 — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-3|Theorem §C2b.5.3]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3|Theorem §C2b.6.3]]; Theorem §CA.4.6 — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]]; Theorem §CA.4.7 — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription|§C2b.6]]; Theorem §CA.4.8 — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]; Theorem §CA.4.9 — [[§C2b.5 Green's Functions and Contours|§C2b.5]]; Example §CA.4.2 — [[§C2b.5 Green's Functions and Contours#^rem-c2b-5-3|§C2b.5, Remark: Retarded means late; the sign of the exponent carries causality]]; Caution: Jordan's lemma needs $g \to 0$ — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]].
+> - **Used in** (CB places): Theorem §CA.4.3 — [[§CB.1 Matrix Lie Groups, the Exponential Map and Lie Algebras|§CB.1]].
+> - **Used in** (Procedures): Theorem §CA.4.4 — [[P2 Green's Functions by Contour Integration#^p2-2|P2, step 2]]; Theorem §CA.4.5 — [[P2 Green's Functions by Contour Integration#^p2-5|P2, step 5]]; Theorem §CA.4.6 — [[P2 Green's Functions by Contour Integration#^p2-4|P2, step 4]]; Theorem §CA.4.8 — [[P2 Green's Functions by Contour Integration|P2]]; Theorem §CA.4.9 — [[P2 Green's Functions by Contour Integration|P2]]; Example §CA.4.1 — [[P2 Green's Functions by Contour Integration|P2]]; Example §CA.4.2 — [[P2 Green's Functions by Contour Integration#^p2-5|P2, step 5]], [[P2 Green's Functions by Contour Integration|P2]]; Caution: Jordan's lemma needs $g \to 0$ — [[P2 Green's Functions by Contour Integration#^p2-4|P2, step 4]].

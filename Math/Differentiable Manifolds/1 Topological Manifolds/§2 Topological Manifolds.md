@@ -40,7 +40,7 @@ tags: [differentiable-manifolds, math591]
 ^def-2-2
 
 > [!remark]- Connections
-> - The three conditions: [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]]; the smooth version is [[§17 Differentiable Structures#^def-17-9|Smooth Manifold Structure, Def. §17.9]].
+> - The three conditions: [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]]; the smooth version is [[§17 Differentiable Structures#^def-17-11|Smooth Manifold Structure, Def. §17.11]].
 > - Concrete example: [[§110★ Riemann Surfaces#^ex-110-1|342 Ex. §110.1]] (the Riemann surface of log z, a 2-manifold built from infinitely many cut planes glued along their slits, on which log z becomes single-valued).
 
 > [!remark] Remark: Why These Three Conditions?

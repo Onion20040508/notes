@@ -29,7 +29,7 @@ The energy and the field momentum, [[§C1b.7 Spacetime Symmetries꞉ Energy and 
 
 ![[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-8]]
 
-The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]]). Quantization reads these as operators, written with a hat; the boxes recalled above are classical and stay unhatted, the hat marking the quantization step ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|§C2a.1, Caution: Eₚ, not ωₚ; π, not Π]]):
+The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]]). Quantization reads these as operators, written with a hat; the boxes recalled above are classical and stay unhatted, the hat marking the quantization step ([[§C2a.1 Canonical Quantization of Fields#^cau-c2a-1-1|§C2a.1, Caution: Eₚ, not ωₚ; π, not Π]]).
 
 ## The quantum model
 
@@ -97,7 +97,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 > \hat a_{\mathbf p} = i\int d^3x\,\bigl(f^*_{\mathbf p}\,\hat\pi^\dagger - \dot f^*_{\mathbf p}\,\hat\phi\bigr), \qquad \hat b_{\mathbf p} = i\int d^3x\,\bigl(f^*_{\mathbf p}\,\hat\pi - \dot f^*_{\mathbf p}\,\hat\phi^\dagger\bigr) .
 > $$
 >
-> ⚑ By-product: $\hat a$ is built from $(\hat\phi, \hat\pi^\dagger)$ and $\hat b$ from $(\hat\phi^\dagger, \pi)$, never from a canonical pair; this decides which commutators survive → [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]].
+> ⚑ By-product: $\hat a$ is built from $(\hat\phi, \hat\pi^\dagger)$ and $\hat b$ from $(\hat\phi^\dagger, \hat\pi)$, never from a canonical pair; this decides which commutators survive → [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-3|Theorem §C2a.5.3]].
 >
 > **What the derivation shows**
 > - Dropping reality frees the negative-frequency coefficient: two species, $\hat a$ and $\hat b$.
@@ -183,7 +183,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 >
 > *Model:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]; *applies:* free field, exact as an identity between mode expansions; $2E_0$ has no value in infinite volume ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]).
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.6, eqs. (Hcomplexzp), (Hcomplex) · PHY 513 Problem Set 3, Problem 2(b), course solution · Yu §2.4.4, eqs. (2.215), (2.217)*
+> *Source: the user's PHY 513 notes, Ch. 4 §4.6, eqs. (Hcomplexzp), (Hcomplex) · PHY 513 Problem Set 3, Problem 2(b), course solution · Yu §2.4.3, eq. (2.215); §2.4.4, eq. (2.217) ff.*
 
 ^thm-c2a-5-4
 
@@ -256,7 +256,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 >
 > *Model:* [[§C2a.5 The Complex Scalar Field and Its Charge#^mod-c2a-5-1|Model §C2a.5.1]]; *applies:* free field, exact; the vanishing constant needs a rotation-invariant cutoff, as for the real field ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-5|Theorem §C2a.3.5]]).
 >
-> *Source: the user's PHY 513 notes, Ch. 4 §4.7, eq. (Pfinal) · Yu §2.4.4, eq. (2.216) · the user's pre-course notes, §3.4 (Note "Reducing H and P to mode form")*
+> *Source: the user's PHY 513 notes, Ch. 4 §4.7, eq. (Pfinal) · Yu §2.4.3, eq. (2.216); derivation in §2.4.4 · the user's pre-course notes, §3.4 (Note "Reducing H and P to mode form")*
 
 ^thm-c2a-5-5
 
@@ -305,7 +305,7 @@ The U(1) current is recalled where the charge is built ([[§C2a.5 The Complex Sc
 
 ## The charge
 
-The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]) is invariant under the global phase rotation $\phi \to e^{i\alpha}\phi$, $\phi^\dagger \to e^{-i\alpha}\phi^\dagger$; Noether's theorem ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; this current: [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]) gives, for $\Delta\phi = i\phi$, the conserved current $j^\mu = i(\phi\,\partial^\mu\phi^* - \phi^*\partial^\mu\phi)$ (PS eq. (2.16)), conserved even though $m \ne 0$. Its quantum version is normalized as follows. The current, derived in [[§C1b.5 Noether's Theorem|§C1b.5]]:
+The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]) is invariant under the global phase rotation $\phi \to e^{i\alpha}\phi$, $\phi^\dagger \to e^{-i\alpha}\phi^\dagger$; Noether's theorem ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; this current: [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]) gives, for $\Delta\phi = i\phi$, the conserved current $j^\mu = i(\phi\,\partial^\mu\phi^* - \phi^*\partial^\mu\phi)$ (PS eq. (2.16)), conserved even though $m \ne 0$. Its quantum version is normalized as follows. The current, derived in [[§C1b.6 Conserved Charges and Internal Symmetries|§C1b.6]]:
 
 ![[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3]]
 
@@ -431,11 +431,21 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 > [!remark] Remark: Charge, not probability
 > - **What the negative frequencies became.** Classically the Klein–Gordon charge already splits as $|a_{\mathbf p}|^2 - |b_{\mathbf p}|^2$, positive frequencies against negative ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-2|QM Theorem §C13.1.2]]); after quantization each term counts quanta, and the negative-frequency solutions multiply $\hat b^\dagger$, the creation of antiparticles of *positive* energy. The density whose indefinite sign wrecked the probability interpretation ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-1|QM Theorem §C13.1.1]]) is the charge density: negative values are antimatter, not a pathology. Its eigenvalues are integers (in units of the species' charge), unlike a probability.
 > - **What changes from Quantum Mechanics.** [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-7|QM Theorem §C13.1.7]] built the charged field from two independent real fields in a box and normal ordered the charge by fiat. Here the complex field is quantized through its own canonical pairs, with the crossover $\hat\pi = \dot{\hat\phi}^\dagger$, the independence of the two species is derived ($[\hat a, \hat b] = 0$ comes out rather than being assumed), and the ordering is forced by the neutrality of the vacuum. The same result for a new reason: this section is the home.
-> - **Coupling.** If the field is electrically charged, $\hat Q$ times the unit of charge is the electric charge, and charge conservation (observed in every process, [[§C1a.1 Why Quantum Field Theory#^law-c1a-1-1|Law §C1a.1.1]]) is Noether's theorem for this phase symmetry; making $\alpha$ depend on $x$ requires a gauge field (for the Dirac field: [[§C8.2 Gauge Invariance#^thm-c8-2-4|Theorem §C8.2.4]]; [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^pr-c13-1-3|QM Principle §C13.1.3]] for minimal coupling of the wave function).
+> - **Coupling.** If the field is electrically charged, $\hat Q$ times the unit of charge is the electric charge, and charge conservation (observed in every process: the last sentence of [[§C1a.1 Why Quantum Field Theory#^law-c1a-1-1|Law §C1a.1.1]]) is Noether's theorem for this phase symmetry; making $\alpha$ depend on $x$ requires a gauge field (for the Dirac field: [[§C8.2 Gauge Invariance#^thm-c8-2-4|Theorem §C8.2.4]]; [[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^pr-c13-1-3|QM Principle §C13.1.3]] for minimal coupling of the wave function).
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5 (Example 2) and Ch. 4 §4.7 · the user's pre-course notes, §3.4 (Remark "The charge interpretation of ρ") · Yu §2.4.3, eq. (2.213)*
 
 ^rem-c2a-5-3
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] — $\hat\phi$, $\hat\phi^\dagger$, $\hat a_{\mathbf p}$, $\hat b_{\mathbf p}$ are operator-valued distributions; the relations hold after smearing.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]] — integration by parts with the surface term dropped, in the distributional sense (the gradient term of $\hat H$).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1 — a smooth function that vanishes on the support of δ, times δ, is zero: the terms that do not survive in the commutators and in $\hat H$.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 3, [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]] — $\delta^3(\mathbf 0)$ has no value and becomes the volume in a box: the zero-point energy and the zero-point charge.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] — the plane-wave delta as an identity in $\mathcal S'$ and the exchange of the $d^3x$ and momentum integrals.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], 1 — the relabelling $\mathbf p \to -\mathbf p$ in the negative-frequency terms.
 
 > [!remark]- Connections
 > - A complex field is two real fields of the same mass, and $\phi \to e^{i\alpha}\phi$ is a rotation of the pair $(\phi_1, \phi_2)$: U(1) $\cong$ SO(2), and the current in real components is $\phi_1\partial^\mu\phi_2 - \phi_2\partial^\mu\phi_1$, the field-space analogue of angular momentum $xp_y - yp_x$ — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-8|Theorem §C1b.2.8]], [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-2|Example §C1b.6.2]], [[§C1b.6 Conserved Charges and Internal Symmetries#^rem-c1b-6-2|§C1b.6, Remark: Global, internal, and what a local phase would need]]; [[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]] for conserved quantities as generators.
@@ -443,7 +453,7 @@ The Lagrangian ([[§C1b.2 The Action Principle and the Euler–Lagrange Equation
 > - The ordering problem is the field-theory version of the oscillator's zero-point energy, but with an observable consequence; the ordering prescription chosen here is the same normal ordering that Wick's theorem builds on — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-2|Remark: Normal ordering is a choice of quantization]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]].
 > - Particle and antiparticle having the same mass is guaranteed here because both are created by one field on one mass shell; in general it is the CPT theorem — [[§C9.11 CPT and the CPT Theorem#^thm-c9-11-6|Theorem §C9.11.6]].
 > - Under parity the complex field goes to $\eta_a\hat\phi(\tilde x)$ only if the antiparticle phase is the conjugate of the particle phase, so a particle–antiparticle pair has even intrinsic parity (a fermion pair odd); and because parity commutes with $\hat Q$, the charge rotation $e^{-i\theta\hat Q}$ shifts the parity phase at will — [[§C9.2 Parity of the Scalar Field#^thm-c9-2-2|Theorem §C9.2.2]], [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-2|Theorem §C9.5.2]], [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-8|Theorem §C9.5.8]]; charge conjugation and time reversal of the complex scalar field are [[§C9.12 C, T and CPT for the Complex Scalar Field|§C9.12]].
-> - The Heisenberg equations of the complex field, $\dot{\hat\phi} = \hat\pi^\dagger$ and $\dot{\hat\pi}^\dagger = (\nabla^2 - m^2)\hat\phi$, reproduce the Klein–Gordon equation (Problem Set 3, Problem 2(a2)) — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]; the complex field's propagator $\langle0|T\{\hat\phi(x)\hat\phi^\dagger(y)\}|0\rangle$ propagates a particle one way and an antiparticle the other and equals $D_F(x - y)$, while $\langle0|T\{\hat\phi\hat\phi\}|0\rangle = 0$, which orients the lines of complex-scalar diagrams — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3.
+> - The Heisenberg equations of the complex field, $\dot{\hat\phi} = \hat\pi^\dagger$ and $\dot{\hat\pi}^\dagger = (\nabla^2 - m^2)\hat\phi$, reproduce the Klein–Gordon equation (Problem Set 3, Problem 2(a2)) — [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]; the complex field's propagator $\langle0|T\{\hat\phi(x)\hat\phi^\dagger(y)\}|0\rangle$ propagates a particle one way and an antiparticle the other and equals $D_F(x - y)$ ([[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]] for $D_F$), while $\langle0|T\{\hat\phi\hat\phi\}|0\rangle = 0$, which orients the lines of complex-scalar diagrams — [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-2|Theorem §C6a.7.2]], 3.
 > - The complex field is an operator-valued distribution exactly as the real one: smeared with a real test function, $\hat\phi(f) = \hat a(g_f) + \hat b^\dagger(g_f)$ with $g_f = \tilde f/\sqrt{2E_{\mathbf p}}$ (the computation of [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], 3, with $\hat a^\dagger \to \hat b^\dagger$), no longer Hermitian; its relations and its two mode algebras hold after smearing — [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]].
 > - The ordering constants of $\hat H$ and $\hat Q$ are δ at its singular point; the box makes them $\sum_{\mathbf k}E_{\mathbf k}$ and $-\frac12\sum_{\mathbf k}1$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]]) — [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], [[§CA.2 Generalized Functions#^thm-ca-2-10|Theorem §CA.2.10]].
 > - The mode computations use the plane-wave delta (an identity in $\mathcal S'$), Fubini for wave packets with the split-exponential rule, relabelling with Jacobian 1, evaluation of smooth prefactors on the support of δ, and integration by parts with fall-off — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]].

@@ -9,10 +9,10 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: fields — Vector fields cannot be pushed forward along an arbitrary smooth map, but two fields can be related by one; related fields have related brackets, and a diffeomorphism carries fields and brackets across.*
 
-*Lecture 17. Back to vector fields, still from the operator point of view; vector fields as generators of dynamics come later. Recap: every [[§56 Vector Fields#^def-56-1|vector field]] defines a [[§56 Vector Fields#^def-56-5|derivation]] of $C^\infty(M)$, and conversely (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]], Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]); so the [[§58 Lie Bracket and Lie Algebra#^def-58-1|commutator]] of two fields is again a field (Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]). Officially, a vector field is a smooth section of the tangent bundle (Definition [[§56 Vector Fields#^def-56-1|§56.1]]).*
+*Lecture 17. Back to vector fields, still from the operator point of view; vector fields as generators of dynamics come later. Recap: every [[§56 Vector Fields#^def-56-1|vector field]] defines a [[§56 Vector Fields#^def-56-7|derivation]] of $C^\infty(M)$, and conversely (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]], Proposition [[§56 Vector Fields#^prop-56-10|§56.10]]); so the [[§58 Lie Bracket and Lie Algebra#^def-58-1|commutator]] of two fields is again a field (Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]). Officially, a vector field is a smooth section of the tangent bundle (Definition [[§56 Vector Fields#^def-56-1|§56.1]]).*
 
 > [!remark] Remark: Vector Fields Do Not Push Forward
-> Given a [[§19 Smooth Functions and Smooth Maps#^def-19-3|smooth map]] $F : M \to N$, in general vector fields can be neither pushed forward nor pulled back: vector fields have no functorial properties, as opposed to [[§53 One-Forms#^def-53-1|differential forms]], which can always be [[§53 One-Forms#^def-53-4|pulled back]]. Single tangent vectors *can* be [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushed forward]], by $dF_p$; the trouble is assembling the results into a field on $N$.
+> Given a [[§19 Smooth Functions and Smooth Maps#^def-19-3|smooth map]] $F : M \to N$, in general vector fields can be neither pushed forward nor pulled back: vector fields have no functorial properties, as opposed to [[§53 One-Forms#^def-53-1|differential forms]], which can always be [[§53 One-Forms#^def-53-8|pulled back]]. Single tangent vectors *can* be [[§28 Derivations and the Abstract Tangent Space#^def-28-6|pushed forward]], by $dF_p$; the trouble is assembling the results into a field on $N$.
 > - If $F$ is not injective, two points $p_1 \ne p_2$ with $F(p_1) = F(p_2) = q$ give two candidates $dF_{p_1}(\mathbf{X}_{p_1})$ and $dF_{p_2}(\mathbf{X}_{p_2})$ at $q$, in general different, so the would-be pushforward is multi-valued.
 > - If $F$ is not surjective, a point $q' \notin F(M)$ gets no candidate at all, so nothing defines the field outside the image.
 
@@ -92,7 +92,7 @@ $$
 > [!proof]+ Proof
 > *(Lecture 17, as a question to the class: which components can a $\pi$-related field have? The first component is forced to be $b(x)$; the second is arbitrary. The computation is filled in.)* By Proposition [[§56 Vector Fields#^prop-56-1|§56.1]] in the standard chart of $\mathbb{R}^2$, every vector field on $\mathbb{R}^2$ can be written $\mathbf{X} = a\, \partial_x + c\, \partial_y$ with $a, c \in C^\infty(\mathbb{R}^2)$. Since $\pi(x, y) = x$, Definition [[§59 Related Vector Fields#^def-59-2|§59.2]] says that $\mathbf{X}$ is $\pi$-related to $\mathbf{Y}$ if and only if $d\pi_{(x,y)}(\mathbf{X}_{(x,y)}) = \mathbf{Y}_x$ for every $(x, y)$. So compute the left side.
 >
-> *The pushforwards of the coordinate vectors.* Let $[g]$ be a germ at $x$ on $\mathbb{R}$. The function $g \circ \pi$ is $(x', y') \mapsto g(x')$. By Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] and then Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] in the standard chart,
+> *The pushforwards of the coordinate vectors.* Let $[g]$ be a germ at $x$ on $\mathbb{R}$. The function $g \circ \pi$ is $(x', y') \mapsto g(x')$. By Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] and then Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]] in the standard chart,
 >
 > $$
 > d\pi\big(\partial_x|_{(x,y)}\big)[g] = \partial_x|_{(x,y)}[g \circ \pi] = \partial_x (g \circ \pi)(x,y) = g'(x) = \frac{d}{dx}\Big|_x [g], \qquad
@@ -112,11 +112,11 @@ $$
 > d\pi_{(x,y)}(\mathbf{X}_{(x,y)}) = a(x, y)\, d\pi\big(\partial_x|_{(x,y)}\big) + c(x, y)\, d\pi\big(\partial_y|_{(x,y)}\big) = a(x, y)\, \frac{d}{dx}\Big|_x .
 > $$
 >
-> This equals $\mathbf{Y}_x = b(x)\, \frac{d}{dx}\big|_x$ if and only if $\big(a(x,y) - b(x)\big)\, \frac{d}{dx}\big|_x = 0$, that is, if and only if $a(x, y) = b(x)$, because $d/dx|_x \ne 0$ (it is a basis of $T_x\mathbb{R}$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). So the fields $\pi$-related to $\mathbf{Y}$ are those with $a(x, y) = b(x)$ for all $(x, y)$, and $c$ is not constrained. Conversely, for every $c \in C^\infty(\mathbb{R}^2)$ the section $b(x)\,\partial_x + c\,\partial_y$ has smooth coefficients ($(x, y) \mapsto b(x)$ is $b \circ \pi$), so it is a vector field (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]), and by the computation it is $\pi$-related to $\mathbf{Y}$.
+> This equals $\mathbf{Y}_x = b(x)\, \frac{d}{dx}\big|_x$ if and only if $\big(a(x,y) - b(x)\big)\, \frac{d}{dx}\big|_x = 0$, that is, if and only if $a(x, y) = b(x)$, because $d/dx|_x \ne 0$ (it is a basis of $T_x\mathbb{R}$, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]). So the fields $\pi$-related to $\mathbf{Y}$ are those with $a(x, y) = b(x)$ for all $(x, y)$, and $c$ is not constrained. Conversely, for every $c \in C^\infty(\mathbb{R}^2)$ the section $b(x)\,\partial_x + c\,\partial_y$ has smooth coefficients ($(x, y) \mapsto b(x)$ is $b \circ \pi$), so it is a vector field (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]), and by the computation it is $\pi$-related to $\mathbf{Y}$.
 
 ^pf-ex-59-1
 
-*Uses:* [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§32 The Cotangent Space#^def-32-2|Def. §32.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]
+*Uses:* [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§32 The Cotangent Space#^def-32-2|Def. §32.2]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]
 
 Only the horizontal component matters, and it must be the same along each vertical line, the fibre $\pi^{-1}(x)$, equal to the value of $\mathbf{Y}$ at $x$ below.
 
@@ -136,7 +136,7 @@ Only the horizontal component matters, and it must be the same along each vertic
 > \mathbf{X}(g \circ F) = (\mathbf{Y}g) \circ F \qquad \text{for every } g \in C^\infty(N),
 > $$
 >
-> that is, $\mathbf{X} \circ F^{\ast} = F^{\ast} \circ \mathbf{Y}$: the pullback $F^{\ast}$ intertwines $\mathbf{X}$ and $\mathbf{Y}$ as [[§56 Vector Fields#^def-56-5|derivations]].
+> that is, $\mathbf{X} \circ F^{\ast} = F^{\ast} \circ \mathbf{Y}$: the pullback $F^{\ast}$ intertwines $\mathbf{X}$ and $\mathbf{Y}$ as [[§56 Vector Fields#^def-56-7|derivations]].
 >
 > *Lee: Proposition 8.16*
 
@@ -146,7 +146,7 @@ Only the horizontal component matters, and it must be the same along each vertic
 *The pullback $F^{\ast}$ intertwines the two fields as operators: the square commutes exactly when $\mathbf{X}$ and $\mathbf{Y}$ are $F$-related.*
 
 > [!proof]+ Proof
-> *(Lecture 17, a sketch of the proof; the step for the converse is filled in.)* The two forms of the condition are the same, since $(\mathbf{X} \circ F^{\ast})(g) = \mathbf{X}(g \circ F)$ and $(F^{\ast} \circ \mathbf{Y})(g) = (\mathbf{Y}g) \circ F$; and both sides are functions on $M$, so the condition says that they agree at every $p \in M$, for every $g$. Let $g \in C^\infty(N)$ and $p \in M$. The value at $p$ of a field applied to a function is the tangent vector at $p$ applied to its germ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]). With this, and the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) for $D = \mathbf{X}_p$ — germs pull back, so derivations push forward —
+> *(Lecture 17, a sketch of the proof; the step for the converse is filled in.)* The two forms of the condition are the same, since $(\mathbf{X} \circ F^{\ast})(g) = \mathbf{X}(g \circ F)$ and $(F^{\ast} \circ \mathbf{Y})(g) = (\mathbf{Y}g) \circ F$; and both sides are functions on $M$, so the condition says that they agree at every $p \in M$, for every $g$. Let $g \in C^\infty(N)$ and $p \in M$. The value at $p$ of a field applied to a function is the tangent vector at $p$ applied to its germ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]). With this, and the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) for $D = \mathbf{X}_p$ — germs pull back, so derivations push forward —
 >
 > $$
 > \mathbf{X}(g \circ F)(p) = \mathbf{X}_p[g \circ F] = dF_p(\mathbf{X}_p)[g],
@@ -156,7 +156,7 @@ Only the horizontal component matters, and it must be the same along each vertic
 >
 > *Related implies intertwining.* If the fields are $F$-related, then $dF_p(\mathbf{X}_p) = \mathbf{Y}_{F(p)}$ (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]), so the right-hand sides agree, for every $g$ and $p$; that is, $\mathbf{X}(g \circ F) = (\mathbf{Y}g) \circ F$.
 >
-> *Intertwining implies related.* Conversely, suppose $\mathbf{X}(g \circ F) = (\mathbf{Y}g) \circ F$ for every $g \in C^\infty(N)$, and fix $p \in M$. By the display, the two derivations $dF_p(\mathbf{X}_p)$ and $\mathbf{Y}_{F(p)}$ at $F(p)$ agree on every global function $g$. Every germ $[h]$ at $F(p)$ has a global representative $g \in C^\infty(N)$, $[g] = [h]$ (Corollary [[§56 Vector Fields#^cor-56-5|§56.5]]), so
+> *Intertwining implies related.* Conversely, suppose $\mathbf{X}(g \circ F) = (\mathbf{Y}g) \circ F$ for every $g \in C^\infty(N)$, and fix $p \in M$. By the display, the two derivations $dF_p(\mathbf{X}_p)$ and $\mathbf{Y}_{F(p)}$ at $F(p)$ agree on every global function $g$. Every germ $[h]$ at $F(p)$ has a global representative $g \in C^\infty(N)$, $[g] = [h]$ (Corollary [[§56 Vector Fields#^cor-56-8|§56.8]]), so
 >
 > $$
 > dF_p(\mathbf{X}_p)[h] = dF_p(\mathbf{X}_p)[g] = \mathbf{Y}_{F(p)}[g] = \mathbf{Y}_{F(p)}[h] .
@@ -166,7 +166,7 @@ Only the horizontal component matters, and it must be the same along each vertic
 
 ^pf-59-1
 
-*Uses:* [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§56 Vector Fields#^cor-56-5|§56.5]], [[§56 Vector Fields#^lem-56-3|§56.3]]
+*Uses:* [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§56 Vector Fields#^cor-56-8|§56.8]], [[§56 Vector Fields#^lem-56-4|§56.4]]
 
 > [!theorem] Proposition §59.2: Pushforward by a Diffeomorphism
 > Let $F : M \to N$ be a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]] and $\mathbf{X} \in \mathfrak{X}(M)$. Then the [[§59 Related Vector Fields#^def-59-1|pushforward]] $F_{\ast}\mathbf{X}$ is smooth, it is the unique vector field on $N$ that is [[§59 Related Vector Fields#^def-59-2|F-related]] to $\mathbf{X}$, and for every $g \in C^\infty(N)$
@@ -180,9 +180,9 @@ Only the horizontal component matters, and it must be the same along each vertic
 ^prop-59-2
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Four things are claimed: the formula, smoothness, $F$-relatedness, and uniqueness. Here $(F_\ast\mathbf{X})\,g$ denotes the function $q \mapsto (F_\ast\mathbf{X})_q[g]$ on $N$, as in Lemma [[§56 Vector Fields#^lem-56-8|§56.8]].
+> *(Not from lecture; filled in.)* Four things are claimed: the formula, smoothness, $F$-relatedness, and uniqueness. Here $(F_\ast\mathbf{X})\,g$ denotes the function $q \mapsto (F_\ast\mathbf{X})_q[g]$ on $N$, as in Lemma [[§56 Vector Fields#^lem-56-11|§56.11]].
 >
-> *The formula.* For $q \in N$ put $p = F^{-1}(q)$. By Definition [[§59 Related Vector Fields#^def-59-1|§59.1]], then Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] with $D = \mathbf{X}_p$, then Lemma [[§56 Vector Fields#^lem-56-3|§56.3]],
+> *The formula.* For $q \in N$ put $p = F^{-1}(q)$. By Definition [[§59 Related Vector Fields#^def-59-1|§59.1]], then Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]] with $D = \mathbf{X}_p$, then Lemma [[§56 Vector Fields#^lem-56-4|§56.4]],
 >
 > $$
 > (F_\ast\mathbf{X})_q[g] = dF_p(\mathbf{X}_p)[g] = \mathbf{X}_p[g \circ F] = \mathbf{X}(g \circ F)(p) = \big(\mathbf{X}(g \circ F) \circ F^{-1}\big)(q) ,
@@ -190,7 +190,7 @@ Only the horizontal component matters, and it must be the same along each vertic
 >
 > which is the formula.
 >
-> *Smoothness.* At each $q$, $(F_\ast\mathbf{X})_q = dF_p(\mathbf{X}_p)$ lies in $T_{F(p)}N = T_qN$, so $F_\ast\mathbf{X}$ is a section of $TN$. In the formula, $g \circ F \in C^\infty(M)$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), so $\mathbf{X}(g \circ F)$ is smooth (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]); and $F^{-1}$ is smooth because $F$ is a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]), so the composite $\mathbf{X}(g \circ F) \circ F^{-1}$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). This holds for every $g \in C^\infty(N)$, so $F_\ast\mathbf{X}$ is smooth by Lemma [[§56 Vector Fields#^lem-56-8|§56.8]].
+> *Smoothness.* At each $q$, $(F_\ast\mathbf{X})_q = dF_p(\mathbf{X}_p)$ lies in $T_{F(p)}N = T_qN$, so $F_\ast\mathbf{X}$ is a section of $TN$. In the formula, $g \circ F \in C^\infty(M)$ (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), so $\mathbf{X}(g \circ F)$ is smooth (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]); and $F^{-1}$ is smooth because $F$ is a diffeomorphism (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-4|§19.4]]), so the composite $\mathbf{X}(g \circ F) \circ F^{-1}$ is smooth (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). This holds for every $g \in C^\infty(N)$, so $F_\ast\mathbf{X}$ is smooth by Lemma [[§56 Vector Fields#^lem-56-11|§56.11]].
 >
 > *$F$-related.* For $p \in M$, $F^{-1}(F(p)) = p$, so Definition [[§59 Related Vector Fields#^def-59-1|§59.1]] at $q = F(p)$ reads $(F_\ast\mathbf{X})_{F(p)} = dF_p(\mathbf{X}_p)$. This is Definition [[§59 Related Vector Fields#^def-59-2|§59.2]] with $\mathbf{Y} = F_\ast\mathbf{X}$.
 >
@@ -204,7 +204,7 @@ Only the horizontal component matters, and it must be the same along each vertic
 
 ^pf-59-2
 
-*Uses:* [[§59 Related Vector Fields#^def-59-1|Def. §59.1]], [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§56 Vector Fields#^lem-56-8|§56.8]]
+*Uses:* [[§59 Related Vector Fields#^def-59-1|Def. §59.1]], [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§56 Vector Fields#^lem-56-11|§56.11]]
 
 The reason for the characterization through operators is the following proposition.
 
@@ -224,7 +224,7 @@ The reason for the characterization through operators is the following propositi
 >
 > Let $g \in C^\infty(N)$. The same proposition, applied to the pairs $(\mathbf{X}_i, \mathbf{Y}_i)$, gives $\mathbf{X}_i(h \circ F) = (\mathbf{Y}_i h) \circ F$ for every $h \in C^\infty(N)$ and $i = 1, 2$.
 >
-> *The composite $\mathbf{X}_1\mathbf{X}_2$.* Apply this first for $i = 2$ with $h = g$, and then for $i = 1$ with $h = \mathbf{Y}_2 g$, which lies in $C^\infty(N)$ by Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]:
+> *The composite $\mathbf{X}_1\mathbf{X}_2$.* Apply this first for $i = 2$ with $h = g$, and then for $i = 1$ with $h = \mathbf{Y}_2 g$, which lies in $C^\infty(N)$ by Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]:
 >
 > $$
 > \mathbf{X}_1\mathbf{X}_2(g \circ F) = \mathbf{X}_1\big((\mathbf{Y}_2 g) \circ F\big) = (\mathbf{Y}_1\mathbf{Y}_2 g) \circ F .
@@ -246,7 +246,7 @@ The reason for the characterization through operators is the following propositi
 
 ^pf-59-3
 
-*Uses:* [[§59 Related Vector Fields#^prop-59-1|§59.1]], [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^lem-56-3|§56.3]]
+*Uses:* [[§59 Related Vector Fields#^prop-59-1|§59.1]], [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^lem-56-4|§56.4]]
 
 > [!theorem] Corollary §59.4: Diffeomorphisms Preserve Brackets
 > If $F : M \to N$ is a [[§19 Smooth Functions and Smooth Maps#^def-19-4|diffeomorphism]] and $\mathbf{X}_1, \mathbf{X}_2 \in \mathfrak{X}(M)$, then $F_{\ast}[\mathbf{X}_1, \mathbf{X}_2] = [F_{\ast}\mathbf{X}_1, F_{\ast}\mathbf{X}_2]$.
@@ -267,8 +267,8 @@ The reason for the characterization through operators is the following propositi
 ![[m591-56-4.svg]]
 
 > [!remark] Remark: Conversion Diagram for Vector Fields
-> 1. *Section to operator.* $(\mathbf{X}f)(p) = \mathbf{X}_p[f]$, a derivation of $C^\infty(M)$: $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]); $\mathbf{X}f$ is smooth for every smooth $f$ exactly when $\mathbf{X}$ is smooth (Lemma [[§56 Vector Fields#^lem-56-8|§56.8]]).
-> 2. *Operator to section.* Every derivation of $C^\infty(M)$ is a vector field: $\mathbf{X}_p[f] = (\mathbf{X}\tilde f)(p)$ for a global $\tilde f$ with the same germ at $p$, which exists by bump functions and does not depend on the choice (Corollary [[§56 Vector Fields#^cor-56-5|§56.5]], Lemma [[§56 Vector Fields#^lem-56-6|§56.6]], Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]).
+> 1. *Section to operator.* $(\mathbf{X}f)(p) = \mathbf{X}_p[f]$, a derivation of $C^\infty(M)$: $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]); $\mathbf{X}f$ is smooth for every smooth $f$ exactly when $\mathbf{X}$ is smooth (Lemma [[§56 Vector Fields#^lem-56-11|§56.11]]).
+> 2. *Operator to section.* Every derivation of $C^\infty(M)$ is a vector field: $\mathbf{X}_p[f] = (\mathbf{X}\tilde f)(p)$ for a global $\tilde f$ with the same germ at $p$, which exists by bump functions and does not depend on the choice (Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], Lemma [[§56 Vector Fields#^lem-56-9|§56.9]], Proposition [[§56 Vector Fields#^prop-56-10|§56.10]]).
 > 3. *Section to components.* On $U$, $X^j = \mathbf{X}(x^j)$, that is, $X^j(p) = \mathbf{X}_p[x^j] = dx^j|_p(\mathbf{X}_p)$.
 > 4. *Components to section.* $\mathbf{X}_p = \sum_j X^j(p)\, \partial/\partial x^j|_p$, smooth if and only if all $X^j$ are (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]); then $\mathbf{X}f = \sum_j X^j\, \partial f/\partial x^j$.
 >
@@ -307,7 +307,7 @@ The reason for the characterization through operators is the following propositi
 ^lem-59-5
 
 > [!proof]+ Proof
-> *(Not from lecture; the step the proof of Proposition [[§59 Related Vector Fields#^prop-59-6|§59.6]] uses, written out.)* Let $p \in S \cap U$. By Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], applied to the adapted chart with the coordinates along $S$ listed first, $\iota_{\ast p}(T_pS) = \operatorname{Span}\{ \partial/\partial x^1|_p, \ldots, \partial/\partial x^k|_p \}$. The $m$ vectors $\partial/\partial x^i|_p$, $\partial/\partial y^a|_p$ form a basis of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), and
+> *(Not from lecture; the step the proof of Proposition [[§59 Related Vector Fields#^prop-59-6|§59.6]] uses, written out.)* Let $p \in S \cap U$. By Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], applied to the adapted chart with the coordinates along $S$ listed first, $\iota_{\ast p}(T_pS) = \operatorname{Span}\{ \partial/\partial x^1|_p, \ldots, \partial/\partial x^k|_p \}$. The $m$ vectors $\partial/\partial x^i|_p$, $\partial/\partial y^a|_p$ form a basis of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), and
 >
 > $$
 > \mathbf{X}_p = \sum_i f^i(p)\, \frac{\partial}{\partial x^i}\Big|_p + \sum_a g^a(p)\, \frac{\partial}{\partial y^a}\Big|_p .
@@ -317,7 +317,7 @@ The reason for the characterization through operators is the following propositi
 
 ^pf-59-5
 
-*Uses:* [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]
+*Uses:* [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]
 
 > [!theorem] Proposition §59.6: Brackets of Fields Tangent to a Submanifold
 > Let $S \subseteq M$ be a regular submanifold and $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ tangent to $S$ (Definition [[§59 Related Vector Fields#^def-59-3|§59.3]]). Then $[\mathbf{X}, \mathbf{Y}]$ is also tangent to $S$.

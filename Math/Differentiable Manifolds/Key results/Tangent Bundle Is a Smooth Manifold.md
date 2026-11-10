@@ -5,28 +5,28 @@ source: "[[Differentiable Manifolds]]"
 aliases: ["MATH 591 51.2", "smooth atlas of TM", "Lee Proposition 3.18"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§51 The Tangent Bundle#^prop-51-2]]
+![[§51 The Tangent Bundle#^prop-51-3]]
 
 ## Treated in
-- [[§51 The Tangent Bundle#^prop-51-2|Proposition §51.2: The Transition Maps of TM]], in [[§51 The Tangent Bundle]]
+- [[§51 The Tangent Bundle#^prop-51-3|Proposition §51.3: The Transition Maps of TM]], in [[§51 The Tangent Bundle]]
 
 ## Its proof uses
 - [[§2 Topological Manifolds#^prop-2-11|Proposition §2.11: Transition Functions Are Homeomorphisms]]
 - [[§17 Differentiable Structures#^def-17-3|Definition §17.3: Diffeomorphism of Open Subsets of Euclidean Space]]
 - [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2: The Abstract Tangent Space]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Definition §29.2: Coordinate Derivations]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7: Basis Theorem]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Definition §29.3: Coordinate Derivations]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8: Basis Theorem]]
 - [[§30 The Differential in Coordinates#^prop-30-1|Proposition §30.1: Partial Derivatives Upstairs and Downstairs]]
 - [[§51 The Tangent Bundle#^def-51-5|Definition §51.5: Charts of TM]]
 
 ## Used in (Differentiable Manifolds)
-- [[§51 The Tangent Bundle#^prop-51-3|Proposition §51.3: The Topology and Smooth Structure of TM]]
-- [[§51 The Tangent Bundle#^prop-51-5|Proposition §51.5: The Tangent Bundle Is a Manifold (Claim)]]
+- [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4: The Topology and Smooth Structure of TM]]
+- [[§51 The Tangent Bundle#^prop-51-1|Proposition §51.1: The Tangent Bundle Is a Manifold (Claim)]]
 - [[§52 The Cotangent Bundle#^prop-52-1|Proposition §52.1: The Transition Maps of T^(ast)M]]
 - [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]
 
 ## Connections
-- **Used for.** TM is a manifold of dimension 2m fibring over M with fibre ℝᵐ, with the zero section a submanifold ([[§51 The Tangent Bundle#^cor-51-4|§51.4]]); vector fields are its sections ([[§56 Vector Fields#^def-56-1|Def. §56.1]]). The same charts with dual bases make T*M a vector bundle ([[§52 The Cotangent Bundle#^prop-52-1|§52.1]]).
+- **Used for.** TM is a manifold of dimension 2m fibring over M with fibre ℝᵐ, with the zero section a submanifold ([[§51 The Tangent Bundle#^cor-51-5|§51.5]]); vector fields are its sections ([[§56 Vector Fields#^def-56-1|Def. §56.1]]). The same charts with dual bases make T*M a vector bundle ([[§52 The Cotangent Bundle#^prop-52-1|§52.1]]).
 - **How the charts transform.** Over an overlap the base point moves by the transition map of M and the vector by its Jacobian, the change of coordinates of [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]; covector components move by the inverse transpose. These are the change-of-basis formula and the transpose matrix of a dual map ([[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]], [[§12 Duality#^ladr-3-132|LADR 3.132]]).
 - **Locally a product.** The trivializations identify each TU with U × ℝᵐ, but a fibration need not be a global product, as the Möbius band shows ([[§41 Examples of Fibrations#^ex-41-2|Ex. §41.2]]). Unlike the Hopf fibration, which has no section (Example [[§46 Projective Spaces and the Hopf Fibration#^ex-46-4|§46.4]]), TM always has the zero section.
 - **Coming later in the course.** Flows: a vector field is a section of TM ([[§56 Vector Fields#^def-56-1|Def. §56.1]]), and its integral curves will fit together into a flow on M.

@@ -22,7 +22,7 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 >
 > *Lee: Ch. 4, Immersions*
 
-^def-43-1
+^xdef-43-1
 
 > [!remark]- Connections
 > - The earlier definition, stated with submersions: [[§36 Submersions#^def-36-2|Def. §36.2]]; the dimension constraint there: [[§36 Submersions#^prop-36-1|§36.1]].
@@ -59,7 +59,7 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 > $$
 > *(Completion.)* Let rows $j_1, \ldots, j_m$ of $J$ be linearly independent, and let $P : \mathbb{R}^n \to \mathbb{R}^n$ be a permutation of coordinates moving positions $j_1, \ldots, j_m$ to positions $1, \ldots, m$. Replacing $\psi$ by $P \circ \psi$ lists the same coordinate functions $y^j$ in a new order; so it lists the components $F^j = y^j \circ F$, and hence the rows of $J$, in the same new order. Afterwards rows $1, \ldots, m$ of $J$ are linearly independent, so the top block $A$, which consists of them, is an $m \times m$ matrix of rank $m$, that is, invertible. We keep the names $\psi = (y^1, \ldots, y^n)$, $F^j$ and $J$ for the reordered chart, components and matrix.
 >
-> *4. The first $m$ components of $F$ are coordinates on $M$.* $A$ is the Jacobian at $p$, in the $x$-coordinates, of the map $U_0 \to \mathbb{R}^m$ that sends $q$ to the first $m$ components $\big(F^1(q), \ldots, F^m(q)\big)$ (Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]). *(Completion.)* Read in the $x$-coordinates, this map is $\Phi = (F^1, \ldots, F^m) \circ \varphi_0^{-1} : \varphi_0(U_0) \to \mathbb{R}^m$, with components $F^j \circ \varphi_0^{-1}$. By Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $\partial F^j/\partial x^i(p) = \partial (F^j \circ \varphi_0^{-1})/\partial r^i\big(\varphi_0(p)\big)$, so
+> *4. The first $m$ components of $F$ are coordinates on $M$.* $A$ is the Jacobian at $p$, in the $x$-coordinates, of the map $U_0 \to \mathbb{R}^m$ that sends $q$ to the first $m$ components $\big(F^1(q), \ldots, F^m(q)\big)$ (Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]]). *(Completion.)* Read in the $x$-coordinates, this map is $\Phi = (F^1, \ldots, F^m) \circ \varphi_0^{-1} : \varphi_0(U_0) \to \mathbb{R}^m$, with components $F^j \circ \varphi_0^{-1}$. By Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]], $\partial F^j/\partial x^i(p) = \partial (F^j \circ \varphi_0^{-1})/\partial r^i\big(\varphi_0(p)\big)$, so
 >
 > $$
 > \Phi'\big(\varphi_0(p)\big) = \Big[\frac{\partial (F^j \circ \varphi_0^{-1})}{\partial r^i}\big(\varphi_0(p)\big)\Big]_{1 \le j, i \le m} = \Big[\frac{\partial F^j}{\partial x^i}(p)\Big]_{1 \le j, i \le m} = A .
@@ -113,7 +113,7 @@ The third special type of map, dual to the submersions of [[§36 Submersions|§3
 
 ^pf-43-1
 
-*Uses:* [[§36 Submersions#^thm-36-6|§36.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§36 Submersions#^lem-36-5|§36.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
+*Uses:* [[§36 Submersions#^thm-36-6|§36.6]], [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§36 Submersions#^lem-36-5|§36.5]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-2|§19.2]], [[§1 Point-Set Topology Review#^prop-1-5|§1.5]]
 
 ![[m591-32-1.svg]]
 *The two changes of chart in one diagram, as on the board. On $M$, the chart $\tilde\varphi$ is made from the first $m$ components of $F$, which turns $F$ into the graph $\hat F$; on $N$, the straightening $\Sigma$ removes the graph, so that $\tilde F = \Sigma \circ \hat F$ is the inclusion.*
@@ -205,7 +205,7 @@ Globally this need not be the case: the whole image of an immersion need not be 
 > \gamma_{\ast t}\Big(\frac{\partial}{\partial r}\Big|_t\Big) = 2t\, \frac{\partial}{\partial r^1}\Big|_{\gamma(t)} + (3t^2 - 1)\, \frac{\partial}{\partial r^2}\Big|_{\gamma(t)} ,
 > $$
 >
-> the velocity $\dot\gamma(t)$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]), which is nonzero, because the coordinate derivations are linearly independent (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]) and the two coefficients do not both vanish. $T_t\mathbb{R}$ is spanned by $\partial/\partial r|_t$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), so a linear map on it that is nonzero on this vector has kernel $0$. Hence $\gamma_{\ast t}$ is injective for every $t$ (Definition [[§43 Immersions#^def-43-1|§43.1]]).
+> the velocity $\dot\gamma(t)$ (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|§31.3]]), which is nonzero, because the coordinate derivations are linearly independent (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]) and the two coefficients do not both vanish. $T_t\mathbb{R}$ is spanned by $\partial/\partial r|_t$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), so a linear map on it that is nonzero on this vector has kernel $0$. Hence $\gamma_{\ast t}$ is injective for every $t$ (Definition [[§36 Submersions#^def-36-2|§36.2]]).
 >
 > *Not injective.* $\gamma(1) = (1 - 1, \ 1 - 1) = (0, 0)$ and $\gamma(-1) = (1 - 1, \ -1 + 1) = (0, 0)$, so $\gamma(1) = \gamma(-1) = (0, 0)$, and $\gamma$ is not injective.
 >
@@ -227,7 +227,7 @@ Globally this need not be the case: the whole image of an immersion need not be 
 
 ^pf-ex-43-1
 
-*Uses:* [[§43 Immersions#^def-43-1|Def. §43.1]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|Def. §31.3]]
+*Uses:* [[§36 Submersions#^def-36-2|Def. §36.2]], [[§30 The Differential in Coordinates#^prop-30-5|§30.5]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§15 Connected Spaces#^thm-15-3|590 §15.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-3|Def. §31.3]]
 
 ![[m591-18-2.svg]]
 *The nodal cubic. The parameter values $t = -1$ and $t = 1$ both land on the origin, where the two branches cross; the arrows show the curve continuing, its domain being all of $\mathbb{R}$. A small disc around the crossing meets the image in an X, which is not a piece of a line.*
@@ -246,7 +246,7 @@ Globally this need not be the case: the whole image of an immersion need not be 
 
 ^pf-ex-43-2
 
-*Uses:* [[§43 Immersions#^def-43-1|Def. §43.1]], [[§12 Metric Topology#^thm-12-9|590 §12.9]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]]
+*Uses:* [[§36 Submersions#^def-36-2|Def. §36.2]], [[§12 Metric Topology#^thm-12-9|590 §12.9]], [[§3 Subspaces and Products#^def-3-1|Def. §3.1]]
 
 ![[m591-18-3.svg]]
 *The hook. The domain is an open interval, so neither end is attained: the left end of the image is missing (hollow), and the right end only approaches $P$. But $P$ is in the image, reached at $t_0$ by the strand passing through it — so points of the image near $P$ come from parameters near $t_0$* and *from parameters near $b$, which is exactly the failure of continuity of $\gamma^{-1}$. Lee's figure-eight (Example 4.19) is an explicit instance with both ends returning, $\beta(t) = (\sin 2t, \sin t)$ on $(-\pi, \pi)$, where the image near the origin is an X although $\beta$ is injective.*
@@ -259,6 +259,6 @@ Globally this need not be the case: the whole image of an immersion need not be 
 > - The image of Lee's figure-eight, as a topological space, is the wedge of two circles: [[Figure eight|590 Figure eight]].
 
 > [!remark] Remark: Embeddings — Next Time
-> To make the image of an [[§43 Immersions#^def-43-1|immersion]] a [[§37 Regular Submanifolds#^def-37-2|submanifold]], a topological condition has to be added: an *[[§44 Embeddings#^def-44-1|embedding]]* is an immersion that is a homeomorphism onto its image, and its image is a submanifold ([[§44 Embeddings#^thm-44-1|Theorem §44.1]]). Both were done in Lecture 14, together with the proof of the normal form above: see [[§44 Embeddings|§44]].
+> To make the image of an [[§36 Submersions#^def-36-2|immersion]] a [[§37 Regular Submanifolds#^def-37-2|submanifold]], a topological condition has to be added: an *[[§44 Embeddings#^def-44-1|embedding]]* is an immersion that is a homeomorphism onto its image, and its image is a submanifold ([[§44 Embeddings#^thm-44-1|Theorem §44.1]]). Both were done in Lecture 14, together with the proof of the normal form above: see [[§44 Embeddings|§44]].
 
 ^rem-43-1

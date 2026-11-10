@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions]] · ↑ [[· CA Mathematical Methods]] · [[§CA.8 Splitting Pairings and the Exponential Formula]] →
 
-*Sources: the user's PHY 513 notes, Ch. 14 §14.2 (Principle "Vacuum expectation values: complete contractions": the count $(n-1)!!$), §14.5 (Principle "The symmetry factor", Figure "Symmetry factors": the contraction counts) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.3, p. 89; §4.4, pp. 92–93 · Yu Zhao-Huan, 量子场论讲义, §6.3.1, eqs. (6.167)–(6.168); §7.3, eqs. (7.114)–(7.125) · the 493 notes (Group Theory) §25–§27, §29–§30, §41, §55 · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §1–§5, §7 · proofs written here; every count checked by enumeration (`qft-C/tools/l14/enumerate_pairings.py`).*
+*Sources: the user's PHY 513 notes, Ch. 14 §14.2 (Principle "Vacuum expectation values: complete contractions": the count $(n-1)!!$), §14.5 (Principle "The symmetry factor", Figure "Symmetry factors": the contraction counts) · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.3, p. 89; §4.4, pp. 92–93 · Yu Zhao-Huan, 量子场论讲义, §6.3.1, eqs. (6.167)–(6.168); §7.3, eqs. (7.114)–(7.125) · the 493 notes (Group Theory) §25–§27, §29–§30, §41, §58 · the user's note "Symmetry Factors and the Orbit–Stabilizer Theorem" (Oct 2026), §1–§5, §7 · proofs written here; every count checked by enumeration (`qft-C/tools/l14/enumerate_pairings.py`).*
 
 Wick's theorem turns a vacuum expectation value of free fields into a sum over the ways of grouping the fields in pairs ([[§C6a.6 Wick's Theorem|§C6a.6]]). Perturbation theory then asks two counting questions: how many pairings give the same formula, and how a sum over pairings splits when some fields are joined to fixed points and others are not. Both are questions about finite sets and permutation groups, with no physics in them. This section answers the first; the second is answered in [[§CA.8 Splitting Pairings and the Exponential Formula|§CA.8]]. Pairings are counted directly. Relabelling vertices and their legs is a group action, so pairings that give the same diagram form an orbit, and orbit–stabilizer ([[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]]) gives their number in terms of the diagram's automorphism group. The group theory is taken from the 493 notes (actions, orbits, stabilizers, semidirect products, the first isomorphism theorem). Statements are made for vertices with four half-edges, the case used so far.
 
@@ -119,6 +119,8 @@ Wick's theorem turns a vacuum expectation value of free fields into a sum over t
 
 ^der-ca-7-2
 
+*Uses:* [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-1|Def. §CA.7.1]], [[§25 Actions#^def-25-1|493 Def. §25.1]], [[§25 Actions#^thm-25-3|493 Thm. §25.3]]
+
 ## Group actions and orbit counting
 
 The counting below uses five statements of the 493 notes, proved there. An action of a group $G$ on a set:
@@ -211,6 +213,8 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 
 ^der-ca-7-3
 
+*Uses:* [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^lem-ca-7-2|Lemma §CA.7.2]]
+
 > [!definition] Definition §CA.7.4: Diagram, Automorphism Group, Symmetry Factor
 > For a labelled diagram $P \in \mathcal P(X_{E,n})$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]]):
 > 1. its **diagram** is the orbit $G_n\cdot P$ under the relabelling group ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]]; [[§27 Orbits#^def-27-1|493 Def. §27.1]]);
@@ -302,7 +306,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > g = \begin{pmatrix}1 & 2 & 3 & 4\\ 3 & 1 & 2 & 4\end{pmatrix} = (1\,3\,2) \qquad\text{or}\qquad g = \begin{pmatrix}1 & 2 & 3 & 4\\ 3 & 1 & 4 & 2\end{pmatrix} = (1\,3\,4\,2) = (1\,3\,2)(3\,4) :
 > $$
 >
-> two isomorphisms, the coset $(1\,3\,2)\operatorname{Stab}(P_t)$ with $\operatorname{Stab}(P_t) = \{\mathrm{id}, (3\,4)\}$ ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^der-ca-7-5|Derivation §CA.7.5]], Step 3).
+> two isomorphisms, the coset $(1\,3\,2)\operatorname{Stab}(P_t)$ with $\operatorname{Stab}(P_t) = \{\mathrm{id}, (3\,4)\}$: a leg permutation $g$ with $g\cdot P_t = P_t$ must have $g(1) = 1$, $g(2) = 2$ and $g(\{3, 4\}) = \{3, 4\}$ (the same stabilizer is listed in [[§CA.7 Pairings, Diagrams and Symmetry Factors#^der-ca-7-5|Derivation §CA.7.5]], Step 3).
 >
 > **What the derivation shows.**
 > - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]] (diagram = orbit, $\operatorname{Aut}$ = stabilizer) agrees with the graph notions: isomorphism classes of graphs with half-edges and their automorphism groups.
@@ -360,6 +364,8 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 
 ^der-ca-7-5
 
+*Uses:* [[§CA.7 Pairings, Diagrams and Symmetry Factors#^lem-ca-7-3|Lemma §CA.7.3]], [[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]]
+
 ![[ph-qft-ca-7-1.svg]]
 *The orbit picture of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]]. Left: one labelled diagram, a pairing of all half-edges (orange: leg $a$ of vertex $z_j$). Right: its diagram $D$; the map $\pi$ forgets the labels $j$ and $a$. The fiber $\pi^{-1}(D)$ is the orbit of the pairing under the relabelling group $G_n$, so $|\pi^{-1}(D)| = |G_n|/S$ by orbit–stabilizer, and dividing by $|G_n| = n!\,(4!)^n$ leaves $1/S$. (a) the tadpole, (b) the figure-eight, (c) the melon, (d)–(f) the sunset, the fish and the triangle (PHY 513, Problem Set 8, Problem 1(a)); each stabilizer is listed on the right, and $S$ agrees with the product formula of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]].*
 
@@ -391,7 +397,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > 5!! = 15 = \frac{24}{2} + \frac{24}{8} = 12 + 3 .
 > $$
 >
-> **Step 5** (check: $E = \varnothing$, $n = 2$). $|G_2| = 2\cdot24^2 = 1152$; the three diagrams are the melon ($S = 48$), the dumbbell ($S = 16$) and two figure-eights ($S = 128$) ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]]):
+> **Step 5** (check: $E = \varnothing$, $n = 2$). $|G_2| = 2\cdot24^2 = 1152$; the three diagrams are the melon ($S = 48$), the dumbbell ($S = 16$) and two figure-eights ($S = 128$) (the symmetry factors are computed below, in [[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]], with Theorem §CA.7.9; here they only illustrate the corollary, whose proof does not use them):
 >
 > $$
 > 7!! = 105 = \frac{1152}{48} + \frac{1152}{16} + \frac{1152}{128} = 24 + 72 + 9 .
@@ -440,7 +446,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 >
 > **What the derivation shows.**
 > - "Divide by the symmetry factor" is this identity: the prefactor $\frac{1}{n!}\bigl(\frac{1}{4!}\bigr)^n$ of perturbation theory cancels the size of the group, and each diagram keeps $1/|\operatorname{Aut}|$.
-> - Used in: the coefficient of a Feynman diagram ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]).
+> - Used in: the exponentiation of the vacuum bubbles ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-6|Theorem §C6a.11.6]]), and the exponential formula and its extension to other vertices ([[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]]). The coefficient of a Feynman diagram ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]) is the same identity, derived there from Theorem §CA.7.5.
 
 ^der-ca-7-7
 
@@ -496,6 +502,8 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 
 ^der-ca-7-8
 
+*Uses:* [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]]
+
 > [!theorem] Theorem §CA.7.9: The Symmetry Factor as a Product
 > For $P \in \mathcal P(X_{E,n})$ let $\Gamma_P \le S_n$ be the group of vertex permutations $\sigma$ (extended by the identity on $E$) that preserve all multiplicities and loop numbers, $m_P(\sigma u, \sigma w) = m_P(u, w)$, $\ell_P(\sigma v) = \ell_P(v)$. Then
 >
@@ -503,7 +511,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > S(P) = |\Gamma_P|\;\cdot\prod_{\text{vertices } v}2^{\ell_P(v)}\,\ell_P(v)!\;\cdot\prod_{\{u, w\},\,u \ne w}m_P(u, w)! .
 > $$
 >
-> In words: a factor 2 for each loop (its two ends can be exchanged), $k!$ for each set of $k$ loops at one vertex and for each set of $k$ lines joining the same two points, and the number of permutations of the vertices that map the diagram to itself.
+> In words: a factor 2 for each loop (its two ends can be exchanged), $k!$ for each set of $k$ loops at one vertex and for each set of $k$ lines joining the same two points, and the number of permutations of the vertices that map the diagram to itself. Lines ending at an external point give no factor: at most one line joins an external point to a given vertex, so $m_P \le 1$ there.
 >
 > *Source: PHY 513 Lecture 14, slides 17–18, and transcript · the user's PHY 513 notes, Ch. 14 §14.5 (Principle "The symmetry factor", "In practice, multiply") · PS §4.4, p. 93 · proof written here*
 
@@ -561,7 +569,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 
 ^der-ca-7-9
 
-*Uses:* [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]], [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]]
+*Uses:* [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-3|Def. §CA.7.3]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^der-ca-7-8|Derivation §CA.7.8]] (Steps 1–4), [[§41 The First and Second Isomorphism Theorems#^thm-41-1|493 Thm. §41.1]], [[§29 The Index and Lagrange's Theorem#^thm-29-2|493 Thm. §29.2]]
 
 ![[ph-qft-ca-7-5.svg]]
 *The product formula of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-9|Theorem §CA.7.9]]. (a) The three kinds of factor: $2^{\ell}\ell!$ for $\ell$ loops at one vertex, $m!$ for $m$ lines between two points, and $|\Gamma_P|$ for the vertex permutations that keep the drawing. (b) Four diagrams with their $S$; with external points fixed, $\Gamma_P$ can be trivial.*
@@ -625,4 +633,7 @@ Two more are linked where they are used: the first isomorphism theorem ([[§41 T
 > - The symmetry factor is a stabilizer order, and "divide by $S$" is orbit–stabilizer in disguise; the same counting gives the class equation and Burnside's lemma in group theory — [[§30 Orbit–Stabilizer#^thm-30-3|493 Thm. §30.3]], [[§30 Orbit–Stabilizer#^thm-30-7|493 Thm. §30.7]].
 > - The relabelling group $(S_4)^n \rtimes S_n$ is a wreath product, $S_4 \wr S_n$ (the user's note's $S_4 \wr S_k$, $k$ the number of vertices; the identification is Step 2 of [[§CA.7 Pairings, Diagrams and Symmetry Factors#^der-ca-7-4|Derivation §CA.7.4]]); the 493 notes construct the semidirect product it is built from — [[§58 Semidirect Products#^def-58-2|493 Def. §58.2]].
 > - The ordered simplex of [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-4|Theorem §CA.1.4]] produced the $\frac{1}{n!}$ of the Dyson series; here the same $\frac{1}{n!}$ meets the $n!$ relabellings of the vertices — [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]].
-> - **Used in** (C6a places): Definition §CA.7.1 — Wick's theorem for ordinary products ([[§C6a.6 Wick's Theorem#^thm-c6a-6-4|★ Theorem §C6a.6.4]]); Theorem §CA.7.1 — the vacuum values of Wick's theorem, the first-order count and the count at every order ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-3|Theorem §C6a.7.3]]); Definitions §CA.7.2–§CA.7.5, Lemma §CA.7.3, Theorems §CA.7.4, §CA.7.5 and §CA.7.8 — the coefficient $1/S$ and the position-space rules ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]); Corollary §CA.7.6 — the first-order count 15 = 12 + 3 as two orbits ([[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]]); Theorem §CA.7.9 and Example §CA.7.1 — the symmetry factors in practice ([[§C6a.9 Symmetry Factors in Practice|§C6a.9]], [[§C6a.9 Symmetry Factors in Practice#^cau-c6a-9-1|§C6a.9, Caution: Loops at one vertex are permuted too]]; restated in physics form as [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]); Theorem §CA.7.7 — "divide by the symmetry factor" ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]).
+> - **Used in** (C6a places): Definition §CA.7.1 — Wick's theorem for ordinary products ([[§C6a.6 Wick's Theorem#^thm-c6a-6-4|★ Theorem §C6a.6.4]]), [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§C6a.6 Wick's Theorem|§C6a.6]]; Theorem §CA.7.1 — the vacuum values of Wick's theorem, the first-order count and the count at every order ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]], [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-3|Theorem §C6a.7.3]]), [[§C6a.0 Setups and Observables#^ex-c6a-0-1|Example §C6a.0.1]], [[§C6a.6 Wick's Theorem#^ex-c6a-6-1|Example §C6a.6.1]], [[§C6a.6 Wick's Theorem#^ex-c6a-6-2|Example §C6a.6.2]], [[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]], [[§C6a.6 Wick's Theorem|§C6a.6]], [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]]; Definitions §CA.7.2–§CA.7.5, Lemma §CA.7.3, Theorems §CA.7.4, §CA.7.5 and §CA.7.8 — the coefficient $1/S$ and the position-space rules ([[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]), [[§C6a.7 Feynman Diagrams for Correlation Functions#^def-c6a-7-1|Def. §C6a.7.1]], [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]], [[§C6a.8 Position-Space Feynman Rules#^def-c6a-8-1|Def. §C6a.8.1]], [[§C6a.8 Position-Space Feynman Rules|§C6a.8]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-4|Theorem §C6a.11.4]]; Corollary §CA.7.6 — the first-order count 15 = 12 + 3 as two orbits ([[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]]); Theorem §CA.7.9 and Example §CA.7.1 — the symmetry factors in practice ([[§C6a.9 Symmetry Factors in Practice|§C6a.9]], [[§C6a.9 Symmetry Factors in Practice#^cau-c6a-9-1|§C6a.9, Caution: Loops at one vertex are permuted too]]; restated in physics form as [[§C6a.9 Symmetry Factors in Practice#^thm-c6a-9-1|Theorem §C6a.9.1]]), [[§C6a.7 Feynman Diagrams for Correlation Functions#^thm-c6a-7-1|Theorem §C6a.7.1]], [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]]; Theorem §CA.7.7 — "divide by the symmetry factor", [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-6|Theorem §C6a.11.6]]; Lemma §CA.7.2 — [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]].
+> - **Used in** (C6c places): Theorem §CA.7.1 — [[§C6c.1 Amplitudes from Correlation Functions#^ex-c6c-1-1|Example §C6c.1.1]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^ex-c6c-4-3|Example §C6c.4.3]], [[§C6c.4 First Order꞉ Enumerate, then Filter#^thm-c6c-4-1|Theorem §C6c.4.1]], [[§C6c.5 Second Order꞉ Loops, Amputation and Symmetry Factors#^thm-c6c-5-1|Theorem §C6c.5.1]], [[§C6c.8 From the Question to the Formula#^ex-c6c-8-5|Example §C6c.8.5]].
+> - **Used in** (C6d places): Def. §CA.7.1 — [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule|§C6d.3]] (Mathematical background); Theorem §CA.7.1 — [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule|§C6d.3]] (Mathematical background).
+> - **Used in** (Procedures): Def. §CA.7.3 — [[P5 Symmetry Factor of a Diagram#^p5-2|P5, step 2]]; Theorem §CA.7.1 — [[P5 Symmetry Factor of a Diagram#^p5-6|P5, step 6]]; Theorem §CA.7.4 — [[P5 Symmetry Factor of a Diagram#^p5-3|P5, step 3]]; Theorem §CA.7.5 — [[P5 Symmetry Factor of a Diagram#^p5-4|P5, step 4]]; Theorem §CA.7.6 — [[P5 Symmetry Factor of a Diagram#^p5-6|P5, step 6]]; Example §CA.7.1 — [[P5 Symmetry Factor of a Diagram#^p5-6|P5, step 6]], [[P5 Symmetry Factor of a Diagram|P5]].

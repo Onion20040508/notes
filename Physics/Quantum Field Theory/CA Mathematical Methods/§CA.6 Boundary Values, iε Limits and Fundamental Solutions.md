@@ -18,14 +18,14 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 
 > [!theorem] Theorem §CA.6.1: Boundary Values of Analytic Functions Are Distributions
 > 1. Let $F$ be analytic on the strip $0 < \operatorname{Im}z < y_0$ with $|F(x + iy)| \le C(1 + |x|)^Ny^{-k}$ there. Then $F(x + i0) \equiv \lim_{y\to0^+}F(\cdot + iy)$ exists in $\mathcal S'(\mathbb R)$, and it is the $(k + 1)$-th derivative of a continuous, polynomially bounded function. The same holds from below.
-> 2. In $n$ variables: if $F$ is analytic on the tube $\mathbb R^n + i\Gamma$ over an open convex cone $\Gamma$, with a bound polynomial in $x$ and in the inverse distance to the boundary, then $\lim_{\eta\to0,\ \eta\in\Gamma}F(\cdot + i\eta)$ exists in $\mathcal S'(\mathbb R^n)$ and does not depend on the direction of approach within $\Gamma$.
+> 2. In $n$ variables: let $F$ be continuous on the tube $\mathbb R^n + i\Gamma$ over an open convex cone $\Gamma$ and analytic there (for $z$ in the tube and $w \in \mathbb C^n$, $\zeta \mapsto F(z + \zeta w)$ is analytic near $\zeta = 0$), with a bound polynomial in $x$ and in the inverse distance to the boundary, in the form: for every compact $K \subset \Gamma$ there are $C$, $N$, $k$ with $|F(x + it\eta)| \le C(1 + |x|)^Nt^{-k}$ for $\eta \in K$ and $0 < t \le 1$. Then for every $\eta \in \Gamma$ the limit $\lim_{t\to0^+}F(\cdot + it\eta)$ exists in $\mathcal S'(\mathbb R^n)$, and it does not depend on the direction $\eta$; the same limit is reached when $\eta \to 0$ inside the cone over a compact subset of $\Gamma$.
 >
 > *Source: standard; stated here (Hörmander I, §3.1; Streater & Wightman, Ch. 2) · the user's PHY 513 notes, App. A §A.4 (limits; the boundary value defining the Wightman function), Ch. 5 §5.4*
 
 ^thm-ca-6-1
 
 > [!derivation]- Derivation
-> Part 1; take $y_0 = 2$ and the upper side.
+> Part 1; take $y_0 = 2$ and the upper side (for general $y_0$ replace the base point $z_{\ast} = i$ by $iy_0/2$ and the range $0 < y \le 1$ by $0 < y \le y_0/2$; the lower side is the same with $y \to -y$).
 >
 > **Step 1** (primitives). The strip is simply connected, so $F$ has analytic primitives ([[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]: integrals between two points do not depend on the path). Put $z_{\ast} = i$ and define $G_0 = F$, $G_{j+1}(z) = \int_{z_{\ast}}^zG_j(w)\,dw$; then $G_{k+1}^{(k+1)} = F$.
 >
@@ -43,7 +43,45 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 >
 > ⚑ By-product: every boundary value is a finite-order derivative of a continuous function, the order fixed by how fast $F$ blows up at the real axis. Example: $|1/(x + iy)| \le y^{-1}$, $k = 1$, and $1/(x + i0)$ is the derivative of $\log(x + i0)$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-3|Theorem §CA.6.3]]).
 >
-> **Step 6** (part 2; sketch). Fix $\eta \in \Gamma$ and run Steps 1–5 in the single complex variable $\tau$ of $F(x + \tau\eta)$, uniformly in $x$; independence of the direction follows because $F$ is analytic between any two directions of $\Gamma$ (Hörmander I, §3.1).
+> *Part 2.* The bound for a compact $K$ extends to $0 < t \le 2$ with another constant (apply the hypothesis to the compact set $\{s\eta : \eta \in K,\ 1 \le s \le 2\}$ and write $t\eta = \frac t2\cdot2\eta$); a bound $C(1 + |x|)^N\operatorname{dist}(\eta, \partial\Gamma)^{-k}$ is of this form, since $\operatorname{dist}(t\eta, \partial\Gamma) = t\operatorname{dist}(\eta, \partial\Gamma)$ on a cone. Notation: $\|\varphi\|_N = \int d^nx\,(1 + |x|)^N|\varphi(x)|$, a finite sum of seminorms of $\varphi \in \mathcal S$, and for $\eta \in \Gamma$
+>
+> $$
+> h_\varphi(t) = \int d^nx\,F(x + it\eta)\,\varphi(x) , \qquad |h_\varphi(t)| \le C\,t^{-k}\,\|\varphi\|_N \qquad (\eta \in K,\ 0 < t \le 2) .
+> $$
+>
+> **Step 6** (part 2: the derivative of a pairing). Claim: $h_\varphi$ is differentiable and $h_\varphi' = -i\,h_{D\varphi}$ with $D = \eta\cdot\partial_x$. For fixed $x$, $g(\zeta) = F(x + \zeta\eta)$ is analytic in $\zeta = a + it$ for $t > 0$. For $0 < t \le \frac43$ the circle $|\zeta - it| = t/2$ lies in $\frac t2 \le \operatorname{Im}\zeta \le \frac{3t}{2} \le 2$, $|\operatorname{Re}\zeta| \le \frac23$, where $|g| \le C(1 + |x| + |\eta|)^N(t/2)^{-k}$; by Cauchy's inequality ([[§57 Some Consequences of the Extension#^thm-57-4|342 Thm. §57.4]])
+>
+> $$
+> |g'(it)| \le \frac{2}{t}\max_{|\zeta - it| = t/2}|g| \le C_1(1 + |x|)^N\,t^{-k-1} .
+> $$
+>
+> Since $\partial_t[F(x + it\eta)] = i\,g'(it)$, on every interval $t_1 \le t \le \frac43$ the $t$-derivative of the integrand of $h_\varphi$ is at most $C_1(1 + |x|)^Nt_1^{-k-1}|\varphi(x)|$, integrable and independent of $t$; by Leibniz ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], 2) $h_\varphi'(t) = i\int d^nx\,g'(it)\,\varphi(x)$. The derivative of an analytic function may be taken along the real direction: $g'(it) = \partial_a F(x + a\eta + it\eta)\big|_{a=0} = (DF)(x + it\eta)$, the derivative of $x \mapsto F(x + it\eta)$ along $\eta$. Now integrate by parts along $\eta$: $G(x) = F(x + it\eta)\varphi(x)$ has $DG = (DF)\varphi + F\,D\varphi$, bounded by $C_2(1 + |x|)^N(|\varphi| + |D\varphi|)$ and hence integrable; writing $x = y + s\eta$ with $y \perp \eta$ (a linear change of variables, [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], then Fubini, [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]]), $\int ds\,\partial_s[G(y + s\eta)] = 0$ for each $y$ because $G \to 0$ as $|s| \to \infty$ ([[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]). So $\int DG = 0$, i.e. $\int(DF)\varphi = -\int F\,D\varphi$, and
+>
+> $$
+> h_\varphi'(t) = i\int d^nx\,(DF)(x + it\eta)\,\varphi(x) = -i\int d^nx\,F(x + it\eta)\,(D\varphi)(x) = -i\,h_{D\varphi}(t) .
+> $$
+>
+> **Step 7** (part 2: Taylor's formula in $t$; the limit along one direction). By Step 6, applied repeatedly, $h_\varphi^{(j)} = (-i)^jh_{D^j\varphi}$ for every $j$. Taylor's formula about $t = 1$ with the remainder as an integral ($k$ integrations by parts of $h_\varphi(t) = h_\varphi(1) - \int_t^1h_\varphi'(s)\,ds$) reads, for $0 < t \le 1$,
+>
+> $$
+> h_\varphi(t) = \sum_{j=0}^{k}\frac{(t - 1)^j}{j!}\,h_\varphi^{(j)}(1) + \frac{(-1)^{k+1}}{k!}\int_t^1ds\,(s - t)^k\,h_\varphi^{(k+1)}(s) .
+> $$
+>
+> In the remainder $|h_\varphi^{(k+1)}(s)| = |h_{D^{k+1}\varphi}(s)| \le C\,s^{-k}\|D^{k+1}\varphi\|_N$ and $0 \le (s - t)^k \le s^k$: the integrand is bounded by the constant $C\|D^{k+1}\varphi\|_N$ on $0 < s \le 1$, uniformly in $t$, and converges pointwise to $s^kh_\varphi^{(k+1)}(s)$ as $t \to 0^+$. Each $(t - 1)^j$ converges. By dominated convergence $h_\varphi(t)$ converges as $t \to 0^+$, and with $|h_\varphi^{(j)}(1)| \le C\|D^j\varphi\|_N$,
+>
+> $$
+> |h_\varphi(t)| \le C\sum_{j=0}^{k+1}\|D^j\varphi\|_N \qquad (\eta \in K,\ 0 < t \le 1) .
+> $$
+>
+> The limit $F(\cdot + i0\,\eta)[\varphi] \equiv \lim_{t\to0^+}h_\varphi(t)$ is linear in $\varphi$ and obeys the same bound, a finite sum of seminorms of $\varphi$ (each $\|D^j\varphi\|_N \le |\eta|^j\sum_{|\alpha| = j}\|\partial^\alpha\varphi\|_N$ up to a combinatorial constant): it is a tempered distribution. For $n = 1$, $\eta = 1$ this is a second proof of part 1.
+>
+> **Step 8** (part 2: the limit does not depend on the direction). Let $\eta, \eta' \in \Gamma$, $w = \eta' - \eta$ and $\eta_b = \eta + bw$. $\Gamma$ is open and convex, so for some $\delta > 0$ the segment $K = \{\eta_b : -\delta \le b \le 1 + \delta\}$ is a compact subset of $\Gamma$. Put $u_\varphi(t, b) = \int d^nx\,F(x + it\eta_b)\,\varphi(x)$, so that $u_\varphi(t, 0)$ and $u_\varphi(t, 1)$ are the pairings along $\eta$ and $\eta'$. For fixed $x$ and $t$, $g(\zeta) = F(x + it\eta + \zeta tw)$ is analytic in $\zeta = a + ib$ for $-\delta < b < 1 + \delta$: its argument has imaginary part $t\eta_b$. For $0 \le b \le 1$ the circle $|\zeta - ib| = \delta/2$ stays in that strip with $|a| \le \delta/2$, so by Cauchy's inequality $|g'(ib)| \le \frac2\delta\,C(1 + |x| + \frac\delta2|w|)^Nt^{-k}$, integrable against $|\varphi|$ and independent of $b$. As in Step 6: by Leibniz $\partial_bu_\varphi = i\int g'(ib)\varphi$; $g'(ib) = \partial_aF(x + atw + it\eta_b)\big|_{a=0} = t\,(w\cdot\partial_xF)(x + it\eta_b)$; and integrating by parts along $w$,
+>
+> $$
+> \partial_bu_\varphi(t, b) = it\int d^nx\,(w\cdot\partial_xF)(x + it\eta_b)\,\varphi(x) = -it\,u_{w\cdot\partial\varphi}(t, b) , \qquad u_\varphi(t, 1) - u_\varphi(t, 0) = -it\int_0^1db\,u_{w\cdot\partial\varphi}(t, b) .
+> $$
+>
+> By Step 7 with the compact set $K$, $|u_{w\cdot\partial\varphi}(t, b)| \le C'$ for all $0 < t \le 1$ and $0 \le b \le 1$. Hence $|u_\varphi(t, 1) - u_\varphi(t, 0)| \le C't \to 0$: the limits along $\eta'$ and along $\eta$ are equal. The estimate is uniform for $\eta, \eta'$ in a compact convex subset of $\Gamma$ (one $K$, one $C'$), so $F(\cdot + i\eta)[\varphi]$ tends to the same limit when $\eta \to 0$ inside the cone over a compact subset of $\Gamma$ (its convex hull is again a compact subset of $\Gamma$).
 >
 > **What the derivation shows.**
 > - The "$+i0$" of a boundary value is a limit in $\mathcal S'$; nothing is assigned a value at $\varepsilon = 0$. Analyticity and a polynomial bound are all that is needed.
@@ -51,13 +89,19 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 
 ^der-ca-6-1
 
-*Uses:* [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]]
+*Uses:* [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], [[§57 Some Consequences of the Extension#^thm-57-4|342 Thm. §57.4]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], [[§25 Invariance Properties and Fubini's Theorem#^thm-25-6|551 Thm. §25.6]], [[§34 Fundamental Theorem of Calculus#^thm-34-1|451 Thm. §34.1]]
 
 > [!theorem] Theorem §CA.6.2: Sokhotski–Plemelj Formula
 > As generalized functions, for $\varepsilon \to 0^+$,
 >
 > $$
 > \frac{1}{x - x_0 \pm i\varepsilon} \longrightarrow \mathcal P\frac{1}{x - x_0} \mp i\pi\,\delta(x - x_0) .
+> $$
+>
+> The limit holds in $\mathcal S'(\mathbb R)$, and the pairings are bounded uniformly: for every $\varepsilon > 0$, real $x_0$ and $\varphi \in \mathcal S(\mathbb R)$,
+>
+> $$
+> \Bigl|\int dx\,\frac{\varphi(x)}{x - x_0 \pm i\varepsilon}\Bigr| \le 2\sup|\varphi'| + \pi\sup|\varphi| + \int|\varphi| .
 > $$
 >
 > Mnemonic: the pole of $1/(x - x_0 - i\varepsilon)$ lies *above* the real path and gives $+i\pi$; a pole below gives $-i\pi$.
@@ -93,6 +137,14 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 >
 > **Step 6** (assemble). $\frac{1}{s - i\varepsilon} \to \mathcal P\frac1s + i\pi\delta(s)$, the lower sign of the formula; conjugating gives the upper.
 >
+> **Step 7** (Schwartz test functions; the uniform bound). Let $\varphi \in \mathcal S(\mathbb R)$. The imaginary part needs no change: Steps 2–3 used only $\sup|\varphi|$, and give $\bigl|\int\varphi(s)\frac{\varepsilon\,ds}{s^2 + \varepsilon^2}\bigr| \le \pi\sup|\varphi|$ for every $\varepsilon$. In the real part split at $|s| = 1$. On $|s| \le 1$, Steps 4–5 with $L = 1$ give the limit $\int_{|s| \le 1}\frac{\varphi(s) - \varphi(0)}{s}ds$ and, for every $\varepsilon$, the bound $2\sup|\varphi'|$ (the integrand of Step 4 is at most $\sup|\varphi'|$ on an interval of length $2$). On $|s| > 1$, $\frac{s}{s^2 + \varepsilon^2} \to \frac1s$ with $\bigl|\frac{s}{s^2 + \varepsilon^2}\bigr| \le \frac{1}{|s|} < 1$, so the integrand is dominated by $|\varphi|$: the limit is $\int_{|s| > 1}\frac{\varphi(s)}{s}ds$ and the bound is $\int|\varphi|$. Together: the formula holds for $\varphi \in \mathcal S$, with
+>
+> $$
+> \mathcal P\!\!\int\frac{\varphi(s)}{s}\,ds = \int_{|s| \le 1}\frac{\varphi(s) - \varphi(0)}{s}\,ds + \int_{|s| > 1}\frac{\varphi(s)}{s}\,ds
+> $$
+>
+> (the symmetric limit of [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]], which converges at infinity for Schwartz functions; the odd function $1/s$ integrates to zero over $\delta < |s| \le 1$), and the three bounds add up to the uniform bound of the statement. The sup norms and the integral do not change under $x \to x - x_0$, so the bound does not depend on $x_0$. Being bounded by seminorms of $\varphi$, $\mathcal P\frac1s$ is a tempered distribution.
+>
 > **What the derivation shows.**
 > - The real part is the principal value and the imaginary part the delta function, and nothing else enters; a smooth symmetric cutoff gives the same answer as the sharp one in the definition.
 > - The factor $\pi$ is the area of the Lorentzian, the same $\pi$ that $\int du/(1 + u^2)$ gives by residues.
@@ -111,6 +163,8 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 > - The two prescriptions differ by a full loop, $2\pi i\,g(x_0)$, and the principal value is their average. This route needs analyticity of $g$; the direct route works for every test function.
 >
 > *Source: the user's PHY 513 notes, App. A §A.5 (Derivation "The half-residue lemma")*
+
+^der-ca-6-2b
 
 *Uses:* [[§CA.4 Contour Integration#^thm-ca-4-7|Theorem §CA.4.7]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]
 
@@ -177,15 +231,33 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 > \partial_zG = \frac{1}{2r}\int_{-r}^{r}\frac{ds}{z - s} = \frac{1}{2r}\bigl[\log(z + r) - \log(z - r)\bigr], \qquad \partial_z^2G = \frac{1}{2r}\Bigl[\frac{1}{z + r} - \frac{1}{z - r}\Bigr] = \frac{-1}{z^2 - r^2} = F .
 > $$
 >
-> **Step 3** (the bound on $G$; sketch — the full estimate is standard and not written out here). By Step 2 of [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-3|Theorem §CA.6.3]], for $0 < y < 1$, $|\log(t - s - iy)| \le |\ln|t - s|| + \ln(1 + |t| + r) + \pi$. Averaging over $s \in [-r, r]$: $|G(t - iy, r)| \le \frac{1}{2r}\int_{-r}^{r}|\ln|t - s||\,ds + \ln(1 + |t| + r) + \pi \le C\bigl(1 + |\ln r| + \ln(1 + |t| + r)\bigr)$, because the average of $|\ln|u||$ over an interval of length $2r$ is at most $1 + |\ln r|$ up to a constant. This bound is independent of $y$ and locally integrable on $\mathbb R^4$ ($|\ln r|$ is integrable against $d^3x$).
+> **Step 3** (the bound on $G$). By Step 2 of [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-3|Theorem §CA.6.3]], for $0 < y < 1$ and $|s| \le r$, $|\log(t - s - iy)| \le |\ln|t - s|| + \ln(1 + |t - s|) + \pi \le |\ln|t - s|| + \ln(1 + |t| + r) + \pi$. Averaging over $s \in [-r, r]$,
 >
-> **Step 4** (pair and take the limit). For $\varphi \in \mathcal S(\mathbb R^4)$, integrate by parts twice in $t$ at fixed $\mathbf x$ (boundary terms vanish: $G$ grows logarithmically):
+> $$
+> |G(t - iy, r)| \le \frac{1}{2r}\int_{-r}^{r}\bigl|\ln|t - s|\bigr|\,ds + \ln(1 + |t| + r) + \pi .
+> $$
+>
+> In the average put $u = t - s$, which runs over the interval $I = [t - r, t + r]$ of length $2r$. Where $|u| > 1$, $|\ln|u|| = \ln|u| \le \ln(1 + |t| + r)$. Where $|u| \le 1$, $|\ln|u|| = \ln\frac{1}{|u|}$, which decreases as $|u|$ grows; the set $I \cap [-1, 1]$ has length at most $2\ell$ with $\ell = \min(r, 1)$, and the integral of a function decreasing in $|u|$ over such a set is at most its integral over the centred interval $[-\ell, \ell]$ of that length (the part of the set outside $[-\ell, \ell]$ is no longer than the part of $[-\ell, \ell]$ it misses, and the function is smaller there):
+>
+> $$
+> \int_{I\cap[-1,1]}\ln\frac{1}{|u|}\,du \le 2\int_0^\ell\ln\frac1u\,du = 2\ell\Bigl(1 + \ln\frac1\ell\Bigr) .
+> $$
+>
+> Divided by $2r$ this is $1 + |\ln r|$ for $r \le 1$ and $1/r \le 1$ for $r > 1$. Hence $\frac{1}{2r}\int_{-r}^{r}|\ln|t - s||\,ds \le 1 + |\ln r| + \ln(1 + |t| + r)$, and
+>
+> $$
+> |G(t - iy, r)| \le 1 + \pi + |\ln r| + 2\ln(1 + |t| + r) \qquad (0 < y < 1,\ r > 0) .
+> $$
+>
+> This bound is independent of $y$ and locally integrable on $\mathbb R^4$, with logarithmic growth at infinity ($|\ln r|$ is integrable against $d^3x$ near $r = 0$). The average of $|\ln|u||$ over an interval of length $2r$ is not bounded by $1 + |\ln r|$ alone when the interval lies far from the origin; the term $\ln(1 + |t| + r)$ accounts for that.
+>
+> **Step 4** (pair and take the limit). For $\varphi \in \mathcal S(\mathbb R^4)$, integrate by parts twice in $t$ at fixed $\mathbf x$, $r > 0$ (boundary terms vanish: at fixed $\varepsilon$, $G$ grows logarithmically in $t$ by Step 3 and $\partial_tG = \frac{1}{2r}[\log(z + r) - \log(z - r)]$ is bounded, while $\varphi$ and $\partial_t\varphi$ decay faster than any power):
 >
 > $$
 > \int d^4x\,F_\varepsilon\,\varphi = \int d^3x\int dt\,G(t - i\varepsilon, r)\,\partial_t^2\varphi(t, \mathbf x) .
 > $$
 >
-> As $\varepsilon \to 0^+$, $G(t - i\varepsilon, r) \to G(t - i0, r)$ for almost every $(t, \mathbf x)$ (part 1 of Theorem §CA.6.3 inside the average), dominated by Step 3 times $|\partial_t^2\varphi|$. By dominated convergence the limit exists and equals $\partial_t^2$ of the locally integrable, polynomially bounded function $G(t - i0, r)$: a tempered distribution. This is part 1.
+> As $\varepsilon \to 0^+$, $G(t - i\varepsilon, r) \to G(t - i0, r) \equiv \frac{1}{2r}\int_{-r}^{r}\bigl[\ln|t - s| - i\pi\,\theta(s - t)\bigr]ds$ for every $t$ and every $r > 0$ (part 1 of Theorem §CA.6.3 inside the average: the integrand converges for $s \ne t$ and is dominated by the first line of Step 3, integrable in $s$). The integrand $G(t - i\varepsilon, r)\,\partial_t^2\varphi$ is dominated by the bound of Step 3 times $|\partial_t^2\varphi|$, integrable over $\mathbb R^4$. By dominated convergence the limit exists and equals $\partial_t^2$ of the locally integrable function $G(t - i0, r)$ of logarithmic growth: a tempered distribution ([[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], 2, and [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]). This is part 1.
 >
 > **Step 5** (part 2: partial fractions at fixed $r > 0$). $F_\varepsilon = -\frac{1}{2r}\Bigl[\frac{1}{t - r - i\varepsilon} - \frac{1}{t + r - i\varepsilon}\Bigr]$. By Sokhotski–Plemelj in $t$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]], lower sign: $\frac{1}{s - i0} = \mathcal P\frac1s + i\pi\delta(s)$),
 >
@@ -195,7 +267,27 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 >
 > **Step 6** (part 2: identify the delta terms). By [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2, $\delta(t^2 - r^2) = [\delta(t - r) + \delta(t + r)]/2r$; multiplying by $\operatorname{sgn}t$, which is $+1$ at $t = r$ and $-1$ at $t = -r$, gives $\operatorname{sgn}(t)\delta(t^2 - r^2) = [\delta(t - r) - \delta(t + r)]/2r$. So the imaginary part is $-\pi\operatorname{sgn}(x^0)\delta(x^2)$. The $\mathbf x$-integral near $r = 0$ converges: the delta terms give $\int d^3x\,\varphi(\pm r, \mathbf x)/2r$ as in [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 2, and the bracket of principal values is $h(r) - h(-r)$ with $h(s) = \mathcal P\!\int dt\,\varphi(t, \mathbf x)/(t - s)$ smooth in $s$, so it is $O(r)$ and the $\frac{1}{2r}$ is harmless.
 >
-> **Step 7** (part 3; invariance sketch). Off the cone, $F_\varepsilon \to -1/x^2$ uniformly with all derivatives on compact sets, so the limit is smooth there; on the cone the delta term of part 2 is not smooth. For invariance: $1/(-z\cdot z)$, $z = x - i\eta$, is analytic on the tube $\eta \in V_+$ (the open forward cone), because $\operatorname{Im}(z\cdot z) = -2x\cdot\eta$ and $\operatorname{Re}(z\cdot z) = x^2 - \eta^2$ cannot both vanish there: $x\cdot\eta = 0$ with $\eta$ timelike forces $x^2 \le 0$, so $\operatorname{Re} < 0$. A proper orthochronous $\Lambda$ maps the tube to itself and leaves $z\cdot z$ unchanged; the boundary value does not depend on the direction of approach within $V_+$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|Theorem §CA.6.1]], 2), so approaching along $(\varepsilon, \mathbf 0)$ or along $\Lambda(\varepsilon, \mathbf 0)$ gives the same distribution.
+> **Step 7** (part 3: the singular support). Let $\varphi \in \mathcal D$ be supported in the open set $x^2 \ne 0$. On its support $|x^2| \ge c > 0$, and $|{-x^2} + 2i\varepsilon t + \varepsilon^2| \ge |x^2| - \varepsilon^2 \ge c/2$ for $\varepsilon^2 \le c/2$, so $F_\varepsilon \to -1/x^2$ uniformly there and the limit $F_0$ of part 1 satisfies $F_0[\varphi] = \int(-1/x^2)\varphi$: off the cone $F_0$ is the smooth function $-1/x^2$, and $\operatorname{sing\,supp}F_0 \subseteq \{x^2 = 0\}$. Conversely, let $a$ be a point of the cone and suppose $F_0 = T_g$ with $g$ smooth on a neighbourhood $U$ of $a$. Then $g = -1/x^2$ on $U$ off the cone (two continuous functions that define the same distribution are equal, [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], 2). But every neighbourhood of $a$ contains points with $x^2 \ne 0$ arbitrarily small, where $-1/x^2$ is unbounded, while $g$ is bounded near $a$: a contradiction. So the singular support is the whole cone.
+>
+> **Step 8** (part 3: Lorentz invariance). Let $V_+ = \{\eta : \eta^2 > 0,\ \eta^0 > 0\}$ be the open forward cone, $z = x - i\eta$ with $\eta \in V_+$, and $F(z) = 1/(-z\cdot z)$ with $z\cdot z = z^\mu z_\mu$; then $F_\varepsilon(x) = F\bigl(x - i\varepsilon(1, \mathbf 0)\bigr)$.
+>
+> *(a) A lower bound on the tube.* Decompose $x = a\eta + w$ with $a = (x\cdot\eta)/\eta^2$, so that $w\cdot\eta = 0$. Then $w^0\eta^0 = \mathbf w\cdot\boldsymbol\eta$ gives $|w^0| \le |\mathbf w||\boldsymbol\eta|/\eta^0 \le |\mathbf w|$, i.e. $w^2 \le 0$. Write $A = \eta^2 > 0$ and $B = -w^2 \ge 0$. Since $z = (a - i)\eta + w$,
+>
+> $$
+> z\cdot z = (a - i)^2A - B = (a^2 - 1)A - B - 2iaA , \qquad |z\cdot z|^2 = \bigl((1 - a^2)A + B\bigr)^2 + 4a^2A^2 .
+> $$
+>
+> If $|a| \le 1$, the first square is at least $(1 - a^2)^2A^2$ and $|z\cdot z|^2 \ge (1 + a^2)^2A^2 \ge A^2$; if $|a| > 1$, the second term alone exceeds $4A^2$. So $|z\cdot z| \ge \eta^2$ on the tube $\mathbb R^4 - iV_+$. Hence $F$ is continuous there and analytic along every complex line (a rational function of $\zeta$ whose denominator does not vanish), and $|F(x - it\eta)| \le 1/t^2\eta^2 \le 1/(t^2\min_K\eta^2)$ for $\eta$ in a compact $K \subset V_+$: the hypotheses of [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|Theorem §CA.6.1]], 2, with $\Gamma = -V_+$, $N = 0$, $k = 2$.
+>
+> *(b) The function and the cone are invariant.* For a proper orthochronous $\Lambda$, $(\Lambda z)\cdot(\Lambda z) = z\cdot z$ also for complex $z$ (bilinearity and $\Lambda^{\mathsf T}g\Lambda = g$), so $F(\Lambda z) = F(z)$; and $\Lambda V_+ = V_+$, because $(\Lambda\eta)^2 = \eta^2$ and the sign of $\eta^0$ is kept on timelike vectors ([[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], Step 3 (a)).
+>
+> *(c) Two directions of approach.* With $\eta_0 = (1, \mathbf 0)$: $F_\varepsilon(\Lambda^{-1}x) = F(\Lambda^{-1}x - i\varepsilon\eta_0) = F(x - i\varepsilon\Lambda\eta_0)$ by (b). Pair with $\varphi \in \mathcal S(\mathbb R^4)$ and substitute $x = \Lambda y$ ($|\det\Lambda| = 1$):
+>
+> $$
+> \int d^4y\,F_\varepsilon(y)\,\varphi(\Lambda y) = \int d^4x\,F(x - i\varepsilon\Lambda\eta_0)\,\varphi(x) .
+> $$
+>
+> As $\varepsilon \to 0^+$ the left side tends to $F_0[\varphi\circ\Lambda]$ (part 1). The right side is the pairing along the direction $\Lambda\eta_0 \in V_+$; by [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|Theorem §CA.6.1]], 2 its limit is the same as along $\eta_0$, which is $F_0[\varphi]$. So $F_0[\varphi\circ\Lambda] = F_0[\varphi]$ for every proper orthochronous $\Lambda$: $F_0$ is Lorentz invariant ([[§CA.2 Generalized Functions#^def-ca-2-9|Def. §CA.2.9]]).
 >
 > **What the derivation shows.**
 > - $\frac{1}{4\pi^2}\cdot\frac{1}{-x^2 + i0\,x^0}$ is the massless Wightman function; its imaginary part, $-\frac{1}{4\pi}\operatorname{sgn}(x^0)\delta(x^2)$, is half the massless commutator function, and its real part gives the Hadamard function ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]]).
@@ -203,7 +295,7 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 
 ^der-ca-6-4
 
-*Uses:* [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|Theorem §CA.6.1]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-3|Theorem §CA.6.3]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
+*Uses:* [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|Theorem §CA.6.1]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-3|Theorem §CA.6.3]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], [[§CA.2 Generalized Functions#^def-ca-2-9|Def. §CA.2.9]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]
 
 ## Damping factors and iε
 
@@ -257,7 +349,7 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 >
 > **Step 2** (partial fractions). $\frac{1}{(p^0)^2 - E_\varepsilon^2} = \frac{1}{2E_\varepsilon}\Bigl[\frac{1}{p^0 - E_\varepsilon} - \frac{1}{p^0 + E_\varepsilon}\Bigr]$; check: the numerator is $(p^0 + E_\varepsilon) - (p^0 - E_\varepsilon) = 2E_\varepsilon$.
 >
-> **Step 3** (Sokhotski–Plemelj in $p^0$). $p^0 - E_\varepsilon = p^0 - a + ib$, so $\frac{1}{p^0 - E_\varepsilon} \to \mathcal P\frac{1}{p^0 - E_{\mathbf p}} - i\pi\delta(p^0 - E_{\mathbf p})$; $p^0 + E_\varepsilon = p^0 + a - ib$, so $\frac{1}{p^0 + E_\varepsilon} \to \mathcal P\frac{1}{p^0 + E_{\mathbf p}} + i\pi\delta(p^0 + E_{\mathbf p})$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]]). The shift of the real part, $a - E_{\mathbf p} = O(\varepsilon^2)$, is harmless: $\int dp^0\frac{\varphi(p^0)}{p^0 - a + ib} = \int ds\frac{\varphi(s + a - E_{\mathbf p})}{s - E_{\mathbf p} + ib}$ with $s = p^0 - a + E_{\mathbf p}$, and $\varphi(\cdot + a - E_{\mathbf p}) \to \varphi$ in $\mathcal S$.
+> **Step 3** (Sokhotski–Plemelj in $p^0$). $p^0 - E_\varepsilon = p^0 - a + ib$, so $\frac{1}{p^0 - E_\varepsilon} \to \mathcal P\frac{1}{p^0 - E_{\mathbf p}} - i\pi\delta(p^0 - E_{\mathbf p})$; $p^0 + E_\varepsilon = p^0 + a - ib$, so $\frac{1}{p^0 + E_\varepsilon} \to \mathcal P\frac{1}{p^0 + E_{\mathbf p}} + i\pi\delta(p^0 + E_{\mathbf p})$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]]). The shift of the real part, $a - E_{\mathbf p} = b^2/(a + E_{\mathbf p}) = O(\varepsilon^2)$, is harmless: $\int dp^0\frac{\varphi(p^0)}{p^0 - a + ib} = \int ds\frac{\varphi(s + a - E_{\mathbf p})}{s - E_{\mathbf p} + ib}$ with $s = p^0 - a + E_{\mathbf p}$, and by the uniform bound of Theorem §CA.6.2, with $N(\chi) \equiv 2\sup|\chi'| + \pi\sup|\chi| + \int|\chi|$ and $\kappa = a - E_{\mathbf p}$, replacing $\varphi(\cdot + \kappa)$ by $\varphi$ changes the pairing by at most $N\bigl(\varphi(\cdot + \kappa) - \varphi\bigr) \le |\kappa|\bigl(2\sup|\varphi''| + \pi\sup|\varphi'| + \int|\varphi'|\bigr) \to 0$, for every $b > 0$. Here $\varphi$ is a Schwartz function of $p^0$ (Theorem §CA.6.2, Step 7).
 >
 > **Step 4** (combine). $\frac{1}{2E_\varepsilon} \to \frac{1}{2E_{\mathbf p}}$, and
 >
@@ -267,7 +359,13 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 >
 > the last by [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2. Multiplying by $i$ gives the second form of part 1.
 >
-> **Step 5** (from $p^0$ to $\mathbb R^4$; sketch). Steps 1–4 hold at each $\mathbf p$. To integrate over $\mathbf p$ against $\varphi \in \mathcal S(\mathbb R^4)$ one needs a bound uniform in $\varepsilon$: the derivation of Sokhotski–Plemelj bounds the $p^0$-pairing by $C\sup_{p^0}(1 + |p^0|)^2(|\varphi| + |\partial_0\varphi|)$, and since $E_{\mathbf p} \ge m$ the constant is uniform in $\mathbf p$; for Schwartz $\varphi$ this decays faster than any power of $|\mathbf p|$, and dominated convergence in $\mathbf p$ finishes.
+> **Step 5** (from $p^0$ to $\mathbb R^4$). Steps 1–4 hold at each $\mathbf p$. For $\varphi \in \mathcal S(\mathbb R^4)$ write $\varphi_{\mathbf p} = \varphi(\cdot, \mathbf p)$. Each of the two terms of Step 2 has the form $1/(p^0 - c \pm ib)$ with $c$ real and $b > 0$, so the uniform bound of [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]] applies to each, and $|E_\varepsilon| = |E_{\mathbf p}^2 - i\varepsilon|^{1/2} \ge E_{\mathbf p} \ge m$:
+>
+> $$
+> \Bigl|\int dp^0\,\frac{\varphi(p^0, \mathbf p)}{p^2 - m^2 + i\varepsilon}\Bigr| \le \frac{1}{2|E_\varepsilon|}\cdot2N(\varphi_{\mathbf p}) \le \frac{N(\varphi_{\mathbf p})}{m} \qquad\text{for every } \varepsilon > 0 .
+> $$
+>
+> For Schwartz $\varphi$, $N(\varphi_{\mathbf p}) \le C_\varphi(1 + |\mathbf p|)^{-4}$: $\sup_{p^0}|\varphi|$ and $\sup_{p^0}|\partial_0\varphi|$ are at most $(1 + |\mathbf p|)^{-4}$ times a seminorm, and $\int dp^0|\varphi| \le \pi(1 + |\mathbf p|)^{-4}\sup_p\bigl(1 + (p^0)^2\bigr)(1 + |\mathbf p|)^4|\varphi(p)|$. This is integrable over $d^3p$ and independent of $\varepsilon$. By dominated convergence in $\mathbf p$ ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]]), $\int d^4p\,\varphi/(p^2 - m^2 + i\varepsilon)$ converges to the $\mathbf p$-integral of the limits of Step 4, which is the right side of part 1 paired with $\varphi$ (the delta term is $\int d^3p\,[\varphi(E_{\mathbf p}, \mathbf p) + \varphi(-E_{\mathbf p}, \mathbf p)]/2E_{\mathbf p}$, [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1). The limit is linear in $\varphi$ and bounded by $\frac1m\int d^3p\,N(\varphi_{\mathbf p})$, a finite sum of seminorms: it is in $\mathcal S'(\mathbb R^4)$.
 >
 > **Step 6** (part 2). $(p^0 + i\varepsilon)^2 - E_{\mathbf p}^2 = (p^0 - E_{\mathbf p} + i\varepsilon)(p^0 + E_{\mathbf p} + i\varepsilon)$: both poles, $\pm E_{\mathbf p} - i\varepsilon$, are below the axis, and the partial fractions are exact with $2E_{\mathbf p}$: $\frac{1}{2E_{\mathbf p}}\Bigl[\frac{1}{p^0 - E_{\mathbf p} + i\varepsilon} - \frac{1}{p^0 + E_{\mathbf p} + i\varepsilon}\Bigr]$. Each term has the upper sign of Sokhotski–Plemelj, so the limit is
 >
@@ -275,7 +373,9 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 > \frac{1}{2E_{\mathbf p}}\Bigl[\mathcal P\frac{1}{p^0 - E_{\mathbf p}} - \mathcal P\frac{1}{p^0 + E_{\mathbf p}}\Bigr] - i\pi\,\frac{\delta(p^0 - E_{\mathbf p}) - \delta(p^0 + E_{\mathbf p})}{2E_{\mathbf p}} = \mathcal P\frac{1}{p^2 - m^2} - i\pi\operatorname{sgn}(p^0)\,\delta(p^2 - m^2) .
 > $$
 >
-> **Step 7** (part 3). At fixed $\mathbf p$, $c(\mathbf p)$ is a positive constant, and Steps 1–3 only use $b > 0$ and $b \to 0$; the uniformity of Step 5 holds if $c$ is bounded above and below on bounded sets of $\mathbf p$ and grows at most polynomially.
+> The bound of Step 5 holds here too, with the prefactor $1/2E_{\mathbf p} \le 1/2m$ in place of $1/2|E_\varepsilon|$, so the limit is again taken in $\mathcal S'(\mathbb R^4)$ by dominated convergence in $\mathbf p$.
+>
+> **Step 7** (part 3). At fixed $\mathbf p$, $c(\mathbf p)$ is a positive constant: replacing $\varepsilon$ by $\varepsilon c(\mathbf p)$ in Steps 1–4, or in Step 6, changes the value of $b$ but neither $b > 0$ nor $b \to 0$, so the limit at each $\mathbf p$ is the same. The bound of Step 5 does not depend on $b$ and uses only $|E_\varepsilon| \ge m$ (respectively $E_{\mathbf p} \ge m$), true for every value of the regulator; so the same dominating function serves, and the limits in $\mathcal S'(\mathbb R^4)$ are unchanged. No growth condition on $c$ is needed. (For $\varepsilon > 0$ the pairing with $\varphi$ is the iterated integral, $p^0$ first, which Step 5 bounds.)
 >
 > **What the derivation shows.**
 > - The $i\varepsilon$ denominators are limits in $\mathcal S'$; they agree with $1/(p^2 - m^2)$ off the mass shell and differ only on it, by $\delta(p^2 - m^2)$ or $\operatorname{sgn}(p^0)\delta(p^2 - m^2)$: so $\varepsilon = 0$ may be set wherever $p^2 \ne m^2$ ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^cau-ca-6-1|§CA.6, Caution: What the formula does and does not say]]).
@@ -367,28 +467,30 @@ Every $i\varepsilon$ of the propagators, the Wightman function defined from the 
 > - The damping factor of Theorem §CA.6.5 is the impulse response of a damped oscillator seen from the frequency side ([[§B4.4 Fourier Transforms and the Delta Function#^thm-b4-4-6|WO Theorem §B4.4.6]]) and the adiabatic switching $e^{\eta t}$, $\eta \to 0^+$, of time-dependent perturbation theory ([[§C9.6 The Interaction Picture and the Atom–Field Interaction|QM §C9.6]]).
 > - Boundary values, the $i\varepsilon$ limits and fundamental solutions are where the three tools before them meet: distributions ([[§CA.2 Generalized Functions|§CA.2]]), Fourier transforms of distributions ([[§CA.3 Fourier Transforms and Fourier Tricks|§CA.3]]) and contour deformation with the half-residue lemma ([[§CA.4 Contour Integration#^thm-ca-4-7|Theorem §CA.4.7]]); the procedure that chains them for every propagator is [[P2 Green's Functions by Contour Integration|P2]].
 > - **Used in**, statement by statement (C2a–C2b items):
->   - Caution: What the formula does and does not say ($i\varepsilon$ only matters at zeros): the principal function, dropping $i\varepsilon$ after a Wick rotation — [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|Theorem §C2b.7.4]], [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]].
->   - Theorem §CA.6.1 (boundary values): $D_W$ from the lower half-plane — [[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]].
+>   - Caution: What the formula does and does not say ($i\varepsilon$ only matters at zeros): the principal function, dropping $i\varepsilon$ after a Wick rotation — [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|Theorem §C2b.7.4]].
+>   - Theorem §CA.6.1 (boundary values): $D_W$ from the lower half-plane — [[§C2b.2 The Wightman Function#^thm-c2b-2-3|Theorem §C2b.2.3]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§C2b.7 Wick Rotation and the Two-Point Family|§C2b.7]] (Mathematical background).
 >   - Theorem §CA.6.2 (Sokhotski–Plemelj): [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-11|Theorem §C2b.6.11]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|Theorem §C2b.7.5]].
 >   - Theorem §CA.6.3 (logarithms and powers): the light-cone singularity — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]].
 >   - Theorem §CA.6.4 (light-cone boundary value): massless $D_W$, $D$, $D_1$ — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-8|Theorem §C2b.4.8]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|Theorem §C2b.7.4]].
 >   - Def. §CA.6.1, Theorems §CA.6.7–§CA.6.8 (fundamental solutions): Green's functions, contours as boundary conditions, the sourced field — [[§C2b.5 Green's Functions and Contours#^rem-c2b-5-1|§C2b.5, Remark: What a Green's "function" is]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6|Theorem §C2b.5.6]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-4|Theorem §C2b.6.4]], [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-1|Theorem §C2b.8.1]], [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]].
 >   - Theorem §CA.6.5 (damping, $\tilde\theta$): the retarded function, the $i\varepsilon$ from switching — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]].
->   - Theorem §CA.6.6 ($i\varepsilon$ limits): $D_F$ and $D_R$ in momentum space as limits in $\mathcal S'$ — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-11|Theorem §C2b.6.11]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|Theorem §C2b.7.4]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|Theorem §C2b.7.5]], [[P2 Green's Functions by Contour Integration#^p2-3|P2, step 3]].
+>   - Theorem §CA.6.6 ($i\varepsilon$ limits): $D_F$ and $D_R$ in momentum space as limits in $\mathcal S'$ — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-10|Theorem §C2b.6.10]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-11|Theorem §C2b.6.11]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|Theorem §C2b.7.4]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-5|Theorem §C2b.7.5]].
 > - **Used in**, statement by statement (C1a–C1b items):
->   - Theorem §CA.6.1 (boundary values): [[§C1a.5 Vectors, Tensors and Index Notation#^rem-c1a-5-3|§C1a.5, Remark: In what sense 1/x² is harmonic, and where the source sits]].
+>   - Theorem §CA.6.1 (boundary values): [[§C1a.5 Vectors, Tensors and Index Notation#^rem-c1a-5-3|§C1a.5, Remark: In what sense 1/x² is harmonic, and where the source sits]], [[§C1a.3 Causal Structure and the Causality of a Single Particle|§C1a.3]] (Mathematical background).
 >   - Theorem §CA.6.4 (light-cone boundary value): [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-9|Theorem §C1a.5.9]], [[§C1a.5 Vectors, Tensors and Index Notation#^rem-c1a-5-3|§C1a.5, Remark: In what sense 1/x² is harmonic, and where the source sits]].
 > - **Used in**, statement by statement (C4 items):
->   - Def. §CA.6.1 (Fundamental Solution): [[§C4.2★ The Proca Field#^thm-c4-2-8|Theorem §C4.2.8]], [[§C4.2★ The Proca Field#^thm-c4-2-9|Theorem §C4.2.9]], [[§C4.2★ The Proca Field|§C4.2★]].
->   - Theorem §CA.6.2 (Sokhotski–Plemelj Formula): [[§C4.11 Vector-Field Propagators#^rem-c4-11-2|§C4.11, Remark: The sign of the photon propagator and negative norm]], [[§C4.11 Vector-Field Propagators#^thm-c4-11-7|Theorem §C4.11.7]], [[§C4.11 Vector-Field Propagators|§C4.11]].
->   - Theorem §CA.6.3 (Logarithm and Powers at the Real Axis): [[§C4.11 Vector-Field Propagators#^rem-c4-11-3|§C4.11, Remark: Why the ξ-term is allowed: Faddeev–Popov]], [[§C4.11 Vector-Field Propagators#^thm-c4-11-8|Theorem §C4.11.8]], [[§C4.11 Vector-Field Propagators|§C4.11]].
+>   - Def. §CA.6.1 (Fundamental Solution): [[§C4.2★ The Proca Field#^thm-c4-2-8|Theorem §C4.2.8]], [[§C4.2★ The Proca Field|§C4.2★]].
+>   - Theorem §CA.6.2 (Sokhotski–Plemelj Formula): [[§C4.11 Vector-Field Propagators#^thm-c4-11-7|Theorem §C4.11.7]], [[§C4.11 Vector-Field Propagators|§C4.11]].
+>   - Theorem §CA.6.3 (Logarithm and Powers at the Real Axis): [[§C4.11 Vector-Field Propagators#^thm-c4-11-8|Theorem §C4.11.8]], [[§C4.11 Vector-Field Propagators|§C4.11]].
 >   - Theorem §CA.6.4 (The Light-Cone Boundary Value): [[§C4.11 Vector-Field Propagators#^thm-c4-11-5|Theorem §C4.11.5]], [[§C4.11 Vector-Field Propagators|§C4.11]].
->   - Theorem §CA.6.8 (Convolution with a Fundamental Solution Solves the Sourced Equation): [[§C4.2★ The Proca Field#^thm-c4-2-8|Theorem §C4.2.8]], [[§C4.2★ The Proca Field#^thm-c4-2-9|Theorem §C4.2.9]].
->   - Theorem §CA.6.6 (The iε Limits of the Propagator Denominators): [[§C4.11 Vector-Field Propagators#^rem-c4-11-2|§C4.11, Remark: The sign of the photon propagator and negative norm]], [[§C4.11 Vector-Field Propagators#^thm-c4-11-7|Theorem §C4.11.7]], [[§C4.11 Vector-Field Propagators|§C4.11]].
+>   - Theorem §CA.6.8 (Convolution with a Fundamental Solution Solves the Sourced Equation): [[§C4.2★ The Proca Field#^thm-c4-2-8|Theorem §C4.2.8]].
+>   - Theorem §CA.6.6 (The iε Limits of the Propagator Denominators): [[§C4.11 Vector-Field Propagators#^thm-c4-11-7|Theorem §C4.11.7]], [[§C4.11 Vector-Field Propagators|§C4.11]].
 > - **Used in**, statement by statement (C5a–C5b items):
 >   - Theorem §CA.6.6 ($i\varepsilon$ limits): $S_F$ as a limit in $\mathcal S'$ — [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-3|Theorem §C5b.8.3]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-7|Theorem §C5b.8.7]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^thm-c5b-8-8|Theorem §C5b.8.8]].
 > - **Used in**, statement by statement (Electromagnetism C items):
->   - Def. §CA.6.1, Theorems §CA.6.7–§CA.6.8 (fundamental solutions): the Coulomb potential, the Green functions of Poisson's equation, the Lorenz-gauge and Proca solutions — [[§C1.3 Gauge Symmetry and Charge Conservation#^ex-c1-3-2|EM ★ Example §C1.3.2]], [[§C1.4 Gauge Fixing and the Two Polarizations#^thm-c1-4-1|EM Theorem §C1.4.1]], [[§C2.1 The Static Limit and the Field of a Charge Distribution#^rem-c2-1-1|EM Remark: The Coulomb potential as a fundamental solution]], [[§C7.3 Green Functions for Poisson’s Equation#^def-c7-3-1|EM Def. §C7.3.1]], [[§C7.3 Green Functions for Poisson’s Equation#^thm-c7-3-1|EM Theorem §C7.3.1]], [[§C7.3 Green Functions for Poisson’s Equation#^thm-c7-3-4|EM Theorem §C7.3.4]].
+>   - Def. §CA.6.1, Theorems §CA.6.7–§CA.6.8 (fundamental solutions): the Coulomb potential, the Green functions of Poisson's equation, the Lorenz-gauge and Proca solutions — [[§C1.3 Gauge Symmetry and Charge Conservation#^ex-c1-3-2|EM ★ Example §C1.3.2]], [[§C1.4 Gauge Fixing and the Two Polarizations#^thm-c1-4-1|EM Theorem §C1.4.1]], [[§C2.1 The Static Limit and the Field of a Charge Distribution#^rem-c2-1-1|EM Remark: The Coulomb potential as a fundamental solution]], [[§C7.3 Green Functions for Poisson’s Equation#^def-c7-3-1|EM Def. §C7.3.1]], [[§C7.3 Green Functions for Poisson’s Equation#^thm-c7-3-1|EM Theorem §C7.3.1]], [[§C7.3 Green Functions for Poisson’s Equation#^thm-c7-3-4|EM Theorem §C7.3.4]], [[§C7.3 Green Functions for Poisson’s Equation|EM §C7.3]].
 >   - Theorem §CA.6.5 (damping): the two-tube electron lens by a Fourier integral — [[§C6.3 Separation in Cylindrical and Polar Coordinates#^ex-c6-3-1|EM Example §C6.3.1]].
-> - **Used in** (C6a places, Lecture 14): Theorem §CA.6.5 — the damping of the vacuum projection and the Feynman pole ([[§C6a.11 The iε Limit and Vacuum Bubbles#^rem-c6a-11-1|§C6a.11, Remark: Why precisely what we do already]]); Theorem §CA.6.6 — the tilted energy contour gives $+i\varepsilon$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|Theorem §C6a.11.1]]).
-> - **Used in** (C8 items, Lecture 18): Theorem §CA.6.6, through its massless extension [[§C4.11 Vector-Field Propagators#^thm-c4-11-7|Theorem §C4.11.7]] — the sense of the photon propagator $-ig_{\mu\nu}/(q^2 + i\varepsilon)$ of the QED rules ([[§C8.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator#^thm-c8-3-5|Theorem §C8.3.5]]).
+> - **Used in** (C6a places, Lecture 14): Theorem §CA.6.5 — the damping of the vacuum projection and the Feynman pole ([[§C6a.11 The iε Limit and Vacuum Bubbles#^rem-c6a-11-1|§C6a.11, Remark: Why precisely what we do already]]), [[§C6a.4 The Interacting Vacuum and the Two-Point Function|§C6a.4]] (Mathematical background); Theorem §CA.6.6 — the tilted energy contour gives $+i\varepsilon$ ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|Theorem §C6a.11.1]]).
+> - **Used in** (C8 items, Lecture 18): Theorem §CA.6.6, through its massless extension [[§C4.11 Vector-Field Propagators#^thm-c4-11-7|Theorem §C4.11.7]] — the sense of the photon propagator $-ig_{\mu\nu}/(q^2 + i\varepsilon)$ of the QED rules, [[§C8.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator|§C8.3]] (Mathematical background).
+> - **Used in** (C6c places): Theorem §CA.6.2 — [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-2|Theorem §C6c.7.2]]; Theorem §CA.6.6 — [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-2|Theorem §C6c.7.2]], [[§C6c.8 From the Question to the Formula#^ex-c6c-8-1|Example §C6c.8.1]].
+> - **Used in** (Procedures): Theorem §CA.6.6 — [[P2 Green's Functions by Contour Integration|P2]]; Caution: What the formula does and does not say — [[P2 Green's Functions by Contour Integration|P2]].

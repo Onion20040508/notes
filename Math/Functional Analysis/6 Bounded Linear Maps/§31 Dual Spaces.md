@@ -23,7 +23,7 @@ tags: [functional-analysis, math556]
 ^def-31-1
 
 > [!remark]- Connections
-> - The same space in the companion chapter, with the norm as an infimum: [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|Def. §44.1]], [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-2|Def. §44.2]], [[§44 Bras, Kets, and the Riesz Map#^xold-lem-44-1|§44.1]]; the other special case of [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] used there, bounded operators on $H$: [[§45 The Completeness Relation#^xold-def-45-1|Def. §45.1]].
+> - The same space is recalled in the companion chapter, with the norm as the smallest admissible constant (Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]): [[§44 Bras, Kets, and the Riesz Map|§44]]; the other special case of [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] used there, bounded operators on $H$ ([[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]]): [[§45 The Completeness Relation|§45]].
 > - The algebraic dual in finite dimensions: [[§12 Duality#^ladr-3-108|LADR 3.108]], [[§12 Duality#^ladr-3-109|LADR 3.109]], [[§12 Duality#^ladr-3-110|LADR 3.110]]; [[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]].
 
 > [!theorem] Corollary §31.1: The Dual is Always a Banach Space
@@ -291,3 +291,49 @@ The picture behind ($\Leftarrow$): if $\ell$ were unbounded, points $y_n$ of the
 > Proposition [[§31 Dual Spaces#^prop-31-6|§31.6]] is pure algebra; Proposition [[§31 Dual Spaces#^prop-31-7|§31.7]] is where the norm enters. Together they say that the null space of a nonzero functional is a “hyperplane through $0$” ([[§5 Statement and Motivation#^def-5-3|Def. §5.3]]) that is either closed (bounded $\ell$) or not (unbounded $\ell$). Both proofs use the same move: subtract from $x$ the multiple of $x_0$ that lands it in the null space.
 
 ^rem-31-5
+
+Proposition [[§31 Dual Spaces#^prop-31-7|§31.7]] is a statement about functionals. For a linear map into a general normed space, a closed null space is not enough.
+
+> [!example] Example §31.3: A Closed Null Space Does Not Make a Linear Map Bounded
+> Let $X, Y$ be normed linear spaces and $T : X \to Y$ linear with null space $N_T = \{x \in X : Tx = 0\}$. If $N_T$ is closed, $T$ need not belong to $\mathcal{L}(X, Y)$: on $X = Y = c_{00}$ with the norm $\|x\| = \sup_n |x_n|$, the linear map $T x = (n x_n)_{n \ge 1}$ has $N_T = \{0\}$, which is closed, and $T$ is not bounded.
+>
+> *Source: HW6, Problem 1*
+
+^ex-31-3
+
+> [!proof]+ Proof
+> (HW6, Problem 1.) **Answer: no.** For $Y = \mathbb{F}$ (a functional) the answer is yes (Lax §6.3, Lemma 5; HW 5, Problem 5; Proposition [[§31 Dual Spaces#^prop-31-7|§31.7]]), but not for general $Y$.
+>
+> **Counterexample.** Let $X = Y = c_{00}$, the space of real sequences with only finitely many nonzero terms (Example [[§14 New Normed Spaces from Old#^ex-14-3|§14.3]]), with the norm $\|x\| = \sup_n |x_n|$, and define
+>
+> $$
+> T x = (1 \cdot x_1,\ 2 x_2,\ 3 x_3,\ \ldots) = (n x_n)_{n \ge 1}.
+> $$
+>
+> - *$T$ is well defined and linear.* If $x_n = 0$ for $n > M$, then $n x_n = 0$ for $n > M$, so $Tx \in c_{00}$; and $T(\alpha x + \beta y) = (n(\alpha x_n + \beta y_n))_n = \alpha Tx + \beta Ty$.
+> - *$N_T$ is closed.* $Tx = 0$ means $n x_n = 0$ for all $n$, i.e. $x = 0$. So $N_T = \{0\}$, and a one-point set is closed in a metric space.
+> - *$T$ is unbounded.* $\|e_n\| = 1$ and $T e_n = n e_n$, so $\|T e_n\| = n$. There is no constant $c$ with $\|Tx\| \le c\|x\|$ for all $x$, so $T \notin \mathcal{L}(X, Y)$ (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]).
+>
+> **A second counterexample, closer to the course.** Let $X = C^1[0,1]$ and $Y = C[0,1]$, both with the maximum norm, and $D f = f'$. Then $N_D$ is the set of constant functions. It is closed: if constants $c_n$ converge uniformly to $f$, then $(c_n)$ is Cauchy in $\mathbb{R}$, so $c_n \to c$, and $f = c$ is constant. But $D$ is unbounded: $f_n(t) = t^n$ has $\|f_n\| = 1$ and $\|D f_n\| = \max_t n t^{n-1} = n$ (Proposition [[§30 Boundedness and Continuity#^prop-30-6|§30.6]]).
+
+^pf-ex-31-3
+
+*Uses:* [[§31 Dual Spaces#^prop-31-7|§31.7]], [[§14 New Normed Spaces from Old#^ex-14-3|Ex. §14.3]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^prop-30-6|§30.6]]
+
+Where the functional proof breaks: for $\ell : X \to \mathbb{F}$ one uses that $N_\ell$ has codimension one, so $X = N_\ell \oplus \operatorname{span}\{x_0\}$ (Proposition [[§31 Dual Spaces#^prop-31-6|§31.6]]). The correct generalization is the following.
+
+> [!theorem] Proposition §31.8: Closed Null Space and Finite-Dimensional Range Imply Bounded
+> Let $X, Y$ be normed linear spaces and $T : X \to Y$ linear with null space $N_T = \{x \in X : Tx = 0\}$. If $N_T$ is closed and $T(X)$ is finite-dimensional, then $T$ is bounded.
+>
+> *Source: HW6, Problem 1*
+
+^prop-31-8
+
+> [!proof]+ Proof
+> (HW6, Problem 1, the remark after the solution.) Since $N_T$ is closed, $\|[x]\| = \inf_{y \in N_T} \|x + y\|$ is a norm on $X/N_T$ (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]), and the quotient map $\pi : X \to X/N_T$ satisfies $\|\pi x\| \le \|x\|$. The map $\tilde T : X/N_T \to Y$, $\tilde T[x] = Tx$, is well defined (if $x - x' \in N_T$ then $Tx = Tx'$), linear and injective, so $\dim X/N_T = \dim T(X) < \infty$. A linear map on a finite-dimensional normed space is bounded (Proposition [[§30 Boundedness and Continuity#^prop-30-7|§30.7]]), so $\|Tx\| = \|\tilde T \pi x\| \le \|\tilde T\|\,\|\pi x\| \le \|\tilde T\|\,\|x\|$.
+
+^pf-31-8
+
+*Uses:* [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]], [[§30 Boundedness and Continuity#^prop-30-7|§30.7]]
+
+Both counterexamples of Example [[§31 Dual Spaces#^ex-31-3|§31.3]] have infinite-dimensional range.

@@ -5,15 +5,15 @@ source: "[[Differentiable Manifolds]]"
 aliases: ["MATH 591 48.4", "SU(2) → SO(3) double cover", "spin double cover"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4]]
+![[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5]]
 
 ## Treated in
-- [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|Theorem §48.4: The Double Cover SU(2) → SO(3)]], in [[§48 SU(2) → SO(3)꞉ The Double Cover]]
+- [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|Theorem §48.5: The Double Cover SU(2) → SO(3)]], in [[§48 SU(2) → SO(3)꞉ The Double Cover]]
 
 ## Its proof uses
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
 - [[§4 Quotient Spaces and Open Maps#^def-4-1|Definition §4.1: Quotient Space]]
-- [[§5 Quotient Maps#^cor-5-2|Corollary §5.2: The Form Used in Practice]]
+- [[§5 Quotient Maps#^cor-5-3|Corollary §5.3: The Form Used in Practice]]
 - [[§18 Projective Spaces as Smooth Manifolds#^cor-18-5|Corollary §18.5: Real Projective Space]]
 - [[§25 The Geometric Tangent Space#^def-25-3|Definition §25.3: The Hat Map]]
 - [[§25 The Geometric Tangent Space#^ex-25-4|Example §25.4: SO(3) and Infinitesimal Rotations]]
@@ -26,9 +26,9 @@ tags: [differentiable-manifolds, hub]
 - [[§37 Regular Submanifolds#^lem-37-5|Lemma §37.5: Smooth Maps and Regular Submanifolds]]
 - [[§47 The Unit Quaternions and SU(2)#^prop-47-5|Proposition §47.5: S³ Is SU(2)]]
 - [[§47 The Unit Quaternions and SU(2)#^prop-47-6|Proposition §47.6: The Tangent Space of SU(2) at the Identity]]
-- [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-1|Proposition §48.1: Conjugation by Unit Quaternions Is Rotation]]
-- [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-2|Lemma §48.2: Every Rotation Has an Axis]]
-- [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|Lemma §48.3: Translating the Differential]]
+- [[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|Proposition §48.2: Conjugation by Unit Quaternions Is Rotation]]
+- [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|Lemma §48.3: Every Rotation Has an Axis]]
+- [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-4|Lemma §48.4: Translating the Differential]]
 
 ## Its proof uses (other subjects)
 - [[§15 Homomorphisms#^def-15-1|493 §15.1: Group Homomorphism]]
@@ -38,9 +38,9 @@ tags: [differentiable-manifolds, hub]
 - [[§10 Continuous Functions#^def-10-2|590 §10.2: Homeomorphism]]
 
 ## Used in (Differentiable Manifolds)
-- [[§48 SU(2) → SO(3)꞉ The Double Cover#^cor-48-5|Corollary §48.5: SU(2) → SO(3) Is a Fibration with Two-Point Fibre]]
+- [[§48 SU(2) → SO(3)꞉ The Double Cover#^cor-48-7|Corollary §48.7: SU(2) → SO(3) Is a Fibration with Two-Point Fibre]]
 
 ## Connections
-- **How.** Identify $S^3$ with the unit quaternions and with $\mathrm{SU}(2)$ ([[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]]); conjugation on the imaginary quaternions $\cong \mathbb{R}^3$ gives a homomorphism onto $\mathrm{SO}(3)$ with kernel $\{\pm 1\}$ ([[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-1|§48.1]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-2|§48.2]]), and a homomorphism of Lie groups is a local diffeomorphism once its differential at the identity is invertible ([[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|§48.3]]).
+- **How.** Identify $S^3$ with the unit quaternions and with $\mathrm{SU}(2)$ ([[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]]); conjugation on the imaginary quaternions $\cong \mathbb{R}^3$ gives a homomorphism onto $\mathrm{SO}(3)$ with kernel $\{\pm 1\}$ ([[§48 SU(2) → SO(3)꞉ The Double Cover#^prop-48-2|§48.2]], [[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-3|§48.3]]), and a homomorphism of Lie groups is a local diffeomorphism once its differential at the identity is invertible ([[§48 SU(2) → SO(3)꞉ The Double Cover#^lem-48-4|§48.4]]).
 - **Topology.** So $\mathrm{SO}(3) \cong S^3/\{\pm 1\} = \mathbb{RP}^3$, and $S^3 \to \mathrm{SO}(3)$ is a two-sheeted covering ([[§46 Projective Spaces and the Hopf Fibration#^ex-46-1|Ex. §46.1]] for $S^n \to \mathbb{RP}^n$).
 - **Used in physics.** The same double cover is why spin-½ states change sign under a $2\pi$ rotation: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-8|QM Theorem §C5.2.8]].

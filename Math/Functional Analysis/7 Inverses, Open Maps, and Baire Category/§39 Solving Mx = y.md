@@ -25,14 +25,21 @@ $$
 M x = y . \tag{$\ast$}
 $$
 
+Two sets attached to $M$ decide the first two of the three questions below.
+
+> [!definition] Definition §39.1: Range
+> Let $M : X \to Y$ be a linear map. The **range** of $M$ is $R(M) = \{ Mx : x \in X \}$.
+
+^def-39-1
+
+> [!definition] Definition §39.2: Null Space
+> Let $M : X \to Y$ be a linear map. The **null space** (or **kernel**, or null set) of $M$ is $N(M) = \{ x \in X : Mx = 0 \}$. For a linear functional this is the kernel of Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-2|§26.2]].
+
+^def-39-2
+
 1. *Existence.* For given $y \in Y$, is there a solution $x \in X$ of $(\ast)$? For every $y$: yes if and only if $R(M) = Y$.
 2. *Uniqueness.* Is the solution unique? Yes if and only if $N(M) = \{0\}$.
 3. *Stability.* Assume $M : X \to Y$ is one-to-one and onto, so that $M^{-1} : Y \to X$ exists and $(\ast)$ is solved by $x = M^{-1} y$. Does a small error in $y$ imply a small error in $x$? Yes if $M^{-1}$ is continuous.
-
-> [!definition] Definition §39.1: Range; Null Space
-> Let $M : X \to Y$ be a linear map. The **range** of $M$ is $R(M) = \{ Mx : x \in X \}$. The **null space** (or **kernel**, or null set) of $M$ is $N(M) = \{ x \in X : Mx = 0 \}$.
-
-^def-39-1
 
 (For (2): if $Mx_1 = Mx_2 = y$ then $M(x_1 - x_2) = 0$, so $N(M) = \{0\}$ forces $x_1 = x_2$; conversely, if $0 \ne w \in N(M)$ and $Mx = y$, then $x + w$ is a second solution. (1) is the definition of $R(M)$.) Question (3) is the one that matters in practice: data are never exact, and one hopes that the computed solution is close to the true one. Continuity of $M^{-1}$ is exactly this: for every $\varepsilon > 0$ there is $\delta > 0$ such that $\|y_1 - y_2\| < \delta$ implies $\|M^{-1} y_1 - M^{-1} y_2\| < \varepsilon$. This is called **stability**. In finite dimensions $M$ is a matrix and all three questions are linear algebra; the first two can be fixed in general, as follows, while the third is hard.
 
@@ -122,6 +129,8 @@ $$
 &\iff \text{for every open } O \subset X,\ (M^{-1})^{-1}(O) = M(O) \text{ is open in } Y .\end{aligned}
 $$
 
+The completeness of $Y$ cannot be dropped from Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]. The identity map from $C^1[a,b]$ with the norm $\|f\|_{C^1} = \max|f| + \max|f'|$ to $C^1[a,b]$ with the norm $\max|f|$ is linear, bounded (because $\max|f| \le \|f\|_{C^1}$), one-to-one and onto, and its domain is a Banach space; but its inverse is not bounded, because the two norms are not equivalent. The target space is not complete (Example [[§41 The Open Mapping Theorem and Its Consequences#^ex-41-1|§41.1]]).
+
 > [!theorem] Lemma §39.3: Continuity by Open Sets
 > A map $f$ between metric spaces is (sequentially) continuous if and only if $f^{-1}(U)$ is open for every open $U$.
 
@@ -144,14 +153,19 @@ So a bounded linear bijection $M$ has a bounded inverse exactly when $M$ is an o
 
 ## Closed Maps
 
-> [!definition] Definition §39.5: Closed Map
-> Let $X, Y$ be normed linear spaces and let $D(M) \subset X$ be the domain of a linear map $M$ (a linear subspace on which $M$ is defined, possibly not all of $X$). $M : D(M) \to Y$ is a **closed map** if its **graph**
+> [!definition] Definition §39.4: Graph of a Linear Map
+> Let $X, Y$ be normed linear spaces and let $D(M) \subset X$ be the domain of a linear map $M$ (a linear subspace on which $M$ is defined, possibly not all of $X$). The **graph** of $M : D(M) \to Y$ is the subset
 >
 > $$
 > G(M) = \{ (x, Mx) : x \in D(M) \}
 > $$
 >
-> is a closed set in $X \times Y$. That is: for any sequence $\{x_n\}_{n=1}^\infty$ in $D(M)$, if $x_n \to x_0$ in $X$ and $Mx_n \to y_0$ in $Y$, then $x_0 \in D(M)$ and $y_0 = Mx_0$.
+> of $X \times Y$.
+
+^def-39-4
+
+> [!definition] Definition §39.5: Closed Map
+> Let $X, Y$ be normed linear spaces and $M : D(M) \to Y$ a linear map with domain $D(M) \subset X$. $M$ is a **closed map** if its graph $G(M)$ (Definition [[§39 Solving Mx = y#^def-39-4|§39.4]]) is a closed set in $X \times Y$. That is: for any sequence $\{x_n\}_{n=1}^\infty$ in $D(M)$, if $x_n \to x_0$ in $X$ and $Mx_n \to y_0$ in $Y$, then $x_0 \in D(M)$ and $y_0 = Mx_0$.
 >
 > *Lax: §15.5, definition before Thm 12*
 
@@ -245,14 +259,25 @@ A closed map need not be continuous. This is why one cares about such a weak not
 
 ^pf-ex-39-3
 
+> [!definition] Definition §39.6: Graph Norm
+> Let $X, Y$ be normed linear spaces, $D(M) \subset X$ a linear subspace and $M : D(M) \to Y$ a linear map. The **graph norm** of $M$ on $D(M)$ is
+>
+> $$
+> \|x\|_G = \|x\|_X + \|Mx\|_Y , \qquad x \in D(M) .
+> $$
+>
+> That $\|\cdot\|_G$ is a norm on $D(M)$ is verified at the beginning of the proof of Proposition [[§39 Solving Mx = y#^prop-39-4|§39.4]].
+
+^def-39-6
+
 > [!remark] Remark: Which $C^1$; the Graph Norm
 > Here $C^1$ is classical $C^1$. The domain is $C^1$ even though there are differentiable functions that are not $C^1$: the domain may be chosen smaller than the largest possible one, but not larger; here only $C^1$ matters.
-> The proof is the argument that $C^1[a,b]$ is complete in the norm $\max|f| + \max|f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-5|§13.5]]). That is no coincidence: a linear map is closed exactly when its domain is complete in the *graph norm* $\|x\| + \|Mx\|$, provided $X$ and $Y$ are complete (Proposition [[§39 Solving Mx = y#^prop-39-4|§39.4]]), and for $M = \frac{d}{dt}$ the graph norm is $\max|x| + \max|x'|$. Note that $D(M) = C^1[0,1]$ is not closed in $C[0,1]$ (it is dense), which is how a closed map can fail to be continuous.
+> The proof is the argument that $C^1[a,b]$ is complete in the norm $\max|f| + \max|f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-5|§13.5]]). That is no coincidence: a linear map is closed exactly when its domain is complete in the graph norm $\|x\| + \|Mx\|$ (Definition [[§39 Solving Mx = y#^def-39-6|§39.6]]), provided $X$ and $Y$ are complete (Proposition [[§39 Solving Mx = y#^prop-39-4|§39.4]]), and for $M = \frac{d}{dt}$ the graph norm is $\max|x| + \max|x'|$. Note that $D(M) = C^1[0,1]$ is not closed in $C[0,1]$ (it is dense), which is how a closed map can fail to be continuous.
 
 ^rem-39-4
 
 > [!theorem] Proposition §39.4: Closed if and only if the Domain is Complete in the Graph Norm
-> Let $X, Y$ be Banach spaces, $D(M) \subset X$ a linear subspace and $M : D(M) \to Y$ linear. On $D(M)$ let $\|x\|_G = \|x\|_X + \|Mx\|_Y$, the **graph norm**. Then $M$ is a closed map (Definition [[§39 Solving Mx = y#^def-39-5|§39.5]]) if and only if $(D(M), \|\cdot\|_G)$ is complete.
+> Let $X, Y$ be Banach spaces, $D(M) \subset X$ a linear subspace and $M : D(M) \to Y$ linear. On $D(M)$ let $\|x\|_G = \|x\|_X + \|Mx\|_Y$ be the graph norm (Definition [[§39 Solving Mx = y#^def-39-6|§39.6]]). Then $M$ is a closed map (Definition [[§39 Solving Mx = y#^def-39-5|§39.5]]) if and only if $(D(M), \|\cdot\|_G)$ is complete.
 
 ^prop-39-4
 

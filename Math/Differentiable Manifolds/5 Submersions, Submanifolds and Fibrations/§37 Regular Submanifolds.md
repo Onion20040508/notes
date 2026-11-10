@@ -23,7 +23,7 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 ^def-37-1
 
 > [!theorem] Proposition §37.1: Open Subsets of a Product
-> Let $M_1$, $M_2$ be smooth manifolds and $U \subseteq M_1$ open. Then $U \times M_2$ is open in $M_1 \times M_2$, and the open submanifold $U \times M_2$ of $M_1 \times M_2$ (Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]]) is the same smooth manifold as the product manifold $U \times M_2$ of the open submanifold $U$ with $M_2$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-7|§19.7]]). In particular the projection $\mathrm{pr}_1 : U \times M_2 \to U$ is the restriction to $U \times M_2$ of the projection $\mathrm{pr}_1 : M_1 \times M_2 \to M_1$ (Definition [[§3 Subspaces and Products#^def-3-4|§3.4]]).
+> Let $M_1$, $M_2$ be smooth manifolds and $U \subseteq M_1$ open. Then $U \times M_2$ is open in $M_1 \times M_2$, and the open submanifold $U \times M_2$ of $M_1 \times M_2$ (Definition [[§37 Regular Submanifolds#^def-37-1|§37.1]]) is the same smooth manifold as the product manifold $U \times M_2$ of the open submanifold $U$ with $M_2$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]). In particular the projection $\mathrm{pr}_1 : U \times M_2 \to U$ is the restriction to $U \times M_2$ of the projection $\mathrm{pr}_1 : M_1 \times M_2 \to M_1$ (Definition [[§3 Subspaces and Products#^def-3-4|§3.4]]).
 
 ^prop-37-1
 
@@ -51,14 +51,14 @@ The subsets of a manifold that look locally like $\mathbb{R}^{m-k} \subseteq \ma
 > U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\}.
 > $$
 >
-> Regular submanifolds are also called **embedded** submanifolds, as opposed to the [[§44 Embeddings#^def-44-4|immersed submanifolds]] of [[§44 Embeddings#^def-44-4|Definition §44.4]]. In these notes, “submanifold” without qualification means a regular submanifold.
+> Regular submanifolds are also called **embedded** submanifolds, as opposed to the [[§44 Embeddings#^def-44-3|immersed submanifolds]] of [[§44 Embeddings#^def-44-3|Definition §44.3]]. In these notes, “submanifold” without qualification means a regular submanifold.
 >
 > *Lee: Theorem 5.8*
 
 ^def-37-2
 
 > [!remark]- Connections
-> - The other kind of submanifold: [[§44 Embeddings#^def-44-4|immersed submanifolds, Def. §44.4]]; when an immersed submanifold is regular: [[§44 Embeddings#^prop-44-15|§44.15]]; local images of immersions: [[§43 Immersions#^cor-43-2|§43.2]].
+> - The other kind of submanifold: [[§44 Embeddings#^def-44-3|immersed submanifolds, Def. §44.3]]; when an immersed submanifold is regular: [[§44 Embeddings#^prop-44-17|§44.17]]; local images of immersions: [[§43 Immersions#^cor-43-2|§43.2]].
 > - Codimension in the Euclidean setting: [[§26 Transversality#^def-26-1|Def. §26.1]].
 > - The geometric stage: in $\mathbb{R}^{n+k}$ the submanifolds are exactly the manifolds of [[§20 Manifolds in Euclidean Space|§20]] — the external, internal and graph descriptions ([[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]]) — and the slice of this definition is a fourth: [[§37 Regular Submanifolds#^prop-37-12|§37.12]].
 > - Their tangent spaces: $T^{\mathrm{geo}}_pX = \ker F'(p)$ ([[§25 The Geometric Tangent Space#^thm-25-3|§25.3]]) is $\iota_{\ast p}(T_pX)$ ([[§37 Regular Submanifolds#^rem-37-2|Remark: The Tangent Spaces Match]], [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]]).
@@ -278,7 +278,7 @@ The retraction of Lemma [[§37 Regular Submanifolds#^lem-37-7|§37.7]] for a cur
 ^prop-37-9
 
 > [!proof]+ Proof
-> *(Stated in Lecture 12 without proof; filled in.)* Fix an adapted chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and its induced chart $(U \cap S, \varphi_S)$ of $S$, whose coordinate functions are $x^1, \ldots, x^{m-k}$ restricted to $U \cap S$; by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]] the $\partial/\partial x^i|^S_p$, $i \le m - k$, form a basis of $T_pS$, and the $\partial/\partial x^l|_p$, $l \le m$, a basis of $T_pM$.
+> *(Stated in Lecture 12 without proof; filled in.)* Fix an adapted chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$ and its induced chart $(U \cap S, \varphi_S)$ of $S$, whose coordinate functions are $x^1, \ldots, x^{m-k}$ restricted to $U \cap S$; by Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]] the $\partial/\partial x^i|^S_p$, $i \le m - k$, form a basis of $T_pS$, and the $\partial/\partial x^l|_p$, $l \le m$, a basis of $T_pM$.
 >
 > *The formula.* By Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1) the coordinate representation of $\iota$ is $j$, whose Jacobian is the $m \times (m-k)$ matrix $\binom{I_{m-k}}{0}$: the components of $j(r) = (r, \vec 0)$ are $j^l(r) = r^l$ for $l \le m - k$ and $j^l(r) = 0$ for $l > m - k$, so $\partial j^l/\partial r^i = \delta^l_i$ for $l \le m - k$ and $0$ for $l > m - k$. Written out, at every point,
 >
@@ -299,7 +299,7 @@ The retraction of Lemma [[§37 Regular Submanifolds#^lem-37-7|§37.7]] for a cur
 
 ^pf-37-9
 
-*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]
+*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]
 
 So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) \subseteq T_pM$, the “intrinsic tangent space” inside the ambient one. The second description is the one from Assignment 3, Problem 2: think of a curve in $S$ composed with the inclusion as a curve in $M$, and take its velocity there.
 
@@ -329,7 +329,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 > \mathrm{id} \circ x_b \circ \varphi^{-1}\big(r^1, \ldots, r^m\big) = \big(r^{m-k+1}, \ldots, r^m\big) \qquad \text{on } \varphi(U),
 > $$
 >
-> because the $l$-th entry of $\varphi(q')$ is $x^l(q')$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]). This is a linear map, hence smooth, so $x_b$ is smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]). Its components are $x_b^{\,j} = r^j \circ x_b = x^{m-k+j}$, $j = 1, \ldots, k$, and the Jacobian of the coordinate representation at every point is the $k \times m$ matrix $(0 \mid I_k)$: $\partial r^{m-k+j}/\partial r^i = \delta^{m-k+j}_i$. Written out,
+> because the $l$-th entry of $\varphi(q')$ is $x^l(q')$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]). This is a linear map, hence smooth, so $x_b$ is smooth (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]). Its components are $x_b^{\,j} = r^j \circ x_b = x^{m-k+j}$, $j = 1, \ldots, k$, and the Jacobian of the coordinate representation at every point is the $k \times m$ matrix $(0 \mid I_k)$: $\partial r^{m-k+j}/\partial r^i = \delta^{m-k+j}_i$. Written out,
 >
 > $$
 > \left(\begin{array}{ccc|ccc} 0 & \cdots & 0 & 1 & \cdots & 0 \\ \vdots & & \vdots & \vdots & \ddots & \vdots \\ 0 & \cdots & 0 & 0 & \cdots & 1 \end{array}\right) = (0 \mid I_k) \qquad (k \text{ rows}; \ m - k \text{ zero columns, then } k).
@@ -341,7 +341,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 > \begin{cases} 0, & i \le m - k, \\[2pt] \dfrac{\partial}{\partial r^{\,i-(m-k)}}\Big|_{x_b(q)}, & i > m - k. \end{cases}
 > $$
 >
-> *(2)* Let $q \in U$. The image of $(x_b)_{\ast q}$ is a subspace containing, by the second case of (1), every vector $\partial/\partial r^j|_{x_b(q)}$ of the coordinate basis of $T_{x_b(q)}\mathbb{R}^k$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), hence their span, which is everything. So $(x_b)_{\ast q}$ is onto, and $x_b$ is a submersion at $q$ (Definition [[§36 Submersions#^def-36-1|§36.1]]).
+> *(2)* Let $q \in U$. The image of $(x_b)_{\ast q}$ is a subspace containing, by the second case of (1), every vector $\partial/\partial r^j|_{x_b(q)}$ of the coordinate basis of $T_{x_b(q)}\mathbb{R}^k$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), hence their span, which is everything. So $(x_b)_{\ast q}$ is onto, and $x_b$ is a submersion at $q$ (Definition [[§36 Submersions#^def-36-1|§36.1]]).
 >
 > *(3)* By Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]], $U \cap S = \{\, q \in U : x_b(q) = \vec 0 \,\} = x_b^{-1}(\vec 0)$. Every point of $x_b^{-1}(\vec 0)$ is a point of $U$, at which $x_b$ is a submersion by (2); so $\vec 0$ is a regular value of $x_b$ (Definition [[§36 Submersions#^def-36-4|§36.4]]).
 >
@@ -357,7 +357,7 @@ So $T_pS$ is identified with the $(m-k)$-dimensional subspace $\iota_{*p}(T_pS) 
 
 ^pf-37-10
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
 
 > [!definition] Definition §37.4: Conormal Space
 > Let $S \subseteq M$ be a regular submanifold and $p \in S$. The **conormal space** of $S$ at $p$ is

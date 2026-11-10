@@ -33,13 +33,13 @@ tags: [differentiable-manifolds, math591]
 > *Justification (a sketch: covering spaces and the passage from Lie algebra morphisms to Lie group morphisms are beyond these notes).* An isomorphism of $\widetilde G$ onto a linear group, followed by the inclusion, would be an injective Lie group morphism into some $\mathrm{GL}(n,\mathbb{C})$; so it suffices to show that every Lie group morphism $\rho : \widetilde G \to \mathrm{GL}(n,\mathbb{C})$ fails to be injective.
 >
 > 1. *The group.* By the polar decomposition, $\mathrm{SL}(2,\mathbb{R})$ is homeomorphic to $\mathrm{SO}(2) \times P$, where $P$, the positive definite symmetric $2 \times 2$ matrices of determinant $1$, is homeomorphic to $\mathbb{R}^2$; so $\pi_1(\mathrm{SL}(2,\mathbb{R})) \cong \pi_1(S^1) \cong \mathbb{Z}$. The universal covering map $p : \widetilde G \to \mathrm{SL}(2,\mathbb{R})$ of the connected Lie group $\mathrm{SL}(2,\mathbb{R})$ makes $\widetilde G$ a connected Lie group and $p$ a Lie group morphism, with $\ker p \cong \pi_1(\mathrm{SL}(2,\mathbb{R})) \cong \mathbb{Z}$, a nontrivial subgroup.
-> 2. *Every $\rho$ factors through $p$.* The differential of $\rho$ at the identity is a Lie algebra morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-3|§61.3]] below) $\mathfrak{sl}(2,\mathbb{R}) \to \mathfrak{gl}(n,\mathbb{C})$; it extends complex-linearly to a Lie algebra morphism on $\mathfrak{sl}(2,\mathbb{C}) = \mathfrak{sl}(2,\mathbb{R}) \oplus i\,\mathfrak{sl}(2,\mathbb{R})$. Since $\mathrm{SL}(2,\mathbb{C})$ is simply connected, this extension is the differential of a Lie group morphism $\sigma : \mathrm{SL}(2,\mathbb{C}) \to \mathrm{GL}(n,\mathbb{C})$. With $\iota : \mathrm{SL}(2,\mathbb{R}) \hookrightarrow \mathrm{SL}(2,\mathbb{C})$ the inclusion, $\rho$ and $\sigma \circ \iota \circ p$ are Lie group morphisms with the same differential at the identity, on the connected group $\widetilde G$; so they are equal.
+> 2. *Every $\rho$ factors through $p$.* The differential of $\rho$ at the identity is a Lie algebra morphism (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-3|§58.3]] below) $\mathfrak{sl}(2,\mathbb{R}) \to \mathfrak{gl}(n,\mathbb{C})$; it extends complex-linearly to a Lie algebra morphism on $\mathfrak{sl}(2,\mathbb{C}) = \mathfrak{sl}(2,\mathbb{R}) \oplus i\,\mathfrak{sl}(2,\mathbb{R})$. Since $\mathrm{SL}(2,\mathbb{C})$ is simply connected, this extension is the differential of a Lie group morphism $\sigma : \mathrm{SL}(2,\mathbb{C}) \to \mathrm{GL}(n,\mathbb{C})$. With $\iota : \mathrm{SL}(2,\mathbb{R}) \hookrightarrow \mathrm{SL}(2,\mathbb{C})$ the inclusion, $\rho$ and $\sigma \circ \iota \circ p$ are Lie group morphisms with the same differential at the identity, on the connected group $\widetilde G$; so they are equal.
 > 3. *Conclusion.* Hence $\rho = \sigma \circ \iota \circ p$ is trivial on $\ker p \neq \{e\}$, and $\rho$ is not injective.
 
 ^ex-61-1
 
 > [!remark] Remark: Nonlinear Groups
-> Matrix groups are also called linear groups (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]). Not every Lie group is isomorphic to a matrix group: nonlinear groups arise naturally as covers of matrix groups, as Example [[§61 Lie Group Morphisms and Linear Groups#^ex-61-1|§61.1]] shows. The question of Lecture 17, restated: for a matrix group, can the bracket be identified directly on the tangent space at the identity? The answer is the matrix commutator (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]] below, for linear groups in $\mathrm{GL}(d, \mathbb{R})$; its base case $\mathrm{GL}(d, \mathbb{R})$ is Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]); to get there, the course uses the general idea below.
+> Matrix groups are also called linear groups (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]). Not every Lie group is isomorphic to a matrix group: nonlinear groups arise naturally as covers of matrix groups, as Example [[§61 Lie Group Morphisms and Linear Groups#^ex-61-1|§61.1]] shows. The question of Lecture 17, restated: for a matrix group, can the bracket be identified directly on the tangent space at the identity? The answer is the matrix commutator (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]] below, for linear groups in $\mathrm{GL}(d, \mathbb{R})$; its base case $\mathrm{GL}(d, \mathbb{R})$ is Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]); to get there, the course uses the general idea below.
 
 ^rem-61-2
 
@@ -58,12 +58,12 @@ $$
 
 a linear map between the Lie algebras, and the natural question is whether this map preserves commutators.
 
-> [!definition] Definition §61.3: Lie Algebra Morphism
+> [!definition] Definition §58.3: Lie Algebra Morphism
 > Let $\mathfrak{h}$ and $\mathfrak{g}$ be Lie algebras (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]]). A **Lie algebra morphism** is a linear map $\phi : \mathfrak{h} \to \mathfrak{g}$ that preserves brackets: $\phi([A, B]) = [\phi(A), \phi(B)]$ for all $A, B \in \mathfrak{h}$.
 >
 > *Lee: Ch. 8, Induced Lie Algebra Homomorphisms*
 
-^def-61-3
+^def-58-3
 
 > [!theorem] Lemma §61.1: Left-Invariant Fields Related by a Morphism
 > Let $F : H \to G$ be a Lie group morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]]) and $A \in T_eH$, and put $\tilde A = dF_e(A) \in T_eG$. Let $\mathbf{X}^A \in \mathfrak{X}(H)$ and $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$ be the left-invariant extensions of $A$ and of $\tilde A$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]; smooth by Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]]). Here the letter $\mathbf{Y}$ only marks a field on $G$: $\mathbf{Y}^{\tilde A}$ is the left-invariant extension of $\tilde A$, not its right-invariant extension of Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-9|§60.9]]. Then $\mathbf{X}^A$ and $\mathbf{Y}^{\tilde A}$ are $F$-related (Definition [[§59 Related Vector Fields#^def-59-2|§59.2]]):
@@ -121,7 +121,7 @@ a linear map between the Lie algebras, and the natural question is whether this 
 > dF_e\big([A, B]\big) = \big[dF_e(A), dF_e(B)\big] \in T_eG ,
 > $$
 >
-> that is, $dF_e : \mathfrak{h} \to \mathfrak{g}$ is a Lie algebra morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-3|§61.3]]).
+> that is, $dF_e : \mathfrak{h} \to \mathfrak{g}$ is a Lie algebra morphism (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-3|§58.3]]).
 >
 > *Lee: Theorem 8.44*
 
@@ -144,7 +144,7 @@ a linear map between the Lie algebras, and the natural question is whether this 
 
 *Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Def. §60.5]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], [[§59 Related Vector Fields#^def-59-2|Def. §59.2]], [[§59 Related Vector Fields#^prop-59-3|§59.3]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|Def. §60.6]], [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]]
 
-The commutator for the general linear group $\mathrm{GL}(d, \mathbb{R})$ is Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]; next, the commutator for any linear group in $\mathrm{GL}(d, \mathbb{R})$ (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]]).
+The commutator for the general linear group $\mathrm{GL}(d, \mathbb{R})$ is Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]; next, the commutator for any linear group in $\mathrm{GL}(d, \mathbb{R})$ (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]]).
 
 **Transcription note (Lecture 18).** Page 47 of the handwritten notes begins the proof with “take $A \in T_hH$”; $A \in T_eH$. Page 48 writes the second field as $\mathbf{Y}^{\hat B}$ in one place; it is $\mathbf{Y}^{\tilde B}$, with $\tilde B = dF_e(B)$.
 
@@ -153,11 +153,11 @@ The commutator for the general linear group $\mathrm{GL}(d, \mathbb{R})$ is Theo
 *Lecture 19 began with a review: the Lie algebra $\mathfrak{g}$ of left-invariant fields, closed under commutators (Corollary [[§60 Lie Groups and Left-Invariant Vector Fields#^cor-60-6|§60.6]]); the isomorphism $\mathrm{ev} : \mathfrak{g} \to T_eG$ with inverse $A \mapsto \mathbf{X}^A$ (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-9|§60.9]]), including the check that $\mathbf{X}^A$ is left-invariant (Lemma [[§60 Lie Groups and Left-Invariant Vector Fields#^lem-60-7|§60.7]](2)); and the bracket on $T_eG$ (Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]]), defined so that $\mathrm{ev}$ is an isomorphism of Lie algebras.*
 
 > [!remark] Remark: The Lie Algebra in Practice
-> In practice, the Lie algebra of a group such as the orthogonal group is never described as a space of left-invariant fields; it is always the tangent space at the identity — with the bracket of Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]], which for linear groups in $\mathrm{GL}(d, \mathbb{R})$ is the matrix commutator (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]] below). The notation $\mathfrak{gl}(d, \mathbb{R}) = T_I\mathrm{GL}(d,\mathbb{R}) = \operatorname{Mat}(d,\mathbb{R})$ is standard.
+> In practice, the Lie algebra of a group such as the orthogonal group is never described as a space of left-invariant fields; it is always the tangent space at the identity — with the bracket of Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-6|§60.6]], which for linear groups in $\mathrm{GL}(d, \mathbb{R})$ is the matrix commutator (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]] below). The notation $\mathfrak{gl}(d, \mathbb{R}) = T_I\mathrm{GL}(d,\mathbb{R}) = \operatorname{Mat}(d,\mathbb{R})$ is standard.
 
 ^rem-61-3
 
-> [!theorem] Theorem §61.3: The Bracket of a Linear Group
+> [!theorem] Theorem §61.5: The Bracket of a Linear Group
 > Let $G \subseteq \mathrm{GL}(d, \mathbb{R})$ be a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]) that is a *Lie subgroup*: the inclusion $i : G \hookrightarrow \mathrm{GL}(d, \mathbb{R})$ is smooth and $di_I$ is injective — for instance, $G$ a regular submanifold of $\operatorname{Mat}(d, \mathbb{R})$, as are the real classical groups $\mathrm{GL}(d,\mathbb{R})$, $\mathrm{SL}(d,\mathbb{R})$, $\mathrm{O}(d)$ and $\mathrm{SO}(d)$ of Proposition [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]]. The complex groups of that list, $\mathrm{GL}(n,\mathbb{C})$, $\mathrm{U}(n)$ and $\mathrm{SU}(2)$, are not given as subgroups of a $\mathrm{GL}(d, \mathbb{R})$, and the theorem as stated and proved here does not cover them. Identify $T_IG$ with its image $di_I(T_IG) \subseteq \mathfrak{gl}(d,\mathbb{R}) = \operatorname{Mat}(d,\mathbb{R})$. Then the Lie bracket on $T_IG$ is
 >
 > $$
@@ -168,7 +168,7 @@ The commutator for the general linear group $\mathrm{GL}(d, \mathbb{R})$ is Theo
 >
 > *Lee: Proposition 8.41, Theorem 8.46*
 
-^thm-61-3
+^thm-61-5
 
 > [!proof]+ Proof
 > *(Lecture 19.)* By assumption, $G$ is included in some general linear group as a Lie subgroup, and the differential of the inclusion map at the identity is the inclusion $di_I : T_IG \hookrightarrow \mathfrak{gl}(d, \mathbb{R})$. The inclusion is a Lie group morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]]): smooth by hypothesis, and a group morphism because the product on $G$ is matrix multiplication. So by Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2|§61.2]], for $A, B \in T_IG$,
@@ -179,7 +179,7 @@ The commutator for the general linear group $\mathrm{GL}(d, \mathbb{R})$ is Theo
 >
 > the last step by Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]. Under the identification of $T_IG$ with its image, which $di_I$ injective makes legitimate, this is $[A, B] = AB - BA$. So once the bracket of the general linear group is known to be the commutator, the bracket of every linear group that is a Lie subgroup of $\mathrm{GL}(d, \mathbb{R})$ is the commutator too, by algebra alone. *(Filled in: a regular submanifold qualifies, since $i$ is smooth by Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1), with coordinate representation $r \mapsto (r, \vec 0)$ in an adapted chart, whose differential is injective.)*
 
-^pf-61-3
+^pf-61-5
 
 *Uses:* [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|Def. §61.2]], [[§61 Lie Group Morphisms and Linear Groups#^prop-61-2|§61.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]]
 
@@ -222,7 +222,7 @@ In particular $di_I(T_IG)$ is closed under the matrix commutator, as the image o
 
 The letter is that of Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]] on purpose: the left-invariant field $g \mapsto gA$ on $\mathrm{GL}(n,\mathbb{R})$ is $\mathbf{X}^A$ acting on each row of $g$ (the remark *Linear Fields and the Bracket of* $\mathrm{GL}(n,\mathbb{R})$ below).
 
-> [!theorem] Proposition §61.4: The Derivation of a Linear Field
+> [!theorem] Proposition §61.6: The Derivation of a Linear Field
 > In the standard coordinates $p = (x^1, \ldots, x^n)$ of $\mathbb{R}^n$, with $\partial_j = \partial/\partial x^j$,
 >
 > $$
@@ -231,7 +231,7 @@ The letter is that of Example [[§60 Lie Groups and Left-Invariant Vector Fields
 >
 > The map $A \mapsto \mathbf{X}^A$ is linear: $\mathbf{X}^{A + B} = \mathbf{X}^A + \mathbf{X}^B$ and $\mathbf{X}^{cA} = c\,\mathbf{X}^A$ for $c \in \mathbb{R}$.
 
-^prop-61-4
+^prop-61-6
 
 > [!proof]+ Proof
 > *(Assignment 6, Problem 3; the submitted solution.)* The $j$-th entry of the row vector $pA$ is
@@ -248,18 +248,18 @@ The letter is that of Example [[§60 Lie Groups and Left-Invariant Vector Fields
 >
 > Hence $\mathbf{X}^A = \sum_j \big(\sum_i a_{ij}\,x^i\big) \partial_j$. The coefficients are linear in the entries of $A$, so $A \mapsto \mathbf{X}^A$ is linear.
 
-^pf-61-4
+^pf-61-6
 
-> [!theorem] Proposition §61.5: Brackets of Linear Fields
+> [!theorem] Proposition §61.7: Brackets of Linear Fields
 > For any two $n \times n$ real matrices $A$, $B$,
 >
 > $$
 > \big[\mathbf{X}^A, \mathbf{X}^B\big] = \mathbf{X}^{[A,B]}, \qquad [A, B] = AB - BA .
 > $$
 >
-> So $A \mapsto \mathbf{X}^A$ is a Lie algebra morphism $\mathfrak{gl}(n,\mathbb{R}) \to \mathfrak{X}(\mathbb{R}^n)$ (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-3|§61.3]]).
+> So $A \mapsto \mathbf{X}^A$ is a Lie algebra morphism $\mathfrak{gl}(n,\mathbb{R}) \to \mathfrak{X}(\mathbb{R}^n)$ (Definition [[§58 Lie Bracket and Lie Algebra#^def-58-3|§58.3]]).
 
-^prop-61-5
+^prop-61-7
 
 > [!proof]+ Proof
 > *(Assignment 6, Problem 3, “show directly”; the submitted solution.)* *Computing $\mathbf{X}^A(\mathbf{X}^B f)$.* Let $f \in C^\infty(\mathbb{R}^n)$. We have $\mathbf{X}^B f = \sum_k (pB)_k\, \partial_k f$ with $(pB)_k = \sum_l b_{lk}x^l$. By the product rule,
@@ -282,7 +282,7 @@ The letter is that of Example [[§60 Lie Groups and Left-Invariant Vector Fields
 > S(B,A) = \sum_{j,k} (pB)_j\,(pA)_k\, \partial_j\partial_k f = \sum_{j,k} (pB)_k\,(pA)_j\, \partial_k\partial_j f = \sum_{j,k} (pA)_j\,(pB)_k\, \partial_j\partial_k f = S(A,B).
 > $$
 >
-> *Conclusion.* Therefore, using the linearity of $A \mapsto \mathbf{X}^A$ (Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-4|§61.4]]),
+> *Conclusion.* Therefore, using the linearity of $A \mapsto \mathbf{X}^A$ (Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-6|§61.6]]),
 >
 > $$
 > [\mathbf{X}^A, \mathbf{X}^B]f = \mathbf{X}^A(\mathbf{X}^B f) - \mathbf{X}^B(\mathbf{X}^A f) = \mathbf{X}^{AB}f - \mathbf{X}^{BA}f = \mathbf{X}^{AB - BA}f = \mathbf{X}^{[A,B]}f.
@@ -290,20 +290,20 @@ The letter is that of Example [[§60 Lie Groups and Left-Invariant Vector Fields
 >
 > Since this holds for every $f \in C^\infty(\mathbb{R}^n)$, $[\mathbf{X}^A, \mathbf{X}^B] = \mathbf{X}^{[A,B]}$.
 >
-> *(Filled in.)* The last sentence of the statement: $A \mapsto \mathbf{X}^A$ is linear and carries the commutator to the bracket of vector fields, which is what Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-3|§61.3]] asks of a map between Lie algebras.
+> *(Filled in.)* The last sentence of the statement: $A \mapsto \mathbf{X}^A$ is linear and carries the commutator to the bracket of vector fields, which is what Definition [[§58 Lie Bracket and Lie Algebra#^def-58-3|§58.3]] asks of a map between Lie algebras.
 
-^pf-61-5
+^pf-61-7
 
-*Uses:* [[§61 Lie Group Morphisms and Linear Groups#^prop-61-4|§61.4]], [[§61 Lie Group Morphisms and Linear Groups#^def-61-3|Def. §61.3]]
+*Uses:* [[§61 Lie Group Morphisms and Linear Groups#^prop-61-6|§61.6]], [[§58 Lie Bracket and Lie Algebra#^def-58-3|Def. §58.3]]
 
 The second-order terms cancel as they must (Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]); the shortcut of Proposition [[§58 Lie Bracket and Lie Algebra#^prop-58-2|§58.2]], which computes only the first-order part, gives the same coefficients $\sum_i (AB - BA)_{ik} x^i$ at once.
 
 > [!remark] Remark: Linear Fields and the Bracket of $\mathrm{GL}({n,\mathbb{R}})$
-> *(Not from the assignment.)* Write $g \in \operatorname{Mat}(n,\mathbb{R})$ by its rows $g_1, \ldots, g_n \in \mathbb{R}^n$. The $l$-th row of $gA$ is $g_lA$, so the left-invariant field $\mathbf{X}^A_g = gA$ of Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]] is the linear field $\mathbf{X}^A$ of Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-4|§61.4]] acting on each row separately, the $n$ rows being independent variables. Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-5|§61.5]], applied row by row, is therefore the computation of Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]: $[\mathbf{X}^A, \mathbf{X}^B] = \mathbf{X}^{AB - BA}$, the “coordinate-free” sentence after its proof.
+> *(Not from the assignment.)* Write $g \in \operatorname{Mat}(n,\mathbb{R})$ by its rows $g_1, \ldots, g_n \in \mathbb{R}^n$. The $l$-th row of $gA$ is $g_lA$, so the left-invariant field $\mathbf{X}^A_g = gA$ of Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]] is the linear field $\mathbf{X}^A$ of Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-4|§61.4]] acting on each row separately, the $n$ rows being independent variables. Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-7|§61.7]], applied row by row, is therefore the computation of Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-10|§60.10]]: $[\mathbf{X}^A, \mathbf{X}^B] = \mathbf{X}^{AB - BA}$, the “coordinate-free” sentence after its proof.
 
 ^rem-61-4
 
-> [!theorem] Proposition §61.6: Fields of the Left Action on Column Vectors
+> [!theorem] Proposition §61.8: Fields of the Left Action on Column Vectors
 > $\mathrm{GL}(n,\mathbb{R})$ acts on *column* vectors on the left, $g \cdot p = gp$. For $A = (a_{kj}) \in \operatorname{Mat}(n,\mathbb{R})$ let $\mathbf{Z}_A$ be the corresponding field on $\mathbb{R}^n$, $(\mathbf{Z}_A)_p = \frac{d}{dt}\big|_{t=0} (I + tA)\,p = Ap$, that is, $\mathbf{Z}_A = \sum_k \big(\sum_j a_{kj}x^j\big)\partial_k$. Then
 >
 > $$
@@ -312,7 +312,7 @@ The second-order terms cancel as they must (Lemma [[§58 Lie Bracket and Lie Alg
 >
 > $A \mapsto \mathbf{Z}_A$ is an anti-homomorphism.
 
-^prop-61-6
+^prop-61-8
 
 > [!proof]+ Proof
 > *(Not from the assignment; computed.)* Let $f \in C^\infty(\mathbb{R}^n)$. Write $(Bp)_k = \sum_l b_{kl}x^l$, so that $\mathbf{Z}_B f = \sum_k (Bp)_k\, \partial_k f$. By the product rule,
@@ -327,7 +327,7 @@ The second-order terms cancel as they must (Lemma [[§58 Lie Bracket and Lie Alg
 > \sum_{k} \Big(\sum_j b_{kj}\, (Ap)_j\Big)\partial_k f = \sum_k (BAp)_k\, \partial_k f = \mathbf{Z}_{BA}f .
 > $$
 >
-> *The second-order parts cancel.* The second sum, $T(A, B) = \sum_{j,k} (Ap)_j\,(Bp)_k\, \partial_j\partial_k f$, is symmetric in $A$ and $B$: relabel $j \leftrightarrow k$ and use $\partial_k\partial_j f = \partial_j\partial_k f$, as in Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-5|§61.5]].
+> *The second-order parts cancel.* The second sum, $T(A, B) = \sum_{j,k} (Ap)_j\,(Bp)_k\, \partial_j\partial_k f$, is symmetric in $A$ and $B$: relabel $j \leftrightarrow k$ and use $\partial_k\partial_j f = \partial_j\partial_k f$, as in Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-7|§61.7]].
 >
 > *Conclusion.* So $\mathbf{Z}_A(\mathbf{Z}_B f) = \mathbf{Z}_{BA}f + T(A, B)$ and $\mathbf{Z}_B(\mathbf{Z}_A f) = \mathbf{Z}_{AB}f + T(A, B)$, and since $A \mapsto \mathbf{Z}_A$ is linear ($Ap$ is linear in $A$),
 >
@@ -337,11 +337,11 @@ The second-order terms cancel as they must (Lemma [[§58 Lie Bracket and Lie Alg
 >
 > As $f$ was arbitrary, $[\mathbf{Z}_A, \mathbf{Z}_B] = -\,\mathbf{Z}_{[A,B]}$.
 
-^pf-61-6
+^pf-61-8
 
-*Uses:* [[§61 Lie Group Morphisms and Linear Groups#^prop-61-5|§61.5]]
+*Uses:* [[§61 Lie Group Morphisms and Linear Groups#^prop-61-7|§61.7]]
 
 > [!remark] Remark: Left and Right Actions
-> *(Not from the assignment.)* $\mathrm{GL}(n,\mathbb{R})$ acts on row vectors on the right, $p \cdot g = pg$, and $A \mapsto \mathbf{X}^A$, $\mathbf{X}^A_p = \frac{d}{dt}\big|_{t=0}\, p\,(I + tA)$, preserves brackets (Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-5|§61.5]]); the left action on column vectors gives an anti-homomorphism instead (Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-6|§61.6]]). This is the same sign as for right-invariant fields (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]], Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-3|§60.3]]): left multiplication $X \mapsto AX$ generates right-invariant fields, and right multiplication $X \mapsto XA$ left-invariant ones. It is the lecture's aside on writing $(x)f$ (the remark *Left or Right: The Sign of the Bracket*): with maps written on the right, the right action is the one whose composites read in order, and it is the one that preserves brackets.
+> *(Not from the assignment.)* $\mathrm{GL}(n,\mathbb{R})$ acts on row vectors on the right, $p \cdot g = pg$, and $A \mapsto \mathbf{X}^A$, $\mathbf{X}^A_p = \frac{d}{dt}\big|_{t=0}\, p\,(I + tA)$, preserves brackets (Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-7|§61.7]]); the left action on column vectors gives an anti-homomorphism instead (Proposition [[§61 Lie Group Morphisms and Linear Groups#^prop-61-8|§61.8]]). This is the same sign as for right-invariant fields (Theorem [[§60 Lie Groups and Left-Invariant Vector Fields#^thm-60-19|§60.19]], Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-5|§60.5]]): left multiplication $X \mapsto AX$ generates right-invariant fields, and right multiplication $X \mapsto XA$ left-invariant ones. It is the lecture's aside on writing $(x)f$ (the remark *Left or Right: The Sign of the Bracket*): with maps written on the right, the right action is the one whose composites read in order, and it is the one that preserves brackets.
 
 ^rem-61-5

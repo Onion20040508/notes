@@ -27,7 +27,7 @@ tags: [differentiable-manifolds, math591]
 ^def-36-2
 
 > [!remark]- Connections
-> - The lecture's definition of immersion, with its normal form: [[§43 Immersions#^def-43-1|Def. §43.1]], [[§43 Immersions#^thm-43-1|§43.1]].
+> - The lecture's definition of immersion, with its normal form: [[§36 Submersions#^def-36-2|Def. §36.2]], [[§43 Immersions#^thm-43-1|§43.1]].
 
 The submersion half is the lecture's definition. Immersions were listed as the third special type and treated in Lecture 13 ([[§43 Immersions|§43]]); the definition is recorded here in Lee's form so that the three types can be compared. In the language of Definition [[§30 The Differential in Coordinates#^def-30-3|§30.3]], $F$ is a submersion at $p$ exactly when $p$ is a regular point.
 
@@ -88,7 +88,7 @@ Lecture 11 supplied it (Theorem [[§31 Tangent Vectors as Velocities of Curves#^
 ^ex-36-2
 
 > [!proof]+ Proof
-> Fix $p = (p_1, p_2) \in M_1 \times M_2$, and let $\iota_1 = \iota^{p_2}$ and $\iota_2 = \iota^{p_1}$ be the slice inclusions through $p$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]]), as in Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]]. We must show that $\pi_{1\ast} : T_p(M_1 \times M_2) \to T_{p_1}M_1$ is onto. Two identities are needed. First, $\pi_1 \circ \iota_1 = \mathrm{id}_{M_1}$, since $\pi_1(\iota_1(q)) = \pi_1(q, p_2) = q$; so the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), which also gives $(\mathrm{id})_\ast = \mathrm{id}$, yields $\pi_{1\ast}\iota_{1\ast} = \mathrm{id}$. Second, $\pi_1 \circ \iota_2$ is constant, $\pi_1(\iota_2(q)) = \pi_1(p_1, q) = p_1$; so its pushforward is zero (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]]), and the Chain Rule yields $\pi_{1\ast}\iota_{2\ast} = (\pi_1 \circ \iota_2)_{\ast} = 0$. With the linearity of $\pi_{1\ast}$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]), for $v \in T_{p_1}M_1$ and $w \in T_{p_2}M_2$,
+> Fix $p = (p_1, p_2) \in M_1 \times M_2$, and let $\iota_1 = \iota^{p_2}$ and $\iota_2 = \iota^{p_1}$ be the slice inclusions through $p$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-9|§19.9]]), as in Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]]. We must show that $\pi_{1\ast} : T_p(M_1 \times M_2) \to T_{p_1}M_1$ is onto. Two identities are needed. First, $\pi_1 \circ \iota_1 = \mathrm{id}_{M_1}$, since $\pi_1(\iota_1(q)) = \pi_1(q, p_2) = q$; so the Chain Rule (Theorem [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]), which also gives $(\mathrm{id})_\ast = \mathrm{id}$, yields $\pi_{1\ast}\iota_{1\ast} = \mathrm{id}$. Second, $\pi_1 \circ \iota_2$ is constant, $\pi_1(\iota_2(q)) = \pi_1(p_1, q) = p_1$; so its pushforward is zero (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]]), and the Chain Rule yields $\pi_{1\ast}\iota_{2\ast} = (\pi_1 \circ \iota_2)_{\ast} = 0$. With the linearity of $\pi_{1\ast}$ (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]), for $v \in T_{p_1}M_1$ and $w \in T_{p_2}M_2$,
 >
 > $$
 > \pi_{1\ast}\big(\Theta(v, w)\big) = \pi_{1\ast}\big(\iota_{1\ast}v + \iota_{2\ast}w\big) = \pi_{1\ast}\iota_{1\ast}v + \pi_{1\ast}\iota_{2\ast}w = v + 0 = v ,
@@ -106,7 +106,7 @@ Lecture 11 supplied it (Theorem [[§31 Tangent Vectors as Velocities of Curves#^
 
 ^pf-ex-36-2
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-9|Def. §19.9]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-5|§28.5]]
 
 The projection $S^{2n+1} \to \mathbb{CP}^n$, a submersion, is collected in [[§46 Projective Spaces and the Hopf Fibration|§46]].
 
@@ -220,7 +220,7 @@ This is the definition of critical point sent to the class by email, and it agre
 > [!proof]+ Proof
 > *(Not from lecture. Assignment 5, Problem 4(b), at a point of a regular level set $G^{-1}(0)$: (1) and the direction ($\Rightarrow$) of (2) are the submitted solution's argument, written out; ($\Leftarrow$) is filled in. The Jacobian argument is the second proof below.)* Each $G^j = r^j \circ G$ is smooth, as a composite of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), so $dG^j|_p \in T_p^{\ast}M$ is defined.
 >
-> *(1) The components of $G_{\ast p}$.* For $v \in T_pM$, the vector $G_{\ast p}v \in T_{G(p)}\mathbb{R}^k$ is, by the universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]] in the identity chart of $\mathbb{R}^k$, $G_{\ast p}v = \sum_j (G_{\ast p}v)[r^j]\, \partial/\partial r^j|_{G(p)}$, and its coefficients are, by the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]],
+> *(1) The components of $G_{\ast p}$.* For $v \in T_pM$, the vector $G_{\ast p}v \in T_{G(p)}\mathbb{R}^k$ is, by the universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]] in the identity chart of $\mathbb{R}^k$, $G_{\ast p}v = \sum_j (G_{\ast p}v)[r^j]\, \partial/\partial r^j|_{G(p)}$, and its coefficients are, by the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) and Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]],
 >
 > $$
 > \big(G_{\ast p}v\big)[r^j] = v\big[r^j \circ G\big] = v\big[G^j\big] = dG^j|_p(v) .
@@ -228,7 +228,7 @@ This is the definition of critical point sent to the class by email, and it agre
 >
 > Substituting these coefficients gives the formula of (1).
 >
-> *(2), ($\Rightarrow$): linear independence, without coordinates.* Let $G$ be a submersion at $p$, so that $G_{\ast p}$ is onto $T_{G(p)}\mathbb{R}^k$ (Definition [[§36 Submersions#^def-36-1|§36.1]]). Suppose $\sum_{j=1}^k c_j\, dG^j|_p = 0$ for some $c = (c_1, \ldots, c_k) \in \mathbb{R}^k$; we show $c = 0$. Since $G_{\ast p}$ is onto, the vector $\sum_j c_j\, \partial/\partial r^j|_{G(p)}$ of $T_{G(p)}\mathbb{R}^k$ is $G_{\ast p}v$ for some $v \in T_pM$. Comparing with (1), and using that the coefficients of a vector in the basis $\partial/\partial r^j|_{G(p)}$ are unique (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]), $dG^j|_p(v) = c_j$ for every $j$. Evaluating the assumed relation at this $v$, with the pointwise operations of $T_p^{\ast}M$,
+> *(2), ($\Rightarrow$): linear independence, without coordinates.* Let $G$ be a submersion at $p$, so that $G_{\ast p}$ is onto $T_{G(p)}\mathbb{R}^k$ (Definition [[§36 Submersions#^def-36-1|§36.1]]). Suppose $\sum_{j=1}^k c_j\, dG^j|_p = 0$ for some $c = (c_1, \ldots, c_k) \in \mathbb{R}^k$; we show $c = 0$. Since $G_{\ast p}$ is onto, the vector $\sum_j c_j\, \partial/\partial r^j|_{G(p)}$ of $T_{G(p)}\mathbb{R}^k$ is $G_{\ast p}v$ for some $v \in T_pM$. Comparing with (1), and using that the coefficients of a vector in the basis $\partial/\partial r^j|_{G(p)}$ are unique (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), $dG^j|_p(v) = c_j$ for every $j$. Evaluating the assumed relation at this $v$, with the pointwise operations of $T_p^{\ast}M$,
 >
 > $$
 > 0 = \Big(\sum_{j=1}^k c_j\, dG^j|_p\Big)(v) = \sum_{j=1}^k c_j\, dG^j|_p(v) = \sum_{j=1}^k c_j^{\,2} = |c|^2 ,
@@ -236,7 +236,7 @@ This is the definition of critical point sent to the class by email, and it agre
 >
 > so $c = 0$. In the assignment's words: the relation says $c \cdot G_{\ast p}(v) = 0$ for every $v$, and since $G_{\ast p}$ is onto we may take $G_{\ast p}(v) = c$.
 >
-> *(2), ($\Leftarrow$).* Let $dG^1|_p, \ldots, dG^k|_p$ be linearly independent; we show that $G_{\ast p}$ is onto. Let $\Lambda : T_pM \to \mathbb{R}^k$, $\Lambda(v) = \big(dG^1|_p(v), \ldots, dG^k|_p(v)\big)$, a linear map since each $dG^j|_p$ is linear. By (1), $G_{\ast p} = \beta \circ \Lambda$, where $\beta : \mathbb{R}^k \to T_{G(p)}\mathbb{R}^k$, $\beta(c) = \sum_j c_j\, \partial/\partial r^j|_{G(p)}$, is a linear isomorphism, the $\partial/\partial r^j|_{G(p)}$ being a basis (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]); so $G_{\ast p}$ is onto if and only if $\Lambda$ is. Suppose $\Lambda$ were not onto. Its image $E$ is then a subspace of $\mathbb{R}^k$ of some dimension $d < k$; choose a basis $a_1, \ldots, a_d$ of $E$ and let $B$ be the $d \times k$ matrix with rows $a_1^{\mathsf T}, \ldots, a_d^{\mathsf T}$. By rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) for $B : \mathbb{R}^k \to \mathbb{R}^d$, $\dim\ker B \ge k - d \ge 1$, so there is $c \neq 0$ with $Bc = 0$, that is, $a_i \cdot c = 0$ for every $i$, and hence $w \cdot c = 0$ for every $w \in E$, by linearity of the dot product. Then for every $v \in T_pM$,
+> *(2), ($\Leftarrow$).* Let $dG^1|_p, \ldots, dG^k|_p$ be linearly independent; we show that $G_{\ast p}$ is onto. Let $\Lambda : T_pM \to \mathbb{R}^k$, $\Lambda(v) = \big(dG^1|_p(v), \ldots, dG^k|_p(v)\big)$, a linear map since each $dG^j|_p$ is linear. By (1), $G_{\ast p} = \beta \circ \Lambda$, where $\beta : \mathbb{R}^k \to T_{G(p)}\mathbb{R}^k$, $\beta(c) = \sum_j c_j\, \partial/\partial r^j|_{G(p)}$, is a linear isomorphism, the $\partial/\partial r^j|_{G(p)}$ being a basis (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]); so $G_{\ast p}$ is onto if and only if $\Lambda$ is. Suppose $\Lambda$ were not onto. Its image $E$ is then a subspace of $\mathbb{R}^k$ of some dimension $d < k$; choose a basis $a_1, \ldots, a_d$ of $E$ and let $B$ be the $d \times k$ matrix with rows $a_1^{\mathsf T}, \ldots, a_d^{\mathsf T}$. By rank–nullity (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)) for $B : \mathbb{R}^k \to \mathbb{R}^d$, $\dim\ker B \ge k - d \ge 1$, so there is $c \neq 0$ with $Bc = 0$, that is, $a_i \cdot c = 0$ for every $i$, and hence $w \cdot c = 0$ for every $w \in E$, by linearity of the dot product. Then for every $v \in T_pM$,
 >
 > $$
 > \Big(\sum_{j=1}^k c_j\, dG^j|_p\Big)(v) = \sum_{j=1}^k c_j\, dG^j|_p(v) = c \cdot \Lambda(v) = 0 ,
@@ -246,7 +246,7 @@ This is the definition of critical point sent to the class by email, and it agre
 
 ^pf-36-4
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§36 Submersions#^def-36-1|Def. §36.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]]
 
 > [!proof]+ Second proof of (2), by the Jacobian
 > *(The second independence argument of the submitted solution, Assignment 5, Problem 4(b), run in both directions.)* Fix any chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ at $p$, and let $J$ be the $k \times m$ matrix with entries $J_{ji} = \partial G^j/\partial x^i(p)$. Written out,
@@ -266,11 +266,11 @@ This is the definition of critical point sent to the class by email, and it agre
 > G \text{ submersion at } p \iff \operatorname{rank} G_{\ast p} = k \iff \operatorname{rank} J = k \iff \operatorname{rank} J^{\mathsf T} = k \iff \ker J^{\mathsf T} = 0 \iff dG^1|_p, \ldots, dG^k|_p \text{ independent}.
 > $$
 >
-> The first equivalence holds because $G_{\ast p}$ is onto the $k$-dimensional $T_{G(p)}\mathbb{R}^k$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]) exactly when its image has dimension $k$, a subspace of the same finite dimension being the whole space; the second and third because the rank of a linear map is the rank of its matrix, which equals the rank of the transpose (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)); the fourth by rank–nullity for $J^{\mathsf T} : \mathbb{R}^k \to \mathbb{R}^m$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), $\dim\ker J^{\mathsf T} = k - \operatorname{rank} J^{\mathsf T}$; and the last by the first part of this proof.
+> The first equivalence holds because $G_{\ast p}$ is onto the $k$-dimensional $T_{G(p)}\mathbb{R}^k$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]) exactly when its image has dimension $k$, a subspace of the same finite dimension being the whole space; the second and third because the rank of a linear map is the rank of its matrix, which equals the rank of the transpose (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](3)); the fourth by rank–nullity for $J^{\mathsf T} : \mathbb{R}^k \to \mathbb{R}^m$ (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1)), $\dim\ker J^{\mathsf T} = k - \operatorname{rank} J^{\mathsf T}$; and the last by the first part of this proof.
 
 ^pf-36-4-2
 
-*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]
+*Uses:* [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]
 
 > [!theorem] Lemma §36.5: Diffeomorphisms onto Open Sets Are Charts
 > Let $U \subseteq M$ be open and $\hat\varphi : U \to \mathbb{R}^m$ smooth, with $\hat\varphi(U)$ open and $\hat\varphi : U \to \hat\varphi(U)$ a diffeomorphism. Then $(U, \hat\varphi)$ is a smooth chart of $M$.
@@ -378,7 +378,7 @@ Lemma [[§36 Submersions#^lem-36-5|§36.5]] is an intellectual step that should 
 > \begin{pmatrix} A & B \\ 0 & I_{m-n} \end{pmatrix},
 > $$
 >
-> and by the block form, with its zero block, this is non-degenerate at $p$: its determinant is $\det A \ne 0$. *(Completion.)* “The Jacobian of $\hat\varphi$ in the $x$-coordinates” is the Jacobian at $\varphi_0(p)$ of the ordinary map $H = \hat\varphi \circ \varphi_0^{-1} : \varphi_0(U_0) \to \mathbb{R}^m$. Its rows are the partials of the components of $\hat\varphi$ by Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], applied with the identity chart on $\mathbb{R}^m$, and $\partial x^k/\partial x^i = \delta^k_i$ gives the identity and zero blocks. Concretely, for $r \in \varphi_0(U_0)$ put $q = \varphi_0^{-1}(r)$; then $F^j(q) = G^j(r)$ by step 3, and $x^k(q) = r^k$ because $x^k = r^k \circ \varphi_0$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]), so
+> and by the block form, with its zero block, this is non-degenerate at $p$: its determinant is $\det A \ne 0$. *(Completion.)* “The Jacobian of $\hat\varphi$ in the $x$-coordinates” is the Jacobian at $\varphi_0(p)$ of the ordinary map $H = \hat\varphi \circ \varphi_0^{-1} : \varphi_0(U_0) \to \mathbb{R}^m$. Its rows are the partials of the components of $\hat\varphi$ by Proposition [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], applied with the identity chart on $\mathbb{R}^m$, and $\partial x^k/\partial x^i = \delta^k_i$ gives the identity and zero blocks. Concretely, for $r \in \varphi_0(U_0)$ put $q = \varphi_0^{-1}(r)$; then $F^j(q) = G^j(r)$ by step 3, and $x^k(q) = r^k$ because $x^k = r^k \circ \varphi_0$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), so
 >
 > $$
 > H(r) = \hat\varphi(q) = \big(F^1(q), \ldots, F^n(q), x^{n+1}(q), \ldots, x^m(q)\big) = \big(G^1(r), \ldots, G^n(r), r^{n+1}, \ldots, r^m\big).
@@ -403,7 +403,7 @@ Lemma [[§36 Submersions#^lem-36-5|§36.5]] is an intellectual step that should 
 > F^i\big(\hat\varphi^{-1}(r^1, \ldots, r^m)\big) = r^i \qquad (i = 1, \ldots, n).
 > $$
 >
-> *(Completion.)* For $r \in \hat\varphi(U)$ the point $q = \hat\varphi^{-1}(r) \in U$ satisfies $\hat\varphi(q) = r$, that is, $\big(F^1(q), \ldots, F^n(q), x^{n+1}(q), \ldots, x^m(q)\big) = (r^1, \ldots, r^m)$; comparing the first $n$ entries gives the display. Coming back down by $\psi$, the $i$-th coordinate of $\tilde F(r)$ is $y^i(F(q)) = F^i(q) = r^i$. *(Completion.)* In one chain, using the definition of $\tilde F$, then $y^i = r^i \circ \psi$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]), then $F^i = y^i \circ F$, then the display:
+> *(Completion.)* For $r \in \hat\varphi(U)$ the point $q = \hat\varphi^{-1}(r) \in U$ satisfies $\hat\varphi(q) = r$, that is, $\big(F^1(q), \ldots, F^n(q), x^{n+1}(q), \ldots, x^m(q)\big) = (r^1, \ldots, r^m)$; comparing the first $n$ entries gives the display. Coming back down by $\psi$, the $i$-th coordinate of $\tilde F(r)$ is $y^i(F(q)) = F^i(q) = r^i$. *(Completion.)* In one chain, using the definition of $\tilde F$, then $y^i = r^i \circ \psi$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), then $F^i = y^i \circ F$, then the display:
 >
 > $$
 > r^i\big(\tilde F(r)\big) = r^i\big(\psi(F(q))\big) = y^i\big(F(q)\big) = F^i(q) = r^i \qquad (i = 1, \ldots, n).
@@ -411,11 +411,11 @@ Lemma [[§36 Submersions#^lem-36-5|§36.5]] is an intellectual step that should 
 >
 > So $\tilde F(r^1, \ldots, r^m) = (r^1, \ldots, r^n)$: the new coordinate system labels every point of $U$, and the first $n$ labels are the values of the $F$'s at that point.
 >
-> *(Completion.)* The charts of the theorem are $(U, \hat\varphi)$ and $(V, \psi)$, with $F(U) \subseteq V$ by step 9. For the equivalent form, the coordinate functions of the new chart are $r^j \circ \hat\varphi$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]]), and for $j \le n$ this is the $j$-th component of $\hat\varphi$, namely $F^j = y^j \circ F$. So, calling the new coordinate functions $x^j$ as in the statement, $y^j \circ F = F^j = x^j$ on $U$ for $j = 1, \ldots, n$. Finally $n \le m$ was shown in step 5.
+> *(Completion.)* The charts of the theorem are $(U, \hat\varphi)$ and $(V, \psi)$, with $F(U) \subseteq V$ by step 9. For the equivalent form, the coordinate functions of the new chart are $r^j \circ \hat\varphi$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), and for $j \le n$ this is the $j$-th component of $\hat\varphi$, namely $F^j = y^j \circ F$. So, calling the new coordinate functions $x^j$ as in the statement, $y^j \circ F = F^j = x^j$ on $U$ for $j = 1, \ldots, n$. Finally $n \le m$ was shown in step 5.
 
 ^pf-36-6
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§36 Submersions#^prop-36-1|§36.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|Def. §29.1]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§36 Submersions#^lem-36-5|§36.5]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^lem-19-3|§19.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§36 Submersions#^prop-36-1|§36.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§19 Smooth Functions and Smooth Maps#^prop-19-4|§19.4]], [[§36 Submersions#^lem-36-5|§36.5]]
 
 ![[m591-14-5.svg]]
 *The change of chart in one diagram. The first chart $\varphi_0$ and the new chart $\hat\varphi$ differ by $H$, a diffeomorphism near $\varphi_0(p)$ by step 8. In the new chart, $F$ becomes $\tilde F$, the projection (step 11). The lecture used the letters $\phi$ and $\tilde F$ both for the first charts and for the new ones. The notes write $\varphi_0$ and $G$ for the first, and $\hat\varphi$ and $\tilde F$ for the new, to keep the two stages apart.*

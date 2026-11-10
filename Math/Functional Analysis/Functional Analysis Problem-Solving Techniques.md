@@ -148,6 +148,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > - **$C[a,b]$ in the $L^p$ norm** (P1, Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|§19.8]]): $Z = L^p[a,b]$; witness the step function, approached by ramps.
 > - **$C^2[a,b]$ in the norm $\max|f| + \max|f'|$** (P2, Proposition [[§13 The Completion of a Normed Space#^prop-13-5|§13.5]]): $Z = C^1[a,b]$; density by approximating $f'$ uniformly and integrating; witness $|x - c|^{3/2}$.
 > - **Contrast**: $C[a,b]$ in the sup norm is already complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]), and so is $C^2[a,b]$ in the full $C^2$ norm.
+> - **A second route to incompleteness**, without exhibiting a Cauchy sequence: compare with a stronger complete norm and use the equivalent norm theorem (Technique 27; Examples [[§41 The Open Mapping Theorem and Its Consequences#^ex-41-1|§41.1]] and [[§41 The Open Mapping Theorem and Its Consequences#^ex-41-2|§41.2]]).
 
 ^ex-t9
 
@@ -286,6 +287,7 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > - A bounded functional on $\ell^p$ is determined by its values on the dense set of finite sequences (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], Step 3); the same fails in $\ell^\infty$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]).
 > - Banach–Steinhaus, ($\Leftarrow$) (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-7|§42.7]]): convergence on a dense set plus a uniform bound $\sup_n \|A_n\| < \infty$ gives convergence everywhere, by an $\varepsilon/2$ argument.
 > - $\sin(mx) \rightharpoonup 0$ in $L^p$, $1 < p < \infty$ (Lecture 18, Example [[§43 Weak and Weak-Star Convergence#^ex-43-3|§43.3]]): test only against continuous $g$, dense in $L^{p'}$, plus a uniform bound.
+> - The criteria for weak and weak-$\ast$ convergence (Lecture 18, Theorems [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]] and [[§43 Weak and Weak-Star Convergence#^thm-43-9|§43.9]]): convergence on a dense subset of $X'$, respectively of $X$, plus a uniform bound on the norms, gives convergence on the whole space; both are Banach–Steinhaus, applied on $X'$, respectively on $X$.
 
 ^ex-t19
 
@@ -321,12 +323,13 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t22
 
-> [!example] Example T22: Applications (Lectures 13–14)
+> [!example] Example T22: Applications (Lectures 13–14, HW8)
 > - $\|y\| = \max_{\|\ell\| \le 1} |\ell(y)|$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]): $\ell_0(c\, y_0) = c\, \|y_0\|$ on $\operatorname{span}\{y_0\}$.
 > - The distance formula (Theorem [[§36 Duality in Normed Spaces#^thm-36-10|§36.10]]): $\ell(c\, z_0 + y) = c\, m$ on $\operatorname{span}\{z_0, Y\}$.
 > - $(\ell^\infty)' \neq \ell^1$ (Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]): $\lambda(x) = \lim x_j$ on the convergent sequences.
 > - Distance from a functional to $Y^\perp$ (Lecture 14, Proposition [[§37 Separable Duals and Reflexive Spaces#^prop-37-10|§37.10]]): extend $\ell|_Y$ with the same norm.
 > - Closed subspaces of reflexive spaces (Lecture 14, Theorem [[§37 Separable Duals and Reflexive Spaces#^thm-37-8|§37.8]], Step 2): extending makes the restriction map $X' \to Y'$ onto.
+> - The dual of a subspace, $Y' \cong X'/Y^\perp$ (HW8 P2, Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-11|§37.11]]): the map $[\ell] \mapsto \ell|_Y$ is onto $Y'$ because every $\ell_0 \in Y'$ extends to some $\ell \in X'$.
 
 ^ex-t22
 
@@ -350,8 +353,11 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t24
 
-> [!example] Example T24: Application (Lecture 15)
-> - The induced map $M_0 : X/N(M) \to R(M)$ (Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]]), with $\|M_0\| = \|M\|$.
+> [!example] Example T24: Applications (Lecture 15, HW7–HW9)
+> - The induced map $M_0 : X/N(M) \to R(M)$ (Lecture 15, Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]]), with $\|M_0\| = \|M\|$.
+> - The closed range criterion (HW9 P3, Proposition [[§41 The Open Mapping Theorem and Its Consequences#^prop-41-5|§41.5]]): since $d(x, N(M))$ is the quotient norm of $[x]$ in $X/N(M)$, the inequality $d(x, N(M)) \le a\, \|Mx\|$ says $\|[x]\| \le a\, \|M_0 [x]\|$, that is, the inverse of $M_0$ is bounded on $R(M)$.
+> - The dual of a subspace, $Y' \cong X'/Y^\perp$ (HW8 P2, Corollary [[§37 Separable Duals and Reflexive Spaces#^cor-37-11|§37.11]]): the restriction map $\ell \mapsto \ell|_Y$ has null space $Y^\perp$, and the chain $\ell|_Y = \ell'|_Y \iff \ell - \ell' \in Y^\perp \iff [\ell] = [\ell']$ makes the induced map on $X'/Y^\perp$ well defined and one-to-one.
+> - The dual of a quotient, $(X/Y)' \cong Y^\perp$ (HW7, Theorem [[§36 Duality in Normed Spaces#^thm-36-13|§36.13]]), in the other direction: a functional on $X$ that vanishes on $Y$ is constant on each class $[x]$, so it defines a functional on $X/Y$.
 
 ^ex-t24
 
@@ -386,9 +392,10 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 
 ^rem-t27
 
-> [!example] Example T27: Applications (Lectures 16–17)
+> [!example] Example T27: Applications (Lectures 16–17, HW9)
 > - The closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]).
 > - $C^1[a,b]$ is not complete in the maximum norm (Example [[§41 The Open Mapping Theorem and Its Consequences#^ex-41-1|§41.1]]).
+> - $C[0,1]$ is not complete in the $L^1$ norm (HW9 P2, Example [[§41 The Open Mapping Theorem and Its Consequences#^ex-41-2|§41.2]]): $\|f\|_1 \le \|f\|_\infty$ and $\|\cdot\|_\infty$ is complete (Theorem [[§12 Completeness#^thm-12-1|§12.1]]), but the two norms are not equivalent.
 > - The uniform boundedness principle (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6|§42.6]]): the norm $\|x\| + \sup_\alpha \|A_\alpha x\|$.
 > - The second equivalent norm theorem (Lecture 17, Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5|§42.5]]): the identity map is closed.
 
@@ -400,10 +407,10 @@ The pattern of the [[§5 Statement and Motivation#^thm-5-3|Hahn–Banach]] proof
 > To compare the inverses of two operators, factor the difference through the operators themselves:
 >
 > $$
-> T_n^{-1} - T^{-1} = T_n^{-1}\,(T - T_n)\,T^{-1} ,
+> M_n^{-1} - M^{-1} = M_n^{-1}\,(M - M_n)\,M^{-1} ,
 > $$
 >
-> applied to $y$ by inserting $y = T(T^{-1} y)$. A uniform bound on $\|T_n^{-1}\|$ (stability) then transfers the convergence $T_n \to T$ at the single point $T^{-1} y$ (consistency) to convergence of the inverses at $y$. The uniform bound usually comes from the uniform boundedness principle.
+> applied to $y$ by inserting $y = M(M^{-1} y)$. A uniform bound on $\|M_n^{-1}\|$ (stability) then transfers the convergence $M_n \to M$ at the single point $M^{-1} y$ (consistency) to convergence of the inverses at $y$. The uniform bound usually comes from the uniform boundedness principle.
 
 ^rem-t28
 

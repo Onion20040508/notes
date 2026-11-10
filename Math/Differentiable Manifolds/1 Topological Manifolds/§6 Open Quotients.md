@@ -89,11 +89,11 @@ tags: [differentiable-manifolds, math591]
 ^thm-6-3
 
 > [!proof]+ Proof (one line in lecture: project the countable basis)
-> $\pi : X \to X/{\sim}$ is a continuous surjection, and open because $\sim$ is; so [[§5 Quotient Maps#^lem-5-7|Lemma §5.7]] applies and the image of a countable basis of $X$ is a countable basis of $X/{\sim}$.
+> $\pi : X \to X/{\sim}$ is a continuous surjection, and open because $\sim$ is; so [[§5 Quotient Maps#^lem-5-8|Lemma §5.8]] applies and the image of a countable basis of $X$ is a countable basis of $X/{\sim}$.
 
 ^pf-6-3
 
-*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§5 Quotient Maps#^lem-5-7|§5.7]]
+*Uses:* [[§4 Quotient Spaces and Open Maps#^def-4-4|Def. §4.4]], [[§5 Quotient Maps#^lem-5-8|§5.8]]
 
 > [!remark]- Connections
 > - Reused for coset spaces: [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-5|§15.5]] (second countability of $G/H$), and hence for the Grassmannians, [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|§15.8]].

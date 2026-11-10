@@ -72,7 +72,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 *Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-1|Def. §47.1]], [[§1 The Definition of a Group#^def-1-1|493 Def. §1.1]]
 
-> [!definition] Definition §47.2: Hyperspherical Coordinates
+> [!definition] Definition §47.4: Hyperspherical Coordinates
 > Points of $\mathbb{H} = \mathbb{R}^4$ ([[§47 The Unit Quaternions and SU(2)#^def-47-1|Def. §47.1]]) are written $\vec x = (x_0, x_1, x_2, x_3)$, and the standard basis vectors are $\vec e_0, \ldots, \vec e_3$. Throughout, $c_k = \cos\theta_k$ and $s_k = \sin\theta_k$. The **hyperspherical coordinates** $(r, \theta_1, \theta_2, \theta_3)$ on $\mathbb{R}^4$ (cf. [[Polar and spherical coordinates|452: polar and spherical coordinates]]) are given by the map $\Phi$ below. Let
 >
 > $$
@@ -81,10 +81,10 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 >
 > It is smooth, and using $c_k^2 + s_k^2 = 1$ three times, $|\Phi(r, \theta)|^2 = r^2\bigl(c_1^2 + s_1^2 c_2^2 + s_1^2 s_2^2\bigr) = r^2\bigl(c_1^2 + s_1^2\bigr) = r^2$, so $|\Phi(r, \theta)| = r$.
 
-^def-47-2
+^def-47-4
 
 > [!theorem] Lemma §47.2: The Jacobian of Hyperspherical Coordinates
-> The map $\Phi$ of [[§47 The Unit Quaternions and SU(2)#^def-47-2|Definition §47.2]] has [[§7 The Regular Value Theorem#^def-7-1|Jacobian]] determinant
+> The map $\Phi$ of [[§47 The Unit Quaternions and SU(2)#^def-47-4|Definition §47.4]] has [[§7 The Regular Value Theorem#^def-7-1|Jacobian]] determinant
 >
 > $$
 > \det \Phi'(r, \theta) = r^3 \sin^2\theta_1 \, \sin\theta_2 .
@@ -124,17 +124,17 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ^pf-47-2
 
-*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-2|Def. §47.2]], [[§37 Determinants#^ladr-9-49|LADR 9.49]]
+*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-4|Def. §47.4]], [[§37 Determinants#^ladr-9-49|LADR 9.49]]
 
 > [!theorem] Proposition §47.3: Hyperspherical Charts Are Adapted to $S^3$
-> Let $\Phi$ and $B$ be as in [[§47 The Unit Quaternions and SU(2)#^def-47-2|Definition §47.2]] and [[§47 The Unit Quaternions and SU(2)#^lem-47-2|Lemma §47.2]]. Every $p \in S^3$ lies in the domain of a chart of $\mathbb{R}^4$ adapted to $S^3$ ([[§37 Regular Submanifolds#^def-37-3|Definition §37.3]]):
+> Let $\Phi$ and $B$ be as in [[§47 The Unit Quaternions and SU(2)#^def-47-4|Definition §47.4]] and [[§47 The Unit Quaternions and SU(2)#^lem-47-2|Lemma §47.2]]. Every $p \in S^3$ lies in the domain of a chart of $\mathbb{R}^4$ adapted to $S^3$ ([[§37 Regular Submanifolds#^def-37-3|Definition §37.3]]):
 > 1. if $p \notin B$, then $p = \Phi(1, \theta)$ for some $\theta$, and for a suitable open $W \ni (1, \theta)$ in $(0, \infty) \times \mathbb{R}^3$ the map $\psi_p = \tau \circ (\Phi|_W)^{-1}$, where $\tau(r, \theta_1, \theta_2, \theta_3) = (\theta_1, \theta_2, \theta_3, r - 1)$, is such a chart, with last coordinate $y^4 = r - 1$;
 > 2. if $p \in B$, the same construction with $\tilde\Phi = P \circ \Phi$ in place of $\Phi$, where $P(x_0, x_1, x_2, x_3) = (x_2, x_3, x_0, x_1)$, gives such a chart.
 
 ^prop-47-3
 
 > [!proof]+ Proof
-> *(Assignment 4, Problem 3(a), as submitted.)* Steps (i) and (ii) of the submitted solution are [[§47 The Unit Quaternions and SU(2)#^def-47-2|Definition §47.2]] and [[§47 The Unit Quaternions and SU(2)#^lem-47-2|Lemma §47.2]]. By the definition from lecture ([[§37 Regular Submanifolds#^def-37-2|Definition §37.2]]), we must show that every $p \in S^3$ lies in the domain of a chart $(U, \psi = (y^1, y^2, y^3, y^4))$ of $\mathbb{R}^4$ with
+> *(Assignment 4, Problem 3(a), as submitted.)* Steps (i) and (ii) of the submitted solution are [[§47 The Unit Quaternions and SU(2)#^def-47-4|Definition §47.4]] and [[§47 The Unit Quaternions and SU(2)#^lem-47-2|Lemma §47.2]]. By the definition from lecture ([[§37 Regular Submanifolds#^def-37-2|Definition §37.2]]), we must show that every $p \in S^3$ lies in the domain of a chart $(U, \psi = (y^1, y^2, y^3, y^4))$ of $\mathbb{R}^4$ with
 >
 > $$
 > U \cap S^3 = \{ \vec u \in U : y^4(\vec u) = 0 \};
@@ -164,7 +164,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ^pf-47-3
 
-*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-2|Def. §47.2]], [[§47 The Unit Quaternions and SU(2)#^lem-47-2|§47.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§36 Submersions#^lem-36-5|§36.5]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[Inverse Function Theorem (several variables)|452 §16.2]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]]
+*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-4|Def. §47.4]], [[§47 The Unit Quaternions and SU(2)#^lem-47-2|§47.2]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§36 Submersions#^lem-36-5|§36.5]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-4|Def. §19.4]], [[Inverse Function Theorem (several variables)|452 §16.2]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-44|LADR 7.44]]
 
 > [!theorem] Proposition §47.4: The Unit Quaternions
 > $S^3 \subseteq \mathbb{H} = \mathbb{R}^4$ is a regular submanifold ([[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]) of dimension $3$ and a group ([[§47 The Unit Quaternions and SU(2)#^prop-47-1|§47.1]]) whose multiplication and inversion are smooth ([[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]]). It is connected ([[§15 Connected Spaces#^def-15-2|590 Def. §15.2]]): every $q \in S^3$ other than $\pm 1$ can be written $q = \cos\theta + \sin\theta\, u$ with $\theta \in (0, \pi)$ and $u \in \mathbb{H}_0$, $|u| = 1$, and $t \mapsto \cos t + \sin t\, u$ joins $1$ to $q$ in $S^3$.
@@ -214,7 +214,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 > [!theorem] Proposition §47.5: $S^3$ Is $\mathrm{SU}(2)$
 > Identify $\mathbb{C}^2$ with $\mathbb{H}$ by $(z, w) \mapsto z + wj$, so that $\mathbb{C}$ acts by left multiplication.
-> 1. For $q = a + bj$ ($a, b \in \mathbb{C}$), right multiplication $R_q(x) = xq$ is complex-linear, with matrix $\begin{pmatrix} a & -\bar b \\ b & \bar a \end{pmatrix}$; for $q \in S^3$ this matrix lies in $\mathrm{SU}(2)$ (unitary: [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]]).
+> 1. For $q = a + bj$ ($a, b \in \mathbb{C}$), right multiplication $R_q(x) = xq$ is complex-linear, with matrix $\begin{pmatrix} a & -\bar b \\ b & \bar a \end{pmatrix}$; for $q \in S^3$ this matrix lies in $\mathrm{SU}(2)$ (unitary: [[§11 Topological Groups and Classical Matrix Groups#^def-11-11|Def. §11.11]]).
 > 2. $F : S^3 \to \mathrm{SU}(2)$, $F(q) =$ the matrix of $R_{q^{-1}}$, is a group isomorphism ([[§16 Isomorphisms#^def-16-1|493 Def. §16.1]]), explicitly
 >
 > $$
@@ -290,7 +290,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 ^pf-47-5
 
-*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-1|Def. §47.1]], [[§47 The Unit Quaternions and SU(2)#^prop-47-1|§47.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§44 Embeddings#^def-44-1|Def. §44.1]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§44 Embeddings#^cor-44-3|§44.3]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§47 The Unit Quaternions and SU(2)#^prop-47-4|§47.4]]
+*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-1|Def. §47.1]], [[§47 The Unit Quaternions and SU(2)#^prop-47-1|§47.1]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-11|Def. §11.11]], [[§44 Embeddings#^def-44-1|Def. §44.1]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§44 Embeddings#^cor-44-3|§44.3]], [[§22 The Differential of a Map Between Vector Spaces#^thm-22-3|§22.3]], [[§15 Homomorphisms#^def-15-1|493 Def. §15.1]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-53|LADR 7.53]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§47 The Unit Quaternions and SU(2)#^prop-47-4|§47.4]]
 
 > [!proof]+ Second proof of (3): adapted charts (the submitted solution)
 >
@@ -298,7 +298,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 >
 > **Notation.** The problem writes $dF_p$ for the differential of a smooth map $F$ at a point $p$. As in lecture and in Problem 1 ([[§30 The Differential in Coordinates#^prop-30-11|Proposition §30.11]]), we write $F_{\ast,p}$ instead, so that $dF_p = F_{\ast,p}$. Since we work in $\mathbb{R}^4$ (see below), the problem's point $1 \in S^3$ is $\vec e_0$; thus the problem's $T_1 S^3$, $\sigma_j = dF_1(\vec e_j)$ and $dG_I(\sigma_j)$ are, in our notation, $T_{\vec e_0} S^3$, $\sigma_j = F_{\ast,\vec e_0}(\vec e_j)$ and $G_{\ast,I}(\sigma_j)$.
 >
-> **Setup.** Let $h : \mathbb{R}^4 \to \mathbb{H}$, $h(x_0, x_1, x_2, x_3) = x_0 + x_1 i + x_2 j + x_3 k$, be the $\mathbb{R}$-linear isomorphism of the problem. We work in $\mathbb{R}^4$ throughout, and pass to $\mathbb{H}$ only by plugging in $h$. Since $|h(\vec x)| = |\vec x|$, the sphere is $S^3 = \{ \vec x \in \mathbb{R}^4 : |\vec x| = 1 \}$, the point $1 \in S^3$ of the problem is $\vec e_0 = h^{-1}(1) = (1, 0, 0, 0)$, and $h(\vec e_1), h(\vec e_2), h(\vec e_3) = i, j, k$. Working in $\mathbb{R}^4$ loses nothing: $h$ is an $\mathbb{R}$-linear isomorphism, hence a diffeomorphism whose differential at every point is $h$ itself, and it carries the unit sphere of $\mathbb{R}^4$ onto the unit quaternions and $\vec e_0$ to $1$. So if $\hat F$ denotes the problem's map on unit quaternions, then $F = \hat F \circ h$ and, by the [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|chain rule]], $F_{\ast,\vec e_0} = \hat F_{\ast,1} \circ h$; in particular $F_{\ast,\vec e_0}(\vec e_j) = \hat F_{\ast,1}\bigl(h(\vec e_j)\bigr)$, so computing in $\mathbb{R}^4$ with $\vec e_j$ gives the same $\sigma_j$ as computing in $\mathbb{H}$ with the tangent vectors $i, j, k$ at $1$, and likewise for $C$ and $G$ in part (b) (the [[§48 SU(2) → SO(3)꞉ The Double Cover#^pf-48-4-2|second proof]] of [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|Theorem §48.4]]). Quaternion multiplication enters only through $h$, in the definitions of $F$ and of the conjugation map $C$. In part (b), the $3 \times 3$ matrices are taken with respect to the identification of $\mathbb{R}^3$ with the purely imaginary quaternions fixed in the problem. In this notation
+> **Setup.** Let $h : \mathbb{R}^4 \to \mathbb{H}$, $h(x_0, x_1, x_2, x_3) = x_0 + x_1 i + x_2 j + x_3 k$, be the $\mathbb{R}$-linear isomorphism of the problem. We work in $\mathbb{R}^4$ throughout, and pass to $\mathbb{H}$ only by plugging in $h$. Since $|h(\vec x)| = |\vec x|$, the sphere is $S^3 = \{ \vec x \in \mathbb{R}^4 : |\vec x| = 1 \}$, the point $1 \in S^3$ of the problem is $\vec e_0 = h^{-1}(1) = (1, 0, 0, 0)$, and $h(\vec e_1), h(\vec e_2), h(\vec e_3) = i, j, k$. Working in $\mathbb{R}^4$ loses nothing: $h$ is an $\mathbb{R}$-linear isomorphism, hence a diffeomorphism whose differential at every point is $h$ itself, and it carries the unit sphere of $\mathbb{R}^4$ onto the unit quaternions and $\vec e_0$ to $1$. So if $\hat F$ denotes the problem's map on unit quaternions, then $F = \hat F \circ h$ and, by the [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|chain rule]], $F_{\ast,\vec e_0} = \hat F_{\ast,1} \circ h$; in particular $F_{\ast,\vec e_0}(\vec e_j) = \hat F_{\ast,1}\bigl(h(\vec e_j)\bigr)$, so computing in $\mathbb{R}^4$ with $\vec e_j$ gives the same $\sigma_j$ as computing in $\mathbb{H}$ with the tangent vectors $i, j, k$ at $1$, and likewise for $C$ and $G$ in part (b) (the [[§48 SU(2) → SO(3)꞉ The Double Cover#^pf-48-5-2|second proof]] of [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|Theorem §48.5]]). Quaternion multiplication enters only through $h$, in the definitions of $F$ and of the conjugation map $C$. In part (b), the $3 \times 3$ matrices are taken with respect to the identification of $\mathbb{R}^3$ with the purely imaginary quaternions fixed in the problem. In this notation
 >
 > $$
 > F : S^3 \to \mathrm{SU}(2), \qquad F(\vec x) = \text{matrix of } R_{h(\vec x)^{-1}} .
@@ -354,7 +354,7 @@ The unit quaternions form a group $S^3$; acting on $\mathbb{C}^2$ they identify 
 
 > [!remark]- Connections
 > - $\mathrm{SU}(2)$ in Quantum Mechanics: [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^def-c5-2-1|QM Def. §C5.2.1]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-7|QM Theorem §C5.2.7]]; unitary matrices in LADR: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]].
-> - The unitary groups in 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|Def. §11.10]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|Ex. §23.3]].
+> - The unitary groups in 591: [[§11 Topological Groups and Classical Matrix Groups#^def-11-11|Def. §11.11]], [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|Ex. §23.3]].
 
 The sphere through the course: a topological manifold with hemisphere charts in [[§8 Spheres|Spheres]]; the homogeneous space $\mathrm{SO}(3)/\mathrm{SO}(2)$ in [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; the Riemann sphere $\mathbb{CP}^1$ in [[§18 Projective Spaces as Smooth Manifolds#^prop-18-4|the Riemann sphere]]; its geometric tangent spaces in [[§25 The Geometric Tangent Space#^ex-25-1|the tangent space of the sphere]] and its transverse intersection with a plane in [[§26 Transversality#^ex-26-1|the sphere and the plane re-read]]; the double cover $S^n \to \mathbb{RP}^n$ and the Hopf fibration $S^{2n+1} \to \mathbb{CP}^n$ in [[§46 Projective Spaces and the Hopf Fibration|Projective Spaces and the Hopf Fibration]]; and $S^3 = \mathrm{SU}(2)$ in [[§47 The Unit Quaternions and SU(2)#^prop-47-5|the unit quaternions as SU(2)]].
 
@@ -416,7 +416,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 > [!proof]+ Second proof of the formulas for the $\sigma_j$: curves from a hyperspherical chart (the submitted solution)
 >
-> *(Assignment 4, Problem 3(a), as submitted, in the notation of the [[§47 The Unit Quaternions and SU(2)#^pf-47-5-2|second proof]] of [[§47 The Unit Quaternions and SU(2)#^prop-47-5|Proposition §47.5]]: $\vec e_0 = 1$ and $\vec e_1, \vec e_2, \vec e_3$ correspond to $i, j, k$, so $\sigma_j = F_{\ast,\vec e_0}(\vec e_j)$ is the $\sigma_j$ of the statement, and the curves $\gamma_j$ below are those of the statement. Items (i)–(v) are [[§47 The Unit Quaternions and SU(2)#^def-47-2|Definition §47.2]], [[§47 The Unit Quaternions and SU(2)#^lem-47-2|Lemma §47.2]] and the steps (iii)–(v) of the [[§47 The Unit Quaternions and SU(2)#^pf-47-3|proof]] of [[§47 The Unit Quaternions and SU(2)#^prop-47-3|Proposition §47.3]], and the map $\tilde\Phi$ is that of [[§47 The Unit Quaternions and SU(2)#^prop-47-3|Proposition §47.3]]. That the $\sigma_j$ form a basis is shown in the proof above, and again in the [[§48 SU(2) → SO(3)꞉ The Double Cover#^pf-48-4-2|second proof]] of [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|Theorem §48.4]].)*
+> *(Assignment 4, Problem 3(a), as submitted, in the notation of the [[§47 The Unit Quaternions and SU(2)#^pf-47-5-2|second proof]] of [[§47 The Unit Quaternions and SU(2)#^prop-47-5|Proposition §47.5]]: $\vec e_0 = 1$ and $\vec e_1, \vec e_2, \vec e_3$ correspond to $i, j, k$, so $\sigma_j = F_{\ast,\vec e_0}(\vec e_j)$ is the $\sigma_j$ of the statement, and the curves $\gamma_j$ below are those of the statement. Items (i)–(v) are [[§47 The Unit Quaternions and SU(2)#^def-47-4|Definition §47.4]], [[§47 The Unit Quaternions and SU(2)#^lem-47-2|Lemma §47.2]] and the steps (iii)–(v) of the [[§47 The Unit Quaternions and SU(2)#^pf-47-3|proof]] of [[§47 The Unit Quaternions and SU(2)#^prop-47-3|Proposition §47.3]], and the map $\tilde\Phi$ is that of [[§47 The Unit Quaternions and SU(2)#^prop-47-3|Proposition §47.3]]. That the $\sigma_j$ form a basis is shown in the proof above, and again in the [[§48 SU(2) → SO(3)꞉ The Double Cover#^pf-48-5-2|second proof]] of [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|Theorem §48.5]].)*
 >
 > **The tangent space $T_{\vec e_0} S^3$.** By the result from lecture on tangent spaces of submanifolds ([[§37 Regular Submanifolds#^prop-37-9|Proposition §37.9]]), if $\psi = (y^1, \ldots, y^4)$ is an [[§37 Regular Submanifolds#^def-37-3|adapted chart]] at $p \in S^3$, then $\iota_{\ast p} : T_p S^3 \to T_p\mathbb{R}^4$ is injective and
 >
@@ -498,7 +498,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 
 ^pf-47-6-2
 
-*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-2|Def. §47.2]], [[§47 The Unit Quaternions and SU(2)#^lem-47-2|§47.2]], [[§47 The Unit Quaternions and SU(2)#^prop-47-3|§47.3]], [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]
+*Uses:* [[§47 The Unit Quaternions and SU(2)#^def-47-4|Def. §47.4]], [[§47 The Unit Quaternions and SU(2)#^lem-47-2|§47.2]], [[§47 The Unit Quaternions and SU(2)#^prop-47-3|§47.3]], [[§47 The Unit Quaternions and SU(2)#^prop-47-5|§47.5]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§30 The Differential in Coordinates#^cor-30-4|§30.4]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]]
 
 > [!remark]- Connections
 > - The tangent space of $\mathrm{U}(n)$ at the identity: [[§25 The Geometric Tangent Space#^ex-25-3|Ex. §25.3]], [[§25 The Geometric Tangent Space#^thm-25-5|§25.5]].

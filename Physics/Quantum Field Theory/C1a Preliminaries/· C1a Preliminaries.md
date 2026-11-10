@@ -8,17 +8,17 @@ tags: [chapter, quantum-field-theory]
 # C1a Preliminaries
 ↑ [[Quantum Field Theory]] · [[· C1b Classical Field Theory]] →
 
-**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (23), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (5), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (22), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (10), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (1), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (45), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (18)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (29), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (25), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (58), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (40), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (43), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (19), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (10), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (12), [[· CA Mathematical Methods|CA Mathematical Methods]] (2), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (20)
+**Builds on:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (24), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (5), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (22), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (10), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (2), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (8), [[· C6c Feynman Rules for Amplitudes|C6c Feynman Rules for Amplitudes]] (1), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (1), [[· CA Mathematical Methods|CA Mathematical Methods]] (53), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (20)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (29), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (3), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (25), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (58), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (40), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (43), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (22), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (10), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (12), [[· CA Mathematical Methods|CA Mathematical Methods]] (2), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (23)
 
 ## Sections
-- [[§C1a.1 Why Quantum Field Theory]] — 
-- [[§C1a.2 Natural Units and Dimensional Analysis]] — 
-- [[§C1a.3 Causal Structure and the Causality of a Single Particle]] — 
-- [[§C1a.4 The Lorentz Group]] — 
-- [[§C1a.5 Vectors, Tensors and Index Notation]] — 
-- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators]] — 
-- [[§C1a.7 Relativistic Electrodynamics in Index Form]] — 
+- [[§C1a.1 Why Quantum Field Theory]] — PS 2.1; Yu 1.1; 513 notes Ch. 1
+- [[§C1a.2 Natural Units and Dimensional Analysis]] — Yu 1.2; 513 notes Ch. 2
+- [[§C1a.3 Causal Structure and the Causality of a Single Particle]] — PS 2.1; 513 notes Ch. 2
+- [[§C1a.4 The Lorentz Group]] — Yu 1.3; 513 notes Ch. 1, 7
+- [[§C1a.5 Vectors, Tensors and Index Notation]] — Yu 1.4–1.5; 513 notes Ch. 1, 2
+- [[§C1a.6 Infinitesimal Lorentz Transformations and Generators]] — Yu 3.1, 3.2; 513 notes Ch. 1, 7, 8
+- [[§C1a.7 Relativistic Electrodynamics in Index Form]] — Yu 1.5; 513 notes Ch. 1, 3
 
 ## Principles
 - [[§C1a.3 Causal Structure and the Causality of a Single Particle#^pr-c1a-3-1|§C1a.3.1]] Causality

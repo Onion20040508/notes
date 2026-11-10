@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources (planned for the proofs; each to be checked against the text when the proof is written): P. Woit, Quantum Theory, Groups and Representations, Ch. 30 (§30.1 "The Grassmann algebra of polynomials on anticommuting generators") (https://www.math.columbia.edu/~woit/QM/qmbook.pdf) · the user's PHY 513 notes, Ch. 3 §3.3 (derivatives from one side) · Henneaux & Teitelboim, Quantization of Gauge Systems (as cited in [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]]) · M. Srednicki, Quantum Field Theory (Cambridge, 2007), §44 (left and right derivatives, Berezin integration, linear change of variables, Gaussian integrals; checked for Theorem §CB.21.9) · Linear Algebra (LADR) §36–§37 · the rest written here.*
 
-*Deferred section (SPEC-CB): the skeleton is complete; the proofs are to be written together with the path integral for fermions (QFT C11, planned).*
+*Deferred section: the skeleton is complete; the proofs are to be written together with the path integral for fermions (QFT C11, planned).*
 
 What are anticommuting "numbers", how does one differentiate and integrate with respect to them, and why does a fermionic Gaussian integral give a determinant? A Grassmann algebra is the exterior algebra ([[§CB.8 New Representations from Old꞉ Tensor Products, Duals, Conjugates and Invariant Tensors#^def-cb-8-12|Def. §CB.8.12]]) of a space of generators — equivalently, the Clifford algebra of the zero quadratic form ([[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-6|Def. §CB.11.6]]). The classical Dirac field with Grassmann-odd components and its graded bracket ([[§C5b.1 Canonical Quantization of the Dirac Field#^def-c5b-1-4|★ Def. §C5b.1.4]]) already use it; fermionic path integrals will use Berezin integration.
 
@@ -34,7 +34,7 @@ What are anticommuting "numbers", how does one differentiate and integrate with 
 
 > [!proof]- Proof (to be filled)
 > *To be filled (deferred with C11).*
-> <!-- searched: Woit qmbook §30.1 (basis stated, no proof); Srednicki §44 (expansion eq. (44.10), no proof); the CB.6/CB.10 basis theorems (old CB.4/CB.7) are themselves placeholders — deferred with C11 -->
+> <!-- searched: Woit qmbook §30.1 (basis stated, no proof); Srednicki §44 (expansion eq. (44.10), no proof); deferred with C11. Pointer for when it is written (QC 2026-11-09): the basis of each exterior power and dim Λ^k W = C(n,k) are proved in Theorem §CB.8.13, 1 (proof steps 3–6), so part 1 (dim = Σ_k C(n,k) = 2^n) follows once the product of ΛW is defined (Def. §CB.8.12); Theorem §CB.21.9 (proved) already rests on part 1 -->
 
 ^pf-cb-21-2
 
@@ -137,7 +137,7 @@ The course's graded bracket and the side of the derivative, in [[§C5b.1 Canonic
 > \eta_1\cdots\eta_n = \Bigl(\sum_{(j_1, \dots, j_n) \in \operatorname{perm}n}\operatorname{sign}(j_1, \dots, j_n)\,A_{1j_1}\cdots A_{nj_n}\Bigr)\theta'_1\cdots\theta'_n = \det(A^{\mathsf T})\,\theta'_1\cdots\theta'_n = \det(A)\,\theta'_1\cdots\theta'_n ,
 > $$
 >
-> the sum being the formula of [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]] for $A^{\mathsf T}$ (whose $(j, k)$ entry is $A_{kj}$), and $\det A^{\mathsf T} = \det A$ ([[§26 Transposes, Products, and Linearity of Determinants#^thm-26-1|235 Thm. §26.1]]).
+> the sum being the formula of [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]] for $A^{\mathsf T}$ (whose $(j, k)$ entry is $A_{kj}$), and $\det A^{\mathsf T} = \det A$ ([[§37 Determinants#^ladr-9-56|LADR Thm. 9.56]]).
 >
 > **7. Conclusion.** By Steps 2 and 6, $\int d^n\theta'\,f(A\theta') = c_{\{1, \dots, n\}}\det A$, and by Step 1, $c_{\{1, \dots, n\}} = \int d^n\theta\,f(\theta)$. Written as a rule for the measure, "$d^n\theta' = \det(A)\,d^n\theta$", i.e. $d^n\theta = (\det A)^{-1}d^n\theta'$.
 >
@@ -150,7 +150,7 @@ The course's graded bracket and the side of the derivative, in [[§C5b.1 Canonic
 
 ^pf-cb-21-9
 
-*Uses:* [[§CB.21 Grassmann Algebras#^def-cb-21-1|Def. §CB.21.1]], [[§CB.21 Grassmann Algebras#^thm-cb-21-2|Theorem §CB.21.2]], [[§CB.21 Grassmann Algebras#^def-cb-21-5|Def. §CB.21.5]], [[§CB.21 Grassmann Algebras#^def-cb-21-8|Def. §CB.21.8]], [[§36 Alternating Multilinear Forms#^ladr-9-32|LADR Def. 9.32]], [[§36 Alternating Multilinear Forms#^ladr-9-34|LADR Thm. 9.34]], [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]], [[§26 Transposes, Products, and Linearity of Determinants#^thm-26-1|235 Thm. §26.1]]
+*Uses:* [[§CB.21 Grassmann Algebras#^def-cb-21-1|Def. §CB.21.1]], [[§CB.21 Grassmann Algebras#^thm-cb-21-2|Theorem §CB.21.2]], [[§CB.21 Grassmann Algebras#^def-cb-21-5|Def. §CB.21.5]], [[§CB.21 Grassmann Algebras#^def-cb-21-8|Def. §CB.21.8]], [[§36 Alternating Multilinear Forms#^ladr-9-32|LADR Def. 9.32]], [[§36 Alternating Multilinear Forms#^ladr-9-34|LADR Thm. 9.34]], [[§37 Determinants#^ladr-9-46|LADR Thm. 9.46]], [[§37 Determinants#^ladr-9-56|LADR Thm. 9.56]]
 
 > [!theorem] Theorem §CB.21.10: The Fermionic Gaussian Integral Is a Determinant
 > Let $\theta_1, \dots, \theta_n, \bar\theta_1, \dots, \bar\theta_n$ be $2n$ Grassmann generators and $M \in M_n(\mathbb C)$. With the measure $\prod_{i=1}^n d\bar\theta_i\,d\theta_i$ (each pair even, so their order does not matter; within a pair $d\theta_i$ acts first),
@@ -171,4 +171,4 @@ The course's graded bracket and the side of the derivative, in [[§C5b.1 Canonic
 
 > [!remark]- Connections
 > - Theorem §CB.21.2, 2 places Grassmann algebras at the degenerate end of the Clifford family: Clifford algebras quantize anticommuting variables ($\{\psi, \psi^\dagger\} = 1$, the canonical anticommutation relations, are a Clifford relation, Woit Ch. 28), Grassmann algebras are their classical limit.
-> - **Used in**: Definitions §CB.21.1–§CB.21.6, Theorem §CB.21.7 — [[§C5b.1 Canonical Quantization of the Dirac Field#^def-c5b-1-4|★ Def. §C5b.1.4]], [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-3|§C5b.1, ★ Caution: Which side a Grassmann derivative acts from]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-4|★ Theorem §C5b.1.4]]; Definition §CB.21.8–Theorem §CB.21.10 — fermionic path integrals, QFT C11 (planned).
+> - **Used in**: no other section links a box of this section yet. The ★ boxes of §C5b.1 embedded above use this vocabulary without citing it, so Definitions §CB.21.1–§CB.21.6 and Theorem §CB.21.7 are their mathematical home: [[§C5b.1 Canonical Quantization of the Dirac Field#^def-c5b-1-4|★ Def. §C5b.1.4]], [[§C5b.1 Canonical Quantization of the Dirac Field#^cau-c5b-1-3|§C5b.1, ★ Caution: Which side a Grassmann derivative acts from]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-4|★ Theorem §C5b.1.4]]. Definition §CB.21.8–Theorem §CB.21.10 are for fermionic path integrals, QFT C11 (planned).

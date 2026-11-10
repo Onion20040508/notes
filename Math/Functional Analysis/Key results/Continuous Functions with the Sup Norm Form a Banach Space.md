@@ -21,7 +21,7 @@ tags: [functional-analysis, hub]
 - [[§10a Cauchy Sequences#^thm-10a-3|451 §10a.3: Cauchy Implies Convergent]]
 
 ## Used in (Functional Analysis)
-- [[§13 The Completion of a Normed Space#^prop-13-4|Proposition §13.4: (C²[a,b], ∣·∣_X) is Not Complete]]
+- [[§13 The Completion of a Normed Space#^prop-13-5|Proposition §13.5: (C²[a,b], ∣·∣_X) is Not Complete]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|Proposition §19.5: Continuous Functions are Not Dense in L^∞]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-8|Proposition §19.8: Lᵖ[a,b] as a Completion]]
 - [[§20 Compactness and the Unit Ball#^prop-20-4|Proposition §20.4: The Constant theta = 1 Cannot Be Attained]]

@@ -19,7 +19,7 @@ The chapter closes where Lecture 10 began, with spin and statistics. The theorem
 > 1. The free Dirac field (spin ½) admits no quantization with commutators that has positive norms and an energy bounded below ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]]), nor one that propagates causally ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-5|Theorem §C5b.7.5]]); with anticommutators it has positive energies and norms ([[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]], [[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-1|Theorem §C5b.4.1]]) and commuting observables at spacelike separation ([[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-4|Theorem §C5b.7.4]]).
 > 2. The free scalar field (spin 0) quantized with commutators has positive energies and norms and is microcausal ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]).
 >
-> Both therefore obey [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-7|Principle §C5b.1.7]]; its quanta are fermions and bosons respectively ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|Theorem §C5b.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]).
+> Both therefore obey [[§C5b.1 Canonical Quantization of the Dirac Field#^pr-c5b-1-7|Principle §C5b.1.7]]; their quanta are fermions and bosons respectively ([[§C5b.4 Fermions, Fock Space and the Pauli Principle#^thm-c5b-4-2|Theorem §C5b.4.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-2|Theorem §C2a.4.2]]).
 >
 > *Model:* [[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]] (part 1), [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]] (part 2); *applies:* free fields, free vacuum $|0\rangle$, exact.
 >
@@ -81,6 +81,11 @@ The chapter closes where Lecture 10 began, with spin and statistics. The theorem
 > *Source: the user's PHY 513 notes, Ch. 10 §10.7 ("Correspondence with Yu") and Concordance ("Where Yu's results appear")*
 
 ^rem-c5b-9-3
+
+> [!abstract]- Mathematical background
+> Proved in CB; each line says what the physics above relies on.
+>
+> - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]] — the representations $(j_+, j_-)$ of the Lorentz algebra: those with $j_+ + j_-$ half-odd-integer are the ones with the sign $-1$ under a $2\pi$ rotation, the fields the spin–statistics theorem assigns anticommutators (Remark: Two arguments, one answer).
 
 > [!remark]- Connections
 > - The principle that QM had to postulate per species becomes, for the free Dirac field, a consequence of positivity and causality; the half-integer representations it applies to are exactly those with the sign $-1$ under a $2\pi$ rotation — [[§C12.1★ Permutation Symmetry and the Symmetrization Postulate#^pr-c12-1-4|QM Principle §C12.1.4]], [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)|§CB.17]], [[§C5.2 Spin One-Half, SU(2), SO(3) and Euler Rotations#^thm-c5-2-4|QM Theorem §C5.2.4]].

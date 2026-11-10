@@ -13,7 +13,7 @@ Throughout this section $B(x_0, r)$ denotes the *open* ball with center $x_0$ an
 
 ## The Open Mapping Theorem
 
-In lecture, the open mapping theorem was stated first, Banach's theorem was derived from it, and the open mapping theorem was then reduced to the following theorem. Here the theorem comes first, so that each proof follows its statement.
+The open mapping theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-2|§41.2]]) reduces to the following theorem, and Banach's theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]) follows from the open mapping theorem. The theorem comes first, so that each proof follows its statement. What matters in it is that the ball in $Y$ is centered at the origin, not at an arbitrary point: linearity then moves it anywhere and rescales it.
 
 > [!theorem] Theorem §41.1: The Image of the Unit Ball Contains a Ball About $0$
 > Let $X, Y$ be Banach spaces and $M \in \mathcal{L}(X, Y)$ with $R(M) = Y$. Then there is $\delta > 0$ such that
@@ -26,8 +26,6 @@ In lecture, the open mapping theorem was stated first, Banach's theorem was deri
 
 ^thm-41-1
 
-What matters is that the ball in $Y$ is centered at the origin, not at an arbitrary point: linearity then moves it anywhere and rescales it.
-
 > [!proof]+ Proof of Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]]
 > **Step 1: some $\overline{M(B(0,n))}$ has an interior point.** Every $x \in X$ has $\|x\| < n$ for some $n \in \mathbb{N}$, so $X = \bigcup_{n=1}^\infty B(0, n)$. Since $M$ is onto,
 >
@@ -35,13 +33,13 @@ What matters is that the ball in $Y$ is centered at the origin, not at an arbitr
 > Y = M(X) = \bigcup_{n=1}^\infty M\bigl( B(0, n) \bigr) .
 > $$
 >
-> $Y$ is complete, so by the Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-4|§40.4]]) it is of the second category (Definition [[§40 The Baire Category Theorem#^def-40-1|§40.1]]): not every $M(B(0,n))$ is nowhere dense. So there is $n \in \mathbb{N}$ such that $\overline{M(B(0,n))}$ has an interior point, i.e. there are $z_0 \in Y$ and $r > 0$ with
+> $Y$ is complete, so by the Baire category theorem (Theorem [[§40 The Baire Category Theorem#^thm-40-4|§40.4]]) it is of the second category (Definition [[§40 The Baire Category Theorem#^def-40-3|§40.3]]): not every $M(B(0,n))$ is nowhere dense. So there is $n \in \mathbb{N}$ such that $\overline{M(B(0,n))}$ has an interior point, i.e. there are $z_0 \in Y$ and $r > 0$ with
 >
 > $$
 > B(z_0, r) \subset \overline{M\bigl( B(0, n) \bigr)} .
 > $$
 >
-> (In lecture the center is called $x_0$; it is a point of $Y$.)
+> (The center $z_0$ is a point of $Y$.)
 >
 > **Step 2: two properties of $\overline{M(B(0,n))}$.**
 >
@@ -54,7 +52,7 @@ What matters is that the ball in $Y$ is centered at the origin, not at an arbitr
 > M\bigl( \alpha x_1 + (1-\alpha) x_2 \bigr) = \alpha M x_1 + (1 - \alpha) M x_2 = \alpha y_1 + (1 - \alpha) y_2 \in M\bigl( B(0, n) \bigr) .
 > $$
 >
-> *With the closure* (left as an exercise): if $z_k \in M(B(0,n))$ and $z_k \to z$, then $-z_k \in M(B(0,n))$ and $-z_k \to -z$, so $-z \in \overline{M(B(0,n))}$. If $y_{1,k} \to y_1$ and $y_{2,k} \to y_2$ with $y_{i,k} \in M(B(0,n))$, then $\alpha y_{1,k} + (1-\alpha) y_{2,k} \in M(B(0,n))$ converges to $\alpha y_1 + (1-\alpha) y_2$, which therefore lies in $\overline{M(B(0,n))}$.
+> *With the closure:* if $z_k \in M(B(0,n))$ and $z_k \to z$, then $-z_k \in M(B(0,n))$ and $-z_k \to -z$, so $-z \in \overline{M(B(0,n))}$. If $y_{1,k} \to y_1$ and $y_{2,k} \to y_2$ with $y_{i,k} \in M(B(0,n))$, then $\alpha y_{1,k} + (1-\alpha) y_{2,k} \in M(B(0,n))$ converges to $\alpha y_1 + (1-\alpha) y_2$, which therefore lies in $\overline{M(B(0,n))}$.
 >
 > **Step 3: a ball about the origin.** By symmetry, $B(-z_0, r) \subset \overline{M(B(0,n))}$ as well. (If $y \in B(-z_0, r)$ then $-y \in B(z_0, r)$, so $-y$, and hence $y$, lies in $\overline{M(B(0,n))}$.) By convexity, everything between the two balls is in $\overline{M(B(0,n))}$, and in particular
 >
@@ -128,7 +126,7 @@ What matters is that the ball in $Y$ is centered at the origin, not at an arbitr
 
 ^pf-41-1
 
-*Uses:* [[§40 The Baire Category Theorem#^thm-40-4|§40.4]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]
+*Uses:* [[§40 The Baire Category Theorem#^thm-40-4|§40.4]], [[§40 The Baire Category Theorem#^def-40-3|Def. §40.3]], [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]
 
 ![[m556-41-2.svg]]
 
@@ -177,7 +175,7 @@ The open mapping theorem from Theorem [[§41 The Open Mapping Theorem and Its Co
 Banach's theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]) follows at once.
 
 > [!proof]+ Proof of Banach's theorem from the open mapping theorem
-> Let $M : X \to Y$ be bounded, linear, one-to-one and onto, so that $M^{-1} : Y \to X$ exists; it is linear ([[§39 Solving Mx = y|§39]]). A linear map is bounded if and only if it is continuous (Proposition [[§30 Boundedness and Continuity#^prop-30-2|§30.2]]) (Proposition [[§30 Boundedness and Continuity#^prop-30-2|§30.2]]), and continuous if and only if the inverse image of every open set is open (Lemma [[§39 Solving Mx = y#^lem-39-3|§39.3]]). For $O \subset X$ open, the inverse image of $O$ under $M^{-1}$ is
+> Let $M : X \to Y$ be bounded, linear, one-to-one and onto, so that $M^{-1} : Y \to X$ exists; it is linear ([[§39 Solving Mx = y|§39]]). A linear map is bounded if and only if it is continuous (Proposition [[§30 Boundedness and Continuity#^prop-30-2|§30.2]]), and continuous if and only if the inverse image of every open set is open (Lemma [[§39 Solving Mx = y#^lem-39-3|§39.3]]). For $O \subset X$ open, the inverse image of $O$ under $M^{-1}$ is
 >
 > $$
 > (M^{-1})^{-1}(O) = M(O) ,
@@ -209,14 +207,14 @@ Banach's theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]) follows at o
 
 ^thm-41-3
 
-In other words, if both norms are complete and one of them is stronger than the other, then they are equivalent: two complete norms cannot be strictly comparable. (Compare Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]]: in finite dimensions all norms are equivalent, with no assumption. Lax states the theorem for two complete norms that are *compatible*, that is, a sequence converging in both norms has the same limit in both; comparability implies compatibility. He proves it from the closed graph theorem, the reverse of the order here.)
-
 > [!proof]+ Proof
 > Let $i : X \to X$, $i(x) = x$, be the identity. As a map $i : (X, \|\cdot\|_2) \to (X, \|\cdot\|_1)$ it is linear, and bounded by the assumption: $\|i(x)\|_1 \le c\, \|x\|_2$. It is one-to-one and onto, and both spaces are complete. By Banach's theorem (Theorem [[§39 Solving Mx = y#^thm-39-2|§39.2]]), $i^{-1} : (X, \|\cdot\|_1) \to (X, \|\cdot\|_2)$ is also bounded: there is $C$ with $\|x\|_2 \le C\, \|x\|_1$ for all $x$. With the assumption, the norms are equivalent.
 
 ^pf-41-3
 
 *Uses:* [[§30 Boundedness and Continuity#^prop-30-2|§30.2]], [[§39 Solving Mx = y#^thm-39-2|§39.2]]
+
+In other words, if both norms are complete and one of them is stronger than the other, then they are equivalent: two complete norms cannot be strictly comparable. (Compare Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]]: in finite dimensions all norms are equivalent, with no assumption. Lax states the theorem for two complete norms that are *compatible*, that is, a sequence converging in both norms has the same limit in both; comparability implies compatibility. He proves it from the closed graph theorem, the reverse of the order here.)
 
 > [!example] Example §41.1: $C^1[a,b]$ is Not Complete in the Maximum Norm
 > $C^1[a,b]$ is complete in the norm $\|f\|_{C^1} = \max |f| + \max |f'|$ (Part 2 of the proof of Proposition [[§13 The Completion of a Normed Space#^prop-13-5|§13.5]]), and $\max |f| \le \|f\|_{C^1}$. If $C^1[a,b]$ were also complete in $\max|f|$, Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]] would make the two norms equivalent.
@@ -257,16 +255,14 @@ In other words, if both norms are complete and one of them is stronger than the 
 
 ^thm-41-4
 
-The domain is the domain of definition. Recall the example of Lecture 15 (Example [[§39 Solving Mx = y#^ex-39-3|§39.3]]): $M = \frac{d}{dt} : C^1[0,1] \to C[0,1]$, inside $X = Y = C[0,1]$, with $D(\frac{d}{dt}) = C^1[0,1]$. It is closed but not bounded; this does not contradict the theorem, because its domain is not the whole space $C[0,1]$. So a closed map that is not bounded necessarily has a domain smaller than $X$.
-
 > [!proof]+ Proof
-> Let $X$ carry its norm $\|\cdot\|_X$. Define, for every $x \in X$, the **graph norm**
+> Let $X$ carry its norm $\|\cdot\|_X$. Recall (Definition [[§39 Solving Mx = y#^def-39-6|§39.6]]) that the graph norm of $M$ on $D(M) = X$ is
 >
 > $$
-> \|x\|_G = \|x\|_X + \|Mx\|_Y .
+> \|x\|_G = \|x\|_X + \|Mx\|_Y , \qquad x \in X .
 > $$
 >
-> *It is a norm* (left as an exercise). Homogeneity: $\|ax\|_G = |a|\,\|x\|_X + \|aMx\|_Y = |a|\,\|x\|_G$, by linearity of $M$. Triangle inequality: $\|x + x'\|_X \le \|x\|_X + \|x'\|_X$ and $\|M(x + x')\|_Y = \|Mx + Mx'\|_Y \le \|Mx\|_Y + \|Mx'\|_Y$; add. Positivity: $\|x\|_G \ge \|x\|_X$, which is $> 0$ for $x \neq 0$. We also have
+> *It is a norm.* Homogeneity: $\|ax\|_G = |a|\,\|x\|_X + \|aMx\|_Y = |a|\,\|x\|_G$, by linearity of $M$. Triangle inequality: $\|x + x'\|_X \le \|x\|_X + \|x'\|_X$ and $\|M(x + x')\|_Y = \|Mx + Mx'\|_Y \le \|Mx\|_Y + \|Mx'\|_Y$; add. Positivity: $\|x\|_G \ge \|x\|_X$, which is $> 0$ for $x \neq 0$. We also have
 >
 > $$
 > \|x\|_X \le \|x\|_G \qquad \text{for all } x \in X .
@@ -296,7 +292,9 @@ The domain is the domain of definition. Recall the example of Lecture 15 (Exampl
 
 ^pf-41-4
 
-*Uses:* [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]
+*Uses:* [[§39 Solving Mx = y#^def-39-6|Def. §39.6]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|§41.3]]
+
+The domain $D(M)$ is the domain of definition of $M$. In Example [[§39 Solving Mx = y#^ex-39-3|§39.3]], $M = \frac{d}{dt} : C^1[0,1] \to C[0,1]$, inside $X = Y = C[0,1]$, with $D(\frac{d}{dt}) = C^1[0,1]$, is closed but not bounded; this does not contradict the theorem, because its domain is not the whole space $C[0,1]$. So a closed map that is not bounded necessarily has a domain smaller than $X$.
 
 The closed graph theorem and the open mapping principle together decide when a range is closed.
 
@@ -318,7 +316,7 @@ The closed graph theorem and the open mapping principle together decide when a r
 ^prop-41-5
 
 > [!proof]+ Proof
-> *(HW9, Problem 3. Not from lecture; filled in.)* Write $N = N(M)$ and $R = R(M)$ (Definition [[§39 Solving Mx = y#^def-39-1|§39.1]]). By the closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]), $M \in \mathcal{L}(X, Y)$.
+> *(HW9, Problem 3. Not from lecture; filled in.)* Write $N = N(M)$ and $R = R(M)$ (Definitions [[§39 Solving Mx = y#^def-39-2|§39.2]] and [[§39 Solving Mx = y#^def-39-1|§39.1]]). By the closed graph theorem (Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]]), $M \in \mathcal{L}(X, Y)$.
 >
 > **($\Rightarrow$)** Assume $R$ is closed in $Y$. We must produce $a$.
 >
@@ -370,7 +368,7 @@ The closed graph theorem and the open mapping principle together decide when a r
 
 ^pf-41-5
 
-*Uses:* [[§39 Solving Mx = y#^def-39-1|Def. §39.1]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]], [[§39 Solving Mx = y#^def-39-5|Def. §39.5]]
+*Uses:* [[§39 Solving Mx = y#^def-39-2|Def. §39.2]], [[§39 Solving Mx = y#^def-39-1|Def. §39.1]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|§41.4]], [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-1|§41.1]], [[§39 Solving Mx = y#^def-39-5|Def. §39.5]]
 
 > [!remark] Remark: What Each Direction of the Closed Range Criterion Uses
 > *(Not from lecture.)* The direction ($\Leftarrow$) uses only that $M$ is closed and $X$ is complete: $Y$ may be any normed linear space, and the same argument works for a closed map with domain $D(M) \subset X$, since then $z_k \in D(M)$ and closedness gives $z \in D(M)$. The direction ($\Rightarrow$) uses the completeness of both spaces, through the open mapping principle. In terms of the induced map of Theorem [[§39 Solving Mx = y#^thm-39-1|§39.1]], the inequality says $\|[x]\| \le a\, \|M_0 [x]\|$: the inverse of $M_0 : X/N \to R(M)$ is bounded.

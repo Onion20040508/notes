@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 42.6", "Banach–Steinhaus", "Lax §15.2, Thm 6"]
+aliases: ["MATH 556 42.7", "Banach–Steinhaus", "Lax §15.2, Thm 6"]
 tags: [functional-analysis, hub]
 ---
 ![[§42 Uniform Boundedness and Approximation#^thm-42-7]]

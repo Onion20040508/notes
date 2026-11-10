@@ -8,18 +8,18 @@ tags: [chapter, quantum-field-theory]
 # C1b Classical Field Theory
 ← [[· C1a Preliminaries]] · ↑ [[Quantum Field Theory]] · [[· C2a The Quantum Scalar Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (29), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (35), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (3), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (4), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (2), [[· CA Mathematical Methods|CA Mathematical Methods]] (32), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (3)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (23), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (13), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (25), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (108), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (93), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (26), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (32), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (1), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (3), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (7), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (9), [[· CA Mathematical Methods|CA Mathematical Methods]] (3), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (1)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (29), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (35), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (14), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (4), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (3), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (4), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (5), [[· CA Mathematical Methods|CA Mathematical Methods]] (33), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (3)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (24), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (13), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (25), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (108), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (93), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (26), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (32), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (1), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (3), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (7), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (9), [[· CA Mathematical Methods|CA Mathematical Methods]] (3), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (1)
 
 ## Sections
-- [[§C1b.1 Fields and Their Transformation Laws]] — 
-- [[§C1b.2 The Action Principle and the Euler–Lagrange Equations]] — 
-- [[§C1b.3 Mass Dimension, Locality and Power Counting]] — 
-- [[§C1b.4 Hamiltonian Field Theory]] — 
-- [[§C1b.5 Noether's Theorem]] — 
-- [[§C1b.6 Conserved Charges and Internal Symmetries]] — 
-- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum]] — 
-- [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor]] — 
+- [[§C1b.1 Fields and Their Transformation Laws]] — PS 2.1, 3.1; Yu 1.6.2; 513 notes Ch. 2, 3, 7
+- [[§C1b.2 The Action Principle and the Euler–Lagrange Equations]] — PS 2.2, 3.1; Yu 1.6; 513 notes Ch. 2, 3
+- [[§C1b.3 Mass Dimension, Locality and Power Counting]] — PS 2.2, 3.1; Yu 1.2, 1.6.2; 513 notes Ch. 2
+- [[§C1b.4 Hamiltonian Field Theory]] — PS 2.2; Yu 1.6; 513 notes Ch. 3
+- [[§C1b.5 Noether's Theorem]] — PS 2.2, 3.4; Yu 1.6.2; 513 notes Ch. 3
+- [[§C1b.6 Conserved Charges and Internal Symmetries]] — PS 2.2; Yu 1.7.1; 513 notes Ch. 3
+- [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum]] — PS 2.2; Yu 1.7.1–1.7.3; 513 notes Ch. 3
+- [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor]] — PS 2.2; Yu 1.7.1–1.7.3; 513 notes Ch. 3
 
 ## Principles
 - [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^pr-c1b-2-3|§C1b.2.3]] Stationary Action for Fields

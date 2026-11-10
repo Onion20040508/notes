@@ -15,7 +15,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 
 ## Gaussian integrals
 
-*Recall* ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]): for $\operatorname{Re}a > 0$ and complex $b$, $\int d\xi\,e^{-a\xi^2 + b\xi} = \sqrt{\pi/a}\,e^{b^2/4a}$ with the principal root, extended by the identity theorem from real $a$; on the imaginary axis as the Fresnel limit $\operatorname{Re}a \to 0^+$. Same result, same argument: the home stays there.
+*Recall* ([[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]]): for $\operatorname{Re}a > 0$ and complex $b$, $\int d\xi\,e^{-a\xi^2 + b\xi} = \sqrt{\pi/a}\,e^{b^2/4a}$ with the principal root, extended by the identity theorem from real $a$; on the imaginary axis as the Fresnel limit $\operatorname{Re}a \to 0^+$. The home of the Fresnel limit and of the propagator that uses it stays there. For $\operatorname{Re}a > 0$ the formula is proved again in Step 2 of [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^der-ca-5-1|Derivation §CA.5.1]] below, from the real Gaussian integral of the Math vault and Cauchy's theorem, so that this chapter rests on no physics note.
 
 > [!theorem] Theorem §CA.5.1: Gaussian Integrals in n Dimensions; Schwinger Parametrization
 > 1. For $\operatorname{Re}s > 0$ and $\mathbf x \in \mathbb R^n$,
@@ -24,7 +24,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 > \int\frac{d^np}{(2\pi)^n}\,e^{-s\mathbf p^2 + i\mathbf p\cdot\mathbf x} = \frac{1}{(4\pi s)^{n/2}}\,e^{-\mathbf x^2/4s} .
 > $$
 >
-> 2. For $\operatorname{Re}A > 0$ and $\nu > 0$, $\dfrac1A = \displaystyle\int_0^\infty ds\,e^{-sA}$ and $\dfrac{1}{A^\nu} = \dfrac{1}{\Gamma(\nu)}\displaystyle\int_0^\infty ds\,s^{\nu - 1}e^{-sA}$.
+> 2. For $\operatorname{Re}A > 0$ and $\nu > 0$, $\dfrac1A = \displaystyle\int_0^\infty ds\,e^{-sA}$ and $\dfrac{1}{A^\nu} = \dfrac{1}{\Gamma(\nu)}\displaystyle\int_0^\infty ds\,s^{\nu - 1}e^{-sA}$, where $\Gamma(\nu) \equiv \int_0^\infty du\,u^{\nu - 1}e^{-u}$ is the Gamma function (the same definition as [[§B4.1 Probability Distributions and the Gaussian#^def-b4-1-5|TH Def. §B4.1.5]]).
 >
 > *Source: the user's PHY 513 notes, App. A §A.6 (eq. (gaussianN)), Ch. 2 §2.2 (Step 3 of Derivation "The relativistic amplitude in closed form")*
 
@@ -33,13 +33,33 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 > [!derivation]- Derivation
 > **Step 1** (factorize). $\mathbf p^2 = \sum_kp_k^2$ and $\mathbf p\cdot\mathbf x = \sum_kp_kx_k$, so the integrand is a product of $n$ one-dimensional integrands and the integral is the product $\prod_{k=1}^n\int\frac{dp_k}{2\pi}e^{-sp_k^2 + ip_kx_k}$ (absolutely convergent since $\operatorname{Re}s > 0$).
 >
-> **Step 2** (one factor). [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]] with $a = s$, $b = ix_k$: $\frac{1}{2\pi}\sqrt{\frac\pi s}\,e^{(ix_k)^2/4s} = \frac{1}{\sqrt{4\pi s}}\,e^{-x_k^2/4s}$.
+> **Step 2** (one factor: the Gaussian integral with complex $a$ and $b$). For $\operatorname{Re}a > 0$ and complex $b$, $\int_{-\infty}^{\infty}d\xi\,e^{-a\xi^2 + b\xi} = \sqrt{\pi/a}\,e^{b^2/4a}$ with the principal root, in three moves.
+>
+> *(a) Real $a > 0$, $b = 0$.* $\int_{-\infty}^{\infty}e^{-x^2}dx = \sqrt\pi$ ([[§25 Change of Variables on General Domains#^ex-25-4|452 Example §25.4]]); the substitution $x = \sqrt a\,\xi$, $dx = \sqrt a\,d\xi$, gives $\int_{-\infty}^{\infty}e^{-a\xi^2}d\xi = \sqrt{\pi/a}$.
+>
+> *(b) Real $a > 0$, complex $b$.* Complete the square with $c = b/2a$: $-a\xi^2 + b\xi = -a(\xi - c)^2 + b^2/4a$ (expand: $-a\xi^2 + 2ac\xi - ac^2 + b^2/4a$, and $ac^2 = b^2/4a$). So $\int_{-R}^{R}e^{-a\xi^2 + b\xi}d\xi = e^{b^2/4a}\int_{-R - c}^{R - c}e^{-a\zeta^2}d\zeta$ with $\zeta = \xi - c$, the integral taken along the horizontal segment from $-R - c$ to $R - c$. The function $e^{-a\zeta^2}$ is analytic in the whole plane, so by Cauchy's theorem ([[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]) on the parallelogram with vertices $-R$, $R$, $R - c$, $-R - c$,
+>
+> $$
+> \int_{-R - c}^{R - c}e^{-a\zeta^2}d\zeta = \int_{-R}^{R}e^{-a\zeta^2}d\zeta + \int_{R}^{R - c}e^{-a\zeta^2}d\zeta - \int_{-R}^{-R - c}e^{-a\zeta^2}d\zeta .
+> $$
+>
+> On the two sides $\zeta = \pm R - \sigma c$, $0 \le \sigma \le 1$, and $\operatorname{Re}\zeta^2 = (\pm R - \sigma\operatorname{Re}c)^2 - \sigma^2(\operatorname{Im}c)^2 \ge (R - |c|)^2 - |c|^2$ for $R > |c|$, so $|e^{-a\zeta^2}| \le e^{-a(R - |c|)^2 + a|c|^2}$ and each side, of length $|c|$, contributes at most $|c|\,e^{-a(R - |c|)^2 + a|c|^2} \to 0$ (ML, [[§CA.4 Contour Integration#^thm-ca-4-1|Theorem §CA.4.1]]). As $R \to \infty$: $\int_{-\infty}^{\infty}e^{-a\xi^2 + b\xi}d\xi = e^{b^2/4a}\sqrt{\pi/a}$ by (a).
+>
+> *(c) Complex $a$, $\operatorname{Re}a > 0$.* Write $a = |a|e^{i\theta}$ with $|\theta| < \frac\pi2$, and rotate the path: on the ray $\xi = \rho e^{-i\theta/2}$ the exponent $a\xi^2 = |a|\rho^2$ is real. The integrand is analytic in the whole plane, so by Cauchy's theorem the integral over $[-R, R]$ equals the integral over the rotated segment from $-Re^{-i\theta/2}$ to $Re^{-i\theta/2}$ plus the two arcs $\xi = \pm Re^{i\varphi}$ that join their ends, with $\varphi$ between $0$ and $-\theta/2$. On the arcs $\operatorname{Re}(a\xi^2) = |a|R^2\cos(\theta + 2\varphi) \ge |a|R^2\cos\theta$, because $\theta + 2\varphi$ lies between $\theta$ and $0$; so the integrand is at most $e^{-|a|R^2\cos\theta + |b|R}$ and each arc, of length at most $\frac\pi4R$, tends to $0$ (ML). On the rotated line put $\xi = e^{-i\theta/2}x$, $d\xi = e^{-i\theta/2}dx$, $x$ real:
+>
+> $$
+> \int_{-\infty}^{\infty}d\xi\,e^{-a\xi^2 + b\xi} = e^{-i\theta/2}\int_{-\infty}^{\infty}dx\,e^{-|a|x^2 + be^{-i\theta/2}x} = e^{-i\theta/2}\sqrt{\frac{\pi}{|a|}}\,\exp\frac{b^2e^{-i\theta}}{4|a|} = \sqrt{\frac\pi a}\,e^{b^2/4a} ,
+> $$
+>
+> by (b) with $|a|$ and $be^{-i\theta/2}$ in place of $a$ and $b$; $\sqrt a = \sqrt{|a|}\,e^{i\theta/2}$ is the principal root and $e^{-i\theta}/|a| = 1/a$. This is the statement of [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]], proved there by analytic continuation in $a$.
+>
+> With $a = s$, $b = ix_k$: $\int\frac{dp_k}{2\pi}e^{-sp_k^2 + ip_kx_k} = \frac{1}{2\pi}\sqrt{\frac\pi s}\,e^{(ix_k)^2/4s} = \frac{1}{\sqrt{4\pi s}}\,e^{-x_k^2/4s}$.
 >
 > **Step 3** (multiply). $\prod_k(4\pi s)^{-1/2}e^{-x_k^2/4s} = (4\pi s)^{-n/2}e^{-\mathbf x^2/4s}$.
 >
 > **Step 4** (part 2, $\nu = 1$). $\int_0^\infty e^{-sA}ds = \bigl[-e^{-sA}/A\bigr]_0^\infty = 1/A$; the boundary term at $\infty$ vanishes because $|e^{-sA}| = e^{-s\operatorname{Re}A}$.
 >
-> **Step 5** (part 2, general $\nu$). For real $A > 0$ substitute $u = sA$, $ds = du/A$: $\int_0^\infty s^{\nu-1}e^{-sA}ds = A^{-\nu}\int_0^\infty u^{\nu-1}e^{-u}du = \Gamma(\nu)A^{-\nu}$ ([[§B4.1 Probability Distributions and the Gaussian#^def-b4-1-5|TH Def. §B4.1.5]]). Both sides are analytic in $A$ on $\operatorname{Re}A > 0$ (principal branch of $A^{-\nu}$), so they agree there ([[§CA.4 Contour Integration#^thm-ca-4-3|Theorem §CA.4.3]]).
+> **Step 5** (part 2, general $\nu$). For real $A > 0$ substitute $u = sA$, $ds = du/A$: $\int_0^\infty s^{\nu-1}e^{-sA}ds = A^{-\nu}\int_0^\infty u^{\nu-1}e^{-u}du = \Gamma(\nu)A^{-\nu}$ (the definition of $\Gamma$ in the statement). Both sides are analytic in $A$ on $\operatorname{Re}A > 0$ (principal branch of $A^{-\nu}$), so they agree there ([[§CA.4 Contour Integration#^thm-ca-4-3|Theorem §CA.4.3]]).
 >
 > **What the derivation shows.**
 > - With $s$ read as a proper time, $e^{-s\mathbf p^2}$ is a heat kernel; Schwinger's trick trades a denominator that couples the components for an exponential that factorizes → [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^rem-ca-5-1|Remark: Why the parametrization helps]].
@@ -47,7 +67,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 
 ^der-ca-5-1
 
-*Uses:* [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]], [[§B4.1 Probability Distributions and the Gaussian#^def-b4-1-5|TH Def. §B4.1.5]], [[§CA.4 Contour Integration#^thm-ca-4-3|Theorem §CA.4.3]]
+*Uses:* [[§25 Change of Variables on General Domains#^ex-25-4|452 Example §25.4]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]], [[§CA.4 Contour Integration#^thm-ca-4-1|Theorem §CA.4.1]], [[§CA.4 Contour Integration#^thm-ca-4-3|Theorem §CA.4.3]]
 
 > [!remark] Remark: Why the parametrization helps
 > Schwinger's trick trades a denominator, which couples the components of $\mathbf p$ through $\mathbf p^2 + m^2$, for an exponential, which factorizes. Every momentum integral then becomes a product of one-dimensional Gaussians, and the remaining single integral over $s$ is where the special function appears: for the Euclidean propagator it is $\int ds\,s^{-2}e^{-sm^2 - R^2/4s}$, a $K_1$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]]). With $s$ read as a proper time, $e^{-s\mathbf p^2}$ is a heat kernel, the Euclidean version of the free propagator of [[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]]; loop integrals (the second semester, planned: PHY 513 Lecture 17, slide 26) are done the same way.
@@ -80,7 +100,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 > I \simeq f(p_0)\,e^{\lambda\Phi(p_0)}\int_{-\infty}^{\infty}du\,e^{-\frac12\lambda|\Phi''(p_0)|u^2} = f(p_0)\,e^{\lambda\Phi(p_0)}\sqrt{\frac{2\pi}{\lambda|\Phi''(p_0)|}},
 > $$
 >
-> by [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]] with real $a = \frac12\lambda|\Phi''|$.
+> by the real Gaussian integral ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^der-ca-5-1|Derivation §CA.5.1]], Step 2 (a)) with $a = \frac12\lambda|\Phi''|$.
 >
 > **Step 3** (steepest descent: move the contour). By Cauchy's theorem ([[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]) move the real line through $p_0$; by hypothesis no singularity is crossed and the ends contribute nothing.
 >
@@ -95,7 +115,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 
 ^der-ca-5-2
 
-*Uses:* [[§C4.1 Propagators#^thm-c4-1-3|QM Theorem §C4.1.3]], [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]
+*Uses:* [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^der-ca-5-1|Derivation §CA.5.1]] (Step 2), [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]]
 
 > [!remark] Remark: When the saddle sits on a branch cut
 > Then $\Phi$ is not analytic at $p_0$, and part 2 does not apply as stated. Wrap the contour around the cut instead ([[§CA.4 Contour Integration#^thm-ca-4-8|Theorem §CA.4.8]]): the discontinuity is an integral along the cut with a *real* exponent, to which Laplace's method (part 1) applies directly. The maximum of that real exponent is the same point, and the two answers agree. This is the situation of the two-point functions outside the light cone ([[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^ex-ca-5-1|Example §CA.5.1]] and the figure of [[§CA.4 Contour Integration|§CA.4]]).
@@ -237,6 +257,7 @@ The two-point functions of the free field are Gaussian integrals in disguise, ev
 > - The $n$-dimensional Gaussian with $s = it/2m$ is the free nonrelativistic propagator ([[§C4.1 Propagators#^thm-c4-1-4|QM Theorem §C4.1.4]]); with $s$ real it is the heat kernel of diffusion ([[§B4.2 Random Walks, the Central Limit Theorem and Diffusion#^thm-b4-2-7|TH Theorem §B4.2.7]]). [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]] uses it for the single-particle amplitude, and QFT C11 (planned) for Gaussian path integrals.
 > - The same $K_\nu$ counts the particles produced by a source switched on over a time $T$ ([[§C2b.8 Particle Production by a Classical Source#^ex-c2b-8-1|Example §C2b.8.1]]): both integrate over the mass shell in hyperbolic variables.
 > - Laplace's method (Theorem §CA.5.2) at the large parameter $N^2$ solves the eigenvalue gas of a random matrix: it gives the semicircle as the saddle point ([[§R3.4 The Semicircle Law II꞉ Stieltjes Transform and Coulomb Gas#^thm-r3-4-5|Thesis Thm. §R3.4.5]]) and the free energy of the gas pushed against a wall, which sets the probability that a random mass matrix has no tachyon ([[§R3.5 Edges and Extremes꞉ The Smallest Eigenvalue#^thm-r3-5-2c|Thesis Thm. §R3.5.2c]], [[§R3.5 Edges and Extremes꞉ The Smallest Eigenvalue#^thm-r3-5-3|Thesis Thm. §R3.5.3]]).
-> - **Used in** (C1a–C1b places): Theorem §CA.5.1 — the nonrelativistic amplitude ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]]); Def. §CA.5.1 and Theorem §CA.5.3 — the relativistic amplitude at spacelike separation and its leak ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]], [[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|Theorem §C1a.3.7]]); Theorem §CA.5.2, Remark: When the saddle sits on a branch cut, and Example §CA.5.1 — the saddle-point route to the leak ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|Theorem §C1a.3.7]]); Theorem §CA.5.4 — the timelike amplitude ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-10|Theorem §C2b.3.10]]).
+> - **Used in** (C1a–C1b places): Theorem §CA.5.1 — the nonrelativistic amplitude ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-4|Theorem §C1a.3.4]]); Def. §CA.5.1 and Theorem §CA.5.3 — the relativistic amplitude at spacelike separation and its leak ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-8|Theorem §C2b.3.8]]); Theorem §CA.5.2, Remark: When the saddle sits on a branch cut, and Example §CA.5.1 — the saddle-point route to the leak ([[§C1a.3 Causal Structure and the Causality of a Single Particle#^thm-c1a-3-7|Theorem §C1a.3.7]]); Theorem §CA.5.4 — the timelike amplitude ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-10|Theorem §C2b.3.10]]).
 > - **Used in** (Electromagnetism C places): Def. §CA.5.1 and Theorems §CA.5.3–§CA.5.4 — modified Bessel functions in cylindrical boundary-value problems: the four kinds of Bessel function, the separated solutions, and what boundary-value problems need of them ([[§C6.3 Separation in Cylindrical and Polar Coordinates#^def-c6-3-1|EM Def. §C6.3.1]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-1|EM Theorem §C6.3.1]], [[§C6.3 Separation in Cylindrical and Polar Coordinates#^thm-c6-3-2|EM Theorem §C6.3.2]]).
+> - **Used in** (C2b places): Def. §CA.5.1 — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-10|Theorem §C2b.3.10]], [[§C2b.8 Particle Production by a Classical Source#^ex-c2b-8-1|Example §C2b.8.1]]; Theorem §CA.5.1 — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]]; Theorem §CA.5.3 — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-9|Theorem §C2b.3.9]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|Theorem §C2b.7.4]], [[§C2b.8 Particle Production by a Classical Source#^ex-c2b-8-1|Example §C2b.8.1]]; Theorem §CA.5.4 — [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]]; Example §CA.5.1 — [[§C2b.3 Explicit Forms of the Wightman Function#^rem-c2b-3-1|§C2b.3, Remark: What the two regimes say]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]].
 > - Wick's vacuum values have the form of the moment formula of a Gaussian (Isserlis), the sum over pairings of products of covariances — [[§CA.7 Pairings, Diagrams and Symmetry Factors#^rem-ca-7-1|§CA.7, ★ Remark: The same sum is the moment formula of a Gaussian]].

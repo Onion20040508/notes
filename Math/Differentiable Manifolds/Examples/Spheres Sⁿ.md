@@ -13,7 +13,7 @@ The unit sphere $S^n = \{x \in \mathbb{R}^{n+1} \mid \lvert x \rvert = 1\}$, the
 - The isotropy of the north pole under $\mathrm{SO}(3)$ is $\mathrm{SO}(2)$ ([[§14 Homogeneous Spaces#^ex-14-2|§14]])
 - $S^2 \cong \mathrm{SO}(3)/\mathrm{SO}(2)$ as a homogeneous space ([[§14 Homogeneous Spaces#^ex-14-5|§14]])
 - $\mathbb{CP}^1$ is homeomorphic to $S^2$, via stereographic projection ([[§18 Projective Spaces as Smooth Manifolds#^prop-18-4|§18]])
-- Homeomorphic does not imply diffeomorphic: Milnor's exotic $7$-spheres ([[§19 Smooth Functions and Smooth Maps#^rem-19-4|§19]])
+- Homeomorphic does not imply diffeomorphic: Milnor's exotic $7$-spheres ([[§19 Smooth Functions and Smooth Maps#^rem-19-5|§19]])
 - $S^7$ carries smooth structures not diffeomorphic to the standard one ([[§19 Smooth Functions and Smooth Maps#^rem-19-8|§19]])
 - $S^n$ is a regular level set of $\sum x_i^2$, with $T_pS^n = p^\perp$ ([[§25 The Geometric Tangent Space#^ex-25-1|§25]])
 - Dimension checks: $\dim S^2 = 3 - 1$ and $\dim S^{2n+1} = (n+1)^2 - n^2$ ([[§25 The Geometric Tangent Space#^rem-25-9|§25]])
@@ -42,7 +42,7 @@ The unit sphere $S^n = \{x \in \mathbb{R}^{n+1} \mid \lvert x \rvert = 1\}$, the
 ![[§18 Projective Spaces as Smooth Manifolds#^prop-18-4]]
 
 ## Homeomorphic does not imply diffeomorphic: Milnor's exotic $7$-spheres
-![[§19 Smooth Functions and Smooth Maps#^rem-19-4]]
+![[§19 Smooth Functions and Smooth Maps#^rem-19-5]]
 
 ## $S^7$ carries smooth structures not diffeomorphic to the standard one
 ![[§19 Smooth Functions and Smooth Maps#^rem-19-8]]

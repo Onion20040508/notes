@@ -17,14 +17,17 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 > $$
 > (D) \qquad \begin{cases} -\Delta u(x) = f(x), & x \in \Omega, \\ \phantom{-\Delta} u(x) = 0, & x \in \partial\Omega, \end{cases} \qquad \Delta = \partial_{x_1}^2 + \cdots + \partial_{x_n}^2 .
 > $$
->
-> A **classical solution** is a $u \in C^2(\overline{\Omega})$ satisfying both equations pointwise.
 
 ^def-34-1
 
 > [!remark]- Connections
 > - Classical uniqueness for the Dirichlet problem, by [[Green's First Identity|Green's first identity]]: [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^ex-28-1|452 Ex. §28.1]]; the Dirichlet problem for Laplace's equation in fluid flow, [[§29 Conservation of Mass and Laplace's Equation#^rem-29-4|452 §29]].
 > - The same problem in electrostatics (Poisson's equation with prescribed boundary potential), uniqueness of classical solutions: [[§B3.1 Laplace's Equation and the Uniqueness Theorems#^thm-b3-1-3|EM Theorem §B3.1.3]].
+
+> [!definition] Definition §34.2: Classical Solution of $(D)$
+> Let $\Omega \subset \mathbb{R}^n$ be a bounded domain and $f$ a function on $\Omega$. A **classical solution** of the Dirichlet problem $(D)$ (Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|§34.1]]) is a $u \in C^2(\overline{\Omega})$ satisfying both equations of $(D)$ pointwise.
+
+^def-34-2
 
 > [!remark] Remark: Where the Equation Comes From
 > The heat equation $(\partial_t - \mu\Delta) u = f(x)$, $\mu > 0$, describes the temperature $u(x,t)$ in a piece of material occupying $\Omega$, with a time-independent heat source $f$; the term $\mu\Delta u$ is diffusion. Hold the boundary at temperature $0$, keep heating, and wait: the temperature settles to an equilibrium, which no longer depends on $t$, so $\partial_t u = 0$ and $-\mu\Delta u = f$. (Absorbing $\mu$ into $f$ gives $(D)$.) So $(D)$ describes the equilibrium state of a heated piece of material, $u$ the temperature and $f$ the heat source. If the model is right, there should be exactly one equilibrium. Hence the question: *does $(D)$ have a unique solution for every $f$?*
@@ -46,7 +49,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 ^rem-34-2
 
 > [!theorem] Proposition §34.1: Classical Solutions Satisfy the Weak Equation
-> Let $u \in C^2(\overline{\Omega})$ be a classical solution of $(D)$ with $f$ continuous. Then
+> Let $u \in C^2(\overline{\Omega})$ be a classical solution of $(D)$ (Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|§34.2]]) with $f$ continuous. Then
 >
 > $$
 > \int_\Omega \nabla u(x) \cdot \nabla v(x)\, dx = \int_\Omega f(x)\, v(x)\, dx \qquad \text{for all } v \in C_c^2(\Omega).
@@ -147,10 +150,10 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 >
 > (The first inequality: $|\nabla u \cdot \nabla v| \le |\nabla u|\,|\nabla v|$ pointwise by [[§16 Means and Young's Inequality#^prop-16-1|Cauchy–Schwarz]] in $\mathbb{R}^n$, then [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]] in $L^2$; the second because $\|\nabla u\|_{L^2} \le \|u\|_{H^1_0}$ by the definition of the norm.)
 >
-> **Step 3: the form is coercive.** We want $\alpha > 0$ with $B(u,u) \ge \alpha \|u\|_{H^1_0}^2$, i.e.
+> **Step 3: the form is coercive.** We want $\beta > 0$ with $B(u,u) \ge \beta \|u\|_{H^1_0}^2$ (Definition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-3|§32.3]]), i.e.
 >
 > $$
-> \int_\Omega |\nabla u|^2\, dx \ge \alpha \Bigl( \int_\Omega |u|^2\, dx + \int_\Omega |\nabla u|^2\, dx \Bigr) .
+> \int_\Omega |\nabla u|^2\, dx \ge \beta \Bigl( \int_\Omega |u|^2\, dx + \int_\Omega |\nabla u|^2\, dx \Bigr) .
 > $$
 >
 > By the Poincaré inequality on $H^1_0$ (Corollary [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-12|§33.12]]), $\int_\Omega |u|^2 \le C_0 \int_\Omega |\nabla u|^2$ for all $u \in H^1_0(\Omega)$, with $C_0 = C^2$. Hence
@@ -159,7 +162,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 > \|u\|_{H^1_0}^2 \le C_0 \int_\Omega |\nabla u|^2\, dx + \int_\Omega |\nabla u|^2\, dx = (C_0 + 1)\, B(u, u),
 > $$
 >
-> and $\alpha = \frac{1}{1 + C_0}$ works. Coercivity is the essential step here: $B$ contains only the gradient, and it is Poincaré that controls the missing $L^2$ part.
+> and $\beta = \frac{1}{1 + C_0}$ works. Coercivity is the essential step here: $B$ contains only the gradient, and it is Poincaré that controls the missing $L^2$ part.
 >
 > **Step 4: the functional is bounded.** Let $\ell(v) = \int_\Omega f(x)\, v(x)\, dx$ for $v \in H^1_0(\Omega)$. It is linear, and by Cauchy–Schwarz in $L^2$,
 >
@@ -173,7 +176,7 @@ Throughout, a *bounded domain* is a bounded open set $\Omega \subset \mathbb{R}^
 
 ^pf-34-3
 
-*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|Def. §34.3]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-9|§33.9]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-12|§33.12]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]]
+*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-3|Def. §34.3]], [[§33 Sobolev Spaces and Weak Derivatives#^prop-33-9|§33.9]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§16 Means and Young's Inequality#^prop-16-1|§16.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-3|Def. §32.3]], [[§33 Sobolev Spaces and Weak Derivatives#^cor-33-12|§33.12]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|Def. §26.1]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]], [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]]
 
 > [!remark]- Connections
 > - Used in Electromagnetism for the existence of the Dirichlet Green function of a bounded region: [[§C7.3 Green Functions for Poisson’s Equation#^rem-c7-3-1|EM ★ Remark: Existence of the Dirichlet Green function]]; the symmetric form $B$ is the Dirichlet energy of [[§C6.4★ The Complex Potential and the Variational Principle#^thm-c6-4-3|Dirichlet's principle, EM Theorem §C6.4.3]].
@@ -205,15 +208,20 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 ^def-34-4
 
 > [!definition] Definition §34.5: The Elliptic Dirichlet Problem
-> Let $\Omega \subset \mathbb{R}^n$ be a bounded domain, $A$ a [[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|uniformly elliptic]] matrix on $\Omega$ ([[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|Definition §34.4]]) and $f$ a function on $\Omega$. The **Dirichlet problem** for the elliptic operator $u \mapsto -\operatorname{div}(A\nabla u)$ is
+> Let $\Omega \subset \mathbb{R}^n$ be a bounded domain, $A$ a [[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|uniformly elliptic]] matrix on $\Omega$ (Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|§34.4]]) and $f$ a function on $\Omega$. The **Dirichlet problem** for the elliptic operator $u \mapsto -\operatorname{div}(A\nabla u)$ is
 >
 > $$
 > (E) \qquad \begin{cases} -\operatorname{div}\bigl(A(x)\nabla u(x)\bigr) = f(x), & x \in \Omega, \\ \phantom{-\operatorname{div}\bigl(A(x)\nabla} u(x) = 0, & x \in \partial\Omega, \end{cases} \qquad \operatorname{div}(A\nabla u) = \sum_{i=1}^n \partial_{x_i}\Bigl( \sum_{j=1}^n a_{ij}(x)\, \partial_{x_j} u \Bigr).
 > $$
 >
-> For $A = I$ it is the problem $(D)$ of [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|Definition §34.1]]. When the $a_{ij}$ are in $C^1(\overline{\Omega})$, a **classical solution** is a $u \in C^2(\overline{\Omega})$ satisfying both equations pointwise.
+> For $A = I$ it is the problem $(D)$ of Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-1|§34.1]].
 
 ^def-34-5
+
+> [!definition] Definition §34.6: Classical Solution of $(E)$
+> Let $\Omega \subset \mathbb{R}^n$ be a bounded domain, $A = (a_{ij})$ a uniformly elliptic matrix on $\Omega$ (Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|§34.4]]) with all $a_{ij}$ in $C^1(\overline{\Omega})$, and $f$ a function on $\Omega$. A **classical solution** of the elliptic Dirichlet problem $(E)$ (Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|§34.5]]) is a $u \in C^2(\overline{\Omega})$ satisfying both equations of $(E)$ pointwise. For $A = I$ this is Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-2|§34.2]].
+
+^def-34-6
 
 > [!remark] Remark: Where the Elliptic Equation Comes From
 > *(Not from lecture.)* Heat flows from hot to cold. In a homogeneous, isotropic material the heat flux is $\vec q = -\mu\nabla u$ (Fourier's law), and at equilibrium the heat produced in any region flows out through its boundary, $\operatorname{div}\vec q = f$; this is $-\mu\Delta u = f$, the equation of the remark [[§34 Weak Solutions of the Dirichlet Problem#^rem-34-1|Where the Equation Comes From]] above. In an inhomogeneous or anisotropic material — a composite, a crystal, layered rock — the conductivity depends on the position and on the direction, and Fourier's law becomes $\vec q = -A(x)\nabla u$ with a *conductivity matrix* $A(x)$. Equilibrium is again $\operatorname{div}\vec q = f$, which is $(E)$. Uniform ellipticity says that heat never flows uphill: $\vec q \cdot \nabla u = -(A\nabla u)\cdot\nabla u \le -\alpha |\nabla u|^2$, so the flux always has a component towards lower temperature, and the bound $\Lambda$ says the conductivity is finite.
@@ -221,7 +229,7 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 ^rem-34-7
 
 > [!theorem] Proposition §34.4: Classical Solutions of $(E)$ Satisfy the Weak Equation
-> Let $a_{ij} \in C^1(\overline{\Omega})$, $f$ continuous, and $u \in C^2(\overline{\Omega})$ a classical solution of $(E)$. Then
+> Let $a_{ij} \in C^1(\overline{\Omega})$, $f$ continuous, and $u \in C^2(\overline{\Omega})$ a classical solution of $(E)$ (Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-6|§34.6]]). Then
 >
 > $$
 > \int_\Omega \bigl(A(x)\nabla u(x)\bigr) \cdot \nabla v(x)\, dx = \int_\Omega f(x)\, v(x)\, dx \qquad \text{for all } v \in C_c^2(\Omega).
@@ -238,7 +246,7 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 
 ^pf-34-4
 
-*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|Def. §34.5]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]]
+*Uses:* [[§34 Weak Solutions of the Dirichlet Problem#^def-34-5|Def. §34.5]], [[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|Def. §34.4]], [[§33 Sobolev Spaces and Weak Derivatives#^lem-33-2|§33.2]]
 
 > [!definition] Definition §34.7: Weak Solution of $(E)$
 > Let $f \in L^2(\Omega)$. A function $u \in H^1_0(\Omega)$ is a **weak solution** of $(E)$ if
@@ -257,7 +265,7 @@ The same method works for a whole class of equations, the *elliptic* ones, in wh
 ^thm-34-5
 
 > [!proof]+ Proof
-> (Stated in lecture: the proof goes through as for the Laplacian.) The weak formulation is Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-4|§34.4]]. Let $B(v, u) = \int_\Omega (A(x)\nabla u) \cdot \nabla v\, dx$; it is bilinear. *Bounded:* $|(A\nabla u)\cdot\nabla v| \le \Lambda |\nabla u|\, |\nabla v|$, so $|B(v,u)| \le \Lambda \|u\|_{H^1_0} \|v\|_{H^1_0}$ as in Step 2 above. *Coercive:* $(A\xi)\cdot\xi = \xi^{\mathsf T} A\, \xi$ (a $1 \times 1$ matrix equals its transpose, and $(A\xi)\cdot\xi = \xi^{\mathsf T}A^{\mathsf T}\xi$), so $B(u,u) \ge \alpha \int_\Omega |\nabla u|^2 \ge \frac{\alpha}{1 + C_0} \|u\|_{H^1_0}^2$ by Step 3 above. The functional $\ell$ is as in Step 4. Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]] gives a unique $u$ with $\ell(v) = B(v, u)$ for all $v$, which is the weak equation. Unless $A$ is symmetric, $B$ is not symmetric, and the Riesz theorem alone does not apply.
+> (Stated in lecture: the proof goes through as for the Laplacian.) The weak formulation is Proposition [[§34 Weak Solutions of the Dirichlet Problem#^prop-34-4|§34.4]]. Let $B(v, u) = \int_\Omega (A(x)\nabla u) \cdot \nabla v\, dx$; it is bilinear. *Bounded:* $|(A\nabla u)\cdot\nabla v| \le \Lambda |\nabla u|\, |\nabla v|$, so $|B(v,u)| \le \Lambda \|u\|_{H^1_0} \|v\|_{H^1_0}$ as in Step 2 above. *Coercive:* $(A\xi)\cdot\xi = \xi^{\mathsf T} A\, \xi$ (a $1 \times 1$ matrix equals its transpose, and $(A\xi)\cdot\xi = \xi^{\mathsf T}A^{\mathsf T}\xi$), so $B(u,u) \ge \alpha \int_\Omega |\nabla u|^2 \ge \frac{\alpha}{1 + C_0} \|u\|_{H^1_0}^2$ by Step 3 above, with $\alpha$ the ellipticity constant of Definition [[§34 Weak Solutions of the Dirichlet Problem#^def-34-4|§34.4]]; the coercivity constant is $\beta = \frac{\alpha}{1 + C_0}$. The functional $\ell$ is as in Step 4. Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2|§32.2]] gives a unique $u$ with $\ell(v) = B(v, u)$ for all $v$, which is the weak equation. Unless $A$ is symmetric, $B$ is not symmetric, and the Riesz theorem alone does not apply.
 
 ^pf-34-5
 

@@ -152,7 +152,7 @@ The Feynman propagator, the vacuum expectation value of the time-ordered product
 *Uses:* [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2b.2 The Wightman Function#^thm-c2b-2-1|Theorem §C2b.2.1]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]]
 
 > [!remark] Remark: Why the commutator is exactly the Wightman function
-> Why does $[\phi_1^+, \phi_2^-]$ equal $D_W$? The first factor is essentially the $a$ with an $e^{-ipx}$, the second the $a^\dagger$ with an $e^{ipx_2}$, each under its own momentum integral. The commutator of $a$ and $a^\dagger$ is a delta function, so the two integrals collapse into one, the integral that came with the $a^\dagger$. Steps 1–3 of [[§C6a.5 Normal Ordering and Contractions#^der-c6a-5-2|Derivation §C6a.5.2]] are that answer written out; the vacuum expectation value of the same identity is the definition of $D_W$ ([[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]).
+> Why does $[\hat\phi^+(x), \hat\phi^-(y)]$ equal $D_W(x - y)$? The first factor is $\hat a_{\mathbf p}$ with $e^{-ip\cdot x}$, the second $\hat a^\dagger_{\mathbf q}$ with $e^{+iq\cdot y}$, each under its own momentum integral. The commutator of $\hat a_{\mathbf p}$ and $\hat a^\dagger_{\mathbf q}$ is a delta function, so the two integrals collapse into one, the integral that came with the $\hat a^\dagger$. Steps 1–3 of [[§C6a.5 Normal Ordering and Contractions#^der-c6a-5-2|Derivation §C6a.5.2]] are that answer written out; the vacuum expectation value of the same identity is the definition of $D_W$ ([[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]]).
 >
 > *Source: PHY 513 Lecture 14, transcript (question at 26:29) · the user's PHY 513 notes, Ch. 14 §14.1*
 
@@ -212,7 +212,7 @@ In the vacuum, $\langle0|:\!\hat\phi_1\hat\phi_2\!:|0\rangle = 0$ ([[§C6a.5 Nor
 (PS §4.3, eqs. (4.33)–(4.37); Yu §6.3.1, eqs. (6.154)–(6.160), (6.165).) The general case, $n$ fields, is Wick's theorem ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]).
 
 > [!caution] Caution: Normal ordering here refers to the free modes
-> The split $\hat\phi = \hat\phi^+ + \hat\phi^-$ and the vacuum conditions $\hat\phi^+|0\rangle = 0 = \langle0|\hat\phi^-$ are those of the free field and the free vacuum. The Heisenberg field of the interacting theory has no such split with respect to $|\Omega\rangle$, and none is needed: every statement of §C6a.5–§C6a.11 concerns the free fields $\hat\phi_I$ inside the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]), whose vacuum is $|0\rangle$.
+> The split $\hat\phi = \hat\phi^+ + \hat\phi^-$ and the vacuum conditions $\hat\phi^+|0\rangle = 0 = \langle0|\hat\phi^-$ are those of the free field and the free vacuum. The Heisenberg field of the interacting theory has no such split with respect to $|\Omega\rangle$, and none is needed: every statement of §C6a.5–§C6a.12 concerns the free fields $\hat\phi_I$ inside the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]), whose vacuum is $|0\rangle$.
 >
 > *Source: the user's PHY 513 notes, Ch. 14, introduction ("Throughout this chapter every field is an interaction-picture field") · PS §4.3, p. 88 ("This decomposition can be done for any free field")*
 
@@ -235,8 +235,13 @@ In the vacuum, $\langle0|:\!\hat\phi_1\hat\phi_2\!:|0\rangle = 0$ ([[§C6a.5 Nor
 
 ^cau-c6a-5-3
 
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]] — a product of distributions at one point has in general no value: the contraction at coincident points, "$D_F(0)$", is not a number, while the identities of this section hold after smearing at distinct points (Caution: In what sense these identities hold).
+
 > [!remark]- Connections
 > - Normal ordering the free Hamiltonian removed the zero-point energy; the same reordering, applied to a product of two fields at one point, turns that energy into $D_W$ at coincident points, and applied to time-ordered products it produces $D_F$ — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^rem-c2b-6-3|§C2b.6, Remark: One mechanism, two products]].
-> - Positive frequency goes with annihilation, negative with creation; the same split exists for the vector and Dirac fields (Yu eqs. (6.134)–(6.139)), and Wick's theorem for them uses it with signs for fermions — [[§C2b.1 Heisenberg Fields#^rem-c2b-1-3|§C2b.1, Remark: Negative frequency is creation, not negative energy]], [[§C4.10 The Gupta–Bleuler Condition and Physical Photons#^def-c4-10-1|Def. §C4.10.1]], [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-1|Def. §C5a.10.1]].
+> - Positive frequency goes with annihilation, negative with creation; the same split exists for the vector and Dirac fields (Yu eqs. (6.134)–(6.139)), and Wick's theorem for them uses it with signs for fermions — [[§C2b.1 Heisenberg Fields#^rem-c2b-1-3|§C2b.1, Remark: Negative frequency is creation, not negative energy]], [[§C4.10 The Gupta–Bleuler Condition and Physical Photons#^def-c4-10-1|Def. §C4.10.1]] (vector field), [[§C6d.2 Contractions with External Fermions#^def-c6d-2-1|Def. §C6d.2.1]] (Dirac field; the classical positive- and negative-frequency solutions that the two parts carry are [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost#^def-c5a-10-1|Def. §C5a.10.1]]), Wick's theorem with the fermion signs [[§C6d.3 Wick's Theorem with Fermions and the Contraction Rule#^thm-c6d-3-2|Theorem §C6d.3.2]].
 > - Normal ordering of creation and annihilation operators is the same operation in non-relativistic second quantization; what field theory adds is the relativistic measure $1/2E_{\mathbf p}$ in the commutator — [[§C12.2★ Second Quantization|QM §C12.2★]].
 > - The contraction is the Feynman propagator, which is also a Green's function of the Klein–Gordon operator; this is why the lines of Feynman diagrams can be read both as amplitudes and as inverses of the field equation — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-5|Theorem §C2b.6.5]], [[§C6a.7 Feynman Diagrams for Correlation Functions|§C6a.7]].

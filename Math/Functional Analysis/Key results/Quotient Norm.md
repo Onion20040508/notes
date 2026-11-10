@@ -12,8 +12,8 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses
 - [[§1 Linear Spaces#^def-1-2|Definition §1.2: Linear Subspace]]
-- [[§2 Quotient Spaces and Complements#^prop-2-2|Proposition §2.2: X/Y is a Linear Space]]
 - [[§2 Quotient Spaces and Complements#^def-2-2|Definition §2.2: Equivalence Class]]
+- [[§2 Quotient Spaces and Complements#^prop-2-2|Proposition §2.2: X/Y is a Linear Space]]
 - [[§2 Quotient Spaces and Complements#^def-2-3|Definition §2.3: Quotient Space]]
 - [[§11 Normed Linear Spaces#^def-11-1|Definition §11.1: Norm; Normed Linear Space]]
 - [[§11 Normed Linear Spaces#^def-11-6|Definition §11.6: Closed Subset]]
@@ -23,6 +23,7 @@ tags: [functional-analysis, hub]
 
 ## Used in (Functional Analysis)
 - [[§14 New Normed Spaces from Old#^prop-14-10|Proposition §14.10: The Quotient Seminorm; Closedness is Necessary]]
+- [[§31 Dual Spaces#^prop-31-8|Proposition §31.8: Closed Null Space and Finite-Dimensional Range Imply Bounded]]
 - [[§36 Duality in Normed Spaces#^thm-36-13|Theorem §36.13: The Dual of a Quotient]]
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-11|Corollary §37.11: The Dual of a Subspace: Y' ≅ X'/Y^perp]]
 - [[§39 Solving Mx = y#^thm-39-1|Theorem §39.1: Null Space and the Induced Map]]

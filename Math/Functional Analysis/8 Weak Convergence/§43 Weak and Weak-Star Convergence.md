@@ -64,11 +64,13 @@ Recall that the closed unit ball in $\mathbb{R}^n$ is compact, while the closed 
 > \|x_0 - z_0\| = \max_{\ell \in X',\ \|\ell\| \le 1} |\ell(x_0 - z_0)| = 0 .
 > $$
 >
-> If a sequence could converge weakly to two different limits, the notion would make no sense.
+> So $x_0 = z_0$.
 
 ^pf-43-1
 
 *Uses:* [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]]
+
+If a sequence could converge weakly to two different limits, the notion would make no sense.
 
 ## Examples
 
@@ -194,20 +196,12 @@ The norm bound says how large the weak limit can be; Mazur's theorem says where 
 
 ^thm-43-5
 
-It is important that $\ell$ is *bounded*, and that $K$ is *closed* and convex. The version proved in Chapter 2 (Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]) was for a linear space without a norm, for a convex set $K$ consisting of interior points (“open”) with $y_0 \notin K$; it produced a linear functional, not necessarily bounded. The idea of the proof: since $K$ is closed and $x_0 \notin K$, the distance from $x_0$ to $K$ is positive, so $K$ can be made slightly bigger without reaching $x_0$. Let
-
-$$
-K_\varepsilon = \{ x \in X : \text{there is } y \in K \text{ with } \|x - y\| < \varepsilon \} .
-$$
-
-Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, and Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]] applies; or redo its proof from scratch.
-
-![[m556-43-3.svg]]
-
-*The closed convex set $K$ (blue), its enlargement $K_\varepsilon$ (dashed red), which still misses $x_0$, and a separating hyperplane $\{\ell = a\}$ with $x_0$ strictly on one side and $K$ strictly on the other.*
-
 > [!proof]+ Proof
-> If $K = \varnothing$, take $\ell = 0$ and $a = -1$. Otherwise let $d = \inf_{y \in K} \|x_0 - y\|$; then $d > 0$, since otherwise there are $y_k \in K$ with $y_k \to x_0$, and $K$ closed would give $x_0 \in K$. Fix $0 < \varepsilon < d$ and define $K_\varepsilon$ as above.
+> If $K = \varnothing$, take $\ell = 0$ and $a = -1$. Otherwise let $d = \inf_{y \in K} \|x_0 - y\|$; then $d > 0$, since otherwise there are $y_k \in K$ with $y_k \to x_0$, and $K$ closed would give $x_0 \in K$. Fix $0 < \varepsilon < d$ and let
+>
+> $$
+> K_\varepsilon = \{ x \in X : \text{there is } y \in K \text{ with } \|x - y\| < \varepsilon \} .
+> $$
 >
 > *$K_\varepsilon$ is convex.* If $x_1, x_2 \in K_\varepsilon$ with $\|x_i - y_i\| < \varepsilon$, $y_i \in K$, and $0 \le t \le 1$, then $y = t y_1 + (1-t) y_2 \in K$ and $\|t x_1 + (1-t) x_2 - y\| \le t\|x_1 - y_1\| + (1-t)\|x_2 - y_2\| < \varepsilon$.
 >
@@ -224,6 +218,12 @@ Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, 
 ^pf-43-5
 
 *Uses:* [[§11 Normed Linear Spaces#^prop-11-9|§11.9]], [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]
+
+It is important that $\ell$ is *bounded*, and that $K$ is *closed* and convex. The version proved in Chapter 2 (Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]]) was for a linear space without a norm, for a convex set $K$ consisting of interior points (“open”) with $y_0 \notin K$; it produced a linear functional, not necessarily bounded. The idea of the proof: since $K$ is closed and $x_0 \notin K$, the distance from $x_0$ to $K$ is positive, so $K$ can be made slightly bigger, to the set $K_\varepsilon$ of the proof, without reaching $x_0$. Every point of $K_\varepsilon$ is an interior point, $K_\varepsilon$ is convex, and Theorem [[§8 The Hyperplane Separation Theorem#^thm-8-1|§8.1]] applies; or redo its proof from scratch.
+
+![[m556-43-3.svg]]
+
+*The closed convex set $K$ (blue), its enlargement $K_\varepsilon$ (dashed red), which still misses $x_0$, and a separating hyperplane $\{\ell = a\}$ with $x_0$ strictly on one side and $K$ strictly on the other.*
 
 > [!theorem] Corollary §43.6: Hyperplane Separation over $\mathbb{C}$
 > *(Not from lecture.)* Let $X$ be a normed linear space over $\mathbb{C}$, $K$ a closed convex set in $X$, and $x_0 \notin K$. Then there exist $a \in \mathbb{R}$ and $\ell \in X'$ such that
@@ -266,9 +266,6 @@ The proof of Mazur's theorem below goes through over $\mathbb{C}$ with $\operato
 
 ^thm-43-7
 
-In other words, the weak limit can be approximated in norm by convex combinations of the terms of the sequence.
-(The convex hull of $\{x_n\}$ (Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-4|§3.4]]) consists of the finite convex combinations $\sum_k \lambda_k x_{n_k}$, $\lambda_k \ge 0$, $\sum_k \lambda_k = 1$: they form a convex set containing every $x_n$, and every convex set containing the $x_n$ contains them, by induction on the number of terms. The closed convex hull is the closure of this set; $x_0$ lies in it exactly when every ball about $x_0$ contains such a combination. Taking the first $j$ terms, with some $\lambda_k = 0$ allowed, loses nothing.)
-
 > [!proof]+ Proof of Mazur's theorem
 > Assume $x_n \rightharpoonup x_0$, but $x_0$ is not in the closed convex hull of $\{x_n\}$; call the closed convex hull $K$.
 > ($K$ is closed by definition, and convex: if $z_k \to z$ and $w_k \to w$ with $z_k, w_k$ in the convex hull, then $t z_k + (1-t) w_k$ is in the convex hull and tends to $t z + (1-t) w$.) By the hyperplane separation theorem (Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]) there are $\ell \in X'$ and $a \in \mathbb{R}$ with
@@ -281,7 +278,10 @@ In other words, the weak limit can be approximated in norm by convex combination
 
 ^pf-43-7
 
-*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-4|Def. §3.4]]
+*Uses:* [[§43 Weak and Weak-Star Convergence#^thm-43-5|§43.5]]
+
+In other words, the weak limit can be approximated in norm by convex combinations of the terms of the sequence.
+(The convex hull of $\{x_n\}$ (Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-4|§3.4]]) consists of the finite convex combinations $\sum_k \lambda_k x_{n_k}$, $\lambda_k \ge 0$, $\sum_k \lambda_k = 1$: they form a convex set containing every $x_n$, and every convex set containing the $x_n$ contains them, by induction on the number of terms. The closed convex hull is the closure of this set; $x_0$ lies in it exactly when every ball about $x_0$ contains such a combination. Taking the first $j$ terms, with some $\lambda_k = 0$ allowed, loses nothing.)
 
 ![[m556-43-4.svg]]
 
@@ -290,7 +290,7 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 ## $\sin(mx)$ in $L^p$
 
 > [!example] Example §43.3: $\sin(mx) \rightharpoonup 0$ in $L^p[0, 2\pi]$ for $1 < p < \infty$
-> We know $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]]). Since $|\sin(mx)| \le 1$, also $\sin(mx) \in L^p([0, 2\pi])$ for $1 \le p < \infty$. *Question:* does $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$ for all $1 < p < \infty$? Yes. (The case $p = 1$ is subtler and is excluded here; see [[§43 Weak and Weak-Star Convergence#^xold-rem-43-1|the remark Two Questions for Homework]].)
+> We know $\sin(mx) \rightharpoonup 0$ in $L^2([0, 2\pi])$ (Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]]). Since $|\sin(mx)| \le 1$, also $\sin(mx) \in L^p([0, 2\pi])$ for $1 \le p < \infty$. *Question:* does $\sin(mx) \rightharpoonup 0$ in $L^p([0, 2\pi])$ for all $1 < p < \infty$? Yes. (The case $p = 1$ needs a different argument and is Example [[§43 Weak and Weak-Star Convergence#^ex-43-4|§43.4]].)
 >
 > Recall $(L^p)' = L^{p'}$ with $\frac1p + \frac1{p'} = 1$, so $1 < p' < \infty$ (Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]). We check the two conditions of Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3|§43.3]].
 >
@@ -301,13 +301,48 @@ Mazur's theorem for $e_n \rightharpoonup 0$ in $\ell^2$ (Example [[§43 Weak and
 
 ^ex-43-3
 
-> [!remark] Remark: Two Questions for Homework
-> 1. *$p = 1$.* Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|§19.5]]), so the argument above does not apply; one has to test against $L^\infty$ functions. Homework.
-> 2. *Products.* If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, Hölder gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]] to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$. Finding an example is homework.
+> [!example] Example §43.4: $\sin(mx) \rightharpoonup 0$ in $L^1[0, 2\pi]$
+> *(Posed in lecture as a homework question. The answer is not from lecture; filled in.)* Does $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$? Here $(L^1)' = L^\infty$, and continuous functions are not dense in $L^\infty$ (Proposition [[§19 The Function Spaces Lᵖ(Ω)#^prop-19-5|§19.5]]), so the argument of Example [[§43 Weak and Weak-Star Convergence#^ex-43-3|§43.3]] does not apply; one has to test against $L^\infty$ functions. The answer is yes.
 >
-> Weak limits are useful but limited. A bounded sequence in infinite dimensions need not have a convergent subsequence; under certain circumstances it will have a weakly convergent one, but weak convergence does not commute with nonlinear operations.
+> Let $\ell \in (L^1([0, 2\pi]))'$. By Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]] with $p = 1$ there is $g \in L^\infty([0, 2\pi])$ with $\ell(f) = \int_0^{2\pi} f(x)\, g(x)\, dx$ for all $f \in L^1([0, 2\pi])$. Since $|g(x)| \le \|g\|_{L^\infty}$ for almost every $x$ and the interval has finite length,
+>
+> $$
+> \int_0^{2\pi} |g(x)|^2\, dx \le 2\pi\, \|g\|_{L^\infty}^2 < \infty ,
+> $$
+>
+> so $g \in L^2([0, 2\pi])$. By Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]],
+>
+> $$
+> \ell(\sin(mx)) = \int_0^{2\pi} \sin(mx)\, g(x)\, dx \longrightarrow 0 = \ell(0) \qquad (m \to \infty) .
+> $$
+>
+> As $\ell \in (L^1([0, 2\pi]))'$ is arbitrary, $\sin(mx) \rightharpoonup 0$ in $L^1([0, 2\pi])$. No dense subset is needed: on a bounded interval every $L^\infty$ function already lies in $L^2$, where the convergence is known.
 
-^xold-rem-43-1
+^ex-43-4
+
+> [!example] Example §43.5: Weak Limits Do Not Respect Products
+> *(Posed in lecture as a homework question. The example is not from lecture; filled in.)* If $\{f_n\} \subset L^{p_1}([a,b])$ and $\{g_n\} \subset L^{p_2}([a,b])$, Hölder gives $f_n g_n \in L^p([a,b])$ with $\frac1p = \frac1{p_1} + \frac1{p_2} \le 1$ (apply Theorem [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]] to $|f_n|^p$ and $|g_n|^p$ with the conjugate exponents $\frac{p_1}{p}$ and $\frac{p_2}{p}$). Assume $f_n \rightharpoonup f_0$ in $L^{p_1}$ and $g_n \rightharpoonup g_0$ in $L^{p_2}$. Does $f_n g_n \rightharpoonup f_0 g_0$ in $L^p$? Usually not: weak limits are not closed under nonlinearity; for instance $f_n \rightharpoonup f$ does not imply $f_n^2 \rightharpoonup f^2$.
+>
+> *The example.* Take $[a, b] = [0, 2\pi]$, $p_1 = p_2 = 2$, so $p = 1$, and $f_n(x) = g_n(x) = \sin(nx)$. By Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]], $f_n \rightharpoonup 0$ and $g_n \rightharpoonup 0$ in $L^2([0, 2\pi])$, so $f_0 = g_0 = 0$ and $f_0 g_0 = 0$. The product is
+>
+> $$
+> f_n(x)\, g_n(x) = \sin^2(nx) = \tfrac12 - \tfrac12 \cos(2nx) .
+> $$
+>
+> *Claim: $\sin^2(nx) \rightharpoonup \frac12$ in $L^1([0, 2\pi])$,* where $\frac12$ is the constant function. Let $\ell \in (L^1([0, 2\pi]))'$. As in Example [[§43 Weak and Weak-Star Convergence#^ex-43-4|§43.4]], $\ell(f) = \int_0^{2\pi} f(x)\, g(x)\, dx$ for some $g \in L^\infty([0, 2\pi]) \subset L^2([0, 2\pi])$. The functions $\frac{1}{\sqrt\pi} \cos(kx)$, $k = 1, 2, \ldots$, form an orthonormal set in $L^2([0, 2\pi])$: for $k, j \ge 1$, $\int_0^{2\pi} \cos(kx) \cos(jx)\, dx = \frac12 \int_0^{2\pi} \bigl( \cos((k-j)x) + \cos((k+j)x) \bigr) dx$, which is $0$ for $k \neq j$ and $\pi$ for $k = j$. By Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-2|§43.2]], applied as in Example [[§43 Weak and Weak-Star Convergence#^ex-43-2|§43.2]], $\int_0^{2\pi} \cos(kx)\, g(x)\, dx \to 0$ as $k \to \infty$, in particular along $k = 2n$. Hence
+>
+> $$
+> \ell(\sin^2(nx)) = \tfrac12 \int_0^{2\pi} g(x)\, dx - \tfrac12 \int_0^{2\pi} \cos(2nx)\, g(x)\, dx \longrightarrow \tfrac12 \int_0^{2\pi} g(x)\, dx = \ell\bigl(\tfrac12\bigr) \qquad (n \to \infty) .
+> $$
+>
+> As $\ell$ is arbitrary, the claim follows.
+>
+> *Conclusion.* The constant function $\frac12$ is not the zero element of $L^1([0, 2\pi])$, and weak limits are unique (Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-1|§43.1]](2)). So $f_n g_n$ does not converge weakly to $f_0 g_0 = 0$ in $L^1([0, 2\pi])$, although $f_n \rightharpoonup f_0$ and $g_n \rightharpoonup g_0$ in $L^2([0, 2\pi])$. The same computation shows that $f_n \rightharpoonup 0$ does not imply $f_n^2 \rightharpoonup 0^2$.
+
+^ex-43-5
+
+Weak limits are useful but limited. A bounded sequence in infinite dimensions need not have a convergent subsequence; under certain circumstances it will have a weakly convergent one, but weak convergence does not commute with nonlinear operations.
+
 ## Weak-$\ast$ Convergence
 
 Does every bounded sequence have a weakly convergent subsequence? This is a difficult question; to answer it, the weak limit must be weakened even further.
@@ -351,7 +386,7 @@ On $X'$ two notions are available: weak convergence ($X'$ is a normed space, tes
 *Uses:* [[§37 Separable Duals and Reflexive Spaces#^prop-37-5|§37.5]], [[§37 Separable Duals and Reflexive Spaces#^def-37-1|Def. §37.1]]
 
 > [!example] Example §43.6: Weak-$\ast$ but Not Weak
-> $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ does not imply $\ell_n \rightharpoonup \ell_0$. Let $\ell^\infty_0 = c_0 = \{ (a_1, a_2, \ldots) : \lim_n a_n = 0 \}$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]). Then $(c_0)' = \ell^1$ (homework) and $(\ell^1)' = \ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]). Consider $e_n = (0, \ldots, 0, 1, 0, \ldots) \in \ell^1$.
+> $\ell_n \overset{\ast}{\rightharpoonup} \ell_0$ does not imply $\ell_n \rightharpoonup \ell_0$. Let $\ell^\infty_0 = c_0 = \{ (a_1, a_2, \ldots) : \lim_n a_n = 0 \}$ (Definition [[§29 Sequence and Function Spaces#^def-29-1|§29.1]]). Then $(c_0)' = \ell^1$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-8|§36.8]]) and $(\ell^1)' = \ell^\infty$ (Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]). Consider $e_n = (0, \ldots, 0, 1, 0, \ldots) \in \ell^1$.
 > - $e_n \overset{\ast}{\rightharpoonup} 0$ in $\ell^1 = (c_0)'$: for every $a = (a_1, a_2, \ldots) \in c_0$, $\langle a, e_n \rangle = a_n \to 0$.
 > - $e_n \not\rightharpoonup 0$ in $\ell^1$: for $a = (a_1, a_2, \ldots) \in \ell^\infty = (\ell^1)'$, $\langle e_n, a \rangle = a_n$, which need not converge, since $a$ is only bounded.
 >

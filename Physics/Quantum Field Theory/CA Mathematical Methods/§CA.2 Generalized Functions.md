@@ -68,7 +68,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 >
 > $T_\psi$ is linear, and the bound applied to $\varphi_k - \varphi$ shows that $\varphi_k \to \varphi$ in $\mathcal S$ implies $T_\psi[\varphi_k] \to T_\psi[\varphi]$.
 >
-> **Step 4** (injectivity; sketch). If $T_\psi = 0$, pair it with the test functions $\rho_\varepsilon(x_0 - \cdot)$ of a nascent delta function ([[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 3, with $\rho \in \mathcal D$): $(\psi \ast  \rho_\varepsilon)(x_0) = 0$ for every $x_0$. As $\varepsilon \to 0$, $\psi \ast  \rho_\varepsilon \to \psi$ in $L^1$ on every bounded set (Lebesgue's approximation theorem; Stein & Shakarchi, Real Analysis, Ch. 3), so $\psi = 0$ almost everywhere. For continuous $\psi$ this is the peaked-test-function argument of [[§CA.2 Generalized Functions#^rem-ca-2-1|Remark: What changes from the working delta function]].
+> **Step 4** (injectivity; sketch). If $T_\psi = 0$, pair it with the test functions $\rho_\varepsilon(x_0 - \cdot)$, where $\rho \in \mathcal D$, $\int\rho = 1$ and $\rho_\varepsilon(x) = \varepsilon^{-n}\rho(x/\varepsilon)$ (the family studied below as a nascent delta function, Theorem §CA.2.5, 3; only the notation is used here): $(\psi \ast  \rho_\varepsilon)(x_0) = 0$ for every $x_0$. As $\varepsilon \to 0$, $\psi \ast  \rho_\varepsilon \to \psi$ in $L^1$ on every bounded set (Lebesgue's approximation theorem; Stein & Shakarchi, Real Analysis, Ch. 3), so $\psi = 0$ almost everywhere. For continuous $\psi$ this is the peaked-test-function argument of [[§CA.2 Generalized Functions#^rem-ca-2-1|Remark: What changes from the working delta function]].
 >
 > **Step 5** (derivatives of δ). $|\partial^\alpha\varphi(0)| \le \|\varphi\|_{0,\alpha}$: linear and continuous. Suppose $\partial^\alpha\delta = T_\psi$. On test functions supported away from $0$ both sides give $0$, so by Step 4 (applied on $\mathbb R^n \setminus \{0\}$) $\psi = 0$ almost everywhere, and $T_\psi = 0$. But with $\chi$ of Step 1, $\partial^\alpha\delta[x^\alpha\chi] = (-1)^{|\alpha|}\partial^\alpha(x^\alpha\chi)(0) = (-1)^{|\alpha|}\alpha! \ne 0$. Contradiction.
 >
@@ -81,12 +81,12 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 
 ^der-ca-2-1
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]]
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]]
 
 > [!definition] Definition §CA.2.3: Support and Singular Support
 > A distribution $T$ **vanishes** on an open set $U$ if $T[\varphi] = 0$ for every $\varphi \in \mathcal D$ supported in $U$. Its **support** $\operatorname{supp}T$ is the complement of the largest open set on which $T$ vanishes; its **singular support** $\operatorname{sing\,supp}T$ is the complement of the largest open set on which $T$ equals a smooth function ($T[\varphi] = \int g\varphi$ with $g$ smooth there). Both largest sets exist (a distribution that vanishes, or is smooth, near every point of a union of open sets is so on the union: Hörmander I, §2.2).
 >
-> Examples: $\operatorname{supp}\delta = \operatorname{sing\,supp}\delta = \{0\}$; $\operatorname{supp}\theta = [0, \infty)$, $\operatorname{sing\,supp}\theta = \{0\}$; $\operatorname{supp}\mathcal P\frac1x = \mathbb R$, $\operatorname{sing\,supp}\mathcal P\frac1x = \{0\}$.
+> Examples: $\operatorname{supp}\delta = \operatorname{sing\,supp}\delta = \{0\}$; $\operatorname{supp}\theta = [0, \infty)$, $\operatorname{sing\,supp}\theta = \{0\}$; $\operatorname{supp}\mathcal P\frac1x = \mathbb R$, $\operatorname{sing\,supp}\mathcal P\frac1x = \{0\}$ (the principal value $\mathcal P\frac1x$ is defined below, [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]]).
 >
 > *Source: standard; stated here (Hörmander I, §2.2; Gel'fand & Shilov 1, Ch. I)*
 
@@ -100,7 +100,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 ^thm-ca-2-2
 
 > [!derivation]- Derivation (proof sketch)
-> Take $a = 0$ (translate by [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]).
+> Take $a = 0$: otherwise replace $T$ by its translate $\varphi \mapsto T[\varphi(\cdot - a)]$, which is supported at $0$ and to which the formula for $a = 0$ applies (this is $T(x + a)$ in the notation of Def. §CA.2.8 below, with $A = \mathbb 1$; only this formula is used).
 >
 > **Step 1** (finite order; quoted). Continuity of $T$ on test functions supported in the ball $|x| \le 1$ gives $N$ and $C$ with $|T[\varphi]| \le C\sum_{|\beta| \le N}\sup|\partial^\beta\varphi|$ for all such $\varphi$ (Hörmander I, §2.1).
 >
@@ -118,7 +118,7 @@ The delta function, the Wightman, commutator and Feynman functions, the overlap 
 
 ^der-ca-2-2
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]]
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]]
 
 ## Operations on distributions
 
@@ -227,7 +227,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 > \partial^\alpha T_\varepsilon[\varphi] = (-1)^{|\alpha|}T_\varepsilon[\partial^\alpha\varphi] \longrightarrow (-1)^{|\alpha|}T[\partial^\alpha\varphi] = \partial^\alpha T[\varphi] .
 > $$
 >
-> Likewise $g\varphi \in \mathcal S$ (Leibniz rule and the polynomial bounds), and $gT_\varepsilon[\varphi] = T_\varepsilon[g\varphi] \to T[g\varphi]$.
+> Likewise $g\varphi \in \mathcal S$ (Leibniz rule and the polynomial bounds), and by [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]] $gT_\varepsilon[\varphi] = T_\varepsilon[g\varphi] \to T[g\varphi] = gT[\varphi]$. Both arrows are the definition of the limit ([[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]]) applied to one fixed test function.
 >
 > ⚑ By-product: the exchange of a limit and a derivative, which for functions needs uniform convergence of the derivatives ([[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]]), is automatic here; the price is that the result is only a distribution. Example: $F_n = \sin(nr)/\sqrt n \to 0$, and $F_n' = \sqrt n\cos(nr)$ has no pointwise limit, but $\int\sqrt n\cos(nr)\varphi(r)\,dr = -\frac{1}{\sqrt n}\int\sin(nr)\varphi'(r)\,dr \to 0$ (one integration by parts, boundary terms zero): $F_n' \to 0$ as distributions.
 >
@@ -245,7 +245,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 
 ^der-ca-2-5
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]] (for contrast)
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^def-ca-2-6|Def. §CA.2.6]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-3|Theorem §CA.1.3]] (for contrast)
 
 > [!definition] Definition §CA.2.8: Linear Change of Variables
 > For an invertible real $n \times n$ matrix $A$ and $a \in \mathbb R^n$, the composition of $T$ with $x \mapsto Ax + a$ is the distribution
@@ -329,7 +329,19 @@ Operations on generalized functions are defined by moving them onto the test fun
 > \delta(p^2 - m^2) = \frac{\delta(p^0 - E_{\mathbf p}) + \delta(p^0 + E_{\mathbf p})}{2E_{\mathbf p}} .
 > $$
 >
-> The product with $\theta(\pm p^0)$ is defined because $\theta$ is constant near $\pm E_{\mathbf p} \ne 0$ ([[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 2); it keeps one root: $\int dp^0\,\theta(\pm p^0)\delta(p^2 - m^2)\varphi(p^0, \mathbf p) = \varphi(\pm E_{\mathbf p}, \mathbf p)/2E_{\mathbf p}$. The same result follows from part 3 of Theorem §CA.2.6 in all four variables, since $\nabla(p^2 - m^2) = 2(p^0, -\mathbf p) \ne 0$ on the shell ($p^0 = \pm E_{\mathbf p} \ne 0$).
+> The product with $\theta(\pm p^0)$ is taken before the limit that defines the delta function. Let $\rho \in \mathcal D(\mathbb R)$ vanish outside $[-1, 1]$ with $\int\rho = 1$, and let $0 < \varepsilon \le m^2/2$. On the support of $\rho_\varepsilon(p^2 - m^2)$, $|p^2 - m^2| \le \varepsilon$, so $(p^0)^2 \ge E_{\mathbf p}^2 - \varepsilon \ge E_{\mathbf p}^2/2 > 0$: the support has two pieces, $p^0 \ge E_{\mathbf p}/\sqrt2$ and $p^0 \le -E_{\mathbf p}/\sqrt2$, and $\theta(\pm p^0)$ is constant near each. Hence
+>
+> $$
+> \Delta^\pm_\varepsilon(p) \equiv \theta(\pm p^0)\,\rho_\varepsilon(p^2 - m^2)
+> $$
+>
+> is a smooth function on $\mathbb R^4$, and $\theta(\pm p^0)\,\delta(p^2 - m^2) \equiv \lim_{\varepsilon\to0^+}\Delta^\pm_\varepsilon$. (The same product is the one of [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 2 below, $\theta$ being smooth near the support of $\delta(p^2 - m^2)$; the direct definition keeps this derivation independent of it.) At fixed $\mathbf p$, on the piece $p^0 > 0$ substitute $u = (p^0)^2 - E_{\mathbf p}^2$, so $p^0 = \sqrt{E_{\mathbf p}^2 + u}$ and $dp^0 = du/2\sqrt{E_{\mathbf p}^2 + u}$:
+>
+> $$
+> \int dp^0\,\Delta^+_\varepsilon(p)\,\varphi(p^0, \mathbf p) = \int du\,\rho_\varepsilon(u)\,g_{\mathbf p}(u), \qquad g_{\mathbf p}(u) = \frac{\varphi\bigl(\sqrt{E_{\mathbf p}^2 + u}, \mathbf p\bigr)}{2\sqrt{E_{\mathbf p}^2 + u}} .
+> $$
+>
+> For $|u| \le \varepsilon$, $2\sqrt{E_{\mathbf p}^2 + u} \ge \sqrt2E_{\mathbf p}$, so $g_{\mathbf p}$ is continuous at $u = 0$ and bounded there by $\sup_{p^0}|\varphi(p^0, \mathbf p)|/\sqrt2E_{\mathbf p}$; the integral tends to $g_{\mathbf p}(0) = \varphi(E_{\mathbf p}, \mathbf p)/2E_{\mathbf p}$ ([[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 3, with its closing remark). On the piece $p^0 < 0$ the substitution $p^0 = -\sqrt{E_{\mathbf p}^2 + u}$ gives in the same way $\int dp^0\,\Delta^-_\varepsilon\,\varphi \to \varphi(-E_{\mathbf p}, \mathbf p)/2E_{\mathbf p}$. So the product keeps one root: $\int dp^0\,\theta(\pm p^0)\delta(p^2 - m^2)\varphi(p^0, \mathbf p) = \varphi(\pm E_{\mathbf p}, \mathbf p)/2E_{\mathbf p}$. The same result follows from part 3 of Theorem §CA.2.6 in all four variables, since $\nabla(p^2 - m^2) = 2(p^0, -\mathbf p) \ne 0$ on the shell ($p^0 = \pm E_{\mathbf p} \ne 0$).
 >
 > **Step 2** (tempered). Write $T_\pm[\varphi] = \int d^3p\,\varphi(\pm E_{\mathbf p}, \mathbf p)/2E_{\mathbf p}$. With $|\varphi(p)| \le (1 + |p|)^{-4}\sup_q(1 + |q|)^4|\varphi(q)|$, $|p| \ge |\mathbf p|$ and $1/2E_{\mathbf p} \le 1/2m$,
 >
@@ -337,11 +349,25 @@ Operations on generalized functions are defined by moving them onto the test fun
 > |T_\pm[\varphi]| \le \frac{1}{2m}\int\frac{d^3p}{(1 + |\mathbf p|)^4}\cdot\sup_q(1 + |q|)^4|\varphi(q)| ,
 > $$
 >
-> and the integral is finite ($4\pi\int_0^\infty p^2dp/(1 + p)^4 < \infty$). As in [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], Step 3, $T_\pm$ is continuous on $\mathcal S$.
+> and the integral is finite ($4\pi\int_0^\infty p^2dp/(1 + p)^4 < \infty$). As in [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], Step 3, $T_\pm$ is continuous on $\mathcal S$. The same bound gives the limit on $\mathbb R^4$: by Step 1 the $p^0$-integral of $\Delta^\pm_\varepsilon\varphi$ is at most $\|\rho\|_{L^1}\sup_{p^0}|\varphi(p^0, \mathbf p)|/\sqrt2m \le C(1 + |\mathbf p|)^{-4}$, integrable over $d^3p$ and independent of $\varepsilon$, and it converges at each $\mathbf p$; by dominated convergence $\int d^4p\,\Delta^\pm_\varepsilon\,\varphi \to T_\pm[\varphi]$ for every $\varphi \in \mathcal S(\mathbb R^4)$. So $\theta(\pm p^0)\delta(p^2 - m^2) = T_\pm$ as a limit in $\mathcal S'(\mathbb R^4)$.
 >
-> **Step 3** (invariance, upper shell). For proper orthochronous $\Lambda$, [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]] gives $T_+(\Lambda p)[\varphi] = T_+[\varphi\circ\Lambda^{-1}] = \int\frac{d^3p}{2E_{\mathbf p}}\,\varphi\bigl(\Lambda^{-1}(E_{\mathbf p}, \mathbf p)\bigr)$. The measure $d^3p/2E_{\mathbf p}$ on the upper shell is invariant ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], 2, applied to the function $F = \varphi\circ\Lambda^{-1}$), so this equals $\int\frac{d^3p}{2E_{\mathbf p}}\varphi(E_{\mathbf p}, \mathbf p) = T_+[\varphi]$.
+> **Step 3** (invariance, upper shell). Let $\Lambda$ be proper orthochronous: $\Lambda^{\mathsf T}g\Lambda = g$, $\det\Lambda = 1$, $\Lambda^0{}_0 \ge 1$. By [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], $T_+(\Lambda p)[\varphi] = T_+[\varphi\circ\Lambda^{-1}]$ (since $|\det\Lambda| = 1$), and the claim is $T_+[\varphi\circ\Lambda^{-1}] = T_+[\varphi]$.
 >
-> **Step 4** (lower shell). Let $\psi(p) = \varphi(-p)$. Then $\varphi(-E_{\mathbf p}, \mathbf p) = \psi(E_{\mathbf p}, -\mathbf p)$, and relabelling $\mathbf p \to -\mathbf p$ (Jacobian $1$, $E_{-\mathbf p} = E_{\mathbf p}$; [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]) gives $T_-[\varphi] = T_+[\psi]$. Since $\Lambda$ is linear, $(\varphi\circ\Lambda^{-1})(-p) = \varphi(\Lambda^{-1}(-p)) = (\psi\circ\Lambda^{-1})(p)$, so $T_-[\varphi\circ\Lambda^{-1}] = T_+[\psi\circ\Lambda^{-1}] = T_+[\psi] = T_-[\varphi]$ by Step 3.
+> *(a) The sign of $p^0$ on timelike vectors.* From $\Lambda^{\mathsf T}g\Lambda = g$, $\Lambda^{-1} = g\Lambda^{\mathsf T}g$, hence $\Lambda g\Lambda^{\mathsf T} = g$, whose $00$ component is $(\Lambda^0{}_0)^2 - \sum_i(\Lambda^0{}_i)^2 = 1$. Let $p^2 > 0$ and $p^0 > 0$, so $|\mathbf p| < p^0$. By the Cauchy–Schwarz inequality $\bigl|\sum_i\Lambda^0{}_ip^i\bigr| \le \sqrt{(\Lambda^0{}_0)^2 - 1}\,|\mathbf p| < \Lambda^0{}_0\,p^0$, so $(\Lambda p)^0 = \Lambda^0{}_0p^0 + \sum_i\Lambda^0{}_ip^i > 0$; applied to $-p$, $p^0 < 0$ gives $(\Lambda p)^0 < 0$. (The same fact: [[§B1.3 Causal Structure and Proper Time#^thm-b1-3-1|REL Theorem §B1.3.1]], 2.) Also $(\Lambda p)^2 = p^2$.
+>
+> *(b) The regularized functions are invariant.* Where $\rho_\varepsilon(p^2 - m^2) \ne 0$, $p^2 \ge m^2 - \varepsilon > 0$, so $p$ is timelike and by (a) $\theta((\Lambda p)^0) = \theta(p^0)$; and $\rho_\varepsilon((\Lambda p)^2 - m^2) = \rho_\varepsilon(p^2 - m^2)$ everywhere. Hence $\Delta^+_\varepsilon(\Lambda p) = \Delta^+_\varepsilon(p)$ for all $p$.
+>
+> *(c) Change variables.* Substitute $p = \Lambda q$ ($|\det\Lambda| = 1$, $\Lambda\mathbb R^4 = \mathbb R^4$; [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]], as in Step 1 of Theorem §CA.2.6):
+>
+> $$
+> \int d^4p\,\Delta^+_\varepsilon(p)\,\varphi(\Lambda^{-1}p) = \int d^4q\,\Delta^+_\varepsilon(\Lambda q)\,\varphi(q) = \int d^4q\,\Delta^+_\varepsilon(q)\,\varphi(q) .
+> $$
+>
+> *(d) The limit.* $\varphi\circ\Lambda^{-1} \in \mathcal S$, so by Step 2 the left side tends to $T_+[\varphi\circ\Lambda^{-1}]$ and the right side to $T_+[\varphi]$.
+>
+> ⚑ By-product: written out, $T_+[\varphi\circ\Lambda^{-1}] = T_+[\varphi]$ is $\int\frac{d^3p}{2E_{\mathbf p}}\varphi\bigl(\Lambda^{-1}(E_{\mathbf p}, \mathbf p)\bigr) = \int\frac{d^3p}{2E_{\mathbf p}}\varphi(E_{\mathbf p}, \mathbf p)$: the measure $d^3p/2E_{\mathbf p}$ on the upper shell is invariant → the physics form, with the same argument in $\delta$-function notation, is [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], 2.
+>
+> **Step 4** (lower shell). Let $\psi(p) = \varphi(-p)$. Then $\varphi(-E_{\mathbf p}, \mathbf p) = \psi(E_{\mathbf p}, -\mathbf p)$, and the linear change of variables $\mathbf p \to -\mathbf p$ on $\mathbb R^3$ ($|\det(-\mathbb 1)| = 1$, [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]]; $E_{-\mathbf p} = E_{\mathbf p}$) gives $T_-[\varphi] = T_+[\psi]$. Since $\Lambda$ is linear, $(\varphi\circ\Lambda^{-1})(-p) = \varphi(\Lambda^{-1}(-p)) = (\psi\circ\Lambda^{-1})(p)$, so $T_-[\varphi\circ\Lambda^{-1}] = T_+[\psi\circ\Lambda^{-1}] = T_+[\psi] = T_-[\varphi]$ by Step 3.
 >
 > **Step 5** (light cone: the limit). Steps 1–4 with $x$ in place of $p$ and $\mu$ in place of $m$ define the invariant distributions $T^\mu_\pm[\varphi] = \int d^3x\,\varphi(\pm\sqrt{r^2 + \mu^2}, \mathbf x)/2\sqrt{r^2 + \mu^2}$. As $\mu \to 0^+$ the integrand tends to $\varphi(\pm r, \mathbf x)/2r$ for $r > 0$ and is bounded by $\frac{1}{2r}(1 + r)^{-4}\sup(1 + |q|)^4|\varphi(q)|$, integrable on $\mathbb R^3$ because $\int_{r < 1}d^3x/2r = \pi$. By dominated convergence $T^\mu_\pm[\varphi] \to \int d^3x\,\varphi(\pm r, \mathbf x)/2r$; by [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 1 the limit is tempered.
 >
@@ -358,14 +384,14 @@ Operations on generalized functions are defined by moving them onto the test fun
 
 ^der-ca-2-7
 
-*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-3|Theorem §C2a.4.3]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
+*Uses:* [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], [[§25 Change of Variables on General Domains#^thm-25-6|452 Thm. §25.6]]
 
 ## Products
 
 > [!theorem] Theorem §CA.2.8: Products with Disjoint Singular Supports
-> 1. If $g$ is smooth, $gT$ is defined for every $T \in \mathcal D'$; if moreover every derivative of $g$ grows at most polynomially, $gT \in \mathcal S'$ for every $T \in \mathcal S'$ ([[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]).
+> 1. If $g$ is smooth, $gT$ is defined for every $T \in \mathcal D'$; if moreover every derivative of $g$ grows at most polynomially, $gT \in \mathcal S'$ for every $T \in \mathcal S'$ ([[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]]).
 > 2. If $\operatorname{sing\,supp}S \cap \operatorname{sing\,supp}T = \emptyset$, the product $ST$ is defined, uniquely, by being $gT$ near every point where $S = g$ is smooth and $hS$ near every point where $T = h$ is smooth.
-> 3. In general there is no product: no associative product of distributions extends multiplication by smooth functions and contains δ and $\mathcal P\frac1x$, because $(x\,\delta)\,\mathcal P\frac1x = 0$ while $\delta\,(x\,\mathcal P\frac1x) = \delta$.
+> 3. In general there is no product: no associative product of distributions extends multiplication by smooth functions and contains δ and the principal value $\mathcal P\frac1x$ ([[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]], below), because $(x\,\delta)\,\mathcal P\frac1x = 0$ while $\delta\,(x\,\mathcal P\frac1x) = \delta$.
 >
 > *Source: standard; stated here (Hörmander I, §§2.2, 8.2; L. Schwartz's impossibility theorem in its elementary form) · the user's PHY 513 notes, Ch. 6 §6.2 ("Why this matters beyond tidiness": products)*
 
@@ -380,7 +406,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 >
 > **Step 4** (part 2: consistency; sketch). Where both are smooth, $S = g$ and $T = h$, the two prescriptions agree: $gT[\psi] = \int hg\psi = hS[\psi]$. Hence the result does not depend on the cover or the partition (the full bookkeeping is Hörmander I, §2.2).
 >
-> **Step 5** (part 3: $x\,\mathcal P\frac1x = 1$). By Def. §CA.2.4 and the second form of [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]] applied to $x\varphi(x)$, which vanishes at $0$: $(x\,\mathcal P\frac1x)[\varphi] = \mathcal P\frac1x[x\varphi] = \int_{-L}^{L}\frac{x\varphi(x) - 0}{x}\,dx = \int\varphi = T_1[\varphi]$.
+> **Step 5** (part 3: $x\,\mathcal P\frac1x = 1$). By [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]] and the second form of [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]] applied to $x\varphi(x)$, which vanishes at $0$: $(x\,\mathcal P\frac1x)[\varphi] = \mathcal P\frac1x[x\varphi] = \int_{-L}^{L}\frac{x\varphi(x) - 0}{x}\,dx = \int\varphi = T_1[\varphi]$.
 >
 > **Step 6** (part 3: $x\,\delta = 0$). $(x\,\delta)[\varphi] = \delta[x\varphi] = 0\cdot\varphi(0) = 0$.
 >
@@ -392,7 +418,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 
 ^der-ca-2-8
 
-*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]]
+*Uses:* [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]], [[§CA.2 Generalized Functions#^def-ca-2-5|Def. §CA.2.5]], [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]]
 
 > [!theorem] Theorem §CA.2.9: Products Without a Value: θ·δ, δ² and δ(0)
 > Let $\rho, \sigma \in \mathcal D(\mathbb R)$ be nonnegative with unit integral, $\delta_\varepsilon = \rho_\varepsilon$ and $\theta_\varepsilon(x) = \int_{-\infty}^x\sigma_\varepsilon$.
@@ -558,7 +584,7 @@ Operations on generalized functions are defined by moving them onto the test fun
 >   - Theorem §CA.2.10 (box) and Remark: Point splitting: $(2\pi)^3\delta^3(\mathbf 0) \to V$, normal ordering — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-2|Theorem §C2a.3.2]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-6|Theorem §C2a.3.6]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]], [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-6|Theorem §C2a.5.6]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-7|Theorem §C2b.6.7]].
 >   - Def. §CA.2.10 (principal value): the principal function, dropping $i\varepsilon$ after a Wick rotation — [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-4|Theorem §C2b.5.4]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|Theorem §C2b.7.4]], [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|§C2b.7, Remark: The two-point functions at a glance]].
 >   - Def. §CA.2.11, Theorem §CA.2.11 (operator-valued distributions, kernels): $\hat\phi(f)$, $[\hat\phi, \hat\pi] = i\delta^3$, $[\hat a, \hat a^\dagger] = (2\pi)^3\delta^3$, $\langle0|\hat\phi(x)\hat\phi(y)|0\rangle$ — [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-4|Theorem §C2a.2.4]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-5|Theorem §C2a.4.5]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-8|Theorem §C2a.6.8]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-6|Theorem §C2b.1.6]], [[§C2b.2 The Wightman Function#^thm-c2b-2-2|Theorem §C2b.2.2]].
->   - Theorem §CA.2.3 (integration by parts): the gradient term with fall-off, the zero-point energy density — [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]].
+>   - Theorem §CA.2.3 (integration by parts): the gradient term with fall-off — [[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-4|Theorem §C2a.5.4]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]].
 > - **Used in**, statement by statement (C1a–C1b items):
 >   - Def. §CA.2.1–§CA.2.2 (test functions; distributions): variations and the functional derivative — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^rem-c1b-2-2|§C1b.2, Remark: The functional derivative is a distribution]].
 >   - Theorem §CA.2.1 (regular and singular distributions): δ as a functional derivative — [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^rem-c1b-2-2|§C1b.2, Remark: The functional derivative is a distribution]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-1|Theorem §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-4|Theorem §C1b.4.4]].

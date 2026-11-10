@@ -163,7 +163,7 @@ tags: [differentiable-manifolds, math591]
 
 *(Not from lecture.)* If $S$ has codimension $k$, the normal space has dimension $k$: $\dim T_pM = m$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]]), $\dim \iota_{\ast p}(T_pS) = \dim T_pS = m - k$ because $\iota_{\ast p}$ is injective (Propositions [[§37 Regular Submanifolds#^prop-37-9|§37.9]] and [[§37 Regular Submanifolds#^prop-37-3|§37.3]]), and $\dim T_pM/\iota_{\ast p}(T_pS) = m - (m - k) = k$ by Proposition [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]](3). It needs no metric, unlike the normal vectors of the remark *No Normal Vectors Without a Metric* in [[§37 Regular Submanifolds|§37]]; its dimension is that of the conormal space $N_pS$ (Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]]).
 
-> [!theorem] Proposition §39.2: Normal Spaces Under a Transverse Map
+> [!theorem] Proposition §39.3: Normal Spaces Under a Transverse Map
 > Let $F : M \to N$ be smooth, $S \subseteq N$ a regular submanifold of codimension $k$ with inclusion $\iota$, $p \in F^{-1}(S)$ and $q = F(p)$. Put
 >
 > $$
@@ -181,7 +181,7 @@ tags: [differentiable-manifolds, math591]
 >
 > So if $F \pitchfork S$, then $K_p = j_{\ast p}(T_pF^{-1}(S))$, with $j$ the inclusion of $F^{-1}(S)$ (Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]]) and $\bar F_{\ast p}$ is an isomorphism $T_pM/T_pF^{-1}(S) \cong T_qN/T_qS$ of the normal spaces (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-2|§39.2]]): both have dimension $k$, which is the reason the codimension is preserved.
 
-^prop-39-2
+^prop-39-3
 
 > [!proof]+ Proof
 > *(Not from lecture.)* Write $E = \iota_{\ast q}(T_qS)$, a subspace of $T_qN$ (the image of a linear map), and $\pi_N : T_qN \to T_qN/E$, $\pi_M : T_pM \to T_pM/K_p$ for the projections. $K_p$ is a subspace of $T_pM$, as the preimage of the subspace $E$ under the linear map $F_{\ast p}$: if $F_{\ast p}v, F_{\ast p}v' \in E$, then $F_{\ast p}(v + cv') = F_{\ast p}v + c\,F_{\ast p}v' \in E$. Throughout, two vectors have the same coset iff their difference lies in the subspace (Definition [[§21 Linear Algebra Toolkit#^def-21-6|§21.6]]).
@@ -214,11 +214,11 @@ tags: [differentiable-manifolds, math591]
 >
 > as an isomorphism requires. Read backwards, the isomorphism alone gives $\dim K_p = m - \dim T_qN/E = m - k$: the codimension of $F^{-1}(S)$ in $M$ is the dimension of its normal space $T_pM/K_p$, and transversality makes $F_{\ast p}$ carry that normal space isomorphically onto the normal space of $S$, of dimension $k$.
 
-^pf-39-2
+^pf-39-3
 
 *Uses:* [[§21 Linear Algebra Toolkit#^def-21-6|Def. §21.6]], [[§21 Linear Algebra Toolkit#^prop-21-6|§21.6]], [[§39 Transversality and Lagrange Multipliers#^def-39-1|Def. §39.1]], [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]]
 
-> [!theorem] Corollary §39.3: Special Cases of Transversality
+> [!theorem] Corollary §39.5: Special Cases of Transversality
 > Let $F : M \to N$ be smooth, $\dim M = m$, $\dim N = n$.
 >
 > 1. *A point.* For $c \in N$, $\{c\}$ is a regular submanifold of $N$ of codimension $n$, and $F \pitchfork \{c\}$ if and only if $c$ is a regular value of $F$. In that case Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] returns the regular value theorem, Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]: $F^{-1}(c)$ is a regular submanifold of $M$ of codimension $n$, and $j_{\ast p}(T_pF^{-1}(c)) = \ker F_{\ast p}$ for $p \in F^{-1}(c)$.
@@ -233,7 +233,7 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Theorem 6.30(b), for (2)*
 
-^cor-39-3
+^cor-39-5
 
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)*
@@ -256,7 +256,7 @@ tags: [differentiable-manifolds, math591]
 >
 > smooth because its components are. Its first $k$ components are those of $x_b$ and its last $k'$ those of $x'_b$.
 > - *$H^{-1}(\vec 0) = V \cap S \cap S'$*: $H(q) = \vec 0$ iff $x_b(q) = \vec 0$ and $x'_b(q) = \vec 0$, iff $q \in U \cap S$ and $q \in U' \cap S'$ (Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]](3)).
-> - *$\ker H_{\ast p} = \iota_{\ast p}(T_pS) \cap \iota'_{\ast p}(T_pS')$*: by Proposition [[§36 Submersions#^prop-36-4|§36.4]](1), $H_{\ast p}v = \sum_j dH^j|_p(v)\, \partial/\partial r^j|_{\vec 0}$, which is $0$ iff every coefficient $dH^j|_p(v)$ is $0$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]); by the same formula for $x_b$ and $x'_b$, $(x_b)_{\ast p}v = 0$ iff $dH^j|_p(v) = 0$ for $j \le k$, and $(x'_b)_{\ast p}v = 0$ iff $dH^j|_p(v) = 0$ for $j > k$. So $\ker H_{\ast p} = \ker (x_b)_{\ast p} \cap \ker (x'_b)_{\ast p}$, which is $\iota_{\ast p}(T_pS) \cap \iota'_{\ast p}(T_pS')$ by Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]](4).
+> - *$\ker H_{\ast p} = \iota_{\ast p}(T_pS) \cap \iota'_{\ast p}(T_pS')$*: by Proposition [[§36 Submersions#^prop-36-4|§36.4]](1), $H_{\ast p}v = \sum_j dH^j|_p(v)\, \partial/\partial r^j|_{\vec 0}$, which is $0$ iff every coefficient $dH^j|_p(v)$ is $0$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]); by the same formula for $x_b$ and $x'_b$, $(x_b)_{\ast p}v = 0$ iff $dH^j|_p(v) = 0$ for $j \le k$, and $(x'_b)_{\ast p}v = 0$ iff $dH^j|_p(v) = 0$ for $j > k$. So $\ker H_{\ast p} = \ker (x_b)_{\ast p} \cap \ker (x'_b)_{\ast p}$, which is $\iota_{\ast p}(T_pS) \cap \iota'_{\ast p}(T_pS')$ by Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]](4).
 > - *$H$ is a submersion at $p$*: by the dimension formula for a sum of two subspaces, with $\dim \iota_{\ast p}(T_pS) = n - k$ and $\dim \iota'_{\ast p}(T_pS') = n - k'$ ($\iota_{\ast p}$, $\iota'_{\ast p}$ injective, Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]]) and their sum $T_pN$ by transversality,
 >
 > $$
@@ -269,25 +269,25 @@ tags: [differentiable-manifolds, math591]
 >
 > *(3)* If $F$ is a submersion, then $F_{\ast p}(T_pM) = T_{F(p)}N$ already, so the sum in Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]] is all of $T_{F(p)}N$ at every $p \in F^{-1}(S)$: $F \pitchfork S$. Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]] then makes $F^{-1}(S)$ a regular submanifold of $M$ of the same codimension as $S$.
 
-^pf-39-3
+^pf-39-5
 
-*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§39 Transversality and Lagrange Multipliers#^def-39-1|Def. §39.1]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-10|§37.10]], [[§36 Submersions#^prop-36-4|§36.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
+*Uses:* [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]], [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|§29.10]], [[§37 Regular Submanifolds#^prop-37-3|§37.3]], [[§39 Transversality and Lagrange Multipliers#^def-39-1|Def. §39.1]], [[§36 Submersions#^def-36-4|Def. §36.4]], [[§39 Transversality and Lagrange Multipliers#^thm-39-1|§39.1]], [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§37 Regular Submanifolds#^prop-37-10|§37.10]], [[§36 Submersions#^prop-36-4|§36.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§38 The Regular Value Theorem for Manifolds#^lem-38-1|§38.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]]
 
 > [!remark] Remark: Special Cases and the Euclidean Versions
-> *(Not from lecture.)* Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-3|§39.3]](1) is the manifold version of Corollary [[§26 Transversality#^cor-26-4|§26.4]], and (2) that of Proposition [[§26 Transversality#^prop-26-5|§26.5]]: the codimensions add, as for level sets. For $S = \{c\}$ a point, (3) is Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]: a submersion is transverse to every point, and its fibres are regular submanifolds of codimension $n$.
+> *(Not from lecture.)* Corollary [[§39 Transversality and Lagrange Multipliers#^cor-39-5|§39.5]](1) is the manifold version of Corollary [[§26 Transversality#^cor-26-4|§26.4]], and (2) that of Proposition [[§26 Transversality#^prop-26-5|§26.5]]: the codimensions add, as for level sets. For $S = \{c\}$ a point, (3) is Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3|§38.3]]: a submersion is transverse to every point, and its fibres are regular submanifolds of codimension $n$.
 
 ^rem-39-1
 
 *Assignment 5, Problem 4 (“Revisiting Lagrange multipliers”), in the notation of these notes: the assignment's submanifold $M \subset N$ is here $S \subseteq M$, with $M$ the ambient manifold of dimension $m$; its conormal space $\mathcal{N}_pM$ is $N_pS$ (Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]); and $d(G^j)_p$ is written $dG^j|_p$. The problem: (a) a point is a critical point of the restriction $f = \Phi|_S$ of a smooth function $\Phi$ on $M$ exactly when $d\Phi_p$ is conormal to $S$; (b) for a regular level set $S = G^{-1}(0)$ the differentials $dG^1|_p, \ldots, dG^k|_p$ form a basis of $N_pS$, and the method of Lagrange multipliers follows. The proofs are the submitted solution's, written out.*
 
-> [!theorem] Proposition §39.4: Critical Points of a Restriction
+> [!theorem] Proposition §39.6: Critical Points of a Restriction
 > Let $S \subseteq M$ be a regular submanifold, $\iota : S \to M$ the inclusion, $p \in S$, and $\iota_p^{\ast} : T_p^{\ast}M \to T_p^{\ast}S$ the pullback of covectors (Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]]). Let $\Phi : M \to \mathbb{R}$ be smooth and $f = \Phi \circ \iota = \Phi|_S : S \to \mathbb{R}$ its restriction.
 >
 > 1. $N_pS = \ker \iota_p^{\ast}$.
 > 2. $df_p = \iota_p^{\ast}\big(d\Phi_p\big)$.
 > 3. $p$ is a critical point of $f$ if and only if $d\Phi_p \in N_pS$.
 
-^prop-39-4
+^prop-39-6
 
 > [!proof]+ Proof
 > *(Assignment 5, Problem 4(a).)* The restriction $f = \Phi \circ \iota$ is smooth, as a composite of smooth maps (Lemma [[§37 Regular Submanifolds#^lem-37-5|§37.5]](1) and Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]), so $df_p \in T_p^{\ast}S$ is defined. By Definition [[§34 The Cotangent Space from Germs#^def-34-3|§34.3]] with $F = \iota$ and $F(p) = \iota(p) = p$, the pullback of a covector $\xi \in T_p^{\ast}M$ is the covector on $T_pS$
@@ -304,7 +304,7 @@ tags: [differentiable-manifolds, math591]
 >
 > the last step by Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]]. So the annihilator of the tangent space, which is how Definition [[§37 Regular Submanifolds#^def-37-4|§37.4]] describes $N_pS$, is the kernel of the pullback, which is how the assignment describes it.
 >
-> *(2)* This is Proposition [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]] with $F = \iota$ and the function $\Phi$, smooth near $\iota(p) = p$: it gives $\iota_p^{\ast}(d\Phi_p) = d(\Phi \circ \iota)_p = df_p$. Written out for $v \in T_pS$, by Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]], the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]), Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] again, and the formula for $\iota_p^{\ast}$ above,
+> *(2)* This is Proposition [[§34 The Cotangent Space from Germs#^prop-34-7|§34.7]] with $F = \iota$ and the function $\Phi$, smooth near $\iota(p) = p$: it gives $\iota_p^{\ast}(d\Phi_p) = d(\Phi \circ \iota)_p = df_p$. Written out for $v \in T_pS$, by Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]], the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]), Proposition [[§32 The Cotangent Space#^prop-32-2|§32.2]] again, and the formula for $\iota_p^{\ast}$ above,
 >
 > $$
 > df_p(v) = v\big[\Phi \circ \iota\big] = \big(\iota_{\ast p}v\big)[\Phi] = d\Phi_p\big(\iota_{\ast p}v\big) = \big(\iota_p^{\ast}(d\Phi_p)\big)(v) .
@@ -320,39 +320,39 @@ tags: [differentiable-manifolds, math591]
 >
 > In words: $p$ is critical for the restriction exactly when $d\Phi_p$ vanishes on every vector tangent to $S$ at $p$.
 
-^pf-39-4
+^pf-39-6
 
-*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]], [[§34 The Cotangent Space from Germs#^prop-34-6|§34.6]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§36 Submersions#^prop-36-2|§36.2]]
+*Uses:* [[§37 Regular Submanifolds#^lem-37-5|§37.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§34 The Cotangent Space from Germs#^def-34-3|Def. §34.3]], [[§37 Regular Submanifolds#^def-37-4|Def. §37.4]], [[§34 The Cotangent Space from Germs#^prop-34-7|§34.7]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§36 Submersions#^prop-36-2|§36.2]]
 
-> [!theorem] Proposition §39.5: The Conormal Space of a Regular Level Set
+> [!theorem] Proposition §39.7: The Conormal Space of a Regular Level Set
 > Let $G = (G^1, \ldots, G^k) : M \to \mathbb{R}^k$ be smooth, with $0$ a regular value of $G$ (Definition [[§36 Submersions#^def-36-4|§36.4]]), and let $S = G^{-1}(0)$. Then for every $p \in S$ the covectors $dG^1|_p, \ldots, dG^k|_p$ form a basis of the conormal space $N_pS$.
 
-^prop-39-5
+^prop-39-7
 
 > [!proof]+ Proof
 > *(Assignment 5, Problem 4(b), first part. The dimension count cites Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]], which the submitted solution re-derives in an adapted chart; the submitted solution's independence argument, and its second, Jacobian form, are now the two proofs of Proposition [[§36 Submersions#^prop-36-4|§36.4]].)* Let $r^1, \ldots, r^k$ be the standard coordinates of $\mathbb{R}^k$, so that $G^j = r^j \circ G$; each $G^j$ is smooth, as a composite of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). Fix $p \in S$. We show three things: $\dim N_pS = k$; each $dG^j|_p$ lies in $N_pS$; and the $k$ covectors $dG^j|_p$ are linearly independent. Then they span a $k$-dimensional subspace of the $k$-dimensional space $N_pS$, and a subspace of the same finite dimension is the whole space; so they are a basis.
 >
 > *$S$ is a regular submanifold, and $\dim N_pS = k$.* By Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], applied to $G : M \to \mathbb{R}^k$ and the regular value $0$ (so $n = k$ there), $S$ is a regular submanifold of $M$ of codimension $k$; so $N_pS$ is defined, and $\dim N_pS = k$ by Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]](2). In an adapted chart $(x^1, \ldots, x^m)$ at $p$, a covector $\xi = \sum_i \xi_i\, dx^i|_p$ lies in $N_pS$ exactly when $\xi_i = 0$ for $i \le m - k$ (Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]](1)), so $N_pS$ has basis $dx^{m-k+1}|_p, \ldots, dx^m|_p$ (Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]](2)).
 >
-> *Each $dG^j|_p$ lies in $N_pS$.* Let $1 \le j \le k$. Every $q \in S = G^{-1}(0)$ has $G(q) = 0$, so $(G^j \circ \iota)(q) = G^j(q) = 0$: the function $G^j \circ \iota$ is the constant $0$ on $S$, and its germ at $p$ is the constant germ $[\underline 0]$. So $(G^j \circ \iota)_{\ast p} = 0$, the pushforward along a constant map being zero (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]]), and hence $d(G^j \circ \iota)_p = 0$, the differential being this pushforward followed by the identification $T_0\mathbb{R} \cong \mathbb{R}$ (Definition [[§32 The Cotangent Space#^def-32-5|§32.5]]). By Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]](2) with $\Phi = G^j$,
+> *Each $dG^j|_p$ lies in $N_pS$.* Let $1 \le j \le k$. Every $q \in S = G^{-1}(0)$ has $G(q) = 0$, so $(G^j \circ \iota)(q) = G^j(q) = 0$: the function $G^j \circ \iota$ is the constant $0$ on $S$, and its germ at $p$ is the constant germ $[\underline 0]$. So $(G^j \circ \iota)_{\ast p} = 0$, the pushforward along a constant map being zero (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]]), and hence $d(G^j \circ \iota)_p = 0$, the differential being this pushforward followed by the identification $T_0\mathbb{R} \cong \mathbb{R}$ (Definition [[§32 The Cotangent Space#^def-32-5|§32.5]]). By Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]](2) with $\Phi = G^j$,
 >
 > $$
 > \iota_p^{\ast}\big(dG^j|_p\big) = d\big(G^j \circ \iota\big)_p = 0 ,
 > $$
 >
-> so $dG^j|_p \in \ker \iota_p^{\ast} = N_pS$ by Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]](1).
+> so $dG^j|_p \in \ker \iota_p^{\ast} = N_pS$ by Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]](1).
 >
 > *Linear independence.* Since $0$ is a regular value and $p \in G^{-1}(0)$, $G$ is a submersion at $p$ (Definition [[§36 Submersions#^def-36-4|§36.4]](2)). By Proposition [[§36 Submersions#^prop-36-4|§36.4]](2), direction ($\Rightarrow$), the covectors $dG^1|_p, \ldots, dG^k|_p$ are therefore linearly independent. Its proof is the submitted solution's argument: by its formula (1), $G_{\ast p}v = \sum_j dG^j|_p(v)\, \partial/\partial r^j|_0$, a relation $\sum_j c_j\, dG^j|_p = 0$ says $c \cdot G_{\ast p}(v) = 0$ for every $v$, and since $G_{\ast p}$ is onto we may take $G_{\ast p}(v) = c$, which gives $|c|^2 = 0$. Its second proof is the Jacobian form: the relation says $J^{\mathsf T} c = 0$ for the $k \times m$ matrix $J = [\partial G^j/\partial x^i(p)]$ of $G_{\ast p}$ in any chart, and $J^{\mathsf T}$ has rank $k$.
 >
 > *Conclusion.* $dG^1|_p, \ldots, dG^k|_p$ are $k$ linearly independent elements of $N_pS$, which has dimension $k$, so they form a basis of $N_pS$. As $p \in S$ was arbitrary, this holds at every point of $S$.
 
-^pf-39-5
+^pf-39-7
 
-*Uses:* [[§37 Regular Submanifolds#^prop-37-11|§37.11]], [[§36 Submersions#^prop-36-4|§36.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]], [[§36 Submersions#^def-36-4|Def. §36.4]]
+*Uses:* [[§37 Regular Submanifolds#^prop-37-11|§37.11]], [[§36 Submersions#^prop-36-4|§36.4]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§32 The Cotangent Space#^def-32-5|Def. §32.5]], [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]], [[§36 Submersions#^def-36-4|Def. §36.4]]
 
-The assignment adds that a regular submanifold is *locally* always a regular level set: this is Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]]. Given an adapted chart $(U, \varphi = (x_a, x_b))$, put $G = x_b : U \to \mathbb{R}^k$. By that proposition, $U \cap S = G^{-1}(0)$ and $0$ is a regular value of $G$ (part (3)), $G$ being a submersion at every point of $U$ (part (2)). So Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]] and the theorem below apply to $U \cap S \subseteq U$. For this $G$ the basis $dG^j|_p = dx^{m-k+j}|_p$ is the basis of Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]](2).
+The assignment adds that a regular submanifold is *locally* always a regular level set: this is Proposition [[§37 Regular Submanifolds#^prop-37-10|§37.10]]. Given an adapted chart $(U, \varphi = (x_a, x_b))$, put $G = x_b : U \to \mathbb{R}^k$. By that proposition, $U \cap S = G^{-1}(0)$ and $0$ is a regular value of $G$ (part (3)), $G$ being a submersion at every point of $U$ (part (2)). So Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]] and the theorem below apply to $U \cap S \subseteq U$. For this $G$ the basis $dG^j|_p = dx^{m-k+j}|_p$ is the basis of Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]](2).
 
-> [!theorem] Theorem §39.6: Lagrange Multipliers
+> [!theorem] Theorem §39.8: Lagrange Multipliers
 > Let $G = (G^1, \ldots, G^k) : M \to \mathbb{R}^k$ be smooth with $0$ a regular value, $S = G^{-1}(0)$, $\Phi : M \to \mathbb{R}$ smooth, and $f = \Phi|_S$.
 >
 > 1. If $f$ has a local extremum at $p \in S$ — $f(q) \le f(p)$ for all $q$ in some neighbourhood of $p$ in $S$, or $f(q) \ge f(p)$ for all such $q$ — then $p$ is a critical point of $f$.
@@ -376,14 +376,14 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 >
 > $m + k$ equations in the $m + k$ unknowns $(p, \lambda) \in \mathbb{R}^m \times \mathbb{R}^k$.
 
-^thm-39-6
+^thm-39-8
 
 > [!proof]+ Proof
-> *(Assignment 5, Problem 4(b), second part: “explain how the method of Lagrange multipliers follows.”)* By Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], $S$ is a regular submanifold of $M$, and $f = \Phi \circ \iota$ is smooth on it (Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]]).
+> *(Assignment 5, Problem 4(b), second part: “explain how the method of Lagrange multipliers follows.”)* By Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], $S$ is a regular submanifold of $M$, and $f = \Phi \circ \iota$ is smooth on it (Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]]).
 >
 > *(1)* This is Proposition [[§36 Submersions#^prop-36-3|§36.3]], applied to the smooth function $f$ on the manifold $S$ (with its induced structure) and the neighbourhood of $p$ in $S$ on which $f \le f(p)$ (or $f \ge f(p)$): it gives $df_p = 0$, which by Proposition [[§36 Submersions#^prop-36-2|§36.2]] says that $p$ is a critical point of $f$. Its proof is the argument along curves: every $v \in T_pS$ is the velocity $D_\gamma$ of a smooth curve $\gamma$ in $S$ with $\gamma(0) = p$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]), $f \circ \gamma$ has a local extremum at the interior point $0$, and $df_p(v) = (f \circ \gamma)'(0) = 0$. So the method, which looks for the critical points of $f$, finds in particular all local extrema of $\Phi$ subject to the constraint $G = 0$.
 >
-> *(2)* By Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]](3), $p$ is a critical point of $f$ iff $d\Phi_p \in N_pS$. By Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]], $N_pS$ is the span of $dG^1|_p, \ldots, dG^k|_p$. So if $p$ is critical, $d\Phi_p$ is a linear combination $\sum_j \lambda_j\, dG^j|_p$; conversely, such a combination lies in $N_pS$, which is a subspace (the kernel of the linear map $\iota_p^{\ast}$, Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]](1)) containing every $dG^j|_p$, so $p$ is critical. *Uniqueness:* if $\sum_j \lambda_j\, dG^j|_p = \sum_j \mu_j\, dG^j|_p$, then $\sum_j (\lambda_j - \mu_j)\, dG^j|_p = 0$, and linear independence of the $dG^j|_p$ (Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]], or directly Proposition [[§36 Submersions#^prop-36-4|§36.4]](2), $G$ being a submersion at $p \in G^{-1}(0)$) gives $\lambda_j = \mu_j$ for every $j$. *The equivalent form:* the function $\Phi - \sum_j \lambda_j G^j$ is smooth on $M$, and linearity of $d$ (Corollary [[§32 The Cotangent Space#^cor-32-3|§32.3]](1), applied once for each of the $k$ terms) gives
+> *(2)* By Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]](3), $p$ is a critical point of $f$ iff $d\Phi_p \in N_pS$. By Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]], $N_pS$ is the span of $dG^1|_p, \ldots, dG^k|_p$. So if $p$ is critical, $d\Phi_p$ is a linear combination $\sum_j \lambda_j\, dG^j|_p$; conversely, such a combination lies in $N_pS$, which is a subspace (the kernel of the linear map $\iota_p^{\ast}$, Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]](1)) containing every $dG^j|_p$, so $p$ is critical. *Uniqueness:* if $\sum_j \lambda_j\, dG^j|_p = \sum_j \mu_j\, dG^j|_p$, then $\sum_j (\lambda_j - \mu_j)\, dG^j|_p = 0$, and linear independence of the $dG^j|_p$ (Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]], or directly Proposition [[§36 Submersions#^prop-36-4|§36.4]](2), $G$ being a submersion at $p \in G^{-1}(0)$) gives $\lambda_j = \mu_j$ for every $j$. *The equivalent form:* the function $\Phi - \sum_j \lambda_j G^j$ is smooth on $M$, and linearity of $d$ (Corollary [[§32 The Cotangent Space#^cor-32-3|§32.3]](1), applied once for each of the $k$ terms) gives
 >
 > $$
 > d\Big(\Phi - \sum_{j=1}^k \lambda_j G^j\Big)_p = d\Phi_p - \sum_{j=1}^k \lambda_j\, dG^j|_p ,
@@ -391,7 +391,7 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 >
 > which is $0$ iff $d\Phi_p = \sum_j \lambda_j\, dG^j|_p$; and a point $p \in M$ lies in $S = G^{-1}(0)$ iff $G(p) = 0$.
 >
-> *(3)* Use the identity chart of $\mathbb{R}^m$, with coordinate functions $r^1, \ldots, r^m$; its coordinate derivations are the ordinary partial derivatives, $\partial/\partial r^i|_p[h] = \partial h/\partial r^i(p)$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], the chart being the identity). For a smooth $h$ on $\mathbb{R}^m$, Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] gives $dh_p = \sum_i \partial h/\partial r^i(p)\, dr^i|_p$: the components of $dh_p$ are the entries of the gradient $\nabla h(p)$ (Definition [[§33 Covectors in Coordinates#^def-33-2|§33.2]]). This is the identification of Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]]: under the linear isomorphism $v \mapsto \xi_v$ of $\mathbb{R}^m$ onto $T_p^{\ast}\mathbb{R}^m$, $\xi_v(D_w|_p) = v \cdot w$, the vector $\nabla h(p)$ goes to $dh_p$. (So for $w = \sum_i w^i\, \partial/\partial r^i|_p$, identified with $(w^1, \ldots, w^m) \in \mathbb{R}^m$ as in Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], $dh_p(w) = \sum_i \partial h/\partial r^i(p)\, w^i = \nabla h(p) \cdot w$.) Two covectors are equal iff their components in the basis $dr^i|_p$ are equal, so, applying this to $h = \Phi$ and $h = G^j$,
+> *(3)* Use the identity chart of $\mathbb{R}^m$, with coordinate functions $r^1, \ldots, r^m$; its coordinate derivations are the ordinary partial derivatives, $\partial/\partial r^i|_p[h] = \partial h/\partial r^i(p)$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]], the chart being the identity). For a smooth $h$ on $\mathbb{R}^m$, Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]] gives $dh_p = \sum_i \partial h/\partial r^i(p)\, dr^i|_p$: the components of $dh_p$ are the entries of the gradient $\nabla h(p)$ (Definition [[§33 Covectors in Coordinates#^def-33-2|§33.2]]). This is the identification of Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]]: under the linear isomorphism $v \mapsto \xi_v$ of $\mathbb{R}^m$ onto $T_p^{\ast}\mathbb{R}^m$, $\xi_v(D_w|_p) = v \cdot w$, the vector $\nabla h(p)$ goes to $dh_p$. (So for $w = \sum_i w^i\, \partial/\partial r^i|_p$, identified with $(w^1, \ldots, w^m) \in \mathbb{R}^m$ as in Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], $dh_p(w) = \sum_i \partial h/\partial r^i(p)\, w^i = \nabla h(p) \cdot w$.) Two covectors are equal iff their components in the basis $dr^i|_p$ are equal, so, applying this to $h = \Phi$ and $h = G^j$,
 >
 > $$
 > d\Phi_p = \sum_{j=1}^k \lambda_j\, dG^j|_p \iff \frac{\partial \Phi}{\partial r^i}(p) = \sum_{j=1}^k \lambda_j\, \frac{\partial G^j}{\partial r^i}(p) \ \ (i = 1, \ldots, m) \iff \nabla\Phi(p) = \sum_{j=1}^k \lambda_j\, \nabla G^j(p) .
@@ -400,9 +400,9 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 > Equivalently, by Proposition [[§33 Covectors in Coordinates#^prop-33-3|§33.3]]: $v \mapsto \xi_v$ is linear and injective, with $\xi_{\nabla\Phi(p)} = d\Phi_p$ and $\xi_{\nabla G^j(p)} = dG^j|_p$, so $d\Phi_p = \sum_j \lambda_j\, dG^j|_p$ says $\xi_{\nabla\Phi(p)} = \xi_{\sum_j \lambda_j \nabla G^j(p)}$, that is, $\nabla\Phi(p) = \sum_j \lambda_j\, \nabla G^j(p)$.
 > With $G(p) = 0$ from (2) this is the system stated: $m$ scalar equations from the gradients and $k$ from the constraints, in the $m$ coordinates of $p$ and the $k$ multipliers. (The count makes a finite set of solutions plausible; it is not a theorem that there are any, or finitely many.)
 
-^pf-39-6
+^pf-39-8
 
-*Uses:* [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]], [[§36 Submersions#^prop-36-3|§36.3]], [[§36 Submersions#^prop-36-2|§36.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]], [[§36 Submersions#^prop-36-4|§36.4]], [[§32 The Cotangent Space#^cor-32-3|§32.3]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§33 Covectors in Coordinates#^def-33-2|Def. §33.2]], [[§33 Covectors in Coordinates#^prop-33-3|§33.3]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]
+*Uses:* [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]], [[§36 Submersions#^prop-36-3|§36.3]], [[§36 Submersions#^prop-36-2|§36.2]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]], [[§36 Submersions#^prop-36-4|§36.4]], [[§32 The Cotangent Space#^cor-32-3|§32.3]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§33 Covectors in Coordinates#^def-33-2|Def. §33.2]], [[§33 Covectors in Coordinates#^prop-33-3|§33.3]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]
 
 > [!remark]- Connections
 > - In $\mathbb{R}^n$, with proofs by the implicit function theorem: [[Method of Lagrange Multipliers|452 hub]], [[§17 Optimization and Lagrange Multipliers#^thm-17-3|452 Thm. §17.3]] (several constraints); computational treatment: [[§114 Lagrange Multipliers#^thm-114-1|Calc Thm. §114.1]].
@@ -411,7 +411,7 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 *(Not from the assignment.)* In (3) the system is the vanishing of the gradient of the single function $L(x, \lambda) = \Phi(x) - \sum_j \lambda_j G^j(x)$ on $\mathbb{R}^{m+k}$: its partial derivatives at $(p, \lambda)$ are $\partial\Phi/\partial r^i(p) - \sum_j \lambda_j\, \partial G^j/\partial r^i(p)$ in the direction of $x^i$ and $-G^j(p)$ in the direction of $\lambda_j$, so $\nabla L(p, \lambda) = 0$ is exactly the $m + k$ equations above.
 
 > [!remark] Remark: The Conormal Bundle
-> *(Not from the assignment.)* The conormal spaces $N_pS$, $p \in S$, can be put together, as the cotangent spaces are put together in the cotangent bundle $T^{\ast}M$, into the *conormal bundle* $N^{\ast}S \subseteq T^{\ast}M$. This is done later, in [[§55 Morse Functions and the Zero Section|§55]], once $T^{\ast}M$ and its standard coordinates are available (Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]]). There $N^{\ast}S$ is shown to be a regular submanifold of $T^{\ast}M$ of dimension $m$, whatever the codimension of $S$, cut out in the standard coordinates over an adapted chart by the description of $N_pS$ in Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]](1) (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-2|§55.2]]); the critical points of a restriction $\Phi|_S$ are where the graph of $d\Phi$ meets it, by Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]](3) (Corollary [[§55 Morse Functions and the Zero Section#^cor-55-3|§55.3]]); and for $S = G^{-1}(0)$ the Lagrange multipliers of Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-6|§39.6]] are the coordinates of $(p, d\Phi_p) \in N^{\ast}S$ in its fibre, in the basis $dG^1|_p, \ldots, dG^k|_p$ of Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]].
+> *(Not from the assignment.)* The conormal spaces $N_pS$, $p \in S$, can be put together, as the cotangent spaces are put together in the cotangent bundle $T^{\ast}M$, into the *conormal bundle* $N^{\ast}S \subseteq T^{\ast}M$. This is done later, in [[§55 Morse Functions and the Zero Section|§55]], once $T^{\ast}M$ and its standard coordinates are available (Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]]). There $N^{\ast}S$ is shown to be a regular submanifold of $T^{\ast}M$ of dimension $m$, whatever the codimension of $S$, cut out in the standard coordinates over an adapted chart by the description of $N_pS$ in Proposition [[§37 Regular Submanifolds#^prop-37-11|§37.11]](1) (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-2|§55.2]]); the critical points of a restriction $\Phi|_S$ are where the graph of $d\Phi$ meets it, by Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]](3) (Corollary [[§55 Morse Functions and the Zero Section#^cor-55-3|§55.3]]); and for $S = G^{-1}(0)$ the Lagrange multipliers of Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-8|§39.8]] are the coordinates of $(p, d\Phi_p) \in N^{\ast}S$ in its fibre, in the basis $dG^1|_p, \ldots, dG^k|_p$ of Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]].
 
 ^rem-39-2
 
@@ -432,19 +432,19 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 
 ^def-39-3
 
-> [!theorem] Proposition §39.7: Transverse Submanifolds and Transverse Maps
+> [!theorem] Proposition §39.4: Transverse Submanifolds and Transverse Maps
 > $S_1 \pitchfork S_2$ if and only if the inclusion $\iota_1 : S_1 \hookrightarrow N$ is transverse to $S_2$ (Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]]).
 
-^prop-39-7
+^prop-39-4
 
 > [!proof]+ Proof
 > *(Stated in the review session as immediate from the definitions; written out.)* $\iota_1^{-1}(S_2) = S_1 \cap S_2$, and for $q$ in it, $(\iota_1)_{\ast q}(T_qS_1)$ is $T_qS_1$ regarded as a subspace of $T_qN$. So the condition of Definition [[§39 Transversality and Lagrange Multipliers#^def-39-1|§39.1]] for $F = \iota_1$ at $q$ is $T_qS_1 + T_qS_2 = T_qN$.
 
-^pf-39-7
+^pf-39-4
 
 *Uses:* [[§39 Transversality and Lagrange Multipliers#^def-39-1|Def. §39.1]]
 
-> [!theorem] Theorem §39.8: Transverse Intersections in a Manifold
+> [!theorem] Theorem §39.9: Transverse Intersections in a Manifold
 > If $S_1 \pitchfork S_2$ in $N$, then $S_1 \cap S_2$ is a regular submanifold of $N$, with
 >
 > $$
@@ -453,7 +453,7 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 >
 > *Lee: Theorem 6.30(b)*
 
-^thm-39-8
+^thm-39-9
 
 > [!proof]+ Proof
 > *(Proved in the homework in the Euclidean case, Proposition [[§26 Transversality#^prop-26-5|§26.5]], where it is a linear-algebra fact. The manifold version is filled in, along the Euclidean proof.)* Let $n = \dim N$, $k_i = \operatorname{codim} S_i$, and $q \in S_1 \cap S_2$.
@@ -476,7 +476,7 @@ The assignment adds that a regular submanifold is *locally* always a regular lev
 >
 > *Conclusion.* By Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]], $G^{-1}(0) = W \cap S_1 \cap S_2$ is a regular submanifold of $W$ of codimension $k_1 + k_2$, with $T_q(S_1 \cap S_2) = \ker dG_q = T_qS_1 \cap T_qS_2$. Being a regular submanifold is a local condition (slice charts at each point), and $W$ is open in $N$; $q$ was arbitrary, so $S_1 \cap S_2$ is a regular submanifold of $N$ of codimension $k_1 + k_2$.
 
-^pf-39-8
+^pf-39-9
 
 *Uses:* [[§26 Transversality#^prop-26-5|§26.5]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§38 The Regular Value Theorem for Manifolds#^thm-38-2|§38.2]]
 

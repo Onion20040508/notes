@@ -280,7 +280,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > \frac{1}{n!}\Bigl(\sum_t(-ig_t)\int M_t\Bigr)^n = \sum_{\sum n_t = n}\frac{1}{n!}\frac{n!}{\prod_tn_t!}\prod_t\Bigl((-ig_t)\int M_t\Bigr)^{n_t} = \sum_{\sum n_t = n}\prod_t\frac{(-ig_t)^{n_t}}{n_t!}\int\prod_{t,v}d^4z_{t,v}\,\prod_{t,v}M_t(\hat\phi_I(z_{t,v})) .
 > $$
 >
-> **Step 2** (Wick with kinds). Write each $M_t(z_{t,v})$ as its $r_t$ factors, one field per leg $(t, v, a)$ of kind $\kappa_t(a)$. By [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]], 3, and [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], the vacuum value is the sum over complete pairings of all half-edges, a pair of incompatible kinds giving $0$: only $P \in \mathcal P_\smile(X_{E,\mathbf n})$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]) survive,
+> **Step 2** (Wick with kinds). Write each $M_t(z_{t,v})$ as its $r_t$ factors, one field per leg $(t, v, a)$ of kind $\kappa_t(a)$. By [[§C6a.12 Feynman Rules for Polynomial Interactions#^lem-c6a-12-1|Lemma §C6a.12.1]], 3, and [[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]], the vacuum value is the sum over complete pairings of all half-edges, a pair of incompatible kinds giving $0$: only $P \in \mathcal P_\smile(X_{E,\mathbf n})$ ([[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]]) survive (here $E = \{x_1, \dots, x_r\}$ is the set of external points, as in [[§C6a.8 Position-Space Feynman Rules|§C6a.8]]; its size $r$ is the number written $E$ in [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]]),
 >
 > $$
 > \langle0|T\Bigl\{\prod_{h\in X_{E,\mathbf n}}\hat\phi_h\Bigr\}|0\rangle = \sum_{P\in\mathcal P_\smile(X_{E,\mathbf n})}\;\prod_{\{h,h'\}\in P}\overbracket{\hat\phi_h\hat\phi_{h'}} .
@@ -363,7 +363,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 > (I + r) - V = (I - V + 1) + (r - 1) = L + (r - 1)
 > $$
 >
-> remain, $L = M - N + 1$ the number of independent cycles of a graph with $N = V + r$ nodes and $M = I + r$ edges ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 2, Step 3 of its derivation). For the cubic exchange line between two vertices with two external points each ($V = 2$, $I = 1$, $r = 4$): $L = 0$, three integrals, the external momenta but one.
+> remain, $L = M - N + 1$ the number of independent cycles of a graph with $N = V + r$ nodes and $M = I + r$ edges ([[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-3|Theorem §C6a.12.3]], 2, Step 3 of its derivation, where the number of external points $r$ is written $E$: $N = V + E$, $M = I + E$). For the cubic exchange line between two vertices with two external points each ($V = 2$, $I = 1$, $r = 4$): $L = 0$, three integrals, the external momenta but one.
 >
 > **Step 4** (external points, $S$). As Steps 5 and 7 of [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]]: the plane wave $e^{-ip\cdot x}$ stays at each external point, and $\frac1S$ is a number.
 >
@@ -375,7 +375,7 @@ the inverse of the prefactor; by orbit–stabilizer a diagram $D$ is produced by
 *Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-1|Derivation §C6a.10.1]], [[§C6a.10 Feynman Rules in Momentum Space#^der-c6a-10-2|Derivation §C6a.10.2]], [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]]
 
 ![[ph-qft-c6a-12-1.svg]]
-*The rules of [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]] and [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]] as a picture. Top: the lines, one per field type (solid $\phi$, dashed $\Phi$, arrowed for a complex field, from the $\phi^\dagger$ end to the $\phi$ end), with their position- and momentum-space values. Bottom: the vertices of the four theories of C6, each $-i$ times its coupling times the number of ways to attach distinct lines to its legs. Added figure.*
+*The rules of [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-4|Theorem §C6a.12.4]] and [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-5|Theorem §C6a.12.5]] as a picture. Top: the lines, one per field type (solid $\phi$, dashed $\Phi$, arrowed for a complex field, from the $\phi^\dagger$ end to the $\phi$ end), with their position- and momentum-space values. Bottom: the vertices of the four theories in the table of [[§C6a.12 Feynman Rules for Polynomial Interactions#^thm-c6a-12-2|Theorem §C6a.12.2]], each $-i$ times its coupling times the number of ways to attach distinct lines to its legs. Added figure.*
 
 ## Examples
 
@@ -482,6 +482,7 @@ The examples of Problem Set 8 are already worked: the oriented tadpole, fish and
 > - [[§CA.8 Splitting Pairings and the Exponential Formula#^def-ca-8-2|Def. §CA.8.2]] — a contraction pattern with several vertex types and several kinds of legs is a pairing of half-edges that respects a compatibility relation between kinds.
 > - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]] — the relabelling group, its order, and orbit–stabilizer for it.
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the plane waves meeting at a vertex integrate to a delta function.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — renaming the vertex positions within each type leaves the integral unchanged (Derivation §C6a.12.4, Step 3), and a line momentum may be reversed, $p \to -p$ (Derivation §C6a.12.5).
 
 > [!remark]- Connections
 > - The prefactor of the Dyson series is the inverse order of the relabelling group exactly when the Lagrangian is normalized with the factorials of its legs; this is the content of "divide by $S$" for every theory — [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]], [[§C6a.8 Position-Space Feynman Rules#^rem-c6a-8-2|§C6a.8, Remark: The same proof for other vertices]].

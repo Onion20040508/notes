@@ -8,21 +8,21 @@ tags: [chapter, quantum-field-theory]
 # C4 The Quantum Vector Field
 ← [[· C3 Poincaré Symmetry and Particle States]] · ↑ [[Quantum Field Theory]] · [[· C5a Spinors and the Dirac Equation]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (40), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (108), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (93), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (61), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (72), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (9), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (49), [[· CA Mathematical Methods|CA Mathematical Methods]] (150)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (40), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (108), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (94), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (61), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (72), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (9), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (49), [[· CA Mathematical Methods|CA Mathematical Methods]] (151)
 **Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (2), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (4), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (5), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (2), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (44)
 
 ## Sections
-- [[§C4.1 The Vector Field and Its Lorentz Transformation]] — 
-- [[§C4.2★ The Proca Field]] — 
-- [[§C4.3★ Massive Polarization Vectors and Plane Waves]] — 
-- [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra]] — 
-- [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field]] — 
-- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing]] — 
-- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum]] — 
-- [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra]] — 
-- [[§C4.9 Energy, Momentum and the Indefinite Fock Space]] — 
-- [[§C4.10 The Gupta–Bleuler Condition and Physical Photons]] — 
-- [[§C4.11 Vector-Field Propagators]] — 
+- [[§C4.1 The Vector Field and Its Lorentz Transformation]] — Yu 4.1–4.2, 4.3.1, 1.7.3; 513 notes Ch. 7
+- [[§C4.2★ The Proca Field]] — Yu 4.3; 513 notes Ch. 3
+- [[§C4.3★ Massive Polarization Vectors and Plane Waves]] — Yu 4.3.1
+- [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra]] — Yu 4.3, 4.3.1, 4.3.2
+- [[§C4.5★ Energy, Momentum and the Spin-One Quanta of the Proca Field]] — Yu 4.3, 4.3.3, 4.2.2, 1.7.3
+- [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing]] — PS 9.4; Yu 4.4.1, 4.4.2
+- [[§C4.7 The Feynman-Gauge Field꞉ Canonical Structure and Angular Momentum]] — Yu 4.4.2, 4.4.4
+- [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra]] — PS 4.8, 5.5, 9.4; Yu 4.4.1, 4.4.2, 4.4.3, 4.4.4
+- [[§C4.9 Energy, Momentum and the Indefinite Fock Space]] — PS 4.8; Yu 4.4.4
+- [[§C4.10 The Gupta–Bleuler Condition and Physical Photons]] — PS 9.4; Yu 4.4.4
+- [[§C4.11 Vector-Field Propagators]] — PS 4.8, 5.5, 9.4; Yu 6.4.3, 6.4.4
 
 ## Principles
 - [[§C4.4★ Quantizing the Proca Field꞉ Modes and the Mode Algebra#^pr-c4-4-2|§C4.4.2]] Equal-Time Commutation Relations of the Proca Field

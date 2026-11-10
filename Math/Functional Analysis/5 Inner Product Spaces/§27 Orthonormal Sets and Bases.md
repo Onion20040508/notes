@@ -96,8 +96,17 @@ tags: [functional-analysis, math556]
 
 Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\operatorname{span}\{e_1, \ldots, e_k\}$, and $y$ is the perpendicular remainder. Pythagoras ([[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]]) applied to $k + 1$ orthogonal pieces gives the identity; dropping $\|y\|^2$ gives the inequality.
 
+> [!definition] Definition §27.3: Support of a Family of Numbers
+> Let $(t_\alpha)_{\alpha \in \Lambda}$ be a family of numbers $t_\alpha \in \mathbb{F}$ indexed by a set $\Lambda$. Its **support** is the set
+>
+> $$
+> S = \{ \alpha \in \Lambda : t_\alpha \neq 0 \} .
+> $$
+
+^def-27-3
+
 > [!definition] Definition §27.4: Sums of Non-Negative Families
-> Let $(t_\alpha)_{\alpha \in \Lambda}$ be real numbers with $t_\alpha \ge 0$ whose **support** $S = \{ \alpha \in \Lambda : t_\alpha \neq 0 \}$ is countable. Define
+> Let $(t_\alpha)_{\alpha \in \Lambda}$ be real numbers with $t_\alpha \ge 0$ whose support $S = \{ \alpha \in \Lambda : t_\alpha \neq 0 \}$ (Definition [[§27 Orthonormal Sets and Bases#^def-27-3|§27.3]]) is countable. Define
 >
 > $$
 > \sum_{\alpha \in \Lambda} t_\alpha := \sum_{n} t_{\alpha_n} \in [0, \infty],
@@ -314,19 +323,19 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 ^prop-27-9
 
 > [!proof]+ Proof
-> (Not covered in lecture.) Let $Y = \overline{\operatorname{span}}\, E$, a closed linear subspace (Definition [[§11 Normed Linear Spaces#^def-11-9|§11.9]]). We claim $E^\perp = Y^\perp$. Since $E \subset Y$, every vector orthogonal to $Y$ is orthogonal to $E$. Conversely, if $v \perp e_\alpha$ for all $\alpha$, then $v$ is orthogonal to every finite linear combination of the $e_\alpha$ (conjugate-linearity in the second slot), and to every limit $y$ of such combinations $y_n$, since $(v, y) = \lim (v, y_n) = 0$ by Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]; so $v \in Y^\perp$.
+> (Not covered in lecture.) Let $Y = \overline{\operatorname{span}}\, E$, a closed linear subspace (Definition [[§11 Normed Linear Spaces#^def-11-9|§11.9]]). We claim $E^\perp = Y^\perp$ (this is Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-6|§25.6]] with $M = E$; the argument is repeated here). Since $E \subset Y$, every vector orthogonal to $Y$ is orthogonal to $E$. Conversely, if $v \perp e_\alpha$ for all $\alpha$, then $v$ is orthogonal to every finite linear combination of the $e_\alpha$ (conjugate-linearity in the second slot), and to every limit $y$ of such combinations $y_n$, since $(v, y) = \lim (v, y_n) = 0$ by Lemma [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]]; so $v \in Y^\perp$.
 >
 > By Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], $H = Y \oplus Y^\perp$. If $Y^\perp = \{0\}$, then every $x \in H$ lies in $Y$, so $Y = H$. If $Y = H$, then $Y^\perp = \{0\}$, since $v \perp v$ forces $v = 0$. Hence $E$ is complete ($E^\perp = \{0\}$) iff $Y^\perp = \{0\}$ iff $Y = H$. The last sentence follows by Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]].
 
 ^pf-27-9
 
-*Uses:* [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§27 Orthonormal Sets and Bases#^def-27-2|Def. §27.2]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
+*Uses:* [[§11 Normed Linear Spaces#^def-11-9|Def. §11.9]], [[§25 Projection and Orthogonal Decomposition#^lem-25-6|§25.6]], [[§25 Projection and Orthogonal Decomposition#^def-25-1|Def. §25.1]], [[§25 Projection and Orthogonal Decomposition#^def-25-2|Def. §25.2]], [[§25 Projection and Orthogonal Decomposition#^lem-25-1|§25.1]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]], [[§27 Orthonormal Sets and Bases#^def-27-2|Def. §27.2]], [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]
 
 > [!remark]- Connections
 > - The same two steps proved earlier for arbitrary sets: $E^\perp = Y^\perp$ is [[§25 Projection and Orthogonal Decomposition#^lem-25-6|§25.6]], and $\overline{\operatorname{span}}\,E = (E^\perp)^\perp$ is [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]].
 
 > [!remark] Remark: Comparison with Lax
-> Lax defines an orthonormal base by the condition $\overline{\operatorname{span}}\, E = H$, and his Lemma 8 then describes the closed linear span as the set of sums $\sum_j a_j e_j$ with $\sum_j |a_j|^2 < \infty$, for a countable orthonormal set. The lecture defines a basis by the expansion $x = \sum_\alpha (x, e_\alpha) e_\alpha$ and proves the equivalence with completeness (Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]); the proposition above connects the two. Lax also constructs orthonormal bases by [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|Gram–Schmidt]] (Theorem $9'$) and identifies the isometries of $H$ (Theorem 10); neither was covered in lecture.
+> Lax defines an orthonormal base by the condition $\overline{\operatorname{span}}\, E = H$, and his Lemma 8 then describes the closed linear span as the set of sums $\sum_j a_j e_j$ with $\sum_j |a_j|^2 < \infty$, for a countable orthonormal set. The lecture defines a basis by the expansion $x = \sum_\alpha (x, e_\alpha) e_\alpha$ and proves the equivalence with completeness (Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]]); the proposition above connects the two. Lax also constructs orthonormal bases by [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|Gram–Schmidt]] (Theorem $9'$; here Lemma [[§28 Existence of Orthonormal Bases and Separability#^lem-28-2|§28.2]]) and identifies the isometries of $H$ (Theorem 10); the latter was not covered in lecture.
 
 ^rem-27-7
 
@@ -393,7 +402,7 @@ Geometrically, $\sum_j (x, e_j) e_j$ is the orthogonal projection of $x$ onto $\
 >
 > since $e^{i(k-j)2\pi} = 1$.
 >
-> *Completeness.* Deferred: not proved in lecture. It is the completeness of Fourier series, proved for instance by showing that trigonometric polynomials are dense in $L^2[0,2\pi]$ (Fejér's theorem gives uniform approximation of continuous periodic functions, and continuous periodic functions are dense in $L^2$). Given completeness, Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]] makes it a basis.
+> *Completeness.* Proof not given in this course. It is the completeness of Fourier series, proved for instance by showing that trigonometric polynomials are dense in $L^2[0,2\pi]$ (Fejér's theorem gives uniform approximation of continuous periodic functions, and continuous periodic functions are dense in $L^2$). Given completeness, Theorem [[§27 Orthonormal Sets and Bases#^thm-27-8|§27.8]] makes it a basis.
 
 ^pf-27-11
 

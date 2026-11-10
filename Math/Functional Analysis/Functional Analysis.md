@@ -51,17 +51,18 @@ graph TD
   C3 --> C4
   C4 --> C5
   C5 --> C6
-  C5 --> C9
   C6 --> C7
+  C6 --> C9
   C7 --> C8
   C2 -.->|on credit| C1
   C3 -.->|on credit| C2
   C4 -.->|on credit| C3
   C5 -.->|on credit| C1
+  C5 -.->|on credit| C4
   C6 -.->|on credit| C2
   C6 -.->|on credit| C5
   X1 -.->|2| C6
-  X2 -.->|13| C4
+  X2 -.->|12| C4
   X2 -.->|13| C5
   X2 -.->|13| C6
   X2 -.->|3| C9
@@ -85,8 +86,8 @@ graph TD
 - [[· 9 Functional Analysis and Quantum Mechanics]] (companion chapter, not lecture material)
 
 ## Central results
-- [[Every Subspace Has a Complement]] (§2.3)
-- [[X ≅ X∕Y ⊕ Y]] (§2.6)
+- [[Every Subspace Has a Complement]] (§2.4)
+- [[X ≅ X∕Y ⊕ Y]] (§2.7)
 - [[Hahn–Banach Theorem]] (§5.3)
 - [[One-Step Extension Lemma]] (§6.1)
 - [[Zorn's Lemma]] (§6.2)
@@ -114,13 +115,13 @@ graph TD
 - [[Bounded Linear Maps into a Banach Space Form a Banach Space]] (§30.8)
 - [[Bounded Sesquilinear Forms Are Bounded Operators]] (§32.1)
 - [[Lax–Milgram Theorem]] (§32.2)
-- [[Poincaré Inequality]] (§33.8)
+- [[Poincaré Inequality]] (§33.11)
 - [[Weak Solutions of the Dirichlet Problem]] (§34.3)
 - [[Radon–Nikodym Theorem]] (§35.1)
 - [[Hahn–Banach Theorem for Normed Spaces]] (§36.1)
 - [[The Norm as a Maximum over the Dual]] (§36.2)
 - [[The Dual of ℓᵖ]] (§36.4)
-- [[Distance to a Subspace via Functionals]] (§36.8)
+- [[Distance to a Subspace via Functionals]] (§36.10)
 - [[Spanning Criterion]] (§37.1)
 - [[Separable Dual Implies Separable Space]] (§37.3)
 - [[Closed Subspaces of Reflexive Spaces are Reflexive]] (§37.8)
@@ -128,9 +129,9 @@ graph TD
 - [[Baire Category Theorem]] (§40.4)
 - [[Open Mapping Theorem]] (§41.2)
 - [[Closed Graph Theorem]] (§41.4)
-- [[Uniform Boundedness Principle]] (§42.5)
-- [[Banach–Steinhaus Theorem]] (§42.6)
-- [[Lax Equivalence Theorem]] (§42.8)
+- [[Uniform Boundedness Principle]] (§42.6)
+- [[Banach–Steinhaus Theorem]] (§42.7)
+- [[Lax Equivalence Theorem]] (§42.9)
 - [[Criterion for Weak Convergence]] (§43.3)
 - [[Hyperplane Separation in a Normed Space]] (§43.5)
 - [[Mazur's Theorem]] (§43.7)
@@ -153,11 +154,11 @@ The results from other subjects that this course's proofs and definitions cite m
 - [[Countable Union of Countable Sets is Countable]] (5)
 - [[Dominated Convergence Theorem]] (3)
 - [[§35 Lᵖ as a Banach Space#^thm-35-12|Theorem §35.12: Density in Lᵖ]] (3)
-- [[Hölder's Inequality]] (2)
 - [[Minkowski's Inequality]] (2)
 - [[Monotone Convergence Theorem (Lebesgue)]] (2)
 - [[Riesz–Fischer Theorem]] (2)
 - [[§3 Countability of Rationals and Unions#^cor-3-2|Corollary §3.2: ℚ is countable]] (2)
+- [[§13 Approximation and Continuity of Measure#^prop-13-4|Proposition §13.4: Continuity of Measure from Below]] (2)
 
 **[[Topology]]**
 - [[§19 Limit Point Compactness#^thm-19-4|Theorem §19.4: Equivalence for Metrizable Spaces]] (1)

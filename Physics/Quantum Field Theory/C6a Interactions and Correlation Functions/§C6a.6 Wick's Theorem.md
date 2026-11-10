@@ -231,6 +231,8 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 
 ^der-c6a-6-2b
 
+*Uses:* [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-1|Theorem §C6a.5.1]], [[§C6a.5 Normal Ordering and Contractions#^thm-c6a-5-2|Theorem §C6a.5.2]], [[§C6a.6 Wick's Theorem#^der-c6a-6-1|Derivation §C6a.6.1]] (Steps 5–6), [[§C6a.6 Wick's Theorem#^der-c6a-6-2|Derivation §C6a.6.2]] (Steps 1 and 6)
+
 > [!example] Example §C6a.6.1: Four Fields
 > ![[ph-qft-c6a-6-1.svg]]
 >
@@ -376,7 +378,7 @@ pairings, and an odd number of fields has none ([[§CA.7 Pairings, Diagrams and 
 ^ex-c6a-6-2
 
 > [!remark] Remark: Theorem and application
-> Wick's theorem is the operator statement ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), valid in any state, and so a little stronger than its vacuum value: it says something about the fields without putting them in a particular state. The application in this course is almost always the vacuum value ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]): normal ordering was introduced because normal-ordered products are easy to evaluate in the vacuum state. The full operator form is used when the states are not the vacuum, as for scattering states (QFT C10, planned).
+> Wick's theorem is the operator statement ([[§C6a.6 Wick's Theorem#^thm-c6a-6-2|Theorem §C6a.6.2]]), valid in any state, and so a little stronger than its vacuum value: it says something about the fields without putting them in a particular state. The application in this course is almost always the vacuum value ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]): normal ordering was introduced because normal-ordered products are easy to evaluate in the vacuum state. The full operator form is used when the states are not the vacuum, as for scattering states ([[§C6c.3 Wick's Theorem between Particle States#^thm-c6c-3-1|Theorem §C6c.3.1]]; the contractions of a field with an external particle are [[§C6c.2 Contractions with External Particles#^lem-c6c-2-1|Lemma §C6c.2.1]]).
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.2 (paragraph "Theorem and application")*
 

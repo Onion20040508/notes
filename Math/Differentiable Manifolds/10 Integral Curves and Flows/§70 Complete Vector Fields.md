@@ -114,7 +114,7 @@ So on a compact manifold there is no need to check where the flow is defined.
 ^lem-70-3
 
 > [!proof]+ Proof
-> *(Assignment 7, Problem 4: the submitted solution, the step “a uniform time of existence on $K$”. For $K = M$ compact it is the proof of Theorem [[§70 Complete Vector Fields#^thm-70-2|§70.2]].)* By Lemma [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]], for each $q \in K$ there are $\varepsilon_q > 0$ and an open neighbourhood $U_q$ of $q$ in $M$ with $(-\varepsilon_q, \varepsilon_q) \times U_q \subseteq \mathcal{D}$ (Definition [[§69 Maximal Integral Curves and Flows#^def-69-2|§69.2]]); that is, $\alpha(q') \le -\varepsilon_q$ and $\beta(q') \ge \varepsilon_q$ for all $q' \in U_q$. Since $q \in U_q$ for each $q \in K$, $\{U_q\}_{q \in K}$ is a cover of $K$ by open subsets of $M$. Since $K$ is compact, there are $q_1, \ldots, q_m \in K$ with
+> *(Assignment 7, Problem 4: the submitted solution, the step “a uniform time of existence on $K$”. For $K = M$ compact it is the proof of Theorem [[§70 Complete Vector Fields#^thm-70-2|§70.2]].)* By Lemma [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]], for each $q \in K$ there are $\varepsilon_q > 0$ and an open neighbourhood $U_q$ of $q$ in $M$ with $(-\varepsilon_q, \varepsilon_q) \times U_q \subseteq \mathcal{D}$ (Definition [[§69 Maximal Integral Curves and Flows#^def-69-3|§69.3]]); that is, $\alpha(q') \le -\varepsilon_q$ and $\beta(q') \ge \varepsilon_q$ for all $q' \in U_q$. Since $q \in U_q$ for each $q \in K$, $\{U_q\}_{q \in K}$ is a cover of $K$ by open subsets of $M$. Since $K$ is compact, there are $q_1, \ldots, q_m \in K$ with
 >
 > $$
 > K \subseteq U_{q_1} \cup \cdots \cup U_{q_m} .
@@ -124,7 +124,7 @@ So on a compact manifold there is no need to check where the flow is defined.
 
 ^pf-70-3
 
-*Uses:* [[§70 Complete Vector Fields#^thm-70-2|§70.2]], [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]], [[§69 Maximal Integral Curves and Flows#^def-69-2|Def. §69.2]]
+*Uses:* [[§70 Complete Vector Fields#^thm-70-2|§70.2]], [[§69 Maximal Integral Curves and Flows#^lem-69-3|§69.3]], [[§69 Maximal Integral Curves and Flows#^def-69-3|Def. §69.3]]
 
 > [!theorem] Theorem §70.4: The Escape Lemma
 > Let $\mathbf{X} \in \mathfrak{X}(M)$ and $p \in M$ with $\beta(p) < +\infty$. Then the image $\varphi^p\big((\alpha(p), \beta(p))\big)$ of the maximal integral curve is not contained in any compact subset of $M$. The same holds if $\alpha(p) > -\infty$.
@@ -325,7 +325,7 @@ Lemma [[§67 Integral Curves#^lem-67-5|§67.5]] is the case of a diffeomorphism 
 
 ![[m591-70-6.svg]]
 
-The theorem says more: left-translating by $g$ the integral curve through the identity gives the integral curve through $g$, as in the figure. For $G = \mathrm{GL}(n, \mathbb{R})$ and the left-invariant field with $\mathbf{X}_I = A$, the curve $\varphi^I(t)$ is the matrix exponential $e^{tA}$ (Theorem [[§71 The Exponential Map#^thm-71-9|§71.9]]), and $\varphi^g(t) = g\, e^{tA}$.
+The theorem says more: left-translating by $g$ the integral curve through the identity gives the integral curve through $g$, as in the figure. For $G = \mathrm{GL}(n, \mathbb{R})$ and the left-invariant field with $\mathbf{X}_I = A$, the curve $\varphi^I(t)$ is the matrix exponential $e^{tA}$ (Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]]), and $\varphi^g(t) = g\, e^{tA}$.
 
 ![[m591-70-3.svg]]
 

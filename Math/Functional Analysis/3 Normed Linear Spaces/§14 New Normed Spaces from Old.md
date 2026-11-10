@@ -39,12 +39,25 @@ If $B_1$ and $B_2$ denote the closed unit balls of $\|\cdot\|_1$ and $\|\cdot\|_
 The constants must work for all $x$ at once: the condition says that the ratio $\|x\|_1 / \|x\|_2$ is bounded above and below on $X \setminus \{0\}$. Its meaning is topological.
 
 > [!theorem] Proposition §14.1: Equivalent Norms Have the Same Convergence
-> Let $\|\cdot\|_1$ and $\|\cdot\|_2$ be equivalent norms on $X$. Then a sequence converges to $x$ in $\|\cdot\|_1$ iff it converges to $x$ in $\|\cdot\|_2$; a sequence is Cauchy for $\|\cdot\|_1$ iff it is Cauchy for $\|\cdot\|_2$; a subset of $X$ is closed for $\|\cdot\|_1$ iff it is closed for $\|\cdot\|_2$; and $(X, \|\cdot\|_1)$ is complete iff $(X, \|\cdot\|_2)$ is.
+> Let $\|\cdot\|_1$ and $\|\cdot\|_2$ be equivalent norms on $X$. Then:
+>
+> - (a) a sequence converges to $x$ in $\|\cdot\|_1$ if and only if it converges to $x$ in $\|\cdot\|_2$;
+> - (b) a sequence is Cauchy for $\|\cdot\|_1$ if and only if it is Cauchy for $\|\cdot\|_2$;
+> - (c) a subset of $X$ is closed for $\|\cdot\|_1$ if and only if it is closed for $\|\cdot\|_2$;
+> - (d) $(X, \|\cdot\|_1)$ is complete if and only if $(X, \|\cdot\|_2)$ is.
 
 ^prop-14-1
 
 > [!proof]+ Proof
-> (Not covered in lecture.) With $c_1\|x\|_2 \le \|x\|_1 \le c_2\|x\|_2$, we have $\|x_n - x\|_1 \le c_2\|x_n - x\|_2$ and $\|x_n - x\|_2 \le c_1^{-1}\|x_n - x\|_1$, so the two notions of convergence coincide; the same inequalities applied to $x_m - x_k$ give the statement about Cauchy sequences. Closedness (Definition [[§11 Normed Linear Spaces#^def-11-6|§11.6]]) and completeness are defined through convergent and Cauchy sequences alone, so they coincide as well.
+> (Not covered in lecture.) Let $c_1, c_2 > 0$ with $c_1\|x\|_2 \le \|x\|_1 \le c_2\|x\|_2$ for all $x \in X$ (Definition [[§14 New Normed Spaces from Old#^def-14-1|§14.1]]).
+>
+> (a) We have $\|x_n - x\|_1 \le c_2\|x_n - x\|_2$ and $\|x_n - x\|_2 \le c_1^{-1}\|x_n - x\|_1$, so $\|x_n - x\|_1 \to 0$ if and only if $\|x_n - x\|_2 \to 0$.
+>
+> (b) The same two inequalities applied to $x_m - x_k$: if $\|x_m - x_k\|_2 < \varepsilon / c_2$ for all $m, k \ge N$, then $\|x_m - x_k\|_1 < \varepsilon$ for all $m, k \ge N$; and if $\|x_m - x_k\|_1 < c_1 \varepsilon$ for all $m, k \ge N$, then $\|x_m - x_k\|_2 < \varepsilon$ for all $m, k \ge N$.
+>
+> (c) A subset $S$ is closed for a norm if and only if it contains the limit of every sequence in $S$ that converges for that norm (Definition [[§11 Normed Linear Spaces#^def-11-6|§11.6]]). By (a) the convergent sequences, and their limits, are the same for the two norms.
+>
+> (d) A normed space is complete if and only if each of its Cauchy sequences converges (Definition [[§12 Completeness#^def-12-1|§12.1]]). By (b) the Cauchy sequences are the same for the two norms, and by (a) so are the convergent sequences.
 
 ^pf-14-1
 
@@ -72,7 +85,7 @@ Anything defined in terms of convergence cannot tell equivalent norms apart. Con
 ^cor-14-3
 
 > [!proof]+ Proof
-> If they were equivalent, Proposition [[§14 New Normed Spaces from Old#^prop-14-1|§14.1]] would give that $(X, \|\cdot\|_1)$ is complete if and only if $(X, \|\cdot\|_2)$ is, contradicting the hypothesis.
+> If they were equivalent, Proposition [[§14 New Normed Spaces from Old#^prop-14-1|§14.1]](d) would give that $(X, \|\cdot\|_1)$ is complete if and only if $(X, \|\cdot\|_2)$ is, contradicting the hypothesis.
 
 ^pf-14-3
 
@@ -104,7 +117,7 @@ Anything defined in terms of convergence cannot tell equivalent norms apart. Con
 ^thm-14-4
 
 > [!proof]+ Proof
-> (HW2, Problem 2(a).) If $X = \{0\}$ every norm is identically $0$ and there is nothing to prove; assume $n = \dim X \ge 1$. Since $X$ is finite dimensional, it has a basis $\{e_1, \ldots, e_n\}$, and every $x \in X$ can be written uniquely as $x = \sum_{i=1}^n a_i e_i$ with $a_i \in \mathbb{F}$. Two norms $\|\cdot\|_a$ and $\|\cdot\|_b$ on $X$ are equivalent, written $\|\cdot\|_a \sim \|\cdot\|_b$, if there are constants $c, C > 0$ with $c\,\|x\|_a \le \|x\|_b \le C\,\|x\|_a$ for all $x$.
+> (HW2, Problem 2(a).) If $X = \{0\}$ every norm is identically $0$ and there is nothing to prove; assume $n = \dim X \ge 1$. Since $X$ is finite dimensional, it has a basis $\{e_1, \ldots, e_n\}$, and every $x \in X$ can be written uniquely as $x = \sum_{i=1}^n a_i e_i$ with $a_i \in \mathbb{F}$. Two norms $\|\cdot\|_a$ and $\|\cdot\|_b$ on $X$ are equivalent, written $\|\cdot\|_a \sim \|\cdot\|_b$, if there are constants $c, C > 0$ with $c\,\|x\|_a \le \|x\|_b \le C\,\|x\|_a$ for all $x$ (this is Definition [[§14 New Normed Spaces from Old#^def-14-1|§14.1]]).
 >
 > **Step 1: equivalence of norms is an equivalence relation.** *Reflexivity:* $1 \cdot \|x\|_a \le \|x\|_a \le 1 \cdot \|x\|_a$. *Symmetry:* suppose $c_1\|x\|_a \le \|x\|_b \le c_2\|x\|_a$ for all $x$, with $c_1, c_2 > 0$. Dividing the right-hand inequality by $c_2$ gives $\frac{1}{c_2}\|x\|_b \le \|x\|_a$, and dividing the left-hand one by $c_1$ gives $\|x\|_a \le \frac{1}{c_1}\|x\|_b$; hence $\frac{1}{c_2}\|x\|_b \le \|x\|_a \le \frac{1}{c_1}\|x\|_b$. *Transitivity:* if $c_1\|x\|_a \le \|x\|_b \le c_2\|x\|_a$ and $d_1\|x\|_b \le \|x\|_c \le d_2\|x\|_b$ for all $x$, with all four constants positive, then
 >
@@ -134,7 +147,7 @@ Anything defined in terms of convergence cannot tell equivalent norms apart. Con
 >
 > Given $\varepsilon > 0$, take $\delta = C_1\varepsilon$: if $\|x - y\|_1 < \delta$ then $\bigl|\,\|x\|' - \|y\|'\,\bigr| < \varepsilon$. So $\|\cdot\|' : X \to \mathbb{R}$ is continuous when distances in $X$ are measured by $\|\cdot\|_1$.
 >
-> **Step 5: the unit sphere of $\|\cdot\|_1$ is sequentially compact.** Let $S = \{x \in X : \|x\|_1 = 1\}$ and let $\{x^{(k)}\} \subset S$, $x^{(k)} = \sum_i a^{(k)}_i e_i$. Each coordinate sequence is bounded, $|a^{(k)}_i| \le \|x^{(k)}\|_1 = 1$. By [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] in $\mathbb{F}$ applied $n$ times — extract a subsequence along which $a^{(k)}_1$ converges, then a further subsequence along which $a^{(k)}_2$ converges, and so on — there is a subsequence $\{x^{(k_r)}\}$ with $a^{(k_r)}_i \to a_i$ for every $i = 1, \ldots, n$. Put $x = \sum_i a_i e_i$. Then $\|x^{(k_r)} - x\|_1 = \sum_i |a^{(k_r)}_i - a_i| \to 0$ (a finite sum of terms tending to $0$), and $\|x\|_1 = \sum_i |a_i| = \lim_r \sum_i |a^{(k_r)}_i| = 1$, so $x \in S$. Thus every sequence in $S$ has a subsequence converging in $\|\cdot\|_1$ to a point of $S$.
+> **Step 5: the unit sphere of $\|\cdot\|_1$ is sequentially compact.** Let $S = \{x \in X : \|x\|_1 = 1\}$ and let $\{x^{(k)}\} \subset S$, $x^{(k)} = \sum_i a^{(k)}_i e_i$. Each coordinate sequence is bounded, $|a^{(k)}_i| \le \|x^{(k)}\|_1 = 1$. By [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] in $\mathbb{F}$ applied $n$ times — extract a subsequence along which $a^{(k)}_1$ converges, then a further subsequence along which $a^{(k)}_2$ converges, and so on — there is a subsequence $\{x^{(k_r)}\}$ with $a^{(k_r)}_i \to a_i$ for every $i = 1, \ldots, n$. Put $x = \sum_i a_i e_i$. Then $\|x^{(k_r)} - x\|_1 = \sum_i |a^{(k_r)}_i - a_i| \to 0$ (a finite sum of terms tending to $0$), and $\|x\|_1 = \sum_i |a_i| = \lim_r \sum_i |a^{(k_r)}_i| = 1$, so $x \in S$. Thus every sequence in $S$ has a subsequence converging in $\|\cdot\|_1$ to a point of $S$, which is what sequential compactness of $S$ means (defined in [[§20 Compactness and the Unit Ball|§20]], Definition [[§20 Compactness and the Unit Ball#^def-20-1|§20.1]]).
 >
 > **Step 6: $\|\cdot\|'$ attains a positive minimum on $S$.** Let $c = \inf_{x \in S} \|x\|' \ge 0$. Choose $x^{(k)} \in S$ with $\|x^{(k)}\|' \to c$, and by Step 5 a subsequence $x^{(k_r)} \to x^{\ast} \in S$ in $\|\cdot\|_1$. By Step 4, $\|x^{(k_r)}\|' \to \|x^{\ast}\|'$, so $\|x^{\ast}\|' = c$. Since $x^{\ast} \in S$ we have $x^{\ast} \ne 0$, hence $c = \|x^{\ast}\|' > 0$ by positivity of $\|\cdot\|'$.
 >
@@ -160,7 +173,7 @@ Anything defined in terms of convergence cannot tell equivalent norms apart. Con
 ^rem-14-1
 
 > [!example] Example §14.2: The Unit Sphere of $\ell^1$ is Not Sequentially Compact
-> This example uses $\ell^1$ (Definition [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|§18.1]], Chapter 4) ahead of its definition. The unit sphere $\{a \in \ell^1 : \|a\|_1 = 1\}$ contains the unit vectors $e_1, e_2, \ldots$ with $\|e_i - e_j\|_1 = 2$ for $i \neq j$, and $\{e_i\}$ has no convergent subsequence. So Step 5 of the proof of Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]] has no infinite-dimensional analogue.
+> This example uses $\ell^1$ (Definition [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^def-18-1|§18.1]], Chapter 4) and sequential compactness (Definition [[§20 Compactness and the Unit Ball#^def-20-1|§20.1]], [[§20 Compactness and the Unit Ball|§20]]) ahead of their definitions. The unit sphere $\{a \in \ell^1 : \|a\|_1 = 1\}$ contains the unit vectors $e_1, e_2, \ldots$ with $\|e_i - e_j\|_1 = 2$ for $i \neq j$, and $\{e_i\}$ has no convergent subsequence. So Step 5 of the proof of Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]] has no infinite-dimensional analogue.
 >
 > *(Justification filled in.)* $e_i$ has a single nonzero entry $1$, so $\|e_i\|_1 = 1$; for $i \neq j$, $e_i - e_j$ has exactly two nonzero entries, $1$ and $-1$, so $\|e_i - e_j\|_1 = 2$. A convergent subsequence $\{e_{i_r}\}$ would be Cauchy (Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]](b)), so $\|e_{i_r} - e_{i_s}\|_1 < 1$ for all large $r \neq s$; but distinct terms are at distance $2$.
 
@@ -172,7 +185,7 @@ Anything defined in terms of convergence cannot tell equivalent norms apart. Con
 ^cor-14-5
 
 > [!proof]+ Proof
-> (Not covered in lecture.) Let $(Y, \|\cdot\|)$ be finite-dimensional with basis $e_1, \ldots, e_n$, and let $\|\cdot\|_1$ be the coordinate norm of Step 2 above. By Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]] the two norms are equivalent, so by Proposition [[§14 New Normed Spaces from Old#^prop-14-1|§14.1]] it suffices to show that $(Y, \|\cdot\|_1)$ is complete. If $y_k = \sum_i a^{(k)}_i e_i$ is Cauchy for $\|\cdot\|_1$, then $|a^{(k)}_i - a^{(m)}_i| \le \|y_k - y_m\|_1$, so each coordinate sequence is Cauchy in $\mathbb{F}$ and converges to some $a_i$. Put $y = \sum_i a_i e_i \in Y$; then $\|y_k - y\|_1 = \sum_{i=1}^n |a^{(k)}_i - a_i| \to 0$.
+> (Not covered in lecture.) Let $(Y, \|\cdot\|)$ be finite-dimensional with basis $e_1, \ldots, e_n$, and let $\|\cdot\|_1$ be the coordinate norm of Step 2 above. By Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]] the two norms are equivalent, so by Proposition [[§14 New Normed Spaces from Old#^prop-14-1|§14.1]](d) it suffices to show that $(Y, \|\cdot\|_1)$ is complete. If $y_k = \sum_i a^{(k)}_i e_i$ is Cauchy for $\|\cdot\|_1$, then $|a^{(k)}_i - a^{(m)}_i| \le \|y_k - y_m\|_1$, so each coordinate sequence is Cauchy in $\mathbb{F}$ and converges to some $a_i$. Put $y = \sum_i a_i e_i \in Y$; then $\|y_k - y\|_1 = \sum_{i=1}^n |a^{(k)}_i - a_i| \to 0$.
 
 ^pf-14-5
 
@@ -282,15 +295,6 @@ For a quotient $X / Y$, an equivalence class $[x] = x + Y$ contains many element
 
 ^thm-14-9
 
-![[m556-10-2.svg]]
-*The quotient norm in the plane: the classes are the translates of $Y$ (gray, with $[x]$ in red), and $\|[x]\|$ is the norm of the point $x'$ of $[x]$ closest to $0$.*
-
-![[m556-10-a2.gif|420]]
-
-*(Not from lecture; animation added, vault only.)* First $x$ slides along its class $[x] = x + Y$ (red): the shortest representative $x'$, and with it $\|[x]\| = \operatorname{dist}(x, Y) = 1.20$, do not change. Then the class itself moves, and $\|[x]\|$ changes with its distance from $Y$.
-
-The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from the origin to the translate $[x]$, i.e. the norm of its closest point. With an inner product that point would be the foot of the perpendicular from $0$ (dashed); without one there is no perpendicular, the infimum need not be attained, and only the number $\inf \|x'\|$ is available. This is the same substitution of “quotient” for “orthogonal complement” as in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]].
-
 > [!proof]+ Proof
 > $\|[x]\|$ is well defined: the set $\{\|x'\| : x' \in [x]\}$ is nonempty and bounded below by $0$, so its infimum is a real number $\ge 0$, and it depends only on the class, not on the representative $x$, since the set does. So $\|\cdot\| : X/Y \to \mathbb{R}_+$.
 >
@@ -337,6 +341,15 @@ The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from t
 > [!remark]- Connections
 > - The quotient space itself: [[§2 Quotient Spaces and Complements#^prop-2-2|§2.2]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-99|LADR 3.99]], [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103]]; a seminorm made into a norm by passing to a quotient: [[§34 Normed Linear Spaces and Lᵖ Spaces#^ex-34-3|551 Ex. §34.3]] ($BV$ modulo constants).
 > - With an inner product the infimum is attained at the foot of the perpendicular: [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]], [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]].
+
+![[m556-10-2.svg]]
+*The quotient norm in the plane: the classes are the translates of $Y$ (gray, with $[x]$ in red), and $\|[x]\|$ is the norm of the point $x'$ of $[x]$ closest to $0$.*
+
+![[m556-10-a2.gif|420]]
+
+*(Not from lecture; animation added, vault only.)* First $x$ slides along its class $[x] = x + Y$ (red): the shortest representative $x'$, and with it $\|[x]\| = \operatorname{dist}(x, Y) = 1.20$, do not change. Then the class itself moves, and $\|[x]\|$ changes with its distance from $Y$.
+
+The classes are the parallel translates of $Y$; $\|[x]\|$ is the distance from the origin to the translate $[x]$, i.e. the norm of its closest point. With an inner product that point would be the foot of the perpendicular from $0$ (dashed); without one there is no perpendicular, the infimum need not be attained, and only the number $\inf \|x'\|$ is available. This is the same substitution of “quotient” for “orthogonal complement” as in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]].
 
 > [!theorem] Proposition §14.10: The Quotient Seminorm; Closedness is Necessary
 > Let $Y$ be any linear subspace of a normed linear space $X$, closed or not. Then $\|[x]\| = \inf_{y \in Y}\|x + y\|$ is a seminorm on $X/Y$, and it is a norm if and only if $Y$ is closed.

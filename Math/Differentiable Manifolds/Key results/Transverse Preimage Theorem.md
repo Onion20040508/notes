@@ -13,7 +13,7 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§7 The Regular Value Theorem#^def-7-3|Definition §7.3: Regular Point]]
 - [[§7 The Regular Value Theorem#^def-7-4|Definition §7.4: Regular Value]]
-- [[§7 The Regular Value Theorem#^thm-7-5|Theorem §7.5: Regular Value Theorem]]
+- [[§7 The Regular Value Theorem#^thm-7-6|Theorem §7.6: Regular Value Theorem]]
 - [[§20 Manifolds in Euclidean Space#^prop-20-2|Proposition §20.2: Regular Level Sets Are Smooth Manifolds]]
 - [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]
 - [[§25 The Geometric Tangent Space#^thm-25-3|Theorem §25.3: The Geometric Tangent Space Is the Kernel of the Jacobian]]

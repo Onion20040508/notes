@@ -9,7 +9,7 @@ tags: [chapter, quantum-field-theory]
 ← [[· C8 Quantum Electrodynamics]] · ↑ [[Quantum Field Theory]] · [[· CA Mathematical Methods]] →
 
 **Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (12), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (9), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (74), [[· C2b Two-Point Functions, Causality and Propagators|C2b Two-Point Functions, Causality and Propagators]] (9), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (156), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (121), [[· C6a Interactions and Correlation Functions|C6a Interactions and Correlation Functions]] (9), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (19), [[· CA Mathematical Methods|CA Mathematical Methods]] (42), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (38)
-**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (10), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (4), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (2), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (4)
+**Used by:** [[· C1b Classical Field Theory|C1b Classical Field Theory]] (5), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (12), [[· C5a Spinors and the Dirac Equation|C5a Spinors and the Dirac Equation]] (10), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (5), [[· C6b The S-Matrix and Observables|C6b The S-Matrix and Observables]] (2), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (2), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (4)
 
 ## Sections
 - [[§C9.1 Discrete Lorentz Transformations]] — 513 notes Ch. 11 §11.1
@@ -95,7 +95,7 @@ tags: [chapter, quantum-field-theory]
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-7|§C9.9.7]] Time Reversal on the Dirac Field
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-8|§C9.9.8]] Time Reversal on the Dirac Conjugate Field
 - [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-9|§C9.9.9]] Antiunitary Operators: Unitary Times Conjugation, and Their Square
-- [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] Time Reversal Twice Is −1 on Fermions
+- [[§C9.9 Time Reversal on States, Spinors and the Dirac Field#^thm-c9-9-10|§C9.9.10]] ★ Time Reversal Twice Is −1 on Fermions
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-1|§C9.10.1]] The Vector Current under Time Reversal
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-2|§C9.10.2]] Time Reversal on a General Bilinear
 - [[§C9.10 Fermion Bilinears under Time Reversal#^thm-c9-10-3|§C9.10.3]] The Scalar Bilinear Is Time-Reversal Invariant

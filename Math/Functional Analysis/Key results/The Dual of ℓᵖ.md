@@ -19,6 +19,7 @@ tags: [functional-analysis, hub]
 - [[§36 Duality in Normed Spaces#^ex-36-2|Example §36.2: (ℓ^∞)' is Larger than ell¹]]
 - [[§36 Duality in Normed Spaces#^cor-36-5|Corollary §36.5: The Pairing Without the Bar]]
 - [[§36 Duality in Normed Spaces#^cor-36-6|Corollary §36.6: Duality Formula for the ℓ^p Norm]]
+- [[§36 Duality in Normed Spaces#^prop-36-8|Proposition §36.8: The Dual of c_0]]
 - [[§37 Separable Duals and Reflexive Spaces#^ex-37-4|Example §37.4: ℓ^p is Reflexive for 1 < p < ∞]]
 - [[§37 Separable Duals and Reflexive Spaces#^cor-37-7|Corollary §37.7: Separability of X and X' for Reflexive X]]
 

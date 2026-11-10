@@ -67,6 +67,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6, 8, 10 and 15
 | [[§26 Bounded Linear Functionals and the Riesz Representation Theorem\|§26]] Riesz representation | §6.3, Thm 4 | Lax–Milgram (Thm 6) is treated in [[§32 Sesquilinear Forms and the Lax–Milgram Theorem|§32]]. |
 | [[§27 Orthonormal Sets and Bases\|§27]]–[[§28 Existence of Orthonormal Bases and Separability\|§28]] Orthonormal bases | §6.4; §5.1 (separability) | Isometries of $H$ (Thm 10) not covered. Separability of $\ell^p$, $L^p$ proved in the notes (Lax asserts). The classification of separable Hilbert spaces is Lax's Exercise 10 (HW5). |
 | [[§30 Boundedness and Continuity\|§30]] Bounded linear maps | §15.1, Thms 1–3 | Lax assumes Banach spaces throughout §15.1; not needed for Thm 1. |
+| [[§31 Dual Spaces\|§31]] Dual spaces | §8.1, Thm 3; §8.3, Thm 11; §6.3, Thm 4, Lemma 5 | The dual is always a Banach space (§8.1, Thm 3); the Riesz representation theorem with $\Vert\ell\Vert= \Vert a\Vert$, which Lax's Thm 4 of §6.3 does not state; $(L^p)' = L^{p'}$ stated (§8.3, Thm 11). The null space of a functional has codimension one and is closed exactly when the functional is bounded: Lemma 5 of §6.3 (HW5). The integral functional on $C[0,1]$ (HW8) is not in Lax. These Ch. 8 numbers are the ones on the reference lines of the boxes. |
 | [[§32 Sesquilinear Forms and the Lax–Milgram Theorem\|§32]] Lax–Milgram | §6.3, Thm 6 | Proved through the operator $A$ of [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1\|Theorem §32.1]]: one-to-one with a lower bound, closed range, dense range. |
 | [[§33 Sobolev Spaces and Weak Derivatives\|§33]] Sobolev spaces | §5.1, example (g) | Weak derivatives, $H^1_0$ and the Poincaré inequality are not in Lax's Chapters 1–15 as treated here. |
 | [[§36 Duality in Normed Spaces\|§36]] Duality in normed spaces | Ch. 8; §5.1, Thm 5 | Normed Hahn–Banach, the norm and distance formulas, annihilators, the dual of a quotient. Lax's numbering in Ch. 8 has not been checked against the text for this section, so no Ch. 8 numbers are cited for it. $(\ell^p)' = \ell^{p'}$ is proved in full; $(L^p)'$ is outlined. |
@@ -89,6 +90,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6, 8, 10 and 15
 | Ch. 1, definition of linear span | Definition [[§1 Linear Spaces#^def-1-5\|§1.5]] | Linear Span |
 | Ch. 1, equivalence mod $Y$ | Definition [[§2 Quotient Spaces and Complements#^def-2-1\|§2.1]] | Equivalence mod $Y$ |
 | Ch. 1, quotient space | Definition [[§2 Quotient Spaces and Complements#^def-2-2\|§2.2]] | Equivalence Class |
+| Ch. 1, equivalence mod $Y$ | Lemma [[§2 Quotient Spaces and Complements#^lem-2-1\|§2.1]] | Equivalence mod $Y$ is an Equivalence Relation |
 | Ch. 1, quotient space | Definition [[§2 Quotient Spaces and Complements#^def-2-3\|§2.3]] | Quotient Space |
 | Ch. 1, quotient space | Proposition [[§2 Quotient Spaces and Complements#^prop-2-2\|§2.2]] | $X/Y$ is a Linear Space |
 | Ch. 1, definition of linear map | Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1\|§3.1]] | Linear Map |
@@ -102,8 +104,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6, 8, 10 and 15
 | §3.1, definition of linear functional | Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-5\|§3.5]] | Linear Functional |
 | §3.1, definition of interior point | Definition [[§7 Convex Sets and the Gauge#^def-7-1\|§7.1]] | Interior Point |
 | §3.1, equation (8) | Definition [[§7 Convex Sets and the Gauge#^def-7-2\|§7.2]] | Gauge |
-| §3.1, conditions (1)–(2) of Thm 1 | Definition [[§5 Statement and Motivation#^def-5-1\|§5.1]] | Positive Homogeneous |
-| §3.1, conditions (1)–(2) of Thm 1 | Definition [[§5 Statement and Motivation#^def-5-2\|§5.2]] | Subadditive |
+| §3.1, condition (1) of Thm 1 | Definition [[§5 Statement and Motivation#^def-5-1\|§5.1]] | Positive Homogeneous |
+| §3.1, condition (2) of Thm 1 | Definition [[§5 Statement and Motivation#^def-5-2\|§5.2]] | Subadditive |
 | §3.1, Thm 1 | Theorem [[§5 Statement and Motivation#^thm-5-3\|§5.3]] | Hahn–Banach |
 | §3.1, proof of Thm 1 | Lemma [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1\|§6.1]] | One-Step Extension |
 | §3.1, proof of Thm 1 | Theorem [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2\|§6.2]] | Zorn's Lemma |
@@ -161,13 +163,13 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6, 8, 10 and 15
 | §6.2, Thm 3 | Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4\|§25.4]] | Orthogonal Decomposition |
 | §6.3, (14) | Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1\|§26.1]] | Bounded Linear Functional |
 | §6.3, Thm 4 | Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5\|§26.5]] | Riesz Representation Theorem |
-| §6.3, Thm 4 (Lax does not state $\Vert \ell\Vert  = \Vert a\Vert $) | Theorem [[§31 Dual Spaces#^thm-31-2\|§31.2]] | Riesz Representation Theorem, with Norms |
+| §6.3, Thm 4 (Lax does not state $\Vert\ell\Vert= \Vert a\Vert$) | Theorem [[§31 Dual Spaces#^thm-31-2\|§31.2]] | Riesz Representation Theorem, with Norms |
 | §6.3, Thm 4; cf. §8.3, Thm 9 | Corollary [[§31 Dual Spaces#^cor-31-3\|§31.3]] | The Riesz Map: $H' \cong H$ |
 | §6.3, Thm 4 with §6.1, Examples 2–3 | Example [[§31 Dual Spaces#^ex-31-1\|§31.1]] | $(L^2)' = L^2$ and $(\ell^2)' = \ell^2$ |
 | §6.3, Lemma 5(i) | Lemma [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4\|§26.4]] | The Kernel Has Codimension One |
 | §6.3, Lemma 5(i) | Proposition [[§31 Dual Spaces#^prop-31-6\|§31.6]] | The Null Space Has Codimension One |
 | §6.3, Lemma 5(iii) | Proposition [[§31 Dual Spaces#^prop-31-7\|§31.7]] | Bounded if and only if the Null Space is Closed |
-| §6.3, conditions (i)–(ii) of Thm 6 | Definition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1\|§32.1]] | Sesquilinear Form; Bounded Form |
+| §6.3, conditions (i)–(ii) of Thm 6 | Definition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1\|§32.1]] | Sesquilinear Form |
 | §6.3, Thm 6 | Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-2\|§32.2]] | Lax–Milgram |
 | §6.4, closed linear span | Definition [[§11 Normed Linear Spaces#^def-11-9\|§11.9]] | Closed Linear Span |
 | §6.4, definition of orthonormal set | Definition [[§27 Orthonormal Sets and Bases#^def-27-1\|§27.1]] | Orthogonal and Orthonormal Sets |
@@ -188,7 +190,7 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6, 8, 10 and 15
 | Ch. 10, Example 1 (left as an exercise there) | Example [[§43 Weak and Weak-Star Convergence#^ex-43-1\|§43.1]] | Weak but Not Strong Convergence in $\ell^2$ |
 | Ch. 10, Example 2 | Proposition [[§43 Weak and Weak-Star Convergence#^prop-43-2\|§43.2]] | Orthonormal Sequences Converge Weakly to $0$ |
 | §10.1, Thm 1 (the direction $\Leftarrow$, Exercise 3) and Thm 4$'$ (weakly convergent sequences are bounded) | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-3\|§43.3]] | Criterion for Weak Convergence |
-| §10.1, Thms 2–3 (proved from the Baire category principle); §15.3, Thm 7 (for operators, assuming only $\vert \ell(A_\alpha x)\vert  \le c(x, \ell)$, with $Y$ Banach) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6\|§42.6]] | Uniform Boundedness Principle |
+| §10.1, Thms 2–3 (proved from the Baire category principle); §15.3, Thm 7 (for operators, assuming only $\vert\ell(A_\alpha x)\vert\le c(x, \ell)$, with $Y$ Banach) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-6\|§42.6]] | Uniform Boundedness Principle |
 | §10.1, Thms 4$'$ and 5 | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-4\|§43.4]] | The Norm of a Weak Limit |
 | §10.1, Thm 6 (for a closed convex $K$ containing the $x_n$; proved with support functions, §8.4 Thm 17) | Theorem [[§43 Weak and Weak-Star Convergence#^thm-43-7\|§43.7]] | Mazur's Theorem |
 | §10.3, definition (there $X$ is a Banach space) | Definition [[§43 Weak and Weak-Star Convergence#^def-43-2\|§43.2]] | Weak-$\ast$ Convergence |
@@ -212,8 +214,8 @@ The course follows Lax, *Functional Analysis*, Chapters 1, 3, 5, 6, 8, 10 and 15
 | §15.5, Thm 12 | Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4\|§41.4]] | Closed Graph Theorem |
 | §15.5, Thm 13 (for two compatible complete norms, proved there from the closed graph theorem) | Theorem [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3\|§41.3]] | Equivalent Norm Theorem |
 | §15.5, Thm 13 | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-5\|§42.5]] | Equivalent Norm Theorem, Second Version |
-| §15.5, end (sets of second category, Thm 16) | Definition [[§40 The Baire Category Theorem#^def-40-1\|§40.1]] | Nowhere Dense; First and Second Category |
-| §15.5, Thm 16 and Exercise 13 (there $Y$ is a Banach space, and the conclusion is $R(T) = Y$) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-2\|§42.2]] | Open Mapping Theorem, General Form |
+| §15.5, end (sets of second category, Thm 16) | Definition [[§40 The Baire Category Theorem#^def-40-3\|§40.3]] | Set of the Second Category |
+| §15.5, Thm 16 and Exercise 13 (there $Y$ is a Banach space, and the conclusion is $R(M) = Y$) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-2\|§42.2]] | Open Mapping Theorem, General Form |
 | §16.1, Thm 1(i); §16.3.1 | Example [[§30 Boundedness and Continuity#^ex-30-2\|§30.2]] | The Fourier Transform from $L^1$ to $L^\infty$ |
 | §34.3, Thm 8 (Lax's equivalence theorem, for difference approximations of a semigroup) | Theorem [[§42 Uniform Boundedness and Approximation#^thm-42-9\|§42.9]] | Lax Equivalence Theorem |
 | cf. §7.2, before (22) | Proposition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^prop-32-4\|§32.4]] | Symmetric Lax–Milgram is Riesz |

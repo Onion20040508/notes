@@ -259,7 +259,7 @@ Motivated from geometry: can form topological spaces by “pasting” or identif
 *Uses:* [[§10 Continuous Functions#^thm-10-4|§10.4]], [[§13 Quotient Topology#^ex-13-4|Ex. §13.4]]
 
 > [!remark]- Connections
-> - The same theorem in 591, where it is also shown to characterize the quotient topology: [[§5 Quotient Maps#^thm-5-1|591 Thm. §5.1]], [[§5 Quotient Maps#^cor-5-3|591 Cor. §5.3]].
+> - The same theorem in 591, where it is also shown to characterize the quotient topology: [[§5 Quotient Maps#^thm-5-1|591 Thm. §5.1]], [[§5 Quotient Maps#^cor-5-4|591 Cor. §5.4]].
 
 > [!remark] Remark: Constant on Fibers
 > “$g$ is constant on each fiber $p^{-1}(\{y\})$” means: if $p(x_1) = p(x_2)$, then $g(x_1) = g(x_2)$.

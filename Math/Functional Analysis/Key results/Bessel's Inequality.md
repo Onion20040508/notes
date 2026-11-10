@@ -12,8 +12,8 @@ tags: [functional-analysis, hub]
 
 ## Its proof uses
 - [[§27 Orthonormal Sets and Bases#^lem-27-2|Lemma §27.2: Finite Bessel Inequality]]
-- [[§27 Orthonormal Sets and Bases#^def-27-4|Definition §27.4: Sums of Non-Negative Families]]
 - [[§27 Orthonormal Sets and Bases#^lem-27-3|Lemma §27.3: The Sum Does Not Depend on the Enumeration]]
+- [[§27 Orthonormal Sets and Bases#^def-27-4|Definition §27.4: Sums of Non-Negative Families]]
 - [[§27 Orthonormal Sets and Bases#^prop-27-4|Proposition §27.4: Only Countably Many Coefficients are Nonzero]]
 
 ## Used in (Functional Analysis)

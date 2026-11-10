@@ -57,8 +57,6 @@ tags: [functional-analysis, math556]
 
 ^thm-17-1
 
-For $p = q = 2$ this is the Cauchy–Schwarz inequality (Proposition [[§16 Means and Young's Inequality#^prop-16-1|§16.1]]) for infinite sequences.
-
 > [!proof]+ Proof
 > **Case $p = 1$, $q = \infty$.** For every $i$, $|b_i| \le \sup_j |b_j| = \|b\|_\infty$, so
 >
@@ -113,6 +111,8 @@ For $p = q = 2$ this is the Cauchy–Schwarz inequality (Proposition [[§16 Mean
 > [!remark]- Connections
 > - The integral version, home of the inequality in the vault: [[Hölder's Inequality|551 §34.5]], proved by the same normalize–Young–integrate argument; in this course [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|§19.1]] (cited) and [[§19 The Function Spaces Lᵖ(Ω)#^lem-19-7|§19.7]] (continuous functions, HW3).
 > - Used for Minkowski's inequality [[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-1|§18.1]] and for the convergence of the $\ell^2$ inner product in [[§22 Definition and Examples#^ex-22-2|Ex. §22.2]].
+
+For $p = q = 2$ this is the Cauchy–Schwarz inequality (Proposition [[§16 Means and Young's Inequality#^prop-16-1|§16.1]]) for infinite sequences.
 
 > [!remark] Remark
 > The proof is a direct application of Young's inequality: the normalization makes the right-hand side of Young sum to exactly $1$, and the exponents $p, q$ are chosen so that $|a_i'|^p$ and $|b_i'|^q$ are the two numbers being averaged. Nothing in the argument needed the sums to be finite in advance; that is why the theorem is stated on all of $\ell$, and why the finite-dimensional inequality (Corollary [[§17 Hölder's Inequality for Sequences#^cor-17-2|§17.2]] below) is a special case.

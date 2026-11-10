@@ -74,6 +74,38 @@ function __generator(thisArg, body) {
 var DEFAULT_SETTINGS = {
     preamblePath: "preamble.sty",
 };
+// Patched 2026-11-09 for MathJax 4 (Obsidian 1.15+): MathJax now starts up asynchronously,
+// so tex2chtml may not exist yet when the plugin loads; wait for MathJax.startup.promise
+// instead of replacing MathJax.startup.ready (which MathJax 4 no longer calls).
+function applyPreamble(preamble) {
+    var run = function () {
+        try {
+            MathJax.tex2chtml(preamble);
+        }
+        catch (e) {
+            if (MathJax.tex2chtmlPromise) {
+                MathJax.tex2chtmlPromise(preamble).catch(function (err) {
+                    console.warn("Extended MathJax: could not load the preamble", err);
+                });
+            }
+            else {
+                console.warn("Extended MathJax: could not load the preamble", e);
+            }
+        }
+    };
+    if (MathJax.tex2chtml != undefined) {
+        run();
+    }
+    else if (MathJax.startup && MathJax.startup.promise) {
+        MathJax.startup.promise.then(run);
+    }
+    else {
+        MathJax.startup.ready = function () {
+            MathJax.startup.defaultReady();
+            run();
+        };
+    }
+}
 var JaxPlugin = /** @class */ (function (_super) {
     __extends(JaxPlugin, _super);
     function JaxPlugin(app, manifest) {
@@ -90,15 +122,7 @@ var JaxPlugin = /** @class */ (function (_super) {
                     case 0: return [4 /*yield*/, this.app.vault.adapter.read(this.settings.preamblePath)];
                     case 1:
                         preamble = _a.sent();
-                        if (MathJax.tex2chtml == undefined) {
-                            MathJax.startup.ready = function () {
-                                MathJax.startup.defaultReady();
-                                MathJax.tex2chtml(preamble);
-                            };
-                        }
-                        else {
-                            MathJax.tex2chtml(preamble);
-                        }
+                        applyPreamble(preamble);
                         return [2 /*return*/];
                 }
             });

@@ -25,7 +25,6 @@ tags: [measure-theory, hub]
 - [[§35 Lᵖ as a Banach Space#^thm-35-2|Theorem §35.2: Minkowski's Inequality]]
 
 ## Used in (Functional Analysis)
-- [[§16 Means and Young's Inequality#^prop-16-1|Proposition §16.1: Cauchy–Schwarz in ℝⁿ]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^thm-19-1|Theorem §19.1: Hölder's Inequality for Functions]]
 - [[§19 The Function Spaces Lᵖ(Ω)#^rem-19-2|Remark: What “Integrable” Means Here]]
 

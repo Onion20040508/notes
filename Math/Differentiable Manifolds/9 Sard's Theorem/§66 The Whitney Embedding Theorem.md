@@ -23,7 +23,7 @@ The proof, for $M$ compact, has two parts with entirely different ideas: bump fu
 > [!proof]+ Proof
 > *(Lecture 21, Part I of the proof of Theorem [[§66 The Whitney Embedding Theorem#^thm-66-6|§66.6]], in the lecture's steps with details filled in.)* The tool is bump functions; the idea of a partition of unity ([[§65 Partitions of Unity|§65]]) is behind the construction.
 >
-> *The cover.* For every $x \in M$ choose a chart $(U_x, \varphi_x)$ at $x$ and an open coordinate ball $B_x \ni x$ with $\overline{B_x} \subseteq U_x$ and $\varphi_x(\overline{B_x})$ a closed ball in $\mathbb{R}^m$ — possible because $\varphi_x(U_x)$ is open, so it contains a closed Euclidean ball about $\varphi_x(x)$, whose preimage under $\varphi_x$ is $\overline{B_x}$. Let $\chi_x \in C^\infty_0(M)$ with $\operatorname{supp}\chi_x \subseteq U_x$ and $\chi_x \equiv 1$ on $\overline{B_x}$ (the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]). The *open* balls $B_x$ cover $M$; it matters that the cover is by the $B_x$, not the $U_x$, since the steps below use $\chi_i \equiv 1$ on $B_i$. $M$ is compact, so finitely many cover; relabel them $B_1, \ldots, B_n$, with charts $(U_i, \varphi_i)$ and bump functions $\chi_i$.
+> *The cover.* For every $x \in M$ choose a chart $(U_x, \varphi_x)$ at $x$ and an open coordinate ball $B_x \ni x$ with $\overline{B_x} \subseteq U_x$ and $\varphi_x(\overline{B_x})$ a closed ball in $\mathbb{R}^m$ — possible because $\varphi_x(U_x)$ is open, so it contains a closed Euclidean ball about $\varphi_x(x)$, whose preimage under $\varphi_x$ is $\overline{B_x}$. Let $\chi_x \in C^\infty_0(M)$ with $\operatorname{supp}\chi_x \subseteq U_x$ and $\chi_x \equiv 1$ on $\overline{B_x}$ (the proof of Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]). The *open* balls $B_x$ cover $M$; it matters that the cover is by the $B_x$, not the $U_x$, since the steps below use $\chi_i \equiv 1$ on $B_i$. $M$ is compact, so finitely many cover; relabel them $B_1, \ldots, B_n$, with charts $(U_i, \varphi_i)$ and bump functions $\chi_i$.
 >
 > *The map.* Each $\chi_i\varphi_i : M \to \mathbb{R}^m$, defined as $\chi_i \varphi_i$ on $U_i$ and $0$ outside, is smooth: it is smooth on $U_i$ and zero on the open set $M \setminus \operatorname{supp}\chi_i$, and these cover $M$ ($\operatorname{supp}\chi_i$ is compact, hence closed). Define
 >
@@ -41,7 +41,7 @@ The proof, for $M$ compact, has two parts with entirely different ideas: bump fu
 
 ^pf-66-1
 
-*Uses:* [[§56 Vector Fields#^prop-56-4|§56.4]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§44 Embeddings#^cor-44-6|§44.6]]
+*Uses:* [[§56 Vector Fields#^cor-56-7|§56.7]], [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§44 Embeddings#^cor-44-6|§44.6]]
 
 ![[m591-61-1.svg]]
 
@@ -102,7 +102,7 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 *(Not from lecture; figure added.)* Why the bound is $2m + 1$. For a curve ($m = 1$) in $\mathbb{R}^3$ ($N = 3$), $(M \times M) \setminus \Delta$ has dimension $2m = 2 = N - 1$, so the secant directions $\sigma(p, q)$ can fill an open set of $\mathbb{RP}^2$ and Corollary [[§63 Sard's Theorem#^cor-63-4|§63.4]] does not apply. Indeed, projecting a curve in space onto a plane along $\ell$ typically produces crossings: here $q - p$ is parallel to $\ell$, and $\pi_\ell(p) = \pi_\ell(q)$. The shadow is still an immersed curve, matching the immersion into $\mathbb{R}^{2m}$ of Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], but not an embedded one.
 
 > [!theorem] Lemma §66.4: When a Projection Is an Immersion
-> Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, $\ell = \mathbb{R}v$ a line with $v^N \neq 0$, and $UM$ the unit tangent bundle (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-5|§42.5]]), with
+> Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, $\ell = \mathbb{R}v$ a line with $v^N \neq 0$, and $UM$ the unit tangent bundle (Definition [[§42 The Normal Bundle of a Submanifold of Euclidean Space#^def-42-7|§42.7]]), with
 >
 > $$
 > G : UM \to \mathbb{RP}^{N-1}, \qquad G(x, u) = [u] .
@@ -187,7 +187,7 @@ Projection along a line $\ell$, in the plane ($N = 2$). Points of $M$ slide alon
 
 *Lecture 22. Only a sketch of the proof, with precise references to Lee for the rest. The noncompact proof has the same two parts as the compact one — first put $M$ in some Euclidean space, then project as much as you can — and the lecture sketched only the first. The main tool is the existence of exhaustion functions (Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]]), proved in [[§65 Partitions of Unity|§65]] with partitions of unity.*
 
-The sketch uses an exhaustion function (Definition [[§65 Partitions of Unity#^def-65-6|§65.6]]): a smooth $f \ge 0$ on $M$ whose sublevel sets $f^{-1}\big((-\infty, c]\big)$ are all compact. Every smooth manifold has one (Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]]); both are in [[§65 Partitions of Unity|§65]], where partitions of unity give the proof.
+The sketch uses an exhaustion function (Definition [[§65 Partitions of Unity#^def-65-7|§65.7]]): a smooth $f \ge 0$ on $M$ whose sublevel sets $f^{-1}\big((-\infty, c]\big)$ are all compact. Every smooth manifold has one (Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]]); both are in [[§65 Partitions of Unity|§65]], where partitions of unity give the proof.
 
 *Slicing $M$ into compact pieces.* The idea is to use level sets of an exhaustion function to slice $M$ into compact pieces, which have boundary (ignored in the sketch), to embed each piece, and to keep track of the overlaps. Let $f$ be an exhaustion function. Its singular values have measure zero (Theorem [[§63 Sard's Theorem#^thm-63-3|§63.3]]), so every interval contains regular values; for each $i = 0, 1, 2, \ldots$ pick regular values $a_i, b_i$ with $i < a_i < b_i < i + 1$, and put
 
@@ -225,7 +225,7 @@ Left: a sublevel set of an exhaustion function on a surface with holes, as on th
 >
 > *$F$ is smooth.* $\rho_iF_i$, a priori defined only on $E_i$, extends smoothly by zero outside $E_i$: it is smooth on the open set $\operatorname{Int}E_i$ and zero on the open set $M \setminus \operatorname{supp}\rho_i$, which together cover $M$. The sums are locally finite: the $E_i$ with $i$ of one parity are pairwise disjoint closed sets, and only finitely many of them meet a neighbourhood $f^{-1}\big((c - 1, c + 1)\big)$, since $E_i \subseteq f^{-1}([i - 1, i + 2])$. So near each point at most one term of each sum is nonzero.
 >
-> *$F$ is proper* — properness comes from having $f$ as a component. If $K \subseteq \mathbb{R}^{2(2m+1)+1}$ is compact, the last coordinate is bounded on $K$, say by $c$, so $F^{-1}(K)$ is a closed subset of the compact sublevel set $f^{-1}\big((-\infty, c]\big)$, hence compact (Definition [[§44 Embeddings#^def-44-2|§44.2]]).
+> *$F$ is proper* — properness comes from having $f$ as a component. If $K \subseteq \mathbb{R}^{2(2m+1)+1}$ is compact, the last coordinate is bounded on $K$, say by $c$, so $F^{-1}(K)$ is a closed subset of the compact sublevel set $f^{-1}\big((-\infty, c]\big)$, hence compact (Definition [[§13 Group Actions and Orbit Spaces#^def-13-6|§13.6]]).
 >
 > *$F$ is injective.* Suppose $F(p) = F(q)$. Then $f(p) = f(q)$, so if $p \in D_j$ then $q \in D_j$, and $\rho_j(p) = \rho_j(q) = 1$. In the block of the parity of $j$, every other term vanishes at $p$ and $q$: for $i \neq j$ of that parity $|i - j| \ge 2$, so $\operatorname{supp}\rho_i \subseteq E_i$ misses $E_j \supseteq D_j$. So that block reads $F_j(p) = F_j(q)$, and $F_j$ is injective: $p = q$.
 >
@@ -235,7 +235,7 @@ Left: a sublevel set of an exhaustion function on a surface with holes, as on th
 
 ^pf-66-7
 
-*Uses:* [[§44 Embeddings#^def-44-2|Def. §44.2]], [[§44 Embeddings#^thm-44-5|§44.5]]
+*Uses:* [[§13 Group Actions and Orbit Spaces#^def-13-6|Def. §13.6]], [[§44 Embeddings#^thm-44-5|§44.5]]
 
 > [!remark] Remark: Why the Last Coordinate Is $f$
 > The last coordinate $f$ in Proposition [[§66 The Whitney Embedding Theorem#^prop-66-7|§66.7]] is not there for injectivity: it makes $F$ proper, since an exhaustion function is proper, and properness is what turns an injective immersion of a noncompact manifold into an embedding (Theorem [[§44 Embeddings#^thm-44-5|§44.5]]).
@@ -301,11 +301,11 @@ Left: a sublevel set of an exhaustion function on a surface with holes, as on th
 ^prop-66-9
 
 > [!proof]+ Proof (not given in this course)
-> Compactness: $E$ is closed ($f$ is continuous) and contained in the sublevel set $f^{-1}\big((-\infty, a]\big)$, which is compact (Definition [[§65 Partitions of Unity#^def-65-6|§65.6]]). The rest concerns manifolds with boundary, which these notes do not treat: (1) is Lee, Proposition 5.47, as used in Lee's proof of Theorem 6.15; for (2), Lee's proofs of the compact case (Lemma [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]], with regular coordinate half-balls allowed) and of Lemma [[§66 The Whitney Embedding Theorem#^lem-66-8|§66.8]] hold for manifolds with boundary.
+> Compactness: $E$ is closed ($f$ is continuous) and contained in the sublevel set $f^{-1}\big((-\infty, a]\big)$, which is compact (Definition [[§65 Partitions of Unity#^def-65-7|§65.7]]). The rest concerns manifolds with boundary, which these notes do not treat: (1) is Lee, Proposition 5.47, as used in Lee's proof of Theorem 6.15; for (2), Lee's proofs of the compact case (Lemma [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]], with regular coordinate half-balls allowed) and of Lemma [[§66 The Whitney Embedding Theorem#^lem-66-8|§66.8]] hold for manifolds with boundary.
 
 ^pf-66-9
 
-*Uses:* [[§65 Partitions of Unity#^def-65-6|Def. §65.6]], [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]], [[§66 The Whitney Embedding Theorem#^lem-66-8|§66.8]]
+*Uses:* [[§65 Partitions of Unity#^def-65-7|Def. §65.7]], [[§66 The Whitney Embedding Theorem#^lem-66-1|§66.1]], [[§66 The Whitney Embedding Theorem#^lem-66-8|§66.8]]
 
 > [!theorem] Proposition §66.10: Immersions into $\mathbb{R}^{2m}$ from Any Embedding
 > Let $M \subseteq \mathbb{R}^N$ be a regular submanifold of dimension $m$, with $N \ge 2m$. Then there is a linear surjection $L : \mathbb{R}^N \to \mathbb{R}^{2m}$ such that $L|_M : M \to \mathbb{R}^{2m}$ is an immersion. In particular, every manifold that embeds in some $\mathbb{R}^N$ immerses in $\mathbb{R}^{2m}$.
@@ -378,8 +378,8 @@ In other words, every manifold is diffeomorphic to a submanifold of some Euclide
 ^cor-66-12
 
 > [!proof]+ Proof
-> *(Not from the assignment; Assignment 6, Problem 5, with the Whitney embedding theorem.)* By Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]] there is an embedding $\Phi : M \to \mathbb{R}^N$ ($N = 2m + 1$); its image $M' = \Phi(M)$ is a regular submanifold and $\Phi : M \to M'$ is a diffeomorphism (Theorem [[§44 Embeddings#^thm-44-1|§44.1]], Corollary [[§44 Embeddings#^cor-44-3|§44.3]]). By Corollary [[§64 Parametric Transversality#^cor-64-8|§64.8]] there is $\mathbf{a}$ with $f_{\mathbf{a}} : M' \to \mathbb{R}$ Morse. Then $f = f_{\mathbf{a}} \circ \Phi$ is Morse: for a chart $(U, \psi)$ of $M'$, $(\Phi^{-1}(U), \psi \circ \Phi)$ is a chart of $M$ ($\psi \circ \Phi$ is a diffeomorphism onto the open set $\psi(U)$, Lemma [[§36 Submersions#^lem-36-5|§36.5]]), in which $f$ has the same coordinate representation $f \circ (\psi \circ \Phi)^{-1} = f_{\mathbf{a}} \circ \psi^{-1}$ as $f_{\mathbf{a}}$ in $\psi$; so $p$ is a critical point of $f$ exactly when $\Phi(p)$ is one of $f_{\mathbf{a}}$, with the same Hessian matrices (Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]). If $M$ is compact, the critical points of a Morse function are finite in number (Corollary [[§55 Morse Functions and the Zero Section#^cor-55-10|§55.10]]); $f$ attains a maximum and a minimum, both critical points, and they are distinct unless $f$ is constant, which a Morse function on a manifold of dimension $m \ge 1$ is not (every point would be critical, and critical points of a Morse function are isolated, Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]).
+> *(Not from the assignment; Assignment 6, Problem 5, with the Whitney embedding theorem.)* By Theorem [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]] there is an embedding $\Phi : M \to \mathbb{R}^N$ ($N = 2m + 1$); its image $M' = \Phi(M)$ is a regular submanifold and $\Phi : M \to M'$ is a diffeomorphism (Theorem [[§44 Embeddings#^thm-44-1|§44.1]], Corollary [[§44 Embeddings#^cor-44-3|§44.3]]). By Corollary [[§64 Parametric Transversality#^cor-64-9|§64.9]] there is $\mathbf{a}$ with $f_{\mathbf{a}} : M' \to \mathbb{R}$ Morse. Then $f = f_{\mathbf{a}} \circ \Phi$ is Morse: for a chart $(U, \psi)$ of $M'$, $(\Phi^{-1}(U), \psi \circ \Phi)$ is a chart of $M$ ($\psi \circ \Phi$ is a diffeomorphism onto the open set $\psi(U)$, Lemma [[§36 Submersions#^lem-36-5|§36.5]]), in which $f$ has the same coordinate representation $f \circ (\psi \circ \Phi)^{-1} = f_{\mathbf{a}} \circ \psi^{-1}$ as $f_{\mathbf{a}}$ in $\psi$; so $p$ is a critical point of $f$ exactly when $\Phi(p)$ is one of $f_{\mathbf{a}}$, with the same Hessian matrices (Definition [[§54 Critical Points and the Hessian#^def-54-1|§54.1]]). If $M$ is compact, the critical points of a Morse function are finite in number (Corollary [[§55 Morse Functions and the Zero Section#^cor-55-10|§55.10]]); $f$ attains a maximum and a minimum, both critical points, and they are distinct unless $f$ is constant, which a Morse function on a manifold of dimension $m \ge 1$ is not (every point would be critical, and critical points of a Morse function are isolated, Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]).
 
 ^pf-66-12
 
-*Uses:* [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§44 Embeddings#^cor-44-3|§44.3]], [[§64 Parametric Transversality#^cor-64-8|§64.8]], [[§36 Submersions#^lem-36-5|§36.5]], [[§54 Critical Points and the Hessian#^def-54-1|Def. §54.1]], [[§55 Morse Functions and the Zero Section#^cor-55-10|§55.10]], [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]
+*Uses:* [[§66 The Whitney Embedding Theorem#^thm-66-11|§66.11]], [[§44 Embeddings#^thm-44-1|§44.1]], [[§44 Embeddings#^cor-44-3|§44.3]], [[§64 Parametric Transversality#^cor-64-9|§64.9]], [[§36 Submersions#^lem-36-5|§36.5]], [[§54 Critical Points and the Hessian#^def-54-1|Def. §54.1]], [[§55 Morse Functions and the Zero Section#^cor-55-10|§55.10]], [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]

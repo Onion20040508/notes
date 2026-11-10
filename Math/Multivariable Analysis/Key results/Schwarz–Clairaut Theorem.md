@@ -27,7 +27,7 @@ tags: [multivariable-analysis, hub]
 - [[§39 Closed and Exact Forms#^prop-39-4|Proposition §39.4: d² = 0 Is Clairaut's Theorem in Forms Language]]
 
 ## Used in (Differentiable Manifolds)
-- [[§53 One-Forms#^prop-53-3|Proposition §53.3: A Necessary Condition for Being a Differential]]
+- [[§53 One-Forms#^prop-53-4|Proposition §53.4: A Necessary Condition for Being a Differential]]
 - [[§57 Differential Operators#^lem-57-5|Lemma §57.5: Coordinate Derivations on a Chart]]
 - [[§58 Lie Bracket and Lie Algebra#^ex-58-1|Example §58.1: A Bracket in the Plane]]
 

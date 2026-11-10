@@ -380,6 +380,9 @@ Doing the space(time) integral before the momentum integrals is an exchange of i
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the plane waves meeting at a vertex integrate to a delta function.
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] — doing the space(time) integral before the momentum integrals is an exchange of integrals, justified for wave packets and, for the propagators here, after smearing the external points.
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — momenta are relabelled and their directions reversed freely.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]] — the Fourier convention of Definition §C6a.10.1: $e^{+ip\cdot x}$ with $\int d^4x$ for the transform, all factors of $2\pi$ with the momentum integrals.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]] — the Fourier transform is a bijection of tempered distributions: the correlation functions are transformed in $\mathcal S'$, and $\tilde D_F(p)$ is the transform of $D_F(\xi)$ (Definition §C6a.10.1).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]] — a distribution has no value at its singular point: $D_F(0)$, the loop factor of the tadpole and of the vacuum bubbles, is not a number (Remark: The first ultraviolet divergence).
 
 > [!remark]- Connections
 > - Momentum conservation at a vertex is translation invariance of the interaction, the same invariance that makes $\hat P$ a conserved Noether charge — [[§C1b.5 Noether's Theorem|§C1b.5]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy|§C2a.3]].

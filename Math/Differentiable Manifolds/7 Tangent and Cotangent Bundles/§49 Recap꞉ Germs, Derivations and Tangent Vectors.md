@@ -41,17 +41,17 @@ is the rate of change of $f$ along a curve $\gamma$ through $p$ with velocity $v
 
 ![[§28 Derivations and the Abstract Tangent Space#^def-28-2]]
 
-**Step 4: coordinates give a basis.** In a chart $(U, \varphi = (x^1, \ldots, x^m))$, the *coordinate derivation* $\partial/\partial x^i|_p$ takes the $i$-th partial derivative of the coordinate representation $f \circ \varphi^{-1}$ at $\varphi(p)$ ([[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Definition §29.2]]). The Basis Theorem says these $m$ derivations form a basis of $T_pM$, and the *universal formula* gives the components of any $D$: they are the values of $D$ on the coordinate functions,
+**Step 4: coordinates give a basis.** In a chart $(U, \varphi = (x^1, \ldots, x^m))$, the *coordinate derivation* $\partial/\partial x^i|_p$ takes the $i$-th partial derivative of the coordinate representation $f \circ \varphi^{-1}$ at $\varphi(p)$ ([[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Definition §29.3]]). The Basis Theorem says these $m$ derivations form a basis of $T_pM$, and the *universal formula* gives the components of any $D$: they are the values of $D$ on the coordinate functions,
 
 $$
 D = \sum_{i=1}^m D[x^i]\, \frac{\partial}{\partial x^i}\Big|_p
 $$
 
-([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7]]). So $\dim T_pM = m$, and for a level set in $\mathbb{R}^N$ the derivations are exactly the old arrows: $v \mapsto D_v$ is an isomorphism ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8]]).
+([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8]]). So $\dim T_pM = m$, and for a level set in $\mathbb{R}^N$ the derivations are exactly the old arrows: $v \mapsto D_v$ is an isomorphism ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|Theorem §29.9]]).
 
-![[§29 Coordinate Derivations and the Basis Theorem#^def-29-2]]
+![[§29 Coordinate Derivations and the Basis Theorem#^def-29-3]]
 
-![[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7]]
+![[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8]]
 
 **Step 5: maps push vectors forward.** Let $F : M \to N$ be smooth. Germs travel *backwards* along $F$: a germ $[g]$ at $F(p)$ pulls back to the germ $F_p^{\ast}[g] = [g \circ F]$ at $p$ ([[§28 Derivations and the Abstract Tangent Space#^def-28-5|Definition §28.5]]). Tangent vectors then travel *forwards*: the *pushforward*, or *differential*, of $F$ at $p$ is
 
@@ -120,7 +120,7 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 
 ^ex-49-1
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-1|Def. §31.1]], [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|Def. §31.2]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]]
 
 *(Not from lecture; the conversion diagram of the midterm check sheet, added on request.)* One tangent vector at $p$, in four equivalent forms. Chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$; the numbers on the arrows refer to the remark below.
 
@@ -129,9 +129,9 @@ whose $i$-th column lists the components of $F_{\ast p}(\partial/\partial x^i|_p
 > [!remark] Remark: Conversion Diagram for a Tangent Vector
 > 1. *Curve to derivation.* $D_\gamma[f] = (f \circ \gamma)'(0)$, the velocity (Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2|§31.2]]).
 > 2. *Derivation to curve.* Every $D$ is a velocity: $\gamma(t) = \varphi^{-1}\big(\varphi(p) + t\,(v^1, \ldots, v^m)\big)$ (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]).
-> 3. *Derivation to components.* $v^j = D[x^j] = dx^j|_p(D)$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]).
-> 4. *Components to derivation.* $D = \sum_j v^j\, \partial/\partial x^j|_p$, where $\partial/\partial x^j|_p[f] = \partial (f \circ \varphi^{-1})/\partial r^j\,(\varphi(p))$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]).
-> 5. *Arrow to derivation.* For $M \subseteq \mathbb{R}^N$: $w \mapsto D_w$, $D_w[f] = \frac{d}{dt}\big|_{t=0} \tilde f(p + tw)$ for any smooth extension $\tilde f$; on a regular level set $T^{\mathrm{geo}}_pM \cong T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]), $w$ being $\gamma'(0)$ for a curve $\gamma$ in $M$. In the identity chart of $\mathbb{R}^N$, the components of $D_w$ are the entries of $w$.
+> 3. *Derivation to components.* $v^j = D[x^j] = dx^j|_p(D)$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], Lemma [[§33 Covectors in Coordinates#^lem-33-1|§33.1]]).
+> 4. *Components to derivation.* $D = \sum_j v^j\, \partial/\partial x^j|_p$, where $\partial/\partial x^j|_p[f] = \partial (f \circ \varphi^{-1})/\partial r^j\,(\varphi(p))$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]]).
+> 5. *Arrow to derivation.* For $M \subseteq \mathbb{R}^N$: $w \mapsto D_w$, $D_w[f] = \frac{d}{dt}\big|_{t=0} \tilde f(p + tw)$ for any smooth extension $\tilde f$; on a regular level set $T^{\mathrm{geo}}_pM \cong T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]), $w$ being $\gamma'(0)$ for a curve $\gamma$ in $M$. In the identity chart of $\mathbb{R}^N$, the components of $D_w$ are the entries of $w$.
 >
 > *Change of chart.* $\tilde v^j = \sum_i \frac{\partial \tilde x^j}{\partial x^i}(p)\, v^i$, the Jacobian of the transition function acting on the components (Corollary [[§30 The Differential in Coordinates#^cor-30-4|§30.4]]).
 

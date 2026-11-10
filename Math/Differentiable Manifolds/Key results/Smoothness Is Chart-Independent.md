@@ -13,7 +13,7 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§17 Differentiable Structures#^ex-17-1|Example §17.1: Euclidean Space]]
 - [[§17 Differentiable Structures#^def-17-4|Definition §17.4: Smoothly Compatible Charts]]
-- [[§17 Differentiable Structures#^def-17-6|Definition §17.6: Atlas]]
+- [[§17 Differentiable Structures#^def-17-8|Definition §17.8: Atlas]]
 - [[§19 Smooth Functions and Smooth Maps#^def-19-1|Definition §19.1: Smooth Chart]]
 - [[§19 Smooth Functions and Smooth Maps#^def-19-2|Definition §19.2: Smooth Function on a Manifold]]
 - [[§19 Smooth Functions and Smooth Maps#^def-19-3|Definition §19.3: Smooth Map]]
@@ -40,7 +40,7 @@ tags: [differentiable-manifolds, hub]
 - [[§41 Examples of Fibrations#^prop-41-1|Proposition §41.1: The Möbius Band Is a Fibration]]
 - [[§43 Immersions#^thm-43-1|Theorem §43.1: Local Normal Form for Immersions]]
 - [[§53 One-Forms#^prop-53-1|Proposition §53.1: One-Forms in Coordinates]]
-- [[§53 One-Forms#^prop-53-5|Proposition §53.5: Pullbacks in Coordinates]]
+- [[§53 One-Forms#^prop-53-6|Proposition §53.6: Pullbacks in Coordinates]]
 - [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]
 
 ## Connections

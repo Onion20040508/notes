@@ -5,10 +5,10 @@ source: "[[Differentiable Manifolds]]"
 aliases: ["MATH 591 29.8", "v ↦ D_v", "Lee Proposition 3.2", "Lee Proposition 5.37", "Lee Proposition 5.38"]
 tags: [differentiable-manifolds, hub]
 ---
-![[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8]]
+![[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9]]
 
 ## Treated in
-- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8: Ambient and Abstract Agree]], in [[§29 Coordinate Derivations and the Basis Theorem]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|Theorem §29.9: Ambient and Abstract Agree]], in [[§29 Coordinate Derivations and the Basis Theorem]]
 
 ## Its proof uses
 - [[§21 Linear Algebra Toolkit#^prop-21-1|Proposition §21.1: Standing Facts from Linear Algebra]]
@@ -21,10 +21,10 @@ tags: [differentiable-manifolds, hub]
 - [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Definition §28.1: Derivation at a Point]]
 - [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Definition §28.2: The Abstract Tangent Space]]
 - [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|Lemma §28.8: Open Subsets Have the Same Abstract Tangent Spaces]]
-- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7: Basis Theorem]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8: Basis Theorem]]
 
 ## Used in (Differentiable Manifolds)
-- [[§29 Coordinate Derivations and the Basis Theorem#^cor-29-9|Corollary §29.9: Consequences]]
+- [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-10|Corollary §29.10: Consequences]]
 - [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|Proposition §38.4: The Old and New Versions Agree]]
 
 ## Connections

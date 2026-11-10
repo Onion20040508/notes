@@ -7,10 +7,10 @@ tags: [differentiable-manifolds, math591]
 ---
 ← [[§27 Germs]] · ↑ [[· 4 Tangent and Cotangent Spaces]] · [[§29 Coordinate Derivations and the Basis Theorem]] →
 
-*Stage: abstract — The abstract tangent space $T_pM$ as the derivations at $p$, and the differential $F_{\ast p}$ that pushes them forward. The two notions of tangent space agree wherever both exist (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]).*
+*Stage: abstract — The abstract tangent space $T_pM$ as the derivations at $p$, and the differential $F_{\ast p}$ that pushes them forward. The two notions of tangent space agree wherever both exist (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]).*
 
 > [!remark] Remark: Two Faces of a Tangent Vector
-> Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces. It is a *velocity*, the $\gamma'(0)$ of a curve — an element of the geometric tangent space $T^{\mathrm{geo}}_pM$, which is how [[§25 The Geometric Tangent Space#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]] met it; and it is a *derivation*, an operator that eats germs and returns numbers — an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]). The same split will reappear for vector fields: as velocities attached to every point they *generate dynamics*, and as operators they lead to the *Lie derivative*.
+> Lecture 9 opened with a framing that the rest of the course keeps returning to. A tangent vector has two faces. It is a *velocity*, the $\gamma'(0)$ of a curve — an element of the geometric tangent space $T^{\mathrm{geo}}_pM$, which is how [[§25 The Geometric Tangent Space#From Tangent Vectors to Derivations|§25, From Tangent Vectors to Derivations]] met it; and it is a *derivation*, an operator that eats germs and returns numbers — an element of the abstract tangent space $T_pM$, the formal definition below. Formally they are different objects, and the relation between them has to be proved (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]). The same split will reappear for vector fields: as velocities attached to every point they *generate dynamics*, and as operators they lead to the *Lie derivative*.
 
 ^rem-28-1
 
@@ -83,7 +83,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§2 Definition of Vector Space#^ladr-1-20|LADR 1.20]]
 
 > [!remark]- Connections
-> - The geometric tangent space it replaces: [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]]; the two agree by [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]].
+> - The geometric tangent space it replaces: [[§25 The Geometric Tangent Space#^def-25-1|Def. §25.1]]; the two agree by [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]].
 > - Its dual, the cotangent space: [[§32 The Cotangent Space#^def-32-4|Def. §32.4]]; all the $T_pM$ together: [[§51 The Tangent Bundle#^def-51-1|the tangent bundle, Def. §51.1]].
 
 > [!definition] Definition §28.3: The Ideal of Germs Vanishing at a Point
@@ -167,7 +167,7 @@ tags: [differentiable-manifolds, math591]
 Both parts were set as an exercise in Lecture 9; (2) is a direct consequence of the product rule and is part of a problem on Assignment 3, which introduces the ideal $I_p$ under that name. In commutative algebra the same ideal is written $\mathfrak{m}_p$; the [[§29 Coordinate Derivations and the Basis Theorem#^rem-29-3|remark]] *A Derivation Sees Only the First Derivatives* in [[§29 Coordinate Derivations and the Basis Theorem|§29, Coordinate Derivations and the Basis Theorem]] returns to it, under the name $I_p$.
 
 > [!remark] Remark
-> These two are exactly what must be shown before the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|basis theorem]]. They are the entire reason the [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|Taylor–Hadamard]] expansion collapses: the constant term dies by (1), the quadratic remainder dies by (2), and only the linear term survives.
+> These two are exactly what must be shown before the [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|basis theorem]]. They are the entire reason the [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-6|Taylor–Hadamard]] expansion collapses: the constant term dies by (1), the quadratic remainder dies by (2), and only the linear term survives.
 
 ^rem-28-2
 
@@ -209,7 +209,7 @@ Both parts were set as an exercise in Lecture 9; (2) is a direct consequence of 
 
 *Uses:* [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§27 Germs#^prop-27-2|§27.2]]
 
-Both steps borrowed from Lee are now in these notes: bump functions are Proposition [[§56 Vector Fields#^prop-56-4|§56.4]] (existence stated, proof deferred in lecture), the global representative of a germ is Corollary [[§56 Vector Fields#^cor-56-5|§56.5]], and locality of derivations is Lemma [[§56 Vector Fields#^lem-56-6|§56.6]] (Lecture 16).
+Both steps borrowed from Lee are now in these notes: bump functions are Proposition [[§56 Vector Fields#^cor-56-7|§56.7]] (existence stated, proof deferred in lecture), the global representative of a germ is Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], and locality of derivations is Lemma [[§56 Vector Fields#^lem-56-9|§56.9]] (Lecture 16).
 
 **Comparison with Lee.** This is where the course's algebraic route and Lee's part company. Lee works with global functions and pays for locality with bump functions: Proposition 3.8 shows a derivation of $C^\infty(M)$ only sees a function near $p$, and Proposition 3.9 identifies $T_pU$ with $T_pM$. Germs build locality into the definition, so the course needs no bump functions at all — Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8|§28.8]] is pure algebra. The proposition above is the bridge. Since the two spaces are isomorphic, every result about $T_pM$ in these notes transfers to Lee's, and conversely.
 
@@ -483,7 +483,7 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)*
 >
-> *(1) $\kappa$ is smooth.* We check Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. $\kappa$ is continuous: the preimage of any set is $X$ or $\emptyset$. Let $x \in X$, and choose smooth charts $(U, \varphi)$ of $X$ at $x$ and $(V, \psi)$ of $Y$ at $q_0$ (the smooth charts cover $X$ and $Y$, Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]). Then $\kappa(U) = \{q_0\} \subseteq V$, and the coordinate representation $\psi \circ \kappa \circ \varphi^{-1}$ is the constant map $\varphi(U) \to \mathbb{R}^{\dim Y}$ with value $\psi(q_0)$, which is smooth.
+> *(1) $\kappa$ is smooth.* We check Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. $\kappa$ is continuous: the preimage of any set is $X$ or $\emptyset$. Let $x \in X$, and choose smooth charts $(U, \varphi)$ of $X$ at $x$ and $(V, \psi)$ of $Y$ at $q_0$ (the smooth charts cover $X$ and $Y$, Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]). Then $\kappa(U) = \{q_0\} \subseteq V$, and the coordinate representation $\psi \circ \kappa \circ \varphi^{-1}$ is the constant map $\varphi(U) \to \mathbb{R}^{\dim Y}$ with value $\psi(q_0)$, which is smooth.
 >
 > *(1) $\kappa_{\ast x} = 0$.* Let $D \in T_xX$ and let $[g]$ be a germ at $q_0$, with $g$ defined on an open set $O \ni q_0$. Then $\kappa^{-1}(O) = X$, and $g \circ \kappa$ is the constant function $g(q_0)$ on $X$, whose germ at $x$ is the constant germ $\underline{g(q_0)}$. By the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) and because derivations kill constants (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)),
 >
@@ -503,4 +503,4 @@ The board justified the derivation property with “since $F_p^{\ast}$ is a ring
 
 ^pf-28-10
 
-*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]
+*Uses:* [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§28 Derivations and the Abstract Tangent Space#^thm-28-6|§28.6]]

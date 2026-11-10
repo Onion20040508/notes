@@ -18,9 +18,9 @@ The course has built manifolds in two ways. The *geometric* picture is the equat
 | the object | external, internal or graph description | maximal atlas; submanifold | Proposition [[§37 Regular Submanifolds#^prop-37-12\|§37.12]] |
 | smooth structure | graph charts | chosen or induced atlas | Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]](1) |
 | smooth maps | smooth between vector spaces | smooth in charts | Lemma [[§37 Regular Submanifolds#^lem-37-5\|§37.5]] |
-| tangent space | velocities, $\ker F'(p)$ | derivations of germs | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|§29.8]] |
+| tangent space | velocities, $\ker F'(p)$ | derivations of germs | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9\|§29.9]] |
 | differential | Jacobian $F'(p)$ | pushforward $F_{\ast p}$ | Theorem [[§30 The Differential in Coordinates#^thm-30-2\|§30.2]] |
-| covectors | gradient $\nabla f$, transpose $J^{\mathsf T}$ | $df_p$, pullback $F_p^{\ast}$ | the remark [[§34 The Cotangent Space from Germs#^rem-34-5\|The Two Differentials Meet]] |
+| covectors | gradient $\nabla f$, transpose $J^{\mathsf T}$ | $df_p$, pullback $F_p^{\ast}$ | the remark [[§34 The Cotangent Space from Germs#^rem-34-4\|The Two Differentials Meet]] |
 | regular points | $F'(p)$ surjective | $F_{\ast p}$ surjective | Proposition [[§30 The Differential in Coordinates#^prop-30-9\|§30.9]] |
 | key theorems | implicit and inverse function theorems | normal form; local diffeomorphism criterion | proved through charts |
 | regular values | level sets are manifolds | level sets are submanifolds | Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]] |
@@ -31,9 +31,9 @@ The course has built manifolds in two ways. The *geometric* picture is the equat
 | Geometric | Abstract | How they correspond |
 |---|---|---|
 | Definition [[§20 Manifolds in Euclidean Space#^def-20-1\|§20.1]] (external: a regular level set) | Definition [[§37 Regular Submanifolds#^def-37-2\|§37.2]] (a coordinate slice of an adapted chart, Definition [[§37 Regular Submanifolds#^def-37-3\|§37.3]]) | Proposition [[§37 Regular Submanifolds#^prop-37-12\|§37.12]]: the slice is a fourth equivalent description |
-| Definition [[§20 Manifolds in Euclidean Space#^def-20-2\|§20.2]], Definition [[§20 Manifolds in Euclidean Space#^def-20-3\|§20.3]] (a parametrization) | the inverse of a chart (the remark [[§20 Manifolds in Euclidean Space#^rem-20-2\|A Parametrization Is an Inverse Chart]]); Definition [[§43 Immersions#^def-43-1\|§43.1]] | rank $n$ Jacobian = immersion; homeomorphism onto the image = embedding (Definition [[§44 Embeddings#^def-44-1\|§44.1]]) |
+| Definition [[§20 Manifolds in Euclidean Space#^def-20-2\|§20.2]], Definition [[§20 Manifolds in Euclidean Space#^def-20-3\|§20.3]] (a parametrization) | the inverse of a chart (the remark [[§20 Manifolds in Euclidean Space#^rem-20-2\|A Parametrization Is an Inverse Chart]]); Definition [[§36 Submersions#^def-36-2\|§36.2]] | rank $n$ Jacobian = immersion; homeomorphism onto the image = embedding (Definition [[§44 Embeddings#^def-44-1\|§44.1]]) |
 | Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1\|§20.1]] (the descriptions agree) | Proposition [[§37 Regular Submanifolds#^prop-37-12\|§37.12]], Theorem [[§44 Embeddings#^thm-44-1\|§44.1]] | straightening a graph gives an adapted chart |
-| Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2\|§20.2]] (graph charts) | Definition [[§17 Differentiable Structures#^def-17-9\|§17.9]]; Proposition [[§37 Regular Submanifolds#^prop-37-3\|§37.3]] (induced structure) | Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]](1): the same structure |
+| Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2\|§20.2]] (graph charts) | Definition [[§17 Differentiable Structures#^def-17-11\|§17.11]]; Proposition [[§37 Regular Submanifolds#^prop-37-3\|§37.3]] (induced structure) | Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]](1): the same structure |
 | Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4\|§22.4]] (a vector space) | Proposition [[§22 The Differential of a Map Between Vector Spaces#^prop-22-2\|§22.2]] | a vector space is a manifold with one global chart |
 
 Geometrically, a manifold is a subset of a Euclidean space with one of three equivalent local descriptions (Theorem [[§20 Manifolds in Euclidean Space#^thm-20-1|§20.1]]):
@@ -44,7 +44,7 @@ Geometrically, a manifold is a subset of a Euclidean space with one of three equ
 
 — or a graph over $n$ of the coordinates. Abstractly, a manifold is a topological manifold with a choice of charts, and the subsets that look like the geometric ones are the submanifolds:
 
-![[§17 Differentiable Structures#^def-17-9]]
+![[§17 Differentiable Structures#^def-17-11]]
 
 ![[§37 Regular Submanifolds#^def-37-2]]
 
@@ -72,13 +72,13 @@ A map into or out of a level set is smooth when it is a restriction of, or lands
 
 | Geometric | Abstract | How they correspond |
 |---|---|---|
-| Definition [[§25 The Geometric Tangent Space#^def-25-1\|§25.1]] (velocities $\gamma'(0)$ in $\mathbb{R}^{n+k}$) | Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2\|§28.2]] (derivations of germs, Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1\|§28.1]]) | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|§29.8]]: $v \mapsto D_v$ is an isomorphism |
+| Definition [[§25 The Geometric Tangent Space#^def-25-1\|§25.1]] (velocities $\gamma'(0)$ in $\mathbb{R}^{n+k}$) | Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2\|§28.2]] (derivations of germs, Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1\|§28.1]]) | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9\|§29.9]]: $v \mapsto D_v$ is an isomorphism |
 | Definition [[§25 The Geometric Tangent Space#^def-25-4\|§25.4]] (the directional derivative $D_v$) | Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1\|§28.1]] (a derivation at $p$) | Proposition [[§25 The Geometric Tangent Space#^prop-25-8\|§25.8]], Proposition [[§25 The Geometric Tangent Space#^prop-25-9\|§25.9]]: $D_v$ is a derivation and determines $v$ |
 | $\gamma'(0)$, the velocity in the ambient space | Definition [[§31 Tangent Vectors as Velocities of Curves#^def-31-2\|§31.2]]; Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4\|§31.4]] | every abstract tangent vector is a velocity |
 | Lemma [[§25 The Geometric Tangent Space#^lem-25-1\|§25.1]] (locality) | Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-8\|§28.8]] (open subsets have the same tangent spaces) | both depend only on a neighbourhood of $p$ |
 | Lemma [[§25 The Geometric Tangent Space#^lem-25-2\|§25.2]] (tangent space of a graph) | Proposition [[§37 Regular Submanifolds#^prop-37-9\|§37.9]] (tangent space of a submanifold) | the span of the first coordinate directions of a slice |
 | Theorem [[§25 The Geometric Tangent Space#^thm-25-3\|§25.3]] ($T^{\mathrm{geo}}_pM = \ker F'(p)$) | Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|§38.2]] ($\iota_{\ast p}(T_pS) = \ker F_{\ast p}$) | Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]](2) |
-| Theorem [[§25 The Geometric Tangent Space#^thm-25-7\|§25.7]] (dimension) | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7\|§29.7]] (basis theorem) | both give dimension $n$ |
+| Theorem [[§25 The Geometric Tangent Space#^cor-25-7\|§25.7]] (dimension) | Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8\|§29.8]] (basis theorem) | both give dimension $n$ |
 
 ![[§25 The Geometric Tangent Space#^def-25-1]]
 
@@ -86,7 +86,7 @@ A map into or out of a level set is smooth when it is a restriction of, or lands
 
 ![[§25 The Geometric Tangent Space#^thm-25-3]]
 
-A geometric tangent vector is an arrow in the ambient space; an abstract one is a machine that differentiates germs. The arrow $v$ becomes the machine $D_v$, and for a level set $v \mapsto D_v$ is an isomorphism $T^{\mathrm{geo}}_pM \to T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]); conversely every abstract tangent vector is the velocity of a curve (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]), which restores the arrow picture without an ambient space. For a submanifold of $\mathbb{R}^{n+k}$ the inclusion carries $T_pS$ onto $T^{\mathrm{geo}}_pS$ (Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]](2) and the remark [[§37 Regular Submanifolds#^rem-37-2|The Tangent Spaces Match]]).
+A geometric tangent vector is an arrow in the ambient space; an abstract one is a machine that differentiates germs. The arrow $v$ becomes the machine $D_v$, and for a level set $v \mapsto D_v$ is an isomorphism $T^{\mathrm{geo}}_pM \to T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-9|§29.9]]); conversely every abstract tangent vector is the velocity of a curve (Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-4|§31.4]]), which restores the arrow picture without an ambient space. For a submanifold of $\mathbb{R}^{n+k}$ the inclusion carries $T_pS$ onto $T^{\mathrm{geo}}_pS$ (Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]](2) and the remark [[§37 Regular Submanifolds#^rem-37-2|The Tangent Spaces Match]]).
 
 ## Differentials: the Jacobian and the Pushforward
 
@@ -115,16 +115,16 @@ The two differentials are built in opposite directions. The Jacobian is computed
 |---|---|---|
 | the gradient $\nabla f(p)$, a row of the Jacobian | Definition [[§32 The Cotangent Space#^def-32-5\|§32.5]] ($df_p \in T_p^*M$); Lemma [[§33 Covectors in Coordinates#^lem-33-1\|§33.1]] | the remark [[§33 Covectors in Coordinates#^rem-33-2\|Differential — Not Gradient]]: a gradient needs an inner product |
 | the transpose $J_F^{\mathsf T}$ of the Jacobian | Definition [[§34 The Cotangent Space from Germs#^def-34-3\|§34.3]] (pullback of covectors, the dual map of $F_{\ast p}$) | in dual bases the matrix of $F_p^{\ast}$ is the transpose of the matrix of $F_{\ast p}$ |
-| $\nabla(f \circ F) = J_F^{\mathsf T} \nabla f$ (chain rule) | Proposition [[§34 The Cotangent Space from Germs#^prop-34-6\|§34.6]] ($F_p^{\ast}\, df = d(f \circ F)$) | the remark [[§34 The Cotangent Space from Germs#^rem-34-5\|The Two Differentials Meet]] |
+| $\nabla(f \circ F) = J_F^{\mathsf T} \nabla f$ (chain rule) | Proposition [[§34 The Cotangent Space from Germs#^prop-34-7\|§34.7]] ($F_p^{\ast}\, df = d(f \circ F)$) | the remark [[§34 The Cotangent Space from Germs#^rem-34-4\|The Two Differentials Meet]] |
 | normal vectors, spanned by $\nabla F^1, \ldots, \nabla F^k$ | Definition [[§37 Regular Submanifolds#^def-37-4\|§37.4]] (conormal space); Proposition [[§37 Regular Submanifolds#^prop-37-11\|§37.11]] (basis $dF^i|_p$) | the remark [[§37 Regular Submanifolds#^rem-37-1\|No Normal Vectors Without a Metric]] |
 
 ![[§32 The Cotangent Space#^def-32-5]]
 
 ![[§34 The Cotangent Space from Germs#^def-34-3]]
 
-![[§34 The Cotangent Space from Germs#^prop-34-6]]
+![[§34 The Cotangent Space from Germs#^prop-34-7]]
 
-![[§34 The Cotangent Space from Germs#^rem-34-5]]
+![[§34 The Cotangent Space from Germs#^rem-34-4]]
 
 ![[§37 Regular Submanifolds#^def-37-4]]
 
@@ -143,9 +143,9 @@ the $N \times m$ matrix in the middle being $(DF_p)^{\mathsf T}$. An abstract ma
 | Definition [[§7 The Regular Value Theorem#^def-7-3\|§7.3]] ($DF_p$ surjective) | Definition [[§30 The Differential in Coordinates#^def-30-3\|§30.3]], Definition [[§36 Submersions#^def-36-3\|§36.3]] ($F_{\ast p}$ surjective) | Proposition [[§30 The Differential in Coordinates#^prop-30-9\|§30.9]]: regular for $F$ iff for its coordinate representation |
 | Definition [[§7 The Regular Value Theorem#^def-7-4\|§7.4]] (every point of $F^{-1}(c)$ regular) | Definition [[§30 The Differential in Coordinates#^def-30-4\|§30.4]], Definition [[§36 Submersions#^def-36-4\|§36.4]] | the same condition, read through charts; Corollary [[§22 The Differential of a Map Between Vector Spaces#^cor-22-4\|§22.4]] without coordinates |
 | Theorem [[§7 The Regular Value Theorem#^thm-7-2\|§7.2]] (implicit function theorem) | Theorem [[§36 Submersions#^thm-36-6\|§36.6]] (local normal form for submersions) | the normal form is the implicit function theorem in charts |
-| Theorem [[§7 The Regular Value Theorem#^thm-7-5\|§7.5]] (a regular level set is a topological manifold) | Corollary [[§30 The Differential in Coordinates#^cor-30-10\|§30.10]] (the same for $F : M \to N$) | proved through Proposition [[§30 The Differential in Coordinates#^prop-30-9\|§30.9]] |
+| Theorem [[§7 The Regular Value Theorem#^thm-7-6\|§7.6]] (a regular level set is a topological manifold) | Corollary [[§30 The Differential in Coordinates#^cor-30-10\|§30.10]] (the same for $F : M \to N$) | proved through Proposition [[§30 The Differential in Coordinates#^prop-30-9\|§30.9]] |
 | Proposition [[§20 Manifolds in Euclidean Space#^prop-20-2\|§20.2]] (a regular level set is a smooth manifold) | Theorem [[§38 The Regular Value Theorem for Manifolds#^thm-38-2\|§38.2]] (a regular level set is a submanifold) | Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4\|§38.4]]: the same structure and tangent spaces |
-| Corollary [[§7 The Regular Value Theorem#^cor-7-6\|§7.6]] (open domains, arbitrary values) | Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3\|§38.3]] (fibres of submersions) | every value of a submersion is regular |
+| Corollary [[§7 The Regular Value Theorem#^cor-7-7\|§7.7]] (open domains, arbitrary values) | Corollary [[§38 The Regular Value Theorem for Manifolds#^cor-38-3\|§38.3]] (fibres of submersions) | every value of a submersion is regular |
 | Theorem [[§26 Transversality#^thm-26-1\|§26.1]], Corollary [[§26 Transversality#^cor-26-4\|§26.4]] (transversality) | (no manifold version yet) | the regular value theorem is the case of a point |
 
 ![[§7 The Regular Value Theorem#^def-7-3]]
@@ -160,7 +160,7 @@ the $N \times m$ matrix in the middle being $(DF_p)^{\mathsf T}$. An abstract ma
 
 ![[§36 Submersions#^thm-36-6]]
 
-![[§7 The Regular Value Theorem#^thm-7-5]]
+![[§7 The Regular Value Theorem#^thm-7-6]]
 
 ![[§38 The Regular Value Theorem for Manifolds#^thm-38-2]]
 
@@ -172,10 +172,10 @@ A geometric manifold sits in $\mathbb{R}^N$ by construction; an abstract one nee
 
 ![[§44 Embeddings#^def-44-1]]
 
-The image of an embedding is a submanifold (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. The internal description of Definition [[§20 Manifolds in Euclidean Space#^def-20-2|§20.2]] is exactly a local embedding: an injective immersion that is a homeomorphism onto its image. Injective immersions alone are not enough: their images are immersed submanifolds (Definition [[§44 Embeddings#^def-44-4|§44.4]], Proposition [[§44 Embeddings#^prop-44-13|§44.13]]), regular exactly when the immersion is an embedding (Proposition [[§44 Embeddings#^prop-44-15|§44.15]]); the figure-eight and the irrational line on the torus are immersed but not regular (Example [[§44 Embeddings#^ex-44-3|§44.3]]).
+The image of an embedding is a submanifold (Theorem [[§44 Embeddings#^thm-44-1|§44.1]]), so an abstract manifold with an embedding into $\mathbb{R}^N$ is diffeomorphic to a geometric one, and all the comparisons above apply to it. The internal description of Definition [[§20 Manifolds in Euclidean Space#^def-20-2|§20.2]] is exactly a local embedding: an injective immersion that is a homeomorphism onto its image. Injective immersions alone are not enough: their images are immersed submanifolds (Definition [[§44 Embeddings#^def-44-3|§44.3]], Proposition [[§44 Embeddings#^prop-44-15|§44.15]]), regular exactly when the immersion is an embedding (Proposition [[§44 Embeddings#^prop-44-17|§44.17]]); the figure-eight and the irrational line on the torus are immersed but not regular (Example [[§44 Embeddings#^ex-44-4|§44.4]]).
 
 > [!remark] Remark: Whitney's Embedding Theorem
-> *(Not from lecture; stated, not proved, in these notes.)* Every smooth $m$-manifold — Hausdorff and second countable, as in Definition [[§17 Differentiable Structures#^def-17-9|§17.9]] — admits a smooth embedding into $\mathbb{R}^{2m+1}$ (Lee, Theorem 6.15), and Whitney improved the dimension to $2m$. So no manifold is out of reach of the geometric picture: every abstract manifold is diffeomorphic to a submanifold of some Euclidean space. The abstract definition is still the right one, because the embedding is not part of the manifold: the same manifold has many embeddings, none of them preferred, and quotients such as $\mathbb{CP}^n$ come with none.
+> *(Not from lecture; stated, not proved, in these notes.)* Every smooth $m$-manifold — Hausdorff and second countable, as in Definition [[§17 Differentiable Structures#^def-17-11|§17.11]] — admits a smooth embedding into $\mathbb{R}^{2m+1}$ (Lee, Theorem 6.15), and Whitney improved the dimension to $2m$. So no manifold is out of reach of the geometric picture: every abstract manifold is diffeomorphic to a submanifold of some Euclidean space. The abstract definition is still the right one, because the embedding is not part of the manifold: the same manifold has many embeddings, none of them preferred, and quotients such as $\mathbb{CP}^n$ come with none.
 
 ^rem-45-1
 

@@ -11,6 +11,7 @@ tags: [functional-analysis, hub]
 - [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-4|Theorem §41.4: Closed Graph Theorem]], in [[§41 The Open Mapping Theorem and Its Consequences]]
 
 ## Its proof uses
+- [[§39 Solving Mx = y#^def-39-6|Definition §39.6: Graph Norm]]
 - [[§41 The Open Mapping Theorem and Its Consequences#^thm-41-3|Theorem §41.3: Equivalent Norm Theorem]]
 
 ## Used in (Functional Analysis)

@@ -16,7 +16,7 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 **Setup.** The free Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^mod-c5b-1-2|Model §C5b.1.2]]) with anticommutators; Heisenberg fields of the free $\hat H$ ([[§C5b.6 The Heisenberg Dirac Field|§C5b.6]]); vacuum values in the free vacuum $|0\rangle$; $m > 0$; exact. Theorem §C5b.7.5 replaces the anticommutators by an unspecified rule and the assumptions (i)–(iv), in order to exclude commutators.
 
 > [!caution] Caution: The letter S
-> In this chapter $S$ means several things: the spinor generators $S^{\mu\nu}$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]]); the Lorentz matrix of a spinor, written $\Lambda_{1/2}$ here and $S(\Lambda)$ or $S[\Lambda]$ by Yu and in the user's pre-course notes; the action; the S-matrix (QFT C10, planned); and in this section the anticommutator function $S$ and the propagators $S_F$, $S_R$, $S_A$. The name $S$ for the anticommutator function (with $iS = \{\hat\psi, \hat{\bar\psi}\}$, parallel to $iD = [\hat\phi, \hat\phi]$) follows Bjorken–Drell; PS name only $S_R$ and $S_F$, Yu only $S_F$.
+> In this chapter $S$ means several things: the spinor generators $S^{\mu\nu}$ ([[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]]); the Lorentz matrix of a spinor, written $\Lambda_{1/2}$ here and $S(\Lambda)$ or $S[\Lambda]$ by Yu and in the user's pre-course notes; the action; the S-matrix $\hat S$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]; [[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-2|§C6b.1, Caution: Four S's]]); and in this section the anticommutator function $S$ and the propagators $S_F$, $S_R$, $S_A$. The name $S$ for the anticommutator function (with $iS = \{\hat\psi, \hat{\bar\psi}\}$, parallel to $iD = [\hat\phi, \hat\phi]$) follows Bjorken–Drell; PS name only $S_R$ and $S_F$, Yu only $S_F$.
 >
 > *Source: PS §3.5, eqs. (3.116), (3.121) · Yu §6.4.5, eq. (6.258)*
 
@@ -276,7 +276,7 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 >
 > The minus sign of the second comes from $\sum_sv^s\bar v^s = \slashed{p} - m$ and from $(i\slashed{\partial}_x + m)e^{ip\cdot(x-y)} = -(\slashed{p} - m)e^{ip\cdot(x-y)}$ (Step 4 of [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^der-c5b-7-1|Derivation §C5b.7.1]]).
 >
-> **2. Anticommutator: the difference.** Adding the two lines, $\langle0|\{\hat\psi_a(x), \hat{\bar\psi}_b(y)\}|0\rangle = (i\slashed{\partial}_x + m)_{ab}\bigl[D_W(x - y) - D_W(y - x)\bigr] = (i\slashed{\partial}_x + m)_{ab}\,iD(x - y)$, the commutator function of [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]] differentiated. It vanishes at spacelike separation, where $D$ vanishes on a whole neighbourhood and so do its derivatives ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]]).
+> **2. Anticommutator: the difference.** Adding the two lines, $\langle0|\{\hat\psi_a(x), \hat{\bar\psi}_b(y)\}|0\rangle = (i\slashed{\partial}_x + m)_{ab}\bigl[D_W(x - y) - D_W(y - x)\bigr] = (i\slashed{\partial}_x + m)_{ab}\,iD(x - y)$, the commutator function of [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]] differentiated. It vanishes at spacelike separation, where $D$ vanishes on a whole neighbourhood and so do its derivatives ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]]).
 >
 > **3. Commutator: the sum.** Subtracting instead, $\langle0|[\hat\psi_a(x), \hat{\bar\psi}_b(y)]|0\rangle = (i\slashed{\partial}_x + m)_{ab}\bigl[D_W(x - y) + D_W(y - x)\bigr] = (i\slashed{\partial}_x + m)_{ab}\,D_1(x - y)$, the Hadamard function of [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-2|Def. §C2b.4.2]] differentiated.
 >
@@ -290,7 +290,17 @@ This is the spinor counterpart of [[§C2b.2 The Wightman Function|§C2b.2]]–[[
 
 ^der-c5b-7-5b
 
-*Uses:* [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-2|Def. §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]]
+*Uses:* [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]], [[§C2b.4 Microcausality and the Commutator Function#^def-c2b-4-2|Def. §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-2|Theorem §C2b.4.2]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C5a.14 Gamma-Matrix Technology#^thm-c5a-14-3|Theorem §C5a.14.3]]
+
+> [!abstract]- Mathematical background
+> Proved in CA and CB; each line says what the physics above relies on.
+>
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]] — the spacetime Fourier convention $f(\xi) = \int\frac{d^4p}{(2\pi)^4}\tilde f(p)e^{-ip\cdot\xi}$ in which the transforms of $S^\pm_W$ and $S$ are stated.
+> - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]] — the derivative of a generalized function: $S^\pm_W = \pm(i\slashed{\partial} + m)D_W(\pm\xi)$ are tempered distributions (Theorem §C5b.7.1), and a derivative of a distribution that vanishes on an open set vanishes there (Derivation §C5b.7.3).
+> - [[§CA.2 Generalized Functions#^def-ca-2-3|Def. §CA.2.3]] — the support of a distribution: the meaning of $\operatorname{supp}S \subseteq \{\xi : \xi^2 \ge 0\}$ in Theorem §C5b.7.3.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], part 3 — the derivative rule $\widetilde{\partial_\mu T} = -ip_\mu\tilde T$ in $\mathcal S'$: $i\slashed{\partial} + m$ becomes $\slashed{p} + m$ in the transforms (Derivations §C5b.7.1, §C5b.7.2).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], part 1 — the product of a distribution with a smooth function: smooth prefactors under the delta of the mode integral (Derivation §C5b.7.1), and the factor $0$ on the open spacelike region that removes every term of the bilinear commutator (Derivation §C5b.7.4).
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]] — the spinor generators $S^{\mu\nu}$, one of the meanings of the letter $S$ listed in the caution at the head of the section.
 
 > [!remark]- Connections
 > - Every Dirac two-point function is $i\slashed{\partial} + m$ on a Klein–Gordon one, the field-theory form of "Dirac squares to Klein–Gordon": $(i\slashed{\partial} - m)(i\slashed{\partial} + m) = -(\partial^2 + m^2)$ — [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]], [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], [[§C5b.8 Green's Functions and the Dirac Feynman Propagator#^def-c5b-8-3|Def. §C5b.8.3]].

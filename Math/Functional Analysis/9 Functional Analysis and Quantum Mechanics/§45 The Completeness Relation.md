@@ -13,27 +13,24 @@ The physicists' identity $\sum_n |e_n\rangle\langle e_n| = \mathbf{1}$ is Theore
 
 ## Operators and Projections
 
-> [!definition] Definition §45.1: Bounded Operator
-> Let $H$ be a Hilbert space. A linear map $T : H \to H$ is a **bounded operator** if there is $c \ge 0$ with $\|Tx\| \le c\,\|x\|$ for all $x$. The identity operator is written $\mathbf{1}$.
+Recall (Definition [[§30 Boundedness and Continuity#^def-30-2|§30.2]]) that a linear map $T : X \to Y$ between normed linear spaces is bounded if there is $M \ge 0$ with $\|Tx\|_Y \le M\,\|x\|_X$ for all $x \in X$, and that its norm is $\|T\| = \sup_{x \neq 0} \|Tx\|_Y / \|x\|_X$ (Definition [[§30 Boundedness and Continuity#^def-30-3|§30.3]]). In this chapter $X = Y = H$ is a Hilbert space: a bounded linear map $T : H \to H$ is called a *bounded operator* on $H$, and $\|T\|$ its *operator norm*. The identity operator is written $\mathbf{1}$. As for functionals ([[§44 Bras, Kets, and the Riesz Map|§44]]), a constant $c \ge 0$ is called *admissible* for $T$ if $\|Tx\| \le c\,\|x\|$ for all $x \in H$; by Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], parts (b) and (c), $\|T\|$ is admissible, that is, $\|Tx\| \le \|T\|\,\|x\|$ for all $x \in H$, and it is the smallest admissible constant.
 
-^xold-def-45-1
 > [!remark]- Connections
 > - The general definition, for maps $X \to Y$: [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]].
-
-> [!definition] Definition §45.2: Operator Norm
-> Let $T : H \to H$ be a bounded operator on a Hilbert space $H$ (Definition [[§45 The Completeness Relation#^xold-def-45-1|§45.1]]), so that there is $c \ge 0$ with $\|Tx\| \le c\,\|x\|$ for all $x$; its **operator norm** $\|T\|$ is the infimum of such $c$.
-
-^xold-def-45-2
-> [!remark]- Connections
 > - The general operator norm: [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]; as a norm on $\mathcal{L}(X, Y)$: [[§30 Boundedness and Continuity#^thm-30-8|§30.8]].
 > - Finite dimensions: [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]].
 
-> [!definition] Definition §45.1: Strong Convergence
-> Let $H$ be a Hilbert space. A sequence of bounded operators $T_n$ (Definition [[§45 The Completeness Relation#^xold-def-45-1|§45.1]]) converges **strongly** to $T$ if $T_n x \to T x$ for every $x \in H$, and **in norm** if $\|T_n - T\| \to 0$ (Definition [[§45 The Completeness Relation#^xold-def-45-2|§45.2]]).
+> [!definition] Definition §45.1: Strong Convergence of Operators
+> Let $H$ be a Hilbert space, and let $T_n$, $n = 1, 2, \ldots$, and $T$ be bounded operators on $H$. The sequence $\{T_n\}$ converges **strongly** to $T$ if $T_n x \to T x$ in $H$ for every $x \in H$.
 
 ^def-45-1
 
-As for functionals (Lemma [[§44 Bras, Kets, and the Riesz Map#^xold-lem-44-1|§44.1]]), $\|Tx\| \le \|T\|\,\|x\|$. Norm convergence implies strong convergence, since $\|T_n x - Tx\| \le \|T_n - T\|\,\|x\|$.
+> [!definition] Definition §45.2: Norm Convergence of Operators
+> Let $H$ be a Hilbert space, and let $T_n$, $n = 1, 2, \ldots$, and $T$ be bounded operators on $H$. The sequence $\{T_n\}$ converges to $T$ **in norm** if $\|T_n - T\| \to 0$, where $\|\cdot\|$ is the operator norm (Definition [[§30 Boundedness and Continuity#^def-30-3|§30.3]]).
+
+^def-45-2
+
+Norm convergence implies strong convergence, since $\|T_n x - Tx\| \le \|T_n - T\|\,\|x\|$ for every $x \in H$.
 
 > [!definition] Definition §45.3: Orthogonal Projection
 > Let $Y$ be a closed subspace of a Hilbert space $H$. By Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]] every $x \in H$ is uniquely $x = y + v$ with $y \in Y$, $v \in Y^\perp$. The **orthogonal projection** onto $Y$ is $P_Y x = y$.
@@ -103,7 +100,7 @@ As for functionals (Lemma [[§44 Bras, Kets, and the Riesz Map#^xold-lem-44-1|§
 
 ^pf-45-3
 
-*Uses:* [[§45 The Completeness Relation#^prop-45-1|§45.1]], [[§45 The Completeness Relation#^xold-def-45-2|Def. §45.2]]
+*Uses:* [[§45 The Completeness Relation#^prop-45-1|§45.1]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]]
 
 > [!remark] Remark
 > Each truncation $P_N$ misses the directions $e_{N+1}, e_{N+2}, \ldots$ entirely, and there is always a unit vector in those directions; so $P_N$ is never uniformly close to $\mathbf{1}$. What is true is that for each *fixed* state $x$ the missed part $\|x - P_N x\|^2 = \sum_{n > N} |(x, e_n)|^2$ tends to $0$. Physics computations only ever apply $\sum_n |e_n\rangle\langle e_n|$ to vectors, or sandwich it between vectors, so strong convergence is exactly what they need; it is also the first place where an identity of linear algebra holds in infinite dimensions only in a weakened sense.

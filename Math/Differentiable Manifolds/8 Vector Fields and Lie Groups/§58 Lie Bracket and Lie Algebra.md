@@ -12,7 +12,7 @@ tags: [differentiable-manifolds, math591]
 *Lecture 16. Differential operators matter here because of commutators.*
 
 > [!definition] Definition §58.1: The Lie Bracket of Vector Fields
-> For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, regarded as [[§56 Vector Fields#^lem-56-3|operators]] on $C^\infty(M)$ ([[§56 Vector Fields#^def-56-4|Definition §56.4]]), the **commutator** or **Lie bracket** is the operator
+> For $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$, regarded as [[§56 Vector Fields#^lem-56-4|operators]] on $C^\infty(M)$ ([[§56 Vector Fields#^def-56-4|Definition §56.4]]), the **commutator** or **Lie bracket** is the operator
 >
 > $$
 > [\mathbf{X}, \mathbf{Y}](f) = \mathbf{X}\big(\mathbf{Y}(f)\big) - \mathbf{Y}\big(\mathbf{X}(f)\big), \qquad f \in C^\infty(M).
@@ -25,16 +25,16 @@ tags: [differentiable-manifolds, math591]
 Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\mathrm{Diff}_2(M)$ ([[§57 Differential Operators#^def-57-3|Definition §57.3]]), with second derivatives in local coordinates; but the commutator is much better behaved.
 
 > [!theorem] Lemma §58.1: The Bracket of Vector Fields Is a Vector Field
-> $[\mathbf{X}, \mathbf{Y}]$ is a [[§56 Vector Fields#^def-56-5|derivation]] of $C^\infty(M)$; hence, by [[§56 Vector Fields#^prop-56-7|Proposition §56.7]], it is a [[§56 Vector Fields#^def-56-1|vector field]].
+> $[\mathbf{X}, \mathbf{Y}]$ is a [[§56 Vector Fields#^def-56-7|derivation]] of $C^\infty(M)$; hence, by [[§56 Vector Fields#^prop-56-10|Proposition §56.10]], it is a [[§56 Vector Fields#^def-56-1|vector field]].
 >
 > *Lee: Lemma 8.25*
 
 ^lem-58-1
 
 > [!proof]+ Proof
-> *(Lecture 16: routine algebra, the key ingredient being the product rule.)* By Definition [[§56 Vector Fields#^def-56-5|§56.5]], three things have to be shown: that $[\mathbf{X}, \mathbf{Y}]$ takes $C^\infty(M)$ to $C^\infty(M)$, that it is $\mathbb{R}$-linear, and that it satisfies the product rule. Throughout, $\mathbf{X}f$ is the function $p \mapsto \mathbf{X}_p[f]$. By Lemma [[§56 Vector Fields#^lem-56-3|§56.3]], $\mathbf{X}$ and $\mathbf{Y}$ are derivations of $C^\infty(M)$: each is linear, and $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$, $\mathbf{Y}(fg) = f\,\mathbf{Y}g + g\,\mathbf{Y}f$.
+> *(Lecture 16: routine algebra, the key ingredient being the product rule.)* By Definition [[§56 Vector Fields#^def-56-7|§56.7]], three things have to be shown: that $[\mathbf{X}, \mathbf{Y}]$ takes $C^\infty(M)$ to $C^\infty(M)$, that it is $\mathbb{R}$-linear, and that it satisfies the product rule. Throughout, $\mathbf{X}f$ is the function $p \mapsto \mathbf{X}_p[f]$. By Lemma [[§56 Vector Fields#^lem-56-4|§56.4]], $\mathbf{X}$ and $\mathbf{Y}$ are derivations of $C^\infty(M)$: each is linear, and $\mathbf{X}(fg) = f\,\mathbf{X}g + g\,\mathbf{X}f$, $\mathbf{Y}(fg) = f\,\mathbf{Y}g + g\,\mathbf{Y}f$.
 >
-> *An operator.* For $f \in C^\infty(M)$, $\mathbf{Y}f \in C^\infty(M)$ by Lemma [[§56 Vector Fields#^lem-56-3|§56.3]], and then $\mathbf{X}(\mathbf{Y}f) \in C^\infty(M)$ by the same lemma applied to the smooth function $\mathbf{Y}f$. Likewise $\mathbf{X}f$ and then $\mathbf{Y}(\mathbf{X}f)$ are smooth. So their difference $[\mathbf{X}, \mathbf{Y}](f)$ is smooth.
+> *An operator.* For $f \in C^\infty(M)$, $\mathbf{Y}f \in C^\infty(M)$ by Lemma [[§56 Vector Fields#^lem-56-4|§56.4]], and then $\mathbf{X}(\mathbf{Y}f) \in C^\infty(M)$ by the same lemma applied to the smooth function $\mathbf{Y}f$. Likewise $\mathbf{X}f$ and then $\mathbf{Y}(\mathbf{X}f)$ are smooth. So their difference $[\mathbf{X}, \mathbf{Y}](f)$ is smooth.
 >
 > *Linearity.* Linearity is clear, as a difference of composites of linear maps. Explicitly, for $a, b \in \mathbb{R}$ and $f, g \in C^\infty(M)$, by linearity of $\mathbf{Y}$ and then of $\mathbf{X}$,
 >
@@ -72,11 +72,11 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > [\mathbf{X}, \mathbf{Y}](fg) = f\,\big(\mathbf{X}\mathbf{Y}g - \mathbf{Y}\mathbf{X}g\big) + g\,\big(\mathbf{X}\mathbf{Y}f - \mathbf{Y}\mathbf{X}f\big) = f\, [\mathbf{X}, \mathbf{Y}](g) + g\, [\mathbf{X}, \mathbf{Y}](f).
 > $$
 >
-> So $[\mathbf{X}, \mathbf{Y}]$ is a derivation of $C^\infty(M)$. By Proposition [[§56 Vector Fields#^prop-56-7|§56.7]] it is the operator $D_\mathbf{Z}$ of a unique vector field $\mathbf{Z}$, and this field is again written $[\mathbf{X}, \mathbf{Y}]$.
+> So $[\mathbf{X}, \mathbf{Y}]$ is a derivation of $C^\infty(M)$. By Proposition [[§56 Vector Fields#^prop-56-10|§56.10]] it is the operator $D_\mathbf{Z}$ of a unique vector field $\mathbf{Z}$, and this field is again written $[\mathbf{X}, \mathbf{Y}]$.
 
 ^pf-58-1
 
-*Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§56 Vector Fields#^def-56-5|Def. §56.5]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§56 Vector Fields#^prop-56-7|§56.7]]
+*Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§56 Vector Fields#^def-56-7|Def. §56.7]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§56 Vector Fields#^prop-56-10|§56.10]]
 
 > [!example] Example §58.1: A Bracket in the Plane
 > On $\mathbb{R}^2$ with coordinates $(x, y)$, let $\mathbf{X} = a\, \partial_x$ and $\mathbf{Y} = b\, \partial_y$ with $a, b \in C^\infty(\mathbb{R}^2)$. Then
@@ -88,7 +88,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 ^ex-58-1
 
 > [!proof]+ Proof
-> *(Lecture 16: an exercise in multivariable calculus.)* Both sides are vector fields: the left side by Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], the right side by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], since its coefficients are products of smooth functions. A vector field is determined by its operator (the uniqueness in Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]), so it suffices that both sides give the same function when applied to any $f \in C^\infty(\mathbb{R}^2)$. In the standard chart, Lemma [[§56 Vector Fields#^lem-56-3|§56.3]] gives $\mathbf{X}h = a\, \partial h/\partial x$ and $\mathbf{Y}h = b\, \partial h/\partial y$ for every smooth $h$.
+> *(Lecture 16: an exercise in multivariable calculus.)* Both sides are vector fields: the left side by Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], the right side by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], since its coefficients are products of smooth functions. A vector field is determined by its operator (the uniqueness in Proposition [[§56 Vector Fields#^prop-56-10|§56.10]]), so it suffices that both sides give the same function when applied to any $f \in C^\infty(\mathbb{R}^2)$. In the standard chart, Lemma [[§56 Vector Fields#^lem-56-4|§56.4]] gives $\mathbf{X}h = a\, \partial h/\partial x$ and $\mathbf{Y}h = b\, \partial h/\partial y$ for every smooth $h$.
 >
 > Apply both composites to $f$ and use the product rule for the partial derivatives $\partial/\partial x$ and $\partial/\partial y$:
 >
@@ -103,11 +103,11 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > [\mathbf{X}, \mathbf{Y}]f = \mathbf{X}\mathbf{Y}f - \mathbf{Y}\mathbf{X}f = a\, \frac{\partial b}{\partial x}\, \frac{\partial f}{\partial y} - b\, \frac{\partial a}{\partial y}\, \frac{\partial f}{\partial x} .
 > $$
 >
-> By Lemma [[§56 Vector Fields#^lem-56-3|§56.3]] again, the right side is the field $a\, (\partial b/\partial x)\, \partial/\partial y - b\, (\partial a/\partial y)\, \partial/\partial x$ applied to $f$. So the two fields have the same operator, and the bracket is the stated first-order operator.
+> By Lemma [[§56 Vector Fields#^lem-56-4|§56.4]] again, the right side is the field $a\, (\partial b/\partial x)\, \partial/\partial y - b\, (\partial a/\partial y)\, \partial/\partial x$ applied to $f$. So the two fields have the same operator, and the bracket is the stated first-order operator.
 
 ^pf-ex-58-1
 
-*Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^prop-56-7|§56.7]], [[§56 Vector Fields#^lem-56-3|§56.3]]
+*Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[Schwarz–Clairaut Theorem|452 §6.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^prop-56-10|§56.10]], [[§56 Vector Fields#^lem-56-4|§56.4]]
 
 ![[m591-57-a1.gif|480]]
 
@@ -152,7 +152,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 >
 > followed by the expansion of the right side. Informally this is $[\mathbf{X}, \mathbf{Y}](x^j) = \mathbf{X}(\mathbf{Y}x^j) - \mathbf{Y}(\mathbf{X}x^j) = \mathbf{X}(Y^j) - \mathbf{Y}(X^j)$; the one point to take care of is that the bracket acts on $C^\infty(M)$, while $x^j$ is defined only on $U$.
 >
-> *A global stand-in for $x^j$.* Fix $p \in U$. Let $\chi$ be a bump function at $p$ with $\operatorname{supp}\chi \subseteq U$ (Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \operatorname{supp}\chi \subseteq U$. By Corollary [[§56 Vector Fields#^cor-56-5|§56.5]], $\tilde x^j = \chi x^j$, extended by $0$ outside $U$, lies in $C^\infty(M)$, and it equals $x^j$ on $V$. So at every $q \in V$ the germs of $\tilde x^j$ and $x^j$ coincide, and
+> *A global stand-in for $x^j$.* Fix $p \in U$. Let $\chi$ be a bump function at $p$ with $\operatorname{supp}\chi \subseteq U$ (Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]), equal to $1$ on an open $V \ni p$; then $V \subseteq \operatorname{supp}\chi \subseteq U$. By Corollary [[§56 Vector Fields#^cor-56-8|§56.8]], $\tilde x^j = \chi x^j$, extended by $0$ outside $U$, lies in $C^\infty(M)$, and it equals $x^j$ on $V$. So at every $q \in V$ the germs of $\tilde x^j$ and $x^j$ coincide, and
 >
 > $$
 > (\mathbf{Y}\tilde x^j)(q) = \mathbf{Y}_q[\tilde x^j] = \mathbf{Y}_q[x^j] = Y^j(q), \qquad (\mathbf{X}\tilde x^j)(q) = \mathbf{X}_q[\tilde x^j] = \mathbf{X}_q[x^j] = X^j(q) \qquad (q \in V).
@@ -166,7 +166,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 >
 > As $p \in U$ was arbitrary, this is the first formula: $[\mathbf{X}, \mathbf{Y}]^j = \mathbf{X}(Y^j) - \mathbf{Y}(X^j)$ on $U$.
 >
-> *The second form.* By the universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], $\mathbf{X}_p = \sum_i \mathbf{X}_p[x^i]\, \partial_i|_p = \sum_i X^i(p)\, \partial_i|_p$. Applied to the germ of $Y^j$, with Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], this expands $\mathbf{X}(Y^j) = \sum_i X^i\, \partial Y^j/\partial x^i$; with the letters $\mathbf{X}$ and $\mathbf{Y}$ exchanged, $\mathbf{Y}(X^j) = \sum_i Y^i\, \partial X^j/\partial x^i$. Substituting,
+> *The second form.* By the universal formula of Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], $\mathbf{X}_p = \sum_i \mathbf{X}_p[x^i]\, \partial_i|_p = \sum_i X^i(p)\, \partial_i|_p$. Applied to the germ of $Y^j$, with Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]], this expands $\mathbf{X}(Y^j) = \sum_i X^i\, \partial Y^j/\partial x^i$; with the letters $\mathbf{X}$ and $\mathbf{Y}$ exchanged, $\mathbf{Y}(X^j) = \sum_i Y^i\, \partial X^j/\partial x^i$. Substituting,
 >
 > $$
 > [\mathbf{X}, \mathbf{Y}] = \sum_j \big( \mathbf{X}(Y^j) - \mathbf{Y}(X^j) \big)\, \partial_j = \sum_j \sum_i \Big( X^i\, \frac{\partial Y^j}{\partial x^i} - Y^i\, \frac{\partial X^j}{\partial x^i} \Big)\, \partial_j \qquad \text{on } U.
@@ -174,7 +174,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 
 ^pf-58-2
 
-*Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§58 Lie Bracket and Lie Algebra#^ex-58-1|Ex. §58.1]], [[§56 Vector Fields#^prop-56-4|§56.4]], [[§56 Vector Fields#^cor-56-5|§56.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
+*Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§58 Lie Bracket and Lie Algebra#^ex-58-1|Ex. §58.1]], [[§56 Vector Fields#^cor-56-7|§56.7]], [[§56 Vector Fields#^cor-56-8|§56.8]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]]
 
 > [!theorem] Proposition §58.3: The Hessian at a Critical Point via Vector Fields
 > Let $p$ be a critical point of $f \in C^\infty(M)$, and $v, w \in T_pM$. For every vector field $\mathbf{W}$ with $\mathbf{W}_p = w$,
@@ -192,7 +192,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 ^prop-58-3
 
 > [!proof]+ Proof
-> *(Not from lecture; suggested by Assignment 5, Problem 3.)* Choose a chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$. On $U$, $\mathbf{W} = \sum_j W^j\, \partial/\partial x^j$ with smooth $W^j$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]), and $\mathbf{W}f = \sum_j W^j\, \partial f/\partial x^j$ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]). The tangent vector $v$ is a derivation at $p$, acting on germs (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]), so by its linearity and Leibniz rule
+> *(Not from lecture; suggested by Assignment 5, Problem 3.)* Choose a chart $(U, \varphi = (x^1, \ldots, x^m))$ at $p$. On $U$, $\mathbf{W} = \sum_j W^j\, \partial/\partial x^j$ with smooth $W^j$ (Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]), and $\mathbf{W}f = \sum_j W^j\, \partial f/\partial x^j$ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]). The tangent vector $v$ is a derivation at $p$, acting on germs (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-1|§28.1]]), so by its linearity and Leibniz rule
 >
 > $$
 > v\big[\mathbf{W} f\big] = \sum_{j=1}^m \Big( v\big[W^j\big]\, \frac{\partial f}{\partial x^j}(p) + W^j(p)\, v\Big[\frac{\partial f}{\partial x^j}\Big] \Big) .
@@ -204,7 +204,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 > v\Big[\frac{\partial f}{\partial x^j}\Big] = d\Big(\frac{\partial f}{\partial x^j}\Big)_p(v) = (\mathrm{Hess}_p f)^\sharp\Big(\frac{\partial}{\partial x^j}\Big|_p\Big)(v) = \mathrm{Hess}_p f\Big(v, \frac{\partial}{\partial x^j}\Big|_p\Big) ;
 > $$
 >
-> in components, with $v = \sum_i v^i\, \partial/\partial x^i|_p$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]) and Proposition [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]](1), this is $\sum_i v^i\, \frac{\partial}{\partial x^i}\big|_p\big(\frac{\partial f}{\partial x^j}\big) = \sum_i v^i\, H_{ij}(p)$. So, by the bilinearity of $\mathrm{Hess}_p f$ (Definition [[§54 Critical Points and the Hessian#^def-54-2|§54.2]]),
+> in components, with $v = \sum_i v^i\, \partial/\partial x^i|_p$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]) and Proposition [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]](1), this is $\sum_i v^i\, \frac{\partial}{\partial x^i}\big|_p\big(\frac{\partial f}{\partial x^j}\big) = \sum_i v^i\, H_{ij}(p)$. So, by the bilinearity of $\mathrm{Hess}_p f$ (Definition [[§54 Critical Points and the Hessian#^def-54-2|§54.2]]),
 >
 > $$
 > v\big[\mathbf{W}f\big] = \sum_{j=1}^m w^j\, \mathrm{Hess}_p f\Big(v, \frac{\partial}{\partial x^j}\Big|_p\Big) = \mathrm{Hess}_p f\Big(v, \sum_{j=1}^m w^j\, \frac{\partial}{\partial x^j}\Big|_p\Big) = \mathrm{Hess}_p f(v, w) = \sum_{i,j} H_{ij}(p)\, v^i w^j ,
@@ -216,7 +216,7 @@ Each composite $\mathbf{X} \circ \mathbf{Y}$ is a second-order operator, in $\ma
 
 ^pf-58-3
 
-*Uses:* [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§36 Submersions#^prop-36-2|§36.2]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]], [[§54 Critical Points and the Hessian#^def-54-2|Def. §54.2]], [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]
+*Uses:* [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§28 Derivations and the Abstract Tangent Space#^def-28-1|Def. §28.1]], [[§36 Submersions#^prop-36-2|§36.2]], [[§32 The Cotangent Space#^prop-32-2|§32.2]], [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]], [[§54 Critical Points and the Hessian#^def-54-2|Def. §54.2]], [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]]
 
 > [!definition] Definition §58.2: Lie Algebra
 > A (real) **Lie algebra** $\mathfrak{g}$ is a real [[§2 Definition of Vector Space#^ladr-1-20|vector space]] together with a [[§38 Tensor Products#^ladr-9-77|bilinear]], skew-symmetric operation $[\cdot,\cdot] : \mathfrak{g} \times \mathfrak{g} \to \mathfrak{g}$, the **Lie bracket**, satisfying the **Jacobi identity**
@@ -288,7 +288,7 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: $Y$ moves to th
 ^cor-58-5
 
 > [!proof]+ Proof
-> *(Lecture 16: the bracket of fields comes from a product, composition, which is associative. Filled in.)* By Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]], what has to be shown is that $\mathfrak{X}(M)$ is a real vector space, that the bracket maps $\mathfrak{X}(M) \times \mathfrak{X}(M)$ into $\mathfrak{X}(M)$, and that it is bilinear, skew-symmetric and satisfies the Jacobi identity. In this proof write $D_\mathbf{X}$ for $\mathbf{X}$ regarded as an operator (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]), to keep the field and its operator apart.
+> *(Lecture 16: the bracket of fields comes from a product, composition, which is associative. Filled in.)* By Definition [[§58 Lie Bracket and Lie Algebra#^def-58-2|§58.2]], what has to be shown is that $\mathfrak{X}(M)$ is a real vector space, that the bracket maps $\mathfrak{X}(M) \times \mathfrak{X}(M)$ into $\mathfrak{X}(M)$, and that it is bilinear, skew-symmetric and satisfies the Jacobi identity. In this proof write $D_\mathbf{X}$ for $\mathbf{X}$ regarded as an operator (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]), to keep the field and its operator apart.
 >
 > *The space and the bracket.* $\mathfrak{X}(M)$ is a real vector space by Proposition [[§56 Vector Fields#^prop-56-2|§56.2]]. By Lemma [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], $\mathfrak{X}(M)$, identified with the derivations, is closed under the commutator: for $\mathbf{X}, \mathbf{Y} \in \mathfrak{X}(M)$ the commutator of $D_\mathbf{X}$ and $D_\mathbf{Y}$ is the operator of the vector field $[\mathbf{X}, \mathbf{Y}]$,
 >
@@ -304,7 +304,7 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: $Y$ moves to th
 > \big(D_{a\mathbf{X} + b\mathbf{Y}} f\big)(p) = \big(a\,\mathbf{X}_p + b\,\mathbf{Y}_p\big)[f] = a\,\mathbf{X}_p[f] + b\,\mathbf{Y}_p[f] = \big((a\,D_\mathbf{X} + b\,D_\mathbf{Y}) f\big)(p) .
 > $$
 >
-> It is injective, by the uniqueness in Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]. So an identity between fields holds as soon as the corresponding identity between their operators holds. Using $D_{[\mathbf{X}, \mathbf{Y}]} = [D_\mathbf{X}, D_\mathbf{Y}]$ and the linearity of $\mathbf{X} \mapsto D_\mathbf{X}$:
+> It is injective, by the uniqueness in Proposition [[§56 Vector Fields#^prop-56-10|§56.10]]. So an identity between fields holds as soon as the corresponding identity between their operators holds. Using $D_{[\mathbf{X}, \mathbf{Y}]} = [D_\mathbf{X}, D_\mathbf{Y}]$ and the linearity of $\mathbf{X} \mapsto D_\mathbf{X}$:
 > - *bilinearity:* $D_{[a\mathbf{X} + b\mathbf{X}', \mathbf{Y}]} = [a\,D_\mathbf{X} + b\,D_{\mathbf{X}'}, D_\mathbf{Y}] = a\,[D_\mathbf{X}, D_\mathbf{Y}] + b\,[D_{\mathbf{X}'}, D_\mathbf{Y}] = D_{a[\mathbf{X}, \mathbf{Y}] + b[\mathbf{X}', \mathbf{Y}]}$, and in the second argument $D_{[\mathbf{X}, a\mathbf{Y} + b\mathbf{Y}']} = [D_\mathbf{X}, a\,D_\mathbf{Y} + b\,D_{\mathbf{Y}'}] = a\,[D_\mathbf{X}, D_\mathbf{Y}] + b\,[D_\mathbf{X}, D_{\mathbf{Y}'}] = D_{a[\mathbf{X}, \mathbf{Y}] + b[\mathbf{X}, \mathbf{Y}']}$;
 > - *skew-symmetry:* $D_{[\mathbf{Y}, \mathbf{X}]} = [D_\mathbf{Y}, D_\mathbf{X}] = -[D_\mathbf{X}, D_\mathbf{Y}] = D_{-[\mathbf{X}, \mathbf{Y}]}$;
 > - *Jacobi:* applying the identity twice, $D_{[\mathbf{X}, [\mathbf{Y}, \mathbf{Z}]{]}} = [D_\mathbf{X}, D_{[\mathbf{Y}, \mathbf{Z}]}] = [D_\mathbf{X}, [D_\mathbf{Y}, D_\mathbf{Z}]{]}$, and the same with $\mathbf{X}, \mathbf{Y}, \mathbf{Z}$ renamed cyclically; adding the three,
@@ -317,7 +317,7 @@ The three terms come from one by permuting $X, Y, Z$ cyclically: $Y$ moves to th
 
 ^pf-58-5
 
-*Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^def-58-2|Def. §58.2]], [[§58 Lie Bracket and Lie Algebra#^prop-58-4|§58.4]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§56 Vector Fields#^prop-56-7|§56.7]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§56 Vector Fields#^def-56-4|Def. §56.4]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
+*Uses:* [[§58 Lie Bracket and Lie Algebra#^def-58-1|Def. §58.1]], [[§58 Lie Bracket and Lie Algebra#^def-58-2|Def. §58.2]], [[§58 Lie Bracket and Lie Algebra#^prop-58-4|§58.4]], [[§58 Lie Bracket and Lie Algebra#^lem-58-1|§58.1]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§56 Vector Fields#^prop-56-10|§56.10]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§56 Vector Fields#^def-56-4|Def. §56.4]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
 Checking the Jacobi identity for vector fields directly by hand is a big computation. The Lie algebra $\mathfrak{X}(M)$ is infinite-dimensional (for $\dim M \ge 1$). The finite-dimensional Lie algebras of [[§60 Lie Groups and Left-Invariant Vector Fields|§60]] sit inside it.
 
@@ -418,4 +418,4 @@ So two differential operators commute “up to lower order”. For $k = l = 1$, 
 > - The cross product and its algebraic properties, proved by components: [[§96 The Cross Product#^def-96-1|Calc Def. §96.1]], [[§96 The Cross Product#^thm-96-8|Calc §96.8]].
 > - The same computation for the infinitesimal rotations of quantum mechanics: [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^thm-c5-1-1|QM Theorem §C5.1.1]], with [[§C5.1 Rotations and the Angular-Momentum Commutation Relations#^rem-c5-1-1|QM ★ Remark: The Lie algebra of SO(3)]].
 
-The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-4|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].
+The classical groups through the course: defined in [[§11 Topological Groups and Classical Matrix Groups|Topological Groups and Classical Matrix Groups]], with the examples of [[§16 The Classical Groups|The Classical Groups]]; topological manifolds as level sets in [[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|Classical Groups Are Manifolds]]; $\mathrm{SO}(2)$ and $\mathrm{SO}(3)$ acting on $\mathbb{R}^2$ and $\mathbb{R}^3$ in [[§13 Group Actions and Orbit Spaces#^ex-13-6|the rotations of the plane]] and [[§13 Group Actions and Orbit Spaces#^ex-13-7|the rotations of space]], and $\mathrm{SO}(3)$ on $S^2$ in [[§14 Homogeneous Spaces#^ex-14-2|the isotropy of the north pole]] and [[§14 Homogeneous Spaces#^ex-14-5|the sphere as a homogeneous space]]; $\mathrm{O}(n)$ acting on the Grassmannians in [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-8|Grassmannians as Homogeneous Spaces]]; smooth manifolds in [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|the orthogonal group]] and [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|the unitary group]]; their tangent spaces at the identity in [[§25 The Geometric Tangent Space#^thm-25-5|The Classical Groups]], with [[§25 The Geometric Tangent Space#^ex-25-4|the infinitesimal rotations]]; the double cover $\mathrm{SU}(2) \to \mathrm{SO}(3)$ in [[§48 SU(2) → SO(3)꞉ The Double Cover#^thm-48-5|The Double Cover]]; the Lie algebra $\mathfrak{so}(3)$ and the cross product in [[§58 Lie Bracket and Lie Algebra#^ex-58-3|Ex. §58.3]]; and Lie groups in [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-1|§60.1]].

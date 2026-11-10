@@ -106,7 +106,7 @@ The derivation below uses the Clifford relation of the Dirac matrices, $(\gamma^
 >
 > **6. Normalizations.** $u^{s\dagger}(p)u^r(p) = v^{s\dagger}(p)v^r(p) = 2E_{\mathbf p}\delta^{rs}$ ([[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-1|Theorem §C5a.12.1]], [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-3|Theorem §C5a.12.3]]); with the $\frac12$ this gives $E_{\mathbf p}\bigl(\hat a^{s\dagger}\hat a^s - \hat b^s\hat b^{s\dagger}\bigr)$, summed over $s$. No time dependence is left.
 >
-> ⚑ By-product: the $\hat b$ term carries a minus sign and the order $\hat b\hat b^\dagger$; for c-number amplitudes the classical energy is indefinite → [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|Theorem §C5b.5.2]]; for operators, which way it goes depends on the algebra → [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]].
+> ⚑ By-product: the $\hat b$ term carries a minus sign and the order $\hat b\hat b^\dagger$; for c-number amplitudes the classical energy is indefinite → [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^thm-c5b-5-2|★ Theorem §C5b.5.2]]; for operators, which way it goes depends on the algebra → [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-3|Theorem §C5b.3.3]], [[§C5b.3 Energy, Momentum and the Zero-Point Energy#^thm-c5b-3-5|Theorem §C5b.3.5]].
 >
 > **What the derivation shows**
 > - $\hat H$ is diagonal in the modes before any quantization rule is chosen; only the reordering of $\hat b\hat b^\dagger$ remains to be done.
@@ -315,7 +315,7 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 >
 > **What the derivation shows**
 > - A negative infinite constant, removed by normal ordering exactly as the scalar's; for energy differences it is harmless ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^rem-c2a-3-1|§C2a.3, Remark: Why the zero-point energy is dropped]]).
-> - It is the energy of Dirac's filled sea → [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-3|§C5b.5, Remark: The Dirac sea, read in the field]].
+> - It is the energy of Dirac's filled sea → [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-3|§C5b.5, ★ Remark: The Dirac sea, read in the field]].
 
 ^der-c5b-3-6
 
@@ -433,7 +433,7 @@ The checkpoint leaves anticommutators, and with them a vacuum annihilated by $\h
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], part 1 — relabelling $\mathbf p \to -\mathbf p$ with Jacobian $1$ in the $\hat b$ term (second route of Theorem §C5b.3.2, Step 6).
 
 > [!remark]- Connections
-> - The free Dirac Hamiltonian is the second-quantized form of the single-particle Hamiltonian, $\hat H = \int\hat\psi^\dagger H_{\text{s.p.}}\hat\psi$, exactly the one-body operator of nonrelativistic second quantization; what is new is that half of the modes of $H_{\text{s.p.}}$ are written with creation operators in front — [[§C12.2★ Second Quantization#^thm-c12-2-4|QM Theorem §C12.2.4]], [[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-3|§C5b.5, Remark: The Dirac sea, read in the field]].
+> - The free Dirac Hamiltonian is the second-quantized form of the single-particle Hamiltonian, $\hat H = \int\hat\psi^\dagger H_{\text{s.p.}}\hat\psi$, exactly the one-body operator of nonrelativistic second quantization; what is new is that half of the modes of $H_{\text{s.p.}}$ are written with creation operators in front — [[§C12.2★ Second Quantization#^thm-c12-2-4|QM Theorem §C12.2.4]], [[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]], [[§C5b.5 The U(1) Charge, Particles and Antiparticles#^rem-c5b-5-3|§C5b.5, ★ Remark: The Dirac sea, read in the field]].
 > - The sign of the zero-point energy, $+\frac12\omega$ for $\{\hat a^\dagger, \hat a\}/2$ and $-\frac12\omega$ for $[\hat c^\dagger, \hat c]/2$, is the oscillator form of the boson–fermion difference; both are the same singular coincident product, δ³(0) in modes or a two-point function at zero separation — [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]], [[§C5b.7 Wightman Functions, the Anticommutator Function and Microcausality#^thm-c5b-7-1|Theorem §C5b.7.1]].
 > - The Hamiltonian in modes needs the orthogonality of $u(p)$ and $v(\tilde p)$ at flipped momentum for the same reason the scalar Hamiltonian needed $E_{-\mathbf p} = E_{\mathbf p}$: the $d^3x$ integral pairs $\mathbf p$ with $-\mathbf p$ in the number-changing terms — [[§C5a.12 Normalization and Spin Sums#^thm-c5a-12-6|Theorem §C5a.12.6]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]].
 > - The ladder relations generate the time dependence of the mode operators, which makes the expansion of §C5b.2 the Heisenberg field — [[§C5b.6 The Heisenberg Dirac Field#^thm-c5b-6-1|Theorem §C5b.6.1]].

@@ -14,8 +14,8 @@ tags: [functional-analysis, math556, companion]
 
 ^thm-47-1
 
-> [!proof]+ Proof
-> Not covered, and beyond the course: it requires the theory of unbounded self-adjoint operators. Recorded here as physics input; see for instance G. Teschl, *Mathematical Methods in Quantum Mechanics*, the chapter on the hydrogen atom.
+> [!proof]+ Proof (not given in this course)
+> The proof is beyond the course: it requires the theory of unbounded self-adjoint operators. Recorded here as physics input; see for instance G. Teschl, *Mathematical Methods in Quantum Mechanics*, the chapter on the hydrogen atom.
 
 ^pf-47-1
 

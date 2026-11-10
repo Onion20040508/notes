@@ -22,43 +22,27 @@ tags: [functional-analysis, math556, companion]
 
 ## The Dual Space
 
-> [!definition] Definition §44.1: Dual Space
-> Let $X$ be a normed linear space over $\mathbb{F}$. The **dual space** $X^{\ast}$ is the set of bounded linear functionals on $X$ (Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|§26.1]]), with pointwise addition and scalar multiplication.
+Recall (Definition [[§31 Dual Spaces#^def-31-1|§31.1]]) that for a normed linear space $X$ over $\mathbb{F}$ the set of bounded linear functionals on $X$ (Definition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^def-26-1|§26.1]]), $X' = \mathcal{L}(X, \mathbb{F})$, with pointwise addition and scalar multiplication and with the norm $\|\ell\| = \sup_{x \neq 0} |\ell(x)|/\|x\|$, is the dual space of $X$; it is a normed linear space (Theorem [[§30 Boundedness and Continuity#^thm-30-8|§30.8]]). Physics texts often write $H^{\ast}$ for the dual of a Hilbert space $H$; these notes write $H'$ throughout.
 
-^xold-def-44-1
+In this chapter a constant $c \ge 0$ is called *admissible* for $\ell \in X'$ if $|\ell(x)| \le c\,\|x\|$ for all $x \in X$. By Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], parts (b) and (c), applied to the bounded linear map $\ell : X \to \mathbb{F}$, the norm $\|\ell\|$ is itself an admissible constant, $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$, and it is the smallest one:
+
+$$
+\|\ell\| = \min\{ c \ge 0 : |\ell(x)| \le c\,\|x\| \text{ for all } x \in X \} .
+$$
+
+(For $X = \{0\}$, which Proposition [[§30 Boundedness and Continuity#^prop-30-1|§30.1]] excludes, $\ell = 0$ and $\|\ell\| = 0$ by Definition [[§30 Boundedness and Continuity#^def-30-3|§30.3]], and both statements hold trivially.)
+
 > [!remark]- Connections
-> - The same space in Chapter 6: $X^* = \mathcal{L}(X, \mathbb{F})$, [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] with [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]].
+> - The same space in Chapter 6: $X' = \mathcal{L}(X, \mathbb{F})$, [[§30 Boundedness and Continuity#^def-30-4|Def. §30.4]] with [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]].
 > - The algebraic dual (no boundedness) in finite dimensions: [[§12 Duality#^ladr-3-110|LADR 3.110]]; [[§21 Linear Algebra Toolkit#^def-21-1|591 Def. §21.1]].
-
-> [!definition] Definition §44.2: Dual Norm
-> For $\ell \in X^{\ast}$ (Definition [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|§44.1]]), its **norm** is
->
-> $$
-> \|\ell\| = \inf\{ c \ge 0 : |\ell(x)| \le c\,\|x\| \text{ for all } x \in X \} .
-> $$
-
-^xold-def-44-2
-> [!remark]- Connections
 > - The same norm in Chapter 6: the operator norm for $Y = \mathbb{F}$, [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]].
-
-> [!theorem] Lemma §44.1: The Dual Norm
-> Let $X$ be a normed linear space over $\mathbb{F}$. For $\ell \in X^*$, the infimum $\|\ell\|$ is itself an admissible constant: $|\ell(x)| \le \|\ell\|\,\|x\|$ for all $x$. Moreover $X^*$ is a linear space and $\|\cdot\|$ is a norm on it.
-
-^xold-lem-44-1
-> [!proof]+ Proof
-> Fix $x$. For every admissible $c$, $|\ell(x)| \le c\|x\|$; taking the infimum over $c$ gives $|\ell(x)| \le \|\ell\|\,\|x\|$. If $c_1, c_2$ are admissible for $\ell_1, \ell_2$, then $|(\ell_1 + \ell_2)(x)| \le (c_1 + c_2)\|x\|$ and $|(k\ell_1)(x)| \le |k| c_1 \|x\|$; so $X^*$ is closed under the operations, and taking infima gives subadditivity and $\|k\ell\| \le |k|\,\|\ell\|$, with equality for $k \neq 0$ by applying the same to $k^{-1}(k\ell)$. If $\|\ell\| = 0$ then $|\ell(x)| \le 0$ for all $x$, so $\ell = 0$.
-
-^xold-pf-44-1
-*Uses:* [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-2|Def. §44.2]], [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|Def. §44.1]], [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]]
-
-> [!remark]- Connections
 > - The same statement for all bounded linear maps: [[§30 Boundedness and Continuity#^prop-30-1|§30.1]], [[§30 Boundedness and Continuity#^thm-30-8|§30.8]].
 > - The operator norm in finite dimensions: [[§28 Consequences of Singular Value Decomposition#^ladr-7-86|LADR 7.86]], [[§28 Consequences of Singular Value Decomposition#^ladr-7-87|LADR 7.87]].
 
 ## The Riesz Map
 
 > [!theorem] Theorem §44.1: The Riesz Map
-> Let $H$ be a Hilbert space and define $R : H \to H^{\ast}$ by $R(a) = \ell_a$, $\ell_a(x) = (x, a)$. Then:
+> Let $H$ be a Hilbert space and define $R : H \to H'$ by $R(a) = \ell_a$, $\ell_a(x) = (x, a)$. Then:
 > 1. $R$ is a bijection;
 > 2. $R$ is *conjugate-linear*: $R(ca + b) = \bar{c}\, R(a) + R(b)$ for $a, b \in H$, $c \in \mathbb{F}$;
 > 3. $R$ is isometric: $\|R(a)\| = \|a\|$.
@@ -66,11 +50,11 @@ tags: [functional-analysis, math556, companion]
 ^thm-44-1
 
 > [!proof]+ Proof
-> $R(a) \in H^*$ is part (1) of the Riesz representation theorem (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]); every $\ell \in H^*$ equals $R(a)$ for exactly one $a$ by part (2); so $R$ is a bijection. Conjugate-linearity is conjugate-linearity of the inner product in its second argument: $(x, ca + b) = \bar{c}(x, a) + (x, b)$. For the isometry, [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]] shows $c = \|a\|$ is admissible for $\ell_a$, so $\|\ell_a\| \le \|a\|$; conversely, if $c$ is admissible then $\|a\|^2 = \ell_a(a) \le c\,\|a\|$, so $c \ge \|a\|$ when $a \neq 0$ (and the case $a = 0$ is trivial).
+> $R(a) \in H'$ is part (1) of the Riesz representation theorem (Theorem [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]]); every $\ell \in H'$ equals $R(a)$ for exactly one $a$ by part (2); so $R$ is a bijection. Conjugate-linearity is conjugate-linearity of the inner product in its second argument: $(x, ca + b) = \bar{c}(x, a) + (x, b)$. For the isometry, [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]] shows $c = \|a\|$ is admissible for $\ell_a$, so $\|\ell_a\| \le \|a\|$; conversely, if $c$ is admissible then $\|a\|^2 = \ell_a(a) \le c\,\|a\|$, so $c \ge \|a\|$ when $a \neq 0$ (and the case $a = 0$ is trivial).
 
 ^pf-44-1
 
-*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-1|Def. §44.1]], [[§44 Bras, Kets, and the Riesz Map#^xold-def-44-2|Def. §44.2]]
+*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|§26.5]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§31 Dual Spaces#^def-31-1|Def. §31.1]]
 
 > [!remark]- Connections
 > - Finite-dimensional version: [[Riesz representation theorem]] ([[§21 Orthonormal Bases#^ladr-6-42|LADR 6.42]], [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-58|LADR 6.58]]).
@@ -81,7 +65,7 @@ tags: [functional-analysis, math556, companion]
 ^rem-44-2
 
 > [!remark]- Connections
-> - The basis-dependent isomorphism $V \cong V^*$: [[§21 Linear Algebra Toolkit#^prop-21-2|591 §21.2]] (dual basis), [[§12 Duality#^ladr-3-110|LADR 3.110]]; isomorphisms from non-degenerate pairings: [[§21 Linear Algebra Toolkit#^thm-21-5|591 §21.5]].
+> - The basis-dependent isomorphism $V \cong V^{\ast}$: [[§21 Linear Algebra Toolkit#^prop-21-2|591 §21.2]] (dual basis), [[§12 Duality#^ladr-3-110|LADR 3.110]]; isomorphisms from non-degenerate pairings: [[§21 Linear Algebra Toolkit#^thm-21-5|591 §21.5]].
 
 > [!example] Example §44.1: The Riesz Map on $\mathbb{C}^n$ is the Conjugate Transpose
 > Let $H = \mathbb{C}^n$ with $(x, a) = \sum_{j=1}^n x_j\, \bar{a}_j$, and write vectors as columns. The functional corresponding to a column vector $a$ is the conjugate transpose $a^\dagger = \bar{a}^{T}$, a row vector acting by matrix multiplication:
@@ -97,7 +81,7 @@ tags: [functional-analysis, math556, companion]
 ## Dirac Notation
 
 > [!definition] Definition §44.1: Kets and Bras
-> Let $H$ be a Hilbert space. For $a \in H$, the **ket** $|a\rangle$ denotes $a$ itself, and the **bra** $\langle a|$ denotes the functional $R(a) = \ell_a \in H^{\ast}$, so that
+> Let $H$ be a Hilbert space. For $a \in H$, the **ket** $|a\rangle$ denotes $a$ itself, and the **bra** $\langle a|$ denotes the functional $R(a) = \ell_a \in H'$, so that
 >
 > $$
 > \langle a | x \rangle := \langle a|\,(x) = (x, a) .

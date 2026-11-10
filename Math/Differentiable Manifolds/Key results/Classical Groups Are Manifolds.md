@@ -13,7 +13,7 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§3 Subspaces and Products#^thm-3-5|Theorem §3.5: Subspaces Inherit Both Conditions]]
 - [[§3 Subspaces and Products#^prop-3-6|Proposition §3.6: Open Subsets of Manifolds Are Manifolds]]
-- [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|Corollary §12.5: SL(n,ℝ) Is a Manifold of Dimension n² − 1]]
+- [[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|Corollary §12.4: SL(n,ℝ) Is a Manifold of Dimension n² − 1]]
 - [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Example §23.1: O(n) Is a Smooth Manifold of Dimension n(n-1)/2]]
 - [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-3|Example §23.3: U(n) Is a Smooth Manifold of Dimension n²]]
 - [[§25 The Geometric Tangent Space#^thm-25-5|Theorem §25.5: The Classical Groups]]

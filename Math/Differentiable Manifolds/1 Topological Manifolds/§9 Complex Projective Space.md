@@ -109,7 +109,7 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 > [!remark] Remark
 > The one place the group enters the direct proof is $|\lambda \vec u - \lambda \vec z_1| = |\vec u - \vec z_1|$: every $\lambda \in S^1$ is an *isometry*, so the thickening by $r$ is uniform over the whole group. That uniformity — a compact group acting by isometries — is the concrete mechanism behind [[§13 Group Actions and Orbit Spaces#^cor-13-4|Corollary §13.4]], and it is exactly what fails for $\mathbb{R}^+$ in [[§13 Group Actions and Orbit Spaces#^ex-13-8|Example §13.8]], where $t \cdot (x,y) = (tx, y/t)$ distorts distances without bound.
 
-^rem-9-1
+^rem-9-2
 
 > [!theorem] Proposition §9.2: $\mathbb{CP}^n$ Is Compact
 > $\mathbb{CP}^n$ is compact.
@@ -188,7 +188,7 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 > [!remark] Remark
 > Lemma [[§9 Complex Projective Space#^lem-9-4|§9.4]] is the key identity behind (2): each punctured line meets the unit sphere in precisely one circle, and normalizing $\vec z \mapsto \vec z/|\vec z|$ is the bridge between the two descriptions — a point downstairs, a whole line upstairs in one, a circle upstairs in the other.
 
-^rem-9-2
+^rem-9-3
 
 ![[m591-3-9.svg]]
 *A cartoon in real dimensions: the complex line $\mathbb{C}\vec z$ is drawn as a plane (blue) through the removed origin, and the unit sphere $S^{2n+1}$ cuts it in exactly one circle, the $S^1$-orbit $S^1\vec z$ (red). Normalizing $g(\vec w) = \vec w/|\vec w|$ pushes every point of the punctured line radially onto that circle — $\vec z$ and $\lambda\vec z$ land on different points of it, but on the same circle. So one $\mathbb{C}^\times$-orbit upstairs corresponds to one $S^1$-orbit, which is why $\Theta$ is a bijection.*
@@ -203,4 +203,4 @@ The following was set up at the end of a lecture, with the proof of the claim gi
 > [!remark] Remark: Where This Is Going
 > $\mathbb{CP}^n$ is one of the main examples of manifolds and will recur throughout the course. With $T_2$ and second countability now secured, what is missing from manifold status is the locally Euclidean condition — charts on $\mathbb{CP}^n$ — which is supplied in [[§18 Projective Spaces as Smooth Manifolds|§18, Projective Spaces as Smooth Manifolds]], together with the smooth structure. The same two-step pattern ($\sim$ open via a group acting by homeomorphisms + graph closed via compactness) is the template for many quotient constructions to come: real projective space $\mathbb{RP}^n$ (Lee Example 1.5), Grassmannians, tori, and lens spaces all fit it.
 
-^rem-9-3
+^rem-9-4

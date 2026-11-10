@@ -322,6 +322,8 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 
 ^der-c6c-7-7
 
+*Uses:* [[§C6c.7 Particle Production by a Classical Source꞉ the Diagrammatic Route#^thm-c6c-7-6|Theorem §C6c.7.6]]
+
 > [!remark] Remark: Two routes, one answer
 > The coherent-state route of [[§C2b.8 Particle Production by a Classical Source|§C2b.8]] (Heisenberg picture, retarded function) gives the final state $\prod_{\mathbf p}$-coherent with $\eta_{\mathbf p} = i\tilde j(E_{\mathbf p}, \mathbf p)$ ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-2|Theorem §C2b.8.2]]) and Poisson statistics with mean $\bar N$ ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-3|Theorem §C2b.8.3]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-6|Theorem §C2a.6.6]]); the diagrammatic route here gives $\mathcal A(\mathbf k_1, \dots) = \prod_i\frac{i\tilde j(k_i)}{\sqrt{2E_{\mathbf k_i}}}e^{\mathcal A_2}$, which is the expansion of that coherent state in $\hat a^\dagger|0\rangle$ states up to the phase $e^{i\operatorname{Im}\mathcal A_2}$, with $\lambda = \bar N$. The diagrammatic route is the one that generalizes to interactions that are not linear in the field.
 >
@@ -334,6 +336,11 @@ The contraction of fields with outgoing particles, in both normalizations, is [[
 >
 > - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]] — a vacuum sum over diagrams weighted by $1/S$ is the exponential of its connected part.
 > - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]] — the counting of [[§CA.7 Pairings, Diagrams and Symmetry Factors|§CA.7]] holds for vertices with one leg, $|G_n| = n!$ (parts 1 and 4).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]] — the Fourier convention of $\tilde j(k)$.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] — $\tilde j(-p) = \tilde j(p)^{\ast}$ for a real source.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — the relabelling $\mathbf p \to -\mathbf p$ under $\int d^3p$.
+> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]] — the $i\varepsilon$ limit of the propagator denominator has the part $-i\pi\delta(p^2 - m^2)$ (Sokhotski–Plemelj), the real part of $\mathcal A_2$.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]] — $\delta(p^2 - m^2)$ is two deltas in $p^0$ with weight $\frac{1}{2E_{\mathbf p}}$.
 
 > [!remark]- Connections
 > - The vacuum series exponentiates by the same exponential formula as the vacuum bubbles of $\phi^4$ theory; here the only connected vacuum diagram is the line, so the whole series is $e^{L/2}$ — [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-3|Theorem §CA.8.3]], [[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-6|Theorem §C6a.11.6]].

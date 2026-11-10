@@ -95,7 +95,7 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 
 ^der-c2b-7-2
 
-*Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]], [[§C2b.7 Wick Rotation and the Two-Point Family#^def-c2b-7-1|Def. §C2b.7.1]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]]
+*Uses:* [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]], [[§C2b.7 Wick Rotation and the Two-Point Family#^def-c2b-7-1|Def. §C2b.7.1]], [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-1|Theorem §C2b.7.1]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]]
 
 > [!theorem] Theorem §C2b.7.3: The Feynman Function in Position Space
 > For all real $\xi$,
@@ -104,7 +104,7 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 > D_F(\xi) = \frac{m\,K_1(ms)}{4\pi^2s}, \qquad s = \sqrt{-\xi^2 + i\varepsilon} ,
 > $$
 >
-> even in $\xi$, real at spacelike separation, and with the same branch for both signs of $\xi^0$ inside the cone: the Feynman prescription is the infinitesimal Wick rotation $t \to t(1 - i\varepsilon)$.
+> even in $\xi$, real at spacelike separation, and with the same branch for both signs of $\xi^0$ inside the cone: the Feynman prescription is the infinitesimal Wick rotation $t \to t(1 - i\varepsilon)$. Inside the cone ($\xi^2 = \tau^2 > 0$, $s = i\tau$), $D_F = \frac{m}{8\pi\tau}\bigl[Y_1(m\tau) + iJ_1(m\tau)\bigr]$ for both signs of $\xi^0$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]] with $\operatorname{sgn}(\xi^0) \to +1$); outside, $D_F = \frac{m\,K_1(mr)}{4\pi^2r}$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]).
 >
 > *Model:* any; *applies:* any theory (a statement about the function); its reading as a vacuum value in $|0\rangle$ needs the free field ([[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]).
 >
@@ -115,7 +115,7 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 > [!derivation]- Derivation
 > **Step 1** ($\xi^0 > 0$). $D_F = D_W(\xi)$, the boundary value from $z = \xi^0 - i\varepsilon$ of $W = mK_1(ms)/4\pi^2s$ with $s^2 = \boldsymbol\xi^2 - z^2$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]]): $s^2 = \boldsymbol\xi^2 - (\xi^0)^2 + 2i\varepsilon\xi^0 + \varepsilon^2 = -\xi^2 + i\varepsilon'$ with $\varepsilon' = 2\varepsilon\xi^0 > 0$.
 >
-> **Step 2** ($\xi^0 < 0$). $D_F = D_W(-\xi)$, the boundary value at the point $-\xi$, i.e. $z = -\xi^0 - i\varepsilon$ and $\boldsymbol\xi \to -\boldsymbol\xi$: $s^2 = \boldsymbol\xi^2 - (\xi^0 + i\varepsilon)^2 = -\xi^2 - 2i\varepsilon\xi^0 - \varepsilon^2 = -\xi^2 + i\varepsilon''$ with $\varepsilon'' = -2\varepsilon\xi^0 > 0$ because $\xi^0 < 0$.
+> **Step 2** ($\xi^0 < 0$). $D_F = D_W(-\xi)$, the boundary value at the point $-\xi$, i.e. $z = -\xi^0 - i\varepsilon$ and $\boldsymbol\xi \to -\boldsymbol\xi$: $s^2 = \boldsymbol\xi^2 - (\xi^0 + i\varepsilon)^2 = -\xi^2 - 2i\varepsilon\xi^0 + \varepsilon^2 = -\xi^2 + i\varepsilon''$ with $\varepsilon'' = -2\varepsilon\xi^0 > 0$ because $\xi^0 < 0$.
 >
 > **Step 3** (one formula). In both cases the infinitesimal added to $-\xi^2$ is positive: $s = \sqrt{-\xi^2 + i\varepsilon}$. (Steps 1–2 are pointwise limits at points off the light cone, where $D_F$ is a function, [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]], 1; on the cone the formula is read as a distribution, [[§C2b.7 Wick Rotation and the Two-Point Family#^thm-c2b-7-4|Theorem §C2b.7.4]], 2.) The formula depends on $\xi$ only through $\xi^2$, hence it is even and invariant. Outside the cone $-\xi^2 > 0$ and $s$ is real ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]]); inside, $s = i\tau$ for both signs of $\xi^0$.
 >
@@ -123,11 +123,11 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 >
 > **What the derivation shows.**
 > - This is the position-space mirror of $p^2 - m^2 + i\varepsilon$: the same branch everywhere is what time ordering does.
-> - Inside the cone, $D_F = \frac{m}{8\pi\tau}[Y_1(m\tau) + iJ_1(m\tau)]$ for both signs of $\xi^0$ (Theorem §C2b.3.4 with $\operatorname{sgn} \to +$).
+> - Inside the cone, $D_F = \frac{m}{8\pi\tau}[Y_1(m\tau) + iJ_1(m\tau)]$ for both signs of $\xi^0$ ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]] with $\operatorname{sgn} \to +$: for $\xi^0 < 0$, $D_F = D_W(-\xi)$ is the future-sheet value), as now stated in the theorem.
 
 ^der-c2b-7-3
 
-*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]]
+*Uses:* [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-2|Theorem §C2b.3.2]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-4|Theorem §C2b.3.4]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-6|Theorem §C2b.3.6]]
 
 > [!remark] Remark: Why the Feynman contour is singled out
 > On the imaginary axis $p^2 - m^2 = -(p_4^2 + \mathbf p^2 + m^2) < 0$: the pole problem disappears, and energy and momentum enter symmetrically. In the slides' words, the Feynman prescription is the Euclidean prescription, analytically continued to Lorentzian signature: four-dimensional rotation symmetry, which is relativity continued to imaginary time, is manifest at every step. (The slides write $p^0_E = ip^0_M$; $p^0 = ip_4$ here differs by $p_4 \to -p_4$, which the integral does not see.) The imaginary-time function is also the vacuum two-point function at imaginary time ([[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]]), so Euclidean, Wightman and Feynman functions are three boundary values of one analytic function.
@@ -190,6 +190,7 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 ^rem-c2b-7-2
 
 > [!theorem] Theorem §C2b.7.5: Relations in the Two-Point Family
+> For the functions of [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-2|Remark: The two-point functions at a glance]]:
 > 1. $D_R - D_A = iD$, and $\bar D = \frac12\operatorname{sgn}(\xi^0)\,iD$.
 > 2. $D_F = \frac12D_1 + \bar D$ and $D_{\bar F} = -\frac12D_1 + \bar D = -\overline{D_F}$; hence $D_F - D_{\bar F} = D_1$, $\operatorname{Re}D_F = \frac12D_1$, $\operatorname{Im}D_F = \frac12\operatorname{sgn}(\xi^0)D$.
 > 3. $D_F = D_R + D_W(-\xi) = D_A + D_W(\xi)$.
@@ -214,7 +215,7 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 >
 > **Step 5** (part 3). $D_R + D_W(-\xi) = D_F$ is [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]]. For $D_A + D_W(\xi)$: if $t > 0$ it is $0 + D_W(\xi)$; if $t < 0$ it is $-[D_W(\xi) - D_W(-\xi)] + D_W(\xi) = D_W(-\xi)$; both match $D_F$.
 >
-> **Step 6** (spacelike). $D = 0$ there (it vanishes as a distribution on the open spacelike region, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]], so restricted there all identities are between functions) ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]), so $D_R = D_A = \bar D = 0$, and $D_F = \frac12D_1 = D_W$, whose value is [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]].
+> **Step 6** (spacelike). $D = 0$ there ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]]; as a distribution it vanishes on the open spacelike region, [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]], so restricted there all identities are between functions), so $D_R = D_A = \bar D = 0$, and $D_F = \frac12D_1 = D_W$, whose value is [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]].
 >
 > ⚑ By-product: every function that could carry an influence vanishes at spacelike separation, and what remains is the vacuum correlation $D_1$ → [[§C2b.7 Wick Rotation and the Two-Point Family#^rem-c2b-7-4|★ Remark: Exponential clustering]].
 >
@@ -223,21 +224,21 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 
 ^der-c2b-7-5
 
-*Uses:* [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]]
+*Uses:* [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-3|Theorem §C2b.4.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-5|Theorem §C2b.4.5]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-3|Theorem §C2b.3.3]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-2|Theorem §C2b.6.2]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-7|Theorem §C2b.5.7]], [[§C2b.5 Green's Functions and Contours#^def-c2b-5-3\|Def. §C2b.5.3]], [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-6\|Theorem §C2b.5.6]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-3\|Theorem §C2b.6.3]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-6|Theorem §C2b.4.6]]
 
 > [!derivation]- Derivation (second route: momentum space)
 > **Step 1** (retarded and advanced denominators). By [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]] they are $p^2 - m^2 \pm i\varepsilon\operatorname{sgn}p^0$; by Sokhotski–Plemelj ([[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]]; in four variables [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 2, a limit in $\mathcal S'(\mathbb R^4)$) $\frac{1}{p^2 - m^2 \pm i\varepsilon\operatorname{sgn}p^0} = \mathcal P\frac{1}{p^2 - m^2} \mp i\pi\operatorname{sgn}(p^0)\delta(p^2 - m^2)$.
 >
 > **Step 2** ($\bar D$). Averaging, the delta terms cancel: $\tilde{\bar D} = i\,\mathcal P\frac{1}{p^2 - m^2}$.
 >
-> **Step 3** ($D_F$; [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 1). $\tilde D_F = \frac{i}{p^2 - m^2 + i\varepsilon} = i\Bigl[\mathcal P\frac{1}{p^2 - m^2} - i\pi\delta(p^2 - m^2)\Bigr] = i\,\mathcal P\frac{1}{p^2 - m^2} + \pi\delta(p^2 - m^2) = \tilde{\bar D} + \tfrac12\tilde D_1$, with $\tilde D_1 = 2\pi\delta(p^2 - m^2)$ (table).
+> **Step 3** ($D_F$; [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], 1). $\tilde D_F = \frac{i}{p^2 - m^2 + i\varepsilon} = i\Bigl[\mathcal P\frac{1}{p^2 - m^2} - i\pi\delta(p^2 - m^2)\Bigr] = i\,\mathcal P\frac{1}{p^2 - m^2} + \pi\delta(p^2 - m^2) = \tilde{\bar D} + \tfrac12\tilde D_1$, with $\tilde D_1 = 2\pi\delta(p^2 - m^2)$ (the table above; [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]], 1; the resulting $\tilde D_F - \tilde D_{\bar F} = \tilde D_1$ is [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-11|Theorem §C2b.6.11]]).
 >
 > **What the derivation shows.**
 > - Part 2 again, independently: the principal value is the Green's-function part, the delta function the homogeneous part. This route used only distribution theory.
 >
 > *Source: the user's PHY 513 notes, Ch. 6 §6.11 (Derivation "Relations in momentum space")*
 
-*Uses:* [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-11|Theorem §C2b.6.11]]
+*Uses:* [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-9|Theorem §C2b.6.9]], [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-11|Theorem §C2b.6.11]], [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]], [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-4|Theorem §C2b.4.4]]
 
 > [!remark] Remark: Which Green's function when
 > There is no single right answer: the choice is a boundary condition, and the physical question imposes it. A source switched on in the laboratory and measured afterwards calls for the retarded function: classical radiation (the retarded potentials and Liénard–Wiechert fields are the massless retarded function, [[§B11.1★ Potentials, Gauges and Retarded Potentials#^thm-b11-1-4|EM Theorem §B11.1.4]]), linear response in condensed matter ([[§C2b.5 Green's Functions and Contours#^rem-c2b-5-4|§C2b.5, Remark: Measurable response is a retarded commutator]]), and particle production by a classical source ([[§C2b.8 Particle Production by a Classical Source|§C2b.8]]). Quantum amplitudes will turn out to involve time-ordered products, hence the Feynman function; with interactions it is derived, not chosen ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-1|Theorem §C6a.11.1]]). The Feynman function treats the two orderings symmetrically, positive frequency forward and negative frequency backward in time, the reading of the two terms of the commutator in [[§C2b.4 Microcausality and the Commutator Function#^rem-c2b-4-2|§C2b.4, Remark: Two orderings that cancel]].
@@ -253,12 +254,19 @@ Why is the Feynman contour singled out, and how do all the two-point functions f
 
 ^rem-c2b-7-4
 
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]] and [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]] (regular distributions, transforms in $\mathcal S'$) make $D_E$ a locally integrable function whose transform is $1/(p_E^2 + m^2)$, although the four-dimensional integral of Def. §C2b.7.1 converges only iteratively.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]] — the Fourier convention in which the Euclidean and Minkowski transforms are written.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] (relabelling) and [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]] (principal value) enter the advanced and principal entries of the family table.
+> - [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]] and [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]] (Cauchy's theorem, vanishing arcs) license the rotation of Theorem §C2b.7.1; [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^cau-ca-6-1|§CA.6, Caution: What the formula does and does not say]] is why the $i\varepsilon$ may then be dropped.
+> - [[§CA.5 Gaussian Integrals, Stationary Phase and Bessel Functions#^thm-ca-5-3|Theorem §CA.5.3]], 3 — $K_1(z) \simeq 1/z$ at small argument: $D_E \simeq 1/4\pi^2R^2$ at short distance, locally integrable in four dimensions.
+> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|Theorem §CA.6.1]] (boundary values) and [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-4|Theorem §CA.6.4]] (the light-cone boundary value) are the position-space side of Theorem §C2b.7.4: $D_W$ and $D_F$ are boundary values of $\mathcal W$ from two sides, with singular parts $1/(-\xi^2 + i0\,\xi^0)$ and $1/(-\xi^2 + i0)$.
+> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-2|Theorem §CA.6.2]] — Sokhotski–Plemelj: the retarded and advanced denominators split into a principal value and a delta function (second route of Theorem §C2b.7.5).
+> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]] (the $i\varepsilon$ limits) is the momentum-space side: the Feynman denominator is the boundary value of the function rotated onto the Euclidean axis, and the second route of Theorem §C2b.7.5 is its Sokhotski–Plemelj split.
+
 > [!remark]- Connections
 > - Wick rotation is the field version of imaginary time in quantum statistical mechanics: $e^{-i\hat Ht} \to e^{-\hat H\tau}$ links the propagator to the partition function ([[§C4.1 Propagators#^thm-c4-1-6|QM Theorem §C4.1.6]]) and the Euclidean action to a Boltzmann weight; the Euclidean propagator is the correlation function of a statistical field.
 > - Euclidean, Wightman and Feynman functions are three boundary values of one analytic function: the Euclidean evaluation is [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-1|Theorem §C2b.3.1]], the boundary value [[§C2b.2 The Wightman Function#^thm-c2b-2-5|Theorem §C2b.2.5]], and the retarded function of the family is the causal commutator of [[§C2b.5 Green's Functions and Contours#^thm-c2b-5-5|Theorem §C2b.5.5]].
-> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-1|Theorem §CA.6.1]] (boundary values) and [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-4|Theorem §CA.6.4]] (the light-cone boundary value) are the position-space side of Theorem §C2b.7.4: $D_W$ and $D_F$ are boundary values of $\mathcal W$ from two sides, with singular parts $1/(-\xi^2 + i0\,\xi^0)$ and $1/(-\xi^2 + i0)$.
-> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-6|Theorem §CA.6.6]] (the $i\varepsilon$ limits) is the momentum-space side: the Feynman denominator is the boundary value of the function rotated onto the Euclidean axis, and the second route of Theorem §C2b.7.5 is its Sokhotski–Plemelj split.
-> - [[§CA.4 Contour Integration#^thm-ca-4-2|Theorem §CA.4.2]] and [[§CA.4 Contour Integration#^thm-ca-4-6|Theorem §CA.4.6]] (Cauchy's theorem, vanishing arcs) license the rotation of Theorem §C2b.7.1; [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^cau-ca-6-1|§CA.6, Caution: What the formula does and does not say]] is why the $i\varepsilon$ may then be dropped.
-> - [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]] and [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]] (regular distributions, transforms in $\mathcal S'$) make $D_E$ a locally integrable function whose transform is $1/(p_E^2 + m^2)$, although the four-dimensional integral of Def. §C2b.7.1 converges only iteratively.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] (relabelling) and [[§CA.2 Generalized Functions#^def-ca-2-10|Def. §CA.2.10]] (principal value) enter the advanced and principal entries of the family table.
 > - Theorem §C2b.7.1 turns the one-loop correction to a scalar mass, $D_F$ at coincident points, into a positive integral over a four-ball, which exhibits its $\Lambda^2$ dependence on the cutoff ([[§R1.6★ Radiative Corrections, Naturalness and the Hierarchy Problem#^thm-r1-6-1|Thesis Thm. §R1.6.1]]).

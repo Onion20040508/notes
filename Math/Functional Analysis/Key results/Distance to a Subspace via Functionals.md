@@ -2,7 +2,7 @@
 subject: math
 type: theorem
 source: "[[Functional Analysis]]"
-aliases: ["MATH 556 36.8", "distance formula", "annihilator distance"]
+aliases: ["MATH 556 36.10", "distance formula", "annihilator distance"]
 tags: [functional-analysis, hub]
 ---
 ![[§36 Duality in Normed Spaces#^thm-36-10]]

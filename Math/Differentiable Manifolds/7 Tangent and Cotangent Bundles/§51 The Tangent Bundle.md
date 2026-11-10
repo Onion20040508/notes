@@ -65,7 +65,7 @@ tags: [differentiable-manifolds, math591]
 
 *(Not from lecture; animation added, vault only.)* The left picture of the figure turns into the right one: each tangent line $T_pS^1$ (red) stands up over its point, and the crossing lines become the disjoint fibres of the cylinder $S^1 \times \mathbb{R}$, with the zero section (blue) round the waist. Then a vector field, $X = (0.2 + 0.7\sin 2\theta)\,\partial_\theta$ (chosen for the picture), drawn as a section (green). It crosses the waist exactly at the four zeros of $X$.
 
-*Status.* [[§51 The Tangent Bundle#^prop-51-5|Proposition §51.5]], below, was stated in Lecture 12 — its proof takes a lot of detail — and made precise in Lecture 13 ([[§51 The Tangent Bundle#Trivializations and Charts|Trivializations and Charts]]), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; together these identifications give a map $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
+*Status.* [[§51 The Tangent Bundle#^prop-51-1|Proposition §51.1]], below, was stated in Lecture 12 — its proof takes a lot of detail — and made precise in Lecture 13 ([[§51 The Tangent Bundle#Trivializations and Charts|Trivializations and Charts]]), which wrote down the charts. Their idea was given: a chart $(U, \varphi = (x^1, \ldots, x^m))$ of $M$ gives the basis $\partial/\partial x^i|_p$ of every $T_pM$, $p \in U$, hence an identification of each of these tangent spaces with $\mathbb{R}^m$; together these identifications give a map $\pi^{-1}(U) \to \varphi(U) \times \mathbb{R}^m \subseteq \mathbb{R}^{2m}$, the chart of $TM$. The dimension $2m$ is $m$ coordinates for the point and $m$ for the vector.
 
 ## Trivializations and Charts
 
@@ -78,7 +78,7 @@ tags: [differentiable-manifolds, math591]
 > \Phi : TU \longrightarrow U \times \mathbb{R}^m, \qquad \Phi(p, v) = (p, v^1, \ldots, v^m), \qquad \text{where } v = \sum_{i=1}^m v^i \frac{\partial}{\partial x^i}\Big|_p ,
 > $$
 >
-> the components of $v$ in the coordinate basis ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7]]). It is a bijection, and $\mathrm{pr}_1 \circ \Phi = \pi$, which is why it is called a trivialization.
+> the components of $v$ in the coordinate basis ([[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8]]). It is a bijection, and $\mathrm{pr}_1 \circ \Phi = \pi$, which is why it is called a trivialization.
 >
 > *Lee: Proposition 3.18*
 
@@ -103,7 +103,7 @@ tags: [differentiable-manifolds, math591]
 > v = \sum_{i=1}^m v^i \frac{\partial}{\partial x^i}\Big|_p, \qquad v^i = v[x^i]
 > $$
 >
-> (the universal formula, [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|Theorem §29.7]]). So the first $m$ coordinates of $\tilde\varphi(p, v)$ locate the point $p$, and the last $m$ list the components of the vector $v$. $\tilde\varphi$ is a bijection, with inverse
+> (the universal formula, [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|Theorem §29.8]]). So the first $m$ coordinates of $\tilde\varphi(p, v)$ locate the point $p$, and the last $m$ list the components of the vector $v$. $\tilde\varphi$ is a bijection, with inverse
 >
 > $$
 > (r, a^1, \ldots, a^m) \longmapsto \Big(\varphi^{-1}(r),\ \sum_{i=1}^m a^i\, \frac{\partial}{\partial x^i}\Big|_{\varphi^{-1}(r)}\Big), \qquad r \in \varphi(U),\ (a^1, \ldots, a^m) \in \mathbb{R}^m .
@@ -116,7 +116,7 @@ tags: [differentiable-manifolds, math591]
 ![[m591-17-2.svg]]
 *The trivialization and the chart, as on the board. The triangle commutes, $\mathrm{pr}_1 \circ \Phi = \pi$ — the fibration diagram of [[§40 Fibrations#^def-40-1|Definition §40.1]] — and the chart $\tilde\varphi$ is $\Phi$ followed by $\varphi$ on the first factor.*
 
-> [!theorem] Lemma §51.1: Building a Manifold from Charts
+> [!theorem] Lemma §51.2: Building a Manifold from Charts
 > Let $X$ be a set and $n \ge 0$ an integer. Suppose given subsets $U_\alpha \subseteq X$, indexed by $\alpha$ in some set $A$, and injective maps $\varphi_\alpha : U_\alpha \to \mathbb{R}^n$, such that:
 >
 > 1. each $\varphi_\alpha(U_\alpha)$ is open in $\mathbb{R}^n$;
@@ -129,10 +129,10 @@ tags: [differentiable-manifolds, math591]
 >
 > *Lee: Lemma 1.35*
 
-^lem-51-1
+^lem-51-2
 
 > [!proof]+ Proof
-> *(Not from lecture: Lee's smooth manifold chart lemma. Lecture 13 left the construction of the topology of $TM$, which is all point-set topology, to Lee. The argument is written once here, in general, and applied to $TM$ in Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]] and to $T^{\ast}M$ in Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]].)* Three things have to be shown: a topology with the two stated properties exists; it is the only one; and with it $X$ is second countable, Hausdorff and locally Euclidean of dimension $n$ (Definition [[§2 Topological Manifolds#^def-2-2|§2.2]]), with the $(U_\alpha, \varphi_\alpha)$ a smooth atlas.
+> *(Not from lecture: Lee's smooth manifold chart lemma. Lecture 13 left the construction of the topology of $TM$, which is all point-set topology, to Lee. The argument is written once here, in general, and applied to $TM$ in Proposition [[§51 The Tangent Bundle#^prop-51-4|§51.4]] and to $T^{\ast}M$ in Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]].)* Three things have to be shown: a topology with the two stated properties exists; it is the only one; and with it $X$ is second countable, Hausdorff and locally Euclidean of dimension $n$ (Definition [[§2 Topological Manifolds#^def-2-2|§2.2]]), with the $(U_\alpha, \varphi_\alpha)$ a smooth atlas.
 >
 > *The transition maps are homeomorphisms.* Let $\alpha, \beta \in A$. Since $\varphi_\alpha$ and $\varphi_\beta$ are injective, $\varphi_\beta \circ \varphi_\alpha^{-1}$ is a bijection of $\varphi_\alpha(U_\alpha \cap U_\beta)$ onto $\varphi_\beta(U_\alpha \cap U_\beta)$, both open by (2), with inverse $\varphi_\alpha \circ \varphi_\beta^{-1}$. Both maps are smooth by (3) (the second with $\alpha$ and $\beta$ exchanged), hence continuous; so each transition map is a homeomorphism between open subsets of $\mathbb{R}^n$.
 >
@@ -163,17 +163,17 @@ tags: [differentiable-manifolds, math591]
 >
 > *Second countable.* By (4) there are $\alpha_1, \alpha_2, \ldots \in A$ with $X = \bigcup_k U_{\alpha_k}$. Each $U_{\alpha_k}$ is homeomorphic to an open subset of $\mathbb{R}^n$, which has a countable basis (for instance the balls with rational centres and rational radii contained in it), so $U_{\alpha_k}$ has a countable basis $\mathcal{C}_k$, whose members are open in $U_{\alpha_k}$ and hence in $X$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]). The union $\mathcal{C} = \bigcup_k \mathcal{C}_k$ is a countable union of countable sets, so countable. It is a basis of $X$ (Definition [[§1 Point-Set Topology Review#^def-1-1|§1.1]]): if $W$ is open in $X$ and $p \in W$, choose $k$ with $p \in U_{\alpha_k}$; then $W \cap U_{\alpha_k}$ is open in $U_{\alpha_k}$ and contains $p$, so some $C \in \mathcal{C}_k$ has $p \in C \subseteq W \cap U_{\alpha_k} \subseteq W$ (Definition [[§1 Point-Set Topology Review#^def-1-6|§1.6]]).
 >
-> *The smooth atlas.* Each $(U_\alpha, \varphi_\alpha)$ is a chart of the topological manifold $X$: a homeomorphism of an open set onto an open subset of $\mathbb{R}^n$. The domains cover $X$ by (4), and any two charts are $C^\infty$-compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]), because each transition map $\varphi_\beta \circ \varphi_\alpha^{-1}$ is smooth with smooth inverse $\varphi_\alpha \circ \varphi_\beta^{-1}$ by (3), a diffeomorphism between open subsets of $\mathbb{R}^n$ (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]). So the charts form a smooth atlas (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]).
+> *The smooth atlas.* Each $(U_\alpha, \varphi_\alpha)$ is a chart of the topological manifold $X$: a homeomorphism of an open set onto an open subset of $\mathbb{R}^n$. The domains cover $X$ by (4), and any two charts are $C^\infty$-compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]), because each transition map $\varphi_\beta \circ \varphi_\alpha^{-1}$ is smooth with smooth inverse $\varphi_\alpha \circ \varphi_\beta^{-1}$ by (3), a diffeomorphism between open subsets of $\mathbb{R}^n$ (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]). So the charts form a smooth atlas (Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]).
 
-^pf-51-1
+^pf-51-2
 
-*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§17 Differentiable Structures#^thm-17-6|§17.6]]
+*Uses:* [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§2 Topological Manifolds#^def-2-1|Def. §2.1]], [[§1 Point-Set Topology Review#^def-1-8|Def. §1.8]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]], [[§17 Differentiable Structures#^thm-17-6|§17.6]]
 
 ![[m591-49-5.svg]]
 
 The chart lemma in one picture. The set $X$ has no topology yet; it is only covered by sets $U_\alpha$, $U_\beta$ with injections into $\mathbb{R}^n$. Condition (2) asks that the overlap (shaded) go to open sets on both sides, and (3) that the transition map $\varphi_\beta \circ \varphi_\alpha^{-1}$ between these two open sets be smooth. The topology is then forced: a set is open exactly when each chart sends its part to an open set.
 
-> [!theorem] Proposition §51.2: The Transition Maps of $TM$
+> [!theorem] Proposition §51.3: The Transition Maps of $TM$
 > Let $(U, \varphi = (x^i))$ and $(V, \psi = (y^j))$ be smooth charts of $M$. Then $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$, an open subset of $\mathbb{R}^{2m}$, and the transition map is
 >
 > $$
@@ -195,20 +195,20 @@ The chart lemma in one picture. The set $X$ has no topology yet; it is only cove
 >
 > *Lee: Proposition 3.18*
 
-^prop-51-2
+^prop-51-3
 
 > [!proof]+ Proof
 > *(Lecture 13 examined only the transition functions of the atlas, since they are how tangent vectors are handled in practice. Completed here.)* Three things have to be shown: the domain and target of the transition map; its formula; and that it is a diffeomorphism, that is (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]), smooth with smooth inverse.
 >
-> *The domain of the transition map.* A point $(p, v)$ lies in $TU \cap TV$ exactly when $p \in U \cap V$; for such $p$ every list of components $(v^1, \ldots, v^m) \in \mathbb{R}^m$ occurs (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). So the domain is $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$, open in $\mathbb{R}^{2m}$ since $\varphi(U \cap V)$ is open (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]]); likewise the target is $\psi(U \cap V) \times \mathbb{R}^m$.
+> *The domain of the transition map.* A point $(p, v)$ lies in $TU \cap TV$ exactly when $p \in U \cap V$; for such $p$ every list of components $(v^1, \ldots, v^m) \in \mathbb{R}^m$ occurs (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]). So the domain is $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$, open in $\mathbb{R}^{2m}$ since $\varphi(U \cap V)$ is open (Proposition [[§2 Topological Manifolds#^prop-2-11|§2.11]]); likewise the target is $\psi(U \cap V) \times \mathbb{R}^m$.
 >
-> *The formula.* Let $(r, v) = (r, v^1, \ldots, v^m)$ be a point of the domain and $p = \varphi^{-1}(r) \in U \cap V$. By the inverse formula of Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]], $\tilde\varphi^{-1}(r, v) = (p, u)$ with $u \in T_pM$ the tangent vector whose components in the basis $\partial/\partial x^j|_p$ are the $v^j$. Write $u$ in both bases (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]):
+> *The formula.* Let $(r, v) = (r, v^1, \ldots, v^m)$ be a point of the domain and $p = \varphi^{-1}(r) \in U \cap V$. By the inverse formula of Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]], $\tilde\varphi^{-1}(r, v) = (p, u)$ with $u \in T_pM$ the tangent vector whose components in the basis $\partial/\partial x^j|_p$ are the $v^j$. Write $u$ in both bases (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]):
 >
 > $$
 > u = \sum_j v^j \frac{\partial}{\partial x^j}\Big|_p = \sum_i w^i \frac{\partial}{\partial y^i}\Big|_p .
 > $$
 >
-> By Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]] for the chart $\psi$, $\tilde\psi(p, u) = \big(\psi(p), w^1, \ldots, w^m\big)$, and $\psi(p) = \psi \circ \varphi^{-1}(r)$; so the first component of the transition is $\psi \circ \varphi^{-1}$, smooth because the charts of $M$ are compatible. For the rest we need the $w$'s in terms of the $v$'s: a change of basis formula from linear algebra. By the universal formula (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]) in the chart $\psi$, the $i$-th coefficient of a derivation $D$ in the basis $\partial/\partial y^i|_p$ is $D[y^i]$. Applied to $D = \partial/\partial x^j|_p$, whose value on $y^i$ is $\partial y^i/\partial x^j(p)$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), it gives the change of basis formula
+> By Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]] for the chart $\psi$, $\tilde\psi(p, u) = \big(\psi(p), w^1, \ldots, w^m\big)$, and $\psi(p) = \psi \circ \varphi^{-1}(r)$; so the first component of the transition is $\psi \circ \varphi^{-1}$, smooth because the charts of $M$ are compatible. For the rest we need the $w$'s in terms of the $v$'s: a change of basis formula from linear algebra. By the universal formula (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]) in the chart $\psi$, the $i$-th coefficient of a derivation $D$ in the basis $\partial/\partial y^i|_p$ is $D[y^i]$. Applied to $D = \partial/\partial x^j|_p$, whose value on $y^i$ is $\partial y^i/\partial x^j(p)$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]]), it gives the change of basis formula
 >
 > $$
 > \frac{\partial}{\partial x^j}\Big|_p = \sum_i \frac{\partial y^i}{\partial x^j}(p) \frac{\partial}{\partial y^i}\Big|_p .
@@ -244,9 +244,9 @@ The chart lemma in one picture. The set $X$ has no topology yet; it is only cove
 >
 > *The inverse.* The inverse of $\tilde\psi \circ \tilde\varphi^{-1}$ is $\tilde\varphi \circ \tilde\psi^{-1}$, and the computation above with the names exchanged — $(U, \varphi, x^i)$ and $(V, \psi, y^i)$ swapped — shows that it is $(s, w) \mapsto \big(\varphi \circ \psi^{-1}(s), (\varphi \circ \psi^{-1})'(s)\, w\big)$, smooth. So every transition map is a smooth bijection with smooth inverse, a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]).
 
-^pf-51-2
+^pf-51-3
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§30 The Differential in Coordinates#^prop-30-1|§30.1]], [[§2 Topological Manifolds#^prop-2-11|§2.11]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]]
 
 ![[m591-17-3.svg]]
 *The transition map of the charts $\tilde\varphi$ and $\tilde\psi$ of $TM$, as drawn in lecture over a point $(p, v)$ of $TU \cap TV$.*
@@ -258,49 +258,49 @@ The chart lemma in one picture. The set $X$ has no topology yet; it is only cove
 > [!remark]- Connections
 > - The same expansion of coordinate derivations: [[§30 The Differential in Coordinates#^cor-30-4|Change of Coordinates, §30.4]]; the Jacobian matrix in 452: [[§16 The Inverse Function Theorem#^def-16-1|452 Def. §16.1]]; change of basis: [[§10 Invertibility and Isomorphisms#^ladr-3-84|LADR 3.84]].
 
-The transition map of $TM$, in one line: the base point moves by the transition map of $M$, and the vector by its Jacobian. This is the identity of Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]] at work once more — the partials $\partial y^i/\partial x^j$, taken upstairs on $M$, are the Jacobian downstairs.
+The transition map of $TM$, in one line: the base point moves by the transition map of $M$, and the vector by its Jacobian. This is the identity of Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]] at work once more — the partials $\partial y^i/\partial x^j$, taken upstairs on $M$, are the Jacobian downstairs.
 
-> [!theorem] Proposition §51.3: The Topology and Smooth Structure of $TM$
+> [!theorem] Proposition §51.4: The Topology and Smooth Structure of $TM$
 > There is a unique topology on $TM$ for which every $TU$ is open and every chart $\tilde\varphi : TU \to \varphi(U) \times \mathbb{R}^m$ is a homeomorphism. With it, $TM$ is a topological manifold of dimension $2m$, and the charts $(TU, \tilde\varphi)$, as $(U, \varphi)$ ranges over the smooth charts of $M$, form a smooth atlas on it.
 >
 > *Lee: Lemma 1.35 and Proposition 3.18*
 
-^prop-51-3
+^prop-51-4
 
 > [!proof]+ Proof
-> *(Stated in Lecture 13 without proof, as point-set topology to be found in Lee; filled in.)* Apply Lemma [[§51 The Tangent Bundle#^lem-51-1|§51.1]] with $X = TM$, $n = 2m$, and the sets $TU$ with the maps $\tilde\varphi$, indexed by the smooth charts $(U, \varphi)$ of $M$. Each $\tilde\varphi$ is injective, being a bijection of $TU$ onto $\varphi(U) \times \mathbb{R}^m$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]). We check the five conditions of the lemma.
+> *(Stated in Lecture 13 without proof, as point-set topology to be found in Lee; filled in.)* Apply Lemma [[§51 The Tangent Bundle#^lem-51-2|§51.2]] with $X = TM$, $n = 2m$, and the sets $TU$ with the maps $\tilde\varphi$, indexed by the smooth charts $(U, \varphi)$ of $M$. Each $\tilde\varphi$ is injective, being a bijection of $TU$ onto $\varphi(U) \times \mathbb{R}^m$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]). We check the five conditions of the lemma.
 >
-> *(1) and (2).* By Proposition [[§51 The Tangent Bundle#^prop-51-2|§51.2]], $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$ is open in $\mathbb{R}^{2m}$ for any two charts; this is (2), and with $V = U$ it is (1), $\tilde\varphi(TU) = \varphi(U) \times \mathbb{R}^m$.
+> *(1) and (2).* By Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]], $\tilde\varphi(TU \cap TV) = \varphi(U \cap V) \times \mathbb{R}^m$ is open in $\mathbb{R}^{2m}$ for any two charts; this is (2), and with $V = U$ it is (1), $\tilde\varphi(TU) = \varphi(U) \times \mathbb{R}^m$.
 >
-> *(3)* Each transition map $\tilde\psi \circ \tilde\varphi^{-1}$ is smooth by Proposition [[§51 The Tangent Bundle#^prop-51-2|§51.2]].
+> *(3)* Each transition map $\tilde\psi \circ \tilde\varphi^{-1}$ is smooth by Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]].
 >
 > *(4)* Let $\mathcal{B}$ be a countable basis of $M$ (Definition [[§1 Point-Set Topology Review#^def-1-6|§1.6]]). For each $B \in \mathcal{B}$ contained in some chart domain, choose one such chart $(U_B, \varphi_B)$, so $B \subseteq U_B$. These countably many charts cover $M$: each $p$ lies in some chart domain $U$, and then, by Definition [[§1 Point-Set Topology Review#^def-1-1|§1.1]], in some $B \in \mathcal{B}$ with $p \in B \subseteq U$; this $B$ is contained in a chart domain, so $(U_B, \varphi_B)$ was chosen, and $p \in B \subseteq U_B$. A point $(p, v) \in TM$ lies in $TU_B$ for any $B$ with $p \in U_B$, so the countably many sets $TU_B$ cover $TM$.
 >
 > *(5)* Let $(p, v) \ne (q, w)$. *Case $p = q$.* Both points lie in $TU$ for any chart $(U, \varphi)$ at $p$. *Case $p \ne q$.* $M$ is Hausdorff, so there are disjoint open sets $U_0 \ni p$ and $V_0 \ni q$. Take charts $(U, \varphi)$ at $p$ and $(V, \psi)$ at $q$ and shrink their domains to $U \cap U_0$ and $V \cap V_0$; the restrictions are still smooth charts (Lemma [[§17 Differentiable Structures#^lem-17-7|§17.7]](1), applied to the open subsets $U \cap U_0 \subseteq U$ and $V \cap V_0 \subseteq V$; their transition maps are restrictions of those of $\varphi$ and $\psi$ to open subsets). Then $T(U \cap U_0) \ni (p, v)$ and $T(V \cap V_0) \ni (q, w)$ are disjoint: a common point $(x, u)$ would have $x \in U_0 \cap V_0 = \emptyset$.
 >
-> So Lemma [[§51 The Tangent Bundle#^lem-51-1|§51.1]] applies: $TM$ has a unique topology in which every $TU$ is open and every $\tilde\varphi$ is a homeomorphism onto $\varphi(U) \times \mathbb{R}^m$; with it, $TM$ is a topological manifold of dimension $2m$, and the charts $(TU, \tilde\varphi)$ form a smooth atlas.
+> So Lemma [[§51 The Tangent Bundle#^lem-51-2|§51.2]] applies: $TM$ has a unique topology in which every $TU$ is open and every $\tilde\varphi$ is a homeomorphism onto $\varphi(U) \times \mathbb{R}^m$; with it, $TM$ is a topological manifold of dimension $2m$, and the charts $(TU, \tilde\varphi)$ form a smooth atlas.
 
-^pf-51-3
+^pf-51-4
 
-*Uses:* [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§51 The Tangent Bundle#^prop-51-2|§51.2]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§51 The Tangent Bundle#^lem-51-1|§51.1]]
+*Uses:* [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]], [[§17 Differentiable Structures#^lem-17-7|§17.7]], [[§1 Point-Set Topology Review#^def-1-6|Def. §1.6]], [[§1 Point-Set Topology Review#^def-1-1|Def. §1.1]], [[§51 The Tangent Bundle#^lem-51-2|§51.2]]
 
-Lemma [[§51 The Tangent Bundle#^lem-51-1|§51.1]] builds the topology and smooth structure of the cotangent bundle ([[§52 The Cotangent Bundle|§52]]) in the same way, with the dual bases in place of the coordinate bases (Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]]).
+Lemma [[§51 The Tangent Bundle#^lem-51-2|§51.2]] builds the topology and smooth structure of the cotangent bundle ([[§52 The Cotangent Bundle|§52]]) in the same way, with the dual bases in place of the coordinate bases (Proposition [[§52 The Cotangent Bundle#^prop-52-2|§52.2]]).
 
-> [!theorem] Corollary §51.4: The Tangent Bundle Is a Fibration
-> With the smooth structure of Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]]:
+> [!theorem] Corollary §51.5: The Tangent Bundle Is a Fibration
+> With the smooth structure of Proposition [[§51 The Tangent Bundle#^prop-51-4|§51.4]]:
 >
 > 1. $TM$ is a smooth manifold of dimension $2m$, and $\pi : TM \to M$ is smooth;
 > 2. the $\Phi$ are local trivializations, so $\pi$ is a fibration with fibre $\mathbb{R}^m$, and each $\Phi$ restricts on the fibre $T_pM$ to a linear isomorphism $T_pM \to \{p\} \times \mathbb{R}^m$;
 > 3. the image $\zeta(M)$ of the zero section is a submanifold of $TM$ of codimension $m$.
 >
-> With Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]], this proves Proposition [[§51 The Tangent Bundle#^prop-51-5|§51.5]] below in full.
+> With Proposition [[§51 The Tangent Bundle#^prop-51-4|§51.4]], this proves Proposition [[§51 The Tangent Bundle#^prop-51-1|§51.1]] below in full.
 
-^cor-51-4
+^cor-51-5
 
 > [!proof]+ Proof
 > *((1) and (2) are the lecture's observations: in these coordinates the projection is the projection onto the first $m$ components, so $TM$ is a fibration; the details and (3) are filled in.)*
 >
-> *(1)* By Proposition [[§51 The Tangent Bundle#^prop-51-3|§51.3]], $TM$ is a topological manifold of dimension $2m$ and the charts $(TU, \tilde\varphi)$ form a smooth atlas on it; so $TM$ is a smooth manifold of dimension $2m$, with the smooth structure determined by this atlas (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]). To see that $\pi$ is smooth, check Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. *Continuity:* on each open set $TU$, by Definitions [[§51 The Tangent Bundle#^def-51-2|§51.2]] and [[§51 The Tangent Bundle#^def-51-5|§51.5]], $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \tilde\varphi$ with $\mathrm{pr}_1(r, v) = r$, a composite of continuous maps; the open sets $TU$ cover $TM$, so $\pi$ is continuous. *Coordinate representation:* for $(p, v) \in TM$ take a chart $(U, \varphi)$ of $M$ at $p$; then $(TU, \tilde\varphi)$ is a chart at $(p, v)$ with $\pi(TU) \subseteq U$, and for $(r, a) \in \varphi(U) \times \mathbb{R}^m$, with $\tilde\varphi^{-1}(r, a) = (\varphi^{-1}(r), u)$ for some $u$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]),
+> *(1)* By Proposition [[§51 The Tangent Bundle#^prop-51-4|§51.4]], $TM$ is a topological manifold of dimension $2m$ and the charts $(TU, \tilde\varphi)$ form a smooth atlas on it; so $TM$ is a smooth manifold of dimension $2m$, with the smooth structure determined by this atlas (Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]]). To see that $\pi$ is smooth, check Definition [[§19 Smooth Functions and Smooth Maps#^def-19-3|§19.3]]. *Continuity:* on each open set $TU$, by Definitions [[§51 The Tangent Bundle#^def-51-2|§51.2]] and [[§51 The Tangent Bundle#^def-51-5|§51.5]], $\pi = \varphi^{-1} \circ \mathrm{pr}_1 \circ \tilde\varphi$ with $\mathrm{pr}_1(r, v) = r$, a composite of continuous maps; the open sets $TU$ cover $TM$, so $\pi$ is continuous. *Coordinate representation:* for $(p, v) \in TM$ take a chart $(U, \varphi)$ of $M$ at $p$; then $(TU, \tilde\varphi)$ is a chart at $(p, v)$ with $\pi(TU) \subseteq U$, and for $(r, a) \in \varphi(U) \times \mathbb{R}^m$, with $\tilde\varphi^{-1}(r, a) = (\varphi^{-1}(r), u)$ for some $u$ (Definition [[§51 The Tangent Bundle#^def-51-5|§51.5]]),
 >
 > $$
 > \varphi \circ \pi \circ \tilde\varphi^{-1}(r, a) = \varphi\big(\pi(\varphi^{-1}(r), u)\big) = \varphi\big(\varphi^{-1}(r)\big) = r .
@@ -314,9 +314,9 @@ Lemma [[§51 The Tangent Bundle#^lem-51-1|§51.1]] builds the topology and smoot
 > \Phi = (\varphi^{-1} \times \mathrm{id}) \circ \tilde\varphi .
 > $$
 >
-> Both factors are diffeomorphisms (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]): $\tilde\varphi$ is a chart of the smooth manifold $TU$, and $\varphi^{-1} \times \mathrm{id}$ is the inverse of the product chart $\varphi \times \mathrm{id}$ of the product manifold $U \times \mathbb{R}^m$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-7|§19.7]], with the chart $\mathrm{id}$ of $\mathbb{R}^m$). A composite of diffeomorphisms is a diffeomorphism, since the composite and its inverse are composites of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). And for $(p, v) \in TU$, $\mathrm{pr}_1(\Phi(p, v)) = \mathrm{pr}_1(p, v^1, \ldots, v^m) = p = \pi(p, v)$, so $\mathrm{pr}_1 \circ \Phi = \pi$ on $TU$. Hence $\pi$ is a fibration with fibre $\mathbb{R}^m$.
+> Both factors are diffeomorphisms (Proposition [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]]): $\tilde\varphi$ is a chart of the smooth manifold $TU$, and $\varphi^{-1} \times \mathrm{id}$ is the inverse of the product chart $\varphi \times \mathrm{id}$ of the product manifold $U \times \mathbb{R}^m$ (Definition [[§19 Smooth Functions and Smooth Maps#^def-19-8|§19.8]], with the chart $\mathrm{id}$ of $\mathbb{R}^m$). A composite of diffeomorphisms is a diffeomorphism, since the composite and its inverse are composites of smooth maps (Lemma [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]]). And for $(p, v) \in TU$, $\mathrm{pr}_1(\Phi(p, v)) = \mathrm{pr}_1(p, v^1, \ldots, v^m) = p = \pi(p, v)$, so $\mathrm{pr}_1 \circ \Phi = \pi$ on $TU$. Hence $\pi$ is a fibration with fibre $\mathbb{R}^m$.
 >
-> *Linearity on fibres.* Fix $p \in U$. On $T_pM$ (that is, on the fibre $\{p\} \times T_pM$), $\Phi$ is $v \mapsto (p, v^1, \ldots, v^m)$ with $v^i = v[x^i]$ (universal formula, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). Each $v \mapsto v[x^i]$ is linear, because tangent vectors are added and scaled pointwise (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]): $(av + bw)[x^i] = a\,v[x^i] + b\,w[x^i]$. It is bijective onto $\mathbb{R}^m$ because the $\partial/\partial x^i|_p$ form a basis (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]): the components of $v$ exist and are unique, and every list $(a^1, \ldots, a^m)$ is the list of components of $\sum_i a^i\, \partial/\partial x^i|_p$. So taking components in a basis is a linear isomorphism $T_pM \to \{p\} \times \mathbb{R}^m$.
+> *Linearity on fibres.* Fix $p \in U$. On $T_pM$ (that is, on the fibre $\{p\} \times T_pM$), $\Phi$ is $v \mapsto (p, v^1, \ldots, v^m)$ with $v^i = v[x^i]$ (universal formula, Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]). Each $v \mapsto v[x^i]$ is linear, because tangent vectors are added and scaled pointwise (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]): $(av + bw)[x^i] = a\,v[x^i] + b\,w[x^i]$. It is bijective onto $\mathbb{R}^m$ because the $\partial/\partial x^i|_p$ form a basis (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]): the components of $v$ exist and are unique, and every list $(a^1, \ldots, a^m)$ is the list of components of $\sum_i a^i\, \partial/\partial x^i|_p$. So taking components in a basis is a linear isomorphism $T_pM \to \{p\} \times \mathbb{R}^m$.
 >
 > *(3)* By Definition [[§37 Regular Submanifolds#^def-37-2|§37.2]] (with $2m$ coordinates and $k = m$), it suffices to find, around each point of $\zeta(M)$, a smooth chart of $TM$ in which $\zeta(M)$ is cut out by the vanishing of the last $m$ coordinates. A point of $\zeta(M)$ is $\zeta(p) = (p, 0)$; take a chart $(U, \varphi)$ of $M$ at $p$, so $(p, 0) \in TU$. A point $\zeta(q) = (q, 0)$ lies in $TU$ exactly when $q \in U$, so $\zeta(M) \cap TU = \{(q, 0) : q \in U\}$. For $(q, v) \in TU$, the last $m$ coordinates of $\tilde\varphi(q, v)$ are $v^i = v[x^i]$, and by the universal formula $v = \sum_i v^i\, \partial/\partial x^i|_q$, so $v = 0$ exactly when $v^1 = \cdots = v^m = 0$. Hence
 >
@@ -326,23 +326,23 @@ Lemma [[§51 The Tangent Bundle#^lem-51-1|§51.1]] builds the topology and smoot
 >
 > so the charts $\tilde\varphi$ are adapted to $\zeta(M)$ (Definition [[§37 Regular Submanifolds#^def-37-3|§37.3]]), and $\zeta(M)$ is a submanifold of codimension $m$.
 
-^pf-51-4
+^pf-51-5
 
-*Uses:* [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-7|Def. §19.7]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§51 The Tangent Bundle#^def-51-2|Def. §51.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
+*Uses:* [[§51 The Tangent Bundle#^def-51-4|Def. §51.4]], [[§51 The Tangent Bundle#^prop-51-4|§51.4]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§19 Smooth Functions and Smooth Maps#^def-19-8|Def. §19.8]], [[§28 Derivations and the Abstract Tangent Space#^prop-28-9|§28.9]], [[§40 Fibrations#^def-40-1|Def. §40.1]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§51 The Tangent Bundle#^def-51-2|Def. §51.2]], [[§51 The Tangent Bundle#^def-51-5|Def. §51.5]], [[§19 Smooth Functions and Smooth Maps#^lem-19-5|§19.5]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
-> [!theorem] Proposition §51.5: The Tangent Bundle Is a Manifold (Claim)
+> [!theorem] Proposition §51.1: The Tangent Bundle Is a Manifold (Claim)
 > $TM$ has a natural topology and smooth structure making it a smooth manifold of dimension $2m$, for which $\pi : TM \to M$ is a fibration with fibre $\mathbb{R}^m$, and the image $\zeta(M)$ of the zero section is a submanifold of $TM$.
 >
 > *Lee: Proposition 3.18*
 
-^prop-51-5
+^prop-51-1
 
 > [!proof]+ Proof
-> [[§51 The Tangent Bundle#^prop-51-3|Proposition §51.3]] gives the topology, and [[§51 The Tangent Bundle#^cor-51-4|Corollary §51.4]] the smooth structure, the fibration with fibre $\mathbb{R}^m$, and the zero section as a submanifold.
+> [[§51 The Tangent Bundle#^prop-51-4|Proposition §51.4]] gives the topology, and [[§51 The Tangent Bundle#^cor-51-5|Corollary §51.5]] the smooth structure, the fibration with fibre $\mathbb{R}^m$, and the zero section as a submanifold.
 
-^pf-51-5
+^pf-51-1
 
-*Uses:* [[§51 The Tangent Bundle#^prop-51-3|§51.3]], [[§51 The Tangent Bundle#^prop-51-2|§51.2]], [[§51 The Tangent Bundle#^cor-51-4|§51.4]]
+*Uses:* [[§51 The Tangent Bundle#^prop-51-4|§51.4]], [[§51 The Tangent Bundle#^prop-51-3|§51.3]], [[§51 The Tangent Bundle#^cor-51-5|§51.5]]
 
 > [!remark] Remark: Vector Bundles
 > $TM$ is in fact a *vector bundle*: a fibration whose fibres are vector spaces, with trivializations that are linear isomorphisms on each fibre. The general definition is postponed, but these are its two features: the fibres are abstract vector spaces, and there are trivializations which restrict to linear isomorphisms fibrewise. Vector bundles are objects of interest in their own right; K-theory is built from them.

@@ -524,6 +524,9 @@ $$
 >
 > Theorem §C5a.4.6 reads eigenvalues, which do not depend on the basis:
 > - [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-5|Theorem §CB.0.5]] with [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-5|Derivation]], [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^thm-cb-0-15|Theorem §CB.0.15]] with [[§CB.0 Linear Algebra in Components꞉ Bases, Changes of Basis, Duals and Tensors#^der-cb-0-15|Derivation]] — components and matrices under a change of basis; trace, determinant and eigenvalues are basis free ([[§C5a.1 Spinor Space and the Clifford Action#^thm-c5a-1-2|Theorem §C5a.1.2]], 2 and 4).
+>
+> The Connections contrast the lost unitarity with the compact case:
+> - [[§CB.7 Representations꞉ Intertwiners, Schur's Lemma, Complete Reducibility and Casimirs#^thm-cb-7-16|Theorem §CB.7.16]] — finite-dimensional representations of $SU(2)$ and $SO(3)$ are unitary for a suitable inner product and completely reducible; for the boosts no such inner product exists ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-7|Theorem §C3.2.7]]).
 
 > [!remark]- Connections
 > - That fields with half-integer $j_+ + j_-$ are two-valued is why their quanta obey Fermi statistics and are quantized with anticommutators — [[§C5b.1 Canonical Quantization of the Dirac Field|§C5b.1]], [[§C5b.9 Spin and Statistics|§C5b.9]].

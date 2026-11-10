@@ -65,7 +65,7 @@ tags: [differentiable-manifolds, math591]
 *Uses:* [[§3 Subspaces and Products#^def-3-1|Def. §3.1]]
 
 > [!remark]- Connections
-> - Home in MATH 590: [[§5 Subspace Topology#^lem-5-2|590 §5.2]]; closed analogue [[§7 Closed Sets and Limit Points#^thm-7-3|590 §7.3]], used in [[§5 Quotient Maps#^lem-5-9|§5.9]].
+> - Home in MATH 590: [[§5 Subspace Topology#^lem-5-2|590 §5.2]]; closed analogue [[§7 Closed Sets and Limit Points#^thm-7-3|590 §7.3]], used in [[§5 Quotient Maps#^lem-5-10|§5.10]].
 
 > [!theorem] Proposition §3.3: Universal Property of the Subspace Topology
 > Let $S \subseteq X$ carry the subspace topology and let $\iota : S \hookrightarrow X$ be the inclusion.
@@ -112,7 +112,7 @@ tags: [differentiable-manifolds, math591]
 
 *Uses:* [[§3 Subspaces and Products#^prop-3-3|§3.3]]
 
-This completes the pattern: each of the three constructions — subspace, product ([[§3 Subspaces and Products#^cor-3-11|Corollary §3.11]]) and quotient ([[§5 Quotient Maps#^cor-5-3|Corollary §5.3]]) — has its topology characterized by its universal property.
+This completes the pattern: each of the three constructions — subspace, product ([[§3 Subspaces and Products#^cor-3-11|Corollary §3.11]]) and quotient ([[§5 Quotient Maps#^cor-5-4|Corollary §5.4]]) — has its topology characterized by its universal property.
 
 > [!theorem] Theorem §3.5: Subspaces Inherit Both Conditions
 > Let $S \subseteq X$ carry the subspace topology.
@@ -134,7 +134,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 
 > [!remark]- Connections
 > - Home in MATH 590: second countability of subspaces is [[§22 Countability Axioms#^thm-22-3|590 §22.3]]; Hausdorff is [[§9 Hausdorff Spaces#^def-9-1|590 Def. §9.1]].
-> - Used ad hoc for spheres in [[§8 Spheres#^ex-8-1|Ex. §8.1]] and [[§8 Spheres#^prop-8-1|§8.1]]; reused for level sets in [[§7 The Regular Value Theorem#^thm-7-5|§7.5]].
+> - Used ad hoc for spheres in [[§8 Spheres#^ex-8-1|Ex. §8.1]] and [[§8 Spheres#^prop-8-1|§8.1]]; reused for level sets in [[§7 The Regular Value Theorem#^thm-7-6|§7.6]].
 
 > [!theorem] Proposition §3.6: Open Subsets of Manifolds Are Manifolds
 > An open subset $S$ of a topological $n$-manifold $X$, with the subspace topology, is a topological $n$-manifold.
@@ -288,7 +288,7 @@ This completes the pattern: each of the three constructions — subspace, produc
 > [!remark] Remark: Why the Universal Property Matters
 > To check that $F$ is continuous, it suffices to check it component by component. The same pattern reappears for *differentiability*: a map into a product of manifolds is smooth iff its components are. In Lee's language this is the *characteristic property* of the product topology (Lee Prop. A.23(a)), and it characterizes the product topology uniquely ([[§3 Subspaces and Products#^cor-3-11|Corollary §3.11]] below). Together with the previous proposition this gives two independent abstract descriptions of the same topology—“coarsest making projections continuous” and “the one that lets you check maps componentwise.”
 >
-> Compare [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]]: the subspace topology is the coarsest making the inclusion continuous, and continuity of a map *into* $S$ is checked by composing with $\iota$. The quotient topology will complete the pattern in the opposite direction (Corollary [[§5 Quotient Maps#^cor-5-2|§5.2]]): it is the *finest* making $\pi$ continuous, and continuity of a map *out of* $X/{\sim}$ is checked by precomposing with $\pi$.
+> Compare [[§3 Subspaces and Products#^prop-3-3|Proposition §3.3]]: the subspace topology is the coarsest making the inclusion continuous, and continuity of a map *into* $S$ is checked by composing with $\iota$. The quotient topology will complete the pattern in the opposite direction (Corollary [[§5 Quotient Maps#^cor-5-3|§5.3]]): it is the *finest* making $\pi$ continuous, and continuity of a map *out of* $X/{\sim}$ is checked by precomposing with $\pi$.
 
 ^rem-3-4
 

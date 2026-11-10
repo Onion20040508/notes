@@ -32,4 +32,4 @@ Ranked by how many later results depend on them (through the proofs' citations).
 - [[§11 Topological Groups and Classical Matrix Groups#^prop-11-3|Proposition §11.3: Determinant Is Continuous]]: 362 later results
 - [[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|Proposition §11.4: GL(n,ℝ) Is a Topological Group]]: 360 later results
 - [[§14 Homogeneous Spaces#^lem-14-3|Lemma §14.3: When Two Cosets Coincide]]: 360 later results
-- [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|Proposition §11.5: Equivalent Description of O(n,ℝ)]]: 359 later results
+- [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|Proposition §11.6: Equivalent Description of O(n,ℝ)]]: 359 later results

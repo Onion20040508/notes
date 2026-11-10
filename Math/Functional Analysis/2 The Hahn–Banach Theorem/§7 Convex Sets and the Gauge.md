@@ -371,7 +371,7 @@ Both hypotheses on $K$ are used: convexity for the combination, and $0 \in K$ (w
 *Uses:* [[§7 Convex Sets and the Gauge#^def-7-1|Def. §7.1]], [[§7 Convex Sets and the Gauge#^def-7-2|Def. §7.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-3|Def. §3.3]]
 
 ![[m556-5-5.svg]]
-*The picture behind ($\Leftarrow$): the segment $\{ty : |t| < \delta(y)\}$ through $0$ (red) lies in $K$, the apex $x/a$ lies in $K$, so by convexity the whole triangle they span (shaded) lies in $K$. The point $x = a \cdot (x/a) + (1-a) \cdot 0$ sits on the median (dashed) at fraction $a$ from the apex, and the triangle's cross-section through $x$ parallel to $y$ (red) has half-length $(1 - a)\,\delta(y)$. That cross-section is the wiggle room at $x$ in the direction $y$.*
+*The picture behind ($\Leftarrow$): the segment $\{ty : |t| < \delta(y)\}$ through $0$ (red) lies in $K$, the apex $x/a$ lies in $K$, so by convexity the whole triangle they span (shaded) lies in $K$. The point $x = a \cdot (x/a) + (1-a) \cdot 0$ sits on the median (dashed), a fraction $a$ of the way from $0$ to the apex, and the triangle's cross-section through $x$ parallel to $y$ (red) has half-length $(1 - a)\,\delta(y)$. That cross-section is the wiggle room at $x$ in the direction $y$.*
 
 > [!theorem] Corollary §7.8: Convex Sets of Interior Points are Sublevel Sets
 > Let $K \subset X$ be convex with $0 \in K$. The following are equivalent:

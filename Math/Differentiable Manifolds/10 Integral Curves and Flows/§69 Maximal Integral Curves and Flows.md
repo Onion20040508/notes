@@ -169,12 +169,12 @@ where, in words, $\varphi(t, p)$ is the integral curve starting at $p$, evaluate
 
 That $\mathcal{D}$ is open and $\varphi$ smooth (Theorem [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]](2)) was not proved in class; the proof, from Lee, is filled in after the theorem.
 
-> [!definition] Definition §69.2: Flow Box
+> [!definition] Definition §69.3: Flow Box
 > Let $\mathbf{X} \in \mathfrak{X}(M)$ with flow $\varphi : \mathcal{D} \to M$, and $p \in M$. A **flow box** (or **local domain**) at $p$ is a product $(-\varepsilon, \varepsilon) \times U \subseteq \mathcal{D}$, with $\varepsilon > 0$ and $U$ an open neighbourhood of $p$, on which $\varphi$ is smooth; together with the restriction $\varphi| : (-\varepsilon, \varepsilon) \times U \to M$.
 >
 > *Lee: Ch. 9, Flows*
 
-^def-69-2
+^def-69-3
 
 Both names are in use. Every point has such a box, by the next lemma.
 

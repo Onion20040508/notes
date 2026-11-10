@@ -23,4 +23,4 @@ tags: [functional-analysis, hub]
 - **What is new.** The functional is in $X'$ and the inequalities are strict. The earlier theorem needed no topology and gave only $\ell(y_0) = 1$, $\ell < 1$ on $K$.
 - **Over $\mathbb{C}$.** The same with real parts ([[§43 Weak and Weak-Star Convergence#^cor-43-6|§43.6]]).
 - **Used for.** [[Mazur's Theorem]]. The case of a closed subspace is [[§36 Duality in Normed Spaces#^cor-36-11|§36.11]], obtained there from the distance formula.
-- **With an inner product.** In a Hilbert space the functional can be written down: with $y_0$ the point of $K$ closest to $x_0$ ([[Closest Point in a Closed Convex Set]]), $\ell = \operatorname{Re}(\cdot, x_0 - y_0)$ separates. In a normed space there is no closest point to use, and Hahn–Banach replaces it.
+- **With an inner product.** In a Hilbert space the functional can be written down: with $y_0$ the point of $K$ closest to $x_0$ ([[Closest Point in a Closed Convex Set]]), $\ell = \operatorname{Re}(\cdot, x_0 - y_0)$ separates (not proved in these notes). In a normed space there is no closest point to use, and Hahn–Banach replaces it.

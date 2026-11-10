@@ -38,7 +38,7 @@ tags: [differentiable-manifolds, math591]
 ^thm-20-1
 
 > [!proof]+ Proof (not given in lecture)
-> *External $\Rightarrow$ (G).* This is Steps 1–3 of the proof of Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]]: the rank condition lets one permute coordinates so that $\big(\partial F^i/\partial y^j(p)\big)$ is nonsingular, and Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]] produces the smooth $h$ with $F(x,y) = \vec 0 \iff y = h(x)$ on a box.
+> *External $\Rightarrow$ (G).* This is Steps 1–3 of the proof of Theorem [[§7 The Regular Value Theorem#^thm-7-6|§7.6]]: the rank condition lets one permute coordinates so that $\big(\partial F^i/\partial y^j(p)\big)$ is nonsingular, and Theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]] produces the smooth $h$ with $F(x,y) = \vec 0 \iff y = h(x)$ on a box.
 >
 > *(G) $\Rightarrow$ external.* Take $W = V \times V'$ and $F(x,y) = y - h(x)$, smooth, with $F^{-1}(\vec 0) = X \cap W$ by hypothesis. Its Jacobian is the $k \times (n+k)$ block matrix $\big(-Dh_x \ \big| \ I_k\big)$, of rank $k$ everywhere because of the identity block; so $\vec 0$ is a regular value.
 > Written out, with $h = (h^1, \ldots, h^k)$,
@@ -77,7 +77,7 @@ tags: [differentiable-manifolds, math591]
 
 ^pf-20-1
 
-*Uses:* [[§20 Manifolds in Euclidean Space#^def-20-1|Def. §20.1]], [[§20 Manifolds in Euclidean Space#^def-20-2|Def. §20.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-5|§7.5]], [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[Multivariable Chain Rule|452 §12.2]]
+*Uses:* [[§20 Manifolds in Euclidean Space#^def-20-1|Def. §20.1]], [[§20 Manifolds in Euclidean Space#^def-20-2|Def. §20.2]], [[§7 The Regular Value Theorem#^def-7-3|Def. §7.3]], [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]], [[§7 The Regular Value Theorem#^thm-7-6|§7.6]], [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]], [[Multivariable Chain Rule|452 §12.2]]
 
 > [!remark]- Connections
 > - The analytic input: the vector-valued implicit function theorem [[§7 The Regular Value Theorem#^thm-7-2|§7.2]] (one-equation version in 452: [[§15 The Implicit Function Theorem#^thm-15-2|452 §15.2]]) and the inverse function theorem [[§35 Local Diffeomorphisms#^thm-35-1|§35.1]] (two-variable version in 452: [[Inverse Function Theorem (several variables)|452 §16.2]]).
@@ -93,9 +93,9 @@ The circle in its three descriptions is collected in [[§24 The Circle|§24]].
 
 ## Smooth Structures on Regular Level Sets
 
-*Lecture 6. Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] produced a* topological *manifold from a regular level set. The charts it produced were not arbitrary, and the point of this subsection is that they are automatically smoothly compatible — so the regular value theorem is in fact a machine for manufacturing smooth manifolds.*
+*Lecture 6. Theorem [[§7 The Regular Value Theorem#^thm-7-6|§7.6]] produced a* topological *manifold from a regular level set. The charts it produced were not arbitrary, and the point of this subsection is that they are automatically smoothly compatible — so the regular value theorem is in fact a machine for manufacturing smooth manifolds.*
 
-Recall the construction in the proof of Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]]. Index the coordinates of $\mathbb{R}^{n+k}$ by $\{1, \ldots, n+k\}$. For $p \in M = F^{-1}(c)$, the hypothesis $\operatorname{rank} F'(p) = k$ says that some $k$ of the $n+k$ columns of $F'(p)$ are linearly independent. Choose such a set of indices $J$, $|J| = k$, and let $I = \{1,\ldots,n+k\} \setminus J$ be the complementary $n$ indices. Write $x_J \in \mathbb{R}^J$ and $x_I \in \mathbb{R}^I$ for the corresponding groups of coordinates. The [[§7 The Regular Value Theorem#^thm-7-2|implicit function theorem]] then solves for $x_J$ in terms of $x_I$: there are an open box $V_J \times V_J' \ni p$, with $V_J \subseteq \mathbb{R}^I$ and $V_J' \subseteq \mathbb{R}^J$ open, and a smooth $h_J : V_J \to V_J'$ with
+Recall the construction in the proof of Theorem [[§7 The Regular Value Theorem#^thm-7-6|§7.6]]. Index the coordinates of $\mathbb{R}^{n+k}$ by $\{1, \ldots, n+k\}$. For $p \in M = F^{-1}(c)$, the hypothesis $\operatorname{rank} F'(p) = k$ says that some $k$ of the $n+k$ columns of $F'(p)$ are linearly independent. Choose such a set of indices $J$, $|J| = k$, and let $I = \{1,\ldots,n+k\} \setminus J$ be the complementary $n$ indices. Write $x_J \in \mathbb{R}^J$ and $x_I \in \mathbb{R}^I$ for the corresponding groups of coordinates. The [[§7 The Regular Value Theorem#^thm-7-2|implicit function theorem]] then solves for $x_J$ in terms of $x_I$: there are an open box $V_J \times V_J' \ni p$, with $V_J \subseteq \mathbb{R}^I$ and $V_J' \subseteq \mathbb{R}^J$ open, and a smooth $h_J : V_J \to V_J'$ with
 
 $$
 F(x) = c \iff x_J = h_J(x_I) \qquad \text{for } x \text{ in the box},
@@ -132,9 +132,9 @@ The inverse $\varphi_J^{-1}$ is a parametrization of that piece of $M$, in the f
 The proof in one picture. The transition function between two graph charts factors through the ambient space: a parametrization up, followed by a linear projection down. Both legs are smooth in the Euclidean sense, so the composite is.
 
 > [!proof]+ Proof
-> *(Lecture 6 worked the surface of Example [[§20 Manifolds in Euclidean Space#^ex-20-1|§20.1]] first, then gave this general argument, which differs from it only in notation.)* What has to be shown: the charts $(U_J, \varphi_J)$ cover $M$ and are pairwise $C^\infty$-compatible, so that they form an atlas (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]) on the topological manifold $M$; the smooth structure is then the maximal atlas containing them.
+> *(Lecture 6 worked the surface of Example [[§20 Manifolds in Euclidean Space#^ex-20-1|§20.1]] first, then gave this general argument, which differs from it only in notation.)* What has to be shown: the charts $(U_J, \varphi_J)$ cover $M$ and are pairwise $C^\infty$-compatible, so that they form an atlas (Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]) on the topological manifold $M$; the smooth structure is then the maximal atlas containing them.
 >
-> *$M$ is a topological $n$-manifold, and the $(U_J, \varphi_J)$ are charts.* By Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]], in the form of Corollary [[§7 The Regular Value Theorem#^cor-7-6|§7.6]] for the open domain $W$ and the value $c$, $M = F^{-1}(c)$ with the subspace topology is a topological manifold of dimension $n$, and Step 3 of that proof shows that each $\varphi_J = \pi_I|_{U_J}$ is a homeomorphism of the open set $U_J \subseteq M$ onto the open set $V_J \subseteq \mathbb{R}^I \cong \mathbb{R}^n$ (with $|I| = n$), i.e. a chart (Definition [[§2 Topological Manifolds#^def-2-3|§2.3]]).
+> *$M$ is a topological $n$-manifold, and the $(U_J, \varphi_J)$ are charts.* By Theorem [[§7 The Regular Value Theorem#^thm-7-6|§7.6]], in the form of Corollary [[§7 The Regular Value Theorem#^cor-7-7|§7.7]] for the open domain $W$ and the value $c$, $M = F^{-1}(c)$ with the subspace topology is a topological manifold of dimension $n$, and Step 3 of that proof shows that each $\varphi_J = \pi_I|_{U_J}$ is a homeomorphism of the open set $U_J \subseteq M$ onto the open set $V_J \subseteq \mathbb{R}^I \cong \mathbb{R}^n$ (with $|I| = n$), i.e. a chart (Definition [[§2 Topological Manifolds#^def-2-3|§2.3]]).
 >
 > *The domains cover $M$.* Each $p \in M$ lies in some $U_J$: the rank of $F'(p)$ is $k$ because $c$ is a regular value, so a set $J$ of $k$ independent columns exists at $p$, and the construction above produces a chart $(U_J, \varphi_J)$ with $p \in U_J$.
 >
@@ -159,11 +159,11 @@ The proof in one picture. The transition function between two graph charts facto
 >
 > are inverse to each other, since $(\varphi_J \circ \varphi_{J'}^{-1}) \circ (\varphi_{J'} \circ \varphi_J^{-1}) = \varphi_J \circ \varphi_J^{-1} = \mathrm{id}$ and likewise in the other order. So the transition function is a smooth bijection with smooth inverse, a diffeomorphism (Definition [[§17 Differentiable Structures#^def-17-3|§17.3]]), and the two charts are $C^\infty$-compatible (Definition [[§17 Differentiable Structures#^def-17-4|§17.4]]).
 >
-> *Conclusion.* The charts $(U_J, \varphi_J)$ cover $M$ and are pairwise compatible, so they form an atlas (Definition [[§17 Differentiable Structures#^def-17-6|§17.6]]). By Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]] the atlas lies in a unique maximal atlas, which is a smooth structure on $M$ (Definition [[§17 Differentiable Structures#^def-17-9|§17.9]]). Its charts take values in $\mathbb{R}^I \cong \mathbb{R}^n$, so $M$ is a smooth manifold of dimension $n$, the dimension of Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]].
+> *Conclusion.* The charts $(U_J, \varphi_J)$ cover $M$ and are pairwise compatible, so they form an atlas (Definition [[§17 Differentiable Structures#^def-17-8|§17.8]]). By Theorem [[§17 Differentiable Structures#^thm-17-6|§17.6]] the atlas lies in a unique maximal atlas, which is a smooth structure on $M$ (Definition [[§17 Differentiable Structures#^def-17-11|§17.11]]). Its charts take values in $\mathbb{R}^I \cong \mathbb{R}^n$, so $M$ is a smooth manifold of dimension $n$, the dimension of Theorem [[§7 The Regular Value Theorem#^thm-7-6|§7.6]].
 
 ^pf-20-2
 
-*Uses:* [[§7 The Regular Value Theorem#^thm-7-5|§7.5]], [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], [[§20 Manifolds in Euclidean Space#^def-20-3|Def. §20.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§20 Manifolds in Euclidean Space#^ex-20-1|Ex. §20.1]], [[Multivariable Chain Rule|452 §12.2]], [[§17 Differentiable Structures#^def-17-6|Def. §17.6]], [[§7 The Regular Value Theorem#^cor-7-6|§7.6]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-9|Def. §17.9]]
+*Uses:* [[§7 The Regular Value Theorem#^thm-7-6|§7.6]], [[§7 The Regular Value Theorem#^thm-7-2|§7.2]], [[§20 Manifolds in Euclidean Space#^def-20-3|Def. §20.3]], [[§17 Differentiable Structures#^def-17-4|Def. §17.4]], [[§17 Differentiable Structures#^thm-17-6|§17.6]], [[§20 Manifolds in Euclidean Space#^ex-20-1|Ex. §20.1]], [[Multivariable Chain Rule|452 §12.2]], [[§17 Differentiable Structures#^def-17-8|Def. §17.8]], [[§7 The Regular Value Theorem#^cor-7-7|§7.7]], [[§2 Topological Manifolds#^def-2-3|Def. §2.3]], [[§17 Differentiable Structures#^def-17-3|Def. §17.3]], [[§17 Differentiable Structures#^def-17-11|Def. §17.11]]
 
 > [!remark]- Connections
 > - Regular values are defined three times in 591: [[§7 The Regular Value Theorem#^def-7-4|Def. §7.4]] (Euclidean), [[§30 The Differential in Coordinates#^def-30-4|Def. §30.4]] and [[§36 Submersions#^def-36-4|Def. §36.4]] (manifolds).
@@ -200,7 +200,7 @@ The proof in one picture. The transition function between two graph charts facto
 The same level sets are submanifolds in the sense of Lecture 12, and their graph-chart structure is the induced one (Proposition [[§38 The Regular Value Theorem for Manifolds#^prop-38-4|§38.4]]).
 
 > [!remark] Remark
-> The only thing that varies between charts is *which* $k$ coordinates are solved for, and the whole proof is the observation that a projection composed with a parametrization is smooth no matter which choice is made. Note also that the charts are graphs of smooth maps, which is what makes the parametrization smooth — the topological argument of Theorem [[§7 The Regular Value Theorem#^thm-7-5|§7.5]] only needed $h_J$ continuous.
+> The only thing that varies between charts is *which* $k$ coordinates are solved for, and the whole proof is the observation that a projection composed with a parametrization is smooth no matter which choice is made. Note also that the charts are graphs of smooth maps, which is what makes the parametrization smooth — the topological argument of Theorem [[§7 The Regular Value Theorem#^thm-7-6|§7.6]] only needed $h_J$ continuous.
 
 ^rem-20-3
 

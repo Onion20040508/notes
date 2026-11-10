@@ -473,7 +473,7 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 ^rem-c5a-10-4
 
 > [!abstract]- Mathematical background
-> Proved in CB; each line says what the physics above relies on.
+> Proved in CB and CA; each line says what the physics above relies on.
 >
 > Plane waves turn the Dirac equation into the eigenvalue problem of $\slashed{p}$, whose square is $p^2$ by the Clifford relation; Theorem §C5a.10.2 also uses $\gamma^5$:
 > - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]] — Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
@@ -483,6 +483,10 @@ Existence and uniqueness of the positive square root: [[§25 Positive Operators#
 > Theorem §C5a.10.4 uses the spin matrices built from the spinor generators and the rotation content of $(\frac12, 0)\oplus(0, \frac12)$:
 > - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]] — the spinor generators ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]).
 > - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-9|Theorem §CB.17.9]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-9|Derivation]] — rotation content and the $2\pi$ sign of $(j_+, j_-)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-5|Theorem §C3.2.5]]).
+>
+> A plane wave turns the Dirac operator into a matrix (Derivation §C5a.10.1), and the Connections read the spinor boost as the boost factor of a boost-times-rotation decomposition:
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^rem-ca-3-1|§CA.3, Remark: A linear equation becomes algebra]] — on a plane wave a linear differential operator with constant coefficients acts by multiplication: the field equation in momentum space.
+> - [[§CB.3 Homomorphisms, Representations, the Identity Component and Coverings#^thm-cb-3-13|Theorem §CB.3.13]] — every $\Lambda \in SO^+(1,3)$ is a boost times a rotation ([[§C1a.4 The Lorentz Group#^thm-c1a-4-2|Theorem §C1a.4.2]]).
 
 > [!remark]- Connections
 > - The four steps are Wigner's construction at the level of wave functions: solve at the standard momentum $k = (m, \mathbf 0)$, transport with the pure boost $L(p)$ — the same $L(p)$ that defines $|p, \sigma\rangle$ in [[§C3.6★ Particle States and the Little Group#^thm-c3-6-10|Theorem §C3.6.10]], so $\xi^s$ is the spin label $\sigma$ of the particle state and rotations act on it by the spin-$\frac12$ matrix (Theorem §C5a.10.4).

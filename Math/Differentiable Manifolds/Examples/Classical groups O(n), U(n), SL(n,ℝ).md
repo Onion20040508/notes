@@ -9,14 +9,14 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 - $\mathrm{U}(n)$ is not a holomorphic level set, so it must be treated over $\mathbb{R}$ ([[§7 The Regular Value Theorem#^rem-7-9|§7]])
 - $\mathrm{GL}(n,\mathbb{R})$ is a topological group ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-4|§11]])
 - $\mathrm{GL}(n,\mathbb{R})$ has exactly two components ([[§16 The Classical Groups#^thm-16-2|§16]])
-- $g \in \mathrm{O}(n)$ iff $g^{\mathsf T}g = I$, so $\det g = \pm 1$ ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11]])
-- $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$: reflections ([[§16 The Classical Groups#^ex-16-1|§16]])
-- The complex groups $\mathrm{GL}(n,\mathbb{C})$ and $\mathrm{U}(n)$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-10|§11]])
+- $g \in \mathrm{O}(n)$ iff $g^{\mathsf T}g = I$, so $\det g = \pm 1$ ([[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11]])
+- $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$: reflections ([[§16 The Classical Groups#^ex-16-2|§16]])
+- The complex groups $\mathrm{GL}(n,\mathbb{C})$ and $\mathrm{U}(n)$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-9|§11]], [[§11 Topological Groups and Classical Matrix Groups#^def-11-11|§11]])
 - $\mathrm{U}(1)$ is the circle ([[§11 Topological Groups and Classical Matrix Groups#^ex-11-3|§11]])
 - The classical groups are topological manifolds ([[§12 The Classical Groups Are Topological Manifolds#^thm-12-6|§12]])
 - Jacobi's formula for the derivative of $\det$ ([[§12 The Classical Groups Are Topological Manifolds#^prop-12-1|§12]])
 - $1$ is a regular value of $\det$ ([[§12 The Classical Groups Are Topological Manifolds#^cor-12-3|§12]])
-- $\mathrm{SL}(n,\mathbb{R})$ is a manifold of dimension $n^2 - 1$ ([[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12]])
+- $\mathrm{SL}(n,\mathbb{R})$ is a manifold of dimension $n^2 - 1$ ([[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|§12]])
 - Dimension count: one equation for $\mathrm{SL}$, $\tfrac{n(n+1)}{2}$ for $\mathrm{O}(n)$ ([[§12 The Classical Groups Are Topological Manifolds#^rem-12-3|§12]])
 - Matrix groups act on column vectors ([[§13 Group Actions and Orbit Spaces#^ex-13-1|§13]])
 - $\mathrm{SO}(2)$ acting on $\mathbb{R}^2$: the orbit space is $[0, \infty)$ ([[§13 Group Actions and Orbit Spaces#^ex-13-6|§13]])
@@ -47,15 +47,15 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 ![[§16 The Classical Groups#^thm-16-2]]
 
 ## $g \in \mathrm{O}(n)$ iff $g^{\mathsf T}g = I$, so $\det g = \pm 1$
-![[§11 Topological Groups and Classical Matrix Groups#^prop-11-5]]
+![[§11 Topological Groups and Classical Matrix Groups#^prop-11-6]]
 
 ## $\mathrm{SO}(n)$ is a proper subgroup of $\mathrm{O}(n)$: reflections
-![[§16 The Classical Groups#^ex-16-1]]
+![[§16 The Classical Groups#^ex-16-2]]
 
 ## The complex groups $\mathrm{GL}(n,\mathbb{C})$ and $\mathrm{U}(n)$
 ![[§11 Topological Groups and Classical Matrix Groups#^def-11-9]]
 
-![[§11 Topological Groups and Classical Matrix Groups#^def-11-10]]
+![[§11 Topological Groups and Classical Matrix Groups#^def-11-11]]
 
 ## $\mathrm{U}(1)$ is the circle
 ![[§11 Topological Groups and Classical Matrix Groups#^ex-11-3]]
@@ -70,7 +70,7 @@ The classical matrix groups $\mathrm{GL}(n,\mathbb{R})$, $\mathrm{SL}(n,\mathbb{
 ![[§12 The Classical Groups Are Topological Manifolds#^cor-12-3]]
 
 ## $\mathrm{SL}(n,\mathbb{R})$ is a manifold of dimension $n^2 - 1$
-![[§12 The Classical Groups Are Topological Manifolds#^cor-12-5]]
+![[§12 The Classical Groups Are Topological Manifolds#^cor-12-4]]
 
 ## Dimension count: one equation for $\mathrm{SL}$, $\tfrac{n(n+1)}{2}$ for $\mathrm{O}(n)$
 ![[§12 The Classical Groups Are Topological Manifolds#^rem-12-3]]

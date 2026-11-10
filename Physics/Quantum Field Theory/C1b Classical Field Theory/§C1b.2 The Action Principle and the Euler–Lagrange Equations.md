@@ -82,7 +82,7 @@ How does a field theory produce its equations of motion? The particle version is
 > **4. Variations are carried along.** $T(g)$ is linear, so $T(g)(\phi + \varepsilon\eta) = \phi' + \varepsilon\,T(g)\eta$, and $(T(g)\eta)_a(x) = D(\Lambda)_a{}^b\,\eta_b(g^{-1}x)$ (for a scalar, $\eta(g^{-1}x)$) is smooth and supported in $g(\operatorname{supp}\eta)$, a compact subset of the interior of $gR$ when $\operatorname{supp}\eta$ is one of $R$. Conversely every such variation on $gR$ is $T(g)\eta$ for $\eta = T(g^{-1})\eta'$. By step 2 applied to $\phi + \varepsilon\eta$, $S_{gR}[\phi' + \varepsilon T(g)\eta] = S_R[\phi + \varepsilon\eta]$ for every $\varepsilon$, so the first variations agree ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]]), and one vanishes for all variations exactly when the other does.
 >
 > **What the derivation shows**
-> - Two invariances do all the work: of the measure ($|\det\Lambda| = 1$) and of the density. ⚑ By-product: for improper $\Lambda$ (parity, time reversal) the measure is still invariant, so the question is only whether $\mathcal L$ is (parity: [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-5|Theorem §C9.4.5]]; time reversal: [[§C9.10 Fermion Bilinears under Time Reversal|§C9.10]]).
+> - Two invariances do all the work: of the measure ($|\det\Lambda| = 1$) and of the density. ⚑ By-product: for improper $\Lambda$ (parity, time reversal) the measure is still invariant, so the question is only whether $\mathcal L$ is (parity: the scalar densities of this section, [[§C9.2 Parity of the Scalar Field#^thm-c9-2-7|Theorem §C9.2.7]] and [[§C9.5 Intrinsic Parity, Pseudoscalars and the Parity Phase#^thm-c9-5-4|Theorem §C9.5.4]]; the Dirac density, [[§C9.4 Fermion Bilinears under Parity#^thm-c9-4-5|Theorem §C9.4.5]]; time reversal: [[§C9.12 C, T and CPT for the Complex Scalar Field|§C9.12]] for the scalar, [[§C9.10 Fermion Bilinears under Time Reversal|§C9.10]] for fermion bilinears).
 > - The field equations of a scalar $\mathcal L$ are therefore covariant without being checked; for Klein–Gordon the direct check is [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-3|Theorem §C1b.1.3]].
 > - Used next: Noether's theorem is the infinitesimal, local version of this invariance ([[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-3|Theorem §C1b.7.3]]).
 
@@ -224,7 +224,7 @@ This is Hamilton's principle ([[§B6.2 Hamilton's Principle of Stationary Action
 
 ^der-c1b-2-4
 
-*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^pr-c1b-2-3|Principle §C1b.2.3]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], [[§23 Fubini's Theorem#^thm-23-1|452 Thm. §23.1]], [[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-2|CM Lemma §B5.1.2]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]]
+*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-3|Def. §C1b.2.3]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-2|Theorem §C1b.2.2]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^pr-c1b-2-3|Principle §C1b.2.3]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], [[§23 Fubini's Theorem#^thm-23-1|452 Thm. §23.1]], [[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-2|CM Lemma §B5.1.2]], [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]
 
 ![[ph-qft-c1-9-1.svg]]
 *The setting of the action principle. The action is integrated over a bounded region $R$ of spacetime; a variation $\delta\phi = \varepsilon\eta$ is a test function whose support (shaded) lies inside $R$, so the surface term $\oint_{\partial R}d\sigma_\mu\,\Pi^\mu\delta\phi$ vanishes. On a slab $t_1 \le t \le t_2$ the parts of $\partial R$ at fixed time contribute $\int d^3x\,\pi\,\delta\phi$ when the variation is not zero there.*
@@ -363,7 +363,7 @@ This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mo
 > A complex field $\phi$ with the real Lagrangian density
 >
 > $$
-> \mathcal L = \partial_\mu\phi^*\,\partial^\mu\phi - m^2\phi^*\phi ,
+> \mathcal L = \partial_\mu\phi^{\ast}\,\partial^\mu\phi - m^2\phi^{\ast}\phi ,
 > $$
 >
 > written without a factor $\frac12$. Its field equations are $(\partial^2 + m^2)\phi = 0$ and the conjugate ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]).
@@ -377,7 +377,7 @@ This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mo
 > Write $\phi = (\phi_1 + i\phi_2)/\sqrt2$ with $\phi_1$, $\phi_2$ real. Then
 >
 > $$
-> \partial_\mu\phi^*\,\partial^\mu\phi - m^2\phi^*\phi = \sum_{j = 1}^2\Bigl[\tfrac12\,\partial_\mu\phi_j\,\partial^\mu\phi_j - \tfrac12m^2\phi_j^2\Bigr] ,
+> \partial_\mu\phi^{\ast}\,\partial^\mu\phi - m^2\phi^{\ast}\phi = \sum_{j = 1}^2\Bigl[\tfrac12\,\partial_\mu\phi_j\,\partial^\mu\phi_j - \tfrac12m^2\phi_j^2\Bigr] ,
 > $$
 >
 > two copies of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]] with the same mass. The phase rotation $\phi \to e^{i\alpha}\phi$ is the rotation of $(\phi_1, \phi_2)$ by the angle $\alpha$, and leaves $\mathcal L$ unchanged.
@@ -406,13 +406,13 @@ This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mo
 *Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-6|Model §C1b.2.6]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]
 
 > [!theorem] Theorem §C1b.2.9: Field and Conjugate as Independent Variables
-> Let $\mathcal L$ be a real density of a complex field, written as a function of $\phi$, $\phi^*$ and their derivatives, and define $\dfrac{\partial}{\partial\phi} = \dfrac{1}{\sqrt2}\Bigl(\dfrac{\partial}{\partial\phi_1} - i\dfrac{\partial}{\partial\phi_2}\Bigr)$, $\dfrac{\partial}{\partial\phi^*} = \dfrac{1}{\sqrt2}\Bigl(\dfrac{\partial}{\partial\phi_1} + i\dfrac{\partial}{\partial\phi_2}\Bigr)$ (likewise for $\partial_\mu\phi$, $\partial_\mu\phi^*$). The two real Euler–Lagrange equations of $\phi_1$, $\phi_2$ hold if and only if
+> Let $\mathcal L$ be a real density of a complex field, written as a function of $\phi$, $\phi^{\ast}$ and their derivatives, and define $\dfrac{\partial}{\partial\phi} = \dfrac{1}{\sqrt2}\Bigl(\dfrac{\partial}{\partial\phi_1} - i\dfrac{\partial}{\partial\phi_2}\Bigr)$, $\dfrac{\partial}{\partial\phi^{\ast}} = \dfrac{1}{\sqrt2}\Bigl(\dfrac{\partial}{\partial\phi_1} + i\dfrac{\partial}{\partial\phi_2}\Bigr)$ (likewise for $\partial_\mu\phi$, $\partial_\mu\phi^{\ast}$). The two real Euler–Lagrange equations of $\phi_1$, $\phi_2$ hold if and only if
 >
 > $$
-> \partial_\mu\frac{\partial\mathcal L}{\partial(\partial_\mu\phi^*)} - \frac{\partial\mathcal L}{\partial\phi^*} = 0 ,
+> \partial_\mu\frac{\partial\mathcal L}{\partial(\partial_\mu\phi^{\ast})} - \frac{\partial\mathcal L}{\partial\phi^{\ast}} = 0 ,
 > $$
 >
-> whose complex conjugate is the same equation with $\phi \leftrightarrow \phi^*$. For [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]] it reads $(\partial^2 + m^2)\phi = 0$, and the conjugate $(\partial^2 + m^2)\phi^* = 0$.
+> whose complex conjugate is the same equation with $\phi \leftrightarrow \phi^{\ast}$. For [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]] it reads $(\partial^2 + m^2)\phi = 0$, and the conjugate $(\partial^2 + m^2)\phi^{\ast} = 0$.
 >
 > *Model:* any real local density of a complex field, with [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]] as the instance; *applies:* classical, exact (an invertible linear change of variables).
 >
@@ -428,7 +428,7 @@ This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mo
 > **3. Recombine.** The map $(E_1, E_2) \mapsto \bigl((E_1 + iE_2)/\sqrt2,\ (E_1 - iE_2)/\sqrt2\bigr)$ is linear, and by step 2's definitions (applied to $\partial\mathcal L/\partial\phi_j$ and to $\partial\mathcal L/\partial(\partial_\mu\phi_j)$, with $\partial_\mu$ commuting with constant coefficients)
 >
 > $$
-> \frac{E_1 + iE_2}{\sqrt2} = \partial_\mu\frac{\partial\mathcal L}{\partial(\partial_\mu\phi^*)} - \frac{\partial\mathcal L}{\partial\phi^*}, \qquad \frac{E_1 - iE_2}{\sqrt2} = \partial_\mu\frac{\partial\mathcal L}{\partial(\partial_\mu\phi)} - \frac{\partial\mathcal L}{\partial\phi} .
+> \frac{E_1 + iE_2}{\sqrt2} = \partial_\mu\frac{\partial\mathcal L}{\partial(\partial_\mu\phi^{\ast})} - \frac{\partial\mathcal L}{\partial\phi^{\ast}}, \qquad \frac{E_1 - iE_2}{\sqrt2} = \partial_\mu\frac{\partial\mathcal L}{\partial(\partial_\mu\phi)} - \frac{\partial\mathcal L}{\partial\phi} .
 > $$
 >
 > **4. Invertibility.** The matrix $\frac1{\sqrt2}\begin{pmatrix}1 & i\\ 1 & -i\end{pmatrix}$ has determinant $\frac12(-i - i) = -i \ne 0$, so $E_1 = E_2 = 0$ exactly when both right-hand sides vanish. Since $E_1$, $E_2$ are real, the second right-hand side is the complex conjugate of the first: one complex equation carries both real ones.
@@ -436,27 +436,62 @@ This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mo
 > **5. The free complex field.** Write $\mathcal L = g^{\nu\rho}\partial_\nu\phi^{\ast}\,\partial_\rho\phi - m^2\phi^{\ast}\phi$. Then $\partial\mathcal L/\partial\phi^{\ast} = -m^2\phi$ and $\partial\mathcal L/\partial(\partial_\mu\phi^{\ast}) = g^{\nu\rho}\delta^\mu{}_\nu\,\partial_\rho\phi = \partial^\mu\phi$: only one factor responds, so no factor $2$ arises. The equation of step 3 is $\partial_\mu\partial^\mu\phi + m^2\phi = 0$. ⚑ By-product: with $\phi$ and $\phi^{\ast}$ independent each appears once in the kinetic term, which is why the complex density needs no $\frac12$ to give the canonically normalized equation; the same factor-of-two point as in [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-3|Caution: Rename the dummy index]].
 >
 > **What the derivation shows**
-> - "Treat $\phi$ and $\phi^*$ as independent" is an invertible linear change of variables, legitimate for any real $\mathcal L$; varying $\phi^*$ gives the equation for $\phi$.
+> - "Treat $\phi$ and $\phi^{\ast}$ as independent" is an invertible linear change of variables, legitimate for any real $\mathcal L$; varying $\phi^{\ast}$ gives the equation for $\phi$.
 > - Assumption: $\mathcal L$ real (otherwise the two equations are not conjugate and the system is overdetermined).
-> - Used next: the conjugate momenta cross over, $\pi = \dot\phi^*$ ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]]).
+> - Used next: the conjugate momenta cross over, $\pi = \dot\phi^{\ast}$ ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]]).
 
 ^der-c1b-2-9
 
 *Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]]
 
 > [!remark] Remark: The symmetry the real field lacks, and a potential
-> The phase rotation of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-8|Theorem §C1b.2.8]] gives a conserved current, the number current (essentially the electric current once the field is coupled to light; [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]). After quantization the two real degrees of freedom become a particle and a distinct antiparticle of opposite charge, whereas a real field describes a neutral particle that is its own antiparticle ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]]). A potential depending only on the invariant, $V(\phi^*\phi)$, keeps the symmetry and enters the $\phi^*$ equation through the chain rule, $(\partial^2 + m^2)\phi = -V'(\phi^*\phi)\,\phi$, and the $\phi$ equation as its conjugate.
+> The phase rotation of [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-8|Theorem §C1b.2.8]] gives a conserved current, the number current (essentially the electric current once the field is coupled to light; [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]). After quantization the two real degrees of freedom become a particle and a distinct antiparticle of opposite charge, whereas a real field describes a neutral particle that is its own antiparticle ([[§C2a.5 The Complex Scalar Field and Its Charge#^thm-c2a-5-7|Theorem §C2a.5.7]]). A potential depending only on the invariant, $V(\phi^{\ast}\phi)$, keeps the symmetry and enters the $\phi^{\ast}$ equation through the chain rule, $(\partial^2 + m^2)\phi = -V'(\phi^{\ast}\phi)\,\phi$, and the $\phi$ equation as its conjugate.
 >
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Definition "Lagrangian density for a complex scalar field": "Where this is used"), Ch. 3 §3.4 ("A potential depending only on the invariant combination") · PHY 513 Problem Set 2, Problem 3(a), course solution*
 
 ^rem-c1b-2-6
 
 > [!remark] Remark: One equation for every kind of field
-> Nothing in [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]] used what the components assemble into. For a **vector field** $A_\nu$ there are four equations, and the field index becomes a free index, so the equations form a tensor equation: from $\mathcal L = -\frac14F_{\alpha\beta}F^{\alpha\beta} - J^\alpha A_\alpha$, $\partial\mathcal L/\partial(\partial_\mu A_\nu) = -F^{\mu\nu}$ and $\partial\mathcal L/\partial A_\nu = -J^\nu$ give Maxwell's equations $\partial_\mu F^{\mu\nu} = J^\nu$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]]; the derivative with respect to $\partial_\mu A_\nu$ is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|Theorem §C1a.5.12]]; [[§B4.2 The Electromagnetic Field Tensor|REL §B4.2]]). Since $F_{00} = 0$, $A_0$ has no time derivative in $\mathcal L$: its equation (Gauss's law) is a constraint, not an evolution equation, and $A_0$ has no conjugate momentum ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|Remark: Constraints and first-order Lagrangians]]). A mass term $\frac12m^2A_\mu A^\mu$ would be the only undifferentiated $A$ besides the coupling, and gauge invariance forbids it; the coupling survives because $J^\mu\partial_\mu\lambda$ is a divergence when $\partial_\mu J^\mu = 0$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-5|Theorem §C1b.2.5]]). For a **Dirac field** the density $\bar\psi(i\gamma^\mu\partial_\mu - m)\psi$ is first order, and varying $\bar\psi$ gives the Dirac equation directly ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]]). In all cases $\mathcal L$ must be real.
+> Nothing in [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]] used what the components assemble into. For a **vector field** $A_\nu$ there are four equations, and the field index becomes a free index, so the equations form a tensor equation: from $\mathcal L = -\frac14F_{\alpha\beta}F^{\alpha\beta} - J^\alpha A_\alpha$, $\partial\mathcal L/\partial(\partial_\mu A_\nu) = -F^{\mu\nu}$ and $\partial\mathcal L/\partial A_\nu = -J^\nu$ give Maxwell's equations $\partial_\mu F^{\mu\nu} = J^\nu$ (step by step: [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^ex-c1b-2-3|Example §C1b.2.3]] below; [[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]]; the derivative with respect to $\partial_\mu A_\nu$ is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|Theorem §C1a.5.12]]; [[§B4.2 The Electromagnetic Field Tensor|REL §B4.2]]). Since $F_{00} = 0$, $A_0$ has no time derivative in $\mathcal L$: its equation (Gauss's law) is a constraint, not an evolution equation, and $A_0$ has no conjugate momentum ([[§C1b.4 Hamiltonian Field Theory#^rem-c1b-4-3|Remark: Constraints and first-order Lagrangians]]). A mass term $\frac12m^2A_\mu A^\mu$ would be the only undifferentiated $A$ besides the coupling, and gauge invariance forbids it; the coupling survives because $J^\mu\partial_\mu\lambda$ is a divergence when $\partial_\mu J^\mu = 0$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-5|Theorem §C1b.2.5]]). For a **Dirac field** the density $\bar\psi(i\gamma^\mu\partial_\mu - m)\psi$ is first order, and varying $\bar\psi$ gives the Dirac equation directly ([[§C5a.7 The Dirac Equation and Its Lagrangian#^mod-c5a-7-3|Model §C5a.7.3]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-6|Theorem §C5a.7.6]]). In all cases $\mathcal L$ must be real.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.3 (Derivation "The Euler–Lagrange equation for other kinds of field") · PS §2.2, p. 16 ("If the Lagrangian contains more than one field, there is one such equation for each")*
 
 ^rem-c1b-2-7
+
+> [!example] Example §C1b.2.3: Maxwell's Equations from the Action
+> Write the Euler–Lagrange equations of the Maxwell field coupled to an external current ([[§C1a.7 Relativistic Electrodynamics in Index Form#^mod-c1a-7-1|Model §C1a.7.1]]),
+>
+> $$
+> \mathcal L = -\tfrac14F_{\alpha\beta}F^{\alpha\beta} - J^\alpha A_\alpha, \qquad F_{\alpha\beta} = \partial_\alpha A_\beta - \partial_\beta A_\alpha .
+> $$
+>
+> **Answer:** $\partial_\mu F^{\mu\nu} = J^\nu$.
+>
+> **Step 1** (one equation per component). The fields are the four components $A_\nu$, so [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-4|Theorem §C1b.2.4]] gives four equations,
+>
+> $$
+> \partial_\mu\Bigl(\frac{\partial\mathcal L}{\partial(\partial_\mu A_\nu)}\Bigr) - \frac{\partial\mathcal L}{\partial A_\nu} = 0 .
+> $$
+>
+> The index of the field is a free index of the equation, and the dummy indices of $\mathcal L$ are named $\alpha$, $\beta$, away from the formula's $\mu$, $\nu$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^cau-c1b-2-3|Caution: Rename the dummy index]]).
+>
+> **Step 2** (the derivative with respect to $\partial_\mu A_\nu$). Only the first term contains derivatives of $A$; the current is external and does not depend on $A$. With the sixteen $\partial_\mu A_\nu$ as independent variables, $\partial(F_{\alpha\beta}F^{\alpha\beta})/\partial(\partial_\mu A_\nu) = 4F^{\mu\nu}$ ([[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|Theorem §C1a.5.12]], 4), so
+>
+> $$
+> \frac{\partial\mathcal L}{\partial(\partial_\mu A_\nu)} = -\tfrac14\cdot4F^{\mu\nu} = -F^{\mu\nu} .
+> $$
+>
+> **Step 3** (the derivative with respect to $A_\nu$). $F$ contains only derivatives of $A$, never $A$ itself, so the first term contributes nothing. In the coupling, $\partial A_\alpha/\partial A_\nu = \delta_\alpha{}^\nu$:
+>
+> $$
+> \frac{\partial\mathcal L}{\partial A_\nu} = -J^\alpha\,\delta_\alpha{}^\nu = -J^\nu .
+> $$
+>
+> **Step 4** (assemble). $\partial_\mu(-F^{\mu\nu}) - (-J^\nu) = 0$, i.e. $\partial_\mu F^{\mu\nu} = J^\nu$: Gauss's law for $\nu = 0$ and the Ampère–Maxwell law for $\nu = j$ ([[§C1a.7 Relativistic Electrodynamics in Index Form#^thm-c1a-7-2|Theorem §C1a.7.2]]; components in [[§C1a.7 Relativistic Electrodynamics in Index Form#^der-c1a-7-2|Derivation §C1a.7.2]], steps 1–3). The other pair of Maxwell's equations is not an Euler–Lagrange equation: it holds identically because $F$ is built from a potential (step 4 of the same derivation). For $J = 0$ this is the field equation of [[§C4.6 The Maxwell Field, Gauge Symmetry and Gauge Fixing#^mod-c4-6-2|Model §C4.6.2]].
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.3 (Derivation "The Euler–Lagrange equation for other kinds of field", vector field)*
+
+^ex-c1b-2-3
 
 > [!remark] Remark: The second variation is the operator whose inverse is the propagator
 > Vary the free real action twice, in two directions $\eta_1$, $\eta_2$. Since $S$ is quadratic, $\frac{\partial^2}{\partial\varepsilon_1\partial\varepsilon_2}S[\phi + \varepsilon_1\eta_1 + \varepsilon_2\eta_2] = \int d^4x\,\bigl(\partial_\mu\eta_1\,\partial^\mu\eta_2 - m^2\eta_1\eta_2\bigr) = -\int d^4x\,\eta_1(\partial^2 + m^2)\eta_2$, after one integration by parts with no surface term (test functions). As a bilinear map on test functions it has the kernel
@@ -470,6 +505,16 @@ This is Relativity's free scalar field ([[§B4.1 The Klein–Gordon Equation#^mo
 > *Source: the user's PHY 513 notes, Ch. 2 §2.3 (Derivation "Taylor expansion in index notation", "Three expansions, not one": "the second variation, (□ + m²)δ⁴(x − y) for the free field, is the operator whose inverse will be the propagator") · the sign and the integration by parts written out here*
 
 ^rem-c1b-2-8
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^def-ca-2-1|Def. §CA.2.1]] — test functions: the variations $\eta$, smooth and supported inside $R$.
+> - [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]] — generalized function: what a functional derivative is in general; $\delta\phi(y)/\delta\phi(x) = \delta^4(x - y)$ is an identity of distributions.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]] — a continuous function is fixed by its integrals against test functions: the functional derivative of a local action is unique, and the field equation holds point by point (the fundamental lemma).
+> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — differentiation under the integral: the first variation is computed inside $\int_Rd^4x$.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]] — integration by parts with its surface term, here one dimension up: the boundary term $\oint d\sigma_\mu\,\Pi^\mu\eta$ that the variations kill.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]] — the kernel theorem: the second variation $-(\partial_x^2 + m^2)\delta^4(x - y)$ is one distribution in $x$ and $y$ together.
 
 > [!remark]- Connections
 > - The field action principle is Hamilton's principle with the index $i$ of $q_i$ made continuous; the fundamental lemma used to localize is the particle one in four variables — [[§B6.2 Hamilton's Principle of Stationary Action#^pr-b6-2-1|CM Principle §B6.2.1]], [[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-2|CM Lemma §B5.1.2]], [[§B5.1 The Euler–Lagrange Equation#^thm-b5-1-4|CM Theorem §B5.1.4]].

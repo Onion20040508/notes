@@ -18,7 +18,7 @@ tags: [differentiable-manifolds, hub]
 - [[§70 Complete Vector Fields#^thm-70-11|Theorem §70.11: Left-Invariant Fields Are Complete]]
 
 ## Used in (Differentiable Manifolds)
-- [[§71 The Exponential Map#^cor-71-3|Corollary §71.3: The Exponential Law on a Line]]
+- [[§71 The Exponential Map#^cor-71-4|Corollary §71.4: The Exponential Law on a Line]]
 
 ## Connections
 - TODO

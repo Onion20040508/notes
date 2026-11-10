@@ -24,7 +24,7 @@ tags: [chapter, differentiable-manifolds]
 
 ## Load-bearing results
 Ranked by how many later results depend on them (through the proofs' citations).
-- [[§56 Vector Fields#^prop-56-4|Proposition §56.4: Bump Functions Exist]]: 92 later results
+- [[§56 Vector Fields#^cor-56-7|Proposition §56.7: Bump Functions Exist]]: 92 later results
 - [[§56 Vector Fields#^prop-56-1|Proposition §56.1: Vector Fields in Coordinates]]: 81 later results
 - [[§56 Vector Fields#^prop-56-2|Proposition §56.2: The Space of Vector Fields Is a Real Vector Space]]: 80 later results
-- [[§56 Vector Fields#^lem-56-3|Lemma §56.3: A Vector Field Is a Derivation]]: 78 later results
+- [[§56 Vector Fields#^lem-56-4|Lemma §56.4: A Vector Field Is a Derivation]]: 78 later results

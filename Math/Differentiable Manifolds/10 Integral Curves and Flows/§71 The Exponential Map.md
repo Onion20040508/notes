@@ -75,7 +75,7 @@ The one-parameter subgroup is an orbit: the left-invariant field $\mathbf{X}^A$ 
 
 *(Figure after the board.)* The group is drawn like a sphere (think of a three-sphere). The vector $A$ in the tangent space $\mathfrak{g} = T_eG$ generates a one-parameter group; following it to time one gives a point $\exp(A)$ of the group.
 
-The name is well motivated: for subgroups of the general linear group, $\exp$ is the matrix exponential (Theorem [[§71 The Exponential Map#^thm-71-9|§71.9]] below). The essential step is the following.
+The name is well motivated: for subgroups of the general linear group, $\exp$ is the matrix exponential (Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]] below). The essential step is the following.
 
 > [!theorem] Proposition §71.2: Exponentials of Multiples
 > For all $t \in \mathbb{R}$ and $A \in \mathfrak{g}$,
@@ -107,7 +107,7 @@ The name is well motivated: for subgroups of the general linear group, $\exp$ is
 
 *Uses:* [[§67 Integral Curves#^lem-67-4|§67.4]], [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]
 
-> [!theorem] Corollary §71.3: The Exponential Law on a Line
+> [!theorem] Corollary §71.4: The Exponential Law on a Line
 > For all $s, t \in \mathbb{R}$ and $A \in \mathfrak{g}$,
 >
 > $$
@@ -116,7 +116,7 @@ The name is well motivated: for subgroups of the general linear group, $\exp$ is
 >
 > *Lee: Proposition 20.8*
 
-^cor-71-3
+^cor-71-4
 
 > [!proof]+ Proof
 > *(Lecture 26.)* By Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]], then Proposition [[§71 The Exponential Map#^prop-71-1|§71.1]], then Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]] twice:
@@ -125,7 +125,7 @@ The name is well motivated: for subgroups of the general linear group, $\exp$ is
 > \exp\big((s + t)A\big) = \varphi^A_{s+t}(e) = \varphi^A_s(e) \cdot \varphi^A_t(e) = \exp(sA) \cdot \exp(tA) .
 > $$
 
-^pf-71-3
+^pf-71-4
 
 *Uses:* [[§71 The Exponential Map#^prop-71-2|§71.2]], [[§71 The Exponential Map#^prop-71-1|§71.1]]
 
@@ -138,9 +138,9 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 > \exp(A + B) = \exp(A) \cdot \exp(B) .
 > $$
 >
-> The reason: many Lie groups are non-abelian. The plus on the left is the addition in the tangent space at the identity, which is commutative, while the group law is not; so the identity cannot hold in general. There is a famous formula for $\exp(A)\exp(B)$, the Baker–Campbell–Hausdorff formula, a complicated series of iterated brackets of $A$ and $B$. For a single direction, $A$ and $B = cA$, the identity holds (Corollary [[§71 The Exponential Map#^cor-71-3|§71.3]]); more generally, it holds if $A$ and $B$ commute, which is not easy to show and is not proved in the course. (Lee, Problem 20-8, characterizes the groups where it holds for all $A$, $B$.)
+> The reason: many Lie groups are non-abelian. The plus on the left is the addition in the tangent space at the identity, which is commutative, while the group law is not; so the identity cannot hold in general. There is a famous formula for $\exp(A)\exp(B)$, the Baker–Campbell–Hausdorff formula, a complicated series of iterated brackets of $A$ and $B$. For a single direction, $A$ and $B = cA$, the identity holds (Corollary [[§71 The Exponential Map#^cor-71-4|§71.4]]); more generally, it holds if $A$ and $B$ commute, which is not easy to show and is not proved in the course. (Lee, Problem 20-8, characterizes the groups where it holds for all $A$, $B$.)
 >
-> *(Not from lecture.)* A concrete failure in $\mathrm{GL}(2, \mathbb{R})$, using the matrix exponential of Theorem [[§71 The Exponential Map#^thm-71-9|§71.9]], is Example [[§71 The Exponential Map#^ex-71-1|§71.1]] below.
+> *(Not from lecture.)* A concrete failure in $\mathrm{GL}(2, \mathbb{R})$, using the matrix exponential of Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]], is Example [[§71 The Exponential Map#^ex-71-1|§71.1]] below.
 
 ^rem-71-1
 
@@ -148,15 +148,15 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 
 *(Not from lecture; figure added.)* The two matrices of Example [[§71 The Exponential Map#^ex-71-1|§71.1]] acting on the unit square: $\exp(A)\exp(B)$ (blue) and $\exp(A + B)$ (red). Both have determinant $1$, so the parallelograms have the same area, but they are different maps.
 
-*(Assignment 7, Problem 5.)* The exponential map of a subgroup is the restriction of that of the larger group, because the integral curves are; for a linear group this identifies $\exp$ with the matrix exponential series, completing the proof of Theorem [[§71 The Exponential Map#^thm-71-9|§71.9]] below. The series facts are those of its proof: $e^{tA} = \sum_{\ell \ge 0} \frac{t^\ell}{\ell!} A^\ell$ converges and may be differentiated term by term, $\frac{d}{dt} e^{tA} = A\, e^{tA} = e^{tA} A$.
+*(Assignment 7, Problem 5.)* The exponential map of a subgroup is the restriction of that of the larger group, because the integral curves are; for a linear group this identifies $\exp$ with the matrix exponential series, completing the proof of Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]] below. The series facts are those of its proof: $e^{tA} = \sum_{\ell \ge 0} \frac{t^\ell}{\ell!} A^\ell$ converges and may be differentiated term by term, $\frac{d}{dt} e^{tA} = A\, e^{tA} = e^{tA} A$.
 
-> [!theorem] Lemma §71.4: The Matrix Exponential Is Invertible
+> [!theorem] Lemma §71.6: The Matrix Exponential Is Invertible
 > For $A \in \operatorname{Mat}(n, \mathbb{R})$ and $t \in \mathbb{R}$, $e^{tA}\, e^{-tA} = I$. So $e^{tA} \in \mathrm{GL}(n, \mathbb{R})$, with inverse $e^{-tA}$.
 
-^lem-71-4
+^lem-71-6
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in. The outline of the proof of Theorem [[§71 The Exponential Map#^thm-71-9|§71.9]] and the submitted solution of Assignment 7, Problem 5(b), use that $e^{tA}$ is invertible without proof.)* Each entry of a product of matrix-valued curves is a sum of products of entries, so the product rule holds: $\frac{d}{dt}(B(t)C(t)) = B'(t)C(t) + B(t)C'(t)$. With $\frac{d}{dt} e^{tA} = A e^{tA} = e^{tA} A$ and, by the chain rule, $\frac{d}{dt} e^{-tA} = -A\, e^{-tA}$,
+> *(Not from lecture; filled in. The outline of the proof of Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]] and the submitted solution of Assignment 7, Problem 5(b), use that $e^{tA}$ is invertible without proof.)* Each entry of a product of matrix-valued curves is a sum of products of entries, so the product rule holds: $\frac{d}{dt}(B(t)C(t)) = B'(t)C(t) + B(t)C'(t)$. With $\frac{d}{dt} e^{tA} = A e^{tA} = e^{tA} A$ and, by the chain rule, $\frac{d}{dt} e^{-tA} = -A\, e^{-tA}$,
 >
 > $$
 > \frac{d}{dt}\big(e^{tA} e^{-tA}\big) = \big(e^{tA} A\big) e^{-tA} + e^{tA}\big(-A\, e^{-tA}\big) = 0 .
@@ -164,14 +164,14 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 >
 > So every entry of $e^{tA} e^{-tA}$ is a function on $\mathbb{R}$ with zero derivative, hence constant, and at $t = 0$ the product is $I \cdot I = I$. Thus $e^{tA} e^{-tA} = I$ for all $t$; then $\det(e^{tA}) \det(e^{-tA}) = 1$, so $e^{tA}$ is invertible, and its inverse is $e^{-tA}$, since a one-sided inverse of a square matrix is the inverse.
 
-^pf-71-4
+^pf-71-6
 
-*Uses:* [[§71 The Exponential Map#^thm-71-9|§71.9]]
+*Uses:* [[§71 The Exponential Map#^thm-71-11|§71.11]]
 
-> [!theorem] Lemma §71.5: Integral Curves of a Left-Invariant Field on a Lie Subgroup
-> Let $H$ be a Lie group and $G \subseteq H$ a subgroup that is a Lie group with the inclusion $\iota : G \hookrightarrow H$ smooth and $d\iota_e$ injective — a Lie subgroup, as in Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]] — so that $\mathfrak{g} = T_eG$ is identified with $d\iota_e(\mathfrak{g}) \subseteq \mathfrak{h} = T_eH$. For $A \in \mathfrak{g}$ let $\mathbf{A}^G \in \mathfrak{X}(G)$ and $\mathbf{A}^H \in \mathfrak{X}(H)$ be the left-invariant fields with $\mathbf{A}^G_e = A$ and $\mathbf{A}^H_e = d\iota_e(A)$ (the fields written $\mathbf{X}^A$ in the notation of this section, one on each group). Then $\mathbf{A}^G$ is $\iota$-related to $\mathbf{A}^H$, and for every integral curve $\gamma$ of $\mathbf{A}^G$, $\iota \circ \gamma$ is an integral curve of $\mathbf{A}^H$.
+> [!theorem] Lemma §71.7: Integral Curves of a Left-Invariant Field on a Lie Subgroup
+> Let $H$ be a Lie group and $G \subseteq H$ a subgroup that is a Lie group with the inclusion $\iota : G \hookrightarrow H$ smooth and $d\iota_e$ injective — a Lie subgroup, as in Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]] — so that $\mathfrak{g} = T_eG$ is identified with $d\iota_e(\mathfrak{g}) \subseteq \mathfrak{h} = T_eH$. For $A \in \mathfrak{g}$ let $\mathbf{A}^G \in \mathfrak{X}(G)$ and $\mathbf{A}^H \in \mathfrak{X}(H)$ be the left-invariant fields with $\mathbf{A}^G_e = A$ and $\mathbf{A}^H_e = d\iota_e(A)$ (the fields written $\mathbf{X}^A$ in the notation of this section, one on each group). Then $\mathbf{A}^G$ is $\iota$-related to $\mathbf{A}^H$, and for every integral curve $\gamma$ of $\mathbf{A}^G$, $\iota \circ \gamma$ is an integral curve of $\mathbf{A}^H$.
 
-^lem-71-5
+^lem-71-7
 
 > [!proof]+ Proof
 > *(Assignment 7, Problem 5(a): the submitted solution. The relatedness is also Lemma [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]] for the morphism $\iota$, and the second statement Proposition [[§70 Complete Vector Fields#^prop-70-10|§70.10]]; the solution proves both directly.)* $\iota$ is a Lie group morphism (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|§61.2]]), and by Definition [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|§60.5]]
@@ -202,12 +202,12 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 >
 > So $\iota \circ \gamma$ is an integral curve of $\mathbf{A}^H$.
 
-^pf-71-5
+^pf-71-7
 
 *Uses:* [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]], [[§70 Complete Vector Fields#^prop-70-10|§70.10]], [[§61 Lie Group Morphisms and Linear Groups#^def-61-2|Def. §61.2]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-5|Def. §60.5]]
 
-> [!theorem] Corollary §71.6: The Exponential Map of a Lie Subgroup
-> In the setting of Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]], for $A \in \mathfrak{g}$ and $t \in \mathbb{R}$,
+> [!theorem] Corollary §71.8: The Exponential Map of a Lie Subgroup
+> In the setting of Lemma [[§71 The Exponential Map#^lem-71-7|§71.7]], for $A \in \mathfrak{g}$ and $t \in \mathbb{R}$,
 >
 > $$
 > \iota\big(\exp_G(tA)\big) = \exp_H\big(t\, d\iota_e(A)\big) .
@@ -215,31 +215,31 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 >
 > So the exponential map of $G$ is the restriction of that of $H$ to $\mathfrak{g} \subseteq \mathfrak{h}$, and $\exp_H(tA) \in G$ for all $t$.
 
-^cor-71-6
+^cor-71-8
 
 > [!proof]+ Proof
-> *(Filled in.)* $\mathbf{A}^G$ is complete (Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]]), and its integral curve starting at $e$ is $\gamma(t) = \exp_G(tA)$, $t \in \mathbb{R}$ (Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]]). By Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]], $\iota \circ \gamma$ is an integral curve of $\mathbf{A}^H$ defined on $\mathbb{R}$ and starting at $\iota(e) = e$; so it is the maximal integral curve of $\mathbf{A}^H$ starting at $e$ (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]), which is $t \mapsto \exp_H(t\, d\iota_e(A))$ (Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]]).
+> *(Filled in.)* $\mathbf{A}^G$ is complete (Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]]), and its integral curve starting at $e$ is $\gamma(t) = \exp_G(tA)$, $t \in \mathbb{R}$ (Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]]). By Lemma [[§71 The Exponential Map#^lem-71-7|§71.7]], $\iota \circ \gamma$ is an integral curve of $\mathbf{A}^H$ defined on $\mathbb{R}$ and starting at $\iota(e) = e$; so it is the maximal integral curve of $\mathbf{A}^H$ starting at $e$ (Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]), which is $t \mapsto \exp_H(t\, d\iota_e(A))$ (Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]]).
 
-^pf-71-6
+^pf-71-8
 
-*Uses:* [[§70 Complete Vector Fields#^thm-70-11|§70.11]], [[§71 The Exponential Map#^prop-71-2|§71.2]], [[§71 The Exponential Map#^lem-71-5|§71.5]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
+*Uses:* [[§70 Complete Vector Fields#^thm-70-11|§70.11]], [[§71 The Exponential Map#^prop-71-2|§71.2]], [[§71 The Exponential Map#^lem-71-7|§71.7]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
 
-> [!theorem] Corollary §71.7: Lie Group Morphisms Commute with the Exponential Map
+> [!theorem] Corollary §71.9: Lie Group Morphisms Commute with the Exponential Map
 > Let $F : H \to G$ be a Lie group morphism. Then $F(\exp_H A) = \exp_G\big(dF_e(A)\big)$ for every $A \in \mathfrak{h}$.
 >
 > *Lee: Proposition 20.8(g)*
 
-^cor-71-7
+^cor-71-9
 
 > [!proof]+ Proof
-> *(Not from the assignment; filled in: the proof of Corollary [[§71 The Exponential Map#^cor-71-6|§71.6]] with $F$ in place of $\iota$.)* Let $\mathbf{X}^A \in \mathfrak{X}(H)$ and $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$, $\tilde A = dF_e(A)$, be the left-invariant extensions; they are $F$-related (Lemma [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]]). The integral curve $t \mapsto \exp_H(tA)$ of $\mathbf{X}^A$ starting at $e$ is defined on $\mathbb{R}$ (Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]], Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]]), so $t \mapsto F(\exp_H(tA))$ is an integral curve of $\mathbf{Y}^{\tilde A}$ on $\mathbb{R}$ (Proposition [[§70 Complete Vector Fields#^prop-70-10|§70.10]]) starting at $F(e) = e$. By Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]] it is $t \mapsto \exp_G(t\tilde A)$ (Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]]); take $t = 1$.
+> *(Not from the assignment; filled in: the proof of Corollary [[§71 The Exponential Map#^cor-71-8|§71.8]] with $F$ in place of $\iota$.)* Let $\mathbf{X}^A \in \mathfrak{X}(H)$ and $\mathbf{Y}^{\tilde A} \in \mathfrak{X}(G)$, $\tilde A = dF_e(A)$, be the left-invariant extensions; they are $F$-related (Lemma [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]]). The integral curve $t \mapsto \exp_H(tA)$ of $\mathbf{X}^A$ starting at $e$ is defined on $\mathbb{R}$ (Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]], Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]]), so $t \mapsto F(\exp_H(tA))$ is an integral curve of $\mathbf{Y}^{\tilde A}$ on $\mathbb{R}$ (Proposition [[§70 Complete Vector Fields#^prop-70-10|§70.10]]) starting at $F(e) = e$. By Proposition [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]] it is $t \mapsto \exp_G(t\tilde A)$ (Proposition [[§71 The Exponential Map#^prop-71-2|§71.2]]); take $t = 1$.
 
-^pf-71-7
+^pf-71-9
 
-*Uses:* [[§71 The Exponential Map#^cor-71-6|§71.6]], [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]], [[§70 Complete Vector Fields#^thm-70-11|§70.11]], [[§71 The Exponential Map#^prop-71-2|§71.2]], [[§70 Complete Vector Fields#^prop-70-10|§70.10]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
+*Uses:* [[§71 The Exponential Map#^cor-71-8|§71.8]], [[§61 Lie Group Morphisms and Linear Groups#^lem-61-1|§61.1]], [[§70 Complete Vector Fields#^thm-70-11|§70.11]], [[§71 The Exponential Map#^prop-71-2|§71.2]], [[§70 Complete Vector Fields#^prop-70-10|§70.10]], [[§69 Maximal Integral Curves and Flows#^prop-69-1|§69.1]]
 
-> [!theorem] Proposition §71.8: Integral Curves of Left-Invariant Fields on a Linear Group
-> Let $G \subseteq \mathrm{GL}(n, \mathbb{R})$ be a linear group that is a Lie subgroup (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]]), with $\mathfrak{g}$ identified with a subspace of $\operatorname{Mat}(n, \mathbb{R})$, and $A \in \mathfrak{g}$. For every $g \in G$ the integral curve of the left-invariant field $\mathbf{A}^G$ (with $\mathbf{A}^G_e = A$, as in Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]]) starting at $g$ is
+> [!theorem] Proposition §71.10: Integral Curves of Left-Invariant Fields on a Linear Group
+> Let $G \subseteq \mathrm{GL}(n, \mathbb{R})$ be a linear group that is a Lie subgroup (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]]), with $\mathfrak{g}$ identified with a subspace of $\operatorname{Mat}(n, \mathbb{R})$, and $A \in \mathfrak{g}$. For every $g \in G$ the integral curve of the left-invariant field $\mathbf{A}^G$ (with $\mathbf{A}^G_e = A$, as in Lemma [[§71 The Exponential Map#^lem-71-7|§71.7]]) starting at $g$ is
 >
 > $$
 > t \longmapsto g\, e^{tA} = g \Big(\sum_{\ell=0}^\infty \frac{t^\ell}{\ell!} A^\ell\Big), \qquad t \in \mathbb{R} .
@@ -247,10 +247,10 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 >
 > In particular $g\, e^{tA} \in G$ for all $t$.
 
-^prop-71-8
+^prop-71-10
 
 > [!proof]+ Proof
-> *(Assignment 7, Problem 5(b): the submitted solution, with the invertibility of $e^{tA}$ supplied by Lemma [[§71 The Exponential Map#^lem-71-4|§71.4]]; the solution takes $c(t) \in \mathrm{GL}(n, \mathbb{R})$ for granted.)* Let $\iota : G \hookrightarrow \mathrm{GL}(n, \mathbb{R})$ be the inclusion. Since $\mathrm{GL}(n, \mathbb{R})$ is open in $\operatorname{Mat}(n, \mathbb{R})$, $T_X \mathrm{GL}(n, \mathbb{R}) = \operatorname{Mat}(n, \mathbb{R})$ for each $X$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]); the velocity of a matrix-valued curve is its entrywise derivative, and $A \in \mathfrak{g}$ is identified with the matrix $d\iota_e(A)$. Let $\mathbf{A}^{\mathrm{GL}}$ be the left-invariant field on $\mathrm{GL}(n, \mathbb{R})$ with $\mathbf{A}^{\mathrm{GL}}_I = A$.
+> *(Assignment 7, Problem 5(b): the submitted solution, with the invertibility of $e^{tA}$ supplied by Lemma [[§71 The Exponential Map#^lem-71-6|§71.6]]; the solution takes $c(t) \in \mathrm{GL}(n, \mathbb{R})$ for granted.)* Let $\iota : G \hookrightarrow \mathrm{GL}(n, \mathbb{R})$ be the inclusion. Since $\mathrm{GL}(n, \mathbb{R})$ is open in $\operatorname{Mat}(n, \mathbb{R})$, $T_X \mathrm{GL}(n, \mathbb{R}) = \operatorname{Mat}(n, \mathbb{R})$ for each $X$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]); the velocity of a matrix-valued curve is its entrywise derivative, and $A \in \mathfrak{g}$ is identified with the matrix $d\iota_e(A)$. Let $\mathbf{A}^{\mathrm{GL}}$ be the left-invariant field on $\mathrm{GL}(n, \mathbb{R})$ with $\mathbf{A}^{\mathrm{GL}}_I = A$.
 >
 > *The field $\mathbf{A}^{\mathrm{GL}}$.* For $h \in \mathrm{GL}(n, \mathbb{R})$, $L_h(X) = hX$ is the restriction of the linear map $X \mapsto hX$ of $\operatorname{Mat}(n, \mathbb{R})$. Computing its differential along the curve $t \mapsto I + tA$, which passes through $I$ with velocity $A$,
 >
@@ -260,13 +260,13 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 >
 > as in Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]].
 >
-> *$t \mapsto g\,e^{tA}$ is an integral curve of $\mathbf{A}^{\mathrm{GL}}$.* Let $g \in G$ and $c(t) = g \sum_{\ell \ge 0} \frac{t^\ell}{\ell!} A^\ell$, $t \in \mathbb{R}$. By Lemma [[§71 The Exponential Map#^lem-71-4|§71.4]], $c(t) = g\, e^{tA}$ is a product of invertible matrices, so $c : \mathbb{R} \to \mathrm{GL}(n, \mathbb{R})$; and $c(0) = gI = g$. Differentiating term by term, the $\ell = 0$ term $I$ is constant, and for $\ell \ge 1$, $\frac{d}{dt}\frac{t^\ell}{\ell!} A^\ell = \frac{t^{\ell-1}}{(\ell-1)!} A^\ell$. Since left multiplication by $g$ and right multiplication by $A$ are linear and continuous, reindexing with $m = \ell - 1$ gives
+> *$t \mapsto g\,e^{tA}$ is an integral curve of $\mathbf{A}^{\mathrm{GL}}$.* Let $g \in G$ and $c(t) = g \sum_{\ell \ge 0} \frac{t^\ell}{\ell!} A^\ell$, $t \in \mathbb{R}$. By Lemma [[§71 The Exponential Map#^lem-71-6|§71.6]], $c(t) = g\, e^{tA}$ is a product of invertible matrices, so $c : \mathbb{R} \to \mathrm{GL}(n, \mathbb{R})$; and $c(0) = gI = g$. Differentiating term by term, the $\ell = 0$ term $I$ is constant, and for $\ell \ge 1$, $\frac{d}{dt}\frac{t^\ell}{\ell!} A^\ell = \frac{t^{\ell-1}}{(\ell-1)!} A^\ell$. Since left multiplication by $g$ and right multiplication by $A$ are linear and continuous, reindexing with $m = \ell - 1$ gives
 >
 > $$
 > c'(t) = g \sum_{m=0}^\infty \frac{t^m}{m!} A^{m+1} = \Big(g \sum_{m=0}^\infty \frac{t^m}{m!} A^m\Big) A = c(t)\, A = \mathbf{A}^{\mathrm{GL}}_{c(t)} \qquad \text{for all } t \in \mathbb{R} .
 > $$
 >
-> *Comparison with $\mathbf{A}^G$.* Left-invariant fields are complete (Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]]), so the integral curve $\gamma$ of $\mathbf{A}^G$ starting at $g$ is defined on $\mathbb{R}$. By Lemma [[§71 The Exponential Map#^lem-71-5|§71.5]] with $H = \mathrm{GL}(n, \mathbb{R})$, $\iota \circ \gamma : \mathbb{R} \to \mathrm{GL}(n, \mathbb{R})$ is an integral curve of $\mathbf{A}^{\mathrm{GL}}$ with $\iota \circ \gamma(0) = g$. So $c$ and $\iota \circ \gamma$ are integral curves of $\mathbf{A}^{\mathrm{GL}}$ on $\mathbb{R}$ with the same starting point, and by uniqueness (Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]])
+> *Comparison with $\mathbf{A}^G$.* Left-invariant fields are complete (Theorem [[§70 Complete Vector Fields#^thm-70-11|§70.11]]), so the integral curve $\gamma$ of $\mathbf{A}^G$ starting at $g$ is defined on $\mathbb{R}$. By Lemma [[§71 The Exponential Map#^lem-71-7|§71.7]] with $H = \mathrm{GL}(n, \mathbb{R})$, $\iota \circ \gamma : \mathbb{R} \to \mathrm{GL}(n, \mathbb{R})$ is an integral curve of $\mathbf{A}^{\mathrm{GL}}$ with $\iota \circ \gamma(0) = g$. So $c$ and $\iota \circ \gamma$ are integral curves of $\mathbf{A}^{\mathrm{GL}}$ on $\mathbb{R}$ with the same starting point, and by uniqueness (Proposition [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]])
 >
 > $$
 > c(t) = \iota(\gamma(t)) \qquad \text{for all } t \in \mathbb{R} .
@@ -274,12 +274,12 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 >
 > Hence $c(t) \in G$ for all $t$, and $c$ is the integral curve of $\mathbf{A}^G$ starting at $g$.
 
-^pf-71-8
+^pf-71-10
 
-*Uses:* [[§71 The Exponential Map#^lem-71-4|§71.4]], [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§70 Complete Vector Fields#^thm-70-11|§70.11]], [[§71 The Exponential Map#^lem-71-5|§71.5]], [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]
+*Uses:* [[§71 The Exponential Map#^lem-71-6|§71.6]], [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§70 Complete Vector Fields#^thm-70-11|§70.11]], [[§71 The Exponential Map#^lem-71-7|§71.7]], [[§68 Local Existence and Uniqueness#^prop-68-3|§68.3]]
 
-> [!theorem] Theorem §71.9: The Exponential Map of a Linear Group
-> Let $G \subseteq \mathrm{GL}(n, \mathbb{R})$ be a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]) that is a Lie subgroup (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-3|§61.3]]), and $A \in \mathfrak{g}$, a matrix. Then
+> [!theorem] Theorem §71.11: The Exponential Map of a Linear Group
+> Let $G \subseteq \mathrm{GL}(n, \mathbb{R})$ be a linear group (Definition [[§61 Lie Group Morphisms and Linear Groups#^def-61-1|§61.1]]) that is a Lie subgroup (Theorem [[§61 Lie Group Morphisms and Linear Groups#^thm-61-5|§61.5]]), and $A \in \mathfrak{g}$, a matrix. Then
 >
 > $$
 > \exp(A) = \sum_{\ell=0}^\infty \frac{1}{\ell!} A^\ell ,
@@ -289,16 +289,16 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 >
 > *Lee: Proposition 20.2, Example 20.4*
 
-^thm-71-9
+^thm-71-11
 
 > [!proof]+ Proof (outline from Lecture 26; the general case from Assignment 7, Problem 5)
-> *(The lecture gave the case $G = \mathrm{GL}(n, \mathbb{R})$ in outline; the series facts are an exercise, and the case of a general $G \subseteq \mathrm{GL}(n, \mathbb{R})$ needs an extra argument, which is part of the homework: Proposition [[§71 The Exponential Map#^prop-71-8|§71.8]], Assignment 7, Problem 5(b).)* The method is once again uniqueness. Show it first for $G = \mathrm{GL}(n, \mathbb{R})$. Define $e^A = \sum_{\ell \ge 0} A^\ell / \ell!$. Then
+> *(The lecture gave the case $G = \mathrm{GL}(n, \mathbb{R})$ in outline; the series facts are an exercise, and the case of a general $G \subseteq \mathrm{GL}(n, \mathbb{R})$ needs an extra argument, which is part of the homework: Proposition [[§71 The Exponential Map#^prop-71-10|§71.10]], Assignment 7, Problem 5(b).)* The method is once again uniqueness. Show it first for $G = \mathrm{GL}(n, \mathbb{R})$. Define $e^A = \sum_{\ell \ge 0} A^\ell / \ell!$. Then
 >
 > $$
 > \frac{d}{dt}\, e^{tA} = A\, e^{tA} = e^{tA} A ,
 > $$
 >
-> by manipulating the series: it converges strongly enough in norm to be differentiated term by term; differentiating $t^\ell$ brings out a factor $\ell$, which cancels against $\ell!$, and the resulting shift of index produces the extra factor $A$, which can be put on the left or on the right. So $\gamma(t) = e^{tA}$ is a curve in $\mathrm{GL}(n, \mathbb{R})$ (it is invertible, Lemma [[§71 The Exponential Map#^lem-71-4|§71.4]]), and
+> by manipulating the series: it converges strongly enough in norm to be differentiated term by term; differentiating $t^\ell$ brings out a factor $\ell$, which cancels against $\ell!$, and the resulting shift of index produces the extra factor $A$, which can be put on the left or on the right. So $\gamma(t) = e^{tA}$ is a curve in $\mathrm{GL}(n, \mathbb{R})$ (it is invertible, Lemma [[§71 The Exponential Map#^lem-71-6|§71.6]]), and
 >
 > $$
 > \frac{d}{dt}\gamma(t) = e^{tA} A = d\big(L_{e^{tA}}\big)_e(A) = \mathbf{X}^A_{e^{tA}} ,
@@ -311,11 +311,11 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 > \qquad \Longrightarrow \qquad e^{tA} = \varphi^A_t(e) ,
 > $$
 >
-> and at $t = 1$, $e^A = \exp(A)$ by Definition [[§71 The Exponential Map#^def-71-1|§71.1]]. For a general $G \subseteq \mathrm{GL}(n, \mathbb{R})$: by Proposition [[§71 The Exponential Map#^prop-71-8|§71.8]] with $g = e = I$, the integral curve of the left-invariant field $\mathbf{X}^A$ on $G$ starting at $e$ is $t \mapsto e^{tA}$, and at $t = 1$, $\exp(A) = e^A$ by Definition [[§71 The Exponential Map#^def-71-1|§71.1]]. *(Completed with Assignment 7, Problem 5.)*
+> and at $t = 1$, $e^A = \exp(A)$ by Definition [[§71 The Exponential Map#^def-71-1|§71.1]]. For a general $G \subseteq \mathrm{GL}(n, \mathbb{R})$: by Proposition [[§71 The Exponential Map#^prop-71-10|§71.10]] with $g = e = I$, the integral curve of the left-invariant field $\mathbf{X}^A$ on $G$ starting at $e$ is $t \mapsto e^{tA}$, and at $t = 1$, $\exp(A) = e^A$ by Definition [[§71 The Exponential Map#^def-71-1|§71.1]]. *(Completed with Assignment 7, Problem 5.)*
 
-^pf-71-9
+^pf-71-11
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^def-71-1|Def. §71.1]], [[§71 The Exponential Map#^prop-71-8|§71.8]], [[§71 The Exponential Map#^lem-71-4|§71.4]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^def-71-1|Def. §71.1]], [[§71 The Exponential Map#^prop-71-10|§71.10]], [[§71 The Exponential Map#^lem-71-6|§71.6]]
 
 > [!example] Example §71.1: $\exp(A + B) \neq \exp(A)\exp(B)$ for Two Nilpotent Matrices
 > *(Not from lecture.)* In $\mathrm{GL}(2, \mathbb{R})$, for $A = \begin{psmallmatrix} 0 & 1 \\ 0 & 0 \end{psmallmatrix}$ and $B = \begin{psmallmatrix} 0 & 0 \\ 1 & 0 \end{psmallmatrix}$,
@@ -326,7 +326,7 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 >
 > a concrete failure of the identity of the [[§71 The Exponential Map#^rem-71-1|warning]] above. Here $[A, B] = AB - BA = \begin{psmallmatrix} 1 & 0 \\ 0 & -1 \end{psmallmatrix} \neq 0$.
 >
-> *The exponential is the series.* For $G = \mathrm{GL}(2, \mathbb{R})$, $\mathfrak{g} = \operatorname{Mat}(2, \mathbb{R})$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]), and Theorem [[§71 The Exponential Map#^thm-71-9|§71.9]] gives $\exp(C) = \sum_{\ell \ge 0} C^\ell/\ell!$.
+> *The exponential is the series.* For $G = \mathrm{GL}(2, \mathbb{R})$, $\mathfrak{g} = \operatorname{Mat}(2, \mathbb{R})$ (Example [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|§60.1]]), and Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]] gives $\exp(C) = \sum_{\ell \ge 0} C^\ell/\ell!$.
 >
 > *$\exp(A)\exp(B)$.* $A^2 = B^2 = 0$, so all higher powers vanish and $\exp(A) = I + A$, $\exp(B) = I + B$:
 >
@@ -349,22 +349,22 @@ This explains the name: it is an exponential law. In particular $\exp(0) = e$ an
 > [!remark]- Connections
 > - Ordinary differential equations: $x(t) = e^{tA}x_0$ solves $x' = Ax$ — [[Matrix Exponential Solution]]. Here the same series is the integral curve of the left-invariant field $\mathbf{X}^A_g = gA$ on $\mathrm{GL}(n, \mathbb{R})$, i.e. the solution of the matrix equation $\gamma' = \gamma A$, $\gamma(0) = I$.
 
-*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^thm-71-9|§71.9]]
+*Uses:* [[§60 Lie Groups and Left-Invariant Vector Fields#^ex-60-1|Ex. §60.1]], [[§71 The Exponential Map#^thm-71-11|§71.11]]
 
 For many groups, but not for all groups, $\exp$ is surjective: for instance for all unitary groups, and more generally for compact connected groups, a fact that needs proof. But globally it is not one-to-one for a compact group: the exponential wraps the tangent space around the group, as $t \mapsto e^{it}$ wraps $\mathfrak{u}(1) = i\mathbb{R}$ around $\mathrm{U}(1)$. *(Not from lecture.)* Surjectivity can fail: $\exp$ takes values in the identity component, so it misses $\mathrm{O}(n) \setminus \mathrm{SO}(n)$; and even for the connected group $\mathrm{SL}(2, \mathbb{R})$ the matrix $\begin{psmallmatrix} -1 & 1 \\ 0 & -1 \end{psmallmatrix}$ is not an exponential.
 
 ![[m591-71-1.svg]]
 
-*(Not from lecture; figure added.)* Wrapping the tangent space around the group, for $G = \mathrm{U}(1)$: $\mathfrak{u}(1) = i\mathbb{R}$, and $\exp(ti) = e^{it}$ (Theorem [[§71 The Exponential Map#^thm-71-9|§71.9]] with $n = 1$, complex). The segment $[0, 2\pi i]$ (blue) goes once around the circle and $[-\pi i, 0]$ (red) covers the lower half again: $\exp$ is onto but not one-to-one, while near $0$ it is one-to-one, as Proposition [[§71 The Exponential Map#^prop-71-10|§71.10]] guarantees in general.
+*(Not from lecture; figure added.)* Wrapping the tangent space around the group, for $G = \mathrm{U}(1)$: $\mathfrak{u}(1) = i\mathbb{R}$, and $\exp(ti) = e^{it}$ (Theorem [[§71 The Exponential Map#^thm-71-11|§71.11]] with $n = 1$, complex). The segment $[0, 2\pi i]$ (blue) goes once around the circle and $[-\pi i, 0]$ (red) covers the lower half again: $\exp$ is onto but not one-to-one, while near $0$ it is one-to-one, as Proposition [[§71 The Exponential Map#^prop-71-12|§71.12]] guarantees in general.
 
 What is always true is the following local statement.
 
-> [!theorem] Proposition §71.10: Smoothness and the Differential at $0$
+> [!theorem] Proposition §71.12: Smoothness and the Differential at $0$
 > $\exp : \mathfrak{g} \to G$ is smooth, and $d(\exp)_0 = \mathrm{Id}_{\mathfrak{g}}$, under the identifications $T_0\mathfrak{g} = \mathfrak{g}$ (Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]) and $T_eG = \mathfrak{g}$. Hence $\exp$ is a local diffeomorphism at $0 \in \mathfrak{g} = T_eG$: it maps some open neighbourhood of $0$ diffeomorphically onto an open neighbourhood of $e$.
 >
 > *Lee: Proposition 20.8*
 
-^prop-71-10
+^prop-71-12
 
 > [!proof]+ Proof
 > *(Lecture 26. Smoothness is awkward to prove directly, but there is a neat trick. The smoothness of the field $\mathbf{V}$, not gone into in lecture, is filled in.)*
@@ -377,7 +377,7 @@ What is always true is the following local statement.
 >
 > using Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], and $T_A\mathfrak{g} = \mathfrak{g}$, by the vector space structure. In the second slot one simply puts zero.
 >
-> *Claim: $\mathbf{V}$ is smooth* (this is where the smoothness of left multiplication is used). *(Filled in.)* By Lemma [[§56 Vector Fields#^lem-56-8|§56.8]] it suffices that $\mathbf{V}h$ is smooth for every $h \in C^\infty(G \times \mathfrak{g})$. With $\iota_A : G \to G \times \mathfrak{g}$, $x \mapsto (x, A)$, Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]] gives $\mathbf{V}_{(g,A)} = (\iota_A)_{\ast}\mathbf{X}^A_g$, so
+> *Claim: $\mathbf{V}$ is smooth* (this is where the smoothness of left multiplication is used). *(Filled in.)* By Lemma [[§56 Vector Fields#^lem-56-11|§56.11]] it suffices that $\mathbf{V}h$ is smooth for every $h \in C^\infty(G \times \mathfrak{g})$. With $\iota_A : G \to G \times \mathfrak{g}$, $x \mapsto (x, A)$, Theorem [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]] gives $\mathbf{V}_{(g,A)} = (\iota_A)_{\ast}\mathbf{X}^A_g$, so
 >
 > $$
 > (\mathbf{V}h)(g, A) = \mathbf{X}^A_g\big[h(\cdot, A)\big] = d(L_g)_e(A)\big[h(\cdot, A)\big] = A\big[x \mapsto h(gx, A)\big] .
@@ -415,9 +415,9 @@ What is always true is the following local statement.
 >
 > *3. Local diffeomorphism.* $d(\exp)_0$ is bijective, so by the inverse function theorem, in the form of the proof of Theorem [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]] ($\Leftarrow$) at the single point $0$, $\exp$ restricts to a diffeomorphism from an open neighbourhood of $0$ onto an open neighbourhood of $e$.
 
-^pf-71-10
+^pf-71-12
 
-*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§56 Vector Fields#^lem-56-8|§56.8]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§71 The Exponential Map#^prop-71-2|§71.2]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]]
+*Uses:* [[§31 Tangent Vectors as Velocities of Curves#^thm-31-7|§31.7]], [[§56 Vector Fields#^lem-56-11|§56.11]], [[§60 Lie Groups and Left-Invariant Vector Fields#^def-60-1|Def. §60.1]], [[§60 Lie Groups and Left-Invariant Vector Fields#^prop-60-8|§60.8]], [[§69 Maximal Integral Curves and Flows#^thm-69-4|§69.4]], [[§31 Tangent Vectors as Velocities of Curves#^cor-31-5|§31.5]], [[§71 The Exponential Map#^prop-71-2|§71.2]], [[§35 Local Diffeomorphisms#^thm-35-2|§35.2]]
 
 **Transcription note (board 11/4).** The board writes $\exp : \mathfrak{g} \to A$ in the statement (for $G$), $\mathbf{V}_{(g,A)} \in (T_gG) \times \mathfrak{g} = T_A\mathfrak{g}$ (the space is $T_{(g,A)}(G \times \mathfrak{g})$), and the flow as $(t, g, A) \mapsto (\varphi^A_t(g), 0)$; the second component of the flow is $A$, which the field leaves unchanged, as above.
 

@@ -41,6 +41,13 @@ tags: [quantum-field-theory, level-c]
 
 ^def-c6b-3-1
 
+> [!caution] Caution: The beam density n_B is per unit volume in the box route
+> Here $n_B$ is Yu's density, the number of beam particles per unit volume ([[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]]), $[n_B] = 3$, and the flux is $j_B = n_B|\mathbf v_B|$ ([[§C6b.3 The Cross Section#^def-c6b-3-1|Def. §C6b.3.1]]). The wave-packet route follows PS and uses the same letter for the number of $B$ particles per unit transverse area that pass the target in the time $t$, $n_B = j_Bt$, $[n_B] = 2$ ([[§C6b.8 Wave Packets and the Cross Section#^cau-c6b-8-3|§C6b.8, Caution: The beam density n_B is per unit area in the wave-packet route]]): that $n_B$ is this one times $|\mathbf v_B|\,t$. PS write the volume densities $\rho_{\mathcal A}$, $\rho_{\mathcal B}$ (eq. (4.59)). The flux $j_B$ and the cross section mean the same in both routes.
+>
+> *Source: Yu §6.5.2, eq. (6.307) · PS §4.5, eq. (4.59), p. 105*
+
+^cau-c6b-3-3
+
 > [!definition] Definition §C6b.3.2: Cross Section (Operational)
 > The **cross section** $\sigma$ is the constant of proportionality in
 >
@@ -320,7 +327,7 @@ In [[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]] everything excep
 > E_AE_B\,|\mathbf v_A - \mathbf v_B| = \sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} ,
 > $$
 >
-> which is manifestly invariant. In general $\frac{1}{E_AE_B}\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = \sqrt{|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2}$, Yu's Møller velocity $v_{\rm Møl}$ ([[§C6b.3 The Cross Section#^def-c6b-3-3|Def. §C6b.3.3]]). The statement is [[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]], 1, multiplied by $E_AE_B$, and the invariant flux factor of [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]], 1, written for collinear beams: the same result in the form the course uses (the user's notes, eq. (moller)); with the Källén function it reads $\frac12\lambda^{1/2}(s, m_A^2, m_B^2)$ (★ [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|Theorem §C6b.4.3]]).
+> which is manifestly invariant. In general $\frac{1}{E_AE_B}\sqrt{(p_A\cdot p_B)^2 - m_A^2m_B^2} = \sqrt{|\mathbf v_A - \mathbf v_B|^2 - |\mathbf v_A\times\mathbf v_B|^2}$, Yu's Møller velocity $v_{\rm Møl}$ ([[§C6b.3 The Cross Section#^def-c6b-3-3|Def. §C6b.3.3]]). The statement is [[§C6b.3 The Cross Section#^thm-c6b-3-6|Theorem §C6b.3.6]], 1, multiplied by $E_AE_B$, and the invariant flux factor of [[§C6b.3 The Cross Section#^thm-c6b-3-5|Theorem §C6b.3.5]], 1, written for collinear beams: the same result in the form the course uses (the user's notes, eq. (moller)); its form with the Källén function is ★ [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-3|Theorem §C6b.4.3]], in the next section.
 >
 > *Model:* any (kinematics); *applies:* collinear beams for the first equality; any momenta for the second.
 >

@@ -296,6 +296,12 @@ Why does a spin-$\frac12$ field need four components and a set of anticommuting 
 >
 > The remark "Why not two-component spinors?" uses that parity exchanges the two copies of the Lorentz algebra:
 > - [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^thm-cb-17-13|Theorem §CB.17.13]] with [[§CB.17 The Lorentz Case II꞉ the Representations (j₊, j₋)#^der-cb-17-13|Derivation]] — parity exchanges $(j_+, j_-) \leftrightarrow (j_-, j_+)$ ([[§C3.2 The Lorentz Algebra and the Representations (j₊, j₋) of Fields#^thm-c3-2-6|Theorem §C3.2.6]]).
+>
+> The same ★ remark and the remark "Four jobs of the γ's" cite the general definitions behind their tables:
+> - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-6|Def. §CB.11.6]], [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^thm-cb-11-7|Theorem §CB.11.7]] — the Clifford algebra of a quadratic form and its universal property: a choice of Dirac matrices or Dirac maps is a homomorphism out of it.
+> - [[§CB.14 The Spin Group and the Double Cover Spin(V) → SO(V)#^def-cb-14-16|Def. §CB.14.16]] — the spinor generators $S^{\mu\nu} = \frac i4[\gamma^\mu, \gamma^\nu]$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]).
+> - [[§CB.16 The Lorentz Case I꞉ Spin(1,3), SL(2,C) and the Double Cover#^thm-cb-16-9|Theorem §CB.16.9]] — $SL(2, \mathbb C)$ is the double cover of $SO^+(1,3)$: the leftover sign of $\Lambda_{1/2}$ ([[§C5a.4 SL(2,C) and the Group Action on Spinor Space#^thm-c5a-4-3|Theorem §C5a.4.3]]).
+> - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-15|Def. §CB.13.15]] — the Dirac form $h_D(\chi, \psi) = \chi^\dagger\gamma^0\psi$, a structure added to the Clifford relation ([[§C5a.2 The Dirac Form#^def-c5a-2-1|Def. §C5a.2.1]]).
 
 > [!remark]- Connections
 > - Theorem §C5a.0.1 and Dirac ⇒ Klein–Gordon are the two directions of one equivalence: the Clifford relation is exactly the condition for a first-order factor of the Klein–Gordon operator — [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation#^thm-c5a-0-1|Theorem §C5a.0.1]], [[§C5a.7 The Dirac Equation and Its Lagrangian#^thm-c5a-7-8|Theorem §C5a.7.8]].

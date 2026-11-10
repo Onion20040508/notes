@@ -19,9 +19,17 @@ tags: [functional-analysis, math556]
 ^prop-16-1
 
 > [!proof]+ Proof
-> Recalled without proof in lecture; the standard argument is via the [[§16 Means and Young's Inequality#^lem-16-2|elementary inequality below]] or the discriminant of $t \mapsto \|x + ty\|^2$. See the [[Hölder's Inequality|MATH 551 notes]].
+> Recalled without proof in lecture. The inequality is the case $p = q = 2$ of Hölder's inequality in $\mathbb{F}^n$ (Corollary [[§17 Hölder's Inequality for Sequences#^cor-17-2|§17.2]] in [[§17 Hölder's Inequality for Sequences|§17]], whose proof uses Young's inequality and not this proposition): by the triangle inequality for finite sums and that corollary,
+>
+> $$
+> |x \cdot y| = \Bigl| \sum_{i=1}^n x_i y_i \Bigr| \le \sum_{i=1}^n |x_i y_i| \le \|x\|_2\, \|y\|_2 = \|x\|\, \|y\|.
+> $$
+>
+> It is also the case $X = \mathbb{R}^n$, $(x, y) = x \cdot y$, of the Cauchy–Schwarz inequality in an inner product space (Theorem [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]] in [[§23 Cauchy–Schwarz and the Induced Norm|§23]]). The standard direct arguments are via the [[§16 Means and Young's Inequality#^lem-16-2|elementary inequality below]] or the discriminant of $t \mapsto \|x + ty\|^2$.
 
 ^pf-16-1
+
+*Uses:* [[§17 Hölder's Inequality for Sequences#^cor-17-2|§17.2]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]]
 
 > [!remark]- Connections
 > - Home of the inequality: [[Cauchy–Schwarz inequality|LADR 6.14]]; the $p = 2$ case of [[Hölder's Inequality|551 §34.5]].

@@ -48,7 +48,7 @@ The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] nee
 > $E_2$ is [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]], 1, with $E_{\rm cm} \to m_A$ (Yu (6.379)), and the dimensionless form of $|\mathbf p_1|$ its Step 5 (Yu (6.380)).
 >
 > **What the derivation shows.**
-> - A two-body decay at rest has no free kinematics: the energies and $|\mathbf p_1|$ are fixed numbers, and only the direction is integrated (now in the statement).
+> - A two-body decay at rest has no free kinematics: the energies and $|\mathbf p_1|$ are fixed numbers, and only the direction is integrated.
 
 ^der-c6b-6-1
 
@@ -74,12 +74,18 @@ The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] nee
 ^thm-c6b-6-2
 
 > [!derivation]- Derivation
-> **Step 1** (part 1). [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] with $n = 2$ and [[§C6b.6 Decay Kinematics#^thm-c6b-6-1|Theorem §C6b.6.1]] with $F = |\mathcal M|^2$: $\frac{1}{2m_A}\cdot\frac{|\mathbf p_1|}{16\pi^2m_A} = \frac{|\mathbf p_1|}{32\pi^2m_A^2}$ (Yu (6.382)).
->
-> **Step 2** (the width; part 2). By [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] with $n = 2$ and [[§C6b.6 Decay Kinematics#^thm-c6b-6-1|Theorem §C6b.6.1]] with $F = |\mathcal M|^2$ constant in $\Omega$:
+> **Step 1** (part 1). [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] with $n = 2$ and [[§C6b.6 Decay Kinematics#^thm-c6b-6-1|Theorem §C6b.6.1]] with $F = |\mathcal M|^2$ give
 >
 > $$
-> \Gamma = \frac{1}{S_{\rm id}}\,\frac{1}{2m_A}\int d\Omega\,\frac{|\mathbf p_1|}{16\pi^2m_A}|\mathcal M|^2 = \frac{1}{S_{\rm id}}\,\frac{1}{2m_A}\cdot4\pi\cdot\frac{|\mathbf p_1|}{16\pi^2m_A}|\mathcal M|^2 = \frac{1}{S_{\rm id}}\,\frac{|\mathbf p_1|}{8\pi m_A^2}|\mathcal M|^2
+> \Gamma = \frac{1}{S_{\rm id}}\,\frac{1}{2m_A}\int d\Pi_2\,|\mathcal M|^2 = \frac{1}{S_{\rm id}}\,\frac{1}{2m_A}\int d\Omega\,\frac{|\mathbf p_1|}{16\pi^2m_A}\,|\mathcal M|^2 = \frac{1}{S_{\rm id}}\,\frac{|\mathbf p_1|}{32\pi^2m_A^2}\int d\Omega\,|\mathcal M|^2 ,
+> $$
+>
+> with $\frac{1}{2m_A}\cdot\frac{1}{16\pi^2m_A} = \frac{1}{32\pi^2m_A^2}$ and $|\mathbf p_1|$ a fixed number taken out of the integral (Yu (6.382)).
+>
+> **Step 2** (the width; part 2). For $|\mathcal M|^2$ constant in $\Omega$, $\int d\Omega = 4\pi$ in Step 1:
+>
+> $$
+> \Gamma = \frac{1}{S_{\rm id}}\,\frac{|\mathbf p_1|}{32\pi^2m_A^2}\cdot4\pi\,|\mathcal M|^2 = \frac{1}{S_{\rm id}}\,\frac{|\mathbf p_1|}{8\pi m_A^2}|\mathcal M|^2
 > $$
 >
 > (Yu (6.383)).
@@ -124,7 +130,7 @@ The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] nee
 > (Yu (6.385)). Directly: $E_1 = E_2 = m_A/2$ and $|\mathbf p_1| = \sqrt{m_A^2/4 - m^2}$, the same.
 >
 > **What the derivation shows.**
-> - The phase-space factor vanishes like $\beta$ at threshold $m_A \to m_1 + m_2$ (now in the statement; [[§C6b.5 Decay Widths#^thm-c6b-5-8|Theorem §C6b.5.8]]).
+> - The phase-space factor vanishes like $\beta$ at threshold $m_A \to m_1 + m_2$ ([[§C6b.5 Decay Widths#^thm-c6b-5-8|Theorem §C6b.5.8]]).
 
 ^der-c6b-6-3
 
@@ -416,6 +422,12 @@ The decay formula of [[§C6b.5 Decay Widths#^thm-c6b-5-6|Theorem §C6b.5.6]] nee
 
 ![[ph-qft-c6b-6-1.svg]]
 *The Dalitz region of a three-body decay for $m_A = 4m_1 = 5m_2 = 8m_3$ (as Yu Fig. 6.7), in units of $m_A^2$: for each $s_{12}$ between $(m_1 + m_2)^2$ and $(m_A - m_3)^2$, $s_{23}$ runs from $s_{23}^{\min}$ (blue) to $s_{23}^{\max}$ (red) of Theorem §C6b.6.8; the dash-dotted lines are the extreme values of $s_{12}$ and $s_{23}$. With constant $|\mathcal M|^2$ the decay events fill the shaded region uniformly (Theorem §C6b.6.7). Added figure, computed from the limits (tools/yu-phaseB/figs/dalitz.py).*
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2 — δ of a function with a simple zero, $\delta(f) = \delta(x - x_\ast)/|f'(x_\ast)|$: the energy delta function fixes the momentum of the two-body decay (Example §C6b.6.1: the Jacobian $E_\ast/2p_\ast$) and the angle between two products of a three-body decay (Derivation §C6b.6.5, Step 4).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the plane waves at the vertex integrate to $(2\pi)^4\delta^4$, the factor taken out of the amplitude in Example §C6b.6.1, Step 5.
 
 > [!remark]- Connections
 > - Two-body decay kinematics is two-body scattering kinematics with $E_{\rm cm} = m_A$; the energies of a pair in its own rest frame (Dalitz limits) are the same formula with $E_{\rm cm} = \sqrt{s_{12}}$ — [[§C6b.4 Two-Body Scattering Kinematics#^thm-c6b-4-2|Theorem §C6b.4.2]].

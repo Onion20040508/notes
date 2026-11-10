@@ -481,6 +481,9 @@ At first order the Dyson series has a single vertex, and Yu's procedure is to **
 > Proved in CA; each line says what the physics above relies on.
 >
 > - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-3|Theorem §CA.3.3]] — the vertex integrals give momentum deltas.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]] — a delta whose argument has no zero on the mass shell vanishes there: the kinematic filter.
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — $2\ell$ legs pair in $(2\ell - 1)!!$ ways: the loops closed at a vertex.
+> - [[§CA.8 Splitting Pairings and the Exponential Formula#^thm-ca-8-4|Theorem §CA.8.4]] — the relabelling group $|G_{\mathbf n}|$ and orbit–stabilizer behind the coefficient $\frac1S$.
 
 > [!remark]- Connections
 > - The $\frac1S$ left over in a matrix element is the $\frac1S$ of correlation functions, with the particles in place of the external points — [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-1|Theorem §C6a.8.1]], [[§C6a.9 Symmetry Factors in Practice#^ex-c6a-9-1|Example §C6a.9.1]].

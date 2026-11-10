@@ -153,7 +153,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 
 ^der-c2b-1-2
 
-*Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]
+*Uses:* [[§C2a.1 Canonical Quantization of Fields#^pr-c2a-1-2|Principle §C2a.1.2]], [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-4|QM Theorem §C3.3.4]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]], [[§C2a.1 Canonical Quantization of Fields#^thm-c2a-1-3|Theorem §C2a.1.3]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]
 
 > [!caution] Caution: Equal times only
 > - The canonical relations were postulated at one instant. [[§C2b.1 Heisenberg Fields#^thm-c2b-1-1|Theorem §C2b.1.1]] extends them to every *common* time; at different times nothing has been assumed, and the answer is a theorem ([[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]]).
@@ -173,11 +173,11 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > f(x) = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\Bigl[g(p)\,e^{-ip\cdot x} + g(-p)\,e^{ip\cdot x}\Bigr]_{p^0 = E_{\mathbf p}} ,
 > $$
 >
-> the mode expansion. For the Heisenberg field, which solves the equation as an operator ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]), $g(p) = \sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]).
+> the mode expansion. For the Heisenberg field, which solves the equation as an operator ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-2|Theorem §C2b.1.2]]), $g(p) = \sqrt{2E_{\mathbf p}}\,\hat a_{\mathbf p}$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], the next theorem, derived from the Hamiltonian without this one).
 >
 > *Model:* any solution of the free Klein–Gordon equation, c-number or operator-valued; here [[§C2a.1 Canonical Quantization of Fields#^mod-c2a-1-1|Model §C2a.1.1]]; *applies:* exact, for tempered solutions, $m > 0$; the operator reading holds for the free Heisenberg field only.
 >
-> *Source: the user's PHY 513 notes, Ch. 6 §6.3 (Principle "Free fields live on the mass shell"), §6.4 · PS §2.4, eqs. (2.57)–(2.58)*
+> *Source: the user's PHY 513 notes, Ch. 6 §6.3 (Principle "Free fields live on the mass shell"), §6.4 · PS §2.4, eq. (2.47) (the on-shell mode expansion); the rule $\partial^2 + m^2 \leftrightarrow m^2 - p^2$ as in the step before eq. (2.58)*
 
 ^thm-c2b-1-3
 
@@ -297,7 +297,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 
 ^der-c2b-1-4
 
-*Uses:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-2|QM Theorem §C3.3.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]]
+*Uses:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-1|Theorem §C2a.3.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-2|Theorem §C2a.2.2]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-2|QM Theorem §C3.3.2]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]], [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]], [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-2|QM Theorem §C3.4.2]]
 
 > [!remark] Remark: What is covariant and what is not yet
 > The spatial Fourier factors have become four-dimensional plane waves, the first manifestly covariant-looking expression of the quantum theory. But the integral still runs over three momenta: $p^0$ is not a variable, it means $E_{\mathbf p}$, a square root of the integration variable. The remaining non-covariance hides there, and the invariant measure $d^3p/(2\pi)^32E_{\mathbf p}$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]) is the bookkeeping that keeps it honest. In [[§C2b.5 Green's Functions and Contours|§C2b.5]], $p^0$ becomes an integration variable, and the poles at $p^0 = \pm E_{\mathbf p}$ are the price.
@@ -326,7 +326,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > \hat\phi^+(x) = \int\frac{d^3p}{(2\pi)^3}\frac{\hat a_{\mathbf p}\,e^{-ip\cdot x}}{\sqrt{2E_{\mathbf p}}}\quad\text{(positive frequency)}, \qquad \hat\phi^- = (\hat\phi^+)^\dagger\quad\text{(negative frequency)} .
 > $$
 >
-> Then $\hat\phi^+|0\rangle = 0$, $\langle0|\hat\phi^- = 0$, and for the one-particle states $|\mathbf p\rangle$, with $p^0 = E_{\mathbf p} > 0$,
+> Then $\hat\phi^+|0\rangle = 0$, $\langle0|\hat\phi^- = 0$, and for the one-particle states $|\mathbf p\rangle$ ([[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]]), with $p^0 = E_{\mathbf p} > 0$,
 >
 > $$
 > \langle0|\hat\phi(x)|\mathbf p\rangle = e^{-ip\cdot x}, \qquad \langle\mathbf p|\hat\phi(x)|0\rangle = e^{ip\cdot x} .
@@ -365,7 +365,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 *Uses:* [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^pr-c2a-3-3|Principle §C2a.3.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-1|Def. §C2a.4.1]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]
 
 > [!remark] Remark: Negative frequency is creation, not negative energy
-> A complete set of solutions of the Klein–Gordon equation has both $e^{-iEt}$ and $e^{+iEt}$, and a Hermitian field needs both. Read as single-particle wave functions they would be states of energy $\pm E$, the old difficulty of relativistic wave mechanics ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-2|QM Theorem §C13.1.2]]). In the field, the coefficient of the positive-frequency solution is the operator that *destroys* a quantum, and $\langle0|\hat\phi|\mathbf p\rangle = e^{-ip\cdot x}$ is a positive-energy wave function; the coefficient of the negative-frequency solution *creates* one. No state of negative energy exists in the spectrum ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]]). Wave and particle sit in one formula: the plane waves are the wave aspect, the operator coefficients with $[\hat a, \hat a^\dagger] = (2\pi)^3\delta^3$ the particle aspect. Notation: $\hat\phi^{(+)}$ in PS and Yu is the positive-frequency, annihilating part, as here.
+> A complete set of solutions of the Klein–Gordon equation has both $e^{-iEt}$ and $e^{+iEt}$, and a Hermitian field needs both. Read as single-particle wave functions they would be states of energy $\pm E$, the old difficulty of relativistic wave mechanics ([[§C13.1★ Relativistic Wave Equations and the Klein–Gordon Field#^thm-c13-1-2|QM Theorem §C13.1.2]]). In the field, the coefficient of the positive-frequency solution is the operator that *destroys* a quantum, and $\langle0|\hat\phi|\mathbf p\rangle = e^{-ip\cdot x}$ is a positive-energy wave function; the coefficient of the negative-frequency solution *creates* one. No state of negative energy exists in the spectrum ([[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]]). Wave and particle sit in one formula: the plane waves are the wave aspect, the operator coefficients with $[\hat a, \hat a^\dagger] = (2\pi)^3\delta^3$ the particle aspect. Notation: PS's $\phi^+$ and Yu's $\phi^{(+)}$ are the positive-frequency, annihilating part, as here.
 >
 > *Source: the user's PHY 513 notes, Ch. 5 §5.3 · PS §2.4, p. 26*
 
@@ -378,7 +378,7 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 > \langle\Omega|\hat\phi_H(x)|\mathbf p\rangle = \sqrt Z\,e^{-ip\cdot x} , \qquad p^0 = \sqrt{\mathbf p^2 + m_{\rm ph}^2} ,
 > $$
 >
-> with $m_{\rm ph}$ the physical mass; the $x$-dependence is translation invariance, $\langle\Omega|e^{i\hat P\cdot x} = \langle\Omega|$. The factor $\sqrt Z$ per external particle is what the amputation rule leaves out at lowest order ([[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]; the LSZ formula, Lecture 16).
+> with $m_{\rm ph}$ the physical mass; the $x$-dependence is translation invariance: $\hat\phi_H(x) = e^{i\hat P\cdot x}\hat\phi_H(0)e^{-i\hat P\cdot x}$, $\hat{\mathbf P}|\Omega\rangle = 0$, and the vacuum energy $E_0$ of [[§C6a.4 The Interacting Vacuum and the Two-Point Function#^def-c6a-4-1|Def. §C6a.4.1]] cancels between $\langle\Omega|$ and $|\mathbf p\rangle$ (energy $E_0 + p^0$). The factor $\sqrt Z$ per external particle is what the amputation rule leaves out at lowest order ([[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]; the LSZ formula, deferred by the course to the second semester, QFT C10 (planned)).
 >
 > *Source: Yu §10.2, p. 447, eqs. (10.64)–(10.65) ($\langle p|\phi(0)|0\rangle = \sqrt Z$ with the phase set to 1, then $\langle p|\phi(x)|0\rangle = \sqrt Z\,e^{ip\cdot x}$; Yu's $|0\rangle$ is $|\Omega\rangle$, [[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]) · Yu §10.5.3, eq. (10.235)*
 
@@ -439,14 +439,24 @@ The free field of [[§C2a.2 Mode Expansion and the Mode Algebra|§C2a.2]]–[[§
 
 ^rem-c2b-1-4
 
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^def-ca-2-2|Def. §CA.2.2]] — δ acts on test functions: the deltas of the Heisenberg equations and of the mode algebra are read after smearing.
+> - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]] (derivatives moved onto the test function) and [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]] (integration by parts against δ) give $\partial_t\hat\phi = \hat\pi$ and the $\nabla^2\hat\phi$ of the Heisenberg equations; [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] licenses the $t$-derivative under the smeared mode integral.
+> - [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] (operator-valued distributions) is what the Heisenberg field is: Theorem §C2b.1.6 smears it over spacetime, the four-dimensional version of the time-slice smearing of [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]].
+> - [[§CA.2 Generalized Functions#^thm-ca-2-2|Theorem §CA.2.2]], [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1 — division by the smooth nonzero factor $m^2 - p^2$ off the shell, and the form of a distribution supported on the shell (Theorem §C2b.1.3).
+> - [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]], 2, [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]], 1 — $\delta(p^2 - m^2)$ composed with the shell: the $p^0$ integral leaves $d^3p/2E_{\mathbf p}$ at $p^0 = \pm E_{\mathbf p}$.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^def-ca-3-1|Def. §CA.3.1]] — the spacetime Fourier convention $\tilde f(p) = \int d^4x\,f(x)\,e^{ip\cdot x}$ of the smeared field (Theorem §C2b.1.6).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]] (the transform maps $\mathcal S$ to $\mathcal S$) supplies the on-shell decay of $\tilde f$ that makes $\hat\phi(f)|0\rangle$ normalizable; the same decay makes the particle number of a source finite ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]]).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] (derivative rule) turns the Klein–Gordon equation into "the field ignores off-shell test functions", Theorem §C2b.1.6, 3.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]], 3 — the derivative rule in $\mathcal S'$: the Klein–Gordon equation becomes $(m^2 - p^2)\tilde f = 0$ for a tempered solution.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] (exchanging the $x$- and $p$-integrals) is the step that turns the formal mode expansion into $\hat\phi(f)$, valid because the coefficients are smeared.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] (relabelling $\mathbf p \to -\mathbf p$) rewrites the Schrödinger field in Step 7 of Derivation §C2b.1.4.
+> - [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|Theorem §CA.6.7]], 2 — homogeneous solutions of the Klein–Gordon operator have their transform on the mass shell (Theorem §C2b.1.3).
+
 > [!remark]- Connections
 > - [[§C2b.1 Heisenberg Fields#^def-c2b-1-1|Def. §C2b.1.1]] is the time component of a four-dimensional statement, $\hat\phi(x) = e^{i\hat P\cdot x}\hat\phi(0)e^{-i\hat P\cdot x}$, equivalently $[\hat\phi, \hat P^\mu] = i\partial^\mu\hat\phi$: translation invariance on the Hilbert space — [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]].
 > - Theorem §C2b.1.4 is the field version of the oscillator in the Heisenberg picture, $\hat a(t) = \hat a\,e^{-i\omega t}$: [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-2|QM Theorem §C3.4.2]]; the same phase makes a coherent state stay coherent in [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-5|Theorem §C2a.6.5]].
 > - The Heisenberg field is the operator whose vacuum correlations are the two-point functions: the Wightman function is built from it in [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]], and its commutator at unequal times is the commutator function of [[§C2b.4 Microcausality and the Commutator Function#^thm-c2b-4-10|Theorem §C2b.4.10]]; the positive- and negative-frequency parts of [[§C2b.1 Heisenberg Fields#^thm-c2b-1-5|Theorem §C2b.1.5]] are what normal ordering and contractions separate — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-6|Theorem §C2b.6.6]].
 > - A free field has its Fourier transform on the mass shell ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-3|Theorem §C2b.1.3]]), while a Green's function must have off-shell components ([[§C2b.5 Green's Functions and Contours#^thm-c2b-5-2|Theorem §C2b.5.2]]): the pole problem of [[§C2b.5 Green's Functions and Contours|§C2b.5]] is the clash of the two. [[§CA.6 Boundary Values, iε Limits and Fundamental Solutions#^thm-ca-6-7|Theorem §CA.6.7]], [[§CA.2 Generalized Functions#^thm-ca-2-6|Theorem §CA.2.6]] and [[§CA.2 Generalized Functions#^thm-ca-2-7|Theorem §CA.2.7]] (homogeneous solutions, composition of δ) give the on-shell form.
-> - [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] (operator-valued distributions) is what the Heisenberg field is: Theorem §C2b.1.6 smears it over spacetime, the four-dimensional version of the time-slice smearing of [[§C2a.1 Canonical Quantization of Fields#^def-c2a-1-1|Def. §C2a.1.1]].
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]] (the transform maps $\mathcal S$ to $\mathcal S$) supplies the on-shell decay of $\tilde f$ that makes $\hat\phi(f)|0\rangle$ normalizable; the same decay makes the particle number of a source finite ([[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-4|Theorem §C2b.8.4]]).
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-6|Theorem §CA.3.6]] (exchanging the $x$- and $p$-integrals) is the step that turns the formal mode expansion into $\hat\phi(f)$, valid because the coefficients are smeared.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] (relabelling $\mathbf p \to -\mathbf p$) rewrites the Schrödinger field in Step 7 of Derivation §C2b.1.4.
-> - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]] (derivatives moved onto the test function) and [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]] (integration by parts against δ) give $\partial_t\hat\phi = \hat\pi$ and the $\nabla^2\hat\phi$ of the Heisenberg equations; [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] licenses the $t$-derivative under the smeared mode integral.
-> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-4|Theorem §CA.3.4]] (derivative rule) turns the Klein–Gordon equation into "the field ignores off-shell test functions", Theorem §C2b.1.6, 3.

@@ -86,7 +86,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 >
 > **2. Powers.** $[\hat a_{\mathbf p}, \hat K^n] = \sum_{j=0}^{n-1}\hat K^j\,[\hat a_{\mathbf p}, \hat K]\,\hat K^{n-1-j} = n\hat K^{n-1}[\hat a_{\mathbf p}, \hat K]$, because the c-number commutes with $\hat K$. So $\hat a_{\mathbf p}$ acts on functions of $\hat K$ as $\frac{\eta_{\mathbf p}}{\sqrt{2E_{\mathbf p}}}\frac{d}{d\hat K}$.
 >
-> **3. The exponential.** Summing the series term by term, $[\hat a_{\mathbf p}, e^{\hat K}] = \sum_{n\ge1}\frac{nK^{n-1}}{n!}[\hat a_{\mathbf p}, \hat K] = \frac{\eta_{\mathbf p}}{\sqrt{2E_{\mathbf p}}}\,e^{\hat K}$.
+> **3. The exponential.** Summing the series term by term, $[\hat a_{\mathbf p}, e^{\hat K}] = \sum_{n\ge1}\frac{n\hat K^{n-1}}{n!}[\hat a_{\mathbf p}, \hat K] = \frac{\eta_{\mathbf p}}{\sqrt{2E_{\mathbf p}}}\,e^{\hat K}$.
 >
 > **4. Act on the vacuum.** $\hat a_{\mathbf p}e^{\hat K}|0\rangle = [\hat a_{\mathbf p}, e^{\hat K}]|0\rangle + e^{\hat K}\hat a_{\mathbf p}|0\rangle = \frac{\eta_{\mathbf p}}{\sqrt{2E_{\mathbf p}}}e^{\hat K}|0\rangle$; multiplying by the constant $e^{-\bar N/2}$ gives the eigenvalue equation. ⚑ By-product: the eigenvalue is complex; $\hat a_{\mathbf p}$ is not Hermitian, and its eigenvalue carries the amplitude and the phase of the classical mode → [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]].
 >
@@ -150,7 +150,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 *Uses:* [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-2|Theorem §C2a.6.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-6|Theorem §C2a.2.6]], [[§C3.3 The Schrödinger and Heisenberg Pictures#^thm-c3-3-2|QM Theorem §C3.3.2]], [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-3|QM Theorem §C3.4.3]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]]
 
 > [!theorem] Theorem §C2a.6.4: The Mean Field Is a Classical Solution
-> With the Heisenberg field $\hat\phi(x)$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]]), the mean field
+> With the Heisenberg field $\hat\phi(x)$ ([[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], in the next chapter; its mode phases $\hat a_{\mathbf p}e^{-iE_{\mathbf p}t}$ are derived in place in Derivation §C2a.6.5, step 1), the mean field
 >
 > $$
 > \bar\phi(x) \equiv \langle\{\eta\}|\hat\phi(x)|\{\eta\}\rangle = \int\frac{d^3p}{(2\pi)^3\,2E_{\mathbf p}}\Bigl(\eta_{\mathbf p}\,e^{-ip\cdot x} + \eta^*_{\mathbf p}\,e^{ip\cdot x}\Bigr)\Big|_{p^0 = E_{\mathbf p}}
@@ -197,7 +197,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 ^thm-c2a-6-5
 
 > [!derivation]- Derivation
-> **1. Evolve one creator.** [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], 1 (derived there from the ladder relation $[\hat H, \hat a^\dagger_{\mathbf p}] = E_{\mathbf p}\hat a^\dagger_{\mathbf p}$ of [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]]) gives $e^{i\hat Ht}\hat a^\dagger_{\mathbf p}e^{-i\hat Ht} = \hat a^\dagger_{\mathbf p}e^{iE_{\mathbf p}t}$ for every real $t$; replacing $t$ by $-t$,
+> **1. Evolve one creator.** By the ladder relation $[\hat H, \hat a^\dagger_{\mathbf p}] = E_{\mathbf p}\hat a^\dagger_{\mathbf p}$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]]), $\frac{d}{dt}\bigl(e^{i\hat Ht}\hat a^\dagger_{\mathbf p}e^{-i\hat Ht}\bigr) = i\,e^{i\hat Ht}[\hat H, \hat a^\dagger_{\mathbf p}]e^{-i\hat Ht} = iE_{\mathbf p}\,e^{i\hat Ht}\hat a^\dagger_{\mathbf p}e^{-i\hat Ht}$, with the value $\hat a^\dagger_{\mathbf p}$ at $t = 0$; so $e^{i\hat Ht}\hat a^\dagger_{\mathbf p}e^{-i\hat Ht} = \hat a^\dagger_{\mathbf p}e^{iE_{\mathbf p}t}$ for every real $t$ (the home of this statement, with the Heisenberg field it gives, is [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], 1, in the next chapter); replacing $t$ by $-t$,
 >
 > $$
 > e^{-i\hat Ht}\hat a^\dagger_{\mathbf p}e^{i\hat Ht} = \hat a^\dagger_{\mathbf p}\,e^{-iE_{\mathbf p}t} .
@@ -207,10 +207,10 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 >
 > **2. Evolve the exponential.** Conjugation by $e^{-i\hat Ht}$ preserves products and sums, so $e^{-i\hat Ht}e^{\hat K}e^{i\hat Ht} = \exp\bigl(e^{-i\hat Ht}\hat Ke^{i\hat Ht}\bigr) = \exp\int\frac{d^3k}{(2\pi)^3}\frac{\eta_{\mathbf k}e^{-iE_{\mathbf k}t}\hat a^\dagger_{\mathbf k}}{\sqrt{2E_{\mathbf k}}}$.
 >
-> **3. The vacuum does not move.** $:\!\hat H\!:|0\rangle = 0$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]), so $e^{i\hat Ht}|0\rangle = |0\rangle$ and
+> **3. The vacuum does not move.** $:\!\hat H\!:|0\rangle = 0$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]), so $e^{i:\!\hat H\!:\,t}|0\rangle = |0\rangle$ and, with $:\!\hat H\!:$ in place of $\hat H$ in steps 1–2,
 >
 > $$
-> e^{-i\hat Ht}|\{\eta\}\rangle = e^{-\bar N/2}\,e^{-i\hat Ht}e^{\hat K}e^{i\hat Ht}\,|0\rangle = e^{-\bar N/2}\exp\Bigl\{\int\frac{d^3k}{(2\pi)^3}\frac{\eta_{\mathbf k}e^{-iE_{\mathbf k}t}\,\hat a^\dagger_{\mathbf k}}{\sqrt{2E_{\mathbf k}}}\Bigr\}|0\rangle .
+> e^{-i:\!\hat H\!:\,t}|\{\eta\}\rangle = e^{-\bar N/2}\,e^{-i:\!\hat H\!:\,t}e^{\hat K}e^{i:\!\hat H\!:\,t}\,|0\rangle = e^{-\bar N/2}\exp\Bigl\{\int\frac{d^3k}{(2\pi)^3}\frac{\eta_{\mathbf k}e^{-iE_{\mathbf k}t}\,\hat a^\dagger_{\mathbf k}}{\sqrt{2E_{\mathbf k}}}\Bigr\}|0\rangle .
 > $$
 >
 > ⚑ By-product: with the unordered $\hat H$ the state would acquire the global phase $e^{-iE_0t}$, unobservable → [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]] (a c-number).
@@ -225,7 +225,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 
 ^der-c2a-6-5
 
-*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]]
+*Uses:* [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]], [[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-4|Theorem §C2a.6.4]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-7|Theorem §C2a.3.7]], [[§C2a.3 Energy, Momentum and the Zero-Point Energy#^thm-c2a-3-4|Theorem §C2a.3.4]]
 
 > [!theorem] Theorem §C2a.6.6: Poisson Number Statistics
 > The particle number in $|\{\eta\}\rangle$ is Poisson distributed, $P(n) = e^{-\bar N}\bar N^n/n!$, with
@@ -327,7 +327,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 >
 > **3. Fluctuations.** Insert $\hat D\hat D^\dagger = 1$ as in [[§C2a.6 Coherent States and the Classical Field#^der-c2a-6-7|Derivation §C2a.6.7]], step 2: $\langle\{\eta\}|(\hat\phi_t(f) - \bar\phi_t(f))^2|\{\eta\}\rangle = \langle0|\bigl(\hat D^\dagger(\hat\phi_t(f) - \bar\phi_t(f))\hat D\bigr)^2|0\rangle = \langle0|\hat\phi_t(f)^2|0\rangle$. Every operator here is a smeared field, so both sides are numbers.
 >
-> **4. The vacuum value.** $\hat a(g_t)|0\rangle = 0$, so $\langle0|\hat\phi_t(f)^2|0\rangle = \|\hat a^\dagger(g_t)|0\rangle\|^2 = \int\frac{d^3p}{(2\pi)^3}|g_t|^2 = \int d\mu\,|\tilde f|^2$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], 1): the phase $e^{iE_{\mathbf p}t}$ has modulus 1, so $t$ drops out, and this is [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]] at time $t$. For the bound of part 2, Cauchy–Schwarz in $L^2(d\mu)$ gives $|c| \le (\int d\mu\,|\eta|^2)^{1/2}(\int d\mu\,|\tilde f|^2)^{1/2}$, and $\int d\mu\,|\eta|^2 = \bar N$ ([[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]]).
+> **4. The vacuum value.** $\hat a(g_t)|0\rangle = 0$, so $\langle0|\hat\phi_t(f)^2|0\rangle = \|\hat a^\dagger(g_t)|0\rangle\|^2 = \int\frac{d^3p}{(2\pi)^3}|g_t|^2 = \int d\mu\,|\tilde f|^2$ ([[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], 1): the phase $e^{iE_{\mathbf p}t}$ has modulus 1, so $t$ drops out, and this is [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]] at time $t$. For the bound of part 2, Cauchy–Schwarz in $L^2(d\mu)$ ([[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|556 Thm. §23.1]]) gives $|c| \le (\int d\mu\,|\eta|^2)^{1/2}(\int d\mu\,|\tilde f|^2)^{1/2}$, and $\int d\mu\,|\eta|^2 = \bar N$ ([[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]]).
 >
 > **5. Back to points.** Pairing the identity of [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-7|Theorem §C2a.6.7]] (at equal times) with $f(\mathbf x)f(\mathbf y)$ gives part 1 ([[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]]: both sides are kernels of the same bilinear form). At $\mathbf y = \mathbf x$ without smearing both sides are $\langle0|\hat\phi(x)^2|0\rangle$, the number that diverges like $\Lambda^2/8\pi^2$ ([[§C2a.4 Particles and Relativistic Normalization#^der-c2a-4-7|Derivation §C2a.4.7]], step 4).
 >
@@ -338,7 +338,7 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 
 ^der-c2a-6-8
 
-*Uses:* [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-3|Theorem §C2a.6.3]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-7|Theorem §C2a.6.7]], [[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]]
+*Uses:* [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-3|Theorem §C2a.6.3]], [[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-7|Theorem §C2a.6.7]], [[§C2a.6 Coherent States and the Classical Field#^def-c2a-6-1|Def. §C2a.6.1]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]], [[§C2b.1 Heisenberg Fields#^thm-c2b-1-4|Theorem §C2b.1.4]], [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|556 Thm. §23.1]]
 
 ![[ph-qft-c2-4-1.svg]]
 *One mode of the field, $\hat x = (\hat a + \hat a^\dagger)/\sqrt2$, in two states with mean occupation 4 (computed). Left: the number distribution, Poisson for the coherent state with $\eta/\sqrt{2E} = 2$, a single bar for $|4\rangle$ (Theorem §C2a.6.6). Right: $\langle \hat x\rangle \pm \Delta \hat x$ against $\omega t$. The coherent state oscillates like a classical wave with the vacuum's spread $1/\sqrt2$ (Theorems §C2a.6.4, §C2a.6.5, §C2a.6.7); the number state has no oscillating field at all (Theorem §C2a.6.1), only a larger spread $\sqrt{4 + \frac12}$ centred on zero. Right panel adapted from the user's PHY 513 notes, Ch. 4.*
@@ -357,6 +357,16 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 
 ^rem-c2a-6-2
 
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — differentiation under the integral: the mean field obeys the Klein–Gordon equation when $E_{\mathbf p}|\eta_{\mathbf p}|$ is integrable.
+> - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]] — the derivative moved onto the test function: the same equation as an identity of distributions when $\eta$ decays slowly.
+> - [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] — $\hat a^\dagger_{\mathbf p}$ is an operator-valued distribution; $\hat K = \hat a^\dagger(\eta/\sqrt{2E})$ is a smeared creator, an operator.
+> - [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]] — the kernel theorem: the pointwise identity of Theorem §C2a.6.7 stands for the smeared one of Theorem §C2a.6.8.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]], 1 — $\tilde f \in \mathcal S$, so the smeared fluctuation $\int d\mu\,|\tilde f|^2$ is finite.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]] — the transform is injective on $\mathcal S'$: the amplitudes $\eta_{\mathbf p}$ of the mean field are unique.
+
 > [!remark]- Connections
 > - A classical source coupled linearly to the field, $\mathcal L \ni j(x)\hat\phi(x)$, turns the vacuum into exactly such a coherent state, with $\eta_{\mathbf p} \propto \tilde j(p)$ on shell, and the Poisson distribution of Theorem §C2a.6.6 is the distribution of the number of particles produced — [[§C2b.8 Particle Production by a Classical Source#^thm-c2b-8-2|Theorem §C2b.8.2]].
 > - The single-oscillator theory: coherent states as eigenstates of $\hat a$ and as displaced ground states, their Poisson statistics and their rigid motion in phase space — [[§B4.3 Coherent States#^def-b4-3-1|QM Def. §B4.3.1]], [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^def-c3-4-1|QM Def. §C3.4.1]], [[§C3.4 The Harmonic Oscillator and Coherent States Revisited#^thm-c3-4-3|QM Theorem §C3.4.3]].
@@ -364,6 +374,6 @@ A state of $10^{20}$ quanta of definite number has exactly zero average field: w
 > - A superposition of two coherent states loses its coherence when coupled to an environment, which is one reason macroscopic fields look classical rather than like superpositions of classical fields — [[§C11.5★ Open Quantum Systems and Decoherence#^ex-c11-5-2|QM Example §C11.5.2]].
 > - The same construction for the photon field gives the classical electromagnetic wave as a coherent state of photons, the basis of quantum optics — the photon mode algebra and Fock space are in [[§C4.8 Covariant Quantization꞉ Modes and the Indefinite Mode Algebra#^thm-c4-8-11|Theorem §C4.8.11]] and [[§C4.9 Energy, Momentum and the Indefinite Fock Space#^pr-c4-9-5|Principle §C4.9.5]]; the coherent states themselves are not yet written (QFT C8, planned).
 > - A coherent state is the exponential of a smeared creator, $\hat K = \hat a^\dagger(\eta/\sqrt{2E})$, which is why its eigenvalue relation and norm involve functions and not distributions; "finite $\bar N$" is "$\eta/\sqrt{2E}$ square integrable" — [[§C2a.2 Mode Expansion and the Mode Algebra#^def-c2a-2-2|Def. §C2a.2.2]], [[§C2a.2 Mode Expansion and the Mode Algebra#^thm-c2a-2-7|Theorem §C2a.2.7]], [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]].
-> - Fluctuations at a point are the coincident value of a distribution; smeared, they are the finite number $\int d\mu\,|\tilde f|^2$, and the kernel theorem is what lets the pointwise identity stand for the smeared one ([[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-8|Theorem §C2a.6.8]]) — [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]]; the bound on the smeared mean field is Cauchy–Schwarz in $L^2$ of the invariant measure — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]].
+> - Fluctuations at a point are the coincident value of a distribution; smeared, they are the finite number $\int d\mu\,|\tilde f|^2$, and the kernel theorem is what lets the pointwise identity stand for the smeared one ([[§C2a.6 Coherent States and the Classical Field#^thm-c2a-6-8|Theorem §C2a.6.8]]) — [[§CA.2 Generalized Functions#^thm-ca-2-11|Theorem §CA.2.11]], [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-7|Theorem §C2a.4.7]]; the bound on the smeared mean field is Cauchy–Schwarz in $L^2$ of the invariant measure — [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|556 Thm. §23.1]]; $\int d\mu\,|\tilde f|^2$ is finite because $\tilde f \in \mathcal S$ — [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-1|Theorem §CA.3.1]].
 > - The mean field obeys the Klein–Gordon equation by differentiation under the integral, or as a distribution when $\eta$ decays slowly; its amplitudes are unique because the transform is injective on $\mathcal S'$ — [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]], [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-2|Theorem §CA.3.2]].
 > - The vacuum fluctuation that a coherent state carries is the two-point function $D_W(x - y) = \langle0|\hat\phi(x)\hat\phi(y)|0\rangle$ — [[§C2b.2 The Wightman Function#^def-c2b-2-1|Def. §C2b.2.1]].

@@ -194,13 +194,16 @@ The whole proof is a single computation: extend $\ell$ by one dimension while ke
 
 ^thm-6-2
 
+> [!proof]+ Proof (not given in this course)
+> Zorn's lemma is equivalent to the axiom of choice and is taken as an axiom; no proof is given.
+
+^pf-6-2
+
 > [!remark]- Connections
 > - Also used for complements, [[§2 Quotient Spaces and Complements#^prop-2-4|§2.4]], and for orthonormal bases, [[§28 Existence of Orthonormal Bases and Separability#^thm-28-1|§28.1]]; the pattern: [[Functional Analysis Problem-Solving Techniques#^rem-t3|Technique 3]].
 
-Zorn's lemma is equivalent to the axiom of choice and is taken as an axiom; no proof is given. The partial-order argument was not carried out in lecture; it is written out here.
-
 > [!proof]+ Proof of Theorem [[§5 Statement and Motivation#^thm-5-3|§5.3]]
-> If $Y = X$ there is nothing to do, so assume $Y \subsetneq X$. Let $P$ be the set of pairs $(Z, \ell_Z)$ with $Y \subset Z \subset X$ a linear subspace and $\ell_Z : Z \to \mathbb{R}$ a linear functional extending $\ell$ with $\ell_Z \le p$ on $Z$, ordered by extension: $(Z, \ell_Z) \le (Z', \ell_{Z'})$ iff $Z \subset Z'$ and $\ell_{Z'}|_Z = \ell_Z$. Then $(Y, \ell) \in P$, so $P \neq \varnothing$.
+> (The partial-order argument was not carried out in lecture; it is written out here.) If $Y = X$ there is nothing to do, so assume $Y \subsetneq X$. Let $P$ be the set of pairs $(Z, \ell_Z)$ with $Y \subset Z \subset X$ a linear subspace and $\ell_Z : Z \to \mathbb{R}$ a linear functional extending $\ell$ with $\ell_Z \le p$ on $Z$, ordered by extension: $(Z, \ell_Z) \le (Z', \ell_{Z'})$ iff $Z \subset Z'$ and $\ell_{Z'}|_Z = \ell_Z$. Then $(Y, \ell) \in P$, so $P \neq \varnothing$.
 >
 > *Chains have upper bounds.* Given a chain $\{(Z_i, \ell_i)\}_{i \in I}$, let $Z^{\ast} = \bigcup_i Z_i$ and define $\ell^{\ast}(z) = \ell_i(z)$ for any $i$ with $z \in Z_i$. Since the chain is nested, any two elements of $Z^{\ast}$ lie in a common $Z_i$, so $Z^{\ast}$ is a subspace and $\ell^{\ast}$ is well defined and linear; $\ell^{\ast} \le p$ on $Z^{\ast}$ because it holds on each $Z_i$. Thus $(Z^{\ast}, \ell^{\ast}) \in P$ is an upper bound.
 >
@@ -211,6 +214,6 @@ Zorn's lemma is equivalent to the axiom of choice and is taken as an axiom; no p
 *Uses:* [[§6 Proof of the Hahn–Banach Theorem#^thm-6-2|§6.2]], [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1|§6.1]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
 
 > [!remark] Remark
-> Lemma [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1|§6.1]] contains all the analysis; Zorn's lemma only says “repeat until finished” in a way that is legitimate when $X$ has uncountable dimension. In [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] normed spaces (later) the extension can instead be built by ordinary induction along a countable dense sequence.
+> Lemma [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1|§6.1]] contains all the analysis; Zorn's lemma only says “repeat until finished” in a way that is legitimate when $X$ has uncountable dimension. In a [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]] normed space, with $p$ a multiple of the norm, the extension can instead be built without Zorn's lemma: by ordinary induction along a countable dense sequence, applying Lemma [[§6 Proof of the Hahn–Banach Theorem#^lem-6-1|§6.1]] once for each term, followed by extension by continuity to the closure. This alternative is not carried out in these notes; the normed version of the theorem (Theorem [[§36 Duality in Normed Spaces#^thm-36-1|§36.1]]) is deduced from Theorem [[§5 Statement and Motivation#^thm-5-3|§5.3]].
 
 ^rem-6-4

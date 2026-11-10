@@ -203,7 +203,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, and 
 
 > [!remark]- Connections
 > - The group in 493: [[§3 Basic Examples of Groups#^def-3-7|493 Def. §3.7]]; $\mathrm{SL}_n = \ker\det$, [[§15 Homomorphisms#^ex-15-1|493 Ex. §15.1]].
-> - $\mathrm{SL}(n,\mathbb{R})$ is a manifold: [[§12 The Classical Groups Are Topological Manifolds#^cor-12-5|§12.5]].
+> - $\mathrm{SL}(n,\mathbb{R})$ is a manifold: [[§12 The Classical Groups Are Topological Manifolds#^cor-12-4|§12.4]].
 
 > [!definition] Definition §11.7: Orthogonal Group
 > The **orthogonal group** is
@@ -221,7 +221,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, and 
 > - $\mathrm{O}(n)$ is a manifold of dimension $\tfrac{n(n-1)}{2}$: [[§23 The Orthogonal and Unitary Groups as Smooth Manifolds#^ex-23-1|Ex. §23.1]].
 > - Used in Relativity: the Lorentz group $O(1, 3)$, the matrices preserving the form $\eta$, and its four pieces — [[§B1.2 Lorentz Transformations and the Lorentz Group#^thm-b1-2-4|REL Theorem §B1.2.4]].
 
-> [!theorem] Proposition §11.5: Equivalent Description of $\mathrm{O}(n,\mathbb{R})$
+> [!theorem] Proposition §11.6: Equivalent Description of $\mathrm{O}(n,\mathbb{R})$
 > For $g \in \mathrm{GL}(n,\mathbb{R})$ the following are equivalent:
 > - (i) $g \in \mathrm{O}(n,\mathbb{R})$;
 > - (ii) $g^T g = I$;
@@ -231,7 +231,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, and 
 >
 > *Lee: Example 7.27*
 
-^prop-11-5
+^prop-11-6
 
 > [!proof]+ Proof
 > *(Stated in Lecture 3 in the form $g \in \mathrm{O}(n) \iff g^{-1} = g^{\mathsf T}$; filled in.)* Writing the dot product as $x \cdot y = x^T y$, we have $(gx)\cdot(gy) = x^T g^T g\, y$. If $g^T g = I$ this equals $x^T y$, so (ii) $\Rightarrow$ (i). Conversely, if (i) holds, take $x = e_i$, $y = e_j$: then $(g^T g)_{ij} = e_i^T g^T g\, e_j = e_i \cdot e_j = \delta_{ij}$, so $g^T g = I$. *(Computed; not from lecture.)* Since $e_i^T g^T g\, e_j = (ge_i) \cdot (ge_j)$ and $ge_j = g_j$ is the $j$-th column of $g$, written out
@@ -247,7 +247,7 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, and 
 >
 > so $g^T g = I$ says exactly that the columns of $g$ are orthonormal. (ii) $\iff$ (iii) since for square matrices a one-sided inverse is two-sided. Finally $1 = \det(I) = \det(g^T g) = \det(g^T)\det(g) = \det(g)^2$.
 
-^pf-11-5
+^pf-11-6
 
 *Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-7|Def. §11.7]], [[§10 Invertibility and Isomorphisms#^ladr-3-68|LADR 3.68]], [[§37 Determinants#^ladr-9-49|LADR 9.49]], [[§37 Determinants#^ladr-9-56|LADR 9.56]]
 
@@ -293,20 +293,20 @@ The disconnectedness of $\mathrm{GL}(n,\mathbb{R})$ and of $\mathrm{O}(n)$, and 
 > [!remark]- Connections
 > - $\mathbb{C} \cong \mathbb{R}^2$ in 590: [[§10 Continuous Functions#^ex-10-5|590 Ex. §10.5]].
 
-> [!definition] Definition §11.10: Unitary Group
+> [!definition] Definition §11.11: Unitary Group
 > The **unitary group**, a subgroup of $\mathrm{GL}(n,\mathbb{C})$ ([[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Definition §11.9]]), is
 >
 > $$
 > \mathrm{U}(n) = \{\, g \in \mathrm{GL}(n,\mathbb{C}) \mid g^{-1} = \bar{g}^{\,T} \,\},
 > $$
 >
-> where $\bar g$ is the entrywise complex conjugate; $\bar g^{\,T}$ is also written $g^\dagger$ or $g^*$. It is the analogue of $\mathrm{O}(n)$ with the dot product replaced by the Hermitian inner product $\langle z, w \rangle = \sum_j z_j \bar w_j$: $g \in \mathrm{U}(n)$ iff $\langle gz, gw \rangle = \langle z, w \rangle$ for all $z, w$ (same proof as [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|Proposition §11.5]], with $\langle ge_i, ge_j \rangle = e_i^T g^T \bar{g}\, e_j$ in place of $e_i^T g^T g\, e_j$: it gives $g^T \bar{g} = I$, and taking complex conjugates, $\bar{g}^{\,T} g = I$).
+> where $\bar g$ is the entrywise complex conjugate; $\bar g^{\,T}$ is also written $g^\dagger$ or $g^*$. It is the analogue of $\mathrm{O}(n)$ with the dot product replaced by the Hermitian inner product $\langle z, w \rangle = \sum_j z_j \bar w_j$: $g \in \mathrm{U}(n)$ iff $\langle gz, gw \rangle = \langle z, w \rangle$ for all $z, w$ (same proof as [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|Proposition §11.6]], with $\langle ge_i, ge_j \rangle = e_i^T g^T \bar{g}\, e_j$ in place of $e_i^T g^T g\, e_j$: it gives $g^T \bar{g} = I$, and taking complex conjugates, $\bar{g}^{\,T} g = I$).
 >
 > *Lee: Examples 7.29 and 7.30*
 
-^def-11-10
+^def-11-11
 
-*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-5|§11.5]]
+*Uses:* [[§11 Topological Groups and Classical Matrix Groups#^def-11-9|Def. §11.9]], [[§11 Topological Groups and Classical Matrix Groups#^prop-11-6|§11.6]]
 
 > [!remark]- Connections
 > - Unitary matrices in linear algebra: [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-56|LADR 7.56]], [[§26 Isometries, Unitary Operators, and Matrix Factorization#^ladr-7-57|LADR 7.57]].

@@ -234,6 +234,9 @@ The bar on $\bar\sigma$ has nothing to do with the bar of the Dirac conjugate $\
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-7|Def. §CB.13.7]] — intertwiners and equivalence of two sets of Dirac matrices (the U of Theorem §C5a.1.3).
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-12|Theorem §CB.13.12]] — Pauli's fundamental theorem (Theorem §C5a.1.3, 1–2).
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-13|Theorem §CB.13.13]], [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-14|Theorem §CB.13.14]] — changes of basis are exactly the invertible intertwiners; spinor space is unique (Theorem §C5a.1.3, 3).
+>
+> The Connections compare $\sigma^\mu$, $\bar\sigma^\mu$ with $\gamma^\mu$ as invariant matrices:
+> - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-7|Theorem §CB.18.7]] — $\Lambda_{1/2}^{-1}\gamma^\mu\Lambda_{1/2} = \Lambda^\mu{}_\nu\gamma^\nu$: the Dirac matrices are an invariant vector of matrices; physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-1|Theorem §C5a.3.1]].
 
 > [!remark]- Connections
 > - The index rule for spinors is the same slot rule as for spacetime tensors, with $U$ in place of $\Lambda$ and no metric to raise or lower; spinor indices are matrix indices of the third kind in the index-slot classification — [[§C3.1 Index Slots, Rotations and Spin in Field Theory#^def-c3-1-1|Def. §C3.1.1]], [[§C1a.5 Vectors, Tensors and Index Notation#^def-c1a-5-1|Def. §C1a.5.1]].

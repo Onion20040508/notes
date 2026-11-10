@@ -14,7 +14,7 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 ## Sequential Compactness
 
 > [!definition] Definition §20.1: Sequentially Compact
-> A subset $K$ of a normed linear space (or metric space) $X$ is **sequentially compact**, or here simply **compact**, if every sequence $\{x_n\} \subset K$ has a subsequence $\{x_{n_k}\}$ converging to some $x_0 \in K$.
+> A subset $K$ of a normed linear space (or metric space) $X$ is **sequentially compact** if every sequence $\{x_n\} \subset K$ has a subsequence $\{x_{n_k}\}$ converging to some $x_0 \in K$.
 
 ^def-20-1
 
@@ -28,7 +28,7 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 > \overline{B_1(0)} = \{ x \in \mathbb{F}^n : \|x\| \le 1 \}
 > $$
 >
-> is compact. Indeed a sequence in it is coordinatewise bounded, so the diagonal extraction used in [[§14 New Normed Spaces from Old#^pf-14-4|Step 5]] of Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]] — [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] applied $n$ times — produces a subsequence converging coordinatewise, hence in norm, and the limit still satisfies $\|x_0\| \le 1$ by continuity of the norm (Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]).
+> is compact. Indeed, by Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]] the norm is equivalent to $\|x\|_1 = \sum_{i=1}^n |x_i|$, so a sequence in the ball is coordinatewise bounded and coordinatewise convergence implies convergence in norm; hence the diagonal extraction used in [[§14 New Normed Spaces from Old#^pf-14-4|Step 5]] of Theorem [[§14 New Normed Spaces from Old#^thm-14-4|§14.4]] — [[Bolzano–Weierstrass Theorem|Bolzano–Weierstrass]] applied $n$ times — produces a subsequence converging coordinatewise, hence in norm, and the limit still satisfies $\|x_0\| \le 1$ by continuity of the norm (Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]).
 
 ^ex-20-1
 
@@ -66,7 +66,7 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 
 ^thm-20-1
 
-> [!proof]+ Proof
+> [!proof]+ Proof (not given in this course)
 > Not covered in lecture. This is point-set topology; see J. Munkres, *Topology*, [[§19 Limit Point Compactness#^thm-19-4|§28]].
 
 ^pf-20-1
@@ -77,7 +77,7 @@ The spaces of this chapter are the first infinite-dimensional normed spaces avai
 > - Home: [[§19 Limit Point Compactness#^thm-19-4|590 §19.4]] (compact ⇔ limit point compact ⇔ sequentially compact for metrizable spaces).
 
 > [!remark] Remark: Which Compactness
-> Only the sequential form is used in these notes, and Theorem [[§20 Compactness and the Unit Ball#^thm-20-1|§20.1]] is not needed for anything that follows; it records that “compact” is unambiguous here.
+> Only the sequential form is used in these notes, and Theorem [[§20 Compactness and the Unit Ball#^thm-20-1|§20.1]] is not needed for anything that follows; it records that “compact” is unambiguous here. Where these notes call a set compact (Example [[§20 Compactness and the Unit Ball#^ex-20-1|§20.1]], Theorem [[§20 Compactness and the Unit Ball#^thm-20-5|§20.5]]), the property verified is sequential compactness (Definition [[§20 Compactness and the Unit Ball#^def-20-1|§20.1]]).
 
 ^rem-20-1
 

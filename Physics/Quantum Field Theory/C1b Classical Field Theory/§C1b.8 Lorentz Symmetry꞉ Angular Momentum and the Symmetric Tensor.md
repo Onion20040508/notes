@@ -92,7 +92,9 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 > - The only term that could have produced a spin current, $\omega^\sigma{}_\mu\,\partial^\mu\phi\,\partial_\sigma\phi$ in step 2, vanishes for a scalar (antisymmetric against symmetric); for a field with an index it survives and becomes $\mathcal S^{\mu\nu\rho}$.
 > - Used next: the charges ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]], [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-8-1|Example §C1b.8.1]]).
 
-*Uses:* [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-1|Def. §C1b.7.1]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-1|Theorem §C1b.7.1]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-2|Theorem §C1b.7.2]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-3|Theorem §C1b.7.3]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-2|Def. §C1b.7.2]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]]
+^der-c1b-8-1b
+
+*Uses:* [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-1|Def. §C1b.7.1]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-1|Theorem §C1b.7.1]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-2|Theorem §C1b.7.2]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-3|Theorem §C1b.7.3]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-2|Def. §C1b.7.2]], [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]], [[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^thm-c1a-6-1|Theorem §C1a.6.1]], [[§B2.2 Tensors and the Covariance Principle#^thm-b2-2-5|REL Theorem §B2.2.5]], [[§C1b.5 Noether's Theorem#^der-c1b-5-1|Derivation §C1b.5.1]]; second route: [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]], [[§C1b.1 Fields and Their Transformation Laws#^thm-c1b-1-2|Theorem §C1b.1.2]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^der-c1b-7-5|Derivation §C1b.7.5]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^ex-c1b-7-1|Example §C1b.7.1]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–5]]
 
@@ -104,6 +106,8 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 > $$
 >
 > The **angular momentum** is $J^i \equiv \frac12\varepsilon_{ijk}J^{jk}$, i.e. $\mathbf J = (J^{23}, J^{31}, J^{12})$, with $\varepsilon_{123} = 1$; the **boost charges** are $K^i \equiv J^{i0}$.
+>
+> *Notation.* From here on $S^{\nu\rho}$ standing alone is the spin charge; the spin matrices of [[§C1b.1 Fields and Their Transformation Laws#^def-c1b-1-3|Def. §C1b.1.3]] appear with their component indices, $(S^{\nu\rho})_a{}^b$, or inside $D = 1 + \frac12\omega_{\mu\nu}S^{\mu\nu}$. $K^i$, with one index, is a boost charge; $K^{\lambda\mu\nu}$, with three, is the tensor of [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]].
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, Example 4 and eq. (Mgeneral) · Yu §1.7.3, eqs. (1.240)–(1.249)*
 
@@ -149,7 +153,7 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 > \mathbf J = \int d^3x\;\mathbf x\times\boldsymbol{\mathcal P} ,
 > $$
 >
-> the angular momentum of the field, $\mathbf x\times\mathbf p$ integrated over space. For a scalar it is all orbital; spin is what a field with components adds, $S^{jk}$.
+> the angular momentum of the field, $\mathbf x\times\mathbf p$ integrated over space. For a scalar it is all orbital; spin is what a field with components adds, the spin charge $S^{jk}$ of [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^def-c1b-8-1|Def. §C1b.8.1]].
 > 2. **Boosts.** $K^i = J^{i0} = \int d^3x\,(x^iT^{00} - x^0T^{0i})$; $x^0 = t$ is constant on the slice, so
 >
 > $$
@@ -284,7 +288,7 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 
 ^ex-c1b-8-2
 
-*Procedure:* [[P3 Noether's Procedure#^p3-4|P3, steps 1–5]]
+*Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–5]]
 
 > [!remark] Remark: Index moves for the electromagnetic tensor
 > The moves of [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-8-2|Example §C1b.8.2]] are general; $F$ is only the example. Differentiating a contraction through the metric, where both factors respond and the $\frac14$ cancels, is [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-12|Theorem §C1a.5.12]]. Then:
@@ -307,6 +311,8 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 
 > [!remark]- ★ Remark: Dilatations
 > The scale transformation has the generator $\Delta\phi = \phi + x^\mu\partial_\mu\phi$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]]). Step 2 for $\mathcal L = \frac12(\partial\phi)^2 - \frac12m^2\phi^2$ (computed here; the user's notes state only the outcome): $\delta(\partial_\mu\phi) = \alpha\,\partial_\mu(\phi + x^\nu\partial_\nu\phi) = \alpha(2\partial_\mu\phi + x^\nu\partial_\nu\partial_\mu\phi)$, so the kinetic part changes by $\alpha\,\partial^\mu\phi(2\partial_\mu\phi + x^\nu\partial_\nu\partial_\mu\phi) = \alpha(4\mathcal L_{\rm kin} + x^\nu\partial_\nu\mathcal L_{\rm kin}) = \alpha\,\partial_\nu(x^\nu\mathcal L_{\rm kin})$, using $\partial_\nu x^\nu = 4$. The mass part changes by $-\alpha m^2\phi(\phi + x^\nu\partial_\nu\phi) = \alpha(2\mathcal L_{\rm m} + x^\nu\partial_\nu\mathcal L_{\rm m}) = \alpha\bigl[\partial_\nu(x^\nu\mathcal L_{\rm m}) + m^2\phi^2\bigr]$. In total $\delta\mathcal L = \alpha\,\partial_\nu(x^\nu\mathcal L) + \alpha m^2\phi^2$. For $m = 0$ this is outcome (ii) with $\mathcal J^\mu = x^\mu\mathcal L$, and the dilatation current is $j^\mu = \partial^\mu\phi(\phi + x^\nu\partial_\nu\phi) - x^\mu\mathcal L = x_\nu T^{\mu\nu} + \phi\,\partial^\mu\phi$. For $m \ne 0$ the leftover $m^2\phi^2$ is not a divergence (its integral against a bump configuration is positive, while a divergence integrates to the flux of the zero configuration, zero; the argument of [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-1|Example §C1b.6.1]]): the mass, a dimensionful parameter, breaks scale invariance ([[§C1b.3 Mass Dimension, Locality and Power Counting#^thm-c1b-3-3|Theorem §C1b.3.3]], [[§C1b.3 Mass Dimension, Locality and Power Counting#^def-c1b-3-1|Def. §C1b.3.1]]). In Yu's form, $\phi'(x) = \lambda\phi(\lambda x)$ reads $\phi'(x') = \lambda\phi(x)$ at $x' = x/\lambda$, so the displacement is $\delta x^\mu = -\alpha x^\mu$ (opposite in sign to the parameter, like the lecture's translation $\delta x = -a$); it changes the volume element by $1 - 4\alpha$ ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-2|Theorem §C1b.7.2]]), which the field's weight compensates for $m = 0$ ($\mathcal L_{\rm kin}'(x') = \lambda^4\mathcal L_{\rm kin}(x)$), and the dictionary of [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-4|Theorem §C1b.7.4]], $\alpha\mathcal J^\mu = -\mathcal L\,\delta x^\mu = \alpha x^\mu\mathcal L$, reproduces the $\mathcal J^\mu$ found above.
+>
+> *Source: the user's PHY 513 notes, Ch. 3 §3.5 ("Computing Δφ (step 1)", Scale transformation: the generator, and that the mass term breaks the symmetry) · the variation of $\mathcal L$ and the current are computed here · Yu §1.7.1, eqs. (1.188)–(1.198) (the general form used in the last sentence) · beyond the course*
 
 ^rem-c1b-8-4
 
@@ -317,6 +323,11 @@ What do Lorentz transformations conserve in a field theory, and why does the ene
 > - The boost charge here is $K^i \equiv J^{i0} = \int x^i\mathcal H - tP^i$ (Yu's $L^{i0}$). The conventions table's "boost generator $K^i = J^{0i}$" refers to the generators of Lorentz transformations ([[§C1a.6 Infinitesimal Lorentz Transformations and Generators#^def-c1a-6-2|Def. §C1a.6.2]]), not to these Noether charges; how the charges represent the generators on the Hilbert space, with signs and factors of $i$, is [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|Theorem §C3.5.6]]; the boost generator is $J^{0i} = -K^i$ ([[§C3.4 Quantum Poincaré Transformations and the Poincaré Algebra#^cau-c3-4-1|§C3.4, Caution: Signs and names across the sources]]).
 
 ^cau-c1b-8-1
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]] — integration by parts on a ball with its surface term: the moments $\int d^3x\,x^\nu\partial_iK^{i0\rho}$ that turn the orbital charges of $T_B$ into $L^{\nu\rho} + S^{\nu\rho}$ (Derivation §C1b.8.4, step 7).
 
 > [!remark]- Connections
 > - Poynting's theorem ([[§B9.1 Charge, Energy and Poynting's Theorem#^thm-b9-1-2|EM Theorem §B9.1.2]]) is the $\nu = 0$ component of $\partial_\mu T_B^{\mu\nu} = 0$ for the free field: $T_B^{00}$ and $T_B^{0i}$ are the energy density and Poynting vector of [[§B9.1 Charge, Energy and Poynting's Theorem#^def-b9-1-1|EM Def. §B9.1.1]] in Heaviside–Lorentz units. The $\nu = i$ components are momentum conservation ([[§B9.2 Momentum and Angular Momentum of Fields#^thm-b9-2-2|EM Theorem §B9.2.2]]), with $T_B^{ij} = -(E^iE^j - \frac12\delta_{ij}\mathbf E^2) - (B^iB^j - \frac12\delta_{ij}\mathbf B^2)$ minus the Maxwell stress tensor ([[§B9.2 Momentum and Angular Momentum of Fields#^def-b9-2-1|EM Def. §B9.2.1]]), i.e. the momentum flux of [[§B9.2 Momentum and Angular Momentum of Fields#^cau-b9-2-1|EM Caution: Stress tensor or momentum flux]]. That the Poynting vector is both energy flux and momentum density is the symmetry $T_B^{0i} = T_B^{i0}$.

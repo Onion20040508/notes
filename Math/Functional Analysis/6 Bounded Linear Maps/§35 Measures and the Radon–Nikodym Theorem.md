@@ -209,8 +209,8 @@ The Radon–Nikodym theorem, whose measure-theoretic proof is difficult, follows
 
 ^ex-35-3
 
-> [!remark] Remark
-> The truncation in Step 5 is necessary, not cosmetic (Example [[§35 Measures and the Radon–Nikodym Theorem#^ex-35-4|§35.4]]). The density is unique $\mu$-a.e. (Proposition [[§35 Measures and the Radon–Nikodym Theorem#^prop-35-3|§35.3]]), and the theorem also holds for $\sigma$-finite and for signed measures. Neither extension was covered.
+> [!remark] Remark: Truncation, Uniqueness and Extensions
+> The truncation in Step 5 is necessary, not cosmetic (Example [[§35 Measures and the Radon–Nikodym Theorem#^ex-35-4|§35.4]]). The density is unique $\mu$-a.e. (Proposition [[§35 Measures and the Radon–Nikodym Theorem#^prop-35-3|§35.3]]), and the theorem also holds for $\sigma$-finite and for signed measures. Neither extension is treated in these notes.
 
 ^rem-35-3
 

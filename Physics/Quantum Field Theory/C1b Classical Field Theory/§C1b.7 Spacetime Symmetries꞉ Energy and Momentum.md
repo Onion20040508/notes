@@ -263,6 +263,8 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 > - The two routes give the same tensor with opposite overall signs, because the displacements are opposite ($\varepsilon = -a$) → [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^cau-c1b-7-1|Caution: One picture at a time; the sign of the displacement]].
 > - Used next: the same route for Lorentz transformations, where $\delta x$ depends on $x$ ([[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-1|Theorem §C1b.8.1]]).
 
+^der-c1b-7-5b
+
 *Uses:* [[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]], [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^def-c1b-7-2|Def. §C1b.7.2]], [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-3|Theorem §C1b.7.3]]
 
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–5]]
@@ -523,16 +525,36 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 > \{P^i, H\} = \int d^3z\,\Bigl(\partial_i\pi\cdot\pi - \bigl(-\partial_i\phi\bigr)\bigl(m^2\phi - \nabla^2\phi\bigr)\Bigr) = \int d^3z\,\Bigl(\partial_i\bigl(\tfrac12\pi^2\bigr) + \partial_i\bigl(\tfrac12m^2\phi^2\bigr) - \partial_i\phi\,\nabla^2\phi\Bigr) .
 > $$
 >
-> The first two terms are total derivatives and integrate to zero (fall-off). In the third, integrate by parts in $z^j$: $\int\partial_i\phi\,\partial_j\partial_j\phi = -\int\partial_j\partial_i\phi\,\partial_j\phi = -\int\partial_i\bigl(\tfrac12(\nabla\phi)^2\bigr) = 0$. So $\{P^i, H\} = 0$, and by [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-6|Theorem §C1b.4.6]] $d\mathbf P/dt = 0$, as Noether's theorem says. In general every term of $\{P^i, H\}$ assembles into $\int d^3z\,\partial_i(\cdots)$ exactly when $\mathcal H$ has no explicit $\mathbf z$-dependence.
+> The first two terms are total derivatives and integrate to zero (fall-off). In the third, integrate by parts in $z^j$: $\int\partial_i\phi\,\partial_j\partial_j\phi = -\int\partial_j\partial_i\phi\,\partial_j\phi = -\int\partial_i\bigl(\tfrac12(\nabla\phi)^2\bigr) = 0$. So $\{P^i, H\} = 0$, and by [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-6|Theorem §C1b.4.6]] $d\mathbf P/dt = 0$, as Noether's theorem says. For any $\mathcal H$ the terms assemble in the same way into $\int d^3z\,\partial_i\mathcal H$, up to the explicit $\mathbf z$-dependence: Step 8.
+>
+> **Step 8** (part 4, any $\mathcal H$). Let $\mathcal H = \mathcal H(\phi_c, \partial_j\phi_c, \pi_c, \mathbf z)$, an explicit dependence on $\mathbf z$ allowed. The functional derivatives of $H$ are those of [[§C1b.4 Hamiltonian Field Theory#^der-c1b-4-4|Derivation §C1b.4.4]], step 6 (the variations are taken at fixed $\mathbf z$, so an explicit $\mathbf z$ changes nothing there): $\delta H/\delta\pi_c = \partial\mathcal H/\partial\pi_c$ and $\delta H/\delta\phi_c = \partial\mathcal H/\partial\phi_c - \partial_j\bigl(\partial\mathcal H/\partial(\partial_j\phi_c)\bigr)$. Insert them and Steps 1–2 into the bracket of [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]]:
+>
+> $$
+> \{P^i, H\} = \sum_c\int d^3z\,\Bigl(\frac{\delta P^i}{\delta\phi_c}\frac{\delta H}{\delta\pi_c} - \frac{\delta P^i}{\delta\pi_c}\frac{\delta H}{\delta\phi_c}\Bigr) = \sum_c\int d^3z\,\Bigl(\partial_i\pi_c\,\frac{\partial\mathcal H}{\partial\pi_c} + \partial_i\phi_c\,\frac{\partial\mathcal H}{\partial\phi_c} - \partial_i\phi_c\,\partial_j\frac{\partial\mathcal H}{\partial(\partial_j\phi_c)}\Bigr) .
+> $$
+>
+> In the last term integrate by parts in $z^j$; the surface term vanishes by the fall-off of the fields ([[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]]): $-\int d^3z\,\partial_i\phi_c\,\partial_j\frac{\partial\mathcal H}{\partial(\partial_j\phi_c)} = +\int d^3z\,\partial_j\partial_i\phi_c\,\frac{\partial\mathcal H}{\partial(\partial_j\phi_c)}$. So
+>
+> $$
+> \{P^i, H\} = \int d^3z\,\sum_c\Bigl[\frac{\partial\mathcal H}{\partial\pi_c}\,\partial_i\pi_c + \frac{\partial\mathcal H}{\partial\phi_c}\,\partial_i\phi_c + \frac{\partial\mathcal H}{\partial(\partial_j\phi_c)}\,\partial_i\partial_j\phi_c\Bigr] .
+> $$
+>
+> By the chain rule ([[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]]) the derivative of the function $\mathbf z \mapsto \mathcal H\bigl(\phi_c(\mathbf z), \partial_j\phi_c(\mathbf z), \pi_c(\mathbf z), \mathbf z\bigr)$ is the square bracket plus the derivative through the explicit argument, $\partial_i\mathcal H = \sum_c[\cdots] + \partial\mathcal H/\partial z^i|_{\text{explicit}}$. The total derivative $\int d^3z\,\partial_i\mathcal H$ is a surface term and vanishes by the fall-off (a field-independent term of $\mathcal H$ drops out of every bracket and is taken to be zero). Hence
+>
+> $$
+> \{P^i, H\} = -\int d^3z\,\frac{\partial\mathcal H}{\partial z^i}\Big|_{\text{explicit}} ,
+> $$
+>
+> which is zero when $\mathcal H$ does not depend on $\mathbf z$ explicitly: part 4. Step 7 is the case $\mathcal H = \frac12\pi^2 + \frac12(\nabla\phi)^2 + \frac12m^2\phi^2$. ⚑ By-product: with $d\mathbf P/dt = \{\mathbf P, H\}$ ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-6|Theorem §C1b.4.6]]) an explicit position dependence, such as an external potential, changes the field momentum at the rate $-\int d^3z\,\partial\mathcal H/\partial z^i|_{\text{explicit}}$; this is the Hamiltonian form of $\partial_\mu T^\mu{}_\nu = -\partial\mathcal L/\partial x^\nu|_{\text{explicit}}$ ([[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^der-c1b-7-5|Derivation §C1b.7.5]], step 3), since $\mathcal H = \sum_c\pi_c\dot\phi_c - \mathcal L$ gives $\partial\mathcal H/\partial z^i|_{\text{explicit}} = -\partial\mathcal L/\partial z^i|_{\text{explicit}}$ at fixed $\phi$, $\pi$, and $P^i = -P_i$.
 >
 > **What the derivation shows**
 > - $\mathbf P$ acts on the canonical data as $-\nabla$, as $H$ acts as $\partial_t$: the field momentum is the generator of spatial translations in the same sense in which the Hamiltonian generates time evolution ([[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]]).
-> - Assumptions: differentiable $\pi$ (Step 2) and fall-off at infinity (Steps 2 and 7).
+> - Assumptions: differentiable $\pi$ (Step 2) and fall-off at infinity (Steps 2, 7 and 8).
 > - Used next: the quantum generators ([[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|Theorem §C3.5.6]]), the Dirac field ([[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]]).
 
 ^der-c1b-7-9
 
-*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.4 Hamiltonian Field Theory#^der-c1b-4-5|Derivation §C1b.4.5]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-6|Theorem §C1b.4.6]], [[§C1b.4 Hamiltonian Field Theory#^ex-c1b-4-1|Example §C1b.4.1]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|Theorem §C1a.5.10]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]]
+*Uses:* [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^def-c1b-2-4|Def. §C1b.2.4]], [[§C1b.4 Hamiltonian Field Theory#^def-c1b-4-3|Def. §C1b.4.3]], [[§C1b.4 Hamiltonian Field Theory#^der-c1b-4-5|Derivation §C1b.4.5]], [[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-6|Theorem §C1b.4.6]], [[§C1b.4 Hamiltonian Field Theory#^ex-c1b-4-1|Example §C1b.4.1]], [[§C1b.4 Hamiltonian Field Theory#^der-c1b-4-4|Derivation §C1b.4.4]], [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-6|Theorem §C1b.7.6]], [[§C1a.5 Vectors, Tensors and Index Notation#^thm-c1a-5-10|Theorem §C1a.5.10]], [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]], [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^thm-28-1|452 Thm. §28.1]], [[§12 Composition of Functions and the Chain Rule#^thm-12-2|452 Thm. §12.2]]
 
 > [!remark] Remark: Why P is the momentum
 > - *On a wave.* The real solution $\phi = A\cos\theta$, $\theta = \omega t - \mathbf k\cdot\mathbf x$, $\omega = \sqrt{\mathbf k^2 + m^2}$, has $\pi = \dot\phi = -A\omega\sin\theta$ and $\nabla\phi = A\mathbf k\sin\theta$, so the momentum density is $-\pi\nabla\phi = A^2\omega\,\mathbf k\sin^2\theta$ and the energy density $\mathcal H = \tfrac12A^2(\omega^2 + \mathbf k^2)\sin^2\theta + \tfrac12m^2A^2\cos^2\theta$. Averaged over a period ($\langle\sin^2\rangle = \langle\cos^2\rangle = \tfrac12$): $\langle\mathcal H\rangle = \tfrac14A^2(\omega^2 + \mathbf k^2 + m^2) = \tfrac12A^2\omega^2$ and $\langle-\pi\nabla\phi\rangle = \tfrac12A^2\omega\,\mathbf k$. The momentum points along the propagation, and momentum per energy is $\mathbf k/\omega$, the group velocity $\partial\omega/\partial\mathbf k$. A wave packet narrow in $\mathbf k$ with energy $N\omega$ carries momentum $N\mathbf k$: per quantum $E = \omega$, $\mathbf p = \mathbf k$ ($\hbar = 1$), the particles of [[§C2a.4 Particles and Relativistic Normalization#^thm-c2a-4-1|Theorem §C2a.4.1]].
@@ -550,15 +572,20 @@ What do translations conserve in a field theory, and how does Noether's theorem 
 > | field | $\mathcal L$ | $\partial\mathcal L/\partial(\partial_\mu\phi_a)$ | canonical $T^{\mu\nu}$ | symmetric |
 > | --- | --- | --- | --- | --- |
 > | real scalar | $\frac12(\partial\phi)^2 - \frac12m^2\phi^2$ | $\partial^\mu\phi$ | $\partial^\mu\phi\,\partial^\nu\phi - g^{\mu\nu}\mathcal L$ | yes |
-> | complex scalar | $\partial_\rho\phi^*\partial^\rho\phi - m^2\phi^*\phi$ | $\partial^\mu\phi^*$ (for $\phi$), $\partial^\mu\phi$ (for $\phi^*$) | $\partial^\mu\phi^*\partial^\nu\phi + \partial^\mu\phi\,\partial^\nu\phi^* - g^{\mu\nu}\mathcal L$ | yes |
+> | complex scalar | $\partial_\rho\phi^{\ast}\partial^\rho\phi - m^2\phi^{\ast}\phi$ | $\partial^\mu\phi^{\ast}$ (for $\phi$), $\partial^\mu\phi$ (for $\phi^{\ast}$) | $\partial^\mu\phi^{\ast}\partial^\nu\phi + \partial^\mu\phi\,\partial^\nu\phi^{\ast} - g^{\mu\nu}\mathcal L$ | yes |
 > | vector | $-\frac14F_{\rho\sigma}F^{\rho\sigma}$ | $-F^{\mu\rho}$ (for $A_\rho$) | $-F^{\mu\rho}\partial^\nu A_\rho + \frac14g^{\mu\nu}F_{\rho\sigma}F^{\rho\sigma}$ | no |
 > | Dirac | $\bar\psi(i\gamma^\rho\partial_\rho - m)\psi$ | $i\bar\psi\gamma^\mu$ (for $\psi$), $0$ (for $\bar\psi$) | $i\bar\psi\gamma^\mu\partial^\nu\psi - g^{\mu\nu}\mathcal L$ | no |
 >
-> Checks on $T^{00}$: the complex scalar gives $\dot\phi^*\dot\phi + \dot\phi\dot\phi^* - \mathcal L = \lvert\dot\phi\rvert^2 + \lvert\nabla\phi\rvert^2 + m^2\lvert\phi\rvert^2$, its Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]]); the vector gives the canonical tensor of [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-8-2|Example §C1b.8.2]]; the Dirac field gives $i\psi^\dagger\partial_t\psi$, and since the Dirac equation sets $\mathcal L = 0$ on shell, $T^{\mu\nu} = i\bar\psi\gamma^\mu\partial^\nu\psi$ there ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|Theorem §C5a.9.5]]). The pattern is exact: a scalar gives a symmetric $T$ because $\partial^\mu\phi\,\partial^\nu\phi$ is symmetric by inspection; a field with an index gives a non-symmetric canonical $T$, because $\partial\mathcal L/\partial(\partial_\mu\phi_a)$ carries the field's own index structure ($F^{\mu\rho}$, $\gamma^\mu$), which does not pair symmetrically with $\partial^\nu$. [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-2|Theorem §C1b.8.2]] explains the pattern and [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]] repairs it.
+> Checks on $T^{00}$: the complex scalar gives $\dot\phi^{\ast}\dot\phi + \dot\phi\dot\phi^{\ast} - \mathcal L = \lvert\dot\phi\rvert^2 + \lvert\nabla\phi\rvert^2 + m^2\lvert\phi\rvert^2$, its Hamiltonian density ([[§C1b.4 Hamiltonian Field Theory#^thm-c1b-4-3|Theorem §C1b.4.3]]); the vector gives the canonical tensor of [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^ex-c1b-8-2|Example §C1b.8.2]]; the Dirac field gives $i\psi^\dagger\partial_t\psi$, and since the Dirac equation sets $\mathcal L = 0$ on shell, $T^{\mu\nu} = i\bar\psi\gamma^\mu\partial^\nu\psi$ there ([[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-5|Theorem §C5a.9.5]]). The pattern is exact: a scalar gives a symmetric $T$ because $\partial^\mu\phi\,\partial^\nu\phi$ is symmetric by inspection; a field with an index gives a non-symmetric canonical $T$, because $\partial\mathcal L/\partial(\partial_\mu\phi_a)$ carries the field's own index structure ($F^{\mu\rho}$, $\gamma^\mu$), which does not pair symmetrically with $\partial^\nu$. [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-2|Theorem §C1b.8.2]] explains the pattern and [[§C1b.8 Lorentz Symmetry꞉ Angular Momentum and the Symmetric Tensor#^thm-c1b-8-4|Theorem §C1b.8.4]] repairs it.
 >
 > *Source: the user's PHY 513 notes, Ch. 3 §3.5, table after eq. (Tgeneral)*
 
 ^rem-c1b-7-3
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.2 Generalized Functions#^thm-ca-2-3|Theorem §CA.2.3]] — integration by parts in three dimensions with its surface term: the functional derivative $\delta P^i/\delta\phi_c = +\partial_i\pi_c$ and the vanishing of $\{P^i, H\}$ (Derivation §C1b.7.9, Steps 2 and 8).
 
 > [!remark]- Connections
 > - The field momentum generates spatial translations through the Poisson bracket exactly as $H$ generates time evolution; quantized, the same statement is $[\hat\phi, \hat P^\mu] = i\partial^\mu\hat\phi$ for the scalar and $[\hat\psi, \hat{\mathbf P}] = -i\nabla\hat\psi$ for the Dirac field — [[§C1b.7 Spacetime Symmetries꞉ Energy and Momentum#^thm-c1b-7-9|Theorem §C1b.7.9]], [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-6|Theorem §C3.5.6]], [[§C5b.1 Canonical Quantization of the Dirac Field#^thm-c5b-1-9|Theorem §C5b.1.9]], [[§B8.1 Poisson Brackets#^thm-b8-1-5|CM Theorem §B8.1.5]].

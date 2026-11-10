@@ -17,8 +17,8 @@ tags: [differentiable-manifolds, hub]
 ## Used in (Differentiable Manifolds)
 - [[§70 Complete Vector Fields#^thm-70-11|Theorem §70.11: Left-Invariant Fields Are Complete]]
 - [[§71 The Exponential Map#^prop-71-1|Proposition §71.1: One-Parameter Subgroups]]
-- [[§71 The Exponential Map#^lem-71-5|Lemma §71.5: Integral Curves of a Left-Invariant Field on a Lie Subgroup]]
-- [[§71 The Exponential Map#^cor-71-7|Corollary §71.7: Lie Group Morphisms Commute with the Exponential Map]]
+- [[§71 The Exponential Map#^lem-71-7|Lemma §71.7: Integral Curves of a Left-Invariant Field on a Lie Subgroup]]
+- [[§71 The Exponential Map#^cor-71-9|Corollary §71.9: Lie Group Morphisms Commute with the Exponential Map]]
 - [[§72 Lie Derivatives#^cor-72-13|Corollary §72.13: Commuting Flows Have Zero Bracket]]
 
 ## Connections

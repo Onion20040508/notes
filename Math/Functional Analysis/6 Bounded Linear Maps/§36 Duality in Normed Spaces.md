@@ -139,7 +139,7 @@ For $\ell \in X'$, $\|\ell\|$ is computed as a supremum of $|\ell(x)|$ over $\|x
 ^rem-36-2
 
 > [!example] Example §36.1: The Supremum in $\|\ell\|$ Need Not be Attained
-> On $c_0$, the sequences tending to $0$ with $\|a\| = \max_n |a_n|$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]), let
+> On $c_0$, the sequences tending to $0$ with $\|a\| = \max_n |a_n|$ (Definition [[§29 Sequence and Function Spaces#^def-29-1|§29.1]], where this norm is written $|a|$), let
 >
 > $$
 > \ell(a) = \sum_{n=1}^\infty 2^{-n} a_n .
@@ -297,7 +297,7 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 *Uses:* [[§17 Hölder's Inequality for Sequences#^thm-17-1|§17.1]], [[§31 Dual Spaces#^ex-31-1|Ex. §31.1]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]
 
 > [!theorem] Corollary §36.5: The Pairing Without the Bar
-> Let $1 \le p < \infty$ and $\frac1p + \frac1{p'} = 1$. For $a \in \ell^{p'}$ put $\ell_{\bar a}(x) = \sum_j x_j a_j$, $x \in \ell^p$. Then $a \mapsto \ell_{\bar a}$ is a *linear*, one-to-one, onto, norm-preserving map $\ell^{p'} \to (\ell^p)'$, i.e. an isometric isomorphism. (Over $\mathbb{R}$ it is the map $a \mapsto \ell_a$ of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]].)
+> Let $1 \le p < \infty$ and $\frac1p + \frac1{p'} = 1$. For $a \in \ell^{p'}$ put $\ell_{\bar a}(x) = \sum_j x_j a_j$, $x \in \ell^p$. Then $a \mapsto \ell_{\bar a}$ is a *linear*, one-to-one, onto, norm-preserving map $\ell^{p'} \to (\ell^p)'$, i.e. an isometric isomorphism (Definition [[§13 The Completion of a Normed Space#^def-13-2|§13.2]]). (Over $\mathbb{R}$ it is the map $a \mapsto \ell_a$ of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]].)
 
 ^cor-36-5
 
@@ -344,6 +344,7 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 > \|f\|_{L^p} = \sup \Bigl\{ \Bigl| \int f(x)\, \overline{g(x)}\, d\mu(x) \Bigr| : \|g\|_{L^{p'}} = 1 \Bigr\} .
 > $$
 >
+> (The bar is as in Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]. Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]] writes the pairing without it; that replaces $g$ by $\bar g$ and does not change the supremum, since $\|\bar g\|_{L^{p'}} = \|g\|_{L^{p'}}$.)
 > The maximizing $b$, and $g$ for functions, can also be exhibited directly (Proposition [[§36 Duality in Normed Spaces#^prop-36-7|§36.7]] below); together with Hölder this proves Corollary [[§36 Duality in Normed Spaces#^cor-36-6|§36.6]] without Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]]. This is Lax's route to Minkowski's inequality (Concordance, C.2). What Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] adds is that *every* bounded functional on $\ell^p$ is of the form $\ell_b$.
 
 ^rem-36-4
@@ -384,14 +385,14 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 *(Not from lecture; animation added, vault only.)* As $a$ goes around the unit sphere of $\ell^3$ (blue), the maximizing $b_j = |a_j|^{p-2}a_j = |a_j|\,a_j$ moves on the unit sphere of $\ell^{3/2}$ (orange, dashed). The pairing $\sum a_j b_j$ stays $1$, and the line $\sum x_j b_j = 1$ (red) touches the $\ell^3$ sphere at $a$.
 
 > [!remark] Remark: The Dual of $L^p$, Revisited
-> Similarly, for any measure space $(X, \mu)$, e.g. $\Omega \subset \mathbb{R}^n$ with Lebesgue measure, and $1 \le p < \infty$, $(L^p(X, \mu))' = L^{p'}(X, \mu)$; this is Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]. For those who have learned measure theory, the candidate is found with the Radon–Nikodym theorem, and the rest goes as for sequences; the proof was left to the class (an outline is given after Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]).
+> Similarly, for any measure space $(X, \mu)$, e.g. $\Omega \subset \mathbb{R}^n$ with Lebesgue measure, and $1 \le p < \infty$, $(L^p(X, \mu))' = L^{p'}(X, \mu)$; this is Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]. For those who have learned measure theory, the candidate is found with the Radon–Nikodym theorem, and the rest goes as for sequences; the proof was not given in lecture (an outline follows Theorem [[§31 Dual Spaces#^thm-31-4|§31.4]]).
 > For $p = 1$ the measure must be $\sigma$-finite (Lebesgue measure on $\Omega$ is); for $1 < p < \infty$ no condition is needed.
 
 ^rem-36-5
 
 > [!example] Example §36.2: $(\ell^\infty)'$ is Larger than $\ell^1$
 > The theorem fails for $p = \infty$: $(\ell^\infty)' \neq \ell^1$, and likewise $(L^\infty)' \neq L^1$; the dual of $\ell^\infty$ can be described as a space of finite measures on $\mathbb{N}$.
-> (Precisely: bounded *finitely* additive set functions on the subsets of $\mathbb{N}$; the countably additive ones correspond to $\ell^1$.) In the homework the space is not $\ell^\infty$ but $c_0$, the sequences tending to $0$ (Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]]); there the finite sequences are dense, and the same strategy as in Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] applies. In $\ell^\infty$ they are not dense: for every finite sequence $x$, $\|(1, 1, 1, \ldots) - x\|_\infty \ge 1$. So Step 3 of the proof breaks down.
+> (Precisely: bounded *finitely* additive set functions on the subsets of $\mathbb{N}$; the countably additive ones correspond to $\ell^1$.) For $c_0$, the sequences tending to $0$ (Definition [[§29 Sequence and Function Spaces#^def-29-1|§29.1]]), the finite sequences are dense, and the same strategy as in Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] applies: $(c_0)' = \ell^1$ (Proposition [[§36 Duality in Normed Spaces#^prop-36-8|§36.8]]). The homework (HW6, Problem 2) is about the space of convergent sequences, for which the description of the dual needs one more coordinate (Proposition [[§36 Duality in Normed Spaces#^prop-36-9|§36.9]]). In $\ell^\infty$ they are not dense: for every finite sequence $x$, $\|(1, 1, 1, \ldots) - x\|_\infty \ge 1$. So Step 3 of the proof breaks down.
 
 ^ex-36-2
 
@@ -405,9 +406,202 @@ Next, the dual of $\ell^p$, announced in Lecture 10 (Theorem [[§31 Dual Spaces#
 ![[m556-36-5.svg]]
 *Why Step 3 of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]] needs $p < \infty$. Left: for $x \in \ell^p$ the truncation $x^{(n)}$ (blue, here $n = 5$) differs from $x$ by a tail whose $p$-th power sum tends to $0$, so finite sequences are dense and a bounded functional is determined by its values $\ell(e_j)$. Right: in $\ell^\infty$ the tail of $(1, 1, 1, \ldots)$ always has supremum $1$; the finite sequences are not dense, and the functional of Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]] vanishes on every $e_j$ without being $0$.*
 
+> [!theorem] Proposition §36.8: The Dual of $c_0$
+> Let $c_0$ be the space of sequences in $\mathbb{F}$ tending to $0$, with the norm $\|x\| = \max_j |x_j|$ (Definition [[§29 Sequence and Function Spaces#^def-29-1|§29.1]], where this norm is written $|x|$).
+>
+> - (1) For $a = (a_1, a_2, \ldots) \in \ell^1$,
+>
+>   $$
+>   \ell_a(x) = \sum_{j=1}^\infty x_j\, \overline{a_j}, \qquad x = (x_1, x_2, \ldots) \in c_0,
+>   $$
+>
+>   defines $\ell_a \in (c_0)'$, with $\|\ell_a\| \le \|a\|_1$.
+> - (2) For every $\ell \in (c_0)'$, the numbers $a_j = \overline{\ell(e_j)}$ form a sequence $a \in \ell^1$ with $\|a\|_1 \le \|\ell\|$, and $\ell = \ell_a$.
+>
+> Consequently $a \mapsto \ell_a$ is a one-to-one map of $\ell^1$ onto $(c_0)'$ with $\|\ell_a\| = \|a\|_1$; it is linear if $\mathbb{F} = \mathbb{R}$ and conjugate-linear if $\mathbb{F} = \mathbb{C}$. The map $a \mapsto \ell_{\bar a}$, $\ell_{\bar a}(x) = \sum_j x_j a_j$, is a linear, one-to-one, onto, norm-preserving map $\ell^1 \to (c_0)'$, i.e. an isometric isomorphism (Definition [[§13 The Completion of a Normed Space#^def-13-2|§13.2]]). In this sense $(c_0)' = \ell^1$.
+
+^prop-36-8
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* The proof follows that of Theorem [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], with $c_0$ in place of $\ell^p$ and $\ell^1$ in place of $\ell^{p'}$. As there, $e_j = (0, \ldots, 0, 1, 0, \ldots)$ has $1$ in the $j$-th place; $e_j \in c_0$, because its terms are $0$ from the $(j+1)$-st on. By Step 1 of the proof of Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]], the maximum defining $\|x\|$ exists and $|x_j| \le \|x\|$ for every $x \in c_0$ and every $j$.
+>
+> **Step 1: every $a \in \ell^1$ gives a bounded functional.** Let $a \in \ell^1$ and $x \in c_0$. Since $|x_j| \le \|x\|$ for every $j$,
+>
+> $$
+> \sum_{j=1}^\infty |x_j\, \overline{a_j}| = \sum_{j=1}^\infty |x_j|\, |a_j| \le \|x\| \sum_{j=1}^\infty |a_j| = \|x\|\, \|a\|_1 < \infty .
+> $$
+>
+> So the series defining $\ell_a(x)$ converges absolutely, hence converges, and $\ell_a$ is well defined. It is linear, because its partial sums are linear in $x$ and limits of sums are sums of limits. It is bounded, since $|\ell_a(x)| \le \sum_j |x_j|\, |a_j| \le \|a\|_1\, \|x\|$. Hence $\ell_a \in (c_0)'$ and $\|\ell_a\| \le \|a\|_1$.
+>
+> **Step 2: the candidate $a$, and $a \in \ell^1$.** Let $\ell \in (c_0)'$, and define
+>
+> $$
+> a_j = \overline{\ell(e_j)} \in \mathbb{F}, \qquad a = (a_1, a_2, \ldots) .
+> $$
+>
+> A finite sequence $x = (x_1, \ldots, x_n, 0, 0, \ldots)$ lies in $c_0$ and is the finite linear combination $\sum_{j=1}^n x_j e_j$, so by linearity of $\ell$
+>
+> $$
+> \ell(x) = \sum_{j=1}^n x_j\, \ell(e_j) = \sum_{j=1}^n x_j\, \overline{a_j} . \tag{$\ast$}
+> $$
+>
+> Now we show $a \in \ell^1$. Fix $n$. For $j \le n$ let $x_j = a_j / |a_j|$ if $a_j \neq 0$ and $x_j = 0$ if $a_j = 0$, and let $x^0 = (x_1, \ldots, x_n, 0, 0, \ldots) \in c_0$. Then $|x_j| \le 1$ for every $j$, so $\|x^0\| \le 1$; and $x_j\, \overline{a_j} = |a_j|$ in both cases (if $a_j \neq 0$, $x_j\, \overline{a_j} = a_j \overline{a_j} / |a_j| = |a_j|^2 / |a_j|$; if $a_j = 0$, both sides are $0$). By ($\ast$), $\ell(x^0) = \sum_{j=1}^n |a_j|$ is a non-negative real number, and since $\ell$ is bounded,
+>
+> $$
+> \sum_{j=1}^n |a_j| = \ell(x^0) = |\ell(x^0)| \le \|\ell\|\, \|x^0\| \le \|\ell\| \qquad \text{for every } n .
+> $$
+>
+> The partial sums of the series $\sum_j |a_j|$ of non-negative terms are bounded by $\|\ell\|$, so the series converges and
+>
+> $$
+> \|a\|_1 = \sum_{j=1}^\infty |a_j| \le \|\ell\| .
+> $$
+>
+> So $a \in \ell^1$, and ($\ast$) says that $\ell(x) = \sum_j x_j \overline{a_j}$ for every finite sequence $x$.
+>
+> **Step 3: $\ell = \ell_a$ on all of $c_0$.** Let $x = (x_1, x_2, \ldots) \in c_0$ and $x^{(n)} = (x_1, \ldots, x_n, 0, 0, \ldots)$. We show $x^{(n)} \to x$ in $c_0$; this is where $x_j \to 0$ is used. The difference $x - x^{(n)} = (0, \ldots, 0, x_{n+1}, x_{n+2}, \ldots)$ lies in $c_0$. Let $\varepsilon > 0$. Since $x_j \to 0$, there is $N$ with $|x_j| < \varepsilon$ for all $j > N$. For $n \ge N$ every term of $x - x^{(n)}$ is either $0$ or some $x_j$ with $j > n \ge N$, so every term has absolute value less than $\varepsilon$, and the largest of them gives
+>
+> $$
+> \|x - x^{(n)}\| = \max_{j > n} |x_j| < \varepsilon \qquad \text{for all } n \ge N .
+> $$
+>
+> Hence $\|x - x^{(n)}\| \to 0$. A bounded linear functional is continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), so $\ell(x^{(n)}) \to \ell(x)$. On the other hand, by ($\ast$),
+>
+> $$
+> \ell(x^{(n)}) = \sum_{j=1}^n x_j\, \overline{a_j} ,
+> $$
+>
+> and these are the partial sums of the series $\sum_j x_j \overline{a_j}$, which converges to $\ell_a(x)$ by Step 1 (as $a \in \ell^1$ by Step 2). Limits are unique, so $\ell(x) = \ell_a(x)$.
+>
+> **Conclusion.** Let $a \in \ell^1$. Applying Step 2 to $\ell = \ell_a$, the candidate is $a$ itself, since $\ell_a(e_j) = \overline{a_j}$; so $\|a\|_1 \le \|\ell_a\|$, and with Step 1, $\|\ell_a\| = \|a\|_1$. The map $a \mapsto \ell_a$ is onto by Steps 2–3, and one-to-one: if $\ell_a = \ell_b$, then $\overline{a_j} = \ell_a(e_j) = \ell_b(e_j) = \overline{b_j}$ for every $j$. Termwise, $\ell_{a + b} = \ell_a + \ell_b$ and $\ell_{ca} = \bar c\, \ell_a$; so the map is linear if $\mathbb{F} = \mathbb{R}$ and conjugate-linear if $\mathbb{F} = \mathbb{C}$.
+>
+> *The pairing without the bar.* This is the argument of the proof of Corollary [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]]. Let $C(a) = \bar a = (\overline{a_1}, \overline{a_2}, \ldots)$. Since $|\overline{a_j}| = |a_j|$, $C$ maps $\ell^1$ into itself with $\|C(a)\|_1 = \|a\|_1$; $C \circ C$ is the identity, so $C$ is one-to-one and onto; and $C(a + b) = C(a) + C(b)$, $C(ca) = \bar c\, C(a)$. The map $a \mapsto \ell_{\bar a}$ is the composite of $C$ with $b \mapsto \ell_b$, which was just shown to be one-to-one, onto $(c_0)'$ and norm-preserving. Hence $a \mapsto \ell_{\bar a}$ is one-to-one and onto, $\|\ell_{\bar a}\| = \|\bar a\|_1 = \|a\|_1$, and it is linear:
+>
+> $$
+> \ell_{\overline{a + a'}} = \ell_{\bar a + \bar a'} = \ell_{\bar a} + \ell_{\bar a'}, \qquad \ell_{\overline{ca}} = \ell_{\bar c\, \bar a} = \overline{\bar c}\, \ell_{\bar a} = c\, \ell_{\bar a} .
+> $$
+>
+> Finally $\ell_{\bar a}(x) = \sum_j x_j\, \overline{\overline{a_j}} = \sum_j x_j a_j$, as stated.
+
+^pf-36-8
+
+*Uses:* [[§36 Duality in Normed Spaces#^thm-36-4|§36.4]], [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^cor-36-5|§36.5]]
+
+> [!theorem] Proposition §36.9: The Dual of the Space of Convergent Sequences
+> Let $C = \{ a = (a_1, a_2, \ldots) : (a_n) \text{ converges in } \mathbb{R} \}$ with the norm $|a| = \sup_n |a_n|$ (the space $c$ in the proof of Example [[§36 Duality in Normed Spaces#^ex-36-2|§36.2]]), and write $\lim a = \lim_{n \to \infty} a_n$.
+>
+> - (1) For $b \in \ell^1$, $l(a) = \sum_{n=1}^\infty a_n b_n$ defines $l \in C'$, with $\|l\| = \|b\|_1$.
+> - (2) Not every $l \in C'$ is of this form: $l(a) = \lim a$ is in $C'$ and is not.
+> - (3) Every $l \in C'$ is
+>
+>   $$
+>   l(a) = b_0 \lim a + \sum_{n=1}^\infty a_n b_n
+>   $$
+>
+>   for a unique $(b_0, b_1, b_2, \ldots)$ with $\sum_{n \ge 0} |b_n| < \infty$, and $\|l\| = |b_0| + \sum_{n \ge 1} |b_n|$.
+>
+> So $C'$ is isometric to $\ell^1$ (indexed from $0$) through the formula of (3), not through that of (1).
+>
+> *Source: HW6, Problem 2*
+
+^prop-36-9
+
+> [!proof]+ Proof
+> (HW6, Problem 2.) The homework asks to show $C' = \ell^1$ in two steps: (a) for $b \in \ell^1$, $l(a) = \sum_n a_n b_n$ defines $l \in C'$; (b) every $l \in C'$ is of the form $l(a) = \sum_n a_n b_n$ with $b \in \ell^1$. Part (1) of the proposition is (a), part (2) is the counterexample to (b) below, and part (3) is part (b) of the claim below.
+>
+> **Conventions.** $e_k = (0, \ldots, 0, 1, 0, \ldots)$ is the sequence with $1$ in place $k$. For a scalar $\beta$ let $\operatorname{sgn} \beta = \bar\beta/|\beta|$ if $\beta \neq 0$ and $\operatorname{sgn} 0 = 0$; then $|\operatorname{sgn}\beta| \le 1$ and $\beta \operatorname{sgn}\beta = |\beta|$ (for real $\beta$ this is the usual sign). For a sequence $a$ and $N \in \mathbb{N}$, $P_N a = (a_1, \ldots, a_N, 0, 0, \ldots) = \sum_{n=1}^N a_n e_n$. For $\ell \in X'$, $\|\ell\| = \sup_{x \neq 0} |\ell(x)|/\|x\|$, so $|\ell(x)| \le \|\ell\|\|x\|$.
+>
+> A convergent sequence is bounded, so $|a| < \infty$ for $a \in C$. Write $\lim a = \lim_{n\to\infty} a_n$; then $|\lim a| \le |a|$. Write $c_0 \subseteq C$ for the sequences with limit $0$, and $\mathbf 1 = (1, 1, 1, \ldots) \in C$.
+>
+> **(a)** Let $b \in \ell^1$ and $a \in C$. Since $|a_n b_n| \le |a|\,|b_n|$ and $\sum_n |b_n| = \|b\|_1 < \infty$, the series $\sum_n a_n b_n$ converges absolutely, so $l(a)$ is defined, and
+>
+> $$
+> |l(a)| \le \sum_n |a_n b_n| \le |a|\, \|b\|_1 .
+> $$
+>
+> $l$ is linear because $\sum_n (\alpha a_n + \beta a'_n) b_n = \alpha \sum_n a_n b_n + \beta \sum_n a'_n b_n$ (sums of convergent series). Hence $l \in C'$ with $\|l\| \le \|b\|_1$.
+>
+> *In fact $\|l\| = \|b\|_1$.* Let $a^{(N)} = \sum_{n=1}^N \operatorname{sgn}(b_n)\, e_n$. It is eventually $0$, so $a^{(N)} \in C$, and $|a^{(N)}| \le 1$. Then
+>
+> $$
+> \|l\| \ge |l(a^{(N)})| = \sum_{n=1}^N |b_n| \xrightarrow[N\to\infty]{} \|b\|_1 .
+> $$
+>
+> So $b \mapsto l$ is a linear *isometry* $\ell^1 \to C'$.
+>
+> **(b) As stated, (b) is false for $C$.** The functional $l(a) = \lim a$ is linear, and $|l(a)| \le |a|$, so $l \in C'$. If $l(a) = \sum_n a_n b_n$ for some $b \in \ell^1$, then $b_k = l(e_k) = \lim e_k = 0$ for every $k$, so $l = 0$; but $l(\mathbf 1) = 1$. So the map in (a) is not onto $C'$.
+>
+> What is true, and what (b) should say, is the following.
+> **Claim.**
+>
+> - (a) Every $l \in (c_0)'$ is $l(a) = \sum_n a_n b_n$ for a unique $b \in \ell^1$, and $\|l\| = \|b\|_1$. So $(c_0)' = \ell^1$.
+> - (b) Every $l \in C'$ is
+>
+>   $$
+>   l(a) = b_0 \lim a + \sum_{n=1}^\infty a_n b_n
+>   $$
+>
+>   for a unique $(b_0, b_1, b_2, \ldots)$ with $\sum_{n \ge 0}|b_n| < \infty$, and $\|l\| = |b_0| + \sum_{n \ge 1} |b_n|$. So $C'$ is again isometric to $\ell^1$ (indexed from $0$), but through this formula. The formula of (b) holds exactly when $b_0 = 0$, i.e. $l(\mathbf 1) = \sum_n l(e_n)$.
+>
+> *Proof of the claim.* Let $l \in C'$ (or $l \in (c_0)'$) and put $b_n = l(e_n)$ for $n \ge 1$.
+>
+> *Step 1: $b \in \ell^1$ and $\|b\|_1 \le \|l\|$.* With $a^{(N)} = \sum_{n=1}^N \operatorname{sgn}(b_n)\, e_n \in c_0$ as in (a), $|a^{(N)}| \le 1$ and, by linearity,
+>
+> $$
+> \sum_{n=1}^N |b_n| = \sum_{n=1}^N \operatorname{sgn}(b_n)\, l(e_n) = l(a^{(N)}) \le \|l\|.
+> $$
+>
+> Letting $N \to \infty$ gives $\|b\|_1 \le \|l\|$.
+>
+> *Step 2: the formula on $c_0$.* Let $a \in c_0$. Then
+>
+> $$
+> |a - P_N a| = \sup_{n > N} |a_n| \xrightarrow[N\to\infty]{} 0,
+> $$
+>
+> because $a_n \to 0$. So $P_N a \to a$ in $C$. As $l$ is bounded, hence continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), and linear,
+>
+> $$
+> l(a) = \lim_{N} l(P_N a) = \lim_N \sum_{n=1}^N a_n l(e_n) = \sum_{n=1}^\infty a_n b_n .
+> $$
+>
+> With Step 1 and part (a) (applied on $c_0$), this proves (a) of the claim (which is Proposition [[§36 Duality in Normed Spaces#^prop-36-8|§36.8]], in the pairing without the bar): $\|l\| = \|b\|_1$, and $b$ is unique because $b_n = l(e_n)$ is forced.
+>
+> *Step 3: the formula on $C$.* Let $a \in C$ and $L = \lim a$. Then $a - L\mathbf 1 \in c_0$, so by Step 2 and linearity
+>
+> $$
+> l(a) = L\, l(\mathbf 1) + \sum_n (a_n - L) b_n = L\Bigl( l(\mathbf 1) - \sum_n b_n \Bigr) + \sum_n a_n b_n,
+> $$
+>
+> where splitting the series is allowed because $\sum_n b_n$ and $\sum_n a_n b_n$ converge absolutely. So $l(a) = b_0 \lim a + \sum_n a_n b_n$ with $b_0 = l(\mathbf 1) - \sum_n b_n$. Uniqueness: $b_n = l(e_n)$ ($n \ge 1$) and then $b_0 = l(\mathbf 1) - \sum_n b_n$ are forced by evaluating on $e_n$ and $\mathbf 1$.
+>
+> *Step 4: the norm.* From the formula, $|l(a)| \le |b_0||a| + \sum_n |b_n||a|$. For the reverse inequality let
+>
+> $$
+> a^{(N)}_n = \begin{cases} \operatorname{sgn}(b_n), & n \le N, \\ \operatorname{sgn}(b_0), & n > N. \end{cases}
+> $$
+>
+> It is eventually constant, so $a^{(N)} \in C$ with $\lim a^{(N)} = \operatorname{sgn}(b_0)$, and $|a^{(N)}| \le 1$. Then
+>
+> $$
+> l(a^{(N)}) = |b_0| + \sum_{n=1}^N |b_n| + \operatorname{sgn}(b_0) \sum_{n > N} b_n \xrightarrow[N\to\infty]{} |b_0| + \sum_{n \ge 1} |b_n|,
+> $$
+>
+> since the tail $\sum_{n > N} b_n \to 0$. So $\|l\| \ge |b_0| + \sum_{n\ge1}|b_n|$, and equality holds.
+>
+> *Remark.* So the intended statement is presumably either $C = c_0$ (then (b) is exactly Claim (a)) or $C' \cong \ell^1$ via $(b_0, b_1, \ldots)$. The extra coordinate $b_0$ comes from the one extra dimension: $C = c_0 \oplus \operatorname{span}\{\mathbf 1\}$.
+
+^pf-36-9
+
+*Uses:* [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^prop-36-8|§36.8]]
+
 ## Distance to a Subspace
 
 The next theorem extends Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.2]], which is the case $Y = \{0\}$, from the norm of a vector to its distance from a subspace.
+
+![[m556-36-1.svg]]
+
+A heuristic, pretending there is an inner product: the distance from $z$ to $Y$ is the length of the perpendicular from $z$ to $Y$, i.e. of the projection of $z$ onto the perpendicular direction $Y^\perp$. If $Y^\perp$ is spanned by orthonormal $e_j$, that projection is $\sum_j (z, e_j)\, e_j$, and each $(z, e_j)$ is a bounded functional of norm $1$ vanishing on $Y$, applied to $z$. In a normed space “perpendicular to $Y$” is replaced by “a functional vanishing on $Y$”, and the theorem below says the heuristic is exact.
 
 > [!theorem] Theorem §36.10: Distance to a Subspace
 > Let $X$ be a normed linear space over $\mathbb{F}$, $Y$ a linear subspace of $X$, and $z \in X$. Then
@@ -417,10 +611,6 @@ The next theorem extends Theorem [[§36 Duality in Normed Spaces#^thm-36-2|§36.
 > $$
 
 ^thm-36-10
-
-![[m556-36-1.svg]]
-
-A heuristic, pretending there is an inner product: the distance from $z$ to $Y$ is the length of the perpendicular from $z$ to $Y$, i.e. of the projection of $z$ onto the perpendicular direction $Y^\perp$. If $Y^\perp$ is spanned by orthonormal $e_j$, that projection is $\sum_j (z, e_j)\, e_j$, and each $(z, e_j)$ is a bounded functional of norm $1$ vanishing on $Y$, applied to $z$. In a normed space “perpendicular to $Y$” is replaced by “a functional vanishing on $Y$”, and the theorem says the heuristic is exact.
 
 > [!proof]+ Proof
 > **Step 1: $\sup \le \inf$.** Let $\ell \in X'$ with $\|\ell\| \le 1$ and $\ell(y) = 0$ for all $y \in Y$. Then $\ell(z) = \ell(z) - \ell(y) = \ell(z - y)$ for every $y \in Y$, so
@@ -537,6 +727,8 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-10|§36.10]] re
 
 *Uses:* [[§36 Duality in Normed Spaces#^def-36-1|Def. §36.1]]
 
+Motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]), and in any linear space $X \cong X/Y \oplus Y$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-7|§2.7]]); so $X/Y$ and $Y^\perp$ look like each other's dual.
+
 > [!theorem] Theorem §36.13: The Dual of a Quotient
 > Let $X$ be a normed linear space and $Y$ a closed linear subspace of $X$, so that $X/Y$ is a normed linear space with the quotient norm (Theorem [[§14 New Normed Spaces from Old#^thm-14-9|§14.9]]). Then $(X/Y)'$ is isometrically isomorphic to $Y^\perp$. Here both sides carry a norm — $(X/Y)'$ the dual norm of the quotient norm, $Y^\perp$ the norm of $X'$ — and the isomorphism preserves it.
 >
@@ -626,10 +818,8 @@ In this notation Theorem [[§36 Duality in Normed Spaces#^thm-36-10|§36.10]] re
 ^lem-36-14
 
 > [!proof]+ Proof
-> *(Not from lecture.)* $\overline{Y}$ is closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]]), and a linear subspace: if $y_n \to z$, $y_n' \to z'$ with $y_n, y_n' \in Y$, then $c y_n + c' y_n' \in Y$ converges to $c z + c' z'$. If $\ell$ vanishes on $\overline{Y}$, it vanishes on $Y \subset \overline{Y}$: $(\overline{Y})^\perp \subset Y^\perp$. Conversely, let $\ell \in Y^\perp$ and $z \in \overline{Y}$, $z = \lim y_n$ with $y_n \in Y$; $\ell$ is continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), so $\ell(z) = \lim_n \ell(y_n) = 0$. Hence $Y^\perp \subset (\overline{Y})^\perp$. Finally Theorem [[§36 Duality in Normed Spaces#^thm-36-13|§36.13]], applied to the closed subspace $\overline{Y}$, gives $(X/\overline{Y})' \cong (\overline{Y})^\perp = Y^\perp$.
+> *(Not from lecture.)* $\overline{Y}$ is closed (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](a)), and a linear subspace (Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](d)): if $y_n \to z$, $y_n' \to z'$ with $y_n, y_n' \in Y$, then $c y_n + c' y_n' \in Y$ converges to $c z + c' z'$. If $\ell$ vanishes on $\overline{Y}$, it vanishes on $Y \subset \overline{Y}$: $(\overline{Y})^\perp \subset Y^\perp$. Conversely, let $\ell \in Y^\perp$ and $z \in \overline{Y}$, $z = \lim y_n$ with $y_n \in Y$; $\ell$ is continuous (Proposition [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]]), so $\ell(z) = \lim_n \ell(y_n) = 0$. Hence $Y^\perp \subset (\overline{Y})^\perp$. Finally Theorem [[§36 Duality in Normed Spaces#^thm-36-13|§36.13]], applied to the closed subspace $\overline{Y}$, gives $(X/\overline{Y})' \cong (\overline{Y})^\perp = Y^\perp$.
 
 ^pf-36-14
 
 *Uses:* [[§11 Normed Linear Spaces#^prop-11-7|§11.7]], [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^prop-26-2|§26.2]], [[§36 Duality in Normed Spaces#^thm-36-13|§36.13]]
-
-Motivation: in a Hilbert space, $X = Y \oplus Y^\perp$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-4|§25.4]]), and in any linear space $X \cong X/Y \oplus Y$ (Theorem [[§2 Quotient Spaces and Complements#^thm-2-7|§2.7]]); so $X/Y$ and $Y^\perp$ look like each other's dual.

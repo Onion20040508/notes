@@ -13,7 +13,7 @@ tags: [differentiable-manifolds, hub]
 ## Its proof uses
 - [[§1 Point-Set Topology Review#^prop-1-8|Proposition §1.8: Compactness]]
 - [[§3 Subspaces and Products#^thm-3-10|Theorem §3.10: Universal Property of the Product]]
-- [[§5 Quotient Maps#^cor-5-2|Corollary §5.2: The Form Used in Practice]]
+- [[§5 Quotient Maps#^cor-5-3|Corollary §5.3: The Form Used in Practice]]
 - [[§14 Homogeneous Spaces#^def-14-4|Definition §14.4: Orbit Map]]
 - [[§14 Homogeneous Spaces#^lem-14-5|Lemma §14.5: Homogeneous Spaces Are Coset Spaces]]
 - [[§15 The Topology of G∕H and Real Grassmannians#^cor-15-2|Corollary §15.2: π Is a Quotient Map]]

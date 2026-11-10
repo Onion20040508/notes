@@ -138,7 +138,7 @@ tags: [functional-analysis, math556]
 > - Used in ODEs: the Picard iterates for $y' = f(t, y)$ form a Cauchy sequence in $C[-h, h]$ with the supremum norm, and their limit is the solution, [[§14 The Existence and Uniqueness Theorem#^thm-14-7|331 Thm. §14.7]].
 
 > [!remark] Remark
-> The proof is the “candidate, then close” pattern ([[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]]) in its simplest form, with one extra step that has no analogue in $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]): the candidate must be shown to lie in the space, and here that is a genuine theorem (a uniform limit of continuous functions is continuous), not a bookkeeping check. The $3\varepsilon$ argument in Step 3 is exactly where uniformity, not just pointwise convergence, is used.
+> The proof is the “candidate, then close” pattern ([[Functional Analysis Problem-Solving Techniques#^rem-t5|Technique 5]]) in its simplest form, with one step that is harder than in $\ell^p$ ([[§18 Minkowski's Inequality and the Spaces ℓᵖ#^thm-18-5|§18.5]]): the candidate must be shown to lie in the space, and here that is a genuine theorem (a uniform limit of continuous functions is continuous), not a bookkeeping check. The $3\varepsilon$ argument in Step 3 is exactly where uniformity, not just pointwise convergence, is used.
 
 ^rem-12-1
 
@@ -211,14 +211,14 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 > $$
 >
 > - (a) The limit exists and depends only on the classes, and $\bar d$ is a metric on $\overline{M}$.
-> - (b) $\bar d(x, y) = d(x, y)$ for $x, y \in M$ (identified with constant sequences), so $M \subset \overline{M}$ isometrically.
+> - (b) $\bar d(x, y) = d(x, y)$ for $x, y \in M$ (identified with constant sequences), so the identification of $M$ with a subset of $\overline{M}$ preserves distances (it is an isometry, defined in [[§13 The Completion of a Normed Space|§13]], Definition [[§13 The Completion of a Normed Space#^def-13-1|§13.1]]).
 > - (c) $M$ is dense in $\overline{M}$: if $\xi = [\{x_n\}]$, then $x_k \to \xi$ in $\overline{M}$ as $k \to \infty$.
 > - (d) $(\overline{M}, \bar d)$ is complete.
 
 ^prop-12-3
 
 > [!proof]+ Proof
-> (Not covered in lecture; added because [[§12 Completeness#^ex-12-1|Example §12.1]], [[§13 The Completion of a Normed Space#^rem-13-5|Remark “How Do We Know We Have Not Added Too Much?”]] and the normed case below rely on these facts.)
+> (Not covered in lecture; added because [[§12 Completeness#^ex-12-1|Example §12.1]], [[§13 The Completion of a Normed Space#^rem-13-5|Remark “How Do We Know We Have Not Added Too Much?”]] and the normed case (Theorem [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]](e)) rely on these facts.)
 >
 > (a) By the triangle inequality, applied twice, $|d(x_n, y_n) - d(x_m, y_m)| \le d(x_n, x_m) + d(y_n, y_m)$, so $\{d(x_n, y_n)\}$ is a Cauchy sequence of real numbers and converges. If $\{x_n\} \sim \{x_n'\}$ and $\{y_n\} \sim \{y_n'\}$, the same estimate gives $|d(x_n, y_n) - d(x_n', y_n')| \le d(x_n, x_n') + d(y_n, y_n') \to 0$, so the limit depends only on the classes. Symmetry and the triangle inequality hold termwise and pass to the limit, and $\bar d \ge 0$. Finally $\bar d([\{x_n\}], [\{y_n\}]) = 0$ iff $d(x_n, y_n) \to 0$ iff $\{x_n\} \sim \{y_n\}$ iff the two classes are equal.
 >
@@ -233,8 +233,6 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 > $$
 >
 > so $\{z_m\}$ is Cauchy in $M$; let $\xi = [\{z_m\}] \in \overline{M}$. Then $\bar d(\xi_m, \xi) \le 1/m + \bar d(z_m, \xi)$, and $\bar d(z_m, \xi) \to 0$ as $m \to \infty$ by (c) applied to the representative $\{z_k\}$ of $\xi$. Hence $\xi_m \to \xi$.
->
-> For a normed linear space $X$ with the norm of Theorem [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]], $\bigl\| [\{x_n\}] - [\{y_n\}] \bigr\|_{\overline{X}} = \lim_n \|x_n - y_n\| = \bar d\bigl([\{x_n\}], [\{y_n\}]\bigr)$ for the metric $d(x, y) = \|x - y\|$ of $X$, so (c) says that $X$ is dense in $\overline{X}$.
 
 ^pf-12-3
 
@@ -244,8 +242,72 @@ Note that $d(x_n, y_n)$ makes sense whether or not either sequence has a limit i
 > - The same construction one level down: ℝ as Cauchy classes of ℚ ([[§10a Cauchy Sequences#^rem-10a-4|451 Remark (construction of the reals)]]); (c) and (d) for $M = \mathbb{Q}$ are [[§6★ ℝ from Cauchy Sequences of Rationals#^cor-6s-9|451 §6★.9]] and [[§6★ ℝ from Cauchy Sequences of Rationals#^thm-6s-10|451 §6★.10]].
 > - The normed version, where the linear structure and the norm are added: Theorem [[§13 The Completion of a Normed Space#^thm-13-1|§13.1]]; uniqueness: Corollary [[§13 The Completion of a Normed Space#^cor-13-4|§13.4]].
 
+> [!theorem] Proposition §12.4: Identifying the Completion of a Metric Space
+> Let $(M, d)$ be a metric space, $(Z, \rho)$ a complete metric space, and $J : M \to Z$ a map with $\rho(Jx, Jy) = d(x, y)$ for all $x, y \in M$. Let $C$ be the closure of $J(M)$ in $Z$ (Definition [[§11 Normed Linear Spaces#^def-11-7|§11.7]]). Then
+>
+> $$
+> \Phi : \overline{M} \to C, \qquad \Phi\bigl([\{x_n\}]\bigr) = \lim_{n \to \infty} J x_n,
+> $$
+>
+> is well defined, one-to-one and onto, and it preserves distances:
+>
+> $$
+> \rho\bigl(\Phi(\xi), \Phi(\eta)\bigr) = \bar d(\xi, \eta) \qquad \text{for all } \xi, \eta \in \overline{M},
+> $$
+>
+> with $\bar d$ the metric of Proposition [[§12 Completeness#^prop-12-3|§12.3]]. Moreover $\Phi(x) = Jx$ for $x \in M$ (identified with its constant sequence). In particular, if $M$ is a subset of $Z$ with the restricted metric ($J$ the inclusion), then the completion of $M$ is identified with the closure of $M$ in $Z$, by a distance-preserving bijection that is the identity on $M$.
+
+^prop-12-4
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* Convergent sequences in a metric space are Cauchy and have a unique limit (Proposition [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], which holds in any metric space by the remark after it). The triangle inequality, applied twice, gives for all $a, a', b, b' \in Z$
+>
+> $$
+> \rho(a, b) \le \rho(a, a') + \rho(a', b') + \rho(b', b), \qquad \rho(a', b') \le \rho(a', a) + \rho(a, b) + \rho(b, b'),
+> $$
+>
+> that is, the *four-point estimate*
+>
+> $$
+> \bigl| \rho(a, b) - \rho(a', b') \bigr| \le \rho(a, a') + \rho(b, b').
+> $$
+>
+> *The limit exists and lies in $C$.* Let $\{x_n\}$ be Cauchy in $M$. Since $\rho(Jx_n, Jx_m) = d(x_n, x_m)$, the sequence $\{Jx_n\}$ is Cauchy in $Z$, and it converges to some $z \in Z$ because $Z$ is complete (Definition [[§12 Completeness#^def-12-1|§12.1]]). As a limit of a sequence in $J(M)$, $z$ lies in $C$.
+>
+> *Well defined.* Let $\{x_n\} \sim \{x_n'\}$, with $Jx_n \to z$ and $Jx_n' \to z'$. Then
+>
+> $$
+> \rho(z, z') \le \rho(z, Jx_n) + \rho(Jx_n, Jx_n') + \rho(Jx_n', z') = \rho(z, Jx_n) + d(x_n, x_n') + \rho(Jx_n', z') \to 0,
+> $$
+>
+> so $\rho(z, z') = 0$ and $z = z'$.
+>
+> *Distances are preserved.* Let $\xi = [\{x_n\}]$, $\eta = [\{y_n\}]$, $z = \Phi(\xi)$, $w = \Phi(\eta)$. By the four-point estimate,
+>
+> $$
+> \bigl| \rho(Jx_n, Jy_n) - \rho(z, w) \bigr| \le \rho(Jx_n, z) + \rho(Jy_n, w) \to 0,
+> $$
+>
+> so
+>
+> $$
+> \rho(z, w) = \lim_{n \to \infty} \rho(Jx_n, Jy_n) = \lim_{n \to \infty} d(x_n, y_n) = \bar d(\xi, \eta).
+> $$
+>
+> *One-to-one.* If $\Phi(\xi) = \Phi(\eta)$, then $\bar d(\xi, \eta) = \rho(\Phi(\xi), \Phi(\eta)) = 0$, so $\xi = \eta$, because $\bar d$ is a metric (Proposition [[§12 Completeness#^prop-12-3|§12.3]](a)).
+>
+> *Onto.* Let $z \in C$. By the definition of the closure there are $x_n \in M$ with $Jx_n \to z$. The convergent sequence $\{Jx_n\}$ is Cauchy in $Z$, and $d(x_n, x_m) = \rho(Jx_n, Jx_m)$, so $\{x_n\}$ is Cauchy in $M$; by definition $\Phi([\{x_n\}]) = z$.
+>
+> *On $M$.* For $x \in M$, $\Phi([(x, x, \ldots)]) = \lim_n Jx = Jx$.
+>
+> *The case $M \subset Z$.* The inclusion $J$ satisfies $\rho(Jx, Jy) = \rho(x, y) = d(x, y)$, and $C$ is the closure of $M$ in $Z$; so $\Phi$ is a distance-preserving bijection of $\overline{M}$ onto that closure with $\Phi(x) = x$ for $x \in M$.
+
+^pf-12-4
+
+*Uses:* [[§11 Normed Linear Spaces#^prop-11-6|§11.6]], [[§12 Completeness#^def-12-1|Def. §12.1]], [[§12 Completeness#^prop-12-3|§12.3]]
+
 > [!example] Example §12.1: Completions of Subsets of $\mathbb{R}^n$
-> For subsets of $\mathbb{R}^n$ with the usual metric, completion is closure:
+> For subsets $M$ of $\mathbb{R}^n$ with the usual metric, completion is closure: $\mathbb{R}^n$ is complete (Corollary [[§14 New Normed Spaces from Old#^cor-14-5|§14.5]] in [[§14 New Normed Spaces from Old|§14]]), so by Proposition [[§12 Completeness#^prop-12-4|§12.4]] with $Z = \mathbb{R}^n$ and $J$ the inclusion, the completion of $M$ is identified with the closure of $M$ in $\mathbb{R}^n$. In the two cases below $\overline{M}$ is written for that closure.
 > - $M = (0, 1)$ with $d(x,y) = |x - y|$: $\overline{M} = [0, 1]$. The missing limits are the endpoints, each the limit of Cauchy sequences such as $(1/n)$ and $(1 - 1/n)$.
 > - $M = B_1(0) = \{ x \in \mathbb{R}^2 : \|x\| < 1 \}$, the open unit disk: $\overline{M} = \{ \|x\| \le 1 \}$, the closed disk.
 >

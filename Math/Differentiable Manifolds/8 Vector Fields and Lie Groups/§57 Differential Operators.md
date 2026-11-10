@@ -9,7 +9,7 @@ tags: [differentiable-manifolds, math591]
 
 *Stage: fields — Vector fields and multiplications by functions generate a ring of operators on $C^\infty(M)$; its elements have an order, and in a chart they are the linear partial differential operators with smooth coefficients.*
 
-*Lecture 15 introduced the ring of differential operators in passing, as an aside to the locality of derivations ([[§56 Vector Fields#^lem-56-6|Lemma §56.6]]): its definition, the fact that its elements are local, and, without proof, Peetre's theorem. Those are collected here. Everything else in this section — the algebra of multiplications and vector fields, the order of an operator, the coordinate form and the commutator estimate in [[§58 Lie Bracket and Lie Algebra#^prop-58-6|§58]] — is not from lecture; it makes precise the remark that differential operators are given by differential expressions in local coordinates.*
+*Lecture 15 introduced the ring of differential operators in passing, as an aside to the locality of derivations ([[§56 Vector Fields#^lem-56-9|Lemma §56.9]]): its definition, the fact that its elements are local, and, without proof, Peetre's theorem. Those are collected here. Everything else in this section — the algebra of multiplications and vector fields, the order of an operator, the coordinate form and the commutator estimate in [[§58 Lie Bracket and Lie Algebra#^prop-58-6|§58]] — is not from lecture; it makes precise the remark that differential operators are given by differential expressions in local coordinates.*
 
 > [!definition] Definition §57.1: Multiplication Operator
 > For $g \in C^\infty(M)$, the **multiplication operator** $m_g : C^\infty(M) \to C^\infty(M)$ is $m_g f = g f$.
@@ -63,7 +63,7 @@ tags: [differentiable-manifolds, math591]
 > D_\mathbf{X} \quad (\mathbf{X} \in \mathfrak{X}(M)) \qquad \text{and} \qquad m_g \quad (g \in C^\infty(M)) ,
 > $$
 >
-> the operators of [[§56 Vector Fields#^lem-56-3|Lemma §56.3]] and [[§57 Differential Operators#^def-57-1|Definition §57.1]]. Its elements, the **differential operators**, are the finite sums of finite composites of such operators.
+> the operators of [[§56 Vector Fields#^lem-56-4|Lemma §56.4]] and [[§57 Differential Operators#^def-57-1|Definition §57.1]]. Its elements, the **differential operators**, are the finite sums of finite composites of such operators.
 
 ^def-57-2
 
@@ -81,13 +81,13 @@ In words: apply a vector field, compose with multiplication by a function or wit
 > [!proof]+ Proof
 > *(Not from lecture; filled in.)* Both parts are equalities of operators on $C^\infty(M)$: two operators are equal when they give the same function on every $f$, and two functions are equal when they agree at every point. So let $f \in C^\infty(M)$ and $p \in M$.
 >
-> *(1)* $g\mathbf{X}$ is a vector field by Proposition [[§56 Vector Fields#^prop-56-2|§56.2]](4), so $D_{g\mathbf{X}}$ is defined (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]). Using in turn Definition [[§57 Differential Operators#^def-57-1|§57.1]], the definition of $D_\mathbf{X}$ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]), the pointwise scalar multiplication of derivations (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]), and Definition [[§56 Vector Fields#^def-56-3|§56.3]]:
+> *(1)* $g\mathbf{X}$ is a vector field by Proposition [[§56 Vector Fields#^prop-56-2|§56.2]](4), so $D_{g\mathbf{X}}$ is defined (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]). Using in turn Definition [[§57 Differential Operators#^def-57-1|§57.1]], the definition of $D_\mathbf{X}$ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]), the pointwise scalar multiplication of derivations (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]]), and Definition [[§56 Vector Fields#^def-56-3|§56.3]]:
 >
 > $$
 > \big((m_g \circ D_\mathbf{X}) f\big)(p) = g(p)\,(D_\mathbf{X} f)(p) = g(p)\, \mathbf{X}_p[f] = \big(g(p)\, \mathbf{X}_p\big)[f] = (g\mathbf{X})_p[f] = (D_{g\mathbf{X}} f)(p) .
 > $$
 >
-> *(2)* By the product rule for the derivation $D_\mathbf{X}$ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]), applied to the product $gf$:
+> *(2)* By the product rule for the derivation $D_\mathbf{X}$ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]), applied to the product $gf$:
 >
 > $$
 > D_\mathbf{X}(m_g f) = D_\mathbf{X}(gf) = g\, D_\mathbf{X} f + f\, D_\mathbf{X} g = (m_g \circ D_\mathbf{X}) f + m_{\mathbf{X}g} f = \big(m_g \circ D_\mathbf{X} + m_{\mathbf{X}g}\big) f .
@@ -97,7 +97,7 @@ In words: apply a vector field, compose with multiplication by a function or wit
 
 ^pf-57-2
 
-*Uses:* [[§56 Vector Fields#^def-56-3|Def. §56.3]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§56 Vector Fields#^def-56-5|Def. §56.5]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§57 Differential Operators#^def-57-1|Def. §57.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
+*Uses:* [[§56 Vector Fields#^def-56-3|Def. §56.3]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§56 Vector Fields#^def-56-7|Def. §56.7]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§57 Differential Operators#^def-57-1|Def. §57.1]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]]
 
 > [!example] Example §57.1: Differential Operators in Coordinates
 > *(Not from lecture.)* On $M = \mathbb{R}$ with coordinate $x$, write $\partial = D_{\partial/\partial x}$. Then $P = \partial \circ \partial + m_x \circ \partial$ is a differential operator, $Pf = f'' + x f'$, of [[§57 Differential Operators#^def-57-3|order]] $2$ ([[§57 Differential Operators#^def-57-3|Definition §57.3]] below). On $M = \mathbb{R}^2$ the Laplacian $\Delta = \partial_x \circ \partial_x + \partial_y \circ \partial_y$ is one, also of order $2$. Composites can always be rewritten with the multiplications in front, because of the product rule $\partial \circ m_g = m_{\partial g} + m_g \circ \partial$ ([[§57 Differential Operators#^prop-57-2|Proposition §57.2]] (2)): for instance $\partial \circ m_x \circ \partial = \partial + m_x \circ \partial \circ \partial$, that is, $(x f')' = f' + x f''$. Rewriting every composite in this way is how [[§57 Differential Operators#^prop-57-6|Proposition §57.6]] below puts any differential operator, in a chart, in the form $\sum_\alpha a_\alpha\, \partial^\alpha$ with smooth coefficients $a_\alpha$: differential operators are given by differential expressions in local coordinates.
@@ -125,7 +125,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 ^ex-57-2
 
 > [!proof]+ Proof
-> *The identity.* By Proposition [[§57 Differential Operators#^prop-57-2|§57.2]](2) with $\mathbf{X} = \partial/\partial x$ and $g = x$: $\partial \circ m_x = m_x \circ \partial + m_{\mathbf{X}x}$. Here $\mathbf{X}x = D_{\partial/\partial x}\, x = x' = 1$, the derivative of the coordinate function (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]] with the single coefficient $1$). So
+> *The identity.* By Proposition [[§57 Differential Operators#^prop-57-2|§57.2]](2) with $\mathbf{X} = \partial/\partial x$ and $g = x$: $\partial \circ m_x = m_x \circ \partial + m_{\mathbf{X}x}$. Here $\mathbf{X}x = D_{\partial/\partial x}\, x = x' = 1$, the derivative of the coordinate function (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]] with the single coefficient $1$). So
 >
 > $$
 > \partial \circ m_x = m_x \circ \partial + m_{x'} = m_x \circ \partial + m_1 ,
@@ -137,7 +137,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 
 ^pf-ex-57-2
 
-*Uses:* [[§57 Differential Operators#^prop-57-2|§57.2]], [[§57 Differential Operators#^prop-57-1|§57.1]], [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§56 Vector Fields#^lem-56-3|§56.3]]
+*Uses:* [[§57 Differential Operators#^prop-57-2|§57.2]], [[§57 Differential Operators#^prop-57-1|§57.1]], [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§56 Vector Fields#^lem-56-4|§56.4]]
 
 > [!theorem] Proposition §57.3: The Order Filtration
 > Let $M$ be a smooth manifold.
@@ -193,23 +193,23 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 >
 > because $m_g + m_h = m_{g+h}$ (Proposition [[§57 Differential Operators#^prop-57-1|§57.1]](1)), and $D_\mathbf{X} + D_\mathbf{Y} = D_{\mathbf{X}+\mathbf{Y}}$: for every $f$ and $p$, $\mathbf{X}_p[f] + \mathbf{Y}_p[f] = (\mathbf{X}_p + \mathbf{Y}_p)[f] = (\mathbf{X} + \mathbf{Y})_p[f]$ (Definitions [[§28 Derivations and the Abstract Tangent Space#^def-28-2|§28.2]] and [[§56 Vector Fields#^def-56-2|§56.2]]), with $\mathbf{X} + \mathbf{Y} \in \mathfrak{X}(M)$ (Proposition [[§56 Vector Fields#^prop-56-2|§56.2]](1)). The empty sum is $0 = m_0 + D_\mathbf{0}$. So every element of $\mathrm{Diff}_1(M)$ is of the form $m_g + D_\mathbf{Y}$. Conversely $m_g + D_\mathbf{X}$ is a sum of two composites of one generator each, with at most one vector-field factor, so it lies in $\mathrm{Diff}_1(M)$.
 >
-> *$g$ and $\mathbf{X}$ are determined by $P$.* First, $D_\mathbf{X}$ kills the constant function $1$: for every $p \in M$, $(D_\mathbf{X} 1)(p) = \mathbf{X}_p[1] = 0$ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]), because the derivation $\mathbf{X}_p$ at $p$ annihilates constants (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)).
+> *$g$ and $\mathbf{X}$ are determined by $P$.* First, $D_\mathbf{X}$ kills the constant function $1$: for every $p \in M$, $(D_\mathbf{X} 1)(p) = \mathbf{X}_p[1] = 0$ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]), because the derivation $\mathbf{X}_p$ at $p$ annihilates constants (Lemma [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]](1)).
 > Hence for $P = m_g + D_\mathbf{X}$,
 >
 > $$
 > P(1) = m_g(1) + D_\mathbf{X}(1) = g \cdot 1 + 0 = g ,
 > $$
 >
-> and then $D_\mathbf{X} = P - m_g = P - m_{P(1)}$. If also $P = m_h + D_\mathbf{Y}$, the same computation gives $h = P(1) = g$ and $D_\mathbf{Y} = P - m_{P(1)} = D_\mathbf{X}$, and $D_\mathbf{Y} = D_\mathbf{X}$ forces $\mathbf{Y} = \mathbf{X}$ by the uniqueness in Proposition [[§56 Vector Fields#^prop-56-7|§56.7]].
+> and then $D_\mathbf{X} = P - m_g = P - m_{P(1)}$. If also $P = m_h + D_\mathbf{Y}$, the same computation gives $h = P(1) = g$ and $D_\mathbf{Y} = P - m_{P(1)} = D_\mathbf{X}$, and $D_\mathbf{Y} = D_\mathbf{X}$ forces $\mathbf{Y} = \mathbf{X}$ by the uniqueness in Proposition [[§56 Vector Fields#^prop-56-10|§56.10]].
 >
-> For the last sentence. *Derivations lie in $\mathrm{Diff}_1(M)$ and kill $1$:* a derivation of $C^\infty(M)$ is $D_\mathbf{X}$ for some $\mathbf{X} \in \mathfrak{X}(M)$ (Proposition [[§56 Vector Fields#^prop-56-7|§56.7]]); $D_\mathbf{X} = m_0 + D_\mathbf{X} \in \mathrm{Diff}_1(M)$ by (2), and $D_\mathbf{X}(1) = 0$ as just shown. *Conversely*, if $P \in \mathrm{Diff}_1(M)$ has $P(1) = 0$, write $P = m_g + D_\mathbf{X}$ by (2); then $g = P(1) = 0$, so $P = m_0 + D_\mathbf{X} = D_\mathbf{X}$ (as $m_0 f = 0$), a derivation (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]).
+> For the last sentence. *Derivations lie in $\mathrm{Diff}_1(M)$ and kill $1$:* a derivation of $C^\infty(M)$ is $D_\mathbf{X}$ for some $\mathbf{X} \in \mathfrak{X}(M)$ (Proposition [[§56 Vector Fields#^prop-56-10|§56.10]]); $D_\mathbf{X} = m_0 + D_\mathbf{X} \in \mathrm{Diff}_1(M)$ by (2), and $D_\mathbf{X}(1) = 0$ as just shown. *Conversely*, if $P \in \mathrm{Diff}_1(M)$ has $P(1) = 0$, write $P = m_g + D_\mathbf{X}$ by (2); then $g = P(1) = 0$, so $P = m_0 + D_\mathbf{X} = D_\mathbf{X}$ (as $m_0 f = 0$), a derivation (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]).
 
 ^pf-57-4
 
-*Uses:* [[§57 Differential Operators#^prop-57-3|§57.3]], [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§57 Differential Operators#^prop-57-1|§57.1]], [[§57 Differential Operators#^prop-57-2|§57.2]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§56 Vector Fields#^prop-56-7|§56.7]]
+*Uses:* [[§57 Differential Operators#^prop-57-3|§57.3]], [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§57 Differential Operators#^prop-57-1|§57.1]], [[§57 Differential Operators#^prop-57-2|§57.2]], [[§56 Vector Fields#^prop-56-2|§56.2]], [[§28 Derivations and the Abstract Tangent Space#^def-28-2|Def. §28.2]], [[§56 Vector Fields#^def-56-2|Def. §56.2]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-2|§28.2]], [[§56 Vector Fields#^prop-56-10|§56.10]]
 
 > [!theorem] Lemma §57.5: Coordinate Derivations on a Chart
-> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart and $\partial_i = \partial/\partial x^i : C^\infty(U) \to C^\infty(U)$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]).
+> Let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart and $\partial_i = \partial/\partial x^i : C^\infty(U) \to C^\infty(U)$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]]).
 >
 > 1. Each $\partial_i$ is a derivation of $C^\infty(U)$: $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$.
 > 2. The $\partial_i$ commute: $\partial_i \circ \partial_j = \partial_j \circ \partial_i$. Hence $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$ for every multi-index $\alpha$ (Definition [[§55 Morse Functions and the Zero Section#^def-55-3|§55.3]]).
@@ -217,11 +217,11 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 ^lem-57-5
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* *(1)* $\partial_i$ is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on the manifold $U$ (a vector field by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], its coefficients being the constants $0$ and $1$), so it is a derivation of $C^\infty(U)$ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]]): $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$. *(2)* The $\partial_i$ commute: by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]], $(\partial_i u) \circ \varphi^{-1} = \partial u_\varphi/\partial r^i$, so $(\partial_i \partial_j u) \circ \varphi^{-1} = \partial^2 u_\varphi/\partial r^i \partial r^j$, and mixed partials of the smooth function $u_\varphi = u \circ \varphi^{-1}$ are equal ([[Schwarz–Clairaut Theorem|Clairaut's theorem]]); hence $\partial_i \circ \partial_j = \partial_j \circ \partial_i$. Finally, $\partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}$, and moving the extra factor $\partial_i$ past $\partial_1^{\alpha_1}, \ldots, \partial_{i-1}^{\alpha_{i-1}}$ one factor at a time gives $\partial_i \circ \partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_i^{\alpha_i + 1} \circ \cdots \circ \partial_m^{\alpha_m} = \partial^{\alpha + e_i}$.
+> *(Not from lecture; filled in.)* *(1)* $\partial_i$ is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on the manifold $U$ (a vector field by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], its coefficients being the constants $0$ and $1$), so it is a derivation of $C^\infty(U)$ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]]): $\partial_i(bu) = (\partial_i b)\, u + b\, \partial_i u$. *(2)* The $\partial_i$ commute: by Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]], $(\partial_i u) \circ \varphi^{-1} = \partial u_\varphi/\partial r^i$, so $(\partial_i \partial_j u) \circ \varphi^{-1} = \partial^2 u_\varphi/\partial r^i \partial r^j$, and mixed partials of the smooth function $u_\varphi = u \circ \varphi^{-1}$ are equal ([[Schwarz–Clairaut Theorem|Clairaut's theorem]]); hence $\partial_i \circ \partial_j = \partial_j \circ \partial_i$. Finally, $\partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_m^{\alpha_m}$, and moving the extra factor $\partial_i$ past $\partial_1^{\alpha_1}, \ldots, \partial_{i-1}^{\alpha_{i-1}}$ one factor at a time gives $\partial_i \circ \partial^\alpha = \partial_1^{\alpha_1} \circ \cdots \circ \partial_i^{\alpha_i + 1} \circ \cdots \circ \partial_m^{\alpha_m} = \partial^{\alpha + e_i}$.
 
 ^pf-57-5
 
-*Uses:* [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[Schwarz–Clairaut Theorem|452 §6.1]]
+*Uses:* [[§56 Vector Fields#^prop-56-1|§56.1]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[Schwarz–Clairaut Theorem|452 §6.1]]
 
 > [!theorem] Proposition §57.6: Differential Operators in a Chart
 > Let $P \in \mathrm{Diff}_k(M)$ ([[§57 Differential Operators#^def-57-3|Definition §57.3]]) and let $(U, (x^1, \ldots, x^m))$ be a chart. Then there are *unique* functions $a_\alpha \in C^\infty(U)$, one for each [[§55 Morse Functions and the Zero Section#^def-55-3|multi-index]] $\alpha$ with $|\alpha| \le k$, such that
@@ -243,7 +243,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 > $$
 >
 > of form $j$ with the smooth coefficients $g|_U\, b_\alpha$.
-> - If $A_1 = D_\mathbf{X}$ then $j = j' + 1$. For $h \in C^\infty(M)$, Lemma [[§56 Vector Fields#^lem-56-3|§56.3]] gives $(D_\mathbf{X} h)|_U = \sum_i \mathbf{X}^i\, \partial_i (h|_U)$; here $\partial h/\partial x^i(q) = \partial_i(h|_U)(q)$, both being computed from $h \circ \varphi^{-1}$ on $\varphi(U)$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]). With $h = Bf$, the product rule for $\partial_i$, and $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$,
+> - If $A_1 = D_\mathbf{X}$ then $j = j' + 1$. For $h \in C^\infty(M)$, Lemma [[§56 Vector Fields#^lem-56-4|§56.4]] gives $(D_\mathbf{X} h)|_U = \sum_i \mathbf{X}^i\, \partial_i (h|_U)$; here $\partial h/\partial x^i(q) = \partial_i(h|_U)(q)$, both being computed from $h \circ \varphi^{-1}$ on $\varphi(U)$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]]). With $h = Bf$, the product rule for $\partial_i$, and $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$,
 >
 > $$
 > (D_\mathbf{X} B f)|_U = \sum_i \mathbf{X}^i\, \partial_i \Big( \sum_\alpha b_\alpha\, \partial^\alpha u \Big) = \sum_i \sum_\alpha \mathbf{X}^i \Big( (\partial_i b_\alpha)\, \partial^\alpha u + b_\alpha\, \partial_i \partial^\alpha u \Big) = \sum_i \sum_\alpha \Big( \mathbf{X}^i\, (\partial_i b_\alpha)\, \partial^\alpha + \mathbf{X}^i\, b_\alpha\, \partial^{\alpha + e_i} \Big) u ,
@@ -251,7 +251,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 >
 > the sums over $|\alpha| \le j'$. The last step uses $\partial_i \circ \partial^\alpha = \partial^{\alpha + e_i}$, which reorders partial derivatives (Lemma [[§57 Differential Operators#^lem-57-5|§57.5]]). The coefficients $\mathbf{X}^i\, \partial_i b_\alpha$ and $\mathbf{X}^i\, b_\alpha$ are smooth on $U$ ($\mathbf{X}^i$ by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]]), and the multi-indices occurring have $|\alpha| \le j'$ and $|\alpha + e_i| = |\alpha| + 1 \le j' + 1$. Collecting the terms with the same multi-index, the right side has form $j' + 1 = j$.
 >
-> *Uniqueness.* Suppose $\sum_{|\alpha| \le k} c_\alpha\, \partial^\alpha (f|_U) = 0$ for all $f \in C^\infty(M)$, with $c_\alpha \in C^\infty(U)$; we show every $c_\beta = 0$. Fix $p \in U$, let $c = (x^1(p), \ldots, x^m(p)) = \varphi(p)$, and fix $\beta$ with $|\beta| \le k$. The function $(x - c)^\beta/\beta!$ is smooth on $U$, so by Corollary [[§56 Vector Fields#^cor-56-5|§56.5]] there is $f_\beta \in C^\infty(M)$ that agrees with it on an open $W$ with $p \in W \subseteq U$. Partial derivatives on $U$ are computed from the coordinate representation on open subsets (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), so two functions that agree on $W$ have all their iterated partial derivatives equal on $W$; hence $\partial^\alpha (f_\beta|_U)(p) = \partial^\alpha\big((x - c)^\beta/\beta!\big)(p)$ for every $\alpha$. By Lemma [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]], $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. Applying the hypothesis to $f = f_\beta$ and evaluating at $p$,
+> *Uniqueness.* Suppose $\sum_{|\alpha| \le k} c_\alpha\, \partial^\alpha (f|_U) = 0$ for all $f \in C^\infty(M)$, with $c_\alpha \in C^\infty(U)$; we show every $c_\beta = 0$. Fix $p \in U$, let $c = (x^1(p), \ldots, x^m(p)) = \varphi(p)$, and fix $\beta$ with $|\beta| \le k$. The function $(x - c)^\beta/\beta!$ is smooth on $U$, so by Corollary [[§56 Vector Fields#^cor-56-8|§56.8]] there is $f_\beta \in C^\infty(M)$ that agrees with it on an open $W$ with $p \in W \subseteq U$. Partial derivatives on $U$ are computed from the coordinate representation on open subsets (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]]), so two functions that agree on $W$ have all their iterated partial derivatives equal on $W$; hence $\partial^\alpha (f_\beta|_U)(p) = \partial^\alpha\big((x - c)^\beta/\beta!\big)(p)$ for every $\alpha$. By Lemma [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]], $\partial^\alpha (x - c)^\beta(p)$ vanishes unless $\alpha = \beta$, where it is $\beta!$. Applying the hypothesis to $f = f_\beta$ and evaluating at $p$,
 >
 > $$
 > 0 = \sum_{|\alpha| \le k} c_\alpha(p)\, \partial^\alpha (f_\beta|_U)(p) = \sum_{|\alpha| \le k} c_\alpha(p)\, \partial^\alpha\Big(\frac{(x - c)^\beta}{\beta!}\Big)(p) = c_\beta(p)\, \frac{\beta!}{\beta!} = c_\beta(p) .
@@ -261,7 +261,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 
 ^pf-57-6
 
-*Uses:* [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§55 Morse Functions and the Zero Section#^def-55-3|Def. §55.3]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§56 Vector Fields#^cor-56-5|§56.5]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]], [[§57 Differential Operators#^lem-57-5|§57.5]], [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]]
+*Uses:* [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§55 Morse Functions and the Zero Section#^def-55-3|Def. §55.3]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§56 Vector Fields#^cor-56-8|§56.8]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]], [[§57 Differential Operators#^lem-57-5|§57.5]], [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]]
 
 > [!theorem] Corollary §57.7: Differential Operators on Euclidean Space
 > On $\mathbb{R}^m$, with its standard coordinates and $\partial_i = D_{\partial/\partial x^i}$,
@@ -275,7 +275,7 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 ^cor-57-7
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Here $\partial_i$ in the sense of Definition [[§55 Morse Functions and the Zero Section#^def-55-3|§55.3]] for the identity chart, $f \mapsto \partial f/\partial x^i$, is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on $\mathbb{R}^m$ (Lemma [[§56 Vector Fields#^lem-56-3|§56.3]], with coefficients $\delta^j_i$); $\partial/\partial x^i$ is a vector field by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], its coefficients being constant.
+> *(Not from lecture; filled in.)* Here $\partial_i$ in the sense of Definition [[§55 Morse Functions and the Zero Section#^def-55-3|§55.3]] for the identity chart, $f \mapsto \partial f/\partial x^i$, is the operator $D_{\partial/\partial x^i}$ of the vector field $\partial/\partial x^i$ on $\mathbb{R}^m$ (Lemma [[§56 Vector Fields#^lem-56-4|§56.4]], with coefficients $\delta^j_i$); $\partial/\partial x^i$ is a vector field by Proposition [[§56 Vector Fields#^prop-56-1|§56.1]], its coefficients being constant.
 >
 > *$\subseteq$ and uniqueness.* The identity chart $(\mathbb{R}^m, \mathrm{id})$ covers $\mathbb{R}^m$, so Proposition [[§57 Differential Operators#^prop-57-6|§57.6]] with $U = \mathbb{R}^m$ (where $f|_U = f$) gives, for $P \in \mathrm{Diff}_k(\mathbb{R}^m)$, unique $a_\alpha \in C^\infty(\mathbb{R}^m)$ with $Pf = \sum_{|\alpha| \le k} a_\alpha\, \partial^\alpha f$ for all $f$.
 >
@@ -293,14 +293,14 @@ The order counts the fewest vector-field factors with which $P$ can be written, 
 
 ^pf-57-7
 
-*Uses:* [[§57 Differential Operators#^prop-57-6|§57.6]], [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§55 Morse Functions and the Zero Section#^def-55-3|Def. §55.3]], [[§56 Vector Fields#^lem-56-3|§56.3]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§57 Differential Operators#^prop-57-3|§57.3]]
+*Uses:* [[§57 Differential Operators#^prop-57-6|§57.6]], [[§57 Differential Operators#^def-57-3|Def. §57.3]], [[§55 Morse Functions and the Zero Section#^def-55-3|Def. §55.3]], [[§56 Vector Fields#^lem-56-4|§56.4]], [[§56 Vector Fields#^prop-56-1|§56.1]], [[§57 Differential Operators#^prop-57-3|§57.3]]
 
 > [!remark]- Connections
 > - The Laplacian $\Delta = \sum_i \partial_i^2$, an operator of order $2$ in $\mathrm{Diff}(\mathbb{R}^m)$: [[§28 The Divergence Theorem in Higher Dimensions and Green's Identities#^def-28-3|Multivariable Analysis, Definition §28.3]].
 > - The same multi-index derivatives $\partial^\alpha$ on $C_c^\infty(\Omega)$ define the Sobolev norms of 556: [[§23 Cauchy–Schwarz and the Induced Norm#^ex-23-3|556 Example §23.3]], [[§33 Sobolev Spaces and Weak Derivatives|556 §33]].
 
 > [!theorem] Lemma §57.8: Differential Operators Are Local
-> Every differential operator (Definition [[§57 Differential Operators#^def-57-2|§57.2]]) is a local operator (Definition [[§56 Vector Fields#^def-56-6|§56.6]]).
+> Every differential operator (Definition [[§57 Differential Operators#^def-57-2|§57.2]]) is a local operator (Definition [[§56 Vector Fields#^def-56-9|§56.9]]).
 
 ^lem-57-8
 

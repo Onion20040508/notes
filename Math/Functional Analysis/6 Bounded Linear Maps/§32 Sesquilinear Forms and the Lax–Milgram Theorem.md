@@ -26,12 +26,13 @@ tags: [functional-analysis, math556]
 
 The theorem below is the infinite-dimensional version. The naive route — expanding $x$ and $y$ in an orthonormal basis and building an infinite matrix — is to be avoided, because of the ambiguity in such infinite sums; the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]] does the work instead.
 
-> [!definition] Definition §32.1: Sesquilinear Form; Bounded Form
+> [!definition] Definition §32.1: Sesquilinear Form
 > Let $X$ be a linear space over $\mathbb{F}$. A map $B : X \times X \to \mathbb{F}$ is **sesquilinear** if
-> - (1) $B(a_1 x_1 + a_2 x_2, y) = a_1 B(x_1, y) + a_2 B(x_2, y)$ for all $a_1, a_2 \in \mathbb{F}$ and $x_1, x_2, y \in X$;
-> - (2) $B(x, b_1 y_1 + b_2 y_2) = \overline{b_1}\, B(x, y_1) + \overline{b_2}\, B(x, y_2)$ for all $b_1, b_2 \in \mathbb{F}$ and $x, y_1, y_2 \in X$.
 >
-> (For $\mathbb{F} = \mathbb{R}$ this is bilinear.) If $X$ is normed, $B$ is **bounded** if there is $M > 0$ with $|B(x, y)| \le M\, \|x\|\, \|y\|$ for all $x, y \in X$.
+> 1. $B(a_1 x_1 + a_2 x_2, y) = a_1 B(x_1, y) + a_2 B(x_2, y)$ for all $a_1, a_2 \in \mathbb{F}$ and $x_1, x_2, y \in X$;
+> 2. $B(x, b_1 y_1 + b_2 y_2) = \overline{b_1}\, B(x, y_1) + \overline{b_2}\, B(x, y_2)$ for all $b_1, b_2 \in \mathbb{F}$ and $x, y_1, y_2 \in X$.
+>
+> (For $\mathbb{F} = \mathbb{R}$ this is bilinear.)
 >
 > *Lax: §6.3, conditions (i)–(ii) of Thm 6*
 
@@ -40,6 +41,15 @@ The theorem below is the infinite-dimensional version. The naive route — expan
 > [!remark]- Connections
 > - An inner product is a sesquilinear form that is also conjugate-symmetric and positive: [[§22 Definition and Examples#^def-22-1|Def. §22.1]]; finite-dimensional home [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]].
 > - The real case, bilinear forms: [[§35 Bilinear Forms and Quadratic Forms#^ladr-9-1|LADR 9.1]].
+
+> [!definition] Definition §32.2: Bounded Form
+> Let $X$ be a normed linear space over $\mathbb{F}$. A sesquilinear form $B : X \times X \to \mathbb{F}$ (Definition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|§32.1]]) is **bounded** if there is $M > 0$ with
+>
+> $$
+> |B(x, y)| \le M\, \|x\|\, \|y\| \qquad \text{for all } x, y \in X .
+> $$
+
+^def-32-2
 
 > [!theorem] Theorem §32.1: Bounded Sesquilinear Forms are Bounded Operators
 > Let $H$ be a Hilbert space over $\mathbb{F}$ and $B : H \times H \to \mathbb{F}$ a bounded sesquilinear form. Then there is a bounded linear map $A : H \to H$ with
@@ -88,12 +98,27 @@ The theorem below is the infinite-dimensional version. The naive route — expan
 
 *Uses:* [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|Def. §32.1]], [[§31 Dual Spaces#^thm-31-2|§31.2]], [[§22 Definition and Examples#^def-22-1|Def. §22.1]], [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|§23.1]], [[§30 Boundedness and Continuity#^def-30-2|Def. §30.2]], [[§30 Boundedness and Continuity#^def-30-3|Def. §30.3]], [[§30 Boundedness and Continuity#^prop-30-1|§30.1]]
 
+> [!definition] Definition §32.3: Coercive Form
+> Let $X$ be a normed linear space over $\mathbb{F}$. A sesquilinear form $B : X \times X \to \mathbb{F}$ (Definition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-1|§32.1]]) is **coercive** if there is $\beta > 0$ with
+>
+> $$
+> |B(x, x)| \ge \beta\, \|x\|^2 \qquad \text{for all } x \in X .
+> $$
+
+^def-32-3
+
+> [!remark] Remark: The Plan of the Proof
+> The theorem below says that a bounded coercive sesquilinear form $B$ on a Hilbert space $H$ represents every $\ell \in H'$ as $\ell(x) = B(x, y)$, with a unique $y \in H$. The plan of its proof: by Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|§32.1]], sesquilinearity and boundedness (conditions (1)–(3) below) give $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$. By the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]], $\ell \in H'$ if and only if $\ell(x) = (x, a)$ for some $a \in H$. So the theorem says: for every $a \in H$ there is a unique $y$ with $Ay = a$. That is, *$A$ is one-to-one and onto*, and the coercivity (condition (4) below) is what is used to prove it. Lax–Milgram is a main tool for solving elliptic PDE ([[§34 Weak Solutions of the Dirichlet Problem|§34]]).
+
+^rem-32-1
+
 > [!theorem] Theorem §32.2: Lax–Milgram
 > Let $H$ be a Hilbert space over $\mathbb{F} = \mathbb{R}$ or $\mathbb{C}$, and let $B : H \times H \to \mathbb{F}$ satisfy
-> - (1) $B(a_1 x_1 + a_2 x_2, y) = a_1 B(x_1, y) + a_2 B(x_2, y)$;
-> - (2) $B(x, b_1 y_1 + b_2 y_2) = \overline{b_1}\, B(x, y_1) + \overline{b_2}\, B(x, y_2)$;
-> - (3) $B$ is bounded: $|B(x, y)| \le M\, \|x\|\, \|y\|$ for all $x, y \in H$;
-> - (4) $B$ is **coercive**: there is $\beta > 0$ with $|B(x, x)| \ge \beta\, \|x\|^2$ for all $x \in H$.
+>
+> 1. $B(a_1 x_1 + a_2 x_2, y) = a_1 B(x_1, y) + a_2 B(x_2, y)$;
+> 2. $B(x, b_1 y_1 + b_2 y_2) = \overline{b_1}\, B(x, y_1) + \overline{b_2}\, B(x, y_2)$;
+> 3. $B$ is bounded (Definition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-2|§32.2]]): $|B(x, y)| \le M\, \|x\|\, \|y\|$ for all $x, y \in H$;
+> 4. $B$ is coercive (Definition [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^def-32-3|§32.3]]): there is $\beta > 0$ with $|B(x, x)| \ge \beta\, \|x\|^2$ for all $x \in H$.
 >
 > Then for every $\ell \in H'$ there is a unique $y \in H$ with
 >
@@ -106,7 +131,7 @@ The theorem below is the infinite-dimensional version. The naive route — expan
 ^thm-32-2
 
 > [!proof]+ Proof
-> *(Lecture 11.) By conditions (1)–(3) and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|Theorem §32.1]] there is $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$ for all $x, y$. By the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]] every $\ell \in H'$ is $\ell(x) = (x, z_0)$ for a unique $z_0 \in H$. So it suffices to show that $A$ is one-to-one and onto: then every $z_0$ is $Ay_0$ for exactly one $y_0$.
+> (Lecture 11.) By conditions (1)–(3) and [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|Theorem §32.1]] there is $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$ for all $x, y$. By the [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^thm-26-5|Riesz representation theorem]] every $\ell \in H'$ is $\ell(x) = (x, z_0)$ for a unique $z_0 \in H$. So it suffices to show that $A$ is one-to-one and onto: then every $z_0$ is $Ay_0$ for exactly one $y_0$.
 >
 > **Step 1: $A$ is one-to-one, with a lower bound.** By coercivity and Cauchy–Schwarz, for every $x \in H$,
 >
@@ -144,11 +169,6 @@ The theorem below is the infinite-dimensional version. The naive route — expan
 > Coercivity enters twice, in two different roles. In Step 1 it is combined with Cauchy–Schwarz to give the lower bound $\|Ax\| \ge \beta\|x\|$, which makes $A$ one-to-one *and* makes its range closed (Step 2): a map bounded below sends non-Cauchy sequences to non-Cauchy sequences. In Step 3 it is used on the diagonal, $B(y_0, y_0)$, to kill the orthogonal complement of the range. Neither step uses symmetry of $B$, which is the point of the theorem. The pattern “one-to-one with a lower bound, closed range, dense range” is the standard way to prove that a bounded operator on a Hilbert space is invertible.
 
 ^rem-32-2
-
-> [!remark] Remark: The Plan of the Proof
-> The outline given at the end of the lecture. By Theorem [[§32 Sesquilinear Forms and the Lax–Milgram Theorem#^thm-32-1|§32.1]], conditions (1)–(3) give $A \in \mathcal{L}(H, H)$ with $B(x, y) = (x, Ay)$. By the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]], $\ell \in H'$ if and only if $\ell(x) = (x, a)$ for some $a \in H$. So the theorem says: for every $a \in H$ there is a unique $y$ with $Ay = a$. That is, *$A$ is one-to-one and onto*, and the coercivity (4) is what will be used to prove it. Lax–Milgram is a main tool for solving elliptic PDE ([[§34 Weak Solutions of the Dirichlet Problem|§34]]).
-
-^rem-32-1
 
 > [!remark] Remark: What is New in Lax–Milgram
 > Since the conclusion looks like the [[§31 Dual Spaces#^thm-31-2|Riesz representation theorem]], why is a new theorem needed? Compare $B$ with an inner product. Conditions (1)–(2) are the linearity of an inner product, (3) is the [[§23 Cauchy–Schwarz and the Induced Norm#^thm-23-1|Cauchy–Schwarz]] bound (with $M = 1$ for an inner product), and (4) is a quantitative form of $(x, x) = 0 \Rightarrow x = 0$. What is missing is the symmetry $B(x, y) = \overline{B(y, x)}$. When $B$ is symmetric there is nothing new: $B$ is itself an inner product (up to sign) and Lax–Milgram is the Riesz theorem for it. This is made precise below. What is new in Lax–Milgram is that it does not assume symmetry.

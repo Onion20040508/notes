@@ -86,7 +86,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 > [!example] Example §1.2: The Subspaces of $\mathbb{R}^3$
 > Geometrically, in $\mathbb{R}^3$ the subspaces are the origin, lines through the origin, planes through the origin, and $\mathbb{R}^3$ itself.
 >
-> *(Justification filled in.)* Each set on the list is a subspace: $\{0\}$ and $\mathbb{R}^3$ trivially, and a line $\operatorname{span}\{u\}$ ($u \neq 0$) or a plane $\operatorname{span}\{u, v\}$ ($u, v$ linearly independent) through the origin because a span is a subspace (Proposition [[§1 Linear Spaces#^prop-1-4|§1.4]]). Conversely, let $Y \subset \mathbb{R}^3$ be a subspace. By linear algebra $Y$ has a basis with $\dim Y \in \{0, 1, 2, 3\}$ elements, and $Y$ is the span of that basis (Proposition [[§1 Linear Spaces#^prop-1-5|§1.5]]):
+> *(Justification filled in.)* Each set on the list is a subspace: $\{0\}$ and $\mathbb{R}^3$ trivially, and a line $\operatorname{span}\{u\}$ ($u \neq 0$) or a plane $\operatorname{span}\{u, v\}$ ($u, v$ linearly independent) through the origin because a span is a subspace (the linear span is defined in [[§1 Linear Spaces|§1]], Definition [[§1 Linear Spaces#^def-1-5|§1.5]], and is a subspace by Proposition [[§1 Linear Spaces#^prop-1-4|§1.4]] there). Conversely, let $Y \subset \mathbb{R}^3$ be a subspace. By finite-dimensional linear algebra (a subspace of $\mathbb{R}^3$ has a basis with at most $3$ elements) $Y$ has a basis with $\dim Y \in \{0, 1, 2, 3\}$ elements, and $Y$ is the span of that basis (Proposition [[§1 Linear Spaces#^prop-1-5|§1.5]] in [[§1 Linear Spaces|§1]]):
 > - $\dim Y = 0$: $Y = \operatorname{span}\{\varnothing\} = \{0\}$, the origin;
 > - $\dim Y = 1$: $Y = \operatorname{span}\{u\}$ with $u \neq 0$, a line through the origin;
 > - $\dim Y = 2$: $Y = \operatorname{span}\{u, v\}$ with $u, v$ independent, a plane through the origin;
@@ -166,7 +166,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 > [!remark] Remark: Direct Sum vs. Sum; Comparison with Axler
 > The direct sum $X \oplus Y$ is a set of *pairs*; it is what other texts call the (external) direct sum or the product $X \times Y$. It is defined for any two linear spaces, which need not sit inside a common ambient space. By contrast, $S + T$ is a set of *vectors* in a fixed ambient space $X$.
 >
-> This differs from the definition in Axler, where the direct sum $U_1 \oplus U_2$ is an *internal* notion: it is the sum $U_1 + U_2$ of two subspaces of a common space, with the extra requirement that every element decomposes uniquely as $u_1 + u_2$. The convention here follows Lax. When the two internal summands are subspaces of a common $X$ with $U_1 \cap U_2 = \{0\}$, the two notions agree up to the isomorphism $(u_1, u_2) \mapsto u_1 + u_2$ (Proposition [[§1 Linear Spaces#^prop-1-3|§1.3]] below), but the course uses the external definition throughout.
+> This differs from the definition in Axler, where the direct sum $U_1 \oplus U_2$ is an *internal* notion: it is the sum $U_1 + U_2$ of two subspaces of a common space, with the extra requirement that every element decomposes uniquely as $u_1 + u_2$. The convention here follows Lax. When the two internal summands are subspaces of a common $X$ with $U_1 \cap U_2 = \{0\}$, the two notions agree up to the isomorphism $(u_1, u_2) \mapsto u_1 + u_2$ (Proposition [[§1 Linear Spaces#^prop-1-3|§1.3]] below; isomorphisms are defined in [[§3 Linear Maps, Convexity, and Linear Functionals|§3]], Definition [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|§3.2]]), but the course uses the external definition throughout.
 
 ^rem-1-3
 
@@ -177,7 +177,7 @@ Throughout, $\mathbb{F}$ denotes the scalar field, which is always $\mathbb{R}$ 
 > \Phi : U \oplus V \to U + V, \qquad \Phi(u, v) = u + v .
 > $$
 >
-> Then $\Phi$ is linear and onto, and the following are equivalent:
+> Then $\Phi$ is linear and onto (linear maps and isomorphisms are defined in [[§3 Linear Maps, Convexity, and Linear Functionals|§3]], Definitions [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|§3.1]] and [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|§3.2]]), and the following are equivalent:
 > - (i) $\Phi$ is an isomorphism;
 > - (ii) $U \cap V = \{0\}$;
 > - (iii) every element of $U + V$ can be written as $u + v$ with $u \in U$, $v \in V$ in exactly one way.

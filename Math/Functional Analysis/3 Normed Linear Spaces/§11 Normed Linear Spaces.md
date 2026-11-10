@@ -330,7 +330,7 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 *Uses:* [[§11 Normed Linear Spaces#^def-11-1|Def. §11.1]], [[§11 Normed Linear Spaces#^def-11-6|Def. §11.6]], [[§11 Normed Linear Spaces#^def-11-7|Def. §11.7]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]]
 
 > [!definition] Definition §11.9: Closed Linear Span
-> The **closed linear span** of a subset $S$ of a normed linear space $X$ is $\overline{\operatorname{span}}\, S := \overline{\operatorname{span} S}$. By Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](a),(c),(d), it is a closed linear subspace of $X$, and it is the smallest closed linear subspace containing $S$.
+> The **closed linear span** of a subset $S$ of a normed linear space $X$ is $\overline{\operatorname{span}}\, S := \overline{\operatorname{span} S}$, the closure (Definition [[§11 Normed Linear Spaces#^def-11-7|§11.7]]) of the linear span of $S$ (Definition [[§1 Linear Spaces#^def-1-5|§1.5]]).
 >
 > *Lax: §6.4, closed linear span*
 
@@ -338,6 +338,23 @@ The metric is translation invariant, $d(x + z, y + z) = d(x, y)$, and homogeneou
 
 > [!remark]- Connections
 > - The (algebraic) span it closes up: [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§4 Span and Linear Independence#^ladr-2-6|LADR 2.6]].
+
+> [!theorem] Lemma §11.8: The Closed Linear Span is the Smallest Closed Subspace
+> Let $S$ be a subset of a normed linear space $X$.
+>
+> 1. $\overline{\operatorname{span}}\, S$ is a closed linear subspace of $X$ containing $S$.
+> 2. Every closed linear subspace $T$ of $X$ with $S \subset T$ contains $\overline{\operatorname{span}}\, S$.
+
+^lem-11-8
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* (1) $\operatorname{span} S$ is a linear subspace of $X$ containing $S$ (Definition [[§1 Linear Spaces#^def-1-5|§1.5]]). By Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](d) its closure $\overline{\operatorname{span}}\, S$ is a linear subspace, and by Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](a) this closure is closed and contains $\operatorname{span} S$, hence $S$.
+>
+> (2) Let $T$ be a closed linear subspace with $S \subset T$. Since $\operatorname{span} S$ is the smallest linear subspace containing $S$ (Definition [[§1 Linear Spaces#^def-1-5|§1.5]]), $\operatorname{span} S \subset T$. Since $T$ is closed, Proposition [[§11 Normed Linear Spaces#^prop-11-7|§11.7]](c) gives $\overline{\operatorname{span}}\, S = \overline{\operatorname{span} S} \subset T$.
+
+^pf-11-8
+
+*Uses:* [[§1 Linear Spaces#^def-1-5|Def. §1.5]], [[§11 Normed Linear Spaces#^prop-11-7|§11.7]]
 
 > [!definition] Definition §11.10: Open Ball
 > Let $X$ be a normed linear space. For $x_0 \in X$ and $r > 0$, the **open ball** of radius $r$ about $x_0$ is $B_r(x_0) = \{ x \in X : \|x - x_0\| < r \}$.

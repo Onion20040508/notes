@@ -20,7 +20,7 @@ Which first-order field equation can a Dirac spinor obey, why does it look the s
 ## The Dirac equation
 
 > [!definition] Definition §C5a.7.1: The Dirac Equation
-> A Dirac field $\psi(x)$ (defined in [[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) is a four-component field transforming as $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$, with $\Lambda_{1/2}$ the Dirac representation (same definition; spinor fields, [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]; Lorentz transformations read actively, [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). The **Dirac equation** is
+> A Dirac field $\psi(x)$ ([[§C5a.3 The Lorentz Action on Spinor Space#^def-c5a-3-1|Def. §C5a.3.1]]) is a four-component field transforming as $\psi'(x) = \Lambda_{1/2}\,\psi(\Lambda^{-1}x)$, with $\Lambda_{1/2}$ the matrices of the Dirac representation defined there (spinor fields, [[§C3.3 How Fields Transform under the Lorentz Group#^def-c3-3-2|Def. §C3.3.2]]; Lorentz transformations read actively, [[§C1a.4 The Lorentz Group#^def-c1a-4-1|Def. §C1a.4.1]]). The **Dirac equation** is
 >
 > $$
 > \bigl(i\gamma^\mu\partial_\mu - m\bigr)\psi(x) = 0, \qquad\text{in components}\qquad \bigl[i(\gamma^\mu)_{ab}\,\partial_\mu - m\,\delta_{ab}\bigr]\psi_b(x) = 0, \quad a = 1, \dots, 4 ,
@@ -507,7 +507,7 @@ Quantum Mechanics runs the same computation backwards: there, requiring each com
 ^rem-c5a-7-6
 
 > [!abstract]- Mathematical background
-> Proved in CB; each line says what the physics above relies on.
+> Proved in CB and CA; each line says what the physics above relies on.
 >
 > The Dirac equation is built from the Dirac matrices; the matrix of the Dirac maps in any basis is what Theorem §C5a.7.2 transforms:
 > - [[§CB.11 Clifford Algebras꞉ Definition, Universal Property and Clifford Modules#^def-cb-11-11|Def. §CB.11.11]] — Dirac matrices ([[§C5a.1 Spinor Space and the Clifford Action#^def-c5a-1-2|Def. §C5a.1.2]]).
@@ -526,6 +526,12 @@ Quantum Mechanics runs the same computation backwards: there, requiring each com
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^def-cb-13-11|Def. §CB.13.11]] — Hermitian basis ([[§C5a.2 The Dirac Form#^thm-c5a-2-1|Theorem §C5a.2.1]]).
 > - [[§CB.13 Complex Clifford Algebras and Clifford Modules#^thm-cb-13-18|Theorem §CB.13.18]] with [[§CB.13 Complex Clifford Algebras and Clifford Modules#^der-cb-13-18|Derivation]] — which changes of basis keep the Dirac form ([[§C5a.2 The Dirac Form#^thm-c5a-2-3|Theorem §C5a.2.3]]).
 > - [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^thm-cb-18-13|Theorem §CB.18.13]] with [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13|Derivation]], [[§CB.18 The Lorentz Case III꞉ the Dirac Module, Half-Spin Representations and γ⁵#^der-cb-18-13b|Derivation (second route)]] — $\Lambda_{1/2}^\dagger\gamma^0\Lambda_{1/2} = \gamma^0$ (Theorem §C5a.7.4; [[§C5a.6 The Dirac Conjugate and the Bilinears#^thm-c5a-6-1|Theorem §C5a.6.1]]); physics form: [[§C5a.3 The Lorentz Action on Spinor Space#^thm-c5a-3-4|Theorem §C5a.3.4]].
+>
+> The field as a generalized function (the assumptions of Derivations §C5a.7.1 and §C5a.7.8, and the remark "In what sense the equations hold"):
+> - [[§CA.2 Generalized Functions#^thm-ca-2-1|Theorem §CA.2.1]] — plane waves $u\,e^{-ip\cdot x}$ are regular tempered distributions.
+> - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]], [[§CA.2 Generalized Functions#^thm-ca-2-4|Theorem §CA.2.4]] — the derivative of a generalized function, $\langle\partial_\mu T, f\rangle = -\langle T, \partial_\mu f\rangle$, exists to all orders and agrees with the ordinary one for differentiable functions: the Dirac operator acts on distributions.
+> - [[§CA.2 Generalized Functions#^def-ca-2-8|Def. §CA.2.8]] — linear changes of variables are defined on $\mathcal S'$: covariance (Theorem §C5a.7.1) holds for distributions.
+> - [[§CA.2 Generalized Functions#^def-ca-2-11|Def. §CA.2.11]] — operator-valued distribution: the quantized field satisfies the Dirac equation smeared with test functions.
 
 > [!remark]- Connections
 > - Quantum Mechanics postulates the Dirac equation for a four-component wave function, with $\boldsymbol\alpha$, $\beta$ chosen to make the equation first order and the density positive; here $\psi$ is a field, the $\gamma$'s and the covariance come from the Lorentz group, the equation follows from a Lagrangian, and $\psi^\dagger\psi$ loses its probability meaning to become a charge density — [[§C13.2★ The Dirac Equation#^pr-c13-2-1|QM Principle §C13.2.1]], [[§C13.2★ The Dirac Equation#^thm-c13-2-3|QM Theorem §C13.2.3]], [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field#^thm-c5a-9-3|Theorem §C5a.9.3]].

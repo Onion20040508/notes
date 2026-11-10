@@ -39,13 +39,13 @@ $\ell^2$ is the one $\ell^p$ whose norm comes from an inner product (and [[§24 
 
 ![[§27 Orthonormal Sets and Bases#^ex-27-1]]
 
-[[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Separability]] sorts the sequence spaces: $\ell^p$ for $p < \infty$ and $c_0$ are separable, $\ell^\infty$ is not.
+[[§28 Existence of Orthonormal Bases and Separability#^def-28-1|Separability]] sorts the sequence spaces: $\ell^p$ for $p < \infty$ and $c_0$ (Definition [[§29 Sequence and Function Spaces#^def-29-1|§29.1]]) are separable, $\ell^\infty$ is not.
 
 > [!theorem] Proposition §29.1: $\ell^p$ is Separable for $1 \le p < \infty$
 > Let $1 \le p < \infty$, and let $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q}$ if $\mathbb{F} = \mathbb{R}$ and $\mathbb{Q}_{\mathbb{F}} = \mathbb{Q} + i\mathbb{Q}$ if $\mathbb{F} = \mathbb{C}$. The set
 >
 > $$
-> D = \bigcup_{J = 1}^\infty \bigl\{ (p_1, \ldots, p_J, 0, 0, \ldots) : p_j \in \mathbb{Q}_{\mathbb{F}} \bigr\}
+> D = \bigcup_{J = 1}^\infty \bigl\{ (q_1, \ldots, q_J, 0, 0, \ldots) : q_j \in \mathbb{Q}_{\mathbb{F}} \bigr\}
 > $$
 >
 > is countable and dense in $\ell^p$. Hence $\ell^p$ is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
@@ -55,10 +55,10 @@ $\ell^2$ is the one $\ell^p$ whose norm comes from an inner product (and [[§24 
 > [!proof]+ Proof
 > *Countable.* For fixed $J$ the $J$-th set is in bijection with $\mathbb{Q}_{\mathbb{F}}^J$, a finite product of countable sets, hence countable; a countable union of countable sets is countable.
 >
-> *Dense.* Let $a = (a_j) \in \ell^p$ and $\varepsilon > 0$. Since $\sum_j |a_j|^p < \infty$, its tail is small: there is $J$ with $\sum_{j > J} |a_j|^p < (\varepsilon/2)^p$. Since $\mathbb{Q}_{\mathbb{F}}$ is dense in $\mathbb{F}$, choose $p_j \in \mathbb{Q}_{\mathbb{F}}$ with $|a_j - p_j| < \frac{\varepsilon}{2} J^{-1/p}$ for $j = 1, \ldots, J$, and let $d = (p_1, \ldots, p_J, 0, \ldots) \in D$. Then
+> *Dense.* Let $a = (a_j) \in \ell^p$ and $\varepsilon > 0$. Since $\sum_j |a_j|^p < \infty$, its tail is small: there is $J$ with $\sum_{j > J} |a_j|^p < (\varepsilon/2)^p$. Since $\mathbb{Q}_{\mathbb{F}}$ is dense in $\mathbb{F}$, choose $q_j \in \mathbb{Q}_{\mathbb{F}}$ with $|a_j - q_j| < \frac{\varepsilon}{2} J^{-1/p}$ for $j = 1, \ldots, J$, and let $d = (q_1, \ldots, q_J, 0, \ldots) \in D$. Then
 >
 > $$
-> \|a - d\|_p^p = \sum_{j=1}^J |a_j - p_j|^p + \sum_{j > J} |a_j|^p < J \cdot \frac{(\varepsilon/2)^p}{J} + \Bigl(\frac{\varepsilon}{2}\Bigr)^p \le \varepsilon^p,
+> \|a - d\|_p^p = \sum_{j=1}^J |a_j - q_j|^p + \sum_{j > J} |a_j|^p < J \cdot \frac{(\varepsilon/2)^p}{J} + \Bigl(\frac{\varepsilon}{2}\Bigr)^p \le \varepsilon^p,
 > $$
 >
 > so $\|a - d\|_p < \varepsilon$.
@@ -72,8 +72,19 @@ $\ell^2$ is the one $\ell^p$ whose norm comes from an inner product (and [[§24 
 
 The two moves of the proof: cut off the tail, which is small because the series converges, and replace the finitely many remaining coordinates by nearby rationals. Both need $p < \infty$: the tail of a convergent series is small, but a bounded sequence need not have a small tail in the supremum norm.
 
+> [!definition] Definition §29.1: The Space $c_0$
+> The space $c_0$, also written $\ell^\infty_0$, is the set of sequences in $\mathbb{F}$ that tend to $0$,
+>
+> $$
+> c_0 = \ell^\infty_0 = \{ a = \{a_n\}_{n \in \mathbb{N}} : a_n \in \mathbb{F},\ \lim_{n \to \infty} a_n = 0 \},
+> $$
+>
+> with termwise addition and scalar multiplication. For $a \in c_0$ put $|a| = \max_n |a_n|$; the maximum exists by Step 1 of the proof of Proposition [[§29 Sequence and Function Spaces#^prop-29-2|§29.2]].
+
+^def-29-1
+
 > [!theorem] Proposition §29.2: $c_0$ is a Separable Banach Space
-> Let $c_0 = \ell^\infty_0 = \{ a = \{a_n\}_{n \in \mathbb{N}} : a_n \in \mathbb{F},\ \lim_{n \to \infty} a_n = 0 \}$ with $|a| = \max_n |a_n|$. Then $(c_0, |\cdot|)$ is a [[§12 Completeness#^def-12-2|Banach space]], and it is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
+> Let $c_0$ and $|a| = \max_n |a_n|$ be as in Definition [[§29 Sequence and Function Spaces#^def-29-1|§29.1]]. Then $(c_0, |\cdot|)$ is a [[§12 Completeness#^def-12-2|Banach space]], and it is [[§28 Existence of Orthonormal Bases and Separability#^def-28-1|separable]].
 >
 > *Source: HW5, Problem 1(a)*
 

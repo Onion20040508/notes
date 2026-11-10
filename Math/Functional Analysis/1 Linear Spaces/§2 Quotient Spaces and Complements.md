@@ -42,6 +42,40 @@ tags: [functional-analysis, math556]
 > - Axler's translates: [[§11 Products and Quotients of Vector Spaces#^ladr-3-97|LADR 3.97]].
 > - The classes are the cosets of Y: [[§28 Left and Right Cosets#^def-28-2|493 Def. §28.2]].
 
+> [!theorem] Lemma §2.1: Equivalence mod $Y$ is an Equivalence Relation
+> Let $Y$ be a linear subspace of a linear space $X$.
+> - (1) Equivalence mod $Y$ is reflexive, symmetric and transitive: for all $x_1, x_2, x_3 \in X$,
+>
+>   $$
+>   x_1 \equiv x_1, \qquad x_1 \equiv x_2 \ \Rightarrow\ x_2 \equiv x_1, \qquad x_1 \equiv x_2 \text{ and } x_2 \equiv x_3 \ \Rightarrow\ x_1 \equiv x_3 \pmod{Y}.
+>   $$
+>
+> - (2) For $x_1, x_2 \in X$, $[x_1] = [x_2]$ if and only if $x_1 - x_2 \in Y$.
+>
+> *Lax: Ch. 1, equivalence mod $Y$*
+
+^lem-2-1
+
+> [!proof]+ Proof
+> *(Not from lecture; filled in.)* Both parts use only that $Y$ is a linear subspace (Definition [[§1 Linear Spaces#^def-1-2|§1.2]]).
+>
+> (1) *Reflexive:* $x_1 - x_1 = 0 \in Y$, because a subspace contains $0$ (Proposition [[§1 Linear Spaces#^prop-1-1|§1.1]]). *Symmetric:* if $x_1 - x_2 \in Y$, then $x_2 - x_1 = (-1)(x_1 - x_2) \in Y$, because $Y$ is closed under scalar multiplication. *Transitive:* if $x_1 - x_2 \in Y$ and $x_2 - x_3 \in Y$, then
+>
+> $$
+> x_1 - x_3 = (x_1 - x_2) + (x_2 - x_3) \in Y,
+> $$
+>
+> because $Y$ is closed under addition.
+>
+> (2) Recall that $[x_i] = \{ x \in X \mid x - x_i \in Y \}$ (Definition [[§2 Quotient Spaces and Complements#^def-2-2|§2.2]]). Suppose $[x_1] = [x_2]$. By reflexivity $x_1 \in [x_1]$, so $x_1 \in [x_2]$, which says $x_1 - x_2 \in Y$. Conversely, suppose $x_1 - x_2 \in Y$. If $x \in [x_1]$, then $x - x_1 \in Y$, and by transitivity $x - x_2 \in Y$, i.e. $x \in [x_2]$; hence $[x_1] \subset [x_2]$. By symmetry $x_2 - x_1 \in Y$, and the same argument with the roles of $x_1$ and $x_2$ exchanged gives $[x_2] \subset [x_1]$. Hence $[x_1] = [x_2]$.
+
+^pf-2-1
+
+*Uses:* [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§1 Linear Spaces#^prop-1-1|§1.1]], [[§2 Quotient Spaces and Complements#^def-2-1|Def. §2.1]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]]
+
+> [!remark]- Connections
+> - The group-theory counterpart, for the subgroup Y of the additive group of X: congruence modulo a subgroup is an equivalence relation whose classes are the cosets, [[§28 Left and Right Cosets#^prop-28-3|493 Prop. §28.3]].
+
 > [!definition] Definition §2.3: Quotient Space
 > Let $Y$ be a linear subspace of a linear space $X$. The **quotient space** $X / Y$ ($X$ mod $Y$) is the set of all equivalence classes (Definition [[§2 Quotient Spaces and Complements#^def-2-2|§2.2]]):
 >
@@ -81,7 +115,7 @@ tags: [functional-analysis, math556]
 ^prop-2-2
 
 > [!proof]+ Proof
-> (HW1, Problem 1.) **Well-definedness.** Suppose $[x_1] = [x_1']$ and $[x_2] = [x_2']$, i.e. $x_1 - x_1' \in Y$ and $x_2 - x_2' \in Y$. Then
+> (HW1, Problem 1.) **Well-definedness.** Suppose $[x_1] = [x_1']$ and $[x_2] = [x_2']$, i.e. $x_1 - x_1' \in Y$ and $x_2 - x_2' \in Y$ (Lemma [[§2 Quotient Spaces and Complements#^lem-2-1|§2.1]]). Then
 >
 > $$
 > (x_1 + x_2) - (x_1' + x_2') = (x_1 - x_1') + (x_2 - x_2') \in Y, \qquad kx_1 - kx_1' = k(x_1 - x_1') \in Y,
@@ -111,13 +145,13 @@ tags: [functional-analysis, math556]
 
 ^pf-2-2
 
-*Uses:* [[§2 Quotient Spaces and Complements#^def-2-1|Def. §2.1]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]]
+*Uses:* [[§2 Quotient Spaces and Complements#^lem-2-1|§2.1]], [[§2 Quotient Spaces and Complements#^def-2-1|Def. §2.1]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§1 Linear Spaces#^def-1-2|Def. §1.2]], [[§1 Linear Spaces#^def-1-1|Def. §1.1]]
 
 > [!remark]- Connections
 > - The same result in linear algebra: the operations [[§11 Products and Quotients of Vector Spaces#^ladr-3-102|LADR 3.102]], and the quotient is a vector space, [[§11 Products and Quotients of Vector Spaces#^ladr-3-103|LADR 3.103]].
 
 > [!remark] Remark
-> The pattern of the verification is the same in every line: the outer equalities are the definitions of the operations on $X/Y$ and the middle equality is the corresponding axiom of $X$, e.g. $k([x_1]+[x_2]) = k[x_1+x_2] = [k(x_1+x_2)] = [kx_1+kx_2] = k[x_1]+k[x_2]$. The additive inverse is $-[x] = [-x]$.
+> The additive inverse in $X/Y$ is $-[x] = [-x]$, by the additive-inverse line in the proof of Proposition [[§2 Quotient Spaces and Complements#^prop-2-2|§2.2]].
 
 ^rem-2-1
 
@@ -128,7 +162,7 @@ tags: [functional-analysis, math556]
 
 ## Complements and the Isomorphism X ≅ X/Y ⊕ Y
 
-Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material is from HW1.
+Throughout this subsection $Y$ is a fixed linear subspace of $X$. The material is from HW1. It uses linear maps and isomorphisms, which are defined in [[§3 Linear Maps, Convexity, and Linear Functionals|§3]] (Definitions [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|§3.1]] and [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|§3.2]], Lemma [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]).
 
 > [!definition] Definition §2.4: Complement
 > A linear subspace $W \subset X$ is a **complement** of $Y$ if
@@ -265,15 +299,15 @@ This is the implication (ii)$\Rightarrow$(iii) of Proposition [[§1 Linear Space
 >
 > using the operations on $X/Y$ (Proposition [[§2 Quotient Spaces and Complements#^prop-2-2|§2.2]]) and the componentwise operations on the direct sum.
 >
-> *Surjectivity.* Given $([x], y)$, decompose $x = w + y'$. Then $x - w = y' \in Y$, so $[x] = [w]$, and $M(w + y) = ([w], y) = ([x], y)$.
+> *Surjectivity.* Given $([x], y)$, decompose $x = w + y'$. Then $x - w = y' \in Y$, so $[x] = [w]$ (Lemma [[§2 Quotient Spaces and Complements#^lem-2-1|§2.1]]), and $M(w + y) = ([w], y) = ([x], y)$.
 >
-> *Injectivity.* If $M(x_1) = M(x_2)$ with $x_i = w_i + y_i$, then $y_1 = y_2$ and $[w_1] = [w_2]$, i.e. $w_1 - w_2 \in Y$; also $w_1 - w_2 \in W$, so $w_1 - w_2 \in W \cap Y = \{0\}$. Hence $x_1 = x_2$.
+> *Injectivity.* If $M(x_1) = M(x_2)$ with $x_i = w_i + y_i$, then $y_1 = y_2$ and $[w_1] = [w_2]$, i.e. $w_1 - w_2 \in Y$ (Lemma [[§2 Quotient Spaces and Complements#^lem-2-1|§2.1]]); also $w_1 - w_2 \in W$, so $w_1 - w_2 \in W \cap Y = \{0\}$. Hence $x_1 = x_2$.
 >
 > $M$ is a linear bijection, hence an isomorphism, and $M^{-1}$ is an isomorphism by Lemma [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]. The formula for $M^{-1}$ is read off from the surjectivity computation.
 
 ^pf-2-7
 
-*Uses:* [[§2 Quotient Spaces and Complements#^lem-2-6|§2.6]], [[§2 Quotient Spaces and Complements#^prop-2-2|§2.2]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§1 Linear Spaces#^def-1-4|Def. §1.4]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
+*Uses:* [[§2 Quotient Spaces and Complements#^lem-2-6|§2.6]], [[§2 Quotient Spaces and Complements#^prop-2-2|§2.2]], [[§2 Quotient Spaces and Complements#^lem-2-1|§2.1]], [[§2 Quotient Spaces and Complements#^def-2-4|Def. §2.4]], [[§1 Linear Spaces#^def-1-4|Def. §1.4]], [[§2 Quotient Spaces and Complements#^def-2-2|Def. §2.2]], [[§2 Quotient Spaces and Complements#^def-2-3|Def. §2.3]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-1|Def. §3.1]], [[§3 Linear Maps, Convexity, and Linear Functionals#^def-3-2|Def. §3.2]], [[§3 Linear Maps, Convexity, and Linear Functionals#^lem-3-1|§3.1]]
 
 > [!remark]- Connections
 > - In finite dimensions it gives the dimension count of [[§11 Products and Quotients of Vector Spaces#^ladr-3-105|LADR 3.105]].

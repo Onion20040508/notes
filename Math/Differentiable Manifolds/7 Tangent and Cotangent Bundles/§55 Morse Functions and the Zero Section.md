@@ -11,13 +11,13 @@ tags: [differentiable-manifolds, math591]
 
 ## The Cotangent Bundle Along the Zero Section
 
-*Notation.* Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $(T^{\ast}U, \hat\varphi)$ the chart of $T^{\ast}M$ over $U$ (Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]). Its $2m$ coordinate functions (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-1|§29.1]](2)) are, at a point $(q, \alpha) \in T^{\ast}U$,
+*Notation.* Let $(U, \varphi = (x^1, \ldots, x^m))$ be a smooth chart of $M$ and $(T^{\ast}U, \hat\varphi)$ the chart of $T^{\ast}M$ over $U$ (Definition [[§52 The Cotangent Bundle#^def-52-5|§52.5]]). Its $2m$ coordinate functions (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]](2)) are, at a point $(q, \alpha) \in T^{\ast}U$,
 
 $$
 \bar x^i(q, \alpha) = x^i(q), \quad\text{that is, } \bar x^i = x^i \circ \pi, \qquad\qquad \xi_j(q, \alpha) = \alpha\Big(\frac{\partial}{\partial x^j}\Big|_q\Big),
 $$
 
-the coordinates of the base point and the components of the covector $\alpha$ (Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]]). The bar distinguishes the function $\bar x^i$ on $T^{\ast}U$ from the function $x^i$ on $U$; the notes elsewhere write $x^i$ for both (Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]]). By Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], the coordinate derivations $\partial/\partial \bar x^1|_{(q,\alpha)}, \ldots, \partial/\partial \bar x^m|_{(q,\alpha)}, \partial/\partial \xi_1|_{(q,\alpha)}, \ldots, \partial/\partial \xi_m|_{(q,\alpha)}$ form a basis of $T_{(q,\alpha)}(T^{\ast}M)$, and every $w$ in it is
+the coordinates of the base point and the components of the covector $\alpha$ (Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]]). The bar distinguishes the function $\bar x^i$ on $T^{\ast}U$ from the function $x^i$ on $U$; the notes elsewhere write $x^i$ for both (Definition [[§33 Covectors in Coordinates#^def-33-1|§33.1]]). By Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], the coordinate derivations $\partial/\partial \bar x^1|_{(q,\alpha)}, \ldots, \partial/\partial \bar x^m|_{(q,\alpha)}, \partial/\partial \xi_1|_{(q,\alpha)}, \ldots, \partial/\partial \xi_m|_{(q,\alpha)}$ form a basis of $T_{(q,\alpha)}(T^{\ast}M)$, and every $w$ in it is
 
 $$
 w = \sum_{i=1}^m w\big[\bar x^i\big]\, \frac{\partial}{\partial \bar x^i}\Big|_{(q,\alpha)} + \sum_{j=1}^m w\big[\xi_j\big]\, \frac{\partial}{\partial \xi_j}\Big|_{(q,\alpha)} .
@@ -76,11 +76,11 @@ $$
 > \zeta_{\ast p}\Big(\frac{\partial}{\partial x^i}\Big|_p\Big) = \sum_{k=1}^m \delta^k_i\, \frac{\partial}{\partial \bar x^k}\Big|_{(p,0)} + \sum_{j=1}^m 0 \cdot \frac{\partial}{\partial \xi_j}\Big|_{(p,0)} = \frac{\partial}{\partial \bar x^i}\Big|_{(p,0)} .
 > $$
 >
-> *(3)* By (1), $\hat\varphi$ is an adapted chart at $(p, 0)$ whose first $2m - m = m$ coordinate functions are $\bar x^1, \ldots, \bar x^m$. Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], applied to $\mathcal{Z} \subseteq T^{\ast}M$ with this chart, gives $\iota_\ast(T_{(p,0)}\mathcal{Z}) = \operatorname{Span}\{\partial/\partial \bar x^1|_{(p,0)}, \ldots, \partial/\partial \bar x^m|_{(p,0)}\}$. By (2), the linear map $\zeta_{\ast p}$ carries the basis $\partial/\partial x^i|_p$ of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]) to these $m$ vectors; the image of a linear map is spanned by the images of a basis, so $\zeta_{\ast p}(T_pM)$ is the same span.
+> *(3)* By (1), $\hat\varphi$ is an adapted chart at $(p, 0)$ whose first $2m - m = m$ coordinate functions are $\bar x^1, \ldots, \bar x^m$. Proposition [[§37 Regular Submanifolds#^prop-37-9|§37.9]], applied to $\mathcal{Z} \subseteq T^{\ast}M$ with this chart, gives $\iota_\ast(T_{(p,0)}\mathcal{Z}) = \operatorname{Span}\{\partial/\partial \bar x^1|_{(p,0)}, \ldots, \partial/\partial \bar x^m|_{(p,0)}\}$. By (2), the linear map $\zeta_{\ast p}$ carries the basis $\partial/\partial x^i|_p$ of $T_pM$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]) to these $m$ vectors; the image of a linear map is spanned by the images of a basis, so $\zeta_{\ast p}(T_pM)$ is the same span.
 
 ^pf-55-1
 
-*Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]
+*Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§33 Covectors in Coordinates#^lem-33-1|§33.1]], [[§37 Regular Submanifolds#^def-37-3|Def. §37.3]], [[§37 Regular Submanifolds#^def-37-2|Def. §37.2]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§37 Regular Submanifolds#^prop-37-9|§37.9]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]
 
 The zero section is the first of a family of submanifolds of $T^{\ast}M$, one for each regular submanifold $S$ of $M$: put all the conormal spaces of $S$ together, as the cotangent spaces are put together in $T^{\ast}M$. *(Not from the assignment; the conormal spaces are those of [[§37 Regular Submanifolds|§37]], see the remark [[§39 Transversality and Lagrange Multipliers#^rem-39-2|The Conormal Bundle]] in [[§39 Transversality and Lagrange Multipliers|§39]].)*
 
@@ -148,7 +148,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 ^rem-55-1
 
 > [!theorem] Corollary §55.3: Critical Points of a Restriction and the Conormal Bundle
-> Let $S \subseteq M$ be a regular submanifold, $\Phi : M \to \mathbb{R}$ smooth, and $s_\Phi : M \to T^{\ast}M$, $s_\Phi(p) = (p, d\Phi_p)$, the one-form $d\Phi$ (Proposition [[§53 One-Forms#^prop-53-2|§53.2]]) regarded as a map. Then
+> Let $S \subseteq M$ be a regular submanifold, $\Phi : M \to \mathbb{R}$ smooth, and $s_\Phi : M \to T^{\ast}M$, $s_\Phi(p) = (p, d\Phi_p)$, the one-form $d\Phi$ (Proposition [[§53 One-Forms#^prop-53-3|§53.3]]) regarded as a map. Then
 >
 > $$
 > \operatorname{Crit}\big(\Phi|_S\big) = s_\Phi^{-1}\big(N^{\ast}S\big) :
@@ -165,11 +165,11 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 > p \in s_\Phi^{-1}\big(N^{\ast}S\big) \iff (p, d\Phi_p) \in N^{\ast}S \iff d\Phi_p \in N_pS ,
 > $$
 >
-> and Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]](3), applied to $\Phi$ and $f = \Phi|_S$, says that $d\Phi_p \in N_pS$ if and only if $p$ is a critical point of $\Phi|_S$, that is, $p \in \operatorname{Crit}(\Phi|_S)$.
+> and Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]](3), applied to $\Phi$ and $f = \Phi|_S$, says that $d\Phi_p \in N_pS$ if and only if $p$ is a critical point of $\Phi|_S$, that is, $p \in \operatorname{Crit}(\Phi|_S)$.
 
 ^pf-55-3
 
-*Uses:* [[§36 Submersions#^def-36-5|Def. §36.5]], [[§55 Morse Functions and the Zero Section#^def-55-1|Def. §55.1]], [[§39 Transversality and Lagrange Multipliers#^prop-39-4|§39.4]]
+*Uses:* [[§36 Submersions#^def-36-5|Def. §36.5]], [[§55 Morse Functions and the Zero Section#^def-55-1|Def. §55.1]], [[§39 Transversality and Lagrange Multipliers#^prop-39-6|§39.6]]
 
 > [!remark] Remark: Critical Points and the Zero Section
 > *(Not from the assignment.)* For $S = M$ the conormal bundle is the zero section (Example [[§55 Morse Functions and the Zero Section#^ex-55-1|§55.1]]), and Corollary [[§55 Morse Functions and the Zero Section#^cor-55-3|§55.3]] reads $\operatorname{Crit}(\Phi) = s_\Phi^{-1}(\mathcal{Z})$: this is the starting point of the next subsection, Proposition [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]](1) later in this section, where $s_\Phi$ is transverse to the zero section exactly when $\Phi$ is a Morse function (Theorem [[§55 Morse Functions and the Zero Section#^thm-55-8|§55.8]]). For $S = G^{-1}(0)$ the corollary is the theorem on Lagrange multipliers, read in $N^{\ast}S$ (Corollary [[§55 Morse Functions and the Zero Section#^cor-55-4|§55.4]]).
@@ -180,18 +180,18 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 > Let $G = (G^1, \ldots, G^k) : M \to \mathbb{R}^k$ be smooth with $0$ a regular value, $S = G^{-1}(0)$, and $\Phi : M \to \mathbb{R}$ smooth.
 >
 > 1. The map $S \times \mathbb{R}^k \to N^{\ast}S$, $(p, \lambda) \mapsto \big(p, \sum_j \lambda_j\, dG^j|_p\big)$, is a bijection.
-> 2. At a critical point $p$ of $\Phi|_S$, the Lagrange multipliers $\lambda_1, \ldots, \lambda_k$ of Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-6|§39.6]] are the coordinates of the point $(p, d\Phi_p) \in N^{\ast}S$ in its fibre, in the basis $dG^1|_p, \ldots, dG^k|_p$.
+> 2. At a critical point $p$ of $\Phi|_S$, the Lagrange multipliers $\lambda_1, \ldots, \lambda_k$ of Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-8|§39.8]] are the coordinates of the point $(p, d\Phi_p) \in N^{\ast}S$ in its fibre, in the basis $dG^1|_p, \ldots, dG^k|_p$.
 
 ^cor-55-4
 
 > [!proof]+ Proof
-> *(Not from the assignment; filled in.)* *(1)* By Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]], the points of $N^{\ast}S$ over $p \in S$ are the $(p, \alpha)$ with $\alpha \in N_pS$. By Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]], $dG^1|_p, \ldots, dG^k|_p$ is a basis of $N_pS$, so $\lambda \mapsto \sum_j \lambda_j\, dG^j|_p$ is a bijection $\mathbb{R}^k \to N_pS$. Taking these bijections together over all $p \in S$ gives the bijection $S \times \mathbb{R}^k \to N^{\ast}S$.
+> *(Not from the assignment; filled in.)* *(1)* By Definition [[§55 Morse Functions and the Zero Section#^def-55-1|§55.1]], the points of $N^{\ast}S$ over $p \in S$ are the $(p, \alpha)$ with $\alpha \in N_pS$. By Proposition [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]], $dG^1|_p, \ldots, dG^k|_p$ is a basis of $N_pS$, so $\lambda \mapsto \sum_j \lambda_j\, dG^j|_p$ is a bijection $\mathbb{R}^k \to N_pS$. Taking these bijections together over all $p \in S$ gives the bijection $S \times \mathbb{R}^k \to N^{\ast}S$.
 >
-> *(2)* If $p$ is a critical point of $\Phi|_S$, then $(p, d\Phi_p) \in N^{\ast}S$ by Corollary [[§55 Morse Functions and the Zero Section#^cor-55-3|§55.3]], and Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-6|§39.6]](2) gives unique $\lambda_j$ with $d\Phi_p = \sum_j \lambda_j\, dG^j|_p$. These are, by definition, the coordinates of $d\Phi_p \in N_pS$ in the basis $dG^j|_p$; under the bijection of (1), $(p, d\Phi_p)$ is the image of $(p, \lambda)$.
+> *(2)* If $p$ is a critical point of $\Phi|_S$, then $(p, d\Phi_p) \in N^{\ast}S$ by Corollary [[§55 Morse Functions and the Zero Section#^cor-55-3|§55.3]], and Theorem [[§39 Transversality and Lagrange Multipliers#^thm-39-8|§39.8]](2) gives unique $\lambda_j$ with $d\Phi_p = \sum_j \lambda_j\, dG^j|_p$. These are, by definition, the coordinates of $d\Phi_p \in N_pS$ in the basis $dG^j|_p$; under the bijection of (1), $(p, d\Phi_p)$ is the image of $(p, \lambda)$.
 
 ^pf-55-4
 
-*Uses:* [[§55 Morse Functions and the Zero Section#^def-55-1|Def. §55.1]], [[§39 Transversality and Lagrange Multipliers#^prop-39-5|§39.5]], [[§55 Morse Functions and the Zero Section#^cor-55-3|§55.3]], [[§39 Transversality and Lagrange Multipliers#^thm-39-6|§39.6]]
+*Uses:* [[§55 Morse Functions and the Zero Section#^def-55-1|Def. §55.1]], [[§39 Transversality and Lagrange Multipliers#^prop-39-7|§39.7]], [[§55 Morse Functions and the Zero Section#^cor-55-3|§55.3]], [[§39 Transversality and Lagrange Multipliers#^thm-39-8|§39.8]]
 
 > [!theorem] Lemma §55.5: The Fibre Inclusion of $T^{\ast}M$
 > Let $p \in M$, give $T_p^{\ast}M$ its standard smooth structure (Definition [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|§22.4]]), and let $(U, \varphi = (x^1, \ldots, x^m))$ be a chart at $p$. Then $L_p : T_p^{\ast}M \to \mathbb{R}^m$, $L_p(\eta) = (\eta_1, \ldots, \eta_m)$ with $\eta_j = \eta\big(\partial/\partial x^j|_p\big)$, is a smooth chart of $T_p^{\ast}M$, and the fibre inclusion
@@ -271,11 +271,11 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 > \pi_{\ast(p,0)}\Big(\frac{\partial}{\partial \bar x^i}\Big|_{(p,0)}\Big) = \sum_{k=1}^m \delta^k_i\, \frac{\partial}{\partial x^k}\Big|_p = \frac{\partial}{\partial x^i}\Big|_p, \qquad \pi_{\ast(p,0)}\Big(\frac{\partial}{\partial \xi_j}\Big|_{(p,0)}\Big) = \sum_{k=1}^m 0 \cdot \frac{\partial}{\partial x^k}\Big|_p = 0 .
 > $$
 >
-> Now let $w = \sum_i a^i\, \partial/\partial \bar x^i|_{(p,0)} + \sum_j b_j\, \partial/\partial \xi_j|_{(p,0)}$ be any tangent vector at $(p, 0)$. By linearity, $\pi_{\ast(p,0)}w = \sum_i a^i\, \partial/\partial x^i|_p$, which is $0$ exactly when all $a^i = 0$, the $\partial/\partial x^i|_p$ being a basis (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). So $\ker \pi_{\ast(p,0)}$ consists of the combinations of the $\partial/\partial \xi_j|_{(p,0)}$ alone; these $m$ vectors are part of a basis, hence independent, and $\dim V_{(p,0)} = m$.
+> Now let $w = \sum_i a^i\, \partial/\partial \bar x^i|_{(p,0)} + \sum_j b_j\, \partial/\partial \xi_j|_{(p,0)}$ be any tangent vector at $(p, 0)$. By linearity, $\pi_{\ast(p,0)}w = \sum_i a^i\, \partial/\partial x^i|_p$, which is $0$ exactly when all $a^i = 0$, the $\partial/\partial x^i|_p$ being a basis (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]). So $\ker \pi_{\ast(p,0)}$ consists of the combinations of the $\partial/\partial \xi_j|_{(p,0)}$ alone; these $m$ vectors are part of a basis, hence independent, and $\dim V_{(p,0)} = m$.
 >
 > *(2) $\iota_p$ is smooth* by Lemma [[§55 Morse Functions and the Zero Section#^lem-55-5|§55.5]], which also gives the chart $L_p(\eta) = (\eta_1, \ldots, \eta_m)$ of $T_p^{\ast}M$ used below.
 >
-> *(2) The formula for $j_p$.* Let $\eta \in T_p^{\ast}M$ and $E = j_p(\eta)$, a derivation at $\iota_p(0) = (p, 0)$. By the universal formula (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]) in the chart $\hat\varphi$, $E = \sum_i E[\bar x^i]\, \partial/\partial \bar x^i|_{(p,0)} + \sum_j E[\xi_j]\, \partial/\partial \xi_j|_{(p,0)}$, so it suffices to compute the values of $E$ on the coordinate functions. For a function $g$ smooth near $(p, 0)$, the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) and of $D_\eta|_0$ (Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]) give
+> *(2) The formula for $j_p$.* Let $\eta \in T_p^{\ast}M$ and $E = j_p(\eta)$, a derivation at $\iota_p(0) = (p, 0)$. By the universal formula (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]) in the chart $\hat\varphi$, $E = \sum_i E[\bar x^i]\, \partial/\partial \bar x^i|_{(p,0)} + \sum_j E[\xi_j]\, \partial/\partial \xi_j|_{(p,0)}$, so it suffices to compute the values of $E$ on the coordinate functions. For a function $g$ smooth near $(p, 0)$, the definition of the pushforward (Definition [[§28 Derivations and the Abstract Tangent Space#^def-28-6|§28.6]]) and of $D_\eta|_0$ (Corollary [[§30 The Differential in Coordinates#^cor-30-6|§30.6]]) give
 >
 > $$
 > E[g] = D_\eta|_0\big[g \circ \iota_p\big] = \frac{d}{dt}\Big|_{t=0}\, g\big(\iota_p(t\eta)\big) = \frac{d}{dt}\Big|_{t=0}\, g(p, t\eta) .
@@ -301,7 +301,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 
 ^pf-55-6
 
-*Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]], [[§40 Fibrations#^prop-40-5|§40.5]], [[§55 Morse Functions and the Zero Section#^lem-55-5|§55.5]]
+*Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§21 Linear Algebra Toolkit#^def-21-1|Def. §21.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-1|Def. §22.1]], [[§22 The Differential of a Map Between Vector Spaces#^def-22-4|Def. §22.4]], [[§52 The Cotangent Bundle#^def-52-5|Def. §52.5]], [[§52 The Cotangent Bundle#^prop-52-2|§52.2]], [[§19 Smooth Functions and Smooth Maps#^def-19-3|Def. §19.3]], [[§28 Derivations and the Abstract Tangent Space#^def-28-6|Def. §28.6]], [[§30 The Differential in Coordinates#^cor-30-6|§30.6]], [[§28 Derivations and the Abstract Tangent Space#^lem-28-10|§28.10]], [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]], [[§40 Fibrations#^prop-40-5|§40.5]], [[§55 Morse Functions and the Zero Section#^lem-55-5|§55.5]]
 
 ## The Differential of $df$ and Transversality
 
@@ -343,7 +343,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 > [!proof]+ Proof
 > *(Assignment 5, Problem 3: the submitted solution's computation of $w_i = (s_f)_{\ast p}(\partial/\partial x^i|_p)$, written out; (3) is filled in.)*
 >
-> *(1)* By Proposition [[§53 One-Forms#^prop-53-2|§53.2]], $df$ is a one-form, that is (Definition [[§53 One-Forms#^def-53-1|§53.1]]), a smooth map $M \to T^{\ast}M$ with $\pi \circ df = \mathrm{id}_M$; this map is $s_f$. A point $p$ lies in $s_f^{-1}(\mathcal{Z})$ exactly when $(p, df_p) = (p, 0)$, i.e. $df_p = 0$, i.e. $p \in \operatorname{Crit}(f)$.
+> *(1)* By Proposition [[§53 One-Forms#^prop-53-3|§53.3]], $df$ is a one-form, that is (Definition [[§53 One-Forms#^def-53-1|§53.1]]), a smooth map $M \to T^{\ast}M$ with $\pi \circ df = \mathrm{id}_M$; this map is $s_f$. A point $p$ lies in $s_f^{-1}(\mathcal{Z})$ exactly when $(p, df_p) = (p, 0)$, i.e. $df_p = 0$, i.e. $p \in \operatorname{Crit}(f)$.
 >
 > *(2)* By Proposition [[§53 One-Forms#^prop-53-1|§53.1]](2), with $\theta = df$, whose coefficient functions are $\partial f/\partial x^j$ (Proposition [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]](1)), the coordinate representation of $s_f$ in the charts $\varphi$ and $\hat\varphi$ is
 >
@@ -359,7 +359,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 >
 > (This is the submitted computation: $\bar x^k \circ s_f = x^k$ and $\xi_j \circ s_f = \partial f/\partial x^j$, whose $x^i$-partials at $q$ are $\delta^k_i$ and $H_{ij}(q)$.)
 >
-> *(3)* $s_f(p) = (p, df_p) = (p, 0)$ since $p$ is critical. Write $v = \sum_i v^i\, \partial/\partial x^i|_p$, $v^i = v[x^i]$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]). By linearity of $(s_f)_{\ast p}$ and (2) at $q = p$,
+> *(3)* $s_f(p) = (p, df_p) = (p, 0)$ since $p$ is critical. Write $v = \sum_i v^i\, \partial/\partial x^i|_p$, $v^i = v[x^i]$ (Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]). By linearity of $(s_f)_{\ast p}$ and (2) at $q = p$,
 >
 > $$
 > (s_f)_{\ast p}v = \sum_{i=1}^m v^i\, \frac{\partial}{\partial \bar x^i}\Big|_{(p,0)} + \sum_{j=1}^m \Big(\sum_{i=1}^m H_{ij}(p)\, v^i\Big) \frac{\partial}{\partial \xi_j}\Big|_{(p,0)} .
@@ -375,7 +375,7 @@ The dimension of $N^{\ast}S$ is $m$ whatever the codimension $k$ of $S$ is (Prop
 
 ^pf-55-7
 
-*Uses:* [[§53 One-Forms#^prop-53-2|§53.2]], [[§53 One-Forms#^def-53-1|Def. §53.1]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]], [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]]
+*Uses:* [[§53 One-Forms#^prop-53-3|§53.3]], [[§53 One-Forms#^def-53-1|Def. §53.1]], [[§53 One-Forms#^prop-53-1|§53.1]], [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]], [[§30 The Differential in Coordinates#^thm-30-2|§30.2]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]], [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]], [[§33 Covectors in Coordinates#^cor-33-2|§33.2]], [[§21 Linear Algebra Toolkit#^def-21-4|Def. §21.4]], [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]]
 
 So along the zero section the differential of $df$ consists of two pieces: the horizontal piece is the differential of the zero section, the same for every $f$, and the vertical piece is the Hessian. This is what makes the next theorem work.
 
@@ -424,7 +424,7 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 *Uses:* [[§55 Morse Functions and the Zero Section#^prop-55-6|§55.6]], [[§55 Morse Functions and the Zero Section#^prop-55-1|§55.1]], [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]], [[§39 Transversality and Lagrange Multipliers#^def-39-1|Def. §39.1]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]], [[§54 Critical Points and the Hessian#^def-54-4|Def. §54.4]]
 
 > [!proof]+ Second proof (Assignment 5, Problem 3(a): the block determinant)
-> *(The submitted solution.)* Fix $p \in \operatorname{Crit}(f)$, a chart $(U, \varphi)$ at $p$, and $z_i$, $w_i$ as in the first proof, so that $A = (s_f)_{\ast p}(T_pM) + T_{(p,0)}\mathcal{Z} = \operatorname{Span}\{w_1, \ldots, w_m, z_1, \ldots, z_m\}$. The space $T_{(p,0)}(T^{\ast}M)$ has dimension $2m$ (Corollary [[§52 The Cotangent Bundle#^cor-52-3|§52.3]](1) and Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]]); so $A$ is all of it if and only if these $2m$ vectors span it, if and only if they are linearly independent (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1), applied to the linear map $\mathbb{R}^{2m} \to T_{(p,0)}(T^{\ast}M)$ sending the standard basis to the $2m$ vectors), if and only if the $2m \times 2m$ matrix $A_p$ whose columns are their coordinates in the basis $\partial/\partial \bar x^1, \ldots, \partial/\partial \bar x^m, \partial/\partial \xi_1, \ldots, \partial/\partial \xi_m$ at $(p, 0)$ is invertible. By Proposition [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]](2), the column of $w_i$ has $e_i$ on top and $(H_{i1}(p), \ldots, H_{im}(p))^{\mathsf T}$ below, which is the $i$-th column of $H_p$ by symmetry (Proposition [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]](2)); the column of $z_i$ has $e_i$ on top and $0$ below. So
+> *(The submitted solution.)* Fix $p \in \operatorname{Crit}(f)$, a chart $(U, \varphi)$ at $p$, and $z_i$, $w_i$ as in the first proof, so that $A = (s_f)_{\ast p}(T_pM) + T_{(p,0)}\mathcal{Z} = \operatorname{Span}\{w_1, \ldots, w_m, z_1, \ldots, z_m\}$. The space $T_{(p,0)}(T^{\ast}M)$ has dimension $2m$ (Corollary [[§52 The Cotangent Bundle#^cor-52-3|§52.3]](1) and Theorem [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]]); so $A$ is all of it if and only if these $2m$ vectors span it, if and only if they are linearly independent (Proposition [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]](1), applied to the linear map $\mathbb{R}^{2m} \to T_{(p,0)}(T^{\ast}M)$ sending the standard basis to the $2m$ vectors), if and only if the $2m \times 2m$ matrix $A_p$ whose columns are their coordinates in the basis $\partial/\partial \bar x^1, \ldots, \partial/\partial \bar x^m, \partial/\partial \xi_1, \ldots, \partial/\partial \xi_m$ at $(p, 0)$ is invertible. By Proposition [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]](2), the column of $w_i$ has $e_i$ on top and $(H_{i1}(p), \ldots, H_{im}(p))^{\mathsf T}$ below, which is the $i$-th column of $H_p$ by symmetry (Proposition [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]](2)); the column of $z_i$ has $e_i$ on top and $0$ below. So
 >
 > $$
 > A_p = \begin{pmatrix} I_m & I_m \\ H_p & 0 \end{pmatrix}, \qquad \det A_p = \det I_m \cdot \det\big(0 - H_p\, I_m^{-1}\, I_m\big) = \det(-H_p) = (-1)^m \det H_p ,
@@ -436,7 +436,7 @@ So along the zero section the differential of $df$ consists of two pieces: the h
 
 ^pf-55-8-2
 
-*Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-7|§29.7]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]], [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]], [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]]
+*Uses:* [[§52 The Cotangent Bundle#^cor-52-3|§52.3]], [[§29 Coordinate Derivations and the Basis Theorem#^thm-29-8|§29.8]], [[§21 Linear Algebra Toolkit#^prop-21-1|§21.1]], [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]], [[§54 Critical Points and the Hessian#^prop-54-1|§54.1]], [[§54 Critical Points and the Hessian#^prop-54-4|§54.4]]
 
 > [!remark]- Connections
 > - The same picture for a restriction $\Phi|_S$: critical points are where the graph of $d\Phi$ meets the conormal bundle of $S$, the remark [[§39 Transversality and Lagrange Multipliers#^rem-39-2|The Conormal Bundle]] (§39); the zero section is the case $S = M$.
@@ -523,13 +523,13 @@ The converse fails: in Example [[§55 Morse Functions and the Zero Section#^ex-5
 > [!proof]+ Proof
 > *(Not from lecture; filled in. Part (1) does not use that $f$ is Morse.)*
 >
-> *(1)* This is Corollary [[§36 Submersions#^cor-36-8|§36.8]]: the set of critical points of any smooth function on $M$ is closed in $M$; that $f$ is Morse is not used. (Two direct arguments. First: let $q \in M \setminus \operatorname{Crit}(f)$ and $(U, \varphi)$ a chart at $q$. Since $df_q \neq 0$, some $\partial f/\partial x^j(q)$ is nonzero (Proposition [[§36 Submersions#^prop-36-2|§36.2]]). The function $\partial f/\partial x^j$ is smooth, hence continuous, on $U$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]]), so $O = \{q' \in U : \partial f/\partial x^j(q') \neq 0\}$, the preimage of the open set $\mathbb{R} \setminus \{0\}$, is open in $U$, hence in $M$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]). It contains $q$, and every $q' \in O$ is a regular point, by Proposition [[§36 Submersions#^prop-36-2|§36.2]] again; so $M \setminus \operatorname{Crit}(f)$ is open. Second: $\operatorname{Crit}(f) = s_f^{-1}(\mathcal{Z})$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]](1)) with $s_f$ continuous, and $\mathcal{Z}$ is closed in $T^{\ast}M$, its complement meeting each $T^{\ast}U$ in the open set $\hat\varphi^{-1}\big(\varphi(U) \times (\mathbb{R}^m \setminus \{0\})\big)$.)
+> *(1)* This is Corollary [[§36 Submersions#^cor-36-8|§36.8]]: the set of critical points of any smooth function on $M$ is closed in $M$; that $f$ is Morse is not used. (Two direct arguments. First: let $q \in M \setminus \operatorname{Crit}(f)$ and $(U, \varphi)$ a chart at $q$. Since $df_q \neq 0$, some $\partial f/\partial x^j(q)$ is nonzero (Proposition [[§36 Submersions#^prop-36-2|§36.2]]). The function $\partial f/\partial x^j$ is smooth, hence continuous, on $U$ (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]]), so $O = \{q' \in U : \partial f/\partial x^j(q') \neq 0\}$, the preimage of the open set $\mathbb{R} \setminus \{0\}$, is open in $U$, hence in $M$ (Lemma [[§3 Subspaces and Products#^lem-3-2|§3.2]]). It contains $q$, and every $q' \in O$ is a regular point, by Proposition [[§36 Submersions#^prop-36-2|§36.2]] again; so $M \setminus \operatorname{Crit}(f)$ is open. Second: $\operatorname{Crit}(f) = s_f^{-1}(\mathcal{Z})$ (Proposition [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]](1)) with $s_f$ continuous, and $\mathcal{Z}$ is closed in $T^{\ast}M$, its complement meeting each $T^{\ast}U$ in the open set $\hat\varphi^{-1}\big(\varphi(U) \times (\mathbb{R}^m \setminus \{0\})\big)$.)
 >
 > *(2)* By (1), $\operatorname{Crit}(f)$ is a closed subset of the compact space $M$, hence compact (Proposition [[§1 Point-Set Topology Review#^prop-1-8|§1.8]](5)). By Corollary [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]], each $p \in \operatorname{Crit}(f)$ has an open neighbourhood $W_p$ in $M$ with $W_p \cap \operatorname{Crit}(f) = \{p\}$. The sets $W_p \cap \operatorname{Crit}(f) = \{p\}$, $p \in \operatorname{Crit}(f)$, are open in the subspace topology of $\operatorname{Crit}(f)$ and cover it. By compactness finitely many of them cover it: $\operatorname{Crit}(f) = \{p_1\} \cup \cdots \cup \{p_N\}$. So $\operatorname{Crit}(f)$ is finite. (Equivalently: an infinite subset of a compact space has an accumulation point, and an accumulation point of $\operatorname{Crit}(f)$ would lie in $\operatorname{Crit}(f)$ by (1) without being isolated.)
 
 ^pf-55-10
 
-*Uses:* [[§36 Submersions#^cor-36-8|§36.8]], [[§36 Submersions#^prop-36-2|§36.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-2|§29.2]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]
+*Uses:* [[§36 Submersions#^cor-36-8|§36.8]], [[§36 Submersions#^prop-36-2|§36.2]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-3|§29.3]], [[§3 Subspaces and Products#^lem-3-2|§3.2]], [[§55 Morse Functions and the Zero Section#^prop-55-7|§55.7]], [[§1 Point-Set Topology Review#^prop-1-8|§1.8]], [[§55 Morse Functions and the Zero Section#^cor-55-9|§55.9]]
 
 ## The Hessian from the Zero Section
 
@@ -618,7 +618,7 @@ the first sum does not vanish in general, so the matrix does not transform like 
 ^lem-55-12
 
 > [!proof]+ Proof
-> *(Not from lecture; filled in.)* Partial derivatives on $U$ are computed from coordinate representations: $(\partial_i u) \circ \varphi^{-1} = \partial(u \circ \varphi^{-1})/\partial r^i$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|§29.2]]), so, applying this $|\alpha|$ times, $(\partial^\alpha u) \circ \varphi^{-1} = \partial^{|\alpha|}(u \circ \varphi^{-1})/\partial r^\alpha$. In coordinates, $(x - c)^\beta \circ \varphi^{-1}(r) = \prod_i (r^i - c^i)^{\beta_i}$, a product of factors each depending on one variable, so
+> *(Not from lecture; filled in.)* Partial derivatives on $U$ are computed from coordinate representations: $(\partial_i u) \circ \varphi^{-1} = \partial(u \circ \varphi^{-1})/\partial r^i$ (Definition [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|§29.3]]), so, applying this $|\alpha|$ times, $(\partial^\alpha u) \circ \varphi^{-1} = \partial^{|\alpha|}(u \circ \varphi^{-1})/\partial r^\alpha$. In coordinates, $(x - c)^\beta \circ \varphi^{-1}(r) = \prod_i (r^i - c^i)^{\beta_i}$, a product of factors each depending on one variable, so
 >
 > $$
 > \frac{\partial^{|\alpha|}}{\partial r^\alpha} \prod_{i=1}^m (r^i - c^i)^{\beta_i} = \prod_{i=1}^m \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i}, \qquad \frac{\partial^{\alpha_i}}{\partial (r^i)^{\alpha_i}} (r^i - c^i)^{\beta_i} = \begin{cases} \dfrac{\beta_i!}{(\beta_i - \alpha_i)!} (r^i - c^i)^{\beta_i - \alpha_i} & \alpha_i \le \beta_i, \\ 0 & \alpha_i > \beta_i . \end{cases}
@@ -628,7 +628,7 @@ the first sum does not vanish in general, so the matrix does not transform like 
 
 ^pf-55-12
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^def-29-2|Def. §29.2]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^def-29-3|Def. §29.3]]
 
 > [!theorem] Proposition §55.13: Jets Are Taylor Polynomials
 > In a chart $(x^1, \ldots, x^m)$ centred at $p$, two germs have the same $k$-jet if and only if their partial derivatives of all orders $\le k$ agree at $p$, that is, their Taylor polynomials of degree $k$ at $p$ agree. So $J^k_p$ is isomorphic to the space of polynomials of degree $\le k$ in $m$ variables.
@@ -642,13 +642,13 @@ the first sum does not vanish in general, so the matrix does not transform like 
 > g = P_k + \sum_{|\beta| = k+1} x^\beta\, g_\beta .
 > $$
 >
-> For $k = 0$ this is Hadamard's lemma (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]]), applied to the coordinate representation of $g$ on the ball $B$, whose centre is $0$: $g = g(p) + \sum_i x^i g_i$ with $g_i$ smooth. If it holds for $k$, apply Hadamard's lemma on $B$ to each $g_\beta$, $g_\beta = g_\beta(p) + \sum_i x^i g_{\beta, i}$ with $g_{\beta, i}$ smooth, and substitute:
+> For $k = 0$ this is Hadamard's lemma (Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|§29.5]]), applied to the coordinate representation of $g$ on the ball $B$, whose centre is $0$: $g = g(p) + \sum_i x^i g_i$ with $g_i$ smooth. If it holds for $k$, apply Hadamard's lemma on $B$ to each $g_\beta$, $g_\beta = g_\beta(p) + \sum_i x^i g_{\beta, i}$ with $g_{\beta, i}$ smooth, and substitute:
 >
 > $$
 > g = \Big( P_k + \sum_{|\beta| = k+1} g_\beta(p)\, x^\beta \Big) + \sum_{|\beta| = k+1} \sum_{i=1}^m x^{\beta + e_i}\, g_{\beta, i} ,
 > $$
 >
-> where $\beta + e_i$ is $\beta$ with its $i$-th entry raised by $1$, a multi-index of order $k + 2$. The bracket is a polynomial of degree $\le k + 1$; adding up, for each $\gamma$ with $|\gamma| = k + 2$, the $g_{\beta, i}$ with $\beta + e_i = \gamma$ gives the statement for $k + 1$. (The proof of Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|§29.5]] is the step from $k = 0$ to $k = 1$.) Next, the coefficients of $P_k = \sum_{|\alpha| \le k} a_\alpha\, x^\alpha$. Each $x^\beta g_\beta$ with $|\beta| = k+1$ is a product of $k + 1$ functions vanishing at $p$ ($k$ coordinate functions, and one coordinate function times $g_\beta$), so by the “only if” part all its partials of order $\le k$ vanish at $p$. Hence $\partial^\alpha g(p) = \partial^\alpha P_k(p) = \alpha!\, a_\alpha$ for $|\alpha| \le k$ (Lemma [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]], with $c = 0$ for the chart centred at $p$), and so, on that ball,
+> where $\beta + e_i$ is $\beta$ with its $i$-th entry raised by $1$, a multi-index of order $k + 2$. The bracket is a polynomial of degree $\le k + 1$; adding up, for each $\gamma$ with $|\gamma| = k + 2$, the $g_{\beta, i}$ with $\beta + e_i = \gamma$ gives the statement for $k + 1$. (The proof of Lemma [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-6|§29.6]] is the step from $k = 0$ to $k = 1$.) Next, the coefficients of $P_k = \sum_{|\alpha| \le k} a_\alpha\, x^\alpha$. Each $x^\beta g_\beta$ with $|\beta| = k+1$ is a product of $k + 1$ functions vanishing at $p$ ($k$ coordinate functions, and one coordinate function times $g_\beta$), so by the “only if” part all its partials of order $\le k$ vanish at $p$. Hence $\partial^\alpha g(p) = \partial^\alpha P_k(p) = \alpha!\, a_\alpha$ for $|\alpha| \le k$ (Lemma [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]], with $c = 0$ for the chart centred at $p$), and so, on that ball,
 >
 > $$
 > g = \sum_{|\alpha| \le k} \frac{\partial^\alpha g(p)}{\alpha!}\, x^\alpha + \sum_{|\beta| = k+1} x^\beta\, g_\beta
@@ -658,7 +658,7 @@ the first sum does not vanish in general, so the matrix does not transform like 
 
 ^pf-55-13
 
-*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-4|§29.4]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|§29.5]], [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]]
+*Uses:* [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-5|§29.5]], [[§29 Coordinate Derivations and the Basis Theorem#^lem-29-6|§29.6]], [[§55 Morse Functions and the Zero Section#^lem-55-12|§55.12]]
 
 ![[m591-52-3.svg]]
 

@@ -485,6 +485,7 @@ The zero-point energy is a vacuum expectation value, so the vacuum, already name
 > Proved in CA; each line says what the physics above relies on.
 >
 > - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — exchanging the order of the $d^3x$ and momentum integrals, in the distributional sense.
+> - [[§CA.2 Generalized Functions#^def-ca-2-4|Def. §CA.2.4]] — the derivative moved onto the test function: the smeared generator property $[\hat\phi(f), \hat{\mathbf P}] = i\,\hat\phi(\nabla f)$ (Theorem §C2a.3.5).
 > - [[§CA.2 Generalized Functions#^thm-ca-2-5|Theorem §CA.2.5]], 3 — nascent deltas: the would-be value of $\delta^3(\mathbf 0)$ is $\varepsilon^{-3}\rho(\mathbf 0)$, divergent and shape dependent.
 > - [[§CA.2 Generalized Functions#^thm-ca-2-8|Theorem §CA.2.8]], 1 — a delta multiplied by a smooth prefactor acts through its support; $E\,g$ is again a wave packet for $m > 0$.
 > - [[§CA.2 Generalized Functions#^thm-ca-2-9|Theorem §CA.2.9]], 3 — δ at its singular point has no value: $\langle0|\hat H|0\rangle$ in the order written is not a number (Theorem §C2a.3.2, 1).

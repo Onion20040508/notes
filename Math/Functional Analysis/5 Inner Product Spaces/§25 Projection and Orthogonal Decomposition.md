@@ -57,15 +57,12 @@ Everything from here on uses completeness, and the results are the ones for whic
 
 ^thm-25-2
 
-![[m556-18-1.svg]]
-*A minimizing sequence $y_n \in K$ (gray dashes) with $\|x_0 - y_n\| \to \operatorname{dist}(x_0, K)$, converging to the closest point $y_0$ (red). The dotted arc is the sphere of radius $\operatorname{dist}(x_0, K)$ about $x_0$: it touches $K$ only at $y_0$. The proof has to produce $y_0$ as a limit, which is where completeness and closedness enter.*
-
 > [!proof]+ Proof
 > If $x_0 \in K$, take $y_0 = x_0$; it is unique since $\|x_0 - y\| = 0$ forces $y = x_0$. So assume $x_0 \notin K$ and put $d = \operatorname{dist}(x_0, K)$.
 >
 > **Step 1: $d > 0$.** If $d = 0$ there would be $y_n \in K$ with $\|x_0 - y_n\| \to 0$, i.e. $y_n \to x_0$, and closedness of $K$ would give $x_0 \in K$.
 >
-> **Step 2: a minimizing sequence.** Since $d$ is the greatest lower bound of $\{\|x_0 - y\| : y \in K\}$, for each $m \in \mathbb{N}$ there is $y_m \in K$ with
+> **Step 2: a minimizing sequence.** Since $d$ is the greatest lower bound of $\{\|x_0 - y\| : y \in K\}$, for each integer $m \ge 1$ there is $y_m \in K$ with
 >
 > $$
 > d^2 \le \|x_0 - y_m\|^2 < d^2 + \frac{1}{m}. \tag{5.2}
@@ -112,6 +109,9 @@ Everything from here on uses completeness, and the results are the ones for whic
 > - The minimize-then-perturb pattern: [[Functional Analysis Problem-Solving Techniques#^rem-t11|Technique 11]].
 > - Computational version: [[§52 Orthogonal Projections#^thm-52-3|235 Thm. §52.3]] (the case of a subspace of ℝⁿ, where the closest point is the orthogonal projection, with worked distances).
 
+![[m556-18-1.svg]]
+*A minimizing sequence $y_n \in K$ (gray dashes) with $\|x_0 - y_n\| \to \operatorname{dist}(x_0, K)$, converging to the closest point $y_0$ (red). The dotted arc is the sphere of radius $\operatorname{dist}(x_0, K)$ about $x_0$: it touches $K$ only at $y_0$. The proof has to produce $y_0$ as a limit, which is where completeness and closedness enter.*
+
 ![[m556-18-4.svg]]
 *Uniqueness needs the inner product. The same half-plane $K$ (blue) and the same point $x_0$, with the ball of radius $\operatorname{dist}(x_0, K)$ in two norms (dashed). The round Euclidean ball touches $K$ at a single point $y_0$ (red); the $\ell^1$ ball has a flat edge lying along the boundary of $K$, so every point of that segment (red) is a closest point. The midpoint of two of them is just as close, which the parallelogram law forbids in a Hilbert space.*
 
@@ -120,7 +120,7 @@ Everything from here on uses completeness, and the results are the ones for whic
 *(Not from lecture; animation added, vault only.)* The half-plane $K = \{x_1 + x_2 \ge 2\}$ of the figure and a point $x_0$ moving on a circle. Left, Euclidean: the ball of radius $\operatorname{dist}(x_0, K)$ touches $K$ at a single point (red), the foot of the perpendicular. Right, $\ell^1$: the ball is a diamond whose edge is parallel to $\partial K$, and it touches along a whole segment of closest points.
 
 > [!remark] Remark: Where Each Hypothesis Enters
-> Convexity puts the midpoint $\tfrac{y_m + y_n}{2}$ in $K$, which is what makes the cross term in the parallelogram law large and forces $\|y_n - y_m\|$ small; this is the whole mechanism, and it is why the parallelogram law — hence an inner product, not merely a norm — is needed. Completeness of $H$ turns the Cauchy sequence into a limit; closedness of $K$ keeps that limit in $K$. The theorem fails without each: in $\ell^1$ (no inner product) closest points need not be unique (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-1|§25.1]]); in an incomplete inner product space a minimizing sequence need not converge (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-2|§25.2]]); for $K$ open the infimum need not be attained (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-3|§25.3]]). The same midpoint argument gives uniqueness.
+> Convexity puts the midpoint $\tfrac{y_m + y_n}{2}$ in $K$, which is what makes the cross term in the parallelogram law large and forces $\|y_n - y_m\|$ small; this is the whole mechanism, and it is why the parallelogram law — hence an inner product, not merely a norm — is needed. Completeness of $H$ turns the Cauchy sequence into a limit; closedness of $K$ keeps that limit in $K$. The theorem fails without each: in $\ell^1$ (no inner product) closest points need not be unique (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-1|§25.1]]); in an incomplete inner product space a minimizing sequence need not converge (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-2|§25.2]]); for $K$ open the infimum need not be attained (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-3|§25.3]]); for $K$ closed but not convex closest points need not be unique (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-4|§25.4]]). The same midpoint argument gives uniqueness.
 
 ^rem-25-2
 
@@ -182,6 +182,21 @@ Everything from here on uses completeness, and the results are the ones for whic
 > So $\operatorname{dist}(x_0, K) = 1$ is not attained. The points $y_t$ approach $x_0 / 2$, which has norm $1$ and lies outside $K$: $K$ is not closed.
 
 ^ex-25-3
+
+> [!example] Example §25.4: Closest Points in a Non-Convex Set Need Not Be Unique
+> *(Not from lecture; filled in.)* Let $H \neq \{0\}$ be a Hilbert space, $K = \{ y \in H : \|y\| = 1 \}$ the unit sphere, and $x_0 = 0$. We show that $K$ is nonempty and closed but not convex, and that every point of $K$ is a closest point to $x_0$, so that the closest point is not unique.
+>
+> *Nonempty, with at least two points.* Since $H \neq \{0\}$ there is $w \in H$ with $w \neq 0$. Put $y = w / \|w\|$; then $\|y\| = 1$, so $y \in K$. Also $\|{-y}\| = \|y\| = 1$, so $-y \in K$, and $-y \neq y$ because $y \neq 0$.
+>
+> *Closed.* Let $y_k \in K$ with $y_k \to z$ in $H$. By continuity of the norm (Proposition [[§11 Normed Linear Spaces#^prop-11-4|§11.4]]), $\|z\| = \lim_{k} \|y_k\| = 1$, so $z \in K$.
+>
+> *Not convex.* The points $y$ and $-y$ lie in $K$, but their midpoint $\tfrac12 y + \tfrac12 (-y) = 0$ has norm $0 \neq 1$, so it does not lie in $K$.
+>
+> *Every point is closest.* For every $u \in K$, $\|x_0 - u\| = \|u\| = 1$. So $\operatorname{dist}(x_0, K) = 1$, and it is attained at every point of $K$, in particular at the two different points $y$ and $-y$.
+>
+> Here $H$ is complete and $K$ is nonempty and closed; what is missing is convexity. Step 5 of the proof of Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]] uses that the midpoint of two closest points lies in $K$; here that midpoint is $0 \notin K$.
+
+^ex-25-4
 
 > [!remark] Remark: Comparison with Lax
 > The statement and proof are Lax's Theorem 6.2, which assumes $K$ nonempty; the hypothesis is needed (for $K = \varnothing$ the infimum is $+\infty$) and was missing from an earlier version of these notes. Lax also proves the same result in any *uniformly convex* Banach space (§5.2, Theorem 8), where the parallelogram law is replaced by a quantitative form of the strict convexity of the unit ball; Hilbert spaces are the model case. Not covered in lecture.
@@ -260,9 +275,6 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 
 ^thm-25-4
 
-![[m556-18-2.svg]]
-*The decomposition $x_0 = y_0 + v$: $y_0 \in Y$ is the closest point of $Y$ to $x_0$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]), and the error $v = x_0 - y_0$ (red arrow) is perpendicular to $Y$, i.e. parallel to the line $Y^\perp$.*
-
 > [!proof]+ Proof
 > **(1), existence.** Let $x_0 \in H$. Since $Y$ is a linear subspace it is nonempty ($0 \in Y$) and convex, and it is closed by hypothesis. By Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]] there is a unique $y_0 \in Y$ with $\|x_0 - y_0\| = \operatorname{dist}(x_0, Y)$. Put $v = x_0 - y_0$, so $x_0 = y_0 + v$. It remains to show $v \in Y^\perp$, i.e. $(v, y) = 0$ for every $y \in Y$.
 >
@@ -311,6 +323,9 @@ Note that $M$ is any subset, not necessarily a subspace, and that $x \perp y$ if
 > - The finite-dimensional home: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-49|LADR 6.49]] ($V = U \oplus U^\perp$), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-52|LADR 6.52]] ($(U^\perp)^\perp = U$), [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-55|LADR 6.55]] (orthogonal projection).
 > - Used for the Riesz representation theorem: [[§26 Bounded Linear Functionals and the Riesz Representation Theorem#^lem-26-4|§26.4]].
 > - Computational version: [[§52 Orthogonal Projections#^thm-52-1|235 Thm. §52.1]] (the ℝⁿ case, with the projection computed from an orthogonal basis) and, for (2), [[§50 Orthogonal Complements and Angles#^cor-50-4|235 Cor. §50.4]].
+
+![[m556-18-2.svg]]
+*The decomposition $x_0 = y_0 + v$: $y_0 \in Y$ is the closest point of $Y$ to $x_0$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-2|§25.2]]), and the error $v = x_0 - y_0$ (red arrow) is perpendicular to $Y$, i.e. parallel to the line $Y^\perp$.*
 
 > [!remark] Remark: The Promise of Lecture 1 is Kept
 > Corollary [[§2 Quotient Spaces and Complements#^cor-2-9|§2.9]] (HW1; the statement was suggested in Lecture 1) said: *if* $X = Y + Y^\perp$, then $Y^\perp$ is a complement of $Y$ and $X/Y \cong Y^\perp$. The theorem just proved supplies the hypothesis for every closed subspace of a Hilbert space, so in that setting the quotient $X/Y$ really is the orthogonal complement, as the picture in [[§2 Quotient Spaces and Complements#Quotient Spaces|§2]] suggested; the remark following Corollary [[§2 Quotient Spaces and Complements#^cor-2-9|§2.9]] identified exactly this theorem as the missing piece. The hypotheses are sharp: for the subspace $c_{00} \subset \ell^2$, which is not closed, both (1) and (2) fail (Example [[§25 Projection and Orthogonal Decomposition#^ex-25-5|§25.5]]). For an arbitrary subset $M$, $(M^\perp)^\perp = \overline{\operatorname{span}}\, M$ (Theorem [[§25 Projection and Orthogonal Decomposition#^thm-25-7|§25.7]]).
@@ -565,6 +580,6 @@ For $f(x) = e^x$ the decomposition is $e^x = \cosh x + \sinh x$: the even part i
 > - The method: [[Functional Analysis Problem-Solving Techniques#^ex-t13|Technique 13]]; the finite-dimensional minimization it rests on: [[§22 Orthogonal Complements and Minimization Problems#^ladr-6-61|LADR 6.61]].
 
 > [!remark] Remark: Where $g$ Comes From
-> The boundary conditions fix two inner products of $h = f''$ with fixed functions: $\int_a^b h = f'(b) - f'(a) = -1$, and, by Taylor's formula with integral remainder, $\int_a^b (b - x)\,h(x)\,dx = f(b) - f(a) - f'(a)L = -L$. Let $Y = \operatorname{span}\{1, x\}$, a closed (finite-dimensional) subspace of $L^2[a,b]$, and decompose $h = h_Y + h_\perp$ with $h_Y \in Y$, $h_\perp \perp Y$. The two constraints involve only $h_Y$, while $\|h\|^2 = \|h_Y\|^2 + \|h_\perp\|^2 \ge \|h_Y\|^2$ by [[§27 Orthonormal Sets and Bases#^lem-27-1|Pythagoras]]. So the minimum of $\|h\|$ under the constraints is attained by an element of $Y$ — a linear function — and that is why testing against a linear $g$ loses nothing. This is the [[§25 Projection and Orthogonal Decomposition#^thm-25-2|projection theorem]] at work: the constraint set is a closed affine subspace, and its point closest to $0$ lies in the orthogonal complement of the directions along it. It is also a first example of the calculus of variations recast in a Hilbert space.
+> The boundary conditions fix two inner products of $h = f''$ with fixed functions: $\int_a^b h = f'(b) - f'(a) = -1$, and, by Taylor's formula with integral remainder, $\int_a^b (b - x)\,h(x)\,dx = f(b) - f(a) - f'(a)L = -L$. Let $Y = \operatorname{span}\{1, x\}$, a closed (finite-dimensional) subspace of $L^2[a,b]$, and decompose $h = h_Y + h_\perp$ with $h_Y \in Y$, $h_\perp \perp Y$. The two constraints involve only $h_Y$, while $\|h\|^2 = \|h_Y\|^2 + \|h_\perp\|^2 \ge \|h_Y\|^2$ by [[§27 Orthonormal Sets and Bases#^lem-27-1|Pythagoras]], proved in [[§27 Orthonormal Sets and Bases|§27]] (Lemma [[§27 Orthonormal Sets and Bases#^lem-27-1|§27.1]]). So the minimum of $\|h\|$ under the constraints is attained by an element of $Y$ — a linear function — and that is why testing against a linear $g$ loses nothing. This is the [[§25 Projection and Orthogonal Decomposition#^thm-25-2|projection theorem]] at work: the constraint set is a closed affine subspace, and its point closest to $0$ lies in the orthogonal complement of the directions along it. It is also a first example of the calculus of variations recast in a Hilbert space.
 
 ^rem-25-8

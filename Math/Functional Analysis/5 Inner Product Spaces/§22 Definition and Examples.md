@@ -22,15 +22,21 @@ tags: [functional-analysis, math556]
 > - (2′) **skew-symmetry** (conjugate symmetry): $(x,y) = \overline{(y,x)}$;
 > - (3′) **positivity**: $(x,x) \ge 0$, and $(x,x) = 0$ if and only if $x = 0$.
 >
-> The pair $(X, (\cdot,\cdot))$ is an **inner product space** or **scalar product space**.
->
 > *Lax: §6.1, (i)–(iii)*
 
 ^def-22-1
 
 > [!remark]- Connections
-> - The finite-dimensional definition: [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]] (inner product), [[§20 Inner Products and Norms#^ladr-6-4|LADR 6.4]] (inner product space).
+> - The finite-dimensional definition: [[§20 Inner Products and Norms#^ladr-6-2|LADR 6.2]] (inner product).
 > - Computational version: [[§56 Inner Product Spaces#^def-56-1|235 Def. §56.1]] (the real axioms, with weighted, evaluation and integral inner products worked out).
+
+> [!definition] Definition §22.2: Inner Product Space
+> Let $X$ be a linear space over $\mathbb{F}$ with an inner product $(\cdot,\cdot)$ (Definition [[§22 Definition and Examples#^def-22-1|§22.1]]). The pair $(X, (\cdot,\cdot))$ is an **inner product space** or **scalar product space**.
+
+^def-22-2
+
+> [!remark]- Connections
+> - The finite-dimensional definition: [[§20 Inner Products and Norms#^ladr-6-4|LADR 6.4]] (inner product space).
 
 > [!remark] Remark: Reading the Complex Axioms
 > Three points.

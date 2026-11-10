@@ -102,7 +102,7 @@ The name: the number one is written as a sum of smooth functions. Partitions of 
 
 The simplest example, on $M = \mathbb{R}$: a function $\chi_1$ that is $1$ far to the left and $0$ far to the right, and $\chi_2 = 1 - \chi_1$.
 
-The main result of this section is that every open cover has a subordinate partition of unity (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] below). Its proof has two steps of different kinds: an analysis step in $\mathbb{R}^m$ (the function $h$ of step 1 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]; the lecture's first version used the plateau functions of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]]), and genuine point-set topology on $M$ (paracompactness, Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]]). The ingredients come first.
+The main result of this section is that every open cover has a subordinate partition of unity (Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]] below). Its proof has two steps of different kinds: an analysis step in $\mathbb{R}^m$ (the function $h$ of step 1 of the proof of Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]; the lecture's first version used the plateau functions of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]]), and genuine point-set topology on $M$ (paracompactness, Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]]). The ingredients come first.
 
 > [!theorem] Lemma §65.3: Plateau Functions
 > For all $\varepsilon > \delta > 0$ there is $\rho \in C^\infty(\mathbb{R})$ with $0 \le \rho \le 1$, $\rho \equiv 1$ on $[-\delta, \delta]$ and $\operatorname{supp}\rho \subseteq (-\varepsilon, \varepsilon)$. Then $f(x) = \rho(|x|)$ is smooth on $\mathbb{R}^m$, $f \equiv 1$ on the closed ball $\overline{B}_\delta$, and $\operatorname{supp} f \subseteq B_\varepsilon = \{ x \in \mathbb{R}^m : |x| < \varepsilon \}$.
@@ -112,27 +112,27 @@ The main result of this section is that every open cover has a subordinate parti
 ^lem-65-3
 
 > [!proof]+ Proof
-> *(Not proved in Lecture 22, which described the method: start from the function equal to $e^{-1/x}$ for $x$ positive and zero for $x$ negative, then reflect, divide and add. This is step 2 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]].)* With $h$ as there and $\delta < r' < \varepsilon$, take $\rho(t) = h(r'^2 - t^2)\big/\big(h(r'^2 - t^2) + h(t^2 - \delta^2)\big)$: smooth, between $0$ and $1$, equal to $1$ for $|t| \le \delta$ and $0$ for $|t| \ge r'$, so $\operatorname{supp}\rho \subseteq [-r', r'] \subseteq (-\varepsilon, \varepsilon)$. Then $f(x) = \rho(|x|)$ is the function $H$ of that proof (with $r = \delta$), smooth on $\mathbb{R}^m$ — $|x|$ is not smooth at the origin, but $\rho$ is constant equal to one near $0$, so $f$ is constant near $x = 0$ — with $f \equiv 1$ on $\overline{B}_\delta$ and $\operatorname{supp} f = \overline{B}_{r'} \subseteq B_\varepsilon$.
+> *(Not proved in Lecture 22, which described the method: start from the function equal to $e^{-1/x}$ for $x$ positive and zero for $x$ negative, then reflect, divide and add. This is step 2 of the proof of Proposition [[§56 Vector Fields#^cor-56-7|§56.7]].)* With $h$ as there and $\delta < r' < \varepsilon$, take $\rho(t) = h(r'^2 - t^2)\big/\big(h(r'^2 - t^2) + h(t^2 - \delta^2)\big)$: smooth, between $0$ and $1$, equal to $1$ for $|t| \le \delta$ and $0$ for $|t| \ge r'$, so $\operatorname{supp}\rho \subseteq [-r', r'] \subseteq (-\varepsilon, \varepsilon)$. Then $f(x) = \rho(|x|)$ is the function $H$ of that proof (with $r = \delta$), smooth on $\mathbb{R}^m$ — $|x|$ is not smooth at the origin, but $\rho$ is constant equal to one near $0$, so $f$ is constant near $x = 0$ — with $f \equiv 1$ on $\overline{B}_\delta$ and $\operatorname{supp} f = \overline{B}_{r'} \subseteq B_\varepsilon$.
 
 ^pf-65-3
 
-*Uses:* [[§56 Vector Fields#^prop-56-4|§56.4]]
+*Uses:* [[§56 Vector Fields#^cor-56-7|§56.7]]
 
 ![[m591-66-3.svg]]
 
 *The topology.* The second step needs some point-set topology, which pays for the use of partitions of unity before their construction.
 
-> [!definition] Definition §65.3: Refinement of a Cover
+> [!definition] Definition §65.4: Refinement of a Cover
 > Let $\{U_\alpha\}_{\alpha \in A}$ be a cover of a topological space $X$. A cover $\{V_i\}_{i \in I}$ of $X$ is a **refinement** of $\{U_\alpha\}$ if every $V_i$ lies in some $U_\alpha$: for each $i$ there is $\alpha(i) \in A$ with $V_i \subseteq U_{\alpha(i)}$. It is an **open refinement** if every $V_i$ is open. A subcover is the special case in which every $V_i$ is one of the $U_\alpha$.
 >
 > *(Lecture 22 stated the condition inside the definition of a paracompact space; stated once here.)*
 >
 > *Lee: Ch. 1, Paracompactness*
 
-^def-65-3
+^def-65-4
 
 > [!example] Example §65.5: A Locally Finite Refinement That Is Not a Subcover
-> *(Not from lecture.)* On $\mathbb{R}$, the open cover $\{(-n, n)\}_{n \ge 1}$ is not locally finite (Example [[§65 Partitions of Unity#^ex-65-2|§65.2]]). The intervals $V_k = (k - 1, k + 1)$, $k \in \mathbb{Z}$, form a locally finite open refinement of it (Definition [[§65 Partitions of Unity#^def-65-3|§65.3]]):
+> *(Not from lecture.)* On $\mathbb{R}$, the open cover $\{(-n, n)\}_{n \ge 1}$ is not locally finite (Example [[§65 Partitions of Unity#^ex-65-2|§65.2]]). The intervals $V_k = (k - 1, k + 1)$, $k \in \mathbb{Z}$, form a locally finite open refinement of it (Definition [[§65 Partitions of Unity#^def-65-4|§65.4]]):
 > - *A cover.* Every $x \in \mathbb{R}$ lies in $V_k$ for $k = \lfloor x \rfloor$, since $k \le x < k + 1$.
 > - *A refinement.* If $|x - k| < 1$ then $|x| < |k| + 1$, so $V_k \subseteq (-n, n)$ with $n = |k| + 1$.
 > - *Locally finite.* This is Example [[§65 Partitions of Unity#^ex-65-1|§65.1]].
@@ -141,15 +141,15 @@ The main result of this section is that every open cover has a subordinate parti
 
 ^ex-65-5
 
-> [!definition] Definition §65.4: Paracompact Space
-> A space $X$ is **paracompact** if every open cover $\{U_\alpha\}_{\alpha \in A}$ has an open refinement $\{V_i\}_{i \in \mathbb{N}}$ (Definition [[§65 Partitions of Unity#^def-65-3|§65.3]]) that covers and is locally finite (Definition [[§65 Partitions of Unity#^def-65-1|§65.1]]):
+> [!definition] Definition §65.5: Paracompact Space
+> A space $X$ is **paracompact** if every open cover $\{U_\alpha\}_{\alpha \in A}$ has an open refinement $\{V_i\}_{i \in \mathbb{N}}$ (Definition [[§65 Partitions of Unity#^def-65-4|§65.4]]) that covers and is locally finite (Definition [[§65 Partitions of Unity#^def-65-1|§65.1]]):
 >
 > 1. $X = \bigcup_i V_i$, and for every $i$ there is $\alpha(i)$ with $V_i \subseteq U_{\alpha(i)}$;
 > 2. every $p \in X$ has a neighbourhood $W$ such that $\{ i : W \cap V_i \neq \varnothing \}$ is finite.
 >
 > *Lee: Ch. 1, Paracompactness*
 
-^def-65-4
+^def-65-5
 
 Compactness gives a finite subcover; paracompactness gives a locally finite refinement, which need not be a subcover. (The usual definition allows refinements indexed by any set; with the countable index set of the lecture it is what holds for manifolds, Theorem [[§65 Partitions of Unity#^thm-65-5|§65.5]] below.)
 
@@ -207,20 +207,20 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 >
 > *Not regular.* $K$ is closed: $K \cup \{0\}$ is closed in the standard topology, so $\mathbb{R} \setminus (K \cup \{0\})$ is open, and $\mathbb{R} \setminus K$ is its union with the basic set $(-1, 1) \setminus K$. Suppose $U \ni 0$ and $V \supseteq K$ are disjoint open sets. $U$ contains a basic set $B \ni 0$. $B$ is not an interval: an interval around $0$ contains some $1/n \in K \subseteq V$, while $B \subseteq U$ and $U \cap V = \varnothing$. So $B = (a, b) \setminus K$ with $a < 0 < b$. Choose $n$ with $1/n < b$. $V$ contains a basic set $C \ni 1/n$, which is an interval $(c, d)$, since the sets $(c, d) \setminus K$ do not contain $1/n$; replacing it by $(\max(c, 0), \min(d, b))$, which still contains $1/n$, we may assume $(c, d) \subseteq (0, b)$. The interval $(c, d)$ is uncountable and $K$ is countable, so there is $z \in (c, d) \setminus K$. Then $z \in (a, b) \setminus K = B \subseteq U$ and $z \in (c, d) \subseteq V$, contradicting $U \cap V = \varnothing$. So the point $0$ and the closed set $K$ cannot be separated by open sets.
 >
-> *Not paracompact.* A paracompact Hausdorff space is normal, in particular regular (Munkres, Theorem 41.1). Munkres's paracompactness asks only for a locally finite open refinement, not a countable one, so it follows from Definition [[§65 Partitions of Unity#^def-65-4|§65.4]]. As the $K$-topology is Hausdorff but not regular, it is not paracompact.
+> *Not paracompact.* A paracompact Hausdorff space is normal, in particular regular (Munkres, Theorem 41.1). Munkres's paracompactness asks only for a locally finite open refinement, not a countable one, so it follows from Definition [[§65 Partitions of Unity#^def-65-5|§65.5]]. As the $K$-topology is Hausdorff but not regular, it is not paracompact.
 
 ^ex-65-6
 
-> [!definition] Definition §65.5: Regular Coordinate Ball
+> [!definition] Definition §65.6: Regular Coordinate Ball
 > An open set $B \subseteq M$ is a **regular coordinate ball** if there are a chart $(U, \varphi)$ with $B \subseteq U$ and numbers $0 < \delta < \varepsilon$ such that $\varphi(B) = B_\delta(0)$, the $\delta$-ball centred at $0$, and $B_\varepsilon(0) \subseteq \varphi(U)$ — an $\varepsilon$-ball centred at $0$ containing $\varphi(B)$, with room to spare. The room makes $\varphi^{-1}\big(\overline{B}_\delta(0)\big)$ a compact subset of $U$, which is then the closure of $B$ in $M$ (Step 2 of the proof of Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]]); the lecture's first version of that proof also uses it to pull back the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]], equal to $1$ on $\overline{B}_\delta$ and supported in $B_\varepsilon$.
 >
 > *Lee: Ch. 1, Regular Coordinate Balls*
 
-^def-65-5
+^def-65-6
 
 ![[m591-66-4.svg]]
 
-*(Figure redrawn with the manifold side.)* Definition [[§65 Partitions of Unity#^def-65-5|§65.5]] in pictures. Left, in $M$: the chart domain $U$, the regular coordinate ball $B$ around $p = \varphi^{-1}(0)$, and the larger set $\varphi^{-1}(B_\varepsilon(0))$, which still lies in $U$. Right, their images under $\varphi$: the open set $\varphi(U) \subseteq \mathbb{R}^m$, the $\varepsilon$-ball inside it, and $\varphi(B) = B_\delta(0)$. The room between the two balls is where the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]], used in the lecture's first version of the proof of Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]], falls from $1$ to $0$.
+*(Figure redrawn with the manifold side.)* Definition [[§65 Partitions of Unity#^def-65-6|§65.6]] in pictures. Left, in $M$: the chart domain $U$, the regular coordinate ball $B$ around $p = \varphi^{-1}(0)$, and the larger set $\varphi^{-1}(B_\varepsilon(0))$, which still lies in $U$. Right, their images under $\varphi$: the open set $\varphi(U) \subseteq \mathbb{R}^m$, the $\varepsilon$-ball inside it, and $\varphi(B) = B_\delta(0)$. The room between the two balls is where the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]], used in the lecture's first version of the proof of Theorem [[§65 Partitions of Unity#^thm-65-7|§65.7]], falls from $1$ to $0$.
 
 > [!theorem] Lemma §65.6: Regular Coordinate Balls Form a Basis
 > Let $\{U_\alpha\}$ be an open cover of $M$. The regular coordinate balls $B$ whose chart $(U, \varphi)$ can be chosen with $U$ inside some $U_\alpha$ form a basis of the topology of $M$.
@@ -248,9 +248,9 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 > \varphi_i(B_i) = B_{\delta_i}(0), \qquad B_{\varepsilon_i}(0) \subseteq \varphi_i(U_i), \qquad U_i \subseteq U_{\alpha(i)} \ \text{ for some } \alpha(i) \in A
 > $$
 >
-> (Definition [[§65 Partitions of Unity#^def-65-5|§65.5]]). By Lemma [[§65 Partitions of Unity#^lem-65-1|§65.1]](1), the closures $\{\overline{B_i}\}$ also form a locally finite family.
+> (Definition [[§65 Partitions of Unity#^def-65-6|§65.6]]). By Lemma [[§65 Partitions of Unity#^lem-65-1|§65.1]](1), the closures $\{\overline{B_i}\}$ also form a locally finite family.
 >
-> *Step 2: a function positive exactly on $B_i$.* With $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$ (step 1 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]]), define
+> *Step 2: a function positive exactly on $B_i$.* With $h(t) = e^{-1/t}$ for $t > 0$ and $h(t) = 0$ for $t \le 0$ (step 1 of the proof of Proposition [[§56 Vector Fields#^cor-56-7|§56.7]]), define
 >
 > $$
 > f_i = h\big(\delta_i^2 - |\varphi_i|^2\big) \ \text{ on } U_i, \qquad f_i = 0 \ \text{ on } M \setminus \overline{B_i} .
@@ -276,10 +276,10 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 ^pf-65-7
 
-*Uses:* [[§65 Partitions of Unity#^lem-65-6|§65.6]], [[§65 Partitions of Unity#^thm-65-5|§65.5]], [[§65 Partitions of Unity#^def-65-5|Def. §65.5]], [[§65 Partitions of Unity#^lem-65-1|§65.1]], [[§56 Vector Fields#^prop-56-4|§56.4]], [[§65 Partitions of Unity#^lem-65-2|§65.2]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]]
+*Uses:* [[§65 Partitions of Unity#^lem-65-6|§65.6]], [[§65 Partitions of Unity#^thm-65-5|§65.5]], [[§65 Partitions of Unity#^def-65-6|Def. §65.6]], [[§65 Partitions of Unity#^lem-65-1|§65.1]], [[§56 Vector Fields#^cor-56-7|§56.7]], [[§65 Partitions of Unity#^lem-65-2|§65.2]], [[§65 Partitions of Unity#^def-65-2|Def. §65.2]]
 
 > [!remark] Remark: Lecture 22's First Version of the Construction
-> Lecture 22 built the functions differently: pull back the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]] (with $\delta_i < \varepsilon_i$) by $\varphi_i$ and extend by zero, as in step 3 of the proof of Proposition [[§56 Vector Fields#^prop-56-4|§56.4]], which gives smooth $f_i$ with
+> Lecture 22 built the functions differently: pull back the plateau function of Lemma [[§65 Partitions of Unity#^lem-65-3|§65.3]] (with $\delta_i < \varepsilon_i$) by $\varphi_i$ and extend by zero, as in step 3 of the proof of Proposition [[§56 Vector Fields#^cor-56-7|§56.7]], which gives smooth $f_i$ with
 >
 > $$
 > f_i|_{B_i} \equiv 1, \qquad \operatorname{supp} f_i \subseteq U_i \subseteq U_{\alpha(i)} ,
@@ -396,12 +396,12 @@ Compactness gives a finite subcover; paracompactness gives a locally finite refi
 
 *Lecture 23. The application of partitions of unity needed for the sketch of the noncompact Whitney embedding theorem ([[§66 The Whitney Embedding Theorem|§66]]): the existence of exhaustion functions, which partitions of unity make quick. Exhaustion functions were defined, and their existence stated, in Lecture 22 with that sketch; they are collected here so that the proof follows the statement.*
 
-> [!definition] Definition §65.6: Exhaustion Function
+> [!definition] Definition §65.7: Exhaustion Function
 > An **exhaustion function** on $M$ is a smooth function $f : M \to \mathbb{R}$, $f \ge 0$, such that for every $c \in \mathbb{R}$ the **sublevel set** $f^{-1}\big((-\infty, c]\big)$ is compact.
 >
 > *Lee: Ch. 2, Exhaustion Functions*
 
-^def-65-6
+^def-65-7
 
 The cartoon, also used in Morse theory: stand $M$ up with $f$ as the height. The level set at $c$ is the slice at height $c$, and the sublevel set is everything below it, compact for every $c$. It is not obvious that exhaustion functions always exist (Proposition [[§65 Partitions of Unity#^prop-65-13|§65.13]]).
 

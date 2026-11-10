@@ -8,25 +8,25 @@ tags: [chapter, quantum-field-theory]
 # C5a Spinors and the Dirac Equation
 ← [[· C4 The Quantum Vector Field]] · ↑ [[Quantum Field Theory]] · [[· C5b The Quantum Spinor Field]] →
 
-**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (43), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (93), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (54), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (46), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (10), [[· CA Mathematical Methods|CA Mathematical Methods]] (7), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (66)
-**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (8), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (175), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (25), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (30), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (156), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (47)
+**Builds on:** [[· C1a Preliminaries|C1a Preliminaries]] (43), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (93), [[· C2a The Quantum Scalar Field|C2a The Quantum Scalar Field]] (2), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (54), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (46), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (1), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (10), [[· CA Mathematical Methods|CA Mathematical Methods]] (7), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (67)
+**Used by:** [[· C1a Preliminaries|C1a Preliminaries]] (8), [[· C1b Classical Field Theory|C1b Classical Field Theory]] (3), [[· C3 Poincaré Symmetry and Particle States|C3 Poincaré Symmetry and Particle States]] (8), [[· C4 The Quantum Vector Field|C4 The Quantum Vector Field]] (1), [[· C5b The Quantum Spinor Field|C5b The Quantum Spinor Field]] (175), [[· C6d Feynman Rules for Fermions|C6d Feynman Rules for Fermions]] (25), [[· C8 Quantum Electrodynamics|C8 Quantum Electrodynamics]] (30), [[· C9 Discrete Symmetries and Majorana Fields|C9 Discrete Symmetries and Majorana Fields]] (156), [[· CB Lie Groups, Lie Algebras and Representations|CB Lie Groups, Lie Algebras and Representations]] (49)
 
 ## Sections
-- [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation]] — 
-- [[§C5a.1 Spinor Space and the Clifford Action]] — 
-- [[§C5a.2 The Dirac Form]] — 
-- [[§C5a.3 The Lorentz Action on Spinor Space]] — 
-- [[§C5a.4 SL(2,C) and the Group Action on Spinor Space]] — 
-- [[§C5a.5 Chirality and Weyl Spinors]] — 
-- [[§C5a.6 The Dirac Conjugate and the Bilinears]] — 
-- [[§C5a.7 The Dirac Equation and Its Lagrangian]] — 
-- [[§C5a.8 The Weyl Form and the Weyl Equations]] — 
-- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field]] — 
-- [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost]] — 
-- [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates]] — 
-- [[§C5a.12 Normalization and Spin Sums]] — 
-- [[§C5a.13 Helicity Spinors and the Massless Limit]] — 
-- [[§C5a.14 Gamma-Matrix Technology]] — 
+- [[§C5a.0 Why Spinors꞉ the Square Root of the Klein–Gordon Equation]] — PS 3.2, 3.4; Yu 1.1, 5.2, 5.3; 513 notes Ch. 7, 8, 9, 10
+- [[§C5a.1 Spinor Space and the Clifford Action]] — PS 3.2, 3.4; Yu 5.1, 5.2; 513 notes Ch. 8
+- [[§C5a.2 The Dirac Form]] — PS 3.2; Yu 5.1, 5.2, 5.3; 513 notes Ch. 8
+- [[§C5a.3 The Lorentz Action on Spinor Space]] — PS 3.1, 3.2; Yu 5.1, 5.2; 513 notes Ch. 7, 8
+- [[§C5a.4 SL(2,C) and the Group Action on Spinor Space]] — PS 3.2, 3.5; Yu 5.1, 5.2; 513 notes Ch. 8, 9, 10
+- [[§C5a.5 Chirality and Weyl Spinors]] — PS 3.2, 3.4; Yu 5.1, 5.2; 513 notes Ch. 8, 9
+- [[§C5a.6 The Dirac Conjugate and the Bilinears]] — PS 3.2, 3.4; Yu 5.3; 513 notes Ch. 8
+- [[§C5a.7 The Dirac Equation and Its Lagrangian]] — PS 3.2, 3.5; Yu 5.2, 5.3; 513 notes Ch. 8, 10
+- [[§C5a.8 The Weyl Form and the Weyl Equations]] — PS 3.2, 3.3; Yu 5.3; 513 notes Ch. 8
+- [[§C5a.9 Canonical Structure and Noether Currents of the Dirac Field]] — PS 3.4, 3.5; Yu 1.7.3, 5.3, 5.4.3; 513 notes Ch. 3, 8, 9
+- [[§C5a.10 Plane-Wave Solutions꞉ the Eigenvalue Problem, the Rest Frame and the Boost]] — PS 3.3; Yu 5.4.1, 5.4.2; 513 notes Ch. 9
+- [[§C5a.11 The Spinors u(p), v(p) and Their Dirac Conjugates]] — PS 3.3; Yu 5.4.2; 513 notes Ch. 9
+- [[§C5a.12 Normalization and Spin Sums]] — PS 3.3; Yu 5.4.2; 513 notes Ch. 9
+- [[§C5a.13 Helicity Spinors and the Massless Limit]] — PS 3.3; Yu 5.4.2; 513 notes Ch. 7, 9
+- [[§C5a.14 Gamma-Matrix Technology]] — PS 3.4; Yu 7.1, 8.2.2; 513 notes Ch. 9
 
 ## Laws
 - [[§C5a.7 The Dirac Equation and Its Lagrangian#^law-c5a-7-9|§C5a.7.9]] The Positron: the Electron Has an Antiparticle

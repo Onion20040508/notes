@@ -63,7 +63,7 @@ The sphere through the course: a topological manifold with hemisphere charts in 
 *Uses:* [[§8 Spheres#^ex-8-1|Ex. §8.1]], [[§2 Topological Manifolds#^def-2-2|Def. §2.2]], [[§2 Topological Manifolds#^prop-2-3|§2.3]], [[§1 Point-Set Topology Review#^prop-1-6|§1.6]], [[§22 Countability Axioms#^thm-22-3|590 §22.3]]
 
 > [!remark]- Connections
-> - The hemisphere charts as an atlas: [[§17 Differentiable Structures#^def-17-6|Def. §17.6]]; the circle case with its smooth atlases is [[§17 Differentiable Structures#^ex-17-2|Ex. §17.2]].
+> - The hemisphere charts as an atlas: [[§17 Differentiable Structures#^def-17-8|Def. §17.8]]; the circle case with its smooth atlases is [[§17 Differentiable Structures#^ex-17-2|Ex. §17.2]].
 
 > [!remark] Remark
 > This is the argument of [[§8 Spheres#^ex-8-1|Example §8.1]], for every $n$ (Lee, Example 1.4). The hemisphere charts will be our first example of an *atlas*, and the maps between overlapping charts ([[§2 Topological Manifolds#Charts and Transition Functions|§2, Charts and Transition Functions]]) will turn out to be smooth.

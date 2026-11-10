@@ -9,7 +9,7 @@ tags: [quantum-field-theory, level-c]
 ---
 ← [[§C6b.7 The Width in the Propagator]] · ↑ [[· C6b The S-Matrix and Observables]] · [[§C6b.9 Evaluating the Cross Section]] →
 
-*Sources: the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)", Definition "Classical differential cross section", Figure "classicalxsec", paragraph "Example: the hard sphere (filled in)"), §15.3 (Definition "Wave packets", eq. (twopacket), paragraph "Why $e^{-i\vec b\cdot\vec k_B}$ shifts $B$ by $+\vec b$ (filled in)", Figure "wavepackets", Caution "A slip on the wave-packet slide", eq. (Pb), Definition "The quantum cross section", paragraphs "Why integrate over $\vec b$ (filled in)", "Which final states (filled in)"), §15.4 (eq. (dsigmafull), paragraph "Counting", Derivations "The $\delta$-functions and the one Jacobian", "A $\delta$-function of a function (filled in)", Caution "$1/f'(0)$ on the slide", paragraphs "Integrating over $\bar k_B^z$ instead", "A second zero (filled in)", "Smoothness"), §15.5 (Principle "Cross section for $2\to n$ scattering", paragraph "Reading the formula", Derivation "Dimension check (filled in)", paragraph "Identical particles (filled in)") · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slide 8, Part B, slides 11–16, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 99–106 and 108, eqs. (4.59)–(4.61), (4.65)–(4.79) · Yu Zhao-Huan, 量子场论讲义, §6.5.1–§6.5.2, eqs. (6.276)–(6.313), (6.321).*
+*Sources: the user's PHY 513 notes, Ch. 15 §15.2 (paragraph "Event counting (filled in)", Definition "Classical differential cross section", Figure "classicalxsec", paragraph "Example: the hard sphere (filled in)"), §15.3 (Definition "Wave packets", eq. (twopacket), paragraph "Why $e^{-i\vec b\cdot\vec k_B}$ shifts $B$ by $+\vec b$ (filled in)", Figure "wavepackets", Caution "A slip on the wave-packet slide", eq. (Pb), Definition "The quantum cross section", paragraphs "Why integrate over $\vec b$ (filled in)", "Which final states (filled in)"); §15.4–§15.5, the evaluation of the integrals, are the sources of [[§C6b.9 Evaluating the Cross Section|§C6b.9]] · PHY 513 Lecture 15 (Larsen, 28 Oct 2026), Part A, slide 8, Part B, slides 11–16, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.5, pp. 99–106 and 108, eqs. (4.59)–(4.61), (4.65)–(4.79) · Yu Zhao-Huan, 量子场论讲义, §6.5.1–§6.5.2, eqs. (6.276)–(6.313), (6.321).*
 
 **The careful version.** This section and [[§C6b.9 Evaluating the Cross Section|§C6b.9]] derive the same cross section as [[§C6b.3 The Cross Section|§C6b.3]], $d\sigma = |\mathcal M|^2d\Pi_n/(2E_A2E_B|\mathbf v_A - \mathbf v_B|)$, the course's way (Lecture 15, Part B): without the box, without $\delta(0)$ and without plane waves. The particles are normalizable wave packets ([[§C6b.8 Wave Packets and the Cross Section#^mod-c6b-8-1|Model §C6b.8.1]]), so no state has infinite norm; the offset of $B$ from $A$ is fixed as an impact parameter $\mathbf b$ and then integrated over at unit density, which turns a probability into an area; and the first $\delta^4$ of the squared amplitude is never evaluated at zero but, together with the $\mathbf b$-integral, does the integrals over the second copy of the momenta:
 
@@ -50,7 +50,7 @@ What an experiment observes is an event rate, and the cross section is that rate
 > [!model] Model §C6b.8.1: Colliding Wave Packets
 > - *Particles:* $A$ and $B$ are wave packets, $|\phi_{\mathbf p}\rangle = \int\frac{d^3k}{(2\pi)^3}\frac{\phi(\mathbf k)}{\sqrt{2E_{\mathbf k}}}|\mathbf k\rangle$ with $\int\frac{d^3k}{(2\pi)^3}|\phi|^2 = 1$ (made precise in [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-3|Def. §C6b.8.3]]–[[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-4|Def. §C6b.8.4]]), with profiles $\phi_A$, $\phi_B$ sharply peaked at $\mathbf p_A$, $\mathbf p_B$: their momentum widths $\Delta k$ are small against the scales on which $\mathcal M$, the energies and the velocities vary.
 > - *Beams:* collinear, along the $z$-axis; $B$ is displaced from $A$ by an impact parameter $\mathbf b \perp \hat{\mathbf z}$.
-> - *Incidence:* the $B$ particles arrive at random transverse positions with a density $n_B$ per unit area, constant over the range of $\mathbf b$ where scattering happens.
+> - *Incidence:* the $B$ particles arrive at random transverse positions with a density $n_B$ per unit area (PS's $n_{\mathcal B}$, not the volume density of [[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]]: Caution below), constant over the range of $\mathbf b$ where scattering happens.
 > - *Final states:* away from the forward direction (other particles or other momenta than the initial ones); the detector acceptance is smooth on the scale $\Delta k$.
 > - *States and Hamiltonian:* the in and out states are states of the full $\hat H$ that look like free, widely separated particles at $\mp\infty$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-1|Def. §C6b.1.1]]); their overlaps define $\mathcal M$ ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^def-c6b-1-3|Def. §C6b.1.3]]).
 > - *Applies:* in full to the definition of $d\sigma$; the $\mathcal M$ inserted is computed with free states and the Feynman rules, which is exact if $\hat H_{\rm int}(t) \to 0$ for $|t| \to \infty$ and, for a permanent interaction, holds at lowest order ([[§C6b.1 The S-Matrix and the Invariant Amplitude#^cau-c6b-1-1|§C6b.1, Caution: "Free" means widely separated]]; [[§C6c.1 Amplitudes from Correlation Functions#^cau-c6c-1-2|§C6c.1, Caution: The rule is stated at lowest order]]).
@@ -58,6 +58,13 @@ What an experiment observes is an event rate, and the cross section is that rate
 > *Source: PHY 513 Lecture 15, slides 11–12, 15, and transcript · PS §4.5, pp. 102–106, eqs. (4.65)–(4.68) · the user's PHY 513 notes, Ch. 15 §15.3*
 
 ^mod-c6b-8-1
+
+> [!caution] Caution: The beam density n_B is per unit area in the wave-packet route
+> In this section $n_B$ is PS's density: the number of $B$ particles per unit area of the transverse plane that pass the target during the time $t$ (PS p. 105: "$n_{\mathcal B}$ is the number density (particles per unit area) of $\mathcal B$ particles"), so $n_B = j_Bt$ and $[n_B] = 2$. In the box route ([[§C6b.3 The Cross Section#^mod-c6b-3-1|Model §C6b.3.1]], [[§C6b.3 The Cross Section#^def-c6b-3-1|Def. §C6b.3.1]], [[§C6b.3 The Cross Section#^thm-c6b-3-2|Theorem §C6b.3.2]]) and in the conventions register the same letter is Yu's number of beam particles per unit volume, with $j_B = n_B|\mathbf v_B|$ and $[n_B] = 3$; PS write the volume densities $\rho_{\mathcal A}$, $\rho_{\mathcal B}$ (eq. (4.59)). The areal density is the volume density times $|\mathbf v_B|\,t$: the particles in a column of length $|\mathbf v_B|t$ behind a unit area. The flux $j_B$ and the cross section mean the same in both routes. The volume density is not used in this section; [[§C6b.9 Evaluating the Cross Section|§C6b.9]] has the letter only in its summary of Yu's route, for the volume density.
+>
+> *Source: PS §4.5, p. 105 (after the display before eq. (4.75)), eq. (4.59) · Yu §6.5.2, eq. (6.307) · [[§C6b.3 The Cross Section#^cau-c6b-3-3|§C6b.3, Caution: The beam density n_B is per unit volume in the box route]]*
+
+^cau-c6b-8-3
 
 ## The cross section: a universal event rate
 
@@ -232,7 +239,7 @@ Why only a transverse shift, and why it is integrated over. A shift $b^z$ along 
 > multiplying the profile by the phase is acting with $e^{-i\mathbf b\cdot\hat{\mathbf P}}$, the translation operator with the sign of [[§C3.5 Covariant Quantum Fields and the Free Scalar's Representation#^thm-c3-5-2|Theorem §C3.5.2]].
 >
 > **What the derivation shows.**
-> - Since $\mathbf b \perp \hat{\mathbf z}$, $b^z = 0$, only $\mathbf k_B^\perp$ enters the phase: $\mathbf b\cdot\mathbf k_B = b^xk_B^x + b^yk_B^y + 0\cdot k_B^z = \mathbf b\cdot\mathbf k_B^\perp$. This is why the $\mathbf b$-integral of [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3|Derivation §C6b.9.3]], Step 1, constrains only the transverse momenta (now in the statement).
+> - Since $\mathbf b \perp \hat{\mathbf z}$, $b^z = 0$, only $\mathbf k_B^\perp$ enters the phase: $\mathbf b\cdot\mathbf k_B = b^xk_B^x + b^yk_B^y + 0\cdot k_B^z = \mathbf b\cdot\mathbf k_B^\perp$. This is why the $\mathbf b$-integral of [[§C6b.9 Evaluating the Cross Section#^der-c6b-9-3|Derivation §C6b.9.3]], Step 1, constrains only the transverse momenta.
 
 ^der-c6b-8-3
 
@@ -255,8 +262,6 @@ The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure 
 > *Source: PHY 513 Lecture 15, slide 12 ("Probability of scattering into final phase space $\prod_i\frac{d^3p_i}{(2\pi)^3}\frac{1}{2E_i}$ … This is for a particular impact parameter $\vec b$"), and transcript ("we take these guys and we kind of expand into linear superposition of possible out states. Coefficient … is some amplitude, and that one we square") · the user's PHY 513 notes, Ch. 15 §15.3, eq. (Pb) · PS §4.5, eq. (4.74)*
 
 ^def-c6b-8-5
-
-The measure in $\mathcal P(\mathbf b)$ is the one-particle completeness measure of [[§C2a.4 Particles and Relativistic Normalization#^def-c2a-4-2|Def. §C2a.4.2]]; [[§C6b.9 Evaluating the Cross Section#^thm-c6b-9-5|Theorem §C6b.9.5]] shows that the probabilities add up to one.
 
 Why the integral over $\mathbf b$ is the cross section, before the definition: with $B$ particles at uniform density $n_B$ per unit area, the expected number of events is $n_B\int d^2b\,\mathcal P(\mathbf b)$, and dividing by $n_B = j_Bt$ (flux times time) leaves $\int d^2b\,\mathcal P(\mathbf b)$, an area: events per unit flux, as [[§C6b.8 Wave Packets and the Cross Section#^def-c6b-8-1|Def. §C6b.8.1]] demands. [[§C6b.8 Wave Packets and the Cross Section#^thm-c6b-8-4|Theorem §C6b.8.4]] writes this out. In the box the same average is the uniform density $1/\tilde V$ of a plane wave ([[§C6b.3 The Cross Section#^thm-c6b-3-4|Theorem §C6b.3.4]]).
 

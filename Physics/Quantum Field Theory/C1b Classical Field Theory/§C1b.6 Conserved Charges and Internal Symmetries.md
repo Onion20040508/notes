@@ -146,10 +146,10 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–6]]
 
 > [!theorem] Theorem §C1b.6.3: The U(1) Current of the Complex Scalar Field
-> For $\mathcal L = \partial_\mu\phi^*\partial^\mu\phi - m^2\phi^*\phi - V(\phi^*\phi)$, with $V$ any smooth function, the global phase rotation $\phi \to e^{i\alpha}\phi$, $\phi^* \to e^{-i\alpha}\phi^*$ is a symmetry with $\mathcal J = 0$, and its Noether current
+> For $\mathcal L = \partial_\mu\phi^{\ast}\partial^\mu\phi - m^2\phi^{\ast}\phi - V(\phi^{\ast}\phi)$, with $V$ any smooth function, the global phase rotation $\phi \to e^{i\alpha}\phi$, $\phi^{\ast} \to e^{-i\alpha}\phi^{\ast}$ is a symmetry with $\mathcal J = 0$, and its Noether current
 >
 > $$
-> j^\mu = i\bigl(\phi\,\partial^\mu\phi^* - \phi^*\partial^\mu\phi\bigr)
+> j^\mu = i\bigl(\phi\,\partial^\mu\phi^{\ast} - \phi^{\ast}\partial^\mu\phi\bigr)
 > $$
 >
 > is conserved on solutions, for every $m$ and $V$. Its charge $Q = \int d^3x\,j^0 = i\int d^3x\,(\phi\dot\phi^{\ast} - \phi^{\ast}\dot\phi)$ is the **number charge**; a positive-frequency solution has $j^0 < 0$ in this sign convention.
@@ -161,7 +161,7 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 ^thm-c1b-6-3
 
 > [!derivation]- Derivation
-> The steps of [[P3 Noether's Procedure]]. Here $N = 2$ fields ($\phi$ and $\phi^*$, independent, [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]) and $\dim G = 1$: one parameter moves both.
+> The steps of [[P3 Noether's Procedure]]. Here $N = 2$ fields ($\phi$ and $\phi^{\ast}$, independent, [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]) and $\dim G = 1$: one parameter moves both.
 >
 > **1. Generators.** $\Delta\phi = i\phi$, $\Delta\phi^{\ast} = -i\phi^{\ast}$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]]). The generator depends on the field itself.
 >
@@ -172,27 +172,27 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 > **4. Current.** $\partial\mathcal L/\partial(\partial_\mu\phi) = \partial^\mu\phi^{\ast}$ and $\partial\mathcal L/\partial(\partial_\mu\phi^{\ast}) = \partial^\mu\phi$ ([[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^mod-c1b-2-7|Model §C1b.2.7]], [[§C1b.2 The Action Principle and the Euler–Lagrange Equations#^thm-c1b-2-9|Theorem §C1b.2.9]]). One current with two terms:
 >
 > $$
-> j^\mu = \frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\,\Delta\phi + \frac{\partial\mathcal L}{\partial(\partial_\mu\phi^*)}\,\Delta\phi^* = \partial^\mu\phi^*\,(i\phi) + \partial^\mu\phi\,(-i\phi^*) = i\bigl(\phi\,\partial^\mu\phi^* - \phi^*\partial^\mu\phi\bigr) .
+> j^\mu = \frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\,\Delta\phi + \frac{\partial\mathcal L}{\partial(\partial_\mu\phi^{\ast})}\,\Delta\phi^{\ast} = \partial^\mu\phi^{\ast}\,(i\phi) + \partial^\mu\phi\,(-i\phi^{\ast}) = i\bigl(\phi\,\partial^\mu\phi^{\ast} - \phi^{\ast}\partial^\mu\phi\bigr) .
 > $$
 >
 > **5. Check, off shell.** By the product rule,
 >
 > $$
-> \partial_\mu j^\mu = i\bigl(\partial_\mu\phi\,\partial^\mu\phi^* + \phi\,\partial^2\phi^* - \partial_\mu\phi^*\partial^\mu\phi - \phi^*\partial^2\phi\bigr) .
+> \partial_\mu j^\mu = i\bigl(\partial_\mu\phi\,\partial^\mu\phi^{\ast} + \phi\,\partial^2\phi^{\ast} - \partial_\mu\phi^{\ast}\partial^\mu\phi - \phi^{\ast}\partial^2\phi\bigr) .
 > $$
 >
-> The cross terms are equal, $\partial_\mu\phi\,\partial^\mu\phi^* = g^{\mu\nu}\partial_\mu\phi\,\partial_\nu\phi^* = \partial_\nu\phi^*\partial^\nu\phi$ (symmetric metric), and cancel identically, leaving $i(\phi\,\partial^2\phi^* - \phi^*\partial^2\phi)$. The Euler–Lagrange expressions are $\mathrm{EL}_{\phi^*} = \partial\mathcal L/\partial\phi^* - \partial_\mu\partial^\mu\phi = -(m^2 + V')\phi - \partial^2\phi$ and $\mathrm{EL}_\phi = -(m^2 + V')\phi^* - \partial^2\phi^*$, with $V' = dV/d(\phi^*\phi)$. Substitute $\partial^2\phi = -\mathrm{EL}_{\phi^*} - (m^2 + V')\phi$ and $\partial^2\phi^* = -\mathrm{EL}_\phi - (m^2 + V')\phi^*$:
+> The cross terms are equal, $\partial_\mu\phi\,\partial^\mu\phi^{\ast} = g^{\mu\nu}\partial_\mu\phi\,\partial_\nu\phi^{\ast} = \partial_\nu\phi^{\ast}\partial^\nu\phi$ (symmetric metric), and cancel identically, leaving $i(\phi\,\partial^2\phi^{\ast} - \phi^{\ast}\partial^2\phi)$. The Euler–Lagrange expressions are $\mathrm{EL}_{\phi^{\ast}} = \partial\mathcal L/\partial\phi^{\ast} - \partial_\mu\partial^\mu\phi = -(m^2 + V')\phi - \partial^2\phi$ and $\mathrm{EL}_\phi = -(m^2 + V')\phi^{\ast} - \partial^2\phi^{\ast}$, with $V' = dV/d(\phi^{\ast}\phi)$. Substitute $\partial^2\phi = -\mathrm{EL}_{\phi^{\ast}} - (m^2 + V')\phi$ and $\partial^2\phi^{\ast} = -\mathrm{EL}_\phi - (m^2 + V')\phi^{\ast}$:
 >
 > $$
-> i(\phi\,\partial^2\phi^* - \phi^*\partial^2\phi) = i\bigl(-\phi\,\mathrm{EL}_\phi + \phi^*\mathrm{EL}_{\phi^*}\bigr) - i(m^2 + V')(\phi\phi^* - \phi^*\phi) = -\bigl[\mathrm{EL}_\phi\,(i\phi) + \mathrm{EL}_{\phi^*}(-i\phi^*)\bigr] ,
+> i(\phi\,\partial^2\phi^{\ast} - \phi^{\ast}\partial^2\phi) = i\bigl(-\phi\,\mathrm{EL}_\phi + \phi^{\ast}\mathrm{EL}_{\phi^{\ast}}\bigr) - i(m^2 + V')(\phi\phi^{\ast} - \phi^{\ast}\phi) = -\bigl[\mathrm{EL}_\phi\,(i\phi) + \mathrm{EL}_{\phi^{\ast}}(-i\phi^{\ast})\bigr] ,
 > $$
 >
-> the off-shell identity of [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; the potential terms cancel because $\phi\phi^* = \phi^*\phi$. On shell both $\mathrm{EL}$ vanish and $\partial_\mu j^\mu = 0$, with a mass and with $V$.
+> the off-shell identity of [[§C1b.5 Noether's Theorem#^thm-c1b-5-4|Theorem §C1b.5.4]]; the potential terms cancel because $\phi\phi^{\ast} = \phi^{\ast}\phi$. On shell both $\mathrm{EL}$ vanish and $\partial_\mu j^\mu = 0$, with a mass and with $V$.
 >
 > **6. Charge.** $\partial^0 = \partial_t$, so $j^0 = i(\phi\dot\phi^{\ast} - \phi^{\ast}\dot\phi)$. ⚑ By-product: for a positive-frequency solution $\phi = A\,e^{-iEt + i\mathbf p\cdot\mathbf x}$, $E > 0$, one has $\dot\phi = -iE\phi$, $\dot\phi^{\ast} = iE\phi^{\ast}$, and $j^0 = i(iE + iE)\lvert A\rvert^2 = -2E\lvert A\rvert^2 < 0$ → [[§C1b.6 Conserved Charges and Internal Symmetries#^cau-c1b-6-3|Caution: Sign and normalization of the U(1) current]].
 >
 > **What the derivation shows**
-> - Invariance is exact, not just first order, because $\phi$ and $\phi^*$ appear in pairs; neither the mass nor $V(\phi^*\phi)$ breaks it (the course solution of Problem Set 2, Problem 3(c), adds: only for constant $\alpha$).
+> - Invariance is exact, not just first order, because $\phi$ and $\phi^{\ast}$ appear in pairs; neither the mass nor $V(\phi^{\ast}\phi)$ breaks it (the course solution of Problem Set 2, Problem 3(c), adds: only for constant $\alpha$).
 > - The equations of motion enter only in step 5.
 > - Used next: the quantum charge [[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]] is $-\frac12$ times this charge, normal ordered.
 
@@ -203,7 +203,7 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 *Procedure:* [[P3 Noether's Procedure#^p3-1|P3, steps 1–6]], [[P1 Canonical Quantization#^p1-3|P1, step 3]]
 
 > [!caution] Caution: Sign and normalization of the U(1) current
-> The overall sign of $j^\mu$ is the sign of $\alpha$ ([[§C1b.5 Noether's Theorem#^rem-c1b-5-2|Remark: The sign of a parameter is a convention]]). With $\Delta\phi = +i\phi$, as here and in PS eq. (2.16), a positive-frequency solution has $j^0 = -2E\lvert A\rvert^2 < 0$, and after quantization, with normal ordering $:\!\;\!:$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]), $\int d^3x\,:\!\hat j^0\!: = \hat N_b - \hat N_a$, particles counted negative. Lecture 3 (slide 22, \"Example 2: Charge Conservation\") and the board write $j^\mu = -i\bigl((\partial^\mu\phi^*)\phi - (\partial^\mu\phi)\phi^*\bigr)$, the opposite sign, which gives $\hat N_a - \hat N_b$. With the slide's own $\Delta\phi = i\phi$, $\Delta\phi^* = -i\phi^*$ and its definition $j^\mu = \frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\Delta\phi - \mathcal J^\mu$ (slide 19), the first line of its computation gives $+i\bigl((\partial^\mu\phi^*)\phi - (\partial^\mu\phi)\phi^*\bigr)$, so the printed second line differs from it by a sign, not by a choice of convention. Yu's $J^\mu = iq\,\phi^*\overleftrightarrow{\partial^\mu}\phi$ (eq. (1.262)) is $-q$ times the current here. The quantum charge used in this subject is $\hat Q = \frac12(\hat N_a - \hat N_b) = -\frac12\int d^3x\,:\!\hat j^0\!:$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]]); the full dictionary is [[§C2a.5 The Complex Scalar Field and Its Charge#^cau-c2a-5-1|§C2a.5, Caution: Normalization and sign of the charge]], and [[Larsen PHY 513]] records the choice. Only the ratio $-1$ of particle and antiparticle charges is physical.
+> The overall sign of $j^\mu$ is the sign of $\alpha$ ([[§C1b.5 Noether's Theorem#^rem-c1b-5-2|Remark: The sign of a parameter is a convention]]). With $\Delta\phi = +i\phi$, as here and in PS eq. (2.16), a positive-frequency solution has $j^0 = -2E\lvert A\rvert^2 < 0$, and after quantization, with normal ordering $:\!\;\!:$ ([[§C2a.3 Energy, Momentum and the Zero-Point Energy#^def-c2a-3-1|Def. §C2a.3.1]]), $\int d^3x\,:\!\hat j^0\!: = \hat N_b - \hat N_a$, particles counted negative. Lecture 3 (slide 22, \"Example 2: Charge Conservation\") and the board write $j^\mu = -i\bigl((\partial^\mu\phi^{\ast})\phi - (\partial^\mu\phi)\phi^{\ast}\bigr)$, the opposite sign, which gives $\hat N_a - \hat N_b$. With the slide's own $\Delta\phi = i\phi$, $\Delta\phi^{\ast} = -i\phi^{\ast}$ and its definition $j^\mu = \frac{\partial\mathcal L}{\partial(\partial_\mu\phi)}\Delta\phi - \mathcal J^\mu$ (slide 19), the first line of its computation gives $+i\bigl((\partial^\mu\phi^{\ast})\phi - (\partial^\mu\phi)\phi^{\ast}\bigr)$, so the printed second line differs from it by a sign, not by a choice of convention. Yu's $J^\mu = iq\,\phi^{\ast}\overleftrightarrow{\partial^\mu}\phi$ (eq. (1.262)) is $-q$ times the current here. The quantum charge used in this subject is $\hat Q = \frac12(\hat N_a - \hat N_b) = -\frac12\int d^3x\,:\!\hat j^0\!:$ ([[§C2a.5 The Complex Scalar Field and Its Charge#^def-c2a-5-1|Def. §C2a.5.1]]); the full dictionary is [[§C2a.5 The Complex Scalar Field and Its Charge#^cau-c2a-5-1|§C2a.5, Caution: Normalization and sign of the charge]], and [[Larsen PHY 513]] records the choice. Only the ratio $-1$ of particle and antiparticle charges is physical.
 
 ^cau-c1b-6-3
 
@@ -215,7 +215,7 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 ^rem-c1b-6-2
 
 > [!example] Example §C1b.6.2: Two Real Fields: One Rotation or Two Shifts
-> Take two real fields with $\mathcal L = \frac12(\partial\phi_1)^2 + \frac12(\partial\phi_2)^2 - \frac12m^2(\phi_1^2 + \phi_2^2)$, which is the complex $\mathcal L$ with $V = 0$ written in $\phi = (\phi_1 + i\phi_2)/\sqrt2$: $\partial_\mu\phi^*\partial^\mu\phi = \frac12(\partial_\mu\phi_1 - i\partial_\mu\phi_2)(\partial^\mu\phi_1 + i\partial^\mu\phi_2) = \frac12(\partial\phi_1)^2 + \frac12(\partial\phi_2)^2$, the cross terms cancelling, and $m^2\phi^*\phi = \frac12m^2(\phi_1^2 + \phi_2^2)$.
+> Take two real fields with $\mathcal L = \frac12(\partial\phi_1)^2 + \frac12(\partial\phi_2)^2 - \frac12m^2(\phi_1^2 + \phi_2^2)$, which is the complex $\mathcal L$ with $V = 0$ written in $\phi = (\phi_1 + i\phi_2)/\sqrt2$: $\partial_\mu\phi^{\ast}\partial^\mu\phi = \frac12(\partial_\mu\phi_1 - i\partial_\mu\phi_2)(\partial^\mu\phi_1 + i\partial^\mu\phi_2) = \frac12(\partial\phi_1)^2 + \frac12(\partial\phi_2)^2$, the cross terms cancelling, and $m^2\phi^{\ast}\phi = \frac12m^2(\phi_1^2 + \phi_2^2)$.
 >
 > **(a) One rotation.** $\Delta\phi_1 = -\phi_2$, $\Delta\phi_2 = \phi_1$ ([[§C1b.5 Noether's Theorem#^thm-c1b-5-1|Theorem §C1b.5.1]]). Step 2: the kinetic terms change by $\alpha(\partial\phi_1\cdot\partial(-\phi_2) + \partial\phi_2\cdot\partial\phi_1) = 0$, the mass term by $-m^2\alpha(\phi_1(-\phi_2) + \phi_2\phi_1) = 0$: $\mathcal J = 0$. Step 4, one current from two fields:
 >
@@ -223,7 +223,7 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 > j^\mu = \partial^\mu\phi_1\,(-\phi_2) + \partial^\mu\phi_2\,\phi_1 = \phi_1\partial^\mu\phi_2 - \phi_2\partial^\mu\phi_1 .
 > $$
 >
-> It is the U(1) current of [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]: $\phi\,\partial\phi^* = \frac12\bigl[\phi_1\partial\phi_1 + \phi_2\partial\phi_2 + i(\phi_2\partial\phi_1 - \phi_1\partial\phi_2)\bigr]$ and $\phi^*\partial\phi = \frac12\bigl[\phi_1\partial\phi_1 + \phi_2\partial\phi_2 + i(\phi_1\partial\phi_2 - \phi_2\partial\phi_1)\bigr]$, so $i(\phi\,\partial\phi^* - \phi^*\partial\phi) = i\cdot i(\phi_2\partial\phi_1 - \phi_1\partial\phi_2) = \phi_1\partial\phi_2 - \phi_2\partial\phi_1$.
+> It is the U(1) current of [[§C1b.6 Conserved Charges and Internal Symmetries#^thm-c1b-6-3|Theorem §C1b.6.3]]: $\phi\,\partial\phi^{\ast} = \frac12\bigl[\phi_1\partial\phi_1 + \phi_2\partial\phi_2 + i(\phi_2\partial\phi_1 - \phi_1\partial\phi_2)\bigr]$ and $\phi^{\ast}\partial\phi = \frac12\bigl[\phi_1\partial\phi_1 + \phi_2\partial\phi_2 + i(\phi_1\partial\phi_2 - \phi_2\partial\phi_1)\bigr]$, so $i(\phi\,\partial\phi^{\ast} - \phi^{\ast}\partial\phi) = i\cdot i(\phi_2\partial\phi_1 - \phi_1\partial\phi_2) = \phi_1\partial\phi_2 - \phi_2\partial\phi_1$.
 >
 > **(b) Two shifts ($m = 0$).** $\Delta_k\phi_l = \delta_{kl}$, $\dim G = 2$; each shift leaves the massless $\mathcal L$ invariant as in [[§C1b.6 Conserved Charges and Internal Symmetries#^ex-c1b-6-1|Example §C1b.6.1]], and there are two single-term currents, $j^\mu_1 = \partial^\mu\phi_1$ and $j^\mu_2 = \partial^\mu\phi_2$.
 >
@@ -263,6 +263,11 @@ In an internal symmetry the point is not moved; only the values of the fields ch
 ^ex-c1b-6-3
 
 *Procedure:* [[P3 Noether's Procedure#^p3-3|P3, steps 1–5]]
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on.
+>
+> - [[§CA.1 Exchanging Limits, Derivatives and Integrals#^thm-ca-1-1|Theorem §CA.1.1]] — differentiation under the integral and dominated convergence: $dQ_V/dt = \int_Vd^3x\,\partial_t\rho$, and the limit of the ball $B_R$ to all of space in $dQ/dt = 0$ (Derivation §C1b.6.1, steps 3 and 5).
 
 > [!remark]- Connections
 > - Every current here comes from [[§C1b.5 Noether's Theorem|§C1b.5]]: the definitions of δ and Δ, the two routes to δℒ and the symmetry test ([[§C1b.5 Noether's Theorem#^def-c1b-5-4|Def. §C1b.5.4]], [[§C1b.5 Noether's Theorem#^thm-c1b-5-2|Theorem §C1b.5.2]], [[§C1b.5 Noether's Theorem#^def-c1b-5-5|Def. §C1b.5.5]]), Noether's theorem itself, and, for the broken examples, the divergence of the would-be current ([[§C1b.5 Noether's Theorem#^thm-c1b-5-5|Theorem §C1b.5.5]]).

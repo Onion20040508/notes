@@ -11,7 +11,7 @@ tags: [quantum-field-theory, level-c]
 
 *Sources: the user's PHY 513 notes, Ch. 14 §14.3 (paragraph "The idea", Caution "A Feynman diagram is a formula", paragraph "Zeroth order", Derivation "First order in λ", paragraph "Why y and z may be exchanged", Caution "Numerator, not yet ⟨Ω|⋯|Ω⟩") · PHY 513 Lecture 14 (Larsen, 26 Oct 2026), Part B, slides 13–15, and transcript · Peskin & Schroeder, An Introduction to Quantum Field Theory, §4.4, pp. 90–92, eqs. (4.42)–(4.44) · Yu Zhao-Huan, 量子场论讲义, §10.5.1, eqs. (10.187)–(10.192) (a different route, for comparison).*
 
-Every term of a free vacuum expectation value is a product of Feynman propagators ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]), and the only information in it is which arguments each $D_F$ has. So draw a point for each argument and a line for each contraction: a Feynman diagram. This section introduces the diagrams on the free four-point function and then computes the first-order correction to the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), a six-point function with four of its points at the interaction point. Its 15 complete contractions fall into two classes, which give the two first-order diagrams with coefficients $\frac18$ and $\frac12$. Yu treats this in §10.5.1, eqs. (10.187)–(10.192), for the two-point function of the asymptotic "in" fields, reached through the LSZ formula and with an extra mass-counterterm vertex (10.185). **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): the diagrams of this section and of §C6a.8–§C6a.11 are the terms of the expansion in $\lambda$ of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]); they compute $\langle\Omega|T\{\hat\phi_H\cdots\hat\phi_H\}|\Omega\rangle$ as numerator over denominator, each a free-vacuum value $\langle0|T\{\cdots\}|0\rangle$ ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]), and the bubbles of the denominator cancel ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order.
+Every term of a free vacuum expectation value is a product of Feynman propagators ([[§C6a.6 Wick's Theorem#^thm-c6a-6-3|Theorem §C6a.6.3]]), and the only information in it is which arguments each $D_F$ has. So draw a point for each argument and a line for each contraction: a Feynman diagram. This section introduces the diagrams on the free four-point function and then computes the first-order correction to the numerator of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]), a six-point function with four of its points at the interaction point. Its 15 complete contractions fall into two classes, which give the two first-order diagrams with coefficients $\frac18$ and $\frac12$. Yu treats this in §10.5.1, eqs. (10.187)–(10.192), for the two-point function of the asymptotic "in" fields, reached through the LSZ formula and with an extra mass-counterterm vertex (10.185). **Setup** ([[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]], an instance of [[§C6a.0 Setups and Observables#^mod-c6a-0-3|Model §C6a.0.3]]): the diagrams of this section and of §C6a.8–§C6a.12 are the terms of the expansion in $\lambda$ of the master formula ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-6|Theorem §C6a.4.6]]); they compute $\langle\Omega|T\{\hat\phi_H\cdots\hat\phi_H\}|\Omega\rangle$ as numerator over denominator, each a free-vacuum value $\langle0|T\{\cdots\}|0\rangle$ ([[§C6a.0 Setups and Observables#^cau-c6a-0-1|§C6a.0, Caution: Names for the vacua]]), and the bubbles of the denominator cancel ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); identities hold order by order.
 
 *Conventions* ([[Larsen PHY 513]]): fields entering through the master formula are written $\hat\phi_I$; $x, y$ are the external points, $z$ the interaction point; $D_F(z - z) \equiv D_F(0)$.
 
@@ -31,7 +31,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > [!definition] Definition §C6a.7.2: External Point, Vertex
 > In the diagrams of the master formula's numerator ([[§C6a.4 The Interacting Vacuum and the Two-Point Function#^thm-c6a-4-7|Theorem §C6a.4.7]]) there are two kinds of points:
 > 1. **external points**, the arguments $x_1, \dots, x_n$ of the correlator; exactly one line ends at each;
-> 2. **vertices** (internal points), the points $z$ of the interaction $\hat H_I = \int d^3z\,\frac{\lambda}{4!}\hat\phi_I^4$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]); four lines end at each, one for each factor $\hat\phi_I(z)$, and each carries $-i\lambda\int d^4z$.
+> 2. **vertices** (internal points), the points $z$ of the interaction $\hat H_I = \int d^3z\,\frac{\lambda}{4!}\hat\phi_I^4$ ([[§C6a.2 The Interaction Picture#^thm-c6a-2-6|Theorem §C6a.2.6]]); four lines end at each, one for each factor $\hat\phi_I(z)$, and each carries $-i\lambda\int d^4z$ (this weight is a rule, derived in [[§C6a.8 Position-Space Feynman Rules#^thm-c6a-8-4|Theorem §C6a.8.4]]).
 >
 > *Model:* [[§C6a.1 From Free to Interacting Fields#^mod-c6a-1-1|Model §C6a.1.1]]; *applies:* as in the opening.
 >
@@ -43,7 +43,7 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 *Half-edges and a labelled diagram ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]]) for $E = \{x_1, x_2\}$, $n = 2$. (a) The ten half-edges: two external points and four legs at each vertex. (b) One labelled diagram $P$, a pairing of them. (c) Its multigraph $\Gamma(P)$, which forgets which leg is used. In a Feynman diagram the external points are the arguments $x_i$ and the vertices the interaction points $z_v$.*
 
 > [!caution] Caution: A Feynman diagram is a formula
-> A diagram looks like a picture, but it is a formula. Each diagram stands for a definite expression, and the drawing is shorthand: lines are $D_F$'s, points are their arguments, and where a line is drawn on the page means nothing. Lines that cross in a drawing do not meet; a line has only its two endpoints. In scalar field theory there is one kind of line; fermions and photons will bring more kinds.
+> A diagram looks like a picture, but it is a formula. Each diagram stands for a definite expression, and the drawing is shorthand: lines are $D_F$'s, points are their arguments, and where a line is drawn on the page means nothing. Lines that cross in a drawing do not meet; a line has only its two endpoints. In scalar field theory there is one kind of line; Yukawa theory has two, the dashed scalar line and the solid fermion line with its arrow ([[§C6d.1 Yukawa Theory#^def-c6d-1-1|Def. §C6d.1.1]]), and QED adds the photon line ([[§C8.3 Photon Lines꞉ the Quantized Photon Field, Polarizations and the Propagator|§C8.3]]).
 >
 > *Source: PHY 513 Lecture 14, transcript · the user's PHY 513 notes, Ch. 14 §14.3 (Caution "A Feynman diagram is a formula")*
 
@@ -265,6 +265,8 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > \langle\Omega|T\{\hat\phi_H(x)\hat\phi_H(y)\}|\Omega\rangle = D_F(x - y) - \frac{i\lambda}{2}\int d^4z\,D_F(x - z)D_F(0)D_F(z - y) + O(\lambda^2) .
 > $$
 >
+> The home of this result is the cancellation theorem ([[§C6a.11 The iε Limit and Vacuum Bubbles#^thm-c6a-11-5|Theorem §C6a.11.5]]); the same two-point function through first order, in momentum space, is [[§C6a.11 The iε Limit and Vacuum Bubbles#^ex-c6a-11-4|Example §C6a.11.4]].
+>
 > *Source: PHY 513 Lecture 14, slide 15 · the user's PHY 513 notes, Ch. 14 §14.3 (Caution "Numerator, not yet ⟨Ω|⋯|Ω⟩")*
 
 ^cau-c6a-7-3
@@ -441,6 +443,15 @@ The count of pairings ([[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-
 > *Source: Yu §10.4–§10.5.1, pp. 464–466*
 
 ^rem-c6a-7-5
+
+> [!abstract]- Mathematical background
+> Proved in CA; each line says what the physics above relies on. The count of pairings carries the section; the other lines are the precise meaning of "diagram" and the Fourier rules used for the oriented lines.
+>
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-1|Theorem §CA.7.1]] — $2k$ objects have $(2k - 1)!!$ pairings: the $15$ complete contractions of the first-order numerator (Theorem §C6a.7.1) and the $(4n + 1)!!$ of order $\lambda^n$ (Theorem §C6a.7.3).
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-2|Def. §CA.7.2]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^def-ca-7-4|Def. §CA.7.4]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-8|Theorem §CA.7.8]] — a labelled diagram is a pairing of half-edges, a diagram is an orbit of labelled diagrams under relabelling, and the orbit is determined by the drawing: what "diagrams drawn alike stand for the same value" means (Definition §C6a.7.1, the figure after Definition §C6a.7.2).
+> - [[§CA.7 Pairings, Diagrams and Symmetry Factors#^thm-ca-7-5|Theorem §CA.7.5]], [[§CA.7 Pairings, Diagrams and Symmetry Factors#^ex-ca-7-1|Example §CA.7.1]] — a diagram contains $n!\,(4!)^n/S$ labelled diagrams: $3 = 24/8$ and $12 = 24/2$, the coefficients $\frac18$ and $\frac12$ of Theorem §C6a.7.1.
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-7|Theorem §CA.3.7]] — part 1, relabelling $p \to -p$ under the momentum integral: $D_F(-\xi) = D_F(\xi)$, so a real-scalar line has no direction (Theorem §C6a.7.2).
+> - [[§CA.3 Fourier Transforms and Fourier Tricks#^thm-ca-3-5|Theorem §CA.3.5]] — part 3, the derivative rule $i\partial_\mu \to p_\mu$ for tempered distributions: $\tilde S_F(-p) \ne \tilde S_F(p)$, so a Dirac line is oriented (Theorem §C6a.7.2).
 
 > [!remark]- Connections
 > - The figure-eight at one point and the zero-point energy are both $D_F$ or $D_W$ at zero separation; both are infinite for the same reason, the light-cone singularity of the two-point function — [[§C2b.6 Time Ordering, the Feynman Propagator and the iε Prescription#^thm-c2b-6-8|Theorem §C2b.6.8]], [[§C2b.3 Explicit Forms of the Wightman Function#^thm-c2b-3-5|Theorem §C2b.3.5]].
